@@ -35,7 +35,6 @@ package net.wg.gui.lobby.techtree.nodes
    import net.wg.gui.lobby.techtree.interfaces.INodesContainer;
    import net.wg.gui.lobby.techtree.interfaces.IRenderer;
    import net.wg.gui.lobby.techtree.interfaces.IResearchContainer;
-   import net.wg.gui.lobby.techtree.math.MatrixPosition;
    import net.wg.gui.lobby.tradeIn.TradeOffWidget;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.ITutorialCustomComponent;
@@ -60,7 +59,10 @@ package net.wg.gui.lobby.techtree.nodes
       
       private static const LINES_AND_ARROWS_NAME:String = "linesAndArrows";
       
-      private static const MATRIX_POSITION:MatrixPosition = new MatrixPosition(0,0);
+      private static const MATRIX_POSITION:Object = {
+         "row":0,
+         "column":0
+      };
       
       private static const BANNER_Y_GAP:int = 40;
       
@@ -87,6 +89,8 @@ package net.wg.gui.lobby.techtree.nodes
       private static const EARLY_ACCESS_COIN_ID:String = "eaCoin";
       
       private static const EARLY_ACCESS_SIMPLE_TOOLTIP_MAX_WIDTH:int = 300;
+      
+      private static const DELIMETER:String = " / ";
        
       
       public var price:CompoundPrice = null;
@@ -449,16 +453,6 @@ package net.wg.gui.lobby.techtree.nodes
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.UNLOCKED) > 0;
       }
       
-      private function isRentAvailable() : Boolean
-      {
-         return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.RENT_AVAILABLE) > 0;
-      }
-      
-      private function isEarlyAccess() : Boolean
-      {
-         return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.EARLY_ACCESS) > 0;
-      }
-      
       public function needPreventInnerEvents() : Boolean
       {
          return false;
@@ -486,7 +480,7 @@ package net.wg.gui.lobby.techtree.nodes
          invalidateData();
       }
       
-      public function setup(param1:uint, param2:NodeData, param3:uint = 2, param4:MatrixPosition = null) : void
+      public function setup(param1:uint, param2:NodeData, param3:uint = 2, param4:Object = null) : void
       {
          if(!param2 || param2 == this._nodeData)
          {
@@ -496,9 +490,19 @@ package net.wg.gui.lobby.techtree.nodes
          this.invalidateNodeState();
       }
       
+      private function isRentAvailable() : Boolean
+      {
+         return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.RENT_AVAILABLE) > 0;
+      }
+      
+      private function isEarlyAccess() : Boolean
+      {
+         return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.EARLY_ACCESS) > 0;
+      }
+      
       private function populateUI() : void
       {
-         var _loc1_:String = null;
+         var _loc2_:String = null;
          this.vehicleButton.setData(this._data.vehicleButton);
          this.blueprintBar.enabled = !this.isEarlyAccess();
          this.blueprintBar.mouseEnabledOnDisabled = true;
@@ -538,37 +542,46 @@ package net.wg.gui.lobby.techtree.nodes
          this.earlyAccessCoinsTF.visible = this.price.visible && this.isEarlyAccess() && this.isNext2Unlock() && !this._nodeData.isEarlyAccessLocked;
          if(this.earlyAccessCoinsTF.visible)
          {
-            this.earlyAccessCoinsTF.text = this._nodeData.earlyAccessCurrentTokens + " / ";
+            this.earlyAccessCoinsTF.text = this._nodeData.earlyAccessCurrentTokens + DELIMETER;
          }
          this.actionButton.visible = this._actionAvailable;
          this.actionButton.enabled = this._actionEnabled && this._data.isInteractive;
          this.actionButton.label = this._data.buttonLabel;
-         this.earlyAccessQuestsButton.visible = this.isEarlyAccess() && !this.isUnlocked() && !this._nodeData.isEarlyAccessLocked;
+         var _loc1_:Boolean = this._nodeData.isEarlyAccessCanBuy;
+         this.earlyAccessQuestsButton.visible = this.isEarlyAccess() && !this.isUnlocked() && (!this._nodeData.isEarlyAccessLocked || _loc1_);
          this.earlyAccessQuestsButton.enabled = !this._nodeData.isEarlyAccessPaused;
+         if(_loc1_)
+         {
+            this.earlyAccessQuestsButton.label = MENU.RESEARCH_LABELS_BUTTON_TOEARLYACCESSBUYBUTTON;
+         }
+         else
+         {
+            this.earlyAccessQuestsButton.label = MENU.RESEARCH_LABELS_BUTTON_TOEARLYACCESSQUESTSBUTTON;
+         }
          this.earlyAccessStatus.visible = this.isEarlyAccess() && !this._nodeData.isEarlyAccessLocked;
          this.earlyAccessLock.visible = this.isEarlyAccess() && this._nodeData.isEarlyAccessLocked;
          this.discountBanner.visible = Boolean(this._data.discountStr);
          if(this.discountBanner.visible)
          {
-            this.discountBanner.setData(this._data.discountStr,this.isLocked() || this.isNext2Unlock());
+            this.discountBanner.setData(this._data.discountStr,(this.isLocked() || this.isNext2Unlock()) && this.getNodeData().blueprintProgress.valueOf() > 0);
          }
          switch(this._nodeState)
          {
             case NodeRendererState.ROOT_BUY:
-               _loc1_ = UniversalBtnStylesConst.STYLE_HEAVY_ORANGE;
+               _loc2_ = UniversalBtnStylesConst.STYLE_HEAVY_ORANGE;
                break;
             case NodeRendererState.ROOT_UNLOCK:
-               _loc1_ = UniversalBtnStylesConst.STYLE_HEAVY_LIME;
+               _loc2_ = UniversalBtnStylesConst.STYLE_HEAVY_LIME;
                break;
             case NodeRendererState.ROOT_HANGAR:
             case NodeRendererState.ROOT_COLLECTIBLE:
             case NodeRendererState.ROOT_DISCOUNTED_COLLECTIBLE:
-               _loc1_ = UniversalBtnStylesConst.STYLE_HEAVY_BLACK;
+               _loc2_ = UniversalBtnStylesConst.STYLE_HEAVY_BLACK;
                break;
             default:
-               _loc1_ = UniversalBtnStylesConst.STYLE_HEAVY_GREEN;
+               _loc2_ = UniversalBtnStylesConst.STYLE_HEAVY_GREEN;
          }
-         this._universalBtnStyles.setStyle(this.actionButton,_loc1_);
+         this._universalBtnStyles.setStyle(this.actionButton,_loc2_);
          this._rentBtn = this.setupOrRemoveExtraBtn(this._rentBtn,this.isRentAvailable());
          if(this._rentBtn != null)
          {
@@ -798,7 +811,7 @@ package net.wg.gui.lobby.techtree.nodes
          return 0;
       }
       
-      public function get matrixPosition() : MatrixPosition
+      public function get matrixPosition() : Object
       {
          return MATRIX_POSITION;
       }
@@ -835,6 +848,8 @@ package net.wg.gui.lobby.techtree.nodes
          var _loc3_:ITooltipProps = null;
          var _loc4_:String = null;
          var _loc5_:String = null;
+         var _loc6_:String = null;
+         var _loc7_:String = null;
          if(param1.target != this.actionButton)
          {
             _loc2_ = Values.EMPTY_STR;
@@ -844,8 +859,18 @@ package net.wg.gui.lobby.techtree.nodes
                {
                   _loc3_ = ITooltipProps(this._tooltipMgr.getDefaultTooltipProps().clone());
                   _loc3_.maxWidth = EARLY_ACCESS_SIMPLE_TOOLTIP_MAX_WIDTH;
-                  _loc4_ = this._tooltipMgr.getNewFormatter().addHeader(TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_HEADER,true).addBody(TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_BODY,true).make();
-                  this._tooltipMgr.showComplex(_loc4_,_loc3_);
+                  if(this._nodeData.isEarlyAccessCanBuy)
+                  {
+                     _loc4_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSBUYENTRYPOINTTOOLTIP_HEADER;
+                     _loc5_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSBUYENTRYPOINTTOOLTIP_BODY;
+                  }
+                  else
+                  {
+                     _loc4_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_HEADER;
+                     _loc5_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_BODY;
+                  }
+                  _loc6_ = this._tooltipMgr.getNewFormatter().addHeader(_loc4_,true).addBody(_loc5_,true).make();
+                  this._tooltipMgr.showComplex(_loc6_,_loc3_);
                }
                else
                {
@@ -869,8 +894,8 @@ package net.wg.gui.lobby.techtree.nodes
          {
             if(this.actionButton.enabled)
             {
-               _loc5_ = App.utils.locale.makeString(NATIONS.genetiveCase(this._owner.getNation()));
-               this._tooltipMgr.showComplexWithParams(TOOLTIPS.RESEARCHPAGE_COLLECTIBLEVEHICLE_VEHICLEENABLED,new ToolTipParams({},{"nation":_loc5_}));
+               _loc7_ = App.utils.locale.makeString(NATIONS.genetiveCase(this._owner.getNation()));
+               this._tooltipMgr.showComplexWithParams(TOOLTIPS.RESEARCHPAGE_COLLECTIBLEVEHICLE_VEHICLEENABLED,new ToolTipParams({},{"nation":_loc7_}));
             }
             else
             {
@@ -924,7 +949,14 @@ package net.wg.gui.lobby.techtree.nodes
                _loc2_ = TechTreeEvent.GO_TO_SHOP;
                break;
             case ActionName.EARLY_ACCESS:
-               _loc2_ = TechTreeEvent.GO_TO_EARLY_ACCESS;
+               if(this._nodeData.isEarlyAccessCanBuy)
+               {
+                  _loc2_ = TechTreeEvent.GO_TO_EARLY_ACCESS_BUY_VIEW;
+               }
+               else
+               {
+                  _loc2_ = TechTreeEvent.GO_TO_EARLY_ACCESS_QUESTS_VIEW;
+               }
          }
          if(_loc2_)
          {

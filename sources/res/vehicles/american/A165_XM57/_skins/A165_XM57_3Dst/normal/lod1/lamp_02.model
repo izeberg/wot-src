@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>0.532637 1.187630 -1.903427</min>
+		<max>0.994454 1.382114 -1.757318</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A165_XM57/_skins/A165_XM57_3Dst/normal/lod1/lamp_02</nodefullVisual>
+	<parent>vehicles/american/A165_XM57/_skins/A165_XM57_3Dst/normal/lod2/lamp_02</parent>
+	<extent>64.000000</extent>
+</root>

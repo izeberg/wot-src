@@ -72,10 +72,7 @@
 			1.8
 			<!--BW_String-->
 		</priceFactor>
-		<density>
-			0.39342 0.39342
-			<!--BW_String-->
-		</density>
+		<density>1.065563 1.065563</density>
 	</camouflage>
 	<hull>
 		<armor>
@@ -1435,14 +1432,14 @@
 		</customization>
 		<hangarShadowTexture>vehicles/american/A162_ATAC_II/ATAC_II_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>104.245697 104.849693</density>
-			<aoTextureSize>1024 512</aoTextureSize>
+			<density>80 80</density>
+			<aoTextureSize>1024 1024</aoTextureSize>
 		</camouflage>
 	</hull>
 	<chassis>
 		<Chassis_A162_ATAC_II>
 			<userString>#usa_vehicles:Chassis_A162_ATAC_II</userString>
-			<tags/>
+			<tags>trackWithinTrack</tags>
 			<level>9</level>
 			<price>63400</price>
 			<notInShop>true</notInShop>
@@ -1497,15 +1494,6 @@
 					5.0
 					<!--BW_String-->
 				</repairCost>
-				<repairSpeedLimiter>
-					<repairSpeedModifier>
-						0.33
-						<!--BW_String-->
-					</repairSpeedModifier>
-					<speedToStartLimitedRepair>5</speedToStartLimitedRepair>
-					<speedToStopLimitedRepair>3</speedToStopLimitedRepair>
-				</repairSpeedLimiter>
-				<breakMode>SLOW</breakMode>
 				<repairTime>
 					4.57142878
 					<!--BW_String-->
@@ -3515,10 +3503,7 @@
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
-						<density>
-							108.504578 113.3731
-							<!--BW_String-->
-						</density>
+						<density>80 80</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
 				</_90mm_Gun_T208_atac>
@@ -4094,7 +4079,7 @@
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
-				<density>104.245697 104.849693</density>
+				<density>80 80</density>
 				<aoTextureSize>1024 512</aoTextureSize>
 			</camouflage>
 		</Turret_1_A162_ATAC_II>
@@ -4145,6 +4130,30 @@
 		</detailed>
 	</physics>
 	<extras>
+		<leftTrack0Health>
+			TrackWithinTrackHealth : TrackHealth
+			<isLeft>true</isLeft>
+			<trackPairIdx>0</trackPairIdx>
+			<sounds>
+				<destroyed>track_destroyed</destroyed>
+				<critical>track_damaged</critical>
+				<functional>track_functional</functional>
+				<functionalCanMove>track_functional_can_move</functionalCanMove>
+			</sounds>
+			<deviceUserString>#ingame_gui:devices/track</deviceUserString>
+		</leftTrack0Health>
+		<rightTrack0Health>
+			TrackWithinTrackHealth : TrackHealth
+			<isLeft>false</isLeft>
+			<trackPairIdx>0</trackPairIdx>
+			<sounds>
+				<destroyed>track_destroyed</destroyed>
+				<critical>track_damaged</critical>
+				<functional>track_functional</functional>
+				<functionalCanMove>track_functional_can_move</functionalCanMove>
+			</sounds>
+			<deviceUserString>#ingame_gui:devices/track</deviceUserString>
+		</rightTrack0Health>
 		<leftTrack1Health>
 			TrackHealth : TrackHealth
 			<isLeft>true</isLeft>

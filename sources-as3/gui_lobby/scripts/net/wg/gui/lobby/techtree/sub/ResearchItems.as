@@ -17,7 +17,6 @@ package net.wg.gui.lobby.techtree.sub
    import net.wg.gui.lobby.techtree.interfaces.IBorderHighlighted;
    import net.wg.gui.lobby.techtree.interfaces.IRenderer;
    import net.wg.gui.lobby.techtree.interfaces.IResearchPage;
-   import net.wg.gui.lobby.techtree.math.MatrixPosition;
    import net.wg.gui.lobby.techtree.nodes.FakeNode;
    import net.wg.gui.lobby.techtree.nodes.ResearchRoot;
    import net.wg.gui.lobby.techtree.postProgression.EntryPoint;
@@ -99,7 +98,7 @@ package net.wg.gui.lobby.techtree.sub
       
       override public function getNodeByID(param1:int) : IRenderer
       {
-         var _loc2_:MatrixPosition = positionById[param1];
+         var _loc2_:Object = positionById[param1];
          var _loc3_:IRenderer = null;
          if(!_loc2_)
          {
@@ -139,7 +138,8 @@ package net.wg.gui.lobby.techtree.sub
          param1.removeEventListener(TechTreeEvent.GO_TO_SHOP,this.onRendererGoToShopHandler);
          param1.removeEventListener(TechTreeEvent.GO_TO_CHANGE_NATION_VIEW,this.onGoToChangeNationViewHandler);
          param1.removeEventListener(TechTreeEvent.ON_MODULE_HOVER,this.onRendererOnModuleHoverHandler);
-         param1.removeEventListener(TechTreeEvent.GO_TO_EARLY_ACCESS,this.onRendererGoToEarlyAccessHandler);
+         param1.removeEventListener(TechTreeEvent.GO_TO_EARLY_ACCESS_QUESTS_VIEW,this.onRendererGoToEarlyAccessQuestsViewHandler);
+         param1.removeEventListener(TechTreeEvent.GO_TO_EARLY_ACCESS_BUY_VIEW,this.onRendererGoToEarlyAccessBuyViewHandler);
          super.removeItemRenderer(param1);
       }
       
@@ -280,7 +280,8 @@ package net.wg.gui.lobby.techtree.sub
          param1.addEventListener(TechTreeEvent.GO_TO_BLUEPRINT_VIEW,this.onGoToBlueprintViewHandler,false,0,true);
          param1.addEventListener(TechTreeEvent.CLICK_2_RENT,this.onRendererClick2RentHandler,false,0,true);
          param1.addEventListener(TechTreeEvent.GO_TO_SHOP,this.onRendererGoToShopHandler,false,0,true);
-         param1.addEventListener(TechTreeEvent.GO_TO_EARLY_ACCESS,this.onRendererGoToEarlyAccessHandler,false,0,true);
+         param1.addEventListener(TechTreeEvent.GO_TO_EARLY_ACCESS_QUESTS_VIEW,this.onRendererGoToEarlyAccessQuestsViewHandler,false,0,true);
+         param1.addEventListener(TechTreeEvent.GO_TO_EARLY_ACCESS_BUY_VIEW,this.onRendererGoToEarlyAccessBuyViewHandler,false,0,true);
          if(!param2)
          {
             param1.addEventListener(TechTreeEvent.CLICK_2_OPEN,this.onRendererClick2OpenHandler,false,0,true);
@@ -547,7 +548,7 @@ package net.wg.gui.lobby.techtree.sub
       private function updateTopRenderers() : void
       {
          var _loc2_:IRenderer = null;
-         var _loc3_:MatrixPosition = null;
+         var _loc3_:Object = null;
          var _loc4_:NodeData = null;
          var _loc1_:uint = _dataProvider.topLength;
          var _loc5_:Boolean = false;
@@ -574,7 +575,10 @@ package net.wg.gui.lobby.techtree.sub
             }
             if(_loc2_ != null)
             {
-               _loc3_ = new MatrixPosition(_loc6_,-1);
+               _loc3_ = {
+                  "row":_loc6_,
+                  "column":-1
+               };
                _loc4_ = _dataProvider.getTopLevelAt(_loc6_);
                positionById[_loc4_.id] = _loc3_;
                _loc2_.setup(_loc6_,_loc4_,NodeEntityType.TOP_VEHICLE,_loc3_);
@@ -829,9 +833,15 @@ package net.wg.gui.lobby.techtree.sub
          this.selectRequiredModules(false);
       }
       
-      private function onRendererGoToEarlyAccessHandler(param1:TechTreeEvent) : void
+      private function onRendererGoToEarlyAccessQuestsViewHandler(param1:TechTreeEvent) : void
       {
-         this.view.goToEarlyAccessS();
+         this.view.goToEarlyAccessQuestsViewS();
+      }
+      
+      private function onRendererGoToEarlyAccessBuyViewHandler(param1:TechTreeEvent) : void
+      {
+         var _loc2_:int = dataProvider.getItemAt(param1.index).id;
+         this.view.goToEarlyAccessBuyViewS(_loc2_);
       }
    }
 }

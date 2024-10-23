@@ -777,7 +777,7 @@ msgid "howToEarnPoints/text/1"
 msgstr "Играйте на технике %(startLevel)s – %(endLevel)s уровня"
 
 msgid "howToEarnPoints/text/22"
-msgstr "Играйте на подходящей для режима технике"
+msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)"
 
 msgid "howToEarnPoints/text/27"
 msgstr "Играйте на подходящей для режима технике"
@@ -1183,6 +1183,9 @@ msgstr "Учебное пособие на выбор"
 msgid "selectBonus/brochure_gift"
 msgstr "Учебная брошюра на выбор"
 
+msgid "selectBonus/deluxe_gift"
+msgstr "Усовершенствованное оборудование на выбор"
+
 msgid "selectBonus/expequipments_gift"
 msgstr "Экспериментальное оборудование на выбор"
 
@@ -1450,7 +1453,8 @@ msgstr ""
 " технике VI-X уровней."
 
 msgid "tooltips/inProgress/playGame/ranked"
-msgstr "Правила начисления очков в Ранговых боях на технике IX уровня."
+msgstr ""
+"В Ранговых боях доступен заработок очков за выполнение ежедневных задач."
 
 msgid "tooltips/inProgress/timeLeft"
 msgstr "Осталось:"
