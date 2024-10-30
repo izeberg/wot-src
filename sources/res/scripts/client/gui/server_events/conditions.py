@@ -78,6 +78,8 @@ def _handleRelation(relation, source, toCompare):
         return source < toCompare
     if relation == _RELATIONS.LSQ:
         return source <= toCompare
+    if relation == _RELATIONS.NEQ:
+        return source != toCompare
     LOG_WARNING('Unknown kind of values relation', relation, source, toCompare)
     return False
 
