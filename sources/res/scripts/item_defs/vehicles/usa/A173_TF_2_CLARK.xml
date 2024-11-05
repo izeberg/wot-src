@@ -10,7 +10,7 @@
 	<postProgressionTree>role_HT_flame</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>25</forward>
+		<forward>20</forward>
 		<backward>10</backward>
 	</speedLimits>
 	<invisibility>
@@ -4039,21 +4039,21 @@
 						<heatingPerShot>2</heatingPerShot>
 						<heatingPerSec>20</heatingPerSec>
 						<coolingDelay>
-							1.0
+							2.0
 							<!--BW_String-->
 						</coolingDelay>
-						<coolingPerSec>14</coolingPerSec>
-						<coolingOverheatPerSec>18</coolingOverheatPerSec>
+						<coolingPerSec>20</coolingPerSec>
+						<coolingOverheatPerSec>24</coolingOverheatPerSec>
 						<thermalStateHysteresis>1</thermalStateHysteresis>
 						<temperatureSegmentSize>5</temperatureSegmentSize>
 						<thermalStates>
 							<state>
-								<maxTemperature>80</maxTemperature>
+								<maxTemperature>120</maxTemperature>
 								<isOverheated>True</isOverheated>
 								<modifiers/>
 							</state>
 							<state>
-								<maxTemperature>140</maxTemperature>
+								<maxTemperature>180</maxTemperature>
 								<isOverheated>True</isOverheated>
 								<modifiers>
 									<mul>
@@ -4073,7 +4073,7 @@
 								</modifiers>
 							</state>
 							<state>
-								<maxTemperature>200</maxTemperature>
+								<maxTemperature>240</maxTemperature>
 								<isOverheated>True</isOverheated>
 								<modifiers>
 									<mul>
@@ -5096,7 +5096,7 @@
 			<engines>
 				<Continental_AOSI_1195_6>
 					<smplEnginePower>550</smplEnginePower>
-					<smplFwMaxSpeed>25</smplFwMaxSpeed>
+					<smplFwMaxSpeed>20</smplFwMaxSpeed>
 				</Continental_AOSI_1195_6>
 			</engines>
 			<chassis>

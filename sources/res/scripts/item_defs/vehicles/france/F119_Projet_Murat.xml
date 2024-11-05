@@ -93,7 +93,7 @@
 		</ammoBayHealth>
 		<armor>
 			<armor_1>120</armor_1>
-			<armor_2>160</armor_2>
+			<armor_2>180</armor_2>
 			<armor_3>60</armor_3>
 			<armor_4>30</armor_4>
 			<armor_5>50</armor_5>
@@ -2925,7 +2925,7 @@
 			<price>65000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>200</armor_1>
+				<armor_1>230</armor_1>
 				<armor_2>50</armor_2>
 				<armor_3>140</armor_3>
 				<armor_4>30</armor_4>
@@ -2963,7 +2963,7 @@
 					<maxAmmo>54</maxAmmo>
 					<armor>
 						<armor_1>
-							330
+							350
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -2998,7 +2998,7 @@
 					</shotDispersionRadius>
 					<reloadTime>21</reloadTime>
 					<aimingTime>
-						2.6
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -4103,7 +4103,7 @@
 		<detailed>
 			<engines>
 				<Moteur_EPC_version_S5>
-					<smplEnginePower>880</smplEnginePower>
+					<smplEnginePower>750</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</Moteur_EPC_version_S5>
 			</engines>
@@ -4112,19 +4112,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1288
+								0.2318
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.05635
+								0.12679
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0483
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>
