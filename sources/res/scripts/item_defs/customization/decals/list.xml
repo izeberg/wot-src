@@ -13311,6 +13311,32 @@
 		</decal>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<decal>
+			<id>1096</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_760.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_760</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1097</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_761.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_761</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1098</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_762.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_762</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Vikings</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
 		<name>IGR CN</name>
 		<userString>#vehicle_customization:inscription/IGR</userString>
 		<season>ALL</season>
