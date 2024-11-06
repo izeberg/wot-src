@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.613842 -0.015439 -3.016743</min>
+		<max>1.558577 2.062999 1.807751</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

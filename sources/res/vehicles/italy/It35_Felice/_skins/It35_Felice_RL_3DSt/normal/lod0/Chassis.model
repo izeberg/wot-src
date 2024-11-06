@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.533197 -0.000801 -3.682713</min>
+		<max>1.533457 1.140439 3.527238</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000016</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>raven_01</name>
+		<type>model</type>
+		<resource>content/Decor/hd_dec_UNI_006_Raven/normal/lod0/hd_dec_UNI_006_Raven_01_anim.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>4.000016</duration>
+				<resourceID>content/Decor/hd_dec_UNI_006_Raven/animation/hd_dec_UNI_006_Raven_01_anim_Glide.fbx</resourceID>
+				<clipName/>
+				<speed>1.666660</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>6.666667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.001466 0.000415 0.000000</inTangent>
+				<outTangent>0.001466 0.000415 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>-0.014870 0.162087 0.728615</value>
+				<inTangent>0.470146 0.205918 0.464899</inTangent>
+				<outTangent>0.470146 0.205918 0.464899</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.626862 0.274557 0.619865</value>
+				<inTangent>0.011152 -0.121565 -0.546461</inTangent>
+				<outTangent>0.011152 -0.121565 -0.546461</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-1.045125 -0.445626 -0.713808</inTangent>
+				<outTangent>-1.045125 -0.445626 -0.713808</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>-0.804970 -0.335592 -0.348473</value>
+				<inTangent>-0.330109 -0.137727 -0.701240</inTangent>
+				<outTangent>-0.330109 -0.137727 -0.701240</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.266667</startTime>
+				<value>-0.527451 -0.220012 -0.861115</value>
+				<inTangent>0.604495 0.251990 0.134793</inTangent>
+				<outTangent>0.604495 0.251990 0.134793</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000969 0.001257 0.001134</inTangent>
+				<outTangent>0.000969 0.001257 0.001134</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>style_cust_It35_raven_idle_02</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.233333</startTime>
+				<duration>1.600000</duration>
+				<value>raven_01|Raven_Head01</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.233333</startTime>
+				<duration>1.392196</duration>
+				<sequenceSound>style_cust_It35_raven_idle_02</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>style_cust_It35_raven_idle_caw</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<duration>1.700000</duration>
+				<value>raven_01|Raven_Head01</value>
+			</frame>
+		</track>
+		<track>
+			<name>style_cust_ShPTK_raven_idle_caw</name>
+			<type>sound</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<duration>1.866667</duration>
+				<sequenceSound>style_cust_It35_raven_idle_caw</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

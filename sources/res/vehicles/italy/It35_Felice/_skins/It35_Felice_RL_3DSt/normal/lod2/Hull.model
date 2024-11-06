@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.707908 -0.723980 -4.236454</min>
+		<max>1.845730 0.715859 3.837366</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

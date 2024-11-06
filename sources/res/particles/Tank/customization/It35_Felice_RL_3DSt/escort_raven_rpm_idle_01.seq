@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000016</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>raven_01</name>
+		<type>model</type>
+		<resource>content/Decor/hd_dec_UNI_006_Raven/normal/lod0/hd_dec_UNI_006_Raven_01_anim.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>4.000016</duration>
+				<resourceID>content/Decor/hd_dec_UNI_006_Raven/animation/hd_dec_UNI_006_Raven_01_anim_Glide.fbx</resourceID>
+				<clipName/>
+				<speed>1.666660</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>6.666667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.249264 0.685318 0.653354</inTangent>
+				<outTangent>-0.249264 0.685318 0.653354</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>-0.166176 0.456879 0.435570</value>
+				<inTangent>0.450280 0.323646 0.469500</inTangent>
+				<outTangent>0.450280 0.323646 0.469500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.600372 0.431528 0.625999</value>
+				<inTangent>0.791995 -0.086163 -0.098777</inTangent>
+				<outTangent>0.791995 -0.086163 -0.098777</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.889816 0.341995 0.303867</value>
+				<inTangent>0.172293 -0.278708 -0.536265</inTangent>
+				<outTangent>0.172293 -0.278708 -0.536265</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.827110 0.045815 -0.108665</value>
+				<inTangent>-0.362909 -0.229179 -0.252872</inTangent>
+				<outTangent>-0.362909 -0.229179 -0.252872</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.636239 -0.035242 0.083589</inTangent>
+				<outTangent>-0.636239 -0.035242 0.083589</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.368294 0.000000</inTangent>
+				<outTangent>0.000000 0.368294 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>style_cust_It35_raven_idle_01</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<duration>1.533333</duration>
+				<value>raven_01|Raven_Head01</value>
+			</frame>
+		</track>
+		<track>
+			<name>style_cust_It35_raven_idle_01</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<duration>1.491995</duration>
+				<sequenceSound>style_cust_It35_raven_idle_01</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>style_cust_It35_raven_idle_caw</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<duration>1.000000</duration>
+				<value>raven_01|Raven_Head01</value>
+			</frame>
+		</track>
+		<track>
+			<name>style_cust_It35_raven_idle_caw</name>
+			<type>sound</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<duration>1.866667</duration>
+				<sequenceSound>style_cust_It35_raven_idle_caw</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>
