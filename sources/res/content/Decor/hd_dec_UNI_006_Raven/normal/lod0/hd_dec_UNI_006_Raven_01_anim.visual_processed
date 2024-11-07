@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Raven_Hips01</identifier>
+			<transform>
+				<row0>-0.000000 -0.010135 -0.999949</row0>
+				<row1>0.000000 0.999949 -0.010135</row1>
+				<row2>1.000000 -0.000000 0.000000</row2>
+				<row3>0.000000 0.100618 0.058839</row3>
+			</transform>
+			<node>
+				<identifier>Raven_Chest01</identifier>
+				<transform>
+					<row0>0.981540 0.191260 -0.000000</row0>
+					<row1>-0.191260 0.981539 0.000000</row1>
+					<row2>0.000000 -0.000000 1.000000</row2>
+					<row3>0.161270 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Raven_Head01</identifier>
+					<transform>
+						<row0>0.979617 -0.200873 0.000000</row0>
+						<row1>0.200873 0.979617 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>0.099163 0.000000 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Raven_Head01_BlendBone</identifier>
+						<transform>
+							<row0>-0.000000 0.000000 1.000000</row0>
+							<row1>-0.019937 0.999801 -0.000000</row1>
+							<row2>0.999801 0.019937 -0.000000</row2>
+							<row3>-0.197571 -0.120925 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Raven_L_WingBase01</identifier>
+					<transform>
+						<row0>0.133172 -0.203091 -0.970061</row0>
+						<row1>-0.207915 -0.962724 0.173012</row1>
+						<row2>-0.969039 0.178650 -0.170434</row2>
+						<row3>0.018099 0.055380 0.045385</row3>
+					</transform>
+					<node>
+						<identifier>Raven_L_WingElbow01</identifier>
+						<transform>
+							<row0>0.975094 -0.220493 -0.023982</row0>
+							<row1>0.220530 0.975380 -0.001101</row1>
+							<row2>0.023634 -0.004215 0.999712</row2>
+							<row3>-0.121380 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Raven_L_WingElbow02</identifier>
+							<transform>
+								<row0>0.970506 -0.183432 0.156435</row0>
+								<row1>0.185718 0.982603 -0.000000</row1>
+								<row2>-0.153713 0.029053 0.987688</row2>
+								<row3>-0.165744 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Raven_L_WingElbow02_BlendBone</identifier>
+								<transform>
+									<row0>-0.973160 -0.226202 -0.042326</row0>
+									<row1>0.227746 -0.973052 -0.036071</row1>
+									<row2>0.033026 0.044743 -0.998452</row2>
+									<row3>0.276095 0.236904 0.077526</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Raven_L_WingElbow01_BlendBone</identifier>
+							<transform>
+								<row0>-0.979961 -0.044988 -0.194041</row0>
+								<row1>0.045860 -0.998948 -0.000000</row1>
+								<row2>0.193837 0.008899 -0.980994</row2>
+								<row3>0.134288 0.184391 0.119763</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Raven_L_WingBase01_BlendBone</identifier>
+						<transform>
+							<row0>-0.970061 0.173012 -0.170434</row0>
+							<row1>-0.175581 -0.984465 0.000000</row1>
+							<row2>0.167786 -0.029925 -0.985369</row2>
+							<row3>0.053058 0.149737 0.116305</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Raven_R_WingBase01</identifier>
+					<transform>
+						<row0>-0.133172 0.203091 -0.970061</row0>
+						<row1>0.207915 0.962724 0.173012</row1>
+						<row2>0.969039 -0.178650 -0.170434</row2>
+						<row3>0.018099 0.055379 -0.045385</row3>
+					</transform>
+					<node>
+						<identifier>Raven_R_WingElbow01</identifier>
+						<transform>
+							<row0>0.975094 -0.220493 -0.023982</row0>
+							<row1>0.220530 0.975379 -0.001101</row1>
+							<row2>0.023634 -0.004215 0.999712</row2>
+							<row3>0.121380 -0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Raven_R_WingElbow02</identifier>
+							<transform>
+								<row0>0.970506 -0.183431 0.156434</row0>
+								<row1>0.185718 0.982603 -0.000000</row1>
+								<row2>-0.153713 0.029053 0.987688</row2>
+								<row3>0.165744 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Raven_R_WingElbow02_BlendBone</identifier>
+								<transform>
+									<row0>-0.973160 -0.226202 -0.042326</row0>
+									<row1>-0.227746 0.973052 0.036071</row1>
+									<row2>-0.033026 -0.044743 0.998452</row2>
+									<row3>-0.276094 -0.236904 -0.077527</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Raven_R_WingElbow01_BlendBone</identifier>
+							<transform>
+								<row0>-0.979961 -0.044988 -0.194041</row0>
+								<row1>-0.045860 0.998948 0.000000</row1>
+								<row2>-0.193837 -0.008899 0.980994</row2>
+								<row3>-0.134288 -0.184390 -0.119763</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Raven_R_WingBase01_BlendBone</identifier>
+						<transform>
+							<row0>-0.970061 0.173012 -0.170434</row0>
+							<row1>0.175581 0.984465 -0.000000</row1>
+							<row2>-0.167786 0.029925 0.985369</row2>
+							<row3>-0.053057 -0.149736 -0.116305</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Raven_Chest01_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.181302 0.983427 -0.000000</row1>
+						<row2>0.983427 -0.181302 -0.000000</row2>
+						<row3>-0.118672 -0.078773 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Raven_L_Leg01</identifier>
+				<transform>
+					<row0>0.995128 0.074885 0.064124</row0>
+					<row1>0.074772 -0.997192 0.004164</row1>
+					<row2>0.064255 0.000651 -0.997933</row2>
+					<row3>0.043405 -0.022547 0.044282</row3>
+				</transform>
+				<node>
+					<identifier>Raven_L_Elbow01</identifier>
+					<transform>
+						<row0>-0.834033 -0.513636 -0.201412</row0>
+						<row1>-0.503228 0.857882 -0.103918</row1>
+						<row2>0.226164 0.014685 -0.973979</row2>
+						<row3>-0.145984 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Raven_L_Toe01</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.074873 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Raven_L_Toe01_BlendBone</identifier>
+							<transform>
+								<row0>0.145376 0.075006 0.986529</row0>
+								<row1>0.458515 -0.888687 0.000000</row1>
+								<row2>-0.876716 -0.452338 0.163585</row2>
+								<row3>-0.102649 -0.014880 -0.008107</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Raven_L_Elbow01_BlendBone</identifier>
+						<transform>
+							<row0>0.145376 0.075006 0.986529</row0>
+							<row1>0.458515 -0.888687 0.000000</row1>
+							<row2>-0.876716 -0.452338 0.163585</row2>
+							<row3>-0.177522 -0.014880 -0.008107</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Raven_L_Leg01_BlendBone</identifier>
+					<transform>
+						<row0>0.064124 0.004164 -0.997933</row0>
+						<row1>0.064796 -0.997898 0.000000</row1>
+						<row2>0.995836 0.064662 0.064259</row2>
+						<row3>0.007729 0.078298 0.045197</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Raven_R_Leg01</identifier>
+				<transform>
+					<row0>-0.995128 -0.074885 0.064124</row0>
+					<row1>-0.074772 0.997192 0.004164</row1>
+					<row2>-0.064255 -0.000651 -0.997933</row2>
+					<row3>0.043405 -0.022547 -0.044282</row3>
+				</transform>
+				<node>
+					<identifier>Raven_R_Elbow01</identifier>
+					<transform>
+						<row0>-0.834033 -0.513636 -0.201412</row0>
+						<row1>-0.503228 0.857882 -0.103918</row1>
+						<row2>0.226164 0.014685 -0.973979</row2>
+						<row3>0.145984 0.000000 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Raven_R_Toe01</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>-0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.074873 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Raven_R_Toe01_BlendBone</identifier>
+							<transform>
+								<row0>0.145376 0.075006 0.986529</row0>
+								<row1>-0.458515 0.888687 0.000000</row1>
+								<row2>0.876716 0.452338 -0.163585</row2>
+								<row3>0.102649 0.014880 0.008107</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Raven_R_Elbow01_BlendBone</identifier>
+						<transform>
+							<row0>0.145376 0.075006 0.986529</row0>
+							<row1>-0.458515 0.888687 0.000000</row1>
+							<row2>0.876716 0.452338 -0.163585</row2>
+							<row3>0.177522 0.014880 0.008107</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Raven_R_Leg01_BlendBone</identifier>
+					<transform>
+						<row0>0.064124 0.004164 -0.997933</row0>
+						<row1>-0.064796 0.997898 0.000000</row1>
+						<row2>-0.995836 -0.064662 -0.064259</row2>
+						<row3>-0.007730 -0.078298 -0.045197</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Raven_Tail01</identifier>
+				<transform>
+					<row0>-1.000000 -0.000000 0.000000</row0>
+					<row1>-0.000000 1.000000 -0.000000</row1>
+					<row2>-0.000000 0.000000 -1.000000</row2>
+					<row3>-0.102726 0.012080 -0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Raven_Tail01_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.010135 0.999949 0.000000</row1>
+						<row2>-0.999949 0.010135 -0.000000</row2>
+						<row3>-0.162581 -0.112097 -0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Raven_Hips01_BlendBone</identifier>
+				<transform>
+					<row0>-0.000000 0.000000 1.000000</row0>
+					<row1>-0.010135 0.999949 -0.000000</row1>
+					<row2>0.999949 0.010135 -0.000000</row2>
+					<row3>0.059856 -0.100016 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Raven_R_Toe01_BlendBone</node>
+		<node>Raven_R_Elbow01_BlendBone</node>
+		<node>Raven_R_Leg01_BlendBone</node>
+		<node>Raven_Head01_BlendBone</node>
+		<node>Raven_Chest01_BlendBone</node>
+		<node>Raven_R_WingBase01_BlendBone</node>
+		<node>Raven_Hips01_BlendBone</node>
+		<node>Raven_R_WingElbow01_BlendBone</node>
+		<node>Raven_Tail01_BlendBone</node>
+		<node>Raven_L_Leg01_BlendBone</node>
+		<node>Raven_R_WingElbow02_BlendBone</node>
+		<node>Raven_L_Toe01_BlendBone</node>
+		<node>Raven_L_Elbow01_BlendBone</node>
+		<node>Raven_L_WingBase01_BlendBone</node>
+		<node>Raven_L_WingElbow01_BlendBone</node>
+		<node>Raven_L_WingElbow02_BlendBone</node>
+		<geometry>
+			<vertices>sShape0.vertices</vertices>
+			<primitive>sShape0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>108</materialKind>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Decor/hd_dec_UNI_006_Raven/hd_dec_UNI_006_Raven_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Decor/hd_dec_UNI_006_Raven/hd_dec_UNI_006_Raven_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Decor/hd_dec_UNI_006_Raven/hd_dec_UNI_006_Raven_01_GMM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>false</Bool>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaReference
+						<Int>140</Int>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.088525 -0.030000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.607534 -0.011849 -0.335751</min>
+		<max>0.607534 0.188900 0.395752</max>
+	</boundingBox>
+	<geometrySize>22944</geometrySize>
+	<minUVDensity>0.375246</minUVDensity>
+</root>
