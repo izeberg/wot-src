@@ -32,14 +32,17 @@ KEY_BATTLE_HINTS = 'battle_hints'
 KEY_NEWBIE_HINTS = 'newbie_hints'
 CAROUSEL_FILTER_1 = 'CAROUSEL_FILTER_1'
 CAROUSEL_FILTER_2 = 'CAROUSEL_FILTER_2'
+CAROUSEL_FILTER_3 = 'CAROUSEL_FILTER_3'
 CAROUSEL_FILTER_CLIENT_1 = 'CAROUSEL_FILTER_CLIENT_1'
 MISSION_SELECTOR_FILTER = 'MISSION_SELECTOR_FILTER'
 PM_SELECTOR_FILTER = 'PM_SELECTOR_FILTER'
 RANKED_CAROUSEL_FILTER_1 = 'RANKED_CAROUSEL_FILTER_1'
 RANKED_CAROUSEL_FILTER_2 = 'RANKED_CAROUSEL_FILTER_2'
+RANKED_CAROUSEL_FILTER_3 = 'RANKED_CAROUSEL_FILTER_3'
 RANKED_CAROUSEL_FILTER_CLIENT_1 = 'RANKED_CAROUSEL_FILTER_CLIENT_1'
 EPICBATTLE_CAROUSEL_FILTER_1 = 'EPICBATTLE_CAROUSEL_FILTER_1'
 EPICBATTLE_CAROUSEL_FILTER_2 = 'EPICBATTLE_CAROUSEL_FILTER_2'
+EPICBATTLE_CAROUSEL_FILTER_3 = 'EPICBATTLE_CAROUSEL_FILTER_3'
 EPICBATTLE_CAROUSEL_FILTER_CLIENT_1 = 'EPICBATTLE_CAROUSEL_FILTER_CLIENT_1'
 EPICBATTLE_CAROUSEL_FILTER_CLIENT_2 = 'EPICBATTLE_CAROUSEL_FILTER_CLIENT_2'
 STORAGE_VEHICLES_CAROUSEL_FILTER_1 = 'STORAGE_CAROUSEL_FILTER_1'
@@ -54,12 +57,15 @@ ROYALE_INTRO_VIDEO_SHOWN_FOR_SEASON = 'ROYALE_INTRO_VIDEO_SHOWN_FOR_SEASON'
 ROYALE_SQUAD_TIP_SHOWN_FOR_SEASON = 'ROYALE_SQUAD_TIP_SHOWN_FOR_SEASON'
 MAPBOX_CAROUSEL_FILTER_1 = 'MAPBOX_CAROUSEL_FILTER_1'
 MAPBOX_CAROUSEL_FILTER_2 = 'MAPBOX_CAROUSEL_FILTER_2'
+MAPBOX_CAROUSEL_FILTER_3 = 'MAPBOX_CAROUSEL_FILTER_3'
 MAPBOX_CAROUSEL_FILTER_CLIENT_1 = 'MAPBOX_CAROUSEL_FILTER_CLIENT_1'
 FUN_RANDOM_CAROUSEL_FILTER_1 = 'FUN_RANDOM_CAROUSEL_FILTER_1'
 FUN_RANDOM_CAROUSEL_FILTER_2 = 'FUN_RANDOM_CAROUSEL_FILTER_2'
+FUN_RANDOM_CAROUSEL_FILTER_3 = 'FUN_RANDOM_CAROUSEL_FILTER_3'
 FUN_RANDOM_CAROUSEL_FILTER_CLIENT_1 = 'FUN_RANDOM_CAROUSEL_FILTER_CLIENT_1'
 COMP7_CAROUSEL_FILTER_1 = 'COMP7_CAROUSEL_FILTER_1'
 COMP7_CAROUSEL_FILTER_2 = 'COMP7_CAROUSEL_FILTER_2'
+COMP7_CAROUSEL_FILTER_3 = 'COMP7_CAROUSEL_FILTER_3'
 COMP7_CAROUSEL_FILTER_CLIENT_1 = 'COMP7_CAROUSEL_FILTER_CLIENT_1'
 COMP7_PREBATTLE_CAROUSEL_ROW_VALUE = 'comp7PrebattleCarouselRowValue'
 COMP7_IS_VOIP_IN_BATTLE_ACTIVATED = 'comp7IsVoipInBattleActivated'
@@ -118,6 +124,7 @@ LIVE_OPS_WEB_EVENTS_COUNTERS = 'liveOpsWebEventsCounters'
 LIVE_OPS_WEB_EVENTS_UI_FLAGS = 'liveOpsWebEventsUIFlags'
 COMP7_BOND_EQUIPMENT_REMINDER_SHOWN_TIMESTAMP = 'comp7BondEquipmentReminderShown'
 COMP7_YEARLY_REWARD_SEEN = 'comp7YearlyRewardSeen'
+VEHICLE_CAROUSEL_COUNTERS_SEEN = 'vehicleCarouselCountersSeen'
 STORE_TAB = 'store_tab'
 STATS_REGULAR_SORTING = 'statsSorting'
 STATS_SORTIE_SORTING = 'statsSortingSortie'
@@ -149,6 +156,7 @@ CRYSTALS_INFO_SHOWN = 'crystalsInfoShown'
 IS_CUSTOMIZATION_INTRO_VIEWED = 'isCustomizationIntroViewed'
 NPS_STORAGE = 'nps_storage'
 CUSTOMIZATION_STYLE_ITEMS_VISITED = 'CustomizationStyleItemsVisited'
+CUSTOMIZATION_TABS_VISITED = 'CustomizationTabsVisited'
 OPT_DEVICE_TAB_VISITED = 'optDeviceTabVisited'
 ANONYMIZER = GAME.ANONYMIZER
 CUSTOMIZATION_SECTION = 'customization'
@@ -239,7 +247,6 @@ FUN_RANDOM_NOTIFICATIONS = 'funRandomNotifications'
 FUN_RANDOM_NOTIFICATIONS_FROZEN = 'funRandomNotificationsFrozen'
 FUN_RANDOM_NOTIFICATIONS_PROGRESSIONS = 'funRandomNotificationsProgressions'
 FUN_RANDOM_NOTIFICATIONS_SUB_MODES = 'funRandomNotificationsSubModes'
-IS_TECH_TREE_TRADE_IN_INTRO_VIEWED = 'isTechTreeTradeInIntroViewed'
 LOOT_BOXES = 'lootBoxes'
 EVENT_LOOT_BOXES = 'eventLootBoxes'
 LOOTBOX_SYSTEM = 'lootBoxSystem'
@@ -308,6 +315,14 @@ class Winback(object):
     COMPLETED_STARTING_QUEST_COUNT = 'completedStartingQuestCount'
     INTRO_SHOWN = 'introShown'
     BATTLE_SELECTOR_SETTINGS_BULLET_SHOWN = 'battleSelectorSettingsBulletShown'
+
+
+class AdventCalendar(object):
+    SETTINGS = 'adventCalendarSettings'
+    INTRO_SHOWN = 'adventCalendarIntroShown'
+    LAST_HIGHLIGHTED_DOOR = 'adventCalendarLastHighlightedDoor'
+    FIRST_ENTRY_NOTIFICATION_SHOWN = 'adventCalendarFirstEntryNotificationShown'
+    LAST_DAY_POPUP_SEEN = 'adventCalendarLastDayPopupSeen'
 
 
 KNOWN_SELECTOR_BATTLES = 'knownSelectorBattles'
@@ -431,6 +446,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                      'role_LT_universal': False, 
                                      'role_LT_wheeled': False, 
                                      'role_SPG': False}, 
+                 CAROUSEL_FILTER_3: {'own3DStyle': False, 
+                                     'canInstallAttachments': False}, 
                  CAROUSEL_FILTER_CLIENT_1: {'searchNameVehicle': '', 
                                             'clanRented': False}, 
                  BATTLEPASS_CAROUSEL_FILTER_CLIENT_1: {'battlePassSeason': 0}, RANKED_CAROUSEL_FILTER_1: {'ussr': False, 
@@ -484,6 +501,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                             'role_LT_universal': False, 
                                             'role_LT_wheeled': False, 
                                             'role_SPG': False}, 
+                 RANKED_CAROUSEL_FILTER_3: {'own3DStyle': False, 
+                                            'canInstallAttachments': False}, 
                  RANKED_CAROUSEL_FILTER_CLIENT_1: {'searchNameVehicle': '', 
                                                    'clanRented': False}, 
                  ROYALE_CAROUSEL_FILTER_1: {'ussr': False, 
@@ -574,6 +593,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                 'role_LT_universal': False, 
                                                 'role_LT_wheeled': False, 
                                                 'role_SPG': False}, 
+                 EPICBATTLE_CAROUSEL_FILTER_3: {'own3DStyle': False, 
+                                                'canInstallAttachments': False}, 
                  EPICBATTLE_CAROUSEL_FILTER_CLIENT_1: {'epicBattleSeason': 0, 
                                                        'level_8': True, 
                                                        'level_9': True, 
@@ -635,6 +656,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                             'role_LT_universal': False, 
                                             'role_LT_wheeled': False, 
                                             'role_SPG': False}, 
+                 MAPBOX_CAROUSEL_FILTER_3: {'own3DStyle': False, 
+                                            'canInstallAttachments': False}, 
                  MAPBOX_CAROUSEL_FILTER_CLIENT_1: {'searchNameVehicle': '', 
                                                    'clanRented': False}, 
                  FUN_RANDOM_CAROUSEL_FILTER_1: {'ussr': False, 
@@ -688,6 +711,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                 'role_LT_universal': False, 
                                                 'role_LT_wheeled': False, 
                                                 'role_SPG': False}, 
+                 FUN_RANDOM_CAROUSEL_FILTER_3: {'own3DStyle': False, 
+                                                'canInstallAttachments': False}, 
                  FUN_RANDOM_CAROUSEL_FILTER_CLIENT_1: {'searchNameVehicle': '', 
                                                        'clanRented': False}, 
                  COMP7_CAROUSEL_FILTER_1: {'ussr': False, 
@@ -741,6 +766,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                            'role_LT_universal': False, 
                                            'role_LT_wheeled': False, 
                                            'role_SPG': False}, 
+                 COMP7_CAROUSEL_FILTER_3: {'own3DStyle': False, 
+                                           'canInstallAttachments': False}, 
                  COMP7_CAROUSEL_FILTER_CLIENT_1: {'searchNameVehicle': '', 
                                                   'clanRented': False}, 
                  MISSION_SELECTOR_FILTER: {'inventory': False}, 
@@ -1076,6 +1103,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   FUN_RANDOM_PROGRESSION: {}, SHOW_DEMO_ACC_REGISTRATION: False, 
                   IS_CUSTOMIZATION_INTRO_VIEWED: False, 
                   CUSTOMIZATION_STYLE_ITEMS_VISITED: set(), 
+                  CUSTOMIZATION_TABS_VISITED: set([1, 2, 3, 4, 5, 6, 7]), 
                   SHOWN_WOT_PLUS_INTRO: False, 
                   SHOWN_OPTIONAL_DEVICES_ASSISTANT_HINT: False, 
                   OPT_DEVICE_TAB_VISITED: {}, BattleMatters.BATTLE_MATTERS_SETTINGS: {BattleMatters.BATTLES_COUNT_WITHOUT_PROGRESS: 0, 
@@ -1084,7 +1112,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                           BattleMatters.REMINDER_LAST_DISPLAY_TIME: 0}, 
                   BR_PROGRESSION_POINTS_SEEN: 0, 
                   ROYALE_INTRO_VIDEO_SHOWN_FOR_SEASON: 0, 
-                  IS_TECH_TREE_TRADE_IN_INTRO_VIEWED: False, 
                   COMP7_LIGHT_PROGRESSION_POINTS_SEEN: 0, 
                   COMP7_LIGHT_INTRO_SHOWN: False, 
                   ROYALE_SQUAD_TIP_SHOWN_FOR_SEASON: 0, 
@@ -1121,7 +1148,11 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                           PREV_CATEGORY_LIST_DATA: [
                                                                   (0, 0), (0, 0), (0, 0)], 
                                           IS_NEEDED_SHOW_HINT_ACHIEVEMENT_CATALOG: True, 
-                                          UNSEEN_ADVANCED_ACHIEVEMENTS: {}, SEEN_TROPHIES_ADVANCED_ACHIEVEMENTS: {}, MAIN_ADVANCED_ACHIEVEMENTS_PAGE_VISITED: False}}, 
+                                          UNSEEN_ADVANCED_ACHIEVEMENTS: {}, SEEN_TROPHIES_ADVANCED_ACHIEVEMENTS: {}, MAIN_ADVANCED_ACHIEVEMENTS_PAGE_VISITED: False}, 
+                  AdventCalendar.SETTINGS: {AdventCalendar.INTRO_SHOWN: False, 
+                                            AdventCalendar.LAST_HIGHLIGHTED_DOOR: -1, 
+                                            AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWN: False, 
+                                            AdventCalendar.LAST_DAY_POPUP_SEEN: 0}}, 
    KEY_COUNTERS: {NEW_HOF_COUNTER: {PROFILE_CONSTANTS.HOF_ACHIEVEMENTS_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VEHICLES_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VIEW_RATING_BUTTON: True}, 
@@ -1136,7 +1167,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   DEMOUNT_KIT_SEEN: False, 
                   RECERTIFICATION_FORM_SEEN: False, 
                   NEW_SHOP_TABS: {IS_COLLECTIBLE_VEHICLES_VISITED: False}, 
-                  VPP_ENTRY_POINT_LAST_SEEN_STEP: {}, LIVE_OPS_WEB_EVENTS_COUNTERS: {}}, 
+                  VPP_ENTRY_POINT_LAST_SEEN_STEP: {}, LIVE_OPS_WEB_EVENTS_COUNTERS: {}, VEHICLE_CAROUSEL_COUNTERS_SEEN: {}}, 
    KEY_NOTIFICATIONS: {ELEN_NOTIFICATIONS: {MISSIONS_CONSTANTS.ELEN_EVENT_STARTED_NOTIFICATION: set(), 
                                             MISSIONS_CONSTANTS.ELEN_EVENT_FINISHED_NOTIFICATION: set(), 
                                             MISSIONS_CONSTANTS.ELEN_EVENT_TAB_VISITED: set()}, 

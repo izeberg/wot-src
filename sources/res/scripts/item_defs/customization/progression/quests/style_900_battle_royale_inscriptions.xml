@@ -7,12 +7,6 @@
 			<hidden>true</hidden>
 			<conditions>
 				<preBattle>
-					<account>
-						<token>
-							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
-						</token>
-					</account>
 					<battle>
 						<bonusTypes>29 30</bonusTypes>
 					</battle>
@@ -53,12 +47,6 @@
 					<ru>ÐÐ¾Ð¹ÑÐ¸ Ð² ÑÐ¾Ð¿-1 Ð¸ ÑÐ½Ð¸ÑÑÐ¾Ð¶Ð¸ÑÑ 4 ÐµÐ´. ÑÐµÑÐ½Ð¸ÐºÐ¸ Ð¿ÑÐ¾ÑÐ¸Ð²Ð½Ð¸ÐºÐ° Ð² Ð¾Ð´Ð½Ð¾Ð¼ Ð±Ð¾Ñ</ru>
 				</description>
 				<preBattle>
-					<account>
-						<token>
-							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
-						</token>
-					</account>
 					<battle>
 						<bonusTypes>29 30</bonusTypes>
 					</battle>
@@ -97,12 +85,6 @@
 			<hidden>true</hidden>
 			<conditions>
 				<preBattle>
-					<account>
-						<token>
-							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
-						</token>
-					</account>
 					<battle>
 						<bonusTypes>29 30</bonusTypes>
 					</battle>

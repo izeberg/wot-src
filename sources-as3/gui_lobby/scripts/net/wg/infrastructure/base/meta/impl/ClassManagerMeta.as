@@ -1090,11 +1090,11 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.fortifications.popovers.FortVehicleSelectPopover;
    import net.wg.gui.lobby.fortifications.popovers.PopoverWithDropdown;
    import net.wg.gui.lobby.goldFishEvent.GoldFishWindow;
-   import net.wg.gui.lobby.hangar.CarouselBannerInject;
    import net.wg.gui.lobby.hangar.CarouselEventEntry;
    import net.wg.gui.lobby.hangar.CrewDropDownEvent;
    import net.wg.gui.lobby.hangar.CrewPanelInject;
    import net.wg.gui.lobby.hangar.DailyQuestWidget;
+   import net.wg.gui.lobby.hangar.EventTournamentBannerInject;
    import net.wg.gui.lobby.hangar.Hangar;
    import net.wg.gui.lobby.hangar.HangarAmunitionSwitchAnimator;
    import net.wg.gui.lobby.hangar.HangarContentHelper;
@@ -2371,6 +2371,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.CustomizationFadeInFadeOutMovieClip;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationFiltersPopover;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationHeader;
+   import net.wg.gui.lobby.vehicleCustomization.CustomizationHelpMessage;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationHelper;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationItemPropertyRenderer;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationItemsPopover;
@@ -2388,9 +2389,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.CustomizationStyleInfo;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationStyleInfoBlock;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationStyleScrollContainer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationSwitcherRibbon;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationTabNavigator;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationVehicleView;
+   import net.wg.gui.lobby.vehicleCustomization.EmptyStateComponent;
    import net.wg.gui.lobby.vehicleCustomization.ICustomizationEndPointIcon;
    import net.wg.gui.lobby.vehicleCustomization.ISlotsPanelRenderer;
    import net.wg.gui.lobby.vehicleCustomization.ItemBrowserDisableOverlay;
@@ -2410,8 +2411,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverKitRenderer;
    import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverProgressiveItemRenderer;
    import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationRadialButton;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationSwitcher;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationSwitcherButton;
    import net.wg.gui.lobby.vehicleCustomization.controls.FilterCounterTFContainer;
    import net.wg.gui.lobby.vehicleCustomization.controls.HistoricIndicator;
    import net.wg.gui.lobby.vehicleCustomization.controls.ImageHitAreaWrapper;
@@ -2425,6 +2424,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabButton;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselInfoLabel;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselOverlay;
+   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationModalLine;
+   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationTabCounter;
    import net.wg.gui.lobby.vehicleCustomization.controls.magneticTool.MagneticToolController;
    import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationPropertiesSheet;
    import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetBaseBtnRenderer;
@@ -2472,10 +2473,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationRadioRendererVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSlotIdVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSlotUpdateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSwitcherVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabButtonVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomziationAnchorStateVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.FilterFallbackDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.FiltersPopoverVO;
    import net.wg.gui.lobby.vehicleCustomization.data.FiltersStateVO;
    import net.wg.gui.lobby.vehicleCustomization.data.HistoricIndicatorVO;
@@ -2518,11 +2519,13 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.progressionStyles.StageSwitcher;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationImageBlock;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationItemPropertyBlock;
+   import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationRarityHeaderBlock;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.ImageTextBlockProgressive;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.QuestOrConditionBlock;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.QuestProgressBar;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.QuestProgressBlock;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.data.CustomizationImageBlockVO;
+   import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.data.CustomizationRarityHeaderVO;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.data.QuestProgressBlockVO;
    import net.wg.gui.lobby.vehicleInfo.BaseBlock;
    import net.wg.gui.lobby.vehicleInfo.CrewBlock;
@@ -2804,6 +2807,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.NotificationAchievements;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntry;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntryWithoutWTR;
+   import net.wg.gui.notification.custom.NotificationAdventCalendarReward;
    import net.wg.gui.notification.custom.NotificationBMTaskReminder;
    import net.wg.gui.notification.custom.NotificationCollectionsCustom;
    import net.wg.gui.notification.custom.NotificationSeniorityAwardsQuest;
@@ -2811,6 +2815,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.SMAchievements;
    import net.wg.gui.notification.custom.SMAchievementsFirstEntry;
    import net.wg.gui.notification.custom.SMAchievementsFirstEntryWithoutWTR;
+   import net.wg.gui.notification.custom.SMAdventCalendarReward;
    import net.wg.gui.notification.custom.SMBattleMattersReminder;
    import net.wg.gui.notification.custom.SMCollectionsCustom;
    import net.wg.gui.notification.custom.SMFunRandomReward;
@@ -2820,6 +2825,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.SeniorityAwardsVehicleSelection;
    import net.wg.gui.notification.custom.WotPlusAttendanceBig;
    import net.wg.gui.notification.custom.WotPlusAttendanceSmall;
+   import net.wg.gui.notification.custom.vo.SMAdventCalendarRewardVO;
    import net.wg.gui.notification.custom.vo.SMBattleMattersTaskReminderVO;
    import net.wg.gui.notification.custom.vo.SMCustomSeniorityAwardsTokensVO;
    import net.wg.gui.notification.custom.vo.SMExchangeRatePersonalDiscountVO;
@@ -5132,8 +5138,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_GOLDFISHEVENT_GOLDFISHWINDOW:Class = GoldFishWindow;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_CAROUSELBANNERINJECT:Class = CarouselBannerInject;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_CAROUSELEVENTENTRY:Class = CarouselEventEntry;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_CREWDROPDOWNEVENT:Class = CrewDropDownEvent;
@@ -5141,6 +5145,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_CREWPANELINJECT:Class = CrewPanelInject;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DAILYQUESTWIDGET:Class = DailyQuestWidget;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTTOURNAMENTBANNERINJECT:Class = EventTournamentBannerInject;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_HANGAR:Class = Hangar;
       
@@ -7672,6 +7678,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONHELPER:Class = CustomizationHelper;
       
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONHELPMESSAGE:Class = CustomizationHelpMessage;
+      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONITEMPROPERTYRENDERER:Class = CustomizationItemPropertyRenderer;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONITEMSPOPOVER:Class = CustomizationItemsPopover;
@@ -7704,11 +7712,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSTYLESCROLLCONTAINER:Class = CustomizationStyleScrollContainer;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSWITCHERRIBBON:Class = CustomizationSwitcherRibbon;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONTABNAVIGATOR:Class = CustomizationTabNavigator;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONVEHICLEVIEW:Class = CustomizationVehicleView;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EMPTYSTATECOMPONENT:Class = EmptyStateComponent;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_ICUSTOMIZATIONENDPOINTICON:Class = ICustomizationEndPointIcon;
       
@@ -7748,10 +7756,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONRADIALBUTTON:Class = CustomizationRadialButton;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONSWITCHER:Class = CustomizationSwitcher;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONSWITCHERBUTTON:Class = CustomizationSwitcherButton;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_FILTERCOUNTERTFCONTAINER:Class = FilterCounterTFContainer;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_HISTORICINDICATOR:Class = HistoricIndicator;
@@ -7777,6 +7781,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELINFOLABEL:Class = CustomizationCarouselInfoLabel;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELOVERLAY:Class = CustomizationCarouselOverlay;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONMODALLINE:Class = CustomizationModalLine;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONTABCOUNTER:Class = CustomizationTabCounter;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_MAGNETICTOOL_MAGNETICTOOLCONTROLLER:Class = MagneticToolController;
       
@@ -7872,13 +7880,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONSLOTUPDATEVO:Class = CustomizationSlotUpdateVO;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONSWITCHERVO:Class = CustomizationSwitcherVO;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONTABBUTTONVO:Class = CustomizationTabButtonVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONTABNAVIGATORVO:Class = CustomizationTabNavigatorVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMZIATIONANCHORSTATEVO:Class = CustomziationAnchorStateVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_FILTERFALLBACKDATAVO:Class = FilterFallbackDataVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_FILTERSPOPOVERVO:Class = FiltersPopoverVO;
       
@@ -7964,6 +7972,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_BLOCKS_CUSTOMIZATIONITEMPROPERTYBLOCK:Class = CustomizationItemPropertyBlock;
       
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_BLOCKS_CUSTOMIZATIONRARITYHEADERBLOCK:Class = CustomizationRarityHeaderBlock;
+      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_BLOCKS_IMAGETEXTBLOCKPROGRESSIVE:Class = ImageTextBlockProgressive;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_BLOCKS_QUESTORCONDITIONBLOCK:Class = QuestOrConditionBlock;
@@ -7973,6 +7983,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_BLOCKS_QUESTPROGRESSBLOCK:Class = QuestProgressBlock;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_DATA_CUSTOMIZATIONIMAGEBLOCKVO:Class = CustomizationImageBlockVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_DATA_CUSTOMIZATIONRARITYHEADERVO:Class = CustomizationRarityHeaderVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_DATA_QUESTPROGRESSBLOCKVO:Class = QuestProgressBlockVO;
       
@@ -8560,6 +8572,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONACHIEVEMENTSFIRSTENTRYWITHOUTWTR:Class = NotificationAchievementsFirstEntryWithoutWTR;
       
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONADVENTCALENDARREWARD:Class = NotificationAdventCalendarReward;
+      
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONBMTASKREMINDER:Class = NotificationBMTaskReminder;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONCOLLECTIONSCUSTOM:Class = NotificationCollectionsCustom;
@@ -8576,6 +8590,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMACHIEVEMENTSFIRSTENTRYWITHOUTWTR:Class = SMAchievementsFirstEntryWithoutWTR;
       
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMADVENTCALENDARREWARD:Class = SMAdventCalendarReward;
+      
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMBATTLEMATTERSREMINDER:Class = SMBattleMattersReminder;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMCOLLECTIONSCUSTOM:Class = SMCollectionsCustom;
@@ -8591,6 +8607,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_WOTPLUSATTENDANCEBIG:Class = WotPlusAttendanceBig;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_WOTPLUSATTENDANCESMALL:Class = WotPlusAttendanceSmall;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_VO_SMADVENTCALENDARREWARDVO:Class = SMAdventCalendarRewardVO;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_VO_SMBATTLEMATTERSTASKREMINDERVO:Class = SMBattleMattersTaskReminderVO;
       

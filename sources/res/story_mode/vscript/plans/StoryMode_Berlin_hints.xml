@@ -724,21 +724,21 @@
 				<slots/>
 			</block>
 			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_22</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>PlayVoiceover</class>
 				<id>PlayVoiceover_77</id>
 				<params/>
 				<slots>
 					<slot>
 						<name>voiceover</name>
-						<const>\vo_ob_char02_m01_stg00_01\</const>
+						<const>\vo_sm_char02_m03_stg31_01\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_22</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>Timer</class>
@@ -823,17 +823,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>PlayVoiceover</class>
-				<id>PlayVoiceover_78</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>voiceover</name>
-						<const>\vo_ob_char02_m01_stg00_02\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>Macro</class>
 				<id>Macro_144</id>
 				<params>
@@ -850,7 +839,30 @@
 					</slot>
 					<slot>
 						<name>max</name>
-						<const>\4\</const>
+						<const>\2\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Choice</class>
+				<id>Choice_11</id>
+				<params>
+					<param>
+						3
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>PlayVoiceover</class>
+				<id>PlayVoiceover_78</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>voiceover</name>
+						<const>\vo_sm_char02_m03_stg31_03\</const>
 					</slot>
 				</slots>
 			</block>
@@ -892,36 +904,13 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Choice</class>
-				<id>Choice_11</id>
-				<params>
-					<param>
-						5
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>PlayVoiceover</class>
 				<id>PlayVoiceover_79</id>
 				<params/>
 				<slots>
 					<slot>
 						<name>voiceover</name>
-						<const>\vo_ob_char02_m01_stg00_03\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>PlayVoiceover</class>
-				<id>PlayVoiceover_80</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>voiceover</name>
-						<const>\vo_ob_char02_m01_stg00_04\</const>
+						<const>\vo_sm_char02_m03_stg31_04\</const>
 					</slot>
 				</slots>
 			</block>
@@ -945,6 +934,19 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_142</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>FlowGate</class>
 				<id>FlowGate_17</id>
 				<params/>
@@ -963,30 +965,6 @@
 						3
 						<name>Output Count</name>
 						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>PlayVoiceover</class>
-				<id>PlayVoiceover_81</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>voiceover</name>
-						<const>\vo_ob_char02_m01_stg00_05\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_142</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -1163,87 +1141,6 @@
 				<params>
 					<param>
 						Vector3T
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_83</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>Timer</class>
-				<id>Timer_99</id>
-				<params>
-					<param>
-						1
-						<name>Timer Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>time0</name>
-						<const>\0.500000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_107</id>
-				<params>
-					<param>
-						PlayVO
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>voiceover</name>
-						<const>\vo_ob_char02_m01_stg015_03\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>TriggerExternal</class>
-				<id>TriggerExternal_24</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>eventID</name>
-						<const>\BurnThem\</const>
-					</slot>
-					<slot>
-						<name>isActive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_210</id>
-				<buddy>Variable_20</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_117</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						VehicleT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -7826,6 +7723,12 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>GetVariable_141</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_22</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Choice_11</from>
 				<input>in</input>
 				<to>PlayVoiceover_77</to>
@@ -7835,12 +7738,6 @@
 				<from>GetVariable_142</from>
 				<input>vehicle</input>
 				<to>PlayVoiceover_77</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_141</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_22</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -7904,18 +7801,6 @@
 				<output>less</output>
 			</connection>
 			<connection>
-				<from>Choice_11</from>
-				<input>in</input>
-				<to>PlayVoiceover_78</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>GetVariable_142</from>
-				<input>vehicle</input>
-				<to>PlayVoiceover_78</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>Sequence_27</from>
 				<input>in_</input>
 				<to>Macro_144</to>
@@ -7926,6 +7811,30 @@
 				<input>in_</input>
 				<to>Macro_144</to>
 				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Macro_144</from>
+				<input>input</input>
+				<to>Choice_11</to>
+				<output>out_</output>
+			</connection>
+			<connection>
+				<from>Macro_144</from>
+				<input>index</input>
+				<to>Choice_11</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Choice_11</from>
+				<input>in</input>
+				<to>PlayVoiceover_78</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>GetVariable_142</from>
+				<input>vehicle</input>
+				<to>PlayVoiceover_78</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>DoOnce_16</from>
@@ -7958,18 +7867,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Macro_144</from>
-				<input>input</input>
-				<to>Choice_11</to>
-				<output>out_</output>
-			</connection>
-			<connection>
-				<from>Macro_144</from>
-				<input>index</input>
-				<to>Choice_11</to>
-				<output>res</output>
-			</connection>
-			<connection>
 				<from>Choice_11</from>
 				<input>in</input>
 				<to>PlayVoiceover_79</to>
@@ -7979,18 +7876,6 @@
 				<from>GetVariable_142</from>
 				<input>vehicle</input>
 				<to>PlayVoiceover_79</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_11</from>
-				<input>in</input>
-				<to>PlayVoiceover_80</to>
-				<output>o3</output>
-			</connection>
-			<connection>
-				<from>GetVariable_142</from>
-				<input>vehicle</input>
-				<to>PlayVoiceover_80</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -8006,12 +7891,6 @@
 				<output>finished</output>
 			</connection>
 			<connection>
-				<from>PlayVoiceover_80</from>
-				<input>input</input>
-				<to>FlowGate_17</to>
-				<output>finished</output>
-			</connection>
-			<connection>
 				<from>PlayVoiceover_78</from>
 				<input>input</input>
 				<to>FlowGate_17</to>
@@ -8019,12 +7898,6 @@
 			</connection>
 			<connection>
 				<from>PlayVoiceover_77</from>
-				<input>input</input>
-				<to>FlowGate_17</to>
-				<output>finished</output>
-			</connection>
-			<connection>
-				<from>PlayVoiceover_81</from>
 				<input>input</input>
 				<to>FlowGate_17</to>
 				<output>finished</output>
@@ -8052,18 +7925,6 @@
 				<input>input</input>
 				<to>Sequence_29</to>
 				<output>false</output>
-			</connection>
-			<connection>
-				<from>Choice_11</from>
-				<input>in</input>
-				<to>PlayVoiceover_81</to>
-				<output>o4</output>
-			</connection>
-			<connection>
-				<from>GetVariable_142</from>
-				<input>vehicle</input>
-				<to>PlayVoiceover_81</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>FlowGate_17</from>
@@ -8166,36 +8027,6 @@
 				<input>a</input>
 				<to>CompareFloats_7</to>
 				<output>res</output>
-			</connection>
-			<connection>
-				<from>Timer_99</from>
-				<input>input</input>
-				<to>If_83</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>GetVariable_210</from>
-				<input>value</input>
-				<to>If_83</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>TriggerExternal_24</from>
-				<input>windup</input>
-				<to>Timer_99</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>If_83</from>
-				<input>in</input>
-				<to>Macro_107</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>GetVariable_117</from>
-				<input>vehicle</input>
-				<to>Macro_107</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>Counter_5</from>

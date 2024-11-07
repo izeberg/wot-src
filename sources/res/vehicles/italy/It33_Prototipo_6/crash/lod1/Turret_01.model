@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Prototipo_6/crash/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.386730 -0.048684 -1.716987</min>
+		<max>1.331626 1.025609 1.646708</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It33_Prototipo_6/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+</root>

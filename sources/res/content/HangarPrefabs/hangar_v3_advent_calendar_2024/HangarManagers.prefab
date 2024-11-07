@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name/>
+			<UUID>90f4f716-eb1e-4859-ae17-550b0e2dcf2d</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>90f4f716-eb1e-4859-ae17-550b0e2dcf2d</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SelectionRule</type>
+			<version>1</version>
+			<component>
+				<UUID>90f4f716-eb1e-4859-ae17-550b0e2dcf2d</UUID>
+				<flags>1</flags>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

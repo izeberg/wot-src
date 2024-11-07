@@ -12867,28 +12867,36 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>AIZonesPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
-				<UUID>36d90e88-64da-49bd-8c8e-956e5ad91c11</UUID>
-				<flags>32</flags>
+				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
+				<flags>2</flags>
 				<config>
 					<property>
-						<name>patchTag</name>
+						<name>patchName</name>
 						<value>05_planesCrash01_ai</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
-			<version>2</version>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
 			<component>
-				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
-				<flags>34</flags>
+				<UUID>36d90e88-64da-49bd-8c8e-956e5ad91c11</UUID>
+				<flags>32</flags>
 				<config>
 					<property>
-						<name>patchName</name>
+						<name>navmeshPatchTag</name>
+						<value>05_planesCrash01_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value>05_planesCrash01_ai</value>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
 						<value>05_planesCrash01_ai</value>
 					</property>
 				</config>

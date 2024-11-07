@@ -411,6 +411,18 @@ msgstr "Из %(name)"
 msgid "singleRewardView/header/title/"
 msgstr "ПОЛУЧЕНЫ НАГРАДЫ"
 
+msgid "singleRewardView/tooltip/count/first"
+msgstr "%(count)-й"
+
+msgid "singleRewardView/tooltip/count/other"
+msgstr "%(count)-й"
+
+msgid "singleRewardView/tooltip/count/second"
+msgstr "%(count)-й"
+
+msgid "singleRewardView/tooltip/count/third"
+msgstr "%(count)-й"
+
 msgid "singleRewardView/tooltip/description/"
 msgstr ""
 "Если у вас уже есть вся техника VIII–IX уровней из числа машин, которые "
@@ -420,10 +432,16 @@ msgstr ""
 msgid "singleRewardView/tooltip/label/"
 msgstr "Когда вся техника уже получена:"
 
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount) коробку"
+msgstr[1] "%(remainingCount) коробки"
+msgstr[2] "%(remainingCount) коробок"
+
 msgid "singleRewardView/tooltip/subtitle/"
 msgstr ""
 "Гарантированная награда — машина из списка возможных наград.\n"
-"Если вы откроете %(remainingCount) коробок, не получив такую технику, она выпадет при открытии %(count)-й коробки. При выпадении такой машины счётчик обнуляется."
+"Если вы откроете %(remainingCount), не получив такую технику, она выпадет при открытии %(count) коробки. При выпадении такой машины счётчик сбрасывается."
 
 msgid "singleRewardView/tooltip/title/"
 msgstr "Гарантированная награда"

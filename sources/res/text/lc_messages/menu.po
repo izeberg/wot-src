@@ -870,6 +870,9 @@ msgstr "САУ"
 msgid "carousel_tank_filter/all"
 msgstr "Все"
 
+msgid "carousel_tank_filter/canInstallAttachments"
+msgstr "3D-объекты"
+
 msgid "carousel_tank_filter/heavyTank"
 msgstr "Тяжёлые танки"
 
@@ -878,6 +881,9 @@ msgstr "Лёгкие танки"
 
 msgid "carousel_tank_filter/mediumTank"
 msgstr "Средние танки"
+
+msgid "carousel_tank_filter/own3DStyle"
+msgstr "3D-стили"
 
 msgid "carousel_tank_filter/ready"
 msgstr "Только основные"
@@ -2154,8 +2160,9 @@ msgstr ""
 
 msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
-"Параметр, отвечающий за вероятность нанести критические повреждения экипажу "
-"и модулям противника. Действует для всех типов снарядов."
+"Параметр, отвечающий за вероятность нанесения критических повреждений "
+"экипажу и модулям противника. Действует для всех типов снарядов, за "
+"исключением автопушек."
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr ""
@@ -6523,7 +6530,7 @@ msgid "tank_params/twinGunSwitchFireModeTime"
 msgstr "Время переключения режима огня"
 
 msgid "tank_params/twinGunTopSpeed"
-msgstr "Макс. скорость / задний ход (залповый режим)"
+msgstr "Макс. скорость / задний ход (залп. реж.)"
 
 msgid "tank_params/val"
 msgstr "(ед.)"
@@ -7138,13 +7145,13 @@ msgid "vehicleInfo/params/turretYawLimits"
 msgstr "Углы поворота башни (град)"
 
 msgid "vehicleInfo/params/twinGunReloadTime"
-msgstr "Заряжание орудия (одиночный / залповый режим огня) (с)"
+msgstr "Заряжание орудия (одиночный/залповый режим огня) (с)"
 
 msgid "vehicleInfo/params/twinGunSwitchFireModeTime"
 msgstr "Время переключения режима огня (с)"
 
 msgid "vehicleInfo/params/twinGunTopSpeed"
-msgstr "Макс. скорость / задний ход (одиночный / залповый режим) (км/ч)"
+msgstr "Макс. скорость/задний ход (одиночный/залповый режим) (км/ч)"
 
 msgid "vehicleInfo/params/vehicleWeight"
 msgstr "Масса/предельная масса машины (т)"

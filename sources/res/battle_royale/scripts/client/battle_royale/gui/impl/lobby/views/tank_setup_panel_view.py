@@ -28,7 +28,7 @@ from skeletons.gui.game_control import IBattleRoyaleController
 _ArtefactData = namedtuple('_ArtefactData', ('intCD', 'quantity', 'icon', 'tooltipType'))
 _AbilityTooltipData = namedtuple('_AbilityTooltipData', ('title', 'iconName', 'cooldownSeconds',
                                                          'description'))
-_RespawnTooltipData = namedtuple('_RespawnTooltipData', ('platoonTimeToRessurect',
+_RespawnTooltipData = namedtuple('_RespawnTooltipData', ('platoonTimeToResurrect',
                                                          'platoonRespawnPeriod',
                                                          'soloRespawnPeriod'))
 _DEFAULT_SLOT_VALUE = 1
@@ -125,10 +125,10 @@ class TankSetupPanelView(ViewImpl, IGlobalListener):
     @staticmethod
     def __getRespawnTooltipData():
         respawnData = RespawnAbility()
-        platoonTimeToRessurect = respawnData.getPlatoonTimeToRessurect()
+        platoonTimeToResurrect = respawnData.getPlatoonTimeToResurrect()
         platoonRespawnPeriod = respawnData.getPlatoonRespawnPeriod() / ONE_MINUTE
         soloRespawnPeriod = respawnData.getSoloRespawnPeriod() / ONE_MINUTE
-        return _RespawnTooltipData(platoonTimeToRessurect=platoonTimeToRessurect, platoonRespawnPeriod=platoonRespawnPeriod, soloRespawnPeriod=soloRespawnPeriod)
+        return _RespawnTooltipData(platoonTimeToResurrect=platoonTimeToResurrect, platoonRespawnPeriod=platoonRespawnPeriod, soloRespawnPeriod=soloRespawnPeriod)
 
     @staticmethod
     def __getAmmoTooltipData(intCD):

@@ -3196,6 +3196,33 @@ msgstr "Расширенная фильтрация элементов внеш�
 msgid "customization/carousel/filter/header"
 msgstr "Фильтр"
 
+msgid "customization/disabledTabs/attachment/body"
+msgstr "На складе нет 3D-объектов для машины %(tankName)s."
+
+msgid "customization/disabledTabs/camouflage/body"
+msgstr "У вас нет камуфляжа для машины %(tankName)s. "
+
+msgid "customization/disabledTabs/customStyle/body"
+msgstr "На складе нет 2D-стилей для машины %(tankName)s."
+
+msgid "customization/disabledTabs/emblem/body"
+msgstr "У вас нет эмблем для машины %(tankName)s."
+
+msgid "customization/disabledTabs/inscription/body"
+msgstr "У вас нет надписей для машины %(tankName)s."
+
+msgid "customization/disabledTabs/modification/body"
+msgstr "У вас нет эффектов для машины %(tankName)s."
+
+msgid "customization/disabledTabs/paint/body"
+msgstr "У вас нет красок для машины %(tankName)s."
+
+msgid "customization/disabledTabs/projectionDecal/body"
+msgstr "У вас нет декалей для машины %(tankName)s."
+
+msgid "customization/disabledTabs/uncustomStyle/body"
+msgstr "На складе нет 3D-стилей для машины %(tankName)s."
+
 msgid "customization/emblem/igr/body"
 msgstr ""
 "Эмблема активна только во время сессии в <img "
@@ -3310,15 +3337,6 @@ msgstr "Кроме %(vehicle)s"
 msgid "customization/questAward/exactVehicle"
 msgstr "Наносится на %(vehicle)s"
 
-msgid "customization/savedStyles/body"
-msgstr ""
-"Система сохраняет до %(max)s купленных изменённых стилей. При превышении "
-"лимита сохранённые изменения одного из стилей будут сброшены до вида по "
-"умолчанию."
-
-msgid "customization/savedStyles/title"
-msgstr "%(img)s Изменённые стили: %(current)s/%(max)s"
-
 msgid "customization/scrollbar/bookmark/header"
 msgstr "%(bookmark)s"
 
@@ -3327,6 +3345,9 @@ msgstr "Нажмите, чтобы вернуть первоначальный �
 
 msgid "customization/slotRevert/header"
 msgstr "Вернуть"
+
+msgid "customization/storage/filters/attachments/title"
+msgstr "3D-объекты"
 
 msgid "customization/storage/filters/camouflage/title"
 msgstr "Камуфляж"
@@ -3349,8 +3370,16 @@ msgstr "Стили"
 msgid "customization/storage/filters/text/title"
 msgstr "Надписи"
 
+msgid "customization/tabs/attachment/body"
+msgstr ""
+"3D-объекты — это отдельные элементы, используемые для изменения внешнего "
+"вида определённой техники."
+
 msgid "customization/tabs/camouflage/body"
 msgstr "Камуфляж изменяет внешний вид машины и добавляет бонус к маскировке."
+
+msgid "customization/tabs/customStyle/body"
+msgstr "2D-стили добавляют вашей машине индивидуальности."
 
 msgid "customization/tabs/emblem/body"
 msgstr ""
@@ -3377,6 +3406,10 @@ msgid "customization/tabs/projectionDecal/body"
 msgstr ""
 "Декали наносятся на несколько частей машины и подчёркивают её "
 "индивидуальность."
+
+msgid "customization/tabs/uncustomStyle/body"
+msgstr ""
+"3D-стили изменяют внешний вид машины благодаря новым замысловатым деталям."
 
 msgid "customizationBuyWindow/fromStorage"
 msgstr "Элемент со Склада"
@@ -8002,6 +8035,46 @@ msgstr ""
 msgid "notrecruitedtankman/hw22_witch_sibilla/label"
 msgstr "Тыквенный переполох"
 
+msgid "notrecruitedtankman/hw24_commander1/desc"
+msgstr ""
+"Оратором Норман никогда не слыл, а из-за длительного воздействия мириума "
+"стал ещё молчаливее. Тем не менее, его преданность долгу непоколебима, и он "
+"не раз выручал свой экипаж в непростых ситуациях."
+
+msgid "notrecruitedtankman/hw24_commander1/label"
+msgstr "Проект «Вавилон»"
+
+msgid "notrecruitedtankman/hw24_commander2/desc"
+msgstr ""
+"Роберт — закалённый ветеран. Весь его боевой опыт неразрывно связан с "
+"исследованием мириумного субпространства. Хоть это вещество и несёт явную "
+"угрозу его здоровью и самочувствию членов экипажа, Роберт больше не может "
+"представить свою жизнь без постоянных вылазок во всё более глубокие фазы."
+
+msgid "notrecruitedtankman/hw24_commander2/label"
+msgstr "Проект «Вавилон»"
+
+msgid "notrecruitedtankman/hw24_commander4/desc"
+msgstr ""
+"В составе разведотряда Пётр повидал много ужасов, вызванных мириумом, и всё "
+"же он остаётся спокойным и заботливым отцом для молодых солдат. Он не "
+"утратил боевого духа и добродушия даже после того, как длительный контакт с "
+"веществом на некоторое время вывел его из строя."
+
+msgid "notrecruitedtankman/hw24_commander4/label"
+msgstr "Проект «Вавилон»"
+
+msgid "notrecruitedtankman/hw24_commander5/desc"
+msgstr ""
+"Возможно, острый ум и смекалка Элайаса несколько притупились из-за слишком "
+"долгого пребывания в мириумном субпространстве, но после реабилитации он "
+"готов снова отправиться в его глубины. А благодаря огромному опыту и умению "
+"сохранять спокойствие в стрессовых ситуациях он по-прежнему бесценен для "
+"экипажа."
+
+msgid "notrecruitedtankman/hw24_commander5/label"
+msgstr "Проект «Вавилон»"
+
 msgid "notrecruitedtankman/ny19men/desc"
 msgstr ""
 "«...Ну иди сюда, попробуй меня поздравить, я тебя сам поздравлю, умница, "
@@ -9127,6 +9200,83 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp15_4/label"
 msgstr "Боевой пропуск, XV сезон"
+
+msgid "notrecruitedtankman/tankmen_bp15_5/desc"
+msgstr ""
+"Легендарный король викингов Рагнар Лодброк — человек многих стремлений и "
+"несовершенств. Любознательный и разумный, но в то же время крайне опасный, "
+"он движим неутолимой жаждой завоеваний и славы. Рагнар возглавлял множество "
+"отчаянных рейдов на Англию и Францию, но не только ради грабежа. Он "
+"стремится высечь своё имя в легендах. И если того пожелают боги, ему это "
+"удастся."
+
+msgid "notrecruitedtankman/tankmen_bp15_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp15_5/label"
+msgstr "Боевой пропуск: «Викинги»"
+
+msgid "notrecruitedtankman/tankmen_bp15_6/desc"
+msgstr ""
+"Боги лишили его способности ходить, чтобы у врагов был хотя бы небольшой "
+"шанс одолеть его. Но Ивар Бескостный, сын Рагнара и Аслауг, жесток и "
+"беспощаден даже по меркам викингов. В мире, где человека определяет сила, "
+"быть калекой весьма непросто, однако Ивар смог стать яростным воином и "
+"мастером тактики. Хоть Рагнар и считает неутолимую злобу Ивара даром, иногда"
+" она затмевает его разум."
+
+msgid "notrecruitedtankman/tankmen_bp15_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp15_6/label"
+msgstr "Боевой пропуск: «Викинги»"
+
+msgid "notrecruitedtankman/tankmen_bp15_7/desc"
+msgstr ""
+"Бьёрн, старший сын Рагнара, редко проявлял искренний интерес к правлению. "
+"Так же, как и его отец, он искатель приключений. Именно такие качества "
+"Рагнара, как дальновидность и страсть к путешествиям, побуждают Бьёрна "
+"прокладывать свой путь в этом мире. Он всегда стремится делать то, что лучше"
+" для своего народа и, несмотря на редкие неудачи, является бесспорным "
+"лидером. И, конечно, великим воином — не просто так его называют "
+"Железнобоким."
+
+msgid "notrecruitedtankman/tankmen_bp15_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp15_7/label"
+msgstr "Боевой пропуск: «Викинги»"
+
+msgid "notrecruitedtankman/tankmen_bp15_8/desc"
+msgstr ""
+"Лагерта — гордая и неуступчивая воительница, которая стала первой женой "
+"Рагнара Лодброка. Разумеется, она не позволяла ему диктовать свою судьбу. Во"
+" времена, когда сила — это ключ к выживанию, Лагерта готова сделать всё, что"
+" потребуется, чтобы защитить своих любимых. На её счету множество битв, и "
+"она легко определяет, кто умелый воин, а кто нет. А большинство мужчин... "
+"Лагерте достаточно одного взгляда, чтобы понять, что они ей не ровня."
+
+msgid "notrecruitedtankman/tankmen_bp15_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp15_8/label"
+msgstr "Боевой пропуск: «Викинги»"
+
+msgid "notrecruitedtankman/tankmen_bp15_9/desc"
+msgstr ""
+"Странный отшельник, опасный мошенник, искусный мастер с талантом к "
+"строительству кораблей и осадных башен — Флоки слишком сложный человек, "
+"чтобы описать его одной фразой. Так же, как и его близкий друг Рагнар, он "
+"всегда исследует мир вокруг себя и, следуя традициям викингов, живёт во "
+"славу богов и для помощи ближнему своему. Заразительный смех Флоки может "
+"показаться незнакомцу безобидным, но за этой беспечностью скрывается "
+"свирепый убийца."
+
+msgid "notrecruitedtankman/tankmen_bp15_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp15_9/label"
+msgstr "Боевой пропуск: «Викинги»"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -10778,8 +10928,8 @@ msgstr "побед в аренду: %(count)s"
 
 msgid "quests/bonuses/token/battle_bonus_x5/body"
 msgstr ""
-"Возможность получать в пять раз больше опыта за бой, начиная со второго боя "
-"в день на любой машине."
+"Возможность получать в 5 раз больше опыта за бой, начиная со второй победы в"
+" день на любой машине."
 
 msgid "quests/bonuses/token/battle_bonus_x5/header"
 msgstr "Задача на x5 опыта за бой"
@@ -13553,6 +13703,9 @@ msgstr "Бронирование башни (лоб/борт/корма в мм)
 
 msgid "vehicleParams/valueChange/template"
 msgstr "(%(value)s)"
+
+msgid "vehiclePreview/boxTooltip/attachment/header"
+msgstr "%(value)s"
 
 msgid "vehiclePreview/boxTooltip/battleBooster/header"
 msgstr "%(value)s"

@@ -37,6 +37,9 @@ msgstr "Уникальный облик"
 msgid "crewSkins/itemType/rare"
 msgstr "Редкий облик"
 
+msgid "customization/attachment"
+msgstr "3D-объект"
+
 msgid "customization/camouflage"
 msgstr "Камуфляж"
 
@@ -67,8 +70,14 @@ msgstr "Двузначный номер"
 msgid "customization/personalNumber_3"
 msgstr "Трёхзначный номер"
 
+msgid "customization/plural/attachment"
+msgstr "3D-объекты"
+
 msgid "customization/plural/camouflage"
 msgstr "Камуфляж"
+
+msgid "customization/plural/customStyle"
+msgstr "2D-стили"
 
 msgid "customization/plural/decal"
 msgstr "Декали"
@@ -94,8 +103,8 @@ msgstr "Трёхзначные номера"
 msgid "customization/plural/projectionDecal"
 msgstr "Декали"
 
-msgid "customization/plural/style"
-msgstr "Стили"
+msgid "customization/plural/uncustomStyle"
+msgstr "3D-стили"
 
 msgid "customization/projectionDecal"
 msgstr "Декаль"

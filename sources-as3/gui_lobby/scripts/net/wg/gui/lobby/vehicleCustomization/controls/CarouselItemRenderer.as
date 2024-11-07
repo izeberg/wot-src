@@ -160,6 +160,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private static const SERIAL_NUMBER_GAP:int = -1;
       
+      private static const RARITY_ICON_GAP:int = 0;
+      
       private static const ICON_LOCK_GREY_BOTTOM_OFFSET:int = -2;
       
       private static const BORDER_NEW_UI:String = "BorderNewUI";
@@ -240,6 +242,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       public var isResponsive:Boolean = true;
       
       public var considerWidth:Boolean = false;
+      
+      public var rarityBg:Image = null;
+      
+      public var rarityIcon:Image = null;
       
       public var formIcon:Image = null;
       
@@ -366,6 +372,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.serialNumberIcon.mouseEnabled = false;
          this.serialNumberIcon.visible = false;
          this.serialNumberIcon.source = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_SERIAL_NUMBER;
+         this.rarityBg.mouseEnabled = this.rarityBg.mouseChildren = false;
+         this.rarityIcon.mouseEnabled = this.rarityIcon.mouseChildren = false;
       }
       
       override protected function onBeforeDispose() : void
@@ -396,6 +404,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.clearNewMC();
          this.imgIcon.dispose();
          this.imgIcon = null;
+         this.rarityBg.dispose();
+         this.rarityBg = null;
+         this.rarityIcon.dispose();
+         this.rarityIcon = null;
          this.alertIcon.dispose();
          this.alertIcon = null;
          this.equippedImg.dispose();
@@ -541,6 +553,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
             this.editableSlotHint.visible = false;
             this.editBtnCounter.visible = false;
             this.editBtnHint.visible = false;
+            this.rarityBg.visible = false;
+            this.rarityIcon.visible = false;
             return;
          }
          this.editBtn.enabled = this.editBtnSmall.enabled = this._data.editBtnEnabled;
@@ -665,6 +679,12 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             this.newMC.scaleX = this.newMC.scaleY = !!_loc2_ ? Number(NEW_MC_MIN_SCALE) : Number(NEW_MC_NORMAL_SCALE);
          }
+         this.rarityBg.visible = this.rarityIcon.visible = this._data.isRare;
+         if(this._data.isRare)
+         {
+            this.rarityBg.source = this._data.rarityBackgroundIconSource;
+            this.rarityIcon.source = this._data.rarityIconSource;
+         }
          var _loc4_:Boolean = this._data.isProgressionRewindEnabled;
          _loc5_ = this._data.typeId == GUI_ITEM_TYPES.STYLE;
          var _loc6_:Boolean = _loc5_ || this._data.isLinked;
@@ -677,12 +697,19 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.serialNumberIcon.visible = this._data.isWithSerialNumber;
          var _loc9_:int = 0;
          var _loc10_:int = !!_loc2_ ? int(PROGRESSION_LEVEL_GAP_SMALL) : int(PROGRESSION_LEVEL_GAP);
+         if(this.rarityIcon.visible)
+         {
+            this.rarityIcon.x = _loc9_;
+            _loc9_ = this.rarityIcon.x + this.rarityIcon.width + RARITY_ICON_GAP;
+         }
          if(this.serialNumberIcon.visible)
          {
+            this.serialNumberIcon.x = _loc9_;
             _loc9_ = this.serialNumberIcon.x + this.serialNumberIcon.width + SERIAL_NUMBER_GAP;
          }
          if(_loc7_.visible)
          {
+            _loc7_.x = _loc9_;
             _loc9_ = _loc7_.x + _loc7_.width + _loc10_;
             _loc7_.alpha = !!this._data.locked ? Number(LOCKED_IMG_ALPHA) : Number(1);
             if(this._data.locked)

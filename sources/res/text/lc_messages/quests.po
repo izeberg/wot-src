@@ -999,6 +999,9 @@ msgstr "%(formattedProgress)s Место: %(position)s"
 msgid "bonusName/additional_bonuses"
 msgstr "Управляемый бонус к опыту"
 
+msgid "bonusName/attachment"
+msgstr "3D-объект"
+
 msgid "bonusName/attendance_reward"
 msgstr "Награды за посещение"
 
@@ -1262,6 +1265,9 @@ msgstr "Коэффициент опыта экипажа"
 
 msgid "bonusName/tourcoin"
 msgstr "Очки похода"
+
+msgid "bonusName/wdrcoin"
+msgstr "Жетон за выслугу лет"
 
 msgid "bonusName/xp"
 msgstr "Боевой опыт"

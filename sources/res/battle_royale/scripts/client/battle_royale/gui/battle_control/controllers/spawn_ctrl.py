@@ -38,7 +38,7 @@ class ISpawnListener(object):
     def updateTeammateRespawnTime(self, timeLeft):
         pass
 
-    def updateBlockToRessurecTime(self, blockTime):
+    def updateBlockToResurrectTime(self, blockTime):
         pass
 
     def updateLives(self, livesLeft, prev):
@@ -139,9 +139,9 @@ class SpawnController(ViewComponentsController, ISpawnController):
         for viewComponent in self._viewComponents:
             viewComponent.updateTeammateRespawnTime(teammateRespawnTime)
 
-    def updateBlockToRessurecTimer(self, blockTime):
+    def updateBlockToResurrectTimer(self, blockTime):
         for viewComponent in self._viewComponents:
-            viewComponent.updateBlockToRessurecTime(blockTime)
+            viewComponent.updateBlockToResurrectTime(blockTime)
 
     def updateLives(self, lives, prev):
         self.__livesLeft = lives

@@ -309,7 +309,11 @@ package net.wg.data.constants.generated
       
       public static const FRANCE_F118_CHAR_MLE_75:String = "france-F118_Char_Mle_75";
       
+      public static const FRANCE_F119_CHAR_MURAT:String = "france-F119_Char_Murat";
+      
       public static const FRANCE_F12_HOTCHKISS_H35:String = "france-F12_Hotchkiss_H35";
+      
+      public static const FRANCE_F123_ERAC_105_PROTO:String = "france-F123_ERAC_105_Proto";
       
       public static const FRANCE_F124_AMX_13_FL11:String = "france-F124_AMX_13FL11";
       
@@ -376,6 +380,8 @@ package net.wg.data.constants.generated
       public static const FRANCE_F37_AMX50_FOCH:String = "france-F37_AMX50_Foch";
       
       public static const FRANCE_F38_BAT_CHATILLON155_58:String = "france-F38_Bat_Chatillon155_58";
+      
+      public static const FRANCE_F39_AMR_P103:String = "france-F39_AMR_P103";
       
       public static const FRANCE_F42_AMR_35:String = "france-F42_AMR_35";
       
@@ -576,6 +582,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G121_GRILLE_15_L63:String = "germany-G121_Grille_15_L63";
       
       public static const GERMANY_G122_VK6501_H:String = "germany-G122_VK6501H";
+      
+      public static const GERMANY_G124_PZ_KPFW_38_K:String = "germany-G124_Pz_Kpfw_38_K";
       
       public static const GERMANY_G125_SPZ_57_RH:String = "germany-G125_Spz_57_Rh";
       
@@ -993,6 +1001,8 @@ package net.wg.data.constants.generated
       
       public static const ITALY_IT31_CC_67_B:String = "italy-It31_CC_67_B";
       
+      public static const ITALY_IT33_PROTOTIPO_6:String = "italy-It33_Prototipo_6";
+      
       public static const ITALY_IT34_TORO:String = "italy-It34_Toro";
       
       public static const ITALY_IT35_FELICE:String = "italy-It35_Felice";
@@ -1094,6 +1104,8 @@ package net.wg.data.constants.generated
       public static const JAPAN_J44_TYPE_3_JU_NU:String = "japan-J44_Type_3_Ju_Nu";
       
       public static const JAPAN_J45_MITSU_108:String = "japan-J45_Mitsu_108";
+      
+      public static const JAPAN_J50_TYPE_1_HO_NI_II:String = "japan-J50_Type_1_Ho_Ni_II";
       
       public static const NO_IMAGE:String = "noImage";
       
@@ -1687,6 +1699,12 @@ package net.wg.data.constants.generated
       
       public static const UK_GB14_M2:String = "uk-GB14_M2";
       
+      public static const UK_GB145_CRUSHER_ASE_4:String = "uk-GB145_Crusher_ASE_4";
+      
+      public static const UK_GB146_GABLER_S_DESTROYER:String = "uk-GB146_Gabler_s_Destroyer";
+      
+      public static const UK_GB149_CENTURION_MK_I_A:String = "uk-GB149_Centurion_MkI_A";
+      
       public static const UK_GB15_STUART_I:String = "uk-GB15_Stuart_I";
       
       public static const UK_GB17_GRANT_I:String = "uk-GB17_Grant_I";
@@ -1999,6 +2017,8 @@ package net.wg.data.constants.generated
       
       public static const USA_A153_XM66_F:String = "usa-A153_XM66F";
       
+      public static const USA_A154_CONVERTIBLE_MEDIUM_TANK_T3_E2:String = "usa-A154_Convertible_Medium_Tank_T3E2";
+      
       public static const USA_A155_AAT60:String = "usa-A155_AAT60";
       
       public static const USA_A156_T54_2022:String = "usa-A156_T54_2022";
@@ -2118,6 +2138,8 @@ package net.wg.data.constants.generated
       public static const USA_A72_T25_2_SH:String = "usa-A72_T25_2_SH";
       
       public static const USA_A74_T1_E6:String = "usa-A74_T1_E6";
+      
+      public static const USA_A76_M3_A3:String = "usa-A76_M3_A3";
       
       public static const USA_A78_M4_IMPROVED:String = "usa-A78_M4_Improved";
       
@@ -2419,7 +2441,13 @@ package net.wg.data.constants.generated
       
       public static const USSR_R205_TANK_ROZANOVA_OBSIDIAN:String = "ussr-R205_Tank_Rozanova_Obsidian";
       
+      public static const USSR_R217_OBJECT_KUST:String = "ussr-R217_Object_Kust";
+      
+      public static const USSR_R219_OBJECT_265_T:String = "ussr-R219_Object_265T";
+      
       public static const USSR_R22_T_46:String = "ussr-R22_T-46";
+      
+      public static const USSR_R225_SU_100I:String = "ussr-R225_SU_100i";
       
       public static const USSR_R23_T_43:String = "ussr-R23_T-43";
       

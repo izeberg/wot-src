@@ -287,6 +287,15 @@ msgstr "FV226 Contradictious"
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Chassis_GB145_Crusher_ASE_4"
+msgstr "Нергал"
+
+msgid "Chassis_GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s Destroyer"
+
+msgid "Chassis_GB149_Centurion_MkI_A"
+msgstr "Centurion Mk. IA"
+
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
 
@@ -1468,6 +1477,76 @@ msgstr ""
 
 msgid "GB13_FV215b_short_special"
 msgstr "Комфортное орудие, высокая прочность"
+
+msgid "GB145_Crusher_ASE_4"
+msgstr "Нергал"
+
+msgid "GB145_Crusher_ASE_4_descr"
+msgstr ""
+"Машина значилась в документах центра «Вавилон» под аббревиатурой NrGLL-8 и считалась потерянной в ходе экспериментов по перемещению в глубинную фазу мириумного субпространства. Однако танк удалось извлечь вместе с экипажем, и теперь его называют Нергал — в честь вавилонского бога подземного мира. Техника почти полностью покрыта рисунками и надписями, повествующими о Нергале и его схождении в Иркаллу, царство мёртвых. Изображения нанёс кто-то из членов экипажа во время пребывания в глубинной фазе, под влиянием мириума и с осознанием того, что они уже никогда не вернутся домой.\n"
+"После завершения операции «Тёмная башня» танк вместе с оборудованием центра передали военному комитету, взявшему на себя управление дальнейшими разработками. После длительного воздействия мириума на психику и физиологию экипажу Нергала требовалась срочная реабилитация. Тем не менее сразу же после её прохождения танкисты изъявили желание вернуться к службе на своей машине. Прошение было удовлетворено..."
+
+msgid "GB145_Crusher_ASE_4_long_special"
+msgstr ""
+"Нергал — британский тяжёлый танк, в котором главное — это броня и "
+"вооружение. Уникальный дизайн и изменённая компоновка добавили ему массы и "
+"высоты, что привело к серьёзным проблемам с подвижностью. И всё же сочетание"
+" скорострельного орудия 55-pdr Gun и толстых бронелистов делает его грозным "
+"соперником."
+
+msgid "GB145_Crusher_ASE_4_short"
+msgstr "Нергал"
+
+msgid "GB145_Crusher_ASE_4_short_special"
+msgstr "Скорострельное орудие, тяжёлая броня"
+
+msgid "GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s Destroyer"
+
+msgid "GB146_Gabler_s_Destroyer_descr"
+msgstr ""
+"Проект лёгкого танка с лобовой бронёй сопоставимой со средним танком. Сварной корпус планировалось изготовить из катанных бронированных плит. Башня в свою очередь задумывалась литой. Вооружение машины составляло одно 57- или 75-мм орудие и три пулемёта калибра 7,92 мм. На верхней части башни также предусматривались две спаренные реактивные установки.\n"
+"Мощный двигатель должен был обеспечить превосходную манёвренность как на дорогах, так и в условиях бездорожья, а подвеска предполагала высокую плавность хода. Несмотря на перспективные для своего времени показатели подвижности и защиты, сложность конструкции и высокая стоимость привели к тому, что проект так и не был запущен в производство."
+
+msgid "GB146_Gabler_s_Destroyer_long_special"
+msgstr ""
+"Gabler’s Destroyer — лёгкий танк с магазинной системой заряжания, уникальной"
+" для своего уровня. Быстрая перезарядка и неплохой урон за выстрел "
+"обеспечивают эффективность танка в боях против другой техники V уровня. Хоть"
+" мобильность и позволяет ему быть отличным разведчиком, в основном он играет"
+" роль классической машины поддержки, так как может нанести весьма ощутимый и"
+" быстро отступить."
+
+msgid "GB146_Gabler_s_Destroyer_short"
+msgstr "G. Destroyer"
+
+msgid "GB146_Gabler_s_Destroyer_short_special"
+msgstr "Магазинная система заряжания, отличная мобильность"
+
+msgid "GB149_Centurion_MkI_A"
+msgstr "Centurion Mk. IA"
+
+msgid "GB149_Centurion_MkI_A_descr"
+msgstr ""
+"Разрабатывался с 1943 года в рамках концепции «универсального танка» для "
+"замены существующих крейсерских и пехотных танков. Первый британский танк с "
+"рациональными углами наклона броневых листов. Принят на вооружение в 1947 "
+"году. В 1945–1946 годах выпущено 100 машин модификации Mk.I."
+
+msgid "GB149_Centurion_MkI_A_long_special"
+msgstr ""
+"Centurion Mk. IA обладает неплохой мобильностью и средним бронированием, а "
+"характеристики его орудия — бронепробитие, урон в минуту, разброс и углы "
+"вертикального наведения — довольно неплохи. При необходимости танк может "
+"разменивать очки прочности, однако лучший способ его применения — роль "
+"машины поддержки, при выполнении которой стоит держаться поближе к союзникам"
+" и как можно дальше от соперников."
+
+msgid "GB149_Centurion_MkI_A_short"
+msgstr "Centurion IA"
+
+msgid "GB149_Centurion_MkI_A_short_special"
+msgstr "Хорошее бронепробитие, комфортное орудие"
 
 msgid "GB14_M2"
 msgstr "M2"
@@ -2724,6 +2803,9 @@ msgstr "OQF 17-pdr Gun Mk. IV SH-SH"
 msgid "OQF_17pdr_Gun_Mk_VII"
 msgstr "OQF 17-pdr Gun Mk. VII"
 
+msgid "OQF_17pdr_Gun_Mk_VII_B"
+msgstr "OQF 17-pdr Gun Mk. VII B"
+
 msgid "OQF_17pdr_Gun_Mk_VII_SH"
 msgstr "OQF 17-pdr Gun Mk. VII"
 
@@ -2814,6 +2896,9 @@ msgstr "QF 6-pdr Mk. VA"
 msgid "QF_6_pounder_Mk_V_AT"
 msgstr "QF 6-pdr AT Gun Mk. V"
 
+msgid "QF_6_pounder_Mk_V_B"
+msgstr "QF 6-pdr Mk. V B"
+
 msgid "QF_6_pounder_Mk_V_LT"
 msgstr "QF 6-pdr LT Gun Mk. V"
 
@@ -2841,6 +2926,9 @@ msgstr "Rolls Royce K60"
 msgid "Rolls_Royce_K60_Mk2"
 msgstr "Rolls Royce K60 Mk. 2"
 
+msgid "Rolls_Royce_Meteor_GD"
+msgstr "Rolls-Royce Meteor GD"
+
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "Rolls-Royce Meteor M120A"
 
@@ -2852,6 +2940,9 @@ msgstr "Rolls-Royce Meteor Mk. IVB (900)"
 
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "Rolls-Royce Meteor Mk. IVB/12"
+
+msgid "Rolls_Royce_Meteor_Mk_IVA"
+msgstr "Rolls-Royce Meteor Mk. IVA"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
@@ -3044,6 +3135,15 @@ msgstr "FV226 Contradictious"
 
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
+
+msgid "Turret_1_GB145_Crusher_ASE_4"
+msgstr "Нергал"
+
+msgid "Turret_1_GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s Destroyer"
+
+msgid "Turret_1_GB149_Centurion_MkI_A"
+msgstr "Centurion Mk. IA"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
@@ -3354,6 +3454,9 @@ msgstr "Grant I"
 msgid "Turret_3_GB70_N_FV4202_105_SH"
 msgstr "FV4202 Series"
 
+msgid "Twin_105_mm_Gun_L7S"
+msgstr "Twin 105 mm Gun L7S"
+
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "Bedford Twin-Six"
 
@@ -3372,8 +3475,14 @@ msgstr "WS No. 19 HH"
 msgid "WS_No.22_CT"
 msgstr "WS No. 22 CT"
 
+msgid "WS_No_19_GD"
+msgstr "WS No. 19 GD"
+
 msgid "WS_No_22_Mk_3"
 msgstr "WS No. 22 Mk. 3"
+
+msgid "WS_No_38_AFV"
+msgstr "WS No. 38 AFV"
 
 msgid "Wright_Continental_R-975C1"
 msgstr "Wright Continental R-975C1"
@@ -3396,9 +3505,6 @@ msgid "Wright_Continental_R-975EC2_short"
 msgstr ""
 "Wright (Continental)\n"
 "R975 EC2"
-
-msgid "_105_mm_L7S_DB"
-msgstr "105 mm DB Gun L7S"
 
 msgid "_105mm_APCR_L5_SH"
 msgstr "APCR L5"
@@ -3467,7 +3573,7 @@ msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
 
 msgid "_105mm_HE_L7S"
-msgstr "HESH L-33N"
+msgstr "HE L-33N"
 
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
@@ -4069,6 +4175,9 @@ msgstr "HE Mk. VI"
 msgid "_6inch_SPG_Gun"
 msgstr "Q.F. 6-in. Gun Mk. V"
 
+msgid "_6pdr_APCR_MK_1GD"
+msgstr "APCR Mk. 1GD"
+
 msgid "_6pdr_APCR_MK_1L"
 msgstr "APCR Mk. 1L"
 
@@ -4077,6 +4186,9 @@ msgstr "APCR Mk. 1T"
 
 msgid "_6pdr_APCR_MK_1TM"
 msgstr "APCR Mk. IA"
+
+msgid "_6pdr_AP_MK_1GD"
+msgstr "AP Mk. 1GD"
 
 msgid "_6pdr_AP_MK_1L"
 msgstr "AP Mk. 1L"
@@ -4095,6 +4207,9 @@ msgstr "Steel Shell NF"
 
 msgid "_6pdr_HE_Common"
 msgstr "Common Shell"
+
+msgid "_6pdr_HE_MK_10GD"
+msgstr "HE Mk. 10GD"
 
 msgid "_6pdr_HE_MK_10L"
 msgstr "HE Mk. 10L"

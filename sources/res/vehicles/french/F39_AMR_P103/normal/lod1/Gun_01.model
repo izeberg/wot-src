@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F39_AMR_P103/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F39_AMR_P103/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.109546 -0.094551 0.003272</min>
+		<max>0.211865 0.142612 1.306629</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

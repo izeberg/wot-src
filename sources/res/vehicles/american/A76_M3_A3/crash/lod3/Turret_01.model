@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A76_M3_A3/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A76_M3_A3/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.686284 -0.062845 -1.131840</min>
+		<max>0.777035 0.888549 0.819007</max>
+	</visibilityBox>
+</root>

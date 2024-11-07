@@ -263,6 +263,9 @@ msgstr "Grille 15"
 msgid "Chassis_G122_VK6501H"
 msgstr "VK 65.01 (H)"
 
+msgid "Chassis_G124_Pz_Kpfw_38_K"
+msgstr "Pz.Kpfw. 38 (K)"
+
 msgid "Chassis_G125_Spz_57_Rh"
 msgstr "Rheinmetall Panzerwagen"
 
@@ -882,6 +885,9 @@ msgstr "FuG 5"
 
 msgid "FuG5A"
 msgstr "FuG5 mit 20 WS.E."
+
+msgid "FuG5D"
+msgstr "FuG 5 (K)"
 
 msgid "FuG5F"
 msgstr "FuG 5"
@@ -1569,6 +1575,28 @@ msgstr "VK 65.01 (H)"
 
 msgid "G122_VK6501H_short_special"
 msgstr "Достойный урон в минуту, хорошая точность"
+
+msgid "G124_Pz_Kpfw_38_K"
+msgstr "Pz.Kpfw. 38 (K)"
+
+msgid "G124_Pz_Kpfw_38_K_descr"
+msgstr ""
+"Один из вариантов модернизации танка Panzerkampfwagen 38(t), предложенный в "
+"ноябре 1944 г. фирмой Krupp. Целью проекта было увеличение огневой мощи за "
+"счёт установки упрощённой башни танка Pz.Kpfw. IV с орудием 7,5 cm Kw.K. 40 "
+"L/48. Работы завершились на стадии проектирования."
+
+msgid "G124_Pz_Kpfw_38_K_long_special"
+msgstr ""
+"Сочетание хорошей мобильности и орудия без заметных слабостей означает, что "
+"Pz.Kpfw. 38 (K) всегда будет полезным в бою. Он может эффективно наносить "
+"урон и при необходимости играть роль лёгкого танка."
+
+msgid "G124_Pz_Kpfw_38_K_short"
+msgstr "Pz. 38 (K)"
+
+msgid "G124_Pz_Kpfw_38_K_short_special"
+msgstr "Хорошая мобильность и динамика, комфортное орудие"
 
 msgid "G125_Spz_57_Rh"
 msgstr "Rheinmetall Panzerwagen"
@@ -3603,6 +3631,9 @@ msgstr "Porsche Typ 205/2"
 msgid "Porsche_Typ_220"
 msgstr "DB 603 A1"
 
+msgid "Praga_AE"
+msgstr "Praga AE"
+
 msgid "Praga_AusfIV"
 msgstr "Praga Ausf. IV"
 
@@ -4721,6 +4752,9 @@ msgstr "Grille 15"
 
 msgid "Turret_1_G122_VK6501H"
 msgstr "VK 65.01 (H) S.W."
+
+msgid "Turret_1_G124_Pz_Kpfw_38_K"
+msgstr "Pz.Kpfw. 38 (K)"
 
 msgid "Turret_1_G125_Spz_57_Rh"
 msgstr "Rheinmetall Panzerwagen"
@@ -6274,6 +6308,9 @@ msgstr "7,5 cm Kw.K. 40 L/43"
 msgid "_75mm_KwK_40_L48"
 msgstr "7,5 cm Kw.K. 40 L/48"
 
+msgid "_75mm_KwK_40_L48D"
+msgstr "7,5 cm Kw.K. 40 L/48 (K)"
+
 msgid "_75mm_KwK_40_L48L"
 msgstr "7,5 cm Kw.K. 40 L/48L"
 
@@ -6304,6 +6341,9 @@ msgstr "7,5 cm Pak 40/3 L/46"
 msgid "_75mm_Pzgr.40"
 msgstr "Pzgr 40"
 
+msgid "_75mm_Pzgr.40D"
+msgstr "Pzgr 40 (K)"
+
 msgid "_75mm_Pzgr.40F"
 msgstr "Pzgr 40"
 
@@ -6316,6 +6356,9 @@ msgstr "Pzgr.Patr 40"
 msgid "_75mm_Pzgr39"
 msgstr "Pzgr 39"
 
+msgid "_75mm_Pzgr39D"
+msgstr "Pzgr 39 (K)"
+
 msgid "_75mm_Pzgr39F"
 msgstr "Pzgr 39"
 
@@ -6327,6 +6370,9 @@ msgstr "Pzgr.Patr 39"
 
 msgid "_75mm_Sprg.18"
 msgstr "Sprgr 18"
+
+msgid "_75mm_Sprg.18D"
+msgstr "Sprgr 18 (K)"
 
 msgid "_75mm_Sprg.18F"
 msgstr "Sprgr 18"

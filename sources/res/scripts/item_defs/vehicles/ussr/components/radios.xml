@@ -55,6 +55,9 @@
 		<R123M>224</R123M>
 		<_10RKB>225</_10RKB>
 		<R113A>226</R113A>
+		<R123_K>227</R123_K>
+		<R113T>229</R113T>
+		<SCR_508I>230</SCR_508I>
 		<R123U>232</R123U>
 		<_10RK_IGR>60001</_10RK_IGR>
 		<_12RT_IGR>60002</_12RT_IGR>
@@ -445,6 +448,33 @@
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</R113>
+		<SCR_508I>
+			<userString>#ussr_vehicles:SCR_508I</userString>
+			<tags/>
+			<level>6</level>
+			<price>21600</price>
+			<notInShop>true</notInShop>
+			<weight>100</weight>
+			<distance>525</distance>
+			<maxHealth>120</maxHealth>
+			<maxRegenHealth>60</maxRegenHealth>
+			<repairCost>
+				1.2
+				<!--BW_String-->
+			</repairCost>
+		</SCR_508I>
+		<R113T>
+			<userString>#ussr_vehicles:R113T</userString>
+			<tags/>
+			<level>10</level>
+			<price>52200</price>
+			<notInShop>true</notInShop>
+			<weight>80</weight>
+			<distance>730</distance>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>150</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</R113T>
 		<R113_R200_KV_4_Turchaninov>
 			<userString>#ussr_vehicles:R113_R200_KV_4_Turchaninov</userString>
 			<tags/>
@@ -665,6 +695,21 @@
 				<!--BW_String-->
 			</repairCost>
 		</R123U>
+		<R123_K>
+			<userString>#ussr_vehicles:R123_K</userString>
+			<tags/>
+			<level>10</level>
+			<notInShop>true</notInShop>
+			<price>51600</price>
+			<weight>80</weight>
+			<distance>850</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</R123_K>
 		<R123M>
 			<userString>#ussr_vehicles:R123M</userString>
 			<tags/>

@@ -290,6 +290,9 @@ msgstr ""
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM"
 
+msgid "AN_VRC_18"
+msgstr "AN/VRC 18"
+
 msgid "AN_VRC_7"
 msgstr "AN/VRC-7"
 
@@ -401,11 +404,11 @@ msgid "Berliet_Ricardo"
 msgstr "Berliet Ricardo"
 
 msgid "Canon_bitube_de_105_mm_D_1507"
-msgstr "Сanon bitube de 105 mm D. 1507"
+msgstr "Canon bitube de 105 mm D. 1507"
 
 msgid "Canon_bitube_de_105_mm_D_1507_short"
 msgstr ""
-"Сanon bitube\n"
+"Canon bitube\n"
 "de 105 mm D. 1507"
 
 msgid "Canon_de_105_DEFA_4767_mod"
@@ -456,6 +459,9 @@ msgstr ""
 
 msgid "Canon_de_105_mle_1950"
 msgstr "105 mm obusier mle. 1950"
+
+msgid "Canon_de_105_mm_modele_F1_M"
+msgstr "Canon de 105 mm modèle F1 M"
 
 msgid "Canon_de_155mm"
 msgstr "Canon de 155 mm"
@@ -734,6 +740,12 @@ msgstr "AltProto-AMX-30"
 msgid "Chassis_F118_Char_Mle_75"
 msgstr "Char Mle. 75"
 
+msgid "Chassis_F119_Char_Murat"
+msgstr "Char Murat"
+
+msgid "Chassis_F123_ERAC_105_Proto"
+msgstr "ERAC 105 Prototype"
+
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 Type 2A"
 
@@ -745,6 +757,9 @@ msgstr "ARL 44 bis"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
+
+msgid "Chassis_F39_AMR_P103"
+msgstr "AMR P.103"
 
 msgid "Chassis_F42_AMR_35"
 msgstr "AMR35"
@@ -902,6 +917,9 @@ msgstr "Somua SAu 40"
 msgid "Chassis_Somua_Sau_40_2"
 msgstr "Somua SAu 40 bis"
 
+msgid "Citroen_105"
+msgstr "Citroën 105"
+
 msgid "Continental_AV-1790-7B"
 msgstr "SOFAM 12 GS/A"
 
@@ -998,6 +1016,9 @@ msgstr "ER 29"
 
 msgid "ER_29_bis"
 msgstr "ER 29 bis"
+
+msgid "ER_29_bis_A"
+msgstr "ER 29 bis A"
 
 msgid "ER_51"
 msgstr "ER 51"
@@ -1343,6 +1364,67 @@ msgstr "Char Mle. 75"
 msgid "F118_Char_Mle_75_short_special"
 msgstr "Механика стрельбы очередями, газотурбинный двигатель"
 
+msgid "F119_Char_Murat"
+msgstr "Char Murat"
+
+msgid "F119_Char_Murat_descr"
+msgstr ""
+"Проект танка имел две ключевые особенности — новую компоновку боевого "
+"отделения и двухобводный гусеничный движитель, которые, по мнению "
+"разработчиков, могли вывести показатели огневой мощи и подвижности на новый "
+"уровень. Боевое отделение разделялось перегородкой на отсеки для экипажа и "
+"орудия. Автомат заряжания состоял из основной системы заряжания на 3 "
+"выстрела и вспомогательной механизированной укладки. Конструкция позволяла "
+"заряжать орудие и пополнять основную укладку без установки пушки на "
+"фиксированный угол заряжания, что значительно увеличивало скорострельность и"
+" повышало комфорт экипажа. Гусеничный обвод был разделён на две части, за "
+"счёт чего машина сохраняла подвижность даже в случае поражения миной. Однако"
+" при использовании двухобводного движителя увеличивалась масса ходовой "
+"части, усложнялась трансмиссия и управление движением. Проект так и остался "
+"на бумаге."
+
+msgid "F119_Char_Murat_long_special"
+msgstr ""
+"Char Murat — французский средний танк IX уровня с впечатляющей динамикой и "
+"хорошей огневой мощью, которую обеспечивает 105-мм орудие с магазином на три"
+" снаряда. Благодаря отличной мобильности, неплохой стабилизации и быстрой "
+"перезарядке между выстрелами Char Murat отлично выполняет роль машины "
+"поддержки, позволяя быстро напасть, разрядить магазин и отступить."
+
+msgid "F119_Char_Murat_short"
+msgstr "Char Murat"
+
+msgid "F119_Char_Murat_short_special"
+msgstr "Магазинная система заряжания, хорошая динамика и мобильность"
+
+msgid "F123_ERAC_105_Proto"
+msgstr "ERAC 105 Proto"
+
+msgid "F123_ERAC_105_Proto_descr"
+msgstr ""
+"Проект бронированной амфибийной разведывательной машины (от франц. Engin de "
+"Reconnaissance Amphibie de Combat) начала 1960-х. Действующий прототип "
+"построен в 1963 году. Машина обладала небольшой массой при значительной "
+"огневой мощи и могла преодолевать водные преграды. Среди преимуществ была "
+"достаточно высокая проходимость по грязи и снегу, а корпус из алюминиевого "
+"сплава обеспечивал лучшую защиту, чем у большинства амфибийных машин того "
+"времени. Несмотря на положительные результаты испытаний, ERAC 105 Proto не "
+"приняли на вооружение по экономическим причинам."
+
+msgid "F123_ERAC_105_Proto_long_special"
+msgstr ""
+"ERAC 105 Proto — французский лёгкий танк IX уровня с орудием, склоняющимся "
+"на 8 град. Небольшие габариты делают машину отличным пассивным разведчиком, "
+"а низкий разброс и неплохой урон в минуту позволяют эффективно наносить "
+"урон. Удар из его 105-мм орудия — один из самых тяжёлых среди лёгких танков "
+"этого уровня."
+
+msgid "F123_ERAC_105_Proto_short"
+msgstr "ERAC 105 Pr"
+
+msgid "F123_ERAC_105_Proto_short_special"
+msgstr "Хороший разовый урон, небольшие габариты"
+
 msgid "F124_AMX_13FL11"
 msgstr "AMX 13 (FL 11)"
 
@@ -1468,6 +1550,31 @@ msgstr "AMX AC mle. 48 FL"
 
 msgid "F36_AMX_AC_Mle1948_FL_short"
 msgstr "AMX AC 48 FL"
+
+msgid "F39_AMR_P103"
+msgstr "AMR P.103"
+
+msgid "F39_AMR_P103_descr"
+msgstr ""
+"Лёгкий танк, разработанный в 1935 году специалистами компании Citroën. В "
+"апреле того же года машина прошла испытания, на которых была отмечена "
+"высокая степень защищённости основных агрегатов и экипажа. Однако из-за "
+"ненадёжности ходовой и гидравлической трансмиссии, а также низких "
+"показателей скорости предпочтение отдали танку AMR 35. Единственный прототип"
+" был впоследствии разобран."
+
+msgid "F39_AMR_P103_long_special"
+msgstr ""
+"AMR P.103 — универсальный лёгкий танк II уровня с неплохой мобильностью, "
+"которая позволяет ему быстро достигать ключевых позиций на поле боя. Его "
+"орудие обладает высокой скорострельностью, а хороший обзор даёт возможность "
+"эффективно обнаруживать противника, особенно ближе к концу боя."
+
+msgid "F39_AMR_P103_short"
+msgstr "AMR P.103"
+
+msgid "F39_AMR_P103_short_special"
+msgstr "Хороший обзор, высокая скорострельность"
 
 msgid "F42_AMR_35"
 msgstr "AMR 35"
@@ -2010,6 +2117,9 @@ msgstr "Hispano-Suiza HS 110"
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
 
+msgid "Hispano_ERAC"
+msgstr "Hispano ERAC"
+
 msgid "Hotchkiss_35_1"
 msgstr "Hotchkiss 35"
 
@@ -2190,6 +2300,9 @@ msgstr "Maybach HL 295 à injection d'essence"
 
 msgid "Maybach_Mb_IV_Zeppelin_x2"
 msgstr "Maybach Mb. IV Zeppelin x2"
+
+msgid "Moteur_EPC_version_S5"
+msgstr "Moteur E.P.C. version S5"
 
 msgid "Moteur_moderne_3M_27_1_01"
 msgstr "Moteur moderne 3M.27.1.01"
@@ -2554,6 +2667,9 @@ msgstr "TRVP-13"
 msgid "TRVP_13_A"
 msgstr "TRVP-13-A"
 
+msgid "TRVP_13_A3"
+msgstr "TRVP-13-A3"
+
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
 
@@ -2717,6 +2833,12 @@ msgstr "AltProto-AMX-30"
 msgid "Turret_1_F118_Char_Mle_75"
 msgstr "Char Mle. 75"
 
+msgid "Turret_1_F119_Char_Murat"
+msgstr "Char Murat"
+
+msgid "Turret_1_F123_ERAC_105_Proto"
+msgstr "ERAC 105 Prototype"
+
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
@@ -2725,6 +2847,9 @@ msgstr "SFAC 105"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
+
+msgid "Turret_1_F39_AMR_P103"
+msgstr "AMR P.103"
 
 msgid "Turret_1_F42_AMR_35"
 msgstr "APX-5"
@@ -2959,6 +3084,9 @@ msgstr "leFH18B2"
 msgid "_105_leFH18B2_short_special"
 msgstr "Скорострельное орудие, комфортные УГН"
 
+msgid "_105_mm_D_1090"
+msgstr "105 mm D. 1090"
+
 msgid "_105mmGr39H1A"
 msgstr "Gr. 39 Hl/B"
 
@@ -3034,6 +3162,12 @@ msgstr "OCC-105 D. 1504 (EBR)"
 msgid "_105mm_OCC_105_F1"
 msgstr "OCC-105-F1"
 
+msgid "_105mm_OCC_105_F1M"
+msgstr "OCC 105 F1M"
+
+msgid "_105mm_OCC_105_F1_ERAC"
+msgstr "OCC-105-F1 ERAC"
+
 msgid "_105mm_OCO_mle._1936"
 msgstr "OCO mle. 1936"
 
@@ -3042,6 +3176,9 @@ msgstr "Prf. mle. 1936"
 
 msgid "_105mm_OE_105_Mle_60"
 msgstr "OE-105-Mle. 60"
+
+msgid "_105mm_OE_105_Mle_60M"
+msgstr "OE 105 F1M Mle. 60"
 
 msgid "_105mm_OE_105_Mle_60_D1504"
 msgstr "OE-105-Mle. 60 D. 1504"
@@ -3054,6 +3191,9 @@ msgstr "OE-105-Mle. 60 D. 1504 (EBR)"
 
 msgid "_105mm_OE_105_Mle_60_D_1504_EBR_2"
 msgstr "OE-105-Mle. 60 D. 1504 (EXP)"
+
+msgid "_105mm_OE_105_Mle_60_ERAC"
+msgstr "OE-105-Mle. 60 ERAC"
 
 msgid "_105mm_OE_mle_1920"
 msgstr "OE mle. 1920"
@@ -3084,6 +3224,12 @@ msgstr "OFL-105 D. 1504 (EXP)"
 
 msgid "_105mm_OFL_105_F1"
 msgstr "OFL-105-F1"
+
+msgid "_105mm_OFL_105_F1M"
+msgstr "OFL 105 F1M"
+
+msgid "_105mm_OFL_105_F1_ERAC"
+msgstr "OFL-105-F1 ERAC"
 
 msgid "_105mm_Prf1940"
 msgstr "Prf. mle. 1940"
@@ -3247,6 +3393,12 @@ msgstr "Balle T.P. mle. 1934P"
 msgid "_25mm_Balle_T.P._mle._1939P"
 msgstr "Balle T.P. mle. 1939P"
 
+msgid "_25mm_Balle_T_P_mle_1928A"
+msgstr "Balle T.P. mle. 1928A"
+
+msgid "_25mm_Balle_T_P_mle_1934A"
+msgstr "Balle T.P. mle. 1934A"
+
 msgid "_25mm_Canon_Raccourci_Mle.1934"
 msgstr "25 mm Canon Raccourci mle. 1934"
 
@@ -3254,6 +3406,9 @@ msgid "_25mm_Canon_Raccourci_Mle.1934_short"
 msgstr ""
 "25 mm Raccourci\n"
 "mle. 1934"
+
+msgid "_25mm_Canon_Raccourci_Mle_1934_A"
+msgstr "25 mm Canon Raccourci mle. 1934 A"
 
 msgid "_25mm_SA35"
 msgstr "25 mm SA35"

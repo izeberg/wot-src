@@ -37,6 +37,7 @@ ACTIVE_NOT_GROUP_SKILLS = skills_constants.ACTIVE_NOT_GROUP_SKILLS
 SkillUtilization = skills_constants.SkillUtilization
 MAX_FREE_SKILLS_SIZE = 16
 NO_SKILL = -1
+NO_SLOT = -1
 MAX_SKILL_LEVEL = 100
 MAX_SKILLS_EFFICIENCY = 1.0
 MAX_SKILLS_EFFICIENCY_XP = 100000
@@ -542,7 +543,8 @@ class TankmanDescr(object):
     def freeXP(self, xp):
         self._totalMajorSkills = None
         if xp != self.__freeXP:
-            residualXP = xp - (self.__freeXP + self.needXpForVeteran)
+            needXpForVeteran = max(self.needXpForVeteran, 0)
+            residualXP = xp - (self.__freeXP + needXpForVeteran)
             self.__freeXP = xp - residualXP if residualXP > 0 else xp
         return
 
@@ -1633,15 +1635,17 @@ def getSkillRoleType(skillName):
 
 
 def getLessMasteredIDX(tankmenDescrs):
-    forSortMastered = []
-    isCrewEmpty = True
+    sortingList = []
     for slotIdx, tankmanDescr in enumerate(tankmenDescrs):
         if tankmanDescr:
-            forSortMastered.append((tankmanDescr.skillsEfficiencyXP - MAX_SKILLS_EFFICIENCY_XP,
-             -abs(tankmanDescr.needXpForVeteran), tankmanDescr.totalXP(), slotIdx))
-            isCrewEmpty = False
-        else:
-            forSortMastered.append((float('inf'), slotIdx))
+            if tankmanDescr.needXpForVeteran:
+                sortingList.append((-abs(tankmanDescr.needEfficiencyXP), tankmanDescr.totalXP(), slotIdx))
+            else:
+                sortingList.append((float('inf'), slotIdx))
 
-    forSortMastered = sorted(forSortMastered, key=lambda item: [ idx for idx in item ])
-    return (isCrewEmpty, forSortMastered[0][(-1)])
+    if sortingList:
+        sortingList = sorted(sortingList, key=lambda item: [ idx for idx in item ])
+        return (
+         False, sortingList[0][(-1)])
+    return (
+     True, NO_SLOT)

@@ -267,10 +267,10 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         if self.vehicleTraces is not None and not self.vehicleTraces.activePostmortem:
             self.vehicleTraces = None
         self.suspensionSound = None
-        self.swingingAnimator = None
+        self._swingingAnimator.reset()
         self.burnoutProcessor = None
-        self.gunRecoil = None
-        self.gunAnimators = []
+        self._gunRecoilLink.reset()
+        self._gunAnimators.setup(0)
         self.gunLinkedNodesAnimator = None
         self.crashedTracksController = None
         if self.suspension is not None and not self.suspension.activePostmortem:
@@ -335,7 +335,6 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         if self.damageState.effect is not None:
             self.playEffect(self.damageState.effect, SpecialKeyPointNames.STATIC)
         self.highlighter = Highlighter(self.isAlive, self.collisions)
-        vehicle_composition.createVehicleComposition(self.gameObject)
         self.__isConstructed = True
         return
 
@@ -607,9 +606,9 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self.__reattachComponents(self.compoundModel)
             self._connectCollider()
             self.filter.syncGunAngles(prevTurretYaw, prevGunPitch)
-            model_assembler.setupTurretRotations(self)
             vehicle_composition.removeComposition(self.gameObject)
             vehicle_composition.createVehicleComposition(self.gameObject)
+            self._updateAttachments()
             self.onModelChanged()
             return
 

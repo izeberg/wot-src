@@ -4181,6 +4181,30 @@ package
       
       public static const CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY:String = "#tooltips:customization/tabs/projectionDecal/body";
       
+      public static const CUSTOMIZATION_TABS_CUSTOMSTYLE_BODY:String = "#tooltips:customization/tabs/customStyle/body";
+      
+      public static const CUSTOMIZATION_TABS_UNCUSTOMSTYLE_BODY:String = "#tooltips:customization/tabs/uncustomStyle/body";
+      
+      public static const CUSTOMIZATION_TABS_ATTACHMENT_BODY:String = "#tooltips:customization/tabs/attachment/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_PAINT_BODY:String = "#tooltips:customization/disabledTabs/paint/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_CAMOUFLAGE_BODY:String = "#tooltips:customization/disabledTabs/camouflage/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_EMBLEM_BODY:String = "#tooltips:customization/disabledTabs/emblem/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_INSCRIPTION_BODY:String = "#tooltips:customization/disabledTabs/inscription/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_MODIFICATION_BODY:String = "#tooltips:customization/disabledTabs/modification/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_PROJECTIONDECAL_BODY:String = "#tooltips:customization/disabledTabs/projectionDecal/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_CUSTOMSTYLE_BODY:String = "#tooltips:customization/disabledTabs/customStyle/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_UNCUSTOMSTYLE_BODY:String = "#tooltips:customization/disabledTabs/uncustomStyle/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_ATTACHMENT_BODY:String = "#tooltips:customization/disabledTabs/attachment/body";
+      
       public static const CUSTOMIZATION_CAROUSEL_FILTER_HEADER:String = "#tooltips:customization/carousel/filter/header";
       
       public static const CUSTOMIZATION_CAROUSEL_FILTER_BODY:String = "#tooltips:customization/carousel/filter/body";
@@ -4564,6 +4588,8 @@ package
       public static const VEHICLEPREVIEW_BOXTOOLTIP_OPTIONALDEVICE_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/optionalDevice/header";
       
       public static const VEHICLEPREVIEW_BOXTOOLTIP_BATTLEBOOSTER_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/battleBooster/header";
+      
+      public static const VEHICLEPREVIEW_BOXTOOLTIP_ATTACHMENT_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/attachment/header";
       
       public static const CONTENTBUYVIEW_SLOTCHECKBOX_NOTENOUGHSLOTS_HEADER:String = "#tooltips:contentBuyView/slotCheckbox/notEnoughSlots/header";
       
@@ -6153,6 +6179,22 @@ package
       
       public static const NOTRECRUITEDTANKMAN_HW21_COMMANDER5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/hw21_commander5/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER1_LABEL:String = "#tooltips:notrecruitedtankman/hw24_commander1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER1_DESC:String = "#tooltips:notrecruitedtankman/hw24_commander1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER2_LABEL:String = "#tooltips:notrecruitedtankman/hw24_commander2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER2_DESC:String = "#tooltips:notrecruitedtankman/hw24_commander2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER4_LABEL:String = "#tooltips:notrecruitedtankman/hw24_commander4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER4_DESC:String = "#tooltips:notrecruitedtankman/hw24_commander4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER5_LABEL:String = "#tooltips:notrecruitedtankman/hw24_commander5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER5_DESC:String = "#tooltips:notrecruitedtankman/hw24_commander5/desc";
+      
       public static const NOTRECRUITEDTANKMAN_COMMANDER_BP1_LABEL:String = "#tooltips:notrecruitedtankman/commander_bp1/label";
       
       public static const NOTRECRUITEDTANKMAN_COMMANDER_BP1_DESC:String = "#tooltips:notrecruitedtankman/commander_bp1/desc";
@@ -6431,9 +6473,7 @@ package
       
       public static const CUSTOMIZATION_STORAGE_FILTERS_EFFECTS_TITLE:String = "#tooltips:customization/storage/filters/effects/title";
       
-      public static const CUSTOMIZATION_SAVEDSTYLES_TITLE:String = "#tooltips:customization/savedStyles/title";
-      
-      public static const CUSTOMIZATION_SAVEDSTYLES_BODY:String = "#tooltips:customization/savedStyles/body";
+      public static const CUSTOMIZATION_STORAGE_FILTERS_ATTACHMENTS_TITLE:String = "#tooltips:customization/storage/filters/attachments/title";
       
       public static const SENIORITYAWARDS_HANGARENTRYPOINT_TOOLTIP_HEADER:String = "#tooltips:seniorityAwards/hangarEntryPoint/tooltip/header";
       
@@ -7870,6 +7910,36 @@ package
       public static const WEATHER_ZONETORNADO_HEADER:String = "#tooltips:weather/zoneTornado/header";
       
       public static const WEATHER_ZONETORNADO_BODY:String = "#tooltips:weather/zoneTornado/body";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp15_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp15_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp15_5/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_6_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp15_6/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp15_6/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp15_6/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_7_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp15_7/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_7_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp15_7/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_7_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp15_7/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_8_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp15_8/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_8_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp15_8/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_8_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp15_8/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_9_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp15_9/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp15_9/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP15_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp15_9/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

@@ -117,6 +117,7 @@ class TechTree(TechTreeMeta):
         loadEvent = events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_RESEARCH), ctx={BackButtonContextKeys.ROOT_CD: vehCD, BackButtonContextKeys.EXIT: self._createExitEvent()})
         self.soundManager.playInstantSound(Sounds.RESET)
         self.__stopTopOfTheTreeSounds()
+        self.__removeReloadListener()
         self.fireEvent(loadEvent, scope=EVENT_BUS_SCOPE.LOBBY)
 
     def onCloseTechTree(self):
@@ -204,9 +205,6 @@ class TechTree(TechTreeMeta):
 
     def _populate(self):
         super(TechTree, self)._populate()
-        if IS_DEVELOPMENT:
-            from gui import InputHandler
-            InputHandler.g_instance.onKeyUp += self.__handleReloadData
         eventsListener = g_techTreeDP.techTreeEventsListener
         if eventsListener is not None:
             eventsListener.onSettingsChanged += self.__onSettingsChanged
@@ -219,9 +217,6 @@ class TechTree(TechTreeMeta):
         return
 
     def _dispose(self):
-        if IS_DEVELOPMENT:
-            from gui import InputHandler
-            InputHandler.g_instance.onKeyUp -= self.__handleReloadData
         self.__removeListeners()
         super(TechTree, self)._dispose()
 
@@ -236,6 +231,12 @@ class TechTree(TechTreeMeta):
         self.addListener(VIEW_ALIAS.NOTIFICATIONS_LIST, self.__onClosePremiumPanel, scope=EVENT_BUS_SCOPE.LOBBY)
         self.addListener(events.ReferralProgramEvent.SHOW_REFERRAL_PROGRAM_WINDOW, self.__onClosePremiumPanel, scope=EVENT_BUS_SCOPE.LOBBY)
         self.addListener(events.ChannelCarouselEvent.OPEN_BUTTON_CLICK, self.__onClosePremiumPanel, scope=EVENT_BUS_SCOPE.LOBBY)
+        self.__addReloadListener()
+
+    def __addReloadListener(self):
+        if IS_DEVELOPMENT:
+            from gui import InputHandler
+            InputHandler.g_instance.onKeyUp += self.__handleReloadData
 
     def __removeListeners(self):
         self.removeListener(MESSENGER_VIEW_ALIAS.CHANNEL_MANAGEMENT_WINDOW, self.__onClosePremiumPanel, scope=EVENT_BUS_SCOPE.LOBBY)
@@ -247,7 +248,13 @@ class TechTree(TechTreeMeta):
         eventsListener = g_techTreeDP.techTreeEventsListener
         if eventsListener is not None:
             eventsListener.onSettingsChanged -= self.__onSettingsChanged
+        self.__removeReloadListener()
         return
+
+    def __removeReloadListener(self):
+        if IS_DEVELOPMENT:
+            from gui import InputHandler
+            InputHandler.g_instance.onKeyUp -= self.__handleReloadData
 
     def __onClosePremiumPanel(self, _=None):
         self.as_closePremiumPanelS()

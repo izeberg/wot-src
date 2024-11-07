@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod3/Gun_03</nodefullVisual>
+	<parent>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod4/Gun_03</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.194482 -0.393574 -0.164231</min>
+		<max>0.218873 0.416001 5.923605</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

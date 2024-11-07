@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It33_Prototipo_6/crash/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.530206 -0.002898 -3.231688</min>
+		<max>1.530407 1.145065 3.122790</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It33_Prototipo_6/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

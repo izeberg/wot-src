@@ -24,6 +24,8 @@ package net.wg.infrastructure.base.meta
       
       function onFormChangeS(param1:int, param2:Boolean) : void;
       
+      function onRarityChangeS(param1:int, param2:Boolean) : void;
+      
       function as_setData(param1:Object) : void;
       
       function as_enableDefBtn(param1:Boolean) : void;

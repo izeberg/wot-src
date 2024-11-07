@@ -76,6 +76,9 @@ msgstr "Только доступная для исследования"
 msgid "popover/counter"
 msgstr "Отображаемая техника %(count)s"
 
+msgid "popover/label/customization"
+msgstr "Внешний вид"
+
 msgid "popover/label/hidden"
 msgstr "Дополнительно"
 
@@ -149,6 +152,15 @@ msgstr ""
 
 msgid "tooltip/crystals/header"
 msgstr "Техника, зарабатывающая боны"
+
+msgid "tooltip/customization/canInstallAttachments/body"
+msgstr ""
+"Включить/отключить отображение техники, на которую можно установить "
+"3D-объекты."
+
+msgid "tooltip/customization/own3DStyle/body"
+msgstr ""
+"Включить/отключить отображение техники, для которой у вас есть 3D-стили."
 
 msgid "tooltip/elite/body"
 msgstr ""

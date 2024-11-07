@@ -15,7 +15,7 @@
 					<account>
 						<token>
 							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
+							<equal>0</equal>
 						</token>
 					</account>
 					<battle>
@@ -56,8 +56,8 @@
 						01.12.2050 05:10
 						<!--BW_String-->
 					</expires>
-					<count>2</count>
-					<limit>2</limit>
+					<count>1</count>
+					<limit>1</limit>
 				</token>
 			</bonus>
 		</battleQuest>
@@ -75,7 +75,7 @@
 					<account>
 						<token>
 							<id>cust_progress_900_1</id>
-							<greaterOrEqual>2</greaterOrEqual>
+							<greaterOrEqual>1</greaterOrEqual>
 						</token>
 					</account>
 					<battle>
@@ -116,8 +116,8 @@
 						01.12.2050 05:10
 						<!--BW_String-->
 					</expires>
-					<count>3</count>
-					<limit>3</limit>
+					<count>2</count>
+					<limit>2</limit>
 				</token>
 			</bonus>
 		</battleQuest>
@@ -135,7 +135,7 @@
 					<account>
 						<token>
 							<id>cust_progress_900_1</id>
-							<greaterOrEqual>3</greaterOrEqual>
+							<greaterOrEqual>2</greaterOrEqual>
 						</token>
 					</account>
 					<battle>
@@ -176,8 +176,8 @@
 						01.12.2050 05:10
 						<!--BW_String-->
 					</expires>
-					<count>4</count>
-					<limit>4</limit>
+					<count>3</count>
+					<limit>3</limit>
 				</token>
 			</bonus>
 		</battleQuest>
@@ -195,7 +195,7 @@
 					<account>
 						<token>
 							<id>cust_progress_900_1</id>
-							<greaterOrEqual>4</greaterOrEqual>
+							<greaterOrEqual>3</greaterOrEqual>
 						</token>
 					</account>
 					<battle>
@@ -228,8 +228,8 @@
 						01.12.2050 05:10
 						<!--BW_String-->
 					</expires>
-					<count>5</count>
-					<limit>5</limit>
+					<count>4</count>
+					<limit>4</limit>
 				</token>
 			</bonus>
 		</battleQuest>

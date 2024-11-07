@@ -5564,15 +5564,27 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
-			<version>2</version>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
 			<component>
 				<UUID>0370ccb1-6f8b-4dbe-ab44-2670e30ca33f</UUID>
-				<flags>34</flags>
+				<flags>32</flags>
 				<config>
 					<property>
-						<name>patchName</name>
+						<name>navmeshPatchTag</name>
 						<value>08_bigCityBombing_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value>08_bigCityBombing_ai</value>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
 					</property>
 				</config>
 			</component>

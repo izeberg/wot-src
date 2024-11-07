@@ -69,7 +69,8 @@ _GUI_ITEMS_TYPE_MAP = {ShopItemType.VEHICLE: GUI_ITEM_TYPE.VEHICLE,
    ShopItemType.DECAL: GUI_ITEM_TYPE.DECAL, 
    ShopItemType.EMBLEM: GUI_ITEM_TYPE.EMBLEM, 
    ShopItemType.INSCRIPTION: GUI_ITEM_TYPE.INSCRIPTION, 
-   ShopItemType.PROJECTION_DECAL: GUI_ITEM_TYPE.PROJECTION_DECAL}
+   ShopItemType.PROJECTION_DECAL: GUI_ITEM_TYPE.PROJECTION_DECAL, 
+   ShopItemType.ATTACHMENT: GUI_ITEM_TYPE.ATTACHMENT}
 _ITEMS_CRITERIA_MAP = {ShopItemType.VEHICLE: {'inventory': REQ_CRITERIA.INVENTORY | ~REQ_CRITERIA.VEHICLE.EVENT, 
                           'premium': REQ_CRITERIA.VEHICLE.PREMIUM, 
                           'ready': REQ_CRITERIA.VEHICLE.READY, 
@@ -105,7 +106,7 @@ _ITEMS_CRITERIA_MAP = {ShopItemType.VEHICLE: {'inventory': REQ_CRITERIA.INVENTOR
                         'hidden': REQ_CRITERIA.HIDDEN}, 
    ShopItemType.PREMIUM: {}, ShopItemType.PAINT: {}, ShopItemType.CAMOUFLAGE: {}, ShopItemType.MODIFICATION: {}, ShopItemType.STYLE: {'on_account': REQ_CRITERIA.CUSTOMIZATION.ON_ACCOUNT, 
                         'inventory': REQ_CRITERIA.CUSTOMIZATION.ON_ACCOUNT}, 
-   ShopItemType.DECAL: {}, ShopItemType.EMBLEM: {}, ShopItemType.INSCRIPTION: {}, ShopItemType.PROJECTION_DECAL: {}, ShopItemType.CREW_BOOKS: {}, ShopItemType.ENHANCEMENT: {'inventory': REQ_CRITERIA.INVENTORY}}
+   ShopItemType.DECAL: {}, ShopItemType.EMBLEM: {}, ShopItemType.INSCRIPTION: {}, ShopItemType.PROJECTION_DECAL: {}, ShopItemType.CREW_BOOKS: {}, ShopItemType.ATTACHMENT: {}, ShopItemType.ENHANCEMENT: {'inventory': REQ_CRITERIA.INVENTORY}}
 
 class IdInListCriteria(RequestCriteria):
 
@@ -129,7 +130,8 @@ _SHOP_CUSTOMIZATION_TYPES = (
  ShopItemType.DECAL,
  ShopItemType.EMBLEM,
  ShopItemType.INSCRIPTION,
- ShopItemType.PROJECTION_DECAL)
+ ShopItemType.PROJECTION_DECAL,
+ ShopItemType.ATTACHMENT)
 _SHOP_ITEM_TYPE_MAP = {GUI_ITEM_TYPE.VEHICLE: ShopItemType.VEHICLE, 
    GUI_ITEM_TYPE.EQUIPMENT: ShopItemType.EQUIPMENT, 
    GUI_ITEM_TYPE.OPTIONALDEVICE: ShopItemType.DEVICE, 

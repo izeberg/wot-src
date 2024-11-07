@@ -1074,11 +1074,11 @@
 		<shortDescriptionSpecial>#ussr_vehicles:R194_ST_62_var_2_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#ussr_vehicles:R194_ST_62_var_2_long_special</longDescriptionSpecial>
 		<price>
-			100
+			22500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_assault HD mediumTank3 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank special</tags>
+		<tags>mediumTank role_MT_assault HD mediumTank3 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals special</tags>
 		<level>10</level>
 	</R194_ST_62_var_2>
 	<R205_Tank_Rozanova>
@@ -2450,6 +2450,51 @@
 		<tags>mediumTank role_MT_assault HD mediumTank3 improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user lockOutfit restoreWithStyle</tags>
 		<level>8</level>
 	</R205_Tank_Rozanova_Obsidian>
+	<R217_Object_Kust>
+		<id>257</id>
+		<userString>#ussr_vehicles:R217_Object_Kust</userString>
+		<description>#ussr_vehicles:R217_Object_Kust_descr</description>
+		<shortUserString>#ussr_vehicles:R217_Object_Kust_short</shortUserString>
+		<shortDescriptionSpecial>#ussr_vehicles:R217_Object_Kust_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#ussr_vehicles:R217_Object_Kust_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_sniper HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user testTank secret</tags>
+		<level>8</level>
+	</R217_Object_Kust>
+	<R225_SU_100i>
+		<id>260</id>
+		<userString>#ussr_vehicles:R225_SU_100i</userString>
+		<description>#ussr_vehicles:R225_SU_100i_descr</description>
+		<shortUserString>#ussr_vehicles:R225_SU_100i_short</shortUserString>
+		<shortDescriptionSpecial>#ussr_vehicles:R225_SU_100i_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#ussr_vehicles:R225_SU_100i_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG HD mediumAT-SPG improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<level>5</level>
+	</R225_SU_100i>
+	<R219_Object_265T>
+		<id>259</id>
+		<userString>#ussr_vehicles:R219_Object_265T</userString>
+		<description>#ussr_vehicles:R219_Object_265T_descr</description>
+		<shortUserString>#ussr_vehicles:R219_Object_265T_short</shortUserString>
+		<shortDescriptionSpecial>#ussr_vehicles:R219_Object_265T_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#ussr_vehicles:R219_Object_265T_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_break HD heavyTank1 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user special secret testTank</tags>
+		<level>9</level>
+	</R219_Object_265T>
 	<R1004_T-34_StoryMode>
 		<id>401</id>
 		<userString>#ussr_vehicles:T-34</userString>

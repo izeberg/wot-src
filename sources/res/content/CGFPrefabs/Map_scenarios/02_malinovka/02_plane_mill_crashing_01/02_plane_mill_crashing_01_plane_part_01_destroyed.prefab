@@ -718,7 +718,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.183944 1.12967 0.000914216
+							-0.183944 1.12967 0.000914201
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2049,6 +2049,46 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>AIDataPatch</type>
+			<version>2</version>
+			<component>
+				<UUID>c45c010e-6950-41e0-970d-ad9d932a75ce</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>patchName</name>
+						<value>02_plane_part01_ai</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>c45c010e-6950-41e0-970d-ad9d932a75ce</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value>02_plane_part01_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value>02_plane_part01_ai</value>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>ShotsReceiver</type>
 			<version>1</version>
 			<component>
@@ -2080,10 +2120,6 @@
 						<link>73dd1164-9b40-3909-9c1a-dd91ec35fb10</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c45c010e-6950-41e0-970d-ad9d932a75ce</link>
 					</property>
@@ -2096,10 +2132,6 @@
 					<property>
 						<name>colliders</name>
 						<link>bb94a312-540c-3d2d-b6c8-507792392177</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -2116,10 +2148,6 @@
 						<link>91cff074-e4bf-30ba-a3d2-6be825520395</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c45c010e-6950-41e0-970d-ad9d932a75ce</link>
 					</property>
@@ -2132,10 +2160,6 @@
 					<property>
 						<name>colliders</name>
 						<link>76071924-f8a5-33f0-9a2f-d9b9a37841f0</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -2152,10 +2176,6 @@
 						<link>5cbee56e-74f5-318d-9e24-65bc5920d6e1</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c45c010e-6950-41e0-970d-ad9d932a75ce</link>
 					</property>
@@ -2168,10 +2188,6 @@
 					<property>
 						<name>colliders</name>
 						<link>3a8d8d9a-a735-30c8-9389-e6c7a6e0c4c1</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -2188,10 +2204,6 @@
 						<link>7a751f42-cc32-362a-8961-27c6cb9a070c</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c45c010e-6950-41e0-970d-ad9d932a75ce</link>
 					</property>
@@ -2204,10 +2216,6 @@
 					<property>
 						<name>colliders</name>
 						<link>9f637cb6-f74b-3729-8d0f-3887a00a7f9b</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -2224,10 +2232,6 @@
 						<link>ff31793a-22d4-32dd-982b-c66beee7d2e2</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c45c010e-6950-41e0-970d-ad9d932a75ce</link>
 					</property>
@@ -2240,10 +2244,6 @@
 					<property>
 						<name>colliders</name>
 						<link>c48a073a-ed8b-35ee-8539-9f51f40fe94e</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -2260,10 +2260,6 @@
 						<link>84ceee89-4849-34e6-9fe5-5b079cdb1eb8</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c45c010e-6950-41e0-970d-ad9d932a75ce</link>
 					</property>
@@ -2276,10 +2272,6 @@
 					<property>
 						<name>colliders</name>
 						<link>86ec64b0-00c8-3314-a0c5-20e92f39c021</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>

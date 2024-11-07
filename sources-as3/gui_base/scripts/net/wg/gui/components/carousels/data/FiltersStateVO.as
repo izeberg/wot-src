@@ -13,16 +13,22 @@ package net.wg.gui.components.carousels.data
       
       private static const LEVELS_SELECTED:String = "levels";
       
+      private static const CUSTOMIZATION_SELECTED:String = "customization";
+      
       private static const HIDDEN_SELECTED:String = "hidden";
       
       private static const PROGRESSIONS_SELECTED:String = "progressions";
       
       private static const ROLES_STATES:String = "roles";
+      
+      private static const AS_SEEN:String = "asSeen";
        
       
       public var rolesSectionVisible:Boolean = false;
       
       public var rolesLabel:String = "";
+      
+      private var _asSeen:Vector.<String> = null;
       
       private var _nationsSelected:Vector.<Boolean> = null;
       
@@ -31,6 +37,8 @@ package net.wg.gui.components.carousels.data
       private var _specialsSelected:Vector.<Boolean> = null;
       
       private var _levelsSelected:Vector.<Boolean> = null;
+      
+      private var _customizationSelected:Vector.<Boolean> = null;
       
       private var _hiddenSelected:Vector.<Boolean> = null;
       
@@ -45,6 +53,7 @@ package net.wg.gui.components.carousels.data
       
       override protected function onDataWrite(param1:String, param2:Object) : Boolean
       {
+         var _loc4_:String = null;
          var _loc3_:Boolean = false;
          if(param1 == NATIONS_SELECTED)
          {
@@ -82,6 +91,15 @@ package net.wg.gui.components.carousels.data
             }
             return false;
          }
+         if(param1 == CUSTOMIZATION_SELECTED)
+         {
+            this._customizationSelected = new Vector.<Boolean>();
+            for each(_loc3_ in param2)
+            {
+               this._customizationSelected.push(_loc3_);
+            }
+            return false;
+         }
          if(param1 == HIDDEN_SELECTED)
          {
             this._hiddenSelected = new Vector.<Boolean>();
@@ -105,6 +123,15 @@ package net.wg.gui.components.carousels.data
             }
             return false;
          }
+         if(param1 == AS_SEEN)
+         {
+            this._asSeen = new Vector.<String>();
+            for each(_loc4_ in param2)
+            {
+               this._asSeen.push(_loc4_);
+            }
+            return false;
+         }
          return super.onDataWrite(param1,param2);
       }
       
@@ -124,6 +151,8 @@ package net.wg.gui.components.carousels.data
          this._rolesStates = null;
          this._progressionsSelected.splice(0,this._progressionsSelected.length);
          this._progressionsSelected = null;
+         this._asSeen.splice(0,this._asSeen.length);
+         this._asSeen = null;
          super.onDispose();
       }
       
@@ -140,6 +169,11 @@ package net.wg.gui.components.carousels.data
       public function get specialsSelected() : Vector.<Boolean>
       {
          return this._specialsSelected;
+      }
+      
+      public function get customizationSelected() : Vector.<Boolean>
+      {
+         return this._customizationSelected;
       }
       
       public function get levelsSelected() : Vector.<Boolean>
@@ -160,6 +194,11 @@ package net.wg.gui.components.carousels.data
       public function get rolesStates() : FilterRoleStateVO
       {
          return this._rolesStates;
+      }
+      
+      public function get asSeen() : Vector.<String>
+      {
+         return this._asSeen;
       }
    }
 }

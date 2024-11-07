@@ -15,6 +15,8 @@ package net.wg.gui.lobby.vehicleCustomization.data
       
       private static const FORMS_BTNS:String = "formsBtns";
       
+      private static const RARITIES_BTNS:String = "raritiesBtns";
+      
       private static const ADDITIONAL_CHECKBOX_DATA:String = "additionalCheckBoxData";
        
       
@@ -27,6 +29,8 @@ package net.wg.gui.lobby.vehicleCustomization.data
       public var lblAdditional:String = "";
       
       public var formsBtnsLbl:String = "";
+      
+      public var raritiesBtnsLbl:String = "";
       
       public var btnDefault:String = "";
       
@@ -45,6 +49,8 @@ package net.wg.gui.lobby.vehicleCustomization.data
       public var filterBtns:DataProvider = null;
       
       public var formsBtns:DataProvider = null;
+      
+      public var raritiesBtns:DataProvider = null;
       
       public function FiltersPopoverVO(param1:Object)
       {
@@ -82,6 +88,15 @@ package net.wg.gui.lobby.vehicleCustomization.data
             }
             return false;
          }
+         if(param1 == RARITIES_BTNS)
+         {
+            this.raritiesBtns = new DataProvider();
+            for each(_loc3_ in param2)
+            {
+               this.raritiesBtns.push(new SimpleRendererVO(_loc3_));
+            }
+            return false;
+         }
          if(param1 == ADDITIONAL_CHECKBOX_DATA)
          {
             this.additionalCheckBoxData = new CheckBoxRendererVO(param2);
@@ -106,6 +121,15 @@ package net.wg.gui.lobby.vehicleCustomization.data
             }
             this.filterBtns.cleanUp();
             this.filterBtns = null;
+         }
+         if(this.raritiesBtns != null)
+         {
+            for each(_loc1_ in this.raritiesBtns)
+            {
+               _loc1_.dispose();
+            }
+            this.raritiesBtns.cleanUp();
+            this.raritiesBtns = null;
          }
          if(this.additionalCheckBoxData)
          {

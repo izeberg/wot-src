@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J50_Type_1_Ho_Ni_II/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/japan/J50_Type_1_Ho_Ni_II/normal/lod2/Chassis</parent>
+	<extent>64</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.172005 -0.000412 -2.736967</min>
+		<max>1.172005 1.168721 2.735654</max>
+	</visibilityBox>
+</root>

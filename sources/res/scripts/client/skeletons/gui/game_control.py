@@ -2944,7 +2944,7 @@ class IComp7Controller(IGameController, ISeasonProvider):
     onQualificationStateUpdated = None
     onSeasonPointsUpdated = None
     onComp7RewardsConfigChanged = None
-    onHighestRankAchieved = None
+    onNewMaxRank = None
     onEntitlementsUpdated = None
     onEntitlementsUpdateFailed = None
     onTournamentBannerStateChanged = None

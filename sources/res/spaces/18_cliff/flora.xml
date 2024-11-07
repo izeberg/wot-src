@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<speedgrass>
-		<sizeLimit>
-			0.00
-			<!--BW_String-->
-		</sizeLimit>
 		<slopeMin>
 			0.00
 			<!--BW_String-->
@@ -13,6 +9,10 @@
 			30.00
 			<!--BW_String-->
 		</slopeMax>
+		<sizeLimit>
+			0.00
+			<!--BW_String-->
+		</sizeLimit>
 		<oscillationFreqMin>
 			1.0
 			<!--BW_String-->
@@ -21,27 +21,26 @@
 			6.0
 			<!--BW_String-->
 		</oscillationFreqMax>
+		<fadeFloraHeight>true</fadeFloraHeight>
 		<population>
 			<name>Outland_trees</name>
-			<tileType>maps/landscape/00_All_Outland_Tiles/PBS_Grass_55_macro_AM.dds</tileType>
 			<slopeMin>
-				0.005
+				0.00
 				<!--BW_String-->
 			</slopeMin>
 			<slopeMax>
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.00
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_All_Outland_Tiles/PBS_Grass_55_macro_AM.dds</tileType>
 			<grassType>
 				<name>bb_tree_broadleaves_claster_a</name>
-				<scaleFromMap>
-					-1.0 1.0 1.0
-					<!--BW_String-->
-				</scaleFromMap>
 				<tintWeight>
 					0.69 0.22
 					<!--BW_String-->
@@ -58,40 +57,35 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>3</sniperModeBhvr>
+				<scaleFromMap>
+					4294967295 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.00
 					<!--BW_String-->
 				</sizeLimit>
-				<sniperModeBhvr>3</sniperModeBhvr>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>bb_tree_broadleaves_claster_a_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Outland/bb_tree_broadleaves/bb_tree_broadleaves_claster_a_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
-					<density>
-						0.0020
-						<!--BW_String-->
-					</density>
 					<densityMin>
 						0.0020
 						<!--BW_String-->
 					</densityMin>
+					<density>
+						0.0020
+						<!--BW_String-->
+					</density>
 					<scale>
 						0.70
 						<!--BW_String-->
@@ -108,11 +102,12 @@
 						3200.00
 						<!--BW_String-->
 					</range>
-					<alignToSurface>false</alignToSurface>
-					<scaleFromMap>
-						-1.0 1.0 1.0
+					<startat>
+						0.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</startat>
+					<seed>0</seed>
+					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.69 0.22
 						<!--BW_String-->
@@ -121,15 +116,19 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>0</seed>
+					<scaleFromMap>
+						4294967295 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
 				<name>bb_tree_broadleaves</name>
-				<scaleFromMap>
-					-1.0 1.0 1.0
-					<!--BW_String-->
-				</scaleFromMap>
 				<tintWeight>
 					0.69 0.22
 					<!--BW_String-->
@@ -146,40 +145,35 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>3</sniperModeBhvr>
+				<scaleFromMap>
+					4294967295 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.00
 					<!--BW_String-->
 				</sizeLimit>
-				<sniperModeBhvr>3</sniperModeBhvr>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>bb_tree_broadleaves_bush</name>
 					<comment>comment</comment>
 					<model>vegetation/Outland/bb_tree_broadleaves/bb_tree_broadleaves_bush.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
-					<density>
-						0.0010
-						<!--BW_String-->
-					</density>
 					<densityMin>
 						0.0010
 						<!--BW_String-->
 					</densityMin>
+					<density>
+						0.0010
+						<!--BW_String-->
+					</density>
 					<scale>
 						2.00
 						<!--BW_String-->
@@ -196,11 +190,12 @@
 						3200.00
 						<!--BW_String-->
 					</range>
-					<alignToSurface>false</alignToSurface>
-					<scaleFromMap>
-						-1.0 1.0 1.0
+					<startat>
+						0.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</startat>
+					<seed>1</seed>
+					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.69 0.22
 						<!--BW_String-->
@@ -209,13 +204,20 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>1</seed>
+					<scaleFromMap>
+						4294967295 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>bb_tree_19_monastery_Cypress</name>
-			<tileType>maps/landscape/00_All_Outland_Tiles/PBS_Grass04_macro_AM.dds</tileType>
 			<slopeMin>
 				0.00
 				<!--BW_String-->
@@ -224,16 +226,15 @@
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.00
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_All_Outland_Tiles/PBS_Grass04_macro_AM.dds</tileType>
 			<grassType>
 				<name>bb_tree_19_monastery</name>
-				<scaleFromMap>
-					-1.0 1.0 1.0
-					<!--BW_String-->
-				</scaleFromMap>
 				<tintWeight>
 					0.69 0.22
 					<!--BW_String-->
@@ -250,40 +251,35 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>3</sniperModeBhvr>
+				<scaleFromMap>
+					4294967295 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.00
 					<!--BW_String-->
 				</sizeLimit>
-				<sniperModeBhvr>3</sniperModeBhvr>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>bb_tree_19_monastery_Cypress</name>
 					<comment>comment</comment>
 					<model>vegetation/Outland/bb_tree_19_monastery/bb_tree_19_monastery_Cypress.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
-					<density>
-						0.01
-						<!--BW_String-->
-					</density>
 					<densityMin>
-						0.003
+						0.0030
 						<!--BW_String-->
 					</densityMin>
+					<density>
+						0.0100
+						<!--BW_String-->
+					</density>
 					<scale>
 						0.75
 						<!--BW_String-->
@@ -300,11 +296,12 @@
 						5000.00
 						<!--BW_String-->
 					</range>
-					<alignToSurface>false</alignToSurface>
-					<scaleFromMap>
-						-1.0 1.0 1.0
+					<startat>
+						0.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</startat>
+					<seed>2</seed>
+					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.69 0.22
 						<!--BW_String-->
@@ -313,18 +310,20 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>2</seed>
+					<scaleFromMap>
+						4294967295 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Fill_Grass_A</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Forest_Ground_Dry_AM.dds</tileType>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
-			<sizeLimit>
-				0.30
-				<!--BW_String-->
-			</sizeLimit>
 			<slopeMin>
 				0.00
 				<!--BW_String-->
@@ -333,6 +332,14 @@
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
+			<sizeLimit>
+				0.30
+				<!--BW_String-->
+			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Forest_Ground_Dry_AM.dds</tileType>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<grassType>
 				<name>Grass_Green_tall</name>
 				<tintWeight>
@@ -351,38 +358,33 @@
 					20.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					0.30
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					3 1.80 1.80
 					<!--BW_String-->
 				</scaleFromMap>
-				<sniperModeBhvr>2</sniperModeBhvr>
+				<sizeLimit>
+					0.30
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Grass_Green_tall_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Green_tall/Grass_Green_tall_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.30
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.30
+						0.3000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -401,6 +403,11 @@
 						20.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>3</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.50 0.50
@@ -410,24 +417,41 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>3</seed>
 					<scaleFromMap>
 						3 1.80 1.80
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.30
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Grass_Green_tall_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Green_tall/Grass_Green_tall_lod1.srt</model>
-					<fadein>
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
+					<density>
+						0.300
+						<!--BW_String-->
+					</density>
+					<scale>
+						0.70
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.20
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
 						10.00
 						<!--BW_String-->
-					</fadein>
+					</fadeout>
 					<range>
 						10.00
 						<!--BW_String-->
@@ -436,21 +460,41 @@
 						20.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
+					<seed>3</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						0.50 0.50
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
+					</tintWeight>
+					<waving>
+						1.00 2.00 2.00 1.00
 						<!--BW_String-->
-					</slopeMax>
+					</waving>
+					<fadein>
+						10.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						3 1.80 1.80
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.60
 						<!--BW_String-->
 					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>Grass_Green_tall_lod2</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/Grass_Green_tall/Grass_Green_tall_lod2.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.30
+						0.300
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -462,36 +506,9 @@
 						<!--BW_String-->
 					</scaleDeviation>
 					<fadeout>
-						10.00
+						15.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<tintWeight>
-						0.50 0.50
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						1.00 2.00 2.00 1.00
-						<!--BW_String-->
-					</waving>
-					<seed>3</seed>
-					<scaleFromMap>
-						3 1.80 1.80
-						<!--BW_String-->
-					</scaleFromMap>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-				<layer>
-					<name>Grass_Green_tall_lod2</name>
-					<comment>comment</comment>
-					<model>vegetation/Grass/Grass_Green_tall/Grass_Green_tall_lod2.srt</model>
-					<fadein>
-						5.00
-						<!--BW_String-->
-					</fadein>
 					<range>
 						25.00
 						<!--BW_String-->
@@ -500,21 +517,41 @@
 						30.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
+					<seed>3</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						0.50 0.50
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
+					</tintWeight>
+					<waving>
+						1.00 2.00 2.00 1.00
 						<!--BW_String-->
-					</slopeMax>
+					</waving>
+					<fadein>
+						5.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						3 1.80 1.80
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.90
 						<!--BW_String-->
 					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>Grass_Green_tall_lod3</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/Grass_Green_tall/Grass_Green_tall_lod3.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.30
+						0.300
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -526,36 +563,9 @@
 						<!--BW_String-->
 					</scaleDeviation>
 					<fadeout>
-						15.00
+						30.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<tintWeight>
-						0.50 0.50
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						1.00 2.00 2.00 1.00
-						<!--BW_String-->
-					</waving>
-					<seed>3</seed>
-					<scaleFromMap>
-						3 1.80 1.80
-						<!--BW_String-->
-					</scaleFromMap>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-				<layer>
-					<name>Grass_Green_tall_lod3</name>
-					<comment>comment</comment>
-					<model>vegetation/Grass/Grass_Green_tall/Grass_Green_tall_lod3.srt</model>
-					<fadein>
-						15.00
-						<!--BW_String-->
-					</fadein>
 					<range>
 						60.00
 						<!--BW_String-->
@@ -564,32 +574,8 @@
 						57.00
 						<!--BW_String-->
 					</startat>
-					<sizeLimit>
-						0.90
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.30
-						<!--BW_String-->
-					</density>
-					<scale>
-						0.70
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.20
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						30.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>3</seed>
 					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						3 1.80 1.80
-						<!--BW_String-->
-					</scaleFromMap>
 					<tintWeight>
 						0.50 0.50
 						<!--BW_String-->
@@ -598,19 +584,19 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>3</seed>
-					<slopeMin>
-						0.00
+					<fadein>
+						15.00
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						20.00
+					</fadein>
+					<scaleFromMap>
+						3 1.80 1.80
 						<!--BW_String-->
-					</slopeMax>
-					<densityMin>
-						0.0000
+					</scaleFromMap>
+					<sizeLimit>
+						0.90
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -631,38 +617,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					0.50
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					3 1.00 1.00
 					<!--BW_String-->
 				</scaleFromMap>
+				<sizeLimit>
+					0.50
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Cypress_regular_grass_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/Cypress_regular/Cypress_regular_grass_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.50
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>true</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.01
+						0.0100
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -681,6 +662,11 @@
 						20.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>4</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.00 0.00
@@ -690,24 +676,41 @@
 						0.30 0.45 2.20 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>4</seed>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.50
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Cypress_regular_grass_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/Cypress_regular/Cypress_regular_grass_lod1.srt</model>
-					<fadein>
-						0.00
+					<castShadow>true</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						0.010
+						<!--BW_String-->
+					</density>
+					<scale>
+						2.10
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						1.00
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						10.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						30.00
 						<!--BW_String-->
@@ -716,35 +719,7 @@
 						20.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.50
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>true</castShadow>
-					<density>
-						0.01
-						<!--BW_String-->
-					</density>
-					<scale>
-						2.10
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						1.05
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						10.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>4</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.00 0.00
@@ -754,24 +729,45 @@
 						0.30 0.45 2.20 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>4</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.50
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Cypress_regular_grass_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/Cypress_regular/Cypress_regular_grass_lod2.srt</model>
-					<fadein>
-						0.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						0.010
+						<!--BW_String-->
+					</density>
+					<scale>
+						2.30
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						1.00
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						5.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						50.00
 						<!--BW_String-->
@@ -780,35 +776,7 @@
 						50.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.86
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.01
-						<!--BW_String-->
-					</density>
-					<scale>
-						2.30
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						1.15
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						5.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>4</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.00 0.00
@@ -818,24 +786,45 @@
 						0.30 0.45 2.20 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>4</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.86
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Cypress_regular_grass_lod3</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/Cypress_regular/Cypress_regular_grass_lod3.srt</model>
-					<fadein>
-						0.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						0.010
+						<!--BW_String-->
+					</density>
+					<scale>
+						2.50
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						1.00
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						50.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						350.00
 						<!--BW_String-->
@@ -844,35 +833,7 @@
 						100.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						1.00
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.01
-						<!--BW_String-->
-					</density>
-					<scale>
-						2.50
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						1.25
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						50.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>4</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.00 0.00
@@ -882,15 +843,19 @@
 						0.30 0.45 2.20 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>4</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						1.00
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -911,38 +876,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					0.50
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					0 1.60 1.60
 					<!--BW_String-->
 				</scaleFromMap>
-				<sniperModeBhvr>2</sniperModeBhvr>
+				<sizeLimit>
+					0.50
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>White_Yarrow_BrunchCluster_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/White_Yarrow/White_Yarrow_BrunchCluster_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.50
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.11
+						0.1100
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -961,6 +921,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>5</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						1.00 0.20
@@ -970,47 +935,27 @@
 						1.00 0.71 2.20 4.00
 						<!--BW_String-->
 					</waving>
-					<seed>5</seed>
 					<scaleFromMap>
 						0 1.60 1.60
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.50
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>White_Yarrow_BrunchCluster_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/White_Yarrow/White_Yarrow_BrunchCluster_lod1.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						30.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						10.00
-						<!--BW_String-->
-					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.50
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.11
+						0.110
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1025,6 +970,15 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						30.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						10.00
+						<!--BW_String-->
+					</startat>
+					<seed>5</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						1.00 0.20
@@ -1034,24 +988,45 @@
 						1.00 0.71 2.20 4.00
 						<!--BW_String-->
 					</waving>
-					<seed>5</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						0 1.60 1.60
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.50
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>White_Yarrow_BrunchCluster_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/White_Yarrow/White_Yarrow_BrunchCluster_lod2.srt</model>
-					<fadein>
-						5.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						0.050
+						<!--BW_String-->
+					</density>
+					<scale>
+						2.40
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						1.00
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						25.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						120.00
 						<!--BW_String-->
@@ -1060,32 +1035,8 @@
 						40.00
 						<!--BW_String-->
 					</startat>
-					<sizeLimit>
-						0.98
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.05
-						<!--BW_String-->
-					</density>
-					<scale>
-						2.40
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.80
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						25.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>5</seed>
 					<alignToSurface>false</alignToSurface>
-					<scaleFromMap>
-						0 1.60 1.60
-						<!--BW_String-->
-					</scaleFromMap>
 					<tintWeight>
 						1.00 0.20
 						<!--BW_String-->
@@ -1094,19 +1045,19 @@
 						1.00 0.71 2.20 4.00
 						<!--BW_String-->
 					</waving>
-					<seed>5</seed>
-					<slopeMin>
-						0.00
+					<fadein>
+						5.00
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
+					</fadein>
+					<scaleFromMap>
+						0 1.60 1.60
 						<!--BW_String-->
-					</slopeMax>
-					<densityMin>
-						0.0000
+					</scaleFromMap>
+					<sizeLimit>
+						0.98
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -1127,38 +1078,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					0.80
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					3 1.00 1.00
 					<!--BW_String-->
 				</scaleFromMap>
-				<sniperModeBhvr>2</sniperModeBhvr>
+				<sizeLimit>
+					0.80
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>yellow_flowers_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/yellow_flowers/yellow_flowers_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.80
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.02
+						0.0200
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1177,6 +1123,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>6</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.31 0.58
@@ -1186,24 +1137,41 @@
 						0.80 1.00 2.10 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>6</seed>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.80
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>yellow_flowers_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/yellow_flowers/yellow_flowers_lod1.srt</model>
-					<fadein>
-						0.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						0.020
+						<!--BW_String-->
+					</density>
+					<scale>
+						2.00
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.30
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						5.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						65.00
 						<!--BW_String-->
@@ -1212,35 +1180,7 @@
 						10.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.80
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.02
-						<!--BW_String-->
-					</density>
-					<scale>
-						2.00
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.30
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						5.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>6</seed>
 					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.31 0.58
@@ -1250,47 +1190,31 @@
 						0.80 1.00 2.10 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>6</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.80
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>yellow_flowers_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/yellow_flowers/yellow_flowers_lod2.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						50.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						75.00
-						<!--BW_String-->
-					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.80
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.01
+						0.010
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1305,11 +1229,16 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>false</alignToSurface>
-					<scaleFromMap>
-						3 1.00 1.00
+					<range>
+						50.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</range>
+					<startat>
+						75.00
+						<!--BW_String-->
+					</startat>
+					<seed>6</seed>
+					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.31 0.58
 						<!--BW_String-->
@@ -1318,35 +1247,31 @@
 						0.80 1.00 2.10 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>6</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						0.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						3 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.80
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>yellow_flowers_lod3</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/yellow_flowers/yellow_flowers_lod3.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						100.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						125.00
-						<!--BW_String-->
-					</startat>
-					<sizeLimit>
-						1.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.01
+						0.010
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1361,11 +1286,16 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>false</alignToSurface>
-					<scaleFromMap>
-						3 1.00 1.00
+					<range>
+						100.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</range>
+					<startat>
+						125.00
+						<!--BW_String-->
+					</startat>
+					<seed>6</seed>
+					<alignToSurface>false</alignToSurface>
 					<tintWeight>
 						0.31 0.58
 						<!--BW_String-->
@@ -1374,26 +1304,24 @@
 						0.80 1.00 2.10 3.00
 						<!--BW_String-->
 					</waving>
-					<seed>6</seed>
-					<slopeMin>
+					<fadein>
 						0.00
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
+					</fadein>
+					<scaleFromMap>
+						3 1.00 1.00
 						<!--BW_String-->
-					</slopeMax>
-					<densityMin>
-						0.0000
+					</scaleFromMap>
+					<sizeLimit>
+						1.20
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Fill_Grass_Dry</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Forest_Ground_Dry_AM.dds</tileType>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<slopeMin>
 				0.00
 				<!--BW_String-->
@@ -1402,10 +1330,14 @@
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.30
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Forest_Ground_Dry_AM.dds</tileType>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<grassType>
 				<name>dryGrass_tiny</name>
 				<tintWeight>
@@ -1424,38 +1356,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					0.50
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					0 1.40 1.40
 					<!--BW_String-->
 				</scaleFromMap>
+				<sizeLimit>
+					0.50
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>dryGrass_tiny_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/dryGrass_tiny/dryGrass_tiny_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.51
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.60
+						0.6000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1474,6 +1401,11 @@
 						5.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>7</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.50 0.50
@@ -1483,24 +1415,41 @@
 						1.00 1.00 2.00 2.00
 						<!--BW_String-->
 					</waving>
-					<seed>7</seed>
 					<scaleFromMap>
 						0 1.40 1.40
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.51
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>dryGrass_tiny_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/dryGrass_tiny/dryGrass_tiny_lod1.srt</model>
-					<fadein>
-						0.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						0.600
+						<!--BW_String-->
+					</density>
+					<scale>
+						2.00
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.40
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						15.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						20.00
 						<!--BW_String-->
@@ -1509,21 +1458,41 @@
 						5.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
+					<seed>7</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						0.50 0.50
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						1.00 1.00 2.00 2.00
+						<!--BW_String-->
+					</waving>
+					<fadein>
 						0.00
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
+					</fadein>
+					<scaleFromMap>
+						0 1.40 1.40
 						<!--BW_String-->
-					</slopeMax>
+					</scaleFromMap>
 					<sizeLimit>
 						0.80
 						<!--BW_String-->
 					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>dryGrass_tiny_lod2</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/dryGrass_tiny/dryGrass_tiny_lod2.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.60
+						0.600
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1538,33 +1507,6 @@
 						15.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<tintWeight>
-						0.50 0.50
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						1.00 1.00 2.00 2.00
-						<!--BW_String-->
-					</waving>
-					<seed>7</seed>
-					<scaleFromMap>
-						0 1.40 1.40
-						<!--BW_String-->
-					</scaleFromMap>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-				<layer>
-					<name>dryGrass_tiny_lod2</name>
-					<comment>comment</comment>
-					<model>vegetation/Grass/dryGrass_tiny/dryGrass_tiny_lod2.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
 					<range>
 						45.00
 						<!--BW_String-->
@@ -1573,35 +1515,7 @@
 						35.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.88
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.60
-						<!--BW_String-->
-					</density>
-					<scale>
-						2.00
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.40
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						15.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>7</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.50 0.50
@@ -1611,39 +1525,31 @@
 						1.00 1.00 2.00 2.00
 						<!--BW_String-->
 					</waving>
-					<seed>7</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						0 1.40 1.40
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.88
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>dryGrass_tiny_lod3</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/dryGrass_tiny/dryGrass_tiny_lod3.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						50.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						80.00
-						<!--BW_String-->
-					</startat>
-					<sizeLimit>
-						0.88
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.18
+						0.180
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1658,6 +1564,15 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						50.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						80.00
+						<!--BW_String-->
+					</startat>
+					<seed>7</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.50 0.50
@@ -1667,21 +1582,24 @@
 						1.00 1.00 2.00 2.00
 						<!--BW_String-->
 					</waving>
-					<seed>7</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						0 1.40 1.40
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.88
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Flowers</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<slopeMin>
 				0.00
 				<!--BW_String-->
@@ -1690,10 +1608,13 @@
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.30
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<grassType>
 				<name>yellow_flowers_v2</name>
 				<tintWeight>
@@ -1712,34 +1633,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>2</sniperModeBhvr>
+				<scaleFromMap>
+					3 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.00
 					<!--BW_String-->
 				</sizeLimit>
-				<sniperModeBhvr>2</sniperModeBhvr>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>yellow_flowers_v2_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/yellow_flowers/yellow_flowers_v2_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.80
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.10
+						0.1000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1758,6 +1678,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>8</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.30
@@ -1767,20 +1692,41 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>8</seed>
-					<densityMin>
-						0.0000
+					<scaleFromMap>
+						3 1.00 1.00
 						<!--BW_String-->
-					</densityMin>
+					</scaleFromMap>
+					<sizeLimit>
+						0.80
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>yellow_flowers_v2_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/yellow_flowers/yellow_flowers_v2_lod1.srt</model>
-					<fadein>
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
+					<density>
+						0.100
+						<!--BW_String-->
+					</density>
+					<scale>
+						1.50
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.50
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
 						5.00
 						<!--BW_String-->
-					</fadein>
+					</fadeout>
 					<range>
 						30.00
 						<!--BW_String-->
@@ -1789,21 +1735,41 @@
 						10.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
+					<seed>8</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						1.00 0.30
 						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
+					</tintWeight>
+					<waving>
+						1.00 1.00 2.00 1.00
 						<!--BW_String-->
-					</slopeMax>
+					</waving>
+					<fadein>
+						5.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						3 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
 					<sizeLimit>
 						0.80
 						<!--BW_String-->
 					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>yellow_flowers_v2_lod2</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/yellow_flowers/yellow_flowers_v2_lod2.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.10
+						0.040
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1815,32 +1781,9 @@
 						<!--BW_String-->
 					</scaleDeviation>
 					<fadeout>
-						5.00
+						10.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<tintWeight>
-						1.00 0.30
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						1.00 1.00 2.00 1.00
-						<!--BW_String-->
-					</waving>
-					<seed>8</seed>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-				<layer>
-					<name>yellow_flowers_v2_lod2</name>
-					<comment>comment</comment>
-					<model>vegetation/Grass/yellow_flowers/yellow_flowers_v2_lod2.srt</model>
-					<fadein>
-						5.00
-						<!--BW_String-->
-					</fadein>
 					<range>
 						140.00
 						<!--BW_String-->
@@ -1849,35 +1792,7 @@
 						40.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.80
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						0.04
-						<!--BW_String-->
-					</density>
-					<scale>
-						1.50
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.50
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						10.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>8</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.30
@@ -1887,17 +1802,24 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>8</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						5.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						3 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.80
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Rye</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_01_2_AM.dds</tileType>
 			<slopeMin>
 				0.00
 				<!--BW_String-->
@@ -1906,10 +1828,13 @@
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.00
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_01_2_AM.dds</tileType>
 			<grassType>
 				<name>Rye</name>
 				<tintWeight>
@@ -1928,38 +1853,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					1.00
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					2 1.00 1.00
 					<!--BW_String-->
 				</scaleFromMap>
+				<sizeLimit>
+					1.00
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Rye_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Rye/Rye_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						1.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.80
+						0.8000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -1978,6 +1898,11 @@
 						20.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>9</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -1987,47 +1912,27 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>9</seed>
 					<scaleFromMap>
 						2 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						1.00
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Rye_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Rye/Rye_lod1.srt</model>
-					<fadein>
-						5.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						30.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						20.00
-						<!--BW_String-->
-					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						1.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.80
+						0.800
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2042,6 +1947,15 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						30.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						20.00
+						<!--BW_String-->
+					</startat>
+					<seed>9</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2051,39 +1965,31 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>9</seed>
+					<fadein>
+						5.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						2 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						1.00
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Rye_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Rye/Rye_lod2.srt</model>
-					<fadein>
-						5.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						50.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						50.00
-						<!--BW_String-->
-					</startat>
-					<sizeLimit>
-						1.10
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.80
+						0.800
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2098,6 +2004,15 @@
 						25.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						50.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						50.00
+						<!--BW_String-->
+					</startat>
+					<seed>9</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2107,15 +2022,19 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>9</seed>
+					<fadein>
+						5.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						2 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						1.10
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -2136,38 +2055,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					1.00
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					2 1.00 1.00
 					<!--BW_String-->
 				</scaleFromMap>
+				<sizeLimit>
+					1.00
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Rye_2_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Rye/Rye_2_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						1.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						3.00
+						3.0000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2186,6 +2100,11 @@
 						15.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>10</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2195,15 +2114,15 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>10</seed>
 					<scaleFromMap>
 						2 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						1.00
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -2224,38 +2143,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					1.00
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					2 1.00 1.00
 					<!--BW_String-->
 				</scaleFromMap>
+				<sizeLimit>
+					1.00
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Rye_3_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Rye/Rye_3_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						1.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						3.00
+						3.0000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2274,6 +2188,11 @@
 						5.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>11</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2283,15 +2202,15 @@
 						1.00 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>11</seed>
 					<scaleFromMap>
 						2 1.00 1.00
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						1.00
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -2304,24 +2223,39 @@
 					1.00 1.00 2.00 1.00
 					<!--BW_String-->
 				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>1</sniperModeBhvr>
+				<sizeLimit>
+					0.00
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Dead_Grass_low_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Dead_Grass/Dead_Grass_low_lod0.srt</model>
 					<castShadow>false</castShadow>
-					<density>
-						1.0000
-						<!--BW_String-->
-					</density>
 					<densityMin>
 						0.0000
 						<!--BW_String-->
 					</densityMin>
+					<density>
+						1.0000
+						<!--BW_String-->
+					</density>
 					<scale>
 						1.00
 						<!--BW_String-->
@@ -2338,8 +2272,12 @@
 						10.00
 						<!--BW_String-->
 					</range>
-					<alignToSurface>true</alignToSurface>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
 					<seed>12</seed>
+					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.20 1.00
 						<!--BW_String-->
@@ -2352,15 +2290,33 @@
 						0.20
 						<!--BW_String-->
 					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Dead_Grass_low_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Dead_Grass/Dead_Grass_low_lod1.srt</model>
-					<fadein>
-						5.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						1.000
+						<!--BW_String-->
+					</density>
+					<scale>
+						1.00
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.50
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						10.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						10.00
 						<!--BW_String-->
@@ -2369,29 +2325,8 @@
 						10.00
 						<!--BW_String-->
 					</startat>
-					<castShadow>false</castShadow>
-					<density>
-						1.0000
-						<!--BW_String-->
-					</density>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-					<scale>
-						1.00
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.50
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						10.00
-						<!--BW_String-->
-					</fadeout>
-					<alignToSurface>true</alignToSurface>
 					<seed>12</seed>
+					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.20 1.00
 						<!--BW_String-->
@@ -2400,17 +2335,20 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
+					<fadein>
+						5.00
+						<!--BW_String-->
+					</fadein>
 					<sizeLimit>
 						0.20
 						<!--BW_String-->
 					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Fill_Grass_B</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Tussock_09_AM.dds</tileType>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<slopeMin>
 				0.00
 				<!--BW_String-->
@@ -2419,10 +2357,14 @@
 				30.00
 				<!--BW_String-->
 			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.10
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Tussock_09_AM.dds</tileType>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Dry_22_AM.dds</tileType>
 			<grassType>
 				<name>Grass_Short_Autumn</name>
 				<tintWeight>
@@ -2441,38 +2383,33 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
-				<sizeLimit>
-					0.20
-					<!--BW_String-->
-				</sizeLimit>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>2</sniperModeBhvr>
 				<scaleFromMap>
 					0 1.30 1.30
 					<!--BW_String-->
 				</scaleFromMap>
+				<sizeLimit>
+					0.20
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Grass_Short_Autumn_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Short_Autumn/Grass_Short_Autumn_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						1.00
+						1.0000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2491,6 +2428,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>13</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2500,47 +2442,27 @@
 						0.60 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>13</seed>
 					<scaleFromMap>
 						0 1.30 1.30
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.20
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Grass_Short_Autumn_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Short_Autumn/Grass_Short_Autumn_lod1.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						10.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						10.00
-						<!--BW_String-->
-					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						1.00
+						1.000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2555,6 +2477,15 @@
 						0.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						10.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						10.00
+						<!--BW_String-->
+					</startat>
+					<seed>13</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2564,47 +2495,31 @@
 						0.60 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>13</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						0 1.30 1.30
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.20
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Grass_Short_Autumn_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Short_Autumn/Grass_Short_Autumn_lod2.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						20.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						20.00
-						<!--BW_String-->
-					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.40
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						1.00
+						1.000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2619,6 +2534,15 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						20.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						20.00
+						<!--BW_String-->
+					</startat>
+					<seed>13</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2628,15 +2552,19 @@
 						0.60 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>13</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						0 1.30 1.30
 						<!--BW_String-->
 					</scaleFromMap>
-					<densityMin>
-						0.0000
+					<sizeLimit>
+						0.40
 						<!--BW_String-->
-					</densityMin>
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -2657,34 +2585,33 @@
 					90.00
 					<!--BW_String-->
 				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>2</sniperModeBhvr>
+				<scaleFromMap>
+					0 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.40
 					<!--BW_String-->
 				</sizeLimit>
-				<sniperModeBhvr>2</sniperModeBhvr>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Grass_Short_Summer_fill_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Short_Autumn/Grass_Short_Autumn_fill_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						90.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						2.00
+						2.0000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2703,6 +2630,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>14</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2712,20 +2644,41 @@
 						0.60 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>14</seed>
-					<densityMin>
-						0.0000
+					<scaleFromMap>
+						0 1.00 1.00
 						<!--BW_String-->
-					</densityMin>
+					</scaleFromMap>
+					<sizeLimit>
+						0.20
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Grass_Short_Summer_fill_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Grass_Short_Autumn/Grass_Short_Autumn_fill_lod1.srt</model>
-					<fadein>
-						0.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						2.000
+						<!--BW_String-->
+					</density>
+					<scale>
+						0.70
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.20
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						10.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						10.00
 						<!--BW_String-->
@@ -2734,35 +2687,7 @@
 						10.00
 						<!--BW_String-->
 					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						90.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.63
-						<!--BW_String-->
-					</sizeLimit>
-					<castShadow>false</castShadow>
-					<density>
-						2.00
-						<!--BW_String-->
-					</density>
-					<scale>
-						0.70
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.20
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						10.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>14</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2772,11 +2697,19 @@
 						0.60 2.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>14</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						0.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.63
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -2797,32 +2730,31 @@
 					30.00
 					<!--BW_String-->
 				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>2</sniperModeBhvr>
+				<scaleFromMap>
+					0 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
 				<sizeLimit>
 					0.20
 					<!--BW_String-->
 				</sizeLimit>
-				<sniperModeBhvr>2</sniperModeBhvr>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.2
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Simple_Plant_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Simple_Plant/Simple_Plant_lod0.srt</model>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
 						0.4000
 						<!--BW_String-->
@@ -2843,6 +2775,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>15</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 1.00
@@ -2852,43 +2789,27 @@
 						0.20 0.10 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>15</seed>
-					<densityMin>
-						0.0000
+					<scaleFromMap>
+						0 1.00 1.00
 						<!--BW_String-->
-					</densityMin>
+					</scaleFromMap>
+					<sizeLimit>
+						0.20
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Simple_Plant_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Grass/Simple_Plant/Simple_Plant_lod1.srt</model>
-					<fadein>
-						5.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						10.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						10.00
-						<!--BW_String-->
-					</startat>
-					<slopeMin>
-						0.00
-						<!--BW_String-->
-					</slopeMin>
-					<slopeMax>
-						30.00
-						<!--BW_String-->
-					</slopeMax>
-					<sizeLimit>
-						0.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.2000
+						0.200
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2903,6 +2824,15 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						10.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						10.00
+						<!--BW_String-->
+					</startat>
+					<seed>15</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 1.00
@@ -2912,16 +2842,38 @@
 						0.20 0.10 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>15</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						5.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						0 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.20
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>CedarElfin</name>
+			<slopeMin>
+				0.00
+				<!--BW_String-->
+			</slopeMin>
+			<slopeMax>
+				30.00
+				<!--BW_String-->
+			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
+			<sizeLimit>
+				0.00
+				<!--BW_String-->
+			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
 			<tileType>maps/landscape/00_AllTerrain3_tiles/Grass_Tussock_09_AM.dds</tileType>
 			<grassType>
 				<name>CedarElfin_grass</name>
@@ -2933,6 +2885,15 @@
 					1.00 1.00 2.00 1.00
 					<!--BW_String-->
 				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>0</sniperModeBhvr>
 				<scaleFromMap>
 					3 1.00 1.00
@@ -2942,17 +2903,23 @@
 					0.20
 					<!--BW_String-->
 				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>CedarElfin_grass_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/CedarElfin/CedarElfin_grass_lod0.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.25
+						0.2500
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -2971,6 +2938,11 @@
 						5.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>16</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -2980,7 +2952,6 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>16</seed>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
@@ -2989,30 +2960,19 @@
 						0.20
 						<!--BW_String-->
 					</sizeLimit>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>CedarElfin_grass_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/CedarElfin/CedarElfin_grass_lod1.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						15.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						5.00
-						<!--BW_String-->
-					</startat>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.25
+						0.250
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3027,6 +2987,15 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						15.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						5.00
+						<!--BW_String-->
+					</startat>
+					<seed>16</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -3036,7 +3005,10 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>16</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
@@ -3045,34 +3017,19 @@
 						0.20
 						<!--BW_String-->
 					</sizeLimit>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>CedarElfin_grass_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/CedarElfin/CedarElfin_grass_lod2.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						80.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						20.00
-						<!--BW_String-->
-					</startat>
-					<sizeLimit>
-						1.00
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						1.00
+						1.000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3087,11 +3044,16 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						3 1.00 1.00
+					<range>
+						80.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</range>
+					<startat>
+						20.00
+						<!--BW_String-->
+					</startat>
+					<seed>16</seed>
+					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
 						<!--BW_String-->
@@ -3100,11 +3062,19 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>16</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						0.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						3 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						1.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 			<grassType>
@@ -3117,6 +3087,15 @@
 					1.00 1.00 2.00 1.00
 					<!--BW_String-->
 				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>0</sniperModeBhvr>
 				<scaleFromMap>
 					3 1.00 1.00
@@ -3126,17 +3105,23 @@
 					0.20
 					<!--BW_String-->
 				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>CedarElfin_grass_b_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/CedarElfin/CedarElfin_grass_b_lod0.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.50
+						0.5000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3155,6 +3140,11 @@
 						5.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>17</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -3164,7 +3154,6 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>17</seed>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
@@ -3173,30 +3162,19 @@
 						0.20
 						<!--BW_String-->
 					</sizeLimit>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>CedarElfin_grass_b_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/CedarElfin/CedarElfin_grass_b_lod1.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						15.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						5.00
-						<!--BW_String-->
-					</startat>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.50
+						0.500
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3211,6 +3189,15 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						15.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						5.00
+						<!--BW_String-->
+					</startat>
+					<seed>17</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
@@ -3220,7 +3207,10 @@
 						1.00 1.00 2.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>17</seed>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
 					<scaleFromMap>
 						3 1.00 1.00
 						<!--BW_String-->
@@ -3229,34 +3219,19 @@
 						0.20
 						<!--BW_String-->
 					</sizeLimit>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>CedarElfin_grass_b_lod2</name>
 					<comment>comment</comment>
 					<model>vegetation/Conifers/CedarElfin/CedarElfin_grass_b_lod2.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						30.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						20.00
-						<!--BW_String-->
-					</startat>
-					<sizeLimit>
-						0.20
-						<!--BW_String-->
-					</sizeLimit>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.50
+						0.500
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3271,102 +3246,6 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						3 1.00 1.00
-						<!--BW_String-->
-					</scaleFromMap>
-					<tintWeight>
-						1.00 0.50
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						1.00 1.00 2.00 1.00
-						<!--BW_String-->
-					</waving>
-					<seed>17</seed>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-			</grassType>
-		</population>
-		<population>
-			<name>pine cone</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_37_AM.dds</tileType>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/Paving_Mid_01_AM.dds</tileType>
-			<grassType>
-				<name>Pinecone_2</name>
-				<scaleFromMap>
-					1 1.00 1.00
-					<!--BW_String-->
-				</scaleFromMap>
-				<tintWeight>
-					0.00 0.00
-					<!--BW_String-->
-				</tintWeight>
-				<waving>
-					0.00 0.00 0.00 1.00
-					<!--BW_String-->
-				</waving>
-				<sniperModeBhvr>0</sniperModeBhvr>
-				<oscillation>
-					0.5 0.5
-					<!--BW_String-->
-				</oscillation>
-				<layer>
-					<name>Pinecone_2_lod0</name>
-					<comment>comment</comment>
-					<model>vegetation/Grass/Pinecone_2/Pinecone_2_lod0.srt</model>
-					<castShadow>false</castShadow>
-					<density>
-						1.00
-						<!--BW_String-->
-					</density>
-					<scale>
-						0.15
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.00
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						5.00
-						<!--BW_String-->
-					</fadeout>
-					<range>
-						20.00
-						<!--BW_String-->
-					</range>
-					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						1 1.00 1.00
-						<!--BW_String-->
-					</scaleFromMap>
-					<tintWeight>
-						0.00 0.00
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						0.00 0.00 0.00 1.00
-						<!--BW_String-->
-					</waving>
-					<seed>18</seed>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-				<layer>
-					<name>Pinecone_2_lod1</name>
-					<comment>comment</comment>
-					<model>vegetation/Grass/Pinecone_2/Pinecone_2_lod1.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
 					<range>
 						30.00
 						<!--BW_String-->
@@ -3375,9 +3254,95 @@
 						20.00
 						<!--BW_String-->
 					</startat>
+					<seed>17</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						1.00 0.50
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						1.00 1.00 2.00 1.00
+						<!--BW_String-->
+					</waving>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						3 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.20
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+			</grassType>
+		</population>
+		<population>
+			<name>pine cone</name>
+			<slopeMin>
+				0.00
+				<!--BW_String-->
+			</slopeMin>
+			<slopeMax>
+				30.00
+				<!--BW_String-->
+			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
+			<sizeLimit>
+				0.00
+				<!--BW_String-->
+			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_37_AM.dds</tileType>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/Paving_Mid_01_AM.dds</tileType>
+			<grassType>
+				<name>Pinecone_2</name>
+				<tintWeight>
+					0.00 0.00
+					<!--BW_String-->
+				</tintWeight>
+				<waving>
+					0.00 0.00 0.00 1.00
+					<!--BW_String-->
+				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
+				<sniperModeBhvr>0</sniperModeBhvr>
+				<scaleFromMap>
+					1 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
+				<sizeLimit>
+					0.00
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
+				<oscillation>
+					0.5 0.5
+					<!--BW_String-->
+				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
+				<layer>
+					<name>Pinecone_2_lod0</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/Pinecone_2/Pinecone_2_lod0.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.75
+						1.0000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3392,11 +3357,16 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						1 1.00 1.00
+					<range>
+						20.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>18</seed>
+					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.00 0.00
 						<!--BW_String-->
@@ -3405,16 +3375,91 @@
 						0.00 0.00 0.00 1.00
 						<!--BW_String-->
 					</waving>
-					<seed>18</seed>
+					<scaleFromMap>
+						1 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>Pinecone_2_lod1</name>
+					<comment>comment</comment>
+					<model>vegetation/Grass/Pinecone_2/Pinecone_2_lod1.srt</model>
+					<castShadow>false</castShadow>
 					<densityMin>
 						0.0000
 						<!--BW_String-->
 					</densityMin>
+					<density>
+						0.750
+						<!--BW_String-->
+					</density>
+					<scale>
+						0.15
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.00
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						5.00
+						<!--BW_String-->
+					</fadeout>
+					<range>
+						30.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						20.00
+						<!--BW_String-->
+					</startat>
+					<seed>18</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						0.00 0.00
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						0.00 0.00 0.00 1.00
+						<!--BW_String-->
+					</waving>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						1 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Branches</name>
+			<slopeMin>
+				0.00
+				<!--BW_String-->
+			</slopeMin>
+			<slopeMax>
+				30.00
+				<!--BW_String-->
+			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
+			<sizeLimit>
+				0.00
+				<!--BW_String-->
+			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
 			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_37_AM.dds</tileType>
 			<grassType>
 				<name>Debris_Branches_Small_Bright</name>
@@ -3426,18 +3471,41 @@
 					0.00 0.00 0.00 0.00
 					<!--BW_String-->
 				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>0</sniperModeBhvr>
+				<scaleFromMap>
+					2 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
+				<sizeLimit>
+					0.00
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Debris_Branches_Small_Bright_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Debris/Debris_Branches_Small_Bright/Debris_Branches_Small_Bright_lod0.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.13
+						0.1300
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3456,6 +3524,11 @@
 						10.00
 						<!--BW_String-->
 					</range>
+					<startat>
+						0.00
+						<!--BW_String-->
+					</startat>
+					<seed>19</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.25 2.00
@@ -3465,31 +3538,27 @@
 						0.00 0.00 0.00 0.00
 						<!--BW_String-->
 					</waving>
-					<seed>19</seed>
-					<densityMin>
-						0.0000
+					<scaleFromMap>
+						2 1.00 1.00
 						<!--BW_String-->
-					</densityMin>
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Debris_Branches_Small_Bright_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Debris/Debris_Branches_Small_Bright/Debris_Branches_Small_Bright_lod1.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
-					<range>
-						30.00
-						<!--BW_String-->
-					</range>
-					<startat>
-						10.00
-						<!--BW_String-->
-					</startat>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						0.10
+						0.100
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3504,6 +3573,15 @@
 						10.00
 						<!--BW_String-->
 					</fadeout>
+					<range>
+						30.00
+						<!--BW_String-->
+					</range>
+					<startat>
+						10.00
+						<!--BW_String-->
+					</startat>
+					<seed>19</seed>
 					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						0.25 2.00
@@ -3513,28 +3591,42 @@
 						0.00 0.00 0.00 0.00
 						<!--BW_String-->
 					</waving>
-					<seed>19</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						0.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						2 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.00
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 		<population>
 			<name>Stones</name>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_37_AM.dds</tileType>
-			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_rock13_debris_AM.dds</tileType>
+			<slopeMin>
+				0.00
+				<!--BW_String-->
+			</slopeMin>
+			<slopeMax>
+				30.00
+				<!--BW_String-->
+			</slopeMax>
+			<enableSlopeMin>true</enableSlopeMin>
 			<sizeLimit>
 				0.08
 				<!--BW_String-->
 			</sizeLimit>
+			<enableSizeLimit>true</enableSizeLimit>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_37_AM.dds</tileType>
+			<tileType>maps/landscape/00_AllTerrain3_tiles/PBS_rock13_debris_AM.dds</tileType>
 			<grassType>
 				<name>Debris_Stone_Medium</name>
-				<scaleFromMap>
-					2 1.00 1.00
-					<!--BW_String-->
-				</scaleFromMap>
 				<tintWeight>
 					1.00 0.50
 					<!--BW_String-->
@@ -3543,18 +3635,41 @@
 					0.00 0.00 0.00 0.00
 					<!--BW_String-->
 				</waving>
+				<slopeMin>
+					0.00
+					<!--BW_String-->
+				</slopeMin>
+				<slopeMax>
+					30.00
+					<!--BW_String-->
+				</slopeMax>
+				<enableSlopeMin>true</enableSlopeMin>
 				<sniperModeBhvr>0</sniperModeBhvr>
+				<scaleFromMap>
+					2 1.00 1.00
+					<!--BW_String-->
+				</scaleFromMap>
+				<sizeLimit>
+					0.08
+					<!--BW_String-->
+				</sizeLimit>
+				<enableSizeLimit>true</enableSizeLimit>
 				<oscillation>
 					0.5 0.5
 					<!--BW_String-->
 				</oscillation>
+				<unique_random_seed>true</unique_random_seed>
 				<layer>
 					<name>Debris_Stone_Medium_lod0</name>
 					<comment>comment</comment>
 					<model>vegetation/Debris/Debris_Stone_Medium/Debris_Stone_Medium_lod0.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						1.00
+						1.0000
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3573,11 +3688,12 @@
 						10.00
 						<!--BW_String-->
 					</range>
-					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						2 1.00 1.00
+					<startat>
+						0.00
 						<!--BW_String-->
-					</scaleFromMap>
+					</startat>
+					<seed>20</seed>
+					<alignToSurface>true</alignToSurface>
 					<tintWeight>
 						1.00 0.50
 						<!--BW_String-->
@@ -3586,20 +3702,41 @@
 						0.00 0.00 0.00 0.00
 						<!--BW_String-->
 					</waving>
-					<seed>20</seed>
-					<densityMin>
-						0.0000
+					<scaleFromMap>
+						2 1.00 1.00
 						<!--BW_String-->
-					</densityMin>
+					</scaleFromMap>
+					<sizeLimit>
+						0.08
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 				<layer>
 					<name>Debris_Stone_Medium_lod1</name>
 					<comment>comment</comment>
 					<model>vegetation/Debris/Debris_Stone_Medium/Debris_Stone_Medium_lod1.srt</model>
-					<fadein>
-						0.00
+					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
 						<!--BW_String-->
-					</fadein>
+					</densityMin>
+					<density>
+						1.000
+						<!--BW_String-->
+					</density>
+					<scale>
+						1.00
+						<!--BW_String-->
+					</scale>
+					<scaleDeviation>
+						0.10
+						<!--BW_String-->
+					</scaleDeviation>
+					<fadeout>
+						5.00
+						<!--BW_String-->
+					</fadeout>
 					<range>
 						20.00
 						<!--BW_String-->
@@ -3608,9 +3745,41 @@
 						10.00
 						<!--BW_String-->
 					</startat>
+					<seed>20</seed>
+					<alignToSurface>true</alignToSurface>
+					<tintWeight>
+						1.00 0.50
+						<!--BW_String-->
+					</tintWeight>
+					<waving>
+						0.00 0.00 0.00 0.00
+						<!--BW_String-->
+					</waving>
+					<fadein>
+						0.00
+						<!--BW_String-->
+					</fadein>
+					<scaleFromMap>
+						2 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.08
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
+				</layer>
+				<layer>
+					<name>Debris_Stone_Medium_lod2</name>
+					<comment>comment</comment>
+					<model>vegetation/Debris/Debris_Stone_Medium/Debris_Stone_Medium_lod2.srt</model>
 					<castShadow>false</castShadow>
+					<densityMin>
+						0.0000
+						<!--BW_String-->
+					</densityMin>
 					<density>
-						1.00
+						0.500
 						<!--BW_String-->
 					</density>
 					<scale>
@@ -3625,33 +3794,6 @@
 						5.00
 						<!--BW_String-->
 					</fadeout>
-					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						2 1.00 1.00
-						<!--BW_String-->
-					</scaleFromMap>
-					<tintWeight>
-						1.00 0.50
-						<!--BW_String-->
-					</tintWeight>
-					<waving>
-						0.00 0.00 0.00 0.00
-						<!--BW_String-->
-					</waving>
-					<seed>20</seed>
-					<densityMin>
-						0.0000
-						<!--BW_String-->
-					</densityMin>
-				</layer>
-				<layer>
-					<name>Debris_Stone_Medium_lod2</name>
-					<comment>comment</comment>
-					<model>vegetation/Debris/Debris_Stone_Medium/Debris_Stone_Medium_lod2.srt</model>
-					<fadein>
-						0.00
-						<!--BW_String-->
-					</fadein>
 					<range>
 						40.00
 						<!--BW_String-->
@@ -3660,28 +3802,8 @@
 						30.00
 						<!--BW_String-->
 					</startat>
-					<castShadow>false</castShadow>
-					<density>
-						0.50
-						<!--BW_String-->
-					</density>
-					<scale>
-						1.00
-						<!--BW_String-->
-					</scale>
-					<scaleDeviation>
-						0.10
-						<!--BW_String-->
-					</scaleDeviation>
-					<fadeout>
-						5.00
-						<!--BW_String-->
-					</fadeout>
+					<seed>20</seed>
 					<alignToSurface>true</alignToSurface>
-					<scaleFromMap>
-						2 1.00 1.00
-						<!--BW_String-->
-					</scaleFromMap>
 					<tintWeight>
 						1.00 0.50
 						<!--BW_String-->
@@ -3690,28 +3812,23 @@
 						0.00 0.00 0.00 0.00
 						<!--BW_String-->
 					</waving>
-					<seed>20</seed>
-					<densityMin>
-						0.0000
+					<fadein>
+						0.00
 						<!--BW_String-->
-					</densityMin>
+					</fadein>
+					<scaleFromMap>
+						2 1.00 1.00
+						<!--BW_String-->
+					</scaleFromMap>
+					<sizeLimit>
+						0.08
+						<!--BW_String-->
+					</sizeLimit>
+					<enableSizeLimit>true</enableSizeLimit>
 				</layer>
 			</grassType>
 		</population>
 	</speedgrass>
-	<sniperMode>
-		<scaleDistance>
-			300.0
-			<!--BW_String-->
-		</scaleDistance>
-		<scaleNear>
-			0.4 0.8
-			<!--BW_String-->
-		</scaleNear>
-		<scaleFar>
-			0.8 1.0
-			<!--BW_String-->
-		</scaleFar>
-	</sniperMode>
+	<tintMap>global_AM.dds</tintMap>
 	<scaleMap>flora_scale_map.dds</scaleMap>
 </root>

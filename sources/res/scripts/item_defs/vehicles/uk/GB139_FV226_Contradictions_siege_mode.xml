@@ -3,8 +3,8 @@
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
 		<commander>radioman</commander>
-		<driver/>
 		<gunner/>
+		<driver/>
 		<loader/>
 		<loader/>
 	</crew>
@@ -21,7 +21,7 @@
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.61
+			0.061
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -3578,7 +3578,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_105_mm_L7S_DB>
+				<Twin_105_mm_Gun_L7S>
 					<maxAmmo>80</maxAmmo>
 					<armor>
 						<armor_1>250</armor_1>
@@ -3628,7 +3628,7 @@
 						1.2
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>11</reloadTime>
+					<reloadTime>12</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.01
@@ -3650,7 +3650,7 @@
 					<multiGunEffects>shot_dualgun_large_mb_L shot_dualgun_large_mb_R</multiGunEffects>
 					<twinGun>
 						<afterShotDelay>1</afterShotDelay>
-						<twinGunReloadTime>22</twinGunReloadTime>
+						<twinGunReloadTime>24</twinGunReloadTime>
 						<gunMarkerOffset>
 							0.213
 							<!--BW_String-->
@@ -4423,7 +4423,7 @@
 						<density>108.368217 108.601967</density>
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
-				</_105_mm_L7S_DB>
+				</Twin_105_mm_Gun_L7S>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB139_FV226_Contradictions/normal/lod0/Turret_01.model</undamaged>

@@ -1164,29 +1164,6 @@ msgstr "Сбросить"
 msgid "dropSkill/title"
 msgstr "Подтверждение сброса"
 
-msgid "editableStyles/confirmReset/cancel"
-msgstr "Отменить"
-
-msgid "editableStyles/confirmReset/checkboxLabel"
-msgstr "Больше не спрашивать"
-
-msgid "editableStyles/confirmReset/formattedPartOfMessage"
-msgstr "будет сброшен"
-
-msgid "editableStyles/confirmReset/formattedPartOfMessageStyle"
-msgstr "стиль"
-
-msgid "editableStyles/confirmReset/message"
-msgstr ""
-"При нанесении этого элемента, {style} «{formatted_message}» {reset} до вида "
-"по умолчанию."
-
-msgid "editableStyles/confirmReset/submit"
-msgstr "Подтвердить"
-
-msgid "editableStyles/confirmReset/title"
-msgstr "Применить стиль «{}»?"
-
 msgid "elementType/chassis"
 msgstr "ходовую"
 

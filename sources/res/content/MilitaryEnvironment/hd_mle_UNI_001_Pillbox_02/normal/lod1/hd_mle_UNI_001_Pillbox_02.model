@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<visibilityBox>
+		<min>-5.259952 -2.931324 -4.192966</min>
+		<max>5.326661 3.566571 3.953637</max>
+	</visibilityBox>
+	<extent>96.000000</extent>
 	<parent>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_02/normal/lod2/hd_mle_UNI_001_Pillbox_02</parent>
-	<extent>
-		165.0
-		<!--BW_String-->
-	</extent>
 	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_02/normal/lod1/hd_mle_UNI_001_Pillbox_02</nodefullVisual>
 </root>

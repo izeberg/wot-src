@@ -29,7 +29,6 @@ _SIMPLE_VALUE_STATS = ('fortResource', 'slots', 'berths', 'freeXP', 'dossier', '
 _DICT_STATS = ('vehTypeXP', 'vehTypeLocks', 'restrictions', 'globalVehicleLocks', 'dummySessionStats',
                'maxResearchedLevelByNation', 'weeklyVehicleCrystals')
 _GROWING_SET_STATS = ('unlocks', 'eliteVehicles', 'multipliedXPVehs', 'multipliedRankedBattlesVehs')
-_SHRINKABLE_SET_STATS = ('unlocks', )
 _ACCOUNT_STATS = ('clanDBID', 'attrs', 'premiumExpiryTime', 'autoBanTime', 'globalRating')
 _CACHE_STATS = ('isFinPswdVerified', 'mayConsumeWalletResources', 'oldVehInvIDs', 'isSsrPlayEnabled',
                 'isEmergencyModeEnabled')
@@ -112,15 +111,6 @@ class Stats(object):
                     cache[stat] = statsDiff[stat_r]
                 if stat in statsDiff:
                     cache.setdefault(stat, set()).update(statsDiff[stat])
-                if stat in _SHRINKABLE_SET_STATS:
-                    statDiscardKey = (
-                     stat, '_d')
-                    if statDiscardKey in statsDiff:
-                        statDiscardVal = statsDiff[statDiscardKey]
-                        if stat == 'unlocks':
-                            statDiscardVal = statDiscardVal - cache.get(('initial',
-                                                                         'unlocks'), set())
-                        cache[stat].difference_update(statDiscardVal)
 
         accountDiff = diff.get('account', None)
         if accountDiff is not None:

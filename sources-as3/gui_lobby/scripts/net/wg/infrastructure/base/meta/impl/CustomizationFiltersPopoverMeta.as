@@ -27,6 +27,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onFormChange:Function;
       
+      public var onRarityChange:Function;
+      
       private var _filtersPopoverVO:FiltersPopoverVO;
       
       public function CustomizationFiltersPopoverMeta()
@@ -96,6 +98,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.onFormChange,"onFormChange" + Errors.CANT_NULL);
          this.onFormChange(param1,param2);
+      }
+      
+      public function onRarityChangeS(param1:int, param2:Boolean) : void
+      {
+         App.utils.asserter.assertNotNull(this.onRarityChange,"onRarityChange" + Errors.CANT_NULL);
+         this.onRarityChange(param1,param2);
       }
       
       public final function as_setData(param1:Object) : void

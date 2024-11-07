@@ -89,8 +89,8 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          super.configUI();
          this._rendererFactory[CUSTOMIZATION_ALIASES.ANCHOR_TYPE_REGION] = App.instance.utils.classFactory.getClass(Linkages.CUSTOMIZATION_END_POINT_LINKAGE);
-         this._rendererFactory[CUSTOMIZATION_ALIASES.ANCHOR_TYPE_DECAL] = App.instance.utils.classFactory.getClass(Linkages.CUSTOMIZATION_ANCHOR_RENDERER_LINKAGE);
-         this._rendererFactory[CUSTOMIZATION_ALIASES.ANCHOR_TYPE_PROJECTION_DECAL] = App.instance.utils.classFactory.getClass(Linkages.CUSTOMIZATION_DECAL_ANCHOR_RENDERER_LINKAGE);
+         this._rendererFactory[CUSTOMIZATION_ALIASES.ANCHOR_TYPE_NORMAL] = App.instance.utils.classFactory.getClass(Linkages.CUSTOMIZATION_ANCHOR_RENDERER_LINKAGE);
+         this._rendererFactory[CUSTOMIZATION_ALIASES.ANCHOR_TYPE_SPECIFIC] = App.instance.utils.classFactory.getClass(Linkages.CUSTOMIZATION_DECAL_ANCHOR_RENDERER_LINKAGE);
          addEventListener(CustomizationAnchorEvent.SELECT_ANCHOR,this.onSelectAnchorHandler);
       }
       
@@ -267,63 +267,55 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public function setInitData(param1:CustomizationAnchorInitVO) : void
       {
-         var _loc2_:Vector.<uint> = null;
-         var _loc3_:Vector.<uint> = null;
-         var _loc4_:Array = null;
-         var _loc5_:Array = null;
          var _loc6_:CustomizationEndPointIcon = null;
          var _loc7_:CustomizationSlotUpdateVO = null;
          var _loc8_:int = 0;
-         var _loc9_:Vector.<ICustomizationEndPointIcon> = null;
          this.clearPositionData();
          this.clearUpdateData();
          this._anchorItemData = param1.anchorUpdateVOs;
          this._numAnchors = Boolean(this._anchorItemData) ? int(this._anchorItemData.length) : int(0);
-         if(this._numAnchors > 0)
+         var _loc2_:Array = [];
+         var _loc3_:Vector.<uint> = new Vector.<uint>();
+         var _loc4_:Vector.<uint> = new Vector.<uint>();
+         var _loc5_:Array = [];
+         for each(_loc6_ in this._rendererData)
          {
-            _loc2_ = new Vector.<uint>();
-            _loc3_ = new Vector.<uint>();
-            _loc4_ = [];
-            _loc5_ = [];
-            for each(_loc6_ in this._rendererData)
-            {
-               _loc2_.push(_loc6_.slotData.uid);
-            }
-            for each(_loc7_ in this._anchorItemData)
-            {
-               _loc3_.push(_loc7_.uid);
-               _loc4_[_loc7_.uid] = _loc7_;
-            }
-            _loc8_ = 0;
-            while(_loc8_ < this._numAnchors)
-            {
-               if(_loc2_.indexOf(this._anchorItemData[_loc8_].uid) == -1)
-               {
-                  _loc6_ = new this._rendererFactory[param1.typeRegions]();
-                  addChild(DisplayObject(_loc6_));
-                  this._rendererData.push(_loc6_);
-                  _loc6_.setSlotData(this._anchorItemData[_loc8_]);
-               }
-               _loc8_++;
-            }
-            _loc9_ = this._rendererData.slice();
-            for each(_loc6_ in _loc9_)
-            {
-               if(_loc3_.indexOf(_loc6_.slotData.uid) == -1)
-               {
-                  this._rendererData.splice(this._rendererData.indexOf(_loc6_),1);
-                  this.clearRenderer(_loc6_);
-               }
-            }
-            for each(_loc6_ in this._rendererData)
-            {
-               _loc6_.setSlotData(_loc4_[_loc6_.slotData.uid]);
-               _loc6_.selected = false;
-               _loc5_.push(_loc6_);
-            }
-            this.setSelectedSlot(this._selectedId);
-            dispatchEvent(new CustomizationAnchorSetEvent(CustomizationAnchorSetEvent.ANCHORS_FILLED,_loc5_));
+            _loc3_.push(_loc6_.slotData.uid);
          }
+         for each(_loc7_ in this._anchorItemData)
+         {
+            _loc4_.push(_loc7_.uid);
+            _loc5_[_loc7_.uid] = _loc7_;
+         }
+         _loc8_ = 0;
+         while(_loc8_ < this._numAnchors)
+         {
+            if(_loc3_.indexOf(this._anchorItemData[_loc8_].uid) == -1)
+            {
+               _loc6_ = new this._rendererFactory[param1.typeRegions]();
+               addChild(DisplayObject(_loc6_));
+               this._rendererData.push(_loc6_);
+               _loc6_.setSlotData(this._anchorItemData[_loc8_]);
+            }
+            _loc8_++;
+         }
+         var _loc9_:Vector.<ICustomizationEndPointIcon> = this._rendererData.slice();
+         for each(_loc6_ in _loc9_)
+         {
+            if(_loc4_.indexOf(_loc6_.slotData.uid) == -1)
+            {
+               this._rendererData.splice(this._rendererData.indexOf(_loc6_),1);
+               this.clearRenderer(_loc6_);
+            }
+         }
+         for each(_loc6_ in this._rendererData)
+         {
+            _loc6_.setSlotData(_loc5_[_loc6_.slotData.uid]);
+            _loc6_.selected = false;
+            _loc2_.push(_loc6_);
+         }
+         this.setSelectedSlot(this._selectedId);
+         dispatchEvent(new CustomizationAnchorSetEvent(CustomizationAnchorSetEvent.ANCHORS_FILLED,_loc2_));
       }
       
       public function setSelectedSlot(param1:CustomizationSlotIdVO) : void

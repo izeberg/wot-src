@@ -254,8 +254,9 @@ def showMission(eventID, eventType=None):
     else:
         if isC11nQuest(eventID):
             service = dependency.instance(ICustomizationService)
+            style = service.getStyleItemByQuestID(eventID)
             from gui.customization.constants import CustomizationModes
-            service.showCustomization(modeId=CustomizationModes.STYLED)
+            service.showCustomization(modeId=CustomizationModes.STYLE_3D if style and style.is3D else CustomizationModes.STYLE_2D)
             return
         eventsCache = dependency.instance(IEventsCache)
         quests = eventsCache.getAllQuests()

@@ -5,5 +5,7 @@ package net.wg.gui.components.advanced.collapsingBar.interfaces
        
       
       function checkCollapsing() : Boolean;
+      
+      function updateBorders(param1:int, param2:int) : void;
    }
 }

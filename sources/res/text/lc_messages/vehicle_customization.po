@@ -30,6 +30,33 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/general"
+msgstr "Общие"
+
+msgid "attachment/test"
+msgstr "Объекты исследования"
+
+msgid "attachment/test/testAttachment1"
+msgstr "Объект исследования 001 — Железный конь"
+
+msgid "attachment/test/testAttachment2"
+msgstr "Объект исследования 002 — Судно бездны"
+
+msgid "attachment/test/testAttachment3"
+msgstr "Объект исследования 003 — Вечноцвет"
+
+msgid "attachment/test/testAttachment3/description"
+msgstr ""
+"Цветочный горшок с постоянно цветущим растением, первые упоминания о котором"
+" датируются XIX веком. Попытки пересадить растение вызывают иррациональный "
+"ужас, а сам объект связан с множеством без вести пропавших."
+
+msgid "attachment/test/testAttachment4"
+msgstr "Объект исследования 004 — Шепчущий жнец"
+
+msgid "attachment/test/testAttachment5"
+msgstr "Объект исследования 005 — Глаза пустоты"
+
 msgid "bonus/condition/camouflage"
 msgstr ""
 "Бонус к маскировке в зависимости от типа техники при нанесении камуфляжа на "
@@ -100,6 +127,9 @@ msgstr "Не удалось приобрести некоторые элемен
 
 msgid "buyWindow/title/activeStyle"
 msgstr "Постоянный стиль"
+
+msgid "buyWindow/title/all"
+msgstr "Все сезоны"
 
 msgid "buyWindow/title/bonus/camouflage"
 msgstr "+%(bonus)s к маскировке"
@@ -5722,6 +5752,18 @@ msgstr "?empty?"
 msgid "camouflage/touchdown_camo/label"
 msgstr "Тачдаун"
 
+msgid "camouflage/tournaments_2024_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/tournaments_2024_1/label"
+msgstr "Храброе сердце"
+
+msgid "camouflage/tournaments_2024_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/tournaments_2024_2/label"
+msgstr "Нерушимая воля"
+
 msgid "camouflage/toys_world/description"
 msgstr "?empty?"
 
@@ -6701,6 +6743,24 @@ msgstr "?empty?"
 msgid "camouflage/victory_day_2021/label"
 msgstr "Победоносная звезда"
 
+msgid "camouflage/vikings_01/description"
+msgstr "?empty?"
+
+msgid "camouflage/vikings_01/label"
+msgstr "Порождение Ёрмунганда"
+
+msgid "camouflage/vikings_02/description"
+msgstr "?empty?"
+
+msgid "camouflage/vikings_02/label"
+msgstr "Зачарованные руны"
+
+msgid "camouflage/vikings_03/description"
+msgstr "?empty?"
+
+msgid "camouflage/vikings_03/label"
+msgstr "Щит Лагерты"
+
 msgid "camouflage/waitangi_day/description"
 msgstr "?empty?"
 
@@ -7024,14 +7084,30 @@ msgstr "На технике"
 msgid "carousel/itemLabel/purchased"
 msgstr "В наличии"
 
-msgid "carousel/message/description"
+msgid "carousel/message/attachment/default/description"
+msgstr ""
+"3D-объекты — новый тип элементов внешнего вида.\n"
+"Могут быть получены в качестве награды за продвижение по прогрессии или приобретены в Магазине."
+
+msgid "carousel/message/attachment/default/header"
+msgstr "НЕТ 3D-ОБЪЕКТОВ"
+
+msgid "carousel/message/attachment/unsapport/description"
+msgstr "?empty?"
+
+msgid "carousel/message/attachment/unsapport/header"
+msgstr ""
+"%(name)s ещё не поддерживает\n"
+"3D-объекты."
+
+msgid "carousel/message/default/description"
 msgstr "Измените параметры фильтра, чтобы отобразить элементы внешнего вида."
 
-msgid "carousel/message/header"
+msgid "carousel/message/default/header"
 msgstr "Ничего не найдено"
 
 msgid "carousel/message/noProgressionDecals"
-msgstr "Применение этапных декалей станет возможным после их получения."
+msgstr "Этапные декали могут быть нанесены после получения."
 
 msgid "carousel/message/propertysheet"
 msgstr ""
@@ -7118,6 +7194,18 @@ msgstr "×2"
 
 msgid "customization/Popover/scale/small"
 msgstr "×1"
+
+msgid "customization/RarityRewardScreen/button/close"
+msgstr "Закрыть"
+
+msgid "customization/RarityRewardScreen/button/toExterior"
+msgstr "К внешнему виду"
+
+msgid "customization/RarityRewardScreen/button/toGarage"
+msgstr "В Ангар"
+
+msgid "customization/RarityRewardScreen/subtitle"
+msgstr "%(rarity)s 3D-ОБЪЕКТ"
 
 msgid "customization/UnsupportedForm"
 msgstr "Нанесение недоступно"
@@ -7260,6 +7348,15 @@ msgstr "Снять эмблему 2"
 msgid "customization/emptyPersonalNumber"
 msgstr "Цифры тактического номера не введены."
 
+msgid "customization/emptyState/attachments"
+msgstr "Машины с 3D-объектами"
+
+msgid "customization/escHelp/left"
+msgstr "Нажмите"
+
+msgid "customization/escHelp/right"
+msgstr ", чтобы вернуться на предыдущий уровень меню."
+
 msgid "customization/filter/allGroups"
 msgstr "Все группы"
 
@@ -7318,6 +7415,12 @@ msgstr "Включить/отключить отображение этапны�
 msgid "customization/filterPopover/progressionDecalsBtn/header"
 msgstr "Этапные элементы"
 
+msgid "customization/filterPopover/rarity/body"
+msgstr "Включить/отключить отображение %(rarity)s 3D-объектов."
+
+msgid "customization/filterPopover/rarity/header"
+msgstr "%(rarity)s"
+
 msgid "customization/filterPopover/refresh/body"
 msgstr ""
 "Нажмите, чтобы сбросить настройки фильтра\n"
@@ -7326,11 +7429,20 @@ msgstr ""
 msgid "customization/filterPopover/refresh/header"
 msgstr "Установить по умолчанию"
 
+msgid "customization/header/counter/attachment"
+msgstr "Установлено 3D-объектов: %(filled)s/%(available)s"
+
 msgid "customization/header/counter/camouflage"
 msgstr "Камуфляжных схем на машине: %(filled)s/%(available)s"
 
-msgid "customization/header/counter/editablestyle/installed"
-msgstr "Готовый стиль %(name)s нанесён"
+msgid "customization/header/counter/customStyle/installed"
+msgstr "2D-стиль нанесён"
+
+msgid "customization/header/counter/customStyle/notInstalled"
+msgstr "2D-стиль не нанесён"
+
+msgid "customization/header/counter/editableStyle/installed"
+msgstr "Стиль «%(name)s» нанесён"
 
 msgid "customization/header/counter/emblem"
 msgstr "Эмблем на машине: %(filled)s/%(available)s"
@@ -7347,11 +7459,11 @@ msgstr "Красок на машине: %(filled)s/%(available)s"
 msgid "customization/header/counter/projectionDecal"
 msgstr "Декалей на машине: %(filled)s/%(available)s"
 
-msgid "customization/header/counter/style/installed"
-msgstr "Готовый стиль нанесён"
+msgid "customization/header/counter/uncustomStyle/installed"
+msgstr "3D-стиль нанесён"
 
-msgid "customization/header/counter/style/notInstalled"
-msgstr "Готовый стиль не нанесён"
+msgid "customization/header/counter/uncustomStyle/notInstalled"
+msgstr "3D-стиль не нанесён"
 
 msgid "customization/headerCloseBtn/body"
 msgstr ""
@@ -7362,6 +7474,21 @@ msgstr "Вернуться в Ангар"
 
 msgid "customization/hint/maxQtyDecalsApplied"
 msgstr "Нанесено максимальное количество декалей"
+
+msgid "customization/hint/newCustomizationSection"
+msgstr ""
+"НОВЫЙ РАЗДЕЛ\n"
+"3D-ЭЛЕМЕНТОВ ВНЕШНЕГО ВИДА"
+
+msgid "customization/hint/suitableVehicleList"
+msgstr ""
+"МАШИНЫ, ПОДХОДЯЩИЕ\n"
+"ДЛЯ 3D-ОБЪЕКТОВ"
+
+msgid "customization/hint/vehicleCustomizationFilter"
+msgstr ""
+"ДОБАВЛЕН ФИЛЬТР ДЛЯ\n"
+"ЭЛЕМЕНТОВ ВНЕШНЕГО ВИДА"
 
 msgid "customization/infotype/description/map"
 msgstr "Карта: %(mapType)s"
@@ -7486,7 +7613,7 @@ msgid "customization/itemsPopover/btn"
 msgstr "Элементы внешнего вида на машине"
 
 msgid "customization/itemsPopover/btn/disabled"
-msgstr "На машине нет элементов внешнего вида для %(mapType)s."
+msgstr "На машине нет элементов внешнего вида"
 
 msgid "customization/itemsPopover/btn/style/disabled"
 msgstr "На машине нет элементов внешнего вида."
@@ -7505,6 +7632,9 @@ msgstr "Продлевать аренду"
 
 msgid "customization/kitPopover/title/items"
 msgstr "Внешний вид машины"
+
+msgid "customization/kitPopover/title/summary"
+msgstr "Сводка"
 
 msgid "customization/limited/current/vehicle"
 msgstr " (текущая машина)"
@@ -7541,6 +7671,9 @@ msgstr "Летняя"
 msgid "customization/mapType/winter"
 msgstr "Зимняя"
 
+msgid "customization/modeLine/title"
+msgstr "ПРИМЕНИТЬ ВМЕСТЕ"
+
 msgid "customization/nonHistoric/buttonText/defaultView"
 msgstr "Вид по умолчанию"
 
@@ -7567,6 +7700,9 @@ msgstr "Недостаточно средств"
 
 msgid "customization/notSelectedItems"
 msgstr "Элемент внешнего вида не выбран."
+
+msgid "customization/notification/new"
+msgstr "Новое"
 
 msgid "customization/popover/style/any"
 msgstr "Любая"
@@ -7628,6 +7764,15 @@ msgstr "Стиль «%(value)s»"
 msgid "customization/progressiveKitPopover/title"
 msgstr "Стиль «%(value)s»"
 
+msgid "customization/propertySheet/disabled/attachment/move"
+msgstr "Перемещение недоступно для этого 3D-объекта."
+
+msgid "customization/propertySheet/disabled/attachment/rotate"
+msgstr "Поворот недоступен для этого 3D-объекта."
+
+msgid "customization/propertySheet/disabled/attachment/scale"
+msgstr "Масштабирование недоступно для этого 3D-объекта."
+
 msgid "customization/propertySheet/disabled/camouflage"
 msgstr "Изменение цвета для данного камуфляжа недоступно."
 
@@ -7654,6 +7799,15 @@ msgstr "Наносится на %(vehicle)s"
 
 msgid "customization/quests/pbsItem"
 msgstr "%(itemType)s %(itemName)s"
+
+msgid "customization/rarity/epic"
+msgstr "Эпический"
+
+msgid "customization/rarity/legendary"
+msgstr "Легендарный"
+
+msgid "customization/rarity/rare"
+msgstr "Редкий"
 
 msgid "customization/rent/special/text"
 msgstr ""
@@ -7696,6 +7850,12 @@ msgstr "Наносится на технику"
 
 msgid "customization/tooltip/applied/vehicleNation"
 msgstr "Все машины нации: %(nation)s"
+
+msgid "customization/tooltip/attachmentEarn"
+msgstr ""
+"Могут быть установлены на Maus, Leopard 1, Объект 261, FV4005 и другую "
+"технику. Полный список машин можно посмотреть во вкладке «3D-объекты» "
+"раздела «Внешний вид»."
 
 msgid "customization/tooltip/bonus/aimer"
 msgstr "наводчику"
@@ -7799,6 +7959,9 @@ msgstr "Арендный"
 msgid "customization/tooltip/characteristics/serialNumber"
 msgstr "Номер стиля: %(number)s"
 
+msgid "customization/tooltip/characteristics/specialEffect"
+msgstr "Особое поведение в бою"
+
 msgid "customization/tooltip/characteristics/title"
 msgstr "Характеристики элемента"
 
@@ -7880,6 +8043,11 @@ msgstr ""
 
 msgid "customization/tooltip/description/nonHistoric/title"
 msgstr "Неисторичные элементы на машине"
+
+msgid "customization/tooltip/getattachment"
+msgstr ""
+"Зарабатывайте 3D-объекты в различных событиях или приобретайте их в "
+"Магазине."
 
 msgid "customization/tooltip/inventory/available"
 msgstr "На Складе"
@@ -8732,6 +8900,9 @@ msgstr ""
 msgid "customization/unsuitable"
 msgstr "Не подходит"
 
+msgid "customization/vehicleList"
+msgstr "Список машин, на которые могут быть установлены 3D-объекты."
+
 msgid "customizationHeader/aboutProgressiveStyles"
 msgstr "О ПРОГРЕССИОННОМ СТИЛЕ"
 
@@ -8763,6 +8934,9 @@ msgstr ""
 
 msgid "elementAwardTooltip/description/style"
 msgstr "Бонус к маскировке в зависимости от типа техники для всех типов карт."
+
+msgid "elementBonus/desc/attachment"
+msgstr "3D-объект «%(value)s»"
 
 msgid "elementBonus/desc/camouflage"
 msgstr "Камуфляж «%(value)s»"
@@ -11648,11 +11822,17 @@ msgstr "Ахтунг"
 msgid "emblem/special/sticker_839"
 msgstr "ОПАСНО: ЛАЗЕРЫ"
 
+msgid "emblem/special/sticker_840"
+msgstr "За 14 лет в строю"
+
 msgid "emblem/special/sticker_841"
 msgstr "Осколки"
 
 msgid "emblem/special/sticker_842"
 msgstr "Волнорез"
+
+msgid "emblem/special/sticker_843"
+msgstr "Лига «Натиска», зима 2025"
 
 msgid "filter/popover/bonusType/title"
 msgstr "Типы бонусов"
@@ -11668,6 +11848,9 @@ msgstr "Все группы"
 
 msgid "filter/popover/groups/title"
 msgstr "Группы"
+
+msgid "filter/popover/rarity/title"
+msgstr "Редкость"
 
 msgid "filter/popover/showonlyfilters/acquired"
 msgstr "Приобретённые элементы"
@@ -14275,6 +14458,15 @@ msgstr "Пришёл, увидел, победил"
 msgid "inscription/special/special_759"
 msgstr "ШОКЕР!"
 
+msgid "inscription/special/special_760"
+msgstr "Рагнар"
+
+msgid "inscription/special/special_761"
+msgstr "Бьёрн"
+
+msgid "inscription/special/special_762"
+msgstr "Ивар"
+
 msgid "inscription/special/special_763"
 msgstr "Дерьмо случается"
 
@@ -14286,6 +14478,12 @@ msgstr "Каржигис"
 
 msgid "inscription/special/special_766"
 msgstr "Гром"
+
+msgid "inscription/special/special_768"
+msgstr "Восходящая звезда"
+
+msgid "inscription/special/special_769"
+msgstr "Лига «Натиска», зима 2025"
 
 msgid "inscription/special/special_81"
 msgstr "За Родину!"
@@ -20453,6 +20651,42 @@ msgstr "Не дай использовать электричество во в�
 msgid "projection_decals/special/projection_decal_78"
 msgstr "Do It on Your Own"
 
+msgid "projection_decals/special/projection_decal_780"
+msgstr "Захватчик (красный)"
+
+msgid "projection_decals/special/projection_decal_781"
+msgstr "Захватчик (чёрный)"
+
+msgid "projection_decals/special/projection_decal_782"
+msgstr "Захватчик (оранжевый)"
+
+msgid "projection_decals/special/projection_decal_783"
+msgstr "Захватчик (фиолетовый)"
+
+msgid "projection_decals/special/projection_decal_784"
+msgstr "Неуязвимая легенда"
+
+msgid "projection_decals/special/projection_decal_784/description"
+msgstr ""
+"Выдавалась за достижение самых высоких позиций среди всех игроков в режиме "
+"«Последний рубеж» события «Проект \"Вавилон\"»."
+
+msgid "projection_decals/special/projection_decal_785"
+msgstr "Последняя легенда"
+
+msgid "projection_decals/special/projection_decal_785/description"
+msgstr ""
+"Выдавалась за достижение более высоких позиций, чем у большинства игроков, в"
+" режиме «Последний рубеж» события «Проект \"Вавилон\"»."
+
+msgid "projection_decals/special/projection_decal_786"
+msgstr "Герой"
+
+msgid "projection_decals/special/projection_decal_786/description"
+msgstr ""
+"Выдавалась за выдающийся результат в таблице лидеров режима «Последний "
+"рубеж» события «Проект \"Вавилон\"»."
+
 msgid "projection_decals/special/projection_decal_788"
 msgstr "Гуль"
 
@@ -20473,6 +20707,15 @@ msgstr "Титаны леса"
 
 msgid "projection_decals/special/projection_decal_793/description"
 msgstr "Два скрещённых на фоне елей топора, символизирующих силу и стойкость."
+
+msgid "projection_decals/special/projection_decal_795"
+msgstr "Ворон Лодброка"
+
+msgid "projection_decals/special/projection_decal_796"
+msgstr "Браслет викингов"
+
+msgid "projection_decals/special/projection_decal_797"
+msgstr "Лагерта"
 
 msgid "projection_decals/special/projection_decal_798"
 msgstr "Чайная церемония"
@@ -20527,6 +20770,9 @@ msgstr "Столбы Гедиминовы"
 
 msgid "projection_decals/special/projection_decal_811"
 msgstr "Первый Витис"
+
+msgid "projection_decals/special/projection_decal_818"
+msgstr "Нерушимая воля"
 
 msgid "projection_decals/special/projection_decal_82"
 msgstr "Добро всегда возвращается"
@@ -20726,6 +20972,9 @@ msgstr "Отзеркалить"
 msgid "propertySheet/actionBtn/move"
 msgstr "Сместить (%(current)s/%(total)s)"
 
+msgid "propertySheet/actionBtn/remove/attachment"
+msgstr "Снять 3D-объект [Delete]"
+
 msgid "propertySheet/actionBtn/remove/camouflage"
 msgstr "Снять камуфляж [Delete]"
 
@@ -20773,6 +21022,9 @@ msgstr "Снятие %(itemType)s для всех карт недоступно"
 
 msgid "propertySheet/actionBtn/removeStyle"
 msgstr "Снять стиль [Delete]"
+
+msgid "propertySheet/actionBtn/rotate/attachment"
+msgstr "Повернуть объект"
 
 msgid "propertySheet/actionBtn/switchProgression"
 msgstr "Сменить уровень (%(current)s/%(total)s)"
@@ -20849,6 +21101,9 @@ msgstr ""
 msgid "propertySheet/keyboard/hint"
 msgstr "НАЖИМАЙТЕ КЛАВИШИ, ЧТОБЫ ПЕРЕКРАСИТЬ ЭЛЕМЕНТ"
 
+msgid "propertySheet/map/all"
+msgstr "Все сезоны"
+
 msgid "propertySheet/map/desert"
 msgstr "Пустынная карта"
 
@@ -20915,6 +21170,9 @@ msgstr "Нанесено для: %(mapType)s"
 
 msgid "propertySheet/title/color"
 msgstr "Цветовая схема"
+
+msgid "propertySheet/title/remove/attachment"
+msgstr "Снять 3D-объект"
 
 msgid "propertySheet/title/remove/camouflage"
 msgstr "Удаление камуфляжа"
@@ -22544,9 +22802,6 @@ msgstr "Year Hare Affair: Снежное поле"
 msgid "repaint/zhang_hanyu"
 msgstr "Китайская палитра"
 
-msgid "savedStyles/label"
-msgstr "Сохранено изменённых стилей: %(current)s/%(max)s %(img)s"
-
 msgid "season/selection/desert"
 msgstr "ПУСТЫННАЯ"
 
@@ -22587,6 +22842,39 @@ msgid "shop/entryPoint"
 msgstr ""
 "ПЕРЕЙТИ\n"
 "В МАГАЗИН"
+
+msgid "sidebar/item/tooltip/header"
+msgstr "3D-объекты на этой машине:"
+
+msgid "sidebar/item/tooltip/none/body"
+msgstr "На этой машине нет 3D-объектов"
+
+msgid "sidebar/sortBy/amountOf3DAttachments"
+msgstr "Установленные 3D-объекты"
+
+msgid "sidebar/sortBy/inDepot"
+msgstr "На Складе"
+
+msgid "sidebar/sortBy/name"
+msgstr "Название техники"
+
+msgid "sidebar/sortBy/nation"
+msgstr "Нация"
+
+msgid "sidebar/sortBy/tier"
+msgstr "Уровень"
+
+msgid "sidebar/sortBy/type"
+msgstr "Тип"
+
+msgid "sidebar/sortToggleBtn/name"
+msgstr "Название"
+
+msgid "sidebar/submitBtn/label"
+msgstr "Так точно!"
+
+msgid "sidebar/title"
+msgstr "Машины, подходящие для 3D-объектов"
 
 msgid "special_style/10years_fortress"
 msgstr "Бастион"
@@ -23948,6 +24236,23 @@ msgstr ""
 "тех, кто себя хорошо вёл. А для тех, кто плохо, тоже подарки есть, а как же."
 " Полный боекомплект»."
 
+msgid "special_style/G142_M48RPz_ASE_4_3Dst"
+msgstr "Чистильщик"
+
+msgid "special_style/G142_M48RPz_ASE_4_3Dst_desc/long"
+msgstr ""
+"«\"Чистильщик\". Да, так его называли те, кто побывал в аду. Ну, или в "
+"\"глубинной фазе\", говоря языком этих яйцеголовых. Он должен был разбирать "
+"завалы после очередной мясорубки и, можете не сомневаться, со своей задачей "
+"справлялся отлично. То, что оставалось от нашей техники, исправно сгребалось"
+" огромным ковшом и отправлялось гнить в те места, которых точно не найдёшь "
+"на картах. Я даже не знаю, чего в нём теперь больше: стали или мириума, но, "
+"очевидно, \"Чистильщик\" уже давно перестал быть обычной машиной. Я боюсь "
+"его. Когда всё закончилось, центр закрыли, все материалы операций "
+"засекретили, а оборудование и технику изъяли. Так КАКОГО ЧЁРТА он сейчас "
+"снова передо мной! Нет, это не случайность — \"Чистильщик\" никогда не "
+"появляется просто так. Это послание всем выжившим: кошмар не закончился»."
+
 msgid "special_style/G144_Kpz_50t_3Dst_DRXXI"
 msgstr "Гарм"
 
@@ -24304,6 +24609,14 @@ msgstr ""
 "страна, долг, честь — так меня воспитали, меня учили их защищать. Любой "
 "ценой»."
 
+msgid "special_style/GB145_Crusher_ASE_4"
+msgstr "Нергал"
+
+msgid "special_style/GB145_Crusher_ASE_4_desc/long"
+msgstr ""
+"Машина значилась в документах центра «Вавилон» под аббревиатурой NrGLL-8 и считалась потерянной в ходе экспериментов по перемещению в глубинную фазу мириумного субпространства. Однако танк удалось извлечь вместе с экипажем, и теперь его называют Нергал — в честь вавилонского бога подземного мира. Техника почти полностью покрыта рисунками и надписями, повествующими о Нергале и его схождении в Иркаллу, царство мёртвых. Изображения нанёс кто-то из членов экипажа во время пребывания в глубинной фазе, под влиянием мириума и с осознанием того, что они уже никогда не вернутся домой.\n"
+"После завершения операции «Тёмная башня» танк вместе с оборудованием центра передали военному комитету, взявшему на себя управление дальнейшими разработками. После длительного воздействия мириума на психику и физиологию экипажу Нергала требовалась срочная реабилитация. Тем не менее сразу же после её прохождения танкисты изъявили желание вернуться к службе на своей машине. Прошение было удовлетворено..."
+
 msgid "special_style/GB24_Centurion_Mk3_3Dst_HW20"
 msgstr "Цербер"
 
@@ -24474,6 +24787,19 @@ msgstr ""
 "«Фраза в радиограмме \"теперь вы командуете всем подразделением, принимайте решение по ситуации, рассмотрите варианты\" звучит как издевательство. А вы не хотите помочь как-то более явно? Коридор нам организовать, чтобы мы вышли и технику спасли. Укажите хотя бы, где по этим ущельям можно безопасно выбраться, тут же настоящий лабиринт. А где ваша хвалёная навигационная система \"Ариадна\", эти новомодные самолёты с камерами? Воздух мы вам зенитками почистили, так поднимайте своих птичек и выводите нас! Третий год пошёл, как её с испытаний выпустили.\n"
 "\n"
 "Лабиринт... Как иронично. Сколько на нас идёт? Два батальона? Три? \"Рассмотрите варианты\", они мне радируют... У меня тут, похоже, только два варианта при таком раскладе: или на небо, или в землю»."
+
+msgid "special_style/It35_Felice_RL_3DSt"
+msgstr "Курс на запад"
+
+msgid "special_style/It35_Felice_RL_3DSt_desc/long"
+msgstr ""
+"«Видишь ли, меня это не устраивает — вести такую жизнь, сидеть в Каттегате, "
+"вновь и вновь грабить бедные восточные земли. Я хочу всё изменить, и асы "
+"хотят, чтобы я это сделал. Я встретил человека. Он рассказал мне о странах "
+"за великим морем. Мы привыкли думать, что там нет ничего, кроме открытого "
+"океана, но на самом деле там простираются богатые земли, которые ждут новых "
+"правителей. Вот где мы утолим жажду золота и сокровищ и почтим богов своей "
+"победой. Скоро мы отправимся на запад»."
 
 msgid "special_style/It36_Progetto_C45_mod_71_M"
 msgstr "Каменный страж"
@@ -30197,6 +30523,14 @@ msgstr "\"Нити\" трёхцветный (День Д)"
 msgid "special_style/touchdown"
 msgstr "Тачдаун"
 
+msgid "special_style/tournaments_2024"
+msgstr "Храброе сердце"
+
+msgid "special_style/tournaments_2024_desc"
+msgstr ""
+"Всесезонный стиль, выдаваемый в награду за поддержку Лиги «Натиска» 2025 "
+"года."
+
 msgid "special_style/toys_world"
 msgstr "Мир игрушек"
 
@@ -30622,6 +30956,60 @@ msgid "special_style/victory_desc"
 msgstr ""
 "Всесезонный стиль, приуроченный к очередной годовщине победы в Великой "
 "Отечественной войне."
+
+msgid "special_style/vikings_01"
+msgstr "Порождение Ёрмунганда"
+
+msgid "special_style/vikings_01_desc"
+msgstr ""
+"Всесезонный стиль, вдохновлённый свирепыми созданиями из скандинавских "
+"мифов."
+
+msgid "special_style/vikings_01_desc/long"
+msgstr ""
+"«Тревога! Тревога! Трубите в рога! Берегитесь, жители Каттегата, ибо нам "
+"угрожает великая опасность! Я видел, как из моря поднялся безликий зверь, "
+"выкованный из стали, с диковинным панцирем и рогом, изрыгающим огонь! Быть "
+"может, это порождение Ёрмунганда — змея, низверженного в океан самим Одином?"
+" Зверь ползёт вперёд, сокрушая всё на своём пути. Ни одна стрела не способна"
+" пронзить его чешую, и никто не в силах остановить его! Молитесь богам, ибо "
+"лишь они смогут спасти нас от гибели!»"
+
+msgid "special_style/vikings_02"
+msgstr "Зачарованные руны"
+
+msgid "special_style/vikings_02_desc"
+msgstr ""
+"Всесезонный стиль, в котором заключена таинственная мощь древних письмён "
+"викингов."
+
+msgid "special_style/vikings_02_desc/long"
+msgstr ""
+"Из густого тумана на поле боя врывается танк, украшенный древними рунами. Он"
+" идёт напролом, будто укрытие ему и не нужно. Бум! Артиллерийский снаряд "
+"летит прямо в него, но не достигает цели. Второй снаряд попадает в "
+"потустороннюю машину, но отскакивает от брони. Выглянув из укрытия, "
+"противник наносит смертельный удар, который наверняка пронзит цель насквозь."
+" Но тут же перед бесстрашным танком возникает призрачный деревянный щит и "
+"отражает выстрел. Где-то кричат невидимые вороны, а вдалеке раздаются звуки "
+"рога. Кто бы ни управлял этой машиной, он почтил богов хорошей жертвой."
+
+msgid "special_style/vikings_03"
+msgstr "Щит Лагерты"
+
+msgid "special_style/vikings_03_desc"
+msgstr "Всесезонный стиль, посвящённый самой грозной воительнице Каттегата."
+
+msgid "special_style/vikings_03_desc/long"
+msgstr ""
+"«Я всегда знала, что у меня есть задатки воительницы. Я стремилась стать ей "
+"с тех пор, как себя помню. Когда мне было двенадцать, я впервые пошла с "
+"братьями на охоту. В четырнадцать я была единственной девочкой в ​​деревне, "
+"которая билась с мужчинами голыми руками и не уступала им. К семнадцати я "
+"отправилась в свой первый набег. С годами я поняла, что быть женщиной — это "
+"не недостаток, а дар. Мужчины недооценивали меня и платили за это высокую "
+"цену. Мне было суждено стать воительницей. А воительнице не обойтись без "
+"щита»."
 
 msgid "special_style/waitangi_day"
 msgstr "День Вайтанги"

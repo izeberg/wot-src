@@ -249,6 +249,8 @@ package
       
       public static const CUSTOMIZATION_PERSONALNUMBER_1:String = "#item_types:customization/personalNumber_1";
       
+      public static const CUSTOMIZATION_ATTACHMENT:String = "#item_types:customization/attachment";
+      
       public static const CUSTOMIZATION_PLURAL_PAINT:String = "#item_types:customization/plural/paint";
       
       public static const CUSTOMIZATION_PLURAL_CAMOUFLAGE:String = "#item_types:customization/plural/camouflage";
@@ -257,7 +259,9 @@ package
       
       public static const CUSTOMIZATION_PLURAL_OUTFIT:String = "#item_types:customization/plural/outfit";
       
-      public static const CUSTOMIZATION_PLURAL_STYLE:String = "#item_types:customization/plural/style";
+      public static const CUSTOMIZATION_PLURAL_CUSTOMSTYLE:String = "#item_types:customization/plural/customStyle";
+      
+      public static const CUSTOMIZATION_PLURAL_UNCUSTOMSTYLE:String = "#item_types:customization/plural/uncustomStyle";
       
       public static const CUSTOMIZATION_PLURAL_DECAL:String = "#item_types:customization/plural/decal";
       
@@ -268,6 +272,8 @@ package
       public static const CUSTOMIZATION_PLURAL_PROJECTIONDECAL:String = "#item_types:customization/plural/projectionDecal";
       
       public static const CUSTOMIZATION_PLURAL_PERSONALNUMBER:String = "#item_types:customization/plural/personalNumber";
+      
+      public static const CUSTOMIZATION_PLURAL_ATTACHMENT:String = "#item_types:customization/plural/attachment";
       
       public static const CREWSKINS_ITEMTYPE_COMMON:String = "#item_types:crewSkins/itemType/common";
       

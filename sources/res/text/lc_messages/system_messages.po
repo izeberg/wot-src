@@ -503,9 +503,6 @@ msgstr ""
 "Боевой пропуск для Стального охотника временно недоступен: идут технические "
 "работы. Приносим извинения за неудобства."
 
-msgid "battlePass/switch_disable/body"
-msgstr "Сезон завершился, но мы обязательно встретимся в следующем!"
-
 msgid "battlePass/switch_disable/comp7/body"
 msgstr ""
 "Заработок очков Боевого пропуска в режиме «Натиск» временно недоступен. "
@@ -520,9 +517,6 @@ msgid "battlePass/switch_disable/ranked/body"
 msgstr ""
 "Боевой пропуск в Ранговых боях временно недоступен. Ведутся технические "
 "работы."
-
-msgid "battlePass/switch_disable/title"
-msgstr "Боевой пропуск, сезон %(seasonNum)d"
 
 msgid "battlePass/switch_enabled/body"
 msgstr ""
@@ -1207,6 +1201,12 @@ msgstr "Начислено обликов экипажа: %(count)s"
 msgid "current_vehicle_changed"
 msgstr "Текущая машина изменена на %s."
 
+msgid "customization/added/attachment"
+msgstr "Добавлен 3D-объект «%s»"
+
+msgid "customization/added/attachmentValue"
+msgstr "Добавлен 3D-объект «%s» (×%s)"
+
 msgid "customization/added/camouflage"
 msgstr "Добавлен камуфляж «%s»"
 
@@ -1304,6 +1304,12 @@ msgstr "Уровень стиля «%s» улучшен до %s"
 
 msgid "customization/prohibited"
 msgstr "Нанесение невозможно: «%(itemName)s» отсутствует в инвентаре."
+
+msgid "customization/removed/attachment"
+msgstr "Списан 3D-объект «%s»"
+
+msgid "customization/removed/attachmentValue"
+msgstr "Списан 3D-объект «%s» (×%s)"
 
 msgid "customization/removed/camouflage"
 msgstr "Списан камуфляж «%s»"

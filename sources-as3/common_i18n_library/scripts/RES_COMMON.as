@@ -33,6 +33,8 @@ package
       
       public static const MAPS_ICONS_CUSTOMIZATION_PROGRESSION_STYLES_STAGE_SWITCHER_BG:String = "../maps/icons/customization/progression_styles/stage_switcher/bg.png";
       
+      public static const MAPS_ICONS_CUSTOMIZATION_VEHICLES_SIDEBAR_BG:String = "../maps/icons/customization/vehicles_sidebar/bg.png";
+      
       public static const MAPS_ICONS_DEDICATION_BG:String = "../maps/icons/dedication/bg.png";
       
       public static const MAPS_ICONS_DEMOUNTKIT_BG:String = "../maps/icons/demountKit/bg.png";

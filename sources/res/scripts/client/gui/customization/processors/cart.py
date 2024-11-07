@@ -137,8 +137,8 @@ class ItemsProcessor(object):
         raise NotImplementedError
 
     def _postProcess(self, itemsInfo):
-        itemsDescriptors = {season:[] for season in SeasonType.COMMON_SEASONS}
-        for season in SeasonType.COMMON_SEASONS:
+        itemsDescriptors = {season:[] for season in SeasonType.REGULAR}
+        for season in SeasonType.REGULAR:
             if season in itemsInfo:
                 items = itemsInfo[season].flatten()
             else:
@@ -274,7 +274,7 @@ class EditableStyleItemsProcessor(SeparateItemsProcessor):
 
     def __updateStrictDependencies(self, descriptorsBySeasons):
         editableStyleMode = self.__service.getCtx().mode
-        if editableStyleMode.modeId != CustomizationModes.EDITABLE_STYLE:
+        if self.__service.getCtx().modeId != CustomizationModes.STYLE_2D_EDITABLE:
             return
         else:
             styleDependencies = editableStyleMode.getDependenciesData()

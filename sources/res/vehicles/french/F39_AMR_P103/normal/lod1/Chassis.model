@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F39_AMR_P103/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/french/F39_AMR_P103/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.813600 0.000000 -1.677713</min>
+		<max>0.813600 0.819922 1.836325</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

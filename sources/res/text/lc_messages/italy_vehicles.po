@@ -220,6 +220,9 @@ msgstr "CC-67B tipo A"
 msgid "Chassis_It31_CC_67_B_2"
 msgstr "CC-67B tipo B"
 
+msgid "Chassis_It33_Prototipo_6"
+msgstr "Prototipo 6"
+
 msgid "Chassis_It34_Toro"
 msgstr "Toro"
 
@@ -789,6 +792,33 @@ msgstr ""
 msgid "It31_CC_67_B_short"
 msgstr "SMV CC-67"
 
+msgid "It33_Prototipo_6"
+msgstr "Prototipo 6"
+
+msgid "It33_Prototipo_6_descr"
+msgstr ""
+"Ближе к концу 50-х годов проекты немецких конструкторов заинтересовали "
+"итальянских военных. Стали появляться идеи 30-тонного танка, похожего на "
+"зарождающийся в Германии Standardpanzer. Для Prototipo 6 выбрали 6-катковое "
+"шасси. Машина была похожа на Standardpanzer группы A, но со своей "
+"спецификой. Также изначально делалась ставка на сварные башни, а вооружение "
+"разрабатывалось на основе орудий американских танков. Впрочем, опытный "
+"образец так и не был построен. Из-за экономии средств итальянские военные "
+"решили дождаться финала программы Standardpanzer и купить готовое изделие."
+
+msgid "It33_Prototipo_6_long_special"
+msgstr ""
+"Prototipo 6 обладает 105-мм орудием с системой дозарядки на три снаряда, "
+"которое наносит значительный урон за выстрел. Благодаря отличной динамике "
+"танк всегда может оказаться в нужном месте в нужное время, что делает его "
+"идеальным в роли машины поддержки."
+
+msgid "It33_Prototipo_6_short"
+msgstr "Prototipo 6"
+
+msgid "It33_Prototipo_6_short_special"
+msgstr "Система дозарядки, хорошая динамика"
+
 msgid "It34_Toro"
 msgstr "Toro"
 
@@ -882,6 +912,9 @@ msgstr "Уникальное орудие, разнесённое брониро
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
+msgid "MB_837C"
+msgstr "MB 837C"
+
 msgid "MB_837_Aa"
 msgstr "MB 837 Aa"
 
@@ -941,6 +974,9 @@ msgstr "RV 4"
 
 msgid "RV_4F"
 msgstr "RV 4F"
+
+msgid "RV_4P"
+msgstr "RV 4P"
 
 msgid "RV_4_213_V"
 msgstr "RV-4/213/V"
@@ -1113,6 +1149,9 @@ msgstr "CC 64 tipo 1"
 msgid "Turret_1_It31_CC_67_B"
 msgstr "CC-67B tipo A"
 
+msgid "Turret_1_It33_Prototipo_6"
+msgstr "Prototipo 6"
+
 msgid "Turret_1_It34_Toro"
 msgstr "Toro"
 
@@ -1176,6 +1215,15 @@ msgstr "c.g. 102 Effetto Pronto"
 msgid "_102mm_c_p_102_AP_Rh"
 msgstr "c.p. 102 AP Rh"
 
+msgid "_105mm_58_AP_T"
+msgstr "c.p. 105/58 AP-T"
+
+msgid "_105mm_58_HE_T"
+msgstr "c.g. 105/58 HE-T"
+
+msgid "_105mm_58_HVAP_T"
+msgstr "c.p. 105/58 HVAP-T"
+
 msgid "_105mm_APDS305"
 msgstr "c.p. 105/51 305"
 
@@ -1211,6 +1259,9 @@ msgstr "Cannone da 105/25"
 
 msgid "_105mm_Cannone_da_105_58"
 msgstr "Cannone da 105/58"
+
+msgid "_105mm_Cannone_da_105_58_Rh_V1"
+msgstr "Cannone da 105/58 Rh V1"
 
 msgid "_105mm_HE_M113"
 msgstr "c.g. 105/51 HE M113"

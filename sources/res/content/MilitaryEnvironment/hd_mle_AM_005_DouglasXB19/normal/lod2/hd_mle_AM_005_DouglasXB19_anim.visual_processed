@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.708161 7.413467</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Detailset_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Detailset_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Detailset_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.003143 0.507231 7.351648</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile1_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile2_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile3_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Soot_01_DM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.500000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.000000 0.800000 0.800000 0.800000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.960784 1.000000 0.988235 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.960784 1.000000 0.988235 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.960784 1.000000 0.988235 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile1_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile2_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile3_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile1_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile2_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/MilitaryEnvironment/hd_mle_AM_005_DouglasXB19/hd_mle_AM_005_DouglasXB19_Tile3_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 3.936505 7.823600</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-35.025646 -2.276979 -15.101035</min>
+		<max>35.025646 10.150215 29.804331</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>245474</geometrySize>
+	<minUVDensity>0.000832</minUVDensity>
+</root>

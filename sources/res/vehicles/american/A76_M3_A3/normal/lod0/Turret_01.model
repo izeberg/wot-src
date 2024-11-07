@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A76_M3_A3/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A76_M3_A3/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.709929 0.000000 -1.131841</min>
+		<max>0.798934 1.025733 0.822655</max>
+	</visibilityBox>
+</root>

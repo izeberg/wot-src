@@ -94,6 +94,11 @@ msgstr "Продать"
 msgid "buttonUpgrade/tooltip/body"
 msgstr "Наладить работу оборудования."
 
+msgid "card/attachment/hover/partOfBundle/label"
+msgstr ""
+"Часть набора «%(bundleName)s».\n"
+"Список доступных машин можно посмотреть во вкладке «3D-объекты» в разделе «Внешний вид»."
+
 msgid "card/cannotSellTitle"
 msgstr "Не подлежит продаже"
 

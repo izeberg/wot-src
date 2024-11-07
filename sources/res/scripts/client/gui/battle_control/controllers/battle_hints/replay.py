@@ -4,7 +4,9 @@ import BattleReplay
 from BattleReplay import CallbackDataNames
 from PlayerEvents import g_playerEvents
 from gui.battle_control.controllers.battle_hints.common import getLogger
+from helpers import dependency
 from hints.battle import manager as battleHintsModelsMgr
+from skeletons.gui.battle_hints.battle_hints_overlap_controller import IBattleHintsOverlapController
 if typing.TYPE_CHECKING:
     from hints.battle.schemas.base import CHMType
     from gui.battle_control.controllers.battle_hints.queues import BattleHint
@@ -43,6 +45,7 @@ class BattleHintsReplayRecorder(object):
 
 
 class BattleHintsReplayPlayer(object):
+    _overlapController = dependency.descriptor(IBattleHintsOverlapController)
 
     def __init__(self, battleHintsCtrl):
         self._modelsMgr = battleHintsModelsMgr.get()
@@ -81,6 +84,7 @@ class BattleHintsReplayPlayer(object):
         else:
             hint = self._getHint(hintName, params)
             if hint is not None:
+                self._overlapController.hintShown(hint)
                 hint.show()
                 self.__currentHint = hint
             return
@@ -91,6 +95,7 @@ class BattleHintsReplayPlayer(object):
         else:
             hint = self._getHint(hintName, params)
             if hint is not None:
+                self._overlapController.hintHidden()
                 hint.hide()
                 self.__currentHint = None
             return

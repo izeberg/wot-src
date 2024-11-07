@@ -1297,6 +1297,10 @@ def _migrateTo131(core, data, initialized):
     data[GUI_START_BEHAVIOR][GuiSettingsBehavior.CREW_NPS_WELCOME_SHOWN] = False
 
 
+def _migrateTo132(core, data, initialized):
+    data['gameExtData2'][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 2
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1557,7 +1561,9 @@ _versions = (
  (
   130, _migrateTo130, False, False),
  (
-  131, _migrateTo131, False, False))
+  131, _migrateTo131, False, False),
+ (
+  132, _migrateTo132, False, False))
 
 @adisp_async
 @adisp_process
