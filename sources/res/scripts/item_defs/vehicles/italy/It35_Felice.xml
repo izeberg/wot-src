@@ -130,6 +130,13 @@
 			<undamaged>vehicles/italy/It35_Felice/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/italy/It35_Felice/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/italy/It35_Felice/crash/lod0/Hull.model</exploded>
+			<sets>
+				<It35_Felice_RL_3DSt>
+					<undamaged>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Hull.model</exploded>
+				</It35_Felice_RL_3DSt>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -162,13 +169,16 @@
 				<slotType>clan</slotType>
 				<slotId>10000</slotId>
 				<rayStart>
-					-0.363199 0.288959 2.94415
+					0 0.488598 2.471997
 					<!--BW_String-->
 				</rayStart>
-				<rayEnd>-0.363199 0.115764 2.844155</rayEnd>
-				<rayUp>0.000001 0.500001 -0.866025</rayUp>
+				<rayEnd>
+					-0 0.315403 2.372002
+					<!--BW_String-->
+				</rayEnd>
+				<rayUp>0.000001 0.500004 -0.866023</rayUp>
 				<size>
-					0.34
+					0.3
 					<!--BW_String-->
 				</size>
 			</slot>
@@ -1536,6 +1546,14 @@
 					<!--BW_String-->
 				</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+				<compatibleModels>It35_Felice_RL_3DSt</compatibleModels>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1571,7 +1589,7 @@
 			</terrainResistance>
 			<brakeForce>60000</brakeForce>
 			<rotationIsAroundCenter>True</rotationIsAroundCenter>
-			<rotationSpeed>35</rotationSpeed>
+			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -1596,6 +1614,13 @@
 				<undamaged>vehicles/italy/It35_Felice/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/italy/It35_Felice/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/italy/It35_Felice/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<It35_Felice_RL_3DSt>
+						<undamaged>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Chassis.model</exploded>
+					</It35_Felice_RL_3DSt>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1725,6 +1750,33 @@
 									<row3>-1.688534 1.031417 -0.068773</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>It35_Felice_RL_3DSt</modelsSet>
+								<boxCollider>
+									<row0>1.928307 0.000000 0.000000</row0>
+									<row1>0.000000 1.623137 -0.000000</row1>
+									<row2>-0.000000 0.000000 7.258657</row2>
+									<row3>-0.000000 1.130268 -0.172243</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.356074 0.000000 0.000000</row0>
+									<row1>0.000000 0.692459 -0.000000</row1>
+									<row2>-0.000000 0.000000 6.858545</row2>
+									<row3>-0.000000 1.526614 -0.606458</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 -0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>-0.000000 0.000000 7.577789</row2>
+									<row3>-1.689131 0.751144 0.052964</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>-0.000000 0.369288 0.593211</row1>
+									<row2>-0.000000 -1.007439 0.627154</row2>
+									<row3>-1.689130 1.093466 -3.796313</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1836,6 +1888,33 @@
 									<row1>0.000000 0.742356 -0.000000</row1>
 									<row2>0.000000 -0.000000 7.583916</row2>
 									<row3>1.688534 1.031417 -0.068773</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>It35_Felice_RL_3DSt</modelsSet>
+								<boxCollider>
+									<row0>1.928307 0.000000 -0.000000</row0>
+									<row1>-0.000000 1.623137 -0.000000</row1>
+									<row2>0.000000 0.000000 7.258657</row2>
+									<row3>0.000000 1.130268 -0.172243</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.356074 0.000000 -0.000000</row0>
+									<row1>-0.000000 0.692459 -0.000000</row1>
+									<row2>0.000000 0.000000 6.858545</row2>
+									<row3>0.000000 1.526614 -0.606458</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 -0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 7.577789</row2>
+									<row3>1.689131 0.751144 0.052964</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 -0.000000 -0.000000</row0>
+									<row1>0.000000 0.369288 0.593211</row1>
+									<row2>0.000000 -1.007439 0.627154</row2>
+									<row3>1.689130 1.093466 -3.796313</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -2136,6 +2215,14 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<It35_Felice_RL_3DSt>
+							<segmentModelLeft>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_01.model</segmentModelLeft>
+							<segmentModelRight>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_01.model</segmentModelRight>
+							<segment2ModelLeft>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_02.model</segment2ModelLeft>
+							<segment2ModelRight>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_02.model</segment2ModelRight>
+						</It35_Felice_RL_3DSt>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -2157,6 +2244,12 @@
 						<model>vehicles/italy/It35_Felice/track/segment_02.model</model>
 						<length>0.075231</length>
 					</secSegment>
+					<modelSets>
+						<It35_Felice_RL_3DSt>
+							<mainSegmentModel>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_01.model</mainSegmentModel>
+							<secSegmentModel>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_02.model</secSegmentModel>
+						</It35_Felice_RL_3DSt>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.073277</back>
@@ -2549,6 +2642,12 @@
 						<model>vehicles/italy/It35_Felice/track/segment_02.model</model>
 						<length>0.074883</length>
 					</secSegment>
+					<modelSets>
+						<It35_Felice_RL_3DSt>
+							<mainSegmentModel>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_01.model</mainSegmentModel>
+							<secSegmentModel>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/track/segment_02.model</secSegmentModel>
+						</It35_Felice_RL_3DSt>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.073277</back>
@@ -3463,7 +3562,7 @@
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>15000</weight>
 			<maxHealth>320</maxHealth>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>33</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
 				<maxRegenHealth>75</maxRegenHealth>
@@ -3504,14 +3603,14 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<maxAmmo>40</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.00000 8.00 0.41667 3.00 0.58333 3.00 1.00000 8.00
+							0 8 0.4 8 0.41667 3 0.58333 3 0.6 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -3560,6 +3659,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<compatibleModels>It35_Felice_RL_3DSt</compatibleModels>
+							<rayStart>
+								0 0 1.89
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 0 2.49
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.14 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.6
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -3571,6 +3691,13 @@
 						<undamaged>vehicles/italy/It35_Felice/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/italy/It35_Felice/crash/lod0/Gun_03.model</destroyed>
 						<exploded>vehicles/italy/It35_Felice/crash/lod0/Gun_03.model</exploded>
+						<sets>
+							<It35_Felice_RL_3DSt>
+								<undamaged>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod0/Gun_03.model</undamaged>
+								<destroyed>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Gun_03.model</destroyed>
+								<exploded>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Gun_03.model</exploded>
+							</It35_Felice_RL_3DSt>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/italy/It35_Felice/collision/Gun_03.model</collisionModelServer>
@@ -3587,6 +3714,13 @@
 				<undamaged>vehicles/italy/It35_Felice/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/italy/It35_Felice/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/italy/It35_Felice/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<It35_Felice_RL_3DSt>
+						<undamaged>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/italy/It35_Felice/_skins/It35_Felice_RL_3DSt/crash/lod0/Turret_01.model</exploded>
+					</It35_Felice_RL_3DSt>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/italy/It35_Felice/collision/Turret_01.model</collisionModelServer>
@@ -4395,7 +4529,7 @@
 		<detailed>
 			<engines>
 				<AVDS_1790_2D>
-					<smplEnginePower>810</smplEnginePower>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</AVDS_1790_2D>
 			</engines>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>brazier_left_eff</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/It35_Felice_RL_3DSt/It35_Felice_RL_3DSt_brazier.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.713156 0.480938 -3.570816</value>
+				<inTangent>-0.000000 0.000000 -0.000004</inTangent>
+				<outTangent>-0.000000 0.000000 -0.000004</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>-0.713156 0.480938 -3.570820</value>
+				<inTangent>-0.000000 0.000000 -0.000004</inTangent>
+				<outTangent>-0.000000 0.000000 -0.000004</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>brazier_right_eff</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/It35_Felice_RL_3DSt/It35_Felice_RL_3DSt_brazier.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.697907 0.480938 -3.570816</value>
+				<inTangent>-0.000000 0.000000 -0.000004</inTangent>
+				<outTangent>-0.000000 0.000000 -0.000004</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.697907 0.480938 -3.570820</value>
+				<inTangent>-0.000000 0.000000 -0.000004</inTangent>
+				<outTangent>-0.000000 0.000000 -0.000004</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>burning_coals</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/It35_Felice_RL_3DSt/It35_coals.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.970000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>g_emissiveParams</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>7.000000 2.000000 0.250000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

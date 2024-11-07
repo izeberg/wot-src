@@ -2726,12 +2726,12 @@
 					<item>
 						<name>hasAdditionalBackground</name>
 						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 					<item>
 						<name>hasSpecialTankmenScreen</name>
 						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 				</value>
 			</item>
@@ -2757,6 +2757,11 @@
 								<name>153</name>
 								<type>bool</type>
 								<value>False</value>
+							</item>
+							<item>
+								<name>154</name>
+								<type>bool</type>
+								<value>True</value>
 							</item>
 						</value>
 					</item>
@@ -3698,22 +3703,22 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>countdown</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_002_2024/
 						<name>live</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>dayIsOver</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_003_2024/
 						<name>finished</name>
 						<type>url</type>
 					</item>
@@ -3724,22 +3729,22 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://webbrg.worldoftanks.asia/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>countdown</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.asia/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught_tournament_002_2024/
 						<name>live</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.asia/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>dayIsOver</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.asia/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught_tournament_003_2024/
 						<name>finished</name>
 						<type>url</type>
 					</item>
@@ -3750,22 +3755,22 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://webbrg.worldoftanks.com/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>countdown</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.com/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught_tournament_002_2024/
 						<name>live</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.com/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>dayIsOver</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.com/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught_tournament_003_2024/
 						<name>finished</name>
 						<type>url</type>
 					</item>
@@ -3776,22 +3781,22 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://webbrg-cn360.wotgame.cn/zh-cn/promocontent/wci2024_banner1_upcoming/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>countdown</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg-cn360.wotgame.cn/zh-cn/promocontent/wci2024_banner2_live/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught_tournament_002_2024/
 						<name>live</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg-cn360.wotgame.cn/zh-cn/promocontent/wci2024_banner1_upcoming/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wci2024_banner2_endofday/
 						<name>dayIsOver</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg-cn360.wotgame.cn/zh-cn/promocontent/wci2024_banner3_end/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught_tournament_003_2024/
 						<name>finished</name>
 						<type>url</type>
 					</item>
@@ -3802,22 +3807,22 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>countdown</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_002_2024/
 						<name>live</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_001_2024/
 						<name>dayIsOver</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg.worldoftanks.eu/en/promocontent/onslaught_tournament_001_2024/
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught_tournament_003_2024/
 						<name>finished</name>
 						<type>url</type>
 					</item>
