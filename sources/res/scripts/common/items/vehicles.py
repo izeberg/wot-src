@@ -891,17 +891,11 @@ class VehicleDescriptor(object):
                 return ((prevDevice.compactDescr,), component_constants.EMPTY_TUPLE)
             return (component_constants.EMPTY_TUPLE, (prevDevice.compactDescr,))
 
-    def removeOptionalDevice(self, slotIdx, rebuildAttrs=True, itemCompDescr=0):
-        device = getItemByCompactDescr(itemCompDescr) if itemCompDescr != 0 else self.optionalDevices[slotIdx]
+    def removeOptionalDevice(self, slotIdx, rebuildAttrs=True):
+        device = self.optionalDevices[slotIdx]
         if device is None:
             return (component_constants.EMPTY_TUPLE, component_constants.EMPTY_TUPLE)
         else:
-            if itemCompDescr != 0:
-                if device not in self.optionalDevices:
-                    if device.removable:
-                        return ((device.compactDescr,), component_constants.EMPTY_TUPLE)
-                    return (component_constants.EMPTY_TUPLE, (device.compactDescr,))
-                slotIdx = self.optionalDevices.index(device)
             self.optionalDevices[slotIdx] = None
             self._optDevSlotsMap.pop(device.compactDescr)
             if rebuildAttrs:
@@ -1689,9 +1683,9 @@ class CompositeVehicleDescriptor(object):
         self.__siegeDescr.installTurret(turretCompactDescr, gunCompactDescr, positionIndex)
         return self.__vehicleDescr.installTurret(turretCompactDescr, gunCompactDescr, positionIndex)
 
-    def removeOptionalDevice(self, slotIdx, rebuildAttrs=True, itemCompDescr=0):
+    def removeOptionalDevice(self, slotIdx, rebuildAttrs=True):
         self.__siegeDescr.removeOptionalDevice(slotIdx, rebuildAttrs)
-        return self.__vehicleDescr.removeOptionalDevice(slotIdx, rebuildAttrs, itemCompDescr=itemCompDescr)
+        return self.__vehicleDescr.removeOptionalDevice(slotIdx, rebuildAttrs)
 
     def rebuildAttrs(self):
         self.__siegeDescr.rebuildAttrs()
