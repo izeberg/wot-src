@@ -309,7 +309,7 @@ class CustomizationCarouselDataProvider(SortableDAAPIDataProvider):
         self.__baseStyleItems = None
         self.__dependentItems = None
         for carouselFilter in self.__carouselFilters.itervalues():
-            carouselFilter.clear()
+            carouselFilter.fini()
 
         self.__carouselFilters = None
         self.__uiLogger = None
@@ -632,6 +632,13 @@ class SimpleCarouselFilter(object):
         self.__inverse = inverse
         self.__requirements = requirements
 
+    def fini(self):
+        self.__applied = None
+        self.__inverse = None
+        self.__criteria = None
+        self.__requirements = None
+        return
+
     @property
     def isAvailable(self):
         return self.__requirements is None or self.__requirements()
@@ -655,10 +662,6 @@ class SimpleCarouselFilter(object):
 
     def clear(self):
         self.__applied = False
-        self.__criteria = None
-        self.__inverse = False
-        self.__requirements = None
-        return
 
 
 class DisjunctionCarouselFilter(object):
@@ -667,6 +670,12 @@ class DisjunctionCarouselFilter(object):
         self.__applied = set()
         self.__criteria = criteria
         self.__requirements = requirements
+
+    def fini(self):
+        self.__applied.clear()
+        self.__criteria = None
+        self.__requirements = None
+        return
 
     @property
     def isAvailable(self):
@@ -704,6 +713,10 @@ class FormfactorsCarouselFilter(SimpleCarouselFilter):
         criteria = REQ_CRITERIA.CUSTOM(lambda item: item.formfactor in self.formfactors)
         super(FormfactorsCarouselFilter, self).__init__(criteria, requirements)
 
+    def fini(self):
+        self.__formfactors.clear()
+        super(FormfactorsCarouselFilter, self).fini()
+
     @property
     def formfactors(self):
         return self.__formfactors
@@ -713,7 +726,7 @@ class FormfactorsCarouselFilter(SimpleCarouselFilter):
         super(FormfactorsCarouselFilter, self).update(bool(self.__formfactors))
 
     def clear(self):
-        self.__formfactors = set()
+        self.__formfactors.clear()
         super(FormfactorsCarouselFilter, self).clear()
 
 
@@ -724,6 +737,12 @@ class AttributeCarouselFilter(SimpleCarouselFilter):
         self.__attribute = attribute
         criteria = REQ_CRITERIA.CUSTOM(lambda item: getattr(item, self.attribute) in self.values)
         super(AttributeCarouselFilter, self).__init__(criteria, requirements)
+
+    def fini(self):
+        self.__values.clear()
+        self.__attribute = None
+        super(AttributeCarouselFilter, self).fini()
+        return
 
     @property
     def attribute(self):
@@ -738,7 +757,5 @@ class AttributeCarouselFilter(SimpleCarouselFilter):
         super(AttributeCarouselFilter, self).update(bool(self.__values))
 
     def clear(self):
-        self.__values = set()
-        self.__attribute = None
+        self.__values.clear()
         super(AttributeCarouselFilter, self).clear()
-        return

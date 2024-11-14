@@ -4039,6 +4039,10 @@ package
       
       public static const AWARDITEM_INDUSTRIALRESOURCE_BODY:String = "#tooltips:awardItem/industrialResource/body";
       
+      public static const AWARDITEM_WDRCOIN_HEADER:String = "#tooltips:awardItem/wdrcoin/header";
+      
+      public static const AWARDITEM_WDRCOIN_BODY:String = "#tooltips:awardItem/wdrcoin/body";
+      
       public static const AWARDITEM_MODERNIZEDDEVICE_HEADER:String = "#tooltips:awardItem/modernizedDevice/header";
       
       public static const AWARDITEM_MODERNIZEDDEVICE_BODY:String = "#tooltips:awardItem/modernizedDevice/body";

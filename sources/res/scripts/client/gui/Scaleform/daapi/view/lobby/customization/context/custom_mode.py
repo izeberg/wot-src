@@ -238,11 +238,8 @@ class CustomMode(CustomizationMode):
         self._events.onEditModeEnabled(self.__editModeEnabled)
 
     def _fillOutfits(self):
-        isInstalled = not self._service.isStyleInstalled()
         for season in SeasonType.COMMON_SEASONS:
             outfit = self._service.getCustomOutfit(season)
-            if not isInstalled:
-                self._removeHiddenFromOutfit(outfit, g_currentVehicle.item.intCD)
             self._originalOutfits[season] = outfit.copy()
             self._modifiedOutfits[season] = outfit.copy()
 

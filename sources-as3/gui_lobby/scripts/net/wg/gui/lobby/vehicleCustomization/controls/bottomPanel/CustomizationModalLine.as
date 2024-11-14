@@ -3,6 +3,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
    import flash.display.Sprite;
    import flash.geom.Point;
    import flash.text.TextField;
+   import flash.text.TextFieldAutoSize;
    import mx.effects.easing.Linear;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.entity.IUpdatable;
@@ -26,6 +27,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       private const MIN_LINE_SIZE:int = 15;
       
+      private const OFFSET:int = 5;
+      
       public function CustomizationModalLine()
       {
          this._tweens = new Vector.<Tween>();
@@ -35,14 +38,14 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       override protected function configUI() : void
       {
          super.configUI();
+         this.value.autoSize = TextFieldAutoSize.LEFT;
          this.value.text = VEHICLE_CUSTOMIZATION.CUSTOMIZATION_MODELINE_TITLE;
       }
       
       public function update(param1:Object) : void
       {
-         var _loc3_:int = 0;
          var _loc2_:Point = Point(param1);
-         _loc3_ = _loc2_.y - _loc2_.x;
+         var _loc3_:int = _loc2_.y - _loc2_.x;
          var _loc4_:int = (_loc3_ - this.value.width) / 2 | 0;
          this.left.x = 0;
          this.clearTweens();
@@ -53,7 +56,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
             "width":Math.max(this.MIN_LINE_SIZE,_loc4_)
          },{"ease":Linear.easeIn}));
          this._tweens.push(new Tween(this.ANIMATION_DURATION,this.right,{
-            "x":_loc4_ + this.value.width,
+            "x":_loc4_ + this.value.width + this.OFFSET,
             "width":Math.max(this.MIN_LINE_SIZE,_loc3_ - (_loc4_ + this.value.width))
          },{"ease":Linear.easeIn}));
       }

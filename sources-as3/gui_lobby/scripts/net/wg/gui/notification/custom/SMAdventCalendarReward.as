@@ -2,6 +2,7 @@ package net.wg.gui.notification.custom
 {
    import flash.display.DisplayObject;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.text.TextField;
    import flash.text.TextFormatAlign;
    import net.wg.gui.notification.ServiceMessageContent;
@@ -18,6 +19,12 @@ package net.wg.gui.notification.custom
       private static const TF_WITH_NO_DESC_Y:int = 233;
       
       private static const BUTTONS_GROUP_PADDING_BOTTOM:int = 56;
+      
+      private static const TF_BOUNDS_OFFSET:int = 4;
+      
+      private static const BUTTONS_GROUP_OFFSET_Y:int = 22;
+      
+      private static const SUB_BG_OFFSET_Y:int = 32;
        
       
       public var descTf:TextField = null;
@@ -71,6 +78,16 @@ package net.wg.gui.notification.custom
             bgIcon.source = RES_ICONS.MAPS_ICONS_ADVENT_CALENDAR_MESSENGER_SYS_NOTIFICATION_BG_290X240;
          }
          invalidateLayout();
+      }
+      
+      override protected function updateLayout() : void
+      {
+         super.updateLayout();
+         this.descTf.y = textField.y + textField.textHeight + TF_BOUNDS_OFFSET | 0;
+         buttonsGroup.y = this.descTf.y + this.descTf.textHeight + TF_BOUNDS_OFFSET + BUTTONS_GROUP_OFFSET_Y | 0;
+         this.subBg.y = buttonsGroup.y + buttonsGroup.height - this.subBg.height + SUB_BG_OFFSET_Y;
+         background.height = this.subBg.y + this.subBg.height;
+         dispatchEvent(new Event(Event.RESIZE));
       }
       
       override protected function get buttonsAnchorVertical() : DisplayObject

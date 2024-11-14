@@ -11,9 +11,9 @@
 			<authoring_tool>FBX COLLADA exporter</authoring_tool>
 			<comments/>
 		</contributor>
-		<created>2024-08-02T18:37:29Z</created>
+		<created>2024-11-07T12:15:06Z</created>
 		<keywords/>
-		<modified>2024-08-02T18:37:29Z</modified>
+		<modified>2024-11-07T12:15:06Z</modified>
 		<revision/>
 		<subject/>
 		<title/>
@@ -43,59 +43,11 @@
 					</technique>
 				</extra>
 				<node>
-					<name>V_loc26</name>
-					<id>V_loc26</id>
-					<sid>V_loc26</sid>
-					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 106.452232 0.000000 0.000000 1.000000 -231.934143 0.000000 0.000000 0.000000 1.000000
-						<!--BW_String-->
-						<sid>matrix</sid>
-					</matrix>
-					<extra>
-						<technique>
-							<profile>FCOLLADA</profile>
-							<visibility>1.000000</visibility>
-						</technique>
-					</extra>
-				</node>
-				<node>
-					<name>V_loc27</name>
-					<id>V_loc27</id>
-					<sid>V_loc27</sid>
-					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 101.699593 0.000000 0.000000 1.000000 -252.709549 0.000000 0.000000 0.000000 1.000000
-						<!--BW_String-->
-						<sid>matrix</sid>
-					</matrix>
-					<extra>
-						<technique>
-							<profile>FCOLLADA</profile>
-							<visibility>1.000000</visibility>
-						</technique>
-					</extra>
-				</node>
-				<node>
 					<name>V_loc28</name>
 					<id>V_loc28</id>
 					<sid>V_loc28</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 91.012764 0.000000 0.000000 1.000000 -261.722168 0.000000 0.000000 0.000000 1.000000
-						<!--BW_String-->
-						<sid>matrix</sid>
-					</matrix>
-					<extra>
-						<technique>
-							<profile>FCOLLADA</profile>
-							<visibility>1.000000</visibility>
-						</technique>
-					</extra>
-				</node>
-				<node>
-					<name>V_loc29</name>
-					<id>V_loc29</id>
-					<sid>V_loc29</sid>
-					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 77.732033 0.000000 0.000000 1.000000 -264.545197 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 67.389366 0.000000 0.000000 1.000000 -263.140167 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -111,7 +63,7 @@
 					<id>V_loc1</id>
 					<sid>V_loc1</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 64.799080 0.000000 0.000000 1.000000 -260.587799 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 49.073685 0.000000 0.000000 1.000000 -250.547638 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -123,11 +75,11 @@
 					</extra>
 				</node>
 				<node>
-					<name>V_loc2</name>
-					<id>V_loc2</id>
-					<sid>V_loc2</sid>
+					<name>Track_VD_R0_loc2</name>
+					<id>Track_VD_R0_loc2</id>
+					<sid>Track_VD_R0_loc2</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 53.252911 0.000000 0.000000 1.000000 -251.067612 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 31.006413 0.000000 0.000000 1.000000 -228.626114 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -139,11 +91,11 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_VD_R0_loc3</name>
-					<id>Track_VD_R0_loc3</id>
-					<sid>Track_VD_R0_loc3</sid>
+					<name>Track_R0_loc3</name>
+					<id>Track_R0_loc3</id>
+					<sid>Track_R0_loc3</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 34.718307 0.000000 0.000000 1.000000 -227.994354 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 12.670617 0.000000 0.000000 1.000000 -202.567200 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -159,22 +111,6 @@
 					<id>Track_R0_loc4</id>
 					<sid>Track_R0_loc4</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 12.670617 0.000000 0.000000 1.000000 -202.567200 0.000000 0.000000 0.000000 1.000000
-						<!--BW_String-->
-						<sid>matrix</sid>
-					</matrix>
-					<extra>
-						<technique>
-							<profile>FCOLLADA</profile>
-							<visibility>1.000000</visibility>
-						</technique>
-					</extra>
-				</node>
-				<node>
-					<name>Track_R0_loc5</name>
-					<id>Track_R0_loc5</id>
-					<sid>Track_R0_loc5</sid>
-					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.538876 0.000000 0.000000 1.000000 -174.331390 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
@@ -187,9 +123,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_R1_loc6</name>
-					<id>Track_R1_loc6</id>
-					<sid>Track_R1_loc6</sid>
+					<name>Track_R1_loc5</name>
+					<id>Track_R1_loc5</id>
+					<sid>Track_R1_loc5</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.539236 0.000000 0.000000 1.000000 -103.537430 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -203,9 +139,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_R2_loc7</name>
-					<id>Track_R2_loc7</id>
-					<sid>Track_R2_loc7</sid>
+					<name>Track_R2_loc6</name>
+					<id>Track_R2_loc6</id>
+					<sid>Track_R2_loc6</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.539236 0.000000 0.000000 1.000000 -43.165466 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -219,9 +155,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_R3_loc8</name>
-					<id>Track_R3_loc8</id>
-					<sid>Track_R3_loc8</sid>
+					<name>Track_R3_loc7</name>
+					<id>Track_R3_loc7</id>
+					<sid>Track_R3_loc7</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.539175 0.000000 0.000000 1.000000 41.162617 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -235,11 +171,27 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_R4_loc9</name>
-					<id>Track_R4_loc9</id>
-					<sid>Track_R4_loc9</sid>
+					<name>Track_R4_loc8</name>
+					<id>Track_R4_loc8</id>
+					<sid>Track_R4_loc8</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.539114 0.000000 0.000000 1.000000 101.534454 0.000000 0.000000 0.000000 1.000000
+						<!--BW_String-->
+						<sid>matrix</sid>
+					</matrix>
+					<extra>
+						<technique>
+							<profile>FCOLLADA</profile>
+							<visibility>1.000000</visibility>
+						</technique>
+					</extra>
+				</node>
+				<node>
+					<name>Track_R5_loc9</name>
+					<id>Track_R5_loc9</id>
+					<sid>Track_R5_loc9</sid>
+					<matrix>
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.539114 0.000000 0.000000 1.000000 172.328522 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -255,22 +207,6 @@
 					<id>Track_R5_loc10</id>
 					<sid>Track_R5_loc10</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 8.539114 0.000000 0.000000 1.000000 172.328522 0.000000 0.000000 0.000000 1.000000
-						<!--BW_String-->
-						<sid>matrix</sid>
-					</matrix>
-					<extra>
-						<technique>
-							<profile>FCOLLADA</profile>
-							<visibility>1.000000</visibility>
-						</technique>
-					</extra>
-				</node>
-				<node>
-					<name>Track_R5_loc11</name>
-					<id>Track_R5_loc11</id>
-					<sid>Track_R5_loc11</sid>
-					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 11.572430 0.000000 0.000000 1.000000 198.482208 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
@@ -283,11 +219,27 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_VD_R1_loc12</name>
-					<id>Track_VD_R1_loc12</id>
-					<sid>Track_VD_R1_loc12</sid>
+					<name>Track_VD_R1_loc11</name>
+					<id>Track_VD_R1_loc11</id>
+					<sid>Track_VD_R1_loc11</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 29.706320 0.000000 0.000000 1.000000 235.206497 0.000000 0.000000 0.000000 1.000000
+						<!--BW_String-->
+						<sid>matrix</sid>
+					</matrix>
+					<extra>
+						<technique>
+							<profile>FCOLLADA</profile>
+							<visibility>1.000000</visibility>
+						</technique>
+					</extra>
+				</node>
+				<node>
+					<name>V_loc12</name>
+					<id>V_loc12</id>
+					<sid>V_loc12</sid>
+					<matrix>
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 45.923721 0.000000 0.000000 1.000000 268.464874 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -303,7 +255,7 @@
 					<id>V_loc13</id>
 					<sid>V_loc13</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 45.923721 0.000000 0.000000 1.000000 268.464874 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 55.219082 0.000000 0.000000 1.000000 279.263794 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -319,7 +271,7 @@
 					<id>V_loc14</id>
 					<sid>V_loc14</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 55.219082 0.000000 0.000000 1.000000 279.263794 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 65.722809 0.000000 0.000000 1.000000 283.779053 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -335,7 +287,7 @@
 					<id>V_loc15</id>
 					<sid>V_loc15</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 65.722809 0.000000 0.000000 1.000000 283.779053 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 81.179489 0.000000 0.000000 1.000000 281.990509 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -351,7 +303,7 @@
 					<id>V_loc16</id>
 					<sid>V_loc16</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 81.179489 0.000000 0.000000 1.000000 281.990509 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 92.199768 0.000000 0.000000 1.000000 273.615021 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -367,22 +319,6 @@
 					<id>V_loc17</id>
 					<sid>V_loc17</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 92.199768 0.000000 0.000000 1.000000 273.615021 0.000000 0.000000 0.000000 1.000000
-						<!--BW_String-->
-						<sid>matrix</sid>
-					</matrix>
-					<extra>
-						<technique>
-							<profile>FCOLLADA</profile>
-							<visibility>1.000000</visibility>
-						</technique>
-					</extra>
-				</node>
-				<node>
-					<name>V_loc18</name>
-					<id>V_loc18</id>
-					<sid>V_loc18</sid>
-					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 99.542671 0.000000 0.000000 1.000000 256.400543 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
@@ -395,9 +331,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_VT_R3_loc19</name>
-					<id>Track_VT_R3_loc19</id>
-					<sid>Track_VT_R3_loc19</sid>
+					<name>Track_VT_R3_loc18</name>
+					<id>Track_VT_R3_loc18</id>
+					<sid>Track_VT_R3_loc18</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 100.519875 0.000000 0.000000 1.000000 225.609390 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -411,9 +347,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>V_loc20</name>
-					<id>V_loc20</id>
-					<sid>V_loc20</sid>
+					<name>V_loc19</name>
+					<id>V_loc19</id>
+					<sid>V_loc19</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 102.666283 0.000000 0.000000 1.000000 186.872925 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -427,9 +363,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_VT_R2_loc21</name>
-					<id>Track_VT_R2_loc21</id>
-					<sid>Track_VT_R2_loc21</sid>
+					<name>Track_VT_R2_loc20</name>
+					<id>Track_VT_R2_loc20</id>
+					<sid>Track_VT_R2_loc20</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 103.549683 0.000000 0.000000 1.000000 116.880951 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -443,9 +379,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>V_loc22</name>
-					<id>V_loc22</id>
-					<sid>V_loc22</sid>
+					<name>V_loc21</name>
+					<id>V_loc21</id>
+					<sid>V_loc21</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 104.492630 0.000000 0.000000 1.000000 42.172913 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -459,9 +395,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_VT_R1_loc23</name>
-					<id>Track_VT_R1_loc23</id>
-					<sid>Track_VT_R1_loc23</sid>
+					<name>Track_VT_R1_loc22</name>
+					<id>Track_VT_R1_loc22</id>
+					<sid>Track_VT_R1_loc22</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 105.387497 0.000000 0.000000 1.000000 -28.727083 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -475,9 +411,9 @@
 					</extra>
 				</node>
 				<node>
-					<name>V_loc24</name>
-					<id>V_loc24</id>
-					<sid>V_loc24</sid>
+					<name>V_loc23</name>
+					<id>V_loc23</id>
+					<sid>V_loc23</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 106.318977 0.000000 0.000000 1.000000 -102.527168 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
@@ -491,11 +427,59 @@
 					</extra>
 				</node>
 				<node>
-					<name>Track_VT_R0_loc25</name>
-					<id>Track_VT_R0_loc25</id>
-					<sid>Track_VT_R0_loc25</sid>
+					<name>Track_VT_R0_loc24</name>
+					<id>Track_VT_R0_loc24</id>
+					<sid>Track_VT_R0_loc24</sid>
 					<matrix>
 						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 104.896111 0.000000 0.000000 1.000000 -171.483093 0.000000 0.000000 0.000000 1.000000
+						<!--BW_String-->
+						<sid>matrix</sid>
+					</matrix>
+					<extra>
+						<technique>
+							<profile>FCOLLADA</profile>
+							<visibility>1.000000</visibility>
+						</technique>
+					</extra>
+				</node>
+				<node>
+					<name>V_loc25</name>
+					<id>V_loc25</id>
+					<sid>V_loc25</sid>
+					<matrix>
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 107.689850 0.000000 0.000000 1.000000 -228.817673 0.000000 0.000000 0.000000 1.000000
+						<!--BW_String-->
+						<sid>matrix</sid>
+					</matrix>
+					<extra>
+						<technique>
+							<profile>FCOLLADA</profile>
+							<visibility>1.000000</visibility>
+						</technique>
+					</extra>
+				</node>
+				<node>
+					<name>V_loc26</name>
+					<id>V_loc26</id>
+					<sid>V_loc26</sid>
+					<matrix>
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 104.071655 0.000000 0.000000 1.000000 -249.846481 0.000000 0.000000 0.000000 1.000000
+						<!--BW_String-->
+						<sid>matrix</sid>
+					</matrix>
+					<extra>
+						<technique>
+							<profile>FCOLLADA</profile>
+							<visibility>1.000000</visibility>
+						</technique>
+					</extra>
+				</node>
+				<node>
+					<name>V_loc27</name>
+					<id>V_loc27</id>
+					<sid>V_loc27</sid>
+					<matrix>
+						1.000000 0.000000 0.000000 105.400002 0.000000 1.000000 0.000000 88.101311 0.000000 0.000000 1.000000 -263.958923 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>

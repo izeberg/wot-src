@@ -3309,13 +3309,6 @@
 						<slot>
 							<slotType>paint</slotType>
 							<slotId>41000</slotId>
-							<anchorPosition>-0.000134 0.006014 0.481497</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
 							<anchorPosition>
 								-0 0.084044 0.084043
 								<!--BW_String-->
@@ -3329,14 +3322,14 @@
 						<slot>
 							<slotType>camouflage</slotType>
 							<slotId>42000</slotId>
-							<anchorPosition>-0.000134 0.006014 0.481497</anchorPosition>
+							<anchorPosition>-0.000132 0.131231 0.048792</anchorPosition>
 							<anchorDirection>0 0 1</anchorDirection>
 							<applyTo>4096</applyTo>
 						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
+							<paint>GUN_2</paint>
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>

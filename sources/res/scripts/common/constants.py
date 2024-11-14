@@ -3200,7 +3200,7 @@ class SkillProcessorArgs(object):
         self.hasActiveTankmanForBooster = hasActiveTankmanForBooster
 
     def isSkillActive(self):
-        return self.isActive and not self.isFire
+        return self.isActive and not self.isFire and self.level
 
     def isBoosterApplicable(self):
         return (self.isActive or self.hasActiveTankmanForBooster) and not self.isFire

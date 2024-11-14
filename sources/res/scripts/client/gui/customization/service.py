@@ -196,7 +196,6 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         self._suspendHighlighterCallbackID = None
         self._isDraggingInProcess = False
         self._notHandleHighlighterEvent = False
-        self.__showCustomizationCallbackId = None
         self._selectedRegion = ApplyArea.NONE
         self._isHighlighterActive = False
         self.__showCustomizationKwargs = {}
@@ -233,9 +232,6 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         self.__showCustomizationKwargs = None
         self.__progressionQuestCache = None
         self.__progressionQuestIDs = None
-        if self.__showCustomizationCallbackId is not None:
-            BigWorld.cancelCallback(self.__showCustomizationCallbackId)
-            self.__showCustomizationCallbackId = None
         return
 
     @adisp.adisp_process
@@ -243,10 +239,6 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         if self.__customizationCtx is None:
             lobbyHeaderNavigationPossible = yield self.__lobbyContext.isHeaderNavigationPossible()
             if not lobbyHeaderNavigationPossible:
-                return
-        elif self.__customizationCtx.isOutfitsModified() and g_currentVehicle.invID != vehInvID:
-            result = yield self.__confirmClose()
-            if not result:
                 return
         self.__showCustomizationKwargs = {'vehInvID': vehInvID, 'callback': callback, 'season': season, 'modeId': modeId, 'tabId': tabId, 'itemCD': itemCD}
         shouldSelectVehicle = False
@@ -301,14 +293,13 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         itemCD = self.__showCustomizationKwargs.get('itemCD', None)
         callback = self.__showCustomizationKwargs.get('callback', None)
         loadCallback = lambda : self.__loadCustomization(vehInvID, callback, season, modeId, tabId, itemCD)
-        if self.__showCustomizationCallbackId is None:
-            cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
-            if cameraManager:
-                cameraManager.switchByCameraName(CUSTOMIZATION_CAMERA_NAME)
-            ClientSelectableCameraObject.deselectAll()
-            self.hangarSpace.space.getVehicleEntity().onSelect()
-            self.__moveHangarVehicleToCustomizationRoom()
-            self.__showCustomizationCallbackId = BigWorld.callback(0.0, lambda : self.__showCustomization(loadCallback))
+        cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
+        if cameraManager:
+            cameraManager.switchByCameraName(CUSTOMIZATION_CAMERA_NAME)
+        ClientSelectableCameraObject.deselectAll()
+        self.hangarSpace.space.getVehicleEntity().onSelect()
+        self.__moveHangarVehicleToCustomizationRoom()
+        self.__showCustomization(loadCallback)
         self.onVisibilityChanged(True)
         return
 
@@ -330,13 +321,13 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         if self.__customizationCtx is None:
             self.__customizationCtx = CustomizationContext()
             self.__customizationCtx.init(season, modeId, tabId, itemCD)
-            return
         else:
+            self.__customizationCtx.updateOutfits()
             if season is not None:
                 self.__customizationCtx.changeSeason(season)
             if modeId is not None:
                 self.__customizationCtx.changeMode(modeId, tabId, source)
-            return
+        return
 
     def __destroyCtx(self):
         if self.__customizationCtx is not None:
@@ -515,7 +506,6 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
             g_eventBus.removeListener(events.LobbySimpleEvent.NOTIFY_SPACE_MOVED, self.__onSpaceMoving)
 
     def __showCustomization(self, callback=None):
-        self.__showCustomizationCallbackId = None
         ctx = {}
         if callback is not None:
             ctx['callback'] = callback

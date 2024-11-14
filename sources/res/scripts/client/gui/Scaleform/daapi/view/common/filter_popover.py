@@ -428,5 +428,4 @@ class BattlePassCarouselFilterPopover(HangarTankCarouselFilterPopover):
         isBattlePass = self._carousel.getCustomParams().get('isBattlePass', True)
         dataVO = super(BattlePassCarouselFilterPopover, self)._getInitialVO(filters, xpRateMultiplier)
         dataVO['progressionsSectionVisible'] = self.__battlePassController.isVisible() and isBattlePass
-        dataVO['customizationVisible'] = False
         return dataVO

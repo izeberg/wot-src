@@ -1544,6 +1544,12 @@ msgstr "?empty?"
 msgid "awardItem/tourcoin/header"
 msgstr "Очки похода"
 
+msgid "awardItem/wdrcoin/body"
+msgstr "?empty?"
+
+msgid "awardItem/wdrcoin/header"
+msgstr "Жетон за выслугу лет"
+
 msgid "awardItem/xp/body"
 msgstr "Разовая прибавка к дополнительному боевому опыту."
 
@@ -13930,9 +13936,7 @@ msgid "vehiclePreview/shopPack/title"
 msgstr "В набор также входят:"
 
 msgid "vehiclePreview/tankman/newPerk/header"
-msgstr ""
-"Дополнительных навыков\n"
-"на выбор: %(quantity)s"
+msgstr "Дополнительных навыков основной специальности на выбор: %(quantity)s."
 
 msgid "vehiclePreview/tankman/skillsTitle"
 msgstr "Изученные навыки"

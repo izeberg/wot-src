@@ -182,7 +182,7 @@ def presetSkillsFromCfg(roles):
     for bonusRole in bonusRoles:
         bonusDecrCnt = NPS.MAX_BONUS_SKILLS_PER_ROLE
         for skill in cfg[bonusRole]:
-            if skill in skills_constants.COMMON_SKILLS_ORDERED:
+            if skill in COMMON_SKILLS_ORDERED:
                 continue
             if bonusDecrCnt == 0:
                 break
@@ -421,6 +421,18 @@ class TankmanDescr(object):
 
     def getSkillsMask(self):
         return getSkillsMask(self._skills + sum(self.__rolesBonusSkills.itervalues(), []))
+
+    def getActiveSkillsMask(self, tmanIndx, vehDescrType=None):
+        return getSkillsMask(self.getActiveSkills() + sum(self.getActiveBonusSkills(tmanIndx, vehDescrType).itervalues(), []))
+
+    def getActiveBonusSkills(self, tmanIndx, vehDescrType=None):
+        vehicleDescrType = vehDescrType or vehicles.g_cache.vehicle(self.nationID, self.vehicleTypeID)
+        bonusRoles = vehicleDescrType.crewRoles[tmanIndx]
+        return {role:skills for role, skills in self.__rolesBonusSkills.items() if role in bonusRoles}
+
+    def getActiveSkills(self):
+        skills_by_roles = set(SKILLS_BY_ROLES[self.role]) | set(COMMON_SKILLS_ORDERED)
+        return [ skill for skill in self.skills if skill in skills_by_roles ]
 
     @property
     def earnedSkills(self):
