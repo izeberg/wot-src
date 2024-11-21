@@ -121,6 +121,7 @@ package net.wg.gui.notification
                   _loc1_.addEventListener(ServiceMessageEvent.MESSAGE_LINK_CLICKED,this.onPopUpMessageLinkClickedHandler,false,0,true);
                   _loc1_.addEventListener(ServiceMessagePopUp.EVENT_HIDED,this.onPopUpHidedHandler,false,0,true);
                   _loc1_.addEventListener(Event.RESIZE,this.onPopUpResizeHandler);
+                  _loc1_.addEventListener(Event.RESIZE,this.onPopUpResizeHanlder,false,0,true);
                   _loc4_ += _loc2_;
                   this._displayingNowPopUps.splice(_loc7_,0,_loc1_);
                   _loc7_++;
@@ -416,6 +417,12 @@ package net.wg.gui.notification
          var _loc1_:Boolean = this._countViewsWithExternalPadding > 0 && this._countOverlayViews == 0 && this._externalPadding;
          var _loc2_:Point = !!_loc1_ ? this._externalPadding : DEFAULT_PADDING;
          this.setPadding(_loc2_);
+      }
+      
+      private function onPopUpResizeHanlder(param1:Event) : void
+      {
+         this._arrangeLayout = true;
+         invalidate();
       }
       
       private function onSMContainerMouseOverHandler(param1:MouseEvent) : void

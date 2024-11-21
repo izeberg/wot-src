@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz36_Lisak_v2/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz36_Lisak_v2/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.811732 -0.636140 -3.976604</min>
+		<max>1.833910 0.561819 3.861870</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,269 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "checkbox/inventory"
+msgstr "Ёсць у Гаражы"
+
+msgid "infotip/counter"
+msgstr "Пасуе да машын: %(count)d з %(total)d"
+
+msgid "infotip/event"
+msgstr "Адмысловая тэхніка схавана"
+
+msgid "infotip/header/description"
+msgstr "Паказвае машыны, якія адпавядаюць зададзеным патрабаванням."
+
+msgid "infotip/header/title"
+msgstr "Фільтр тэхнікі"
+
+msgid "infotip/levels"
+msgstr "Узроўні:"
+
+msgid "infotip/nations"
+msgstr "Дзяржавы:"
+
+msgid "infotip/only"
+msgstr "Толькі наступная тэхніка:"
+
+msgid "infotip/only/elite"
+msgstr "Элітная"
+
+msgid "infotip/only/favorite"
+msgstr "Асноўная"
+
+msgid "infotip/only/premium"
+msgstr "Прэміум"
+
+msgid "infotip/rent"
+msgstr "Пракатная тэхніка схавана"
+
+msgid "infotip/searchNameVehicle"
+msgstr "Шукаць па назве:"
+
+msgid "infotip/vehicleTypes"
+msgstr "Тыпы:"
+
+msgid "popover/checkbox/battleRoyale"
+msgstr "Схаваць непрыдатныя машыны"
+
+msgid "popover/checkbox/elite"
+msgstr "Элітная"
+
+msgid "popover/checkbox/event"
+msgstr "Адмысловая"
+
+msgid "popover/checkbox/favorite"
+msgstr "Асноўная"
+
+msgid "popover/checkbox/premium"
+msgstr "Прэміум"
+
+msgid "popover/checkbox/rented"
+msgstr "Пракатная"
+
+msgid "popover/checkbox/unlock_available"
+msgstr "Якую можна даследаваць"
+
+msgid "popover/counter"
+msgstr "Паказваецца машын: %(count)s"
+
+msgid "popover/label/hidden"
+msgstr "Дадаткова"
+
+msgid "popover/label/levels"
+msgstr "Узровень"
+
+msgid "popover/label/nations"
+msgstr "Дзяржава"
+
+msgid "popover/label/progressions"
+msgstr "Баявы пропуск"
+
+msgid "popover/label/roles/AT-SPG"
+msgstr "Ролі СТ-САУ %(levels)s"
+
+msgid "popover/label/roles/SPG"
+msgstr "Ролі САУ %(levels)s"
+
+msgid "popover/label/roles/heavyTank"
+msgstr "Ролі цяжкіх танкаў %(levels)s"
+
+msgid "popover/label/roles/lightTank"
+msgstr "Ролі лёгкіх танкаў %(levels)s"
+
+msgid "popover/label/roles/mediumTank"
+msgstr "Ролі сярэдніх танкаў %(levels)s"
+
+msgid "popover/label/searchNameVehicle"
+msgstr "Пошук паводле назвы"
+
+msgid "popover/label/specials"
+msgstr "Асаблівыя"
+
+msgid "popover/label/vehicleTypes"
+msgstr "Тып"
+
+msgid "popover/title"
+msgstr "Фільтр параметраў"
+
+msgid "tooltip/battleRoyale/body"
+msgstr ""
+"Уключыць / адключыць паказ тэхнікі, непрыдатнай для ўдзелу ў рэжыме «Сталёвы"
+" паляўнічы»."
+
+msgid "tooltip/battleRoyale/header"
+msgstr "Схаваць непрыдатныя машыны"
+
+msgid "tooltip/bonus/body"
+msgstr ""
+"Паказваць/схаваць тэхніку з актыўным каэфіцыентам досведу ×%(multiplier)s."
+
+msgid "tooltip/bonus/header"
+msgstr "Акцыйны досвед"
+
+msgid "tooltip/clanRented/body"
+msgstr ""
+"Паказваць/схаваць тэхніку, узятую напракат для ўдзелу ў баях на Глабальнай "
+"карце і ва Умацаваных раёнах."
+
+msgid "tooltip/clanRented/header"
+msgstr "Пракатная тэхніка для кланавых баёў"
+
+msgid "tooltip/comp7/body"
+msgstr "Паказваць/схаваць тэхніку, прыдатную для рэжыму «Націск»."
+
+msgid "tooltip/comp7/header"
+msgstr "Тэхніка рэжыму «Націск»"
+
+msgid "tooltip/crystals/body"
+msgstr "Уключыць/адключыць паказ тэхнікі, якая можа здабываць боны."
+
+msgid "tooltip/crystals/header"
+msgstr "Тэхніка, якая здабывае боны"
+
+msgid "tooltip/debut_boxes/body"
+msgstr "Паказваць/схаваць тэхніку, якая ўдзельнічае ў падзеі."
+
+msgid "tooltip/debut_boxes/header"
+msgstr "«Нашы перамогі»"
+
+msgid "tooltip/early_access/body"
+msgstr "Паказваць/схаваць тэхніку падзеі «Ранні доступ»."
+
+msgid "tooltip/early_access/header"
+msgstr "Тэхніка ранняга доступу"
+
+msgid "tooltip/elite/body"
+msgstr ""
+"Паказваць/схаваць тэхніку, на якой даследаваны ўсе модулі і наступныя машыны"
+" ў галіне развіцця."
+
+msgid "tooltip/elite/header"
+msgstr "Элітная тэхніка"
+
+msgid "tooltip/event/body"
+msgstr ""
+"Паказваць/схаваць тэхніку, якая прызначаецца для адмысловых гульнявых "
+"падзей."
+
+msgid "tooltip/event/header"
+msgstr "Адмысловая тэхніка"
+
+msgid "tooltip/favorite/body"
+msgstr "Паказваць/схаваць толькі асноўную тэхніку."
+
+msgid "tooltip/favorite/header"
+msgstr "Асноўная тэхніка"
+
+msgid "tooltip/gameMode/body"
+msgstr "Паказваць/схаваць тэхніку, прыдатную для падрэжыму %(battleType)s."
+
+msgid "tooltip/gameMode/header"
+msgstr "Бой да апошняга"
+
+msgid "tooltip/igr/body"
+msgstr "Паказваць/схаваць тэхніку IGR."
+
+msgid "tooltip/igr/header"
+msgstr "Тэхніка IGR"
+
+msgid "tooltip/inventory/body"
+msgstr "?empty?"
+
+msgid "tooltip/inventory/header"
+msgstr "?empty?"
+
+msgid "tooltip/isCommonProgression/body"
+msgstr ""
+"Паказаць машыны, на якіх можна здабываць ачкі прагрэсіі або выконваць "
+"задачы, што прыносяць ачкі прагрэсіі."
+
+msgid "tooltip/isCommonProgression/header"
+msgstr "Тэхніка Баявога пропуска"
+
+msgid "tooltip/isCompetitiveProgression/body"
+msgstr "?empty?"
+
+msgid "tooltip/isCompetitiveProgression/header"
+msgstr "?empty?"
+
+msgid "tooltip/nations/body"
+msgstr "Паказваць/схаваць тэхніку гэтай дзяржавы."
+
+msgid "tooltip/params/body"
+msgstr ""
+"Наладка паказу тэхнікі паводле дзяржавы, тыпу, узроўню і іншых параметраў."
+
+msgid "tooltip/params/header"
+msgstr "Фільтр параметраў"
+
+msgid "tooltip/premium/body"
+msgstr "Паказваць/схаваць толькі прэміум і ўзнагародную тэхніку."
+
+msgid "tooltip/premium/header"
+msgstr "Прэміум тэхніка"
+
+msgid "tooltip/ranked/body"
+msgstr "Паказваць/схаваць тэхніку, прыдатную для рэжыму «Рангавы бой»."
+
+msgid "tooltip/ranked/header"
+msgstr "Тэхніка рэжыму «Рангавы бой»"
+
+msgid "tooltip/rented/body"
+msgstr "Паказваць/схаваць узятую напракат тэхніку."
+
+msgid "tooltip/rented/header"
+msgstr "Пракатная тэхніка"
+
+msgid "tooltip/role/body"
+msgstr "Паказваць/не паказваць тэхніку гэтай ролі."
+
+msgid "tooltip/rtsBattles/body"
+msgstr ""
+"Паказваць / схаваць тэхніку, прыдатную для ўдзелу ў падзеі «Мастацтва "
+"стратэгіі»."
+
+msgid "tooltip/rtsBattles/header"
+msgstr "Схаваць непрыдатныя машыны"
+
+msgid "tooltip/searchInput/body"
+msgstr "Назва машыны павінна мець даўжыню не больш за %(count)d сімвалаў."
+
+msgid "tooltip/searchInput/header"
+msgstr "Пошук паводле назвы"
+
+msgid "tooltip/toggleSwitchCarousel/body"
+msgstr "Пераключыцца паміж аднаўзроўневай і двухузроўневай панэлямі тэхнікі."
+
+msgid "tooltip/toggleSwitchCarousel/header"
+msgstr "Панэль тэхнікі"
+
+msgid "tooltip/vehicleTypes/body"
+msgstr "Паказваць/схаваць тэхніку гэтага тыпу."

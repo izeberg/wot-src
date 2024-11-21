@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.217129 -0.204451 -0.107671</min>
+		<max>0.362854 0.262154 4.629192</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

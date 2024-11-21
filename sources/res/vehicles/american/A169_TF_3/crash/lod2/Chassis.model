@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A169_TF_3/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A169_TF_3/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.783997 -0.000018 -4.011454</min>
+		<max>1.775416 0.991306 4.204278</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

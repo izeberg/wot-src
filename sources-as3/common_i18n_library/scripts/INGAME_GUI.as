@@ -121,8 +121,6 @@ package
       
       public static const PLAYER_ERRORS_EQUIPMENT_POI_UNAVAILABLE:String = "#ingame_gui:player_errors/equipment/poi/unavailable";
       
-      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_HEALTHATFULLHP:String = "#ingame_gui:player_messages/equipment/wtEvent/healthAtFullHP";
-      
       public static const PLAYER_MESSAGES_DEVICE_CRITICAL_AT_SHOT:String = "#ingame_gui:player_messages/DEVICE_CRITICAL_AT_SHOT";
       
       public static const PLAYER_MESSAGES_DEVICE_DESTROYED_AT_SHOT:String = "#ingame_gui:player_messages/DEVICE_DESTROYED_AT_SHOT";
@@ -1286,10 +1284,6 @@ package
       public static const EFFICIENCYRIBBONS_AIRSTRIKEDMG:String = "#ingame_gui:efficiencyRibbons/AirstrikeDmg";
       
       public static const EFFICIENCYRIBBONS_ARTILLERYDMG:String = "#ingame_gui:efficiencyRibbons/ArtilleryDmg";
-      
-      public static const EFFICIENCYRIBBONS_HEALTHADDED:String = "#ingame_gui:efficiencyRibbons/healthAdded";
-      
-      public static const EFFICIENCYRIBBONS_WTRECEIVEDCIRCUITOVERLOAD:String = "#ingame_gui:efficiencyRibbons/wtReceivedCircuitOverload";
       
       public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING";
       

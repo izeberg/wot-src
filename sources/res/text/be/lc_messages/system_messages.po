@@ -1,0 +1,4722 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "account_was_restored"
+msgstr "Ваш акаўнт адноўлены"
+
+msgid "achievements/server_error"
+msgstr "Змены стужкі значных узнагарод не захаваны."
+
+msgid "actionAchievement/title"
+msgstr "Акцыйны медаль"
+
+msgid "actionAchievements/title"
+msgstr "Акцыйныя медалі"
+
+msgid "add_tankman_skill/invalid_vehicle"
+msgstr "Не ўдалося вывучыць навык,. Памылковая машына."
+
+msgid "add_tankman_skill/server_error"
+msgstr "Новы навык не вывучаны. Паспрабуйце пазней."
+
+msgid "add_tankman_skill/success"
+msgstr "Вывучаны новы навык: %(skill)s."
+
+msgid "add_tankman_skill/vehicle_locked"
+msgstr "Не ўдалося вывучыць навык, бо машына заблакаваная."
+
+msgid "add_tankman_skill/vehicle_need_repair"
+msgstr "Не ўдалося вывучыць навык, бо машына патрабуе рамонту."
+
+msgid "another_periphery"
+msgstr "Сеанс на іншым серверы не завершаны."
+
+msgid "arena_start_errors/join/ACCOUNT_LOCK"
+msgstr "Нельга ўступіць у бой, бо вы ўжо ў складзе каманды."
+
+msgid "arena_start_errors/join/CANNOT_CREATE"
+msgstr "Нельга ўступіць у бой. Памылковы нумар каманды."
+
+msgid "arena_start_errors/join/COOLDOWN"
+msgstr "Не ўдалося далучыцца. Аперацыя часова прыпынена. Паспрабуйце пазней."
+
+msgid "arena_start_errors/join/EVENT_DISABLED"
+msgstr "Зараз гэта падзея недаступная. Сачыце за навінамі на партале гульні."
+
+msgid "arena_start_errors/join/NOT_FOUND"
+msgstr "Нельга ўступіць у бой, бо запрашэнне нядзейснае."
+
+msgid "arena_start_errors/join/PRIVACY"
+msgstr "Нельга далучыцца да бою. Недастаткова правоў."
+
+msgid "arena_start_errors/join/QUEUE_FAILURE"
+msgstr "Немагчыма ўступіць у бой: чарга недаступная. Паспрабуйце пазней."
+
+msgid "arena_start_errors/join/QUEUE_FULL"
+msgstr "Дзеянне недаступнае: чарга перапоўнена. Паспрабуйце пазней."
+
+msgid "arena_start_errors/join/TEAM_IS_FULL"
+msgstr "Нельга ўступіць у бой, бо каманда ўжо сфарміравана."
+
+msgid "arena_start_errors/join/TIME_OUT"
+msgstr "Не ўдалося далучыцца. Задоўга няма адказу ад сервера."
+
+msgid "arena_start_errors/join/WRONG_ACCOUNT_TYPE"
+msgstr "Не ўдалося далучыцца. Гэта недаступна акаўнту такога тыпу."
+
+msgid "arena_start_errors/join/WRONG_ARENA_STATE"
+msgstr "Памылка ўступу ў бой."
+
+msgid "arena_start_errors/join/WRONG_ARGS"
+msgstr "Памылка далучэння, WRONG_ARGS."
+
+msgid "arena_start_errors/join/WRONG_BATTLE_ID"
+msgstr "Нельга ўступіць у бой. Выбраны Гістарычны бой недаступны."
+
+msgid "arena_start_errors/join/WRONG_PERIPHERY_KNOWN"
+msgstr "Памылка далучэння. Выберыце сервер %s."
+
+msgid "arena_start_errors/join/WRONG_PERIPHERY_UNKNOWN"
+msgstr "Памылка далучэння. Выберыце іншы сервер."
+
+msgid "arena_start_errors/join/WRONG_VEHICLE"
+msgstr "Нельга ўступіць у бой, бо цяперашняя машына не гатовая."
+
+msgid "arena_start_errors/join/WRONG_VEHICLE_LVL"
+msgstr "Памылка: тэхніка такога ўзроўню не можа браць удзел у гэтым рэжыме."
+
+msgid "arena_start_errors/join/no_readyVehicle"
+msgstr "Нельга ўступіць у бой, бо машына не гатовая."
+
+msgid "arena_start_errors/join/no_vehicle"
+msgstr "Каб даць бой, трэба купіць машыну."
+
+msgid "arena_start_errors/kick/ARENA_CREATION_FAILURE"
+msgstr "Нельга ўступіць у бой (ARENA_CREATION_FAILURE)"
+
+msgid "arena_start_errors/kick/AVATAR_CREATION_FAILURE"
+msgstr "Нельга ўступіць у бой (AVATAR_CREATION_FAILURE)"
+
+msgid "arena_start_errors/kick/BASEAPP_CRASH"
+msgstr "Нельга ўступіць у бой (BASEAPP_CRASH)"
+
+msgid "arena_start_errors/kick/CELLAPP_CRASH"
+msgstr "Нельга ўступіць у бой (CELLAPP_CRASH)"
+
+msgid "arena_start_errors/kick/CREATOR_LEFT"
+msgstr "Нельга ўступіць у бой (CREATOR_LEFT)"
+
+msgid "arena_start_errors/kick/FINISHED"
+msgstr "Нельга ўступіць у бой (FINISHED)"
+
+msgid "arena_start_errors/kick/PLAYERKICK"
+msgstr "Нельга ўступіць у бой (PLAYERKICK)"
+
+msgid "arena_start_errors/kick/PREBATTLE_CREATION_FAILURE"
+msgstr "Нельга ўступіць у бой (PREBATTLE_CREATION_FAILURE)"
+
+msgid "arena_start_errors/kick/TIMEOUT"
+msgstr "Нельга ўступіць у бой (TIMEOUT)"
+
+msgid "arena_start_errors/kick/UNKNOWN_FAILURE"
+msgstr "Нельга ўступіць у бой (UNKNOWN_FAILURE)"
+
+msgid "arena_start_errors/kick/VEHICLE_CREATION_FAILURE"
+msgstr "Нельга ўступіць у бой (VEHICLE_CREATION_FAILURE)"
+
+msgid "arena_start_errors/prb/kick/timeout"
+msgstr "Час чакання ў чарзе скончыўся, змяніце машыну або паспрабуйце пазней."
+
+msgid "artefact_apply/error_not_for_this_vehicle_type"
+msgstr "%(kind)s «%(name)s» не пасуе да гэтай машыны."
+
+msgid "artefact_apply/invalid_vehicle"
+msgstr "Не ўдалося ўсталяваць %(kind)s «%(name)s». Памылковая машына."
+
+msgid "artefact_apply/money_success"
+msgstr "%(kind)s «%(name)s» дэмантавана з машыны. Выдаткавана %(money)s."
+
+msgid "artefact_apply/server_error"
+msgstr ""
+"Памылка сервера падчас усталявання %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "artefact_apply/success"
+msgstr "%(kind)s «%(name)s» усталявана на машыну."
+
+msgid "artefact_apply/vehicle_locked"
+msgstr "Машына заблакіравана. %(kind)s «%(name)s» не ўсталявана."
+
+msgid "artefact_apply/vehicle_need_repair"
+msgstr ""
+"Машына пашкоджана. %(kind)s «%(name)s» не ўсталявана. Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "artefact_buy/error_not_for_this_vehicle_type"
+msgstr "%(kind)s «%(name)s» не пасуе да гэтай машыны."
+
+msgid "artefact_buy/invalid_module"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Памылковы модуль."
+
+msgid "artefact_buy/invalid_vehicle"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Памылковая машына."
+
+msgid "artefact_buy/not_enough_credits"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+
+msgid "artefact_buy/not_enough_crystal"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала бонаў."
+
+msgid "artefact_buy/not_enough_eventCoin"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала юбілейных манет."
+
+msgid "artefact_buy/not_enough_gold"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала золата."
+
+msgid "artefact_buy/server_error"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "artefact_buy/server_error_centerDown"
+msgstr ""
+"Не ўдалося купіць %(kind)s «%(name)s», бо гэта паслуга часова недаступная."
+
+msgid "artefact_buy/success"
+msgstr "%(kind)s «%(name)s» куплена (%(count)s шт.). Выдаткавана %(money)s."
+
+msgid "artefact_buy/vehicle_locked"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s», бо машына заблакавана."
+
+msgid "artefact_buy/vehicle_need_repair"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "artefact_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "artefact_deconstructing/invalid_module"
+msgstr "Не атрымалася разабраць абсталяванне «%(name)s». Непрыдатны модуль."
+
+msgid "artefact_deconstructing/server_error"
+msgstr "Не атрымалася разабраць абсталяванне «%(name)s». Паспрабуйце пазней."
+
+msgid "artefact_deconstructing/success"
+msgstr ""
+"Вы разабралі абсталяванне «%(name)s» (x%(count)s) і атрымалі %(money)s."
+
+msgid "artefact_deconstructingMult/success"
+msgstr "Вы разабралі абсталяванне «%(names)s» і атрымалі %(money)s."
+
+msgid "artefact_demount/error_not_enough_resources"
+msgstr "Абсталяванне «%(equipment)s» не дэмантавана. Замала сродкаў."
+
+msgid "artefact_destroy/invalid_vehicle"
+msgstr "Не ўдалося знішчыць %(kind)s «%(name)s». Памылковая машына."
+
+msgid "artefact_destroy/server_error"
+msgstr ""
+"Памылка сервера падчас знішчэння %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "artefact_destroy/success"
+msgstr "%(kind)s «%(name)s» знішчана пры дэмантажы."
+
+msgid "artefact_destroy/vehicle_locked"
+msgstr "Машына заблакавана. %(kind)s «%(name)s» не знішчана."
+
+msgid "artefact_destroy/vehicle_need_repair"
+msgstr ""
+"Машына пашкоджана. %(kind)s «%(name)s» не знішчана. Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "artefact_remove/demount_kit_success"
+msgstr "%(kind)s «%(name)s» знята з машыны. Выкарыстаны дэмантажны набор."
+
+msgid "artefact_remove/incompatibleEqs"
+msgstr ""
+"Рыштунак «%s» перамешчаны на Склад, бо ён несумяшчальны з усталяваным "
+"модулем."
+
+msgid "artefact_remove/invalid_vehicle"
+msgstr "Не ўдалося дэмантаваць %(kind)s «%(name)s». Памылковая машына."
+
+msgid "artefact_remove/money_success"
+msgstr "%(kind)s «%(name)s» дэмантавана з машыны. Выдаткавана %(money)s."
+
+msgid "artefact_remove/server_error"
+msgstr ""
+"Памылка сервера падчас дэмантажу %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "artefact_remove/success"
+msgstr "%(kind)s «%(name)s» дэмантавана з машыны."
+
+msgid "artefact_remove/vehicle_locked"
+msgstr "Машына заблакавана. %(kind)s «%(name)s» не дэмантавана."
+
+msgid "artefact_remove/vehicle_need_repair"
+msgstr ""
+"Машына пашкоджана. %(kind)s «%(name)s» не дэмантавана. Адрамантуйце машыну і"
+" паспрабуйце зноў."
+
+msgid "artefact_remove/wot_plus_success"
+msgstr "Абсталяванне %(name)s знята з машыны бясплатна па падпісцы."
+
+msgid "artefact_sell/invalid_module"
+msgstr "Не ўдалося прадаць %(kind)s «%(name)s». Памылковы модуль."
+
+msgid "artefact_sell/server_error"
+msgstr "Не ўдалося прадаць %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "artefact_sell/success"
+msgstr "%(kind)s «%(name)s» (%(count)s шт.). Атрымана %(money)s."
+
+msgid "artefact_upgrade/server_error"
+msgstr "Памылка наладкі абсталявання. Паспрабуйце пазней."
+
+msgid "artefact_upgrade/success"
+msgstr ""
+"%(kind)s «%(name)s» паспяхова прайшло наладку, характарыстыкі палепшаны. "
+"Выдаткавана %(money)s."
+
+msgid "artefact_upgrade/success/analogWasDemounted"
+msgstr ""
+"%(kind)s «%(name)s» паспяхова прайшло наладку, характарыстыкі палепшаны. Выдаткавана %(money)s.\n"
+"\n"
+"Аналагічнае абсталяванне з альтэрнатыўнага набору змешчана на Склад."
+
+msgid "artefact_upgrade/vehicle_need_repair"
+msgstr ""
+"Машына пашкоджана. %(kind)s «%(name)s» не наладжана. Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "badges/select/server_error"
+msgstr "Памылка сервера"
+
+msgid "badges/select/server_error/COOLDOWN"
+msgstr "Дзеянне недаступнае. Дачакайце заканчэння бягучай аперацыі."
+
+msgid "battle/request/SEND_INVITES"
+msgstr "Адпраўленне запрашэнняў"
+
+msgid "battleAbilities_apply/error"
+msgstr "Памылка наладжвання баявых рэзерваў. Паспрабуйце яшчэ раз пазней."
+
+msgid "battleBooster_buy/credits_error"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+
+msgid "battleBooster_buy/crystal_error"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала бонаў."
+
+msgid "battleBooster_buy/error_not_for_this_vehicle_type"
+msgstr "%(kind)s «%(name)s» не пасуе да гэтай машыны."
+
+msgid "battleBooster_buy/eventCoin_error"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала юбілейных манет."
+
+msgid "battleBooster_buy/gold_error"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала золата."
+
+msgid "battleBooster_buy/invalid_module"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Памылковы модуль."
+
+msgid "battleBooster_buy/invalid_vehicle"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Памылковая машына."
+
+msgid "battleBooster_buy/not_enough_credits"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+
+msgid "battleBooster_buy/not_enough_crystal"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала бонаў."
+
+msgid "battleBooster_buy/not_enough_eventCoin"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала юбілейных манет."
+
+msgid "battleBooster_buy/not_enough_gold"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала золата."
+
+msgid "battleBooster_buy/server_error"
+msgstr ""
+"Аперацыя з настаўленнямі часова недаступныя: вядуцца тэхнічныя работы."
+
+msgid "battleBooster_buy/server_error_centerDown"
+msgstr ""
+"Не ўдалося купіць %(kind)s «%(name)s», бо гэта паслуга часова недаступная."
+
+msgid "battleBooster_buy/success"
+msgstr "%(kind)s «%(name)s» куплена (%(count)s шт.). Выдаткавана %(money)s."
+
+msgid "battleBooster_buy/vehicle_locked"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s», бо машына заблакіравана."
+
+msgid "battleBooster_buy/vehicle_need_repair"
+msgstr ""
+"Машына пашкоджана, таму не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». "
+"Адрамантуйце машыну і паспрабуйце зноўку."
+
+msgid "battleBooster_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "battleBooster_sell/server_error"
+msgstr ""
+"Аперацыя з настаўленнямі часова недаступныя: вядуцца тэхнічныя работы."
+
+msgid "battleBooster_sell/success"
+msgstr "%(kind)s «%(name)s» прададзена (%(count)s шт.). Атрымана %(money)s."
+
+msgid "battleBoosters_apply/error"
+msgstr "Памылка аперацыі з настаўленнямі. Паспрабуйце яшчэ раз пазней."
+
+msgid "battleBoosters_apply/not_enough_money"
+msgstr "Памылка аперацыі з настаўленнямі. Замала сродкаў для куплі."
+
+msgid "battleBoosters_apply/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага кашалька."
+
+msgid "battlePass/activateChapter/success"
+msgstr "Актываваны раздзел «%(chapter)s»"
+
+msgid "battlePass/gameModeEnabled/body/22"
+msgstr ""
+"Байцы! Не забывайцеся, што можна здабываць ачкі Баявога пропуска ў Рангавых "
+"баях!"
+
+msgid "battlePass/gameModeEnabled/body/27"
+msgstr ""
+"Байцы! Не забывайцеся, што можна здабываць ачкі Баявога пропуска ў Лініі "
+"фронту!"
+
+msgid "battlePass/gameModeEnabled/body/37"
+msgstr ""
+"Байцы! Не забывайцеся, што можна здабываць ачкі Баявога пропуска ў рэжыме "
+"«Разведка боем»!"
+
+msgid "battlePass/gameModeEnabled/body/43"
+msgstr ""
+"Байцы! Не забывайцеся, што можна здабываць ачкі Баявога пропуска ў "
+"«Націску»!"
+
+msgid "battlePass/gameModeEnabled/header"
+msgstr "Баявы пропуск, сезон %(seasonNum)d"
+
+msgid "battlePass/marathonFinish/body"
+msgstr "Падзея «%(name)s» завершана, дзякуем за ўдзел!"
+
+msgid "battlePass/marathonFinish/header"
+msgstr "Баявы пропуск, раздзел «%(name)s»"
+
+msgid "battlePass/marathonStarted/body"
+msgstr ""
+"Камандзір! У межах Баявога пропуска стартавала падзея «%(name)s», у якой вы "
+"можаце атрымаць новую машыну і 3D-стыль для яе!"
+
+msgid "battlePass/marathonStarted/header"
+msgstr "Баявы пропуск: даступны новы раздзел!"
+
+msgid "battlePass/marathonWillEndSoon/body"
+msgstr ""
+"Баец, засталося зусім няшмат часу да таго, як раздзел «%(name)s» знікне. "
+"Паспяшайцеся!"
+
+msgid "battlePass/marathonWillEndSoon/header"
+msgstr "Баявы пропуск, раздзел «%(name)s»"
+
+msgid "battlePass/recourseChapterUnlock/body"
+msgstr ""
+"Камандзір! У межах Баявога пропуска разблакаваны доступ да дадатковага "
+"раздзела «%(chapter)s», за праходжанне якога вы атрымаеце каштоўныя "
+"ўзнагароды."
+
+msgid "battlePass/recourseChapterUnlock/header"
+msgstr "Баявы пропуску: раздзел «%(chapter)s» стаў даступны!"
+
+msgid "battlePass/rewardChoice/error"
+msgstr "Памылка пры выбары ўзнагарод. Калі ласка, паспрабуйце яшчэ раз."
+
+msgid "battlePass/seasonEnd/rewards/blueprints"
+msgstr "Атрыманы чарцяжы %(name)s"
+
+msgid "battlePass/seasonEnd/rewards/crewBook"
+msgstr "Атрымана %(name)s"
+
+msgid "battlePass/seasonEnd/rewards/device"
+msgstr "Атрымана штатнае абсталяванне %(name)s"
+
+msgid "battlePass/seasonEnd/rewards/expequipment"
+msgstr "Атрымана эксперыментальнае абсталяванне %(name)s"
+
+msgid "battlePass/seasonEnd/rewards/style"
+msgstr "Атрыманы стыль %(name)s"
+
+msgid "battlePass/seasonEnd/rewards/trophy"
+msgstr "Атрымана трафейнае абсталяванне %(name)s"
+
+msgid "battlePass/seasonEnd/text"
+msgstr ""
+"Сезон Баявога пропуска завяршыўся. Усе ўзнагароды, якія вы не выбралі падчас"
+" сезона, налічаны вам па змаўчанні:"
+
+msgid "battlePass/switchChapter/error"
+msgstr "Памылка пры выбары раздзела. Калі ласка, паспрабуйце яшчэ раз."
+
+msgid "battlePass/switchChapter/reminder"
+msgstr "Выберыце раздзел. У любы момант вы зможаце пераключыцца на іншы."
+
+msgid "battlePass/switchChapter/success"
+msgstr "Вы змянілі раздзел. Цяпер актыўны раздзел «%(chapter)s»"
+
+msgid "battlePass/switch_disable/battle_royale/body"
+msgstr ""
+"Баявы пропуск для Сталёвага паляўнічага часова недаступны: ідуць тэхнічныя "
+"працы. Выбачайце за нязручнасці."
+
+msgid "battlePass/switch_disable/body"
+msgstr "Сезон завяршыўся, але мы абавязкова сустрэнемся ў наступным!"
+
+msgid "battlePass/switch_disable/comp7/body"
+msgstr ""
+"Часова немагчыма здабываць ачкі Баявога пропуска ў рэжыме «Націск». Вядуцца "
+"тэхнічныя работы."
+
+msgid "battlePass/switch_disable/epicBattle/body"
+msgstr ""
+"Баявы пропуск на Лініі фронту часова недаступны. Вядуцца тэхнічныя працы."
+
+msgid "battlePass/switch_disable/incompleteStyle"
+msgstr "Стыль «%(styleName)s» можна палепшыць на экране выгляду."
+
+msgid "battlePass/switch_disable/ranked/body"
+msgstr ""
+"Баявы пропуск у Рангавых баях часова недаступны. Вядуцца тэхнічныя працы."
+
+msgid "battlePass/switch_disable/title"
+msgstr "Баявы пропуск, сезон %(seasonNum)d"
+
+msgid "battlePass/switch_enabled/body"
+msgstr ""
+"Баявы пропуск зноў дзейнічае. Выбачаемся за нязручнасці.\n"
+"Сезон працягнуты да %(expiryTime)s."
+
+msgid "battlePass/switch_enabled/comp7/body"
+msgstr ""
+"Зноў можна здабываць ачкі Баявога пропуска ў рэжыме «Націск». Выбачаемся за "
+"нязручнасці."
+
+msgid "battlePass/switch_enabled/epicBattle/body"
+msgstr ""
+"Баявы пропуск на Лініі фронту зноў даступны. Выбачайце за нязручнасці."
+
+msgid "battlePass/switch_enabled/ranked/body"
+msgstr ""
+"Баявы пропуск у Рангавых баях зноў даступны. Выбачайце за нязручнасці."
+
+msgid "battlePass/switch_pause/body"
+msgstr "Баявы пропуск часова недаступны. Ідуць тэхнічныя працы."
+
+msgid "battlePass/switch_started/style/body"
+msgstr ""
+"Байцы! Час у чарговы раз адправіцца ў пагоню за ўнікальнай узнагародай "
+"Баявога пропуска: 3D-стылямі, жэтонамі, тэматычнымі членамі экіпажа і многім"
+" іншым!"
+
+msgid "battlePass/switch_started/style/title"
+msgstr "Баявы пропуск, сезон %(seasonNum)d"
+
+msgid "battlePassLevels_buy/server_error"
+msgstr ""
+"Памылка пры набыцці этапаў прагрэсіі. Калі ласка, паспрабуйце яшчэ раз."
+
+msgid "battlePass_buy/server_error"
+msgstr ""
+"Памылка пры набыцці палепшанага пропуска. Калі ласка, спрабуйце яшчэ раз."
+
+msgid "battleResults/sharing/success"
+msgstr ""
+"Спасылка скапіравана ў буфер абмену. Вы можаце яе ўставіць у гульнявы чата, "
+"націснуўшы Ctrl+V, або скарыстаць яе па-за кліентам гульні."
+
+msgid "battleSession/kickedFromQueue"
+msgstr ""
+"Не ўдалося адшукаць супраціўнікаў на гэты Адмысловы бой. Паспрабуйце змяніць"
+" склад каманды."
+
+msgid "battleSession/memberJoined"
+msgstr "%s уступіў у каманду."
+
+msgid "battleSession/memberLeave"
+msgstr "%s пакінуў каманду."
+
+msgid "battleSession/memberNotReady"
+msgstr "%s не гатовы ваяваць у камандзе."
+
+msgid "battleSession/memberOffline"
+msgstr "Абрыў злучэння з %s."
+
+msgid "battleSession/memberReady"
+msgstr "%s гатовы ваяваць у камандзе."
+
+msgid "battlesession/error/AddObserver"
+msgstr "Максімальная колькасць назіральнікаў у камандзе — %(numPlayers)s."
+
+msgid "battlesession/error/AddPlayer"
+msgstr "Максімальная колькасць гульцоў у камандзе — %(numPlayers)s."
+
+msgid "battlesession/error/InsufficientRole"
+msgstr "У вас няма правоў на перамяшчэнне іншых гульцоў."
+
+msgid "battlesession/error/Limits"
+msgstr "Перавышана максімальная колькасць удзельнікаў у камандзе."
+
+msgid "blueprints/conversion/disable"
+msgstr "Замала фрагментаў для канверсіі."
+
+msgid "blueprints/conversion/error"
+msgstr "Зараз аперацыя немагчымая. Паспрабуйце пазней."
+
+msgid "blueprints/switch_off"
+msgstr ""
+"Чарцяжы тэхнікі: з тэхнічных прычын гэтая функцыянальнасць часова адключана."
+" Выбачайце за нязручнасці."
+
+msgid "blueprints/switch_on"
+msgstr "Чарцяжы тэхнікі зноў даступныя."
+
+msgid "bonuses/booster/value"
+msgstr "%(name)s (×%(count)d)"
+
+msgid "booster_activate/ALREADY_USED"
+msgstr "Дзеянне недаступнае. Асабісты рэзерв ужо выкарыстоўваецца."
+
+msgid "booster_activate/DISABLED"
+msgstr "Не ўдалося задзейнічаць асабісты рэзерв. Дзеянне недаступнае."
+
+msgid "booster_activate/EXCEPTION"
+msgstr "Не ўдалося задзейнічаць асабісты рэзерв. Дзеянне недаступнае."
+
+msgid "booster_activate/NO_BOOSTERS"
+msgstr "Дзеянне недаступнае. Асабістага рэзерву няма або ён не выбраны."
+
+msgid "booster_activate/WRONG_ARGS"
+msgstr "Не ўдалося задзейнічаць асабісты рэзерв. Дзеянне недаступнае."
+
+msgid "booster_activate/server_error"
+msgstr "Не ўдалося задзейнічаць асабісты рэзерв. Паспрабуйце пазней."
+
+msgid "booster_activate/success"
+msgstr ""
+"Асабісты рэзерв «%(boosterName)s» задзейнічаны! Да заканчэння дзеяння: "
+"%(time)s."
+
+msgid "booster_buy/not_enough_credits"
+msgstr "Не ўдалося купіць асабісты рэзерв «%(boosterName)s». Замала крэдытаў."
+
+msgid "booster_buy/not_enough_gold"
+msgstr "Не ўдалося купіць асабісты рэзерв «%(boosterName)s». Замала золата."
+
+msgid "booster_buy/server_error"
+msgstr "Не ўдалося купіць асабісты рэзерв «%(boosterName)s»."
+
+msgid "booster_buy/server_error_centerDown"
+msgstr ""
+"Не ўдалося купіць асабісты рэзерв «%(boosterName)s», бо гэта паслуга часова "
+"недаступная."
+
+msgid "booster_buy/success"
+msgstr ""
+"Асабісты рэзерв «%(boosterName)s» куплены (%(count)s шт.). Выдаткавана "
+"%(money)s."
+
+msgid "booster_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "booster_sell/server_error"
+msgstr ""
+"Не ўдалося прадаць асабісты рэзерв «%(boosterName)s». Паспрабуйце пазней."
+
+msgid "booster_sell/server_error_centerDown"
+msgstr ""
+"Не ўдалося прадаць асабісты рэзерв «%(boosterName)s». Паспрабуйце пазней."
+
+msgid "booster_sell/success"
+msgstr ""
+"Асабісты рэзерв «%(boosterName)s» прададзены (%(count)s шт.). Атрымана "
+"%(money)s."
+
+msgid "buttons/goToApplicationForm"
+msgstr "Да анкеты"
+
+msgid "buttons/goToPoll"
+msgstr "Перайсці да апытання"
+
+msgid "buttons/goToSurvey"
+msgstr "Да апытання"
+
+msgid "buy_and_equip_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося рэкрутаваць і перавесці танкіста, бо ў танка ўнікальны пастаянны "
+"экіпаж."
+
+msgid "buy_and_equip_tankman/free_tankmen_limit"
+msgstr "У вас скончыўся сутачны ліміт бясплатных танкістаў."
+
+msgid "buy_and_equip_tankman/invalid_vehicle"
+msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Памылковая машына."
+
+msgid "buy_and_equip_tankman/not_enough_credits"
+msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Замала крэдытаў."
+
+msgid "buy_and_equip_tankman/not_enough_gold"
+msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Замала золата."
+
+msgid "buy_and_equip_tankman/server_error"
+msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Паспрабуйце пазней."
+
+msgid "buy_and_equip_tankman/vehicle_locked"
+msgstr "Не ўдалося рэкрутаваць і перавесці танкіста, бо машына заблакіравана."
+
+msgid "buy_and_equip_tankman/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "buy_and_reequip_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося рэкрутаваць і перавесці танкіста, бо ў танка ўнікальны пастаянны "
+"экіпаж."
+
+msgid "buy_and_reequip_tankman/free_tankmen_limit"
+msgstr "У вас скончыўся сутачны ліміт бясплатных танкістаў."
+
+msgid "buy_and_reequip_tankman/invalid_vehicle"
+msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Памылковая машына."
+
+msgid "buy_and_reequip_tankman/not_enough_credits"
+msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Замала крэдытаў."
+
+msgid "buy_and_reequip_tankman/not_enough_gold"
+msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Замала золата."
+
+msgid "buy_and_reequip_tankman/not_enough_space"
+msgstr ""
+"Не ўдалося рэкрутаваць і замяніць танкіста, бо ў Жаўнерні няма вольнага "
+"месца. Вызваліце адзін ложак або купіце яшчэ ложкаў, разбудаваўшы Жаўнерню."
+
+msgid "buy_and_reequip_tankman/server_error"
+msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Паспрабуйце пазней."
+
+msgid "buy_and_reequip_tankman/vehicle_locked"
+msgstr "Не ўдалося рэкрутаваць і замяніць танкіста, бо машына заблакіравана."
+
+msgid "buy_and_reequip_tankman/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "buy_free_vehicle_limit_error"
+msgstr ""
+"Вы перавысілі ліміт куплі бясплатных танкаў. Паспрабуйце зноўку заўтра."
+
+msgid "buy_tankmen_berths/buy_error"
+msgstr "Не ўдалося здзейсніць закуп. Паспрабуйце пазней."
+
+msgid "buy_tankmen_berths/credits/success"
+msgstr ""
+"Жаўнерня пашырана.\n"
+"Патрачана крэдытаў: %(money)s."
+
+msgid "buy_tankmen_berths/gold/success"
+msgstr ""
+"Жаўнерня разбудавана.\n"
+"Патрачана золата: %(money)s."
+
+msgid "buy_tankmen_berths/server_error"
+msgstr "Зараз аперацыя немагчымая. Паспрабуйце пазней."
+
+msgid "buy_vehicle_slot_error"
+msgstr ""
+"Не ўдалося купіць «%s», бо ў Гаражы няма вольных слотаў. Прадайце якую-"
+"небудзь машыну або купіце яшчэ адзін слот."
+
+msgid "buy_vehicle_slot_error2"
+msgstr ""
+"Не ўдалося купіць «%s», бо ў Гаражы няма вольных слотаў. Вызваліце слот."
+
+msgid "change_tankman_role/FORBIDDEN"
+msgstr ""
+"Не ўдалося змяніць спецыяльнасць танкіста, бо ў танка ўнікальны пастаянны "
+"экіпаж."
+
+msgid "change_tankman_role/financial_success"
+msgstr "Патрачана золата: %(money)s."
+
+msgid "change_tankman_role/invalid_role"
+msgstr "Не ўдалося змяніць спецыяльнасць. Паспрабуйце пазней."
+
+msgid "change_tankman_role/invalid_vehicle"
+msgstr "Не ўдалося змяніць спецыяльнасць. Памылковая машына."
+
+msgid "change_tankman_role/no_vehicle"
+msgstr ""
+"Гэтай машыны няма ў Гаражы, таму перавучаны танкіст пераведзены ў Жаўнерню."
+
+msgid "change_tankman_role/not_enough_credits"
+msgstr "Не ўдалося перавучыць танкіста. Замала грошай."
+
+msgid "change_tankman_role/not_enough_gold"
+msgstr "Не ўдалося перавучыць танкіста. Замала грошай."
+
+msgid "change_tankman_role/server_error"
+msgstr "Не ўдалося змяніць спецыяльнасць. Паспрабуйце пазней."
+
+msgid "change_tankman_role/slot_is_taken"
+msgstr ""
+"%(role)s ужо на %(vehicle)s, таму перавучаны танкіст пераведзены ў Жаўнерню."
+
+msgid "change_tankman_role/success"
+msgstr "Спецыяльнасць зменена. Усе навыкі скінуты."
+
+msgid "change_tankman_role/success_and_vehicle_retrained"
+msgstr ""
+"Спецыяльнасць зменена. Усе навыкі скінуты. Член экіпажа перавучаны на машыну"
+" %(vehName)s."
+
+msgid "change_tankman_role/wallet_not_available"
+msgstr "Не ўдалося змяніць спецыяльнасць. Паспрабуйце пазней."
+
+msgid "charge/credits_error"
+msgstr "Не стае %s крэдытаў і %s золата. Загрузіце боезапас уручную."
+
+msgid "charge/credits_error_credits"
+msgstr "Не стае %s крэдытаў. Загрузіце боезапас уручную."
+
+msgid "charge/credits_error_gold"
+msgstr "Не стае %s золата. Загрузіце боезапас уручную."
+
+msgid "charge/inventory_error"
+msgstr ""
+"Не ўдалося загрузіць боекамплект для %(vehicle)s. Загрузіце боекамплект "
+"уручную."
+
+msgid "charge/money_spent"
+msgstr "Агулам на закуп боезапасу выдаткавана %s."
+
+msgid "charge/server_error"
+msgstr "Немагчыма загрузіць боезапас. Паспрабуйце пазней."
+
+msgid "charge/server_error_save"
+msgstr "Немагчыма захаваць боезапас. Паспрабуйце пазней."
+
+msgid "charge/success"
+msgstr "Боезапас загружаны."
+
+msgid "charge/success_save"
+msgstr "Боезапас захаваны."
+
+msgid "checkout_error"
+msgstr ""
+"Памылка сервера пры атрыманні звестак аб гульцу. Паспрабуйце ўвайсці яшчэ "
+"раз."
+
+msgid "clans/isClanProfileDisabled"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/notifications/accept"
+msgstr "Пагадзіцца"
+
+msgid "clans/notifications/alreadyInviteSent"
+msgstr "Запрашэнне гульцу %(userName)s ужо адпраўлена."
+
+msgid "clans/notifications/decline"
+msgstr "Адмовіцца"
+
+msgid "clans/notifications/from"
+msgstr "ад %(user)s"
+
+msgid "clans/notifications/info"
+msgstr "Праглядзець звесткі пра клан"
+
+msgid "clans/notifications/invite"
+msgstr "Запрашэнне ў клан"
+
+msgid "clans/notifications/invite/accepted"
+msgstr "Запрашэнне ў клан прынята"
+
+msgid "clans/notifications/invite/declined"
+msgstr "Запрашэнне ў клан адхілена"
+
+msgid "clans/notifications/invite/expired"
+msgstr "Запрашэнне ў клан нядзейснае"
+
+msgid "clans/notifications/inviteAccepted"
+msgstr ""
+"%(nameStartTag)s%(name)s%(nameEndTag)s прыняў запрашэнне ўступіць у клан."
+
+msgid "clans/notifications/inviteDeclined"
+msgstr ""
+"%(nameStartTag)s%(name)s%(nameEndTag)s адмовіўся ад запрашэння ўступіць у "
+"клан."
+
+msgid "clans/notifications/inviteSendError"
+msgstr "Не ўдаецца адправіць запрашэнне карыстальніку %(userName)s."
+
+msgid "clans/notifications/inviteSent"
+msgstr "Запрашэнне гульцу %(userName)s адпраўлена."
+
+msgid "clans/notifications/invites"
+msgstr "Запрашэнняў у кланы: %(count)s"
+
+msgid "clans/notifications/invites/turnOff"
+msgstr "Адключыць апавяшчэнні"
+
+msgid "clans/notifications/invites/watchInvites"
+msgstr "Праглядзець запрашэнні"
+
+msgid "clans/notifications/invitesSendError"
+msgstr "Запрашэнні не былі адпраўлены %(userCount)d гульцам."
+
+msgid "clans/notifications/invitesSent"
+msgstr "Запрашэнні былі адпраўлены %(userCount)d гульцам."
+
+msgid "clans/notifications/personal/appAccepted"
+msgstr ""
+"Вас прынялі ў клан\n"
+"%(nameStartTag)s%(name)s%(nameEndTag)s."
+
+msgid "clans/notifications/personal/appDeclined"
+msgstr ""
+"Вашу заяву на ўступ у клан\n"
+"%(nameStartTag)s%(name)s%(nameEndTag)s адхілілі."
+
+msgid "clans/notifications/request"
+msgstr "Заява на ўступ у клан"
+
+msgid "clans/notifications/request/accepted"
+msgstr "Заява зацверджана"
+
+msgid "clans/notifications/request/declined"
+msgstr "Заява адхілена"
+
+msgid "clans/notifications/requestSent"
+msgstr ""
+"Адпраўлена заява на ўступ у клан:\n"
+"%(clanName)s"
+
+msgid "clans/notifications/requests"
+msgstr "Заяў ад гульцоў: %(count)s"
+
+msgid "clans/notifications/requests/watchRequests"
+msgstr "Праглядзець заявы"
+
+msgid "clans/request/errors/Account already invited"
+msgstr "Гульца %(userName)s ужо запрасілі ў клан."
+
+msgid "clans/request/errors/Account does not meet requirements"
+msgstr "Дзеянне недаступнае. Гэты гулец не адпавядае ўмовам набору."
+
+msgid "clans/request/errors/Account in cooldown"
+msgstr "Аднадзённы штраф пасля выхаду з папярэдняга клана яшчэ не скончыўся."
+
+msgid "clans/request/errors/Account in unknown"
+msgstr "Дзеянне недаступнае. Памылковы акаўнт."
+
+msgid "clans/request/errors/Account is banned"
+msgstr "Дзеянне недаступнае. Акаўнт забанены."
+
+msgid "clans/request/errors/Account is in clan already"
+msgstr "Гулец ужо прыналежыць клану."
+
+msgid "clans/request/errors/Account is not in clan"
+msgstr "Дзеянне недаступнае. Гулец не прыналежыць клану."
+
+msgid "clans/request/errors/Application does not exist"
+msgstr "Дзеянне недаступнае. Такой заявы не існуе."
+
+msgid "clans/request/errors/Application is not active"
+msgstr "Дзеянне недаступнае. Заява састарэла."
+
+msgid "clans/request/errors/Bad request"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/CANT_SEND_INVITES"
+msgstr "Замала паўнамоцтваў, каб адпраўляць запрашэнні на ўступ у клан."
+
+msgid "clans/request/errors/CLAN_CONSCRIPTION_CLOSED"
+msgstr "Набор у клан закрыты."
+
+msgid "clans/request/errors/CLAN_IS_FULL"
+msgstr "У клане няма вольных месцаў."
+
+msgid "clans/request/errors/Clan does not exist"
+msgstr "Дзеянне недаступнае. Такога клана не існуе."
+
+msgid "clans/request/errors/Clan has not free space"
+msgstr "Дзеянне недаступнае. У клане няма вольных месцаў."
+
+msgid "clans/request/errors/Clan is disbanded"
+msgstr "Дзеянне недаступнае. Клан распушчаны."
+
+msgid "clans/request/errors/Clan is not active"
+msgstr "Дзеянне недаступнае. Клан неактыўны."
+
+msgid "clans/request/errors/DEFAULT"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/Exporter error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/FORBIDDEN_ACCOUNT_TYPE"
+msgstr "Дзеянне недаступнае для акаўнтаў такога тыпу."
+
+msgid "clans/request/errors/Forbidden"
+msgstr "Дзеянне недаступнае. Замала паўнамоцтваў."
+
+msgid "clans/request/errors/Global map error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/Invite does not exist"
+msgstr "Дзеянне недаступнае. Такога запрашэння не існуе."
+
+msgid "clans/request/errors/Invite is not active"
+msgstr "Дзеянне недаступнае. Запрашэнне састарэла."
+
+msgid "clans/request/errors/Recruiting policy mismatch"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/SPA error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/Stronghold is not found"
+msgstr "Дзеянне недаступнае. Умацаваны раён недаступны."
+
+msgid "clans/request/errors/Too Many Applications"
+msgstr ""
+"Дзеянне недаступнае. Адпраўлена максімальна дазволеная колькасць заяў."
+
+msgid "clans/request/errors/Too many invites"
+msgstr ""
+"Дзеянне недаступнае. Адпраўлена максімальна дазволеная колькасць "
+"запрашэнняў."
+
+msgid "clans/request/errors/User is not authentificated"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/WGCCBE error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/WGCCFE error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/Wgrs error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
+msgid "clans/request/errors/user is in clan already"
+msgstr "%(userName)s ужо прыналежыць клану."
+
+msgid "clientInstallError_not_for_this_vehicle_type"
+msgstr "Модуль %s «%s» не пасуе да гэтай машыны."
+
+msgid "clientInstallError_vehicleGun_not_for_current_vehicle"
+msgstr "%s «%s» не пасуе да гэтай вежы. Замяніце вежу."
+
+msgid "clientInstallError_wrong_item_type"
+msgstr "Модуль %s «%s» не пасуе паводле тыпу."
+
+msgid "clientInstallError_wrong_nation"
+msgstr "Модуль %s «%s» нельга ўсталяваць на тэхніку гэтай дзяржавы."
+
+msgid "clientRemoveError_not_in_list"
+msgstr "Модуль %s «%s» не пасуе да гэтай машыны."
+
+msgid "clientRemoveError_wrong_item_type"
+msgstr "Модуль %s «%s» не пасуе паводле тыпу."
+
+msgid "clientRemoveError_wrong_nation"
+msgstr "Модуль %s «%s» нельга ўсталяваць на тэхніку гэтай дзяржавы."
+
+msgid "client_inactive"
+msgstr "Неактыўнасць кліента"
+
+msgid "collectorVehicle/switch_off/body"
+msgstr "Функцыянаванне калекцый часова прыпынена. Вядуцца тэхнічныя работы."
+
+msgid "collectorVehicle/switch_off/title"
+msgstr "Калекцыі недаступныя"
+
+msgid "collectorVehicle/switch_on/body"
+msgstr "Праца калекцый наладжана. Выбачайце за нязручнасці."
+
+msgid "collectorVehicle/switch_on/title"
+msgstr "Калекцыі зноў даступныя"
+
+msgid "comp7/open_shop"
+msgstr "У краму рэжыму"
+
+msgid "connected"
+msgstr "Вітаем на серверы %s гульні «Мир танков»!"
+
+msgid "consumables_apply/error"
+msgstr "Памылка наладжвання рыштунку. Паспрабуйце яшчэ раз пазней."
+
+msgid "consumables_apply/not_enough_money"
+msgstr "Памылка наладжвання рыштунку. Замала сродкаў для куплі."
+
+msgid "consumables_apply/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага кашалька."
+
+msgid "crewBooks/failed"
+msgstr ""
+"Не ўдалося навучыць экіпаж.\n"
+"Паспрабуйце пазней."
+
+msgid "crewBooks/server_error"
+msgstr ""
+"Серверная памылка. Не ўдалося навучыць члена (-ў) экіпажа. Паспрабуйце "
+"пазней."
+
+msgid "crewBooksNotification/bookUsed"
+msgstr "%(name)s"
+
+msgid "crewBooksNotification/booksUsed"
+msgstr "%(name)s (×%(count)s)"
+
+msgid "crewBooksNotification/success"
+msgstr ""
+"Экіпаж навучаны.\n"
+"Выкарыстана:"
+
+msgid "crewBooks_buy/server_error"
+msgstr ""
+"Не ўдалося купіць вучэбны матэрыял. Адбылася памылка сервера, паўтарыце "
+"спробу пазней."
+
+msgid "crewBooks_buy/success"
+msgstr ""
+"%(name)s (%(count)s шт.).\n"
+"Выдаткавана крэдытаў: %(money)s."
+
+msgid "crewBooks_sell/server_error"
+msgstr ""
+"Не ўдалося прадаць вучэбны матэрыял. Адбылася памылка сервера, паўтарыце "
+"спробу пазней."
+
+msgid "crewBooks_sell/success"
+msgstr ""
+"%(name)s (%(count)s шт.).\n"
+"Атрымана крэдытаў %(money)s."
+
+msgid "crewSkinsNotification/SkinChanged"
+msgstr "Аблічча танкіста зменена."
+
+msgid "crewSkinsNotification/SkinGain"
+msgstr "Налічана абліччаў экіпажу: %(count)s"
+
+msgid "current_vehicle_changed"
+msgstr "Машына заменена на %s."
+
+msgid "customization/added/camouflage"
+msgstr "Камуфляж «%s» дададзены"
+
+msgid "customization/added/camouflageValue"
+msgstr "Камуфляж «%s» дададзены (×%s)"
+
+msgid "customization/added/decal"
+msgstr "Дэколь «%s» дададзена"
+
+msgid "customization/added/decalValue"
+msgstr "Дэколь «%s» дададзена (×%s)"
+
+msgid "customization/added/emblem"
+msgstr "Эмблема «%s» дададзена"
+
+msgid "customization/added/emblemValue"
+msgstr "Эмблема «%s» дададзена (×%s)"
+
+msgid "customization/added/inscription"
+msgstr "Надпіс «%s» дададзены"
+
+msgid "customization/added/inscriptionValue"
+msgstr "Надпіс «%s» дададзены (×%s)"
+
+msgid "customization/added/modification"
+msgstr "Эфект «%s» дададзены"
+
+msgid "customization/added/modificationValue"
+msgstr "Эфект «%s» дададзены (×%s)"
+
+msgid "customization/added/paint"
+msgstr "Фарба «%s» дададзена"
+
+msgid "customization/added/paintValue"
+msgstr "Фарба «%s» дададзена (×%s)"
+
+msgid "customization/added/personalNumber_1"
+msgstr "Адназначны нумар «%s» дададзены"
+
+msgid "customization/added/personalNumber_1Value"
+msgstr "Адназначны нумар «%s» дададзены (×%s)"
+
+msgid "customization/added/personalNumber_2"
+msgstr "Двухзначны нумар «%s» дададзены"
+
+msgid "customization/added/personalNumber_2Value"
+msgstr "Двухзначны нумар «%s» дададзены (×%s)"
+
+msgid "customization/added/personalNumber_3"
+msgstr "Трохзначны нумар «%s» дададзены"
+
+msgid "customization/added/personalNumber_3Value"
+msgstr "Трохзначны нумар «%s» дададзены (×%s)"
+
+msgid "customization/added/projectionDecal"
+msgstr "Дэколь «%s» дададзена"
+
+msgid "customization/added/projectionDecalValue"
+msgstr "Дэколь «%s» дададзена (×%s)"
+
+msgid "customization/added/style"
+msgstr "Дададзены стыль «%s»"
+
+msgid "customization/added/styleValue"
+msgstr "Стыль «%s» дададзены (×%s)"
+
+msgid "customization/credits_and_gold_not_enough"
+msgstr "Нельга змяніць выгляд машыны. Замала крэдытаў і золата."
+
+msgid "customization/credits_not_enough"
+msgstr "Нельга змяніць выгляд машыны. Замала крэдытаў."
+
+msgid "customization/currency_not_enough"
+msgstr "Замала валюты для набыцця тавару."
+
+msgid "customization/gold_not_enough"
+msgstr "Нельга змяніць выгляд машыны. Замала золата."
+
+msgid "customization/igr_type_changed_error"
+msgstr "Стан IGR змяніўся, таму бягучая аперацыя скасавана."
+
+msgid "customization/invalidVehicle"
+msgstr "Немагчыма нанесці: непрыдатная тэхніка"
+
+msgid "customization/personal_number_prohibited"
+msgstr ""
+"Нумар %(value)s недаступны.\n"
+"%(itemType)s «%(itemName)s» быў прыбраны для %(seasonName)s мапы."
+
+msgid "customization/progression/down/style"
+msgstr "Узровень стылю «%s» зніжаны да %s"
+
+msgid "customization/progression/up/style"
+msgstr "Узровень стылю «%s» палепшаны да %s"
+
+msgid "customization/prohibited"
+msgstr "Немагчыма накласці, бо «%(itemName)s» няма ў складскім запасе."
+
+msgid "customization/removed/camouflage"
+msgstr "Камуфляж «%s» спісаны"
+
+msgid "customization/removed/camouflageValue"
+msgstr "Камуфляж «%s» спісаны (×%s)"
+
+msgid "customization/removed/decal"
+msgstr "Дэколь «%s» спісана"
+
+msgid "customization/removed/decalValue"
+msgstr "Дэколь «%s» спісана (×%s)"
+
+msgid "customization/removed/emblem"
+msgstr "Эмблема «%s» спісана"
+
+msgid "customization/removed/emblemValue"
+msgstr "Эмблема «%s» спісана (×%s)"
+
+msgid "customization/removed/inscription"
+msgstr "Надпіс «%s» спісаны"
+
+msgid "customization/removed/inscriptionValue"
+msgstr "Надпіс «%s» спісаны (×%s)"
+
+msgid "customization/removed/modification"
+msgstr "Эфект «%s» спісаны"
+
+msgid "customization/removed/modificationValue"
+msgstr "Эфект «%s» спісаны (×%s)"
+
+msgid "customization/removed/paint"
+msgstr "Фарба «%s» спісана"
+
+msgid "customization/removed/paintValue"
+msgstr "Фарба «%s» спісана (×%s)"
+
+msgid "customization/removed/personalNumber_1"
+msgstr "Адназначны нумар «%s» спісаны"
+
+msgid "customization/removed/personalNumber_1Value"
+msgstr "Адназначны нумар «%s» спісаны (×%s)"
+
+msgid "customization/removed/personalNumber_2"
+msgstr "Двухзначны нумар «%s» спісаны"
+
+msgid "customization/removed/personalNumber_2Value"
+msgstr "Двухзначны нумар «%s» спісаны (×%s)"
+
+msgid "customization/removed/personalNumber_3"
+msgstr "Трохзначны нумар «%s» спісаны"
+
+msgid "customization/removed/personalNumber_3Value"
+msgstr "Трохзначны нумар «%s» спісаны (×%s)"
+
+msgid "customization/removed/projectionDecal"
+msgstr "Дэколь «%s» спісана"
+
+msgid "customization/removed/projectionDecalValue"
+msgstr "Дэколь «%s» спісана (×%s)"
+
+msgid "customization/removed/style"
+msgstr "Стыль «%s» спісаны"
+
+msgid "customization/removed/styleValue"
+msgstr "Стыль «%s» спісаны (×%s)"
+
+msgid "customization/server_error"
+msgstr "Нельга выканаць дапасаванне."
+
+msgid "customization/unavailable"
+msgstr "З тэхнічных прычын змяненне выгляду тэхнікі часова адключана."
+
+msgid "customization/vehicle_damaged"
+msgstr ""
+"Нельга змяніць выгляд машыны, бо машына пашкоджана і патрабуе рамонту."
+
+msgid "customization/vehicle_destroyed"
+msgstr "Нельга змяніць выгляд машыны, бо машына разбіта і патрабуе рамонту."
+
+msgid "customization/vehicle_exploded"
+msgstr "Нельга змяніць выгляд машыны, бо машына выбухнула і патрабуе рамонту."
+
+msgid "customization/vehicle_locked"
+msgstr "Нельга змяніць выгляд машыны, бо машына заблакіравана."
+
+msgid "daily_quests/reroll/quest_is_already_completed"
+msgstr "Замена стандартнай задачы недаступная: задача ўжо выканана."
+
+msgid "daily_quests/reroll/reroll_disabled"
+msgstr "Замена стандартнай задачы недаступная: аперацыя заблакаваная."
+
+msgid "daily_quests/reroll/reroll_in_cooldown"
+msgstr "Замена стандартнай задачы недаступная: аперацыя замарожаная."
+
+msgid "daily_quests/reroll/success"
+msgstr "Замена стандартнай задачы выканана."
+
+msgid "daily_quests/reroll/unknown_error"
+msgstr "Замена стандартнай задачы недаступная. Спрабуйце пазней."
+
+msgid "daily_quests/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэты функцыянал часова недаступны.\n"
+"Выбачайце за нязручнасці."
+
+msgid "daily_quests/switch_off/title"
+msgstr "Стандартныя задачы часова недаступныя"
+
+msgid "daily_quests/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "daily_quests/switch_on/title"
+msgstr "Стандартныя задачы зноў даступныя"
+
+msgid "daily_xp_bonus/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "daily_xp_bonus/switch_off/title"
+msgstr "Кіравальны бонус да досведу часова недаступны"
+
+msgid "daily_xp_bonus/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "daily_xp_bonus/switch_on/title"
+msgstr "Кіравальны бонус да досведу зноў даступны"
+
+msgid "debutBoxes/disabled/body"
+msgstr ""
+"Задачы часова недаступныя.\n"
+"Чакаем новыя пастаўкі."
+
+msgid "debutBoxes/disabled/header"
+msgstr "«Нашы перамогі»"
+
+msgid "debutBoxes/enabled/body"
+msgstr "Падзея зноў працуе. Выбачаемся за нязручнасці."
+
+msgid "debutBoxes/enabled/header"
+msgstr "«Нашы перамогі»"
+
+msgid "demountKit_failed/switchedOff"
+msgstr ""
+"Аперацыя з дэмантажнымі наборамі часова недаступныя: вядуцца тэхнічныя "
+"работы."
+
+msgid "demountKit_restored/switchedOn"
+msgstr "Аперацыя з дэмантажнымі наборамі адноўлены. Выбачайце за нязручнасці."
+
+msgid "denunciation/hangarChatSuccess/body"
+msgstr ""
+"Паведамленне пра парушэнне ў чаце на %(name)s адпраўлена. Вы дапамагаеце рабіць гульнявую супольнасць лепшай.\n"
+"Даступна скаргаў: %(countLeft)s з %(countPerDay)s шт. Лічыльнік скідваецца кожныя 24 гадз."
+
+msgid "denunciation/hangarChatSuccess/title"
+msgstr "Дзякуй за вашу актыўнасць"
+
+msgid "denunciation/success"
+msgstr "Скарга на %(name)s «%(topic)s» прынята."
+
+msgid "disconnected"
+msgstr "Кліент адлучаны ад сервера."
+
+msgid "dismiss_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося дэмабілізаваць танкіста, бо ў танка ўнікальны пастаянны экіпаж."
+
+msgid "dismiss_tankman/invalid_vehicle"
+msgstr "Не ўдалося дэмабілізаваць танкіста. Памылковая машына."
+
+msgid "dismiss_tankman/server_error"
+msgstr ""
+"Не ўдалося дэмабілізаваць танкіста.\n"
+"Паспрабуйце пазней."
+
+msgid "dismiss_tankman/success"
+msgstr "Танкіст дэмабілізаваны."
+
+msgid "dismiss_tankman/vehicle_locked"
+msgstr "Не ўдалося дэмабілізаваць танкіста, бо машына заблакіравана."
+
+msgid "dismiss_tankman/vehicle_need_repair"
+msgstr "Не ўдалося дэмабілізаваць танкіста, бо машына патрабуе рамонту."
+
+msgid "dog_tags/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "dog_tags/switch_off/title"
+msgstr "Жэтоны часова недаступныя"
+
+msgid "dog_tags/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "dog_tags/switch_on/title"
+msgstr "Жэтоны зноў даступныя."
+
+msgid "dossiers_unavailable"
+msgstr "Акаўнт не гатовы (DOSSIERS_UNAVAILABLE)"
+
+msgid "drop_tankman_skill/finance_success_credits"
+msgstr ""
+"Усе навыкі скінуты.\n"
+"Патрачана крэдытаў: %(money)s."
+
+msgid "drop_tankman_skill/finance_success_gold"
+msgstr ""
+"Усе навыкі скінуты.\n"
+"Патрачана золата: %(money)s."
+
+msgid "drop_tankman_skill/invalid_vehicle"
+msgstr "Не ўдалося скінуць навыкі. Памылковая машына."
+
+msgid "drop_tankman_skill/server_error"
+msgstr "Не ўдалося скінуць навыкі. Паспрабуйце пазней."
+
+msgid "drop_tankman_skill/success"
+msgstr "Усе навыкі скінуты."
+
+msgid "drop_tankman_skill/vehicle_locked"
+msgstr "Не ўдалося скінуць навыкі, бо машына заблакавана."
+
+msgid "drop_tankman_skill/vehicle_need_repair"
+msgstr "Не ўдалося скінуць навыкі, бо машына патрабуе рамонту."
+
+msgid "drr_scale/step_down"
+msgstr "Дынамічная разрознасць паменшаная да %(scale)d%%."
+
+msgid "drr_scale/step_up"
+msgstr "Дынамічная разрознасць павялічаная да %(scale)d%%."
+
+msgid "epicBattles/levelUp/awards"
+msgstr "Атрымана ўзнагарода:"
+
+msgid "epicBattles/levelUp/body/levelCongrats"
+msgstr ""
+"Вы дасягнулі <font color='#E9E2BF'>%(tier)s</font> узроўню прагрэсіі Лініі "
+"фронту."
+
+msgid "epicBattles/levelUp/title"
+msgstr "Віншуем!"
+
+msgid "epicBattles/notification/notAvailable"
+msgstr ""
+"Рэжым «Лінія фронту» недаступны. Сачыце за навінамі на партале гульні."
+
+msgid "epicBattles/rewardChoice/error"
+msgstr "Памылка пры выбары ўзнагарод. Калі ласка, паспрабуйце яшчэ раз."
+
+msgid "epicBattles/seasonEnd/rewards/crewBook"
+msgstr "Атрымана %(name)s"
+
+msgid "epicBattles/seasonEnd/rewards/equipment"
+msgstr "Вы атрымалі настаўленні да абсталявання: %(name)s"
+
+msgid "epicBattles/seasonEnd/rewards/optionalDevice"
+msgstr "Атрымана эксперыментальнае абсталяванне: %(name)s"
+
+msgid "epicBattles/seasonEnd/text"
+msgstr ""
+"Сезон Лініі фронту завяршыўся. <br>Усе ўзнагароды, якія вы не выбралі падчас"
+" сезона, налічаны вам па змаўчанні:"
+
+msgid "epicBattles/seasonEnd/title"
+msgstr "Лінія фронту"
+
+msgid "equip_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося перавесці танкіста на іншую машыну, бо ў танка ўнікальны "
+"пастаянны экіпаж."
+
+msgid "equip_tankman/invalid_vehicle"
+msgstr "Не ўдалося перавесці танкіста ў экіпаж машыны. Памылковая машына."
+
+msgid "equip_tankman/not_enough_space"
+msgstr "Недастаткова месца ў Жаўнерні для высадкі танкіста."
+
+msgid "equip_tankman/server_error"
+msgstr "Танкіст не пераведзены. Паспрабуйце пазней."
+
+msgid "equip_tankman/success"
+msgstr "Танкіст пераведзены на машыну %(vehName)s."
+
+msgid "equip_tankman/vehicle_locked"
+msgstr ""
+"Не ўдалося перавесці танкіста ў экіпаж машыны, бо машына заблакіравана."
+
+msgid "equip_tankman/vehicle_need_repair"
+msgstr ""
+"Не ўдалося перавесці танкіста ў экіпаж машыны, бо машына патрабуе рамонту."
+
+msgid "exchange/not_enough_gold"
+msgstr "Замала золата на абмен."
+
+msgid "exchange/server_error"
+msgstr "Не ўдалося абмяняць %(gold)s золата. Паспрабуйце пазней."
+
+msgid "exchange/success"
+msgstr "Абменена %(gold)s золата. Атрымана %(credits)s."
+
+msgid "exchange/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "exchangeXP/not_enough_gold"
+msgstr "Замала золата, каб абмяняць %(xp)s досведу."
+
+msgid "exchangeXP/server_error"
+msgstr "Не ўдалося абмяняць %(xp)s досведу. Паспрабуйце пазней."
+
+msgid "exchangeXP/success"
+msgstr "Абмен %(xp)s досведу на вольны выкананы. Выдаткавана %(gold)s."
+
+msgid "exchangeXP/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "fortification/addOrder"
+msgstr "Падрыхтоўка %(count)s рэзерву(аў) пачалася. Да заканчэння: %(time)s."
+
+msgid "fortification/buildingProcess"
+msgstr ""
+"Будаванне будынка %(buildingName)s пачалося. Транспартуйце туды патрэбную "
+"колькасць прамысловага рэсурсу, каб будаванне ішло без перабояў."
+
+msgid "fortification/created"
+msgstr ""
+"Віншуем!\n"
+"Умацаваны раён заснаваны."
+
+msgid "fortification/defenceHourDeactivated"
+msgstr ""
+"Да адключэнне абароны вашага Умацаванага раёна засталося 48 гадзін. На "
+"працягу гэтага часу вы можаце скасаваць адключэнне ў наладах Умацаванага "
+"раёна."
+
+msgid "fortification/defenceHourSet"
+msgstr ""
+"Перыяд абароны будзе зменены праз 14 сутак. Новы перыяд абароны — "
+"%(defenceHour)s."
+
+msgid "fortification/defenceHourSet/noOffDay"
+msgstr ""
+"Дзень спынення агню будзе зменены праз 14 сутак. Новы дзень спынення агню не"
+" акрэслены."
+
+msgid "fortification/defenceHourSet/offDay"
+msgstr ""
+"Дзень спынення агню будзе зменены праз 14 сутак. Новы дзень спынення агню — "
+"%(offDay)s."
+
+msgid "fortification/demountBuilding"
+msgstr "Будынак %(buildingName)s знесены."
+
+msgid "fortification/errors/ALREADY_ATTACHED"
+msgstr "Дзеянне недаступнае. Вы ўжо прыпісаны да гэтага будынка."
+
+msgid "fortification/errors/ALREADY_CREATED"
+msgstr "Дзеянне недаступнае. Умацаваны раён ужо заснаваны."
+
+msgid "fortification/errors/ALREADY_FAVORITE"
+msgstr "Дзеянне недаступнае. Клан ужо ў абраных."
+
+msgid "fortification/errors/ALREADY_PLANNED_ATTACK"
+msgstr ""
+"Дзеянне недаступнае. Можна запланаваць толькі адну атаку на адзін і той самы"
+" клан."
+
+msgid "fortification/errors/ATTACKS_NOT_LOADED"
+msgstr "Дзеянне недаступнае. Звесткі пра атаку не загружаны."
+
+msgid "fortification/errors/ATTACK_COOLDOWN"
+msgstr ""
+"Дзеянне недаступнае. З часу папярэдняй атакі на гэты клан павінен мінуць "
+"тыдзень."
+
+msgid "fortification/errors/ATTACK_DIR_BUSY"
+msgstr "Дзеянне недаступнае. Плацдарм заняты іншым атрадам."
+
+msgid "fortification/errors/ATTACK_NOT_PLANNED"
+msgstr "Дзеянне недаступнае. Атака не запланавана."
+
+msgid "fortification/errors/ATTACK_PREORDER_FAILED"
+msgstr ""
+"Дзеянне недаступнае. Нельга запланаваць атаку, якая пачнецца раней чым праз "
+"15 хвілін."
+
+msgid "fortification/errors/ATTACK_TOO_LATE"
+msgstr "Нельга запланаваць атаку на выбраную дату."
+
+msgid "fortification/errors/BAD_CLAN_DBID"
+msgstr "Дзеянне недаступнае. Памылковы ID клана."
+
+msgid "fortification/errors/BAD_DAY_VALUE"
+msgstr "Дзеянне недаступнае. Памылковае значэнне дня спынення агню."
+
+msgid "fortification/errors/BAD_DMG"
+msgstr "Дзеянне недаступнае. Памылковая дата."
+
+msgid "fortification/errors/BAD_FORT_BATTLE_ID"
+msgstr "Дзеянне недаступнае. Памылковы ID Наступлення."
+
+msgid "fortification/errors/BAD_HOUR_VALUE"
+msgstr "Дзеянне недаступнае. Памылковае значэнне перыяду абароны."
+
+msgid "fortification/errors/BAD_LEVEL_PLANNED_ATTACK"
+msgstr ""
+"Немагчыма атакаваць выбраны клан: розніца ва ўзроўнях Умацаваных раёнаў "
+"большая за 1. Выберыце іншы клан."
+
+msgid "fortification/errors/BAD_ORDERS_COUNT"
+msgstr "Дзеянне недаступнае. Памылковая колькасць рэзерваў."
+
+msgid "fortification/errors/BAD_RESOURCE_COUNT"
+msgstr ""
+"Дзеянне недаступнае. Перададзена памылковае значэнне прамысловага рэсурсу."
+
+msgid "fortification/errors/BAD_SORTIE_DIVISION"
+msgstr "Дзеянне недаступнае. Памылковы дывізіён."
+
+msgid "fortification/errors/BAD_SORTIE_ID"
+msgstr "Дзеянне недаступнае. Звесткі па Вылазцы не атрыманы."
+
+msgid "fortification/errors/BAD_SORTIE_PERIPHERY_ID"
+msgstr "Зараз баі на гэтым серверы забаронены."
+
+msgid "fortification/errors/BAD_VACATION_DURATION"
+msgstr "Дзеянне недаступнае. Памылковы перыяд нейтралітэту."
+
+msgid "fortification/errors/BAD_VACATION_START"
+msgstr "Дзеянне недаступнае. Памылковая дата абвяшчэння нейтралітэту."
+
+msgid "fortification/errors/BASE_DAMAGED"
+msgstr "Дзеянне недаступнае. Адрамантуйце камандны цэнтр."
+
+msgid "fortification/errors/BASE_DESTROYED"
+msgstr "Дзеянне недаступнае. Камандны цэнтр зруйнаваны."
+
+msgid "fortification/errors/BASE_NOT_DAMAGED"
+msgstr "Дзеянне недаступнае. Камандны цэнтр не пашкоджаны."
+
+msgid "fortification/errors/BATTLE_DOES_NOT_EXIST"
+msgstr "Дзеянне недаступнае. Такой бітвы не існуе."
+
+msgid "fortification/errors/BATTLE_INFO_NOT_AVAILABLE"
+msgstr "Падрабязныя вынікі бою недаступныя."
+
+msgid "fortification/errors/BUILDINGS_STILL_PRESENT"
+msgstr "Немагчыма правесці ліквідацыю, бо ва Умацаваным раёне ёсць будынкі."
+
+msgid "fortification/errors/BUILDING_DAMAGED"
+msgstr "Дзеянне недаступнае. Будынак пашкоджаны."
+
+msgid "fortification/errors/BUILDING_NOT_READY"
+msgstr "Дзеянне недаступнае. Будынак не пабудаваны."
+
+msgid "fortification/errors/CANT_CREATE_CLAN"
+msgstr "Дзеянне недаступнае. Нельга стварыць клан."
+
+msgid "fortification/errors/CANT_LOOKUP_CLAN"
+msgstr "Дзеянне недаступнае. Нельга знайсці клан."
+
+msgid "fortification/errors/CANT_TRANSPORT"
+msgstr "Дзеянне недаступнае. Транспартаванне немагчыма."
+
+msgid "fortification/errors/CANT_UPGRADE"
+msgstr "Дзеянне недаступнае. Будынак немагчыма мадэрнізаваць."
+
+msgid "fortification/errors/CENTER_NOT_AVAILABLE"
+msgstr "Аперацыя адхілена. Сервер часова недаступны."
+
+msgid "fortification/errors/CLAN_HAS_OFF_DAY"
+msgstr "Дзеянне недаступнае. У клана дзень спынення агню."
+
+msgid "fortification/errors/CLAN_ON_VACATION"
+msgstr "Дзеянне недаступнае. Клан прытрымліваецца нейтралітэту."
+
+msgid "fortification/errors/CURFEW_HOUR"
+msgstr ""
+"Дзеянне недаступнае. Немагчыма прызначыць перыяд абароны на выбраны час."
+
+msgid "fortification/errors/DEFENCE_DIR_BUSY"
+msgstr "Дзеянне недаступнае. Плацдарм заняты іншым атрадам."
+
+msgid "fortification/errors/DEFENCE_NOT_PLANNED"
+msgstr "Дзеянне недаступнае. Абарона не запланавана."
+
+msgid "fortification/errors/DEFENCE_NOT_POSSIBLE"
+msgstr "Дзеянне недаступнае. Памылковыя звесткі."
+
+msgid "fortification/errors/DEF_HOUR_NOT_ACTIVE"
+msgstr "Дзеянне недаступнае. Абарона не арганізавана."
+
+msgid "fortification/errors/DISCONNECTED_FROM_CENTER"
+msgstr "Умацаваны раён часова недаступны."
+
+msgid "fortification/errors/DUPLICATE_BUILDING_TYPE"
+msgstr "Дзеянне недаступнае. Такі будынак ужо пабудаваны."
+
+msgid "fortification/errors/EVENT_COOLDOWN"
+msgstr "Дзеянне недаступнае. Дачакайце заканчэння бягучай аперацыі."
+
+msgid "fortification/errors/FAILED_TO_BOOK_DIR"
+msgstr "Дзеянне недаступнае. У выбраны час вы атакуеце іншы клан."
+
+msgid "fortification/errors/FORBIDDEN_FORT_BATTLE_HOUR"
+msgstr "Немагчыма на выбраны час запланаваць атаку на гэты клан."
+
+msgid "fortification/errors/FORT_DISABLED"
+msgstr "Памылка. Рэжым «Умацаваны раён» часова недаступны."
+
+msgid "fortification/errors/FORT_LEVEL_TOO_LOW"
+msgstr "Дзеянне недаступнае. Занадта нізкі ўзровень Умацаванага раёна."
+
+msgid "fortification/errors/GLOBAL_PRODUCTION_SUSPEND"
+msgstr "Дзеянне недаступнае. Будаўніцтва ўсіх будынкаў прыпынена."
+
+msgid "fortification/errors/INSUFFICIENT_CLAN_ROLE"
+msgstr "Дзеянне недаступнае. Замала паўнамоцтваў."
+
+msgid "fortification/errors/JOIN_CTX_LOCKED"
+msgstr "Дзеянне недаступнае. Немагчыма далучыцца да фарміравання."
+
+msgid "fortification/errors/METHOD_COOLDOWN"
+msgstr "Дзеянне часова недаступнае."
+
+msgid "fortification/errors/NON_ALIGNED_TIMESTAMP"
+msgstr "Дзеянне недаступнае. Час не сінхранізаваны."
+
+msgid "fortification/errors/NOT_ATTACHED_TO_BUILDING"
+msgstr "Дзеянне недаступнае. Вы не прыпісаны да гэтага будынка."
+
+msgid "fortification/errors/NOT_A_CLAN_MEMBER"
+msgstr "Дзеянне недаступнае. Гулец не прыналежыць клану."
+
+msgid "fortification/errors/NOT_ENOUGH_CLAN_MEMBERS"
+msgstr "Дзеянне недаступнае. У клане замала гульцоў."
+
+msgid "fortification/errors/NOT_ENOUGH_RESOURCE"
+msgstr "Дзеянне недаступнае. На складзе будынка замала прамысловага рэсурсу."
+
+msgid "fortification/errors/NOT_FAVORITE"
+msgstr "Дзеянне недаступнае. Гэтага клана няма ў абраных."
+
+msgid "fortification/errors/NO_BUILDING"
+msgstr "Дзеянне недаступнае. Такі будынак не пабудаваны."
+
+msgid "fortification/errors/NO_CLAN"
+msgstr "Дзеянне недаступнае. Вы не прыналежыце клану."
+
+msgid "fortification/errors/NO_DATA_FOR_ACTIVATING_ORDER"
+msgstr "Дзеянне недаступнае. Няма рэзерваў, якія можна задзейнічаць."
+
+msgid "fortification/errors/NO_DEST_BUILDING"
+msgstr "Дзеянне недаступнае. Памылковы будынак."
+
+msgid "fortification/errors/NO_ORDER"
+msgstr "Дзеянне недаступнае. Рэзерву няма або ён не выбраны."
+
+msgid "fortification/errors/NO_ORDER_DEF"
+msgstr "Дзеянне недаступнае. Памылковы рэзерв."
+
+msgid "fortification/errors/NO_ORDER_LEVEL"
+msgstr "Дзеянне недаступнае. Памылковы рэзерв."
+
+msgid "fortification/errors/NO_PRODUCTION_ORDER"
+msgstr "Дзеянне недаступнае. Такі будынак ужо будуецца."
+
+msgid "fortification/errors/NO_SUCH_ATTACK"
+msgstr "Дзеянне недаступнае. Такой атакі не існуе."
+
+msgid "fortification/errors/ORDER_ALREADY_ACTIVATED"
+msgstr "Дзеянне недаступнае. Рэзерв ужо выкарыстоўваецца."
+
+msgid "fortification/errors/ORDER_ALREADY_IN_PRODUCTION"
+msgstr "Дзеянне недаступнае. Рэзерв ужо падрыхтоўваецца."
+
+msgid "fortification/errors/ORDER_ALREADY_SUSPENDED"
+msgstr "Дзеянне недаступнае. Будаўніцтва ўжо прыпынена."
+
+msgid "fortification/errors/ORDER_NOT_SUPPORTED"
+msgstr "Дзеянне недаступнае. Рэзерв не падтрымліваецца."
+
+msgid "fortification/errors/ORDER_NOT_SUSPENDED"
+msgstr "Дзеянне недаступнае. Будаўніцтва не прыпынена."
+
+msgid "fortification/errors/PERIPHERY_NOT_CONNECTED"
+msgstr "Дзеянне недаступнае. Сервер адключаны."
+
+msgid "fortification/errors/POSITION_OCCUPIED"
+msgstr "Дзеянне недаступнае. Гэтае месца ўжо занята."
+
+msgid "fortification/errors/SHUTDOWN_ALREADY_REQUESTED"
+msgstr "Дзеянне недаступнае. Абарона ўжо адключана."
+
+msgid "fortification/errors/SHUTDOWN_NOT_REQUESTED"
+msgstr "Дзеянне недаступнае. Абарона яшчэ не адключана."
+
+msgid "fortification/errors/START_SCENARIO_NOT_DONE"
+msgstr "Дзеянне недаступнае. Вы не закончылі навучанне."
+
+msgid "fortification/errors/STORAGE_OVERFLOW"
+msgstr "Дзеянне недаступнае. Склад перапоўнены."
+
+msgid "fortification/errors/TOO_MANY_DEFENCES"
+msgstr "Дзеянне недаступнае. На гэты дзень абарона ўжо запланавана."
+
+msgid "fortification/errors/TOO_MANY_FAVORITES"
+msgstr "Дасягнуты ліміт кланаў, пазначаных як абраныя."
+
+msgid "fortification/errors/TOO_MANY_ORDERS"
+msgstr "Дзеянне недаступнае. Дасягнуты максімум падрыхтаваных рэзерваў."
+
+msgid "fortification/errors/TOO_MANY_PLAYERS_ATTACHED"
+msgstr "Дзеянне недаступнае. Гарнізон будынка цалкам укамплектаваны."
+
+msgid "fortification/errors/TOO_MANY_SORTIES"
+msgstr "Дзеянне недаступнае. Перавышаны ліміт на стварэнне Вылазкі."
+
+msgid "fortification/errors/TRANSPORT_COOLDOWN"
+msgstr "Дзеянне недаступнае. Транспартаванне часова немагчымае."
+
+msgid "fortification/errors/TRANSPORT_LIMIT_EXCEEDED"
+msgstr "Дзеянне недаступнае. Перавышаны ліміт транспартавання."
+
+msgid "fortification/errors/UNIT_NOT_READY"
+msgstr "Дзеянне недаступнае. Гулец не гатовы."
+
+msgid "fortification/errors/WRONG_BUILDING"
+msgstr "Дзеянне недаступнае. Нельга знесці камандны цэнтр."
+
+msgid "fortification/errors/WRONG_CLAN"
+msgstr "Дзеянне недаступнае. Памылковы клан."
+
+msgid "fortification/errors/WRONG_PERIPHERY"
+msgstr "Дзеянне недаступнае.Памылковы сервер."
+
+msgid "fortification/errors/WRONG_POS"
+msgstr "Дзеянне недаступнае. Нельга будаваць будынак у гэтай зоне."
+
+msgid "fortification/fixedPlayerToBuilding"
+msgstr "Вы прыпісаны да будынка %(buildingName)s."
+
+msgid "fortification/fortBattleFinished"
+msgstr "Наступленне прымусова спынена з-за тэхнічных непаладак на серверы."
+
+msgid "fortification/modernizationBuilding"
+msgstr ""
+"Мадэрнізацыя выканана. Узровень будынка %(buildingName)s павысіўся да "
+"%(buildingLevel)s."
+
+msgid "fortification/notification/turnedOff"
+msgstr "Умацаваны раён часова недаступны. Паспрабуйце яшчэ раз пазней."
+
+msgid "fortification/notification/turnedOn"
+msgstr "Рэжым «Умацаваны раён: бітвы» зноў даступны."
+
+msgid "fortification/request/name/ACTIVATE_ORDER"
+msgstr "Задзейнічаць рэзерв"
+
+msgid "fortification/request/name/ADD_BUILDING"
+msgstr "Пабудаваць будынак"
+
+msgid "fortification/request/name/ADD_FAVORITE"
+msgstr "Дадаванне абранага клана"
+
+msgid "fortification/request/name/ADD_ORDER"
+msgstr "Дадаць рэзерв"
+
+msgid "fortification/request/name/ATTACH"
+msgstr "Прыпісаць гульца да гарнізона"
+
+msgid "fortification/request/name/CANCEL_SHUTDOWN_DEF_HOUR"
+msgstr "Скасаванне адключэнне перыяду абароны"
+
+msgid "fortification/request/name/CHANGE_DEF_HOUR"
+msgstr "Змена перыяду абароны"
+
+msgid "fortification/request/name/CHANGE_OFF_DAY"
+msgstr "Змена часу спынення агню"
+
+msgid "fortification/request/name/CHANGE_PERIPHERY"
+msgstr "Змена сервера"
+
+msgid "fortification/request/name/CHANGE_SETTINGS"
+msgstr "Змена налад"
+
+msgid "fortification/request/name/CHANGE_VACATION"
+msgstr "Змена часу нейтралітэту"
+
+msgid "fortification/request/name/CREATE_FORT"
+msgstr "Заснаваць Умацаванага раён"
+
+msgid "fortification/request/name/CREATE_SORTIE"
+msgstr "Стварыць атрад"
+
+msgid "fortification/request/name/DELETE_BUILDING"
+msgstr "Знесці будынак"
+
+msgid "fortification/request/name/DELETE_FORT"
+msgstr "Ліквідаваць Умацаваны раён"
+
+msgid "fortification/request/name/PLAN_ATTACK"
+msgstr "Прызначэнне атакі"
+
+msgid "fortification/request/name/REMOVE_FAVORITE"
+msgstr "Выдаленне абранага клана"
+
+msgid "fortification/request/name/REQUEST_CLAN_CARD"
+msgstr "Атрыманне звестак пра клан"
+
+msgid "fortification/request/name/REQUEST_PUBLIC_INFO"
+msgstr "Атрыманне звестак пра кланы"
+
+msgid "fortification/request/name/REQUEST_SORTIE_UNIT"
+msgstr "Запытаць звесткі пра атрад"
+
+msgid "fortification/request/name/SHUTDOWN_DEF_HOUR"
+msgstr "Адключэнне перыяду абароны"
+
+msgid "fortification/request/name/TRANSPORTATION"
+msgstr "Транспартаванне"
+
+msgid "fortification/request/name/UPGRADE"
+msgstr "Мадэрнізацыя будынка"
+
+msgid "fortification/transport"
+msgstr ""
+"Удалося правесці транспартаванне. Перавезена %(res)s прамысловага рэсурсу з "
+"будынка %(fromBuilding)s у будынак %(toBuilding)s."
+
+msgid "fortification/vacationSet"
+msgstr "Умацаваны раён прытрымлівацца нейтралітэту %(vacationPeriod)s."
+
+msgid "free_xp_to_tman_skill/error/NOT_IMPLEMENTED"
+msgstr "Аперацыя недаступная."
+
+msgid "free_xp_to_tman_skill/error/NO_FREE_XP"
+msgstr "Не ўдалося навучыць танкіста. Замала вольнага досведу."
+
+msgid "free_xp_to_tman_skill/error/No tankman with given id"
+msgstr "Не ўдалося навучыць танкіста. Такога танкіста не існуе."
+
+msgid "free_xp_to_tman_skill/error/SHOP_DESYNC"
+msgstr "Не ўдалося навучыць танкіста. Паспрабуйце пазней."
+
+msgid "free_xp_to_tman_skill/error/WRONG_ARGS_VALUE"
+msgstr "Не ўдалося навучыць танкіста. Паспрабуйце пазней."
+
+msgid "free_xp_to_tman_skill/server_error"
+msgstr "Не ўдалося навучыць танкіста. Паспрабуйце пазней."
+
+msgid "free_xp_to_tman_skill/success"
+msgstr ""
+"Танкіст навучаны.\n"
+"Патрачана вольнага досведу: %(money)s."
+
+msgid "gameSessionControl/korea/midnightNotification"
+msgstr ""
+"Каб прадухіліць з'яўленне гульнявой залежнасці ў дзяцей і падлеткаў, уваход "
+"у бой будзе забаронены. У %(blockTime)s вас адлучыць ад сервера."
+
+msgid "gameSessionControl/korea/note"
+msgstr ""
+"Празмернае гулянне ў камп'ютарныя гульні можа пашкодзіць вашаму абыдзённаму "
+"жыццю."
+
+msgid "gameSessionControl/korea/playTimeLeft"
+msgstr "Засталося часу гульні: %(timeLeft)s"
+
+msgid "gameSessionControl/korea/playTimeNotification"
+msgstr ""
+"Ваш час гульні сканчваецца. Увайсці ў новы бой немагчыма. У %s вас адлучыць "
+"ад сервера."
+
+msgid "gameSessionControl/korea/sessionTime"
+msgstr "Час гульні: %(sessionTime)s"
+
+msgid "gameSessionControl/korea/timeTillMidnight"
+msgstr "Да палуначы засталося: %(timeLeft)s"
+
+msgid "gameSessionControl/parentControl/kickTime"
+msgstr ""
+"Ваш час гульні заканчваецца. Увайсці ў новы бой немагчыма. У %(kickTime)s "
+"вас адлучыць ад сервера."
+
+msgid "gameSessionControl/parentControl/noTimeLimit"
+msgstr "З вашага акаўнту зняты ліміт часу гульні"
+
+msgid "gameSessionControl/parentControl/settingsChanged"
+msgstr "Налады бацькоўскага кантролю змененыя."
+
+msgid "gameSessionControl/parentControl/timeLimit"
+msgstr "У %(timeLimit)s вас адлучыць ад сервера."
+
+msgid "graficsOptionsFail"
+msgstr ""
+"Нельга прымяніць графічныя налады %s, бо яны несумяшчальныя з вашай "
+"відэакартай."
+
+msgid "graficsPresetFail"
+msgstr ""
+"Нельга прымяніць выбраную якасць графікі, бо яна несумяшчальная з вашай "
+"відэакартай."
+
+msgid "igr/customization/begin"
+msgstr "У %(igrIcon)s вам даступныя бясплатныя камуфляжы, надпісы і эмблемы."
+
+msgid "igr/customization/end"
+msgstr ""
+"Тэрмін дзеяння %(igrIcon)s скончыўся. Бясплатныя камуфляж, надпісы і эмблемы"
+" будуць сцёрты з машыны."
+
+msgid "info/noAvailable"
+msgstr "Падрабязная інфармацыя недаступная."
+
+msgid "install_component"
+msgstr "Модуль %s «%s» усталяваны на машыну."
+
+msgid "install_vehicle_broken"
+msgstr ""
+"Машына пашкоджана, таму модуль %s «%s» не ўсталяваны. Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "install_vehicle_locked"
+msgstr "Не ўдалося ўсталяваць модуль %s «%s», бо машына заблакавана."
+
+msgid "inventory/item/already_exists"
+msgstr "Модуль %(typeString)s «%(userString)s» ужо маецца на Складзе."
+
+msgid "inventory/item/equip_in_processing"
+msgstr "Запыт на ўсталяванне модуля адпраўлены, чакаецца адказ ад сервера."
+
+msgid "inventory/item/not_found"
+msgstr "Модуль %(typeString)s «%(userString)s» на Складзе не знойдзены."
+
+msgid "inventory/vehicle/already_exists"
+msgstr "%(userString)s ужо маецца на Складзе."
+
+msgid "inventory/vehicle/not_found"
+msgstr "%(userString)s не знойдзены на Складзе."
+
+msgid "invite/status/LEGIONARIES_NOT_ALLOWED"
+msgstr "Нельга адправіць запрашэнне легіянеру %(name)s."
+
+msgid "invite/status/WRONG_CLAN"
+msgstr "Нельга адправіць запрашэнне гульцу %(name)s: памылковы клан."
+
+msgid "layout_apply/BUYING_GOLD_EQS_FOR_CREDITS_DISABLED"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося папоўніць рыштунак. "
+"Паспрабуйце пазней."
+
+msgid "layout_apply/BUYING_GOLD_SHELLS_FOR_CREDITS_DISABLED"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося папоўніць рыштунак. "
+"Паспрабуйце пазней."
+
+msgid "layout_apply/Cannot equip equipment"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося папоўніць рыштунак. "
+"Паспрабуйце пазней."
+
+msgid "layout_apply/Cannot equip shells"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося папоўніць снарады. "
+"Паспрабуйце пазней."
+
+msgid "layout_apply/Cannot equip shells (maxAmmo limit exceeded)"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося загрузіць снарады, бо "
+"боезапас поўны."
+
+msgid "layout_apply/Component is not in shop"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося папоўніць рыштунак. "
+"Паспрабуйце пазней."
+
+msgid "layout_apply/EQS_NO_CREDITS"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Замала крэдытаў, каб купіць рыштунак."
+
+msgid "layout_apply/EQS_NO_CRYSTAL"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Замала бонаў, каб купіць рыштунак."
+
+msgid "layout_apply/EQS_NO_GOLD"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Замала золата, каб купіць рыштунак."
+
+msgid "layout_apply/EQS_NO_WALLET_SESSION"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "layout_apply/NOT_RESEARCHED_ITEM"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Не ўдалося папоўніць рыштунак. "
+"Паспрабуйце пазней."
+
+msgid "layout_apply/No vehicle with given id"
+msgstr "Памылка абслугоўвання «%(vehName)s». Памылковая машына."
+
+msgid "layout_apply/SHELLS_NO_CREDITS"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Замала крэдытаў, каб купіць снарады."
+
+msgid "layout_apply/SHELLS_NO_GOLD"
+msgstr ""
+"Памылка абслугоўвання «%(vehName)s». Замала золата, каб купіць снарады."
+
+msgid "layout_apply/SHELLS_NO_WALLET_SESSION"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "layout_apply/Vehicle is locked"
+msgstr "Памылка абслугоўвання «%(vehName)s». Машына заблакавана."
+
+msgid "layout_apply/error"
+msgstr "Памылка абслугоўвання «%(vehName)s». Паспрабуйце пазней."
+
+msgid "layout_apply/invalid_vehicle"
+msgstr "Памылка абслугоўвання «%(vehName)s». Памылковая машына."
+
+msgid "layout_apply/success_money_spent"
+msgstr "Агулам на папаўненне боезапасу выдаткавана %(money)s."
+
+msgid "layout_apply/vehicle_locked"
+msgstr "Памылка абслугоўвання «%(vehName)s». Машына заблакавана."
+
+msgid "layout_apply/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "learn_tankman_free_skill/invalid_vehicle"
+msgstr "«Нулявая» звычка не засвоеная: непрыдатная машына."
+
+msgid "learn_tankman_free_skill/server_error"
+msgstr "«Нулявая» звычка не засвоеная. Паспрабуйце пазней."
+
+msgid "learn_tankman_free_skill/success"
+msgstr "«Нулявая» звычка паспяхова засвоеная"
+
+msgid "learn_tankman_free_skill/vehicle_locked"
+msgstr "«Нулявая» звычка не засвоеная: машына заблакаваная."
+
+msgid "learn_tankman_free_skill/vehicle_need_repair"
+msgstr "«Нулявая» звычка не засвоеная: патрэбна адрамантаваць машыну."
+
+msgid "limitedUI/switchOff"
+msgstr "Паступовае з'яўленне схаваных інтэрфейсаў часова адключана."
+
+msgid "limitedUI/switchOn"
+msgstr ""
+"Паступовае з'яўленне схаваных інтэрфейсаў зноў уключана. Адключыць можна ў "
+"наладах гульні."
+
+msgid "login_to_other_game_unknown"
+msgstr ""
+"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
+"увайсці ў іншую гульню"
+
+msgid "login_to_other_game_web"
+msgstr ""
+"бягучы сеанс гульні быў перапынены. Вы адлучаны ад сервера праз партал "
+"гульні"
+
+msgid "login_to_other_game_wot"
+msgstr ""
+"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
+"увайсці ў  Мир&nbsp;танков"
+
+msgid "login_to_other_game_wotb"
+msgstr ""
+"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
+"увайсці ў Tanks&nbsp;Blitz"
+
+msgid "login_to_other_game_wotg"
+msgstr ""
+"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
+"увайсці ў іншую гульню"
+
+msgid "login_to_other_game_wowp"
+msgstr ""
+"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
+"увайсці ў іншую гульню"
+
+msgid "login_to_other_game_wows"
+msgstr ""
+"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
+"увайсці ў Мир&nbsp;кораблей"
+
+msgid "lootboxes/open/server_error"
+msgstr "Памылка адкрыцця кантэйнера: серверны збой."
+
+msgid "lootboxes/open/server_error/COOLDOWN"
+msgstr ""
+"Памылка адкрыцця кантэйнера: дачакайцеся завяршэння папярэдняй аперацыі."
+
+msgid "lootboxes/open/server_error/DISABLED"
+msgstr "Памылка адкрыцця кантэйнера: серверны збой."
+
+msgid "mapbox/notification/primeTime"
+msgstr "Рэжым «Разведка боем» недаступны да заканчэння рэжыму спынення агню."
+
+msgid "maps_black_list/select/server_error"
+msgstr "Памылка сервера"
+
+msgid "maps_black_list/select/server_error/COOLDOWN"
+msgstr "Дзеянне недаступнае. Дачакайце заканчэння бягучай аперацыі."
+
+msgid "maps_black_list/select/success"
+msgstr ""
+"Мапа «%(mapName)s» выключана з Выпадковых баёў (для тыпу «Звычайны бой»). "
+"Змяніць свой выбар можна будзе праз %(time)s."
+
+msgid "maps_black_list/select/success/wotPlusEnabled/noSubscriptions"
+msgstr "?empty?"
+
+msgid "maps_black_list/select/success/wotPlusEnabled/premium"
+msgstr "?empty?"
+
+msgid "maps_black_list/select/success/wotPlusEnabled/wotPlus"
+msgstr "?empty?"
+
+msgid "maps_black_list/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "maps_black_list/switch_off/title"
+msgstr "Выключэнне мапы часова недаступнае"
+
+msgid "maps_black_list/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "maps_black_list/switch_on/title"
+msgstr "Выключэнне мапы зноў даступнае"
+
+msgid "maps_training/switch/title"
+msgstr "Тапаграфія"
+
+msgid "maps_training/switch_off/body"
+msgstr "Гэты рэжым адключаны."
+
+msgid "maps_training/switch_on/body"
+msgstr "Гэты рэжым уключаны."
+
+msgid "memberRosterChangedMain"
+msgstr "%s перавёў у асноўны склад %s."
+
+msgid "memberRosterChangedSecond"
+msgstr "%s перавёў у запасны склад %s."
+
+msgid "memory_critical/insufficient_memory_please_reboot"
+msgstr "Замала вольнай памяці. Перазапусціце гульню."
+
+msgid "memory_critical/tex_was_lowered_to_low"
+msgstr "Замала вольнай памяці. Якасць тэкстур паніжана да нізкага значэння."
+
+msgid "memory_critical/tex_was_lowered_to_medium"
+msgstr "Замала вольнай памяці. Якасць тэкстур паніжана да сярэдняга значэння."
+
+msgid "memory_critical/tex_was_lowered_to_min"
+msgstr ""
+"Замала вольнай памяці. Якасць тэкстур паменшылася. Рэкамендуецца "
+"перазапусціць гульню."
+
+msgid "missingEvents/button"
+msgstr "Адкрыць"
+
+msgid "missingEvents/header"
+msgstr "Падзеі"
+
+msgid "missingEvents/text"
+msgstr "Важныя падзеі, якія вы прапусцілі: "
+
+msgid "module_apply/error_is_current"
+msgstr "Модуль %(kind)s «%(name)s» ужо ўсталяваны."
+
+msgid "module_apply/error_need_gun"
+msgstr ""
+"Модуль %(kind)s «%(name)s» нельга ўсталяваць на машыну з цяперашняй "
+"гарматай."
+
+msgid "module_apply/error_need_turret"
+msgstr ""
+"%(kind)s «%(name)s» нельга ўсталяваць у цяперашнюю вежу. Замяніце вежу."
+
+msgid "module_apply/error_no_gun"
+msgstr ""
+"%(kind)s «%(name)s» не ўсталявана, бо на Складзе няма прыдатнай гарматы."
+
+msgid "module_apply/error_not_for_current_vehicle"
+msgstr "%(kind)s «%(name)s» не пасуе да гэтай вежы. Замяніце вежу."
+
+msgid "module_apply/error_not_for_this_vehicle_type"
+msgstr "Модуль %(kind)s «%(name)s» не пасуе да гэтай машыны."
+
+msgid "module_apply/error_not_with_installed_equipment"
+msgstr "Модуль %(kind)s «%(name)s» несумяшчальны з рыштункам «%s»."
+
+msgid "module_apply/error_wrong_item_type"
+msgstr "Модуль %(kind)s «%(name)s» не пасуе паводле тыпу."
+
+msgid "module_apply/error_wrong_nation"
+msgstr ""
+"Модуль %(kind)s «%(name)s» нельга ўсталяваць на тэхніку гэтай дзяржавы."
+
+msgid "module_apply/incompatibleEqs"
+msgstr ""
+"Рыштунак «%(items)s» перамешчаны на Склад, бо ён несумяшчальны з усталяваным"
+" модулем."
+
+msgid "module_apply/invalid_vehicle"
+msgstr "Не ўдалося ўсталяваць модуль %(kind)s «%(name)s». Памылковая машына."
+
+msgid "module_apply/server_error"
+msgstr ""
+"Памылка сервера падчас усталявання модуля %(kind)s «%(name)s». Паспрабуйце "
+"пазней."
+
+msgid "module_apply/success"
+msgstr "Модуль %(kind)s «%(name)s» усталяваны на машыну."
+
+msgid "module_apply/success_gun_change"
+msgstr "Модуль %(kind)s «%(name)s» усталяваны на машыну з гарматай «%(gun)s»."
+
+msgid "module_apply/vehicle_locked"
+msgstr ""
+"Не ўдалося ўсталяваць модуль %(kind)s «%(name)s», бо машына заблакавана."
+
+msgid "module_apply/vehicle_need_repair"
+msgstr ""
+"Машына пашкоджана. Модуль %(kind)s «%(name)s» не ўсталяваны. Адрамантуйце "
+"машыну і паспрабуйце зноў."
+
+msgid "module_buy/error_is_current"
+msgstr "Модуль %(kind)s «%(name)s» ужо ўсталяваны."
+
+msgid "module_buy/error_need_gun"
+msgstr ""
+"Модуль %(kind)s «%(name)s» нельга ўсталяваць на машыну з цяперашняй "
+"гарматай."
+
+msgid "module_buy/error_need_turret"
+msgstr ""
+"%(kind)s «%(name)s» нельга ўсталяваць у цяперашнюю вежу. Замяніце вежу."
+
+msgid "module_buy/error_no_gun"
+msgstr ""
+"%(kind)s «%(name)s» не ўсталявана, бо на Складзе няма прыдатнай гарматы."
+
+msgid "module_buy/error_not_for_current_vehicle"
+msgstr "%(kind)s «%(name)s» не пасуе да гэтай вежы. Замяніце вежу."
+
+msgid "module_buy/error_not_for_this_vehicle_type"
+msgstr "Модуль %(kind)s «%(name)s» не пасуе да гэтай машыны."
+
+msgid "module_buy/error_not_with_installed_equipment"
+msgstr "Модуль %(kind)s «%(name)s» несумяшчальны з рыштункам «%s»."
+
+msgid "module_buy/error_wrong_item_type"
+msgstr "Модуль %(kind)s «%(name)s» не пасуе паводле тыпу."
+
+msgid "module_buy/error_wrong_nation"
+msgstr ""
+"Модуль %(kind)s «%(name)s» нельга ўсталяваць на тэхніку гэтай дзяржавы."
+
+msgid "module_buy/invalid_module"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Памылковы модуль."
+
+msgid "module_buy/invalid_vehicle"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Памылковая машына."
+
+msgid "module_buy/not_enough_credits"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+
+msgid "module_buy/not_enough_gold"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала золата."
+
+msgid "module_buy/server_error"
+msgstr "Не ўдалося купіць %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "module_buy/server_error_centerDown"
+msgstr ""
+"Не ўдалося купіць %(kind)s «%(name)s», бо гэта паслуга часова недаступная."
+
+msgid "module_buy/success"
+msgstr ""
+"Модуль %(kind)s «%(name)s» куплены (%(count)s шт.). Выдаткавана %(money)s."
+
+msgid "module_buy/vehicle_locked"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s», бо машына заблакавана."
+
+msgid "module_buy/vehicle_need_repair"
+msgstr ""
+"Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "module_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "module_sell/invalid_module"
+msgstr "Не ўдалося прадаць %(kind)s «%(name)s». Памылковы модуль."
+
+msgid "module_sell/server_error"
+msgstr "Не ўдалося прадаць %(kind)s «%(name)s». Паспрабуйце пазней."
+
+msgid "module_sell/success"
+msgstr "Модуль %(kind)s «%(name)s» (%(count)s шт.). Атрымана %(money)s."
+
+msgid "multipleSelling/success"
+msgstr "Атрымана %(money)s"
+
+msgid "nation_change/FAILED"
+msgstr "Памылка змены камплектацыі"
+
+msgid "nation_change/WRONG_ARG_VALUE"
+msgstr "Памылка змены камплектацыі"
+
+msgid "nation_change/error"
+msgstr "Памылка змены камплектацыі"
+
+msgid "nation_change/success"
+msgstr "%(veh_name)s: Нацыянальная камплектацыя зменена"
+
+msgid "notrecruit_window/success"
+msgstr ""
+"Танкіст рэкрутаваны.\n"
+"%(colorTagOpen)s%(rank)s %(fullName)s\n"
+"(%(role)s, %(vehicleName)s, %(roleLevel)d%%)%(colorTagClose)s"
+
+msgid "offers/server_error/COOLDOWN"
+msgstr ""
+"Памылка атрымання падарунка: дачакайцеся завяршэння папярэдняй аперацыі."
+
+msgid "offers/server_error/DISABLED"
+msgstr "Аперацыя часова недаступная. Паспрабуйце пазней."
+
+msgid "offers/server_error/EXCEPTION"
+msgstr "Памылка пры атрыманні падарунка: збой сервера"
+
+msgid "offers/server_error/MULTI_ERROR"
+msgstr ""
+"Памылка пры атрыманні падарунка: частка ўзнагарод затрымалася на пошце, "
+"паспрабуйце забраць іх пазней."
+
+msgid "offers/switch_off/body"
+msgstr "Сэрвіс «Пастаўкі з тылу» часова недаступны."
+
+msgid "offers/unavailable_many"
+msgstr "Страчаны доступ да Прапаноў: %(count)s шт."
+
+msgid "offers/unavailable_one"
+msgstr "Страчаны доступ да прапановы."
+
+msgid "optionalDevices_apply/error"
+msgstr "Памылка наладжвання абсталявання. Паспрабуйце яшчэ раз пазней."
+
+msgid "optionalDevices_apply/not_enough_money"
+msgstr "Памылка наладжвання абсталявання. Замала сродкаў для куплі."
+
+msgid "optionalDevices_apply/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага кашалька."
+
+msgid "optionalDevices_remove/error"
+msgstr "Памылка наладжвання абсталявання. Паспрабуйце яшчэ раз пазней."
+
+msgid "parentControl/linkText"
+msgstr "Пазначыць дату"
+
+msgid "parentControl/mainText"
+msgstr "Калі ласка, пазначце сваю дату нараджэння."
+
+msgid "parentControl/title"
+msgstr "Пацвярджэнне ўзросту"
+
+msgid "periphery/errors/isNotAvailable"
+msgstr "Пераход недаступны: нельга вызначыць сервер."
+
+msgid "personalMissions/badge"
+msgstr "Налічана нашыўка: %(name)s."
+
+msgid "personalMissions/camouflageGiven"
+msgstr "Налічаны ўнікальны камуфляж для %(vehicleName)s."
+
+msgid "personalMissions/camouflageUnlocked"
+msgstr ""
+"Унікальны камуфляж для %(vehicleName)s даступны для ўсёй тэхнікі дзяржавы "
+"%(nation)s."
+
+msgid "personalMissions/discard/server_error"
+msgstr "Не ўдалося скінуць задачу. Паспрабуйце пазней."
+
+msgid "personalMissions/discard/server_error/DISABLED"
+msgstr "Дзеянне недаступнае. Баявыя задачы часова адключаны."
+
+msgid "personalMissions/discard/server_error/INVALID_QUEST_ID"
+msgstr "Скінуць задачу часова немагчыма. Паспрабуйце пазней."
+
+msgid "personalMissions/discard/server_error/LOCKED_BY_VEHICLE_QUEST"
+msgstr ""
+"Скінуць задачу часова немагчыма. Чакайце вяртання машыны гэтага тыпу з бою."
+
+msgid "personalMissions/discard/server_error/fallout/LOCKED_BY_VEHICLE_QUEST"
+msgstr "Скінуць задачу часова немагчыма. Чакайце вяртання групы машын з бою."
+
+msgid "personalMissions/discard/success"
+msgstr "Скідванне баявой задачы «%(quest)s» выканана."
+
+msgid "personalMissions/freeAwardListGain"
+msgstr "Налічана бланкаў загаду: %(count)s"
+
+msgid "personalMissions/freeAwardListReturn"
+msgstr ""
+"Вернута бланкаў загаду: %(count)s\n"
+"Бланкі загаду можна выкарыстоўваць паўторна."
+
+msgid "personalMissions/pause/server_error"
+msgstr "Задача не прыпынена. Паспрабуйце пазней."
+
+msgid "personalMissions/pause/server_error/DISABLED"
+msgstr "Дзеянне недаступнае. Баявыя задачы часова адключаны."
+
+msgid "personalMissions/pause/server_error/INVALID_QUEST_ID"
+msgstr "Прыпыніць задачу часова немагчыма. Паспрабуйце пазней."
+
+msgid "personalMissions/pause/server_error/LOCKED_BY_VEHICLE_QUEST"
+msgstr ""
+"Прыпыніць задачу часова немагчыма. Чакайце вяртання машыны гэтага тыпу з "
+"бою."
+
+msgid "personalMissions/pause/success_pause"
+msgstr "Баявая задача «%(quest)s» прыпынена."
+
+msgid "personalMissions/pause/success_unpause"
+msgstr "Выкананне баявой задачы «%(quest)s» працягваецца далей."
+
+msgid "personalMissions/pawn/server_error"
+msgstr "Памылка. Зараз закласці бланк загаду немагчыма."
+
+msgid "personalMissions/pawn/success"
+msgstr "У задачу «%(questName)s» закладзена бланкаў загаду: %(count)s"
+
+msgid "personalMissions/reward/regular/server_error"
+msgstr "Не ўдалося атрымаць узнагароду. Паспрабуйце пазней."
+
+msgid "personalMissions/reward/regular/server_error/DISABLED"
+msgstr "Дзеянне недаступнае. Баявыя задачы часова адключаны."
+
+msgid "personalMissions/reward/regular/server_error/INVALID_STATE"
+msgstr "Не ўдалося атрымаць узнагароду, бо ўзнагарода недаступная."
+
+msgid "personalMissions/reward/regular/server_error/NO_REWARD"
+msgstr "Не ўдалося атрымаць узнагароду, бо ўзнагарода недаступная."
+
+msgid "personalMissions/reward/regular/server_error/WRONG_ARGS_TYPE"
+msgstr "Не ўдалося атрымаць узнагароду. Памылковыя даныя."
+
+msgid "personalMissions/reward/tankwoman/server_error"
+msgstr "Не ўдалося атрымаць узнагароду. Паспрабуйце пазней."
+
+msgid "personalMissions/reward/tankwoman/server_error/DISABLED"
+msgstr "Дзеянне недаступнае. Баявыя задачы часова адключаны."
+
+msgid "personalMissions/reward/tankwoman/server_error/INVALID_STATE"
+msgstr "Не ўдалося атрымаць узнагароду, бо ўзнагарода недаступная."
+
+msgid "personalMissions/reward/tankwoman/server_error/NO_REWARD"
+msgstr "Не ўдалося атрымаць узнагароду, бо ўзнагарода недаступная."
+
+msgid "personalMissions/reward/tankwoman/server_error/WRONG_ARGS_TYPE"
+msgstr "Не ўдалося атрымаць узнагароду. Памылковыя даныя."
+
+msgid "personalMissions/select/server_error"
+msgstr "Не ўдалося выбраць баявыя задачы: %(questNames)s. Паспрабуйце пазней."
+
+msgid "personalMissions/select/server_error/DISABLED"
+msgstr "Дзеянне недаступнае. Баявыя задачы часова адключаны."
+
+msgid "personalMissions/select/server_error/LOCKED_BY_VEHICLE_QUEST"
+msgstr ""
+"Увага: для змены задачы неабходна, каб усе танкі, якія яе выконваюць, "
+"вярнуліся з бою."
+
+msgid "personalMissions/select/server_error/NOT_BOUGHT_TILE"
+msgstr ""
+"Не ўдалося выбраць баявыя задачы: %(questNames)s. Завяршыце папярэднюю "
+"аперацыю."
+
+msgid "personalMissions/select/server_error/NOT_ENOUGH_SLOTS"
+msgstr ""
+"Не ўдалося выбраць баявыя задачы: %(questNames)s. Замала слотаў у Гаражы."
+
+msgid "personalMissions/select/server_error/NOT_GOTTEN_REWARD"
+msgstr ""
+"Не ўдалося выбраць баявыя задачы: %(questNames)s. Атрымайце ўзнагароду."
+
+msgid "personalMissions/select/server_error/NOT_UNLOCKED_QUEST"
+msgstr "Не ўдалося выбраць баявыя задачы: %(questNames)s. Задача недаступная."
+
+msgid "personalMissions/select/server_error/QUEST_ALREADY_COMPLETED"
+msgstr ""
+"Не ўдалося выбраць баявыя задачы: %(questNames)s. Задача ўжо завершана."
+
+msgid "personalMissions/select/server_error/SEASON_LIMIT_THE_SAME_CLASS"
+msgstr "Не ўдалося выбраць баявыя задачы: %(questNames)s."
+
+msgid "personalMissions/select/server_error/TOO_MANY_QUESTS_IN_CHAIN"
+msgstr ""
+"Не ўдалося выбраць баявыя задачы: %(questNames)s. У гэтай галіне задача ўжо "
+"выбрана."
+
+msgid "personalMissions/select/server_error/WRONG_ARGS"
+msgstr "Не ўдалося выбраць баявыя задачы: %(questNames)s. Памылковыя даныя."
+
+msgid "personalMissions/select/server_error/WRONG_ARGS_TYPE"
+msgstr "Не ўдалося выбраць баявыя задачы: %(questNames)s. Памылковыя даныя."
+
+msgid "personalMissions/select/server_error/fallout/LOCKED_BY_VEHICLE_QUEST"
+msgstr "Зараз выбраць задачу немагчыма. Чакайце вяртання групы машын з бою."
+
+msgid "personalMissions/select/success"
+msgstr "Выбар баявых задач выкананы. Выбраныя баявыя задачы: %(questNames)s."
+
+msgid "personalMissions/tankmenGain"
+msgstr "Атрымана ў распараджэнне: танкістка"
+
+msgid "piggyBank/piggyBankFull"
+msgstr "Сховішча крэдытаў запоўнена, але адчыніцца праз %(timeValue)s"
+
+msgid "piggybank/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "piggybank/switch_off/title"
+msgstr "Сховішча крэдытаў часова недаступнае"
+
+msgid "piggybank/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "piggybank/switch_on/title"
+msgstr "Сховішча крэдытаў зноў даступнае"
+
+msgid "player_subscriptions/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "player_subscriptions/switch_off/title"
+msgstr "Падпіскі больш недаступныя."
+
+msgid "player_subscriptions/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаныя. Выбачайце за нязручнасці."
+
+msgid "player_subscriptions/switch_on/title"
+msgstr "Цяпер падпіскі даступныя"
+
+msgid "prebattle/bootcamp/inOtherQueue"
+msgstr ""
+"Паколькі вы ў рэжыме чакання бою, нельга пачаць праходжанне Вучэбнага "
+"палігона."
+
+msgid "prebattle/hasLockedState"
+msgstr ""
+"Вы не можаце прыняць запрашэння, бо чакаеце пачатку бою. Выйдзіце з "
+"перадбаявой чакальні або скончыце бой, а потым паспрабуйце зноўку."
+
+msgid "prebattle/invites/sendInvite"
+msgstr "Запрашэнне гульцу адпраўлена."
+
+msgid "prebattle/invites/sendInvite/name"
+msgstr "Запрашэнне гульцу %(name)s адпраўлена."
+
+msgid "prebattle/kick/reason/ARENA_CREATION_FAILURE"
+msgstr "Памылка ARENA_CREATION_FAILURE."
+
+msgid "prebattle/kick/reason/AVATAR_CREATION_FAILURE"
+msgstr "Памылка AVATAR_CREATION_FAILURE."
+
+msgid "prebattle/kick/reason/BASEAPP_CRASH"
+msgstr "Памылка BASEAPP_CRASH."
+
+msgid "prebattle/kick/reason/CELLAPP_CRASH"
+msgstr "Памылка CELLAPP_CRASH."
+
+msgid "prebattle/kick/reason/CREATOR_LEFT"
+msgstr "Камандзір пакінуў каманду."
+
+msgid "prebattle/kick/reason/FINISHED"
+msgstr "Каманда распушчана."
+
+msgid "prebattle/kick/reason/PLAYERKICK"
+msgstr "Дэмабілізацыя."
+
+msgid "prebattle/kick/reason/PREBATTLE_CREATION_FAILURE"
+msgstr "Памылка PREBATTLE_CREATION_FAILURE."
+
+msgid "prebattle/kick/reason/TIMEOUT"
+msgstr "Час скончыўся."
+
+msgid "prebattle/kick/reason/UNKNOWN_FAILURE"
+msgstr "Невядомая памылка."
+
+msgid "prebattle/kick/reason/VEHICLE_CREATION_FAILURE"
+msgstr "Памылка VEHICLE_CREATION_FAILURE."
+
+msgid "prebattle/kick/type/squad"
+msgstr "Вас выключылі са звязу."
+
+msgid "prebattle/kick/type/unknown"
+msgstr "Вас выключылі з каманды."
+
+msgid "prebattle/request/name/AUTO_SEARCH"
+msgstr "Аўтапошук"
+
+msgid "prebattle/request/name/CHANGE_ARENA_VOIP"
+msgstr "Змена галасавой сувязі"
+
+msgid "prebattle/request/name/CHANGE_DIVISION"
+msgstr "Змена дывізіёна"
+
+msgid "prebattle/request/name/CHANGE_FALLOUT_QUEUE_TYPE"
+msgstr "Пераключэнне рэжыму"
+
+msgid "prebattle/request/name/CHANGE_FUN_SUB_MODE"
+msgstr "Змена падрэжыму"
+
+msgid "prebattle/request/name/CHANGE_RATED"
+msgstr "Пераключэнне рэжыму"
+
+msgid "prebattle/request/name/CHANGE_SETTINGS"
+msgstr "Змена налад"
+
+msgid "prebattle/request/name/CHANGE_UNIT_STATE"
+msgstr "Змена складу каманды"
+
+msgid "prebattle/request/name/CHANGE_USER_STATUS"
+msgstr "Змена рэжыму назіральніка"
+
+msgid "prebattle/request/name/CLOSE_SLOT"
+msgstr "Заблакаваць слот"
+
+msgid "prebattle/request/name/PREBATTLES_LIST"
+msgstr "Пошук"
+
+msgid "prebattle/request/name/SEND_INVITE"
+msgstr "Запрасіць у каманду"
+
+msgid "prebattle/request/name/SET_PLAYER_STATE"
+msgstr "Пацвярджэнне гатоўнасці"
+
+msgid "prebattle/request/name/SET_TEAM_STATE"
+msgstr "Пацвярджэнне гатоўнасці каманды"
+
+msgid "prebattle/request/name/SET_VEHICLE_LIST"
+msgstr "Выбар тэхнікі"
+
+msgid "prebattle/request/name/SWAP_TEAMS"
+msgstr "Змена каманд"
+
+msgid "prebattle/request/name/UNITS_LIST"
+msgstr "Пошук"
+
+msgid "prebattle/teamInvalid/limit/minCount"
+msgstr ""
+"Толькі каманды, у складзе якіх ёсць не менш за %(minCount)d машын, могуць "
+"браць удзел у баі."
+
+msgid "prebattle/teamInvalid/limit/totalLevel"
+msgstr ""
+"Толькі каманды з сумарным узроўнем ад %(minTotalLevel)d да %(maxTotalLevel)d"
+" могуць браць удзел у баі."
+
+msgid "prebattle/teamInvalid/limits/level"
+msgstr ""
+"Толькі тэхніка %(minLevel)d–%(maxLevel)d узроўняў можа браць удзел у баі."
+
+msgid "prebattle/teamInvalid/limits/vehicles"
+msgstr "Выбраная машына не можа браць удзел у гэтым баі."
+
+msgid "prebattle/teamInvalid/observers"
+msgstr "Каманда не можа складацца толькі з назіральнікаў."
+
+msgid "prebattle/vehicleInvalid/epicOnly"
+msgstr "Выбраная машына прыдатная толькі для рэжыму «Лінія фронту»."
+
+msgid "prebattle/vehicleInvalid/falloutOnly"
+msgstr "Выбраная машына прыдатная толькі для рэжыму «Бой да апошняга»."
+
+msgid "prebattle/vehicleInvalid/limits/ammo"
+msgstr ""
+"На выбранай машыне маюцца снарады або рыштунак, якія не адпавядаюць умовам "
+"бою."
+
+msgid "prebattle/vehicleInvalid/limits/classLevel"
+msgstr ""
+"Выбраная машына не пасуе да гэтага бою паводле ўзроўню. Мінімальны ўзровень "
+"для гэтага класа: %s. Максімальны ўзровень для гэтага класа: %s."
+
+msgid "prebattle/vehicleInvalid/limits/classes"
+msgstr ""
+"Выбраная машына не пасуе да гэтага бою паводле тыпу тэхнікі. Дазволеныя "
+"тыпы: %s."
+
+msgid "prebattle/vehicleInvalid/limits/components"
+msgstr "На выбранай машыне ўсталяваны модулі, якія не адпавядаюць умовам бою."
+
+msgid "prebattle/vehicleInvalid/limits/level"
+msgstr ""
+"Выбраная машына не пасуе да гэтага бою паводле ўзроўню. Мінімальны ўзровень:"
+" %s. Максімальны ўзровень: %s."
+
+msgid "prebattle/vehicleInvalid/limits/nations"
+msgstr ""
+"Тэхніка гэтай дзяржавы не можа браць удзел у гэтым баі. Выберыце адну з "
+"наступных дзяржаў: %s."
+
+msgid "prebattle/vehicleInvalid/limits/not_supported"
+msgstr "Непрыдатная машына"
+
+msgid "prebattle/vehicleInvalid/limits/shells"
+msgstr "На выбранай машыне ёсць снарады, якія не адпавядаюць умовам бою."
+
+msgid "prebattle/vehicleInvalid/limits/tags"
+msgstr "Непрыдатная машына"
+
+msgid "prebattle/vehicleInvalid/limits/vehicles"
+msgstr "Выбраная машына не можа браць удзел у гэтым баі."
+
+msgid "prebattle/vehicleInvalid/no_readyVehicle"
+msgstr "Выбраная машына не гатовая."
+
+msgid "prebattle/vehicleInvalid/no_selectedVehicle"
+msgstr "Дзеянне недаступнае. Спачатку выберыце машыну."
+
+msgid "prebattle/vehicleInvalid/notSetReadyStatus"
+msgstr "Не ўдалося ўступіць у каманду."
+
+msgid "prebattle/vehicleInvalid/notSupportFor11lvl"
+msgstr "Выбраная машына часова недаступная для ўступлення ў бой"
+
+msgid "prebattle/vehicleInvalid/vehicleNotSupported"
+msgstr "Непрыдатная машына"
+
+msgid "prebattle/vehicleInvalid/willBeUnlockedInBattle"
+msgstr "Выбраная машына разблакуецца для выкарыстання падчас бою."
+
+msgid "prebattle_start_failed/kickedFromQueue/deafult"
+msgstr ""
+"Не ўдалося адшукаць супраціўнікаў гэтай камандзе. Паспрабуйце змяніць склад "
+"каманды."
+
+msgid "prebattle_start_failed/kickedFromQueue/squad"
+msgstr ""
+"Не ўдалося адшукаць супраціўнікаў гэтаму звязу. Паспрабуйце змяніць склад "
+"каманды."
+
+msgid "premium/buyingSuccess"
+msgstr "Прэміум акаўнт куплены на %(period)d сут. Выдаткавана %(money)s."
+
+msgid "premium/continueSuccess"
+msgstr "Прэміум акаўнт працягнуты на %(period)d сут. Выдаткавана %(money)s."
+
+msgid "premium/not_enough_gold"
+msgstr "Замала золата, каб купіць прэміум акаўнт на %(period)d сут."
+
+msgid "premium/post_battle_premium"
+msgstr ""
+"Дзякуючы куплі прэміум акаўнту вы дадаткова атрымліваеце %(xpDiff)d досведу "
+"і %(creditDiff)d крэдытаў за бой."
+
+msgid "premium/server_error"
+msgstr ""
+"Не ўдалося купіць прэміум акаўнт на %(period)d сут. Паспрабуйце пазней."
+
+msgid "premium/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "premiumXPBonus/apply/server_error"
+msgstr "Памылка сервера"
+
+msgid "premiumXPBonus/apply/server_error/COOLDOWN"
+msgstr "Дзеянне недаступнае. Дачакайце заканчэння бягучай аперацыі."
+
+msgid "premium_quests/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "premium_quests/switch_off/title"
+msgstr "Прэміум задачы часова недаступныя"
+
+msgid "premium_quests/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "premium_quests/switch_on/title"
+msgstr "Прэміум задачы зноў даступныя"
+
+msgid "progressiveReward/error"
+msgstr "Зараз аперацыя немагчымая. Паспрабуйце пазней."
+
+msgid "progressiveReward/switch_off"
+msgstr ""
+"Забеспячэнне маёмасцю: з тэхнічных прычын гэтая функцыянальнасць часова "
+"адключана. Выбачайце за нязручнасці."
+
+msgid "progressiveReward/switch_on"
+msgstr "Магчымасць атрымліваць забеспячэнне маёмасцю зноў даступная"
+
+msgid "quests/noQuestsWithGivenID"
+msgstr ""
+"Тэрмін дзеяння баявой задачы скончыўся. Падрабязнае апісанне недаступнае."
+
+msgid "queue/isInQueue"
+msgstr "Зараз аперацыя немагчымая. Паспрабуйце пазней."
+
+msgid "rally/leaveDisabled"
+msgstr ""
+"Аперацыя недаступная.\n"
+"Нельга выйсці з рэжыму, бо вы ў асноўным складзе і гатовы да бою."
+
+msgid "ranked/notification/available"
+msgstr "Рэжым спынення агню скончаны: Рангавыя баі зноў даступныя."
+
+msgid "ranked/notification/available/title"
+msgstr "Рангавыя баі даступныя"
+
+msgid "ranked/notification/congratulations"
+msgstr "Віншуем!"
+
+msgid "ranked/notification/notAvailable"
+msgstr "Рангавыя баі недаступныя. Сачыце за навінамі на партале гульні."
+
+msgid "ranked/notification/notSet"
+msgstr "На выбраным серверы рэжым недаступны."
+
+msgid "ranked/notification/notSet/title"
+msgstr "Рангавыя баі недаступныя"
+
+msgid "ranked/notification/primeTime"
+msgstr "Рангавыя баі недаступныя да сканчэння рэжыму спынення агню."
+
+msgid "ranked/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "ranked/notification/yearLB/negative/body"
+msgstr ""
+"Вы паказалі выдатныя вынікі ў Рангавых баях сезонаў 2020–2021 і здабылі сабе"
+" месца ў спісе найлепшых гульцоў!"
+
+msgid "ranked/notification/yearLB/negative/title"
+msgstr "Віншуем!"
+
+msgid "ranked/notification/yearLB/positive/body"
+msgstr ""
+"Вы паказалі выдатныя вынікі ў Рангавых баях сезонаў 2020–2021 і здабылі сабе"
+" %(playerPosition)s месца ў спісе найлепшых гульцоў!"
+
+msgid "ranked/notification/yearLB/positive/title"
+msgstr "Віншуем!"
+
+msgid "ranked/notifications/bonusName/badge"
+msgstr "Атрымана нашыўка:"
+
+msgid "ranked/notifications/bonusName/badges"
+msgstr "Атрыманы нашыўкі:"
+
+msgid "ranked/notifications/bonusName/credits"
+msgstr "Атрымана крэдытаў:"
+
+msgid "ranked/notifications/bonusName/crystal"
+msgstr "Атрымана бонаў:"
+
+msgid "ranked/notifications/bonusName/equipCoin"
+msgstr "Атрымана кампанентаў:"
+
+msgid "ranked/notifications/bonusName/eventCoin"
+msgstr "Атрымана юбілейных манет:"
+
+msgid "ranked/notifications/bonusName/gold"
+msgstr "Атрымана золата:"
+
+msgid "ranked/notifications/bonusName/style"
+msgstr "Атрыманы стыль:"
+
+msgid "ranked/notifications/bonusName/styles"
+msgstr "Атрыманы стылі:"
+
+msgid "ranked/notifications/bonusName/yearPoints"
+msgstr "Атрымана рангавых жэтонаў: %(yearPoints)s"
+
+msgid "ranked/notifications/bonusValue/premiumDay"
+msgstr "Агульны прэміум акаўнт на 1 дзень"
+
+msgid "ranked/notifications/bonusValue/premiumDays"
+msgstr "Агульны прэміум акаўнт на %(daysCount)s сутак"
+
+msgid "ranked/notifications/bonusValue/premiumPlusDay"
+msgstr "Танкавы прэміум акаўнт на 1 суткі"
+
+msgid "ranked/notifications/bonusValue/premiumPlusDays"
+msgstr "Танкавы прэміум акаўнт на %(daysCount)s сутак"
+
+msgid "ranked/notifications/cycleResults"
+msgstr "Вынікі этапу %(number)s"
+
+msgid "ranked/notifications/deluxe_gift"
+msgstr "Удасканаленая абсталяванне на выбар (x%(selectableRewardCount)s)"
+
+msgid "ranked/notifications/league"
+msgstr "Ліга: %(leagueName)s"
+
+msgid "ranked/notifications/league1"
+msgstr "Залатая"
+
+msgid "ranked/notifications/league2"
+msgstr "Срэбная"
+
+msgid "ranked/notifications/league3"
+msgstr "Бронзавая"
+
+msgid "ranked/notifications/leaguePoints"
+msgstr "Атрымана рангавых жэтонаў за Залатую лігу: %(points)s"
+
+msgid "ranked/notifications/maxRank"
+msgstr "Максімальны ранг: %(result)s"
+
+msgid "ranked/notifications/maxRankResult"
+msgstr "%(rankName)s, %(divisionName)s"
+
+msgid "ranked/notifications/position"
+msgstr "Пазіцыя ў рэйтынгу: %(position)s"
+
+msgid "ranked/notifications/qualificationFinish"
+msgstr "Вы скончылі кваліфікацыю"
+
+msgid "ranked/notifications/seasonPoints"
+msgstr "Атрымана рангавых жэтонаў за сезон: %(points)s"
+
+msgid "ranked/notifications/seasonResults"
+msgstr "Вынікі %(seasonNumber)s сезона Рангавых баёў"
+
+msgid "ranked/notifications/singleRank/text"
+msgstr "Вы заслужылі %(rankName)s ранг (%(divisionName)s)"
+
+msgid "ranked/notifications/sprinterImproved"
+msgstr "Атрымана адзнака «Спрынтар», узнагароды палепшаны"
+
+msgid "ranked/notifications/sprinterTop"
+msgstr "Атрымана адзнака «Спрынтар»"
+
+msgid "recruit_window/FORBIDDEN"
+msgstr ""
+"Не ўдалося рэкрутаваць новага танкіста, бо ў танка ўнікальны пастаянны "
+"экіпаж."
+
+msgid "recruit_window/disconnected_from_center"
+msgstr "Не ўдалося рэкрутаваць танкіста. Гэта паслуга часова недаступная."
+
+msgid "recruit_window/financial_success"
+msgstr ""
+"Танкіст рэкрутаваны на машыну %(vehName)s. Выдаткавана крэдытаў: "
+"%(credits)s."
+
+msgid "recruit_window/financial_success_credits"
+msgstr ""
+"Танкіст рэкрутаваны на машыну %(vehName)s.\n"
+"Патрачана крэдытаў: %(price)s."
+
+msgid "recruit_window/financial_success_gold"
+msgstr ""
+"Танкіст рэкрутаваны на машыну %(vehName)s.\n"
+"Патрачана золата: %(price)s."
+
+msgid "recruit_window/free_tankmen_limit"
+msgstr "У вас скончыўся сутачны ліміт бясплатных танкістаў."
+
+msgid "recruit_window/not_enough_credits"
+msgstr "Не ўдалося рэкрутаваць танкіста. Замала крэдытаў."
+
+msgid "recruit_window/not_enough_gold"
+msgstr "Не ўдалося рэкрутаваць танкіста. Замала золата."
+
+msgid "recruit_window/not_enough_space"
+msgstr ""
+"Не ўдалося рэкрутаваць танкіста і перавесці яго на выбраную машыну, бо ў "
+"Жаўнерні няма вольнага месца. Вызваліце адзін ложак або купіце яшчэ ложкаў, "
+"разбудаваўшы Жаўнерню."
+
+msgid "recruit_window/server_error"
+msgstr "Не ўдалося рэкрутаваць танкіста. Паспрабуйце пазней."
+
+msgid "recruit_window/success"
+msgstr "Танкіст бясплатна рэкрутаваны на машыну %(vehName)s."
+
+msgid "recruit_window/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "reequip_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося перавесці танкіста на іншую машыну, бо ў танка ўнікальны "
+"пастаянны экіпаж."
+
+msgid "reequip_tankman/invalid_vehicle"
+msgstr "Нельга замяніць танкіста. Памылковая машына."
+
+msgid "reequip_tankman/not_enough_space"
+msgstr "Недастаткова месца ў Жаўнерні для высадкі танкіста."
+
+msgid "reequip_tankman/server_error"
+msgstr "Не ўдалося замяніць танкіста. Паспрабуйце пазней."
+
+msgid "reequip_tankman/success"
+msgstr "Танкіст заменены."
+
+msgid "reequip_tankman/vehicle_locked"
+msgstr "Нельга замяніць танкіста, бо машына заблакіравана."
+
+msgid "reequip_tankman/vehicle_need_repair"
+msgstr "Нельга замяніць танкіста, бо танк патрабуе рамонту."
+
+msgid "referral_program/disabled"
+msgstr "Рэферальная праграма адключана"
+
+msgid "remove_component"
+msgstr "Модуль %s «%s» дэмантаваны з машыны."
+
+msgid "remove_vehicle_broken"
+msgstr ""
+"Машына пашкоджана, таму не ўдалося выдаліць %s «%s». Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "remove_vehicle_locked"
+msgstr "Не ўдалося выдаліць %s «%s», бо машына заблакавана."
+
+msgid "repair/credits_error"
+msgstr "Каб адрамантаваць «%s», не стае %s крэдытаў."
+
+msgid "repair/server_error"
+msgstr "Не ўдалося адрамантаваць «%s». Паспрабуйце пазней."
+
+msgid "repair/success"
+msgstr "Машына «%s» адрамантавана. Выдаткавана %s."
+
+msgid "replace_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося змяніць дакументы танкіста, бо ў танка ўнікальны пастаянны "
+"экіпаж."
+
+msgid "replace_tankman/invalid_vehicle"
+msgstr "Не ўдалося змяніць дакументы танкіста. Памылковая машына."
+
+msgid "replace_tankman/not_enough_money"
+msgstr "Не ўдалося змяніць дакументы танкіста. Замала грошай."
+
+msgid "replace_tankman/server_error"
+msgstr "Не ўдалося змяніць дакументы танкіста. Паспрабуйце пазней."
+
+msgid "replace_tankman/success"
+msgstr "Дакументы заменены."
+
+msgid "replace_tankman/vehicle_locked"
+msgstr "Не ўдалося змяніць дакументы танкіста, бо машына заблакіравана."
+
+msgid "replace_tankman/vehicle_need_repair"
+msgstr "Не ўдалося змяніць дакументы танкіста, бо машына патрабуе рамонту."
+
+msgid "request/isInCoolDown"
+msgstr "Аперацыя «%(request)s» часова прыпынена на %(coolDown)s с."
+
+msgid "resourceWell/resourcesLoadingError"
+msgstr "Памылка пры ўкладанні рэсурсаў. Паспрабуйце яшчэ раз."
+
+msgid "resourceWell/resourcesReturnError"
+msgstr "Памылка пры звароце рэсурсаў. Паспрабуйце яшчэ раз."
+
+msgid "restoreController/hasLimitedRestoreVehicles"
+msgstr ""
+"У вас яшчэ ёсць тэхніка, якую можна аднавіць. Перайдзіце на Склад, калі "
+"хочаце вярнуць яе ў Гараж."
+
+msgid "restore_tankman/DISABLED"
+msgstr "Аднаўленне танкістаў часова недаступнае. Паўтарыце спробу пазней."
+
+msgid "restore_tankman/INVALID_TMAN_ID"
+msgstr "Не ўдалося аднавіць гэтага танкіста."
+
+msgid "restore_tankman/NO_GOLD"
+msgstr "Замала золата, каб аднавіць гэтага танкіста."
+
+msgid "restore_tankman/RESTORE_TIME_EXPIRED"
+msgstr ""
+"Не ўдалося аднавіць танкіста. Час, адведзены на гэтую аперацыю, скончыўся."
+
+msgid "restore_tankman/WRONG_ARGS_TYPE"
+msgstr "Не ўдалося аднавіць танкіста. Паспрабуйце пазней."
+
+msgid "restore_tankman/disconnected_from_center"
+msgstr "Не ўдалося аднавіць танкіста. Гэта паслуга часова недаступная."
+
+msgid "restore_tankman/error"
+msgstr "%(tankman)s не можа быць адноўлены."
+
+msgid "restore_tankman/financial_success"
+msgstr ""
+"Танкіст адноўлены.\n"
+"Выдаткавана крэдытаў: %(money)s."
+
+msgid "restore_tankman/not_enough_space"
+msgstr "Не ўдалося аднавіць танкіста, бо ў Жаўнерні замала месца."
+
+msgid "restore_tankman/server_error"
+msgstr "Не ўдалося аднавіць танкіста. Паспрабуйце пазней."
+
+msgid "restore_tankman/success"
+msgstr "Танкіст адноўлены."
+
+msgid "retraining_crew/FORBIDDEN"
+msgstr "Не ўдалося перавучыць экіпаж, бо ў танка ўнікальны пастаянны экіпаж."
+
+msgid "retraining_crew/empty_list"
+msgstr "Не ўдалося перавучыць экіпаж, бо танкісты не выбраныя."
+
+msgid "retraining_crew/financial_success_credits"
+msgstr "Патрачана крэдытаў: %(money)s."
+
+msgid "retraining_crew/financial_success_free"
+msgstr "Экіпаж бясплатна перавучаны на машыну %(vehName)s."
+
+msgid "retraining_crew/financial_success_gold"
+msgstr "Патрачана золата: %(money)s."
+
+msgid "retraining_crew/invalid_operation"
+msgstr "Не ўдалося перавучыць экіпаж. Аперацыя недаступная."
+
+msgid "retraining_crew/invalid_vehicle"
+msgstr "Не ўдалося перавучыць экіпаж. Памылковая машына."
+
+msgid "retraining_crew/server_error"
+msgstr "Не ўдалося перавучыць экіпаж. Паспрабуйце пазней."
+
+msgid "retraining_crew/success"
+msgstr "Экіпаж перавучаны на машыну %(vehName)s."
+
+msgid "retraining_crew/vehicle_locked"
+msgstr "Не ўдалося перавучыць экіпаж, бо машына заблакіравана."
+
+msgid "retraining_crew/vehicle_need_repair"
+msgstr "Не ўдалося перавучыць экіпаж, бо машына патрабуе рамонту."
+
+msgid "retraining_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося перавучыць танкіста, бо ў танка ўнікальны пастаянны экіпаж."
+
+msgid "retraining_tankman/financial_success_credits"
+msgstr "Патрачана крэдытаў: %(money)s."
+
+msgid "retraining_tankman/financial_success_free"
+msgstr "Члена экіпажа бясплатна перавучаны на машыну %(vehName)s."
+
+msgid "retraining_tankman/financial_success_gold"
+msgstr "Патрачана золата: %(money)s."
+
+msgid "retraining_tankman/invalid_operation"
+msgstr "Не ўдалося перавучыць танкіста. Аперацыя недаступная."
+
+msgid "retraining_tankman/invalid_vehicle"
+msgstr "Не ўдалося перавучыць танкіста. Памылковая машына."
+
+msgid "retraining_tankman/server_error"
+msgstr "Не ўдалося перавучыць танкіста. Паспрабуйце пазней."
+
+msgid "retraining_tankman/success"
+msgstr "Танкіст перавучаны на машыну %(vehName)s."
+
+msgid "retraining_tankman/vehicle_locked"
+msgstr "Не ўдалося перавучыць танкіста, бо машына заблакіравана."
+
+msgid "retraining_tankman/vehicle_need_repair"
+msgstr "Не ўдалося перавучыць танкіста, бо машына патрабуе рамонту."
+
+msgid "return_crew/FORBIDDEN"
+msgstr "Не ўдалося вярнуць экіпаж, бо ў танка ўнікальны пастаянны экіпаж."
+
+msgid "return_crew/invalid_vehicle"
+msgstr "Не ўдалося вярнуць экіпаж. Памылковая машына."
+
+msgid "return_crew/not_enough_space"
+msgstr ""
+"Нельга зняць экіпаж і перавесці яго ў Жаўнерню, бо ў Жаўнерні замала месца."
+
+msgid "return_crew/server_error"
+msgstr "Не ўдалося вярнуць экіпаж. Паспрабуйце пазней."
+
+msgid "return_crew/success"
+msgstr "Экіпаж пераведзены."
+
+msgid "return_crew/vehicle_locked"
+msgstr "Не ўдалося вярнуць экіпаж, бо машына заблакіравана."
+
+msgid "return_crew/vehicle_need_repair"
+msgstr "Не ўдалося вярнуць экіпаж, бо машына патрабуе рамонту."
+
+msgid "roaming_not_allowed"
+msgstr "Вам забаронены доступ на гэты сервер."
+
+msgid "rotation/lock"
+msgstr ""
+"Наступныя групы заблакіраваны і больш недаступныя для бою: %(groupNum)s."
+
+msgid "rotation/unlock"
+msgstr ""
+"Наступныя групы разблакіраваны і цяпер даступныя для бою: %(groupNum)s."
+
+msgid "rotation/vehicleIsLocked"
+msgstr "Машына заблакіравана і недаступная для бою."
+
+msgid "royale/notification/congratulations"
+msgstr "Віншуем!"
+
+msgid "royale/notification/primeTime"
+msgstr ""
+"Баі рэжыму «Сталёвы паляўнічы» недаступныя да заканчэння рэжыму спынення "
+"агню. Расклад глядзіце ў календары."
+
+msgid "royale/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "royale/notifications/singleLevel/text"
+msgstr "Атрыманы ўзровень: %(level)s"
+
+msgid "rts/notification/available"
+msgstr "Баі падзеі «Мастацтва стратэгіі» зноў даступныя на гэтым серверы."
+
+msgid "rts/notification/available/title"
+msgstr "Баі даступныя"
+
+msgid "rts/notification/notAvailable"
+msgstr ""
+"Падзея «Мастацтва стратэгіі» недаступная. Сачыце за навінамі на сайце "
+"гульні."
+
+msgid "rts/notification/notSet"
+msgstr "Баі падзеі «Мастацтва стратэгіі» недаступныя на выбраным серверы."
+
+msgid "rts/notification/notSet/title"
+msgstr "Баі недаступныя"
+
+msgid "rts/notification/primeTime"
+msgstr ""
+"Баі падзеі «Мастацтва стратэгіі» недаступныя да заканчэння рэжыму спынення "
+"агню."
+
+msgid "rts/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "securityMessage/bad_email"
+msgstr ""
+"Шаноўны карыстальнік! Ваш адрас электроннай пошты зарэгістраваны на "
+"падазроным серверы. У мэтах бяспекі рэкамендуем вам змяніць свой e-mail. "
+"%(link)s"
+
+msgid "securityMessage/change_setings"
+msgstr "Змяніць налады бяспекі"
+
+msgid "securityMessage/no_phone"
+msgstr ""
+"Шаноўны карыстальнік! У мэтах бяспекі рэкамендуем вам прывязаць свой акаўнт "
+"да нумара мабільнага тэлефона. %(link)s"
+
+msgid "securityMessage/no_question"
+msgstr ""
+"Шаноўны карыстальнік! Рэкамендуем у Асабовым кабінеце задаць сакрэтнае "
+"пытанне на аднаўленне пароля. %(link)s"
+
+msgid "securityMessage/old_pass"
+msgstr ""
+"Шаноўны карыстальнік! Вы не змянялі свайго пароля больш за 30 сутак. У мэтах"
+" бяспекі рэкамендуем вам змяніць свой пароль. %(link)s"
+
+msgid "securityMessage/poor_pass"
+msgstr ""
+"Шаноўны карыстальнік! Складанасць пароля, які вы ўвялі пры стварэнні акаўнту"
+" (рэгістрацыі), занадта малая. У мэтах бяспекі рэкамендуем змяніць пароль на"
+" больш складаны. %(link)s"
+
+msgid "sell_vehicle_broken"
+msgstr ""
+"Не ўдалося прадаць «%s», бо машына пашкоджана. Адрамантуйце машыну і "
+"паспрабуйце зноў."
+
+msgid "sell_vehicle_locked"
+msgstr "Машына заблакавана, таму нельга прадаць «%s»."
+
+msgid "seniority_awards/claim_reward_failed"
+msgstr "Памылка выдачы ўзнагароды: часова немагчыма атрымаць."
+
+msgid "serverInstallError"
+msgstr ""
+"Памылка сервера падчас усталявання модуля %s «%s». Паспрабуйце пазней."
+
+msgid "serverRemoveError"
+msgstr "Памылка сервера падчас дэмантажу модуля %s «%s». Паспрабуйце пазней."
+
+msgid "server_shut_down"
+msgstr "Перазапускаецца сервер гульні"
+
+msgid "session_tracker_kick"
+msgstr ""
+"Ваш Леста&nbsp;ID выкарыстаны, каб увайсці ў іншую гульню, бягучы сеанс "
+"гульні перапынены"
+
+msgid "shell_buy/invalid_module"
+msgstr "Не ўдалося купіць %(name)s. Памылковы снарад."
+
+msgid "shell_buy/not_enough_credits"
+msgstr "Не ўдалося купіць %(name)s. Замала крэдытаў."
+
+msgid "shell_buy/not_enough_gold"
+msgstr "Не ўдалося купіць %(name)s. Замала золата."
+
+msgid "shell_buy/server_error"
+msgstr "Не ўдалося купіць %(name)s. Паспрабуйце пазней."
+
+msgid "shell_buy/server_error_centerDown"
+msgstr "Нельга купіць %(name)s, бо гэта паслуга часова недаступная."
+
+msgid "shell_buy/success"
+msgstr "Снарады %(name)s куплены (%(count)s шт.). Выдаткавана %(money)s."
+
+msgid "shell_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "shell_sell/invalid_module"
+msgstr "Не ўдалося прадаць «%(name)s». Памылковы снарад."
+
+msgid "shell_sell/server_error"
+msgstr "Не ўдалося прадаць «%(name)s». Паспрабуйце пазней."
+
+msgid "shell_sell/success"
+msgstr "Снарад «%(name)s» (%(count)s шт.). Атрымана %(money)s."
+
+msgid "shells_apply/error"
+msgstr "Памылка наладжвання боекамплекту. Паспрабуйце яшчэ раз пазней."
+
+msgid "shells_apply/not_enough_money"
+msgstr "Памылка наладжвання боекамплекту. Замала сродкаў для куплі."
+
+msgid "shells_apply/success_money_spent"
+msgstr "Агулам на папаўненне боезапасу выдаткавана %(money)s."
+
+msgid "shells_apply/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага кашалька."
+
+msgid "shop/item/buy_and_equip_in_processing"
+msgstr ""
+"Запыт на куплю і ўсталяванне модуля адпраўлены, чакаецца адказ ад сервера."
+
+msgid "shop/item/buy_server_error"
+msgstr ""
+"Не ўдалося купіць модуль %(typeString)s «%(userString)s». Паспрабуйце "
+"пазней."
+
+msgid "shop/item/buy_success"
+msgstr ""
+"Модуль %(typeString)s «%(userString)s» куплены (%(count)d шт.). Выдаткавана "
+"%(price)s."
+
+msgid "shop/item/common_rent_or_buy_error"
+msgstr "Зараз немагчыма выканаць аперацыю."
+
+msgid "shop/item/not_enough_money"
+msgstr "Каб купіць %(typeString)s «%(userString)s», не стае %(price)s."
+
+msgid "shop/item/not_found"
+msgstr ""
+"Модуль %(typeString)s «%(userString)s» у Краме не знойдзены. Паспрабуйце "
+"пазней."
+
+msgid "shop/vehicle/common_rent_or_buy_error"
+msgstr "Зараз немагчыма выканаць аперацыю."
+
+msgid "shop/vehicle/not_enough_money"
+msgstr "Каб купіць %(userString)s, не стае %(price)s."
+
+msgid "shop/vehicle/not_enough_money_for_rent"
+msgstr "Каб узяць напракат %(userString)s, не стае %(price)s."
+
+msgid "shop/vehicle/not_found"
+msgstr "%(userString)s не знойдзены ў Краме. Паспрабуйце пазней."
+
+msgid "shop_resync"
+msgstr ""
+"Інтэрфейс абноўлены %(date)s а %(time)s, бо на серверы адбыліся змены."
+
+msgid "squad/createError"
+msgstr "Стварэнне звязу даступнае толькі гульцам з прэміум акаўнтам."
+
+msgid "squad/kickedFromQueue"
+msgstr ""
+"Не ўдалося адшукаць супраціўнікаў гэтаму звязу. Паспрабуйце змяніць склад "
+"каманды."
+
+msgid "squad/leaveDisabled"
+msgstr ""
+"Аперацыя недаступная.\n"
+"Нельга выйсці са звязу, бо вы ў асноўным складзе і гатовы да бою."
+
+msgid "squad/memberJoined"
+msgstr "%s далучыўся да фарміравання."
+
+msgid "squad/memberLeave"
+msgstr "%s пакінуў фарміраванне."
+
+msgid "squad/memberNotReady"
+msgstr "%s не гатовы."
+
+msgid "squad/memberOffline"
+msgstr "Сувязь з %s страчана."
+
+msgid "squad/memberReady"
+msgstr "%s гатовы!"
+
+msgid "squad/notSetReadyStatus"
+msgstr "Не ўдалося выйсці ў бой у складзе звязу."
+
+msgid "squad/notValidDeleted"
+msgstr ""
+"Машына %(vehName)s выключана са звязу, бо камандзір звязу не адпавядае "
+"ўзроўню машыны. Выберыце машыну такога самага ўзроўню."
+
+msgid "squad/notValidDeletedFilter"
+msgstr ""
+"Машына %(vehName)s выключана са звязу праз змену патрабаванняў камандзіра."
+
+msgid "squad/notValidEnqueueData"
+msgstr ""
+"Вы выключаны са звязу праз змену патрабаванняў камандзіра або не можаце "
+"ўступіць у яго з прычыны некарэктна выбранай машыны. Выберыце іншую машыну."
+
+msgid "squad/notValidMaxScoutDeleted"
+msgstr ""
+"Машына %(vehName)s выключана са звязу з-за абмежавання на колькасць лёгкіх "
+"танкаў у звязе. Выберыце машыну іншага тыпу."
+
+msgid "squad/notValidMaxSpgDeleted"
+msgstr ""
+"Машына %(vehName)s выключана са звязу з-за абмежавання на колькасць САУ ў "
+"звязе. Выберыце машыну іншага тыпу."
+
+msgid "squad_bonus/switch_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "squad_bonus/switch_off/title"
+msgstr "Звязовы бонус часова недаступны"
+
+msgid "squad_bonus/switch_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "squad_bonus/switch_on/title"
+msgstr "Звязовы бонус зноў даступны"
+
+msgid "ssr/unavailable"
+msgstr "Немагчыма спампаваць паўтор"
+
+msgid "steam_login_not_allowed"
+msgstr ""
+"Вы не можаце выкарыстоўваць гэты дадатак для гульні: ваш акаўнт Steam ужо "
+"прывязаны да акаўнту Леста. Дадатковую інфармацыю можна даведацца ў Цэнтры "
+"падтрымкі карыстальнікаў."
+
+msgid "techtree/action/expireTime"
+msgstr "%(days)s сут"
+
+msgid "techtree/action/header"
+msgstr "Акцыя «%(actionName)s»"
+
+msgid "techtree/action/text"
+msgstr "Акцыя скончыцца праз: "
+
+msgid "techtree/action/text/closest"
+msgstr "Да канца найбліжэйшай акцыі: "
+
+msgid "telecom/notifications/vehicleBlocked/comment/default"
+msgstr "%(vehicles)s"
+
+msgid "telecom/notifications/vehicleBlocked/subcomment/Twitchprime"
+msgstr "Прычына: не выкананы ўмовы адпаведнай акцыі."
+
+msgid "telecom/notifications/vehicleBlocked/subcomment/default"
+msgstr ""
+"Прычына: блакіроўка паслугі правайдарам. Праверце стан паслугі ў асабовым "
+"кабінеце вашага правайдара."
+
+msgid "telecom/notifications/vehicleBlocked/title/default"
+msgstr "Машына недаступная"
+
+msgid "telecom/notifications/vehicleReceived/comment/Twitchprime"
+msgstr ""
+"Дата: %(datetime)s\n"
+"Дададзеная тэхніка: %(vehicles)s\n"
+"Дададзены: слот у Гаражы,%(crew)s 3D-стыль."
+
+msgid "telecom/notifications/vehicleReceived/comment/default"
+msgstr ""
+"Дата: %(datetime)s\n"
+"Дададзеная тэхніка: %(vehicles)s\n"
+"Дададзены: слот у Гаражы, %(crew)s эксклюзіўны камуфляж."
+
+msgid "telecom/notifications/vehicleReceived/crew/default"
+msgstr " 100%% экіпаж%(skills)s,"
+
+msgid "telecom/notifications/vehicleReceived/subcomment/default"
+msgstr " "
+
+msgid "telecom/notifications/vehicleReceived/title/default"
+msgstr "Налічана тэхніка"
+
+msgid "telecom/notifications/vehicleRemoved/comment/default"
+msgstr ""
+"Дата: %(datetime)s\n"
+"Спісана: %(vehicles)s, слот у Гаражы."
+
+msgid "telecom/notifications/vehicleRemoved/subcomment/Twitchprime"
+msgstr "Прычына: не выкананы ўмовы адпаведнай акцыі."
+
+msgid "telecom/notifications/vehicleRemoved/subcomment/default"
+msgstr ""
+"Прычына: адключэнне на вашым акаўнце опцыі «Свет танкаў» у тарыфе "
+"«Гульнёвы»."
+
+msgid "telecom/notifications/vehicleRemoved/title/default"
+msgstr "Машына спісана"
+
+msgid "telecom/notifications/vehicleUnblocked/comment/default"
+msgstr "%(vehicles)s"
+
+msgid "telecom/notifications/vehicleUnblocked/subcomment/default"
+msgstr " "
+
+msgid "telecom/notifications/vehicleUnblocked/title/default"
+msgstr "Машына зноў даступная"
+
+msgid "telecomMergeResults/body/accrualMsg"
+msgstr "Налічаны танк Т-44-100 Гульнявы, спісана: %(tanks)s."
+
+msgid "telecomMergeResults/body/battleQuestsMsg"
+msgstr "Баявыя задачы цяпер можна выконваць на Т-44-100 Гульнявы."
+
+msgid "telecomMergeResults/body/conjunction"
+msgstr " і "
+
+msgid "telecomMergeResults/body/credits"
+msgstr "%(value)s крэдытаў"
+
+msgid "telecomMergeResults/body/crewRetrainingMsg"
+msgstr "Усе танкісты экіпажа %(tanks)s перавучаны на Т-44-100 Гульнявы."
+
+msgid "telecomMergeResults/body/demountMsg"
+msgstr ""
+"Абсталяванне дэмантавана на Склад.\n"
+"Элементы выгляду перамешчаны на Склад.\n"
+"Снарады і настаўленні перамешчаны на Склад."
+
+msgid "telecomMergeResults/body/equipAndStatisticMovedMsg"
+msgstr ""
+"Рыштунак, элементы выгляду, баявы досвед, статыстыка і дасягненні перанесены"
+" з %(mergedTank)s на Т-44-100 Гульнявы."
+
+msgid "telecomMergeResults/body/freeXP"
+msgstr "%(value)s вольнага досведу"
+
+msgid "telecomMergeResults/body/listSeparator"
+msgstr ", "
+
+msgid "telecomMergeResults/body/postprogressionMsg"
+msgstr ""
+"Досвед на правядзенне палявой мадэрнізацыі кампенсаваны, налічана "
+"%(compensation)s."
+
+msgid "telecomMergeResults/body/progressDecalesCompens"
+msgstr "Купленыя этапныя дэколі кампенсаваны, налічана %(value)s золата."
+
+msgid "telecomMergeResults/body/statisticMovedMsg"
+msgstr ""
+"Гульнявая статыстыка і дасягненні з %(mergedTank)s перанесены на Т-44-100 "
+"Гульнявы."
+
+msgid "telecomMergeResults/body/tankXPMsg"
+msgstr "Баявы досвед прасумаваны і перанесены на Т-44-100 Гульнявы."
+
+msgid "telecomMergeResults/body/wishMsg"
+msgstr "Прыемнай гульні."
+
+msgid "telecomMergeResults/title"
+msgstr "Змены тарыфу «Гульнявы»"
+
+msgid "telecom_rentals/switch_off/body"
+msgstr "Выбар і пракат тэхнікі прыпынены."
+
+msgid "telecom_rentals/switch_off/title"
+msgstr "Пракат тэхнікі часова недаступны"
+
+msgid "telecom_rentals/switch_on/body"
+msgstr "?empty?"
+
+msgid "telecom_rentals/switch_on/title"
+msgstr "Пракат тэхнікі даступны"
+
+msgid "tokens/notification/mark_acquired"
+msgstr "Віншуем! Вам налічаны маркі ў колькасці %(count)s шт."
+
+msgid "tradingError/DECLINED_BY_DEST"
+msgstr "Перавод золата не здзейснены, бо атрымальнік адмовіў трансакцыю."
+
+msgid "tradingError/NOT_ALLOWED"
+msgstr "Перавод золата недаступны."
+
+msgid "tradingError/NO_WARES"
+msgstr "Перавод золата немагчымы. Замала золата."
+
+msgid "tradingError/TOO_MANY_OUT_OFFERS"
+msgstr "У вас скончыўся сутачны ліміт пераводаў золата."
+
+msgid "tradingError/UNEXPECTED_ERROR"
+msgstr "Перавод золата не здзейснены. Паспрабуйце пазней."
+
+msgid "training/error/AddPlayer"
+msgstr ""
+"Памылка вучэбнага палігона. Перавышана максімальная колькасць гульцоў у "
+"камандзе."
+
+msgid "training/error/doAction"
+msgstr "Памылка вучэбнага палігона. Паспрабуйце пазней."
+
+msgid "training/error/selectObserver"
+msgstr ""
+"Памылка вучэбнага палігона. Максімальная колькасць гульцоў у камандзе — "
+"%(numPlayers)s."
+
+msgid "training/error/swapTeams"
+msgstr ""
+"Памылка сервера падчас спробы памяняць каманды месцамі. Паспрабуйце пазней."
+
+msgid "unit/errors/ACCOUNT_BANNED"
+msgstr "Памылка далучэння да звязу: ваш акаўнт часова заблакаваны ў рэжыме."
+
+msgid "unit/errors/ACCOUNT_RESTORED"
+msgstr "Дзеянне недаступнае. Акаўнт быў адноўлены."
+
+msgid "unit/errors/ADD_PLAYER_FAIL"
+msgstr "Нельга прыняць гульца ў каманду."
+
+msgid "unit/errors/ALREADY_IN_SLOT"
+msgstr "Дзеянне недаступнае. Слот ужо заняты."
+
+msgid "unit/errors/ALREADY_JOINED_UNIT"
+msgstr "Гулец ужо ў камандзе."
+
+msgid "unit/errors/ASSIGN_MEMBER_FAIL"
+msgstr "Не ўдалося перадаць камандаванне."
+
+msgid "unit/errors/BAD_ACCOUNT_TYPE"
+msgstr "Дзеянне недаступнае. Памылковы тып акаўнту."
+
+msgid "unit/errors/BAD_CLAN"
+msgstr "Дзеянне недаступнае. Памылковы клан."
+
+msgid "unit/errors/BAD_JOINING_ACC"
+msgstr "Няможна далучыцца да каманды."
+
+msgid "unit/errors/BAD_POINTS_SUM"
+msgstr "Перавышаны сумарны ўзровень тэхнікі."
+
+msgid "unit/errors/BAD_ROSTER_PACK"
+msgstr "Дзеянне недаступнае. Памылковы склад атрада."
+
+msgid "unit/errors/BAD_SLOT_IDX"
+msgstr "Памылковы нумар слота."
+
+msgid "unit/errors/BAD_VEHICLES_SET"
+msgstr "Дзеянне недаступнае. Няправільны тып тэхнікі ў звязе."
+
+msgid "unit/errors/BAD_VEHICLE_LEVEL"
+msgstr "Не ўдалося ўступіць у каманду, бо машына не пасуе паводле ўзроўню."
+
+msgid "unit/errors/CANT_CHANGE_DIVISION"
+msgstr "У выбраны час змена дывізіёна забаронена."
+
+msgid "unit/errors/CANT_FIND_UNIT_MGR"
+msgstr "Нельга знайсці каманду."
+
+msgid "unit/errors/CANT_INVITE"
+msgstr "Няможна адправіць запрашэнне."
+
+msgid "unit/errors/COMP7_QUALIFICATION"
+msgstr ""
+"Памылка далучэння да звязу: гульня ў звязе недаступная да завяршэння "
+"кваліфікацыі."
+
+msgid "unit/errors/COOLDOWN"
+msgstr "Аперацыя часова недаступная."
+
+msgid "unit/errors/FAIL_UNIT_METHOD"
+msgstr "Апошняя аперацыя з камандай не ўдалася."
+
+msgid "unit/errors/GET_READY_VEHICLE_FAIL"
+msgstr "Машына не гатовая да бою або яе няма ў Гаражы."
+
+msgid "unit/errors/GET_VEHICLE_FAIL"
+msgstr "Нельга змясціць машыну ў слот."
+
+msgid "unit/errors/HAS_IN_ARENA_MEMBERS"
+msgstr "Дзеянне недаступнае. Частка атрада яшчэ ў баі."
+
+msgid "unit/errors/INSUFFICIENT_ROLE"
+msgstr "Вы не маеце правоў, каб выканаць гэту аперацыю."
+
+msgid "unit/errors/JOIN_CTX_LOCK"
+msgstr "Акаўнт заблакіраваны."
+
+msgid "unit/errors/NOT_IDLE"
+msgstr "Каманда ў чарзе або ў пошуку."
+
+msgid "unit/errors/NOT_INVITED"
+msgstr "Няможна далучыцца да каманды з закрытым доступам."
+
+msgid "unit/errors/NOT_IN_QUEUE"
+msgstr "Каманды няма ў чарзе."
+
+msgid "unit/errors/NOT_IN_SEARCH"
+msgstr "Каманды няма ў пошуку."
+
+msgid "unit/errors/NOT_READY"
+msgstr "Каманда не гатовая."
+
+msgid "unit/errors/NO_ARENA_VEHICLES"
+msgstr "Памылка далучэння да звязу: няма прыдатнай тэхнікі для рэжыму."
+
+msgid "unit/errors/NO_AVAILABLE_SLOTS"
+msgstr "Нельга дадаць гэтага гульца ў баявы склад."
+
+msgid "unit/errors/NO_PLAYER"
+msgstr "Дзеянне недаступнае. Такі гулец не знойдзены."
+
+msgid "unit/errors/NO_UNIT"
+msgstr "Каманда не знойдзена."
+
+msgid "unit/errors/NO_UNIT_MGR"
+msgstr "Такой каманды не існуе."
+
+msgid "unit/errors/NO_VEHICLES"
+msgstr "Дзеянне недаступнае. Памылка паказу спіса тэхнікі."
+
+msgid "unit/errors/OFFLINE_PLAYER"
+msgstr "Дзеянне недаступнае. Зараз гэты гулец па-за сеткай."
+
+msgid "unit/errors/PLAYER_IGNORED"
+msgstr "Вы знаходзіцеся ў чорным спісе камандзіра."
+
+msgid "unit/errors/PREV_RATED_BATTLE_IN_PROGRESS"
+msgstr "Дзеянне недаступнае. Папярэдні бой яшчэ не скончыўся."
+
+msgid "unit/errors/REMOVE_PLAYER_FAIL"
+msgstr "Нельга выключыць гульца з каманды."
+
+msgid "unit/errors/RESTRICT_INVITED"
+msgstr "Дзеянне недаступнае. Адзін або больш гульцоў не прынялі запрашэнне."
+
+msgid "unit/errors/RESTRICT_LEGIONARIES"
+msgstr "Дзеянне недаступнае для легіянераў."
+
+msgid "unit/errors/SLOT_NOT_CLOSED"
+msgstr "Дзеянне недаступнае. Слот не заблакаваны."
+
+msgid "unit/errors/SLOT_OCCUPIED"
+msgstr "Дзеянне недаступнае. Слот ужо заняты."
+
+msgid "unit/errors/SLOT_RESERVED"
+msgstr "Дзеянне з гэтым слотам немагчымае."
+
+msgid "unit/errors/SORTIES_FORBIDDEN"
+msgstr "У выбраны час Вылазкі забаронены."
+
+msgid "unit/errors/SWITCH_SIZE_CONSTRAINTS"
+msgstr ""
+"Не ўдаецца пераключыць рэжым гульні, бо перавышаны ліміт удзельнікаў звязу."
+
+msgid "unit/errors/TIMEOUT"
+msgstr "Дзеянне недаступнае. Час скончыўся."
+
+msgid "unit/errors/TOO_MANY_CLOSED_SLOTS"
+msgstr ""
+"Дзеянне недаступнае. Заблакавана максімальна дапушчальная колькасць слотаў."
+
+msgid "unit/errors/TOO_MANY_LEGIONARIES"
+msgstr "Дзеянне недаступнае. Максімальная колькасць легіянераў."
+
+msgid "unit/errors/UNIT_ADD_FAIL"
+msgstr "Нельга стварыць каманду або далучыцца да яе."
+
+msgid "unit/errors/UNIT_MGR_ENTITY_CREATION_FAIL"
+msgstr "Нельга стварыць каманду."
+
+msgid "unit/errors/UNIT_RESTORED"
+msgstr "Дзеянне недаступнае. Атрад адноўлены."
+
+msgid "unit/errors/VEHICLE_MISMATCH"
+msgstr "Дзеянне недаступнае. Машына не адпавядае патрабаванням."
+
+msgid "unit/errors/VEHICLE_NOT_CHOSEN"
+msgstr "Дзеянне недаступнае. Спачатку выберыце машыну."
+
+msgid "unit/errors/WRONG_UNIT_REQUISITES"
+msgstr "Такой каманды не існуе."
+
+msgid "unit/errors/WRONG_VEHICLE"
+msgstr ""
+"Дзеянне недаступнае. Машына не гатовая або не адпавядае патрабаванням."
+
+msgid "unit/notification/PLAYER_BECOME_EQUIPMENT_COMMANDER"
+msgstr "Кіраванне баявымі рэзервамі ў баі перададзена вам."
+
+msgid "unit/notification/changeDivision"
+msgstr "Камандзір %(name)s выбраў %(division)s дывізіён."
+
+msgid "unit/notification/divisionType/ABSOLUTE"
+msgstr "Абсалютны"
+
+msgid "unit/notification/divisionType/CHAMPION"
+msgstr "Чэмпіёнскі"
+
+msgid "unit/notification/divisionType/MIDDLE"
+msgstr "Сярэдні"
+
+msgid "unit/notification/giveLeadership"
+msgstr "%(userName)s прызначаны камандзірам."
+
+msgid "unit/notification/playerAdded"
+msgstr "%(userName)s уступіў у атрад."
+
+msgid "unit/notification/playerAddedWithFilter"
+msgstr ""
+"%(userName)s далучыўся да гэтага звязу на машыне %(tierRange)s узроўню."
+
+msgid "unit/notification/playerOffline"
+msgstr "Сувязь з %(userName)s страчана."
+
+msgid "unit/notification/playerOnline"
+msgstr "Сувязь з %(userName)s абноўлена."
+
+msgid "unit/notification/playerRemoved"
+msgstr "%(userName)s пакінуў атрад."
+
+msgid "unit/warnings/ALREADY_INVITED"
+msgstr "Запрашэнне ўжо адпраўлена гульцу."
+
+msgid "unit/warnings/ANOTHER_PLAYER_BECOME_COMMANDER"
+msgstr "Камандаванне перададзена іншаму члену клана."
+
+msgid ""
+"unit/warnings/ANOTHER_PLAYER_BECOME_COMMANDER_WITH_EQUIPMENT_PERMISSION"
+msgstr ""
+"Камандаванне атрадам і кіраванне баявымі рэзервамі ў баі перададзена іншаму "
+"гульцу."
+
+msgid "unit/warnings/ANOTHER_PLAYER_BECOME_EQUIPMENT_COMMANDER"
+msgstr "Кіраванне баявымі рэзервамі ў баі перададзена іншаму члену клана."
+
+msgid "unit/warnings/CANT_PICK_LEADER"
+msgstr "Вас выключылі са складу атрада: атрад расфарміраваны."
+
+msgid "unit/warnings/CLAN_CHANGED"
+msgstr "Вас выключылі са складу атрада, склад клана змяніўся."
+
+msgid "unit/warnings/EXPIRED_PLAY_LIMITS"
+msgstr ""
+"Ваш гульнявы час заканчваецца, уступіць у новы бой немагчыма. У "
+"%(expiredTime)s вы будзеце адключаны ад сервера."
+
+msgid "unit/warnings/EXPIRED_PLAY_LIMITS_TO_COMMANDER"
+msgstr ""
+"У аднаго з гульцоў засталося недастаткова часу для завяршэння бою. Атрад "
+"пераведзены ў стан падрыхтоўкі."
+
+msgid "unit/warnings/EXTERNAL_LEGIONARIES_MATCHING_CANCELED"
+msgstr "Падбор легіянераў спынены."
+
+msgid "unit/warnings/FORT_BATTLE_END"
+msgstr "Дзеянне недаступнае. Час чакання бою скончыўся."
+
+msgid "unit/warnings/INVITE_REMOVED"
+msgstr "Не ўдалося далучыцца, бо вас выключылі з гэтай каманды."
+
+msgid "unit/warnings/KICKED_CANDIDATE"
+msgstr "Вас аўтаматычна выключылі з добраахвотнікаў."
+
+msgid "unit/warnings/KICKED_PLAYER"
+msgstr "Вас выключыў камандзір."
+
+msgid "unit/warnings/NO_CLAN_MEMBERS"
+msgstr "Вас выключылі са складу атрада: атрад расфарміраваны."
+
+msgid "unit/warnings/PLAYER_BECOME_COMMANDER"
+msgstr "Вы сталі камандзірам атрада."
+
+msgid "unit/warnings/PLAYER_BECOME_COMMANDER_WITH_EQUIPMENT_PERMISSION"
+msgstr ""
+"Вы сталі камандзірам атрада.\n"
+"Кіраванне баявымі рэзервамі ў баі перададзена вам."
+
+msgid "unit/warnings/STRONGHOLDS_DIRECTION_CHANGED"
+msgstr "Выбраны іншы плацдарм для Наступлення."
+
+msgid "unit/warnings/STRONGHOLDS_MODE_CHANGED"
+msgstr "Выбраны іншы рэжым."
+
+msgid "unit/warnings/UNIT_ASSEMBLER_DISABLED"
+msgstr "Пошук часова адключаны: занадта шмат звязаў на серверы."
+
+msgid "unit/warnings/UNIT_ASSEMBLER_NO_DATE_RECEIVED"
+msgstr "Немагчыма знайсці гульцоў: памылка сервера. Паспрабуйце пазней."
+
+msgid "unit/warnings/UNIT_ASSEMBLER_NO_MATCH_POSSIBLE"
+msgstr ""
+"Пошук адменены: як мінімум адзін удзельнік звязу не мае прыдатнай тэхнікі "
+"для выбранага рэжыму."
+
+msgid "unit/warnings/UNIT_ASSEMBLER_TIMEOUT"
+msgstr "Час пошуку скончыўся. Прыдатныя гульцы не знойдзеныя."
+
+msgid "unit/warnings/WAITING_FOR_JOIN"
+msgstr "Адбываецца далучэнне гульцоў. Калі ласка, пачакайце."
+
+msgid "unitBrowser/errors/BAD_ACCEPT_CONTEXT"
+msgstr "Нельга пацвердзіць гатоўнасць далучэння да каманды."
+
+msgid "unload/button"
+msgstr "Перайсці ў Жаўнерню"
+
+msgid "unload_crew/FORBIDDEN"
+msgstr ""
+"Не ўдалося зняць экіпаж і перавесці яго ў Жаўнерню, бо ў танка ўнікальны "
+"пастаянны экіпаж."
+
+msgid "unload_crew/invalid_vehicle"
+msgstr ""
+"Не ўдалося зняць экіпаж і перавесці яго ў Жаўнерню. Памылковая машына."
+
+msgid "unload_crew/not_enough_space"
+msgstr "Памылка высадкі экіпажа ў Жаўнерню. Замала месца ў Жаўнерні."
+
+msgid "unload_crew/server_error"
+msgstr ""
+"Не ўдалося зняць экіпаж і перавесці яго ў Жаўнерню. Паспрабуйце пазней."
+
+msgid "unload_crew/success"
+msgstr "Экіпаж высаджаны ў Жаўнерню."
+
+msgid "unload_crew/vehicle_locked"
+msgstr ""
+"Не ўдалося зняць экіпаж і перавесці яго ў Жаўнерню, бо машына заблакіравана."
+
+msgid "unload_crew/vehicle_need_repair"
+msgstr ""
+"Не ўдалося зняць экіпаж і перавесці яго ў Жаўнерню, бо машына патрабуе "
+"рамонту."
+
+msgid "unload_tankman/FORBIDDEN"
+msgstr ""
+"Не ўдалося зняць танкіста з машыны і перавесці яго ў Жаўнерню, бо ў танка "
+"ўнікальны пастаянны экіпаж."
+
+msgid "unload_tankman/button"
+msgstr "У Жаўнерню"
+
+msgid "unload_tankman/invalid_vehicle"
+msgstr ""
+"Не ўдалося зняць танкіста з машыны і перавесці яго ў Жаўнерню. Памылковая "
+"машына."
+
+msgid "unload_tankman/not_enough_space"
+msgstr "Недастаткова месца ў Жаўнерні для высадкі танкіста."
+
+msgid "unload_tankman/server_error"
+msgstr "Не ўдалося высадзіць танкіста ў Жаўнерню. Паспрабуйце пазней."
+
+msgid "unload_tankman/success"
+msgstr "Танкіст высаджаны ў Жаўнерню."
+
+msgid "unload_tankman/vehicle_locked"
+msgstr ""
+"Не ўдалося зняць танкіста з машыны і перавесці яго ў Жаўнерню, бо машына "
+"заблакіравана."
+
+msgid "unload_tankman/vehicle_need_repair"
+msgstr ""
+"Не ўдалося зняць танкіста з машыны і перавесці яго ў Жаўнерню, бо машына "
+"патрабуе рамонту."
+
+msgid "unlocks/drawFailed"
+msgstr "Нельга паказаць дрэва даследаванняў з-за памылковых налад."
+
+msgid "unlocks/item/already_unlocked"
+msgstr "Модуль %(typeString)s «%(userString)s» даследаваны."
+
+msgid "unlocks/item/in_processing"
+msgstr "Запыт на даследаванне адпраўлены, чакаецца адказ ад сервера."
+
+msgid "unlocks/item/server_error"
+msgstr ""
+"Памылка сервера пры даследаванні модуля %(typeString)s «%(userString)s». "
+"Паспрабуйце пазней."
+
+msgid "unlocks/item/unlock_success"
+msgstr ""
+"Модуль %(typeString)s «%(userString)s» даследаваны. Выдаткавана "
+"неразмеркаванага досведу: %(vehXP)s, вольнага досведу: %(freeXP)s."
+
+msgid "unlocks/vehicle/already_unlocked"
+msgstr "%(userString)s даследаваны."
+
+msgid "unlocks/vehicle/in_processing"
+msgstr "Запыт на даследаванне адпраўлены, чакаецца адказ ад сервера."
+
+msgid "unlocks/vehicle/server_error"
+msgstr "Памылка сервера пры даследаванні %(userString)s. Паспрабуйце пазней."
+
+msgid "unlocks/vehicle/unlock_success"
+msgstr ""
+"%(userString)s даследаваны. Выдаткавана неразмеркаванага досведу %(vehXP)s, "
+"вольнага досведу %(freeXP)s."
+
+msgid "upgradeTankman/server_error"
+msgstr "Не ўдалося навучыць танкіста. Паспрабуйце пазней."
+
+msgid "upgradeTankman/success"
+msgstr "Навучанне закончылася."
+
+msgid "upgradeTrophyDevice/switch_off/body"
+msgstr ""
+"Наладка трафейнага абсталявання часова недаступная з тэхнічных прычын. "
+"Паспрабуйце пазней."
+
+msgid "upgradeTrophyDevice/switch_on/body"
+msgstr ""
+"Наладка трафейнага абсталявання зноў даступная. Выбачаемся за нязручнасці."
+
+msgid "vehicle/restore/finished"
+msgstr ""
+"Машыну %(vehicleName)s аднавіць нельга, бо час, адведзены на гэтую аперацыю,"
+" скончыўся."
+
+msgid "vehicle/restoreDuration/days"
+msgstr "Машыну можна будзе аднавіць на Складзе яшчэ %(time)s сут."
+
+msgid "vehicle/restoreDuration/hours"
+msgstr "Машыну можна будзе аднавіць на Складзе яшчэ %(time)s гадз."
+
+msgid "vehicle/restoreDuration/unlimited"
+msgstr "Машыну можна будзе аднавіць на Складзе."
+
+msgid "vehicleCompare/disabled"
+msgstr "Аперацыя часова недаступная. Паспрабуйце пазней."
+
+msgid "vehicleCompare/previewNotAllowed"
+msgstr ""
+"Перадпрагляд %(vehicle)s даступны толькі ў поўнай версіі кліента гульні."
+
+msgid "vehicleComponents/equip_in_processing"
+msgstr "Запыт на ўсталяванне модуля адпраўлены, чакаецца адказ ад сервера."
+
+msgid "vehicleComponents/module_buy_server_error"
+msgstr ""
+"Не ўдалося купіць модуль %(typeString)s «%(userString)s». Паспрабуйце "
+"пазней."
+
+msgid "vehicleComponents/module_buy_success"
+msgstr ""
+"Модуль %(typeString)s «%(userString)s» куплены (%(count)d шт.). Выдаткавана "
+"%(price)s."
+
+msgid "vehicleComponents/module_has_in_inventory"
+msgstr "Модуль %(typeString)s «%(userString)s» ужо маецца на Складзе."
+
+msgid "vehicleComponents/module_is_already_unlocked"
+msgstr "Модуль %(typeString)s «%(userString)s» даследаваны."
+
+msgid "vehicleComponents/module_not_enough_money"
+msgstr "Каб купіць %(typeString)s «%(userString)s», не стае %(price)s."
+
+msgid "vehicleComponents/module_not_found_in_inventory"
+msgstr "Модуль %(typeString)s «%(userString)s» на Складзе не знойдзены."
+
+msgid "vehicleComponents/module_not_found_in_shop"
+msgstr ""
+"Модуль %(typeString)s «%(userString)s» у Краме не знойдзены. Паспрабуйце "
+"пазней."
+
+msgid "vehicleComponents/module_unlock_success"
+msgstr ""
+"Модуль %(typeString)s «%(userString)s» даследаваны. Выдаткавана "
+"неразмеркаванага досведу: %(unspentXP)s, вольнага досведу: %(freeXP)s."
+
+msgid "vehicleComponents/unlock_in_processing"
+msgstr "Запыт на даследаванне адпраўлены, чакаецца адказ ад сервера."
+
+msgid "vehicleComponents/vehicle_has_in_inventory"
+msgstr "%(userString)s ужо маецца на Складзе."
+
+msgid "vehicleComponents/vehicle_is_already_unlocked"
+msgstr "%(userString)s даследаваны."
+
+msgid "vehicleComponents/vehicle_not_enough_money"
+msgstr "Каб купіць %(userString)s, не стае %(price)s."
+
+msgid "vehicleComponents/vehicle_not_found_in_inventory"
+msgstr "%(userString)s не знойдзены на Складзе."
+
+msgid "vehicleComponents/vehicle_not_found_in_shop"
+msgstr "%(userString)s не знойдзены ў Краме. Паспрабуйце пазней."
+
+msgid "vehicleComponents/vehicle_unlock_success"
+msgstr ""
+"%(userString)s даследаваны. Выдаткавана неразмеркаванага досведу "
+"%(unspentXP)s, вольнага досведу %(freeXP)s."
+
+msgid "vehiclePostProgression/buyPairModification/body"
+msgstr "Мадыфікацыя %(modification)s для %(vehicle)s паспяхова праведзена."
+
+msgid "vehiclePostProgression/buyPairModification/title"
+msgstr "Правядзенне мадыфікацыі"
+
+msgid "vehiclePostProgression/changeSlotCategory/body"
+msgstr "Катэгорыя %(category)s для другога слота %(vehicle)s прызначана."
+
+msgid "vehiclePostProgression/changeSlotCategory/title"
+msgstr "Прызначэнне катэгорыі слота"
+
+msgid "vehiclePostProgression/creditsSpent"
+msgstr "Патрачана крэдытаў: %(value)s."
+
+msgid "vehiclePostProgression/discardAllPairsModification/body"
+msgstr "Усе парныя мадыфікацыі для %(vehicle)s скасаваны."
+
+msgid "vehiclePostProgression/discardPairModification/body"
+msgstr "Мадыфікацыя %(modification)s для %(vehicle)s скасавана."
+
+msgid "vehiclePostProgression/discardPairModification/title"
+msgstr "Скасаванне мадыфікацыі"
+
+msgid "vehiclePostProgression/discardPairsModification/body"
+msgstr "Мадыфікацыі %(modifications)s для %(vehicle)s скасаваны."
+
+msgid ""
+"vehiclePostProgression/discardPairsModification/modifications/separator"
+msgstr ", "
+
+msgid "vehiclePostProgression/experienceSpent"
+msgstr "Патрачана баявога досведу: %(value)s."
+
+msgid "vehiclePostProgression/freeExperienceSpent"
+msgstr "Патрачана вольнага досведу: %(value)s."
+
+msgid "vehiclePostProgression/modificationProcessorError/body"
+msgstr "Памылка схемы мадыфікацый. Паспрабуйце пазней."
+
+msgid "vehiclePostProgression/modificationProcessorError/title"
+msgstr "Памылка"
+
+msgid "vehiclePostProgression/researchStep/body"
+msgstr ""
+"Базавая мадыфікацыя %(level)s узроўню для %(vehicle)s даследавана і "
+"праведзена."
+
+msgid "vehiclePostProgression/researchSteps/body"
+msgstr ""
+"Базавыя мадыфікацыі %(levels)sузроўню для %(vehicle)s даследаваны і "
+"праведзены."
+
+msgid "vehiclePostProgression/researchSteps/levels/separator"
+msgstr ", "
+
+msgid "vehiclePostProgression/researchSteps/title"
+msgstr "Даследаванне мадыфікацыі"
+
+msgid "vehiclePostProgression/setSlotCategory/body"
+msgstr "Катэгорыя %(category)s для другога слота %(vehicle)s прызначана."
+
+msgid "vehiclePostProgression/setSlotCategory/title"
+msgstr "Прызначэнне катэгорыі слота"
+
+msgid "vehiclePostProgression/unlockFeature/opt_dev_boosters_switch/body"
+msgstr "Атрыманы доступ да дадатковага рыштунку для %(vehicle)s."
+
+msgid "vehiclePostProgression/unlockFeature/opt_dev_boosters_switch/title"
+msgstr "Дадатковае аснашчэнне"
+
+msgid "vehiclePostProgression/unlockFeature/roleSlot/body"
+msgstr "Даступнае прызначэнне катэгорыі другога слота для %(vehicle)s."
+
+msgid "vehiclePostProgression/unlockFeature/roleSlot/title"
+msgstr "Доступ да катэгорыі слота"
+
+msgid "vehiclePostProgression/unlockFeature/shells_consumables_switch/body"
+msgstr "Атрыманы доступ да неабходнага рыштунку для %(vehicle)s."
+
+msgid "vehiclePostProgression/unlockFeature/shells_consumables_switch/title"
+msgstr "Неабходны рыштунак"
+
+msgid "vehiclePostProgression/vehiclesUnlockPostProgression/single/body"
+msgstr "Атрыманы доступ да схемы мадыфікацый для %(vehicle)s."
+
+msgid "vehiclePostProgression/vehiclesUnlockPostProgression/title"
+msgstr "Палявая мадэрнізацыя"
+
+msgid ""
+"vehiclePostProgression/vehiclesUnlockPostProgression/welcomeUnlock/body"
+msgstr ""
+"Атрыманы доступ да схемы мадыфікацый тэхнікі. Вы можаце выканаць больш "
+"тонкую ролевую наладку вашых машын і змяніць ТТХ з дапамогай розных "
+"мадыфікацый."
+
+msgid "vehicle_buy/invalid_vehicle"
+msgstr "Не ўдалося купіць «%(vehName)s». Памылковая машына."
+
+msgid "vehicle_buy/not_enough_credits"
+msgstr "Не ўдалося купіць «%(vehName)s». Замала крэдытаў."
+
+msgid "vehicle_buy/not_enough_gold"
+msgstr "Не ўдалося купіць «%(vehName)s». Замала золата."
+
+msgid "vehicle_buy/not_unlocked_nation"
+msgstr "Немагчыма выканаць аперацыю. Дзяржава не даследавана."
+
+msgid "vehicle_buy/server_error"
+msgstr ""
+"Не ўдалося купіць «%(vehName)s». Адбылася памылка сервера, паспрабуйце "
+"пазней."
+
+msgid "vehicle_buy/server_error_centerDown"
+msgstr "Не ўдалося купіць «%(vehName)s», бо гэта паслуга часова недаступная."
+
+msgid "vehicle_buy/success"
+msgstr "«%(vehName)s» куплены. Выдаткавана %(price)s."
+
+msgid "vehicle_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "vehicle_remove/demount_kit_disabled"
+msgstr "Не ўдалося выдаліць «%(vehName)s». Паспрабуйце пазней."
+
+msgid "vehicle_remove/invalid_vehicle"
+msgstr "Не ўдалося выдаліць «%(vehName)s». Памылковая машына."
+
+msgid "vehicle_remove/not_enough_credits"
+msgstr "Не ўдалося выдаліць «%(vehName)s». Замала крэдытаў."
+
+msgid "vehicle_remove/not_enough_gold"
+msgstr "Не ўдалося выдаліць «%(vehName)s». Замала золата."
+
+msgid "vehicle_remove/not_enough_space"
+msgstr "Не ўдалося выдаліць «%(vehName)s», бо ў Жаўнерні замала месца."
+
+msgid "vehicle_remove/server_error"
+msgstr ""
+"Не ўдалося выдаліць «%(vehName)s». Упэўніцеся, што машына не належыць да "
+"фарміравання ці паспрабуйце пазней."
+
+msgid "vehicle_remove/success"
+msgstr ""
+"Машына %(vehName)s выдалена.\n"
+" %(money)s."
+
+msgid "vehicle_remove/success_dismantling"
+msgstr ""
+"Машына %(vehName)s выдалена.\n"
+"%(gainMoney)s.\n"
+"%(spendMoney)s."
+
+msgid "vehicle_remove/vehicle_cannot_be_sold"
+msgstr "Не ўдалося выдаліць «%(vehName)s». Машына будзе спісана аўтаматычна."
+
+msgid "vehicle_remove/vehicle_locked"
+msgstr "Не ўдалося выдаліць «%(vehName)s», бо машына заблакавана."
+
+msgid "vehicle_remove/vehicle_need_repair"
+msgstr "Не ўдалося выдаліць «%(vehName)s», бо машына патрабуе рамонту."
+
+msgid "vehicle_remove/vehicle_sell_limit"
+msgstr ""
+"Не ўдалося выдаліць «%(vehName)s», бо вы перавысілі сутачны ліміт продажу "
+"тэхнікі."
+
+msgid "vehicle_remove/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "vehicle_rent/buyOption"
+msgstr "Увага! Пракатную машыну ў будучыні можна купіць танней."
+
+msgid "vehicle_rent/invalid_vehicle"
+msgstr "Не ўдалося ўзяць напракат «%(vehName)s». Памылковая машына."
+
+msgid "vehicle_rent/not_enough_credits"
+msgstr "Не ўдалося ўзяць напракат «%(vehName)s». Замала крэдытаў."
+
+msgid "vehicle_rent/not_enough_gold"
+msgstr "Не ўдалося ўзяць напракат «%(vehName)s». Замала золата."
+
+msgid "vehicle_rent/server_error"
+msgstr ""
+"Не ўдалося ўзяць напракат «%(vehName)s». Адбылася памылка сервера, "
+"паспрабуйце пазней."
+
+msgid "vehicle_rent/server_error_centerDown"
+msgstr ""
+"Не ўдалося ўзяць напракат «%(vehName)s», бо гэта паслуга часова недаступная."
+
+msgid "vehicle_rent/success"
+msgstr ""
+"Машына «%(vehName)s» узята напракат %(rentPackageName)s. Выдаткавана "
+"%(price)s. %(buyOption)s"
+
+msgid "vehicle_rent/timeRent"
+msgstr "на %(days)d сут"
+
+msgid "vehicle_rent/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "vehicle_repair/credits_error"
+msgstr "Каб адрамантаваць «%(vehName)s», не стае «%(needed)s» крэдытаў."
+
+msgid "vehicle_repair/not_enough_credits"
+msgstr "Каб адрамантаваць «%(vehName)s», не стае «%(needed)s» крэдытаў."
+
+msgid "vehicle_repair/server_error"
+msgstr "Не ўдалося адрамантаваць «%(vehName)s». Паспрабуйце пазней."
+
+msgid "vehicle_repair/success"
+msgstr "Машына «%(vehName)s» адрамантавана. Выдаткавана %(money)s."
+
+msgid "vehicle_restore/DISABLED"
+msgstr "Аднаўленне тэхнікі часова недаступнае. Паўтарыце спробу пазней."
+
+msgid "vehicle_restore/disconnected_from_center"
+msgstr ""
+"Не ўдалося аднавіць «%(vehName)s». Паслуга аднаўлення тэхнікі часова "
+"недаступная."
+
+msgid "vehicle_restore/invalid_vehicle"
+msgstr "Не ўдалося аднавіць «%(vehName)s». Памылковая машына."
+
+msgid "vehicle_restore/not_enough_credits"
+msgstr "Не ўдалося аднавіць «%(vehName)s». Замала крэдытаў."
+
+msgid "vehicle_restore/not_enough_gold"
+msgstr "Не ўдалося аднавіць «%(vehName)s». Замала золата."
+
+msgid "vehicle_restore/server_error"
+msgstr ""
+"Не ўдалося аднавіць «%(vehName)s». Адбылася памылка сервера, паспрабуйце "
+"пазней."
+
+msgid "vehicle_restore/server_error_centerDown"
+msgstr ""
+"Не ўдалося аднавіць «%(vehName)s». Паслуга пракату тэхнікі часова "
+"недаступная."
+
+msgid "vehicle_restore/success"
+msgstr "Машына «%(vehName)s» адноўлена. Выдаткавана %(price)s."
+
+msgid "vehicle_restore/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "vehicle_sell/currencyUpdate/debited/demount_kit"
+msgstr "Выкарыстаны дэмантажны набор (х%(countDK)s)"
+
+msgid "vehicle_sell/demount_kit_disabled"
+msgstr "Не ўдалося прадаць «%(vehName)s». Папрабуйце пазней."
+
+msgid "vehicle_sell/disabledService"
+msgstr "Не ўдалося прадаць «%(vehName)s». Папрабуйце пазней."
+
+msgid "vehicle_sell/equipCoin_error"
+msgstr ""
+"Не атрымалася прадаць «%(vehName)s». Не стае кампанентаў для дэмантажу "
+"абсталявання."
+
+msgid "vehicle_sell/invalid_vehicle"
+msgstr "Не ўдалося прадаць «%(vehName)s». Памылковая машына."
+
+msgid "vehicle_sell/not_enough_credits"
+msgstr "Не ўдалося прадаць «%(vehName)s». Замала крэдытаў."
+
+msgid "vehicle_sell/not_enough_gold"
+msgstr "Не ўдалося прадаць «%(vehName)s». Замала золата."
+
+msgid "vehicle_sell/not_enough_space"
+msgstr ""
+"Не ўдалося прадаць «%(vehName)s», бо ў Жаўнерні замала вольнага месца."
+
+msgid "vehicle_sell/server_error"
+msgstr ""
+"Не ўдалося прадаць «%(vehName)s». Упэўніцеся, што машына не належыць да "
+"фарміравання ці паспрабуйце пазней."
+
+msgid "vehicle_sell/success"
+msgstr ""
+"Машына %(vehName)s прададзена.\n"
+"%(money)s.\n"
+"\n"
+"%(restoreInfo)s"
+
+msgid "vehicle_sell/success_dismantling"
+msgstr ""
+"Машына %(vehName)s прададзена.\n"
+"%(gainMoney)s.\n"
+"%(spendMoney)s.\n"
+"%(restoreInfo)s"
+
+msgid "vehicle_sell/vehicle_cannot_be_sold"
+msgstr "Не ўдалося прадаць «%(vehName)s». Машына будзе спісана аўтаматычна."
+
+msgid "vehicle_sell/vehicle_locked"
+msgstr "Не ўдалося прадаць «%(vehName)s», бо машына заблакавана."
+
+msgid "vehicle_sell/vehicle_need_repair"
+msgstr "Не ўдалося прадаць «%(vehName)s», бо машына патрабуе рамонту."
+
+msgid "vehicle_sell/vehicle_sell_limit"
+msgstr ""
+"Не ўдалося прадаць «%(vehName)s», бо вы перавысілі сутачны ліміт продажу "
+"танкаў."
+
+msgid "vehicle_sell/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "vehicle_slot_buy/not_enough_credits"
+msgstr "Не ўдалося купіць слот. Замала крэдытаў."
+
+msgid "vehicle_slot_buy/not_enough_gold"
+msgstr "Не ўдалося купіць слот. Замала золата."
+
+msgid "vehicle_slot_buy/server_error"
+msgstr "Не ўдалося купіць слот. Паспрабуйце пазней."
+
+msgid "vehicle_slot_buy/success"
+msgstr "Дадатковы слот у Гаражы куплены. Выдаткавана %(money)s."
+
+msgid "vehicle_slot_buy/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "vehicle_trade_in/invalid_vehicle"
+msgstr "Не ўдалося абмяняць на «%(vehName)s», бо выбрана памылковая машына."
+
+msgid "vehicle_trade_in/not_enough_credits"
+msgstr "Не ўдалося абмяняць на «%(vehName)s». Замала крэдытаў."
+
+msgid "vehicle_trade_in/not_enough_gold"
+msgstr "Не ўдалося абмяняць на «%(vehName)s». Замала золата."
+
+msgid "vehicle_trade_in/not_enough_space"
+msgstr ""
+"Не ўдалося абмяняць «%(tradeOffVehName)s», бо ў Жаўнерні замала месца."
+
+msgid "vehicle_trade_in/offer_available"
+msgstr "Прапанова для абмену цяпер даступная!"
+
+msgid "vehicle_trade_in/offer_unavailable"
+msgstr "Прапанова для абмену больш недаступная!"
+
+msgid "vehicle_trade_in/server_error"
+msgstr ""
+"Не ўдалося абмяняць на «%(vehName)s». Адбылася памылка сервера, паўтарыце "
+"спробу пазней."
+
+msgid "vehicle_trade_in/server_error_centerDown"
+msgstr ""
+"Не ўдалося абмяняць на «%(vehName)s». Паслуга куплі/абмену тэхнікі часова "
+"недаступная."
+
+msgid "vehicle_trade_in/success"
+msgstr ""
+"Машына «%(tradeOffVehName)s» спісана. Новая машына «%(vehName)s» куплена. "
+"Выдаткавана %(price)s."
+
+msgid "vehicle_trade_in/vehicle_cannot_be_sold"
+msgstr ""
+"Не ўдалося абмяняць «%(tradeOffVehName)s». Машына будзе спісана аўтаматычна."
+
+msgid "vehicle_trade_in/vehicle_cannot_trade_in"
+msgstr ""
+"Не ўдалося абмяняць «%(vehName)s», бо такую машыну нельга атрымаць у абмен."
+
+msgid "vehicle_trade_in/vehicle_cannot_trade_off"
+msgstr ""
+"Не ўдалося абмяняць «%(tradeOffVehName)s», бо гэту машыну нельга абмяняць на"
+" іншую."
+
+msgid "vehicle_trade_in/vehicle_locked"
+msgstr "Не ўдалося абмяняць «%(tradeOffVehName)s», бо машына заблакавана."
+
+msgid "vehicle_trade_in/vehicle_need_repair"
+msgstr ""
+"Не ўдалося абмяняць «%(tradeOffVehName)s», бо машына патрабуе рамонту."
+
+msgid "vehicle_trade_in/vehicle_not_found_in_inventory"
+msgstr ""
+"Не ўдалося абмяняць «%(tradeOffVehName)s», бо такой машыны няма на Складзе."
+
+msgid "vehicle_trade_in/wallet_not_available"
+msgstr ""
+"Нельга выканаць аперацыю. Усё ваша золата будзе даступнае пасля "
+"аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "video/error"
+msgstr "Памылка прайгравання відэа. Код памылкі: %(code)s."
+
+msgid "wallet/available"
+msgstr ""
+"Сінхранізацыя Адзінага Кашалька выканана. Усё ваша золата, боны, крэдыты і "
+"вольны досвед цяпер даступныя."
+
+msgid "wallet/available_freexp"
+msgstr ""
+"Сінхранізацыя Адзінага Кашалька выканана. Увесь ваш вольны досвед цяпер "
+"даступны."
+
+msgid "wallet/available_gold"
+msgstr ""
+"Сінхранізацыя Адзінага Кашалька выканана. Усё ваша золата цяпер даступна."
+
+msgid "wallet/not_available"
+msgstr ""
+"Атрымліваюцца звесткі пра баланс. Усё ваша золата, боны, крэдыты і вольны "
+"досвед неўзабаве будуць даступныя."
+
+msgid "wallet/not_available_freexp"
+msgstr ""
+"Атрымліваюцца звесткі пра баланс. Увесь ваш вольны досвед неўзабаве будзе "
+"даступны."
+
+msgid "wallet/not_available_gold"
+msgstr ""
+"Атрымліваюцца звесткі пра баланс. Усё ваша золата неўзабаве будзе даступнае."
+
+msgid "winback/turnOffBattlesError"
+msgstr "Не ўдалося завяршыць Размінку. Паспрабуйце пазней."
+
+msgid "window/buttons/close"
+msgstr "Закрыць"
+
+msgid "wrong_slot"
+msgstr "Модуль %s «%s» нельга змясціць у %s."

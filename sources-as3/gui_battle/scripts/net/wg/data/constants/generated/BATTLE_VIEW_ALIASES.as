@@ -179,6 +179,8 @@ package net.wg.data.constants.generated
       
       public static const BATTLE_ROYALE_WINNER_CONGRATS:String = "battleRoyaleWinnerCongrats";
       
+      public static const PREBATTLE_CAROUSEL_VIEW:String = "prebattleCarouselView";
+      
       public static const MAPS_TRAINING_GOALS:String = "mapsTrainingGoals";
       
       public static const PIERCING_DEBUG_PANEL:String = "piercingDebugPanel";
@@ -190,12 +192,6 @@ package net.wg.data.constants.generated
       public static const COMP7_TANK_CAROUSEL_FILTER_POPOVER:String = "comp7TankCarouselFilterPopover";
       
       public static const COSMIC_HUD:String = "cosmicHud";
-      
-      public static const EVENT_HUNTER_RESPAWN:String = "eventHunterRespawn";
-      
-      public static const EVENT_BOSS_TELEPORT:String = "eventBossTeleport";
-      
-      public static const EVENT_BOSS_WIDGET:String = "eventBossWidget";
        
       
       public function BATTLE_VIEW_ALIASES()

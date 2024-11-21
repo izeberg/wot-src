@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.657650 0.000091 -2.903097</min>
+		<max>1.657650 1.242261 3.214786</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S41_Bofors_Pagod_TK105/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/normal/lod0/Chassis</nodefullVisual>
+</root>

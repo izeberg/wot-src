@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>choice</name>
+			<type>random_float</type>
+		</param>
+	</params>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>Raccoon_Idle_Turns_Head_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>80.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Raccoon_Idle_Stretching_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>80.000000</rangeStart>
+					<rangeEnd>90.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Raccoon_Idle_Start_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Raccoon_Idle_Sit_Scratches_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>90.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>4.000000 -113.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Raccoon_Idle_Turns_Head_01</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_anml_h_NY25_0003_Raccoon/Sequence/Raccoon_Idle_Turns_Head_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-117.000000 26.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Raccoon_Idle_Stretching_01</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_anml_h_NY25_0003_Raccoon/Sequence/Raccoon_Idle_Stretching_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>113.500000 26.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Raccoon_Idle_Start_01</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_anml_h_NY25_0003_Raccoon/Sequence/Raccoon_Idle_Start_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-335.000000 22.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Raccoon_Idle_Sit_Scratches_01</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_anml_h_NY25_0003_Raccoon/Sequence/Raccoon_Idle_Sit_Scratches_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>343.000000 25.500000 0.000000</uiPosition>
+	</node>
+</root>

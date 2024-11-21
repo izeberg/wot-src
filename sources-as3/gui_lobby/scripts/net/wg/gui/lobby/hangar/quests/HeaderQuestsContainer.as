@@ -41,6 +41,8 @@ package net.wg.gui.lobby.hangar.quests
       private static const GROUP_ICON_SHIFT_Y:int = 37;
       
       private static const SHOW_CONTENT_DELAY_STEP_INDEX:int = 100;
+      
+      private static const LEFTSIDE_EXPAND_OFFSET_X:int = 20;
        
       
       private var _questsInformers:Vector.<IQuestInformerButton> = null;
@@ -306,6 +308,10 @@ package net.wg.gui.lobby.hangar.quests
             {
                _loc5_ = _loc6_ = -HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP;
             }
+            if(!this._isRightSide)
+            {
+               _loc6_ += LEFTSIDE_EXPAND_OFFSET_X;
+            }
          }
          else
          {
@@ -566,6 +572,10 @@ package net.wg.gui.lobby.hangar.quests
          _loc1_ = this._questsInformers.length;
          if(this.isAnimExpanded)
          {
+            if(!this._isRightSide)
+            {
+               return _loc1_ * HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP - LEFTSIDE_EXPAND_OFFSET_X;
+            }
             return _loc1_ * HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP;
          }
          return (_loc1_ - 1) * HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_GROUP_STEP + HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP;

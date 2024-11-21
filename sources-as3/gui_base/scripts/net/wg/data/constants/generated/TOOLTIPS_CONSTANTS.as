@@ -127,8 +127,6 @@ package net.wg.data.constants.generated
       
       public static const SENIORITY_AWARD_VEHICLE:String = "seniorityAwardVehicle";
       
-      public static const WT_PORTAL_VEHICLE:String = "portalVehicle";
-      
       public static const DEFAULT_SHELL:String = "defaultShell";
       
       public static const HANGAR_SHELL:String = "hangarShell";
@@ -177,8 +175,6 @@ package net.wg.data.constants.generated
       
       public static const EFFICIENCY_PARAM:String = "efficiencyParam";
       
-      public static const TOTAL_EFFICIENCY_PARAM:String = "totalEfficiencyParam";
-      
       public static const MAP:String = "map";
       
       public static const SETTINGS_CONTROL:String = "control";
@@ -190,6 +186,8 @@ package net.wg.data.constants.generated
       public static const TECH_CUSTOMIZATION_ITEM_ICON:String = "techCustomizationItemIcon";
       
       public static const TECH_CUSTOMIZATION_ITEM_AWARD:String = "techCustomizationItemAward";
+      
+      public static const COLLAPSE_CUSTOMIZATION_ITEM_AWARD:String = "collapseCustomizationItemAward";
       
       public static const TECH_CUSTOMIZATION_ITEM_PURCHASE:String = "techCustomizationItemPurchase";
       
@@ -246,8 +244,6 @@ package net.wg.data.constants.generated
       public static const EVENT_QUESTS_PREVIEW:String = "EventQuestsPreview";
       
       public static const PERSONAL_QUESTS_PREVIEW:String = "presonalQuestsPreview";
-      
-      public static const EVENT_BATTLES_QUESTS_PREVIEW:String = "eventBattlesQuestsReview";
       
       public static const SHEDULE_QUEST:String = "scheduleQuest";
       
@@ -405,6 +401,10 @@ package net.wg.data.constants.generated
       
       public static const SQUAD_BONUS:String = "squadBonus";
       
+      public static const NY_CREDIT_BONUS:String = "nyTotalCreditBonus";
+      
+      public static const NY_FILLERS:String = "nyFillers";
+      
       public static const GF_TEST_TOOLTIP:String = "gfTestTooltip";
       
       public static const WOT_PLUS:String = "wotPlus";
@@ -534,30 +534,6 @@ package net.wg.data.constants.generated
       public static const BATTLE_ROYALE_SELECTOR_INFO:String = "battleRoyaleSelectorInfo";
       
       public static const BATTLE_ROYALE_SELECTOR_CALENDAR_INFO:String = "battleRoyaleSelectorCalendarInfo";
-      
-      public static const EVENT_BATTLES_SELECTOR_INFO:String = "eventBattlesSelectorInfo";
-      
-      public static const EVENT_BATTLES_SERVER_PRIMETIME:String = "eventBattlesServerPrimeTime";
-      
-      public static const EVENT_BATTLES_CALENDAR:String = "eventBattlesCalendar";
-      
-      public static const EVENT_BATTLES_END:String = "eventBattlesEnd";
-      
-      public static const EVENT_BATTLES_TICKET:String = "eventBattlesTicket";
-      
-      public static const EVENT_MAIN_PRIZE_DISCOUNT:String = "mainPrizeDiscount";
-      
-      public static const EVENT_STAMP:String = "eventStamp";
-      
-      public static const EVENT_CAROUSEL_VEHICLE:String = "eventCarouselVehicle";
-      
-      public static const EVENT_LOOTBOX:String = "eventLootbox";
-      
-      public static const EVENT_BUY_LOOTBOX:String = "eventBuyLootbox";
-      
-      public static const WT_GUARANTED_REWARD:String = "wtGuarantedReward";
-      
-      public static const EVENT_VEHICLE_COMPENSATION:String = "eventVehicleCompensation";
       
       public static const BLUEPRINT_INFO:String = "blueprintInfo";
       
@@ -831,13 +807,13 @@ package net.wg.data.constants.generated
       
       public static const ARMORY_YARD_ENTRY_POINT_BEFORE_PROGRESSION:String = "armoryYardEntryPointBeforeProgression";
       
+      public static const NEW_YEAR_AWARD_VEHICLE:String = "newYearAwardVehicle";
+      
       public static const DEBUT_BOXES_BADGE:String = "debutBoxesBadge";
       
       public static const PERSONAL_MISSIONS_ANNOUNCE:String = "pmAnnounce";
       
       public static const PERSONAL_MISSIONS_OLD_OPERATIONS:String = "pmOldOperations";
-      
-      public static const EVENT_LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT:String = "eventLootBoxesVehicleBlueprintFragment";
       
       public static const ACHIEVEMENTS_SET:Array = [BATTLE_STATS_ACHIEVS,BATTLE_STATS_MARKS_ON_GUN_ACHIEVEMENT,ACHIEVEMENT,MARKS_ON_GUN_ACHIEVEMENT,GLOBAL_RATING,MARK_OF_MASTERY,ACHIEVEMENT_ATTR,SHOP_ACHIEVEMENT,SHOP_BADGE,REFERRAL_BADGE];
       
@@ -847,7 +823,7 @@ package net.wg.data.constants.generated
       
       public static const BOOTCAMP_SET:Array = [BOOTCAMP_AWARD_MEDAL,BOOTCAMP_REWARD_PROGRESS,BOOTCAMP_LESSON_PROGRESS];
       
-      public static const CUSTOMIZATION_SET:Array = [TECH_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_NONHISTORIC_ITEM,TECH_CUSTOMIZATION_FANTASTICAL_ITEM,TECH_CUSTOMIZATION_POPOVER_ITEM,TECH_CUSTOMIZATION_ITEM_ICON,TECH_CUSTOMIZATION_ITEM_AWARD,TECH_CUSTOMIZATION_ITEM_PURCHASE,SHOP_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_CHAINED_ITEM];
+      public static const CUSTOMIZATION_SET:Array = [TECH_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_NONHISTORIC_ITEM,TECH_CUSTOMIZATION_FANTASTICAL_ITEM,TECH_CUSTOMIZATION_POPOVER_ITEM,TECH_CUSTOMIZATION_ITEM_ICON,TECH_CUSTOMIZATION_ITEM_AWARD,TECH_CUSTOMIZATION_ITEM_PURCHASE,SHOP_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_CHAINED_ITEM,COLLAPSE_CUSTOMIZATION_ITEM_AWARD];
       
       public static const CYBER_SPORT_SET:Array = [CYBER_SPORT_SLOT,CYBER_SPORT_SLOT_SELECTED,CYBER_SPORT_SELECTED_VEHICLE,SELECTED_VEHICLE_TRADEOFF,CYBER_SPORT_TEAM,CYBER_SPORT_UNIT_LEVEL,CYBER_SPORT_VEHICLE_NOT_READY,SQUAD_SLOT_VEHICLE_SELECTED];
       
@@ -877,7 +853,7 @@ package net.wg.data.constants.generated
       
       public static const VEH_CMP_SET:Array = [VEH_CMP_CUSTOMIZATION,VEH_CMP_SKILLS];
       
-      public static const VEHICLES_SET:Array = [CAROUSEL_VEHICLE,INVENTORY_VEHICLE,TECHTREE_VEHICLE,SHOP_VEHICLE,AWARD_VEHICLE,EXTENDED_AWARD_VEHICLE,SENIORITY_AWARD_VEHICLE,TRADE_IN,TRADE_IN_PRICE,HISTORICAL_VEHICLE,BASE_VEHICLE_PARAMETERS,VEHICLE_CMP_PARAMETERS,VEHICLE_AVG_PARAMETERS,VEHICLE_ADVANCED_PARAMETERS,VEHICLE_PREVIEW_AVG_PARAMETERS,VEHICLE_PREVIEW_ADVANCED_PARAMETERS,DEFAULT_CREW_MEMBER,VEHICLE_PREVIEW_CREW_MEMBER,TECHTREE_VEHICLE_ANNOUNCEMENT,TECHTREE_VEHICLE_STATUS,VEHICLE_TANK_SETUP_PARAMETERS,VEHICLE_POST_PROGRESSION_PARAMETERS,VEHICLE_ROLES,WT_PORTAL_VEHICLE];
+      public static const VEHICLES_SET:Array = [CAROUSEL_VEHICLE,INVENTORY_VEHICLE,TECHTREE_VEHICLE,SHOP_VEHICLE,AWARD_VEHICLE,EXTENDED_AWARD_VEHICLE,SENIORITY_AWARD_VEHICLE,TRADE_IN,TRADE_IN_PRICE,HISTORICAL_VEHICLE,BASE_VEHICLE_PARAMETERS,VEHICLE_CMP_PARAMETERS,VEHICLE_AVG_PARAMETERS,VEHICLE_ADVANCED_PARAMETERS,VEHICLE_PREVIEW_AVG_PARAMETERS,VEHICLE_PREVIEW_ADVANCED_PARAMETERS,DEFAULT_CREW_MEMBER,VEHICLE_PREVIEW_CREW_MEMBER,TECHTREE_VEHICLE_ANNOUNCEMENT,TECHTREE_VEHICLE_STATUS,VEHICLE_TANK_SETUP_PARAMETERS,VEHICLE_POST_PROGRESSION_PARAMETERS,VEHICLE_ROLES];
       
       public static const BLUEPRINTS_SET:Array = [BLUEPRINT_INFO,BLUEPRINT_FRAGMENT_INFO,BLUEPRINT_EMPTY_SLOT_INFO,BLUEPRINT_CONVERT_INFO,BLUEPRINT_RANDOM_INFO,BLUEPRINT_RANDOM_NATIONAL_INFO];
       
@@ -931,15 +907,11 @@ package net.wg.data.constants.generated
       
       public static const ARMORY_YARD_LOBBY_SET:Array = [ARMORY_YARD_AWARD_VEHICLE,ARMORY_YARD_ENTRY_POINT_ACTIVE,ARMORY_YARD_ENTRY_POINT_BEFORE_PROGRESSION];
       
+      public static const NEW_YEAR_LOBBY_SET:Array = [NEW_YEAR_AWARD_VEHICLE,NY_CREDIT_BONUS,NY_FILLERS];
+      
       public static const WOT_PLUS_SET:Array = [WOT_PLUS];
       
       public static const EARLY_ACCESS_LOBBY_SET:Array = [EARLY_ACCESS_COMMON_INFO,EARLY_ACCESS_VEHICLE_LOCKED,EARLY_ACCESS_PAUSED,EARLY_ACCESS_CAROUSEL_VEHICLE_POST_PROGRESSION,EARLY_ACCESS_CURRENCY,EARLY_ACCESS_ENTRY_POINT];
-      
-      public static const EFFICIENCY_SET:Array = [TOTAL_EFFICIENCY_PARAM];
-      
-      public static const EVENT_BATTLES_SET:Array = [EVENT_BATTLES_SELECTOR_INFO,EVENT_BATTLES_SERVER_PRIMETIME,EVENT_BATTLES_CALENDAR,EVENT_LOOTBOX,EVENT_BATTLES_QUESTS_PREVIEW,EVENT_BATTLES_TICKET,EVENT_STAMP,EVENT_MAIN_PRIZE_DISCOUNT,EVENT_CAROUSEL_VEHICLE,EVENT_BUY_LOOTBOX,WT_GUARANTED_REWARD,EVENT_BATTLES_END];
-      
-      public static const EVLB_LOBBY_SET:Array = [EVENT_LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT];
        
       
       public function TOOLTIPS_CONSTANTS()

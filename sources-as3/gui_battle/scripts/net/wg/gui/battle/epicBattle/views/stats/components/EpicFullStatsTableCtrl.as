@@ -68,8 +68,9 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       
       override public function setVehiclesData(param1:Array, param2:Vector.<Number>, param3:Boolean) : void
       {
-         var _loc4_:EpicVehicleDataProvider = null;
          var _loc5_:PlayerScrollingList = null;
+         var _loc4_:EpicVehicleDataProvider = null;
+         _loc5_ = null;
          if(param3)
          {
             _loc5_ = this._table.team2PlayerList;

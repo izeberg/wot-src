@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.789222 -0.505359 -3.560064</min>
+		<max>1.783095 0.876939 3.323848</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A169_TF_3/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A169_TF_3/normal/lod0/Hull</nodefullVisual>
+</root>

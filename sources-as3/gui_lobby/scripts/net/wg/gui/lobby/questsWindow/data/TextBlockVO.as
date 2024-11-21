@@ -7,6 +7,8 @@ package net.wg.gui.lobby.questsWindow.data
    {
       
       private static const ITEMS_FIELD_NAME:String = "items";
+      
+      private static const ARGS_FIELD_NAME:String = "specialTooltipArgs";
        
       
       public var linkage:String = "";
@@ -30,6 +32,10 @@ package net.wg.gui.lobby.questsWindow.data
       public var typedTooltipArg:String = "";
       
       public var complexTooltip:String = "";
+      
+      public var specialTooltip:String = "";
+      
+      public var specialTooltipArgs:Array = null;
       
       public var linesLimit:int = -1;
       
@@ -57,6 +63,12 @@ package net.wg.gui.lobby.questsWindow.data
             }
             return false;
          }
+         if(param1 == ARGS_FIELD_NAME)
+         {
+            _loc3_ = param2 as Array;
+            this.specialTooltipArgs = Boolean(_loc3_) ? [].concat(_loc3_[0]) : [];
+            return false;
+         }
          return super.onDataWrite(param1,param2);
       }
       
@@ -67,6 +79,11 @@ package net.wg.gui.lobby.questsWindow.data
             this.items.fixed = false;
             this.items.splice(0,this.items.length);
             this.items = null;
+         }
+         if(this.specialTooltipArgs != null)
+         {
+            this.specialTooltipArgs.splice(0,this.specialTooltipArgs.length);
+            this.specialTooltipArgs = null;
          }
          super.onDispose();
       }

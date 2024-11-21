@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/normal/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.687886 -0.007234 -3.566236</min>
+		<max>1.687886 1.035559 3.516580</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/normal/lod1/Chassis</parent>
+	<extent>32</extent>
+	<tank>true</tank>
+</root>

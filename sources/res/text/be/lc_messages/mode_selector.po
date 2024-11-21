@@ -1,0 +1,380 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "button/progression"
+msgstr "Паказаць прагрэсію"
+
+msgid "button/select"
+msgstr "Наладзіць"
+
+msgid "event/battlePass/name"
+msgstr "Баявы пропуск, сезон %(seasonNum)s"
+
+msgid "event/finished"
+msgstr "Рангавыя баі завершаны"
+
+msgid "event/paused"
+msgstr "Рангавыя баі часова недаступныя"
+
+msgid "hint/showProgression"
+msgstr "ПРАГЛЯД У РЭЖЫМЕ ПРАГРЭСІІ"
+
+msgid "mode/battleRoyale/progression/currentStage"
+msgstr "Бягучы этап:"
+
+msgid "mode/battleRoyale/progression/steps"
+msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"
+
+msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
+msgstr ""
+"Гуляючы ў рэжыме {whiteSpanish_open}«Сталёвы паляўнічы»{whiteSpanish_close},"
+" вы будзеце здабываць ачкі. Яны патрэбны для прасоўвання па прагрэсіі "
+"Баявога пропуска."
+
+msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/battleRoyaleQueue/description"
+msgstr "Кожны сам за сябе!"
+
+msgid "mode/battleRoyaleQueue/title"
+msgstr "Сталёвы паляўнічы"
+
+msgid "mode/bootcamp/call/1"
+msgstr "Прайдзіце і атрымайце ўзнагароду"
+
+msgid "mode/bootcamp/call/2"
+msgstr ""
+"%(greenBright_open)sПройдзена, узнагарода атрымана%(greenBright_close)s"
+
+msgid "mode/bootcamp/condition"
+msgstr "Адзіночны рэжым."
+
+msgid "mode/bootcamp/description"
+msgstr "Вывучэнне асноў гульні."
+
+msgid "mode/bootcamp/name"
+msgstr "Вучэбны палігон"
+
+msgid "mode/comp7/battlePassTooltip/body"
+msgstr ""
+"Гуляючы на тэхніцы X узроўню ў рэжыме "
+"{whiteSpanish_open}«Націск»{whiteSpanish_close}, вы будзеце здабываць ачкі. "
+"Яны патрэбны для прасоўвання па прагрэсіі Баявога пропуска."
+
+msgid "mode/comp7/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/comp7/calendarTooltip"
+msgstr "Падзея працягнецца да %(date)s"
+
+msgid "mode/comp7/description"
+msgstr ""
+"Спаборніцкі рэжым. 7x7 %(parSecondary_open)sI%(parSecondary_close)s "
+"X&nbsp;уровень"
+
+msgid "mode/comp7/seasonEnd"
+msgstr "Событие «Ледяной медведь» завершено"
+
+msgid "mode/comp7/seasonStart"
+msgstr "Событие «Ледяной медведь» начнётся %(date)s"
+
+msgid "mode/comp7/warning"
+msgstr "Рангавая неактыўнасць"
+
+msgid "mode/comp7/widgetDescription/qualification"
+msgid_plural "plural/calendarDay/timeLeft"
+msgstr[0] ""
+"Завяршыце %(maxBattlesCount)s бой\n"
+"для праходжання кваліфікацыі."
+msgstr[1] ""
+"Завяршыце %(maxBattlesCount)s баі\n"
+"для праходжання кваліфікацыі."
+msgstr[2] ""
+"Завяршыце %(maxBattlesCount)s баёў\n"
+"для праходжання кваліфікацыі."
+
+msgid "mode/comp7/widgetDescription/status"
+msgstr ""
+"%(rank)s\n"
+"%(division)s"
+
+msgid "mode/epicBattle/condition"
+msgstr "30x30&nbsp;{par_open}I{par_close}&nbsp;%(levels)s&nbsp;узроўні"
+
+msgid "mode/epicBattle/conditionSingleLevel"
+msgstr "30x30&nbsp;{par_open}I{par_close}&nbsp;%(levels)s&nbsp;узровень"
+
+msgid "mode/epicBattle/cycleNext"
+msgstr ""
+"Падзея\n"
+"пачнецца%(date)s"
+
+msgid "mode/epicBattle/cycleSoon"
+msgstr ""
+"Рэжым\n"
+"хутка пачнецца"
+
+msgid "mode/epicBattle/description"
+msgstr "Рэжым з прагрэсіяй і ўзнагародамі."
+
+msgid "mode/epicBattle/seasonEnd"
+msgstr "Падзея завершана"
+
+msgid "mode/epicQueue/battlePassTooltip/body"
+msgstr ""
+"Гуляючы ў рэжыме {whiteSpanish_open}«Лінія фронту»{whiteSpanish_close}, вы "
+"будзеце здабываць ачкі Баявога пропуска."
+
+msgid "mode/epicQueue/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/mapbox/battlePassTooltip/body"
+msgstr ""
+"Гуляючы на тэхніцы VIII–X узроўняў у рэжыме {whiteSpanish_open}«Разведка "
+"боем»{whiteSpanish_close}, вы будзеце здабываць ачкі, патрэбныя для "
+"прасоўвання па прагрэсіі Баявога пропуска."
+
+msgid "mode/mapbox/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/mapbox/condition"
+msgstr ""
+"15x15 %(parSecondary_open)sI%(parSecondary_close)s VIII–X&nbsp;узроўні"
+
+msgid "mode/mapbox/description"
+msgstr "Новыя механікі на мапах."
+
+msgid "mode/mapsTraining/callToAction"
+msgstr "Вывучайце мапы"
+
+msgid "mode/mapsTraining/description"
+msgstr "Вывучайце мапы"
+
+msgid "mode/random/battlePassTooltip/body"
+msgstr ""
+"Гульня на тэхніцы VI–XІ узроўняў у рэжыме {whiteSpanish_open}«Выпадковы бой»"
+" (за выключэннем Генеральнай бітвы){whiteSpanish_close} будзе прыносіць вам "
+"ачкі. Яны патрэбны для прасоўвання па прагрэсіі Баявога пропуска."
+
+msgid "mode/random/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/random/condition"
+msgstr ""
+"15x15 %(parSecondary_open)sI%(parSecondary_close)s 30x30 "
+"%(parSecondary_open)sI%(parSecondary_close)s I–XI&nbsp;узроўні"
+
+msgid "mode/random/description"
+msgstr "Баі з аўтападборам камандаў."
+
+msgid "mode/random/setup"
+msgstr "Наладзіць"
+
+msgid "mode/ranked/battlePassTooltip/body"
+msgstr ""
+"Гуляючы ў рэжыме {whiteSpanish_open}«Рангавы бой»{whiteSpanish_close}, вы "
+"будзеце здабываць ачкі. Яны патрэбны для прасоўвання па прагрэсіі Баявога "
+"пропуска."
+
+msgid "mode/ranked/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "mode/ranked/condition"
+msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s V&nbsp;узровень"
+
+msgid "mode/ranked/description"
+msgstr "Рэжым з прагрэсіяй і ўзнагародамі."
+
+msgid "mode/specBattlesList/call/1"
+msgstr "Запішыцеся на турнір"
+
+msgid "mode/specBattlesList/call/2"
+msgstr "Найбліжэйшы бой: %(date)s у %(time)s"
+
+msgid "mode/specBattlesList/condition"
+msgstr ""
+"1х1–15x15 %(parSecondary_open)sI%(parSecondary_close)s I–X&nbsp;узроўні"
+
+msgid "mode/specBattlesList/description"
+msgstr "Глабальная карта і турніры."
+
+msgid "mode/strongholdsBattlesList/call/1"
+msgstr "Ідзіце на бой як легіянер"
+
+msgid "mode/strongholdsBattlesList/call/2"
+msgstr "Змагайцеся ў клане"
+
+msgid "mode/strongholdsBattlesList/condition"
+msgstr ""
+"7х7–15x15 %(parSecondary_open)sI%(parSecondary_close)s VI–X&nbsp;узроўні"
+
+msgid "mode/strongholdsBattlesList/description"
+msgstr "Кланавыя баі за прамысловы рэсурс."
+
+msgid "mode/trainingsList/call/1"
+msgstr "Вучэбных палігонаў: %(amount)s"
+
+msgid "mode/trainingsList/condition"
+msgstr ""
+"1х1 — 15x15 %(parSecondary_open)sI%(parSecondary_close)s I–XI&nbsp;узроўні"
+
+msgid "mode/trainingsList/description"
+msgstr "Азнаямляльныя вучэнні."
+
+msgid "mode/versusAI/condition"
+msgstr "12x12 %(parSecondary_open)sI%(parSecondary_close)s I-X&nbsp;узроўні"
+
+msgid "mode/versusAI/description"
+msgstr "Баі супраць ШІ."
+
+msgid "novelty"
+msgstr "НОВАЕ"
+
+msgid "popover/assault"
+msgstr "Штурм"
+
+msgid "popover/default"
+msgstr "Звычайны бой"
+
+msgid "popover/devMaps"
+msgstr "Мапы ў распрацоўцы"
+
+msgid "popover/domination"
+msgstr "Сустрэчны бой"
+
+msgid "popover/epicStandard"
+msgstr "Генеральная бітва"
+
+msgid "popover/header"
+msgstr "Падрэжымы бою"
+
+msgid "ranked/widget/qualBattles"
+msgstr "Баёў у кваліфікацыі: %(current) %(par_open)s/ %(max)%(par_close)s"
+
+msgid "reward/bones/description"
+msgstr "Узнагарода вызначаецца паводле паказчыкаў вашай эфектыўнасці ў баі"
+
+msgid "reward/bones/name"
+msgstr "Боны"
+
+msgid "reward/bountyEquipment/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць %(name)s"
+
+msgid "reward/bountyEquipment/name"
+msgstr "Адмысловае абсталяванне"
+
+msgid "reward/credits/description"
+msgstr "Узнагарода вызначаецца паводле паказчыкаў вашай эфектыўнасці ў баі"
+
+msgid "reward/credits/name"
+msgstr "Крэдыты"
+
+msgid "reward/crew/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць унікальных танкістаў"
+
+msgid "reward/crew/name"
+msgstr "Танкісты"
+
+msgid "reward/experience/description"
+msgstr "Узнагарода вызначаецца паводле паказчыкаў вашай эфектыўнасці ў баі"
+
+msgid "reward/experience/name"
+msgstr "Досвед"
+
+msgid "reward/improvedEquipment/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць %(name)s"
+
+msgid "reward/improvedEquipment/name"
+msgstr "Адмысловае абсталяванне"
+
+msgid "reward/other/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць мноства карысных узнагарод"
+
+msgid "reward/other/name"
+msgstr "Адмысловая ўзнагарода"
+
+msgid "reward/progressionStyle/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць адмысловы прагрэсійны стыль"
+
+msgid "reward/progressionStyle/name"
+msgstr "Прагрэсійны стыль"
+
+msgid "reward/style/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць асаблівы 3D-стыль для %(name)s"
+
+msgid "reward/style/name"
+msgstr "3D-стыль"
+
+msgid "reward/vehicle/description"
+msgstr "Гуляючы ў рэжыме, вы можаце атрымаць %(name)s"
+
+msgid "reward/vehicle/name"
+msgstr "Узнагародная тэхніка"
+
+msgid "selectMap"
+msgstr "Перадвызначаныя налады для Выпадковых баёў"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "status/timeLeft/lessMin"
+msgstr "менш за хвіліну"
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "statusSeparator"
+msgstr " %(parSecondary_open)sI%(parSecondary_close)s "
+
+msgid "title"
+msgstr "ВЫБЕРЫЦЕ РЭЖЫМ БОЮ"
+
+msgid "window/battleSession/globalMap/button"
+msgstr "Глабальная карта"
+
+msgid "window/battleSession/globalMap/description"
+msgstr ""
+"Захоплівайце правінцыі і змагайцеся за панаванне ў свеце. Рэжым даступны "
+"толькі кланавым гульцам."
+
+msgid "window/battleSession/globalMap/enterClan"
+msgstr "Уступіць у клан"
+
+msgid "window/battleSession/globalMap/title"
+msgstr "Баі на Глабальнай карце"
+
+msgid "window/battleSession/title"
+msgstr "АДМЫСЛОВЫ БОЙ"
+
+msgid "window/battleSession/tournaments/button"
+msgstr "Спіс турніраў"
+
+msgid "window/battleSession/tournaments/china"
+msgstr ""
+"Зараз гэта функцыянальнасць недаступная, але стане даступнай у будучыні. "
+"Калі ласка, пачакайце."
+
+msgid "window/battleSession/tournaments/description"
+msgstr ""
+"Змагайцеся ў адзіночку або ў складзе каманды, дэманструйце свае здольнасці і"
+" атрымлівайце годныя ўзнагароды."
+
+msgid "window/battleSession/tournaments/title"
+msgstr "Турніры"

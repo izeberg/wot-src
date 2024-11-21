@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Main</identifier>
+				<transform>
+					<row0>0.000000 1.000000 0.000000</row0>
+					<row1>-0.000000 0.000000 -1.000000</row1>
+					<row2>-1.000000 0.000000 0.000000</row2>
+					<row3>0.000000 0.065817 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Body_M</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.046886 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Antenna_L</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.010355 -0.184493 -0.059412</row3>
+						</transform>
+						<node>
+							<identifier>Antenna1_L</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>0.059831 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Antenna2_L</identifier>
+								<transform>
+									<row0>1.000000 -0.000000 -0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.045251 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Antenna2_L_BlendBone</identifier>
+									<transform>
+										<row0>0.000000 -0.000000 -1.000000</row0>
+										<row1>1.000000 0.000000 0.000000</row1>
+										<row2>-0.000000 1.000000 -0.000000</row2>
+										<row3>-0.228139 0.184493 0.059412</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Antenna1_L_BlendBone</identifier>
+								<transform>
+									<row0>0.000000 -0.000000 -1.000000</row0>
+									<row1>1.000000 0.000000 0.000000</row1>
+									<row2>-0.000000 1.000000 -0.000000</row2>
+									<row3>-0.182889 0.184493 0.059412</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Antenna_L_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 -0.000000 -1.000000</row0>
+								<row1>1.000000 0.000000 0.000000</row1>
+								<row2>-0.000000 1.000000 -0.000000</row2>
+								<row3>-0.123058 0.184493 0.059412</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Chest_M</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.104184 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Head_M</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.056563 0.062113 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Hat_L</identifier>
+								<transform>
+									<row0>0.670649 -0.724101 -0.160959</row0>
+									<row1>-0.704106 -0.689694 0.168989</row1>
+									<row2>-0.233377 -0.000000 -0.972386</row2>
+									<row3>-0.013334 0.032208 -0.045731</row3>
+								</transform>
+								<node>
+									<identifier>Hat1_L</identifier>
+									<transform>
+										<row0>0.837000 -0.012588 -0.547058</row0>
+										<row1>-0.189845 0.930960 -0.311886</row1>
+										<row2>0.513215 0.364904 0.776824</row2>
+										<row3>-0.036771 -0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Hat1_L_BlendBone</identifier>
+										<transform>
+											<row0>-0.395101 -0.491152 0.776315</row0>
+											<row1>0.697868 -0.710027 -0.094037</row1>
+											<row2>-0.597391 -0.504611 -0.623291</row2>
+											<row3>-0.076335 0.247765 0.066619</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Hat_L_BlendBone</identifier>
+									<transform>
+										<row0>0.160959 -0.168989 0.972386</row0>
+										<row1>0.670649 -0.704106 -0.233377</row1>
+										<row2>-0.724101 -0.689694 0.000000</row2>
+										<row3>-0.113511 0.255930 0.016237</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Hat_R</identifier>
+								<transform>
+									<row0>-0.670649 0.724101 -0.160959</row0>
+									<row1>0.704106 0.689694 0.168989</row1>
+									<row2>0.233377 -0.000000 -0.972386</row2>
+									<row3>-0.013334 0.032208 0.045731</row3>
+								</transform>
+								<node>
+									<identifier>Hat1_R</identifier>
+									<transform>
+										<row0>0.837000 -0.012588 -0.547058</row0>
+										<row1>-0.189845 0.930960 -0.311886</row1>
+										<row2>0.513215 0.364904 0.776824</row2>
+										<row3>0.036771 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Hat1_R_BlendBone</identifier>
+										<transform>
+											<row0>-0.395101 -0.491152 0.776315</row0>
+											<row1>-0.697868 0.710027 0.094037</row1>
+											<row2>0.597391 0.504611 0.623291</row2>
+											<row3>0.076335 -0.247765 -0.066619</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Hat_R_BlendBone</identifier>
+									<transform>
+										<row0>0.160959 -0.168989 0.972386</row0>
+										<row1>-0.670649 0.704106 0.233377</row1>
+										<row2>0.724101 0.689694 0.000000</row2>
+										<row3>0.113511 -0.255930 -0.016237</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Head_M_BlendBone</identifier>
+								<transform>
+									<row0>0.000000 -0.000000 -1.000000</row0>
+									<row1>1.000000 0.000000 0.000000</row1>
+									<row2>-0.000000 1.000000 -0.000000</row2>
+									<row3>-0.273450 -0.062113 -0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>arm1_L</identifier>
+							<transform>
+								<row0>0.162616 0.633977 -0.756062</row0>
+								<row1>0.004425 0.765785 0.643081</row1>
+								<row2>0.986679 -0.107921 0.121723</row2>
+								<row3>0.014085 0.062774 -0.032950</row3>
+							</transform>
+							<node>
+								<identifier>arm1_L_BlendBone</identifier>
+								<transform>
+									<row0>0.756062 -0.643081 -0.121723</row0>
+									<row1>0.162616 0.004425 0.986680</row1>
+									<row2>0.633977 0.765785 -0.107921</row2>
+									<row3>-0.102269 -0.027904 -0.217110</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>arm_R</identifier>
+							<transform>
+								<row0>0.210939 -0.035205 0.976865</row0>
+								<row1>-0.036534 0.998369 0.043869</row1>
+								<row2>-0.976816 -0.044942 0.209309</row2>
+								<row3>0.014085 0.050229 0.045389</row3>
+							</transform>
+							<node>
+								<identifier>arm_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.976865 -0.043869 -0.209309</row0>
+									<row1>0.210939 -0.036534 -0.976816</row1>
+									<row2>-0.035205 0.998369 -0.044942</row2>
+									<row3>-0.091292 -0.043700 0.218374</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Chest_M_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 -0.000000 -1.000000</row0>
+								<row1>1.000000 0.000000 0.000000</row1>
+								<row2>-0.000000 1.000000 -0.000000</row2>
+								<row3>-0.216887 -0.000000 -0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Body_M_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 -0.000000 -1.000000</row0>
+							<row1>1.000000 0.000000 0.000000</row1>
+							<row2>-0.000000 1.000000 -0.000000</row2>
+							<row3>-0.112703 -0.000000 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel10_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>-0.220354 -0.975420 -0.000000</row1>
+						<row2>-0.975420 0.220354 -0.000000</row2>
+						<row3>-0.040208 -0.044926 -0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel10_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 -0.220354 -0.975420</row1>
+							<row2>0.000000 -0.975420 0.220354</row2>
+							<row3>-0.097642 -0.038179 0.034879</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel11_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.861500 0.507757 0.000000</row1>
+						<row2>0.507757 -0.861500 -0.000000</row2>
+						<row3>-0.040208 0.022699 -0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel11_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 0.861500 0.507757</row1>
+							<row2>0.000000 0.507757 -0.861500</row2>
+							<row3>-0.097642 -0.033588 0.006552</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel12_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>-0.246166 0.969228 0.000000</row1>
+						<row2>0.969228 0.246166 0.000000</row2>
+						<row3>-0.040208 0.093023 -0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel12_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 -0.000000</row0>
+							<row1>-0.000000 -0.246166 0.969228</row1>
+							<row2>0.000000 0.969228 0.246166</row2>
+							<row3>-0.097642 -0.083857 -0.047720</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel13_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>-0.738983 -0.673724 -0.000000</row1>
+						<row2>-0.673724 0.738983 0.000000</row2>
+						<row3>-0.040208 0.155778 -0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel13_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 -0.738983 -0.673724</row1>
+							<row2>0.000000 -0.673724 0.738983</row2>
+							<row3>-0.097642 0.123876 -0.097864</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel1_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.967569 -0.252607 0.000000</row1>
+						<row2>0.252607 -0.967569 0.000000</row2>
+						<row3>-0.040208 -0.172297 0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel1_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 -0.000000</row0>
+							<row1>0.000000 -0.967569 0.252607</row1>
+							<row2>0.000000 -0.252607 -0.967569</row2>
+							<row3>-0.097642 -0.018745 -0.173178</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel2_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.899943 -0.436008 -0.000000</row1>
+						<row2>0.436008 0.899943 -0.000000</row2>
+						<row3>-0.040208 -0.115981 0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel2_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.899943 0.436008</row1>
+							<row2>0.000000 -0.436008 0.899943</row2>
+							<row3>-0.097642 -0.073615 0.093211</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel3_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.933258 0.359207 0.000000</row1>
+						<row2>-0.359207 -0.933258 0.000000</row2>
+						<row3>-0.040208 -0.054473 0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel3_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 -0.000000</row0>
+							<row1>0.000000 -0.933258 -0.359207</row1>
+							<row2>0.000000 0.359207 -0.933258</row2>
+							<row3>-0.097642 0.043467 -0.041639</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel4_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.677975 0.735085 -0.000000</row1>
+						<row2>-0.735084 0.677975 0.000000</row2>
+						<row3>-0.040208 0.013378 0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel4_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 0.677975 -0.735085</row1>
+							<row2>0.000000 0.735085 0.677975</row2>
+							<row3>-0.097642 -0.027196 0.009755</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel5_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.685667 -0.727915 0.000000</row1>
+						<row2>0.727915 -0.685667 -0.000000</row2>
+						<row3>-0.040208 0.084580 0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel5_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 -0.685667 0.727915</row1>
+							<row2>0.000000 -0.727915 -0.685667</row2>
+							<row3>-0.097642 0.079126 0.039353</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel6_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.946534 -0.322603 -0.000000</row1>
+						<row2>0.322603 0.946535 -0.000000</row2>
+						<row3>-0.040208 0.151527 0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel6_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.946534 0.322603</row1>
+							<row2>0.000000 -0.322603 0.946534</row2>
+							<row3>-0.097642 0.024643 -0.151687</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel8_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.432816 -0.901482 -0.000000</row1>
+						<row2>-0.901482 -0.432816 -0.000000</row2>
+						<row3>-0.040208 -0.163227 -0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel8_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.432816 -0.901482</row1>
+							<row2>0.000000 -0.901482 -0.432816</row2>
+							<row3>-0.097642 -0.158230 -0.047561</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel9_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.065148 0.997876 0.000000</row1>
+						<row2>0.997876 -0.065148 0.000000</row2>
+						<row3>-0.040208 -0.106206 -0.097642</row3>
+					</transform>
+					<node>
+						<identifier>backWheel9_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 -0.000000</row0>
+							<row1>0.000000 0.065148 0.997876</row1>
+							<row2>0.000000 0.997876 -0.065148</row2>
+							<row3>-0.097642 0.104312 -0.032474</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.838111 -0.545500 0.000000</row1>
+						<row2>0.545500 -0.838111 -0.000000</row2>
+						<row3>-0.011945 -0.221305 -0.093827</row3>
+					</transform>
+					<node>
+						<identifier>backWheel_L_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 -0.838111 0.545500</row1>
+							<row2>0.000000 -0.545500 -0.838111</row2>
+							<row3>0.093827 -0.075572 -0.214865</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.929077 -0.369886 -0.000000</row1>
+						<row2>0.369886 0.929077 -0.000000</row2>
+						<row3>-0.011945 -0.221305 0.093827</row3>
+					</transform>
+					<node>
+						<identifier>backWheel_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.929077 0.369886</row1>
+							<row2>0.000000 -0.369886 0.929077</row2>
+							<row3>-0.093827 -0.131908 0.185683</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel1_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.483850 -0.875151 0.000000</row1>
+						<row2>0.875151 -0.483850 -0.000000</row2>
+						<row3>0.007767 0.107967 -0.089077</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel1_L_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 -0.483850 0.875151</row1>
+							<row2>0.000000 -0.875151 -0.483850</row2>
+							<row3>0.089077 0.130091 -0.012157</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel1_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.870748 0.491729 0.000000</row1>
+						<row2>-0.491729 -0.870748 0.000000</row2>
+						<row3>0.007767 0.107967 0.089077</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel1_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 -0.000000</row0>
+							<row1>0.000000 -0.870748 -0.491729</row1>
+							<row2>0.000000 0.491729 -0.870748</row2>
+							<row3>-0.089077 0.010982 0.130196</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel2_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.734450 -0.678662 0.000000</row1>
+						<row2>0.678662 -0.734450 -0.000000</row2>
+						<row3>0.008115 -0.025856 -0.089077</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel2_L_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 -0.734450 0.678662</row1>
+							<row2>0.000000 -0.678662 -0.734450</row2>
+							<row3>0.089077 0.036752 -0.069165</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel2_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.414974 -0.909833 0.000000</row1>
+						<row2>0.909833 0.414974 -0.000000</row2>
+						<row3>0.008115 -0.025856 0.089077</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel2_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 0.414974 0.909833</row1>
+							<row2>0.000000 -0.909833 0.414974</row2>
+							<row3>-0.089077 -0.054204 -0.056536</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel3_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.865584 -0.500764 -0.000000</row1>
+						<row2>0.500764 0.865584 -0.000000</row2>
+						<row3>0.008115 -0.151734 -0.089077</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel3_L_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.865584 0.500764</row1>
+							<row2>0.000000 -0.500764 0.865584</row2>
+							<row3>0.089077 -0.139977 0.094316</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel3_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.171091 0.985255 -0.000000</row1>
+						<row2>-0.985255 -0.171091 0.000000</row2>
+						<row3>0.008115 -0.151734 0.089077</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel3_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 -0.171091 -0.985255</row1>
+							<row2>0.000000 0.985255 -0.171091</row2>
+							<row3>-0.089077 0.162146 0.046882</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.059777 -0.998212 -0.000000</row1>
+						<row2>0.998212 0.059777 -0.000000</row2>
+						<row3>-0.004798 0.209532 -0.096960</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel_L_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.059777 0.998212</row1>
+							<row2>-0.000000 -0.998212 0.059777</row2>
+							<row3>0.096960 0.205510 -0.073435</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>-0.885476 -0.464684 0.000000</row1>
+						<row2>0.464684 -0.885476 0.000000</row2>
+						<row3>-0.004798 0.209532 0.096960</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel_R_BlendBone</identifier>
+						<transform>
+							<row0>-1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 -0.885476 0.464684</row1>
+							<row2>0.000000 -0.464684 -0.885476</row2>
+							<row3>-0.096960 0.151397 0.157181</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Main_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 -0.000000 -1.000000</row0>
+						<row1>1.000000 0.000000 0.000000</row1>
+						<row2>-0.000000 1.000000 -0.000000</row2>
+						<row3>-0.065817 -0.000000 -0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_11_rightShape.vertices</vertices>
+			<primitive>wheel_11_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.093827 0.054201 -0.221646</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel1_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_10_rightShape.vertices</vertices>
+			<primitive>wheel_10_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.097642 0.025030 -0.172419</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel3_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_09_rightShape.vertices</vertices>
+			<primitive>wheel_09_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.089077 0.073932 -0.151734</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel2_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_08_rightShape.vertices</vertices>
+			<primitive>wheel_08_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.097642 0.025663 -0.116202</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel3_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_07_rightShape.vertices</vertices>
+			<primitive>wheel_07_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.097642 0.025325 -0.054058</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel2_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_06_rightShape.vertices</vertices>
+			<primitive>wheel_06_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.089077 0.073932 -0.025856</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel4_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_05_rightShape.vertices</vertices>
+			<primitive>wheel_05_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.097642 0.025867 0.013877</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel5_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_04_rightShape.vertices</vertices>
+			<primitive>wheel_04_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.097642 0.025321 0.084110</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel1_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_03_rightShape.vertices</vertices>
+			<primitive>wheel_03_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.089077 0.073584 0.107967</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel6_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_02_rightShape.vertices</vertices>
+			<primitive>wheel_02_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.097642 0.025999 0.151206</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel_R_BlendBone</node>
+		<geometry>
+			<vertices>wheel_01_rightShape.vertices</vertices>
+			<primitive>wheel_01_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.096960 0.060946 0.209447</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_11_leftShape.vertices</vertices>
+			<primitive>wheel_11_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.093827 0.054090 -0.221543</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel8_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_10_leftShape.vertices</vertices>
+			<primitive>wheel_10_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097642 0.025837 -0.163281</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel3_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_09_leftShape.vertices</vertices>
+			<primitive>wheel_09_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.088974 0.073637 -0.151564</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel9_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_08_leftShape.vertices</vertices>
+			<primitive>wheel_08_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097642 0.025458 -0.106044</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel10_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_07_leftShape.vertices</vertices>
+			<primitive>wheel_07_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097642 0.025598 -0.045494</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel2_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_06_leftShape.vertices</vertices>
+			<primitive>wheel_06_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.088974 0.073932 -0.025856</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel11_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_05_leftShape.vertices</vertices>
+			<primitive>wheel_05_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097642 0.025692 0.022728</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel12_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_04_leftShape.vertices</vertices>
+			<primitive>wheel_04_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097642 0.025506 0.093620</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel1_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_03_leftShape.vertices</vertices>
+			<primitive>wheel_03_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.088974 0.073584 0.107967</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>backWheel13_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_02_leftShape.vertices</vertices>
+			<primitive>wheel_02_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097642 0.025105 0.155524</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>frontWheel_L_BlendBone</node>
+		<geometry>
+			<vertices>wheel_01_leftShape.vertices</vertices>
+			<primitive>wheel_01_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.096960 0.060956 0.209794</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Main_BlendBone</node>
+		<geometry>
+			<vertices>track_rightShape.vertices</vertices>
+			<primitive>track_rightShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.096777 0.045635 -0.006632</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Main_BlendBone</node>
+		<geometry>
+			<vertices>track_leftShape.vertices</vertices>
+			<primitive>track_leftShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.096776 0.045635 -0.006632</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Body_M_BlendBone</node>
+		<node>Main_BlendBone</node>
+		<node>Antenna2_L_BlendBone</node>
+		<node>Chest_M_BlendBone</node>
+		<node>Head_M_BlendBone</node>
+		<node>arm_R_BlendBone</node>
+		<node>arm1_L_BlendBone</node>
+		<node>Hat_L_BlendBone</node>
+		<node>Hat1_L_BlendBone</node>
+		<node>Hat_R_BlendBone</node>
+		<node>Hat1_R_BlendBone</node>
+		<node>Antenna_L_BlendBone</node>
+		<node>Antenna1_L_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Toy_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.195962 0.002952</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.122356 0.001184 -0.263820</min>
+		<max>0.122356 0.372697 0.257917</max>
+	</boundingBox>
+	<geometrySize>199808</geometrySize>
+	<minUVDensity>0.092328</minUVDensity>
+</root>

@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "buyVehicleWindow/bootcamp/topCommanderFree"
+msgstr "Бясплатны экіпаж!"
+
+msgid "buyVehicleWindow/buyBtn"
+msgstr "Купіць"
+
+msgid "buyVehicleWindow/checkBox/buy/withoutCrew"
+msgstr "Купіць машыну без экіпажу"
+
+msgid "buyVehicleWindow/checkBox/restore/withoutCrew"
+msgstr "Аднавіць машыну без экіпажу"
+
+msgid "buyVehicleWindow/countCrewLbl"
+msgstr "Танкістаў:"
+
+msgid "buyVehicleWindow/crewInVehicle"
+msgstr "Гэтай машыне экіпаж ужо прызначаны"
+
+msgid "buyVehicleWindow/equipment/ammo"
+msgstr "Загрузіць боезапас"
+
+msgid "buyVehicleWindow/equipment/slot"
+msgstr "Купіць слот"
+
+msgid "buyVehicleWindow/exchange"
+msgstr "Абмяняць"
+
+msgid "buyVehicleWindow/freeSlot"
+msgstr "Бясплатна"
+
+msgid "buyVehicleWindow/rent/title"
+msgstr "ПРАКАТ"
+
+msgid "buyVehicleWindow/rentBtn"
+msgstr "Узяць напракат"
+
+msgid "buyVehicleWindow/rentBtnLabel30Days"
+msgstr "Напракат на 30 сутак"
+
+msgid "buyVehicleWindow/rentBtnLabel3Days"
+msgstr "Напракат на 3 сутак"
+
+msgid "buyVehicleWindow/rentBtnLabel7Days"
+msgstr "Напракат на 7 сутак"
+
+msgid "buyVehicleWindow/rentBtnLabelAny"
+msgstr "Напракат на {days} сутак"
+
+msgid "buyVehicleWindow/rentBtnLabelSeason/epicCycle"
+msgstr "Этап Лініі фронту"
+
+msgid "buyVehicleWindow/rentBtnLabelSeason/epicSeason"
+msgstr "Сезон «Лініі фронту»"
+
+msgid "buyVehicleWindow/rentBtnLabelSeason/rankedCycle"
+msgstr "Этап Рангавых баёў"
+
+msgid "buyVehicleWindow/rentBtnLabelSeason/rankedSeason"
+msgstr "Сезон Рангавых баёў"
+
+msgid "buyVehicleWindow/restore"
+msgstr "Аднавіць"
+
+msgid "buyVehicleWindow/slot/0"
+msgstr "Паскораныя курсы"
+
+msgid "buyVehicleWindow/slot/1"
+msgstr "Палкавая школа"
+
+msgid "buyVehicleWindow/slot/2"
+msgstr "Танкавая акадэмія"
+
+msgid "buyVehicleWindow/termSlotUnlim"
+msgstr "Бестэрмінова"
+
+msgid "buyVehicleWindow/title"
+msgstr "КАМПЛЕКТАЦЫЯ"
+
+msgid "buyVehicleWindow/title_restore"
+msgstr "АДНАЎЛЕННЕ"
+
+msgid "buyVehicleWindow/toggleBtn/buy"
+msgstr "Купля"
+
+msgid "buyVehicleWindow/toggleBtn/rent"
+msgstr "Абмен"
+
+msgid "buyVehicleWindow/tradeInBtnLabel"
+msgstr "Выбраць машыну"
+
+msgid "congratulationAnim/backLabel"
+msgstr "Вярнуцца"
+
+msgid "congratulationAnim/buyingLabel"
+msgstr "Дзякуем за набыццё"
+
+msgid "congratulationAnim/collectibleLabel"
+msgstr "Калекцыйная тэхніка"
+
+msgid "congratulationAnim/confirmLabel"
+msgstr "Так!"
+
+msgid "congratulationAnim/descriptionLabel/style"
+msgstr "Стыль: «%(name)s»"
+
+msgid "congratulationAnim/restoreLabel"
+msgstr "Машына адноўлена"
+
+msgid "congratulationAnim/showPreviewBtnLabel"
+msgstr "Паглядзець у Гаражы"
+
+msgid "rentalTermSelectionPopover/termSlot30Days"
+msgstr "На 30 сутак"
+
+msgid "rentalTermSelectionPopover/termSlot3Days"
+msgstr "На 3 сутак"
+
+msgid "rentalTermSelectionPopover/termSlot7Days"
+msgstr "На 7 сутак"
+
+msgid "rentalTermSelectionPopover/termSlotAny"
+msgstr "На %(days)d сутак"
+
+msgid "rentalTermSelectionPopover/termSlotSeason/epicCycle"
+msgstr "Этап Лініі фронту"
+
+msgid "rentalTermSelectionPopover/termSlotSeason/epicSeason"
+msgstr "Сезон «Лініі фронту»"
+
+msgid "rentalTermSelectionPopover/termSlotSeason/rankedCycle"
+msgstr "Этап Рангавых баёў"
+
+msgid "rentalTermSelectionPopover/termSlotSeason/rankedSeason"
+msgstr "Сезон Рангавых баёў"
+
+msgid "rentalTermSelectionPopover/termSlotUnlim"
+msgstr "Бестэрмінова"
+
+msgid "rentalTermSelectionPopover/titleLabel"
+msgstr "Узяць тэхніку напракат"
+
+msgid "sellConfirmationPopover/priceLabel"
+msgstr "Увядзіце суму ( %(price)s )"
+
+msgid "sellConfirmationPopover/titleLabel"
+msgstr "Машына %(vehName)s будзе здадзена, і аднавіць яе будзе немагчыма"

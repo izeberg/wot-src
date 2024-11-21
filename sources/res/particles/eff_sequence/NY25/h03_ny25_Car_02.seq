@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>61.933338</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Car_2</name>
+		<type>model</type>
+		<resource>content/Hangars/h03_mt_ny_2025/environment/normal/lod0/hd_h03_NY24_0041_Car_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.290000 0.000000 0.000000</value>
+				<inTangent>-0.070220 0.000000 -3.805496</inTangent>
+				<outTangent>-0.067568 0.000000 -4.135135</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>2.040000 0.000000 -15.300000</value>
+				<inTangent>-0.444471 -0.000000 -4.121796</inTangent>
+				<outTangent>-0.444471 0.000000 -3.564651</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.033334</startTime>
+				<value>0.260000 0.000000 -20.000000</value>
+				<inTangent>-1.951069 0.000000 -2.241994</inTangent>
+				<outTangent>-1.951069 0.000000 -2.241994</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.066727</startTime>
+				<value>-4.960000 0.000000 -21.950001</value>
+				<inTangent>-2.787008 0.000000 -0.482903</inTangent>
+				<outTangent>-2.787008 0.000000 -0.482903</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>-13.780000 0.000000 -21.969999</value>
+				<inTangent>-3.006879 -0.000000 -0.006818</inTangent>
+				<outTangent>-5.856449 0.000000 -0.007482</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>38.066669</startTime>
+				<value>-178.151001 0.000000 -22.180000</value>
+				<inTangent>-5.856449 -0.000000 -0.007482</inTangent>
+				<outTangent>-4.463273 0.000000 0.403448</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>-186.779999 0.000000 -21.400000</value>
+				<inTangent>-4.545467 0.000000 1.701725</inTangent>
+				<outTangent>-4.545467 0.000000 1.701725</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>41.566669</startTime>
+				<value>-194.029999 0.000000 -16.700001</value>
+				<inTangent>-4.454607 0.000000 2.985437</inTangent>
+				<outTangent>-4.454607 0.000000 2.985437</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>45.000004</startTime>
+				<value>-208.729996 0.000000 -6.500000</value>
+				<inTangent>-3.089677 0.000000 2.153019</inTangent>
+				<outTangent>-3.089677 0.000000 2.153019</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>54.100002</startTime>
+				<value>-226.000000 0.000000 5.650000</value>
+				<inTangent>-1.897803 -0.000000 1.335165</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.266667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 25.000002 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.866667</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>-0.000000 25.000002 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>39.033337</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 22.340439 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.600002</startTime>
+				<value>0.000000 125.000000 0.000000</value>
+				<inTangent>-0.000000 22.340439 -0.000000</inTangent>
+				<outTangent>-0.000000 22.340439 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>54.000004</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light_2</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h03_mt_ny_2025/volume_lights_car_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>54.000004</duration>
+				<value>Car_2|</value>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>54.000004</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>61.933338</duration>
+				<value>Car_2|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>61.866669</duration>
+				<sequenceSound>hangar_h03_car_street_01</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 1</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>54.400002</duration>
+				<value>|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>54.366669</duration>
+				<sequenceSound>hangar_h03_car_street_02</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>exhaust</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_exhaust.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>54.000004</duration>
+				<value>Car_2|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.489166 0.138830 2.338709</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

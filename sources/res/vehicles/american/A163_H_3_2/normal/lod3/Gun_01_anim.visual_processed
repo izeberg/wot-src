@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>L_Chitin_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.237522 0.361746 0.742767</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.237522 -0.361746 -0.742767</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>L_Chitin_2</identifier>
+				<transform>
+					<row0>0.364047 0.086410 0.927364</row0>
+					<row1>-0.031575 0.996260 -0.080434</row1>
+					<row2>-0.930845 -0.000000 0.365414</row2>
+					<row3>-0.274356 0.492121 0.383126</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_2_BlendBone</identifier>
+					<transform>
+						<row0>0.364047 -0.031575 -0.930845</row0>
+						<row1>0.086409 0.996260 -0.000000</row1>
+						<row2>-0.927364 0.080434 -0.365414</row2>
+						<row3>-0.297943 -0.468127 -0.395383</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>L_Chitin_3</identifier>
+				<transform>
+					<row0>0.535097 0.219013 0.815907</row0>
+					<row1>-0.120109 0.975722 -0.183141</row1>
+					<row2>-0.836209 -0.000000 0.548411</row2>
+					<row3>-0.269822 0.495248 -0.030090</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_3_BlendBone</identifier>
+					<transform>
+						<row0>0.535097 -0.120109 -0.836209</row0>
+						<row1>0.219013 0.975722 0.000000</row1>
+						<row2>-0.815907 0.183141 -0.548411</row2>
+						<row3>0.060466 -0.521143 -0.209126</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>L_Chitin_4</identifier>
+				<transform>
+					<row0>0.366453 0.367570 0.854754</row0>
+					<row1>-0.144836 0.929996 -0.337831</row1>
+					<row2>-0.919095 0.000000 0.394037</row2>
+					<row3>-0.267425 0.494667 -0.292602</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_4_BlendBone</identifier>
+					<transform>
+						<row0>0.366453 -0.144836 -0.919095</row0>
+						<row1>0.367570 0.929996 0.000000</row1>
+						<row2>-0.854754 0.337831 -0.394037</row2>
+						<row3>0.166277 -0.597621 -0.130493</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>L_Chitin_5</identifier>
+				<transform>
+					<row0>0.353600 0.365805 0.860903</row0>
+					<row1>-0.138981 0.930691 -0.338375</row1>
+					<row2>-0.925014 -0.000000 0.379933</row2>
+					<row3>-0.263330 0.494666 -0.542442</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_5_BlendBone</identifier>
+					<transform>
+						<row0>0.353600 -0.138981 -0.925014</row0>
+						<row1>0.365805 0.930692 0.000000</row1>
+						<row2>-0.860903 0.338375 -0.379933</row2>
+						<row3>0.379152 -0.680528 -0.037492</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>L_Chitin_6</identifier>
+				<transform>
+					<row0>0.350054 0.365606 0.862435</row0>
+					<row1>-0.137501 0.930770 -0.338765</row1>
+					<row2>-0.926583 0.000000 0.376090</row2>
+					<row3>-0.260859 0.494666 -0.792530</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_6_BlendBone</identifier>
+					<transform>
+						<row0>0.350054 -0.137501 -0.926583</row0>
+						<row1>0.365606 0.930770 0.000000</row1>
+						<row2>-0.862435 0.338765 -0.376090</row2>
+						<row3>0.593967 -0.764770 0.056355</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>L_Chitin_7</identifier>
+				<transform>
+					<row0>0.390953 0.237963 0.889117</row0>
+					<row1>-0.095784 0.971274 -0.217834</row1>
+					<row2>-0.915413 -0.000000 0.402515</row2>
+					<row3>-0.258061 0.494901 -1.044741</row3>
+				</transform>
+				<node>
+					<identifier>L_Chitin_7_BlendBone</identifier>
+					<transform>
+						<row0>0.390953 -0.095784 -0.915413</row0>
+						<row1>0.237963 0.971274 0.000000</row1>
+						<row2>-0.889117 0.217834 -0.402515</row2>
+						<row3>0.912019 -0.732983 0.184292</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -1.000000 0.000000</row1>
+					<row2>0.000000 -0.000000 -1.000000</row2>
+					<row3>0.237522 0.361750 0.742767</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 -1.000000 -0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.237522 0.361750 0.742767</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_2</identifier>
+				<transform>
+					<row0>0.364047 -0.086410 -0.927364</row0>
+					<row1>-0.031575 -0.996260 0.080434</row1>
+					<row2>-0.930845 -0.000000 -0.365414</row2>
+					<row3>0.274356 0.492120 0.383126</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_2_BlendBone</identifier>
+					<transform>
+						<row0>0.364047 -0.031575 -0.930845</row0>
+						<row1>-0.086409 -0.996260 0.000000</row1>
+						<row2>0.927364 -0.080434 0.365414</row2>
+						<row3>0.297942 0.468126 0.395383</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_3</identifier>
+				<transform>
+					<row0>0.535097 -0.219013 -0.815907</row0>
+					<row1>-0.120109 -0.975722 0.183141</row1>
+					<row2>-0.836209 -0.000000 -0.548411</row2>
+					<row3>0.269822 0.495250 -0.030090</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_3_BlendBone</identifier>
+					<transform>
+						<row0>0.535097 -0.120109 -0.836209</row0>
+						<row1>-0.219013 -0.975722 0.000000</row1>
+						<row2>0.815907 -0.183141 0.548411</row2>
+						<row3>-0.060465 0.521145 0.209126</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_4</identifier>
+				<transform>
+					<row0>0.366453 -0.367570 -0.854754</row0>
+					<row1>-0.144836 -0.929996 0.337831</row1>
+					<row2>-0.919095 -0.000000 -0.394037</row2>
+					<row3>0.267425 0.494670 -0.292602</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_4_BlendBone</identifier>
+					<transform>
+						<row0>0.366453 -0.144836 -0.919095</row0>
+						<row1>-0.367570 -0.929996 0.000000</row1>
+						<row2>0.854754 -0.337831 0.394037</row2>
+						<row3>-0.166276 0.597624 0.130493</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_5</identifier>
+				<transform>
+					<row0>0.353600 -0.365805 -0.860903</row0>
+					<row1>-0.138981 -0.930691 0.338375</row1>
+					<row2>-0.925014 -0.000000 -0.379933</row2>
+					<row3>0.263330 0.494670 -0.542442</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_5_BlendBone</identifier>
+					<transform>
+						<row0>0.353600 -0.138981 -0.925014</row0>
+						<row1>-0.365805 -0.930692 0.000000</row1>
+						<row2>0.860903 -0.338375 0.379933</row2>
+						<row3>-0.379151 0.680532 0.037493</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_6</identifier>
+				<transform>
+					<row0>0.350054 -0.365606 -0.862435</row0>
+					<row1>-0.137501 -0.930770 0.338765</row1>
+					<row2>-0.926583 -0.000000 -0.376090</row2>
+					<row3>0.260859 0.494670 -0.792530</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_6_BlendBone</identifier>
+					<transform>
+						<row0>0.350054 -0.137501 -0.926583</row0>
+						<row1>-0.365606 -0.930770 -0.000000</row1>
+						<row2>0.862435 -0.338765 0.376090</row2>
+						<row3>-0.593966 0.764773 -0.056355</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>R_Chitin_7</identifier>
+				<transform>
+					<row0>0.390953 -0.237963 -0.889117</row0>
+					<row1>-0.095784 -0.971274 0.217834</row1>
+					<row2>-0.915413 -0.000000 -0.402515</row2>
+					<row3>0.258061 0.494900 -1.044740</row3>
+				</transform>
+				<node>
+					<identifier>R_Chitin_7_BlendBone</identifier>
+					<transform>
+						<row0>0.390953 -0.095784 -0.915413</row0>
+						<row1>-0.237963 -0.971274 0.000000</row1>
+						<row2>0.889117 -0.217834 0.402515</row2>
+						<row3>-0.912018 0.732982 -0.184291</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>L_Chitin_2_BlendBone</node>
+		<node>L_Chitin_3_BlendBone</node>
+		<node>L_Chitin_7_BlendBone</node>
+		<node>L_Chitin_4_BlendBone</node>
+		<node>L_Chitin_5_BlendBone</node>
+		<node>L_Chitin_6_BlendBone</node>
+		<node>L_Chitin_1_BlendBone</node>
+		<node>R_Chitin_2_BlendBone</node>
+		<node>R_Chitin_3_BlendBone</node>
+		<node>R_Chitin_7_BlendBone</node>
+		<node>R_Chitin_4_BlendBone</node>
+		<node>R_Chitin_5_BlendBone</node>
+		<node>R_Chitin_6_BlendBone</node>
+		<node>R_Chitin_1_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_anim_Shape.vertices</vertices>
+			<primitive>gun_01_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_equipment_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A163_H_3_2/H_3_2_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A163_H_3_2/H_3_2_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A163_H_3_2/H_3_2_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A163_H_3_2/H_3_2_equipment_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.441237 0.307144</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.421540 0.360208 -1.366360</min>
+		<max>0.421540 0.522267 0.752072</max>
+	</boundingBox>
+	<geometrySize>8900</geometrySize>
+	<minUVDensity>0.084967</minUVDensity>
+</root>

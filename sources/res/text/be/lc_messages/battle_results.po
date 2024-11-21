@@ -1,0 +1,1165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "allVehicles"
+msgstr "Усе"
+
+msgid "common/arena/fullName"
+msgstr "{0} — {1}"
+
+msgid "common/battleEfficiency/allies"
+msgstr "Хаўруснікі:"
+
+msgid "common/battleEfficiency/allyBase"
+msgstr "Абарона базы"
+
+msgid "common/battleEfficiency/bases"
+msgstr "Базы"
+
+msgid "common/battleEfficiency/enemyBase"
+msgstr "Захоп базы"
+
+msgid "common/battleEfficiency/neutralBase"
+msgstr "Нейтральная база"
+
+msgid "common/battleEfficiency/none"
+msgstr "Вы не выявілі і не пашкодзілі ніводнай машыны супраціўніка."
+
+msgid "common/battleEfficiency/technique"
+msgstr "Тэхніка"
+
+msgid "common/battleEfficiency/title"
+msgstr "Баявая эфектыўнасць"
+
+msgid "common/battleEfficiencyWithSkills/title"
+msgstr "Баявая эфектыўнасць з улікам выкарыстаных звычак"
+
+msgid "common/battleEfficiencyWithoutOreders/title"
+msgstr "Баявая эфектыўнасць без уліку выкарыстаных рэзерваў"
+
+msgid "common/battleType/sortie"
+msgstr "Вылазка супраць клана "
+
+msgid "common/clanAbbrev"
+msgstr "[%(clanAbbrev)s]"
+
+msgid "common/crewMember/description"
+msgstr "%(role)s, %(name)s"
+
+msgid "common/crewMember/newFreeSkill"
+msgstr "Даступная «нулявая» звычка"
+
+msgid "common/crewMember/newSkill"
+msgstr "Новы навык"
+
+msgid "common/details/buyPremiumBtn"
+msgstr "Купіць прэміум"
+
+msgid "common/details/creditsTitle"
+msgstr "Крэдыты"
+
+msgid "common/details/crystal"
+msgstr "Боны"
+
+msgid "common/details/getPremBtn"
+msgstr "Падрабязней"
+
+msgid "common/details/noPremTitle"
+msgstr "Звычайны акаўнт"
+
+msgid "common/details/premTitle"
+msgstr "Танкавы прэміум"
+
+msgid "common/details/premiumPlus/bonus"
+msgstr ""
+"Выкарыстоўвайце бонус да досведу ×%(multiplier)d да выбранай вамі перамогі ў"
+" баі пры наяўнасці Танкавага прэміум акаўнту."
+
+msgid "common/details/premiumPlus/credits"
+msgstr ""
+"Атрымлівайце да %(bonusCredits)s кожныя %(durationInDays)d сут пры наяўнасці"
+" Танкавага прэміум акаўнту."
+
+msgid "common/details/premiumPlus/premium"
+msgstr ""
+"Дадатковы досвед, крэдыты, прэміум задачы і звязовыя бонусы пры наяўнасці "
+"Танкавага прэміум акаўнту."
+
+msgid "common/details/premiumPlus/quests"
+msgstr ""
+"Атрымайце доступ да асаблівых баявых задач пры наяўнасці Танкавага прэміум "
+"акаўнту."
+
+msgid "common/details/premiumPlus/squad"
+msgstr ""
+"Здабывайце больш крэдытаў у звязе пры наяўнасці Танкавага прэміум акаўнту."
+
+msgid "common/details/xpTitle"
+msgstr "Досвед"
+
+msgid "common/details/xpTitleSquad"
+msgstr "Досвед %(img)s"
+
+msgid "common/fitting/purchase"
+msgstr "Купля модуля"
+
+msgid "common/fitting/research"
+msgstr "Даследаванне модуля"
+
+msgid "common/mainFinishReasonTitle"
+msgstr "Асноўны бой:"
+
+msgid "common/newSkillPrediction"
+msgstr "Засталося баёў (прыблізна): %(battles)s"
+
+msgid "common/noIncome/alert/text"
+msgstr ""
+"Пасля 10-га адваяванага бою крэдыты, узнагароды і досвед у гэтым рэжыме "
+"давацца не будуць, а вынікі не будуць паказвацца ў агульнай статыстыцы."
+
+msgid "common/noIncome/alert/title"
+msgstr "Увага!"
+
+msgid "common/noProgress"
+msgstr ""
+"Няма новых падзей у баявых задачах, у даследаванні тэхнікі або развіцці "
+"экіпажу."
+
+msgid "common/overtimeFinishReasonTitle"
+msgstr "Авертайм:"
+
+msgid "common/premiumBonus"
+msgstr "Хочаце здабываць больш?"
+
+msgid "common/premiumBonus/appliedBonus"
+msgstr "Бонус паспяхова прыменены"
+
+msgid "common/premiumBonus/applyBonusBtn"
+msgstr "Прымяніць"
+
+msgid "common/premiumBonus/bonusLeft"
+msgstr "Засталося прымяненняў: %(count)s"
+
+msgid "common/premiumBonus/description"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "common/premiumBonus/expiredBattleResult"
+msgstr "Для гэтай машыны ёсць свежыя вынікі бою."
+
+msgid "common/premiumBonus/isXPToTmenChanged"
+msgstr "Нельга прымяніць бонус: змяніўся статус машыны."
+
+msgid "common/premiumBonus/rule"
+msgstr "Бонус можна прымяніць толькі ў пераможным баі"
+
+msgid "common/premiumBonus/tankStateChanged"
+msgstr "Нельга прымяніць кіравальны бонус: машына не знойдзена."
+
+msgid "common/premiumBonus/tankmenStateChanged"
+msgstr "Нельга прымяніць кіравальны бонус: экіпаж не знойдзены."
+
+msgid "common/progressTitle"
+msgstr "Даследаванне тэхнікі і ход выканання баявых задач"
+
+msgid "common/quests/noprogress"
+msgstr "Няма новых падзей у баявых задачах"
+
+msgid "common/researchPrediction"
+msgstr "Засталося баёў (прыблізна): %(battles)s"
+
+msgid "common/resultsShareBtn"
+msgstr "Атрымаць спасылку"
+
+msgid "common/tooltip/armor/description"
+msgstr ""
+"Залічваецца:\n"
+"• Рыкашэт ад стрэлаў супраціўніка\n"
+"• Непрабіццё\n"
+"\n"
+"Траплянні асколачна-фугаснымі і бранябойна-фугаснымі снарадамі не ўлічваюцца."
+
+msgid "common/tooltip/armor/header"
+msgstr "Выкарыстанне брані"
+
+msgid "common/tooltip/armor/part1"
+msgstr "Рыкашэтаў"
+
+msgid "common/tooltip/armor/part2"
+msgstr "Непрабіццяў"
+
+msgid "common/tooltip/armor/part3"
+msgstr "Пашкоджанняў, заблакіраваных бранёй %(vals)s"
+
+msgid "common/tooltip/assist/description"
+msgstr ""
+"Залічваюцца пашкоджанні хаўруснікаў па праціўніку:\n"
+"• Прычыненыя паводле вашых разведданых\n"
+"• Пасля вашага трапляння, якое збіла тракавы пас і знерухоміла праціўніка"
+
+msgid "common/tooltip/assist/header"
+msgstr "Падмога ў знішчэнні"
+
+msgid "common/tooltip/assist/part1"
+msgstr "Пашкодж. выяўленага вамі супраціўніка %(vals)s"
+
+msgid "common/tooltip/assist/part2"
+msgstr ""
+"Пасля трапляння, якое збіла тракавы пас і знерухоміла праціўніка %(vals)s"
+
+msgid "common/tooltip/assist/total"
+msgstr "Усяго пашкоджанняў, якія прычынілі хаўруснікі %(vals)s"
+
+msgid "common/tooltip/capture/description"
+msgstr ""
+"Залічваюцца:\n"
+"• Ачкі за захоп базы супраціўніка\n"
+"• Ачкі за захоп нейтральнай базы"
+
+msgid "common/tooltip/capture/header"
+msgstr "Захоп базы"
+
+msgid "common/tooltip/capture/totalPoints"
+msgstr "Агулам ачкоў за захоп"
+
+msgid "common/tooltip/counter"
+msgstr "Агулам атрымана стужак за бой: %(count)s"
+
+msgid "common/tooltip/counter/forEnemy"
+msgstr "Стужак за бой за гэтага супраціўніка: %(count)s"
+
+msgid "common/tooltip/counter/noItems"
+msgstr "Стужка не была атрымана ў баі"
+
+msgid "common/tooltip/crits/critDamage"
+msgstr "Пашкоджанні:"
+
+msgid "common/tooltip/crits/critDestruction"
+msgstr "Выведзеныя са строю модулі:"
+
+msgid "common/tooltip/crits/critWound"
+msgstr "Раненні экіпажу:"
+
+msgid "common/tooltip/crits/description"
+msgstr ""
+"Залічваецца:\n"
+"• Пашкоджанне ўнутраных і вонкавых модуляў супраціўніка.\n"
+"• Вывядзенне са строю ўнутраных і вонкавых модуляў супраціўніка.\n"
+"• Раненне танкістаў экіпажу супраціўніка."
+
+msgid "common/tooltip/crits/header"
+msgstr "Крытычныя пашкоджанні"
+
+msgid "common/tooltip/crits/total"
+msgstr "Усяго:"
+
+msgid "common/tooltip/damage/description"
+msgstr ""
+"Залічваюцца пашкоджанні:\n"
+"• ад стрэлу\n"
+"• ад тарана\n"
+"• ад пажару\n"
+"• у выніку моцнага ўдару"
+
+msgid "common/tooltip/damage/header"
+msgstr "Прычыненне пашкоджанняў"
+
+msgid "common/tooltip/damage/part1"
+msgstr "Агулам пашкоджанняў %(vals)s"
+
+msgid "common/tooltip/damage/part2"
+msgstr "Усяго прабіццяў"
+
+msgid "common/tooltip/defence/description"
+msgstr ""
+"Залічваюцца:\n"
+"• Ачкі за абарону хаўруснай базы\n"
+"• Ачкі за абарону нейтральнай базы"
+
+msgid "common/tooltip/defence/header"
+msgstr "Абарона базы"
+
+msgid "common/tooltip/defence/totalPoints"
+msgstr "Агулам ачкоў за абарону"
+
+msgid "common/tooltip/kill-1/description"
+msgstr ""
+"Залічваецца знішчэнне:\n"
+"• Стрэлам\n"
+"• Падпалам\n"
+"• Таранам\n"
+"• Патапленнем\n"
+"• У выніку моцнага ўдару\n"
+"•Перакульваннем"
+
+msgid "common/tooltip/kill/header"
+msgstr "Знішчэнне супраціўніка"
+
+msgid "common/tooltip/kill0/description"
+msgstr "Машына супраціўніка падбіта"
+
+msgid "common/tooltip/kill1/description"
+msgstr "Машына супраціўніка згарэла ў пажары"
+
+msgid "common/tooltip/kill2/description"
+msgstr "Машына супраціўніка знішчана таранам"
+
+msgid "common/tooltip/kill3/description"
+msgstr "Машына супраціўніка разбіта"
+
+msgid "common/tooltip/kill4/description"
+msgstr "Машына супраціўніка знішчана забароненай зонай"
+
+msgid "common/tooltip/kill5/description"
+msgstr "Машына супраціўніка патоплена"
+
+msgid "common/tooltip/kill6/description"
+msgstr "Знішчаны вогненным валам"
+
+msgid "common/tooltip/kill7/description"
+msgstr "Машына супраціўніка перакулена"
+
+msgid "common/tooltip/params/val"
+msgstr "(адз.)"
+
+msgid "common/tooltip/params/val/seconds"
+msgstr "(с)"
+
+msgid "common/tooltip/spotted/description"
+msgstr "Залічваецца першае выяўленне машыны супраціўніка."
+
+msgid "common/tooltip/spotted/header"
+msgstr "Выяўленне"
+
+msgid "common/tooltip/stun/description"
+msgstr ""
+"Залічваюцца пашкоджанні:\n"
+"• Прычыненыя хаўруснікамі цэлі, дэзарыентаванай вашым снарадам."
+
+msgid "common/tooltip/stun/header"
+msgstr "Дэзарыентацыя"
+
+msgid "common/tooltip/stun/part1"
+msgstr "Агулам пашкоджанняў %(vals)s"
+
+msgid "common/tooltip/stun/part2"
+msgstr "Колькасць дэзарыентацый"
+
+msgid "common/tooltip/stun/part3"
+msgstr "Агульны час дэзарыентацыі %(vals)s"
+
+msgid "common/tooltip/teamKill-1/description"
+msgstr "Машына хаўрусніка знішчана"
+
+msgid "common/tooltip/teamKill/header"
+msgstr "Знішчэнне хаўрусніка"
+
+msgid "common/tooltip/teamKill0/description"
+msgstr "Машына хаўрусніка падбіта"
+
+msgid "common/tooltip/teamKill1/description"
+msgstr "Машына хаўрусніка згарэла ў пажары"
+
+msgid "common/tooltip/teamKill2/description"
+msgstr "Машына хаўрусніка знішчана таранам"
+
+msgid "common/tooltip/teamKill3/description"
+msgstr "Машына хаўрусніка разбіта"
+
+msgid "common/tooltip/teamKill4/description"
+msgstr "Машына хаўрусніка знішчана забароненай зонай"
+
+msgid "common/tooltip/teamKill5/description"
+msgstr "Машына хаўрусніка патоплена"
+
+msgid "common/tooltip/xpTitleSquad"
+msgstr "У гэтым баі налічаны дадатковы досвед за гульню звязам."
+
+msgid "common/vehicle/details"
+msgstr "%(vehicle)s, %(type)s"
+
+msgid "common/vehicle/purchase"
+msgstr "Купля машыны"
+
+msgid "common/vehicle/research"
+msgstr "Даследаванне машыны"
+
+msgid "common/vehicleState/alive"
+msgstr "Ацалеў"
+
+msgid "common/vehicleState/dead0"
+msgstr "Падбіты"
+
+msgid "common/vehicleState/dead1"
+msgstr "Згарэў у пажары"
+
+msgid "common/vehicleState/dead12"
+msgstr "Самазнішчыўся на Лініі фронту"
+
+msgid "common/vehicleState/dead13"
+msgstr "Знішчаны звычкай гульца"
+
+msgid "common/vehicleState/dead2"
+msgstr "Знішчаны таранам"
+
+msgid "common/vehicleState/dead27"
+msgstr "Знішчаны артабстрэлам"
+
+msgid "common/vehicleState/dead29"
+msgstr "Разбіты"
+
+msgid "common/vehicleState/dead3"
+msgstr "Разбіты"
+
+msgid "common/vehicleState/dead4"
+msgstr "Знішчаны забароненай зонай"
+
+msgid "common/vehicleState/dead5"
+msgstr "Патануў"
+
+msgid "common/vehicleState/dead6"
+msgstr "Знішчаны вогненным валам"
+
+msgid "common/vehicleState/dead7"
+msgstr "Знішчаны перакульваннем"
+
+msgid "common/vehicleState/prematureLeave"
+msgstr "Пакінуў бой да яго сканчэння"
+
+msgid "common/vehicleState/victory"
+msgstr "Перамога!"
+
+msgid "common/xpMultiplierSign"
+msgstr "×"
+
+msgid "customizationProgress/award/newLevel"
+msgstr "Дасягнуты %(level)s узровень дэколі «%(name)s»."
+
+msgid "customizationProgress/award/received"
+msgstr "Атрымана дэколь «%(name)s» %(count)s."
+
+msgid "customizationProgress/descr"
+msgstr "%(level)s узровень дэколі «%(name)s»"
+
+msgid "cyberSport/btnToTeamProfile"
+msgstr "Профіль каманды"
+
+msgid "cyberSport/points"
+msgstr "Ачкі:"
+
+msgid "cyberSport/status/lose"
+msgstr "Паражэнне"
+
+msgid "cyberSport/status/tie"
+msgstr "Нічыя"
+
+msgid "cyberSport/status/win"
+msgstr "Перамога!"
+
+msgid "details/calculations/additionalBonus"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "details/calculations/aogasFactor"
+msgstr "Паніжальны каэфіцыент (AOGAS)"
+
+msgid "details/calculations/autoBoosters"
+msgstr "Аўтапапаўненне настаўленняў"
+
+msgid "details/calculations/autoEquip"
+msgstr "Аўтапапаўненне рыштунку"
+
+msgid "details/calculations/autoLoad"
+msgstr "Аўтапапаўненне боезапасу"
+
+msgid "details/calculations/autoRepair"
+msgstr "Аўтаматычны рамонт тэхнікі"
+
+msgid "details/calculations/base"
+msgstr "Налічана за бой"
+
+msgid "details/calculations/battlePayments"
+msgstr "Баявыя выплаты"
+
+msgid "details/calculations/boosters"
+msgstr "Эфект ад асабістых рэзерваў"
+
+msgid "details/calculations/crystal/events"
+msgstr "За выкананне задач"
+
+msgid "details/calculations/crystal/total"
+msgstr "За асаблівыя ўласцівасці машыны"
+
+msgid "details/calculations/event"
+msgstr "Бонус за баявыя задачы і падзеі"
+
+msgid "details/calculations/fairPlayViolation/afk"
+msgstr "Штраф за бяздзейнасць у баі"
+
+msgid "details/calculations/fairPlayViolation/comp7_deserter"
+msgstr "Штраф за дэзерцірства"
+
+msgid "details/calculations/fairPlayViolation/deserter"
+msgstr "Штраф за дэзерцірства"
+
+msgid "details/calculations/fairPlayViolation/epic_deserter"
+msgstr "Штраф за дэзерцірства"
+
+msgid "details/calculations/fairPlayViolation/event_afk"
+msgstr "Штраф за бяздзейнасць у баі"
+
+msgid "details/calculations/fairPlayViolation/event_deserter"
+msgstr "Штраф за дэзерцірства"
+
+msgid "details/calculations/fairPlayViolation/suicide"
+msgstr "Штраф за наўмыснае самазнішчэнне"
+
+msgid "details/calculations/firstWin"
+msgstr "Узнагарода за першую перамогу за дзень"
+
+msgid "details/calculations/fortOrder"
+msgstr "Надбаўка за прыцягнутыя рэзервы"
+
+msgid "details/calculations/friendlyFireCompensation"
+msgstr "Кампенсацыя за пашкоджанні ад хаўруснікаў"
+
+msgid "details/calculations/friendlyFirePenalty"
+msgstr "Штраф за прычыненне пашкоджанняў хаўруснікам"
+
+msgid "details/calculations/friendlyFireRankedXpPenalty"
+msgstr "Штраф за дэзарыентаванне або пашкоджанне хаўруснікаў"
+
+msgid "details/calculations/heavyTrucks"
+msgstr "Велікагрузны транспарт"
+
+msgid "details/calculations/igrBonus"
+msgstr "Узнагарода за гульню ў %(igrIcon)s"
+
+msgid "details/calculations/intermediateTotal"
+msgstr "Агулам за бой:"
+
+msgid "details/calculations/militaryManeuvers"
+msgstr "За вайсковыя вучэнні"
+
+msgid "details/calculations/multiplierInfo/body"
+msgstr ""
+"Павялічаны досвед за першую перамогу за дзень налічаны наступнай тэхніцы:"
+
+msgid "details/calculations/multiplierInfo/header"
+msgstr "Узнагарода за першую перамогу за дзень"
+
+msgid "details/calculations/multiplierInfo/vehicleSeparator"
+msgstr "• "
+
+msgid "details/calculations/newYear"
+msgstr "Новогодний бонус"
+
+msgid "details/calculations/noPenalty"
+msgstr "За адважны супраціў"
+
+msgid "details/calculations/piggyBankInfo"
+msgstr "Дададзена ў сховішча рэсурсаў"
+
+msgid "details/calculations/piggyBankInfo/tooltip"
+msgstr ""
+"У гульцоў з актыўным Танкавым прэміум акаўнтам у рэзервовым сховішчы "
+"назапашваюцца дадатковыя крэдыты, а ў гульцоў з актыўнай падпіскай — золата."
+
+msgid "details/calculations/playerRankXP"
+msgstr "Надбаўка за званне"
+
+msgid "details/calculations/premiumVehicleXP"
+msgstr "Надбаўка за ўзровень прэміум машыны"
+
+msgid "details/calculations/referralBonus"
+msgstr "Рэферальны бонус (%(bonusFactor)d%%)"
+
+msgid "details/calculations/squad/restrictions/title"
+msgstr "За гульню звязам "
+
+msgid "details/calculations/squadBonus"
+msgstr "Бонус за гульню ў звязе"
+
+msgid "details/calculations/squadXP"
+msgstr "За гульню звязам"
+
+msgid "details/calculations/squadXPPenalty"
+msgstr "Штраф за няправільны склад звязу"
+
+msgid "details/calculations/subsTeamBonus"
+msgstr "Камандны бонус ад гульцоў з падпіскай"
+
+msgid "details/calculations/tacticalTraining"
+msgstr "За тактычную падрыхтоўку"
+
+msgid "details/calculations/total"
+msgstr "Агулам:"
+
+msgid "details/calculations/vehicleBranch"
+msgstr "Новогодний бонус"
+
+msgid "details/calculations/xpRecord"
+msgstr "Налічана за бой (%(color_tag_open)sрэкорд%(color_tag_close)s)"
+
+msgid "details/credits"
+msgstr "Крэдыты"
+
+msgid "details/crystal"
+msgstr "Боны"
+
+msgid "details/noPrem"
+msgstr "Звычайны акаўнт"
+
+msgid "details/prem"
+msgstr "Агульны прэміум"
+
+msgid "details/premPlus"
+msgstr "Танкавы прэміум"
+
+msgid "details/resource"
+msgstr "Прамысловы рэсурс"
+
+msgid "details/stats"
+msgstr "Статыстыка"
+
+msgid "details/time"
+msgstr "Час"
+
+msgid "details/time/lbl_arenaCreateTimeOnlyStr"
+msgstr "Бой пачаўся"
+
+msgid "details/time/lbl_basesCaptured"
+msgstr "Зоны захоплены"
+
+msgid "details/time/lbl_duration"
+msgstr "Працягласць бою"
+
+msgid "details/time/lbl_objectivesDestroyed"
+msgstr "Цэлі знішчаны"
+
+msgid "details/time/lbl_objectivesReached"
+msgstr "Вы падабраліся да гарматных веж"
+
+msgid "details/time/lbl_playerKilled"
+msgstr "Да свайго знішчэння вёў бой на працягу"
+
+msgid "details/time/val_no"
+msgstr "Не"
+
+msgid "details/time/val_yes"
+msgstr "Так"
+
+msgid "details/time/value"
+msgstr "%(min)s хв %(sec)s с"
+
+msgid "details/time_epic"
+msgstr "Бой"
+
+msgid "details/xp"
+msgstr "Досвед"
+
+msgid "exterminationVictory/allies"
+msgstr "Ваша каманда знішчыла ўсю тэхніку супраціўніка"
+
+msgid "exterminationVictory/enemies"
+msgstr "Супраціўнік знішчыў усю тэхніку вашай каманды"
+
+msgid "fallout/classic/lose/cap"
+msgstr "Каманда супраціўніка здабыла найбольшую колькасць ачкоў перамогі"
+
+msgid "fallout/classic/lose/extermination"
+msgstr "Супраціўнік знішчыў усю тэхніку вашай каманды"
+
+msgid "fallout/classic/lose/points"
+msgstr "Каманда супраціўніка здабыла найбольшую колькасць ачкоў перамогі"
+
+msgid "fallout/classic/tie"
+msgstr "Абедзе каманды здабылі аднолькавую колькасць ачкоў перамогі"
+
+msgid "fallout/classic/win/cap"
+msgstr "Ваша каманда здабыла найбольшую колькасць ачкоў перамогі"
+
+msgid "fallout/classic/win/extermination"
+msgstr "Ваша каманда знішчыла ўсю тэхніку супраціўніка"
+
+msgid "fallout/classic/win/points"
+msgstr "Ваша каманда здабыла найбольшую колькасць ачкоў перамогі"
+
+msgid "fallout/multiteam/ended"
+msgstr "Цэлі не былі дасягнуты"
+
+msgid "fallout/multiteam/noPlayerSelected"
+msgstr ""
+"Каб пабачыць падрабязную інфармацыю,\n"
+"выберыце гульца са спіса"
+
+msgid "fallout/multiteam/win/cap"
+msgstr "Здабыта найбольшая колькасць ачкоў перамогі"
+
+msgid "fallout/multiteam/win/extermination"
+msgstr "Усе атрады супраціўніка знішчаны"
+
+msgid "fallout/multiteam/win/points"
+msgstr "Здабыта найбольшая колькасць ачкоў перамогі"
+
+msgid "finish/clanBattle_reason_attack/1lose"
+msgstr "Будынак %(buildingName)s не захоплены"
+
+msgid "finish/clanBattle_reason_attack/1tie"
+msgstr "Будынак %(buildingName)s захоплены"
+
+msgid "finish/clanBattle_reason_attack/1win"
+msgstr "Захоплены будынак: %(buildingName)s"
+
+msgid "finish/clanBattle_reason_def/1lose"
+msgstr "Будынак %(buildingName)s захоплены супраціўнікам"
+
+msgid "finish/clanBattle_reason_def/1tie"
+msgstr "Будынак %(buildingName)s не захоплены"
+
+msgid "finish/clanBattle_reason_def/1win"
+msgstr "Абаронены будынак: %(buildingName)s"
+
+msgid "finish/clarification/finishAllPlayersLeft"
+msgstr "Вынік разлічаны на падставе рэшты інфармацыі пра каманды"
+
+msgid "finish/overtime/lose"
+msgstr "Супраціўнік не быў знішчаны"
+
+msgid "finish/overtime/win"
+msgstr "Супраціўнік быў знішчаны"
+
+msgid "finish/playerTank/separator"
+msgstr "—"
+
+msgid "finish/reason/0"
+msgstr "Невядомая прычына"
+
+msgid "finish/reason/10lose"
+msgstr "Цэлі не былі знішчаны"
+
+msgid "finish/reason/10win"
+msgstr "Цэлі знішчаны"
+
+msgid "finish/reason/1lose"
+msgstr "Уся тэхніка хаўруснікаў знішчана"
+
+msgid "finish/reason/1tie"
+msgstr "Уся тэхніка знішчана"
+
+msgid "finish/reason/1win"
+msgstr "Уся тэхніка праціўніка знішчана"
+
+msgid "finish/reason/2"
+msgstr "Захоп базы"
+
+msgid "finish/reason/3"
+msgstr "Час бою скончыўся"
+
+msgid "finish/reason/4"
+msgstr "Бой спынены з-за аваспыну сістэмы"
+
+msgid "finish/reason/5"
+msgstr "Тэхнічнае паражэнне"
+
+msgid "finish/reason/8"
+msgstr "Знішчэнне хаўрусніка"
+
+msgid "finish/reason/9"
+msgstr "Ваша машына знішчана"
+
+msgid "garage/uniqueDamage"
+msgstr "Улічваецца толькі факт унікальнага крытычнага трапляння"
+
+msgid "getPremiumPopover/actionBtn/label"
+msgstr "Выбраць тэрмін дзеяння"
+
+msgid "getPremiumPopover/award"
+msgstr "+50% да крэдытаў і досведу"
+
+msgid "getPremiumPopover/descriptionText"
+msgstr "Купіце %(prem)s і за ўсе баі будзеце атрымліваць %(award)s"
+
+msgid "getPremiumPopover/headerText"
+msgstr "За гэты бой вы маглі б атрымаць:"
+
+msgid "getPremiumPopover/prem"
+msgstr "прэміум акаўнт"
+
+msgid "noData"
+msgstr "Падрабязныя вынікі бою недаступныя."
+
+msgid "personalQuest/bonus/descr"
+msgstr ""
+"дасягнуты вамі ў баі ход выканання асноўнай умовы павялічыўся ў %(value)s "
+"разы."
+
+msgid "personalQuest/bonus/multiplier"
+msgstr "Множнік ×%(value)s:"
+
+msgid "personalQuest/failed/attention"
+msgstr "Увага!"
+
+msgid "personalQuest/failed/descr"
+msgstr ""
+"Ход выканання задачы быў скінуты. Выкананне пастаўленай умовы пачалося "
+"нанова."
+
+msgid "players/enemy/unknown"
+msgstr "Праціўнік"
+
+msgid "players/teammate/unknown"
+msgstr "Гулец"
+
+msgid "progressiveReward/descr"
+msgstr ""
+"Гуляйце і атрымлівайце забеспячэнне маёмасцю. Чым эфектыўнасць гульні "
+"вышэйшая, тым бліжэй атрыманне забеспячэння."
+
+msgid "selectVehicle"
+msgstr "Выберыце машыну"
+
+msgid "tankSelector/next"
+msgstr "Наступная машына з"
+
+msgid "team/damageAndConsumablesHeader/body"
+msgstr ""
+"Упарадкаваць паводле прычыненых пашкоджанняў,\n"
+"уключаючы пашкоджанні ад баявых рэзерваў."
+
+msgid "team/damageAndConsumablesHeader/header"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "team/damageHeader/body"
+msgstr "Упарадкаваць паводле прычыненых пашкоджанняў."
+
+msgid "team/damageHeader/header"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "team/damageHeaderNoSort/header"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "team/deaths/body"
+msgstr "Упарадкаваць паводле колькасці ўласных машын, знішчаных у баі."
+
+msgid "team/deaths/header"
+msgstr "Знішчаныя машыны"
+
+msgid "team/deathsNoSort/header"
+msgstr "Знішчаныя машыны"
+
+msgid "team/epicRankHeader/body"
+msgstr "Упарадкаваць па атрыманых у баі званнях."
+
+msgid "team/epicRankHeader/header"
+msgstr "Званне"
+
+msgid "team/epicRespawnHeader/body"
+msgstr "Упарадкаваць паводле колькасці адраджэнняў у баі."
+
+msgid "team/epicRespawnHeader/header"
+msgstr "Колькасць адраджэнняў"
+
+msgid "team/falloutFragHeader/body"
+msgstr ""
+"Упарадкаваць паводле колькасці знішчаных машын супраціўніка,\n"
+"уключаючы пашкоджанні ад баявых рэзерваў."
+
+msgid "team/falloutFragHeader/header"
+msgstr "Знішчаная тэхніка праціўніка"
+
+msgid "team/falloutResourcePoints/body"
+msgstr "Упарадкаваць паводле здабытых рэсурсаў."
+
+msgid "team/falloutResourcePoints/header"
+msgstr "Рэсурсы"
+
+msgid "team/flags/body"
+msgstr "Упарадкаваць паводле дастаўленых сцягоў."
+
+msgid "team/flags/header"
+msgstr "Дастаўленыя сцягі"
+
+msgid "team/flagsNoSort/header"
+msgstr "Захопленыя сцягі"
+
+msgid "team/fragHeader/body"
+msgstr "Сартаваць паводле колькасці знішчаных машын праціўніка."
+
+msgid "team/fragHeader/header"
+msgstr "Знішчаная тэхніка праціўніка"
+
+msgid "team/fragHeaderNoSort/header"
+msgstr "Знішчаная тэхніка праціўніка"
+
+msgid "team/healthHeader/body"
+msgstr "Упарадкаваць паводле астатняй трываласці."
+
+msgid "team/healthHeader/header"
+msgstr "Трываласць"
+
+msgid "team/medalHeader/body"
+msgstr "Упарадкаваць паводле колькасці атрыманых узнагарод."
+
+msgid "team/medalHeader/header"
+msgstr "Узнагароды"
+
+msgid "team/playerHeader/body"
+msgstr "Упарадкаваць паводле імя гульца."
+
+msgid "team/playerHeader/header"
+msgstr "Імя"
+
+msgid "team/playerHeaderNoSort/header"
+msgstr "Імя"
+
+msgid "team/playerNumber/body"
+msgstr "Упарадкаваць паводле парадкавага нумару."
+
+msgid "team/playerNumber/header"
+msgstr "Парадкавы нумар"
+
+msgid "team/rankHeader/body"
+msgstr "Упарадкаваць паводле рангу."
+
+msgid "team/rankHeader/header"
+msgstr "Ранг"
+
+msgid "team/resourceHeader/body"
+msgstr "Упарадкаваць паводле здабытага прамысловага рэсурсу."
+
+msgid "team/resourceHeader/header"
+msgstr "Прамысловы рэсурс"
+
+msgid "team/squadHeader/body"
+msgstr "Упарадкаваць паводле звязу."
+
+msgid "team/squadHeader/header"
+msgstr "Звяз"
+
+msgid "team/squadHeaderNoSort/header"
+msgstr "Звяз"
+
+msgid "team/stats/close"
+msgstr "Закрыць"
+
+msgid "team/stats/enemyTeam"
+msgstr "Праціўнік"
+
+msgid "team/stats/infotip_xpForAssist/body"
+msgstr ""
+"Улічваецца:\n"
+"• падмога перадачай разведданых, збіццём тракавых пасаў са знерухомленнем, а таксама дэзарыентаваннем;\n"
+"• захоп базы;\n"
+"• першае выяўленне машыны праціўніка."
+
+msgid "team/stats/infotip_xpForAssist/header"
+msgstr "За падмогу ў знішчэнні"
+
+msgid "team/stats/infotip_xpForAttack/body"
+msgstr ""
+"Улічваюцца:\n"
+"• асабіста прычыненыя пашкоджанні;\n"
+"• асабіста знішчаныя машыны;\n"
+"• пашкоджанні, прычыненыя модулям;\n"
+"• надбаўка за агульныя пашкоджанні, прычыненыя камандай гульца;\n"
+"• штраф за дэзарыентаванне або пашкоджанне хаўруснікаў."
+
+msgid "team/stats/infotip_xpForAttack/header"
+msgstr "За прычыненне пашкоджанняў і знішчэнне"
+
+msgid "team/stats/infotip_xpOther/body"
+msgstr ""
+"Улічваюцца прэміі за эфектыўную гульню, не пералічаныя ў папярэднія пункты."
+
+msgid "team/stats/infotip_xpOther/header"
+msgstr "За ролевую ігру машынай"
+
+msgid "team/stats/labels_artilleryFortEquipDamageDealt"
+msgstr "\tартылерыйскім абстрэлам"
+
+msgid "team/stats/labels_atkObjectives"
+msgstr "Захопленыя зоны / знішчаныя цэлі"
+
+msgid "team/stats/labels_capturePointsVal"
+msgstr "Ачкі за захоп/абарону базы"
+
+msgid "team/stats/labels_capturedPointsOfInterest"
+msgstr "Захопаў ключавых пазіцый"
+
+msgid "team/stats/labels_damageAssisted"
+msgstr "Пашкоджанні, прычыненыя з дапамогай гэтага гульца"
+
+msgid "team/stats/labels_damageAssistedSelf"
+msgstr "Пашкоджанні з вашай дапамогай"
+
+msgid "team/stats/labels_damageAssistedStun"
+msgstr "Пашкоджанні па цэлях, дэзарыентаваных гэтым гульцом"
+
+msgid "team/stats/labels_damageAssistedStunSelf"
+msgstr "Пашкоджанні па дэзарыентаваных вамі цэлях"
+
+msgid "team/stats/labels_damageBlockedByArmor"
+msgstr "Пашкоджанні, заблакаваныя бранёй"
+
+msgid "team/stats/labels_damageDealt"
+msgstr "Усяго прычыніў пашкоджанняў:"
+
+msgid "team/stats/labels_damageDealtByOrder"
+msgstr "\tУ тым ліку баявымі рэзервамі"
+
+msgid "team/stats/labels_damageDealtBySkills"
+msgstr "\tз выкарыстаннем звычак"
+
+msgid "team/stats/labels_damageDealtRatio"
+msgstr "\tпашкоджанні, прычыненыя камандзе супраціўніка"
+
+msgid "team/stats/labels_damagedKilled"
+msgstr "Пашкоджаныя/знішчаныя машыны супраціўніка"
+
+msgid "team/stats/labels_deaths"
+msgstr "Колькасць знішчэнняў уласнай машыны"
+
+msgid "team/stats/labels_defObjectives"
+msgstr "Зоны/цэлі, якія вы абаранілі"
+
+msgid "team/stats/labels_destroyRecoveryRatio"
+msgstr "Вашай знішчанай/адноўленай тэхнікі"
+
+msgid "team/stats/labels_destructiblesDamageDealt"
+msgstr "\tпа цэлях"
+
+msgid "team/stats/labels_directHitsReceived"
+msgstr "Атрыманыя траплянні"
+
+msgid "team/stats/labels_equipmentDamageAssisted"
+msgstr "\tпадчас дзеяння баявых рэзерваў"
+
+msgid "team/stats/labels_equipmentDamageDealt"
+msgstr "\tбаявымі рэзервамі"
+
+msgid "team/stats/labels_explosionHits"
+msgstr "\tасколачна-фугасных пашкоджанняў"
+
+msgid "team/stats/labels_explosionHitsReceived"
+msgstr "Атрымана траплянняў асколкамі або агнясумессю"
+
+msgid "team/stats/labels_flags"
+msgstr "Даставіў сцягоў"
+
+msgid "team/stats/labels_flameExplosionHits"
+msgstr "\tпашкоджанняў ад АС або АФ снарадаў"
+
+msgid "team/stats/labels_healed"
+msgstr "Восстановлено очков прочности себе"
+
+msgid "team/stats/labels_healedAlly"
+msgstr "Восстановлено очков прочности союзникам"
+
+msgid "team/stats/labels_hits"
+msgstr "\tпрамых траплянняў/прабіццяў"
+
+msgid "team/stats/labels_killed"
+msgstr "Знішчана машын праціўніка"
+
+msgid "team/stats/labels_killsByOrder"
+msgstr "\tУ тым ліку баявымі рэзервамі"
+
+msgid "team/stats/labels_mileage"
+msgstr "Прабег"
+
+msgid "team/stats/labels_noDamageDirectHitsReceived"
+msgstr "\tякія не прычынілі шкоды"
+
+msgid "team/stats/labels_piercingsReceived"
+msgstr "\tпрабіццяў"
+
+msgid "team/stats/labels_roleSkillUsed"
+msgstr "Прымяненняў ралявой звычкі"
+
+msgid "team/stats/labels_shots"
+msgstr "Стрэлаў"
+
+msgid "team/stats/labels_sniperDamageDealt"
+msgstr "\tз адлегласці больш за 300 м"
+
+msgid "team/stats/labels_spotted"
+msgstr "Выяўлена машын праціўніка"
+
+msgid "team/stats/labels_stunDuration"
+msgstr "Агульны час дэзарыентавання праціўніка, секунд"
+
+msgid "team/stats/labels_stunNum"
+msgstr "Дэзарыентацый выклікана"
+
+msgid "team/stats/labels_teamHitsDamage"
+msgstr "Шкода хаўруснікам (знішчыў/пашкоджанняў)"
+
+msgid "team/stats/labels_timesDestroyed"
+msgstr "Колькасць страчаных машын"
+
+msgid "team/stats/labels_xp"
+msgstr "Агулам здабыта досведу"
+
+msgid "team/stats/labels_xpForAssist"
+msgstr "\tза падмогу ў знішчэнні"
+
+msgid "team/stats/labels_xpForAttack"
+msgstr "\tза прычыненне пашкоджанняў і знішчэнне"
+
+msgid "team/stats/labels_xpOther"
+msgstr "\tза ролевую ігру машынай"
+
+msgid "team/stats/mileage"
+msgstr "?empty?"
+
+msgid "team/stats/ownTeam"
+msgstr "Хаўруснікі"
+
+msgid "team/tankHeader/body"
+msgstr "Упарадкаваць паводле пазіцыі на панэлі складу каманды."
+
+msgid "team/tankHeader/header"
+msgstr "Тэхніка"
+
+msgid "team/teamInfluenceTotal"
+msgstr ""
+"Уплыву здабыта атрадам: "
+"%(color_tag_open)s%(resourceValue)s%(color_tag_close)s%(resourceIcon)s"
+
+msgid "team/teamResourceTotal"
+msgstr ""
+"Прамысловага рэсурсу здабыта атрадам: "
+"%(color_tag_open)s%(resourceValue)s%(color_tag_close)s%(resourceIcon)s"
+
+msgid "team/teamScore/body"
+msgstr "Упарадкаваць паводле ачкоў перамогі."
+
+msgid "team/teamScore/header"
+msgstr "Ачкі перамогі каманды"
+
+msgid "team/victoryScore/body"
+msgstr "Упарадкаваць паводле ачкоў перамогі."
+
+msgid "team/victoryScore/header"
+msgstr "Ачкі перамогі гульца"
+
+msgid "team/victoryScoreNoSort/header"
+msgstr "Ачкі перамогі гульца"
+
+msgid "team/xpHeader/body"
+msgstr "Упарадкаваць паводле колькасці досведу."
+
+msgid "team/xpHeader/header"
+msgstr "Досвед"
+
+msgid "team/xpHeaderNoSort/header"
+msgstr "Досвед"
+
+msgid "victoryScore"
+msgstr "Здабыта ачкоў перамогі"

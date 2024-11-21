@@ -4,4 +4,8 @@
 	<tank>true</tank>
 	<parent>vehicles/american/A145_TS_54/crash/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.626284 -0.401340 -1.114889</min>
+		<max>0.626284 0.323847 4.449998</max>
+	</visibilityBox>
 </root>

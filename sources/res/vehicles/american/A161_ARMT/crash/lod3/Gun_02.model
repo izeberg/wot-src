@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A161_ARMT/crash/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/american/A161_ARMT/crash/lod3/Gun_02</nodelessVisual>
+	<visibilityBox>
+		<min>-1.170937 -0.630997 -0.819056</min>
+		<max>1.170937 0.643280 4.474350</max>
+	</visibilityBox>
+</root>

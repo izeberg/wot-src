@@ -1,0 +1,1095 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "abilityInfo/manage_abilities"
+msgstr "Кіраванне рэзервамі"
+
+msgid "abilityInfo/manage_abilities_desc"
+msgstr "Націсніце, каб выбраць адзін з даступных баявых рэзерваў."
+
+msgid "abilityInfo/params/airstrike/bombsNumber"
+msgstr "Бомбы"
+
+msgid "abilityInfo/params/airstrike/dropArea"
+msgstr "Пакрыццё"
+
+msgid "abilityInfo/params/airstrike/stun"
+msgstr "Аглушэнне"
+
+msgid "abilityInfo/params/arcade_minefield_epic_battle/activationDelay"
+msgstr "?empty?"
+
+msgid "abilityInfo/params/arcade_minefield_epic_battle/bombsNumber"
+msgstr "Колькасць мін"
+
+msgid "abilityInfo/params/arcade_minefield_epic_battle/lifetime"
+msgstr "Час дзеяння міннага поля"
+
+msgid "abilityInfo/params/arcade_minefield_epic_battle/shell"
+msgstr "Аглушэнне"
+
+msgid "abilityInfo/params/artillery/areaRadius"
+msgstr "Радыус паражэння"
+
+msgid "abilityInfo/params/artillery/duration"
+msgstr "Працягласць"
+
+msgid "abilityInfo/params/artillery/shotsNumber"
+msgstr "Снарады"
+
+msgid "abilityInfo/params/common/cooldownTime"
+msgstr "Перазарадка"
+
+msgid "abilityInfo/params/common/delay"
+msgstr "Час разгортвання"
+
+msgid "abilityInfo/params/fl_regenerationKit/healTime"
+msgstr "Працягласці дзеяння"
+
+msgid "abilityInfo/params/fl_regenerationKit/healthRegenPerTick"
+msgstr "Колькасць аднаўляльнай трываласці"
+
+msgid "abilityInfo/params/fl_regenerationKit/initialHeal"
+msgstr "Аб'ём імгненнага аднаўлення пры актывацыі"
+
+msgid "abilityInfo/params/fl_regenerationKit/minesDamageReduceFactor"
+msgstr "Зніжэнне пашкоджання ад мін"
+
+msgid "abilityInfo/params/fl_regenerationKit/minesDamageReduceFactor/value"
+msgstr "30%"
+
+msgid "abilityInfo/params/fl_regenerationKit/resupplyHealthPointsFactor"
+msgstr "Бонус да хуткасці аднаўлення трываласці ў зоне абслугоўвання"
+
+msgid "abilityInfo/params/inspire/crewRolesFactor"
+msgstr "Эфектыўнасць экіпажаў"
+
+msgid "abilityInfo/params/inspire/duration"
+msgstr "Працягласць"
+
+msgid "abilityInfo/params/inspire/inactivationDelay"
+msgstr "Працягласць рэшткавага эфекту"
+
+msgid "abilityInfo/params/inspire/radius"
+msgstr "Радыус дзеяння"
+
+msgid "abilityInfo/params/inspire/selfIncreaseFactors"
+msgstr "Эфектыўнасць экіпажа сваёй машыны"
+
+msgid "abilityInfo/params/passive_engineering/captureBlockBonusTime"
+msgstr "Павелічэнне абароны"
+
+msgid "abilityInfo/params/passive_engineering/captureSpeedFactor"
+msgstr "Паскарэнне захопу"
+
+msgid "abilityInfo/params/passive_engineering/resupplyCooldownFactor"
+msgstr "Аднаўленне зоны абслугоўвання"
+
+msgid "abilityInfo/params/passive_engineering/resupplyShellsFactor"
+msgstr "Хуткасць папаўнення боекамплекту"
+
+msgid "abilityInfo/params/recon/delay"
+msgstr "Час падлёту"
+
+msgid "abilityInfo/params/recon/revealedArea"
+msgstr "Пакрыццё"
+
+msgid "abilityInfo/params/recon/revealedArea/value"
+msgstr "300×750 м"
+
+msgid "abilityInfo/params/recon/spottingDuration"
+msgstr "Працягласць палёту"
+
+msgid "abilityInfo/params/smoke/crewRolesFactor"
+msgstr "Штраф да эфектыўнасці экіпажа"
+
+msgid "abilityInfo/params/smoke/projectilesNumber"
+msgstr "Дымавыя шашкі"
+
+msgid "abilityInfo/params/smoke/targetedArea"
+msgstr "Пакрыццё"
+
+msgid "abilityInfo/params/smoke/totalDuration"
+msgstr "Працягласць"
+
+msgid "abilityInfo/params/smoke/visionRadiusFactor"
+msgstr "Штраф да агляду праціўніка"
+
+msgid "abilityInfo/params/stealth_radar/demaskFoliageFactor"
+msgstr "Памяншэнне скрытасці праціўніка за расліннасцю"
+
+msgid "abilityInfo/params/stealth_radar/demaskMovingFactor"
+msgstr "Памяншэнне скрытасці праціўніка ў руху"
+
+msgid "abilityInfo/params/stealth_radar/duration"
+msgstr "Час дзеяння"
+
+msgid "abilityInfo/params/stealth_radar/invisibilityAdditiveTerm"
+msgstr "Бонус да скрытасці нерухомай машыны"
+
+msgid "abilityInfo/params/stealth_radar/passiveCircularVisionRadius"
+msgstr "Пасіўны бонус да агляду"
+
+msgid "abilityInfo/properties/dynamic"
+msgstr "Узмацненне рэзерву"
+
+msgid "abilityInfo/properties/static"
+msgstr "Пастаянныя характарыстыкі"
+
+msgid "abilityInfo/units/meter"
+msgstr "м"
+
+msgid "abilityInfo/units/seconds"
+msgstr "с"
+
+msgid "advance_message_txt"
+msgstr "Рухайцеся на перадавую"
+
+msgid "advance_mission_txt"
+msgstr "Рухайцеся на перадавую"
+
+msgid "awards/acceptButton"
+msgstr "Так!"
+
+msgid "awards/additionalRewards/subText"
+msgstr "Таксама атрымана:"
+
+msgid "awards/multiplier"
+msgstr "×%(multiplier)s"
+
+msgid "awards/subTitle1"
+msgstr "АТРЫМАНЫ ЎЗНАГАРОДЫ"
+
+msgid "awards/subTitle2"
+msgstr "АТРЫМАНА ЎЗНАГАРОДА"
+
+msgid "awards/title"
+msgstr "ЛІНІЯ ФРОНТУ"
+
+msgid "base/contested_atk"
+msgstr "Ідзе змаганне"
+
+msgid "base/contested_def"
+msgstr "Пад атакай"
+
+msgid "battleResults/armor"
+msgstr "Выкарыстанне брані"
+
+msgid "battleResults/assistance"
+msgstr "Падмога"
+
+msgid "battleResults/crits"
+msgstr "Крытычныя пашкоджанні"
+
+msgid "battleResults/damage"
+msgstr "Пашкоджанні"
+
+msgid "battleResults/kill"
+msgstr "Знішчана"
+
+msgid "battleResults/spotting"
+msgstr "Выявіў"
+
+msgid "booster/description/bonusValueTime/booster_crew_xp"
+msgstr "х1 Асабісты рэзерв: %(effectValue)s досведу экіпажа на %(effectTime)s"
+
+msgid "booster/description/bonusValueTime/booster_free_xp"
+msgstr ""
+"х1 Асабісты рэзерв: %(effectValue)s вольнага досведу на %(effectTime)s"
+
+msgid "booster/description/bonusValueTime/booster_xp"
+msgstr "х1 Асабісты рэзерв: %(effectValue)s баявога досведу на %(effectTime)s"
+
+msgid "chat_shortcuts/attention_to_objective_atk"
+msgstr "Атакуйце цэль %(int32Arg1)s"
+
+msgid "chat_shortcuts/attention_to_objective_def"
+msgstr "Бараніце цэль %(int32Arg1)s"
+
+msgid "chat_shortcuts/attention_to_position"
+msgstr "Увага на пазіцыю!"
+
+msgid "command_shortcut/title"
+msgstr "Загады"
+
+msgid "deploymentMap/lanePlayerLimitReached"
+msgstr "Напрамак заблакіраваны — дасягнуты максімум гульцоў"
+
+msgid "deploymentMap/respawnWarning"
+msgstr "Павышаная рызыка"
+
+msgid "deploymentMap/spgLimitReached"
+msgstr "Напрамак заблакіраваны — дасягнуты максімум па тыпах тэхнікі"
+
+msgid "dialogs/quotedName"
+msgstr "«%(name)s»"
+
+msgid "dialogs/title/buy/item"
+msgstr "Купіць %(type)s «%(name)s»?"
+
+msgid "dialogs/title/buy/items"
+msgstr "Купіць %(type)s?"
+
+msgid "dialogs/title/install/item"
+msgstr "Усталяваць %(type)s «%(name)s»?"
+
+msgid "dialogs/title/install/items"
+msgstr "Усталяваць %(type)s?"
+
+msgid "epicBattleItem/supplyPoints/body"
+msgstr ""
+"Набраўшы неабходную колькасць ачкоў, вы зможаце задзейнічаць баявыя рэзервы "
+"для «Лініі фронту»."
+
+msgid "epicBattleItem/supplyPoints/description"
+msgstr ""
+"Набраўшы неабходную колькасць ачкоў, вы зможаце задзейнічаць баявыя рэзервы "
+"для «Лініі фронту»."
+
+msgid "epicBattleItem/supplyPoints/header"
+msgstr "Ачкі баявых рэзерваў"
+
+msgid "epicBattlesCarousel/lobby/levelInfo"
+msgstr ""
+"Машыны %(level)s будуць разблакаваны для бою пасля захопу/страты любога "
+"пункта другой лініі: D, E або F."
+
+msgid "epicBattlesCarousel/lobby/levelInfo/level"
+msgstr "%(lvl)s узроўню"
+
+msgid "epicBattlesCarousel/lockedTooltip/body"
+msgstr "Выберыце машыну %(level)s узроўню для ўдзелу ў рэжыме «Лінія фронту»."
+
+msgid "epicBattlesCarousel/lockedTooltip/header"
+msgstr "Непрыдатная машына"
+
+msgid "epicBattlesCarousel/wrongMode/body"
+msgstr "Машына не прыдатна да такіх баёў."
+
+msgid "epic_battle_meta_view/Acquire_skill"
+msgstr "Выбраць"
+
+msgid "epic_battle_meta_view/Max_skill"
+msgstr "Макс."
+
+msgid "epic_battle_meta_view/abilities"
+msgstr "Баявыя рэзервы"
+
+msgid "epic_battle_meta_view/commander_level"
+msgstr "Узровень камандзіра"
+
+msgid "epic_battles_after_battle/Achieved_Rank"
+msgstr "Атрымана званне"
+
+msgid "epic_battles_after_battle/Level_Up_Title"
+msgstr "Атрыманы %(level)s узровень!"
+
+msgid "epic_battles_after_battle/Title"
+msgstr "Віншуем!"
+
+msgid "epic_battles_after_battle/chooseRewards"
+msgstr "Выбраць узнагароды"
+
+msgid "epic_battles_after_battle/max_level_info/description"
+msgstr "Выконвайце задачы і атрымлівайце каштоўныя ўзнагароды."
+
+msgid "epic_battles_after_battle/max_level_info/title"
+msgstr "Даступны штодзённыя задачы"
+
+msgid "epictraining/info/otherLabel"
+msgstr "Неразмеркаваных гульцоў: %(total)s"
+
+msgid "epictraining/info/team1LaneLabel"
+msgstr "Атакоўцы ( %(lane1)s/%(lane2)s/%(lane3)s )"
+
+msgid "epictraining/info/team2LaneLabel"
+msgstr "Абаронцы ( %(lane1)s/%(lane2)s/%(lane3)s )"
+
+msgid "game/all_enemies_defeated"
+msgstr "Уся тэхніка праціўніка знішчана"
+
+msgid "game/all_hqs_destroyed"
+msgstr "Усе цэлі знішчаны"
+
+msgid "game/all_tanks_defeated"
+msgstr "Уся тэхніка хаўруснікаў знішчана"
+
+msgid "game/defeat"
+msgstr "Паражэнне!"
+
+msgid "game/draw"
+msgstr "Нічыя!"
+
+msgid "game/time_over"
+msgstr "Цэлі не былі знішчаны"
+
+msgid "game/victory"
+msgstr "Перамога!"
+
+msgid "global_msg/atk/focus_hq_short"
+msgstr "Знішчыце цэлі!"
+
+msgid "global_msg/atk/time_short"
+msgstr "Захапіце зону!"
+
+msgid "global_msg/def/focus_hq_short"
+msgstr "Бараніце цэлі!"
+
+msgid "global_msg/def/time_short"
+msgstr "Бараніце зоны!"
+
+msgid "global_msg/lane/center_short"
+msgstr "Патрабую падмацавання ў %(strArg1)s!"
+
+msgid "global_msg/lane/east_short"
+msgstr "Патрабую падмацавання ў %(strArg1)s!"
+
+msgid "global_msg/lane/west_short"
+msgstr "Патрабую падмацавання ў %(strArg1)s!"
+
+msgid "global_msg/save_tanks_short"
+msgstr "Беражыце тэхніку!"
+
+msgid "help_window/communication"
+msgstr "Зона сувязі"
+
+msgid "help_window/communication/description"
+msgstr ""
+"Вы можаце атрымліваць загады толькі ад хаўруснікаў, якія знаходзяцца ў "
+"бачнай частцы вашай міні-карты, або калі цэль загаду знаходзіцца ў "
+"непасрэднай блізкасці да вас."
+
+msgid "help_window/overview_map"
+msgstr "Стратэгічная карта"
+
+msgid "help_window/overview_map/description"
+msgstr ""
+"Выкарыстоўваецца для стратэгічнага і тактычнага агляду поля бою. Калі "
+"стратэгічная карта адкрыта, вы будзеце на сувязі з усімі гульцамі вашай "
+"каманды і зможаце атрымліваць паведамленні ад іх."
+
+msgid "help_window/recovery"
+msgstr "Аднаўленне"
+
+msgid "help_window/recovery/description"
+msgstr ""
+"Выкарыстоўвайце магчымасць аднаўлення, калі ваша машына захрасла на полі "
+"бою. Улічваючы працяглы час бою і механіку адраджэння, гэта дазволіць вам "
+"пастаянна знаходзіцца ў цэнтры падзей."
+
+msgid "help_window/reserves"
+msgstr "Рэзерв тэхнікі"
+
+msgid "help_window/reserves/description"
+msgstr ""
+"Кожныя некалькі хвілін у ваш рэзерв тэхнікі дадаецца адна машына. У рэзерве "
+"могуць адначасова знаходзіцца не больш як дзве машыны. Калі ваша машына была"
+" знішчана ў баі, а ў рэзерве машын няма, вам давядзецца пачакаць, пакуль "
+"рэзерв тэхнікі не папоўніцца і можна будзе зноў уступіць у бой."
+
+msgid "hq/under_attack_atk"
+msgstr "Пад атакай"
+
+msgid "hq/under_attack_def"
+msgstr "Пад атакай"
+
+msgid "in_game_rank/experience_text"
+msgstr "Досвед"
+
+msgid "intro/card/categories/desc"
+msgstr ""
+"Рэзервы падзелены на катэгорыі. У слот кожнай катэгорыі можна паставіць "
+"толькі адпаведныя рэзервы."
+
+msgid "intro/card/categories/title"
+msgstr "Катэгорыі рэзерваў"
+
+msgid "intro/card/slots/desc"
+msgstr ""
+"Па дасягненні званняў «сяржант» і «лейтэнант» у баі адкрыюцца другая і "
+"трэцяя слоты. Па дасягненні званняў «капітан» і «маёр» рэзервы ў слотах "
+"узмоцняцца."
+
+msgid "intro/card/slots/title"
+msgstr "Адкрывайце слоты ў баі"
+
+msgid "intro/card/types/desc"
+msgstr ""
+"Канфігурацыі слотаў у розных тыпаў тэхнікі адрозніваюцца, але "
+"разблакоўваюцца і ўзмацняюцца яны аднолькава."
+
+msgid "intro/card/types/title"
+msgstr "Слоты і тыпы тэхнікі"
+
+msgid "intro/confirm"
+msgstr "Так!"
+
+msgid "intro/title"
+msgstr "МЕХАНІКА БАЯВЫХ РЭЗЕРВАЎ"
+
+msgid "lane_central_name"
+msgstr "Цэнтр"
+
+msgid "lane_east_name"
+msgstr "Усход"
+
+msgid "lane_west_name"
+msgstr "Захад"
+
+msgid "metaAbilityScreen/Ability_level"
+msgstr "Узровень: %(lvl)s"
+
+msgid "metaAbilityScreen/Ability_locked"
+msgstr "Выбар недаступны: у вас няма ачкоў баявых рэзерваў."
+
+msgid "metaAbilityScreen/Ability_max_level"
+msgstr "Баявы рэзерв палепшаны да максімальнага ўзроўню."
+
+msgid "metaAbilityScreen/Ability_not_points"
+msgstr "Паляпшэнне недаступнае: у вас няма ачкоў баявых рэзерваў."
+
+msgid "metaAbilityScreen/Ability_not_unlocked"
+msgstr "Рэзерв не задзейнічаны"
+
+msgid "metaAbilityScreen/activation_depends"
+msgstr ""
+"Максімальны ўзровень узмацнення ў баі залежыць ад тыпу тэхнікі, на якой "
+"усталяваны рэзерв."
+
+msgid "metaAbilityScreen/how_to_activate"
+msgstr ""
+"Задзейнічайце яго ў раздзеле кіравання рэзервамі\n"
+"Кошт актывацыі: %(price)s %(img)s"
+
+msgid "mission/primary/title"
+msgstr "Асноўная цэль"
+
+msgid "mission/title"
+msgstr "Задача"
+
+msgid "mission/zone_closing_atk"
+msgstr "Зона адкрываецца праз: "
+
+msgid "mission/zone_closing_def"
+msgstr "Авіяўдар па супраціўніку праз: "
+
+msgid "missions/primary/atk/base"
+msgstr "Захапіце зону"
+
+msgid "missions/primary/atk/hq"
+msgstr "Знішчыце цэль"
+
+msgid "missions/primary/atk/hq_additional_info"
+msgstr "%(positiveOpen)s%(destroyed)s%(positiveClose)s з %(toDestroy)s"
+
+msgid "missions/primary/atk/hq_sub_title"
+msgstr "Знішчыў цэляў:"
+
+msgid "missions/primary/atk/longdescription"
+msgstr "Захоплівайце зоны на шляху да асноўных цэляў, а затым знішчыце іх."
+
+msgid "missions/primary/def/base"
+msgstr "Бараніце зону"
+
+msgid "missions/primary/def/hq"
+msgstr "Бараніце цэль"
+
+msgid "missions/primary/def/hq_additional_info"
+msgstr "%(negativeOpen)s%(destroyed)s%(negativeClose)s з %(toDestroy)s"
+
+msgid "missions/primary/def/hq_sub_title"
+msgstr "Страчана цэляў:"
+
+msgid "missions/primary/def/longdescription"
+msgstr ""
+"Бараніце зоны, якія знаходзяцца на шляху да асноўных цэляў, пакуль не выйдзе"
+" час бою, або знішчыце ўсю тэхніку каманды атакоўцаў."
+
+msgid "missions/unlockTankLevel"
+msgstr "Даступнае выкарыстанне тэхнікі %(level)s узроўню"
+
+msgid "overtime/label"
+msgstr "АВЕРТАЙМ"
+
+msgid "player_errors/minefieldIsIntersected"
+msgstr "Размяшчэнне немагчымае. Мінныя палі перасякаюцца."
+
+msgid "primeTime/applyBtn"
+msgstr "Перайсці"
+
+msgid "primeTime/cancelBtn"
+msgstr "Скасаваць"
+
+msgid "primeTime/continueBtn"
+msgstr "Працягнуць"
+
+msgid "primeTime/endOfCycle"
+msgstr "Рэжым на серверы %(server)s завяршыўся."
+
+msgid "primeTime/manyServersAvailable"
+msgstr "Даступныя серверы:"
+
+msgid "primeTime/oneServerAvailable"
+msgstr "Даступны сервер: %(serverPing)s"
+
+msgid "primeTime/primeIsAvailable"
+msgstr "Баі на %(server)s будуць даступныя яшчэ %(time)s"
+
+msgid "primeTime/primeWillBeAvailable"
+msgstr "Баі на %(server)s пачнуцца праз %(time)s"
+
+msgid "primeTime/serverTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі будуць даступныя яшчэ %(time)s"
+
+msgid "primeTime/serverUnavailableTooltip"
+msgstr "Баі будуць даступныя праз %(time)s"
+
+msgid "primeTime/servers"
+msgstr "Даступныя серверы: %(server)s"
+
+msgid "primeTime/status/cycleFinishedOnThisServer"
+msgstr "Баі на серверы %(server)s завершаны"
+
+msgid "primeTime/status/disable"
+msgstr ""
+"Вы можаце перайсці на сервер рэжыму «Лінія фронту» і працягнуць перадбаявую "
+"падрыхтоўку."
+
+msgid "primeTime/status/disabledOnThisServer"
+msgstr "Рэжым на серверы %(server)s недаступны"
+
+msgid "primeTime/status/noPrimeTimeOnThisServer"
+msgstr "Рэжым спынення агню да %(startTime)s на серверы %(server)s"
+
+msgid "primeTime/status/noPrimeTimesOnAllServers"
+msgstr "Рэжым спынення агню на ўсіх серверах"
+
+msgid "primeTime/status/thisEnable"
+msgstr "На серверы %(server)s рэжым «Лінія фронту» даступны яшчэ %(time)s."
+
+msgid "primeTime/steelhunter/title"
+msgstr "СТАЛЁВЫ ПАЛЯЎНІЧЫ"
+
+msgid "primeTime/title"
+msgstr "ЛІНІЯ ФРОНТУ"
+
+msgid "primeTime/titleWelcome"
+msgstr ""
+"ВІТАЕМ\n"
+"НА ЛІНІІ ФРОНТУ"
+
+msgid "progress_timers/active"
+msgstr "Актыўная"
+
+msgid "progress_timers/fully_equipped"
+msgstr "Машына падрыхтавана"
+
+msgid "progress_timers/resupply"
+msgstr "Зона абслугоўвання"
+
+msgid "progress_timers/unavailable"
+msgstr "Недаступная"
+
+msgid "questsTooltip/epicBattle/header"
+msgstr "Задачы Лініі фронту"
+
+msgid "questsTooltip/epicBattle/lessThanDay"
+msgstr "менш за 1 сут"
+
+msgid "questsTooltip/epicBattle/restrict/level"
+msgstr "атрымайце %(level)s узровень"
+
+msgid "questsTooltip/epicBattle/startIn"
+msgstr "Новыя задачы з'явяцца праз %(time)s"
+
+msgid "questsTooltip/epicBattle/steelhunter/header"
+msgstr "Задачы рэжыму «Сталёвы паляўнічы»"
+
+msgid "questsTooltip/epicBattle/timeLeft"
+msgstr "Падзея «Лінія фронту» скончыцца праз: %(time)s"
+
+msgid "questsTooltip/epicBattle/unavailable"
+msgstr "Недаступна: %(reason)s."
+
+msgid "rank/allReserveUpgraded"
+msgstr "Узровень усіх рэзерваў павышаны"
+
+msgid "rank/crewRolesFactorPromotion"
+msgstr "Камандны бонус да эфектыўнасці экіпажа павялічаны да +%(percent)s%%"
+
+msgid "rank/crewRolesFactorPromotion1"
+msgstr "Дасягнута максімальная эфектыўнасць экіпажа ў +%(percent)s%%"
+
+msgid "rank/crewRolesFactorSelf"
+msgstr "Камандны бонус да эфектыўнасці экіпажа +%(percent)s%%"
+
+msgid "rank/no_name"
+msgstr "Гулец"
+
+msgid "rank/promotion"
+msgstr "атрымлівае званне %(rank)s%(placeholder)s"
+
+msgid "rank/rank1"
+msgstr "Шараговец"
+
+msgid "rank/rank2"
+msgstr "Сяржант"
+
+msgid "rank/rank3"
+msgstr "Лейтэнант"
+
+msgid "rank/rank4"
+msgstr "Капітан"
+
+msgid "rank/rank5"
+msgstr "Маёр"
+
+msgid "rank/rank6"
+msgstr "Генерал"
+
+msgid "rank/recerveUnlocked"
+msgstr "Баявы рэзерв %(reserveName)s разблакаваны"
+
+msgid "rank/reserveUpgraded"
+msgstr "Баявы рэзерв %(reserveName)s палепшаны"
+
+msgid "rank/slotUnlocked"
+msgstr "?empty?"
+
+msgid "rank/slot_2"
+msgstr "?empty?"
+
+msgid "rank/slot_3"
+msgstr "?empty?"
+
+msgid "recovery/Blocked"
+msgstr ""
+"Часова\n"
+"заблакіравана"
+
+msgid "recovery/disabled"
+msgstr "Аднаўленне недаступнае"
+
+msgid "recovery_panel/base_text"
+msgstr ""
+"Каб аднавіцца,\n"
+"націсніце J"
+
+msgid "recovery_panel/recovery_cancel"
+msgstr "Каб скасаваць аднаўленне, перамясціцеся або стрэльце."
+
+msgid "recovery_panel/recovery_cancelled"
+msgstr ""
+"Аднаўленне\n"
+"скасавана"
+
+msgid "recovery_panel/recovery_requested"
+msgstr ""
+"Вы запыталі\n"
+"аднаўленне"
+
+msgid "reinforcement/capture_next_base_text"
+msgstr "Захапіце наступную зону"
+
+msgid "reinforcement/reinforcement_in_text"
+msgstr "Падмацаванне праз "
+
+msgid "reinforcement/unavailable"
+msgstr "Падмацавання больш не будзе"
+
+msgid "reinforcementsPanel/inText"
+msgstr " "
+
+msgid "respawn/auto_timer_txt"
+msgstr "%(seconds)s с да ўступу ў бой."
+
+msgid "respawn/deploy_button"
+msgstr "Да бою!"
+
+msgid "respawn/gold_ammo_not_available"
+msgstr "Палепшаны рыштунак нельга набыць падчас бою."
+
+msgid "respawn/shop_title"
+msgstr "Абслугоўванне"
+
+msgid "respawn/tanks_left"
+msgstr "машын засталося"
+
+msgid "respawnScreen/deploymentLane1"
+msgstr "I"
+
+msgid "respawnScreen/deploymentLane2"
+msgstr "II"
+
+msgid "respawnScreen/deploymentLane3"
+msgstr "III"
+
+msgid "respawnScreen/headerTitle"
+msgstr "Выберыце машыну і пункт высадкі"
+
+msgid "respawnScreen/respawnWarning"
+msgstr "Высадка ў гэтым пункце рызыкоўная."
+
+msgid "respawnScreen/secondsTimerText"
+msgstr "%(seconds)s с"
+
+msgid "retreat_message_txt"
+msgstr "Адступайце"
+
+msgid "retreat_mission_txt"
+msgstr "Адступайце ў наступную зону"
+
+msgid "rewardSelection/subTitle"
+msgstr "ВЫБЕРЫЦЕ ЎЗНАГАРОДУ"
+
+msgid "rewardSelection/title"
+msgstr "ЛІНІЯ ФРОНТУ"
+
+msgid "scorePanel/stage1"
+msgstr "Фаза 1"
+
+msgid "scorePanel/stage2"
+msgstr "Фаза 2"
+
+msgid "scorePanel/stage3"
+msgstr "Фаза 3"
+
+msgid "season/201902/name"
+msgstr "2019"
+
+msgid "season/202002/name"
+msgstr "2020"
+
+msgid "season/202108/name"
+msgstr "2021"
+
+msgid "selectorTooltip/epicBattle/attention/assuredLowPerformance/description"
+msgstr ""
+"Прадукцыйнасці вашага камп'ютара недастаткова для гэтага рэжыму. Вельмі "
+"імаверныя праблемы з графікай і перамяшчэннем тэхнікі, магчымае таксама "
+"аварыйнае закрыццё кліента гульні."
+
+msgid "selectorTooltip/epicBattle/attention/assuredLowPerformance/title"
+msgstr "Нізкая прадукцыйнасць"
+
+msgid ""
+"selectorTooltip/epicBattle/attention/informativeLowPerformance/description"
+msgstr ""
+"У выпадку недастатковай прадукцыйнасці спрабуйце знізіць налады графікі."
+
+msgid "selectorTooltip/epicBattle/attention/informativeLowPerformance/title"
+msgstr "Рэжым патрабавальны да камп'ютара"
+
+msgid ""
+"selectorTooltip/epicBattle/attention/possibleLowPerformance/description"
+msgstr ""
+"Рэжым патрабавальны да камп'ютара. Мапа можа доўга загружацца, магчымыя "
+"праблемы з графікай і перамяшчэннем тэхнікі ў баі. У выпадку недастатковай "
+"прадукцыйнасці паспрабуйце знізіць налады графікі."
+
+msgid "selectorTooltip/epicBattle/attention/possibleLowPerformance/title"
+msgstr "Нізкая прадукцыйнасць"
+
+msgid "selectorTooltip/epicBattle/body"
+msgstr ""
+"Баі 30 на 30 на %(bodyVehicleLevel)s. Вас чакаюць механіка адраджэння, "
+"баявыя рэзервы, а таксама зоны абслугоўвання."
+
+msgid "selectorTooltip/epicBattle/bodyVehicleLevel"
+msgstr "тэхніцы %(level)s узроўню"
+
+msgid "selectorTooltip/epicBattle/ended/body"
+msgstr ""
+"Баі 30 на 30 на %(bodyVehicleLevel)s. Вас чакае механіка адраджэння, баявыя "
+"рэзервы і магчымасць рамонту ў баі."
+
+msgid "selectorTooltip/epicBattle/frozen"
+msgstr "Рэжым часова адключаны з тэхнічных прычын."
+
+msgid "selectorTooltip/epicBattle/header"
+msgstr "Лінія фронту"
+
+msgid "selectorTooltip/epicBattle/startIn"
+msgstr "Баі пачнуцца праз: "
+
+msgid "selectorTooltip/epicBattle/timeLeft"
+msgstr "Баі завершацца праз: "
+
+msgid "selectorTooltip/epicBattle/timeTable/dash"
+msgstr "—"
+
+msgid "selectorTooltip/epicBattle/timeTable/title"
+msgstr "Расклад баёў"
+
+msgid "selectorTooltip/epicBattle/timeTable/today"
+msgstr "Сёння"
+
+msgid "selectorTooltip/epicBattle/timeTable/tomorrow"
+msgstr "Заўтра"
+
+msgid "skill/category/firesupport"
+msgstr "Ударныя"
+
+msgid "skill/category/reconnaissance"
+msgstr "Разведвальныя"
+
+msgid "skill/category/tactics"
+msgstr "Тактычныя"
+
+msgid "spectator_mode/camera_controls_title"
+msgstr "Камера ў рэжыме назіральніка"
+
+msgid "spectator_mode/camera_mouse_rotate"
+msgstr "Каб паварочваць камеру, выкарыстоўвайце мыш."
+
+msgid "spectator_mode/camera_wasd"
+msgstr "Каб перамяшчаць камеру, выкарыстоўвайце клавішы W, A, S, D."
+
+msgid "spectator_mode/follow_text"
+msgstr "Націсніце левую кнопку мышы, каб рухацца следам за машынай."
+
+msgid "spectator_mode/follow_title"
+msgstr "Рухацца следам"
+
+msgid "spectator_mode/msg_text"
+msgstr "Машына прыбудзе праз:"
+
+msgid "spectator_mode/msg_title"
+msgstr "Уся ваша тэхніка знішчана!"
+
+msgid "spectator_mode/unfollow_text"
+msgstr "Націсніце левую кнопку мышы, каб вярнуцца ў рэжым вольнай камеры."
+
+msgid "spectator_mode/unfollow_title"
+msgstr "Перастаць рухацца следам"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "status/timeLeft/lessMin"
+msgstr "хвіліну"
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "statusNotificationTimers/captureBlock/blocked"
+msgstr "Ідзе змаганне за базу"
+
+msgid "statusNotificationTimers/deathZone"
+msgstr "Пакіньце зону!"
+
+msgid "statusNotificationTimers/healPoint/healed"
+msgstr "Аднаўленне трываласці машыны"
+
+msgid "statusNotificationTimers/healPoint/healing"
+msgstr "Аднаўленне трываласці машыны"
+
+msgid "statusNotificationTimers/inspire/inspired"
+msgstr "Падняцце баявога духу"
+
+msgid "statusNotificationTimers/inspire/inspiring"
+msgstr "Падняцце баявога духу"
+
+msgid "statusNotificationTimers/repairPoint"
+msgstr "Зона абслугоўвання"
+
+msgid "statusNotificationTimers/smoke/ally"
+msgstr "У дымах: замаскіраваны"
+
+msgid "statusNotificationTimers/smoke/enemy"
+msgstr "У дымах. Агляд і эфектыўнасць экіпажа паменшаны."
+
+msgid "statusNotificationTimers/smoke/enemyPostEffect"
+msgstr "Рэшткавая з'ява. Агляд і эфектыўнасць экіпажа паменшаны."
+
+msgid "statusNotificationTimers/stealthRadar/active"
+msgstr "Рэжым дазору актываваны"
+
+msgid "statusNotificationTimers/stealthRadar/inactive"
+msgstr "Будзе задзейнічана праз %(activationDelay)s с пасля спынення"
+
+msgid "super_platoon_panel/title"
+msgstr "Звяз"
+
+msgid "tab_screen/generalBonusDescr"
+msgstr ""
+"— сумарны камандны бонус да эфектыўнасці экіпажа за прысутнасць генерала."
+
+msgid "tab_screen/generalBonusValue"
+msgstr "+%(value)s%%"
+
+msgid "tab_screen/show_all_lanes"
+msgstr "Усе напрамкі"
+
+msgid "tab_screen/show_my_lane"
+msgstr "Мой напрамак"
+
+msgid "team1Name"
+msgstr "Атакоўцы"
+
+msgid "team2Name"
+msgstr "Абаронцы"
+
+msgid "tooltips/chooseRewards/desc"
+msgstr "Выберыце ўзнагароды за пройдзеныя ўзроўні (%(number)s)."
+
+msgid "tooltips/common/disabled"
+msgstr "Рэжым адключаны"
+
+msgid "tooltips/common/title"
+msgstr "Лінія фронту"
+
+msgid "tooltips/end"
+msgstr "Падзея завяршылася"
+
+msgid "tooltips/slotSetupInfo/open/desc"
+msgstr ""
+"парадак адкрыцця рэзерваў залежыць ад тыпу тэхнікі. Адзін рэзерв адкрыты ад "
+"пачатку, астатнія становяцца даступнымі пасля дасягнення званняў «сяржант» і"
+" «лейтэнант»."
+
+msgid "tooltips/slotSetupInfo/open/title"
+msgstr "Адкрыццё: %(desc)s"
+
+msgid "tooltips/slotSetupInfo/reserve/locked"
+msgstr "?empty?"
+
+msgid "tooltips/slotSetupInfo/reserve/purchased"
+msgstr "?empty?"
+
+msgid "tooltips/slotSetupInfo/scheme"
+msgstr "Разблакаванне і ўзмацненне рэзерваў у баі"
+
+msgid "tooltips/slotSetupInfo/subtitle"
+msgstr ""
+"Рэзервы адкрываюцца і паляпшаюцца ў баі ў залежнасці ад тыпу тэхнікі і "
+"атрыманага звання."
+
+msgid "tooltips/slotSetupInfo/title/AT-SPG"
+msgstr "Канфігурацыя рэзерваў для СТ-САУ"
+
+msgid "tooltips/slotSetupInfo/title/SPG"
+msgstr "Канфігурацыя рэзерваў для САУ"
+
+msgid "tooltips/slotSetupInfo/title/heavyTank"
+msgstr "Канфігурацыя рэзерваў для цяжкіх танкаў"
+
+msgid "tooltips/slotSetupInfo/title/lightTank"
+msgstr "Канфігурацыя рэзерваў для лёгкіх танкаў"
+
+msgid "tooltips/slotSetupInfo/title/mediumTank"
+msgstr "Канфігурацыя рэзерваў для сярэдніх танкаў"
+
+msgid "tooltips/slotSetupInfo/upgrade/desc"
+msgstr ""
+"пасля адкрыцця ўсіх рэзерваў пры дасягненні новых званняў адбываецца "
+"паляпшэнне гэтых рэзерваў. Рэзерв, адкрыты ад пачатку, можна палепшыць да "
+"трэцяга ўзроўню, адкрыты другім — да другога ўзроўню."
+
+msgid "tooltips/slotSetupInfo/upgrade/title"
+msgstr "Паляпшэнне: %(desc)s"
+
+msgid "tooltips/slotUnlocked/message"
+msgstr "Слот адкрыецца пасля дасягнення звання «%(rank)s»."
+
+msgid "tooltips/timeToEnd"
+msgstr "Рэжым даступны: %(timeLeft)s"
+
+msgid "tooltips/timeToStart"
+msgstr "Баі пачнуцца праз: %(timeLeft)s"
+
+msgid "tooltips/widget/finished"
+msgstr "Падзея завяршылася"
+
+msgid "tooltips/widget/level"
+msgstr "Узровень %(level)s"
+
+msgid "tooltips/widget/reachedMaxLevel"
+msgstr "Дасягнуты максімальны ўзровень."
+
+msgid "tutorial/hint/epicReservesSlotHint"
+msgstr "БАЯВЫЯ РЭЗЕРВЫ"
+
+msgid "widgetAlertMessageBlock/allPeripheriesHalt"
+msgstr "Рэжым спынення агню на ўсіх серверах. Баі пачнуцца праз %(time)s"
+
+msgid "widgetAlertMessageBlock/announcement"
+msgstr "Баі хутка пачнуцца"
+
+msgid "widgetAlertMessageBlock/button"
+msgstr "Змяніць сервер"
+
+msgid "widgetAlertMessageBlock/noCycleMessage"
+msgstr "Баі завершаны"
+
+msgid "widgetAlertMessageBlock/singleModeHalt"
+msgstr "Рэжым спынення агню на серверы. Баі пачнуцца праз %(time)s"
+
+msgid "widgetAlertMessageBlock/somePeripheriesHalt"
+msgstr "Рэжым спынення агню на %(serverName)s"
+
+msgid "widgetAlertMessageBlock/startIn"
+msgstr "Баі пачнуцца праз: %(time)s"
+
+msgid "zone/arrived_text"
+msgstr "прыбыла!"
+
+msgid "zone/capture_text"
+msgstr "Захапіць"
+
+msgid "zone/captured_text"
+msgstr "Захоплена"
+
+msgid "zone/defend_text"
+msgstr "Бараніць"
+
+msgid "zone/destroy_text"
+msgstr "Знішчыць"
+
+msgid "zone/destroyed_text"
+msgstr "Знішчана"
+
+msgid "zone/enemy_reinforced_text"
+msgstr "Падмацаванні супраціўніка"
+
+msgid "zone/headquarters_text"
+msgstr "Цэлі"
+
+msgid "zone/leave_zone"
+msgstr "Пакіньце зону!"
+
+msgid "zone/lost_text"
+msgstr "Страчана"
+
+msgid "zone/reached_text"
+msgstr "Дасягнута"
+
+msgid "zone/reinforcement_timer_atk"
+msgstr "Падмацаванні супраціўніка:"
+
+msgid "zone/reinforcement_timer_def"
+msgstr "Падмацаванне:"
+
+msgid "zone/reinforcements_text"
+msgstr "Падмацаванне"
+
+msgid "zone/time_added"
+msgstr "Дададзена хвілін: %(minutes)s"
+
+msgid "zone/time_left"
+msgstr "Засталося хвілін: %(minutes)s"
+
+msgid "zone/zone_text"
+msgstr "Зона"

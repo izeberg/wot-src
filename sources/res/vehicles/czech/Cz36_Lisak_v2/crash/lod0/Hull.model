@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.828614 -1.008615 -3.890249</min>
+		<max>1.849103 0.564461 3.743228</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz36_Lisak_v2/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/czech/Cz36_Lisak_v2/crash/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+</root>

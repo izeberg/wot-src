@@ -7,11 +7,11 @@ package net.wg.gui.battle.comp7
    import net.wg.data.constants.Errors;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
    import net.wg.gui.battle.comp7.infrastructure.Comp7StatisticsDataController;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.BattleTankCarousel;
    import net.wg.gui.battle.components.StatusNotificationsPanel;
    import net.wg.gui.battle.components.pointsOfInterestNotificationPanel.PointsOfInterestNotificationPanel;
    import net.wg.gui.battle.views.battleMessenger.BattleMessage;
    import net.wg.gui.battle.views.battleMessenger.BattleMessenger;
+   import net.wg.gui.battle.views.carousel.PrebattleCarouselView;
    import net.wg.gui.battle.views.minimap.constants.MinimapSizeConst;
    import net.wg.gui.battle.views.minimap.events.MinimapEvent;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
@@ -38,8 +38,6 @@ package net.wg.gui.battle.comp7
       
       private static const MESSENGER_OFFSET:int = 0;
       
-      private static const PADDINGS_1600:int = 100;
-      
       private static const STATUS_TO_HINT_OFFSET:int = -130;
       
       private static const PREBATTLE_AMMO_PANEL_WIDTH_BREAKPOINT:int = 1135;
@@ -63,7 +61,7 @@ package net.wg.gui.battle.comp7
       
       public var vehicleStatus:VehicleStatus = null;
       
-      public var carousel:BattleTankCarousel = null;
+      public var carousel:PrebattleCarouselView = null;
       
       public var helpButton:Comp7HelpCtrl = null;
       
@@ -142,8 +140,6 @@ package net.wg.gui.battle.comp7
       {
          var _loc1_:Boolean = false;
          var _loc2_:int = 0;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
          super.draw();
          if(_baseDisposed)
          {
@@ -163,16 +159,11 @@ package net.wg.gui.battle.comp7
             updateAmmunitionPanelY();
             this.updateVehicleStatusPosition();
             this.updateHintPanelPosition();
-            _loc2_ = 0;
-            if(_originalWidth > StageSizeBoundaries.WIDTH_1366)
-            {
-               _loc2_ = PADDINGS_1600 * (_originalWidth - StageSizeBoundaries.WIDTH_1024) / (StageSizeBoundaries.WIDTH_1600 - StageSizeBoundaries.WIDTH_1024);
-            }
-            _loc3_ = _originalWidth >> 1;
-            _loc4_ = this.getFreeSpace(_originalWidth,_loc2_);
-            this.carousel.updateStage(_loc4_,_originalHeight);
-            this.carousel.y = _originalHeight - this.carousel.getBottom() ^ 0;
-            this.carousel.x = _loc3_ - (_loc4_ >> 1) + MESSENGER_OFFSET;
+            _loc2_ = this.getFreeSpace(_originalWidth);
+            this.carousel.y = _originalHeight - this.carousel.height;
+            this.carousel.x = battleMessenger.x + this.getBattleMessengerWidth() + MESSENGER_OFFSET;
+            this.carousel.width = _loc2_;
+            this.carousel.setSize(this.carousel.width,this.carousel.height);
             this.vehicleHitArea.width = _originalWidth;
             this.vehicleHitArea.height = _originalHeight;
          }
@@ -200,7 +191,7 @@ package net.wg.gui.battle.comp7
       {
          registerComponent(this.pointsOfInterestNotificationPanel,BATTLE_VIEW_ALIASES.POINT_OF_INTEREST_NOTIFICATIONS_PANEL);
          registerComponent(this.statusNotificationsPanel,BATTLE_VIEW_ALIASES.STATUS_NOTIFICATIONS_PANEL);
-         registerComponent(this.carousel,BATTLE_VIEW_ALIASES.COMP7_TANK_CAROUSEL);
+         registerComponent(this.carousel,BATTLE_VIEW_ALIASES.PREBATTLE_CAROUSEL_VIEW);
          this.carousel.addEventListener(LifeCycleEvent.ON_BEFORE_DISPOSE,this.onCarouselOnBeforeDisposeHandler);
          this.helpButton.addEventListener(MouseEvent.CLICK,this.onHelpButtonClickHandler);
          super.onPopulate();
@@ -377,11 +368,11 @@ package net.wg.gui.battle.comp7
          battleMessenger.setAvailableWidthForMessages(this.getBattleMessengerWidth());
       }
       
-      private function getFreeSpace(param1:int, param2:int) : int
+      private function getFreeSpace(param1:int) : int
       {
-         var _loc3_:int = minimap.getMinimapTotalWidthByIndex(minimap.currentSizeIndex) + MINIMAP_OFFSET;
-         var _loc4_:int = Math.max(battleMessenger.x + this.getBattleMessengerWidth() + MESSENGER_OFFSET,_loc3_);
-         return param1 - (_loc4_ << 1) - param2;
+         var _loc2_:int = minimap.getMinimapTotalWidthByIndex(minimap.currentSizeIndex) + MINIMAP_OFFSET;
+         var _loc3_:int = battleMessenger.x + this.getBattleMessengerWidth() + MESSENGER_OFFSET;
+         return param1 - _loc3_ - Math.max(_loc2_,_loc3_);
       }
       
       private function getBattleMessengerWidth() : int

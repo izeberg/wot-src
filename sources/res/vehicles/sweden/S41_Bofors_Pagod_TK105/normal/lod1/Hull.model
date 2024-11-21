@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S41_Bofors_Pagod_TK105/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.760964 -0.638151 -3.484000</min>
+		<max>1.760964 0.838196 3.336746</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/normal/lod1/Hull</nodefullVisual>
+</root>

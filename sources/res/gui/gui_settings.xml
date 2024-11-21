@@ -1247,6 +1247,11 @@
 				<type>url</type>
 			</item>
 			<item>
+				$PARAMS(/ny24_category/ny24_category)
+				<name>newYearOldCollectionRewardUrl</name>
+				<type>url</type>
+			</item>
+			<item>
 				$PARAMS(/recommended-packs)
 				<name>buyMoreGoldUrl</name>
 				<type>url</type>
@@ -1362,6 +1367,16 @@
 				<type>url</type>
 			</item>
 			<item>
+				$PARAMS(/featured/featured/items/platform_subscription/preview)
+				<name>buyRenewableSubscription</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/psa2021/psa2021)
+				<name>psaProducts</name>
+				<type>url</type>
+			</item>
+			<item>
 				$PARAMS(/subscription-rental)
 				<name>rentVehicle</name>
 				<type>url</type>
@@ -1404,11 +1419,6 @@
 			<item>
 				$PARAMS(/comp7_category/comp7_category)
 				<name>comp7Products</name>
-				<type>url</type>
-			</item>
-			<item>
-				$PARAMS(/white-tiger-overlay/wt2024_category)
-				<name>buyLootboxes</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -1580,6 +1590,17 @@
 		</value>
 	</setting>
 	<setting>
+		<name>newYearInfo</name>
+		<type>dict</type>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/ny25video/
+				<name>baseURL</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
 		<name>tournamentsURL</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -1734,40 +1755,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>infoPageWhiteTiger</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/wt_2024/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/wt_2024/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>whiteTigerIntroVideoUrl</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/wt_2024_intro/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/wt_2024_intro/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>lootBoxes</name>
 		<type>dict</type>
 		<value>
@@ -1853,6 +1840,11 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
+								<value>types</value>
+							</item>
+							<item>
+								<name>page</name>
+								<type>string</type>
 								<value>rules</value>
 							</item>
 							<item>
@@ -1882,7 +1874,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/onslaught_wolf/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/onslaught-ice-bear/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -1914,13 +1906,13 @@
 						<type>list</type>
 						<value>
 							<item>
-								<name>newSeason</name>
+								<name>newTypes</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>newSeason</value>
+										<value>newTypes</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -1928,120 +1920,6 @@
 										<value>page</value>
 									</item>
 								</value>
-							</item>
-							<item>
-								<name>pointsOfInterest</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>pointsOfInterest</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>seasonVehicles</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>seasonVehicles</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>seasonVehicles</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>roleSkills</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>roleSkills</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>ranks</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>ranks</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>vehiclesOnMap</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>vehiclesOnMap</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>shop</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>shop</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-						</value>
-					</item>
-					<item>
-						<name>seasonVehicles</name>
-						<type>list</type>
-						<value>
-							<item>
-								<type>int</type>
-								<value>20817</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>58385</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>58161</value>
 							</item>
 						</value>
 					</item>
@@ -2079,6 +1957,22 @@
 								</value>
 							</item>
 							<item>
+								<name>vehiclesOnMap</name>
+								<type>list</type>
+								<value>
+									<item>
+										<name>name</name>
+										<type>string</type>
+										<value>vehiclesOnMap</value>
+									</item>
+									<item>
+										<name>type</name>
+										<type>string</type>
+										<value>page</value>
+									</item>
+								</value>
+							</item>
+							<item>
 								<name>pointsOfInterest</name>
 								<type>list</type>
 								<value>
@@ -2091,22 +1985,6 @@
 										<name>type</name>
 										<type>string</type>
 										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>seasonVehicles</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>seasonVehicles</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>seasonVehicles</value>
 									</item>
 								</value>
 							</item>
@@ -2143,22 +2021,6 @@
 								</value>
 							</item>
 							<item>
-								<name>vehiclesOnMap</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>vehiclesOnMap</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
 								<name>shop</name>
 								<type>list</type>
 								<value>
@@ -2173,24 +2035,6 @@
 										<value>page</value>
 									</item>
 								</value>
-							</item>
-						</value>
-					</item>
-					<item>
-						<name>seasonVehicles</name>
-						<type>list</type>
-						<value>
-							<item>
-								<type>int</type>
-								<value>20817</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>58385</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>58161</value>
 							</item>
 						</value>
 					</item>
@@ -2353,6 +2197,52 @@
 					<item>
 						https://webbrg.tanki.su/ru/promocontent/lootboxes_birthday/
 						<name>tanks_birthday_2024</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>lootBoxInfoPagesURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/container_stages/
+						<name>ny_2025_big</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>lootBoxShopURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						$PARAMS(/cosm2024_category/cosm2024_category)
+						<name>ny_2025_big</name>
+						<type>url</type>
+					</item>
+					<item>
+						$PARAMS(/cosm2024_category/cosm2024_category)
+						<name>ny_2025_small</name>
+						<type>url</type>
+					</item>
+					<item>
+						$PARAMS(/cosm2024_category/cosm2024_category)
+						<name>ny_2025_tanks</name>
 						<type>url</type>
 					</item>
 				</value>

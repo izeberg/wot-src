@@ -1,0 +1,638 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "alertMessage/afterCycle"
+msgstr "Баі рэжыму «%(leftDetailedSeasonName)s» завершаны"
+
+msgid "alertMessage/allNotAvailable"
+msgstr ""
+"Рэжым спынення агню на ўсіх серверах. Баі пачнуцца праз %(primeDelta)s"
+
+msgid "alertMessage/allNotAvailableEnd"
+msgstr "Баі рэжыму «%(leftDetailedSeasonName)s» завершаны"
+
+msgid "alertMessage/allNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/button/changeServer"
+msgstr "Змяніць сервер"
+
+msgid "alertMessage/button/moreInfo"
+msgstr "Падрабязней"
+
+msgid "alertMessage/notAvailable"
+msgstr "Рэжым спынення агню на серверы %(serverName)s"
+
+msgid "alertMessage/notAvailableEnd"
+msgstr "Рэжым спынення агню на серверы %(serverName)s"
+
+msgid "alertMessage/notSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/standaloneNotAvailable"
+msgstr "Рэжым спынення агню на серверы. Баі пачнуцца праз %(primeDelta)s"
+
+msgid "alertMessage/standaloneNotAvailableEnd"
+msgstr "Баі рэжыму «%(leftDetailedSeasonName)s» завершаны"
+
+msgid "alertMessage/standaloneNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "alertMessage/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "alertMessage/timeLeft/lessMin"
+msgstr "<1 хв"
+
+msgid "alertMessage/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "alertMessage/undefined"
+msgstr "?empty?"
+
+msgid "alertMessage/unsuitableVehicles"
+msgstr "У Гаражы няма прыдатнай тэхнікі"
+
+msgid "battleResult/progressDescription"
+msgstr "1. %(triggerDescription)s."
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s — %(end)s"
+
+msgid "calendarDay/title"
+msgstr "Расклад"
+
+msgid "entryPoint/activeStatus"
+msgstr "Да %(endDate)s"
+
+msgid "entryPoint/endDate"
+msgstr "Да %(day)s %(month)s"
+
+msgid "entryPoint/lessMinute"
+msgstr "<1 хв"
+
+msgid "entryPoint/notPrimeTimes/status"
+msgstr "Баі хутка адновяцца"
+
+msgid "entryPoint/seasonFinished/status"
+msgstr "Баі завершаны"
+
+msgid "entryPoint/startDate"
+msgstr "З %(day)s %(month)s"
+
+msgid "funRandomCarousel/lockedTooltip/vehClass/body"
+msgstr "%(forbiddenClass)s не можа ўдзельнічаць у баях рэжыму «%(modeName)s»."
+
+msgid "funRandomCarousel/lockedTooltip/vehClass/header"
+msgstr "Непрыдатны тып тэхнікі"
+
+msgid "funRandomCarousel/lockedTooltip/vehLvl/body"
+msgstr "Выберыце машыну %(levelSubStr)s для ўдзелу ў рэжыме «%(modeName)s»."
+
+msgid "funRandomCarousel/lockedTooltip/vehLvl/header"
+msgstr "Непрыдатны ўзровень тэхнікі"
+
+msgid "funRandomCarousel/lockedTooltip/vehLvl/levelSubStr"
+msgstr "%(levels)s узроўню"
+
+msgid "funRandomCarousel/lockedTooltip/vehType/body"
+msgstr "На %(forbiddenType)s нельга ўдзельнічаць  у рэжыме «%(modeName)s»."
+
+msgid "funRandomCarousel/lockedTooltip/vehType/header"
+msgstr "Непрыдатная машына"
+
+msgid "headerButton/tooltips/funRandomSquad/body"
+msgstr ""
+"Стварэнне фармавання з 2–3 гульцоў для супольнай гульні ў баях рэжыму "
+"«%(modeName)s»."
+
+msgid "headerButton/tooltips/funRandomSquad/header"
+msgstr "Звяз"
+
+msgid "invite/text/detailedTitle"
+msgstr "Запрашэнне ўступіць у звяз для рэжыму «%(detailedModeName)s»"
+
+msgid "invite/tooltip/noVehicles"
+msgstr "Патрэбная прынамсі адна машына ў Гаражы."
+
+msgid "metaProgressionTooltip/header/completedFinal"
+msgstr "УСЕ ЭТАПЫ ПРОЙДЗЕНЫЯ"
+
+msgid "metaProgressionTooltip/header/completedResettable"
+msgstr ""
+"УСЕ ЭТАПЫ БЯГУЧАЙ\n"
+"ЗАДАЧЫ ПРОЙДЗЕНЫЯ"
+
+msgid "metaProgressionTooltip/reward/header"
+msgstr "Узнагарода"
+
+msgid "metaProgressionTooltip/timer/activeResettable"
+msgstr "да скідання прагрэсу з узнагародамі"
+
+msgid "modeSelector/notStarted"
+msgstr "Рэжым неўзабаве пачнецца"
+
+msgid "modeSelector/progression/steps"
+msgstr "{yellow_Open}%(done)s{yellow_Close}/%(total)s"
+
+msgid "modeSelector/progression/stepsNoProgress"
+msgstr "{bond_Open}%(done)s{bond_Close}/%(total)s"
+
+msgid "modeSelector/status/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "modeSelector/status/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "modeSelector/status/timeLeft/lessMin"
+msgstr "<1 хв"
+
+msgid "modeSelector/status/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "modeSubSelector/backBtn/label"
+msgstr "ДА РЭЖЫМАЎ"
+
+msgid "modeSubSelector/disabledCard/tooltip/body"
+msgstr "Недаступны з тэхнічных прычын"
+
+msgid "modeSubSelector/progression/header/completedResettable"
+msgstr "Вы прайшлі ўсе этапы бягучай задачы"
+
+msgid "modeSubSelector/subModeCard/finished"
+msgstr "Баі завершаны"
+
+msgid "modeSubSelector/subModeCard/soonWillStart"
+msgstr "Хутка пачнецца"
+
+msgid "modeSubSelector/subModeCard/startTimer"
+msgstr "Пачнецца праз:"
+
+msgid "modeSubSelector/subtitle"
+msgstr "ВЫБЕРЫЦЕ ПАДРЭЖЫМ"
+
+msgid "modes/development/capsUserName"
+msgstr "?empty?"
+
+msgid "modes/development/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/development/metaProgressionTooltip/header/active"
+msgstr "?empty?"
+
+msgid "modes/development/metaProgressionTooltip/reward/tip"
+msgstr "?empty?"
+
+msgid "modes/development/metaProgressionTooltip/subheader"
+msgstr "?empty?"
+
+msgid "modes/development/metaProgressionTooltip/timer/completedResettable"
+msgstr "?empty?"
+
+msgid "modes/development/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/development/modeSubSelector/progression/timer"
+msgstr "?empty?"
+
+msgid "modes/development/mode_selector/description"
+msgstr "?empty?"
+
+msgid "modes/development/mode_selector/progression/resettable"
+msgstr "?empty?"
+
+msgid "modes/development/notification/finishSubModes/withProgression"
+msgstr "Dev notification finishSubModes withProgression"
+
+msgid "modes/development/notification/finishSubModes/withoutProgression"
+msgstr "Dev notification finishSubModes withoutProgression"
+
+msgid "modes/development/notification/newSubModes/withProgression"
+msgstr "Dev notification newSubModes withProgression"
+
+msgid "modes/development/notification/newSubModes/withoutProgression"
+msgstr "Dev notification newSubModes withoutProgression"
+
+msgid "modes/development/notification/switchOffSubModes"
+msgstr "Dev notification switchOffSubModes"
+
+msgid "modes/development/notification/switchOnSubModes"
+msgstr "Dev notification switchOnSubModes"
+
+msgid "modes/development/progression/congratulation/descr"
+msgstr "?empty?"
+
+msgid "modes/development/progression/info"
+msgstr "?empty?"
+
+msgid "modes/development/progression/title"
+msgstr "?empty?"
+
+msgid "modes/development/scheduler/notification/available"
+msgstr "?empty?"
+
+msgid "modes/development/scheduler/notification/available/title"
+msgstr "?empty?"
+
+msgid "modes/development/scheduler/notification/primeTime"
+msgstr "?empty?"
+
+msgid "modes/development/scheduler/notification/primeTime/title"
+msgstr "?empty?"
+
+msgid "modes/development/tooltip/filter/body"
+msgstr "?empty?"
+
+msgid "modes/development/tooltip/filter/header"
+msgstr "?empty?"
+
+msgid "modes/development/userName"
+msgstr "?empty?"
+
+msgid "modes/undefined/capsUserName"
+msgstr "АРКАДА"
+
+msgid "modes/undefined/detailedUserName"
+msgstr "%(modeName)s: %(subModeName)s"
+
+msgid "modes/undefined/metaProgressionTooltip/header/active"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/undefined/metaProgressionTooltip/reward/tip"
+msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
+
+msgid "modes/undefined/metaProgressionTooltip/subheader"
+msgstr "Задача Аркады"
+
+msgid "modes/undefined/metaProgressionTooltip/timer/completedResettable"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/undefined/modeSubSelector/progression/info"
+msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
+
+msgid "modes/undefined/modeSubSelector/progression/timer"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/undefined/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/undefined/mode_selector/description"
+msgstr "Эксперыментальныя баі паводле нестандартных правілаў."
+
+msgid "modes/undefined/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "modes/undefined/mode_selector/progression/resettable"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/undefined/notification/finishSubModes/withProgression"
+msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінутая."
+
+msgid "modes/undefined/notification/finishSubModes/withoutProgression"
+msgstr "Падрэжым %(subModeName)s завершаны."
+
+msgid "modes/undefined/notification/newSubModes/withProgression"
+msgstr "Даступныя новыя ўзнагароды і падрэжым %(subModeName)s."
+
+msgid "modes/undefined/notification/newSubModes/withoutProgression"
+msgstr "Даступны новы падрэжым — %(subModeName)s."
+
+msgid "modes/undefined/notification/switchOffSubModes"
+msgstr "Падрэжым %(subModeName)s недаступны: вядуцца тэхнічныя работы."
+
+msgid "modes/undefined/notification/switchOnSubModes"
+msgstr "Падрэжым %(subModeName)s зноў даступны."
+
+msgid "modes/undefined/progression/congratulation/descr"
+msgstr "Вы прайшлі ўсе этапы Аркады"
+
+msgid "modes/undefined/progression/info"
+msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
+
+msgid "modes/undefined/progression/title"
+msgstr "ЗАДАЧА АРКАДЫ"
+
+msgid "modes/undefined/scheduler/notification/available"
+msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
+
+msgid "modes/undefined/scheduler/notification/available/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/undefined/scheduler/notification/primeTime"
+msgstr ""
+"Баі падрэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення "
+"агню."
+
+msgid "modes/undefined/scheduler/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/undefined/tooltip/filter/body"
+msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
+
+msgid "modes/undefined/tooltip/filter/header"
+msgstr "Аркадная тэхніка"
+
+msgid "modes/undefined/userName"
+msgstr "Аркада"
+
+msgid "notification/congratulation"
+msgstr "Віншуем!"
+
+msgid "notification/finishSubModes"
+msgstr "Падзея «%(modeName)s» завяршылася."
+
+msgid "notification/finishSubModes/withProgression"
+msgstr "Падрэжымы %(subModesNames)s завершаны: прагрэсія скінута."
+
+msgid "notification/finishSubModes/withoutProgression"
+msgstr "Падрэжымы %(subModesNames)s завершаны."
+
+msgid "notification/newProgression"
+msgstr "Прагрэсія рэжыму скінутая — вы можаце зноў атрымаць узнагароды!"
+
+msgid "notification/newSubModes/withProgression"
+msgstr ""
+"Прагрэсія рэжыму скінута. Даступныя новыя падрэжымы: %(subModesNames)s."
+
+msgid "notification/newSubModes/withoutProgression"
+msgstr "Даступныя новыя падрэжымы: %(subModesNames)s."
+
+msgid "notification/progressionComplete"
+msgstr "Вы выканалі ўсе даступныя задачы %(modeName)s. Атрымана ўзнагарода:"
+
+msgid "notification/progressionComplete/resetLessDay"
+msgstr ""
+"Да скідання прагрэсіі засталося менш за 1 д. Пасля гэтага вы зможаце "
+"выканаць задачы яшчэ раз."
+
+msgid "notification/progressionComplete/resetTimeLeft"
+msgstr ""
+"Да скідання прагрэсіі засталося дзён: %(days)d. Пасля гэтага вы зможаце "
+"выканаць задачы яшчэ раз."
+
+msgid "notification/progressionStageComplete"
+msgstr "Вы выканалі задач %(modeName)s: %(counter)s. Атрымана ўзнагарода:"
+
+msgid "notification/subModesSeparator"
+msgstr ", "
+
+msgid "notification/switchOffSubModes"
+msgstr "Падрэжымы %(subModesNames)s недаступныя: вядуцца тэхнічныя працы."
+
+msgid "notification/switchOnSubModes"
+msgstr "Падрэжымы %(subModesNames)s зноў даступныя."
+
+msgid "platoonView/title"
+msgstr "Звяз: %(subModeName)s"
+
+msgid "primeTimes/availableServer"
+msgstr "Даступны для гульні сервер:"
+
+msgid "primeTimes/availableServers"
+msgstr "Даступныя для гульні серверы:"
+
+msgid "primeTimes/serverTooltip/allNotAvailable"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя праз %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/allNotAvailableEnd"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі рэжыму «%(leftDetailedSeasonName)s» завяршыліся."
+
+msgid "primeTimes/serverTooltip/available"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя яшчэ %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/notAvailable"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя праз %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/notAvailableEnd"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі рэжыму «%(leftDetailedSeasonName)s» завяршыліся."
+
+msgid "primeTimes/serverTooltip/standaloneNotAvailable"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя праз %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/standaloneNotAvailableEnd"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі рэжыму «%(leftDetailedSeasonName)s» завяршыліся."
+
+msgid "primeTimes/serverTooltip/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "primeTimes/serverTooltip/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "primeTimes/serverTooltip/timeLeft/lessMin"
+msgstr "<1 хв"
+
+msgid "primeTimes/serverTooltip/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "primeTimes/serverTooltip/undefined"
+msgstr "?empty?"
+
+msgid "primeTimes/statusText/allNotAvailable"
+msgstr ""
+"Рэжым спынення агню на ўсіх серверах.\n"
+"Баі пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/statusText/allNotAvailableEnd"
+msgstr "Баі рэжыму «%(leftDetailedSeasonName)s» завяршыліся."
+
+msgid "primeTimes/statusText/allNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "primeTimes/statusText/notAvailable"
+msgstr ""
+"Рэжым спынення агню да %(primeDeltaDate)s%(primeDeltaTime)s на "
+"серверы%(serverName)s"
+
+msgid "primeTimes/statusText/notAvailableEnd"
+msgstr "Рэжым спынення агню на серверы %(serverName)s"
+
+msgid "primeTimes/statusText/notSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "primeTimes/statusText/standaloneNotAvailable"
+msgstr ""
+"Рэжым спынення агню на серверы %(serverName)s.\n"
+"Баі пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/statusText/standaloneNotAvailableEnd"
+msgstr "Баі рэжыму «%(leftDetailedSeasonName)s» завяршыліся."
+
+msgid "primeTimes/statusText/standaloneNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "primeTimes/statusText/undefined"
+msgstr "?empty?"
+
+msgid "primeTimes/timeText/allNotAvailable"
+msgstr "Баі на серверы %(serverName)s пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/timeText/allNotAvailableEnd"
+msgstr ""
+"Баі рэжыму «%(leftDetailedSeasonName)s» на серверы %(serverName)s "
+"завяршыліся."
+
+msgid "primeTimes/timeText/available"
+msgstr "Баі на серверы %(serverName)s будуць даступныя яшчэ %(primeDelta)s"
+
+msgid "primeTimes/timeText/notAvailable"
+msgstr "Баі на серверы %(serverName)s пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/timeText/notAvailableEnd"
+msgstr ""
+"Баі рэжыму «%(leftDetailedSeasonName)s» на серверы %(serverName)s "
+"завяршыліся."
+
+msgid "primeTimes/timeText/standaloneNotAvailable"
+msgstr "Баі на серверы %(serverName)s пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/timeText/standaloneNotAvailableEnd"
+msgstr ""
+"Баі рэжыму «%(leftDetailedSeasonName)s» на серверы %(serverName)s "
+"завяршыліся."
+
+msgid "primeTimes/timeText/undefined"
+msgstr "?empty?"
+
+msgid "progression/complete/timer"
+msgstr "да новай задачы"
+
+msgid "progression/complete/title"
+msgstr "Вы прайшлі ўсе этапы задачы"
+
+msgid "progression/congratulation/title"
+msgstr "Віншуем!"
+
+msgid "progression/steps"
+msgstr "%(done)s / %(total)s"
+
+msgid "progression/stepsCurrent"
+msgstr "{yellow_Open}%(done)s{yellow_Close} / %(total)s"
+
+msgid "progression/stepsNoProgress"
+msgstr "{bond_Open}%(done)s{bond_Close} / %(total)s"
+
+msgid "progression/timer"
+msgstr "да скідання прагрэсу з узнагародамі і з'яўлення новай задачы"
+
+msgid "scheduler/notification/squadModeSwitch"
+msgstr "Камандзір звязу змяніў падрэжым на %(subModeName)s."
+
+msgid "scheduler/notification/squadModeSwitch/title"
+msgstr "Змена падрэжыму"
+
+msgid "sub_modes/development/capsUserName"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelp/page1/description"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelp/page1/title"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelp/page2/description"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelp/page2/title"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelpHint/description"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelpHint/press"
+msgstr "?empty?"
+
+msgid "sub_modes/development/detailsHelpTitle"
+msgstr "?empty?"
+
+msgid "sub_modes/development/subModeCard/battleCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/development/subModeCard/description"
+msgstr "?empty?"
+
+msgid "sub_modes/development/subModeCard/levelCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/development/subModeCard/title"
+msgstr "?empty?"
+
+msgid "sub_modes/development/tips/tip1/description"
+msgstr "?empty?"
+
+msgid "sub_modes/development/tips/tip1/title"
+msgstr "?empty?"
+
+msgid "sub_modes/development/userName"
+msgstr "?empty?"
+
+msgid "sub_modes/development/userName/quoted"
+msgstr "?empty?"
+
+msgid "sub_modes/undefined/capsUserName"
+msgstr "UNKNOWN SUB MODE NAME"
+
+msgid "sub_modes/undefined/detailsHelp/page1/description"
+msgstr "Unknown sub mode F1 description text"
+
+msgid "sub_modes/undefined/detailsHelp/page1/title"
+msgstr "Unknown sub mode F1 screen title"
+
+msgid "sub_modes/undefined/detailsHelpHint/description"
+msgstr "?empty?"
+
+msgid "sub_modes/undefined/detailsHelpHint/press"
+msgstr "?empty?"
+
+msgid "sub_modes/undefined/detailsHelpTitle"
+msgstr "Unknown sub mode F1 screen common title"
+
+msgid "sub_modes/undefined/subModeCard/battleCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/undefined/subModeCard/description"
+msgstr "Unknown subModeCard description"
+
+msgid "sub_modes/undefined/subModeCard/levelCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/undefined/subModeCard/title"
+msgstr "Unknown subModeCard title"
+
+msgid "sub_modes/undefined/tips/tip1/description"
+msgstr "Unknown sub mode first tip description"
+
+msgid "sub_modes/undefined/tips/tip1/title"
+msgstr "Unknown sub mode first tip title"
+
+msgid "sub_modes/undefined/userName"
+msgstr "Unknown sub mode name"
+
+msgid "sub_modes/undefined/userName/quoted"
+msgstr "«Unknown sub mode name»"

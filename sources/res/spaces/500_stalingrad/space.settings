@@ -191,5 +191,9 @@
 			<tag>ctf</tag>
 			<bitIndex>0</bitIndex>
 		</type>
+		<type>
+			<tag>domination</tag>
+			<bitIndex>1</bitIndex>
+		</type>
 	</spaceVisibilityFlags>
 </root>

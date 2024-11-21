@@ -66,10 +66,6 @@ package net.wg.data.constants.generated
       public static const CONFIRMED_STATE:int = 30;
       
       public static const ABILITY_STATE:int = 31;
-      
-      public static const WT_BOMB_CAPTURING_STATE:int = 32;
-      
-      public static const WT_BOMB_INSTALLING_STATE:int = 33;
        
       
       public function BATTLE_MARKER_STATES()

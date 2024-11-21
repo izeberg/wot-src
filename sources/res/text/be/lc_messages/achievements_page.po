@@ -1,0 +1,517 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "editConfirm/description/autoSelectDisabled"
+msgstr ""
+"Аўтаматычная налада падбірае ўзнагароды паводле іх каштоўнасці з усіх "
+"катэгорый для размяшчэнне на стужцы. Яна адключаецца, калі вы ўручную "
+"змянілі парадак паказу ўзнагарод."
+
+msgid "editConfirm/description/autoSelectEnabled"
+msgstr ""
+"Аўтаматычная налада падбірае ўзнагароды паводле іх каштоўнасці з усіх "
+"катэгорый для размяшчэнне на стужцы. Пры яе ўключэнні ўсталяваны ўручную "
+"парадак паказу ўзнагарод скідваецца."
+
+msgid "editConfirm/description/error"
+msgstr ""
+"Мы ўжо займаемся выпраўленнем праблемы. Вяртайцеся да рэдагавання пазней, а "
+"пакуль паглядзіце зводку."
+
+msgid "editConfirm/footer/button/accept"
+msgstr "Захаваць"
+
+msgid "editConfirm/footer/button/cancel"
+msgstr "Не захоўваць"
+
+msgid "editConfirm/footer/button/error"
+msgstr "Так!"
+
+msgid "editConfirm/info/autoSelectDisabled"
+msgstr "Аўтаналада ўзнагарод адключана"
+
+msgid "editConfirm/info/autoSelectEnabled"
+msgstr "Аўтаналада ўзнагарод уключана"
+
+msgid "editConfirm/title/error"
+msgstr "Адбыўся бой"
+
+msgid "editConfirm/title/normal"
+msgstr "Захаваць змены стужкі значных узнагарод?"
+
+msgid "editView/footer/button/cancel"
+msgstr "Скасаваць змены"
+
+msgid "editView/footer/button/save"
+msgstr "Прымяніць і выйсці"
+
+msgid "editView/header/checkbox"
+msgstr "Аўтаналада ўзнагарод"
+
+msgid "editView/header/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "editView/header/title/idle"
+msgstr "Выберыце ўзнагароды для паказу на стужцы"
+
+msgid "editView/header/title/selecting"
+msgstr "Выберыце ўзнагароду для замены"
+
+msgid "editView/header/title/tutorial"
+msgstr "Выберыце слот з узнагародай"
+
+msgid "editView/ribbon/slot/cancel"
+msgstr "Скасаваць"
+
+msgid "editView/ribbon/slot/tip"
+msgstr "Замяніць"
+
+msgid "editView/section/counter"
+msgstr "(%(count)s)"
+
+msgid "hint/summary/customizationButton"
+msgstr "Даступна рэдагаванне"
+
+msgid "notifications/editingEnabled/button"
+msgstr "Да стужкі"
+
+msgid "notifications/editingEnabled/title"
+msgstr "Можна рэдагаваць стужку значных узнагарод"
+
+msgid "notifications/firstEntry/button"
+msgstr "Да Дасягненняў"
+
+msgid "notifications/firstEntry/text"
+msgstr ""
+"Рэйтынг гульні «Мир танков»,\n"
+"рэдагаванне ўзнагарод"
+
+msgid "notifications/firstEntry/title"
+msgstr "Абнаўленне дасягненняў"
+
+msgid "notifications/firstEntryWithoutWTR/button"
+msgstr "Да Дасягненняў"
+
+msgid "notifications/firstEntryWithoutWTR/text"
+msgstr ""
+"Рэдагаванне ўзнагарод\n"
+"і візуальнае афармленне."
+
+msgid "notifications/firstEntryWithoutWTR/title"
+msgstr "Абнаўленне дасягненняў"
+
+msgid "notifications/ratingCalculated/button"
+msgstr "Да Дасягненняў"
+
+msgid "notifications/ratingCalculated/text"
+msgstr "Ваш узровень — «%(level)s»"
+
+msgid "notifications/ratingCalculated/title"
+msgstr "Ваш рэйтынг разлічаны!"
+
+msgid "notifications/ratingDowngrade/button"
+msgstr "Да Дасягненняў"
+
+msgid "notifications/ratingDowngrade/text"
+msgstr ""
+"Узровень вашага рэйтынгу гульні «Мир танков» зменены. Перайдзіце ў "
+"дасягненні, каб даведацца падрабязней."
+
+msgid "notifications/ratingUp/button"
+msgstr "Да Дасягненняў"
+
+msgid "notifications/ratingUp/text"
+msgstr "Вы дасягнулі ўзроўню «%(level)s»"
+
+msgid "notifications/ratingUp/title"
+msgstr "Ваш рэйтынг павышаны!"
+
+msgid "playerInfo/clan/button"
+msgstr "Профіль клана"
+
+msgid "playerInfo/clan/date"
+msgstr "Дата ўступу:"
+
+msgid "playerInfo/clan/noClan"
+msgstr "Гулец не ўваходзіць у пастаянныя фармаванні"
+
+msgid "playerInfo/clan/post"
+msgstr "Пасада:"
+
+msgid "playerInfo/dogTag/unavailable"
+msgstr ""
+"Асабовы жэтон\n"
+"часова недаступны"
+
+msgid "ratingWidget/status/OtherPlayerWithProgress"
+msgstr "Рэйтынг яшчэ не разлічаны: праведзена менш за %(amount)s баёў."
+
+msgid "ratingWidget/status/initial"
+msgstr ""
+"Правядзіце %(amount)s баёў для разліку вашага рэйтынгу гульні «Мир танков»."
+
+msgid "ratingWidget/status/otherPlayer"
+msgstr "Рэйтынг гульца яшчэ не разлічаны"
+
+msgid "ratingWidget/status/progress"
+msgstr ""
+"Разлічваем ваш рэйтынг гульні «Мир танков». Засталося правесці баёў: "
+"%(amount)s."
+
+msgid "ratingWidget/status/withoutWTR"
+msgstr "Рушце да бою, і мы разлічым ваш рэйтынг."
+
+msgid "section/action"
+msgstr "Асаблівыя"
+
+msgid "section/battle"
+msgstr "Героі бітвы"
+
+msgid "section/class"
+msgstr "Этапныя ўзнагароды"
+
+msgid "section/epic"
+msgstr "Эпічныя медалі"
+
+msgid "section/group"
+msgstr "Групавыя ўзнагароды"
+
+msgid "section/memorial"
+msgstr "Памятныя знакі"
+
+msgid "section/special"
+msgstr "Ганаровыя годнасці"
+
+msgid "summary/accountInfo/lastVisit"
+msgstr " Апошні раз быў у баі: %(lastVisitDate)s в %(lastVisitTime)s"
+
+msgid "summary/accountInfo/registrationDate"
+msgstr "Акаўнт зарэгістраваны: %(registrationDate)s"
+
+msgid "summary/achievements/title"
+msgstr "Каштоўныя ўзнагароды"
+
+msgid "summary/achievements/totalAwards"
+msgstr "Усяго атрымана: %(value)s"
+
+msgid "summary/achievements/uniqueAwards"
+msgstr "Унікальных: %(value)s"
+
+msgid "summary/additional/assistance"
+msgstr "У сярэднім: %(value)s"
+
+msgid "summary/additional/battles"
+msgstr "Перамог: %(value)s"
+
+msgid "summary/additional/blocked"
+msgstr "У сярэднім: %(value)s"
+
+msgid "summary/additional/damage"
+msgstr "У сярэднім: %(value)s"
+
+msgid "summary/additional/destroyed"
+msgstr "Рэкорд: %(value)s"
+
+msgid "summary/additional/experience"
+msgstr "У сярэднім: %(value)s"
+
+msgid "summary/disabled/description"
+msgstr "Рушце да бою, а мы тым часам падрыхтуем вашы даныя."
+
+msgid "summary/disabled/otherPlayer/caption"
+msgstr "Інфармацыя часова недаступная."
+
+msgid "summary/disabled/title"
+msgstr "Інфармацыя з'явіцца пазней"
+
+msgid "summary/main/assistance"
+msgstr ""
+"РЭКОРДНАЯ\n"
+"ПАДМОГА"
+
+msgid "summary/main/battles"
+msgstr ""
+"БАЁЎ\n"
+"ПРАВЕДЗЕНА"
+
+msgid "summary/main/blocked"
+msgstr ""
+"МАКСІМУМ\n"
+"ЗАБЛАКАВАНА"
+
+msgid "summary/main/damage"
+msgstr ""
+"РЭКОРДНЫЯ\n"
+"ПАШКОДЖАННІ"
+
+msgid "summary/main/destroyed"
+msgstr ""
+"МАШЫН\n"
+"ЗНІШЧАНА"
+
+msgid "summary/main/experience"
+msgstr ""
+"РЭКОРДНЫ\n"
+"ДОСВЕД"
+
+msgid "summary/statistic/title"
+msgstr "Рэйтынг гульні «Мир танков»"
+
+msgid "summary/withoutWTR/statistic/title"
+msgstr "Асабісты рэйтынг"
+
+msgid "tooltips/KPI/assistanceBottomDescriptionBase"
+msgstr "Максімальныя пашкоджанні, прычыненыя з вашай дапамогай."
+
+msgid "tooltips/KPI/assistanceBottomDescriptionTank"
+msgstr ""
+"Максімальныя пашкоджанні з вашай дапамогай прычынены ў баі на %(tankName)s."
+
+msgid "tooltips/KPI/assistanceBottomTitle"
+msgstr "Рэкордная падмога: %(count)s"
+
+msgid "tooltips/KPI/assistanceTopDescriptionBase"
+msgstr ""
+"Суадносіны агульнай колькасці пашкоджанняў, прычыненых тэхніцы праціўніка з "
+"вашай дапамогай, да агульнай колькасці праведзеных баёў. Улічваюцца:"
+
+msgid "tooltips/KPI/assistanceTopDescriptionStats"
+msgstr ""
+"• пашкоджанні з вашых разведданых;\n"
+"• пашкоджанні пасля вашага трапляння, якое збіла тракавы пас і знерухоміла цэль."
+
+msgid "tooltips/KPI/assistanceTopTitle"
+msgstr "Сярэдняя падмога: %(count)s"
+
+msgid "tooltips/KPI/battles/description/bottom"
+msgstr "Суадносіны агульнай колькасці перамог да колькасці праведзеных баёў."
+
+msgid "tooltips/KPI/battles/description/top/base"
+msgstr "З іх:"
+
+msgid "tooltips/KPI/battles/description/top/stats"
+msgstr ""
+"• перамог: %(wins)s\n"
+"• паражэнняў: %(loses)s\n"
+"• нічыіх: %(draws)s"
+
+msgid "tooltips/KPI/battles/title/bottom"
+msgstr "Працэнт перамог: %(percent)s"
+
+msgid "tooltips/KPI/battles/title/top"
+msgstr "Баёў праведзена: %(count)s"
+
+msgid "tooltips/KPI/blockedBottomDescriptionBase"
+msgstr "Максімальныя заблакаваныя пашкоджанні."
+
+msgid "tooltips/KPI/blockedBottomDescriptionTank"
+msgstr "Максімальныя пашкоджанні, заблакаваныя ў баі на %(tankName)s."
+
+msgid "tooltips/KPI/blockedBottomTitle"
+msgstr "Максімум заблакавана: %(count)s"
+
+msgid "tooltips/KPI/blockedTopDescription"
+msgstr ""
+"Суадносіны агульнай колькасці заблакаваных бранёй пашкоджанняў пры "
+"непрабіццях і рыкашэтах бранябойнымі, кумулятыўнымі і падкалібернымі "
+"снарадамі да колькасці праведзеных баёў."
+
+msgid "tooltips/KPI/blockedTopTitle"
+msgstr "Сярэднія заблакаваныя пашкоджанні: %(count)s"
+
+msgid "tooltips/KPI/damageBottomDescriptionBase"
+msgstr "Максімальная колькасці прычыненых пашкоджанняў: %(count)s"
+
+msgid "tooltips/KPI/damageBottomDescriptionTank"
+msgstr "Максімальную колькасць пашкоджанняў прычынена ў баі на %(tankName)s."
+
+msgid "tooltips/KPI/damageBottomTitle"
+msgstr "Рэкордныя пашкоджанні: %(count)s"
+
+msgid "tooltips/KPI/damageTopDescription"
+msgstr ""
+"Суадносіны агульнай колькасці прычыненых пашкоджанняў да колькасці "
+"праведзеных баёў."
+
+msgid "tooltips/KPI/damageTopTitle"
+msgstr "Сярэднія пашкоджанні: %(count)s"
+
+msgid "tooltips/KPI/destroyedBottomDescriptionBase"
+msgstr "Максімальная колькасць знішчаных машын."
+
+msgid "tooltips/KPI/destroyedBottomDescriptionTank"
+msgstr ""
+"Максімальную колькасць машын праціўніка знішчана ў баі на %(tankName)s."
+
+msgid "tooltips/KPI/destroyedBottomTitle"
+msgstr "Максімум знішчана: %(count)s"
+
+msgid "tooltips/KPI/destroyedTopDescription"
+msgstr "Агульная колькасць знішчаных машын праціўніка ва ўсіх баях."
+
+msgid "tooltips/KPI/destroyedTopTitle"
+msgstr "Машын знішчана: %(count)s"
+
+msgid "tooltips/KPI/experienceBottomDescriptionBase"
+msgstr "Максімальная колькасць здабытага досведу."
+
+msgid "tooltips/KPI/experienceBottomDescriptionTank"
+msgstr "Максімальную колькасць досведу здабыта ў баі на %(tankName)s."
+
+msgid "tooltips/KPI/experienceBottomTitle"
+msgstr "Рэкордны досвед: %(count)s"
+
+msgid "tooltips/KPI/experienceTopDescription"
+msgstr ""
+"Суадносіны агульнай колькасці здабытага досведу да колькасці праведзеных "
+"баёў."
+
+msgid "tooltips/KPI/experienceTopTitle"
+msgstr "Сярэдні досвед: %(count)s"
+
+msgid "tooltips/WTR/info/caption"
+msgstr ""
+"Перамогі і паражэнні не ўплываюць на разлік вашага рэйтынгу гульні «Мир "
+"танков»."
+
+msgid "tooltips/WTR/info/description/about"
+msgstr ""
+"Гуляйце на розных машынах, каб вызначыць для сябе тэхніку з найвялікшай "
+"эфектыўнасцю паводле паказчыкаў:"
+
+msgid "tooltips/WTR/info/description/main"
+msgstr ""
+"MTR — гэта рэйтынгавая сістэма, якая вылічвае індывідуальны рэйтынг для "
+"кожнай машыны, а затым выкарыстоўвае ачкі канкрэтнай тэхнікі для вызначэння "
+"агульнай эфектыўнасці гульца. Сістэма гнутка рэагуе на змены баявой "
+"стратэгіі і параўноўвае статыстыку гульца з сярэдняй на серверы."
+
+msgid "tooltips/WTR/info/list/text1"
+msgstr "прычыненыя пашкоджанні;"
+
+msgid "tooltips/WTR/info/list/text2"
+msgstr "пашкоджанні, прычыненыя з вашай дапамогай;"
+
+msgid "tooltips/WTR/info/list/text3"
+msgstr "колькасць знішчаных машын праціўніка;"
+
+msgid "tooltips/WTR/info/list/text4"
+msgstr "заблакаваныя пашкоджанні і працэнт выжывальнасці."
+
+msgid "tooltips/WTR/info/title/about"
+msgstr "Пра павышэнне MTR"
+
+msgid "tooltips/WTR/info/title/main"
+msgstr "Рэйтынг гульні «Мир танков»"
+
+msgid "tooltips/WTR/rating/description/base"
+msgstr ""
+"Для разліку рэйтынгу засталося правесці баёў: "
+"%(cream_open)s%(amount)s%(cream_close)s"
+
+msgid "tooltips/WTR/rating/description/currentLevel"
+msgstr "Узровень: %(level)s."
+
+msgid "tooltips/WTR/rating/description/maximum"
+msgstr "Дасягнуты максімум!"
+
+msgid "tooltips/WTR/rating/description/remaining"
+msgstr "Ачкоў да павышэння ўзроўню: %(par_open)s%(point)s%(par_close)s"
+
+msgid "tooltips/WTR/rating/levels/level_1"
+msgstr "Бронза: %(level)s"
+
+msgid "tooltips/WTR/rating/levels/level_2"
+msgstr "Срэбра: %(level)s"
+
+msgid "tooltips/WTR/rating/levels/level_3"
+msgstr "Золата: %(level)s"
+
+msgid "tooltips/WTR/rating/levels/level_4"
+msgstr "Майстар: %(level)s"
+
+msgid "tooltips/WTR/rating/levels/level_5"
+msgstr "Легенда: %(level)s"
+
+msgid "tooltips/WTR/rating/tableHeaders/level"
+msgstr "Узровень"
+
+msgid "tooltips/WTR/rating/tableHeaders/points"
+msgstr "Колькасць ачкоў"
+
+msgid "tooltips/WTR/rating/title"
+msgstr "Рэйтынг гульні «Мир танков»"
+
+msgid "tooltips/autoSetting/caption/isSwitchedOff"
+msgstr ""
+"Пры ўключэнні налады ўсталяваны вамі ўручную парадак узнагарод "
+"%(whiteSpanish_Open)sбудзе скінуты%(whiteSpanish_Close)s."
+
+msgid "tooltips/autoSetting/caption/isSwitchedOn"
+msgstr ""
+"Пры адключэнні або ручной наладзе ўзнагароды на стужцы "
+"%(whiteSpanish_Open)sперастануць%(whiteSpanish_Close)s "
+"%(whiteSpanish_Open)sабнаўляцца%(whiteSpanish_Close)s "
+"%(whiteSpanish_Open)sаўтаматычна%(whiteSpanish_Close)s."
+
+msgid "tooltips/autoSetting/description"
+msgstr ""
+"Аўтаматычны падбор узнагарод паводле іх каштоўнасці %(whiteSpanish_Open)sз "
+"усіх катэгорый%(whiteSpanish_Close)s для для размяшчэння на стужцы значных "
+"узнагарод."
+
+msgid "tooltips/autoSetting/title"
+msgstr "Аўтаналада ўзнагарод"
+
+msgid "tooltips/editingTooltip/disabled"
+msgstr ""
+"Рэдагаванне стужкі значных узнагарод часова недаступнае. Паспрабуйце пазней."
+
+msgid "tooltips/editingTooltip/disabledLayout"
+msgstr ""
+"Вы пакуль не маеце ўзнагарод, якія можна размясціць тут. Атрымайце "
+"іх%(whiteSpanish_Open)s у баі%(whiteSpanish_Close)s або "
+"%(whiteSpanish_Open)sза ўдзел у гульнявых падзеях.%(whiteSpanish_Close)s"
+
+msgid "tooltips/editingTooltip/notEnoughAchievements"
+msgstr ""
+"Рэдагаванне стужкі значных ўзнагарод будзе даступнае пасля атрымання "
+"%(whiteSpanish_Open)s%(amount)s і больш значных "
+"узнагарод%(whiteSpanish_Close)s любых катэгорый."
+
+msgid "tooltips/editingTooltip/otherPlayer"
+msgstr "Няма ўзнагарод, якія можна размясціць тут."
+
+msgid "tooltips/wotprMainTooltip/firstDescription"
+msgstr ""
+"Асабісты рэйтынг — паказчык гульнявых навыкаў і дасведчанасці, пры разліку "
+"якога ўлічваюцца:"
+
+msgid "tooltips/wotprMainTooltip/secondDescription"
+msgstr ""
+"Значэнне асабістага рэйтынгу ўдакладняецца з павелічэннем колькасці "
+"праведзеных баёў."
+
+msgid "tooltips/wotprMainTooltip/significantStats"
+msgstr ""
+"• перамогі;\n"
+"• пашкоджанні, прычыненыя з вашай дапамогай;\n"
+"• сярэднія пашкоджанні за бой;\n"
+"• сярэдні досвед за бой;\n"
+"• выжывальнасць."
+
+msgid "tooltips/wotprMainTooltip/title"
+msgstr "Асабісты рэйтынг"

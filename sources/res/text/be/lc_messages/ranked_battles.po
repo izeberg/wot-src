@@ -1,0 +1,1845 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "alertMessage/allNotAvailable"
+msgstr ""
+"Рэжым спынення агню на ўсіх серверах. Баі пачнуцца праз %(primeDelta)s"
+
+msgid "alertMessage/allNotAvailableEnd"
+msgstr "Сезон %(leftSeasonName)s завершаны"
+
+msgid "alertMessage/allNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/button/changeServer"
+msgstr "Змяніць сервер"
+
+msgid "alertMessage/button/moreInfo"
+msgstr "Падрабязней"
+
+msgid "alertMessage/notAvailable"
+msgstr "Рэжым спынення агню на серверы %(serverName)s"
+
+msgid "alertMessage/notAvailableEnd"
+msgstr "Рэжым спынення агню на серверы %(serverName)s"
+
+msgid "alertMessage/notSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/standaloneNotAvailable"
+msgstr "Рэжым спынення агню на серверы. Баі пачнуцца праз %(primeDelta)s"
+
+msgid "alertMessage/standaloneNotAvailableEnd"
+msgstr "Сезон %(leftSeasonName)s завершаны"
+
+msgid "alertMessage/standaloneNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "alertMessage/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "alertMessage/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "alertMessage/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "alertMessage/undefined"
+msgstr "?empty?"
+
+msgid "alertMessage/unsuitableVehicles"
+msgstr "У Гаражы няма прыдатнай тэхнікі %(levels)s узроўню"
+
+msgid "awards/bonusBattles/efficiency"
+msgstr "Стандартных, за эфектыўнасць у завершаным этапе: %(amount)s"
+
+msgid "awards/bonusBattles/header"
+msgstr "Налічана прызавых баёў:"
+
+msgid "awards/bonusBattles/label"
+msgstr "Налічаны прызавыя баі: %(count)s"
+
+msgid "awards/bonusBattles/steps/daily"
+msgstr ""
+" \n"
+"Штодзённых, за колькасць шаўронаў у кваліфікацыі: %(amount)s"
+
+msgid "awards/bonusBattles/steps/persistent"
+msgstr ""
+" \n"
+"Стандартных, за колькасць шаўронаў у кваліфікацыі: %(amount)s"
+
+msgid "awards/congratulation"
+msgstr "Віншуем!"
+
+msgid "awards/gotDivision"
+msgstr "Вы перайшлі ў наступны дывізіён"
+
+msgid "awards/gotLeague"
+msgstr "Вы прайшлі рангавы сезон"
+
+msgid "awards/gotQualification"
+msgstr "Вы прайшлі кваліфікацыю і перайшлі ў трэці дывізіён."
+
+msgid "awards/gotQualificationQuest"
+msgstr "Вы атрымалі ўзнагароду за кваліфікацыю. Праведзена баёў: %(count)s"
+
+msgid "awards/gotRank"
+msgstr "Новы ранг атрыманы"
+
+msgid "awards/yes"
+msgstr "Так!"
+
+msgid "battleResult/losers"
+msgstr "Пераможаныя"
+
+msgid "battleResult/rank/lose"
+msgstr "Страта рангу"
+
+msgid "battleResult/rank/progress/lose"
+msgstr "Страта шаўрона"
+
+msgid "battleResult/rank/progress/up"
+msgstr "Атрыманне шаўрона"
+
+msgid "battleResult/rank/unchanged"
+msgstr "Шаўрон захаваны"
+
+msgid "battleResult/rank/up"
+msgstr "Атрыманне рангу"
+
+msgid "battleResult/winners"
+msgstr "Пераможцы"
+
+msgid "battleResult/yes"
+msgstr "Так!"
+
+msgid "battleresult/bonusBattlesEarned"
+msgstr ""
+" \n"
+"\n"
+"Налічана прызавых баёў:"
+
+msgid "battleresult/bonusBattlesEarned/efficiency"
+msgstr ""
+" \n"
+"Стандартных, за эфектыўнасць у завершаным этапе: %(amount)s"
+
+msgid "battleresult/bonusBattlesEarned/steps/daily"
+msgstr ""
+" \n"
+"Штодзённых, за колькасць шаўронаў у кваліфікацыі: %(amount)s"
+
+msgid "battleresult/bonusBattlesEarned/steps/persistent"
+msgstr ""
+" \n"
+"Стандартных, за колькасць шаўронаў у кваліфікацыі: %(amount)s"
+
+msgid "battleresult/bonusBattlesUsed"
+msgstr ". Колькасць атрыманых шаўронаў падвоена за перамогу ў Прызавым баі."
+
+msgid "battleresult/divisionEarned"
+msgstr ""
+"Новы\n"
+"дывізіён"
+
+msgid "battleresult/first/inTop/lose"
+msgstr ""
+"Вы занялі першае месца сярод гульцоў пераможанай каманды паводле колькасці "
+"здабытага досведу"
+
+msgid "battleresult/first/inTop/win"
+msgstr ""
+"Вы занялі першае месца сярод гульцоў каманды-пераможцы паводле колькасці "
+"здабытага досведу"
+
+msgid "battleresult/first/notInTop/lose"
+msgstr ""
+"Вы не занялі першага месца сярод гульцоў пераможанай каманды паводле "
+"колькасці здабытага досведу"
+
+msgid "battleresult/first/notInTop/win"
+msgstr ""
+"Вы не занялі першага месца сярод гульцоў каманды-пераможцы паводле колькасці"
+" здабытага досведу"
+
+msgid "battleresult/headerText"
+msgstr "Вынікі бою"
+
+msgid "battleresult/inTop/lose"
+msgstr ""
+"Вы трапілі ў %(topNumber)s найлепшых гульцоў пераможанай каманды паводле "
+"колькасці здабытага досведу"
+
+msgid "battleresult/inTop/win"
+msgstr ""
+"Вы трапілі ў %(topNumber)s найлепшых гульцоў каманды-пераможцы паводле "
+"колькасці здабытага досведу"
+
+msgid "battleresult/leagueEarned"
+msgstr ""
+"Вы прайшлі\n"
+"рангавы сезон"
+
+msgid "battleresult/leagueUnavailable"
+msgstr ""
+"Сваю лігу вы даведаецеся пасля разліку рэйтынга.\n"
+" "
+
+msgid "battleresult/notInTop/lose"
+msgstr ""
+"Вы не трапілі ў %(topNumber)s найлепшых гульцоў пераможанай каманды паводле "
+"колькасці здабытага досведу"
+
+msgid "battleresult/notInTop/minXP"
+msgstr "Вы не набралі мінімальнай колькасці досведу"
+
+msgid "battleresult/notInTop/stageSaved"
+msgstr "На гэтым этапе вы засцярожаны ад страты шаўронаў"
+
+msgid "battleresult/notInTop/win"
+msgstr ""
+"Вы не трапілі ў %(topNumber)s найлепшых гульцоў каманды-пераможцы паводле "
+"колькасці здабытага досведу"
+
+msgid "battleresult/rankEarned"
+msgstr ""
+"Ранг\n"
+"атрыманы"
+
+msgid "battleresult/rankLost"
+msgstr ""
+"Ранг\n"
+"страчаны"
+
+msgid "battleresult/rankUnburnable"
+msgstr ""
+"Без\n"
+"змен"
+
+msgid "battleresult/shieldLose"
+msgstr ""
+"Шчыт рангу\n"
+"разбіўся"
+
+msgid "battleresult/shieldLoseStep"
+msgstr ""
+"Шчыт рангу\n"
+"аслабеў"
+
+msgid "battleresult/stageEarned"
+msgstr ""
+"Шаўрон\n"
+"атрыманы"
+
+msgid "battleresult/stageLost"
+msgstr ""
+"Шаўрон\n"
+"страчаны"
+
+msgid "battleresult/stageNotEarned"
+msgstr ""
+"Шаўрон\n"
+"захаваны"
+
+msgid "battleresult/stageSaved"
+msgstr ""
+"Шаўрон\n"
+"захаваны"
+
+msgid "battleresult/stagesEarned"
+msgstr ""
+"Шаўроны\n"
+"атрыманы"
+
+msgid "battleresult/status/rankEarned"
+msgstr "Ранг вернуты"
+
+msgid "battleresult/status/rankLost"
+msgstr "Ранг страчаны"
+
+msgid "battleresult/status/rankUnburnable"
+msgstr "Без змен"
+
+msgid "battleresult/status/shieldCount"
+msgstr ""
+" \n"
+"Засталося адзінак трываласці: %(count)s"
+
+msgid "battleresult/status/shieldLose"
+msgstr "Шчыт рангу разбіўся!"
+
+msgid "battleresult/status/shieldLoseStep"
+msgstr "Шчыт рангу аслабеў!"
+
+msgid "battleresult/status/shieldRenew"
+msgstr ""
+" \n"
+"Шчыт рангу аднавіўся"
+
+msgid "battleresult/status/shieldWarning"
+msgstr ""
+" \n"
+"Пацярпеўшы яшчэ адно паражэнне, вы можаце страціць ранг."
+
+msgid "battleresult/status/stageEarned"
+msgstr "Шаўрон атрыманы"
+
+msgid "battleresult/status/stageLost"
+msgstr "Шаўрон страчаны"
+
+msgid "battleresult/status/stageNotEarned"
+msgstr "Шаўрон захаваны"
+
+msgid "battleresult/status/stageSaved"
+msgstr "Шаўрон захаваны"
+
+msgid "battleresult/status/stagesEarned"
+msgstr "Шаўроны атрыманы"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s – %(end)s"
+
+msgid "calendarDay/timeLeft"
+msgstr "Сезон %(seasonName)s працягнецца %(days)s дзён"
+
+msgid "calendarDay/title"
+msgstr "Расклад"
+
+msgid "calendarStepsTooltip/title"
+msgstr "Расклад этапаў"
+
+msgid "currentVehicleStatus/unsuitableToQueue"
+msgstr "Не пасуе да рэжыму"
+
+msgid "division/bronze"
+msgstr "Трэці дывізіён"
+
+msgid "division/classification"
+msgstr "Кваліфікацыя"
+
+msgid "division/gold"
+msgstr "Першы дывізіён"
+
+msgid "division/silver"
+msgstr "Другі дывізіён"
+
+msgid "division/status/completed"
+msgstr "Дывізіён пройдзены"
+
+msgid "division/status/completed/description"
+msgstr "Вы паспяхова прайшлі выбраны дывізіён."
+
+msgid "division/status/locked"
+msgstr "Дывізіён недаступны"
+
+msgid "division/status/locked/description"
+msgstr "Папярэдні дывізіён яшчэ не пройдзены."
+
+msgid "division/status/qualification"
+msgstr "Праведзена баёў: %(progress)s"
+
+msgid "division/status/qualification/progress"
+msgstr "%(current)s / %(total)s"
+
+msgid "division/status/qualificationDescr/complete"
+msgstr "Кваліфікацыя пройдзена"
+
+msgid "division/status/qualificationDescr/progress"
+msgstr ""
+"Для праходжання кваліфікацыі правядзіце %(battlesTotal)s баёў.\n"
+"Пры праходжанні кваліфікацыі вы атрымаеце ўзнагароды за правядзенне %(battlesList)s баёў."
+
+msgid "division/subtitle"
+msgstr "Баі на тэхніцы %(vehicleLevel)s узроўню"
+
+msgid "division/tooltip/battlesDescription"
+msgstr "Складаецца з %(battlesCount)s баёў"
+
+msgid "division/tooltip/desc/completed/text"
+msgstr "Усе рангі гэтага дывізіёна атрыманы."
+
+msgid "division/tooltip/desc/completedFinal/text"
+msgstr "Усе рангі гэтага дывізіёна атрыманы, фінальная ўзнагарода атрымана."
+
+msgid "division/tooltip/desc/completedQual/text"
+msgstr "Неабходная колькасць кваліфікацыйных баёў праведзена."
+
+msgid "division/tooltip/desc/current/text"
+msgstr "Пасля праходжання вы пяройдзеце ў наступны дывізіён."
+
+msgid "division/tooltip/desc/currentFinal/text"
+msgstr "Прайшоўшы гэты дывізіён, вы забераце фінальную ўзнагароду."
+
+msgid "division/tooltip/desc/currentQual/text"
+msgstr ""
+"Пры праходжанні кваліфікацыі вы атрымаеце ўзнагароды за правядзенне %(battles)s баёў.\n"
+"Пасля праходжання кваліфікацыі вы пяройдзеце ў трэці дывізіён."
+
+msgid "division/tooltip/desc/locked/text"
+msgstr "Пасля праходжання вы пяройдзеце ў наступны дывізіён."
+
+msgid "division/tooltip/desc/lockedFinal/text"
+msgstr "Прайшоўшы гэты дывізіён, вы забераце фінальную ўзнагароду."
+
+msgid "division/tooltip/desc/title"
+msgstr "Апісанне:"
+
+msgid "division/tooltip/rankDescription"
+msgstr "Складаецца з %(ranksCount)s рангаў"
+
+msgid "division/tooltip/status/completed"
+msgstr "Дывізіён пройдзены"
+
+msgid "division/tooltip/status/completedQual"
+msgstr "Пройдзена"
+
+msgid "division/tooltip/status/current"
+msgstr "Дывізіён яшчэ не пройдзены"
+
+msgid "division/tooltip/status/currentQual"
+msgstr "Не пройдзена"
+
+msgid "division/tooltip/status/locked"
+msgstr "Дывізіён яшчэ не дасягнуты"
+
+msgid "division/tooltip/status/locked/desc"
+msgstr "Спярша прайдзіце папярэдні дывізіён."
+
+msgid "entryPoint/frozen/thin"
+msgstr "Часова адключаны"
+
+msgid "entryPoint/frozen/wide"
+msgstr "Рэжым часова адключаны"
+
+msgid "entryPoint/season/end"
+msgstr "Баі завершаны"
+
+msgid "entryPoint/season/lasts"
+msgstr "Да %(day)s %(month)s"
+
+msgid "entryPoint/season/starts"
+msgstr "З %(day)s %(month)s"
+
+msgid "entryPoint/title"
+msgstr "РАНГАВЫ БОЙ"
+
+msgid "introPage/alert/beforeSeason"
+msgstr "Да пачатку падзеі:"
+
+msgid "introPage/alert/disabled"
+msgstr "Рэжым часова недаступны. Зайдзіце пазней."
+
+msgid "introPage/blocks/block1/description"
+msgstr ""
+"Ваша задача — прайсці 3 дывізіёны, у кожным з якіх неабходна атрымаць 5 "
+"рангаў."
+
+msgid "introPage/blocks/block1/title"
+msgstr "Рангавая кар'ера"
+
+msgid "introPage/blocks/block2/description"
+msgstr ""
+"Баі праходзяць толькі на тэхніцы V узроўню і паводле правіл Звычайнага бою. "
+"Фармат — 10х10 гульцоў. Працягласць бою — 10 хвілін."
+
+msgid "introPage/blocks/block2/title"
+msgstr "Тэхніка V узроўню"
+
+msgid "introPage/blocks/block3/description"
+msgstr ""
+"За кожны новы ранг вам належыць годная ўзнагарода. Пасля здабыцця ўсіх "
+"рангаў вы будзеце ўзнагароджаны ўдасканаленым абсталяваннем на выбар."
+
+msgid "introPage/blocks/block3/title"
+msgstr "Унікальныя ўзнагароды"
+
+msgid "introPage/blocks/yearRewardDisabled"
+msgstr ""
+"За кожны новы ранг вам належыць годная ўзнагарода. Пасля здабыцця ўсіх "
+"рангаў вы будзеце ўзнагароджаны ўдасканаленым абсталяваннем на выбар."
+
+msgid "introPage/btns/accept"
+msgstr "Так!"
+
+msgid "introPage/btns/detailed"
+msgstr "Падрабязней пра рэжым"
+
+msgid "introPage/btns/toHangar"
+msgstr "У Гараж"
+
+msgid "introPage/description"
+msgstr ""
+"Баі 10х10, V узровень тэхнікі, 3 дывізіёны на шляху да фінальнай узнагароды."
+
+msgid "introPage/timeLeft/days"
+msgstr "%(day)s сут %(hour)s гадз"
+
+msgid "introPage/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "introPage/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "introPage/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "notification/rankEarned"
+msgstr "ранг атрыманы"
+
+msgid "notification/rankLost"
+msgstr "ранг страчаны"
+
+msgid "notification/rankedMessage"
+msgstr ""
+"Віншуем!\n"
+"Вы заслужылі %(rankRoman)s ранг\n"
+"Атрымана крэдытаў: %(creditsCount)s\n"
+"Дададзена ачкоў: %(expCount)s\n"
+"Налічана: %(medalsCount)s"
+
+msgid "notification/stageEarned"
+msgstr "шаўрон атрыманы"
+
+msgid "notification/stageLost"
+msgstr "шаўрон страчаны"
+
+msgid "notification/stageNotEarned"
+msgstr "шаўрон захаваны"
+
+msgid "notification/vehicleRankEarned"
+msgstr "ранг машыны атрыманы"
+
+msgid "notification/vehicleRankLost"
+msgstr "ранг машыны страчаны"
+
+msgid "primeTimes/serverTooltip/allNotAvailable"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя праз %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/allNotAvailableEnd"
+msgstr ""
+"Сервер %(serverName)s\n"
+"%(leftSeasonName)s сезон завяршыўся."
+
+msgid "primeTimes/serverTooltip/available"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя яшчэ %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/notAvailable"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя праз %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/notAvailableEnd"
+msgstr ""
+"Сервер %(serverName)s\n"
+"%(leftSeasonName)s сезон завяршыўся."
+
+msgid "primeTimes/serverTooltip/standaloneNotAvailable"
+msgstr ""
+"Сервер %(serverName)s\n"
+"Баі будуць даступныя праз %(primeDelta)s"
+
+msgid "primeTimes/serverTooltip/standaloneNotAvailableEnd"
+msgstr ""
+"Сервер %(serverName)s\n"
+"%(leftSeasonName)s сезон завяршыўся."
+
+msgid "primeTimes/serverTooltip/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "primeTimes/serverTooltip/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "primeTimes/serverTooltip/timeLeft/lessMin"
+msgstr "хвіліну"
+
+msgid "primeTimes/serverTooltip/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "primeTimes/serverTooltip/undefined"
+msgstr "?empty?"
+
+msgid "primeTimes/statusText/allNotAvailable"
+msgstr "Рэжым спынення агню на ўсіх серверах"
+
+msgid "primeTimes/statusText/allNotAvailableEnd"
+msgstr "%(leftSeasonName)s сезон на серверы %(serverName)s завяршыўся."
+
+msgid "primeTimes/statusText/notAvailable"
+msgstr ""
+"Рэжым спынення агню да %(primeDeltaDate)s%(primeDeltaTime)s на "
+"серверы%(serverName)s"
+
+msgid "primeTimes/statusText/notAvailableEnd"
+msgstr "%(leftSeasonName)s сезон на серверы %(serverName)s завяршыўся."
+
+msgid "primeTimes/statusText/notSet"
+msgstr "Рэжым на серверы %(serverName)s недаступны"
+
+msgid "primeTimes/statusText/standaloneNotAvailable"
+msgstr ""
+"Рэжым спынення агню да %(primeDeltaDate)s%(primeDeltaTime)s на "
+"серверы%(serverName)s"
+
+msgid "primeTimes/statusText/standaloneNotAvailableEnd"
+msgstr "%(leftSeasonName)s сезон на серверы %(serverName)s завяршыўся."
+
+msgid "primeTimes/statusText/standaloneNotSet"
+msgstr "Рэжым на серверы %(serverName)s недаступны"
+
+msgid "primeTimes/statusText/undefined"
+msgstr "?empty?"
+
+msgid "primeTimes/timeText/allNotAvailable"
+msgstr "Баі на %(serverName)s пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/timeText/allNotAvailableEnd"
+msgstr "%(leftSeasonName)s сезон на серверы %(serverName)s завяршыўся."
+
+msgid "primeTimes/timeText/available"
+msgstr "Баі на %(serverName)s будуць даступныя яшчэ %(primeDelta)s"
+
+msgid "primeTimes/timeText/notAvailable"
+msgstr "Баі на %(serverName)s пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/timeText/notAvailableEnd"
+msgstr "%(leftSeasonName)s сезон на серверы %(serverName)s завяршыўся."
+
+msgid "primeTimes/timeText/standaloneNotAvailable"
+msgstr "Баі на %(serverName)s пачнуцца праз %(primeDelta)s"
+
+msgid "primeTimes/timeText/standaloneNotAvailableEnd"
+msgstr "%(leftSeasonName)s сезон на серверы %(serverName)s завяршыўся."
+
+msgid "primeTimes/timeText/undefined"
+msgstr "?empty?"
+
+msgid "progression/stats/divisionEfficiency"
+msgstr "Эфектыўнасць у дывізіёне"
+
+msgid "progression/stats/seasonEfficiency"
+msgstr "Агульная эфектыўнасць"
+
+msgid "progression/stats/totalBattles"
+msgstr "Баёў усяго"
+
+msgid "progression/stats/totalStages"
+msgstr "Шаўронаў усяго"
+
+msgid "qualificationRewards/battlesNeeded"
+msgstr "Для праходжання кваліфікацыі правядзіце %(battlesCount)s баёў."
+
+msgid "qualificationRewards/battlesPlayed"
+msgstr "Праведзена баёў:"
+
+msgid "qualificationRewards/description"
+msgstr ""
+"Узнагароды за праходжанне кваліфікацыі налічваюцца адзін раз пасля "
+"завяршэння апошняга кваліфікацыйнага бою."
+
+msgid "quests/detailed/allServersPrime"
+msgstr "рэжым спынення агню"
+
+msgid "quests/detailed/notInLeagues"
+msgstr "Спачатку дайдзіце да ліг"
+
+msgid "quests/detailed/seasonEnd/days"
+msgstr "да канца сезона %(day)s сут"
+
+msgid "quests/detailed/seasonEnd/default"
+msgstr "сезон хутка скончыцца"
+
+msgid "quests/detailed/seasonEnd/hours"
+msgstr "да канца сезона %(hour)s гадз"
+
+msgid "quests/detailed/seasonEnd/lessMin"
+msgstr "да канца сезона менш за хвіліну"
+
+msgid "quests/detailed/seasonEnd/min"
+msgstr "да канца сезона %(min)s хв"
+
+msgid "quests/detailed/unavailableLabel"
+msgstr "Недаступна:"
+
+msgid "quests/tooltip/unavailable/body/allServersPrime"
+msgstr ""
+"Задачы можна будзе выканаць пасля завяршэння рэжыму спынення агню ў Рангавых"
+" баях."
+
+msgid "quests/tooltip/unavailable/body/notInLeagues"
+msgstr "Спачатку дайдзіце да ліг"
+
+msgid "quests/tooltip/unavailable/body/seasonEnd/days"
+msgstr "Да канца сезона %(day)s сут"
+
+msgid "quests/tooltip/unavailable/body/seasonEnd/default"
+msgstr "Сезон хутка скончыцца"
+
+msgid "quests/tooltip/unavailable/body/seasonEnd/hours"
+msgstr "Да канца сезона %(hour)s гадз"
+
+msgid "quests/tooltip/unavailable/body/seasonEnd/lessMin"
+msgstr "Да канца сезона менш за хвіліну"
+
+msgid "quests/tooltip/unavailable/body/seasonEnd/min"
+msgstr "Да канца сезона %(min)s хв"
+
+msgid "quests/tooltip/unavailable/bottom"
+msgstr "Выкананне недаступнае"
+
+msgid "quests/tooltip/unavailable/header/allServersPrime"
+msgstr "Рэжым спынення агню"
+
+msgid "quests/tooltip/unavailable/header/notInLeagues"
+msgstr "Не ў лігах"
+
+msgid "quests/tooltip/unavailable/header/seasonEnd"
+msgstr "Завяршэнне сезона"
+
+msgid "questsTooltip/available"
+msgstr "Да канца сезона %(timeDelta)s"
+
+msgid "questsTooltip/available/days"
+msgstr "%(day)s сут"
+
+msgid "questsTooltip/available/hours"
+msgstr "%(hour)s гадз"
+
+msgid "questsTooltip/available/lessMin"
+msgstr "менш за хвіліну"
+
+msgid "questsTooltip/available/min"
+msgstr "%(min)s хв"
+
+msgid "questsTooltip/bottom"
+msgstr "Яшчэ задач: %(number)d"
+
+msgid "questsTooltip/cooldown/days"
+msgstr "Новыя задачы з'явяцца праз %(day)s сут"
+
+msgid "questsTooltip/cooldown/hours"
+msgstr "Новыя задачы з'явяцца праз %(hour)s гадз"
+
+msgid "questsTooltip/cooldown/lessMin"
+msgstr "Новыя задачы з'явяцца праз хвіліну"
+
+msgid "questsTooltip/cooldown/min"
+msgstr "Новыя задачы з'явяцца праз %(min)s хв"
+
+msgid "questsTooltip/header"
+msgstr "Задачы Рангавых баёў"
+
+msgid "questsTooltip/unavailable/allServersPrime"
+msgstr "Недаступна: рэжым спынення агню"
+
+msgid "questsTooltip/unavailable/notInLeagues"
+msgstr "Недаступна: спярша дайдзіце да ліг"
+
+msgid "questsTooltip/unavailable/seasonEnd/days"
+msgstr "Недаступна: до канца сезона %(day)s сут"
+
+msgid "questsTooltip/unavailable/seasonEnd/hours"
+msgstr "Недаступна: до канца сезона %(hour)s гадз"
+
+msgid "questsTooltip/unavailable/seasonEnd/lessMin"
+msgstr "Недаступна: до канца сезона менш за хвіліну"
+
+msgid "questsTooltip/unavailable/seasonEnd/min"
+msgstr "Недаступна: до канца сезона %(min)s хв"
+
+msgid "rankedAwards/awardsBlock/awardsHeaderTxt"
+msgstr "Узнагарода за дасягнутыя рангі"
+
+msgid "rankedAwards/awardsBlock/crystal"
+msgstr "Бонаў"
+
+msgid "rankedAwards/awardsBlock/description"
+msgstr "Ваш найвышэйшы ранг"
+
+msgid "rankedAwards/awardsBlock/points"
+msgstr "Ачкоў"
+
+msgid "rankedAwards/awardsBlock/title"
+msgstr "Дасягненні этапу %(cycleNumber)s"
+
+msgid "rankedBattle/title"
+msgstr "РАНГАВЫЯ БАІ"
+
+msgid "rankedBattleCyclesView/tabs/final"
+msgstr "Фінальныя"
+
+msgid "rankedBattleCyclesView/tabs/ranks"
+msgstr "За ранг"
+
+msgid "rankedBattleCyclesView/title"
+msgstr "Узнагароды сезона"
+
+msgid "rankedBattleHeader/points/current"
+msgstr "Ідзе зараз"
+
+msgid "rankedBattleHeader/points/final"
+msgstr "Усяго ачкоў: %(points)s"
+
+msgid "rankedBattleHeader/points/past"
+msgstr "Ачкі: %(points)s"
+
+msgid "rankedBattleHeader/tooltip/cycle/current/body"
+msgstr "Бягучы этап завяршыцца %(date)s"
+
+msgid "rankedBattleHeader/tooltip/cycle/current/header"
+msgstr "Этап %(cycle)d"
+
+msgid "rankedBattleHeader/tooltip/cycle/final/body"
+msgstr ""
+"У фінале падсумоўваюцца ачкі за ўсе папярэднія этапы і даюцца ўзнагароды.\n"
+"Фінал сезона — %(date)s"
+
+msgid "rankedBattleHeader/tooltip/cycle/final/header"
+msgstr "Фінал сезона"
+
+msgid "rankedBattleHeader/tooltip/cycle/future/body"
+msgstr "Этап пачнецца %(date)s"
+
+msgid "rankedBattleHeader/tooltip/cycle/future/header"
+msgstr "Этап %(cycle)d"
+
+msgid "rankedBattleHeader/tooltip/cycle/past/body"
+msgstr "Набрана ачкоў: %(points)s"
+
+msgid "rankedBattleHeader/tooltip/cycle/past/header"
+msgstr "Этап %(cycle)d завяршыўся"
+
+msgid "rankedBattleHeader/tooltip/date"
+msgstr "%d.%m.%y"
+
+msgid "rankedBattleMainView/bonusBattles"
+msgstr "Прызавыя баі: %(battlesCount)s"
+
+msgid "rankedBattleMainView/btnRewardsUnavailable"
+msgstr ""
+"Часова недаступна з тэхнічных прычын. Мы ўжо займаемся вырашэннем праблемы."
+
+msgid "rankedBattleMainView/date/days"
+msgstr "Да завяршэння %(day)s сут"
+
+msgid "rankedBattleMainView/date/hours"
+msgstr "Да завяршэння %(hour)s гадз"
+
+msgid "rankedBattleMainView/date/lessMin"
+msgstr "Да завяршэння застаецца менш за хвіліну"
+
+msgid "rankedBattleMainView/date/min"
+msgstr "Да завяршэння %(min)s хв"
+
+msgid "rankedBattleMainView/date/period"
+msgstr "%(start)s — %(finish)s"
+
+msgid "rankedBattleMainView/divisions/currentRank"
+msgstr "Ваш ранг"
+
+msgid "rankedBattleMainView/divisions/rank"
+msgstr "Ранг %(rank)s"
+
+msgid "rankedBattleMainView/divisions/takeRank"
+msgstr "Заслужыце шаўроны, каб атрымаць першы ранг"
+
+msgid "rankedBattleMainView/emptyBubble"
+msgstr " "
+
+msgid "rankedBattleMainView/infoPage/header"
+msgstr ""
+"Баі 10х10, V узровень тэхнікі, 3 дывізіёны на шляху да фінальнай узнагароды."
+
+msgid "rankedBattleMainView/leaguesView/descr"
+msgstr "Вы можаце надалей гуляць у рэжыме."
+
+msgid "rankedBattleMainView/leaguesView/league1"
+msgstr "Залатая ліга"
+
+msgid "rankedBattleMainView/leaguesView/league2"
+msgstr "Срэбная ліга"
+
+msgid "rankedBattleMainView/leaguesView/league3"
+msgstr "Бронзавая ліга"
+
+msgid "rankedBattleMainView/leaguesView/top"
+msgstr "ТОП-%(count)d"
+
+msgid "rankedBattleMainView/leaguesView/topDescr"
+msgstr "Вы можаце надалей гуляць у рэжыме."
+
+msgid "rankedBattleMainView/leaguesView/unavailableDescr"
+msgstr "Вы можаце надалей гуляць у рэжыме."
+
+msgid "rankedBattleMainView/leaguesView/unavailableTitle"
+msgstr "Усе дывізіёны пройдзены. Усе ўзнагароды атрыманы."
+
+msgid "rankedBattleMainView/leaguesView/yearLeaderboardDisabled"
+msgstr "Вы можаце надалей гуляць у рэжыме."
+
+msgid "rankedBattleMainView/season"
+msgstr "Сезон %(season)s"
+
+msgid "rankedBattleMainView/seasonComplete"
+msgstr "Сезон %(season)s завяршыўся"
+
+msgid "rankedBattleMainView/seasonCompleteSingle"
+msgstr "Сезон %(season)s завяршыўся."
+
+msgid "rankedBattleMainView/seasonGap"
+msgstr "Сезон %(newSeason)s пачнецца %(date)s"
+
+msgid "rankedBattleMainView/seasonGap/bannedDivision/descr"
+msgstr "Атрыманыя ў сезоне жэтоны спісаны за парушэнне Правілаў гульні."
+
+msgid "rankedBattleMainView/seasonGap/bannedLeague/descr"
+msgstr ""
+"Вас выключылі са спіса лідараў сезона за парушэнне Правілаў гульні. "
+"Атрыманыя ў сезоне жэтоны спісаны."
+
+msgid "rankedBattleMainView/seasonGap/bannedLeague/withoutPoints/descr"
+msgstr "Вас выключылі са спіса лідараў сезона за парушэнне Правілаў гульні."
+
+msgid "rankedBattleMainView/seasonGap/bannedNotInDivisions/descr"
+msgstr "Рангавы жэтон быў спісаны за парушэнне Правілаў гульні"
+
+msgid "rankedBattleMainView/seasonGap/bannedNotInSeason/descr"
+msgstr "Атрыманыя ў сезоне жэтоны спісаны за парушэнне Правілаў гульні."
+
+msgid "rankedBattleMainView/seasonGap/division/descr"
+msgstr "Найвышэйшы заслужаны вамі ранг у сезоне"
+
+msgid "rankedBattleMainView/seasonGap/division/ratingBtn"
+msgstr "Лідары сезона"
+
+msgid "rankedBattleMainView/seasonGap/division/title"
+msgstr "%(rank)s ранг (%(division)s)"
+
+msgid "rankedBattleMainView/seasonGap/league/descr"
+msgstr "Віншуем з паспяховым завяршэннем сезона!"
+
+msgid "rankedBattleMainView/seasonGap/league/ratingBtn"
+msgstr "Паказаць у табліцы"
+
+msgid "rankedBattleMainView/seasonGap/league1"
+msgstr "Залатая ліга"
+
+msgid "rankedBattleMainView/seasonGap/league2"
+msgstr "Срэбная ліга"
+
+msgid "rankedBattleMainView/seasonGap/league3"
+msgstr "Бронзавая ліга"
+
+msgid "rankedBattleMainView/seasonGap/notInDivisions/descr"
+msgstr "Ваш найвышэйшы вынік у сезоне"
+
+msgid "rankedBattleMainView/seasonGap/notInDivisions/title"
+msgstr "Вы прайшлі кваліфікацыю"
+
+msgid "rankedBattleMainView/seasonGap/notInSeason/descr"
+msgstr "Вы не здабылі ніводнага рангу ў сезоне, які завяршыўся"
+
+msgid "rankedBattleMainView/seasonGap/notInSeason/title"
+msgstr "Няма рангаў"
+
+msgid "rankedBattleMainView/seasonGap/rolledDivision/descr"
+msgstr ""
+"Вы былі выключаны са спісу лідараў сезона пасля працэдуры аднаўлення "
+"акаўнту."
+
+msgid "rankedBattleMainView/seasonGap/rolledLeague/descr"
+msgstr ""
+"Вы былі выключаны са спісу лідараў сезона пасля працэдуры аднаўлення "
+"акаўнту."
+
+msgid "rankedBattleMainView/seasonGap/rolledNotInDivisions/descr"
+msgstr ""
+"Вы былі выключаны са спісу лідараў сезона пасля працэдуры аднаўлення "
+"акаўнту."
+
+msgid "rankedBattleMainView/seasonGap/rolledNotInSeason/descr"
+msgstr ""
+"Вы былі выключаны са спісу лідараў сезона пасля працэдуры аднаўлення "
+"акаўнту."
+
+msgid "rankedBattleMainView/seasonGap/stats/efficiency"
+msgstr "Эфектыўнасць"
+
+msgid "rankedBattleMainView/seasonGap/stats/outOfRating"
+msgstr "Па-за рэйтынгам"
+
+msgid "rankedBattleMainView/seasonGap/waitingLeague/descr"
+msgstr ""
+"Па завяршэнні падлікаў вы даведаецеся свае фінальныя вынікі сезона і "
+"атрымаеце заслужаную ўзнагароду"
+
+msgid "rankedBattleMainView/seasonGap/waitingLeague/title"
+msgstr "Ідзе падлік вынікаў"
+
+msgid "rankedBattleMainView/specialSeason"
+msgstr "V"
+
+msgid "rankedBattleMainView/stats/battlesInLeague"
+msgstr "Баёў у лігах"
+
+msgid "rankedBattleMainView/stats/battlesTotal"
+msgstr "Баёў усяго"
+
+msgid "rankedBattleMainView/stats/divisionEfficiency"
+msgstr "Эфектыўнасць у дывізіёне"
+
+msgid "rankedBattleMainView/stats/qualificationEfficiency"
+msgstr ""
+"Эфектыўнасць\n"
+"у кваліфікацыі"
+
+msgid "rankedBattleMainView/stats/qualificationSteps"
+msgstr ""
+"Шаўронаў\n"
+"у кваліфікацыі"
+
+msgid "rankedBattleMainView/stats/rating/title"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "rankedBattleMainView/stats/rating/tooltip"
+msgstr ""
+"Абнаўленне рэйтынга адбываецца кожныя %(minutes)s хвілін. Апошняе "
+"абнаўленне: %(time)s"
+
+msgid "rankedBattleMainView/stats/rating/unavailableTooltip"
+msgstr "Рэйтынг часова не абнаўляецца з тэхнічных прычын."
+
+msgid "rankedBattleMainView/stats/seasonEfficiency"
+msgstr "Агульная эфектыўнасць"
+
+msgid "rankedBattleMainView/stats/stripesInLeague"
+msgstr "Шаўронаў у лігах"
+
+msgid "rankedBattleMainView/stats/stripesTotal"
+msgstr "Шаўронаў усяго"
+
+msgid "rankedBattleMainView/takeReward"
+msgstr "Забраць узнагароду"
+
+msgid "rankedBattleMainView/yearGap/header"
+msgstr "Вашы вынікі за 2021–2022 г."
+
+msgid "rankedBattlePage/aboutBtn"
+msgstr "ПРА РЭЖЫМ"
+
+msgid "rankedBattlePage/closeBtn"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rankedBattleView/awardBlock/emptyLeague"
+msgstr "—"
+
+msgid "rankedBattleView/awardBlock/points/currLeagueHeader"
+msgstr "Бягучая ліга"
+
+msgid "rankedBattleView/awardBlock/points/header"
+msgstr "Лідары сезона"
+
+msgid "rankedBattleView/awardBlock/points/noLeagueHeader"
+msgstr "Па-за рэйтынгам"
+
+msgid "rankedBattleView/awardBlock/points/noPriseHeader"
+msgstr "Непрызавая ліга"
+
+msgid "rankedBattleView/awardBlock/points/totalLabel"
+msgstr "Усяго ачкоў: "
+
+msgid "rankedBattleView/awardBlock/pointsAlt/description"
+msgstr "Націсніце, каб перайсці да спіса лідараў сезона"
+
+msgid "rankedBattleView/awardBlock/quest/description/battlesLeft"
+msgstr "Адваяваць эфектыўных баёў:"
+
+msgid "rankedBattleView/awardBlock/quest/description/noQuest"
+msgstr "Няма бягучых баявых задач"
+
+msgid "rankedBattleView/awardBlock/quest/header"
+msgstr "Баявая задача"
+
+msgid "rankedBattleView/awardBlock/seasonAward/description"
+msgstr "Націсніце, каб перайсці да ўзнагарод"
+
+msgid "rankedBattleView/awardBlock/seasonAward/header"
+msgstr "Узнагароды сезона"
+
+msgid "rankedBattleView/closeBtn"
+msgstr "НАЗАД"
+
+msgid "rankedBattleView/closeBtnDescr"
+msgstr "У ГАРАЖ"
+
+msgid "rankedBattleView/nextStageBlock/stage"
+msgstr "Этап %(cycleNumber)s"
+
+msgid "rankedBattleView/notRankedBlock/okTooltip/body"
+msgstr "Націсніце, каб пачаць свой шлях у Рангавых баях."
+
+msgid "rankedBattleView/notRankedBlock/okTooltip/header"
+msgstr "Наперад!"
+
+msgid "rankedBattleView/playVideoBtn"
+msgstr "Відэа пра рэжым"
+
+msgid "rankedBattleView/progressBlock/bestRank"
+msgstr "Рэкорд сезона"
+
+msgid "rankedBattleView/progressBlock/continue"
+msgstr "Працягвайце здабываць ачкі, каб атрымаць узнагароду ў фінале"
+
+msgid "rankedBattleView/progressBlock/currentRank"
+msgstr "Ваш бягучы ранг: %(rank)s"
+
+msgid "rankedBattleView/progressBlock/finalRank"
+msgstr "Віншуем! У гэтым сезоне вы заслужылі найвышэйшы %(rank)s ранг."
+
+msgid "rankedBattleView/progressBlock/steps"
+msgstr "Шаўронаў: %(numbers)s"
+
+msgid "rankedBattleView/progressBlock/vehicleRank"
+msgstr "Рангавыя жэтоны"
+
+msgid "rankedBattleView/statusBlock/calendarBtnTooltip/body"
+msgstr "Націсніце, каб праглядзець інфармацыю пра ўсе этапы сезона."
+
+msgid "rankedBattleView/statusBlock/calendarBtnTooltip/header"
+msgstr "Каляндар"
+
+msgid "rankedBattleView/statusBlock/calendarPopover/attentionText"
+msgstr "Вынікі %(cycleNumber)s этапу праз %(timeLeft)s"
+
+msgid "rankedBattleView/statusBlock/calendarPopover/cycleItem"
+msgstr "Сезон %(cycleNumber)s: %(day0)s.%(month0)s–%(day1)s.%(month1)s"
+
+msgid "rankedBattleView/statusBlock/statusText"
+msgstr "Падвядзенне вынікаў сезона праз: "
+
+msgid "rankedBattleView/title"
+msgstr "Рангавы бой"
+
+msgid "rankedBattlesBattleResults/animationCheckBoxLabel"
+msgstr "Паказваць анімацыю"
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehClass/body"
+msgstr "%(forbiddenClass)s не можа ўдзельнічаць у Рангавых баях."
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehClass/header"
+msgstr "Непрыдатны тып тэхнікі"
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehLvl/body"
+msgstr "Выберыце %(levelSubStr)s для ўдзелу ў Рангавых баях."
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehLvl/header"
+msgstr "Неадпаведны ўзровень тэхнікі"
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehLvl/levelSubStr"
+msgstr "машыну %(levels)s узроўню"
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehType/body"
+msgstr "На %(forbiddenType)s нельга ўдзельнічаць у Рангавых баях."
+
+msgid "rankedBattlesCarousel/lockedTooltip/vehType/header"
+msgstr "Непрыдатная машына"
+
+msgid "rankedBattlesCyclesView/awardBlock/boxTooltip/body"
+msgstr ""
+"Быў атрыманы ў канцы этапу і змяшчаў цэнныя ўзнагароды. Колькасць узнагарод "
+"і іх вартасць залежалі ад пазіцыі ў Ладары."
+
+msgid "rankedBattlesCyclesView/awardBlock/boxTooltip/header"
+msgstr "Кантэйнер з узнагародай"
+
+msgid "rankedBattlesCyclesView/btnClose"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rankedBattlesCyclesView/currentCycle/item/awardRecieved"
+msgstr "Узнагарода атрымана"
+
+msgid "rankedBattlesCyclesView/currentCycle/item/boxTooltip/body"
+msgstr ""
+"Надаецца ў канцы этапу і змяшчае розныя ўзнагароды. Колькасць узнагарод і іх"
+" якасць залежаць ад атрыманага рангу."
+
+msgid "rankedBattlesCyclesView/currentCycle/item/boxTooltip/header"
+msgstr "Кантэйнер з узнагародай"
+
+msgid "rankedBattlesCyclesView/currentCycle/item/crystalTooltip/body"
+msgstr ""
+"Можна абмяняць на новыя ўнікальныя прадметы: асабістыя рэзервы і рэдкае "
+"абсталяванне. 1 бону можна абмяняць на 1 камплект асабістых рэзерваў або "
+"абсталявання. Чым больш бонаў вы здабудзеце, тым большую колькасць цэнных "
+"прадметаў атрымаеце."
+
+msgid "rankedBattlesCyclesView/currentCycle/item/crystalTooltip/header"
+msgstr "Боны"
+
+msgid "rankedBattlesCyclesView/currentCycle/tableHeader/rank"
+msgstr "Ранг"
+
+msgid "rankedBattlesCyclesView/currentCycle/tableHeader/rankAward"
+msgstr "Узнагарода за атрыманне рангу"
+
+msgid "rankedBattlesCyclesView/currentCycle/tooltip/cycleAward/body"
+msgstr ""
+"Даецца за найлепшы вынік, дасягнуты падчас аднаго этапу. Найлепшы вынік не "
+"касуецца нават у выпадку страты рангу."
+
+msgid "rankedBattlesCyclesView/currentCycle/tooltip/cycleAward/header"
+msgstr "Узнагарода ў канцы этапу"
+
+msgid "rankedBattlesCyclesView/currentCycle/vehicleRankComment"
+msgstr "Рэгулярная ўзнагарода"
+
+msgid "rankedBattlesCyclesView/final/btnLadder"
+msgstr "Паказаць у табліцы"
+
+msgid "rankedBattlesCyclesView/final/btnLadderTooltip/body"
+msgstr ""
+"Націсніце, каб перайсці да спіса лідараў сезона і праглядзець сваю пазіцыю."
+
+msgid "rankedBattlesCyclesView/final/btnLadderTooltip/header"
+msgstr "Лідары сезона"
+
+msgid "rankedBattlesCyclesView/final/first"
+msgstr "%(count)s найлепшых гульцоў"
+
+msgid "rankedBattlesCyclesView/final/intermediate"
+msgstr "наступныя %(count)s"
+
+msgid "rankedBattlesCyclesView/final/last"
+msgstr "Непрызавая ліга"
+
+msgid "rankedBattlesCyclesView/final/lastComment"
+msgstr ""
+"Здабывайце ачкі і прасоўвайцеся ўверх па рэйтынгавай табліцы.\n"
+"Фінальная ўзнагарода, якую вы атрымаеце, будзе залежыць ад\n"
+"бягучай лігі."
+
+msgid "rankedBattlesCyclesView/final/tableHeader/noLeagueDataTooltip"
+msgstr "Звесткі пра бягучую лігу часова недаступныя. Паспрабуйце пазней."
+
+msgid "rankedBattlesCyclesView/final/tableHeader/position"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "rankedBattlesCyclesView/final/tableHeader/seasonAward"
+msgstr "Узнагарода ў канцы сезона"
+
+msgid "rankedBattlesCyclesView/noAchievements/future/footer"
+msgstr "З %(start)s па %(end)s"
+
+msgid "rankedBattlesCyclesView/noAchievements/past/footer"
+msgstr ""
+"На гэтым этапе не атрымана ніводнага рангу.\n"
+"Набраныя ачкі: %(points)s"
+
+msgid "rankedBattlesUnreachableView/bottom/missions"
+msgstr "Выконвайце баявыя задачы"
+
+msgid "rankedBattlesUnreachableView/bottom/premium"
+msgstr "Выкарыстоўвайце %(premiumType)s прэміум акаўнт"
+
+msgid "rankedBattlesUnreachableView/bottom/premium/basic"
+msgstr "Агульны"
+
+msgid "rankedBattlesUnreachableView/bottom/premium/plus"
+msgstr "Танкавы"
+
+msgid "rankedBattlesUnreachableView/bottom/reserves"
+msgstr "Задзейнічайце асабістыя рэзервы"
+
+msgid "rankedBattlesUnreachableView/bottomText"
+msgstr "Як хутчэй атрымаць тэхніку %(levels)s узроўню?"
+
+msgid "rankedBattlesUnreachableView/closeBtnLabel"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rankedBattlesUnreachableView/subtitleText"
+msgstr "Рэжым недаступны"
+
+msgid "rankedBattlesUnreachableView/vehicleAvailableForBuy"
+msgstr ""
+"Для Рангавых баёў трэба мець у Гаражы прыдатную тэхніку %(levels)s узроўню.\n"
+"У вас ёсць даследаваная, але не купленая тэхніка %(levels)s узроўню."
+
+msgid "rankedBattlesUnreachableView/vehicleAvailableForRestore"
+msgstr ""
+"Для Рангавых баёў трэба мець у Гаражы прыдатную тэхніку %(levels)s узроўню.\n"
+"У вас ёсць тэхніка %(levels)s узроўню, даступная для аднаўлення."
+
+msgid "rankedBattlesUnreachableView/vehicleUnavailable"
+msgstr ""
+"Для рангавых баёў трэба мець у Гаражы прыдатную тэхніку %(levels)s узроўню."
+
+msgid "rankedBattlesViewHeader/tabs/current"
+msgstr "За ранг"
+
+msgid "rankedBattlesViewHeader/tabs/final"
+msgstr "Фінальныя"
+
+msgid "rankedBattlesWidget/bonusMultiplier"
+msgstr "×%(count)s"
+
+msgid "rankedBattlesWidget/bonusSteps"
+msgstr "за прызавы бой"
+
+msgid "rankedBattlesWidget/league0"
+msgstr "невядомую"
+
+msgid "rankedBattlesWidget/league1"
+msgstr "Залатую"
+
+msgid "rankedBattlesWidget/league2"
+msgstr "Срэбную"
+
+msgid "rankedBattlesWidget/league3"
+msgstr "Бронзавую"
+
+msgid "rankedBattlesWidget/leagueDecrease/info"
+msgstr "Вы вярнуліся ў %(leagueName)s лігу"
+
+msgid "rankedBattlesWidget/leagueDecrease/title"
+msgstr "ЗМЕНА ЛІГІ"
+
+msgid "rankedBattlesWidget/leagueIncrease/info"
+msgstr "Вы перайшлі ў %(leagueName)s лігу"
+
+msgid "rankedBattlesWidget/leagueIncrease/title"
+msgstr "ЗМЕНА ЛІГІ"
+
+msgid "rankedBattlesWidget/leaguesAchievment/info"
+msgstr "Зараз вы можаце пазмагацца за месца ў лігах"
+
+msgid "rankedBattlesWidget/leaguesAchievment/title"
+msgstr "ДОСТУП ДА ЛІГ"
+
+msgid "rankedBattlesWidget/newDivisionCongrat/info"
+msgstr "Вы перайшлі ў наступны дывізіён"
+
+msgid "rankedBattlesWidget/newDivisionCongrat/title"
+msgstr "НОВЫ ДЫВІЗІЁН"
+
+msgid "rankedBattlesWidget/newRankCongrat"
+msgstr ""
+"Віншуем,\n"
+"ранг атрыманы!"
+
+msgid "rankedBattlesWidget/noChanges"
+msgstr "Без змен"
+
+msgid "rankedBattlesWidget/qualificationIdleText"
+msgstr ""
+"Баёў да праходжання кваліфікацыі:\n"
+"%(currentBattles)s / %(totalBattles)s"
+
+msgid "rankedDivisionStatus/completed"
+msgstr "Дывізіён пройдзены"
+
+msgid "rankedDivisionStatus/locked"
+msgstr "Дывізіён яшчэ не дасягнуты"
+
+msgid "rankedSeasonCompleted/header/description"
+msgstr "Вы можаце працягваць гуляць у рэжыме"
+
+msgid "rankedSeasonCompleted/header/text"
+msgstr "Усе дывізіёны паспяхова пройдзены. Усе ўзнагароды атрыманы."
+
+msgid "rankedSeasonCompleted/headerReward/description"
+msgstr "Забярыце сваю заслужаную ўзнагароду!"
+
+msgid "rankedSeasonCompleted/headerReward/text"
+msgstr "Рангавы сезон пройдзены"
+
+msgid "rankedSeasonCompleted/toFinalStatistic"
+msgstr "ДА ФІНАЛЬНАЙ СТАТЫСТЫКІ"
+
+msgid "rankedSeasonCompleted/toRewards"
+msgstr "Вярнуцца да ўзнагарод"
+
+msgid "rewardsView/common/currentReward"
+msgstr "Прэтэндуеце на ўзнагароду"
+
+msgid "rewardsView/tabs/leagues"
+msgstr "Узнагароды за лігі"
+
+msgid "rewardsView/tabs/leagues/awardDescr/style"
+msgstr "Стыль «%(styleName)s» і нашыўка %(badgeName)s"
+
+msgid "rewardsView/tabs/leagues/description"
+msgstr ""
+"Узнагародныя стылі і нашыўкі з'яўляюцца часовымі і даступныя гульцу да канца"
+" наступнага сезона. Права насіць іх трэба абараніць, зноў трапіўшы ў тую "
+"самую лігу. Калі гулец не трапляе ў адну з ліг, стыль і нашыўка становяцца "
+"недаступнымі. Калі гулец трапляе ў іншую лігу, стыль і нашыўка замяняюцца на"
+" адпаведныя."
+
+msgid "rewardsView/tabs/leagues/description/league1"
+msgstr ""
+"Стыль налічваецца пераможцам сезона, якія паказалі выдатныя вынікі: прайшлі "
+"ўсе дывізіёны і трапілі ў першыя 20%% гульцоў паводле эфектыўнасці гульні "
+"або трапілі ў лігі ў ліку першых. Гэты стыль, нанесены на машыну, паказвае "
+"актуальныя дасягненні гульца. Права валодання гэтым стылем неабходна "
+"пацвярджаць у кожным сезоне рэжыму «Рангавы бой»."
+
+msgid "rewardsView/tabs/leagues/description/league2"
+msgstr ""
+"Стыль налічваецца пераможцам сезона, якія праявілі належны ўзровень "
+"майстэрства і стараннасці і па выніках сезона трапілі ў Срэбную лігу. Гэты "
+"стыль, нанесены на машыну, паказвае актуальныя дасягненні гульца. Права "
+"валодання гэтым стылем неабходна пацвярджаць у кожным сезоне рэжыму «Рангавы"
+" бой»."
+
+msgid "rewardsView/tabs/leagues/description/league3"
+msgstr ""
+"Стыль налічваецца пераможцам сезона, якія па яго выніках трапілі ў Бронзавую"
+" лігу. Гэты стыль, нанесены на машыну, паказвае актуальныя дасягненні "
+"гульца. Права валодання гэтым стылем неабходна пацвярджаць у кожным сезоне "
+"рэжыму «Рангавы бой»."
+
+msgid "rewardsView/tabs/leagues/league1"
+msgstr "Залатая ліга"
+
+msgid "rewardsView/tabs/leagues/league2"
+msgstr "Срэбная ліга"
+
+msgid "rewardsView/tabs/leagues/league3"
+msgstr "Бронзавая ліга"
+
+msgid "rewardsView/tabs/ranks"
+msgstr "Узнагароды за рангі"
+
+msgid "rewardsView/tabs/year"
+msgstr "Гадавыя ўзнагароды"
+
+msgid "rewardsView/tabs/year/compensation/extraPoints"
+msgstr ""
+"За %(points)s %(rankedImg)s атрымана кампенсацыя %(crystal)s %(crystalImg)s"
+
+msgid "rewardsView/tabs/year/compensation/notEnough"
+msgstr "Атрымана кампенсацыя %(crystal)s%(crystalImg)s"
+
+msgid "rewardsView/tabs/year/current"
+msgstr "Прэтэндуеце на ўзнагароду"
+
+msgid "rewardsView/tabs/year/currentChoose"
+msgstr "Выбраць узнагароду"
+
+msgid "rewardsView/tabs/year/currentFinal"
+msgstr "Узнагарода атрымана"
+
+msgid "rewardsView/tabs/year/title/awarded"
+msgstr "Рангавыя жэтоны: %(points)s"
+
+msgid "rewardsView/tabs/year/title/notAwarded"
+msgstr "Рангавыя жэтоны: %(points)s"
+
+msgid "seasonComplete/bestRank"
+msgstr "Найвышэйшы заслужаны вамі ранг"
+
+msgid "seasonComplete/bigTitle"
+msgstr "Вынікі сезона %(season)s"
+
+msgid "seasonComplete/division/tooltip/header"
+msgstr "%(rank)s ранг (%(division)s)"
+
+msgid "seasonComplete/effectLabel"
+msgstr "Эфектыўнасць"
+
+msgid "seasonComplete/leadersButton"
+msgstr "Лідары сезона"
+
+msgid "seasonComplete/outOfRating"
+msgstr "Па-за рэйтынгам"
+
+msgid "seasonComplete/placeInRating"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "seasonComplete/smallTitle"
+msgstr "Рангавы бой"
+
+msgid "seasonComplete/sprinterImproved"
+msgstr ""
+"Вы дасягнулі ліг у ліку першых і атрымліваеце ўзнагароду за Залатую лігу."
+
+msgid "seasonComplete/sprinterTop"
+msgstr "Вы дасягнулі ліг у ліку першых."
+
+msgid "seasonComplete/tooltip/body"
+msgstr "Вашы вынікі ў %(season)s сезоне"
+
+msgid "selectableReward/subTitle"
+msgstr "ВЫБЕРЫЦЕ ЎЗНАГАРОДУ"
+
+msgid "selectableReward/title"
+msgstr "РАНГАВЫЯ БАІ"
+
+msgid "selectableReward/tooltip/equipmentChoice/list"
+msgstr ""
+"• Сістэма адводу парахавых газаў\n"
+"• Комплекс стабілізацыйнага абсталявання\n"
+"• Эксперыментальная сістэма набівання\n"
+"• Зносастойкія прыводы наводкі\n"
+"• Юсціраваная оптыка\n"
+"• Удасканаленая кампаноўка\n"
+"• Палепшаны кампрэсар\n"
+"• Павышаная снарадаўстойлівасць"
+
+msgid "selectableReward/tooltip/equipmentChoice/title"
+msgstr "Удасканаленае абсталяванне на выбар"
+
+msgid "selectorTooltip/desc"
+msgstr ""
+"Баі на V узроўню паводле правіл Звычайнага бою. Фармат — 10х10 гульцоў. "
+"Працягласць бою — 10 хвілін."
+
+msgid "selectorTooltip/tillEnd"
+msgstr "Да канца баёў:"
+
+msgid "selectorTooltip/timeTable/empty"
+msgstr "—"
+
+msgid "selectorTooltip/timeTable/time"
+msgstr "%(start)s – %(end)s"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "Расклад баёў"
+
+msgid "selectorTooltip/timeTable/today"
+msgstr "Сёння"
+
+msgid "selectorTooltip/timeTable/tomorrow"
+msgstr "Заўтра"
+
+msgid "selectorTooltip/title"
+msgstr "Рангавы бой"
+
+msgid "statistic/playersRaiting"
+msgstr "Лідары сезона"
+
+msgid "statistic/vehicleRank"
+msgstr "Рангавыя жэтоны здабыты"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "status/timeLeft/lessMin"
+msgstr "хвіліну"
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "tooltip/closeButton/body"
+msgstr "Узнагарода будзе налічана аўтаматычна."
+
+msgid "tooltip/closeButton/header"
+msgstr "Вярнуцца ў Гараж"
+
+msgid "tooltip/step/conditions"
+msgstr ""
+"Калі гулец трапіў у %(battlesNum)s найлепшых гульцоў\n"
+"у %(team)s паводле колькасці здабытага досведу"
+
+msgid "tooltip/step/conditions/header"
+msgstr "Налічваецца"
+
+msgid "tooltip/step/decommission/description"
+msgstr ""
+"Калі гулец заняў %(fromTill)s-е месца сярод гульцоў пераможанай каманды "
+"паводле колькасці здабытага досведу."
+
+msgid "tooltip/step/decommission/header"
+msgstr "Спісваецца"
+
+msgid "tooltip/step/decommissionWin/description"
+msgstr ""
+"Калі гулец заняў %(fromTill)s-е месца сярод гульцоў каманды-пераможцы "
+"паводле колькасці здабытага досведу."
+
+msgid "tooltip/step/description"
+msgstr "Элемент, які паказвае ход атрымання вамі наступнага рангу"
+
+msgid "tooltip/step/fromTill"
+msgstr "%(fromPlace)s–%(tillPlace)s"
+
+msgid "tooltip/step/header"
+msgstr "Шаўрон"
+
+msgid "tooltip/step/losers"
+msgstr "пераможанай камандзе"
+
+msgid "tooltip/step/notCharged/description"
+msgstr ""
+"Калі гулец не трапіў у %(battlesNum)s найлепшых гульцоў каманды-пераможцы "
+"паводле колькасці здабытага досведу, але заняў %(fromTill)s-е месца."
+
+msgid "tooltip/step/notCharged/header"
+msgstr "Захоўваецца"
+
+msgid "tooltip/step/notChargedLose/description"
+msgstr ""
+"Калі гулец не трапіў у %(battlesNum)s найлепшых гульцоў пераможанай каманды "
+"паводле колькасці здабытага досведу, але заняў %(fromTill)s-е месца."
+
+msgid "tooltip/step/or"
+msgstr "або"
+
+msgid "tooltip/step/winners"
+msgstr "камандзе-пераможцы"
+
+msgid "welcomeScreen/btn"
+msgstr "Наперад!"
+
+msgid "welcomeScreen/centerRule"
+msgstr "Заслугоўвайце рангі ў баях з вартым супраціўнікам"
+
+msgid "welcomeScreen/centerRuleTooltip/body"
+msgstr ""
+"Абедзве каманды, як ваша, так і супраціўніка, будуць складацца з гульцоў "
+"больш-менш падобнага рангу."
+
+msgid "welcomeScreen/centerRuleTooltip/header"
+msgstr "Годны супраціўнік"
+
+msgid "welcomeScreen/closeBtn"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "welcomeScreen/closeBtnTooltip/body"
+msgstr "Націсніце, каб закрыць экран і вярнуцца ў Гараж."
+
+msgid "welcomeScreen/closeBtnTooltip/header"
+msgstr "Закрыць"
+
+msgid "welcomeScreen/equalityText"
+msgstr "="
+
+msgid "welcomeScreen/header"
+msgstr "Вітаем, жаўнер!"
+
+msgid "welcomeScreen/leftRule"
+msgstr ""
+"Уступайце ў бой на ўлюбёнай машыне\n"
+"Х узроўню"
+
+msgid "welcomeScreen/leftRuleTooltip/body"
+msgstr ""
+"Уступайце ў бой на ўлюбёнай даследаванай або калекцыйнай тэхніцы\n"
+"Х узроўню"
+
+msgid "welcomeScreen/leftRuleTooltip/header"
+msgstr "Х узровень"
+
+msgid "welcomeScreen/negative/body"
+msgstr ""
+"{team}, але трапіць у {topNumber} найлепшых гульцоў сваёй каманды паводле "
+"здабытага досведу."
+
+msgid "welcomeScreen/negative/team"
+msgstr "Прайграць"
+
+msgid "welcomeScreen/positive/body"
+msgstr ""
+"{team} і трапіць у {topNumber} найлепшых гульцоў сваёй каманды паводле "
+"колькасці здабытага досведу."
+
+msgid "welcomeScreen/positive/team"
+msgstr "Перамагчы"
+
+msgid "welcomeScreen/rankDescr"
+msgstr "Каб дасягнуць першага рангу, трэба"
+
+msgid "welcomeScreen/ranks/header"
+msgstr ""
+"Будзьце сярод найлепшых гульцоў паводле колькасці здабытага досведу і "
+"заслужыце вышэйшыя рангі!"
+
+msgid "welcomeScreen/ranksDescr"
+msgstr ""
+"Чым вышэйшую пазіцыю вы зоймеце, тым больш цаннейшую ўзнагароду атрымаеце."
+
+msgid "welcomeScreen/rightRule"
+msgstr "Чым ранг вышэйшы, тым цаннейшыя ўзнагароды ўрэшце будуць чакаць вас"
+
+msgid "welcomeScreen/rightRuleTooltip/body"
+msgstr ""
+"Чым вышэйшы ранг вы заслужыце, тым больш значныя ўзнагароды атрымаеце."
+
+msgid "welcomeScreen/rightRuleTooltip/header"
+msgstr "Цэнныя ўзнагароды"
+
+msgid "welcomeScreen/rulesDelimeter"
+msgstr "або"
+
+msgid "yearLeaderboard/rewardView/battleType"
+msgstr "Рангавы бой"
+
+msgid "yearLeaderboard/rewardView/clanDescr"
+msgstr "[%(clan)s] "
+
+msgid "yearLeaderboard/rewardView/leaderboardBtn/label"
+msgstr "Перайсці да рэйтынгавай табліцы"
+
+msgid "yearLeaderboard/rewardView/positionDescr"
+msgstr "Пазіцыя {name} {clan}у рэйтынгу"
+
+msgid "yearLeaderboard/rewardView/reward/label"
+msgstr ""
+"Вы атрымалі асаблівую нашыўку %(name) для ўсталявання побач з вашым імем."
+
+msgid "yearLeaderboard/rewardView/reward/nameTemplate"
+msgstr "«{name}»"
+
+msgid "yearLeaderboard/rewardView/title"
+msgstr "Вы трапілі ў Топ-{total}"
+
+msgid "yearRewards/box/big/title"
+msgstr "Павышаная ўзнагарода"
+
+msgid "yearRewards/box/large/title"
+msgstr "Максімальная ўзнагарода"
+
+msgid "yearRewards/box/medium/title"
+msgstr "Стандартная ўзнагарода"
+
+msgid "yearRewards/box/small/title"
+msgstr "Заахвочвальная ўзнагарода"
+
+msgid "yearRewards/tooltip/any/reward/title"
+msgstr "Узнагарода"
+
+msgid "yearRewards/tooltip/box/big/title"
+msgstr "Павышаная ўзнагарода"
+
+msgid "yearRewards/tooltip/box/large/title"
+msgstr "Максімальная ўзнагарода"
+
+msgid "yearRewards/tooltip/box/medium/title"
+msgstr "Стандартная ўзнагарода"
+
+msgid "yearRewards/tooltip/box/small/title"
+msgstr "Заахвочвальная ўзнагарода"
+
+msgid "yearRewards/tooltip/box/subTitle"
+msgstr ""
+"Узнагарода па выніках года. Выдаецца толькі пасля завяршэння трох сезонаў "
+"Рангавых баёў, калі гулец здабыў патрэбную колькасць рангавых жэтонаў."
+
+msgid "yearRewards/tooltip/equipmentChoice/description/1"
+msgstr ""
+"Вы можаце выбраць адну адз. удасканаленага абсталявання ў якасці ўзнагароды:"
+
+msgid "yearRewards/tooltip/equipmentChoice/description/2"
+msgstr ""
+"Вы можаце выбраць дзве адз. удасканаленага абсталявання ў якасці ўзнагароды."
+" Кожны прадмет можна забраць толькі адзін раз:"
+
+msgid "yearRewards/tooltip/equipmentChoice/description/3"
+msgstr ""
+"Вы можаце выбраць тры адз. удасканаленага абсталявання ў якасці ўзнагароды. "
+"Кожны прадмет можна забраць толькі адзін раз:"
+
+msgid "yearRewards/tooltip/equipmentChoice/list"
+msgstr ""
+"• Сістэма адводу парахавых газаў\n"
+"• Комплекс стабілізацыйнага абсталявання\n"
+"• Эксперыментальная сістэма набівання\n"
+"• Зносастойкія прыводы наводкі\n"
+"• Юсціраваная оптыка\n"
+"• Удасканаленая кампаноўка\n"
+"• Палепшаны кампрэсар\n"
+"• Павышаная снарадаўстойлівасць"
+
+msgid "yearRewards/tooltip/equipmentChoice/title"
+msgstr "Удасканаленае абсталяванне"
+
+msgid "yearRewards/tooltip/needPoints"
+msgstr "Патрабуецца рангавых жэтонаў"
+
+msgid "yearRewards/tooltip/status/current/description"
+msgstr ""
+"Вы здабылі неабходную колькасць рангавых жэтонаў і прэтэндуеце на гадавую "
+"ўзнагароду."
+
+msgid "yearRewards/tooltip/status/current/title"
+msgstr "Ваша бягучая ўзнагарода"
+
+msgid "yearRewards/tooltip/status/currentChoose/description"
+msgstr ""
+"Вы атрымалі гадавую ўзнагароду! Каб выбраць удасканаленае абсталяванне, "
+"націсніце на кнопку «Выбраць узнагароду»."
+
+msgid "yearRewards/tooltip/status/currentChoose/title"
+msgstr "Узнагарода атрымана! Даступна ўдасканаленае абсталяванне на выбар."
+
+msgid "yearRewards/tooltip/status/currentFinal/description"
+msgstr "Вы атрымалі гадавую ўзнагароду!"
+
+msgid "yearRewards/tooltip/status/currentFinal/title"
+msgstr "Узнагарода атрымана!"
+
+msgid "yearRewards/tooltip/status/locked/description"
+msgstr ""
+"Здабывайце іх у Рангавых баях, прасоўваючыся па дывізіёнах і гуляючы ў "
+"лігах."
+
+msgid "yearRewards/tooltip/status/locked/title"
+msgstr "Замала рангавых жэтонаў"
+
+msgid "yearRewards/tooltip/status/lockedFinal/description"
+msgstr "Вам не хапіла жэтонаў для гэтай узнагароды."
+
+msgid "yearRewards/tooltip/status/lockedFinal/title"
+msgstr "Замала рангавых жэтонаў"
+
+msgid "yearRewards/tooltip/status/passed/description"
+msgstr "Вы ўжо прэтэндуеце на больш каштоўную гадавую ўзнагароду"
+
+msgid "yearRewards/tooltip/status/passed/title"
+msgstr "Узнагарода недаступная"
+
+msgid "yearRewards/tooltip/status/passedFinal/description"
+msgstr "Вы ўжо атрымалі больш каштоўную гадавую ўзнагароду"
+
+msgid "yearRewards/tooltip/status/passedFinal/title"
+msgstr "Узнагарода недаступная"
+
+msgid "year_award/acceptButton/acceptLabel"
+msgstr "Так!"
+
+msgid "year_award/acceptButton/hangarLabel"
+msgstr "Паказаць у Гаражы"
+
+msgid "year_award/compensationLabel"
+msgstr ""
+"Вы зарабілі {total} {pointsIcon}. З іх за {compensated} {pointsIcon} "
+"атрымана кампенсацыя {crystals} {crystalIcon}."
+
+msgid "year_award/rankedLabel"
+msgstr "Рангавы бой"
+
+msgid "year_award/rewardSelected"
+msgstr "Узнагарода атрымана"
+
+msgid "year_award/rewardsToSelect"
+msgstr "Засталося ўзнагарод на выбар: {count}"

@@ -4,4 +4,8 @@
 	<tank>true</tank>
 	<parent>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.025957 -0.301305 -1.210688</min>
+		<max>0.597255 0.283835 6.370435</max>
+	</visibilityBox>
 </root>

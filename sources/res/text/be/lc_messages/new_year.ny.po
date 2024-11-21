@@ -1,0 +1,3851 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "NyPopup/premiumToys"
+msgstr "Редкие украшения"
+
+msgid "NyPopup/tooltip/premiumToys"
+msgstr ""
+"Редкие украшения можно разблокировать, открывая праздничные контейнеры."
+
+msgid "NyPopup/tooltip/usualToys"
+msgstr "Обычные украшения разблокируются при повышении уровня %(param)s."
+
+msgid "NyPopup/usualToys"
+msgstr "Обычные украшения"
+
+msgid "album/bonusInfo18/body"
+msgstr "Собрано украшений коллекции"
+
+msgid "album/bonusInfo18/takeNewStyle"
+msgstr "Получите стили, эмблемы и надписи за сбор коллекций 2018 года."
+
+msgid "album/button/buyFullCollection"
+msgstr "Дособрать коллекцию"
+
+msgid "album/button/toRewards"
+msgstr "К наградам за сбор коллекции"
+
+msgid "album/buyCollection"
+msgstr "Дособрать коллекцию"
+
+msgid "album/collectionBonus"
+msgstr "Бонус коллекции"
+
+msgid "album/collectionTooltip"
+msgstr "Нажмите, чтобы увидеть список {collection}."
+
+msgid "album/collectionTooltipParams/Christmas"
+msgstr "украшений Рождественской коллекции"
+
+msgid "album/collectionTooltipParams/Fairytale"
+msgstr "украшений Волшебной коллекции"
+
+msgid "album/collectionTooltipParams/Mega"
+msgstr "больших украшений"
+
+msgid "album/collectionTooltipParams/NewYear"
+msgstr "украшений Новогодней коллекции"
+
+msgid "album/collectionTooltipParams/Oriental"
+msgstr "украшений Восточной коллекции"
+
+msgid "album/collectionTooltipParams/asian"
+msgstr "украшений Китайской коллекции"
+
+msgid "album/collectionTooltipParams/modernWestern"
+msgstr "украшений Современной коллекции"
+
+msgid "album/collectionTooltipParams/soviet"
+msgstr "украшений Новогодней коллекции"
+
+msgid "album/collectionTooltipParams/traditionalWestern"
+msgstr "украшений Традиционной коллекции"
+
+msgid "album/collectionTooltipToys"
+msgstr "Нажмите, чтобы увидеть список украшений галереи «{collection}»"
+
+msgid "album/fillLastYear/goToCollection"
+msgstr "К коллекции 2024"
+
+msgid "album/fillLastYear/title"
+msgstr "Доступ откроется на X уровне атмосферы праздника"
+
+msgid "album/levelName"
+msgstr "УКРАШЕНИЙ {romanRank} УРОВНЯ: {currentRankAmount}/{totalRankAmount}"
+
+msgid "album/levelNameDefault"
+msgstr "УКРАШЕНИЙ: {currentRankAmount}/{totalRankAmount}"
+
+msgid "album/mega/bonusValue"
+msgstr "%(value)s%"
+
+msgid "album/ny18/album18"
+msgstr "Альбом 2018"
+
+msgid "album/ny18/name"
+msgstr "Коллекция 2018"
+
+msgid "album/ny19/Christmas/bonusName"
+msgstr "к опыту экипажа за каждый бой"
+
+msgid "album/ny19/Christmas/name"
+msgstr "Рождество:"
+
+msgid "album/ny19/Fairytale/bonusName"
+msgstr "к свободному опыту за каждый бой"
+
+msgid "album/ny19/Fairytale/name"
+msgstr "Волшебный Новый год:"
+
+msgid "album/ny19/NewYear/bonusName"
+msgstr "к кредитам за каждый бой"
+
+msgid "album/ny19/NewYear/name"
+msgstr "Новый год:"
+
+msgid "album/ny19/Oriental/bonusName"
+msgstr "к боевому опыту за каждый бой"
+
+msgid "album/ny19/Oriental/name"
+msgstr "Восточный Новый год:"
+
+msgid "album/ny19/infotype/installed"
+msgstr "Украшение установлено"
+
+msgid "album/ny19/infotype/notReceived"
+msgstr "Украшение не получено"
+
+msgid "album/ny19/infotype/received"
+msgstr "Украшение получено"
+
+msgid "album/ny19/infotype/tips"
+msgstr "Информация"
+
+msgid "album/ny19/name"
+msgstr "Коллекция 2019"
+
+msgid "album/ny20/page20/creditsAfterBattle"
+msgstr "К кредитам по итогам боя"
+
+msgid "album/rewards"
+msgstr "Награды за сбор альбома"
+
+msgid "album/rewardsCompleted"
+msgstr "Награды получены"
+
+msgid "album/sideBar/nyCollection"
+msgstr "Новогодняя коллекция"
+
+msgid "album/store/title"
+msgstr "НОВОГОДНИЕ ТОВАРЫ"
+
+msgid "album/store/tooltip"
+msgstr ""
+"Нажмите, чтобы перейти во внутриигровой Магазин и купить элементы внешнего "
+"вида прошлых новогодних событий."
+
+msgid "album/tierToolTip/body"
+msgstr "Нажмите, чтобы увидеть список украшений выбранного уровня."
+
+msgid "album/tierToolTip/level"
+msgstr "Уровень"
+
+msgid "album/tierToolTip/level1"
+msgstr "I"
+
+msgid "album/tierToolTip/level2"
+msgstr "II"
+
+msgid "album/tierToolTip/level3"
+msgstr "III"
+
+msgid "album/tierToolTip/level4"
+msgstr "IV"
+
+msgid "album/tierToolTip/level5"
+msgstr "V"
+
+msgid "album/title"
+msgstr "%(collectionTitle)s: %(collectedToysCount)s/%(totalToysCount)s"
+
+msgid "album/toAlbum"
+msgstr "К АЛЬБОМУ"
+
+msgid "album/tooltipDecoration/condition1"
+msgstr ""
+"Выполняйте ежедневные боевые задачи и задачи события «Наши победы», "
+"получайте контейнеры c украшениями."
+
+msgid "album/tooltipDecoration/condition2"
+msgstr "Создавайте новые украшения из осколков в Коллайдере."
+
+msgid "album/tooltipDecoration/condition3"
+msgstr "Покупайте новогодние контейнеры — в них тоже есть украшения."
+
+msgid "album/tooltipDecoration/condition4"
+msgstr ""
+"Учитываются ВСЕ полученные во время события украшения, в т.ч. разбитые и "
+"занесённые в альбомы коллекций."
+
+msgid "album/tooltipDecoration/info1"
+msgstr "Разбитое украшение остаётся в галерее."
+
+msgid "album/tooltipDecoration/info2"
+msgstr ""
+"Уровень атмосферы можно как увеличивать, так и уменьшать, разместив или сняв"
+" украшение."
+
+msgid "album/tooltipDecoration/info3"
+msgstr "Любые украшения можно разбить на осколки."
+
+msgid "album/tooltipDecoration/notReceived"
+msgstr "Украшение не получено"
+
+msgid "album/tooltipDecoration/received"
+msgstr "Украшение получено"
+
+msgid "album/tooltipDecoration/title1"
+msgstr "Как получить:"
+
+msgid "album/tooltipDecoration/title2"
+msgstr "Увеличивайте бонус"
+
+msgid "album/tooltipDecoration/title3"
+msgstr "Информация"
+
+msgid "album/totalBonus"
+msgstr "Бонус к кредитам"
+
+msgid "album20/bonus/Christmas"
+msgstr "Рождественский бонус"
+
+msgid "album20/bonus/Fairytale"
+msgstr "Волшебный бонус"
+
+msgid "album20/bonus/Mega"
+msgstr "Бонус больших украшений"
+
+msgid "album20/bonus/NewYear"
+msgstr "Новогодний бонус"
+
+msgid "album20/bonus/Oriental"
+msgstr "Восточный бонус"
+
+msgid "album20/bonusCredits"
+msgstr "%(value) к заработку по итогам боя"
+
+msgid "album20/bonusInfo"
+msgstr "{type}: {value}%"
+
+msgid "albumBonusTooltip/bonusValue/label"
+msgstr "Размер бонуса"
+
+msgid "albumBonusTooltip/countToys"
+msgstr "Собрано украшений в коллекции: {current}/{total}"
+
+msgid "albumBonusTooltip/header"
+msgstr "Расчёт бонуса:"
+
+msgid "albumBonusTooltip/howToUp/bonusValue/header"
+msgstr "Размер бонуса (%)"
+
+msgid "albumBonusTooltip/howToUp/header"
+msgstr "Как увеличить бонус:"
+
+msgid "albumBonusTooltip/howToUp/toysCount/header"
+msgstr "Собрать украшений (шт.)"
+
+msgid "albumBonusTooltip/howToUp/toysCount/more"
+msgstr "более"
+
+msgid "albumBonusTooltip/level/label"
+msgstr "Уровень атмосферы"
+
+msgid "albumBtn/tooltip"
+msgstr ""
+"Собирайте новогодние украшения и получайте дополнительные бонусы по итогам "
+"боёв. Нажмите, чтобы узнать подробности."
+
+msgid "albumHeader/settings/Christmas"
+msgstr "РОЖДЕСТВЕНСКИЙ АЛЬБОМ"
+
+msgid "albumHeader/settings/Fairytale"
+msgstr "СКАЗОЧНЫЙ АЛЬБОМ"
+
+msgid "albumHeader/settings/Mega"
+msgstr "БОЛЬШИЕ УКРАШЕНИЯ"
+
+msgid "albumHeader/settings/NewYear"
+msgstr "ОТЕЧЕСТВЕННЫЙ АЛЬБОМ"
+
+msgid "albumHeader/settings/Oriental"
+msgstr "ВОСТОЧНЫЙ АЛЬБОМ"
+
+msgid "albumHeader/settings/asian"
+msgstr "КИТАЙСКИЙ НОВЫЙ ГОД"
+
+msgid "albumHeader/settings/modernWestern"
+msgstr "СОВРЕМЕННОЕ РОЖДЕСТВО"
+
+msgid "albumHeader/settings/soviet"
+msgstr "ОТЕЧЕСТВЕННАЯ ГАЛЕРЕЯ"
+
+msgid "albumHeader/settings/traditionalWestern"
+msgstr "ТРАДИЦИОННОЕ РОЖДЕСТВО"
+
+msgid "applyDiscountWindow/compatibleCheckBox/label"
+msgstr "Отображать только исследованную технику"
+
+msgid "applyDiscountWindow/infoText"
+msgstr ""
+"Выберите машину %(level)s уровня, на которую хотите применить %(discount)s%%"
+" кредитную скидку. В списке не отображается техника, на которую уже имеется "
+"скидка равная полученной или больше."
+
+msgid "applyDiscountWindow/noItemsText"
+msgstr "Нет подходящей техники. Выберите любую машину, кроме премиум техники."
+
+msgid "applyDiscountWindow/title"
+msgstr "Выберите машину %(level)s уровня"
+
+msgid "applyVehicleDiscount/header"
+msgstr "Скидка на технику применена!"
+
+msgid "applyVehicleDiscount/success"
+msgstr "Вы активировали %(discount)s%% скидку на %(vehName)s."
+
+msgid "atmosphereBonus/tooltip/description"
+msgstr "Очки атмосферы праздника"
+
+msgid "atmosphereBonus/tooltip/title"
+msgstr "За установку этого украшения вы получите:"
+
+msgid "atmosphereSlot/tooltip/atmospherePoints"
+msgstr "Очки атмосферы:"
+
+msgid "atmosphereSlot/tooltip/discountVehicle"
+msgstr "Скидка на технику"
+
+msgid "atmosphereSlot/tooltip/holdayAtmos"
+msgstr "Атмосфера праздника"
+
+msgid "atmosphereSlot/tooltip/level"
+msgstr "Уровень:"
+
+msgid "atmosphereSlot/tooltip/numberOfPoints"
+msgstr "Кол-во очков (за 1 украшение):"
+
+msgid "atmosphereSlot/tooltip/rewardsForNetxLevel"
+msgstr "Основные награды за следующий уровень:"
+
+msgid "atmosphereSlot/tooltip/tankWoman"
+msgstr "Девушка-танкистка"
+
+msgid "atmosphereSlot/tooltip/toyPointsAdd"
+msgstr "Очки за одно украшение:"
+
+msgid "backButton/NewYearVehiclesView"
+msgstr "К ТЕХНИКЕ"
+
+msgid "backButton/NyBreakDecorationsView"
+msgstr "К РАЗБИТИЮ"
+
+msgid "backButton/NyCraftView"
+msgstr "К КОЛЛАЙДЕРУ"
+
+msgid "backButton/NyGladeView"
+msgstr "К ПЛОЩАДИ"
+
+msgid "backButton/NyRewardsInfoView"
+msgstr "К НАГРАДАМ"
+
+msgid "backButton/capitalizedLabel"
+msgstr "Назад"
+
+msgid "backButton/label"
+msgstr "НАЗАД"
+
+msgid "battleType/name/battleRoyaleQueue"
+msgstr "Стальной охотник"
+
+msgid "battleType/name/bootcamp"
+msgstr "Учебный полигон"
+
+msgid "battleType/name/comp7"
+msgstr "Натиск"
+
+msgid "battleType/name/epicQueue"
+msgstr "Линия фронта"
+
+msgid "battleType/name/mapbox"
+msgstr "Разведка боем"
+
+msgid "battleType/name/mapsTraining"
+msgstr "Топография"
+
+msgid "battleType/name/random"
+msgstr "Случайный бой"
+
+msgid "battleType/name/ranked"
+msgstr "Ранговый бой"
+
+msgid "battleType/name/strongholdsBattlesList"
+msgstr "Укрепрайон: сражения"
+
+msgid "battleType/name/trainingsList"
+msgstr "Тренировочный бой"
+
+msgid "battleType/name/versusAI"
+msgstr "Бой против ИИ"
+
+msgid "battleType/quoted"
+msgstr "«%(battleType)s»"
+
+msgid "bonusInfoTooltip/booster/credits"
+msgstr "Кредиты"
+
+msgid "bonusInfoTooltip/booster/crew_xp"
+msgstr "Опыт экипажа"
+
+msgid "bonusInfoTooltip/booster/free_xp"
+msgstr "Свободный опыт"
+
+msgid "bonusInfoTooltip/booster/xp"
+msgstr "Опыт за бой"
+
+msgid "bonusInfoTooltip/howTo/description1"
+msgstr "• Собирайте украшения в коллекции"
+
+msgid "bonusInfoTooltip/howTo/description2"
+msgstr "• Повышайте уровень праздничной атмосферы"
+
+msgid "bonusInfoTooltip/howTo/title"
+msgstr "Как увеличить бонус:"
+
+msgid "bonusInfoTooltip/noBonuses"
+msgstr "Бонусы не активны"
+
+msgid "bonusInfoTooltip/tankImage/body"
+msgstr ""
+"Скидка в %(discount)s%% на выбранную вами исследуемую машину %(level)s "
+"уровня."
+
+msgid "bonusInfoTooltip/tankImage/header"
+msgstr "Скидка на машину %(level)s уровня"
+
+msgid "bonusInfoTooltip/title"
+msgstr "Бонус за коллекцию украшений"
+
+msgid "bonusInfoTooltip/valid/description"
+msgstr "Бонусы действуют до {date}"
+
+msgid "bonusInfoTooltip/valid/title"
+msgstr "Срок действия:"
+
+msgid "bonusPercentage"
+msgstr "%(operand) %(value)%"
+
+msgid "boxWithToys/tooltip/description"
+msgstr ""
+"Дополняет внешний вид объекта при установке в соответствующий слот фотозоны."
+
+msgid "boxWithToys/tooltip/rewards"
+msgstr "Новогоднее украшение"
+
+msgid "boxWithToys/tooltip/title"
+msgstr "Новогоднее украшение"
+
+msgid "boxWithToysTooltip/more"
+msgstr "И ещё %(value)s шт."
+
+msgid "boxWithToysTooltip/title"
+msgstr "Остальные украшения"
+
+msgid "breakDecorations/breakButton/count"
+msgstr "Осколков: {count}"
+
+msgid "breakDecorations/breakButton/label"
+msgstr "Получить осколки"
+
+msgid "breakDecorations/breakButton/notAvailable/tooltip/body"
+msgstr "Нет украшений, которые можно разбить."
+
+msgid "breakDecorations/breakButton/notSelected/tooltip/body"
+msgstr ""
+"Кликайте левой кнопкой мыши на украшения, чтобы выбрать те, которые хотите "
+"разбить."
+
+msgid "breakDecorations/dummy/description/part_1"
+msgstr ""
+"Украшения можно получить, открывая новогодние контейнеры или создавать с "
+"помощью коллайдера."
+
+msgid "breakDecorations/dummy/description/part_2"
+msgstr ""
+"Контейнеры «Ёлочные игрушки» выдаются за выполнение задач события «Наши "
+"победы» и ежедневных задач."
+
+msgid "breakDecorations/dummy/description/part_3"
+msgstr "Новогодние контейнеры можно приобрести во внутриигровом Магазине."
+
+msgid "breakDecorations/dummy/openBattleQuestsBtn"
+msgstr "К боевым задачам"
+
+msgid "breakDecorations/dummy/title"
+msgstr "Украшения не найдены. Как получить украшения:"
+
+msgid "breakDecorations/filter/notFound/description"
+msgstr ""
+"Выберите другие параметры фильтра или сбросьте его на состояние по "
+"умолчанию."
+
+msgid "breakDecorations/filter/notFound/title"
+msgstr "Ничего не найдено"
+
+msgid "breakDecorations/filter/resetBtn"
+msgstr "Сбросить фильтр"
+
+msgid "breakDecorations/filter/result"
+msgstr "Показано:"
+
+msgid "breakDecorations/filterCounter/reset/tooltip/body"
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+
+msgid "breakDecorations/filterCounter/reset/tooltip/header"
+msgstr "Установить по умолчанию"
+
+msgid "breakDecorations/filterCounter/tooltip/body"
+msgstr ""
+"Изменяйте настройки фильтра и подбирайте украшения по указанным параметрам."
+
+msgid "breakDecorations/filterCounter/tooltip/header"
+msgstr "Фильтр украшений"
+
+msgid "breakDecorations/parts/available"
+msgstr "Осколков в наличии: "
+
+msgid "breakDecorations/partsTip/shardsEnoughToCreate"
+msgstr "Вам хватает осколков на создание нового украшения"
+
+msgid "breakDecorations/partsTip/shardsNotEnoughToCreate"
+msgstr "На создание не хватает осколков: {countLeft}"
+
+msgid "breakDecorations/selectedAll"
+msgstr "Выбрать все украшения"
+
+msgid "breakDecorations/tooltip/description"
+msgstr "Ценный новогодний реагент"
+
+msgid "breakDecorations/tooltip/note"
+msgstr ""
+"Разбивайте ненужные украшения и из полученных осколков создавайте новые с "
+"помощью коллайдера."
+
+msgid "breakDecorations/tooltip/title"
+msgstr "Осколки"
+
+msgid "breakFilterPopover/bonus"
+msgstr "Можно получить очков атмосферы"
+
+msgid "breakFilterPopover/collections"
+msgstr "Альбом"
+
+msgid "breakFilterPopover/rank"
+msgstr "Уровень украшений"
+
+msgid "breakFilterPopover/title"
+msgstr "Фильтр украшений"
+
+msgid "breakFilterPopover/type"
+msgstr "Тип украшения"
+
+msgid "button/submit"
+msgstr "Так точно!"
+
+msgid "challengeButton/box"
+msgstr "К контейнерам"
+
+msgid "challengeButton/quest"
+msgstr "К ежедневным задачам"
+
+msgid "closeButton/MainView"
+msgstr "В АНГАР"
+
+msgid "closeButton/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "closeButton/customizationZone"
+msgstr "НА ПЛОЩАДЬ"
+
+msgid "collectionBonusTooltip/description"
+msgstr "Бонус каждой коллекции суммируется и увеличивает надбавку к кредитам."
+
+msgid "collectionBonusTooltip/levelsPattern"
+msgstr "%(lower)s–%(higher)s"
+
+msgid "collectionBonusTooltip/moreThan"
+msgstr "более %(level)s"
+
+msgid "collectionBonusTooltip/title"
+msgstr "Бонус коллекций 2024"
+
+msgid "collectionBonusTooltip/toysCount"
+msgstr ""
+"Количество\n"
+"украшений"
+
+msgid "collectionsBtn/tooltip/countInfo"
+msgstr "%(current)/%(all)"
+
+msgid "collectionsBtn/tooltip/description"
+msgstr ""
+"Памятный альбом, в котором размещены все полученные и неполученные украшения"
+" 2024 года."
+
+msgid "collectionsBtn/tooltip/note"
+msgstr ""
+"Собирайте украшения, чтобы увеличить экономический бонус по итогам боёв."
+
+msgid "collectionsBtn/tooltip/title"
+msgstr "Галерея"
+
+msgid "collectionsReward/allLevels"
+msgstr "Все уровни"
+
+msgid "collectionsReward/allNations"
+msgstr "Все нации"
+
+msgid "collectionsReward/andLevels"
+msgstr " и "
+
+msgid "collectionsReward/backLabel"
+msgstr "К НАГРАДАМ"
+
+msgid "collectionsReward/commaLevels"
+msgstr ", "
+
+msgid "collectionsReward/forLevels"
+msgstr "Для техники:"
+
+msgid "collectionsReward/forNations"
+msgstr "Для наций:"
+
+msgid "collectionsReward/getStyle"
+msgstr "Дособрать коллекцию"
+
+msgid "collectionsReward/header/Christmas_ny19"
+msgstr ""
+"Награды за сбор\n"
+"Рождественской коллекции"
+
+msgid "collectionsReward/header/Christmas_ny20"
+msgstr ""
+"Награды за сбор\n"
+"Рождественской коллекции"
+
+msgid "collectionsReward/header/Christmas_ny21"
+msgstr ""
+"Награды за сбор\n"
+"Рождественской коллекции"
+
+msgid "collectionsReward/header/Christmas_ny22"
+msgstr ""
+"Награды за сбор\n"
+"Рождественской коллекции"
+
+msgid "collectionsReward/header/Christmas_ny24"
+msgstr "Получена награда за сбор Рождественского альбома."
+
+msgid "collectionsReward/header/Fairytale_ny19"
+msgstr ""
+"Награды за сбор\n"
+"Волшебной коллекции"
+
+msgid "collectionsReward/header/Fairytale_ny20"
+msgstr ""
+"Награды за сбор\n"
+"Волшебной коллекции"
+
+msgid "collectionsReward/header/Fairytale_ny21"
+msgstr ""
+"Награды за сбор\n"
+"Волшебной коллекции"
+
+msgid "collectionsReward/header/Fairytale_ny22"
+msgstr ""
+"Награды за сбор\n"
+"Волшебной коллекции"
+
+msgid "collectionsReward/header/Fairytale_ny24"
+msgstr "Получена награда за сбор Сказочного альбома."
+
+msgid "collectionsReward/header/Mega_ny20"
+msgstr ""
+"Награды за сбор\n"
+"Больших украшений"
+
+msgid "collectionsReward/header/Mega_ny21"
+msgstr ""
+"Награды за сбор\n"
+"Больших украшений"
+
+msgid "collectionsReward/header/Mega_ny22"
+msgstr ""
+"Награды за сбор\n"
+"Больших украшений"
+
+msgid "collectionsReward/header/NewYear_ny19"
+msgstr ""
+"Награды за сбор\n"
+"Новогодней коллекции"
+
+msgid "collectionsReward/header/NewYear_ny20"
+msgstr ""
+"Награды за сбор\n"
+"Новогодней коллекции"
+
+msgid "collectionsReward/header/NewYear_ny21"
+msgstr ""
+"Награды за сбор\n"
+"Новогодней коллекции"
+
+msgid "collectionsReward/header/NewYear_ny22"
+msgstr ""
+"Награды за сбор\n"
+"Новогодней коллекции"
+
+msgid "collectionsReward/header/NewYear_ny24"
+msgstr "Получена награда за сбор Отечественного альбома."
+
+msgid "collectionsReward/header/Oriental_ny19"
+msgstr ""
+"Награды за сбор\n"
+"Восточной коллекции"
+
+msgid "collectionsReward/header/Oriental_ny20"
+msgstr ""
+"Награды за сбор\n"
+"Восточной коллекции"
+
+msgid "collectionsReward/header/Oriental_ny21"
+msgstr ""
+"Награды за сбор\n"
+"Восточной коллекции"
+
+msgid "collectionsReward/header/Oriental_ny22"
+msgstr ""
+"Награды за сбор\n"
+"Восточной коллекции"
+
+msgid "collectionsReward/header/Oriental_ny24"
+msgstr "Получена награда за сбор Восточного альбома."
+
+msgid "collectionsReward/header/Raccoon_ny25"
+msgstr "Получена награда за аренду всех предметов для питомца."
+
+msgid "collectionsReward/header/asian_ny18"
+msgstr ""
+"Награды за сбор\n"
+"Китайской коллекции"
+
+msgid "collectionsReward/header/modernWestern_ny18"
+msgstr ""
+"Награды за сбор\n"
+"Современной коллекции"
+
+msgid "collectionsReward/header/soviet_ny18"
+msgstr ""
+"Награды за сбор\n"
+"Новогодней коллекции"
+
+msgid "collectionsReward/header/traditionalWestern_ny18"
+msgstr ""
+"Награды за сбор\n"
+"Традиционной коллекции"
+
+msgid "collectionsReward/isNotEnoughTooltip"
+msgstr "Недостаточно осколков"
+
+msgid "collectionsReward/isNotMaxLevelTooltip"
+msgstr ""
+"Достигните X уровня атмосферы праздника для получения доступа к коллекции"
+
+msgid "collectionsReward/lastLevel"
+msgstr "%(level)s уровни"
+
+msgid "collectionsReward/preview/tooltip"
+msgstr "Перейти к предпросмотру стиля"
+
+msgid "collectionsReward/previewStyle"
+msgstr "Предпросмотр стиля"
+
+msgid "collectionsReward/restriction/asian"
+msgstr "(подходит для техники Китая)"
+
+msgid "collectionsReward/restriction/common"
+msgstr "(%(restriction)s)"
+
+msgid "collectionsReward/restriction/modernWestern"
+msgstr "(подходит для техники наций: США, Великобритания, Япония, Швеция)"
+
+msgid "collectionsReward/restriction/premium"
+msgstr "(подходит для премиум техники VIII и исследуемой техники X уровней)"
+
+msgid "collectionsReward/restriction/soviet"
+msgstr "(подходит для техники СССР)"
+
+msgid "collectionsReward/restriction/traditionalWestern"
+msgstr "(подходит для техники наций: Германия, Франция, Чехословакия, Польша)"
+
+msgid "collectionsReward/styleAcquired"
+msgstr "Награды получены"
+
+msgid "collectionsReward/styleAdditional/emblem"
+msgstr "Эмблема «%(name)s» x%(count)s"
+
+msgid "collectionsReward/styleAdditional/inscription"
+msgstr "Надпись «%(name)s» x%(count)s"
+
+msgid "collectionsReward/styleAdditional/one/emblem"
+msgstr "Эмблема «%(name)s»"
+
+msgid "collectionsReward/styleAdditional/one/inscription"
+msgstr "Надпись «%(name)s»"
+
+msgid "collectionsReward/styleAdditional/one/projectionDecal"
+msgstr "Декаль «%(name)s»"
+
+msgid "collectionsReward/styleAdditional/projectionDecal"
+msgstr "Декаль «%(name)s» x%(count)s"
+
+msgid "collectionsReward/styleName"
+msgstr "Стиль «%(styleName)s»%(restriction)s"
+
+msgid "collectionsReward/stylePreview/Christmas_ny19"
+msgstr "Калёное стекло"
+
+msgid "collectionsReward/stylePreview/Christmas_ny20"
+msgstr "Пряничная защита"
+
+msgid "collectionsReward/stylePreview/Christmas_ny21"
+msgstr "G, Fis, E, D, C, H, A, G"
+
+msgid "collectionsReward/stylePreview/Christmas_ny22"
+msgstr "Утеплённая броня"
+
+msgid "collectionsReward/stylePreview/Fairytale_ny19"
+msgstr "Многотонный подарочек"
+
+msgid "collectionsReward/stylePreview/Fairytale_ny20"
+msgstr "Броня из мандариниума"
+
+msgid "collectionsReward/stylePreview/Fairytale_ny21"
+msgstr "Натальная карта"
+
+msgid "collectionsReward/stylePreview/Fairytale_ny22"
+msgstr "Роботизированная маскировка"
+
+msgid "collectionsReward/stylePreview/Mega_ny20"
+msgstr "Ёлочные игрушки"
+
+msgid "collectionsReward/stylePreview/Mega_ny21"
+msgstr "Безудержное веселье"
+
+msgid "collectionsReward/stylePreview/Mega_ny22"
+msgstr "Страна чудес"
+
+msgid "collectionsReward/stylePreview/NewYear_ny19"
+msgstr "Великий хвоин"
+
+msgid "collectionsReward/stylePreview/NewYear_ny20"
+msgstr "Его Ворсейшество"
+
+msgid "collectionsReward/stylePreview/NewYear_ny21"
+msgstr "Зернистая броня"
+
+msgid "collectionsReward/stylePreview/NewYear_ny22"
+msgstr "Цитрус"
+
+msgid "collectionsReward/stylePreview/Oriental_ny19"
+msgstr "Ночь бенгальских огней"
+
+msgid "collectionsReward/stylePreview/Oriental_ny20"
+msgstr "Цветущая сакура"
+
+msgid "collectionsReward/stylePreview/Oriental_ny21"
+msgstr "Пандамагия"
+
+msgid "collectionsReward/stylePreview/Oriental_ny22"
+msgstr "Броня умиления"
+
+msgid "collectionsReward/stylePreview/asian_ny18"
+msgstr "Китайский Новый год"
+
+msgid "collectionsReward/stylePreview/counter"
+msgstr "%(count)s / %(total)s"
+
+msgid "collectionsReward/stylePreview/modernWestern_ny18"
+msgstr "Современное Рождество"
+
+msgid "collectionsReward/stylePreview/received"
+msgstr "Получено"
+
+msgid "collectionsReward/stylePreview/soviet_ny18"
+msgstr "Новый год"
+
+msgid "collectionsReward/stylePreview/traditionalWestern_ny18"
+msgstr "Традиционное Рождество"
+
+msgid "collectionsReward/stylePreviewAcquired"
+msgstr "Награда получена"
+
+msgid "collectionsReward/toCollectionBtn"
+msgstr "Перейти к коллекции"
+
+msgid "compensationTooltip/footer"
+msgstr "Компенсация за уже имеющееся имущество"
+
+msgid "compensationTooltip/subtitle"
+msgstr "Компенсация за украшения, которые уже есть в наличии."
+
+msgid "compensationTooltip/title"
+msgstr "Мандарины"
+
+msgid "compensationTooltip/toys"
+msgstr "Украшения"
+
+msgid "confirmBreakToys/atmosphereBonusMessage"
+msgstr ""
+"{white_Open}Разбить украшения на сумму: %(count)s%(icon)s?{white_Close}"
+
+msgid "confirmBreakToys/atmosphereBonusTitle"
+msgstr ""
+"Некоторые из выбранных украшений ещё могут повысить атмосферу праздника! "
+"Рекомендуем сначала разместить их в слоты."
+
+msgid "confirmBreakToys/cancel"
+msgstr "Отменить"
+
+msgid "confirmBreakToys/message"
+msgstr ""
+"%(white_Open)sВы хотите разбить украшения на кругленькую сумму. Уверены, что"
+" хотите продолжить?%(white_Close)s"
+
+msgid "confirmBreakToys/submit"
+msgstr "Разбить"
+
+msgid "confirmBreakToys/title"
+msgstr "Разбить украшения на сумму: %(count)s%(icon)s?"
+
+msgid "confirmNotEnoughShardsToUpgrade/cancel"
+msgstr "Отменить"
+
+msgid "confirmNotEnoughShardsToUpgrade/highlight"
+msgstr "{level} недоступно"
+
+msgid "confirmNotEnoughShardsToUpgrade/message"
+msgstr "Не хватает осколков:"
+
+msgid "confirmNotEnoughShardsToUpgrade/submit"
+msgstr "Получить осколки"
+
+msgid "confirmNotEnoughShardsToUpgrade/title"
+msgstr "Повышение уровня подарков до %(highlight)"
+
+msgid "confirmResetLootboxStatistics/cancel"
+msgstr "Отменить"
+
+msgid "confirmResetLootboxStatistics/description"
+msgstr "Все данные по уже открытым коробкам будут сброшены."
+
+msgid "confirmResetLootboxStatistics/submit"
+msgstr "Сбросить"
+
+msgid "confirmResetLootboxStatistics/title"
+msgstr "Сбросить статистику?"
+
+msgid "confirmSimplification/cancel"
+msgstr "Отменить"
+
+msgid "confirmSimplification/message"
+msgstr "Это вам обойдётся в  {count}"
+
+msgid "confirmSimplification/submit"
+msgstr "Упростить"
+
+msgid "confirmSimplification/title"
+msgstr "Упростить задачу?"
+
+msgid "confirmUpgradeBonusStage/cancel"
+msgstr "Отменить"
+
+msgid "confirmUpgradeBonusStage/cost"
+msgstr "Стоимость:"
+
+msgid "confirmUpgradeBonusStage/hint"
+msgstr ""
+"Чтобы повышать уровень подарков бесплатно, просто забирайте их ежедневно. "
+"Каждый раз, когда вы забираете подарок, его уровень продвигается на 1 этап."
+
+msgid "confirmUpgradeBonusStage/levels/level2"
+msgstr "II, III, IV или V уровня"
+
+msgid "confirmUpgradeBonusStage/levels/level3"
+msgstr "III, IV или V уровня"
+
+msgid "confirmUpgradeBonusStage/levels/level4"
+msgstr "IV или V уровня"
+
+msgid "confirmUpgradeBonusStage/levels/level5"
+msgstr "только V уровня"
+
+msgid "confirmUpgradeBonusStage/message"
+msgstr ""
+"И тогда они будут содержать случайное украшение %(level) и {taskCount} на "
+"%(task)."
+
+msgid "confirmUpgradeBonusStage/submit"
+msgstr "Повысить"
+
+msgid "confirmUpgradeBonusStage/task"
+msgstr "х5 опыта"
+
+msgid "confirmUpgradeBonusStage/taskCounts/task1"
+msgstr "задачу"
+
+msgid "confirmUpgradeBonusStage/taskCounts/task2"
+msgstr "2 задачи"
+
+msgid "confirmUpgradeBonusStage/taskCounts/task3"
+msgstr "3 задачи"
+
+msgid "confirmUpgradeBonusStage/taskCounts/task4"
+msgstr "4 задачи"
+
+msgid "confirmUpgradeBonusStage/title"
+msgstr "Повысить уровень подарков до %(level)?"
+
+msgid "craftMachineBtn/tooltip"
+msgstr ""
+"В НГК 2.0 можно создать новые украшения, чтобы повысить уровень атмосферы "
+"праздника."
+
+msgid "craftView/antiDuplicator/switch/off"
+msgstr "ВЫКЛЮЧЕНО"
+
+msgid "craftView/antiDuplicator/switch/onUseShards"
+msgstr "ИСПОЛЬЗОВАТЬ %(amountOfShards)s"
+
+msgid "craftView/cost"
+msgstr "СТОИМОСТЬ"
+
+msgid "craftView/craftBtn"
+msgstr ""
+"СОЗДАТЬ\n"
+"УКРАШЕНИЕ"
+
+msgid "craftView/levelsSlider/levelBtn/tooltip/body"
+msgstr "Нажмите, чтобы выбрать украшение указанного уровня."
+
+msgid "craftView/levelsSlider/randomBtn/tooltip/header"
+msgstr "Случайный уровень"
+
+msgid "craftView/levelsSlider/title"
+msgstr "УРОВЕНЬ"
+
+msgid "craftView/monitor/duplicate/label"
+msgstr "Антиповторитель: %(param)s"
+
+msgid "craftView/monitor/duplicate/off"
+msgstr "Выкл"
+
+msgid "craftView/monitor/duplicate/on"
+msgstr "Вкл"
+
+msgid "craftView/monitor/fullRegular/description"
+msgstr "Вы уже собрали все украшения 2024 года."
+
+msgid "craftView/monitor/fullRegular/title"
+msgstr "СОЗДАНИЕ УКРАШЕНИЯ БЕЗ ПОВТОРЕНИЙ НЕВОЗМОЖНО"
+
+msgid "craftView/monitor/fullRegularSubGroup"
+msgstr "Вы уже собрали все украшения выбранного уровня, альбома и типа."
+
+msgid "craftView/monitor/hasRandomParam/description"
+msgstr ""
+"Чтобы создать украшение без повторений, укажите уровень украшения, альбом и "
+"тип."
+
+msgid "craftView/monitor/hasRandomParam/title"
+msgstr "СОЗДАНИЕ УКРАШЕНИЯ НЕВОЗМОЖНО"
+
+msgid "craftView/monitor/level"
+msgstr "Уровень: %(param)s"
+
+msgid "craftView/monitor/notAvailableFillers"
+msgstr ""
+"НЕТ ЗАРЯДОВ\n"
+"На создание уникального обычного украшения расходуются заряды. Они выдаются с достижением каждого нового уровня атмосферы праздника."
+
+msgid "craftView/monitor/notAvailableShards/description"
+msgstr ""
+"Для создания украшения нужны\n"
+"осколки. Их можно получить, разбив\n"
+"несколько ненужных украшений.\n"
+"Разбитые украшения НЕ исчезают\n"
+"из альбомов коллекций."
+
+msgid "craftView/monitor/notAvailableShards/label"
+msgstr "НЕТ ОСКОЛКОВ"
+
+msgid "craftView/monitor/notEnoughShards/descriptionRegular"
+msgstr ""
+"На создание украшения расходуются осколки.\n"
+"Их можно получить, разбив несколько\n"
+"ненужных украшений. Разбитые украшения\n"
+"НЕ исчезают из альбомов коллекций."
+
+msgid "craftView/monitor/notEnoughShards/labelRegular"
+msgstr "НЕДОСТАТОЧНО ОСКОЛКОВ"
+
+msgid "craftView/monitor/objectType"
+msgstr "Расположение: %(param)s"
+
+msgid "craftView/monitor/regularToy"
+msgstr "ПРОЕКТ УКРАШЕНИЯ"
+
+msgid "craftView/monitor/setting/Christmas"
+msgstr "Рождественский"
+
+msgid "craftView/monitor/setting/Fairytale"
+msgstr "Сказочный"
+
+msgid "craftView/monitor/setting/NewYear"
+msgstr "Отечественный"
+
+msgid "craftView/monitor/setting/Oriental"
+msgstr "Восточный"
+
+msgid "craftView/monitor/setting/base"
+msgstr "Альбом: %(param)s"
+
+msgid "craftView/monitor/shardsLeft"
+msgstr "Осталось осколков: %(param)s"
+
+msgid "craftView/monitor/type"
+msgstr "Тип украшения: %(param)s"
+
+msgid "craftView/objectTitle/Fir"
+msgstr "Ель"
+
+msgid "craftView/objectTitle/random"
+msgstr "Cлучайный"
+
+msgid "craftView/objectTitle/random/collection"
+msgstr "Cлучайный"
+
+msgid "craftView/objectTitle/random/level"
+msgstr "Cлучайный"
+
+msgid "craftView/objectTitle/random/place"
+msgstr "Случайное"
+
+msgid "craftView/objectTitle/upper/Fir"
+msgstr "ЕЛЬ"
+
+msgid "craftView/objectTitle/upper/random"
+msgstr "СЛУЧАЙНЫЙ"
+
+msgid "craftView/purchaseForm/backBtn"
+msgstr "К задачам"
+
+msgid "craftView/purchaseForm/buyBtn"
+msgstr "Купить"
+
+msgid "craftView/purchaseForm/description"
+msgstr ""
+"Получайте подарки за жетоны в автомате удачи! Больше жетонов — больше "
+"подарков!"
+
+msgid "craftView/purchaseForm/errorText"
+msgstr "Не удалось совершить покупку. Попробуйте повторить попытку позже."
+
+msgid "craftView/purchaseForm/header"
+msgstr "Автомат удачи"
+
+msgid "craftView/purchaseForm/rule_1"
+msgstr ""
+"Для получения доступа к покупке жетонов повысьте атмосферу праздника до Х "
+"уровня."
+
+msgid "craftView/purchaseForm/rule_2"
+msgstr ""
+"Получить жетоны в качестве награды можно за выполнение праздничных задач."
+
+msgid "craftView/rewards/title"
+msgstr "за новое украшение"
+
+msgid "craftView/settingsSlider/title"
+msgstr "АЛЬБОМ"
+
+msgid "craftView/slider/getTokens"
+msgstr ""
+"Потратить\n"
+"жетоны"
+
+msgid "craftView/slider/spendTokens"
+msgstr ""
+"Получить\n"
+"жетоны"
+
+msgid "craftView/typeGroup/title"
+msgstr "ТИП УКРАШЕНИЯ"
+
+msgid "currencyPanel/currency/notAvailable"
+msgstr "---"
+
+msgid "currencyPanel/tooltip/count/gold"
+msgstr "%(count)s В наличии"
+
+msgid "currencyPanel/tooltip/count/ny25Token"
+msgstr "%(count)s В наличии"
+
+msgid "currencyPanel/tooltip/count/ny25_mandarin"
+msgstr "%(count)s В наличии"
+
+msgid "currencyPanel/tooltip/description1/ny25Token"
+msgstr ""
+"Получайте подарки, используя жетоны в автомате удачи. Жетоны можно получить "
+"за выполнение праздничных задач, а также обменяв оставшиеся мандарины по "
+"достижении Х уровня атмосферы праздника."
+
+msgid "currencyPanel/tooltip/description1/ny25_mandarin"
+msgstr ""
+"Основной ресурс праздничного события. Можно получить из контейнеров события "
+"«Наш Новый год»."
+
+msgid "currencyPanel/tooltip/description2/gold"
+msgstr ""
+"Ценная игровая валюта, которую можно потратить на покупку всяких штук для "
+"питомца. Также расходуется на покупку широкого спектра игрового имущества: "
+"премиум аккаунта, техники, на перевод боевого опыта в свободный и т.д."
+
+msgid "currencyPanel/tooltip/description2/ny25Token"
+msgstr "Используются для запуска автомата удачи."
+
+msgid "currencyPanel/tooltip/description2/ny25_mandarin"
+msgstr "Используются для повышения уровня всех фотозон в праздничном городке."
+
+msgid "currencyPanel/tooltip/hint/gold"
+msgstr "Нажмите, чтобы перейти на страницу покупки золота."
+
+msgid "currencyPanel/tooltip/hint/ny25Token"
+msgstr "Нажмите, чтобы перейти к автомату."
+
+msgid "currencyPanel/tooltip/title/gold"
+msgstr "Золото"
+
+msgid "currencyPanel/tooltip/title/ny25Token"
+msgstr "Жетоны для автомата"
+
+msgid "currencyPanel/tooltip/title/ny25_mandarin"
+msgstr "Мандарины"
+
+msgid "customizationLevelUpView/cancel"
+msgstr "Отменить"
+
+msgid "customizationLevelUpView/confirm"
+msgstr "Повысить"
+
+msgid "customizationLevelUpView/customizationZone/Attractions"
+msgstr "аттракциона"
+
+msgid "customizationLevelUpView/customizationZone/Fair"
+msgstr "ярмарки"
+
+msgid "customizationLevelUpView/customizationZone/Fir"
+msgstr "ели"
+
+msgid "customizationLevelUpView/customizationZone/Installations"
+msgstr "инсталляции"
+
+msgid "customizationLevelUpView/customizationZone/Lights"
+msgstr "иллюминации"
+
+msgid "customizationLevelUpView/customizationZone/Skating"
+msgstr "катка"
+
+msgid "customizationLevelUpView/description"
+msgstr ""
+"За повышение уровня фотозоны начисляется %(count)s ед. очков атмосферы "
+"праздника."
+
+msgid "customizationLevelUpView/info"
+msgstr "Доступные мандарины: "
+
+msgid "customizationLevelUpView/title"
+msgstr "Повысить уровень %(customizationZone)?"
+
+msgid "customizationZones/level"
+msgstr "Уровень {white_Open}%(level)s{white_Close}"
+
+msgid "customizationZones/markerInfo"
+msgstr "Украсить"
+
+msgid "customizationZones/markerLevel"
+msgstr "Уровень %(level)s"
+
+msgid "customizationZones/markerLevelUp"
+msgstr "Повысить до %(level)s ур."
+
+msgid "customizationZones/maxLevel"
+msgstr "Максимальный уровень"
+
+msgid "customizationZones/minLevel"
+msgstr "Уровень не получен"
+
+msgid "customizationZones/name/Attractions"
+msgstr "Аттракцион"
+
+msgid "customizationZones/name/Fair"
+msgstr "Ярмарка"
+
+msgid "customizationZones/name/Fir"
+msgstr "Ель"
+
+msgid "customizationZones/name/Installations"
+msgstr "Инсталляция"
+
+msgid "customizationZones/name/Lights"
+msgstr "Иллюминация"
+
+msgid "customizationZones/name/Skating"
+msgstr "Каток"
+
+msgid "customizationZones/notification/Attractions"
+msgstr "аттракциона"
+
+msgid "customizationZones/notification/Fair"
+msgstr "ярмарки"
+
+msgid "customizationZones/notification/Fir"
+msgstr "ели"
+
+msgid "customizationZones/notification/Installations"
+msgstr "инсталляции"
+
+msgid "customizationZones/notification/Lights"
+msgstr "иллюминации"
+
+msgid "customizationZones/notification/Skating"
+msgstr "катка"
+
+msgid "customizationZones/notification/header"
+msgstr "Уровень %(customizationZone)s повышен!"
+
+msgid "customizationZones/notification/maxLevel/text"
+msgstr ""
+"Достигнут максимальный уровень. В награду за повышение начислено "
+"%(toyCount)s шт. новых украшений."
+
+msgid "customizationZones/notification/text"
+msgstr ""
+"Текущий уровень:%(currentLevel)s. В награду за повышение начислено "
+"%(toyCount)s шт. новых украшений."
+
+msgid "customizationZones/tooltip/Attractions/description"
+msgstr "аттракциона"
+
+msgid "customizationZones/tooltip/Attractions/header"
+msgstr "Аттракцион"
+
+msgid "customizationZones/tooltip/Fair/description"
+msgstr "ярмарки"
+
+msgid "customizationZones/tooltip/Fair/header"
+msgstr "Ярмарка"
+
+msgid "customizationZones/tooltip/Fir/description"
+msgstr "ели"
+
+msgid "customizationZones/tooltip/Fir/header"
+msgstr "Ель"
+
+msgid "customizationZones/tooltip/Installations/description"
+msgstr "инсталляции"
+
+msgid "customizationZones/tooltip/Installations/header"
+msgstr "Инсталляция"
+
+msgid "customizationZones/tooltip/Lights/description"
+msgstr "иллюминации"
+
+msgid "customizationZones/tooltip/Lights/header"
+msgstr "Иллюминация"
+
+msgid "customizationZones/tooltip/Skating/description"
+msgstr "катка"
+
+msgid "customizationZones/tooltip/Skating/header"
+msgstr "Каток"
+
+msgid "customizationZones/tooltip/back"
+msgstr "Перейти к предыдущей фотозоне."
+
+msgid "customizationZones/tooltip/cost"
+msgstr "Стоимость повышения"
+
+msgid "customizationZones/tooltip/decorationCount"
+msgid_plural "count"
+msgstr[0] "%(count)s новое украшение"
+msgstr[1] "%(count)s новых украшения"
+msgstr[2] "%(count)s новых украшений"
+
+msgid "customizationZones/tooltip/description"
+msgstr ""
+"С увеличением уровня %(customization)s также будет расти уровень атмосферы праздника. \n"
+" \n"
+"На каждом новом уровне %(customization)s будет разблокировано %(decorationCount)s."
+
+msgid "customizationZones/tooltip/level/header"
+msgstr "Уровень %(currentLevel)s из %(maxLevel)s"
+
+msgid "customizationZones/tooltip/maxLevel/description"
+msgstr "Достигнут максимальный уровень %(customization)s."
+
+msgid "customizationZones/tooltip/maxLevel/header"
+msgstr "Уровень %(maxLevel)s. Максимальный"
+
+msgid "customizationZones/tooltip/next"
+msgstr "Перейти к следующей фотозоне."
+
+msgid "customizationZones/tooltip/zeroLevel/header"
+msgstr "Уровень не получен"
+
+msgid "decoration/tooltip/Attractions/locked"
+msgstr "Аттракциона"
+
+msgid "decoration/tooltip/Fair/locked"
+msgstr "Ярмарки"
+
+msgid "decoration/tooltip/Fir/locked"
+msgstr "Ели"
+
+msgid "decoration/tooltip/Installations/locked"
+msgstr "Инсталляции"
+
+msgid "decoration/tooltip/Lights/locked"
+msgstr "Иллюминации"
+
+msgid "decoration/tooltip/Skating/locked"
+msgstr "Катка"
+
+msgid "decoration/tooltip/default"
+msgstr "Обычное украшение"
+
+msgid "decoration/tooltip/info"
+msgstr "Украшение не влияет на уровень атмосферы праздника."
+
+msgid "decoration/tooltip/locked"
+msgstr "Заблокировано"
+
+msgid "decoration/tooltip/lockedDescription/default"
+msgstr ""
+"Разблокируется на {brown_open}%(zoneLvl)s уровне{brown_close} %(zoneName)s."
+
+msgid "decoration/tooltip/lockedDescription/premium"
+msgstr "Разблокируется при получении из контейнера."
+
+msgid "decoration/tooltip/pet_bed"
+msgstr "Лежанка"
+
+msgid "decoration/tooltip/pet_food"
+msgstr "Еда"
+
+msgid "decoration/tooltip/pet_interactive"
+msgstr "Развлечение"
+
+msgid "decoration/tooltip/pet_toy"
+msgstr "Игрушка"
+
+msgid "decoration/tooltip/premium"
+msgstr "Редкое украшение"
+
+msgid "decoration/tooltip/slot"
+msgstr ""
+"В этот слот фотозоны можно установить только украшения "
+"типа %(decorationType)s."
+
+msgid "decoration/tooltip/unlocked"
+msgstr "Разблокировано"
+
+msgid "decoration/tooltip/unlockedDescription"
+msgstr "Доступно для всех слотов данного типа."
+
+msgid "decorationSlot/animation/pure/toy"
+msgstr "к атмосфере праздника"
+
+msgid "decorationSlot/tooltip/advantages"
+msgstr "При установке дает:"
+
+msgid "decorationSlot/tooltip/atmospherePoints"
+msgstr "Очки атмосферы праздника"
+
+msgid "decorationSlot/tooltip/bonus"
+msgstr " Бонус к кредитам"
+
+msgid "decorationSlot/tooltip/costParts/group"
+msgstr "Стоимость в осколках (1 шт.)"
+
+msgid "decorationSlot/tooltip/count"
+msgstr "Украшения в наличии (шт.)"
+
+msgid "decorationSlot/tooltip/levelDecoration"
+msgstr "Уровень украшения"
+
+msgid "decorationSlot/tooltip/newDeviceAdvantages"
+msgstr "Новое украшение! При установке дает:"
+
+msgid "decorationSlot/tooltip/newDevicesAdvantages"
+msgstr "Новые украшения! При установке дают:"
+
+msgid "decorationSlot/tooltip/rank"
+msgstr "Уровень украшения"
+
+msgid "decorationSlot/tooltip/shardsPrice"
+msgstr "Стоимость в осколках"
+
+msgid "decorationTypes/air_balloon"
+msgstr "Монгольфьеры"
+
+msgid "decorationTypes/attraction"
+msgstr "Аттракцион"
+
+msgid "decorationTypes/ball"
+msgstr "Подвесное украшение"
+
+msgid "decorationTypes/bridge"
+msgstr "Гранд Виадук"
+
+msgid "decorationTypes/castle"
+msgstr "Небельбург"
+
+msgid "decorationTypes/ferris_wheel"
+msgstr "Колесо обозрения"
+
+msgid "decorationTypes/floor"
+msgstr "Подарок под ель"
+
+msgid "decorationTypes/garland_fair"
+msgstr "Гирлянда: ярмарка"
+
+msgid "decorationTypes/garland_fir"
+msgstr "Гирлянда"
+
+msgid "decorationTypes/garland_installation"
+msgstr "Гирлянда: инсталляция"
+
+msgid "decorationTypes/gift"
+msgstr "Подарок под ель"
+
+msgid "decorationTypes/ground_light"
+msgstr "Малое освещение"
+
+msgid "decorationTypes/hanging"
+msgstr "Навесные украшения"
+
+msgid "decorationTypes/house_decoration"
+msgstr "Украшение дома"
+
+msgid "decorationTypes/house_lamp"
+msgstr "Малое освещение"
+
+msgid "decorationTypes/kiosk"
+msgstr "Киоск"
+
+msgid "decorationTypes/kitchen"
+msgstr "Кухня"
+
+msgid "decorationTypes/lights_fir"
+msgstr "Шатёр из гирлянд на ёлке"
+
+msgid "decorationTypes/lights_houses"
+msgstr "Подсветка зданий"
+
+msgid "decorationTypes/mega_fir"
+msgstr "Большое украшение ели"
+
+msgid "decorationTypes/mega_illumination"
+msgstr "Большое украшение дворика"
+
+msgid "decorationTypes/mega_installation"
+msgstr "Большое украшение инсталляции"
+
+msgid "decorationTypes/mega_tableful"
+msgstr "Большое украшение застолья"
+
+msgid "decorationTypes/pavilion"
+msgstr "Беседка"
+
+msgid "decorationTypes/pet_bed"
+msgstr "Лежанка"
+
+msgid "decorationTypes/pet_food"
+msgstr "Еда"
+
+msgid "decorationTypes/pet_interactive"
+msgstr "Развлечение"
+
+msgid "decorationTypes/pet_toy"
+msgstr "Игрушка"
+
+msgid "decorationTypes/pyro"
+msgstr "Пиротехника"
+
+msgid "decorationTypes/random"
+msgstr "Случайный тип украшения"
+
+msgid "decorationTypes/sculpture"
+msgstr "Скульптура"
+
+msgid "decorationTypes/sculpture_light"
+msgstr "Освещение скульптуры"
+
+msgid "decorationTypes/skating"
+msgstr "Каток"
+
+msgid "decorationTypes/snow_item"
+msgstr "Декорации"
+
+msgid "decorationTypes/snowman"
+msgstr "Снеговик"
+
+msgid "decorationTypes/street_garland"
+msgstr "Внешние гирлянды"
+
+msgid "decorationTypes/table"
+msgstr "Стол"
+
+msgid "decorationTypes/top"
+msgstr "Навершие"
+
+msgid "decorationTypes/trees"
+msgstr "Гирлянда: инсталляция"
+
+msgid "decorationTypes/typeDisplay/ball"
+msgstr "ПОДВЕСНОЕ УКРАШЕНИЕ"
+
+msgid "decorationTypes/typeDisplay/floor"
+msgstr "ПОДАРОК ПОД ЕЛЬ"
+
+msgid "decorationTypes/typeDisplay/garland_fir"
+msgstr "ГИРЛЯНДА"
+
+msgid "decorationTypes/typeDisplay/ground_light"
+msgstr "МАЛОЕ ОСВЕЩЕНИЕ"
+
+msgid "decorationTypes/typeDisplay/kitchen"
+msgstr "КУХНЯ"
+
+msgid "decorationTypes/typeDisplay/lights_fir"
+msgstr "Шатёр из гирлянд на ёлке"
+
+msgid "decorationTypes/typeDisplay/lights_houses"
+msgstr "Подсветка зданий"
+
+msgid "decorationTypes/typeDisplay/pet_bed"
+msgstr "ЛЕЖАНКА"
+
+msgid "decorationTypes/typeDisplay/pet_food"
+msgstr "ЕДА"
+
+msgid "decorationTypes/typeDisplay/pet_interactive"
+msgstr "Развлечение"
+
+msgid "decorationTypes/typeDisplay/pet_toy"
+msgstr "ИГРУШКА"
+
+msgid "decorationTypes/typeDisplay/random"
+msgstr "Случайный"
+
+msgid "decorationTypes/typeDisplay/sculpture"
+msgstr "СКУЛЬПТУРА"
+
+msgid "decorationTypes/typeDisplay/sculpture_light"
+msgstr "ОСВЕЩЕНИЕ СКУЛЬПТУРЫ"
+
+msgid "decorationTypes/typeDisplay/skating"
+msgstr "КАТОК"
+
+msgid "decorationTypes/typeDisplay/table"
+msgstr "СТОЛ"
+
+msgid "decorationTypes/typeDisplay/top"
+msgstr "НАВЕРШИЕ"
+
+msgid "decorationTypes/typeDisplay/trees"
+msgstr "НАРУЖНАЯ ГИРЛЯНДА"
+
+msgid "decorationsPopover/break/info"
+msgstr "Правый клик мыши — отметить украшения для разбития"
+
+msgid "decorationsPopover/breakButton/disabled"
+msgstr "Получить осколки"
+
+msgid "decorationsPopover/breakButton/label"
+msgstr "Осколки: %(count)s"
+
+msgid "decorationsPopover/breakButton/tooltip/body"
+msgstr ""
+"Кликайте правой кнопкой мыши на украшения, чтобы выбрать те, которые хотите "
+"разбить."
+
+msgid "decorationsPopover/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "decorationsPopover/description"
+msgstr "Выберите украшение из списка"
+
+msgid "decorationsPopover/empty/description/part_0"
+msgstr ""
+"Выполняйте ежедневные боевые задачи и задачи события «Наши победы», "
+"получайте контейнеры c украшениями."
+
+msgid "decorationsPopover/empty/description/part_1"
+msgstr "Создавайте новые украшения из осколков в коллайдере."
+
+msgid "decorationsPopover/empty/description/part_2"
+msgstr "Покупайте новогодние контейнеры — в них тоже есть украшения."
+
+msgid "decorationsPopover/empty/title"
+msgstr "Как получить украшения"
+
+msgid "decorationsPopover/goToCraft/tooltip"
+msgstr "Перейти к созданию украшений"
+
+msgid "decorationsPopover/locked/tooltip/description"
+msgstr ""
+"Для разморозки слота необходимо украшение, которое ранее ещё не устанавливалось ни в один слот.\n"
+"\n"
+"Для второй и последующих установок украшений можно использовать любые доступные украшения подходящего типа."
+
+msgid "decorationsPopover/locked/tooltip/title"
+msgstr "Не подходит для первой установки"
+
+msgid "dialogs/buyBigCollectionItem/title"
+msgstr "Купить большое украшение «%(toyName)s»"
+
+msgid "dialogs/buyCollectionItem/balance"
+msgstr "В наличии:"
+
+msgid "dialogs/buyCollectionItem/btnBuy"
+msgstr "Купить"
+
+msgid "dialogs/buyCollectionItem/btnCancel"
+msgstr "Отменить"
+
+msgid "dialogs/buyCollectionItem/price"
+msgstr "Стоимость:"
+
+msgid "dialogs/buyCollectionItem/title"
+msgstr "Купить украшение «%(toyName)s»"
+
+msgid "dialogs/buyFullCollection/title"
+msgstr "Купить все недостающие украшения коллекции «%(settingName)s»?"
+
+msgid "dialogs/dailyQuestsLootboxesInfo/boxes"
+msgstr "малые коробки"
+
+msgid "dialogs/dailyQuestsLootboxesInfo/buttons/submit"
+msgstr "Так точно!"
+
+msgid "dialogs/dailyQuestsLootboxesInfo/title"
+msgstr "Новогодние награды в ежедневных задачах"
+
+msgid "dialogs/setVehicleBranch/addVehicleTitle"
+msgstr "Установить %(vehicle)s?"
+
+msgid "dialogs/setVehicleBranch/btnApply"
+msgstr "Заменить"
+
+msgid "dialogs/setVehicleBranch/btnCancel"
+msgstr "Отменить"
+
+msgid "dialogs/setVehicleBranch/btnSelect"
+msgstr "Выбрать"
+
+msgid "dialogs/setVehicleBranch/price"
+msgstr "Стоимость: "
+
+msgid "dialogs/setVehicleBranch/title"
+msgstr "Заменить %(oldVehicle)s на %(newVehicle)s?"
+
+msgid "dialogs/vehicleHint/description"
+msgstr ""
+"Начиная с %(fromLevel)s уровня атмосферы праздника, чем выше уровень "
+"атмосферы, тем выше уровень машины, которую можно установить в новогодний "
+"слот."
+
+msgid "dialogs/vehicleHint/range"
+msgstr "%(fromLevel)s-%(toLevel)s"
+
+msgid "dialogs/vehicleHint/submit"
+msgstr "Так точно!"
+
+msgid "dialogs/vehicleHint/subtitle"
+msgstr ""
+"Диапазон уровней устанавливаемых в слот машин расширен до "
+"%(fromLevel)s-%(toLevel)s"
+
+msgid "dialogs/vehicleHint/title"
+msgstr "%(level)s уровень атмосферы"
+
+msgid "emptySlot/createLabel"
+msgstr "СОЗДАТЬ"
+
+msgid "fillersTooltip/description"
+msgstr ""
+"Это странное вещество в четвёртом агрегатном состоянии используется в "
+"качестве топлива для самой полезной функции Нового Годного Коллайдера — "
+"блокировки досадной возможности создания уже имеющихся украшений. Заряды "
+"выдаются ТОЛЬКО за уровни атмосферы праздника и используются для создания "
+"обычных украшений (НЕ больших). Распоряжайтесь ими мудро!"
+
+msgid "fillersTooltip/header"
+msgstr "Заряд для антиповторителя"
+
+msgid "fragments/name"
+msgstr "Осколки"
+
+msgid "fragments/tooltip"
+msgstr ""
+"У вас уже есть такое украшение, поэтому мы компенсируем его осколками: "
+"%(count)s"
+
+msgid "getPartsBtn/tooltip/available"
+msgstr "Осколков в наличии"
+
+msgid "getPartsBtn/tooltip/description"
+msgstr ""
+"Разбивайте ненужные украшения, а из полученных осколков создавайте новые."
+
+msgid "getPartsBtn/tooltip/title"
+msgstr "Осколки"
+
+msgid "levelUpView/additionalRewards"
+msgstr "Также получено:"
+
+msgid "levelUpView/banner/text"
+msgstr ""
+"Получайте новые уровни атмосферы праздника, улучшая фотозоны за мандарины. "
+"Мандарины можно достать из праздничных контейнеров, получаемых за выполнение"
+" специальных задач."
+
+msgid "levelUpView/banner/title"
+msgstr "ЕЩЕ БОЛЬШЕ НАГРАД"
+
+msgid "levelUpView/choseBtn/label"
+msgstr "Выбрать"
+
+msgid "levelUpView/congrats"
+msgstr "Новый уровень атмосферы праздника!"
+
+msgid "levelUpView/finishBanner/text"
+msgstr ""
+"Вы достигли Х уровня атмосферы праздника! Теперь вы можете обменять все свои"
+" мандарины на жетоны и использовать их в автомате удачи."
+
+msgid "levelUpView/finishBanner/title"
+msgstr "МЕНЯЙТЕ МАНДАРИНЫ НА ПОДАРКИ"
+
+msgid "levelUpView/gotoQuestsBtn/label"
+msgstr "К задачам"
+
+msgid "levelUpView/gotoStoreBtn/label"
+msgstr "К автомату"
+
+msgid "levelUpView/okBtn/label"
+msgstr "Так точно!"
+
+msgid "levelUpView/restAdditionalRewards"
+msgstr "И еще: %(count)s"
+
+msgid "levelUpView/rewards/description/primary"
+msgstr "Получен слот для новогодней техники {level} уровня"
+
+msgid "levelUpView/rewards/description/primary/psa"
+msgstr "Наша скромная благодарность за то, что вы с нами."
+
+msgid "levelUpView/rewards/finishSubtitle"
+msgstr "Вы достигли максимального уровня атмосферы праздника!"
+
+msgid "levelUpView/rewards/firstTitle"
+msgstr "Волшебство начинается!"
+
+msgid "levelUpView/rewards/otherTitle"
+msgstr "Поздравляем!"
+
+msgid "levelUpView/rewards/psaTitle"
+msgstr "А вот и новогодний сюрприз!"
+
+msgid "levelUpView/rewards/subtitle"
+msgstr "Получена награда за %(level)s уровень атмосферы праздника."
+
+msgid "levelUpView/rewards/variadicDiscountTitle"
+msgstr "Скидка на технику %(vehicleLevel)s уровня"
+
+msgid "levelUpView/toTanksBtn/label"
+msgstr "К слотам"
+
+msgid "levelUpWidget/button/up"
+msgstr "Повысить %(currency)s"
+
+msgid "levelUpWidget/title"
+msgstr "Повысить уровень до %(level)s"
+
+msgid "levelUpWidget/tooltip/bonus1"
+msgstr ""
+"будет начислено очков атмосферы: "
+"%(brown_Open)s%(pointsCount)s%(brown_Close)s"
+
+msgid "levelUpWidget/tooltip/bonus2"
+msgstr ""
+"разблокируется новых украшений: %(brown_Open)s%(toysCount)s%(brown_Close)s"
+
+msgid "levelUpWidget/tooltip/listHeader"
+msgstr "За повышение %(zoneName)s до %(level)s уровня:"
+
+msgid "levelUpWidget/tooltip/price"
+msgstr "%(currency)s Стоимость повышения"
+
+msgid "levelUpWidget/tooltip/title"
+msgstr "Повысить уровень"
+
+msgid "levelUpWidget/upCondition"
+msgstr "Стоимость повышения уровня: %(currency)s"
+
+msgid "levelsRewards/gotoStoreBtn"
+msgstr "В Магазин"
+
+msgid "levelsRewards/lock/tooltip/description"
+msgstr ""
+"Создавайте новые украшения в коллайдере и получайте их из новогодних "
+"контейнеров, чтобы повысить уровень атмосферы праздника и получить награды."
+
+msgid "levelsRewards/lock/tooltip/header"
+msgstr "Уровень атмосферы не достигнут"
+
+msgid "levelsRewards/more"
+msgstr "И ещё наград: %(count)s"
+
+msgid "levelsRewards/renderer/tankwomanBtn/label"
+msgstr "Рекрутировать"
+
+msgid "levelsRewards/tankWoman"
+msgstr "Девушка-танкист"
+
+msgid "levelsRewards/vehiclesBtn/label"
+msgstr "Новогодняя техника"
+
+msgid "lootBox/typeNames/goTo/Christmas"
+msgstr "Рождественским коробкам"
+
+msgid "lootBox/typeNames/goTo/Fairytale"
+msgstr "Волшебным коробкам"
+
+msgid "lootBox/typeNames/goTo/NewYear"
+msgstr "Новогодним коробкам"
+
+msgid "lootBox/typeNames/goTo/Oriental"
+msgstr "Восточным коробкам"
+
+msgid "lootBox/typeNames/of/Christmas"
+msgstr "Рождественских коробок"
+
+msgid "lootBox/typeNames/of/Fairytale"
+msgstr "Волшебных коробок"
+
+msgid "lootBox/typeNames/of/NewYear"
+msgstr "Новогодних коробок"
+
+msgid "lootBox/typeNames/of/Oriental"
+msgstr "Восточных коробок"
+
+msgid "lootBox/typeNames/to/Christmas"
+msgstr "Рождественским"
+
+msgid "lootBox/typeNames/to/Fairytale"
+msgstr "Волшебным"
+
+msgid "lootBox/typeNames/to/NewYear"
+msgstr "Новогодним"
+
+msgid "lootBox/typeNames/to/Oriental"
+msgstr "Восточным"
+
+msgid "lootBox/typeNames/which/Christmas"
+msgstr "Рождественские коробки"
+
+msgid "lootBox/typeNames/which/Fairytale"
+msgstr "Волшебные коробки"
+
+msgid "lootBox/typeNames/which/NewYear"
+msgstr "Новогодние коробки"
+
+msgid "lootBox/typeNames/which/Oriental"
+msgstr "Восточные коробки"
+
+msgid "lootBoxAutoOpen/okBtnLabel"
+msgstr "Это прекрасно!"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/label"
+msgstr "x%(quantity)s"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/tooltip/body"
+msgstr ""
+"Особый статус аккаунта, позволяющий зарабатывать\n"
+"больше опыта и кредитов, а также предоставляющий\n"
+"дополнительные возможности."
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/tooltip/header"
+msgstr "Дней премиум аккаунта: %(quantity)s"
+
+msgid "lootBoxAutoOpen/subTitle"
+msgstr ""
+"Вот что выпало из %(creamColor_Open)s{smallBoxesQuantity} шт. "
+"малых%(creamColor_Close)s, %(creamColor_Open)s{bigBoxesQuantity} шт. больших"
+" коробок%(creamColor_Close)s и %(creamColor_Open)s{giftsQuantity} шт. "
+"посылок%(creamColor_Close)s"
+
+msgid "lootBoxAutoOpen/title"
+msgstr "Мы открыли за вас коробки и посылки от друзей"
+
+msgid "lootBoxMain/buttonLabel/back"
+msgstr "Вернуться в Ангар"
+
+msgid "lootBoxMain/buttonLabel/buyMore"
+msgstr "Купить коробки"
+
+msgid "lootBoxMain/buttonLabel/buyMoreCn"
+msgstr "К Премиум магазину"
+
+msgid "lootBoxMain/buttonLabel/open"
+msgstr "Открыть"
+
+msgid "lootBoxMain/buttonLabel/videoSwitch"
+msgstr "Показывать анимацию"
+
+msgid "lootBoxMain/entryDesc/notAvailableNow"
+msgstr "Открытие и покупка временно недоступны"
+
+msgid "lootBoxMain/entryView/buyLabel"
+msgstr "ДОКУПИТЬ"
+
+msgid "lootBoxMain/entryView/buyLabelCn"
+msgstr "ПОЛУЧИТЬ"
+
+msgid "lootBoxMain/entryView/guaranteedFrequency/countText"
+msgstr "%(count)s коробок"
+
+msgid "lootBoxMain/entryView/guaranteedFrequency/moreInfo"
+msgstr "Подробнее о коробках."
+
+msgid "lootBoxMain/entryView/guaranteedFrequency/newYear_premium/next"
+msgstr "Игрок, в следующей коробке тебя ожидает гарантированная награда!"
+
+msgid "lootBoxMain/entryView/guaranteedFrequency/newYear_premium/soon"
+msgstr "Откройте %(countText), чтобы получить гарантированную ценную награду."
+
+msgid "lootBoxMain/entryView/howToGet/newYear_premium"
+msgstr "Вы можете купить их во внутриигровом или Премиум магазине."
+
+msgid "lootBoxMain/entryView/howToGet/newYear_premiumCn"
+msgstr ""
+"Вы можете получить коробки из наборов, которые найдете в Премиум магазине."
+
+msgid "lootBoxMain/entryView/noBoxes/premium/switchButton"
+msgstr "К {collectionName}"
+
+msgid "lootBoxMain/entryView/noBoxes/premium/titleFirstRow"
+msgstr "Большие {collectionName} открыты,"
+
+msgid "lootBoxMain/entryView/noBoxes/premium/titleSecondRow"
+msgstr "перейти к {collectionName}?"
+
+msgid "lootBoxMain/entryView/noBoxes/title"
+msgstr "Коробки закончились"
+
+msgid "lootBoxMain/entryView/openBoxes/count_1"
+msgstr "1 шт."
+
+msgid "lootBoxMain/entryView/openBoxes/count_10"
+msgstr "10 шт."
+
+msgid "lootBoxMain/entryView/openBoxes/count_5"
+msgstr "5 шт."
+
+msgid "lootBoxMain/entryView/title/Christmas"
+msgstr "БОЛЬШИЕ РОЖДЕНСТВЕНСКИЕ КОРОБКИ"
+
+msgid "lootBoxMain/entryView/title/Fairytale"
+msgstr "БОЛЬШИЕ ВОЛШЕБНЫЕ КОРОБКИ"
+
+msgid "lootBoxMain/entryView/title/NewYear"
+msgstr "БОЛЬШИЕ НОВОГОДНИЕ КОРОБКИ"
+
+msgid "lootBoxMain/entryView/title/Oriental"
+msgstr "БОЛЬШИЕ ВОСТОЧНЫЕ КОРОБКИ"
+
+msgid "lootBoxMain/entryView/title/newYear_usual"
+msgstr "МАЛЫЕ КОРОБКИ"
+
+msgid "lootBoxMain/guaranteedReward/boxesLeft"
+msgstr ""
+"Ещё коробок до гарантированного танка VIII уровня, если не выпадет ранее: "
+
+msgid "lootBoxMain/guaranteedReward/moreInfo"
+msgstr "Подробнее о коробках."
+
+msgid "lootBoxMain/guaranteedReward/next"
+msgstr "Премиум танк VIII уровня в следующей коробке!"
+
+msgid "lootBoxMultiOpen/closeButton/empty"
+msgstr "Так точно!"
+
+msgid "lootBoxMultiOpen/closeButton/usual"
+msgstr "К коробкам"
+
+msgid "lootBoxMultiOpen/header/openUsualBoxes"
+msgstr "%(openedCount)s малых"
+
+msgid "lootBoxMultiOpen/header/subTitle"
+msgstr "Имущество, полученное из %(openBoxes)s коробок"
+
+msgid "lootBoxMultiOpen/header/title"
+msgstr "ВОТ, ЧТО ВНУТРИ:"
+
+msgid "lootBoxMultiOpen/openButton"
+msgstr "Открыть еще %(count)s"
+
+msgid "lootBoxMultiOpen/remainingBoxes/empty"
+msgstr "Коробки закончились"
+
+msgid "lootBoxMultiOpen/remainingBoxes/usual"
+msgstr "Осталось коробок: %(count)s"
+
+msgid "lootBoxMultiOpen/serverError"
+msgstr "%(alertIcon)s Ошибка открытия коробки: серверный сбой."
+
+msgid "lootBoxPremiumMultiOpen/continueAutoOpen"
+msgstr "%(continueIcon)s Продолжить открывать (%(count)s)"
+
+msgid "lootBoxPremiumMultiOpen/header/subTitle"
+msgstr "Имущество, полученное из %(typeBoxes)s (открыто %(count)s шт.)"
+
+msgid "lootBoxPremiumMultiOpen/header/title"
+msgstr "ВОТ, ЧТО ВНУТРИ:"
+
+msgid "lootBoxPremiumMultiOpen/header/typeBoxes"
+msgstr "%(typeName)s"
+
+msgid "lootBoxPremiumMultiOpen/rowLabel"
+msgstr "Коробка %(number)s"
+
+msgid "lootBoxPremiumMultiOpen/stopAutoOpen"
+msgstr "%(stopIcon)s Остановить автооткрытие (%(count)s)"
+
+msgid "lootBoxPremiumMultiOpen/toBoxes"
+msgstr "К коробкам"
+
+msgid "lootBoxes/actionsUnavailable"
+msgstr "Открытие и покупка временно недоступны."
+
+msgid "lootBoxes/atmosphereUp"
+msgstr "за новое украшение"
+
+msgid "lootBoxes/buy"
+msgstr "Купить"
+
+msgid "lootBoxes/get"
+msgstr "Получить"
+
+msgid "lootBoxes/name/premium"
+msgstr "Большие коробки"
+
+msgid "lootBoxes/name/usual"
+msgstr "Малые коробки"
+
+msgid "lootBoxes/noMore"
+msgstr "Коробки закончились"
+
+msgid "lootBoxes/open"
+msgstr "К коробкам"
+
+msgid "lootBoxes/unavailable"
+msgstr "Временно недоступно"
+
+msgid "lootBoxes/upper/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "lootBoxes/upper/get"
+msgstr "ПОЛУЧИТЬ"
+
+msgid "lootBoxes/upper/toBoxes"
+msgstr "К КОРОБКАМ"
+
+msgid "lootBoxesPopover/alert/body"
+msgstr ""
+"В настоящий момент покупка контейнеров недоступна по техническим причинам. "
+"Приносим извинения за временные неудобства."
+
+msgid "lootBoxesPopover/alert/header"
+msgstr "Покупка временно недоступна"
+
+msgid "lootBoxesPopover/description"
+msgstr ""
+"Их можно получить за выполнение определённых задач, а также купив во "
+"внутриигровом или Премиум магазине."
+
+msgid "lootBoxesPopover/open"
+msgstr "К контейнерам"
+
+msgid "lootBoxesPopover/title"
+msgstr "Новогодние контейнеры доступны"
+
+msgid "lootboxEntryPoint/disabledTooltip/body"
+msgstr ""
+"В настоящий момент покупка и открытие контейнеров недоступны по техническим "
+"причинам. Приносим извинения за временные неудобства."
+
+msgid "lootboxEntryPoint/disabledTooltip/header"
+msgstr "Покупка и открытие временно недоступны"
+
+msgid "lootboxEntryPoint/maxBoxesCount"
+msgstr "999+"
+
+msgid "lootboxEntryPoint/mult"
+msgstr "×%(count)s"
+
+msgid "lootboxRewardScreen/new"
+msgstr "Новое"
+
+msgid "mainView/collectionButton/label"
+msgstr "НОВОГОДНЯЯ КОЛЛЕКЦИЯ"
+
+msgid "mainView/craftBtn/label"
+msgstr "Создать украшение"
+
+msgid "mainView/getPartsBtn/label"
+msgstr "Получить осколки"
+
+msgid "mainView/sideBar/FieldKitchenBtn/label"
+msgstr "Полевая кухня"
+
+msgid "mainView/sideBar/FirBtn/label"
+msgstr "Ёлка"
+
+msgid "mainView/sideBar/IlluminationBtn/label"
+msgstr "Столбы и двор"
+
+msgid "mainView/sideBar/TankParkingBtn/label"
+msgstr "Скульптура"
+
+msgid "mandarinCompensation"
+msgstr "Компенсация за украшения"
+
+msgid "marketplaceToken/tooltip/condition"
+msgstr ""
+"Открывается на Х уровне атмосферы праздника в рамках события «Наш Новый "
+"год»."
+
+msgid "marketplaceToken/tooltip/description"
+msgstr ""
+"Во внутриигровом Магазине откроется доступ к покупке элементов внешнего вида"
+" прошлых новогодних событий."
+
+msgid "marketplaceToken/tooltip/title"
+msgstr "Доступ к Новогоднему магазину"
+
+msgid "marketplaceToken/tooltip/unlockDescription"
+msgstr ""
+"Вам открыт доступ к покупке элементов внешнего вида прошлых новогодних "
+"событий во внутриигровом Магазине."
+
+msgid "menu/close/tooltip"
+msgstr "Выйти в Ангар"
+
+msgid "menu/info/title"
+msgstr "О СОБЫТИИ"
+
+msgid "messages/quotes"
+msgstr "«%(text)s»"
+
+msgid "newYear/celebrityChallenge/intro/button/firstLabel"
+msgstr "Приступить!"
+
+msgid "newYear/celebrityChallenge/intro/button/usualLabel"
+msgstr "Так точно!"
+
+msgid "newYear/celebrityChallenge/intro/missionDescription"
+msgstr ""
+"Задачи не пропадают в конце дня: вы сможете выполнить их все, сколько бы "
+"дней не пропустили. Задачи выполняются параллельно."
+
+msgid "newYear/celebrityChallenge/intro/missionTitle"
+msgstr "Новая задача каждый день"
+
+msgid "newYear/celebrityChallenge/intro/rewardDescription"
+msgstr ""
+"Все выполненные задачи учитываются в общей прогрессии. За определённое "
+"количество выполненных задач вы получите стиль и другие ценные награды."
+
+msgid "newYear/celebrityChallenge/intro/rewardTitle"
+msgstr "За {quantity} выполненных задач — уникальный командир."
+
+msgid "newYear/celebrityChallenge/intro/simplifyMissionDescription"
+msgstr ""
+"Задачи выдаются высокой сложности. Вы можете упростить каждую задачу, "
+"потратив указанное количество осколков."
+
+msgid "newYear/celebrityChallenge/intro/simplifyMissionTitle"
+msgstr "Упрощение задач за осколки"
+
+msgid "newYear/celebrityChallenge/progressBar/completed/caption"
+msgstr "Задач выполнено: %(result)"
+
+msgid "newYear/celebrityChallenge/progressBar/completed/ratio"
+msgstr "%(completed) / %(quantity)"
+
+msgid "newYear/celebrityChallenge/questAll/close"
+msgstr "НАЗАД"
+
+msgid "newYear/celebrityChallenge/questAll/open"
+msgstr "ПОКАЗАТЬ ВСЕ ЗАДАЧИ"
+
+msgid "newYear/celebrityChallenge/rewardScreen/bonusesTitle"
+msgstr "За время прохождения получены награды:"
+
+msgid "newYear/celebrityChallenge/rewardScreen/closeBtnLabel"
+msgstr "ЗАКРЫТЬ"
+
+msgid "newYear/celebrityChallenge/rewardScreen/discountBonusesTitle"
+msgstr "Получены скидки на технику:"
+
+msgid "newYear/celebrityChallenge/rewardScreen/okBtnLabel"
+msgstr "Так точно!"
+
+msgid "newYear/celebrityChallenge/rewardScreen/progressionSubtitle"
+msgstr "Получена награда за выполнение {quantity} задач{ending}"
+
+msgid "newYear/celebrityChallenge/rewardScreen/progressionTitle"
+msgstr "Поздравляем!"
+
+msgid "newYear/celebrityChallenge/rewardScreen/rewards/achievement/label"
+msgstr "Медаль «%(name)s»"
+
+msgid "newYear/celebrityChallenge/rewardScreen/showBtnLabel"
+msgstr "А что по наградам?"
+
+msgid "newYear/celebrityChallenge/rewardScreen/taskEndingLetter"
+msgstr "и"
+
+msgid "newYear/celebrityChallenge/variadicDiscount/caption"
+msgstr "Скидка на технику"
+
+msgid "newYear/celebrityChallenge/variadicDiscount/tooltip/description"
+msgstr "Скидка на выбранную вами исследуемую машину {level} уровня."
+
+msgid "newYear/celebrityChallenge/variadicDiscount/tooltip/selectedVehicle"
+msgstr "Скидка активирована для {vehicle}."
+
+msgid "newYear/challenge/card/insufficientFunds"
+msgstr "Недостаточно осколков для упрощения."
+
+msgid "newYear/challenge/card/maximumSimplification"
+msgstr "Уже упрощена"
+
+msgid "newYear/challenge/card/minComplexitySimplification"
+msgstr "Задача уже упрощена."
+
+msgid "newYear/challenge/card/simplification"
+msgstr "Упростить задачу"
+
+msgid "newYear/challenge/card/simplifyHeading"
+msgstr "Упростить задачу до:"
+
+msgid "newYear/challenge/card/simplifyNote"
+msgstr "При упрощении весь достигнутый по задаче прогресс сохраняется."
+
+msgid "newYear/challenge/card/simplifyPrice"
+msgstr "Упростить за"
+
+msgid "newYear/challenge/card/timerHeading"
+msgstr "До следующей задачи"
+
+msgid "newYear/challenge/card/timerHours"
+msgstr "ч"
+
+msgid "newYear/challenge/card/timerMinutes"
+msgstr "мин"
+
+msgid "newYear/challenge/card/tooltip/maximumSimplification/description"
+msgstr "Задача уже выполняется на минимальной сложности."
+
+msgid "newYear/challenge/card/tooltip/maximumSimplification/title"
+msgstr "Упрощение задачи недоступно"
+
+msgid "newYear/challenge/card/vehicleInBattle"
+msgstr "Упрощение недоступно: машина всё ещё в бою."
+
+msgid "newYear/challenge/cardTimer/additional"
+msgstr "До следующей задачи."
+
+msgid "newYear/challenge/cardTimer/main"
+msgstr "Задачи выдаются по одной в день."
+
+msgid "newYear/challenge/mainTimer/loading"
+msgstr "Загружается…"
+
+msgid "newYear/challenge/questsInProgress"
+msgstr "Выполняется задач: %(count)"
+
+msgid "newYear/errors/lootboxDisabled"
+msgstr "Открытие коробок недоступно. Попробуйте зайти позже."
+
+msgid "newYear/loading"
+msgstr "Загружается..."
+
+msgid "newYear/setVehicleBranch/credits/success"
+msgstr ""
+"Установка машины в %(slotName)s выполнена. Потрачено кредитов: %(money)s."
+
+msgid "newYear/setVehicleBranch/gold/success"
+msgstr ""
+"Установка машины в %(slotName)s выполнена. Потрачено золота: %(money)s."
+
+msgid "newYear/setVehicleBranch/success"
+msgstr "Установка машины в %(slotName)s выполнена."
+
+msgid "newYear/setVehicleBranchSlotBonus/freeXPFactor/success"
+msgstr ""
+"Вы изменили бонус для %(slotName)s на: бонус к свободному опыту +%(bonus)s."
+
+msgid "newYear/setVehicleBranchSlotBonus/tankmenXPFactor/success"
+msgstr ""
+"Вы изменили бонус для %(slotName)s на: бонус к опыту экипажа +%(bonus)s."
+
+msgid "newYear/setVehicleBranchSlotBonus/xpFactor/success"
+msgstr ""
+"Вы изменили бонус для %(slotName)s на: бонус к боевому опыту +%(bonus)s."
+
+msgid "newYearInfoView/atmosphere/description/atmosphere1"
+msgstr ""
+"Теперь основным новогодним ресурсом являются мандарины. Именно за них вы "
+"будете поднимать уровень ели и других объектов на площади. Мандарины можно "
+"получить из контейнеров события."
+
+msgid "newYearInfoView/atmosphere/description/atmosphere2"
+msgstr ""
+"Улучшение ели и других объектов на площади напрямую влияет на атмосферу "
+"праздника. Чем выше уровень объектов на площади, тем выше уровень атмосферы "
+"праздника!"
+
+msgid "newYearInfoView/atmosphere/mainTitle"
+msgstr "Атмосфера праздника"
+
+msgid "newYearInfoView/atmosphere/title/atmosphere1"
+msgstr "Мандарины"
+
+msgid "newYearInfoView/atmosphere/title/atmosphere2"
+msgstr "Уровень атмосферы праздника"
+
+msgid "newYearInfoView/bigBoxes/button/"
+msgstr "Перейти к покупке"
+
+msgid "newYearInfoView/bigBoxes/description/boxes1"
+msgstr ""
+"Тематические контейнеры могут содержать премиум и акционную технику VIII-X "
+"уровня (выпадет со 100% вероятностью из 50-го контейнера, если не выпала "
+"ранее), 3D-стили, украшения, премиум аккаунт, золото, кредиты и другое "
+"игровое имущество, а также кое-что весьма редкое и неожиданное."
+
+msgid "newYearInfoView/bigBoxes/description/boxes2"
+msgstr ""
+"Имущество в контейнерах помещено в три последовательных списка / этапа. "
+"Чтобы перейти к следующему списку, нужно получить всё имущество категории "
+"«Основные награды» из текущего. В третьем списке появляется особый "
+"контейнер, из которого вы со 100%-й вероятностью получите премиум технику "
+"VIII уровня."
+
+msgid "newYearInfoView/bigBoxes/mainTitle"
+msgstr "Праздничные контейнеры"
+
+msgid "newYearInfoView/bigBoxes/title/boxes1"
+msgstr "Содержат премиум технику и 3D-стили"
+
+msgid "newYearInfoView/bigBoxes/title/boxes2"
+msgstr "Три списка наград"
+
+msgid "newYearInfoView/bigBoxes/tooltip/description"
+msgstr "Покупка новогодних контейнеров временно недоступна."
+
+msgid "newYearInfoView/bigBoxes/tooltip/title"
+msgstr "Недоступно"
+
+msgid "newYearInfoView/bonus/description/bonus1"
+msgstr ""
+"Бонус применяется одновременно к кредитам, боевому и свободному опыту, а "
+"также к опыту экипажа, полученным по результатам боя в режимах: «Случайный "
+"бой», «Генеральное сражение», «Натиск», «Стальной охотник», «Полигон», а "
+"также «Укрепрайон»."
+
+msgid "newYearInfoView/bonus/description/bonus2"
+msgstr ""
+"В рамках события «Наш Новый год 2025» мы решили порадовать вас и сделали "
+"бонус постоянным. Теперь не нужно ничего делать, чтобы его повысить — просто"
+" играйте и получайте удовольствие!"
+
+msgid "newYearInfoView/bonus/mainTitle"
+msgstr "Экономический бонус"
+
+msgid "newYearInfoView/bonus/title/bonus1"
+msgstr "На что распространяется"
+
+msgid "newYearInfoView/bonus/title/bonus2"
+msgstr "Постоянный бонус +50%"
+
+msgid "newYearInfoView/carousel/atmosphere"
+msgstr ""
+"Атмосфера\n"
+"праздника"
+
+msgid "newYearInfoView/carousel/bigBoxes"
+msgstr ""
+"Праздничные\n"
+"контейнеры"
+
+msgid "newYearInfoView/carousel/bigBoxesOpening"
+msgstr "Открытие больших коробок"
+
+msgid "newYearInfoView/carousel/bonus"
+msgstr ""
+"Экономический\n"
+"бонус"
+
+msgid "newYearInfoView/carousel/howToGetDecorations"
+msgstr "Украшения"
+
+msgid "newYearInfoView/carousel/intro"
+msgstr "Наш Новый год"
+
+msgid "newYearInfoView/carousel/nyVehicles"
+msgstr "Новогодняя техника"
+
+msgid "newYearInfoView/carousel/pet"
+msgstr "Енот"
+
+msgid "newYearInfoView/carousel/quests"
+msgstr "Дед Мороз"
+
+msgid "newYearInfoView/carousel/rewards"
+msgstr "Награды события"
+
+msgid "newYearInfoView/carousel/surpriseMachine"
+msgstr "Автомат удачи"
+
+msgid "newYearInfoView/howToGet/button"
+msgstr "К контейнерам"
+
+msgid "newYearInfoView/howToGet/description/decoration1"
+msgstr ""
+"За каждое повышение уровня ели и других объектов на площади будут "
+"открываться новые украшения. Украшения не влияют на уровень атмосферы "
+"праздника и имеют только декоративный характер."
+
+msgid "newYearInfoView/howToGet/description/decoration2"
+msgstr ""
+"В рамках события также доступны особые украшения, которые выпадают из "
+"Новогодних контейнеров. Особые украшения также не влияют на уровень "
+"атмосферы праздника."
+
+msgid "newYearInfoView/howToGet/mainTitle"
+msgstr "Как получить украшения"
+
+msgid "newYearInfoView/howToGet/title/decoration1"
+msgstr "Обычные украшения"
+
+msgid "newYearInfoView/howToGet/title/decoration2"
+msgstr "Редкие украшения"
+
+msgid "newYearInfoView/howToGet/tooltip/description"
+msgstr "Покупка контейнеров временно недоступна."
+
+msgid "newYearInfoView/howToGet/tooltip/title"
+msgstr "Недоступно"
+
+msgid "newYearInfoView/nyVehicles/description/tank2"
+msgstr ""
+"Выбирайте машину (исключая премиум и арендную), вставляйте в слоты и "
+"получайте дополнительные бонусы к опыту в Случайных боях. В слоты можно "
+"установить технику V–X уровней. Уровень подходящей машины зависит от уровня "
+"атмосферы, а достигнув X уровня атмосферы, вы сможете установить технику X "
+"уровня во все слоты. Тип бонуса для каждого слота можно выбрать "
+"самостоятельно."
+
+msgid "newYearInfoView/nyVehicles/mainTitle"
+msgstr "Новогодняя техника"
+
+msgid "newYearInfoView/nyVehicles/title/tank1"
+msgstr "Как разблокировать слоты"
+
+msgid "newYearInfoView/nyVehicles/title/tank2"
+msgstr "Как работают"
+
+msgid "newYearInfoView/pet/button"
+msgstr "К еноту"
+
+msgid "newYearInfoView/pet/description/pet1"
+msgstr ""
+"В этом Новом году у вас будет пушистый друг — енот. Вы можете арендовать "
+"различные предметы, чтобы порадовать своего питомца: интерактивные объекты, "
+"игрушки, миски и прочие радости."
+
+msgid "newYearInfoView/pet/mainTitle"
+msgstr "Енот"
+
+msgid "newYearInfoView/quests/button"
+msgstr "К задачам"
+
+msgid "newYearInfoView/quests/description/quests1"
+msgstr ""
+"В рамках события вам будут доступны праздничные ежедневные и еженедельные "
+"задачи!"
+
+msgid "newYearInfoView/quests/description/quests2"
+msgstr "За их выполнение вас ждут ценные награды:"
+
+msgid "newYearInfoView/quests/list/quests1"
+msgstr "ящики с мандаринами;"
+
+msgid "newYearInfoView/quests/list/quests2"
+msgstr "жетоны для автомата удачи;"
+
+msgid "newYearInfoView/quests/list/quests3"
+msgstr "другое имущество."
+
+msgid "newYearInfoView/quests/mainTitle"
+msgstr "Дед Мороз"
+
+msgid "newYearInfoView/rewards/button"
+msgstr "Посмотреть награды"
+
+msgid "newYearInfoView/rewards/description/rewards1"
+msgstr ""
+"За достижение каждого нового уровня атмосферы праздника вы получите особые "
+"награды:"
+
+msgid "newYearInfoView/rewards/list/rewards1"
+msgstr "Новогодние контейнеры 2025;"
+
+msgid "newYearInfoView/rewards/list/rewards2"
+msgstr "новогодних членов экипажа;"
+
+msgid "newYearInfoView/rewards/list/rewards3"
+msgstr "2D-стиль;"
+
+msgid "newYearInfoView/rewards/list/rewards4"
+msgstr "скидки на технику;"
+
+msgid "newYearInfoView/rewards/list/rewards5"
+msgstr "личные резервы;"
+
+msgid "newYearInfoView/rewards/list/rewards6"
+msgstr "учебные материалы и многое другое."
+
+msgid "newYearInfoView/rewards/mainTitle"
+msgstr "Награды события"
+
+msgid "newYearInfoView/surpriseMachine/button"
+msgstr "К автомату"
+
+msgid "newYearInfoView/surpriseMachine/description/surpriseMachine1"
+msgstr ""
+"В этом году вам доступен автомат удачи — специальная машина, которая выдаёт "
+"подарки за жетоны. Вы можете получить жетоны за выполнение праздничных "
+"задач, а при достижении Х уровня атмосферы праздника ещё и приобрести их за "
+"мандарины. Мандарины, которые вы не успеете потратить до конца новогоднего "
+"события, будут автоматически обменяны на жетоны."
+
+msgid "newYearInfoView/surpriseMachine/description/surpriseMachine2"
+msgstr "Среди подарков вам может попасться:"
+
+msgid "newYearInfoView/surpriseMachine/list/surpriseMachine1"
+msgstr "WT E 100 Оруженосец"
+
+msgid "newYearInfoView/surpriseMachine/list/surpriseMachine2"
+msgstr "Легендарный контейнер"
+
+msgid "newYearInfoView/surpriseMachine/list/surpriseMachine3"
+msgstr "Элементы внешнего вида и другие ценные награды"
+
+msgid "newYearInfoView/surpriseMachine/mainTitle"
+msgstr "Автомат удачи"
+
+msgid "newYearInfoView/timePeriod/hour"
+msgstr "ч"
+
+msgid "newYearInfoView/timePeriod/minute"
+msgstr "мин"
+
+msgid "newYearInfoView/timePeriod/second"
+msgstr "сек"
+
+msgid "newYearInfoView/video/description"
+msgstr ""
+"Отмечаем праздники с 11.12.2024 по 22.01.2025! В уходящем году произошло немало\n"
+"изменений, и о них вы узнаете из предлагаемого видео и страниц нашего руководства."
+
+msgid "notification/celebrityReward/toExtraSlot/button"
+msgstr "К Новогодней технике"
+
+msgid "notification/collectionComplete"
+msgstr "За сбор всей %(setting)s %(year)s вам присвоены следующие награды:"
+
+msgid "notification/collectionComplete/bonusCount"
+msgstr "(x%(count)s)"
+
+msgid "notification/collectionComplete/button/reward"
+msgstr "Подробнее"
+
+msgid "notification/collectionComplete/emblem"
+msgstr "Эмблемы:"
+
+msgid "notification/collectionComplete/header"
+msgstr "Галерея собрана!"
+
+msgid "notification/collectionComplete/inscription"
+msgstr "Надписи:"
+
+msgid "notification/collectionComplete/name/christmas"
+msgstr "Рождественской коллекции"
+
+msgid "notification/collectionComplete/name/fairytale"
+msgstr "Волшебной коллекции"
+
+msgid "notification/collectionComplete/name/fairytale_ny22"
+msgstr "Волшебной коллекции"
+
+msgid "notification/collectionComplete/name/mega"
+msgstr "коллекции больших украшений"
+
+msgid "notification/collectionComplete/name/newyear"
+msgstr "Новогодней коллекции"
+
+msgid "notification/collectionComplete/name/oriental"
+msgstr "Восточной коллекции"
+
+msgid "notification/collectionComplete/projectionDecal"
+msgstr "Проекционные декали:"
+
+msgid "notification/collectionComplete/style"
+msgstr "Стили:"
+
+msgid "notification/collectionMegaComplete"
+msgstr "За сбор всех больших украшений %(year)s вам присвоена награда:"
+
+msgid "notification/collectionMegaComplete/header"
+msgstr "Большие украшения собраны!"
+
+msgid "notification/finish"
+msgstr ""
+"Праздник завершился, спасибо за участие! Пусть в наступившем году будет "
+"побольше волшебства!"
+
+msgid "notification/header"
+msgstr "Наш Новый год 2025"
+
+msgid "notification/levelUp/congrats/default/body"
+msgstr "Достигнутый уровень: %(level)s"
+
+msgid "notification/levelUp/congrats/default/header"
+msgstr "Уровень атмосферы праздника повышен!"
+
+msgid "notification/levelUp/congrats/max/body"
+msgstr "Атмосфера праздника на максимальном уровне, вы — молодцы."
+
+msgid "notification/levelUp/congrats/max/header"
+msgstr "Поздравляем!"
+
+msgid "notification/levelUp/rewards"
+msgstr "Получено: "
+
+msgid "notification/levelUp/rewards/header"
+msgstr "Получены награды!"
+
+msgid "notification/lootBox/resume/body"
+msgstr "Продажа контейнеров возобновлена на всех площадках."
+
+msgid "notification/lootBox/suspend/body"
+msgstr "Операции с контейнерами временно доступны только в Премиум магазине."
+
+msgid "notification/lootBox/suspend/buttonLabel"
+msgstr "Перейти"
+
+msgid "notification/lootBox/suspend/header"
+msgstr "Внимание:"
+
+msgid "notification/machine/available/text"
+msgstr ""
+"Этот хитроумный прибор опять запустился. Можно снова получать подарки!"
+
+msgid "notification/machine/button"
+msgstr "К автомату"
+
+msgid "notification/machine/header"
+msgstr "Автомат удачи"
+
+msgid "notification/machine/purchase/header"
+msgstr "Доступна покупка жетонов"
+
+msgid "notification/machine/purchase/text"
+msgstr "Стала доступна покупка жетонов для автомата удачи."
+
+msgid "notification/machine/run/header"
+msgstr "Запуск автомата удачи"
+
+msgid "notification/machine/run/subHeader"
+msgstr "Получено имущество:"
+
+msgid "notification/machine/run/text"
+msgstr "Дата: %(time)s  Списано жетонов: 1"
+
+msgid "notification/machine/server_error/header"
+msgstr "Ошибка:"
+
+msgid "notification/machine/server_error/text"
+msgstr "Ошибка запуска автомата. Попробуйте позже."
+
+msgid "notification/machine/text"
+msgstr ""
+"Теперь у вас есть жетоны для автомата удачи! Самое время их потратить."
+
+msgid "notification/machine/trade/header"
+msgstr "Финансовая операция"
+
+msgid "notification/machine/trade/text"
+msgstr ""
+"Обмен %(mandarinsCount)s шт. мандаринов успешно завершён. Получено жетонов: "
+"%(machineCount)s."
+
+msgid "notification/machine/unavailable/text"
+msgstr ""
+"Этот хитроумный прибор временно недоступен. Смазываем механизмы и восполняем"
+" содержимое."
+
+msgid "notification/oldCollectionComplete/header"
+msgstr "Условия выполнены! Награда:"
+
+msgid "notification/postEvent"
+msgstr "Событие закончено, но действие бонусов продолжается!"
+
+msgid "notification/previousStyles/button"
+msgstr "К покупке стилей"
+
+msgid "notification/previousStyles/text"
+msgstr "Открыт доступ к покупке стилей прошлых лет."
+
+msgid "notification/racoon/available/text"
+msgstr "Енот снова на месте. Уделите ему время."
+
+msgid "notification/racoon/buyToy/header"
+msgstr "Финансовая операция"
+
+msgid "notification/racoon/buyToy/text"
+msgstr ""
+"Предмет «%(toyName)s» успешно приобретён.  Дата: %(time)s  Списано золота: "
+"%(goldCount)s"
+
+msgid "notification/racoon/header"
+msgstr "Енот"
+
+msgid "notification/racoon/items/header"
+msgstr "Списаны предметы"
+
+msgid "notification/racoon/items/subHeader"
+msgstr "Списано:"
+
+msgid "notification/racoon/items/text"
+msgstr "Предметы, арендованные для Енота в рамках новогоднего события."
+
+msgid "notification/racoon/server_error/header"
+msgstr "Ошибка:"
+
+msgid "notification/racoon/server_error/text"
+msgstr "Не удалось совершить покупку. Попробуйте позже."
+
+msgid "notification/racoon/unavailable/text"
+msgstr "Енот временно отсутствует. Вычёсываем мех и чистим лоточек."
+
+msgid "notification/resume"
+msgstr "Праздник снова с нами! Продолжаем веселье."
+
+msgid "notification/rewardsReminder"
+msgstr ""
+"У вас остались неиспользованные награды. Не забудьте их активировать до "
+"середины марта!"
+
+msgid "notification/start"
+msgstr ""
+"Торжество началось! Повышайте атмосферу праздника и зарабатывайте ценные "
+"награды!"
+
+msgid "notification/start/button"
+msgstr "К наградам"
+
+msgid "notification/suspend"
+msgstr ""
+"Событие временно недоступно. Мы уже ищем причину, скоро всё заработает."
+
+msgid "notification/vehicleBranchBonus"
+msgstr "Бонус слота изменён"
+
+msgid "nyGuaranteedRewardTooltip/description"
+msgstr ""
+"Если у вас уже есть вся техника VIII уровня из списка возможного содержимого"
+" коробок, то по механике выпадения гарантированного танка все последующие "
+"танки, полученные из коробок, будут компенсированы золотом."
+
+msgid "nyGuaranteedRewardTooltip/subtitle"
+msgstr "Когда вся техника уже получена:"
+
+msgid "nyGuaranteedRewardTooltip/text"
+msgstr ""
+"Гарантированный танк — премиум машина VIII уровня из списка возможного "
+"содержимого больших коробок. Танк выпадет из 50-й коробки, если этого не "
+"произошло за предыдущие 49. Если получите машину ранее, отсчёт начнётся "
+"заново."
+
+msgid "nyGuaranteedRewardTooltip/title"
+msgstr "Механика гарантированного танка"
+
+msgid "nyMandarins/tooltip/body"
+msgstr ""
+"Основной ресурс праздничного события. Можно получить из контейнеров события "
+"«Наш Новый год»."
+
+msgid "nyMandarins/tooltip/header"
+msgstr "Мандарины"
+
+msgid "nyQuestEntryPoint/tooltip/alsoWeekly"
+msgstr "Ещё задач на неделю: %(count)s"
+
+msgid "nyQuestEntryPoint/tooltip/battleModes"
+msgstr "Выполняются в режимах:"
+
+msgid "nyQuestEntryPoint/tooltip/completed"
+msgstr "Все задачи выполнены."
+
+msgid "nyQuestEntryPoint/tooltip/daily"
+msgstr "Задачи на день: %(count)s"
+
+msgid "nyQuestEntryPoint/tooltip/progress/count"
+msgstr ""
+"{yellow_Open}%(currentCount)s{yellow_Close} {whiteSpanish_Open}/ "
+"%(allCount)s{whiteSpanish_Close}"
+
+msgid "nyQuestEntryPoint/tooltip/reset"
+msgstr "Задачи обновятся через %(timer)s"
+
+msgid "nyQuestEntryPoint/tooltip/resetCompleted"
+msgstr "Уф, это было весело!"
+
+msgid "nyQuestEntryPoint/tooltip/title"
+msgstr "Задачи события «Наш Новый год»"
+
+msgid "nyQuestEntryPoint/tooltip/weekly"
+msgstr "Задачи на неделю: %(count)s"
+
+msgid "onboardingView/atmosphereTitle"
+msgstr "ПОВЫСЬТЕ АТМОСФЕРУ ПРАЗДНИКА!"
+
+msgid "onboardingView/back"
+msgstr "НА ПЛОЩАДЬ"
+
+msgid "onboardingView/close"
+msgstr "В АНГАР"
+
+msgid "percentageValue/default"
+msgstr "%(value)s%"
+
+msgid "pet/tooltip/slot/additionalDescription"
+msgstr ""
+"Арендованный предмет будет доступен до конца новогоднего события.\n"
+"Позже он будет списан с вашего аккаунта без компенсации."
+
+msgid "pet/tooltip/slot/description"
+msgstr ""
+"Вы можете арендовать и установить в этот слот предмет для своего питомца и "
+"понаблюдать, как енот отреагирует."
+
+msgid "pet/tooltip/toy/additionalDescription"
+msgstr ""
+"Арендованный предмет будет доступен до конца новогоднего события.\n"
+"Позже он будет списан с вашего аккаунта {brown_open}без компенсации{brown_close}."
+
+msgid "pet/tooltip/toy/price"
+msgstr "Стоимость аренды"
+
+msgid "pet/tooltip/toy/received"
+msgstr "Арендовано"
+
+msgid "petBuyToy/buyBtn"
+msgstr "Арендовать"
+
+msgid "petBuyToy/cancelBtn"
+msgstr "Отменить"
+
+msgid "petBuyToy/cost"
+msgstr "Стоимость аренды:"
+
+msgid "petBuyToy/description"
+msgstr ""
+"Арендованный предмет будет доступен до конца новогоднего события.\n"
+"Позже он будет списан с вашего аккаунта {white_open}без компенсации{white_close}."
+
+msgid "petBuyToy/title"
+msgstr ""
+"Арендовать предмет\n"
+"«%(toyName)s»?"
+
+msgid "petBuyToy/tooltip/description"
+msgstr "Вы можете пополнить счёт во внутриигровом или в премиум магазинах."
+
+msgid "petBuyToy/tooltip/header"
+msgstr "Недостаточно золота для аренды"
+
+msgid "petText/description"
+msgstr ""
+"Здесь вы можете арендовать различные предметы, чтобы порадовать своего "
+"питомца: интерактивные объекты, игрушки, миски и прочие радости. "
+"Понаблюдайте, как енот отреагирует на ваши подарки!"
+
+msgid "petText/title"
+msgstr "А кто тут у нас такой пушистый?"
+
+msgid "plus"
+msgstr "+"
+
+msgid "postEvent/bonuses/tooltip/credits"
+msgstr "к кредитам. Это постоянный бонус."
+
+msgid "postEvent/bonuses/tooltip/description"
+msgstr ""
+"Бонусы начисляются по результатам Случайных боев и распространяются только "
+"на технику в новогодних слотах."
+
+msgid "postEvent/bonuses/tooltip/note"
+msgstr ""
+". Бонус можно изменить. Нажмите, чтобы перейти на экран управления "
+"новогодней техникой."
+
+msgid "postEvent/bonuses/tooltip/title"
+msgstr "Праздничные бонусы"
+
+msgid "questGiver/buttons/animation/idle"
+msgstr ""
+"ПРОСЛУШАТЬ\n"
+"ПОВТОРНО"
+
+msgid "questGiver/buttons/animation/play"
+msgstr ""
+"ОСТАНОВИТЬ\n"
+"СООБЩЕНИЕ "
+
+msgid "questGiver/name"
+msgstr "Сообщение Деда Мороза"
+
+msgid "questGiver/questCompleted"
+msgstr "Боевая задача выполнена!"
+
+msgid "questGiver/quests/dailyTitle"
+msgstr "ЗАДАЧИ НА ДЕНЬ"
+
+msgid "questGiver/quests/gameModes"
+msgstr "Режимы"
+
+msgid "questGiver/quests/progress/count"
+msgstr ""
+"{white_Open}%(currentCount)s{white_Close} {par_Open}/ "
+"%(allCount)s{par_Close}"
+
+msgid "questGiver/quests/refreshTime"
+msgstr "Обновление задач:"
+
+msgid "questGiver/quests/state/completed"
+msgstr "Награда получена"
+
+msgid "questGiver/quests/state/inProgress"
+msgstr "Выполняется"
+
+msgid "questGiver/quests/vehiclesLevelRange"
+msgstr "Техника %(vehiclesRange)s уровня"
+
+msgid "questGiver/quests/weeklyTitle"
+msgstr "ЗАДАЧИ НА НЕДЕЛЮ"
+
+msgid "questGiver/rewards"
+msgstr "Награды:"
+
+msgid "questGiver/tooltip/battleModes/description"
+msgstr ""
+"Выполнение задач доступно на технике %(minVehicleLevel)s – %(maxVehicleLevel)s уровня в режимах:\n"
+"%(battleModes)s."
+
+msgid "questGiver/tooltip/battleModes/title"
+msgstr "Условия выполнения"
+
+msgid "questGiverRewards/button/back"
+msgstr "К задачам"
+
+msgid "questGiverRewards/button/ok"
+msgstr "Так точно!"
+
+msgid "questGiverRewards/button/toLootboxes"
+msgstr "К контейнерам"
+
+msgid "questGiverRewards/button/toMachine"
+msgstr "К автомату"
+
+msgid "questGiverRewards/subtitle"
+msgstr "Получена награда за выполнение праздничных задач."
+
+msgid "questGiverRewards/title"
+msgstr "Поздравляем!"
+
+msgid "rent/battles"
+msgid_plural "battles"
+msgstr[0] "В аренду на %(battles)d бой"
+msgstr[1] "Напракат на %(battles)d баі"
+msgstr[2] "Напракат на %(battles)d баёў"
+
+msgid "rent/days"
+msgid_plural "days"
+msgstr[0] "В аренду на %(days)d день"
+msgstr[1] "Напракат на %(days)d дні"
+msgstr[2] "Напракат на %(days)d дзён"
+
+msgid "reward/label/blueprint/national"
+msgstr "Национальные фрагменты: %(count)s"
+
+msgid "reward/label/blueprint/universal"
+msgstr "Универсальные фрагменты: %(count)s"
+
+msgid "reward/label/booster"
+msgstr "Предбоевая инструкция"
+
+msgid "reward/label/boosters"
+msgstr "Предбоевые инструкции: %(count)s"
+
+msgid "reward/label/crewbook"
+msgstr "Учебный материал"
+
+msgid "reward/label/crewbooks"
+msgstr "Учебные материалы: %(count)s"
+
+msgid "reward/label/equipment/autoExtinguishers"
+msgstr "Автоматические огнетушители: %(count)s"
+
+msgid "reward/label/equipment/handExtinguishers"
+msgstr "Ручные огнетушители: %(count)s"
+
+msgid "reward/label/equipment/largeMedkit"
+msgstr "Большие аптечки: %(count)s"
+
+msgid "reward/label/equipment/largeRepairkit"
+msgstr "Большие ремкомплекты: %(count)s"
+
+msgid "reward/label/equipment/smallMedkit"
+msgstr "Малые аптечки: %(count)s"
+
+msgid "reward/label/equipment/smallRepairkit"
+msgstr "Малые ремкомплекы: %(count)s"
+
+msgid "reward/label/premiumDay"
+msgstr "Премиум день"
+
+msgid "reward/label/premiumDays"
+msgstr "Премиум дни: %(count)s"
+
+msgid "reward/label/slots"
+msgstr "Слоты в Ангаре: %(count)s"
+
+msgid "reward/label/style/2d"
+msgstr "Стиль «%(name)s»"
+
+msgid "reward/label/style/3d"
+msgstr ""
+"3D-стиль\n"
+"«%(name)s»"
+
+msgid "reward/label/toy"
+msgstr "Украшение"
+
+msgid "reward/label/toy/new"
+msgstr "Новое украшение"
+
+msgid "rewardBlockInfotype/applyTo/all/title"
+msgstr "Наносится на технику всех наций"
+
+msgid "rewardBlockInfotype/applyTo/selected/title"
+msgstr "Наносится на технику наций:"
+
+msgid "rewardBlockInfotype/ny18/emblem/description"
+msgstr "Эмблема выдаётся за определённую собранную коллекцию 2018 года."
+
+msgid "rewardBlockInfotype/ny18/header/description"
+msgstr ""
+"Можно создать украшения 2018 года за осколки и получить уникальные награды."
+
+msgid "rewardBlockInfotype/ny18/labels/description"
+msgstr "Надпись выдаётся за определённую собранную коллекцию 2018 года."
+
+msgid "rewardBlockInfotype/ny18/style/description"
+msgstr "Уникальный набор из базового цвета, камуфляжа, надписи и эмблемы."
+
+msgid "rewardBlockInfotype/ny19/emblem/description"
+msgstr "Эмблема выдаётся за определённую собранную коллекцию 2019 года."
+
+msgid "rewardBlockInfotype/ny19/labels/description"
+msgstr "Надпись выдаётся за определённую собранную коллекцию 2019 года."
+
+msgid "rewardBlockInfotype/ny19/style/description"
+msgstr "Уникальный набор из базового цвета, камуфляжа, надписи и эмблемы."
+
+msgid "rewardBlockInfotype/style/title"
+msgstr "Стиль «{styleName}»"
+
+msgid "rewardBlockInfotype/title"
+msgstr "Награда за сбор всей коллекции"
+
+msgid "rewardsView/tooltip/completedLevel/body"
+msgstr "На этом уровне атмосферы праздника вы забрали все награды."
+
+msgid "rewardsView/tooltip/completedLevel/header"
+msgstr "Награды уровня получены"
+
+msgid "rewardsView/tooltip/nextLevel/body"
+msgstr ""
+"Улучшайте фотозоны, чтобы повысить уровень атмосферы праздника и "
+"разблокировать награды."
+
+msgid "rewardsView/tooltip/nextLevel/header"
+msgstr "Уровень атмосферы не достигнут"
+
+msgid "robotTv/coinsCount"
+msgstr "Жетоны в наличии:"
+
+msgid "robotTv/coinsCountNumber"
+msgstr "%(count)s шт."
+
+msgid "robotTv/presents"
+msgstr "Получайте подарки!"
+
+msgid "robotTv/tasksSubtitle"
+msgstr "Зарабатывайте жетоны!"
+
+msgid "robotTv/tasksTitle"
+msgstr "Выполняйте задачи!"
+
+msgid "robotTv/warning"
+msgstr ""
+"Ошибка запуска автомата.\n"
+"Попробуйте позже."
+
+msgid "selectVehicles/cancel"
+msgstr "Отменить"
+
+msgid "selectVehicles/claim"
+msgstr "Забрать"
+
+msgid "selectVehicles/clearFilter"
+msgstr "Сбросить фильтр"
+
+msgid "selectVehicles/error/subTitle"
+msgstr ""
+"Информация временно недоступна. Приносим извинения за неудобства, попробуйте"
+" обновить экран позже."
+
+msgid "selectVehicles/error/title"
+msgstr "Не удалось открыть выбор награды"
+
+msgid "selectVehicles/filterPopover/nation"
+msgstr "Нация"
+
+msgid "selectVehicles/filterPopover/title"
+msgstr "Фильтр по параметрам"
+
+msgid "selectVehicles/filterPopover/type"
+msgstr "Тип"
+
+msgid "selectVehicles/footer/actionText/active"
+msgstr "Выбрано наград: %(amountRewards)s %(infoIcon)s"
+
+msgid "selectVehicles/noItemsText"
+msgstr "У вас приобретена вся техника соответствующего уровня."
+
+msgid "selectVehicles/searchEmptyWarning"
+msgstr "Ничего не найдено. Измените настройки или сбросьте фильтр."
+
+msgid "selectVehicles/selectedReward/tooltip/rewardDiscount/subtitle"
+msgstr ""
+"{white_Open}%(name)s{white_Close} (%(priceDiscount)s% скидка на покупку)"
+
+msgid "selectVehicles/selectedReward/tooltip/rewardDiscount/title"
+msgstr "Скидка на выбранную вами исследуемую машину %(level)s уровня."
+
+msgid "selectVehicles/selectedRewards"
+msgstr "Выбрано наград:"
+
+msgid "selectVehicles/shownCount"
+msgstr "Показано:"
+
+msgid "selectVehicles/shownCountDivider"
+msgstr "/ %(count)s"
+
+msgid "selectVehicles/subTitle"
+msgstr "Выберите машину, на которую хотите применить скидку в кредитах"
+
+msgid "selectVehicles/title"
+msgstr "ВЫБЕРИТЕ ТЕХНИКУ"
+
+msgid "selectVehicles/tooltip/clearFilter/body"
+msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
+
+msgid "selectVehicles/tooltip/clearFilter/header"
+msgstr "Установить по умолчанию"
+
+msgid "selectVehicles/tooltip/subTitle"
+msgstr "Нажмите «Забрать» и получите выбранные награды."
+
+msgid "selectVehicles/tooltip/title"
+msgstr "Выбрано наград: %(amountRewards)s"
+
+msgid "selectVehicles/vehicleName"
+msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"
+
+msgid "selectVehicles/vehicleNameSearch"
+msgstr "Поиск по названию"
+
+msgid "selectVehicles/vehicleType/AT-SPG"
+msgstr "ПТ-САУ"
+
+msgid "selectVehicles/vehicleType/SPG"
+msgstr "САУ"
+
+msgid "selectVehicles/vehicleType/heavyTank"
+msgstr "Тяжёлый танк"
+
+msgid "selectVehicles/vehicleType/lightTank"
+msgstr "Лёгкий танк"
+
+msgid "selectVehicles/vehicleType/mediumTank"
+msgstr "Средний танк"
+
+msgid "settings/Christmas"
+msgstr "Рождественский альбом"
+
+msgid "settings/Fairytale"
+msgstr "Сказочный альбом"
+
+msgid "settings/Mega"
+msgstr "Большие украшения"
+
+msgid "settings/NewYear"
+msgstr "Отечественный альбом"
+
+msgid "settings/Oriental"
+msgstr "Восточный альбом"
+
+msgid "settings/asian"
+msgstr "Китайский Новый год"
+
+msgid "settings/modernWestern"
+msgstr "Современное Рождество"
+
+msgid "settings/soviet"
+msgstr "Отечественный альбом"
+
+msgid "settings/traditionalWestern"
+msgstr "Традиционное Рождество"
+
+msgid "slot/hint/subtitle"
+msgstr "Вы разблокировали новые украшения."
+
+msgid "slot/hint/title"
+msgstr "Пополнение коллекции"
+
+msgid "smallTooltip/firstEntry/description/active"
+msgstr ""
+"Улучшайте объекты на площади, выполняйте праздничные задачи и получайте "
+"ценные награды!"
+
+msgid "smallTooltip/firstEntry/description/paused"
+msgstr "Это издержки отопительного сезона. Всё скоро заработает."
+
+msgid "smallTooltip/firstEntry/title/active"
+msgstr "Зарядите атмосферу праздника!"
+
+msgid "smallTooltip/firstEntry/title/paused"
+msgstr "Атмосфера праздника заморожена"
+
+msgid "smallTooltip/normal/description/paused"
+msgstr ""
+"В настоящий момент событие недоступно по техническим причинам. Весь прогресс"
+" будет сохранён."
+
+msgid "smallTooltip/normal/title/paused"
+msgstr "«Наш Новый год» приостановлен"
+
+msgid "stamp/page18/goToRewards"
+msgstr "Перейти к наградам коллекции 2018 года."
+
+msgid "stamp/page19/goToRewards"
+msgstr "Перейти к наградам коллекции 2019 года."
+
+msgid "stamp/page20/goToRewards"
+msgstr "Перейти к наградам коллекции 2020 года."
+
+msgid "stamp/page20/mega"
+msgstr "Награды за сбор коллекции больших украшений уже получены"
+
+msgid "stamp/page21/goToRewards"
+msgstr "Перейти к наградам коллекции 2021 года."
+
+msgid "stamp/page22/goToRewards"
+msgstr "Перейти к наградам коллекции 2022 года."
+
+msgid "stamp/stampReward"
+msgstr "НАГРАДА"
+
+msgid "styleRewardView/Christmas_ny19"
+msgstr "Рождественская коллекция"
+
+msgid "styleRewardView/Christmas_ny20"
+msgstr "Рождественская коллекция"
+
+msgid "styleRewardView/Christmas_ny21"
+msgstr "Рождественская коллекция"
+
+msgid "styleRewardView/Christmas_ny22"
+msgstr "Рождественская коллекция"
+
+msgid "styleRewardView/Christmas_ny24"
+msgstr "Рождественский альбом"
+
+msgid "styleRewardView/Fairytale_ny19"
+msgstr "Волшебная коллекция"
+
+msgid "styleRewardView/Fairytale_ny20"
+msgstr "Волшебная коллекция"
+
+msgid "styleRewardView/Fairytale_ny21"
+msgstr "Волшебная коллекция"
+
+msgid "styleRewardView/Fairytale_ny22"
+msgstr "Волшебная коллекция"
+
+msgid "styleRewardView/Fairytale_ny24"
+msgstr "Сказочный альбом"
+
+msgid "styleRewardView/NewYear_ny19"
+msgstr "Новогодняя коллекция"
+
+msgid "styleRewardView/NewYear_ny20"
+msgstr "Новогодняя коллекция"
+
+msgid "styleRewardView/NewYear_ny21"
+msgstr "Новогодняя коллекция"
+
+msgid "styleRewardView/NewYear_ny22"
+msgstr "Новогодняя коллекция"
+
+msgid "styleRewardView/NewYear_ny24"
+msgstr "Отечественный альбом"
+
+msgid "styleRewardView/Oriental_ny19"
+msgstr "Восточная коллекция"
+
+msgid "styleRewardView/Oriental_ny20"
+msgstr "Восточная коллекция"
+
+msgid "styleRewardView/Oriental_ny21"
+msgstr "Восточная коллекция"
+
+msgid "styleRewardView/Oriental_ny22"
+msgstr "Восточная коллекция"
+
+msgid "styleRewardView/Oriental_ny24"
+msgstr "Восточный альбом"
+
+msgid "styleRewardView/asian_ny18"
+msgstr "Китайская коллекция"
+
+msgid "styleRewardView/modernWestern_ny18"
+msgstr "Современная коллекция"
+
+msgid "styleRewardView/okBtn/label"
+msgstr "Так точно!"
+
+msgid "styleRewardView/rewards/description"
+msgstr "Преобразите свою любимую машину — и вперёд за новыми победами!"
+
+msgid "styleRewardView/rewards/megaTitle"
+msgstr "Большие украшения собраны!"
+
+msgid "styleRewardView/rewards/title"
+msgstr "{collectionName} собрана!"
+
+msgid "styleRewardView/soviet_ny18"
+msgstr "Новогодняя коллекция"
+
+msgid "styleRewardView/traditionalWestern_ny18"
+msgstr "Традиционная коллекция"
+
+msgid "surpriseMachine/autoOpen/header"
+msgstr "Автоиспользование жетонов"
+
+msgid "surpriseMachine/autoOpen/machineCoin"
+msgstr "Жетоны %(coins)s"
+
+msgid "surpriseMachine/autoOpen/rewardsTitle"
+msgstr "Получено имущество:"
+
+msgid "surpriseMachine/autoOpen/text"
+msgstr "Мы обменяли за вас мандарины на жетоны и начислили награды."
+
+msgid "surpriseMachine/autoOpen/writeOff"
+msgstr "Списано:"
+
+msgid "systemMessage/applyVehicleDiscount/server_error"
+msgstr "Ошибка активации скидки на технику: серверный сбой."
+
+msgid "systemMessage/applyVehicleDiscount/server_error/alreadyActive"
+msgstr "Ошибка активации скидки: скидка на данную машину уже активирована."
+
+msgid "systemMessage/applyVehicleDiscount/server_error/alreadyBought"
+msgstr "Ошибка активации скидки на технику: машина уже куплена."
+
+msgid "systemMessage/applyVehicleDiscount/server_error/noDiscountForVehicle"
+msgstr "Ошибка активации скидки: скидка на данную машину не найдена."
+
+msgid "systemMessage/applyVehicleDiscount/server_error/noDiscounts"
+msgstr "Ошибка активации скидки на технику: скидок не найдено."
+
+msgid "systemMessage/breakToys/server_error"
+msgstr "Ошибка разбития украшений: серверный сбой."
+
+msgid "systemMessage/buyCollection/server_error"
+msgstr "Ошибка покупки коллекции: серверный сбой."
+
+msgid "systemMessage/buyMegaToy/server_error"
+msgstr "Ошибка покупки большого украшения: серверный сбой."
+
+msgid "systemMessage/buyToy/server_error"
+msgstr "Ошибка покупки украшения: серверный сбой."
+
+msgid "systemMessage/customizationZones/server_error"
+msgstr ""
+"При повышении уровня %(customizationZone)s. Попробуйте повторить операцию "
+"позже."
+
+msgid "systemMessage/customizationZones/server_error/header"
+msgstr "Ошибка повышения уровня:"
+
+msgid "systemMessage/hangToy/server_error"
+msgstr "Ошибка размещения украшения: серверный сбой."
+
+msgid "systemMessage/infoCollection"
+msgstr "Куплены все украшения %(collection)s %(year)s"
+
+msgid "systemMessage/infoMegaCollection"
+msgstr "Куплены все большие украшения %(collection)s %(year)s"
+
+msgid "systemMessage/infoMegaToy"
+msgstr "Куплено большое украшение «%(toyName)s» %(collection)s %(year)s"
+
+msgid "systemMessage/infoToy"
+msgstr "Куплено украшение «%(toyName)s» %(collection)s %(year)s"
+
+msgid "systemMessage/ny18"
+msgstr "2018"
+
+msgid "systemMessage/ny19"
+msgstr "2019"
+
+msgid "systemMessage/ny20"
+msgstr "2020"
+
+msgid "systemMessage/ny21"
+msgstr "2021"
+
+msgid "systemMessage/ny22"
+msgstr "2022"
+
+msgid "systemMessage/ny24"
+msgstr "2024"
+
+msgid "systemMessage/useChardsToFiller"
+msgstr "За использование антиповторителя списано осколков: %(shardsCount)s"
+
+msgid "tabBar/Fir"
+msgstr "Ель"
+
+msgid "tabBar/forCollection"
+msgstr "За коллекции"
+
+msgid "tabBar/forLevels"
+msgstr "За уровни"
+
+msgid "tabBar/vehicle"
+msgstr "Техника"
+
+msgid "tankSlot/tooltip/bonus"
+msgstr "+%(value)%"
+
+msgid "tankSlot/tooltip/description"
+msgstr ""
+"В слот можно установить машину (кроме премиум и арендной техники) V–X "
+"уровней. Уровень машины зависит от уровня атмосферы. Бонус для каждого слота"
+" с установленной машиной выбирается вручную:"
+
+msgid "tankSlot/tooltip/freeXPFactor"
+msgstr "к свободному опыту"
+
+msgid "tankSlot/tooltip/header"
+msgstr "Новогодний слот"
+
+msgid "tankSlot/tooltip/tankmenXPFactor"
+msgstr "к опыту экипажа"
+
+msgid "tankSlot/tooltip/xpFactor"
+msgstr "к боевому опыту"
+
+msgid "totalBonusTooltip/bonusColumn"
+msgstr "Новогодний бонус"
+
+msgid "totalBonusTooltip/bonusValue"
+msgstr "%(value)s%"
+
+msgid "totalBonusTooltip/condition1"
+msgstr ""
+"Начисляется по результатам Случайных боёв, а также в режимах «Натиск», "
+"«Стальной охотник», «Полигон» и «Укрепрайон»;"
+
+msgid "totalBonusTooltip/condition2"
+msgstr ""
+"Применяется одновременно к кредитам, боевому и свободному опыту, а также к "
+"опыту экипажа."
+
+msgid "totalBonusTooltip/pbBonus"
+msgstr "%(operand)%(bonus)% к заработку по итогам боя"
+
+msgid "totalBonusTooltip/title"
+msgstr "Постоянный экономический бонус +%(value)s%"
+
+msgid "totalBonusTooltip/toysColumn"
+msgstr "Количество украшений в галерее"
+
+msgid "totalBonusTooltip/toysPattern"
+msgstr "%(lower)s–%(higher)s"
+
+msgid "totalBonusWidget/pbBonus"
+msgstr "+%(value)s%%"
+
+msgid "toy18Infotype/costParts"
+msgstr "Стоимость в осколках"
+
+msgid "toy18Infotype/decorLevel"
+msgstr "Уровень украшения"
+
+msgid "videoRewardView/submit"
+msgstr "Так точно!"
+
+msgid "videoRewardView/toHangar"
+msgstr "Посмотреть в Ангаре"
+
+msgid "widget/menu/city/title"
+msgstr "ПЛОЩАДЬ"
+
+msgid "widget/menu/decorations/body"
+msgstr ""
+"Выполняйте праздничные задачи и поручения Деда Мороза, чтобы получить ценные"
+" награды."
+
+msgid "widget/menu/decorations/header"
+msgstr "Коллайдер"
+
+msgid "widget/menu/gift/disabledDescription"
+msgstr "Почта временно недоступна"
+
+msgid "widget/menu/gift/title"
+msgstr "ПОЧТА"
+
+msgid "widget/menu/glade/body"
+msgstr ""
+"Украшайте ель на праздничной площади и повышайте уровень атмосферы "
+"праздника."
+
+msgid "widget/menu/glade/header"
+msgstr "Площадь"
+
+msgid "widget/menu/info/body"
+msgstr "Информация о событии «Наш Новый год»."
+
+msgid "widget/menu/info/header"
+msgstr "О событии"
+
+msgid "widget/menu/info/title"
+msgstr "О СОБЫТИИ"
+
+msgid "widget/menu/pet/title"
+msgstr "ПИТОМЕЦ"
+
+msgid "widget/menu/quests/title"
+msgstr "ЗАДАЧИ"
+
+msgid "widget/menu/rewards/body"
+msgstr "Повышайте уровень атмосферы праздника, чтобы получать награды."
+
+msgid "widget/menu/rewards/header"
+msgstr "Награды"
+
+msgid "widget/menu/rewards/title"
+msgstr "НАГРАДЫ"
+
+msgid "widget/menu/shards/infoText"
+msgstr "{currentCount}/{allCount}"
+
+msgid "widget/menu/surprise_machine/title"
+msgstr "АВТОМАТ"
+
+msgid "widget/menu/tooltip/city/description"
+msgstr "Увеличивайте уровень фотозон и получайте ценные награды."
+
+msgid "widget/menu/tooltip/city/header"
+msgstr "Центральная площадь"
+
+msgid "widget/menu/tooltip/info/description"
+msgstr "Информация о событии «Наш Новый год»."
+
+msgid "widget/menu/tooltip/info/header"
+msgstr "О событии"
+
+msgid "widget/menu/tooltip/machine/description"
+msgstr "Чудесная машина, которая обменивает ваши жетоны на призы."
+
+msgid "widget/menu/tooltip/machine/footer"
+msgstr "Жетоны в наличии: %(afe3f9_Open)s%(count)s%(afe3f9_Close)s"
+
+msgid "widget/menu/tooltip/machine/header"
+msgstr "Автомат удачи"
+
+msgid "widget/menu/tooltip/machine/rule_1"
+msgstr "Получить жетоны можно за выполнение праздничных задач;"
+
+msgid "widget/menu/tooltip/machine/rule_2"
+msgstr "Покупка жетонов доступна на Х уровне атмосферы праздника."
+
+msgid "widget/menu/tooltip/pet/description"
+msgstr "Порадуйте своего енота подарками и вкусняшками."
+
+msgid "widget/menu/tooltip/pet/header"
+msgstr "Питомец"
+
+msgid "widget/menu/tooltip/quests/description"
+msgstr ""
+"Выполняйте праздничные задачи и поручения Деда Мороза, чтобы получить ценные"
+" награды."
+
+msgid "widget/menu/tooltip/quests/header"
+msgstr "Задачи"
+
+msgid "widget/menu/tooltip/rewards/description"
+msgstr "Повышайте уровень атмосферы праздника, чтобы получать награды."
+
+msgid "widget/menu/tooltip/rewards/header"
+msgstr "Награды"
+
+msgid "widget/rewardsButton/label"
+msgstr "Награды уровня"
+
+msgid "widget/title"
+msgstr "Атмосфера праздника"
+
+msgid "widgetTooltip/condition1"
+msgstr "Повышайте уровень атмосферы праздника, чтобы получать ценные награды."
+
+msgid "widgetTooltip/condition2"
+msgstr "Уровень атмосферы растёт, когда вы улучшаете фотозоны."
+
+msgid "widgetTooltip/currentLevel"
+msgstr "Текущий уровень"
+
+msgid "widgetTooltip/description"
+msgstr "?empty?"
+
+msgid "widgetTooltip/disabled/description"
+msgstr ""
+"В настоящий момент событие недоступно по техническим причинам. Весь прогресс"
+" будет сохранён."
+
+msgid "widgetTooltip/disabled/title"
+msgstr "«Наш Новый год» приостановлен"
+
+msgid "widgetTooltip/maxLevelCondition1"
+msgstr "Достигнут максимальный уровень атмосферы праздника."
+
+msgid "widgetTooltip/maxLevelCondition2"
+msgstr "Награды за все уровни атмосферы выданы."
+
+msgid "widgetTooltip/maxLevelCondition3"
+msgstr "?empty?"
+
+msgid "widgetTooltip/maxLevelSubTitle"
+msgstr "Поздравляем!"
+
+msgid "widgetTooltip/maxPoints"
+msgstr "Максимум"
+
+msgid "widgetTooltip/points"
+msgstr "Очки атмосферы: %(currentPoints)s / %(nextPoints)s"
+
+msgid "widgetTooltip/status/description"
+msgstr ""
+"Успейте прогреть атмосферу праздника до Х уровня, чтобы получить все награды"
+" за её уровни!"
+
+msgid "widgetTooltip/status/timeLeft"
+msgstr "Осталось: %(days)s"
+
+msgid "widgetTooltip/subTitle1"
+msgstr "Атмосфера праздника"
+
+msgid "widgetTooltip/subTitle2"
+msgstr "Как повысить?"
+
+msgid "widgetTooltip/title"
+msgstr "Уровень атмосферы праздника"

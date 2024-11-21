@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.777415 -0.000005 -3.763718</min>
+		<max>1.758249 1.311082 4.118346</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz36_Lisak_v2/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/czech/Cz36_Lisak_v2/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -186,7 +186,7 @@
 				</circularVisionRadius>
 				<crewRolesFactor>
 					<value>
-						-0.20
+						-0.25
 						<!--BW_String-->
 					</value>
 					<ignoreAllies>True</ignoreAllies>
@@ -196,7 +196,7 @@
 				<enemy/>
 			</postEffect>
 			<expireDelay>
-				3.0
+				1.0
 				<!--BW_String-->
 			</expireDelay>
 			<areaLength>75</areaLength>
@@ -247,36 +247,44 @@
 			<consumeAmmo>true</consumeAmmo>
 			<cooldownTime>0</cooldownTime>
 			<disableAllyDamage>true</disableAllyDamage>
-			<bombsNumber>18</bombsNumber>
+			<bombsNumber>26</bombsNumber>
 			<bombsPattern>
-				-7 -30
-				-7 -22.5
-				-7 -15
-				-7 -7.5
-				-7 0
-				-7 7.5
-				-7 15
-				-7 22.5
-				-7 30
-                7 -30
-				7 -22.5
-				7 -15
-				7 -7.5
-				7 0
-				7 7.5
-				7 15
-				7 22.5
-				7 30
+				-10	-30
+                -10	-22.5
+                -10	-15
+                -10	-7.5
+                -10	0
+                -10	7.5
+                -10	15
+                -10	22.5
+                -10	30
+                0	-35
+                0	-25
+                0	-15
+                0	-5
+                0	5
+                0	15
+                0	25
+                0	35
+                10	-30
+                10	-22.5
+                10	-15
+                10	-7.5
+                10	0
+                10	7.5
+                10	15
+                10	22.5
+                10	30
 				<!--BW_String-->
 			</bombsPattern>
 			<mineParams>
 				<activationDelay>2</activationDelay>
-				<triggerRadius>7</triggerRadius>
+				<triggerRadius>6</triggerRadius>
 				<triggerHeight>5</triggerHeight>
 				<triggerDepth>1</triggerDepth>
 				<influenceType>2</influenceType>
 				<lifetime>25</lifetime>
-				<damage>175</damage>
+				<damage>200</damage>
 				<shellCompactDescr>97818</shellCompactDescr>
 				<destroyMyMinesOverlappingAlliedMines>True</destroyMyMinesOverlappingAlliedMines>
 				<resistAllyDamage>True</resistAllyDamage>
@@ -284,7 +292,7 @@
 			</mineParams>
 			<noOwner>false</noOwner>
 			<areaVisual>content/Interface/TargetPoint/TargetPointMineFieldAim_32x32.visual</areaVisual>
-			<areaLength>28</areaLength>
+			<areaLength>38</areaLength>
 			<areaWidth>74</areaWidth>
 			<arenaAimLimits>
 				<areaColor>0xFFFF0000</areaColor>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<questionTypes>image vehicle table interactiveMap text multipleChoice bigPicture</questionTypes>
+	<questionTypes>image vehicle table interactiveMap text multipleChoice</questionTypes>
 	<quantifierTypes>single multiple</quantifierTypes>
 	<surveys>
 		<survey>
@@ -10,483 +10,918 @@
 			<questions>
 				<question>
 					<questionId>1</questionId>
-					<questionType>bigPicture</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
+					<image>image1</image>
 					<pathPrefix>q1</pathPrefix>
-					<responses>map_510_teaplant_mb map_511_snowcity_mb map_512_winkelburg_mb</responses>
+					<responses>1 2 3</responses>
 				</question>
 				<question>
 					<questionId>2</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
+					<isRequired>true</isRequired>
+					<image>image2</image>
 					<pathPrefix>q2</pathPrefix>
-					<responses>1 2 3</responses>
-					<condition>
-						<requiredQuestionId>1</requiredQuestionId>
-						<requiredAnswers>map_510_teaplant_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>3</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
+					<isRequired>true</isRequired>
+					<image>image2</image>
 					<pathPrefix>q3</pathPrefix>
-					<responses>1 2 3</responses>
-					<condition>
-						<requiredQuestionId>1</requiredQuestionId>
-						<requiredAnswers>map_511_snowcity_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>4</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
+					<isRequired>true</isRequired>
+					<image>image3</image>
 					<pathPrefix>q4</pathPrefix>
-					<responses>1 2 3</responses>
-					<condition>
-						<requiredQuestionId>1</requiredQuestionId>
-						<requiredAnswers>map_512_winkelburg_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>5</questionId>
-					<questionType>text</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
+					<image>image4</image>
 					<pathPrefix>q5</pathPrefix>
-					<condition>
-						<requiredQuestionId>1</requiredQuestionId>
-						<requiredAnswers>map_510_teaplant_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>6</questionId>
-					<questionType>text</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
+					<isRequired>true</isRequired>
+					<image>image5</image>
 					<pathPrefix>q6</pathPrefix>
-					<condition>
-						<requiredQuestionId>1</requiredQuestionId>
-						<requiredAnswers>map_511_snowcity_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3</responses>
 				</question>
 				<question>
 					<questionId>7</questionId>
-					<questionType>text</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
+					<isRequired>true</isRequired>
+					<image>image6</image>
 					<pathPrefix>q7</pathPrefix>
-					<condition>
-						<requiredQuestionId>1</requiredQuestionId>
-						<requiredAnswers>map_512_winkelburg_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3</responses>
 				</question>
 				<question>
 					<questionId>8</questionId>
-					<questionType>bigPicture</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
+					<image>image7</image>
 					<pathPrefix>q8</pathPrefix>
-					<responses>map_510_teaplant_mb map_511_snowcity_mb map_512_winkelburg_mb</responses>
+					<responses>1 2 3</responses>
 				</question>
 				<question>
 					<questionId>9</questionId>
 					<questionType>text</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
+					<image>image8</image>
 					<pathPrefix>q9</pathPrefix>
 					<condition>
 						<requiredQuestionId>8</requiredQuestionId>
-						<requiredAnswers>map_510_teaplant_mb</requiredAnswers>
+						<requiredAnswers>1</requiredAnswers>
 					</condition>
 				</question>
 				<question>
 					<questionId>10</questionId>
-					<questionType>text</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
+					<image>image9</image>
 					<pathPrefix>q10</pathPrefix>
-					<condition>
-						<requiredQuestionId>8</requiredQuestionId>
-						<requiredAnswers>map_511_snowcity_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>11</questionId>
-					<questionType>text</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
+					<isRequired>true</isRequired>
+					<image>image7</image>
 					<pathPrefix>q11</pathPrefix>
-					<condition>
-						<requiredQuestionId>8</requiredQuestionId>
-						<requiredAnswers>map_512_winkelburg_mb</requiredAnswers>
-					</condition>
+					<responses>1 2 3 4</responses>
 				</question>
 			</questions>
 		</survey>
 		<survey>
 			<bonusType>37</bonusType>
 			<surveyGroup>dynamicOneMap</surveyGroup>
-			<surveyId>510_teaplant_mb</surveyId>
+			<surveyId>127_japort_mb</surveyId>
 			<questions>
 				<question>
 					<questionId>1</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
+					<isRequired>true</isRequired>
+					<image>image10</image>
 					<pathPrefix>q1</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>2</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
+					<isRequired>true</isRequired>
+					<image>image11</image>
 					<pathPrefix>q2</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>3</questionId>
-					<questionType>vehicle</questionType>
-					<isMultiple>true</isMultiple>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
+					<image>image11</image>
 					<pathPrefix>q3</pathPrefix>
-					<responses>lightTank mediumTank heavyTank AT-SPG SPG</responses>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>4</questionId>
-					<questionType>table</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
+					<image>image12</image>
 					<pathPrefix>q4</pathPrefix>
-					<image>map_510_teaplant_mb</image>
-					<options>lightTank mediumTank heavyTank AT-SPG SPG</options>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>5</questionId>
-					<questionType>image</questionType>
-					<image>map_510_teaplant_mb</image>
-					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<questionType>vehicle</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>true</isRequired>
 					<pathPrefix>q5</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>lightTank mediumTank heavyTank AT-SPG SPG unknown</responses>
+					<responseGroups>
+						<group>lightTank mediumTank heavyTank AT-SPG SPG</group>
+						<group>unknown</group>
+					</responseGroups>
 				</question>
 				<question>
 					<questionId>6</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<pathPrefix>q6</pathPrefix>
-					<image>map_510_teaplant_mb</image>
-					<responses>1 2 3</responses>
+					<alternatives>
+						<alternative>
+							<questionId>6_0</questionId>
+							<questionType>image</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<image>image13</image>
+							<pathPrefix>q6</pathPrefix>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>single</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<linkedParameters>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+						<alternative>
+							<questionId>6_1</questionId>
+							<questionType>table</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<pathPrefix>q6</pathPrefix>
+							<showIcons>true</showIcons>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>multiple</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<options>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</options>
+							<linkedParameters>
+								<join>True</join>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+					</alternatives>
+					<synchronizeAnswers>True</synchronizeAnswers>
 				</question>
 				<question>
 					<questionId>7</questionId>
-					<questionType>table</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
+					<image>image14</image>
 					<pathPrefix>q7</pathPrefix>
-					<options>easy_orientation slow_battles same_battles early_detection bad_map_for_battle</options>
-					<image>map_510_teaplant_mb</image>
-					<responses>1 2 3</responses>
-					<image>map_510_teaplant_mb</image>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>8</questionId>
 					<questionType>table</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
 					<pathPrefix>q8</pathPrefix>
-					<options>tactical shoot_positions vegetation relief spg_shelter</options>
-					<image>map_510_teaplant_mb</image>
 					<responses>1 2 3</responses>
-					<image>map_510_teaplant_mb</image>
+					<options>127_japort_mb_1 127_japort_mb_2 127_japort_mb_3 127_japort_mb_4</options>
 				</question>
 				<question>
 					<questionId>9</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q9</pathPrefix>
-					<image>map_510_teaplant_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>127_japort_mb_1</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							127_japort_mb_1
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>10</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q10</pathPrefix>
-					<image>map_510_teaplant_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>127_japort_mb_2</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							127_japort_mb_2
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>11</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q11</pathPrefix>
-					<image>map_510_teaplant_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>127_japort_mb_3</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							127_japort_mb_3
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>12</questionId>
-					<questionType>text</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_510_teaplant_mb</image>
-					<pathPrefix>q12</pathPrefix>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>127_japort_mb_4</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							127_japort_mb_4
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 			</questions>
 		</survey>
 		<survey>
 			<bonusType>37</bonusType>
 			<surveyGroup>dynamicOneMap</surveyGroup>
-			<surveyId>511_snowcity_mb</surveyId>
+			<surveyId>04_himmelsdorf_mb</surveyId>
 			<questions>
 				<question>
 					<questionId>1</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
+					<isRequired>true</isRequired>
+					<image>image10</image>
 					<pathPrefix>q1</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>2</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
+					<isRequired>true</isRequired>
+					<image>image11</image>
 					<pathPrefix>q2</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>3</questionId>
-					<questionType>vehicle</questionType>
-					<isMultiple>true</isMultiple>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
+					<image>image11</image>
 					<pathPrefix>q3</pathPrefix>
-					<responses>lightTank mediumTank heavyTank AT-SPG SPG</responses>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>4</questionId>
-					<questionType>table</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
+					<image>image12</image>
 					<pathPrefix>q4</pathPrefix>
-					<image>map_511_snowcity_mb</image>
-					<options>lightTank mediumTank heavyTank AT-SPG SPG</options>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>5</questionId>
-					<questionType>image</questionType>
-					<image>map_511_snowcity_mb</image>
-					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<questionType>vehicle</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>true</isRequired>
 					<pathPrefix>q5</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>lightTank mediumTank heavyTank AT-SPG SPG unknown</responses>
+					<responseGroups>
+						<group>lightTank mediumTank heavyTank AT-SPG SPG</group>
+						<group>unknown</group>
+					</responseGroups>
 				</question>
 				<question>
 					<questionId>6</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<pathPrefix>q6</pathPrefix>
-					<image>map_511_snowcity_mb</image>
-					<responses>1 2 3</responses>
+					<alternatives>
+						<alternative>
+							<questionId>6_0</questionId>
+							<questionType>image</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<image>image13</image>
+							<pathPrefix>q6</pathPrefix>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>single</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<linkedParameters>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+						<alternative>
+							<questionId>6_1</questionId>
+							<questionType>table</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<pathPrefix>q6</pathPrefix>
+							<showIcons>true</showIcons>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>multiple</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<options>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</options>
+							<linkedParameters>
+								<join>True</join>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+					</alternatives>
+					<synchronizeAnswers>True</synchronizeAnswers>
 				</question>
 				<question>
 					<questionId>7</questionId>
-					<questionType>table</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
+					<image>image14</image>
 					<pathPrefix>q7</pathPrefix>
-					<options>easy_orientation slow_battles same_battles early_detection bad_map_for_battle</options>
-					<image>map_511_snowcity_mb</image>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>8</questionId>
 					<questionType>table</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
 					<pathPrefix>q8</pathPrefix>
-					<options>tactical shoot_positions vegetation relief spg_shelter</options>
-					<image>map_511_snowcity_mb</image>
 					<responses>1 2 3</responses>
+					<options>04_himmelsdorf_mb_1 04_himmelsdorf_mb_2 04_himmelsdorf_mb_3 04_himmelsdorf_mb_4</options>
 				</question>
 				<question>
 					<questionId>9</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q9</pathPrefix>
-					<image>map_511_snowcity_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>04_himmelsdorf_mb_1</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							04_himmelsdorf_mb_1
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>10</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q10</pathPrefix>
-					<image>map_511_snowcity_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>04_himmelsdorf_mb_2</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							04_himmelsdorf_mb_2
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>11</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q11</pathPrefix>
-					<image>map_511_snowcity_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>04_himmelsdorf_mb_3</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							04_himmelsdorf_mb_3
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>12</questionId>
-					<questionType>text</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_511_snowcity_mb</image>
-					<pathPrefix>q12</pathPrefix>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>04_himmelsdorf_mb_4</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							04_himmelsdorf_mb_4
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 			</questions>
 		</survey>
 		<survey>
 			<bonusType>37</bonusType>
 			<surveyGroup>dynamicOneMap</surveyGroup>
-			<surveyId>512_winkelburg_mb</surveyId>
+			<surveyId>05_prohorovka_mb</surveyId>
 			<questions>
 				<question>
 					<questionId>1</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
+					<isRequired>true</isRequired>
+					<image>image10</image>
 					<pathPrefix>q1</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>2</questionId>
 					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
+					<isRequired>true</isRequired>
+					<image>image11</image>
 					<pathPrefix>q2</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>3</questionId>
-					<questionType>vehicle</questionType>
-					<isMultiple>true</isMultiple>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
+					<image>image11</image>
 					<pathPrefix>q3</pathPrefix>
-					<responses>lightTank mediumTank heavyTank AT-SPG SPG</responses>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>4</questionId>
-					<questionType>table</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
+					<image>image12</image>
 					<pathPrefix>q4</pathPrefix>
-					<image>map_512_winkelburg_mb</image>
-					<options>lightTank mediumTank heavyTank AT-SPG SPG</options>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4</responses>
 				</question>
 				<question>
 					<questionId>5</questionId>
-					<questionType>image</questionType>
-					<image>map_512_winkelburg_mb</image>
-					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<questionType>vehicle</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>true</isRequired>
 					<pathPrefix>q5</pathPrefix>
-					<responses>1 2 3</responses>
+					<responses>lightTank mediumTank heavyTank AT-SPG SPG unknown</responses>
+					<responseGroups>
+						<group>lightTank mediumTank heavyTank AT-SPG SPG</group>
+						<group>unknown</group>
+					</responseGroups>
 				</question>
 				<question>
 					<questionId>6</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
-					<pathPrefix>q6</pathPrefix>
-					<image>map_512_winkelburg_mb</image>
-					<responses>1 2 3</responses>
+					<alternatives>
+						<alternative>
+							<questionId>6_0</questionId>
+							<questionType>image</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<image>image13</image>
+							<pathPrefix>q6</pathPrefix>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>single</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<linkedParameters>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+						<alternative>
+							<questionId>6_1</questionId>
+							<questionType>table</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<pathPrefix>q6</pathPrefix>
+							<showIcons>true</showIcons>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>multiple</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<options>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</options>
+							<linkedParameters>
+								<join>True</join>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+					</alternatives>
+					<synchronizeAnswers>True</synchronizeAnswers>
 				</question>
 				<question>
 					<questionId>7</questionId>
-					<questionType>table</questionType>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
+					<image>image14</image>
 					<pathPrefix>q7</pathPrefix>
-					<options>easy_orientation slow_battles same_battles early_detection bad_map_for_battle</options>
-					<image>map_512_winkelburg_mb</image>
-					<responses>1 2 3</responses>
+					<responses>1 2 3 4 5</responses>
 				</question>
 				<question>
 					<questionId>8</questionId>
 					<questionType>table</questionType>
 					<isMultiple>false</isMultiple>
-					<isRequired>false</isRequired>
+					<isRequired>true</isRequired>
 					<pathPrefix>q8</pathPrefix>
-					<options>tactical shoot_positions vegetation relief spg_shelter</options>
-					<image>map_512_winkelburg_mb</image>
 					<responses>1 2 3</responses>
+					<options>05_prohorovka_mb_1 05_prohorovka_mb_2 05_prohorovka_mb_3 05_prohorovka_mb_4</options>
 				</question>
 				<question>
 					<questionId>9</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q9</pathPrefix>
-					<image>map_512_winkelburg_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>05_prohorovka_mb_1</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							05_prohorovka_mb_1
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>10</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q10</pathPrefix>
-					<image>map_512_winkelburg_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>05_prohorovka_mb_2</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							05_prohorovka_mb_2
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>11</questionId>
-					<questionType>image</questionType>
-					<isMultiple>false</isMultiple>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
 					<isRequired>false</isRequired>
-					<pathPrefix>q11</pathPrefix>
-					<image>map_512_winkelburg_mb</image>
-					<responses>1 2 3</responses>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>05_prohorovka_mb_3</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							05_prohorovka_mb_3
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 				<question>
 					<questionId>12</questionId>
-					<questionType>text</questionType>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>false</isRequired>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>05_prohorovka_mb_4</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							05_prohorovka_mb_4
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
+				</question>
+			</questions>
+		</survey>
+		<survey>
+			<bonusType>37</bonusType>
+			<surveyGroup>dynamicOneMap</surveyGroup>
+			<surveyId>08_ruinberg_mb</surveyId>
+			<questions>
+				<question>
+					<questionId>1</questionId>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
+					<isRequired>true</isRequired>
+					<image>image10</image>
+					<pathPrefix>q1</pathPrefix>
+					<responses>1 2 3 4 5</responses>
+				</question>
+				<question>
+					<questionId>2</questionId>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
+					<isRequired>true</isRequired>
+					<image>image11</image>
+					<pathPrefix>q2</pathPrefix>
+					<responses>1 2 3 4 5</responses>
+				</question>
+				<question>
+					<questionId>3</questionId>
+					<questionType>image</questionType>
 					<isMultiple>false</isMultiple>
 					<isRequired>false</isRequired>
-					<image>map_512_winkelburg_mb</image>
-					<pathPrefix>q12</pathPrefix>
+					<image>image11</image>
+					<pathPrefix>q3</pathPrefix>
+					<responses>1 2 3 4</responses>
+				</question>
+				<question>
+					<questionId>4</questionId>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
+					<isRequired>false</isRequired>
+					<image>image12</image>
+					<pathPrefix>q4</pathPrefix>
+					<responses>1 2 3 4</responses>
+				</question>
+				<question>
+					<questionId>5</questionId>
+					<questionType>vehicle</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>true</isRequired>
+					<pathPrefix>q5</pathPrefix>
+					<responses>lightTank mediumTank heavyTank AT-SPG SPG unknown</responses>
+					<responseGroups>
+						<group>lightTank mediumTank heavyTank AT-SPG SPG</group>
+						<group>unknown</group>
+					</responseGroups>
+				</question>
+				<question>
+					<questionId>6</questionId>
+					<alternatives>
+						<alternative>
+							<questionId>6_0</questionId>
+							<questionType>image</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<image>image13</image>
+							<pathPrefix>q6</pathPrefix>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>single</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<linkedParameters>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+						<alternative>
+							<questionId>6_1</questionId>
+							<questionType>table</questionType>
+							<isMultiple>false</isMultiple>
+							<isRequired>false</isRequired>
+							<pathPrefix>q6</pathPrefix>
+							<showIcons>true</showIcons>
+							<useLinkedParams>True</useLinkedParams>
+							<condition>
+								<requiredQuestionId>5</requiredQuestionId>
+								<requiredAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<quantifier>multiple</quantifier>
+								</requiredAnswers>
+							</condition>
+							<responses>1 2 3 4</responses>
+							<options>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</options>
+							<linkedParameters>
+								<join>True</join>
+								<useAnswers>
+									lightTank mediumTank heavyTank AT-SPG SPG
+									<questionID>5</questionID>
+								</useAnswers>
+							</linkedParameters>
+						</alternative>
+					</alternatives>
+					<synchronizeAnswers>True</synchronizeAnswers>
+				</question>
+				<question>
+					<questionId>7</questionId>
+					<questionType>image</questionType>
+					<isMultiple>false</isMultiple>
+					<isRequired>true</isRequired>
+					<image>image14</image>
+					<pathPrefix>q7</pathPrefix>
+					<responses>1 2 3 4 5</responses>
+				</question>
+				<question>
+					<questionId>8</questionId>
+					<questionType>table</questionType>
+					<isMultiple>false</isMultiple>
+					<isRequired>true</isRequired>
+					<pathPrefix>q8</pathPrefix>
+					<responses>1 2 3</responses>
+					<options>08_ruinberg_mb_1 08_ruinberg_mb_2 08_ruinberg_mb_3</options>
+				</question>
+				<question>
+					<questionId>9</questionId>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>false</isRequired>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>08_ruinberg_mb_1</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							08_ruinberg_mb_1
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
+				</question>
+				<question>
+					<questionId>10</questionId>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>false</isRequired>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>08_ruinberg_mb_2</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							08_ruinberg_mb_2
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
+				</question>
+				<question>
+					<questionId>11</questionId>
+					<questionType>multipleChoice</questionType>
+					<isMultiple>true</isMultiple>
+					<isRequired>false</isRequired>
+					<pathPrefix>q9_13</pathPrefix>
+					<responses>1 2 3 4 5 6 7 8 9 10 11 12</responses>
+					<condition>
+						<requiredQuestionId>8</requiredQuestionId>
+						<requiredOptionId>08_ruinberg_mb_3</requiredOptionId>
+						<requiredAnswers>2</requiredAnswers>
+					</condition>
+					<linkedParameters>
+						<useOptions>
+							08_ruinberg_mb_3
+							<questionID>8</questionID>
+						</useOptions>
+					</linkedParameters>
 				</question>
 			</questions>
 		</survey>

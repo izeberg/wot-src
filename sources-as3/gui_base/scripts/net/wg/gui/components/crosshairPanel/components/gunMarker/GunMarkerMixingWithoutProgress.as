@@ -10,7 +10,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       private static const STATE_VALIDATION:String = "state";
        
       
-      public var dotsMc:MovieClip = null;
+      public var dotsMc:MovieClip;
       
       private var _isInProgress:Boolean = false;
       
@@ -54,10 +54,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       public function setThickness(param1:String) : void
       {
-         if(this.dotsMc != null)
-         {
-            this.dotsMc.gotoAndStop(param1);
-         }
+         this.dotsMc.gotoAndStop(param1);
       }
    }
 }

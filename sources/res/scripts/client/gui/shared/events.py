@@ -12,8 +12,7 @@ __all__ = ('ArgsEvent', 'ComponentEvent', 'LoadViewEvent', 'LoadGuiImplViewEvent
            'HangarCustomizationEvent', 'GameEvent', 'BootcampEvent', 'ViewEventType',
            'OpenLinkEvent', 'ChannelManagementEvent', 'PreBattleChannelEvent', 'AmmunitionSetupViewEvent',
            'HasCtxEvent', 'DogTagsEvent', 'FullscreenModeSelectorEvent', 'MarkersManagerEvent',
-           'ModeSelectorPopoverEvent', 'ModeSelectorLoadedEvent', 'ModeSubSelectorEvent',
-           'ArmoryYardEvent', 'HangarSimpleEvent')
+           'ModeSelectorPopoverEvent', 'ModeSubSelectorEvent', 'ArmoryYardEvent')
 _logger = logging.getLogger(__name__)
 
 class HasCtxEvent(SharedEvent):
@@ -90,8 +89,6 @@ class GameEvent(HasCtxEvent):
     POINT_OF_INTEREST_ADDED = 'game/changeAmmunitionSetup'
     POINT_OF_INTEREST_REMOVED = 'game/changeAmmunitionSetup'
     PREBATTLE_INPUT_STATE_LOCKED = 'game/inputStateLocked'
-    SHOW_SPAWN_POINTS = 'game/showSpawnPoints'
-    HIDE_SPAWN_POINTS = 'game/hideSpawnPoints'
 
 
 class GUICommonEvent(SharedEvent):
@@ -308,11 +305,14 @@ class LobbySimpleEvent(HasCtxEvent):
     WAITING_SHOWN = 'waitingShown'
     WAITING_HIDDEN = 'waitingHidden'
     BATTLE_RESULTS_POSTED = 'battleResultsPosted'
+    TURN_LOBBY_DRAGGING_OFF = 'turnLobbyDraggingOff'
     BATTLE_RESULTS_SHOW_QUEST = 'battleResultsWindowShowQuest'
     CHANGE_SOUND_ENVIRONMENT = 'changeSoundEnvironment'
     VEHICLE_PREVIEW_HIDDEN = 'vehiclePreviewHidden'
     ENTITY_TOOLTIP_SHOW = 'entityTooltipShow'
     ENTITY_TOOLTIP_HIDE = 'entityTooltipHide'
+    SWITCH_NEW_YEAR_VIEW = 'switchNewYearView'
+    SHOW_LOOT_BOX_VIEW = 'showLootBoxView'
 
 
 class MissionsEvent(HasCtxEvent):
@@ -365,6 +365,10 @@ class FightButtonEvent(LobbySimpleEvent):
 class LobbyHeaderMenuEvent(LobbySimpleEvent):
     TOGGLE_VISIBILITY = 'toggleVisibilityHeaderMenu'
     MENU_CLICK = 'headerMenuClick'
+
+
+class LobbyHeaderEvent(LobbySimpleEvent):
+    TOGGLE_VISIBILITY = 'toggleVisibilityHeader'
 
 
 class CloseWindowEvent(SharedEvent):
@@ -631,6 +635,7 @@ class VehicleBuyEvent(HasCtxEvent):
 
 
 class HangarVehicleEvent(HasCtxEvent):
+    ON_HERO_TANK_LABEL_UPDATE_REQUIRED = 'hangarVehicle/onHeroTankLabelUpdateRequired'
     ON_HERO_TANK_LOADED = 'hangarVehicle/onHeroTankLoaded'
     ON_HERO_TANK_DESTROY = 'hangarVehicle/onHeroTankDestroy'
     ON_PLATOON_TANK_LOADED = 'hangarVehicle/onPlatoonTankLoaded'
@@ -660,12 +665,28 @@ class SeniorityAwardsEvent(HasCtxEvent):
     ON_ENTRY_VIEW_LOADED = 'seniorityAwards/onEntryViewLoaded'
 
 
-class WtEventPortalsEvent(HasCtxEvent):
-    ON_PORTAL_VIEW_CLOSED = 'wtEvent/onPortalViewClosed'
-    ON_PORTAL_AWARD_VIEW_CLOSED = 'wtEvent/onPortalAwardViewClosed'
-    ON_VEHICLE_AWARD_VIEW_CLOSED = 'wtEvent/onVehicleAwardViewClosed'
-    ON_ALL_PORTAL_VIEWS_CLOSED = 'wtEvent/onAllPortalViewClosed'
-    ON_BACK_TO_PORTAL = 'wtEvent/onBackToPortal'
+class LootboxesEvent(HasCtxEvent):
+    ON_REWARD_VIEW_CLOSED = 'lootboxes/onRewardViewClosed'
+    ON_MULTI_OPEN_VIEW_CLOSED = 'lootboxes/onMultiOpenViewClosed'
+    ON_SHOW_SPECIAL_REWARDS_CLOSED = 'lootboxes/onShowSpecialRewardsClosed'
+    ON_ENTRY_VIEW_LOADED = 'lootboxes/onEntryViewLoaded'
+    ON_MAIN_VIEW_CLOSED = 'lootboxes/onMainViewClosed'
+    ON_OPENING_START = 'lootboxes/onOpeningStart'
+    ON_OPENING_END = 'lootboxes/onOpeningEnd'
+    ON_OPEN_LOOTBOX = 'lootboxes/onOpenNext'
+    NEED_SHOW_REWARDS = 'lootboxes/needShowRewards'
+    NEED_STOP_ENTRY_VIDEO = 'lootboxes/needStopEntryVideo'
+    REMOVE_HIDE_VIEW = 'lootboxes/removeHideView'
+    HIDE_COMPLETE = 'lootboxes/hideComplete'
+    ON_VIDEO_OFF_MOVIE_LOADED = 'lootboxes/onVideoOffMovieLoaded'
+    ON_VIDEO_LOAD_ERROR = 'lootboxes/onVideoLoadError'
+    ON_TAB_SELECTED = 'lootboxes/onTabSelected'
+    NEED_DELIVERY_VIDEO_START = 'lootboxes/needDeliveryVideoStart'
+    NEED_DELIVERY_VIDEO_STOP = 'lootboxes/needDeliveryVideoStop'
+    ON_DELIVERY_VIDEO_END = 'lootboxes/onDeliveryVideoEnd'
+    ON_BOX_TRANSITION_END = 'lootboxes/onBoxTransitionEnd'
+    ON_STATISTICS_RESET = 'lootboxes/onStatisticsReset'
+    SWITCH_BOX_HOVER = 'lootboxes/switchBoxHover'
 
 
 class ReferralProgramEvent(HasCtxEvent):
@@ -798,10 +819,6 @@ class ModeSelectorPopoverEvent(HasCtxEvent):
     NAME = 'ModeSelectorPopoverEvent'
 
 
-class ModeSelectorLoadedEvent(SharedEvent):
-    NAME = 'ModeSelectorLoadedEvent'
-
-
 class ModeSubSelectorEvent(HasCtxEvent):
     CHANGE_VISIBILITY = 'subSelectorViewEvent/changeVisibility'
     CLICK_PROCESSING = 'subSelectorViewEvent/clickProcessing'
@@ -866,15 +883,6 @@ class SurveyEvent(SharedEvent):
     SURVEY_FINISHED = 'onSurveyFinished'
 
 
-class HangarSimpleEvent(HasCtxEvent):
-    HANGAR_LOADED = 'HangarSimpleEvent/hangarLoaded'
-    HANGAR_UNLOADED = 'HangarSimpleEvent/hangarUnLoaded'
-    VEHICLE_PREVIEW_LOADED = 'HangarSimpleEvent/vehiclePreviewLoaded'
-    VEHICLE_PREVIEW_UNLOADED = 'HangarSimpleEvent/vehiclePreviewUnLoaded'
-    EVENT_PORTAL_SELECTED = 'HangarSimpleEvent/eventPortalSelected'
-    EVENT_VEHICLE_SELECTED = 'HangarSimpleEvent/eventVehicleSelected'
-    SHOW_CONFIRM_DIALOG = 'HangarSimpleEvent/showConfirmDialog'
-    CLOSE_CONFIRM_DIALOG = 'HangarSimpleEvent/closeConfirmDialog'
-    DISPATCHER_ENTITY_WAS_UPDATED = 'HangarSimpleEvent/DispatcherEntityWasUpdated'
-    VEHICLE_PREVIEW_CLOSE = 'HangarSimpleEvent/VehiclePreviewClose'
-    UPDATE_CAROUSEL_VEHICLE_STATES = 'HangarSimpleEvent/UpdateCarouselVehicleStates'
+class GiftSystemOperationEvent(HasCtxEvent):
+    GIFT_SENT = 'GiftSentEvent'
+    GIFT_OPENED = 'GiftOpenedEvent'

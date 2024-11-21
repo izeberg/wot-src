@@ -1,0 +1,638 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "acceleratedTraining/label"
+msgstr "Паскоранае навучанне"
+
+msgid "acceleratedTraining/tooltip/body"
+msgstr ""
+"Найменш дасведчаны танкіст навучаецца ўдвая хутчэй. Машына працягвае "
+"здабываць баявы досвед."
+
+msgid "acceleratedTraining/tooltip/header"
+msgstr "Паскоранае навучанне"
+
+msgid "barracks/action/enlarge"
+msgstr "Разбудаваць"
+
+msgid "barracks/bunks/title"
+msgstr "Ложкі:"
+
+msgid "barracks/enlarge/contentLine"
+msgstr ""
+"Укажыце колькасці ложкаў для набыцця. Вольных ложкаў у Жаўнерні: "
+"%(freeBunksCount)s/%(allBunksCount)s."
+
+msgid "barracks/enlarge/discountTooltip/header"
+msgstr "Кошт за зніжкай"
+
+msgid "barracks/enlarge/discountTooltip/newCost"
+msgstr "Новы кошт : %(currency)s за %(bunksCount)s ложкаў"
+
+msgid "barracks/enlarge/discountTooltip/previousCost"
+msgstr "Папярэдні кошт: %(currency)s за %(bunksCount)s ложкаў"
+
+msgid "barracks/enlarge/header"
+msgstr "Ці разбудаваць Жаўнерню?"
+
+msgid "barracks/title"
+msgstr "ЖАЎНЕРНЯ"
+
+msgid "barracks/tooltip/enlarge/body"
+msgstr "Націсніце, каб разбудаваць Жаўнерню."
+
+msgid "barracks/tooltip/enlarge/header"
+msgstr "Разбудова Жаўнерні"
+
+msgid "common/exclamationMark"
+msgstr "!"
+
+msgid "common/filter/location"
+msgstr "Размяшчэнне"
+
+msgid "common/imageNotAvailable"
+msgstr "Выява недаступная"
+
+msgid "common/inBarracks"
+msgstr "Знаходзіцца ў Жаўнерні"
+
+msgid "common/inBattle"
+msgstr "У баі"
+
+msgid "common/inPrebattle"
+msgstr "У складзе фармавання"
+
+msgid "common/navigation/aboutCrew"
+msgstr "ПРА ЭКІПАЖ"
+
+msgid "common/navigation/toBarracks"
+msgstr "У ЖАЎНЕРНЮ"
+
+msgid "common/navigation/toGarage"
+msgstr "У ГАРАЖ"
+
+msgid "common/navigation/toPersonalFile"
+msgstr "ДА ПРОФІЛЮ"
+
+msgid "confirmSkills/percent"
+msgstr "%(value)s %"
+
+msgid "crew22Welcome/1/block/1/description"
+msgstr ""
+"Больш няма падзелу на ўменні і навыкі; яны ўсе працуюць паводле аднаго "
+"прынцыпу."
+
+msgid "crew22Welcome/1/block/1/title"
+msgstr "Адзін прынцып"
+
+msgid "crew22Welcome/1/block/2/description"
+msgstr ""
+"Любы навык пачынае працаваць адразу пасля яго вывучэння. Пры вывучэнні на "
+"100% эфект максімальны."
+
+msgid "crew22Welcome/1/block/2/title"
+msgstr "Дзейнічае адразу"
+
+msgid "crew22Welcome/1/block/3/description"
+msgstr ""
+"Узровень валодання асноўнай спецыяльнасцю ўплывае на навыкі, дадаткова "
+"ўзмацняючы іх эфект. Пры раненні навыкі не працуюць."
+
+msgid "crew22Welcome/1/block/3/title"
+msgstr "Уплыў на навыкі"
+
+msgid "crew22Welcome/1/subtitle"
+msgstr "Абноўлены старыя навыкі"
+
+msgid "crew22Welcome/1/title"
+msgstr "АБНАЎЛЕННЕ НАВЫКАЎ ЭКІПАЖА"
+
+msgid "crew22Welcome/2/block/1/description"
+msgstr ""
+"Больш не з'яўляецца групавым навыкам. Калі навык «Гашэнне пажару» быў "
+"вывучаны танкістам з экіпажа (акрамя радыста), ён будзе скінуты. Замест яго "
+"можна вывучыць іншы."
+
+msgid "crew22Welcome/2/block/1/title"
+msgstr "«Гашэнне пажару»"
+
+msgid "crew22Welcome/2/block/2/description"
+msgstr ""
+"У некаторых навыках выкарыстоўваюцца сітуацыйныя эфекты. Яны запускаюцца пры"
+" выкананні пэўных умоў у баі. Актывацыя і працягласць гэтых эфектаў "
+"паказваецца ў баі."
+
+msgid "crew22Welcome/2/block/2/title"
+msgstr "Сітуацыйныя эфекты"
+
+msgid "crew22Welcome/2/subtitle"
+msgstr "Выберыце новыя дадатковыя навыкі, каб павысіць эфектыўнасць экіпажа."
+
+msgid "crew22Welcome/2/title"
+msgstr "УЗМОЦНІЦЕ СВОЙ ЭКІПАЖ"
+
+msgid "filter/group/details/title"
+msgstr "Падрабязней"
+
+msgid "filter/group/nation/title"
+msgstr "Дзяржава"
+
+msgid "filter/group/other/title"
+msgstr "Іншае"
+
+msgid "filter/group/special/title"
+msgstr "Асаблівыя"
+
+msgid "filter/group/tankmanRole/title"
+msgstr "Спецыяльнасць"
+
+msgid "filter/group/vehicleTier/longTitle"
+msgstr "Узровень тэхнікі"
+
+msgid "filter/group/vehicleTier/shortTitle"
+msgstr "Узровень"
+
+msgid "filter/group/vehicleType/barracks/title"
+msgstr "Спецыялізацыя"
+
+msgid "filter/group/vehicleType/tankChange/title"
+msgstr "Тып тэхнікі"
+
+msgid "filter/popup/button/title"
+msgstr "Фільтр"
+
+msgid "filter/popup/default/title"
+msgstr "Фільтр"
+
+msgid "filter/popup/skinChange/title"
+msgstr "Фільтр дзяржавы"
+
+msgid "filter/popup/tankChange/title"
+msgstr "Фільтр тэхнікі"
+
+msgid "filter/reset"
+msgstr "Скінуць фільтр"
+
+msgid "filter/search/placeholder"
+msgstr "Пошук паводле назвы"
+
+msgid "filter/search/tooltip/header"
+msgstr "Пошук паводле назвы"
+
+msgid "filter/title"
+msgstr "Паказана:"
+
+msgid "filter/tooltip/crewMemberVehicleGrade/elite/body"
+msgstr ""
+"Паказваць/схаваць танкістаў тэхнікі, на якой даследаваны ўсе модулі і "
+"наступныя ў галіне развіцця машыны."
+
+msgid "filter/tooltip/crewMemberVehicleGrade/elite/title"
+msgstr "Элітная тэхніка"
+
+msgid "filter/tooltip/crewMemberVehicleGrade/premium/body"
+msgstr "Паказваць/схаваць танкістаў, навучаных на прэміум тэхніку."
+
+msgid "filter/tooltip/crewMemberVehicleGrade/premium/title"
+msgstr "Прэміум тэхніка"
+
+msgid "filter/tooltip/crewMemberVehicleGrade/primary/body"
+msgstr "Паказваць/схаваць танкістаў у асноўнай тэхніцы."
+
+msgid "filter/tooltip/crewMemberVehicleGrade/primary/title"
+msgstr "Асноўная тэхніка"
+
+msgid "filter/tooltip/crewMemberVehicleType/body"
+msgstr "Паказваць/схаваць танкістаў гэтага тыпу тэхнікі."
+
+msgid "filter/tooltip/nation/crewMember/body"
+msgstr "Паказваць/схаваць танкістаў гэтай дзяржавы."
+
+msgid "filter/tooltip/nation/skins/body"
+msgstr "Паказваць/схаваць абліччы гэтай дзяржавы."
+
+msgid "filter/tooltip/nation/vehicles/body"
+msgstr "Паказваць/схаваць тэхніку гэтай дзяржавы."
+
+msgid "filter/tooltip/tankmanKind/dismissed/body"
+msgstr "Паказваць/схаваць дэмабілізаваных танкістаў."
+
+msgid "filter/tooltip/tankmanKind/dismissed/title"
+msgstr "Дэмабілізаваныя"
+
+msgid "filter/tooltip/tankmanKind/recruit/body"
+msgstr "Паказваць/схаваць навабранцаў."
+
+msgid "filter/tooltip/tankmanKind/recruit/title"
+msgstr "Навабранцы"
+
+msgid "filter/tooltip/tankmanKind/tankman/body"
+msgstr "Паказваць/схаваць танкістаў."
+
+msgid "filter/tooltip/tankmanKind/tankman/title"
+msgstr "Танкісты"
+
+msgid "filter/tooltip/tankmanRole/body"
+msgstr "Паказваць/схаваць танкістаў гэтай спецыяльнасці."
+
+msgid "filter/tooltip/vehicleGrade/premium/body"
+msgstr "Паказваць/схаваць прэміум тэхніку."
+
+msgid "filter/tooltip/vehicleGrade/premium/title"
+msgstr "Прэміум тэхніка"
+
+msgid "filter/tooltip/vehicleType/body"
+msgstr "Паказваць/схаваць тэхніку гэтага тыпу."
+
+msgid "filter/vehicles/noVehicles"
+msgstr ""
+"Не знойдзена тэхнікі, якая адпавядае\n"
+"умовам пошуку"
+
+msgid "filter/vehicles/tooltip/name/body"
+msgstr "Сартаваць паводле назвы тэхнікі."
+
+msgid "filter/vehicles/tooltip/name/header"
+msgstr "Імя"
+
+msgid "filter/vehicles/tooltip/tier/body"
+msgstr "Сартаваць паводле ўзроўню тэхнікі."
+
+msgid "filter/vehicles/tooltip/tier/header"
+msgstr "Узровень"
+
+msgid "filter/vehicles/tooltip/type/body"
+msgstr "Сартаваць паводле тыпу тэхнікі."
+
+msgid "filter/vehicles/tooltip/type/header"
+msgstr "Тып"
+
+msgid "filter/vehicles/vehicleName"
+msgstr "Імя"
+
+msgid "filterPanel/counter/reset/body"
+msgstr "Націсніце, каб скінуць фільтр."
+
+msgid "filterPanel/counter/reset/header"
+msgstr "Скінуць усе фільтры"
+
+msgid "matrix/increaseButton"
+msgstr "Палепшыць"
+
+msgid "matrix/increaseTooltip/enable/body"
+msgstr "Палепшыць навыкі з дапамогай вольнага досведу і вучэбных матэрыялаў."
+
+msgid "matrix/increaseTooltip/enable/header"
+msgstr "Дадатковае навучанне"
+
+msgid "matrix/irrelevantQualification/header"
+msgstr "Несумяшчальная спецыяльнасць"
+
+msgid "matrix/qualification/1"
+msgstr "Асноўная спецыяльнасць"
+
+msgid "matrix/qualification/2"
+msgstr "Другая спецыяльнасць"
+
+msgid "matrix/qualification/3"
+msgstr "Трэцяя спецыяльнасць"
+
+msgid "matrix/qualification/4"
+msgstr "Чацвёртая спецыяльнасць"
+
+msgid "matrix/qualification/lockByZeroPerks/2"
+msgstr "«Нулявыя» навыкі недаступныя для другой спецыяльнасці"
+
+msgid "matrix/qualification/lockByZeroPerks/3"
+msgstr "«Нулявыя» навыкі недаступныя для трэцяй спецыяльнасці"
+
+msgid "matrix/qualification/lockByZeroPerks/4"
+msgstr "«Нулявыя» навыкі недаступныя для чацвёртай спецыяльнасці"
+
+msgid "matrix/resetButton"
+msgstr "Скінуць"
+
+msgid "matrix/resetTooltip/disable/body"
+msgstr "У вас няма вывучаных навыкаў"
+
+msgid "matrix/resetTooltip/disable/header"
+msgstr "Немагчыма скінуць навыкі"
+
+msgid "matrix/resetTooltip/enable/body"
+msgstr "Націсніце, каб скінуць навыкі."
+
+msgid "matrix/resetTooltip/enable/header"
+msgstr "Скінуць навыкі"
+
+msgid "matrix/skills/achieve"
+msgstr "Навучанне даступнае пры 100%-м валоданні асноўнай спецыяльнасцю"
+
+msgid "matrix/skills/allSkills"
+msgstr "Усе дадатковыя навыкі для гэтай машыны"
+
+msgid "matrix/skills/available"
+msgstr "Даступныя для вывучэння навыкі:"
+
+msgid "matrix/skills/roles/commander"
+msgstr "Навыкі камандзіра"
+
+msgid "matrix/skills/roles/driver"
+msgstr "Навыкі механіка-кіроўцы"
+
+msgid "matrix/skills/roles/female/commander"
+msgstr "Навыкі камандзіра"
+
+msgid "matrix/skills/roles/female/driver"
+msgstr "Навыкі механіка-кіроўцы"
+
+msgid "matrix/skills/roles/female/gunner"
+msgstr "Навыкі наводчыка"
+
+msgid "matrix/skills/roles/female/loader"
+msgstr "Навыкі набойцы"
+
+msgid "matrix/skills/roles/female/radioman"
+msgstr "Навыкі радыста"
+
+msgid "matrix/skills/roles/gunner"
+msgstr "Навыкі наводчыка"
+
+msgid "matrix/skills/roles/loader"
+msgstr "Навыкі набойцы"
+
+msgid "matrix/skills/roles/radioman"
+msgstr "Навыкі радыста"
+
+msgid "matrix/skills/training"
+msgstr "Вывучэнне навыкаў"
+
+msgid "matrix/skills/zeroSkills"
+msgstr "Даступныя для вывучэння «нулявыя» навыкі:"
+
+msgid "memberChange/action/recruit"
+msgstr "Рэкрутаваць {role}"
+
+msgid "memberChange/discount"
+msgstr "ЗНІЖКА {discountAmount}% НА ЗМЕНУ СПЕЦЫЯЛЬНАСЦІ"
+
+msgid "memberChange/title"
+msgstr "ВЫБРАЦЬ {role}: {vehicle}"
+
+msgid "personalData/card/remove"
+msgstr "Зняць"
+
+msgid "personalData/card/restrictions"
+msgstr "Абмежаванне: {restrictions}"
+
+msgid "personalData/card/tooltip/document/body"
+msgstr "Націсніце, каб змяніць імя і выгляд танкіста."
+
+msgid "personalData/card/tooltip/document/title"
+msgstr "Выгляд"
+
+msgid "personalData/card/tooltip/locked/body"
+msgstr "Гэты танкіст ужо мае ўнікальнае імя і выгляд."
+
+msgid "personalData/card/tooltip/locked/title"
+msgstr "Немагчыма змяніць імя і аблічча"
+
+msgid "personalData/emptyState/noFilteredItems"
+msgstr "Нічога не знойдзена. Змяніце налады або скіньце фільтр."
+
+msgid "personalData/filter/tooltip/popoverButton/body"
+msgstr "Налады паказу абліччаў паводле дзяржавы."
+
+msgid "personalData/filter/tooltip/popoverButton/title"
+msgstr "Фільтр параметраў"
+
+msgid "personalData/filter/tooltip/type/document/body"
+msgstr "Паказваць/схаваць дакументы"
+
+msgid "personalData/filter/tooltip/type/document/title"
+msgstr "Дакументы"
+
+msgid "personalData/filter/tooltip/type/suitableSkin/body"
+msgstr "Паказваць/схаваць прыдатныя абліччы"
+
+msgid "personalData/filter/tooltip/type/suitableSkin/title"
+msgstr "Прыдатныя абліччы"
+
+msgid "personalData/filter/type/title"
+msgstr "Тып"
+
+msgid "personalData/title"
+msgstr "ЗМЯНІЦЬ ІМЯ І АБЛІЧЧА"
+
+msgid "personalFile/changeVehicle"
+msgstr "Змяніць"
+
+msgid "personalFile/crewLockedTooltip/body"
+msgstr "Немагчыма навучыць гэтага танкіста на іншую машыну."
+
+msgid "personalFile/crewLockedTooltip/header"
+msgstr "Аперацыя недаступная"
+
+msgid "personalFile/discount/full"
+msgstr "Даступная зніжка на перавучванне экіпажа"
+
+msgid "personalFile/discount/short"
+msgstr "Даступная зніжка"
+
+msgid "personalFile/inVehicle"
+msgstr "У машыне: %(vehicle)s "
+
+msgid "personalFile/premiumVehicle"
+msgstr "Прэміум машына"
+
+msgid "personalFile/retrain"
+msgstr "Перавучыць"
+
+msgid "personalFile/retrainLevel"
+msgstr "Узровень валодання: "
+
+msgid "personalFile/specialization"
+msgstr "Спецыялізацыя:"
+
+msgid "personalFile/vehicleTooltip/header"
+msgstr "Спецыялізацыя"
+
+msgid "personalFile/voiceTooltip/body"
+msgstr "Націсніце, каб праслухаць прыклад агучкі камандзіра."
+
+msgid "personalFile/voiceTooltip/header"
+msgstr "Унікальная агучка"
+
+msgid "premiumVehType/plural/lowerCase/AT-SPG"
+msgstr "прэміум СТ-САУ"
+
+msgid "premiumVehType/plural/lowerCase/SPG"
+msgstr "прэміум САУ"
+
+msgid "premiumVehType/plural/lowerCase/heavyTank"
+msgstr "Цяжкія прэміум танкі"
+
+msgid "premiumVehType/plural/lowerCase/lightTank"
+msgstr "Лёгкія прэміум танкі"
+
+msgid "premiumVehType/plural/lowerCase/mediumTank"
+msgstr "Сярэднія прэміум танкі"
+
+msgid "serviceRecord/achievementsList/title"
+msgstr "УЗНАГАРОДЫ"
+
+msgid "serviceRecord/averageXP"
+msgstr "Сярэдні досвед за бой"
+
+msgid "serviceRecord/battlesCounter"
+msgstr "Праведзеныя баі"
+
+msgid "serviceRecord/noAchievements"
+msgstr "У баі сябе не праявіў, узнагарод не мае."
+
+msgid "serviceRecord/tooltip/averageXP/body"
+msgstr ""
+"Суадносіны агульнай колькасці здабытага досведу да колькасці праведзеных "
+"баёў на гэтай машыне."
+
+msgid "serviceRecord/tooltip/averageXP/header"
+msgstr "Сярэдні досвед за бой"
+
+msgid "serviceRecord/tooltip/rank/body"
+msgstr ""
+"Званне танкістаў залежыць ад яго досведу і колькасці вывучаных навыкаў."
+
+msgid "serviceRecord/tooltip/rank/header"
+msgstr "Званне"
+
+msgid "tankChange/title"
+msgstr "НАВУЧАННЕ КІРАВАЦЬ МАШЫНАЙ"
+
+msgid "tankChange/tooltip/location/body"
+msgstr "Паказваць/схаваць тэхніку, якая ёсць у Гаражы."
+
+msgid "tankChange/tooltip/location/header"
+msgstr "У Гаражы"
+
+msgid "tankChange/tooltip/popover/body"
+msgstr "Налады паказу тэхнікі з улікам узроўню."
+
+msgid "tankChange/tooltip/popover/header"
+msgstr "Фільтр параметраў"
+
+msgid "tankChange/tooltip/premium/body"
+msgstr ""
+"Танкістаў не трэба навучаць на прэміум тэхніку. Вы можаце перанесці экіпаж "
+"на прэміум машыну таго ж тыпу без штрафаў."
+
+msgid "tankChange/tooltip/premium/header"
+msgstr "Прэміум машына"
+
+msgid "tankChange/tooltip/searchInput/body"
+msgstr "Назва машыны павінна змяшчаць не больш за %(maxLength)s сімвалаў."
+
+msgid "tankman/action/dismiss/title"
+msgstr "ДЭМАБІЛІЗАВАЦЬ"
+
+msgid "tankman/action/dismiss/tooltip/available/body"
+msgstr "Дэмабілізаваць гэтага танкіста."
+
+msgid "tankman/action/dismiss/tooltip/unavailable/body"
+msgstr "Немагчыма дэмабілізаваць танкіста."
+
+msgid "tankman/action/dismiss/tooltip/unavailable/title"
+msgstr "Аперацыя недаступная"
+
+msgid "tankman/action/recruit/title"
+msgstr "РЭКРУТАВАЦЬ"
+
+msgid "tankman/action/restore/title"
+msgstr "АДНАВІЦЬ"
+
+msgid "tankman/action/restore/tooltip/body"
+msgstr "Аднавіць гэтага танкіста."
+
+msgid "tankman/action/voiceover/tooltip/body"
+msgstr "Націсніце, каб праслухаць прыклад агучкі камандзіра."
+
+msgid "tankman/action/voiceover/tooltip/title"
+msgstr "Унікальная агучка"
+
+msgid "tankman/recruit"
+msgstr "Рэкрутаваць"
+
+msgid "tankmanContainer/tab/personalData"
+msgstr "Выгляд"
+
+msgid "tankmanContainer/tab/personalFile"
+msgstr "Профіль"
+
+msgid "tankmanContainer/tab/serviceRecord"
+msgstr "Паслужны спіс"
+
+msgid "tankmanList/emptyState/button/recruit"
+msgstr "Рэкрутаваць"
+
+msgid "tankmanList/emptyState/button/resetFilers"
+msgstr "Скінуць фільтр"
+
+msgid "tankmanList/emptyState/noFilteredItems"
+msgstr "Нічога не знойдзена. Змяніце налады або скіньце фільтр."
+
+msgid "tankmanList/emptyState/noItems"
+msgstr "Нічога не знойдзена. Рэкрутуйце танкіста."
+
+msgid "tankmanList/filter/title"
+msgstr "Танкістаў:"
+
+msgid "tankmanList/tooltip/location/dismissed/body"
+msgstr "Паказваць/схаваць толькі дэмабілізаваны танкістаў."
+
+msgid "tankmanList/tooltip/location/dismissed/title"
+msgstr "Дэмабілізаваныя"
+
+msgid "tankmanList/tooltip/location/in_barracks/body"
+msgstr "Паказваць/схаваць танкістаў, якія знаходзяцца ў Жаўнерні."
+
+msgid "tankmanList/tooltip/location/in_barracks/title"
+msgstr "У Жаўнерні"
+
+msgid "tankmanList/tooltip/location/in_tank/body"
+msgstr "Паказваць/схаваць танкістаў на месцах."
+
+msgid "tankmanList/tooltip/location/in_tank/title"
+msgstr "На месцах"
+
+msgid "tankmanList/tooltip/nation/body"
+msgstr "Паказваць/схаваць абліччы гэтай дзяржавы."
+
+msgid "tankmanList/tooltip/popover/body"
+msgstr ""
+"Наладзьце паказ танкістаў паводле спецыяльнасці, спецыялізацыі і іншых "
+"параметраў."
+
+msgid "tankmanList/tooltip/popover/header"
+msgstr "Фільтр параметраў"
+
+msgid "tankmanList/tooltip/recruit/body"
+msgstr "Рэкрутаваць танкіста."
+
+msgid "tankmanList/tooltip/searchInput/body"
+msgstr "Імя павінна змяшчаць не больш за %(maxLength)s сімвалаў."
+
+msgid "vehicleParamsDecorator/perkTip"
+msgstr ""
+"*Навядзіце курсор на навык, каб убачыць, як ён уплывае на адпаведныя "
+"характарыстыкі пры вывучэнні на 100%."
+
+msgid "welcomeScreen/button/confirm"
+msgstr "Так!"
+
+msgid "welcomeScreen/button/next"
+msgstr "Далей"

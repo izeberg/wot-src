@@ -32,6 +32,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_EU_443_ColumnEagle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_EU_443_LinenFlag_right.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf_AS_008_StoneOldWall_tile.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Barrel.vfx</fn_effect_bin>
@@ -102,10 +103,14 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle006_WireBarricade1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle033_WatchTower1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle044_Barrel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw406_Indicators.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
@@ -149,21 +154,20 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_ash_ember.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_butterfly_red.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_fire_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_fires_small_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_firesmoke_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_flies.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_fog_vista.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_leaves_air_around.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_ash_ember.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_fire_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_fires_small_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_firesmoke_long.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_flies.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_fog_vista.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_leaves_air_around.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_mt_cloud_offset.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke_ground.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_mt_cloud_offset.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_03.eff</fn_effect_bin>
@@ -171,6 +175,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_443_ColumnEagle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_443_LinenFlag_right.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_AS_008_StoneOldWall_tile.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel.eff</fn_effect_bin>
@@ -240,10 +245,14 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle006_WireBarricade1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle033_WatchTower1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle044_Barrel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw406_Indicators.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
@@ -325,6 +334,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_EU_443_ColumnEagle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_EU_443_LinenFlag_right.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf_AS_008_StoneOldWall_tile.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Barrel.vfx</fn_effect_bin>
@@ -395,10 +405,14 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle006_WireBarricade1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle033_WatchTower1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle044_Barrel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw406_Indicators.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
@@ -442,21 +456,20 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_ash_ember.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_butterfly_red.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_fire_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_fires_small_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_firesmoke_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_flies.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_fog_vista.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_leaves_air_around.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_ash_ember.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_fire_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_fires_small_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_firesmoke_long.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_flies.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_fog_vista.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_leaves_air_around.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_mt_cloud_offset.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke_ground.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_mt_cloud_offset.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_03.eff</fn_effect_bin>
@@ -464,6 +477,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_443_ColumnEagle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_443_LinenFlag_right.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_AS_008_StoneOldWall_tile.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel.eff</fn_effect_bin>
@@ -533,10 +547,14 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle006_WireBarricade1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle033_WatchTower1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle044_Barrel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw406_Indicators.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.213965 -0.223814 -0.081606</min>
+		<max>0.213983 0.206491 5.528721</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

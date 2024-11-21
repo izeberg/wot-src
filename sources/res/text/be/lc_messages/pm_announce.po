@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "newTooltip/footer"
+msgstr "Хутка ў гульні"
+
+msgid "newTooltip/header"
+msgstr "Кампанія «Новыя гарызонты» ў распрацоўцы"
+
+msgid "newTooltip/operation"
+msgstr "Аперацыя «%(title)s»:"
+
+msgid "newTooltip/operations/first"
+msgstr "ARMT"
+
+msgid "newTooltip/operations/second"
+msgstr "TF-2 Clark"
+
+msgid "newTooltip/operations/third"
+msgstr "Projet Murat"
+
+msgid "newTooltip/otherRewards"
+msgstr "...і іншыя ўзнагароды"
+
+msgid "newTooltip/rewardTitle"
+msgstr "Узнагароды кампаніі:"
+
+msgid "newTooltip/subtitle"
+msgstr "Задачы кампаніі:"
+
+msgid "newTooltip/vehicles/first"
+msgstr "ARMT"
+
+msgid "newTooltip/vehicles/last"
+msgstr "У распрацоўцы"
+
+msgid "newTooltip/vehicles/second"
+msgstr "TF-2 Clark"
+
+msgid "newTooltip/vehicles/third"
+msgstr "Projet Murat"
+
+msgid "oldTooltip/collectVehicle"
+msgstr "Тэхніка атрымана"
+
+msgid "oldTooltip/complete"
+msgstr "Выконваецца"
+
+msgid "oldTooltip/completed/body"
+msgstr "Выконвайце задачы з адрозненнем, каб атрымаць усе ўзнагароды кампаніі"
+
+msgid "oldTooltip/completed/header"
+msgstr "Выконваецца на выдатна"
+
+msgid "oldTooltip/completedPerfect/body"
+msgstr "Усе задачы кампаніі выкананы з адрозненнем, узнагароды атрыманы"
+
+msgid "oldTooltip/completedPerfect/header"
+msgstr "Выканана з адзнакай"
+
+msgid "oldTooltip/divider"
+msgstr "/"
+
+msgid "oldTooltip/header"
+msgstr "Кампаніі «Доўгачаканае падмацаванне» і «Другі фронт»"
+
+msgid "oldTooltip/operation"
+msgstr "Аперацыя «%(title)s»:"
+
+msgid "oldTooltip/rewardTitle"
+msgstr "Узнагароды кампаніі:"
+
+msgid "oldTooltip/subtitle"
+msgstr "Прагрэс па аперацыях:"
+
+msgid "oldTooltip/subtitlePerfect"
+msgstr "Выканана задач з адрозненнем:"

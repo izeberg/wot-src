@@ -1,0 +1,595 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleControls/casseteReload"
+msgstr "Перанабіць касету"
+
+msgid "battleControls/closeBtnLabel"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "battleControls/cruiseCtrlBackward"
+msgstr "Аўтаматычны рух назад"
+
+msgid "battleControls/cruiseCtrlForward"
+msgstr "Аўтаматычны рух наперад"
+
+msgid "battleControls/disableLockTarget"
+msgstr "Адключыць аўтапрыцэл"
+
+msgid "battleControls/fire"
+msgstr "Стрэліць"
+
+msgid "battleControls/hideInterface"
+msgstr "Схаваць/паказаць баявы інтэрфейс"
+
+msgid "battleControls/hideMinimap"
+msgstr "Схаваць/паказаць міні-карту"
+
+msgid "battleControls/makeScreenshort"
+msgstr "Захаваць здымак экрана"
+
+msgid "battleControls/movementBackward"
+msgstr "Рух назад"
+
+msgid "battleControls/movementForward"
+msgstr "Рух наперад"
+
+msgid "battleControls/movementLeft"
+msgstr "Паварот/рух налева"
+
+msgid "battleControls/movementRight"
+msgstr "Паварот/рух направа"
+
+msgid "battleControls/pageTitle"
+msgstr "АГУЛЬНАЯ ДАВЕДКА"
+
+msgid "battleControls/showCursor"
+msgstr "Паказаць курсор"
+
+msgid "battleControls/showCursor/ext"
+msgstr "(для міні-карты, спіса гульцоў і інш.)"
+
+msgid "battleControls/showExPlayerInfo"
+msgstr "Паказаць альтэрнатыўны маркер"
+
+msgid "battleControls/stopFire"
+msgstr "Спыніцца"
+
+msgid "battleControls/switchAutorotation"
+msgstr "Знерухоміць корпус / пераключыць рэжым стральбы"
+
+msgid "battleControls/title"
+msgstr "У рэжыме бою"
+
+msgid "battleControls/toggleLockTarget"
+msgstr "Уключыць/адключыць аўтапрыцэл"
+
+msgid "battleControls/toggleLockTarget/ext"
+msgstr "(навёўшы прыцэл на супраціўніка)"
+
+msgid "battleControls/togglePlayerPanelModes"
+msgstr "Схаваць/паказаць склады камандаў"
+
+msgid "battleControls/toggleSniperMode"
+msgstr "Змяніць рэжым прыцэльвання на снайперскі"
+
+msgid "battleControls/toggleSniperMode/ext"
+msgstr "або артылерыйскі"
+
+msgid "battleControls/voiceChatMute"
+msgstr "Задзейнічаць галасавую сувязь"
+
+msgid "chatControls/change"
+msgstr "Змена адрасата «свая каманда/звяз»"
+
+msgid "chatControls/enterToChatMode"
+msgstr "Пачаць перапіску ў чаце"
+
+msgid "chatControls/exitFromChatMode"
+msgstr "Скончыць перапіску ў чаце"
+
+msgid "chatControls/send"
+msgstr "Адправіць паведамленне"
+
+msgid "chatControls/title"
+msgstr "У рэжыме чата"
+
+msgid "crosshairControls/ammoNumber"
+msgstr "Колькасць снарадаў"
+
+msgid "crosshairControls/damageIndicator"
+msgstr "Кірунак абстрэлу"
+
+msgid "crosshairControls/dispercion"
+msgstr "Роскід гарматы"
+
+msgid "crosshairControls/example/damage"
+msgstr "-248"
+
+msgid "crosshairControls/example/distance"
+msgstr "178 м"
+
+msgid "crosshairControls/example/hp"
+msgstr "375/720"
+
+msgid "crosshairControls/example/name"
+msgstr "Т-34-85"
+
+msgid "crosshairControls/gunMarker"
+msgstr "Агнявая пазіцыя гарматы"
+
+msgid "crosshairControls/healthPlayer"
+msgstr "Індыкатар трываласці гульца"
+
+msgid "crosshairControls/hpIndicator"
+msgstr "Індыкатар трываласці цэлі"
+
+msgid "crosshairControls/hpValues"
+msgstr "Трываласць цэлі (%/HP засталося/усяго)"
+
+msgid "crosshairControls/marker"
+msgstr "Пункт прыцэльвання"
+
+msgid "crosshairControls/reloadIndicator"
+msgstr "Перанабіванне гарматы"
+
+msgid "crosshairControls/reloadTimer"
+msgstr "Час перанабівання гарматы ў секундах"
+
+msgid "crosshairControls/targetClass"
+msgstr "Маркер тыпу тэхнікі"
+
+msgid "crosshairControls/targetDistance"
+msgstr "Адлегласць да цэлі"
+
+msgid "crosshairControls/targetIcon"
+msgstr "Значок тэхнікі"
+
+msgid "crosshairControls/targetLevel"
+msgstr "Узровень тэхнікі"
+
+msgid "crosshairControls/targetName"
+msgstr "Мадэль тэхнікі / Імя гульца"
+
+msgid "crosshairControls/title"
+msgstr "Прыцэл і маркер гарматы"
+
+msgid "detailsHelp/assaultTank"
+msgstr ""
+"Асноўная задача — падтрымліваць выбраны кірунак абстрэламі пазіцый "
+"праціўніка на блізкіх дыстанцыях, прычыняючы пры гэтым параўнальна высокія "
+"пашкоджанні. Навясная траекторыя і добрая мабільнасць дазваляюць праводзіць "
+"абстрэл нават за ўкрыцці, якія здаюцца непрыступнымі."
+
+msgid "detailsHelp/assaultTank/aiming"
+msgstr ""
+"Для прыцэльнага агню выкарыстоўвайце новы штурмавы прыцэл, у якім ёсць "
+"ручная змена нахілу камеры колцам мышы. Мяняйце ракурс, каб прыцэльвацца за "
+"ўкрыцці (у тым ліку размешчаныя пад дахамі, мастамі і ў тунэлях) і страляць "
+"па слабых зонах машын праціўніка."
+
+msgid "detailsHelp/assaultTank/aiming/title"
+msgstr "Штурмавы прыцэл"
+
+msgid "detailsHelp/assaultTank/prosCons"
+msgstr ""
+"Ключавыя асаблівасці — акцэнт на прычыненне пашкоджанняў за кошт адсутнасці "
+"аглушэння ад снарадаў, параўнальна высокія паказчыкі лабавога браніравання і"
+" жывучасці ў сваім класе. Выкарыстоўвайце гэтыя асаблівасці супраць цэляў, "
+"якія знаходзяцца ва ўкрыццях, але памятайце, што на блізкіх дыстанцыях вы "
+"надзвычай уразлівы, а нізкая манеўранасць не дазволіць хутка зрэагаваць на "
+"атаку з флангу."
+
+msgid "detailsHelp/assaultTank/prosCons/title"
+msgstr "Перавагі і недахопы"
+
+msgid "detailsHelp/assaultTank/title"
+msgstr "Штурмавая артылерыя"
+
+msgid "detailsHelp/battleRoyale/airDrop/description"
+msgstr ""
+"Шукайце здабычу, што пазначаная дымамі. Зялёныя змяшчаюць снарады і зарад "
+"другога ўмельства. Жоўтыя дымы — зарады першага, другога, трэцяга і "
+"чацвёртага ўмельстваў. Сінія — аднаўленне трываласці і рамонт модуляў, "
+"снарады і зарады для ўсіх умельстваў. Пра падрабязны склад здабычы можна "
+"даведацца, націснуўшы клавішу Tab у баі."
+
+msgid "detailsHelp/battleRoyale/airDrop/title"
+msgstr "Пошук здабычы"
+
+msgid "detailsHelp/battleRoyale/coneVisibility/description"
+msgstr ""
+"Вы можаце выявіць толькі тую тэхніку, якая патрапіла ў ваш сектар бачнасці —"
+" «конус» перад вежай. Для зручнасці ён паказваецца на міні-карце. Машына "
+"праціўніка, якая знаходзіцца ў непасрэднай блізкасці ад вас, бачная заўсёды "
+"(т. зв. «рэнтген»)."
+
+msgid "detailsHelp/battleRoyale/coneVisibility/title"
+msgstr "Сістэма агляду"
+
+msgid "detailsHelp/battleRoyale/radar/description"
+msgstr ""
+"Задзейнічаны радар адлюстроўвае знаходжанне праціўніка і каштоўных прадметаў"
+" на міні-карце. Гулец, які задзейнічаў радар, аўтаматычна становіцца бачным "
+"на міні-карце для ўсіх астатніх гульцоў у зоне пакрыцця радара."
+
+msgid "detailsHelp/battleRoyale/radar/title"
+msgstr "Радар"
+
+msgid "detailsHelp/battleRoyale/uniqueAbilities/description"
+msgstr ""
+"Кожная з васьмі машын мае два агульныя і два ўнікальныя ўменні. Адно з іх "
+"асабліва магутнае і можа вырашыць вынік любога паядынку."
+
+msgid "detailsHelp/battleRoyale/uniqueAbilities/title"
+msgstr "Кожная машына мае свае здольнасці"
+
+msgid "detailsHelp/battleRoyale/upgrade/description"
+msgstr ""
+"Увайсці ў бой можна толькі на адмысловай машыне, якая можа паляпшацца прама "
+"падчас бою. Вы можаце выбраць, што менавіта палепшыць у гэты момант."
+
+msgid "detailsHelp/battleRoyale/upgrade/title"
+msgstr "Тэхніка паляпшаецца прама ў баі"
+
+msgid "detailsHelp/battleRoyale/zone/description"
+msgstr ""
+"Жоўты колер сігналізуе пра хуткае закрыццё зоны. Калі вы патрапілі ў "
+"чырвоную зону, то як мага хутчэй пакіньце яе, інакш ваша машына будзе "
+"знішчана."
+
+msgid "detailsHelp/battleRoyale/zone/title"
+msgstr "Змяншэнне зоны гульні"
+
+msgid "detailsHelp/default/title"
+msgstr "Дапамога"
+
+msgid "detailsHelp/devMaps/headerTitle"
+msgstr "Асаблівасці мапы"
+
+msgid "detailsHelp/devMaps/markers/description"
+msgstr ""
+"Месца выпадковай падзеі будзе адзначана дымамі на мапе і маркерам на міні-карце.\n"
+"Мапы ў распрацоўцы можна адключыць у наладах ва ўкладцы «Гульня» (блок «Тыпы Выпадковых баёў»)."
+
+msgid "detailsHelp/devMaps/title"
+msgstr "Бэта-версіі выпадковых падзей"
+
+msgid "detailsHelp/devMaps/zone/description"
+msgstr ""
+"У зоне выпадковай падзеі (напрыклад, у зоне падзення самалёта) ваша тэхніка можа быць знішчана.\n"
+"Мапы ў распрацоўцы можна адключыць у наладах ва ўкладцы «Гульня» (блок «Тыпы Выпадковых баёў»)."
+
+msgid "detailsHelp/dualAccuracy/mechanics"
+msgstr ""
+"Калі пасля стрэлу гармата дастаткова астыла, яе роскід паменшыцца. Пры гэтым"
+" з'явіцца другі круг навядзення меншага дыяметру, якім і будзе вызначана "
+"зона трапляння снарада. Эфект захоўваецца да наступнага стрэлу. Звярніце "
+"ўвагу: пры ўключэнні сервернага прыцэлу візуальная індыкацыя механікі "
+"адсутнічае."
+
+msgid "detailsHelp/dualAccuracy/mechanics/title"
+msgstr "Двайное навядзенне"
+
+msgid "detailsHelp/dualGun/quick_fire"
+msgstr ""
+"У гэтых машын пасля стрэлу ідзе змена актыўнай гарматы. Першая гармата "
+"пачынае набівацца аўтаматычна, а для стрэлу з другой набітай гарматы "
+"давядзецца крыху пачакаць."
+
+msgid "detailsHelp/dualGun/quick_fire/title"
+msgstr "Беглы агонь"
+
+msgid "detailsHelp/dualGun/volley_fire"
+msgstr ""
+"Спараныя гарматныя ўстаноўкі маюць асаблівую механіку стральбы «залпавы "
+"агонь», якая актывуецца пры ўтрыманні прызначанай кнопкі. Снарады ляцяць "
+"паралельна адзін аднаму. Кнопкі кіравання стральбой можна памяняць у "
+"наладах."
+
+msgid "detailsHelp/dualGun/volley_fire/title"
+msgstr "Залпавы агонь"
+
+msgid "detailsHelp/engineMode/engineModePage1"
+msgstr ""
+"Вы можаце мяняць рэжым працы рухавіка, кожны з якіх падыходзіць да пэўных "
+"тактычных сітуацый. Змена рэжыму патрабуе поўнага спынення машыны і займае "
+"пэўны час, які не залежыць ад спраўнасці рухавіка."
+
+msgid "detailsHelp/engineMode/engineModePage1/title"
+msgstr "Новая механіка перасоўвання"
+
+msgid "detailsHelp/engineMode/engineModePage2"
+msgstr ""
+"У рэжыме раскручанай турбіны павялічваецца магутнасць рухавіка, максімальная"
+" хуткасць наперад і назад. Аднак машына пры гэтым становіцца больш "
+"прыкметнай, а таксама страчвае ў стабілізацыі і часе навядзення гарматы."
+
+msgid "detailsHelp/engineMode/engineModePage2/title"
+msgstr "Перавагі і недахопы"
+
+msgid "detailsHelp/flameTank"
+msgstr ""
+"Асноўнае прызначэнне агнямётных танкаў — падтрымка падраздзяленняў пры штурме ўмацаваных пазіцый праціўніка.\n"
+"Гэтыя машыны могуць страляць на невялікую дыстанцыю па навясной траекторыі гаручай агнясумессю, здольнай эфектыўна паражаць лёгкабраніраваную тэхніку праціўніка і дэзарыентаваць яго экіпажы."
+
+msgid "detailsHelp/flameTank/prosCons"
+msgstr ""
+"Агнямётны танк — машына падтрымкі блізкага бою з абмежаванай дыстанцыяй "
+"стральбы. Колькасць прычыненых пашкоджанняў будзе залежаць ад браніравання "
+"машыны праціўніка: цэль з тоўстай бранёй атрымае менш пашкоджанняў, а з "
+"тонкай — больш. Прычыненне пашкоджанняў агнясумессю накладвае на праціўніка "
+"эфект дэзарыентацыі."
+
+msgid "detailsHelp/flameTank/prosCons/title"
+msgstr "Перавагі і недахопы"
+
+msgid "detailsHelp/flameTank/title"
+msgstr "Агнямётныя танкі"
+
+msgid "detailsHelp/mapbox/artefacts/description"
+msgstr "detailsHelp/mapbox/artefacts/description"
+
+msgid "detailsHelp/mapbox/artefacts/title"
+msgstr "detailsHelp/mapbox/artefacts/title"
+
+msgid "detailsHelp/mapbox/environment/description"
+msgstr "detailsHelp/mapbox/environment/description"
+
+msgid "detailsHelp/mapbox/environment/title"
+msgstr "detailsHelp/mapbox/environment/title"
+
+msgid "detailsHelp/mapbox/headerTitle"
+msgstr "Асаблівасці мапы"
+
+msgid "detailsHelp/mapbox/markers/description"
+msgstr "detailsHelp/mapbox/markers/description"
+
+msgid "detailsHelp/mapbox/markers/title"
+msgstr "detailsHelp/mapbox/markers/title"
+
+msgid "detailsHelp/multiTrack/description"
+msgstr ""
+"Машыны, якія маюць больш за дзве гусеніцы, складаней знерухоміць. Кожная "
+"выведзеная са строю гусеніца прыводзіць да зніжэння мабільнасці, а да "
+"поўнага спынення машыны вядзе толькі разбурэнне ўсіх гусеніц аднаго з "
+"бартоў."
+
+msgid "detailsHelp/multiTrack/headerTitle"
+msgstr "Шматгусенічныя машыны"
+
+msgid "detailsHelp/multiTrack/title"
+msgstr "Асаблівасці шасі"
+
+msgid "detailsHelp/noKey"
+msgstr "НЕ ПРЫЗНАЧАНА"
+
+msgid "detailsHelp/noKeysWarning"
+msgstr "Ключавыя клавішы не прызначаны. Прызначце іх у наладах гульні."
+
+msgid "detailsHelp/rocketAcceleration/page1"
+msgstr ""
+"Выкарыстанне рэактыўных паскаральнікаў павышае рухомасць машыны. Гэта "
+"дазваляе хутчэй займаць выгодныя пазіцыі альбо аператыўна пераадольваць "
+"небяспечныя ўчасткі мясцовасці. Задзейнічаць паскаральнікі можна на пэўны "
+"час і абмежаваную колькасць разоў за бой. Адключыць іх нельга, як і вывесці "
+"са строю."
+
+msgid "detailsHelp/rocketAcceleration/page1/title"
+msgstr "Рэактыўныя паскаральнікі"
+
+msgid "detailsHelp/rocketAcceleration/page2"
+msgstr ""
+"Пасля запуску рэактыўных паскаральнікаў павялічваецца магутнасць рухавіка і "
+"максімальная хуткасць руху наперад, аднак машына робіцца менш манеўранай і "
+"губляе хуткасць задняга ходу."
+
+msgid "detailsHelp/rocketAcceleration/page2/title"
+msgstr "Перавагі і недахопы"
+
+msgid "detailsHelp/role/description"
+msgstr "Атрымлівайце бонус да досведу, выконваючы ролевыя дзеянні:"
+
+msgid "detailsHelp/role/title"
+msgstr "Роля тэхнікі ў баі"
+
+msgid "detailsHelp/tankWithAbility/header"
+msgstr "Асаблівыя магчымасці %(vehName)s"
+
+msgid "detailsHelp/tankWithAbility/modifications"
+msgstr ""
+"Ваша машына мае ў камплектацыі асаблівую мадыфікацыю, актывацыя якой дасць "
+"дадатковыя магчымасці ў баі. Вывучыце тактычную сітуацыю, каб напоўніцу "
+"рэалізаваць патэнцыял гэтай мадыфікацыі."
+
+msgid "detailsHelp/tankWithAbility/title"
+msgstr "Мадыфікацыі"
+
+msgid "detailsHelp/trackWithinTrack/description"
+msgstr ""
+"Дазваляе часткова захаваць мабільнасць пры выхадзе са строю асноўнай "
+"гусенічнай стужкі."
+
+msgid "detailsHelp/trackWithinTrack/title"
+msgstr "Рэзервовы тракавы пас"
+
+msgid "detailsHelp/wheeledVeh/aboutTechnique"
+msgstr ""
+"Колавыя лёгкія танкі Францыі — самыя хуткасныя і дынамічная ў гульні, але не"
+" могуць паварочвацца на месцы і маюць пасрэдны агляд."
+
+msgid "detailsHelp/wheeledVeh/aboutTechnique/title"
+msgstr "Агульнае"
+
+msgid "detailsHelp/wheeledVeh/burnout"
+msgstr ""
+"Націсніце адначасова клавішы %(key2)s і %(key1)s і ўтрымлівайце іх. Ступень "
+"запаўнення шкалы магутнасці ўплывае на сілу рыўка. Каб выкарыстаць рывок — "
+"адпусціце %(key1)s, калі вы перадумалі і не хочаце рабіць рывок — адпусціце "
+"%(key2)s. Рывок з месца неабходны для хуткага разгону і эфектыўны для "
+"раптоўных атак і падманных манеўраў. Увага! Рывок можна выкарыстоўваць "
+"толькі пасля поўнага спынення машыны. Яго выкарыстанне прычыняе пашкоджанні "
+"рухавіку."
+
+msgid "detailsHelp/wheeledVeh/burnout/title"
+msgstr "Рывок з месца"
+
+msgid "detailsHelp/wheeledVeh/stableChassis"
+msgstr ""
+"Колавыя машыны атрымліваюць меншыя пашкоджанні ў выпадку прызямлення на "
+"колы. Таксама колавую тэхніку нельга спыніць, пашкодзіўшы толькі адно кола. "
+"Чым больш колаў пашкоджана, тым больш падае дынаміка і кіравальнасць. "
+"Знерухоміць колавыя машыны складаней за гусенічныя. Пашкоджаныя колы праз "
+"нейкі час цалкам аднаўляюцца."
+
+msgid "detailsHelp/wheeledVeh/stableChassis/title"
+msgstr "Стойкае шасі"
+
+msgid "detailsHelp/wheeledVeh/twoModes"
+msgstr ""
+"Націсніце %(key1)s, каб пераключыць рэжым. Паміж сабой рэжымы адрозніваюцца "
+"кіравальнасцю, хуткасцю і дынамікай."
+
+msgid "detailsHelp/wheeledVeh/twoModes/title"
+msgstr "Два рэжымы руху"
+
+msgid "markerColors/enemy"
+msgstr "Гулец каманды супраціўніка"
+
+msgid "markerColors/friend"
+msgstr "Гулец нашай каманды"
+
+msgid "markerColors/squadPlayer"
+msgstr "Гулец вашага звязу"
+
+msgid "markerColors/teamKiller"
+msgstr "Здраднік, які знішчыў хаўрусніка"
+
+msgid "markerColors/title"
+msgstr "Колеры маркераў:"
+
+msgid "markerMarks/attack"
+msgstr "Атаковец"
+
+msgid "markerMarks/follow"
+msgstr "За мной!"
+
+msgid "markerMarks/help"
+msgstr "Патрэбна дапамога!"
+
+msgid "markerMarks/target/sau"
+msgstr "Атакаваная САУ цэль"
+
+msgid "markerMarks/target/tank"
+msgstr "Атакаваная машынай цэль"
+
+msgid "markerMarks/title"
+msgstr "Абазначэнне хуткіх каманд на міні-карце:"
+
+msgid "radialMenu/ally_hq_defend_command"
+msgstr "Абараняйце!"
+
+msgid "radialMenu/ally_hq_defend_commit"
+msgstr "Я абараняю!"
+
+msgid "radialMenu/attackAreaSPG"
+msgstr "Наводжу сюды!"
+
+msgid "radialMenu/attack_enemy"
+msgstr "Падтрымайце агнём!"
+
+msgid "radialMenu/attack_enemy_with_SPG"
+msgstr "Атакую цэль!"
+
+msgid "radialMenu/attacking_base"
+msgstr "Я захаплю!"
+
+msgid "radialMenu/attacking_enemy"
+msgstr "Атакую цэль!"
+
+msgid "radialMenu/attention_to_base_atk"
+msgstr "Захапіце!"
+
+msgid "radialMenu/attention_to_base_def"
+msgstr "Абараняйце!"
+
+msgid "radialMenu/attention_to_position"
+msgstr "Увага сюды!"
+
+msgid "radialMenu/cancel_reply"
+msgstr "Адмовіць"
+
+msgid "radialMenu/defending_base"
+msgstr "Я абараню!"
+
+msgid "radialMenu/enemy_hq_attack_command"
+msgstr "Атакуйце!"
+
+msgid "radialMenu/enemy_hq_attack_commit"
+msgstr "Я атакую!"
+
+msgid "radialMenu/going_there"
+msgstr "Рухаюся сюды!"
+
+msgid "radialMenu/helpMe"
+msgstr "Дапамажыце!"
+
+msgid "radialMenu/helpMeEx"
+msgstr "Патрэбна падтрымка!"
+
+msgid "radialMenu/positive"
+msgstr "Так!"
+
+msgid "radialMenu/reloadingGun"
+msgstr "Перанабіванне!"
+
+msgid "radialMenu/reply_to_player"
+msgstr "Пацвярджаю!"
+
+msgid "radialMenu/supporting_ally"
+msgstr "Я дапамагу табе!"
+
+msgid "radialMenu/thanks"
+msgstr "Дзякуй!"
+
+msgid "radialMenu/turn_back"
+msgstr "Адступай!"
+
+msgid "returnToGame"
+msgstr "Esc — вярнуцца ў бой"
+
+msgid "roleDescription/msg"
+msgstr "Атрымлівайце бонус да досведу, выконваючы ролевыя дзеянні:"
+
+msgid "settings/button"
+msgstr "Налады"
+
+msgid "settings/help"
+msgstr ""
+"Каб праглядзець ужываныя ў гульні клавішы або дапасаваць іх, націсніце на "
+"«Налады»."
+
+msgid "teamComm/highlightAsActiveTarget"
+msgstr "Адзначыць як актыўную цэль"
+
+msgid "teamComm/highlightLocation"
+msgstr "Адзначыць пазіцыю"
+
+msgid "teamComm/show"
+msgstr "Паказаць меню загадаў"
+
+msgid "teamComm/show/ext"
+msgstr "(спіс загадаў у меню залежыць ад цэлі)"
+
+msgid "teamComm/title"
+msgstr "Камунікацыя з камандай"
+
+msgid "vehicleTypes/title"
+msgstr "Абазначэнне тыпаў тэхнікі"

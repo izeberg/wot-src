@@ -43,7 +43,8 @@ class CompareAmmunitionSelectorView(ViewImpl):
             if event.contentID == R.views.lobby.tanksetup.tooltips.WarningTooltipView():
                 reason = WarningDescription(event.getArgument('reason'))
                 isCritical = event.getArgument('isCritical')
-                return WarningTooltipView(reason, isCritical)
+                lockedByDevice = event.getArgument('lockedByDevice')
+                return WarningTooltipView(reason, isCritical, lockedByDevice)
             return
 
     def _onLoading(self, selectedSection='', selectedSlot=None):

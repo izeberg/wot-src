@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Grape_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.240975 0.228105 1.425931</row3>
+				</transform>
+				<node>
+					<identifier>Grape_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.240975 -0.228105 -1.425931</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Grape_02</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 -0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.240975 0.228105 1.425931</row3>
+				</transform>
+				<node>
+					<identifier>Grape_02_BlendBone</identifier>
+					<transform>
+						<row0>-1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.240975 -0.228105 1.425931</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Grape_03</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 -0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.240975 0.228105 1.425931</row3>
+				</transform>
+				<node>
+					<identifier>Grape_03_BlendBone</identifier>
+					<transform>
+						<row0>-1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.240975 -0.228105 1.425931</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Plate_01</identifier>
+				<transform>
+					<row0>0.867758 0.000691 -0.496987</row0>
+					<row1>-0.003655 0.999981 -0.004991</row1>
+					<row2>0.496974 0.006147 0.867744</row2>
+					<row3>0.269508 0.030533 1.439025</row3>
+				</transform>
+				<node>
+					<identifier>Plate_01_BlendBone</identifier>
+					<transform>
+						<row0>0.867758 -0.003655 0.496974</row0>
+						<row1>0.000691 0.999981 0.006147</row1>
+						<row2>0.496987 0.004991 -0.867744</row2>
+						<row3>0.481288 -0.022365 -1.382831</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Plate_01_BlendBone</node>
+		<geometry>
+			<vertices>s0ShapeDeformed.vertices</vertices>
+			<primitive>s0ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.261127 0.162783 -1.443794</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Grape_03_BlendBone</node>
+		<geometry>
+			<vertices>s3ShapeDeformed.vertices</vertices>
+			<primitive>s3ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.229234 0.228857 -1.425311</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Grape_02_BlendBone</node>
+		<geometry>
+			<vertices>s2ShapeDeformed.vertices</vertices>
+			<primitive>s2ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.235840 0.228105 -1.425931</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Grape_01_BlendBone</node>
+		<geometry>
+			<vertices>s1ShapeDeformed.vertices</vertices>
+			<primitive>s1ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Food_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.240975 0.228105 -1.425931</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>0.032778 0.006280 1.217531</min>
+		<max>0.489477 0.319287 1.670056</max>
+	</boundingBox>
+	<geometrySize>161228</geometrySize>
+	<minUVDensity>0.339575</minUVDensity>
+</root>

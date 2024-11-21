@@ -57,9 +57,9 @@ BACKWARD_QUALITY_PARAMS = frozenset([
 PARAMS_WITH_BATTLE_MODIFIERS = {'maxHealth': {
                'vehicleHealth'}}
 NEGATIVE_PARAMS = [
- 'switchOnTime', 'switchOffTime']
+ 'switchOnTime', 'switchOffTime', CHASSIS_REPAIR_TIME]
 PARAMS_WITH_IGNORED_EMPTY_VALUES = {
- SHOT_DISPERSION_ANGLE, DISPERSION_RADIUS}
+ SHOT_DISPERSION_ANGLE, DISPERSION_RADIUS, CHASSIS_REPAIR_TIME}
 
 def normalizeShotDispersionValue(value):
     if len(value) == 1:
@@ -68,7 +68,16 @@ def normalizeShotDispersionValue(value):
         return value
 
 
-PARAMS_NORMALIZATION_MAP = {SHOT_DISPERSION_ANGLE: normalizeShotDispersionValue}
+def normalizeChassisRepairTime(value):
+    if len(value) == 1:
+        return [None] + value
+    else:
+        return sorted(value, key=lambda x: (
+         x is None, x), reverse=True)
+
+
+PARAMS_NORMALIZATION_MAP = {SHOT_DISPERSION_ANGLE: normalizeShotDispersionValue, 
+   CHASSIS_REPAIR_TIME: normalizeChassisRepairTime}
 _CUSTOM_QUALITY_PARAMS = {'vehicleWeight': (
                    True, False), 
    'clipFireRate': (

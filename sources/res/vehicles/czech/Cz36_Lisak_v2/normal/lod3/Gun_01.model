@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz36_Lisak_v2/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.675595 -0.281326 -0.026316</min>
+		<max>0.635330 0.694166 7.663526</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz36_Lisak_v2/normal/lod3/Gun_01</nodefullVisual>
+</root>

@@ -28,10 +28,7 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       {
          if(isAtlasSrcMode())
          {
-            if(visible)
-            {
-               this.updateAssets();
-            }
+            this.updateAssets();
          }
          glowContainer.updateColorSettings(color);
          TextField(counterMc.labelTf).textColor = param1;

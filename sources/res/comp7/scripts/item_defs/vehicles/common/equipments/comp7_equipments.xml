@@ -33,7 +33,7 @@
 				<exports>vse</exports>
 			</heal>
 			<secondaryHealDebuff>
-				25
+				20
 				<exports>vse tooltip</exports>
 			</secondaryHealDebuff>
 			<tickInterval>
@@ -101,11 +101,11 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				7 12 20
+				10 15 25
 				<exports>vse</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				3
+				5
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -173,7 +173,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				6
+				10
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -252,11 +252,11 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
-				7 7 7
+				7 8 9
 				<exports>vse tooltip</exports>
 			</radius>
 			<damage>
-				75 200 400
+				100 250 500
 				<exports>vse tooltip</exports>
 			</damage>
 			<stunDuration>
@@ -279,7 +279,7 @@
 			<effects>
 				<action>
 					<shotEffects>epicArtilleryStrike</shotEffects>
-					<offsetDeviation>7</offsetDeviation>
+					<offsetDeviation>8</offsetDeviation>
 					<repeatCount>3</repeatCount>
 					<repeatDelay>0</repeatDelay>
 					<repeatDelayDeviationPercent>0</repeatDelayDeviationPercent>
@@ -307,7 +307,7 @@
 				</client>
 			</visualScript>
 			<cooldownSeconds>
-				10
+				20
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<gunReloadTimeBuff>
@@ -342,7 +342,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<enginePowerFactor>
-				1.15
+				1.25
 				<!--BW_String-->
 				<exports>vse</exports>
 			</enginePowerFactor>
@@ -420,7 +420,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				2
+				15
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -437,7 +437,7 @@
 				<exports>vse tooltip</exports>
 			</damageDistance>
 			<damageFactors>
-				1.15 1.3 1.5
+				1.05 1.2 1.65
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</damageFactors>
@@ -460,23 +460,23 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				20
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				8
+				7
 				<exports>vse tooltip</exports>
 			</duration>
 			<healDuration>
-				10
+				7
 				<exports>vse tooltip</exports>
 			</healDuration>
 			<baseHeal>
-				100
+				99
 				<exports>vse tooltip</exports>
 			</baseHeal>
 			<extraHealFactor>
-				0.2 0.4 0.6
+				0.3 0.6 0.99
 				<!--BW_String-->
 				<exports>vse</exports>
 			</extraHealFactor>
@@ -485,7 +485,7 @@
 				<exports>vse tooltip</exports>
 			</fwdSpeedBoost>
 			<bkwSpeedBoost>
-				20
+				1
 				<exports>vse tooltip</exports>
 			</bkwSpeedBoost>
 			<enginePowerBuff>
@@ -523,7 +523,7 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
-				30 40 55
+				40 60 80
 				<exports>vse tooltip</exports>
 			</radius>
 			<areaVisual>content/Interface/TargetPoint/ReconFlight_02.visual</areaVisual>
@@ -550,11 +550,11 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				15
+				10
 				<exports>vse tooltip</exports>
 			</duration>
 			<visionFactor>
-				1.05 1.1 1.15
+				1.05 1.1 1.2
 				<!--BW_String-->
 				<exports>vse</exports>
 			</visionFactor>

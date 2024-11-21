@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "headerButtons/fightBtn/tooltip/versusAIVehLevel/body"
+msgstr "Уступіць у бой можна толькі на %(levelSubStr)s"
+
+msgid "headerButtons/fightBtn/tooltip/versusAIVehLevel/header"
+msgstr "Непрыдатны ўзровень тэхнікі"
+
+msgid "headerButtons/fightBtn/tooltip/versusAIVehLevel/levelSubStr"
+msgstr "тэхніцы %(levels)s узроўню."
+
+msgid "prebattleTips/versusAI1"
+msgstr ""
+"У гэтым рэжыме вы плаціце фіксаваную сума за рамонт незалежна ад таго, ці "
+"атрымаў пашкоджанні ваш танк. Заробак крэдытаў і досведу ў рэжыме зніжаны."
+
+msgid "versusAICarousel/lockedTooltip/vehLvl/body"
+msgstr ""
+"Выберыце машыну %(levelSubStr)s узроўню для ўдзелу ў рэжыме «Палігон»."
+
+msgid "versusAICarousel/lockedTooltip/vehLvl/header"
+msgstr "Непрыдатны ўзровень тэхнікі"
+
+msgid "versusAICarousel/lockedTooltip/vehLvl/levelSubStr"
+msgstr "%(levels)s"

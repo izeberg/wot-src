@@ -39,7 +39,7 @@
 					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>73</materialKind>
-					<collisionFlags>128</collisionFlags>
+					<collisionFlags>131</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_UNI_414_Pole/hd_env_UNI_414_Pole_AM.dds</Texture>

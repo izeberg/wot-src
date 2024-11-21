@@ -55,6 +55,9 @@ class CrashedTrackController(Component):
 
         return tracksCount >= needToStop
 
+    def isTrackBroken(self, side, index):
+        return self.__isTrackBroken(side, index, self.__crashedTracks) or self.__isTrackBroken(side, index, self.__debrisCrashedTracks)
+
     def isAnyTrackOnSideBroken(self, side):
         for tracks in (self.__crashedTracks, self.__debrisCrashedTracks):
             if any(tracks[side]):
@@ -114,6 +117,11 @@ class CrashedTrackController(Component):
     def delDebrisCrashedTrack(self, isLeft, pairIndex):
         side = 'left' if isLeft else 'right'
         self.__debrisCrashedTracks[side][pairIndex] = False
+
+    def __isTrackBroken(self, side, index, container):
+        if side in container and index in container[side]:
+            return container[side][index]
+        return False
 
     def __setupTrackAssembler(self, entity):
         modelNames = getPartModelsFromDesc(self.__vehicleDesc, ModelsSetParams(self.__modelsSet, 'destroyed', []))

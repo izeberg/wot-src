@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleResult/battleDuration"
+msgstr "%(date)s, працягласць бою: %(duration)s"
+
+msgid "battleResult/closeButton"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "battleResult/continueButton"
+msgstr "Працягнуць"
+
+msgid "battleResult/damageAssisted"
+msgstr "Падмога"
+
+msgid "battleResult/damageBlockedByArmor"
+msgstr ""
+"Выкарыстанне\n"
+"брані"
+
+msgid "battleResult/damageDealt"
+msgstr ""
+"Пашкоджанняў\n"
+"прычынена"
+
+msgid "battleResult/kills"
+msgstr "Знішчана"
+
+msgid "battleResult/lose/title"
+msgstr "БОЙ СКОНЧАНЫ"
+
+msgid "battleResult/missionName/1"
+msgstr "ТЫГРЫ Ў ТУМАНЕ: Аперацыя «Лавіна»"
+
+msgid "battleResult/missionName/2"
+msgstr "ТЫГРЫ Ў ТУМАНЕ: Аперацыя «Звералоў»"
+
+msgid "battleResult/operationsCompleted"
+msgstr ""
+"Аперацый\n"
+"выканана"
+
+msgid "battleResult/slash"
+msgstr "/"
+
+msgid "battleResult/vehicleName"
+msgstr "%(playerName)s - %(vehicleName)s"
+
+msgid "battleResult/vehicleState/alive"
+msgstr "{par_Start}Ацалеў{par_End}"
+
+msgid "battleResult/vehicleState/dead"
+msgstr "{par_Start}Страчаны ў баі{par_End}"
+
+msgid "battleResult/win/title"
+msgstr "ПЕРАМОГА!"
+
+msgid "dialogs/missionCompleted/cancel"
+msgstr "Скасаваць"
+
+msgid "dialogs/missionCompleted/message"
+msgstr ""
+"Вы не атрымаеце ўзнагарод за гэту аперацыю.\n"
+"Усё адно распачаць без актыўных задач?"
+
+msgid "dialogs/missionCompleted/submit"
+msgstr "Пацвердзіць"
+
+msgid "dialogs/missionCompleted/title"
+msgstr "Няма актыўных задач у гэтай аперацыі"
+
+msgid "headerButtons/battle/types/story_mode"
+msgstr "Сцэнарыі"
+
+msgid "missionSelection/exitButton"
+msgstr "ПАКІНУЦЬ РЭЖЫМ"
+
+msgid "missionSelection/missionDescription/1"
+msgstr ""
+"Бутрымаў! Даўно цябе не бачыў. Ой, даруйце, мне варта называць цябе ўжо «старлей Бутрымаў»? Ты ж паглядзі, як хутка на фронце званні цякуць, усяго на зорку ніжэй за мяне. Колькі з вучэбкі часу мінула, памятаеш? А цяпер — сур'ёзны афіцэр ужо, што вы што вы. Гэта каторая па ліку машына ў цябе? Добра, гэтым разам дай ужо свайму былому інструктару штурм правесці.\n"
+"\n"
+"Усё, збірайся, потым раскажаш, дзе цябе насіла. Заскоквай у танк, ідзі за мной, толькі не ўпрыся ў надаўбні: немцы іх тут шчодра панатыкалі. Нам тут мясцовасць нібыта разведалі. Будзеш мяне слухаць — даўжэй пратрываем, хоць чаго цябе вучыць, мы ж не першы год на фронце."
+
+msgid "missionSelection/missionDescription/2"
+msgstr ""
+"Тыгры... Найгоршае, што можна сустрэць на полі бою. І калі камандаванне кажа, што ў іх праблема — значыць, гэта Тыгры. Разведзвяз з 67-й асобнай танкавай брыгады на сувязь не выходзіць, Быкаў таксама, нас за імі паслалі\n"
+"\n"
+"Ты сам як? Да машыны прызвычаіўся? Нібы тая ж трыццацьчацвёрка, толькі перакампанавалі яе, каб не гарэла ад любога чыху. Добрая машына выйшла. Не пра... Не загубі яе толькі, у нас іх усяго 5 адзінак на хаду плюс два падранкі, якія хутчэй за ўсё не залатаюць да асноўнага ўдару. Давай механікам лішняй працы не падкідваць, добра? І лекарам нашым таксама... Па магчымасці. Па машынах!"
+
+msgid "missionSelection/missionName/1"
+msgstr "АПЕРАЦЫЯ «ЛАВІНА»"
+
+msgid "missionSelection/missionName/2"
+msgstr "АПЕРАЦЫЯ «ЗВЕРАЛОЎ»"
+
+msgid "missionSelection/specialVehicle"
+msgstr "Асаблівая машына"
+
+msgid "missionSelection/taskDescription/1"
+msgstr ""
+"{whiteSpanish_Start}Задача:{whiteSpanish_End} знішчыць бранятэхніку "
+"праціўніка."
+
+msgid "missionSelection/taskDescription/2"
+msgstr ""
+"{whiteSpanish_Start}Задача:{whiteSpanish_End} знішчыць бранятэхніку "
+"праціўніка."
+
+msgid "missionSelection/tooltipDescription"
+msgstr "Машына даступная толькі на час навучання."
+
+msgid "mode/story_mode/callToAction"
+msgstr "Сцэнарыі для навічкоў"
+
+msgid "mode/story_mode/description"
+msgstr "Прайдзіце прапісаныя сцэнарыі супраць штучнага інтэлекту"
+
+msgid "onboardingBattleResult/startButton"
+msgstr "Пачаць бой нанова"
+
+msgid "onboardingBattleResult/titleText"
+msgstr "БОЙ СКОНЧАНЫ"
+
+msgid "onboardingQueue/skipButton"
+msgstr "Прапусціць"
+
+msgid "onboardingQueue/skipText"
+msgstr ""
+"Чарга перапоўненая. Вы можаце працягнуць чаканне або прапусціць уводную "
+"задачу."
+
+msgid "onboardingQueue/spinnerText"
+msgstr "Пачакайце, вы ў чарзе на сервер..."

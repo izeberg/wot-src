@@ -1,0 +1,2725 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "01_karelia/a_ht_boulders"
+msgstr "Валуны"
+
+msgid "01_karelia/a_ht_gorge"
+msgstr "Цясніне"
+
+msgid "01_karelia/a_ht_plateau"
+msgstr "Плато"
+
+msgid "01_karelia/a_ht_southernPlateau"
+msgstr "Паўднёвае плато"
+
+msgid "01_karelia/a_mt_balcony"
+msgstr "«Балкон»"
+
+msgid "01_karelia/a_mt_bottomArrival"
+msgstr "Ніжні заезд"
+
+msgid "01_karelia/a_mt_creek"
+msgstr "Ручай"
+
+msgid "01_karelia/a_mt_mountain"
+msgstr "Гара"
+
+msgid "01_karelia/a_mt_southernPlateau"
+msgstr "Паўднёвае плато"
+
+msgid "01_karelia/a_mt_swamp"
+msgstr "Балота"
+
+msgid "01_karelia/b_ht_bigStones"
+msgstr "Вялікія камяні"
+
+msgid "01_karelia/b_ht_ledge"
+msgstr "Выступ"
+
+msgid "01_karelia/b_ht_mountain"
+msgstr "Гара"
+
+msgid "01_karelia/b_ht_northernPlateau"
+msgstr "Паўночнае плато"
+
+msgid "01_karelia/b_ht_upperEntrance"
+msgstr "Верхні заезд"
+
+msgid "01_karelia/b_mt_boulders"
+msgstr "Валуны"
+
+msgid "01_karelia/b_mt_gorge"
+msgstr "Цясніне"
+
+msgid "01_karelia/b_mt_northernPlateau"
+msgstr "Паўночнае плато"
+
+msgid "01_karelia/b_mt_plateau"
+msgstr "Плато"
+
+msgid "01_karelia/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_ht_gorge>цясніна</a_ht_gorge>.%(p)Рухаючыся па правым фланзе, "
+"рэкамендуецца як мага хутчэй заняць пазіцыю за каменем ля ўезду ў "
+"<a_ht_gorge>цясніну</a_ht_gorge>. Гэтая пазіцыя дае магчымасць паразіць "
+"суперніка на <a_ht_plateau>плато</a_ht_plateau>. Затым, прасоўваючыся глыбей"
+" у <a_ht_gorge>цясніну</a_ht_gorge> і знішчыўшы цэлі, што знаходзяцца там, "
+"можна прасунуцца пад прыкрыццё <a_ht_boulders>валуноў</a_ht_boulders>. "
+"Знішчайце з-за іх тэхніку суперніка і рухайцеся бліжэй да базы 2. Гэтая "
+"пазіцыя дазволіць весці агонь з дыстанцыі па тылах процілеглай каманды на "
+"<a_ht_southernPlateau>паўднёвым плато</a_ht_southernPlateau> і адкрывае шлях"
+" да базы 2."
+
+msgid "01_karelia/team1/heavyTank/title"
+msgstr "«Атака праз плато»"
+
+msgid "01_karelia/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_mountain>гара</a_mt_mountain>.%(p) Рухаючыся на левы фланг уздоўж "
+"<a_mt_mountain>гары</a_mt_mountain>, рэкамендуецца як мага хутчэй заняць "
+"пазіцыю для стральбы па <a_mt_bottomArrival>ніжнім "
+"заездзе</a_mt_bottomArrival>. Гэта дазволіць спыніць імклівы напад хуткіх "
+"танкаў. Затым заязджайце на <a_mt_balcony>«балкон»</a_mt_balcony>, дзе "
+"дабівайце групу суперніка. Пасля гэтага рэкамендуецца заняць пазіцыю для "
+"кантролю <a_mt_swamp>балота</a_mt_swamp>, дзе можа хавацца малапрыкметная "
+"тэхніка. Працягваючы рух па вонкавым баку гары праз "
+"<a_mt_creek>ручай</a_mt_creek>, варта ўдарыць у спіну супернікам на сваім "
+"фланзе, і, знішчыўшы іх, заехаць паўз <a_mt_southernPlateau>паўднёвае "
+"плато</a_mt_southernPlateau> і знішчыць цэлі, што засталіся на базе 2."
+
+msgid "01_karelia/team1/mediumTank/title"
+msgstr "«Атака праз гару»"
+
+msgid "01_karelia/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_ht_mountain>гара</b_ht_mountain>.%(p)Рухаючыся па правым фланзе, можна "
+"прыціснуцца пад <b_ht_ledge>выступам</b_ht_ledge> і весці агонь па "
+"супраціўніку, што ідзе ў наступ. Пераезд на пазіцыю да "
+"<b_ht_bigStones>вялікіх камянёў</b_ht_bigStones> адкрывае магчымасць весці "
+"агонь па суперніку ў <b_ht_upperEntrance>верхнім "
+"заездзе</b_ht_upperEntrance> і на подступах да яго. Пасля гэтага пад "
+"прыкрыццём <b_ht_mountain>гары</b_ht_mountain> варта заехаць на "
+"<b_ht_northernPlateau>паўночнае плато</b_ht_northernPlateau>, адкуль можна "
+"знішчыць сілы абаронцаў ля базы 1."
+
+msgid "01_karelia/team2/heavyTank/title"
+msgstr "«Атака праз гару»"
+
+msgid "01_karelia/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_gorge>цясніна</b_mt_gorge>.%(p)Рухаючыся па левым фланзе, "
+"рэкамендуецца як мага хутчэй заняць пазіцыю за каменем ля ўезда ў "
+"<b_mt_gorge>цясніну</b_mt_gorge>, што дае магчымасць паразіць суперніка на "
+"<b_mt_plateau>плато</b_mt_plateau>. Затым трэба заехаць у саму "
+"<b_mt_gorge>цясніну</b_mt_gorge> і працягнуць біцца з супраціўнікам ужо там."
+" Знішчыўшы ўсе цэлі на гэтым напрамку, можна прарвацца да базы суперніка пад"
+" прыкрыццём <b_mt_boulders>валуноў</b_mt_boulders>. Знішчайце з-за іх сілы "
+"абаронцаў на подступах да базы 1 і на <b_mt_northernPlateau>паўночным "
+"плато</b_mt_northernPlateau>, а пасля гэтага пад'язджайце да самой базы і "
+"дабівайце цэлі, што засталіся там."
+
+msgid "01_karelia/team2/mediumTank/title"
+msgstr "«Атака праз цясніну»"
+
+msgid "01_karelia/upperName"
+msgstr "КАРЭЛІЯ"
+
+msgid "02_malinovka/a_ht_millMountain"
+msgstr "Млын на гары"
+
+msgid "02_malinovka/a_ht_millMountainPhrase1"
+msgstr "млын на гары"
+
+msgid "02_malinovka/a_ht_millMountainPhrase2"
+msgstr "млын на гары"
+
+msgid "02_malinovka/a_ht_northernForest"
+msgstr "Паўночны лес"
+
+msgid "02_malinovka/a_ht_northernForestPhrase"
+msgstr "паўночным лесе"
+
+msgid "02_malinovka/a_ht_southernForest"
+msgstr "Паўднёвы лес"
+
+msgid "02_malinovka/a_ht_southernForestPhrase"
+msgstr "паўднёвага лесу"
+
+msgid "02_malinovka/a_ht_village"
+msgstr "Вёска"
+
+msgid "02_malinovka/a_ht_villagePhrase"
+msgstr "вёскі"
+
+msgid "02_malinovka/a_mt_elevation"
+msgstr "Узвышша"
+
+msgid "02_malinovka/a_mt_elevationPhrase"
+msgstr "узвышша"
+
+msgid "02_malinovka/a_mt_field"
+msgstr "Поле"
+
+msgid "02_malinovka/a_mt_fieldPhrase"
+msgstr "полі"
+
+msgid "02_malinovka/a_mt_ledge"
+msgstr "Выступ"
+
+msgid "02_malinovka/a_mt_ledgePhrase1"
+msgstr "выступ"
+
+msgid "02_malinovka/a_mt_ledgePhrase2"
+msgstr "выступе"
+
+msgid "02_malinovka/a_mt_ledgePhrase3"
+msgstr "выступе"
+
+msgid "02_malinovka/a_mt_northernForest"
+msgstr "Паўночны лес"
+
+msgid "02_malinovka/a_mt_northernForestPhrase"
+msgstr "паўночным лесе"
+
+msgid "02_malinovka/a_mt_swamp"
+msgstr "Балота"
+
+msgid "02_malinovka/a_mt_swampPhrase"
+msgstr "балота"
+
+msgid "02_malinovka/b_ht_millMountain"
+msgstr "Млын на гары"
+
+msgid "02_malinovka/b_ht_millMountainPhrase1"
+msgstr "млын на гары"
+
+msgid "02_malinovka/b_ht_millMountainPhrase2"
+msgstr "млын на гары"
+
+msgid "02_malinovka/b_ht_northernForest"
+msgstr "Паўночны лес"
+
+msgid "02_malinovka/b_ht_northernForestPhrase"
+msgstr "паўночнага лесу"
+
+msgid "02_malinovka/b_ht_southernForest"
+msgstr "Паўднёвы лес"
+
+msgid "02_malinovka/b_ht_southernForestPhrase"
+msgstr "паўднёвым лесе"
+
+msgid "02_malinovka/b_ht_village"
+msgstr "Вёска"
+
+msgid "02_malinovka/b_ht_villagePhrase"
+msgstr "вёскі"
+
+msgid "02_malinovka/b_mt_cowsheds"
+msgstr "Кароўнікі"
+
+msgid "02_malinovka/b_mt_cowshedsPhrase1"
+msgstr "кароўнікі"
+
+msgid "02_malinovka/b_mt_cowshedsPhrase2"
+msgstr "кароўнікі"
+
+msgid "02_malinovka/b_mt_field"
+msgstr "Поле"
+
+msgid "02_malinovka/b_mt_fieldPhrase"
+msgstr "поля"
+
+msgid "02_malinovka/b_mt_northLedge"
+msgstr "Паўночны выступ"
+
+msgid "02_malinovka/b_mt_northLedgePhrase"
+msgstr "паўночным выступе"
+
+msgid "02_malinovka/b_mt_southernForest"
+msgstr "Паўднёвы лес"
+
+msgid "02_malinovka/b_mt_southernForestPhrase"
+msgstr "паўднёвым лесе"
+
+msgid "02_malinovka/b_mt_swamp"
+msgstr "Балота"
+
+msgid "02_malinovka/b_mt_swampPhrase"
+msgstr "балота"
+
+msgid "02_malinovka/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэта тактыкі з'яўляецца "
+"%(a_ht_millMountainPhrase1).%(p)Рухаючыся пад прыкрыццём "
+"%(a_ht_southernForestPhrase), можна бяспечна пераадолець пад'ём, калі "
+"трымацца як мага бліжэй да мяжы мапы. Затым як найхутчэй трэба заняць "
+"%(a_ht_millMountainPhrase2) на верхнім ярусе. Гэта дазволіць весці агонь, "
+"хаваючы корпус машыны за рэльефам. Кантроль гэтай гары таксама дазволіць вам"
+" абстрэльваць подступы да %(a_ht_villagePhrase) і зайсці ў фланг праціўніку."
+" Камяні прыкрыюць ад абстрэлу схаваных у %(a_ht_northernForestPhrase) машын."
+" Зачышчаны лес адкрывае шлях да базы 2."
+
+msgid "02_malinovka/team1/heavyTank/title"
+msgstr "«Атака праз млын»"
+
+msgid "02_malinovka/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэта тактыкі з'яўляецца %(a_mt_ledgePhrase1).%(p)Рухаючыся "
+"на цэнтральны фланг уздоўж %(a_mt_swampPhrase), можна заняць "
+"%(a_mt_elevationPhrase), з якой можна паразіць праціўніка на "
+"%(a_mt_ledgePhrase2). Затым, рухаючыся па вадзе, можна «падціснуцца» пад "
+"выступ і весці абстрэл цэляў, якія падымаюцца на гару. Прыкрыццё пагоркамі і"
+" кустамі на %(a_mt_ledgePhrase3) дазваляе выявіць і абстраляць тэхніку ў "
+"%(a_mt_northernForestPhrase) і каля базы. Знішчэнне праціўніка з тылу на "
+"%(a_mt_fieldPhrase) адкрывае шлях да неабароненай базы 2."
+
+msgid "02_malinovka/team1/mediumTank/title"
+msgstr "«Атака праз выступ»"
+
+msgid "02_malinovka/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэта тактыкі з'яўляецца "
+"%(b_ht_millMountainPhrase1).%(p)Рухаючыся пад прыкрыццём "
+"%(b_ht_northernForestPhrase), можна бяспечна пераадолець пад'ём, калі "
+"трымацца як мага бліжэй да мяжы мапы. Пасля чаго як найхутчэй трэба заняць "
+"%(b_ht_millMountainPhrase2) на верхнім ярусе. Гэта дазволіць весці агонь, "
+"хаваючы корпус машыны за рэльефам. Кантроль гэтай гары таксама дазволіць вам"
+" абстрэльваць подступы да %(b_ht_villagePhrase) і зайсці ў фланг праціўніку."
+" Камяні прыкрыюць ад абстрэлу схаваных у %(b_ht_southernForestPhrase) машын."
+" Зачышчаны лес адкрывае шлях да базы 1."
+
+msgid "02_malinovka/team2/heavyTank/title"
+msgstr "«Атака праз млын»"
+
+msgid "02_malinovka/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэта тактыкі з'яўляюцца "
+"%(b_mt_cowshedsPhrase1).%(p)Рухаючыся па правым флангу, можна заняць пазіцыю"
+" на %(b_mt_northLedgePhrase), адкуль можна паразіць праціўніка на "
+"процілеглай пазіцыі. Застаючыся нявыкрытым, можна дабрацца да пазіцыі "
+"праціўніка па краі %(b_mt_fieldPhrase) і заняць %(b_mt_cowshedsPhrase2), пры"
+" гэтым важна не зваліцца ў ваду. Пад прыкрыццём будынкаў можна атакаваць "
+"пазіцыі праціўніка ля самой базы і бяспечна дабрацца да %(b_mt_swampPhrase),"
+" адкуль можна выявіць і паразіць цэлі ў %(b_mt_southernForestPhrase)."
+
+msgid "02_malinovka/team2/mediumTank/title"
+msgstr "«Атака праз поле»"
+
+msgid "02_malinovka/upperName"
+msgstr "МАЛІНАЎКА"
+
+msgid "03_campania_big/a_ht_easternVillage"
+msgstr "Усходні горад"
+
+msgid "03_campania_big/a_ht_garden"
+msgstr "Сад"
+
+msgid "03_campania_big/a_ht_lowerHairpinTurn"
+msgstr "Ніжні серпанцін"
+
+msgid "03_campania_big/a_ht_monastery"
+msgstr "Кляштар"
+
+msgid "03_campania_big/a_ht_shelf"
+msgstr "«Паліца»"
+
+msgid "03_campania_big/a_ht_unfinishedBridge"
+msgstr "Недабудаваны мост"
+
+msgid "03_campania_big/a_ht_valley"
+msgstr "Даліна"
+
+msgid "03_campania_big/a_mt_courtyardFountain"
+msgstr "Двор з фантанам"
+
+msgid "03_campania_big/a_mt_lowerHairpinTurn"
+msgstr "Ніжні серпанцін"
+
+msgid "03_campania_big/a_mt_monastery"
+msgstr "Кляштар"
+
+msgid "03_campania_big/a_mt_upperHairpinTurn"
+msgstr "Верхні серпанцін"
+
+msgid "03_campania_big/a_mt_valley"
+msgstr "Даліна"
+
+msgid "03_campania_big/b_ht_easternVillage"
+msgstr "Усходні горад"
+
+msgid "03_campania_big/b_ht_shelf"
+msgstr "«Паліца»"
+
+msgid "03_campania_big/b_ht_southernAscent"
+msgstr "Усходні пад'ём"
+
+msgid "03_campania_big/b_ht_unfinishedBridge"
+msgstr "Недабудаваны мост"
+
+msgid "03_campania_big/b_mt_courtyardFountain"
+msgstr "Двор з фантанам"
+
+msgid "03_campania_big/b_mt_lake"
+msgstr "Возера"
+
+msgid "03_campania_big/b_mt_lakeShelf"
+msgstr "«Паліца»"
+
+msgid "03_campania_big/b_mt_lowerHairpinTurn"
+msgstr "Ніжні серпанцін"
+
+msgid "03_campania_big/b_mt_valley"
+msgstr "Даліна"
+
+msgid "03_campania_big/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_ht_unfinishedBridge>недабудаваны мост</a_ht_unfinishedBridge>.%(p) "
+"Кіруючыся на ўсходні фланг, рэкамендуецца праехаць правей за гэты "
+"<a_ht_unfinishedBridge>мост</a_ht_unfinishedBridge>. Падымаючыся па "
+"<a_ht_lowerHairpinTurn>ніжнім серпанціне</a_ht_lowerHairpinTurn>, можна "
+"зачысціць пазіцыі суперніка пад <a_ht_shelf>«паліцай»</a_ht_shelf>. Адсюль "
+"зручна кантраляваць варожую тэхніку на тэрыторыі "
+"<a_ht_easternVillage>ўсходняга горада</a_ht_easternVillage>. Зачысціўшы "
+"напрамак, варта заняць пазіцыю ля <a_ht_monastery>кляштара</a_ht_monastery>,"
+" каб дабіць рэшткі сілаў у <a_ht_garden>садзе</a_ht_garden> і на "
+"супрацьлеглым баку <a_ht_valley>даліны</a_ht_valley>."
+
+msgid "03_campania_big/team1/heavyTank/title"
+msgstr "«Атака праз недабудаваны мост»"
+
+msgid "03_campania_big/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <a_mt_courtyardFountain>двор з "
+"фантанам</a_mt_courtyardFountain>.%(p)Пры прасоўванні на ўсходні фланг адным"
+" з першых агнявых рубяжоў будзе развязка паміж "
+"<a_mt_upperHairpinTurn>верхнім серпанцінам</a_mt_upperHairpinTurn> і "
+"<a_mt_courtyardFountain>дваром з фантанам</a_mt_courtyardFountain>. З гэтай "
+"пазіцыі можна весці агонь па машынах, што едуць на гэты напрамак, а таксама "
+"па <a_mt_lowerHairpinTurn>ніжнім серпанціне</a_mt_lowerHairpinTurn>. Затым "
+"можна зачысціць напрамак за <a_mt_courtyardFountain>дваром з "
+"фантанам</a_mt_courtyardFountain>: гэта дазволіць адкрыць шлях праз "
+"<a_mt_valley>даліну</a_mt_valley> да тылоў усходняга напрамку. Каб атакаваць"
+" суперніка знянацку, зайшоўшы яму ў тыл, рэкамендуецца зачысціць усе пазіцыі"
+" ля <a_mt_monastery>кляштара</a_mt_monastery>."
+
+msgid "03_campania_big/team1/mediumTank/title"
+msgstr "«Атака праз двор з фантанам»"
+
+msgid "03_campania_big/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <b_ht_easternVillage>ўсходні "
+"горад</b_ht_easternVillage>.%(p)Рухаючыся па ўсходнім фланзе, можна чакаць, "
+"што супернік ужо заняў пазіцыі на ўскраіне <b_ht_easternVillage>ўсходняга "
+"горада</b_ht_easternVillage>. Таму спярша трэба выкарыстоўваць рогі "
+"будынкаў, каб бяспечна весці агонь па суперніку на гэтым напрамку. Далей, "
+"зачысціўшы пазіцыі на <b_ht_shelf>«паліцы»</b_ht_shelf> і пад ёй, можна "
+"рухацца ўніз у бок базы суперніка. Для гэтага трэба спусціцца ў даліну, "
+"заняць пазіцыю ля <b_ht_unfinishedBridge>недабудаванага "
+"моста</b_ht_unfinishedBridge> і знішчыць тэхніку суперніка над "
+"<b_ht_southernAscent>паўднёвым пад'ёмам</b_ht_southernAscent>."
+
+msgid "03_campania_big/team2/heavyTank/title"
+msgstr "«Атака праз усходні горад»"
+
+msgid "03_campania_big/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <b_mt_courtyardFountain>двор з "
+"фантанам</b_mt_courtyardFountain>.%(p)Трэба спусціцца ў "
+"<b_mt_valley>даліну</b_mt_valley> і рухацца правей пад прыкрыццём кустоў. "
+"Падняўшыся на вяршыню заходняга фланга, можна заняць адну з найлепшых "
+"пазіцый для кантролю напрамку — <b_mt_lakeShelf>«паліцу»</b_mt_lakeShelf> "
+"над <b_mt_lake>возерам</b_mt_lake>. Калі ў аглядзе з гэтай пазіцыі не "
+"засталося даступных цэляў, можна рухацца далей, зачысціўшы "
+"<b_mt_courtyardFountain>двор з фантанам</b_mt_courtyardFountain>. Пасля "
+"чаго, пераадолеўшы супраціў, займайце пазіцыю для стральбы па "
+"<b_mt_lowerHairpinTurn>ніжнім серпанціне</b_mt_lowerHairpinTurn>."
+
+msgid "03_campania_big/team2/mediumTank/title"
+msgstr "«Атака праз двор з фантанам»"
+
+msgid "03_campania_big/upperName"
+msgstr "ПРАВІНЦЫЯ"
+
+msgid "04_himmelsdorf/upperName"
+msgstr "ГІМЭЛЬСДОРФ"
+
+msgid "05_prohorovka/a_ht_alley"
+msgstr "Прысады"
+
+msgid "05_prohorovka/a_ht_alleyPhrase1"
+msgstr "прысады"
+
+msgid "05_prohorovka/a_ht_alleyPhrase2"
+msgstr "прысады"
+
+msgid "05_prohorovka/a_ht_mountain"
+msgstr "Гара"
+
+msgid "05_prohorovka/a_ht_mountainPhrase"
+msgstr "гары"
+
+msgid "05_prohorovka/a_ht_railway"
+msgstr "Чыгунка"
+
+msgid "05_prohorovka/a_ht_railwayPhrase"
+msgstr "чыгункі"
+
+msgid "05_prohorovka/a_ht_southernFields"
+msgstr "Паўднёвыя палі"
+
+msgid "05_prohorovka/a_ht_southernFieldsPhrase"
+msgstr "паўднёвым полі"
+
+msgid "05_prohorovka/a_ht_village"
+msgstr "Вёска"
+
+msgid "05_prohorovka/a_ht_villagePhrase"
+msgstr "вёскі"
+
+msgid "05_prohorovka/a_mt_alley"
+msgstr "Прысады"
+
+msgid "05_prohorovka/a_mt_alleyPhrase"
+msgstr "прысадах"
+
+msgid "05_prohorovka/a_mt_mountain"
+msgstr "Гара"
+
+msgid "05_prohorovka/a_mt_mountainPhrase1"
+msgstr "гары"
+
+msgid "05_prohorovka/a_mt_mountainPhrase2"
+msgstr "гара"
+
+msgid "05_prohorovka/a_mt_railway"
+msgstr "Чыгунка"
+
+msgid "05_prohorovka/a_mt_railwayPhrase"
+msgstr "чыгункі"
+
+msgid "05_prohorovka/a_mt_southernFields"
+msgstr "Паўднёвыя палі"
+
+msgid "05_prohorovka/a_mt_southernFieldsPhrase"
+msgstr "паўднёвым полі"
+
+msgid "05_prohorovka/a_mt_village"
+msgstr "Вёска"
+
+msgid "05_prohorovka/a_mt_villagePhrase"
+msgstr "вёсцы"
+
+msgid "05_prohorovka/b_ht_alley"
+msgstr "Прысады"
+
+msgid "05_prohorovka/b_ht_alleyPhrase1"
+msgstr "прысады"
+
+msgid "05_prohorovka/b_ht_alleyPhrase2"
+msgstr "прысады"
+
+msgid "05_prohorovka/b_ht_mountain"
+msgstr "Гара"
+
+msgid "05_prohorovka/b_ht_mountainPhrase"
+msgstr "гары"
+
+msgid "05_prohorovka/b_ht_northernFields"
+msgstr "Паўночныя палі"
+
+msgid "05_prohorovka/b_ht_northernFieldsPhrase"
+msgstr "паўночным полі"
+
+msgid "05_prohorovka/b_ht_railway"
+msgstr "Чыгунка"
+
+msgid "05_prohorovka/b_ht_railwayPhrase"
+msgstr "чыгункі"
+
+msgid "05_prohorovka/b_ht_village"
+msgstr "Вёска"
+
+msgid "05_prohorovka/b_ht_villagePhrase"
+msgstr "вёскі"
+
+msgid "05_prohorovka/b_mt_alley"
+msgstr "Прысады"
+
+msgid "05_prohorovka/b_mt_alleyPhrase"
+msgstr "прысадах"
+
+msgid "05_prohorovka/b_mt_mountain"
+msgstr "Гара"
+
+msgid "05_prohorovka/b_mt_mountainPhrase1"
+msgstr "гара"
+
+msgid "05_prohorovka/b_mt_mountainPhrase2"
+msgstr "гары"
+
+msgid "05_prohorovka/b_mt_northernFields"
+msgstr "Паўночныя палі"
+
+msgid "05_prohorovka/b_mt_northernFieldsPhrase"
+msgstr "паўночным полі"
+
+msgid "05_prohorovka/b_mt_railway"
+msgstr "Чыгунка"
+
+msgid "05_prohorovka/b_mt_railwayPhrase"
+msgstr "чыгункі"
+
+msgid "05_prohorovka/b_mt_village"
+msgstr "Вёска"
+
+msgid "05_prohorovka/b_mt_villagePhrase"
+msgstr "вёсцы"
+
+msgid "05_prohorovka/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца прарыў праз "
+"%(a_ht_alleyPhrase1).%(p)Рухаючыся ўздоўж %(a_ht_railwayPhrase), можна "
+"заняць агнявую пазіцыю каля %(a_ht_villagePhrase). Гэтая пазіцыя дазваляе "
+"кантраляваць праціўніка на %(a_ht_mountainPhrase). Зачысціўшы гэтыя пазіцыі,"
+" можна бяспечна перамясціцца на %(a_ht_alleyPhrase2). Пасля перамогі на "
+"гэтым кірунку рэкамендуецца выкарыстоўваць рэльеф і расліннасць вакол, каб "
+"зачысціць рэшткі сіл праціўніка на %(a_ht_southernFieldsPhrase)."
+
+msgid "05_prohorovka/team1/heavyTank/title"
+msgstr "«Атака праз прысады»"
+
+msgid "05_prohorovka/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(a_mt_mountainPhrase2).%(p)Падчас"
+" руху на ўсходні фланг, пасля перасячэння %(a_mt_railwayPhrase) "
+"рэкамендуецца заняць агнявую пазіцыю на %(a_mt_mountainPhrase1). Перамога на"
+" гэтым кірунку дазваляе кантраляваць пазіцыі праціўніка ў "
+"%(a_mt_villagePhrase) і за чыгункай. Калі перакаціцца і знішчыць рэшткі "
+"супраціву ўздоўж чыгункі, можна заняць бяспечныя пазіцыі ў складках рэльефу "
+"на %(a_mt_southernFieldsPhrase) для вядзення агню па тэхніцы на "
+"%(a_mt_alleyPhrase)."
+
+msgid "05_prohorovka/team1/mediumTank/title"
+msgstr "«Атака праз гару»"
+
+msgid "05_prohorovka/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца прарыў праз "
+"%(b_ht_alleyPhrase1).%(p)Рухаючыся ўздоўж %(b_ht_railwayPhrase), можна "
+"заняць агнявую пазіцыю каля %(b_ht_villagePhrase). Гэтая пазіцыя дазваляе "
+"кантраляваць праціўніка на %(b_ht_mountainPhrase). Зачысціўшы гэтыя пазіцыі,"
+" можна бяспечна перамясціцца на %(b_ht_alleyPhrase2). Пасля перамогі на "
+"гэтым кірунку рэкамендуецца выкарыстоўваць рэльеф і расліннасць вакол, каб "
+"зачысціць рэшткі сіл праціўніка на %(b_ht_northernFieldsPhrase)."
+
+msgid "05_prohorovka/team2/heavyTank/title"
+msgstr "«Атака праз прысады»"
+
+msgid "05_prohorovka/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"%(b_mt_mountainPhrase1).%(p)Рухаючыся на ўсходні фланг, пасля перасячэння "
+"%(b_mt_railwayPhrase) пажадана заняць агнявую пазіцыю на "
+"%(b_mt_mountainPhrase2). Перамога на гэтым кірунку дазваляе кантраляваць "
+"пазіцыі праціўніка ў %(b_mt_villagePhrase) і за чыгункай. Калі перакаціцца і"
+" знішчыць рэшткі супраціву ўздоўж чыгункі, можна заняць бяспечныя пазіцыі ў "
+"складках рэльефу на %(b_mt_northernFieldsPhrase) для вядзення агню па "
+"тэхніцы на %(b_mt_alleyPhrase)."
+
+msgid "05_prohorovka/team2/mediumTank/title"
+msgstr "«Атака праз гару»"
+
+msgid "05_prohorovka/upperName"
+msgstr "ПРОХАРАЎКА"
+
+msgid "06_ensk/a_ht_centralStreet"
+msgstr "Цэнтральная вуліца"
+
+msgid "06_ensk/a_ht_largeYard"
+msgstr "Вялікі двор"
+
+msgid "06_ensk/a_ht_smallYard"
+msgstr "Малы двор"
+
+msgid "06_ensk/a_ht_southernVillage"
+msgstr "Паўднёвая вёска"
+
+msgid "06_ensk/a_ht_square"
+msgstr "Плошча"
+
+msgid "06_ensk/a_ht_stadium"
+msgstr "Стадыён"
+
+msgid "06_ensk/a_mt_forest"
+msgstr "«Зялёнка»"
+
+msgid "06_ensk/a_mt_industrialArea"
+msgstr "Прамысловая зона"
+
+msgid "06_ensk/a_mt_platform"
+msgstr "Платформа"
+
+msgid "06_ensk/a_mt_southernVillage"
+msgstr "Паўднёвая вёска"
+
+msgid "06_ensk/a_mt_stadium"
+msgstr "Стадыён"
+
+msgid "06_ensk/a_mt_storages"
+msgstr "Склады"
+
+msgid "06_ensk/b_ht_centralStreet"
+msgstr "Цэнтральная вуліца"
+
+msgid "06_ensk/b_ht_largeYard"
+msgstr "Вялікі двор"
+
+msgid "06_ensk/b_ht_northernVillage"
+msgstr "Паўночная вёска"
+
+msgid "06_ensk/b_ht_smallYard"
+msgstr "Малы двор"
+
+msgid "06_ensk/b_ht_square"
+msgstr "Плошча"
+
+msgid "06_ensk/b_mt_forest"
+msgstr "«Зялёнка»"
+
+msgid "06_ensk/b_mt_industrialArea"
+msgstr "Прамысловая зона"
+
+msgid "06_ensk/b_mt_northernSuburb"
+msgstr "Паўночны прыгарад"
+
+msgid "06_ensk/b_mt_northernVillage"
+msgstr "Паўночная вёска"
+
+msgid "06_ensk/b_mt_storages"
+msgstr "Склады"
+
+msgid "06_ensk/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <a_ht_centralStreet>цэнтральная "
+"вуліца</a_ht_centralStreet>.%(p)Пазіцыі ў <a_ht_smallYard>малым "
+"двары</a_ht_smallYard> дазваляюць весці бой з супернікам, які знаходзіцца на"
+" <a_ht_centralStreet>цэнтральнай вуліцы</a_ht_centralStreet> і ў "
+"<a_ht_largeYard>вялікім двары</a_ht_largeYard>. Пры гэтым варта памятаць, "
+"што на мапе ёсць вялікая колькасць прастрэлаў, таму, калі вы гуляеце ў "
+"<a_ht_smallYard>малым</a_ht_smallYard> або <a_ht_largeYard>вялікім "
+"двары</a_ht_largeYard>, а таксама выязджаеце на "
+"<a_ht_centralStreet>цэнтральную вуліцу</a_ht_centralStreet>, трэба быць "
+"асцярожнымі і звяртаць увагу на <a_ht_square>плошчу</a_ht_square>. Прарваўшы"
+" абарону суперніка ў вялікім двары, па тэрыторыі "
+"<a_ht_stadium>стадыёна</a_ht_stadium> можна дабрацца да варожай базы, адкуль"
+" бачныя пазіцыі абаронцаў супрацьлеглага фланга ў "
+"<a_ht_southernVillage>паўднёвай вёсцы</a_ht_southernVillage>."
+
+msgid "06_ensk/team1/heavyTank/title"
+msgstr "«Атака праз горад»"
+
+msgid "06_ensk/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<a_mt_storages>склады</a_mt_storages>.%(p)Рухаючыся па левым фланзе, можна "
+"заняць пазіцыі ў <a_mt_industrialArea>прамысловай "
+"зоне</a_mt_industrialArea>, дзе з'яўляецца магчымасць перастрэльвацца з "
+"супернікам як на <a_mt_forest>«зялёнцы»</a_mt_forest>, так і ля "
+"<a_mt_storages>складоў</a_mt_storages>. Пад прыкрыццём насыпаў і будынкаў "
+"можна бяспечна падабрацца да суперніка ў <a_mt_southernVillage>паўднёвай "
+"вёсцы</a_mt_southernVillage>, а калі вы яго знішчыце, з'явіцца шанец "
+"дабрацца да базы і зайсці ў тыл супрацьлеглага фланга на "
+"<a_mt_stadium>стадыёне</a_mt_stadium> альбо каля "
+"<a_mt_platform>платформы</a_mt_platform>."
+
+msgid "06_ensk/team1/mediumTank/title"
+msgstr "«Атака праз склады»"
+
+msgid "06_ensk/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <b_ht_centralStreet>цэнтральная "
+"вуліца</b_ht_centralStreet>.%(p)Пазіцыі ў <b_ht_largeYard>вялікім "
+"двары</b_ht_largeYard> дазваляюць весці бой з супернікам на супрацьлеглым "
+"баку <b_ht_centralStreet>цэнтральнай вуліцы</b_ht_centralStreet>, а таксама "
+"ў глыбіні <b_ht_smallYard>малога двара</b_ht_smallYard>. Мапа багатая на "
+"прастрэлы — пра гэта асабліва важна памятаць, калі выязджаеце на "
+"<b_ht_centralStreet>цэнтральную вуліцу</b_ht_centralStreet>, а таксама на "
+"шляху ад <b_ht_smallYard>малога двара</b_ht_smallYard> да базы суперніка. "
+"Будзьце пільныя і звяртайце ўвагу на <b_ht_square>плошчу</b_ht_square>. "
+"Прарваўшы абарону ў горадзе і дабраўшыся да базы суперніка, можна атакаваць "
+"абаронцаў супрацьлеглага фланга ў <b_ht_northernVillage>паўночнай "
+"вёсцы</b_ht_northernVillage>."
+
+msgid "06_ensk/team2/heavyTank/title"
+msgstr "«Атака праз горад»"
+
+msgid "06_ensk/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <b_mt_industrialArea>прамысловая "
+"зона</b_mt_industrialArea>.%(p)Рухаючыся па правым фланзе, можна заняць "
+"пазіцыі ля <b_mt_storages>складоў</b_mt_storages>, адкуль зручна весці агонь"
+" па суперніку з процілеглага боку прамзоны. Далей, пад прыкрыццём складоў, "
+"варта перамясціцца непасрэдна ў саму <b_mt_industrialArea>прамысловую "
+"зону</b_mt_industrialArea>. Адтуль, карыстаючыся разнастайнымі ўкрыццямі, "
+"можна паспяхова змагацца з супернікам у <b_mt_industrialArea>прамысловай "
+"зоне</b_mt_industrialArea>, на <b_mt_forest>«зялёнцы»</b_mt_forest> і ў "
+"<b_mt_northernVillage>паўночнай вёсцы</b_mt_northernVillage>. Пасля прарыву "
+"напрамку і выезду да базы з'яўляецца шанец зачысціць астатнія цэлі ў "
+"<b_mt_northernSuburb>паўночным прыгарадзе</b_mt_northernSuburb>."
+
+msgid "06_ensk/team2/mediumTank/title"
+msgstr "«Атака праз прамысловую зону»"
+
+msgid "06_ensk/upperName"
+msgstr "ЭНСК"
+
+msgid "07_lakeville/a_ht_mountainPass"
+msgstr "Перавал"
+
+msgid "07_lakeville/a_ht_path"
+msgstr "Сцежка"
+
+msgid "07_lakeville/a_ht_southernEntrance"
+msgstr "Паўднёвы пад'езд"
+
+msgid "07_lakeville/a_ht_town"
+msgstr "Горад"
+
+msgid "07_lakeville/a_mt_church"
+msgstr "Царква"
+
+msgid "07_lakeville/a_mt_mill"
+msgstr "Млын"
+
+msgid "07_lakeville/a_mt_path"
+msgstr "Сцежка"
+
+msgid "07_lakeville/a_mt_southernSuburb"
+msgstr "Паўднёвы прыгарад"
+
+msgid "07_lakeville/a_mt_town"
+msgstr "Горад"
+
+msgid "07_lakeville/b_ht_mountainPass"
+msgstr "Перавал"
+
+msgid "07_lakeville/b_ht_northernEntrance"
+msgstr "Паўночны пад'езд"
+
+msgid "07_lakeville/b_ht_path"
+msgstr "Сцежка"
+
+msgid "07_lakeville/b_ht_town"
+msgstr "Горад"
+
+msgid "07_lakeville/b_mt_church"
+msgstr "Царква"
+
+msgid "07_lakeville/b_mt_northernSuburb"
+msgstr "Паўночны прыгарад"
+
+msgid "07_lakeville/b_mt_path"
+msgstr "Сцежка"
+
+msgid "07_lakeville/b_mt_southernSuburb"
+msgstr "Паўднёвы прыгарад"
+
+msgid "07_lakeville/b_mt_town"
+msgstr "Горад"
+
+msgid "07_lakeville/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <a_ht_mountainPass>горны "
+"перавал</a_ht_mountainPass>.%(p)Заняўшы пазіцыю на "
+"<a_ht_mountainPass>перавале</a_ht_mountainPass>, можна перастрэльвацца з "
+"супернікамі як з іншага боку "
+"<a_ht_mountainPass>перавала</a_ht_mountainPass>, так і на "
+"<a_ht_southernEntrance>паўднёвым пад'ездзе</a_ht_southernEntrance>. Прарыў "
+"абароны на гэтым напрамку вызваляе шлях да базы супраціўніка, адкуль можна "
+"весці агонь па тэхніцы, што абараняе <a_ht_path>сцежку</a_ht_path>, а "
+"таксама па ворагах, што вядуць бой у <a_ht_town>прыгарадзе</a_ht_town>."
+
+msgid "07_lakeville/team1/heavyTank/title"
+msgstr "«Атака праз цясніну»"
+
+msgid "07_lakeville/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_town>горад</a_mt_town>.%(p)На шляху ў <a_mt_town>горад</a_mt_town> вам"
+" можа выпасці шанец знішчыць разведчыка на <a_mt_path>сцежцы</a_mt_path>. "
+"Далей раім рухацца бліжэй да краю мапы і з'язджаць да "
+"<a_mt_town>горада</a_mt_town> ўжо за <a_mt_mill>млынам</a_mt_mill>. "
+"Рухаючыся па крайняй вуліцы ў горадзе, важна хутка заняць зручную пазіцыю, "
+"якая дасць права першага стрэлу. Пасля знішчэння цэляў на гэтай вуліцы лепш "
+"зрушыцца да <a_mt_church>царквы</a_mt_church>. Гэтая пазіцыя падыходзіць для"
+" бою на блізкай і сярэдніх дыстанцыях. Да базы суперніка лепш падбірацца "
+"праз <a_mt_southernSuburb>паўднёвы прыгарад</a_mt_southernSuburb>. Пры "
+"прарыве абароны на гэтым фланзе можна атакаваць у тыл абаронцаў цясніны."
+
+msgid "07_lakeville/team1/mediumTank/title"
+msgstr "«Атака праз горад»"
+
+msgid "07_lakeville/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <b_ht_mountainPass>горны "
+"перавал</b_ht_mountainPass>.%(p)Заняўшы пазіцыю на "
+"<b_ht_mountainPass>перавале</b_ht_mountainPass>, можна перастрэльвацца з "
+"супернікамі як з іншага боку "
+"<b_ht_mountainPass>перавала</b_ht_mountainPass>, так і на "
+"<b_ht_northernEntrance>паўночным пад'ездзе</b_ht_northernEntrance>. Прарыў "
+"абароны на гэтым напрамку вызваляе шлях да базы супраціўніка, адкуль можна "
+"весці агонь па тэхніцы, што абараняе <b_ht_path>сцежку</b_ht_path>, а "
+"таксама па ворагах, што вядуць бой у <b_ht_town>горадзе</b_ht_town>."
+
+msgid "07_lakeville/team2/heavyTank/title"
+msgstr "«Атака праз цясніну»"
+
+msgid "07_lakeville/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_town>горад</b_mt_town>.%(p)На шляху ў <b_mt_town>горад</b_mt_town> вам"
+" можа выпасці шанец знішчыць разведчыка на <b_mt_path>сцежцы</b_mt_path>. "
+"Далей раім рухацца бліжэй да краю мапы праз <b_mt_southernSuburb>паўднёвы "
+"прыгарад</b_mt_southernSuburb>. Рухаючыся па крайняй вуліцы ў "
+"<b_mt_town>горадзе</b_mt_town>, важна хутка заняць зручную пазіцыю, што "
+"дасць права першага стрэлу. Пасля знішчэння цэляў на гэтай вуліцы лепш "
+"зрушыцца да <b_mt_church>царквы</b_mt_church>. Гэтая пазіцыя падыходзіць для"
+" бою на блізкай і сярэдніх дыстанцыях. Да базы суперніка лепш падбірацца "
+"праз <b_mt_northernSuburb>паўночны прыгарад</b_mt_northernSuburb>. Пры "
+"прарыве абароны на гэтым фланзе можна атакаваць у тыл абаронцаў цясніны."
+
+msgid "07_lakeville/team2/mediumTank/title"
+msgstr "«Атака праз горад»"
+
+msgid "07_lakeville/upperName"
+msgstr "ЛЭЙКВІЛ"
+
+msgid "08_ruinberg/a_ht_alley"
+msgstr "Прысады"
+
+msgid "08_ruinberg/a_ht_centralSquare"
+msgstr "Плошча"
+
+msgid "08_ruinberg/a_ht_centralStreet"
+msgstr "Цэнтральная вуліца"
+
+msgid "08_ruinberg/a_ht_church"
+msgstr "Царква"
+
+msgid "08_ruinberg/a_ht_southernYard"
+msgstr "Паўднёвы двор"
+
+msgid "08_ruinberg/a_ht_suburb"
+msgstr "Прыгарад"
+
+msgid "08_ruinberg/a_ht_village"
+msgstr "Вёска"
+
+msgid "08_ruinberg/a_mt_alley"
+msgstr "Прысады"
+
+msgid "08_ruinberg/a_mt_centralStreet"
+msgstr "Цэнтральная вуліца"
+
+msgid "08_ruinberg/a_mt_northernPark"
+msgstr "Паўночны парк"
+
+msgid "08_ruinberg/a_mt_suburb"
+msgstr "Прыгарад"
+
+msgid "08_ruinberg/a_mt_village"
+msgstr "Вёска"
+
+msgid "08_ruinberg/b_ht_alley"
+msgstr "Прысады"
+
+msgid "08_ruinberg/b_ht_centralSquare"
+msgstr "Плошча"
+
+msgid "08_ruinberg/b_ht_centralStreet"
+msgstr "Цэнтральная вуліца"
+
+msgid "08_ruinberg/b_ht_church"
+msgstr "Царква"
+
+msgid "08_ruinberg/b_ht_internalArc"
+msgstr "Унутраная дуга"
+
+msgid "08_ruinberg/b_ht_northernYard"
+msgstr "Паўночны двор"
+
+msgid "08_ruinberg/b_ht_village"
+msgstr "Вёска"
+
+msgid "08_ruinberg/b_mt_alley"
+msgstr "Прысады"
+
+msgid "08_ruinberg/b_mt_centralStreet"
+msgstr "Цэнтральная вуліца"
+
+msgid "08_ruinberg/b_mt_southernPark"
+msgstr "Паўднёвы парк"
+
+msgid "08_ruinberg/b_mt_village"
+msgstr "Вёска"
+
+msgid "08_ruinberg/b_mt_yards"
+msgstr "Двары"
+
+msgid "08_ruinberg/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_ht_centralSquare>плошча</a_ht_centralSquare>.%(p)Калі рушыце па вуліцы да"
+" <a_ht_church>царквы</a_ht_church>, будзе слушна займаць агнявыя пазіцыі за "
+"руінамі будынкаў каля <a_ht_centralSquare>плошчы</a_ht_centralSquare>. Пры "
+"далейшым прасоўванні да <a_ht_church>царквы</a_ht_church> трэба пільнаваць "
+"<a_ht_centralStreet>цэнтральную вуліцу</a_ht_centralStreet>, бо там з "
+"вялікай верагоднасцю будзе знаходзіцца супраціўнік. Далейшы шлях да базы "
+"варта пракладаць праз <a_ht_southernYard>паўднёвы двор</a_ht_southernYard>: "
+"дамы там забяспечваюць добрае прыкрыццё ад абаронцаў базы. Не забывайцеся на"
+" САУ суперніка, якія часта займаюць там пазіцыі. Дабраўшыся да "
+"<a_ht_suburb>прыгарада</a_ht_suburb>, вы зможаце весці агонь па "
+"<a_ht_alley>прысадах</a_ht_alley> і <a_ht_village>вёсцы</a_ht_village>."
+
+msgid "08_ruinberg/team1/heavyTank/title"
+msgstr "«Атака праз цэнтральную плошчу»"
+
+msgid "08_ruinberg/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_village>вёска</a_mt_village>.%(p)Рухаючыся па правым фланзе праз "
+"<a_mt_northernPark>паўночны парк</a_mt_northernPark>, як мага хутчэй "
+"займайце агнявую пазіцыю ў <a_mt_village>вёсцы</a_mt_village>: адтуль "
+"адкрываецца магчымасць як весці бой на блізкай адлегласці ў самой "
+"<a_mt_village>вёсцы</a_mt_village>, так і абстрэльваць неабачлівага "
+"супраціўніка на <a_mt_centralStreet>цэнтральнай вуліцы</a_mt_centralStreet>."
+" Далейшы шлях да базы варта пракладаць уздоўж "
+"<a_mt_alley>прысадаў</a_mt_alley>, рэльеф ля якіх будзе дастатковым "
+"укрыццём. Заняўшы пазіцыю ў <a_mt_suburb>прыгарадзе</a_mt_suburb>, вы "
+"атрымаеце шанец нанесці ўдар у спіну супернікам, што занялі пазіцыі ў "
+"горадзе."
+
+msgid "08_ruinberg/team1/mediumTank/title"
+msgstr "«Атака праз вёску»"
+
+msgid "08_ruinberg/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_ht_centralSquare>плошча</b_ht_centralSquare>.%(p)Рухаючыся па левым "
+"фланзе да <b_ht_church>царквы</b_ht_church>, як мага хутчэй займайце пазіцыю"
+" каля <b_ht_internalArc>ўнутранай дугі</b_ht_internalArc>: гэта дасць права "
+"першага стрэлу па тэхніцы суперніка. Пасля варта размясціцца каля "
+"<b_ht_centralSquare>плошчы</b_ht_centralSquare>. Пры гэтым трэба пільнаваць "
+"<b_ht_centralStreet>цэнтральную вуліцу</b_ht_centralStreet>: там хутчэй за "
+"ўсё будуць ворагі. Таксама адсюль ёсць магчымасць патрапіць па цэлях ў "
+"<b_ht_village>вёсцы</b_ht_village>. Далейшы шлях да базы варта пракладаць "
+"праз <b_ht_northernYard>паўночны двор</b_ht_northernYard>. Пазіцыі ў гэтым "
+"двары дазволяць атакаваць суперніка ля базы і ў "
+"<b_ht_alley>прысадах</b_ht_alley>."
+
+msgid "08_ruinberg/team2/heavyTank/title"
+msgstr "«Атака праз цэнтральную плошчу»"
+
+msgid "08_ruinberg/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_village>вёска</b_mt_village>.%(p)Рухаючыся па правым фланзе праз "
+"<b_mt_southernPark>паўднёвы парк</b_mt_southernPark>, будзе слушна як мага "
+"хутчэй заняць агнявыя пазіцыі ў <b_mt_village>вёсцы</b_mt_village>. Адсюль "
+"можна весці бой як на блізкай дыстанцыі ў самой "
+"<b_mt_village>вёсцы</b_mt_village>, так і на дальніх — з супернікам на "
+"<b_mt_centralStreet>цэнтральнай вуліцы</b_mt_centralStreet> або ў "
+"<b_mt_yards>дварах</b_mt_yards>. Далейшы шлях да базы раім пракладаць уздоўж"
+" <b_mt_alley>прысадаў</b_mt_alley>, рэльеф ля якіх будзе дастатковым "
+"укрыццём. Заняўшы пазіцыі ў <b_mt_yards>дварах</b_mt_yards>, вы зможаце "
+"весці агонь па тылах супрацьлеглага фланга."
+
+msgid "08_ruinberg/team2/mediumTank/title"
+msgstr "«Атака праз вёску»"
+
+msgid "08_ruinberg/upperName"
+msgstr "РУІНБЭРГ"
+
+msgid "101_dday/upperName"
+msgstr "ОЎВЭРЛОРД"
+
+msgid "105_germany/upperName"
+msgstr "БЕРЛІН"
+
+msgid "10_hills/a_ht_balcony"
+msgstr "Паўночны «балкон»"
+
+msgid "10_hills/a_ht_mountain"
+msgstr "Гара"
+
+msgid "10_hills/a_ht_ruinedTower"
+msgstr "Разбураная вежа"
+
+msgid "10_hills/a_ht_shore"
+msgstr "Востраў"
+
+msgid "10_hills/a_ht_upperEntrance"
+msgstr "Верхні пад'езд"
+
+msgid "10_hills/a_ht_village"
+msgstr "Вёска"
+
+msgid "10_hills/a_mt_balcony"
+msgstr "Паўночны «балкон»"
+
+msgid "10_hills/a_mt_mountain"
+msgstr "Гара"
+
+msgid "10_hills/a_mt_rock"
+msgstr "Скала"
+
+msgid "10_hills/a_mt_shelf"
+msgstr "«Паліца»"
+
+msgid "10_hills/a_mt_shore"
+msgstr "Востраў"
+
+msgid "10_hills/a_mt_upperEntrance"
+msgstr "Верхні пад'езд"
+
+msgid "10_hills/b_ht_boulders"
+msgstr "Валуны"
+
+msgid "10_hills/b_ht_lowerEntrance"
+msgstr "Ніжні пад'езд"
+
+msgid "10_hills/b_ht_mountain"
+msgstr "Гара"
+
+msgid "10_hills/b_ht_southbalcony"
+msgstr "Паўднёвы «балкон»"
+
+msgid "10_hills/b_ht_stone"
+msgstr "Камень"
+
+msgid "10_hills/b_mt_creek"
+msgstr "Ручай"
+
+msgid "10_hills/b_mt_mountain"
+msgstr "Гара"
+
+msgid "10_hills/b_mt_shelf"
+msgstr "«Паліца»"
+
+msgid "10_hills/b_mt_shore"
+msgstr "Востраў"
+
+msgid "10_hills/b_mt_southbalcony"
+msgstr "Паўднёвы «балкон»"
+
+msgid "10_hills/b_mt_southvillage"
+msgstr "Паўднёвая вёска"
+
+msgid "10_hills/b_mt_spit"
+msgstr "Каса"
+
+msgid "10_hills/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_ht_village>вёска</a_ht_village>.%(p)Калі вы рухаецеся на правы фланг у "
+"абыход <a_ht_mountain>гары</a_ht_mountain>, рэкамендуем заняць пазіцыю ля "
+"<a_ht_ruinedTower>разбуранай вежы</a_ht_ruinedTower>. Адсюль можна весці бой"
+" з супернікам як у <a_ht_village>вёсцы</a_ht_village>, так і на "
+"<a_ht_balcony>паўночным «балконе»</a_ht_balcony>. Далей, прыціскаючыся да "
+"гары, можна атакаваць у тыл пазіцыі суперніка на <a_ht_upperEntrance>верхнім"
+" пад'ездзе</a_ht_upperEntrance>. Пасля іх зачысткі вам адкрыецца як шлях да "
+"базы суперніка, так і магчымасць дабіць цэлі, што засталіся на "
+"<a_ht_shore>востраве</a_ht_shore>."
+
+msgid "10_hills/team1/heavyTank/title"
+msgstr "«Атака праз вёску»"
+
+msgid "10_hills/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_shore>востраў</a_mt_shore>.%(p)Калі рушыце па левым фланзе, раім "
+"заняць пазіцыю на <a_mt_shelf>«паліцы»</a_mt_shelf>, адкуль можна весці "
+"агонь па супраціўніку на <a_mt_shore>востраве</a_mt_shore>. Далей варта "
+"перамясціцца на сам <a_mt_shore>востраў</a_mt_shore>. За кошт вялікай "
+"колькасці хованак на ім вы можаце як змагацца з супернікам на "
+"<a_mt_upperEntrance>верхнім пад'ездзе</a_mt_upperEntrance> і на "
+"<a_mt_balcony>паўночным «балконе»</a_mt_balcony>, так і дапамагчы "
+"хаўруснікам, страляючы па цэлях на <a_mt_mountain>гары</a_mt_mountain>. "
+"Прасоўваючыся да базы, лепш заняць пазіцыю ля <a_mt_rock>скалы</a_mt_rock>: "
+"яна схавае вас ад супраціўніка на <a_mt_balcony>паўночным "
+"«балконе»</a_mt_balcony>. У далейшым ён будзе добрай пазіцыяй, каб нанесці "
+"ўдар у тыл супрацьлеглага флангу суперніка."
+
+msgid "10_hills/team1/mediumTank/title"
+msgstr "«Атака праз востраў»"
+
+msgid "10_hills/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_ht_mountain>гара</b_ht_mountain>.%(p)Рухаючыся да "
+"<b_ht_mountain>гары</b_ht_mountain>, варта заняць пазіцыю за "
+"<b_ht_stone>каменем</b_ht_stone>: адтуль можна весці агонь па супернікам, "
+"што схаваліся за камянямі на ніжнім пад'ездзе. Таксама "
+"<b_ht_stone>камень</b_ht_stone> дае ўкрыцце ад САУ. Далей, абраўшы зручны "
+"момант, варта пасунуцца да <b_ht_boulders>валуноў</b_ht_boulders>: адтуль "
+"можна страляць як па супраціўніку на <b_ht_lowerEntrance>ніжнім "
+"пад'ездзе</b_ht_lowerEntrance>, так і па СТ-САУ на "
+"<b_ht_southbalcony>паўднёвым «балконе»</b_ht_southbalcony>. Пры гэтым не "
+"варта забывацца на мажлівую пагрозу на <b_ht_mountain>гары</b_ht_mountain> "
+"ад хуткіх танкаў, што прарваліся туды раней. Далейшы шлях да базы варта "
+"пракладаць праз <b_ht_lowerEntrance>ніжні пад'езд</b_ht_lowerEntrance>: "
+"спачатку прыціскаючыся да гары, а потым кіруючыся да "
+"<b_ht_southbalcony>паўднёвага балкона</b_ht_southbalcony>."
+
+msgid "10_hills/team2/heavyTank/title"
+msgstr "«Атака праз гару»"
+
+msgid "10_hills/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_shore>востраў</b_mt_shore>.%(p)Калі рушыце па правым фланзе, раім як "
+"мага хутчэй заняць пазіцыі на <b_mt_shore>востраве</b_mt_shore>. Вялікая "
+"колькасць хованак на ім дазваляе як паспяхова ваяваць з супернікамі "
+"непасрэдна на <b_mt_shore>востраве</b_mt_shore> і на "
+"<b_mt_shelf>«паліцы»</b_mt_shelf>, так і дапамагаць хаўруснікам, атакуючы "
+"тэхніку на <b_mt_mountain>гары</b_mt_mountain>. Далейшы шлях да базы лепей "
+"пракладаць за <b_mt_spit>касой</b_mt_spit>: яе рэльеф служыць выдатнай "
+"хованкай ад суперніка, што стаіць каля <b_mt_creek>ручая</b_mt_creek>. Пры "
+"вынішчэнні ворагаў ля <b_mt_creek>ручая</b_mt_creek> і "
+"<b_mt_southbalcony>паўднёвага «балкона»</b_mt_southbalcony> вы атрымаеце "
+"шанец знішчыць САУ, што засталіся ў <b_mt_southvillage>паўднёвай "
+"вёсцы</b_mt_southvillage>."
+
+msgid "10_hills/team2/mediumTank/title"
+msgstr "«Атака праз востраў»"
+
+msgid "10_hills/upperName"
+msgstr "КАПАЛЬНІ"
+
+msgid "112_eiffel_tower_ctf/upperName"
+msgstr "ПАРЫЖ"
+
+msgid "114_czech/upperName"
+msgstr "ПРАМЫСЛОВАЯ ЗОНА"
+
+msgid "115_sweden/upperName"
+msgstr "ШТЫЛЬ"
+
+msgid "11_murovanka/upperName"
+msgstr "МУРАВАНКА"
+
+msgid "13_erlenberg/upperName"
+msgstr "ЭРЛЕНБЭРГ"
+
+msgid "14_siegfried_line/upperName"
+msgstr "ЛІНІЯ ЗІГФРЫДА"
+
+msgid "17_munchen/a_ht_bridge"
+msgstr "Мост"
+
+msgid "17_munchen/a_ht_lake"
+msgstr "Возера"
+
+msgid "17_munchen/a_ht_monument"
+msgstr "Манумент"
+
+msgid "17_munchen/a_ht_southernEmbrasure"
+msgstr "Паўднёвыя байніцы"
+
+msgid "17_munchen/a_mt_bridge"
+msgstr "Мост"
+
+msgid "17_munchen/a_mt_crossing"
+msgstr "Пераезд"
+
+msgid "17_munchen/a_mt_depot"
+msgstr "Дэпо"
+
+msgid "17_munchen/a_mt_lake"
+msgstr "Возера"
+
+msgid "17_munchen/a_mt_ruinedStreet"
+msgstr "Разбураная вуліца"
+
+msgid "17_munchen/b_ht_bridge"
+msgstr "Мост"
+
+msgid "17_munchen/b_ht_church"
+msgstr "Царква"
+
+msgid "17_munchen/b_ht_crashedTrain"
+msgstr "Разбураны цягнік"
+
+msgid "17_munchen/b_ht_ruinedStreet"
+msgstr "Разбураная вуліца"
+
+msgid "17_munchen/b_ht_streetWithTrums"
+msgstr "Вуліца з трамваямі"
+
+msgid "17_munchen/b_mt_crashedTrain"
+msgstr "Разбураны цягнік"
+
+msgid "17_munchen/b_mt_crossing"
+msgstr "Пераезд"
+
+msgid "17_munchen/b_mt_hill"
+msgstr "Пагорак"
+
+msgid "17_munchen/b_mt_lake"
+msgstr "Возера"
+
+msgid "17_munchen/b_mt_ruinedStreet"
+msgstr "Разбураная вуліца"
+
+msgid "17_munchen/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_ht_bridge>мост</a_ht_bridge>.%(p)Як рушыце ў заходнім напрамку, раім на "
+"самым пачатку бою займаць пазіцыю ў <a_ht_southernEmbrasure>паўднёвых "
+"байніцах</a_ht_southernEmbrasure>. З яе можна эфектыўна перастрэльвацца з "
+"супернікам за <a_ht_bridge>мостам</a_ht_bridge>. Пасля гэтага можна "
+"перакаціцца за чыгуначны насып. Зачысціўшы ўсю тэхніку, якую бачыце, "
+"рухайцеся паўз <a_ht_monument>манумент</a_ht_monument>, каб зайсці ў тыл "
+"суперніка, тэхніка якога акапалася ля <a_ht_lake>возера</a_ht_lake>."
+
+msgid "17_munchen/team1/heavyTank/title"
+msgstr "«Атака праз мост»"
+
+msgid "17_munchen/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_crossing>пераезд</a_mt_crossing>.%(p)Кіруйцеся на ўсходні фланг і "
+"рушце наперад пад прыкрыццём <a_mt_depot>дэпо</a_mt_depot>. Асноўная агнявая"
+" пазіцыя на гэтым напрамку — <a_mt_crossing>пераезд</a_mt_crossing>. Пасля "
+"перамогі на пазіцыі можаце прасоўвацца ў тыл пад прыкрыццём вагонаў і "
+"знішчаць цэлі за <a_mt_lake>возерам</a_mt_lake>. Затым, выбіўшы суперніка з "
+"<a_mt_ruinedStreet>разбуранай вуліцы</a_mt_ruinedStreet>, можна дабіць "
+"тэхніку, што застаецца ля <a_mt_bridge>моста</a_mt_bridge>."
+
+msgid "17_munchen/team1/mediumTank/title"
+msgstr "«Атака праз пераезд»"
+
+msgid "17_munchen/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_ht_bridge>мост</b_ht_bridge>.%(p)Кіруючыся на ўсходні фланг, можна "
+"рухацца бліжэй да чыгуначнага насыпу, каб хутка заняць агнявую пазіцыю каля "
+"<b_ht_bridge>моста</b_ht_bridge>. Знішчыўшы адсюль тэхніку праціўніка, якую "
+"бачыце, можна прасунуцца наперад пад мостам і з гэтай пазіцыі адкрыць агонь "
+"па цэлях у зоне бачнасці справа, злева і ў напрамку "
+"<b_ht_crashedTrain>разбітага цягніка</b_ht_crashedTrain>. Далей "
+"рэкамендуецца абысці <b_ht_streetWithTrums>вуліцу з "
+"трамваямі</b_ht_streetWithTrums> і рухацца ў тыл суперніка паўз "
+"<b_ht_church>царкву</b_ht_church>, што бяспечна, пасля чаго заняць пазіцыю "
+"для знішчэння цэляў, што застаюцца на <b_ht_ruinedStreet>разбуранай "
+"вуліцы</b_ht_ruinedStreet>."
+
+msgid "17_munchen/team2/heavyTank/title"
+msgstr "«Атака праз мост»"
+
+msgid "17_munchen/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_crossing>пераезд</b_mt_crossing>.%(p)На пачатку бою рэкамендуецца на "
+"манеўранай машыне праехаць справа ад <b_mt_lake>возера</b_mt_lake> і заняць "
+"агнявую пазіцыю каля <b_mt_crashedTrain>разбітага "
+"цягніка</b_mt_crashedTrain>, каб выявіць тэхніку суперніка за насыпам і "
+"першым прычыніць пашкоджанні. Пасля гэтага можна перамясціцца на ключавую "
+"пазіцыю ля <b_mt_crossing>пераезда</b_mt_crossing>. Здабыўшы перамогу на "
+"гэтым напрамку і зачысціўшы пазіцыі на <b_mt_hill>пагорку</b_mt_hill>, "
+"рэкамендуецца ажыццявіць манеўр для заходу на суперніка, які абараняецца на "
+"паўднёвай <b_mt_ruinedStreet>разбуранай вуліцы</b_mt_ruinedStreet>."
+
+msgid "17_munchen/team2/mediumTank/title"
+msgstr "«Атака праз пераезд»"
+
+msgid "17_munchen/upperName"
+msgstr "УАЙДПАРК"
+
+msgid "18_cliff/upperName"
+msgstr "СТРОМКІ БЕРАГ"
+
+msgid "19_monastery/upperName"
+msgstr "КЛЯШТАР"
+
+msgid "23_westfeld/upperName"
+msgstr "ВЭСТФІЛЬД"
+
+msgid "28_desert/a_ht_balcony"
+msgstr "«Балкон»"
+
+msgid "28_desert/a_ht_dunes"
+msgstr "Дзюны"
+
+msgid "28_desert/a_ht_easternVillage"
+msgstr "Усходняя вёска"
+
+msgid "28_desert/a_ht_gorge"
+msgstr "Цясніне"
+
+msgid "28_desert/a_ht_mountains"
+msgstr "Горы"
+
+msgid "28_desert/a_ht_ravine"
+msgstr "Роў"
+
+msgid "28_desert/a_ht_thoroughfare"
+msgstr "Праезд"
+
+msgid "28_desert/a_mt_hills"
+msgstr "Пагоркі"
+
+msgid "28_desert/a_mt_longDune"
+msgstr "Доўгая дзюна"
+
+msgid "28_desert/a_mt_shelf"
+msgstr "«Паліца»"
+
+msgid "28_desert/a_mt_temple"
+msgstr "Храм"
+
+msgid "28_desert/a_mt_westernVillage"
+msgstr "Заходняя вёска"
+
+msgid "28_desert/b_ht_bigDune"
+msgstr "Вялікая дзюна"
+
+msgid "28_desert/b_ht_detour"
+msgstr "Аб'езд"
+
+msgid "28_desert/b_ht_hills"
+msgstr "Пагоркі"
+
+msgid "28_desert/b_ht_longDune"
+msgstr "Доўгая дзюна"
+
+msgid "28_desert/b_ht_shelf"
+msgstr "«Паліца»"
+
+msgid "28_desert/b_mt_easternVillage"
+msgstr "Усходняя вёска"
+
+msgid "28_desert/b_mt_gorge"
+msgstr "Цясніна"
+
+msgid "28_desert/b_mt_mountain"
+msgstr "Гара"
+
+msgid "28_desert/b_mt_river"
+msgstr "Рака"
+
+msgid "28_desert/b_mt_rocks"
+msgstr "Скалы"
+
+msgid "28_desert/b_mt_westernVillage"
+msgstr "Заходняя вёска"
+
+msgid "28_desert/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<a_ht_mountains>горы</a_ht_mountains>.%(p)Абмінаючы "
+"<a_ht_easternVillage>ўсходнюю вёску</a_ht_easternVillage>, можна накіравацца"
+" ў бок <a_ht_mountains>гор</a_ht_mountains>. Знішчыўшы суперніка агнём з "
+"сярэдняй дыстанцыі, вы мусіце перасекчы <a_ht_gorge>цясніну</a_ht_gorge> і "
+"ўступіць у блізкі бой на подступах да "
+"<a_ht_thoroughfare>праезду</a_ht_thoroughfare>. Потым, схаваўшыся ў "
+"<a_ht_dunes>дзюнах</a_ht_dunes>, рэкамендуецца знішчыць абарону базы на "
+"<a_ht_balcony>«балконе»</a_ht_balcony>. Пасля гэтага пераадольвайце "
+"<a_ht_ravine>роў</a_ht_ravine> і дабівайце тэхніку супраціўніка на заходняй "
+"базе."
+
+msgid "28_desert/team1/heavyTank/title"
+msgstr "«Атака праз горы»"
+
+msgid "28_desert/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<a_mt_hills>пагоркі</a_mt_hills>.%(p)Арыентуючыся па "
+"<a_mt_temple>храме</a_mt_temple>, раім заняць агнявую пазіцыю пад прыкрыццём"
+" <a_mt_longDune>доўгай дзюны</a_mt_longDune>. Яна дазваляе кантраляваць "
+"суперніка ля <a_mt_temple>храма</a_mt_temple> і на "
+"<a_mt_hills>пагорках</a_mt_hills>. Мноства машын хаваецца за "
+"<a_mt_hills>пагоркамі</a_mt_hills>, таму трэба быць асцярожным. Набліжаючыся"
+" да заходняй базы суперніка, знішчайце ягоную тэхніку на "
+"<a_mt_shelf>«паліцы»</a_mt_shelf>. Пасля чаго, прарваўшы абарону базы, можна"
+" зайсці ў тыл суперніка ля <a_mt_westernVillage>заходняй "
+"вёскі</a_mt_westernVillage>."
+
+msgid "28_desert/team1/mediumTank/title"
+msgstr "«Атака праз пагоркі»"
+
+msgid "28_desert/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<b_ht_hills>пагоркі</b_ht_hills>.%(p)Рухаючыся паўз "
+"<b_ht_shelf>«паліцу»</b_ht_shelf>, можна заняць агнявую пазіцыю каля "
+"падножжа <b_ht_bigDune>вялікай дзюны</b_ht_bigDune>. Расчысціўшы дарогу, "
+"прасоўвайцеся далей да <b_ht_longDune>доўгай дзюны</b_ht_longDune>. "
+"Скарыстайце яе як прыкрыццё і расчышчайце шлях да фланга абароны суперніка. "
+"Далей праз <b_ht_detour>аб'езд</b_ht_detour> рушце ў тыл суперніка, які "
+"ахоўвае ўсходнюю базу."
+
+msgid "28_desert/team2/heavyTank/title"
+msgstr "«Атака праз пагоркі»"
+
+msgid "28_desert/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца заезд на "
+"<b_mt_rocks>скалы</b_mt_rocks>.%(p)Абмінаючы <b_mt_westernVillage>вёску на "
+"захадзе</b_mt_westernVillage>, трэба хутка заняць агнявы рубеж у "
+"<b_mt_rocks>скалах</b_mt_rocks>, не адцягваючы ўвагу на магчымыя цэлі на "
+"шляху. Зачысціўшы сілы праціўніка з гэтага агнявога рубяжа, рэкамендуецца "
+"пераехаць у <b_mt_gorge>цясніну</b_mt_gorge> і дабіць цэлі там. Пасля вы "
+"мусіце падняцца на <b_mt_mountain>гару</b_mt_mountain> і хутка спусціцца да "
+"<b_mt_easternVillage>ўсходняй вёскі</b_mt_easternVillage>. Знішчыўшы тэхніку"
+" суперніка на ўсходняй базе, без праблем выходзьце ў тыл абаронцаў на "
+"<b_mt_river>рацэ</b_mt_river>."
+
+msgid "28_desert/team2/mediumTank/title"
+msgstr "«Атака праз скалы»"
+
+msgid "28_desert/upperName"
+msgstr "ПЯСЧАНАЯ РАКА"
+
+msgid "29_el_hallouf/a_ht_hairpinTurn"
+msgstr "Серпанцін"
+
+msgid "29_el_hallouf/a_ht_ludge"
+msgstr "Выступ"
+
+msgid "29_el_hallouf/a_ht_ruin"
+msgstr "Руіны"
+
+msgid "29_el_hallouf/a_ht_southernPlateau"
+msgstr "Паўднёвае плато"
+
+msgid "29_el_hallouf/a_ht_southernTown"
+msgstr "Паўднёвы горад"
+
+msgid "29_el_hallouf/a_ht_westernRidge"
+msgstr "Заходняя града"
+
+msgid "29_el_hallouf/a_mt_easternPlateau"
+msgstr "Усходняе плато"
+
+msgid "29_el_hallouf/a_mt_hairpinTurn"
+msgstr "Серпанцін"
+
+msgid "29_el_hallouf/a_mt_southernPlateau"
+msgstr "Паўднёвае плато"
+
+msgid "29_el_hallouf/a_mt_southernTown"
+msgstr "Паўднёвы горад"
+
+msgid "29_el_hallouf/a_mt_valley"
+msgstr "Даліна"
+
+msgid "29_el_hallouf/a_mt_westernRidge"
+msgstr "Заходняя града"
+
+msgid "29_el_hallouf/b_ht_hill"
+msgstr "Пагорак"
+
+msgid "29_el_hallouf/b_ht_ludge"
+msgstr "Выступ"
+
+msgid "29_el_hallouf/b_ht_northernRidge"
+msgstr "Паўночная града"
+
+msgid "29_el_hallouf/b_ht_ruin"
+msgstr "Руіны"
+
+msgid "29_el_hallouf/b_ht_westernRidge"
+msgstr "Заходняя града"
+
+msgid "29_el_hallouf/b_mt_easternPlateau"
+msgstr "Усходняе плато"
+
+msgid "29_el_hallouf/b_mt_hairpinTurn"
+msgstr "Серпанцін"
+
+msgid "29_el_hallouf/b_mt_mountainRoade"
+msgstr "Горная дарога"
+
+msgid "29_el_hallouf/b_mt_northernTown"
+msgstr "Паўночны горад"
+
+msgid "29_el_hallouf/b_mt_shelf"
+msgstr "«Паліца»"
+
+msgid "29_el_hallouf/b_mt_valley"
+msgstr "Даліна"
+
+msgid "29_el_hallouf/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<a_ht_ruin>руіны</a_ht_ruin>.%(p)Рухаючыся да іх, можна заняць пазіцыю ля "
+"<a_ht_ludge>выступа</a_ht_ludge>, адкуль зручна абстрэльваць супраціўніка "
+"каля скал <a_ht_westernRidge>заходняй грады</a_ht_westernRidge> і каля "
+"<a_ht_ruin>руін</a_ht_ruin>. Знішчыўшы цэлі на гэтых пазіцыях, вы адкрыеце "
+"сабе шлях да флангу <a_ht_westernRidge>заходняй грады</a_ht_westernRidge>, з"
+" якога можна зачысціць тэхніку суперніка каля <a_ht_southernTown>паўднёвага "
+"горада</a_ht_southernTown>. Пад прыкрыццём скал ёсць шанец бяспечна дабрацца"
+" да базы. Гэта дасць магчымасць паразіць суперніка, што прыкрывае "
+"супрацьлеглы фланг, на <a_ht_hairpinTurn>серпанціне</a_ht_hairpinTurn>, а "
+"таксама тую тэхніку, якая адступіла да <a_ht_southernPlateau>паўднёвага "
+"плато</a_ht_southernPlateau>."
+
+msgid "29_el_hallouf/team1/heavyTank/title"
+msgstr "«Атака праз руіны»"
+
+msgid "29_el_hallouf/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_valley>даліна</a_mt_valley>.%(p)Раім рушыць па левым фланзе і заняць "
+"пазіцыі на <a_mt_easternPlateau>ўсходнім плато</a_mt_easternPlateau>, адкуль"
+" можна весці агонь па суперніку, што знаходзіцца ў "
+"<a_mt_valley>даліне</a_mt_valley>, на "
+"<a_mt_hairpinTurn>серпанціне</a_mt_hairpinTurn> і на "
+"<a_mt_southernPlateau>паўднёвым плато</a_mt_southernPlateau>. Далей магчыма "
+"з'ехаць у <a_mt_valley>даліну</a_mt_valley>, адкуль, выкарыстоўваючы рэльеф "
+"і камяні, ёсць шанцы бяспечна дабрацца да "
+"<a_mt_hairpinTurn>серпанціну</a_mt_hairpinTurn>. Узняўшыся па ім да базы "
+"суперніка, можна атакаваць цэлі ў <a_mt_southernTown>паўднёвым "
+"горадзе</a_mt_southernTown> і за скаламі <a_mt_westernRidge>заходняй "
+"грады</a_mt_westernRidge>. Пры гэтым варта асцерагацца суперніка на "
+"<a_mt_southernPlateau>паўднёвым плато</a_mt_southernPlateau>, бо ў канцы бою"
+" ён часта вяртаецца абараняць гэтыя пазіцыі."
+
+msgid "29_el_hallouf/team1/mediumTank/title"
+msgstr "«Атака праз даліну»"
+
+msgid "29_el_hallouf/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<b_ht_ruin>руіны</b_ht_ruin>.%(p)Рухаючыся па левым фланзе, займайце пазіцыю"
+" ля <b_ht_westernRidge>заходняй грады</b_ht_westernRidge>: гэта дазволіць "
+"перастрэльвацца з супернікам ля <b_ht_ludge>выступа</b_ht_ludge> і ля "
+"<b_ht_ruin>руін</b_ht_ruin>. Зачыстка гэтых пазіцый дасць магчымасць "
+"бестурботна працягнуць шлях да базы суперніка пад прыкрыццём "
+"<b_ht_northernRidge>паўночнай грады</b_ht_northernRidge>, пры гэтым на шляху"
+" варта звярнуць увагу на <b_ht_hill>пагорак</b_ht_hill>, на якім часта "
+"знаходзяцца лёгкія танкі суперніка. Далейшы шлях пад аховай скал дапаможа "
+"знішчыць рэшткі абаронцаў базы і ўдарыць у тыл супрацьлегламу флангу."
+
+msgid "29_el_hallouf/team2/heavyTank/title"
+msgstr "«Атака праз руіны»"
+
+msgid "29_el_hallouf/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_valley>даліна</b_mt_valley>.%(p)Рухаючыся па правым фланзе, можна "
+"заняць пазіцыю на <b_mt_hairpinTurn>серпанціне</b_mt_hairpinTurn>, адкуль "
+"зручна весці агонь па супраціўніку на <b_mt_easternPlateau>ўсходнім "
+"плато</b_mt_easternPlateau> і на <b_mt_shelf>«паліцы»</b_mt_shelf>, а "
+"таксама па цэлях, што не паспелі спусціцца ў "
+"<b_mt_valley>даліну</b_mt_valley>. Далей вы мусіце, выкарыстоўваючы хованкі "
+"ў <b_mt_valley>даліне</b_mt_valley>, праскочыць да "
+"<b_mt_mountainRoade>горнай дарогі</b_mt_mountainRoade>, яка дасць магчымасць"
+" падняцца на <b_mt_easternPlateau>ўсходняе плато</b_mt_easternPlateau>. "
+"Знішчыўшы праціўніка, які заставаўся на плато, можна бяспечна дабрацца да "
+"ягонай базы і нанесці ўдар у тыл супрацьлеглага фланга на пазіцыях непадалёк"
+" ад <b_mt_northernTown>паўночнага горада</b_mt_northernTown>."
+
+msgid "29_el_hallouf/team2/mediumTank/title"
+msgstr "«Атака праз даліну»"
+
+msgid "29_el_hallouf/upperName"
+msgstr "ЭЛЬ-ХАЛУФ"
+
+msgid "31_airfield/upperName"
+msgstr "АЭРАДРОМ"
+
+msgid "33_fjord/upperName"
+msgstr "ФІЁРДЫ"
+
+msgid "34_redshire/upperName"
+msgstr "РЭДШЫР"
+
+msgid "35_steppes/a_ht_balcony"
+msgstr "«Балкон»"
+
+msgid "35_steppes/a_ht_northernRidge"
+msgstr "Паўночная града"
+
+msgid "35_steppes/a_ht_rocks"
+msgstr "Скалы"
+
+msgid "35_steppes/a_ht_rw"
+msgstr "Чыгунка"
+
+msgid "35_steppes/a_ht_shelf"
+msgstr "«Паліца»"
+
+msgid "35_steppes/a_mt_hill"
+msgstr "Пагорак"
+
+msgid "35_steppes/a_mt_lowGround"
+msgstr "Нізіна"
+
+msgid "35_steppes/a_mt_northernBalcony"
+msgstr "Паўночны «балкон»"
+
+msgid "35_steppes/a_mt_pocket"
+msgstr "«Кішэнь»"
+
+msgid "35_steppes/a_mt_rw"
+msgstr "Чыгунка"
+
+msgid "35_steppes/a_mt_shelf"
+msgstr "«Паліца»"
+
+msgid "35_steppes/b_ht_balcony"
+msgstr "«Балкон»"
+
+msgid "35_steppes/b_ht_mountain"
+msgstr "Горка"
+
+msgid "35_steppes/b_ht_northernRidge"
+msgstr "Паўночная града"
+
+msgid "35_steppes/b_ht_rocks"
+msgstr "Скалы"
+
+msgid "35_steppes/b_mt_hill"
+msgstr "Пагорак"
+
+msgid "35_steppes/b_mt_lowGround"
+msgstr "Нізіна"
+
+msgid "35_steppes/b_mt_mountain"
+msgstr "Горка"
+
+msgid "35_steppes/b_mt_northernBalcony"
+msgstr "Паўночны «балкон»"
+
+msgid "35_steppes/b_mt_pocket"
+msgstr "«Кішэнь»"
+
+msgid "35_steppes/b_mt_southernShelf"
+msgstr "Паўднёвая «паліца»"
+
+msgid "35_steppes/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<a_ht_rocks>скалы</a_ht_rocks>.%(p)Рэкамендуем, рухаючыся па левым фланзе, "
+"заняць пазіцыю каля <a_ht_balcony>«балкона»</a_ht_balcony>, адкуль можна "
+"весці агонь па супраціўніку ў раёне <a_ht_northernRidge>паўночнай "
+"грады</a_ht_northernRidge>. Затым трэба рухацца да пазіцый у "
+"<a_ht_rocks>скалах</a_ht_rocks> і змагацца с супраціўнікам ужо там. Пры "
+"далейшым прарыве да <a_ht_northernRidge>паўночнай грады</a_ht_northernRidge>"
+" імаверна з'яўленне гасцей каля <a_ht_rw>чыгункі</a_ht_rw> і на "
+"<a_ht_shelf>«паліцы»</a_ht_shelf>. Шлях да базы больш бяспечна пракладаць за"
+" <a_ht_rw>чыгункай</a_ht_rw>, бо яна забяспечвае добрае укрыццё для стральбы"
+" па тыле супрацьлеглага фланга суперніка."
+
+msgid "35_steppes/team1/heavyTank/title"
+msgstr "«Атака праз скалы»"
+
+msgid "35_steppes/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_mt_lowGround>нізіна</a_mt_lowGround>.%(p)Калі вы рушыце па правым фланзе,"
+" раім вам як мага хутчэй схавацца за рэльефам каля "
+"<a_mt_hill>пагорка</a_mt_hill>, адкуль можна весці агонь па цэлях як у "
+"<a_mt_pocket>«кішэні»</a_mt_pocket>, так і на супрацьлеглым краю "
+"<a_mt_lowGround>нізіны</a_mt_lowGround>. Далейшы шлях варта пракладаць з "
+"заездам у <a_mt_pocket>«кішэнь»</a_mt_pocket>. Пасля прарыву да выезду з "
+"<a_mt_lowGround>нізіны</a_mt_lowGround> вас могуць сустрэць з паўночнага "
+"<a_mt_northernBalcony>«балкона»</a_mt_northernBalcony>, а таксама за "
+"рэльефам каля яго. У канцы бою з высокай верагоднасцю вам будуць пагражаць "
+"СТ-САУ, што стаяць на <a_mt_shelf>«паліцы»</a_mt_shelf>. Пасля зачысткі ўсіх"
+" пунктаў для атакі тылу другога фланга суперніка раім у якасці хованкі "
+"скарыстаць <a_mt_rw>чыгунку</a_mt_rw>."
+
+msgid "35_steppes/team1/mediumTank/title"
+msgstr "«Атака па нізіне»"
+
+msgid "35_steppes/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляюцца "
+"<b_ht_rocks>скалы</b_ht_rocks>.%(p)Для большай бяспекі раім рухацца бліжэй "
+"да <b_ht_northernRidge>паўночнай грады</b_ht_northernRidge>. Яна можа "
+"служыць хованкай пры перастрэлцы з супернікам. Пасля варта займаць "
+"<b_ht_rocks>скалы</b_ht_rocks> — гэта добрая пазіцыя для стральбы па "
+"<b_ht_balcony>«балконе»</b_ht_balcony> і яго наваколлі. Далей "
+"<b_ht_balcony>«балкон»</b_ht_balcony> можа служыць хованкай ад СТ-САУ "
+"суперніка, што знаходзяцца на <b_ht_mountain>ўзгорку</b_ht_mountain>. "
+"Апошнія этапы маршрута да базы раім пракладаць бліжэй да "
+"<b_ht_mountain>ўзгорка</b_ht_mountain>: адтуль пры неабходнасці можна весці "
+"агонь па тыле супрацьлеглага фланга суперніка з хованак."
+
+msgid "35_steppes/team2/heavyTank/title"
+msgstr "«Атака праз скалы»"
+
+msgid "35_steppes/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_mt_lowGround>нізіна</b_mt_lowGround>.%(p)На пачатку бою трэба заняць "
+"пазіцыю на <b_mt_northernBalcony>паўночным «балконе»</b_mt_northernBalcony>,"
+" адкуль можна страляць па разведчыках супраціўніка ў полі. Пасля раім заняць"
+" хованку на спуску ў <b_mt_lowGround>нізіну</b_mt_lowGround>: адсюль можна "
+"весці агонь па цэлях на іншым яе краі, а таксама па "
+"<b_mt_hill>пагорку</b_mt_hill>. Далейшы шлях варта пракладаць з заездам у "
+"<b_mt_pocket>«кішэнь»</b_mt_pocket>. На краі "
+"<b_mt_lowGround>нізіны</b_mt_lowGround> вам пагражаюць машыны на "
+"<b_mt_mountain>ўзгорку</b_mt_mountain>, таму пры выездзе трэба быць пільным."
+" Пасля зачысткі цэляў на ўзгорку займіце яго, прабраўшыся туды па краі мапы."
+" Адтуль можна атакаваць тылы абаронцаў супрацьлеглага фланга на "
+"<b_mt_southernShelf>паўднёвай «паліцы»</b_mt_southernShelf>."
+
+msgid "35_steppes/team2/mediumTank/title"
+msgstr "«Атака па нізіне»"
+
+msgid "35_steppes/upperName"
+msgstr "СТЭП"
+
+msgid "36_fishing_bay/upperName"
+msgstr "РЫБАЦКАЯ ЗАТОКА"
+
+msgid "37_caucasus/a_ht_bridge"
+msgstr "Мост"
+
+msgid "37_caucasus/a_ht_bridgePhrase"
+msgstr "моста"
+
+msgid "37_caucasus/a_ht_glacier"
+msgstr "Ледавік"
+
+msgid "37_caucasus/a_ht_glacierPhrase1"
+msgstr "ледавік"
+
+msgid "37_caucasus/a_ht_glacierPhrase2"
+msgstr "ледавіка"
+
+msgid "37_caucasus/a_ht_plateauSouth"
+msgstr "Плато на поўдні"
+
+msgid "37_caucasus/a_ht_plateauSouthPhrase"
+msgstr "плато на поўдні"
+
+msgid "37_caucasus/a_ht_ravine"
+msgstr "Роў"
+
+msgid "37_caucasus/a_ht_ravinePhrase"
+msgstr "рова"
+
+msgid "37_caucasus/a_ht_waterfall"
+msgstr "Вадаспад"
+
+msgid "37_caucasus/a_ht_waterfallPhrase"
+msgstr "вадаспад"
+
+msgid "37_caucasus/a_mt_balcony"
+msgstr "Балкон"
+
+msgid "37_caucasus/a_mt_balconyPhrase"
+msgstr "балкон"
+
+msgid "37_caucasus/a_mt_gorge"
+msgstr "Цясніна"
+
+msgid "37_caucasus/a_mt_gorgePhrase1"
+msgstr "цясніна"
+
+msgid "37_caucasus/a_mt_gorgePhrase2"
+msgstr "цясніне"
+
+msgid "37_caucasus/a_mt_ravine"
+msgstr "Роў"
+
+msgid "37_caucasus/a_mt_ravinePhrase"
+msgstr "рова"
+
+msgid "37_caucasus/a_mt_ruins"
+msgstr "Руіны"
+
+msgid "37_caucasus/a_mt_ruinsPhrase"
+msgstr "руін"
+
+msgid "37_caucasus/a_mt_smallLedge"
+msgstr "Малы выступ"
+
+msgid "37_caucasus/a_mt_smallLedgePhrase"
+msgstr "малым выступе"
+
+msgid "37_caucasus/b_ht_balcony"
+msgstr "Балкон"
+
+msgid "37_caucasus/b_ht_balconyPhrase"
+msgstr "балконе"
+
+msgid "37_caucasus/b_ht_bridge"
+msgstr "Мост"
+
+msgid "37_caucasus/b_ht_bridgePhrase"
+msgstr "моста"
+
+msgid "37_caucasus/b_ht_glacier"
+msgstr "Ледавік"
+
+msgid "37_caucasus/b_ht_glacierPhrase"
+msgstr "ледавіка"
+
+msgid "37_caucasus/b_ht_plateauNorth"
+msgstr "Плато на поўначы"
+
+msgid "37_caucasus/b_ht_plateauNorthPhrase"
+msgstr "плато на поўначы"
+
+msgid "37_caucasus/b_ht_ravine"
+msgstr "Роў"
+
+msgid "37_caucasus/b_ht_ravinePhrase"
+msgstr "рова"
+
+msgid "37_caucasus/b_ht_waterfall"
+msgstr "Вадаспад"
+
+msgid "37_caucasus/b_ht_waterfallPhrase1"
+msgstr "вадаспаду"
+
+msgid "37_caucasus/b_ht_waterfallPhrase2"
+msgstr "вадаспад"
+
+msgid "37_caucasus/b_mt_balcony"
+msgstr "Балкон"
+
+msgid "37_caucasus/b_mt_balconyPhrase"
+msgstr "балконе"
+
+msgid "37_caucasus/b_mt_glacier"
+msgstr "Ледавік"
+
+msgid "37_caucasus/b_mt_glacierPhrase"
+msgstr "ледавіка"
+
+msgid "37_caucasus/b_mt_gorge"
+msgstr "Цясніне"
+
+msgid "37_caucasus/b_mt_gorgePhrase1"
+msgstr "цясніна"
+
+msgid "37_caucasus/b_mt_gorgePhrase2"
+msgstr "цясніне"
+
+msgid "37_caucasus/b_mt_ravine"
+msgstr "Роў"
+
+msgid "37_caucasus/b_mt_ravinePhrase"
+msgstr "рова"
+
+msgid "37_caucasus/b_mt_smallLedge"
+msgstr "Малы выступ"
+
+msgid "37_caucasus/b_mt_smallLedgePhrase"
+msgstr "малога выступу"
+
+msgid "37_caucasus/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца прарыў праз "
+"%(a_ht_glacierPhrase1).%(p)Прарываючы пазіцыі праціўніка ўздоўж "
+"%(a_ht_glacierPhrase2), варта быць напагатове, бо вялікі шанец наткнуцца на "
+"засаду каля %(a_ht_bridgePhrase). Пераадолеўшы гэту мясцовасць, абмінаючы "
+"%(a_ht_waterfallPhrase), можна заехаць на базу праціўніка. Знішчыўшы там "
+"усіх абаронцаў, трэба заняць зручную агнявую пазіцыю на "
+"%(a_ht_plateauSouthPhrase). З гэтай пазіцыі можна эфектыўна абстрэльваць "
+"пазіцыі праціўніка каля %(a_ht_ravinePhrase), а таксама кантраляваць машыны,"
+" якія вяртаюцца на збіццё захопу сваёй базы."
+
+msgid "37_caucasus/team1/heavyTank/title"
+msgstr "«Атака праз ледавік»"
+
+msgid "37_caucasus/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(a_mt_gorgePhrase1).%(p)Заняўшы "
+"агнявую пазіцыю каля %(a_mt_ravinePhrase), рэкамендуецца знішчыць "
+"праціўніка, размешчанага ў ім, а таксама з процілеглага боку. Затым можна "
+"перамясціцца ў %(a_mt_gorgePhrase2), дзе адбываецца асноўнае сутыкненне з "
+"праціўнікам. Таксама трэба заняць пазіцыю на %(a_mt_smallLedgePhrase); гэта "
+"дазваляе бяспечна весці стральбу па пазіцыях праціўніка. Трэба зачысціць "
+"%(a_mt_balconyPhrase), на якім могуць размяшчацца абаронцы, што дасць "
+"кантроль над ровам, а таксама знішчыць рэшту машын ля %(a_mt_ruinsPhrase)."
+
+msgid "37_caucasus/team1/mediumTank/title"
+msgstr "«Атака праз цясніну»"
+
+msgid "37_caucasus/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца прарыў у бок "
+"%(b_ht_glacierPhrase).%(p)Прарываючы пазіцыі праціўніка ўздоўж "
+"%(b_ht_waterfallPhrase1), варта быць напагатове, бо ёсць рызыка напароцца на"
+" засаду каля %(b_ht_bridgePhrase). Пераадолеўшы гэтую мясцовасць, абмінаючы "
+"%(b_ht_waterfallPhrase2), можна заехаць на базу праціўніка. Знішчыўшы там "
+"усю тэхніку праціўніка, трэба заняць пазіцыі для стральбы на "
+"%(b_ht_plateauNorthPhrase). З гэтага пункта можна эфектыўна весці агонь па "
+"праціўніку каля %(b_ht_ravinePhrase). Будзьце ўважлівымі: рэшткі сіл "
+"праціўніка могуць займаць пазіцыю на %(b_ht_balconyPhrase)."
+
+msgid "37_caucasus/team2/heavyTank/title"
+msgstr "«Атака праз вадаспад»"
+
+msgid "37_caucasus/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(b_mt_gorgePhrase1).%(p)Пасля "
+"знішчэння праціўніка з процілеглага боку %(b_mt_ravinePhrase) рэкамендуецца "
+"перамясціцца на агнявую пазіцыю на %(b_mt_balconyPhrase), якая дазволіць "
+"цалкам зачысціць зону ад тэхнікі праціўніка. Затым можна прасунуцца на "
+"асноўным фронт атакі ў %(b_mt_gorgePhrase2), заязджаючы з левага боку ад "
+"%(b_mt_smallLedgePhrase). Выціснуўшы праціўніка з гэтага напрамку, можна "
+"зайсці да яго з тылу каля верхняй базы і %(b_mt_glacierPhrase)."
+
+msgid "37_caucasus/team2/mediumTank/title"
+msgstr "«Атака праз цясніну»"
+
+msgid "37_caucasus/upperName"
+msgstr "ПЕРАВАЛ"
+
+msgid "38_mannerheim_line/a_ht_climb"
+msgstr "Пад'ём"
+
+msgid "38_mannerheim_line/a_ht_forest"
+msgstr "Лес"
+
+msgid "38_mannerheim_line/a_ht_shore"
+msgstr "Бераг"
+
+msgid "38_mannerheim_line/a_ht_southernBunker"
+msgstr "Паўднёвы бункер"
+
+msgid "38_mannerheim_line/a_ht_southmountain"
+msgstr "Паўднёвая гара"
+
+msgid "38_mannerheim_line/a_ht_westernshelf"
+msgstr "Заходні «балкон»"
+
+msgid "38_mannerheim_line/a_mt_eastRoad"
+msgstr "Заходняя дарога"
+
+msgid "38_mannerheim_line/a_mt_northernBunker"
+msgstr "Паўночны бункер"
+
+msgid "38_mannerheim_line/a_mt_ravine"
+msgstr "Роў"
+
+msgid "38_mannerheim_line/a_mt_rock"
+msgstr "Скала"
+
+msgid "38_mannerheim_line/a_mt_westernshelf"
+msgstr "Заходні «балкон»"
+
+msgid "38_mannerheim_line/b_ht_climb"
+msgstr "Пад'ём"
+
+msgid "38_mannerheim_line/b_ht_easternbunker"
+msgstr "Усходні бункер"
+
+msgid "38_mannerheim_line/b_ht_easternshelf"
+msgstr "Усходняя «паліца»"
+
+msgid "38_mannerheim_line/b_ht_lowland"
+msgstr "Нізіна"
+
+msgid "38_mannerheim_line/b_ht_road"
+msgstr "Дарога"
+
+msgid "38_mannerheim_line/b_ht_shore"
+msgstr "Бераг"
+
+msgid "38_mannerheim_line/b_ht_southernBunker"
+msgstr "Паўднёвы бункер"
+
+msgid "38_mannerheim_line/b_mt_eastRoad"
+msgstr "Заходняя дарога"
+
+msgid "38_mannerheim_line/b_mt_easternbunker"
+msgstr "Усходні бункер"
+
+msgid "38_mannerheim_line/b_mt_fortificationLine"
+msgstr "Лінія ўмацаванняў"
+
+msgid "38_mannerheim_line/b_mt_northernBunker"
+msgstr "Паўночны бункер"
+
+msgid "38_mannerheim_line/b_mt_rock"
+msgstr "Скала"
+
+msgid "38_mannerheim_line/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<a_ht_shore>бераг</a_ht_shore>.%(p)Рухаючыся да левага флангу, можна заняць "
+"пазіцыі ўнізе <a_ht_climb>пад'ёму</a_ht_climb> і ля каменя. З іх можна весці"
+" агонь па праціўніку як паблізу, так і воддаль ля "
+"<a_ht_southmountain>паўднёвай гары</a_ht_southmountain>. Затым спускайцеся "
+"бліжэй да <a_ht_shore>берага</a_ht_shore> і, хаваючыся за няроўнасцямі "
+"рэльефу, паразіце праціўніка каля <a_ht_southernBunker>паўднёвага "
+"бункера</a_ht_southernBunker> і на <a_ht_westernshelf>заходнім "
+"«балконе»</a_ht_westernshelf>. Далей рушце да <a_ht_southmountain>паўднёвай "
+"гары</a_ht_southmountain>, трымаючыся бліжэй да вады і хаваючыся за "
+"няроўнасцямі рэльефу ад астатніх абаронцаў базы. Пасля іх вынішчэння можна "
+"будзе атакаваць супрацьлеглы фланг праціўніка. Памятайце пра пагрозу з "
+"<a_ht_forest>лесу</a_ht_forest>: напрыканцы бою там часта стаяць САУ."
+
+msgid "38_mannerheim_line/team1/heavyTank/title"
+msgstr "«Атака праз бераг»"
+
+msgid "38_mannerheim_line/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <a_mt_northernBunker>паўночны "
+"бункер</a_mt_northernBunker>.%(p)Калі рушыце па правым фланзе, раім заняць "
+"пазіцыю ў раёне <a_mt_northernBunker>паўночнага "
+"бункера</a_mt_northernBunker>: адтуль можна весці агонь па супраціўніку ля "
+"<a_mt_rock>скалы</a_mt_rock>, а таксама па СТ-САУ на "
+"<a_mt_westernshelf>заходнім «балконе»</a_mt_westernshelf>. Потым трэба "
+"высунуцца і прыціснуцца да <a_mt_rock>скалы</a_mt_rock>. Знішчыўшы "
+"супернікаў, што знаходзяцца паблізу і на <a_mt_eastRoad>заходняй "
+"дарозе</a_mt_eastRoad>, вы атрымаеце шанец бяспечна скаціцца ў "
+"<a_mt_ravine>роў</a_mt_ravine>. З <a_mt_ravine>рова</a_mt_ravine>, "
+"выкарыстоўваючы рэльеф, можна як весці бой з машынамі, што засталіся ля "
+"базы, так і нанесці ўдар у тыл супрацьлеглага фланга суперніка."
+
+msgid "38_mannerheim_line/team1/mediumTank/title"
+msgstr "«Атака праз паўночны бункер»"
+
+msgid "38_mannerheim_line/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца "
+"<b_ht_shore>бераг</b_ht_shore>.%(p)Калі рушыце па правым фланзе, раім заняць"
+" пазіцыю ля <b_ht_southernBunker>паўднёвага бункера</b_ht_southernBunker>, "
+"адкуль можна страляць як па машынах супраціўніка, што паспелі прарвацца на "
+"<b_ht_shore>бераг</b_ht_shore>, так і па цэлях на "
+"<b_ht_road>дарозе</b_ht_road>. Спусціўшыся да "
+"<b_ht_shore>берага</b_ht_shore>, можна знішчыць суперніка за няроўнасцямі "
+"рэльефу і бяспечна пераадолець <b_ht_climb>пад'ём</b_ht_climb>. Адкрыты "
+"ўчастак ля паўночнай базы добра прастрэльваецца, таму шлях да базы варта "
+"пракладаць па <b_ht_lowland>нізіне</b_ht_lowland>. Пры гэтым сцеражыцеся "
+"абаронцаў, што застаюцца на <b_ht_easternshelf>ўсходняй "
+"«паліцы»</b_ht_easternshelf> і каля <b_ht_easternbunker>ўсходняга "
+"бункера</b_ht_easternbunker>. Зачыстка гэтых пазіцый дае магчымасць для "
+"атакі ў тыл супрацьлеглага фланга."
+
+msgid "38_mannerheim_line/team2/heavyTank/title"
+msgstr "«Атака праз бераг»"
+
+msgid "38_mannerheim_line/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца <b_mt_northernBunker>паўночны "
+"бункер</b_mt_northernBunker>.%(p)Рухаючыся па <b_mt_eastRoad>заходняй "
+"дарозе</b_mt_eastRoad>, можна заняць пазіцыю ля "
+"<b_mt_rock>скалы</b_mt_rock>, адкуль зручна абстрэльваць суперніка як за "
+"самой скалой, так і ля <b_mt_northernBunker>паўночнага "
+"бункера</b_mt_northernBunker>. Пасля гэтага раім праехаць да самога "
+"<b_mt_northernBunker>бункера</b_mt_northernBunker> і з гэтай пазіцыі "
+"знішчыць варожыя цэлі непасрэдна каля его, а таксама каля "
+"<b_mt_fortificationLine>лініі ўмацаванняў</b_mt_fortificationLine>. Далей "
+"трэба рушыць да нізіны, у бок <b_mt_fortificationLine>лініі "
+"ўмацаванняў</b_mt_fortificationLine>, адкуль адкрываецца магчымасць паразіць"
+" суперніка, што знаходзіцца ля <b_mt_easternbunker>ўсходняга "
+"бункера</b_mt_easternbunker>. Тады будзе магчыма атакаваць тыл "
+"супрацьлеглага варожага фланга."
+
+msgid "38_mannerheim_line/team2/mediumTank/title"
+msgstr "«Атака праз паўночны бункер»"
+
+msgid "38_mannerheim_line/upperName"
+msgstr "ЛІНІЯ МАНЭРГЕЙМА"
+
+msgid "44_north_america/upperName"
+msgstr "ДУБРОВА"
+
+msgid "45_north_america/upperName"
+msgstr "ХУТКАСНАЯ ШАША"
+
+msgid "47_canada_a/upperName"
+msgstr "ЦІХІ БЕРАГ"
+
+msgid "59_asia_great_wall/upperName"
+msgstr "МЯЖА ІМПЕРЫІ"
+
+msgid "60_asia_miao/upperName"
+msgstr "ЖАМЧУЖНАЯ РАКА"
+
+msgid "63_tundra/upperName"
+msgstr "ТУНДРА"
+
+msgid "83_kharkiv/a_ht_boulevard"
+msgstr "Бульвар"
+
+msgid "83_kharkiv/a_ht_boulevardPhrase"
+msgstr "бульвар"
+
+msgid "83_kharkiv/a_ht_city"
+msgstr "Горад"
+
+msgid "83_kharkiv/a_ht_cityPhrase1"
+msgstr "горад"
+
+msgid "83_kharkiv/a_ht_cityPhrase2"
+msgstr "горад"
+
+msgid "83_kharkiv/a_ht_cityPhrase3"
+msgstr "горадзе"
+
+msgid "83_kharkiv/a_ht_khrushchevNorth"
+msgstr "Дамы на поўначы"
+
+msgid "83_kharkiv/a_ht_khrushchevNorthPhrase"
+msgstr "дамоў на поўначы"
+
+msgid "83_kharkiv/a_ht_loopholes"
+msgstr "Байніцы"
+
+msgid "83_kharkiv/a_ht_loopholesPhrase"
+msgstr "байніцах"
+
+msgid "83_kharkiv/a_ht_southernEmbankment"
+msgstr "Насып"
+
+msgid "83_kharkiv/a_ht_southernEmbankmentPhrase"
+msgstr "насыпу"
+
+msgid "83_kharkiv/a_mt_administrationBuilding"
+msgstr "Адміністрацыя"
+
+msgid "83_kharkiv/a_mt_administrationBuildingPhrase"
+msgstr "адміністрацыі"
+
+msgid "83_kharkiv/a_mt_hill"
+msgstr "Пагорак"
+
+msgid "83_kharkiv/a_mt_hillPhrase1"
+msgstr "пагорак"
+
+msgid "83_kharkiv/a_mt_hillPhrase2"
+msgstr "пагорку"
+
+msgid "83_kharkiv/a_mt_hillPhrase3"
+msgstr "пагорка"
+
+msgid "83_kharkiv/a_mt_northernRuins"
+msgstr "Паўночныя руіны"
+
+msgid "83_kharkiv/a_mt_northernRuinsPhrase"
+msgstr "паўночных руін"
+
+msgid "83_kharkiv/a_mt_northernSuburb"
+msgstr "Паўночны прыгарад"
+
+msgid "83_kharkiv/a_mt_northernSuburbPhrase"
+msgstr "паўночны прыгарад"
+
+msgid "83_kharkiv/a_mt_southernRuins"
+msgstr "Паўднёвыя руіны"
+
+msgid "83_kharkiv/a_mt_southernRuinsPhrase"
+msgstr "паўднёвых руін"
+
+msgid "83_kharkiv/b_ht_area"
+msgstr "Плошча"
+
+msgid "83_kharkiv/b_ht_areaPhrase1"
+msgstr "плошча"
+
+msgid "83_kharkiv/b_ht_areaPhrase2"
+msgstr "плошчы"
+
+msgid "83_kharkiv/b_ht_avenue"
+msgstr "Праспект"
+
+msgid "83_kharkiv/b_ht_avenuePhrase"
+msgstr "праспект"
+
+msgid "83_kharkiv/b_ht_boulevard"
+msgstr "Бульвар"
+
+msgid "83_kharkiv/b_ht_boulevardPhrase"
+msgstr "бульвара"
+
+msgid "83_kharkiv/b_ht_courtyardNorth"
+msgstr "Двор на поўдні"
+
+msgid "83_kharkiv/b_ht_courtyardNorthPhrase"
+msgstr "двары на поўдні"
+
+msgid "83_kharkiv/b_ht_southernEmbankment"
+msgstr "Насып"
+
+msgid "83_kharkiv/b_ht_southernEmbankmentPhrase"
+msgstr "насыпу"
+
+msgid "83_kharkiv/b_mt_hill"
+msgstr "Пагорак"
+
+msgid "83_kharkiv/b_mt_hillPhrase1"
+msgstr "пагорак"
+
+msgid "83_kharkiv/b_mt_hillPhrase2"
+msgstr "пагорку"
+
+msgid "83_kharkiv/b_mt_hillPhrase3"
+msgstr "пагорка"
+
+msgid "83_kharkiv/b_mt_northernRuins"
+msgstr "Паўночныя руіны"
+
+msgid "83_kharkiv/b_mt_northernRuinsPhrase"
+msgstr "паўночных руін"
+
+msgid "83_kharkiv/b_mt_ruinsAvenue"
+msgstr "Руіны ля праспекта"
+
+msgid "83_kharkiv/b_mt_ruinsAvenuePhrase"
+msgstr "руінах ля праспекта"
+
+msgid "83_kharkiv/b_mt_southernRuins"
+msgstr "Паўднёвыя руіны"
+
+msgid "83_kharkiv/b_mt_southernRuinsPhrase"
+msgstr "паўднёвых руін"
+
+msgid "83_kharkiv/b_mt_southernSuburb"
+msgstr "Паўднёвы прыгарад"
+
+msgid "83_kharkiv/b_mt_southernSuburbPhrase"
+msgstr "паўднёвы прыгарад"
+
+msgid "83_kharkiv/team1/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(a_ht_cityPhrase1).%(p)Рухаючыся "
+"па вуліцы ў %(a_ht_cityPhrase2), можна заняць выгадную пазіцыю ў "
+"%(a_ht_loopholesPhrase). Пераехаўшы на пазіцыю ля "
+"%(a_ht_southernEmbankmentPhrase), можна паразіць праціўніка з процілеглага "
+"боку — гэта адкрые шлях да яго тылавых пазіцый у %(a_ht_cityPhrase3). "
+"Павярнуўшы направа, можна выехаць на %(a_ht_boulevardPhrase), адкуль пад "
+"прыкрыццём %(a_ht_khrushchevNorthPhrase) можна выйсці за спіну праціўніка."
+
+msgid "83_kharkiv/team1/heavyTank/title"
+msgstr "«Атака праз горад»"
+
+msgid "83_kharkiv/team1/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(a_mt_hillPhrase1).%(p)Рухаючыся "
+"па левым флангу, можна заняць пазіцыю ля %(a_mt_southernRuinsPhrase) і "
+"абстраляць праціўніка на %(a_mt_hillPhrase2). Пасля знішчэння праціўніка "
+"добрым ходам можа стаць заняцце %(a_mt_hillPhrase3) і зачыстка "
+"%(a_mt_northernRuinsPhrase), адкуль ёсць цудоўны выхад на "
+"%(a_mt_northernSuburbPhrase) Пасля гэтага можна падтрымаць хаўруснікаў у "
+"горадзе, паразіўшы праціўніка ля %(a_mt_administrationBuildingPhrase) з "
+"тылу."
+
+msgid "83_kharkiv/team1/mediumTank/title"
+msgstr "«Атака праз пагорак»"
+
+msgid "83_kharkiv/team2/heavyTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(b_ht_areaPhrase1).%(p)Рухаючыся "
+"па вуліцы да %(b_ht_boulevardPhrase), на вуглу можна паразіць машыны "
+"праціўніка, якія займаюць пазіцыі. Пасля іх знішчэння з'яўляецца магчымасць "
+"бяспечна пераехаць пад насып ля %(b_ht_areaPhrase2). Абясшкодзіўшы "
+"праціўніка ля процілеглага насыпу, адкрываецца магчымасць прарваць яго фланг"
+" праз %(b_ht_avenuePhrase). З гэтай пазіцыі можна заспець праціўніка "
+"знянацку каля %(b_ht_southernEmbankmentPhrase) і, бяспечна пераехаўшы па "
+"%(b_ht_courtyardNorthPhrase), знішчыць сілы варожых абаронцаў."
+
+msgid "83_kharkiv/team2/heavyTank/title"
+msgstr "«Атака праз плошчу»"
+
+msgid "83_kharkiv/team2/mediumTank/descr"
+msgstr ""
+"Ключавым пунктам гэтай тактыкі з'яўляецца %(b_mt_hillPhrase1).%(p)Рухаючыся "
+"па левым флангу, можна заняць пазіцыю ля %(b_mt_northernRuinsPhrase) і "
+"абстраляць праціўніка на %(b_mt_hillPhrase2). Пасля знішчэння яго сіл добрай"
+" ідэяй будзе заняцце %(b_mt_hillPhrase3) і зачыстка "
+"%(b_mt_southernRuinsPhrase), адкуль ёсць зручны выхад на "
+"%(b_mt_southernSuburbPhrase). Пасля гэтага можна падтрымаць хаўруснікаў у "
+"горадзе, паразіўшы праціўніка ў %(b_mt_ruinsAvenuePhrase)."
+
+msgid "83_kharkiv/team2/mediumTank/title"
+msgstr "«Атака праз пагорак»"
+
+msgid "83_kharkiv/upperName"
+msgstr "ХАРКАЎ"
+
+msgid "90_minsk/upperName"
+msgstr "МІНСК"
+
+msgid "95_lost_city_ctf/upperName"
+msgstr "ЗАКІНУТЫ ГОРАД"
+
+msgid "99_poland/upperName"
+msgstr "СТУДЗЯНКІ"
+
+msgid "arena_start_errors/prb/kick/timeout"
+msgstr ""
+"Час чакання бою скончыўся, паспрабуйце змяніць сервер або зайсці пазней."
+
+msgid "baseNum"
+msgstr "База&nbsp;{base}"
+
+msgid "battle/goals"
+msgstr "Засталося знішчыць:"
+
+msgid "botName"
+msgstr "Танк-мішэнь"
+
+msgid "botVehicleType/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "botVehicleType/SPG"
+msgstr "САУ"
+
+msgid "botVehicleType/heavyTank"
+msgstr "Цяжкі танк"
+
+msgid "botVehicleType/lightTank"
+msgstr "Лёгкі танк"
+
+msgid "botVehicleType/mediumTank"
+msgstr "Сярэдні танк"
+
+msgid "descriptionInfo"
+msgstr "Апісанне мапы"
+
+msgid "finalBattleScreen/lose"
+msgstr "МАШЫНА ЗНІШЧАНА"
+
+msgid "finalBattleScreen/tie"
+msgstr "ЧАС СКОНЧЫЎСЯ"
+
+msgid "finalBattleScreen/win"
+msgstr "ЗАДАЧА ВЫКАНАНА"
+
+msgid "helpScreen/hint/description"
+msgstr "для прагляду падказак рэжыму"
+
+msgid "helpScreen/hint/press"
+msgstr "Націсніце"
+
+msgid "hints/findPlaceOnShootingPoint"
+msgstr "Займіце пазіцыю на агнявым рубяжы"
+
+msgid "hints/killEnemies"
+msgstr "Знішчана прыярытэтных мішэняў: {count} / {total}"
+
+msgid "hints/moveToWaypoint"
+msgstr "Рухайцеся да маркера"
+
+msgid "hints/shootingPlaceCompleted"
+msgstr "Агнявы рубеж пройдзены"
+
+msgid "hints/shootingPlaceCompletedText"
+msgstr "+{minutes}:{seconds} дададзена"
+
+msgid "hints/twoMinutesLeft"
+msgstr "Засталося {minutes}:{seconds}"
+
+msgid "loadingScreen/1/description"
+msgstr "Перамяшчаючыся па пунктах, дабярыцеся да агнявога рубяжа."
+
+msgid "loadingScreen/1/title"
+msgstr "Маркеры цэляў"
+
+msgid "loadingScreen/2/description"
+msgstr ""
+"Праціўнік, у полі агляду якога вы знаходзіцеся, пазначаны на міні-карце "
+"адмысловым значком."
+
+msgid "loadingScreen/2/title"
+msgstr "Выяўленне"
+
+msgid "loadingScreen/3/description"
+msgstr ""
+"Для паспяховага праходжання трэба знішчыць пэўную колькасць пазначаных "
+"маркерам мішэняў."
+
+msgid "loadingScreen/3/title"
+msgstr "Прыярытэтныя цэлі"
+
+msgid "loadingScreen/4/description"
+msgstr ""
+"Знішчэнне цэляў на агнявым рубяжы дае дадатковы час і спрыяе выкананню "
+"асноўнай задачы."
+
+msgid "loadingScreen/4/title"
+msgstr "Агнявы рубеж"
+
+msgid "manualPage/button"
+msgstr "Да вывучэння мап"
+
+msgid "mapSelection/MapCard/completed"
+msgstr "Выканана"
+
+msgid "mapSelection/MapListEmpty/text"
+msgstr ""
+"На запыт «{searchTxt}» нічога не знойдзена. Спрабуйце змяніць уводныя."
+
+msgid "mapSelection/MapListEmpty/title"
+msgstr "Няма супадзенняў"
+
+msgid "mapSelection/TextButton/info"
+msgstr "АПІСАННЕ РЭЖЫМУ"
+
+msgid "mapSelection/closeBtn"
+msgstr "ПАКІНУЦЬ РЭЖЫМ"
+
+msgid "mapSelection/filters/tip1"
+msgstr "Паказваць/схаваць мапы з пройдзенымі сцэнарыямі."
+
+msgid "mapSelection/filters/tip2"
+msgstr "Пошук паводле назвы"
+
+msgid "mapSelection/groupTitle/0"
+msgstr "Базавыя сцэнарыі"
+
+msgid "mapSelection/groupTitle/1"
+msgstr "Прасунутыя сцэнарыі"
+
+msgid "mapSelection/groupTitle/2"
+msgstr "Сцэнарыі недаступныя"
+
+msgid "mapSelection/options/backGoto"
+msgstr "ДА ВЫБАРУ МАПАЎ"
+
+msgid "mapSelection/options/mapTooltipTitle"
+msgstr "Падрабязна пра мапу"
+
+msgid "mapSelection/options/minimapBase"
+msgstr "База"
+
+msgid "mapSelection/options/rewardsTitle"
+msgstr "Узнагарода за ўсе сцэнарыі:"
+
+msgid "mapSelection/options/scenarioCompleted"
+msgstr "Выканана"
+
+msgid "mapSelection/options/scenariosTitle"
+msgstr "Выберыце сцэнарый:"
+
+msgid "mapSelection/statusTitle/status"
+msgstr "Сачыце за навінамі на сайце гульні."
+
+msgid "mapSelection/statusTitle/tips/body"
+msgstr "Новыя мапы ў распрацоўцы і хутка стануць даступнымі."
+
+msgid "mapSelection/statusTitle/tips/header"
+msgstr "Сцэнарыі недаступныя"
+
+msgid "mapSelection/subtitle"
+msgstr "Вывучайце мапы, ключавыя пазіцыі і аб'екты, раз'езды і тактыкі."
+
+msgid "mapSelection/title"
+msgstr "Тапаграфія"
+
+msgid "notification/title/lose"
+msgstr "Не выканана"
+
+msgid "notification/title/win"
+msgstr "Выканана"
+
+msgid "prebattle/scenario"
+msgstr "%(map)s, %(scenario)s: %(vehicleType)s"
+
+msgid "prebattle/targets"
+msgstr "Знішчыце %(count)s мішэняў"
+
+msgid "queue/delayTime"
+msgstr "*Рэжым карыстаецца папулярнасцю, чакайце"
+
+msgid "queue/longTime"
+msgstr "*Чаканне зацягнулася, вы можаце паспрабаваць пазней"
+
+msgid "queue/quitButton"
+msgstr "Выйсці з бою"
+
+msgid "queue/time"
+msgstr "Час чакання: %(time)"
+
+msgid "queue/tip/1"
+msgstr "Разуменне мап дасць вам дадатковую перавагу ў баі."
+
+msgid "queue/tip/10"
+msgstr "Вучыцеся скрытна перамяшчацца, каб не трапляць пад агонь праціўніка."
+
+msgid "queue/tip/11"
+msgstr "Выкарыстоўвайце аб'екты (камяні, дамы) на мапе для абароны."
+
+msgid "queue/tip/12"
+msgstr "Браніраваная тэхніка: часам можна даверыцца брані."
+
+msgid "queue/tip/13"
+msgstr "Дынамічная тэхніка: манеўр — галоўная зброя."
+
+msgid "queue/tip/14"
+msgstr ""
+"Не падстаўляйцеся пад агонь праціўніка, не стойце на месцы, не "
+"затрымлівайцеся на ўчастках мапы, якія прастрэльваюцца."
+
+msgid "queue/tip/15"
+msgstr "Падчас перанабівання хавайцеся ва ўкрыцці, не падстаўляйцеся."
+
+msgid "queue/tip/16"
+msgstr "Правакуйце праціўніка на стрэл, каб падлавіць яго на перанабіванні."
+
+msgid "queue/tip/17"
+msgstr ""
+"Для перамогі трэба прайсці адзін з магчымых маршрутаў на мапе, праламаць "
+"абарону і паразіць цэлі."
+
+msgid "queue/tip/18"
+msgstr ""
+"Тапаграфія пакажа рэкамендаваныя маршруты, некаторыя магчымыя развіцці "
+"падзей у баі, а таксама папулярныя напрамкі руху для сярэдніх і цяжкіх "
+"танкаў."
+
+msgid "queue/tip/19"
+msgstr ""
+"Час абмежаваны. Паспяховае праходжанне агнявых рубяжоў дае дадатковы час."
+
+msgid "queue/tip/2"
+msgstr ""
+"Тапаграфія — гэта вывучэнне мап у спакойнай абстаноўцы ў адзіночным рэжыме "
+"без уплыву на статыстыку."
+
+msgid "queue/tip/20"
+msgstr ""
+"Развіццё рэальнага бою залежыць ад многіх фактараў. Сачыце, куды едуць вашы "
+"хаўруснікі, улічвайце асаблівасці ўласнай машыны."
+
+msgid "queue/tip/21"
+msgstr ""
+"На гэтым палігоне супраціў не будзе жорсткі, але ў рэальным баі заўжды трэба"
+" быць напагатове, ведаць асаблівасці мапы і ТТХ праціўніка."
+
+msgid "queue/tip/3"
+msgstr "Вывучайце папулярныя раз'езды, рухайцеся па кантрольных пунктах."
+
+msgid "queue/tip/4"
+msgstr ""
+"Запамінайце тыповыя пазіцыі праціўніка, каб выкарыстаць гэтыя веды ў баі."
+
+msgid "queue/tip/5"
+msgstr ""
+"Эфектыўнае выкарыстанне рэльефу дазволіць прычыняць пашкоджанні і не "
+"атрымліваць адказу."
+
+msgid "queue/tip/6"
+msgstr ""
+"Мішэні размешчаны на пазіцыях, якія найбольш часта выкарыстоўваюцца ў "
+"Звычайным баі."
+
+msgid "queue/tip/7"
+msgstr "Вучыцеся прабіваць праціўніка, прыкмячаючы яго ўразлівыя месцы."
+
+msgid "queue/tip/8"
+msgstr ""
+"Агнявыя рубяжы — пазіцыі з укрыццямі, адкуль зручна весці назіранне або "
+"стральбу."
+
+msgid "queue/tip/9"
+msgstr ""
+"Каб атрымаць дадатковы час, дабярыцеся да агнявога рубяжа і выканайце "
+"пастаўленую задачу."
+
+msgid "queue/titleTips"
+msgstr "Карысныя парады"
+
+msgid "result/allRewardGot"
+msgstr "Узнагарода ўжо была атрымана"
+
+msgid "result/kills"
+msgstr "Знішчана"
+
+msgid "result/mapName"
+msgstr "{map}, {scenario}: {type}"
+
+msgid "result/rewardGot"
+msgstr "Узнагарода была атрымана"
+
+msgid "result/rewardNotGot"
+msgstr "Узнагарода не атрымана"
+
+msgid "result/scenario"
+msgstr "Сцэнарый %(scenario)s"
+
+msgid "result/submit"
+msgstr "Так!"
+
+msgid "result/time"
+msgstr "Час"
+
+msgid "result/title/lose"
+msgstr "НЕ ВЫКАНАНА"
+
+msgid "result/title/partial"
+msgstr "ВЫКАНАНА ЧАСТКОВА"
+
+msgid "result/title/tie"
+msgstr "НЕ ВЫКАНАНА"
+
+msgid "result/title/win"
+msgstr "ВЫКАНАНА"
+
+msgid "scenario/baseTitle"
+msgstr "{scenario}: {vehicle}, {team}"
+
+msgid "scenarioNum"
+msgstr "Сцэнарый {scenario}"
+
+msgid "scenarioTooltip/reward"
+msgstr "Узнагарода:"
+
+msgid "scenarioTooltip/rewardReceived"
+msgstr "Узнагарода атрымана:"
+
+msgid "scenarioTooltip/rewardReceivedInfo"
+msgstr "Пры паўторным праходжанні ўзнагарода не выдаецца."
+
+msgid "scenarioTooltip/scenario/title"
+msgstr "Сцэнарый {num}: {vehicleType}"
+
+msgid "scenarioTooltip/targets/body"
+msgstr "%(count) адз. тэхнікі праціўніка"
+
+msgid "scenarioTooltip/targets/title"
+msgstr "Трэба знішчыць:"
+
+msgid "scenarioTooltip/vehicle"
+msgstr "Выконваецца на тэхніцы:"
+
+msgid "vehicleMarker/heavyTank/descr"
+msgstr "Браніраваны вучэбны танк"
+
+msgid "vehicleMarker/heavyTank/tooltip/body"
+msgstr ""
+"Машына, прызначаная для ўтрымання пазіцыі або прарыву ключавых кірункаў."
+
+msgid "vehicleMarker/heavyTank/tooltip/title"
+msgstr "Браніраваны танк"
+
+msgid "vehicleMarker/mediumTank/descr"
+msgstr "Дынамічны вучэбны танк"
+
+msgid "vehicleMarker/mediumTank/tooltip/body"
+msgstr "Машына, прызначаная для хуткіх фланговых абыходаў і манеўровага бою."
+
+msgid "vehicleMarker/mediumTank/tooltip/title"
+msgstr "Дынамічны танк"
+
+msgid "vehicleType/heavyTank"
+msgstr "Браніраваны танк"
+
+msgid "vehicleType/mediumTank"
+msgstr "Дынамічны танк"

@@ -1,0 +1,391 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "awardView/end"
+msgstr "ПАДЗЕЯ ЗАВЯРШЫЛАСЯ"
+
+msgid "awardView/info"
+msgstr "Нумар стылю"
+
+msgid "awardView/toHangar"
+msgstr "Паглядзець у Гаражы"
+
+msgid "awardView/vehicleNumberTitle"
+msgstr "%(vehicleInfo) З НУМАРНЫМ СТЫЛЕМ"
+
+msgid "awardView/vehicleNumberedTitle"
+msgstr "ВЫ АТРЫМАЛІ МАШЫНУ"
+
+msgid "awardView/vehicleTitle"
+msgstr "ВЫ АТРЫМАЛІ МАШЫНУ"
+
+msgid "commonTexts/aboutButton"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "commonTexts/closeBtn"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "commonTexts/eventTitle"
+msgstr "КАНСТРУКТАРСКАЕ БЮРО"
+
+msgid "confirm/NoSerialVehicles/buttonCancel/title"
+msgstr "Скасаваць"
+
+msgid "confirm/NoSerialVehicles/buttonConfirm/title"
+msgstr "Укласці"
+
+msgid "confirm/NoSerialVehicles/description"
+msgstr ""
+"Машыны з нумарным стылем скончыліся, будзе налічаны %(vehicleName)s без нумара.\n"
+"Усё адно ўкласці рэсурсы?"
+
+msgid "confirm/NoSerialVehicles/title"
+msgstr "Вы атрымаеце %(vehicleName)s без нумара"
+
+msgid "confirm/NoVehicles/buttonCancel/title"
+msgstr "Вярнуцца ў Гараж"
+
+msgid "confirm/NoVehicles/description"
+msgstr "Укладзеныя рэсурсы хутка вернуцца на ваш акаўнт."
+
+msgid "confirm/NoVehicles/title"
+msgstr "На жаль, машыны скончыліся"
+
+msgid "confirm/buttonCancel/title"
+msgstr "Скасаваць"
+
+msgid "confirm/resourcesContribute/buttonConfirm/title"
+msgstr "Укласці"
+
+msgid "confirm/resourcesContribute/description/text"
+msgstr "Прагрэс пасля ўкладу: %(percent)"
+
+msgid "confirm/resourcesContribute/title"
+msgstr "Укласці рэсурсы?"
+
+msgid "confirm/resourcesReturn/buttonConfirm/title"
+msgstr "Вярнуць рэсурсы"
+
+msgid "confirm/resourcesReturn/description/text"
+msgstr ""
+"Усе ўкладзеныя рэсурсы вернуцца на ваш акаўнт, а прагрэс зборкі абнуліцца. "
+"Пакуль падзея актыўна, вы можаце нанова ўкласці рэсурсы, каб атрымаць "
+"машыну."
+
+msgid "confirm/resourcesReturn/title"
+msgstr "Вярнуць усе ўкладзеныя рэсурсы?"
+
+msgid "eventInfo/description"
+msgstr ""
+"Першыя %(styleTanksCount) гульцоў атрымаюць машыну з нумарным 3D-стылем,\n"
+"а пасля будзе адгружана %(withoutStyleTanksCount) машын без нумарнога 3D-стылю."
+
+msgid "eventInfo/tanksOver"
+msgstr "СКОНЧЫЛІСЯ"
+
+msgid "eventInfo/top/styleText"
+msgstr "З нумарам"
+
+msgid "eventInfo/top/tanksLeftText"
+msgstr "Засталося машын з нумарам"
+
+msgid "eventInfo/withoutStyle/blocked/textInfo"
+msgstr ""
+"Адгрузка %(regularRewardVehiclesCount) машын у стандартнай камплектацыі пачнецца пасля таго,\n"
+"як скончацца машыны з нумарам."
+
+msgid "eventInfo/withoutStyle/styleText"
+msgstr "У стандартнай камплектацыі"
+
+msgid "eventInfo/withoutStyle/tanksLeftText"
+msgstr "Засталося машын"
+
+msgid "introView/button"
+msgstr "Так!"
+
+msgid "introView/buttonVideo"
+msgstr "ПАДРАБЯЗНЕЙ ПРА БЮРО"
+
+msgid "introView/resDescription"
+msgstr ""
+"Каб вырабіць асобнік машыны, збярыце і ўкладзіце 100% неабходных рэсурсаў. "
+"Прапорцыі розных відаў рэсурсаў можна мяняць."
+
+msgid "introView/resTitle"
+msgstr "Збірайце рэсурсы"
+
+msgid "introView/vehDescription"
+msgstr ""
+"Танк з унікальным нумарным 3D-стылем атрымаюць першыя %(topPlayers) гульцоў,"
+" якія збяруць 100% рэсурсаў. Пасля гэтага будзе адгружана яшчэ "
+"%(basePlayers) машын без нумара."
+
+msgid "introView/vehTitle"
+msgstr "Атрымайце %(vehicleInfo) з унікальным нумарам"
+
+msgid "mainView/footer/activeState/buttonReturn/text"
+msgstr "Да звароту рэсурсаў"
+
+msgid "mainView/footer/activeState/progression/smallTitle/text"
+msgstr "Сабрана рэсурсаў:"
+
+msgid "mainView/footer/backToHangar/button/text"
+msgstr "Вярнуцца ў Гараж"
+
+msgid "mainView/footer/buttonChoose/text"
+msgstr "Выбраць рэсурсы"
+
+msgid "mainView/footer/description/text"
+msgstr "Калі машыны скончацца, усе ўкладзеныя рэсурсы вернуцца."
+
+msgid "mainView/footer/forbidden/subTitle"
+msgstr "Акаўнт вашага тыпу не можа браць удзел у падзеі."
+
+msgid "mainView/footer/forbidden/title"
+msgstr "Вы не можаце ўзяць удзел"
+
+msgid "mainView/footer/noProgress/title"
+msgstr ""
+"Спяшайцеся ўкласці неабходныя для зборкі рэсурсы і атрымайце %(vehicleName)!"
+
+msgid "mainView/footer/noVehicles/subTitle"
+msgstr "Укладзеныя рэсурсы хутка вернуцца на ваш акаўнт."
+
+msgid "mainView/footer/noVehicles/title"
+msgstr "На жаль, машыны скончыліся"
+
+msgid "mainView/paused/button"
+msgstr "У Гараж"
+
+msgid "mainView/paused/header"
+msgstr "Часова недаступна"
+
+msgid "mainView/paused/text"
+msgstr ""
+"Канструктарскае бюро часова не працуе па тэхнічных прычынах.\n"
+"Увесь прагрэс захаваны. Выбачайце за нязручнасці."
+
+msgid "mainView/preview/label"
+msgstr "Перадпрагляд"
+
+msgid "mainView/timer/dayEnd"
+msgstr "%(day)s %(month)s %(time)s"
+
+msgid "mainView/timer/lastUntil"
+msgstr "Да"
+
+msgid "mainView/timer/leftTime"
+msgstr "Засталося"
+
+msgid "resourcesLoadingView/buttons/close"
+msgstr "Закрыць"
+
+msgid "resourcesLoadingView/buttons/load"
+msgstr "Укласці рэсурсы"
+
+msgid "resourcesLoadingView/counter/current"
+msgstr "%(current)d%"
+
+msgid "resourcesLoadingView/counter/currentWithDelta"
+msgstr "%(current)d %(delta)d"
+
+msgid "resourcesLoadingView/counter/delta"
+msgstr "+%(delta)d%"
+
+msgid "resourcesLoadingView/noVehicleData"
+msgstr "Звесткі часова недаступныя %(icon)s"
+
+msgid "resourcesLoadingView/noVehiclesRemains"
+msgstr "Машыны скончыліся"
+
+msgid "resourcesLoadingView/premium"
+msgstr "%(days)s сут"
+
+msgid "resourcesLoadingView/remainTopVehicles"
+msgstr "Засталося машын з нумарам: %(counter)d"
+
+msgid "resourcesLoadingView/remainVehicles"
+msgstr "Засталося машын: %(counter)d"
+
+msgid "resourcesLoadingView/resourceCard/intelligenceBlueprints"
+msgstr "Універсальныя"
+
+msgid "resourcesLoadingView/resourceRate/maxReachedText"
+msgstr "Дасягнуты максімум %(iconMax)"
+
+msgid "resourcesLoadingView/resourceRate/maxText"
+msgstr "Максімум %(maxValue)d%(iconInfo)"
+
+msgid "resourcesLoadingView/resourceRate/minValue"
+msgstr "%(minValue)d%"
+
+msgid "resourcesLoadingView/resourceRate/resourceLoadedText"
+msgstr "Рэсурсы сабраныя %(iconLoaded)"
+
+msgid "resourcesLoadingView/resourceRate/text"
+msgstr "%(icon)%(rate)d %(equals) %(minValue)"
+
+msgid "resourcesLoadingView/resourcesHeader/blueprints"
+msgstr "Фрагменты чарцяжоў"
+
+msgid "resourcesLoadingView/resourcesHeader/currency"
+msgstr "Валюты"
+
+msgid "resourcesLoadingView/resourcesHeader/premiums"
+msgstr "Дні прэміум акаўнту"
+
+msgid "resourcesLoadingView/subtitle"
+msgstr "ЗБОР РЭСУРСАЎ"
+
+msgid "tooltips/button/returnResources/description/text"
+msgstr ""
+"Укладзеныя рэсурсы можна ў любы момант прагледзець і, калі трэба, вярнуць на свой акаўнт, націснуўшы кнопку %(buttonName)s.\n"
+"Прагрэс зборкі абнуліцца, але вы зможаце нанова ўкласці гэтыя або іншыя рэсурсы, каб атрымаць машыну."
+
+msgid "tooltips/button/returnResources/header/text"
+msgstr "Зварот рэсурсаў"
+
+msgid "tooltips/button/returnResources/title/text"
+msgstr "«Вярнуць рэсурсы»"
+
+msgid "tooltips/counter/error/text"
+msgstr ""
+"Звесткі часова недаступныя.\n"
+"Мы ўжо вырашаем праблему."
+
+msgid "tooltips/counter/warning/text"
+msgstr ""
+"Лічба паказваецца з затрымкай і можа адрознівацца ад сапраўднай колькасці "
+"машын."
+
+msgid "tooltips/entryPoint/forbidden/text"
+msgstr "Акаўнт гэтага тыпу не можа ўдзельнічаць у падзеі."
+
+msgid "tooltips/entryPoint/mainTitle/text"
+msgstr "КАНСТРУКТАРСКАЕ БЮРО"
+
+msgid "tooltips/entryPoint/noRewards/text"
+msgstr "Машыны без нумара"
+
+msgid "tooltips/entryPoint/notStartedEvent/text"
+msgstr ""
+"Удзельнічайце ў падзеі, укладайце рэсурсы і атрымайце %(vehicleName) "
+"%(uniqVehicleText). Колькасць машын абмежаваная."
+
+msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
+msgstr "з нумарным 3D-стылем"
+
+msgid "tooltips/entryPoint/paused/text"
+msgstr "Падзея часова недаступная"
+
+msgid "tooltips/entryPoint/regularAvailable/text"
+msgstr "Засталося машын"
+
+msgid "tooltips/entryPoint/regularReceived/text"
+msgstr "Машына атрымана!"
+
+msgid "tooltips/entryPoint/timer/lastUntil"
+msgstr "Працягнецца да:"
+
+msgid "tooltips/entryPoint/timer/leftTime"
+msgstr "Засталося:"
+
+msgid "tooltips/entryPoint/timer/timeToStart"
+msgstr "Падзея пачнецца"
+
+msgid "tooltips/entryPoint/topAvailable/text"
+msgstr "Засталося машын з нумарам"
+
+msgid "tooltips/entryPoint/topReceived/text"
+msgstr "Вы атрымалі машыну з нумарам!"
+
+msgid "tooltips/mainView/timer/leftTime"
+msgstr "Засталося %(leftTime)s"
+
+msgid "tooltips/progressbar/description"
+msgstr ""
+"Каб вырабіць асобнік машыны, укладзіце 100% неабходных рэсурсаў. Прапорцыі "
+"розных відаў рэсурсаў можна мяняць."
+
+msgid "tooltips/progressbar/moreInfo"
+msgstr "Калі машыны скончацца, усе ўкладзеныя рэсурсы вернуцца."
+
+msgid "tooltips/progressbar/resourcesChosen/label"
+msgstr "Выбрана"
+
+msgid "tooltips/progressbar/resourcesLoaded/label"
+msgstr "Укладзена"
+
+msgid "tooltips/progressbar/title"
+msgstr "Збор рэсурсаў"
+
+msgid "tooltips/resourcesLoadingView/alert/body"
+msgstr "Вы перавысілі ліміт укладу рэсурсаў. Розніца вернецца праз пэўны час."
+
+msgid "tooltips/resourcesLoadingView/alert/header"
+msgstr "Ліміт перавышаны"
+
+msgid "tooltips/resourcesLoadingView/buttonDisabled/body"
+msgstr "Зараз нельга ўкласці рэсурсы, паспрабуйце пазней."
+
+msgid "tooltips/resourcesLoadingView/header/blueprints_description"
+msgstr "Універсальныя і нацыянальныя фрагменты чарцяжоў."
+
+msgid "tooltips/resourcesLoadingView/header/blueprints_title"
+msgstr "Фрагменты чарцяжоў"
+
+msgid "tooltips/resourcesLoadingView/header/currency_description"
+msgstr ""
+"Налічваюцца за актыўныя дзеянні ў баях. Таксама можна купіць за рэальныя "
+"грошы."
+
+msgid "tooltips/resourcesLoadingView/header/currency_title"
+msgstr "Валюты"
+
+msgid "tooltips/resourcesLoadingView/header/premiums_description"
+msgstr "Дні Танкавага прэміум акаўнту."
+
+msgid "tooltips/resourcesLoadingView/header/premiums_title"
+msgstr "Дні прэміум акаўнту"
+
+msgid "tooltips/resourcesLoadingView/limitCounter/amount"
+msgstr "%(icon)s %(amount)d / %(maxAmount)d"
+
+msgid "tooltips/resourcesLoadingView/limitCounter/body"
+msgstr "Укладзена:"
+
+msgid "tooltips/resourcesLoadingView/limitCounter/header"
+msgstr "Максімальная колькасць гэтага рэсурсу для ўкладу — %(maxAmount)d адз."
+
+msgid "tooltips/resourcesLoadingView/resourcesLoaded/body"
+msgstr ""
+"Вы сабралі патрэбную колькасць рэсурсаў, каб атрымаць машыну. Можна "
+"адмовіцца ад аднаго тыпу рэсурсу, каб атрымаць іншы."
+
+msgid "tooltips/resourcesLoadingView/resourcesLoaded/header"
+msgstr "Рэсурсы сабраныя"
+
+msgid "tooltips/uniq_style/description/firstPart"
+msgstr ""
+"Гэта ўнікальны асобнік машыны з уласным нумарам і асаблівай візуальнай "
+"мадыфікацыяй."
+
+msgid "tooltips/uniq_style/description/secondPart"
+msgstr ""
+"Нумар размяшчаецца па абодва бакі рулі і на задняй частцы корпуса. Нумары на"
+" аднолькавых машынах ніколі не паўтараюцца, а іх колькасць абмежаваная."
+
+msgid "tooltips/uniq_style/moreInfo"
+msgstr ""
+"Адметныя адзнакі машыны можна схаваць. Для гэтага здыміце з яе нумарны "
+"3D-стыль на экране выгляду."
+
+msgid "tooltips/uniq_style/title"
+msgstr "Машына з нумарам"

@@ -1,0 +1,435 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "label/assist"
+msgstr "Сярэдняя падмога"
+
+msgid "label/averageDamage"
+msgstr "Сярэднія пашкоджанні"
+
+msgid "label/averageFrags"
+msgstr "Сяр. колькасць знішчанай тэхнікі"
+
+msgid "label/averageVehiclesLevel"
+msgstr "Сяр. узровень тэхнікі"
+
+msgid "label/averageXP"
+msgstr "Сярэдні досвед"
+
+msgid "label/battleEfficiency"
+msgstr "Баявая эфектыўнасць"
+
+msgid "label/blockedDamage"
+msgstr "Сярэднія заблак. пашкоджанні"
+
+msgid "label/damaged"
+msgstr "Прычыніў/атрымаў пашкоджанняў"
+
+msgid "label/destroyed"
+msgstr "Знішчыў/быў знішчаны"
+
+msgid "label/freeXp"
+msgstr "Вольны досвед"
+
+msgid "label/gamingXp"
+msgstr "Баявы досвед"
+
+msgid "label/playBattle"
+msgstr "Адваюйце бой"
+
+msgid "label/spotted"
+msgstr "Сяр. колькасць выяўленай тэхнікі"
+
+msgid "label/survivedRate"
+msgstr "Выжывальнасць"
+
+msgid "label/tabBattle"
+msgstr "Паводле баёў"
+
+msgid "label/tabVehicle"
+msgstr "Паводле тэхнікі"
+
+msgid "label/totalCredits"
+msgstr "Вынік паводле крэдытаў"
+
+msgid "label/totalCrystal"
+msgstr "Вынік паводле бонаў"
+
+msgid "label/victory"
+msgstr "Перамогі"
+
+msgid "label/winRate"
+msgstr "Працэнт перамог"
+
+msgid "label/wtr"
+msgstr "Рэйтынг MTR"
+
+msgid "moreBtn/label"
+msgstr "У Залу славы"
+
+msgid "propertyInfo/current"
+msgstr "За сеанс"
+
+msgid "propertyInfo/dynamic"
+msgstr "Дынаміка"
+
+msgid "propertyInfo/prop/descr/averageDamage"
+msgstr ""
+"Суадносіны агульнай колькасці прычыненых пашкоджанняў да колькасці "
+"адваяваных за сеанс баёў. Дэльта паказвае ўплыў бягучага сеанса гульні на "
+"параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/averageFrags"
+msgstr "Суадносіны колькасці знішчаных машын да колькасці праведзеных баёў."
+
+msgid "propertyInfo/prop/descr/averageVehiclesLevel"
+msgstr "Сярэдні ўзровень машын, на якіх вы гулялі на працягу сеанса гульні."
+
+msgid "propertyInfo/prop/descr/averageXp"
+msgstr ""
+"Суадносіны агульнай колькасці здабытага досведу да колькасці адваяваных "
+"баёў. Дэльта паказвае ўплыў бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/blockedDamage"
+msgstr ""
+"Суадносіны агульнай колькасці заблакаваных бранёй пашкоджанняў да колькасці "
+"адваяваных за сеанс баёў. Дэльта паказвае ўплыў бягучага сеанса гульні на "
+"параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/helpDamage"
+msgstr ""
+"Суадносіны пашкоджанняў паводле вашых разведданых і пашкоджанняў, прычыненых"
+" хаўруснікамі пасля вашага трапляння, якое знерухоміла цэль збіццём "
+"тракавага паса або дэзарыентавала яе, да колькасці праведзеных за сеанс "
+"баёў. Дэльта паказвае ўплыў бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/ratioDamage"
+msgstr ""
+"Вынік дзялення паказчыкаў «Прычыніў пашкоджанняў» на «Атрымаў пашкоджанняў»."
+" Дэльта паказвае ўплыў бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/ratioKill"
+msgstr ""
+"Вынік дзялення паказчыкаў «Знішчыў» на «Быў знішчаны». Дэльта паказвае ўплыў"
+" бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/spotted"
+msgstr ""
+"Суадносіны колькасці выяўленых машын праціўніка да колькасці баёў за сеанс."
+
+msgid "propertyInfo/prop/descr/survivedRate"
+msgstr "Працэнт ад колькасці баёў, у якіх машына гульца не была знішчана."
+
+msgid "propertyInfo/prop/descr/winRate"
+msgstr ""
+"Працэнт перамог у Выпадковых баях на працягу сеанса. Дэльта паказвае ўплыў "
+"бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/wins"
+msgstr ""
+"Колькасць атрыманых за сеанс перамог у Выпадковых баях. Дэльта паказвае "
+"ўплыў бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/descr/wtr"
+msgstr ""
+"MTR паводле сярэдніх паказчыкаў за ўвесь сеанс. Дэльта паказвае ўплыў "
+"бягучага сеанса гульні на параметр за ўвесь час."
+
+msgid "propertyInfo/prop/label/averageDamage"
+msgstr "Сярэднія пашкоджанні"
+
+msgid "propertyInfo/prop/label/averageFrags"
+msgstr "Сярэдняя колькасць знішчанай тэхнікі"
+
+msgid "propertyInfo/prop/label/averageVehiclesLevel"
+msgstr "Сяр. узровень тэхнікі"
+
+msgid "propertyInfo/prop/label/averageXp"
+msgstr "Сярэдні досвед"
+
+msgid "propertyInfo/prop/label/blockedDamage"
+msgstr "Сярэднія заблакіраваныя пашкоджанні"
+
+msgid "propertyInfo/prop/label/helpDamage"
+msgstr "Сярэдняя падмога"
+
+msgid "propertyInfo/prop/label/ratioDamage"
+msgstr "Прычыніў/атрымаў пашкоджанняў"
+
+msgid "propertyInfo/prop/label/ratioKill"
+msgstr "Знішчыў/быў знішчаны"
+
+msgid "propertyInfo/prop/label/spotted"
+msgstr "Сярэдняя колькасці выяўленай тэхнікі"
+
+msgid "propertyInfo/prop/label/survivedRate"
+msgstr "Выжывальнасць"
+
+msgid "propertyInfo/prop/label/winRate"
+msgstr "Працэнт перамог"
+
+msgid "propertyInfo/prop/label/wins"
+msgstr "Перамогі"
+
+msgid "propertyInfo/prop/label/wtr"
+msgstr "Рэйтынг MTR"
+
+msgid "propertyInfo/total"
+msgstr "За ўвесь час"
+
+msgid "propertyInfo/total/descr"
+msgstr "Паказваюцца толькі тыя параметры, значэнні якіх ёсць."
+
+msgid "propertyInfo/total/label/achievement"
+msgstr "За атрыманне ўзнагарод"
+
+msgid "propertyInfo/total/label/afk"
+msgstr "Штраф за бяздзейнасць у баі"
+
+msgid "propertyInfo/total/label/aogasFactor"
+msgstr "Паніжальны каэфіцыент (AOGAS)"
+
+msgid "propertyInfo/total/label/autoEquip"
+msgstr "Аўтапапаўненне рыштунку"
+
+msgid "propertyInfo/total/label/autoLoad"
+msgstr "Аўтапапаўненне боезапасу"
+
+msgid "propertyInfo/total/label/autoRepair"
+msgstr "Аўтаматычны рамонт тэхнікі"
+
+msgid "propertyInfo/total/label/base"
+msgstr "Налічана за баі"
+
+msgid "propertyInfo/total/label/battlePayments"
+msgstr "Баявыя выплаты"
+
+msgid "propertyInfo/total/label/boosters"
+msgstr "Эфект ад асабістых рэзерваў"
+
+msgid "propertyInfo/total/label/deserter"
+msgstr "Штраф за дэзерцірства з поля бою"
+
+msgid "propertyInfo/total/label/event"
+msgstr "Узнагарода за выкананне баявых задач"
+
+msgid "propertyInfo/total/label/friendlyFireCompensation"
+msgstr "Кампенсацыя за пашкоджанні ад хаўруснікаў"
+
+msgid "propertyInfo/total/label/friendlyFirePenalty"
+msgstr "Штраф за прычыненне пашкоджанняў хаўруснікам"
+
+msgid "propertyInfo/total/label/netCredits"
+msgstr "Вынік паводле крэдытаў"
+
+msgid "propertyInfo/total/label/netCrystal"
+msgstr "Вынік паводле бонаў"
+
+msgid "propertyInfo/total/label/noPenalty"
+msgstr "За адважны супраціў"
+
+msgid "propertyInfo/total/label/squadBonus"
+msgstr "За гульню звязам"
+
+msgid "propertyInfo/total/label/suicide"
+msgstr "Штраф за самазнішчэнне"
+
+msgid "propertyInfo/total/total"
+msgstr "Вынік"
+
+msgid "ratio/inverse"
+msgstr "%(open)s%(numerator)s%(close)s / %(denominator)s"
+
+msgid "ratio/normal"
+msgstr "%(numerator)s / %(open)s%(denominator)s%(close)s"
+
+msgid "resetBtn/label"
+msgstr "Скінуць"
+
+msgid "settings/commonSettings/header"
+msgstr "Агульныя налады"
+
+msgid "settings/commonSettings/isNotNeededResetStatsEveryDay"
+msgstr "Не скідваць статыстыку штодзень"
+
+msgid "settings/commonSettings/saveCurrentTab"
+msgstr "Захоўваць выбраную ўкладку"
+
+msgid "settings/controls/applyBtn"
+msgstr "Прымяніць"
+
+msgid "settings/controls/backBtn"
+msgstr "Назад"
+
+msgid "settings/economicBlock/header"
+msgstr "Эканамічныя паказчыкі"
+
+msgid "settings/economicBlock/withSpending"
+msgstr "З улікам надбавак і выдаткаў"
+
+msgid "settings/economicBlock/withoutSpending"
+msgstr "З улікам надбавак"
+
+msgid "settings/efficiencyBlock/error"
+msgstr "Максімум %(max)s параметраў"
+
+msgid "settings/efficiencyBlock/header"
+msgstr "Баявая эфектыўнасць"
+
+msgid "settings/efficiencyBlock/subheader"
+msgstr "Паказваць %(selected)s / %(max)s"
+
+msgid "settings/header"
+msgstr "Налады"
+
+msgid "tankInfo/battleEfficiency/title"
+msgstr "Баявая эфектыўнасць"
+
+msgid "tankInfo/level"
+msgstr "Узровень"
+
+msgid "tankInfo/main"
+msgstr "Асноўны"
+
+msgid "tankInfo/markOnGun"
+msgstr "Адметныя адзнакі: %(progress)s"
+
+msgid "tankInfo/markOnGun/warning"
+msgstr "Адметных адзнак няма: %(progress)s"
+
+msgid "tankInfo/status/total"
+msgstr "Баёў за сеанс: %(total)s"
+
+msgid "tankInfo/status/warning"
+msgstr "Адваюйце бой"
+
+msgid "tooltip/battleType/hasBattles/body"
+msgstr ""
+"Адваявана баёў: %(value)s. Статыстыка абнаўляецца пасля кожнага бою і не "
+"абнуляецца аўтаматычна. Генеральныя бітвы не ўлічваюцца ў статыстыцы сеанса."
+
+msgid "tooltip/battleType/hasBattles/daily/body"
+msgstr ""
+"Адваявана баёў: %(value)s. Статыстыка абнаўляецца пасля кожнага бою. "
+"Значэнні аўтаматычна абнуляцца пасля заканчэння сутак. Генеральныя бітвы не "
+"ўлічваюцца ў статыстыцы сеанса."
+
+msgid "tooltip/battleType/header"
+msgstr "Статыстыка сеанса ў рэжыме «%(battleType)s»"
+
+msgid "tooltip/battleType/noBattles/body"
+msgstr ""
+"Для паказу статыстыкі правядзіце бой. Статыстыка абнаўляецца пасля кожнага "
+"бою і не абнуляецца аўтаматычна. Апошняе можна змяніць у наладах. Таксама "
+"статыстыку можна скінуць уручную. Генеральныя бітвы не ўлічваюцца ў "
+"статыстыцы сеанса."
+
+msgid "tooltip/battleType/noBattles/daily/body"
+msgstr ""
+"Статыстыка з'яўляецца пасля першага праведзенага бою і абнаўляецца пасля "
+"кожнага бою. Значэнні аўтаматычна абнуляцца пасля заканчэння сутак. "
+"Генеральныя бітвы не ўлічваюцца ў статыстыцы сеанса."
+
+msgid "tooltip/clearButton/available/body"
+msgstr "Націсніце, каб скінуць бягучыя значэнні статыстыкі сеанса."
+
+msgid "tooltip/clearButton/available/daily/body"
+msgstr ""
+"Націсніце, каб скінуць бягучыя значэнні статыстыкі сеанса. Статыстыка сеанса"
+" аўтаматычна абнуліцца праз%(time)s"
+
+msgid "tooltip/clearButton/header"
+msgstr "Скінуць"
+
+msgid "tooltip/clearButton/unavailable/body"
+msgstr "У дадзены момант нельга скінуць статыстыку."
+
+msgid "tooltip/clearButton/unavailable/daily/body"
+msgstr ""
+"На цяперашні час скід статыстыкі недаступны. Па сканчэнні сутак значэнні "
+"аўтаматычна абнуляцца."
+
+msgid "tooltip/header/avgDamage"
+msgstr "Сярэднія пашкоджанні"
+
+msgid "tooltip/header/battleCount"
+msgstr "Колькасць баёў"
+
+msgid "tooltip/header/wtr"
+msgstr "Мир танков Rating"
+
+msgid "tooltip/mainBtn/body/disabled"
+msgstr "Статыстыка сеанса ў выбраным рэжыме недаступная."
+
+msgid "tooltip/mainBtn/body/disabled/winback"
+msgstr "Статыстыка сеансаў недаступная для Размінкі."
+
+msgid "tooltip/mainBtn/body/enabled"
+msgstr ""
+"Паказчыкі вашай эфектыўнасці ў баі, а таксама баланс унутрыгульнявых валют."
+
+msgid "tooltip/mainBtn/header"
+msgstr "Статыстыка сеанса"
+
+msgid "tooltip/moreBtn/available/body"
+msgstr "Націсніце, каб перайсці да статыстыкі сеанса ў Зале славы."
+
+msgid "tooltip/moreBtn/header"
+msgstr "У Залу славы"
+
+msgid "tooltip/moreBtn/unavailable/body"
+msgstr ""
+"На цяперашні час Зала славы недаступная, пераход немагчымы. Паспрабуйце яшчэ"
+" раз пазней."
+
+msgid "tooltip/settings/commonSettings/isNotNeededResetStatsEveryDay/body"
+msgstr ""
+"Пры ўключэнні гэтай налады статыстыка перастае аўтаматычна абнуляцца раз на "
+"суткі і захоўвае ўсе даныя да скідання ўручную. Улічвайце, што пры ўключэнні"
+" налады статыстыка, сабраная за перыяд большы за суткі, не будзе супадаць са"
+" статыстыкай Залы славы."
+
+msgid "tooltip/settings/commonSettings/saveCurrentTab/body"
+msgstr ""
+"Пры ўключэнні гэтай налады статыстыка сеанса будзе адкрывацца на той "
+"укладцы, якую вы праглядалі апошні раз."
+
+msgid "tooltip/settings/resetBtn/body"
+msgstr "Націсніце, каб скінуць налады статыстыкі сеанса на стандартныя."
+
+msgid "tooltip/settings/resetBtn/header"
+msgstr "Скіданне налад статыстыкі сеанса"
+
+msgid "tooltip/settingsBtn/body"
+msgstr "Выбар параметраў для паказу ў статыстыцы сеанса."
+
+msgid "tooltip/settingsBtn/header"
+msgstr "Налады"
+
+msgid "tooltip/statValue/credits/body"
+msgstr "Агульная колькасць здабытых за сеанс крэдытаў: %(total)s"
+
+msgid "tooltip/statValue/crystals/body"
+msgstr "Агульная колькасць здабытых за сеанс бонаў: %(total)s"
+
+msgid "tooltip/statValue/freeXp/body"
+msgstr "Агульная колькасць здабытага за сеанс вольнага досведу: %(total)s"
+
+msgid "tooltip/statValue/xp/body"
+msgstr "Агульная колькасць здабытага за сеанс баявога досведу: %(total)s"
+
+msgid "tooltip/tabBattle"
+msgstr "Паводле баёў"
+
+msgid "tooltip/tabVehicle"
+msgstr "Паводле тэхнікі"
+
+msgid "tooltip/totalValue"
+msgstr "Выніковае значэнне за сеанс: %(total)s."

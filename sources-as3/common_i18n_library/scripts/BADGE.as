@@ -814,6 +814,48 @@ package
       public static const BADGE_31037_DESCR:String = "#badge:badge_31037_descr";
       
       public static const SUFFIX_BADGE_31037:String = "#badge:suffix/badge_31037";
+      
+      public static const BADGE_31038:String = "#badge:badge_31038";
+      
+      public static const BADGE_31038_DESCR:String = "#badge:badge_31038_descr";
+      
+      public static const BADGE_31039:String = "#badge:badge_31039";
+      
+      public static const BADGE_31039_DESCR:String = "#badge:badge_31039_descr";
+      
+      public static const BADGE_31040:String = "#badge:badge_31040";
+      
+      public static const BADGE_31040_DESCR:String = "#badge:badge_31040_descr";
+      
+      public static const SUFFIX_BADGE_31040:String = "#badge:suffix/badge_31040";
+      
+      public static const BADGE_31041:String = "#badge:badge_31041";
+      
+      public static const BADGE_31041_DESCR:String = "#badge:badge_31041_descr";
+      
+      public static const BADGE_31042:String = "#badge:badge_31042";
+      
+      public static const BADGE_31042_DESCR:String = "#badge:badge_31042_descr";
+      
+      public static const BADGE_31043:String = "#badge:badge_31043";
+      
+      public static const BADGE_31043_DESCR:String = "#badge:badge_31043_descr";
+      
+      public static const BADGE_31044:String = "#badge:badge_31044";
+      
+      public static const BADGE_31044_DESCR:String = "#badge:badge_31044_descr";
+      
+      public static const BADGE_31045:String = "#badge:badge_31045";
+      
+      public static const BADGE_31045_DESCR:String = "#badge:badge_31045_descr";
+      
+      public static const BADGE_31046:String = "#badge:badge_31046";
+      
+      public static const BADGE_31046_DESCR:String = "#badge:badge_31046_descr";
+      
+      public static const BADGE_31047:String = "#badge:badge_31047";
+      
+      public static const BADGE_31047_DESCR:String = "#badge:badge_31047_descr";
        
       
       public function BADGE()

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snowflakes_trail</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_snowflakes.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-20.582584 7.599999 9.425838</value>
+				<inTangent>-27.983124 0.302179 -47.751858</inTangent>
+				<outTangent>-27.983124 0.302179 -47.751858</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>21.762833 7.600007 8.083332</value>
+				<inTangent>-13.195286 -0.000000 76.434395</inTangent>
+				<outTangent>-13.195286 -0.000000 76.434395</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>30.491236</inTangent>
+				<outTangent>30.491236</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>2.032749</value>
+				<inTangent>15.237000</inTangent>
+				<outTangent>15.237000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.966667</startTime>
+				<value>2.000000</value>
+				<inTangent>-15.008606</inTangent>
+				<outTangent>-15.008606</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>-14.999934</inTangent>
+				<outTangent>-14.999934</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

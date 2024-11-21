@@ -61,6 +61,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/04_himmelsdorf_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/04_himmelsdorf_glow_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_811_CamouflageTent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env009_FirewoodStack_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env208_Log_Firewood_1.vfx</fn_effect_bin>
@@ -69,6 +70,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_UNI_632_DoraEnv_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_009_tent.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envSU_008_ArmyTech01_Zis5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf003_RabitzFence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf009_BarbedWareEnd.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf009_BarbedWareTile1.vfx</fn_effect_bin>
@@ -79,11 +81,15 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafNW_001_VillageFance_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafNW_001_VillageFance_post.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mil204_AreaForGun_05.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle013_WatchTower.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_SU_003_He111_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_SU_003_He111_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_02_45mm_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_02_45mm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_92_02_HE111_1.vfx</fn_effect_bin>
@@ -121,11 +127,12 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/38_mannerheim_fog.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/38_mannerheim_water_deform.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/38_mannerheim_fog.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/38_mannerheim_water_deform.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_811_CamouflageTent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env009_FirewoodStack2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env208_Log_Firewood_1.eff</fn_effect_bin>
@@ -134,6 +141,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_632_DoraEnv_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_009_tent.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_008_ArmyTech01_Zis5.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf003_RabitzFence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf009_BarbedWareEnd.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf009_BarbedWareTile1.eff</fn_effect_bin>
@@ -144,11 +152,15 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_post.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mil204_AreaForGun_05.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle013_WatchTower.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_92_02_HE111_1.eff</fn_effect_bin>
@@ -183,6 +195,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
@@ -279,6 +292,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/38_mannerheim_fog.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/38_mannerheim_water_deform.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_811_CamouflageTent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env009_FirewoodStack_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env208_Log_Firewood_1.vfx</fn_effect_bin>
@@ -287,6 +301,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_UNI_632_DoraEnv_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_009_tent.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envSU_008_ArmyTech01_Zis5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf003_RabitzFence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf009_BarbedWareEnd.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf009_BarbedWareTile1.vfx</fn_effect_bin>
@@ -297,11 +312,15 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafNW_001_VillageFance_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafNW_001_VillageFance_post.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mil204_AreaForGun_05.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle013_WatchTower.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_SU_003_He111_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_SU_003_He111_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_02_45mm_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_02_45mm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_92_02_HE111_1.vfx</fn_effect_bin>
@@ -339,11 +358,12 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/38_mannerheim_fog.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/38_mannerheim_water_deform.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/38_mannerheim_fog.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/38_mannerheim_water_deform.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_811_CamouflageTent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env009_FirewoodStack2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env208_Log_Firewood_1.eff</fn_effect_bin>
@@ -352,6 +372,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_632_DoraEnv_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_009_tent.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_008_ArmyTech01_Zis5.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf003_RabitzFence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf009_BarbedWareEnd.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf009_BarbedWareTile1.eff</fn_effect_bin>
@@ -362,11 +383,15 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_post.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mil204_AreaForGun_05.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle013_WatchTower.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_92_02_HE111_1.eff</fn_effect_bin>
@@ -401,6 +426,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>

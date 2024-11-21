@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ice_sculp.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Installation/Sculpture/NY25_Sculpture_Prem_2_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_metallic
+						<Float>0.600000</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Installation/Sculpture/NY25_Sculpture_Prem_2_ANM.dds</Texture>
+					</property>
+					<property>
+						refractionDepthMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Installation/Sculpture/NY25_Sculpture_Prem_2_RDM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.012310 3.209485 0.021312</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.065951 -0.030581 -1.663711</min>
+		<max>3.041332 6.449551 1.706335</max>
+	</boundingBox>
+	<geometrySize>128418</geometrySize>
+	<minUVDensity>0.002530</minUVDensity>
+</root>

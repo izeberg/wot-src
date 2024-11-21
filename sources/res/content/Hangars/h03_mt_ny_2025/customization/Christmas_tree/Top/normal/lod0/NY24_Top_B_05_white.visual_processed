@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						alphaReference
+						<Int>201</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Christmas_tree/Top/NY24_Top_B_05_white_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.541176 0.541176 0.541176 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.147108 0.639817 0.145488</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.755002 -0.021083 -0.462241</min>
+		<max>0.308776 1.325280 0.636892</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>26050</geometrySize>
+	<minUVDensity>0.045603</minUVDensity>
+</root>

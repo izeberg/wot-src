@@ -128,6 +128,13 @@ def getReloadTime(vehicleDescr, factors):
     return gun.reloadTime * getReloadTimeFactor(factors, vehicleDescr.miscAttrs, gun.tags, True)
 
 
+def ceilByMod(number, mod):
+    remainder = number % mod
+    if remainder == 0:
+        return number
+    return number + (mod - remainder)
+
+
 def getClipReloadTime(vehicleDescr, factors):
     if 'clip' in vehicleDescr.gun.tags:
         factor = vehicleDescr.miscAttrs['gunReloadTimeFactor'] * max(factors['gun/reloadTime'], 0.0)

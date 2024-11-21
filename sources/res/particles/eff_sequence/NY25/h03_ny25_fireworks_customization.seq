@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.333333</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fireworks_01</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_fireworks_01.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-3.590000 29.150000 -9.850000</value>
+				<inTangent>0.000000 -0.319965 -3.603855</inTangent>
+				<outTangent>0.000000 -0.319965 -3.603855</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fireworks_02</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_fireworks_02.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-7.320000 21.570000 -29.809999</value>
+				<inTangent>0.000000 -14.715961 11.137981</inTangent>
+				<outTangent>0.000000 -14.715964 11.137984</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.612245</inTangent>
+				<outTangent>0.612245</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fireworks_03</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_fireworks_03.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-15.290000 25.670000 6.900000</value>
+				<inTangent>0.000000 -5.950525 -15.554329</inTangent>
+				<outTangent>0.000000 -5.950525 -15.554329</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.612245</inTangent>
+				<outTangent>0.612245</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fireworks_04</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_fireworks_03.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-14.000000 16.340000 -12.290000</value>
+				<inTangent>0.000000 -5.950525 -15.554329</inTangent>
+				<outTangent>0.000000 -5.950525 -15.554329</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.612245</inTangent>
+				<outTangent>0.612245</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fireworks_05</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_fireworks_02.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-5.890000 30.740000 20.410000</value>
+				<inTangent>0.000000 -14.715961 11.137981</inTangent>
+				<outTangent>0.000000 -14.715964 11.137984</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.612245</inTangent>
+				<outTangent>0.612245</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fireworks_06</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny25_fireworks_01.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-17.139999 22.480000 26.370001</value>
+				<inTangent>0.000000 -0.319965 -3.603855</inTangent>
+				<outTangent>0.000000 -0.319965 -3.603855</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.400000</duration>
+				<sequenceSound>hangar_h03_ball_big</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.233333</duration>
+				<sequenceSound>hangar_h03_ball_medium</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

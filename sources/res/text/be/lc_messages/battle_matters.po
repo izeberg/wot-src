@@ -1,0 +1,330 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "animations/blueprints"
+msgstr "Чарцёж"
+
+msgid "animations/crew_close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "animations/shop"
+msgstr "Перайсці да куплі"
+
+msgid "battleMattersTab"
+msgstr "Танкавая акадэмія"
+
+msgid "battleResults/descr"
+msgstr "Танкавая акадэмія: {questID}. {questName}"
+
+msgid "battleResults/linkBtn/tooltip"
+msgstr "Да задач танкавай акадэміі"
+
+msgid "battleResults/progress/tooltip"
+msgstr "Прагрэс ў гэтым баі"
+
+msgid "bonusDelayed/dialog/cancel"
+msgstr "Скасаваць"
+
+msgid "bonusDelayed/dialog/closeBtn"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "bonusDelayed/dialog/confirm"
+msgstr "Пацвердзіць"
+
+msgid "bonusDelayed/dialog/description"
+msgstr ""
+"Вы атрымаеце {whiteSpanish_Open}%(vehicleName)s{whiteSpanish_Close} са "
+"100%-м экіпажам і слотам у Гаражы."
+
+msgid "bonusDelayed/dialog/title"
+msgstr "Абмяняць жэтон Акадэміі на %(vehicleName)s?"
+
+msgid "entryPoint/hint"
+msgstr ""
+"ЛАНЦУЖОК\n"
+"ВУЧЭБНЫХ ЗАДАЧ"
+
+msgid "entryPointTooltip/header/progress"
+msgstr "Выканана задач: {cream_Open}%(done)s{cream_Close}/%(total)s"
+
+msgid "entryPointTooltip/header/title"
+msgstr "Танкавая акадэмія"
+
+msgid "entryPointTooltip/rewardsTitle"
+msgstr "Узнагарода за выкананне:"
+
+msgid "entryPointTooltip/statusDescription/error"
+msgstr ""
+"У гэты момант нельга выконваць задачы з тэхнічных прычын. Прагрэс выкананых "
+"задач будзе захаваны."
+
+msgid "entryPointTooltip/statusTitle/completed"
+msgstr "Усе задачы выкананы."
+
+msgid "entryPointTooltip/statusTitle/error"
+msgstr "Задачы часова недаступныя"
+
+msgid "entryPointTooltip/task/condition"
+msgstr "Умова выканання:"
+
+msgid "entryPointTooltip/task/progress"
+msgstr "{yellow_Open}%(done)s{yellow_Close}/%(total)s"
+
+msgid "entryPointTooltip/task/title"
+msgstr "%(index)s. %(title)s"
+
+msgid "entryPointTooltip/token"
+msgstr "Абмяняйце жэтон на любую даследаваную машыну VI узроўню."
+
+msgid "mainRewardsScreen/buttons/back"
+msgstr "НАЗАД"
+
+msgid "mainRewardsScreen/buttons/backTo"
+msgstr "ДА ЗАДАЧ ТАНКАВАЙ АКАДЭМІІ"
+
+msgid "mainRewardsScreen/done"
+msgstr "У Гаражы"
+
+msgid "mainRewardsScreen/preview"
+msgstr "Перадпрагляд"
+
+msgid "mainRewardsScreen/rentDays"
+msgstr "Дзён пракату: %(value)s"
+
+msgid "mainRewardsScreen/subtitle"
+msgstr ""
+"Выканайце ланцужок навучальных задач, каб атрымаць тры прэміум машыны VIII "
+"узроўню {cream_Open}напракат на 14 дзён{cream_Close} у якасці галоўнай "
+"узнагароды."
+
+msgid "mainRewardsScreen/title"
+msgstr "ТАНКАВАЯ АКАДЭМІЯ"
+
+msgid "mainScreen/bootcampButton"
+msgstr "Вучэбны палігон"
+
+msgid "mainScreen/bootcampButtonTooltip/body"
+msgstr ""
+"Абагулены пакрокавы курс, якія тлумачыць асновы гульні, пачынаючы з Гаража і"
+" заканчваючы тактыкай і манеўрамі."
+
+msgid "mainScreen/bootcampButtonTooltip/header"
+msgstr "Вучэбны палігон"
+
+msgid "mainScreen/exchangeToken"
+msgstr "Выбраць"
+
+msgid "mainScreen/infoButton"
+msgstr "ДАВЕДНІК ДЛЯ НАВАБРАНЦАЎ"
+
+msgid "mainScreen/infoButtonSmall"
+msgstr "ДАВЕДНІК"
+
+msgid "mainScreen/list/arrow"
+msgstr "Націсніце, каб вярнуцца да бягучай задачы."
+
+msgid "mainScreen/mainRewardReceived"
+msgstr "Вы атрымалі галоўную ўзнагароду"
+
+msgid "mainScreen/progress"
+msgstr "Выканана задач: %(completed)s/%(total)s"
+
+msgid "mainScreen/quest/action"
+msgstr "Як выканаць"
+
+msgid "mainScreen/quest/progress"
+msgstr "%(current)s / %(max)s"
+
+msgid "mainScreen/quest/unavailableDescription"
+msgstr "Выканайце папярэднюю задачу"
+
+msgid "mainScreen/quest/unavailableTitle"
+msgstr "Недаступна"
+
+msgid "mainScreen/showMainReward"
+msgstr "Паглядзець галоўную ўзнагароду"
+
+msgid "mainScreen/target"
+msgstr "Выканайце ўсе задачы і атрымайце напракат тры машыны VIII узроўню."
+
+msgid "mainScreen/title"
+msgstr "ТАНКАВАЯ АКАДЭМІЯ"
+
+msgid "pausedScreen/buttonText"
+msgstr "У Гараж"
+
+msgid "pausedScreen/description"
+msgstr ""
+"Танкавая акадэмія часова недаступная з тэхнічных прычын. Увесь прагрэс "
+"захаваны. Выбачайце за нязручнасці."
+
+msgid "pausedScreen/title"
+msgstr "Часова недаступна"
+
+msgid "rewards/additionalTitle"
+msgstr "Таксама атрымана:"
+
+msgid "rewards/footer/confirm"
+msgstr "Так!"
+
+msgid "rewards/footer/more"
+msgstr "Яшчэ: %(count)s"
+
+msgid "rewards/footer/nextTask"
+msgstr "Да наступнай задачы"
+
+msgid "rewards/footer/showVehicle"
+msgstr "Паглядзець у Гаражы"
+
+msgid "rewards/previouslyCompleted"
+msgstr "Умовы задачы выкананы раней"
+
+msgid "rewards/rent"
+msgstr "Дзён пракату: %(rentLength)s"
+
+msgid "rewards/subTitle/final"
+msgstr "ФІНАЛЬНАЯ ЗАДАЧА ВЫКАНАНА"
+
+msgid "rewards/subTitle/regular"
+msgstr "ЗАДАЧА %(questNumber)s ВЫКАНАНАЯ"
+
+msgid "rewards/subTitle/tokenVehicle"
+msgstr "ВЫ АТРЫМАЛІ МАШЫНУ ЗА ЖЭТОН АКАДЭМІІ"
+
+msgid "rewards/title"
+msgstr "ТАНКАВАЯ АКАДЭМІЯ"
+
+msgid "rewards/token/action"
+msgstr "Выбраць машыну"
+
+msgid "rewards/token/description"
+msgstr ""
+"Скарыстайце ўзнагародны жэтон, каб імгненна атрымаць любую даследаваную "
+"машыну VI узроўню."
+
+msgid "rewards/token/title"
+msgstr "Абмяняйце жэтон акадэміі на машыну"
+
+msgid "tokenTooltip/condition"
+msgstr ""
+"Жэтон выдаецца за паспяховае выкананне ланцужка навучальных задач і "
+"дасягненне неабходнага прагрэсу ў Танкавай акадэміі."
+
+msgid "tokenTooltip/description"
+msgstr ""
+"Жэтон можна абмяняць на любую даследаваную машыну VI узроўню. Разам з "
+"машынай вы атрымаеце 100%-ы экіпаж і слот у Гаражы."
+
+msgid "tokenTooltip/timer/days"
+msgstr "Жэтон даступны {cream_open}%(days)s д{cream_close}"
+
+msgid "tokenTooltip/timer/fullDate"
+msgstr "Жэтон даступны да {cream_open}%(fullDate)s{cream_close}"
+
+msgid "tokenTooltip/timer/hours"
+msgstr "Жэтон даступны {cream_open}%(hours)s гадз{cream_close}"
+
+msgid "tokenTooltip/timer/minutes"
+msgstr "Жэтон даступны {cream_open}%(minutes)s хв{cream_close}"
+
+msgid "tokenTooltip/title"
+msgstr "Жэтон акадэміі"
+
+msgid "vehicleSelection/additions/base"
+msgstr ""
+"Да выбранай машыны вы бясплатна атрымаеце{cream_Open}%(crewIcon)s "
+"100%-ы{cream_Close} {cream_Open}экіпаж{cream_Close} і "
+"{cream_Open}%(hangarIcon)s слот{cream_Close} {cream_Open}у "
+"Гаражы{cream_Close}."
+
+msgid "vehicleSelection/back"
+msgstr "НАЗАД"
+
+msgid "vehicleSelection/backTo"
+msgstr "ДА ЗАДАЧ ТАНКАВАЙ АКАДЭМІІ"
+
+msgid "vehicleSelection/compare/tooltip/body"
+msgstr "Дадаць да параўнання."
+
+msgid "vehicleSelection/filter/tooltip/body"
+msgstr "Налада паказу тэхнікі з улікам дзяржавы і тыпу."
+
+msgid "vehicleSelection/filter/tooltip/header"
+msgstr "Фільтр параметраў"
+
+msgid "vehicleSelection/filter/tooltip/reset/description"
+msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
+
+msgid "vehicleSelection/filter/tooltip/reset/header"
+msgstr "Паставіць стандартныя налады"
+
+msgid "vehicleSelection/filterPopover/nation"
+msgstr "Дзяржава"
+
+msgid "vehicleSelection/filterPopover/title"
+msgstr "Фільтр параметраў"
+
+msgid "vehicleSelection/filterPopover/type"
+msgstr "Тып тэхнікі"
+
+msgid "vehicleSelection/noFilteredVehicles"
+msgstr "Нічога не знойдзена. Змяніце налады або скіньце фільтр."
+
+msgid "vehicleSelection/noFilteredVehiclesResetButton"
+msgstr "Скінуць фільтр"
+
+msgid "vehicleSelection/noVehicles/subtitle"
+msgstr ""
+"Вы даследавалі ўсю тэхніку VI узроўню, на якую можна памяняць жэтон "
+"акадэміі."
+
+msgid "vehicleSelection/noVehicles/title"
+msgstr "Адсутнічае машына для выбару"
+
+msgid "vehicleSelection/search/placeholder"
+msgstr "Пошук паводле назвы"
+
+msgid "vehicleSelection/search/tooltip/body"
+msgstr "Назва машыны павінна змяшчаць не больш за %(maxLength)s сімвалаў."
+
+msgid "vehicleSelection/search/tooltip/header"
+msgstr "Пошук паводле назвы"
+
+msgid "vehicleSelection/searchResults"
+msgstr "%(showedCount)s {par_Open}/%(totalCount)s{par_Close}"
+
+msgid "vehicleSelection/showed"
+msgstr "Паказана:"
+
+msgid "vehicleSelection/subtitle"
+msgstr ""
+"Абмяняйце жэтон на любую даследаваную машыну VI узроўню. З машынай\n"
+"вы атрымаеце 100%-ы экіпаж і слот у Гаражы."
+
+msgid "vehicleSelection/title"
+msgstr "Выберыце любую даследаваную машыну VI узроўню"
+
+msgid "vehicleSelection/vehicleName"
+msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"
+
+msgid "vehicleSelection/vehicleType/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "vehicleSelection/vehicleType/SPG"
+msgstr "САУ"
+
+msgid "vehicleSelection/vehicleType/heavyTank"
+msgstr "Цяжкі танк"
+
+msgid "vehicleSelection/vehicleType/lightTank"
+msgstr "Лёгкі танк"
+
+msgid "vehicleSelection/vehicleType/mediumTank"
+msgstr "Сярэдні танк"

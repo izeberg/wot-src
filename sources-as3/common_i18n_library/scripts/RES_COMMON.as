@@ -71,6 +71,8 @@ package
       
       public static const MAPS_ICONS_RESOURCEWELL_INTRO_BG:String = "../maps/icons/resourceWell/intro/bg.png";
       
+      public static const MAPS_ICONS_SENIORITYAWARDS_NOTIFICATION_BG:String = "../maps/icons/seniorityAwards/notification/bg.png";
+      
       public static const MAPS_ICONS_TANKMEN_ICONS_SMALL_USSR_DOG_1:String = "../maps/icons/tankmen/icons/small/ussr-dog-1.png";
       
       public static const MAPS_ICONS_TANKMEN_ROLES_BIG_DOG:String = "../maps/icons/tankmen/roles/big/dog.png";

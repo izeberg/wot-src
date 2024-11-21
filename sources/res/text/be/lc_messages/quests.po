@@ -1,0 +1,5805 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "action/auto/berthsPrices"
+msgstr "Зніжка на куплю ложкаў у Жаўнерні"
+
+msgid "action/auto/calendar"
+msgstr "Кожны дзень у святочным календары новая прапанова."
+
+msgid "action/auto/changeRoleCost"
+msgstr "Зніжка на змену спецыяльнасці"
+
+msgid "action/auto/clanCreationCost"
+msgstr "Зніжка на стварэнне клана"
+
+msgid "action/auto/creditsDropSkillsCost"
+msgstr "Зніжка на скідванне навыкаў экіпажа"
+
+msgid "action/auto/creditsTankmanCost"
+msgstr "Зніжка на навучанне і перавучванне экіпажу"
+
+msgid "action/auto/dropSkills/mixed"
+msgstr "Зніжка на скідванне навыкаў экіпажа"
+
+msgid "action/auto/equipment/creditsPriceMultiplier"
+msgstr "Зніжка на куплю рыштунку"
+
+msgid "action/auto/equipment/goldPriceMultiplier"
+msgstr "Зніжка на куплю рыштунку"
+
+msgid "action/auto/equipment/mixed"
+msgstr "Зніжка на куплю рыштунку"
+
+msgid "action/auto/exchangeRate"
+msgstr "Бонус да абмену золата на крэдыты"
+
+msgid "action/auto/femalePassportChangeCost"
+msgstr "Зніжка на змену дакументаў танкістаў"
+
+msgid "action/auto/freeXPConversionDiscrecity"
+msgstr "Бонус да абмену баявога досведу на вольны"
+
+msgid "action/auto/freeXPToTManXPRate"
+msgstr "Бонус да абмену вольнага досведу на досвед экіпажу"
+
+msgid "action/auto/goldDropSkillsCost"
+msgstr "Зніжка на скідванне навыкаў экіпажа"
+
+msgid "action/auto/goldTankmanCost"
+msgstr "Зніжка на навучанне і перавучванне экіпажу"
+
+msgid "action/auto/mul_EquipmentPrice"
+msgstr "Зніжка на куплю рыштунку"
+
+msgid "action/auto/mul_EquipmentPriceAll"
+msgstr "Зніжка на куплю рыштунку"
+
+msgid "action/auto/mul_GoodiePrice"
+msgstr "Зніжка на куплю асабістых рэзерваў"
+
+msgid "action/auto/mul_GoodiePriceAll"
+msgstr "Зніжка на куплю асабістых рэзерваў"
+
+msgid "action/auto/mul_OptionalDevicePrice"
+msgstr "Зніжка на куплю абсталявання"
+
+msgid "action/auto/mul_OptionalDevicePriceAll"
+msgstr "Зніжка на куплю абсталявання"
+
+msgid "action/auto/mul_PriceGroupPrice"
+msgstr "Зніжка на куплю элементаў выгляду машыны"
+
+msgid "action/auto/mul_PriceGroupPriceAll"
+msgstr "Зніжка на куплю элементаў выгляду машыны"
+
+msgid "action/auto/mul_PriceGroupPriceByTag"
+msgstr "Зніжка на куплю элементаў выгляду машыны"
+
+msgid "action/auto/mul_ShellPrice"
+msgstr "Зніжка на куплю снарадаў"
+
+msgid "action/auto/mul_ShellPriceAll"
+msgstr "Зніжка на куплю снарадаў"
+
+msgid "action/auto/paidRemovalCost"
+msgstr "Зніжка на дэмантаж абсталявання"
+
+msgid "action/auto/passportChangeCost"
+msgstr "Зніжка на змену дакументаў танкістаў"
+
+msgid "action/auto/premiumPacket14Cost"
+msgstr "Зніжка на куплю 14 дзён прэміум акаўнту"
+
+msgid "action/auto/premiumPacket180Cost"
+msgstr "Зніжка на куплю 180 дзён прэміум акаўнту"
+
+msgid "action/auto/premiumPacket1Cost"
+msgstr "Зніжка на куплю 1 дня прэміум акаўнту"
+
+msgid "action/auto/premiumPacket30Cost"
+msgstr "Зніжка на куплю 30 дзён прэміум акаўнту"
+
+msgid "action/auto/premiumPacket360Cost"
+msgstr "Зніжка на куплю 360 дзён прэміум акаўнту"
+
+msgid "action/auto/premiumPacket3Cost"
+msgstr "Зніжка на куплю 3 дзён прэміум акаўнту"
+
+msgid "action/auto/premiumPacket7Cost"
+msgstr "Зніжка на куплю 7 дзён прэміум акаўнту"
+
+msgid "action/auto/premiumPacket90Cost"
+msgstr "Зніжка на куплю 90 дзён прэміум акаўнту"
+
+msgid "action/auto/set_EquipmentPrice"
+msgstr "Зніжка на куплю рыштунку"
+
+msgid "action/auto/set_GoodiePrice"
+msgstr "Зніжка на куплю асабістых рэзерваў"
+
+msgid "action/auto/set_OptionalDevicePrice"
+msgstr "Зніжка на куплю абсталявання"
+
+msgid "action/auto/set_PriceGroupPrice"
+msgstr "Зніжка на куплю элементаў выгляду машыны"
+
+msgid "action/auto/set_ShellPrice"
+msgstr "Зніжка на куплю снарадаў"
+
+msgid "action/auto/shell/creditsPriceMultiplier"
+msgstr "Зніжка на куплю снарадаў"
+
+msgid "action/auto/shell/goldPriceMultiplier"
+msgstr "Зніжка на куплю снарадаў"
+
+msgid "action/auto/shell/mixed"
+msgstr "Зніжка на куплю снарадаў"
+
+msgid "action/auto/slotsPrices"
+msgstr "Зніжка на куплю слотаў у Гаражы"
+
+msgid "action/auto/tankmen/mixed"
+msgstr "Зніжка на навучанне і перавучванне экіпажу"
+
+msgid "action/auto/tradeInSellPriceFactor"
+msgstr "Магчымасць абмену з даплатай прэміум машын"
+
+msgid "action/auto/vehicleBuyPrice"
+msgstr "Зніжка на куплю тэхнікі"
+
+msgid "action/auto/vehicleRentPrice"
+msgstr "Зніжка на пракат прэміум тэхнікі"
+
+msgid "action/auto/winXPFactorMode/always"
+msgstr "Бонус да баявога досведу за кожную перамогу"
+
+msgid "action/auto/winXPFactorMode/daily"
+msgstr "Бонус да баявога досведу за першую перамогу за дзень"
+
+msgid "action/booster/booster_credits"
+msgstr "Крэдыты за бой"
+
+msgid "action/booster/booster_crew_xp"
+msgstr "Досвед экіпажу за бой"
+
+msgid "action/booster/booster_free_xp"
+msgstr "Вольны досвед"
+
+msgid "action/booster/booster_repair"
+msgstr "Зніжка на рамонт"
+
+msgid "action/booster/booster_xp"
+msgstr "Досвед за бой"
+
+msgid "action/button/berthsPrices"
+msgstr "Разбудаваць Жаўнерню"
+
+msgid "action/button/calendar"
+msgstr "ДА КАЛЕНДАРА"
+
+msgid "action/button/changeRoleCost"
+msgstr "Змяніць спецыяльнасць"
+
+msgid "action/button/clanCreationCost"
+msgstr "Стварыць клан"
+
+msgid "action/button/creditsDropSkillsCost"
+msgstr "Скінуць навыкі"
+
+msgid "action/button/creditsTankmanCost"
+msgstr "Навучыць экіпаж"
+
+msgid "action/button/dropSkills/mixed"
+msgstr "Скінуць навыкі"
+
+msgid "action/button/equipment/creditsPriceMultiplier"
+msgstr "Купіць рыштунак"
+
+msgid "action/button/equipment/goldPriceMultiplier"
+msgstr "Купіць рыштунак"
+
+msgid "action/button/equipment/mixed"
+msgstr "Купіць рыштунак"
+
+msgid "action/button/exchangeRate"
+msgstr "Абмяняць золата"
+
+msgid "action/button/femalePassportChangeCost"
+msgstr "Змяніць дакументы экіпажу"
+
+msgid "action/button/freeXPConversionDiscrecity"
+msgstr "Абмяняць баявы досвед"
+
+msgid "action/button/freeXPToTManXPRate"
+msgstr "Абмяняць досвед"
+
+msgid "action/button/goldDropSkillsCost"
+msgstr "Скінуць навыкі"
+
+msgid "action/button/goldTankmanCost"
+msgstr "Навучыць экіпаж"
+
+msgid "action/button/mul_EquipmentPrice"
+msgstr "Купіць рыштунак"
+
+msgid "action/button/mul_GoodiePrice"
+msgstr "Купіць асабістыя рэзервы"
+
+msgid "action/button/mul_GoodiePriceAll"
+msgstr "Купіць асабістыя рэзервы"
+
+msgid "action/button/mul_OptionalDevicePrice"
+msgstr "Купіць абсталяванне"
+
+msgid "action/button/mul_OptionalDevicePriceAll"
+msgstr "Купіць абсталяванне"
+
+msgid "action/button/mul_PriceGroupPrice"
+msgstr "Да выгляду"
+
+msgid "action/button/mul_PriceGroupPriceAll"
+msgstr "Да выгляду"
+
+msgid "action/button/mul_PriceGroupPriceByTag"
+msgstr "Да выгляду"
+
+msgid "action/button/mul_ShellPrice"
+msgstr "Купіць снарады"
+
+msgid "action/button/paidRemovalCost"
+msgstr "Дэмантаваць абсталяванне"
+
+msgid "action/button/passportChangeCost"
+msgstr "Змяніць дакументы экіпажу"
+
+msgid "action/button/premiumPacket/continue"
+msgstr "Прадоўжыць прэміум"
+
+msgid "action/button/premiumPacket/new"
+msgstr "Купіць прэміум"
+
+msgid "action/button/set_EquipmentPrice"
+msgstr "Купіць рыштунак"
+
+msgid "action/button/set_GoodiePrice"
+msgstr "Купіць асабістыя рэзервы"
+
+msgid "action/button/set_OptionalDevicePrice"
+msgstr "Купіць абсталяванне"
+
+msgid "action/button/set_PriceGroupPrice"
+msgstr "Да выгляду"
+
+msgid "action/button/set_ShellPrice"
+msgstr "Купіць снарады"
+
+msgid "action/button/shell/creditsPriceMultiplier"
+msgstr "Купіць снарады"
+
+msgid "action/button/shell/goldPriceMultiplier"
+msgstr "Купіць снарады"
+
+msgid "action/button/shell/mixed"
+msgstr "Купіць снарады"
+
+msgid "action/button/slotsPrices"
+msgstr "Разбудаваць Гараж"
+
+msgid "action/button/tankmen/mixed"
+msgstr "Навучыць экіпаж"
+
+msgid "action/button/tradeInSellPriceFactor"
+msgstr "Перайсці да абмену тэхнікі"
+
+msgid "action/button/vehicleBuyPrice"
+msgstr "Перайсці да тэхнікі"
+
+msgid "action/button/vehicleRentPrice"
+msgstr "Узяць тэхніку напракат"
+
+msgid "action/button/winXPFactorMode/always"
+msgstr "Перайсці ў Гараж"
+
+msgid "action/button/winXPFactorMode/daily"
+msgstr "Перайсці ў Гараж"
+
+msgid "action/chain/hint/camouflages"
+msgstr "ВЫБЕРЫЦЕ КАМУФЛЯЖ"
+
+msgid "action/chain/hint/changeDocuments"
+msgstr "ЗНІЖКА НА ЗМЕНУ ДАКУМЕНТАЎ"
+
+msgid "action/chain/hint/changeRoleDiscountAvailable"
+msgstr ""
+"ЗМЕНА СПЕЦЫЯЛЬНАСЦІ\n"
+"ДАСТУПНАЯ ЗНІЖКА"
+
+msgid "action/chain/hint/crewRetainingDiscountAvailable"
+msgstr "ЗНІЖКА НА ПЕРАВУЧВАННЕ ЭКІПАЖА"
+
+msgid "action/chain/hint/crewRetraining"
+msgstr "ЗНІЖКА НА НАВУЧАННЕ І ПЕРАВУЧВАННЕ ЭКІПАЖУ"
+
+msgid "action/chain/hint/customization"
+msgstr "ПЕРАЙДЗІЦЕ НА ЭКРАН «ВЫГЛЯД»"
+
+msgid "action/chain/hint/dropSkills"
+msgstr "НАЦІСНІЦЕ, КАБ СКІНУЦЬ НАВЫКІ"
+
+msgid "action/chain/hint/emblems"
+msgstr "ВЫБЕРЫЦЕ ЭМБЛЕМЫ"
+
+msgid "action/chain/hint/inscriptions"
+msgstr "ВЫБЕРЫЦЕ НАДПІСЫ"
+
+msgid "action/chain/hint/openCrewBooks"
+msgstr "НАЦІСНІЦЕ, КАБ ПЕРАЙСЦІ ДА ПАСКОРАНАГА НАВУЧАННЯ"
+
+msgid "action/chain/hint/openPersonalCase"
+msgstr "НАЦІСНІЦЕ, КАБ АДКРЫЦЬ ПРОФІЛІ"
+
+msgid "action/chain/hint/premDays"
+msgstr "ЗНІЖКА НА ПРЭМІУМНЫ АКАЎНТ"
+
+msgid "action/chain/hint/removalCost"
+msgstr "ЗНІЖКА НА ДЭМАНТАЖ"
+
+msgid "action/chain/hint/retrainingDiscountAvailable"
+msgstr "ЁСЦЬ ЗНІЖКА НА ПЕРАВУЧВАННЕ"
+
+msgid "action/chain/hint/shellsPrice"
+msgstr "ПЕРАЙСЦІ ДА СНАРАДАЎ"
+
+msgid "action/chain/hint/winXPFactorMode"
+msgstr "МНОЖНІК ДОСВЕДУ"
+
+msgid "action/comingsoon/label"
+msgstr "НАЙБЛІЖЭЙШАЯ АКЦЫЯ"
+
+msgid "action/comingsoon/time"
+msgstr "Пачнецца а %(startTime)s"
+
+msgid "action/discount/discountText"
+msgstr "Зніжка"
+
+msgid "action/discount/discountUpToText"
+msgstr "Зніжка да"
+
+msgid "action/discount/modifier"
+msgstr "Бонус ×%(count)s"
+
+msgid "action/discount/more"
+msgstr "... і яшчэ %(deviceName)s: %(count)s"
+
+msgid "action/discount/percent"
+msgstr "%(value)s%%"
+
+msgid "action/discount/tradeInLabelText"
+msgstr "Залік"
+
+msgid "action/discount/xp"
+msgstr "%(count)s пкт. досведу"
+
+msgid "action/empty/btnLabel"
+msgstr "Перайсці ў Краму"
+
+msgid "action/empty/info"
+msgstr "Зараз няма ніякіх акцый. Сачыце за анонсамі."
+
+msgid "action/exchangeRate/gold2credit"
+msgstr "%(gold)s на %(credits)s"
+
+msgid "action/full/berthsPrices"
+msgstr ""
+"Разбудуйце Жаўнерню па выгаднай цане ў %(discount)s за 16 ложкаў. Жаўнерня "
+"служыць для размяшчэння танкістаў, якія не знаходзяцца ў складзе экіпажаў "
+"машын."
+
+msgid "action/full/calendar"
+msgstr ""
+"З 20 ліпеня абвяшчаем распродаж, дзе вас чакаюць істотныя зніжкі на прэміум "
+"тэхніку і іншую ўнутрыгульнявую маёмасць. Кожныя два дні — новая прапанова, "
+"таму ўважліва сачыце за Календаром распродажу, каб дакладна нічога не "
+"прапусціць!"
+
+msgid "action/full/changeRoleCost"
+msgstr ""
+"Змяніце спецыяльнасць вашых танкістаў са зніжкай %(discount)s. Гэта "
+"дапаможа, калі вам у экіпажы новай машыны не стае танкіста канкрэтнай "
+"спецыяльнасці, але ёсць свабодны танкіст іншай спецыяльнасці."
+
+msgid "action/full/clanCreationCost"
+msgstr ""
+"Стварыце клан і аб'яднайцеся з сябрамі, заплаціўшы за аперацыю менш "
+"звычайнай цаны."
+
+msgid "action/full/creditsDropSkillsCost"
+msgstr ""
+"Скіньце выбраныя навыкі танкістаў за крэдыты са зніжкай %(discount)s. Гэта "
+"дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі."
+
+msgid "action/full/creditsTankmanCost"
+msgstr ""
+"Навучыце або перавучыце экіпаж за крэдыты са зніжкай %(discount)s. Добра "
+"спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней "
+"рэалізоўваць яе патэнцыял."
+
+msgid "action/full/dropSkills/mixed"
+msgstr ""
+"Скіньце выбраныя навыкі танкістаў са зніжкай %(discount)s. Гэта дапаможа пры"
+" пераводзе экіпажа на машыну з іншай роллю ў баі."
+
+msgid "action/full/exchangeRate"
+msgstr ""
+"Абмяняйце золата на крэдыты па выгадным курсе %(discount)s. Такім чынам вы "
+"зэканоміце час і хутчэй купіце жаданую машыну, дарагое абсталяванне і г.д."
+
+msgid "action/full/femalePassportChangeCost"
+msgstr ""
+"Змяніце дакументы танкістам па зніжанай на %(discount)s цане. Паслуга "
+"ўключае ў сябе змену імя, прозвішча, а таксама фатаграфіі вашага танкіста."
+
+msgid "action/full/freeXPConversionDiscrecity"
+msgstr ""
+"Абмяняйце баявы досвед на вольны з большай выгадай. Вольны досвед можна "
+"выкарыстаць на даследаванне любой тэхнікі, модуля або на паляпшэнне навыкаў "
+"экіпажа."
+
+msgid "action/full/freeXPToTManXPRate"
+msgstr ""
+"Абмяняйце вольны досвед на досвед экіпажа ў %(discount)s р. выгадней. Чым "
+"больш дасведчаны экіпаж, тым больш навыкаў яму даступныя і, адпаведна, тым "
+"больш карысці ён прынясе ў баі."
+
+msgid "action/full/goldDropSkillsCost"
+msgstr ""
+"Скіньце выбраныя навыкі танкістаў за золата са зніжкай %(discount)s. Гэта "
+"дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі."
+
+msgid "action/full/goldTankmanCost"
+msgstr ""
+"Навучыце або перавучыце экіпаж за золата са зніжкай %(discount)s. Добра "
+"спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней "
+"рэалізоўваць яе патэнцыял."
+
+msgid "action/full/mul_ShellPrice"
+msgstr ""
+"Купляйце любыя снарады са зніжкай у %(discount)s. Купленыя ў запас "
+"боепрыпасы зэканомяць вам рэсурсы ў далейшым."
+
+msgid "action/full/paidRemovalCost"
+msgstr ""
+"Дэмантуйце абсталяванне па зніжанай цане: цяпер зніжка на дэмантаж складае "
+"%(discount)s. Дзякуючы гэтай акцыі вы зэканоміце золата пры змене "
+"абсталявання."
+
+msgid "action/full/passportChangeCost"
+msgstr ""
+"Змяніце дакументы танкістам па зніжанай на %(discount)s цане. Паслуга "
+"ўключае ў сябе змену імя, прозвішча, а таксама фатаграфіі вашага танкіста."
+
+msgid "action/full/premiumPacket14Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 14 дзён: %(discount)s"
+
+msgid "action/full/premiumPacket180Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 180 дзён: %(discount)s"
+
+msgid "action/full/premiumPacket1Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 1 дзень: %(discount)s"
+
+msgid "action/full/premiumPacket30Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 30 дзён: %(discount)s"
+
+msgid "action/full/premiumPacket360Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 360 дзён: %(discount)s"
+
+msgid "action/full/premiumPacket3Cost"
+msgstr "Выгадны кошт куплі або працягу прэміум акаўнту на 3 дні: %(discount)s"
+
+msgid "action/full/premiumPacket7Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 7 дзён: %(discount)s"
+
+msgid "action/full/premiumPacket90Cost"
+msgstr ""
+"Выгадны кошт куплі або працягу прэміум акаўнту на 90 дзён: %(discount)s"
+
+msgid "action/full/set_ShellPrice"
+msgstr ""
+"Купляйце любыя снарады са зніжкай у %(discount)s. Купленыя ў запас "
+"боепрыпасы зэканомяць вам рэсурсы ў далейшым."
+
+msgid "action/full/shell/creditsPriceMultiplier"
+msgstr ""
+"Купляйце снарады за крэдыты са зніжкай у %(discount)s. Папоўніўшы боезапас "
+"зараз, вы зэканоміце свае рэсурсы ў далейшым."
+
+msgid "action/full/shell/goldPriceMultiplier"
+msgstr ""
+"Купляйце снарады за золата са зніжкай у %(discount)s. Папоўніўшы боезапас "
+"зараз, вы зэканоміце свае рэсурсы ў далейшым."
+
+msgid "action/full/shell/mixed"
+msgstr ""
+"Купляйце любыя снарады са зніжкай у %(discount)s. Папоўніўшы боезапас зараз,"
+" вы зэканоміце свае рэсурсы ў далейшым."
+
+msgid "action/full/slotsPrices"
+msgstr ""
+"Разбудуйце Гараж па выгаднай цане ў %(discount)s. Цяпер для вашай новай "
+"машыны знойдзецца месца!"
+
+msgid "action/full/tankmen/mixed"
+msgstr ""
+"Навучыце або перавучыце экіпаж са зніжкай %(discount)s. Добра спрактыкаваны "
+"экіпаж палепшыць характарыстыкі машыны і дапаможа эфектыўней рэалізоўваць яе"
+" патэнцыял."
+
+msgid "action/full/tradeInSellPriceFactor"
+msgstr ""
+"Абмяняйце з даплатай старую прэміум машыну на новую, атрымаўшы залік у "
+"памеры %(discount)s ад актуальнага кошту старой прэміум машыны."
+
+msgid "action/full/vehicleBuyPrice"
+msgstr "Зніжка на куплю тэхнікі"
+
+msgid "action/full/vehicleRentPrice"
+msgstr ""
+"Бярыце напракат прэміум тэхніку са зніжкай. Цяпер апрабаваць жаданую прэміум"
+" машыну перад тым, як купляць, стала яшчэ выгадней."
+
+msgid "action/full/winXPFactorMode/always"
+msgstr ""
+"Множнік досведу за кожную перамогу за дзень для ўсёй тэхнікі складае "
+"×%(discount)s"
+
+msgid "action/full/winXPFactorMode/daily"
+msgstr ""
+"Множнік досведу за першую перамогу за дзень для ўсёй тэхнікі складае "
+"×%(discount)s"
+
+msgid "action/hero/full/berthsPrices"
+msgstr ""
+"Разбудуйце Жаўнерню па выгаднай цане ў %(discount)s за 16 ложкаў. Жаўнерня служыць для размяшчэння танкістаў, якія не знаходзяцца ў складзе экіпажаў машын.\n"
+"\n"
+"Рэкамендуем заўсёды мець некалькі вольных ложкаў у Жаўнерні на выпадак, калі вырашыце прадаць якую-небудзь машыну і вам спатрэбіцца захаваць яе экіпаж для іншай тэхнікі. Апроч таго, менавіта ў Жаўнерні можна вярнуць танкістаў, дэмабілізаваных наўмысна або памылкова."
+
+msgid "action/hero/full/calendar"
+msgstr ""
+"З 20 ліпеня абвяшчаем распродаж, дзе вас чакаюць істотныя зніжкі на прэміум "
+"тэхніку і іншую ўнутрыгульнявую маёмасць. Кожныя два дні — новая прапанова, "
+"таму ўважліва сачыце за Календаром распродажу, каб дакладна нічога не "
+"прапусціць!"
+
+msgid "action/hero/full/changeRoleCost"
+msgstr ""
+"Змяніце спецыяльнасць вашых танкістаў са зніжкай %(discount)s. Гэта дапаможа, калі вам у экіпажы новай машыны не стае танкіста канкрэтнай спецыяльнасці, але ёсць свабодны танкіст іншай спецыяльнасці. Зазвычай на машынах высокага ўзроўню няма радыста, бо яго функцыі выконвае іншы танкіст, напрыклад, камандзір экіпажу.\n"
+"Пасля таго, як вы даследуеце некалькі машын X узроўню, у вас у Жаўнерні могуць застацца дасведчаныя радысты, ад якіх цяпер будзе мала карысці. Перавучыце іх на новую спецыяльнасць і захавайце ўвесь досвед, які гэтыя танкісты паспелі здабыць."
+
+msgid "action/hero/full/clanCreationCost"
+msgstr ""
+"Стварыце клан і аб'яднайцеся з сябрамі, заплаціўшы за аперацыю менш звычайнай цаны. Быць пад сцягамі клана — значыць мець доступ да будаўніцтва і кіравання Умацаваным раёнам, удзелу ў кланавых турнірах, а таксама да баявых дзеянняў на Глабальнай карце.\n"
+"\n"
+"Высокая актыўнасць клана можа прынесці не толькі станоўчыя эмоцыі ад гутарак з аднадумцамі, але і кланавыя рэзервы, золата і нават узнагародную тэхніку. "
+
+msgid "action/hero/full/creditsDropSkillsCost"
+msgstr ""
+"Скіньце выбраныя навыкі танкістаў за крэдыты са зніжкай %(discount)s. Гэта дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі.\n"
+"\n"
+"Гэтая магчымасць будзе карыснай пры змене тыпу тэхнікі з захаваннем экіпажа або пры змене вашага стылю гульні: напрыклад, калі вы вырашыце выкарыстоўваць у баі тактыку скрытасці або пераведзяце экіпаж з цяжкага танка на СТ-САУ, то прыярытэтным навыкам будзе «Маскіроўка»."
+
+msgid "action/hero/full/creditsTankmanCost"
+msgstr ""
+"Навучыце або перавучыце экіпаж за крэдыты са зніжкай %(discount)s. Добра спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней рэалізоўваць яе патэнцыял.\n"
+"\n"
+"Звярніце ўвагу, што характарыстыкі машыны ў Гаражы паказаны з улікам экіпажу, спрактыкаванага на 100%%. Такім чынам, калі ў бой уступіць слабейшы экіпаж, характарыстыкі машыны будуць ніжэйшыя за заяўленыя ў Гаражы."
+
+msgid "action/hero/full/dropSkills/mixed"
+msgstr ""
+"Скіньце выбраныя навыкі танкістаў са зніжкай %(discount)s. Гэта дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі.\n"
+"\n"
+"Гэтая магчымасць будзе карыснай пры змене тыпу тэхнікі з захаваннем экіпажа або пры змене вашага стылю гульні: напрыклад, калі вы вырашыце выкарыстоўваць у баі тактыку скрытасці або пераведзяце экіпаж з цяжкага танка на СТ-САУ, то прыярытэтным навыкам будзе «Маскіроўка»."
+
+msgid "action/hero/full/exchangeRate"
+msgstr ""
+"Абмяняйце золата на крэдыты па выгадным курсе %(discount)s. Такім чынам вы зэканоміце час і хутчэй купіце жаданую машыну, дарагое абсталяванне і іншую ўнутрыгульнявую маёмасць.\n"
+"\n"
+"Не забывайцеся, што машыны Х узроўню зазвычай даволі затратныя, таму, каб вам заўсёды ставала на папаўненне боезапасу, рыштунку і рамонт машыны, старайцеся падтрымліваць баланс крэдытаў на належным узроўні."
+
+msgid "action/hero/full/femalePassportChangeCost"
+msgstr ""
+"Змяніце дакументы танкістам па зніжанай на %(discount)s цане. Ваш экіпаж — надзейны памочнік у баі, таму ён заслугоўвае быць адметным.\n"
+"\n"
+"Збярыце ў адной машыне ўнікальны экіпаж з сяброў і знаёмых або вядомых гістарычных асоб. Паслуга ўключае ў сябе змену імя, прозвішча, а таксама фатаграфіі вашага танкіста."
+
+msgid "action/hero/full/freeXPConversionDiscrecity"
+msgstr ""
+"Абмяняйце баявы досвед на вольны з большай выгадай. Вольны досвед можна выкарыстаць на даследаванне любой тэхнікі, модуля або на паляпшэнне навыкаў экіпажа.\n"
+"За вольны досвед можна адразу адкрыць жаданую машыну. Вам нават не давядзецца гуляць на ўсіх папярэдніх машынах у галіне: можна проста даследаваць усе гэтыя машыны і адразу перайсці да патрэбнай. Такім чынам, вольны досвед — самы эфектыўны сродак эканоміі часу."
+
+msgid "action/hero/full/freeXPToTManXPRate"
+msgstr ""
+"Абмяняйце вольны досвед на досвед экіпажа ў %(discount)s р. выгадней. Чым "
+"больш дасведчаны экіпаж, тым больш навыкаў яму даступныя і, адпаведна, тым "
+"больш карысці ён прынясе ў баі. Памятайце, што ёсць пэўныя першасныя навыкі,"
+" такія як «Рамонт» і «Маскіроўка» (калі вы аддаяце перавагу скрытасці), без "
+"вывучэння якіх вам будзе значна складаней рэалізоўваць баявы патэнцыял "
+"машыны. Абмен вольнага досведу на досвед экіпажа дапаможа рушыць да бою ў "
+"поўным узбраенні."
+
+msgid "action/hero/full/goldDropSkillsCost"
+msgstr ""
+"Скіньце выбраныя навыкі танкістаў за золата са зніжкай %(discount)s. Гэта дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі.\n"
+"\n"
+"Гэтая магчымасць будзе карыснай пры змене тыпу тэхнікі з захаваннем экіпажа або пры змене вашага стылю гульні: напрыклад, калі вы вырашыце выкарыстоўваць у баі тактыку скрытасці або пераведзяце экіпаж з цяжкага танка на СТ-САУ, то прыярытэтным навыкам будзе «Маскіроўка»."
+
+msgid "action/hero/full/goldTankmanCost"
+msgstr ""
+"Навучыце або перавучыце экіпаж за золата са зніжкай %(discount)s. Добра спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней рэалізоўваць яе патэнцыял.\n"
+"\n"
+"Звярніце ўвагу, што характарыстыкі машыны ў Гаражы паказаны з улікам экіпажу, спрактыкаванага на 100%%. Такім чынам, калі ў бой уступіць слабейшы экіпаж, характарыстыкі машыны будуць ніжэйшыя за заяўленыя ў Гаражы."
+
+msgid "action/hero/full/mul_ShellPrice"
+msgstr ""
+"Купляйце любыя снарады са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
+"\n"
+"Звярніце ўвагу, што гармату, да якой вы купляеце снарады, можна ўсталяваць на шмат якія машыны. Такім чынам, купіўшы ў запас самыя распаўсюджаныя снарады для дзяржавы, тэхніцы якой вы аддаяце перавагу ў гульні, вы надоўга забяспечыце боепрыпасамі мноства сваіх машын."
+
+msgid "action/hero/full/paidRemovalCost"
+msgstr ""
+"Дэмантуйце абсталяванне па зніжанай цане: цяпер зніжка на дэмантаж складае %(discount)s. Дзякуючы гэтай акцыі вы зэканоміце золата пры змене абсталявання.\n"
+" Набыццё поўнага камплекта абсталявання на новую машыну можа быць вельмі затратным, таму мае сэнс зняць абсталяванне са старой машыны, заплаціўшы крыху золата, і перакінуць яго на новую."
+
+msgid "action/hero/full/passportChangeCost"
+msgstr ""
+"Змяніце дакументы танкістам па зніжанай на %(discount)s цане. Ваш экіпаж — надзейны памочнік у баі, таму ён заслугоўвае быць адметным.\n"
+"\n"
+"Збярыце ў адной машыне ўнікальны экіпаж з сяброў і знаёмых або вядомых гістарычных асоб. Паслуга ўключае ў сябе змену імя, прозвішча, а таксама фатаграфіі вашага танкіста."
+
+msgid "action/hero/full/premiumPacket14Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 14 дзён: %(discount)s"
+
+msgid "action/hero/full/premiumPacket180Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 180 дзён: %(discount)s"
+
+msgid "action/hero/full/premiumPacket1Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 1 дзень: %(discount)s"
+
+msgid "action/hero/full/premiumPacket30Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 30 дзён: %(discount)s"
+
+msgid "action/hero/full/premiumPacket360Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 360 дзён: %(discount)s"
+
+msgid "action/hero/full/premiumPacket3Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 3 дні: %(discount)s"
+
+msgid "action/hero/full/premiumPacket7Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт куплі або працягу прэміум акаўнту на 7 дзён: %(discount)s"
+
+msgid "action/hero/full/premiumPacket90Cost"
+msgstr ""
+"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Выгадны кошт прэміум акаўнту (або яго працягу) на 90 дзён: %(discount)s"
+
+msgid "action/hero/full/set_ShellPrice"
+msgstr ""
+"Купляйце любыя снарады са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
+"\n"
+"Звярніце ўвагу, што гармату, да якой вы купляеце снарады, можна ўсталяваць на шмат якія машыны. Такім чынам, купіўшы ў запас самыя распаўсюджаныя снарады для дзяржавы, тэхніцы якой вы аддаяце перавагу ў гульні, вы надоўга забяспечыце боепрыпасамі мноства сваіх машын."
+
+msgid "action/hero/full/shell/creditsPriceMultiplier"
+msgstr ""
+"Купляйце снарады за крэдыты са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
+"\n"
+"Звярніце ўвагу, што гармату, да якой вы купляеце снарады, можна ўсталяваць на шмат якія машыны. Такім чынам, купіўшы ў запас самыя распаўсюджаныя снарады для дзяржавы, тэхніцы якой вы аддаяце перавагу ў гульні, вы надоўга забяспечыце боепрыпасамі мноства сваіх машын."
+
+msgid "action/hero/full/shell/goldPriceMultiplier"
+msgstr ""
+"Купляйце снарады за золата са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
+"\n"
+"Звярніце ўвагу, што гармату, да якой вы купляеце снарады, можна ўсталяваць на шмат якія машыны. Такім чынам, купіўшы ў запас самыя распаўсюджаныя снарады для дзяржавы, тэхніцы якой вы аддаяце перавагу ў гульні, вы надоўга забяспечыце боепрыпасамі мноства сваіх машын."
+
+msgid "action/hero/full/shell/mixed"
+msgstr ""
+"Купляйце любыя снарады са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
+"\n"
+"Звярніце ўвагу, што гармату, да якой вы купляеце снарады, можна ўсталяваць на шмат якія машыны. Такім чынам, купіўшы ў запас самыя распаўсюджаныя снарады для дзяржавы, тэхніцы якой вы аддаяце перавагу ў гульні, вы надоўга забяспечыце боепрыпасамі мноства сваіх машын."
+
+msgid "action/hero/full/slotsPrices"
+msgstr ""
+"Разбудуйце Гараж па выгаднай цане ў %(discount)s. Часта здараецца так, што ў Гаражы ўжо няма месца, а прадаваць што-небудзь з наяўнай тэхнікі зусім не хочацца.\n"
+"\n"
+"Цяпер і для новай машыны знойдзецца месца! Не забывайцеся, што дзякуючы зручнай сістэме фільтрацыі тэхнікі ў Гаражы вы ніколі не заблытаецеся ў вялікай колькасці машын, якія захоўваюцца ў ім."
+
+msgid "action/hero/full/tankmen/mixed"
+msgstr ""
+"Навучыце або перавучыце экіпаж са зніжкай %(discount)s. Добра спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней рэалізоўваць яе патэнцыял.\n"
+"\n"
+"Звярніце ўвагу, што характарыстыкі машыны ў Гаражы паказаны з улікам экіпажу, спрактыкаванага на 100%%. Такім чынам, калі ў бой уступіць слабейшы экіпаж, характарыстыкі машыны будуць ніжэйшыя за заяўленыя ў Гаражы."
+
+msgid "action/hero/full/tradeInSellPriceFactor"
+msgstr ""
+"Абмяняйце з даплатай старую прэміум машыну на новую, атрымаўшы залік у "
+"памеры ў %(discount)s ад актуальнага кошту старой прэміум машыны. Гэтая "
+"акцыя — добрая магчымасць зэканоміць золата пры абмене тэхнікі. Уважліва "
+"вывучыце спісы як даступных для атрымання машын, так і тых, якія ёсць у вас "
+"у Гаражы. Палічыце, у якім выпадку абмен будзе для вас найбольш выгадным."
+
+msgid "action/label/battleQuests"
+msgstr "Баявых задач: %(count)s"
+
+msgid "action/more/type/customizations"
+msgstr "элементаў выгляду машыны"
+
+msgid "action/more/type/equipment"
+msgstr "адз. рыштунку"
+
+msgid "action/more/type/goodies"
+msgstr "асабістых рэзерваў"
+
+msgid "action/more/type/optionalDevices"
+msgstr "адз. абсталявання"
+
+msgid "action/more/type/vehicles"
+msgstr "машын"
+
+msgid "action/short/berthsPrices"
+msgstr "Выгадны кошт %(discount)s на разбудову Жаўнерні"
+
+msgid "action/short/calendar"
+msgstr "КАЛЯНДАР РАСПРОДАЖУ"
+
+msgid "action/short/changeRoleCost"
+msgstr "Зніжка %(discount)s на змену спецыяльнасці танкістаў"
+
+msgid "action/short/clanCreationCost"
+msgstr "Зніжка %(discount)s на стварэнне клана"
+
+msgid "action/short/creditsDropSkillsCost"
+msgstr "Зніжка %(discount)s на скідванне навыкаў танкістаў за крэдыты"
+
+msgid "action/short/creditsTankmanCost"
+msgstr "Зніжка %(discount)s на навучанне і перавучванне экіпажу за крэдыты"
+
+msgid "action/short/dropSkills/mixed"
+msgstr "Зніжка %(discount)s на скідванне навыкаў танкістаў"
+
+msgid "action/short/equipment/creditsPriceMultiplier"
+msgstr "Зніжка да %(discount)s на куплю рыштунку"
+
+msgid "action/short/equipment/goldPriceMultiplier"
+msgstr "Зніжка да %(discount)s на куплю рыштунку за золата"
+
+msgid "action/short/equipment/mixed"
+msgstr "Зніжка да %(discount)s на куплю рыштунку"
+
+msgid "action/short/exchangeRate"
+msgstr "Выгадны курс %(discount)s на абмен золата на крэдыты"
+
+msgid "action/short/femalePassportChangeCost"
+msgstr "Зніжка %(discount)s на змену дакументаў танкістаў"
+
+msgid "action/short/freeXPConversionDiscrecity"
+msgstr "%(discount)s да абмену баявога досведу на вольны"
+
+msgid "action/short/freeXPToTManXPRate"
+msgstr "Бонус %(discount)s да абмену вольнага досведу на досвед экіпажу"
+
+msgid "action/short/goldDropSkillsCost"
+msgstr "Зніжка %(discount)s на скідванне навыкаў танкістаў за золата"
+
+msgid "action/short/goldTankmanCost"
+msgstr "Зніжка %(discount)s на навучанне і перавучванне экіпажу за золата"
+
+msgid "action/short/mul_EquipmentPrice"
+msgstr "Зніжка да %(discount)s на куплю рыштунку"
+
+msgid "action/short/mul_GoodiePrice"
+msgstr "Зніжка да %(discount)s на куплю асабістых рэзерваў"
+
+msgid "action/short/mul_GoodiePriceAll"
+msgstr "Зніжка да %(discount)s на куплю асабістых рэзерваў"
+
+msgid "action/short/mul_OptionalDevicePrice"
+msgstr "Зніжка на куплю абсталявання %(discount)s"
+
+msgid "action/short/mul_OptionalDevicePriceAll"
+msgstr "Зніжка да %(discount)s на куплю абсталявання"
+
+msgid "action/short/mul_PriceGroupPrice"
+msgstr "Зніжка да %(discount)s на куплю элементаў выгляду машыны"
+
+msgid "action/short/mul_PriceGroupPriceAll"
+msgstr "Зніжка да %(discount)s на куплю элементаў выгляду машыны"
+
+msgid "action/short/mul_PriceGroupPriceByTag"
+msgstr "Зніжка да %(discount)s на куплю элементаў выгляду машыны"
+
+msgid "action/short/mul_ShellPrice"
+msgstr "Зніжка на куплю снарадаў %(discount)s"
+
+msgid "action/short/paidRemovalCost"
+msgstr "Зніжка %(discount)s на дэмантаж абсталявання"
+
+msgid "action/short/passportChangeCost"
+msgstr "Зніжка %(discount)s на змену дакументаў танкістаў"
+
+msgid "action/short/premiumPacket14Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 14 дзён — %(discount)s"
+
+msgid "action/short/premiumPacket180Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 180 дзён — %(discount)s"
+
+msgid "action/short/premiumPacket1Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 1 дзень — %(discount)s"
+
+msgid "action/short/premiumPacket30Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 30 дзён — %(discount)s"
+
+msgid "action/short/premiumPacket360Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 360 дзён — %(discount)s"
+
+msgid "action/short/premiumPacket3Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 3 дні — %(discount)s"
+
+msgid "action/short/premiumPacket7Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 7 дзён — %(discount)s"
+
+msgid "action/short/premiumPacket90Cost"
+msgstr "Прэміум акаўнт за выгадны кошт: 90 дзён — %(discount)s"
+
+msgid "action/short/set_EquipmentPrice"
+msgstr "Зніжка да %(discount)s на куплю рыштунку"
+
+msgid "action/short/set_GoodiePrice"
+msgstr "Зніжка да %(discount)s на куплю асабістых рэзерваў"
+
+msgid "action/short/set_OptionalDevicePrice"
+msgstr "Зніжка на куплю абсталявання %(discount)s"
+
+msgid "action/short/set_PriceGroupPrice"
+msgstr "Зніжка да %(discount)s на куплю элементаў выгляду машыны"
+
+msgid "action/short/set_ShellPrice"
+msgstr "Зніжка на куплю снарадаў %(discount)s"
+
+msgid "action/short/shell/creditsPriceMultiplier"
+msgstr "Зніжка да %(discount)s на куплю снарадаў за крэдыты"
+
+msgid "action/short/shell/goldPriceMultiplier"
+msgstr "Зніжка да %(discount)s на куплю снарадаў за золата"
+
+msgid "action/short/shell/mixed"
+msgstr "Зніжка да %(discount)s на куплю любых снарадаў"
+
+msgid "action/short/slotsPrices"
+msgstr "Выгадны кошт %(discount)s на куплю слотаў у Гаражы"
+
+msgid "action/short/tankmen/mixed"
+msgstr "Зніжка %(discount)s на навучанне і перавучванне экіпажу"
+
+msgid "action/short/tradeInSellPriceFactor"
+msgstr "Залік у памеры %(discount)s пры абмене тэхнікі"
+
+msgid "action/short/vehicleBuyPrice/more"
+msgstr "Зніжка да %(discount)s на куплю %(vehicles)s і іншай тэхнікі"
+
+msgid "action/short/vehicleBuyPrice/one"
+msgstr "%(vehicles)s па выгаднай цане ў %(discount)s"
+
+msgid "action/short/vehicleBuyPrice/two"
+msgstr "Зніжка да %(discount)s на куплю %(vehicles)s"
+
+msgid "action/short/vehicleRentPrice/more"
+msgstr "Зніжка да %(discount)s на пракат %(vehicles)s і іншай тэхнікі"
+
+msgid "action/short/vehicleRentPrice/one"
+msgstr "Пракат %(vehicles)s па выгаднай цане %(discount)s"
+
+msgid "action/short/vehicleRentPrice/two"
+msgstr "Зніжка да %(discount)s на пракат %(vehicles)s"
+
+msgid "action/short/winXPFactorMode/always"
+msgstr "Бонус ×%(discount)s да баявога досведу за кожную перамогу"
+
+msgid "action/short/winXPFactorMode/daily"
+msgstr "Бонус ×%(discount)s да баявога досведу за першую перамогу за дзень"
+
+msgid "action/subheader/calendar"
+msgstr "ГАРАЧЫЯ ПРАПАНОВЫ!"
+
+msgid "action/time/finish"
+msgstr "Заканчэнне:"
+
+msgid "action/time/left"
+msgstr "Засталося:"
+
+msgid "battleCondition/state/completed"
+msgstr "Выканана"
+
+msgid "battleCondition/state/completed_perfectly"
+msgstr "Выканана з адзнакай"
+
+msgid "battleCondition/state/failed"
+msgstr "Скончылася няўдала"
+
+msgid "battleCondition/state/in_progress"
+msgstr "Выконваецца"
+
+msgid "battleCondition/task/status/done"
+msgstr "Выканана!"
+
+msgid "battleCondition/task/status/failed"
+msgstr "Скончылася няўдала!"
+
+msgid "battleProgress/afterBattleResult"
+msgstr "будзе вядомы па заканчэнні бою"
+
+msgid "battleProgress/alertLabel/repairModules"
+msgstr "Адрамантуйце пашкоджаныя модулі"
+
+msgid "battleProgress/alertLabel/title"
+msgstr "Увага"
+
+msgid "battleProgress/damageLeft"
+msgstr "%(formattedProgress)s Засталося пашкодзіць: %(left)s"
+
+msgid "battleProgress/killsLeft"
+msgstr "%(formattedProgress)s Засталося знішчыць: %(left)s"
+
+msgid "battleProgress/limitedByTime"
+msgstr "%(formattedProgress)s Засталося: %(left)s Час: %(timeLeft)s"
+
+msgid "battleProgress/position/advantage"
+msgstr "%(formattedProgress)s Адрыў:%(advantage)s Месца: %(position)s"
+
+msgid "battleProgress/position/left"
+msgstr "%(formattedProgress)s Засталося:%(left)s Месца: %(position)s"
+
+msgid "battleProgress/position/short"
+msgstr "%(formattedProgress)s Месца: %(position)s"
+
+msgid "bonusName/attendance_reward"
+msgstr "?empty?"
+
+msgid "bonusName/battlePassPoints"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "bonusName/battlePassPoints/preview"
+msgstr "Ачкі Баявога пропуска: "
+
+msgid "bonusName/battle_bonus_x5"
+msgstr "Задача на x5 досведу за бой"
+
+msgid "bonusName/berths"
+msgstr "Ложкаў у Жаўнерні"
+
+msgid "bonusName/blueprints/any"
+msgstr "Фрагменты чарцяжоў:"
+
+msgid "bonusName/blueprints/nation"
+msgstr "Нацыянальны фрагмент чарцяжа (%(nationName)s):"
+
+msgid "bonusName/blueprints/nation/any"
+msgstr "Нацыянальныя фрагменты чарцяжоў:"
+
+msgid "bonusName/blueprints/universal"
+msgstr "Універсальных фрагментаў чарцяжоў:"
+
+msgid "bonusName/blueprints/vehicle"
+msgstr "Фрагментаў чарцяжоў машыны %(vehicleName)s:"
+
+msgid "bonusName/blueprints/vehicle/any"
+msgstr "Фрагменты чарцяжоў тэхнікі:"
+
+msgid "bonusName/bpcoin"
+msgstr "Жэтоны"
+
+msgid "bonusName/brcoin"
+msgstr "Сталёвыя пячаткі"
+
+msgid "bonusName/camouflage"
+msgstr "Камуфляж"
+
+msgid "bonusName/completionTokens"
+msgstr "Кампаненты"
+
+msgid "bonusName/completionTokens_1_1"
+msgstr "Сілавая ўстаноўка StuG IV"
+
+msgid "bonusName/completionTokens_1_2"
+msgstr "Корпус StuG IV"
+
+msgid "bonusName/completionTokens_1_3"
+msgstr "Шасі StuG IV"
+
+msgid "bonusName/completionTokens_1_4"
+msgstr "Гармата StuG IV"
+
+msgid "bonusName/completionTokens_1_5"
+msgstr "Радыёстанцыя StuG IV"
+
+msgid "bonusName/completionTokens_2_1"
+msgstr "Сілавая ўстаноўка T28 HTC"
+
+msgid "bonusName/completionTokens_2_2"
+msgstr "Корпус T28 HTC"
+
+msgid "bonusName/completionTokens_2_3"
+msgstr "Шасі T28 HTC"
+
+msgid "bonusName/completionTokens_2_4"
+msgstr "Гармата T28 HTC"
+
+msgid "bonusName/completionTokens_2_5"
+msgstr "Радыёстанцыя T28 HTC"
+
+msgid "bonusName/completionTokens_3_1"
+msgstr "Сілавая ўстаноўка Т 55А"
+
+msgid "bonusName/completionTokens_3_2"
+msgstr "Корпус і вежа Т 55А"
+
+msgid "bonusName/completionTokens_3_3"
+msgstr "Шасі Т 55А"
+
+msgid "bonusName/completionTokens_3_4"
+msgstr "Гармата Т 55А"
+
+msgid "bonusName/completionTokens_3_5"
+msgstr "Радыёстанцыя Т 55А"
+
+msgid "bonusName/completionTokens_4_1"
+msgstr "Сілавая ўстаноўка Аб. 260"
+
+msgid "bonusName/completionTokens_4_2"
+msgstr "Корпус і вежа Аб. 260"
+
+msgid "bonusName/completionTokens_4_3"
+msgstr "Шасі Аб. 260"
+
+msgid "bonusName/completionTokens_4_4"
+msgstr "Гармата Аб. 260"
+
+msgid "bonusName/completionTokens_4_5"
+msgstr "Радыёстанцыя Аб. 260"
+
+msgid "bonusName/completionTokens_5_1"
+msgstr "Чарцяжы рухавіка L50"
+
+msgid "bonusName/completionTokens_5_2"
+msgstr "Чарцяжы тарсіённага шасі"
+
+msgid "bonusName/completionTokens_5_3"
+msgstr "Чарцяжы корпуса з бранярубкай"
+
+msgid "bonusName/completionTokens_5_4"
+msgstr "Чарцяжы 76-мм гармата"
+
+msgid "bonusName/completionTokens_6_1"
+msgstr "Чарцяжы рухавіка Mk. XI SC"
+
+msgid "bonusName/completionTokens_6_2"
+msgstr "Чарцяжы тарсіённага шасі"
+
+msgid "bonusName/completionTokens_6_3"
+msgstr "Чарцяжы корпуса і вежы"
+
+msgid "bonusName/completionTokens_6_4"
+msgstr "Чарцяжы гарматы QF 5-in."
+
+msgid "bonusName/completionTokens_7_1"
+msgstr "Чарцяжы рухавіка В-11-НЦ"
+
+msgid "bonusName/completionTokens_7_2"
+msgstr "Чарцяжы чатырохгусенічнага шасі"
+
+msgid "bonusName/completionTokens_7_3"
+msgstr "Чарцяжы корпуса і вежы"
+
+msgid "bonusName/completionTokens_7_4"
+msgstr "Чарцяжы 122-мм гарматы М62-Т2А"
+
+msgid "bonusName/credits"
+msgstr "Крэдыты"
+
+msgid "bonusName/creditsFactor"
+msgstr "Каэфіцыент крэдытаў"
+
+msgid "bonusName/crew_bonus_x3"
+msgstr "?empty?"
+
+msgid "bonusName/crystal"
+msgstr "Боны"
+
+msgid "bonusName/dailyXPFactor"
+msgstr "Каэфіцыент баявога досведу"
+
+msgid "bonusName/daily_quests_rewards"
+msgstr "Больш узнагарод у штодзённых задачах"
+
+msgid "bonusName/decal"
+msgstr "Дэколь"
+
+msgid "bonusName/emblem"
+msgstr "Эмблема"
+
+msgid "bonusName/entitlements/ny25_marketplace_unlock"
+msgstr "Открыт доступ к покупке стилей прошлых лет!"
+
+msgid "bonusName/entitlements/ranked_2020_discount"
+msgstr "Павелічэнне зніжкі"
+
+msgid "bonusName/entitlements/ranked_202203_access"
+msgstr "Доступ да куплі"
+
+msgid "bonusName/entitlements/testEntitlement"
+msgstr "Тестовый энтайтлемент"
+
+msgid "bonusName/equipCoin"
+msgstr "Кампаненты"
+
+msgid "bonusName/eventCoin"
+msgstr "Асаблівая валюта падзеі"
+
+msgid "bonusName/excluded_map"
+msgstr "Выключаная мапа"
+
+msgid "bonusName/exclusive_vehicle"
+msgstr "Эксклюзіўная тэхніка"
+
+msgid "bonusName/freeTokens"
+msgstr "Бланк загаду"
+
+msgid "bonusName/freeXP"
+msgstr "Вольны досвед"
+
+msgid "bonusName/freeXPFactor"
+msgstr "Каэфіцыент вольнага досведу"
+
+msgid "bonusName/free_equipment_demounting"
+msgstr "Бясплатны дэмантаж штатнага абсталявання"
+
+msgid "bonusName/gold"
+msgstr "Золата"
+
+msgid "bonusName/gold_bank"
+msgstr "Сховішча золата"
+
+msgid "bonusName/idle_crew_xp"
+msgstr "Курс падрыхтоўкі экіпажа"
+
+msgid "bonusName/inscription"
+msgstr "Надпіс"
+
+msgid "bonusName/modification"
+msgstr "Эфект"
+
+msgid "bonusName/newYearSlot"
+msgstr "Новогодний слот"
+
+msgid "bonusName/ny22Fillers"
+msgstr "Антиповторитель"
+
+msgid "bonusName/paint"
+msgstr "Фарба"
+
+msgid "bonusName/personalNumber"
+msgstr "Трохзначны нумар"
+
+msgid "bonusName/premium"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "bonusName/premium_plus"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "bonusName/projectionDecal"
+msgstr "Дэколь"
+
+msgid "bonusName/rankedBonusBattles"
+msgstr "Стандартны прызавы бой."
+
+msgid "bonusName/rankedDailyBattles"
+msgstr "Штодзённы прызавы бой."
+
+msgid "bonusName/slots"
+msgstr "Слоты ў Гаражы"
+
+msgid "bonusName/style"
+msgstr "Стыль"
+
+msgid "bonusName/tankmen/no_skills"
+msgstr "Экіпаж"
+
+msgid "bonusName/tankmen/with_skills"
+msgstr "Укамплектаваны экіпаж"
+
+msgid "bonusName/tankmenXP"
+msgstr "Досвед экіпажа"
+
+msgid "bonusName/tankmenXPFactor"
+msgstr "Каэфіцыент досведу экіпажу"
+
+msgid "bonusName/team_credits_bonus"
+msgstr "Камандны бонус да крэдытаў"
+
+msgid "bonusName/xp"
+msgstr "Баявы досвед"
+
+msgid "bonusName/xpFactor"
+msgstr "Каэфіцыент баявога досведу"
+
+msgid "bonuses/boosters/name"
+msgstr "Асабісты рэзерв: «%(name)s» (×%(count)s)"
+
+msgid "bonuses/bpcoin/description"
+msgstr "%(value)s жэтонаў"
+
+msgid "bonuses/compensation/body"
+msgstr ""
+"Гэтая ўзнагарода — кампенсацыя за ўнутрыгульнявую маёмасць, якую вы ўжо "
+"маеце."
+
+msgid "bonuses/compensation/header"
+msgstr "Кампенсацыя"
+
+msgid "bonuses/credits/description"
+msgstr "%(value)s крэдытаў"
+
+msgid "bonuses/crewBook/text"
+msgstr "%(name)s (x%(value)d)"
+
+msgid "bonuses/crewSkin/text"
+msgstr "Аблічча экіпажа: %(firstName)s %(lastName)s (x%(value)d)"
+
+msgid "bonuses/crystal/description"
+msgstr "%(value)s бонаў"
+
+msgid "bonuses/customization/value"
+msgstr "x%(count)s"
+
+msgid "bonuses/discount/name"
+msgstr "%(name)s %(targetName)s памерам %(effectValue)s (×%(count)s)"
+
+msgid "bonuses/dossier/achive"
+msgstr "Медаль: %(name)s"
+
+msgid "bonuses/dossier/badge"
+msgstr "Нашыўка: %(name)s"
+
+msgid "bonuses/equipCoin/description"
+msgstr "%(value)s кампанентаў"
+
+msgid "bonuses/eventCoin/description"
+msgstr "%(value)s юбілейных манет"
+
+msgid "bonuses/freeXP/description"
+msgstr "%(value)s вольнага досведу"
+
+msgid "bonuses/gold/description"
+msgstr "%(value)s золата"
+
+msgid "bonuses/item/additionBonus"
+msgstr "За выкананне дадатковых умоў:"
+
+msgid "bonuses/item/berths"
+msgstr "Ложкаў у Жаўнерні:"
+
+msgid "bonuses/item/creditsFactor"
+msgstr "каэфіцыент крэдытаў"
+
+msgid "bonuses/item/crewSkin"
+msgstr "Аблічча экіпажа:"
+
+msgid "bonuses/item/earlyAccessToken"
+msgstr "Жэтоны ранняга доступу"
+
+msgid "bonuses/item/freeXPFactor"
+msgstr "каэфіцыент вольнага досведу"
+
+msgid "bonuses/item/lockpick"
+msgstr "Адмычка"
+
+msgid "bonuses/item/lootBoxKey"
+msgstr "Ключ"
+
+msgid "bonuses/item/lootBoxes"
+msgstr "Кантэйнер"
+
+msgid "bonuses/item/premium"
+msgstr "Агульны прэміум акаўнт (сут):"
+
+msgid "bonuses/item/premiumPlus"
+msgstr "Танкавы прэміум акаўнт (сут):"
+
+msgid "bonuses/item/slots"
+msgstr "Слоты ў Гаражы:"
+
+msgid "bonuses/item/tankman"
+msgstr "Навабранец"
+
+msgid "bonuses/item/tankmen/no_skills"
+msgstr "Для %(vehName)s: экіпаж, спрактыкаваны на %(roleLevel)d%%."
+
+msgid "bonuses/item/tankmen/with_skills"
+msgstr ""
+"Для %(vehName)s: %(roleLevel)d%%-ы экіпаж (навыкаў на экіпаж: %(skills)d)."
+
+msgid "bonuses/item/tankmenXP"
+msgstr "досвед экіпажу"
+
+msgid "bonuses/item/tankmenXPFactor"
+msgstr "каэфіцыент досведу экіпажу"
+
+msgid "bonuses/item/tankwoman"
+msgstr "Танкістка"
+
+msgid "bonuses/item/xpFactor"
+msgstr "каэфіцыент баявога досведу"
+
+msgid "bonuses/items/name"
+msgstr "%(name)s (×%(count)s)"
+
+msgid "bonuses/notAvailable"
+msgstr "Узнагарода недаступная"
+
+msgid "bonuses/premium_plus/description"
+msgstr "Дзён Танкавага прэміум акаўнту: %(value)s"
+
+msgid "bonuses/tankmen/description"
+msgstr "%(value)s"
+
+msgid "bonuses/variadicDiscount/buttonLabel"
+msgstr "Выбрать"
+
+msgid "bonuses/variadicDiscount/discountAmount"
+msgstr "-{amount}%"
+
+msgid "bonuses/vehicles/crewLvl"
+msgstr "%d%% экіпаж"
+
+msgid "bonuses/vehicles/description"
+msgstr "%(value)s"
+
+msgid "bonuses/vehicles/name"
+msgstr "%(name)s (%(vehInfo)s)"
+
+msgid "bonuses/vehicles/rentDays"
+msgstr "сутак пракату: "
+
+msgid "classes/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "classes/SPG"
+msgstr "САУ"
+
+msgid "classes/heavyTank"
+msgstr "Цяжкія танкі"
+
+msgid "classes/lightTank"
+msgstr "Лёгкія танкі"
+
+msgid "classes/mediumTank"
+msgstr "Сярэднія танкі"
+
+msgid "classes/small/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "classes/small/SPG"
+msgstr "САУ"
+
+msgid "classes/small/heavyTank"
+msgstr "ЦТ"
+
+msgid "classes/small/lightTank"
+msgstr "ЛТ"
+
+msgid "classes/small/mediumTank"
+msgstr "СТ"
+
+msgid "dailyQuests/body/reroll"
+msgstr "Замена задачы"
+
+msgid "dailyQuests/bonus/tooltipDescription"
+msgstr "Выканайце 3 стандартныя задачы, каб атрымаць бонусную."
+
+msgid "dailyQuests/bonus/tooltipTitle"
+msgstr "Бонусная задача"
+
+msgid "dailyQuests/bonusQuest/bonusMissionTitle"
+msgstr "Бонусная задача"
+
+msgid "dailyQuests/bonusQuest/countDown_hrs"
+msgstr "Заканчваецца праз %H гадз %M хв"
+
+msgid "dailyQuests/bonusQuest/countDown_minSec"
+msgstr "Заканчваецца праз %MM:%SS"
+
+msgid "dailyQuests/condition/destroyModule_few"
+msgstr "Выканаць %(value)d крытычныя траплянні ў баі"
+
+msgid "dailyQuests/condition/destroyModule_few_accum"
+msgstr "Выканаць %(value)d крытычныя траплянні"
+
+msgid "dailyQuests/condition/destroyModule_plural"
+msgstr "Выканаць %(value)d крытычных траплянняў у баі"
+
+msgid "dailyQuests/condition/destroyModule_plural_accum"
+msgstr "Выканаць %(value)d крытычных траплянняў"
+
+msgid "dailyQuests/condition/destroyVeh_few"
+msgstr "Знішчыць %(value)d адз. тэхнікі за бой"
+
+msgid "dailyQuests/condition/destroyVeh_few_accum"
+msgstr "Знішчыць %(value)d адз. тэхнікі"
+
+msgid "dailyQuests/condition/destroyVeh_plural"
+msgstr "Знішчыць %(value)d адз. тэхнікі за бой"
+
+msgid "dailyQuests/condition/destroyVeh_plural_accum"
+msgstr "Знішчыць %(value)d адз. тэхнікі"
+
+msgid "dailyQuests/condition/destroyVeh_singular"
+msgstr "Знішчыць %(value)d адз. тэхнікі за бой"
+
+msgid "dailyQuests/condition/dmgTop"
+msgstr "Трапіць у топ-%(value)d сваёй каманды паводле пашкоджанняў"
+
+msgid "dailyQuests/condition/dmgTop_first"
+msgstr "Заняць першае месца ў сваёй камандзе паводле пашкоджанняў\t"
+
+msgid "dailyQuests/condition/doDamage"
+msgstr "Прычыніць %(value)d адз. пашкоджанняў за бой"
+
+msgid "dailyQuests/condition/doDamageVeh"
+msgstr "Прычыніць пашкоджанні %(value)d адз. тэхнікі за бой"
+
+msgid "dailyQuests/condition/doDamageVeh_accum"
+msgstr "Прычыніць пашкоджанні %(value)d адз. тэхнікі"
+
+msgid "dailyQuests/condition/doDamage_accum"
+msgstr "Прычыніць %(value)d адз. пашкоджанняў"
+
+msgid "dailyQuests/condition/earnExp"
+msgstr "Здабыць %(value)d «чыстага» досведу за бой"
+
+msgid "dailyQuests/condition/earnExp_accum"
+msgstr "Здабыць %(value)d «чыстага» досведу"
+
+msgid "dailyQuests/condition/expTop"
+msgstr "Трапіць у топ-%(value)d сваёй каманды паводле досведу"
+
+msgid "dailyQuests/condition/expTop_first"
+msgstr "Заняць першае месца ў сваёй камандзе паводле досведу"
+
+msgid "dailyQuests/condition/spotVeh_few"
+msgstr "Выявіць %(value)d адз. тэхнікі за бой"
+
+msgid "dailyQuests/condition/winBattle"
+msgstr "Перамагчы ў баі"
+
+msgid "dailyQuests/condition/winBattle_accum"
+msgstr "Перамагчы ў %(value)d баях"
+
+msgid "dailyQuests/countDown/remainingText"
+msgstr "да наступных даступных стандартных задач"
+
+msgid "dailyQuests/countDown/title"
+msgstr "Вы выканалі ўсе стандартныя задачы на сёння"
+
+msgid "dailyQuests/footer/paragraph"
+msgstr ""
+"Кожная выкананая стандартная, прэміум ці бонусная задача набліжае вас да "
+"ўзнагароды."
+
+msgid "dailyQuests/footer/title"
+msgstr "Выкананых задач:"
+
+msgid "dailyQuests/header/default"
+msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
+
+msgid "dailyQuests/header/winback"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "dailyQuests/info/NYDailyMissions"
+msgstr ""
+"Стандартные задачи состоят из случайных условий, а выполнять их можно "
+"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
+"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
+"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
+"не будет выдана до выполнения текущей. В период Новогоднего наступления в "
+"задачу обязательно добавляются малые новогодние коробки и праздничные марки "
+"в дополнение к награде."
+
+msgid "dailyQuests/info/dailyMissionTitle"
+msgstr "Стандартныя задачы"
+
+msgid "dailyQuests/info/giftSystemDisabledDailyMissions"
+msgstr ""
+"Стандартные задачи состоят из случайных условий, а выполнять их можно "
+"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
+"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
+"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
+"не будет выдана до выполнения текущей. На период Новогоднего наступления в "
+"каждую задачу обязательно добавляются малые коробки в дополнение к награде."
+
+msgid "dailyQuests/missionSwitch/tooltip/body/available"
+msgstr "Даступна праз:"
+
+msgid "dailyQuests/missionSwitch/tooltip/body/desc"
+msgstr ""
+"у вас з'яўляецца магчымасць замяніць нежаданую задачу на іншую выпадковую."
+
+msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs"
+msgstr "Кожныя %H гадз"
+
+msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs_min"
+msgstr "Кожныя %H гадз і %M хв"
+
+msgid "dailyQuests/missionSwitch/tooltip/body/desc_min_only"
+msgstr "Кожныя %M хв"
+
+msgid "dailyQuests/missionSwitch/tooltip/header"
+msgstr "Замена задачы недаступная"
+
+msgid "dailyQuests/postBattle/and"
+msgstr "і"
+
+msgid "dailyQuests/postBattle/genericAmpersand"
+msgstr "і"
+
+msgid "dailyQuests/postBattle/genericTitle_bonus"
+msgstr "Бонусная задача"
+
+msgid "dailyQuests/postBattle/genericTitle_bonus_subs"
+msgstr "Бонусная задача (бонус за падпіску)"
+
+msgid "dailyQuests/postBattle/genericTitle_easy"
+msgstr "Першая штодзённая задача"
+
+msgid "dailyQuests/postBattle/genericTitle_easy_subs"
+msgstr "Першая штодзёння задача (бонус за падпіску)"
+
+msgid "dailyQuests/postBattle/genericTitle_epic"
+msgstr "Адмысловая ўзнагарода"
+
+msgid "dailyQuests/postBattle/genericTitle_hard"
+msgstr "Трэцяя штодзённая задача"
+
+msgid "dailyQuests/postBattle/genericTitle_hard_subs"
+msgstr "Трэцяя штодзёння задача (бонус за падпіску)"
+
+msgid "dailyQuests/postBattle/genericTitle_medium"
+msgstr "Другая штодзённая задача"
+
+msgid "dailyQuests/postBattle/genericTitle_medium_subs"
+msgstr "Другая штодзёння задача (бонус за падпіску)"
+
+msgid "dailyQuests/tab/label"
+msgstr "Стандартныя"
+
+msgid "dailyQuests/takeRewardsButton/countdown"
+msgstr "Даступныя: {cream_Open}%(leftTime)s{cream_Close}"
+
+msgid "dailyQuests/takeRewardsButton/text"
+msgstr "ЗАБРАЦЬ УЗНАГАРОДУ"
+
+msgid "dailyQuests/takeRewardsButton/tooltip"
+msgstr "Націсніце, каб выбраць і забраць узнагароды."
+
+msgid "dailyQuests/takeRewardsButton/tooltipDisable"
+msgstr "Узнагароды часова недаступныя, выбачайце за нязручнасці."
+
+msgid "debutBoxes/missions/header/caption1"
+msgstr ""
+"Выбірайце\n"
+"прыдатную тэхніку"
+
+msgid "debutBoxes/missions/header/caption2"
+msgstr ""
+"Выконвайце адмысловую\n"
+"баявую задачу"
+
+msgid "debutBoxes/missions/header/caption3"
+msgstr "Забірайце ўзнагароду"
+
+msgid "debutBoxes/missions/header/disabled"
+msgstr ""
+"Задачы часова недаступныя.\n"
+"Чакаем новыя пастаўкі."
+
+msgid "debutBoxes/missions/header/info"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "details/conditions/achievements"
+msgstr "Атрымаць адну з наступных узнагарод:"
+
+msgid "details/conditions/achievements/not"
+msgstr "Не атрымаць ніводную з наступных узнагарод:"
+
+msgid "details/conditions/achievements/title"
+msgstr "Заслужыць"
+
+msgid "details/conditions/additional"
+msgstr "Дадатковыя баявыя ўмовы"
+
+msgid "details/conditions/additional/title"
+msgstr "Выканаць асноўную ўмову"
+
+msgid "details/conditions/alive/description"
+msgstr "Ацалець у баі"
+
+msgid "details/conditions/alive/title"
+msgstr "Ацалець у баі"
+
+msgid "details/conditions/alternative"
+msgstr "Альтэрнатыўныя баявыя ўмовы"
+
+msgid "details/conditions/battleBonusType"
+msgstr "Тып бою:"
+
+msgid "details/conditions/battles"
+msgstr "Выканаць усе ніжэйпададзеныя ўмовы ў %s баях"
+
+msgid "details/conditions/battlesInRow"
+msgstr "Выканаць усе ніжэйпададзеныя ўмовы ў %s баях запар"
+
+msgid "details/conditions/clanKills"
+msgstr "Знішчыць тэхніку з адмысловым камуфляжам: колер камуфляжу: %(camos)s"
+
+msgid "details/conditions/clanKills/camo/black"
+msgstr "чорны"
+
+msgid "details/conditions/clanKills/camo/gold"
+msgstr "залаты"
+
+msgid "details/conditions/clanKills/camo/red"
+msgstr "чырвоны"
+
+msgid "details/conditions/clanKills/camo/silver"
+msgstr "срэбны"
+
+msgid "details/conditions/clanKills/not"
+msgstr ""
+"Не знішчаць тэхнікі з адмысловым камуфляжам: колер камуфляжу: %(camos)s"
+
+msgid "details/conditions/clanKills/title"
+msgstr "Знішчыць"
+
+msgid "details/conditions/clanMembership/any/formation"
+msgstr "Усе гульцы фарміравання павінны быць у клане."
+
+msgid "details/conditions/clanMembership/any/squad"
+msgstr "Усе гульцы звязу павінны быць у клане."
+
+msgid "details/conditions/clanMembership/any/team7x7"
+msgstr "Усе гульцы каманды павінны быць у клане."
+
+msgid "details/conditions/clanMembership/same/formation"
+msgstr "Усе гульцы фарміравання павінны быць з аднаго клана."
+
+msgid "details/conditions/clanMembership/same/squad"
+msgstr "Усе гульцы звязу павінны быць з аднаго клана."
+
+msgid "details/conditions/clanMembership/same/team7x7"
+msgstr "Усе гульцы каманды павінны быць з аднаго клана."
+
+msgid "details/conditions/crits/critical/ammoBay"
+msgstr "Пашкодзіць боеўкладку"
+
+msgid "details/conditions/crits/critical/ammoBay/not"
+msgstr "Не пашкоджваць боеўкладку"
+
+msgid "details/conditions/crits/critical/engine"
+msgstr "Пашкодзіць рухавік"
+
+msgid "details/conditions/crits/critical/engine/not"
+msgstr "Не пашкоджваць рухавік"
+
+msgid "details/conditions/crits/critical/fuelTank"
+msgstr "Пашкодзіць паліўныя бакі"
+
+msgid "details/conditions/crits/critical/fuelTank/not"
+msgstr "Не пашкоджваць паліўныя бакі"
+
+msgid "details/conditions/crits/critical/gun"
+msgstr "Пашкодзіць гармату"
+
+msgid "details/conditions/crits/critical/gun/not"
+msgstr "Не пашкоджваць гармату"
+
+msgid "details/conditions/crits/critical/radio"
+msgstr "Пашкодзіць радыёстанцыю"
+
+msgid "details/conditions/crits/critical/radio/not"
+msgstr "Не пашкоджваць радыёстанцыю"
+
+msgid "details/conditions/crits/critical/surveyingDevice"
+msgstr "Пашкодзіць назіральныя прылады"
+
+msgid "details/conditions/crits/critical/surveyingDevice/not"
+msgstr "Не пашкоджваць назіральныя прылады"
+
+msgid "details/conditions/crits/critical/track"
+msgstr "Пашкодзіць тракавы пас"
+
+msgid "details/conditions/crits/critical/track/not"
+msgstr "Не пашкоджваць тракавыя пасы"
+
+msgid "details/conditions/crits/critical/turretRotator"
+msgstr "Пашкодзіць паваротны механізм вежы"
+
+msgid "details/conditions/crits/critical/turretRotator/not"
+msgstr "Не пашкоджваць паваротны механізм вежы"
+
+msgid "details/conditions/crits/destroyed/ammoBay"
+msgstr "Падарваць боеўкладку"
+
+msgid "details/conditions/crits/destroyed/ammoBay/not"
+msgstr "Не падрываць боеўкладкі"
+
+msgid "details/conditions/crits/destroyed/engine"
+msgstr "Вывесці са строю рухавік"
+
+msgid "details/conditions/crits/destroyed/engine/not"
+msgstr "Не выводзіць са строю рухавік"
+
+msgid "details/conditions/crits/destroyed/fuelTank"
+msgstr "Падпаліць паліўныя бакі"
+
+msgid "details/conditions/crits/destroyed/fuelTank/not"
+msgstr "Не падпальваць паліўных бакаў"
+
+msgid "details/conditions/crits/destroyed/gun"
+msgstr "Вывесці са строю гармату"
+
+msgid "details/conditions/crits/destroyed/gun/not"
+msgstr "Не выводзіць са строю гармату"
+
+msgid "details/conditions/crits/destroyed/radio"
+msgstr "Вывесці са строю радыёстанцыю"
+
+msgid "details/conditions/crits/destroyed/radio/not"
+msgstr "Не выводзіць са строю радыёстанцыю"
+
+msgid "details/conditions/crits/destroyed/surveyingDevice"
+msgstr "Вывесці са строю назіральныя прылады"
+
+msgid "details/conditions/crits/destroyed/surveyingDevice/not"
+msgstr "Не выводзіць са строю назіральныя прылады"
+
+msgid "details/conditions/crits/destroyed/track"
+msgstr "Знерухоміць збіццём тракавага паса"
+
+msgid "details/conditions/crits/destroyed/track/not"
+msgstr "Не збіваць тракавых пасаў"
+
+msgid "details/conditions/crits/destroyed/turretRotator"
+msgstr "Вывесці са строю паваротны механізм вежы"
+
+msgid "details/conditions/crits/destroyed/turretRotator/not"
+msgstr "Не выводзіць са строю паваротны механізм вежы"
+
+msgid "details/conditions/crits/tankman/commander"
+msgstr "Вывесці са строю камандзіра экіпажу"
+
+msgid "details/conditions/crits/tankman/commander/not"
+msgstr "Не выводзіць са строю камандзіра экіпажу"
+
+msgid "details/conditions/crits/tankman/driver"
+msgstr "Вывесці са строю механіка-кіроўцу"
+
+msgid "details/conditions/crits/tankman/driver/not"
+msgstr "Не выводзіць са строю механіка-кіроўцу"
+
+msgid "details/conditions/crits/tankman/gunner"
+msgstr "Вывесці са строю наводчыка"
+
+msgid "details/conditions/crits/tankman/gunner/not"
+msgstr "Не выводзіць са строю наводчыка"
+
+msgid "details/conditions/crits/tankman/loader"
+msgstr "Вывесці са строю набойца"
+
+msgid "details/conditions/crits/tankman/loader/not"
+msgstr "Не выводзіць са строю набойца"
+
+msgid "details/conditions/crits/tankman/radioman"
+msgstr "Вывесці са строю радыста"
+
+msgid "details/conditions/crits/tankman/radioman/not"
+msgstr "Не выводзіць са строю радыста"
+
+msgid "details/conditions/cumulative/achievements"
+msgstr "Атрыманыя ўзнагароды"
+
+msgid "details/conditions/cumulative/aggregated"
+msgstr "Агулам:"
+
+msgid "details/conditions/cumulative/capturePoints"
+msgstr "Ачкі за захоп базы"
+
+msgid "details/conditions/cumulative/comp7PrestigePoints"
+msgstr "Ачкі прэстыжу"
+
+msgid "details/conditions/cumulative/critsCount"
+msgstr ""
+"Сума пашкоджаных або выведзеных са строю ўнутраных і (або) вонкавых модуляў,"
+" а таксама параненых танкістаў экіпажу супраціўніка"
+
+msgid "details/conditions/cumulative/damageAssisted"
+msgstr "Пашкоджанні, прыч. з вашай дапамогай"
+
+msgid "details/conditions/cumulative/damageAssistedRadio"
+msgstr "Пашкоджанні выяўленага вамі супраціўніка"
+
+msgid "details/conditions/cumulative/damageAssistedRadioWhileInvisible"
+msgstr ""
+"Пашкоджанні выяўленага вамі супраціўніка пры ўмове, што ў момант прычынення "
+"пашкоджанняў вы не былі выяўлены"
+
+msgid "details/conditions/cumulative/damageAssistedStun"
+msgstr ""
+"Пашкоджанні, якія хаўруснікі павінны прычыніць тэхніцы супраціўніка, экіпаж "
+"якой быў аглушаны вамі"
+
+msgid "details/conditions/cumulative/damageAssistedStunWhileInvisible"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі машыне супраціўніка, экіпаж якой вы "
+"аглушылі (пры ўмове, што ў момант прычынення пашкоджанняў вы не былі "
+"выяўлены)"
+
+msgid "details/conditions/cumulative/damageAssistedTrack"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі пасля трапляння, якое збіла тракавы пас"
+" і знерухоміла цэль"
+
+msgid "details/conditions/cumulative/damageAssistedTrackWhileInvisible"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі машыне праціўніка, якую вы знерухомілі "
+"збіццём тракавага паса (пры ўмове, што ў момант прычынення пашкоджанняў вы "
+"не былі выяўлены)"
+
+msgid "details/conditions/cumulative/damageBlockedByArmor"
+msgstr "Заблакіраваныя пашкоджанні"
+
+msgid "details/conditions/cumulative/damageDealt"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "details/conditions/cumulative/damageReceived"
+msgstr "Атрыманыя пашкоджанні (адз.)"
+
+msgid "details/conditions/cumulative/damaged"
+msgstr "Пашкоджаныя машыны супраціўніка"
+
+msgid "details/conditions/cumulative/damagedHp"
+msgstr "пашкоджаныя машыны праціўніка"
+
+msgid "details/conditions/cumulative/damagedVehicleCntAssistedRadio"
+msgstr ""
+"Забяспечыць хаўруснікам прычыненне пашкоджанняў супраціўніку, пра якога вы "
+"перадаяце выведвальныя звесткі"
+
+msgid "details/conditions/cumulative/damagedVehicleCntAssistedStun"
+msgstr ""
+"Аглушыць экіпаж машыны супраціўніка. Машыне супраціўніка, экіпаж якой вы "
+"аглушылі, хаўруснікі павінны прычыніць пашкоджанні."
+
+msgid "details/conditions/cumulative/damagedVehicleCntAssistedTrack"
+msgstr ""
+"Забяспечыць хаўруснікам прычыненне пашкоджанняў праціўніку, якога вы "
+"знерухомілі збіццём тракавага паса"
+
+msgid "details/conditions/cumulative/damagedWhileEnemyMoving"
+msgstr "Пашкоджанні машынам супраціўніка падчас іх руху"
+
+msgid "details/conditions/cumulative/directEnemyHits"
+msgstr "Траплянні ў супраціўніка"
+
+msgid "details/conditions/cumulative/directHits"
+msgstr "Траплянні"
+
+msgid "details/conditions/cumulative/directHitsReceived"
+msgstr "Атрыманыя траплянні"
+
+msgid "details/conditions/cumulative/directTeamHits"
+msgstr "Траплянні ў хаўруснікаў"
+
+msgid "details/conditions/cumulative/droppedCapturePoints"
+msgstr "Ачкі за абарону базы"
+
+msgid "details/conditions/cumulative/enemyHits"
+msgstr "Траплянні ў супраціўніка"
+
+msgid "details/conditions/cumulative/explosionEnemyHits"
+msgstr ""
+"Разрывы АФ снарадаў САУ побач з праціўнікам, якія прычынілі пашкоджанні "
+"асколкамі."
+
+msgid "details/conditions/cumulative/explosionHits"
+msgstr "Асколачна-фугасныя траплянні"
+
+msgid "details/conditions/cumulative/explosionHitsReceived"
+msgstr "Атрыманыя асколачна-фугасныя траплянні"
+
+msgid "details/conditions/cumulative/formation"
+msgstr "Параметр для фарміравання: %(param)s"
+
+msgid "details/conditions/cumulative/fortResource"
+msgstr "Здабыты прамысловы рэсурс"
+
+msgid "details/conditions/cumulative/freeXP"
+msgstr "Здабыты вольны досвед"
+
+msgid "details/conditions/cumulative/health"
+msgstr "Астатняя пасля бою трываласць машыны (адз.)"
+
+msgid "details/conditions/cumulative/inBattleMaxPiercingSeries"
+msgstr "Серыя прабіццяў запар"
+
+msgid "details/conditions/cumulative/inBattleMaxSniperSeries"
+msgstr "Серыя траплянняў запар (з улікам прабіццяў)"
+
+msgid "details/conditions/cumulative/indirectEnemyHits"
+msgstr "Рыкашэты ад супраціўніка"
+
+msgid "details/conditions/cumulative/innerModuleCritCount"
+msgstr ""
+"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
+"параненых танкістаў экіпажу супраціўніка"
+
+msgid "details/conditions/cumulative/innerModuleDestrCount"
+msgstr ""
+"Сума выведзеных са строю ўнутраных модуляў і (або) параненых танкістаў "
+"экіпажу супраціўніка"
+
+msgid "details/conditions/cumulative/isAnyOurCrittedInnerModules"
+msgstr ""
+"Закончыць бой без пашкоджаных або няспраўных унутраных модуляў і (або) "
+"параненых танкістаў"
+
+msgid "details/conditions/cumulative/isEnemyBaseCaptured"
+msgstr "Захапіць базу супраціўніка"
+
+msgid "details/conditions/cumulative/killedAndDamagedByAllSquadmates"
+msgstr "Пашкоджаныя або знішчаныя звязам машыны супраціўніка"
+
+msgid "details/conditions/cumulative/kills"
+msgstr "Знішчаныя машыны супраціўніка"
+
+msgid "details/conditions/cumulative/killsAssistedRadio"
+msgstr ""
+"Хаўруснікі павінны знішчыць супраціўніка, пра якога вы перадаяце "
+"выведвальныя звесткі"
+
+msgid "details/conditions/cumulative/killsAssistedStun"
+msgstr ""
+"Хаўруснікі павінны знішчыць машыну супраціўніка, экіпаж якой вы аглушылі"
+
+msgid "details/conditions/cumulative/killsAssistedTrack"
+msgstr ""
+"Хаўруснікі павінны знішчыць праціўніка, якога вы знерухомілі збіццём "
+"тракавага паса"
+
+msgid "details/conditions/cumulative/lifeTime"
+msgstr "Весці бой на працягу, не менш за (с)"
+
+msgid "details/conditions/cumulative/markOfMastery"
+msgstr "Атрымаць знак класнасці"
+
+msgid "details/conditions/cumulative/markOfMastery0"
+msgstr "Не атрымаць знака класнасці"
+
+msgid "details/conditions/cumulative/markOfMastery0/not"
+msgstr "Атрымаць хоць які знак класнасці"
+
+msgid "details/conditions/cumulative/markOfMastery1"
+msgstr "«3 ступень»"
+
+msgid "details/conditions/cumulative/markOfMastery2"
+msgstr "«2 ступень»"
+
+msgid "details/conditions/cumulative/markOfMastery3"
+msgstr "«1 ступень»"
+
+msgid "details/conditions/cumulative/markOfMastery4"
+msgstr "«Майстар»"
+
+msgid "details/conditions/cumulative/marksOnGun"
+msgstr "Атрымаць адметную адзнаку на гармату"
+
+msgid "details/conditions/cumulative/maxDamage"
+msgstr "Найбольшыя пашкоджанні"
+
+msgid "details/conditions/cumulative/mileage"
+msgstr "Прабег за бой, не менш за (м)"
+
+msgid "details/conditions/cumulative/noDamageDirectHitsReceived"
+msgstr "Атрыманыя траплянні без пашкоджанняў"
+
+msgid "details/conditions/cumulative/originalCredits"
+msgstr "Здабытыя крэдыты без надбавак"
+
+msgid "details/conditions/cumulative/originalXP"
+msgstr "Здабыты «чысты» досвед"
+
+msgid "details/conditions/cumulative/percentFromTotalTeamDamage"
+msgstr ""
+"Працэнт пашкоджанняў, прычыненых вамі, ад агульнай колькасці пашкоджанняў, "
+"прычыненых вашай камандай"
+
+msgid "details/conditions/cumulative/piercingEnemyHits"
+msgstr "Прабіцці супраціўніка"
+
+msgid "details/conditions/cumulative/piercings"
+msgstr "Прабіцці"
+
+msgid "details/conditions/cumulative/piercingsReceived"
+msgstr "Атрыманыя прабіцці"
+
+msgid "details/conditions/cumulative/potentialDamageDealt"
+msgstr "Патэнцыйна прычыненыя пашкоджанні"
+
+msgid "details/conditions/cumulative/potentialDamageReceived"
+msgstr "Патэнцыйна атрыманыя пашкоджанні"
+
+msgid "details/conditions/cumulative/rankChange"
+msgstr "Атрымаць званне"
+
+msgid "details/conditions/cumulative/shots"
+msgstr "Зроблена стрэлаў"
+
+msgid "details/conditions/cumulative/single"
+msgstr "%(param)s"
+
+msgid "details/conditions/cumulative/sniperDamageDealt"
+msgstr "Пашкоджанні, прычыненыя з адлегласці не менш за 300 метраў"
+
+msgid "details/conditions/cumulative/soloHitsAssisted"
+msgstr "Траплянні хаўруснікаў па выяўленым вамі супраціўніку"
+
+msgid "details/conditions/cumulative/spotted"
+msgstr "Выяўленыя машыны супраціўніка"
+
+msgid "details/conditions/cumulative/spottedAndDamagedSPG"
+msgstr ""
+"Выявіць адну або некалькі САУ супраціўніка і прычыніць ёй (ім) любую "
+"колькасць пашкоджанняў"
+
+msgid "details/conditions/cumulative/spottedBeforeWeBecameSpotted"
+msgstr "Выявіць машыну супраціўніка, застаўшыся нябачным"
+
+msgid "details/conditions/cumulative/squad"
+msgstr "Параметр для звязу: %(param)s"
+
+msgid "details/conditions/cumulative/stunDuration"
+msgstr "Час (у секундах), на які трэба аглушыць экіпажы машын супраціўніка"
+
+msgid "details/conditions/cumulative/stunNum"
+msgstr "Аглушыць экіпаж(ы) супраціўніка (сумарна разоў)"
+
+msgid "details/conditions/cumulative/stunned"
+msgstr "Колькасць аглушэнняў, якія трэба прычыніць"
+
+msgid "details/conditions/cumulative/subtotalXP"
+msgstr "Здабыты досвед (без уліку баявых задач)"
+
+msgid "details/conditions/cumulative/tdamageDealt"
+msgstr "Пашкоджанні, прычыненыя хаўруснікам"
+
+msgid "details/conditions/cumulative/team7x7"
+msgstr "Параметр для каманды: %(param)s"
+
+msgid "details/conditions/cumulative/tkills"
+msgstr "Знішчаныя машыны хаўруснікаў"
+
+msgid "details/conditions/cumulative/xp"
+msgstr "Здабыты досвед"
+
+msgid "details/conditions/cumulative/xp/other"
+msgstr "Здабыты ролевы досвед"
+
+msgid "details/conditions/fireDamage"
+msgstr "Падпалам прычыніць пашкоджанні машыне супраціўніка"
+
+msgid "details/conditions/fireDamage/all"
+msgstr "Падпалам прычыніць пашкоджанні машыне супраціўніка"
+
+msgid "details/conditions/fireDamage/eventCount"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/all"
+msgstr ""
+"Прычыніць пашкоджанні падпалам любой машыне супраціўніка ўказаную колькасць "
+"разоў"
+
+msgid "details/conditions/fireDamage/eventCount/all/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы ўказаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне ўзроўню: %(level)s указаную колькасць "
+"разоў"
+
+msgid "details/conditions/fireDamage/eventCount/level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы ўзроўню: %(level)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы дзяржавы: %(nation)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation_level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation_type"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s; тыпу: %(type)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation_type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation_type_level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s; тыпу: %(type)s; "
+"узроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/nation_type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s; узроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы ўказаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/type"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне тыпу: %(type)s указаную колькасць "
+"разоў"
+
+msgid "details/conditions/fireDamage/eventCount/type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы тыпу: %(type)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/type_level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне тыпу: %(type)s; узроўню: %(level)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/eventCount/type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы тыпу: %(type)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/fireDamage/level"
+msgstr "Прычыніць пашкоджанні падпалам машыне ўзроўню: %(level)s"
+
+msgid "details/conditions/fireDamage/level/not"
+msgstr "Не прычыняць пашкоджанняў падпалам варожай тэхніцы ўзроўню: %(level)s"
+
+msgid "details/conditions/fireDamage/nation"
+msgstr "Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s"
+
+msgid "details/conditions/fireDamage/nation/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы дзяржавы: %(nation)s"
+
+msgid "details/conditions/fireDamage/nation_level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/fireDamage/nation_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/fireDamage/nation_type"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/fireDamage/nation_type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s"
+
+msgid "details/conditions/fireDamage/nation_type_level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне дзяржавы: %(nation)s; тыпу: %(type)s; "
+"узроўню: %(level)s"
+
+msgid "details/conditions/fireDamage/nation_type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/fireDamage/not"
+msgstr "Не прычыняць пашкоджанняў падпалам"
+
+msgid "details/conditions/fireDamage/title"
+msgstr "Падпаліць"
+
+msgid "details/conditions/fireDamage/title/not"
+msgstr "Не падпальваць"
+
+msgid "details/conditions/fireDamage/type"
+msgstr "Прычыніць пашкоджанні падпалам машыне тыпу: %(type)s"
+
+msgid "details/conditions/fireDamage/type/not"
+msgstr "Не прычыняць пашкоджанняў падпалам варожай тэхніцы тыпу: %(type)s"
+
+msgid "details/conditions/fireDamage/type_level"
+msgstr ""
+"Прычыніць пашкоджанні падпалам машыне тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/fireDamage/type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў падпалам варожай тэхніцы тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/fireKills"
+msgstr "Знішчыць машыну супраціўніка падпалам"
+
+msgid "details/conditions/fireKills/all"
+msgstr "Знішчыць машыну супраціўніка падпалам"
+
+msgid "details/conditions/fireKills/all/not"
+msgstr "Не знішчаць тэхнікі супраціўніка падпалам"
+
+msgid "details/conditions/fireKills/level"
+msgstr "Знішчыць падпалам машыну ўзроўню: %(level)s"
+
+msgid "details/conditions/fireKills/level/not"
+msgstr "Не знішчаць падпалам тэхнікі ўзроўню: %(level)s"
+
+msgid "details/conditions/fireKills/list"
+msgstr "Знішчыць падпалам наступную тэхніку: %(list)s"
+
+msgid "details/conditions/fireKills/list/not"
+msgstr "Не знішчаць падпалам наступнай тэхнікі: %(list)s"
+
+msgid "details/conditions/fireKills/nation"
+msgstr "Знішчыць падпалам машыну дзяржавы: %(nation)s"
+
+msgid "details/conditions/fireKills/nation/not"
+msgstr "Не знішчаць падпалам тэхнікі дзяржавы: %(nation)s"
+
+msgid "details/conditions/fireKills/nation_level"
+msgstr "Знішчыць падпалам машыну дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/fireKills/nation_level/not"
+msgstr "Не знішчаць падпалам тэхнікі дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/fireKills/nation_type"
+msgstr "Знішчыць падпалам машыну дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/fireKills/nation_type/not"
+msgstr "Не знішчаць падпалам тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/fireKills/nation_type_level"
+msgstr ""
+"Знішчыць падпалам машыну дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/fireKills/nation_type_level/not"
+msgstr ""
+"Не знішчаць падпалам тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/fireKills/not"
+msgstr "Не знішчаць тэхнікі супраціўніка падпалам"
+
+msgid "details/conditions/fireKills/type"
+msgstr "Знішчыць падпалам машыну тыпу: %(type)s"
+
+msgid "details/conditions/fireKills/type/not"
+msgstr "Не знішчаць падпалам тэхнікі тыпу: %(type)s"
+
+msgid "details/conditions/fireKills/type_level"
+msgstr "Знішчыць падпалам машыну тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/fireKills/type_level/not"
+msgstr "Не знішчаць падпалам тэхнікі тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/formation"
+msgstr "Фарміраванне:"
+
+msgid "details/conditions/formation/clan"
+msgstr "Клан"
+
+msgid "details/conditions/formation/squad"
+msgstr "Уступіць у бой звязам."
+
+msgid "details/conditions/groupBy/class"
+msgstr "Ход выканання паводле тыпаў:"
+
+msgid "details/conditions/groupBy/level"
+msgstr "Ход выканання паводле ўзроўняў:"
+
+msgid "details/conditions/groupBy/levelLabel"
+msgstr "%s Узровень"
+
+msgid "details/conditions/groupBy/nation"
+msgstr "Ход выканання паводле дзяржаў:"
+
+msgid "details/conditions/groupBy/vehicle"
+msgstr "Ход выканання на тэхніцы:"
+
+msgid "details/conditions/historicalBattles"
+msgstr "Бой:"
+
+msgid "details/conditions/installedCamouflage"
+msgstr "З накладзеным камуфляжам у баі"
+
+msgid "details/conditions/installedCamouflage/title"
+msgstr "З накладзеным камуфляжам"
+
+msgid "details/conditions/installedModule/chassis"
+msgstr "З усталяваным шасі %(moduleNames)s"
+
+msgid "details/conditions/installedModule/chassis/not"
+msgstr "Без усталяванага шасі %(moduleNames)s"
+
+msgid "details/conditions/installedModule/engines"
+msgstr "З усталяваным рухавіком %(moduleNames)s"
+
+msgid "details/conditions/installedModule/engines/not"
+msgstr "Без усталяванага рухавіка %(moduleNames)s"
+
+msgid "details/conditions/installedModule/guns"
+msgstr "З усталяванай гарматай %(moduleNames)s"
+
+msgid "details/conditions/installedModule/guns/not"
+msgstr "Без усталяванай гарматы %(moduleNames)s"
+
+msgid "details/conditions/installedModule/optionalDevice"
+msgstr "З усталяваным абсталяваннем %(moduleNames)s"
+
+msgid "details/conditions/installedModule/optionalDevice/not"
+msgstr "Без усталяванага абсталявання %(moduleNames)s"
+
+msgid "details/conditions/installedModule/radios"
+msgstr "З усталяванай радыёстанцыяй %(moduleNames)s"
+
+msgid "details/conditions/installedModule/radios/not"
+msgstr "Без усталяванай радыёстанцыі %(moduleNames)s"
+
+msgid "details/conditions/installedModule/title"
+msgstr "Падрыхтоўка да бою"
+
+msgid "details/conditions/installedModule/turrets"
+msgstr "З усталяванай вежай %(moduleNames)s"
+
+msgid "details/conditions/installedModule/turrets/not"
+msgstr "Без усталяванай вежы %(moduleNames)s"
+
+msgid "details/conditions/label"
+msgstr "Умовы:"
+
+msgid "details/conditions/map"
+msgstr "Мапа:"
+
+msgid "details/conditions/map/not"
+msgstr "Нельга ваяваць на мапе:"
+
+msgid "details/conditions/maps"
+msgstr "Мапы:"
+
+msgid "details/conditions/maps/not"
+msgstr "Нельга ваяваць на мапах:"
+
+msgid "details/conditions/mapsType"
+msgstr "Тып мапы:"
+
+msgid "details/conditions/mapsType/desert"
+msgstr "Пустынная"
+
+msgid "details/conditions/mapsType/summer"
+msgstr "Летняя"
+
+msgid "details/conditions/mapsType/winter"
+msgstr "Зімовая"
+
+msgid "details/conditions/multiStunEvent"
+msgstr ""
+"Аглушыць экіпажы %(count)d (або больш) машын супраціўніка адным стрэлам"
+
+msgid "details/conditions/multiStunEvent/not"
+msgstr ""
+"Не аглушаць экіпажы %(count)d (або больш) машын супраціўніка адным стрэлам"
+
+msgid "details/conditions/multiStunEvent/title"
+msgstr "Аглушыць экіпаж"
+
+msgid "details/conditions/multiStunEvent/title/not"
+msgstr "Не аглушаць экіпажу"
+
+msgid "details/conditions/noInstalledCamouflage"
+msgstr "Без накладзенага камуфляжу ў баі"
+
+msgid "details/conditions/notSquad"
+msgstr "Выканаць без далучэння да звязу"
+
+msgid "details/conditions/notSurvive"
+msgstr "Быць знішчаным у баі"
+
+msgid "details/conditions/notWin"
+msgstr "Прайграць бой"
+
+msgid "details/conditions/oneAchievement"
+msgstr "Атрымаць узнагароду:"
+
+msgid "details/conditions/oneAchievement/not"
+msgstr "Не атрымаць узнагароды:"
+
+msgid "details/conditions/playBattle/title"
+msgstr "Да бою!"
+
+msgid "details/conditions/postBattle/dailyReset"
+msgstr "Абнуленне вынікаў адбываецца штодня а %(time)s."
+
+msgid "details/conditions/postBattle/dailyReset/timeFmt"
+msgstr "%H:%M"
+
+msgid "details/conditions/postBattle/deltaDailyReset/timeFmt"
+msgstr "%H гадз %M хв"
+
+msgid "details/conditions/postBattle/separator"
+msgstr "У кожным баі:"
+
+msgid "details/conditions/postBattle/weeklyReset/timeFmt"
+msgstr "%H:%M"
+
+msgid "details/conditions/ramDamage"
+msgstr "Прычыніць пашкоджанні машыне супраціўніка таранам"
+
+msgid "details/conditions/ramDamage/all"
+msgstr "Прычыніць пашкоджанні любой машыне супраціўніка таранам"
+
+msgid "details/conditions/ramDamage/eventCount"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/all"
+msgstr ""
+"Прычыніць пашкоджанні любой машыне супраціўніка таранам указаную колькасць "
+"разоў"
+
+msgid "details/conditions/ramDamage/eventCount/all/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы ўказаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне ўзроўню: %(level)s указаную колькасць "
+"разоў"
+
+msgid "details/conditions/ramDamage/eventCount/level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы ўзроўню: %(level)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s указаную колькасць"
+" разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation_level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s; "
+"узроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation_type"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s; тыпу: %(type)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation_type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation_type_level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s; тыпу: %(type)s; "
+"узроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/nation_type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s; узроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы ўказаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/type"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне тыпу: %(type)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы тыпу: %(type)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/type_level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне тыпу: %(type)s; узроўню: %(level)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/eventCount/type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы тыпу: %(type)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/ramDamage/level"
+msgstr "Прычыніць пашкоджанні таранам машыне ўзроўню: %(level)s"
+
+msgid "details/conditions/ramDamage/level/not"
+msgstr "Не прычыняць пашкоджанняў таранам варожай тэхніцы ўзроўню: %(level)s"
+
+msgid "details/conditions/ramDamage/nation"
+msgstr "Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s"
+
+msgid "details/conditions/ramDamage/nation/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s"
+
+msgid "details/conditions/ramDamage/nation_level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/ramDamage/nation_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s; "
+"узроўню: %(level)s"
+
+msgid "details/conditions/ramDamage/nation_type"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/ramDamage/nation_type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s"
+
+msgid "details/conditions/ramDamage/nation_type_level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне дзяржавы: %(nation)s; тыпу: %(type)s; "
+"узроўню: %(level)s"
+
+msgid "details/conditions/ramDamage/nation_type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы дзяржавы: %(nation)s; "
+"тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/ramDamage/not"
+msgstr "Не прычыняць пашкоджанняў таранам варожай тэхніцы"
+
+msgid "details/conditions/ramDamage/title"
+msgstr "Таран"
+
+msgid "details/conditions/ramDamage/title/not"
+msgstr "Не тараніць"
+
+msgid "details/conditions/ramDamage/type"
+msgstr "Прычыніць пашкоджанні таранам машыне тыпу: %(type)s"
+
+msgid "details/conditions/ramDamage/type/not"
+msgstr "Не прычыняць пашкоджанняў таранам варожай тэхніцы тыпу: %(type)s"
+
+msgid "details/conditions/ramDamage/type_level"
+msgstr ""
+"Прычыніць пашкоджанні таранам машыне тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/ramDamage/type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў таранам варожай тэхніцы тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/ramKills"
+msgstr "Знішчыць машыну супраціўніка таранам"
+
+msgid "details/conditions/ramKills/all"
+msgstr "Знішчыць машыну супраціўніка таранам"
+
+msgid "details/conditions/ramKills/all/not"
+msgstr "Не знішчаць тэхнікі супраціўніка таранам"
+
+msgid "details/conditions/ramKills/level"
+msgstr "Знішчыць таранам машыну ўзроўню: %(level)s"
+
+msgid "details/conditions/ramKills/level/not"
+msgstr "Не знішчаць тэхнікі ўзроўню: %(level)s"
+
+msgid "details/conditions/ramKills/list"
+msgstr "Знішчыць таранам наступную тэхніку: %(list)s"
+
+msgid "details/conditions/ramKills/list/not"
+msgstr "Не знішчаць таранам наступнай тэхнікі: %(list)s"
+
+msgid "details/conditions/ramKills/nation"
+msgstr "Знішчыць таранам машыну дзяржавы: %(nation)s"
+
+msgid "details/conditions/ramKills/nation/not"
+msgstr "Не знішчаць тэхнікі дзяржавы: %(nation)s"
+
+msgid "details/conditions/ramKills/nation_level"
+msgstr "Знішчыць таранам машыну дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/ramKills/nation_level/not"
+msgstr "Не знішчаць таранам тэхнікі дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/ramKills/nation_type"
+msgstr "Знішчыць таранам машыну дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/ramKills/nation_type/not"
+msgstr "Не знішчаць таранам тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/ramKills/nation_type_level"
+msgstr ""
+"Знішчыць таранам машыну дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/ramKills/nation_type_level/not"
+msgstr ""
+"Не знішчаць таранам тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/ramKills/not"
+msgstr "Не знішчаць тэхнікі супраціўніка таранам"
+
+msgid "details/conditions/ramKills/type"
+msgstr "Знішчыць таранам машыну тыпу: %(type)s"
+
+msgid "details/conditions/ramKills/type/not"
+msgstr "Не знішчаць таранам тэхнікі тыпу: %(type)s"
+
+msgid "details/conditions/ramKills/type_level"
+msgstr "Знішчыць таранам машыну тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/ramKills/type_level/not"
+msgstr "Не знішчаць таранам тэхнікі тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/results/formation/alive"
+msgstr "Усе гульцы фарміравання мусяць ацалець."
+
+msgid "details/conditions/results/formation/alive/not"
+msgstr "Усе гульцы фарміравання мусяць загінуць у баі."
+
+msgid "details/conditions/results/formation/avg"
+msgstr "Сярэдняе значэнне (для фарміравання) параметра: %(param)s"
+
+msgid "details/conditions/results/formation/simple"
+msgstr "Параметр для фарміравання: %(param)s"
+
+msgid "details/conditions/results/single/avg"
+msgstr "Сярэдняе значэнне параметра: %(param)s"
+
+msgid "details/conditions/results/single/battleRoyale/top1"
+msgstr ""
+"Перамагчы ў баі (ваш звяз або асабіста вы павінны заняць першае месца)."
+
+msgid "details/conditions/results/single/bothTeams/position"
+msgstr ""
+"Заняць %(position)d-е месца сярод гульцоў абедзвюх каманд паводле параметра:"
+" %(param)s"
+
+msgid "details/conditions/results/single/bothTeams/position/not"
+msgstr ""
+"Не займаць %(position)d-га месца сярод гульцоў абедзвюх каманд паводле "
+"параметра: %(param)s"
+
+msgid "details/conditions/results/single/bothTeams/range"
+msgstr ""
+"Трапіць на %(high)d–%(low)d месца сярод гульцоў абедзвюх каманд паводле "
+"параметра: %(param)s"
+
+msgid "details/conditions/results/single/bothTeams/range/not"
+msgstr ""
+"Не трапляць на %(high)d–%(low)d месца сярод гульцоў абедзвюх каманд паводле "
+"параметра: %(param)s"
+
+msgid "details/conditions/results/single/bothTeams/top"
+msgstr ""
+"Трапіць у %(count)d найлепшых гульцоў абедзвюх каманд паводле параметра: "
+"%(param)s"
+
+msgid "details/conditions/results/single/bothTeams/top/not"
+msgstr ""
+"Не трапляць у %(count)d найлепшых гульцоў абедзвюх каманд паводле параметра:"
+" %(param)s"
+
+msgid "details/conditions/results/single/bothTeams/top1"
+msgstr "Заняць першае месца ў абедзвюх камандах паводле: %(param)s"
+
+msgid "details/conditions/results/single/halfTeam/position"
+msgstr ""
+"Заняць %(position)d-е месца сярод гульцоў вашай каманды паводле параметра: "
+"%(param)s"
+
+msgid "details/conditions/results/single/halfTeam/position/not"
+msgstr ""
+"Не займаць %(position)d-га месца сярод гульцоў вашай каманды паводле "
+"параметра: %(param)s"
+
+msgid "details/conditions/results/single/halfTeam/range"
+msgstr ""
+"Трапіць на %(high)d–%(low)d месца сярод гульцоў вашай каманды паводле "
+"параметра: %(param)s"
+
+msgid "details/conditions/results/single/halfTeam/range/not"
+msgstr ""
+"Не трапляць на %(high)d–%(low)d месца сярод гульцоў вашай каманды паводле "
+"параметра: %(param)s"
+
+msgid "details/conditions/results/single/halfTeam/top"
+msgstr ""
+"Трапіць у %(count)d найлепшых гульцоў вашай каманды паводле параметра: "
+"%(param)s"
+
+msgid "details/conditions/results/single/halfTeam/top/not"
+msgstr ""
+"Не трапляць у %(count)d найлепшых гульцоў вашай каманды паводле параметра: "
+"%(param)s"
+
+msgid "details/conditions/results/single/simple"
+msgstr "%(param)s"
+
+msgid "details/conditions/results/squad/alive"
+msgstr "Усе гульцы звязу мусяць ацалець"
+
+msgid "details/conditions/results/squad/alive/not"
+msgstr "Усе гульцы звязу мусяць загінуць у баі"
+
+msgid "details/conditions/results/squad/avg"
+msgstr "Сярэдняе значэнне (для звязу) параметра: %(param)s"
+
+msgid "details/conditions/results/squad/simple"
+msgstr "Параметр для звязу: %(param)s"
+
+msgid "details/conditions/results/team7x7/alive"
+msgstr "Усе гульцы каманды мусяць ацалець"
+
+msgid "details/conditions/results/team7x7/alive/not"
+msgstr "Усе гульцы каманды мусяць загінуць у баі"
+
+msgid "details/conditions/results/team7x7/avg"
+msgstr "Сярэдняе значэнне (для каманды) параметра: %(param)s"
+
+msgid "details/conditions/results/team7x7/simple"
+msgstr "Параметр для каманды: %(param)s"
+
+msgid "details/conditions/survive"
+msgstr "Ацалець у баі"
+
+msgid "details/conditions/target/title"
+msgstr "Задача"
+
+msgid "details/conditions/title"
+msgstr "Умовы"
+
+msgid "details/conditions/top/title"
+msgstr "%(value)s найлепшых"
+
+msgid "details/conditions/vehicle"
+msgstr "Прыдатная тэхніка:"
+
+msgid "details/conditions/vehicleDamage"
+msgstr "Прычыніць пашкоджанні машыне супраціўніка"
+
+msgid "details/conditions/vehicleDamage/all"
+msgstr "Прычыніць пашкоджанні любой машыне супраціўніка"
+
+msgid "details/conditions/vehicleDamage/all/not"
+msgstr "Не прычыняць пашкоджанняў тэхніцы супраціўніка"
+
+msgid "details/conditions/vehicleDamage/eventCount"
+msgstr "Прычыніць пашкоджанні машыне супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/all"
+msgstr "Прычыніць пашкоджанні машыне супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/all/not"
+msgstr "Не прычыняць пашкоджанняў варожай тэхніцы ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/level"
+msgstr ""
+"Прычыніць пашкоджанні машыне ўзроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы ўзроўню: %(level)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation"
+msgstr ""
+"Прычыніць пашкоджанні машыне дзяржавы: %(nation)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation_level"
+msgstr ""
+"Прычыніць пашкоджанні машыне дзяржавы: %(nation)s; узроўню: %(level)s "
+"указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation_type"
+msgstr ""
+"Прычыніць пашкоджанні машыне дзяржавы: %(nation)s; тыпу: %(type)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation_type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; тыпу: "
+"%(type)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation_type_level"
+msgstr ""
+"Прычыніць пашкоджанні машыне дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/nation_type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; тыпу: "
+"%(type)s; узроўню: %(level)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/not"
+msgstr "Не прычыняць пашкоджанняў варожай тэхніцы ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/type"
+msgstr "Прычыніць пашкоджанні машыне тыпу: %(type)s указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы тыпу: %(type)s указаную колькасць "
+"разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/type_level"
+msgstr ""
+"Прычыніць пашкоджанні машыне тыпу: %(type)s; узроўню: %(level)s указаную "
+"колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/eventCount/type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы тыпу: %(type)s; узроўню: %(level)s"
+" указаную колькасць разоў"
+
+msgid "details/conditions/vehicleDamage/level"
+msgstr "Прычыніць пашкоджанні машыне ўзроўню: %(level)s"
+
+msgid "details/conditions/vehicleDamage/level/not"
+msgstr "Не прычыняць пашкоджанняў варожай тэхніцы %(level)s узроўню"
+
+msgid "details/conditions/vehicleDamage/nation"
+msgstr "Прычыніць пашкоджанні машыне дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehicleDamage/nation/not"
+msgstr "Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehicleDamage/nation_level"
+msgstr "Прычыніць пашкоджанні машыне дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleDamage/nation_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/vehicleDamage/nation_type"
+msgstr "Прычыніць пашкоджанні машыне дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/vehicleDamage/nation_type/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; тыпу: "
+"%(type)s"
+
+msgid "details/conditions/vehicleDamage/nation_type_level"
+msgstr ""
+"Прычыніць пашкоджанні машыне дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/vehicleDamage/nation_type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы дзяржавы: %(nation)s; тыпу: "
+"%(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleDamage/not"
+msgstr "Не прычыняць пашкоджанняў варожай тэхніцы"
+
+msgid "details/conditions/vehicleDamage/title"
+msgstr "Прычыніць пашкоджанні"
+
+msgid "details/conditions/vehicleDamage/title/not"
+msgstr "Не пашкоджваць"
+
+msgid "details/conditions/vehicleDamage/type"
+msgstr "Прычыніць пашкоджанні машыне тыпу: %(type)s"
+
+msgid "details/conditions/vehicleDamage/type/not"
+msgstr "Не прычыняць пашкоджанняў варожай тэхніцы тыпу: %(type)s"
+
+msgid "details/conditions/vehicleDamage/type_level"
+msgstr "Прычыніць пашкоджанні машыне тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleDamage/type_level/not"
+msgstr ""
+"Не прычыняць пашкоджанняў варожай тэхніцы тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleDescr"
+msgstr "Прыдатная тэхніка:"
+
+msgid "details/conditions/vehicleKills"
+msgstr "Знішчыць:"
+
+msgid "details/conditions/vehicleStun"
+msgstr "Аглушыць на ўказаную колькасць секунд экіпаж машыны супраціўніка"
+
+msgid "details/conditions/vehicleStun/all"
+msgstr ""
+"Аглушыць на ўказаную колькасць секунд экіпаж любой машыны супраціўніка"
+
+msgid "details/conditions/vehicleStun/all/not"
+msgstr "Не аглушаць ні на секунду экіпаж(аў) тэхнікі супраціўніка"
+
+msgid "details/conditions/vehicleStun/cumulative"
+msgstr "Час (у секундах), на які трэба аглушыць экіпаж(ы) машын супраціўніка"
+
+msgid "details/conditions/vehicleStun/cumulative/all"
+msgstr "Час (у секундах), на які трэба аглушыць экіпаж(ы) машын супраціўніка"
+
+msgid "details/conditions/vehicleStun/level"
+msgstr "Аглушыць на ўказаную колькасць секунд экіпаж машыны %(level)s узроўню"
+
+msgid "details/conditions/vehicleStun/level/not"
+msgstr "Не аглушаць ні на секунду экіпаж(аў) тэхнікі ўзроўню: %(level)s"
+
+msgid "details/conditions/vehicleStun/nation"
+msgstr ""
+"Аглушыць на ўказаную колькасць секунд экіпаж машыны дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehicleStun/nation/not"
+msgstr "Не аглушаць ні на секунду экіпаж(аў) тэхнікі дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehicleStun/nation_level"
+msgstr ""
+"Аглушыць на ўказаную колькасць секунд экіпаж машыны дзяржавы: %(nation)s; "
+"%(level)s узроўню"
+
+msgid "details/conditions/vehicleStun/nation_level/not"
+msgstr ""
+"Не аглушаць ні на секунду экіпаж(аў) тэхнікі дзяржавы: %(nation)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/vehicleStun/nation_type"
+msgstr ""
+"Аглушыць на ўказаную колькасць секунд экіпаж машыны дзяржавы: %(nation)s; "
+"тыпу: %(type)s"
+
+msgid "details/conditions/vehicleStun/nation_type/not"
+msgstr ""
+"Не аглушаць ні на секунду экіпаж(аў) тэхнікі дзяржавы: %(nation)s; тыпу: "
+"%(type)s"
+
+msgid "details/conditions/vehicleStun/nation_type_level"
+msgstr ""
+"Аглушыць на ўказаную колькасць секунд экіпаж машыны дзяржавы: %(nation)s; "
+"тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStun/nation_type_level/not"
+msgstr ""
+"Не аглушаць ні на секунду экіпаж(аў) тэхнікі дзяржавы: %(nation)s; тыпу: "
+"%(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStun/not"
+msgstr "Не аглушаць экіпаж(аў) машын супраціўніка"
+
+msgid "details/conditions/vehicleStun/title"
+msgstr "Аглушыць экіпаж"
+
+msgid "details/conditions/vehicleStun/title/not"
+msgstr "Не аглушаць экіпажу"
+
+msgid "details/conditions/vehicleStun/type"
+msgstr "Аглушыць на ўказаную колькасць секунд экіпаж машыны тыпу: %(type)s"
+
+msgid "details/conditions/vehicleStun/type/not"
+msgstr "Не аглушаць ні на секунду экіпаж(аў) тэхнікі тыпу: %(type)s"
+
+msgid "details/conditions/vehicleStun/type_level"
+msgstr ""
+"Аглушыць на ўказаную колькасць секунд экіпаж машыны тыпу: %(type)s; узроўню:"
+" %(level)s"
+
+msgid "details/conditions/vehicleStun/type_level/not"
+msgstr ""
+"Не аглушаць ні на секунду экіпаж(аў) тэхнікі тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/vehicleStunEventCount"
+msgstr "Аглушыць экіпаж машыны супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleStunEventCount/all"
+msgstr "Аглушыць экіпаж любой машыны супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleStunEventCount/all/not"
+msgstr "Не аглушаць экіпаж(аў) тэхнікі супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleStunEventCount/cumulative"
+msgstr "Аглушыць экіпаж(ы) супраціўніка (сумарна разоў)"
+
+msgid "details/conditions/vehicleStunEventCount/cumulative/all"
+msgstr "Аглушыць экіпаж(ы) супраціўніка (сумарна разоў)"
+
+msgid "details/conditions/vehicleStunEventCount/level"
+msgstr "Аглушыць указаную колькасць разоў экіпаж машыны ўзроўню: %(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/level/not"
+msgstr ""
+"Не аглушаць указаную колькасць разоў экіпаж(аў) машын узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation"
+msgstr "Аглушыць указаную колькасць разоў экіпаж машыны дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation/not"
+msgstr ""
+"Не аглушаць указаную колькасць разоў экіпаж(аў) машын дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation_level"
+msgstr ""
+"Аглушыць указаную колькасць разоў экіпаж машыны дзяржавы: %(nation)s; "
+"узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation_level/not"
+msgstr ""
+"Не аглушаць указаную колькасць разоў экіпаж(аў) машын дзяржавы: %(nation)s; "
+"узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation_type"
+msgstr ""
+"Аглушыць указаную колькасць разоў экіпаж машыны дзяржавы: %(nation)s; тыпу: "
+"%(type)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation_type/not"
+msgstr ""
+"Не аглушаць указаную колькасць разоў экіпаж(аў) машын дзяржавы: %(nation)s; "
+"тыпу: %(type)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation_type_level"
+msgstr ""
+"Аглушыць указаную колькасць разоў экіпаж машыны дзяржавы: %(nation)s; тыпу: "
+"%(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/nation_type_level/not"
+msgstr ""
+"Не аглушаць указаную колькасць разоў экіпаж(аў) машын дзяржавы: %(nation)s; "
+"тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/not"
+msgstr "Не аглушаць экіпаж(аў) тэхнікі супраціўніка ўказаную колькасць разоў"
+
+msgid "details/conditions/vehicleStunEventCount/type"
+msgstr "Аглушыць указаную колькасць разоў экіпаж машыны тыпу: %(type)s"
+
+msgid "details/conditions/vehicleStunEventCount/type/not"
+msgstr "Не аглушаць указаную колькасць разоў экіпаж(аў) машын тыпу: %(type)s"
+
+msgid "details/conditions/vehicleStunEventCount/type_level"
+msgstr ""
+"Аглушыць указаную колькасць разоў экіпаж машыны тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/conditions/vehicleStunEventCount/type_level/not"
+msgstr ""
+"Не аглушаць указаную колькасць разоў экіпаж(аў) машын тыпу: %(type)s; "
+"узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills"
+msgstr "Знішчыць машыну супраціўніка"
+
+msgid "details/conditions/vehiclesKills/all"
+msgstr "Знішчыць машыну супраціўніка"
+
+msgid "details/conditions/vehiclesKills/all/not"
+msgstr "Не знішчаць тэхнікі супраціўніка"
+
+msgid "details/conditions/vehiclesKills/level"
+msgstr "Знішчыць машыну ўзроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/level/not"
+msgstr "Не знішчаць тэхнікі ўзроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/list"
+msgstr "Знішчыць наступную тэхніку: %(list)s"
+
+msgid "details/conditions/vehiclesKills/list/not"
+msgstr "Не знішчаць наступнай тэхнікі: %(list)s"
+
+msgid "details/conditions/vehiclesKills/nation"
+msgstr "Знішчыць машыну дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehiclesKills/nation/not"
+msgstr "Не знішчаць тэхнікі дзяржавы: %(nation)s"
+
+msgid "details/conditions/vehiclesKills/nation_level"
+msgstr "Знішчыць машыну дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/nation_level/not"
+msgstr "Не знішчаць тэхнікі дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/nation_type"
+msgstr "Знішчыць машыну дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/vehiclesKills/nation_type/not"
+msgstr "Не знішчаць тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/conditions/vehiclesKills/nation_type_level"
+msgstr ""
+"Знішчыць машыну дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/nation_type_level/not"
+msgstr ""
+"Не знішчаць тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/not"
+msgstr "Не знішчаць тэхнікі супраціўніка"
+
+msgid "details/conditions/vehiclesKills/title"
+msgstr "Знішчыць"
+
+msgid "details/conditions/vehiclesKills/title/not"
+msgstr "Не знішчаць"
+
+msgid "details/conditions/vehiclesKills/type"
+msgstr "Знішчыць машыну тыпу: %(type)s"
+
+msgid "details/conditions/vehiclesKills/type/not"
+msgstr "Не знішчаць тэхнікі тыпу: %(type)s"
+
+msgid "details/conditions/vehiclesKills/type_level"
+msgstr "Знішчыць машыну тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesKills/type_level/not"
+msgstr "Не знішчаць тэхнікі тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/conditions/vehiclesOwned"
+msgstr "Тэхніка ў Гаражы:"
+
+msgid "details/conditions/vehiclesUnlocked"
+msgstr "Даследаваная тэхніка:"
+
+msgid "details/conditions/win"
+msgstr "Перамагчы ў баі"
+
+msgid "details/conditions/win/description"
+msgstr "Знішчыць супраціўніка / захапіць або абараніць базу"
+
+msgid "details/conditions/win/title"
+msgstr "Перамагчы"
+
+msgid "details/dossier/0/battlesCount"
+msgstr "Адваяваных баёў нераспазнанага тыпу"
+
+msgid "details/dossier/1/battlesCount"
+msgstr "Адваяваных выпадковых баёў"
+
+msgid "details/dossier/13/battlesCount"
+msgstr "Адваяваных баёў на Глабальнай карце"
+
+msgid "details/dossier/16/battlesCount"
+msgstr "Адваяваных Вучэбных баёў"
+
+msgid "details/dossier/18/battlesCount"
+msgstr "Адваяваных баёў у рэжыме «Перавага»"
+
+msgid "details/dossier/19/battlesCount"
+msgstr "Адваяваных баёў у рэжыме «Сталёвае паляванне»"
+
+msgid "details/dossier/2/battlesCount"
+msgstr "Адваяваных Супольных вучэнняў"
+
+msgid "details/dossier/20/battlesCount"
+msgstr "Адваяваных Вылазак"
+
+msgid "details/dossier/21/battlesCount"
+msgstr "Адваяваных баёў пры Наступленнях"
+
+msgid "details/dossier/22/battlesCount"
+msgstr "Адваяваных Рангавых баёў"
+
+msgid "details/dossier/24/battlesCount"
+msgstr "Адваяваных Генеральных бітваў"
+
+msgid "details/dossier/27/battlesCount"
+msgstr "Праведзеных баёў у рэжыме «Лінія фронту»"
+
+msgid "details/dossier/37/battlesCount"
+msgstr "Праведзеных баёў у рэжыме «Разведка боем»"
+
+msgid "details/dossier/39/battlesCount"
+msgstr "Праведзеных баёў у рэжыме «Мастацтва стратэгіі»"
+
+msgid "details/dossier/4/battlesCount"
+msgstr "Адваяваных Адмысловых баёў"
+
+msgid "details/dossier/42/battlesCount"
+msgstr "Праведзеных баёў у рэжыме «%(modeName)s»"
+
+msgid "details/dossier/43/battlesCount"
+msgstr "Праведзеных баёў у рэжыме «Націск»"
+
+msgid "details/dossier/5/battlesCount"
+msgstr "Адваяваных Адмысловых баёў"
+
+msgid "details/dossier/50/battlesCount"
+msgstr "Праведзеных баёў у рэжыме «Палігон»"
+
+msgid "details/dossier/6/battlesCount"
+msgstr "Пройдзеных Баявых навучанняў"
+
+msgid "details/dossier/7/battlesCount"
+msgstr "Адваяваных Камандных баёў"
+
+msgid "details/dossier/9/battlesCount"
+msgstr "Адваяваных баёў у асаблівым гульнявым рэжыме"
+
+msgid "details/dossier/armorPiercer"
+msgstr "«Бранябойшчык»"
+
+msgid "details/dossier/armoredFist"
+msgstr "«Бранятанкавы кулак»"
+
+msgid "details/dossier/battleCitizen"
+msgstr "Аперацыя «Настальгія»"
+
+msgid "details/dossier/battlesCount"
+msgstr "Адваяваных баёў"
+
+msgid "details/dossier/beasthunter"
+msgstr "«Зверабой»"
+
+msgid "details/dossier/bombardier"
+msgstr "«Бамбардзір»"
+
+msgid "details/dossier/clan/battlesCount"
+msgstr "Баёў у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/capturePoints"
+msgstr "Ачкоў за захоп базы ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/damageAssistedRadio"
+msgstr "Пашкоджанні выяўленага вамі супраціўніка ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/damageAssistedTrack"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі пасля трапляння, якое знерухоміла цэль "
+"збіццём тракавага паса ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/damageBlockedByArmor"
+msgstr "Пашкоджанні, заблакіраваныя бранёй, у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/damageDealt"
+msgstr "Прычыненыя пашкоджанні ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/damageReceived"
+msgstr "Атрыманыя пашкоджанні ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/directHits"
+msgstr "Траплянняў у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/droppedCapturePoints"
+msgstr "Ачкоў за абарону базы ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/frags"
+msgstr "Знішчаных машын супраціўніка ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/losses"
+msgstr "Паражэнняў у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/maxDamage"
+msgstr "Найбольшыя пашкоджанні ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/noDamageDirectHitsReceived"
+msgstr "Атрыманых траплянняў без пашкоджанняў у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/originalXP"
+msgstr "«Чысты» досвед у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/piercings"
+msgstr "Прабіццяў у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/piercingsReceived"
+msgstr "Атрыманых прабіццяў у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/potentialDamageReceived"
+msgstr ""
+"Атрымаў пашкоджанняў ад любых траплянняў, апроч асколачна-фугасных у "
+"«Сусветнай вайне»"
+
+msgid "details/dossier/clan/spotted"
+msgstr "Выяўленых машын супраціўніка ў «Сусветнай вайне»"
+
+msgid "details/dossier/clan/survivedBattles"
+msgstr "Баёў у «Сусветнай вайне», у якіх машына гульца не была знішчана"
+
+msgid "details/dossier/clan/wins"
+msgstr "Перамог у «Сусветнай вайне»"
+
+msgid "details/dossier/clan/xp"
+msgstr "Здабыты ў «Сусветны вайне» досвед, не менш за"
+
+msgid "details/dossier/defender"
+msgstr "«Абаронца»"
+
+msgid "details/dossier/diehard"
+msgstr "«Майстар выжывання»"
+
+msgid "details/dossier/diehardSeries"
+msgstr "Баёў запар, у якіх машына гульца не была знішчана"
+
+msgid "details/dossier/evileye"
+msgstr "«Дазорны»"
+
+msgid "details/dossier/fragsPatton"
+msgstr "Знішчаных танкаў Patton"
+
+msgid "details/dossier/fragsSinai"
+msgstr "Знішчаных танкаў ІС і машын на іх аснове"
+
+msgid "details/dossier/geniusForWarMedal"
+msgstr "«Выдатнік баявой падрыхтоўкі»"
+
+msgid "details/dossier/handOfDeath"
+msgstr "«Смертаносны»"
+
+msgid "details/dossier/heroesOfRassenay"
+msgstr "Медаль герояў Расейняя"
+
+msgid "details/dossier/historical/battlesCount"
+msgstr "Баёў у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/capturePoints"
+msgstr "Ачкоў за захоп базы ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/damageAssistedRadio"
+msgstr "Пашкоджанні выяўленага вамі супраціўніка ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/damageAssistedTrack"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі пасля трапляння, якое знерухоміла цэль "
+"збіццём тракавага паса ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/damageBlockedByArmor"
+msgstr "Пашкоджанні, заблакіраваныя бранёй, у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/damageDealt"
+msgstr "Прычыненыя пашкоджанні ў «Гістарычны бой»"
+
+msgid "details/dossier/historical/damageReceived"
+msgstr "Атрыманыя пашкоджанні ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/directHits"
+msgstr "Траплянняў у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/droppedCapturePoints"
+msgstr "Ачкоў за абарону базы ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/frags"
+msgstr "Знішчаных машын супраціўніка ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/losses"
+msgstr "Паражэнняў у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/maxDamage"
+msgstr "Найбольшыя пашкоджанні ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/noDamageDirectHitsReceived"
+msgstr "Атрыманых траплянняў без пашкоджанняў у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/originalXP"
+msgstr "«Чысты» досвед у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/piercings"
+msgstr "Прабіццяў у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/piercingsReceived"
+msgstr "Атрыманых прабіццяў у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/potentialDamageReceived"
+msgstr ""
+"Атрымаў пашкоджанняў ад любых траплянняў, апроч асколачна-фугасных у рэжыме "
+"«Гістарычны бой»"
+
+msgid "details/dossier/historical/spotted"
+msgstr "Выяўленых машын супраціўніка ў рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/survivedBattles"
+msgstr "Баёў у рэжыме «Гістарычны бой», у якіх машына гульца не была знішчана"
+
+msgid "details/dossier/historical/wins"
+msgstr "Перамог у рэжыме «Гістарычны бой»"
+
+msgid "details/dossier/historical/xp"
+msgstr "Здабыты ў рэжыме «Гістарычны бой» досвед, не менш за"
+
+msgid "details/dossier/huntsman"
+msgstr "«Стралец»"
+
+msgid "details/dossier/invader"
+msgstr "«Захопнік»"
+
+msgid "details/dossier/invincible"
+msgstr "«Непаражальны»"
+
+msgid "details/dossier/invincibleSeries"
+msgstr "Баёў запар, у якіх машына гульца не была пашкоджана"
+
+msgid "details/dossier/ironMan"
+msgstr "«Спартанец»"
+
+msgid "details/dossier/kamikaze"
+msgstr "«Камікадзэ»"
+
+msgid "details/dossier/killingSeries"
+msgstr "Знішчаных машын супраціўніка запар, кожная адным снарадам"
+
+msgid "details/dossier/kingOfTheHill"
+msgstr "«Цар гары»"
+
+msgid "details/dossier/ladder/battlesCount"
+msgstr "Баёў у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/capturePoints"
+msgstr "Ачкоў за захоп базы ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/damageAssistedRadio"
+msgstr ""
+"Пашкоджанні выяўленага вамі супраціўніка ў рэжыме «Камандны бой: гульня ў "
+"Ладары»"
+
+msgid "details/dossier/ladder/damageAssistedTrack"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі пасля трапляння, якое знерухоміла цэль "
+"збіццём тракавага паса ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/damageBlockedByArmor"
+msgstr ""
+"Пашкоджанні, заблакіраваныя бранёй, у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/damageDealt"
+msgstr "Прычыненыя пашкоджанні ў «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/damageReceived"
+msgstr "Атрыманыя пашкоджанні ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/directHits"
+msgstr "Траплянняў у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/droppedCapturePoints"
+msgstr "Ачкоў за абарону базы ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/frags"
+msgstr "Знішчаных машын супраціўніка ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/losses"
+msgstr "Паражэнняў у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/maxDamage"
+msgstr "Найбольшыя пашкоджанні ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/noDamageDirectHitsReceived"
+msgstr ""
+"Атрыманых траплянняў без пашкоджанняў у рэжыме «Камандны бой: гульня ў "
+"Ладары»"
+
+msgid "details/dossier/ladder/originalXP"
+msgstr "«Чысты» досвед у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/piercings"
+msgstr "Прабіццяў у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/piercingsReceived"
+msgstr "Атрыманых прабіццяў у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/potentialDamageReceived"
+msgstr ""
+"Атрымаў пашкоджанняў ад любых траплянняў, апроч асколачна-фугасных у рэжыме "
+"«Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/spotted"
+msgstr "Выяўленых машын супраціўніка ў рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/survivedBattles"
+msgstr ""
+"Баёў у рэжыме «Камандны бой: гульня ў Ладары», у якіх машына гульца не была "
+"знішчана"
+
+msgid "details/dossier/ladder/wins"
+msgstr "Перамог у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/ladder/xp"
+msgstr "Здабыты досвед у рэжыме «Камандны бой: гульня ў Ладары»"
+
+msgid "details/dossier/mainGun"
+msgstr "«Асноўны калібр»"
+
+msgid "details/dossier/markOfMastery"
+msgstr "Знак класнасці"
+
+msgid "details/dossier/maxDamage"
+msgstr "Найбольшыя пашкоджанні за бой"
+
+msgid "details/dossier/maxDamageVehicle"
+msgstr "Найбольшыя пашкоджанні за бой, прычыненыя на гэтай машыне"
+
+msgid "details/dossier/maxDiehardSeries"
+msgstr "Найбольш баёў запар, у якіх ацалела машына гульца, не менш за"
+
+msgid "details/dossier/maxFrags"
+msgstr "Найбольш знішчыў за бой"
+
+msgid "details/dossier/maxFragsVehicle"
+msgstr "Максімум знішчыў за бой машын супраціўніка на гэтай машыне"
+
+msgid "details/dossier/maxInvincibleSeries"
+msgstr ""
+"Найбольш баёў запар, у якіх машына гульца не была пашкоджана, не менш за"
+
+msgid "details/dossier/maxKillingSeries"
+msgstr ""
+"Найдаўжэйшую серыю знішчаных машын супраціўніка запар, кожная адным снарадам"
+
+msgid "details/dossier/maxPiercingSeries"
+msgstr "Найдаўжэйшую серыю прабіццяў запар, не менш за"
+
+msgid "details/dossier/maxSniperSeries"
+msgstr "Найдаўжэйшую серыю траплянняў запар, не менш за"
+
+msgid "details/dossier/maxXP"
+msgstr "Найбольшы досвед за бой"
+
+msgid "details/dossier/maxXPVehicle"
+msgstr "Найбольшы досвед за бой на гэтай машыне"
+
+msgid "details/dossier/medalAbrams"
+msgstr "Ступень медаля Эйбрамза"
+
+msgid "details/dossier/medalBillotte"
+msgstr "Медаль Біёта"
+
+msgid "details/dossier/medalBrothersInArms"
+msgstr "«Таварышы па зброі»"
+
+msgid "details/dossier/medalBrunoPietro"
+msgstr "Медаль Бруна"
+
+msgid "details/dossier/medalBurda"
+msgstr "Медаль Бурды"
+
+msgid "details/dossier/medalCarius"
+msgstr "Ступень медаля Кáрыюса"
+
+msgid "details/dossier/medalCrucialContribution"
+msgstr "«Вырашальны ўнёсак»"
+
+msgid "details/dossier/medalDeLanglade"
+msgstr "Медаль дэ Лянгляда"
+
+msgid "details/dossier/medalDumitru"
+msgstr "Медаль Думíтру"
+
+msgid "details/dossier/medalEkins"
+msgstr "Ступень медаля Ікінза"
+
+msgid "details/dossier/medalFadin"
+msgstr "Медаль Фадзіна"
+
+msgid "details/dossier/medalHalonen"
+msgstr "Медаль Хáланэна"
+
+msgid "details/dossier/medalKay"
+msgstr "Ступень медаля Кэя"
+
+msgid "details/dossier/medalKnispel"
+msgstr "Ступень медаля Кнíспэля"
+
+msgid "details/dossier/medalKolobanov"
+msgstr "Медаль Калабанава"
+
+msgid "details/dossier/medalLafayettePool"
+msgstr "Медаль Пула"
+
+msgid "details/dossier/medalLavrinenko"
+msgstr "Ступень медаля Лаўрыненкі"
+
+msgid "details/dossier/medalLeClerc"
+msgstr "Ступень медаля Леклéрка"
+
+msgid "details/dossier/medalLehvaslaiho"
+msgstr "Медаль Лехвяслайха"
+
+msgid "details/dossier/medalNikolas"
+msgstr "Медаль Нікалза"
+
+msgid "details/dossier/medalOrlik"
+msgstr "Медаль Орліка"
+
+msgid "details/dossier/medalOskin"
+msgstr "Медаль Оськіна"
+
+msgid "details/dossier/medalPascucci"
+msgstr "Медаль Паскýччы"
+
+msgid "details/dossier/medalPoppel"
+msgstr "Ступень медаля Попеля"
+
+msgid "details/dossier/medalRadleyWalters"
+msgstr "Медаль Рэдлі-Уолтэрза"
+
+msgid "details/dossier/medalTamadaYoshio"
+msgstr "Медаль Ёсіё Тамады"
+
+msgid "details/dossier/medalTarczay"
+msgstr "Медаль Тарцая"
+
+msgid "details/dossier/medalWittmann"
+msgstr "Медаль Бёльтэра"
+
+msgid "details/dossier/mousebane"
+msgstr "«Мышалоў»"
+
+msgid "details/dossier/pattonValley"
+msgstr "«Даліна Патанаў»"
+
+msgid "details/dossier/piercingSeries"
+msgstr "Прабіццяў запар"
+
+msgid "details/dossier/raider"
+msgstr "«Налётчык»"
+
+msgid "details/dossier/random/battleHeroes"
+msgstr "«Герояў бітвы»"
+
+msgid "details/dossier/random/battlesCount"
+msgstr "Баі"
+
+msgid "details/dossier/random/capturePoints"
+msgstr "Ачкоў за захоп базы"
+
+msgid "details/dossier/random/damageAssistedRadio"
+msgstr "Пашкоджанні выяўленага вамі супраціўніка"
+
+msgid "details/dossier/random/damageAssistedTrack"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі пасля трапляння, якое збіла тракавы пас"
+" і знерухоміла цэль"
+
+msgid "details/dossier/random/damageBlockedByArmor"
+msgstr "Пашкоджанні, заблакіраваныя бранёй"
+
+msgid "details/dossier/random/damageDealt"
+msgstr "Прычыніў пашкоджанняў"
+
+msgid "details/dossier/random/damageReceived"
+msgstr "Атрымаў пашкоджанняў"
+
+msgid "details/dossier/random/directHits"
+msgstr "Траплянняў"
+
+msgid "details/dossier/random/directHitsReceived"
+msgstr "Атрыманых траплянняў"
+
+msgid "details/dossier/random/droppedCapturePoints"
+msgstr "Ачкоў за абарону базы"
+
+msgid "details/dossier/random/explosionHitsReceived"
+msgstr "Атрыманых асколачна-фугасных траплянняў у рэжыме «Выпадковы бой»"
+
+msgid "details/dossier/random/frags"
+msgstr "Знішчаных машын супраціўніка"
+
+msgid "details/dossier/random/frags8p"
+msgstr "Знішчаных машын супраціўніка VIII-X узроўняў"
+
+msgid "details/dossier/random/fragsBeast"
+msgstr "Знішчаных машын сям'і «катоў»"
+
+msgid "details/dossier/random/lastBattleTime"
+msgstr "Працягласць бою"
+
+msgid "details/dossier/random/losses"
+msgstr "Паражэнняў"
+
+msgid "details/dossier/random/maxDamage"
+msgstr "Найбольшыя пашкоджанні"
+
+msgid "details/dossier/random/maxFrags"
+msgstr "Найбольш знішчыў за бой"
+
+msgid "details/dossier/random/maxXP"
+msgstr "Найбольшы досвед за бой"
+
+msgid "details/dossier/random/noDamageDirectHitsReceived"
+msgstr "Атрыманых траплянняў без пашкоджанняў"
+
+msgid "details/dossier/random/originalXP"
+msgstr "«Чысты» досвед у рэжыме «Выпадковы бой»"
+
+msgid "details/dossier/random/piercings"
+msgstr "Прабіццяў"
+
+msgid "details/dossier/random/piercingsReceived"
+msgstr "Атрыманых прабіццяў"
+
+msgid "details/dossier/random/potentialDamageReceived"
+msgstr "Атрымаў пашкоджанняў ад любых траплянняў, апроч асколачна-фугасных"
+
+msgid "details/dossier/random/shots"
+msgstr "Стрэлаў у рэжыме «Выпадковы бой»"
+
+msgid "details/dossier/random/spotted"
+msgstr "Выяўленых машын супраціўніка"
+
+msgid "details/dossier/random/survivedBattles"
+msgstr "Выжывальнасць"
+
+msgid "details/dossier/random/winAndSurvived"
+msgstr "Пераможных баёў, у якіх машына гульца ацалела"
+
+msgid "details/dossier/random/wins"
+msgstr "Перамог"
+
+msgid "details/dossier/random/xp"
+msgstr "Досвед"
+
+msgid "details/dossier/scout"
+msgstr "«Выведнік»"
+
+msgid "details/dossier/sinai"
+msgstr "«Сінайскі Леў»"
+
+msgid "details/dossier/sniper"
+msgstr "«Снайпер»"
+
+msgid "details/dossier/sniper2"
+msgstr "«Танкіст-снайпер»"
+
+msgid "details/dossier/sniperSeries"
+msgstr "Траплянняў запар"
+
+msgid "details/dossier/steelwall"
+msgstr "«Сталёвая сцяна»"
+
+msgid "details/dossier/sturdy"
+msgstr "«Жалезны спакой»"
+
+msgid "details/dossier/supporter"
+msgstr "«Падтрымка»"
+
+msgid "details/dossier/tacticalBreakthrough"
+msgstr "«Тактык»"
+
+msgid "details/dossier/team/battlesCount"
+msgstr "Баёў у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/capturePoints"
+msgstr "Ачкоў за захоп базы ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/damageAssistedRadio"
+msgstr "Пашкоджанні выяўленага вамі супраціўніка ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/damageAssistedTrack"
+msgstr ""
+"Пашкоджанні, прычыненыя хаўруснікамі пасля трапляння, якое знерухоміла цэль "
+"збіццём тракавага паса ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/damageBlockedByArmor"
+msgstr "Пашкоджанні, заблакіраваныя бранёй, у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/damageDealt"
+msgstr "Прычыненыя пашкоджанні ў «Камандны бой»"
+
+msgid "details/dossier/team/damageReceived"
+msgstr "Атрыманыя пашкоджанні ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/directHits"
+msgstr "Траплянняў у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/droppedCapturePoints"
+msgstr "Ачкоў за абарону базы ў «Камандны бой»"
+
+msgid "details/dossier/team/frags"
+msgstr "Знішчаных машын супраціўніка ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/losses"
+msgstr "Паражэнняў у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/maxDamage"
+msgstr "Найбольшыя пашкоджанні ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/noDamageDirectHitsReceived"
+msgstr "Атрыманых траплянняў без пашкоджанняў у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/originalXP"
+msgstr "«Чысты» досвед у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/piercings"
+msgstr "Прабіццяў у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/piercingsReceived"
+msgstr "Атрыманых прабіццяў у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/potentialDamageReceived"
+msgstr ""
+"Атрымаў пашкоджанняў ад любых траплянняў, апроч асколачна-фугасных у рэжыме "
+"«Камандны бой»"
+
+msgid "details/dossier/team/spotted"
+msgstr "Выяўленых машын супраціўніка ў рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/survivedBattles"
+msgstr "Баёў у рэжыме «Камандны бой», у якіх машына гульца не была знішчана"
+
+msgid "details/dossier/team/wins"
+msgstr "Перамог у рэжыме «Камандны бой»"
+
+msgid "details/dossier/team/xp"
+msgstr "Здабыты досвед у рэжыме «Камандны бой»"
+
+msgid "details/dossier/titleSniper"
+msgstr "«Выдатны стралок»"
+
+msgid "details/dossier/warrior"
+msgstr "«Ваяр»"
+
+msgid "details/dossier/wolfAmongSheepMedal"
+msgstr "«За выдатную стральбу»"
+
+msgid "details/groups/or"
+msgstr "АБО"
+
+msgid "details/header/activeDuration"
+msgstr "З %(startTime)s па %(finishTime)s"
+
+msgid "details/header/activeDurationDays"
+msgstr "Дні тыдня: %(days)s з %(startTime)s па %(finishTime)s"
+
+msgid "details/header/activeDurationDaysTimes"
+msgstr ""
+"Дні тыдня: %(days)s, час дзеяння: %(times)s з %(startTime)s па "
+"%(finishTime)s"
+
+msgid "details/header/activeDurationTimes"
+msgstr "Час дзеяння: %(times)s з %(startTime)s па %(finishTime)s"
+
+msgid "details/header/comeToEnd"
+msgstr "Адключаецца і можна знікнуць у любы час."
+
+msgid "details/header/comeToEndInMinutes"
+msgstr "Да сканчэння менш за %(minutes)d хв"
+
+msgid "details/header/comeToEndInMinutes/separated"
+msgstr ""
+"Да сканчэння менш за\n"
+"%(minutes)d хв"
+
+msgid "details/header/completion/daily"
+msgstr "Колькасць даступных выкананняў за суткі: %(count)d."
+
+msgid "details/header/completion/daily/groupByClass"
+msgstr ""
+"Колькасць даступных выкананняў за суткі: па %(count)d на тэхніцы пэўных "
+"тыпаў."
+
+msgid "details/header/completion/daily/groupByLevel"
+msgstr ""
+"Колькасць даступных выкананняў за суткі: па %(count)d на тэхніцы пэўных "
+"узроўняў."
+
+msgid "details/header/completion/daily/groupByNation"
+msgstr ""
+"Колькасць даступных выкананняў за суткі: па %(count)d на тэхніцы пэўных "
+"дзяржаў."
+
+msgid "details/header/completion/daily/groupByVehicle"
+msgstr ""
+"Колькасць даступных выкананняў за суткі: па %(count)d на пэўных машынах."
+
+msgid "details/header/completion/single"
+msgstr "Колькасць даступных выкананняў: %(count)d."
+
+msgid "details/header/completion/single/groupByClass"
+msgstr "Колькасць даступных выкананняў: па %(count)d на тэхніцы пэўных тыпаў."
+
+msgid "details/header/completion/single/groupByLevel"
+msgstr ""
+"Колькасць даступных выкананняў: па %(count)d на тэхніцы пэўных узроўняў."
+
+msgid "details/header/completion/single/groupByNation"
+msgstr ""
+"Колькасць даступных выкананняў: па %(count)d на тэхніцы пэўных дзяржаў."
+
+msgid "details/header/completion/single/groupByVehicle"
+msgstr "Колькасць даступных выкананняў: па %(count)d на пэўных машынах."
+
+msgid "details/header/completion/unlimited"
+msgstr "Колькасць даступных выкананняў: неабмежавана."
+
+msgid "details/header/hasNoVehicles"
+msgstr "Баявая задача недаступная: няма прыдатнай тэхнікі."
+
+msgid "details/header/info/descr_parallel"
+msgstr ""
+"Каб дапусціцца да выканання стратэгічнай задачы, выканайце пададзеныя ніжэй "
+"баявыя задачы ў адвольным парадку."
+
+msgid "details/header/info/descr_serial"
+msgstr ""
+"Каб дапусціцца да выканання стратэгічнай задачы, паслядоўна выканайце "
+"пададзеныя ніжэй баявыя задачы."
+
+msgid "details/header/info/title"
+msgstr "Умовы"
+
+msgid "details/header/scheduleDays"
+msgstr "Дні тыдня: %(days)s"
+
+msgid "details/header/scheduleDaysTimes"
+msgstr "Дні тыдня: %(days)s, час дзеяння: %(times)s"
+
+msgid "details/header/scheduleTimes"
+msgstr "Час дзеяння: %(times)s"
+
+msgid "details/header/tillDate"
+msgstr "Да %(finishTime)s"
+
+msgid "details/header/tillDateDays"
+msgstr "Дні тыдня: %(days)s да %(finishTime)s"
+
+msgid "details/header/tillDateDaysTimes"
+msgstr "Дні тыдня: %(days)s, час дзеяння: %(times)s да %(finishTime)s"
+
+msgid "details/header/tillDateTimes"
+msgstr "Час дзеяння: %(times)s па %(finishTime)s"
+
+msgid "details/modifiers/booster"
+msgstr "На куплю асабістага рэзерву «%(boosterName)s»"
+
+msgid "details/modifiers/boosters/creditsPriceMultiplier"
+msgstr "На куплю асабістых рэзерваў за крэдыты да:"
+
+msgid "details/modifiers/boosters/crystalPriceMultiplier"
+msgstr "На куплю асабістых рэзерваў за боны да:"
+
+msgid "details/modifiers/boosters/goldPriceMultiplier"
+msgstr "На куплю асабістых рэзерваў за золата да:"
+
+msgid "details/modifiers/economics/available/freeXPToTManXPRate"
+msgstr "Абмен вольнага досведу ў досвед экіпажу"
+
+msgid "details/modifiers/economics/berthsPrices"
+msgstr "На куплю ложкаў у Жаўнерні"
+
+msgid "details/modifiers/economics/clanCreationCost"
+msgstr "На стварэнне клана"
+
+msgid "details/modifiers/economics/creditsDropSkillsCost"
+msgstr "На скідванне навыкаў экіпажа за крэдыты"
+
+msgid "details/modifiers/economics/creditsTankmanCost"
+msgstr "На навучанне і перавучванне экіпажу за крэдыты"
+
+msgid "details/modifiers/economics/exchangeRate"
+msgstr "На абменны курс золата на крэдыты"
+
+msgid "details/modifiers/economics/exchangeRateForShellsAndEqs"
+msgstr ""
+"На кошт набыцця палепшанага рыштунку і спецыяльных снарадаў за крэдыты да:"
+
+msgid "details/modifiers/economics/femalePassportChangeCost"
+msgstr "На змену дакументаў жаночага экіпажу"
+
+msgid "details/modifiers/economics/freeXPConversionDiscrecity"
+msgstr "На кошт абмену баявога досведу на вольны"
+
+msgid "details/modifiers/economics/freeXPToTManXPRate"
+msgstr "На кошт абмену вольнага досведу ў досвед экіпажу"
+
+msgid "details/modifiers/economics/goldDropSkillsCost"
+msgstr "На скідванне навыкаў экіпажа за золата"
+
+msgid "details/modifiers/economics/goldTankmanCost"
+msgstr "На навучанне і перавучванне экіпажу за золата"
+
+msgid "details/modifiers/economics/passportChangeCost"
+msgstr "На змену дакументаў экіпажу"
+
+msgid "details/modifiers/economics/premiumPacket1"
+msgstr "На куплю прэміум акаўнту на 1 дзень"
+
+msgid "details/modifiers/economics/premiumPacket14"
+msgstr "На куплю прэміум акаўнту на 14 дзён"
+
+msgid "details/modifiers/economics/premiumPacket180"
+msgstr "На куплю прэміум акаўнту на 180 дзён"
+
+msgid "details/modifiers/economics/premiumPacket3"
+msgstr "На куплю прэміум акаўнту на 3 дні"
+
+msgid "details/modifiers/economics/premiumPacket30"
+msgstr "На куплю прэміум акаўнту на 30 дзён"
+
+msgid "details/modifiers/economics/premiumPacket360"
+msgstr "На куплю прэміум акаўнту на 360 дзён"
+
+msgid "details/modifiers/economics/premiumPacket7"
+msgstr "На куплю прэміум акаўнту на 7 дзён"
+
+msgid "details/modifiers/economics/premiumPacket90"
+msgstr "На куплю прэміум акаўнту на 90 дзён"
+
+msgid "details/modifiers/economics/slotsPrices"
+msgstr "На куплю слотаў у Гаражы"
+
+msgid "details/modifiers/equipment/credits"
+msgstr "На куплю рыштунку %(eqName)s за крэдыты"
+
+msgid "details/modifiers/equipment/creditsPriceMultiplier"
+msgstr "На куплю рыштунку за крэдыты да:"
+
+msgid "details/modifiers/equipment/crystal"
+msgstr "На куплю рыштунку %(eqName)s за боны"
+
+msgid "details/modifiers/equipment/crystalPriceMultiplier"
+msgstr "На куплю рыштунку за боны да:"
+
+msgid "details/modifiers/equipment/eventCoin"
+msgstr "На куплю рыштунку %(eqName)s за юбілейныя манеты"
+
+msgid "details/modifiers/equipment/gold"
+msgstr "На куплю рыштунку %(eqName)s за золата"
+
+msgid "details/modifiers/equipment/goldPriceMultiplier"
+msgstr "На куплю рыштунку за золата да:"
+
+msgid "details/modifiers/optDevice"
+msgstr "На куплю абсталявання %(devName)s"
+
+msgid "details/modifiers/optDevice/creditsPriceMultiplier"
+msgstr "На куплю абсталявання за крэдыты да:"
+
+msgid "details/modifiers/optDevice/goldPriceMultiplier"
+msgstr "На куплю абсталявання за золата да:"
+
+msgid "details/modifiers/rentVehicle"
+msgstr "На пракат тэхнікі:"
+
+msgid "details/modifiers/shell/credits"
+msgstr "На куплю снарадаў %(shellName)s за крэдыты"
+
+msgid "details/modifiers/shell/creditsPriceMultiplier"
+msgstr "На куплю снарадаў за крэдыты да:"
+
+msgid "details/modifiers/shell/gold"
+msgstr "На куплю снарадаў %(shellName)s за золата"
+
+msgid "details/modifiers/shell/goldPriceMultiplier"
+msgstr "На куплю снарадаў за золата да:"
+
+msgid "details/modifiers/shell/nation/creditsPriceMultiplier"
+msgstr "На куплю снарадаў дзяржавы %(nation)s за крэдыты да:"
+
+msgid "details/modifiers/shell/nation/goldPriceMultiplier"
+msgstr "На куплю снарадаў дзяржавы %(nation)s за золата да:"
+
+msgid "details/modifiers/title/availability"
+msgstr "Даступна магчымасць:"
+
+msgid "details/modifiers/title/discount"
+msgstr "Зніжкі:"
+
+msgid "details/modifiers/title/selling"
+msgstr "Продаж тэхнікі:"
+
+msgid "details/modifiers/vehRentPackage"
+msgstr "На пракат тэхнікі %(vehName)s на %(days)d сут:"
+
+msgid "details/modifiers/vehicle"
+msgstr "На куплю тэхнікі:"
+
+msgid "details/modifiers/vehicle/creditsPriceMultiplier"
+msgstr "На куплю тэхнікі за крэдыты да:"
+
+msgid "details/modifiers/vehicle/goldPriceMultiplier"
+msgstr "На куплю тэхнікі за золата да:"
+
+msgid "details/modifiers/vehicle/nation/creditsPriceMultiplier"
+msgstr "На куплю тэхнікі дзяржавы %(nation)s за крэдыты да:"
+
+msgid "details/modifiers/vehicle/nation/goldPriceMultiplier"
+msgstr "На куплю тэхнікі дзяржавы %(nation)s за золата да:"
+
+msgid "details/modifiers/vehicle/rent/creditsPriceMultiplier"
+msgstr "На пракат тэхнікі за крэдыты да:"
+
+msgid "details/modifiers/vehicle/rent/goldPriceMultiplier"
+msgstr "На пракат тэхнікі за золата да:"
+
+msgid "details/modifiers/vehicle/rent/nation/creditsPriceMultiplier"
+msgstr "На пракат тэхнікі дзяржавы %(nation)s за крэдыты да:"
+
+msgid "details/modifiers/vehicle/rent/nation/goldPriceMultiplier"
+msgstr "На пракат тэхнікі дзяржавы %(nation)s за золата да:"
+
+msgid "details/modifiers/vehicle/sell"
+msgstr "На продаж тэхнікі:"
+
+msgid "details/relations1/equal"
+msgstr "роўна"
+
+msgid "details/relations1/greater"
+msgstr "больш за"
+
+msgid "details/relations1/greaterOrEqual"
+msgstr "?empty?"
+
+msgid "details/relations1/less"
+msgstr "менш за"
+
+msgid "details/relations1/lessOrEqual"
+msgstr "не больш за"
+
+msgid "details/relations1/notEqual"
+msgstr "не роўна"
+
+msgid "details/relations2/equal"
+msgstr "роўна"
+
+msgid "details/relations2/greater"
+msgstr "вышэй за"
+
+msgid "details/relations2/greaterOrEqual"
+msgstr "не ніжэй за"
+
+msgid "details/relations2/less"
+msgstr "ніжэй за"
+
+msgid "details/relations2/lessOrEqual"
+msgstr "не вышэй за"
+
+msgid "details/relations2/notEqual"
+msgstr "не роўна"
+
+msgid "details/requirements/dossierAvgValue"
+msgstr "Сярэдняе значэнне: %(label)s"
+
+msgid "details/requirements/dossierValue"
+msgstr "%(label)s"
+
+msgid "details/requirements/forCurrentClan"
+msgstr "Быць у клане"
+
+msgid "details/requirements/globalRating"
+msgstr "Асабісты рэйтынг"
+
+msgid "details/requirements/group/token/N"
+msgstr ""
+"Патрэбная колькасць выкананняў баявых задач з групы «%(groupName)s»: "
+"%(left)s/%(count)s"
+
+msgid "details/requirements/igr"
+msgstr "Гуляць у IGR"
+
+msgid "details/requirements/igrBasic"
+msgstr "Гуляць у Standard IGR"
+
+msgid "details/requirements/igrPremium"
+msgstr "Гуляць у Premium IGR"
+
+msgid "details/requirements/inAnyClan"
+msgstr "Быць у клане"
+
+msgid "details/requirements/inClan"
+msgstr "Даступная толькі некаторых кланам"
+
+msgid "details/requirements/ladder"
+msgstr "Вы павінны быць у штаце пастаяннай каманды."
+
+msgid "details/requirements/notForCurrentClan"
+msgstr "Недаступная вашаму клану"
+
+msgid "details/requirements/notInAnyClan"
+msgstr "Не быць у клане"
+
+msgid "details/requirements/notInClan"
+msgstr "Недаступная некаторым кланам"
+
+msgid "details/requirements/notPremiumAccount"
+msgstr ""
+"Баявая задача даступная толькі гульцам са звычайным (не прэміум) акаўнтам."
+
+msgid "details/requirements/premiumAccount"
+msgstr ""
+"Баявая задача даступная толькі для гульцоў з Агульным прэміум акаўнтам."
+
+msgid "details/requirements/premiumPlusAccount"
+msgstr ""
+"Баявая задача даступная толькі для гульцоў з Танкавым прэміум акаўнтам."
+
+msgid "details/requirements/relation"
+msgstr " %(relation)s %(value)s"
+
+msgid "details/requirements/token"
+msgstr "Сабраць маркі"
+
+msgid "details/requirements/token/N"
+msgstr ""
+"Патрэбная колькасць выкананняў баявой задачы «%(questName)s»: "
+"%(left)s/%(count)s"
+
+msgid "details/requirements/vehicle/any"
+msgstr "Да выканання баявой задачы можна прыступіць на любой тэхніцы."
+
+msgid "details/requirements/vehicle/notReceivedMultXp"
+msgstr ""
+"Можа ўдзельнічаць толькі тэхніка, што не атрымала ×%(mult)d за першую "
+"перамогу за дзень."
+
+msgid "details/requirements/vehicle/receivedMultXp"
+msgstr ""
+"Можа ўдзельнічаць толькі тэхніка, што атрымала ×%(mult)d за першую перамогу "
+"за дзень."
+
+msgid "details/requirements/vehiclesOwned"
+msgstr "Тэхніка ў Гаражы"
+
+msgid "details/requirements/vehiclesOwned/all"
+msgstr "Купіць усю тэхніку"
+
+msgid "details/requirements/vehiclesOwned/level"
+msgstr "Купіць тэхніку ўзроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/level/not"
+msgstr "Не купляць тэхнікі ўзроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/nation"
+msgstr "Купіць тэхніку дзяржавы: %(nation)s"
+
+msgid "details/requirements/vehiclesOwned/nation/not"
+msgstr "Не купляць тэхнікі дзяржавы: %(nation)s"
+
+msgid "details/requirements/vehiclesOwned/nation_level"
+msgstr "Набыць тэхніку дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/nation_level/not"
+msgstr "Не купляць тэхнікі дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/nation_type"
+msgstr "Купіць тэхніку дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesOwned/nation_type/not"
+msgstr "Не купляць тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesOwned/nation_type_level"
+msgstr ""
+"Купіць тэхніку дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/nation_type_level/not"
+msgstr ""
+"Не купляць тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/not"
+msgstr "Тэхніка не ў Гаражы"
+
+msgid "details/requirements/vehiclesOwned/type"
+msgstr "Купіць тэхніку тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesOwned/type/not"
+msgstr "Не купляць тэхнікі тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesOwned/type_level"
+msgstr "Купіць тэхніку тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesOwned/type_level/not"
+msgstr "Не купляць тэхнікі тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesTable/count"
+msgstr "Колькасць"
+
+msgid "details/requirements/vehiclesTable/discount"
+msgstr "Зніжка"
+
+msgid "details/requirements/vehiclesTable/name"
+msgstr "Назва"
+
+msgid "details/requirements/vehiclesUnlocked"
+msgstr "Даследаваная тэхніка"
+
+msgid "details/requirements/vehiclesUnlocked/all"
+msgstr "Даследаваць усю тэхніку"
+
+msgid "details/requirements/vehiclesUnlocked/level"
+msgstr "Даследаваць тэхніку ўзроўню: %(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/level/not"
+msgstr "Не даследаваць тэхнікі ўзроўню: %(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation"
+msgstr "Даследаваць тэхніку дзяржавы: %(nation)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation/not"
+msgstr "Не даследаваць тэхнікі дзяржавы: %(nation)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation_level"
+msgstr "Даследаваць тэхніку дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation_level/not"
+msgstr "Не даследаваць тэхнікі дзяржавы: %(nation)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation_type"
+msgstr "Даследаваць тэхніку дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation_type/not"
+msgstr "Не даследаваць тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation_type_level"
+msgstr ""
+"Даследаваць тэхніку дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/nation_type_level/not"
+msgstr ""
+"Не даследаваць тэхнікі дзяржавы: %(nation)s; тыпу: %(type)s; узроўню: "
+"%(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/not"
+msgstr "Недаследаваная тэхніка"
+
+msgid "details/requirements/vehiclesUnlocked/type"
+msgstr "Даследаваць тэхніку тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesUnlocked/type/not"
+msgstr "Не даследаваць тэхнікі тыпу: %(type)s"
+
+msgid "details/requirements/vehiclesUnlocked/type_level"
+msgstr "Даследаваць тэхніку тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/vehiclesUnlocked/type_level/not"
+msgstr "Не даследаваць тэхнікі тыпу: %(type)s; узроўню: %(level)s"
+
+msgid "details/requirements/withoutWotPlus"
+msgstr "?empty?"
+
+msgid "details/requirements/wotPlus"
+msgstr "?empty?"
+
+msgid "details/requirementsRelation/equal"
+msgstr "роўна"
+
+msgid "details/requirementsRelation/greater"
+msgstr "больш за"
+
+msgid "details/requirementsRelation/greaterOrEqual"
+msgstr "не менш за"
+
+msgid "details/requirementsRelation/less"
+msgstr "менш за"
+
+msgid "details/requirementsRelation/lessOrEqual"
+msgstr "не больш за"
+
+msgid "details/requirementsRelation/notEqual"
+msgstr "не роўна"
+
+msgid "details/status/completed"
+msgstr "Баявая задача выканана!"
+
+msgid "details/status/completed/daily"
+msgstr "Баявая задача выканана! Наступным разам яе можна выканаць: %(time)s"
+
+msgid "details/status/completed/weekly"
+msgstr "Баявая задача выканана! Наступным разам яе можна выканаць: %(time)s"
+
+msgid "details/status/notAvailable/in_future"
+msgstr "Баявая задача недаступная. Будзе даступная %(time)s"
+
+msgid "details/status/notAvailable/invalid_time_interval"
+msgstr "Баявая задача недаступная. Будзе даступная %(time)s"
+
+msgid "details/status/notAvailable/invalid_weekday"
+msgstr "Баявая задача недаступная. Будзе даступная %(time)s"
+
+msgid "details/status/notAvailable/out_of_date"
+msgstr "Баявая задача недаступная, бо ўмовы не выконваюцца."
+
+msgid "details/status/notAvailable/requirements"
+msgstr "Баявая задача недаступная, бо патрабаванні не выконваюцца."
+
+msgid "details/tasks/nextTask"
+msgstr "Наступная баявая задача"
+
+msgid "details/tasks/requirements/accountLabel"
+msgstr "Допуск да ўдзелу"
+
+msgid "details/tasks/requirements/vehicleLabel"
+msgstr "Прыдатная тэхніка"
+
+msgid "details/tasks/requirements/vehicleLabel/from"
+msgstr "з"
+
+msgid "details/tasks/requirements/vehicleLabel/suitable"
+msgstr "прыдатных"
+
+msgid "details/tasks/strategic"
+msgstr "Частка баявой задачы"
+
+msgid "details/tasks/subTask"
+msgstr "Баявая задача"
+
+msgid "general/countdown/text/timer_hrs"
+msgstr "Замена даступная праз %H ч %M хв"
+
+msgid "general/countdown/text/timer_hrs_only"
+msgstr "Замена даступная праз %H гадз"
+
+msgid "general/countdown/text/timer_min"
+msgstr "Замена даступная праз %MM:%SS"
+
+msgid "general/countdown/text/timer_min_only"
+msgstr "Замена даступная праз %M хв"
+
+msgid "general/countdown/text/timer_sec"
+msgstr "Замена даступная праз %S с"
+
+msgid "general/countdown/timer_hrs"
+msgstr "%H гадз %M хв"
+
+msgid "general/countdown/timer_hrs_only"
+msgstr "%H гадз"
+
+msgid "general/countdown/timer_min"
+msgstr "%MM:%SS"
+
+msgid "general/countdown/timer_min_only"
+msgstr "%M хв"
+
+msgid "general/countdown/timer_sec"
+msgstr "%S с"
+
+msgid "igr/tooltip/battlesLabel"
+msgstr "Баёў"
+
+msgid "igr/tooltip/winsLabel"
+msgstr "Перамог"
+
+msgid "infoPage/bonusMission/default"
+msgstr ""
+"Выкананне трох стандартных задач адкрывае доступ да бонуснай, за выкананне "
+"якой вы атрымаеце яшчэ больш каштоўныя ўзнагароды. Вы павінны паспець "
+"выканаць бонусную задачу да канца дня, інакш яна прападзе."
+
+msgid "infoPage/bonusMission/winback"
+msgstr ""
+"Выкананне трох стандартных задач адкрывае доступ да бонуснай задачы, за "
+"выкананне якой вы атрымаеце больш каштоўныя ўзнагароды. Бонусную задачу "
+"неабходна выканаць да канца дня, інакш яна знікне."
+
+msgid "infoPage/bonusMissionTitle"
+msgstr "Бонусная задача"
+
+msgid "infoPage/conditions/default"
+msgstr ""
+"Некаторыя задачы трэба выканаць за адзін бой, для іншых такога абмежавання "
+"няма. Для назапашвальных задач прадугледжана шкала прагрэсу. Задачы можна "
+"выконваць у Выпадковых баях (у тым ліку ў Генеральнай бітве), а таксама ў "
+"рэжымах «Націск» і «Рангавыя баі». Прагрэс па задачах захоўваецца пры змене "
+"рэжыму гульні."
+
+msgid "infoPage/conditions/winback"
+msgstr ""
+"Некаторыя задачы неабходна выконваць за адзін бой, для іншых падобным "
+"абмежаванняў няма. Для назапашвальных задач прадугледжана шкала прагрэсу. "
+"Задачы даступныя для выканання ў Размінцы і Выпадковых баях (у тым ліку ў "
+"Генеральнай бітве)."
+
+msgid "infoPage/conditions/winback_comp7Active"
+msgstr ""
+"Некаторыя задачы неабходна выканаць за адзін бой, для іншых падобных "
+"абмежаванняў няма. Для назапашвальных задач прадугледжана шкала прагрэсу. "
+"Задачы даступныя для выканання ў Размінцы і Выпадковых баях (у тым ліку ў "
+"Генеральнай бітве) і Націску. Прагрэс выканання захоўваецца пры змене "
+"рэжыму."
+
+msgid "infoPage/conditionsTitle"
+msgstr "Умовы"
+
+msgid "infoPage/dailyMissionTitle"
+msgstr "Стандартныя задачы"
+
+msgid "infoPage/dailyMissions/battlePassDailyMissions/default"
+msgstr ""
+"Стандартныя задачы складаюцца з выпадковых умоў, а выконваць іх можна "
+"штодзённа. Як і Асабістых баявых задачах, прагрэс выканання стандартных "
+"задач абнаўляецца пасля кожнага бою. Гэтыя задачы лепей выконваць у дзень іх"
+" выдачы, інакш яны перанясуцца на заўтра, а наступная задача будзе выдадзена"
+" толькі пасля выканання бягучай. Падчас дзеяння Баявога пропуска да "
+"ўзнагароды за кожную задачу дадаюцца ачкі Баявога пропуска."
+
+msgid "infoPage/dailyMissions/battlePassDailyMissions/winback"
+msgstr ""
+"Стандартныя задачы з выпадковымі ўмовамі можна выконваць штодзённа. Прагрэс "
+"абнаўляецца пасля кожнага бою, аднак лепш выконваць іх у дзень атрымання. У "
+"адваротным выпадку яны перанясуцца на іншы дзень, а наступная задача не "
+"будзе выдадзена да выканання бягучай. Падчас дзеяння Баявога пропуска да "
+"ўзнагароды за кожную задачу дадаюцца ачкі Баявога пропуска."
+
+msgid "infoPage/dailyMissions/default"
+msgstr ""
+"Стандартныя задачы складаюцца з выпадковых умоў, якія можна выконваць "
+"штодзённа. Як і ў Асабістых баявых задачах, прагрэс выканання стандартных "
+"задач абнаўляецца пасля кожнага бою. Гэтыя задачы не маюць абмежаванняў у "
+"часе і могуць выконвацца ў любы момант."
+
+msgid "infoPage/dailyMissions/subscription/default"
+msgstr ""
+"Пры актыўнай падпісцы да ўзнагароды за кожную задачу дадаецца дадатковая "
+"ўзнагарода."
+
+msgid "infoPage/dailyMissions/winback"
+msgstr ""
+"Стандартныя задачы з выпадковымі ўмовамі можна выконваць штодзённа. Прагрэс "
+"абнаўляецца пасля кожнага бою. У гэтых задач няма часовых абмежаванняў, іх "
+"можна выконваць у любы момант."
+
+msgid "infoPage/epicRewards/default"
+msgstr ""
+"Для атрымання асаблівай узнагароды неабходна выканаць ланцужок задач, "
+"пабудаваны згодна з прынцыпам «марафону»: у залік ідзе кожная выкананая "
+"стандартная, прэміум і бонусная задача. Пасля завяршэння апошняй задачы цыкл"
+" пачынаецца нанова. Цыкл не мае абмежаванняў паводле часу і можа быць "
+"завершаны ў любы момант."
+
+msgid "infoPage/epicRewards/winback"
+msgstr ""
+"Для атрымання галоўнай узнагароды неабходна завяршыць усю прагрэсію задач "
+"«Зноў у строй». У залік ідзе кожная выкананая стандартная, прэміум і "
+"бонусная задача. Завяршыўшы апошнюю задачу, вы атрымаеце ўзнагароду. "
+"Прагрэсія пры гэтым абнуліцца і будзе зноў даступная для праходжання."
+
+msgid "infoPage/epicRewardsTitle"
+msgstr "Адмысловая ўзнагарода"
+
+msgid "infoPage/header/default"
+msgstr "ПРА ШТОДЗЁННЫЯ ЗАДАЧЫ"
+
+msgid "infoPage/header/winback"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "infoPage/infoButton/back/goto"
+msgstr "ЗА ЗАДАЧ"
+
+msgid "infoPage/infoButton/back/title"
+msgstr "НАЗАД"
+
+msgid "infoPage/infoButton/default"
+msgstr "ПРА ШТОДЗЁННЫЯ ЗАДАЧЫ"
+
+msgid "infoPage/infoButton/winback"
+msgstr "ПРА ЗАДАЧЫ"
+
+msgid "infoPage/infoButtonTooltip/body"
+msgstr "Перайдзіце па спасылцы, каб атрымаць дадатковую інфармацыю."
+
+msgid "infoPage/infoButtonTooltip/header/default"
+msgstr "Пра штодзённыя задачы"
+
+msgid "infoPage/infoButtonTooltip/header/winback"
+msgstr "Пра задачы"
+
+msgid "infoPage/lootboxConditions/button"
+msgstr "Так точно!"
+
+msgid "infoPage/lootboxConditions/default"
+msgstr ""
+"В течение всего праздничного события к наградам за выполнение ежедневных "
+"задач будут дополнительно выданы контейнеры с ёлочными украшениями как за "
+"стандартные задачи, так и за бонусную."
+
+msgid "infoPage/lootboxConditionsTitle"
+msgstr "Контейнеры «Ёлочные украшения» в ежедневных задачах"
+
+msgid "infoPage/missionSwitch/winback"
+msgstr ""
+"Раз на 4 гадзіны любую са стандартных задач можна замяніць на іншую "
+"выпадковую. Калі ў гэты момант адна або некалькі вашых машын знаходзяцца ў "
+"баі, прагрэс выканання будзе страчаны."
+
+msgid "infoPage/missionSwitchTitle"
+msgstr "Замена задачы"
+
+msgid "infoPage/missionSwitch_hrs"
+msgstr ""
+"Нежаданую стандартную задачу можна замяніць на іншую выпадковую. Пасля "
+"замены дадзеная опцыя стане недаступнай на %H гадз. Замена задачы прывядзе "
+"да страты прагрэсу, калі ў гэты момант адна або некалькі вашых машын "
+"знаходзяцца ў баі."
+
+msgid "infoPage/missionSwitch_min"
+msgstr ""
+"Нежаданую стандартную задачу можна замяніць на іншую выпадковую. Пасля "
+"замены дадзеная опцыя стане недаступнай на %H гадз. і %MM хв. Замена задачы "
+"прывядзе да страты прагрэсу, калі ў гэты момант адна або некалькі вашых "
+"машын знаходзяцца ў баі."
+
+msgid "infoPage/premiumMissions/default"
+msgstr ""
+"Танкавы прэміум акаўнт адкрывае доступ да ланцужка з трох прэміум задач, "
+"якія неабходна выканаць паслядоўна. Усе задачы даступныя для выканання ў "
+"Выпадковых баях, а таксама ў рэжыме «Націск» і «Рангавыя баі». Прагрэс "
+"выканання абнаўляецца пасля кожнага бою."
+
+msgid "infoPage/premiumMissions/winback"
+msgstr ""
+"Танкавы прэміум акаўнт адкрывае доступ да ланцужка з трох прэміум задач, "
+"якія выконваюцца паслядоўна. Усе задачы можна выконваць у Размінцы і "
+"Выпадковых баях. Прагрэс выканання абнаўляецца пасля кожнага бою."
+
+msgid "infoPage/premiumMissions/winback_comp7Active"
+msgstr ""
+"Танкавы прэміум акаўнт адкрывае доступ да ланцужка з трох прэміум задач, "
+"якія выконваюцца паслядоўна. Усе задачы можна выконваць у Размінцы, "
+"Выпадковых баях і Націску. Прагрэс выканання абнаўляецца пасля кожнага бою."
+
+msgid "infoPage/premiumMissionsTitle"
+msgstr "Прэміум задачы"
+
+msgid "item/timer/tillFinish"
+msgstr "Да сканчэння"
+
+msgid "item/timer/tillFinish/days"
+msgstr "Да сканчэння"
+
+msgid "item/timer/tillFinish/hours"
+msgstr "Да сканчэння"
+
+msgid "item/timer/tillFinish/lessThanDay"
+msgstr "менш за 1 сут"
+
+msgid "item/timer/tillFinish/lessThanHour"
+msgstr "менш за гадзіну"
+
+msgid "item/timer/tillFinish/longFormat"
+msgstr "%(hours)s гадз %(min)s хв"
+
+msgid "item/timer/tillFinish/longFullFormat"
+msgstr "Да сканчэння %(hours)s гадз"
+
+msgid "item/timer/tillFinish/longFullFormatMin"
+msgstr "Да сканчэння %(minutes)s хв."
+
+msgid "item/timer/tillFinish/onlyHours"
+msgstr "%(hours)s гадз"
+
+msgid "item/timer/tillFinish/shortFormat"
+msgstr "%(min)s хв"
+
+msgid "item/timer/tillFinish/shortFullFormat"
+msgstr "Да сканчэння менш за гадзіну"
+
+msgid "item/timer/tillStart"
+msgstr "Будзе даступная"
+
+msgid "item/timer/tillStart/days"
+msgstr "праз %(day)s сут %(hour)s"
+
+msgid "item/timer/tillStart/hours"
+msgstr "праз %(hour)s гадз %(min)s хв"
+
+msgid "item/timer/tillStart/min"
+msgstr "праз %(min)s хв"
+
+msgid "item/type/action"
+msgstr "Акцыя"
+
+msgid "item/type/ladder"
+msgstr "Камандны: гульні ў Ладары"
+
+msgid "item/type/personalMission"
+msgstr "Асабістая баявая задача"
+
+msgid "item/type/quest"
+msgstr "Баявая задача"
+
+msgid "item/type/questDaily"
+msgstr "Баявая задача"
+
+msgid "item/type/questStrategic"
+msgstr "Стратэгічная задача"
+
+msgid "item/type/specialMission"
+msgstr "Умацаваны раён: асобыя ўказанні"
+
+msgid "lootBox/boxCount"
+msgstr "x%(count)s"
+
+msgid "lootBox/boxesLabel"
+msgstr "Контейнер %(boxName)s %(boxCount)s"
+
+msgid "metrics/state/done"
+msgstr "Выканана"
+
+msgid "metrics/state/failed"
+msgstr "Скончылася няўдала"
+
+msgid "metrics/state/inProgress"
+msgstr "Выконваецца"
+
+msgid "metrics/title/done"
+msgstr "Выканана:"
+
+msgid "metrics/title/left"
+msgstr "Засталося часу:"
+
+msgid "metrics/title/position"
+msgstr "Месца:"
+
+msgid "metrics/title/progress"
+msgstr "Ход выканання:"
+
+msgid "metrics/title/targets"
+msgstr "Цэлі:"
+
+msgid "metrics/title/triesLeft"
+msgstr "Засталося спроб:"
+
+msgid "missionDetails/battleCondition/list"
+msgstr "Спіс"
+
+msgid "missionDetails/bottomStatusComplete"
+msgstr "Задача выканана"
+
+msgid "missionDetails/bottomStatusNextTry"
+msgstr "Наступнае выкананне будзе даступнае праз %(time)s"
+
+msgid "missionDetails/bottomStatusTokens"
+msgstr "Збярыце ўсе маркі: %(count)d / %(total)d"
+
+msgid "missionDetails/conditions/battleBonusType"
+msgstr "Рэжым бою"
+
+msgid "missionDetails/conditions/battleBonusType/body"
+msgstr "Задачу можна выканаць для рэжымаў: %(battleBonusTypes)s"
+
+msgid "missionDetails/conditions/battles"
+msgstr "Выконваць умовы ў кожным з %(total)s баёў"
+
+msgid "missionDetails/conditions/battlesInRow"
+msgstr "Выканаць умовы за %(total)s баёў запар"
+
+msgid "missionDetails/conditions/battlesUpperLimit"
+msgstr "Выканаць умовы за %(total)s баёў"
+
+msgid "missionDetails/conditions/clanMembership/any"
+msgstr "быць у клане"
+
+msgid "missionDetails/conditions/clanMembership/same"
+msgstr "у адным клане"
+
+msgid "missionDetails/conditions/formation"
+msgstr "фарміраванне"
+
+msgid "missionDetails/conditions/formation/squad"
+msgstr "Звяз"
+
+msgid "missionDetails/conditions/groupBy/noProgress"
+msgstr "Пачніце выконваць умовы, каб пабачыць ход выканання задачы"
+
+msgid "missionDetails/conditions/level"
+msgstr "Узровень"
+
+msgid "missionDetails/conditions/maps"
+msgstr "Даступныя мапы"
+
+msgid "missionDetails/conditions/maps/not"
+msgstr "Недаступныя мапы"
+
+msgid "missionDetails/conditions/mapsType"
+msgstr "Тып мапы"
+
+msgid "missionDetails/conditions/mapsType/body"
+msgstr "Задачу можна выканаць для тыпаў мап: %(maps)s"
+
+msgid "missionDetails/conditions/playBattle"
+msgstr "Адваяваць бой"
+
+msgid "missionDetails/date"
+msgstr "З %(dateStart)s па %(dateEnd)s"
+
+msgid "missionDetails/dateSince"
+msgstr "З %(dateStart)s"
+
+msgid "missionDetails/dateTo"
+msgstr "Да %(dateEnd)s"
+
+msgid "missionDetails/description"
+msgstr "Апісанне задачы"
+
+msgid "missionDetails/missionsComplete"
+msgstr "Выканана: %(count)s з %(total)s"
+
+msgid "missionDetails/missionsComplete/daily"
+msgstr "Выканана за суткі: %(count)s з %(total)s"
+
+msgid "missionDetails/missionsComplete/weekly"
+msgstr "Выканана за тыдзень: %(count)s / %(total)s"
+
+msgid "missionDetails/missionsCompleteCounter"
+msgstr "Выканана: %(count)s"
+
+msgid "missionDetails/nextPageBtn/label"
+msgstr "Наступныя"
+
+msgid "missionDetails/personalQuest/complete/left"
+msgstr "Засталося выкананняў: %(count)s"
+
+msgid "missionDetails/personalQuest/complete/left/daily"
+msgstr "З іх за суткі: %(count)s"
+
+msgid "missionDetails/personalQuest/complete/left/weekly"
+msgstr "З іх за тыдзень: %(count)s"
+
+msgid "missionDetails/personalQuest/details/complete/left/daily"
+msgstr "з іх за суткі: %(count)s"
+
+msgid "missionDetails/personalQuest/details/complete/left/weekly"
+msgstr "з іх за тыдзень: %(count)s"
+
+msgid "missionDetails/prevPageBtn/label"
+msgstr "Папярэднія"
+
+msgid "missionDetails/requirements/conclusion/available"
+msgstr "Патрабаванні выкананы (%(count)s)"
+
+msgid "missionDetails/requirements/conclusion/unavailable"
+msgstr "Патрабаванні не выкананы (%(count)s)"
+
+msgid "missionDetails/requirements/header/available"
+msgstr "Задача даступная:"
+
+msgid "missionDetails/requirements/header/unavailable"
+msgstr "Задача недаступная:"
+
+msgid "missionDetails/resetDate"
+msgstr "Абнуленне задачы а %(time)s"
+
+msgid "missionDetails/status/completed/daily"
+msgstr "Наступнае даступнае выкананне праз: %(time)s"
+
+msgid "missionDetails/status/completed/weekly"
+msgstr "Наступнае даступнае выкананне праз: %(time)s"
+
+msgid "missionDetails/status/disabled"
+msgstr "Задача адключана"
+
+msgid "missionDetails/status/notAvailable"
+msgstr "Недаступна"
+
+msgid "missionDetails/status/notAvailable/in_future"
+msgstr "будзе даступная праз %(time)s"
+
+msgid "missionDetails/status/notAvailable/invalid_time_interval"
+msgstr "будзе даступная праз %(time)s"
+
+msgid "missionDetails/status/notAvailable/invalid_weekday"
+msgstr "будзе даступная праз %(time)s"
+
+msgid "missionDetails/status/notAvailable/nearestTime"
+msgstr "будзе даступная праз: %(time)s"
+
+msgid "missionDetails/status/notAvailableByTime"
+msgstr "Рэгламент"
+
+msgid "missionDetails/status/wrongTime"
+msgstr "Задача недаступная:"
+
+msgid "missionDetails/status/wrongVehicle"
+msgstr "Недаступна"
+
+msgid "missionDetails/vehicle/conditions/header"
+msgstr "Спіс тэхнікі, якая падпадае пад умовы задачы"
+
+msgid "missionDetails/vehicle/conditions/level"
+msgstr "Узровень:"
+
+msgid "missionDetails/vehicle/conditions/level/all"
+msgstr "Усе ўзроўні"
+
+msgid "missionDetails/vehicle/conditions/nations"
+msgstr "Дзяржава:"
+
+msgid "missionDetails/vehicle/conditions/nations/all"
+msgstr "Усе дзяржавы"
+
+msgid "missionDetails/vehicle/conditions/nations/tooltip"
+msgstr "Дзяржава: %(nation)s"
+
+msgid "missionDetails/vehicle/conditions/type"
+msgstr "Тып:"
+
+msgid "missionDetails/vehicle/conditions/type/all"
+msgstr "Усе тыпы"
+
+msgid "missionDetails/vehicle/conditions/type/tooltip"
+msgstr "Тып тэхнікі: %(type)s"
+
+msgid "missionDetails/vehiclesAvailable"
+msgstr "Маецца: %(count)s"
+
+msgid "missionDetails/vehiclesSelect"
+msgstr "Выбраць тэхніку"
+
+msgid "missionDetails/weeklyReset"
+msgstr "Абнуленне задачы: %(time)s"
+
+msgid "missions/awards/merged"
+msgstr "І яшчэ: %(count)s"
+
+msgid "missions/battle/eventBoards/date"
+msgstr "Дата"
+
+msgid "missions/battle/eventBoards/result"
+msgstr "Вынік"
+
+msgid "missions/battle/eventBoards/vehicles"
+msgstr "Тэхніка"
+
+msgid "missions/filter/filterButton/body"
+msgstr ""
+"Змяняючы налады фільтра можна падшукаць задачы, якія адпавядаюць указаным "
+"параметрам."
+
+msgid "missions/filter/filterButton/header"
+msgstr "Фільтр задач"
+
+msgid "missions/filter/popover/defaultButton/body"
+msgstr "Націсніце, каб скінуць налады фільтра на стандартны стан."
+
+msgid "missions/filter/popover/defaultButton/header"
+msgstr "Скінуць фільтр"
+
+msgid "missions/filter/popover/defaultButton/label"
+msgstr "Скінуць фільтр"
+
+msgid "missions/filter/popover/hideDone"
+msgstr "Схаваць выкананыя"
+
+msgid "missions/filter/popover/hideUnavailable"
+msgstr "Схаваць недаступныя"
+
+msgid "missions/filter/popover/title"
+msgstr "Фільтр задач"
+
+msgid "missions/filterCounter/closeButton/body"
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+
+msgid "missions/filterCounter/closeButton/header"
+msgstr "Паставіць стандартныя налады"
+
+msgid "missions/filterCounter/label"
+msgstr "Паказана задач:"
+
+msgid "missions/group/motive/label"
+msgstr "Баявыя задачы выбранай катэгорыі"
+
+msgid "missions/group/others/label"
+msgstr "Баявыя задачы выбранай катэгорыі"
+
+msgid "missions/noTasks/dummy/text"
+msgstr "Зараз няма баявых задач."
+
+msgid "missions/noTasksBody/dummy/btnLabel"
+msgstr "Скінуць фільтр"
+
+msgid "missions/noTasksBody/dummy/text"
+msgstr ""
+"Нічога не знойдзена. Змяніце налады фільтра\n"
+"або скіньце налады фільтра на стандартныя."
+
+msgid "missions/noTasksMarathon/dummy/text"
+msgstr ""
+"Зараз гульнявыя падзеі адсутнічаюць.\n"
+"Вы можаце выбраць баявую задачу, калі такія ёсць,\n"
+"у адпаведным раздзеле «Баявыя задачы»."
+
+msgid "missions/tab/battleMatters/body"
+msgstr ""
+"Ланцужок вучэбных задач, поўнае выкананне якіх пазнаёміць з асноўнымі "
+"механікамі гульні і прынясе каштоўную ўзнагароду."
+
+msgid "missions/tab/battleMatters/header"
+msgstr "Танкавая акадэмія"
+
+msgid "missions/tab/battle_pass/body"
+msgstr ""
+"Гуляйце ў Выпадковых і Рангавых баях, а таксама ў рэжыме «Сталёвы паляўнічы»"
+" і атрымлівайце дадатковыя ўзнагароды. Ачкі Баявога пропуска налічваюцца "
+"таксама і за штодзённыя задачы."
+
+msgid "missions/tab/battle_pass/header"
+msgstr "Баявы пропуск"
+
+msgid "missions/tab/categories/body"
+msgstr "Баявыя задачы, якія можна выканаць адзін або некалькі разоў."
+
+msgid "missions/tab/categories/header"
+msgstr "Баявыя задачы"
+
+msgid "missions/tab/category/header/performedTasks"
+msgstr "Выканана задач:"
+
+msgid "missions/tab/currentVehicle/body"
+msgstr "Баявыя задачы, даступныя для выканання на выбранай у Гаражы машыне."
+
+msgid "missions/tab/currentVehicle/header"
+msgstr "Для выбранай машыны"
+
+msgid "missions/tab/daily/body"
+msgstr "Выпадковыя ўмовы, якія абнаўляюцца штодзённа пасля выканання."
+
+msgid "missions/tab/daily/header"
+msgstr "Штодзённыя задачы"
+
+msgid "missions/tab/eventBoards/body"
+msgstr "Націсніце, каб перайсці да спаборніцтваў."
+
+msgid "missions/tab/eventBoards/disabled"
+msgstr "Спаборніцтвы"
+
+msgid "missions/tab/eventBoards/disabled/body"
+msgstr "Спаборніцтвы з прычыны прафілактычных работ часова недаступныя."
+
+msgid "missions/tab/eventBoards/disabled/header"
+msgstr "Спаборніцтвы"
+
+msgid "missions/tab/eventBoards/header"
+msgstr "Спаборніцтвы"
+
+msgid "missions/tab/kursk/body"
+msgstr "Штодзённыя баявыя задачы, прымеркаваныя да гадавіны Курскай бітвы."
+
+msgid "missions/tab/kursk/header"
+msgstr "Курская бітва"
+
+msgid "missions/tab/label/categories"
+msgstr "Баявыя задачы"
+
+msgid "missions/tab/label/currentVehicle"
+msgstr "Для %(vehName)s"
+
+msgid "missions/tab/label/daily"
+msgstr "Штодзённыя"
+
+msgid "missions/tab/label/eventBoards"
+msgstr "Спаборніцтвы"
+
+msgid "missions/tab/label/kursk"
+msgstr "Курская бітва"
+
+msgid "missions/tab/label/marathon"
+msgstr "Падзеі"
+
+msgid "missions/tab/label/may21_marathon"
+msgstr "Крыштальнае паляванне"
+
+msgid "missions/tab/label/missions"
+msgstr "Вучэбныя задачы"
+
+msgid "missions/tab/mapbox/body"
+msgstr ""
+"Тэстуйце новыя механікі на мапах, выбірайце найлепшую і атрымлівайце прызы."
+
+msgid "missions/tab/mapbox/header"
+msgstr "Разведка боем"
+
+msgid "missions/tab/marathons/body"
+msgstr ""
+"Комплекс баявых задач, поўнае выкананне якога забяспечыць атрыманне "
+"каштоўнай узнагароды."
+
+msgid "missions/tab/marathons/header"
+msgstr "Падзеі"
+
+msgid "missions/tab/marathons/header/award"
+msgstr "Узнагарода:"
+
+msgid "missions/tab/marathons/header/condition"
+msgstr "Збярыце маркі:"
+
+msgid "missions/tab/marathons/header/desc"
+msgstr ""
+"Каб гэтыя ўмовы былі залічаны, выканайце адпаведныя баявыя задачы для "
+"ўказаных дзяржаў."
+
+msgid "missions/tab/marathons/header/moreAwards"
+msgstr "яшчэ ўзнагарод: %(num)s"
+
+msgid "missions/tab/marathons/header/period"
+msgstr "З %(startDate)s да %(endDate)s"
+
+msgid "missions/tab/marathons/header/title/action"
+msgstr "АКЦЫЯ"
+
+msgid "missions/tab/may21_marathon/header"
+msgstr "Крыштальнае паляванне"
+
+msgid "missions/tab/missions/body"
+msgstr ""
+"Комплекс баявых задач, поўнае выкананне якога забяспечыць атрыманне цэннай "
+"узнагароды."
+
+msgid "missions/tab/missions/header"
+msgstr "Вучэбныя задачы"
+
+msgid "missions/tab/moon_marathon/body"
+msgstr ""
+"Гульнявая падзея, у межах якой вы можаце бясплатна атрымаць брытанскую "
+"прэміум СТ-САУ VIII узроўню GSOR 1008."
+
+msgid "missions/tab/winback/body"
+msgstr "Выпадковыя ўмовы, якія абнаўляюцца штодзённа пасля выканання."
+
+msgid "missions/tab/winback/header"
+msgstr "Зноў у строй"
+
+msgid "missions/tokenPopover/buyBtn/label"
+msgstr "Купіць марку"
+
+msgid "missions/tokenPopover/descr"
+msgstr "Спіс баявых задач, у якіх можна атрымаць марку %(name)s"
+
+msgid "missions/tokenPopover/descr/shop"
+msgstr "Прадмет %(name)s можна купіць толькі ў Прэміум краме."
+
+msgid "missions/tokenPopover/header"
+msgstr "Марка %(name)s"
+
+msgid "missions/tokenPopover/quest/descr/date"
+msgstr "Да %(date)s"
+
+msgid "missions/tokenPopover/quest/descr/notAvailable"
+msgstr "Недаступна"
+
+msgid "missions/tokenPopover/quest/descr/ready"
+msgstr "Выканана"
+
+msgid "missions/tokenPopover/quest/header"
+msgstr "Марафон %(questName)s"
+
+msgid "missions/vehicleSelector/status/list"
+msgstr "Спіс тэхнікі"
+
+msgid "missions/vehicleSelector/status/noItems"
+msgstr ""
+"Адпаведная тэхніка адсутнічае, спрабуйце\n"
+"змяніць параметры фільтрацыі."
+
+msgid "missions/vehicleSelector/status/notAvailable"
+msgstr "Няма прыдатнай тэхнікі"
+
+msgid "missions/vehicleSelector/status/select"
+msgstr "Выбраць машыну"
+
+msgid "missions/vehicleSelector/status/selected"
+msgstr "Выбрана ў Гаражы"
+
+msgid "missions/vehicleSelector/title"
+msgstr "Прыдатная тэхніка: %(count)s"
+
+msgid "personal/seasons/awardsButton"
+msgstr "Узнагароды кампаніі"
+
+msgid "personal/seasons/itemTitle"
+msgstr "Кампанія %(num)s: %(name)s"
+
+msgid "personal/seasons/shortSeasonName"
+msgstr "Кампанія %(num)s"
+
+msgid "personal/seasons/slots/getAward"
+msgstr ""
+"%(icon)s Баявая задача выканана,\n"
+"атрымайце ўзнагароду."
+
+msgid "personal/seasons/slots/noActiveSlots/body"
+msgstr "Каб прыступіць да выканання задачы, спярша выберыце аперацыю."
+
+msgid "personal/seasons/slots/noActiveSlots/header"
+msgstr "Задачы не выбраны"
+
+msgid "personal/seasons/slots/noData"
+msgstr "Задача не выбрана"
+
+msgid "personal/seasons/slots/title"
+msgstr "%(questName)s"
+
+msgid "personal/seasons/tab/fallout"
+msgstr "Бой да апошняга"
+
+msgid "personal/seasons/tab/random"
+msgstr "Выпадковы бой"
+
+msgid "personal/seasons/tileLabel"
+msgstr "%(level)s%(type)s%(name)s"
+
+msgid "personal/seasons/tileProgress"
+msgstr "%(count)s/%(total)s%(icon)s"
+
+msgid "personalMission/bottomStatus/allAwardsReceived"
+msgstr "Усе ўзнагароды атрыманы"
+
+msgid "personalMission/status/addBottom/vehicleType/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "personalMission/status/addBottom/vehicleType/Alliance-France"
+msgstr "Кааліцыя (%(nations)s)"
+
+msgid "personalMission/status/addBottom/vehicleType/Alliance-Germany"
+msgstr "Блока (%(nations)s)"
+
+msgid "personalMission/status/addBottom/vehicleType/Alliance-USA"
+msgstr "Альянсу (%(nations)s)"
+
+msgid "personalMission/status/addBottom/vehicleType/Alliance-USSR"
+msgstr "Саюза (%(nations)s)"
+
+msgid "personalMission/status/addBottom/vehicleType/SPG"
+msgstr "САУ"
+
+msgid "personalMission/status/addBottom/vehicleType/any"
+msgstr "тэхніцы"
+
+msgid "personalMission/status/addBottom/vehicleType/heavyTank"
+msgstr "ЦТ"
+
+msgid "personalMission/status/addBottom/vehicleType/lightTank"
+msgstr "ЛТ"
+
+msgid "personalMission/status/addBottom/vehicleType/mediumTank"
+msgstr "СТ"
+
+msgid "personalMission/status/addBottomInfo/pm2"
+msgstr ""
+"Выконваць на %(vehType)s %(alliance)s %(minLevel)s-%(maxLevel)s узроўняў"
+
+msgid "personalMission/status/addBottomInfo/regular"
+msgstr "Выконваць на %(vehType)s %(minLevel)s–%(maxLevel)s узроўняў"
+
+msgid "personalMission/status/addBottomLocked/pm2"
+msgstr ""
+"Няма прыдатнай тэхнікі %(vehType)s %(alliance)s %(minLevel)s–%(maxLevel)s "
+"узроўняў"
+
+msgid "personalMission/status/addBottomLocked/regular"
+msgstr "Выконваць на %(vehType)s %(minLevel)s–%(maxLevel)s узроўняў"
+
+msgid "personalMission/status/addInProgress"
+msgstr "Паляпшэнне выніку: выканайце асноўную і дадатковую ўмовы"
+
+msgid "personalMission/status/doneWithPawn"
+msgstr "Асноўная ўмова выканана за %(count)s"
+
+msgid "personalMission/status/failed"
+msgstr "Скончылася няўдала"
+
+msgid "personalMission/status/fullDone"
+msgstr "Выканана з адзнакай"
+
+msgid "personalMission/status/inProgress"
+msgstr "Выконваецца"
+
+msgid "personalMission/status/isOnPause"
+msgstr "Прыпынена"
+
+msgid "personalMission/status/lastDoneWithPawn"
+msgstr "Задача, якая завяршае галіну, выканана!"
+
+msgid "personalMission/status/lockedByPrevMissions"
+msgstr "Не выкананы папярэднія задачы галіны"
+
+msgid "personalMission/status/lockedByPrevOperation"
+msgstr "Аперацыя «%(prevCampaign)s» не выканана"
+
+msgid "personalMission/status/mainDone"
+msgstr "Асноўная ўмова выканана"
+
+msgid "personalMission/status/missionDisabled"
+msgstr "Задача адключана"
+
+msgid "personalMission/status/onlyAddDone"
+msgstr "Дадатковая ўмова выканана"
+
+msgid "personalMission/status/onlyMainDone"
+msgstr "Выканана асноўная ўмова"
+
+msgid "personalMission/status/sheetRecoveryInProgress"
+msgstr "Вяртанне бланка загаду: выканайце асноўную і дадатковую ўмовы"
+
+msgid "postBattle/progressReset"
+msgstr "Ход выканання абнулены, бо адна з умоў не была выканана"
+
+msgid "premiumQuests/body/buttonDetails"
+msgstr "Падрабязней"
+
+msgid "premiumQuests/body/complete"
+msgstr ""
+"Усе прэміум задачы выкананы! Паўторнае выкананне будзе даступнае праз "
+"%(time)s."
+
+msgid "premiumQuests/body/description"
+msgstr ""
+"Выконвайце тры паслядоўныя задачы штодня і атрымлівайце каштоўныя "
+"ўзнагароды."
+
+msgid "premiumQuests/body/title"
+msgstr "Дадатковыя крэдыты, досвед і боны"
+
+msgid "premiumQuests/condition/dmgTop_5"
+msgstr "Трапіць у топ-5 сваёй каманды паводле прычыненых пашкоджанняў"
+
+msgid "premiumQuests/condition/win/winLong"
+msgstr "Перамагчы ў баі"
+
+msgid "premiumQuests/countDown/remainingText"
+msgstr "да наступных даступных прэміум задач"
+
+msgid "premiumQuests/countDown/title"
+msgstr "Вы выканалі ўсе прэміум задачы на сёння"
+
+msgid "premiumQuests/detailedQuests/requirements/premiumAccount"
+msgstr "Патрабуецца Танкавы прэміум акаўнт"
+
+msgid "premiumQuests/detailedQuests/requirements/token"
+msgstr "Папярэдняя задача яшчэ не выканана"
+
+msgid "premiumQuests/header/default"
+msgstr "ПРЭМІУМ ЗАДАЧЫ"
+
+msgid "premiumQuests/header/winback"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "premiumQuests/notPremiumAccount/button"
+msgstr "Купіць прэміум"
+
+msgid "premiumQuests/notPremiumAccount/paragraph"
+msgstr ""
+"Танкавы прэміум акаўнт адкрывае доступ да ланцужка з трох прэміум задач, а "
+"таксама дае іншыя перавагі: +50% да заробку досведу і крэдытаў, сховішча "
+"крэдытаў, дадатковы слот для выключэння мап і кіравальны бонус да досведу."
+
+msgid "premiumQuests/notPremiumAccount/title"
+msgstr ""
+"Каб атрымаць доступ да прэміум задач, неабходны Танкавы прэміум акаўнт."
+
+msgid "premiumQuests/postBattle/genericTitle_easy"
+msgstr "Першая прэміум задача"
+
+msgid "premiumQuests/postBattle/genericTitle_hard"
+msgstr "Трэцяя прэміум задача"
+
+msgid "premiumQuests/postBattle/genericTitle_medium"
+msgstr "Другая прэміум задача"
+
+msgid "premiumQuests/quests/prem_acc_q01/title"
+msgstr "Першая прэміум задача"
+
+msgid "premiumQuests/quests/prem_acc_q02/title"
+msgstr "Другая прэміум задача"
+
+msgid "premiumQuests/quests/prem_acc_q03/title"
+msgstr "Трэцяя прэміум задача"
+
+msgid "premiumQuests/tab/label"
+msgstr "Прэміум"
+
+msgid "premiumQuests/tooltips/locked/body"
+msgstr "Выканайце папярэднюю прэміум задачу, каб атрымаць доступ да гэтай."
+
+msgid "premiumQuests/tooltips/locked/header"
+msgstr "Задача недаступная"
+
+msgid "quest/chain/hint/holdAwardSheet"
+msgstr "ВЫКАНАЦЬ ЗАДАЧУ ЗА БЛАНК ЗАГАДУ"
+
+msgid "quest/chain/hint/pause"
+msgstr "ПРЫПЫНІЦЬ"
+
+msgid "quest/condition/dot"
+msgstr "• "
+
+msgid "quest/condition/or"
+msgstr "або"
+
+msgid "quest/flag/status/completed"
+msgstr "Выканана"
+
+msgid "quest/flag/status/completed_perfectly"
+msgstr "Выканана з адзнакай"
+
+msgid "quest/flag/status/failed"
+msgstr "Скончылася няўдала"
+
+msgid "quest/flag/status/in_progress"
+msgstr "Выконваецца"
+
+msgid "quest/flag/status/locked"
+msgstr "Выкананне недаступнае"
+
+msgid "quest/flag/status/not_started"
+msgstr "Вы не прыступілі да выканання"
+
+msgid "quests/conditions"
+msgstr "Умовы"
+
+msgid "quests/content/noQuestsInRoaming"
+msgstr "Баявыя задачы недаступныя ў роўмінгу."
+
+msgid "quests/currentTab/header/checkBox/text"
+msgstr "Схаваць выкананыя"
+
+msgid "quests/currentTab/header/dropdown/date"
+msgstr "Паводле даты"
+
+msgid "quests/currentTab/header/dropdown/specialMission"
+msgstr "Умацаваны раён: спецзаданне"
+
+msgid "quests/currentTab/header/dropdown/time"
+msgstr "Паводле часу да сканчэння"
+
+msgid "quests/currentTab/header/tab/action"
+msgstr "Акцыі"
+
+msgid "quests/currentTab/header/tab/all"
+msgstr "Усе задачы"
+
+msgid "quests/currentTab/header/tab/vehicle"
+msgstr "Для %(vehicle)s"
+
+msgid "quests/empty/actions/body"
+msgstr "Зараз няма даступных акцый. Сачыце за абнаўленнямі."
+
+msgid "quests/empty/actions/header"
+msgstr "Няма акцый"
+
+msgid "quests/empty/quests/body"
+msgstr "Зараз няма даступных баявых задач. Сачыце за абнаўленнямі."
+
+msgid "quests/empty/quests/header"
+msgstr "Няма баявых задач"
+
+msgid "quests/empty/vehicle/body"
+msgstr ""
+"Зараз няма даступных баявых задач для выбранай машыны. Сачыце за "
+"абнаўленнямі."
+
+msgid "quests/empty/vehicle/header"
+msgstr "Няма баявых задач для %(vehicle)s"
+
+msgid "quests/future/nodata"
+msgstr "Няма будучых баявых задач"
+
+msgid "quests/list/clickCheckbox"
+msgstr "Каб паказаць баявыя задачы, зніміце птушку з «Схаваць выкананыя»."
+
+msgid "quests/list/complete"
+msgstr "Усе баявыя задачы выкананы"
+
+msgid "quests/list/current/noActions"
+msgstr "Няма бягучых акцый"
+
+msgid "quests/list/current/noAll"
+msgstr "Няма бягучых баявых задач і акцый"
+
+msgid "quests/list/current/noQuests"
+msgstr "Няма бягучых баявых задач"
+
+msgid "quests/list/future/noActions"
+msgstr "Няма будучых акцый"
+
+msgid "quests/list/future/noAll"
+msgstr "Няма будучых баявых задач і акцый"
+
+msgid "quests/list/future/noQuests"
+msgstr "Няма будучых баявых задач"
+
+msgid "quests/requirements"
+msgstr "Патрабаванні"
+
+msgid "quests/status/allDone"
+msgstr "Усе задачы выкананы."
+
+msgid "quests/status/done"
+msgstr "Выканана!"
+
+msgid "quests/status/notAvailable"
+msgstr "Недаступна"
+
+msgid "quests/status/notDone"
+msgstr "Не выканана"
+
+msgid "quests/table/amount"
+msgstr "Выканаць разоў:"
+
+msgid "quests/table/battlesLeft"
+msgstr "Засталося баёў:"
+
+msgid "quests/table/inHangar"
+msgstr "Ёсць у Гаражы"
+
+msgid "quests/table/noVehicles"
+msgstr "Няма прыдатнай тэхнікі"
+
+msgid "quests/table/notInHangar"
+msgstr "Няма ў Гаражы"
+
+msgid "quests/tabs/addAward/text"
+msgstr "Узнагарода за дадатковую ўмову:"
+
+msgid "quests/tabs/award/text"
+msgstr "Узнагарода:"
+
+msgid "quests/tabs/beginner"
+msgstr "Курс маладога байца"
+
+msgid "quests/tabs/current"
+msgstr "Задачы і акцыі"
+
+msgid "quests/tabs/future"
+msgstr "Будучыя"
+
+msgid "quests/tabs/ladder"
+msgstr "Гульня ў Ладары"
+
+msgid "quests/tabs/noselected/text"
+msgstr ""
+"Выберыце баявую задачу або акцыю\n"
+"са спіса злева, каб пабачыць\n"
+"падрабязнае апісанне"
+
+msgid "quests/tabs/personal"
+msgstr "Кампаніі"
+
+msgid "quests/title"
+msgstr "Асабістыя баявыя задачы"
+
+msgid "quests/title/currentlyAvailable"
+msgstr "Задачы для:"
+
+msgid "quests/title/ladderQuests"
+msgstr "Баявыя задачы для Гульні ў Ладары"
+
+msgid "quests/title/maneuversQuests"
+msgstr "Баявыя манеўры"
+
+msgid "quests/title/ungoupedActions"
+msgstr "Акцыі"
+
+msgid "quests/title/ungoupedQuests"
+msgstr "Іншыя задачы"
+
+msgid "questsControl/title"
+msgstr "Асабістыя баявыя задачы"
+
+msgid "tileChainsView/title"
+msgstr "Аперацыя «%(name)s»"
+
+msgid "token/default/aim"
+msgstr "«Снайпер»"
+
+msgid "token/default/at-spg"
+msgstr "«СТ-САУ»"
+
+msgid "token/default/battle_royale"
+msgstr "«Сталёвы паляўнічы»"
+
+msgid "token/default/box"
+msgstr "«Скрыня»"
+
+msgid "token/default/china"
+msgstr "«Кітай»"
+
+msgid "token/default/czech"
+msgstr "«Чэхаславакія»"
+
+msgid "token/default/fire"
+msgstr "«Падпал»"
+
+msgid "token/default/folder"
+msgstr "«Агульнавайсковы статут»"
+
+msgid "token/default/france"
+msgstr "«Францыя»"
+
+msgid "token/default/germany"
+msgstr "«Германія»"
+
+msgid "token/default/heavyTank"
+msgstr "«Цяжкі танк»"
+
+msgid "token/default/italy"
+msgstr "«Італія»"
+
+msgid "token/default/japan"
+msgstr "«Японія»"
+
+msgid "token/default/leaflet"
+msgstr "«Улёткі»"
+
+msgid "token/default/lightTank"
+msgstr "«Лёгкі танк»"
+
+msgid "token/default/mediumTank"
+msgstr "«Сярэдні танк»"
+
+msgid "token/default/penetration"
+msgstr "«Прабіццё»"
+
+msgid "token/default/poland"
+msgstr "«Польшча»"
+
+msgid "token/default/ricochet"
+msgstr "«Рыкашэт»"
+
+msgid "token/default/shell"
+msgstr "«Снарад»"
+
+msgid "token/default/spg"
+msgstr "«САУ»"
+
+msgid "token/default/sweden"
+msgstr "«Швецыя»"
+
+msgid "token/default/tankrewards"
+msgstr "«Tank Rewards»"
+
+msgid "token/default/track"
+msgstr "«Тракавы пас»"
+
+msgid "token/default/turret"
+msgstr "«Падрыў»"
+
+msgid "token/default/uk"
+msgstr "«Вялікабрытанія»"
+
+msgid "token/default/usa"
+msgstr "«ЗША»"
+
+msgid "token/default/ussr"
+msgstr "«СССР»"
+
+msgid "token/default/versus_ai_regular"
+msgstr "Ачкі прагрэсіі Палігона"
+
+msgid "token/default/versus_ai_winback"
+msgstr "Ачкі падзеі «Зноў у строй»"
+
+msgid "token/default/wheel"
+msgstr "«Каток»"
+
+msgid "token/default/wot"
+msgstr "«Танкавая пячатка»"
+
+msgid "token/undefined"
+msgstr "«Тайны знак»"
+
+msgid "tooltip/progress/groupBy/body"
+msgstr "Найлепшы вынік"
+
+msgid "tooltip/progress/groupBy/header"
+msgstr "Ход выканання баявой задачы"
+
+msgid "tooltip/progress/groupBy/note"
+msgstr "Наступныя вынікі"
+
+msgid "tooltip/progress/groupBy/note/level"
+msgstr "%s узровень"
+
+msgid "tooltip/vehTable/availability/body"
+msgstr ""
+"Упарадкаваць паводле тэхнікі, якая не адпавядае патрабаванням баявой задачы"
+
+msgid "tooltip/vehTable/availability/header"
+msgstr "Даступнасць"
+
+msgid "tooltip/vehTable/class/body"
+msgstr "Упарадкаваць паводле тыпу тэхнікі"
+
+msgid "tooltip/vehTable/class/header"
+msgstr "Тып"
+
+msgid "tooltip/vehTable/discount/body"
+msgstr "Упарадкаваць паводле велічыні зніжкі на тэхніку"
+
+msgid "tooltip/vehTable/discount/header"
+msgstr "Зніжка"
+
+msgid "tooltip/vehTable/level/body"
+msgstr "Упарадкаваць паводле ўзроўню тэхнікі"
+
+msgid "tooltip/vehTable/level/header"
+msgstr "Узровень"
+
+msgid "tooltip/vehTable/name/body"
+msgstr "Упарадкаваць паводле назвы тэхнікі"
+
+msgid "tooltip/vehTable/name/header"
+msgstr "Назва"
+
+msgid "tooltip/vehTable/nation/body"
+msgstr "Упарадкаваць паводле дзяржавы"
+
+msgid "tooltip/vehTable/nation/header"
+msgstr "Дзяржава"

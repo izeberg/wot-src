@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/crash/lod4/Gun_01</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.255115 -0.253552 -0.249701</min>
+		<max>0.294538 0.320507 4.358810</max>
+	</visibilityBox>
 </root>

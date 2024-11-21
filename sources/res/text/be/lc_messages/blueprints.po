@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "blueprintProgressBar/complete"
+msgstr "Чарцёж сабраны"
+
+msgid "blueprintProgressBar/inProgress"
+msgstr "Чарцёж  {values}"
+
+msgid "blueprintProgressBar/inProgress/values"
+msgstr "{current} / {total}"
+
+msgid "blueprintScreen/button/buy"
+msgstr "Да куплі"
+
+msgid "blueprintScreen/button/research"
+msgstr "Да даследавання"
+
+msgid "blueprintScreen/button/showInHangar"
+msgstr "Паказаць у Гаражы"
+
+msgid "blueprintScreen/confirmation/description"
+msgstr ""
+"Вы можаце збіраць чарцёж, каб атрымаць зніжку на даследаванне жаданай "
+"машыны. Аднак гэтую зніжку можна скарыстаць, толькі даследаваўшы папярэднюю "
+"машыну ў галіне."
+
+msgid "blueprintScreen/confirmation/submitBtn"
+msgstr "Так!"
+
+msgid "blueprintScreen/confirmation/title"
+msgstr "Даследаванне недаступнае"
+
+msgid "blueprintScreen/conversionCost"
+msgstr "Для стварэння фрагмента чарцяжа неабходна:"
+
+msgid "blueprintScreen/conversionCostAdditional"
+msgstr "на выбар:"
+
+msgid "blueprintScreen/createFragment"
+msgstr "СТВАРЫЦЬ ФРАГМЕНТ:"
+
+msgid "blueprintScreen/createMaxFrag"
+msgstr "Стварыць фрагменты"
+
+msgid "blueprintScreen/itemHover/conversionAvailable"
+msgstr ""
+"Атрымаць\n"
+"фрагмент"
+
+msgid "blueprintScreen/itemHover/conversionNotAvailable"
+msgstr ""
+"Канверсія\n"
+"немагчыма"
+
+msgid "blueprintScreen/notAvailable"
+msgstr ""
+"НЕМАГЧЫМА:\n"
+"Замала\n"
+"рэсурсаў"
+
+msgid "blueprintScreen/openVehicleViewBtn"
+msgstr "Перайсці да машыны"
+
+msgid "blueprintScreen/or"
+msgstr "або"
+
+msgid "blueprintScreen/research"
+msgstr "ДАСЛЕДАВАЦЬ"
+
+msgid "blueprintScreen/researchFree"
+msgstr "Бясплатнае даследаванне машыны"
+
+msgid "blueprintScreen/researchImpossible"
+msgstr "Даследаванне недаступнае"
+
+msgid "blueprintScreen/researchSale/label"
+msgstr "Зніжка на даследаванне:"
+
+msgid "blueprintScreen/researchedAndAvailablePurchased"
+msgstr "Машына даследавана і яе можна купіць"
+
+msgid "blueprintScreen/researchedAndPurchased"
+msgstr "Машына даследавана і куплена"
+
+msgid "blueprintScreen/resourcesOnStorage"
+msgstr "На Складзе:"
+
+msgid "blueprintScreen/unavailableConfirm/description"
+msgstr ""
+"Скарыстаць 100-працэнтную зніжку на даследаванне {vehicleName} можна, "
+"даследаваўшы папярэднюю машыну ў галіне."
+
+msgid "blueprintScreen/unavailableConfirm/title"
+msgstr "Чарцёж сабраны"
+
+msgid "blueprintScreen/unlocked"
+msgstr ""
+"МАШЫНА\n"
+"ДАСЛЕДАВАНА"
+
+msgid "blueprintsBalance/alliance/Alliance-France"
+msgstr "«Кааліцыя»:"
+
+msgid "blueprintsBalance/alliance/Alliance-Germany"
+msgstr "«Блок»:"
+
+msgid "blueprintsBalance/alliance/Alliance-USA"
+msgstr "«Альянс»:"
+
+msgid "blueprintsBalance/alliance/Alliance-USSR"
+msgstr "«Саюз»:"
+
+msgid "blueprintsBalance/allianceLabel"
+msgstr "{allianceIcon} {allianceName}"
+
+msgid "blueprintsBalance/allianceLabel/conversionView"
+msgstr "%(allianceIcon) %(allianceName)"
+
+msgid "blueprintsBalance/intelligenceBlueprints"
+msgstr "Універсальныя:"
+
+msgid "conversionView/alliance/name/Alliance-France"
+msgstr "«Кааліцыі»"
+
+msgid "conversionView/alliance/name/Alliance-Germany"
+msgstr "«Блока»"
+
+msgid "conversionView/alliance/name/Alliance-USA"
+msgstr "«Альянсу»"
+
+msgid "conversionView/alliance/name/Alliance-USSR"
+msgstr "«Саюза»"
+
+msgid "conversionView/alliance/nations/Alliance-France"
+msgstr "(Францыя, Чэхаславакія, Швецыя, Італія)"
+
+msgid "conversionView/alliance/nations/Alliance-Germany"
+msgstr "(Германія, Японія)"
+
+msgid "conversionView/alliance/nations/Alliance-USA"
+msgstr "(ЗША, Вялікабрытанія, Польшча)"
+
+msgid "conversionView/alliance/nations/Alliance-USSR"
+msgstr "(СССР, Кітай)"
+
+msgid "conversionView/topMessage/multi"
+msgstr ""
+"Выберыце колькасць нацыянальных фрагментаў для стварэння чарцяжа машыны.\n"
+"Даступныя фрагменты чарцяжоў %(allianceIcon)%(allianceName) %(allianceNations)."
+
+msgid "conversionView/topMessage/single"
+msgstr ""
+"Выберыце фрагменты адной з дзяржаў для стварэння фрагмента чарцяжа машыны.\n"
+"Даступныя фрагменты чарцяжоў %(allianceIcon)%(allianceName) %(allianceNations)."
+
+msgid "conversionView/totalPrice/multiple"
+msgstr "Канчатковы кошт:"
+
+msgid "conversionView/totalPrice/single"
+msgstr "Кошт фрагмента чарцяжа:"
+
+msgid "nations/china"
+msgstr "Кітай"
+
+msgid "nations/czech"
+msgstr "Чэхаславакія"
+
+msgid "nations/france"
+msgstr "Францыя"
+
+msgid "nations/germany"
+msgstr "Германія"
+
+msgid "nations/italy"
+msgstr "Італія"
+
+msgid "nations/japan"
+msgstr "Японія"
+
+msgid "nations/poland"
+msgstr "Польшча"
+
+msgid "nations/sweden"
+msgstr "Швецыя"
+
+msgid "nations/uk"
+msgstr "Вялікабрытанія"
+
+msgid "nations/usa"
+msgstr "ЗША"
+
+msgid "nations/ussr"
+msgstr "СССР"

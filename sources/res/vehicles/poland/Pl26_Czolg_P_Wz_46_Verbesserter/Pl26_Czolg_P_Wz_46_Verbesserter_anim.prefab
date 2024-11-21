@@ -300,6 +300,10 @@
 						<value>HP_gunAnim</value>
 					</property>
 					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
 					</property>
@@ -314,6 +318,10 @@
 						<value>HP_TurretAnim</value>
 					</property>
 					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
 					</property>
@@ -326,6 +334,10 @@
 					<property>
 						<name>NodeName</name>
 						<value>HP_HullAnim</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>modelLink</name>
@@ -732,7 +744,10 @@
 									</property>
 									<property>
 										<name>LOD Scale</name>
-										<value>1</value>
+										<value>
+											0.5
+											<!--BW_String-->
+										</value>
 									</property>
 									<property>
 										<name>Auto Start</name>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/crash/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.817794 -0.919840 -3.769994</min>
+		<max>1.857661 0.641025 3.417142</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

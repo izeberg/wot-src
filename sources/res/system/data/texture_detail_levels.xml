@@ -135,6 +135,19 @@
 			</directory>
 		</directory>
 		<directory>
+			<path>Hangars</path>
+			<directory>
+				<path>h03_mt_ny_2025</path>
+				<directory>
+					<path>environment</path>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*hd_h03_NY25_0015_Robot_1_AM\.dds</pattern>
+					</rule>
+				</directory>
+			</directory>
+		</directory>
+		<directory>
 			<path>MilitaryEnvironment</path>
 			<directory>
 				<path>00_Tiles</path>
@@ -277,6 +290,17 @@
 		<rule>
 			<allowSplit>false</allowSplit>
 			<pattern>.*</pattern>
+		</rule>
+		<rule>
+			<compressDDS>true</compressDDS>
+			<format>DXT5</format>
+			<pattern>.*/global_AM.dds</pattern>
+		</rule>
+		<rule>
+			<compressDDS>true</compressDDS>
+			<format>DXT1</format>
+			<mipCount>1</mipCount>
+			<pattern>.*/flora_tint_map.dds</pattern>
 		</rule>
 	</directory>
 	<directory>

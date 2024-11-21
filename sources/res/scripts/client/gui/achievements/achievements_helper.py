@@ -1,3 +1,4 @@
+from debug_utils import LOG_ERROR
 from dossiers2.custom.records import RECORD_DB_IDS, DB_ID_TO_RECORD
 from dossiers2.ui.achievements import ACHIEVEMENT_TYPE
 from gui.impl.gen.view_models.views.lobby.achievements.achievement_model import AchievementType, AchievementModel, CounterType
@@ -25,7 +26,7 @@ def fillAchievementSectionModel(section):
 
 def fillAchievementModel(achievement):
     isRare = isRareAchievement(achievement)
-    aType = AchievementType.RARE if isRare else _ACHIEVEMENT_TYPE_MAP.get(achievement.getType(), '')
+    aType = AchievementType.RARE if isRare else _ACHIEVEMENT_TYPE_MAP.get(achievement.getType(), AchievementType.CUSTOM)
     achievementModel = AchievementModel()
     achievementModel.setName(achievement.getName())
     achievementModel.setResourceName(achievement.getResourceName())
@@ -50,13 +51,27 @@ def convertAchievementsToDbIds(achivements):
     return achievementsIdx
 
 
-def convertDbIdsToAchievements(layout, dossier=None):
+def convertDbIdsToAchievements(layout, dossier):
     achievements = []
+    lostAchievements = 0
     for achievementID in layout:
         if achievementID > 0:
-            achievements.append(dossier.getTotalStats().getAchievement(DB_ID_TO_RECORD[achievementID]))
+            retrievedAchievement = dossier.getTotalStats().getAchievement(DB_ID_TO_RECORD[achievementID])
         else:
-            achievements.append(dossier.getTotalStats().getAchievement((
-             'rareAchievements', -achievementID)))
+            retrievedAchievement = dossier.getTotalStats().getAchievement(('rareAchievements', -achievementID))
+        if retrievedAchievement is not None:
+            achievements.append(retrievedAchievement)
+        else:
+            lostAchievements += 1
+            LOG_ERROR('Achievement %d not found in dossier.' % achievementID)
+
+    if lostAchievements > 0:
+        topAchievements = dossier.getTotalStats().getTopAchievements()
+        for top in topAchievements:
+            if top not in achievements:
+                achievements.append(top)
+                lostAchievements -= 1
+                if lostAchievements == 0:
+                    break
 
     return achievements

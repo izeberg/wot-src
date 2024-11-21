@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "backButton/label"
+msgstr "НАЗАД"
+
+msgid "backButton/to"
+msgstr "ДА СТАТУСУ АКАЎНТУ"
+
+msgid "filteredMapsDisplayed"
+msgstr "Паказана мап: %(count) / %(total)"
+
+msgid "filtersTooltip/desc"
+msgstr "Паказаць/схаваць мапы гэтага тыпу."
+
+msgid "filtersTooltip/header/desert"
+msgstr "Пустынныя мапы"
+
+msgid "filtersTooltip/header/summer"
+msgstr "Летнія мапы"
+
+msgid "filtersTooltip/header/winter"
+msgstr "Зімовыя мапы"
+
+msgid "header/cooldown"
+msgstr "Мапу можна будзе змяніць праз %(cooldownEndTime)."
+
+msgid "header/title"
+msgstr "Выключаныя мапы"
+
+msgid "mapTile/cooldownTooltipBody"
+msgstr "Мапу можна замяніць пасля заканчэння пададзенага часу."
+
+msgid "mapTile/cooldownTooltipHeader"
+msgstr "Замена мапы недаступная"
+
+msgid "mapTile/hoverExclude"
+msgstr "Выключыць мапу %(mapName)?"
+
+msgid "mapTile/hoverExcludeButton"
+msgstr "Выключыць"
+
+msgid "mapTile/hoverInclude"
+msgstr "Вярнуць мапу %(mapName) у Звычайныя баі?"
+
+msgid "mapTile/hoverIncludeButton"
+msgstr "Вярнуць"
+
+msgid "mapsFilterLabel"
+msgstr "Тып мап:"
+
+msgid "notSelected"
+msgstr "Не выбрана"
+
+msgid "slot/disabledTooltipBodyWotPlus"
+msgstr ""
+"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
+"прэміум акаўнце."
+
+msgid "slot/replaceTooltipBody"
+msgstr ""
+"Выберыце мапу са спіса ніжэй, каб замяніць яе і выключыць з ратацыі "
+"Выпадковых баёў (толькі для тыпу бою «Звычайны бой»)."
+
+msgid "slot/selectTooltipBody"
+msgstr ""
+"Выберыце мапу, каб выключыць яе з ратацыі Выпадковых баёў (толькі для тыпу "
+"бою «Звычайны бой»)."
+
+msgid "slot/selectTooltipHeader"
+msgstr "Мапа не выбрана"
+
+msgid "totalMapsDisplayed"
+msgstr "Паказана мап: %(count)"

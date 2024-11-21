@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "entryPoint/tooltip/billion"
+msgstr "%(value)s млрд"
+
+msgid "entryPoint/tooltip/completed"
+msgstr "Зніжка будзе даступная да %(date)s"
+
+msgid "entryPoint/tooltip/forbidden"
+msgstr "Зараз функцыянальнасць недаступная"
+
+msgid "entryPoint/tooltip/million"
+msgstr "%(value)s млн"
+
+msgid "entryPoint/tooltip/notStarted"
+msgstr "Падзея пачнецца %(date)s"
+
+msgid "entryPoint/tooltip/points"
+msgstr "%(currentPoints)s / %(totalPoints)s"
+
+msgid "entryPoint/tooltip/stage"
+msgstr "Бягучы этап"
+
+msgid "entryPoint/tooltip/title"
+msgstr "Сумесная кампанія «%(title)s»"

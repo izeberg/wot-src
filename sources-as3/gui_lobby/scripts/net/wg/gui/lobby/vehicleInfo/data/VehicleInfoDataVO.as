@@ -52,7 +52,6 @@ package net.wg.gui.lobby.vehicleInfo.data
       {
          var _loc1_:IDisposable = null;
          var _loc2_:IDisposable = null;
-         var _loc3_:IDisposable = null;
          for each(_loc1_ in this._propsData)
          {
             _loc1_.dispose();
@@ -67,12 +66,7 @@ package net.wg.gui.lobby.vehicleInfo.data
          this._crewData = null;
          this._baseData.splice(0,this._baseData.length);
          this._baseData = null;
-         for each(_loc3_ in this._abilityData)
-         {
-            _loc3_.dispose();
-         }
-         this._abilityData.splice(0,this._abilityData.length);
-         this._abilityData = null;
+         this.clearAbilityData();
          super.onDispose();
       }
       
@@ -120,6 +114,7 @@ package net.wg.gui.lobby.vehicleInfo.data
          {
             if(param2)
             {
+               this.clearAbilityData();
                this._abilityData = new Vector.<Object>(0);
                _loc9_ = param2 as Array;
                App.utils.asserter.assertNotNull(_loc9_,ABILITY_DATA + Errors.CANT_NULL);
@@ -131,6 +126,20 @@ package net.wg.gui.lobby.vehicleInfo.data
             return false;
          }
          return super.onDataWrite(param1,param2);
+      }
+      
+      private function clearAbilityData() : void
+      {
+         var _loc1_:IDisposable = null;
+         if(this._abilityData)
+         {
+            for each(_loc1_ in this._abilityData)
+            {
+               _loc1_.dispose();
+            }
+            this._abilityData.splice(0,this._abilityData.length);
+            this._abilityData = null;
+         }
       }
       
       public function get propsData() : Vector.<Object>

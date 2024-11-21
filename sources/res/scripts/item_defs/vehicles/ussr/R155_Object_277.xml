@@ -123,6 +123,11 @@
 					<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Hull.model</exploded>
 				</R155_Object_277_3DSt_TIR>
+				<R155_Object_277_3Dst_02>
+					<undamaged>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Hull.model</exploded>
+				</R155_Object_277_3Dst_02>
 			</sets>
 		</models>
 		<swinging>
@@ -1885,16 +1890,27 @@
 						<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Chassis.model</exploded>
 					</R155_Object_277_3DSt_TIR>
+					<R155_Object_277_3Dst_02>
+						<undamaged>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Chassis.model</exploded>
+					</R155_Object_277_3Dst_02>
 				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
-				<bufferPrefs>mediumTank</bufferPrefs>
-				<textureSet>ussr_01</textureSet>
-				<size>
-					0.5 0.7
-					<!--BW_String-->
-				</size>
+				<activePostmortem>false</activePostmortem>
+				<tracesParams>
+					<trackPairIdx>0</trackPairIdx>
+					<bufferPrefs>mediumTank</bufferPrefs>
+					<textureSet>ussr_01</textureSet>
+					<size>
+						0.5 0.7
+						<!--BW_String-->
+					</size>
+					<offset>0 0</offset>
+					<centerOffsetFactor>1 1</centerOffsetFactor>
+				</tracesParams>
 			</traces>
 			<tracks>
 				<lodDist>MEDIUM_TRACK</lodDist>
@@ -2069,6 +2085,39 @@
 									<row3>-1.853786 0.895452 -0.161140</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>R155_Object_277_3Dst_02</modelsSet>
+								<boxCollider>
+									<row0>1.836010 0.000000 0.000000</row0>
+									<row1>0.000000 1.117520 0.000000</row1>
+									<row2>0.000000 0.000000 7.011370</row2>
+									<row3>0.000000 0.977196 0.070115</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.570420 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 -0.000000</row1>
+									<row2>-0.000000 0.000000 4.080889</row2>
+									<row3>0.005748 1.328700 -0.360940</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.570420 -0.000000 0.000000</row0>
+									<row1>-0.000000 0.003241 0.299982</row1>
+									<row2>-0.000000 -0.299982 0.003241</row2>
+									<row3>0.000000 0.971602 3.782577</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.766444 -0.183272 1.649297</row0>
+									<row1>0.011913 0.298487 0.027632</row1>
+									<row2>-0.650230 -0.002001 0.301946</row2>
+									<row3>-1.080198 1.310749 2.381521</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>-0.720970 0.105563 0.782234</row0>
+									<row1>0.022297 0.298519 -0.019735</row1>
+									<row2>-0.526652 0.007183 -0.486374</row2>
+									<row3>-1.050438 1.261346 -2.544805</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -2234,6 +2283,39 @@
 									<row3>1.854000 0.895452 -0.161140</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>R155_Object_277_3Dst_02</modelsSet>
+								<boxCollider>
+									<row0>1.836010 0.000000 0.000000</row0>
+									<row1>0.000000 1.117520 0.000000</row1>
+									<row2>0.000000 0.000000 7.011370</row2>
+									<row3>0.000000 0.977196 0.070115</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.570420 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 -0.000000</row1>
+									<row2>-0.000000 0.000000 4.080890</row2>
+									<row3>0.005748 1.328700 -0.360940</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.570420 -0.000000 0.000000</row0>
+									<row1>-0.000000 0.003241 0.299982</row1>
+									<row2>-0.000000 -0.299982 0.003241</row2>
+									<row3>0.000000 0.971602 3.782580</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>-0.624272 -0.183272 1.708190</row0>
+									<row1>-0.011115 0.298487 0.027963</row1>
+									<row2>-0.673290 -0.002001 -0.246274</row2>
+									<row3>1.080000 1.310750 2.381520</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>-0.714082 -0.113403 -0.787437</row0>
+									<row1>-0.027459 0.298196 -0.018043</row1>
+									<row2>0.529472 0.019534 -0.482961</row2>
+									<row3>1.045146 1.279744 -2.558816</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 				</trackPair>
@@ -2341,10 +2423,9 @@
 				<!--BW_String-->
 			</navmeshGirth>
 			<groundNodes>
-				<group>
-					<template>Track_L</template>
-					<startIndex>0</startIndex>
-					<count>8</count>
+				<node>
+					<name>Track_L0</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
 					<isLeft>true</isLeft>
 					<minOffset>
 						-0.06
@@ -2354,11 +2435,109 @@
 						0.06
 						<!--BW_String-->
 					</maxOffset>
-				</group>
-				<group>
-					<template>Track_R</template>
-					<startIndex>0</startIndex>
-					<count>8</count>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L1</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L2</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L3</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L4</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L5</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L6</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_L7</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>true</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R0</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
 					<isLeft>false</isLeft>
 					<minOffset>
 						-0.06
@@ -2368,223 +2547,318 @@
 						0.06
 						<!--BW_String-->
 					</maxOffset>
-				</group>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R1</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R2</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R3</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R4</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R5</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R6</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
+				<node>
+					<name>Track_R7</name>
+					<collisionSamplesCount>1</collisionSamplesCount>
+					<isLeft>false</isLeft>
+					<minOffset>
+						-0.06
+						<!--BW_String-->
+					</minOffset>
+					<maxOffset>
+						0.06
+						<!--BW_String-->
+					</maxOffset>
+					<trackPairIdx>0</trackPairIdx>
+				</node>
 			</groundNodes>
-			<trackThickness>
-				-0.0288136
-				<!--BW_String-->
-			</trackThickness>
 			<trackNodes>
-				<enable>true</enable>
-				<linkBones>false</linkBones>
-				<maxAmplitude>
-					0.1
-					<!--BW_String-->
-				</maxAmplitude>
-				<maxOffset>
-					0.1
-					<!--BW_String-->
-				</maxOffset>
-				<gravity>
-					-9.83852
-					<!--BW_String-->
-				</gravity>
-				<elasticity>1100</elasticity>
-				<damping>2</damping>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VD_L0</name>
-					<forwardElastK>
-						1.5
+				<trackPair>
+					<trackPairIdx>0</trackPairIdx>
+					<trackThickness>-0.028814</trackThickness>
+					<maxAmplitude>
+						0.1
 						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.5
+					</maxAmplitude>
+					<maxOffset>
+						0.1
 						<!--BW_String-->
-					</backwardElastK>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VD_R0</name>
-					<forwardElastK>
-						1.5
+					</maxOffset>
+					<gravity>
+						-9.83852
 						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.5
-						<!--BW_String-->
-					</backwardElastK>
-				</node>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VD_L1</name>
-					<forwardElastK>2</forwardElastK>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VD_R1</name>
-					<forwardElastK>2</forwardElastK>
-				</node>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VT_L0</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.4
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0804196
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VT_L1</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.7
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0582751
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VT_L2</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.9
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0582751
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VT_L3</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						2.2
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0582751
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>true</isLeft>
-					<name>Track_VT_L4</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						2.5
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0804196
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VT_R0</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.4
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0804196
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VT_R1</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.7
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0582751
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VT_R2</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						1.9
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0582751
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VT_R3</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						2.2
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0582751
-						<!--BW_String-->
-					</offset>
-				</node>
-				<node>
-					<isLeft>false</isLeft>
-					<name>Track_VT_R4</name>
-					<forwardElastK>
-						0.7
-						<!--BW_String-->
-					</forwardElastK>
-					<backwardElastK>
-						2.5
-						<!--BW_String-->
-					</backwardElastK>
-					<offset>
-						-0.0804196
-						<!--BW_String-->
-					</offset>
-				</node>
+					</gravity>
+					<damping>2</damping>
+					<enable>true</enable>
+					<linkBones>false</linkBones>
+					<elasticity>1100</elasticity>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VD_L0</name>
+						<forwardElastK>
+							1.5
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.5
+							<!--BW_String-->
+						</backwardElastK>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VD_R0</name>
+						<forwardElastK>
+							1.5
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.5
+							<!--BW_String-->
+						</backwardElastK>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VD_L1</name>
+						<forwardElastK>2</forwardElastK>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VD_R1</name>
+						<forwardElastK>2</forwardElastK>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VT_L0</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.4
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>
+							-0.08042
+							<!--BW_String-->
+						</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VT_L1</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.7
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>-0.058275</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VT_L2</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.9
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>-0.058275</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VT_L3</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							2.2
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>-0.058275</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>true</isLeft>
+						<name>Track_VT_L4</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							2.5
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>
+							-0.08042
+							<!--BW_String-->
+						</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VT_R0</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.4
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>
+							-0.08042
+							<!--BW_String-->
+						</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VT_R1</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.7
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>-0.058275</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VT_R2</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							1.9
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>-0.058275</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VT_R3</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							2.2
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>-0.058275</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+					<node>
+						<isLeft>false</isLeft>
+						<name>Track_VT_R4</name>
+						<forwardElastK>
+							0.7
+							<!--BW_String-->
+						</forwardElastK>
+						<backwardElastK>
+							2.5
+							<!--BW_String-->
+						</backwardElastK>
+						<offset>
+							-0.08042
+							<!--BW_String-->
+						</offset>
+						<trackPairIdx>0</trackPairIdx>
+					</node>
+				</trackPair>
 			</trackNodes>
 			<splineDesc>
 				<trackPair>
@@ -3897,6 +4171,11 @@
 								<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Gun_01.model</exploded>
 							</R155_Object_277_3DSt_TIR>
+							<R155_Object_277_3Dst_02>
+								<undamaged>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Gun_01.model</exploded>
+							</R155_Object_277_3Dst_02>
 						</sets>
 					</models>
 					<hitTester>
@@ -4015,6 +4294,11 @@
 						<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3DSt_TIR/crash/lod0/Turret_01.model</exploded>
 					</R155_Object_277_3DSt_TIR>
+					<R155_Object_277_3Dst_02>
+						<undamaged>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod0/Turret_01.model</exploded>
+					</R155_Object_277_3Dst_02>
 				</sets>
 			</models>
 			<hitTester>
@@ -4806,7 +5090,7 @@
 					<slotType>projectionDecal</slotType>
 					<slotId>35033</slotId>
 					<tags>formfactor_square</tags>
-					<compatibleModels>R155_Object_277_3Dst R155_Object_277_3DSt_TIR</compatibleModels>
+					<compatibleModels>R155_Object_277_3Dst R155_Object_277_3DSt_TIR R155_Object_277_3Dst_02</compatibleModels>
 					<position>
 						0.278526 2.22697 1.01362
 						<!--BW_String-->

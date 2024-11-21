@@ -1,0 +1,722 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "CSAnimation/applyBtn/label"
+msgstr "Так!"
+
+msgid "CSAnimation/description"
+msgstr "Віншуем, ваша каманда перайшла ў наступны дывізіён. Так трымаць!"
+
+msgid "CSAnimation/header"
+msgstr "Змена дывізіёна"
+
+msgid "InvitesAndRequestsWindow/accepted"
+msgstr "Прынята"
+
+msgid "InvitesAndRequestsWindow/cancelled"
+msgstr "Скасавана"
+
+msgid "InvitesAndRequestsWindow/officerDescription"
+msgstr ""
+"Штат каманды — уручную сфарміраваны склад з сяброў і прыдатных гульцоў."
+
+msgid "InvitesAndRequestsWindow/onlyInvitesCheckbox"
+msgstr "Паказваць толькі адпраўленыя"
+
+msgid "InvitesAndRequestsWindow/ownerDescription"
+msgstr ""
+"Штат каманды — уручную сфарміраваны склад з сяброў і прыдатных гульцоў."
+
+msgid "InvitesAndRequestsWindow/playerName"
+msgstr "Імя"
+
+msgid "InvitesAndRequestsWindow/rejected"
+msgstr "Адхілена"
+
+msgid "InvitesAndRequestsWindow/status"
+msgstr "Стан"
+
+msgid "InvitesAndRequestsWindow/title"
+msgstr "Адпраўленыя запрашэнні і пададзеныя заявы на ўступ"
+
+msgid "InvitesAndRequestsWindow/windowTitle"
+msgstr "Заявы і запрашэнні"
+
+msgid "StaticFormationStatsView/seasonFilter"
+msgstr "Статыстыка за:"
+
+msgid "TextLoading/loading"
+msgstr "Загрузка"
+
+msgid "button/chooseVehicles/info/tooltip/description/notSelected"
+msgstr "Аўтапошук немагчымы, бо не выбрана ніводнай машыны."
+
+msgid "button/chooseVehicles/info/tooltip/description/notValid"
+msgstr "Аўтапошук немагчымы, бо выбраная машына не гатовая да бою."
+
+msgid "button/chooseVehicles/info/tooltip/description/valid"
+msgstr "Выбрана прыдатная тэхніка. Можна выканаць аўтапошук."
+
+msgid "button/chooseVehicles/info/tooltip/title"
+msgstr "Выбар тэхнікі"
+
+msgid "button/chooseVehicles/selected"
+msgstr "Выбраная тэхніка"
+
+msgid "button/medallion/addSlotSettings"
+msgstr "Дадаць"
+
+msgid "button/medallion/availableQuantity"
+msgstr "Пасуе:"
+
+msgid "button/medallion/chooseVehicle"
+msgstr "Выбраць тэхніку"
+
+msgid "introView/leftBlock/btnLabel"
+msgstr "Шукаць"
+
+msgid "introView/leftBlock/descr"
+msgstr ""
+"Падшуканне прыдатнай для вас каманды са спісу ўжо створаных. Вам трэба "
+"адпавядаць патрабаванням камандзіра."
+
+msgid "introView/leftBlock/header"
+msgstr "Пошук каманды"
+
+msgid "introView/rightBlock/btnLabel"
+msgstr "Стварыць"
+
+msgid "introView/rightBlock/descr"
+msgstr ""
+"Стварэнне каманды з сяброў або іншых гульцоў, чыя тэхніка адпавядае вашым "
+"патрабаванням."
+
+msgid "introView/rightBlock/header"
+msgstr "Стварэнне каманды"
+
+msgid "rallyInfo/profileBtn/Label"
+msgstr "Профіль каманды"
+
+msgid "respawn/chatHeader"
+msgstr "Канал сувязі"
+
+msgid "respawn/enemyTeamStatus/Header"
+msgstr "Каманда супраціўніка:"
+
+msgid "respawn/enemyTeamStatus/notReady"
+msgstr "Не гатовая"
+
+msgid "respawn/enemyTeamStatus/ready"
+msgstr "Гатовая!"
+
+msgid "respawn/fight/label"
+msgstr "Каманда гатовая!"
+
+msgid "respawn/fight/status/commander"
+msgstr "Пацвердзіць гатоўнасць усёй каманды."
+
+msgid "respawn/fight/status/private"
+msgstr "Чакайце ўступу ў бой..."
+
+msgid "respawn/status/info"
+msgstr "Выберыце машыну за адведзены час."
+
+msgid "respawn/status/ready"
+msgstr "Чакайце пачатку бою..."
+
+msgid "respawn/status/warning"
+msgstr "Пацвердзіце гатоўнасць."
+
+msgid "respawn/team/points"
+msgstr "Сумарны ўзровень:"
+
+msgid "respawn/team/teamMembers"
+msgstr "Склад: %(current)s / %(max)s"
+
+msgid "respawn/team/teamVehiclesStub"
+msgstr "Тэхніка: VI–VIII"
+
+msgid "selectedFormation/JoinUnitSection/header"
+msgstr "Выбраны баявы пакой"
+
+msgid "squadWindow/waitingForBattle"
+msgstr "Звяз у чарзе на ўступ у бой"
+
+msgid "unitView/header"
+msgstr "Баявы пакой"
+
+msgid "window/autoSearch/confirmation/cancelLbl"
+msgstr "Скасаваць"
+
+msgid "window/autoSearch/confirmation/ctxMessage"
+msgstr "Засталося часу каб пацвердзіць:"
+
+msgid "window/autoSearch/confirmation/ctxSeconds"
+msgstr "с"
+
+msgid "window/autoSearch/confirmation/headerText"
+msgstr "Каманда знойдзена"
+
+msgid "window/autoSearch/confirmation/mainText"
+msgstr "Пацвердзіце гатоўнасць"
+
+msgid "window/autoSearch/confirmation/submitlLbl"
+msgstr "Гатовы!"
+
+msgid "window/autoSearch/errorState/cancelLbl"
+msgstr "Скасаваць"
+
+msgid "window/autoSearch/errorState/ctxMessage"
+msgstr "Ці шукаць новую каманду?"
+
+msgid "window/autoSearch/errorState/headerText"
+msgstr "Час скончыўся"
+
+msgid "window/autoSearch/errorState/mainText"
+msgstr ""
+"Каманда была знойдзена,\n"
+"але вы не пацвердзілі сваёй гатоўнасці."
+
+msgid "window/autoSearch/errorState/submitlLbl"
+msgstr "Шукаць"
+
+msgid "window/autoSearch/searchCommand/cancelLbl"
+msgstr "Скасаваць"
+
+msgid "window/autoSearch/searchCommand/ctxMessage"
+msgstr "Сярэдні час чакання:"
+
+msgid "window/autoSearch/searchCommand/cxtDnmMessage"
+msgstr "%d хв"
+
+msgid "window/autoSearch/searchCommand/mainText"
+msgstr "Пошук прыдатнай каманды"
+
+msgid "window/autoSearch/searchEnemy/mainText"
+msgstr "Чаканне бою..."
+
+msgid "window/autoSearch/searchEnemyRespawn/mainText"
+msgstr "Чаканне супраціўніка..."
+
+msgid "window/autoSearch/waitingPlayers/mainText"
+msgstr "Чаканне гульцоў..."
+
+msgid "window/backBtnLbl"
+msgstr "НАЗАД"
+
+msgid "window/intro/auto/btn"
+msgstr "Аўтапошук"
+
+msgid "window/intro/auto/btn/tooltip/description/disabled"
+msgstr "Пошук каманды немагчымы. Тэхніка не выбрана або не гатовая да бою."
+
+msgid "window/intro/auto/btn/tooltip/description/enabled"
+msgstr "Націсніце, каб аўтаматычна знайсці каманду і адразу ўступіць у бой."
+
+msgid "window/intro/auto/btn/tooltip/title"
+msgstr "Аўтапошук"
+
+msgid "window/intro/auto/btnLbl"
+msgstr "Запуск аўтапошуку"
+
+msgid "window/intro/auto/description"
+msgstr "Каманда падбярэцца аўтаматычна."
+
+msgid "window/intro/auto/title"
+msgstr "Аўтапошук паводле рэйтынга"
+
+msgid "window/intro/auto/vehicleLbl"
+msgstr "Выбраная тэхніка:"
+
+msgid "window/intro/create/btn/addPlayers"
+msgstr "Запрасіць"
+
+msgid "window/intro/create/btn/assembleTeam"
+msgstr "Сабраць каманду"
+
+msgid "window/intro/create/btn/joinTeam"
+msgstr "Далучыцца"
+
+msgid "window/intro/create/btn/look"
+msgstr "Спіс каманд"
+
+msgid "window/intro/create/btn/private/seeStaff"
+msgstr "Штат каманды"
+
+msgid "window/intro/description"
+msgstr ""
+"У камандных баях з абодвух бакоў бяруць удзел каманды роўнага майстэрства, па 7 гульцоў у кожнай.\n"
+"Узровень тэхнікі: VI-VIII. Патрабаваны сумарны ўзровень тэхнікі каманды ў камандзе — 54."
+
+msgid "window/intro/search/btn"
+msgstr "Шукаць"
+
+msgid "window/intro/search/description"
+msgstr ""
+"Падшуканне прыдатнай для вас каманды са спісу ўжо створаных. Вам трэба "
+"адпавядаць патрабаванням камандзіра."
+
+msgid "window/intro/search/title"
+msgstr "Пошук каманды"
+
+msgid "window/intro/team/description/createBattleRoom"
+msgstr "Стварыць баявы пакой"
+
+msgid "window/intro/title"
+msgstr "Камандны бой"
+
+msgid "window/intro/unavailableWaiting"
+msgstr "Чаканне..."
+
+msgid "window/rosterSlotSettings/bottomResult"
+msgstr "Выбрана:"
+
+msgid "window/rosterSlotSettings/tabBtnLbl/range"
+msgstr "Дыяпазон"
+
+msgid "window/rosterSlotSettings/tabBtnLbl/vehicle"
+msgstr "Тэхніка"
+
+msgid "window/rosterSlotSettings/title"
+msgstr "Акрэсліць патрабаванні"
+
+msgid "window/rosterSlotSettings/vehicleTab/cancelBtn"
+msgstr "Скасаваць"
+
+msgid "window/rosterSlotSettings/vehicleTab/headerText"
+msgstr ""
+"Вызначыце патрабаванні, якім павінна адпавядаць тэхніка вашага будучага "
+"паплечніка па камандзе."
+
+msgid "window/rosterSlotSettings/vehicleTab/nationFieldSet"
+msgstr "Дзяржава"
+
+msgid "window/rosterSlotSettings/vehicleTab/submitBtn"
+msgstr "Выбраць"
+
+msgid "window/rosterSlotSettings/vehicleTab/vehicleLevel"
+msgstr "Узровень тэхнікі"
+
+msgid "window/rosterSlotSettings/vehicleTab/vehicleType"
+msgstr "Тып тэхнікі"
+
+msgid "window/staticRallyInfo/cancelBtnLabel"
+msgstr "Адклікаць"
+
+msgid "window/staticRallyInfo/joinBtnLabel"
+msgstr "Падаць заяву"
+
+msgid "window/staticRallyInfo/joinInfo/alreadyJoined"
+msgstr "Вы ўжо прыналежыце да каманды"
+
+msgid "window/staticRallyInfo/joinInfo/applicationCooldown"
+msgstr "Немагчыма падаць заяву"
+
+msgid "window/staticRallyInfo/joinInfo/inProcess"
+msgstr "Заява разглядаецца"
+
+msgid "window/staticRallyInfo/joinInfo/inProcessOther"
+msgstr "Заява на ўступ ужо пададзена"
+
+msgid "window/staticRallyInfo/joinInfo/join"
+msgstr "Падача заявы на ўступ"
+
+msgid "window/staticRallyInfo/ladderInfo"
+msgstr "Ліга %(league)s. Дывізіён %(division)s"
+
+msgid "window/staticRallyInfo/noAwards"
+msgstr "Няма ўзнагарод"
+
+msgid "window/staticRallyInfo/noRallySelected"
+msgstr ""
+"Выберыце каманду са спіса злева,\n"
+"каб пабачыць падрабязнае апісанне."
+
+msgid "window/staticRallyInfo/staticRally/statsWinsPercent"
+msgstr "Перамогі"
+
+msgid "window/staticRallyInfo/statsBattlesCount"
+msgstr "Баі"
+
+msgid "window/title"
+msgstr "Камандны бой"
+
+msgid "window/unit/applySlotsSettings"
+msgstr "Пагадзіцца"
+
+msgid "window/unit/autoRecruit"
+msgstr "Данабраць"
+
+msgid "window/unit/cancelSlotSettings"
+msgstr "Скасаваць"
+
+msgid "window/unit/candidates"
+msgstr "Добраахвотнікі"
+
+msgid "window/unit/candidates/legionaries"
+msgstr "Легіянеры"
+
+msgid "window/unit/candidates/team"
+msgstr "Каманда"
+
+msgid "window/unit/chat"
+msgstr "Канал сувязі"
+
+msgid "window/unit/closeRoom"
+msgstr "— Пакой бачны"
+
+msgid "window/unit/description"
+msgstr ""
+"З абодвух бакоў бяруць удзел каманды роўнага майстэрства, па 7 гульцоў у кожнай.\n"
+"Узровень тэхнікі: VI-VIII. Патрабаваны сумарны ўзровень тэхнікі каманды — 54."
+
+msgid "window/unit/descriptionDefault"
+msgstr "Дадаць апісанне —"
+
+msgid "window/unit/fight"
+msgstr "Да бою!"
+
+msgid "window/unit/inviteFriend"
+msgstr "Запрасіць гульцоў"
+
+msgid "window/unit/leave"
+msgstr "Пакінуць пакой"
+
+msgid "window/unit/lockSlot"
+msgstr "Заблакіраваць месца"
+
+msgid "window/unit/message/candidate"
+msgstr "Камандзір уключыць вас у баявы склад"
+
+msgid "window/unit/message/curfew"
+msgstr "Рэжым спынення агню"
+
+msgid "window/unit/message/falloutGroupNotReady"
+msgstr "Адна з машын не гатовая да бою"
+
+msgid "window/unit/message/falloutLevel"
+msgstr "Патрабуецца прынамсі 1 машына %(level)s узроўню"
+
+msgid "window/unit/message/falloutMin/levelRange"
+msgstr "Дапоўніце групу тэхнікай %(level)s узроўняў"
+
+msgid "window/unit/message/falloutMin/requiredLevel"
+msgstr "Выберыце машыну %(level)s узроўню"
+
+msgid "window/unit/message/fortificationNotAvailable"
+msgstr "Рэжым «Умацаваны раён: бітвы» часова недаступны"
+
+msgid "window/unit/message/getNotReady"
+msgstr "Націсніце, каб скасаваць гатоўнасць"
+
+msgid "window/unit/message/getReady"
+msgstr "Пацвердзіце гатоўнасць да бою"
+
+msgid "window/unit/message/has_frozen_vehicles"
+msgstr "У атрадзе ёсць замарожаная тэхніка"
+
+msgid "window/unit/message/in_players_matching"
+msgstr "Атрад гатовы: аўтанабор легіянераў..."
+
+msgid "window/unit/message/inactivePeriphery"
+msgstr " "
+
+msgid "window/unit/message/inactivePeripheryBattle"
+msgstr "Паведаміць пра гатоўнасць можна за 10 хвілін да Наступлення"
+
+msgid "window/unit/message/inactivePeripherySortie"
+msgstr "Паведаміць пра гатоўнасць можна за 10 хвілін да пачатку Вылазак"
+
+msgid "window/unit/message/invalidLevelError/6"
+msgstr "У камандзе можа быць толькі адна машына VI узроўню."
+
+msgid "window/unit/message/invalidLevelError/6_7"
+msgstr "У камандзе не можа быць адначасова тэхніка VI і VII узроўняў."
+
+msgid "window/unit/message/invalidLevelError/7"
+msgstr "У камандзе не можа быць больш за дзве машыны VII узроўню."
+
+msgid "window/unit/message/invalidLevelError/unresolved"
+msgstr "Не адпавядае патрабавання да ўзроўню тэхнікі."
+
+msgid "window/unit/message/level"
+msgstr "Сумарны ўзровень тэхнікі не адпавядае %(level)d"
+
+msgid "window/unit/message/maintenance"
+msgstr "Рэжым часова недаступны"
+
+msgid "window/unit/message/minSlots"
+msgstr "Няпоўны склад"
+
+msgid "window/unit/message/play_limits_is_active"
+msgstr "Гульнявы час заканчваецца, нельга ўступіць у новы бой."
+
+msgid "window/unit/message/previewVehicleIsPresent"
+msgstr "Вярніцеся ў Гараж да выбару машыны"
+
+msgid "window/unit/message/ready"
+msgstr "Атрад гатовы: падшуканне супраціўніка..."
+
+msgid "window/unit/message/squadInBattle"
+msgstr "Звяз у баі"
+
+msgid "window/unit/message/takeSlotInRoster"
+msgstr "Далучыцеся да атрада"
+
+msgid "window/unit/message/unitIsFull"
+msgstr "Камандзір уключыць вас у баявы склад"
+
+msgid "window/unit/message/unitIsLocked"
+msgstr "Вы не ў штаце каманды. Склад замарожаны."
+
+msgid "window/unit/message/vehicleInNotReady/broken"
+msgstr "Машына не гатовая да бою: патрабуе рамонту."
+
+msgid "window/unit/message/vehicleInNotReady/crewNotFull"
+msgstr "Машына не гатовая да бою: няпоўны экіпаж."
+
+msgid "window/unit/message/vehicleInNotReady/isInBattle"
+msgstr "Машына ў баі"
+
+msgid "window/unit/message/vehicleInNotReady/rentIsOver"
+msgstr "Машына не гатовая да бою: час пракату закончыўся."
+
+msgid "window/unit/message/vehicleInNotReady/rotationGroupLocked"
+msgstr "Машына не гатовая да бою: група %(groupNum)s заблакіравана."
+
+msgid "window/unit/message/vehicleInNotReady/wrongMode"
+msgstr "Выбраная машына непрыдатная для такіх баёў"
+
+msgid "window/unit/message/vehicleInNotReady/wrongUnitData"
+msgstr "Выбраная машына не адпавядае параметрам камандзіра звязу"
+
+msgid "window/unit/message/vehicleNotSelected"
+msgstr "Выберыце машыну, на якой хочаце ўступіць у бой."
+
+msgid "window/unit/message/vehicleNotValid"
+msgstr "Машына не гатовая да бою"
+
+msgid "window/unit/message/vehicleNotValidForEvent"
+msgstr "Выбраная машына непрыдатная для гэтай падзеі"
+
+msgid "window/unit/message/waitCommander"
+msgstr "Чаканне вырашэнне капітана каманды..."
+
+msgid "window/unit/message/waiting"
+msgstr "Чаканне гатоўнасці гульцоў..."
+
+msgid "window/unit/notReady"
+msgstr "Не гатовы"
+
+msgid "window/unit/openRoom"
+msgstr "— Пакой нябачны"
+
+msgid "window/unit/rangeValue"
+msgstr "%(minVal)s–%(maxVal)s"
+
+msgid "window/unit/ready"
+msgstr "Гатовы!"
+
+msgid "window/unit/rosterSettingsView/or"
+msgstr "або"
+
+msgid "window/unit/slot/battleRoyale"
+msgstr "Патрэбны яшчэ адзін гулец"
+
+msgid "window/unit/slot/emptySlot"
+msgstr "Вольна"
+
+msgid "window/unit/slot/freezed"
+msgstr "Замарожана"
+
+msgid "window/unit/slot/locked"
+msgstr "Заблакавана"
+
+msgid "window/unit/slot/notAllowed"
+msgstr "Заблакавана"
+
+msgid "window/unit/slot/notAvailable"
+msgstr "Заблакавана"
+
+msgid "window/unit/slot/required"
+msgstr "Запрасіце гульцоў"
+
+msgid "window/unit/slot/takePlace"
+msgstr "Заняць месца"
+
+msgid "window/unit/slotHeaderText"
+msgstr "Акрэсліць патрабаванні"
+
+msgid "window/unit/slotSecondText"
+msgstr ""
+"Дадайце патрабаванні пазначыўшы тэхніку, якую вы хочаце мець у камандзе. Пры"
+" данаборы патрабаванні да тэхнікі не ўлічваюцца."
+
+msgid "window/unit/team"
+msgstr "Штат каманды"
+
+msgid "window/unit/teamMembers"
+msgstr "Склад: %(current)s / %(max)s"
+
+msgid "window/unit/teamPoints"
+msgstr "Сумарны ўзровень:"
+
+msgid "window/unit/teamVehicles"
+msgstr "Тэхніка:"
+
+msgid "window/unit/teamVehiclesLbl"
+msgstr "Тэхніка: %(levelsRange)s"
+
+msgid "window/unit/teamVehiclesStub"
+msgstr "Тэхніка: VI–VIII"
+
+msgid "window/unit/unitListView/captain"
+msgstr "Капітан каманды"
+
+msgid "window/unit/unitListView/clubName"
+msgstr "Назва каманды"
+
+msgid "window/unit/unitListView/commander"
+msgstr "Камандзір"
+
+msgid "window/unit/unitListView/description"
+msgstr "Апісанне"
+
+msgid "window/unit/unitListView/paginationDown"
+msgstr "Слабейшыя"
+
+msgid "window/unit/unitListView/paginationUp"
+msgstr "Мацнейшыя"
+
+msgid "window/unit/unitListView/players"
+msgstr "Склад"
+
+msgid "window/unit/unitName"
+msgstr "Каманда %(commanderName)s"
+
+msgid "window/unit/unlockSlot"
+msgstr "Разблакіраваць месца"
+
+msgid "window/unitListView/create/btn"
+msgstr "Стварыць пакой"
+
+msgid "window/unitListView/enterBtn/common"
+msgstr "Запісацца добраахвотнікам"
+
+msgid "window/unitListView/enterBtn/legionary"
+msgstr "Увайсці"
+
+msgid "window/unitListView/enterBtn/member"
+msgstr "Увайсці"
+
+msgid "window/unitListView/enterText/legionary"
+msgstr "Уступіць як легіянер"
+
+msgid "window/unitListView/enterText/member"
+msgstr "Далучыцца да каманды"
+
+msgid "window/unitListView/foundTeamsDescription"
+msgstr ""
+"У паказаных ніжэй камандах адкрыты набор на ўступ і ёсць вольныя месцы."
+
+msgid "window/unitListView/noItems"
+msgstr "Каманды не знойдзены"
+
+msgid "window/unitListView/noSearchResults/btn"
+msgstr "Вярнуцца да спіса"
+
+msgid "window/unitListView/noSearchResults/description"
+msgstr "Каманд з такой назвай не знойдзена."
+
+msgid "window/unitListView/noSearchResults/header"
+msgstr "Нічога не знойдзена"
+
+msgid "window/unitListView/noTeams/description"
+msgstr ""
+"Зараз няма каманд, якія адпавядаюць умовам пошуку. Паспрабуйце пазней."
+
+msgid "window/unitListView/noTeams/header"
+msgstr "Каманды не знойдзены"
+
+msgid "window/unitListView/noUnitSelected"
+msgstr ""
+"Выберыце каманду са спіса злева,\n"
+"каб пабачыць падрабязнае апісанне."
+
+msgid "window/unitListView/refreshList"
+msgstr "Абнавіць спіс"
+
+msgid "window/unitListView/renderer/next"
+msgstr "Наступныя"
+
+msgid "window/unitListView/renderer/previous"
+msgstr "Папярэднія"
+
+msgid "window/unitListView/renderer/requiredVehicles"
+msgstr "Прыдатная тэхніка"
+
+msgid "window/unitListView/renderer/showMore"
+msgstr "Паказаць яшчэ 20"
+
+msgid "window/unitListView/selectedTeam"
+msgstr "Каманда"
+
+msgid "window/unitListView/sort/label"
+msgstr "Рэйтынг:"
+
+msgid "window/unitListView/team"
+msgstr "Склад"
+
+msgid "window/unitListView/teamDescription"
+msgstr "Тут знаходзіцца апісанне каманды"
+
+msgid "window/unitListView/title"
+msgstr "Баявыя пакоі"
+
+msgid "window/unitListView/vehicles"
+msgstr "Тэхніка"
+
+msgid "window/vehicleSelector/buttons/cancel"
+msgstr "Скасаваць"
+
+msgid "window/vehicleSelector/buttons/select"
+msgstr "Выбраць"
+
+msgid "window/vehicleSelector/filters/all"
+msgstr "Усе"
+
+msgid "window/vehicleSelector/filters/allLevels"
+msgstr "Усе ўзроўні"
+
+msgid "window/vehicleSelector/filters/level"
+msgstr "%(levelNum)d узровень"
+
+msgid "window/vehicleSelector/filters/matches"
+msgstr "Паказваць толькі прыдатную тэхніку"
+
+msgid "window/vehicleSelector/info/intro"
+msgstr ""
+"Вы ўступіце ў бой на адной з пазначаных машын. Дапушчальныя ўзроўні тэхнікі: VI–VIII\n"
+"\n"
+"Для камфортнай гульні выберыце лёгкі, сярэдні або цяжкі танк."
+
+msgid "window/vehicleSelector/info/respawn"
+msgstr "Выберыце машыну VI–VIII узроўню, на якой хацелі б уступіць у бой."
+
+msgid "window/vehicleSelector/info/search"
+msgstr ""
+"Вы ўступіце ў бой на адной з пазначаных машын. Дапушчальныя ўзроўні тэхнікі:"
+" VI–VIII"
+
+msgid "window/vehicleSelector/info/unit"
+msgstr "Выберыце машыну VI–VIII узроўню, на якой хацелі б уступіць у бой."
+
+msgid "window/vehicleSelector/title"
+msgstr "Выбар тэхнікі"

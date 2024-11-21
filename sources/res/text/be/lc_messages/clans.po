@@ -1,0 +1,1439 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "banner/chooseTime"
+msgstr "Час не выбраны"
+
+msgid "banner/info/battlesEnd"
+msgstr "Баі завершаны"
+
+msgid "banner/info/battlesToday"
+msgstr "Баі сёння"
+
+msgid "banner/info/battlesTomorrow"
+msgstr "Баі заўтра"
+
+msgid "banner/primeTime"
+msgstr "%(start)s–%(end)s"
+
+msgid "banner/seasonDate/seasonLasts"
+msgstr "Да %(day)s %(month)s"
+
+msgid "banner/seasonDate/seasonNotStarted"
+msgstr "З %(day)s %(month)s"
+
+msgid "banner/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "banner/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "banner/title"
+msgstr "СПРЫНТ"
+
+msgid "clan/header/chatChannelBtn"
+msgstr "Чат клана"
+
+msgid "clan/header/chatChannelBtn/tooltip/body"
+msgstr "Націсніце, каб набраць паведамленне і адправіць яго ў чат клана."
+
+msgid "clan/header/chatChannelBtn/tooltip/header"
+msgstr "Чат клана"
+
+msgid "clan/header/creationDate"
+msgstr "Створаны %(creationDate)s"
+
+msgid "clan/header/invitesAndRequests"
+msgstr "Заявы і запрашэнні"
+
+msgid "clan/header/requestSent"
+msgstr "Заява на ўступ пададзена"
+
+msgid "clan/header/sendRequestBtn"
+msgstr "Падаць заяву"
+
+msgid "clan/header/sendRequestBtn/tooltip/body"
+msgstr "Націсніце, каб падаць заяву на ўступ у гэты клан."
+
+msgid "clan/header/sendRequestBtn/tooltip/header"
+msgstr "Падаць заяву"
+
+msgid "clan/post/combatOfficer"
+msgstr "Камандзір падраздзялення"
+
+msgid "clan/post/commander"
+msgstr "Камандуючы кланам"
+
+msgid "clan/post/executiveOfficer"
+msgstr "Намеснік камандуючага"
+
+msgid "clan/post/intelligenceOfficer"
+msgstr "Афіцэр выведкі"
+
+msgid "clan/post/juniorOfficer"
+msgstr "Малодшы афіцэр"
+
+msgid "clan/post/personnelOfficer"
+msgstr "Афіцэр штаба"
+
+msgid "clan/post/private"
+msgstr "Шараговец"
+
+msgid "clan/post/quartermaster"
+msgstr "Афіцэр фінансавага забеспячэння"
+
+msgid "clan/post/recruit"
+msgstr "Навабранец"
+
+msgid "clan/post/recruiter"
+msgstr "Афіцэр кадравага забеспячэння"
+
+msgid "clan/post/reservist"
+msgstr "Рэзервіст"
+
+msgid "clanInvite/notification/userNameError"
+msgstr "Памылка паказу імені"
+
+msgid "clanInvitesWindow/dataUpdated"
+msgstr "Звесткі ў табліцы змяніліся"
+
+msgid "clanInvitesWindow/dummy/noActualRequests/link"
+msgstr "«Умовы набору»"
+
+msgid "clanInvitesWindow/dummy/noActualRequests/text"
+msgstr "Даступна рэдагаванне"
+
+msgid "clanInvitesWindow/dummy/noActualRequests/title"
+msgstr "Клан не мае актуальных заяў"
+
+msgid "clanInvitesWindow/dummy/noExpiredRequests/title"
+msgstr "Клан не мае пратэрмінаваных заяў"
+
+msgid "clanInvitesWindow/dummy/noInvites/invite"
+msgstr "Запрасіць у клан"
+
+msgid "clanInvitesWindow/dummy/noInvites/text"
+msgstr ""
+"Націсніце %(invite)s, каб адправіць\n"
+"запрашэнні новым гульцам."
+
+msgid "clanInvitesWindow/dummy/noInvites/title"
+msgstr "Клан не адпраўляў запрашэнняў апошнія 28 сутак"
+
+msgid "clanInvitesWindow/dummy/noInvitesActual/title"
+msgstr "Клан не мае актуальных запрашэнняў за апошнія 28 сутак"
+
+msgid "clanInvitesWindow/dummy/noInvitesExpired/title"
+msgstr "Клан не мае пратэрмінаваных запрашэнняў за апошнія 28 сутак"
+
+msgid "clanInvitesWindow/dummy/noInvitesProcessed/title"
+msgstr "Клан не мае разгледжаных запрашэнняў за апошнія 28 сутак"
+
+msgid "clanInvitesWindow/dummy/noProcessedRequests/title"
+msgstr "Клан не мае разгледжаных заяў"
+
+msgid "clanInvitesWindow/dummy/serverError/text"
+msgstr ""
+"Звесткі з сервера не атрыманы,\n"
+"паспрабуйце пазней."
+
+msgid "clanInvitesWindow/dummy/serverError/title"
+msgstr "Памылка сервера"
+
+msgid "clanInvitesWindow/filters/actual"
+msgstr "Актуальныя (%(value)s)"
+
+msgid "clanInvitesWindow/filters/all"
+msgstr "Усе (%(value)s)"
+
+msgid "clanInvitesWindow/filters/expired"
+msgstr "Пратэрмінаваныя (%(value)s)"
+
+msgid "clanInvitesWindow/filters/hasAnswer"
+msgstr "З атрыманым адказам (%(value)s)"
+
+msgid "clanInvitesWindow/filters/processed"
+msgstr "Разгледжаныя (%(value)s)"
+
+msgid "clanInvitesWindow/header/freePlacesInClan"
+msgstr "Вольных месцаў у клане: %(count)s"
+
+msgid "clanInvitesWindow/header/inviteInClan"
+msgstr "Запрасіць у клан"
+
+msgid "clanInvitesWindow/header/tooltips/info"
+msgstr ""
+"У вас ёсць 3 сутак на разгляд заявы на ўступ у клан. Заявы і запрашэнні "
+"захоўваюцца на працягу 28 сутак, а затым аўтаматычна выдаляюцца."
+
+msgid "clanInvitesWindow/header/tooltips/noPlaces"
+msgstr "Немагчыма запрасіць гульцоў: у клане няма вольных месцаў."
+
+msgid "clanInvitesWindow/header/tooltips/recruitementStopped"
+msgstr "Немагчыма запрасіць гульцоў: набор у клан прыпынены."
+
+msgid "clanInvitesWindow/status/accepted"
+msgstr "Прынята"
+
+msgid "clanInvitesWindow/status/daysLeft"
+msgstr "%(days)d сут на разгляд"
+
+msgid "clanInvitesWindow/status/declined"
+msgstr "Адхілена"
+
+msgid "clanInvitesWindow/status/error"
+msgstr "Памылка"
+
+msgid "clanInvitesWindow/status/expired"
+msgstr "Пратэрмінавана"
+
+msgid "clanInvitesWindow/status/hoursLeft"
+msgstr "%(hours)d гадз на разгляд"
+
+msgid "clanInvitesWindow/status/minutesLeft"
+msgstr "%(min)d хв на разгляд"
+
+msgid "clanInvitesWindow/status/sent"
+msgstr "Адпраўлена"
+
+msgid "clanInvitesWindow/tabInvites"
+msgstr "Запрашэнні (%(value)s)"
+
+msgid "clanInvitesWindow/tabRequests"
+msgstr "Заявы (%(value)s)"
+
+msgid "clanInvitesWindow/table/actions"
+msgstr "Дзеянні"
+
+msgid "clanInvitesWindow/table/inviteButton"
+msgstr "Запрасіць"
+
+msgid "clanInvitesWindow/table/sent"
+msgstr "Адпраўлена"
+
+msgid "clanInvitesWindow/table/showMore"
+msgstr "Паказаць яшчэ"
+
+msgid "clanInvitesWindow/table/status"
+msgstr "Стан"
+
+msgid "clanInvitesWindow/table/userName"
+msgstr "Імя гульца"
+
+msgid "clanInvitesWindow/title"
+msgstr "Заявы і запрашэнні"
+
+msgid "clanInvitesWindow/tooltips/header/inviteButton"
+msgstr "Націсніце, каб запрасіць іншых гульцоў у клан."
+
+msgid "clanInvitesWindow/tooltips/invite/byUser"
+msgstr "На запрашэнне:"
+
+msgid "clanInvitesWindow/tooltips/invite/inviteAccepted"
+msgstr "Запрашэнне прынята"
+
+msgid "clanInvitesWindow/tooltips/invite/inviteDeclined"
+msgstr "Запрашэнне адхілена"
+
+msgid "clanInvitesWindow/tooltips/invite/inviteSent"
+msgstr "Запрашэнне адпраўлена"
+
+msgid "clanInvitesWindow/tooltips/invite/sender"
+msgstr "Адпраўнік:"
+
+msgid "clanInvitesWindow/tooltips/refreshButton/disabled"
+msgstr "Кнопка стане актыўна пасля з'яўлення новых звестак на серверы."
+
+msgid "clanInvitesWindow/tooltips/refreshButton/enabled"
+msgstr "Націсніце, каб паказаць новыя заявы і запрашэнні."
+
+msgid "clanInvitesWindow/tooltips/refreshButton/enabledTryToRefresh"
+msgstr "Паспрабуйце абнавіць."
+
+msgid "clanInvitesWindow/tooltips/request/byUser"
+msgstr "Паводле рашэння:"
+
+msgid "clanInvitesWindow/tooltips/request/requestAccepted"
+msgstr "Заява зацверджана"
+
+msgid "clanInvitesWindow/tooltips/request/requestDeclined"
+msgstr "Заява адхілена"
+
+msgid "clanInvitesWindow/tooltips/request/requestExpired"
+msgstr "Тэрмін дзеяння заявы скончыўся"
+
+msgid "clanInvitesWindow/tooltips/request/requestSent"
+msgstr "Заява на ўступ пададзена"
+
+msgid "clanInvitesWindow/tooltips/table/cantAcceptRequest/body"
+msgstr "Немагчыма запрасіць гульцоў: у клане няма вольных месцаў."
+
+msgid "clanInvitesWindow/tooltips/table/cantAcceptRequestDueToCD/body"
+msgstr ""
+"Гулец нядаўна пакінуў клан. Прыняць яго ў клан можна будзе не раней за:"
+
+msgid "clanInvitesWindow/tooltips/table/cantSendInvite/body"
+msgstr "Немагчыма прыняць гульцоў у клан: у клане няма вольных месцаў."
+
+msgid "clanInvitesWindow/tooltips/table/invites/awgExp/body"
+msgstr "Сярэдні досвед за бой запрошанага гульца (прэміум акаўнт улічваецца)"
+
+msgid "clanInvitesWindow/tooltips/table/invites/awgExp/header"
+msgstr "Сярэдні досвед за бой"
+
+msgid "clanInvitesWindow/tooltips/table/invites/battlesCount/body"
+msgstr "Колькасць адваяваных баёў запрошанага гульца."
+
+msgid "clanInvitesWindow/tooltips/table/invites/battlesCount/header"
+msgstr "Баі"
+
+msgid "clanInvitesWindow/tooltips/table/invites/inviteButton"
+msgstr "Націсніце, каб запрасіць гэтага гульца ў клан."
+
+msgid "clanInvitesWindow/tooltips/table/invites/message/body"
+msgstr "Паведамленне, далучанае кланам да запрашэння."
+
+msgid "clanInvitesWindow/tooltips/table/invites/message/header"
+msgstr "Паведамленне"
+
+msgid "clanInvitesWindow/tooltips/table/invites/personalRating/body"
+msgstr "Асабісты рэйтынг запрошанага гульца."
+
+msgid "clanInvitesWindow/tooltips/table/invites/personalRating/header"
+msgstr "Асабісты рэйтынг"
+
+msgid "clanInvitesWindow/tooltips/table/invites/sent/body"
+msgstr "Дата і час адпраўкі запрашэння ўступіць у клан."
+
+msgid "clanInvitesWindow/tooltips/table/invites/sent/header"
+msgstr "Адпраўлена"
+
+msgid "clanInvitesWindow/tooltips/table/invites/status/body"
+msgstr ""
+"Стан запрашэння ўступіць у клан. Запрашэнне можа быць актуальным, "
+"пратэрмінаваным і разгледжаным."
+
+msgid "clanInvitesWindow/tooltips/table/invites/status/header"
+msgstr "Стан"
+
+msgid "clanInvitesWindow/tooltips/table/invites/userName/body"
+msgstr "Імя запрошанага гульца."
+
+msgid "clanInvitesWindow/tooltips/table/invites/userName/header"
+msgstr "Імя"
+
+msgid "clanInvitesWindow/tooltips/table/invites/wins/body"
+msgstr "Агульны працэнт перамог запрошанага гульца."
+
+msgid "clanInvitesWindow/tooltips/table/invites/wins/header"
+msgstr "Перамогі"
+
+msgid "clanInvitesWindow/tooltips/table/requests/actions/body"
+msgstr "Заяву можна зацвердзіць або адхіліць."
+
+msgid "clanInvitesWindow/tooltips/table/requests/actions/header"
+msgstr "Дзеянні"
+
+msgid "clanInvitesWindow/tooltips/table/requests/awgExp/body"
+msgstr ""
+"Сярэдні досвед за бой гульца, які падаў заяўку (прэміум акаўнт улічваецца)"
+
+msgid "clanInvitesWindow/tooltips/table/requests/awgExp/header"
+msgstr "Сярэдні досвед за бой"
+
+msgid "clanInvitesWindow/tooltips/table/requests/battlesCount/body"
+msgstr "Агульная колькасць адваяваных баёў гульца, які падаў заяву."
+
+msgid "clanInvitesWindow/tooltips/table/requests/battlesCount/header"
+msgstr "Баі"
+
+msgid "clanInvitesWindow/tooltips/table/requests/message/body"
+msgstr "Паведамленне, далучанае гульцом да заявы."
+
+msgid "clanInvitesWindow/tooltips/table/requests/message/header"
+msgstr "Паведамленне"
+
+msgid "clanInvitesWindow/tooltips/table/requests/personalRating/body"
+msgstr "Асабісты рэйтынг гульца, які падаў заяву."
+
+msgid "clanInvitesWindow/tooltips/table/requests/personalRating/header"
+msgstr "Асабісты рэйтынг"
+
+msgid "clanInvitesWindow/tooltips/table/requests/status/body"
+msgstr ""
+"Стан заявы на ўступ у клан. Заява можа быць актуальнай, пратэрмінаванай і "
+"разгледжанай."
+
+msgid "clanInvitesWindow/tooltips/table/requests/status/header"
+msgstr "Стан"
+
+msgid "clanInvitesWindow/tooltips/table/requests/userName/body"
+msgstr "Імя гульца, які падаў заяву."
+
+msgid "clanInvitesWindow/tooltips/table/requests/userName/header"
+msgstr "Імя"
+
+msgid "clanInvitesWindow/tooltips/table/requests/wins/body"
+msgstr "Агульны працэнт перамог гульца, які падаў заяву."
+
+msgid "clanInvitesWindow/tooltips/table/requests/wins/header"
+msgstr "Перамогі"
+
+msgid "clanLanding/notification/archived"
+msgstr "Аб'ява перамешчана ў архіў."
+
+msgid "clanLanding/notification/commonError"
+msgstr "Тэхнічная памылка. Не ўдалося выканаць дзеянне з аб'явай."
+
+msgid "clanLanding/notification/deleted"
+msgstr "Аб'ява выдалена."
+
+msgid "clanLanding/notification/edited"
+msgstr "Аб'ява размешчана."
+
+msgid "clanLanding/notification/lengthExceeded"
+msgstr "Перавышана максімальная колькасць сімвалаў."
+
+msgid "clanLanding/notification/limitReached"
+msgstr "У клане ўжо размешчана максімальная колькасць аб'яў."
+
+msgid "clanLanding/notification/noPermission"
+msgstr "Вы не ўпаўнаважаны кіраваць аб'явамі клана: ваша пасада была зменена."
+
+msgid "clanLanding/notification/notExist"
+msgstr "Аб'ява была выдалена або перамешчана ў архіў."
+
+msgid "clanLanding/notification/rulesViolated"
+msgstr ""
+"Аб'ява змяшчае выразы, якія парушаюць <a "
+"href=\"event:clanRulesLink\">Правілы кланаў</a>."
+
+msgid "clanPersonalInvitesWindow/actualInvites"
+msgstr "Актуальныя запрашэнні: %(count)s"
+
+msgid "clanPersonalInvitesWindow/declineSelected"
+msgstr "Адмовіцца ад выбраных (%(count)s)"
+
+msgid "clanPersonalInvitesWindow/headerText"
+msgstr "Мае запрашэнні ў клан"
+
+msgid "clanPersonalInvitesWindow/loading"
+msgstr "Атрыманне звестак..."
+
+msgid "clanPersonalInvitesWindow/noInvites"
+msgstr "Вас пакуль не запрашаюць у клан"
+
+msgid "clanPersonalInvitesWindow/selectAll"
+msgstr "Вылучыць усе заявы"
+
+msgid "clanPersonalInvitesWindow/table/actions"
+msgstr "Дзеянні"
+
+msgid "clanPersonalInvitesWindow/table/clanName"
+msgstr "Назва клана"
+
+msgid "clanPersonalInvitesWindow/table/status"
+msgstr "Стан"
+
+msgid "clanPersonalInvitesWindow/title"
+msgstr "Запрашэнні ў клан"
+
+msgid "clanPersonalInvitesWindow/tooltips/refreshButton/disabled"
+msgstr "Спіс можна будзе абнавіць пасля з'яўлення новых звестак."
+
+msgid "clanPersonalInvitesWindow/tooltips/refreshButton/enabled"
+msgstr "Націсніце, каб абнавіць звесткі ў табліцы."
+
+msgid "clanPersonalInvitesWindow/tooltips/table/cantAcceptRequestDueToCD/body"
+msgstr ""
+"Вы нядаўна пакінулі клан. Прымаць запрашэнні ў клан вы зможаце не раней за:"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/awgExp/body"
+msgstr ""
+"Сярэдні досвед за бой членаў клана, ад імя якога адпраўлена запрашэнне "
+"(сярэднеўзважана па Выпадковых баях)"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/awgExp/header"
+msgstr "Сярэдні досвед за бой"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/battlesCount/body"
+msgstr ""
+"Сярэдняя колькасць баёў, адваяваных членамі клана, ад імя якога адпраўлена "
+"запрашэнне (сярэднеўзважана па Выпадковых баях)"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/battlesCount/header"
+msgstr "Баі клана"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/clanName/body"
+msgstr "Назва клана, ад імя якога адпраўлена запрашэнне"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/clanName/header"
+msgstr "Назва клана"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/message/body"
+msgstr "Паведамленне, далучанае кланам да запрашэння ўступіць у клан"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/message/header"
+msgstr "Паведамленне"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/rating/body"
+msgstr "Агульны рэйтынг клана, ад імя якога адпраўлена запрашэнне"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/rating/header"
+msgstr "Рэйтынг клана"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/status/body"
+msgstr ""
+"Стан запрашэння ў клан, якое паказвае, колькі часу вам засталося, каб "
+"прыняць рашэнне"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/status/header"
+msgstr "Стан"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/wins/body"
+msgstr ""
+"Працэнт перамог членаў клана, ад імя якога адпраўлена запрашэнне "
+"(сярэднеўзважана па Выпадковых баях)"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/wins/header"
+msgstr "Перамогі клана"
+
+msgid "clanPersonalInvitesWindow/tooltips/table/requests/actions/body"
+msgstr ""
+"Запрашэнне можна прыняць або адхіліць. Пагадзіўшыся на адно запрашэння, вы "
+"аўтаматычна адмовіцеся ад астатніх."
+
+msgid "clanPersonalInvitesWindow/tooltips/table/requests/actions/header"
+msgstr "Дзеянні"
+
+msgid "clanProfile/clanJoinAward/btnAction"
+msgstr "Профіль клана"
+
+msgid "clanProfile/clanJoinAward/btnClose"
+msgstr "Закрыць"
+
+msgid "clanProfile/clanJoinAward/header"
+msgstr "Вітаем вас у клане!"
+
+msgid "clanProfile/clanJoinAward/secondaryText"
+msgstr ""
+"Цяпер вы можаце браць удзел у баях на Глабальнай карце, будаваць і бараніць "
+"свой Умацаваны раён, а таксама выконваць адмысловыя баявыя задачы."
+
+msgid "clanProfile/clanJoinAward/title"
+msgstr "Інфармацыйны лісток"
+
+msgid "clanProfile/clanJoinAward/yourClan"
+msgstr "Ваш клан: [%(tag)s] %(clanName)s"
+
+msgid "clanProfile/fortificationInfo/dummy/body"
+msgstr "Выбачайце за нязручнасці. Паспрабуйце яшчэ раз пазней."
+
+msgid "clanProfile/fortificationInfo/dummy/header"
+msgstr "Умацаваны раён часова недаступны"
+
+msgid "clanProfile/mainWindow/dummy/body"
+msgstr ""
+"Выбачайце за нязручнасці.\n"
+"Паспрабуйце пазней."
+
+msgid "clanProfile/mainWindow/dummy/header"
+msgstr "Памылка загрузкі даных"
+
+msgid "clanProfile/mainWindow/title"
+msgstr "Профіль клана"
+
+msgid "clanProfile/mainWindowTab/fortification"
+msgstr "Умацаваны раён"
+
+msgid "clanProfile/mainWindowTab/globalMap"
+msgstr "Глабальная карта"
+
+msgid "clanProfile/mainWindowTab/personnel"
+msgstr "Асабовы склад"
+
+msgid "clanProfile/mainWindowTab/strongholds"
+msgstr "Умацаваны раён"
+
+msgid "clanProfile/mainWindowTab/summary"
+msgstr "Зводка"
+
+msgid "clanProfile/sendInvitesWindow/title"
+msgstr "Запрасіць гульца ў клан"
+
+msgid "clanProfile/sendInvitesWindow/tooltip/massSendBlocked/attention"
+msgstr "Дзеянне недаступнае. Запрашайце ў клан па адным гульцу."
+
+msgid "clanProfile/sendInvitesWindow/tooltip/massSendBlocked/body"
+msgstr "Дадаць усе кантакты ў спіс адрасатаў."
+
+msgid "clanProfile/summaryView/blockLbl/battlesCount"
+msgstr "Баі за 28 сутак"
+
+msgid "clanProfile/summaryView/blockLbl/battlesPerDay"
+msgstr "Наступленні за 28 сутак"
+
+msgid "clanProfile/summaryView/blockLbl/commander"
+msgstr "Камандуючы кланам"
+
+msgid "clanProfile/summaryView/blockLbl/emptyFort"
+msgstr "Яшчэ не заснаваны"
+
+msgid "clanProfile/summaryView/blockLbl/emptyGlobalMap"
+msgstr ""
+"Баі не вяліся\n"
+"Падкантрольных правінцый няма"
+
+msgid "clanProfile/summaryView/blockLbl/fortLevel"
+msgstr "Узровень Умацаванага раёна"
+
+msgid "clanProfile/summaryView/blockLbl/gold"
+msgstr "Скарбніца"
+
+msgid "clanProfile/summaryView/blockLbl/hasNoBattles"
+msgstr "Баі не праводзіліся"
+
+msgid "clanProfile/summaryView/blockLbl/provinces"
+msgstr "Правінцыі"
+
+msgid "clanProfile/summaryView/blockLbl/rageLevel10"
+msgstr "Рэйтынг Эла X"
+
+msgid "clanProfile/summaryView/blockLbl/rageLevel6"
+msgstr "Рэйтынг Эла VI"
+
+msgid "clanProfile/summaryView/blockLbl/rageLevel8"
+msgstr "Рэйтынг Эла VIII"
+
+msgid "clanProfile/summaryView/blockLbl/sortiesPerDay"
+msgstr "Вылазкі за 28 сутак"
+
+msgid "clanProfile/summaryView/blockLbl/totalPlayers"
+msgstr "Усяго гульцоў"
+
+msgid "clanProfile/summaryView/buttonLbl/details"
+msgstr "Падрабязней"
+
+msgid "clanProfile/summaryView/buttonLbl/navigation"
+msgstr "Перайсці"
+
+msgid "clanProfile/summaryView/buttonLbl/request"
+msgstr "Адправіць заяву"
+
+msgid "clanProfile/summaryView/defaultClanDescr"
+msgstr "Клан не мае дэвізу"
+
+msgid "clanProfile/summaryView/links/detailsMap"
+msgstr "Падрабязней пра Глабальную карту"
+
+msgid "clanProfile/summaryView/links/gotoMap"
+msgstr "Перайсці на карту"
+
+msgid "clanProfile/summaryView/noData"
+msgstr "Звесткі часова недаступныя"
+
+msgid "clanProfile/summaryView/statusMsg/banned"
+msgstr "Нельга ўступіць у клан."
+
+msgid "clanProfile/summaryView/statusMsg/detailsConditions"
+msgstr "Азнаёмцеся з умовамі набору ў клан %(icon)s"
+
+msgid "clanProfile/summaryView/statusMsg/inAnotherClan"
+msgstr ""
+"Вы ўжо прыналежыце\n"
+"да іншага клана."
+
+msgid "clanProfile/summaryView/statusMsg/invitationSubmitted"
+msgstr ""
+"Вам ужо прыслалі запрашэнне\n"
+"ўступіць у гэты клан."
+
+msgid "clanProfile/summaryView/statusMsg/inviteLimit"
+msgstr "%(icon)s Часова забаронена"
+
+msgid "clanProfile/summaryView/statusMsg/requestLimit"
+msgstr "%(icon)s Часова забаронена"
+
+msgid "clanProfile/summaryView/statusMsg/requestNotBeConsidered"
+msgstr "Заявы не разглядаюцца %(icon)s"
+
+msgid "clanProfile/summaryView/statusMsg/requestSubmitted"
+msgstr "Заява на ўступ пададзена"
+
+msgid "clanProfile/summaryView/statusMsg/resynchronize"
+msgstr "Сінхранізаванне звестак..."
+
+msgid "clanProfile/summaryView/tooltip/fort_ELO_rage_10/body"
+msgstr "Кланавы рэйтынг Эла ў Х дывізіёне"
+
+msgid "clanProfile/summaryView/tooltip/fort_ELO_rage_10/header"
+msgstr "Рэйтынг Эла X"
+
+msgid "clanProfile/summaryView/tooltip/fort_ELO_rage_6/body"
+msgstr "Кланавы рэйтынг Эла ў VI дывізіёне"
+
+msgid "clanProfile/summaryView/tooltip/fort_ELO_rage_6/header"
+msgstr "Рэйтынг Эла VI"
+
+msgid "clanProfile/summaryView/tooltip/fort_ELO_rage_8/body"
+msgstr "Кланавы рэйтынг Эла ў VIII дывізіёне"
+
+msgid "clanProfile/summaryView/tooltip/fort_ELO_rage_8/header"
+msgstr "Рэйтынг Эла VIII"
+
+msgid "clanProfile/summaryView/tooltip/fort_battles_count_28/body"
+msgstr "Колькасць Наступленняў за апошнія 28 сутак"
+
+msgid "clanProfile/summaryView/tooltip/fort_battles_count_28/header"
+msgstr "Наступленні за 28 сутак"
+
+msgid "clanProfile/summaryView/tooltip/fort_level/body"
+msgstr "Узровень Умацаванага раёна раўняецца ўзроўню яго каманднага цэнтра."
+
+msgid "clanProfile/summaryView/tooltip/fort_level/header"
+msgstr "Узровень Умацаванага раёна"
+
+msgid "clanProfile/summaryView/tooltip/fort_sortie_count_28/body"
+msgstr "Агульная колькасць Вылазак клана за апошнія 28 сутак"
+
+msgid "clanProfile/summaryView/tooltip/fort_sortie_count_28/header"
+msgstr "Вылазкі за 28 сутак"
+
+msgid "clanProfile/summaryView/tooltip/gMap_ELO_rage_10/body"
+msgstr "Кланавы рэйтынг Эла ў баях Х дывізіёна на Глабальнай карце"
+
+msgid "clanProfile/summaryView/tooltip/gMap_ELO_rage_10/header"
+msgstr "Рэйтынг Эла X"
+
+msgid "clanProfile/summaryView/tooltip/gMap_ELO_rage_6/body"
+msgstr "Кланавы рэйтынг Эла ў баях VI дывізіёна на Глабальнай карце"
+
+msgid "clanProfile/summaryView/tooltip/gMap_ELO_rage_6/header"
+msgstr "Рэйтынг Эла VI"
+
+msgid "clanProfile/summaryView/tooltip/gMap_ELO_rage_8/body"
+msgstr "Кланавы рэйтынг Эла ў баях VIII дывізіёна на Глабальнай карце"
+
+msgid "clanProfile/summaryView/tooltip/gMap_ELO_rage_8/header"
+msgstr "Рэйтынг Эла VIII"
+
+msgid "clanProfile/summaryView/tooltip/gMap_battles_count/body"
+msgstr ""
+"Агульная колькасць адваяваных баёў клана на Глабальнай карце за апошнія 28 "
+"сутак"
+
+msgid "clanProfile/summaryView/tooltip/gMap_battles_count/header"
+msgstr "Баі за 28 сутак"
+
+msgid "clanProfile/summaryView/tooltip/gMap_province/body"
+msgstr "Колькасць захопленых кланам правінцый на Глабальнай карце"
+
+msgid "clanProfile/summaryView/tooltip/gMap_province/header"
+msgstr "Правінцыі"
+
+msgid ""
+"clanProfile/summaryView/tooltip/joinUnavailable/invitesHasBeenReached/body"
+msgstr "Пададзена максімальная колькасць заяў."
+
+msgid ""
+"clanProfile/summaryView/tooltip/joinUnavailable/invitesHasBeenReached/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid ""
+"clanProfile/summaryView/tooltip/joinUnavailable/limitHasBeenReached/body"
+msgstr "Пададзена максімальная колькасць заяў."
+
+msgid ""
+"clanProfile/summaryView/tooltip/joinUnavailable/limitHasBeenReached/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid ""
+"clanProfile/summaryView/tooltip/joinUnavailable/receivingRequestsClosed/body"
+msgstr "Клан не прымае заявы на ўступ."
+
+msgid ""
+"clanProfile/summaryView/tooltip/joinUnavailable/receivingRequestsClosed/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid "clanProfile/summaryView/tooltip/ratingOutdated/body"
+msgstr "Рэйтынг клана не абнаўляўся 28 сутак."
+
+msgid "clanProfile/summaryView/tooltip/ratingOutdated/header"
+msgstr "Устарэлыя звесткі"
+
+msgid "clanProfile/summaryView/tooltip/totalRating/body"
+msgstr ""
+"На рост агульнага рэйтынга ўплывае эфектыўнасць баявых дзеянняў клана як ва "
+"Умацаваных раёнах, так і на Глабальнай карце."
+
+msgid "clanProfile/summaryView/tooltip/totalRating/header"
+msgstr "Агульны рэйтынг"
+
+msgid "clanProfile/summaryView/totalRage"
+msgstr "Агульны рэйтынг"
+
+msgid "fort/header/clanProfileBtnLbl"
+msgstr "Профіль клана"
+
+msgid "globalMap/disabled"
+msgstr ""
+"Баі на Глабальнай карце ў вашым рэгіёне\n"
+"зараз недаступныя"
+
+msgid "globalMapView/level10"
+msgstr "X узровень"
+
+msgid "globalMapView/level6"
+msgstr "VI узровень"
+
+msgid "globalMapView/level8"
+msgstr "VIII узровень"
+
+msgid "globalMapView/noIncome/tooltip/body"
+msgstr ""
+"Гэта правінцыя не дае даходаў, бо яна страціла сувязь з камандным цэнтрам, "
+"або правінцыя была разрабавана."
+
+msgid "globalMapView/noIncome/tooltip/header"
+msgstr "Не дае даходаў"
+
+msgid "globalMapView/noProvince"
+msgstr "Клан не мае падкантрольных правінцый"
+
+msgid "globalMapView/popularPrimeTime"
+msgstr "Папулярны прайм-тайм: %(time)s"
+
+msgid "globalMapView/promo/description"
+msgstr ""
+"Глабальная карта — гэта гульнявое поле, на якім разгортваецца стратэгічная "
+"барацьба між кланамі. Менавіта тут афіцэры кланаў праводзяць большую частку "
+"гульнявога часу, разлічваючы тактыку і разгортваючы сілы для стратэгічных "
+"манеўраў."
+
+msgid "globalMapView/promo/header"
+msgstr "Глабальная карта"
+
+msgid "globalMapView/promo/infoLink"
+msgstr "Падрабязней пра Глабальную карту"
+
+msgid "globalMapView/promo/mapLink"
+msgstr "Перайсці на карту"
+
+msgid "globalMapView/statistics10/battles"
+msgstr "Баі"
+
+msgid "globalMapView/statistics10/battles/tooltip/body"
+msgstr "Агульная колькасць адваяваных баёў Х дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics10/battles/tooltip/header"
+msgstr "Баі"
+
+msgid "globalMapView/statistics10/eloRating"
+msgstr "Рэйтынг Эла"
+
+msgid "globalMapView/statistics10/eloRating/tooltip/body"
+msgstr "Значэнне рэйтынга клана ў баях Х дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics10/eloRating/tooltip/header"
+msgstr "Рэйтынг Эла"
+
+msgid "globalMapView/statistics10/favoriteMap"
+msgstr "Упадабаная мапа"
+
+msgid "globalMapView/statistics10/favoriteMap/tooltip/body"
+msgstr ""
+"Мапа, на якой клан адваяваў найбольшую колькасць баёў Х дывізіёна за апошнія"
+" 28 сутак."
+
+msgid "globalMapView/statistics10/favoriteMap/tooltip/header"
+msgstr "Упадабаная мапа: %(value)s"
+
+msgid "globalMapView/statistics10/place"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "globalMapView/statistics10/place/tooltip/body"
+msgstr "Пазіцыя клана ў рэйтынгу ў баях Х дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics10/place/tooltip/header"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "globalMapView/statistics10/wins"
+msgstr "Перамогі"
+
+msgid "globalMapView/statistics10/wins/tooltip/body"
+msgstr "Агульны працэнт перамог у баях Х дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics10/wins/tooltip/header"
+msgstr "Перамогі"
+
+msgid "globalMapView/statistics6/battles"
+msgstr "Баі"
+
+msgid "globalMapView/statistics6/battles/tooltip/body"
+msgstr "Агульная колькасць адваяваных баёў VI дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics6/battles/tooltip/header"
+msgstr "Баі"
+
+msgid "globalMapView/statistics6/eloRating"
+msgstr "Рэйтынг Эла"
+
+msgid "globalMapView/statistics6/eloRating/tooltip/body"
+msgstr "Значэнне рэйтынга клана ў баях VI дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics6/eloRating/tooltip/header"
+msgstr "Рэйтынг Эла"
+
+msgid "globalMapView/statistics6/favoriteMap"
+msgstr "Упадабаная мапа"
+
+msgid "globalMapView/statistics6/favoriteMap/tooltip/body"
+msgstr ""
+"Мапа, на якой клан адваяваў найбольшую колькасць баёў VI дывізіёна за "
+"апошнія 28 сутак."
+
+msgid "globalMapView/statistics6/favoriteMap/tooltip/header"
+msgstr "Упадабаная мапа: %(value)s"
+
+msgid "globalMapView/statistics6/place"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "globalMapView/statistics6/place/tooltip/body"
+msgstr "Пазіцыя клана ў рэйтынгу ў баях VI дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics6/place/tooltip/header"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "globalMapView/statistics6/wins"
+msgstr "Перамогі"
+
+msgid "globalMapView/statistics6/wins/tooltip/body"
+msgstr "Агульны працэнт перамог у баях VI дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics6/wins/tooltip/header"
+msgstr "Перамогі"
+
+msgid "globalMapView/statistics8/battles"
+msgstr "Баі"
+
+msgid "globalMapView/statistics8/battles/tooltip/body"
+msgstr ""
+"Агульная колькасць адваяваных баёў VIII дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics8/battles/tooltip/header"
+msgstr "Баі"
+
+msgid "globalMapView/statistics8/eloRating"
+msgstr "Рэйтынг Эла"
+
+msgid "globalMapView/statistics8/eloRating/tooltip/body"
+msgstr "Значэнне рэйтынга клана ў баях VIII дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics8/eloRating/tooltip/header"
+msgstr "Рэйтынг Эла"
+
+msgid "globalMapView/statistics8/favoriteMap"
+msgstr "Упадабаная мапа"
+
+msgid "globalMapView/statistics8/favoriteMap/tooltip/body"
+msgstr ""
+"Мапа, на якой клан адваяваў найбольшую колькасць баёў VIII дывізіёна за "
+"апошнія 28 сутак."
+
+msgid "globalMapView/statistics8/favoriteMap/tooltip/header"
+msgstr "Упадабаная мапа: %(value)s"
+
+msgid "globalMapView/statistics8/place"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "globalMapView/statistics8/place/tooltip/body"
+msgstr "Пазіцыя ў рэйтынгу клана ў баях VIII дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics8/place/tooltip/header"
+msgstr "Пазіцыя ў рэйтынгу"
+
+msgid "globalMapView/statistics8/wins"
+msgstr "Перамогі"
+
+msgid "globalMapView/statistics8/wins/tooltip/body"
+msgstr "Агульны працэнт перамог у баях VIII дывізіёна на Глабальнай карце."
+
+msgid "globalMapView/statistics8/wins/tooltip/header"
+msgstr "Перамогі"
+
+msgid "globalMapView/stats/battles"
+msgstr "Баі на Глабальнай карце"
+
+msgid "globalMapView/stats/battles/tooltip/body"
+msgstr "Агульная колькасць адваяваных баёў клана на Глабальнай карце."
+
+msgid "globalMapView/stats/battles/tooltip/header"
+msgstr "Баі на Глабальнай карце"
+
+msgid "globalMapView/stats/seized"
+msgstr "Захоплена правінцый"
+
+msgid "globalMapView/stats/seized/tooltip/body"
+msgstr ""
+"Агульная колькасць захопленых кланам правінцый за ўвесь час. Страчаныя "
+"правінцыі таксама ўлічваюцца."
+
+msgid "globalMapView/stats/seized/tooltip/header"
+msgstr "Захоплена правінцый"
+
+msgid "globalMapView/stats/wins"
+msgstr "Перамогі па клане"
+
+msgid "globalMapView/stats/wins/tooltip/body"
+msgstr "Сярэдні працэнт перамог членаў клана ў баях на Глабальнай карце."
+
+msgid "globalMapView/stats/wins/tooltip/header"
+msgstr "Перамогі па клане"
+
+msgid "globalMapView/table/days"
+msgstr "Дні"
+
+msgid "globalMapView/table/days/tooltip/body"
+msgstr "Колькасць дзён, якія правінцыя знаходзіцца пад кантролем клана."
+
+msgid "globalMapView/table/days/tooltip/header"
+msgstr "Дні"
+
+msgid "globalMapView/table/front"
+msgstr "Фронт"
+
+msgid "globalMapView/table/front/tooltip/body"
+msgstr "Назва выбранага фронту."
+
+msgid "globalMapView/table/front/tooltip/header"
+msgstr "Фронт"
+
+msgid "globalMapView/table/income"
+msgstr "Даход"
+
+msgid "globalMapView/table/income/tooltip/body"
+msgstr "Колькасць золата, якую дае правінцыя за дзень."
+
+msgid "globalMapView/table/income/tooltip/header"
+msgstr "Даход"
+
+msgid "globalMapView/table/map"
+msgstr "Мапа"
+
+msgid "globalMapView/table/map/tooltip/body"
+msgstr "Назва мапы, на якой адбываюцца баі за правінцыю."
+
+msgid "globalMapView/table/map/tooltip/header"
+msgstr "Мапа"
+
+msgid "globalMapView/table/primeTime"
+msgstr "Прайм-тайм"
+
+msgid "globalMapView/table/primeTime/tooltip/body"
+msgstr "Запланаваны час пачатку баёў за правінцыю."
+
+msgid "globalMapView/table/primeTime/tooltip/header"
+msgstr "Прайм-тайм"
+
+msgid "globalMapView/table/province"
+msgstr "Правінцыя"
+
+msgid "globalMapView/table/province/tooltip/body"
+msgstr "Назва выбранай правінцыі."
+
+msgid "globalMapView/table/province/tooltip/header"
+msgstr "Правінцыя"
+
+msgid "globalMapView/table/provinceRobbed/tooltip/noIncome"
+msgstr "Гэта правінцыя была разрабавана і таму часова не дае даходаў."
+
+msgid "globalMapView/table/provinceRobbed/tooltip/restoreTime"
+msgstr ""
+"Час, праз які вы зноў пачняце атрымліваць даходы:\n"
+"%(date)s"
+
+msgid "globalMapView/tabs/provinces"
+msgstr "Правінцыі"
+
+msgid "globalMapView/tabs/stats"
+msgstr "Статыстыка"
+
+msgid "globalMapView/tooltip/ratingOutdated"
+msgstr "Рэйтынг клана не абнаўляўся 28 сутак."
+
+msgid "globalMapView/totalIncome"
+msgstr "Сумарны сутачны даход: %(icon)s%(value)s"
+
+msgid "personnelView/clanStats/avgBattlesCount"
+msgstr ""
+"Сярэдняя\n"
+"колькасць баёў"
+
+msgid "personnelView/clanStats/avgBattlesCount/tooltip/body"
+msgstr ""
+"Сярэдняя арыфметычная колькасць адваяваных баёў членаў клана ў Выпадковых і "
+"Ротных баях. Улічваюцца толькі гульцы, якія прыналежаць клану зараз."
+
+msgid "personnelView/clanStats/avgBattlesCount/tooltip/header"
+msgstr "Сярэдняя колькасць баёў па клане"
+
+msgid "personnelView/clanStats/avgExp"
+msgstr "Сярэдні досвед"
+
+msgid "personnelView/clanStats/avgExp/tooltip/body"
+msgstr ""
+"Сярэднеўзважанае значэнне колькасці досведу членаў клана ў Выпадковых і "
+"Ротных баях. За вагу бярэцца агульная колькасць баёў гульца. Улічваюцца "
+"толькі гульцы, якія прыналежаць клану зараз."
+
+msgid "personnelView/clanStats/avgExp/tooltip/header"
+msgstr "Сярэдні досвед па клане"
+
+msgid "personnelView/clanStats/avgPersonalRating"
+msgstr "Сярэдні асабісты рэйтынг"
+
+msgid "personnelView/clanStats/avgPersonalRating/tooltip/body"
+msgstr ""
+"Сярэдняе арыфметычнае паказчыкаў асабістага рэйтынга ўсіх членаў клана. "
+"Улічваюцца толькі гульцы, якія прыналежаць клану зараз."
+
+msgid "personnelView/clanStats/avgPersonalRating/tooltip/header"
+msgstr "Сярэдні асабісты рэйтынг па клане"
+
+msgid "personnelView/clanStats/avgWins"
+msgstr "Сярэдні працэнт перамог"
+
+msgid "personnelView/clanStats/avgWins/tooltip/body"
+msgstr ""
+"Сярэднеўзважанае значэнне працэнта перамог членаў клана ў Выпадковых і "
+"Ротных баях. За вагу бярэцца агульная колькасць баёў гульца. Улічваюцца "
+"толькі гульцы, якія прыналежаць клану зараз."
+
+msgid "personnelView/clanStats/avgWins/tooltip/header"
+msgstr "Сярэдні працэнт перамог па клане"
+
+msgid "personnelView/table/avgExp/tooltip/body"
+msgstr ""
+"Суадносіны агульнай колькасці здабытага досведу да колькасці адваяваных баёў"
+" гульцом Выпадковых і Ротных баёў."
+
+msgid "personnelView/table/avgExp/tooltip/header"
+msgstr "Сярэдні досвед"
+
+msgid "personnelView/table/battlesCount/tooltip/body"
+msgstr "Агульная колькасць адваяваных гульцом Выпадковых і Ротных баёў."
+
+msgid "personnelView/table/battlesCount/tooltip/header"
+msgstr "Колькасць баёў за ўвесь час"
+
+msgid "personnelView/table/daysInClan/tooltip/body"
+msgstr "Колькі дзён гулец бярэ ўдзел у гэтым клане."
+
+msgid "personnelView/table/daysInClan/tooltip/header"
+msgstr "Дзён у клане"
+
+msgid "personnelView/table/personalRating/tooltip/body"
+msgstr "Паказчык асабістага рэйтынга гульца"
+
+msgid "personnelView/table/personalRating/tooltip/header"
+msgstr "Асабісты рэйтынг"
+
+msgid "personnelView/table/player"
+msgstr "Гулец (%(count)s / %(max)s)"
+
+msgid "personnelView/table/player/tooltip/body"
+msgstr "Імя ў гульні (псеўданім) члена клана."
+
+msgid "personnelView/table/player/tooltip/header"
+msgstr "Гулец"
+
+msgid "personnelView/table/post"
+msgstr "Пасада"
+
+msgid "personnelView/table/post/tooltip/body"
+msgstr "Пасада ў клане, якую займае гулец."
+
+msgid "personnelView/table/post/tooltip/header"
+msgstr "Пасада"
+
+msgid "personnelView/table/wins/tooltip/body"
+msgstr "Агульны працэнт перамог гульца ў Выпадковых і Ротных баях."
+
+msgid "personnelView/table/wins/tooltip/header"
+msgstr "Перамогі"
+
+msgid "personnelView/title"
+msgstr "Статыстыка гульцоў клана ў Выпадковых баях:"
+
+msgid "search/clansList"
+msgstr "Кланаў у спісе: %(value)s"
+
+msgid "search/emptyResult/body"
+msgstr ""
+"На ваш запыт нічога не знойдзена. Паспрабуйце пашукаць па другіх ключавых "
+"словах."
+
+msgid "search/emptyResult/button"
+msgstr "Вярнуцца да спіса"
+
+msgid "search/emptyResult/button/tooltip/body"
+msgstr "Націсніце, каб вярнуцца да спіса кланаў, падабраных на ваш запыт."
+
+msgid "search/emptyResult/button/tooltip/header"
+msgstr "Вярнуцца да спіса"
+
+msgid "search/emptyResult/header"
+msgstr "Нічога не знойдзена"
+
+msgid "search/foundClans"
+msgstr "Знойдзена кланаў: %(value)s"
+
+msgid "search/info/banned/tooltip/body"
+msgstr "Нельга ўступіць у клан."
+
+msgid "search/info/banned/tooltip/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid "search/info/clanProfileBtn"
+msgstr "Профіль клана"
+
+msgid "search/info/forbiddenAccountType/tooltip/body"
+msgstr "Немагчыма падаць заяву на ўступ у клан."
+
+msgid "search/info/forbiddenAccountType/tooltip/header"
+msgstr "Дзеянне недаступнае"
+
+msgid "search/info/inviteAlreadyAchieved/tooltip/attention"
+msgstr "Вам ужо прыслалі запрашэнне ўступіць у гэты клан."
+
+msgid "search/info/inviteAlreadyAchieved/tooltip/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid "search/info/ratingDescription"
+msgstr "Агульны рэйтынг"
+
+msgid "search/info/ratingDescription/tooltip/body"
+msgstr ""
+"На рост агульнага рэйтынга ўплывае эфектыўнасць баявых дзеянняў клана як ва "
+"Умацаваных раёнах, так і на Глабальнай карце."
+
+msgid "search/info/ratingDescription/tooltip/header"
+msgstr "Агульны рэйтынг"
+
+msgid "search/info/ratingTitle"
+msgstr "Статыстыка па ўсіх тыпаў баёў:"
+
+msgid "search/info/requestAlreadySent/tooltip/attention"
+msgstr "Вы ўжо падалі заяву на ўступ у гэты клан."
+
+msgid "search/info/requestAlreadySent/tooltip/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid "search/info/requestSent"
+msgstr "Заява на ўступ пададзена"
+
+msgid "search/info/requestsAreNotAccepted/tooltip/attention"
+msgstr "Клан не прымае заявы на ўступ."
+
+msgid "search/info/requestsAreNotAccepted/tooltip/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid "search/info/requestsLimitExceeded/tooltip/attention"
+msgstr "Пададзена максімальная колькасць заяў."
+
+msgid "search/info/requestsLimitExceeded/tooltip/header"
+msgstr "Немагчыма падаць заяву"
+
+msgid "search/info/sendRequestBtn"
+msgstr "Падаць заяву"
+
+msgid "search/info/serverUnavailable/body"
+msgstr "Серверныя звесткі не атрыманы. Паспрабуйце пазней."
+
+msgid "search/info/serverUnavailable/header"
+msgstr "Памылка сервера"
+
+msgid "search/info/stats/avgExp"
+msgstr "Сярэдні досвед"
+
+msgid "search/info/stats/avgExp/tooltip/body"
+msgstr ""
+"Сярэднеўзважанае значэнне колькасці досведу членаў клана, здабытага імі ва "
+"ўсіх рэжымах баёў. За вагу бярэцца агульная колькасць баёў гульца. "
+"Улічваюцца толькі гульцы, якія прыналежаць клану зараз."
+
+msgid "search/info/stats/avgExp/tooltip/header"
+msgstr "Сярэдні досвед па клане"
+
+msgid "search/info/stats/battles"
+msgstr ""
+"Сярэдняя\n"
+"колькасць баёў"
+
+msgid "search/info/stats/battles/tooltip/body"
+msgstr ""
+"Сярэдняя арыфметычная колькасць адваяваных баёў членаў клана ва ўсіх рэжымах"
+" баёў. Улічваюцца толькі гульцы, якія прыналежаць клану зараз."
+
+msgid "search/info/stats/battles/tooltip/header"
+msgstr "Сярэдняя колькасць баёў па клане"
+
+msgid "search/info/stats/wins"
+msgstr "Сярэдні працэнт перамог"
+
+msgid "search/info/stats/wins/tooltip/body"
+msgstr ""
+"Сярэднеўзважанае значэнне працэнта перамог членаў клана ва ўсіх рэжымах "
+"баёў. За вагу бярэцца агульная колькасць баёў гульца. Улічваюцца толькі "
+"гульцы, якія прыналежаць клану зараз."
+
+msgid "search/info/stats/wins/tooltip/header"
+msgstr "Сярэдні працэнт перамог па клане"
+
+msgid "search/nextBtn"
+msgstr "Наступныя"
+
+msgid "search/nextBtn/tooltip/body"
+msgstr "Націсніце, каб праглядзець наступную частку спіса кланаў."
+
+msgid "search/nextBtn/tooltip/header"
+msgstr "Наступныя"
+
+msgid "search/previousBtn"
+msgstr "Папярэднія"
+
+msgid "search/previousBtn/tooltip/body"
+msgstr "Націсніце, каб праглядзець папярэднюю частку спіса кланаў."
+
+msgid "search/previousBtn/tooltip/header"
+msgstr "Папярэднія"
+
+msgid "search/promoText/body"
+msgstr ""
+"Для пошуку клана ўвядзіце ў тэкставае поле назву або тэг, а затым націсніце "
+"«Шукаць»."
+
+msgid "search/promoText/header"
+msgstr "Пошук клана"
+
+msgid "search/requestTooShort/body"
+msgstr ""
+"Каб знайсці клан, увядзіце ў тэкставае поле 2 або больш знакаў, а затым зноў"
+" націсніце «Шукаць»."
+
+msgid "search/requestTooShort/button"
+msgstr "Вярнуцца да спіса"
+
+msgid "search/requestTooShort/button/tooltip/header"
+msgstr "Вярнуцца да спіса"
+
+msgid "search/requestTooShort/header"
+msgstr "Замала звестак"
+
+msgid "search/searchBtn"
+msgstr "Шукаць"
+
+msgid "search/searchBtn/tooltip/body"
+msgstr "Увядзіце назву або тэг клана ў поле злева (не менш за 2 сімвалаў)."
+
+msgid "search/searchBtn/tooltip/header"
+msgstr "Пошук клана"
+
+msgid "search/searchInputPrompt"
+msgstr "Увядзіце назву або тэг клана."
+
+msgid "search/serverUnavailable/body"
+msgstr "Серверныя звесткі не атрыманы. Паспрабуйце пазней."
+
+msgid "search/serverUnavailable/header"
+msgstr "Памылка сервера"
+
+msgid "search/table/clan"
+msgstr "Клан"
+
+msgid "search/table/clan/tooltip/body"
+msgstr "Атрыбуты клана: тэг і назва."
+
+msgid "search/table/clan/tooltip/header"
+msgstr "Клан"
+
+msgid "search/table/creationDate"
+msgstr "Створаны"
+
+msgid "search/table/creationDate/tooltip/body"
+msgstr "Дата стварэння клана."
+
+msgid "search/table/creationDate/tooltip/header"
+msgstr "Створаны"
+
+msgid "search/table/players"
+msgstr "Гульцы"
+
+msgid "search/table/players/tooltip/body"
+msgstr "Агульная колькасць членаў у клане."
+
+msgid "search/table/players/tooltip/header"
+msgstr "Гульцы"
+
+msgid "search/table/rating"
+msgstr "Рэйтынг"
+
+msgid "search/table/rating/tooltip/body"
+msgstr "Агульны рэйтынг клана."
+
+msgid "search/table/rating/tooltip/header"
+msgstr "Рэйтынг"
+
+msgid "search/title"
+msgstr "Пошук клана"
+
+msgid "search/titleDescription"
+msgstr ""
+"Тут вы можаце знайсці клан, азнаёміцца з агульнай інфармацыяй і падаць заяву\n"
+"на ўступ. Пошук выконваецца па назве або тэгу клана."
+
+msgid "search/windowTitle"
+msgstr "Пошук клана"
+
+msgid "section/fort/bodyBar/label/scheme"
+msgstr "Схема"
+
+msgid "section/fort/bodyBar/label/statistics"
+msgstr "Статыстыка"
+
+msgid "section/fort/building/tooltip/body"
+msgstr ""
+"Узровень %(level)s\n"
+"\n"
+"%(description)s"
+
+msgid "section/fort/defence/notActivated"
+msgstr "не прызначаны"
+
+msgid "section/fort/view/schema/labels/dayoff"
+msgstr "Спыненне агню:"
+
+msgid "section/fort/view/schema/labels/defenceHour"
+msgstr "Перыяд абароны:"
+
+msgid "section/fort/view/schema/labels/server"
+msgstr "Хатні сервер:"
+
+msgid "section/fort/view/schema/labels/totalBuildings"
+msgstr "Будынкаў пабудавана:"
+
+msgid "section/fort/view/schema/labels/vacation"
+msgstr "Нейтралітэт:"
+
+msgid "section/fort/view/statistics/sorties/detailed/recordResource"
+msgstr "Рэкорд здабытага прамысловага рэсурсу"
+
+msgid "section/fort/view/statistics/sorties/detailed/recordWinSeries"
+msgstr "Рэкордная серыя перамог"

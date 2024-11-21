@@ -1,7 +1,7 @@
 import material_kinds
 from items import _xml
 from debug_utils import LOG_ERROR, LOG_CURRENT_EXCEPTION
-from helpers.PixieNode import EffectNode
+from helpers.PixieNode import EffectNode, TrackEffectNode
 from helpers import EffectsList
 from soft_exception import SoftException
 gNodes = {}
@@ -420,9 +420,11 @@ class CustomEffectsDescriptor(EffectDescriptorBase):
         return
 
     def create(self, args):
-        if self._selectorDesc is not None:
-            return MainCustomSelector(self, args)
+        if 'new_hp_vfx' in args['vehicleTags']:
+            return MainTemplateSelector(self, args)
         else:
+            if self._selectorDesc is not None:
+                return MainCustomSelector(self, args)
             return
 
     def getActiveEffects(self, effects, args):
@@ -483,7 +485,7 @@ class MainSelectorBase(object):
         if self._effectNodes is not None:
             for node in self._effectNodes.values():
                 if node is not None:
-                    node.destroy()
+                    self._destroyNode(node)
 
             self._effectNodes = None
         return
@@ -508,7 +510,7 @@ class MainSelectorBase(object):
             if self._effectNodes is not None:
                 for node in self._effectNodes.values():
                     if node is not None:
-                        node.deactivate()
+                        self._deactivateNode(node)
 
             self._activeEffectId = set()
             return
@@ -522,11 +524,23 @@ class MainSelectorBase(object):
         for effect in disableEffects:
             self.enable(effect, False)
 
-        enableEffects = activeEffects.difference(self._activeEffectId)
+        enableEffects = self._getNewEffects(activeEffects)
         for effect in enableEffects:
             self.enable(effect, True)
 
         self._activeEffectId = activeEffects
+
+    def _getNewEffects(self, effects):
+        return effects.difference(self._activeEffectId)
+
+    def _destroyNode(self, node):
+        node.destroy()
+
+    def _deactivateNode(self, node):
+        node.deactivate()
+
+    def _activateNode(self, node):
+        node.activate()
 
 
 class MainCustomSelector(MainSelectorBase):
@@ -561,6 +575,123 @@ class MainCustomSelector(MainSelectorBase):
         if node is not None:
             node.enable(effectID[1], enable)
         return
+
+
+class MainTemplateSelector(MainSelectorBase):
+    METADATA_SPLITTER = ':'
+    TYPE_SPLITTER = '_'
+    HP_PREFIX = 'HP_'
+    NODE_TYPES_MAPPING = {'track': TrackEffectNode}
+
+    def __init__(self, selectorDesc, args):
+        super(MainTemplateSelector, self).__init__(selectorDesc, args)
+        self.__createEffects(self._effectSelector.effects, args)
+
+    def settingsFlags(self):
+        return EffectSettings.SETTING_DUST
+
+    @property
+    def effectNodes(self):
+        result = []
+        for items in self._effectNodes.values():
+            result.extend(items)
+
+        return result
+
+    def enable(self, effectID, enable):
+        nodes = self._effectNodes.get(effectID[0], None)
+        if nodes is None:
+            return
+        else:
+            for node in nodes:
+                node.enable(effectID[1], enable)
+
+            return
+
+    def __createEffects(self, effects, args):
+        templateNodes = self.__getTemplateNodes(effects, args)
+        self._effectNodes = dict()
+        for nodeName, nodeDesc in effects.iteritems():
+            try:
+                effectId = nodeDesc[0]
+                effectNodes = self.__extractEffects(nodeName, nodeDesc, args, templateNodes)
+                self._effectNodes[effectId] = effectNodes
+            except Exception:
+                LOG_ERROR('Node %s is not found' % nodeName)
+                continue
+
+    def _destroyNode(self, nodes):
+        for node in nodes:
+            node.destroy()
+
+    def _deactivateNode(self, nodes):
+        for node in nodes:
+            node.deactivate()
+
+    def _activateNode(self, nodes):
+        for node in nodes:
+            node.activate()
+
+    def _getNewEffects(self, effects):
+        return effects
+
+    def __extractEffects(self, nodeName, nodeDesc, args, templateNodes):
+        drawOrderBase = args.get('drawOrderBase', 0)
+        appearance = args.get('appearance')
+        modelName = nodeDesc[1]
+        waterY = nodeDesc[2]
+        drawOrder = drawOrderBase + nodeDesc[3]
+        effects = nodeDesc[4]
+        model = args[modelName]['model']
+        if nodeName not in templateNodes:
+            return [EffectNode(model, nodeName, waterY, drawOrder, effects)]
+        effectNodes = []
+        for nodeData in templateNodes[nodeName]:
+            templateNodeName, nodeType, metaData = nodeData
+            effectCls = self.NODE_TYPES_MAPPING[nodeType]
+            node = effectCls(model, templateNodeName, waterY, drawOrder, effects, appearance, metaData)
+            effectNodes.append(node)
+
+        return effectNodes
+
+    def __getTemplateNodes(self, effects, args):
+        modelNames = set()
+        templateNodes = dict()
+        for nodeDesc in effects.itervalues():
+            modelName = nodeDesc[1]
+            if modelName in modelNames:
+                continue
+            modelNames.add(modelName)
+            model = args[modelName]['model']
+            self.__extractHardPoints(model.getNodeNames(), templateNodes)
+
+        return templateNodes
+
+    def __extractHardPoints(self, nodeNames, templateNodes):
+        for nodeName in nodeNames:
+            if not nodeName.startswith(self.HP_PREFIX) or self.METADATA_SPLITTER not in nodeName:
+                continue
+            hardPoint, metaData, nodeType = self.__extractNodeParts(nodeName)
+            if not hardPoint or not metaData or not nodeType:
+                continue
+            templateNodes.setdefault(hardPoint, []).append((nodeName, nodeType, metaData))
+
+    def __extractNodeParts(self, nodeName):
+        nodeData = nodeName.split(self.METADATA_SPLITTER)
+        if len(nodeData) != 2:
+            LOG_ERROR('Node %s has invalid format. {HARD_POINT}:{META_DATA} required' % nodeName)
+            return (None, None, None)
+        else:
+            hardPoint, metaData = nodeData
+            nodeData = metaData.split(self.TYPE_SPLITTER, 1)
+            if len(nodeData) != 2:
+                LOG_ERROR('Node %s has invalid metadata format.{TYPE}_{DATA} required' % nodeName)
+                return (None, None, None)
+            nodeType = nodeData[0]
+            if nodeType not in self.NODE_TYPES_MAPPING:
+                LOG_ERROR('Node %s has invalid type %s.' % (nodeName, nodeType))
+                return (None, None, None)
+            return (hardPoint, metaData, nodeType)
 
 
 class ExhaustMainSelector(MainSelectorBase):

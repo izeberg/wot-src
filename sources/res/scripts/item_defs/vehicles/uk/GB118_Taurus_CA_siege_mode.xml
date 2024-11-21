@@ -10,7 +10,7 @@
 	<postProgressionTree>role_ATSPG_assault</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>37</forward>
+		<forward>33</forward>
 		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
@@ -3423,10 +3423,7 @@
 			<userString>#gb_vehicles:Turret_1_GB118_Taurus_CA</userString>
 			<tags>cannotDetach</tags>
 			<level>9</level>
-			<price>
-				120.0
-				<!--BW_String-->
-			</price>
+			<price>120</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>0</armor_1>
@@ -3465,7 +3462,10 @@
 					<staticPitch>0</staticPitch>
 					<turretYawLimits>-1 1</turretYawLimits>
 					<staticTurretYaw>0</staticTurretYaw>
-					<reloadTime>9</reloadTime>
+					<reloadTime>
+						9.5
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
 						1.7
 						<!--BW_String-->
@@ -3605,8 +3605,8 @@
 		<detailed>
 			<engines>
 				<Rolls_Royce_RC3_137>
-					<smplEnginePower>500</smplEnginePower>
-					<smplFwMaxSpeed>37</smplFwMaxSpeed>
+					<smplEnginePower>460</smplEnginePower>
+					<smplFwMaxSpeed>33</smplFwMaxSpeed>
 				</Rolls_Royce_RC3_137>
 			</engines>
 			<chassis>

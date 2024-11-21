@@ -4716,11 +4716,11 @@
 						<heatingPerShot>2</heatingPerShot>
 						<heatingPerSec>20</heatingPerSec>
 						<coolingDelay>
-							1.0
+							2.0
 							<!--BW_String-->
 						</coolingDelay>
 						<coolingPerSec>10</coolingPerSec>
-						<coolingOverheatPerSec>12</coolingOverheatPerSec>
+						<coolingOverheatPerSec>14</coolingOverheatPerSec>
 						<thermalStateHysteresis>1</thermalStateHysteresis>
 						<temperatureSegmentSize>5</temperatureSegmentSize>
 						<thermalStates>

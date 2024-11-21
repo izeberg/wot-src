@@ -2123,10 +2123,7 @@
 						<!--BW_String-->
 					</radius>
 					<isLeading>true</isLeading>
-					<syncAngle>
-						31.5
-						<!--BW_String-->
-					</syncAngle>
+					<syncAngle>40</syncAngle>
 					<geometry>
 						<radius>
 							0.23
@@ -2159,10 +2156,7 @@
 						<!--BW_String-->
 					</radius>
 					<isLeading>true</isLeading>
-					<syncAngle>
-						31.5
-						<!--BW_String-->
-					</syncAngle>
+					<syncAngle>40</syncAngle>
 					<geometry>
 						<radius>
 							0.23
@@ -2644,7 +2638,7 @@
 						<!--BW_String-->
 					</segmentLength>
 					<segmentOffset>
-						0.045
+						0.16
 						<!--BW_String-->
 					</segmentOffset>
 					<segment2Offset>
@@ -2669,7 +2663,7 @@
 						<!--BW_String-->
 					</segmentLength>
 					<segmentOffset>
-						0.045
+						0.07
 						<!--BW_String-->
 					</segmentOffset>
 					<segment2Offset>
@@ -2692,7 +2686,7 @@
 						<!--BW_String-->
 					</segmentsOuterThickness>
 					<segmentsInnerThickness>
-						0.01
+						0.02
 						<!--BW_String-->
 					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
@@ -3028,7 +3022,7 @@
 						<!--BW_String-->
 					</segmentsOuterThickness>
 					<segmentsInnerThickness>
-						0.01
+						0.02
 						<!--BW_String-->
 					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
@@ -3354,11 +3348,11 @@
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>80</segmentsCount>
 					<segmentsOuterThickness>
-						0.04
+						0.02
 						<!--BW_String-->
 					</segmentsOuterThickness>
 					<segmentsInnerThickness>
-						0.01
+						0.02
 						<!--BW_String-->
 					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
@@ -3981,11 +3975,11 @@
 					<trackPairIdx>1</trackPairIdx>
 					<segmentsCount>78</segmentsCount>
 					<segmentsOuterThickness>
-						0.04
+						0.02
 						<!--BW_String-->
 					</segmentsOuterThickness>
 					<segmentsInnerThickness>
-						0.01
+						0.02
 						<!--BW_String-->
 					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
@@ -4723,11 +4717,11 @@
 						<heatingPerShot>2</heatingPerShot>
 						<heatingPerSec>20</heatingPerSec>
 						<coolingDelay>
-							1.0
+							2.0
 							<!--BW_String-->
 						</coolingDelay>
 						<coolingPerSec>10</coolingPerSec>
-						<coolingOverheatPerSec>12</coolingOverheatPerSec>
+						<coolingOverheatPerSec>14</coolingOverheatPerSec>
 						<thermalStateHysteresis>1</thermalStateHysteresis>
 						<temperatureSegmentSize>5</temperatureSegmentSize>
 						<thermalStates>

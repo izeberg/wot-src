@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bonusXp/description"
+msgstr "Дазваляе павялічыць досвед, атрыманы ў выбраным вамі пераможным баі."
+
+msgid "bonusXp/heading"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "bonusXp/multiplier"
+msgstr "Кіравальны бонус да досведу %(multiplierFactor)"
+
+msgid "bonusXp/multiplierFactor"
+msgstr "x%(multiplier)"
+
+msgid "close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "excludedMaps/cooldownTooltipBody"
+msgstr "Замяніць гэту мапу можна праз {cooldownStr}."
+
+msgid "excludedMaps/cooldownTooltipHeader"
+msgstr "Замена мапы недаступная"
+
+msgid "excludedMaps/disabledTooltipBody"
+msgstr ""
+"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
+"прэміум акаўнце."
+
+msgid "excludedMaps/disabledTooltipBodyWotPlus"
+msgstr ""
+"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
+"прэміум акаўнце."
+
+msgid "excludedMaps/disabledTooltipHeader"
+msgstr "Слот недаступны"
+
+msgid "excludedMaps/header"
+msgstr "Выключаныя мапы"
+
+msgid "excludedMaps/replaceTooltipBody"
+msgstr "Вы можаце замяніць гэту мапу."
+
+msgid "excludedMaps/replaceTooltipHeader"
+msgstr "Замена мапы даступная"
+
+msgid "excludedMaps/selectTooltipBody"
+msgstr ""
+"Выберыце мапу са спіса ніжэй, каб выключыць яе з Выпадковых баёў (для "
+"падрэжыму «Звычайны бой»)."
+
+msgid "excludedMaps/selectTooltipHeader"
+msgstr "Мапа не выбрана"
+
+msgid "header/badgeTooltip"
+msgstr ""
+"Націсніце, каб выбраць нашыўку, якая будзе паказвацца ў баі побач з вашым "
+"імем. Нашыўкі можна заслужыць у Націску, за выкананне Асабістых баявых задач"
+" і за ўдзел у гульнявых падзеях."
+
+msgid "header/clanSubtitle"
+msgstr "%(position) у клане [%(clanTag)]"
+
+msgid "parentalControl/important"
+msgstr "УВАГА!"
+
+msgid "parentalControl/limitEnabled"
+msgstr "Уведзены ліміт часу гульні"
+
+msgid "personalDogTag/heading"
+msgstr "Асабісты жэтон"
+
+msgid "premiumAccount/WGPremium"
+msgstr "Агульны прэміум"
+
+msgid "premiumAccount/WGPremiumAccount"
+msgstr "Агульны прэміум акаўнт"
+
+msgid "premiumAccount/WoTPremium"
+msgstr "Танкавы прэміум"
+
+msgid "premiumAccount/WoTPremiumAccount"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "premiumAccount/days"
+msgstr "д"
+
+msgid "premiumAccount/minimumTimeLeft"
+msgstr "менш за гадзіну"
+
+msgid "premiumAccount/otherBenefits"
+msgstr "І іншыя ўнікальныя перавагі!"
+
+msgid "premiumAccount/standardAccount"
+msgstr "Звычайны акаўнт"
+
+msgid "premiumAccount/tryWoTPremiumAccount"
+msgstr ""
+"Апрабуйце\n"
+"Танкавы прэміум акаўнт"
+
+msgid "premiumAccount/upgrade/creditReserve"
+msgstr "Сховішча крэдытаў"
+
+msgid "premiumAccount/upgrade/excludeMapSlot"
+msgstr "+1 слот для выключэння мапы"
+
+msgid "premiumAccount/upgrade/experience"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "premiumAccount/upgrade/platoonBonusCredits"
+msgstr "Звязовы бонус да крэдытаў"
+
+msgid "premiumAccount/upgrade/premiumMissions"
+msgstr "Прэміум задачы"
+
+msgid "premiumAccount/upgrade/toWoTPremiumAccount"
+msgstr ""
+"Палепшыце да\n"
+"Танкавага прэміум акаўнту"
+
+msgid "premiumQuests/heading"
+msgstr "Прэміум задачы"
+
+msgid "reserveStock/blockTitle"
+msgstr "Сховішча крэдытаў"
+
+msgid "reserveStock/emptyDisabledSubtitle"
+msgstr "Прыносіць да %(creditMaxAmount) за тыдзень у выніку актыўнай гульні."
+
+msgid "reserveStock/reserveFull"
+msgstr "Сховішча крэдытаў запоўненае"
+
+msgid "reserveStock/suspended"
+msgstr ""
+"Назапашванне крэдытаў у сховішчы прыпынена:\n"
+"скончыўся тэрмін дзеяння Танкавага прэміум акаўнту."
+
+msgid "reserveStock/unavailable"
+msgstr "Часова недаступна"
+
+msgid "temporarilyUnavailable"
+msgstr "Часова недаступна"

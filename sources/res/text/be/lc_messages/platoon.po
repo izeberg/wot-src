@@ -1,0 +1,380 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "buttons/cancelSearch/caption"
+msgstr "Адмена пошуку"
+
+msgid "buttons/cancelSearch/description"
+msgstr "Націсніце, каб адмяніць пошук удзельнікаў звязу."
+
+msgid "buttons/createPlatoon/caption"
+msgstr "Новы звяз"
+
+msgid "buttons/createPlatoon/comp7/forSeven/caption"
+msgstr "7 гульцоў"
+
+msgid "buttons/createPlatoon/comp7/forSeven/description"
+msgstr "Стварэнне суперзвязу з сямі гульцоў."
+
+msgid "buttons/createPlatoon/comp7/forSeven/text"
+msgstr "7 гульцоў"
+
+msgid "buttons/createPlatoon/comp7/forTwo/caption"
+msgstr "2 гульцы"
+
+msgid "buttons/createPlatoon/comp7/forTwo/description"
+msgstr "Стварэнне звязу з двух гульцоў."
+
+msgid "buttons/createPlatoon/comp7/forTwo/text"
+msgstr "2 гульцы"
+
+msgid "buttons/createPlatoon/description"
+msgstr "Стварыце звяз і запрасіце сяброў для сумеснай гульні."
+
+msgid "buttons/createSuperPlatoon/caption"
+msgstr "Новы суперзвяз"
+
+msgid "buttons/findPlayers/caption"
+msgstr "Пошук гульцоў"
+
+msgid "buttons/findPlayers/descriptionDropdown"
+msgstr ""
+"Знайдзіце гульцоў з падобным узроўнем майстэрства і прыдатнай тэхнікай."
+
+msgid "buttons/findPlayers/descriptionMembers"
+msgstr ""
+"Пачаўшы пошук гульцоў, вы адменіце ўсе адпраўленыя сябрам запрашэнні ў звяз."
+
+msgid "buttons/findPlayers/tooltip/header"
+msgstr "Пошук гульцоў"
+
+msgid "buttons/findPlayers/tooltip/noAssembling/body"
+msgstr "Пошук гульцоў у звяз недаступны: занадта шмат звязаў на серверы."
+
+msgid "buttons/findPlayers/tooltip/noSuitableTank/body"
+msgstr "Пошук гульцоў у звяз недаступны: няма прыдатнай тэхнікі."
+
+msgid "buttons/invite/fullSquad/description"
+msgstr "Звяз запоўнены"
+
+msgid "buttons/invite/player/caption"
+msgstr "Запрасіць гульца"
+
+msgid "buttons/invite/player/description"
+msgstr "Націсніце, каб запрасіць гульца ў звяз"
+
+msgid "buttons/invite/players/caption"
+msgstr "Запрасіць гульцоў"
+
+msgid "buttons/invite/players/description"
+msgstr "Націсніце, каб запрасіць гульцоў у звяз."
+
+msgid "buttons/leavePlatoon/caption"
+msgstr "Пакінуць звяз"
+
+msgid "buttons/leavePlatoon/description"
+msgstr "Націсніце, каб выйсці са складу звязу."
+
+msgid "buttons/mute/caption"
+msgstr "Адключыць галасавую сувязь"
+
+msgid "buttons/mute/description"
+msgstr "Націсніце, каб адключыць галасавую сувязь у звязе."
+
+msgid "buttons/notReady/caption"
+msgstr "Не гатовы"
+
+msgid "buttons/notReady/description"
+msgstr "Націсніце, калі вы не гатовы ўступіць у бой."
+
+msgid "buttons/ready/caption"
+msgstr "Гатовы!"
+
+msgid "buttons/ready/description"
+msgstr "Націсніце, калі вы гатовы ўступіць у бой."
+
+msgid "buttons/reset/caption"
+msgstr "Скінуць параметры пошуку"
+
+msgid "buttons/reset/description"
+msgstr "Націсніце, каб вярнуць стандартныя параметры пошуку."
+
+msgid "buttons/settings/caption"
+msgstr "Задаць параметры пошуку"
+
+msgid "buttons/settings/description"
+msgstr ""
+"Шукайце гульцоў паводле сваіх параметраў пошуку. Чым даўжэй трывае пошук, "
+"тым больш пашыраюцца параметры пошуку."
+
+msgid "buttons/unMute/caption"
+msgstr "Уключыць галасавую сувязь"
+
+msgid "buttons/unMute/description"
+msgstr "Націсніце, каб уключыць галасавую сувязь у звязе."
+
+msgid "headerButton/inSquad"
+msgstr "У звязе"
+
+msgid "headerButton/onboarding"
+msgstr ""
+"ПАЧНІЦЕ ПОШУК ГУЛЬЦОЎ\n"
+"ДЛЯ ФАРМАВАННЯ ЗВЯЗУ"
+
+msgid "headerButton/searching"
+msgstr "Шуканне..."
+
+msgid "headerButton/squad"
+msgstr "Стварыць звяз"
+
+msgid "headerButton/tooltips/battleRoyaleSquad/body"
+msgstr ""
+"Стварыць фарміраванне з 2 гульцоў для сумеснай гульні ў рэжыме «Сталёвы "
+"паляўнічы»."
+
+msgid "headerButton/tooltips/battleRoyaleSquad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/comp7QualificationSquad/body"
+msgstr ""
+"Да завяршэння кваліфікацыі вы не можаце ствараць звязы або далучацца да іх.\n"
+"Пасля яе завяршэння вам стануць даступнымі звязы з 2 гульцоў."
+
+msgid "headerButton/tooltips/comp7QualificationSquad/header"
+msgstr "Гульня ў звязе недаступная"
+
+msgid "headerButton/tooltips/comp7Squad/body"
+msgstr ""
+"Вы можаце стварыць звяз або далучыцца да існуючага. У Націску даступныя "
+"звязы з 2 гульцоў."
+
+msgid "headerButton/tooltips/comp7Squad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/dominationSquad/body"
+msgstr ""
+"Стварэнне фарміравання з 2–3 гульцоў для сумеснай гульні ў Выпадковых баях.\n"
+"• Рэжымы баёў: «Бой да апошняга».\n"
+"• Тыпы баёў: «Сталёвае паляванне», «Перавага»."
+
+msgid "headerButton/tooltips/dominationSquad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/eventSquad/body"
+msgstr ""
+"Создание формирования из 2–3 игроков для совместной игры в событии «Большие "
+"гонки»."
+
+msgid "headerButton/tooltips/eventSquad/header"
+msgstr "Взвод события «Большие гонки»"
+
+msgid "headerButton/tooltips/inMapboxSquad/body"
+msgstr "Націсніце, каб перайсці ў меню звязу."
+
+msgid "headerButton/tooltips/inMapboxSquad/header"
+msgstr "Разведка боем: звяз"
+
+msgid "headerButton/tooltips/inSquad/body"
+msgstr "Націсніце, каб перайсці ў меню звязу."
+
+msgid "headerButton/tooltips/inSquad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/mapboxSquad/body"
+msgstr ""
+"Стварэнне звязу з 2–3 гульцоў для супольнай гульні ў рэжыме «Разведка боем»."
+
+msgid "headerButton/tooltips/mapboxSquad/header"
+msgstr "Разведка боем: звяз"
+
+msgid "headerButton/tooltips/rankedSquad/body"
+msgstr "У Рангавых баях гульня ў складзе фарміравання недаступная."
+
+msgid "headerButton/tooltips/rankedSquad/header"
+msgstr "Стварыць звяз"
+
+msgid "headerButton/tooltips/searching/body"
+msgstr "Пошук гульцоў..."
+
+msgid "headerButton/tooltips/searching/header"
+msgstr "Пошук"
+
+msgid "headerButton/tooltips/squad/body"
+msgstr ""
+"Стварэнне фарміравання з 2–3 гульцоў для сумеснай гульні ў Выпадковых баях.\n"
+"• Тыпы баёў: Стандартны бой, Штурм, Сустрэчны бой, Генеральная бітва, а таксама Лінія фронту (калі гэты рэжым даступны)."
+
+msgid "headerButton/tooltips/squad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/versusAISquad/body"
+msgstr ""
+"Стварэнне фармавання з 2-3 гульцоў для супольнай гульні ў баях рэжыму "
+"«Палігон»."
+
+msgid "headerButton/tooltips/versusAISquad/header"
+msgstr "Звяз"
+
+msgid "members/card/connectionLost"
+msgstr "Злучэнне спынена"
+
+msgid "members/card/disabled"
+msgstr "У рэжыме даступныя толькі звязы з двух гульцоў"
+
+msgid "members/card/disabledVertical"
+msgstr "Недаступна для гэтага рэжыму"
+
+msgid "members/card/empty"
+msgstr "Пусты слот"
+
+msgid "members/card/inBattle"
+msgstr "У баі"
+
+msgid "members/card/muted/caption"
+msgstr "Гук адключаны"
+
+msgid "members/card/muted/description"
+msgstr "Націсніце правую кнопку мышы, каб чуць гэтага гульца."
+
+msgid "members/card/notReady"
+msgstr "Не гатовы"
+
+msgid "members/card/searching"
+msgstr "Пошук гульцоў..."
+
+msgid "members/card/selectVehicle"
+msgstr "Выберыце машыну %(level)s узроўню"
+
+msgid "members/chat/chatName"
+msgstr "Канал сувязі:"
+
+msgid "members/chat/sendMessage/body"
+msgstr "Націсніце, каб адправіць паведамленне ў канал сувязі."
+
+msgid "members/chat/sendMessage/header"
+msgstr "Адправіць паведамленне"
+
+msgid "members/footer/getNotReady"
+msgstr "Націсніце, каб скасаваць гатоўнасць."
+
+msgid "members/footer/getReady"
+msgstr "Пацвердзіце гатоўнасць да бою."
+
+msgid "members/footer/invalidVehicleLevel"
+msgstr "Неадпаведны ўзровень"
+
+msgid "members/footer/scoutForbidden"
+msgstr "Немагчыма ўзяць лёгкі танк у звяз"
+
+msgid "members/footer/scoutFull"
+msgstr "У звязе ўжо максімум лёгкіх танкаў"
+
+msgid "members/footer/spgForbidden"
+msgstr "Немагчыма ўзяць САУ ў звяз"
+
+msgid "members/footer/spgFull"
+msgstr "У звязе ўжо максімум САУ"
+
+msgid "members/footer/vehicles/differentLevels"
+msgstr "Штраф да досведу з-за памылковага складу звязу!"
+
+msgid "members/header/battle_royal"
+msgstr ": Сталёвы паляўнічы"
+
+msgid "members/header/comp7"
+msgstr ": «Націск»"
+
+msgid "members/header/epic"
+msgstr ": Лінія фронту"
+
+msgid "members/header/event"
+msgstr ": Событие"
+
+msgid "members/header/mapbox"
+msgstr ": Разведка боем"
+
+msgid "members/header/noBonusPlaceholder/tooltip/body"
+msgstr "+++NO BONUS TOOLTIP BODY PLACEHOLDER+++"
+
+msgid "members/header/noBonusPlaceholder/tooltip/header"
+msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
+
+msgid "members/header/squad"
+msgstr ": Выпадковы бой"
+
+msgid "members/header/tooltip/comp7/body"
+msgstr ""
+"Розніца ў ачках рэйтынгу паміж гульцамі звязу не павінна перавышаць "
+"%(rating)s."
+
+msgid "members/header/tooltip/comp7/dropdown"
+msgstr "Толькі камандзір звязу можа мяняць ліміт гульцоў."
+
+msgid "members/header/tooltip/comp7/dropdown/item"
+msgstr ""
+"Нельга змяніць. Ліміт гульцоў не можа быць меншы за іх цяперашнюю колькасць."
+
+msgid "members/header/tooltip/comp7/header"
+msgstr "Правілы фармавання звязу"
+
+msgid "members/header/tooltip/epic/body"
+msgstr ""
+"Рэжым «Лінія фронту» даступны\n"
+"толькі для тэхнікі %(level)s узроўню."
+
+msgid "members/header/tooltip/epic/header"
+msgstr "Правілы фармавання звязу"
+
+msgid "members/header/tooltip/event/body"
+msgstr "Взвод должен состоять из трёх специальных машин режима."
+
+msgid "members/header/tooltip/event/header"
+msgstr "Правілы фармавання звязу"
+
+msgid "members/header/tooltip/standard/body"
+msgstr "Звяз павінен складацца з машын аднаго ўзроўню."
+
+msgid "members/header/tooltip/standard/header"
+msgstr "Правілы фармавання звязу"
+
+msgid "searching/estimated/caption"
+msgstr "Разліковы час"
+
+msgid "searching/estimated/lessThan"
+msgstr "менш за %(seconds)d с"
+
+msgid "searching/estimated/moreThan"
+msgstr "больш за %(seconds)d с"
+
+msgid "searching/expanded/body"
+msgstr ""
+"Пошук паводле вашых параметраў не даў вынікаў.\n"
+"Параметры былі пашыраны для пошуку іншых узроўняў тэхнікі."
+
+msgid "searching/expanded/header"
+msgstr "Параметры пошуку пашыраны"
+
+msgid "searching/lookingFor"
+msgstr "Параметр пошуку:"
+
+msgid "searching/playersInQueue"
+msgstr "Гульцоў у чарзе"
+
+msgid "searching/state"
+msgstr "Пошук:"
+
+msgid "settings/tiers"
+msgstr "Узровень тэхнікі"
+
+msgid "settings/voice"
+msgstr "Гульцы з галасавой сувяззю"
+
+msgid "squad"
+msgstr "Звяз"

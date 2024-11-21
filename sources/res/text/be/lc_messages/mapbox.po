@@ -1,0 +1,785 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "awardsView/button"
+msgstr "Так!"
+
+msgid "awardsView/pick"
+msgstr "Да выбару"
+
+msgid "awardsView/subTitle"
+msgstr "ПРАВЕДЗЕНА БАЁЎ: {number}"
+
+msgid "awardsView/title"
+msgstr "РАЗВЕДКА БОЕМ"
+
+msgid "buttonDisable/tooltip"
+msgstr "Недаступна"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s–%(end)s"
+
+msgid "entryPoint/endDateText"
+msgstr "Да {day} {month}"
+
+msgid "entryPoint/statusText"
+msgstr "Да {endDate}"
+
+msgid "entryPoint/title"
+msgstr "РАЗВЕДКА БОЕМ"
+
+msgid "headerButtons/fightBtn/tooltip/disabled/header"
+msgstr "Немагчыма ўступіць у бой"
+
+msgid "headerButtons/fightBtn/tooltip/disabled/text"
+msgstr ""
+"На гэтым серверы дзейнічае рэжым спынення агню. Перайдзіце на іншы сервер."
+
+msgid "headerButtons/fightBtn/tooltip/mapboxVehLevel/body"
+msgstr "Уступіць у бой можна толькі на %(levelSubStr)s"
+
+msgid "headerButtons/fightBtn/tooltip/mapboxVehLevel/header"
+msgstr "Неадпаведны ўзровень тэхнікі"
+
+msgid "headerButtons/fightBtn/tooltip/mapboxVehLevel/levelSubStr"
+msgstr "тэхніцы %(levels)s узроўняў."
+
+msgid "intro/button"
+msgstr "Так!"
+
+msgid "intro/interviewInfoDescription"
+msgstr "intro/interviewInfoDescription"
+
+msgid "intro/interviewInfoTitle"
+msgstr "intro/interviewInfoTitle"
+
+msgid "intro/modeInfoDescription"
+msgstr "intro/modeInfoDescription"
+
+msgid "intro/modeInfoTitle"
+msgstr "intro/modeInfoTitle"
+
+msgid "intro/startEvent"
+msgstr "Да пачатку падзеі: "
+
+msgid "intro/taskInfoDescription"
+msgstr "intro/taskInfoDescription"
+
+msgid "intro/taskInfoTitle"
+msgstr "intro/taskInfoTitle"
+
+msgid "intro/time/period/day"
+msgstr "{day} сут"
+
+msgid "intro/time/period/dayHour"
+msgstr "{day} сут {hours} гадз"
+
+msgid "intro/time/period/hourMinute"
+msgstr "{hours} гадз {min} хв"
+
+msgid "intro/time/period/minute"
+msgstr "{min} хв"
+
+msgid "intro/title"
+msgstr "РАЗВЕДКА БОЕМ"
+
+msgid "mapboxCarousel/lockedTooltip/vehClass/body"
+msgstr "%(forbiddenClass)s не можа ўдзельнічаць у рэжыме «Разведка боем»."
+
+msgid "mapboxCarousel/lockedTooltip/vehClass/header"
+msgstr "Непрыдатны тып тэхнікі"
+
+msgid "mapboxCarousel/lockedTooltip/vehLvl/body"
+msgstr ""
+"Выберыце машыну %(levelSubStr)s узроўню для ўдзелу ў рэжыме «Разведка боем»."
+
+msgid "mapboxCarousel/lockedTooltip/vehLvl/header"
+msgstr "Неадпаведны ўзровень тэхнікі"
+
+msgid "mapboxCarousel/lockedTooltip/vehLvl/levelSubStr"
+msgstr "машыне %(levels)s узроўню"
+
+msgid "mapboxCarousel/lockedTooltip/vehType/body"
+msgstr "На %(forbiddenType)s нельга ўдзельнічаць у рэжыме «Разведка боем»."
+
+msgid "mapboxCarousel/lockedTooltip/vehType/header"
+msgstr "Непрыдатная машына"
+
+msgid "mapboxTab"
+msgstr "Разведка боем"
+
+msgid "primeTimeView/endOfCycle"
+msgstr "Этап на серверы %(server)s завяршыўся"
+
+msgid "primeTimeView/serverTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі будуць даступныя яшчэ %(time)s"
+
+msgid "primeTimeView/serverUnavailableTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі стануць даступнымі праз %(time)s"
+
+msgid "primeTimeView/status/allServersDisabled"
+msgstr "Рэжым спынення агню на ўсіх серверах"
+
+msgid "primeTimeView/status/disableFirst"
+msgstr "Рэжым недаступны на серверы %(server)s"
+
+msgid "primeTimeView/status/primeIsAvailable"
+msgstr "Баі на серверы %(server)s будуць даступныя яшчэ %(time)s"
+
+msgid "primeTimeView/status/primeWillBeAvailable"
+msgstr "Баі на серверы %(server)s пачнуцца праз %(time)s"
+
+msgid "primeTimeView/status/seasonDisabled"
+msgstr "Баі ў гэтым рэжыме недаступныя: сезон завершаны."
+
+msgid "primeTimeView/status/untill"
+msgstr "Рэжым спынення агню да %(startTime)s на серверы %(server)s"
+
+msgid "primeTimeView/title"
+msgstr "РАЗВЕДКА БОЕМ"
+
+msgid "primeTimes/availableServer"
+msgstr "Даступны для гульні сервер:"
+
+msgid "primeTimes/availableServers"
+msgstr "Даступныя для гульні серверы:"
+
+msgid "progression/cardTitle/mapBattles"
+msgstr "Правесці баёў"
+
+msgid "progression/cardTitle/rating"
+msgstr "Трапіць у топ-{rating} паводле досведу"
+
+msgid "progression/changeAnswer"
+msgstr "Змяніць адказ"
+
+msgid "progression/chooseBetter"
+msgstr "Прайсці апытанне"
+
+msgid "progression/chooseBetterTooltip"
+msgstr "Каб прайсці апытанне, выканайце пададзеную вышэй умову."
+
+msgid "progression/counter"
+msgstr "%(current) / %(mapBattles)"
+
+msgid "progression/info/description"
+msgstr "progression/info/description"
+
+msgid "progression/info/restart"
+msgstr "Прагрэс з узнагародамі будзе перазапушчаны праз %(leftTime)s"
+
+msgid "progression/info/title"
+msgstr "Баёў праведзена: %(current) / %(total)"
+
+msgid "progression/infoButton"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "progression/map_01_karelia"
+msgstr "КАРЭЛІЯ"
+
+msgid "progression/map_02_malinovka"
+msgstr "МАЛІНАЎКА"
+
+msgid "progression/map_04_himmelsdorf_mb"
+msgstr "ГІМЭЛЬСДОРФ"
+
+msgid "progression/map_05_prohorovka"
+msgstr "ПРОХАРАЎКА"
+
+msgid "progression/map_05_prohorovka_mb"
+msgstr "ПРОХАРАЎКА"
+
+msgid "progression/map_08_ruinberg_mb"
+msgstr "РУІНБЭРГ"
+
+msgid "progression/map_127_japort_mb"
+msgstr "СТАРАЯ ГАВАНЬ"
+
+msgid "progression/map_14_siegfried_line"
+msgstr "ЗАКІНУТЫ ГОРАД"
+
+msgid "progression/map_17_munchen"
+msgstr "ГІМЭЛЬСДОРФ"
+
+msgid "progression/map_18_cliff"
+msgstr "ВЭСТФІЛЬД"
+
+msgid "progression/map_all"
+msgstr "progression/map_all"
+
+msgid "progression/redirect"
+msgstr "Перайсці да рэжыму"
+
+msgid "progression/startInterview"
+msgstr "Прайсці апытанне"
+
+msgid "progression/startInterviewDisableTooltip"
+msgstr "Перавышаны ліміт адначасовых апытанняў. Прайдзіце апытанне пазней."
+
+msgid "progression/startInterviewTooltip"
+msgstr "Каб прайсці апытанне, выканайце пададзеную вышэй умову."
+
+msgid "progression/takeButton"
+msgstr "Забраць"
+
+msgid "progression/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "progression/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "progression/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "progression/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "progression/title"
+msgstr "РАЗВЕДКА БОЕМ"
+
+msgid "progressionError/description/line1"
+msgstr "Ваш прагрэс захаваны, можаце працягваць гуляць."
+
+msgid "progressionError/description/line2"
+msgstr ""
+"Даведацца пра свой прагрэс і прайсці апытанні вы зможаце найбліжэйшым часам."
+
+msgid "progressionError/title"
+msgstr "Інфармацыя пра рэжым «Разведка боем» часова недаступная"
+
+msgid "questFlag/complete"
+msgstr "Усе ўзнагароды атрыманы"
+
+msgid "questFlag/counter"
+msgstr "%(progress)s / %(total)s"
+
+msgid "questFlag/description"
+msgstr ""
+"Гуляйце на %(highlightedText)s, дзяліцеся сваім меркаваннем у апытаннях і "
+"атрымлівайце ўзнагароды."
+
+msgid "questFlag/frozen/header"
+msgstr "Рэжым «Разведка боем» недаступны"
+
+msgid "questFlag/frozen/text"
+msgstr "Баі ў рэжыме «Разведка боем» недаступныя з тэхнічных прычын."
+
+msgid "questFlag/highlightedText"
+msgstr "questFlag/highlightedText"
+
+msgid "questFlag/incomplete"
+msgstr "Баёў да наступнай узнагароды: %(count)s"
+
+msgid "questFlag/progressTitle"
+msgstr "Баёў праведзена:"
+
+msgid "questFlag/surveysTitle"
+msgstr "Апытанняў пройдзена: %(count)s"
+
+msgid "rewardChoice/button/get"
+msgstr "Забраць"
+
+msgid "rewardChoice/button/getAndContinue"
+msgstr "Забраць і прапанаваць"
+
+msgid "rewardChoice/crewBook/rewardDescription"
+msgstr "досведу кожнаму танкісту выбранай машыны %(nation)s"
+
+msgid "rewardChoice/effect"
+msgstr "Эфект:"
+
+msgid "rewardChoice/rewardType/brochure"
+msgstr "Навучальная брашура"
+
+msgid "rewardChoice/rewardType/guide"
+msgstr "Падручнік"
+
+msgid "rewardChoice/subTitle"
+msgstr "ВЫБЕРЫЦЕ ЎЗНАГАРОДУ"
+
+msgid "rewardChoice/title"
+msgstr "РАЗВЕДКА БОЕМ"
+
+msgid "rewardDescription/crewBook"
+msgstr ""
+"{expTagOpen}+%(exp)s{expTagClose} досведу кожнаму танкісту выбранай машыны "
+"%(nation)s"
+
+msgid "selectableCrewbook/brochure"
+msgstr "Навучальная брашура"
+
+msgid "selectableCrewbook/guide"
+msgstr "Падручнік"
+
+msgid "selector/startEvent"
+msgstr "Агляд мап з новымі механікамі пачнецца %(day)s"
+
+msgid "selector/tooltip/body"
+msgstr "Агляд мап з новымі механікамі працягнецца да %(day)s"
+
+msgid "selector/tooltip/title"
+msgstr "Расклад"
+
+msgid "selectorTooltip/tillEnd"
+msgstr "Сезон закончыцца праз:"
+
+msgid "selectorTooltip/timeTable/empty"
+msgstr "—"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "Расклад баёў"
+
+msgid "selectorTooltip/timeTable/today"
+msgstr "Сёння"
+
+msgid "selectorTooltip/timeTable/tomorrow"
+msgstr "Заўтра"
+
+msgid "serverAlertMessage"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "serverAlertMessage/button"
+msgstr "Змяніць сервер"
+
+msgid "survey/backBtn"
+msgstr "Назад"
+
+msgid "survey/dynamicAllMaps/question/q1"
+msgstr "survey/dynamicAllMaps/question/q1"
+
+msgid "survey/dynamicAllMaps/question/q10"
+msgstr "survey/dynamicAllMaps/question/q10"
+
+msgid "survey/dynamicAllMaps/question/q11"
+msgstr "survey/dynamicAllMaps/question/q11"
+
+msgid "survey/dynamicAllMaps/question/q2"
+msgstr "survey/dynamicAllMaps/question/q2"
+
+msgid "survey/dynamicAllMaps/question/q3"
+msgstr "survey/dynamicAllMaps/question/q3"
+
+msgid "survey/dynamicAllMaps/question/q4"
+msgstr "survey/dynamicAllMaps/question/q4"
+
+msgid "survey/dynamicAllMaps/question/q5"
+msgstr "survey/dynamicAllMaps/question/q5"
+
+msgid "survey/dynamicAllMaps/question/q6"
+msgstr "survey/dynamicAllMaps/question/q6"
+
+msgid "survey/dynamicAllMaps/question/q7"
+msgstr "survey/dynamicAllMaps/question/q7"
+
+msgid "survey/dynamicAllMaps/question/q8"
+msgstr "survey/dynamicAllMaps/question/q8"
+
+msgid "survey/dynamicAllMaps/question/q9"
+msgstr "survey/dynamicAllMaps/question/q9"
+
+msgid "survey/dynamicAllMaps/response/q10_1"
+msgstr "survey/dynamicAllMaps/response/q10_1"
+
+msgid "survey/dynamicAllMaps/response/q10_2"
+msgstr "survey/dynamicAllMaps/response/q10_2"
+
+msgid "survey/dynamicAllMaps/response/q10_3"
+msgstr "survey/dynamicAllMaps/response/q10_3"
+
+msgid "survey/dynamicAllMaps/response/q10_4"
+msgstr "survey/dynamicAllMaps/response/q10_4"
+
+msgid "survey/dynamicAllMaps/response/q10_5"
+msgstr "survey/dynamicAllMaps/response/q10_5"
+
+msgid "survey/dynamicAllMaps/response/q11_1"
+msgstr "survey/dynamicAllMaps/response/q11_1"
+
+msgid "survey/dynamicAllMaps/response/q11_2"
+msgstr "survey/dynamicAllMaps/response/q11_2"
+
+msgid "survey/dynamicAllMaps/response/q11_3"
+msgstr "survey/dynamicAllMaps/response/q11_3"
+
+msgid "survey/dynamicAllMaps/response/q11_4"
+msgstr "survey/dynamicAllMaps/response/q11_4"
+
+msgid "survey/dynamicAllMaps/response/q1_1"
+msgstr "survey/dynamicAllMaps/response/q1_1"
+
+msgid "survey/dynamicAllMaps/response/q1_2"
+msgstr "survey/dynamicAllMaps/response/q1_2"
+
+msgid "survey/dynamicAllMaps/response/q1_3"
+msgstr "survey/dynamicAllMaps/response/q1_3"
+
+msgid "survey/dynamicAllMaps/response/q2_1"
+msgstr "survey/dynamicAllMaps/response/q2_1"
+
+msgid "survey/dynamicAllMaps/response/q2_2"
+msgstr "survey/dynamicAllMaps/response/q2_2"
+
+msgid "survey/dynamicAllMaps/response/q2_3"
+msgstr "survey/dynamicAllMaps/response/q2_3"
+
+msgid "survey/dynamicAllMaps/response/q2_4"
+msgstr "survey/dynamicAllMaps/response/q2_4"
+
+msgid "survey/dynamicAllMaps/response/q2_5"
+msgstr "survey/dynamicAllMaps/response/q2_5"
+
+msgid "survey/dynamicAllMaps/response/q3_1"
+msgstr "survey/dynamicAllMaps/response/q3_1"
+
+msgid "survey/dynamicAllMaps/response/q3_2"
+msgstr "survey/dynamicAllMaps/response/q3_2"
+
+msgid "survey/dynamicAllMaps/response/q3_3"
+msgstr "survey/dynamicAllMaps/response/q3_3"
+
+msgid "survey/dynamicAllMaps/response/q3_4"
+msgstr "survey/dynamicAllMaps/response/q3_4"
+
+msgid "survey/dynamicAllMaps/response/q4_1"
+msgstr "survey/dynamicAllMaps/response/q4_1"
+
+msgid "survey/dynamicAllMaps/response/q4_2"
+msgstr "survey/dynamicAllMaps/response/q4_2"
+
+msgid "survey/dynamicAllMaps/response/q4_3"
+msgstr "survey/dynamicAllMaps/response/q4_3"
+
+msgid "survey/dynamicAllMaps/response/q4_4"
+msgstr "survey/dynamicAllMaps/response/q4_4"
+
+msgid "survey/dynamicAllMaps/response/q5_1"
+msgstr "survey/dynamicAllMaps/response/q5_1"
+
+msgid "survey/dynamicAllMaps/response/q5_2"
+msgstr "survey/dynamicAllMaps/response/q5_2"
+
+msgid "survey/dynamicAllMaps/response/q5_3"
+msgstr "survey/dynamicAllMaps/response/q5_3"
+
+msgid "survey/dynamicAllMaps/response/q5_4"
+msgstr "survey/dynamicAllMaps/response/q5_4"
+
+msgid "survey/dynamicAllMaps/response/q5_5"
+msgstr "survey/dynamicAllMaps/response/q5_5"
+
+msgid "survey/dynamicAllMaps/response/q6_1"
+msgstr "survey/dynamicAllMaps/response/q6_1"
+
+msgid "survey/dynamicAllMaps/response/q6_2"
+msgstr "survey/dynamicAllMaps/response/q6_2"
+
+msgid "survey/dynamicAllMaps/response/q6_3"
+msgstr "survey/dynamicAllMaps/response/q6_3"
+
+msgid "survey/dynamicAllMaps/response/q7_1"
+msgstr "survey/dynamicAllMaps/response/q7_1"
+
+msgid "survey/dynamicAllMaps/response/q7_2"
+msgstr "survey/dynamicAllMaps/response/q7_2"
+
+msgid "survey/dynamicAllMaps/response/q7_3"
+msgstr "survey/dynamicAllMaps/response/q7_3"
+
+msgid "survey/dynamicAllMaps/response/q8_1"
+msgstr "survey/dynamicAllMaps/response/q8_1"
+
+msgid "survey/dynamicAllMaps/response/q8_2"
+msgstr "survey/dynamicAllMaps/response/q8_2"
+
+msgid "survey/dynamicAllMaps/response/q8_3"
+msgstr "survey/dynamicAllMaps/response/q8_3"
+
+msgid "survey/dynamicOneMap/question/option/q6_AT-SPG"
+msgstr "survey/dynamicOneMap/question/option/q6_AT-SPG"
+
+msgid "survey/dynamicOneMap/question/option/q6_SPG"
+msgstr "survey/dynamicOneMap/question/option/q6_SPG"
+
+msgid "survey/dynamicOneMap/question/option/q6_heavyTank"
+msgstr "survey/dynamicOneMap/question/option/q6_heavyTank"
+
+msgid "survey/dynamicOneMap/question/option/q6_lightTank"
+msgstr "survey/dynamicOneMap/question/option/q6_lightTank"
+
+msgid "survey/dynamicOneMap/question/option/q6_mediumTank"
+msgstr "survey/dynamicOneMap/question/option/q6_mediumTank"
+
+msgid "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_1"
+msgstr "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_1"
+
+msgid "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_2"
+msgstr "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_2"
+
+msgid "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_3"
+msgstr "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_3"
+
+msgid "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_4"
+msgstr "survey/dynamicOneMap/question/option/q8_04_himmelsdorf_mb_4"
+
+msgid "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_1"
+msgstr "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_1"
+
+msgid "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_2"
+msgstr "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_2"
+
+msgid "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_3"
+msgstr "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_3"
+
+msgid "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_4"
+msgstr "survey/dynamicOneMap/question/option/q8_05_prohorovka_mb_4"
+
+msgid "survey/dynamicOneMap/question/option/q8_08_ruinberg_mb_1"
+msgstr "survey/dynamicOneMap/question/option/q8_08_ruinberg_mb_1"
+
+msgid "survey/dynamicOneMap/question/option/q8_08_ruinberg_mb_2"
+msgstr "survey/dynamicOneMap/question/option/q8_08_ruinberg_mb_2"
+
+msgid "survey/dynamicOneMap/question/option/q8_08_ruinberg_mb_3"
+msgstr "survey/dynamicOneMap/question/option/q8_08_ruinberg_mb_3"
+
+msgid "survey/dynamicOneMap/question/option/q8_127_japort_mb_1"
+msgstr "survey/dynamicOneMap/question/option/q8_127_japort_mb_1"
+
+msgid "survey/dynamicOneMap/question/option/q8_127_japort_mb_2"
+msgstr "survey/dynamicOneMap/question/option/q8_127_japort_mb_2"
+
+msgid "survey/dynamicOneMap/question/option/q8_127_japort_mb_3"
+msgstr "survey/dynamicOneMap/question/option/q8_127_japort_mb_3"
+
+msgid "survey/dynamicOneMap/question/option/q8_127_japort_mb_4"
+msgstr "survey/dynamicOneMap/question/option/q8_127_japort_mb_4"
+
+msgid "survey/dynamicOneMap/question/q1"
+msgstr "survey/dynamicOneMap/question/q1"
+
+msgid "survey/dynamicOneMap/question/q2"
+msgstr "survey/dynamicOneMap/question/q2"
+
+msgid "survey/dynamicOneMap/question/q3"
+msgstr "survey/dynamicOneMap/question/q3"
+
+msgid "survey/dynamicOneMap/question/q4"
+msgstr "survey/dynamicOneMap/question/q4"
+
+msgid "survey/dynamicOneMap/question/q5"
+msgstr "survey/dynamicOneMap/question/q5"
+
+msgid "survey/dynamicOneMap/question/q6"
+msgstr "survey/dynamicOneMap/question/q6"
+
+msgid "survey/dynamicOneMap/question/q7"
+msgstr "survey/dynamicOneMap/question/q7"
+
+msgid "survey/dynamicOneMap/question/q8"
+msgstr "survey/dynamicOneMap/question/q8"
+
+msgid "survey/dynamicOneMap/question/q9_13"
+msgstr "survey/dynamicOneMap/question/q9_13"
+
+msgid "survey/dynamicOneMap/response/q1_1"
+msgstr "survey/dynamicOneMap/response/q1_1"
+
+msgid "survey/dynamicOneMap/response/q1_2"
+msgstr "survey/dynamicOneMap/response/q1_2"
+
+msgid "survey/dynamicOneMap/response/q1_3"
+msgstr "survey/dynamicOneMap/response/q1_3"
+
+msgid "survey/dynamicOneMap/response/q1_4"
+msgstr "survey/dynamicOneMap/response/q1_4"
+
+msgid "survey/dynamicOneMap/response/q1_5"
+msgstr "survey/dynamicOneMap/response/q1_5"
+
+msgid "survey/dynamicOneMap/response/q2_1"
+msgstr "survey/dynamicOneMap/response/q2_1"
+
+msgid "survey/dynamicOneMap/response/q2_2"
+msgstr "survey/dynamicOneMap/response/q2_2"
+
+msgid "survey/dynamicOneMap/response/q2_3"
+msgstr "survey/dynamicOneMap/response/q2_3"
+
+msgid "survey/dynamicOneMap/response/q2_4"
+msgstr "survey/dynamicOneMap/response/q2_4"
+
+msgid "survey/dynamicOneMap/response/q2_5"
+msgstr "survey/dynamicOneMap/response/q2_5"
+
+msgid "survey/dynamicOneMap/response/q3_1"
+msgstr "survey/dynamicOneMap/response/q3_1"
+
+msgid "survey/dynamicOneMap/response/q3_2"
+msgstr "survey/dynamicOneMap/response/q3_2"
+
+msgid "survey/dynamicOneMap/response/q3_3"
+msgstr "survey/dynamicOneMap/response/q3_3"
+
+msgid "survey/dynamicOneMap/response/q3_4"
+msgstr "survey/dynamicOneMap/response/q3_4"
+
+msgid "survey/dynamicOneMap/response/q4_1"
+msgstr "survey/dynamicOneMap/response/q4_1"
+
+msgid "survey/dynamicOneMap/response/q4_2"
+msgstr "survey/dynamicOneMap/response/q4_2"
+
+msgid "survey/dynamicOneMap/response/q4_3"
+msgstr "survey/dynamicOneMap/response/q4_3"
+
+msgid "survey/dynamicOneMap/response/q4_4"
+msgstr "survey/dynamicOneMap/response/q4_4"
+
+msgid "survey/dynamicOneMap/response/q5_AT-SPG"
+msgstr "survey/dynamicOneMap/response/q5_AT-SPG"
+
+msgid "survey/dynamicOneMap/response/q5_SPG"
+msgstr "survey/dynamicOneMap/response/q5_SPG"
+
+msgid "survey/dynamicOneMap/response/q5_heavyTank"
+msgstr "survey/dynamicOneMap/response/q5_heavyTank"
+
+msgid "survey/dynamicOneMap/response/q5_lightTank"
+msgstr "survey/dynamicOneMap/response/q5_lightTank"
+
+msgid "survey/dynamicOneMap/response/q5_mediumTank"
+msgstr "survey/dynamicOneMap/response/q5_mediumTank"
+
+msgid "survey/dynamicOneMap/response/q5_unknown"
+msgstr "survey/dynamicOneMap/response/q5_unknown"
+
+msgid "survey/dynamicOneMap/response/q6_1"
+msgstr "survey/dynamicOneMap/response/q6_1"
+
+msgid "survey/dynamicOneMap/response/q6_2"
+msgstr "survey/dynamicOneMap/response/q6_2"
+
+msgid "survey/dynamicOneMap/response/q6_3"
+msgstr "survey/dynamicOneMap/response/q6_3"
+
+msgid "survey/dynamicOneMap/response/q6_4"
+msgstr "survey/dynamicOneMap/response/q6_4"
+
+msgid "survey/dynamicOneMap/response/q7_1"
+msgstr "survey/dynamicOneMap/response/q7_1"
+
+msgid "survey/dynamicOneMap/response/q7_2"
+msgstr "survey/dynamicOneMap/response/q7_2"
+
+msgid "survey/dynamicOneMap/response/q7_3"
+msgstr "survey/dynamicOneMap/response/q7_3"
+
+msgid "survey/dynamicOneMap/response/q7_4"
+msgstr "survey/dynamicOneMap/response/q7_4"
+
+msgid "survey/dynamicOneMap/response/q7_5"
+msgstr "survey/dynamicOneMap/response/q7_5"
+
+msgid "survey/dynamicOneMap/response/q8_1"
+msgstr "survey/dynamicOneMap/response/q8_1"
+
+msgid "survey/dynamicOneMap/response/q8_2"
+msgstr "survey/dynamicOneMap/response/q8_2"
+
+msgid "survey/dynamicOneMap/response/q8_3"
+msgstr "survey/dynamicOneMap/response/q8_3"
+
+msgid "survey/dynamicOneMap/response/q9_13_1"
+msgstr "survey/dynamicOneMap/response/q9_13_1"
+
+msgid "survey/dynamicOneMap/response/q9_13_10"
+msgstr "survey/dynamicOneMap/response/q9_13_10"
+
+msgid "survey/dynamicOneMap/response/q9_13_11"
+msgstr "survey/dynamicOneMap/response/q9_13_11"
+
+msgid "survey/dynamicOneMap/response/q9_13_12"
+msgstr "survey/dynamicOneMap/response/q9_13_12"
+
+msgid "survey/dynamicOneMap/response/q9_13_2"
+msgstr "survey/dynamicOneMap/response/q9_13_2"
+
+msgid "survey/dynamicOneMap/response/q9_13_3"
+msgstr "survey/dynamicOneMap/response/q9_13_3"
+
+msgid "survey/dynamicOneMap/response/q9_13_4"
+msgstr "survey/dynamicOneMap/response/q9_13_4"
+
+msgid "survey/dynamicOneMap/response/q9_13_5"
+msgstr "survey/dynamicOneMap/response/q9_13_5"
+
+msgid "survey/dynamicOneMap/response/q9_13_6"
+msgstr "survey/dynamicOneMap/response/q9_13_6"
+
+msgid "survey/dynamicOneMap/response/q9_13_7"
+msgstr "survey/dynamicOneMap/response/q9_13_7"
+
+msgid "survey/dynamicOneMap/response/q9_13_8"
+msgstr "survey/dynamicOneMap/response/q9_13_8"
+
+msgid "survey/dynamicOneMap/response/q9_13_9"
+msgstr "survey/dynamicOneMap/response/q9_13_9"
+
+msgid "survey/listSeparator"
+msgstr ", "
+
+msgid "survey/nextBtn"
+msgstr "Далей"
+
+msgid "survey/percentage"
+msgstr "%(percent)s%"
+
+msgid "survey/readyBtn"
+msgstr "Так!"
+
+msgid "survey/required"
+msgstr "Адкажыце на пытанне, каб працягнуць."
+
+msgid "survey/subTitle"
+msgstr "survey/subTitle"
+
+msgid "survey/template/final/title"
+msgstr "Дзякуем за ўдзел у апытанні!"
+
+msgid "survey/template/mapInteractive/hint0"
+msgstr "ВЫБЕРЫЦЕ ПАЗІЦЫЮ, НАЦІСНУЎШЫ НА МАПУ"
+
+msgid "survey/template/mapInteractive/hint1"
+msgstr "МАКСІМУМ ТРЫ ПАЗІЦЫІ НА МАПЕ"
+
+msgid "survey/template/mapInteractive/point/description"
+msgstr "Падрабязнае апісанне праблемы (да %(maxLength)s знакаў)"
+
+msgid "survey/template/mapInteractive/point/title"
+msgstr "Пазіцыя"
+
+msgid "survey/template/mapInteractive/point/tooltip"
+msgstr "Выдаліць пазіцыю"
+
+msgid "survey/template/opened/description"
+msgstr "survey/template/opened/description"
+
+msgid "survey/title/common"
+msgstr "survey/title/common"
+
+msgid "survey/title/map"
+msgstr "Ацэнка мапы «%(map)s»"

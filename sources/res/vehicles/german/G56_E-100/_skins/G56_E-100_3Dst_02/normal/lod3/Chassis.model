@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/normal/lod4/Chassis</parent>
+	<extent>192</extent>
+	<nodefullVisual>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/normal/lod3/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-2.047272 -0.000000 -3.521741</min>
+		<max>2.047272 1.142317 4.097938</max>
+	</visibilityBox>
+</root>

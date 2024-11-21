@@ -3,10 +3,9 @@ package net.wg.gui.battle.windows
    import flash.events.Event;
    import flash.geom.Point;
    import flash.text.TextField;
+   import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Values;
-   import net.wg.data.constants.generated.BATTLEATLAS;
-   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.windows.components.IngameDetailsRoleActionContainer;
    import net.wg.gui.battle.windows.vo.IngameDetailsPageVO;
    import net.wg.gui.battle.windows.vo.IngameDetailsRoleActionVO;
@@ -74,9 +73,9 @@ package net.wg.gui.battle.windows
       private static const ROLE_PADDING_BOTTOM:int = 22;
        
       
-      public var background:BattleAtlasSprite = null;
+      public var background:Image = null;
       
-      public var pgBackground:BattleAtlasSprite = null;
+      public var pgBackground:Image = null;
       
       public var arrowLeftBtn:PaginatorArrowBtn = null;
       
@@ -129,8 +128,10 @@ package net.wg.gui.battle.windows
       override protected function configUI() : void
       {
          super.configUI();
-         this.background.imageName = BATTLEATLAS.HELP_WINDOW_BG;
-         this.pgBackground.imageName = BATTLEATLAS.HELP_WINDOW_BOTTOM_BG;
+         this.background.cacheType = ImageCacheTypes.NOT_USE_CACHE;
+         this.pgBackground.cacheType = ImageCacheTypes.NOT_USE_CACHE;
+         this.background.source = RES_ICONS.MAPS_ICONS_BATTLEHELP_WINDOW_HELPWINDOW_BG;
+         this.pgBackground.source = RES_ICONS.MAPS_ICONS_BATTLEHELP_WINDOW_HELPWINDOW_BOTTOM_BG;
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
          this.btnClose.label = INGAME_HELP.BATTLECONTROLS_CLOSEBTNLABEL;
@@ -203,7 +204,9 @@ package net.wg.gui.battle.windows
          this.btnClose.removeEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
          this._pageController.removeEventListener(Event.CHANGE,this.onPageControllerChangeHandler);
          window.removeEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
+         this.background.dispose();
          this.background = null;
+         this.pgBackground.dispose();
          this.pgBackground = null;
          this.pageBg.dispose();
          this.pageBg = null;
@@ -269,7 +272,7 @@ package net.wg.gui.battle.windows
          this._pageController.setPositions(_loc1_);
       }
       
-      protected function updatePageLayout() : void
+      private function updatePageLayout() : void
       {
          App.utils.commons.updateTextFieldSize(this.description,false,true);
          var _loc1_:int = WINDOW_HEIGHT - FOOTER_HEIGHT - DESCRIPTION_PADDING_BOTTOM;

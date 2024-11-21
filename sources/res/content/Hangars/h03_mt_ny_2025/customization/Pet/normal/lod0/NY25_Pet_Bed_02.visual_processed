@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>-0.002383 0.999997 0.000000</row0>
+				<row1>0.999997 0.002383 -0.000000</row1>
+				<row2>-0.000000 -0.000000 -1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Main</identifier>
+				<transform>
+					<row0>-0.002383 0.999997 0.000000</row0>
+					<row1>0.999997 0.002383 -0.000000</row1>
+					<row2>-0.000000 -0.000000 -1.000000</row2>
+					<row3>0.211625 -0.000231 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Main_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 -0.000000 -1.000000</row2>
+						<row3>0.000736 -0.211624 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Main_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Bed_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Bed_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Pet/NY25_Pet_Bed_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.006316 0.241621 -0.151316</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.353762 -0.000000 -0.456645</min>
+		<max>0.366394 0.483242 0.759277</max>
+	</boundingBox>
+	<geometrySize>76976</geometrySize>
+	<minUVDensity>0.029739</minUVDensity>
+</root>

@@ -1,0 +1,475 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "about/header"
+msgstr "Пра Баявы пропуск"
+
+msgid "about/position/header"
+msgstr "Размеркаванне ачкоў Баявога пропуска"
+
+msgid "about/position/text"
+msgstr ""
+"Па выніках кожнага бою вы атрымаеце ачкі Баявога пропуска ў адпаведнасці з "
+"занятай пазіцыяй. За дасягненне ўзроўняў фронту вы будзеце здабываць "
+"дадатковыя ачкі Баявога пропуска."
+
+msgid "about/scores/header"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "about/scores/text"
+msgstr ""
+"Адмысловая валюта Баявога пропуска, якую можна здабыць у Выпадковых баях і "
+"на Лініі фронту. Ачкі Баявога пропуска выдаюцца за дасягненне ўзроўняў "
+"фронту і за пазіцыю, занятую гульцом па выніках бою. Тэхніка Лініі фронту не"
+" мае ліміту ачкоў."
+
+msgid "about/scoresTable/loseHeader"
+msgstr "Паражэнне"
+
+msgid "about/scoresTable/topCell"
+msgstr "Топ-%(top)s паводле досведу"
+
+msgid "about/scoresTable/winHeader"
+msgstr "Перамога"
+
+msgid "about/text"
+msgstr ""
+"Баявы пропуск — працяглая падзея, у межах якой гулец прасоўваецца ад этапу "
+"да этапу, здабываючы ачкі Баявога пропуска. За праходжанне кожнага этапу "
+"гулец атрымлівае каштоўныя прызы. За праходжанне некаторых этапаў гулец можа"
+" здабыць жэтоны Баявога пропуска — спецыяльную валюту, за якую можна купіць "
+"унікальную тэхніку і іншыя каштоўныя прызы ў адмысловым раздзеле Крамы."
+
+msgid "addons/cellRent/header"
+msgstr "Пракат тэхнікі"
+
+msgid "addons/cellRent/text"
+msgstr ""
+"Для пракату за крэдыты даступна некалькі розных машын %(vehiclesLevel)s "
+"узроўню. На іх можна пераводзіць экіпаж без штрафу і перавучвання з тэхнікі "
+"той жа дзяржавы і тыпу."
+
+msgid "addons/cellRent/textUnlockable"
+msgstr ""
+"Для пракату за крэдыты даступна некалькі розных машын як "
+"%(vehiclesLevelFrom)s, так і %(vehiclesLevelTo)s&zwnbsp; узроўняў. На іх "
+"можна пераводзіць экіпаж без штрафу і перавучвання з тэхнікі той жа дзяржавы"
+" і тыпу."
+
+msgid "addons/cellSpectator/header"
+msgstr "Рэжым назіральніка"
+
+msgid "addons/cellSpectator/text"
+msgstr ""
+"Выкарысталі ўсю сваю тэхніку? Дачакайцеся яе з'яўлення ў рэжыме "
+"назіральніка, які дазволіць вам вывучыць поле бою і выпрацаваць план "
+"далейшых дзеянняў."
+
+msgid "addons/cellTime/header"
+msgstr "Дадатковы час"
+
+msgid "addons/cellTime/text"
+msgstr ""
+"Калі час бою скончыўся, але вы ўсё яшчэ захопліваеце базу, ваша каманда "
+"атрымае дадатковы час на яе захоп. Калі каманда абаронцаў збівае захоп, "
+"дадатковы час анулюецца."
+
+msgid "addons/header"
+msgstr "Дадаткова"
+
+msgid "levelUp/sectionHeader"
+msgstr "Машыны %(level)s узроўню"
+
+msgid "levelUp/text"
+msgstr ""
+"Увайсці ў бой па-ранейшаму можна толькі на машынах %(vehiclesLevelFrom)s "
+"узроўню, але падрыхтаваць у Гаражы можна і машыны %(vehiclesLevelTo)s "
+"узроўню. Пры захопе любой базы 2-й лініі (D, E, F) у абедзвюх камандаў "
+"з'явіцца магчымасць уступіць у бой на тэхніцы %(vehiclesLevelTo)s узроўню."
+
+msgid "main/cellDuration/header"
+msgstr "Працягласць"
+
+msgid "main/cellDuration/text"
+msgstr ""
+"Лінія фронту будзе працягвацца %(days)s. Дата наступнага запуску будзе "
+"абвешчана асобна."
+
+msgid "main/cellFrontline/header"
+msgstr "Лінія фронту"
+
+msgid "main/cellFrontline/text/oneLevel"
+msgstr ""
+"Маштабныя баталіі 30х30 на тэхніцы %(vehicleLevel)s узроўню на мапах "
+"«Нармандыя», «Крафтвэрк», «Фата-моргана». Мэта атакоўцаў — знішчыць 3 з 5 "
+"буйнакаліберных гармат, мэта абаронцаў — утрымаць гэтыя аб'екты."
+
+msgid "main/cellFrontline/text/someLevels"
+msgstr ""
+"Маштабныя баталіі 30х30 на тэхніцы %(vehiclesLevelFrom)s - "
+"%(vehiclesLevelTo)s узроўняў на мапах «Нармандыя», «Крафтвэрк», «Фата-"
+"моргана». Мэта атакоўцаў — знішчыць 3 з 5 буйнакаліберных гармат, мэта "
+"абаронцаў — утрымаць гэтыя аб'екты."
+
+msgid "main/cellLevelUnlockable/header"
+msgstr "Тэхніка %(unlockableInBattleVehicleLevel)s узроўню"
+
+msgid "main/cellLevelUnlockable/text"
+msgstr ""
+"Пасля захопу адной з баз другой лініі (D, E вбо F) акдрываецца магчымасць "
+"уступіць у бой на машынах %(unlockableInBattleVehicleLevel)s узроўню."
+
+msgid "main/cellLevels/header"
+msgstr "Тэхніка %(vehiclesLevel)s узроўню"
+
+msgid "main/cellLevels/text"
+msgstr ""
+"Для ўступлення ў бой прыдатная толькі тэхніка %(vehiclesLevel)s узроўню."
+
+msgid "main/cellPass/header"
+msgstr "Баявы пропуск"
+
+msgid "main/cellPass/text"
+msgstr ""
+"Лінія фронту — выдатная магчымасць здабываць ачкі Баявога пропуска за ўдзел "
+"у баях і атрыманне ўзроўняў фронту."
+
+msgid "main/cellRandomReserves/header"
+msgstr "?empty?"
+
+msgid "main/cellRandomReserves/text"
+msgstr "?empty?"
+
+msgid "main/cellReserves/header"
+msgstr "Катэгорыі баявых рэзерваў"
+
+msgid "main/cellReserves/text"
+msgstr ""
+"Ёсць тры катэгорыі рэзерваў, кожная з якіх прывязана да пэўнага слота. "
+"Парадак адкрыцця і паляпшэння рэзерваў залежыць ад тыпу тэхнікі."
+
+msgid "main/sectionHeader"
+msgstr "Асноўная інфармацыя"
+
+msgid "page/backBtn"
+msgstr "НАЗАД"
+
+msgid "page/headerUpper"
+msgstr "ЛІНІЯ ФРОНТУ"
+
+msgid "progression/levelsSection/experienceText"
+msgstr ""
+"Па выніках бою разам з баявым досведам вам налічваецца і франтавы. Ён "
+"залежыць ад атрыманага звання і выкарыстоўваецца для павышэння ўзроўняў "
+"фронту. Усяго такіх узроўняў 20."
+
+msgid "progression/levelsSection/header"
+msgstr "Узроўні фронту"
+
+msgid "progression/levelsSection/rewardsText"
+msgstr ""
+"{whiteSpanish_Start}Узроўні фронту{whiteSpanish_End} прыносяць узнагароды: "
+"ачкі Баявога пропуска, ачкі баявых рэзерваў, боны, настаўленні, бланкі "
+"перападрыхтоўкі і вучэбныя матэрыялы."
+
+msgid "progression/levelsSection/rewardsTextNoBP"
+msgstr ""
+"{whiteSpanish_Start}Узроўні фронту{whiteSpanish_End} прыносяць узнагароды: "
+"ачкі баявых рэзерваў, боны, настаўленні, бланкі перападрыхтоўкі і вучэбныя "
+"матэрыялы."
+
+msgid "progression/ranksSection/experience"
+msgstr ""
+"{whiteSpanish_Start}Званні{whiteSpanish_End} не толькі паказваюць вашу "
+"эфектыўнасць у канкрэтным баі, але і даюць у выніку бонус да досведу. Гэты "
+"бонус прымяняецца да сумарнага «чыстага» досведу ўсіх вашых машын, якія "
+"ўдзельнічалі ў баі. Па дасягненні вамі або хаўруснікамі звання «генерал» уся"
+" каманда атрымлівае бонус да эфектыўнасці экіпажаў (узровень валодання "
+"асноўнай спецыяльнасцю) ад {brown_Start}1,5%{brown_End} да "
+"{brown_Start}15%{brown_End}"
+
+msgid "progression/ranksSection/header"
+msgstr "Званні"
+
+msgid "progression/ranksSection/text"
+msgstr ""
+"У баі дзейнічае сістэма званняў. Усяго іх шэсць — ад шарагоўца да генерала. "
+"Вы будзеце атрымліваць новыя званні, выконваючы эфектыўныя дзеянні ў баі "
+"(захоп або ўтрыманне баз, знішчэнне цэляў) і здабываючы досвед. Улічваецца "
+"сумарны досвед, здабыты вамі на ўсіх машынах, якія ўдзельнічалі ў баі."
+
+msgid "progression/ranksTable/bonusCell"
+msgstr "Бонус да баявога досведу"
+
+msgid "progression/ranksTable/captain"
+msgstr "Капітан"
+
+msgid "progression/ranksTable/crewBonusCell"
+msgstr "Бонус да эфектыўнасці экіпажа"
+
+msgid "progression/ranksTable/frontExperienceCell"
+msgstr "Франтавы досвед"
+
+msgid "progression/ranksTable/general"
+msgstr "Генерал"
+
+msgid "progression/ranksTable/lieutenant"
+msgstr "Лейтэнант"
+
+msgid "progression/ranksTable/major"
+msgstr "Маёр"
+
+msgid "progression/ranksTable/private"
+msgstr "Шараговец"
+
+msgid "progression/ranksTable/sergeant"
+msgstr "Сяржант"
+
+msgid "progression/sectionHeader"
+msgstr "Прагрэсія Лініі фронту"
+
+msgid "progression/text"
+msgstr ""
+"Пры гульні ў рэжыме вы будзеце атрымліваць званні, прасоўваючыся па "
+"прагрэсіі Лініі фронту, і здабываць узнагароды."
+
+msgid "randomReserves/sectionHeader"
+msgstr "?empty?"
+
+msgid "randomReserves/text"
+msgstr "?empty?"
+
+msgid "reserveCategories/categories/additional"
+msgstr "Дадатковы"
+
+msgid "reserveCategories/categories/cell_1"
+msgstr "?empty?"
+
+msgid "reserveCategories/categories/cell_2"
+msgstr "?empty?"
+
+msgid "reserveCategories/categories/cell_3"
+msgstr "?empty?"
+
+msgid "reserveCategories/categories/main"
+msgstr "Асноўны"
+
+msgid "reserveCategories/categories/support"
+msgstr "Дапаможны"
+
+msgid "reserveCategories/config/header"
+msgstr "Канфігурацыі рэзерваў"
+
+msgid "reserveCategories/config/text"
+msgstr ""
+"Для кожнага тыпу тэхнікі даступныя ўсе тры слоты баявых рэзерваў, аднак "
+"паслядоўнасць іх адкрыцця адрозніваецца. У Гаражы вы можаце падрыхтаваць "
+"патрэбныя рэзервы, але пастаўцеся да гэтага разважна."
+
+msgid "reserveCategories/config/vehicles/destroyer"
+msgstr "СТ-САУ"
+
+msgid "reserveCategories/config/vehicles/heavy"
+msgstr "Цяжкія танкі"
+
+msgid "reserveCategories/config/vehicles/light"
+msgstr "Лёгкія танкі"
+
+msgid "reserveCategories/config/vehicles/middle"
+msgstr "Сярэднія танкі"
+
+msgid "reserveCategories/config/vehicles/selfPropelled"
+msgstr "САУ"
+
+msgid "reserveCategories/levels/header"
+msgstr "Парадак разблакавання слотаў і паляпшэння рэзерваў"
+
+msgid "reserveCategories/levels/text"
+msgstr ""
+"Рэзервы або слоты будуць адкрывацца ў баі па меры атрымання званняў. "
+"Паслядоўнасць іх разблакавання і паляпшэння залежыць ад сцэнарыя бою. "
+"Асноўны рэзерв або слот для ўсталявання даступны адразу, а астатнія "
+"адкрываюцца па дасягненні званняў «сяржант» і «лейтэнант». Пры атрыманні "
+"званняў «капітан» і «маёр» усе тры рэзервы будуць узмацняцца."
+
+msgid "reserveCategories/progression/tableCell"
+msgstr "{whiteSpanish_Start}%(level)s{whiteSpanish_End} узровень"
+
+msgid "reserveCategories/randomReserves/note"
+msgstr "?empty?"
+
+msgid "reserveCategories/ranks/captain"
+msgstr "Капітан"
+
+msgid "reserveCategories/ranks/general"
+msgstr "Генерал"
+
+msgid "reserveCategories/ranks/lieutenant"
+msgstr "Лейтэнант"
+
+msgid "reserveCategories/ranks/major"
+msgstr "Маёр"
+
+msgid "reserveCategories/ranks/sergeant"
+msgstr "Сяржант"
+
+msgid "reserveCategories/ranks/soldier"
+msgstr "Шараговец"
+
+msgid "reserveCategories/sectionHeader"
+msgstr "Катэгорыі баявых рэзерваў"
+
+msgid "reserveCategories/text"
+msgstr ""
+"Рэзервы дзеляцца на тры катэгорыі, па тры ў кожнай. Уваходзячы ў бой, вы "
+"можаце ўсталяваць толькі адзін з рэзерваў катэгорыі ў адпаведны слот."
+
+msgid "reserveCategories/types/firesupport"
+msgstr "Ударныя"
+
+msgid "reserveCategories/types/reconnaissance"
+msgstr "Разведвальныя"
+
+msgid "reserveCategories/types/tactics"
+msgstr "Тактычныя"
+
+msgid "reserves/sectionHeader"
+msgstr "Хуткія рэзервы"
+
+msgid "reserves/sectionInitialTime/header"
+msgstr "Хуткі старт"
+
+msgid "reserves/sectionInitialTime/text"
+msgstr "Час падрыхтоўкі баявых рэзерваў на старце бою скарочаны на 50%."
+
+msgid "reserves/sectionReload/header"
+msgstr "Імгненная гатоўнасць"
+
+msgid "reserves/sectionReload/text"
+msgstr ""
+"Баявыя рэзервы будуць гатовыя да выкарыстання адразу пасля іх разблакавання."
+
+msgid "reserves/sectionSecondBreath/header"
+msgstr "Другое дыханне"
+
+msgid "reserves/sectionSecondBreath/text"
+msgstr ""
+"Час падрыхтоўкі баявых рэзерваў пры вяртанні ў бой на новай машыне скарочаны"
+" на 70%."
+
+msgid "rules/backToFight/header"
+msgstr "Вяртанне ў бой"
+
+msgid "rules/backToFight/text"
+msgstr ""
+"Калі ваша машына выведзеная са строю, выбірайце любую даступную машыну і "
+"вяртайцеся ў бой, каб працягнуць свой шлях да перамогі. Пры вяртанні вы "
+"можаце выбраць адну або некалькі зон (пунктаў) на розных флангах і ў тыле, "
+"што дазволіць эфектыўна планаваць свае далейшыя дзеянні ў баі. Пры гэтым "
+"гульцы каманды, што абараняецца, маюць пашыраны выбар з некалькіх зон для "
+"вяртання глыбока ў тыле, каб у выпадку раптоўнага прарыву мабілізавацца для "
+"абароны буйнакаліберных гармат. Акрамя таго, сістэма мае адмысловую "
+"індыкацыю, якая праінфармуе гульца, калі выбраная зона небяспечная для "
+"высадкі."
+
+msgid "rules/base/header"
+msgstr "Захоп баз"
+
+msgid "rules/base/textBottom"
+msgstr ""
+"Пашкоджанні машыны, якая захоплівае базу, а таксама яе модуляў не збіваюць "
+"захоп, а толькі прыпыняюць яго. Для збіцця захопу неабходна знішчыць машыну "
+"праціўніка або прымусіць яго пакінуць кола захопу. Адбіць цалкам захопленую "
+"базу нельга."
+
+msgid "rules/base/textTop"
+msgstr ""
+"{whiteSpanish_Start}Каманда атакоўцаў{whiteSpanish_End} паслядоўна "
+"захоплівае базы, каб выйсці да асноўных цэляў. Захоп адной базы дадае да "
+"часу бою 2 хвіліны, захоп апошняй базы — 4 хвіліны."
+
+msgid "rules/sectionHeader"
+msgstr "Агульныя правілы гульні"
+
+msgid "rules/service/header"
+msgstr "Зоны абслугоўвання"
+
+msgid "rules/service/text"
+msgstr ""
+"Зоны абслугоўвання аднаўляюць трываласць машын, вяртаюць у строй танкістаў і"
+" папаўняюць боекамплект. Хуткасць папаўнення: 100 адз. трываласці, адзін "
+"танкіст і 10% боекамплекту на секунду."
+
+msgid "rules/weapons/header"
+msgstr "Цэлі: 3 з 5 буйнакаліберных гармат"
+
+msgid "rules/weapons/list/back"
+msgstr ""
+"Кармавая браня: {whiteSpanish_Start}%(backDestructiblesArmor)s "
+"мм.{whiteSpanish_End}"
+
+msgid "rules/weapons/list/roof"
+msgstr ""
+"Дах і лабавая браня {whiteSpanish_Start}непрабіўныя.{whiteSpanish_End}"
+
+msgid "rules/weapons/list/sides"
+msgstr ""
+"Бакавая браня: {whiteSpanish_Start}%(sideDestructiblesArmor)s "
+"мм.{whiteSpanish_End}"
+
+msgid "rules/weapons/list/vulnerable"
+msgstr ""
+"Уразлівыя месцы: {whiteSpanish_Start}%(doorDestructiblesArmor)s мм (дзверы),"
+" %(ventilationDestructiblesArmor)s мм (вентыляцыя).{whiteSpanish_End}"
+
+msgid "rules/weapons/text"
+msgstr ""
+"Асноўнымі цэлямі рэжыму з'яўляюцца пяць гарматных вежаў, размешчаныя ў тыле "
+"абаронцаў. Атакоўцам неабходна разбурыць тры з іх, а абаронцам — абараніць "
+"гарматы."
+
+msgid "subTitle/differentMonth"
+msgstr "з %(from)s %(startMonth)s да %(to)s %(endMonth)s"
+
+msgid "subTitle/differentYears"
+msgstr ""
+"з %(from)s %(startMonth)s %(startYear)s г. да %(to)s %(endMonth)s "
+"%(endYear)s г."
+
+msgid "subTitle/sameMonth"
+msgstr "з %(from)s да %(to)s %(endMonth)s"
+
+msgid "winStrategy/firstLine"
+msgstr ""
+"Квадраты A, B і С {whiteSpanish_Start}на першай лініі{whiteSpanish_End} — "
+"стартавыя пункты для абедзвюх каманд."
+
+msgid "winStrategy/header"
+msgstr "Паспяховая стратэгія"
+
+msgid "winStrategy/mapZones"
+msgstr "Мапа падзеленая на тры гарызантальныя лініі абароны:"
+
+msgid "winStrategy/secondLine"
+msgstr ""
+"Змаганне пераходзіць у квадраты D, E і F {whiteSpanish_Start}на другой "
+"лініі{whiteSpanish_End}, калі захоплены прылеглы квадрат першай лініі."
+
+msgid "winStrategy/thirdLine"
+msgstr ""
+"{whiteSpanish_Start}Трэцяя лінія абароны{whiteSpanish_End} — участак карты, "
+"не падзелены на квадраты, на якім адбываецца фінальная частка бітвы. "
+"Менавіта тут знаходзяцца буйнакаліберныя гарматы, знішчэнне якіх вядзе да "
+"перамогі атакоўцаў. Доступ да трэцяй лініі адкрываецца пры захопе прынамсі "
+"аднаго з квадратаў другой лініі. Калі квадрат страчаны, абаронцы павінны "
+"пакінуць яго за 1 хвіліну, пасля чаго авіяцыя нанясе ўдар па рэшце "
+"абаронцаў. Калі атакоўцы трапляюць у квадрат другой лініі або на трэцюю "
+"лінію, не захапіўшы квадрат на папярэдняй лініі, яны таксама будуць "
+"атакаваныя з паветра."

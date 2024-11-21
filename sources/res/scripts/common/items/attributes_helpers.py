@@ -59,7 +59,6 @@ ALLOWED_STATIC_ATTRS = {
  'turretRotationSpeed',
  'turretRotatorHealthFactor',
  'vehicleByChassisDamageFactor',
- 'discreteDamageFactor',
  'moduleDamageFactor',
  'engineAndFuelTanksDamageFactor'}
 ALLOWED_DYNAMIC_ATTRS = {

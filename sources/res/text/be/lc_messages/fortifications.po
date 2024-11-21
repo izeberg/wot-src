@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ClanListWindow/table/memberName"
+msgstr "Імя"
+
+msgid "ClanListWindow/table/monthMining"
+msgstr "За месяц"
+
+msgid "ClanListWindow/table/role"
+msgstr "Пасада"
+
+msgid "ClanListWindow/table/weekMining"
+msgstr "За тыдзень"
+
+msgid "battleQueue/clanPosition"
+msgstr "Пазіцыя: %(position)s"
+
+msgid "battleQueue/position"
+msgstr "Пазіцыя:"
+
+msgid "battleQueue/searchEnemy"
+msgstr "Падшуканне супраціўніка:"
+
+msgid "battleQueue/waitBattle"
+msgstr "Чаканне бою:"
+
+msgid "battleQueue/yourTeam"
+msgstr "Ваш атрад:"
+
+msgid "disconnected/Warning"
+msgstr "Увага!"
+
+msgid "disconnected/WarningDescriptionCenterUnavailable"
+msgstr "Умацаваны раён часова недаступны. Паспрабуйце яшчэ раз пазней."
+
+msgid "disconnected/WarningDescriptionRoaming"
+msgstr ""
+"У роўмінгу Умацаваны раён недаступны. Каб даступіцца да Умацаванага раёна, "
+"перайдзіце ў свой рэгіён."
+
+msgid "fortBattleRoom/listHeader/clanPlayers"
+msgstr "Члены клана"
+
+msgid "fortBattleRoom/listHeader/legionariesPlayers"
+msgstr "Легіянеры"
+
+msgid "fortVehPopover/btnSave"
+msgstr "Захаваць выбар (%(count)d)"
+
+msgid "inspire/inspired"
+msgstr "Падняцце баявога духу"
+
+msgid "inspire/inspiring"
+msgstr "Падняцце баявога духу"
+
+msgid "mainWindow/maintenance/body"
+msgstr "Выбачайце за нязручнасці."
+
+msgid "mainWindow/maintenance/button"
+msgstr "Абнавіць"
+
+msgid "mainWindow/maintenance/header"
+msgstr "Памылка загрузкі даных"
+
+msgid "orders/ADDITIONAL_BRIEFING_2_0"
+msgstr "Дадатковы інструктаж"
+
+msgid "orders/COMBAT_PAYMENTS_2_0"
+msgstr "Баявыя выплаты"
+
+msgid "orders/MILITARY_EXERCISES_2_0"
+msgstr "Вайсковыя вучэнні"
+
+msgid "orders/TACTICAL_TRAINING_2_0"
+msgstr "Тактычная падрыхтоўка"
+
+msgid "reserves/tooltip/additionalApplyEffect"
+msgstr "Дадатковы эфект"
+
+msgid "reserves/tooltip/applyDescription/artillerySupport"
+msgstr ""
+"Артылерыйская батарэя выконвае залп па ўказанай плошчы ў Вылазках і пры "
+"Наступленнях на 1 бой"
+
+msgid "reserves/tooltip/applyDescription/inspire"
+msgstr ""
+"Дадае бонус да асноўных спецыяльнасцяў і ўсіх навыкаў экіпажа машыны гульца "
+"з Падняццем баявога духу і найбліжэйшых хаўруснікаў у Вылазках і пры "
+"Наступленнях на 1 бой"
+
+msgid "reserves/tooltip/disabledInBattle"
+msgstr "Усталяваць рэзерв можна перад боем"
+
+msgid "reserves/tooltip/disabledRequisition"
+msgstr "Усталяваць рэзерв можна перад Наступленнем"
+
+msgid "reserves/tooltip/empty"
+msgstr "У вас няма рэзерваў, якія можна ўсталяваць"
+
+msgid "reserves/tooltip/inStorage"
+msgstr "%(count)s на Складзе"
+
+msgid "reserves/tooltip/level"
+msgstr "%(level)s узровень"
+
+msgid "reserves/tooltip/mainApplyEffect"
+msgstr "Эфект пры ўжыванні"
+
+msgid "reserves/tooltip/readyToSelect"
+msgstr "Можна ўсталяваць"
+
+msgid "reserves/tooltip/selected"
+msgstr "Усталяваны"
+
+msgid "reserves/tooltip/withPermission"
+msgstr "Націсніце, каб праглядзець спіс рэзерваў, якія можна ўсталяваць."
+
+msgid "reserves/tooltip/withoutPermission"
+msgstr ""
+"Усталяваць рэзерв можа толькі камандзір атрада, які займае пасаду "
+"камандуючага, намесніка камандуючага, афіцэра штаба або камандзіра "
+"падраздзялення."
+
+msgid "roster/clanMembersNotEnough"
+msgstr ""
+"У атрадзе замала членаў клана: %(actualClanMembers)s / %(minClanMembers)s"
+
+msgid "rosterIntroWindow/introView/fortBattles/nextTimeOfBattleSoon"
+msgstr "Бітва пачнецца праз %(nextDate)s хв"
+
+msgid "rosterIntroWindow/introView/fortBattles/unavailable"
+msgstr "Час пачатку будзе ўдакладнены пазней"
+
+msgid "sortie/introView/fortBattles/EndOfBattleSoon"
+msgstr "Да завяршэння: %(nextDate)s"
+
+msgid "sortie/introView/fortBattles/available"
+msgstr "Вылазкі даступныя"
+
+msgid "sortie/introView/fortBattles/nextTimeOfBattle"
+msgstr "Найбліжэйшая бітва адбудзецца %(nextDate)s"
+
+msgid "sortie/introView/fortBattles/nextTimeOfBattleSoon"
+msgstr "Да пачатку: %(nextDate)s"
+
+msgid "sortie/introView/fortBattles/nextTimeOfBattleToday"
+msgstr "Пачатак сёння ў %(nextDate)s"
+
+msgid "sortie/introView/fortBattles/nextTimeOfBattleTomorrow"
+msgstr "Пачатак заўтра ў %(nextDate)s"
+
+msgid "sortie/introView/fortBattles/unavailable"
+msgstr "Час пачатку будзе ўдакладнены пазней"
+
+msgid "sortie/introView/title"
+msgstr "Умацаваны раён: бітвы"
+
+msgid "sortie/listView/enterBtn"
+msgstr "Запісацца"
+
+msgid "sortie/listView/enterText"
+msgstr "Вы можаце запісацца добраахвотнікам"
+
+msgid "sortie/listView/notSelected"
+msgstr ""
+"Выберыце атрад у спісе злева,\n"
+"каб прачытаць падрабязнае апісанне."
+
+msgid "sortie/listView/teamMembers"
+msgstr "Склад: %(current)s / %(max)s"
+
+msgid "sortie/listView/teamVehiclesStub"
+msgstr "Тэхніка:"
+
+msgid "sortie/member/slot_for_legionary"
+msgstr "Легіянер"
+
+msgid "sortie/member/slot_for_legionary_search"
+msgstr "Аўтанабор легіянера"
+
+msgid "sortie/room/candidates"
+msgstr "Добраахвотнікі"
+
+msgid "sortie/room/chat"
+msgstr "Канал сувязі"
+
+msgid "sortie/room/description"
+msgstr ""
+"Сфарміраваны атрад уступае ў бой з выпадковым кланам супраціўніка на "
+"нейтральнай тэрыторыі. Узровень тэхнікі вызначаецца выбраным дывізіёнам."
+
+msgid "sortie/room/fight"
+msgstr "Да бою!"
+
+msgid "sortie/room/inviteFriends"
+msgstr "Запрасіць гульцоў"
+
+msgid "sortie/room/leaveBtn"
+msgstr "ДА ПАДШУКАННЯ АТРАДА"
+
+msgid "sortie/room/level"
+msgstr "%(level)s узровень"
+
+msgid "sortie/room/members"
+msgstr "Склад: %(current)s / %(max)s"
+
+msgid "sortie/room/notReady"
+msgstr "Не гатовы"
+
+msgid "sortie/room/ready"
+msgstr "Гатовы!"
+
+msgid "sortie/room/title"
+msgstr "Атрад"
+
+msgid "sortie/slot/emptySlot"
+msgstr "Вольна"
+
+msgid "sortie/slot/takePlace"
+msgstr "Заняць месца"
+
+msgid "sortie/vehicleSelector/description"
+msgstr ""
+"Выберыце машыну, на якой хочаце ўступіць у бой. Чырвоны індыкатар паказвае, "
+"што тэхніка не гатовая да бою."
+
+msgid "stronghold/teamHeader"
+msgstr "Склад атрада"
+
+msgid "strongholdPopover/commanderHeader"
+msgstr "Выбар тэхнікі для легіянера"
+
+msgid "strongholdPopover/header"
+msgstr "Выбар тэхнікі"
+
+msgid "strongholdSlot/selectedVehiclesCount"
+msgstr "Выбрана машын:"
+
+msgid "strongholdbuilds/direction"
+msgstr "%(direction)s плацдарм хаўруснікаў"
+
+msgid "strongholdbuilds/direction/A"
+msgstr "Паўночны"
+
+msgid "strongholdbuilds/direction/B"
+msgstr "Усходні"
+
+msgid "strongholdbuilds/direction/C"
+msgstr "Паўднёвы"
+
+msgid "strongholdbuilds/direction/D"
+msgstr "Заходні"
+
+msgid "strongholdbuilds/directionEnemy"
+msgstr "Плацдарм супраціўніка"
+
+msgid "strongholdbuilds/mapName"
+msgstr "Мапа: %(mapName)s"
+
+msgid "strongholdbuilds/mapUnknown"
+msgstr "Мапа будзе вызначана ў пачатку Наступлення"
+
+msgid "strongholdbuilds/point1"
+msgstr "Цытадэль"
+
+msgid "strongholdbuilds/point2"
+msgstr "Запасны рубеж"
+
+msgid "strongholdbuilds/point3"
+msgstr "Перадавы рубеж"
+
+msgid "strongholdbuilds/point4"
+msgstr "Перадавы рубеж"
+
+msgid "strongholdbuilds/point5"
+msgstr "Запасны рубеж"
+
+msgid "strongholdbuilds/point6"
+msgstr "Цытадэль"
+
+msgid "strongholdbuilds/rewardFirstTime"
+msgstr ""
+"×%(reward)s за першую перамогу за дзень пры Наступленнях на гэтым плацдарме"
+
+msgid "strongholdbuilds/rewardPoint1"
+msgstr "Цытадэль утрымана, абодва рубяжы страчаны"
+
+msgid "strongholdbuilds/rewardPoint2"
+msgstr "Запасны рубеж утрыманы, перадавы — страчаны"
+
+msgid "strongholdbuilds/rewardPoint3"
+msgstr "Абодва рубяжы ўтрыманы, рубяжы супраціўніка не захоплены"
+
+msgid "strongholdbuilds/rewardPoint4"
+msgstr "Захоплены толькі перадавы рубеж"
+
+msgid "strongholdbuilds/rewardPoint5"
+msgstr "Абодва рубяжы захоплены, Цытадэль — не захоплена"
+
+msgid "strongholdbuilds/rewardPoint6"
+msgstr "Захоплена Цытадэла супраціўніка"
+
+msgid "strongholdbuilds/rewardRequisition"
+msgstr "ад рэзерву Рэквізіцыя"
+
+msgid "strongholdbuilds/totalDescription"
+msgstr "Узнагарода даецца па завяршэнні Наступлення"
+
+msgid "strongholdbuttons/makeInvisible"
+msgstr "Схаваць ад легіянераў"
+
+msgid "strongholdbuttons/makeInvisibleStatus"
+msgstr "Легіянеры бачаць атрад"
+
+msgid "strongholdbuttons/makeVisible"
+msgstr "Паказваць легіянерам"
+
+msgid "strongholdbuttons/makeVisibleStatus"
+msgstr "Легіянеры не бачаць атрада"
+
+msgid "strongholddirection/A"
+msgstr "Паўночнага"
+
+msgid "strongholddirection/B"
+msgstr "Усходняга"
+
+msgid "strongholddirection/C"
+msgstr "Паўднёвага"
+
+msgid "strongholddirection/D"
+msgstr "Заходняга"
+
+msgid "strongholdinfo/sortie"
+msgstr "Вылазка ў %(level)s дывізіёне"
+
+msgid "strongholdinfo/stronghold"
+msgstr "Наступленне з %(direction)s плацдарма"
+
+msgid "strongholdmap/randomMap"
+msgstr "Выпадковая мапа"
+
+msgid "strongholdreserve/boost"
+msgstr "Падняцце баявога духу"
+
+msgid "strongholdreserve/heavyTrucks"
+msgstr "Велікагрузны транспарт"
+
+msgid "strongholdreserve/requisition"
+msgstr "Рэквізіцыя"
+
+msgid "strongholdreserve/support"
+msgstr "Артабстрэл"
+
+msgid "strongholdreserve/tooltip/condition"
+msgstr "У Вылазках і пры Наступленнях на 1 бой"
+
+msgid "strongholdreserve/tooltip/conditionRequisition"
+msgstr "За вынік праведзенага Наступлення"
+
+msgid "strongholdreserve/tooltip/heavytrucksActivation"
+msgstr "Пачынае дзейнічаць ад пачатку бою"
+
+msgid "strongholdreserve/tooltip/requisitionActivation"
+msgstr "Пачынае дзейнічаць ад пачатку Наступлення"
+
+msgid "strongholdreserve/tooltip/supportActivation"
+msgstr "Пачынае дзейнічаць пры выкарыстанні рэзерву ў баі"
+
+msgid "strongholdtable/rating"
+msgstr "Рэйтынг"
+
+msgid "strongholdtable/roster"
+msgstr "Склад"
+
+msgid "strongholdtable/tech"
+msgstr "Тэхніка"
+
+msgid "strongholdtitle/sortie"
+msgstr "Вылазка"
+
+msgid "strongholdtitle/stronghold"
+msgstr "Наступленне з %(direction)s плацдарма"
+
+msgid "strongholdtooltips/crossSwords"
+msgstr ""
+"{HEADER}Мяжа{/HEADER}{BODY}Нейтральная тэрыторыя. Пераможца атакуе рубеж "
+"супраціўніка ў наступным баі. У выпадку нічыёй каманда, якая атакуе, будзе "
+"вызначана выпадковым чынам.{/BODY}"
+
+msgid "strongholdtooltips/fortTitle"
+msgstr "Наступленне з %(direction)s плацдарма"
+
+msgid "strongholdtooltips/hours"
+msgstr "гадз"
+
+msgid "strongholdtooltips/minuts"
+msgstr "хв"
+
+msgid "strongholdtooltips/sortieTitle"
+msgstr "Вылазка ў %(level)s дывізіёне"
+
+msgid "tooltip/vehicleTypes/body"
+msgstr ""
+"Тып машыны, на якой аўтаматычна будзе падшуканы легіянер пасля таго, як вы націснеце на кнопку «Да бою!».\n"
+"\n"
+"Націсніце, каб пацвердзіць або скасаваць выбар гэтага тыпу тэхнікі для легіянера."
+
+msgid "unit/window/willSearchPlayers"
+msgstr "Вольныя месцы зоймуць аўтаматычна падабраныя легіянеры"
