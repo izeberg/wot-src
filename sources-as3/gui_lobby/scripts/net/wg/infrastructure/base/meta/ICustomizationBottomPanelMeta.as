@@ -26,17 +26,17 @@ package net.wg.infrastructure.base.meta
       
       function onItemIsNewAnimationShownS(param1:int) : void;
       
+      function showVideoS() : void;
+      
+      function showVehiclesSideBarS() : void;
+      
       function as_showBill() : void;
       
       function as_hideBill() : void;
       
       function as_setBottomPanelInitData(param1:Object) : void;
       
-      function as_setSwitchersData(param1:Object) : void;
-      
       function as_setBottomPanelTabsData(param1:Object) : void;
-      
-      function as_setBottomPanelTabsPluses(param1:Array) : void;
       
       function as_setCarouselData(param1:Object) : void;
       
@@ -50,7 +50,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setProjectionDecalHintVisibility(param1:Boolean) : void;
       
-      function as_showPopoverBtnIcon(param1:String, param2:String) : void;
+      function as_showPopoverBtn(param1:String, param2:String, param3:String) : void;
       
       function as_getDataProvider() : Object;
       
@@ -62,8 +62,12 @@ package net.wg.infrastructure.base.meta
       
       function as_playFilterBlink() : void;
       
-      function as_carouselFilterMessage(param1:String) : void;
+      function as_updateEscHelpMessage(param1:Boolean) : void;
+      
+      function as_setFilterFallbackData(param1:Object) : void;
       
       function as_setStageSwitcherVisibility(param1:Boolean) : void;
+      
+      function as_setVehiclesSidebarBtnVisibility(param1:Boolean) : void;
    }
 }

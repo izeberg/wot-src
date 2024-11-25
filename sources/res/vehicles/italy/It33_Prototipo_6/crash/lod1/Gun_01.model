@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/italy/It33_Prototipo_6/crash/lod1/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.601036 -0.308198 -1.413767</min>
+		<max>0.600765 0.307778 5.704987</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It33_Prototipo_6/crash/lod2/Gun_01</parent>
+	<extent>64</extent>
+</root>

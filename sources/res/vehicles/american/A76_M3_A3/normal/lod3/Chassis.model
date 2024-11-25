@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A76_M3_A3/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/american/A76_M3_A3/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.110200 0.043587 -1.924503</min>
+		<max>1.110200 1.095545 2.258339</max>
+	</visibilityBox>
+</root>

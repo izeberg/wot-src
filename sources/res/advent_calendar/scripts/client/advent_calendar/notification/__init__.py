@@ -1,0 +1,7 @@
+from advent_calendar.notification.actions_handlers import AdventCalendarActionHandler
+from advent_calendar.notification.listeners import AdventCalendarDoorsAvailableListener
+from gui.shared.system_factory import registerNotificationsListeners, registerNotificationsActionsHandlers
+
+def registerAdventNotifications():
+    registerNotificationsListeners((AdventCalendarDoorsAvailableListener,))
+    registerNotificationsActionsHandlers((AdventCalendarActionHandler,))

@@ -22,6 +22,11 @@
 			<UUID>55c2fd85-4ec4-4bab-928d-fc3b4457ed80</UUID>
 			<flags>8</flags>
 		</GameObject>
+		<GameObject>
+			<name>05_prohorovka_death_zone_ai</name>
+			<UUID>43716678-e72a-4c07-8fde-62566a4e3e09</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -49,6 +54,16 @@
 			</component>
 			<component>
 				<UUID>55c2fd85-4ec4-4bab-928d-fc3b4457ed80</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>f8388543-5a66-4066-b7cd-9ae06bbdcf53</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>43716678-e72a-4c07-8fde-62566a4e3e09</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -128,6 +143,24 @@
 							-3013.67 -282.263 -1842.1
 							<!--BW_String-->
 						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>43716678-e72a-4c07-8fde-62566a4e3e09</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -239,6 +272,29 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>43716678-e72a-4c07-8fde-62566a4e3e09</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											26.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -280,6 +336,32 @@
 						<section>
 							<resource>content/CGFPrefabs/Map_scenarios/05_prohorovka/05_planes_crashing_01_in_alley/05_planesCrash01_plane_01_transition.prefab</resource>
 						</section>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>43716678-e72a-4c07-8fde-62566a4e3e09</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value>05_prohorovka_death_zone_ai</value>
 					</property>
 				</config>
 			</component>

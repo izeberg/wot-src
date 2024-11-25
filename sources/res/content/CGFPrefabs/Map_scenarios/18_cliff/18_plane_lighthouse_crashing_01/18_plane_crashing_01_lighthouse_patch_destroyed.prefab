@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>18_plane_crashing_01_lighthouse_patch_destroyed</name>
+			<UUID>99e4f811-8c4b-43c9-ab43-bca457ac55fb</UUID>
+			<flags>2</flags>
+		</GameObject>
+		<GameObject>
+			<name>patches</name>
+			<UUID>c8d227ed-0510-4bd4-9a8d-48396776ec18</UUID>
+			<flags>2</flags>
+		</GameObject>
+		<GameObject>
+			<name>flora_scale_patch</name>
+			<UUID>65c84833-fe4b-461e-a96d-0a998d2663f8</UUID>
+			<flags>2</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>c8d227ed-0510-4bd4-9a8d-48396776ec18</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>99e4f811-8c4b-43c9-ab43-bca457ac55fb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>65c84833-fe4b-461e-a96d-0a998d2663f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>c8d227ed-0510-4bd4-9a8d-48396776ec18</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>99e4f811-8c4b-43c9-ab43-bca457ac55fb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c8d227ed-0510-4bd4-9a8d-48396776ec18</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>65c84833-fe4b-461e-a96d-0a998d2663f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>FloraScalePatchComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>65c84833-fe4b-461e-a96d-0a998d2663f8</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>zoneId</name>
+						<value>264864599</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

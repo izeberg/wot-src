@@ -8,6 +8,42 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>hd_env_UNI_011_FactoryBigPipe_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s5</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -17,6 +53,15 @@
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>112</materialKind>
+				</material>
+				<groupOrigin>6.355208 0.273999 8.973141</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
 				<material>
 					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -56,15 +101,6 @@
 					</property>
 				</material>
 				<groupOrigin>0.000000 53.655731 0.000000</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>112</materialKind>
-				</material>
-				<groupOrigin>6.355208 0.273999 8.973141</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

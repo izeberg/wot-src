@@ -42,6 +42,7 @@ from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from gui.shared.tutorial_helper import getTutorialGlobalStorage
 from gui.shared.utils.functions import makeTooltip
+from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
 from gui.sounds.filters import States, StatesGroup
 from gui.tournament.tournament_helpers import isTournamentEnabled
 from helpers import dependency
@@ -60,7 +61,6 @@ from skeletons.gui.offers import IOffersBannerController
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.helpers.statistics import IStatisticsCollector
-from soft_exception import SoftException
 from sound_gui_manager import CommonSoundSpaceSettings
 from tutorial.control.context import GLOBAL_FLAG
 if typing.TYPE_CHECKING:
@@ -120,6 +120,7 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__timer = None
         self.__comp7BanTimer = None
         self.__updateDogTagsState()
+        self.__updateCustomizationHint()
         nextTick(ClientSelectableCameraObject.switchCamera)()
         return
 
@@ -146,6 +147,10 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
     @property
     def alertMessage(self):
         return self.getComponent(HANGAR_ALIASES.ALERT_MESSAGE_BLOCK)
+
+    @property
+    def carouselComponent(self):
+        return self.getComponent(self.__currentCarouselAlias)
 
     def onCacheResync(self, reason, diff):
         if reason == CACHE_SYNC_REASON.SHOP_RESYNC:
@@ -240,7 +245,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__comp7Controller.onOfflineStatusUpdated += self.__updateAlertMessage
         self.__comp7Controller.onTournamentBannerStateChanged += self.__updateComp7TournamentWidget
         self.__comp7Controller.onGrandTournamentBannerAvailabilityChanged += self.__updateComp7GrandTournamentWidget
-        self.__addTechTreeTradeInListener()
         self.hangarSpace.setVehicleSelectable(True)
         self.__lootBoxes.onStatusChanged += self.__onLootBoxesStatusChanged
         self.__eventLootBoxes.onStatusChange += self.__onLootBoxesStatusChanged
@@ -270,6 +274,7 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
             g_currentVehicle.refreshModel()
         if self.battleRoyaleController.isBattleRoyaleMode() and self.hangarSpace.spaceInited:
             self.__onBattleRoyaleSpaceLoaded(False)
+        g_clientUpdateManager.addCallback('inventory', self.__onInventoryUpdate)
 
     def _dispose(self):
         self.removeListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.__handleSelectedEntityUpdated)
@@ -304,7 +309,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__comp7Controller.onOfflineStatusUpdated -= self.__updateAlertMessage
         self.__comp7Controller.onTournamentBannerStateChanged -= self.__updateComp7TournamentWidget
         self.__comp7Controller.onGrandTournamentBannerAvailabilityChanged -= self.__updateComp7GrandTournamentWidget
-        self.__removeTechTreeTradeInListener()
         if self.__teaser is not None:
             self.__teaser.stop()
             self.__teaser = None
@@ -328,24 +332,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__hangarGuiCtrl.releaseHangar()
         LobbySelectableView._dispose(self)
         return
-
-    def __addTechTreeTradeInListener(self):
-        try:
-            from tech_tree_trade_in.skeletons.gui.game_control import ITechTreeTradeInController
-            techTreeTradeInController = dependency.instance(ITechTreeTradeInController)
-            techTreeTradeInController.onSettingsChanged += self.__updateTechTreeTradeInBanner
-            techTreeTradeInController.onEntryPointUpdated += self.__updateTechTreeTradeInBanner
-        except (SoftException, ImportError):
-            pass
-
-    def __removeTechTreeTradeInListener(self):
-        try:
-            from tech_tree_trade_in.skeletons.gui.game_control import ITechTreeTradeInController
-            techTreeTradeInController = dependency.instance(ITechTreeTradeInController)
-            techTreeTradeInController.onSettingsChanged -= self.__updateTechTreeTradeInBanner
-            techTreeTradeInController.onEntryPointUpdated -= self.__updateTechTreeTradeInBanner
-        except (SoftException, ImportError):
-            pass
 
     def __updateDogTagsState(self):
         isDogTagsEnabled = self.lobbyContext.getServerSettings().isDogTagEnabled()
@@ -478,7 +464,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__updateComp7GrandTournamentWidget()
         self.__updateAlertMessage()
         self.__updateBattleRoyaleTournamentBanner()
-        self.__updateTechTreeTradeInBanner()
         Waiting.hide('updateVehicle')
 
     def __onCurrentVehicleChanged(self):
@@ -558,7 +543,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__updateComp7GrandTournamentWidget()
         self.__updateAlertMessage()
         self.__updateBattleRoyaleTournamentBanner()
-        self.__updateTechTreeTradeInBanner()
 
     def __onEntityUpdated(self, *_):
         self.__onEntityChanged()
@@ -641,31 +625,17 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
     @ifComponentAvailable(HANGAR_CONSTS.COMP7_TOURNAMENT_BANNER)
     def __updateComp7TournamentWidget(self):
         isBannerVisible = self.__comp7Controller.isTournamentBannerEnabled and isTournamentEnabled()
-        self.as_setCarouselBannerVisibleS(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER, isBannerVisible)
+        self.as_setEventTournamentBannerVisibleS(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER, isBannerVisible)
 
     @ifComponentAvailable(HANGAR_CONSTS.COMP7_GRAND_TOURNAMENT_BANNER)
     def __updateComp7GrandTournamentWidget(self):
         isBannerVisible = self.__comp7Controller.isGrandTournamentBannerEnabled
-        self.as_setCarouselBannerVisibleS(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER, isBannerVisible)
+        self.as_setEventTournamentBannerVisibleS(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER, isBannerVisible)
 
     @ifComponentAvailable(HANGAR_CONSTS.BATTLE_ROYALE_TOURNAMENT_BANNER)
     def __updateBattleRoyaleTournamentBanner(self):
         isBannerVisible = self.battleRoyaleController.isTournamentBannerEnabled and isTournamentEnabled()
-        self.as_setCarouselBannerVisibleS(HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT_BANNER, isBannerVisible)
-
-    @ifComponentAvailable(HANGAR_CONSTS.TECH_TREE_TRADE_IN_BANNER)
-    def __updateTechTreeTradeInBanner(self):
-        try:
-            from tech_tree_trade_in.skeletons.gui.game_control import ITechTreeTradeInController
-            from gui.Scaleform.framework import g_entitiesFactories
-            techTreeTradeInController = dependency.instance(ITechTreeTradeInController)
-            isBannerVisible = techTreeTradeInController.isTechTreeTradeInEntryPointEnabled
-            if g_entitiesFactories.getSettings(HANGAR_ALIASES.TECH_TREE_TRADE_IN_BANNER) is not None:
-                self.as_setCarouselBannerVisibleS(HANGAR_ALIASES.TECH_TREE_TRADE_IN_BANNER, isBannerVisible)
-        except (SoftException, ImportError):
-            pass
-
-        return
+        self.as_setEventTournamentBannerVisibleS(HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT_BANNER, isBannerVisible)
 
     @ifComponentAvailable(HANGAR_CONSTS.PRESTIGE_WIDGET)
     def __updatePrestigeProgressWidget(self):
@@ -694,3 +664,12 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
             return min(self.__comp7Controller.banDuration, ONE_MINUTE)
         else:
             return
+
+    def __onInventoryUpdate(self, invDiff):
+        if GUI_ITEM_TYPE.CUSTOMIZATION in invDiff:
+            self.__updateCustomizationHint()
+
+    def __updateCustomizationHint(self):
+        items = self.itemsCache.items.getItems(GUI_ITEM_TYPE.ATTACHMENT, REQ_CRITERIA.CUSTOMIZATION.ON_ACCOUNT | REQ_CRITERIA.CUSTOM(lambda item: not item.descriptor.isHiddenInUI()))
+        if items:
+            getTutorialGlobalStorage().setValue(GLOBAL_FLAG.UNLOCKED_3D_CUSTOMIZATION, True)

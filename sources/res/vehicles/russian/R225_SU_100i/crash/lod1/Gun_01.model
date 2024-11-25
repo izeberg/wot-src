@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R225_SU_100i/crash/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R225_SU_100i/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-0.392233 -0.34935 0.149371
+			<!--BW_String-->
+		</min>
+		<max>0.708309 0.349131 4.491795</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/british/GB146_Gabler_s_Destroyer/crash/lod2/Gun_02</nodelessVisual>
+	<parent>vehicles/british/GB146_Gabler_s_Destroyer/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.450365 -0.275754 -0.939514</min>
+		<max>0.449343 0.271569 2.376884</max>
+	</visibilityBox>
+</root>

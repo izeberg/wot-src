@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R219_Object_265T/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R219_Object_265T/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.240336 -0.249116 -0.468000</min>
+		<max>0.247118 0.652252 4.342839</max>
+	</visibilityBox>
+</root>

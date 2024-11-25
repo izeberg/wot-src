@@ -16,6 +16,9 @@ class RoyaleTankCarousel(TankCarousel):
     def hasRoles(self):
         return False
 
+    def hasCustomization(self):
+        return False
+
     def getCustomParams(self):
         return {'hasBattleRoyleVehicles': self._carouselDP.hasBattleRoyaleVehicles()}
 

@@ -6,7 +6,7 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function removeS(param1:int, param2:Object) : void;
+      function removeS(param1:int, param2:Object, param3:int) : void;
       
       function removeAllS() : void;
       

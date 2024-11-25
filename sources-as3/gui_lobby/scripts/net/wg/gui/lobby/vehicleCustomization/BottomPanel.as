@@ -17,14 +17,13 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.gui.components.controls.universalBtn.UniversalBtn;
    import net.wg.gui.events.FiltersEvent;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationSwitcher;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselInfoLabel;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselOverlay;
    import net.wg.gui.lobby.vehicleCustomization.data.BottomPanelVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelInitVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSwitcherVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.FilterFallbackDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselFilterVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselRendererVO;
@@ -67,8 +66,6 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const PRICE_OFFSET_HORIZONTAL:int = 13;
       
-      private static const SWITCH_Y:int = -45;
-      
       private static const STAGE_SWITCHER_Y:int = -175;
       
       private static const ITEMS_BUTTON_OFFSET:int = 5;
@@ -88,6 +85,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const ITEMS_INFO_BTN_ALPHA:Number = 0.6;
       
       private static const POPOVER_BUTTON_STATE_INVALID:String = "popoverBtnStateInvalid";
+      
+      private static const RIGHT_BTNS_VISIBILITY_INVALID:String = "rightBtnsVisibilityInvalid";
        
       
       public var tabBg:MovieClip = null;
@@ -96,7 +95,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public var buyBtn:UniversalBtn = null;
       
-      public var background:MovieClip = null;
+      public var background:Sprite = null;
       
       public var buyBackground:Sprite = null;
       
@@ -110,11 +109,15 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public var tabNavigator:CustomizationTabNavigator;
       
-      public var switcher:CustomizationSwitcher;
-      
       public var itemsPopoverBtn:UniversalBtn = null;
       
+      public var vehiclesSidebarBtn:UniversalBtn = null;
+      
       public var overlay:CustomizationCarouselOverlay = null;
+      
+      public var helpMessage:CustomizationHelpMessage = null;
+      
+      private var _rightSideBtns:Vector.<UniversalBtn> = null;
       
       private var _buyDisabledTooltip:String = "";
       
@@ -160,6 +163,7 @@ package net.wg.gui.lobby.vehicleCustomization
       override protected function configUI() : void
       {
          super.configUI();
+         this._rightSideBtns = new <UniversalBtn>[this.vehiclesSidebarBtn,this.itemsPopoverBtn,this.buyBtn];
          this.buyBtn.soundType = SoundTypes.CUSTOMIZATION_DEFAULT;
          this.buyBtn.mouseEnabledOnDisabled = true;
          this.bill.visible = false;
@@ -181,19 +185,25 @@ package net.wg.gui.lobby.vehicleCustomization
          this.itemsPopoverBtn.mouseEnabledOnDisabled = true;
          this.itemsPopoverBtn.addEventListener(ButtonEvent.CLICK,this.onItemsPopoverBtnClickHandler);
          this.itemsPopoverBtn.addEventListener(MouseEvent.ROLL_OVER,this.onItemsPopoverBtnRollOverHandler);
+         this.vehiclesSidebarBtn.iconSource = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_ICON_BUTTON_TECHNIC_FILTER;
+         this.vehiclesSidebarBtn.mouseEnabledOnDisabled = true;
+         this.vehiclesSidebarBtn.addEventListener(ButtonEvent.CLICK,this.onVehiclesSidebarBtnClickHandler);
+         this.vehiclesSidebarBtn.addEventListener(MouseEvent.ROLL_OVER,this.onVehiclesSidebarBtnRollOverHandler);
          this.carousel.addEventListener(CustomizationEvent.REFRESH_FILTER_DATA,this.onRefreshFilterDataHandler);
          this.carousel.addEventListener(CustomizationEvent.RESET_FILTER,this.onResetFilterHandler);
          this.carousel.addEventListener(FiltersEvent.RESET_ALL_FILTERS,this.onBottomPanelCarouselFilterCounterResetAllFiltersHandler);
          this.carousel.addEventListener(CustomizationEvent.SELECT_HOT_FILTER,this.onBottomPanelCarouselSelectHotFilterHandler);
          this.carousel.addEventListener(CustomizationEvent.NEW_ANIMATION_SHOWN,this.onBottomPanelCarouselNewAnimationShownHandler);
+         this.carousel.addEventListener(CustomizationEvent.SHOW_ATTACHMENTS_VIDEO,this.onShowAttachmentsVideoHandler);
+         this.carousel.addEventListener(CustomizationEvent.SHOW_VEHICLES_SIDEBAR,this.onShowVehiclesSideBaHandler);
          App.stage.addEventListener(CustomizationEvent.ITEMS_POPOVER_CLOSED,this.onStageItemsPopoverClosedHandler);
          this.overlay.addEventListener(MouseEvent.CLICK,this.onOverlayClickHandler);
          this.overlay.visible = false;
          this._utils.universalBtnStyles.setStyle(this.itemsPopoverBtn,UniversalBtnStylesConst.STYLE_HEAVY_GREEN);
+         this._utils.universalBtnStyles.setStyle(this.vehiclesSidebarBtn,UniversalBtnStylesConst.STYLE_HEAVY_GREEN);
          this._utils.universalBtnStyles.setStyle(this.buyBtn,UniversalBtnStylesConst.STYLE_HEAVY_ORANGE);
-         this.switcher.addEventListener(CustomizationTabEvent.TAB_CHANGED,this.onSwitcherTabChangedHandler);
-         this.switcher.addEventListener(CustomizationTabEvent.RETURN_TO_COMPLETE_STYLE,this.onSwitcherReturnToCompleteStyleHandler);
          this.itemsPopoverBtn.disabledImageAlpha = ITEMS_INFO_BTN_ALPHA;
+         this.vehiclesSidebarBtn.disabledImageAlpha = ITEMS_INFO_BTN_ALPHA;
       }
       
       override protected function onBeforeDispose() : void
@@ -212,19 +222,27 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.removeEventListener(CustomizationEvent.NEW_ANIMATION_SHOWN,this.onBottomPanelCarouselNewAnimationShownHandler);
          this.itemsPopoverBtn.removeEventListener(ButtonEvent.CLICK,this.onItemsPopoverBtnClickHandler);
          this.itemsPopoverBtn.removeEventListener(MouseEvent.ROLL_OVER,this.onItemsPopoverBtnRollOverHandler);
+         this.vehiclesSidebarBtn.removeEventListener(ButtonEvent.CLICK,this.onVehiclesSidebarBtnClickHandler);
+         this.vehiclesSidebarBtn.removeEventListener(MouseEvent.ROLL_OVER,this.onVehiclesSidebarBtnRollOverHandler);
          this.overlay.removeEventListener(MouseEvent.CLICK,this.onOverlayClickHandler);
          App.stage.removeEventListener(CustomizationEvent.ITEMS_POPOVER_CLOSED,this.onStageItemsPopoverClosedHandler);
-         this.switcher.removeEventListener(CustomizationTabEvent.TAB_CHANGED,this.onSwitcherTabChangedHandler);
-         this.switcher.removeEventListener(CustomizationTabEvent.RETURN_TO_COMPLETE_STYLE,this.onSwitcherReturnToCompleteStyleHandler);
+         this.carousel.removeEventListener(CustomizationEvent.SHOW_ATTACHMENTS_VIDEO,this.onShowAttachmentsVideoHandler);
+         this.carousel.removeEventListener(CustomizationEvent.SHOW_VEHICLES_SIDEBAR,this.onShowVehiclesSideBaHandler);
          super.onBeforeDispose();
       }
       
       override protected function onDispose() : void
       {
+         this._rightSideBtns.splice(0,this._rightSideBtns.length);
+         this._rightSideBtns = null;
          this.overlay.dispose();
          this.overlay = null;
          this.itemsPopoverBtn.dispose();
          this.itemsPopoverBtn = null;
+         this.helpMessage.dispose();
+         this.helpMessage = null;
+         this.vehiclesSidebarBtn.dispose();
+         this.vehiclesSidebarBtn = null;
          this.tabNavigator.dispose();
          this.tabNavigator = null;
          this.bill.removeEventListener(Event.RESIZE,this.onBillResizeHandler);
@@ -234,8 +252,6 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel = null;
          this.buyBtn.dispose();
          this.buyBtn = null;
-         this.switcher.dispose();
-         this.switcher = null;
          this.customizationContentTypeIcon.dispose();
          this.customizationContentTypeIcon = null;
          this.infoLabel.dispose();
@@ -245,7 +261,6 @@ package net.wg.gui.lobby.vehicleCustomization
          this.buyBackground = null;
          this.background = null;
          this.tabBg = null;
-         this.tabGlow = null;
          this._popoverMgr = null;
          this._tooltipMgr = null;
          this._systemMessages = null;
@@ -256,13 +271,13 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          var _loc2_:int = 0;
          var _loc3_:int = 0;
+         var _loc4_:int = 0;
+         var _loc5_:UniversalBtn = null;
          super.draw();
          var _loc1_:Boolean = App.appHeight < MIN_RESOLUTION;
          if(isInvalid(InvalidationType.SIZE))
          {
-            this.tabBg.width = _width;
             this.background.width = _width;
-            this.tabGlow.width = _width;
             this.carousel.width = _width;
             this.carousel.invalidateSize();
             this.overlay.updateSize(_width,_height,_loc1_);
@@ -271,6 +286,7 @@ package net.wg.gui.lobby.vehicleCustomization
             {
                this._isMinResolution = _loc1_;
                this._utils.universalBtnStyles.setStyle(this.itemsPopoverBtn,!!_loc1_ ? UniversalBtnStylesConst.STYLE_SLIM_GREEN : UniversalBtnStylesConst.STYLE_HEAVY_GREEN);
+               this._utils.universalBtnStyles.setStyle(this.vehiclesSidebarBtn,!!_loc1_ ? UniversalBtnStylesConst.STYLE_SLIM_GREEN : UniversalBtnStylesConst.STYLE_HEAVY_GREEN);
                this._utils.universalBtnStyles.setStyle(this.buyBtn,!!_loc1_ ? UniversalBtnStylesConst.STYLE_SLIM_ORANGE : UniversalBtnStylesConst.STYLE_HEAVY_ORANGE);
             }
             invalidateLayout();
@@ -300,23 +316,45 @@ package net.wg.gui.lobby.vehicleCustomization
          if(isInvalid(InvalidationType.LAYOUT))
          {
             _loc3_ = !!_loc1_ ? int(TOP_SMALL_OFFSET) : int(0);
-            this.buyBtn.x = _width - this.buyBtn.width - BUY_OFFSET_VERTICAL ^ 0;
+            this.buyBtn.x = App.appWidth - this.buyBtn.width - BUY_OFFSET_VERTICAL ^ 0;
             this.buyBackground.x = this.buyBtn.x - BUY_OFFSET_HORIZONTAL ^ 0;
             this.buyBackground.y = BUY_BACKGROUND_Y + _loc3_;
             this.itemsPopoverBtn.x = this.buyBtn.x - ITEMS_BUTTON_OFFSET - this.itemsPopoverBtn.width ^ 0;
             this.customizationContentTypeIcon.x = this.itemsPopoverBtn.x + this.itemsPopoverBtn.width - (NON_HISTORIC_FIX_ICON_WIDTH >> 1) + NON_HISTORIC_ICON_OFFSET_X ^ 0;
+            this.vehiclesSidebarBtn.x = this.itemsPopoverBtn.x - ITEMS_BUTTON_OFFSET - this.vehiclesSidebarBtn.width ^ 0;
             this.customizationContentTypeIcon.y = NON_HISTORIC_ICON_Y + _loc3_;
             this.bill.x = _width - this.bill.width - PRICE_OFFSET_HORIZONTAL ^ 0;
             this.bill.y = -this.bill.height + _loc3_ + PRICE_OFFSET_VERTICAL;
-            this.switcher.validateNow();
-            this.switcher.x = _width >> 1;
-            this.switcher.y = SWITCH_Y;
             this.infoLabel.x = _width >> 1;
+            this.tabBg.x = _width - this.tabBg.width >> 1;
+            this.tabGlow.x = _width - this.tabGlow.width >> 1;
             if(this._stageSwitcher != null)
             {
                this._stageSwitcher.x = (_width >> 1) - (this._stageSwitcher.width >> 1);
             }
+            if(this.helpMessage.visible)
+            {
+               this.helpMessage.x = _width - this.helpMessage.width >> 1;
+            }
+            invalidate(RIGHT_BTNS_VISIBILITY_INVALID);
          }
+         if(isInvalid(RIGHT_BTNS_VISIBILITY_INVALID))
+         {
+            _loc4_ = App.appWidth;
+            for each(_loc5_ in this._rightSideBtns)
+            {
+               if(_loc5_.visible && _loc5_.x < _loc4_)
+               {
+                  _loc4_ = _loc5_.x;
+               }
+            }
+            this.tabNavigator.updateBorders(Values.ZERO,_loc4_);
+         }
+      }
+      
+      public function as_updateEscHelpMessage(param1:Boolean) : void
+      {
+         this.helpMessage.visible = param1;
       }
       
       override protected function setBottomPanelInitData(param1:CustomizationBottomPanelInitVO) : void
@@ -325,23 +363,12 @@ package net.wg.gui.lobby.vehicleCustomization
          invalidateSize();
       }
       
-      override protected function setSwitchersData(param1:CustomizationSwitcherVO) : void
-      {
-         this.switcher.setData(param1);
-         this._popoverAlias = param1.popoverAlias;
-      }
-      
       override protected function setBottomPanelTabsData(param1:CustomizationTabNavigatorVO) : void
       {
          this.tabNavigator.setData(param1);
          var _loc2_:Boolean = param1.selectedTab == Values.DEFAULT_INT;
          this.infoLabel.visible = _loc2_;
          this.tabNavigator.switchState(!_loc2_);
-      }
-      
-      override protected function setBottomPanelTabsPluses(param1:Array) : void
-      {
-         this.tabNavigator.setTabsPluses(param1);
       }
       
       override protected function setCarouselData(param1:CustomizationCarouselDataVO) : void
@@ -381,13 +408,12 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function setNotificationCounters(param1:CustomizationBottomPanelNotificationVO) : void
       {
-         this.tabNavigator.setNotificationCounters(param1.tabsCounters);
-         this.switcher.setNotificationCounters(param1.switchersCounter);
+         this.tabNavigator.setNotificationCounters(param1);
       }
       
-      public function as_carouselFilterMessage(param1:String) : void
+      override protected function setFilterFallbackData(param1:FilterFallbackDataVO) : void
       {
-         this.carousel.setFilterMessage(param1);
+         this.carousel.setFilterFallbackData(param1);
       }
       
       public function as_getDataProvider() : Object
@@ -452,15 +478,22 @@ package net.wg.gui.lobby.vehicleCustomization
          }
       }
       
+      public function as_setVehiclesSidebarBtnVisibility(param1:Boolean) : void
+      {
+         this.vehiclesSidebarBtn.visible = param1;
+         invalidate(RIGHT_BTNS_VISIBILITY_INVALID);
+      }
+      
       public function as_showBill() : void
       {
          this.setBillVisibility(true);
       }
       
-      public function as_showPopoverBtnIcon(param1:String, param2:String) : void
+      public function as_showPopoverBtn(param1:String, param2:String, param3:String) : void
       {
-         this.itemsPopoverBtn.iconSource = param1;
-         this._popoverBtnDisabledTooltip = param2;
+         this._popoverAlias = param1;
+         this.itemsPopoverBtn.iconSource = param2;
+         this._popoverBtnDisabledTooltip = param3;
       }
       
       public function getFocusChain() : Vector.<InteractiveObject>
@@ -534,11 +567,11 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc1_:int = 0;
          if(this.bill.visible)
          {
-            _loc1_ = this.background.height + this.tabBg.height + this.bill.height + SM_BILL_ADDITIONAL_HEIGHT;
+            _loc1_ = this.background.height + this.bill.height + SM_BILL_ADDITIONAL_HEIGHT;
          }
          else
          {
-            _loc1_ = this.background.height + this.tabBg.height;
+            _loc1_ = this.background.height;
          }
          if(this._smPadding != _loc1_)
          {
@@ -550,10 +583,9 @@ package net.wg.gui.lobby.vehicleCustomization
       private function updateVerticalPositions() : void
       {
          var _loc1_:int = !!this._isMinResolution ? int(TABS_BACKGROUND_HEIGHT_MIN_RESOLUTION) : int(TABS_BACKGROUND_HEIGHT);
-         this.tabBg.height = _loc1_;
-         this.tabBg.y = this.tabGlow.y = this.tabNavigator.y = this.background.y - _loc1_;
          this.infoLabel.y = this.tabNavigator.y + (_loc1_ - this.infoLabel.height >> 1);
          this.itemsPopoverBtn.y = this.tabNavigator.y + (_loc1_ - this.itemsPopoverBtn.height >> 1);
+         this.vehiclesSidebarBtn.y = this.itemsPopoverBtn.y;
          this.buyBtn.y = this.tabNavigator.y + (_loc1_ - this.buyBtn.height >> 1);
          this.updateSysMessagePosition();
       }
@@ -597,6 +629,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.playFilterBlink();
          if(param1.groupId != Values.DEFAULT_INT)
          {
+            this.carousel.setCurrentGroupId(param1.groupId);
             showGroupFromTabS(param1.groupId);
          }
       }
@@ -610,17 +643,9 @@ package net.wg.gui.lobby.vehicleCustomization
          }
       }
       
-      private function onSwitcherTabChangedHandler(param1:CustomizationTabEvent) : void
+      private function onVehiclesSidebarBtnClickHandler(param1:ButtonEvent) : void
       {
-         param1.stopPropagation();
-         switchModeS(param1.groupId);
-         this.carousel.playFilterBlink();
-      }
-      
-      private function onSwitcherReturnToCompleteStyleHandler(param1:CustomizationTabEvent) : void
-      {
-         param1.stopPropagation();
-         this.returnToCompleteStyles();
+         showVehiclesSideBarS();
       }
       
       private function onBuyBtnClickHandler(param1:ButtonEvent) : void
@@ -646,6 +671,16 @@ package net.wg.gui.lobby.vehicleCustomization
       private function onResetFilterHandler(param1:CustomizationEvent) : void
       {
          resetFilterS();
+      }
+      
+      private function onShowAttachmentsVideoHandler(param1:CustomizationEvent) : void
+      {
+         showVideoS();
+      }
+      
+      private function onShowVehiclesSideBaHandler(param1:CustomizationEvent) : void
+      {
+         showVehiclesSideBarS();
       }
       
       private function onStageItemsPopoverClosedHandler(param1:CustomizationEvent) : void
@@ -675,6 +710,11 @@ package net.wg.gui.lobby.vehicleCustomization
          {
             this._tooltipMgr.show(this._popoverBtnDisabledTooltip);
          }
+      }
+      
+      private function onVehiclesSidebarBtnRollOverHandler(param1:MouseEvent) : void
+      {
+         this._tooltipMgr.show(VEHICLE_CUSTOMIZATION.CUSTOMIZATION_VEHICLELIST);
       }
       
       private function onTabNavigatorResizeHandler(param1:Event) : void

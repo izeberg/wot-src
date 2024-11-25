@@ -7010,6 +7010,7 @@
 					<position>0 0 0</position>
 					<rotation>0 0 0</rotation>
 					<attachNode>HP_flagShaft</attachNode>
+					<hiddenForUser>true</hiddenForUser>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
@@ -7017,6 +7018,7 @@
 					<position>0 0 0</position>
 					<rotation>0 0 0</rotation>
 					<attachNode>HP_flag</attachNode>
+					<hiddenForUser>true</hiddenForUser>
 				</slot>
 			</customizationSlots>
 			<customization>
@@ -8699,6 +8701,7 @@
 					<position>0 0 0</position>
 					<rotation>0 0 0</rotation>
 					<attachNode>HP_flagShaft</attachNode>
+					<hiddenForUser>true</hiddenForUser>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
@@ -8706,6 +8709,7 @@
 					<position>0 0 0</position>
 					<rotation>0 0 0</rotation>
 					<attachNode>HP_flag</attachNode>
+					<hiddenForUser>true</hiddenForUser>
 				</slot>
 			</customizationSlots>
 			<customization>

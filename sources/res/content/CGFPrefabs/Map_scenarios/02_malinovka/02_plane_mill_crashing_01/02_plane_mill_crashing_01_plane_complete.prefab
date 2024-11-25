@@ -37,6 +37,11 @@
 			<UUID>9c1bf0ee-5e20-4c0d-af08-fe67d49b2e68</UUID>
 			<flags>10</flags>
 		</GameObject>
+		<GameObject>
+			<name>AIDeathZoneTrigger</name>
+			<UUID>fabab414-f7a5-4ff4-ac71-271c2ec13dfa</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -94,6 +99,16 @@
 			</component>
 			<component>
 				<UUID>9c1bf0ee-5e20-4c0d-af08-fe67d49b2e68</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>aa0f90d6-50f5-43b5-8d78-82c1350af038</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>fabab414-f7a5-4ff4-ac71-271c2ec13dfa</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -219,6 +234,24 @@
 			</component>
 			<component>
 				<UUID>9c1bf0ee-5e20-4c0d-af08-fe67d49b2e68</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>fabab414-f7a5-4ff4-ac71-271c2ec13dfa</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1197,6 +1230,29 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>fabab414-f7a5-4ff4-ac71-271c2ec13dfa</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0.335869</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											29.0236
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -1274,6 +1330,32 @@
 						<section>
 							<resource>content/CGFPrefabs/Map_scenarios/02_malinovka/02_plane_mill_crashing_01/02_plane_mill_crashing_01_plane_flora_patch_01.prefab</resource>
 						</section>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>fabab414-f7a5-4ff4-ac71-271c2ec13dfa</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value>02_malinovka_death_zone_ai</value>
 					</property>
 				</config>
 			</component>

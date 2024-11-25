@@ -2,7 +2,7 @@ from gui.Scaleform.daapi.view.lobby.popover.SmartPopOverView import SmartPopOver
 
 class CustomizationItemsPopoverMeta(SmartPopOverView):
 
-    def remove(self, id, itemsList):
+    def remove(self, id, itemsList, seasonType):
         self._printOverrideError('remove')
 
     def removeAll(self):

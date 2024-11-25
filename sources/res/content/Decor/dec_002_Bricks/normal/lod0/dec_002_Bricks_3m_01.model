@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.301553 -0.206848 -1.057730</min>
+		<max>1.238350 0.132854 1.268362</max>
+	</visibilityBox>
+	<parent>content/Decor/dec_002_Bricks/normal/lod1/dec_002_Bricks_3m_01</parent>
+	<extent>
+		20.0
+		<!--BW_String-->
+	</extent>
+	<decorative>5</decorative>
+	<nodelessVisual>content/Decor/dec_002_Bricks/normal/lod0/dec_002_Bricks_3m_01</nodelessVisual>
+</root>

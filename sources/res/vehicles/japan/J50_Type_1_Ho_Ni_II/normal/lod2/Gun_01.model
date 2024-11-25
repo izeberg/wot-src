@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J50_Type_1_Ho_Ni_II/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/japan/J50_Type_1_Ho_Ni_II/normal/lod3/Gun_01</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.190538 -0.791602 -0.990837</min>
+		<max>0.194918 0.288853 1.863122</max>
+	</visibilityBox>
+</root>

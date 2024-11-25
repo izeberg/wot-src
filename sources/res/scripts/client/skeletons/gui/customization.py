@@ -1,4 +1,11 @@
+import typing
 from Event import Event
+if typing.TYPE_CHECKING:
+    from typing import Optional
+    from items.components.c11n_components import StyleItem
+    from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationTabs
+    from gui.customization.constants import CustomizationModes
+    from items.components.c11n_constants import SeasonType
 
 class ICustomizationService(object):
     onRegionHighlighted = None
@@ -16,7 +23,7 @@ class ICustomizationService(object):
     def fini(self):
         raise NotImplementedError
 
-    def showCustomization(self, vehInvId=None, callback=None):
+    def showCustomization(self, vehInvID=None, callback=None, season=None, modeId=None, tabId=None, itemCD=None):
         raise NotImplementedError
 
     def closeCustomization(self):
@@ -79,19 +86,13 @@ class ICustomizationService(object):
     def getCurrentOutfit(self, season):
         raise NotImplementedError
 
-    def getStyledOutfit(self, season):
+    def getCurrentStyle(self):
         raise NotImplementedError
 
     def getCustomOutfit(self, season):
         raise NotImplementedError
 
     def isStyleInstalled(self):
-        raise NotImplementedError
-
-    def getStyleComponentDiffs(self, style):
-        raise NotImplementedError
-
-    def getStoredStyleDiffs(self):
         raise NotImplementedError
 
     def isRegionSelected(self):
@@ -141,4 +142,7 @@ class ICustomizationService(object):
         raise NotImplementedError
 
     def isProgressionQuests(self, eventID):
+        raise NotImplementedError
+
+    def getStyleItemByQuestID(self, eventID):
         raise NotImplementedError

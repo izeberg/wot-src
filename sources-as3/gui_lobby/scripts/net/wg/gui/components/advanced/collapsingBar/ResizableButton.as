@@ -20,6 +20,8 @@ package net.wg.gui.components.advanced.collapsingBar
       
       private var _baseScaleY:Number = 1;
       
+      private var _collapsed:Boolean = false;
+      
       public function ResizableButton()
       {
          super();
@@ -146,7 +148,17 @@ package net.wg.gui.components.advanced.collapsingBar
       
       protected function updateChildPositions() : void
       {
-         textField.x = hitMc.width >> 1 - (textField.width >> 1);
+         textField.x = hitMc.width - textField.width >> 1;
+      }
+      
+      public function set collapsed(param1:Boolean) : void
+      {
+         this._collapsed = param1;
+      }
+      
+      public function get collapsed() : Boolean
+      {
+         return this._collapsed;
       }
    }
 }

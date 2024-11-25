@@ -4300,7 +4300,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.55334 1.97688 0.421553
+							1.55334 1.97688 0.421558
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4327,7 +4327,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.5801 -1.2853 0.674317
+							1.5801 -1.28528 0.674323
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4381,7 +4381,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.5681 1.48022 0.0587656
+							1.56808 1.48015 0.0587565
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4408,7 +4408,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.5844 -0.723676 0.154616
+							1.5844 -0.723681 0.154617
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4516,7 +4516,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.58999 -0.00711823 0.578538
+							1.58999 -0.00712132 0.578536
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4732,7 +4732,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.56173 -2.35722 -0.915307
+							1.56173 -2.35722 -0.915312
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4786,7 +4786,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.57719 -0.00014925 0.897418
+							1.57719 -0.00014925 0.897397
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4948,7 +4948,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.57611 1.16951 0.152579
+							1.57611 1.16951 0.152588
 							<!--BW_String-->
 						</value>
 					</property>
@@ -5218,7 +5218,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.60277 0.643701 -0.0565741
+							1.60277 0.643701 -0.0565767
 							<!--BW_String-->
 						</value>
 					</property>
@@ -5919,7 +5919,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8718,15 +8718,41 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
 				<UUID>26f5a79e-9df0-4699-a193-f22ed626f676</UUID>
-				<flags>34</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>patchName</name>
 						<value>08_lud_mon_crash_ainavmesh</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>26f5a79e-9df0-4699-a193-f22ed626f676</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value>08_lud_mon_crash_ainavmesh</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
 					</property>
 				</config>
 			</component>

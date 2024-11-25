@@ -16,7 +16,7 @@ ModuleData = namedtuple('ModuleData', ('titleText', 'icon', 'deltaParams', 'prio
 VehicleProperties = namedtuple('VehicleProperties', ('difficulty', 'survivability',
                                                      'mobility', 'damage', 'spotting'))
 _PriorityParameter = namedtuple('PriorityParameter', ('name', 'type'))
-_BRSettings = namedtuple('_BRSettings', ('radar', 'spottedLoot', 'spawn', 'techTree',
+_BRSettings = namedtuple('_BRSettings', ('radar', 'detector', 'spawn', 'techTree',
                                          'vehicleProperties', 'upgradeAttentionTime',
                                          'observerBotMarkersVisibilityDistance',
                                          'sounds'))
@@ -39,7 +39,7 @@ def _getModuleText(txtPath):
 
 def _readBattleRoyaleSettings():
     _, section = resource_helper.getRoot(_BATTLE_ROYALE_CONFIG_XML_PATH)
-    result = _BRSettings(_readRadarSettings(section['radar']), _readRadarSettings(section['spottedLoot']), _readSpawnSettings(section['spawn']), _readTechTreeSettings(section['techTree']), _readVehicleProperties(section['vehicleProperties']), section['upgradeAttentionTime'].asFloat, section['observerBotMarkersVisibilityDistance'].asInt, _readSoundSettings(section['sounds']))
+    result = _BRSettings(_readRadarSettings(section['radar']), _readRadarSettings(section['detector']), _readSpawnSettings(section['spawn']), _readTechTreeSettings(section['techTree']), _readVehicleProperties(section['vehicleProperties']), section['upgradeAttentionTime'].asFloat, section['observerBotMarkersVisibilityDistance'].asInt, _readSoundSettings(section['sounds']))
     resource_helper.purgeResource(_BATTLE_ROYALE_CONFIG_XML_PATH)
     return result
 

@@ -202,6 +202,9 @@ msgstr "Type Mitsu 95"
 msgid "Chassis_J45_Mitsu_108_2"
 msgstr "Type Mitsu 108"
 
+msgid "Chassis_J50_Type_1_Ho_Ni_II"
+msgstr "Type 1 Ho-Ni II"
+
 msgid "Chassis_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
 
@@ -832,6 +835,29 @@ msgstr ""
 msgid "J45_Mitsu_108_short"
 msgstr "Mitsu 108"
 
+msgid "J50_Type_1_Ho_Ni_II"
+msgstr "Type 1 Ho-Ni II"
+
+msgid "J50_Type_1_Ho_Ni_II_descr"
+msgstr ""
+"A tank destroyer based on the Type 97 Chi-Ha, built by the Mitsubishi "
+"company. Around 60 units were produced up to 1945, making the vehicle one of"
+" the most mass-produced Japanese tank destroyers during World War II."
+
+msgid "J50_Type_1_Ho_Ni_II_long_special"
+msgstr ""
+"The Type 1 Ho-Ni II is a classic low-tier TD with a powerful 105 mm gun that"
+" deals high alpha damage. Its firepower, however, comes at the cost of poor "
+"accuracy, handling, and shell velocity. The vehicle has sufficient mobility "
+"for its tier, and its traverse speed enables it to effectively engage light "
+"and medium opponents."
+
+msgid "J50_Type_1_Ho_Ni_II_short"
+msgstr "Ho-Ni II"
+
+msgid "J50_Type_1_Ho_Ni_II_short_special"
+msgstr "Huge damage per shot, sufficient mobility"
+
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
 
@@ -1128,6 +1154,9 @@ msgstr "Type 3 Ju-Nu Plan 1"
 msgid "Turret_1_J45_Mitsu_108"
 msgstr "Mitsu 75"
 
+msgid "Turret_1_J50_Type_1_Ho_Ni_II"
+msgstr "Type 1 Ho-Ni II"
+
 msgid "Turret_1_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
 
@@ -1235,6 +1264,9 @@ msgstr "APHE Type 95"
 msgid "_105mm_APHE_Type95_TK"
 msgstr "APHE Type 95 Toku Kou"
 
+msgid "_105mm_APHE_Type_1_Ni"
+msgstr "APHE Type 1 Ni"
+
 msgid "_105mm_AP_Experimental_Type2"
 msgstr "AP Experimental Type 2"
 
@@ -1255,6 +1287,9 @@ msgstr "M392XB"
 
 msgid "_105mm_AP_M736"
 msgstr "M392XC"
+
+msgid "_105mm_AP_Type_1_Ni"
+msgstr "AP Type 1 Ni"
 
 msgid "_105mm_AP_Type_92"
 msgstr "Type 92 AP"
@@ -1286,6 +1321,9 @@ msgstr "10 cm Experimental Tank Gun Kai"
 msgid "_105mm_Gun_Shin"
 msgstr "10.5 cm Gun Shin"
 
+msgid "_105mm_Gun_Type_91"
+msgstr "10.5 cm Gun Type 91"
+
 msgid "_105mm_HEAT-T_T384E4"
 msgstr "M456"
 
@@ -1312,6 +1350,9 @@ msgstr "HE Type 91"
 
 msgid "_105mm_HE_Type92"
 msgstr "HE Type 92"
+
+msgid "_105mm_HE_Type_1_Ni"
+msgstr "HE Type 1 Ni"
 
 msgid "_105mm_HE_Type_92"
 msgstr "HE Type 92A"
@@ -1997,6 +2038,9 @@ msgstr "Type 94 Mk. 4 Otsu"
 msgid "_Type96_Bo"
 msgstr "Type 96 Mk. 4 Bo"
 
+msgid "_Type96_Bo_Ni"
+msgstr "Type 96 Bo Ni"
+
 msgid "_Type97"
 msgstr "Mitsubishi SA12200VD"
 
@@ -2020,6 +2064,9 @@ msgstr "Type 100 Kuurei V12N3"
 
 msgid "_Type_100_Suirei_V12"
 msgstr "Type 100 Suirei V12N3"
+
+msgid "_Type_100_Suirei_V12Ni"
+msgstr "Type 100 Suirei V12 Ni"
 
 msgid "_Type_Da_100_HP"
 msgstr "Type Da 100 HP"

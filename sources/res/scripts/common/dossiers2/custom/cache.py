@@ -1,5 +1,5 @@
 import nations
-from items import vehicles, parseIntCompactDescr
+from items import vehicles
 from collector_vehicle import CollectorVehicleConsts
 PRESTIGE_ALLOWED_TAGS = {
  'role_ATSPG_sniper', 'role_ATSPG_universal', 'role_ATSPG_support', 'role_LT_universal',

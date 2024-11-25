@@ -1156,7 +1156,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							4.59608e-07 2.80126 0.0238456
+							4.61936e-07 2.80126 0.0238456
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1183,7 +1183,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-9.51346e-07 -1.12573 -0.00720025
+							-9.51579e-07 -1.12573 -0.00720025
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1572,7 +1572,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -1699,7 +1699,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.60599 0.456105 -1.57077
+							1.60599 0.456109 -1.57077
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1753,7 +1753,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.60598 0.158365 -1.57077
+							1.60598 0.158363 -1.57078
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1780,7 +1780,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.60598 0.681942 -1.57079
+							1.60598 0.681946 -1.57079
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1807,7 +1807,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.60598 0.158351 -1.57075
+							1.60598 0.158353 -1.57075
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1834,7 +1834,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.5851 1.10736 1.25794
+							1.5851 1.10738 1.25796
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1888,7 +1888,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.56174 -0.785123 -1.41993
+							1.56175 -0.785135 -1.41995
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1915,7 +1915,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.56441 -2.35642 0.101788
+							1.56441 -2.35639 0.101769
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1942,7 +1942,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.53561 0.943754 1.57082
+							1.53561 0.943757 1.57082
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1969,7 +1969,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.5851 0.777317 1.25796
+							1.58509 0.777318 1.25796
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1996,7 +1996,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.56441 -1.30927 0.101792
+							1.56441 -1.30924 0.10178
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2023,7 +2023,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.56173 0.262017 -1.42
+							1.56173 0.262015 -1.42
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2077,7 +2077,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.56173 2.87997 -1.42001
+							1.56173 2.87997 -1.42
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2127,7 +2127,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -2148,7 +2148,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -2169,7 +2169,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -2190,7 +2190,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -2208,7 +2208,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -2439,7 +2439,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -3651,6 +3651,38 @@
 						<name>oneTimeEffect</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -3673,6 +3705,78 @@
 					<property>
 						<name>oneTimeEffect</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDataPatch</type>
+			<version>2</version>
+			<component>
+				<UUID>b2f58c0f-6a97-47bf-a341-e4c459407f1f</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>patchName</name>
+						<value>08_bigCityBombing_ai</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>b2f58c0f-6a97-47bf-a341-e4c459407f1f</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
 					</property>
 				</config>
 			</component>
@@ -3891,10 +3995,6 @@
 						<link>7b6a7729-44b8-3193-8080-15b3675ae8e7</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>b2f58c0f-6a97-47bf-a341-e4c459407f1f</link>
 					</property>
@@ -3907,10 +4007,6 @@
 					<property>
 						<name>colliders</name>
 						<link>959838f0-180a-3762-918b-7e476e6b07fb</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -3927,10 +4023,6 @@
 						<link>a0c9ff1c-8943-364e-abd1-bacaa2c7aa76</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>b2f58c0f-6a97-47bf-a341-e4c459407f1f</link>
 					</property>
@@ -3943,10 +4035,6 @@
 					<property>
 						<name>colliders</name>
 						<link>5b863077-3f4f-3bf7-9d57-b484a71edc58</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -3963,10 +4051,6 @@
 						<link>f7cc937a-7b6d-3ef0-8f97-58b96e6e21af</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>b2f58c0f-6a97-47bf-a341-e4c459407f1f</link>
 					</property>
@@ -3979,10 +4063,6 @@
 					<property>
 						<name>colliders</name>
 						<link>16624100-f8b8-3166-89b4-927fc62ce622</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -3999,10 +4079,6 @@
 						<link>c5960ea2-f29c-381e-bc9b-84c4a296ad5b</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>b2f58c0f-6a97-47bf-a341-e4c459407f1f</link>
 					</property>
@@ -4015,10 +4091,6 @@
 					<property>
 						<name>colliders</name>
 						<link>edb18403-975d-3d8e-8abf-1918f822f1e9</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -4035,10 +4107,6 @@
 						<link>944a9fbc-3ea4-3d9f-9849-a41658c86c29</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>b2f58c0f-6a97-47bf-a341-e4c459407f1f</link>
 					</property>
@@ -4051,10 +4119,6 @@
 					<property>
 						<name>colliders</name>
 						<link>d806a373-ed6a-3b0a-b699-f74b095fa658</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>

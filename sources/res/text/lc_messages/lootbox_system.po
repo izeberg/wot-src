@@ -408,6 +408,18 @@ msgstr "From the %(name)"
 msgid "singleRewardView/header/title/"
 msgstr "YOU HAVE RECEIVED"
 
+msgid "singleRewardView/tooltip/count/first"
+msgstr "%(count)st"
+
+msgid "singleRewardView/tooltip/count/other"
+msgstr "%(count)th"
+
+msgid "singleRewardView/tooltip/count/second"
+msgstr "%(count)nd"
+
+msgid "singleRewardView/tooltip/count/third"
+msgstr "%(count)rd"
+
 msgid "singleRewardView/tooltip/description/"
 msgstr ""
 "If you already own all Tier VIII–IX vehicles from the list of possible box "
@@ -417,10 +429,16 @@ msgstr ""
 msgid "singleRewardView/tooltip/label/"
 msgstr "When All Vehicles Are Received:"
 
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount) box"
+msgstr[1] "%(remainingCount) boxes"
+msgstr[2] "%(remainingCount) boxes"
+
 msgid "singleRewardView/tooltip/subtitle/"
 msgstr ""
 "The Guaranteed Reward is a vehicle from the list of possible box contents.\n"
-"If you open %(remainingCount) boxes without one dropping such a vehicle, it will drop when you open the %(count)th box. When it does, the counter is reset."
+"If you open %(remainingCount) without one dropping such a vehicle, it will drop when you open the %(count) box. When it does, the counter is reset."
 
 msgid "singleRewardView/tooltip/title/"
 msgstr "Guaranteed Reward"

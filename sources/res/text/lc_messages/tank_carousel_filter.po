@@ -76,6 +76,9 @@ msgstr "Only available for research"
 msgid "popover/counter"
 msgstr "Displayed vehicles: %(count)s"
 
+msgid "popover/label/customization"
+msgstr "Customization"
+
 msgid "popover/label/hidden"
 msgstr "More"
 
@@ -142,6 +145,12 @@ msgstr "Show/hide vehicles available for earning bonds."
 
 msgid "tooltip/crystals/header"
 msgstr "Vehicles for Earning Bonds"
+
+msgid "tooltip/customization/canInstallAttachments/body"
+msgstr "Show/hide vehicles suitable for mounting 3D attachments."
+
+msgid "tooltip/customization/own3DStyle/body"
+msgstr "Show/hide vehicles for which you have 3D styles."
 
 msgid "tooltip/elite/body"
 msgstr ""

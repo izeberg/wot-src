@@ -31,6 +31,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       public var itemIcon:UILoaderAlt = null;
       
+      public var rarityIcon:UILoaderAlt = null;
+      
+      public var rarityBg:UILoaderAlt = null;
+      
       public var iconBg:Sprite = null;
       
       private var _data:CustomizationItemIconRendererVO;
@@ -79,6 +83,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                   this.customizationContentTypeIcon.visible = false;
                }
                this.itemIcon.source = this._data.icon;
+               this.rarityIcon.source = this._data.rarityIcon;
+               this.rarityBg.source = this._data.rarityBackground;
             }
             if(isInvalid(InvalidationType.SIZE))
             {
@@ -89,6 +95,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                this.itemIcon.width = !!_loc2_ ? Number(ICON_WIDE_WIDTH) : Number(ICON_SHORT_WIDTH);
                this.itemIcon.height = ICON_HEIGHT;
                this.itemIcon.x = _loc1_ - this.itemIcon.width >> 1;
+               this.rarityBg.width = ICON_SHORT_WIDTH;
+               this.rarityBg.height = ICON_HEIGHT;
             }
          }
       }
@@ -102,6 +110,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.itemIcon.removeEventListener(UILoaderEvent.COMPLETE,this.onItemIconCompleteHandler);
          this.itemIcon.dispose();
          this.itemIcon = null;
+         this.rarityBg.dispose();
+         this.rarityBg = null;
+         this.rarityIcon.dispose();
+         this.rarityIcon = null;
          this.iconBg = null;
          this._data = null;
          this._tooltipManager = null;

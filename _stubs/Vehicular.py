@@ -67,6 +67,7 @@ class BurnoutProcessor(PyComponentWrapperBase):
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
+	def setSwingingAnimator(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
 
@@ -604,6 +605,31 @@ class GunEffectsController(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 
 
+class GunRecoilComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'GunRecoilComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
+	def recoil(self, *args, **kwargs): pass
+	def valid(self, *args, **kwargs): pass
+
+
 class GunRotatorAudition(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -944,37 +970,6 @@ class PyPhysicalTrackLoader(CustomRefLoader):
 	name = property(lambda self: None)
 
 
-class RecoilAnimator(PyComponentWrapperBase):
-	def __cmp__(self, *args, **kwargs): pass
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(self, *args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
-	__module__ = 'Vehicular'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'RecoilAnimator'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	animatedMProv = property(lambda self: None)
-	animatedMatrix = property(lambda self: None)
-	def animatedMatrix_gen(*args, **kwargs): pass
-	basisMatrix = property(lambda self: None)
-	def clear(self, *args, **kwargs): pass
-	def destroy(self, *args, **kwargs): pass
-	def id(self, *args, **kwargs): pass
-	lodLink = property(lambda self: None)
-	lodSetting = property(lambda self: None)
-	def recoil(self, *args, **kwargs): pass
-	def valid(self, *args, **kwargs): pass
-
-
 class RemainingAmmoClipPercentGetter(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -1223,8 +1218,6 @@ class SwingingAnimator(PyComponentWrapperBase):
 	def __subclasshook__(*args, **kwargs): pass
 	accelSwingingDirection = property(lambda self: None)
 	accelSwingingPeriod = property(lambda self: None)
-	animatedMProv = property(lambda self: None)
-	basisMatrix = property(lambda self: None)
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass

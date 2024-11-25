@@ -32,10 +32,10 @@ package net.wg.infrastructure.base.meta.impl
          super.onDispose();
       }
       
-      public function removeS(param1:int, param2:Object) : void
+      public function removeS(param1:int, param2:Object, param3:int) : void
       {
          App.utils.asserter.assertNotNull(this.remove,"remove" + Errors.CANT_NULL);
-         this.remove(param1,param2);
+         this.remove(param1,param2,param3);
       }
       
       public function removeAllS() : void

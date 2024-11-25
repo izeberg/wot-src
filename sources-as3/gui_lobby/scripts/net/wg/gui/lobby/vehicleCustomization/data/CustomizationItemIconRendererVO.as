@@ -10,6 +10,10 @@ package net.wg.gui.lobby.vehicleCustomization.data
       
       public var icon:String = "";
       
+      public var rarityIcon:String = "";
+      
+      public var rarityBackground:String = "";
+      
       public var isWide:Boolean = false;
       
       public var customizationDisplayType:int = 0;
