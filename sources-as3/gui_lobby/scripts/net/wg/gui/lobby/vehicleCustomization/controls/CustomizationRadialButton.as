@@ -9,6 +9,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       public static const ALPHA_VISIBLE_ON:int = 1;
       
       public static const ALPHA_VISIBLE_OFF:int = 0;
+      
+      public static const ENABLED_BG_ALPHA:Number = 0.75;
+      
+      public static const DISABLED_BG_ALPHA:Number = 0.5;
        
       
       public function CustomizationRadialButton()
@@ -39,6 +43,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          label = param1.label;
          selected = param1.selected;
          enabled = param1.enable;
+         bgMc.alpha = !!param1.enable ? Number(ENABLED_BG_ALPHA) : Number(DISABLED_BG_ALPHA);
       }
    }
 }

@@ -202,6 +202,9 @@ msgstr "三重九五式"
 msgid "Chassis_J45_Mitsu_108_2"
 msgstr "三重108式"
 
+msgid "Chassis_J50_Type_1_Ho_Ni_II"
+msgstr "二式炮战车"
+
 msgid "Chassis_Ke_Ho"
 msgstr "五式轻战"
 
@@ -637,6 +640,22 @@ msgstr ""
 msgid "J45_Mitsu_108_short"
 msgstr "三重108"
 
+msgid "J50_Type_1_Ho_Ni_II"
+msgstr "二式炮战车"
+
+msgid "J50_Type_1_Ho_Ni_II_descr"
+msgstr "一辆由三菱公司在97M基础上建造的自行反坦克炮。截至1945年，该坦克共生产了约60辆，成为战事期间R系量产最多的自行反坦克炮之一。"
+
+msgid "J50_Type_1_Ho_Ni_II_long_special"
+msgstr ""
+"二式炮战车是一辆经典的低等级自行反坦克炮，配备一门强劲的105毫米火炮，可造成高额的平均单发损伤。但也因此付出了精度、火炮手感和炮弹飞行速度的代价。该坦克具有同等级中较好的机动性，凭借不俗的旋转速度，它能有效应对敌方轻型和中型坦克。"
+
+msgid "J50_Type_1_Ho_Ni_II_short"
+msgstr "二式炮战车"
+
+msgid "J50_Type_1_Ho_Ni_II_short_special"
+msgstr "高额的平均单发损伤，不俗的机动性"
+
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
 
@@ -892,6 +911,9 @@ msgstr "十式重战一号案"
 msgid "Turret_1_J45_Mitsu_108"
 msgstr "三重75"
 
+msgid "Turret_1_J50_Type_1_Ho_Ni_II"
+msgstr "二式炮战车"
+
 msgid "Turret_1_Ke_Ho"
 msgstr "五式轻战"
 
@@ -994,6 +1016,9 @@ msgstr "APHE 九五式"
 msgid "_105mm_APHE_Type95_TK"
 msgstr "APHE 九五式特 甲型"
 
+msgid "_105mm_APHE_Type_1_Ni"
+msgstr "APHE 一式II"
+
 msgid "_105mm_AP_Experimental_Type2"
 msgstr "AP 试制二式"
 
@@ -1014,6 +1039,9 @@ msgstr "M392XB"
 
 msgid "_105mm_AP_M736"
 msgstr "M392XC"
+
+msgid "_105mm_AP_Type_1_Ni"
+msgstr "AP 一式II"
 
 msgid "_105mm_AP_Type_92"
 msgstr "九二式 AP"
@@ -1045,6 +1073,9 @@ msgstr "试制10cm坦克炮改"
 msgid "_105mm_Gun_Shin"
 msgstr "10.5cm新炮"
 
+msgid "_105mm_Gun_Type_91"
+msgstr "10.5cm 九一式炮"
+
 msgid "_105mm_HEAT-T_T384E4"
 msgstr "M456"
 
@@ -1071,6 +1102,9 @@ msgstr "HE 九一式"
 
 msgid "_105mm_HE_Type92"
 msgstr "HE 九二式"
+
+msgid "_105mm_HE_Type_1_Ni"
+msgstr "HE 一式II"
 
 msgid "_105mm_HE_Type_92"
 msgstr "HE 九二式A型"
@@ -1238,7 +1272,7 @@ msgid "_13.2mm_AP"
 msgstr "九二式"
 
 msgid "_13.2mm_Balle_T.P."
-msgstr "球形炮弹 T.P."
+msgstr "曳光穿甲弹T.P."
 
 msgid "_13.2mm_Type93"
 msgstr "13mm Ho式重机枪"
@@ -1756,6 +1790,9 @@ msgstr "九四式四号乙型"
 msgid "_Type96_Bo"
 msgstr "九四式四号戊型"
 
+msgid "_Type96_Bo_Ni"
+msgstr "九六式戊型II"
+
 msgid "_Type97"
 msgstr "三菱 SA12200VD"
 
@@ -1779,6 +1816,9 @@ msgstr "百式V12N3(风冷型)"
 
 msgid "_Type_100_Suirei_V12"
 msgstr "百式V12N3(水冷型)"
+
+msgid "_Type_100_Suirei_V12Ni"
+msgstr "百式 V-12 (水冷型)II"
 
 msgid "_Type_Da_100_HP"
 msgstr "Da式(100马力)"

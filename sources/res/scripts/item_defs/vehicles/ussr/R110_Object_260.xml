@@ -1661,6 +1661,54 @@
 				<clipAngle>0.523599</clipAngle>
 				<anchorShift>0.012289</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.679 0.538882 -0.89653
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999988 0.999988 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.679 0.538882 -0.89653
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999967 0.99999 0.99996
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					0.000336 0.286 -3.389705
+					<!--BW_String-->
+				</position>
+				<rotation>-0.000001 -1.570801 1.216799</rotation>
+				<scale>0.999909 0.999962 0.999923</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -4896,6 +4944,33 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>0.049687</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0.656 0.947 -1.592
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>
+						1 1.000001 1.000001
+						<!--BW_String-->
+					</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>-0.602925 1.034224 -0.044763</position>
+					<rotation>-0 0 0</rotation>
+					<scale>
+						1 1.000001 1.000001
+						<!--BW_String-->
+					</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

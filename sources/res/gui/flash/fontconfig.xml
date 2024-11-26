@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<gameface>
+		<fontfamily>
+			<name>Warhelios</name>
+			<font>
+				<style>normal</style>
+				<weight>normal</weight>
+				<path>gui/gameface/fonts/Warhelios-Regular.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>bold</weight>
+				<path>gui/gameface/fonts/Warhelios-Bold.ttf</path>
+			</font>
+		</fontfamily>
+		<fontfamily>
+			<name>WarheliosZHCN</name>
+			<font>
+				<style>normal</style>
+				<weight>normal</weight>
+				<path>gui/gameface/fonts/WarheliosZHCN-Medium.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>bold</weight>
+				<path>gui/gameface/fonts/WarheliosZHCN-Bold.ttf</path>
+			</font>
+		</fontfamily>
+		<fontfamily>
+			<name>DINRoundPro</name>
+			<font>
+				<style>normal</style>
+				<weight>bold</weight>
+				<path>gui/gameface/fonts/DINRoundPro-Bold.ttf</path>
+			</font>
+		</fontfamily>
 		<deffontfamily>WarheliosZHCN</deffontfamily>
-		<additional>Pacifico</additional>
-		<additional>DINRoundPro</additional>
-		<additional>Jura</additional>
 		<hieroglyphical>true</hieroglyphical>
 		<fontfamilyfallback>Warhelios</fontfamilyfallback>
 	</gameface>

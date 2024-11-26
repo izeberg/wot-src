@@ -565,6 +565,15 @@ msgstr "TITT罗扎诺夫"
 msgid "Chassis_R205_Tank_Rozanova_Obsidian"
 msgstr "黑曜石"
 
+msgid "Chassis_R217_Object_Kust"
+msgstr "库斯特工程"
+
+msgid "Chassis_R219_Object_265T"
+msgstr "265工程T"
+
+msgid "Chassis_R225_SU_100i"
+msgstr "SU-100I"
+
 msgid "Chassis_R71_IS_2B"
 msgstr "IS-2M"
 
@@ -715,6 +724,9 @@ msgstr ""
 "大陆\n"
 "W-670"
 
+msgid "D-12-5"
+msgstr "D-12-5"
+
 msgid "D-744"
 msgstr "D-744"
 
@@ -756,6 +768,9 @@ msgstr "通用汽车 6004"
 
 msgid "GMC_6046"
 msgstr "通用 6046"
+
+msgid "GMC_6046I"
+msgstr "GMC 6046I"
 
 msgid "GTD_700P"
 msgstr "GTD-700P"
@@ -1358,6 +1373,9 @@ msgstr "R-113"
 msgid "R113M_DR"
 msgstr "R-113D"
 
+msgid "R113T"
+msgstr "R113T"
+
 msgid "R113_Object_730"
 msgstr "IS-5(730工程)"
 
@@ -1581,6 +1599,9 @@ msgstr "R-123M"
 
 msgid "R123U"
 msgstr "R-123U"
+
+msgid "R123_K"
+msgstr "R-123K"
 
 msgid "R123_Kirovets_1"
 msgstr "KRT-1"
@@ -2644,6 +2665,61 @@ msgstr ""
 msgid "R20_T-44_FL_short_special"
 msgstr "优秀的机动性，精准的火炮"
 
+msgid "R217_Object_Kust"
+msgstr "库斯特工程"
+
+msgid "R217_Object_Kust_descr"
+msgstr ""
+"20世纪50年代下半叶，S系开始了无炮塔坦克的研发。哈尔科夫工厂的设计师提出的设计名为库斯特工程(库斯特意为灌木丛)，概念与V系的Strv "
+"103类似。火炮仅能在垂直方向上俯仰进行瞄准，水平射界则极为狭小。该项目仅停留在模型阶段。"
+
+msgid "R217_Object_Kust_long_special"
+msgstr ""
+"库斯特工程是一辆配备液气悬挂的S系VIII级自行反坦克炮。其130毫米火炮具有出色的平均穿透力和高额的平均单发损伤，同时其坚固且倾斜度良好的正面装甲将迫使敌人不得不瞄准弱点射击，从而为库斯特工程提供了充足的时间摧毁对手。"
+
+msgid "R217_Object_Kust_short"
+msgstr "库斯特工程"
+
+msgid "R217_Object_Kust_short_special"
+msgstr "液气悬挂装置，强劲的火炮"
+
+msgid "R219_Object_265T"
+msgstr "265工程T"
+
+msgid "R219_Object_265T_descr"
+msgstr ""
+"20世纪50年代下半叶一个能够使用独立浮渡设备的重型坦克项目，研究工作在机动车辆工程研究所(VNII-100)主导下进行，经过细致研究后，坦克被赋予了265工程的编号，并呈递S系陆军装甲和机械化部队指挥官审阅。\n"
+"\n"
+"尽管设计重心被放在了包括将引擎-传动舱前置在内的非常规布局上，但军方不再认为该坦克具有研发前景。此外，驾驶员在炮塔内操纵坦克的新颖布局也让潜在客户望而却步。为了优先进行T-10坦克(730工程)的改进工作，该项目被叫停。"
+
+msgid "R219_Object_265T_long_special"
+msgstr ""
+"265工程T是一辆S系IX级重型坦克，装备独特的逆向自动装填炮。凭借良好的机动性，它能快速占据有利的重型坦克点位，同时，得益于后置炮塔布局和坚固的装甲，它也能坚守阵地。为了发挥最大战斗效能，建议您主动接敌，清空弹鼓后，始终保持射击最先装填的那发炮弹，以达到最高的平均每分钟损伤。"
+
+msgid "R219_Object_265T_short"
+msgstr "265工程T"
+
+msgid "R219_Object_265T_short_special"
+msgstr "逆向自动装填炮，良好的操控性"
+
+msgid "R225_SU_100i"
+msgstr "SU-100I"
+
+msgid "R225_SU_100i_descr"
+msgstr ""
+"S系中央炮兵设计局同时在多个领域开展研究，其中之一就是由A.S.恰索夫尼科夫主导的为租借坦克换装武器的项目。针对M系M4A2提出了多种改装方案，包括将其由中型坦克改为自行火炮。1944年2月进行了评估，但最终未被采纳，主要原因是已经不再有现代化改进的需求。"
+
+msgid "R225_SU_100i_long_special"
+msgstr ""
+"这辆自行反坦克炮的平均穿透力在同等级坦克中几乎是最佳的，但也有短板——火炮手感和平均每分钟损伤均有所欠缺。虽然它的机动性使其能够轻松在战场上穿行，但它还是更适合远距离作战:"
+" 即使精度并不出众，它仍然能够击穿比自身高出2个等级的坦克。"
+
+msgid "R225_SU_100i_short"
+msgstr "SU-100I"
+
+msgid "R225_SU_100i_short_special"
+msgstr "出色的平均穿透力，良好的平均单发损伤"
+
 msgid "R34_BT-SV_long_special"
 msgstr ""
 "一辆全能型S系III级轻型坦克，拥有怪异的车体外形。它的倾斜装甲板能够弹开敌方炮弹，优秀的机动性和火炮的高射速能够在很多战斗场景中发挥大作用。"
@@ -2794,6 +2870,9 @@ msgstr "S-51"
 
 msgid "SCR_209"
 msgstr "SCR 209"
+
+msgid "SCR_508I"
+msgstr "SCR 508I"
 
 msgid "ST_I"
 msgstr "ST-I"
@@ -3659,6 +3738,15 @@ msgstr "TITT罗扎诺夫"
 msgid "Turret_1_R205_Tank_Rozanova_Obsidian"
 msgstr "黑曜石"
 
+msgid "Turret_1_R217_Object_Kust"
+msgstr "库斯特工程"
+
+msgid "Turret_1_R219_Object_265T"
+msgstr "265工程T"
+
+msgid "Turret_1_R225_SU_100i"
+msgstr "SU-100I"
+
 msgid "Turret_1_R71_IS_2B"
 msgstr "IS-122"
 
@@ -4274,6 +4362,9 @@ msgstr "100 mm NT-12炮"
 msgid "_100mm_S34"
 msgstr "100mm S-34炮"
 
+msgid "_100mm_S34I"
+msgstr "100mm S-34I炮"
+
 msgid "_100mm_S34_P_dualgun"
 msgstr "100mm S-34DP炮"
 
@@ -4301,6 +4392,9 @@ msgstr "UBR-412B"
 msgid "_100mm_UBR-412BM"
 msgstr "UBR-412BM"
 
+msgid "_100mm_UBR-412I"
+msgstr "UBR-412I"
+
 msgid "_100mm_UBR-412P"
 msgstr "UBR-412P"
 
@@ -4321,6 +4415,9 @@ msgstr "UBR-412P"
 
 msgid "_100mm_UBR-412PB_fallout"
 msgstr "UBR-412PB(R)"
+
+msgid "_100mm_UBR-412PI"
+msgstr "UBR-412PI"
 
 msgid "_100mm_UBR-412U"
 msgstr "UBR-412U"
@@ -4598,6 +4695,9 @@ msgstr "122mm A-19炮(37型）"
 msgid "_122mm_A-19_short"
 msgstr "122mm A-19炮"
 
+msgid "_122mm_BK_9T"
+msgstr "BK-9T"
+
 msgid "_122mm_BK_9U"
 msgstr "BK-9U"
 
@@ -4673,6 +4773,9 @@ msgstr "BR-471PS"
 msgid "_122mm_BR_472PVA"
 msgstr "BR-472PVA"
 
+msgid "_122mm_BR_472T"
+msgstr "BR-472T"
+
 msgid "_122mm_BR_472U"
 msgstr "BR-472U"
 
@@ -4744,6 +4847,9 @@ msgstr "122mm M62-T2U炮"
 
 msgid "_122mm_M62_T2_A"
 msgstr "122mm M62-T2A炮"
+
+msgid "_122mm_M62_TS2"
+msgstr "122mm M62-TS2炮"
 
 msgid "_122mm_OF-462"
 msgstr "OF-462"
@@ -4832,6 +4938,9 @@ msgstr "UOF-472"
 msgid "_122mm_UOF_471M"
 msgstr "UOF-471M"
 
+msgid "_122mm_UOF_472T"
+msgstr "UOF-472T"
+
 msgid "_122mm_UOF_472U"
 msgstr "UOF-472U"
 
@@ -4854,7 +4963,7 @@ msgid "_122mm_cannon_U-11_SH"
 msgstr "122mm U-11炮"
 
 msgid "_122mm_cannon_mod_1930"
-msgstr "122mm M1910/30炮"
+msgstr "122mm M1910/30榴弹炮"
 
 msgid "_122mm_howitzer_A-19"
 msgstr "122mm A-19榴弹炮"
@@ -4886,6 +4995,9 @@ msgstr "130mm 2A50炮"
 msgid "_130mm_3VBK"
 msgstr "3VBK"
 
+msgid "_130mm_3VBKB"
+msgstr "3VBKB"
+
 msgid "_130mm_3VBKS"
 msgstr "3VBKS"
 
@@ -4913,11 +5025,17 @@ msgstr "53-OF-482M"
 msgid "_130mm_53_VBR_482"
 msgstr "53-VBR-482"
 
+msgid "_130mm_53_VBR_482B"
+msgstr "53-VBR-482B"
+
 msgid "_130mm_53_VBR_482S"
 msgstr "53-VBR-482S"
 
 msgid "_130mm_53_VOF_482V"
 msgstr "53-VOF-482V"
+
+msgid "_130mm_53_VOF_482VB"
+msgstr "53-VOF-482VB"
 
 msgid "_130mm_53_VOF_482VS"
 msgstr "53-VOF-482VS"
@@ -4930,6 +5048,9 @@ msgstr "130mm B-13炮"
 
 msgid "_130mm_M_65"
 msgstr "130mm M-65炮"
+
+msgid "_130mm_M_65B"
+msgstr "130mm M-65B炮"
 
 msgid "_130mm_M_65K"
 msgstr "130 mm M-65K炮"
@@ -5395,6 +5516,9 @@ msgstr "5TDF-SM"
 
 msgid "_6TD"
 msgstr "6TD"
+
+msgid "_6TD_K"
+msgstr "6TD-K"
 
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APCR Mk.1T"

@@ -1,8 +1,14 @@
 package net.wg.gui.components.controls
 {
+   import flash.text.TextFormatAlign;
+   import net.wg.data.constants.Linkages;
+   import net.wg.gui.components.common.counters.Counter;
    import net.wg.gui.components.controls.VO.SimpleRendererVO;
    import net.wg.gui.components.controls.events.RendererEvent;
    import net.wg.infrastructure.base.UIComponentEx;
+   import net.wg.infrastructure.managers.counter.CounterProps;
+   import net.wg.utils.ICounterManager;
+   import net.wg.utils.ICounterProps;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
    import scaleform.clik.data.ListData;
@@ -11,6 +17,12 @@ package net.wg.gui.components.controls
    
    public class ToggleRenderer extends UIComponentEx implements IListItemRenderer
    {
+      
+      public static const COUNTER_DEFAULT_OFFSET_X:int = 3;
+      
+      public static const COUNTER_DEFAULT_OFFSET_Y:int = 1;
+      
+      public static const COUNTER_TF_PADDING:int = 0;
        
       
       public var btn:BlackButton = null;
@@ -23,8 +35,11 @@ package net.wg.gui.components.controls
       
       private var _updateSelectedFromData:Boolean = true;
       
+      private var _counterManager:ICounterManager;
+      
       public function ToggleRenderer()
       {
+         this._counterManager = App.utils.counterManager;
          super();
       }
       
@@ -50,6 +65,7 @@ package net.wg.gui.components.controls
                }
                this.btn.tooltip = this._rendererData.tooltip;
                this.btn.enabled = this._rendererData.enabled;
+               this.updateCounter(this._rendererData.isNew);
             }
             else
             {
@@ -60,6 +76,8 @@ package net.wg.gui.components.controls
       
       override protected function onDispose() : void
       {
+         this._counterManager.disposeCountersForContainer(this.getCounterContainerUIID());
+         this._counterManager = null;
          this.btn.removeEventListener(ButtonEvent.CLICK,this.onBtnClickHandler);
          this.btn.dispose();
          this.btn = null;
@@ -113,6 +131,7 @@ package net.wg.gui.components.controls
       
       public function set selectable(param1:Boolean) : void
       {
+         this._rendererData.selected = param1;
          this.btn.selected = param1;
       }
       
@@ -140,6 +159,28 @@ package net.wg.gui.components.controls
       {
          this.selectable = !this.selectable;
          dispatchEvent(new RendererEvent(RendererEvent.ITEM_CLICK,this._index,true));
+      }
+      
+      private function updateCounter(param1:Boolean) : void
+      {
+         if(param1)
+         {
+            this._counterManager.setCounter(this.btn,"",this.getCounterContainerUIID(),this.getCounterProps());
+         }
+         else
+         {
+            this._counterManager.removeCounter(this.btn,this.getCounterContainerUIID());
+         }
+      }
+      
+      private function getCounterContainerUIID() : String
+      {
+         return this.name;
+      }
+      
+      private function getCounterProps() : ICounterProps
+      {
+         return new CounterProps(COUNTER_DEFAULT_OFFSET_X,COUNTER_DEFAULT_OFFSET_Y,TextFormatAlign.RIGHT,true,Linkages.COUNTER_UI,COUNTER_TF_PADDING,false,Counter.EMPTY_STATE);
       }
    }
 }

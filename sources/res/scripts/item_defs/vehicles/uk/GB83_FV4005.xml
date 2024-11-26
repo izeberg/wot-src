@@ -1927,6 +1927,38 @@
 				<slotId>18000</slotId>
 				<position>0 0 0</position>
 				<rotation>0 0 0</rotation>
+				<scale>1 1 1</scale>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					-1.643 0.17919 -1.023733
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>
+					1.643 0.17919 -1.02373
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
 			</slot>
 		</customizationSlots>
 		<customization>
@@ -5085,6 +5117,18 @@
 							<anchorShift>0.121764</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								0.000001 0.536 -0.132126
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -6190,6 +6234,33 @@
 					</scale>
 					<showOn>256</showOn>
 					<anchorShift>0.043075</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0 1.93 -1.512856
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						0.000373 1.390735 -2.55276
+						<!--BW_String-->
+					</position>
+					<rotation>
+						-0 -1.570796 1.570796
+						<!--BW_String-->
+					</rotation>
+					<scale>1 1 1</scale>
+					<applyType>universal</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

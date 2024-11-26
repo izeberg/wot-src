@@ -220,6 +220,9 @@ msgstr "CC-67B A型"
 msgid "Chassis_It31_CC_67_B_2"
 msgstr "CC-67B B型"
 
+msgid "Chassis_It33_Prototipo_6"
+msgstr "6号中坦样车"
+
 msgid "Chassis_It34_Toro"
 msgstr "\"金牛座\""
 
@@ -606,6 +609,23 @@ msgstr ""
 msgid "It31_CC_67_B_short"
 msgstr "SMV CC-67"
 
+msgid "It33_Prototipo_6"
+msgstr "6号中坦样车"
+
+msgid "It33_Prototipo_6_descr"
+msgstr ""
+"20世纪50年代末，I系军方对D系设计师的项目产生了兴趣。他们计划设计一种类似D系标准坦克的30吨级坦克。6号中坦样车采用6对负重轮底盘。该坦克类似于A组的标准坦克方案，但具有一些自己的特征。设计人员最初计划采用焊接炮塔，以及基于M系坦克炮研发的武器装备。然而，从未建造原型车。为了节省开支，I系决定等到标准坦克项目完成后再购买其成品。"
+
+msgid "It33_Prototipo_6_long_special"
+msgstr ""
+"6号中坦样车配备一门105毫米3连发自动装填炮，具有高额的平均单发损伤。得益于出色的操控性，它总能在正确的时间出现在正确的地点，非常适合扮演火力支援的角色。"
+
+msgid "It33_Prototipo_6_short"
+msgstr "6号中坦样车"
+
+msgid "It33_Prototipo_6_short_special"
+msgstr "自动装填炮，出色的操控性"
+
 msgid "It34_Toro"
 msgstr "\"金牛座\""
 
@@ -660,6 +680,9 @@ msgstr "独特的火炮和间隙装甲"
 
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
+
+msgid "MB_837C"
+msgstr "MB 837C"
 
 msgid "MB_837_Aa"
 msgstr "MB 837 Aa"
@@ -720,6 +743,9 @@ msgstr "RV 4"
 
 msgid "RV_4F"
 msgstr "RV 4F"
+
+msgid "RV_4P"
+msgstr "RV 4P"
 
 msgid "RV_4_213_V"
 msgstr "RV-4/213/V"
@@ -892,6 +918,9 @@ msgstr "CC 64 1型"
 msgid "Turret_1_It31_CC_67_B"
 msgstr "CC-67B A型"
 
+msgid "Turret_1_It33_Prototipo_6"
+msgstr "6号中坦样车"
+
 msgid "Turret_1_It34_Toro"
 msgstr "\"金牛座\""
 
@@ -955,6 +984,15 @@ msgstr "c.g. 102 EP"
 msgid "_102mm_c_p_102_AP_Rh"
 msgstr "c.p. 102 AP Rh"
 
+msgid "_105mm_58_AP_T"
+msgstr "c.p. 105/58 AP-T"
+
+msgid "_105mm_58_HE_T"
+msgstr "c.g. 105/58 HE-T"
+
+msgid "_105mm_58_HVAP_T"
+msgstr "c.p. 105/58 HVAP-T"
+
 msgid "_105mm_APDS305"
 msgstr "c.p. 105/51 305"
 
@@ -990,6 +1028,9 @@ msgstr "105mm L/25炮"
 
 msgid "_105mm_Cannone_da_105_58"
 msgstr "105mm L/58炮"
+
+msgid "_105mm_Cannone_da_105_58_Rh_V1"
+msgstr "105/58 Rh V1炮"
 
 msgid "_105mm_HE_M113"
 msgstr "c.g. 105/51 HE M113"

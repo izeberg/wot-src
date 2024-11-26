@@ -32,13 +32,9 @@ package net.wg.gui.eventcomponents
          gotoAndStop(param1);
       }
       
-      public function setText(param1:String, param2:Boolean = false) : void
+      public function setText(param1:String) : void
       {
          this.txtField.text = param1;
-         if(param2)
-         {
-            App.utils.commons.updateTextFieldSize(this.txtField);
-         }
       }
       
       public function setValue(param1:String) : void

@@ -32,10 +32,13 @@ msgid "crewSkins/itemType/common"
 msgstr "普通乘员皮肤"
 
 msgid "crewSkins/itemType/epic"
-msgstr "中级乘员皮肤"
+msgstr "独特乘员皮肤"
 
 msgid "crewSkins/itemType/rare"
-msgstr "特级乘员皮肤"
+msgstr "稀有乘员皮肤"
+
+msgid "customization/attachment"
+msgstr "3D附件"
 
 msgid "customization/camouflage"
 msgstr "涂装"
@@ -67,8 +70,14 @@ msgstr "两位数"
 msgid "customization/personalNumber_3"
 msgstr "三位数"
 
+msgid "customization/plural/attachment"
+msgstr "3D附件"
+
 msgid "customization/plural/camouflage"
 msgstr "涂装"
+
+msgid "customization/plural/customStyle"
+msgstr "2D风格"
 
 msgid "customization/plural/decal"
 msgstr "贴花"
@@ -94,8 +103,8 @@ msgstr "三位数"
 msgid "customization/plural/projectionDecal"
 msgstr "贴花"
 
-msgid "customization/plural/style"
-msgstr "风格"
+msgid "customization/plural/uncustomStyle"
+msgstr "3D风格"
 
 msgid "customization/projectionDecal"
 msgstr "贴花"

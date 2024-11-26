@@ -445,6 +445,8 @@ package
       
       public static const CUSTOMIZATION_ADDED_PERSONALNUMBER_1:String = "#system_messages:customization/added/personalNumber_1";
       
+      public static const CUSTOMIZATION_ADDED_ATTACHMENT:String = "#system_messages:customization/added/attachment";
+      
       public static const CUSTOMIZATION_ADDED_PAINTVALUE:String = "#system_messages:customization/added/paintValue";
       
       public static const CUSTOMIZATION_ADDED_CAMOUFLAGEVALUE:String = "#system_messages:customization/added/camouflageValue";
@@ -466,6 +468,8 @@ package
       public static const CUSTOMIZATION_ADDED_PERSONALNUMBER_2VALUE:String = "#system_messages:customization/added/personalNumber_2Value";
       
       public static const CUSTOMIZATION_ADDED_PERSONALNUMBER_1VALUE:String = "#system_messages:customization/added/personalNumber_1Value";
+      
+      public static const CUSTOMIZATION_ADDED_ATTACHMENTVALUE:String = "#system_messages:customization/added/attachmentValue";
       
       public static const CUSTOMIZATION_REMOVED_PAINT:String = "#system_messages:customization/removed/paint";
       
@@ -489,6 +493,8 @@ package
       
       public static const CUSTOMIZATION_REMOVED_PERSONALNUMBER_1:String = "#system_messages:customization/removed/personalNumber_1";
       
+      public static const CUSTOMIZATION_REMOVED_ATTACHMENT:String = "#system_messages:customization/removed/attachment";
+      
       public static const CUSTOMIZATION_REMOVED_PAINTVALUE:String = "#system_messages:customization/removed/paintValue";
       
       public static const CUSTOMIZATION_REMOVED_CAMOUFLAGEVALUE:String = "#system_messages:customization/removed/camouflageValue";
@@ -510,6 +516,8 @@ package
       public static const CUSTOMIZATION_REMOVED_PERSONALNUMBER_2VALUE:String = "#system_messages:customization/removed/personalNumber_2Value";
       
       public static const CUSTOMIZATION_REMOVED_PERSONALNUMBER_1VALUE:String = "#system_messages:customization/removed/personalNumber_1Value";
+      
+      public static const CUSTOMIZATION_REMOVED_ATTACHMENTVALUE:String = "#system_messages:customization/removed/attachmentValue";
       
       public static const CUSTOMIZATION_PROGRESSION_UP_STYLE:String = "#system_messages:customization/progression/up/style";
       
@@ -2480,10 +2488,6 @@ package
       public static const BATTLEPASS_SWITCH_STARTED_BODY:String = "#system_messages:battlePass/switch_started/body";
       
       public static const BATTLEPASS_SWITCH_PAUSE_BODY:String = "#system_messages:battlePass/switch_pause/body";
-      
-      public static const BATTLEPASS_SWITCH_DISABLE_TITLE:String = "#system_messages:battlePass/switch_disable/title";
-      
-      public static const BATTLEPASS_SWITCH_DISABLE_BODY:String = "#system_messages:battlePass/switch_disable/body";
       
       public static const BATTLEPASS_SWITCH_ENABLED_BODY:String = "#system_messages:battlePass/switch_enabled/body";
       

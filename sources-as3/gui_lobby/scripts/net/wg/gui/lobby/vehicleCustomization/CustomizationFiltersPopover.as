@@ -86,6 +86,10 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public var additionalCheckBox:CheckBox = null;
       
+      public var lblRarityFilters:TextField = null;
+      
+      public var raritiesBtns:SimpleTileList = null;
+      
       private var _initData:FiltersPopoverVO = null;
       
       private var _focusChain:Vector.<InteractiveObject>;
@@ -122,7 +126,9 @@ package net.wg.gui.lobby.vehicleCustomization
          this.additionalCheckBox.addEventListener(Event.SELECT,this.onAdditionalCheckBoxSelectHandler);
          setListParams(this.filterBtns);
          setListParams(this.formBtns);
+         setListParams(this.raritiesBtns);
          this.formBtns.addEventListener(RendererEvent.ITEM_CLICK,this.onFormBtnsItemClickHandler);
+         this.raritiesBtns.addEventListener(RendererEvent.ITEM_CLICK,this.onRarityBtnsItemClickHandler);
          this.filterBtns.addEventListener(RendererEvent.ITEM_CLICK,this.onFilterBtnsItemClickHandler);
       }
       
@@ -134,13 +140,17 @@ package net.wg.gui.lobby.vehicleCustomization
          this.ddlGroups.removeEventListener(MouseEvent.MOUSE_OUT,this.onDdlGroupTypeMouseOutHandler);
          this.filterBtns.removeEventListener(RendererEvent.ITEM_CLICK,this.onFilterBtnsItemClickHandler);
          this.formBtns.removeEventListener(RendererEvent.ITEM_CLICK,this.onFormBtnsItemClickHandler);
+         this.raritiesBtns.removeEventListener(RendererEvent.ITEM_CLICK,this.onRarityBtnsItemClickHandler);
          this.additionalCheckBox.removeEventListener(Event.SELECT,this.onAdditionalCheckBoxSelectHandler);
          this.separator = null;
          this.lblTitle = null;
          this.lblShowOnlyFilters = null;
          this.lblFormFilters = null;
+         this.lblRarityFilters = null;
          this.formBtns.dispose();
          this.formBtns = null;
+         this.raritiesBtns.dispose();
+         this.raritiesBtns = null;
          this.lblGroups = null;
          this.ddlGroups.dispose();
          this.ddlGroups = null;
@@ -171,6 +181,7 @@ package net.wg.gui.lobby.vehicleCustomization
                this.lblGroups.htmlText = this._initData.lblGroups;
                this.lblShowOnlyFilters.htmlText = this._initData.lblShowOnlyFilters;
                this.lblFormFilters.htmlText = this._initData.formsBtnsLbl;
+               this.lblRarityFilters.htmlText = this._initData.raritiesBtnsLbl;
                this.btnDefault.label = this._initData.btnDefault;
                this.btnDefault.tooltip = this._initData.btnDefaultTooltip;
                if(!this._dpInited)
@@ -205,6 +216,15 @@ package net.wg.gui.lobby.vehicleCustomization
                   _loc1_ += this.ddlGroups.height;
                }
                _loc1_ += ELEMENT_PADDING;
+               if(this.raritiesBtns.visible)
+               {
+                  this.lblRarityFilters.y = _loc1_ + ADD_TEXT_OFFSET;
+                  _loc1_ += this.lblRarityFilters.height;
+                  _loc1_ += DD_OFFSET + FILTERS_OFFSET;
+                  this.raritiesBtns.validateNow();
+                  this.raritiesBtns.y = _loc1_;
+                  _loc1_ += this.raritiesBtns.height + AFTER_FORM_FILTERS_OFFSET;
+               }
                if(this.formBtns.visible)
                {
                   this.lblFormFilters.y = _loc1_ + ADD_TEXT_OFFSET;
@@ -251,6 +271,9 @@ package net.wg.gui.lobby.vehicleCustomization
          this.formBtns.dataProvider = this._initData.formsBtns;
          this.formBtns.visible = this._initData.formsBtns && this._initData.formsBtns.length;
          this.lblFormFilters.visible = this.formBtns.visible;
+         this.raritiesBtns.dataProvider = this._initData.raritiesBtns;
+         this.raritiesBtns.visible = this._initData.raritiesBtns && this._initData.raritiesBtns.length;
+         this.lblRarityFilters.visible = this.raritiesBtns.visible;
          this.additionalCheckBox.selected = this._initData.additionalCheckBoxData.selected;
          this.additionalCheckBox.visible = this.lblAdditional.visible = this._initData.additionalEnabled;
          invalidateData();
@@ -310,6 +333,11 @@ package net.wg.gui.lobby.vehicleCustomization
       private function onFormBtnsItemClickHandler(param1:RendererEvent) : void
       {
          onFormChangeS(param1.index,this.formBtns.getRendererAt(param1.index).selectable);
+      }
+      
+      private function onRarityBtnsItemClickHandler(param1:RendererEvent) : void
+      {
+         onRarityChangeS(param1.index,this.raritiesBtns.getRendererAt(param1.index).selectable);
       }
       
       private function onDdlGroupIndexChangeHandler(param1:ListEvent) : void

@@ -30,6 +30,9 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/general"
+msgstr "常规"
+
 msgid "bonus/condition/camouflage"
 msgstr "将涂装应用于坦克车体时，依据坦克类型提供隐蔽加成。"
 
@@ -98,6 +101,9 @@ msgstr "部分物品购买失败。请您查看库存情况。"
 
 msgid "buyWindow/title/activeStyle"
 msgstr "永久风格"
+
+msgid "buyWindow/title/all"
+msgstr "全地形"
 
 msgid "buyWindow/title/bonus/camouflage"
 msgstr "隐蔽提高%(bonus)s"
@@ -5278,6 +5284,18 @@ msgstr "?empty?"
 msgid "camouflage/touchdown_camo/label"
 msgstr "降落"
 
+msgid "camouflage/tournaments_2024_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/tournaments_2024_1/label"
+msgstr "勇者之心"
+
+msgid "camouflage/tournaments_2024_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/tournaments_2024_2/label"
+msgstr "不屈不挠"
+
 msgid "camouflage/toys_world/description"
 msgstr "?empty?"
 
@@ -6454,14 +6472,30 @@ msgstr "已应用"
 msgid "carousel/itemLabel/purchased"
 msgstr "已安装"
 
-msgid "carousel/message/description"
+msgid "carousel/message/attachment/default/description"
+msgstr ""
+"3D附件是一种全新个性化元素。\n"
+"3D附件可作为进度奖励获得，也可购于军械库。"
+
+msgid "carousel/message/attachment/default/header"
+msgstr "暂无3D附件"
+
+msgid "carousel/message/attachment/unsapport/description"
+msgstr "?empty?"
+
+msgid "carousel/message/attachment/unsapport/header"
+msgstr ""
+"%(name)s暂不支持\n"
+"3D附件。"
+
+msgid "carousel/message/default/description"
 msgstr "筛选查看个性化元素。"
 
-msgid "carousel/message/header"
-msgstr "未发现"
+msgid "carousel/message/default/header"
+msgstr "未找到"
 
 msgid "carousel/message/noProgressionDecals"
-msgstr "您可以在获得渐变贴花后将其应用在坦克上。"
+msgstr "获得渐变贴花后即可应用"
 
 msgid "carousel/message/propertysheet"
 msgstr "使用筛选或关闭贴花自定义菜单来查看个性化元素。"
@@ -6546,6 +6580,18 @@ msgstr "×2"
 
 msgid "customization/Popover/scale/small"
 msgstr "×1"
+
+msgid "customization/RarityRewardScreen/button/close"
+msgstr "关闭"
+
+msgid "customization/RarityRewardScreen/button/toExterior"
+msgstr "前往个性化"
+
+msgid "customization/RarityRewardScreen/button/toGarage"
+msgstr "前往车库"
+
+msgid "customization/RarityRewardScreen/subtitle"
+msgstr "%(rarity)s3D附件"
 
 msgid "customization/UnsupportedForm"
 msgstr "应用失败"
@@ -6677,6 +6723,15 @@ msgstr "移除徽章2"
 msgid "customization/emptyPersonalNumber"
 msgstr "未输入战术数字的数字。"
 
+msgid "customization/emptyState/attachments"
+msgstr "可安装3D附件的坦克"
+
+msgid "customization/escHelp/left"
+msgstr "您可按下"
+
+msgid "customization/escHelp/right"
+msgstr "来返回上一级菜单。"
+
 msgid "customization/filter/allGroups"
 msgstr "所有组"
 
@@ -6733,6 +6788,12 @@ msgstr "显示/隐藏可升级个性化元素。"
 msgid "customization/filterPopover/progressionDecalsBtn/header"
 msgstr "可升级元素"
 
+msgid "customization/filterPopover/rarity/body"
+msgstr "显示/隐藏%(rarity)s3D附件。"
+
+msgid "customization/filterPopover/rarity/header"
+msgstr "%(rarity)s"
+
 msgid "customization/filterPopover/refresh/body"
 msgstr ""
 "点击以重置设置个性化\n"
@@ -6741,11 +6802,20 @@ msgstr ""
 msgid "customization/filterPopover/refresh/header"
 msgstr "默认设置"
 
+msgid "customization/header/counter/attachment"
+msgstr "已安装3D附件数量: %(filled)s/%(available)s"
+
 msgid "customization/header/counter/camouflage"
 msgstr "坦克上的涂装: %(filled)s/%(available)s"
 
-msgid "customization/header/counter/editablestyle/installed"
-msgstr "已应用“%(name)s”预设风格"
+msgid "customization/header/counter/customStyle/installed"
+msgstr "已应用2D风格"
+
+msgid "customization/header/counter/customStyle/notInstalled"
+msgstr "未应用2D风格"
+
+msgid "customization/header/counter/editableStyle/installed"
+msgstr "已应用\"%(name)s\"风格"
 
 msgid "customization/header/counter/emblem"
 msgstr "坦克上的徽章: %(filled)s/%(available)s"
@@ -6762,11 +6832,11 @@ msgstr "坦克上的喷漆: %(filled)s/%(available)s"
 msgid "customization/header/counter/projectionDecal"
 msgstr "坦克上的贴花: %(filled)s/%(available)s"
 
-msgid "customization/header/counter/style/installed"
-msgstr "应用预设风格"
+msgid "customization/header/counter/uncustomStyle/installed"
+msgstr "已应用3D风格"
 
-msgid "customization/header/counter/style/notInstalled"
-msgstr "未应用预设风格"
+msgid "customization/header/counter/uncustomStyle/notInstalled"
+msgstr "未应用3D风格"
 
 msgid "customization/headerCloseBtn/body"
 msgstr "未购买或应用的个性化元素将不会保存。"
@@ -6776,6 +6846,21 @@ msgstr "返回车库"
 
 msgid "customization/hint/maxQtyDecalsApplied"
 msgstr "最大贴花数量"
+
+msgid "customization/hint/newCustomizationSection"
+msgstr ""
+"查看全新\n"
+"3D个性化版块"
+
+msgid "customization/hint/suitableVehicleList"
+msgstr ""
+"适合安装\n"
+"3D附件的坦克"
+
+msgid "customization/hint/vehicleCustomizationFilter"
+msgstr ""
+"已添加\n"
+"个性化筛选"
 
 msgid "customization/infotype/description/map"
 msgstr "地图:%(mapType)s"
@@ -6899,7 +6984,7 @@ msgid "customization/itemsPopover/btn"
 msgstr "坦克上的个性化元素"
 
 msgid "customization/itemsPopover/btn/disabled"
-msgstr "无适用于%(mapType)s的坦克自定义元素。"
+msgstr "该坦克上没有应用个性化元素。"
 
 msgid "customization/itemsPopover/btn/style/disabled"
 msgstr "坦克上没有应用个性化元素。"
@@ -6918,6 +7003,9 @@ msgstr "延长租用时间"
 
 msgid "customization/kitPopover/title/items"
 msgstr "坦克外观"
+
+msgid "customization/kitPopover/title/summary"
+msgstr "简介"
 
 msgid "customization/limited/current/vehicle"
 msgstr " (当前坦克)"
@@ -6952,6 +7040,9 @@ msgstr "草地"
 msgid "customization/mapType/winter"
 msgstr "雪地"
 
+msgid "customization/modeLine/title"
+msgstr "可同时安装"
+
 msgid "customization/nonHistoric/buttonText/defaultView"
 msgstr "重置为默认"
 
@@ -6978,6 +7069,9 @@ msgstr "资产不足"
 
 msgid "customization/notSelectedItems"
 msgstr "未选择个性化元素。"
+
+msgid "customization/notification/new"
+msgstr "新"
 
 msgid "customization/popover/style/any"
 msgstr "任意"
@@ -7030,6 +7124,15 @@ msgstr "%(value)s风格"
 msgid "customization/progressiveKitPopover/title"
 msgstr "%(value)s风格"
 
+msgid "customization/propertySheet/disabled/attachment/move"
+msgstr "该3D附件不提供移动选项。"
+
+msgid "customization/propertySheet/disabled/attachment/rotate"
+msgstr "该3D附件不提供旋转选项。"
+
+msgid "customization/propertySheet/disabled/attachment/scale"
+msgstr "该3D附件不提供缩放选项。"
+
 msgid "customization/propertySheet/disabled/camouflage"
 msgstr "此涂装无法使用颜色设置。"
 
@@ -7056,6 +7159,15 @@ msgstr "可用于%(vehicle)s"
 
 msgid "customization/quests/pbsItem"
 msgstr "%(itemName)s%(itemType)s"
+
+msgid "customization/rarity/epic"
+msgstr "史诗"
+
+msgid "customization/rarity/legendary"
+msgstr "传说"
+
+msgid "customization/rarity/rare"
+msgstr "稀有"
 
 msgid "customization/rent/special/text"
 msgstr "为特定数量的战斗购买的个性化元素将可用于当前坦克。"
@@ -7092,6 +7204,9 @@ msgstr "应用到坦克"
 
 msgid "customization/tooltip/applied/vehicleNation"
 msgstr "所有%(nation)s的坦克"
+
+msgid "customization/tooltip/attachmentEarn"
+msgstr "可安装在\"鼠\"式、\"豹\"I、261工程、FV4005等坦克上。您可在个性化的3D附件版块中查看完整坦克列表。"
 
 msgid "customization/tooltip/bonus/aimer"
 msgstr "炮手"
@@ -7193,6 +7308,9 @@ msgstr "租用"
 msgid "customization/tooltip/characteristics/serialNumber"
 msgstr "风格编号：%(number)s"
 
+msgid "customization/tooltip/characteristics/specialEffect"
+msgstr "在战斗中展示特殊效果"
+
 msgid "customization/tooltip/characteristics/title"
 msgstr "元素属性"
 
@@ -7258,6 +7376,9 @@ msgstr "如果您的坦克有至少一个非历史或虚构元素，启用对应
 
 msgid "customization/tooltip/description/nonHistoric/title"
 msgstr "坦克上的非历史元素"
+
+msgid "customization/tooltip/getattachment"
+msgstr "3D附件可在各种活动中获取，也可在军械库中购买。"
 
 msgid "customization/tooltip/inventory/available"
 msgstr "仓库中"
@@ -7934,6 +8055,9 @@ msgstr "低图形设置可能会影响材质效果。"
 msgid "customization/unsuitable"
 msgstr "不适用"
 
+msgid "customization/vehicleList"
+msgstr "可安装3D附件的坦克列表。"
+
 msgid "customizationHeader/aboutProgressiveStyles"
 msgstr "关于渐变风格"
 
@@ -7963,6 +8087,9 @@ msgstr "将涂装应用于坦克车体时，依据坦克类型提供隐蔽加成
 
 msgid "elementAwardTooltip/description/style"
 msgstr "隐藏奖励基于所有类型地图上的坦克类型。"
+
+msgid "elementBonus/desc/attachment"
+msgstr "\"%(value)s\"3D附件"
 
 msgid "elementBonus/desc/camouflage"
 msgstr "%(value)s涂装"
@@ -10846,11 +10973,17 @@ msgstr "堕落天使警告"
 msgid "emblem/special/sticker_839"
 msgstr "小心激光"
 
+msgid "emblem/special/sticker_840"
+msgstr "服役14年"
+
 msgid "emblem/special/sticker_841"
 msgstr "寒冰之怒"
 
 msgid "emblem/special/sticker_842"
 msgstr "劈波斩浪"
+
+msgid "emblem/special/sticker_843"
+msgstr "2025冬季OLS"
 
 msgid "filter/popover/bonusType/title"
 msgstr "加成类型"
@@ -10866,6 +10999,9 @@ msgstr "所有组"
 
 msgid "filter/popover/groups/title"
 msgstr "分类"
+
+msgid "filter/popover/rarity/title"
+msgstr "稀有度"
 
 msgid "filter/popover/showonlyfilters/acquired"
 msgstr "库存元素"
@@ -13471,6 +13607,12 @@ msgstr "无敌勇士"
 
 msgid "inscription/special/special_766"
 msgstr "电闪雷鸣"
+
+msgid "inscription/special/special_768"
+msgstr "明日之星"
+
+msgid "inscription/special/special_769"
+msgstr "2025冬季OLS"
 
 msgid "inscription/special/special_81"
 msgstr "为了祖国！"
@@ -19239,6 +19381,9 @@ msgstr "格迪米纳斯之柱"
 msgid "projection_decals/special/projection_decal_811"
 msgstr "第一骑士"
 
+msgid "projection_decals/special/projection_decal_818"
+msgstr "不屈不挠"
+
 msgid "projection_decals/special/projection_decal_82"
 msgstr "善行改变世界"
 
@@ -19404,44 +19549,47 @@ msgstr "翻转"
 msgid "propertySheet/actionBtn/move"
 msgstr "转移(%(current)s/%(total)s)"
 
+msgid "propertySheet/actionBtn/remove/attachment"
+msgstr "移除3D附件[Delete键]"
+
 msgid "propertySheet/actionBtn/remove/camouflage"
-msgstr "移除涂装[Delete]"
+msgstr "移除涂装[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/chassis"
-msgstr "从悬挂装置移除[Delete]"
+msgstr "从悬挂装置移除[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/emblem"
-msgstr "移除徽章[Delete]"
+msgstr "移除徽章[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/gun"
-msgstr "从火炮移除[Delete]"
+msgstr "从火炮移除[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/hull"
-msgstr "从车体移除[Delete]"
+msgstr "从车体移除[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/inscription"
-msgstr "移除签名[Delete]"
+msgstr "移除签名[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/mask"
-msgstr "从炮盾移除[Delete]"
+msgstr "从炮盾移除[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/modification"
-msgstr "移除效果[Delete]"
+msgstr "移除战损[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/paint"
-msgstr "移除喷漆[Delete]"
+msgstr "移除喷漆[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/projectionDecal"
-msgstr "移除贴花[Delete]"
+msgstr "移除贴花[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/seasons"
 msgstr "全地图移除"
 
 msgid "propertySheet/actionBtn/remove/tank"
-msgstr "从坦克移除[Delete]"
+msgstr "从坦克移除[Delete键]"
 
 msgid "propertySheet/actionBtn/remove/turret"
-msgstr "从炮塔移除[Delete]"
+msgstr "从炮塔移除[Delete键]"
 
 msgid "propertySheet/actionBtn/removeDisabled"
 msgstr "无法移除%(itemType)s"
@@ -19450,7 +19598,10 @@ msgid "propertySheet/actionBtn/removeFromAllMapsDisabled"
 msgstr "无法为所有地图类型移除%(itemType)s"
 
 msgid "propertySheet/actionBtn/removeStyle"
-msgstr "移除风格[Delete]"
+msgstr "移除风格[Delete键]"
+
+msgid "propertySheet/actionBtn/rotate/attachment"
+msgstr "旋转物体"
 
 msgid "propertySheet/actionBtn/switchProgression"
 msgstr "变更等级(%(current)s/%(total)s)"
@@ -19525,6 +19676,9 @@ msgstr ""
 msgid "propertySheet/keyboard/hint"
 msgstr "点击以下按键改变元素的颜色"
 
+msgid "propertySheet/map/all"
+msgstr "全地形"
+
 msgid "propertySheet/map/desert"
 msgstr "沙地"
 
@@ -19591,6 +19745,9 @@ msgstr "适用于: %(mapType)s"
 
 msgid "propertySheet/title/color"
 msgstr "色彩模式"
+
+msgid "propertySheet/title/remove/attachment"
+msgstr "移除3D附件"
 
 msgid "propertySheet/title/remove/camouflage"
 msgstr "移除涂装"
@@ -21218,9 +21375,6 @@ msgstr "那年那兔那些事儿：雪地"
 msgid "repaint/zhang_hanyu"
 msgstr "C系色彩"
 
-msgid "savedStyles/label"
-msgstr "已保存风格调整: %(current)s/%(max)s %(img)s"
-
 msgid "season/selection/desert"
 msgstr "沙地"
 
@@ -21261,6 +21415,39 @@ msgid "shop/entryPoint"
 msgstr ""
 "前往\n"
 "军械库"
+
+msgid "sidebar/item/tooltip/header"
+msgstr "该坦克上的3D附件:"
+
+msgid "sidebar/item/tooltip/none/body"
+msgstr "该坦克没有安装3D附件"
+
+msgid "sidebar/sortBy/amountOf3DAttachments"
+msgstr "安装的3D附件"
+
+msgid "sidebar/sortBy/inDepot"
+msgstr "在仓库中"
+
+msgid "sidebar/sortBy/name"
+msgstr "坦克名称"
+
+msgid "sidebar/sortBy/nation"
+msgstr "系别"
+
+msgid "sidebar/sortBy/tier"
+msgstr "等级"
+
+msgid "sidebar/sortBy/type"
+msgstr "类型"
+
+msgid "sidebar/sortToggleBtn/name"
+msgstr "名称"
+
+msgid "sidebar/submitBtn/label"
+msgstr "确认"
+
+msgid "sidebar/title"
+msgstr "适合安装3D附件的坦克"
 
 msgid "special_style/10years_fortress"
 msgstr "红色要塞"
@@ -25236,11 +25423,11 @@ msgstr ""
 "您希望它们都手感好，行动起来轻松自如。您也希望它们结实可靠，但一点磨损又能使其更富个性。最重要的是，您希望它们都能展现您自己的独特风格。大多数时候，不是您找到了那条特别的牛仔裤或那辆特别的坦克，而是它们找到了您。当那个时刻来临时，相信我，您一定会意识到的。"
 
 msgid "special_style/kingtiger"
-msgstr "捕获虎王"
+msgstr "缴获的虎王"
 
 msgid "special_style/kingtiger_desc/long"
 msgstr ""
-"该坦克曾服役于第506重型装甲营第2部，并于1944年11月在亚琛附近被击中，它被M系部队俘获，然后由第7装甲师129装甲兵器维修营修复。1944年12月15日，该坦克投入作战行动并被M系部队战斗摄像师拍摄。该视频被收录在一个专门讨论M系部队陆军参与的西线战区电影收藏中。关于该坦克的命运，我们一无所知。"
+"该坦克曾服役于第506重装甲营第2连，1944年11月在亚琛附近被击中。它被M系部队俘获，随后由第7装甲师129装甲军械维修营修复。1944年12月15日，M系战地记者拍摄了该坦克投入作战的视频，被收录在一部记录M系部队在西线战场作战行动的电影集中。该坦克最终的命运不得而知。"
 
 msgid "special_style/korean_military"
 msgstr "寒冷天气科瑞亚部队"
@@ -25562,7 +25749,7 @@ msgstr "为了纪念登陆作战的全地形风格。"
 msgid "special_style/na_dday_desc/long"
 msgstr ""
 "诺曼底登陆，又被称为霸王行动或D-"
-"Day，是一次大规模战略行动，1944年6月登陆北部海岸。这是战时最关键的战役之一，此次战役的结果就是成功打开了第二条战线，迫使敌人将部队分散部署到东西方。"
+"Day，是发生在1944年6月6日的一次登陆F系北部海岸的大规模战略行动。这是战时最关键的战役之一，成功开启了第二战线，迫使敌人从东线战场分兵防守西线。"
 
 msgid "special_style/na_womens_day_1"
 msgstr "三月(粉红)"
@@ -26422,8 +26609,7 @@ msgstr "西罗科"
 
 msgid "special_style/siroco_desc/long"
 msgstr ""
-"该坦克由布林德·德·福里斯特-马林(Blinde de Fusiliers-"
-"Marins)兵团第4中队使用。该团于1943年秋成立，其坦克在1944年8月西线核心城市解放运动中发挥了积极作用。以纪录片和照片闻名的D系“黑豹”在市中心协和广场被该团的坦克摧毁。第4中队坦克的显著特点是它们的名字是根据风的类型命名的:TEMPETE(风暴)、CYCLONE(旋风)、MISTRAL(西北风)、OURAGAN(飓风)、TORNADE(龙卷风)和SIROCO(热风)。"
+"该坦克由海军燧发枪装甲团(RBFM)第4中队使用。该团于1943年秋成立，装备的坦克在1944年8月解放西线核心城市的战役中发挥了重要作用。在相关纪录片和老照片中频繁亮相的那辆被击毁于市中心协和广场的“黑豹”坦克正是该团的战果。第4中队坦克的显著特点是以不同类型的风来命名：TEMPETE(风暴)、CYCLONE(旋风)、MISTRAL(西北风)、OURAGAN(飓风)、TORNADE(龙卷风)和SIROCO(热风)。"
 
 msgid "special_style/smnp2"
 msgstr "故事模式第二部分"
@@ -26694,6 +26880,12 @@ msgstr "三色线程(诺曼底行动)"
 
 msgid "special_style/touchdown"
 msgstr "降落"
+
+msgid "special_style/tournaments_2024"
+msgstr "勇者之心"
+
+msgid "special_style/tournaments_2024_desc"
+msgstr "一款全地形风格，奖励给2025冬季OLS的支持者。"
 
 msgid "special_style/toys_world"
 msgstr "玩具世界"

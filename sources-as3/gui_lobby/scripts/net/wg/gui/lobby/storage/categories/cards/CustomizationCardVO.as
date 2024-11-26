@@ -14,6 +14,12 @@ package net.wg.gui.lobby.storage.categories.cards
       
       public var progressiveLevelIcon:String = "";
       
+      public var hasRarity:Boolean = false;
+      
+      public var rarityIcon:String = "";
+      
+      public var rarityBackground:String = "";
+      
       public var formfactor:String = "";
       
       public function CustomizationCardVO(param1:Object)
@@ -28,7 +34,7 @@ package net.wg.gui.lobby.storage.categories.cards
          {
             return false;
          }
-         return super.isEqual(_loc2_) && this.previewAvailable == _loc2_.previewAvailable && this.isRentable == _loc2_.isRentable && this.previewTooltip == _loc2_.previewTooltip && this.progressiveLevelIcon == _loc2_.progressiveLevelIcon && this.formfactor == _loc2_.formfactor;
+         return super.isEqual(_loc2_) && this.previewAvailable == _loc2_.previewAvailable && this.isRentable == _loc2_.isRentable && this.previewTooltip == _loc2_.previewTooltip && this.progressiveLevelIcon == _loc2_.progressiveLevelIcon && this.formfactor == _loc2_.formfactor && this.rarityIcon == _loc2_.rarityIcon && this.rarityBackground == _loc2_.rarityBackground;
       }
       
       override public function toString() : String

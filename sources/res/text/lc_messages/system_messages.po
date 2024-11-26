@@ -431,9 +431,6 @@ msgstr "您已切换至另一章节。现在已激活\"%(chapter)s\"章节。"
 msgid "battlePass/switch_disable/battle_royale/body"
 msgstr "由于系统维护，战斗通行证功能暂时无法在钢铁猎手中使用。我们对给您造成的不便深表歉意。"
 
-msgid "battlePass/switch_disable/body"
-msgstr "赛季已结束。下赛季见！"
-
 msgid "battlePass/switch_disable/comp7/body"
 msgstr "由于系统维护，您在天梯战模式中暂时无法获得战斗通行证点数。"
 
@@ -442,9 +439,6 @@ msgstr "由于系统维护，战斗通行证功能暂时无法在前线模式中
 
 msgid "battlePass/switch_disable/ranked/body"
 msgstr "由于系统维护，战斗通行证功能暂时无法在排位赛中使用。"
-
-msgid "battlePass/switch_disable/title"
-msgstr "战斗通行证赛季%(seasonNum)d"
 
 msgid "battlePass/switch_enabled/body"
 msgstr ""
@@ -1047,6 +1041,12 @@ msgstr "已添加乘员皮肤:%(count)s个"
 msgid "current_vehicle_changed"
 msgstr "当前坦克被替换为‘%s’。"
 
+msgid "customization/added/attachment"
+msgstr "已添加\"%s\"3D附件"
+
+msgid "customization/added/attachmentValue"
+msgstr "已添加\"%s\"3D附件: (x%s)"
+
 msgid "customization/added/camouflage"
 msgstr "已添加%s涂装"
 
@@ -1144,6 +1144,12 @@ msgstr "%s风格已提升至%s级"
 
 msgid "customization/prohibited"
 msgstr "无法应用:%(itemName)s不在清单中。"
+
+msgid "customization/removed/attachment"
+msgstr "已移除\"%s\"3D附件"
+
+msgid "customization/removed/attachmentValue"
+msgstr "已移除\"%s\"3D附件: (x%s)"
 
 msgid "customization/removed/camouflage"
 msgstr "移除涂装%s"
@@ -2429,7 +2435,7 @@ msgid "personalMissions/select/server_error/DISABLED"
 msgstr "活动不可用。任务暂时被禁用。"
 
 msgid "personalMissions/select/server_error/LOCKED_BY_VEHICLE_QUEST"
-msgstr "注意！若要改变任务，请等待所有用于当前活动任务的坦克返回车库。"
+msgstr "注意！若要改变任务，请等待所有适用于已激活任务的坦克返回车库。"
 
 msgid "personalMissions/select/server_error/NOT_BOUGHT_TILE"
 msgstr "无法选择%(questNames)s任务。请先完成前置作战行动。"

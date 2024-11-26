@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G124_Pz_Kpfw_38_K/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.037427 -0.000000 -1.127952</min>
+		<max>1.038381 0.716488 1.048418</max>
+	</visibilityBox>
+	<parent>vehicles/german/G124_Pz_Kpfw_38_K/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+</root>

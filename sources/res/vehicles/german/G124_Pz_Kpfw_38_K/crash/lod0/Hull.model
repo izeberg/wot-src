@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G124_Pz_Kpfw_38_K/crash/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.386252 -0.941713 -2.687283</min>
+		<max>1.390421 0.709632 2.460378</max>
+	</visibilityBox>
+	<parent>vehicles/german/G124_Pz_Kpfw_38_K/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

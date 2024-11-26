@@ -638,7 +638,7 @@ msgstr "AMBT"
 
 msgid "A149_AMBT_descr"
 msgstr ""
-"在20世纪70年代，陆军装甲和工程委员会的提摩西上尉提出了一项坦克设计，以牺牲装甲为代价换取更小的外形与更低的车重。在那个时代，机动性和隐蔽性被认为是对抗反坦克武器更有效的方法，因此这辆坦克计划采用“豹”式的设计思路，并与经过多种改装的M60坦克实现零部件通用。未建造原型车。"
+"在20世纪70年代，陆军装甲和工程委员会的提摩西上尉提出了一项坦克设计，以牺牲装甲为代价换取更小的外形与更低的车重。在那个时代，机动性和隐蔽性被认为是对抗反坦克武器更有效的方法，因此这辆坦克计划采用“豹”式的设计思路，并与不同型号的M60坦克实现零部件通用。未建造原型车。"
 
 msgid "A149_AMBT_long_special"
 msgstr ""
@@ -735,6 +735,22 @@ msgstr "XM66F"
 
 msgid "A153_XM66F_short_special"
 msgstr "可靠的正面装甲和强大的火炮"
+
+msgid "A154_Convertible_Medium_Tank_T3E2"
+msgstr "T3E2战斗车"
+
+msgid "A154_Convertible_Medium_Tank_T3E2_descr"
+msgstr ""
+"1932年10月，军需委员会确定了T3E2战斗车的参数，两年后，第一辆原型车下线，但经过测试后又返厂进行改进。到1936年，该坦克已经过多次改进，并最终准备投入使用；但此时，其设计已过时，M系军方随即停止使用该坦克。其两辆原型车曾在博物馆展出一段时间，随后被拆解。"
+
+msgid "A154_Convertible_Medium_Tank_T3E2_long_special"
+msgstr "T3E2战斗车具有出色的操控性和机动性，可在战斗开始时迅速占据关键点位。开场即可投入战斗的能力，使其具有很高的可玩性。"
+
+msgid "A154_Convertible_Medium_Tank_T3E2_short"
+msgstr "T3E2战斗车"
+
+msgid "A154_Convertible_Medium_Tank_T3E2_short_special"
+msgstr "出色的操控性，良好的机动性"
 
 msgid "A155_AAT60"
 msgstr "AAT60"
@@ -997,6 +1013,23 @@ msgstr "一辆M系II级轻型坦克，拥有不错的机动性，以及弹夹装
 
 msgid "A74_T1_E6_short_special"
 msgstr "高射速火炮，良好的机动性"
+
+msgid "A76_M3_A3"
+msgstr "M3A3 \"斯图亚特\""
+
+msgid "A76_M3_A3_descr"
+msgstr ""
+"该坦克是M3轻型坦克的进一步改进型，采用了不同形状的焊接车体，大幅增加了战斗舱内部空间，提高了乘员的舒适度。同时，通过取消首上装甲板上的大型舱门，车体的抗弹性能有所提高。坦克的量产从1943年1月持续到9月，共生产3427辆，其中的2045辆被运往Y系并被重新命名为\"斯图亚特\"V。M3A3还参与了多场冲突。绝大多数M3A3在战事结束后退役，但在少数地区一直服役到了20世纪90年代。"
+
+msgid "A76_M3_A3_long_special"
+msgstr ""
+"除了高射速和良好的火炮手感外，M3A3 \"斯图亚特\"还拥有优秀的机动性和出色的观察范围。集这些优势于一身，它称得上是同等级中性能全面的轻型坦克。"
+
+msgid "A76_M3_A3_short"
+msgstr "M3A3 \"斯图亚特\""
+
+msgid "A76_M3_A3_short_special"
+msgstr "良好的机动性，较高的射速"
 
 msgid "A78_M4_Improved"
 msgstr "M4改进型"
@@ -1308,6 +1341,9 @@ msgstr "交叉传动 CD-850-4"
 msgid "Chassis_A153_XM66F"
 msgstr "MX66"
 
+msgid "Chassis_A154_Convertible_Medium_Tank_T3E2"
+msgstr "T3E2战斗车"
+
 msgid "Chassis_A155_AAT60"
 msgstr "AAT60"
 
@@ -1352,6 +1388,9 @@ msgstr "T3 HMC"
 
 msgid "Chassis_A46_T3_2"
 msgstr "T3 HMC 改进型"
+
+msgid "Chassis_A76_M3_A3"
+msgstr "M3A3 \"斯图亚特\""
 
 msgid "Chassis_A99_T92_LT"
 msgstr "T92 LT"
@@ -1996,6 +2035,14 @@ msgstr ""
 "大陆\n"
 "W-670-7"
 
+msgid "Continental_W_670_9A"
+msgstr "大陆 W-670-9A"
+
+msgid "Continental_W_670_9A_short"
+msgstr ""
+"大陆\n"
+"W-670-9A"
+
 msgid "Crysler_A57"
 msgstr "克莱斯勒 A57"
 
@@ -2024,6 +2071,9 @@ msgstr "“科宁汉姆” E2"
 
 msgid "Cunningham_type_3"
 msgstr "“科宁汉姆” V8"
+
+msgid "Curtiss_D_12"
+msgstr "柯蒂斯 D-12"
 
 msgid "D37812"
 msgstr "D37812"
@@ -2565,6 +2615,9 @@ msgstr "SCR 506"
 
 msgid "SCR_508"
 msgstr "SCR 508"
+
+msgid "SCR_508B"
+msgstr "SCR 508 B"
 
 msgid "SCR_508_1"
 msgstr "SCR 508/1"
@@ -3250,6 +3303,9 @@ msgstr "T42"
 msgid "Turret_1_A153_XM66F"
 msgstr "XM66F"
 
+msgid "Turret_1_A154_Convertible_Medium_Tank_T3E2"
+msgstr "T3E2战斗车"
+
 msgid "Turret_1_A155_AAT60"
 msgstr "AAT60"
 
@@ -3288,6 +3344,9 @@ msgstr "T82 HMC"
 
 msgid "Turret_1_A46_T3"
 msgstr "T3 HMC"
+
+msgid "Turret_1_A76_M3_A3"
+msgstr "M3A3 \"斯图亚特\""
 
 msgid "Turret_1_A99_T92_LT"
 msgstr "T92 lt"
@@ -4259,6 +4318,12 @@ msgstr "APCBC 1935"
 msgid "_37mm_APC_M51"
 msgstr "APC M51"
 
+msgid "_37mm_APC_M51E3"
+msgstr "APC M51E3"
+
+msgid "_37mm_APC_M51_E2"
+msgstr "APC M51"
+
 msgid "_37mm_APC_M59A1"
 msgstr "AAC APC"
 
@@ -4266,6 +4331,12 @@ msgid "_37mm_APC_M59A5"
 msgstr "AAC APCR"
 
 msgid "_37mm_AP_M74"
+msgstr "AP M74"
+
+msgid "_37mm_AP_M74E3"
+msgstr "AP M74E3"
+
+msgid "_37mm_AP_M74_E2"
 msgstr "AP M74"
 
 msgid "_37mm_Browning_Semi_Automatic"
@@ -4280,6 +4351,12 @@ msgstr "37mm勃朗宁半自动炮"
 msgid "_37mm_Gun_M1916"
 msgstr "37mm M1916炮"
 
+msgid "_37mm_Gun_M1916E2"
+msgstr "37mm M1916E2炮"
+
+msgid "_37mm_Gun_M6E3"
+msgstr "37mm M6E3炮"
+
 msgid "_37mm_HE1916"
 msgstr "HE 1916"
 
@@ -4287,6 +4364,12 @@ msgid "_37mm_HE_M54"
 msgstr "AAC HE"
 
 msgid "_37mm_HE_M63"
+msgstr "HE M63"
+
+msgid "_37mm_HE_M63E3"
+msgstr "HE M63E3"
+
+msgid "_37mm_HE_M63_E2"
 msgstr "HE M63"
 
 msgid "_37mm_M-3_antitank_gun"

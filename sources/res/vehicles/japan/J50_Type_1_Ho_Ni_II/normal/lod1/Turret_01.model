@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J50_Type_1_Ho_Ni_II/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.462692 -0.283679 -0.628246</min>
+		<max>0.212294 1.019974 0.131691</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J50_Type_1_Ho_Ni_II/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

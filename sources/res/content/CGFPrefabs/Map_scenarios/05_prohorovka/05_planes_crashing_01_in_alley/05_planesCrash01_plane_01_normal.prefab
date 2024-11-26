@@ -1806,5 +1806,19 @@
 				</config>
 			</component>
 		</ComponentPool>
+		<ComponentPool>
+			<type>AIDataPatch</type>
+			<version>2</version>
+			<component>
+				<UUID>f4afa5f9-98a2-4d9e-aa7b-0957d532725d</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>patchName</name>
+						<value>05_planesCrash01_ai</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
 	</components>
 </root>

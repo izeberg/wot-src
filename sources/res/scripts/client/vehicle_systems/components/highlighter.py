@@ -1,10 +1,8 @@
-import typing, BigWorld, GenericComponents
+import BigWorld
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-from EdgeDrawer import HighlightComponent, EdgeHighlightComponent
+from EdgeDrawer import EdgeHighlightComponent
 import cgf_obsolete_script.py_component
-if typing.TYPE_CHECKING:
-    import CGF
 
 class Highlighter(cgf_obsolete_script.py_component.Component):
     HIGHLIGHT_OFF = 0
@@ -117,18 +115,11 @@ class Highlighter(cgf_obsolete_script.py_component.Component):
         if appearance is not None:
             isOn = status & self.HIGHLIGHT_ON
             root = appearance.gameObject
-            compositionRoot = GenericComponents.findRootSlot(root)
-            _setCgfHighlighter(root, HighlightComponent, args, isOn)
-            _setCgfHighlighter(compositionRoot, EdgeHighlightComponent, args, isOn)
+            if root is None or not root.isValid():
+                return
+            highlight = root.findComponentByType(EdgeHighlightComponent)
+            if highlight is not None:
+                root.removeComponent(highlight)
+            if isOn:
+                root.createComponent(EdgeHighlightComponent, args[0], args[1], args[2], args[3])
         return
-
-
-def _setCgfHighlighter(gameObject, componentType, args, isOn):
-    if gameObject is None or not gameObject.isValid():
-        return
-    highlight = gameObject.findComponentByType(componentType)
-    if highlight is not None:
-        gameObject.removeComponent(highlight)
-    if isOn:
-        gameObject.createComponent(componentType, args[0], args[1], args[2], args[3], False)
-    return

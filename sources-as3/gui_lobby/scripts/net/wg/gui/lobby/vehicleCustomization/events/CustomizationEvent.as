@@ -36,6 +36,10 @@ package net.wg.gui.lobby.vehicleCustomization.events
       public static const ITEMS_POPOVER_CLOSED:String = "customizationItemsPopoverStateInvalid";
       
       public static const NEW_ANIMATION_SHOWN:String = "CarouselItemRendererIsNewAnimationShown";
+      
+      public static const SHOW_ATTACHMENTS_VIDEO:String = "BottomPanelEmptyVideo";
+      
+      public static const SHOW_VEHICLES_SIDEBAR:String = "BottomPanelAttachmentsPopover";
        
       
       private var _index:int = -1;

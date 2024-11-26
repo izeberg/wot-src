@@ -5,23 +5,31 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.display.Sprite;
    import flash.events.Event;
    import flash.geom.Point;
-   import net.wg.gui.components.advanced.collapsingBar.ResizableButton;
+   import mx.effects.easing.Linear;
    import net.wg.gui.components.containers.HorizontalGroupLayout;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabBar;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabButton;
+   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationModalLine;
+   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
    import net.wg.gui.lobby.vehicleCustomization.events.CustomizationTabEvent;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.IFocusChainContainer;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.controls.Button;
+   import scaleform.clik.motion.Tween;
    
    public class CustomizationTabNavigator extends UIComponentEx implements IFocusChainContainer
    {
       
       private static const BUTTON_LINKAGE:String = "CustomizationBottomPanelTabButtonUI";
       
-      private static const MIN_RESOLUTION:int = 900;
+      private static const MIN_RESOLUTION:int = 1000;
+      
+      private static const MIN_OFFSET:int = -50;
+      
+      private static const ANIMATION_DURATION:int = 300;
+      
+      private static const MODAL_INVALID:String = "modalFrameInvalid";
        
       
       public var overlay:MovieClip = null;
@@ -30,13 +38,13 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public var selector:MovieClip = null;
       
-      public var firstHighlight:MovieClip = null;
-      
-      public var lastHighlight:MovieClip = null;
+      public var modalLine:CustomizationModalLine = null;
       
       private var _selectedId:int = -1;
       
       private var _isMinResolution:Boolean;
+      
+      private var _tween:Tween = null;
       
       public function CustomizationTabNavigator()
       {
@@ -49,34 +57,45 @@ package net.wg.gui.lobby.vehicleCustomization
          this.tabBar.layout = new HorizontalGroupLayout(-3,false);
          this.tabBar.buttonLinkage = BUTTON_LINKAGE;
          this.tabBar.allowedKeyboard = false;
-         this.tabBar.toggleResolutions(App.appHeight < MIN_RESOLUTION);
+         this.tabBar.toggleResolutions(App.appWidth < MIN_RESOLUTION);
       }
       
       override protected function configUI() : void
       {
          var _loc1_:Sprite = null;
          super.configUI();
-         this.firstHighlight.mouseEnabled = this.lastHighlight.mouseEnabled = false;
-         this.firstHighlight.mouseChildren = this.lastHighlight.mouseChildren = false;
          _loc1_ = new Sprite();
          this.selector.hitArea = _loc1_;
          this.overlay.hitArea = _loc1_;
          addChild(_loc1_);
          this.tabBar.addEventListener(Event.CHANGE,this.onTabBarChangeHandler);
          this.tabBar.addEventListener(Event.RESIZE,this.onTabBarResizeHandler);
+         this.updateLayout();
       }
       
       override protected function onDispose() : void
       {
+         App.utils.scheduler.cancelTask(this.animModal);
+         this.clearTween();
          this.tabBar.removeEventListener(Event.CHANGE,this.onTabBarChangeHandler);
          this.tabBar.removeEventListener(Event.RESIZE,this.onTabBarResizeHandler);
          this.tabBar.dispose();
          this.tabBar = null;
-         this.firstHighlight = null;
-         this.lastHighlight = null;
+         this.modalLine.dispose();
+         this.modalLine = null;
          this.selector = null;
          this.overlay = null;
          super.onDispose();
+      }
+      
+      public function clearTween() : void
+      {
+         if(this._tween != null)
+         {
+            this._tween.paused = true;
+            this._tween.dispose();
+            this._tween = null;
+         }
       }
       
       override protected function draw() : void
@@ -85,6 +104,11 @@ package net.wg.gui.lobby.vehicleCustomization
          if(isInvalid(InvalidationType.SIZE))
          {
             this.overlay.width = _width;
+            this.updateLayout();
+         }
+         if(isInvalid(MODAL_INVALID))
+         {
+            this.validateModalAnim();
          }
       }
       
@@ -100,45 +124,40 @@ package net.wg.gui.lobby.vehicleCustomization
          this.tabBar.setData(param1.tabsDP,param1.selectedTab);
       }
       
-      public function setTabsPluses(param1:Array) : void
-      {
-         var _loc2_:ResizableButton = null;
-         var _loc3_:int = param1.length;
-         var _loc4_:int = 0;
-         while(_loc4_ < _loc3_)
-         {
-            _loc2_ = CustomizationBottomPanelTabButton(this.tabBar.getButtonAt(_loc4_));
-            CustomizationBottomPanelTabButton(_loc2_).showPlus(param1[_loc4_]);
-            _loc4_++;
-         }
-      }
-      
       public function switchState(param1:Boolean) : void
       {
          this.tabBar.visible = param1;
-         this.firstHighlight.visible = param1;
-         this.lastHighlight.visible = param1;
          this.selector.visible = param1;
          this.tabBar.focusable = param1;
+      }
+      
+      public function updateBorders(param1:int, param2:int) : void
+      {
+         this.tabBar.updateBorders(param1,param2);
       }
       
       public function updateStage(param1:int, param2:int) : void
       {
          this.width = param1;
-         var _loc3_:Boolean = param2 < MIN_RESOLUTION;
-         var _loc4_:Boolean = this.tabBar.checkCollapsing();
-         if(this._isMinResolution != _loc3_ || _loc4_ != this.tabBar.isBarCollapsed)
+         var _loc3_:Boolean = param1 < MIN_RESOLUTION;
+         if(this._isMinResolution != _loc3_)
          {
             this.toggleResolutions(_loc3_);
-            this.tabBar.collapseBar(_loc4_);
          }
-         else
+         this.updateCollapsing();
+         this.updateLayout();
+      }
+      
+      private function updateCollapsing() : void
+      {
+         var _loc1_:Boolean = this.tabBar.checkCollapsing();
+         if(_loc1_ != this.tabBar.isBarCollapsed)
          {
-            this.updateLayout();
+            this.tabBar.collapseBar(_loc1_);
          }
       }
       
-      public function setNotificationCounters(param1:Array) : void
+      public function setNotificationCounters(param1:CustomizationBottomPanelNotificationVO) : void
       {
          this.tabBar.setNotificationCounters(param1);
       }
@@ -168,18 +187,31 @@ package net.wg.gui.lobby.vehicleCustomization
          param1.validateNow();
          var _loc2_:Point = param1.parent.localToGlobal(new Point(param1.x,param1.y));
          _loc2_ = globalToLocal(_loc2_);
-         this.firstHighlight.x = _loc2_.x;
-         this.lastHighlight.x = _loc2_.x + param1.width;
-         this.firstHighlight.y = this.lastHighlight.y = _loc2_.y;
          this.selector.x = _loc2_.x + (param1.width >> 1);
-         this.selector.y = _loc2_.y + param1.height;
       }
       
       private function updateLayout() : void
       {
-         this.lastHighlight.height = this.firstHighlight.height = this.tabBar.height;
          this.tabBar.x = _width - this.tabBar.width >> 1;
+         if(this.tabBar.isBarCollapsed)
+         {
+            this.tabBar.x += MIN_OFFSET;
+         }
          this.updateSelector(this.tabBar.getButtonAt(this.tabBar.selectedIndex));
+         invalidate(MODAL_INVALID);
+      }
+      
+      private function validateModalAnim() : void
+      {
+         App.utils.scheduler.scheduleOnNextFrame(this.animModal);
+      }
+      
+      private function animModal() : void
+      {
+         this.clearTween();
+         var _loc1_:Point = this.tabBar.getBound();
+         this._tween = new Tween(ANIMATION_DURATION,this.modalLine,{"x":this.tabBar.x + _loc1_.x},{"ease":Linear.easeIn});
+         this.modalLine.update(_loc1_);
       }
       
       private function toggleResolutions(param1:Boolean) : void
@@ -190,6 +222,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function onTabBarResizeHandler(param1:Event) : void
       {
+         this.updateCollapsing();
          this.updateLayout();
          dispatchEvent(new Event(Event.RESIZE));
       }

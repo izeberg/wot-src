@@ -12,6 +12,12 @@ package net.wg.gui.lobby.vehicleCustomization.data
       
       public var counterID:String = "";
       
+      public var isInActiveGroup:Boolean = false;
+      
+      public var isEnabled:Boolean = false;
+      
+      public var showPlus:Boolean = false;
+      
       public function CustomizationTabButtonVO(param1:Object = null)
       {
          super(param1);

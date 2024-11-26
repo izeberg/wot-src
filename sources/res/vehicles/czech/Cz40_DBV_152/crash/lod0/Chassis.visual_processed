@@ -92,7 +92,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>176</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -113,10 +113,6 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.354750 0.585105 -0.107106</groupOrigin>
@@ -152,7 +148,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>176</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -173,10 +169,6 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.402787 0.577831 -0.568818</groupOrigin>

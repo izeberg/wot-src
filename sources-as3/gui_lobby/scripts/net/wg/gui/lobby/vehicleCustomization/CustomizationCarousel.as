@@ -6,8 +6,6 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Rectangle;
-   import flash.text.TextField;
-   import flash.text.TextFieldAutoSize;
    import net.wg.data.ListDAAPIDataProvider;
    import net.wg.data.VO.TankCarouselFilterInitVO;
    import net.wg.data.VO.TankCarouselFilterSelectedVO;
@@ -22,6 +20,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.gui.interfaces.IMagneticClickHandler;
    import net.wg.gui.lobby.vehicleCustomization.controls.CarouselItemRenderer;
    import net.wg.gui.lobby.vehicleCustomization.controls.ShopEntryPoint;
+   import net.wg.gui.lobby.vehicleCustomization.data.FilterFallbackDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselBookmarkVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselFilterVO;
@@ -55,6 +54,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const FILTERS_GAP_OFFSET:int = -5;
       
+      private static const FALLBACK_OFFSET:int = 90;
+      
       private static const BOOK_MARK_BACK_MOVIE:String = "BookmarkBackingUI";
       
       private static const SHOP_ENTRY_POINT_BUTTON_SMALL_UI:String = "ShopEntryPointButtonSmallUI";
@@ -86,7 +87,7 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const SHOP_ENTRY_X:int = 0;
        
       
-      public var lblMessage:TextField = null;
+      public var emptyStateComponent:EmptyStateComponent = null;
       
       public var scrollBar:ScrollBarBookmarked = null;
       
@@ -116,6 +117,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private var _classFactory:IClassFactory;
       
+      private var _currentGroupId:int = -1;
+      
       public function CustomizationCarousel()
       {
          this._bookmarkBackings = new Vector.<MovieClip>();
@@ -137,7 +140,6 @@ package net.wg.gui.lobby.vehicleCustomization
          scrollList.maskOffsetLeft = scrollList.maskOffsetRight = MASK_SIDE_OFFSET;
          scrollList.maskOffsetTop = MASK_TOP_OFFSET;
          scrollList.showRendererOnlyIfDataExists = true;
-         this.lblMessage.autoSize = TextFieldAutoSize.LEFT;
          this._layoutController = new CustomizationCarouselLayoutController(scrollList);
          this._layoutRenderer = new CustomizationCarouselLayoutRenderer(scrollList,this._layoutController);
          scrollList.setLayoutController(this._layoutController);
@@ -161,7 +163,8 @@ package net.wg.gui.lobby.vehicleCustomization
          this.scrollBar = null;
          this.carouselFilters.dispose();
          this.carouselFilters = null;
-         this.lblMessage = null;
+         this.emptyStateComponent.dispose();
+         this.emptyStateComponent = null;
          this.filterCounter.dispose();
          this.filterCounter = null;
          this.projectionDecalHint.dispose();
@@ -179,9 +182,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function updateLayout(param1:int, param2:int = 0) : void
       {
-         var _loc3_:int = 0;
          var _loc6_:Rectangle = null;
-         _loc3_ = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
+         var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
          var _loc5_:int = _loc4_ + leftArrowOffset - rightArrowOffset;
          if(this.shopEntryPointBtn)
@@ -191,7 +193,6 @@ package net.wg.gui.lobby.vehicleCustomization
          }
          this.filterCounter.x = FILTERS_COUNTER_OFFSET + this.leftOffset;
          this.carouselFilters.x = FILTERS_LEFT_OFFSET + this.leftOffset;
-         this.lblMessage.x = (_loc4_ - this.lblMessage.textWidth >> 1) + _loc3_;
          super.updateLayout(_loc4_,(_loc4_ - _loc5_ >> 1) + _loc3_);
          this.scrollBar.setVisibleBookmarks(scrollList.viewPort.width / _loc4_ > BOOKMARKS_COEFFICIENT);
          this.dragBlocker.width = param1;
@@ -209,6 +210,10 @@ package net.wg.gui.lobby.vehicleCustomization
          this.projectionDecalHint.width = scrollList.width - scrollList.maskOffsetLeft - scrollList.maskOffsetRight;
          this.projectionDecalHint.y = scrollList.y;
          this.projectionDecalHint.height = !!this._isMinResolution ? Number(HIT_AREA_HEIGHT_MIN) : Number(HIT_AREA_HEIGHT);
+         this.emptyStateComponent.invalidateLayout();
+         this.emptyStateComponent.validateNow();
+         this.emptyStateComponent.x = param1 - this.emptyStateComponent.width >> 1;
+         this.emptyStateComponent.y = scrollList.height - this.emptyStateComponent.height + FALLBACK_OFFSET >> 1;
       }
       
       override protected function updateAvailableScroll(param1:Boolean, param2:Boolean) : void
@@ -302,11 +307,17 @@ package net.wg.gui.lobby.vehicleCustomization
             {
                pageWidth = _loc2_[0].width + horizontalGap;
             }
-            this.lblMessage.visible = _loc5_ == 0;
+            this.emptyStateComponent.visible = _loc5_ == 0;
             scrollList.visible = true;
             this.carouselFilters.updateHotFilterSelectedFromData = false;
             this._layoutRenderer.render();
          }
+      }
+      
+      public function setCurrentGroupId(param1:int) : void
+      {
+         this._currentGroupId = param1;
+         invalidateData();
       }
       
       public function clearSelected() : void
@@ -411,14 +422,15 @@ package net.wg.gui.lobby.vehicleCustomization
             "showOnlyProgressionDecalsEnabled":param1.showOnlyProgressionDecalsEnabled,
             "showOnlyEditableStylesEnabled":param1.showOnlyEditableStylesEnabled,
             "showOnlyNonEditableStylesEnabled":param1.showOnlyNonEditableStylesEnabled,
+            "raritiesGroup":param1.raritiesGroup,
             "isInit":true
          };
          this.carouselFilters.popoverData = _loc2_;
       }
       
-      public function setFilterMessage(param1:String) : void
+      public function setFilterFallbackData(param1:FilterFallbackDataVO) : void
       {
-         this.lblMessage.htmlText = param1;
+         this.emptyStateComponent.setData(param1);
       }
       
       private function removeShopEntryPoint() : void

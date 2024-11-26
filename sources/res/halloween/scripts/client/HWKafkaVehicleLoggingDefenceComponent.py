@@ -1,4 +1,0 @@
-from HWKafkaVehicleLoggingComponent import HWKafkaVehicleLoggingComponent
-
-class HWKafkaVehicleLoggingDefenceComponent(HWKafkaVehicleLoggingComponent):
-    pass

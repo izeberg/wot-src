@@ -1,4 +1,0 @@
-from HWVehicleSoulsContainerComponent import HWVehicleSoulsContainerComponent
-
-class HWVehicleSoulsContainerDefenceComponent(HWVehicleSoulsContainerComponent):
-    pass

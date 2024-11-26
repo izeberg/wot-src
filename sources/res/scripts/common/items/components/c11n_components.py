@@ -1,11 +1,12 @@
 import itertools, operator
+from functools import partial
 from backports.functools_lru_cache import lru_cache
 import Math, items, items.vehicles as iv, nations
 from debug_utils import LOG_CURRENT_EXCEPTION
 from items import vehicles
 from items.components import shared_components
 from soft_exception import SoftException
-from items.components.c11n_constants import ApplyArea, SeasonType, Options, ItemTags, CustomizationType, MAX_CAMOUFLAGE_PATTERN_SIZE, DecalType, HIDDEN_CAMOUFLAGE_ID, PROJECTION_DECALS_SCALE_ID_VALUES, MAX_USERS_PROJECTION_DECALS, CustomizationTypeNames, DecalTypeNames, ProjectionDecalFormTags, DEFAULT_SCALE_FACTOR_ID, CUSTOMIZATION_SLOTS_VEHICLE_PARTS, CamouflageTilingType, SLOT_TYPE_NAMES, EMPTY_ITEM_ID, SLOT_DEFAULT_ALLOWED_MODEL, EDITING_STYLE_REASONS, CustomizationDisplayType
+from items.components.c11n_constants import ApplyArea, SeasonType, Options, ItemTags, CustomizationType, MAX_CAMOUFLAGE_PATTERN_SIZE, DecalType, HIDDEN_CAMOUFLAGE_ID, PROJECTION_DECALS_SCALE_ID_VALUES, MAX_USERS_PROJECTION_DECALS, CustomizationTypeNames, DecalTypeNames, ProjectionDecalFormTags, DEFAULT_SCALE_FACTOR_ID, CUSTOMIZATION_SLOTS_VEHICLE_PARTS, CamouflageTilingType, SLOT_TYPE_NAMES, EMPTY_ITEM_ID, SLOT_DEFAULT_ALLOWED_MODEL, EDITING_STYLE_REASONS, CustomizationDisplayType, AttachmentSize, AttachmentTags
 from typing import List, Dict, Type, Tuple, Optional, TypeVar, FrozenSet, Iterable, Callable, TYPE_CHECKING
 from string import lower, upper
 from copy import deepcopy
@@ -24,7 +25,7 @@ class BaseCustomizationItem(object):
     __metaclass__ = ReflectionMetaclass
     __slots__ = ('id', 'tags', 'filter', 'parentGroup', 'season', 'customizationDisplayType',
                  'i18n', 'priceGroup', 'requiredToken', 'requiredTokenCount', 'priceGroupTags',
-                 'maxNumber', 'texture', 'progression')
+                 'maxNumber', 'texture', 'progression', 'rarity')
     allSlots = __slots__
     itemType = 0
 
@@ -42,6 +43,7 @@ class BaseCustomizationItem(object):
         self.maxNumber = 0
         self.texture = ''
         self.progression = None
+        self.rarity = ''
         copyBaseValue = (lambda x: x) if not IS_EDITOR else edCopy
         if parentGroup and parentGroup.itemPrototype:
             for field in self.allSlots:
@@ -66,12 +68,16 @@ class BaseCustomizationItem(object):
         newItem.texture = deepcopy(self.texture)
         newItem.progression = deepcopy(self.progression)
         newItem.parentGroup = self.parentGroup
+        newItem.rarity = self.rarity
 
     def matchVehicleType(self, vehTypeDescr):
         return not self.filter or self.filter.matchVehicleType(vehTypeDescr)
 
     def isVehicleBound(self):
         return ItemTags.VEHICLE_BOUND in self.tags
+
+    def hasBattleEffect(self):
+        return ItemTags.BATTLE_EFFECT in self.tags
 
     def isUnlocked(self, tokens):
         requiredToken = self.requiredToken
@@ -141,6 +147,12 @@ class BaseCustomizationItem(object):
         longDescriptionSpecial = self.i18n.longDescriptionSpecial
         if self.i18n:
             return longDescriptionSpecial
+        return ''
+
+    @property
+    def name(self):
+        if self.i18n:
+            return self.i18n.name
         return ''
 
 
@@ -308,17 +320,31 @@ class SequenceItem(BaseCustomizationItem):
 class AttachmentItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.ATTACHMENT
-    __slots__ = ('modelName', 'hangarModelName', 'sequenceId', 'attachmentLogic', 'initialVisibility')
+    __slots__ = ('modelName', 'hangarModelName', 'crashModelName', 'sequenceId', 'attachmentLogic',
+                 'applyType', 'size')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
-        self.modelName = None
-        self.hangarModelName = None
-        self.sequenceId = None
-        self.attachmentLogic = None
-        self.initialVisibility = True
+        self.modelName = ''
+        self.hangarModelName = ''
+        self.crashModelName = ''
+        self.sequenceId = 0
+        self.attachmentLogic = ''
+        self.applyType = ''
+        self.size = ''
         super(AttachmentItem, self).__init__(parentGroup)
-        return
+
+    @property
+    def scaleFactorId(self):
+        return AttachmentSize.ALL.index(self.size)
+
+    @property
+    def rotatable(self):
+        return AttachmentTags.ROTATABLE in self.tags
+
+    @property
+    def scalable(self):
+        return AttachmentTags.SCALABLE in self.tags
 
 
 class ModificationItem(BaseCustomizationItem):
@@ -438,6 +464,10 @@ class StyleItem(BaseCustomizationItem):
     def hasContaineOutfitPart(self):
         return self.isEditable and self.isQuestsProgression
 
+    @property
+    def is3D(self):
+        return ItemTags.IS_3D in self.tags
+
     def _iteratePartsOutfit(self, season, intCDs, removeFromOutfit):
         if not self.hasContaineOutfitPart:
             raise StopIteration
@@ -475,7 +505,7 @@ class StyleItem(BaseCustomizationItem):
         return outfitComponent
 
     def addPartsToOutfit(self, season, outfitComponent, vehicleCD, intCDs=None):
-        return self._opPartsOutfit(type(outfitComponent).applyDiff, season, outfitComponent, vehicleCD, intCDs)
+        return self._opPartsOutfit(partial(type(outfitComponent).applyDiff, ignoreStyleDiff=True), season, outfitComponent, vehicleCD, intCDs)
 
     def removePartrsFromOutfit(self, season, outfitComponent, vehicleCD, intCDs=None):
         return self._opPartsOutfit(type(outfitComponent).getDiff, season, outfitComponent, vehicleCD, intCDs)
@@ -919,36 +949,33 @@ class CustomizationCache(object):
                 components = getattr(outfit, componentsAttrName, None)
                 if not components:
                     continue
-                else:
-                    if usedStyle is not None and not usedStyle.isEditable:
-                        raise SoftException(("Style {} can't contain extra items in outfit").format(styleID))
-                    if itemType in CustomizationType.STYLE_ONLY_RANGE and components:
-                        raise SoftException(("Outfit can't contain style-only items: {}").format(components))
-                    storage = getattr(self, componentsAttrName)
+                if itemType in CustomizationType.STYLE_ONLY_RANGE and components:
+                    raise SoftException(("Outfit can't contain style-only items: {}").format(components))
+                storage = getattr(self, componentsAttrName)
+                if usedStyle is not None:
+                    baseOutfit = usedStyle.outfits.get(season)
+                    baseComponents = getattr(baseOutfit, componentsAttrName, []) if baseOutfit else []
+                for component in components:
+                    componentId = (isinstance(component, int) or component).id if 1 else component
+                    item = storage.get(componentId, None)
+                    if componentId != EMPTY_ITEM_ID:
+                        if item is None:
+                            raise SoftException(('{} {} not found').format(typeName, componentId))
+                        _validateItem(typeName, item, season, tokens, vehType, styleID)
+                        if item.isProgressive():
+                            _validateProgression(component, item, progressionStorage, vehType)
+                        if itemType in CustomizationType.APPLIED_TO_TYPES:
+                            _validateApplyTo(component, item)
+                            if itemType == CustomizationType.CAMOUFLAGE:
+                                _validateCamouflage(component, item)
+                            elif itemType == CustomizationType.PERSONAL_NUMBER:
+                                _validatePersonalNumber(component, item)
+                        elif itemType == CustomizationType.PROJECTION_DECAL:
+                            _validateProjectionDecal(component, item, vehDescr, usedStyle)
+                        elif itemType == CustomizationType.ATTACHMENT:
+                            _validateAttachment(component, item, vehDescr)
                     if usedStyle is not None:
-                        baseOutfit = usedStyle.outfits.get(season)
-                        if not baseOutfit:
-                            raise SoftException(("Style {} hasn't base outfit for season {}").format(styleID, season))
-                        baseComponents = getattr(baseOutfit, componentsAttrName, None)
-                    for component in components:
-                        componentId = (isinstance(component, int) or component).id if 1 else component
-                        item = storage.get(componentId, None)
-                        if componentId != EMPTY_ITEM_ID:
-                            if item is None:
-                                raise SoftException(('{} {} not found').format(typeName, componentId))
-                            _validateItem(typeName, item, season, tokens, vehType, styleID)
-                            if item.isProgressive():
-                                _validateProgression(component, item, progressionStorage, vehType)
-                            if itemType in CustomizationType.APPLIED_TO_TYPES:
-                                _validateApplyTo(component, item)
-                                if itemType == CustomizationType.CAMOUFLAGE:
-                                    _validateCamouflage(component, item)
-                                elif itemType == CustomizationType.PERSONAL_NUMBER:
-                                    _validatePersonalNumber(component, item)
-                            elif itemType == CustomizationType.PROJECTION_DECAL:
-                                _validateProjectionDecal(component, item, vehDescr, usedStyle)
-                        if usedStyle is not None and usedStyle.isEditable:
-                            _validateEditableStyle(componentId, typeName, itemType, component, item, usedStyle, outfit, vehDescr, baseComponents, season)
+                        _validateStyle(componentId, typeName, itemType, component, item, usedStyle, outfit, vehDescr, baseComponents, season)
 
             if usedStyle is not None and usedStyle.isEditable:
                 _validateDependencies(outfit, usedStyle, vehDescr, season)
@@ -1166,6 +1193,24 @@ def _validateProjectionDecal(component, item, vehDescr, usedStyle=None):
     return
 
 
+def _validateAttachment(component, item, vehDescr):
+    slotId = component.slotId
+    slotParams = getVehicleAttachmentSlotParams(vehDescr, slotId)
+    if slotParams.hiddenForUser:
+        raise SoftException(('Hidden for user slot (slotId = {}) can not be in outfit').format(slotId))
+    if slotParams.applyType != item.applyType:
+        raise SoftException(('Attachment type mismatch: slot = {}, attachment = {}').format(slotParams.applyType, item.applyType))
+    if not item.rotatable and component.isRotated:
+        raise SoftException(('Attachment with id = {} cannot be rotated').format(item.id))
+    if item.scalable:
+        if not component.scaleFactorId >= 1 or not component.scaleFactorId <= slotParams.scaleFactorId:
+            raise SoftException(('Wrong scalable attachment scaleFactorId: expected range = 1-{}, got = {}').format(slotParams.scaleFactorId, component.scaleFactorId))
+    else:
+        expectedScaleFactorId = min(item.scaleFactorId, slotParams.scaleFactorId)
+        if component.scaleFactorId != expectedScaleFactorId:
+            raise SoftException(('Wrong unscalable attachment scaleFactorId: expected = {}, got = {}').format(expectedScaleFactorId, component.scaleFactorId))
+
+
 def _validatePersonalNumber(component, item):
     number = component.number
     if not number or len(number) != item.digitsCount:
@@ -1174,8 +1219,12 @@ def _validatePersonalNumber(component, item):
         raise SoftException(('number {} of personal number {} is prohibited').format(number, component.id))
 
 
-def _validateEditableStyle(componentId, typeName, itemType, component, item, baseStyle, outfit, vehDescr, baseComponents, season=SeasonType.ALL):
-    if componentId == EMPTY_ITEM_ID:
+def _validateStyle(componentId, typeName, itemType, component, item, baseStyle, outfit, vehDescr, baseComponents, season=SeasonType.ALL):
+    if itemType in CustomizationType.COMMON_TYPES:
+        return
+    if not baseStyle.isEditable:
+        raise SoftException(("Style {} can't contain extra items in outfit").format(outfit.styleId))
+    elif componentId == EMPTY_ITEM_ID:
         if isinstance(component, int):
             raise SoftException(('slot type {} is simple and not clearable in editable style').format(typeName, outfit.styleId))
         if itemType == CustomizationType.DECAL:
@@ -1218,25 +1267,28 @@ def _validateDependencies(outfit, usedStyle, vehDescr, season):
     baseSeasonOutfit = usedStyle.outfits.get(dependenciesSeason)
     if not baseSeasonOutfit:
         return
-    camouflages = outfit.camouflages or baseSeasonOutfit.camouflages
-    camouflageID = camouflages[0].id
-    paintRegions = getAvailablePaintRegions(vehDescr)
-    emblemRegions, inscriptionRegions = getAvailableDecalRegions(vehDescr)
-    decalRegions = emblemRegions | inscriptionRegions
-    modifiedOutfit = baseSeasonOutfit.applyDiff(outfit)
-    outfitToCheckDependencies = {CustomizationType.MODIFICATION: set(modifiedOutfit.modifications), 
-       CustomizationType.PAINT: {paint.id for paint in modifiedOutfit.paints if paint.appliedTo & paintRegions}, CustomizationType.DECAL: {decal.id for decal in modifiedOutfit.decals if decal.appliedTo & decalRegions}, CustomizationType.PERSONAL_NUMBER: {number.id for number in modifiedOutfit.personal_numbers if number.appliedTo & inscriptionRegions}, CustomizationType.PROJECTION_DECAL: {projectionDecal.id for projectionDecal in modifiedOutfit.projection_decals}}
-    for itemType, itemIDs in outfitToCheckDependencies.iteritems():
-        camouflageItemTypeDependencies = usedStyle.dependencies.get(camouflageID, {}).get(itemType, {})
-        alternateItems = usedStyle.alternateItems.get(itemType, ())
-        ancestors = usedStyle.dependenciesAncestors.get(itemType, {})
-        if not camouflageItemTypeDependencies or not alternateItems or not ancestors:
-            continue
-        for itemID in itemIDs:
-            if itemID not in alternateItems or itemID not in ancestors:
+    else:
+        camouflages = outfit.camouflages or baseSeasonOutfit.camouflages
+        camouflageID = camouflages[0].id if camouflages else None
+        paintRegions = getAvailablePaintRegions(vehDescr)
+        emblemRegions, inscriptionRegions = getAvailableDecalRegions(vehDescr)
+        decalRegions = emblemRegions | inscriptionRegions
+        modifiedOutfit = baseSeasonOutfit.applyDiff(outfit)
+        outfitToCheckDependencies = {CustomizationType.MODIFICATION: set(modifiedOutfit.modifications), 
+           CustomizationType.PAINT: {paint.id for paint in modifiedOutfit.paints if paint.appliedTo & paintRegions}, CustomizationType.DECAL: {decal.id for decal in modifiedOutfit.decals if decal.appliedTo & decalRegions}, CustomizationType.PERSONAL_NUMBER: {number.id for number in modifiedOutfit.personal_numbers if number.appliedTo & inscriptionRegions}, CustomizationType.PROJECTION_DECAL: {projectionDecal.id for projectionDecal in modifiedOutfit.projection_decals}}
+        for itemType, itemIDs in outfitToCheckDependencies.iteritems():
+            camouflageItemTypeDependencies = usedStyle.dependencies.get(camouflageID, {}).get(itemType, {})
+            alternateItems = usedStyle.alternateItems.get(itemType, ())
+            ancestors = usedStyle.dependenciesAncestors.get(itemType, {})
+            if not camouflageItemTypeDependencies or not alternateItems or not ancestors:
                 continue
-            if itemID not in camouflageItemTypeDependencies:
-                raise SoftException(('Incorrect dependent item {} for camouflage {}').format(itemID, camouflageID))
+            for itemID in itemIDs:
+                if itemID not in alternateItems or itemID not in ancestors:
+                    continue
+                if itemID not in camouflageItemTypeDependencies:
+                    raise SoftException(('Incorrect dependent item {} for camouflage {}').format(itemID, camouflageID))
+
+        return
 
 
 def getAvailablePaintRegions(vehDescr):
@@ -1298,8 +1350,15 @@ def validateCustomizationTypeEnabled(gameParams, customizationType):
     return CustomizationTypeNames[customizationType] not in gameParams['misc_settings']['disabledCustomizations']
 
 
+def getVehicleAttachmentSlotParams(vehicleDescr, vehicleSlotId):
+    return getVehicleSlotParams('attachment', vehicleDescr, vehicleSlotId)
+
+
 def getVehicleProjectionDecalSlotParams(vehicleDescr, vehicleSlotId, partNames=CUSTOMIZATION_SLOTS_VEHICLE_PARTS):
-    slotTypeName = 'projectionDecal'
+    return getVehicleSlotParams('projectionDecal', vehicleDescr, vehicleSlotId, partNames)
+
+
+def getVehicleSlotParams(slotTypeName, vehicleDescr, vehicleSlotId, partNames=CUSTOMIZATION_SLOTS_VEHICLE_PARTS):
     for wantedPartName in partNames:
         partApplyArea = getattr(ApplyArea, ('{}_REGIONS_VALUE').format(upper(wantedPartName)))
         for partName in CUSTOMIZATION_SLOTS_VEHICLE_PARTS:

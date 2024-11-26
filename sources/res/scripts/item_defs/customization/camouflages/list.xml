@@ -341910,7 +341910,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -341999,7 +341999,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -342208,6 +342208,105 @@
 					<!--BW_String-->
 				</offset>
 			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>867</id>
+			<texture>vehicles/russian/Camouflage/tournaments_2024_1.dds</texture>
+			<description>#vehicle_customization:camouflage/tournaments_2024_1/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/tournaments_2024_1/label</userString>
+			<tags>styleOnly fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<rotation>
+				<HULL>
+					-0.39235
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.39235
+					<!--BW_String-->
+				</TURRET>
+				<GUN>0.274366</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.4 2.4
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.29 0.93
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<glossMetallicMap>vehicles/russian/Camouflage/tournaments_2024_GMM.dds</glossMetallicMap>
+			<style>1014</style>
+		</camouflage>
+		<camouflage>
+			<id>868</id>
+			<texture>vehicles/russian/Camouflage/tournaments_2024_2.dds</texture>
+			<description>#vehicle_customization:camouflage/tournaments_2024_2/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/tournaments_2024_2/label</userString>
+			<tags>styleOnly fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<rotation>
+				<HULL>
+					-0.39235
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.39235
+					<!--BW_String-->
+				</TURRET>
+				<GUN>0.274366</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.4 2.4
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.29 0.93
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<glossMetallicMap>vehicles/russian/Camouflage/tournaments_2024_GMM.dds</glossMetallicMap>
+			<style>1015</style>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>

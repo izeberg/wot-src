@@ -2521,6 +2521,12 @@ package
       
       public static const SERVICECHANNELMESSAGES_EXTERNALVEHICLERENT_EXPIRED_REASON_BOOSTEROID:String = "#messenger:serviceChannelMessages/externalVehicleRent/expired/reason_boosteroid";
       
+      public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_HEADER:String = "#messenger:serviceChannelMessages/adventCalendar/reward/header";
+      
+      public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_DESCRIPTION:String = "#messenger:serviceChannelMessages/adventCalendar/reward/description";
+      
+      public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_BUTTON:String = "#messenger:serviceChannelMessages/adventCalendar/reward/button";
+      
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        
       

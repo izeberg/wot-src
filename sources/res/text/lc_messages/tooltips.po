@@ -1332,6 +1332,12 @@ msgstr "?empty?"
 msgid "awardItem/tourcoin/header"
 msgstr "军旅积分"
 
+msgid "awardItem/wdrcoin/body"
+msgstr "?empty?"
+
+msgid "awardItem/wdrcoin/header"
+msgstr "服役资历令牌"
+
 msgid "awardItem/xp/body"
 msgstr "增加战斗经验的一次性奖励。"
 
@@ -2803,6 +2809,33 @@ msgstr "个性化元素过滤器"
 msgid "customization/carousel/filter/header"
 msgstr "筛选"
 
+msgid "customization/disabledTabs/attachment/body"
+msgstr "仓库中没有适用于%(tankName)s的3D附件。"
+
+msgid "customization/disabledTabs/camouflage/body"
+msgstr "没有适用于%(tankName)s的涂装。"
+
+msgid "customization/disabledTabs/customStyle/body"
+msgstr "仓库中没有适用于%(tankName)s的2D风格。"
+
+msgid "customization/disabledTabs/emblem/body"
+msgstr "没有适用于%(tankName)s的徽章。"
+
+msgid "customization/disabledTabs/inscription/body"
+msgstr "没有适用于%(tankName)s的签名。"
+
+msgid "customization/disabledTabs/modification/body"
+msgstr "没有适用于%(tankName)s的战损。"
+
+msgid "customization/disabledTabs/paint/body"
+msgstr "没有适用于%(tankName)s的喷漆。"
+
+msgid "customization/disabledTabs/projectionDecal/body"
+msgstr "没有适用于%(tankName)s的贴花。"
+
+msgid "customization/disabledTabs/uncustomStyle/body"
+msgstr "仓库中没有适用于%(tankName)s的3D风格。"
+
 msgid "customization/emblem/igr/body"
 msgstr ""
 "徽章仅在打折期间是变动的<img src='img://gui/maps/icons/library/premium_small.png' "
@@ -2914,12 +2947,6 @@ msgstr "除%(vehicle)s"
 msgid "customization/questAward/exactVehicle"
 msgstr "可用于%(vehicle)s"
 
-msgid "customization/savedStyles/body"
-msgstr "系统最多保存%(max)s个已购买风格的调整结果。达到限制后，系统将重置其中一个风格的调整结果。"
-
-msgid "customization/savedStyles/title"
-msgstr "%(img)s已调整的风格: %(current)s/%(max)s"
-
 msgid "customization/scrollbar/bookmark/header"
 msgstr "%(bookmark)s"
 
@@ -2928,6 +2955,9 @@ msgstr "点击恢复到原始的个性化元素。"
 
 msgid "customization/slotRevert/header"
 msgstr "恢复"
+
+msgid "customization/storage/filters/attachments/title"
+msgstr "3D附件"
 
 msgid "customization/storage/filters/camouflage/title"
 msgstr "涂装"
@@ -2950,8 +2980,14 @@ msgstr "风格"
 msgid "customization/storage/filters/text/title"
 msgstr "签名"
 
+msgid "customization/tabs/attachment/body"
+msgstr "3D附件是单独元素，可用于个性化特定坦克。"
+
 msgid "customization/tabs/camouflage/body"
 msgstr "涂装会改变坦克的外观，并提供隐蔽加成。"
+
+msgid "customization/tabs/customStyle/body"
+msgstr "2D风格可为任意坦克的外观增添个性色彩。"
 
 msgid "customization/tabs/emblem/body"
 msgstr "徽章适用于坦克，并使特定坦克更加个性化。"
@@ -2969,7 +3005,10 @@ msgid "customization/tabs/paint/body"
 msgstr "喷漆改变默认坦克的颜色。"
 
 msgid "customization/tabs/projectionDecal/body"
-msgstr "贴花适用于坦克的多个模块，并为特定坦克增添个性。"
+msgstr "贴花可应用于坦克的数个模块，为特定坦克增添个性。"
+
+msgid "customization/tabs/uncustomStyle/body"
+msgstr "3D风格可通过精致的细节赋予特定坦克全新外观。"
 
 msgid "customizationBuyWindow/fromStorage"
 msgstr "仓库中的元素"
@@ -11645,6 +11684,9 @@ msgstr "炮塔装甲(前/侧/后 毫米)"
 msgid "vehicleParams/valueChange/template"
 msgstr "(%(value)s)"
 
+msgid "vehiclePreview/boxTooltip/attachment/header"
+msgstr "%(value)s"
+
 msgid "vehiclePreview/boxTooltip/battleBooster/header"
 msgstr "%(value)s"
 
@@ -11848,9 +11890,7 @@ msgid "vehiclePreview/shopPack/title"
 msgstr "这个礼包包含:"
 
 msgid "vehiclePreview/tankman/newPerk/header"
-msgstr ""
-"附带%(quantity)s项自选\n"
-"主要专业特长"
+msgstr "附带足以训练%(quantity)s项自选主要专业特长的乘员经验"
 
 msgid "vehiclePreview/tankman/skillsTitle"
 msgstr "已训练特长"

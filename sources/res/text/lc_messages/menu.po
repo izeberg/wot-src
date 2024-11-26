@@ -839,6 +839,9 @@ msgstr "自行火炮"
 msgid "carousel_tank_filter/all"
 msgstr "全部"
 
+msgid "carousel_tank_filter/canInstallAttachments"
+msgstr "3D附件"
+
 msgid "carousel_tank_filter/heavyTank"
 msgstr "重型坦克"
 
@@ -847,6 +850,9 @@ msgstr "轻型坦克"
 
 msgid "carousel_tank_filter/mediumTank"
 msgstr "中型坦克"
+
+msgid "carousel_tank_filter/own3DStyle"
+msgstr "3D风格"
 
 msgid "carousel_tank_filter/ready"
 msgstr "仅显示主力"
@@ -2074,7 +2080,7 @@ msgid "extraParams/name/demaskMovingFactor"
 msgstr "该参数表示敌方坦克在移动时的暴露系数。此数值越高，点亮敌人的几率也就越高。"
 
 msgid "extraParams/name/enemyModulesCrewCritChance"
-msgstr "该参数表示击伤敌方乘员和严重损伤敌方坦克模块的几率变化。适用于所有类型的炮弹。"
+msgstr "该参数表示击伤敌方乘员和严重损伤敌方坦克模块的几率变化。适用于所有类型的炮弹，但装备自动炮坦克的炮弹除外。"
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr "该参数表示给养的冷却时间。"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/french/F39_AMR_P103/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/french/F39_AMR_P103/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.117502 -0.094551 -0.617684</min>
+		<max>0.307374 0.142612 1.306629</max>
+	</visibilityBox>
+</root>

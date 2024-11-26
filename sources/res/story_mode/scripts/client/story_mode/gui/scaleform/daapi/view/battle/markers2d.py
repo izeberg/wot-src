@@ -17,6 +17,7 @@ from gui.impl.gen import R
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 from story_mode.skeletons.voiceover_controller import IVoiceoverManager
+from story_mode.skeletons.story_mode_controller import IStoryModeController
 from story_mode_common.story_mode_constants import LOGGER_NAME
 from vehicle_systems.tankStructure import TankNodeNames, TankPartIndexes
 _MARKER_CRITICAL_HIT_STATES = {
@@ -127,6 +128,7 @@ class StoryModeVehicleMarker(VehicleMarker):
 class StoryModeVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin, MarkerPluginWithOffsetInZoom):
     __slots__ = ()
     _voiceoverManager = dependency.descriptor(IVoiceoverManager)
+    _storyModeCtrl = dependency.descriptor(IStoryModeController)
 
     def __init__(self, parentObj, clazz=StoryModeVehicleMarker):
         super(StoryModeVehicleMarkerPlugin, self).__init__(parentObj, clazz)
@@ -145,7 +147,7 @@ class StoryModeVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin, MarkerPluginW
         super(StoryModeVehicleMarkerPlugin, self).stop()
 
     def _getHitState(self, eventID):
-        if eventID in _MARKER_CRITICAL_HIT_STATES:
+        if self._storyModeCtrl.isSelectedMissionOnboarding and eventID in _MARKER_CRITICAL_HIT_STATES:
             return MARKER_EMPTY_HIT_STATE
         return super(StoryModeVehicleMarkerPlugin, self)._getHitState(eventID)
 

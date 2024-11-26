@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R217_Object_Kust/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R217_Object_Kust/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.735907 0.000209 -3.259943</min>
+		<max>1.724771 1.218035 3.109743</max>
+	</visibilityBox>
+</root>

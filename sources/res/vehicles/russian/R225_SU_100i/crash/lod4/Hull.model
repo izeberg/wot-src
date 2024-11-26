@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R225_SU_100i/crash/lod4/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-1.31347 -0.502775 -2.961731
+			<!--BW_String-->
+		</min>
+		<max>
+			1.31347 1.346757 2.657201
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

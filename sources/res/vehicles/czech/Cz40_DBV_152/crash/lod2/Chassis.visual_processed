@@ -92,7 +92,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>154</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -101,10 +101,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.402787 0.577175 -0.568818</groupOrigin>
@@ -140,7 +136,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>154</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -149,10 +145,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.354750 0.581959 -0.109950</groupOrigin>

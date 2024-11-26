@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R219_Object_265T/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/russian/R219_Object_265T/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.846854 -0.812515 -3.843422</min>
+		<max>1.746228 0.711563 3.443514</max>
+	</visibilityBox>
+</root>

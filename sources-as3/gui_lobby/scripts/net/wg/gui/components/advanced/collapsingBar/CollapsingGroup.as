@@ -69,6 +69,7 @@ package net.wg.gui.components.advanced.collapsingBar
          while(_loc4_ < _loc3_)
          {
             _loc2_ = ResizableButton(getButtonAt(_loc4_));
+            _loc2_.collapsed = param1;
             if(!_loc2_.selected && param1)
             {
                this.collapse(_loc2_);

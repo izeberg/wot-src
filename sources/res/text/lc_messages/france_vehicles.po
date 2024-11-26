@@ -201,6 +201,9 @@ msgstr "?empty?"
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM 47"
 
+msgid "AN_VRC_18"
+msgstr "AN/VRC 18"
+
 msgid "AN_VRC_7"
 msgstr "AN/VRC-7"
 
@@ -341,6 +344,9 @@ msgstr ""
 
 msgid "Canon_de_105_mle_1950"
 msgstr "105mm mle.50榴弹炮"
+
+msgid "Canon_de_105_mm_modele_F1_M"
+msgstr "105mm F1 M炮"
 
 msgid "Canon_de_155mm"
 msgstr "155mm加农炮"
@@ -619,6 +625,12 @@ msgstr "AMX 30早期原型车"
 msgid "Chassis_F118_Char_Mle_75"
 msgstr "夏尔75"
 
+msgid "Chassis_F119_Char_Murat"
+msgstr "\"缪拉\""
+
+msgid "Chassis_F123_ERAC_105_Proto"
+msgstr "ERAC 105原型车"
+
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 2A型"
 
@@ -630,6 +642,9 @@ msgstr "ARL 44 II型"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "洛林 40t"
+
+msgid "Chassis_F39_AMR_P103"
+msgstr "AMR P.103"
 
 msgid "Chassis_F42_AMR_35"
 msgstr "AMR35"
@@ -787,6 +802,9 @@ msgstr "索玛 SAu 40"
 msgid "Chassis_Somua_Sau_40_2"
 msgstr "索玛 SAu 40 II型"
 
+msgid "Citroen_105"
+msgstr "雪铁龙 105"
+
 msgid "Continental_AV-1790-7B"
 msgstr "大陆 AV-1790-7B"
 
@@ -868,6 +886,9 @@ msgstr "ER 29"
 
 msgid "ER_29_bis"
 msgstr "ER 29 II型"
+
+msgid "ER_29_bis_A"
+msgstr "ER 29 II型A"
 
 msgid "ER_51"
 msgstr "ER 51"
@@ -1108,6 +1129,43 @@ msgstr "夏尔75"
 msgid "F118_Char_Mle_75_short_special"
 msgstr "短弹夹机制及燃气轮机"
 
+msgid "F119_Char_Murat"
+msgstr "\"缪拉\""
+
+msgid "F119_Char_Murat_descr"
+msgstr ""
+"该坦克拥有两个关键特色: "
+"全新的战斗室布局，以及4履带行走机构，根据设计者的说法，可以提升火力与机动水平。战斗舱由挡板分隔为乘员和火炮舱。弹夹装填系统包含一部3发弹容量的装弹机与机械式弹药架，可在任意角度下装填火炮并向装弹机中补充弹药，极大增加了火炮的射速与乘员的舒适性。履带被分为前后两部分，即便坦克触雷也能保持机动性。不过，4履带系统使得坦克底盘重量更大，且更难于驾驶与操纵。该项目仅停留在蓝图阶段。"
+
+msgid "F119_Char_Murat_long_special"
+msgstr ""
+"\"缪拉\"是一辆F系IX级中型坦克，其操控性令人印象深刻，同时得益于3连发105毫米弹夹炮，其火力也相当强劲。出众的机动性，不错的火炮稳定性加上快速的短装填时间，使得\"缪拉\"坦克称得上是一辆出色的支援型坦克，您可以主动出击，清空弹夹再迅速转移。"
+
+msgid "F119_Char_Murat_short"
+msgstr "\"缪拉\""
+
+msgid "F119_Char_Murat_short_special"
+msgstr "弹夹装填系统，出色的操控性和机动性"
+
+msgid "F123_ERAC_105_Proto"
+msgstr "ERAC 105原型车"
+
+msgid "F123_ERAC_105_Proto_descr"
+msgstr ""
+"一个研发于20世纪60年代初的两栖装甲侦察坦克项目。1963年制造了一辆功能测试样车。该坦克重量轻但火力强劲，且能够实现浮渡。它的优势包括相当出色的越野能力，可轻松穿越泥地和雪地；铝合金车体则提供了比当时大多数两栖坦克更强的防护能力。尽管测试结果较为乐观，但由于经济性原因，ERAC"
+" 105原型车未能服役。"
+
+msgid "F123_ERAC_105_Proto_long_special"
+msgstr ""
+"ERAC "
+"105原型车是一辆F系IX级轻型坦克，拥有优秀的-8度火炮俯角。得益于紧凑的尺寸，该坦克非常适合用来进行静默点亮，同时，凭借出色的精度和不俗的平均每分钟损伤，它也能高效输出。加上105毫米火炮，其火力在同等级轻型坦克中堪称出类拔萃。"
+
+msgid "F123_ERAC_105_Proto_short"
+msgstr "ERAC 105原型车"
+
+msgid "F123_ERAC_105_Proto_short_special"
+msgstr "高额的平均单发损伤，紧凑的尺寸"
+
 msgid "F124_AMX_13FL11"
 msgstr "AMX 13 (FL 11)"
 
@@ -1193,6 +1251,25 @@ msgstr "AMX AC 1948型 FL"
 
 msgid "F36_AMX_AC_Mle1948_FL_short"
 msgstr "AMX AC 1948型 FL"
+
+msgid "F39_AMR_P103"
+msgstr "AMR P.103"
+
+msgid "F39_AMR_P103_descr"
+msgstr ""
+"一个由雪铁龙工程师在1935年研发的轻型坦克项目，同年4月进行了测试，显示出其核心部分和乘员舱都拥有可靠的防护。然而，由于底盘和液压传动系统可靠性低下，且坦克行驶速度较低，该项目被终止，转而研发AMR"
+" 35。唯一的原型车后续被拆解。"
+
+msgid "F39_AMR_P103_long_special"
+msgstr ""
+"AMR "
+"P.103是一辆II级的轻型通用坦克，机动性良好，可快速到达战场上的关键点位。其火炮具有较高的射速，同时，不错的观察范围使其能高效侦察敌人，尤其是在战斗的后期阶段。"
+
+msgid "F39_AMR_P103_short"
+msgstr "AMR P.103"
+
+msgid "F39_AMR_P103_short_special"
+msgstr "良好的观察范围，较高的射速"
 
 msgid "F42_AMR_35"
 msgstr "AMR 35"
@@ -1569,6 +1646,9 @@ msgstr "希斯帕诺-絮扎 HS-110"
 msgid "Hispano_219CV_V8"
 msgstr "希斯帕诺-絮扎 V8"
 
+msgid "Hispano_ERAC"
+msgstr "希斯帕诺 ERAC"
+
 msgid "Hotchkiss_35_1"
 msgstr "霍奇基斯 H35"
 
@@ -1734,6 +1814,9 @@ msgstr "迈巴赫 HL 295 (汽油喷射)"
 
 msgid "Maybach_Mb_IV_Zeppelin_x2"
 msgstr "迈巴赫Mb. IV齐柏林x2"
+
+msgid "Moteur_EPC_version_S5"
+msgstr "E.P.C. S5型"
 
 msgid "Moteur_moderne_3M_27_1_01"
 msgstr "新型引擎 3M.27.1.01"
@@ -2043,6 +2126,9 @@ msgstr "TRVP-13"
 msgid "TRVP_13_A"
 msgstr "TRVP-13-A"
 
+msgid "TRVP_13_A3"
+msgstr "TRVP-13-A3"
+
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
 
@@ -2206,6 +2292,12 @@ msgstr "AMX 30早期原型车"
 msgid "Turret_1_F118_Char_Mle_75"
 msgstr "夏尔75"
 
+msgid "Turret_1_F119_Char_Murat"
+msgstr "\"缪拉\""
+
+msgid "Turret_1_F123_ERAC_105_Proto"
+msgstr "ERAC 105原型车"
+
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
@@ -2214,6 +2306,9 @@ msgstr "SFAC 105"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "洛林 40t"
+
+msgid "Turret_1_F39_AMR_P103"
+msgstr "AMR P.103"
 
 msgid "Turret_1_F42_AMR_35"
 msgstr "APX-5"
@@ -2441,6 +2536,9 @@ msgstr "105 leFH18B2"
 msgid "_105_leFH18B2_short_special"
 msgstr "火炮射速高，射界良好"
 
+msgid "_105_mm_D_1090"
+msgstr "105mm D.1090炮"
+
 msgid "_105mmGr39H1A"
 msgstr "Gr.39 Hl/B"
 
@@ -2516,6 +2614,12 @@ msgstr "OCC-105 D.1504(EBR)"
 msgid "_105mm_OCC_105_F1"
 msgstr "OCC-105-F1"
 
+msgid "_105mm_OCC_105_F1M"
+msgstr "OCC 105 F1M"
+
+msgid "_105mm_OCC_105_F1_ERAC"
+msgstr "OCC-105-F1 ERAC"
+
 msgid "_105mm_OCO_mle._1936"
 msgstr "OCO mle.36"
 
@@ -2524,6 +2628,9 @@ msgstr "Prf. mle.36"
 
 msgid "_105mm_OE_105_Mle_60"
 msgstr "OE-105-mle.60"
+
+msgid "_105mm_OE_105_Mle_60M"
+msgstr "OE 105 F1M Mle.60"
 
 msgid "_105mm_OE_105_Mle_60_D1504"
 msgstr "OE-105-mle.60 D.1504"
@@ -2536,6 +2643,9 @@ msgstr "OE-105-mle.60 D.1504(EBR)"
 
 msgid "_105mm_OE_105_Mle_60_D_1504_EBR_2"
 msgstr "OE-105-mle.60 D.1504(EXP)"
+
+msgid "_105mm_OE_105_Mle_60_ERAC"
+msgstr "OE-105-Mle.60 ERAC"
 
 msgid "_105mm_OE_mle_1920"
 msgstr "OE mle.20"
@@ -2566,6 +2676,12 @@ msgstr "OFL-105 D.1504(EXP)"
 
 msgid "_105mm_OFL_105_F1"
 msgstr "OFL-105-F1"
+
+msgid "_105mm_OFL_105_F1M"
+msgstr "OFL 105 F1M"
+
+msgid "_105mm_OFL_105_F1_ERAC"
+msgstr "OFL-105-F1 ERAC"
 
 msgid "_105mm_Prf1940"
 msgstr "Prf. mle.40"
@@ -2655,10 +2771,10 @@ msgid "_127mm_OE_127_Mle_55_SH"
 msgstr "OE-127 55型"
 
 msgid "_13.2mm_Balle_P."
-msgstr "球形炮弹 P."
+msgstr "穿甲弹P."
 
 msgid "_13.2mm_Balle_T.P."
-msgstr "球形炮弹 T.P."
+msgstr "曳光穿甲弹T.P."
 
 msgid "_13.2mm_Hotchkiss_mle._1930"
 msgstr "13.2mm mle.30 霍奇基斯重机枪"
@@ -2718,16 +2834,22 @@ msgid "_17_pdr_Gan_MK.II"
 msgstr "17磅AT炮 Mk.II"
 
 msgid "_25mm_Balle_T.P._mle._1928"
-msgstr "球形炮弹TP mle.28"
+msgstr "曳光穿甲弹T.P. mle.28"
 
 msgid "_25mm_Balle_T.P._mle._1934"
-msgstr "球形炮弹TP mle.34"
+msgstr "曳光穿甲弹T.P. mle.34"
 
 msgid "_25mm_Balle_T.P._mle._1934P"
-msgstr "球形炮弹TP mle.34P"
+msgstr "曳光穿甲弹T.P. mle.34P"
 
 msgid "_25mm_Balle_T.P._mle._1939P"
-msgstr "球形炮弹TP mle.39P"
+msgstr "曳光穿甲弹T.P. mle.39P"
+
+msgid "_25mm_Balle_T_P_mle_1928A"
+msgstr "曳光穿甲弹T.P. mle.28A"
+
+msgid "_25mm_Balle_T_P_mle_1934A"
+msgstr "曳光穿甲弹T.P. mle.34A"
 
 msgid "_25mm_Canon_Raccourci_Mle.1934"
 msgstr "25mm mle.34炮"
@@ -2736,6 +2858,9 @@ msgid "_25mm_Canon_Raccourci_Mle.1934_short"
 msgstr ""
 "25mm mle.\n"
 "34炮 (短身管型)"
+
+msgid "_25mm_Canon_Raccourci_Mle_1934_A"
+msgstr "25mm mle.34A炮"
 
 msgid "_25mm_SA35"
 msgstr "25mm SA35炮"

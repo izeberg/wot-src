@@ -279,13 +279,19 @@ msgid "Chassis_GB136_Churchill_BPXIV"
 msgstr "“丘吉尔”VII"
 
 msgid "Chassis_GB139_FV226_Contradictions"
-msgstr "FV226反制者"
+msgstr "FV226 反制者"
 
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
 
 msgid "Chassis_GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
+
+msgid "Chassis_GB146_Gabler_s_Destroyer"
+msgstr "加布勒突击战车"
+
+msgid "Chassis_GB149_Centurion_MkI_A"
+msgstr "百夫长 Mk.IA"
 
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
@@ -1171,19 +1177,19 @@ msgid "GB136_Churchill_BPXIV_short_special"
 msgstr "良好的平均每分钟损伤，精准的火炮"
 
 msgid "GB139_FV226_Contradictions"
-msgstr "FV226反制者"
+msgstr "FV226 反制者"
 
 msgid "GB139_FV226_Contradictions_descr"
 msgstr ""
 "一种相当均衡的设计，延续了Y系坦克一贯注重火力和防御的传统。该坦克的主要特点是其武器系统，计划安装20磅炮和新型105mm "
-"L7炮。为了确保必要的射速，工程师计划将火炮安装在摇摆式炮塔上。由于火炮的安装高度固定，所以配备了简单的机械装置，以便于两名装填手进行操作。虽然这些特别要求完全可以实现，但坦克过于笨重和庞大。因此该项目最终被叫停。"
+"L7炮。为了确保必要的射速，工程师计划将火炮安装在摇摆式炮塔上。火炮以固定角度安装在炮塔中，并配备了简单的机械装置来辅助两名装填手。尽管上述指标完全可以实现，但坦克会变得笨重且庞大，因此该项目最终被叫停。"
 
 msgid "GB139_FV226_Contradictions_long_special"
 msgstr ""
-"一辆拥有可选射击模式的Y系重型坦克。在单发射击模式下，它是一名多才多艺的精准射手，而在齐射射击模式下，它则会变成手持霰弹枪的重装突击手。凭借坚固的车体正面装甲和炮塔正面装甲，以及不俗的机动性，这辆全能型坦克定能在战场上发挥关键作用。"
+"一辆拥有可选射击模式的Y系重型坦克。在单发射击模式下，它是一名多用途的精准射手，而在齐射射击模式下，它则会变成手持霰弹枪的重装突击手。凭借坚固的车体正面装甲和炮塔正面装甲，以及不俗的机动性，这辆全能型坦克定能在战场上发挥关键作用。"
 
 msgid "GB139_FV226_Contradictions_short"
-msgstr "FV226反制者"
+msgstr "FV226 反制者"
 
 msgid "GB139_FV226_Contradictions_short_special"
 msgstr "可选射击模式，良好的装甲"
@@ -1218,6 +1224,42 @@ msgstr "涅伽尔"
 
 msgid "GB145_Crusher_ASE_4_short_special"
 msgstr "高射速的火炮，殷实的装甲"
+
+msgid "GB146_Gabler_s_Destroyer"
+msgstr "加布勒突击战车"
+
+msgid "GB146_Gabler_s_Destroyer_descr"
+msgstr ""
+"一个正面防护堪比中型坦克的轻型坦克项目，车体由轧制钢板焊接而成，炮塔则为铸造成型。武器方面，该坦克计划安装一门57毫米或75毫米火炮，以及3挺7.92毫米机枪。炮塔顶部还可以加装两套双管火箭发射器。\n"
+"为保证在公路行驶和越野时都具有出色的操纵性，坦克配备了大功率发动机，悬挂系统的设计可以确保驾驶平稳。以当时的标准看，该坦克的机动和防护都很有前景，但由于建造难度和成本较高，该项目未投入生产。"
+
+msgid "GB146_Gabler_s_Destroyer_long_special"
+msgstr ""
+"加布勒突击战车是一辆轻型坦克，装备有在同等级坦克里独具一格的弹夹装填系统。凭借快速的装填时间和良好的平均单发损伤，它能在战斗中高效应对其他V级坦克。得益于出色的机动性，它非常适合用来侦察，但在大多数情况下，它更适合作为经典的支援型坦克，运用一击脱离的战术克敌制胜。"
+
+msgid "GB146_Gabler_s_Destroyer_short"
+msgstr "加布勒突击战车"
+
+msgid "GB146_Gabler_s_Destroyer_short_special"
+msgstr "弹夹装填系统，出色的机动性"
+
+msgid "GB149_Centurion_MkI_A"
+msgstr "百夫长 Mk.IA"
+
+msgid "GB149_Centurion_MkI_A_descr"
+msgstr ""
+"百夫长坦克的研发始于1943年。该坦克作为\"通用坦克\"设计，以取代现有的步兵坦克和巡洋坦克。百夫长是Y系第一种采用倾斜装甲的坦克，于1947年开始服役。在1945年至1946年间，该系列的坦克总计生产了100辆。"
+
+msgid "GB149_Centurion_MkI_A_long_special"
+msgstr ""
+"百夫长 "
+"Mk.IA机动中等，防护一般，但火炮的射击手感、平均穿透力、平均每分钟损伤、精度和俯仰角都可圈可点。虽然在必要时也能与对手互相消耗，但其最佳战略定位仍是支援型坦克，建议与盟友共同行动，或者与对手保持一定的距离。"
+
+msgid "GB149_Centurion_MkI_A_short"
+msgstr "百夫长 Mk.IA"
+
+msgid "GB149_Centurion_MkI_A_short_special"
+msgstr "较高的平均穿透力，良好的火炮手感"
 
 msgid "GB14_M2"
 msgstr "M2"
@@ -2101,6 +2143,9 @@ msgstr "OQF 17磅炮 Mk.IV SH-SH"
 msgid "OQF_17pdr_Gun_Mk_VII"
 msgstr "OQF 17磅炮 Mk.VII型"
 
+msgid "OQF_17pdr_Gun_Mk_VII_B"
+msgstr "OQF 17磅炮 Mk.VII B型"
+
 msgid "OQF_17pdr_Gun_Mk_VII_SH"
 msgstr "OQF 17磅炮 Mk.VII型"
 
@@ -2191,6 +2236,9 @@ msgstr "QF 6磅炮 Mk.VA"
 msgid "QF_6_pounder_Mk_V_AT"
 msgstr "QF 6磅AT炮 Mk.V"
 
+msgid "QF_6_pounder_Mk_V_B"
+msgstr "QF 6磅炮 Mk.V B"
+
 msgid "QF_6_pounder_Mk_V_LT"
 msgstr "QF 6磅LT炮 Mk.V"
 
@@ -2218,6 +2266,9 @@ msgstr "罗·罗 K60"
 msgid "Rolls_Royce_K60_Mk2"
 msgstr "罗·罗 K60 Mk.2"
 
+msgid "Rolls_Royce_Meteor_GD"
+msgstr "罗·罗 流星 GD"
+
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "罗·罗 流星 M120A"
 
@@ -2229,6 +2280,9 @@ msgstr "罗·罗 流星 Mk.IVB型(900)"
 
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "罗·罗 流星 Mk.IVB/12"
+
+msgid "Rolls_Royce_Meteor_Mk_IVA"
+msgstr "罗·罗 流星 Mk.IVA"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "罗·罗 流星 P型"
@@ -2417,13 +2471,19 @@ msgid "Turret_1_GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
 
 msgid "Turret_1_GB139_FV226_Contradictions"
-msgstr "FV226反制者"
+msgstr "FV226 反制者"
 
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
 
 msgid "Turret_1_GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
+
+msgid "Turret_1_GB146_Gabler_s_Destroyer"
+msgstr "加布勒突击战车"
+
+msgid "Turret_1_GB149_Centurion_MkI_A"
+msgstr "百夫长 Mk.IA"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
@@ -2734,8 +2794,8 @@ msgstr "“格兰特”I"
 msgid "Turret_3_GB70_N_FV4202_105_SH"
 msgstr "FV4202系列"
 
-msgid "Twin_105_mm_Gun_L7S"
-msgstr "105mm L7S双管炮"
+msgid "Twin_105_mm_Gun_L7_MBC"
+msgstr "105mm L7 MBC双管炮"
 
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "贝德福德双六缸"
@@ -2755,8 +2815,14 @@ msgstr "WS No. 19 HH"
 msgid "WS_No.22_CT"
 msgstr "WS No.22 CT"
 
+msgid "WS_No_19_GD"
+msgstr "WS No.19 GD"
+
 msgid "WS_No_22_Mk_3"
 msgstr "WS No.22 Mk.3"
+
+msgid "WS_No_38_AFV"
+msgstr "WS No.38 AFV"
 
 msgid "Wright_Continental_R-975C1"
 msgstr "莱特-大陆 R-975C1"
@@ -2786,8 +2852,8 @@ msgstr "APCR L5"
 msgid "_105mm_APCR_L7"
 msgstr "APDS L-28"
 
-msgid "_105mm_APCR_L7S"
-msgstr "APDS L-27"
+msgid "_105mm_APCR_L7_MBC"
+msgstr "APDS L-27 MBC"
 
 msgid "_105mm_APCR_L7_N"
 msgstr "APDS L-28 N"
@@ -2798,8 +2864,8 @@ msgstr "APDS Kl/14"
 msgid "_105mm_APDS_L_28P"
 msgstr "APDS L-28P"
 
-msgid "_105mm_AP_L7S"
-msgstr "AP Mk.5"
+msgid "_105mm_AP_L7_MBC"
+msgstr "AP Mk. 5 MBC"
 
 msgid "_105mm_AP_Mk7"
 msgstr "AP Mk7"
@@ -2846,8 +2912,8 @@ msgstr "HESH-T P-35"
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
 
-msgid "_105mm_HE_L7S"
-msgstr "HE L-33N"
+msgid "_105mm_HE_L7_MBC"
+msgstr "HE L-33N MBC"
 
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
@@ -3449,6 +3515,9 @@ msgstr "HE Mk.VI"
 msgid "_6inch_SPG_Gun"
 msgstr "QF 6英寸Mk.V炮"
 
+msgid "_6pdr_APCR_MK_1GD"
+msgstr "APCR Mk.1GD"
+
 msgid "_6pdr_APCR_MK_1L"
 msgstr "APCR Mk. 1L"
 
@@ -3457,6 +3526,9 @@ msgstr "APCR Mk.1T"
 
 msgid "_6pdr_APCR_MK_1TM"
 msgstr "APCR Mk.IA"
+
+msgid "_6pdr_AP_MK_1GD"
+msgstr "AP Mk.1GD"
 
 msgid "_6pdr_AP_MK_1L"
 msgstr "AP Mk. 1L"
@@ -3475,6 +3547,9 @@ msgstr "钢壳弹NF"
 
 msgid "_6pdr_HE_Common"
 msgstr "通常弹"
+
+msgid "_6pdr_HE_MK_10GD"
+msgstr "HE Mk.10GD"
 
 msgid "_6pdr_HE_MK_10L"
 msgstr "HE Mk. 10L"

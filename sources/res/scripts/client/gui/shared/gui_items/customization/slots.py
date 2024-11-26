@@ -1,4 +1,4 @@
-import logging
+import logging, Math
 from shared_utils import first
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from items.components.c11n_constants import ProjectionDecalFormTags, SLOT_DEFAULT_ALLOWED_MODEL, ProjectionDecalMatchingTags
@@ -179,6 +179,37 @@ class ProjectionDecalSlot(BaseCustomizationSlot):
     @property
     def compatibleModels(self):
         return self._descriptor.compatibleModels
+
+
+class AttachmentSlot(BaseCustomizationSlot):
+
+    @property
+    def position(self):
+        return self.descriptor.position
+
+    @property
+    def rotation(self):
+        return self.descriptor.rotation
+
+    @property
+    def hiddenForUser(self):
+        return self.descriptor.hiddenForUser
+
+    @property
+    def tags(self):
+        return self.descriptor.tags
+
+    @property
+    def applyType(self):
+        return self.descriptor.applyType
+
+    @property
+    def size(self):
+        return self.descriptor.size
+
+    @property
+    def scaleFactorId(self):
+        return self.descriptor.scaleFactorId
 
 
 def getProgectionDecalAspect(slotDescriptor):

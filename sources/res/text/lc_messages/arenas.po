@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "01_karelia/description"
-msgstr "地图中央的沼泽把地图分割为两个攻击方向。东边是进行堑壕战的理想位置，西边的地形则有利于强攻。从沼泽进攻风险较大，但可能会有出其不意的效果。"
+msgstr "两条进攻路径被地图中央的沼泽分隔开来。东边是进行堑壕战的理想位置，西边的地形则有利于强攻。从沼泽进攻风险较大，但可能会有出其不意的效果。"
 
 msgid "01_karelia/name"
 msgstr "卡累利阿"
@@ -46,20 +46,21 @@ msgstr "普罗霍洛夫卡"
 
 msgid "06_ensk/description"
 msgstr ""
-"迷宫般的地图，由多个街区和绿意盎然的郊区组成，被铁路分割开来。考虑您的战术选项，充分利用咽喉要地，根据各种坦克的优劣性弥补防线上的漏洞。虽然自行火炮可以很好地阻止敌方的攻势,但一旦被藏匿在隐蔽位置的敌方坦克发现，它们将会束手无策。"
+"由城市街区和绿意盎然的郊区组成的混合型地图，由铁路分隔开来。利用好咽喉要道，制定防守策略，及时补齐防线缺口。自行火炮虽然能够有效迟滞敌方攻势，但对于藏匿于掩体中开火的敌方坦克则无还手之力。"
 
 msgid "06_ensk/name"
 msgstr "安斯克"
 
 msgid "07_lakeville/description"
-msgstr "这是一个独立的山谷，一侧有城市，另一侧紧邻敌方阵地。在中间有一大片湖水。湖岸地势平坦适于自行火炮提供远距离炮火支援。"
+msgstr ""
+"地图的一侧是一片独立的山谷，另一侧则是一片城市街区，能够让您与敌人短兵相接。地图中央一个大型的湖泊为狙击手们展示极限距离上的准头提供了机会。"
 
 msgid "07_lakeville/name"
 msgstr "拉斯威利"
 
 msgid "08_ruinberg/description"
 msgstr ""
-"环城公路和茂密的树林，杂草重生的公园可以隐藏部队和为部队调动提供掩护。自行火炮虽然在城市中机动受到了限制但他的强大火力还是给敌人造成巨大威胁。"
+"同心圆式城市的环形道路，加上草木繁茂的公园，可以隐藏己方团队的动向，使得秘密调动成为可能。尽管城区建筑限制了自行火炮的发挥，但废墟能够为您的团队提供可靠的掩护。"
 
 msgid "08_ruinberg/name"
 msgstr "鲁别克"
@@ -72,7 +73,7 @@ msgid "08_ruinberg_sm24/name"
 msgstr "劳尔贝格"
 
 msgid "101_dday/description"
-msgstr "利用海岸线地带，机动性强的坦克可以对敌人的后方进行突袭。地图的中部以及东部都很适合重型坦克以及盟军支援的战术性进攻。"
+msgstr "机动性强的坦克可以沿着海岸线向敌人后方发动闪击。重型坦克可以在盟友掩护下从地图中间和东边发起战术性进攻。"
 
 msgid "101_dday/name"
 msgstr "诺曼底"
@@ -86,7 +87,7 @@ msgstr "奥马哈海滩"
 
 msgid "105_germany/description"
 msgstr ""
-"靠近河流弯道的市区是重型坦克近距离作战的理想场地，而广阔的公园则是自行反坦克炮的完美掩体或是高机动坦克变换侧翼的完美通道。复杂的开阔地形则更加适合具备优秀防御性能和火炮俯仰角的坦克。"
+"靠近河流弯道的市区是重型坦克近距离作战的理想场地，而开阔的公园既能成为自行反坦克炮的完美掩体，也能为高机动坦克提供变换战线的绝佳通道。开阔且复杂的地形有利于那些拥有良好防护的炮塔/战斗室，以及出色火炮俯仰角的坦克。"
 
 msgid "105_germany/name"
 msgstr "文化之都"
@@ -136,12 +137,6 @@ msgstr "沟壑、沼泽、丘陵复杂的地形决定了你的战术。你的火
 msgid "11_murovanka/name"
 msgstr "穆勒万卡"
 
-msgid "11_murovanka_mb/description"
-msgstr "沟壑、沼泽、丘陵复杂的地形决定了你的战术。你的火炮可以利用稀疏的房屋作为掩护，集中全部力量向一个方向进攻被证明是最佳的战略。"
-
-msgid "11_murovanka_mb/name"
-msgstr "穆勒万卡"
-
 msgid "121_lost_paradise_v/description"
 msgstr ""
 "这个火山岛上的关键作战区域是一个蜿蜒曲折的岩石峡谷，适合重甲坦克和突击坦克。位于另一侧翼的机场，为坦克提供了一个可以迅速接近敌方基地(或回防基地)的大好机会。然而，这个位置掩体稀少，您在这里需要依靠坦克的机动性。海岸区域是一片较为开放的区域:"
@@ -162,13 +157,6 @@ msgstr ""
 "地图中心密集的建筑物是该地图的关键点。控制了这个区域，您就可以射击城镇周围旷野中的目标，并展开全方位的防御。在防御工事的墙外，由于大部分区域都暴露在敌方火力之下，您应该利用不规则地形进行战斗。"
 
 msgid "128_last_frontier_v/name"
-msgstr "前哨"
-
-msgid "128_last_frontier_v_mb/description"
-msgstr ""
-"地图中心密集的建筑物是该地图的关键点。控制了这个区域，您就可以射击城镇周围旷野中的目标，并展开全方位的防御。在防御工事的墙外，由于大部分区域都暴露在敌方火力之下，您应该利用不规则地形进行战斗。"
-
-msgid "128_last_frontier_v_mb/name"
 msgstr "前哨"
 
 msgid "13_erlenberg/description"
@@ -255,12 +243,6 @@ msgstr "整幅地图星罗棋布着许多灌木丛和村庄，明暗相间非常
 msgid "23_westfeld/name"
 msgstr "韦斯特菲尔德"
 
-msgid "23_westfeld_mb/description"
-msgstr "整幅地图星罗棋布着许多灌木丛和村庄，明暗相间非常漂亮。一条损毁的水渠横跨东部。连绵的山峦和峭壁提供了许多可用作伏击的位置。"
-
-msgid "23_westfeld_mb/name"
-msgstr "韦斯特菲尔德"
-
 msgid "250_br_battle_city2-1/description"
 msgstr ""
 "主要目标是成为最后一位幸存的玩家(或是小队)。\n"
@@ -287,13 +269,6 @@ msgstr ""
 msgid "28_desert/name"
 msgstr "荒漠小镇"
 
-msgid "28_desert_mb/description"
-msgstr ""
-"这幅地图咋一看好像很宽阔，但实际上并不简单。看似不堪一击的房屋，其实可以提供很好的掩护。侧面的岩石和高高的山丘不仅会为防御者提供掩护同时也会为进攻方提供出其不意的进攻路线。"
-
-msgid "28_desert_mb/name"
-msgstr "荒漠小镇"
-
 msgid "29_el_hallouf/description"
 msgstr "连绵的沙丘为攻方提供了隐蔽的进攻路线，在山坡上散落着一些岩石可作为守方很好的掩护。"
 
@@ -313,12 +288,6 @@ msgstr "巨大的山峦和狭窄的山谷，在战斗中提供了很大的优势
 msgid "33_fjord/name"
 msgstr "北欧峡湾"
 
-msgid "33_fjord_mb/description"
-msgstr "巨大的山峦和狭窄的山谷，在战斗中提供了很大的优势地形。可以横跨海湾进行火拼，在港口城市进入刺刀战或迂回侧翼夺取敌人的基地。"
-
-msgid "33_fjord_mb/name"
-msgstr "北欧峡湾"
-
 msgid "34_redshire/description"
 msgstr "占领山顶能提供很好的进攻机会，贯穿地图的河流，它可以为你指引进攻的方向。"
 
@@ -335,12 +304,6 @@ msgid "36_fishing_bay/description"
 msgstr "这幅地图是一个开放的空间和不规则地形的结合。侧面蜿蜒狭窄的街道海港更是出奇地有利。与灌木覆盖的坡地丘陵提供优良的伏击机会。"
 
 msgid "36_fishing_bay/name"
-msgstr "费舍尔湾"
-
-msgid "36_fishing_bay_mb/description"
-msgstr "这幅地图是一个开放的空间和不规则地形的结合。侧面蜿蜒狭窄的街道海港更是出奇地有利。与灌木覆盖的坡地丘陵提供优良的伏击机会。"
-
-msgid "36_fishing_bay_mb/name"
 msgstr "费舍尔湾"
 
 msgid "37_caucasus/description"

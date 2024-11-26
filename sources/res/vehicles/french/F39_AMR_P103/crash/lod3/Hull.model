@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F39_AMR_P103/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/french/F39_AMR_P103/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.917366 -0.665151 -1.698864</min>
+		<max>0.931710 0.626756 1.804850</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>
