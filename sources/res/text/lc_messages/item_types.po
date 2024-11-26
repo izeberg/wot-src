@@ -37,6 +37,9 @@ msgstr "Unique crew skin"
 msgid "crewSkins/itemType/rare"
 msgstr "Rare crew skin"
 
+msgid "customization/attachment"
+msgstr "3D Attachment"
+
 msgid "customization/camouflage"
 msgstr "Camouflage"
 
@@ -67,8 +70,14 @@ msgstr "Two-digit Number"
 msgid "customization/personalNumber_3"
 msgstr "Three-digit number"
 
+msgid "customization/plural/attachment"
+msgstr "3D Attachments"
+
 msgid "customization/plural/camouflage"
 msgstr "Camouflage"
+
+msgid "customization/plural/customStyle"
+msgstr "2D Styles"
 
 msgid "customization/plural/decal"
 msgstr "Decals"
@@ -94,8 +103,8 @@ msgstr "Three-digit numbers"
 msgid "customization/plural/projectionDecal"
 msgstr "Decals"
 
-msgid "customization/plural/style"
-msgstr "Styles"
+msgid "customization/plural/uncustomStyle"
+msgstr "3D Styles"
 
 msgid "customization/projectionDecal"
 msgstr "Decal"

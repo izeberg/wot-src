@@ -52,9 +52,8 @@ package net.wg.gui.lobby.profile.pages.technique
       
       override protected function applyInitData() : void
       {
-         var _loc1_:TechStatisticsPageInitVO = null;
          super.applyInitData();
-         _loc1_ = techniqueInitVO as TechStatisticsPageInitVO;
+         var _loc1_:TechStatisticsPageInitVO = techniqueInitVO as TechStatisticsPageInitVO;
          App.utils.asserter.assertNotNull(_loc1_,Errors.CANT_NULL);
          this.checkBoxExistence.label = _loc1_.hangarVehiclesLabel;
          this.checkBoxExistence.selected = _loc1_.isInHangarSelected;

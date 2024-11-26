@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A76_M3_A3/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/american/A76_M3_A3/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.264839 -0.832637 -2.540325</min>
+		<max>1.264840 0.892691 2.406003</max>
+	</visibilityBox>
+</root>

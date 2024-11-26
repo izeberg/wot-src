@@ -40,15 +40,15 @@
 						<Texture>content/Environment/hd_env_UNI_653_OldSailboat/hd_env_UNI_653_OldSailboat_Trawler_Tile_AM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.119121 4.654328 0.917313</groupOrigin>
+				<groupOrigin>-1.119124 4.654327 0.917315</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-5.038486 -2.130541 -18.734694</min>
-		<max>2.809216 11.436957 20.592192</max>
+		<min>-5.038489 -2.130541 -18.734692</min>
+		<max>2.809216 11.436957 20.592070</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>68452</geometrySize>
+	<geometrySize>71612</geometrySize>
 	<minUVDensity>0.000421</minUVDensity>
 </root>

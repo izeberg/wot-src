@@ -429,6 +429,10 @@ package
       
       public static const CAROUSEL_TANK_FILTER_READY:String = "#menu:carousel_tank_filter/ready";
       
+      public static const CAROUSEL_TANK_FILTER_OWN3DSTYLE:String = "#menu:carousel_tank_filter/own3DStyle";
+      
+      public static const CAROUSEL_TANK_FILTER_CANINSTALLATTACHMENTS:String = "#menu:carousel_tank_filter/canInstallAttachments";
+      
       public static const TANKCAROUSEL_VEHICLESTATES_BATTLE:String = "#menu:tankCarousel/vehicleStates/battle";
       
       public static const TANKCAROUSEL_VEHICLESTATES_LOCKED:String = "#menu:tankCarousel/vehicleStates/locked";

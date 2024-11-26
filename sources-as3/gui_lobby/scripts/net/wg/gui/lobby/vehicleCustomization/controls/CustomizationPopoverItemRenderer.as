@@ -43,9 +43,19 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private static const BACKGROUND_SMALL:int = 33;
       
       private static const ICON_BACKGROUND_OFFSET:int = 1;
+      
+      private static const RARITY_ICON_OFFSET:int = -3;
        
       
       public var nameTF:TextField = null;
+      
+      public var titleTF:TextField;
+      
+      public var titleBg:Sprite = null;
+      
+      public var rarityIcon:UILoaderAlt = null;
+      
+      public var rarityBg:UILoaderAlt = null;
       
       public var countTF:TextField = null;
       
@@ -79,9 +89,17 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       {
          super.setData(param1);
          this.itemIcon.unload();
+         this.rarityBg.unload();
+         this.rarityIcon.unload();
          this._tooltipManager.hide();
          this._model = Boolean(param1) ? CustomizationPopoverItemRendererVO(param1) : null;
          invalidateData();
+      }
+      
+      override protected function initialize() : void
+      {
+         super.initialize();
+         this.titleTF.mouseEnabled = false;
       }
       
       override protected function configUI() : void
@@ -89,6 +107,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          super.configUI();
          this.removeBtn.addEventListener(ButtonEvent.CLICK,this.onRemoveBtnClickHandler);
          this.removeBtn.soundType = SoundTypes.CUSTOMIZATION_DEFAULT;
+         this.removeBtn.mutedSoundTypes = [MouseEvent.MOUSE_DOWN];
          this.itemIcon.addEventListener(UILoaderEvent.COMPLETE,this.onItemIconLoaderCompleteHandler);
          addEventListener(MouseEvent.ROLL_OVER,this.onRollOverHandler);
          addEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
@@ -106,6 +125,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
             {
                this.nameTF.htmlText = this._model.userName;
                App.utils.commons.truncateTextFieldText(this.nameTF,this._model.userName,true,true);
+               this.titleTF.htmlText = this._model.titleLabel;
+               this.titleBg.visible = this._model.isTitle;
                if(!this._model.isTitle)
                {
                   this._isAlreadyPurchased = this._model.isApplied;
@@ -133,18 +154,15 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                   {
                      this.price.setData(this._model.price);
                   }
+                  this.rarityBg.visible = this.rarityIcon.visible = this._model.hasRarity;
+                  this.rarityIcon.source = this._model.rarityIcon;
+                  this.rarityBg.source = this._model.rarityBackground;
                }
                else
                {
                   this.nameTF.visible = true;
-                  this.price.visible = false;
-                  this.iconBg.visible = false;
-                  this.countTF.visible = false;
-                  this.itemIcon.visible = false;
-                  this.imageBg.visible = false;
-                  this.removeBtn.visible = false;
-                  this.inStorageIcon.visible = false;
-                  this.customizationContentTypeIcon.visible = false;
+                  this.titleTF.visible = true;
+                  this.price.visible = this.iconBg.visible = this.countTF.visible = this.itemIcon.visible = this.imageBg.visible = this.removeBtn.visible = this.inStorageIcon.visible = this.customizationContentTypeIcon.visible = this.rarityBg.visible = this.rarityIcon.visible = false;
                }
                this.layoutName(this._model.isTitle);
                invalidateSize();
@@ -170,6 +188,12 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                      this.countTF.x = this.removeBtn.x - this.countTF.width + COUNTER_IN_PURCHASE_OFFSET ^ 0;
                   }
                   this.customizationContentTypeIcon.x = this.itemIcon.x + this.itemIcon.width + NON_HISTORIC_ICON_OFFSET ^ 0;
+                  this.rarityBg.x = this.itemIcon.x;
+                  this.rarityBg.y = this.itemIcon.y;
+                  this.rarityBg.width = this.itemIcon.width;
+                  this.rarityBg.height = this.itemIcon.height;
+                  this.rarityIcon.x = this.itemIcon.x + RARITY_ICON_OFFSET;
+                  this.rarityIcon.y = this.itemIcon.y + RARITY_ICON_OFFSET;
                   _loc1_ = !!this._model.isWide ? int(BACKGROUND_BIG) : int(BACKGROUND_SMALL);
                   this.imageBg.width = this.iconBg.width = _loc1_;
                   this.imageBg.height = this.iconBg.height = this.itemIcon.height + (ICON_BACKGROUND_OFFSET << 1) ^ 0;
@@ -196,13 +220,19 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.itemIcon = null;
          this.price.dispose();
          this.price = null;
+         this.rarityIcon.dispose();
+         this.rarityIcon = null;
+         this.rarityBg.dispose();
+         this.rarityBg = null;
          this.inStorageIcon.dispose();
          this.inStorageIcon = null;
          this.customizationContentTypeIcon.dispose();
          this.customizationContentTypeIcon = null;
          this.iconBg = null;
          this.nameTF = null;
+         this.titleTF = null;
          this.countTF = null;
+         this.titleBg = null;
          this._model = null;
          this._tooltipManager = null;
          this.imageBg = null;
@@ -223,9 +253,12 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       {
          this.enabled = param1;
          this.nameTF.visible = param1;
+         this.titleTF.visible = param1;
          this.iconBg.visible = param1;
          this.countTF.visible = param1;
          this.itemIcon.visible = param1;
+         this.rarityBg.visible = param1;
+         this.rarityIcon.visible = param1;
          this.removeBtn.visible = param1;
          var _loc2_:Boolean = param1 && this._model;
          this.customizationContentTypeIcon.visible = _loc2_ && this._model.customizationDisplayType != CUSTOMIZATION_CONSTS.HISTORICAL_TYPE;
@@ -236,7 +269,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       protected function removeItem() : void
       {
-         dispatchEvent(new CustomizationIndicatorEvent(CustomizationIndicatorEvent.REMOVAL,this._model.id,this._model.itemsList));
+         dispatchEvent(new CustomizationIndicatorEvent(CustomizationIndicatorEvent.REMOVAL,this._model.id,this._model.itemsList,this._model.seasonType));
       }
       
       override public function set enabled(param1:Boolean) : void
@@ -256,8 +289,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private function onItemIconLoaderCompleteHandler(param1:UILoaderEvent) : void
       {
          invalidateSize();
-         this.itemIcon.visible = true;
-         this.iconBg.visible = true;
+         this.itemIcon.visible = this.iconBg.visible = this.rarityIcon.visible = this.rarityBg.visible = true;
          this.imageBg.visible = this._model && this._model.isDim;
       }
       

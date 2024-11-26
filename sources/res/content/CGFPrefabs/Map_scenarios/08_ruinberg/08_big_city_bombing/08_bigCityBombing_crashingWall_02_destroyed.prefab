@@ -3519,11 +3519,11 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
 				<UUID>4e059252-ccbf-4f57-95a9-140d05d9ef96</UUID>
-				<flags>34</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>patchName</name>

@@ -30,6 +30,10 @@
 					<visible>True</visible>
 					<type>epicWdgt</type>
 				</component>
+				<component>
+					<name>comp7GrandTournamentBanner</name>
+					<visible>False</visible>
+				</component>
 			</components>
 		</preset>
 	</presets>

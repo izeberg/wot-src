@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F39_AMR_P103/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F39_AMR_P103/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.611580 0.020000 -0.665444</min>
+		<max>0.611580 0.664783 0.596462</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

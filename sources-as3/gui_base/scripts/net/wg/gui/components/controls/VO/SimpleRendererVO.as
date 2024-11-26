@@ -16,6 +16,8 @@ package net.wg.gui.components.controls.VO
       
       public var tooltip:String = "";
       
+      public var isNew:Boolean = false;
+      
       public function SimpleRendererVO(param1:Object)
       {
          super(param1);

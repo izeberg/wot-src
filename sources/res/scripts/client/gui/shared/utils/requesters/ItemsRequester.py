@@ -26,15 +26,15 @@ from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from skeletons.gui.game_control import IVehiclePostProgressionController
 from skeletons.gui.shared import IItemsCache, IItemsRequester
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
-from gui.shared.system_factory import collectGuiItemsCacheInvalidators, GuiItemsCacheInvalidatorParams
 if TYPE_CHECKING:
-    from typing import Optional, Dict
+    from typing import Optional, Dict, List
     import skeletons.gui.shared.utils.requesters as requesters
     from gui.shared.gui_items.badge import Badge
     from gui.shared.gui_items.Tankman import Tankman
     from gui.shared.gui_items.Vehicle import Vehicle
     from gui.veh_post_progression.models.progression import PostProgressionItem
     from items.vehicles import VehicleType
+    from gui.shared.gui_items.customization.c11n_items import Customization
 _logger = logging.getLogger(__name__)
 DO_LOG_BROKEN_SYNC = False
 
@@ -222,6 +222,20 @@ class VehsMultiNationSuitableCriteria(VehsSuitableCriteria):
                 self._selectAllSuitableItemsByVehicleDescr(self.itemsCache.items.getItemByCD(targetVehCD).descriptor, itemTypeID, outSuitableCompDescrs)
 
 
+class VehicleCanInstallC11nCriteria(RequestCriteria):
+    _itemsCache = dependency.descriptor(IItemsCache)
+
+    def __init__(self, itemTypeID, criteria):
+        items = self._itemsCache.items.getItems(itemTypeID, criteria).values()
+        super(VehicleCanInstallC11nCriteria, self).__init__(PredicateCondition(lambda vehicle: self.hasSuitableC11n(vehicle, items)))
+
+    @staticmethod
+    def hasSuitableC11n(vehicle, items):
+        if vehicle.isOutfitLocked:
+            return False
+        return any(item.mayInstall(vehicle) for item in items)
+
+
 class REQ_CRITERIA(object):
     EMPTY = RequestCriteria()
     ALL = RequestCriteria(PredicateCondition(lambda i: True))
@@ -307,6 +321,7 @@ class REQ_CRITERIA(object):
         FOR_ITEM = staticmethod(lambda style: RequestCriteria(PredicateCondition(style.mayInstall)))
         HAS_ROLE = staticmethod(lambda roleName: RequestCriteria(PredicateCondition(lambda item: roleName in {roles[0] for roles in item.descriptor.type.crewRoles})))
         HAS_ROLES = staticmethod(lambda tankmanRoles: RequestCriteria(PredicateCondition(lambda item: any(roles[0] in tankmanRoles for roles in item.descriptor.type.crewRoles))))
+        CAN_INSTALL_C11N = staticmethod(lambda itemTypeID, criteria=RequestCriteria(): VehicleCanInstallC11nCriteria(itemTypeID, criteria))
 
     class TANKMAN(object):
         IN_TANK = RequestCriteria(PredicateCondition(lambda item: item.isInTank))
@@ -331,7 +346,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 577         0  LOAD_FAST             0  'item'
+ L. 604         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -639,7 +654,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1059         0  LOAD_FAST             0  'self'
+ L.1086         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -809,11 +824,8 @@ Parse error at or near `None' instruction at offset -1
 
             self.inventory.initC11nItemsNoveltyData()
         else:
-            for invalidator in collectGuiItemsCacheInvalidators():
-                invalidator(GuiItemsCacheInvalidatorParams(self.__inventory, invalidate, diff))
-
             for statName, data in diff.get('stats', {}).iteritems():
-                if statName in ('unlocks', ('unlocks', '_r'), ('unlocks', '_d')):
+                if statName in ('unlocks', ('unlocks', '_r')):
                     self._invalidateUnlocks(data, invalidate)
                 elif statName == 'eliteVehicles':
                     invalidate[GUI_ITEM_TYPE.VEHICLE].update(data)
@@ -916,9 +928,6 @@ Parse error at or near `None' instruction at offset -1
                             for idx in items.iterkeys():
                                 intCD = vehicles.makeIntCompactDescrByID('customizationItem', cType, getDiffID(idx))
                                 invalidate[GUI_ITEM_TYPE.CUSTOMIZATION].add(intCD)
-
-                    for vehicleIntCD, outfitsData in itemsDiff.get(CustomizationInvData.OUTFITS_POOL, {}).iteritems():
-                        invalidate[GUI_ITEM_TYPE.VEHICLE].add(vehicleIntCD)
 
                 else:
                     invalidate[itemTypeID].update(itemsDiff.keys())

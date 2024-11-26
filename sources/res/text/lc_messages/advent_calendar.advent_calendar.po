@@ -1,0 +1,226 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "introScreenView/blockDescription/howItWork"
+msgstr ""
+"A new door with gifts will be available for opening each day from "
+"%(startDate)s through %(endDate)s. You can open Calendar doors for the "
+"current and previous day. After %(endDate)s, doors can only be opened using "
+"Holiday Ops resources."
+
+msgid "introScreenView/blockDescription/magicLootbox"
+msgstr ""
+"Complete the Calendar Progression to receive additional gifts, including a "
+"Large New Year Box. It is only available for completion through "
+"{E9E2BF_Open}%(date)s{E9E2BF_Close}."
+
+msgid "introScreenView/blockDescription/whatCanYouGet"
+msgstr ""
+"Open all 31 doors to receive a unique 2D style, decals, days of WoT Premium "
+"Account, Crew books, Personal Reserves, and other rewards."
+
+msgid "introScreenView/blockTitle/howItWork"
+msgstr "How It Works"
+
+msgid "introScreenView/blockTitle/magicLootbox"
+msgstr "But There's More!"
+
+msgid "introScreenView/blockTitle/whatCanYouGet"
+msgstr "Open Them All"
+
+msgid "introScreenView/buttonTitle"
+msgstr "To Calendar"
+
+msgid "introScreenView/title"
+msgstr "Advent Calendar"
+
+msgid "mainView/activePhase/subTitle"
+msgstr ""
+"From %(startDate)s through %(endDate)s, you will be able to open a new Calendar door with gifts {dde9fc_Open}every day{dde9fc_Close}.\n"
+"You can open doors for the current and previous day."
+
+msgid "mainView/footer/expired/title"
+msgstr "Progression no longer available."
+
+msgid "mainView/footer/linkButton/text"
+msgstr "Download Desktop Wallpaper"
+
+msgid "mainView/footer/progressionFinished/title"
+msgstr "Progression complete. All gifts received."
+
+msgid "mainView/footer/progressionNotFinished/title"
+msgstr "Open Calendar doors through %(endDate)s for additional gifts."
+
+msgid "mainView/navigation/aboutEventBtn/label"
+msgstr "ABOUT EVENT"
+
+msgid "mainView/postActivePhase/subTitle"
+msgstr ""
+"Use resources to open doors with gifts every day through %(date)s. You will be able to open\n"
+"the final door for December 31 free of charge."
+
+msgid "mainView/title"
+msgstr "Advent Calendar"
+
+msgid "mainView/tooltip/allRewards/bonus/boosters"
+msgstr "Personal Reserves"
+
+msgid "mainView/tooltip/allRewards/bonus/crewBonusesOrX5"
+msgstr "Universal Booklet, Retraining Order, and missions for x5 XP"
+
+msgid "mainView/tooltip/allRewards/bonus/currenciesAndPremium"
+msgstr "Credits, WoT Premium Account, and more"
+
+msgid "mainView/tooltip/allRewards/bonus/customizations"
+msgstr "2D styles and decals"
+
+msgid "mainView/tooltip/allRewards/bonus/experimentalEquipmentAndComponents"
+msgstr "Experimental Equipment and components"
+
+msgid "mainView/tooltip/allRewards/bonus/progressionRewards"
+msgstr "Crew member and Large New Year Box"
+
+msgid "mainView/tooltip/allRewards/subTitle"
+msgstr "Open all Calendar doors to receive:"
+
+msgid "mainView/tooltip/allRewards/title"
+msgstr "Gifts"
+
+msgid "mainView/tooltip/availableSometime/description"
+msgstr "Calendar doors are available for opening from %(time)s each day."
+
+msgid "mainView/tooltip/availableSometime/title"
+msgstr "Will be available {cream_Open}%(date)s{cream_Close}"
+
+msgid "mainView/tooltip/availableToday"
+msgstr "Will be available {cream_Open}from %(time)s today{cream_Close}"
+
+msgid "mainView/tooltip/availableTomorrow"
+msgstr "Will be available {cream_Open}from %(time)s tomorrow{cream_Close}"
+
+msgid "mainView/tooltip/enoughResources/description"
+msgstr ""
+"Start with door {cream_Open}%(day)s{cream_Close}, then open other doors in "
+"numerical order."
+
+msgid "mainView/tooltip/enoughResources/title"
+msgstr "Open Doors in Order"
+
+msgid "mainView/tooltip/expired/description"
+msgstr ""
+"You can open Calendar doors for the current and previous day.\n"
+"All missed doors can be opened for Holiday Ops resources {cream_Open}from %(startDate)s through %(endDate)s{cream_Close}."
+
+msgid "mainView/tooltip/expired/title"
+msgstr "Door Not Opened in Time"
+
+msgid "marker/exclamationMark"
+msgstr "!"
+
+msgid "notification/door/opened/title"
+msgstr "Advent Calendar Door %(dayNumber)s Opened"
+
+msgid "notification/event/paused"
+msgstr ""
+"The Advent Calendar event is temporarily suspended due to maintenance."
+
+msgid "notification/event/resumed"
+msgstr ""
+"The Advent Calendar event has been resumed. We apologize for the "
+"inconvenience."
+
+msgid "notification/lootbox/title"
+msgstr "Large New Year Box"
+
+msgid "notification/progerssion/finished"
+msgstr "Advent Calendar Progression Complete"
+
+msgid "notification/progerssion/recieved"
+msgstr "Advent Calendar Progression Stage Complete"
+
+msgid "notification/reward/received"
+msgstr "Received:"
+
+msgid "progressionRewards/tooltip/lock/description"
+msgstr "Progression gifts can only be received in numerical order."
+
+msgid "progressionRewards/tooltip/lock/title"
+msgstr "Receive Previous Gift"
+
+msgid "progressionRewards/tooltip/lootbox/simple/body"
+msgstr "You will be able to discover what's inside the Box on %(date)s."
+
+msgid "progressionRewards/tooltip/lootbox/simple/header"
+msgstr "Large New Year Box"
+
+msgid "progressionRewards/tooltip/postActivePhase/title"
+msgstr "The Progression was available from %(startDate)s through %(endDate)s."
+
+msgid "progressionRewards/tooltip/rewardExpired/description"
+msgstr "Gift not claimed in time"
+
+msgid "progressionRewards/tooltip/rewardExpired/title"
+msgstr "%(img)s Not received"
+
+msgid "progressionRewards/tooltip/rewardInProgress/title"
+msgid_plural "plural/progressionRewards/tooltip/rewardInProgress/title"
+msgstr[0] ""
+"Open {cream_Open}%(count)s more{cream_Close} Calendar door to receive this "
+"gift."
+msgstr[1] ""
+"Open {cream_Open}%(count)s more{cream_Close} Calendar doors to receive this "
+"gift."
+msgstr[2] ""
+"Open {cream_Open}%(count)s more{cream_Close} Calendar doors to receive this "
+"gift."
+
+msgid "progressionRewards/tooltip/rewardLocked/title"
+msgstr "%(img)s Receive the previous gift in the Progression to unlock."
+
+msgid "progressionRewards/tooltip/rewardReceived/title"
+msgstr "%(img)s Received"
+
+msgid "rewardView/confirm"
+msgstr "Affirmative!"
+
+msgid "rewardView/goToBoxes"
+msgstr "To Boxes"
+
+msgid "rewardView/loading"
+msgstr "Adding reward"
+
+msgid "rewardView/subTitle/allDoors"
+msgstr "You have opened {cream_Open}all Advent Calendar doors{cream_Close}"
+
+msgid "rewardView/subTitle/progression"
+msgstr "Advent Calendar doors opened: {cream_Open}%(count)s{cream_Close}"
+
+msgid "rewardView/subTitle/specialDoor"
+msgstr "You opened {cream_Open}%(count)s Advent Calendar doors{cream_Close}"
+
+msgid "rewardView/title/box"
+msgstr "Large New Year Box Received!"
+
+msgid "rewardView/title/progression"
+msgstr "Reward Received!"
+
+msgid "rewardView/title/specialDoor"
+msgstr "Congratulations!"
+
+msgid "server_error"
+msgstr ""
+"The operation is temporarily unavailable due to technical reasons. Please "
+"try again later."

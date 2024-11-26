@@ -1,12 +1,12 @@
 from collections import namedtuple
-import GenericComponents, Math, BigWorld
+import Math, BigWorld
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from gui.hangar_vehicle_appearance import HangarVehicleAppearance
 from items.vehicles import stripOptionalDeviceFromVehicleCompactDescr
 from vehicle_systems.tankStructure import ModelStates
 from vehicle_systems.tankStructure import TankPartIndexes
 from gui.ClientHangarSpace import hangarCFG
-from EdgeDrawer import HighlightComponent, EdgeHighlightComponent
+from EdgeDrawer import EdgeHighlightComponent
 _VehicleTransformParams = namedtuple('_VehicleTransformParams', ('targetPos', 'rotateYPR',
                                                                  'shadowModelYOffset'))
 
@@ -156,20 +156,16 @@ class ClientSelectableCameraVehicle(ClientSelectableCameraObject):
         if self.__isHighlightable():
             super(ClientSelectableCameraVehicle, self)._addEdgeDetect()
             go = self.__vAppearance.gameObject
-            go.createComponent(HighlightComponent, 0, False, self.edgeMode, False, False)
-            compositionRoot = GenericComponents.findRootSlot(go)
-            compositionRoot.createComponent(EdgeHighlightComponent, 0, False, self.edgeMode, False, False)
+            go.createComponent(EdgeHighlightComponent, 0, False, self.edgeMode, False)
 
     def _delEdgeDetect(self):
         if self.__isHighlightable():
             super(ClientSelectableCameraVehicle, self)._delEdgeDetect()
             go = self.__vAppearance.gameObject
-            go.removeComponentByType(HighlightComponent)
-            compositionRoot = GenericComponents.findRootSlot(go)
-            compositionRoot.removeComponentByType(EdgeHighlightComponent)
+            go.removeComponentByType(EdgeHighlightComponent)
 
     def __isHighlightable(self):
-        return self.__vAppearance is not None and not self.__vAppearance.isVehicleDestroyed
+        return self.__vAppearance is not None and not self.__vAppearance.isDestroyed
 
     def __createFakeShadow(self, model):
         if self.__fakeShadowModel is None:

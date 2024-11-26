@@ -14346,11 +14346,11 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
 				<UUID>b13c1724-9802-48a7-9fd1-886bb15e25fd</UUID>
-				<flags>34</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>patchName</name>

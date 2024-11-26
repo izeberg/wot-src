@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.600378 -0.230110 0.013153</min>
+		<max>0.600375 0.312439 5.704147</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It33_Prototipo_6/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/italy/It33_Prototipo_6/normal/lod1/Gun_01</parent>
+	<extent>32</extent>
+</root>

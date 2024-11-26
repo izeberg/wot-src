@@ -310,7 +310,7 @@ missionSchema = schemas.Schema[MissionModel](fields={'missionId': fields.Integer
                validate.Length(minValue=1), validateBonusType]), 
    'displayName': fields.String(required=False, default=''), 
    'missionType': fields.String(required=False, default=MissionType.REGULAR), 
-   'difficulty': fields.Enum(enumClass=MissionsDifficulty, required=False, default=MissionsDifficulty.UNDEFINED), 
+   'difficulty': fields.StrEnum(enumClass=MissionsDifficulty, required=False, default=MissionsDifficulty.UNDEFINED), 
    'sounds': fields.Nested(schema=_soundsSchema, required=True), 
    'tasks': fields.UniCapList(fieldOrSchema=_missionTaskSchema, required=True), 
    'enabled': fields.Boolean(), 

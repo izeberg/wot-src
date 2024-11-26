@@ -2,7 +2,7 @@ from typing import Optional
 import BigWorld
 from constants import CustomizationInvData
 from gui.SystemMessages import pushMessagesFromResult
-from items.components.c11n_constants import SeasonType, ItemTags
+from items.components.c11n_constants import SeasonType
 from Event import Event, EventManager
 from adisp import adisp_process
 from gui import g_tankActiveCamouflage
@@ -30,8 +30,6 @@ from skeletons.gui.shared.gui_items import IGuiItemsFactory
 from skeletons.gui.shared.utils import IHangarSpace
 _MODULES_NAMES = (
  'turret', 'chassis', 'engine', 'gun', 'radio')
-RESTORE_WITH_STYLE = 'restoreWithStyle'
-LOCKED_OUTFIT = 'lockedOutfit'
 
 class _CachedVehicle(object):
     itemsCache = dependency.descriptor(IItemsCache)
@@ -677,10 +675,6 @@ class _CurrentPreviewVehicle(_CachedVehicle):
                 self.__item = self.__makePreviewVehicleFromStrCD(vehicleCD, vehicleStrCD)
             else:
                 self.__item = self.__getPreviewVehicle(vehicleCD)
-            if self.__item is not None and outfit is None and style is None and (RESTORE_WITH_STYLE in self.__item.tags or LOCKED_OUTFIT in self.__item.tags):
-                criteria = REQ_CRITERIA.CUSTOMIZATION.FOR_VEHICLE(self.__item)
-                criteria |= REQ_CRITERIA.CUSTOMIZATION.HAS_TAGS([ItemTags.LOCKED_ON_VEHICLE])
-                style = first(self.itemsCache.items.getStyles(criteria).values())
             if style is not None and outfit is None:
                 outfit = self.__getPreviewOutfitByStyle(style)
             if self.__vehAppearance is not None:

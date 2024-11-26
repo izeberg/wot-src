@@ -16,7 +16,7 @@
 			</fadeOut>
 		</marker>
 	</radar>
-	<spottedLoot>
+	<detector>
 		<marker>
 			<lifeTime>
 				10.0
@@ -31,7 +31,7 @@
 				<!--BW_String-->
 			</fadeOut>
 		</marker>
-	</spottedLoot>
+	</detector>
 	<spawn>
 		<selectEndingSoonTime>10</selectEndingSoonTime>
 	</spawn>

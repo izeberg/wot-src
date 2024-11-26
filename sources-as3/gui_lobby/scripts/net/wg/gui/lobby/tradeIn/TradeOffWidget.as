@@ -56,6 +56,11 @@ package net.wg.gui.lobby.tradeIn
          super();
       }
       
+      private static function playDefBtnSound() : void
+      {
+         App.soundMgr.playControlsSnd(SoundManagerStates.SND_OVER,SoundTypes.CUSTOMIZATION_DEFAULT,null);
+      }
+      
       override protected function onDispose() : void
       {
          this.tradeIcon = null;
@@ -156,13 +161,6 @@ package net.wg.gui.lobby.tradeIn
          invalidateData();
       }
       
-      private function showTooltip() : void
-      {
-         var _loc1_:Object = getTooltipS();
-         App.toolTipMgr.showSpecial(_loc1_.type,null,_loc1_.data);
-         App.soundMgr.playControlsSnd(SoundManagerStates.SND_OVER,SoundTypes.CUSTOMIZATION_DEFAULT,null);
-      }
-      
       override public function get width() : Number
       {
          return this.resetBackgroundShadow.x + this.resetBackgroundShadow.width - this.backgroundShadow.x >> 0;
@@ -192,7 +190,9 @@ package net.wg.gui.lobby.tradeIn
       private function onButtonRollOverHandler(param1:MouseEvent) : void
       {
          this.buttonHover.visible = enabled;
-         this.showTooltip();
+         var _loc2_:Object = getTooltipS();
+         App.toolTipMgr.showSpecial(_loc2_.type,null,_loc2_.data);
+         playDefBtnSound();
       }
       
       private function onButtonRollOutHandler(param1:MouseEvent) : void
@@ -212,6 +212,7 @@ package net.wg.gui.lobby.tradeIn
       private function onResetButtonRollOverHandler(param1:MouseEvent) : void
       {
          this.resetButtonHover.visible = enabled;
+         playDefBtnSound();
       }
       
       private function onResetButtonRollOutHandler(param1:MouseEvent) : void

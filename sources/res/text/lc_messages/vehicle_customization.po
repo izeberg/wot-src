@@ -30,6 +30,9 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/general"
+msgstr "General"
+
 msgid "bonus/condition/camouflage"
 msgstr ""
 "Bonus to concealment depending on the vehicle type when applying the "
@@ -101,6 +104,9 @@ msgstr ""
 
 msgid "buyWindow/title/activeStyle"
 msgstr "Permanent Style"
+
+msgid "buyWindow/title/all"
+msgstr "All Seasons"
 
 msgid "buyWindow/title/bonus/camouflage"
 msgstr "+%(bonus)s to concealment"
@@ -5708,6 +5714,18 @@ msgstr "?empty?"
 msgid "camouflage/touchdown_camo/label"
 msgstr "Touchdown"
 
+msgid "camouflage/tournaments_2024_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/tournaments_2024_1/label"
+msgstr "Valiant Heart"
+
+msgid "camouflage/tournaments_2024_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/tournaments_2024_2/label"
+msgstr "Unbreakable Will"
+
 msgid "camouflage/toys_world/description"
 msgstr "?empty?"
 
@@ -6965,14 +6983,30 @@ msgstr "Applied"
 msgid "carousel/itemLabel/purchased"
 msgstr "Acquired"
 
-msgid "carousel/message/description"
+msgid "carousel/message/attachment/default/description"
+msgstr ""
+"3D attachments are a new type of customization element.\n"
+"Earn them as rewards in Progressions or purchase them in the Store."
+
+msgid "carousel/message/attachment/default/header"
+msgstr "NO 3D ATTACHMENTS YET"
+
+msgid "carousel/message/attachment/unsapport/description"
+msgstr "?empty?"
+
+msgid "carousel/message/attachment/unsapport/header"
+msgstr ""
+"The %(name)s does not yet support\n"
+"3D attachments."
+
+msgid "carousel/message/default/description"
 msgstr "Use filter to view customization elements."
 
-msgid "carousel/message/header"
+msgid "carousel/message/default/header"
 msgstr "Nothing Found"
 
 msgid "carousel/message/noProgressionDecals"
-msgstr "You can apply progressive decals after you receive them."
+msgstr "Progressive decals can be applied after you receive them"
 
 msgid "carousel/message/propertysheet"
 msgstr ""
@@ -7059,6 +7093,18 @@ msgstr "×2"
 
 msgid "customization/Popover/scale/small"
 msgstr "×1"
+
+msgid "customization/RarityRewardScreen/button/close"
+msgstr "Close"
+
+msgid "customization/RarityRewardScreen/button/toExterior"
+msgstr "To Exterior"
+
+msgid "customization/RarityRewardScreen/button/toGarage"
+msgstr "To Garage"
+
+msgid "customization/RarityRewardScreen/subtitle"
+msgstr "%(rarity)s 3D ATTACHMENT"
 
 msgid "customization/UnsupportedForm"
 msgstr "Unable to apply"
@@ -7199,6 +7245,15 @@ msgstr "Remove Emblem 2"
 msgid "customization/emptyPersonalNumber"
 msgstr "Digits of the tactical number not entered."
 
+msgid "customization/emptyState/attachments"
+msgstr "Vehicles with 3D attachments"
+
+msgid "customization/escHelp/left"
+msgstr "You can press"
+
+msgid "customization/escHelp/right"
+msgstr "to return to the previous menu level."
+
 msgid "customization/filter/allGroups"
 msgstr "All groups"
 
@@ -7255,6 +7310,12 @@ msgstr "Show/hide progressive customization elements."
 msgid "customization/filterPopover/progressionDecalsBtn/header"
 msgstr "Progressive Elements"
 
+msgid "customization/filterPopover/rarity/body"
+msgstr "Show/hide %(rarity)s 3D attachments."
+
+msgid "customization/filterPopover/rarity/header"
+msgstr "%(rarity)s"
+
 msgid "customization/filterPopover/refresh/body"
 msgstr ""
 "Click to reset the settings\n"
@@ -7263,11 +7324,20 @@ msgstr ""
 msgid "customization/filterPopover/refresh/header"
 msgstr "Set by Default"
 
+msgid "customization/header/counter/attachment"
+msgstr "3D attachments mounted: %(filled)s/%(available)s"
+
 msgid "customization/header/counter/camouflage"
 msgstr "Camouflage patterns on the vehicle: %(filled)s/%(available)s"
 
-msgid "customization/header/counter/editablestyle/installed"
-msgstr "\"%(name)s\" preset style applied"
+msgid "customization/header/counter/customStyle/installed"
+msgstr "2D style applied"
+
+msgid "customization/header/counter/customStyle/notInstalled"
+msgstr "2D style not applied"
+
+msgid "customization/header/counter/editableStyle/installed"
+msgstr "\"%(name)s\" style applied"
 
 msgid "customization/header/counter/emblem"
 msgstr "Emblems on the vehicle: %(filled)s/%(available)s"
@@ -7284,11 +7354,11 @@ msgstr "Paints on the vehicle: %(filled)s/%(available)s"
 msgid "customization/header/counter/projectionDecal"
 msgstr "Decals on the vehicle: %(filled)s/%(available)s"
 
-msgid "customization/header/counter/style/installed"
-msgstr "The preset style is applied"
+msgid "customization/header/counter/uncustomStyle/installed"
+msgstr "3D style applied"
 
-msgid "customization/header/counter/style/notInstalled"
-msgstr "The preset style is not applied"
+msgid "customization/header/counter/uncustomStyle/notInstalled"
+msgstr "3D style not applied"
 
 msgid "customization/headerCloseBtn/body"
 msgstr ""
@@ -7299,6 +7369,21 @@ msgstr "Back to Garage"
 
 msgid "customization/hint/maxQtyDecalsApplied"
 msgstr "Maximum number of decals applied"
+
+msgid "customization/hint/newCustomizationSection"
+msgstr ""
+"VIEW NEW 3D\n"
+"CUSTOMIZATION SECTION"
+
+msgid "customization/hint/suitableVehicleList"
+msgstr ""
+"VEHICLES SUITABLE FOR\n"
+"3D ATTACHMENTS"
+
+msgid "customization/hint/vehicleCustomizationFilter"
+msgstr ""
+"CUSTOMIZATION\n"
+"FILTER ADDED"
 
 msgid "customization/infotype/description/map"
 msgstr "Map: %(mapType)s"
@@ -7423,7 +7508,7 @@ msgid "customization/itemsPopover/btn"
 msgstr "Customization elements on the vehicle"
 
 msgid "customization/itemsPopover/btn/disabled"
-msgstr "No customization elements applied to the vehicle for %(mapType)s."
+msgstr "No customization elements applied to the vehicle"
 
 msgid "customization/itemsPopover/btn/style/disabled"
 msgstr "No customization elements applied to the vehicle."
@@ -7442,6 +7527,9 @@ msgstr "Extend Rental Period"
 
 msgid "customization/kitPopover/title/items"
 msgstr "Vehicle's Exterior"
+
+msgid "customization/kitPopover/title/summary"
+msgstr "Summary"
 
 msgid "customization/limited/current/vehicle"
 msgstr " (current vehicle)"
@@ -7478,6 +7566,9 @@ msgstr "Summer"
 msgid "customization/mapType/winter"
 msgstr "Winter"
 
+msgid "customization/modeLine/title"
+msgstr "EQUIP TOGETHER"
+
 msgid "customization/nonHistoric/buttonText/defaultView"
 msgstr "Reset to Default"
 
@@ -7505,6 +7596,9 @@ msgstr "Insufficient Funds"
 
 msgid "customization/notSelectedItems"
 msgstr "Customization element not selected."
+
+msgid "customization/notification/new"
+msgstr "New"
 
 msgid "customization/popover/style/any"
 msgstr "Any"
@@ -7560,6 +7654,15 @@ msgstr "%(value)s Style"
 msgid "customization/progressiveKitPopover/title"
 msgstr "%(value)s Style"
 
+msgid "customization/propertySheet/disabled/attachment/move"
+msgstr "The move option is unavailable for this 3D attachment."
+
+msgid "customization/propertySheet/disabled/attachment/rotate"
+msgstr "The rotate option is unavailable for this 3D attachment."
+
+msgid "customization/propertySheet/disabled/attachment/scale"
+msgstr "The scale option is unavailable for this 3D attachment."
+
 msgid "customization/propertySheet/disabled/camouflage"
 msgstr "Color settings are unavailable for this camouflage."
 
@@ -7586,6 +7689,15 @@ msgstr "Applied to %(vehicle)s"
 
 msgid "customization/quests/pbsItem"
 msgstr "%(itemName)s %(itemType)s"
+
+msgid "customization/rarity/epic"
+msgstr "Epic"
+
+msgid "customization/rarity/legendary"
+msgstr "Legendary"
+
+msgid "customization/rarity/rare"
+msgstr "Rare"
 
 msgid "customization/rent/special/text"
 msgstr ""
@@ -7626,6 +7738,11 @@ msgstr "Applied to Vehicles"
 
 msgid "customization/tooltip/applied/vehicleNation"
 msgstr "All vehicles of nation: %(nation)s"
+
+msgid "customization/tooltip/attachmentEarn"
+msgstr ""
+"Can be mounted on the Maus, Leopard 1, Object 261, FV4005 and more. You can "
+"find the full list of vehicles in the 3D Attachments section in Exterior."
 
 msgid "customization/tooltip/bonus/aimer"
 msgstr "to Gunner"
@@ -7729,6 +7846,9 @@ msgstr "Rental"
 msgid "customization/tooltip/characteristics/serialNumber"
 msgstr "Style number: %(number)s"
 
+msgid "customization/tooltip/characteristics/specialEffect"
+msgstr "Special behavior in battle"
+
 msgid "customization/tooltip/characteristics/title"
 msgstr "Element Characteristics"
 
@@ -7815,6 +7935,9 @@ msgstr ""
 
 msgid "customization/tooltip/description/nonHistoric/title"
 msgstr "Non-Historical Elements on Vehicles"
+
+msgid "customization/tooltip/getattachment"
+msgstr "Earn 3D attachments in assorted events or purchase them in the Store."
 
 msgid "customization/tooltip/inventory/available"
 msgstr "In Depot"
@@ -8619,6 +8742,9 @@ msgstr "Low graphical settings may impede the quality of the effect."
 msgid "customization/unsuitable"
 msgstr "Not suitable"
 
+msgid "customization/vehicleList"
+msgstr "List of vehicles that can be mounted with 3D attachments."
+
 msgid "customizationHeader/aboutProgressiveStyles"
 msgstr "ABOUT PROGRESSIVE STYLES"
 
@@ -8650,6 +8776,9 @@ msgstr ""
 
 msgid "elementAwardTooltip/description/style"
 msgstr "Bonus to concealment depending on the vehicle type on all map types."
+
+msgid "elementBonus/desc/attachment"
+msgstr "3D attachment %(value)s"
 
 msgid "elementBonus/desc/camouflage"
 msgstr "Camouflage %(value)s"
@@ -11535,11 +11664,17 @@ msgstr "Achtung"
 msgid "emblem/special/sticker_839"
 msgstr "CAUTION: LASERS"
 
+msgid "emblem/special/sticker_840"
+msgstr "For 14 years of service"
+
 msgid "emblem/special/sticker_841"
 msgstr "Shards"
 
 msgid "emblem/special/sticker_842"
 msgstr "Breaker"
+
+msgid "emblem/special/sticker_843"
+msgstr "OLS Winter'25"
 
 msgid "filter/popover/bonusType/title"
 msgstr "Bonus Types"
@@ -11555,6 +11690,9 @@ msgstr "All groups"
 
 msgid "filter/popover/groups/title"
 msgstr "Groups"
+
+msgid "filter/popover/rarity/title"
+msgstr "Rarity"
 
 msgid "filter/popover/showonlyfilters/acquired"
 msgstr "Purchased items"
@@ -14179,6 +14317,12 @@ msgstr "Karžygis"
 
 msgid "inscription/special/special_766"
 msgstr "Griaustinis"
+
+msgid "inscription/special/special_768"
+msgstr "Rising Star"
+
+msgid "inscription/special/special_769"
+msgstr "OLS Winter 2025"
 
 msgid "inscription/special/special_81"
 msgstr "For the Motherland!"
@@ -20491,6 +20635,9 @@ msgstr "Columns of Gediminas"
 msgid "projection_decals/special/projection_decal_811"
 msgstr "First Vytis"
 
+msgid "projection_decals/special/projection_decal_818"
+msgstr "Unbreakable Will"
+
 msgid "projection_decals/special/projection_decal_82"
 msgstr "Good Deeds Change the World"
 
@@ -20692,6 +20839,9 @@ msgstr "Flip"
 msgid "propertySheet/actionBtn/move"
 msgstr "Shift (%(current)s/%(total)s)"
 
+msgid "propertySheet/actionBtn/remove/attachment"
+msgstr "Remove 3D Attachment [Delete]"
+
 msgid "propertySheet/actionBtn/remove/camouflage"
 msgstr "Remove Camouflage [Delete]"
 
@@ -20739,6 +20889,9 @@ msgstr "Unable to remove %(itemType)s for all map types"
 
 msgid "propertySheet/actionBtn/removeStyle"
 msgstr "Remove Style [Delete]"
+
+msgid "propertySheet/actionBtn/rotate/attachment"
+msgstr "Rotate object"
 
 msgid "propertySheet/actionBtn/switchProgression"
 msgstr "Change Level (%(current)s/%(total)s)"
@@ -20815,6 +20968,9 @@ msgstr ""
 msgid "propertySheet/keyboard/hint"
 msgstr "PRESS THE FOLLOWING KEYS TO CHANGE THE COLOR OF THE ELEMENT"
 
+msgid "propertySheet/map/all"
+msgstr "All Seasons"
+
 msgid "propertySheet/map/desert"
 msgstr "Desert Map"
 
@@ -20881,6 +21037,9 @@ msgstr "Applied for: %(mapType)s"
 
 msgid "propertySheet/title/color"
 msgstr "Color Pattern"
+
+msgid "propertySheet/title/remove/attachment"
+msgstr "Remove 3D Attachment"
 
 msgid "propertySheet/title/remove/camouflage"
 msgstr "Remove Camouflage"
@@ -22508,9 +22667,6 @@ msgstr "Year Hare Affair: Snow"
 msgid "repaint/zhang_hanyu"
 msgstr "Chinese Colors"
 
-msgid "savedStyles/label"
-msgstr "Adjusted styles saved: %(current)s/%(max)s %(img)s"
-
 msgid "season/selection/desert"
 msgstr "DESERT"
 
@@ -22553,6 +22709,39 @@ msgid "shop/entryPoint"
 msgstr ""
 "GO TO\n"
 "STORE"
+
+msgid "sidebar/item/tooltip/header"
+msgstr "3D attachments on this vehicle:"
+
+msgid "sidebar/item/tooltip/none/body"
+msgstr "No 3D attachments mounted on this vehicle"
+
+msgid "sidebar/sortBy/amountOf3DAttachments"
+msgstr "Mounted 3D attachments"
+
+msgid "sidebar/sortBy/inDepot"
+msgstr "In Depot"
+
+msgid "sidebar/sortBy/name"
+msgstr "Vehicle name"
+
+msgid "sidebar/sortBy/nation"
+msgstr "Nation"
+
+msgid "sidebar/sortBy/tier"
+msgstr "Tier"
+
+msgid "sidebar/sortBy/type"
+msgstr "Type"
+
+msgid "sidebar/sortToggleBtn/name"
+msgstr "Name"
+
+msgid "sidebar/submitBtn/label"
+msgstr "Acknowledged"
+
+msgid "sidebar/title"
+msgstr "Vehicles suitable for 3D attachments"
 
 msgid "special_style/10years_fortress"
 msgstr "Red Fortress"
@@ -30263,6 +30452,12 @@ msgstr "Three-Tone Threads (D-Day)"
 
 msgid "special_style/touchdown"
 msgstr "Touchdown"
+
+msgid "special_style/tournaments_2024"
+msgstr "Valiant Heart"
+
+msgid "special_style/tournaments_2024_desc"
+msgstr "An all-season style awarded for supporting OLS Winter'25."
 
 msgid "special_style/toys_world"
 msgstr "Toy World"

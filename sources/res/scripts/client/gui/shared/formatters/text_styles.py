@@ -1,4 +1,4 @@
-import types
+import re, types
 from gui import makeHtmlString
 from gui.shared.money import Currency
 from helpers import i18n
@@ -61,7 +61,14 @@ __all__ = (
  'greenText',
  'poiCapturedBoldText',
  'poiCapturedRegularText',
- 'prestige')
+ 'prestige',
+ 'statusSimple',
+ 'statusBright',
+ 'cream',
+ 'creamBold',
+ 'creamTitle',
+ 'lightGray',
+ 'lightBlue')
 
 def _getStyle(style, ctx=None):
     if ctx is None:
@@ -499,6 +506,34 @@ def prestige(text):
     return _formatText('prestigeText', text)
 
 
+def statusSimple(text):
+    return _formatText('statusSimpleText', text)
+
+
+def statusBright(text):
+    return _formatText('statusBrightText', text)
+
+
+def cream(text):
+    return _formatText('cream', text)
+
+
+def creamBold(text):
+    return _formatText('creamBold', text)
+
+
+def creamTitle(text):
+    return _formatText('creamTitle', text)
+
+
+def lightGray(text):
+    return _formatText('lightGray', text)
+
+
+def lightBlue(text):
+    return _formatText('lightBlue', text)
+
+
 def getRawStyles(names):
     return dict((name, _getStyle(name)) for name in names)
 
@@ -556,3 +591,19 @@ class _StylesBuilder(object):
 
 def builder(delimiter=''):
     return _StylesBuilder(delimiter)
+
+
+def formatStyledText(text):
+    styledTextPattern = '{\\w+_(?:Open|Close)}'
+    stylePattern = '{(\\w+)_\\w+}'
+    splitString = re.split(styledTextPattern, text)
+    if len(splitString) == 3:
+        textToStyle = splitString[1]
+        style = re.findall(stylePattern, re.findall(styledTextPattern, text)[0])
+        if style:
+            style = style[0]
+            styledText = _formatText(style, textToStyle)
+            if styledText != style:
+                splitString[1] = styledText
+                return ('').join(splitString)
+    return text

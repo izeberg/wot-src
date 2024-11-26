@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.576113 -0.636931 -3.257773</min>
+		<max>1.580207 0.701293 2.929226</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It33_Prototipo_6/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/italy/It33_Prototipo_6/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>

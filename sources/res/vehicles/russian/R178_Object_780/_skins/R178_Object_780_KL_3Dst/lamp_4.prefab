@@ -127,20 +127,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>EdgeDrawerComponent</type>
-			<version>1</version>
-			<component>
-				<UUID>e5fd35ee-d63d-4c7b-be01-cd8e7f13412c</UUID>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>triggerSource</name>
-						<link>8e02b1d3-b261-492c-a642-f3c87fce43c9</link>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>

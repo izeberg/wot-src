@@ -1556,6 +1556,12 @@ msgstr "?empty?"
 msgid "awardItem/tourcoin/header"
 msgstr "Points of Duty"
 
+msgid "awardItem/wdrcoin/body"
+msgstr "?empty?"
+
+msgid "awardItem/wdrcoin/header"
+msgstr "Token for Years of Service"
+
 msgid "awardItem/xp/body"
 msgstr "A single-use bonus to additional Combat Experience."
 
@@ -3217,6 +3223,33 @@ msgstr "Extended filtration of customization elements."
 msgid "customization/carousel/filter/header"
 msgstr "Filter"
 
+msgid "customization/disabledTabs/attachment/body"
+msgstr "No suitable 3D attachments for the %(tankName)s in your Depot."
+
+msgid "customization/disabledTabs/camouflage/body"
+msgstr "No suitable camouflages for the %(tankName)s."
+
+msgid "customization/disabledTabs/customStyle/body"
+msgstr "No suitable 2D styles for the %(tankName)s in your Depot."
+
+msgid "customization/disabledTabs/emblem/body"
+msgstr "No suitable emblems for the %(tankName)s."
+
+msgid "customization/disabledTabs/inscription/body"
+msgstr "No suitable inscriptions for the %(tankName)s."
+
+msgid "customization/disabledTabs/modification/body"
+msgstr "No suitable effects for the %(tankName)s."
+
+msgid "customization/disabledTabs/paint/body"
+msgstr "No suitable paints for the %(tankName)s."
+
+msgid "customization/disabledTabs/projectionDecal/body"
+msgstr "No suitable Decals for the %(tankName)s."
+
+msgid "customization/disabledTabs/uncustomStyle/body"
+msgstr "No suitable 3D styles for the %(tankName)s in your Depot."
+
 msgid "customization/emblem/igr/body"
 msgstr ""
 "Emblem is only active during a session in <img "
@@ -3332,15 +3365,6 @@ msgstr "Except %(vehicle)s"
 msgid "customization/questAward/exactVehicle"
 msgstr "Applied to %(vehicle)s"
 
-msgid "customization/savedStyles/body"
-msgstr ""
-"The system saves up to %(max)s purchased adjusted styles. Once the limit is "
-"reached, the system resets the saved adjustments for one of the styles to "
-"default."
-
-msgid "customization/savedStyles/title"
-msgstr "%(img)s Adjusted Styles: %(current)s/%(max)s"
-
 msgid "customization/scrollbar/bookmark/header"
 msgstr "%(bookmark)s"
 
@@ -3349,6 +3373,9 @@ msgstr "Click to return the initial customization element."
 
 msgid "customization/slotRevert/header"
 msgstr "Return"
+
+msgid "customization/storage/filters/attachments/title"
+msgstr "3D Attachments"
 
 msgid "customization/storage/filters/camouflage/title"
 msgstr "Camouflage"
@@ -3371,10 +3398,17 @@ msgstr "Styles"
 msgid "customization/storage/filters/text/title"
 msgstr "Inscriptions"
 
+msgid "customization/tabs/attachment/body"
+msgstr ""
+"3D attachments are individual elements used to customize specific vehicles."
+
 msgid "customization/tabs/camouflage/body"
 msgstr ""
 "Camouflage modifies the vehicle's exterior and provides a bonus to "
 "concealment."
+
+msgid "customization/tabs/customStyle/body"
+msgstr "2D styles add a personal touch to any vehicle exterior."
 
 msgid "customization/tabs/emblem/body"
 msgstr ""
@@ -3399,8 +3433,11 @@ msgstr "Paint changes the default vehicle color."
 
 msgid "customization/tabs/projectionDecal/body"
 msgstr ""
-"Decals are applied to several vehicles' modules and add individuality to a "
+"Decals are applied to several vehicles modules and add individuality to a "
 "particular vehicle."
+
+msgid "customization/tabs/uncustomStyle/body"
+msgstr "3D styles give specific vehicles a new look with intricate details."
 
 msgid "customizationBuyWindow/fromStorage"
 msgstr "Element from the Depot"
@@ -13717,6 +13754,9 @@ msgstr "Turret Armor (front/sides/rear, mm)"
 msgid "vehicleParams/valueChange/template"
 msgstr "(%(value)s)"
 
+msgid "vehiclePreview/boxTooltip/attachment/header"
+msgstr "%(value)s"
+
 msgid "vehiclePreview/boxTooltip/battleBooster/header"
 msgstr "%(value)s"
 
@@ -13938,9 +13978,7 @@ msgid "vehiclePreview/shopPack/title"
 msgstr "This bundle includes:"
 
 msgid "vehiclePreview/tankman/newPerk/header"
-msgstr ""
-"%(quantity)s additional major perk(s)\n"
-"of your choice"
+msgstr "With Crew XP for %(quantity)s major perk(s) of your choice"
 
 msgid "vehiclePreview/tankman/skillsTitle"
 msgstr "Trained Perks"

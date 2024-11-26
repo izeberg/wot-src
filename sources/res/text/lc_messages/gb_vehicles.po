@@ -290,6 +290,12 @@ msgstr "FV215"
 msgid "Chassis_GB145_Crusher_ASE_4"
 msgstr "Nergal"
 
+msgid "Chassis_GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s Destroyer"
+
+msgid "Chassis_GB149_Centurion_MkI_A"
+msgstr "Centurion Mk. IA"
+
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
 
@@ -1493,6 +1499,53 @@ msgstr "Nergal"
 
 msgid "GB145_Crusher_ASE_4_short_special"
 msgstr "Quick-firing gun, heavy armor"
+
+msgid "GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s Destroyer"
+
+msgid "GB146_Gabler_s_Destroyer_descr"
+msgstr ""
+"A project for a light tank with frontal armor comparable to a medium tank. It was planned to construct a welded hull from rolled armored plates. The turret, in turn, would have been cast. As armament, the vehicle was supposed to have one 57 mm or 75 mm gun and three 7.92 mm machine guns. The top of the turret would also have been equipped with two double-barreled rocket launchers.\n"
+"A powerful engine was meant to ensure excellent maneuverability both on and off road, while the suspension was designed to be very smooth. Despite promising mobility and defense capabilities for the time, construction difficulties and high costs meant that the project did not enter production."
+
+msgid "GB146_Gabler_s_Destroyer_long_special"
+msgstr ""
+"The Gabler’s Destroyer is a light tank with a magazine loading system unique"
+" for its tier. Its quick reload time and solid alpha damage make it "
+"effective in battles against other Tier V vehicles and, while its high "
+"mobility makes it a great scout, it mostly plays as a classic support, using"
+" hit-and-run tactics to outmaneuver foes."
+
+msgid "GB146_Gabler_s_Destroyer_short"
+msgstr "G. Destroyer"
+
+msgid "GB146_Gabler_s_Destroyer_short_special"
+msgstr "Magazine loading system, excellent mobility"
+
+msgid "GB149_Centurion_MkI_A"
+msgstr "Centurion Mk. IA"
+
+msgid "GB149_Centurion_MkI_A_descr"
+msgstr ""
+"Development of the Centurion started in 1943. The vehicle was designed as a "
+"\"universal tank\" to replace existing infantry and cruiser tanks. The "
+"Centurion was the first British vehicle that featured sloped armor plates. "
+"The tank entered service in 1947. A total of 100 vehicles of this series "
+"were manufactured from 1945 through 1946."
+
+msgid "GB149_Centurion_MkI_A_long_special"
+msgstr ""
+"The Centurion Mk. IA has decent mobility and average armor, but its gun "
+"characteristics—handling, penetration, DPM, accuracy, and "
+"depression/elevation angles—are quite comfortable. While able to trade HP "
+"when needed, it is best positioned strategically as a support vehicle, "
+"either close to teammates or at a distance from opponents."
+
+msgid "GB149_Centurion_MkI_A_short"
+msgstr "Centurion IA"
+
+msgid "GB149_Centurion_MkI_A_short_special"
+msgstr "High penetration power, good gun handling"
 
 msgid "GB14_M2"
 msgstr "M2"
@@ -2736,6 +2789,9 @@ msgstr "OQF 17-pdr Gun Mk. IV SH-SH"
 msgid "OQF_17pdr_Gun_Mk_VII"
 msgstr "OQF 17-pdr Gun Mk. VII"
 
+msgid "OQF_17pdr_Gun_Mk_VII_B"
+msgstr "OQF 17-pdr Gun Mk. VII B"
+
 msgid "OQF_17pdr_Gun_Mk_VII_SH"
 msgstr "OQF 17-pdr Gun Mk. VII"
 
@@ -2826,6 +2882,9 @@ msgstr "QF 6-pdr Mk. VA"
 msgid "QF_6_pounder_Mk_V_AT"
 msgstr "QF 6-pdr AT Gun Mk. V"
 
+msgid "QF_6_pounder_Mk_V_B"
+msgstr "QF 6-pdr Mk. V B"
+
 msgid "QF_6_pounder_Mk_V_LT"
 msgstr "QF 6-pdr LT Gun Mk. V"
 
@@ -2853,6 +2912,9 @@ msgstr "Rolls Royce K60"
 msgid "Rolls_Royce_K60_Mk2"
 msgstr "Rolls Royce K60 Mk. 2"
 
+msgid "Rolls_Royce_Meteor_GD"
+msgstr "Rolls-Royce Meteor GD"
+
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "Rolls-Royce Meteor M120A"
 
@@ -2864,6 +2926,9 @@ msgstr "Rolls-Royce Meteor Mk. IVB (900)"
 
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "Rolls-Royce Meteor Mk. IVB/12"
+
+msgid "Rolls_Royce_Meteor_Mk_IVA"
+msgstr "Rolls-Royce Meteor Mk. IVA"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
@@ -3059,6 +3124,12 @@ msgstr "FV215"
 
 msgid "Turret_1_GB145_Crusher_ASE_4"
 msgstr "Nergal"
+
+msgid "Turret_1_GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s Destroyer"
+
+msgid "Turret_1_GB149_Centurion_MkI_A"
+msgstr "Centurion Mk. IA"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
@@ -3369,8 +3440,8 @@ msgstr "Grant I"
 msgid "Turret_3_GB70_N_FV4202_105_SH"
 msgstr "FV4202 Series"
 
-msgid "Twin_105_mm_Gun_L7S"
-msgstr "Twin 105 mm Gun L7S"
+msgid "Twin_105_mm_Gun_L7_MBC"
+msgstr "Twin 105 mm Gun L7 MBC"
 
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "Bedford Twin-Six"
@@ -3390,8 +3461,14 @@ msgstr "WS No. 19 HH"
 msgid "WS_No.22_CT"
 msgstr "WS No. 22 CT"
 
+msgid "WS_No_19_GD"
+msgstr "WS No. 19 GD"
+
 msgid "WS_No_22_Mk_3"
 msgstr "WS No. 22 Mk. 3"
+
+msgid "WS_No_38_AFV"
+msgstr "WS No. 38 AFV"
 
 msgid "Wright_Continental_R-975C1"
 msgstr "Wright Continental R-975C1"
@@ -3421,8 +3498,8 @@ msgstr "APCR L5"
 msgid "_105mm_APCR_L7"
 msgstr "APDS L-28"
 
-msgid "_105mm_APCR_L7S"
-msgstr "APDS L-27"
+msgid "_105mm_APCR_L7_MBC"
+msgstr "APDS L-27 MBC"
 
 msgid "_105mm_APCR_L7_N"
 msgstr "APDS L-28 N"
@@ -3433,8 +3510,8 @@ msgstr "APDS Kl/14"
 msgid "_105mm_APDS_L_28P"
 msgstr "APDS L-28P"
 
-msgid "_105mm_AP_L7S"
-msgstr "AP Mk. 5"
+msgid "_105mm_AP_L7_MBC"
+msgstr "AP Mk. 5 MBC"
 
 msgid "_105mm_AP_Mk7"
 msgstr "AP Mk7"
@@ -3481,8 +3558,8 @@ msgstr "HESH-T P-35"
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
 
-msgid "_105mm_HE_L7S"
-msgstr "HE L-33N"
+msgid "_105mm_HE_L7_MBC"
+msgstr "HE L-33N MBC"
 
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
@@ -4084,6 +4161,9 @@ msgstr "HE Mk. VI"
 msgid "_6inch_SPG_Gun"
 msgstr "Q.F. 6-in. Gun Mk. V"
 
+msgid "_6pdr_APCR_MK_1GD"
+msgstr "APCR Mk. 1GD"
+
 msgid "_6pdr_APCR_MK_1L"
 msgstr "APCR Mk. 1L"
 
@@ -4092,6 +4172,9 @@ msgstr "APCR Mk. 1T"
 
 msgid "_6pdr_APCR_MK_1TM"
 msgstr "APCR Mk. IA"
+
+msgid "_6pdr_AP_MK_1GD"
+msgstr "AP Mk. 1GD"
 
 msgid "_6pdr_AP_MK_1L"
 msgstr "AP Mk. 1L"
@@ -4110,6 +4193,9 @@ msgstr "Steel Shell NF"
 
 msgid "_6pdr_HE_Common"
 msgstr "Common Shell"
+
+msgid "_6pdr_HE_MK_10GD"
+msgstr "HE Mk. 10GD"
 
 msgid "_6pdr_HE_MK_10L"
 msgstr "HE Mk. 10L"

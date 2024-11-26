@@ -748,7 +748,8 @@ class VehicleParams(_ParameterBase):
                 heCorrection = coeffs['alphaDamage']
         gunCorrection = self.__adjustmentCoefficient('guns').get(self._itemDescr.gun.name, {})
         gunCorrection = gunCorrection.get('caliberCorrection', 1)
-        value = round(self.avgDamagePerMinute * penetration / self.shotDispersionAngle[(-1)] * (coeffs['rotationIntercept'] + coeffs['rotationSlope'] * rotationSpeed) * turretCoefficient * coeffs['normalization'] * self.__adjustmentCoefficient('power') * spgCorrection * gunCorrection * heCorrection)
+        shotDispersionAngle = max(self.shotDispersionAngle[(-1)], 0.001)
+        value = round(self.avgDamagePerMinute * penetration / shotDispersionAngle * (coeffs['rotationIntercept'] + coeffs['rotationSlope'] * rotationSpeed) * turretCoefficient * coeffs['normalization'] * self.__adjustmentCoefficient('power') * spgCorrection * gunCorrection * heCorrection)
         return max(value, MIN_RELATIVE_VALUE)
 
     @property

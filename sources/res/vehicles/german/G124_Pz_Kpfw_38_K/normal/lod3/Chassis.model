@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G124_Pz_Kpfw_38_K/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.272229 0.015455 -2.502730</min>
+		<max>1.272230 1.148909 2.321871</max>
+	</visibilityBox>
+	<parent>vehicles/german/G124_Pz_Kpfw_38_K/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

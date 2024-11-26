@@ -68,6 +68,8 @@ class ComponentLink(pybind11_object):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 	gameObject = property(lambda self: None)
+	def reset(self, *args, **kwargs): pass
+	def set(self, *args, **kwargs): pass
 
 
 class ComponentManager(pybind11_object):
@@ -175,6 +177,7 @@ class GameObject(pybind11_object):
 	def removeComponentByType(self, *args, **kwargs): pass
 	def setStatic(self, *args, **kwargs): pass
 	spaceID = property(lambda self: None)
+	def transferOwnership(self, *args, **kwargs): pass
 	def transferOwnershipToWorld(self, *args, **kwargs): pass
 
 
@@ -203,6 +206,7 @@ class HierarchyManager(pybind11_object):
 	def getChildren(self, *args, **kwargs): pass
 	def getChildrenIncludingInactive(self, *args, **kwargs): pass
 	def getParent(self, *args, **kwargs): pass
+	def getSelfAndRecursiveChildren(self, *args, **kwargs): pass
 	def getTopMostParent(self, *args, **kwargs): pass
 	def hasChildren(self, *args, **kwargs): pass
 	def hasParent(self, *args, **kwargs): pass
@@ -433,7 +437,6 @@ def dumpCgfState(*args, **kwargs): pass
 def dumpCgfWorldHierarchy(*args, **kwargs): pass
 def dumpTickGraph(*args, **kwargs): pass
 def enableCompletely(*args, **kwargs): pass
-def gatherPrefabInfo(*args, **kwargs): pass
 def getAllWorlds(*args, **kwargs): pass
 def getManager(*args, **kwargs): pass
 def hotReload(*args, **kwargs): pass

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.391992 -0.002794 -1.716987</min>
+		<max>1.391992 1.025610 1.643860</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It33_Prototipo_6/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/italy/It33_Prototipo_6/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

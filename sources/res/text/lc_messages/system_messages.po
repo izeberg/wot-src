@@ -502,9 +502,6 @@ msgstr ""
 "Battle Pass is temporarily unavailable in Steel Hunter due to maintenance. "
 "We apologize for the inconvenience."
 
-msgid "battlePass/switch_disable/body"
-msgstr "Season finished. See you next Season!"
-
 msgid "battlePass/switch_disable/comp7/body"
 msgstr ""
 "Battle Pass Points cannot be earned in Onslaught mode at the moment due to "
@@ -517,9 +514,6 @@ msgstr ""
 msgid "battlePass/switch_disable/ranked/body"
 msgstr ""
 "Battle Pass is temporarily unavailable in Ranked Battles due to maintenance."
-
-msgid "battlePass/switch_disable/title"
-msgstr "Battle Pass Season %(seasonNum)d"
 
 msgid "battlePass/switch_enabled/body"
 msgstr ""
@@ -1182,6 +1176,12 @@ msgstr "Crew skins added: %(count)s"
 msgid "current_vehicle_changed"
 msgstr "Current vehicle is replaced with the %s."
 
+msgid "customization/added/attachment"
+msgstr "%s 3D attachment added"
+
+msgid "customization/added/attachmentValue"
+msgstr "%s 3D attachment added: (x%s)"
+
 msgid "customization/added/camouflage"
 msgstr "%s camouflage added"
 
@@ -1279,6 +1279,12 @@ msgstr "%s style upgraded to Level %s"
 
 msgid "customization/prohibited"
 msgstr "Unable to apply: %(itemName)s is not in the inventory."
+
+msgid "customization/removed/attachment"
+msgstr "%s 3D attachment removed"
+
+msgid "customization/removed/attachmentValue"
+msgstr "%s 3D attachment removed: (x%s)"
 
 msgid "customization/removed/camouflage"
 msgstr "%s camouflage removed"

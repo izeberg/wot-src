@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J50_Type_1_Ho_Ni_II/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J50_Type_1_Ho_Ni_II/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.202490 -0.949342 -2.741580</min>
+		<max>1.172005 1.436061 2.735654</max>
+	</visibilityBox>
+</root>

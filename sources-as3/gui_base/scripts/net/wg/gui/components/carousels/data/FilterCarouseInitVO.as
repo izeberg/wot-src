@@ -14,6 +14,8 @@ package net.wg.gui.components.carousels.data
       
       private static const LEVELS_TYPES:String = "levels";
       
+      private static const CUSTOMIZATION:String = "customization";
+      
       private static const SPECIALS:String = "specials";
       
       private static const HIDDEN:String = "hidden";
@@ -39,6 +41,8 @@ package net.wg.gui.components.carousels.data
       
       public var rolesLabel:String = "";
       
+      public var customizationLabel:String = "";
+      
       public var toggleSwitchCarouselIcon:String = "";
       
       public var searchInputLabel:String = "";
@@ -63,6 +67,8 @@ package net.wg.gui.components.carousels.data
       
       public var changeableArrowDirection:Boolean = false;
       
+      public var customizationVisible:Boolean = false;
+      
       public var nationsSectionId:int = -1;
       
       public var vehicleTypesSectionId:int = -1;
@@ -77,6 +83,8 @@ package net.wg.gui.components.carousels.data
       
       public var rolesSectionId:int = -1;
       
+      public var customizationId:int = -1;
+      
       public var toggleSwitchCarouselTooltip:String = "";
       
       public var toggleSwitchCarouselSelected:Boolean = false;
@@ -88,6 +96,8 @@ package net.wg.gui.components.carousels.data
       private var _vehicleTypes:DataProvider = null;
       
       private var _levels:DataProvider = null;
+      
+      private var _customization:DataProvider = null;
       
       private var _specials:DataProvider = null;
       
@@ -132,6 +142,15 @@ package net.wg.gui.components.carousels.data
             for each(_loc6_ in param2)
             {
                this._levels.push(new SimpleRendererVO(_loc6_));
+            }
+            return false;
+         }
+         if(param1 == CUSTOMIZATION)
+         {
+            this._customization = new DataProvider();
+            for each(_loc3_ in param2)
+            {
+               this._customization.push(new SimpleRendererVO(_loc3_));
             }
             return false;
          }
@@ -185,6 +204,10 @@ package net.wg.gui.components.carousels.data
          {
             _loc1_.dispose();
          }
+         for each(_loc1_ in this._customization)
+         {
+            _loc1_.dispose();
+         }
          for each(_loc1_ in this._specials)
          {
             _loc1_.dispose();
@@ -205,6 +228,8 @@ package net.wg.gui.components.carousels.data
          this._specials = null;
          this._levels.cleanUp();
          this._levels = null;
+         this._customization.cleanUp();
+         this._customization = null;
          this._hidden.cleanUp();
          this._hidden = null;
          this._progressions.cleanUp();
@@ -232,6 +257,11 @@ package net.wg.gui.components.carousels.data
       public function get levels() : DataProvider
       {
          return this._levels;
+      }
+      
+      public function get customization() : DataProvider
+      {
+         return this._customization;
       }
       
       public function get nations() : DataProvider

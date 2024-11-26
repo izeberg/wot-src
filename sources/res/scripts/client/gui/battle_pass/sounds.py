@@ -18,7 +18,6 @@ HOLIDAY_TASKS_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.HOLIDAY_SOUND_S
 class BattlePassSounds(CONST_CONTAINER):
     CONFIRM_BUY = 'bp_overlay_pay'
     REWARD_SCREEN = 'bp_reward_screen'
-    SPECIAL_REWARD_SCREEN = 'bp_special_reward_screen'
     TANK_POINTS_CAP = 'bp_tank_point_done'
     VIDEO_PAUSE = 'bp_video_pause'
     VIDEO_RESUME = 'bp_video_resume'

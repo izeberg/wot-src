@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.499882 -1.063366 -3.983314</min>
+		<max>1.511701 0.482812 3.628628</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB146_Gabler_s_Destroyer/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB146_Gabler_s_Destroyer/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+</root>

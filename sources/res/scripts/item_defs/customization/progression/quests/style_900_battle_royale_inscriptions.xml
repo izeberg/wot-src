@@ -7,12 +7,6 @@
 			<hidden>true</hidden>
 			<conditions>
 				<preBattle>
-					<account>
-						<token>
-							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
-						</token>
-					</account>
 					<battle>
 						<bonusTypes>29 30</bonusTypes>
 					</battle>
@@ -51,12 +45,6 @@
 					<key>#vehicle_customization:customization/tooltip/quests/br_summer_style_900_7/condition</key>
 				</description>
 				<preBattle>
-					<account>
-						<token>
-							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
-						</token>
-					</account>
 					<battle>
 						<bonusTypes>29 30</bonusTypes>
 					</battle>
@@ -95,12 +83,6 @@
 			<hidden>true</hidden>
 			<conditions>
 				<preBattle>
-					<account>
-						<token>
-							<id>cust_progress_900_1</id>
-							<greaterOrEqual>1</greaterOrEqual>
-						</token>
-					</account>
 					<battle>
 						<bonusTypes>29 30</bonusTypes>
 					</battle>

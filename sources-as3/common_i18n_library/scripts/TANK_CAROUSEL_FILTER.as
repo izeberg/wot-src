@@ -23,6 +23,8 @@ package
       
       public static const POPOVER_LABEL_PROGRESSIONS:String = "#tank_carousel_filter:popover/label/progressions";
       
+      public static const POPOVER_LABEL_CUSTOMIZATION:String = "#tank_carousel_filter:popover/label/customization";
+      
       public static const POPOVER_LABEL_ROLES_LIGHTTANK:String = "#tank_carousel_filter:popover/label/roles/lightTank";
       
       public static const POPOVER_LABEL_ROLES_MEDIUMTANK:String = "#tank_carousel_filter:popover/label/roles/mediumTank";
@@ -134,6 +136,10 @@ package
       public static const TOOLTIP_COMP7_HEADER:String = "#tank_carousel_filter:tooltip/comp7/header";
       
       public static const TOOLTIP_COMP7_BODY:String = "#tank_carousel_filter:tooltip/comp7/body";
+      
+      public static const TOOLTIP_CUSTOMIZATION_CANINSTALLATTACHMENTS_BODY:String = "#tank_carousel_filter:tooltip/customization/canInstallAttachments/body";
+      
+      public static const TOOLTIP_CUSTOMIZATION_OWN3DSTYLE_BODY:String = "#tank_carousel_filter:tooltip/customization/own3DStyle/body";
       
       public static const INFOTIP_HEADER_TITLE:String = "#tank_carousel_filter:infotip/header/title";
       

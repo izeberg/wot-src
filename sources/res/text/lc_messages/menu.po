@@ -878,6 +878,9 @@ msgstr "SPGs"
 msgid "carousel_tank_filter/all"
 msgstr "All"
 
+msgid "carousel_tank_filter/canInstallAttachments"
+msgstr "3D attachments"
+
 msgid "carousel_tank_filter/heavyTank"
 msgstr "Heavy Tanks"
 
@@ -886,6 +889,9 @@ msgstr "Light Tanks"
 
 msgid "carousel_tank_filter/mediumTank"
 msgstr "Medium Tanks"
+
+msgid "carousel_tank_filter/own3DStyle"
+msgstr "3D styles"
 
 msgid "carousel_tank_filter/ready"
 msgstr "Primary only"
@@ -2148,7 +2154,8 @@ msgstr ""
 msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
 "This parameter shows the changes to the chance of causing critical damage to"
-" enemy crew and modules. The effect works for all types of shells."
+" enemy crew and modules. The effect works for all types of shells except in "
+"vehicles with autocannons."
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr "This parameter shows the cooldown time of consumables."

@@ -37,6 +37,11 @@
 			<UUID>67b9f218-732f-4aaa-b5f4-d8c973a18bb9</UUID>
 			<flags>8</flags>
 		</GameObject>
+		<GameObject>
+			<name>AiDeathZone</name>
+			<UUID>d389bcdf-293c-481a-b262-9ef3183383df</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -94,6 +99,16 @@
 			</component>
 			<component>
 				<UUID>67b9f218-732f-4aaa-b5f4-d8c973a18bb9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>72171d5a-97cd-4e9c-a9b2-0c0a2c1d8bb4</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d389bcdf-293c-481a-b262-9ef3183383df</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -198,6 +213,24 @@
 			</component>
 			<component>
 				<UUID>67b9f218-732f-4aaa-b5f4-d8c973a18bb9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d389bcdf-293c-481a-b262-9ef3183383df</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -941,6 +974,32 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>d389bcdf-293c-481a-b262-9ef3183383df</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.0959634
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											30.5636
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -1018,6 +1077,32 @@
 						<section>
 							<resource>content/CGFPrefabs/Map_scenarios/01_karelia/01_bunker_destruction/01_bunker_destruction_destroyed_sfx.prefab</resource>
 						</section>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>d389bcdf-293c-481a-b262-9ef3183383df</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value>01_karelia_death_zone_ai</value>
 					</property>
 				</config>
 			</component>

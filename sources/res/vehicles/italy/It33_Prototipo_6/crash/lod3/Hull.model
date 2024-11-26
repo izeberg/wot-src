@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Prototipo_6/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.642135 -0.892332 -3.305880</min>
+		<max>1.574991 0.625344 2.784887</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It33_Prototipo_6/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+</root>

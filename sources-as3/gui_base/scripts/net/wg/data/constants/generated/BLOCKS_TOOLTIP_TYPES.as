@@ -39,6 +39,8 @@ package net.wg.data.constants.generated
       
       public static const TOOLTIP_IMAGE_BLOCK_NON_HISTORICAL_LINKAGE:String = "CustomizationImageBlockUI";
       
+      public static const TOOLTIP_IMAGE_BLOCK_RARITY_HEADER_LINKAGE:String = "CustomizationRarityHeaderUI";
+      
       public static const TOOLTIP_IMAGE_TEXT_BLOCK_PROGRESSIVE_LINKAGE:String = "ImageTextBlockProgressiveUI";
       
       public static const TOOLTIP_CUSTOMIZATION_ITEM_PROPERTY_BLOCK_LINKAGE:String = "CustomizationItemPropertyBlockUI";

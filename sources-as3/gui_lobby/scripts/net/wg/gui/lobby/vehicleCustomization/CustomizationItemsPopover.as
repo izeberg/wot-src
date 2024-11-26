@@ -215,7 +215,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function onTableDeleteItemRemovalHandler(param1:CustomizationIndicatorEvent) : void
       {
-         removeS(param1.id,param1.itemsList);
+         removeS(param1.id,param1.itemsList,param1.seasonType);
       }
    }
 }

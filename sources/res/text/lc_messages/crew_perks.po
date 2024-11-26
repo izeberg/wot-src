@@ -732,7 +732,7 @@ msgstr "Decreases gun dispersion during turret rotation."
 
 msgid "gunner_sniper/alt/description"
 msgstr ""
-"The effect works for all types of shells.\n"
+"The effect works for all types of shells except in vehicles with autocannons.\n"
 "\n"
 "If two Gunners have this perk, the average value of its training level is applied."
 

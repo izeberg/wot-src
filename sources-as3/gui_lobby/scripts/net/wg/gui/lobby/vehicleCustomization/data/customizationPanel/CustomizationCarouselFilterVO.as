@@ -32,6 +32,8 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
       
       public var groups:Vector.<String> = null;
       
+      public var raritiesGroup:Array = null;
+      
       public var formfactorGroups:Array = null;
       
       public function CustomizationCarouselFilterVO(param1:Object)
@@ -64,10 +66,10 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
             this.groups.splice(0,this.groups.length);
             this.groups = null;
          }
-         if(this.formfactorGroups)
+         if(this.raritiesGroup)
          {
-            this.formfactorGroups.splice(0,this.formfactorGroups.length);
-            this.formfactorGroups = null;
+            this.raritiesGroup.splice(0,this.raritiesGroup.length);
+            this.raritiesGroup = null;
          }
          super.onDispose();
       }

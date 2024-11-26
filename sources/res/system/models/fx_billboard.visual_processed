@@ -22,7 +22,7 @@
 					<fx>shaders/std_effects/lightonly.fx</fx>
 					<property>
 						diffuseMap
-						<Texture>maps/system/aid_thisway.bmp</Texture>
+						<Texture>system/models/fx_cube_white_AM.dds</Texture>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>

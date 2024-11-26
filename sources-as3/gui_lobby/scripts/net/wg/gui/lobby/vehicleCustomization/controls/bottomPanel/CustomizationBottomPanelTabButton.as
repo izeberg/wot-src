@@ -2,6 +2,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
 {
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
+   import flash.display.Sprite;
    import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Point;
@@ -9,27 +10,40 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
    import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.generated.CUSTOMIZATION_ALIASES;
    import net.wg.gui.components.advanced.collapsingBar.ResizableButton;
-   import net.wg.gui.components.common.counters.CounterView;
+   import net.wg.gui.components.controls.BitmapFill;
    import net.wg.gui.components.controls.Image;
    import net.wg.gui.lobby.vehicleCustomization.events.CustomizationSoundEvent;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
+   import scaleform.clik.utils.Padding;
    
    public class CustomizationBottomPanelTabButton extends ResizableButton
    {
       
-      private static const ACTIVE_PLUS_ALPHA:Number = 0.8;
+      private static const DISABLE_ALPHA:Number = 0.2;
       
-      private static const INACTIVE_PLUS_ALPHA:Number = 0.4;
+      private static const DISABLE_ALPHA_TEXT:Number = 0.5;
       
-      private static const HOVER_PLUS_ALPHA:Number = 0.7;
+      private static const ALPHA_TEXT:Number = 1;
       
-      private static const INACTIVE_ICON_ALPHA:Number = 0.5;
+      private static const INACTIVE_ALPHA:Number = 0.5;
       
-      private static const HOVER_ICON_ALPHA:int = 1;
+      private static const ACTIVE_ALPHA:Number = 0.8;
       
-      private static const COUNTER_PADDING:int = 20;
+      private static const SELECTED_ALPHA:Number = 1;
+      
+      private static const PLUS_OFFSET_X:int = 9;
+      
+      private static const COUNTER_OFFSET_X:int = 10;
+      
+      private static const PLUS_OFFSET_Y:int = 10;
+      
+      private static const COUNTER_PADDING:int = 7;
+      
+      private static const COUNTER_PADDING_SMALL:int = 2;
+      
+      private static const TEXT_FIELD_OFFSET_X:int = -5;
       
       private static const ICON_SOURCE_INVALID:String = "imageSrcInv";
       
@@ -39,20 +53,28 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       private static const LAST_PREFIX:String = "last_";
       
-      private static const COUNTER_Y_OFFSET:int = -7;
-      
       private static const OUT:String = "out";
+      
+      private static const DISABLE_PATTERN:String = "uniDisablePattern";
+      
+      private static const INACTIVE_COLOR:uint = 9211006;
+      
+      private static const ACTIVE_COLOR:uint = 12495231;
+      
+      private static const SELECTED_COLOR:uint = 16768409;
+      
+      private static const HOVER_COLOR:uint = 16777189;
        
       
       public var states:MovieClip = null;
       
       public var icon:Image = null;
       
-      public var plus:MovieClip = null;
+      public var plus:Sprite = null;
       
       public var iconActive:Image = null;
       
-      public var counter:CounterView = null;
+      public var counterEx:CustomizationTabCounter = null;
       
       private var _iconSource:String = "";
       
@@ -61,6 +83,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       private var _iconSize:Point;
       
       private var _last:Boolean = false;
+      
+      private var _active:Boolean = false;
       
       public function CustomizationBottomPanelTabButton()
       {
@@ -85,17 +109,20 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       override protected function configUI() : void
       {
          super.configUI();
-         this.icon.alpha = INACTIVE_ICON_ALPHA;
+         this.icon.alpha = !!enabled ? Number(INACTIVE_ALPHA) : Number(DISABLE_ALPHA);
          this.icon.addEventListener(Event.CHANGE,this.onIconChangeHandler);
          soundEnabled = false;
          this.icon.cacheType = ImageCacheTypes.NOT_USE_CACHE;
-         this.counter.y = COUNTER_Y_OFFSET;
          focusable = false;
+         mouseEnabledOnDisabled = true;
+         disableMc.repeat = BitmapFill.REPEAT_ALL;
+         disableMc.source = DISABLE_PATTERN;
+         disabledFillPadding = new Padding(0,2,0,2);
       }
       
       override protected function calculateOriginWidth() : int
       {
-         var _loc1_:int = this.plus.visible || this.hasText ? int(this._offsetFromIcon) : int(0);
+         var _loc1_:int = !!this.hasText ? int(this._offsetFromIcon) : int(0);
          return tabBar.getTextWidth(this) + _loc1_ + this._iconSize.x + (padding << 1);
       }
       
@@ -121,6 +148,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
                this.icon.source = this._iconSource;
                this.iconActive.source = this._iconSource.replace(HOVER_POSTFIX,ACTIVE_POSTFIX);
             }
+            invalidateSize();
          }
       }
       
@@ -129,26 +157,25 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          this.icon.removeEventListener(Event.CHANGE,this.onIconChangeHandler);
          this.icon.dispose();
          this.iconActive.dispose();
-         this.counter.dispose();
+         this.counterEx.dispose();
          this.states = null;
          this.icon = null;
          this.iconActive = null;
-         this.plus = null;
          this._iconSource = null;
          this._iconSize = null;
-         this.counter = null;
+         this.counterEx = null;
          super.onDispose();
       }
       
       override protected function checkChild(param1:DisplayObject) : Boolean
       {
-         return super.checkChild(param1) || param1 != this.icon || param1 != this.iconActive || param1 != this.plus || param1 != this.counter;
+         return super.checkChild(param1) || param1 != this.icon || param1 != this.iconActive || param1 != this.counterEx;
       }
       
       override protected function updateScale(param1:Number, param2:Number) : void
       {
-         this.icon.scaleX = this.iconActive.scaleX = this.plus.scaleX = this.counter.scaleX = param1;
-         this.icon.scaleY = this.iconActive.scaleY = this.plus.scaleY = this.counter.scaleY = param2;
+         this.icon.scaleX = this.iconActive.scaleX = this.plus.scaleX = this.counterEx.scaleX = param1;
+         this.icon.scaleY = this.iconActive.scaleY = this.plus.scaleY = this.counterEx.scaleY = param2;
          super.updateScale(param1,param2);
       }
       
@@ -159,14 +186,27 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          {
             return;
          }
-         if(selected)
+         textField.textColor = INACTIVE_COLOR;
+         textField.alpha = !!enabled ? Number(ALPHA_TEXT) : Number(DISABLE_ALPHA_TEXT);
+         this.iconActive.alpha = this.icon.alpha = this.plus.alpha = !!enabled ? Number(INACTIVE_ALPHA) : Number(DISABLE_ALPHA);
+         if(!enabled)
          {
-            this.plus.alpha = ACTIVE_PLUS_ALPHA;
+            return;
          }
-         else
+         if(this._active)
          {
-            this.plus.alpha = param1 == ComponentState.OVER ? Number(HOVER_PLUS_ALPHA) : Number(INACTIVE_PLUS_ALPHA);
-            this.icon.alpha = param1 == ComponentState.OVER ? Number(HOVER_ICON_ALPHA) : Number(INACTIVE_ICON_ALPHA);
+            textField.textColor = ACTIVE_COLOR;
+            this.iconActive.alpha = this.icon.alpha = this.plus.alpha = ACTIVE_ALPHA;
+            if(selected || param1 == ComponentState.OVER)
+            {
+               textField.textColor = SELECTED_COLOR;
+               this.iconActive.alpha = this.icon.alpha = this.plus.alpha = SELECTED_ALPHA;
+            }
+         }
+         else if(param1 == ComponentState.OVER)
+         {
+            textField.textColor = HOVER_COLOR;
+            this.iconActive.alpha = this.icon.alpha = this.plus.alpha = ACTIVE_ALPHA;
          }
       }
       
@@ -181,63 +221,83 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       override protected function updateChildPositions() : void
       {
-         var _loc1_:int = hitMc.width >> 1;
-         var _loc2_:int = 0;
-         var _loc3_:Boolean = textField.text != null && StringUtils.isNotEmpty(textField.text);
-         var _loc4_:Boolean = StringUtils.isNotEmpty(this.icon.source);
-         if(_loc3_)
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
+         var _loc1_:Boolean = StringUtils.isNotEmpty(this._iconSource);
+         var _loc2_:int = this.icon.width != 0 ? int(this.icon.width) : int(this._iconSize.x);
+         var _loc3_:int = this.icon.height != 0 ? int(this.icon.height) : int(this._iconSize.y);
+         var _loc4_:int = 9;
+         if(collapsed)
          {
-            _loc2_ = _loc1_ - (textField.width >> 1);
-            if(_loc4_)
+            _loc5_ = hitMc.width >> 1;
+            _loc6_ = 0;
+            if(this.hasText)
             {
-               _loc2_ -= this.icon.width + this._offsetFromIcon >> 1;
+               _loc6_ = _loc5_ - (textField.width >> 1);
+               if(_loc1_)
+               {
+                  _loc6_ -= this.icon.width + this._offsetFromIcon >> 1;
+               }
             }
-         }
-         else if(_loc4_)
-         {
-            _loc2_ = _loc1_ - (this.icon.width >> 1);
-         }
-         if(_loc4_)
-         {
-            this.icon.x = this.iconActive.x = _loc2_;
-            this.icon.y = this.iconActive.y = hitMc.height - this.icon.height >> 1;
-            this.plus.x = this.icon.x + this.icon.width + (this._offsetFromIcon - this.plus.width >> 1);
-            this.plus.y = this.icon.y + this.icon.height - (this.plus.height >> 1);
-            if(_loc3_)
+            else if(_loc1_)
             {
-               textField.x = this.icon.x + this.icon.width + this._offsetFromIcon;
+               _loc6_ = _loc5_ - (this.icon.width >> 1);
+            }
+            if(_loc1_)
+            {
+               this.icon.x = this.iconActive.x = _loc6_;
+               this.icon.y = this.iconActive.y = hitMc.height - this.icon.height >> 1;
+               this.plus.x = this.icon.x + PLUS_OFFSET_X;
+               this.plus.y = this.icon.y + PLUS_OFFSET_Y;
+               if(this.hasText)
+               {
+                  textField.x = this.icon.x + this.icon.width + this._offsetFromIcon + TEXT_FIELD_OFFSET_X;
+                  textField.y = hitMc.height - textField.height >> 1;
+                  this.counterEx.x = textField.x + textField.width - COUNTER_PADDING | 0;
+               }
+               else
+               {
+                  this.counterEx.x = this.icon.x + this.icon.width - COUNTER_PADDING_SMALL;
+               }
+            }
+            else if(this.hasText)
+            {
+               textField.x = _loc6_;
                textField.y = hitMc.height - textField.height >> 1;
-               this.counter.x = textField.x + textField.width - COUNTER_PADDING | 0;
-            }
-            else
-            {
-               this.counter.x = this.icon.x;
+               this.counterEx.x = textField.x + textField.width - COUNTER_PADDING | 0;
             }
          }
-         else if(_loc3_)
+         else
          {
-            if(this.plus.visible)
+            if(_loc1_)
             {
-               textField.x = _loc2_;
-               textField.y = hitMc.height - textField.height >> 1;
-               this.plus.x = textField.x - this.plus.width;
-               this.plus.y = textField.y + textField.height - this.plus.height;
+               this.icon.x = this.iconActive.x = _loc4_;
+               this.icon.y = this.iconActive.y = hitMc.height - _loc3_ >> 1;
+               this.plus.x = this.icon.x + PLUS_OFFSET_X;
+               this.plus.y = this.icon.y + PLUS_OFFSET_Y;
+               this.counterEx.x = _loc4_;
+               _loc4_ += _loc2_ + this._offsetFromIcon;
             }
-            else
+            if(this.hasText)
             {
-               textField.x = _loc2_;
+               _loc4_ += TEXT_FIELD_OFFSET_X;
+               textField.x = _loc4_;
                textField.y = hitMc.height - textField.height >> 1;
+               this.counterEx.x = textField.x + textField.width - COUNTER_PADDING | 0;
             }
-            this.counter.x = textField.x + textField.width - COUNTER_PADDING | 0;
          }
+         this.counterEx.x += COUNTER_OFFSET_X;
+         updateDisable();
       }
       
-      public function setCounter(param1:int) : void
+      public function setNotification(param1:int, param2:Boolean) : void
       {
-         this.counter.visible = param1 > 0;
-         if(this.counter.visible)
+         var _loc3_:String = null;
+         this.counterEx.visible = enabled && (param1 > 0 || param2);
+         if(this.counterEx.visible)
          {
-            this.counter.setCount(param1.toString());
+            _loc3_ = !!param2 ? VEHICLE_CUSTOMIZATION.CUSTOMIZATION_NOTIFICATION_NEW : param1.toString();
+            this.counterEx.text = _loc3_;
          }
       }
       
@@ -256,6 +316,19 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          this.plus.visible = param1;
       }
       
+      public function setActive(param1:Boolean) : void
+      {
+         this._active = param1;
+         this.icon.visible = !this._active;
+         this.iconActive.visible = this._active;
+         this.setState(state);
+      }
+      
+      public function getActive() : Boolean
+      {
+         return this._active;
+      }
+      
       override public function set label(param1:String) : void
       {
          super.label = App.utils.toUpperOrLowerCase(param1,true);
@@ -269,6 +342,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
             this.iconActive.visible = param1;
             super.selected = param1;
          }
+         this.setState(state);
       }
       
       public function set iconSource(param1:String) : void
@@ -282,7 +356,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       public function get hasText() : Boolean
       {
-         return StringUtils.isNotEmpty(textField.text);
+         return StringUtils.isNotEmpty(this.label);
       }
       
       public function set offsetFromIcon(param1:int) : void
@@ -304,6 +378,12 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       {
          this._last = param1;
          this.setState(OUT);
+      }
+      
+      public function set first(param1:Boolean) : void
+      {
+         bgMc.visible = !param1;
+         this.states.visible = !param1;
       }
       
       override protected function onMouseRollOverHandler(param1:MouseEvent) : void

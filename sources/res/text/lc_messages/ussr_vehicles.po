@@ -613,6 +613,15 @@ msgstr "TITT Rozanov"
 msgid "Chassis_R205_Tank_Rozanova_Obsidian"
 msgstr "Obsidian"
 
+msgid "Chassis_R217_Object_Kust"
+msgstr "Object Kust"
+
+msgid "Chassis_R219_Object_265T"
+msgstr "Object 265T"
+
+msgid "Chassis_R225_SU_100i"
+msgstr "SU-100I"
+
 msgid "Chassis_R71_IS_2B"
 msgstr "IS-2M"
 
@@ -769,6 +778,9 @@ msgstr ""
 "Continental\n"
 "W-670"
 
+msgid "D-12-5"
+msgstr "D-12-5"
+
 msgid "D-744"
 msgstr "D-744"
 
@@ -815,6 +827,9 @@ msgstr "GMC 6004"
 
 msgid "GMC_6046"
 msgstr "GMC 6046"
+
+msgid "GMC_6046I"
+msgstr "GMC 6046I"
 
 msgid "GTD_700P"
 msgstr "GTD-700P"
@@ -1655,6 +1670,9 @@ msgstr "R-113"
 msgid "R113M_DR"
 msgstr "R-113D"
 
+msgid "R113T"
+msgstr "R113T"
+
 msgid "R113_Object_730"
 msgstr "IS-5 (Object 730)"
 
@@ -1990,6 +2008,9 @@ msgstr "R-123M"
 
 msgid "R123U"
 msgstr "R-123U"
+
+msgid "R123_K"
+msgstr "R-123K"
 
 msgid "R123_Kirovets_1"
 msgstr "Kirovets-1"
@@ -3641,6 +3662,81 @@ msgstr ""
 msgid "R20_T-44_FL_short_special"
 msgstr "Great dynamics and an accurate gun"
 
+msgid "R217_Object_Kust"
+msgstr "Object Kust"
+
+msgid "R217_Object_Kust_descr"
+msgstr ""
+"In the second half of the 1950s, the U.S.S.R. was working to develop "
+"turretless tanks. Designers in Kharkiv were working on a vehicle named "
+"Object Kust (kust meaning \"bush\"), which was similar in concept to the "
+"Swedish Strv 103. For aiming, only elevation/depression of the gun was "
+"envisaged, with minimal traverse. The project did not go beyond the mockup "
+"stage."
+
+msgid "R217_Object_Kust_long_special"
+msgstr ""
+"The Object Kust is a Tier VIII Soviet sniper TD with hydropneumatic "
+"suspension. It boasts a 130 mm gun with excellent armor penetration and high"
+" average damage per shot, and the thickness and angle of its frontal armor "
+"force enemies to aim for specific weak points—giving the Kust plenty of time"
+" to take out foes."
+
+msgid "R217_Object_Kust_short"
+msgstr "Kust"
+
+msgid "R217_Object_Kust_short_special"
+msgstr "Hydropneumatic suspension, powerful gun"
+
+msgid "R219_Object_265T"
+msgstr "Object 265T"
+
+msgid "R219_Object_265T_descr"
+msgstr ""
+"A project for a heavy tank adapted for use with individual floating equipment. Developed in the second half of the 1950s on the initiative of the Mobile Vehicle Engineering Institute (VNII-100). Following detailed development, it was given the designation Object 265 and was presented for the approval of the Commander of Armored and Mechanized Forces of the Soviet Army.\n"
+"\n"
+"Despite great attention to unconventional layouts, including placing the engine-transmission compartment at the front, the military no longer considered the tank's development as promising. In addition, the degree of novelty in the new tank's control systems, with the driver being located in the turret, put off the potential client. The project was closed in order to work on enhancing the T-10 tank (Object 730)."
+
+msgid "R219_Object_265T_long_special"
+msgstr ""
+"The Object 265T is a Tier IX Soviet heavy tank with a distinctive reverse "
+"autoloader. Its decent mobility enables it to secure advantageous heavy tank"
+" positions, while its rear-turret configuration and robust armor help it "
+"hold them. For the best results, engage the enemy, unload the magazine, and "
+"fire the final shell for maximum DPM."
+
+msgid "R219_Object_265T_short"
+msgstr "Obj. 265T"
+
+msgid "R219_Object_265T_short_special"
+msgstr "Reverse autoreloader, good dynamics"
+
+msgid "R225_SU_100i"
+msgstr "SU-100I"
+
+msgid "R225_SU_100i_descr"
+msgstr ""
+"The Soviet Central Artillery Design Bureau was working in several areas "
+"simultaneously, one of which was an initiative of A. S. Chasovnikov to "
+"reequip foreign vehicles. A number of reequipment options were proposed for "
+"the American M4A2, including repurposing it as an SPG. The project was "
+"considered in February 1944 but was not adopted, primarily because there was"
+" no requirement for modernization."
+
+msgid "R225_SU_100i_long_special"
+msgstr ""
+"This TD offers close to the best penetration for its tier, but it has its "
+"drawbacks—low gun handling and DPM. While its mobility makes it easy to "
+"navigate the battlefield, this vehicle is best suited to long-range "
+"engagements: even though its accuracy is not exceptional, it can still "
+"penetrate vehicles up to two tiers higher."
+
+msgid "R225_SU_100i_short"
+msgstr "SU-100I"
+
+msgid "R225_SU_100i_short_special"
+msgstr "Excellent penetration, good damage per shot"
+
 msgid "R34_BT-SV_long_special"
 msgstr ""
 "A versatile Tier III Soviet light tank with a peculiar hull shape. Its armor"
@@ -3855,6 +3951,9 @@ msgstr "S-51 Bis"
 
 msgid "SCR_209"
 msgstr "SCR 209"
+
+msgid "SCR_508I"
+msgstr "SCR 508I"
 
 msgid "ST_I"
 msgstr "ST-I"
@@ -4930,6 +5029,15 @@ msgstr "TITT Rozanov"
 msgid "Turret_1_R205_Tank_Rozanova_Obsidian"
 msgstr "Obsidian"
 
+msgid "Turret_1_R217_Object_Kust"
+msgstr "Object Kust"
+
+msgid "Turret_1_R219_Object_265T"
+msgstr "Object 265T"
+
+msgid "Turret_1_R225_SU_100i"
+msgstr "SU-100I"
+
 msgid "Turret_1_R71_IS_2B"
 msgstr "IS-122"
 
@@ -5552,6 +5660,9 @@ msgstr "100 mm NT-12"
 msgid "_100mm_S34"
 msgstr "100 mm S-34"
 
+msgid "_100mm_S34I"
+msgstr "100 mm S-34I"
+
 msgid "_100mm_S34_P_dualgun"
 msgstr "100 mm S-34DP"
 
@@ -5579,6 +5690,9 @@ msgstr "UBR-412B"
 msgid "_100mm_UBR-412BM"
 msgstr "UBR-412BM"
 
+msgid "_100mm_UBR-412I"
+msgstr "UBR-412I"
+
 msgid "_100mm_UBR-412P"
 msgstr "UBR-412P"
 
@@ -5599,6 +5713,9 @@ msgstr "UBR-412P"
 
 msgid "_100mm_UBR-412PB_fallout"
 msgstr "UBR-412PB R"
+
+msgid "_100mm_UBR-412PI"
+msgstr "UBR-412PI"
 
 msgid "_100mm_UBR-412U"
 msgstr "UBR-412U"
@@ -5876,6 +5993,9 @@ msgstr "122 mm A-19 mod. 1937"
 msgid "_122mm_A-19_short"
 msgstr "122 mm A-19"
 
+msgid "_122mm_BK_9T"
+msgstr "BK-9T"
+
 msgid "_122mm_BK_9U"
 msgstr "BK-9U"
 
@@ -5951,6 +6071,9 @@ msgstr "BR-471PS"
 msgid "_122mm_BR_472PVA"
 msgstr "BR-472PVA"
 
+msgid "_122mm_BR_472T"
+msgstr "BR-472T"
+
 msgid "_122mm_BR_472U"
 msgstr "BR-472U"
 
@@ -6022,6 +6145,9 @@ msgstr "122 mm M62-T2U"
 
 msgid "_122mm_M62_T2_A"
 msgstr "122 mm M62-T2A"
+
+msgid "_122mm_M62_TS2"
+msgstr "122 mm M62-TS2"
 
 msgid "_122mm_OF-462"
 msgstr "OF-462"
@@ -6110,6 +6236,9 @@ msgstr "UOF-472"
 msgid "_122mm_UOF_471M"
 msgstr "UOF-471M"
 
+msgid "_122mm_UOF_472T"
+msgstr "UOF-472T"
+
 msgid "_122mm_UOF_472U"
 msgstr "UOF-472U"
 
@@ -6164,6 +6293,9 @@ msgstr "130 mm 2A50"
 msgid "_130mm_3VBK"
 msgstr "3VBK"
 
+msgid "_130mm_3VBKB"
+msgstr "3VBKB"
+
 msgid "_130mm_3VBKS"
 msgstr "3VBKS"
 
@@ -6191,11 +6323,17 @@ msgstr "53-OF-482M"
 msgid "_130mm_53_VBR_482"
 msgstr "53-VBR-482"
 
+msgid "_130mm_53_VBR_482B"
+msgstr "53-VBR-482B"
+
 msgid "_130mm_53_VBR_482S"
 msgstr "53-VBR-482S"
 
 msgid "_130mm_53_VOF_482V"
 msgstr "53-VOF-482V"
+
+msgid "_130mm_53_VOF_482VB"
+msgstr "53-VOF-482VB"
 
 msgid "_130mm_53_VOF_482VS"
 msgstr "53-VOF-482VS"
@@ -6208,6 +6346,9 @@ msgstr "130 mm B-13"
 
 msgid "_130mm_M_65"
 msgstr "130 mm M-65"
+
+msgid "_130mm_M_65B"
+msgstr "130 mm M-65B"
 
 msgid "_130mm_M_65K"
 msgstr "130 mm M-65K"
@@ -6673,6 +6814,9 @@ msgstr "5TDF-SM"
 
 msgid "_6TD"
 msgstr "6TD"
+
+msgid "_6TD_K"
+msgstr "6TD-K"
 
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APCR Mk. 1T"

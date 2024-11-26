@@ -9,7 +9,6 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.ui.Keyboard;
    import net.wg.data.Aliases;
    import net.wg.data.constants.Cursors;
-   import net.wg.data.constants.SoundTypes;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CUSTOMIZATION_ALIASES;
    import net.wg.data.constants.generated.TEXT_MANAGER_STYLES;
@@ -53,9 +52,9 @@ package net.wg.gui.lobby.vehicleCustomization
    public class CustomizationMainView extends CustomizationMainViewMeta implements ICustomizationMainViewMeta
    {
       
-      private static const BOTTOM_OFFSET:int = 220;
+      private static const BOTTOM_OFFSET:int = 248;
       
-      private static const MIN_RES_BOTTOM_OFFSET:int = 242;
+      private static const MIN_RES_BOTTOM_OFFSET:int = 270;
       
       private static const MIN_RESOLUTION:int = 900;
       
@@ -65,7 +64,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const SIDEBAR_MIN_SCREEN_SIZE:int = 1367;
       
-      private static const SEASON_BAR_DEFAULT_OFFSET_X:int = 98;
+      private static const SEASON_BAR_DEFAULT_OFFSET_X:int = 50;
       
       private static const SEASON_BAR_SMALL_OFFSET_X:int = -150;
       
@@ -89,11 +88,11 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const STYLE_INFO_ANIMATION_DELAY:int = 200;
       
-      private static const ENTRY_POINT:int = 0;
+      private static const ENTRY_POINT:int = -35;
       
       private static const ENTRY_POINT_MIN:int = 10;
       
-      public static const ENTRY_POINT_SCALE:Number = 1;
+      public static const ENTRY_POINT_SCALE:Number = 0.9;
       
       private static const ENTRY_POINT_MIN_SCALE:Number = 0.75;
        
@@ -680,7 +679,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function onClosePropertiesSheetHandler(param1:CustomizationEvent) : void
       {
-         if(this._customizationAnchorInitData && this._customizationAnchorInitData.typeRegions == CUSTOMIZATION_ALIASES.ANCHOR_TYPE_PROJECTION_DECAL)
+         if(this._customizationAnchorInitData && this._customizationAnchorInitData.typeRegions == CUSTOMIZATION_ALIASES.ANCHOR_TYPE_SPECIFIC)
          {
          }
          this.bottomPanel.hideOverlay();
@@ -813,7 +812,6 @@ package net.wg.gui.lobby.vehicleCustomization
          }
          this._magneticTool.attachDataToCursor(_loc3_);
          this.vehicleView.onStartDrop();
-         playCustomSoundS(SoundTypes.CUSTOMIZATION_SELECT);
       }
       
       private function onStageDraggingStartHandler(param1:LobbyEvent) : void

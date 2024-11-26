@@ -5,8 +5,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.data.BottomPanelVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelInitVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSwitcherVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.FilterFallbackDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselFilterVO;
    import net.wg.infrastructure.base.BaseDAAPIComponent;
@@ -36,13 +36,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onItemIsNewAnimationShown:Function;
       
+      public var showVideo:Function;
+      
+      public var showVehiclesSideBar:Function;
+      
       private var _customizationBottomPanelInitVO:CustomizationBottomPanelInitVO;
       
-      private var _customizationSwitcherVO:CustomizationSwitcherVO;
-      
       private var _customizationTabNavigatorVO:CustomizationTabNavigatorVO;
-      
-      private var _array:Array;
       
       private var _customizationCarouselDataVO:CustomizationCarouselDataVO;
       
@@ -53,6 +53,8 @@ package net.wg.infrastructure.base.meta.impl
       private var _tankCarouselFilterSelectedVO:TankCarouselFilterSelectedVO;
       
       private var _customizationBottomPanelNotificationVO:CustomizationBottomPanelNotificationVO;
+      
+      private var _filterFallbackDataVO:FilterFallbackDataVO;
       
       public function CustomizationBottomPanelMeta()
       {
@@ -66,20 +68,10 @@ package net.wg.infrastructure.base.meta.impl
             this._customizationBottomPanelInitVO.dispose();
             this._customizationBottomPanelInitVO = null;
          }
-         if(this._customizationSwitcherVO)
-         {
-            this._customizationSwitcherVO.dispose();
-            this._customizationSwitcherVO = null;
-         }
          if(this._customizationTabNavigatorVO)
          {
             this._customizationTabNavigatorVO.dispose();
             this._customizationTabNavigatorVO = null;
-         }
-         if(this._array)
-         {
-            this._array.splice(0,this._array.length);
-            this._array = null;
          }
          if(this._customizationCarouselDataVO)
          {
@@ -105,6 +97,11 @@ package net.wg.infrastructure.base.meta.impl
          {
             this._customizationBottomPanelNotificationVO.dispose();
             this._customizationBottomPanelNotificationVO = null;
+         }
+         if(this._filterFallbackDataVO)
+         {
+            this._filterFallbackDataVO.dispose();
+            this._filterFallbackDataVO = null;
          }
          super.onDispose();
       }
@@ -169,22 +166,23 @@ package net.wg.infrastructure.base.meta.impl
          this.onItemIsNewAnimationShown(param1);
       }
       
+      public function showVideoS() : void
+      {
+         App.utils.asserter.assertNotNull(this.showVideo,"showVideo" + Errors.CANT_NULL);
+         this.showVideo();
+      }
+      
+      public function showVehiclesSideBarS() : void
+      {
+         App.utils.asserter.assertNotNull(this.showVehiclesSideBar,"showVehiclesSideBar" + Errors.CANT_NULL);
+         this.showVehiclesSideBar();
+      }
+      
       public final function as_setBottomPanelInitData(param1:Object) : void
       {
          var _loc2_:CustomizationBottomPanelInitVO = this._customizationBottomPanelInitVO;
          this._customizationBottomPanelInitVO = new CustomizationBottomPanelInitVO(param1);
          this.setBottomPanelInitData(this._customizationBottomPanelInitVO);
-         if(_loc2_)
-         {
-            _loc2_.dispose();
-         }
-      }
-      
-      public final function as_setSwitchersData(param1:Object) : void
-      {
-         var _loc2_:CustomizationSwitcherVO = this._customizationSwitcherVO;
-         this._customizationSwitcherVO = new CustomizationSwitcherVO(param1);
-         this.setSwitchersData(this._customizationSwitcherVO);
          if(_loc2_)
          {
             _loc2_.dispose();
@@ -199,17 +197,6 @@ package net.wg.infrastructure.base.meta.impl
          if(_loc2_)
          {
             _loc2_.dispose();
-         }
-      }
-      
-      public final function as_setBottomPanelTabsPluses(param1:Array) : void
-      {
-         var _loc2_:Array = this._array;
-         this._array = param1;
-         this.setBottomPanelTabsPluses(this._array);
-         if(_loc2_)
-         {
-            _loc2_.splice(0,_loc2_.length);
          }
       }
       
@@ -268,6 +255,17 @@ package net.wg.infrastructure.base.meta.impl
          }
       }
       
+      public final function as_setFilterFallbackData(param1:Object) : void
+      {
+         var _loc2_:FilterFallbackDataVO = this._filterFallbackDataVO;
+         this._filterFallbackDataVO = new FilterFallbackDataVO(param1);
+         this.setFilterFallbackData(this._filterFallbackDataVO);
+         if(_loc2_)
+         {
+            _loc2_.dispose();
+         }
+      }
+      
       protected function setBottomPanelInitData(param1:CustomizationBottomPanelInitVO) : void
       {
          var _loc2_:String = "as_setBottomPanelInitData" + Errors.ABSTRACT_INVOKE;
@@ -275,23 +273,9 @@ package net.wg.infrastructure.base.meta.impl
          throw new AbstractException(_loc2_);
       }
       
-      protected function setSwitchersData(param1:CustomizationSwitcherVO) : void
-      {
-         var _loc2_:String = "as_setSwitchersData" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc2_);
-         throw new AbstractException(_loc2_);
-      }
-      
       protected function setBottomPanelTabsData(param1:CustomizationTabNavigatorVO) : void
       {
          var _loc2_:String = "as_setBottomPanelTabsData" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc2_);
-         throw new AbstractException(_loc2_);
-      }
-      
-      protected function setBottomPanelTabsPluses(param1:Array) : void
-      {
-         var _loc2_:String = "as_setBottomPanelTabsPluses" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);
          throw new AbstractException(_loc2_);
       }
@@ -327,6 +311,13 @@ package net.wg.infrastructure.base.meta.impl
       protected function setNotificationCounters(param1:CustomizationBottomPanelNotificationVO) : void
       {
          var _loc2_:String = "as_setNotificationCounters" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc2_);
+         throw new AbstractException(_loc2_);
+      }
+      
+      protected function setFilterFallbackData(param1:FilterFallbackDataVO) : void
+      {
+         var _loc2_:String = "as_setFilterFallbackData" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);
          throw new AbstractException(_loc2_);
       }
