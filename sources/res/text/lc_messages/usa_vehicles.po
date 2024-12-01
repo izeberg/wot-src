@@ -1109,6 +1109,31 @@ msgstr "XM66F"
 msgid "A153_XM66F_short_special"
 msgstr "Good frontal armor and a great gun"
 
+msgid "A154_Convertible_Medium_Tank_T3E2"
+msgstr "T3E2 Medium Tank"
+
+msgid "A154_Convertible_Medium_Tank_T3E2_descr"
+msgstr ""
+"In October 1932, the Munitions Board completed the specifications for the "
+"Medium Tank T3E2. The first prototype was built two years later, but after "
+"testing it was sent to be reworked. By 1936, the vehicle had undergone many "
+"improvements and was finally ready to roll out; however, by that time, its "
+"design was already obsolete and the U.S. military soon stopped using the "
+"tank. Two of its prototypes were museum exhibits for a while before they "
+"were dismantled."
+
+msgid "A154_Convertible_Medium_Tank_T3E2_long_special"
+msgstr ""
+"The T3E2 Medium Tank has excellent dynamics and mobility, allowing it to "
+"take up key positions early in battle. Its ability to dive right into the "
+"action from the very start makes it a lot of fun to play."
+
+msgid "A154_Convertible_Medium_Tank_T3E2_short"
+msgstr "T3E2 Medium"
+
+msgid "A154_Convertible_Medium_Tank_T3E2_short_special"
+msgstr "Excellent dynamics, good mobility"
+
 msgid "A155_AAT60"
 msgstr "AAT60"
 
@@ -1496,6 +1521,35 @@ msgstr ""
 msgid "A74_T1_E6_short_special"
 msgstr "A fast-firing gun and good maneuverability"
 
+msgid "A76_M3_A3"
+msgstr "M3A3 Stuart"
+
+msgid "A76_M3_A3_descr"
+msgstr ""
+"A further development of the M3 light tank with a differently shaped welded "
+"hull that made the volume of the fighting compartment significantly larger "
+"and improved the crew's comfort. Meanwhile, removing the glacis plate with "
+"huge hatches gave the hull greater shell resistance. Mass production "
+"continued from January through September 1943. A total of 3,427 tanks were "
+"produced in this period, 2,045 of which were sent to the U.K. under the name"
+" Stuart V. The M3A3 saw action in World War II, the Chinese Civil War, the "
+"First Indochina War, and the Portuguese Colonial War. The leading states "
+"removed the tank from service after WWII, but it was used by other "
+"countries, which kept it in service until the 1990s. Certain countries, for "
+"instance Paraguay, use it to this day."
+
+msgid "A76_M3_A3_long_special"
+msgstr ""
+"On top of its high rate of fire and good gun handling, the M3 Stuart also "
+"has solid mobility and excellent view range. Combined, these traits make it "
+"a well-rounded light tank for its tier."
+
+msgid "A76_M3_A3_short"
+msgstr "M3A3 Stuart"
+
+msgid "A76_M3_A3_short_special"
+msgstr "Good mobility, high rate of fire"
+
 msgid "A78_M4_Improved"
 msgstr "M4 Improved"
 
@@ -1827,6 +1881,9 @@ msgstr "Cross-drive CD-850-4"
 msgid "Chassis_A153_XM66F"
 msgstr "MX66"
 
+msgid "Chassis_A154_Convertible_Medium_Tank_T3E2"
+msgstr "Convertible Medium Tank T3E2"
+
 msgid "Chassis_A155_AAT60"
 msgstr "AAT60"
 
@@ -1871,6 +1928,9 @@ msgstr "T3 HMC"
 
 msgid "Chassis_A46_T3_2"
 msgstr "T3 HMC improved"
+
+msgid "Chassis_A76_M3_A3"
+msgstr "M3A3 Stuart"
 
 msgid "Chassis_A99_T92_LT"
 msgstr "T92"
@@ -2515,6 +2575,14 @@ msgstr ""
 "Continental\n"
 "W-670-7"
 
+msgid "Continental_W_670_9A"
+msgstr "Continental W-670-9A"
+
+msgid "Continental_W_670_9A_short"
+msgstr ""
+"Continental\n"
+"W-670-9A"
+
 msgid "Crysler_A57"
 msgstr "Chrysler A57"
 
@@ -2543,6 +2611,9 @@ msgstr "Cunningham E2"
 
 msgid "Cunningham_type_3"
 msgstr "Cunningham V8"
+
+msgid "Curtiss_D_12"
+msgstr "Curtiss D-12"
 
 msgid "D37812"
 msgstr "D37812"
@@ -3228,6 +3299,9 @@ msgstr "SCR 506"
 
 msgid "SCR_508"
 msgstr "SCR 508"
+
+msgid "SCR_508B"
+msgstr "SCR 508 B"
 
 msgid "SCR_508_1"
 msgstr "SCR 508/1"
@@ -4100,6 +4174,9 @@ msgstr "T42"
 msgid "Turret_1_A153_XM66F"
 msgstr "XM66F"
 
+msgid "Turret_1_A154_Convertible_Medium_Tank_T3E2"
+msgstr "Convertible Medium Tank T3E2"
+
 msgid "Turret_1_A155_AAT60"
 msgstr "AAT60"
 
@@ -4138,6 +4215,9 @@ msgstr "T82 HMC"
 
 msgid "Turret_1_A46_T3"
 msgstr "T3 HMC"
+
+msgid "Turret_1_A76_M3_A3"
+msgstr "M3A3 Stuart"
 
 msgid "Turret_1_A99_T92_LT"
 msgstr "T92"
@@ -5099,6 +5179,12 @@ msgstr "APCBC 1935"
 msgid "_37mm_APC_M51"
 msgstr "APC M51"
 
+msgid "_37mm_APC_M51E3"
+msgstr "APC M51E3"
+
+msgid "_37mm_APC_M51_E2"
+msgstr "APC M51"
+
 msgid "_37mm_APC_M59A1"
 msgstr "AAC APC"
 
@@ -5106,6 +5192,12 @@ msgid "_37mm_APC_M59A5"
 msgstr "AAC APCR"
 
 msgid "_37mm_AP_M74"
+msgstr "AP M74"
+
+msgid "_37mm_AP_M74E3"
+msgstr "AP M74E3"
+
+msgid "_37mm_AP_M74_E2"
 msgstr "AP M74"
 
 msgid "_37mm_Browning_Semi_Automatic"
@@ -5120,6 +5212,12 @@ msgstr "37 mm Browning"
 msgid "_37mm_Gun_M1916"
 msgstr "37 mm Gun M1916"
 
+msgid "_37mm_Gun_M1916E2"
+msgstr "37 mm Gun M1916E2"
+
+msgid "_37mm_Gun_M6E3"
+msgstr "37 mm Gun M6E3"
+
 msgid "_37mm_HE1916"
 msgstr "HE 1916"
 
@@ -5127,6 +5225,12 @@ msgid "_37mm_HE_M54"
 msgstr "AAC HE"
 
 msgid "_37mm_HE_M63"
+msgstr "HE M63"
+
+msgid "_37mm_HE_M63E3"
+msgstr "HE M63E3"
+
+msgid "_37mm_HE_M63_E2"
 msgstr "HE M63"
 
 msgid "_37mm_M-3_antitank_gun"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F39_AMR_P103/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/french/F39_AMR_P103/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.813600 0.005991 -1.695552</min>
+		<max>0.813600 0.820507 1.835903</max>
+	</visibilityBox>
+</root>

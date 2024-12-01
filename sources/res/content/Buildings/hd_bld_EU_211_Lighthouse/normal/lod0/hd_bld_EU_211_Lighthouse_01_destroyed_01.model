@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>96.978172 22.657814 -22.212805</min>
+		<max>127.668236 40.792282 4.091098</max>
+	</visibilityBox>
+	<parent>content/Buildings/hd_bld_EU_211_Lighthouse/normal/lod1/hd_bld_EU_211_Lighthouse_01_destroyed_01</parent>
+	<extent>96.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<nodefullVisual>content/Buildings/hd_bld_EU_211_Lighthouse/normal/lod0/hd_bld_EU_211_Lighthouse_01_destroyed_01</nodefullVisual>
+</root>

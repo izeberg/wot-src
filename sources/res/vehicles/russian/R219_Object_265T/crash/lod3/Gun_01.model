@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R219_Object_265T/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/russian/R219_Object_265T/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.298613 -0.332794 -1.622949</min>
+		<max>0.296119 0.384008 4.339847</max>
+	</visibilityBox>
+</root>

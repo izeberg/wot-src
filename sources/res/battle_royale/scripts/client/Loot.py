@@ -1,5 +1,7 @@
 import BigWorld, CGF, Math
 from battleground.loot_object import loadLootById
+from gui.shared import g_eventBus, EVENT_BUS_SCOPE
+from battle_royale.gui.shared.events import LootEvent
 
 class Loot(BigWorld.Entity):
 
@@ -19,6 +21,7 @@ class Loot(BigWorld.Entity):
         return
 
     def set_pickedUpBy(self, prev=None):
+        g_eventBus.handleEvent(LootEvent(LootEvent.LOOT_PICKED_UP, ctx={'id': self.id}), scope=EVENT_BUS_SCOPE.BATTLE)
         if self.__lootDescr is not None:
             CGF.loadGameObject(self.__lootDescr.prefabPickup, self.spaceID, self.position)
         return

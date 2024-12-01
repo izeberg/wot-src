@@ -74,14 +74,6 @@
 				0
 				<material>
 					<identifier>tank_proxy_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -108,14 +100,6 @@
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.340187 0.575211 -0.135928</groupOrigin>
@@ -133,14 +117,6 @@
 				0
 				<material>
 					<identifier>tank_proxy_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -168,14 +144,6 @@
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.373426 0.564301 -0.129177</groupOrigin>
 			</primitiveGroup>
@@ -186,6 +154,6 @@
 		<min>-1.656818 -0.004454 -2.879733</min>
 		<max>1.643152 1.150654 3.151589</max>
 	</boundingBox>
-	<geometrySize>8680</geometrySize>
+	<geometrySize>8600</geometrySize>
 	<minUVDensity>0.002347</minUVDensity>
 </root>

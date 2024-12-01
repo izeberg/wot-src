@@ -1,5 +1,5 @@
 import copy, BattleReplay, constants, nations
-from account_helpers.AccountSettings import AccountSettings, CAROUSEL_FILTER_1, CAROUSEL_FILTER_2
+from account_helpers.AccountSettings import AccountSettings, CAROUSEL_FILTER_1, CAROUSEL_FILTER_2, CAROUSEL_FILTER_3
 from account_helpers.AccountSettings import CAROUSEL_FILTER_CLIENT_1
 from gui.prb_control.settings import VEHICLE_LEVELS
 from gui.shared.utils import makeSearchableString
@@ -7,6 +7,7 @@ from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.shared.gui_items.Vehicle import VEHICLE_ROLES_LABELS, VEHICLE_CLASS_NAME
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
+from gui.shared.gui_items import GUI_ITEM_TYPE
 
 class FILTER_KEYS(object):
     ELITE = 'elite'
@@ -21,6 +22,8 @@ class FILTER_KEYS(object):
     EVENT = 'event'
     BATTLE_ROYALE = 'battleRoyale'
     RANKED = 'ranked'
+    OWN_3D_STYLE = 'own3DStyle'
+    CAN_INSTALL_ATTACHMENTS = 'canInstallAttachments'
 
 
 def _filterDict(dictionary, keys):
@@ -134,7 +137,7 @@ class CarouselFilter(_CarouselFilter):
 
     def __init__(self):
         super(CarouselFilter, self).__init__()
-        self._serverSections = (CAROUSEL_FILTER_1, CAROUSEL_FILTER_2)
+        self._serverSections = (CAROUSEL_FILTER_1, CAROUSEL_FILTER_2, CAROUSEL_FILTER_3)
         self._clientSections = (CAROUSEL_FILTER_CLIENT_1,)
         self._setCriteriaGroups()
 
@@ -160,7 +163,7 @@ class CarouselFilter(_CarouselFilter):
 
     def _setCriteriaGroups(self):
         self._criteriesGroups = (
-         EventCriteriesGroup(), RoleCriteriesGroup())
+         EventCriteriesGroup(), CustomizationCriteriesGroup())
 
     def switch(self, key, save=True):
         updateDict = {key: not self._filters[key]}
@@ -340,3 +343,19 @@ class EventCriteriesGroup(CriteriesGroup):
     @staticmethod
     def isApplicableFor(vehicle):
         return vehicle.isEvent
+
+
+class CustomizationCriteriesGroup(RoleCriteriesGroup):
+
+    def update(self, filters):
+        super(CustomizationCriteriesGroup, self).update(filters)
+        self._setOwn3DStyleCriteria(filters)
+        self._setCanInstallAttachmentsCriteria(filters)
+
+    def _setOwn3DStyleCriteria(self, filters):
+        if filters[FILTER_KEYS.OWN_3D_STYLE]:
+            self._criteria |= REQ_CRITERIA.VEHICLE.CAN_INSTALL_C11N(GUI_ITEM_TYPE.STYLE, REQ_CRITERIA.CUSTOMIZATION.ON_ACCOUNT | REQ_CRITERIA.CUSTOM(lambda item: item.is3D) | REQ_CRITERIA.CUSTOM(lambda item: not item.isHiddenInUI()))
+
+    def _setCanInstallAttachmentsCriteria(self, filters):
+        if filters[FILTER_KEYS.CAN_INSTALL_ATTACHMENTS]:
+            self._criteria |= REQ_CRITERIA.VEHICLE.CAN_INSTALL_C11N(GUI_ITEM_TYPE.ATTACHMENT)

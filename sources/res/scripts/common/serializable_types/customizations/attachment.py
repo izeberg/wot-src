@@ -1,6 +1,5 @@
 from collections import OrderedDict
-from constants import IS_EDITOR
-from serialization.field import intField, xmlOnlyIntField, xmlOnlyFloatArrayField
+from serialization.field import intField
 from serialization.serializable_component import SerializableComponent
 from wrapped_reflection_framework import ReflectionMetaclass
 from ..types import C11nSerializationTypes
@@ -9,24 +8,27 @@ __all__ = ('AttachmentComponent', )
 class AttachmentComponent(SerializableComponent):
     __metaclass__ = ReflectionMetaclass
     customType = C11nSerializationTypes.ATTACHMENT
-    if IS_EDITOR:
-        slotIdFieldType = intField()
-    else:
-        slotIdFieldType = xmlOnlyIntField(0)
     fields = OrderedDict((
      (
       'id', intField()),
      (
-      'slotId', slotIdFieldType),
+      'slotId', intField()),
      (
-      'position', xmlOnlyFloatArrayField()),
+      'scaleFactorId', intField()),
      (
-      'rotation', xmlOnlyFloatArrayField())))
-    __slots__ = ('id', 'slotId', 'position', 'rotation')
+      'rotated', intField())))
+    __slots__ = ('id', 'slotId', 'scaleFactorId', 'rotated')
 
-    def __init__(self, id=0, slotId=0, position=None, rotation=None):
+    def __init__(self, id=0, slotId=0, scaleFactorId=0, rotated=0):
         self.id = id
         self.slotId = slotId
-        self.position = position or [0, 0, 0]
-        self.rotation = rotation or [0, 0, 0]
+        self.scaleFactorId = scaleFactorId
+        self.rotated = rotated
         super(AttachmentComponent, self).__init__()
+
+    @property
+    def isRotated(self):
+        return bool(self.rotated)
+
+    def setScaleFactorId(self, itemScaleFactorId, slotScaleFactorId):
+        self.scaleFactorId = min(itemScaleFactorId, slotScaleFactorId)

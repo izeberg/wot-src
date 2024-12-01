@@ -15414,11 +15414,11 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
 				<UUID>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</UUID>
-				<flags>34</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>patchName</name>
@@ -15437,6 +15437,32 @@
 			<component>
 				<UUID>6303003b-82e0-4172-aeed-818f07f398d5</UUID>
 				<flags>34</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value>127_bunkerCrash01_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value>127_bunkerCrash01_ai</value>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
+					</property>
+				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

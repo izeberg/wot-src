@@ -1,6 +1,5 @@
 package net.wg.gui.lobby.vehicleCustomization.controls
 {
-   import flash.display.Sprite;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPopoverEditedItemRendererVO;
@@ -13,11 +12,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private static const HEIGHT:Number = 48;
        
       
-      public var titleTF:TextField = null;
-      
       public var removedTF:TextField = null;
-      
-      public var titleBg:Sprite = null;
       
       private var _model:CustomizationPopoverEditedItemRendererVO = null;
       
@@ -29,8 +24,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       override protected function initialize() : void
       {
          super.initialize();
+         this.removedTF.mouseEnabled = false;
          this.removedTF.autoSize = TextFieldAutoSize.RIGHT;
-         this.titleTF.mouseEnabled = this.removedTF.mouseEnabled = false;
       }
       
       override protected function configUI() : void
@@ -42,8 +37,6 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       override protected function onDispose() : void
       {
          this.removedTF = null;
-         this.titleTF = null;
-         this.titleBg = null;
          this._model = null;
          super.onDispose();
       }
@@ -54,8 +47,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          if(this._model && isInvalid(InvalidationType.DATA))
          {
             this.removedTF.htmlText = this._model.disabledLabel;
-            this.titleTF.htmlText = this._model.titleLabel;
-            this.titleBg.visible = this._model.isTitle;
+            titleBg.visible = this._model.isTitle;
             if(!this._model.isTitle)
             {
                enabled = !this._model.isDisabled;
@@ -80,8 +72,6 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       {
          super.updateVisibility(param1);
          this.removedTF.visible = param1;
-         this.titleTF.visible = param1;
-         this.titleBg.visible = param1;
       }
       
       override protected function removeItem() : void

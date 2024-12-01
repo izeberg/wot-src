@@ -7,6 +7,7 @@ package net.wg.gui.components.carousels
    import net.wg.gui.components.carousels.data.FiltersStateVO;
    import net.wg.gui.components.carousels.events.FiltersTileListEvent;
    import net.wg.gui.components.controls.SimpleTileList;
+   import net.wg.gui.components.controls.VO.SimpleRendererVO;
    import net.wg.gui.components.controls.events.RendererEvent;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.utils.IClassFactory;
@@ -47,6 +48,10 @@ package net.wg.gui.components.carousels
       
       public var lblProgressions:TextField = null;
       
+      public var lblCustomization:TextField = null;
+      
+      public var listCustomization:SimpleTileList = null;
+      
       public var listNationType:SimpleTileList = null;
       
       public var listVehicleType:SimpleTileList = null;
@@ -70,19 +75,29 @@ package net.wg.gui.components.carousels
          super();
       }
       
-      protected static function listSetState(param1:SimpleTileList, param2:Vector.<Boolean>) : void
+      protected static function listSetState(param1:SimpleTileList, param2:Vector.<Boolean>, param3:Vector.<String> = null) : void
       {
-         var _loc4_:IListItemRenderer = null;
-         var _loc3_:int = param2.length;
-         var _loc5_:int = 0;
-         while(_loc5_ < _loc3_)
+         var _loc5_:IListItemRenderer = null;
+         var _loc4_:int = param2.length;
+         var _loc6_:SimpleRendererVO = null;
+         var _loc7_:int = 0;
+         while(_loc7_ < _loc4_)
          {
-            _loc4_ = param1.getRendererAt(_loc5_);
-            if(_loc4_)
+            _loc5_ = param1.getRendererAt(_loc7_);
+            if(_loc5_)
             {
-               param1.getRendererAt(_loc5_).selectable = param2[_loc5_];
+               param1.getRendererAt(_loc7_).selectable = param2[_loc7_];
+               if(param3 != null)
+               {
+                  _loc6_ = SimpleRendererVO(_loc5_.getData());
+                  if(_loc6_ && param3.indexOf(_loc6_.id) != -1)
+                  {
+                     _loc6_.isNew = false;
+                     _loc5_.setData(_loc6_);
+                  }
+               }
             }
-            _loc5_++;
+            _loc7_++;
          }
       }
       
@@ -91,16 +106,17 @@ package net.wg.gui.components.carousels
          super.configUI();
          var _loc1_:IClassFactory = App.utils.classFactory;
          this.listNationType.itemRenderer = _loc1_.getClass(LINKAGE_TOGGLE_RENDERER_IMG_ALPHA);
-         this.listVehicleType.itemRenderer = this.listVehicleLevels.itemRenderer = this.listSpecials.itemRenderer = this.listProgressions.itemRenderer = _loc1_.getClass(Linkages.TOGGLE_RENDERER_UI);
+         this.listVehicleType.itemRenderer = this.listVehicleLevels.itemRenderer = this.listSpecials.itemRenderer = this.listCustomization.itemRenderer = this.listProgressions.itemRenderer = _loc1_.getClass(Linkages.TOGGLE_RENDERER_UI);
          this.listHidden.itemRenderer = _loc1_.getClass(LINKAGE_CHECKBOX_RENDERER);
-         this.listNationType.tileWidth = this.listVehicleType.tileWidth = this.listVehicleLevels.tileWidth = this.listSpecials.tileWidth = this.listProgressions.tileWidth = TOGGLE_TILE_WIDTH;
-         this.listNationType.tileHeight = this.listVehicleType.tileHeight = this.listVehicleLevels.tileHeight = this.listSpecials.tileHeight = this.listProgressions.tileHeight = TOGGLE_TILE_HEIGHT;
+         this.listNationType.tileWidth = this.listVehicleType.tileWidth = this.listVehicleLevels.tileWidth = this.listCustomization.tileWidth = this.listSpecials.tileWidth = this.listProgressions.tileWidth = TOGGLE_TILE_WIDTH;
+         this.listNationType.tileHeight = this.listVehicleType.tileHeight = this.listVehicleLevels.tileHeight = this.listCustomization.tileHeight = this.listSpecials.tileHeight = this.listProgressions.tileHeight = TOGGLE_TILE_HEIGHT;
          this.listHidden.tileWidth = CHECKBOX_TILE_WIDTH;
          this.listHidden.tileHeight = CHECKBOX_TILE_HEIGHT;
-         this.listSpecials.directionMode = this.listHidden.directionMode = this.listNationType.directionMode = this.listVehicleType.directionMode = this.listVehicleLevels.directionMode = this.listProgressions.directionMode = DirectionMode.HORIZONTAL;
+         this.listSpecials.directionMode = this.listHidden.directionMode = this.listNationType.directionMode = this.listVehicleType.directionMode = this.listVehicleLevels.directionMode = this.listCustomization.directionMode = this.listProgressions.directionMode = DirectionMode.HORIZONTAL;
          this.listNationType.addEventListener(RendererEvent.ITEM_CLICK,this.onNationTypeItemClickHandler);
          this.listVehicleType.addEventListener(RendererEvent.ITEM_CLICK,this.onVehicleTypeItemClickHandler);
          this.listVehicleLevels.addEventListener(RendererEvent.ITEM_CLICK,this.onLevelsTypeItemClickHandler);
+         this.listCustomization.addEventListener(RendererEvent.ITEM_CLICK,this.onCustomizationItemClickHandler);
          this.listSpecials.addEventListener(RendererEvent.ITEM_CLICK,this.onSpecialItemClickHandler);
          this.listHidden.addEventListener(RendererEvent.ITEM_CLICK,this.onHiddenItemClickHandler);
          this.listProgressions.addEventListener(RendererEvent.ITEM_CLICK,this.onProgressionsItemClickHandler);
@@ -109,6 +125,7 @@ package net.wg.gui.components.carousels
          this.listVehicleLevels.addEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.listSpecials.addEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.listHidden.addEventListener(Event.RESIZE,this.onListsResizeHandler);
+         this.listCustomization.addEventListener(Event.RESIZE,this.onListsResizeHandler);
          if(this.lblAdditionalInfo)
          {
             this.lblAdditionalInfo.visible = false;
@@ -139,19 +156,24 @@ package net.wg.gui.components.carousels
          this.listSpecials.removeEventListener(RendererEvent.ITEM_CLICK,this.onSpecialItemClickHandler);
          this.listHidden.removeEventListener(RendererEvent.ITEM_CLICK,this.onHiddenItemClickHandler);
          this.listVehicleLevels.removeEventListener(RendererEvent.ITEM_CLICK,this.onLevelsTypeItemClickHandler);
+         this.listCustomization.removeEventListener(RendererEvent.ITEM_CLICK,this.onCustomizationItemClickHandler);
          this.listProgressions.removeEventListener(RendererEvent.ITEM_CLICK,this.onProgressionsItemClickHandler);
          this.listNationType.removeEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.listVehicleType.removeEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.listVehicleLevels.removeEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.listSpecials.removeEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.listHidden.removeEventListener(Event.RESIZE,this.onListsResizeHandler);
+         this.listCustomization.removeEventListener(Event.RESIZE,this.onListsResizeHandler);
          this.lblNationType = null;
          this.lblVehicleType = null;
          this.lblVehicleLevel = null;
+         this.lblCustomization = null;
          this.lblSpecials = null;
          this.lblHidden = null;
          this.lblProgressions = null;
          this.lblAdditionalInfo = null;
+         this.listCustomization.dispose();
+         this.listCustomization = null;
          this.listNationType.dispose();
          this.listNationType = null;
          this.listVehicleType.dispose();
@@ -205,6 +227,12 @@ package net.wg.gui.components.carousels
             this.listVehicleLevels.y = this.lblVehicleLevel.y + this.lblVehicleLevel.height + LABEL_OFFSET | 0;
             param1 = this.listVehicleLevels.y + this.listVehicleLevels.height + LIST_OFFSET;
          }
+         if(this.initData.customizationVisible && this.initData.customization.length > 0)
+         {
+            this.lblCustomization.y = param1;
+            this.listCustomization.y = this.lblCustomization.y + this.lblCustomization.height + LABEL_OFFSET | 0;
+            param1 = this.listCustomization.y + this.listCustomization.height + LIST_OFFSET;
+         }
          if(this.initData.specialSectionVisible)
          {
             this.lblSpecials.y = param1;
@@ -238,12 +266,13 @@ package net.wg.gui.components.carousels
       
       protected function updateState() : void
       {
-         listSetState(this.listNationType,this.stateData.nationsSelected);
-         listSetState(this.listVehicleType,this.stateData.vehicleTypesSelected);
-         listSetState(this.listSpecials,this.stateData.specialsSelected);
-         listSetState(this.listHidden,this.stateData.hiddenSelected);
-         listSetState(this.listVehicleLevels,this.stateData.levelsSelected);
-         listSetState(this.listProgressions,this.stateData.progressionsSelected);
+         listSetState(this.listNationType,this.stateData.nationsSelected,this.stateData.asSeen);
+         listSetState(this.listVehicleType,this.stateData.vehicleTypesSelected,this.stateData.asSeen);
+         listSetState(this.listSpecials,this.stateData.specialsSelected,this.stateData.asSeen);
+         listSetState(this.listCustomization,this.stateData.customizationSelected,this.stateData.asSeen);
+         listSetState(this.listHidden,this.stateData.hiddenSelected,this.stateData.asSeen);
+         listSetState(this.listVehicleLevels,this.stateData.levelsSelected,this.stateData.asSeen);
+         listSetState(this.listProgressions,this.stateData.progressionsSelected,this.stateData.asSeen);
       }
       
       protected function updateData() : void
@@ -266,6 +295,12 @@ package net.wg.gui.components.carousels
          {
             this.lblVehicleLevel.htmlText = this.initData.levelsLabel;
             this.listVehicleLevels.dataProvider = this.initData.levels;
+         }
+         this.lblCustomization.visible = this.listCustomization.visible = this.initData.customizationVisible && this.initData.customization.length > 0;
+         if(this.initData.customizationVisible)
+         {
+            this.lblCustomization.htmlText = this.initData.customizationLabel;
+            this.listCustomization.dataProvider = this.initData.customization;
          }
          this.lblProgressions.visible = this.listProgressions.visible = this.initData.progressionsSectionVisible;
          if(this.initData.progressionsSectionVisible)
@@ -296,6 +331,11 @@ package net.wg.gui.components.carousels
       private function onLevelsTypeItemClickHandler(param1:RendererEvent) : void
       {
          dispatchEvent(new FiltersTileListEvent(FiltersTileListEvent.ITEM_CLICK,this.initData.levelsSectionId,param1.index));
+      }
+      
+      private function onCustomizationItemClickHandler(param1:RendererEvent) : void
+      {
+         dispatchEvent(new FiltersTileListEvent(FiltersTileListEvent.ITEM_CLICK,this.initData.customizationId,param1.index));
       }
       
       private function onSpecialItemClickHandler(param1:RendererEvent) : void

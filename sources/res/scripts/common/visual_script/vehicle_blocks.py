@@ -1,5 +1,7 @@
 from block import Block, Meta
+from constants import NULL_ENTITY_ID
 from slot_types import SLOT_TYPE
+from visual_script.misc import errorVScript
 import items.vehicles as vehicles
 
 class VehicleMeta(Meta):
@@ -41,5 +43,8 @@ class GetVehicleId(Block, VehicleMeta):
 
     def _exec(self):
         vehicle = self._vehicle.getValue()
-        if vehicle:
+        try:
             self._res.setValue(vehicle.id)
+        except (AttributeError, ReferenceError):
+            errorVScript(self, 'Dead weakref')
+            self._res.setValue(NULL_ENTITY_ID)

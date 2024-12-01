@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.274302 -0.000212 -2.523244</min>
+		<max>1.276515 1.169334 3.171444</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G124_Pz_Kpfw_38_K/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G124_Pz_Kpfw_38_K/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

@@ -21,6 +21,16 @@ package net.wg.gui.lobby.vehicleCustomization.data
       
       public var isDim:Boolean = false;
       
+      public var seasonType:int = -1;
+      
+      public var titleLabel:String = "";
+      
+      public var hasRarity:Boolean = false;
+      
+      public var rarityIcon:String = "";
+      
+      public var rarityBackground:String = "";
+      
       public var isApplied:Boolean = false;
       
       public var customizationDisplayType:uint = 0;

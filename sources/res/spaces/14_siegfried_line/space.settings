@@ -25,38 +25,38 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>3072</width>
-					<height>4096</height>
+					<width>4096</width>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>DXT5</format>
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>3072</width>
-					<height>4096</height>
+					<width>4096</width>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>DXT5</format>
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>3072</width>
-					<height>4096</height>
+					<width>4096</width>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>DXT5</format>
 					</constrains>
 				</atlas>

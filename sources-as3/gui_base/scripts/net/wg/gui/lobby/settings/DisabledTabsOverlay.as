@@ -145,7 +145,15 @@ package net.wg.gui.lobby.settings
       
       public function updateDisabledView(param1:DisplayObjectContainer, param2:int) : void
       {
+         if(this._tabIndexes.indexOf(this._currentIndex) != -1 && this._currentView != null)
+         {
+            this._currentView.tabChildren = true;
+         }
          this._currentView = param1;
+         if(this._tabIndexes.indexOf(param2) != -1 && this._currentView != null)
+         {
+            this._currentView.tabChildren = false;
+         }
          this._currentIndex = param2;
          invalidateData();
       }

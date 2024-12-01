@@ -40074,11 +40074,11 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
 				<UUID>6025a798-ce4a-46dd-b9f9-974bb3043ab0</UUID>
-				<flags>34</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>patchName</name>
@@ -40097,6 +40097,32 @@
 			<component>
 				<UUID>e69bc6ff-a563-3fbd-a401-beb81f7894cd</UUID>
 				<flags>34</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
+			<component>
+				<UUID>6025a798-ce4a-46dd-b9f9-974bb3043ab0</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>navmeshPatchTag</name>
+						<value>04_trainCrash01_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value>04_trainCrash01_ai</value>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
+					</property>
+				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

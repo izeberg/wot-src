@@ -4039,6 +4039,10 @@ package
       
       public static const AWARDITEM_INDUSTRIALRESOURCE_BODY:String = "#tooltips:awardItem/industrialResource/body";
       
+      public static const AWARDITEM_WDRCOIN_HEADER:String = "#tooltips:awardItem/wdrcoin/header";
+      
+      public static const AWARDITEM_WDRCOIN_BODY:String = "#tooltips:awardItem/wdrcoin/body";
+      
       public static const AWARDITEM_MODERNIZEDDEVICE_HEADER:String = "#tooltips:awardItem/modernizedDevice/header";
       
       public static const AWARDITEM_MODERNIZEDDEVICE_BODY:String = "#tooltips:awardItem/modernizedDevice/body";
@@ -4180,6 +4184,30 @@ package
       public static const CUSTOMIZATION_TABS_MODIFICATION_BODY:String = "#tooltips:customization/tabs/modification/body";
       
       public static const CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY:String = "#tooltips:customization/tabs/projectionDecal/body";
+      
+      public static const CUSTOMIZATION_TABS_CUSTOMSTYLE_BODY:String = "#tooltips:customization/tabs/customStyle/body";
+      
+      public static const CUSTOMIZATION_TABS_UNCUSTOMSTYLE_BODY:String = "#tooltips:customization/tabs/uncustomStyle/body";
+      
+      public static const CUSTOMIZATION_TABS_ATTACHMENT_BODY:String = "#tooltips:customization/tabs/attachment/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_PAINT_BODY:String = "#tooltips:customization/disabledTabs/paint/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_CAMOUFLAGE_BODY:String = "#tooltips:customization/disabledTabs/camouflage/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_EMBLEM_BODY:String = "#tooltips:customization/disabledTabs/emblem/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_INSCRIPTION_BODY:String = "#tooltips:customization/disabledTabs/inscription/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_MODIFICATION_BODY:String = "#tooltips:customization/disabledTabs/modification/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_PROJECTIONDECAL_BODY:String = "#tooltips:customization/disabledTabs/projectionDecal/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_CUSTOMSTYLE_BODY:String = "#tooltips:customization/disabledTabs/customStyle/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_UNCUSTOMSTYLE_BODY:String = "#tooltips:customization/disabledTabs/uncustomStyle/body";
+      
+      public static const CUSTOMIZATION_DISABLEDTABS_ATTACHMENT_BODY:String = "#tooltips:customization/disabledTabs/attachment/body";
       
       public static const CUSTOMIZATION_CAROUSEL_FILTER_HEADER:String = "#tooltips:customization/carousel/filter/header";
       
@@ -4564,6 +4592,8 @@ package
       public static const VEHICLEPREVIEW_BOXTOOLTIP_OPTIONALDEVICE_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/optionalDevice/header";
       
       public static const VEHICLEPREVIEW_BOXTOOLTIP_BATTLEBOOSTER_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/battleBooster/header";
+      
+      public static const VEHICLEPREVIEW_BOXTOOLTIP_ATTACHMENT_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/attachment/header";
       
       public static const CONTENTBUYVIEW_SLOTCHECKBOX_NOTENOUGHSLOTS_HEADER:String = "#tooltips:contentBuyView/slotCheckbox/notEnoughSlots/header";
       
@@ -6447,9 +6477,7 @@ package
       
       public static const CUSTOMIZATION_STORAGE_FILTERS_EFFECTS_TITLE:String = "#tooltips:customization/storage/filters/effects/title";
       
-      public static const CUSTOMIZATION_SAVEDSTYLES_TITLE:String = "#tooltips:customization/savedStyles/title";
-      
-      public static const CUSTOMIZATION_SAVEDSTYLES_BODY:String = "#tooltips:customization/savedStyles/body";
+      public static const CUSTOMIZATION_STORAGE_FILTERS_ATTACHMENTS_TITLE:String = "#tooltips:customization/storage/filters/attachments/title";
       
       public static const SENIORITYAWARDS_HANGARENTRYPOINT_TOOLTIP_HEADER:String = "#tooltips:seniorityAwards/hangarEntryPoint/tooltip/header";
       

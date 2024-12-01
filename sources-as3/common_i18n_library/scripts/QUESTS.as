@@ -161,6 +161,8 @@ package
       
       public static const BONUSES_NOTAVAILABLE:String = "#quests:bonuses/notAvailable";
       
+      public static const BONUSNAME_WDRCOIN:String = "#quests:bonusName/wdrcoin";
+      
       public static const BONUSES_GOLDPERSONALRATE:String = "#quests:bonuses/goldPersonalRate";
       
       public static const BONUSES_FREEXPPERSONALRATE:String = "#quests:bonuses/freeXpPersonalRate";
@@ -2454,6 +2456,8 @@ package
       public static const BONUSNAME_STYLE:String = "#quests:bonusName/style";
       
       public static const BONUSNAME_MODIFICATION:String = "#quests:bonusName/modification";
+      
+      public static const BONUSNAME_ATTACHMENT:String = "#quests:bonusName/attachment";
       
       public static const BONUSNAME_FREETOKENS:String = "#quests:bonusName/freeTokens";
       

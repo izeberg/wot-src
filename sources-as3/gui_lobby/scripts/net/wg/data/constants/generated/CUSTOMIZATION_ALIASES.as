@@ -57,9 +57,9 @@ package net.wg.data.constants.generated
       
       public static const ANCHOR_TYPE_REGION:int = 0;
       
-      public static const ANCHOR_TYPE_DECAL:int = 1;
+      public static const ANCHOR_TYPE_NORMAL:int = 1;
       
-      public static const ANCHOR_TYPE_PROJECTION_DECAL:int = 2;
+      public static const ANCHOR_TYPE_SPECIFIC:int = 2;
       
       public static const SOUND_CUST_NEGATIVE:String = "cust_negative";
       

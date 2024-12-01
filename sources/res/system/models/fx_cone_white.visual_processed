@@ -25,7 +25,7 @@
 					<fx>shaders/std_effects/lightonly.fx</fx>
 					<property>
 						diffuseMap
-						<Texture>content/Experimental_Models/cone_1m_to_z/cone_AM.dds</Texture>
+						<Texture>system/models/fx_cone_white_AM.dds</Texture>
 					</property>
 					<property>
 						doubleSided

@@ -2726,12 +2726,12 @@
 					<item>
 						<name>hasAdditionalBackground</name>
 						<type>bool</type>
-						<value>True</value>
+						<value>False</value>
 					</item>
 					<item>
 						<name>hasSpecialTankmenScreen</name>
 						<type>bool</type>
-						<value>True</value>
+						<value>False</value>
 					</item>
 				</value>
 			</item>
@@ -2757,11 +2757,6 @@
 								<name>153</name>
 								<type>bool</type>
 								<value>False</value>
-							</item>
-							<item>
-								<name>154</name>
-								<type>bool</type>
-								<value>True</value>
 							</item>
 						</value>
 					</item>
@@ -2914,6 +2909,42 @@
 			</item>
 		</value>
 	</dogTagsInfoPage>
+	<attachmentsEmptyVideo>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/3DAttachments/
+				<name>EU</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/3DAttachments/
+				<name>ASIA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/3DAttachments/
+				<name>NA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/3DAttachments/
+				<name>CN</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/3DAttachments/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/3DAttachments/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</attachmentsEmptyVideo>
 	<dogTagsOnboardingVideo1>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>

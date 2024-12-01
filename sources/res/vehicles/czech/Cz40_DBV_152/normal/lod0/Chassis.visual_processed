@@ -83,7 +83,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.354725 -0.000000</row3>
+							<row3>0.000000 0.354725 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_L0_BlendBone</identifier>
@@ -116,7 +116,7 @@
 					<node>
 						<identifier>W_L1</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354724 0.000000</row3>
@@ -260,10 +260,10 @@
 					<node>
 						<identifier>W_L5</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.354724 -0.000000</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.354724 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_L5_BlendBone</identifier>
@@ -299,7 +299,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>-0.000000 -0.000000 1.000000</row2>
-							<row3>-0.000000 0.354725 -0.000000</row3>
+							<row3>0.000000 0.354725 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R0_BlendBone</identifier>
@@ -404,7 +404,7 @@
 					<node>
 						<identifier>W_R3</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354724 0.000000</row3>
@@ -440,7 +440,7 @@
 					<node>
 						<identifier>W_R4</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354724 0.000000</row3>
@@ -478,8 +478,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.354724 -0.000000</row3>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.354724 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R5_BlendBone</identifier>
@@ -1031,7 +1031,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>148</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -1052,10 +1052,6 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.365001 0.573439 -0.129361</groupOrigin>
@@ -1103,7 +1099,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>148</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -1125,10 +1121,6 @@
 						g_detailUVTiling
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.365001 0.573439 -0.129361</groupOrigin>
 			</primitiveGroup>
@@ -1147,25 +1139,21 @@
 		<node>Track_L2_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
 		<node>WD_L2_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
-		<node>WD_L5_BlendBone</node>
 		<node>W_L0_BlendBone</node>
 		<node>W_L1_BlendBone</node>
 		<node>W_L2_BlendBone</node>
 		<node>W_L3_BlendBone</node>
 		<node>W_L4_BlendBone</node>
 		<node>W_L5_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L5_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -1208,10 +1196,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.331566 0.578770 -0.169938</groupOrigin>
@@ -1227,29 +1211,25 @@
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
-		<node>WD_R2_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
-		<node>WD_R4_BlendBone</node>
-		<node>WD_R5_BlendBone</node>
 		<node>W_R0_BlendBone</node>
 		<node>W_R1_BlendBone</node>
 		<node>W_R2_BlendBone</node>
 		<node>W_R3_BlendBone</node>
 		<node>W_R4_BlendBone</node>
 		<node>W_R5_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
+		<node>WD_R2_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R4_BlendBone</node>
+		<node>WD_R5_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -1293,10 +1273,6 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.331566 0.578770 -0.169938</groupOrigin>
 			</primitiveGroup>
@@ -1307,6 +1283,6 @@
 		<min>-1.638500 -0.000001 -2.895423</min>
 		<max>1.638500 1.146879 3.158495</max>
 	</boundingBox>
-	<geometrySize>941390</geometrySize>
+	<geometrySize>940590</geometrySize>
 	<minUVDensity>0.079695</minUVDensity>
 </root>

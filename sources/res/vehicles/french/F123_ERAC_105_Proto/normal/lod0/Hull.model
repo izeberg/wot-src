@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F123_ERAC_105_Proto/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/french/F123_ERAC_105_Proto/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.302009 -0.450820 -2.779459</min>
+		<max>1.312407 0.863291 2.819513</max>
+	</visibilityBox>
+</root>

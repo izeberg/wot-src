@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<path>
+		<id>3255696454</id>
+		<name>path</name>
+		<node>
+			<name>18_plane_crashing_01_plane_part_03</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>2145476542</id>
+			<transform>
+				<row0>140.000000 0.000000 0.000000</row0>
+				<row1>0.000000 20.000000 0.000000</row1>
+				<row2>0.000000 0.000000 40.000000</row2>
+				<row3>-351.008453 -6.929337 33.783607</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_plane_part_01</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>2227346183</id>
+			<transform>
+				<row0>90.000000 0.000000 0.000000</row0>
+				<row1>0.000000 20.000000 0.000000</row1>
+				<row2>0.000000 0.000000 20.000000</row2>
+				<row3>-366.678558 -14.716907 4.781425</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_plane_part_02</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>3473227758</id>
+			<transform>
+				<row0>90.000000 0.000000 0.000000</row0>
+				<row1>0.000000 20.000000 0.000000</row1>
+				<row2>0.000000 0.000000 50.000000</row2>
+				<row3>-374.164124 -14.530322 -30.146212</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_lighthouse_base_destroyed</name>
+			<colour>0.698039 0.800000 0.733333 0.498039</colour>
+			<id>2476902618</id>
+			<transform>
+				<row0>62.819988 0.000000 0.000000</row0>
+				<row1>0.000000 38.914146 0.000000</row1>
+				<row2>0.000000 0.000000 62.699028</row2>
+				<row3>154.411545 40.023087 0.307285</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_lighthouse_destroyed</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>264864599</id>
+			<transform>
+				<row0>68.188690 0.000000 0.000000</row0>
+				<row1>0.000000 27.517700 0.000000</row1>
+				<row2>0.000000 0.000000 34.926262</row2>
+				<row3>95.008217 29.219408 -6.567795</row3>
+			</transform>
+		</node>
+	</path>
+</root>

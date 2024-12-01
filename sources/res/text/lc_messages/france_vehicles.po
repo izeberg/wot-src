@@ -292,6 +292,9 @@ msgstr ""
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM"
 
+msgid "AN_VRC_18"
+msgstr "AN/VRC 18"
+
 msgid "AN_VRC_7"
 msgstr "AN/VRC-7"
 
@@ -459,6 +462,9 @@ msgstr ""
 
 msgid "Canon_de_105_mle_1950"
 msgstr "105 mm obusier mle. 1950"
+
+msgid "Canon_de_105_mm_modele_F1_M"
+msgstr "Canon de 105 mm modèle F1 M"
 
 msgid "Canon_de_155mm"
 msgstr "Canon de 155 mm"
@@ -737,6 +743,12 @@ msgstr "AltProto-AMX-30"
 msgid "Chassis_F118_Char_Mle_75"
 msgstr "Char Mle. 75"
 
+msgid "Chassis_F119_Char_Murat"
+msgstr "Char Murat"
+
+msgid "Chassis_F123_ERAC_105_Proto"
+msgstr "ERAC 105 Prototype"
+
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 Type 2A"
 
@@ -748,6 +760,9 @@ msgstr "ARL 44 bis"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
+
+msgid "Chassis_F39_AMR_P103"
+msgstr "AMR P.103"
 
 msgid "Chassis_F42_AMR_35"
 msgstr "AMR35"
@@ -905,6 +920,9 @@ msgstr "Somua SAu 40"
 msgid "Chassis_Somua_Sau_40_2"
 msgstr "Somua SAu 40 bis"
 
+msgid "Citroen_105"
+msgstr "Citroën 105"
+
 msgid "Continental_AV-1790-7B"
 msgstr "SOFAM 12 GS/A"
 
@@ -999,6 +1017,9 @@ msgstr "ER 29"
 
 msgid "ER_29_bis"
 msgstr "ER 29 bis"
+
+msgid "ER_29_bis_A"
+msgstr "ER 29 bis A"
 
 msgid "ER_51"
 msgstr "ER 51"
@@ -1341,6 +1362,65 @@ msgstr "Char Mle. 75"
 msgid "F118_Char_Mle_75_short_special"
 msgstr "Mechanics of firing in bursts and a gas-turbine engine"
 
+msgid "F119_Char_Murat"
+msgstr "Char Murat"
+
+msgid "F119_Char_Murat_descr"
+msgstr ""
+"This tank project had two key features—a new fighting compartment "
+"configuration and a dual-loop caterpillar propulsion system, which, "
+"according to the developers, could boost firepower and mobility. A divider "
+"split the fighting compartment into separate crew and gun compartments. The "
+"automatic loading system consisted of a main three-shot loading system and "
+"an auxiliary mechanized rack. The design made it possible to load the gun "
+"and replenish the main rack without setting the gun to a fixed loading "
+"angle, significantly increasing the rate of fire and improving the crew's "
+"comfort. The track loop was divided into two parts, enabling the vehicle to "
+"stay mobile even if it hit a mine. However, the dual-loop propulsion system "
+"made the chassis heavier and made the tank more difficult to drive and "
+"steer. The project went no further than blueprints."
+
+msgid "F119_Char_Murat_long_special"
+msgstr ""
+"The Char Murat is a Tier IX French medium tank with impressive dynamics and "
+"solid firepower thanks to its 105 mm gun featuring a three-shell magazine. "
+"Also boasting excellent mobility, decent stabilization, and a quick reload "
+"time between shots, the Char Murat excels as a support vehicle, allowing you"
+" to engage, unload, and retreat."
+
+msgid "F119_Char_Murat_short"
+msgstr "Char Murat"
+
+msgid "F119_Char_Murat_short_special"
+msgstr "Magazine loading system, high dynamics and mobility"
+
+msgid "F123_ERAC_105_Proto"
+msgstr "ERAC 105 Proto"
+
+msgid "F123_ERAC_105_Proto_descr"
+msgstr ""
+"A project for an amphibious armored reconnaissance vehicle (French: engin de"
+" reconnaissance amphibie de combat) from the early 1960s. A working "
+"prototype was built in 1963. The vehicle had a low weight together with "
+"significant firepower, and it could ford wet gaps. Its advantages included "
+"fairly high crossing capacity over mud and snow, while its aluminum alloy "
+"hull offered better protection than most amphibious vehicles had at that "
+"time. In spite of positive results from trials, the ERAC 105 Proto did not "
+"enter service due to economic reasons."
+
+msgid "F123_ERAC_105_Proto_long_special"
+msgstr ""
+"The ERAC 105 Proto is a Tier IX French light tank with an impressive -8° of "
+"gun depression. Its compact size makes it an excellent passive scout, while "
+"its great accuracy and decent DPM allow it to deal damage effectively. With "
+"a 105 mm gun, it is one of the hardest-hitting lights of its tier."
+
+msgid "F123_ERAC_105_Proto_short"
+msgstr "ERAC 105 Pr"
+
+msgid "F123_ERAC_105_Proto_short_special"
+msgstr "High alpha damage, compact size"
+
 msgid "F124_AMX_13FL11"
 msgstr "AMX 13 (FL 11)"
 
@@ -1466,6 +1546,31 @@ msgstr "AMX AC mle. 48 FL"
 
 msgid "F36_AMX_AC_Mle1948_FL_short"
 msgstr "AMX AC 48 FL"
+
+msgid "F39_AMR_P103"
+msgstr "AMR P.103"
+
+msgid "F39_AMR_P103_descr"
+msgstr ""
+"A light tank developed in 1935 by Citroën engineers. The vehicle underwent "
+"trials in April of the same year, which showed that the main components and "
+"crew had reliable protection. However, due to the unreliability of the "
+"chassis and hydraulic transmission, as well as low speed, the project was "
+"dropped in favor of the AMR 35. The only prototype was subsequently "
+"dismantled."
+
+msgid "F39_AMR_P103_long_special"
+msgstr ""
+"The AMR P.103 is a universal Tier II light tank with solid mobility, "
+"allowing it to quickly reach key positions on the battlefield. Its gun "
+"offers a high rate of fire, while its good view range makes it effective at "
+"spotting enemies—especially in the later stages of battle."
+
+msgid "F39_AMR_P103_short"
+msgstr "AMR P.103"
+
+msgid "F39_AMR_P103_short_special"
+msgstr "Good view range, high rate of fire"
 
 msgid "F42_AMR_35"
 msgstr "AMR 35"
@@ -2004,6 +2109,9 @@ msgstr "Hispano-Suiza HS 110"
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
 
+msgid "Hispano_ERAC"
+msgstr "Hispano ERAC"
+
 msgid "Hotchkiss_35_1"
 msgstr "Hotchkiss 35"
 
@@ -2185,6 +2293,9 @@ msgstr "Maybach HL 295 à injection d'essence"
 
 msgid "Maybach_Mb_IV_Zeppelin_x2"
 msgstr "Maybach Mb. IV Zeppelin x2"
+
+msgid "Moteur_EPC_version_S5"
+msgstr "Moteur E.P.C. version S5"
 
 msgid "Moteur_moderne_3M_27_1_01"
 msgstr "Moteur moderne 3M.27.1.01"
@@ -2547,6 +2658,9 @@ msgstr "TRVP-13"
 msgid "TRVP_13_A"
 msgstr "TRVP-13-A"
 
+msgid "TRVP_13_A3"
+msgstr "TRVP-13-A3"
+
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
 
@@ -2710,6 +2824,12 @@ msgstr "AltProto-AMX-30"
 msgid "Turret_1_F118_Char_Mle_75"
 msgstr "Char Mle. 75"
 
+msgid "Turret_1_F119_Char_Murat"
+msgstr "Char Murat"
+
+msgid "Turret_1_F123_ERAC_105_Proto"
+msgstr "ERAC 105 Prototype"
+
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
@@ -2718,6 +2838,9 @@ msgstr "SFAC 105"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
+
+msgid "Turret_1_F39_AMR_P103"
+msgstr "AMR P.103"
 
 msgid "Turret_1_F42_AMR_35"
 msgstr "APX-5"
@@ -2951,6 +3074,9 @@ msgstr "leFH18B2"
 msgid "_105_leFH18B2_short_special"
 msgstr "A high rate of fire and good gun traverse limits"
 
+msgid "_105_mm_D_1090"
+msgstr "105 mm D. 1090"
+
 msgid "_105mmGr39H1A"
 msgstr "Gr. 39 Hl/B"
 
@@ -3026,6 +3152,12 @@ msgstr "OCC-105 D. 1504 (EBR)"
 msgid "_105mm_OCC_105_F1"
 msgstr "OCC-105-F1"
 
+msgid "_105mm_OCC_105_F1M"
+msgstr "OCC 105 F1M"
+
+msgid "_105mm_OCC_105_F1_ERAC"
+msgstr "OCC-105-F1 ERAC"
+
 msgid "_105mm_OCO_mle._1936"
 msgstr "OCO mle. 1936"
 
@@ -3034,6 +3166,9 @@ msgstr "Prf. mle. 1936"
 
 msgid "_105mm_OE_105_Mle_60"
 msgstr "OE-105-Mle. 60"
+
+msgid "_105mm_OE_105_Mle_60M"
+msgstr "OE 105 F1M Mle. 60"
 
 msgid "_105mm_OE_105_Mle_60_D1504"
 msgstr "OE-105-Mle. 60 D. 1504"
@@ -3046,6 +3181,9 @@ msgstr "OE-105-Mle. 60 D. 1504 (EBR)"
 
 msgid "_105mm_OE_105_Mle_60_D_1504_EBR_2"
 msgstr "OE-105-Mle. 60 D. 1504 (EXP)"
+
+msgid "_105mm_OE_105_Mle_60_ERAC"
+msgstr "OE-105-Mle. 60 ERAC"
 
 msgid "_105mm_OE_mle_1920"
 msgstr "OE mle. 1920"
@@ -3076,6 +3214,12 @@ msgstr "OFL-105 D. 1504 (EXP)"
 
 msgid "_105mm_OFL_105_F1"
 msgstr "OFL-105-F1"
+
+msgid "_105mm_OFL_105_F1M"
+msgstr "OFL 105 F1M"
+
+msgid "_105mm_OFL_105_F1_ERAC"
+msgstr "OFL-105-F1 ERAC"
 
 msgid "_105mm_Prf1940"
 msgstr "Prf. mle. 1940"
@@ -3239,6 +3383,12 @@ msgstr "Balle T.P. mle. 1934P"
 msgid "_25mm_Balle_T.P._mle._1939P"
 msgstr "Balle T.P. mle. 1939P"
 
+msgid "_25mm_Balle_T_P_mle_1928A"
+msgstr "Balle T.P. mle. 1928A"
+
+msgid "_25mm_Balle_T_P_mle_1934A"
+msgstr "Balle T.P. mle. 1934A"
+
 msgid "_25mm_Canon_Raccourci_Mle.1934"
 msgstr "25 mm Canon Raccourci mle. 1934"
 
@@ -3246,6 +3396,9 @@ msgid "_25mm_Canon_Raccourci_Mle.1934_short"
 msgstr ""
 "25 mm Raccourci\n"
 "mle. 1934"
+
+msgid "_25mm_Canon_Raccourci_Mle_1934_A"
+msgstr "25 mm Canon Raccourci mle. 1934 A"
 
 msgid "_25mm_SA35"
 msgstr "25 mm SA35"

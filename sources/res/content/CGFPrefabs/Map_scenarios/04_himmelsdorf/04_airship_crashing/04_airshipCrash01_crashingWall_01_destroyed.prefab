@@ -3166,15 +3166,27 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
-			<version>2</version>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
 			<component>
 				<UUID>102393e1-af32-424e-ab49-763a1ac07328</UUID>
-				<flags>34</flags>
+				<flags>32</flags>
 				<config>
 					<property>
-						<name>patchName</name>
+						<name>navmeshPatchTag</name>
 						<value>04_airshipCrash_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value/>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value>04_airshipCrash_ai</value>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
 					</property>
 				</config>
 			</component>

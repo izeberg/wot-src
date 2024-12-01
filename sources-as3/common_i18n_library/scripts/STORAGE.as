@@ -33,6 +33,8 @@ package
       
       public static const CARD_VEHICLE_TRADEOFFPRICELABEL:String = "#storage:card/vehicle/tradeOffPriceLabel";
       
+      public static const CARD_ATTACHMENT_HOVER_PARTOFBUNDLE_LABEL:String = "#storage:card/attachment/hover/partOfBundle/label";
+      
       public static const MARKEVERYTHING:String = "#storage:markEverything";
       
       public static const CUSTOMIZATION_SECTIONTITLE:String = "#storage:customization/sectionTitle";

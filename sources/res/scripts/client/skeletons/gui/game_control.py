@@ -550,7 +550,7 @@ class IPlatoonController(IGameController):
     def setPlatoonPopoverPosition(self, xPopoverOffset):
         raise NotImplementedError
 
-    def togglePlayerReadyAction(self, skipAmmocheck=False, callback=None):
+    def togglePlayerReadyAction(self, callback):
         raise NotImplementedError
 
     def getChannelController(self):
@@ -2944,7 +2944,7 @@ class IComp7Controller(IGameController, ISeasonProvider):
     onQualificationStateUpdated = None
     onSeasonPointsUpdated = None
     onComp7RewardsConfigChanged = None
-    onHighestRankAchieved = None
+    onNewMaxRank = None
     onEntitlementsUpdated = None
     onEntitlementsUpdateFailed = None
     onTournamentBannerStateChanged = None

@@ -115,6 +115,42 @@
 			</block>
 			<block>
 				<class>Variable</class>
+				<id>Variable_11</id>
+				<params>
+					<param>
+						eventName
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						<name>Initial Value</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_6</id>
 				<params>
 					<param>
@@ -147,6 +183,42 @@
 					<slot>
 						<name>default</name>
 						<const>\-2\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
+				<id>Variable_12</id>
+				<params>
+					<param>
+						eventState
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						<name>Initial Value</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\\</const>
 					</slot>
 				</slots>
 			</block>
@@ -297,7 +369,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_1</id>
+				<id>Macro_45</id>
 				<params>
 					<param>
 						LoadResourcesAndDelay
@@ -309,7 +381,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_9</id>
+				<id>Macro_49</id>
 				<params>
 					<param>
 						CheckZonesEnabled
@@ -321,7 +393,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_6</id>
+				<id>Macro_50</id>
 				<params>
 					<param>
 						ArenaTimer
@@ -333,7 +405,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_3</id>
+				<id>Macro_51</id>
 				<params>
 					<param>
 						GenerateStartTime
@@ -345,7 +417,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_14</id>
+				<id>Macro_46</id>
 				<params>
 					<param>
 						NotifyClient
@@ -357,7 +429,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_19</id>
+				<id>Macro_47</id>
 				<params>
 					<param>
 						HandleEvent
@@ -369,7 +441,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_12</id>
+				<id>Macro_48</id>
 				<params>
 					<param>
 						DecisionMaker
@@ -517,6 +589,67 @@
 				</params>
 				<slots/>
 			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_30</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						DictionaryT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_59</id>
+				<params>
+					<param>
+						ReceiveEvent
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetOverridedTriggerSystemConfig</class>
+				<id>GetOverridedTriggerSystemConfig_5</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ContextPropertyGet</class>
+				<id>ContextPropertyGet_15</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getArena
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_51</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -526,69 +659,69 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_9</from>
+				<from>Macro_49</from>
 				<input>in</input>
-				<to>Macro_1</to>
+				<to>Macro_45</to>
 				<output>enabled</output>
 			</connection>
 			<connection>
 				<from>Macro_16</from>
 				<input>in</input>
-				<to>Macro_9</to>
+				<to>Macro_49</to>
 				<output>enabled</output>
 			</connection>
 			<connection>
-				<from>Macro_3</from>
+				<from>Macro_51</from>
 				<input>start</input>
-				<to>Macro_6</to>
+				<to>Macro_50</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_3</from>
+				<from>Macro_51</from>
 				<input>delay</input>
-				<to>Macro_6</to>
+				<to>Macro_50</to>
 				<output>startTime</output>
 			</connection>
 			<connection>
-				<from>Macro_9</from>
+				<from>Macro_49</from>
 				<input>in</input>
-				<to>Macro_3</to>
+				<to>Macro_51</to>
 				<output>disabled</output>
 			</connection>
 			<connection>
-				<from>Macro_19</from>
+				<from>Macro_47</from>
 				<input>in</input>
-				<to>Macro_14</to>
+				<to>Macro_46</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_12</from>
+				<from>Macro_48</from>
 				<input>in</input>
-				<to>Macro_19</to>
+				<to>Macro_47</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_12</from>
+				<from>Macro_48</from>
 				<input>isEvent</input>
-				<to>Macro_19</to>
+				<to>Macro_47</to>
 				<output>isEvent</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
+				<from>Macro_45</from>
 				<input>inZones</input>
-				<to>Macro_12</to>
+				<to>Macro_48</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_6</from>
+				<from>Macro_50</from>
 				<input>inBasic</input>
-				<to>Macro_12</to>
+				<to>Macro_48</to>
 				<output>event</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
+				<from>Macro_45</from>
 				<input>zoneRootGO</input>
-				<to>Macro_12</to>
+				<to>Macro_48</to>
 				<output>zonesRootGO</output>
 			</connection>
 			<connection>
@@ -661,6 +794,48 @@
 				<from>ContextPropertyGet_1</from>
 				<input>arena</input>
 				<to>ArenaPeriodStartEvent_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetOverridedTriggerSystemConfig_5</from>
+				<input>input</input>
+				<to>SetVariable_30</to>
+				<output>outPresent</output>
+			</connection>
+			<connection>
+				<from>GetOverridedTriggerSystemConfig_5</from>
+				<input>value</input>
+				<to>SetVariable_30</to>
+				<output>config</output>
+			</connection>
+			<connection>
+				<from>Macro_59</from>
+				<input>in</input>
+				<to>GetOverridedTriggerSystemConfig_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_59</from>
+				<input>dependsOnEventName</input>
+				<to>GetOverridedTriggerSystemConfig_5</to>
+				<output>eventName</output>
+			</connection>
+			<connection>
+				<from>Macro_59</from>
+				<input>dependsOnEventState</input>
+				<to>GetOverridedTriggerSystemConfig_5</to>
+				<output>eventState</output>
+			</connection>
+			<connection>
+				<from>ContextPropertyGet_15</from>
+				<input>arena</input>
+				<to>GetOverridedTriggerSystemConfig_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_51</from>
+				<input>eventName</input>
+				<to>GetOverridedTriggerSystemConfig_5</to>
 				<output>value</output>
 			</connection>
 		</connections>
@@ -1042,6 +1217,234 @@
 				<name>ArenaTimer</name>
 				<blocks>
 					<block>
+						<class>Variable</class>
+						<id>Variable_18</id>
+						<params>
+							<param>
+								delayDelta
+								<name>Variable Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								false
+								<name>External Init</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Is Const</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								0.000000
+								<name>Initial Value</name>
+								<type>FloatT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\0.000000\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>Variable</class>
+						<id>Variable_17</id>
+						<params>
+							<param>
+								index
+								<name>Variable Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								IntT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								false
+								<name>External Init</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Is Const</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								0
+								<name>Initial Value</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\0\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>Variable</class>
+						<id>Variable_15</id>
+						<params>
+							<param>
+								isTimerActive
+								<name>Variable Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								BoolT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								false
+								<name>External Init</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Is Const</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Initial Value</name>
+								<type>BoolT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\false\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>Variable</class>
+						<id>Variable_16</id>
+						<params>
+							<param>
+								startTime
+								<name>Variable Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								false
+								<name>External Init</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Is Const</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								0.000000
+								<name>Initial Value</name>
+								<type>FloatT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\0.000000\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_36</id>
+						<buddy>Variable_18</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_35</id>
+						<buddy>Variable_17</buddy>
+						<params>
+							<param>
+								IntT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\1\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>GetOverridedTriggerSystemDelayDelta</class>
+						<id>GetOverridedTriggerSystemDelayDelta_3</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextPropertyGet</class>
+						<id>ContextPropertyGet_18</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getArena
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_58</id>
+						<buddy>Variable_11</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_59</id>
+						<buddy>Variable_7</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_2</id>
 						<params>
@@ -1064,6 +1467,49 @@
 						<slots/>
 					</block>
 					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_32</id>
+						<buddy>Variable_15</buddy>
+						<params>
+							<param>
+								BoolT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\true\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_34</id>
+						<buddy>Variable_16</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_66</id>
+						<params>
+							<param>
+								FloatGameTime
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>Timer</class>
 						<id>Timer_3</id>
 						<params>
@@ -1071,6 +1517,24 @@
 								1
 								<name>Timer Count</name>
 								<type>IntT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_19</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_64</id>
+						<params>
+							<param>
+								ReceiveEvent
+								<name>Macro Name</name>
+								<type>StringT</type>
 							</param>
 						</params>
 						<slots/>
@@ -1087,6 +1551,116 @@
 							<param>
 								EventT
 								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_20</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_33</id>
+						<buddy>Variable_15</buddy>
+						<params>
+							<param>
+								BoolT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\false\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_2</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_55</id>
+						<buddy>Variable_15</buddy>
+						<params>
+							<param>
+								BoolT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>FloatVariableAdd</class>
+						<id>FloatVariableAdd_1</id>
+						<buddy>Variable_7</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SelectData</class>
+						<id>SelectData_1</id>
+						<params>
+							<param>
+								FloatT
+								<name>Slot Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_71</id>
+						<buddy>Variable_18</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_57</id>
+						<buddy>Variable_17</buddy>
+						<params>
+							<param>
+								IntT
+								<name>Variable Type</name>
 								<type>TypeT</type>
 							</param>
 						</params>
@@ -1115,41 +1689,454 @@
 						<slots/>
 					</block>
 					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_2</id>
+						<class>Select</class>
+						<id>Select_1</id>
 						<params>
 							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
+								FloatT
+								<name>Slot Type</name>
+								<type>TypeT</type>
 							</param>
 							<param>
-								getSelf
-								<name>Member Name</name>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_73</id>
+						<buddy>Variable_18</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>AddFloat</class>
+						<id>AddFloat_11</id>
+						<params>
+							<param>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MaximumFloat</class>
+						<id>MaximumFloat_1</id>
+						<params>
+							<param>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>i1</name>
+								<const>\0.100000\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_56</id>
+						<buddy>Variable_16</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_78</id>
+						<params>
+							<param>
+								GetRemainingTimerDelay
+								<name>Macro Name</name>
 								<type>StringT</type>
 							</param>
 						</params>
 						<slots/>
 					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_17</id>
+						<params>
+							<param>
+								timerDelta
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_21</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_69</id>
+						<buddy>Variable_17</buddy>
+						<params>
+							<param>
+								IntT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_3</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\0\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_70</id>
+						<buddy>Variable_18</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SubtractFloat</class>
+						<id>SubtractFloat_13</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>a</name>
+								<const>\0.000000\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>Or</class>
+						<id>Or_1</id>
+						<params>
+							<param>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>CompareFloats</class>
+						<id>CompareFloats_2</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\0.000000\</const>
+							</slot>
+						</slots>
+					</block>
 				</blocks>
 				<connections>
 					<connection>
-						<from>MacroInput_2</from>
-						<input>windup</input>
-						<to>Timer_3</to>
-						<output>start</output>
+						<from>GetOverridedTriggerSystemDelayDelta_3</from>
+						<input>input</input>
+						<to>SetVariable_36</to>
+						<output>out</output>
 					</connection>
 					<connection>
-						<from>MacroInput_1</from>
-						<input>time0</input>
-						<to>Timer_3</to>
-						<output>delay</output>
+						<from>GetOverridedTriggerSystemDelayDelta_3</from>
+						<input>value</input>
+						<to>SetVariable_36</to>
+						<output>delayDelta</output>
+					</connection>
+					<connection>
+						<from>SetVariable_36</from>
+						<input>input</input>
+						<to>SetVariable_35</to>
+						<output>out</output>
 					</connection>
 					<connection>
 						<from>Timer_3</from>
+						<input>in</input>
+						<to>GetOverridedTriggerSystemDelayDelta_3</to>
+						<output>cancelOut</output>
+					</connection>
+					<connection>
+						<from>Macro_64</from>
+						<input>dependsOnEventName</input>
+						<to>GetOverridedTriggerSystemDelayDelta_3</to>
+						<output>eventName</output>
+					</connection>
+					<connection>
+						<from>Macro_64</from>
+						<input>dependsOnEventState</input>
+						<to>GetOverridedTriggerSystemDelayDelta_3</to>
+						<output>eventState</output>
+					</connection>
+					<connection>
+						<from>ContextPropertyGet_18</from>
+						<input>arena</input>
+						<to>GetOverridedTriggerSystemDelayDelta_3</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVariable_58</from>
+						<input>eventName</input>
+						<to>GetOverridedTriggerSystemDelayDelta_3</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVariable_59</from>
+						<input>selectedDelay</input>
+						<to>GetOverridedTriggerSystemDelayDelta_3</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>MacroInput_2</from>
+						<input>input</input>
+						<to>SetVariable_32</to>
+						<output>start</output>
+					</connection>
+					<connection>
+						<from>SetVariable_32</from>
+						<input>input</input>
+						<to>SetVariable_34</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>Macro_66</from>
+						<input>value</input>
+						<to>SetVariable_34</to>
+						<output>floatGameTime</output>
+					</connection>
+					<connection>
+						<from>SetVariable_34</from>
+						<input>windup</input>
+						<to>Timer_3</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SetVariable_35</from>
+						<input>windup</input>
+						<to>Timer_3</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>If_19</from>
+						<input>cancel</input>
+						<to>Timer_3</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>Select_1</from>
+						<input>time0</input>
+						<to>Timer_3</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>Macro_64</from>
+						<input>input</input>
+						<to>If_19</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>GetVariable_55</from>
+						<input>value</input>
+						<to>If_19</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>FloatVariableAdd_1</from>
 						<input>event</input>
 						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>If_20</from>
+						<input>event</input>
+						<to>MacroOutput_1</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>SetVariable_33</from>
+						<input>input</input>
+						<to>If_20</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>CompareIntegers_3</from>
+						<input>value</input>
+						<to>If_20</to>
+						<output>equal</output>
+					</connection>
+					<connection>
+						<from>Timer_3</from>
+						<input>input</input>
+						<to>SetVariable_33</to>
 						<output>event0</output>
+					</connection>
+					<connection>
+						<from>SelectData_1</from>
+						<input>in</input>
+						<to>FloatVariableAdd_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SelectData_1</from>
+						<input>i</input>
+						<to>FloatVariableAdd_1</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>If_21</from>
+						<input>in0</input>
+						<to>SelectData_1</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>GetVariable_71</from>
+						<input>a0</input>
+						<to>SelectData_1</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>If_21</from>
+						<input>in1</input>
+						<to>SelectData_1</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>SubtractFloat_13</from>
+						<input>a1</input>
+						<to>SelectData_1</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>GetVariable_57</from>
+						<input>index</input>
+						<to>Select_1</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>MacroInput_1</from>
+						<input>i0</input>
+						<to>Select_1</to>
+						<output>delay</output>
+					</connection>
+					<connection>
+						<from>MaximumFloat_1</from>
+						<input>i1</input>
+						<to>Select_1</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>GetVariable_73</from>
+						<input>i0</input>
+						<to>AddFloat_11</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>Macro_78</from>
+						<input>i1</input>
+						<to>AddFloat_11</to>
+						<output>delay</output>
+					</connection>
+					<connection>
+						<from>AddFloat_11</from>
+						<input>i0</input>
+						<to>MaximumFloat_1</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>MacroInput_1</from>
+						<input>originalDelay</input>
+						<to>Macro_78</to>
+						<output>delay</output>
+					</connection>
+					<connection>
+						<from>GetVariable_56</from>
+						<input>startDelayGameTime</input>
+						<to>Macro_78</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>SelectData_1</from>
+						<input>timerDelta</input>
+						<to>MacroOutput_17</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>If_20</from>
+						<input>input</input>
+						<to>If_21</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>Or_1</from>
+						<input>value</input>
+						<to>If_21</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>GetVariable_69</from>
+						<input>a</input>
+						<to>CompareIntegers_3</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>Macro_78</from>
+						<input>b</input>
+						<to>SubtractFloat_13</to>
+						<output>delay</output>
+					</connection>
+					<connection>
+						<from>CompareFloats_2</from>
+						<input>i1</input>
+						<to>Or_1</to>
+						<output>greater</output>
+					</connection>
+					<connection>
+						<from>CompareFloats_2</from>
+						<input>i2</input>
+						<to>Or_1</to>
+						<output>equal</output>
+					</connection>
+					<connection>
+						<from>GetVariable_70</from>
+						<input>a</input>
+						<to>CompareFloats_2</to>
+						<output>value</output>
 					</connection>
 				</connections>
 			</macro>
@@ -1341,7 +2328,7 @@
 					</block>
 					<block>
 						<class>Macro</class>
-						<id>Macro_4</id>
+						<id>Macro_73</id>
 						<params>
 							<param>
 								GenerateStartTime
@@ -1353,7 +2340,7 @@
 					</block>
 					<block>
 						<class>Macro</class>
-						<id>Macro_11</id>
+						<id>Macro_74</id>
 						<params>
 							<param>
 								FloatGameTime
@@ -1425,7 +2412,7 @@
 					</block>
 					<block>
 						<class>AddFloat</class>
-						<id>AddFloat_3</id>
+						<id>AddFloat_9</id>
 						<params>
 							<param>
 								2
@@ -1443,7 +2430,7 @@
 					</block>
 					<block>
 						<class>SetVariable</class>
-						<id>SetVariable_4</id>
+						<id>SetVariable_41</id>
 						<buddy>Variable_3</buddy>
 						<params>
 							<param>
@@ -1490,6 +2477,19 @@
 						</slots>
 					</block>
 					<block>
+						<class>FloatVariableAdd</class>
+						<id>FloatVariableAdd_2</id>
+						<buddy>Variable_3</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>SetVariable</class>
 						<id>SetVariable_1</id>
 						<buddy>Variable_1</buddy>
@@ -1533,10 +2533,10 @@
 					</block>
 					<block>
 						<class>GetFromDictionary</class>
-						<id>GetFromDictionary_2</id>
+						<id>GetFromDictionary_9</id>
 						<params>
 							<param>
-								String
+								Matrix4
 								<name>Value type</name>
 								<type>StringT</type>
 							</param>
@@ -1549,7 +2549,7 @@
 						<slots>
 							<slot>
 								<name>key</name>
-								<const>\prefabPath\</const>
+								<const>\prefabTransform\</const>
 							</slot>
 						</slots>
 					</block>
@@ -1603,10 +2603,10 @@
 					</block>
 					<block>
 						<class>GetFromDictionary</class>
-						<id>GetFromDictionary_3</id>
+						<id>GetFromDictionary_11</id>
 						<params>
 							<param>
-								Matrix4
+								String
 								<name>Value type</name>
 								<type>StringT</type>
 							</param>
@@ -1619,7 +2619,7 @@
 						<slots>
 							<slot>
 								<name>key</name>
-								<const>\prefabTransform\</const>
+								<const>\prefabPath\</const>
 							</slot>
 						</slots>
 					</block>
@@ -1628,7 +2628,7 @@
 					<connection>
 						<from>MacroInput_2</from>
 						<input>in</input>
-						<to>Macro_4</to>
+						<to>Macro_73</to>
 						<output>in</output>
 					</connection>
 					<connection>
@@ -1662,15 +2662,15 @@
 						<output>floatGameTime</output>
 					</connection>
 					<connection>
-						<from>Macro_11</from>
+						<from>Macro_74</from>
 						<input>i0</input>
-						<to>AddFloat_3</to>
+						<to>AddFloat_9</to>
 						<output>floatGameTime</output>
 					</connection>
 					<connection>
-						<from>Macro_4</from>
+						<from>Macro_73</from>
 						<input>i1</input>
-						<to>AddFloat_3</to>
+						<to>AddFloat_9</to>
 						<output>startTime</output>
 					</connection>
 					<connection>
@@ -1686,19 +2686,19 @@
 						<output>zonesRootGO</output>
 					</connection>
 					<connection>
-						<from>Macro_4</from>
+						<from>Macro_73</from>
 						<input>input</input>
-						<to>SetVariable_4</to>
+						<to>SetVariable_41</to>
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>AddFloat_3</from>
+						<from>AddFloat_9</from>
 						<input>value</input>
-						<to>SetVariable_4</to>
+						<to>SetVariable_41</to>
 						<output>res</output>
 					</connection>
 					<connection>
-						<from>SetVariable_4</from>
+						<from>SetVariable_41</from>
 						<input>start</input>
 						<to>Macro_8</to>
 						<output>out</output>
@@ -1710,7 +2710,7 @@
 						<output>res</output>
 					</connection>
 					<connection>
-						<from>Macro_4</from>
+						<from>Macro_73</from>
 						<input>a</input>
 						<to>SubtractFloat_3</to>
 						<output>startTime</output>
@@ -1723,9 +2723,21 @@
 					</connection>
 					<connection>
 						<from>Macro_8</from>
+						<input>in</input>
+						<to>FloatVariableAdd_2</to>
+						<output>event</output>
+					</connection>
+					<connection>
+						<from>Macro_8</from>
+						<input>i</input>
+						<to>FloatVariableAdd_2</to>
+						<output>timerDelta</output>
+					</connection>
+					<connection>
+						<from>FloatVariableAdd_2</from>
 						<input>input</input>
 						<to>SetVariable_1</to>
-						<output>event</output>
+						<output>out</output>
 					</connection>
 					<connection>
 						<from>GetFromDictionary_1</from>
@@ -1740,13 +2752,13 @@
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>GetFromDictionary_3</from>
+						<from>GetFromDictionary_9</from>
 						<input>transform</input>
 						<to>Macro_2</to>
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>GetFromDictionary_2</from>
+						<from>GetFromDictionary_11</from>
 						<input>path</input>
 						<to>Macro_2</to>
 						<output>value</output>
@@ -1760,7 +2772,7 @@
 					<connection>
 						<from>GetVariable_1</from>
 						<input>dict</input>
-						<to>GetFromDictionary_2</to>
+						<to>GetFromDictionary_9</to>
 						<output>value</output>
 					</connection>
 					<connection>
@@ -1772,7 +2784,7 @@
 					<connection>
 						<from>GetVariable_1</from>
 						<input>dict</input>
-						<to>GetFromDictionary_3</to>
+						<to>GetFromDictionary_11</to>
 						<output>value</output>
 					</connection>
 				</connections>
@@ -2422,6 +3434,12 @@
 						</slots>
 					</block>
 					<block>
+						<class>StopPlan</class>
+						<id>StopPlan_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
 						<class>PrintToGameLogs</class>
 						<id>PrintToGameLogs_1</id>
 						<params>
@@ -2431,12 +3449,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>StopPlan</class>
-						<id>StopPlan_1</id>
-						<params/>
 						<slots/>
 					</block>
 					<block>
@@ -2451,6 +3463,18 @@
 							<param>
 								getSelf
 								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_2</id>
+						<params>
+							<param>
+								FormMessage
+								<name>Macro Name</name>
 								<type>StringT</type>
 							</param>
 						</params>
@@ -2483,20 +3507,14 @@
 							</slot>
 						</slots>
 					</block>
-					<block>
-						<class>Macro</class>
-						<id>Macro_2</id>
-						<params>
-							<param>
-								FormMessage
-								<name>Macro Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
 				</blocks>
 				<connections>
+					<connection>
+						<from>PrintToGameLogs_1</from>
+						<input>input</input>
+						<to>StopPlan_1</to>
+						<output>out</output>
+					</connection>
 					<connection>
 						<from>MacroInput_1</from>
 						<input>input</input>
@@ -2508,12 +3526,6 @@
 						<input>value</input>
 						<to>PrintToGameLogs_1</to>
 						<output>msg</output>
-					</connection>
-					<connection>
-						<from>PrintToGameLogs_1</from>
-						<input>input</input>
-						<to>StopPlan_1</to>
-						<output>out</output>
 					</connection>
 					<connection>
 						<from>MacroInput_2</from>
@@ -2791,6 +3803,19 @@
 						<slots/>
 					</block>
 					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_19</id>
+						<buddy>Variable_11</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_1</id>
 						<params>
@@ -2853,6 +3878,23 @@
 						<slots/>
 					</block>
 					<block>
+						<class>ContextPropertyGet</class>
+						<id>ContextPropertyGet_2</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getArena
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>GetTriggerSystemConfig</class>
 						<id>GetTriggerSystemConfig_1</id>
 						<params/>
@@ -2887,23 +3929,6 @@
 								<const>\plan is enabled\</const>
 							</slot>
 						</slots>
-					</block>
-					<block>
-						<class>ContextPropertyGet</class>
-						<id>ContextPropertyGet_2</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getArena
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Macro</class>
@@ -2982,6 +4007,18 @@
 				</blocks>
 				<connections>
 					<connection>
+						<from>Macro_5</from>
+						<input>input</input>
+						<to>SetVariable_19</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>Macro_5</from>
+						<input>value</input>
+						<to>SetVariable_19</to>
+						<output>value</output>
+					</connection>
+					<connection>
 						<from>MacroInput_1</from>
 						<input>input</input>
 						<to>If_1</to>
@@ -3006,7 +4043,7 @@
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>Macro_5</from>
+						<from>SetVariable_19</from>
 						<input>in</input>
 						<to>GetTriggerSystemConfig_1</to>
 						<output>out</output>
@@ -3071,8 +4108,25 @@
 				<name>GenerateStartTime</name>
 				<blocks>
 					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_16</id>
+						<params>
+							<param>
+								out
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroInput</class>
-						<id>MacroInput_1</id>
+						<id>MacroInput_14</id>
 						<params>
 							<param>
 								in
@@ -3093,25 +4147,8 @@
 						<slots/>
 					</block>
 					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_2</id>
-						<params>
-							<param>
-								out
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
 						<class>SetVariable</class>
-						<id>SetVariable_10</id>
+						<id>SetVariable_40</id>
 						<buddy>Variable_7</buddy>
 						<params>
 							<param>
@@ -3124,7 +4161,7 @@
 					</block>
 					<block>
 						<class>GetVariable</class>
-						<id>GetVariable_3</id>
+						<id>GetVariable_61</id>
 						<buddy>Variable_4</buddy>
 						<params>
 							<param>
@@ -3136,8 +4173,21 @@
 						<slots/>
 					</block>
 					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_66</id>
+						<buddy>Variable_7</buddy>
+						<params>
+							<param>
+								FloatT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>MacroOutput</class>
-						<id>MacroOutput_1</id>
+						<id>MacroOutput_15</id>
 						<params>
 							<param>
 								startTime
@@ -3153,21 +4203,8 @@
 						<slots/>
 					</block>
 					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_11</id>
-						<buddy>Variable_7</buddy>
-						<params>
-							<param>
-								FloatT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
 						<class>GetFromDictionary</class>
-						<id>GetFromDictionary_1</id>
+						<id>GetFromDictionary_14</id>
 						<params>
 							<param>
 								Vector2
@@ -3189,7 +4226,7 @@
 					</block>
 					<block>
 						<class>SplitVector</class>
-						<id>SplitVector_1</id>
+						<id>SplitVector_4</id>
 						<params>
 							<param>
 								Vector2T
@@ -3201,7 +4238,7 @@
 					</block>
 					<block>
 						<class>RandomFloat</class>
-						<id>RandomFloat_2</id>
+						<id>RandomFloat_5</id>
 						<params/>
 						<slots/>
 					</block>
@@ -3225,51 +4262,51 @@
 				</blocks>
 				<connections>
 					<connection>
-						<from>SetVariable_10</from>
+						<from>SetVariable_40</from>
 						<input>out</input>
-						<to>MacroOutput_2</to>
+						<to>MacroOutput_16</to>
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>MacroInput_1</from>
+						<from>MacroInput_14</from>
 						<input>input</input>
-						<to>SetVariable_10</to>
+						<to>SetVariable_40</to>
 						<output>in</output>
 					</connection>
 					<connection>
-						<from>RandomFloat_2</from>
+						<from>RandomFloat_5</from>
 						<input>value</input>
-						<to>SetVariable_10</to>
+						<to>SetVariable_40</to>
 						<output>res</output>
 					</connection>
 					<connection>
-						<from>GetVariable_11</from>
+						<from>GetVariable_66</from>
 						<input>startTime</input>
-						<to>MacroOutput_1</to>
+						<to>MacroOutput_15</to>
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>GetVariable_3</from>
+						<from>GetVariable_61</from>
 						<input>dict</input>
-						<to>GetFromDictionary_1</to>
+						<to>GetFromDictionary_14</to>
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>GetFromDictionary_1</from>
+						<from>GetFromDictionary_14</from>
 						<input>a</input>
-						<to>SplitVector_1</to>
+						<to>SplitVector_4</to>
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>SplitVector_1</from>
+						<from>SplitVector_4</from>
 						<input>a</input>
-						<to>RandomFloat_2</to>
+						<to>RandomFloat_5</to>
 						<output>x</output>
 					</connection>
 					<connection>
-						<from>SplitVector_1</from>
+						<from>SplitVector_4</from>
 						<input>b</input>
-						<to>RandomFloat_2</to>
+						<to>RandomFloat_5</to>
 						<output>y</output>
 					</connection>
 				</connections>
@@ -3622,6 +4659,24 @@
 				<name>DecisionMaker</name>
 				<blocks>
 					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_20</id>
+						<buddy>Variable_12</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\positive\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_1</id>
 						<params>
@@ -3686,6 +4741,12 @@
 						<slots/>
 					</block>
 					<block>
+						<class>If</class>
+						<id>If_7</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
 						<class>DeactivateGameObject</class>
 						<id>DeactivateGameObject_1</id>
 						<params/>
@@ -3744,6 +4805,24 @@
 							<slot>
 								<name>required</name>
 								<const>\true\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_21</id>
+						<buddy>Variable_12</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\negative\</const>
 							</slot>
 						</slots>
 					</block>
@@ -3856,13 +4935,19 @@
 				</blocks>
 				<connections>
 					<connection>
-						<from>DeactivateGameObject_1</from>
+						<from>If_7</from>
+						<input>input</input>
+						<to>SetVariable_20</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>SetVariable_20</from>
 						<input>out</input>
 						<to>MacroOutput_1</to>
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>SetVariable_6</from>
+						<from>SetVariable_21</from>
 						<input>out</input>
 						<to>MacroOutput_1</to>
 						<output>out</output>
@@ -3892,6 +4977,24 @@
 						<output>probability</output>
 					</connection>
 					<connection>
+						<from>DeactivateGameObject_1</from>
+						<input>input</input>
+						<to>If_7</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SetVariable_6</from>
+						<input>input</input>
+						<to>If_7</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>RandomBoolProbability_1</from>
+						<input>value</input>
+						<to>If_7</to>
+						<output>res</output>
+					</connection>
+					<connection>
 						<from>SetVariable_8</from>
 						<input>in</input>
 						<to>DeactivateGameObject_1</to>
@@ -3908,6 +5011,12 @@
 						<input>numberOfVehicles</input>
 						<to>Macro_4</to>
 						<output>numberVehicles</output>
+					</connection>
+					<connection>
+						<from>If_7</from>
+						<input>input</input>
+						<to>SetVariable_21</to>
+						<output>false</output>
 					</connection>
 					<connection>
 						<from>MacroInput_2</from>
@@ -4255,6 +5364,35 @@
 						</slots>
 					</block>
 					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_1</id>
+						<params>
+							<param>
+								out
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_55</id>
+						<params>
+							<param>
+								SendEvent
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
 						<class>ContextGetSelf</class>
 						<id>ContextGetSelf_2</id>
 						<params>
@@ -4266,6 +5404,18 @@
 							<param>
 								getSelf
 								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_53</id>
+						<params>
+							<param>
+								SendEvent
+								<name>Macro Name</name>
 								<type>StringT</type>
 							</param>
 						</params>
@@ -4287,23 +5437,6 @@
 								<const>\failed to start a sequence\</const>
 							</slot>
 						</slots>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_1</id>
-						<params>
-							<param>
-								out
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>SetVariable</class>
@@ -4415,21 +5548,33 @@
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>ComponentMethod_1</from>
-						<input>in</input>
-						<to>Macro_7</to>
-						<output>failure</output>
-					</connection>
-					<connection>
-						<from>Macro_2</from>
+						<from>Macro_55</from>
 						<input>out</input>
 						<to>MacroOutput_1</to>
 						<output>out</output>
 					</connection>
 					<connection>
+						<from>Macro_2</from>
+						<input>in</input>
+						<to>Macro_55</to>
+						<output>out</output>
+					</connection>
+					<connection>
 						<from>Macro_4</from>
-						<input>out</input>
-						<to>MacroOutput_1</to>
+						<input>in</input>
+						<to>Macro_55</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>ComponentMethod_1</from>
+						<input>failure</input>
+						<to>Macro_53</to>
+						<output>failure</output>
+					</connection>
+					<connection>
+						<from>Macro_53</from>
+						<input>in</input>
+						<to>Macro_7</to>
 						<output>out</output>
 					</connection>
 					<connection>
@@ -4844,12 +5989,6 @@
 						<output>out</output>
 					</connection>
 					<connection>
-						<from>Macro_4</from>
-						<input>in</input>
-						<to>Macro_2</to>
-						<output>out</output>
-					</connection>
-					<connection>
 						<from>If_3</from>
 						<input>in</input>
 						<to>Macro_2</to>
@@ -4857,6 +5996,12 @@
 					</connection>
 					<connection>
 						<from>Macro_5</from>
+						<input>in</input>
+						<to>Macro_2</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>Macro_4</from>
 						<input>in</input>
 						<to>Macro_2</to>
 						<output>out</output>
@@ -5726,6 +6871,831 @@
 						<input>a</input>
 						<to>CompareIntegers_1</to>
 						<output>value</output>
+					</connection>
+				</connections>
+			</macro>
+			<macro>
+				<name>IsDependOnEvent</name>
+				<blocks>
+					<block>
+						<class>Variable</class>
+						<id>Variable_13</id>
+						<params>
+							<param>
+								dependsOnConfig
+								<name>Variable Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								DictionaryT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								false
+								<name>External Init</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Is Const</name>
+								<type>BoolT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_8</id>
+						<params>
+							<param>
+								true
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_7</id>
+						<params>
+							<param>
+								in
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_6</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_13</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_14</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_9</id>
+						<params>
+							<param>
+								false
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>IsInDictionary</class>
+						<id>IsInDictionary_10</id>
+						<params>
+							<param>
+								Dictionary
+								<name>Value type</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>key</name>
+								<const>\dependsOn\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_35</id>
+						<buddy>Variable_4</buddy>
+						<params>
+							<param>
+								DictionaryT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetFromDictionary</class>
+						<id>GetFromDictionary_7</id>
+						<params>
+							<param>
+								Dictionary
+								<name>Value type</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								false
+								<name>Is Array</name>
+								<type>BoolT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>key</name>
+								<const>\dependsOn\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>IsInDictionary</class>
+						<id>IsInDictionary_12</id>
+						<params>
+							<param>
+								Dictionary
+								<name>Value type</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_8</id>
+						<params>
+							<param>
+								eventName
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								StringT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+				</blocks>
+				<connections>
+					<connection>
+						<from>If_14</from>
+						<input>true</input>
+						<to>MacroOutput_8</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>MacroInput_7</from>
+						<input>input</input>
+						<to>If_13</to>
+						<output>in</output>
+					</connection>
+					<connection>
+						<from>IsInDictionary_10</from>
+						<input>value</input>
+						<to>If_13</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>If_13</from>
+						<input>input</input>
+						<to>If_14</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>IsInDictionary_12</from>
+						<input>value</input>
+						<to>If_14</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>If_14</from>
+						<input>false</input>
+						<to>MacroOutput_9</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>GetVariable_35</from>
+						<input>dict</input>
+						<to>IsInDictionary_10</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVariable_35</from>
+						<input>dict</input>
+						<to>GetFromDictionary_7</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetFromDictionary_7</from>
+						<input>dict</input>
+						<to>IsInDictionary_12</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>MacroInput_8</from>
+						<input>key</input>
+						<to>IsInDictionary_12</to>
+						<output>eventName</output>
+					</connection>
+				</connections>
+			</macro>
+			<macro>
+				<name>SendEvent</name>
+				<blocks>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_9</id>
+						<params>
+							<param>
+								in
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_10</id>
+						<params>
+							<param>
+								failure
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_10</id>
+						<params>
+							<param>
+								out
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_26</id>
+						<buddy>Variable_12</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\error\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>BroadcastEvent</class>
+						<id>BroadcastEvent_4</id>
+						<params>
+							<param>
+								triggerSystemEventState
+								<name>Event Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								ArenaT
+								<name>Event Scope</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_7</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextPropertyGet</class>
+						<id>ContextPropertyGet_12</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getArena
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_46</id>
+						<buddy>Variable_11</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_47</id>
+						<buddy>Variable_12</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+				</blocks>
+				<connections>
+					<connection>
+						<from>BroadcastEvent_4</from>
+						<input>out</input>
+						<to>MacroOutput_10</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>MacroInput_10</from>
+						<input>input</input>
+						<to>SetVariable_26</to>
+						<output>failure</output>
+					</connection>
+					<connection>
+						<from>MacroInput_9</from>
+						<input>input</input>
+						<to>BroadcastEvent_4</to>
+						<output>in</output>
+					</connection>
+					<connection>
+						<from>SetVariable_26</from>
+						<input>input</input>
+						<to>BroadcastEvent_4</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>ContextPropertyGet_12</from>
+						<input>scope</input>
+						<to>BroadcastEvent_4</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVariable_46</from>
+						<input>eventName</input>
+						<to>BroadcastEvent_4</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVariable_47</from>
+						<input>eventState</input>
+						<to>BroadcastEvent_4</to>
+						<output>value</output>
+					</connection>
+				</connections>
+			</macro>
+			<macro>
+				<name>ReceiveEvent</name>
+				<blocks>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_11</id>
+						<params>
+							<param>
+								out
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_8</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_57</id>
+						<params>
+							<param>
+								IsDependOnEvent
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_18</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>ListenEvent</class>
+						<id>ListenEvent_5</id>
+						<params>
+							<param>
+								triggerSystemEventState
+								<name>Event Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								ArenaT
+								<name>Event Scope</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>active</name>
+								<const>\true\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_58</id>
+						<params>
+							<param>
+								IsStringEmpty
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_50</id>
+						<buddy>Variable_12</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextPropertyGet</class>
+						<id>ContextPropertyGet_14</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getArena
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_12</id>
+						<params>
+							<param>
+								eventName
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								StringT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_13</id>
+						<params>
+							<param>
+								eventState
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								StringT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+				</blocks>
+				<connections>
+					<connection>
+						<from>If_18</from>
+						<input>out</input>
+						<to>MacroOutput_11</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>ListenEvent_5</from>
+						<input>in</input>
+						<to>Macro_57</to>
+						<output>exec</output>
+					</connection>
+					<connection>
+						<from>ListenEvent_5</from>
+						<input>eventName</input>
+						<to>Macro_57</to>
+						<output>eventName</output>
+					</connection>
+					<connection>
+						<from>Macro_57</from>
+						<input>input</input>
+						<to>If_18</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>Macro_58</from>
+						<input>value</input>
+						<to>If_18</to>
+						<output>isEmpty</output>
+					</connection>
+					<connection>
+						<from>ContextPropertyGet_14</from>
+						<input>scope</input>
+						<to>ListenEvent_5</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>GetVariable_50</from>
+						<input>str</input>
+						<to>Macro_58</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>ListenEvent_5</from>
+						<input>eventName</input>
+						<to>MacroOutput_12</to>
+						<output>eventName</output>
+					</connection>
+					<connection>
+						<from>ListenEvent_5</from>
+						<input>eventState</input>
+						<to>MacroOutput_13</to>
+						<output>eventState</output>
+					</connection>
+				</connections>
+			</macro>
+			<macro>
+				<name>GetRemainingTimerDelay</name>
+				<blocks>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_14</id>
+						<params>
+							<param>
+								delay
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_12</id>
+						<params>
+							<param>
+								originalDelay
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SubtractFloat</class>
+						<id>SubtractFloat_10</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_70</id>
+						<params>
+							<param>
+								FloatGameTime
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SubtractFloat</class>
+						<id>SubtractFloat_12</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_11</id>
+						<params>
+							<param>
+								startDelayGameTime
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_9</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+				</blocks>
+				<connections>
+					<connection>
+						<from>SubtractFloat_10</from>
+						<input>delay</input>
+						<to>MacroOutput_14</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>MacroInput_12</from>
+						<input>a</input>
+						<to>SubtractFloat_10</to>
+						<output>originalDelay</output>
+					</connection>
+					<connection>
+						<from>SubtractFloat_12</from>
+						<input>b</input>
+						<to>SubtractFloat_10</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>Macro_70</from>
+						<input>a</input>
+						<to>SubtractFloat_12</to>
+						<output>floatGameTime</output>
+					</connection>
+					<connection>
+						<from>MacroInput_11</from>
+						<input>b</input>
+						<to>SubtractFloat_12</to>
+						<output>startDelayGameTime</output>
 					</connection>
 				</connections>
 			</macro>

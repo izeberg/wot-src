@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>14_city_bombing_01_building_14_transition</name>
+			<UUID>7e5d3e89-59df-4ff2-8991-e3da045ebbdc</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>bomb_explosion</name>
+			<UUID>e83db4ef-79c8-442d-848a-cb58cc027485</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>explosion_sound</name>
+			<UUID>ebd66a4d-bf2f-4a6b-b06f-0edde1926d34</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>e83db4ef-79c8-442d-848a-cb58cc027485</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7e5d3e89-59df-4ff2-8991-e3da045ebbdc</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ebd66a4d-bf2f-4a6b-b06f-0edde1926d34</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7e5d3e89-59df-4ff2-8991-e3da045ebbdc</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>7e5d3e89-59df-4ff2-8991-e3da045ebbdc</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e83db4ef-79c8-442d-848a-cb58cc027485</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ebd66a4d-bf2f-4a6b-b06f-0edde1926d34</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<UUID>ebd66a4d-bf2f-4a6b-b06f-0edde1926d34</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>explosion_sound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>dstrct_explosion_big</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Fade time</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fade type</name>
+						<value>4</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<UUID>e83db4ef-79c8-442d-848a-cb58cc027485</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/random_events/08_ruinberg_bomb_explosion.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

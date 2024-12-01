@@ -18,11 +18,21 @@ package net.wg.gui.lobby.storage.categories.cards
       
       public var progressiveLevelIcon:Image = null;
       
+      public var rarityIcon:Image = null;
+      
+      public var rarityBackgroundIcon:Image = null;
+      
       public var rentIcon:MovieClip;
       
       private var _typedData:CustomizationCardVO = null;
       
       private var _progressiveLevelPosition:Point = null;
+      
+      private const RARITY_OFFSET_X:Number = -35;
+      
+      private const RARITY_OFFSET_Y:Number = -15;
+      
+      private const RARITY_OFFSET_SMALL_Y:Number = -10;
       
       public function CustomizationCard()
       {
@@ -37,6 +47,8 @@ package net.wg.gui.lobby.storage.categories.cards
          this.previewButton.addEventListener(MouseEvent.ROLL_OVER,this.onPreviewButtonRollOver);
          this.previewButton.addEventListener(MouseEvent.ROLL_OUT,this.onPreviewButtonRollOut);
          this.rentIcon.mouseEnabled = this.rentIcon.mouseChildren = false;
+         this.rarityIcon.mouseEnabled = this.rarityIcon.mouseChildren = false;
+         this.rarityBackgroundIcon.mouseEnabled = this.rarityBackgroundIcon.mouseChildren = false;
          this.progressiveLevelIcon.mouseEnabled = this.progressiveLevelIcon.mouseChildren = false;
          this.progressiveLevelIcon.addEventListener(Event.CHANGE,this.onProgressionIconLoaded);
       }
@@ -51,6 +63,10 @@ package net.wg.gui.lobby.storage.categories.cards
          this.progressiveLevelIcon.removeEventListener(Event.CHANGE,this.onProgressionIconLoaded);
          this.progressiveLevelIcon.dispose();
          this.progressiveLevelIcon = null;
+         this.rarityIcon.dispose();
+         this.rarityIcon = null;
+         this.rarityBackgroundIcon.dispose();
+         this.rarityBackgroundIcon = null;
          this.rentIcon = null;
          this._typedData = null;
          this._progressiveLevelPosition = null;
@@ -68,6 +84,12 @@ package net.wg.gui.lobby.storage.categories.cards
                this.progressiveLevelIcon.source = this._typedData.progressiveLevelIcon;
                inInventoryIcon.visible = !this._typedData.isRentable;
                this.rentIcon.visible = this._typedData.isRentable;
+               this.rarityIcon.visible = this.rarityBackgroundIcon.visible = this._typedData.hasRarity;
+               if(this._typedData.hasRarity)
+               {
+                  this.rarityIcon.source = this._typedData.rarityIcon;
+                  this.rarityBackgroundIcon.source = this._typedData.rarityBackground;
+               }
                invalidateLayout();
             }
             if(isInvalid(InvalidationType.SIZE))
@@ -75,6 +97,7 @@ package net.wg.gui.lobby.storage.categories.cards
                this.previewButton.x = width >> 1;
                this.rentIcon.x = inInventoryIcon.x;
                this.rentIcon.y = inInventoryIcon.y;
+               this.onImageComplete();
             }
             if(isInvalid(InvalidationType.LAYOUT))
             {
@@ -82,6 +105,17 @@ package net.wg.gui.lobby.storage.categories.cards
                this.progressiveLevelIcon.x = this._progressiveLevelPosition.x;
                this.progressiveLevelIcon.y = this._progressiveLevelPosition.y;
             }
+         }
+      }
+      
+      override protected function onImageComplete() : void
+      {
+         super.onImageComplete();
+         this.rarityIcon.x = image.x + this.RARITY_OFFSET_X;
+         this.rarityIcon.y = image.y + this.RARITY_OFFSET_Y;
+         if(_sizeVO.size.width < CARD_SMALL_WIDTH)
+         {
+            this.rarityIcon.y = image.y + this.RARITY_OFFSET_SMALL_Y;
          }
       }
       
@@ -105,6 +139,20 @@ package net.wg.gui.lobby.storage.categories.cards
             "fastTransform":false,
             "delay":ROLL_OVER_ANIMATION_DELAY
          }));
+         if(this.rarityIcon.visible)
+         {
+            _loc1_.push(new Tween(FIRST_ANIMATION_DURATION,this.rarityIcon,{"alpha":0.5},{
+               "fastTransform":false,
+               "delay":ROLL_OVER_ANIMATION_DELAY
+            }));
+         }
+         if(this.rarityBackgroundIcon.visible)
+         {
+            _loc1_.push(new Tween(FIRST_ANIMATION_DURATION,this.rarityBackgroundIcon,{"alpha":0.3},{
+               "fastTransform":false,
+               "delay":ROLL_OVER_ANIMATION_DELAY
+            }));
+         }
          return _loc1_;
       }
       
@@ -116,6 +164,14 @@ package net.wg.gui.lobby.storage.categories.cards
             _loc1_.push(new Tween(FIRST_ANIMATION_DURATION,this.rentIcon,{"alpha":1},{"fastTransform":false}));
          }
          _loc1_.push(new Tween(FIRST_ANIMATION_DURATION,this.progressiveLevelIcon,{"alpha":1},{"fastTransform":false}));
+         if(this.rarityIcon.visible)
+         {
+            _loc1_.push(new Tween(FIRST_ANIMATION_DURATION,this.rarityIcon,{"alpha":1},{"fastTransform":false}));
+         }
+         if(this.rarityBackgroundIcon.visible)
+         {
+            _loc1_.push(new Tween(FIRST_ANIMATION_DURATION,this.rarityBackgroundIcon,{"alpha":1},{"fastTransform":false}));
+         }
          return _loc1_;
       }
       

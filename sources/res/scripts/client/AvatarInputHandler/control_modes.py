@@ -1754,7 +1754,7 @@ class PostMortemControlMode(IControlMode, CallbackDelayer):
 
     def __onVehicleLeaveWorld(self, vehicle):
         if vehicle.id == self.__curVehicleID:
-            if vehicle.isUpgrading:
+            if vehicle.isLeavingWorldForRespawn:
                 return
             vehicleID = BigWorld.player().playerVehicleID
             vehicle = BigWorld.entities.get(vehicleID)

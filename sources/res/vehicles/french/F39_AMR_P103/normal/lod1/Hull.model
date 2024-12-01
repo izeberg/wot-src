@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F39_AMR_P103/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/french/F39_AMR_P103/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.945384 -0.487646 -1.698864</min>
+		<max>0.941156 0.627818 1.804822</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

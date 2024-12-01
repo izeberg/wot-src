@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.283451 -0.000001 -1.638453</min>
+		<max>1.283451 1.085858 1.544521</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB146_Gabler_s_Destroyer/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB146_Gabler_s_Destroyer/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

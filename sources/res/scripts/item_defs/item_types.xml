@@ -294,7 +294,6 @@
 			<public/>
 			<stopOutsideBattle/>
 			<permanentGlow/>
-			<notForRegularSlot/>
 		</tags>
 	</equipment>
 	<customizationItem>
@@ -349,6 +348,9 @@
 			<lockedOnVehicle/>
 			<c11n2D/>
 			<c11n3D/>
+			<battleEffect/>
+			<rotatable/>
+			<scalable/>
 			<NY2018_style/>
 			<NY2019_style/>
 			<NY2020_style/>

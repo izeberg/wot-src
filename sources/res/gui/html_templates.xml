@@ -93,6 +93,7 @@
 			<PopoverAnchorMapType>_(#vehicle_customization:customization/Popover/mapType)&lt;font color=&quot;#E9E2BF&quot;&gt;%(text)s&lt;/font&gt;</PopoverAnchorMapType>
 			<PopoverAnchorItemType>_(#vehicle_customization:customization/Popover/itemType)&lt;font color=&quot;#E9E2BF&quot;&gt;%(text)s&lt;/font&gt;</PopoverAnchorItemType>
 			<StylePopoverSeasonName>
+				<all>&lt;TEXTFORMAT INDENT=&quot;0&quot; LEFTMARGIN=&quot;0&quot; RIGHTMARGIN=&quot;0&quot; LEADING=&quot;1&quot;&gt;&lt;P ALIGN=&quot;%(align)s&quot;&gt;&lt;FONT FACE=&quot;$FieldFont&quot; SIZE=&quot;14&quot; COLOR=&quot;#E9E2BF&quot; KERNING=&quot;0&quot;&gt;&lt;IMG SRC=&quot;img://gui/maps/icons/customization/items_popover/all16x16.png&quot; WIDTH=&quot;16&quot; HEIGHT=&quot;16&quot; VSPACE=&quot;-3&quot; ALIGN=&quot;baseline&quot;&gt; _(#vehicle_customization:propertySheet/map/all)&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;</all>
 				<summer>&lt;TEXTFORMAT INDENT=&quot;0&quot; LEFTMARGIN=&quot;0&quot; RIGHTMARGIN=&quot;0&quot; LEADING=&quot;1&quot;&gt;&lt;P ALIGN=&quot;%(align)s&quot;&gt;&lt;FONT FACE=&quot;$FieldFont&quot; SIZE=&quot;14&quot; COLOR=&quot;#E9E2BF&quot; KERNING=&quot;0&quot;&gt;&lt;IMG SRC=&quot;img://gui/maps/icons/customization/items_popover/summer16x16.png&quot; WIDTH=&quot;16&quot; HEIGHT=&quot;16&quot; VSPACE=&quot;-3&quot; ALIGN=&quot;baseline&quot;&gt; _(#vehicle_customization:propertySheet/map/summer)&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;</summer>
 				<winter>&lt;TEXTFORMAT INDENT=&quot;0&quot; LEFTMARGIN=&quot;0&quot; RIGHTMARGIN=&quot;0&quot; LEADING=&quot;1&quot;&gt;&lt;P ALIGN=&quot;%(align)s&quot;&gt;&lt;FONT FACE=&quot;$FieldFont&quot; SIZE=&quot;14&quot; COLOR=&quot;#E9E2BF&quot; KERNING=&quot;0&quot;&gt;&lt;IMG SRC=&quot;img://gui/maps/icons/customization/items_popover/winter16x16.png&quot; WIDTH=&quot;16&quot; HEIGHT=&quot;16&quot; VSPACE=&quot;-3&quot; ALIGN=&quot;baseline&quot;&gt; _(#vehicle_customization:propertySheet/map/winter)&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;</winter>
 				<desert>&lt;TEXTFORMAT INDENT=&quot;0&quot; LEFTMARGIN=&quot;0&quot; RIGHTMARGIN=&quot;0&quot; LEADING=&quot;1&quot;&gt;&lt;P ALIGN=&quot;%(align)s&quot;&gt;&lt;FONT FACE=&quot;$FieldFont&quot; SIZE=&quot;14&quot; COLOR=&quot;#E9E2BF&quot; KERNING=&quot;0&quot;&gt;&lt;IMG SRC=&quot;img://gui/maps/icons/customization/items_popover/desert16x16.png&quot; WIDTH=&quot;16&quot; HEIGHT=&quot;16&quot; VSPACE=&quot;-3&quot; ALIGN=&quot;baseline&quot;&gt; _(#vehicle_customization:propertySheet/map/desert)&lt;/FONT&gt;&lt;/P&gt;&lt;/TEXTFORMAT&gt;</desert>
@@ -1066,6 +1067,8 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			<statusInfoText>&lt;font face=&apos;$TitleFont&apos; size=&apos;14&apos; color=&apos;#7ab300&apos;&gt;%(message)s&lt;/font&gt;</statusInfoText>
 			<statusAttention>&lt;font face=&apos;$TitleFont&apos; size=&apos;14&apos; color=&apos;#feab34&apos;&gt;%(message)s&lt;/font&gt;</statusAttention>
 			<statusAlert>&lt;font face=&apos;$TitleFont&apos; size=&apos;14&apos; color=&apos;#ee7001&apos;&gt;%(message)s&lt;/font&gt;</statusAlert>
+			<statusSimpleText>&lt;font face=&apos;$TextFont&apos; size=&apos;14&apos; color=&apos;#E9E2BF&apos;&gt;%(message)s&lt;/font&gt;</statusSimpleText>
+			<statusBrightText>&lt;font face=&apos;$TextFont&apos; size=&apos;14&apos; color=&apos;#FEAB34&apos;&gt;%(message)s&lt;/font&gt;</statusBrightText>
 			<mainText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#8C8C7E&apos;&gt;%(message)s&lt;/font&gt;</mainText>
 			<earningsInformation>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#CED9D9&apos;&gt;&lt;b&gt;+%(message)s&lt;/b&gt;&lt;/font&gt;</earningsInformation>
 			<linkText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#EE7000&apos;&gt;&lt;a href=&quot;event:linkText&quot;&gt;&lt;u&gt;%(message)s&lt;/u&gt;&lt;/a&gt;&lt;/font&gt;</linkText>
@@ -1152,6 +1155,11 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			<poiCapturedBoldText>&lt;font size=&apos;18&apos; face=&apos;$TitleFont&apos;&gt;&lt;b&gt;%(message)s&lt;/b&gt;&lt;/font&gt;</poiCapturedBoldText>
 			<poiCapturedRegularText>&lt;font size=&apos;16&apos; face=&apos;$TitleFont&apos;&gt;%(message)s&lt;/font&gt;</poiCapturedRegularText>
 			<prestigeText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#CED9D9&apos;&gt;%(message)s&lt;/font&gt;</prestigeText>
+			<cream>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#FFDD99&apos;&gt;%(message)s&lt;/font&gt;</cream>
+			<creamBold>&lt;font face=&apos;$TitleFont&apos; size=&apos;14&apos; color=&apos;#FFDD99&apos;&gt;&lt;b&gt;%(message)s&lt;/b&gt;&lt;/font&gt;</creamBold>
+			<creamTitle>&lt;font face=&apos;$TitleFont&apos; size=&apos;15&apos; color=&apos;#FFDD99&apos;&gt;%(message)s&lt;/font&gt;</creamTitle>
+			<lightGray>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#F2F2F7&apos;&gt;%(message)s&lt;/font&gt;</lightGray>
+			<lightBlue>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#BDD4FF&apos;&gt;%(message)s&lt;/font&gt;</lightBlue>
 		</textStyle>
 		<profileStatistics>
 			<marksOfMasteryText>%(marksOfMastery)s&lt;font size=&apos;14&apos; color=&apos;#939188&apos;&gt;/%(totalVehicles)s&lt;/font&gt;</marksOfMasteryText>

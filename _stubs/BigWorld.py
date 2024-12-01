@@ -5098,7 +5098,6 @@ class WGGunRotatorImpl(pybind11_object):
 	turretYaw = property(lambda self: None)
 	turretYawLimits = property(lambda self: None)
 	def update(self, *args, **kwargs): pass
-	useNewMethod = property(lambda self: None)
 	useSteepAngles = property(lambda self: None)
 	vehicleMatrix = property(lambda self: None)
 	vehicleRotationSpeed = property(lambda self: None)
@@ -6603,6 +6602,7 @@ def fetchURL(*args, **kwargs): pass
 def flushPythonLog(*args, **kwargs): pass
 def generateGfxSettings(*args, **kwargs): pass
 def getActiveMonitorIndex(*args, **kwargs): pass
+def getAimingAngles(*args, **kwargs): pass
 def getAspectRatio(*args, **kwargs): pass
 def getAutoDetectGraphicsSettingsScore(*args, **kwargs): pass
 def getBattleFPS(*args, **kwargs): pass

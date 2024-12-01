@@ -2019,6 +2019,8 @@ class TOOLTIPS(object):
     AWARDITEM_TOURCOIN_BODY = '#tooltips:awardItem/tourcoin/body'
     AWARDITEM_INDUSTRIALRESOURCE_HEADER = '#tooltips:awardItem/industrialResource/header'
     AWARDITEM_INDUSTRIALRESOURCE_BODY = '#tooltips:awardItem/industrialResource/body'
+    AWARDITEM_WDRCOIN_HEADER = '#tooltips:awardItem/wdrcoin/header'
+    AWARDITEM_WDRCOIN_BODY = '#tooltips:awardItem/wdrcoin/body'
     AWARDITEM_MODERNIZEDDEVICE_HEADER = '#tooltips:awardItem/modernizedDevice/header'
     AWARDITEM_MODERNIZEDDEVICE_BODY = '#tooltips:awardItem/modernizedDevice/body'
     AWARDITEM_RANDOMNATIONALBLUEPRINT_HEADER = '#tooltips:awardItem/randomNationalBlueprint/header'
@@ -2090,6 +2092,18 @@ class TOOLTIPS(object):
     CUSTOMIZATION_TABS_INSCRIPTION_BODY = '#tooltips:customization/tabs/inscription/body'
     CUSTOMIZATION_TABS_MODIFICATION_BODY = '#tooltips:customization/tabs/modification/body'
     CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY = '#tooltips:customization/tabs/projectionDecal/body'
+    CUSTOMIZATION_TABS_CUSTOMSTYLE_BODY = '#tooltips:customization/tabs/customStyle/body'
+    CUSTOMIZATION_TABS_UNCUSTOMSTYLE_BODY = '#tooltips:customization/tabs/uncustomStyle/body'
+    CUSTOMIZATION_TABS_ATTACHMENT_BODY = '#tooltips:customization/tabs/attachment/body'
+    CUSTOMIZATION_DISABLEDTABS_PAINT_BODY = '#tooltips:customization/disabledTabs/paint/body'
+    CUSTOMIZATION_DISABLEDTABS_CAMOUFLAGE_BODY = '#tooltips:customization/disabledTabs/camouflage/body'
+    CUSTOMIZATION_DISABLEDTABS_EMBLEM_BODY = '#tooltips:customization/disabledTabs/emblem/body'
+    CUSTOMIZATION_DISABLEDTABS_INSCRIPTION_BODY = '#tooltips:customization/disabledTabs/inscription/body'
+    CUSTOMIZATION_DISABLEDTABS_MODIFICATION_BODY = '#tooltips:customization/disabledTabs/modification/body'
+    CUSTOMIZATION_DISABLEDTABS_PROJECTIONDECAL_BODY = '#tooltips:customization/disabledTabs/projectionDecal/body'
+    CUSTOMIZATION_DISABLEDTABS_CUSTOMSTYLE_BODY = '#tooltips:customization/disabledTabs/customStyle/body'
+    CUSTOMIZATION_DISABLEDTABS_UNCUSTOMSTYLE_BODY = '#tooltips:customization/disabledTabs/uncustomStyle/body'
+    CUSTOMIZATION_DISABLEDTABS_ATTACHMENT_BODY = '#tooltips:customization/disabledTabs/attachment/body'
     CUSTOMIZATION_CAROUSEL_FILTER_HEADER = '#tooltips:customization/carousel/filter/header'
     CUSTOMIZATION_CAROUSEL_FILTER_BODY = '#tooltips:customization/carousel/filter/body'
     CUSTOMIZATION_FILTERPOPOVER_REFRESH_HEADER = '#tooltips:customization/filterPopover/refresh/header'
@@ -2282,6 +2296,7 @@ class TOOLTIPS(object):
     VEHICLEPREVIEW_BOXTOOLTIP_EQUIPMENT_HEADER = '#tooltips:vehiclePreview/boxTooltip/equipment/header'
     VEHICLEPREVIEW_BOXTOOLTIP_OPTIONALDEVICE_HEADER = '#tooltips:vehiclePreview/boxTooltip/optionalDevice/header'
     VEHICLEPREVIEW_BOXTOOLTIP_BATTLEBOOSTER_HEADER = '#tooltips:vehiclePreview/boxTooltip/battleBooster/header'
+    VEHICLEPREVIEW_BOXTOOLTIP_ATTACHMENT_HEADER = '#tooltips:vehiclePreview/boxTooltip/attachment/header'
     CONTENTBUYVIEW_SLOTCHECKBOX_NOTENOUGHSLOTS_HEADER = '#tooltips:contentBuyView/slotCheckbox/notEnoughSlots/header'
     CONTENTBUYVIEW_SLOTCHECKBOX_NOTENOUGHSLOTS_BODY = '#tooltips:contentBuyView/slotCheckbox/notEnoughSlots/body'
     DISMISSTANKMANDIALOG_BUFFERISFULLMULTIPLE_BODY = '#tooltips:dismissTankmanDialog/bufferIsFullMultiple/body'
@@ -3223,8 +3238,7 @@ class TOOLTIPS(object):
     CUSTOMIZATION_STORAGE_FILTERS_EMBLEMS_TITLE = '#tooltips:customization/storage/filters/emblems/title'
     CUSTOMIZATION_STORAGE_FILTERS_TEXT_TITLE = '#tooltips:customization/storage/filters/text/title'
     CUSTOMIZATION_STORAGE_FILTERS_EFFECTS_TITLE = '#tooltips:customization/storage/filters/effects/title'
-    CUSTOMIZATION_SAVEDSTYLES_TITLE = '#tooltips:customization/savedStyles/title'
-    CUSTOMIZATION_SAVEDSTYLES_BODY = '#tooltips:customization/savedStyles/body'
+    CUSTOMIZATION_STORAGE_FILTERS_ATTACHMENTS_TITLE = '#tooltips:customization/storage/filters/attachments/title'
     SENIORITYAWARDS_HANGARENTRYPOINT_TOOLTIP_HEADER = '#tooltips:seniorityAwards/hangarEntryPoint/tooltip/header'
     SENIORITYAWARDS_HANGARENTRYPOINT_TOOLTIP_BODY = '#tooltips:seniorityAwards/hangarEntryPoint/tooltip/body'
     VEHICLE_ADDITIONAL_HEADER = '#tooltips:vehicle/additional/header'
@@ -4217,6 +4231,7 @@ class TOOLTIPS(object):
      AWARDITEM_COMP7TOKENWEEKLYREWARD_HEADER,
      AWARDITEM_TOURCOIN_HEADER,
      AWARDITEM_INDUSTRIALRESOURCE_HEADER,
+     AWARDITEM_WDRCOIN_HEADER,
      AWARDITEM_MODERNIZEDDEVICE_HEADER,
      AWARDITEM_RANDOMNATIONALBLUEPRINT_HEADER,
      AWARDITEM_RANDOMNATIONALBROCHURE_HEADER,
@@ -4306,6 +4321,7 @@ class TOOLTIPS(object):
      AWARDITEM_COMP7TOKENWEEKLYREWARD_BODY,
      AWARDITEM_TOURCOIN_BODY,
      AWARDITEM_INDUSTRIALRESOURCE_BODY,
+     AWARDITEM_WDRCOIN_BODY,
      AWARDITEM_MODERNIZEDDEVICE_BODY,
      AWARDITEM_RANDOMNATIONALBLUEPRINT_BODY,
      AWARDITEM_RANDOMNATIONALBROCHURE_BODY,
@@ -4547,7 +4563,20 @@ class TOOLTIPS(object):
      CUSTOMIZATION_TABS_EMBLEM_BODY,
      CUSTOMIZATION_TABS_INSCRIPTION_BODY,
      CUSTOMIZATION_TABS_MODIFICATION_BODY,
-     CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY)
+     CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY,
+     CUSTOMIZATION_TABS_CUSTOMSTYLE_BODY,
+     CUSTOMIZATION_TABS_UNCUSTOMSTYLE_BODY,
+     CUSTOMIZATION_TABS_ATTACHMENT_BODY)
+    CUSTOMIZATION_DISABLEDTABS_ALL_BODY_ENUM = (
+     CUSTOMIZATION_DISABLEDTABS_PAINT_BODY,
+     CUSTOMIZATION_DISABLEDTABS_CAMOUFLAGE_BODY,
+     CUSTOMIZATION_DISABLEDTABS_EMBLEM_BODY,
+     CUSTOMIZATION_DISABLEDTABS_INSCRIPTION_BODY,
+     CUSTOMIZATION_DISABLEDTABS_MODIFICATION_BODY,
+     CUSTOMIZATION_DISABLEDTABS_PROJECTIONDECAL_BODY,
+     CUSTOMIZATION_DISABLEDTABS_CUSTOMSTYLE_BODY,
+     CUSTOMIZATION_DISABLEDTABS_UNCUSTOMSTYLE_BODY,
+     CUSTOMIZATION_DISABLEDTABS_ATTACHMENT_BODY)
     HEADER_BUTTONS_ALL_CLICKDESC_ENUM = (
      HEADER_BUTTONS_CRYSTAL_CLICKDESC,
      HEADER_BUTTONS_GOLD_CLICKDESC,
@@ -4578,7 +4607,8 @@ class TOOLTIPS(object):
      VEHICLEPREVIEW_BOXTOOLTIP_PERSONALNUMBER_HEADER,
      VEHICLEPREVIEW_BOXTOOLTIP_EQUIPMENT_HEADER,
      VEHICLEPREVIEW_BOXTOOLTIP_OPTIONALDEVICE_HEADER,
-     VEHICLEPREVIEW_BOXTOOLTIP_BATTLEBOOSTER_HEADER)
+     VEHICLEPREVIEW_BOXTOOLTIP_BATTLEBOOSTER_HEADER,
+     VEHICLEPREVIEW_BOXTOOLTIP_ATTACHMENT_HEADER)
     NOTRECRUITEDTANKMAN_ALL_EVENT_ENUM = (
      NOTRECRUITEDTANKMAN_BASE_EVENT,
      NOTRECRUITEDTANKMAN_CZECH_WOMAN_EVENT,
@@ -5619,6 +5649,15 @@ class TOOLTIPS(object):
     def customizationItemTab(cls, typeName):
         outcome = ('#tooltips:customization/tabs/{}/body').format(typeName)
         if outcome not in cls.CUSTOMIZATION_TABS_ALL_BODY_ENUM:
+            LOG_WARNING(('Localization key "{}" not found').format(outcome))
+            return None
+        else:
+            return outcome
+
+    @classmethod
+    def customizationDisabledItemTab(cls, typeName):
+        outcome = ('#tooltips:customization/disabledTabs/{}/body').format(typeName)
+        if outcome not in cls.CUSTOMIZATION_DISABLEDTABS_ALL_BODY_ENUM:
             LOG_WARNING(('Localization key "{}" not found').format(outcome))
             return None
         else:

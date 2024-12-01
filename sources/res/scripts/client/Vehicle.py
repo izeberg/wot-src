@@ -214,6 +214,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         self.__wheelsScrollFilter = None
         self.__wheelsSteeringFilter = None
         self.isUpgrading = False
+        self.isLeavingWorldForRespawn = False
         self.isForceReloading = False
         self.__dualGunIndex = None
         self.refreshNationalVoice()
@@ -317,8 +318,13 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             vehicle.respawnCompactDescr = compactDescr
             vehicle.respawnOutfitCompactDescr = outfitCompactDescr
             _g_respawnQueue.pop(vID, None)
-            vehicle.onLeaveWorld()
-            vehicle.onEnterWorld()
+            vehicle.isLeavingWorldForRespawn = True
+            try:
+                vehicle.onLeaveWorld()
+                vehicle.onEnterWorld()
+            finally:
+                vehicle.isLeavingWorldForRespawn = False
+
         else:
             _logger.debug('Delayed respawn %d', vID)
             _g_respawnQueue[vID] = [compactDescr, outfitCompactDescr]

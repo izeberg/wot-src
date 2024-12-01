@@ -83,7 +83,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.354725 -0.000000</row3>
+							<row3>0.000000 0.354725 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_L0_BlendBone</identifier>
@@ -116,7 +116,7 @@
 					<node>
 						<identifier>W_L1</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354724 0.000000</row3>
@@ -260,10 +260,10 @@
 					<node>
 						<identifier>W_L5</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.354724 -0.000000</row3>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.354724 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_L5_BlendBone</identifier>
@@ -299,7 +299,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>-0.000000 -0.000000 1.000000</row2>
-							<row3>-0.000000 0.354725 -0.000000</row3>
+							<row3>0.000000 0.354725 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R0_BlendBone</identifier>
@@ -404,7 +404,7 @@
 					<node>
 						<identifier>W_R3</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354724 0.000000</row3>
@@ -440,7 +440,7 @@
 					<node>
 						<identifier>W_R4</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354724 0.000000</row3>
@@ -478,8 +478,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.354724 -0.000000</row3>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.354724 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R5_BlendBone</identifier>
@@ -1000,14 +1000,6 @@
 				0
 				<material>
 					<identifier>tank_proxy_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -1034,14 +1026,6 @@
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.340187 0.575211 -0.135928</groupOrigin>
@@ -1058,14 +1042,6 @@
 				0
 				<material>
 					<identifier>tank_proxy_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -1093,14 +1069,6 @@
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.373426 0.564301 -0.129177</groupOrigin>
 			</primitiveGroup>
@@ -1108,9 +1076,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.656818 -0.004455 -2.879733</min>
+		<min>-1.656818 -0.004454 -2.879733</min>
 		<max>1.643152 1.150654 3.151589</max>
 	</boundingBox>
-	<geometrySize>8680</geometrySize>
+	<geometrySize>8600</geometrySize>
 	<minUVDensity>0.002519</minUVDensity>
 </root>

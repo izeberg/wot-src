@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R225_SU_100i/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.292343 -0.000446 -2.940400</min>
+		<max>1.292343 1.168968 2.732742</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R225_SU_100i/normal/lod0/Chassis</nodefullVisual>
+</root>
