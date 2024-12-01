@@ -2983,10 +2983,6 @@
 		<improved>true</improved>
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>105</caliber>
-		<explosionRadius>
-			1.91
-			<!--BW_String-->
-		</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>mainHollowCharge</effects>
 		<damage>

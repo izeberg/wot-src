@@ -11,8 +11,8 @@
 	<postProgressionTree>role_HT_break</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>47</forward>
-		<backward>17</backward>
+		<forward>42</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3168,7 +3168,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						10.5
+						9.4
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -3176,7 +3176,7 @@
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.44
+						0.46
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -4130,7 +4130,7 @@
 			<engines>
 				<DTN_10>
 					<smplEnginePower>900</smplEnginePower>
-					<smplFwMaxSpeed>47</smplFwMaxSpeed>
+					<smplFwMaxSpeed>42</smplFwMaxSpeed>
 				</DTN_10>
 			</engines>
 			<chassis>
