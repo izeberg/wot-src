@@ -1,6 +1,6 @@
 import SoundGroups, WWISE
 from gui.impl.lobby.video.video_sound_manager import IVideoSoundManager, SoundManagerStates
-from new_year.ny_constants import NewYearLootBoxes
+from new_year.ny_constants import NewYearLootBoxes, NewYearLootBoxRewards
 from shared_utils import CONST_CONTAINER
 from new_year_common.items.components.ny_constants import ToySettings
 from gui.sounds.filters import StatesGroup, States
@@ -262,7 +262,7 @@ class VideoRewardsSoundControl(IVideoSoundManager):
         self.__bonusName = bonusName
 
     def start(self):
-        sound = self._SOUND_EVENT_TEMPLATE.format(self.__bonusName)
+        sound = self._SOUND_EVENT_TEMPLATE.format(NewYearLootBoxRewards.ALL.get(self.__bonusName, 'tank_default'))
         SoundGroups.g_instance.playSound2D(sound)
         self.__state = SoundManagerStates.PLAYING
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>36.966667</duration>
+	<duration>36.633335</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -60,8 +60,8 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>36.900002</duration>
-				<value>Root|Scene Root</value>
+				<duration>36.566669</duration>
+				<value>Raccoon|Root</value>
 			</frame>
 		</track>
 		<track>
@@ -69,7 +69,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>36.966667</duration>
+				<duration>36.600002</duration>
 				<sequenceSound>hangar_h03_amb_raccoon_stage_1_food_01</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

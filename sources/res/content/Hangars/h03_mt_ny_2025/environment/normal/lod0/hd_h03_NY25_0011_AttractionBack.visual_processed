@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>s_nd1</identifier>
-					<materialKind>0</materialKind>
+					<materialKind>110</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<fx>shaders/std_effects/glow.fx</fx>
 					<property>
@@ -50,7 +50,7 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>112</materialKind>
+					<materialKind>110</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
@@ -71,6 +71,10 @@
 					<property>
 						normalMap
 						<Texture>content/UniversalTextures/Universal_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>7.588627 3.383959 3.117755</groupOrigin>

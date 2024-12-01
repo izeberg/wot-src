@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>61.933338</duration>
+	<duration>54.100002</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -172,7 +172,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>61.933338</duration>
+				<duration>54.000004</duration>
 				<value>Car_2|root</value>
 			</frame>
 		</track>
@@ -181,34 +181,10 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>61.866669</duration>
+				<duration>53.933334</duration>
 				<sequenceSound>hangar_h03_car_street_01</sequenceSound>
 				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Sound 1</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>54.400002</duration>
-				<value>|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>54.366669</duration>
-				<sequenceSound>hangar_h03_car_street_02</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
+				<fade>4.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

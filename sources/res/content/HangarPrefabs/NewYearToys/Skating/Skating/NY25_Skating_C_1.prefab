@@ -148,7 +148,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>1 0 0</value>
+						<value>
+							-9.53674e-07 -1.19209e-07 0
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -221,7 +224,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							16.7645 0.0892847 -8.81513
+							15.9377 0.0892847 -8.38713
 							<!--BW_String-->
 						</value>
 					</property>

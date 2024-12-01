@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 0.000000 0.000000</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
 					<identifier>G</identifier>
@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.074994 3.364012</row3>
+							<row3>0.000000 0.074994 3.093542</row3>
 						</transform>
 					</node>
 					<node>
@@ -67,7 +67,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.999640 -0.026840</row1>
 					<row2>0.000000 0.026840 0.999640</row2>
-					<row3>-0.000000 0.000000 -0.000000</row3>
+					<row3>0.000000 0.000000 -0.000000</row3>
 				</transform>
 				<node>
 					<identifier>static_BlendBone</identifier>
@@ -158,7 +158,7 @@
 						<Texture>vehicles/italy/It33_Orso/Orso_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.008128 0.114021 -3.042978</groupOrigin>
+				<groupOrigin>0.008129 0.114021 -3.042978</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

@@ -22,6 +22,8 @@ class NYGeneralConsts(object):
     FIRST_ENTRANCE_TOKEN = 'firstEntranceToken'
     PET_VISIBLE = 'petVisible'
     NEW_YEAR_GREETINGS_DATE = 'newYearGreetingsDate'
+    NEW_YEAR_START_DATE = 'newYearStartDate'
+    NEW_YEAR_END_DATE = 'newYearEndDate'
 
 
 class MachineConsts(object):

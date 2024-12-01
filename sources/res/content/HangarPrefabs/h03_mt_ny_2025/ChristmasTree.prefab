@@ -2768,7 +2768,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							2.82732 8.26247 -3.82403
+							3.11203 8.45626 -3.83902
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2782,7 +2782,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-5.2796e-07 -0.496743 6.90079e-07
+							-5.2796e-07 -0.888376 6.90079e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -3734,7 +3734,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							4.86072 8.76577 0.403423
+							5.00581 8.86226 0.535122
 							<!--BW_String-->
 						</value>
 					</property>
@@ -3748,7 +3748,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-1.46714e-07 -1.35406 1.5664e-07
+							-1.46714e-07 -1.51704 1.5664e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4298,7 +4298,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							1.04257 14.8916 -1.83457
+							1.25011 14.8916 -2.14396
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4312,7 +4312,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 -0.52988 0
+							-0 -0.10612 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -6937,7 +6937,7 @@
 					</property>
 					<property>
 						<name>Default Toy</name>
-						<value>1</value>
+						<value>-1</value>
 					</property>
 				</config>
 			</component>
@@ -6964,7 +6964,7 @@
 					</property>
 					<property>
 						<name>Default Toy</name>
-						<value>2</value>
+						<value>-1</value>
 					</property>
 				</config>
 			</component>

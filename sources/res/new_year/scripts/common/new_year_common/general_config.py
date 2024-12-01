@@ -68,3 +68,9 @@ class GeneralConfig(object):
 
     def getNewYearGreetingsDate(self):
         return self._config.get(NYGeneralConsts.NEW_YEAR_GREETINGS_DATE)
+
+    def getNewYearStartDate(self):
+        return self._config.get(NYGeneralConsts.NEW_YEAR_START_DATE)
+
+    def getNewYearEndDate(self):
+        return self._config.get(NYGeneralConsts.NEW_YEAR_END_DATE)

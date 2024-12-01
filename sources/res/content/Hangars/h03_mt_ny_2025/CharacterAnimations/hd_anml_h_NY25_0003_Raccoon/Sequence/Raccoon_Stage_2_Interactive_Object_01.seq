@@ -142,9 +142,9 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.733333</startTime>
-				<duration>20.766668</duration>
+				<duration>20.772041</duration>
 				<sequenceSound>hangar_h03_amb_raccoon_stage_2_interactive_object_01</sequenceSound>
-				<type>one_shot</type>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

@@ -133,7 +133,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>1 0 0</value>
+						<value>
+							1.90735e-06 1.19209e-07 0
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>

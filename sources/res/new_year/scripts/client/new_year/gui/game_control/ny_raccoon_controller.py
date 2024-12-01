@@ -1,4 +1,4 @@
-import Event
+import functools, Event
 from frameworks.wulf import WindowLayer
 from gui.impl.common.fade_manager import DefaultFadingCover, FadeManager
 from helpers import dependency
@@ -13,10 +13,11 @@ class NYFadingCover(DefaultFadingCover):
     def __init__(self):
         super(NYFadingCover, self).__init__(fadeInDuration=_FADE_IN_DURATION, fadeOutDuration=_FADE_OUT_DURATION)
 
-    def fadeOut(self, _):
-        super(NYFadingCover, self).fadeOut(self.__onComplete)
+    def fadeOut(self, callback):
+        super(NYFadingCover, self).fadeOut(functools.partial(self.__onComplete, callback))
 
-    def __onComplete(self):
+    def __onComplete(self, callback):
+        callback()
         self.__raccoonCtrl.hideFade()
 
 
@@ -32,6 +33,15 @@ class NewYearRaccoonController(INewYearRaccoonController):
 
     def fini(self):
         self.__fadeManager.destroy()
+
+    def isFade(self):
+        return self.__isFade
+
+    def replaceCallback(self, callback):
+        if self.__isFade:
+            self.__callback = callback
+            return True
+        return False
 
     @wg_async
     def showFade(self, callback=None):

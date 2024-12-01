@@ -174,9 +174,9 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.500000</startTime>
-				<duration>35.766670</duration>
+				<duration>35.763477</duration>
 				<sequenceSound>hangar_h03_amb_raccoon_stage_1_fishing_rod</sequenceSound>
-				<type>one_shot</type>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

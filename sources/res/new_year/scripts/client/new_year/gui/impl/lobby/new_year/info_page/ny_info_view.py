@@ -1,6 +1,7 @@
 from debug_utils import LOG_ERROR
 from ExtensionsManager import g_extensionsManager
 from constants import CURRENT_REALM
+from helpers.time_utils import getTimestampByStrDate
 from new_year.ny_constants import NyWidgetTopMenu
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.new_year_info_view_model import NewYearInfoViewModel, Tabs
 from new_year.gui.impl.lobby.new_year.ny_views_helpers import showInfoVideo
@@ -15,6 +16,7 @@ from helpers.server_settings import GUI_LOOT_BOXES_CONFIG
 from new_year.helpers.server_settings import getNewYearBonusConfig
 from new_year.gui.shared.ny_bonuses import BonusHelper
 from new_year.ny_constants import NyTabBarAlbumsView, NyTabBarRewardsView, NewYearLootBoxes
+from new_year.helpers.server_settings import getNewYearGeneralConfig
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IGuiLootBoxesController
 from skeletons.gui.lobby_context import ILobbyContext
@@ -24,7 +26,7 @@ _giftsOrder = (
  NewYearInfoViewModel.SMALLBOXES, NewYearInfoViewModel.BIGBOXES)
 
 class NyInfoView(HistorySubModelPresenter):
-    __slots__ = ('__slideLogger', '__smallBoxesCount')
+    __slots__ = ('__slideLogger', '__smallBoxesCount', '__config')
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __guiLootBoxes = dependency.descriptor(IGuiLootBoxesController)
@@ -32,6 +34,7 @@ class NyInfoView(HistorySubModelPresenter):
 
     def __init__(self, viewModel, parentView, *args, **kwargs):
         super(NyInfoView, self).__init__(viewModel, parentView)
+        self.__config = getNewYearGeneralConfig()
         self.__slideLogger = None
         self.__smallBoxesCount = 0
         return
@@ -54,6 +57,8 @@ class NyInfoView(HistorySubModelPresenter):
             model.setMinMultiplier(min(multipliersList))
             model.setMaxMultiplier(max(multipliersList))
             model.setStartTab(startTab)
+            model.setStartDate(getTimestampByStrDate(self.__config.getNewYearStartDate()))
+            model.setEndDate(getTimestampByStrDate(self.__config.getNewYearEndDate()))
             self.__updateStatus(model=model)
             self.__updateBoxesExistance(model=model)
 

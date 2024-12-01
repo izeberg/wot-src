@@ -14,8 +14,6 @@ from new_year.gui.impl.lobby.new_year.quests.ny_quest_helper import updateBattle
 from new_year.helpers.server_settings import getNewYearGeneralConfig
 from new_year.gui.impl.lobby.new_year.sub_model_presenter import HistorySubModelPresenter
 from new_year.ny_constants import InternalViewState
-from new_year.gui.impl.lobby.new_year.tooltips.ny_currency_tooltip import NyCurrencyTooltip
-from new_year.gui.impl.gen.view_models.common.ny_currency_type_model import NyCurrencyType
 from new_year.gui.impl.new_year.new_year_bonus_packer import getNewYearBonusPacker
 from gui.shared.missions.packers.events import BattleQuestUIDataPacker
 from skeletons.gui.shared import IItemsCache
@@ -107,8 +105,6 @@ class NyQuestsView(HistorySubModelPresenter):
         return self.__tooltipData.get(questId, {}).get(tooltipId)
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.new_year.lobby.new_year.tooltips.NyCurrencyTooltip():
-            return NyCurrencyTooltip(NyCurrencyType.NYGIFTMACHINETOKEN)
         if R.views.dyn('gui_lootboxes').isValid() and contentID == R.views.dyn('gui_lootboxes').lobby.gui_lootboxes.tooltips.LootboxTooltip():
             tooltipData = self.__getTooltipData(event)
             return tooltipData.tooltip(*tooltipData.specialArgs)

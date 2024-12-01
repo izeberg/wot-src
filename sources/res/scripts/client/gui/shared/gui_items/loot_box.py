@@ -83,7 +83,7 @@ class LootBox(GUIItem):
                  '__slotBonuses', '__guaranteedFrequencyName', '__tier', '__isEnabled',
                  '__userNameKey', '__iconName', '__description', '__videoKey', '__weight',
                  '__bonusGroups', '__autoOpenTime', '__rotationLists', '__config',
-                 '__rotationStage', '__tags', '__unlockKeys')
+                 '__rotationStage', '__tags', '__unlockKeys', '__manualMaxOpenCount')
 
     def __init__(self, lootBoxID, lootBoxConfig, invCount):
         super(LootBox, self).__init__()
@@ -177,6 +177,11 @@ class LootBox(GUIItem):
     def getAutoOpenTime(self):
         if self.__autoOpenTime:
             return self.__autoOpenTime
+        return 0
+
+    def getManualMaxOpenCount(self):
+        if self.__manualMaxOpenCount:
+            return self.__manualMaxOpenCount
         return 0
 
     def getCategory(self):
@@ -277,6 +282,7 @@ class LootBox(GUIItem):
         self.__videoKey = assetsConfig.get('video', '')
         self.__tags = assetsConfig.get('tags', set())
         self.__unlockKeys = lootBoxConfig.get('unlockKeys', set())
+        self.__manualMaxOpenCount = lootBoxConfig.get('manualMaxOpenCount')
         return
 
     def __iterateAllSlots(self):

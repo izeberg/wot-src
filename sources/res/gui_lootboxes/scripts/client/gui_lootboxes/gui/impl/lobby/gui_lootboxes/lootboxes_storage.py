@@ -191,6 +191,13 @@ class LootBoxesStorageView(ViewImpl):
         self.__setInfoPageByLootboxType()
         model.setCurrentLootboxID(lootBoxID)
         model.setIsShowInfoButton(bool(self.__infoPageUrl))
+        model.setIfHasUniqueURL(self.__ifHasUniqueURL(lootBoxID))
+
+    def __ifHasUniqueURL(self, lootBoxID):
+        lootBox = self.__itemsCache.items.tokens.getLootBoxByID(lootBoxID)
+        if lootBox:
+            return bool(self.__guiLootBoxesCtr.getShopURL(lootBox.getType()))
+        return False
 
     def __repeatopenLootBoxes(self, event):
         self.__openLootBoxes(event.ctx)

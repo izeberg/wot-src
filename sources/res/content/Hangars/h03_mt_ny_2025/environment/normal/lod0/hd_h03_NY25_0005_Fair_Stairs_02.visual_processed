@@ -47,26 +47,15 @@
 					<identifier>lambert5</identifier>
 					<fx>shaders/std_effects/lightonly.fx</fx>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>helpers\maps\aid_builder.dds</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/Snow_35_512_AM.dds</Texture>
 					</property>
 					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
 				</material>
 				<groupOrigin>2.050135 0.387651 -0.194927</groupOrigin>
 			</primitiveGroup>

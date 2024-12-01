@@ -97,6 +97,11 @@
 			<UUID>3c233c2d-58bc-4276-8835-a3ba7bf00d21</UUID>
 			<flags>8</flags>
 		</GameObject>
+		<GameObject>
+			<name>Outline</name>
+			<UUID>7b155e1f-e87d-4950-817c-3807dba591af</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -274,6 +279,16 @@
 			</component>
 			<component>
 				<objectIndex>18</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>de4b37a3-a3bd-4771-9fa8-35f44bfc5e5c</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>19</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -706,6 +721,30 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-8.99317 -0.823637 -5.24246
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 3.14159 0
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -1338,6 +1377,43 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>Colliders</type>
+			<version>1</version>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Fair_Outline.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
@@ -1385,6 +1461,21 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Fair_Outline.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>CameraPreviewComponent</type>
@@ -1423,6 +1514,35 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>SelectionComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>HighlightComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>color</name>
+						<value>
+							0.839216 0.576471 0.286275 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>groupName</name>
+						<value>FieldKitchen</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>SelectionRule</type>
 			<version>1</version>
 			<component>
@@ -1452,6 +1572,20 @@
 					<property>
 						<name>skipFlight</name>
 						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NyOutlineGoComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>objectName</name>
+						<value>FieldKitchen</value>
 					</property>
 				</config>
 			</component>

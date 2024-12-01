@@ -1247,7 +1247,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/ny24_category/ny24_category)
+				$PARAMS(/ny_category/ny_category)
 				<name>newYearOldCollectionRewardUrl</name>
 				<type>url</type>
 			</item>
@@ -2231,18 +2231,8 @@
 				<type>dict</type>
 				<value>
 					<item>
-						$PARAMS(/cosm2024_category/cosm2024_category)
+						$PARAMS(/new_year_2025/new_year_2025)
 						<name>ny_2025_big</name>
-						<type>url</type>
-					</item>
-					<item>
-						$PARAMS(/cosm2024_category/cosm2024_category)
-						<name>ny_2025_small</name>
-						<type>url</type>
-					</item>
-					<item>
-						$PARAMS(/cosm2024_category/cosm2024_category)
-						<name>ny_2025_tanks</name>
 						<type>url</type>
 					</item>
 				</value>

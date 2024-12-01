@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>31.000002</duration>
+	<duration>29.966667</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -108,7 +108,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>29.966669</duration>
+				<duration>27.333334</duration>
 				<value>Interactive_Object_03|root</value>
 			</frame>
 		</track>
@@ -116,8 +116,8 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>29.966669</duration>
+				<startTime>0.033333</startTime>
+				<duration>27.300001</duration>
 				<sequenceSound>hangar_h03_amb_raccoon_stage_3_interactive_object_01_loop</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
@@ -141,9 +141,9 @@
 			<type>sound</type>
 			<frame>
 				<startTime>2.033334</startTime>
-				<duration>26.766668</duration>
+				<duration>26.777208</duration>
 				<sequenceSound>hangar_h03_amb_raccoon_stage_3_interactive_object_01</sequenceSound>
-				<type>one_shot</type>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

@@ -59,8 +59,8 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.533333</startTime>
-				<duration>24.433334</duration>
+				<startTime>0.700000</startTime>
+				<duration>23.400000</duration>
 				<value>Raccoon|Root</value>
 			</frame>
 		</track>
@@ -68,10 +68,10 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.500000</startTime>
-				<duration>24.466667</duration>
+				<startTime>0.700000</startTime>
+				<duration>23.400000</duration>
 				<sequenceSound>hangar_h03_amb_raccoon_stage_1_bed_01</sequenceSound>
-				<type>one_shot</type>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

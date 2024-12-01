@@ -28,11 +28,6 @@
 			<flags>8</flags>
 		</GameObject>
 		<GameObject>
-			<name>Outline</name>
-			<UUID>5dd590c6-77b3-4d2f-85c2-0a8028e9bc0d</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
 			<name>Left</name>
 			<UUID>aac79beb-9556-4d50-a9aa-85d997b110b3</UUID>
 			<flags>0</flags>
@@ -56,11 +51,6 @@
 			<name>Visual</name>
 			<UUID>9be70736-6851-3dd5-8f99-f81c49cadf71</UUID>
 			<flags>8</flags>
-		</GameObject>
-		<GameObject>
-			<name>Outline</name>
-			<UUID>e7aa0f9e-8718-3464-b047-e3a7e329aff4</UUID>
-			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>Visual</name>
@@ -118,7 +108,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>f714e95e-ec98-4084-9708-7d98d0e976a2</link>
+						<link>e7d55032-04bf-43e6-bb10-5edbb4da5634</link>
 					</property>
 				</config>
 			</component>
@@ -128,7 +118,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>e7d55032-04bf-43e6-bb10-5edbb4da5634</link>
+						<link>aac79beb-9556-4d50-a9aa-85d997b110b3</link>
 					</property>
 				</config>
 			</component>
@@ -138,7 +128,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>aac79beb-9556-4d50-a9aa-85d997b110b3</link>
+						<link>aa194b5b-74af-439d-86c6-12cd1dfc1f46</link>
 					</property>
 				</config>
 			</component>
@@ -148,7 +138,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>aa194b5b-74af-439d-86c6-12cd1dfc1f46</link>
+						<link>aac79beb-9556-4d50-a9aa-85d997b110b3</link>
 					</property>
 				</config>
 			</component>
@@ -158,32 +148,12 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>aac79beb-9556-4d50-a9aa-85d997b110b3</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>10</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
 						<link>f714e95e-ec98-4084-9708-7d98d0e976a2</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<objectIndex>11</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>87021c46-4153-42b6-8fc1-56f5f6298979</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>12</objectIndex>
+				<objectIndex>10</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -304,24 +274,6 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
 						<value>
 							-0.0679927 -9.53674e-07 1.97132
 							<!--BW_String-->
@@ -344,7 +296,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -358,6 +310,33 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.328239 4.27494e-08 1.06251
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.999996 1 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							4.67485e-07 -0.754813 1.64622e-07
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -394,33 +373,6 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>
-							-0.328239 4.27494e-08 1.06251
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							0.999996 1 1
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							4.67485e-07 -0.754813 1.64622e-07
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>10</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
 						<value>0 0 0</value>
 					</property>
 					<property>
@@ -434,34 +386,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>11</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-0.328239 4.27494e-08 1.06251
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							0.999996 1 1
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							4.67485e-07 -0.754813 1.64622e-07
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>12</objectIndex>
+				<objectIndex>10</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -515,7 +440,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>8</objectIndex>
+				<objectIndex>7</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -552,7 +477,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -562,7 +487,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>10</objectIndex>
+				<objectIndex>9</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -572,7 +497,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>12</objectIndex>
+				<objectIndex>10</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -583,90 +508,20 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Colliders</type>
-			<version>1</version>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Colliders</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Model name</name>
-												<isAsset>true</isAsset>
-												<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Kiosk_B_2_Outline.model</value>
-											</property>
-											<property>
-												<name>Module name</name>
-												<value>default</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>11</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Colliders</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Model name</name>
-												<isAsset>true</isAsset>
-												<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Kiosk_B_2_Outline.model</value>
-											</property>
-											<property>
-												<name>Module name</name>
-												<value>default</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>9</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Kiosk_B_2_Outline.model</value>
+						<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Kiosk_B_2.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>0</value>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -682,86 +537,6 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>11</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Kiosk_B_2_Outline.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>12</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Kiosk_B_2.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>SelectionComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-			</component>
-			<component>
-				<objectIndex>11</objectIndex>
-				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>HighlightComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>color</name>
-						<value>
-							0.87451 0.623529 0.129412 1
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>groupName</name>
-						<value>FieldKitchen</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>11</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>color</name>
-						<value>
-							0.87451 0.623529 0.129412 1
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>groupName</name>
-						<value>FieldKitchen</value>
 					</property>
 				</config>
 			</component>
@@ -780,7 +555,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>9</objectIndex>
+				<objectIndex>8</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -798,32 +573,8 @@
 				<flags>3</flags>
 			</component>
 			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NyOutlineGoComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>objectName</name>
-						<value>FieldKitchen</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>11</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>objectName</name>
-						<value>FieldKitchen</value>
-					</property>
-				</config>
 			</component>
 		</ComponentPool>
 	</components>

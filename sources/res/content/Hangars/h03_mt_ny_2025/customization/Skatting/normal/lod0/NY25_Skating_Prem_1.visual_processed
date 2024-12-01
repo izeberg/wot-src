@@ -440,6 +440,10 @@
 						srcBlend
 						<Int>2</Int>
 					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
 				</material>
 				<groupOrigin>1.046404 -0.056390 9.504376</groupOrigin>
 			</primitiveGroup>
@@ -477,7 +481,7 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_E_1_blend.dds</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_E_1_blend.png</Texture>
 					</property>
 					<property>
 						colorTex

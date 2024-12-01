@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodelessVisual>content/Hangars/h03_mt_ny_2025/environment/normal/lod2/hd_h30_015_SnowLoose</nodelessVisual>
-	<extent>350.000000</extent>
+	<parent>content/Hangars/h03_mt_ny_2025/environment/normal/lod3/hd_h30_015_SnowLoose</parent>
+	<extent>360.000000</extent>
 </root>

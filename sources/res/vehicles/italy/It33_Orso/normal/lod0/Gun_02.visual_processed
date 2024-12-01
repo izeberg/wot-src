@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 0.000000 0.000000</row3>
+					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
 					<identifier>G</identifier>
@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.074994 3.364012</row3>
+							<row3>0.000000 0.074994 3.093542</row3>
 						</transform>
 					</node>
 					<node>
@@ -67,7 +67,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.999640 -0.026840</row1>
 					<row2>0.000000 0.026840 0.999640</row2>
-					<row3>-0.000000 0.000000 -0.000000</row3>
+					<row3>0.000000 0.000000 -0.000000</row3>
 				</transform>
 				<node>
 					<identifier>static_BlendBone</identifier>
@@ -171,11 +171,6 @@
 		<min>-0.465713 -0.317201 -0.500737</min>
 		<max>0.482353 0.557150 6.589972</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>tank_guns</identifier>
-		</material>
-	</missingBspMaterial>
 	<geometrySize>106920</geometrySize>
 	<minUVDensity>0.027524</minUVDensity>
 </root>

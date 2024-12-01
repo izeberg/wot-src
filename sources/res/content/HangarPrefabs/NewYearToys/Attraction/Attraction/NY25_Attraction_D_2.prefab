@@ -13,11 +13,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Outline</name>
-			<UUID>495722c9-43a4-4218-a8f1-ad168c5f89a2</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
 			<name>appearanceDelayOwner</name>
 			<UUID>1ce2b74f-54df-4624-b818-4d38f4e76ef3</UUID>
 			<flags>0</flags>
@@ -58,7 +53,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>1ce2b74f-54df-4624-b818-4d38f4e76ef3</link>
+						<link>fa8d7b52-e5e4-48e6-b44e-f02fbc1594a3</link>
 					</property>
 				</config>
 			</component>
@@ -74,16 +69,6 @@
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>fa8d7b52-e5e4-48e6-b44e-f02fbc1594a3</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -93,7 +78,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -151,10 +136,7 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>
-							0 -7.26265e-22 0
-							<!--BW_String-->
-						</value>
+						<value>0 0 0</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -162,10 +144,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>
-							-1.06347e-24 0 -2.72637e-23
-							<!--BW_String-->
-						</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -183,30 +162,12 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -230,7 +191,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -258,7 +219,7 @@
 			<type>Particle</type>
 			<version>1</version>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>4</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -285,7 +246,7 @@
 			<type>Animator</type>
 			<version>2</version>
 			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -433,95 +394,10 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Colliders</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Colliders</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Model name</name>
-												<isAsset>true</isAsset>
-												<value>content/Hangars/h03_mt_ny_2025/customization/Attraction/normal/lod0/NY25_Attraction_D_2_Outline.model</value>
-											</property>
-											<property>
-												<name>Module name</name>
-												<value>default</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>DynamicModel</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h03_mt_ny_2025/customization/Attraction/normal/lod0/NY25_Attraction_D_2_Outline.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>SelectionComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>HighlightComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>color</name>
-						<value>
-							0.811765 0.576471 0.14902 1
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>groupName</name>
-						<value>Attractions</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>AppearanceDelayComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -535,22 +411,8 @@
 			<type>HangEffectsOwner</type>
 			<version>1</version>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NyOutlineGoComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>objectName</name>
-						<value>Attractions</value>
-					</property>
-				</config>
 			</component>
 		</ComponentPool>
 	</components>

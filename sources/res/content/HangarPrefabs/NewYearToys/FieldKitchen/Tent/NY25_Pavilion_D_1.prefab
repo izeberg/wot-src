@@ -13,11 +13,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Outline</name>
-			<UUID>dfe8c10e-216f-4cdb-ac4c-a5c7b5d85859</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
 			<name>hangEffect</name>
 			<UUID>51ff5b6e-540e-4032-9db8-4878964711b1</UUID>
 			<flags>8</flags>
@@ -63,7 +58,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>325861c5-92a1-4837-904c-ec6e85462d61</link>
+						<link>c684ada4-6efb-44a2-b9b7-b861069747c6</link>
 					</property>
 				</config>
 			</component>
@@ -73,7 +68,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>c684ada4-6efb-44a2-b9b7-b861069747c6</link>
+						<link>11d36d9c-6833-4d5e-ad3f-6731db1502a8</link>
 					</property>
 				</config>
 			</component>
@@ -89,16 +84,6 @@
 			</component>
 			<component>
 				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>11d36d9c-6833-4d5e-ad3f-6731db1502a8</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -108,7 +93,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -192,7 +177,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -216,24 +201,6 @@
 			</component>
 			<component>
 				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -251,7 +218,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -279,7 +246,7 @@
 			<type>Particle</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -306,7 +273,7 @@
 			<type>Animator</type>
 			<version>2</version>
 			<component>
-				<objectIndex>7</objectIndex>
+				<objectIndex>6</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -400,7 +367,7 @@
 			<type>NyToyInfoComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -411,62 +378,10 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Colliders</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Colliders</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Model name</name>
-												<isAsset>true</isAsset>
-												<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Pavilion_D_1_Outline.model</value>
-											</property>
-											<property>
-												<name>Module name</name>
-												<value>default</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h03_mt_ny_2025/customization/Fair/normal/lod0/NY25_Pavilion_D_1_Outline.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>5</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -482,39 +397,10 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SelectionComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>HighlightComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>color</name>
-						<value>
-							0.870588 0.592157 0.141176 1
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>groupName</name>
-						<value>FieldKitchen</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>AppearanceDelayComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>4</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -528,22 +414,8 @@
 			<type>HangEffectsOwner</type>
 			<version>1</version>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NyOutlineGoComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>objectName</name>
-						<value>FieldKitchen</value>
-					</property>
-				</config>
 			</component>
 		</ComponentPool>
 	</components>

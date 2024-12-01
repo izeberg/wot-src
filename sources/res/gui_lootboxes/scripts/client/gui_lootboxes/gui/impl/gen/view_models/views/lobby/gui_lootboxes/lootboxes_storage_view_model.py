@@ -33,7 +33,7 @@ class LootboxesStorageViewModel(ViewModel):
                  'changeAnimationEnabledSetting', 'showBonusProbabilities', 'hideTriggerHint',
                  'onError', 'showLootBoxInfoPage')
 
-    def __init__(self, properties=9, commands=10):
+    def __init__(self, properties=10, commands=10):
         super(LootboxesStorageViewModel, self).__init__(properties=properties, commands=commands)
 
     def getLootboxes(self):
@@ -98,6 +98,12 @@ class LootboxesStorageViewModel(ViewModel):
     def setIsShowInfoButton(self, value):
         self._setBool(8, value)
 
+    def getIfHasUniqueURL(self):
+        return self._getBool(9)
+
+    def setIfHasUniqueURL(self, value):
+        self._setBool(9, value)
+
     def _initialize(self):
         super(LootboxesStorageViewModel, self)._initialize()
         self._addArrayProperty('lootboxes', Array())
@@ -109,6 +115,7 @@ class LootboxesStorageViewModel(ViewModel):
         self._addNumberProperty('returnPlace')
         self._addBoolProperty('isShowTriggerHint', False)
         self._addBoolProperty('isShowInfoButton', False)
+        self._addBoolProperty('ifHasUniqueURL', True)
         self.openLootBoxes = self._addCommand('openLootBoxes')
         self.onClose = self._addCommand('onClose')
         self.buyBox = self._addCommand('buyBox')

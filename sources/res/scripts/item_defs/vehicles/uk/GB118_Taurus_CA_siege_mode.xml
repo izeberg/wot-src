@@ -10,8 +10,8 @@
 	<postProgressionTree>role_ATSPG_assault</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>33</forward>
-		<backward>20</backward>
+		<forward>30</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -81,15 +81,15 @@
 		<armor>
 			<armor_1>120</armor_1>
 			<armor_2>120</armor_2>
-			<armor_3>57</armor_3>
+			<armor_3>38</armor_3>
 			<armor_4>38</armor_4>
 			<armor_5>18</armor_5>
-			<armor_6>57</armor_6>
+			<armor_6>48</armor_6>
 			<armor_7>38</armor_7>
 			<armor_9>27</armor_9>
 			<armor_10>18</armor_10>
 			<armor_11>38</armor_11>
-			<armor_12>57</armor_12>
+			<armor_12>38</armor_12>
 			<armor_13>120</armor_13>
 			<armor_14>120</armor_14>
 			<armor_15>225</armor_15>
@@ -2165,7 +2165,7 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>36</rotationSpeed>
+			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.08
@@ -3485,7 +3485,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.4
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -3606,7 +3606,7 @@
 			<engines>
 				<Rolls_Royce_RC3_137>
 					<smplEnginePower>460</smplEnginePower>
-					<smplFwMaxSpeed>33</smplFwMaxSpeed>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Rolls_Royce_RC3_137>
 			</engines>
 			<chassis>

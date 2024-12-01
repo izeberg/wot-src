@@ -21,7 +21,7 @@
 				<material>
 					<identifier>s_nd5</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>110</materialKind>
 					<property>
 						diffuseMap
@@ -147,7 +147,7 @@
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						albedoHeightTile0
@@ -259,7 +259,7 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_B_2_blend .png</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_B_2_blend.png</Texture>
 					</property>
 					<property>
 						colorTex

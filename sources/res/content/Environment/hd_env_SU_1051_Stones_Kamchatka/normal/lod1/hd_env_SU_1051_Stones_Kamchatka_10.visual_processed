@@ -105,10 +105,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-5.502753 -0.500000 -5.893921</min>
+		<min>-5.502753 0.000000 -5.893921</min>
 		<max>5.243372 10.511065 5.827343</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>30438</geometrySize>
+	<geometrySize>30318</geometrySize>
 	<minUVDensity>0.001262</minUVDensity>
 </root>

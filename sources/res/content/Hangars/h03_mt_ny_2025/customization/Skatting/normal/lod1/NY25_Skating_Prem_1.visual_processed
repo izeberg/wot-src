@@ -199,7 +199,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
-						<Int>25</Int>
+						<Int>55</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -223,11 +223,15 @@
 					</property>
 					<property>
 						srcBlend
-						<Int>3</Int>
+						<Int>2</Int>
 					</property>
 					<property>
 						depthAccess
 						<Int>3</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>7</Int>
 					</property>
 				</material>
 				<groupOrigin>0.615033 2.036211 5.071117</groupOrigin>
@@ -456,6 +460,10 @@
 						srcBlend
 						<Int>2</Int>
 					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
 				</material>
 				<groupOrigin>0.956093 -0.056390 9.547477</groupOrigin>
 			</primitiveGroup>
@@ -493,7 +501,7 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_E_1_blend.dds</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_E_1_blend.png</Texture>
 					</property>
 					<property>
 						colorTex

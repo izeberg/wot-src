@@ -460,8 +460,7 @@ msgid "bonusPercentage"
 msgstr "%(operand) %(value)%"
 
 msgid "boxWithToys/tooltip/description"
-msgstr ""
-"Дополняет внешний вид объекта при установке в соответствующий слот фотозоны."
+msgstr "Дополняет внешний вид объекта при установке в соответствующий слот."
 
 msgid "boxWithToys/tooltip/rewards"
 msgstr "Новогоднее украшение"
@@ -1196,6 +1195,30 @@ msgid "craftView/purchaseForm/rule_2"
 msgstr ""
 "Получить жетоны в качестве награды можно за выполнение праздничных задач."
 
+msgid "craftView/rewardList/WT/name"
+msgstr "WT auf E100"
+
+msgid "craftView/rewardList/header"
+msgstr "Испытайте удачу!"
+
+msgid "craftView/rewardList/otherRewards"
+msgstr "Прочие награды"
+
+msgid "craftView/rewardList/reward_1"
+msgstr "Золото и кредиты"
+
+msgid "craftView/rewardList/reward_2"
+msgstr "Премиум аккаунт"
+
+msgid "craftView/rewardList/reward_3"
+msgstr "Новогодние стили, декали, надписи"
+
+msgid "craftView/rewardList/reward_4"
+msgstr "Личные резервы и т.д."
+
+msgid "craftView/rewardList/valuableRewards"
+msgstr "Ценные награды"
+
 msgid "craftView/rewards/title"
 msgstr "за новое украшение"
 
@@ -1248,7 +1271,7 @@ msgid "currencyPanel/tooltip/description2/ny25Token"
 msgstr "Используются для запуска автомата удачи."
 
 msgid "currencyPanel/tooltip/description2/ny25_mandarin"
-msgstr "Используются для повышения уровня всех фотозон в праздничном городке."
+msgstr "Используются для повышения уровня объектов в праздничном городке."
 
 msgid "currencyPanel/tooltip/hint/gold"
 msgstr "Нажмите, чтобы перейти на страницу покупки золота."
@@ -1271,6 +1294,9 @@ msgstr "Отменить"
 msgid "customizationLevelUpView/confirm"
 msgstr "Повысить"
 
+msgid "customizationLevelUpView/counterSubtitle"
+msgstr "Очки атмосферы"
+
 msgid "customizationLevelUpView/customizationZone/Attractions"
 msgstr "аттракциона"
 
@@ -1291,7 +1317,7 @@ msgstr "катка"
 
 msgid "customizationLevelUpView/description"
 msgstr ""
-"За повышение уровня фотозоны начисляется %(count)s ед. очков атмосферы "
+"За повышение уровня объекта начисляется %(count)s ед. очков атмосферы "
 "праздника."
 
 msgid "customizationLevelUpView/info"
@@ -1404,7 +1430,7 @@ msgid "customizationZones/tooltip/Skating/header"
 msgstr "Каток"
 
 msgid "customizationZones/tooltip/back"
-msgstr "Перейти к предыдущей фотозоне."
+msgstr "Перейти к предыдущему объекту."
 
 msgid "customizationZones/tooltip/cost"
 msgstr "Стоимость повышения"
@@ -1431,7 +1457,7 @@ msgid "customizationZones/tooltip/maxLevel/header"
 msgstr "Уровень %(maxLevel)s. Максимальный"
 
 msgid "customizationZones/tooltip/next"
-msgstr "Перейти к следующей фотозоне."
+msgstr "Перейти к следующему объекту."
 
 msgid "customizationZones/tooltip/zeroLevel/header"
 msgstr "Уровень не получен"
@@ -1487,8 +1513,7 @@ msgstr "Редкое украшение"
 
 msgid "decoration/tooltip/slot"
 msgstr ""
-"В этот слот фотозоны можно установить только украшения "
-"типа %(decorationType)s."
+"В этот слот можно установить только украшения типа %(decorationType)s."
 
 msgid "decoration/tooltip/unlocked"
 msgstr "Разблокировано"
@@ -1851,9 +1876,9 @@ msgstr "Также получено:"
 
 msgid "levelUpView/banner/text"
 msgstr ""
-"Получайте новые уровни атмосферы праздника, улучшая фотозоны за мандарины. "
-"Мандарины можно достать из праздничных контейнеров, получаемых за выполнение"
-" специальных задач."
+"Получайте новые уровни атмосферы праздника, улучшая за мандарины объекты на "
+"площади. Мандарины можно достать из праздничных контейнеров, получаемых за "
+"выполнение специальных задач."
 
 msgid "levelUpView/banner/title"
 msgstr "ЕЩЕ БОЛЬШЕ НАГРАД"
@@ -2136,7 +2161,7 @@ msgid "lootBoxMultiOpen/header/subTitle"
 msgstr "Имущество, полученное из %(openBoxes)s коробок"
 
 msgid "lootBoxMultiOpen/header/title"
-msgstr "ВОТ, ЧТО ВНУТРИ:"
+msgstr "ВОТ ЧТО ВНУТРИ:"
 
 msgid "lootBoxMultiOpen/openButton"
 msgstr "Открыть еще %(count)s"
@@ -2157,7 +2182,7 @@ msgid "lootBoxPremiumMultiOpen/header/subTitle"
 msgstr "Имущество, полученное из %(typeBoxes)s (открыто %(count)s шт.)"
 
 msgid "lootBoxPremiumMultiOpen/header/title"
-msgstr "ВОТ, ЧТО ВНУТРИ:"
+msgstr "ВОТ ЧТО ВНУТРИ:"
 
 msgid "lootBoxPremiumMultiOpen/header/typeBoxes"
 msgstr "%(typeName)s"
@@ -2716,7 +2741,7 @@ msgstr "сек"
 
 msgid "newYearInfoView/video/description"
 msgstr ""
-"Отмечаем праздники с 11.12.2024 по 22.01.2025! В уходящем году произошло немало\n"
+"Отмечаем праздники с %(startDate)s по %(endDate)s! В уходящем году произошло немало\n"
 "изменений, и о них вы узнаете из предлагаемого видео и страниц нашего руководства."
 
 msgid "notification/celebrityReward/toExtraSlot/button"
@@ -3249,7 +3274,7 @@ msgstr "Награды уровня получены"
 
 msgid "rewardsView/tooltip/nextLevel/body"
 msgstr ""
-"Улучшайте фотозоны, чтобы повысить уровень атмосферы праздника и "
+"Улучшайте объекты на площади, чтобы повысить уровень атмосферы праздника и "
 "разблокировать награды."
 
 msgid "rewardsView/tooltip/nextLevel/header"
@@ -3743,7 +3768,7 @@ msgid "widget/menu/surprise_machine/title"
 msgstr "АВТОМАТ"
 
 msgid "widget/menu/tooltip/city/description"
-msgstr "Увеличивайте уровень фотозон и получайте ценные награды."
+msgstr "Увеличивайте уровень объектов и получайте ценные награды."
 
 msgid "widget/menu/tooltip/city/header"
 msgstr "Центральная площадь"
@@ -3799,7 +3824,7 @@ msgid "widgetTooltip/condition1"
 msgstr "Повышайте уровень атмосферы праздника, чтобы получать ценные награды."
 
 msgid "widgetTooltip/condition2"
-msgstr "Уровень атмосферы растёт, когда вы улучшаете фотозоны."
+msgstr "Уровень атмосферы растёт, когда вы улучшаете объекты на площади."
 
 msgid "widgetTooltip/currentLevel"
 msgstr "Текущий уровень"

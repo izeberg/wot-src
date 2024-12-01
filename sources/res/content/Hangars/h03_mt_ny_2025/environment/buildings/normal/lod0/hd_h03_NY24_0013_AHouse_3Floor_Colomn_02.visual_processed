@@ -55,7 +55,7 @@
 				<groupOrigin>-4.259869 9.710805 13.503078</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>s_nd3</identifier>
 					<fx>shaders/custom/interior_mapping.fx</fx>
@@ -85,7 +85,7 @@
 				<groupOrigin>-4.402329 7.680160 13.286400</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				2
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -105,7 +105,7 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/NY24_blend.dds</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/NY24_blend.png</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -139,7 +139,7 @@
 				<groupOrigin>-5.001735 11.121835 13.881172</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				3
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -159,7 +159,7 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/NY24_blend.dds</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/NY24_blend.png</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -201,7 +201,7 @@
 				<groupOrigin>-5.023114 10.604297 13.869476</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				5
+				4
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -221,7 +221,7 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/NY24_blend.dds</Texture>
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/NY24_blend.png</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -281,6 +281,6 @@
 		<max>29.540983 21.408237 35.023018</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>340296</geometrySize>
-	<minUVDensity>0.000132</minUVDensity>
+	<geometrySize>329396</geometrySize>
+	<minUVDensity>0.003089</minUVDensity>
 </root>

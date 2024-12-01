@@ -238,6 +238,12 @@ class INewYearSurpriseMachine(IGameController):
 class INewYearRaccoonController(IGameController):
     onViewExit = None
 
+    def isFade(self):
+        raise NotImplementedError
+
+    def replaceCallback(self, callback):
+        raise NotImplementedError
+
     def showFade(self, callback=None):
         raise NotImplementedError
 

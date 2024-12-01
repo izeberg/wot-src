@@ -34,7 +34,7 @@ class NewYearLootBoxRewards(object):
     NY_25_TANKS = 'ny_2025_tanks'
     LEGENDARY_TANKS = ('G36_PzII_J', 'R50_SU76I', 'F69_AMX13_57_100G48_E')
     REWARDS = {MAIN_TANK: 'tank_main', 
-       NY_25_TANKS: 'lootbox_legendary'}
+       NY_25_TANKS: 'legendary'}
     LEGENDARY_REWARDS = {vehicleName:'tank_legendary' for vehicleName in LEGENDARY_TANKS}
     ALL = {}
     for rewards in (REWARDS, LEGENDARY_REWARDS):
