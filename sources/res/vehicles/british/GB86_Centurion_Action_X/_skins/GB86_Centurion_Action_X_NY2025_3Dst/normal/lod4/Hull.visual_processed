@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.013832 -2.086370</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.404073 -0.265788 2.476625</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.920099 0.391686</row1>
+					<row2>0.000000 -0.391686 0.920099</row2>
+					<row3>-1.323159 0.157873 3.721596</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.902170 -0.431380</row1>
+					<row2>-0.000000 -0.431380 -0.902170</row2>
+					<row3>-1.323159 0.052078 -2.972169</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.920099 0.391686</row1>
+					<row2>0.000000 -0.391686 0.920099</row2>
+					<row3>1.323159 0.157873 3.721596</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.902170 -0.431380</row1>
+					<row2>-0.000000 -0.431380 -0.902170</row2>
+					<row3>1.323159 0.052078 -2.972169</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 -0.000121 0.000070</row0>
+					<row1>-0.000121 -0.495735 0.868474</row1>
+					<row2>-0.000070 -0.868474 -0.495735</row2>
+					<row3>-1.144875 0.384470 -2.959453</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 -0.000121 0.000070</row0>
+					<row1>-0.000121 -0.495735 0.868474</row1>
+					<row2>-0.000070 -0.868474 -0.495735</row2>
+					<row3>1.158995 0.380697 -2.965276</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.556372 0.741719</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/Centurion_Action_X_NY2025_3Dst_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/Centurion_Action_X_NY2025_3Dst_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/Centurion_Action_X_NY2025_3Dst_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/Centurion_Action_X_NY2025_3Dst_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.038737 0.344650</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.682451 -0.655860 -3.685679</min>
+		<max>1.682451 0.733334 4.374979</max>
+	</boundingBox>
+	<geometrySize>3364</geometrySize>
+	<minUVDensity>0.004495</minUVDensity>
+</root>

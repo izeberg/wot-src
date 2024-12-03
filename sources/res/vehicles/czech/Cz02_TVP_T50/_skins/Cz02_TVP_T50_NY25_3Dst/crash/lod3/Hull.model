@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.840066 -1.079492 -4.089346</min>
+		<max>1.810252 0.809417 4.422117</max>
+	</visibilityBox>
+</root>

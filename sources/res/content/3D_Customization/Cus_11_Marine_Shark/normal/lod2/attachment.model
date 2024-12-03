@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_11_Marine_Shark/normal/lod2/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_11_Marine_Shark/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.736144 -0.000412 -1.234878</min>
+		<max>0.268436 0.718800 0.906892</max>
+	</visibilityBox>
+</root>

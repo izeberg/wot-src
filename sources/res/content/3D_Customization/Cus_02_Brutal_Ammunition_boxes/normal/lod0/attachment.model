@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_02_Brutal_Ammunition_boxes/normal/lod0/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_02_Brutal_Ammunition_boxes/normal/lod1/attachment</parent>
+	<visibilityBox>
+		<min>-0.459500 -0.019983 -0.883650</min>
+		<max>0.199731 0.565662 0.871739</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

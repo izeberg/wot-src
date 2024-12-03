@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>14.700000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>14.666667</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h38_newyear_2025/animations/Cat/NY25_Cat_Eating01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>14.666667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.316839 -0.743250 0.327715</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -60.000000 0.000000</value>
+				<inTangent>0.000000 16.348000 0.000000</inTangent>
+				<outTangent>0.000000 16.348000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Bowl</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear_2023/normal/lod0/NY2023_Cat_Bowl_anim.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.037792 0.000000 0.140947</value>
+				<inTangent>0.001378 0.000000 -0.002385</inTangent>
+				<outTangent>0.001378 0.000000 -0.002385</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound_cat_eating</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>9.400001</startTime>
+				<duration>1.000000</duration>
+				<value>Root|Head_M</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound_cat_meow</name>
+			<type>sound</type>
+			<frame>
+				<startTime>9.400001</startTime>
+				<duration>0.966666</duration>
+				<sequenceSound>hangar_newyear_cat_meow</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound_cat_eating01</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>2.066667</startTime>
+				<duration>5.700000</duration>
+				<value>Root|Head_M</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound_cat_eating</name>
+			<type>sound</type>
+			<frame>
+				<startTime>2.100000</startTime>
+				<duration>5.666667</duration>
+				<sequenceSound>hangar_newyear_cat_eating_start</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>content/Hangars/h_newyear/perscustomization/normal/lod0/h30_NY25_Fish_Cat_01.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>0.066667</duration>
+				<resourceID>content/Hangars/h_newyear/perscustomization/animation/h30_NY25_Fish_Cat_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>6.666667</clipEndTime>
+			</frame>
+			<frame>
+				<startTime>1.866667</startTime>
+				<duration>6.666667</duration>
+				<resourceID>content/Hangars/h_newyear/perscustomization/animation/h30_NY25_Fish_Cat_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>6.666667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.004538 0.001127 0.001836</inTangent>
+				<outTangent>-0.004538 0.001127 0.001836</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

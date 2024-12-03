@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>60.066666</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>CTRL_rot</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 360.000000 0.000000</inTangent>
+				<outTangent>0.000000 59.999996 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>0.000000 3600.000000 0.000000</value>
+				<inTangent>-0.000000 59.999996 -0.000000</inTangent>
+				<outTangent>-0.000000 360.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_01</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_01.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.823959 -1.999689 -3.096855</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>2.823959 -1.999689 -3.096855</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-2.381115 7.875309 0.869722</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>2.188995 0.100394 -2.864929</value>
+				<inTangent>-2.381115 7.875309 0.869722</inTangent>
+				<outTangent>0.000000 -1.865191 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>2.188995 -0.023952 -2.864929</value>
+				<inTangent>-0.000000 -1.865181 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>2.188995 -0.023952 -2.864929</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 1.865165 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000002 20.065174 18.888231</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_02</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.208115 -1.618976 5.792130</value>
+				<inTangent>-0.431900 6.570242 -3.555851</inTangent>
+				<outTangent>-0.431900 6.570242 -3.555851</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>0.092941 0.133089 4.843903</value>
+				<inTangent>-0.431900 6.570242 -3.555851</inTangent>
+				<outTangent>0.180356 -2.743996 1.484993</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.104965 -0.049844 4.942902</value>
+				<inTangent>0.180362 -2.744024 1.485001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>0.104965 -0.049844 4.942902</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.180360 2.743998 -1.484987</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-28.260412 16.524302 -4.577724</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.750000 1.750000 1.750000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_03</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_03.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.665543 -1.715135 3.564850</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>3.665543 -1.715135 3.564850</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-3.530445 6.392922 -3.161633</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>2.724091 -0.010356 2.721748</value>
+				<inTangent>-3.530441 6.392913 -3.161628</inTangent>
+				<outTangent>1.345603 -2.436804 1.205200</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>2.813797 -0.172808 2.802094</value>
+				<inTangent>1.345603 -2.436804 1.205200</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>2.813797 -0.172808 2.802094</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-1.345590 2.436783 -1.205189</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>16.941435 -66.107155 32.883301</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_04</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.974106 -1.836123 3.797295</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>-2.974106 -1.836123 3.797295</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>2.629110 6.846813 -2.246164</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>-2.273010 -0.010306 3.198318</value>
+				<inTangent>2.629110 6.846813 -2.246164</inTangent>
+				<outTangent>-1.005031 -2.617050 0.858539</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>-2.340012 -0.184776 3.255554</value>
+				<inTangent>-1.005026 -2.617036 0.858535</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>-2.340012 -0.184776 3.255554</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.670024 1.744710 -0.572363</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>5.262934 210.000000 26.311447</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_05</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_05.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.259537 -0.655033 3.815460</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.259537 -0.655033 3.815460</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 2.936467 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>1.259537 0.128025 3.815460</value>
+				<inTangent>-0.000000 2.936467 -0.000000</inTangent>
+				<outTangent>0.000000 -1.920375 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>1.259537 0.000000 3.815460</value>
+				<inTangent>-0.000000 -1.920367 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.259537 0.000000 3.815460</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 1.920377 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 197.515701 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_06</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.484467 -0.910846 0.171059</value>
+				<inTangent>-0.671425 3.431933 0.035076</inTangent>
+				<outTangent>-0.671425 3.431933 0.035076</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>2.305420 0.004336 0.180412</value>
+				<inTangent>-0.671426 3.431928 0.035074</inTangent>
+				<outTangent>0.479512 -2.450260 -0.025065</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>2.337387 -0.159013 0.178741</value>
+				<inTangent>0.479512 -2.450260 -0.025065</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>2.337390 -0.159013 0.178741</value>
+				<inTangent>0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000043 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>8.702673 -125.623985 -6.890602</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_06.1</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.105606 -0.735076 3.683670</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>-1.105606 -0.735076 3.683670</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.067519 3.481504 0.804720</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>-1.123611 0.193325 3.898262</value>
+				<inTangent>-0.067519 3.481504 0.804720</inTangent>
+				<outTangent>0.022200 -1.153065 -0.266536</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>-1.122131 0.116454 3.880493</value>
+				<inTangent>0.022200 -1.153076 -0.266539</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>-1.122131 0.116454 3.880493</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.014800 0.768707 0.177690</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>13.058710 -4.798778 -0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_03.1</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_03.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-3.586670 -1.708260 -3.497475</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>-3.586670 -1.708260 -3.497475</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>3.155880 5.670776 2.777253</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>-2.745102 -0.196053 -2.756874</value>
+				<inTangent>3.155876 5.670769 2.777250</inTangent>
+				<outTangent>-0.800408 -1.438289 -0.704391</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>-2.798462 -0.291938 -2.803833</value>
+				<inTangent>-0.800408 -1.438289 -0.704391</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>-2.798462 -0.291938 -2.803833</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.800401 1.438277 0.704385</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>16.941450 114.389374 32.883476</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_02.1</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-3.203232 -1.386437 0.558472</value>
+				<inTangent>3.203822 6.039750 -0.760378</inTangent>
+				<outTangent>3.203822 6.039750 -0.760378</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>-2.455673 0.022838 0.381050</value>
+				<inTangent>3.203822 6.039750 -0.760378</inTangent>
+				<outTangent>-0.946958 -1.785087 0.224689</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>-2.550369 -0.155671 0.403519</value>
+				<inTangent>-0.946961 -1.785090 0.224690</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>-2.550369 -0.155671 0.403519</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.946957 1.785083 -0.224689</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-28.260490 -67.050179 -4.577713</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_06.2</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_06.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.098526 -1.004201 -3.936516</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.098526 -1.004201 -3.936516</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.176411 3.662659 0.695516</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.145569 -0.027492 -3.751045</value>
+				<inTangent>0.176411 3.662659 0.695516</inTangent>
+				<outTangent>-0.132989 -2.758320 -0.523800</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>1.136703 -0.211380 -3.785965</value>
+				<inTangent>-0.132989 -2.758306 -0.523797</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.136703 -0.211380 -3.785965</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.132989 2.758323 0.523800</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>8.702678 -24.387100 -6.890619</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_icicle_03.2</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_189_VFXIcons/normal/lod0/hd_env_UNI_189_VFXIcons_Icicle_03.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.023209 -1.876816 -5.858864</value>
+				<inTangent>0.977898 6.337230 4.993200</inTangent>
+				<outTangent>0.977898 6.337230 4.993200</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>-0.762436 -0.186888 -4.527344</value>
+				<inTangent>0.977898 6.337230 4.993200</inTangent>
+				<outTangent>-0.565336 -3.663079 -2.886200</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>-0.800125 -0.431093 -4.719757</value>
+				<inTangent>-0.565341 -3.663113 -2.886223</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>-0.800125 -0.431093 -4.719757</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.130688 7.326262 5.772474</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-14.106875 262.839996 -36.484489</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pfx_snow</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/226_gift_attack_paper_snow_fall_02.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.066667</startTime>
+				<duration>60.000000</duration>
+				<value>CTRL_rot|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 -720.000000 0.000000</inTangent>
+				<outTangent>0.000000 -720.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000 -720.000000 0.000000</value>
+				<inTangent>-0.000000 -720.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -720.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.330000</inTangent>
+				<outTangent>0.330000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.330000</value>
+				<inTangent>0.330000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>0.330000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.330000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>tintColor</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.466667 0.666667 0.694118 0.700000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emissionSize</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -5.000000 -4.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000</value>
+				<inTangent>-0.100000</inTangent>
+				<outTangent>-0.100000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.330000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

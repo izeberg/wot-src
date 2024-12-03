@@ -222,6 +222,9 @@ msgid ""
 "archetype/modernizedExtraHealthReserveAntifragmentationLining/name/noTemplate"
 msgstr "Survival Improvement Suite"
 
+msgid "archetype/modernizedImprovedSightsEnhancedAimDrives/name/noTemplate"
+msgstr "Accuracy Improvement System"
+
 msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
 msgstr "Mobility Improvement System"
 
@@ -1557,8 +1560,8 @@ msgstr "Reduces gun dispersion"
 
 msgid "improvedSightsBattleBooster/descr"
 msgstr ""
-"%s to the aiming circle size with Improved Aiming (any class) or Bounty "
-"Aiming mounted."
+"%s to the aiming circle size with Improved Aiming (any class), Bounty "
+"Aiming, or Accuracy Improvement System mounted."
 
 msgid "improvedSightsBattleBooster/gain/deluxe"
 msgstr "–2%"
@@ -1804,6 +1807,33 @@ msgstr "Survival Improvement Suite T3"
 
 msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
 msgstr "Survival Improvement Suite T3"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives1/long_special"
+msgstr "Accuracy Improvement System T1"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives1/name"
+msgstr "Accuracy Improvement System T1"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives1/short_special"
+msgstr "Accuracy Improvement System T1"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives2/long_special"
+msgstr "Accuracy Improvement System T2"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives2/name"
+msgstr "Accuracy Improvement System T2"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives2/short_special"
+msgstr "Accuracy Improvement System T2"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives3/long_special"
+msgstr "Accuracy Improvement System T3"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives3/name"
+msgstr "Accuracy Improvement System T3"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives3/short_special"
+msgstr "Accuracy Improvement System T3"
 
 msgid "modernizedTurbochargerRotationMechanism1/long_special"
 msgstr "Mobility Improvement System T1"

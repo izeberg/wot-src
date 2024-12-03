@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod3/Chassis</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.539685 0.003958 -2.945135</min>
+		<max>1.539669 1.393600 3.142356</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/normal/lod4/Chassis</parent>
+	<extent>192</extent>
+	<nodefullVisual>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.569899 0.020741 -3.388024</min>
+		<max>1.569899 1.327182 3.352980</max>
+	</visibilityBox>
+</root>

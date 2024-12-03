@@ -54,6 +54,38 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/grinch_atlas.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/grinch_atlas.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -106,6 +138,23 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/grinch_hit_paper_small_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac_end.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_turret.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/grinch_trace_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/226_gift_attack_paper_health_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/226_gift_attack_paper_snow_fall_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/A83_T110E4_Dl_22_3Dst/A83_T110E4_Dl_22_3Dst_brazier.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/GB133_Charioteer_MkVII_HBP_3DSt/GB133_Charioteer_MkVII_HBP_3DSt_smoke.eff</fn_effect_bin>
@@ -116,6 +165,10 @@
 		<fn_effect_bin>particles/tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A155_AAT60_ST_3DSt/engine_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start_horn.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/s31_strv_k/soul_shimmer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/s31_strv_k/holy_settling.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/s31_strv_k/holy_settling2.vfx</fn_effect_bin>
@@ -152,6 +205,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/A155_AAT60_ST_3DSt/engine_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start_horn.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_ground_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/gw_50mb_sand.vfx</fn_effect_bin>
@@ -168,6 +225,25 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/shot_50mb_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/auto_shoot/hits/grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/auto_shoot/shots/grinch_shot_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/auto_shoot/shots/grinch_shot_ac_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/auto_shoot/shots/grinch_shot_ac_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/destruction/grinch_destruction_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/destruction/grinch_destruction_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/destruction/grinch_destruction_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/destruction/grinch_destruction_turret.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/destruction/quality_set_0_grinch_destruction_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/shots/grinch_shot_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/shots/grinch_shot_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/tank/shots/grinch_shot_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/shells_eff/grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/shells_eff/grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/shells_eff/grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/shells_eff/grinch_trace_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/226_gift_attack_paper_health_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/226_gift_attack_paper_snow_fall_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_hull_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.eff</fn_effect_bin>
@@ -190,6 +266,26 @@
 		<preloadVisual>particles/mesh_particles/scale_golden_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/mushroom_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/rush.visual</preloadVisual>
+		<fn_effect_bin>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke_post.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_14_Asia_Dragon_Weapon/FireWorkFountain.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/PillarsOfFire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitar.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitarBlue.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3d_customization/cus_04_brutal_machine_gun/shot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke_post.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_14_Asia_Dragon_Weapon/FireWorkFountain.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/PillarsOfFire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitar.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitarBlue.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_04_Brutal_Machine_Gun/shot.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -1347,6 +1443,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/movement/water/trail_small_front.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/movement/water/wheeltrail_water_medium_spd1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/parts_smoke_white_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/fep_ny_shot_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/fep_ny_shot_main.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/groundwave_dualgun_large_dirt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/groundwave_dualgun_large_dirt_mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/groundwave_dualgun_large_ground.vfx</fn_effect_bin>
@@ -2522,6 +2620,8 @@
 		<fn_effect_bin>particles/Tank/movement/water/trail_small_underwater_spdBack.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/movement/water/wheeltrail_underwater_medium_spd1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/movement/water/wheeltrail_water_medium_spd1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_main.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/groundwave_dualgun_large_dirt.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/groundwave_dualgun_large_dirt_mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/groundwave_dualgun_large_ground.eff</fn_effect_bin>
@@ -2712,6 +2812,38 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/grinch_atlas.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/grinch_atlas.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -2767,6 +2899,23 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/grinch_hit_paper_small_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac_end.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_turret.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/grinch_trace_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/226_gift_attack_paper_health_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/226_gift_attack_paper_snow_fall_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/A83_T110E4_Dl_22_3Dst/A83_T110E4_Dl_22_3Dst_brazier.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/GB133_Charioteer_MkVII_HBP_3DSt/GB133_Charioteer_MkVII_HBP_3DSt_smoke.eff</fn_effect_bin>
@@ -2777,6 +2926,10 @@
 		<fn_effect_bin>particles/tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A155_AAT60_ST_3DSt/engine_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start_horn.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/s31_strv_k/soul_shimmer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/s31_strv_k/holy_settling.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/s31_strv_k/holy_settling2.vfx</fn_effect_bin>
@@ -2819,6 +2972,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A140_ASTRON_REX_105mm_SPD_3DSt/a140_steam_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A155_AAT60_ST_3DSt/engine_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/cz02_steam_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Cz02_TVP_T50_NY25_3Dst/steam_start_horn.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_ground_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50mb_sand.vfx</fn_effect_bin>
@@ -2837,6 +2994,40 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/hits/grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/shots/grinch_shot_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/shots/grinch_shot_ac_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/shots/grinch_shot_ac_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_turret.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/shots/grinch_shot_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/shots/grinch_shot_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/shots/grinch_shot_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/shells_eff/grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/shells_eff/grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/shells_eff/grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/grinch_shot_large_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/grinch_trace_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/forcefieldHit_grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_turret.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/grinch_shot_ac_start_ForceField_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/grinch_shot_medium_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/quality_set_0_grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/forcefieldHit_grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/grinch_shot_ac_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/grinch_shot_small_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/forcefieldHit_grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/forcefieldHit_grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/226_gift_attack_paper_health_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/226_gift_attack_paper_snow_fall_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_hull_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.eff</fn_effect_bin>
@@ -2855,10 +3046,35 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_smoke_jade.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/end_fire_jade.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_fire_jade.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/ra_paper_in.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/ra_paper_loop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/rocket_accelerator/ra_paper_in.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/rocket_accelerator/ra_paper_loop.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/scale_golden_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/scale_golden_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/mushroom_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/rush.visual</preloadVisual>
+		<fn_effect_bin>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke_post.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_14_Asia_Dragon_Weapon/FireWorkFountain.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/PillarsOfFire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitar.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitarBlue.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3d_customization/cus_04_brutal_machine_gun/shot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_steam_smoke_post.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_14_Asia_Dragon_Weapon/FireWorkFountain.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_21_Rock_Stage_Fire_Generator/PillarsOfFire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitar.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitarBlue.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_04_Brutal_Machine_Gun/shot.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_04_Brutal_Machine_Gun/shot_ForceField.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -4141,6 +4357,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/movement/water/wheeltrail_underwater_medium_spd1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/movement/water/wheeltrail_water_medium_spd1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/parts_smoke_white_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fep_ny_shot_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fep_ny_shot_main.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/groundwave_dualgun_large_dirt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/groundwave_dualgun_large_dirt_mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/groundwave_dualgun_large_ground.vfx</fn_effect_bin>
@@ -5323,6 +5541,8 @@
 		<fn_effect_bin>particles/Tank/movement/water/trail_small_underwater_spdBack.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/movement/water/wheeltrail_underwater_medium_spd1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/movement/water/wheeltrail_water_medium_spd1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_main.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/groundwave_dualgun_large_dirt.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/groundwave_dualgun_large_dirt_mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/groundwave_dualgun_large_ground.eff</fn_effect_bin>

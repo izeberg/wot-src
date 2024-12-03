@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_lines</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/SpriteLight01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.858000 -1.745000</value>
+				<inTangent>-0.000639 -0.002194 -0.000002</inTangent>
+				<outTangent>-0.000639 -0.002194 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>tank_guns</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.153847</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.153847</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_circle</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/GunLightCircle.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.002594 0.133095 5.485352</value>
+				<inTangent>-0.000639 -0.002194 -0.000002</inTangent>
+				<outTangent>-0.000639 -0.002194 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.624900 -1.064878 -2.849243</min>
+		<max>1.575457 0.799983 3.195532</max>
+	</visibilityBox>
+</root>

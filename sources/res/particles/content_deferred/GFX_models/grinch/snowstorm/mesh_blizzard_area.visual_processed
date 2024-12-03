@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert2</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaFadeAmountSoft
+						<Vector4>1.000000 1.000000 0.010000 0.010000</Vector4>
+					</property>
+					<property>
+						attachToTerrain
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.100000 0.200000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/waterfall_IGR_dist.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						gradientMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Gradient_transparentEdge_02.dds</Texture>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						opacity_UV_Distortion_Amount
+						<Vector4>0.000000 0.000000 0.100000 0.100000</Vector4>
+					</property>
+					<property>
+						opacity_UV_Speed_Scale
+						<Vector4>0.000000 0.100000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/t_air_supp_mask.dds</Texture>
+					</property>
+					<property>
+						overTerrainHeight
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						rampFreshnelMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Gradient_transparentEdge.dds</Texture>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>0.435294 0.152941 0.105882</Vector3>
+					</property>
+				</material>
+				<groupOrigin>-0.047216 0.443476 0.028481</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-37.547215 0.023248 -37.471519</min>
+		<max>37.452782 0.863705 37.528481</max>
+	</boundingBox>
+	<geometrySize>67800</geometrySize>
+	<minUVDensity>0.020628</minUVDensity>
+</root>

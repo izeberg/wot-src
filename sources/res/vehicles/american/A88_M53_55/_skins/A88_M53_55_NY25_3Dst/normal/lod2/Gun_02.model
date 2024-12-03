@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod2/Gun_02</nodefullVisual>
+	<parent>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.516155 -0.483589 -0.096608</min>
+		<max>0.457751 0.794315 4.455685</max>
+	</visibilityBox>
+</root>

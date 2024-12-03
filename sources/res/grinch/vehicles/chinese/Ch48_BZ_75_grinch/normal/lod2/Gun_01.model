@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>grinch/vehicles/chinese/Ch48_BZ_75_grinch/normal/lod2/Gun_01</nodefullVisual>
+	<parent>grinch/vehicles/chinese/Ch48_BZ_75_grinch/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.329999 -0.270183 0.091127</min>
+		<max>0.329999 0.645307 5.905430</max>
+	</visibilityBox>
+</root>

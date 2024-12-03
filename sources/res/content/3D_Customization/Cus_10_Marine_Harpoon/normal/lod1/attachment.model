@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_10_Marine_Harpoon/normal/lod1/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_10_Marine_Harpoon/normal/lod2/attachment</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.165354 -0.200000 -0.858656</min>
+		<max>0.165353 0.941197 1.202124</max>
+	</visibilityBox>
+</root>

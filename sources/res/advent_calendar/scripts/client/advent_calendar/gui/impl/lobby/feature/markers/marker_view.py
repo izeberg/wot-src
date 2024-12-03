@@ -46,7 +46,7 @@ class AdventCalendarMarkerView(BaseHangarMarkerView):
     def __updateMarker(self, *args, **kwargs):
         doorsToOpenAmount = self.__getAvailableDoorsToOpenAmount()
         with self.viewModel.transaction() as (model):
-            model.setIsVisible(doorsToOpenAmount and self.__adventController.isAvailable())
+            model.setIsVisible(doorsToOpenAmount and self.__adventController.isAvailable() and self._canShowMarkers())
             model.setAvailableDoorsAmount(doorsToOpenAmount)
             model.setIsFirstDay(self.__adventController.getCurrentDayNumber() == 1)
 

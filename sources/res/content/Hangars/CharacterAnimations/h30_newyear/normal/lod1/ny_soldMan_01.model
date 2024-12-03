@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/CharacterAnimations/h30_newyear/normal/lod2/ny_Soldman_01</parent>
+	<extent>15.000000</extent>
+	<visibilityBox>
+		<min>-0.686879 -0.016264 -0.140016</min>
+		<max>0.683485 1.787284 0.229216</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/CharacterAnimations/h30_newyear/normal/lod1/ny_soldMan_01</nodefullVisual>
+</root>

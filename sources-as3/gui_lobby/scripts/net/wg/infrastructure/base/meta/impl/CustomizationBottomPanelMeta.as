@@ -40,6 +40,12 @@ package net.wg.infrastructure.base.meta.impl
       
       public var showVehiclesSideBar:Function;
       
+      public var nyGoToLootboxes:Function;
+      
+      public var nyGoToChallenge:Function;
+      
+      public var nyGoToBoardGame:Function;
+      
       private var _customizationBottomPanelInitVO:CustomizationBottomPanelInitVO;
       
       private var _customizationTabNavigatorVO:CustomizationTabNavigatorVO;
@@ -176,6 +182,24 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.showVehiclesSideBar,"showVehiclesSideBar" + Errors.CANT_NULL);
          this.showVehiclesSideBar();
+      }
+      
+      public function nyGoToLootboxesS() : void
+      {
+         App.utils.asserter.assertNotNull(this.nyGoToLootboxes,"nyGoToLootboxes" + Errors.CANT_NULL);
+         this.nyGoToLootboxes();
+      }
+      
+      public function nyGoToChallengeS() : void
+      {
+         App.utils.asserter.assertNotNull(this.nyGoToChallenge,"nyGoToChallenge" + Errors.CANT_NULL);
+         this.nyGoToChallenge();
+      }
+      
+      public function nyGoToBoardGameS() : void
+      {
+         App.utils.asserter.assertNotNull(this.nyGoToBoardGame,"nyGoToBoardGame" + Errors.CANT_NULL);
+         this.nyGoToBoardGame();
       }
       
       public final function as_setBottomPanelInitData(param1:Object) : void

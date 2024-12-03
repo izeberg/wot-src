@@ -48,6 +48,10 @@ package net.wg.infrastructure.base.meta
       
       function as_hideTeaserTimer() : void;
       
+      function as_setRewardKitsVisible(param1:Boolean) : void;
+      
+      function as_setGiftEntryVisible(param1:Boolean) : void;
+      
       function as_showSwitchToAmmunition() : void;
       
       function as_setDQWidgetLayout(param1:int) : void;

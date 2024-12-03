@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_16_Asia_Battering_Ram/normal/lod1/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_16_Asia_Battering_Ram/normal/lod2/attachment</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.705590 -0.000138 -1.129032</min>
+		<max>0.147032 0.706325 1.129032</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

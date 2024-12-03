@@ -69,6 +69,12 @@ package net.wg.data.constants.generated
       
       public static const VEH_PARAM_RENDERER_HIGHLIGHT_MIXED:String = "mixed";
       
+      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
+      
+      public static const NY_GIFT_WIDGET_UI:String = "NYEntryPointWidgetUI";
+      
+      public static const REWARD_KITS_ENTRANCE_POINT:String = "rewardKitsEntrancePoint";
+      
       public static const PROGRESSIVE_REWARD_WIDGET:String = "progressiveRewardWdgt";
       
       public static const PRESTIGE_PROGRESS_WIDGET:String = "prestigeProgressWidget";

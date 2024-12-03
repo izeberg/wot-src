@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/h38_newyear_2025/environment/normal/lod2/h38_NY25_Prague_Event_Mirror</parent>
+	<extent>60.000000</extent>
+	<visibilityBox>
+		<min>-0.552198 -0.001839 -0.118242</min>
+		<max>0.552198 2.121536 0.798054</max>
+	</visibilityBox>
+	<nodelessVisual>content/Hangars/h38_newyear_2025/environment/normal/lod1/h38_NY25_Prague_Event_Mirror</nodelessVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_17_Marine_Mine/normal/lod2/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_17_Marine_Mine/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.619140 -0.000000 -0.912933</min>
+		<max>0.123925 0.695728 0.864024</max>
+	</visibilityBox>
+</root>

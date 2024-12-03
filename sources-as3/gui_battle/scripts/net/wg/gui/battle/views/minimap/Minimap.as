@@ -72,12 +72,7 @@ package net.wg.gui.battle.views.minimap
          this._clickAreaSpr = new Sprite();
          super();
          this._foregrounds = new <Sprite>[this.foreground0,this.foreground1,this.foreground2,this.foreground3,this.foreground4,this.foreground5];
-         this.foreground0.imageName = BATTLEATLAS.MINIMAP_B1;
-         this.foreground1.imageName = BATTLEATLAS.MINIMAP_B2;
-         this.foreground2.imageName = BATTLEATLAS.MINIMAP_B3;
-         this.foreground3.imageName = BATTLEATLAS.MINIMAP_B4;
-         this.foreground4.imageName = BATTLEATLAS.MINIMAP_B5;
-         this.foreground5.imageName = BATTLEATLAS.MINIMAP_B6;
+         this.setForeground();
          this.foreground0.visible = this.foreground1.visible = this.foreground2.visible = this.foreground3.visible = this.foreground4.visible = this.foreground5.visible = false;
          this._currForeground = this.foreground0;
          this.entriesContainer.mask = this.entriesContainerMask;
@@ -272,6 +267,21 @@ package net.wg.gui.battle.views.minimap
          this.minimapHint.dispose();
          this.minimapHint = null;
          super.onDispose();
+      }
+      
+      protected function setForeground() : void
+      {
+         this.foreground0.imageName = BATTLEATLAS.MINIMAP_B1;
+         this.foreground1.imageName = BATTLEATLAS.MINIMAP_B2;
+         this.foreground2.imageName = BATTLEATLAS.MINIMAP_B3;
+         this.foreground3.imageName = BATTLEATLAS.MINIMAP_B4;
+         this.foreground4.imageName = BATTLEATLAS.MINIMAP_B5;
+         this.foreground5.imageName = BATTLEATLAS.MINIMAP_B6;
+      }
+      
+      protected function getCurrentForeground() : Sprite
+      {
+         return this._currForeground;
       }
       
       private function createScenarioLayer() : void

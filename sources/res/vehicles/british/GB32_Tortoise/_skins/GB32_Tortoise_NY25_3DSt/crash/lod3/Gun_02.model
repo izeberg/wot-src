@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/crash/lod3/Gun_02</nodelessVisual>
+	<parent>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/crash/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.332870 -0.349994 -1.331790</min>
+		<max>0.332870 0.350006 4.160546</max>
+	</visibilityBox>
+</root>
