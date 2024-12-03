@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>grinch/vehicles/french/F88_AMX_13_105_grinch/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>grinch/vehicles/french/F88_AMX_13_105_grinch/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.811237 -0.481559 -1.564635</min>
+		<max>0.879884 0.457443 5.045145</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

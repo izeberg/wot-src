@@ -1100,6 +1100,9 @@ msgstr "签名"
 msgid "bonusName/modification"
 msgstr "效果"
 
+msgid "bonusName/ny_gp"
+msgstr "礼物硬币"
+
 msgid "bonusName/optional_devices_assistant"
 msgstr "配件助手"
 
@@ -1222,6 +1225,9 @@ msgstr "乘员皮肤:"
 
 msgid "bonuses/item/freeXPFactor"
 msgstr "全局经验系数"
+
+msgid "bonuses/item/ny23RandomResources"
+msgstr "资源"
 
 msgid "bonuses/item/premium"
 msgstr "高级账号天数:"
@@ -4104,6 +4110,10 @@ msgstr ""
 msgid "infoPage/dailyMissions/default"
 msgstr "普通任务的完成条件随机，并且每天都可完成。与个人任务相似，其任务进度仅在每场战斗结束后更新。这些任务没有任何时间限制，随时都可以完成。"
 
+msgid "infoPage/dailyMissions/nyDailyDailyMissions"
+msgstr ""
+"普通任务的完成条件随机，并且每天都可完成。与个人任务相似，普通任务进度仅在每场战斗结束后更新。请记得在获得普通任务的当天完成。否则，该任务会顺延至第二天，并导致您无法完成后续任务。假日行动2025期间，每个任务都会为您带来数量不等的{fff_Open}随机资源{fff_Close}。"
+
 msgid "infoPage/dailyMissions/winback"
 msgstr "普通任务的完成条件随机，并且每天都可完成。其任务进度仅在每场战斗结束后更新。这些任务没有时间限制，可在任意时间完成。"
 
@@ -4240,6 +4250,12 @@ msgstr "战略任务"
 
 msgid "item/type/specialMission"
 msgstr "要塞:特殊任务"
+
+msgid "lockedForRerollTooltip/body"
+msgstr "该任务在活动期间每天都可完成，且不可重置。"
+
+msgid "lockedForRerollTooltip/header"
+msgstr "固定任务"
 
 msgid "metrics/state/done"
 msgstr "已完成"

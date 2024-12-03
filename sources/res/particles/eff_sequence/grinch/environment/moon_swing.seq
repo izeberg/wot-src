@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>14.966667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>CTRL</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.353120 -1.213940 1.073176</value>
+				<inTangent>-1.935992 -1.674477 -0.964926</inTangent>
+				<outTangent>-1.649525 -3.572722 -0.829542</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.733334</startTime>
+				<value>-2.155583 -10.979380 -1.194239</value>
+				<inTangent>-0.301819 -0.677026 -0.289775</inTangent>
+				<outTangent>-0.301819 -0.677026 -0.289775</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.566668</startTime>
+				<value>3.945423 1.962862 0.264046</value>
+				<inTangent>-0.472343 1.104743 -0.227943</inTangent>
+				<outTangent>-0.472343 1.104743 -0.227943</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.900001</startTime>
+				<value>-0.699247 1.941435 -1.383003</value>
+				<inTangent>-0.616894 -0.395753 -0.048454</inTangent>
+				<outTangent>-0.616894 -0.395753 -0.048454</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.933334</startTime>
+				<value>2.353120 -1.213940 1.073176</value>
+				<inTangent>0.756785 -0.782324 0.608970</inTangent>
+				<outTangent>0.756785 -0.782324 0.608970</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>moon_model</name>
+		<type>model</type>
+		<resource>content/Outland/hd_out_UNI_039_PaperSkyToys/normal/lod0/hd_out_UNI_039_PaperSkyToys_01.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>14.966667</duration>
+				<value>CTRL|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.179092 -10.625435 -2.192711</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.100000 0.100000 0.100000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

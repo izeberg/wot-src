@@ -118,8 +118,32 @@ msgstr ""
 msgid "mainView/tooltip/expired/title"
 msgstr "未及时开启窗口"
 
+msgid "mainView/tooltip/notEnoughResources/description"
+msgstr "获取资源的方式包括: 完成任务、在您的村镇和挚友的村镇中收集、开启大型补给品。"
+
+msgid "mainView/tooltip/notEnoughResources/title"
+msgstr "{orange_Open}资源不足{orange_Close}"
+
 msgid "marker/exclamationMark"
 msgstr "!"
+
+msgid "notification/adventCalendarDoorsAvailable/event/action"
+msgstr "领取奖励"
+
+msgid "notification/adventCalendarDoorsAvailable/event/description"
+msgstr "每天开启每日精选窗口，获取礼物。"
+
+msgid "notification/adventCalendarDoorsAvailable/event/title"
+msgstr "每日精选礼物已开放！"
+
+msgid "notification/adventCalendarDoorsAvailable/postEvent/action"
+msgstr "前往每日精选"
+
+msgid "notification/adventCalendarDoorsAvailable/postEvent/description"
+msgstr "花费假日行动资源来开启剩余每日精选窗口的操作将开放至%(date)s。"
+
+msgid "notification/adventCalendarDoorsAvailable/postEvent/title"
+msgstr "机不可失！"
 
 msgid "notification/door/opened/title"
 msgstr "已开启%(dayNumber)s日的每日精选窗口"
@@ -132,6 +156,12 @@ msgstr "每日精选活动已再次开放。给您带来不便，我们深表歉
 
 msgid "notification/lootbox/title"
 msgstr "大型新年补给品"
+
+msgid "notification/nyTerminalToken/title"
+msgstr "已添加礼物终端令牌"
+
+msgid "notification/ny_gp/title"
+msgstr "已添加礼物令牌"
 
 msgid "notification/progerssion/finished"
 msgstr "已完成每日精选进度"
@@ -147,6 +177,68 @@ msgstr "必须按数字顺序获取进度奖励。"
 
 msgid "progressionRewards/tooltip/lock/title"
 msgstr "获取上一个礼物"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/attachment"
+msgstr "3D附件"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/color_fir"
+msgstr "颜色"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/credits"
+msgstr "银币"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/gold"
+msgstr "金币"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/highTierVehicles"
+msgstr "VIII级或IX级金币坦克"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/lowTierVehicles"
+msgstr "II–V级金币坦克"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/nyRandomResource"
+msgstr "随机资源"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_amber"
+msgstr "春暖琥珀"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_crystal"
+msgstr "新生岩晶"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_emerald"
+msgstr "圣洁翡翠"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_iron"
+msgstr "天外陨铁"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/premium_plus"
+msgstr "《坦克世界》高级账号天数"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/randomNyToy"
+msgstr "随机装饰物"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/style_3d"
+msgstr "IX-X级坦克的3D风格"
+
+msgid "progressionRewards/tooltip/lootbox/boxName"
+msgstr "大型新年补给品"
+
+msgid "progressionRewards/tooltip/lootbox/necessary/title"
+msgstr "每个补给品中包含"
+
+msgid "progressionRewards/tooltip/lootbox/probability/item/title"
+msgstr ""
+"列表中物品的掉落几率: %(whiteSpanish_Open)s%(probability)s%(whiteSpanish_Close)s"
+
+msgid "progressionRewards/tooltip/lootbox/probability/vechicle/title"
+msgstr ""
+"列表中物品的掉落几率: %(whiteSpanish_Open)s%(probability)s%(whiteSpanish_Close)s"
+
+msgid "progressionRewards/tooltip/lootbox/separator/comma"
+msgstr "、"
+
+msgid "progressionRewards/tooltip/lootbox/separator/slash"
+msgstr " / "
 
 msgid "progressionRewards/tooltip/lootbox/simple/body"
 msgstr "您可在%(date)s查看该补给品的内容。"
@@ -174,6 +266,29 @@ msgstr "%(img)s获得进度中的上一个礼物才能解锁。"
 
 msgid "progressionRewards/tooltip/rewardReceived/title"
 msgstr "%(img)s已获得"
+
+msgid "purchaseView/cancel"
+msgstr "取消"
+
+msgid "purchaseView/notEnoughResources/subTitle"
+msgstr ""
+"获取资源的方式包括: 完成任务、\n"
+"在您的村镇和挚友的村镇中收集、开启大型补给品。"
+
+msgid "purchaseView/notEnoughResources/title"
+msgstr "资源不足"
+
+msgid "purchaseView/open"
+msgstr "开启"
+
+msgid "purchaseView/title"
+msgstr "开启{cream_Open}%(day)s日{cream_Close}的每日精选窗口？"
+
+msgid "purchaseView/toBoxes/label"
+msgstr "前往补给品"
+
+msgid "purchaseView/toBoxes/tooltip"
+msgstr "点击前往大型补给品"
 
 msgid "rewardView/confirm"
 msgstr "收到！"

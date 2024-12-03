@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.320652 -1.174035 -4.514377</min>
+		<max>2.219167 0.823855 3.872973</max>
+	</visibilityBox>
+</root>

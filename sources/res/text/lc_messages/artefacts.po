@@ -198,6 +198,9 @@ msgid ""
 "archetype/modernizedExtraHealthReserveAntifragmentationLining/name/noTemplate"
 msgstr "防护增强套件"
 
+msgid "archetype/modernizedImprovedSightsEnhancedAimDrives/name/noTemplate"
+msgstr "精度强化系统"
+
 msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
 msgstr "机动强化系统"
 
@@ -1320,7 +1323,7 @@ msgid "improvedSights/short_special"
 msgstr "减少火炮的炮弹散布范围"
 
 msgid "improvedSightsBattleBooster/descr"
-msgstr "%s安装改进型瞄具(任意级别)或赏金瞄具时的瞄准圈大小。"
+msgstr "%s安装改进型瞄具(任意级别)、赏金瞄具或精度强化系统时的瞄准圈大小。"
 
 msgid "improvedSightsBattleBooster/gain/deluxe"
 msgstr "–2%"
@@ -1531,6 +1534,33 @@ msgstr "防护增强套件等级3"
 
 msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
 msgstr "防护增强套件等级3"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives1/long_special"
+msgstr "精度强化系统等级1"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives1/name"
+msgstr "精度强化系统等级1"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives1/short_special"
+msgstr "精度强化系统等级1"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives2/long_special"
+msgstr "精度强化系统等级2"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives2/name"
+msgstr "精度强化系统等级2"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives2/short_special"
+msgstr "精度强化系统等级2"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives3/long_special"
+msgstr "精度强化系统等级3"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives3/name"
+msgstr "精度强化系统等级3"
+
+msgid "modernizedImprovedSightsEnhancedAimDrives3/short_special"
+msgstr "精度强化系统等级3"
 
 msgid "modernizedTurbochargerRotationMechanism1/long_special"
 msgstr "机动强化系统等级1"

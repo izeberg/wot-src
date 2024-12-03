@@ -30,8 +30,129 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/antique_oddities"
+msgstr "古董奇珍"
+
+msgid "attachment/antique_oddities/Cus_26_Mystic_Mirror"
+msgstr "神秘魔镜"
+
+msgid "attachment/antique_oddities/Cus_27_Mystic_Mystical_Things"
+msgstr "古老宝物"
+
+msgid "attachment/antique_oddities/Cus_28_Mystic_Monkey"
+msgstr "发条猴子"
+
+msgid "attachment/antique_oddities/Cus_29_Mystic_Suitcases"
+msgstr "老旧行李箱"
+
+msgid "attachment/antique_oddities/Cus_30_Mystic_Telescope"
+msgstr "附魔望远镜"
+
+msgid "attachment/dragon_vanguard"
+msgstr "神龙先锋"
+
+msgid "attachment/dragon_vanguard/Cus_12_Asia_Dragon_Head"
+msgstr "黄龙龙头"
+
+msgid "attachment/dragon_vanguard/Cus_12_Asia_Dragon_Head/description"
+msgstr "黄龙并不多愁善感。这条暴戾的神龙已将数以千计的寻宝者化为灰烬。讽刺的是，其残暴的性情最终导致了它的陨落……"
+
+msgid "attachment/dragon_vanguard/Cus_13_Asia_Shield_With_Weapon"
+msgstr "武器架"
+
+msgid "attachment/dragon_vanguard/Cus_14_Asia_Dragon_Weapon"
+msgstr "水龙火箭"
+
+msgid "attachment/dragon_vanguard/Cus_15_Asia_Arrow_Thrower"
+msgstr "神机箭"
+
+msgid "attachment/dragon_vanguard/Cus_16_Asia_Battering_Ram"
+msgstr "护城滚木"
+
 msgid "attachment/general"
 msgstr "常规"
+
+msgid "attachment/iron_fury"
+msgstr "钢铁之怒"
+
+msgid "attachment/iron_fury/Cus_01_Brutal_Flamethrower"
+msgstr "喷火装备"
+
+msgid "attachment/iron_fury/Cus_02_Brutal_Ammunition_boxes"
+msgstr "弹药箱"
+
+msgid "attachment/iron_fury/Cus_03_Brutal_Night_vision_device"
+msgstr "夜视仪与探照灯"
+
+msgid "attachment/iron_fury/Cus_04_Brutal_Machine_Gun"
+msgstr "改装版米尼岗"
+
+msgid "attachment/iron_fury/Cus_04_Brutal_Machine_Gun/description"
+msgstr ""
+"你要把眼光放长远一些。如果你使用步枪，打完一个弹匣就得装填。谁知道装填的过程中会发生什么事。但是，M134这个\"小家伙\"可就不一样了，它能确保你的敌人在弹链打空前就尽数消失。"
+
+msgid "attachment/iron_fury/Cus_25_Brutal_Recoilless_Rifle"
+msgstr "无后坐力炮"
+
+msgid "attachment/lionheart_recon"
+msgstr "勇敢侦察"
+
+msgid "attachment/lionheart_recon/Cus_05_Scout_Radar_Display"
+msgstr "159型航海雷达"
+
+msgid "attachment/lionheart_recon/Cus_06_Scout_Radar"
+msgstr "974型无线电定位仪"
+
+msgid "attachment/lionheart_recon/Cus_07_Scout_Motobike"
+msgstr "威尔摩托"
+
+msgid "attachment/lionheart_recon/Cus_08_Scout_Manual_Rocket"
+msgstr "肩扛反坦克炮"
+
+msgid "attachment/lionheart_recon/Cus_09_Scout_Rocket_System"
+msgstr "火箭巢"
+
+msgid "attachment/oceanic_sentinel"
+msgstr "海洋卫士"
+
+msgid "attachment/oceanic_sentinel/Cus_10_Marine_Harpoon"
+msgstr "鱼叉枪"
+
+msgid "attachment/oceanic_sentinel/Cus_11_Marine_Shark"
+msgstr "15-6K工程"
+
+msgid "attachment/oceanic_sentinel/Cus_11_Marine_Shark/description"
+msgstr "一条专门用于打击战舰的机械鲨鱼。它配备了红外成像仪，可以在最远80千米的距离内探测到极其细微的水流移动，并且内部还安装了一个核能\"惊喜\"。"
+
+msgid "attachment/oceanic_sentinel/Cus_17_Marine_Mine"
+msgstr "水雷"
+
+msgid "attachment/oceanic_sentinel/Cus_18_Marine_Periscope"
+msgstr "海军望远镜"
+
+msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
+msgstr "无杆锚"
+
+msgid "attachment/thunderstrike"
+msgstr "撼人心魄"
+
+msgid "attachment/thunderstrike/Cus_20_Rock_Guitar"
+msgstr "喷火吉他"
+
+msgid "attachment/thunderstrike/Cus_20_Rock_Guitar/description"
+msgstr "\"我对坦克引擎和火炮的轰鸣没有意见，但我们是不是应该听听更优美的旋律？伙计们，拿起你的'乐器': 让我们弄出点动静吧！\""
+
+msgid "attachment/thunderstrike/Cus_21_Rock_Stage_Fire_Generator"
+msgstr "喷火机"
+
+msgid "attachment/thunderstrike/Cus_22_Rock_Soffits"
+msgstr "舞台聚光灯"
+
+msgid "attachment/thunderstrike/Cus_23_Rock_Drums"
+msgstr "架子鼓"
+
+msgid "attachment/thunderstrike/Cus_24_Rock_Speakers"
+msgstr "演唱会音响"
 
 msgid "bonus/condition/camouflage"
 msgstr "将涂装应用于坦克车体时，依据坦克类型提供隐蔽加成。"
@@ -572,6 +693,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Blitztech/label"
 msgstr "闪电技术"
+
+msgid "camouflage/Boosteroid_01/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_01/label"
+msgstr "全面提升"
 
 msgid "camouflage/Borduit/description"
 msgstr "应用这些个性化进入战斗，给阻挡您前进的所有敌人注入恐惧。博格人擅长出其不意，而且总能带来毁灭性的力量。抵抗是徒劳的！"
@@ -1381,6 +1508,18 @@ msgstr "?empty?"
 
 msgid "camouflage/ac/label"
 msgstr "高贵"
+
+msgid "camouflage/advent_calendar_2024_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/advent_calendar_2024_1/label"
+msgstr "寂静夜晚"
+
+msgid "camouflage/advent_calendar_2024_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/advent_calendar_2024_2/label"
+msgstr "魔法玩具"
 
 msgid "camouflage/allbetsareoff/description"
 msgstr "?empty?"
@@ -3519,6 +3658,12 @@ msgstr "?empty?"
 msgid "camouflage/gagarin/label"
 msgstr "首次升空"
 
+msgid "camouflage/gameplay_mode_progression/description"
+msgstr "?empty?"
+
+msgid "camouflage/gameplay_mode_progression/label"
+msgstr "宇宙意义"
+
 msgid "camouflage/gamer/description"
 msgstr "?empty?"
 
@@ -4572,6 +4717,48 @@ msgstr "?empty?"
 
 msgid "camouflage/ny_2023_m_challenge/label"
 msgstr "完美无瑕！"
+
+msgid "camouflage/ny_2025_bro/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_bro/label"
+msgstr "深海猛兽"
+
+msgid "camouflage/ny_2025_cat/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_cat/label"
+msgstr "可爱猫咪"
+
+msgid "camouflage/ny_2025_challenge/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_challenge/label"
+msgstr "极速狂飙"
+
+msgid "camouflage/ny_2025_dog/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_dog/label"
+msgstr "乖萌爱犬"
+
+msgid "camouflage/ny_2025_guest1/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_guest1/label"
+msgstr "顽强不屈"
+
+msgid "camouflage/ny_2025_guest2/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_guest2/label"
+msgstr "枪械收藏家"
+
+msgid "camouflage/ny_2025_snowman/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_snowman/label"
+msgstr "雪中作乐"
 
 msgid "camouflage/oakwood_dark/description"
 msgstr "?empty?"
@@ -6682,6 +6869,24 @@ msgstr "此坦克的预设样式不可用"
 msgid "customization/decalPopover/remove"
 msgstr "移除"
 
+msgid "customization/earn/challenge/button"
+msgstr "前往挑战>"
+
+msgid "customization/earn/challenge/description"
+msgstr "在假日行动挑战中最多可获得5款独特3D附件"
+
+msgid "customization/earn/lootbox/button"
+msgstr "前往补给品>"
+
+msgid "customization/earn/lootbox/description"
+msgstr "从假日行动大型补给品中最多可获得15款独特3D附件"
+
+msgid "customization/earn/raid/button"
+msgstr "前往冬日奇袭>"
+
+msgid "customization/earn/raid/description"
+msgstr "在冬日奇袭中最多可获得5款独特3D附件"
+
 msgid "customization/editablePopover/defaultBtn/disabled"
 msgstr "风格元素设为默认。"
 
@@ -6725,6 +6930,9 @@ msgstr "未输入战术数字的数字。"
 
 msgid "customization/emptyState/attachments"
 msgstr "可安装3D附件的坦克"
+
+msgid "customization/emptyState/video"
+msgstr "播放视频"
 
 msgid "customization/escHelp/left"
 msgstr "您可按下"
@@ -7206,7 +7414,7 @@ msgid "customization/tooltip/applied/vehicleNation"
 msgstr "所有%(nation)s的坦克"
 
 msgid "customization/tooltip/attachmentEarn"
-msgstr "可安装在\"鼠\"式、\"豹\"I、261工程、FV4005等坦克上。您可在个性化的3D附件版块中查看完整坦克列表。"
+msgstr "适用坦克包括\"鼠\"式、\"豹\"I、261工程、FV4005等等。您可在个性化的3D附件版块中查看完整坦克列表。"
 
 msgid "customization/tooltip/bonus/aimer"
 msgstr "炮手"
@@ -7400,6 +7608,12 @@ msgstr "售价(所有元素)"
 
 msgid "customization/tooltip/inventory/title"
 msgstr "库存"
+
+msgid "customization/tooltip/ny/reward/remainsToCollect"
+msgstr "距获得奖励还需要收集资源的次数: %(count)s"
+
+msgid "customization/tooltip/ny/reward/rewardReceived"
+msgstr "已获得奖励"
 
 msgid "customization/tooltip/oneTaskDescription"
 msgstr "完成任务:%(name)s"
@@ -10985,6 +11199,9 @@ msgstr "劈波斩浪"
 msgid "emblem/special/sticker_843"
 msgstr "2025冬季OLS"
 
+msgid "emblem/special/sticker_859"
+msgstr "Boosteroid"
+
 msgid "filter/popover/bonusType/title"
 msgstr "加成类型"
 
@@ -13613,6 +13830,27 @@ msgstr "明日之星"
 
 msgid "inscription/special/special_769"
 msgstr "2025冬季OLS"
+
+msgid "inscription/special/special_770"
+msgstr "祝您好运！"
+
+msgid "inscription/special/special_771"
+msgstr "别那么紧张"
+
+msgid "inscription/special/special_772"
+msgstr "还有什么遗言要说？"
+
+msgid "inscription/special/special_773"
+msgstr "再见了"
+
+msgid "inscription/special/special_774"
+msgstr "呦-嚯-嚯！"
+
+msgid "inscription/special/special_775"
+msgstr "箱子是我的啦"
+
+msgid "inscription/special/special_776"
+msgstr "狗老大"
 
 msgid "inscription/special/special_81"
 msgstr "为了祖国！"
@@ -16299,8 +16537,29 @@ msgstr "完美礼物喵"
 msgid "projection_decals/holiday/projection_decal_653"
 msgstr "潇洒小伙"
 
+msgid "projection_decals/holiday/projection_decal_654"
+msgstr "专治不服"
+
+msgid "projection_decals/holiday/projection_decal_658"
+msgstr "茶？"
+
+msgid "projection_decals/holiday/projection_decal_659"
+msgstr "大小烟花"
+
 msgid "projection_decals/holiday/projection_decal_66"
 msgstr "航天飞机"
+
+msgid "projection_decals/holiday/projection_decal_660"
+msgstr "潇洒射击"
+
+msgid "projection_decals/holiday/projection_decal_661"
+msgstr "迎风破浪"
+
+msgid "projection_decals/holiday/projection_decal_662"
+msgstr "内有猫咪"
+
+msgid "projection_decals/holiday/projection_decal_663"
+msgstr "内有萌犬"
 
 msgid "projection_decals/holiday/projection_decal_67"
 msgstr "东方1号"
@@ -19381,6 +19640,21 @@ msgstr "格迪米纳斯之柱"
 msgid "projection_decals/special/projection_decal_811"
 msgstr "第一骑士"
 
+msgid "projection_decals/special/projection_decal_812"
+msgstr "假日大树"
+
+msgid "projection_decals/special/projection_decal_813"
+msgstr "雪人团队"
+
+msgid "projection_decals/special/projection_decal_814"
+msgstr "节日访客"
+
+msgid "projection_decals/special/projection_decal_815"
+msgstr "暗夜守卫"
+
+msgid "projection_decals/special/projection_decal_816"
+msgstr "冬日奇袭"
+
 msgid "projection_decals/special/projection_decal_818"
 msgstr "不屈不挠"
 
@@ -19402,6 +19676,9 @@ msgstr "兽人"
 
 msgid "projection_decals/special/projection_decal_84/description"
 msgstr "现在您肯定能想象，如果WG使用最初的那几个设计概念，男性乘员会是什么样。"
+
+msgid "projection_decals/special/projection_decal_843"
+msgstr "霓虹坦克"
 
 msgid "projection_decals/special/projection_decal_85"
 msgstr "女精灵"
@@ -20141,6 +20418,9 @@ msgstr "货运列车"
 
 msgid "repaint/Blitztech"
 msgstr "闪电技术"
+
+msgid "repaint/Boosteroid_01"
+msgstr "全面提升"
 
 msgid "repaint/Breadboard"
 msgstr "集成电路"
@@ -21970,6 +22250,17 @@ msgstr ""
 " "
 "'有关系吗？你不是外国人吗？英语手册应该看得懂吧。'行吧，你说啥就是啥吧。因此，巴达耶夫决定给我带一本我从未读过的书，让我高兴一点。他说，这本书与极地有关。还说，来都来了，不如读读这本书放松一下。他以为这本书的作者也懂英语。我不忍心告诉他这是两码事，但是为了感谢他的好意，我还是读了这本书。在极地读关于极地的书。巴达耶夫我真是谢谢你。疯狂山脉可真是本好书。你的举止真的一点都不绅士。你就瞧好吧，看我怎么捉弄你。\""
 
+msgid "special_style/A88_M53_55_NY25_3Dst"
+msgstr "两栖能力"
+
+msgid "special_style/A88_M53_55_NY25_3Dst_desc/long"
+msgstr ""
+"[高度机密]\n"
+"\n"
+"两栖自行火炮实地测试报告\n"
+"\n"
+"经过数月的研发，以及对原型车的无数次调试，M53/55的两栖改型于今天上午开始测试。该项目在陆上的表现堪称优秀，但在下水的一瞬间，其固有缺陷就暴露无遗。坦率地说，遭遇的问题之多，根本不是这份简略的报告所能涵盖的，总之结论如下: 立即取消所有两栖自行火炮项目的相关工作。切勿试图在水下驾驶该坦克！"
+
 msgid "special_style/A92_M60_3DSt_ZI_21"
 msgstr "整蛊专家"
 
@@ -22010,6 +22301,16 @@ msgstr "闪电技术"
 
 msgid "special_style/Blitztech_desc"
 msgstr "可在最终兵器:海柏利昂计划活动期间获得的全地形风格。"
+
+msgid "special_style/Boosteroid_01"
+msgstr "全面提升"
+
+msgid "special_style/Boosteroid_01_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_01_desc/long"
+msgstr ""
+"您的坦克充满无穷能量，随时准备战斗。它在战场上灵活机动，游刃有余，突破敌方围追堵截后，以毁灭性的精度击毁追兵。对手们敬畏地看着这辆势不可挡的战斗机器，对其指挥官的战斗技巧赞叹不已。"
 
 msgid "special_style/Breadboard"
 msgstr "集成电路"
@@ -22126,6 +22427,13 @@ msgstr "绝地反攻战役"
 msgid "special_style/Counterattack_desc"
 msgstr "这种独特的风格纪念1941年12月东线绝地反攻的开始。"
 
+msgid "special_style/Cz02_TVP_T50_NY25_3Dst"
+msgstr "雏鹰"
+
+msgid "special_style/Cz02_TVP_T50_NY25_3Dst_desc/long"
+msgstr ""
+"\"这条路没有尽头。虽然那场冲突结束了，但我们的乘员又一次全速向着自由和正义驶去。您应该亲眼看看那个场景！我们的装甲列车已经让他们肝胆俱裂，不知看见这个履带上的大家伙时又会是怎样一番光景！车头灯划破夜幕，车轮敲出节奏，小雏鹰将会到达目的地。它不再是一辆坦克，而是非常之举。当无话可说时，我们就搬出马克沁。当外交手段不再有效时，我们就装填穿甲弹。当别人沉默时，我们就用战斗说话，让他们听得清清楚楚...\""
+
 msgid "special_style/Cz04_T50_51_3Dst"
 msgstr "暴风"
 
@@ -22177,6 +22485,13 @@ msgstr ""
 "“你觉得就因为有关部门拿到了生产S系坦克的许可，我们就应该放弃自创的坦克设计？就这样随意浪费掉我的工程师们不顾昼夜设计这个项目投入的心血？你错了！我们的武器工业在西方一直都是首屈一指的！只要我还是首席设计师，就算是要偷偷摸摸的，我也一定会完成这个原创项目！我们需要的是自己的装甲，而不是从别人那儿借来的科技！\n"
 "\n"
 "亲爱的亚雷克，你我相识15年，我对你深信不疑。带上你的兄弟们，对我们的坦克进行一场真正的试验，具体你说了算。我必须了解这辆坦克的一切——它所有的优缺点。遮掩的部分就交给我吧——我会想办法和领导解释。噢，还有别忘了：我期待在这周六与你和玛莎共度晚餐。”"
+
+msgid "special_style/Cz17_Vz_55_NY2025_3Dst"
+msgstr "菁华"
+
+msgid "special_style/Cz17_Vz_55_NY2025_3Dst_desc/long"
+msgstr ""
+"\"一切都是值得的，每幅幻象、每种幻觉、每个让我冷汗淋漓的梦魇。这座城市充满了魔法——通灵者、占卜师、炼金术士、法师。不论是钻进酒馆，还是溜进阴暗的小巷，都会碰上他们。不过，即使连最黑暗的亡灵法师都无法预见此等力量。它在我们的战斗机器中奔涌，霓虹般的光芒使敌人闻风丧胆——因为他们必败无疑。古人相信，以太是神的气息。亲眼目睹其威力后，我觉得他们所言非虚。\""
 
 msgid "special_style/Cz17_Vz_55_OCN_3DSt"
 msgstr "哥特勇士"
@@ -22350,6 +22665,13 @@ msgstr "沙尘暴战斗群"
 msgid "special_style/G04_PzVI_Tiger_I_E_3DSt_desc/long"
 msgstr ""
 "\"苍天无眼啊。我们近乎各个方面都比敌人强大，我们的坦克拥有更好的火炮、发动机、装甲和训练有素的乘员...我们的实力远超他们。他们那些所谓的坦克根本比不上我们，但我不得不承认...他们依然会赢。敌人在某个方面完全抵消了我们的优势，使得我们伟大的D系军械完全瘫痪在日落之地...因为敌人的燃油储备充足。\""
+
+msgid "special_style/G121_Grille_15_L63_NY2025_3Dst"
+msgstr "鱼竿"
+
+msgid "special_style/G121_Grille_15_L63_NY2025_3Dst_desc/long"
+msgstr ""
+"\"授之以鱼不如授之以渔。授之以鱼竿形状的坦克，便能确保对方终生在战场上满载而归！这似乎有些牵强，但仔细想想，击毁强大的敌方坦克就如同钓鱼。出手太早，会吓跑猎物。出手太晚，又会错失良机。您需要表现出极大的耐心和专注，等待最佳时机。然后——轰隆！大鱼上钩了！\""
 
 msgid "special_style/G134_PzKpfw_VII_3Dst"
 msgstr "装甲圣诞老人"
@@ -22605,6 +22927,13 @@ msgstr ""
 " "
 "消灭任何进入我准星的东西。我们有的是时间研究这些东西的源头，现在没必要在这上面耗费精力。每个人都该放轻松，不要太紧张。还有谁能完成这个目标？指挥部认可了我们的价值，我们就必须证明我们的价值。我们会尽可能多地进行攻击。我们只有一个目标。我把这次任务当做我最后的舞台。很遗憾，这次可能没什么荣耀或荣誉可言了，毕竟一切都将进入绝密档案。”"
 
+msgid "special_style/GB32_Tortoise_NY25_3DSt"
+msgstr "乌龟"
+
+msgid "special_style/GB32_Tortoise_NY25_3DSt_desc/long"
+msgstr ""
+"\"我说这话对兔子绝无不敬，但'稳中求胜'确实适用于战场。我已不再是初出茅庐的新手了，而是年老而睿智的乌龟，因为活得够久，所以才明白这个道理。我见过太多风浪，这些年来，我的壳也在无数次的战斗中愈加坚固。年纪越大，越能看清很多事情。您会明白，无论我们多么迫不及待，'耐心'都是一种美德，好事多磨。比如说，在加拉帕戈斯群岛上拥有一套漂亮舒适的养老房…\""
+
 msgid "special_style/GB83_FV4005_3DSt_MD_21_XXII"
 msgstr "雷霆之子"
 
@@ -22644,6 +22973,13 @@ msgstr ""
 "所有声音最终混合为淹没一切的轰鸣。你苏醒了，蜷缩在车内地板上。深吸了一口气，那些从弹孔钻进坦克中的紫色烟雾立刻填满了你的肺部。你感觉得到自己正在被这些烟雾由内而外地融化。正在融化的你仿佛要与坦克融为一体。好疼。比被炮弹击中还疼。痛苦的回忆。睡觉就不会痛苦了。\n"
 "\n"
 "睡着……睡着就能感受到浓稠且柔顺的宁静，只要到那里就不疼了。一点也不疼了。"
+
+msgid "special_style/GB86_Centurion_Action_X_NY2025_3Dst"
+msgstr "英伦精钢"
+
+msgid "special_style/GB86_Centurion_Action_X_NY2025_3Dst_desc/long"
+msgstr ""
+"\"好了，伙计们。你们都知道该怎么做，也都了解如何使用这玩意儿。这是纯正的英伦精钢——历经战火洗礼，就像你们一样。它能经受住一切考验，而我们也毫不逊色。这种行动我们已经执行过不知道多少次了。但我还是要提醒你们，这并不意味着我们可以骄傲自满，甚至放松警惕。我们要坚持自己的标准。我们不是靠碌碌无为，做坦克英雄梦才走到今天的。我们能有今天，是靠日复一日、英勇奋战换来的。这并不是一份光鲜亮丽的工作，很多时候也并不有趣。但这就是我们的责任。这次也不例外。\""
 
 msgid "special_style/GB91_Super_Conqueror_MD22_III_3DSt"
 msgstr "雷神"
@@ -23138,6 +23474,18 @@ msgstr "高贵"
 
 msgid "special_style/ac_desc"
 msgstr "一款为了纪念国际航空航天博览会和机场设备展览的全地形风格。"
+
+msgid "special_style/advent_calendar_2024_1"
+msgstr "寂静夜晚"
+
+msgid "special_style/advent_calendar_2024_1_desc"
+msgstr "一款全地形风格，体现了假日季的美妙时光。"
+
+msgid "special_style/advent_calendar_2024_2"
+msgstr "魔法玩具"
+
+msgid "special_style/advent_calendar_2024_2_desc"
+msgstr "一款全地形风格，以广受喜爱的假日礼物为设计原型。"
 
 msgid "special_style/allbetsareoff"
 msgstr "世事难料"
@@ -25136,6 +25484,16 @@ msgid "special_style/gagarin_desc/long"
 msgstr ""
 "1961年4月12日14:07，首次载人航天飞行任务启动。\"东方号\"载人飞船载着S系宇航员尤里·加加林从拜科努尔航天发射场升空。尤里·加加林当时的呼号为\"雪松\"。加加林进入轨道后一直与地球保持无线电联络、从观察窗进行观察，同时控制着航天飞机的系统。在环绕地球一圈后，载人飞船降落在萨拉托夫地区。宇航员在离地球7公里的高度上完成弹射，并使用降落伞着陆。此后，加加林成为了世界闻名的人物，造访了约30个国家。在S系本土，许多村庄、街道、大街都改成了他的名字，几乎每个城市和小镇都有一条以他命名的街道。他还成为了许多国家的荣誉市民。如今，在全世界，他仍然是最知名、最受尊敬的人物之一。"
 
+msgid "special_style/gameplay_mode_progression"
+msgstr "宇宙意义"
+
+msgid "special_style/gameplay_mode_progression_desc"
+msgstr "一款全地形风格，点缀着神秘图案。"
+
+msgid "special_style/gameplay_mode_progression_desc/long"
+msgstr ""
+"\"我心爱的圣物。它们是无价之宝，但却被当作普普通通的装饰、毫无价值的玩物，只能在陈旧的古董店里蒙尘。这些年来我四处寻找它们，您无法想象我所承受的痛苦。人们嘲笑我，把我当成又老又可怜的流浪推销员。虽然圣物看似平平无奇，但如果人们了解其宇宙意义，就不会这么武断，对我嗤之以鼻了。不过没关系。现在，它们再次归我所有。借着无所不能的阳光，我们将驱散古老秘密的阴影。仪式开始...\""
+
 msgid "special_style/gamer"
 msgstr "游戏爱好者"
 
@@ -26004,6 +26362,87 @@ msgstr ""
 "不要在车厢中追逐打闹。\n"
 "请不要坐在车顶。\n"
 "请不要在车辆行驶时打扰驾驶员: 他已经被扣了7分了。"
+
+msgid "special_style/ny_2025_bro"
+msgstr "深海猛兽"
+
+msgid "special_style/ny_2025_bro_desc"
+msgstr "一款全地形风格，专为这种在七大洋中遨游的猛兽而设计。"
+
+msgid "special_style/ny_2025_bro_desc/long"
+msgstr ""
+"自人类在七大洋上航行以来，就一直流传着各种深海猛兽的传说: "
+"远古时期令人闻风丧胆的大海蛇利维坦；冰冷北海中的强大海怪、维京人的克星克拉肯；南太平洋海底之城的守护者克苏鲁；能诱惑资深海员的神秘白鲸。那就让这些传说成为警示吧；当您扬帆起航，寻找无人之境和无尽宝藏时，请时刻提防那些潜伏在无尽深海黑暗中的猛兽。"
+
+msgid "special_style/ny_2025_cat"
+msgstr "可爱猫咪"
+
+msgid "special_style/ny_2025_cat_desc"
+msgstr "一款全地形风格，专为宠物世界的皇族——猫咪而设计。"
+
+msgid "special_style/ny_2025_cat_desc/long"
+msgstr ""
+"\"怎么了，铲屎官？让你打喷嚏了？不好意思，我有时候会这样。一定是我那与生俱来的魅力，或者我那华丽的毛发使然。不得不承认，我的毛发确实到处都是，但你肯定不会介意的，对吧？毕竟我这么可爱。话说回来，你刚才说什么来着？坦克战斗？不用了谢谢。唯一让我感兴趣的坦克，就是角落里的坦克形鱼缸。那些金鱼看起来真是让人垂涎欲滴，我正打算对它们下手。\""
+
+msgid "special_style/ny_2025_challenge"
+msgstr "极速狂飙"
+
+msgid "special_style/ny_2025_challenge_desc"
+msgstr "一款全地形风格，表达找到完美座驾的兴奋之情。"
+
+msgid "special_style/ny_2025_challenge_desc/long"
+msgstr ""
+"\"你的座驾不仅仅是一个外壳。它是您个性的延伸、自我的真实写照。每一处磨损，每一道划痕，每一个弹孔，无一例外。痛在它身，伤在你心。当坐在驾驶座上时，你会与它融为一体。你能感觉到这头巨大钢铁猛兽的力量在血管中流淌，其所有威力都集中于你的指尖，同时，它也能感受到你的力量。相信我，这将是强强联手。虽然您可能需要一些时间才能找到适合自己的那一辆。但相信我，一旦找到，您将无人能敌。\""
+
+msgid "special_style/ny_2025_dog"
+msgstr "乖萌爱犬"
+
+msgid "special_style/ny_2025_dog_desc"
+msgstr "一款全地形风格，献给人类——也是坦克手——最好的朋友。"
+
+msgid "special_style/ny_2025_dog_desc/long"
+msgstr ""
+"\"我们几天前在山上演习时发现的它，蓬头垢面，满身跳蚤，看起来很可怜。但一看到我们，它就眉开眼笑，蹦蹦跳跳地跑过来，伸着舌头，卖力地摇着尾巴，我们都以为它要晕过去了。显而易见，它已经好多天没见过人类了。就这样，我们回了军营，它也一样。别问我们是怎么把它带进来的，我都没想到我们能把它藏这么久，但谁能抗拒萌犬的那双大眼睛呢？\""
+
+msgid "special_style/ny_2025_guest1"
+msgstr "顽强不屈"
+
+msgid "special_style/ny_2025_guest1_desc"
+msgstr "一款全地形风格，赋予您的坦克坚固耐用、久经沙场的外观。"
+
+msgid "special_style/ny_2025_guest1_desc/long"
+msgstr ""
+"\"仔细欣赏一下这辆坦克吧！它可是身经百战。看看它的样子，浑身都是弹孔，伤痕累累。它曾身陷绝境，但又逃出生天，现在仍运转如常。而你却告诉我今天连健身房都不愿去？伙计，我们所做的是需要一定毅力的。在战场上，可没有休息日，也没有藏身之处。所以，就把这当成一次警告吧——一次关于韧性和纪律的教训。因为下次你若再跟我诉苦，说什么'不在状态'，我可饶不了你，明白吗？\""
+
+msgid "special_style/ny_2025_guest2"
+msgstr "枪械收藏家"
+
+msgid "special_style/ny_2025_guest2_desc"
+msgstr "一款全地形风格，彰显了工欲善其事必先利其器的重要性。"
+
+msgid "special_style/ny_2025_guest2_desc/long"
+msgstr ""
+"\"我不是想炫耀什么。那不是我的风格。我只是想确保在需要时，我有合适的工具来应对任务。这些任务形形色色，有大有小。有时需要小巧、安静、不引人注意的工具。而有时则需要不那么低调，更具...威力的工具。老实说，我已经记不清具体有多少把了，但我总是将它们保持在最佳状态。因为你永远不知道下个任务什么时候会来。但当有任务时，你最好已经准备周全。\""
+
+msgid "special_style/ny_2025_snowman"
+msgstr "雪中作乐"
+
+msgid "special_style/ny_2025_snowman_desc"
+msgstr "一款全地形风格，献给真正的冬季明星——雪人！"
+
+msgid "special_style/ny_2025_snowman_desc/long"
+msgstr ""
+"\"嘿，弗罗斯帝，这个挺有意思。你知道六块腹肌的雪人叫什么吗？\"\n"
+"\"不知道，奥拉夫，六块腹肌的雪人叫什么？\"\n"
+"\"白富美！\"\n"
+"\"哈哈，说得好！好吧，我讲一个。为什么雪人不参加坦克战斗？\"\n"
+"\"不知道，弗罗斯帝，为什么雪人不参加坦克战斗？\"\n"
+"\"因为他怕起火！\"\n"
+"\"大家听着，我也讲一个。如果天气越来越暖和，帽子和围巾都不用戴了，那雪人会做什么？\"\n"
+"\"我们不知道，杰克，如果天气越来越暖和，帽子和围巾都不用戴了，那雪人会做什么？\"\n"
+"\"他们会变成一滩水！\"\n"
+"\"哇哦，兄弟，这有点过了…\"\n"
+"\"没错，这可一点都不好笑…\""
 
 msgid "special_style/oakwood"
 msgstr "橡木"

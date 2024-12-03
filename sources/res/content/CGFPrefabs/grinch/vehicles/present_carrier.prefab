@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>vehicle</name>
+			<UUID>57ed8314-dbb4-40c3-b8fc-67831f28b349</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>stack</name>
+			<UUID>c7363472-b39b-37f9-a5b4-9ce152ce5fa1</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>present_1</name>
+			<UUID>009ea323-15b5-3185-a26a-6e58d008ae49</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>RotationTarget</name>
+			<UUID>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>e5cd74ed-1557-36c9-9fa1-826605787b2f</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>top</name>
+			<UUID>1824b667-9bab-3cf8-81e1-41c4ce4fefab</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>present_2</name>
+			<UUID>fbfc4341-94ed-3f1d-af04-92bd3e428b02</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>RotationTarget</name>
+			<UUID>0199e106-c26e-3fe3-bd1c-f83e7f5c87eb</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>620afc4f-1d89-319e-b92c-a608494e85a6</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>top</name>
+			<UUID>69c441fb-1f5f-36d3-aec7-b93b001de423</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>present_3</name>
+			<UUID>1fa75ffd-1cd7-3177-9fcf-1f04e1dd2b20</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>RotationTarget</name>
+			<UUID>56c83214-ff09-3b49-9ffe-e1350cea200a</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>30d7cf39-49b8-3aaa-b66d-f2c66eb0e484</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>top</name>
+			<UUID>56a86a33-ea48-3ff4-9271-62be68c096e4</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>present_4</name>
+			<UUID>e18318b8-4897-3207-8d09-a6bfb2cef6a2</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>RotationTarget</name>
+			<UUID>ddfe30e4-a508-390b-937a-fd6d94935e62</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>57fb2216-6403-3133-a14b-c05c432644c1</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>top</name>
+			<UUID>9a20846f-d2a1-3515-b0d1-7201c4a4e313</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>present_5</name>
+			<UUID>6179f3ae-1f07-3adf-aa57-b58db484266f</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>RotationTarget</name>
+			<UUID>396ade36-1c27-3abe-ab5f-c22851307ba0</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>b9d6c2e5-87e0-3a9c-9941-319bf832a63a</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>top</name>
+			<UUID>546959ea-08c5-366a-a306-7d0f282fa5dc</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>601268d0-bed4-3833-a798-8157af3ae3ed</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>c7363472-b39b-37f9-a5b4-9ce152ce5fa1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>57ed8314-dbb4-40c3-b8fc-67831f28b349</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>009ea323-15b5-3185-a26a-6e58d008ae49</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>c7363472-b39b-37f9-a5b4-9ce152ce5fa1</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>009ea323-15b5-3185-a26a-6e58d008ae49</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e5cd74ed-1557-36c9-9fa1-826605787b2f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1824b667-9bab-3cf8-81e1-41c4ce4fefab</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>fbfc4341-94ed-3f1d-af04-92bd3e428b02</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>1824b667-9bab-3cf8-81e1-41c4ce4fefab</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0199e106-c26e-3fe3-bd1c-f83e7f5c87eb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fbfc4341-94ed-3f1d-af04-92bd3e428b02</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>620afc4f-1d89-319e-b92c-a608494e85a6</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>0199e106-c26e-3fe3-bd1c-f83e7f5c87eb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>69c441fb-1f5f-36d3-aec7-b93b001de423</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>0199e106-c26e-3fe3-bd1c-f83e7f5c87eb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1fa75ffd-1cd7-3177-9fcf-1f04e1dd2b20</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>69c441fb-1f5f-36d3-aec7-b93b001de423</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>56c83214-ff09-3b49-9ffe-e1350cea200a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>1fa75ffd-1cd7-3177-9fcf-1f04e1dd2b20</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>30d7cf39-49b8-3aaa-b66d-f2c66eb0e484</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>56c83214-ff09-3b49-9ffe-e1350cea200a</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>56a86a33-ea48-3ff4-9271-62be68c096e4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>56c83214-ff09-3b49-9ffe-e1350cea200a</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e18318b8-4897-3207-8d09-a6bfb2cef6a2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>56a86a33-ea48-3ff4-9271-62be68c096e4</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ddfe30e4-a508-390b-937a-fd6d94935e62</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>e18318b8-4897-3207-8d09-a6bfb2cef6a2</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>57fb2216-6403-3133-a14b-c05c432644c1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ddfe30e4-a508-390b-937a-fd6d94935e62</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9a20846f-d2a1-3515-b0d1-7201c4a4e313</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ddfe30e4-a508-390b-937a-fd6d94935e62</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>6179f3ae-1f07-3adf-aa57-b58db484266f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9a20846f-d2a1-3515-b0d1-7201c4a4e313</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>396ade36-1c27-3abe-ab5f-c22851307ba0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>6179f3ae-1f07-3adf-aa57-b58db484266f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b9d6c2e5-87e0-3a9c-9941-319bf832a63a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>396ade36-1c27-3abe-ab5f-c22851307ba0</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>546959ea-08c5-366a-a306-7d0f282fa5dc</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>396ade36-1c27-3abe-ab5f-c22851307ba0</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>601268d0-bed4-3833-a798-8157af3ae3ed</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>57ed8314-dbb4-40c3-b8fc-67831f28b349</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c7363472-b39b-37f9-a5b4-9ce152ce5fa1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0.198486 0.219048 -2.61102
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>009ea323-15b5-3185-a26a-6e58d008ae49</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 0.0252609 -0.000312805
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0122173 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e5cd74ed-1557-36c9-9fa1-826605787b2f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.205425 0 0.00232697
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.7 0.7 0.7
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1824b667-9bab-3cf8-81e1-41c4ce4fefab</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.176958 0.619554 -0.0649567
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							3.72529e-09 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>fbfc4341-94ed-3f1d-af04-92bd3e428b02</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							4.76837e-07 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.49012e-08 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0199e106-c26e-3fe3-bd1c-f83e7f5c87eb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-3.8147e-06 -3.57628e-07 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0122173 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>620afc4f-1d89-319e-b92c-a608494e85a6</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.141434 0.0595961 -0.0292206
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.66 0.66 0.66
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							6.12983e-07 0.0629664 1.26035e-09
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>69c441fb-1f5f-36d3-aec7-b93b001de423</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.00012207 0.650513 -0.0280838
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							3.1665e-08 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1fa75ffd-1cd7-3177-9fcf-1f04e1dd2b20</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>56c83214-ff09-3b49-9ffe-e1350cea200a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-3.8147e-06 4.76837e-07 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0122173 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>30d7cf39-49b8-3aaa-b66d-f2c66eb0e484</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.201935 -2.14577e-06 0.00204468
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.64 0.64 0.64
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							4.60102e-07 -0.135977 5.73678e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>56a86a33-ea48-3ff4-9271-62be68c096e4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.000106812 0.58213 -0.0811157
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-3.72529e-08 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e18318b8-4897-3207-8d09-a6bfb2cef6a2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ddfe30e4-a508-390b-937a-fd6d94935e62</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 1.90735e-06 -7.62939e-06
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0122173 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>57fb2216-6403-3133-a14b-c05c432644c1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.156113 0.0289507 0.050354
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.62 0.680874 0.619803
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-1.33606e-06 1.64423 1.49132e-06
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9a20846f-d2a1-3515-b0d1-7201c4a4e313</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.000183105 0.647902 0.0476303
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							3.72529e-08 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>6179f3ae-1f07-3adf-aa57-b58db484266f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>396ade36-1c27-3abe-ab5f-c22851307ba0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0122173 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b9d6c2e5-87e0-3a9c-9941-319bf832a63a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.20145 -1.43051e-06 7.62939e-06
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.6 0.6 0.6
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-3.06082e-07 0.156025 -3.9967e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>546959ea-08c5-366a-a306-7d0f282fa5dc</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.00012207 0.457539 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.9 0.9 0.9
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>601268d0-bed4-3833-a798-8157af3ae3ed</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.193943 -1.19887 2.75796
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.11709 1 1.06585
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.0164874 -8.68647e-09 2.27074e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<UUID>e5cd74ed-1557-36c9-9fa1-826605787b2f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>620afc4f-1d89-319e-b92c-a608494e85a6</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>30d7cf39-49b8-3aaa-b66d-f2c66eb0e484</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>57fb2216-6403-3133-a14b-c05c432644c1</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b9d6c2e5-87e0-3a9c-9941-319bf832a63a</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>601268d0-bed4-3833-a798-8157af3ae3ed</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>57ed8314-dbb4-40c3-b8fc-67831f28b349</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>grinch/vehicles/french/F88_AMX_13_105_grinch/normal/lod0/Hull.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e5cd74ed-1557-36c9-9fa1-826605787b2f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_187_PaperGift/normal/lod0/hd_env_UNI_187_PaperGift_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>620afc4f-1d89-319e-b92c-a608494e85a6</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_187_PaperGift/normal/lod0/hd_env_UNI_187_PaperGift_03.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>30d7cf39-49b8-3aaa-b66d-f2c66eb0e484</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_187_PaperGift/normal/lod0/hd_env_UNI_187_PaperGift_02.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>57fb2216-6403-3133-a14b-c05c432644c1</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_187_PaperGift/normal/lod0/hd_env_UNI_187_PaperGift_03.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b9d6c2e5-87e0-3a9c-9941-319bf832a63a</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_187_PaperGift/normal/lod0/hd_env_UNI_187_PaperGift_02.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>601268d0-bed4-3833-a798-8157af3ae3ed</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_187_PaperGift/normal/lod0/hd_env_UNI_187_PaperGift_04.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NodeFollower</type>
+			<version>1</version>
+			<component>
+				<UUID>57ed8314-dbb4-40c3-b8fc-67831f28b349</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>hull</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>57ed8314-dbb4-40c3-b8fc-67831f28b349</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>OnDisappearPrefabSpawner</type>
+			<version>1</version>
+			<component>
+				<UUID>e5cd74ed-1557-36c9-9fa1-826605787b2f</UUID>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>prefab</name>
+						<isAsset>true</isAsset>
+						<value>content/CGFPrefabs/grinch/presents/present_popout.prefab</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PresentComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>009ea323-15b5-3185-a26a-6e58d008ae49</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>top</name>
+						<link>1824b667-9bab-3cf8-81e1-41c4ce4fefab</link>
+					</property>
+					<property>
+						<name>rotationTarget</name>
+						<link>32038c0a-7f8e-3525-9d3d-6a1f76ee92bb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>fbfc4341-94ed-3f1d-af04-92bd3e428b02</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>top</name>
+						<link>69c441fb-1f5f-36d3-aec7-b93b001de423</link>
+					</property>
+					<property>
+						<name>rotationTarget</name>
+						<link>0199e106-c26e-3fe3-bd1c-f83e7f5c87eb</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1fa75ffd-1cd7-3177-9fcf-1f04e1dd2b20</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>top</name>
+						<link>56a86a33-ea48-3ff4-9271-62be68c096e4</link>
+					</property>
+					<property>
+						<name>rotationTarget</name>
+						<link>56c83214-ff09-3b49-9ffe-e1350cea200a</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e18318b8-4897-3207-8d09-a6bfb2cef6a2</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>top</name>
+						<link>9a20846f-d2a1-3515-b0d1-7201c4a4e313</link>
+					</property>
+					<property>
+						<name>rotationTarget</name>
+						<link>ddfe30e4-a508-390b-937a-fd6d94935e62</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>6179f3ae-1f07-3adf-aa57-b58db484266f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>top</name>
+						<link>546959ea-08c5-366a-a306-7d0f282fa5dc</link>
+					</property>
+					<property>
+						<name>rotationTarget</name>
+						<link>396ade36-1c27-3abe-ab5f-c22851307ba0</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PresentStackComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>c7363472-b39b-37f9-a5b4-9ce152ce5fa1</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>appearance</name>
+						<link>00000000-0000-0000-0000-000000000002</link>
+					</property>
+					<property>
+						<name>base</name>
+						<link>009ea323-15b5-3185-a26a-6e58d008ae49</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

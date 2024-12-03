@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.600000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Baby</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Baby_02.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>4.600000</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY2021_SlegShot/Baby_SlegShot01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>4.600000</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

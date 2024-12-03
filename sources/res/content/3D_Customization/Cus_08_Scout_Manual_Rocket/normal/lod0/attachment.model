@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_08_Scout_Manual_Rocket/normal/lod0/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_08_Scout_Manual_Rocket/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.241820 -0.010714 -0.941872</min>
+		<max>0.192850 0.337707 1.008027</max>
+	</visibilityBox>
+</root>

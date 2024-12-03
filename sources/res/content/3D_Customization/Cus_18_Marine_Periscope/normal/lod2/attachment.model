@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_18_Marine_Periscope/normal/lod2/attachment</nodefullVisual>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/Cus_18_Marine_Periscope/normal/lod3/attachment</parent>
+	<visibilityBox>
+		<min>-0.256661 -0.201176 -0.218521</min>
+		<max>0.310779 0.475190 0.593479</max>
+	</visibilityBox>
+</root>

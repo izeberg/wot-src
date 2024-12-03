@@ -103,7 +103,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       private var _currentTextField:TextField = null;
       
-      private var _vehicleAnimations:Object;
+      protected var _vehicleAnimations:Object;
       
       private var _isFlagBearer:Boolean = false;
       

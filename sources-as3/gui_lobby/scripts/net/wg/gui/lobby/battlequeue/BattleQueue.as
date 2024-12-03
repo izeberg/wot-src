@@ -30,11 +30,15 @@ package net.wg.gui.lobby.battlequeue
       
       private static const LAYOUT_TYPE_COMP7:String = "comp7";
       
+      private static const LAYOUT_TYPE_3_ROWS:String = "rowsCount3";
+      
       private static const LAYOUT_TYPE_BATTLE_ROYAL:String = "battleRoyale";
       
       private static const LIST_HEIGHT_COMP7:int = 350;
       
       private static const LIST_HEIGHT_BATTLE_ROYAL:int = 100;
+      
+      private static const LIST_HEIGHT_3_ROWS:int = 150;
       
       private static const LIST_HEIGHT_USUAL:int = 250;
       
@@ -95,6 +99,10 @@ package net.wg.gui.lobby.battlequeue
          if(param1 == LAYOUT_TYPE_BATTLE_ROYAL)
          {
             return LIST_HEIGHT_BATTLE_ROYAL;
+         }
+         if(param1 == LAYOUT_TYPE_3_ROWS)
+         {
+            return LIST_HEIGHT_3_ROWS;
          }
          return LIST_HEIGHT_USUAL;
       }

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>healer</name>
+			<UUID>1bd1e982-0de6-4684-adeb-35b39f0a646c</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>area</name>
+			<UUID>230e7fcb-f25c-4580-bc24-511cf0faa07f</UUID>
+			<flags>8</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>230e7fcb-f25c-4580-bc24-511cf0faa07f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>1bd1e982-0de6-4684-adeb-35b39f0a646c</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>1bd1e982-0de6-4684-adeb-35b39f0a646c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>230e7fcb-f25c-4580-bc24-511cf0faa07f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 -15 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CylinderArea</type>
+			<version>1</version>
+			<component>
+				<UUID>230e7fcb-f25c-4580-bc24-511cf0faa07f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Height</name>
+						<value>30</value>
+					</property>
+					<property>
+						<name>Radius</name>
+						<value>40</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Area trigger</type>
+			<version>1</version>
+			<component>
+				<UUID>230e7fcb-f25c-4580-bc24-511cf0faa07f</UUID>
+				<flags>35</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>GrinchHealZoneTriggerComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>230e7fcb-f25c-4580-bc24-511cf0faa07f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>trigger</name>
+						<link>230e7fcb-f25c-4580-bc24-511cf0faa07f</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

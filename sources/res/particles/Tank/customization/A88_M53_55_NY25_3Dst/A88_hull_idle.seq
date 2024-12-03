@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>headlight_L</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/headlight_mesh.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.335353 0.534009 3.676304</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.867000 0.867000 0.867000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>headlight_R</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/headlight_mesh.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.335350 0.534009 3.676300</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.867000 0.867000 0.867000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rays_L</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/normal/lod0/HeadLight_rays.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.335350 0.534009 3.672210</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>rays_L_copied</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/normal/lod0/HeadLight_rays.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.335350 0.534009 3.672210</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 1</name>
+		<type>model</type>
+		<resource>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod0/sequence_hull_L1.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.390549 0.798997 0.507496</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-22.990400 30.300100 0.000594</value>
+				<inTangent>99.280083 0.009947 0.004405</inTangent>
+				<outTangent>99.280083 0.009947 0.004405</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>-3.134383 30.302090 0.001475</value>
+				<inTangent>-32.520206 0.003042 0.003635</inTangent>
+				<outTangent>-32.520206 0.003042 0.003635</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>-25.043781 30.301575 0.001857</value>
+				<inTangent>-45.330673 -0.002480 0.000461</inTangent>
+				<outTangent>-45.330673 -0.002480 0.000461</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>-10.311951 30.301355 0.001468</value>
+				<inTangent>-24.725018 -0.004079 -0.000466</inTangent>
+				<outTangent>-24.725018 -0.004079 -0.000466</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>-30.830143 30.300179 0.001637</value>
+				<inTangent>-18.434181 -0.004856 -0.000326</inTangent>
+				<outTangent>-18.434181 -0.004856 -0.000326</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>-13.581976 30.299648 0.001304</value>
+				<inTangent>27.718536 -0.002270 -0.001140</inTangent>
+				<outTangent>27.718536 -0.002270 -0.001140</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>-18.715935 30.299334 0.001202</value>
+				<inTangent>35.816177 0.000727 -0.001005</inTangent>
+				<outTangent>35.816177 0.000727 -0.001005</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>-1.643292 30.299891 0.000969</value>
+				<inTangent>-7.876633 0.002706 -0.000335</inTangent>
+				<outTangent>-7.876633 0.002706 -0.000335</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.433333</startTime>
+				<value>-25.281170 30.300304 0.001114</value>
+				<inTangent>-12.999390 0.001676 -0.000673</inTangent>
+				<outTangent>-12.999390 0.001676 -0.000673</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>-3.770031 30.300604 0.000631</value>
+				<inTangent>-28.608120 0.001208 0.000337</inTangent>
+				<outTangent>-28.608120 0.001208 0.000337</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>-28.671164 30.300793 0.001088</value>
+				<inTangent>-57.661156 -0.001482 -0.000109</inTangent>
+				<outTangent>-57.661156 -0.001482 -0.000109</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>-22.990412 30.300110 0.000594</value>
+				<inTangent>34.084518 -0.004097 -0.002963</inTangent>
+				<outTangent>34.084518 -0.004097 -0.002963</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 1_copied</name>
+		<type>model</type>
+		<resource>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod0/sequence_hull_L1.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.390550 0.798997 0.507496</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-25.029060 -31.803228 0.000272</value>
+				<inTangent>166.459015 -0.002449 -0.002142</inTangent>
+				<outTangent>166.459015 -0.002449 -0.002142</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>2.714108 -31.803637 -0.000085</value>
+				<inTangent>16.286522 -0.001735 -0.001081</inTangent>
+				<outTangent>16.286522 -0.001735 -0.001081</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>-24.063086 -31.803841 -0.000089</value>
+				<inTangent>-56.986507 -0.000030 0.000293</inTangent>
+				<outTangent>-56.986507 -0.000030 0.000293</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>-20.744259 -31.803680 0.000012</value>
+				<inTangent>1.839887 -0.000853 -0.000232</inTangent>
+				<outTangent>1.839887 -0.000853 -0.000232</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>-23.449789 -31.804125 -0.000166</value>
+				<inTangent>47.453598 -0.001762 -0.000866</inTangent>
+				<outTangent>47.453598 -0.001762 -0.000866</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.933333</startTime>
+				<value>2.482930 -31.804325 -0.000321</value>
+				<inTangent>6.487957 -0.001208 0.000018</inTangent>
+				<outTangent>6.487957 -0.001208 0.000018</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>-26.966358 -31.804792 -0.000111</value>
+				<inTangent>17.871792 -0.000140 0.000882</inTangent>
+				<outTangent>17.871792 -0.000140 0.000882</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.433333</startTime>
+				<value>-0.184773 -31.804537 0.000102</value>
+				<inTangent>18.466488 -0.000268 0.001024</inTangent>
+				<outTangent>18.466488 -0.000268 0.001024</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>-22.812256 -31.804960 0.000332</value>
+				<inTangent>14.002346 0.000855 0.000710</inTangent>
+				<outTangent>14.002346 0.000855 0.000710</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>-1.982325 -31.804373 0.000404</value>
+				<inTangent>-6.650536 0.005281 -0.000178</inTangent>
+				<outTangent>-6.650536 0.005281 -0.000178</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>-25.029100 -31.803200 0.000272</value>
+				<inTangent>-138.280685 0.007038 -0.000792</inTangent>
+				<outTangent>-138.280685 0.007038 -0.000792</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

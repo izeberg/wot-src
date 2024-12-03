@@ -1,6 +1,7 @@
 import BigWorld, SoundGroups
-from CurrentVehicle import g_currentVehicle
 from frameworks.wulf import ViewFlags, ViewSettings, WindowLayer, WindowFlags
+from skeletons.gui.shared.utils import IHangarSpace
+from gui.Scaleform.daapi.view.lobby.customization.shared import isC11nEnabled
 from gui.impl.gen.view_models.views.lobby.customization.customization_rarity_reward_screen_model import CustomizationRarityRewardScreenModel
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyWindow
@@ -20,6 +21,7 @@ class CustomizationRarityRewardScreen(ViewImpl):
     __customizationService = dependency.descriptor(ICustomizationService)
     __lobbyCtx = dependency.descriptor(ILobbyContext)
     __slots__ = ('__element', '__isFirstEntry', '__uiLogger', '__sound')
+    __hangarSpace = dependency.descriptor(IHangarSpace)
     _REWARD_SOUND_ID = 'elements_cust_reward'
 
     def __init__(self, element, isFirstEntry):
@@ -43,7 +45,9 @@ class CustomizationRarityRewardScreen(ViewImpl):
          (
           self.viewModel.goToExterior, self.__onGoToExterior),
          (
-          self.viewModel.goToGarage, self.__onGoToGarage))
+          self.viewModel.goToGarage, self.__onGoToGarage),
+         (
+          self.__hangarSpace.onVehicleChanged, self.__onVehicleChanged))
 
     def _onLoading(self, *args, **kwargs):
         super(CustomizationRarityRewardScreen, self)._onLoading(*args, **kwargs)
@@ -52,7 +56,7 @@ class CustomizationRarityRewardScreen(ViewImpl):
             model.setTitle(self.__element.userName)
             model.setRarity(self.__element.rarity)
             model.setIsFirstAttachment(self.__isFirstEntry)
-            model.setIsExteriorEnabled(self.__isC11nEnabled())
+            model.setIsExteriorEnabled(isC11nEnabled())
         switchHangarOverlaySoundFilter(on=True)
         self.__sound = SoundGroups.g_instance.getSound2D(self._REWARD_SOUND_ID)
         self.__sound.play()
@@ -66,18 +70,18 @@ class CustomizationRarityRewardScreen(ViewImpl):
         self.__uiLogger = None
         return
 
+    def __onVehicleChanged(self):
+        self.viewModel.setIsExteriorEnabled(isC11nEnabled())
+
     def __onGoToExterior(self):
         self.__uiLogger.onClick(CustomizationButtons.TO_EXTERIOR, parentScreen=CustomizationViewKeys.CUSTOMIZATION_RARITY_REWARD_VIEW)
         self.destroyWindow()
-        BigWorld.callback(0.0, lambda : self.__customizationService.showCustomization() if self.__isC11nEnabled() else showHangar())
+        BigWorld.callback(0.0, lambda : self.__customizationService.showCustomization() if isC11nEnabled() else showHangar())
 
     def __onGoToGarage(self):
         self.__uiLogger.onClick(CustomizationButtons.TO_GARAGE, parentScreen=CustomizationViewKeys.CUSTOMIZATION_RARITY_REWARD_VIEW)
         self.destroyWindow()
         showHangar()
-
-    def __isC11nEnabled(self):
-        return self.__lobbyCtx.getServerSettings().isCustomizationEnabled() and g_currentVehicle.item and g_currentVehicle.item.isCustomizationEnabled()
 
 
 class CustomizationRarityRewardWindow(LobbyWindow):

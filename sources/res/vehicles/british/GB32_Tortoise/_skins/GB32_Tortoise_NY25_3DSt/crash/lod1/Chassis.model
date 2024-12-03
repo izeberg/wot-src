@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.897760 -0.000313 -3.701403</min>
+		<max>1.897760 1.156365 3.409594</max>
+	</visibilityBox>
+</root>

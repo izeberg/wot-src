@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_lines</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/SpriteLight01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.858000 -1.745000</value>
+				<inTangent>-0.000639 -0.002194 -0.000002</inTangent>
+				<outTangent>-0.000639 -0.002194 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>tank_guns</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 5.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.031373 0.909804 0.870588 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.031373 0.909804 0.870588 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.461539</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.461539</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>0.031373 0.909804 0.870588 0.700000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.031403</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.031403</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>-0.000000 -0.000000 0.000000 0.038147</inTangent>
+				<outTangent>-0.000000 -0.000000 0.000000 0.038147</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>tank_guns</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>4.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>39.999996 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>39.999996 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>8.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>6.646980 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>6.646980 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>8.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>-4.038463 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-4.038463 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>1.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>-0.362168 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.362168 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>4.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>0.513193 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.513193 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_circle</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/GunLightCircle.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.002594 0.133095 5.485350</value>
+				<inTangent>-0.000639 -0.002194 -0.000002</inTangent>
+				<outTangent>-0.000639 -0.002194 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>m_gun</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 5.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.031373 0.909804 0.870588 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 2.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.031373 0.909804 0.870588 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.461539</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.461539</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>0.031373 0.909804 0.870588 0.700000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.025113</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.025113</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.022445</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.022445</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>m_gun</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>4.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>39.999996 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>39.999996 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>8.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>5.751607 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>5.751607 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>8.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>-4.038463 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-4.038463 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>1.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>-0.334504 -0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.334504 -0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>4.000000 0.200000 0.000000 0.000000</value>
+				<inTangent>0.773073 0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.773073 0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_flash</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/GunLightFlash2.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 4.764618</value>
+				<inTangent>-0.000639 -0.002194 -0.000002</inTangent>
+				<outTangent>-0.000639 -0.002194 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Ray</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.031373 0.909804 0.870588 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.151129</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.151129</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.031373 0.909804 0.870588 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.058130</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.058130</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>GunGlow</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.031373 0.909804 0.870588 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 14.999999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 14.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.332190</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.332190</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.031373 0.909804 0.870588 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.101224</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.101224</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle 0</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/shot.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 5.483932</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

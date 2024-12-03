@@ -37,8 +37,8 @@
 				<slots/>
 			</block>
 			<block>
-				<class>OnPreviewVehicleSelected</class>
-				<id>OnPreviewVehicleSelected_1</id>
+				<class>OnPreviewVehicleOrStyleSelected</class>
+				<id>OnPreviewVehicleOrStyleSelected_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -84,8 +84,8 @@
 				<slots/>
 			</block>
 			<block>
-				<class>IsPreviewVehicleSelected</class>
-				<id>IsPreviewVehicleSelected_1</id>
+				<class>IsPreviewVehicleOrStyleSelected</class>
+				<id>IsPreviewVehicleOrStyleSelected_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -224,7 +224,7 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>OnPreviewVehicleSelected_1</from>
+				<from>OnPreviewVehicleOrStyleSelected_1</from>
 				<input>input</input>
 				<to>If_2</to>
 				<output>out</output>
@@ -248,7 +248,7 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>IsPreviewVehicleSelected_1</from>
+				<from>IsPreviewVehicleOrStyleSelected_1</from>
 				<input>a</input>
 				<to>Not_1</to>
 				<output>isSelected</output>

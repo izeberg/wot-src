@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>grinch/vehicles/chinese/Ch48_BZ_75_grinch/crash/lod3/Hull</nodefullVisual>
+	<parent>grinch/vehicles/chinese/Ch48_BZ_75_grinch/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.715430 -0.803238 -3.506276</min>
+		<max>1.718531 0.687725 3.742768</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/crash/lod0/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.485476 -0.610245 -0.737928</min>
+		<max>0.494670 0.582610 6.316280</max>
+	</visibilityBox>
+</root>

@@ -81,6 +81,14 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_hideTeaserTimer()
 
+    def as_setRewardKitsVisibleS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setRewardKitsVisible(value)
+
+    def as_setGiftEntryVisibleS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setGiftEntryVisible(value)
+
     def as_showSwitchToAmmunitionS(self):
         if self._isDAAPIInited():
             return self.flashObject.as_showSwitchToAmmunition()

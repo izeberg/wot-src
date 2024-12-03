@@ -2575,7 +2575,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/wdr2023/wdr2023_optional_devices)
+				$PARAMS(/wdr2024/wdr2024_optional_devices)
 				<name>seniorityAwardsProducts</name>
 				<type>url</type>
 			</item>
@@ -3063,6 +3063,92 @@
 			</item>
 		</value>
 	</tournamentsURL>
+	<newYearInfo>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>EU</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/HO2025Video/
+						<name>baseURL</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://worldoftanks.eu/news/general-news/holiday-ops-regulations-december-2024/
+						<name>aboutEventURL</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>ASIA</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/HO2025Video/
+						<name>baseURL</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://worldoftanks.asia/news/game-events/holiday-ops-regulations-december-2024/
+						<name>aboutEventURL</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>NA</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/HO2025Video/
+						<name>baseURL</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://worldoftanks.com/news/general-news/holiday-ops-regulations-december-2024/
+						<name>aboutEventURL</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>CN</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/HO2025Video/
+						<name>baseURL</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://wotgame.cn/zh-cn/news/news/holiday-ops-regulations-december-2024/
+						<name>aboutEventURL</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/HO2025Video/
+						<name>baseURL</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://worldoftanks.eu/news/general-news/holiday-ops-regulations-december-2024/
+						<name>aboutEventURL</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+		</value>
+	</newYearInfo>
 	<globalMapURL>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>

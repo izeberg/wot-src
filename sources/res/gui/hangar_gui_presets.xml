@@ -130,6 +130,10 @@
 					<name>comp7GrandTournamentBanner</name>
 					<visible>True</visible>
 				</component>
+				<component>
+					<name>fepNewYearWidget</name>
+					<visible>False</visible>
+				</component>
 			</components>
 		</preset>
 		<preset>

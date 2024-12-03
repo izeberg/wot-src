@@ -52,6 +52,14 @@ package net.wg.gui.lobby.hangar
       private static const FUN_RANDOM_FLAGS_OFFSET_Y:uint = 39;
       
       private static const REGISTER_WIDGET_DELAY:uint = 300;
+      
+      private static const QUESTS_FLAGS_NY_X_OFFSET_SMALL:int = -170;
+      
+      private static const QUESTS_FLAGS_NY_X_OFFSET_SMALL_MEDIUM:int = -200;
+      
+      private static const QUESTS_FLAGS_NY_X_OFFSET_MEDIUM:int = -215;
+      
+      private static const QUESTS_FLAGS_NY_X_OFFSET_BIG:int = -290;
        
       
       public var mcBackground:Sprite;
@@ -63,6 +71,8 @@ package net.wg.gui.lobby.hangar
       private var _widget:IHeaderEntryPoint = null;
       
       private var _data:HangarHeaderVO;
+      
+      private var _isNYWidgetVisible:Boolean = false;
       
       private var _scheduler:IScheduler;
       
@@ -129,6 +139,7 @@ package net.wg.gui.lobby.hangar
             {
                this.questsFlags.setData(this._data.questsGroups);
             }
+            this.mcBackground.visible = !this._data.isNYWidgetVisible;
          }
          if(isInvalid(InvalidationType.LAYOUT))
          {
@@ -146,14 +157,6 @@ package net.wg.gui.lobby.hangar
             else
             {
                this.secondaryEntryPoint.x = 0;
-               if(this._widget)
-               {
-                  this.questsFlags.offsetRightSideX = (this._widget.width >> 1) + this._widget.marginRight;
-               }
-               else
-               {
-                  this.questsFlags.offsetRightSideX = 0;
-               }
             }
             if(this.hasWidget(FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET))
             {
@@ -168,6 +171,29 @@ package net.wg.gui.lobby.hangar
             {
                this.questsFlags.flagsOffsetY = HeaderQuestsFlags.DEFAULT_FLAGS_OFFSET_Y;
             }
+            if(this._data && this._data.isNYWidgetVisible)
+            {
+               if(App.appWidth <= StageSizeBoundaries.WIDTH_1280)
+               {
+                  this.questsFlags.x = QUESTS_FLAGS_NY_X_OFFSET_SMALL;
+               }
+               else if(App.appWidth <= StageSizeBoundaries.WIDTH_1366)
+               {
+                  this.questsFlags.x = QUESTS_FLAGS_NY_X_OFFSET_SMALL_MEDIUM;
+               }
+               else if(App.appWidth <= StageSizeBoundaries.WIDTH_1600)
+               {
+                  this.questsFlags.x = QUESTS_FLAGS_NY_X_OFFSET_MEDIUM;
+               }
+               else
+               {
+                  this.questsFlags.x = QUESTS_FLAGS_NY_X_OFFSET_BIG;
+               }
+            }
+            else
+            {
+               this.questsFlags.x = Values.ZERO;
+            }
          }
       }
       
@@ -180,6 +206,7 @@ package net.wg.gui.lobby.hangar
          this._data = param1;
          invalidateState();
          invalidateData();
+         invalidateLayout();
       }
       
       public function as_addEntryPoint(param1:String) : void

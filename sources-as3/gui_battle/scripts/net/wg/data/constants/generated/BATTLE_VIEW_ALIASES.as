@@ -202,6 +202,8 @@ package net.wg.data.constants.generated
       public static const COMP7_TANK_CAROUSEL_FILTER_POPOVER:String = "comp7TankCarouselFilterPopover";
       
       public static const COMP7_RECON_FLIGHT:String = "comp7ReconFlight";
+      
+      public static const GRINCH_HUD:String = "grinchHud";
        
       
       public function BATTLE_VIEW_ALIASES()

@@ -1,0 +1,3806 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "activityReward/tooltip/body/action"
+msgstr "访客一定会好好使用您带来的物品。"
+
+msgid "activityReward/tooltip/body/decoration"
+msgstr "用来装点节日村镇的漂亮装饰物。"
+
+msgid "activityReward/tooltip/body/story"
+msgstr "杰森很乐意与您分享的精彩故事。"
+
+msgid "activityReward/tooltip/header/action"
+msgstr "镜头"
+
+msgid "activityReward/tooltip/header/decoration"
+msgstr "村镇装饰物"
+
+msgid "activityReward/tooltip/header/story"
+msgstr "故事"
+
+msgid "allTown/defaultHangar"
+msgstr "使用资源提高圣诞树、集市和设施的等级。"
+
+msgid "allTown/hello"
+msgstr "欢迎！"
+
+msgid "allTown/maxLevel"
+msgstr "您的村镇已升至最高等级。请尽情享受这迷人的美景！"
+
+msgid "applyDiscountWindow/compatibleCheckBox/label"
+msgstr "只显示已研发坦克"
+
+msgid "applyDiscountWindow/infoText"
+msgstr "选择一辆%(level)s级坦克并为其应用%(discount)s%%银币折扣。此列表中不会显示已经应用过相同或更大折扣的坦克。"
+
+msgid "applyDiscountWindow/title"
+msgstr "选择一辆%(level)s级坦克"
+
+msgid "backButton/NewYearCelebrityView"
+msgstr "任务"
+
+msgid "backButton/NyFriendCelebrityView"
+msgstr "任务"
+
+msgid "backButton/NyFriendGladeView"
+msgstr "好友的广场"
+
+msgid "backButton/NyFriendsView"
+msgstr "好友"
+
+msgid "backButton/NyGiftMachineView"
+msgstr "终端"
+
+msgid "backButton/NyGladeView"
+msgstr "广场"
+
+msgid "backButton/NyInfoView"
+msgstr "活动"
+
+msgid "backButton/NyMarketplaceView"
+msgstr "商店"
+
+msgid "backButton/NyRewardsInfoView"
+msgstr "奖励"
+
+msgid "backButton/capitalizedLabel"
+msgstr "返回"
+
+msgid "backButton/label"
+msgstr "返回"
+
+msgid "bonusPercentage"
+msgstr "%(operand) %(value)%"
+
+msgid "breedActionButtonWidget/text"
+msgstr "为霞飞狗解锁新犬种。"
+
+msgid "breedActionButtonWidget/title"
+msgstr "改变霞飞狗的外观"
+
+msgid "breedPurchase/description"
+msgstr ""
+"冬季假日充满奇迹。今年，奇迹之一就是您的朋友霞飞狗将改头换面。如果愿意，您可以让心爱的黑贝在眨眼之间变成威风凛凛的阿拉斯加哈士奇。霞飞狗毛发如雪般洁白，眼睛像北极光一样璀璨，威风的新外观将把野性之魂带到您的车库。"
+
+msgid "breedPurchase/header"
+msgstr "全新犬种"
+
+msgid "breedPurchase/title"
+msgstr "阿拉斯加哈士奇"
+
+msgid "bundlePurchaseDialog/content/customization/description/lastDay/level2"
+msgstr "霞飞狗的个性化套装将只开放使用不到1天，但您可保留签名！"
+
+msgid "bundlePurchaseDialog/content/customization/description/lastDay/level3"
+msgstr "霞飞狗的个性化套装将只开放使用不到1天，但您可保留贴花！"
+
+msgid "bundlePurchaseDialog/content/customization/description/lastDay/level4"
+msgstr "霞飞狗的个性化套装将只开放使用不到1天，但您可保留2D风格！"
+
+msgid "bundlePurchaseDialog/content/customization/description/level2"
+msgid_plural "bundlePurchaseDialog/content/customization/description/level2"
+msgstr[0] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留签名！"
+msgstr[1] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留签名！"
+msgstr[2] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留签名！"
+
+msgid "bundlePurchaseDialog/content/customization/description/level3"
+msgid_plural "bundlePurchaseDialog/content/customization/description/level3"
+msgstr[0] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留贴花！"
+msgstr[1] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留贴花！"
+msgstr[2] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留贴花！"
+
+msgid "bundlePurchaseDialog/content/customization/description/level4"
+msgid_plural "bundlePurchaseDialog/content/customization/description/level4"
+msgstr[0] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留2D风格！"
+msgstr[1] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留2D风格！"
+msgstr[2] "霞飞狗的个性化套装将只开放使用%(daysCount)s天，但您可保留2D风格！"
+
+msgid "bundlePurchaseDialog/content/customization/title/level2"
+msgstr "%(amount)s款签名和一套霞飞狗进阶个性化套装"
+
+msgid "bundlePurchaseDialog/content/customization/title/level3"
+msgstr "%(amount)s款贴花和一套霞飞狗豪华个性化套装"
+
+msgid "bundlePurchaseDialog/content/customization/title/level4"
+msgstr "2D风格和一套霞飞狗超级个性化套装"
+
+msgid "bundlePurchaseDialog/content/label"
+msgstr "该礼袋已激活。"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level1"
+msgstr "基础礼袋会掉落下列物品之一:"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level2"
+msgstr "每个进阶礼袋会掉落下列物品之一:"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level3"
+msgstr "每个豪华礼袋会掉落下列物品之一:"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level4"
+msgstr "每个超级礼袋会掉落下列物品之一:"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level1"
+msgstr "基础礼包"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level2"
+msgstr "进阶礼包"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level3"
+msgstr "豪华礼包"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level4"
+msgstr "超级礼包"
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/body/level3"
+msgstr "购买进阶礼包以解锁豪华礼包。"
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/body/level4"
+msgstr "购买豪华礼包以解锁超级礼包。"
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/header/level3"
+msgstr "购买进阶礼包"
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/header/level4"
+msgstr "购买豪华礼包"
+
+msgid "celebrityChallenge/backLabel"
+msgstr "重要使命"
+
+msgid "celebrityGuestQuest/confirm/acceptButtonText"
+msgstr "购买"
+
+msgid "celebrityGuestQuest/confirm/cancelButtonText"
+msgstr "取消"
+
+msgid "celebrityGuestQuest/confirm/content"
+msgstr "确认购买%(questId)s？"
+
+msgid "celebrityGuestQuest/confirm/price"
+msgstr "价格:"
+
+msgid "challenge/celebrityAnimation/button"
+msgstr "前往重要使命"
+
+msgid "challenge/dialogs/discount/apply"
+msgstr "应用"
+
+msgid "challenge/dialogs/discount/reject"
+msgstr "取消"
+
+msgid "challenge/dialogs/discount/text"
+msgstr ""
+"为%(inherit_Open)s%(vehicleIcon)s%(vehicleName)s%(inherit_Close)s应用%(creamColor_Open)s%(percent)s%银币折扣%(creamColor_Close)s？"
+
+msgid "challenge/dialogs/replacement/apply"
+msgstr "替换"
+
+msgid "challenge/dialogs/replacement/counter"
+msgstr "可替换次数: %(count)s"
+
+msgid "challenge/dialogs/replacement/description"
+msgstr "替换任务后，任务进度将重置。"
+
+msgid "challenge/dialogs/replacement/reject"
+msgstr "取消"
+
+msgid "challenge/dialogs/replacement/title/diligence"
+msgstr "替换为在1场战斗中完成的任务？"
+
+msgid "challenge/dialogs/replacement/title/skill"
+msgstr "替换为在任意场次的战斗中完成的任务？"
+
+msgid "collectedResourceRewardScreen/button/accept"
+msgstr "了解！"
+
+msgid "collectedResourceRewardScreen/button/toStyle"
+msgstr "前往风格"
+
+msgid "collectedResourceRewardScreen/header/subtitle/multiReward"
+msgstr "已获得从挚友村镇收集资源的奖励"
+
+msgid "collectedResourceRewardScreen/header/subtitle/singleReward"
+msgstr ""
+"已获得从挚友村镇收集%(whiteSpanish_Open)s%(numberOfRewards)s次%(whiteSpanish_Close)s资源的奖励"
+
+msgid "collectedResourceRewardScreen/header/title"
+msgstr "恭喜！"
+
+msgid "collectedResourceRewardScreen/stylePreview/backLabel"
+msgstr "奖励"
+
+msgid "common/dashes"
+msgstr "- - -"
+
+msgid "common/resources"
+msgid_plural "plural/common/resources"
+msgstr[0] "%(amount)s个资源"
+msgstr[1] "%(amount)s个资源"
+msgstr[2] "%(amount)s个资源"
+
+msgid "confirmResetLootboxStatistics/cancel"
+msgstr "取消"
+
+msgid "confirmResetLootboxStatistics/description"
+msgstr "已开启补给品的所有数据都将被移除。"
+
+msgid "confirmResetLootboxStatistics/submit"
+msgstr "重置"
+
+msgid "confirmResetLootboxStatistics/title"
+msgstr "重置数据？"
+
+msgid "customizationObject/marker/nonUpgradable"
+msgstr "！"
+
+msgid "customizationObjectTooltip/conjunction"
+msgstr "和"
+
+msgid "customizationObjectTooltip/costToUpgrade"
+msgstr "%(creamColor_Open)s等级%(level)s%(creamColor_Close)s需要: %(cost)"
+
+msgid "customizationObjectTooltip/description/finished/Fair"
+msgstr "您已达到集市的最高等级。"
+
+msgid "customizationObjectTooltip/description/finished/Fir"
+msgstr "您已达到圣诞树的最高等级。"
+
+msgid "customizationObjectTooltip/description/finished/Installation"
+msgstr "您已达到设施的最高等级。"
+
+msgid "customizationObjectTooltip/description/headquartersChallenge"
+msgstr ""
+"进入指挥部，完成杰森的任务和重要使命，获取奖励。\n"
+"\n"
+"完成杰森的重要使命将获得收益加成。"
+
+msgid "customizationObjectTooltip/description/progress/Fair"
+msgstr "升级集市以提高节日气氛等级。每升至一个新的集市等级，即可解锁新的集市栏位和相应的新装饰物。"
+
+msgid "customizationObjectTooltip/description/progress/Fir"
+msgstr "升级圣诞树以提高节日气氛等级。 每升至一个新的圣诞树等级，即可解锁新的圣诞树栏位和相应的新装饰物(颜色栏位除外)。"
+
+msgid "customizationObjectTooltip/description/progress/Installation"
+msgstr "升级设施以提高节日气氛等级。每升至一个新的设施等级，即可解锁新的设施栏位和相应的新装饰物。"
+
+msgid "customizationObjectTooltip/description/resources/default"
+msgstr ""
+"资源可用于完成重要使命，提高圣诞树、设施和集市的等级，以及进行其他操作。\n"
+"每种类型每天可收集%(brownColor_Open)s%(collectAmount)s%(brownColor_Close)s个。\n"
+"如果错过1天或数天，每种类型将能收集%(brownColor_Open)s%(collectAmountExtra)s%(brownColor_Close)s个。系统仅补偿所错过的%(brownColor_Open)s1%(brownColor_Close)s天的资源。"
+
+msgid "customizationObjectTooltip/description/resources/finished"
+msgstr ""
+"您已收集了今年村镇中的所有资源！\n"
+"查看获取更多资源的其他方法。"
+
+msgid "customizationObjectTooltip/objectName/Fair"
+msgstr "集市"
+
+msgid "customizationObjectTooltip/objectName/Fir"
+msgstr "圣诞树"
+
+msgid "customizationObjectTooltip/objectName/Installation"
+msgstr "设施"
+
+msgid "customizationObjectTooltip/objectName/Resources"
+msgstr "资源"
+
+msgid "customizationObjectTooltip/objectName/headquartersChallenge"
+msgstr "指挥部"
+
+msgid "customizationObjectTooltip/objectStatus/headquartersChallenge"
+msgstr "杰森的住所"
+
+msgid "customizationObjectTooltip/objectStatus/initial"
+msgstr "尚未达到等级。"
+
+msgid "customizationObjectTooltip/objectStatus/progress"
+msgstr "等级%(currentLvl)s/%(maxLvl)s"
+
+msgid "customizationObjectTooltip/objectStatus/resources/available"
+msgstr "可收集资源"
+
+msgid "customizationObjectTooltip/objectStatus/resources/collected"
+msgstr "已收集"
+
+msgid "customizations/inscription"
+msgstr "%(name)s签名"
+
+msgid "customizations/projectionDecal"
+msgstr "%(name)s贴花"
+
+msgid "customizations/style"
+msgstr "%(name)s2D风格"
+
+msgid "dailyQuests/info/buttons/submit"
+msgstr "收到！"
+
+msgid "dailyQuests/info/description"
+msgstr ""
+"假日行动2025期间，完成普通和奖励日常任务，除了能获得其他奖励外，还能获得{fff_Open}随机活动资源{fff_Close}。一个普通任务为固定任务，每天开放供您完成。"
+
+msgid "dailyQuests/info/title"
+msgstr "日常任务的随机资源"
+
+msgid "decorationTypes/air_balloon"
+msgstr "热气球"
+
+msgid "decorationTypes/attraction"
+msgstr "游乐设施"
+
+msgid "decorationTypes/ball"
+msgstr "吊饰"
+
+msgid "decorationTypes/bridge"
+msgstr "宏伟的高架桥"
+
+msgid "decorationTypes/castle"
+msgstr "尼德堡"
+
+msgid "decorationTypes/color_fir"
+msgstr "颜色"
+
+msgid "decorationTypes/dog_bowl"
+msgstr "狗碗"
+
+msgid "decorationTypes/dog_breed"
+msgstr "犬种"
+
+msgid "decorationTypes/dog_collar"
+msgstr "狗狗项圈"
+
+msgid "decorationTypes/dog_house"
+msgstr "狗垫"
+
+msgid "decorationTypes/dog_toy"
+msgstr "狗狗玩具"
+
+msgid "decorationTypes/exposition"
+msgstr "科技展物"
+
+msgid "decorationTypes/ferris_wheel"
+msgstr "摩天轮"
+
+msgid "decorationTypes/floor"
+msgstr "礼物"
+
+msgid "decorationTypes/garland_fair"
+msgstr "彩灯: 集市"
+
+msgid "decorationTypes/garland_fir"
+msgstr "彩灯: 圣诞树"
+
+msgid "decorationTypes/garland_installation"
+msgstr "彩灯: 设施"
+
+msgid "decorationTypes/gift"
+msgstr "树裙饰品"
+
+msgid "decorationTypes/ground_light"
+msgstr "小型照明"
+
+msgid "decorationTypes/hanging"
+msgstr "吊饰"
+
+msgid "decorationTypes/house_decoration"
+msgstr "房屋"
+
+msgid "decorationTypes/house_lamp"
+msgstr "小型照明"
+
+msgid "decorationTypes/kiosk"
+msgstr "摊位"
+
+msgid "decorationTypes/kitchen"
+msgstr "厨房"
+
+msgid "decorationTypes/pavilion"
+msgstr "观景亭"
+
+msgid "decorationTypes/pyro"
+msgstr "烟火"
+
+msgid "decorationTypes/random"
+msgstr "随机装饰物类型"
+
+msgid "decorationTypes/sculpture"
+msgstr "雕像"
+
+msgid "decorationTypes/sculpture_light"
+msgstr "雕像灯饰"
+
+msgid "decorationTypes/snow_item"
+msgstr "雪雕"
+
+msgid "decorationTypes/snowman"
+msgstr "雪人"
+
+msgid "decorationTypes/street_garland"
+msgstr "外部彩灯"
+
+msgid "decorationTypes/table"
+msgstr "餐桌"
+
+msgid "decorationTypes/top"
+msgstr "树顶饰品"
+
+msgid "decorationTypes/typeDisplay/ball"
+msgstr "吊饰"
+
+msgid "decorationTypes/typeDisplay/floor"
+msgstr "树裙饰品"
+
+msgid "decorationTypes/typeDisplay/garland_fir"
+msgstr "彩灯"
+
+msgid "decorationTypes/typeDisplay/ground_light"
+msgstr "小型照明"
+
+msgid "decorationTypes/typeDisplay/kitchen"
+msgstr "厨房"
+
+msgid "decorationTypes/typeDisplay/random"
+msgstr "随机"
+
+msgid "decorationTypes/typeDisplay/sculpture"
+msgstr "雕像"
+
+msgid "decorationTypes/typeDisplay/sculpture_light"
+msgstr "雕像灯饰"
+
+msgid "decorationTypes/typeDisplay/table"
+msgstr "餐桌"
+
+msgid "decorationTypes/typeDisplay/top"
+msgstr "树顶饰品"
+
+msgid "decorationTypes/typeDisplay/trees"
+msgstr "外部彩灯"
+
+msgid "decorations/tooltip/color_fir"
+msgstr "颜色不会影响节日气氛等级。"
+
+msgid "decorations/tooltip/dogDecoration/locked/description/sack_1"
+msgstr "购买进阶礼包才能解锁该物品"
+
+msgid "decorations/tooltip/dogDecoration/locked/description/sack_2"
+msgstr "购买豪华礼包才能解锁该物品"
+
+msgid "decorations/tooltip/dogDecoration/locked/description/sack_3"
+msgstr "购买超级礼包才能解锁该物品"
+
+msgid "decorations/tooltip/dogDecoration/rented/description/base"
+msgid_plural ""
+"plural/decorations/tooltip/dogDecoration/rented/description/base"
+msgstr[0] ""
+"该租用物品的租期还有%(brownColor_Open)s%(daysCount)s天%(brownColor_Close)s，之后物品将从您的账号中移除，系统不给予补偿。"
+msgstr[1] ""
+"该租用物品的租期还有%(brownColor_Open)s%(daysCount)s天%(brownColor_Close)s，之后物品将从您的账号中移除，系统不给予补偿。"
+msgstr[2] ""
+"该租用物品的租期还有%(brownColor_Open)s%(daysCount)s天%(brownColor_Close)s，之后物品将从您的账号中移除，系统不给予补偿。"
+
+msgid "decorations/tooltip/dogDecoration/rented/description/lastDay"
+msgstr ""
+"租用物品的租期还有%(brownColor_Open)s少于1天%(brownColor_Close)s，之后物品将从您的账号中移除，系统不给予补偿。"
+
+msgid "decorations/tooltip/dogDecoration/subtitle"
+msgstr "%(setName)s中的%(decorationType)s"
+
+msgid "decorations/tooltip/notaffect"
+msgstr "装饰物不会影响节日气氛等级。"
+
+msgid "decorations/tooltip/source/adventCalendar"
+msgstr "从每日精选中获得。"
+
+msgid "decorations/tooltip/source/bigBoxes"
+msgstr "从大型补给品中获得。"
+
+msgid "decorations/tooltip/source/customizationObject/Fair"
+msgstr "因升级集市而获得。"
+
+msgid "decorations/tooltip/source/customizationObject/Fir"
+msgstr "因升级圣诞树而获得。"
+
+msgid "decorations/tooltip/source/customizationObject/Installation"
+msgstr "因升级设施而获得。"
+
+msgid "decorations/tooltip/source/dog"
+msgstr "从霞飞狗礼袋中获得。"
+
+msgid "decorations/tooltip/source/guest"
+msgstr "因完成特定杰森的重要使命而获得。"
+
+msgid "decorations/tooltip/unavailable/description/adventCalendar"
+msgstr "该物品可从每日精选中获取。"
+
+msgid "decorations/tooltip/unavailable/description/bigBoxes"
+msgstr "可从大型补给品中获取，并放置在所有对应的栏位中。"
+
+msgid "decorations/tooltip/unavailable/description/colorFir/adventCalendar"
+msgstr "该颜色可从每日精选中获取。"
+
+msgid "decorations/tooltip/unavailable/description/colorFir/bigBoxes"
+msgstr "圣诞树的颜色可从大型补给品中获取。"
+
+msgid "decorations/tooltip/unavailable/description/dog"
+msgstr "可从霞飞狗的礼袋中获取。"
+
+msgid "decorations/tooltip/unavailable/description/fair"
+msgstr "提高装饰区域等级即可解锁新的栏位和相应组别的新装饰物。可使用圣洁翡翠升级集市。"
+
+msgid "decorations/tooltip/unavailable/description/fir"
+msgstr "提高装饰区域等级即可解锁新的栏位和相应组别的新装饰物，颜色除外。可使用新生岩晶升级圣诞树。"
+
+msgid "decorations/tooltip/unavailable/description/guest"
+msgstr "完成特定杰森的重要使命即可获得。"
+
+msgid "decorations/tooltip/unavailable/description/installation"
+msgstr "提高装饰区域等级即可解锁新的栏位和相应组别的新装饰物。可使用新生岩晶和圣洁翡翠升级设施。"
+
+msgid "decorations/tooltip/unavailable/specific/title"
+msgstr "%(toyName)s当前无法使用"
+
+msgid "decorations/tooltip/unavailable/title"
+msgstr "装饰物当前无法使用"
+
+msgid "dialog/purchase/button/buy"
+msgstr "购买"
+
+msgid "dialog/purchase/button/notEnoughCredits"
+msgstr "获取更多银币"
+
+msgid "dialog/purchase/button/notEnoughGold"
+msgstr "获取更多金币"
+
+msgid "dialog/purchase/tooltip/unavailable/body"
+msgstr "由于技术原因暂时无法购买。请稍后再试。"
+
+msgid "dialog/purchase/tooltip/unavailable/header"
+msgstr "暂时无法购买"
+
+msgid "friends/card/collect"
+msgstr "从挚友的村镇中收集资源"
+
+msgid "friends/card/empty/available"
+msgstr "用星星标记您的挚友。"
+
+msgid "friends/card/empty/cooldown"
+msgstr "倒计时停止后，您即可把好友添加为挚友"
+
+msgid "friends/card/empty/promo/description"
+msgstr "您可以在他们的村镇中收集资源，每种类型每天最多%(value)s个。"
+
+msgid "friends/card/empty/promo/title"
+msgstr "添加更多好友！"
+
+msgid "friends/card/moveToHangar"
+msgstr "前往好友的村镇"
+
+msgid "friends/card/resourcesCollected"
+msgstr "您的好友所收集的资源"
+
+msgid "friends/card/visited"
+msgstr "好友访问您村镇的次数"
+
+msgid "friends/failure/message"
+msgstr "更新您的好友村镇列表时发生错误。如果该错误持续存在，请重新进入该版块或稍后再试。"
+
+msgid "friends/failure/title"
+msgstr "更新列表时发生错误"
+
+msgid "friends/glade/welcomeText"
+msgstr ""
+"欢迎访问%(creamColor_Open)s%(friendName)s%(creamColor_Close)s的村镇: "
+"%(creamColor_Open)s%(hangarName)s%(creamColor_Close)s"
+
+msgid "friends/header/best"
+msgstr "挚友: %(counter)s%(infoIcon)s"
+
+msgid "friends/header/bestCounter"
+msgstr "%(current)s/%(total)s"
+
+msgid "friends/header/friends"
+msgstr "好友: %(amount)s"
+
+msgid "friends/hint"
+msgstr "使用%(icon)s来标记您的挚友。您每天可以从每位挚友的村镇中收集一次资源，而且他们毫无损失。挚友列表可以更改。"
+
+msgid "friends/info/banner"
+msgstr "只有为其村镇选择了名称，且正在参加假日行动2025活动的好友才会显示。更新好友列表最多可能需要30分钟。"
+
+msgid "friends/loading/message"
+msgstr "正在更新您的好友列表..."
+
+msgid "friends/noFriends/subtitle/battle"
+msgstr "如果欣赏一名玩家的战斗表现，您可以在战斗结果界面中将其添加至好友列表。"
+
+msgid "friends/noFriends/subtitle/clan"
+msgstr "您可以将军团中意气相投的玩家添加至好友列表。"
+
+msgid "friends/noFriends/subtitle/common"
+msgstr "好友将有助于您收集资源，每种类型每天最多%(value)s个。"
+
+msgid "friends/noFriends/subtitle/platoon"
+msgstr "如果喜欢与另外一名玩家组队战斗，您可以将其添加至好友列表以保持联系。"
+
+msgid "friends/noFriends/subtitle/social"
+msgstr "您可通过在游戏中搜索玩家昵称来将其添加至好友列表。昵称可在社交网络或者社群平台上找到。"
+
+msgid "friends/noFriends/title/battle"
+msgstr "在战斗结果界面中"
+
+msgid "friends/noFriends/title/clan"
+msgstr "在军团中"
+
+msgid "friends/noFriends/title/common"
+msgstr "寻找好友！"
+
+msgid "friends/noFriends/title/platoon"
+msgstr "在小队中"
+
+msgid "friends/noFriends/title/social"
+msgstr "从社交网络上"
+
+msgid "friends/search/backToList"
+msgstr "返回列表"
+
+msgid "friends/search/found"
+msgstr "找到: %(count)s"
+
+msgid "friends/search/notFound"
+msgstr "未找到使用该昵称的好友。"
+
+msgid "friends/search/placeholder"
+msgstr "搜索好友"
+
+msgid "friends/title"
+msgstr "从挚友的村镇中收集资源"
+
+msgid "friends/tooltip/clear"
+msgstr "清空"
+
+msgid "friends/tooltip/search"
+msgstr "搜索"
+
+msgid "friends/tooltips/commonInfo/bestFriends"
+msgstr ""
+"您每天可以从每位挚友的村镇中收集一次额外资源。\n"
+"\n"
+"这不会减少您的挚友可收集的资源数量。您的挚友列表可以更改。"
+
+msgid "friends/tooltips/commonInfo/friends"
+msgstr ""
+"您只能进入正在参加假日行动2025的好友的村镇。\n"
+"\n"
+"您的好友需要登录游戏并为其村镇选择名称才能参加该活动。"
+
+msgid "friends/tooltips/favorite/disabled/max"
+msgstr ""
+"您标记的好友不能超过%(creamColor_Open)s%(count)s名。%(creamColor_Close)s移除您一名挚友的标记，以标记这名好友。"
+
+msgid "friends/tooltips/favorite/disabled/thisYear"
+msgstr "您已收集了今年该挚友的村镇中的所有资源。"
+
+msgid "friends/tooltips/favorite/disabled/until"
+msgstr "标记可以在%(timer)s后移除"
+
+msgid "friends/tooltips/favorite/markAsBest"
+msgstr "将好友标记为挚友。"
+
+msgid "friends/tooltips/favorite/removeAsBest"
+msgstr "从挚友中移除。"
+
+msgid "friends/tooltips/player/status/inBattle"
+msgstr "在战斗中"
+
+msgid "friends/tooltips/player/status/offline"
+msgstr "离线"
+
+msgid "friends/tooltips/player/status/online"
+msgstr "在线"
+
+msgid "friends/tooltips/player/status/withServer"
+msgstr "%(status)s%(serverName)s"
+
+msgid "friends/tooltips/resources/unavailable/until"
+msgstr "距您可以从这名好友的村镇中收集更多资源还需要%(timer)s"
+
+msgid "friendsChallenge/challengeName/guest_A"
+msgstr ""
+"杰森的\n"
+"重要使命"
+
+msgid "friendsChallenge/challengeName/guest_cat"
+msgstr ""
+"红郡猫的\n"
+"重要使命"
+
+msgid "friendsChallenge/challengeName/tournament"
+msgstr ""
+"杰森的\n"
+"挑战"
+
+msgid "friendsChallenge/title"
+msgstr "%(creamColor_Open)s%(friendName)s%(creamColor_Close)s的活动进度"
+
+msgid "giftMachine/arrow/goToBuyTokens"
+msgstr ""
+"获取\n"
+"令牌"
+
+msgid "giftMachine/arrow/goToGiftMachine"
+msgstr ""
+"使用\n"
+"令牌"
+
+msgid "giftMachine/button/tooltip/description"
+msgstr "完成假日行动挑战和提高节日气氛等级可获得令牌奖励。"
+
+msgid "giftMachine/button/tooltip/title"
+msgstr "没有可用的令牌"
+
+msgid "giftMachine/buyTokensBlock/button"
+msgstr "前往购买"
+
+msgid "giftMachine/buyTokensBlock/description"
+msgstr "礼物种类繁多。祝您好运！"
+
+msgid "giftMachine/buyTokensBlock/resourcesTitle"
+msgstr "购买方式"
+
+msgid "giftMachine/buyTokensBlock/title"
+msgstr "更多令牌，更多礼物！"
+
+msgid "giftMachine/error"
+msgstr "错误"
+
+msgid "giftMachine/errorType"
+msgstr "完成操作时发生错误。"
+
+msgid "giftMachine/hint"
+msgstr "双击红色按钮或按下空格键2次即可跳过该动画。"
+
+msgid "giftMachine/idleAnimation/gifts"
+msgstr "获得礼物"
+
+msgid "giftMachine/idleAnimation/tokens"
+msgstr "获取令牌"
+
+msgid "giftMachine/idleAnimationWithCoins/button"
+msgstr "点击圆形红色按钮"
+
+msgid "giftMachine/purchaseUnavailable/conditions/button"
+msgstr "前往重要使命"
+
+msgid "giftMachine/purchaseUnavailable/conditions/challengeCompetedGuest"
+msgstr "完成全部杰森的重要使命"
+
+msgid "giftMachine/purchaseUnavailable/conditions/maxAtmosphereLevel"
+msgstr "达到节日气氛等级{level}"
+
+msgid "giftMachine/purchaseUnavailable/conditions/title"
+msgstr "购买令牌的条件"
+
+msgid "giftMachine/purchaseUnavailable/infoBlock/button"
+msgstr "前往村镇"
+
+msgid "giftMachine/purchaseUnavailable/infoBlock/description"
+msgstr "完成假日行动挑战和提高节日气氛等级可获令牌奖励。"
+
+msgid "giftMachine/purchaseUnavailable/infoBlock/title"
+msgstr "获得令牌奖励"
+
+msgid "giftMachine/rentBattles"
+msgstr "%(clockIcon)s租用战斗场次: %(battles)s"
+
+msgid "giftMachine/rentDays"
+msgstr "%(clockIcon)s租用天数: %(days)s"
+
+msgid "giftMachine/retry"
+msgstr "再次点击圆形红色按钮。"
+
+msgid "giftMachine/vehiclePreview/button/continue"
+msgstr "继续"
+
+msgid "giftMachine/vehiclePreview/button/goToHangar"
+msgstr "返回车库"
+
+msgid "giftMachine/vehiclePreview/button/lookInHangar"
+msgstr "车库中查看"
+
+msgid "giftMachine/vehiclePreview/rentBattles"
+msgstr "%(clockIcon)s租用战斗场次: %(days)s"
+
+msgid "giftMachine/vehiclePreview/rentDays"
+msgstr "%(clockIcon)s租用天数: %(days)s"
+
+msgid "giftMachineLootlistView/description"
+msgstr ""
+"每个%(icon)s%(creamColor_Open)s令牌%(creamColor_Close)s都有机会按以下几率为您带来这些物品之一:"
+
+msgid "giftMachineToken/tooltip/description"
+msgstr "使用令牌激活礼物终端。每使用一个令牌，您即可获得一份礼物。"
+
+msgid "giftMachineToken/tooltip/footerText"
+msgstr "完成假日行动挑战和提高节日气氛等级可获得令牌奖励。使用令牌激活礼物终端。"
+
+msgid "giftMachineToken/tooltip/label"
+msgstr "可用令牌"
+
+msgid "giftMachineToken/tooltip/title"
+msgstr "礼物终端令牌"
+
+msgid "giftMachineTokenPurchaseDialog/button/accept"
+msgstr "购买"
+
+msgid "giftMachineTokenPurchaseDialog/button/cancel"
+msgstr "取消"
+
+msgid "giftMachineTokenPurchaseDialog/button/disabledTooltip/description"
+msgstr "由于技术原因暂时无法购买。请稍后再试。"
+
+msgid "giftMachineTokenPurchaseDialog/button/disabledTooltip/title"
+msgstr "暂时无法购买"
+
+msgid "giftMachineTokenPurchaseDialog/button/purchasing"
+msgstr "正在购买..."
+
+msgid "giftMachineTokenPurchaseDialog/error"
+msgstr "购买时发生错误。请稍后再试。"
+
+msgid "giftMachineTokenPurchaseDialog/price"
+msgstr "价格: %(price)s"
+
+msgid "giftMachineTokenPurchaseDialog/title"
+msgid_plural "plural/giftMachineTokenPurchaseDialog/title"
+msgstr[0] "购买%(creamColor_Open)s%(amount)s%(creamColor_Close)s个礼物终端令牌？"
+msgstr[1] "购买%(creamColor_Open)s%(amount)s%(creamColor_Close)s个礼物终端令牌？"
+msgstr[2] "购买%(creamColor_Open)s%(amount)s%(creamColor_Close)s个礼物终端令牌？"
+
+msgid "guestD/empty/button"
+msgstr "前往村镇"
+
+msgid "guestD/empty/description"
+msgstr "通过升级您村镇中的圣诞树、集市和设施来达到节日气氛等级II。然后霞飞狗就会携任务、奖励、个性化元素，甚至全新外观来到这里。"
+
+msgid "guestD/empty/title"
+msgstr "霞飞狗即将到来"
+
+msgid "guestQuest/description/gift_a_1"
+msgstr "购买这台老式摄影机，捕捉假日行动的美好回忆。"
+
+msgid "guestQuest/description/gift_a_10"
+msgstr "购买这个北极熊灯雕，使您的村镇熠熠生辉。"
+
+msgid "guestQuest/description/gift_a_11"
+msgstr "购买这个战地修理箱，以备不时之需。"
+
+msgid "guestQuest/description/gift_a_12"
+msgstr "购买这辆卡车，感受节日的欢乐氛围。"
+
+msgid "guestQuest/description/gift_a_13"
+msgstr "购买这些灯，为村镇的右半边通电。"
+
+msgid "guestQuest/description/gift_a_14"
+msgstr "购买这款汽车模型，为您的村庄带来速度与时尚。"
+
+msgid "guestQuest/description/gift_a_15"
+msgstr "购买这些灯饰来装点杰森的指挥部。"
+
+msgid "guestQuest/description/gift_a_16"
+msgstr "购买这些道具，以便杰森为节日拍摄做好准备。"
+
+msgid "guestQuest/description/gift_a_17"
+msgstr "购买这套工具套装，把杰森雕得比平时更酷。"
+
+msgid "guestQuest/description/gift_a_18"
+msgstr "购买这款雪花地面工艺品，营造节日氛围。"
+
+msgid "guestQuest/description/gift_a_19"
+msgstr "购买这款防鲨枪模型，使杰森的火力更强劲。"
+
+msgid "guestQuest/description/gift_a_2"
+msgstr "购买这些漂流灯，照亮村镇的运河。"
+
+msgid "guestQuest/description/gift_a_20"
+msgstr "购买这个手提箱，里面装有执行绝密行动必备的物品。"
+
+msgid "guestQuest/description/gift_a_3"
+msgstr "为杰森最喜爱的汽车购买这套零件。"
+
+msgid "guestQuest/description/gift_a_4"
+msgstr "购买这瓶节日佳酿。"
+
+msgid "guestQuest/description/gift_a_5"
+msgstr "购买这款T恤，即可获得一件杰森独家周边。"
+
+msgid "guestQuest/description/gift_a_6"
+msgstr "购买这套制服，寻找武术灵感。"
+
+msgid "guestQuest/description/gift_a_7"
+msgstr "购买这艘装满礼物的节日之船。"
+
+msgid "guestQuest/description/gift_a_8"
+msgstr "购买这些道具，以便杰森为硬汉主题拍摄活动做好准备。"
+
+msgid "guestQuest/description/gift_a_9"
+msgstr "购买这些灯，为村镇的左半边通电。"
+
+msgid "guestQuest/description/gift_cat_1"
+msgstr "购买零食，以赢得猫咪的青睐。"
+
+msgid "guestQuest/description/gift_cat_2"
+msgstr "购买一台复古扫地机器人，坐着它到处转转。"
+
+msgid "guestQuest/description/gift_cat_3"
+msgstr "购买这款有品位的艺术模型——千万不要把它放在桌子边上。"
+
+msgid "guestQuest/mainDescriptionCompleted"
+msgstr "成功！您的访客收到了珍贵物品。"
+
+msgid "guestQuest/rewardItem/gift_a_1"
+msgstr "老式摄影机"
+
+msgid "guestQuest/rewardItem/gift_a_10"
+msgstr "北极熊灯雕"
+
+msgid "guestQuest/rewardItem/gift_a_11"
+msgstr "战地修理箱"
+
+msgid "guestQuest/rewardItem/gift_a_12"
+msgstr "节日卡车"
+
+msgid "guestQuest/rewardItem/gift_a_13"
+msgstr "高压电灯(右)"
+
+msgid "guestQuest/rewardItem/gift_a_14"
+msgstr "汽车模型"
+
+msgid "guestQuest/rewardItem/gift_a_15"
+msgstr "指挥部灯箱"
+
+msgid "guestQuest/rewardItem/gift_a_16"
+msgstr "节日拍摄道具"
+
+msgid "guestQuest/rewardItem/gift_a_17"
+msgstr "冷酷雕刻套装"
+
+msgid "guestQuest/rewardItem/gift_a_18"
+msgstr "雪花工艺品"
+
+msgid "guestQuest/rewardItem/gift_a_19"
+msgstr "防鲨枪模型"
+
+msgid "guestQuest/rewardItem/gift_a_2"
+msgstr "漂流灯"
+
+msgid "guestQuest/rewardItem/gift_a_20"
+msgstr "必备品手提箱"
+
+msgid "guestQuest/rewardItem/gift_a_3"
+msgstr "汽车零件"
+
+msgid "guestQuest/rewardItem/gift_a_4"
+msgstr "锡默尔斯多夫节日佳酿"
+
+msgid "guestQuest/rewardItem/gift_a_5"
+msgstr "纪念T恤"
+
+msgid "guestQuest/rewardItem/gift_a_6"
+msgstr "空手道服"
+
+msgid "guestQuest/rewardItem/gift_a_7"
+msgstr "礼物船"
+
+msgid "guestQuest/rewardItem/gift_a_8"
+msgstr "硬汉拍摄道具"
+
+msgid "guestQuest/rewardItem/gift_a_9"
+msgstr "高压电灯(左)"
+
+msgid "guestQuest/rewardItem/gift_cat_1"
+msgstr "零食"
+
+msgid "guestQuest/rewardItem/gift_cat_2"
+msgstr "复古扫地机器人"
+
+msgid "guestQuest/rewardItem/gift_cat_3"
+msgstr "玻璃艺术模型"
+
+msgid "guestQuest/unavailable/button"
+msgstr "前往村镇"
+
+msgid "guestQuest/unavailable/description"
+msgstr "通过升级您村镇中的圣诞树、集市和设施来达到节日气氛等级V。"
+
+msgid "guestQuest/unavailable/title"
+msgstr "红郡猫即将抵达"
+
+msgid "guestRewardView/description"
+msgstr "完成3个红郡猫的重要使命即可获得奖励"
+
+msgid "guestRewardView/title"
+msgstr "红郡猫已抵达您的村镇！"
+
+msgid "guestRewardView/toQuestsBtn"
+msgstr "前往红郡猫的重要使命"
+
+msgid "hangarNameDialog/accept"
+msgstr "保存"
+
+msgid "hangarNameDialog/cancel"
+msgstr "取消"
+
+msgid "hangarNameDialog/descriptionNew"
+msgstr "您以后将无法更改村镇名称。保存该名称？"
+
+msgid "hangarNameDialog/descriptionOriginal"
+msgstr "您以后将无法更改村镇名称。保存原名称？"
+
+msgid "hangarNameView/changeBtn/label"
+msgstr "随机生成"
+
+msgid "hangarNameView/close"
+msgstr "前往车库"
+
+msgid "hangarNameView/saveBtn/label"
+msgstr "保存原名称"
+
+msgid "hangarNameView/submitBtn/label"
+msgstr "保存新名称"
+
+msgid "hangarNameView/submitBtn/tooltip"
+msgstr "您尚未更改村镇名称"
+
+msgid "hangarNameView/title"
+msgstr "选择并保存村镇的新名称，或保存原名称。您以后将无法更改名称，因此请谨慎选择！"
+
+msgid "hangarNameView/welcome/description"
+msgstr "这是您村镇的名称。您可以稍后更改。"
+
+msgid "hangarNameView/welcome/title"
+msgstr "欢迎！"
+
+msgid "infoPage/description"
+msgstr ""
+"假日行动活动将从%(whiteSpanish_Open)s%(fromDate)s%(whiteSpanish_Close)s持续至%(whiteSpanish_Open)s%(toDate)s%(whiteSpanish_Close)s。您可收集资源来装饰和升级温馨的村镇，也可通过完成日常任务和杰森的重要使命来获得大量珍贵奖励、提高收益加成，同时还能访问好友的村镇。"
+
+msgid "infoPage/descriptions/body/kit"
+msgstr "每个大型补给品可能内含金币坦克、3D风格、3D附件或其他珍贵奖励。它还会赠送您金币和资源。"
+
+msgid "infoPage/descriptions/body/kitCN"
+msgstr "每个大型补给品可能内含金币坦克、3D风格、3D附件或其他珍贵奖励。大型补给品还会赠送您资源和其他珍贵物品。"
+
+msgid "infoPage/descriptions/body/mining"
+msgstr "完成日常任务获取资源，或者在您的村镇和挚友的村镇中收集它们。大型补给品也会掉落资源。"
+
+msgid "infoPage/descriptions/body/resource"
+msgstr "资源可用于各种目的，包括升级村镇、完成访客的重要使命，以及获得收益加成。"
+
+msgid "infoPage/descriptions/title/kit"
+msgstr "开启大型补给品并获得珍贵物品"
+
+msgid "infoPage/descriptions/title/mining"
+msgstr "从不同来源获取资源"
+
+msgid "infoPage/descriptions/title/resource"
+msgstr "使用节日货币: 资源"
+
+msgid "infoPage/toBuy"
+msgstr "前往购买"
+
+msgid "infoPage/toPortal"
+msgstr "活动详情"
+
+msgid "levelUpView/actionButton/toEvent"
+msgstr "前往活动"
+
+msgid "levelUpView/actionButton/toGiftmachine"
+msgstr "前往终端"
+
+msgid "levelUpView/actionButton/toGuestC"
+msgstr "前往红郡猫"
+
+msgid "levelUpView/actionButton/toGuestD"
+msgstr "前往霞飞狗"
+
+msgid "levelUpView/actionButton/toMarkertplace"
+msgstr "前往商店"
+
+msgid "levelUpView/actionButton/toRewards"
+msgstr "前往奖励"
+
+msgid "levelUpView/additionalRewards"
+msgstr "您同时获得:"
+
+msgid "levelUpView/congrats/levelUp"
+msgstr "节日气氛等级已提高！"
+
+msgid "levelUpView/congrats/maxLevel"
+msgstr "最高等级！"
+
+msgid "levelUpView/level"
+msgstr "等级%(level)s"
+
+msgid "levelUpView/okButton/default"
+msgstr "了解！"
+
+msgid "levelUpView/okButton/level1"
+msgstr "前往车库"
+
+msgid "levelUpView/restAdditionalRewards"
+msgstr "还有%(count)s个"
+
+msgid "levelUpView/rewards/description/primary"
+msgstr "获得{level}级假日行动坦克车位"
+
+msgid "levelUpView/rewards/guestD"
+msgstr "老朋友霞飞狗"
+
+msgid "levelUpView/rewards/info/guestD"
+msgstr "完成霞飞狗任务即可获得各种奖励，同时，购买霞飞狗礼包，还能为您的老朋友带来更珍贵的奖励和特殊礼物。"
+
+msgid "levelUpView/rewards/info/marketplace"
+msgstr "假日行动商店已解锁！"
+
+msgid "levelUpView/rewards/level"
+msgstr "等级%(level)s"
+
+msgid "levelUpView/rewards/subtitle"
+msgstr "%(level)s的奖励"
+
+msgid "levelUpView/rewards/title"
+msgstr "恭喜！"
+
+msgid "levelsRewards/lock/tooltip/description"
+msgstr "升级您村镇中的圣诞树、集市和设施来提高节日气氛等级。升级需要使用资源，如新生岩晶和圣洁翡翠。"
+
+msgid "levelsRewards/lock/tooltip/header"
+msgstr "尚未达到节日气氛等级"
+
+msgid "levelsRewards/renderer/tankwomanBtn/label"
+msgstr "招募"
+
+msgid "levelsRewards/tankWoman"
+msgstr "女性乘员"
+
+msgid "levelsRewards/vehiclesBtn/label"
+msgstr "假日行动坦克"
+
+msgid "lootBox/typeNames/goTo/Christmas"
+msgstr "圣诞补给品"
+
+msgid "lootBox/typeNames/goTo/Fairytale"
+msgstr "魔幻补给品"
+
+msgid "lootBox/typeNames/goTo/NewYear"
+msgstr "新年补给品"
+
+msgid "lootBox/typeNames/goTo/Oriental"
+msgstr "春节补给品"
+
+msgid "lootBox/typeNames/of/Christmas"
+msgstr "圣诞补给品"
+
+msgid "lootBox/typeNames/of/Fairytale"
+msgstr "魔幻补给品"
+
+msgid "lootBox/typeNames/of/NewYear"
+msgstr "新年补给品"
+
+msgid "lootBox/typeNames/of/Oriental"
+msgstr "春节补给品"
+
+msgid "lootBox/typeNames/to/Christmas"
+msgstr "圣诞补给品"
+
+msgid "lootBox/typeNames/to/Fairytale"
+msgstr "魔幻补给品"
+
+msgid "lootBox/typeNames/to/NewYear"
+msgstr "新年补给品"
+
+msgid "lootBox/typeNames/to/Oriental"
+msgstr "春节补给品"
+
+msgid "lootBox/typeNames/which/Christmas"
+msgstr "圣诞补给品"
+
+msgid "lootBox/typeNames/which/Fairytale"
+msgstr "魔幻补给品"
+
+msgid "lootBox/typeNames/which/NewYear"
+msgstr "新年补给品"
+
+msgid "lootBox/typeNames/which/Oriental"
+msgstr "春节补给品"
+
+msgid "lootBoxAutoOpen/reward/customization/label"
+msgstr "%(name)sx%(quantity)s"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/label"
+msgstr "x%(quantity)s"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/tooltip/body"
+msgstr ""
+"一种特殊的账号状态，您可以获得\n"
+"更多银币和经验，还能为您带来\n"
+"更多选择。"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/tooltip/header"
+msgstr "《坦克世界》高级账号天数: %(quantity)s"
+
+msgid "lootBoxMultiOpen/closeButton/empty"
+msgstr "了解！"
+
+msgid "lootBoxMultiOpen/closeButton/usual"
+msgstr "前往补给品"
+
+msgid "lootBoxMultiOpen/openButton"
+msgstr "再开启%(count)s个"
+
+msgid "lootBoxMultiOpen/remainingBoxes/empty"
+msgstr "没有可用的补给品"
+
+msgid "lootBoxMultiOpen/remainingBoxes/usual"
+msgstr "剩余补给品: %(count)s"
+
+msgid "lootBoxMultiOpen/serverError"
+msgstr "%(alertIcon)s开启补给品时发生错误: 服务器错误。"
+
+msgid "lootBoxPremiumMultiOpen/continueAutoOpen"
+msgstr "%(continueIcon)s继续自动开启"
+
+msgid "lootBoxPremiumMultiOpen/header/title"
+msgstr "从%(typeBoxes)s中获得的奖励"
+
+msgid "lootBoxPremiumMultiOpen/header/typeBoxes"
+msgstr "%(typeName)s"
+
+msgid "lootBoxPremiumMultiOpen/rowLabel"
+msgstr "补给品%(number)s"
+
+msgid "lootBoxPremiumMultiOpen/stopAutoOpen"
+msgstr "%(stopIcon)s暂停自动开启(%(count)s)"
+
+msgid "lootBoxPremiumMultiOpen/toBoxes"
+msgstr "前往补给品"
+
+msgid "mainView/balance/convertBtn/tooltip/body"
+msgstr "将您所拥有的资源转换成您所需要的资源。"
+
+msgid "mainView/balance/convertBtn/tooltip/header"
+msgstr "资源转换装置"
+
+msgid "marketplace/dialogs/buy/title"
+msgstr "购买%(name)s？"
+
+msgid "marketplace/dialogs/close"
+msgstr "关闭"
+
+msgid "marketplace/dialogs/purchase/acceptBtn"
+msgstr "购买"
+
+msgid "marketplace/dialogs/purchase/cancelBtn"
+msgstr "取消"
+
+msgid "marketplace/dialogs/purchase/toPay"
+msgstr "总计:"
+
+msgid "marketplace/dialogs/purchase/tooltips/acceptBtn/body"
+msgstr "由于技术原因暂时无法购买。请稍后再试。"
+
+msgid "marketplace/dialogs/purchase/tooltips/acceptBtn/header"
+msgstr "暂时无法购买"
+
+msgid "marketplace/kit/button/buy"
+msgstr "购买"
+
+msgid "marketplace/kit/button/toStyle"
+msgstr "风格预览"
+
+msgid "marketplace/kit/description/Atm"
+msgstr ""
+"假日行动%(year)s中提高节日气氛等级的奖励。该礼包可能内含风格。\n"
+"\n"
+"所应用的折扣取决于在假日行动%(year)s中达到的节日气氛等级(等级I除外)。"
+
+msgid "marketplace/kit/description/Bro"
+msgstr ""
+"在假日行动%(year)s的挚友的村镇中收集资源的奖励。该礼包可能内含风格、贴花和签名。\n"
+"\n"
+"所应用的折扣取决于之前获得的奖励数量。"
+
+msgid "marketplace/kit/description/Cat"
+msgstr ""
+"假日行动%(year)s中完成红郡猫的重要使命的奖励。该礼包可能包含风格、贴花和签名。\n"
+"\n"
+"所应用的折扣取决于您已拥有的奖励数量。"
+
+msgid "marketplace/kit/description/Dog"
+msgstr ""
+"在假日行动%(year)s中开启霞飞狗礼袋的奖励。该礼包可能内含2D风格、贴花或签名。\n"
+"\n"
+"所应用的折扣取决于您在往期活动中获得的奖励数量。"
+
+msgid "marketplace/kit/description/Gift2"
+msgstr ""
+"假日行动%(year)s中在挚友村镇中收集资源的奖励。该礼包可能包含风格、贴花和签名。\n"
+"\n"
+"所应用的折扣取决于之前获得的奖励数量。"
+
+msgid "marketplace/kit/description/GiftSystem"
+msgstr ""
+"假日快递%(year)s进度的奖励。该礼包可能包含风格、贴花和签名。\n"
+"\n"
+"所应用的折扣取决于之前获得的奖励数量。"
+
+msgid "marketplace/kit/description/Surprise"
+msgstr "假日行动%(year)s的惊喜奖励。内含2D风格。"
+
+msgid "marketplace/kit/description/default"
+msgstr ""
+"完成假日行动%(year)s收藏的奖励。该礼包可能包含风格、贴花、徽章以及签名。\n"
+"\n"
+"所应用的折扣取决于您已拥有的收藏数量。"
+
+msgid "marketplace/kit/discount"
+msgstr "-%(value)s%"
+
+msgid "marketplace/kit/name/Atm_ny23"
+msgstr "装饰盒子风格礼包"
+
+msgid "marketplace/kit/name/Atm_ny24"
+msgstr "\"巧克力礼物\"风格礼包"
+
+msgid "marketplace/kit/name/Bro_ny24"
+msgstr "\"人靠衣装\"风格礼包"
+
+msgid "marketplace/kit/name/Cat_ny23"
+msgstr "猫咪萌爪风格礼包"
+
+msgid "marketplace/kit/name/Cat_ny24"
+msgstr "\"猫咪爱盒子\"风格礼包"
+
+msgid "marketplace/kit/name/Christmas_ny19"
+msgstr "钢化玻璃风格礼包"
+
+msgid "marketplace/kit/name/Christmas_ny20"
+msgstr "姜饼装甲风格礼包"
+
+msgid "marketplace/kit/name/Christmas_ny21"
+msgstr "音阶风格礼包"
+
+msgid "marketplace/kit/name/Christmas_ny22"
+msgstr "隔热装甲风格礼包"
+
+msgid "marketplace/kit/name/Dog_ny24"
+msgstr "\"忠诚守护\"风格礼包"
+
+msgid "marketplace/kit/name/Fairytale_ny19"
+msgstr "沉重的礼物风格礼包"
+
+msgid "marketplace/kit/name/Fairytale_ny20"
+msgstr "柑橘风格礼包"
+
+msgid "marketplace/kit/name/Fairytale_ny21"
+msgstr "本命星盘风格礼包"
+
+msgid "marketplace/kit/name/Fairytale_ny22"
+msgstr "机器人涂装风格礼包"
+
+msgid "marketplace/kit/name/Gift2_ny23"
+msgstr "怀念童年风格礼包"
+
+msgid "marketplace/kit/name/GiftSystem_ny22"
+msgstr "兄弟情深风格礼包"
+
+msgid "marketplace/kit/name/Mega_ny20"
+msgstr "圣诞树装饰贴花"
+
+msgid "marketplace/kit/name/Mega_ny21"
+msgstr "无限欢乐贴花"
+
+msgid "marketplace/kit/name/Mega_ny22"
+msgstr "仙境贴花"
+
+msgid "marketplace/kit/name/NewYear_ny19"
+msgstr "王牌坦克手风格礼包"
+
+msgid "marketplace/kit/name/NewYear_ny20"
+msgstr "地毯风格礼包"
+
+msgid "marketplace/kit/name/NewYear_ny21"
+msgstr "颗粒装甲风格礼包"
+
+msgid "marketplace/kit/name/NewYear_ny22"
+msgstr "橘子风格礼包"
+
+msgid "marketplace/kit/name/Oriental_ny19"
+msgstr "闪闪发光的夜晚风格礼包"
+
+msgid "marketplace/kit/name/Oriental_ny20"
+msgstr "樱花风格礼包"
+
+msgid "marketplace/kit/name/Oriental_ny21"
+msgstr "熊猫魔法风格礼包"
+
+msgid "marketplace/kit/name/Oriental_ny22"
+msgstr "可爱装甲风格礼包"
+
+msgid "marketplace/kit/name/Surprise_ny24"
+msgstr "\"圣诞大花袄\"风格礼包"
+
+msgid "marketplace/kit/name/asian_ny18"
+msgstr "C系新年风格礼包"
+
+msgid "marketplace/kit/name/modernWestern_ny18"
+msgstr "现代圣诞风格礼包"
+
+msgid "marketplace/kit/name/soviet_ny18"
+msgstr "S系新年风格礼包"
+
+msgid "marketplace/kit/name/traditionalWestern_ny18"
+msgstr "传统圣诞风格礼包"
+
+msgid "marketplace/kit/rewardReceived"
+msgstr "已获得"
+
+msgid "marketplace/kit/status/decalReceived"
+msgstr "已获得"
+
+msgid "marketplace/kit/status/received"
+msgstr "已获得"
+
+msgid "marketplace/kit/status/unavailable"
+msgstr "达到节日气氛等级%(level)s才可购买"
+
+msgid "marketplace/kit/subTitle/buy"
+msgstr "购买方式"
+
+msgid "marketplace/kit/subTitle/composition"
+msgstr "礼包内容"
+
+msgid "marketplace/kit/subTitle/price"
+msgstr "价格"
+
+msgid "marketplace/kit/title/Atm_ny23"
+msgstr "节日气氛进度2023"
+
+msgid "marketplace/kit/title/Atm_ny24"
+msgstr "节日气氛进度2024"
+
+msgid "marketplace/kit/title/Bro_ny24"
+msgstr "有福同享进度2024"
+
+msgid "marketplace/kit/title/Cat_ny23"
+msgstr "红郡猫的重要使命2023"
+
+msgid "marketplace/kit/title/Cat_ny24"
+msgstr "红郡猫的重要使命2024"
+
+msgid "marketplace/kit/title/Christmas_ny19"
+msgstr "圣诞收藏相簿2019"
+
+msgid "marketplace/kit/title/Christmas_ny20"
+msgstr "圣诞收藏相簿2020"
+
+msgid "marketplace/kit/title/Christmas_ny21"
+msgstr "圣诞收藏相簿2021"
+
+msgid "marketplace/kit/title/Christmas_ny22"
+msgstr "圣诞收藏相簿2022"
+
+msgid "marketplace/kit/title/Dog_ny24"
+msgstr "霞飞狗任务2024"
+
+msgid "marketplace/kit/title/Fairytale_ny19"
+msgstr "魔幻收藏相簿2019"
+
+msgid "marketplace/kit/title/Fairytale_ny20"
+msgstr "魔幻收藏相簿2020"
+
+msgid "marketplace/kit/title/Fairytale_ny21"
+msgstr "魔幻收藏相簿2021"
+
+msgid "marketplace/kit/title/Fairytale_ny22"
+msgstr "魔幻收藏相簿2022"
+
+msgid "marketplace/kit/title/Gift2_ny23"
+msgstr "有福同享进度2023"
+
+msgid "marketplace/kit/title/GiftSystem_ny22"
+msgstr "礼物赠送系统2022"
+
+msgid "marketplace/kit/title/Mega_ny20"
+msgstr "大型装饰物相簿2020"
+
+msgid "marketplace/kit/title/Mega_ny21"
+msgstr "大型装饰物相簿2021"
+
+msgid "marketplace/kit/title/Mega_ny22"
+msgstr "大型装饰物相簿2022"
+
+msgid "marketplace/kit/title/NewYear_ny19"
+msgstr "新年收藏相簿2019"
+
+msgid "marketplace/kit/title/NewYear_ny20"
+msgstr "新年收藏相簿2020"
+
+msgid "marketplace/kit/title/NewYear_ny21"
+msgstr "新年收藏相簿2021"
+
+msgid "marketplace/kit/title/NewYear_ny22"
+msgstr "新年收藏相簿2022"
+
+msgid "marketplace/kit/title/Oriental_ny19"
+msgstr "春节收藏相簿2019"
+
+msgid "marketplace/kit/title/Oriental_ny20"
+msgstr "春节收藏相簿2020"
+
+msgid "marketplace/kit/title/Oriental_ny21"
+msgstr "春节收藏相簿2021"
+
+msgid "marketplace/kit/title/Oriental_ny22"
+msgstr "春节收藏相簿2022"
+
+msgid "marketplace/kit/title/Surprise_ny24"
+msgstr "圣诞节特殊礼物2024"
+
+msgid "marketplace/kit/title/asian_ny18"
+msgstr "C系新年收藏相簿2018"
+
+msgid "marketplace/kit/title/modernWestern_ny18"
+msgstr "现代圣诞收藏相簿2018"
+
+msgid "marketplace/kit/title/soviet_ny18"
+msgstr "S系新年收藏相簿2018"
+
+msgid "marketplace/kit/title/traditionalWestern_ny18"
+msgstr "传统圣诞收藏相簿2018"
+
+msgid "marketplace/tooltips/card/state/available"
+msgstr "尚未获得礼包"
+
+msgid "marketplace/tooltips/card/state/received"
+msgstr "已获得礼包"
+
+msgid "marketplace/tooltips/card/state/unavailable"
+msgstr "达到节日气氛等级{level}以解锁购买权限。"
+
+msgid "marketplace/tooltips/discount/collectionName/Atm"
+msgstr "节日气氛进度"
+
+msgid "marketplace/tooltips/discount/collectionName/Bro"
+msgstr "有福同享进度"
+
+msgid "marketplace/tooltips/discount/collectionName/Cat"
+msgstr "红郡猫的重要使命"
+
+msgid "marketplace/tooltips/discount/collectionName/Christmas"
+msgstr "圣诞收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/Dog"
+msgstr "霞飞狗任务"
+
+msgid "marketplace/tooltips/discount/collectionName/Fairytale"
+msgstr "魔幻收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/Gift2"
+msgstr "有福同享进度"
+
+msgid "marketplace/tooltips/discount/collectionName/GiftSystem"
+msgstr "礼物赠送系统"
+
+msgid "marketplace/tooltips/discount/collectionName/Mega"
+msgstr "大型装饰物相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/NewYear"
+msgstr "新年收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/Oriental"
+msgstr "春节收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/Surprise"
+msgstr "圣诞节特殊礼物"
+
+msgid "marketplace/tooltips/discount/collectionName/asian"
+msgstr "C系新年收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/modernWestern"
+msgstr "现代圣诞收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/soviet"
+msgstr "S系新年收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionName/traditionalWestern"
+msgstr "传统圣诞收藏相簿"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny18"
+msgstr "2018"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny19"
+msgstr "2019"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny20"
+msgstr "2020"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny21"
+msgstr "2021"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny22"
+msgstr "2022"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny23"
+msgstr "2023"
+
+msgid "marketplace/tooltips/discount/collectionYear/ny24"
+msgstr "2024"
+
+msgid "marketplace/tooltips/discount/text/Atm"
+msgstr "在假日行动%(year)s中所达到的节日气氛等级: %(level)s"
+
+msgid "marketplace/tooltips/discount/text/default"
+msgstr "{collectionName}{collectionYear}s已完成: %(percentValue)s"
+
+msgid "marketplace/tooltips/discount/text/rewards"
+msgstr ""
+"已获得{collectionName}{collectionYear}的奖励: "
+"%(99bcd0_Open)s%(currentAmount)s/%(totalAmount)s%(99bcd0_Close)s"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/broken"
+msgstr "此坦克需要维修。"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/customizationUnavailable"
+msgstr "所选坦克的个性化不可用。"
+
+msgid ""
+"marketplace/tooltips/goToStyle/unavailable/header/customizationUnavailable"
+msgstr "不可用"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/inBattle"
+msgstr "此坦克在战斗中。"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/inUnit"
+msgstr "此坦克在小队中。"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/notInInventory"
+msgstr "没有满足要求的坦克。"
+
+msgid "marketplace/tooltips/lackTheResources/header"
+msgstr "资源不足"
+
+msgid "marketplace/tooltips/lackTheResources/notEnough"
+msgstr "需要:"
+
+msgid "marketplace/tooltips/lackTheResources/text"
+msgstr "在村镇中、好友那里收集资源，或者参加战斗获取它们，或者从大型补给品中获取。"
+
+msgid "marketplace/tooltips/tabs/ny18"
+msgstr "2018收藏的奖励。"
+
+msgid "marketplace/tooltips/tabs/ny19"
+msgstr "2019收藏的奖励。"
+
+msgid "marketplace/tooltips/tabs/ny20"
+msgstr "2020收藏的奖励。"
+
+msgid "marketplace/tooltips/tabs/ny21"
+msgstr "2021收藏的奖励。"
+
+msgid "marketplace/tooltips/tabs/ny22"
+msgstr "2022年的收藏奖励和假日快递奖励。"
+
+msgid "marketplace/tooltips/tabs/ny23"
+msgstr "在假日行动2023中完成活动进度，以及从好友那里收集资源的奖励。"
+
+msgid "marketplace/tooltips/tabs/ny24"
+msgstr "在假日行动2024中完成活动进度，以及从好友那里收集资源的奖励。"
+
+msgid "marketplaceToken/tooltip/condition"
+msgstr "开放给在假日行动活动中达到节日气氛等级{level}的玩家。"
+
+msgid "marketplaceToken/tooltip/description"
+msgstr "您可以在假日行动商店中使用资源购买往期活动的奖励。"
+
+msgid "marketplaceToken/tooltip/title"
+msgstr "假日行动商店中的特殊物品"
+
+msgid "maxLevelReached/buttons/accept/Fair"
+msgstr "返回集市"
+
+msgid "maxLevelReached/buttons/accept/Fir"
+msgstr "返回圣诞树"
+
+msgid "maxLevelReached/buttons/accept/Installation"
+msgstr "返回设施"
+
+msgid "maxLevelReached/description"
+msgstr "作为奖励，您已获得村镇装饰物。它们可创造温馨的氛围，并保留在村镇中，直至活动结束。"
+
+msgid "maxLevelReached/title/Fair"
+msgstr "集市已升至等级%(level)s。您获得了%(toysCount)s个装饰物和1个景观。"
+
+msgid "maxLevelReached/title/Fir"
+msgstr "圣诞树已升至等级%(level)s。您获得了%(toysCount)s个装饰物和1个景观。"
+
+msgid "maxLevelReached/title/Installation"
+msgstr "设施已升至等级%(level)s。您获得了%(toysCount)s个装饰物和1个景观。"
+
+msgid "menu/backToFriendsList"
+msgstr "好友列表"
+
+msgid "menu/backToFriendsListTooltip"
+msgstr "点击返回好友列表。"
+
+msgid "menu/close"
+msgstr "前往车库"
+
+msgid "menu/closeTooltip"
+msgstr "返回车库"
+
+msgid "menu/showGiftMachineLootList"
+msgstr "礼物终端奖励列表"
+
+msgid "messages/quotes"
+msgstr "\"%(text)s\""
+
+msgid "navigation/widget/hangarName/friendView/tooltip/body"
+msgstr "好友村镇的名称"
+
+msgid "navigation/widget/hangarName/mainView/tooltip/body"
+msgstr "整个活动期间，访问您村镇的好友将能看到其独特名称。"
+
+msgid "navigation/widget/hangarName/mainView/tooltip/header"
+msgstr "您村镇的名称"
+
+msgid "navigation/widget/progressBar/friendView/tooltip/body"
+msgstr "好友村镇的节日气氛等级。"
+
+msgid "newYear/celebrityChallenge/rewardScreen/inscription"
+msgstr "%(name)s签名"
+
+msgid "newYear/celebrityChallenge/rewardScreen/inscriptions"
+msgstr "签名"
+
+msgid "newYear/celebrityChallenge/rewardScreen/projectionDecal"
+msgstr "%(name)s贴花"
+
+msgid "newYear/celebrityChallenge/rewardScreen/projectionDecals"
+msgstr "贴花"
+
+msgid "newYear/celebrityChallenge/rewardScreen/rewards/achievement/label"
+msgstr "%(name)s勋章"
+
+msgid "newYear/celebrityChallenge/rewardScreen/style"
+msgstr "%(name)s2D风格"
+
+msgid "newYear/celebrityChallenge/rewardScreen/tmanToken"
+msgstr "乘员: %(name)s"
+
+msgid "newYear/challenge/card/lessMinute"
+msgstr "少于1分钟"
+
+msgid "newYear/challenge/card/locked"
+msgstr "完成前置任务即可解锁该任务。"
+
+msgid "newYear/challenge/card/replacementTooltip/available/description"
+msgstr "您可重置任务，将其替换成不同的任务。"
+
+msgid "newYear/challenge/card/replacementTooltip/available/timer"
+msgstr "距获得新的替换次数还有%(timer)s。"
+
+msgid "newYear/challenge/card/replacementTooltip/available/title"
+msgstr "重置任务"
+
+msgid "newYear/challenge/card/replacementTooltip/finished/description"
+msgstr "没有剩余的替换次数。"
+
+msgid "newYear/challenge/card/replacementTooltip/missing/description"
+msgstr "没有剩余的替换次数。距获得新的替换次数还有%(timer)s"
+
+msgid "newYear/challenge/card/replacementTooltip/vehicleInBattle"
+msgstr "无法替换: 此坦克在战斗中。"
+
+msgid "newYear/challenge/card/timerDays"
+msgstr "%(days)s天%(hours)s时"
+
+msgid "newYear/challenge/card/timerHours"
+msgstr "%(hours)s时%(minutes)s分"
+
+msgid "newYear/challenge/card/timerMinutes"
+msgstr "%(minutes)s分"
+
+msgid "newYear/challenge/challengeComplete/allReceived"
+msgstr "已完成所有任务，并获得所有奖励。"
+
+msgid "newYear/challenge/challengeComplete/andMore"
+msgstr "更多: %(count)s"
+
+msgid "newYear/challenge/challengeComplete/button"
+msgstr "其他奖励"
+
+msgid "newYear/challenge/challengeComplete/title"
+msgstr "已完成所有任务。选择一辆要以折扣价购买的坦克。"
+
+msgid "newYear/challenge/logo/counterCaption/advanced"
+msgstr ""
+"已完成\n"
+"任务%(indent)s"
+
+msgid "newYear/challenge/logo/counterCaption/challenge"
+msgstr ""
+"已完成\n"
+"任务%(indent)s"
+
+msgid "newYear/challenge/logo/counterCaption/quest"
+msgstr ""
+"已完成\n"
+"重要使命%(indent)s"
+
+msgid "newYear/challenge/logo/description/advanced"
+msgstr ""
+"驾驶IV–X级坦克参加标准或战役模式\n"
+"来完成任务。"
+
+msgid "newYear/challenge/logo/description/guestA"
+msgstr ""
+"必须按顺序完成\n"
+"所有重要使命"
+
+msgid "newYear/challenge/logo/description/guestC"
+msgstr ""
+"必须按顺序完成\n"
+"所有重要使命"
+
+msgid "newYear/challenge/logo/description/tournament"
+msgstr ""
+"驾驶IV–X级坦克参加标准或战役模式\n"
+"来完成任务。"
+
+msgid "newYear/challenge/logo/label/advanced"
+msgstr "杰森的进阶"
+
+msgid "newYear/challenge/logo/label/guestA"
+msgstr "杰森的"
+
+msgid "newYear/challenge/logo/label/guestC"
+msgstr "红郡猫的"
+
+msgid "newYear/challenge/logo/label/tournament"
+msgstr "杰森的"
+
+msgid "newYear/challenge/logo/title/advanced"
+msgstr "挑战"
+
+msgid "newYear/challenge/logo/title/guestA"
+msgstr "重要使命"
+
+msgid "newYear/challenge/logo/title/guestC"
+msgstr "重要使命"
+
+msgid "newYear/challenge/logo/title/tournament"
+msgstr "挑战"
+
+msgid "newYear/challenge/office/description"
+msgstr "完成重要使命，收集访客的整套物品，聆听其精彩故事！"
+
+msgid "newYear/challenge/office/story"
+msgstr ""
+"杰森的\n"
+"精彩故事"
+
+msgid "newYear/challenge/office/storyCounter"
+msgstr "%(availableStories)/%(totalStories)"
+
+msgid "newYear/challenge/office/tooltips/action/body"
+msgstr "我们的访客一定会好好使用收到的物品。"
+
+msgid "newYear/challenge/office/tooltips/action/header"
+msgstr "镜头"
+
+msgid "newYear/challenge/office/tooltips/story/body"
+msgstr "杰森很乐意与您分享的精彩故事。"
+
+msgid "newYear/challenge/office/tooltips/story/header"
+msgstr "故事"
+
+msgid "newYear/challenge/promoCard/description"
+msgstr ""
+"完成%(questsQuantity)s个普通挑战任务即可解锁%(FFDD99_Open)s%(advancedQuestsQuantity)s个特殊任务%(FFDD99_Close)s，这些特殊任务可依次完成，完成即可获得以下奖励:"
+
+msgid "newYear/challenge/promoCard/title"
+msgstr "进阶任务"
+
+msgid "newYear/challenge/quests/bonus/active"
+msgstr "长期激活的加成:"
+
+msgid "newYear/challenge/quests/bonus/bonus"
+msgstr "%(currentValue)s/%(totalValue)s%"
+
+msgid "newYear/challenge/quests/bonus/choice"
+msgstr "您选择的加成:"
+
+msgid "newYear/challenge/quests/bonusMissing/description"
+msgstr "完成红郡猫的重要使命后，您将获得签名、贴花和2D风格。"
+
+msgid "newYear/challenge/quests/bonusMissing/questsCompleted"
+msgstr "您已完成了全部红郡猫的重要使命。已获得奖励。"
+
+msgid "newYear/challenge/quests/bonusMissing/remark"
+msgstr "完成这些重要使命不会获得任何收益加成。"
+
+msgid "newYear/challenge/quests/tooltip/body/walletDisabled"
+msgstr "由于技术原因，暂时无法购买。我们正在努力解决这个问题。请稍后再试。"
+
+msgid "newYear/challenge/quests/tooltip/bonus/creditsFactor"
+msgstr "银币"
+
+msgid "newYear/challenge/quests/tooltip/bonus/freeXPFactor"
+msgstr "全局经验"
+
+msgid "newYear/challenge/quests/tooltip/bonus/tankmenXPFactor"
+msgstr "乘员经验"
+
+msgid "newYear/challenge/quests/tooltip/bonus/xpFactor"
+msgstr "战斗经验"
+
+msgid "newYear/challenge/quests/tooltip/economicBonus/description"
+msgstr "完成该重要使命可获得的收益加成:"
+
+msgid "newYear/challenge/quests/tooltip/economicBonus/title"
+msgstr "加成"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/description"
+msgstr "完成%(questsValue)s个杰森的重要使命可获得的最高加成"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/paragraph_1"
+msgstr ""
+"仅2种加成在战斗中生效: 银币加成为长期激活，第二种经验加成必须%(ffffff_Open)s在车库中手动选择激活%(ffffff_Close)s。"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/paragraph_2"
+msgstr "所选经验加成适用于等级等于或低于节日气氛等级的坦克。该加成不适用于租用坦克和金币坦克。"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/subTitle"
+msgstr "应用加成"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/title"
+msgstr "最高加成"
+
+msgid "newYear/challenge/quests/tooltip/title/walletDisabled"
+msgstr "暂时无法购买"
+
+msgid "newYear/challenge/stories/gift_a_1"
+msgstr ""
+"我拥有世界上最好的工作，但入行电影业绝非易事。求助无门，只能靠自己，而且强敌环伺。但你知道成功的秘诀是什么吗？那就是自信。如果你不相信自己，别人也不会伸出援手——这一点放之四海而皆准。当然，努力也必不可少，一定要花时间磨练自己的演技。但我告诉你——相信自己和自身能力是通往成功的第一步。"
+
+msgid "newYear/challenge/stories/gift_a_11"
+msgstr ""
+"还记得我说过要成为汽车专家吗？没错，干我这行，你得未雨绸缪，做好万全准备，而且还得学会明哲保身。你永远不知道灾难何时降临，因此必须做到有备无患，确保自己在身处险境时能顺利脱身。说到这个，我的手提箱呢？"
+
+msgid "newYear/challenge/stories/gift_a_13"
+msgstr ""
+"怎么样？看起来棒极了。高大上的说法就是，明亮的黄色为整个氛围增添了几分活力。我喜欢每年的这个时候，总有种特别的感觉，对吧？你能从空气中感受到这种感觉。利用这个时机，放慢脚步，休息一下，尽情享受。拜托，即使是我，偶尔也需要一些休闲时间，我建议你也给自己放个假。充分感受假日氛围！"
+
+msgid "newYear/challenge/stories/gift_a_14"
+msgstr ""
+"哦，这才叫漂亮，正是所有自尊自爱的成年绅士都梦寐以求的礼物。我也开过一辆类似的车。有了这种车，你就想盛装打扮。西装、领带、驾驶手套，缺一不可。给车应有的尊重，车的驾驶体验就能与其外观一样出色，平顺无比。开着它，在风景优美的海岸线上兜风，简直完美，或者去执行一次重要派送..."
+
+msgid "newYear/challenge/stories/gift_a_16"
+msgstr ""
+"实话实说吧。谁不喜欢烟花呢？这是点亮漆黑冬夜的最佳方式。当然，我可能比大多数人更熟悉火。这也是我的工作性质决定的。当你像我一样经历那么多次爆炸之后，你就会对它们有点...麻木了。不管怎样，把烟花递给我，让我来给你露一手。记住，千万别在家里放烟花..."
+
+msgid "newYear/challenge/stories/gift_a_17"
+msgstr ""
+"人们常说我给人一种冷静且沉着的感觉。我认为这种感觉源于一种内在的自信，而要建立这种自信，唯一的办法就是熟能生巧。第一次尝试时，无论任何事情，你都有可能搞砸，但别因此而气馁。相信自己，有志者事竟成。坦白说，我不太擅长雕刻。但如果给我一些像样的工具，就像这种天气，我估计还能给你做出一尊挺酷的雕塑。或者说是一尊\"冷酷\"的雕塑..."
+
+msgid "newYear/challenge/stories/gift_a_20"
+msgstr ""
+"原来手提箱在这啊。我一直在到处找这破玩意！里面好东西还真不少。我说过，干我这行，必须做足准备。我说的不只是应付野餐回来的路上爆胎。你要把所有的...我们姑且称之为\"必需品\"，装进一个便携的手提箱里，确保箱不离身。以防万一接到非常重要的电话，而不得不去处理一些紧急事务。明白我的意思吗？"
+
+msgid "newYear/challenge/stories/gift_a_3"
+msgstr ""
+"当我扮演硬汉汽车专家的角色很多次后，自己就开始变成一名硬汉汽车专家。不过，在开始扮演这类角色之前，我就对发动机了如指掌，这也没什么不好。我一直觉得火花塞是个有趣的小玩意儿。从字面上看，火花塞就是让一切运转起来的火花。我一直很喜欢这个名称，很有诗意，不是吗？它们就是生活的座右铭——成为星星之火。"
+
+msgid "newYear/challenge/stories/gift_a_5"
+msgstr ""
+"说到星星之火，一个灿烂的微笑也能带来很多变化。事实上，这是你最有力的武器。在人们的印象中，我是一个不苟言笑的硬汉，正如我所说，这可能会成为一种自我实现的预言。但你永远不要忘记微笑，即使觉得自己负重前行，生活有时候就是很辛苦。特别是每年的这个时候，一定要传递快乐，别总是那么严肃，要记住什么才真正值得珍惜。相信我，你一定会惊讶于真诚的笑容能带你走多远。"
+
+msgid "newYear/challenge/stories/gift_a_6"
+msgstr ""
+"人们经常说，只有做好战斗的准备，才能迎接和平。如果想让别人不敢轻易招惹你，那就学些武术吧。不相信？先学些空手道或功夫，再看看有什么效果。整个人由里到外都会发生转变。思维会更加冷静、清晰，注意力也会更加集中，自律能力也会更强。除此以外，你还将练就一套足以让任何人三思而后行的招式。"
+
+msgid "newYear/challenge/stories/gift_a_8"
+msgstr ""
+"但无论您多么精通柔术或泰拳，有时候就是会有些人跟你过不去。这就是生活，不是吗？有些人就是想看着世界毁灭。别太在意这样的人。他们这样做可能有自己的理由。如果你的千金一笑还无法感化他们，那就保持冷静，按照你所受过的训练，给他们上一课。"
+
+msgid "newYear/challenge/stories/gift_a_9"
+msgstr ""
+"没错，这东西需要高压电。这让我不由得想起一次终生难忘的触电经历，简直不堪回首。但不得不说，只要不让整个村镇短路，将其挂在村镇周围将会非常漂亮。不过一定要留意周围，防止捣乱分子破坏这一切。如果真有人破坏彩灯，那他们的剪线钳瞬间就会被高压电烧坏，产生耀眼光芒。"
+
+msgid "newYear/challenge/stories/tooltips/unavailable/body"
+msgstr "完成杰森的重要使命即可解锁故事。"
+
+msgid "newYear/challenge/temporaryCard/description"
+msgstr ""
+"新任务每天都会开放。\n"
+"下一个任务奖励为:"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/description/completed"
+msgstr ""
+"选择一辆%(whiteSpanish_Open)s%(level)s%(whiteSpanish_Close)s级可研发坦克，为其应用%(whiteSpanish_Open)s%(discount)s%(whiteSpanish_Close)s银币折扣。"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/description/discountApplied"
+msgstr "该坦克的银币价格已下降%(whiteSpanish_Open)s%(discount)s%(whiteSpanish_Close)s。"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/description/inProgress"
+msgstr ""
+"选择一辆%(whiteSpanish_Open)s%(level)s%(whiteSpanish_Close)s级可研发坦克，为其应用%(whiteSpanish_Open)s%(discount)s%(whiteSpanish_Close)s银币折扣。"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/selectedVehicle"
+msgstr "所应用的折扣是永久性的。"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/title/completed"
+msgstr "选择坦克以应用折扣"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/title/discountApplied"
+msgstr "已应用折扣: %(whiteSpanish_Open)s%(vehicle)s%(whiteSpanish_Close)s"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/title/inProgress"
+msgstr "%(tier)s级坦克的%(discount)s折扣"
+
+msgid "newYear/errors/lootboxDisabled"
+msgstr "暂时无法开启补给品。请稍后重试。"
+
+msgid "newYear/loading"
+msgstr "正在加载..."
+
+msgid "notification/attached3D/button/toExterior"
+msgstr "前往个性化"
+
+msgid "notification/attached3D/button/toGarage"
+msgstr "前往车库"
+
+msgid "notification/attached3D/description"
+msgstr "在个性化的3D附件版块中查看。"
+
+msgid "notification/attached3D/subtitle"
+msgstr "%(rarity)s3D附件"
+
+msgid "notification/cityNameChanged"
+msgstr "已保存村镇名称。"
+
+msgid "notification/cityNameChanged/error"
+msgstr "无法保存村镇名称。请稍后再试。"
+
+msgid "notification/cityNameChanged/header"
+msgstr "恭喜！"
+
+msgid "notification/collectionComplete"
+msgstr "完成%(year)s %(setting)s后，您获得了下列奖励:"
+
+msgid "notification/collectionComplete/bonusCount"
+msgstr "(x%(count)s)"
+
+msgid "notification/collectionComplete/button/reward"
+msgstr "详情"
+
+msgid "notification/collectionComplete/emblem"
+msgstr "徽章:"
+
+msgid "notification/collectionComplete/header"
+msgstr "您已完成收藏！"
+
+msgid "notification/collectionComplete/inscription"
+msgstr "签名:"
+
+msgid "notification/collectionComplete/name/christmas"
+msgstr "圣诞收藏"
+
+msgid "notification/collectionComplete/name/fairytale"
+msgstr "魔幻收藏"
+
+msgid "notification/collectionComplete/name/fairytale_ny22"
+msgstr "魔幻收藏"
+
+msgid "notification/collectionComplete/name/newyear"
+msgstr "新年收藏"
+
+msgid "notification/collectionComplete/name/oriental"
+msgstr "春节收藏"
+
+msgid "notification/collectionComplete/projectionDecal"
+msgstr "贴花:"
+
+msgid "notification/collectionComplete/style"
+msgstr "风格:"
+
+msgid "notification/collectionMegaComplete"
+msgstr "通过收集所有%(year)s的大型装饰物，您获得了下列奖励:"
+
+msgid "notification/collectionMegaComplete/header"
+msgstr "大型装饰物已收集！"
+
+msgid "notification/finish"
+msgstr "假日行动已结束。感谢您的参与，我们战场上见！"
+
+msgid "notification/friendService/collectFriendResources/header"
+msgstr "已从%(friendName)s那里收集了资源"
+
+msgid "notification/friendService/collectFriendResources/requestError"
+msgstr "完成操作时发生错误。"
+
+msgid "notification/friendService/disabled"
+msgstr "好友版块因技术原因暂时无法访问。"
+
+msgid "notification/friendService/requestError"
+msgstr "完成操作时发生错误。"
+
+msgid "notification/fullCityName"
+msgstr "%(description)s%(name)s"
+
+msgid "notification/giftMachine/available/body"
+msgstr "您现在可以购买礼物终端令牌了。"
+
+msgid "notification/giftMachine/available/button"
+msgstr "前往终端"
+
+msgid "notification/giftMachine/available/header"
+msgstr "恭喜！"
+
+msgid "notification/levelUp/congrats/header"
+msgstr "节日气氛等级已达到: %(level)s/%(maxLevel)s"
+
+msgid "notification/levelUp/rewards/header"
+msgstr "已获得奖励！"
+
+msgid "notification/lootBox/suspend/body"
+msgstr "补给品的相关操作现已暂停。"
+
+msgid "notification/lootBox/suspend/header"
+msgstr "注意！"
+
+msgid "notification/marketplace/available/body"
+msgstr "物品已在假日行动商店中开放购买。"
+
+msgid "notification/marketplace/available/button"
+msgstr "前往商店"
+
+msgid "notification/marketplace/available/header"
+msgstr "恭喜！"
+
+msgid "notification/oldCollectionComplete/header"
+msgstr "任务完成！奖励:"
+
+msgid "notification/piggyBank/button/default"
+msgstr "了解！"
+
+msgid "notification/piggyBank/button/style"
+msgstr "前往风格"
+
+msgid "notification/piggyBank/button/toFriends"
+msgstr "前往好友"
+
+msgid "notification/piggyBank/title/multiple"
+msgstr "已获得挚友奖励！"
+
+msgid "notification/piggyBank/title/single"
+msgstr "已获得%(reward)s！"
+
+msgid "notification/resourcesReminder/button/FindFriends"
+msgstr "前往好友"
+
+msgid "notification/resourcesReminder/button/Friends"
+msgstr "收集资源"
+
+msgid "notification/resourcesReminder/button/Personal"
+msgstr "前往资源"
+
+msgid "notification/resourcesReminder/description/FindFriends"
+msgstr "结交一些好友，他们会为您带来资源！"
+
+msgid "notification/resourcesReminder/description/extraCollection"
+msgstr "您已经错过了一天，因此，请记得今天收集更多资源！"
+
+msgid "notification/resourcesReminder/title/FindFriends"
+msgstr ""
+"想每天获得最多%(ffffff_Open)s%(resourcesCount)s%(ffffff_Close)s个\n"
+"每种类型的资源？"
+
+msgid "notification/resourcesReminder/title/Friends"
+msgstr ""
+"从%(ffffff_Open)s%(friendName)s%(ffffff_Close)s那里收集%(ffffff_Open)s%(resourcesCount)s%(ffffff_Close)s个\n"
+"每种类型的资源！"
+
+msgid "notification/resourcesReminder/title/Personal"
+msgstr ""
+"收集%(bdd4ff_Open)s%(resourcesCount)s%(bdd4ff_Close)s个每种\n"
+"类型的资源！"
+
+msgid "notification/resume"
+msgstr "假日行动继续进行。"
+
+msgid "notification/rewardsReminder"
+msgstr "您有一些尚未使用的奖励。别忘了在三月中旬前激活它们！"
+
+msgid "notification/suspend"
+msgstr "假日行动暂时停止。"
+
+msgid "notifications/atmosphereLevelUp/button/more"
+msgstr "还有%(amount)s个"
+
+msgid "notifications/atmosphereLevelUp/button/toEvent"
+msgstr "前往活动"
+
+msgid "notifications/atmosphereLevelUp/title"
+msgstr ""
+"已达到节日气氛等级: "
+"%(bdd4ff_Open)s%(level)s%(bdd4ff_Close)s/%(bdd4ff_Open)s%(maxLevel)s%(bdd4ff_Close)s"
+
+msgid "notifications/challenge/button/andMore"
+msgstr "还有%(value)s个"
+
+msgid "notifications/challenge/button/exterior"
+msgstr "前往个性化"
+
+msgid "notifications/challenge/button/garage"
+msgstr "前往车库"
+
+msgid "notifications/challenge/button/mission"
+msgstr "前往挑战"
+
+msgid "notifications/challenge/button/recruit"
+msgstr "前往兵营"
+
+msgid "notifications/challenge/completed/title"
+msgstr "所有的杰森任务都已完成。"
+
+msgid "notifications/challenge/inProgress/title"
+msgstr ""
+"已完成杰森\n"
+"任务: %(bdd4ff_Open)s%(completedAssignments)s%(bdd4ff_Close)s/%(bdd4ff_Open)s%(allAssignments)s%(bdd4ff_Close)s"
+
+msgid "notifications/challenge/label/advancedMissions"
+msgstr ""
+"杰森进阶任务\n"
+"现已开放！"
+
+msgid "notifications/challenge/label/attachment"
+msgstr "%(rarity)s3D附件"
+
+msgid "notifications/challenge/label/discount"
+msgstr "%(level)s级坦克的折扣"
+
+msgid "notifications/guestQuests/button"
+msgstr "前往风格"
+
+msgid "notifications/guestQuests/completed/title"
+msgstr "已完成全部%(guestName)s重要使命！"
+
+msgid "notifications/guestQuests/guestA"
+msgstr "杰森的"
+
+msgid "notifications/guestQuests/guestC"
+msgstr "红郡猫的"
+
+msgid "notifications/guestQuests/inProgress/title"
+msgstr ""
+"已完成%(guestName)s重要使命: "
+"%(bdd4ff_Open)s%(completedAssignments)s%(bdd4ff_Close)s/%(bdd4ff_Open)s%(allAssignments)s%(bdd4ff_Close)s"
+
+msgid "notifications/guestQuests/label/guestC"
+msgstr "干得漂亮！"
+
+msgid "notifications/nyDogAchieved/button"
+msgstr "前往霞飞狗"
+
+msgid "notifications/nyDogAchieved/description"
+msgstr "购买礼包即可获得更诱人的奖励和霞飞狗物品。"
+
+msgid "notifications/nyDogAchieved/title"
+msgstr "霞飞狗为您带来了惊喜！"
+
+msgid "notifications/nyDogMissionCompleted/button"
+msgstr "前往霞飞狗"
+
+msgid "notifications/nyDogMissionCompleted/title/base"
+msgstr "已完成%(completed)s"
+
+msgid "notifications/nyDogMissionCompleted/title/completed"
+msgstr ""
+"霞飞狗任务: "
+"%(bdd4ff_Open)s%(current)s%(bdd4ff_Close)s/%(bdd4ff_Open)s%(total)s%(bdd4ff_Close)s"
+
+msgid "notifications/nyNewRewardKit/button"
+msgstr "前往补给品"
+
+msgid "notifications/nyNewRewardKit/rewardKitCategory/Christmas"
+msgstr "圣诞"
+
+msgid "notifications/nyNewRewardKit/rewardKitCategory/Fairytale"
+msgstr "魔幻"
+
+msgid "notifications/nyNewRewardKit/rewardKitCategory/NewYear"
+msgstr "新年"
+
+msgid "notifications/nyNewRewardKit/rewardKitCategory/Oriental"
+msgstr "春节"
+
+msgid "notifications/nyNewRewardKit/title"
+msgstr "已获得%(boxName)s补给品"
+
+msgid "notifications/nySackRareLoot/button/default"
+msgstr "收到！"
+
+msgid "notifications/nySackRareLoot/button/style"
+msgstr "前往风格"
+
+msgid "notifications/nySackRareLoot/title/inscription"
+msgstr "尽享礼物: 已获得\"%(itemName)s\"签名x%(amount)s"
+
+msgid "notifications/nySackRareLoot/title/projectionDecal"
+msgstr "尽享礼物: 已获得\"%(itemName)s\"贴花x%(amount)s"
+
+msgid "notifications/nySackRareLoot/title/style"
+msgstr "尽享礼物: 已获得\"%(itemName)s\"2D风格"
+
+msgid "nyGuaranteedRewardTooltip/description"
+msgstr "如果您已获得奖励列表中所有可能掉落的VIII和IX级坦克，那么对于之后掉落的每辆坦克，您都将获得坦克当前价格对应的金币补偿。"
+
+msgid "nyGuaranteedRewardTooltip/subtitle"
+msgstr "当您已获得所有坦克"
+
+msgid "nyGuaranteedRewardTooltip/text"
+msgstr ""
+"保底奖励是大型补给品奖励列表中的VIII级或IX级金币坦克。如果开启前49个补给品后仍未掉落保底坦克，那么当第50个补给品开启时必定会掉落。补给品掉落坦克后，计数器将重置。"
+
+msgid "nyGuaranteedRewardTooltip/title"
+msgstr "保底奖励机制"
+
+msgid "nyMenuGiftTooltip/coinsCount"
+msgstr "可用令牌"
+
+msgid "nyMenuGiftTooltip/description"
+msgstr "在特殊的礼物终端上使用令牌兑换奖励。"
+
+msgid "nyMenuGiftTooltip/note"
+msgstr "通过完成假日行动挑战任务或达到特定节日气氛等级获取令牌。令牌可用于激活礼物终端。"
+
+msgid "nyMenuGiftTooltip/title"
+msgstr "礼物终端"
+
+msgid "percentageValue/default"
+msgstr "%(value)s%"
+
+msgid "percentageValue/withMinus"
+msgstr "-%(value)s%"
+
+msgid "percentageValue/withPlus"
+msgstr "+%(value)s%"
+
+msgid "postbattle/lootBox/boxCount"
+msgstr "x%(count)s"
+
+msgid "postbattle/lootBox/boxesLabel"
+msgstr "%(boxName)s: %(icon)s%(boxCount)s"
+
+msgid "postbattle/nyCoin"
+msgstr "礼物终端令牌: %(count)s%(icon)s"
+
+msgid "postbattle/nyResources/ny_amber"
+msgstr "春暖琥珀: %(count)s%(icon)s"
+
+msgid "postbattle/nyResources/ny_crystal"
+msgstr "新生岩晶: %(count)s%(icon)s"
+
+msgid "postbattle/nyResources/ny_emerald"
+msgstr "圣洁翡翠: %(count)s%(icon)s"
+
+msgid "postbattle/nyResources/ny_iron"
+msgstr "天外陨铁: %(count)s%(icon)s"
+
+msgid "progress/default"
+msgstr "%(value)s/%(maxValue)s"
+
+msgid "purchase/unavailable"
+msgstr "---"
+
+msgid "quests/bonuses/nyCoin/body"
+msgstr "使用令牌激活礼物终端。每使用一个令牌，您即可获得一份礼物。"
+
+msgid "quests/bonuses/nyGuestEconomic/title"
+msgstr "收益加成"
+
+msgid "quests/bonuses/ny_cat/title"
+msgstr "红郡猫"
+
+msgid "quests/bonuses/ny_dog/title"
+msgstr "?empty?"
+
+msgid "quests/bonuses/ny_marketplace/title"
+msgstr "?empty?"
+
+msgid "randomResourceTooltip/description"
+msgstr "使用资源完成访客的重要使命，提高圣诞树、设施和集市的等级，以及进行其他行动。"
+
+msgid "randomResourceTooltip/subtitle"
+msgstr "%(brownColor_Open)s%(value)s个%(brownColor_Close)s下列资源之一:"
+
+msgid "randomResourceTooltip/title"
+msgstr "随机资源"
+
+msgid "randomReward/description/randomNyBooklet"
+msgstr "对全体乘员生效。学习后，该乘员手册为每名乘员提供20000点经验。可通过完成任务和参加游戏活动获得。"
+
+msgid "randomReward/description/randomNyCrewInstruction"
+msgstr "指令可强化已训练的特长或激活尚未训练的特长，一场战斗有效。您可使用银币购买指令。"
+
+msgid "randomReward/description/randomNyGuide"
+msgstr "对全体乘员生效。学习后，该乘员手册为每名乘员提供100000点经验。可通过参加游戏活动获得。"
+
+msgid "randomReward/description/randomNyInstruction"
+msgstr "指令可强化坦克上所安装的配件效果，一场战斗有效。"
+
+msgid "randomReward/description/randomNyToy"
+msgstr "装饰物不会影响节日气氛等级。它们会一直陪伴您，让您的村镇变得温馨舒适，直到活动结束。"
+
+msgid "randomReward/subtitle/randomNyBooklet"
+msgstr "获取随机培训手册，加快乘员训练"
+
+msgid "randomReward/subtitle/randomNyCrewInstruction"
+msgstr "获取随机乘员指令"
+
+msgid "randomReward/subtitle/randomNyGuide"
+msgstr "获取随机培训指南，加快训练乘员"
+
+msgid "randomReward/subtitle/randomNyInstruction"
+msgstr "获取随机配件指令"
+
+msgid "randomReward/subtitle/randomNyToy"
+msgstr "为圣诞树、集市或设施获取随机装饰物"
+
+msgid "randomReward/title/randomNyBooklet"
+msgstr "随机培训手册"
+
+msgid "randomReward/title/randomNyCrewInstruction"
+msgstr "随机乘员指令"
+
+msgid "randomReward/title/randomNyGuide"
+msgstr "随机培训指南"
+
+msgid "randomReward/title/randomNyInstruction"
+msgstr "随机配件指令"
+
+msgid "randomReward/title/randomNyToy"
+msgstr "随机装饰物"
+
+msgid "resource/marker/greaterZeroPrefix"
+msgstr "+"
+
+msgid "resource/type/ny_amber"
+msgstr "春暖琥珀"
+
+msgid "resource/type/ny_crystal"
+msgstr "新生岩晶"
+
+msgid "resource/type/ny_emerald"
+msgstr "圣洁翡翠"
+
+msgid "resource/type/ny_iron"
+msgstr "天外陨铁"
+
+msgid "resource/withCounter/ny_amber"
+msgstr ""
+"春暖琥珀\n"
+"%(currency)s"
+
+msgid "resource/withCounter/ny_crystal"
+msgstr ""
+"新生岩晶\n"
+"%(currency)s"
+
+msgid "resource/withCounter/ny_emerald"
+msgstr ""
+"圣洁翡翠\n"
+"%(currency)s"
+
+msgid "resource/withCounter/ny_iron"
+msgstr ""
+"天外陨铁\n"
+"%(currency)s"
+
+msgid "resourceBox/label/multiple"
+msgstr "领取奖励"
+
+msgid "resourceBox/label/single"
+msgstr "领取奖励"
+
+msgid "resourceBox/tooltip/completed/body"
+msgstr "已获得所有奖励。"
+
+msgid "resourceBox/tooltip/content/description"
+msgstr "您可以从%(friendsCount)s名挚友那里收集资源，每人每天一次。这不会减少他们可从自己村镇中收集的资源数量。"
+
+msgid "resourceBox/tooltip/content/title"
+msgstr "收集资源"
+
+msgid "resourceBox/tooltip/footer/label"
+msgstr "点击查看奖励"
+
+msgid "resourceBox/tooltip/header/description"
+msgstr "从挚友的村镇中收集资源可获得奖励。"
+
+msgid "resourceBox/tooltip/header/title"
+msgstr "从挚友那里收集资源而获得的奖励"
+
+msgid "resourceCollector/button/collect"
+msgstr "收集资源"
+
+msgid "resourceCollector/button/setFavoriteFriend"
+msgstr "标记为挚友"
+
+msgid "resourceCollector/button/toFriends"
+msgstr "前往好友"
+
+msgid "resourceCollector/days"
+msgid_plural "plural/resourceCollector/days"
+msgstr[0] "%(amount)s天"
+msgstr[1] "%(amount)s天"
+msgstr[2] "%(amount)s天"
+
+msgid "resourceCollector/status/Available"
+msgstr ""
+"每天在好友的村镇中收集%(creamColor_Open)s%(collectAmount)s%(creamColor_Close)s个每种类型的资源！"
+
+msgid "resourceCollector/status/Finished"
+msgstr "您已收集了今年该挚友村镇中的所有资源！查看获取更多资源的其他方法。"
+
+msgid "resourceCollector/status/Limit"
+msgstr ""
+"您已拥有%(creamColor_Open)s2%(creamColor_Close)s名挚友。在您的好友列表中，将该好友标记为挚友即可从其城镇中收集资源。"
+
+msgid "resourceCollector/status/LimitTimer"
+msgstr ""
+"已超过您可前往收集额外资源的%(creamColor_Open)s挚友%(creamColor_Close)s上限。您可在%(icon)s%(creamColor_Open)s%(timer)s%(creamColor_Close)s后前往好友列表更改选择。"
+
+msgid "resourceCollector/status/NotFavorite"
+msgstr ""
+"将该好友标记为%(creamColor_Open)s挚友%(creamColor_Close)s，即可从其村镇中每天收集%(creamColor_Open)s%(collectAmount)s%(creamColor_Close)s个每种类型的资源。"
+
+msgid "resourceCollector/status/Timer"
+msgstr ""
+"%(icon)s距您可以在挚友的村镇中收集%(creamColor_Open)s%(collectAmount)s%(creamColor_Close)s个每种类型的资源还有%(creamColor_Open)s%(timer)s。%(creamColor_Close)s"
+
+msgid "resourceCollector/status/available"
+msgstr "收集%(creamColor_Open)s%(collectAmount)s%(creamColor_Close)s个每种类型的资源！"
+
+msgid "resourceCollector/status/availableExtra"
+msgstr ""
+"%(icon)s错过收集的天数: "
+"%(skippedDays)s。今天，您可收集日常的%(creamColor_Open)s%(collectAmount)s%(creamColor_Close)s个和额外的%(creamColor_Open)s%(collectAmountExtra)s%(creamColor_Close)s个每种类型的资源！"
+
+msgid "resourceCollector/status/collected"
+msgstr ""
+"%(icon)s距离您可收集%(creamColor_Open)s%(collectAmount)s%(creamColor_Close)s个每种类型的资源还有%(creamColor_Open)s%(timer)s。%(creamColor_Close)s"
+
+msgid "resourceCollector/status/finished"
+msgstr ""
+"您已收集了今年村镇中的所有资源！\n"
+"查看获取更多资源的其他方法。"
+
+msgid "resourceCollector/status/note"
+msgstr "这不会减少您好友可收集的资源数量。"
+
+msgid "resourceCollectorTooltip/description/available"
+msgstr ""
+"您每天可收集%(brownColor_Open)s%(collectAmount)s%(brownColor_Close)s个每种类型的资源。\n"
+"如果错过1天或数天，您下次将能收集%(brownColor_Open)s%(collectAmountExtra)s%(brownColor_Close)s个每种类型的资源。\n"
+"系统仅补偿所错过的%(brownColor_Open)s1%(brownColor_Close)s天的资源。"
+
+msgid "resourceCollectorTooltip/description/availableExtra"
+msgstr ""
+"您错过了1天或数天的资源收集。今天，每种类型可收集%(brownColor_Open)s%(collectAmountExtra)s%(brownColor_Close)s个。\n"
+"每日常规数量: 每种类型%(brownColor_Open)s%(collectAmount)s%(brownColor_Close)s个。"
+
+msgid "resourceCollectorTooltip/description/collected"
+msgstr ""
+"您每天可收集%(brownColor_Open)s%(collectAmount)s%(brownColor_Close)s个每种类型的资源。\n"
+"如果错过1天或数天，您下次将能收集%(brownColor_Open)s%(collectAmountExtra)s%(brownColor_Close)s个每种类型的资源。\n"
+"系统仅补偿所错过的%(brownColor_Open)s1%(brownColor_Close)s天的资源。"
+
+msgid "resourceCollectorTooltip/description/finished"
+msgstr ""
+"您已收集了今年村镇中的所有资源！\n"
+"查看获取更多资源的其他方法。"
+
+msgid "resourceCollectorTooltip/description/unavailable"
+msgstr "我们正在修复此问题。请稍后再试。"
+
+msgid "resourceCollectorTooltip/title/available"
+msgstr "收集资源"
+
+msgid "resourceCollectorTooltip/title/availableExtra"
+msgstr "错过收集天数的资源"
+
+msgid "resourceCollectorTooltip/title/collected"
+msgstr "距资源开放收集还有%(timer)"
+
+msgid "resourceCollectorTooltip/title/finished"
+msgstr "收集资源"
+
+msgid "resourceCollectorTooltip/title/unavailable"
+msgstr "无法收集"
+
+msgid "resourceListTooltip/title"
+msgstr "按补给品类型划分的主要资源"
+
+msgid "resourceProgression/collectLabel"
+msgstr "已收集所有资源"
+
+msgid "resourceProgression/finalLabel"
+msgstr "已获得所有奖励"
+
+msgid "resourceProgression/label"
+msgstr "从挚友那里收集资源的次数"
+
+msgid "resourceTooltip/available"
+msgstr "可用"
+
+msgid "resourceTooltip/description"
+msgstr "每天收集"
+
+msgid "resourceTooltip/footer/ny_amber"
+msgstr "可使用春暖琥珀完成重要使命。"
+
+msgid "resourceTooltip/footer/ny_crystal"
+msgstr "可使用新生岩晶提高圣诞树和设施的等级。"
+
+msgid "resourceTooltip/footer/ny_emerald"
+msgstr "可使用圣洁翡翠提高集市和设施的等级。"
+
+msgid "resourceTooltip/footer/ny_iron"
+msgstr "可使用天外陨铁完成重要使命。"
+
+msgid "resourceTooltip/forShop/description"
+msgstr "假日行动中的一种临时性游戏内货币。使用资源来完成访客的重要使命，提高圣诞树、设施和集市的等级，以及进行其他行动。"
+
+msgid "resourceTooltip/forShop/footer"
+msgstr "每个补给品都包含资源"
+
+msgid "resourceTooltip/secondaryDescription/ny_amber"
+msgstr "如果错过1天或数天，您下次会获得更多春暖琥珀。"
+
+msgid "resourceTooltip/secondaryDescription/ny_crystal"
+msgstr "如果错过1天或数天，您下次会获得更多新生岩晶。"
+
+msgid "resourceTooltip/secondaryDescription/ny_emerald"
+msgstr "如果错过1天或数天，您下次会获得更多圣洁翡翠。"
+
+msgid "resourceTooltip/secondaryDescription/ny_iron"
+msgstr "如果错过1天或数天，您下次会获得更多天外陨铁。"
+
+msgid "resourceTooltip/unavailable/body"
+msgstr "我们正在修复此问题。请稍后再试。"
+
+msgid "resourceTooltip/unavailable/header"
+msgstr "数据不可用"
+
+msgid "resourcesConvertDialog/button/accept"
+msgstr "转换"
+
+msgid "resourcesConvertDialog/button/cancel"
+msgstr "取消"
+
+msgid "resourcesConvertDialog/button/disabledTooltip/body"
+msgstr "由于技术原因，该操作暂不可用。请稍后再试。"
+
+msgid "resourcesConvertDialog/button/disabledTooltip/header"
+msgstr "无法转换"
+
+msgid "resourcesConvertDialog/title"
+msgstr "将%(from)s转换成%(to)s？"
+
+msgid "resourcesConvertPopover/button/convert"
+msgstr "转换"
+
+msgid "resourcesConvertPopover/button/disabledTooltip"
+msgstr "您输入的资源数量超出您所拥有的数量。"
+
+msgid "resourcesConvertPopover/convertRate"
+msgstr "转换率: %(from)s兑%(to)s"
+
+msgid "resourcesConvertPopover/infoTooltip/from"
+msgstr ""
+"输入一个%(brownColor_Open)s%(multiple)s%(brownColor_Close)s的倍数值，以获得整数的所需资源。不是%(multiple)s倍数的数值会%(brownColor_Open)s自动%(brownColor_Close)s向下取整。"
+
+msgid "resourcesConvertPopover/infoTooltip/to"
+msgstr ""
+"输入一个%(brownColor_Open)s%(multiple)s%(brownColor_Close)s的倍数值，以花费整数的所需资源。不是%(multiple)s倍数的数值会%(brownColor_Open)s自动%(brownColor_Close)s向下取整。"
+
+msgid "resourcesConvertPopover/noResources/button/goToBoxes"
+msgstr "前往大型补给品"
+
+msgid "resourcesConvertPopover/noResources/button/goToQuests"
+msgstr "前往日常任务"
+
+msgid "resourcesConvertPopover/noResources/description"
+msgstr "在村镇中、好友那里收集资源，或者参加战斗获取它们，或者从大型补给品中获取。"
+
+msgid "resourcesConvertPopover/noResources/title"
+msgstr "资源不足"
+
+msgid "resourcesConvertPopover/resource/tooltip/alreadySelected"
+msgstr "您已经选择了要转换的资源。"
+
+msgid "resourcesConvertPopover/resource/tooltip/notEnough"
+msgstr "没有足够的资源转换。"
+
+msgid "resourcesConvertPopover/subTitleFrom"
+msgstr "花费"
+
+msgid "resourcesConvertPopover/subTitleTo"
+msgstr "获得"
+
+msgid "resourcesConvertPopover/title"
+msgstr "资源转换装置"
+
+msgid "reward/label/blueprint/national"
+msgstr "系别碎片: %(count)s"
+
+msgid "reward/label/blueprint/universal"
+msgstr "通用碎片: %(count)s"
+
+msgid "reward/label/booster"
+msgstr "指令"
+
+msgid "reward/label/boosters"
+msgstr "指令: %(count)s"
+
+msgid "reward/label/crewbook"
+msgstr "乘员手册"
+
+msgid "reward/label/crewbooks"
+msgstr "乘员手册: %(count)s"
+
+msgid "reward/label/equipment/autoExtinguishers"
+msgstr "自动灭火器: %(count)s"
+
+msgid "reward/label/equipment/handExtinguishers"
+msgstr "手动灭火器: %(count)s"
+
+msgid "reward/label/equipment/largeMedkit"
+msgstr "大急救箱: %(count)s"
+
+msgid "reward/label/equipment/largeRepairkit"
+msgstr "大修理箱: %(count)s"
+
+msgid "reward/label/equipment/modernizedAimDrivesAimingStabilizer"
+msgstr "火控系统等级1"
+
+msgid ""
+"reward/label/equipment/modernizedExtraHealthReserveAntifragmentationLining"
+msgstr "防护增强套件等级1"
+
+msgid "reward/label/equipment/modernizedTurbochargerRotationMechanism"
+msgstr "机动强化系统等级1"
+
+msgid "reward/label/equipment/smallMedkit"
+msgstr "小急救包: %(count)s"
+
+msgid "reward/label/equipment/smallRepairkit"
+msgstr "小修理箱: %(count)s"
+
+msgid "reward/label/premiumDay"
+msgstr "《坦克世界》高级账号天数"
+
+msgid "reward/label/premiumDays"
+msgstr "《坦克世界》高级账号天数: %(count)s"
+
+msgid "reward/label/slots"
+msgstr "车位: %(count)s"
+
+msgid "reward/label/style/2d"
+msgstr "%(name)s风格"
+
+msgid "reward/label/style/3d"
+msgstr ""
+"%(name)s\n"
+"3D风格"
+
+msgid "reward/label/toy"
+msgstr "装饰物"
+
+msgid "reward/label/toy/new"
+msgstr "新装饰物"
+
+msgid "reward/label/toyWithCount"
+msgstr "{toyName}: %(creamColor_Open)s{count}个%(creamColor_Close)s"
+
+msgid "reward/tmanToken"
+msgstr "%(name)s乘员"
+
+msgid "rewardKit/Christmas"
+msgstr "圣诞"
+
+msgid "rewardKit/Fairytale"
+msgstr "魔幻"
+
+msgid "rewardKit/NewYear"
+msgstr "新年"
+
+msgid "rewardKit/Oriental"
+msgstr "春节"
+
+msgid "rewardKit/actionsUnavailable"
+msgstr "暂时无法开启补给品及购买相关礼包"
+
+msgid "rewardKit/buy"
+msgstr "购买"
+
+msgid "rewardKit/get"
+msgstr "获取更多"
+
+msgid "rewardKit/name/premium"
+msgstr "大型补给品"
+
+msgid "rewardKit/open"
+msgstr "前往补给品"
+
+msgid "rewardKit/unavailable"
+msgstr "暂时不可用"
+
+msgid "rewardKit/upper/close"
+msgstr "关闭"
+
+msgid "rewardKit/upper/get"
+msgstr "获取更多"
+
+msgid "rewardKit/upper/toBoxes"
+msgstr "前往购买补给品礼包"
+
+msgid "rewardKitAutoOpen/acceptButton"
+msgstr "太棒了！"
+
+msgid "rewardKitAutoOpen/closeButton"
+msgstr "关闭"
+
+msgid "rewardKitAutoOpen/title/badge"
+msgid_plural "plural/rewardKitAutoOpen/title/badge"
+msgstr[0] "激活%(creamColor_Open)s{quantity}次礼物终端%(creamColor_Close)s"
+msgstr[1] "激活%(creamColor_Open)s{quantity}次礼物终端%(creamColor_Close)s"
+msgstr[2] "激活%(creamColor_Open)s{quantity}次礼物终端%(creamColor_Close)s"
+
+msgid "rewardKitAutoOpen/title/base/all"
+msgstr "这些是您{firstText}、{secondText}和{thirdText}所获得的物品"
+
+msgid "rewardKitAutoOpen/title/base/badge"
+msgstr "这些是您{innerText}所获得的物品"
+
+msgid "rewardKitAutoOpen/title/base/one"
+msgstr "这些是您{innerText}所获得的物品"
+
+msgid "rewardKitAutoOpen/title/base/two"
+msgstr "这些是您{firstText}和{secondText}所获得的物品"
+
+msgid "rewardKitAutoOpen/title/rewardKit"
+msgid_plural "plural/rewardKitAutoOpen/title/rewardKit"
+msgstr[0] "开启%(creamColor_Open)s{quantity}个大型%(creamColor_Close)s补给品"
+msgstr[1] "开启%(creamColor_Open)s{quantity}个大型%(creamColor_Close)s补给品"
+msgstr[2] "开启%(creamColor_Open)s{quantity}个大型%(creamColor_Close)s补给品"
+
+msgid "rewardKitAutoOpen/title/sacks"
+msgid_plural "plural/rewardKitAutoOpen/title/sacks"
+msgstr[0] "打开%(creamColor_Open)s{quantity}个霞飞狗%(creamColor_Close)s礼袋"
+msgstr[1] "打开%(creamColor_Open)s{quantity}个霞飞狗%(creamColor_Close)s礼袋"
+msgstr[2] "打开%(creamColor_Open)s{quantity}个霞飞狗%(creamColor_Close)s礼袋"
+
+msgid "rewardKitMain/buttonLabel/back"
+msgstr "返回车库"
+
+msgid "rewardKitMain/buttonLabel/buyMore"
+msgstr "购买补给品礼包"
+
+msgid "rewardKitMain/buttonLabel/buyMoreCn"
+msgstr "前往特惠商城"
+
+msgid "rewardKitMain/buttonLabel/open"
+msgstr "开启"
+
+msgid "rewardKitMain/buttonLabel/videoSwitch"
+msgstr "播放动画"
+
+msgid "rewardKitMain/entryDesc/notAvailableNow"
+msgstr "暂时无法开启补给品及购买相关礼包"
+
+msgid "rewardKitMain/entryView/buyLabel"
+msgstr "购买"
+
+msgid "rewardKitMain/entryView/buyLabelCn"
+msgstr "获取更多"
+
+msgid "rewardKitMain/entryView/guaranteedFrequency/countText"
+msgstr "%(count)s个补给品"
+
+msgid "rewardKitMain/entryView/guaranteedFrequency/moreInfo"
+msgstr "了解关于补给品的更多信息。"
+
+msgid "rewardKitMain/entryView/guaranteedFrequency/newYear_premium/next"
+msgstr "您将在下个补给品中获得保底坦克！"
+
+msgid "rewardKitMain/entryView/guaranteedFrequency/newYear_premium/soon"
+msgstr "开启%(countText)个即可获得珍贵的保底奖励。"
+
+msgid "rewardKitMain/entryView/howToGet/newYear_premium"
+msgstr "您可以在军械库或特惠商城中购买它们。"
+
+msgid "rewardKitMain/entryView/howToGet/newYear_premiumCn"
+msgstr "您可以从特惠商城内购买附赠补给品的礼包。"
+
+msgid "rewardKitMain/entryView/noBoxes/premium/switchButton"
+msgstr "前往{collectionName}"
+
+msgid "rewardKitMain/entryView/noBoxes/premium/titleFirstRow"
+msgstr "没有可用的该类型的补给品。"
+
+msgid "rewardKitMain/entryView/noBoxes/premium/titleSecondRow"
+msgstr "前往{collectionName}？"
+
+msgid "rewardKitMain/entryView/noBoxes/title"
+msgstr "没有可用的补给品"
+
+msgid "rewardKitMain/entryView/openBoxes/count_1"
+msgstr "1个"
+
+msgid "rewardKitMain/entryView/openBoxes/count_5"
+msgstr "5个"
+
+msgid "rewardKitMain/entryView/title/Christmas"
+msgstr "大型圣诞补给品"
+
+msgid "rewardKitMain/entryView/title/Fairytale"
+msgstr "大型魔幻补给品"
+
+msgid "rewardKitMain/entryView/title/NewYear"
+msgstr "大型新年补给品"
+
+msgid "rewardKitMain/entryView/title/Oriental"
+msgstr "大型春节补给品"
+
+msgid "rewardKitMain/guaranteedReward/boxesLeft"
+msgid_plural "plural/rewardKitMain/guaranteedReward/boxesLeft"
+msgstr[0] "如果坦克没有提前掉落，再开启%(count)个补给品会掉落VIII或IX级保底坦克。"
+msgstr[1] "如果坦克没有提前掉落，再开启%(count)个补给品会掉落VIII或IX级保底坦克。"
+msgstr[2] "如果坦克没有提前掉落，再开启%(count)个补给品会掉落VIII或IX级保底坦克。"
+
+msgid "rewardKitMain/guaranteedReward/moreInfo"
+msgstr "补给品详情"
+
+msgid "rewardKitMain/guaranteedReward/next"
+msgstr "下一个补给品中将会有一辆VIII或IX级金币坦克！"
+
+msgid "rewardKitStatistics/attachmentTooltip/attachment"
+msgstr "%(itemNumber)s. %(rarity)s\"%(name)s\"x%(amount)s"
+
+msgid "rewardKitStatistics/attachmentTooltip/header"
+msgstr "已获得3D附件"
+
+msgid "rewardKitStatistics/customizationsTooltip/customization"
+msgstr "%(itemNumber)s. %(vehicleName)s的%(customizationName)s"
+
+msgid "rewardKitStatistics/customizationsTooltip/header"
+msgstr "已获得3D风格"
+
+msgid "rewardKitStatistics/equipmentsTooltip/count"
+msgstr "x{count}"
+
+msgid "rewardKitStatistics/equipmentsTooltip/header"
+msgstr "已获得配件"
+
+msgid "rewardKitStatistics/noStatistics"
+msgstr "开启补给品即可开始记录数据。"
+
+msgid "rewardKitStatistics/openedBoxes"
+msgid_plural "plural/rewardKitStatistics/openedBoxes"
+msgstr[0] "已开启%(count)个补给品"
+msgstr[1] "已开启%(count)个补给品"
+msgstr[2] "已开启%(count)个补给品"
+
+msgid "rewardKitStatistics/resetError/body"
+msgstr "无法重置数据。请稍后再试。"
+
+msgid "rewardKitStatistics/resetError/label"
+msgstr "%(alertIcon)s出错了..."
+
+msgid "rewardKitStatistics/resourcesTotalCount"
+msgstr "资源总计: %(e9e2bf_Open)s%(count)%(e9e2bf_Close)s"
+
+msgid "rewardKitStatistics/statistics/attachment"
+msgstr ""
+"3D附件\n"
+"%(units)s"
+
+msgid "rewardKitStatistics/statistics/credits"
+msgstr ""
+"银币\n"
+"%(currency)s"
+
+msgid "rewardKitStatistics/statistics/customizations"
+msgstr ""
+"3D风格\n"
+"%(units)s"
+
+msgid "rewardKitStatistics/statistics/days"
+msgstr "%(daysCount)s天"
+
+msgid "rewardKitStatistics/statistics/gold"
+msgstr ""
+"金币\n"
+"%(currency)s"
+
+msgid "rewardKitStatistics/statistics/modernizedEquipment"
+msgstr ""
+"试验型配件\n"
+"%(units)s"
+
+msgid "rewardKitStatistics/statistics/nyToys"
+msgstr ""
+"装饰物\n"
+"%(units)s"
+
+msgid "rewardKitStatistics/statistics/ny_amber"
+msgstr ""
+"琥珀\n"
+"%(currency)s"
+
+msgid "rewardKitStatistics/statistics/ny_crystal"
+msgstr ""
+"岩晶\n"
+"%(currency)s"
+
+msgid "rewardKitStatistics/statistics/ny_emerald"
+msgstr ""
+"翡翠\n"
+"%(currency)s"
+
+msgid "rewardKitStatistics/statistics/ny_iron"
+msgstr ""
+"陨铁\n"
+"%(currency)s"
+
+msgid "rewardKitStatistics/statistics/premium_plus"
+msgstr ""
+"《坦克世界》高级账号\n"
+"%(days)s"
+
+msgid "rewardKitStatistics/statistics/reset"
+msgstr "重置"
+
+msgid "rewardKitStatistics/statistics/resetDescription"
+msgstr "点击以重置数据。"
+
+msgid "rewardKitStatistics/statistics/units"
+msgstr "x%(unitsCount)s"
+
+msgid "rewardKitStatistics/statistics/vehicles"
+msgstr ""
+"坦克\n"
+"%(units)s"
+
+msgid "rewardKitStatistics/tooltip/body"
+msgstr "您可在此处查看活动期间从大型补给品中获得的物品。您可以随时手动重置数据。"
+
+msgid "rewardKitStatistics/tooltip/header"
+msgstr "大型补给品的开启数据"
+
+msgid "rewardKitStatistics/triggerHint"
+msgstr "大型补给品的开启数据"
+
+msgid "rewardKitStatistics/vehiclesTooltip/header"
+msgstr "已获得坦克"
+
+msgid "rewardKitStatistics/vehiclesTooltip/message"
+msgstr "转换为金币补偿的坦克: %(vehiclesCount)s"
+
+msgid "rewardKitStatistics/vehiclesTooltip/vehicle"
+msgstr "%(itemNumber)s. 金币坦克: %(vehicleName)s"
+
+msgid "rewardKitsEntryPoint/tooltips/unavailable/body"
+msgstr "由于技术原因，暂时无法开启大型补给品及购买相关礼包。我们对造成的不便深表歉意。"
+
+msgid "rewardKitsEntryPoint/tooltips/unavailable/header"
+msgstr "暂时无法开启补给品及购买相关礼包"
+
+msgid "rewards/tooltip/condition/ny_cat"
+msgstr "达到%(cdedff_Open)s节日气氛等级V%(cdedff_Close)s时来到您的身边"
+
+msgid "rewards/tooltip/condition/ny_dog"
+msgstr "达到%(cdedff_Open)s节日气氛等级II%(cdedff_Close)s时来到您的身边"
+
+msgid "rewards/tooltip/description/ny_cat"
+msgstr ""
+"完成红郡猫的重要使命即可获得%(cdedff_Open)s毛绒绒的签名、贴花%(cdedff_Close)s和%(cdedff_Open)s2D风格。%(cdedff_Close)s"
+
+msgid "rewards/tooltip/description/ny_dog"
+msgstr ""
+"完成任务后，霞飞狗会给您带来礼袋。您也可购买内容更丰富的新%(cdedff_Open)s霞飞狗礼包%(cdedff_Close)s，获取更诱人的奖励。"
+
+msgid "rewards/tooltip/info/ny_cat"
+msgstr "可在指挥部获取"
+
+msgid "rewards/tooltip/info/ny_dog"
+msgstr "可在指挥部获取"
+
+msgid "rewards/tooltip/subtitle/ny_cat"
+msgstr "带有全新重要使命的访客"
+
+msgid "rewards/tooltip/subtitle/ny_dog"
+msgstr "老朋友"
+
+msgid "rewards/tooltip/title/ny_cat"
+msgstr "红郡猫"
+
+msgid "rewards/tooltip/title/ny_dog"
+msgstr "霞飞狗"
+
+msgid "sacksActionButtonWidget/description/level2"
+msgstr "获得进阶礼袋并解锁霞飞狗进阶礼包。"
+
+msgid "sacksActionButtonWidget/description/level3"
+msgstr "获得豪华礼袋并解锁霞飞狗豪华礼包。"
+
+msgid "sacksActionButtonWidget/description/level4"
+msgstr "获得超级礼袋并解锁霞飞狗超级礼包。"
+
+msgid "sacksActionButtonWidget/title"
+msgstr "更多霞飞狗任务奖励"
+
+msgid "sacksMarker/missionsInfo/description/completed"
+msgstr ""
+"已完成霞飞狗任务: %(missionsCompleted)s/%(missionsTotal)s。\n"
+"更多任务稍后开放。"
+
+msgid "sacksMarker/missionsInfo/title/completed"
+msgstr ""
+"完成次数: "
+"%(missionsCompleted)s%(lightBlueColor_Open)s/%(missionsTotal)s%(lightBlueColor_Close)s"
+
+msgid "sacksMarker/missionsInfo/title/inProgress"
+msgstr "霞飞狗任务%(completed)s"
+
+msgid "sacksTooltip/description/level1"
+msgstr ""
+"完成霞飞狗任务后，可开启1个%(ffffff_Open)s基础礼袋%(ffffff_Close)s。\n"
+"\n"
+"点击“购买”，即可在完成霞飞狗任务后获得更珍贵的奖励。"
+
+msgid "sacksTooltip/description/level2"
+msgstr ""
+"完成霞飞狗任务后，可开启1个%(ffffff_Open)s进阶礼袋%(ffffff_Close)s。\n"
+"\n"
+"点击“购买”，即可在完成霞飞狗任务后获得更珍贵的奖励。"
+
+msgid "sacksTooltip/description/level3"
+msgstr ""
+"完成霞飞狗任务后，可开启1个%(ffffff_Open)s豪华礼袋%(ffffff_Close)s。\n"
+"\n"
+"点击“购买”，即可在完成霞飞狗任务后获得更珍贵的奖励。"
+
+msgid "sacksTooltip/description/level4"
+msgstr ""
+"完成霞飞狗任务后，可开启1个%(ffffff_Open)s超级礼袋%(ffffff_Close)s。\n"
+"\n"
+"该礼袋内含完成霞飞狗任务可获得的最珍贵奖励。欲知更多详情，请点击“礼袋信息”按钮。"
+
+msgid "sacksTooltip/title/level1"
+msgstr "基础礼袋"
+
+msgid "sacksTooltip/title/level2"
+msgstr "进阶礼袋"
+
+msgid "sacksTooltip/title/level3"
+msgstr "豪华礼袋"
+
+msgid "sacksTooltip/title/level4"
+msgstr "超级礼袋"
+
+msgid "settings/Christmas"
+msgstr "圣诞"
+
+msgid "settings/Fairytale"
+msgstr "魔幻"
+
+msgid "settings/NewYear"
+msgstr "新年"
+
+msgid "settings/Oriental"
+msgstr "春节"
+
+msgid "settings/asian"
+msgstr "春节"
+
+msgid "settings/modernWestern"
+msgstr "现代圣诞"
+
+msgid "settings/soviet"
+msgstr "新年"
+
+msgid "settings/traditionalWestern"
+msgstr "传统圣诞"
+
+msgid "shopOverlay/closeButton"
+msgstr "关闭"
+
+msgid "shopOverlay/tooltip/content"
+msgid_plural "plural/shopOverlay/tooltip/content"
+msgstr[0] "今天可购买的节日礼包中还可包含%(bondColor_Open)s%(count)s%(bondColor_Close)s个补给品"
+msgstr[1] "今天可购买的节日礼包中还可包含%(bondColor_Open)s%(count)s%(bondColor_Close)s个补给品"
+msgstr[2] "今天可购买的节日礼包中还可包含%(bondColor_Open)s%(count)s%(bondColor_Close)s个补给品"
+
+msgid "shopOverlay/tooltip/footer"
+msgstr "您在24小时内可购买的节日礼包，其中包含的补给品总数最多%(maxCount)s个。"
+
+msgid "shopOverlay/tooltip/lastDay"
+msgstr "今天是活动的最后一天——您已购买了全部的节日礼包。"
+
+msgid "shopOverlay/tooltip/lock"
+msgstr "您今天购买的节日礼包，其中包含的补给品已达%(maxCount)s个。距上限重置还有%(hours)s时%(minutes)s分。"
+
+msgid "shopOverlay/tooltip/title"
+msgstr "购买节日礼包"
+
+msgid "slotLockedTooltip/caption"
+msgstr "将此装饰区域升级至%(ffdd99_Open)s等级%(level)s%(ffdd99_Close)s即可解锁该栏位。"
+
+msgid "surpriseGift/description"
+msgstr ""
+"您可使用%(icon)s%(creamColor_Open)s3D附件个性化该坦克。%(creamColor_Close)s\n"
+"3D附件可通过参加假日行动挑战和冬日奇袭，以及开启大型补给品来获取。"
+
+msgid "surpriseGift/entry/closed/daysFormat"
+msgid_plural "surpriseGift/entry/closed/daysFormat"
+msgstr[0] "%D天"
+msgstr[1] "%D天"
+msgstr[2] "%D天"
+
+msgid "surpriseGift/entry/closed/hoursFormat"
+msgstr "%H时%M分"
+
+msgid "surpriseGift/entry/closed/lastCallFormat"
+msgstr "少于1分钟"
+
+msgid "surpriseGift/entry/closed/minutesFormat"
+msgstr "%M分"
+
+msgid "surpriseGift/entry/closed/tooltip/body"
+msgstr "礼物即将降临"
+
+msgid "surpriseGift/entry/closed/tooltip/header"
+msgstr "祝您玩得开心！"
+
+msgid "surpriseGift/entry/opened/daysFormat"
+msgid_plural "surpriseGift/entry/opened/daysFormat"
+msgstr[0] "领取礼物: %D天"
+msgstr[1] "领取礼物: %D天"
+msgstr[2] "领取礼物: %D天"
+
+msgid "surpriseGift/entry/opened/hoursFormat"
+msgstr "领取礼物: %H时%M分"
+
+msgid "surpriseGift/entry/opened/lastCallFormat"
+msgstr "领取礼物: 少于1分钟"
+
+msgid "surpriseGift/entry/opened/minutesFormat"
+msgstr "领取礼物: %M分"
+
+msgid "surpriseGift/primaryButton"
+msgstr "在车库中查看"
+
+msgid "surpriseGift/secondaryButton"
+msgstr "前往3D附件"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus"
+msgstr "已添加+%(value)s%%%(bonusName)s加成"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/creditsFactor"
+msgstr "银币"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/freeXPFactor"
+msgstr "全局经验"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/tankmenXPFactor"
+msgstr "乘员经验"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/xpFactor"
+msgstr "战斗经验"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/guest/guest_A"
+msgstr "杰森的"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/guest/guest_cat"
+msgstr "红郡猫的"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/nyCoin"
+msgstr "已添加礼物终端令牌"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/nyCoins"
+msgstr "已添加礼物终端令牌: %(count)s"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/title"
+msgstr "已完成%(guest)s重要使命！"
+
+msgid "systemMessage/infoCollection"
+msgstr "已购买%(year)s %(collection)s的所有装饰物"
+
+msgid "systemMessage/infoToy"
+msgstr "已购买%(year)s %(collection)s的%(toyName)s装饰物"
+
+msgid "systemMessage/ny18"
+msgstr "2018"
+
+msgid "systemMessage/ny19"
+msgstr "2019"
+
+msgid "systemMessage/ny20"
+msgstr "2020"
+
+msgid "systemMessage/ny21"
+msgstr "2021"
+
+msgid "systemMessage/ny22"
+msgstr "2022"
+
+msgid "systemMessage/questsFormatter/catUnlock"
+msgstr "红郡猫已抵达"
+
+msgid "systemMessage/questsFormatter/dogUnlock"
+msgstr "霞飞狗已抵达"
+
+msgid "tabBar/Fair"
+msgstr "集市"
+
+msgid "tabBar/Fir"
+msgstr "圣诞树"
+
+msgid "tabBar/FriendFair"
+msgstr "集市"
+
+msgid "tabBar/FriendFir"
+msgstr "圣诞树"
+
+msgid "tabBar/FriendInstallation"
+msgstr "设施"
+
+msgid "tabBar/FriendResources"
+msgstr "资源"
+
+msgid "tabBar/FriendTown"
+msgstr "村镇视角"
+
+msgid "tabBar/Installation"
+msgstr "设施"
+
+msgid "tabBar/Resources"
+msgstr "资源"
+
+msgid "tabBar/Town"
+msgstr "村镇视角"
+
+msgid "tabBar/body/Fair"
+msgstr "升级集市以提高节日气氛等级。"
+
+msgid "tabBar/body/Fir"
+msgstr "升级圣诞树以提高节日气氛等级。"
+
+msgid "tabBar/body/FriendFair"
+msgstr "您好友装饰的集市。"
+
+msgid "tabBar/body/FriendFir"
+msgstr "您好友装饰的圣诞树。"
+
+msgid "tabBar/body/FriendInstallation"
+msgstr "您好友装饰的设施。"
+
+msgid "tabBar/body/FriendResources"
+msgstr "在挚友的村镇中收集资源并获得奖励。"
+
+msgid "tabBar/body/FriendTown"
+msgstr "查看挚友村镇中装饰一新的载体。"
+
+msgid "tabBar/body/Installation"
+msgstr "升级设施以提高节日气氛等级。"
+
+msgid "tabBar/body/Resources"
+msgstr "收集资源即可推进假日行动2025的进度。"
+
+msgid "tabBar/body/Town"
+msgstr "升级村镇中的载体以提高节日气氛等级。"
+
+msgid "tabBar/body/guestA"
+msgstr "完成杰森的重要使命即可获得奖励，包括收益加成。"
+
+msgid "tabBar/body/guestC"
+msgstr "完成红郡猫的重要使命以获得珍贵奖励。"
+
+msgid "tabBar/body/guestD"
+msgstr "完成霞飞狗任务以获得更多奖励。"
+
+msgid "tabBar/body/headquarters"
+msgstr "您可在指挥部查看所有的访客，以及送给他们的礼物。"
+
+msgid "tabBar/body/tournament"
+msgstr "完成特殊任务并获得珍贵奖励。"
+
+msgid "tabBar/guestA"
+msgstr "重要使命"
+
+msgid "tabBar/guestC"
+msgstr "红郡猫"
+
+msgid "tabBar/guestD"
+msgstr "霞飞狗"
+
+msgid "tabBar/headquarters"
+msgstr "指挥部"
+
+msgid "tabBar/title/Fair"
+msgstr "?empty?"
+
+msgid "tabBar/title/Fir"
+msgstr "?empty?"
+
+msgid "tabBar/title/Installation"
+msgstr "?empty?"
+
+msgid "tabBar/title/Resources"
+msgstr "?empty?"
+
+msgid "tabBar/title/Town"
+msgstr "?empty?"
+
+msgid "tabBar/title/guestA"
+msgstr "重要使命"
+
+msgid "tabBar/title/guestC"
+msgstr "红郡猫"
+
+msgid "tabBar/title/guestD"
+msgstr "霞飞狗"
+
+msgid "tabBar/title/headquarters"
+msgstr "指挥部"
+
+msgid "tabBar/title/tournament"
+msgstr "假日行动挑战"
+
+msgid "tabBar/tournament"
+msgstr "挑战"
+
+msgid "tankSlot/tooltip/bonus"
+msgstr "+%(value)%"
+
+msgid "tankSlot/tooltip/description"
+msgstr "您可以为车位选择一辆V–X级坦克(金币坦克和租用坦克除外)。可选坦克的等级取决于节日气氛等级。可以为每个车位手动选择加成类型:"
+
+msgid "tankSlot/tooltip/freeXPFactor"
+msgstr "全局经验"
+
+msgid "tankSlot/tooltip/header"
+msgstr "假日行动车位"
+
+msgid "tankSlot/tooltip/secondaryDescription"
+msgstr "活动结束后，活动期间激活的最高银币加成会在假日行动坦克上持续一段时间。"
+
+msgid "tankSlot/tooltip/tankmenXPFactor"
+msgstr "乘员经验"
+
+msgid "tankSlot/tooltip/xpFactor"
+msgstr "战斗经验"
+
+msgid "totalBonusWidget/pbBonus"
+msgstr "+%(value)s%%"
+
+msgid "tournament/backLabel"
+msgstr "挑战"
+
+msgid "toy18Infotype/decorLevel"
+msgstr "装饰物等级"
+
+msgid "triggerHints/DecorationZones"
+msgstr ""
+"提高装饰\n"
+"区域等级！"
+
+msgid "triggerHints/Resources"
+msgstr "收集资源！"
+
+msgid "triggerHints/guestA"
+msgstr "完成重要使命！"
+
+msgid "triggerHints/tabs/DecorationZones"
+msgstr ""
+"提高装饰\n"
+"区域等级！"
+
+msgid "triggerHints/tabs/Resources"
+msgstr "收集资源！"
+
+msgid "triggerHints/tabs/guestA"
+msgstr "完成重要使命！"
+
+msgid "triggerHints/tabs/tournament"
+msgstr "完成任务！"
+
+msgid "triggerHints/tournament"
+msgstr "完成任务！"
+
+msgid "upgrade/title/fair"
+msgstr "将集市升至等级%(level)s"
+
+msgid "upgrade/title/fir"
+msgstr "将圣诞树升至等级%(level)s"
+
+msgid "upgrade/title/installation"
+msgstr "将设施升至等级%(level)s"
+
+msgid "upgrade/title/notEnough"
+msgstr "资源不足"
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/body"
+msgstr "显示/隐藏假日行动风格。隐蔽加成不会累加。"
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/disabled/body"
+msgstr "显示/隐藏假日行动风格。隐蔽加成不会累加。"
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/disabled/header"
+msgstr "假日行动风格"
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/header"
+msgstr "假日行动风格"
+
+msgid "vehiclesView/bonusFormat"
+msgstr "+%(bonus)s%%"
+
+msgid "vehiclesView/bonuses/description"
+msgstr "每个已解锁的车位加成都是手动选择的。"
+
+msgid "vehiclesView/bonuses/freeXPFactor"
+msgstr "全局经验"
+
+msgid "vehiclesView/bonuses/levelUp"
+msgstr "提高您的节日气氛等级即可为车位选择更高等级的坦克。"
+
+msgid "vehiclesView/bonuses/separator"
+msgstr "或"
+
+msgid "vehiclesView/bonuses/tankmenXPFactor"
+msgstr "乘员经验"
+
+msgid "vehiclesView/bonuses/xpFactor"
+msgstr "战斗经验"
+
+msgid "vehiclesView/levelsStr"
+msgstr "%(minLevel)s–%(maxLevel)s"
+
+msgid "vehiclesView/secondSubtitle"
+msgstr "您可以为车位选择一辆V–X级坦克。可选坦克等级取决于节日气氛等级。"
+
+msgid "vehiclesView/selectVehiclePopover/description"
+msgstr "选择坦克后，此车位将被冻结%(time)s"
+
+msgid "vehiclesView/selectVehiclePopover/header"
+msgstr "选择一辆%(level)s级坦克"
+
+msgid "vehiclesView/selectVehiclePopover/noItems"
+msgstr ""
+"没有满足要求的坦克。请选择坦克，\n"
+"金币坦克除外。"
+
+msgid "vehiclesView/subtitle"
+msgstr "选择任意坦克(金币坦克和租用坦克除外)，在标准模式中获得所选经验类型的额外加成。"
+
+msgid "vehiclesView/title"
+msgstr "假日行动坦克"
+
+msgid "widget/description"
+msgstr ""
+"您需要装饰3个载体，它们各拥有5个等级。需要使用%(crystalIcon)s新生岩晶和%(emeraldIcon)s圣洁翡翠资源来提高载体等级。"
+
+msgid "widget/economicBonus/bonusesTooltip/freeXPFactor"
+msgstr "全局经验"
+
+msgid "widget/economicBonus/bonusesTooltip/tankmenXPFactor"
+msgstr "乘员经验"
+
+msgid "widget/economicBonus/bonusesTooltip/xpFactor"
+msgstr "战斗经验"
+
+msgid "widget/economicBonus/creditTooltip/description"
+msgstr "长期激活。完成杰森的重要使命后可提高。"
+
+msgid "widget/economicBonus/creditTooltip/title"
+msgstr "银币加成"
+
+msgid "widget/economicBonus/errorTooltip/disjunction"
+msgstr "或"
+
+msgid "widget/economicBonus/errorTooltip/level/firstDescription"
+msgstr "将节日气氛升至%(creamColor_Open)s等级%(level)%(creamColor_Close)s"
+
+msgid "widget/economicBonus/errorTooltip/level/secondDescription"
+msgstr "选择{creamColor_Open}与节日气氛等级相同或更低等级{creamColor_Close}的坦克。"
+
+msgid "widget/economicBonus/errorTooltip/title"
+msgstr "加成未激活"
+
+msgid "widget/economicBonus/errorTooltip/vehicle/description"
+msgstr "加成不适用于金币坦克和租用坦克。"
+
+msgid "widget/economicBonus/info"
+msgstr "完成杰森的重要使命，即可获得银币和经验加成"
+
+msgid "widget/economicBonus/infoTooltip/description"
+msgstr "完成杰森的重要使命后，您将能累积收益加成，提高每场战斗中所获银币和自选经验类型的收益。"
+
+msgid "widget/economicBonus/infoTooltip/title"
+msgstr "收益加成"
+
+msgid "widget/economicBonus/xpInfoTooltip/firstDescription"
+msgstr "三种自选经验之一的加成。"
+
+msgid "widget/economicBonus/xpInfoTooltip/secondDescription"
+msgstr "坦克等级等于或低于节日气氛等级时生效。完成杰森的重要使命后可提高。"
+
+msgid "widget/economicBonus/xpInfoTooltip/title"
+msgstr "经验加成"
+
+msgid "widget/menu/challenge/body"
+msgstr "完成假日行动挑战和杰森的重要使命即可获得珍贵奖励，包括收益加成。"
+
+msgid "widget/menu/challenge/header"
+msgstr "任务"
+
+msgid "widget/menu/challenge/title"
+msgstr "任务"
+
+msgid "widget/menu/friendChallenge/body"
+msgstr "密切关注挚友在假日行动活动中访客的重要使命进度。"
+
+msgid "widget/menu/friendChallenge/header"
+msgstr "好友的指挥部"
+
+msgid "widget/menu/friendChallenge/title"
+msgstr "好友的指挥部"
+
+msgid "widget/menu/friendGlade/body"
+msgstr "从挚友的村镇中收集资源，并密切关注他们的假日行动活动进度。"
+
+msgid "widget/menu/friendGlade/header"
+msgstr "好友的村镇"
+
+msgid "widget/menu/friendGlade/title"
+msgstr "好友的村镇"
+
+msgid "widget/menu/friendInfo/body"
+msgstr "假日行动2025详情。"
+
+msgid "widget/menu/friendInfo/header"
+msgstr "活动详情"
+
+msgid "widget/menu/friendInfo/title"
+msgstr "关于活动"
+
+msgid "widget/menu/friends/body"
+msgstr "从挚友的村镇中收集资源，并密切关注他们的假日行动活动进度。"
+
+msgid "widget/menu/friends/disabledDescription"
+msgstr "好友版块目前因技术原因暂时无法访问。"
+
+msgid "widget/menu/friends/header"
+msgstr "好友"
+
+msgid "widget/menu/friends/title"
+msgstr "好友"
+
+msgid "widget/menu/gift/title"
+msgstr "终端"
+
+msgid "widget/menu/glade/body"
+msgstr "升级村镇中的载体以提高节日气氛等级。"
+
+msgid "widget/menu/glade/header"
+msgstr "村镇"
+
+msgid "widget/menu/glade/title"
+msgstr "村镇"
+
+msgid "widget/menu/info/body"
+msgstr "假日行动2025详情。"
+
+msgid "widget/menu/info/header"
+msgstr "活动详情"
+
+msgid "widget/menu/info/title"
+msgstr "关于活动"
+
+msgid "widget/menu/marketplace/body"
+msgstr "购买往期假日行动活动奖励。"
+
+msgid "widget/menu/marketplace/header"
+msgstr "假日行动商店"
+
+msgid "widget/menu/marketplace/title"
+msgstr "商店"
+
+msgid "widget/menu/rewards/body"
+msgstr "提高节日气氛等级的奖励列表。"
+
+msgid "widget/menu/rewards/header"
+msgstr "奖励"
+
+msgid "widget/menu/rewards/title"
+msgstr "奖励"
+
+msgid "widget/rewardsButton/label"
+msgstr "等级奖励"
+
+msgid "widget/title"
+msgstr "节日气氛"
+
+msgid "widgetAtmosphere/editTooltip/body"
+msgstr "您可为村镇选择并保存一个新名称，或保存原名称。"
+
+msgid "widgetAtmosphere/editTooltip/header"
+msgstr "更改村镇名称"
+
+msgid "widgetTooltip/level"
+msgstr "气氛等级"
+
+msgid "widgetTooltip/levelsPattern"
+msgstr "{initialPoints}–{finalPoints}"
+
+msgid "widgetTooltip/necessaryPoint"
+msgstr "节日气氛点数"
+
+msgid "widgetTooltip/pointLevelStatus"
+msgstr "/{finalPoints}"
+
+msgid "widgetTooltip/title"
+msgstr "节日气氛等级"
+
+msgid "widgetTooltip/titleDescription"
+msgstr "提高节日气氛等级，以获得珍贵奖励。"

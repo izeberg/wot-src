@@ -23,5 +23,9 @@ package net.wg.infrastructure.base.meta
       function as_hideWaiting() : void;
       
       function as_setSubContainerItemsVisibility(param1:Boolean) : void;
+      
+      function as_hideMessengerBar(param1:Boolean) : void;
+      
+      function as_updateNYVisibility(param1:Boolean) : void;
    }
 }

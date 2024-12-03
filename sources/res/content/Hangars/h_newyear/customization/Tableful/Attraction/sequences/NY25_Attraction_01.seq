@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>67.666702</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>NY22_Attraction_12</name>
+		<type>model</type>
+		<resource>content/Hangars/h_newyear/customization/Tableful/Attraction/normal/lod0/NY25_Attraction_01_anim.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.500000</duration>
+				<resourceID>content/Hangars/h_newyear/customization/Tableful/Attraction/animation/NY25_Attraction_01/NY25_Attraction_01_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.500000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.000000 -60.079765 -0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Girl_02_01</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Girl_02_noRabbit.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.699997</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionGirl_02_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.699997</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|tentacleB06_L</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.559524 -0.059025 0.102905</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-90.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Girl_02_02</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Girl_02_noRabbit.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.699997</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionGirl_02_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.699997</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|tentacleC06_R</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.567600 -0.296370 0.103420</value>
+				<inTangent>-0.052176 0.000041 -0.004541</inTangent>
+				<outTangent>-0.052176 0.000041 -0.004541</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>90.000000 0.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Man_06</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Man_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.500000</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionMan_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.500000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Man_04</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Man_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.500000</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionMan2_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.500000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Boy_03</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Boy_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>66.666664</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionBoy02_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>66.666664</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|tentacleC06_R</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.004174 0.100008 0.421387</value>
+				<inTangent>-0.052176 0.000041 -0.004541</inTangent>
+				<outTangent>-0.052176 0.000041 -0.004541</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-62.000000 0.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Boy_02</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Boy_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.500000</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionBoy_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.500000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Boy_01</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Boy_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>66.666664</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionBoy02_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>66.666664</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|tentacleA06_R</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.004174 0.100008 0.421387</value>
+				<inTangent>-0.052176 0.000041 -0.004541</inTangent>
+				<outTangent>-0.052176 0.000041 -0.004541</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-62.000000 0.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ny_Girl_03</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Girl_03_noRabbit.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>65.699997</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionGirl_02_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.699997</clipEndTime>
+			</frame>
+			<frame>
+				<startTime>7.233334</startTime>
+				<duration>58.466663</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY25_AttractionPeople/NY25_AttractionGirl_02_anim.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>58.466663</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>65.699997</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666672</duration>
+				<value>NY22_Attraction_12|tentacleA06_L</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.560563 -0.296352 0.103264</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-90.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snow</name>
+		<type>particle</type>
+		<resource>particles/environment/hangar/snow_trail.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>67.666702</duration>
+				<value>NY22_Attraction_12|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>6.368347 0.156782 -0.482038</value>
+				<inTangent>-0.004961 0.000000 0.599032</inTangent>
+				<outTangent>-0.004961 0.000000 0.599032</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>5.019138 0.156782 3.731153</value>
+				<inTangent>-0.369528 0.000000 0.475100</inTangent>
+				<outTangent>-0.369528 0.000000 0.475100</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.300001</startTime>
+				<value>1.097355 0.156782 6.247858</value>
+				<inTangent>-0.570791 0.000000 0.109151</inTangent>
+				<outTangent>-0.570791 0.000000 0.109151</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.500002</startTime>
+				<value>-3.776363 0.156782 5.158354</value>
+				<inTangent>-0.439140 0.000000 -0.290563</inTangent>
+				<outTangent>-0.439140 0.000000 -0.290563</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.833130</startTime>
+				<value>-6.142345 0.156782 1.422950</value>
+				<inTangent>-0.065549 0.000000 -0.481197</inTangent>
+				<outTangent>-0.065549 0.000000 -0.481197</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>42.676010</startTime>
+				<value>-4.332447 0.156782 -4.665882</value>
+				<inTangent>0.338451 0.000000 -0.378284</inTangent>
+				<outTangent>0.338451 0.000000 -0.378284</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>49.300003</startTime>
+				<value>-0.860970 0.156782 -6.271767</value>
+				<inTangent>0.552474 0.000000 -0.074051</inTangent>
+				<outTangent>0.552474 0.000000 -0.074051</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>55.526428</startTime>
+				<value>2.755783 0.156782 -5.684414</value>
+				<inTangent>0.506504 0.000000 0.230769</inTangent>
+				<outTangent>0.506504 0.000000 0.230769</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>61.366669</startTime>
+				<value>5.279560 0.156782 -3.539843</value>
+				<inTangent>0.311021 -0.000000 0.450272</inTangent>
+				<outTangent>0.311021 -0.000000 0.450272</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>67.099998</startTime>
+				<value>6.368350 0.156782 -0.482038</value>
+				<inTangent>0.019576 -0.000000 0.533338</inTangent>
+				<outTangent>0.019576 -0.000000 0.533338</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.000000 0.000000</value>
+				<inTangent>-0.000000 -4.877245 0.000000</inTangent>
+				<outTangent>-0.000000 -4.877245 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.100000</startTime>
+				<value>-0.000000 -34.628441 0.000000</value>
+				<inTangent>-0.000000 -4.877245 -0.000000</inTangent>
+				<outTangent>0.000000 1038.854248 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 1038.854248 -0.000000</inTangent>
+				<outTangent>-0.000000 -11.438764 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.233335</startTime>
+				<value>-0.000000 -81.215225 0.000000</value>
+				<inTangent>-0.000000 -11.438764 -0.000000</inTangent>
+				<outTangent>0.000000 -5.722013 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.466667</startTime>
+				<value>-0.000000 -128.326462 0.000000</value>
+				<inTangent>-0.000000 -5.722013 -0.000000</inTangent>
+				<outTangent>0.000000 -5.099546 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.866669</startTime>
+				<value>-0.000000 -171.162659 0.000000</value>
+				<inTangent>-0.000000 -5.099546 -0.000000</inTangent>
+				<outTangent>0.000000 25.486408 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>42.800003</startTime>
+				<value>0.000000 132.975159 0.000000</value>
+				<inTangent>0.000000 25.486408 -0.000000</inTangent>
+				<outTangent>0.000000 -5.045752 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>49.166668</startTime>
+				<value>0.000000 100.850548 0.000000</value>
+				<inTangent>-0.000000 -5.045752 -0.000000</inTangent>
+				<outTangent>0.000000 -5.634107 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>67.066673</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -5.634107 -0.000000</inTangent>
+				<outTangent>-0.000000 -5.634107 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>30.000244</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>30.000244</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>65.133339</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.576924</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>66.866669</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.576924</inTangent>
+				<outTangent>-30.000458</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_newyear_amb_attract_spin</name>
+		<type>sound</type>
+		<track>
+			<name>hangar_newyear_amb_attract_spin</name>
+			<type>sound</type>
+			<frame>
+				<startTime>1.000000</startTime>
+				<duration>64.933334</duration>
+				<sequenceSound>hangar_newyear_amb_attract_spin</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>RTPC_int_newyear_anim_attract_spin</name>
+			<type>rtpc_value</type>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.000000</value>
+				<inTangent>22.941174</inTangent>
+				<outTangent>22.941174</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>26.000000</value>
+				<inTangent>14.421406</inTangent>
+				<outTangent>14.421406</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.733334</startTime>
+				<value>50.000000</value>
+				<inTangent>3.398067</inTangent>
+				<outTangent>3.398067</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.266668</startTime>
+				<value>63.000000</value>
+				<inTangent>0.447248</inTangent>
+				<outTangent>0.447248</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>35.300003</startTime>
+				<value>63.000000</value>
+				<inTangent>0.287958</inTangent>
+				<outTangent>0.287958</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>54.400002</startTime>
+				<value>74.000000</value>
+				<inTangent>0.661402</inTangent>
+				<outTangent>0.661402</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>62.433338</startTime>
+				<value>80.000000</value>
+				<inTangent>3.403748</inTangent>
+				<outTangent>3.403748</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>65.733337</startTime>
+				<value>100.000000</value>
+				<inTangent>6.060607</inTangent>
+				<outTangent>6.060607</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_newyear_amb_attract_vo</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>16.033335</startTime>
+				<duration>5.199999</duration>
+				<value>ny_Man_04|root</value>
+			</frame>
+			<frame>
+				<startTime>27.900002</startTime>
+				<duration>8.133335</duration>
+				<value>ny_Man_04|root</value>
+			</frame>
+			<frame>
+				<startTime>42.533337</startTime>
+				<duration>15.433334</duration>
+				<value>ny_Man_04|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>hangar_newyear_amb_attract_vo</name>
+			<type>sound</type>
+			<frame>
+				<startTime>16.033335</startTime>
+				<duration>5.199999</duration>
+				<sequenceSound>hangar_newyear_amb_attract_vo_male</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>32.733334</startTime>
+				<duration>3.000000</duration>
+				<sequenceSound>hangar_newyear_amb_attract_vo_male</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>50.100002</startTime>
+				<duration>3.400002</duration>
+				<sequenceSound>hangar_newyear_amb_attract_vo_males</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>hangar_newyear_amb_attract_vo_kids</name>
+			<type>sound</type>
+			<frame>
+				<startTime>27.966667</startTime>
+				<duration>7.900002</duration>
+				<sequenceSound>hangar_newyear_amb_attract_vo_kids</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>42.500004</startTime>
+				<duration>7.899998</duration>
+				<sequenceSound>hangar_newyear_amb_attract_vo_kids</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_newyear_amb_attract_metal_rattle</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.366667</startTime>
+				<duration>66.599998</duration>
+				<value>NY22_Attraction_12|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>hangar_newyear_amb_attract_metal_rattle</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.366667</startTime>
+				<duration>66.633331</duration>
+				<sequenceSound>hangar_newyear_amb_attract_metal_rattle</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snow_fish_1</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/snow_trail_small.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.133333</startTime>
+				<duration>67.200005</duration>
+				<value>ny_Girl_02_02|nyGirl_02_root_int</value>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.272727</inTangent>
+				<outTangent>0.272727</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>64.866669</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.227272</inTangent>
+				<outTangent>-0.227272</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>67.066673</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.454545</inTangent>
+				<outTangent>-0.454545</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snow_fish_2</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/snow_trail_small.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<duration>67.200005</duration>
+				<value>ny_Girl_03|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.555556</inTangent>
+				<outTangent>0.555556</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.800000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.277778</inTangent>
+				<outTangent>0.277778</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>64.800003</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.214285</inTangent>
+				<outTangent>-0.214285</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>67.133339</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.428571</inTangent>
+				<outTangent>-0.428571</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

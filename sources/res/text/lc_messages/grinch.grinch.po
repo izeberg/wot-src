@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "arena_start_errors/prb/kick/timeout"
+msgstr "战斗等待时间过长。请选择其它服务器或稍后再试。"
+
+msgid "banner/eventLasts"
+msgstr "持续至%(month)s%(day)s日"
+
+msgid "banner/info/disabled"
+msgstr "活动即将开启"
+
+msgid "banner/infoSmall/disabled"
+msgstr "活动即将开启"
+
+msgid "banner/new"
+msgstr "新"
+
+msgid "banner/pause"
+msgstr ""
+"章节%(chapter)s的战斗\n"
+"于%(date)s开始"
+
+msgid "banner/postmortem"
+msgstr ""
+"活动战斗已结束\n"
+"进度开放"
+
+msgid "banner/postmortem_until"
+msgstr "至%(date)s"
+
+msgid "banner/startsIn"
+msgstr "距开始还有%(start)s"
+
+msgid "banner/subtitle"
+msgstr "节日游戏模式"
+
+msgid "banner/title"
+msgstr "冬日奇袭"
+
+msgid "battle/helpView/hint1"
+msgstr "礼物会在地图中心出现，但在地图各处都能找到"
+
+msgid "battle/helpView/hint2"
+msgstr "夺取礼物，并将其运送至团队基地"
+
+msgid "battle/helpView/hint3"
+msgstr "您也可从敌方团队的基地盗取礼物"
+
+msgid "battle/helpView/hint4"
+msgstr "击毁敌方坦克后，对方的礼物就会掉落"
+
+msgid "battle/helpView/title"
+msgstr "规则"
+
+msgid "battle/loadingScreen/hint1/description"
+msgstr "收集礼物，赢得胜利。您可在地图上或敌方基地找到散落的礼物，也可在击毁敌方坦克后拾取对方掉落的礼物。"
+
+msgid "battle/loadingScreen/hint1/title"
+msgstr "夺取礼物！"
+
+msgid "battle/loadingScreen/hint2/description"
+msgstr "保持警惕，因为其他团队会尝试从您这里盗取礼物。阻止他们，或者先下手为强，盗取他们的礼物！"
+
+msgid "battle/loadingScreen/hint2/title"
+msgstr "冬日奇袭"
+
+msgid "battle/loadingScreen/hint3/description"
+msgstr "团队基地会随着时间的推移恢复您的生命值，除非您正在受到敌人的攻击。"
+
+msgid "battle/loadingScreen/hint3/title"
+msgstr "直捣黄龙"
+
+msgid "battle/loadingScreen/hint4/description"
+msgstr "选择合适的坦克类型，最大限度地提高您的表现。运载能手来去无踪，支援标兵可恢复盟友生命值，而突击勇士则能造成高额损伤。"
+
+msgid "battle/loadingScreen/hint4/title"
+msgstr "勇敢尝试，找到适合自己的坦克类型"
+
+msgid "battle/settings/disabled"
+msgstr "在该游戏模式中，您无法更改这些设置"
+
+msgid "common/teams/blue"
+msgstr "幽蓝团队"
+
+msgid "common/teams/magenta"
+msgstr "绛紫团队"
+
+msgid "common/teams/yellow"
+msgstr "杏黄团队"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"假日行动村镇中出现了一辆满载奇珍异宝的神秘货车。在这些稀奇古怪的东西中，有一个不同寻常的棋盘游戏。仔细一看，您就会发现这是一个用纸做的微型冬季世界，而且...那些折纸坦克是在动吗？这块棋盘正召唤您投身节日挑战，体验令人难忘的冒险，并收获大量好物！"
+
+msgid "entryPointTooltip/header"
+msgstr "冬日奇袭"
+
+msgid "entryPointTooltip/performanceRisk/text/highRisk"
+msgstr "您的计算机在此模式下性能不足。您可能遇到图形和坦克移动方面的问题。亦有可能造成游戏客户端崩溃。"
+
+msgid "entryPointTooltip/performanceRisk/text/mediumRisk"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "entryPointTooltip/performanceRisk/title/highRisk"
+msgstr "低性能"
+
+msgid "entryPointTooltip/performanceRisk/title/mediumRisk"
+msgstr "性能降低"
+
+msgid "headerButtons/fightBtn/tooltip/notAvailable/body"
+msgstr "战斗将在下个章节开始时开放。"
+
+msgid "headerButtons/fightBtn/tooltip/notAvailable/header"
+msgstr "战斗未开放"
+
+msgid "npc"
+msgstr "护卫坦克"
+
+msgid "postBattle/battleScore/scoreType/ability_assist"
+msgstr "能力协助"
+
+msgid "postBattle/battleScore/scoreType/base_defended"
+msgstr "防守基地"
+
+msgid "postBattle/battleScore/scoreType/damage_assist"
+msgstr "协助损伤"
+
+msgid "postBattle/battleScore/scoreType/damage_caused"
+msgstr "造成损伤"
+
+msgid "postBattle/battleScore/scoreType/delivered"
+msgstr "运送礼物"
+
+msgid "postBattle/battleScore/scoreType/destroyed"
+msgstr "击毁"
+
+msgid "postBattle/battleScore/scoreType/spotted"
+msgstr "点亮"
+
+msgid "postBattle/battleScore/teamLabel/cyan"
+msgstr "幽蓝"
+
+msgid "postBattle/battleScore/teamLabel/magenta"
+msgstr "绛紫"
+
+msgid "postBattle/battleScore/teamLabel/yellow"
+msgstr "杏黄"
+
+msgid "postBattle/battleScore/teamPosition/first"
+msgstr "第1"
+
+msgid "postBattle/battleScore/teamPosition/second"
+msgstr "第2"
+
+msgid "postBattle/battleScore/teamPosition/third"
+msgstr "第3"
+
+msgid "postBattle/captionSubtitle"
+msgstr "战斗结束: %(timestamp)s"
+
+msgid "postBattle/captionTitle"
+msgstr "冬日奇袭%(nickname)s"
+
+msgid "postBattle/close"
+msgstr "关闭"
+
+msgid "postBattle/continueButton"
+msgstr "继续"
+
+msgid "postBattle/place"
+msgstr "排名"
+
+msgid "postBattle/placeInTeam"
+msgstr "在团队中的排名"
+
+msgid "postBattle/tab/battleResults"
+msgstr "战斗结果"
+
+msgid "postBattle/tab/battleScore"
+msgstr "战斗统计"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistBlizzard"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistBuff"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistFlare"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/baseDefenderBonus"
+msgstr "防守基地"
+
+msgid "ribbon/efficiencyRibbons/blizzardCausedDamage"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/damagedByBlizzard"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/damagedBySnowstorm"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/presentsDelivery"
+msgstr "运送礼物"
+
+msgid "ribbon/efficiencyRibbons/rageDamage"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/turretDealtDamage"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/turretDestroyed"
+msgstr "击毁炮塔"

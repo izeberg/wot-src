@@ -640,6 +640,9 @@ msgstr "降低射击、炮塔旋转或坦克移动时的准星瞄准时间和炮
 msgid "advanced/modernizedExtraHealthReserveAntifragmentationLining"
 msgstr "提升坦克和其内部模块的生命值。提升悬挂装置生命值和维修速度。降低受损弹药架和发动机的惩罚。维修后完全恢复悬挂装置的生命值。"
 
+msgid "advanced/modernizedImprovedSightsEnhancedAimDrives"
+msgstr "缩小瞄准圈大小，并缩短瞄准时间"
+
 msgid "advanced/modernizedTurbochargerRotationMechanism"
 msgstr "提升发动机的功率和最大速度。降低开火后、坦克移动、炮塔旋转时的炮弹散布范围，并且提升炮塔和车体的旋转速度。"
 
@@ -7275,6 +7278,58 @@ msgstr "达到特定的节日气氛等级。"
 msgid "notrecruitedtankman/ny24defaultGirl/label"
 msgstr "假日行动2024"
 
+msgid "notrecruitedtankman/ny25_girl_1/desc"
+msgstr ""
+"奖励给在假日行动2025中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny25_girl_1/label"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25_girl_2/desc"
+msgstr ""
+"奖励给在假日行动2025中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny25_girl_2/label"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25_girl_3/desc"
+msgstr ""
+"奖励给在假日行动2025中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny25_girl_3/label"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25_girl_4/desc"
+msgstr ""
+"奖励给在假日行动2025中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny25_girl_4/label"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25_men/desc"
+msgstr ""
+"全能硬汉？算是。无情清道夫？也没错。八面玲珑的社会人？亦可以这么说。杰森扮演过多种角色，才华横溢，现在，他被赋予了最艰巨的任务: "
+"在假日行动2025中掌控全局。幸运的是，他对装甲车辆了如指掌，而且也绝对不惧爆炸。建议您尽快把他招募到您的团队中，因为...这么说吧，上了他的\"淘气\"名单就大事不妙了。"
+
+msgid "notrecruitedtankman/ny25_men/event"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25_men/label"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25defaultGirl/desc"
+msgstr ""
+"节日气氛升至特定等级后，您将获得一名女性乘员。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny25defaultGirl/event"
+msgstr "假日行动2025"
+
+msgid "notrecruitedtankman/ny25defaultGirl/howToGetInfo"
+msgstr "达到特定节日气氛等级。"
+
+msgid "notrecruitedtankman/ny25defaultGirl/label"
+msgstr "假日行动2025"
+
 msgid "notrecruitedtankman/offspring_commander/desc"
 msgstr ""
 "这名主唱、吉他手兼作曲人是当代公认的全才！他拥有分子生物学博士学位，会做Gringo "
@@ -9216,6 +9271,9 @@ msgstr "还有%(count)s个"
 
 msgid "quests/awards/additional/header"
 msgstr "奖励:"
+
+msgid "quests/awards/additional/header/count"
+msgstr "还有%(count)s个"
 
 msgid "quests/awards/nearest/header"
 msgstr "下组奖励:"

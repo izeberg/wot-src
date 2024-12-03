@@ -182,6 +182,10 @@ class LobbyHeaderMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_hideMenu(value)
 
+    def as_hideHeaderS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_hideHeader(value)
+
     def as_toggleVisibilityMenuS(self, state):
         if self._isDAAPIInited():
             return self.flashObject.as_toggleVisibilityMenu(state)
@@ -197,3 +201,7 @@ class LobbyHeaderMeta(BaseDAAPIComponent):
     def as_setButtonHighlightS(self, btnAlias, isHighlighted):
         if self._isDAAPIInited():
             return self.flashObject.as_setButtonHighlight(btnAlias, isHighlighted)
+
+    def as_updateNYVisibilityS(self, isShowBattleBtnGlow):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateNYVisibility(isShowBattleBtnGlow)

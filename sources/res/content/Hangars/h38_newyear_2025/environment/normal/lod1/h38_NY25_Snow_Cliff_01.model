@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/h38_newyear_2025/environment/normal/lod2/h38_NY25_Snow_Cliff_01</parent>
+	<extent>165.000000</extent>
+	<visibilityBox>
+		<min>-28.167988 -0.500000 -20.333220</min>
+		<max>28.000000 14.609454 20.211906</max>
+	</visibilityBox>
+	<nodelessVisual>content/Hangars/h38_newyear_2025/environment/normal/lod1/h38_NY25_Snow_Cliff_01</nodelessVisual>
+</root>

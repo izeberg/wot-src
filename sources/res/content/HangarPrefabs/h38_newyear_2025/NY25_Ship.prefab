@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>Game Object</name>
+			<UUID>a193f770-5f89-4073-9667-8e1f968b1aad</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Models</name>
+			<UUID>7d0bb95c-4a0b-404b-bbe0-351a0a21e47e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Ship</name>
+			<UUID>5bf04829-e4c8-48e3-a232-1e6a25ec42e4</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Crane</name>
+			<UUID>a3e2ceed-201c-45b8-b6cd-6ced45b0b9f8</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Smoke</name>
+			<UUID>8fe89cbe-9103-49c8-80df-6da8fb4f0ec1</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>7d0bb95c-4a0b-404b-bbe0-351a0a21e47e</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>a193f770-5f89-4073-9667-8e1f968b1aad</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5bf04829-e4c8-48e3-a232-1e6a25ec42e4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7d0bb95c-4a0b-404b-bbe0-351a0a21e47e</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>a3e2ceed-201c-45b8-b6cd-6ced45b0b9f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7d0bb95c-4a0b-404b-bbe0-351a0a21e47e</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>8fe89cbe-9103-49c8-80df-6da8fb4f0ec1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7d0bb95c-4a0b-404b-bbe0-351a0a21e47e</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>a193f770-5f89-4073-9667-8e1f968b1aad</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>7d0bb95c-4a0b-404b-bbe0-351a0a21e47e</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-6.10352e-05 -1.52588e-05 -4.57764e-05
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5bf04829-e4c8-48e3-a232-1e6a25ec42e4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.9 0.9 0.9
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>a3e2ceed-201c-45b8-b6cd-6ced45b0b9f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-3.27179 6.86945 8.77498
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -0.523599 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>8fe89cbe-9103-49c8-80df-6da8fb4f0ec1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-5.60144 23.8815 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>5bf04829-e4c8-48e3-a232-1e6a25ec42e4</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h38_newyear_2025/environment/normal/lod0/h38_NY25_Ship.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>a3e2ceed-201c-45b8-b6cd-6ced45b0b9f8</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h38_newyear_2025/environment/normal/lod0/h38_NY25_Ship_Crane.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<UUID>8fe89cbe-9103-49c8-80df-6da8fb4f0ec1</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/hangar/ship_smoke.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

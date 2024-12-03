@@ -3637,6 +3637,8 @@ package
       
       public static const DATETIME_SHORTDATEFORMATWITHOUTYEAR:String = "#menu:dateTime/shortDateFormatWithoutYear";
       
+      public static const DATETIME_DATEMONTH:String = "#menu:dateTime/dateMonth";
+      
       public static const VALIDATION_PUBLICINFO_ABBREV_INVALID:String = "#menu:validation/publicInfo/abbrev/invalid";
       
       public static const VALIDATION_PUBLICINFO_ABBREV_INVALID_CN:String = "#menu:validation/publicInfo/abbrev/invalid/CN";

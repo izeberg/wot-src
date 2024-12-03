@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/h_newyear/customization/Installation/Sculpture/normal/lod2/NY25_Sculpture_01</parent>
+	<extent>60.000000</extent>
+	<visibilityBox>
+		<min>-1.144432 -0.019185 -1.133098</min>
+		<max>1.120993 5.502099 0.898155</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/h_newyear/customization/Installation/Sculpture/normal/lod1/NY25_Sculpture_01</nodefullVisual>
+</root>
