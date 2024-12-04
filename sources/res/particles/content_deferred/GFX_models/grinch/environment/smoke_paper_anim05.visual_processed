@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>joint1</identifier>
+			<transform>
+				<row0>0.000000 0.999624 -0.027413</row0>
+				<row1>0.000000 -0.027413 -0.999624</row1>
+				<row2>-1.000000 0.000000 0.000000</row2>
+				<row3>-0.003198 -0.039262 0.206681</row3>
+			</transform>
+			<node>
+				<identifier>joint2</identifier>
+				<transform>
+					<row0>0.999861 -0.016691 -0.000000</row0>
+					<row1>0.016691 0.999861 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.730181 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint3</identifier>
+					<transform>
+						<row0>0.972210 -0.234110 -0.000000</row0>
+						<row1>-0.234110 -0.972210 -0.000000</row1>
+						<row2>-0.000000 0.000000 -1.000000</row2>
+						<row3>2.481982 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>joint4</identifier>
+						<transform>
+							<row0>0.978454 -0.206466 -0.000000</row0>
+							<row1>-0.206466 -0.978454 -0.000000</row1>
+							<row2>-0.000000 0.000000 -1.000000</row2>
+							<row3>3.125523 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>joint5</identifier>
+							<transform>
+								<row0>0.999483 0.032153 0.000000</row0>
+								<row1>0.032153 -0.999483 -0.000000</row1>
+								<row2>-0.000000 0.000000 -1.000000</row2>
+								<row3>12.944582 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>joint6</identifier>
+								<transform>
+									<row0>0.999978 -0.006600 0.000000</row0>
+									<row1>0.006600 0.999978 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>34.047153 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>joint7</identifier>
+									<transform>
+										<row0>0.000000 0.000000 1.000000</row0>
+										<row1>1.000000 0.000000 -0.000000</row1>
+										<row2>0.000000 1.000000 0.000000</row2>
+										<row3>31.312860 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>joint7_BlendBone</identifier>
+										<transform>
+											<row0>1.000000 -0.000000 0.000000</row0>
+											<row1>0.000000 0.999777 0.021140</row1>
+											<row2>0.000000 0.021140 -0.999777</row2>
+											<row3>0.003197 -87.493340 -1.697869</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>joint6_BlendBone</identifier>
+									<transform>
+										<row0>-0.000000 0.000000 1.000000</row0>
+										<row1>0.999777 0.021140 -0.000000</row1>
+										<row2>0.021140 -0.999777 0.000000</row2>
+										<row3>-56.180481 -1.697869 0.003198</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>joint5_BlendBone</identifier>
+								<transform>
+									<row0>-0.000000 0.000000 1.000000</row0>
+									<row1>0.999894 0.014541 -0.000000</row1>
+									<row2>0.014541 -0.999894 0.000000</row2>
+									<row3>-22.143312 -1.327068 0.003198</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>joint4_BlendBone</identifier>
+							<transform>
+								<row0>-0.000000 -0.000000 -1.000000</row0>
+								<row1>0.999845 0.017616 -0.000000</row1>
+								<row2>-0.017616 0.999845 -0.000000</row2>
+								<row3>-9.229949 0.614397 -0.003198</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint3_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 0.000000 1.000000</row0>
+							<row1>0.974665 -0.223671 -0.000000</row1>
+							<row2>-0.223671 -0.974665 0.000000</row2>
+							<row3>-6.032407 1.304512 0.003198</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>joint2_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.999943 -0.010723 0.000000</row1>
+						<row2>0.010723 0.999943 0.000000</row2>
+						<row3>-3.688186 0.143985 -0.003198</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint1_BlendBone</identifier>
+				<transform>
+					<row0>0.000000 0.000000 -1.000000</row0>
+					<row1>0.999624 -0.027413 0.000000</row1>
+					<row2>0.027413 0.999624 0.000000</row2>
+					<row3>0.044913 0.205527 -0.003198</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint6_BlendBone</node>
+		<node>joint5_BlendBone</node>
+		<node>joint7_BlendBone</node>
+		<node>joint4_BlendBone</node>
+		<node>joint3_BlendBone</node>
+		<node>joint2_BlendBone</node>
+		<node>joint1_BlendBone</node>
+		<geometry>
+			<vertices>paper_smokeShape.vertices</vertices>
+			<stream>paper_smokeShape.uv2</stream>
+			<primitive>paper_smokeShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_AM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/UniversalTextures/Universal_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/blank_DM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paper_01_normal_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.040698 44.406910 0.442218</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.078198 -0.053732 -4.054143</min>
+		<max>-0.003198 88.867554 3.169708</max>
+	</boundingBox>
+	<geometrySize>28620</geometrySize>
+	<minUVDensity>0.031069</minUVDensity>
+</root>

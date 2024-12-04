@@ -159,9 +159,13 @@ package
       
       public static const BONUSES_ITEM_TANKMEN_WITH_SKILLS:String = "#quests:bonuses/item/tankmen/with_skills";
       
+      public static const BONUSES_ITEM_NY23RANDOMRESOURCES:String = "#quests:bonuses/item/ny23RandomResources";
+      
       public static const BONUSES_NOTAVAILABLE:String = "#quests:bonuses/notAvailable";
       
       public static const BONUSNAME_WDRCOIN:String = "#quests:bonusName/wdrcoin";
+      
+      public static const BONUSNAME_NY_GP:String = "#quests:bonusName/ny_gp";
       
       public static const BONUSES_GOLDPERSONALRATE:String = "#quests:bonuses/goldPersonalRate";
       
@@ -3361,6 +3365,8 @@ package
       
       public static const INFOPAGE_PREMIUMMISSIONSTITLE:String = "#quests:infoPage/premiumMissionsTitle";
       
+      public static const INFOPAGE_DAILYMISSIONS_NYDAILYDAILYMISSIONS:String = "#quests:infoPage/dailyMissions/nyDailyDailyMissions";
+      
       public static const INFOPAGE_DAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/default";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/default";
@@ -3454,6 +3460,10 @@ package
       public static const DETAILS_CONDITIONS_CUMULATIVE_DAMAGEDHP:String = "#quests:details/conditions/cumulative/damagedHp";
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_COMP7PRESTIGEPOINTS:String = "#quests:details/conditions/cumulative/comp7PrestigePoints";
+      
+      public static const LOCKEDFORREROLLTOOLTIP_HEADER:String = "#quests:lockedForRerollTooltip/header";
+      
+      public static const LOCKEDFORREROLLTOOLTIP_BODY:String = "#quests:lockedForRerollTooltip/body";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

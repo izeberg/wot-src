@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.000022 0.000001 2.752697</row3>
+							<row3>-0.000022 0.000001 2.728518</row3>
 						</transform>
 					</node>
 					<node>
@@ -102,15 +102,15 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.002701 0.267216 -2.853575</groupOrigin>
+				<groupOrigin>-0.002701 0.137182 -2.853575</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.251349 -0.263120 -0.230808</min>
-		<max>0.245948 0.797552 5.937959</max>
+		<max>0.245948 0.537483 5.937959</max>
 	</boundingBox>
 	<geometrySize>2420</geometrySize>
-	<minUVDensity>0.004112</minUVDensity>
+	<minUVDensity>0.004292</minUVDensity>
 </root>

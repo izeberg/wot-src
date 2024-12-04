@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>h38_NY25_Bridges</name>
+			<UUID>9ee20166-91f6-4834-8c12-09652fec8210</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h38_NY25_Bridges</name>
+			<UUID>2915cdf9-8aad-4064-8f74-c8cffa04774c</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>2915cdf9-8aad-4064-8f74-c8cffa04774c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ee20166-91f6-4834-8c12-09652fec8210</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>9ee20166-91f6-4834-8c12-09652fec8210</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2915cdf9-8aad-4064-8f74-c8cffa04774c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.86373 1 0.999999
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							9.99775e-07 -0.190177 0.0354954
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Colliders</type>
+			<version>1</version>
+			<component>
+				<UUID>2915cdf9-8aad-4064-8f74-c8cffa04774c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Offset</name>
+												<value>(( 19.9833,-0.0157322,-0.816135,       0), (0.00325214, 2.99992,0.021802,       0), (0.421634,-0.0754965, 10.3253,       0), (       0,  2.8503,-1.14441e-05,       1))</value>
+											</property>
+											<property>
+												<name>Rotation</name>
+												<value>(( 19.9833,-0.0157322,-0.816135,       0), (0.00325214, 2.99992,0.021802,       0), (0.421634,-0.0754965, 10.3253,       0), (       0,  2.8503,-1.14441e-05,       1))</value>
+											</property>
+											<property>
+												<name>Size</name>
+												<value>(( 19.9833,-0.0157322,-0.816135,       0), (0.00325214, 2.99992,0.021802,       0), (0.421634,-0.0754965, 10.3253,       0), (       0,  2.8503,-1.14441e-05,       1))</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CameraCollideComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>2915cdf9-8aad-4064-8f74-c8cffa04774c</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Distance</name>
+						<value>5</value>
+					</property>
+					<property>
+						<name>Become transparent</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>2915cdf9-8aad-4064-8f74-c8cffa04774c</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h38_newyear_2025/environment/normal/lod0/h38_NY25_Bridges.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

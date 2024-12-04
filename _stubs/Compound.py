@@ -108,6 +108,7 @@ class CompoundModel(pybind11_object):
 	def setPartProperties(self, *args, **kwargs): pass
 	def setPartVisible(self, *args, **kwargs): pass
 	def setPartVisibleByName(self, *args, **kwargs): pass
+	def setWorldTransform(self, *args, **kwargs): pass
 	def setupFashions(self, *args, **kwargs): pass
 	skipColorPass = property(lambda self: None)
 	skipShadowPass = property(lambda self: None)

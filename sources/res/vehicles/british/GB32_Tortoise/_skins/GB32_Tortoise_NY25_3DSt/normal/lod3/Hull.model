@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.412484 -0.767162 -3.720027</min>
+		<max>2.179424 3.696492 4.212247</max>
+	</visibilityBox>
+</root>

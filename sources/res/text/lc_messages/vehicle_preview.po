@@ -52,6 +52,9 @@ msgstr "Recover"
 msgid "buyingPanel/buyBtn/label/showAdventCalendar"
 msgstr "TO CALENDAR"
 
+msgid "buyingPanel/buyBtn/label/toBoxes"
+msgstr "To Large Boxes"
+
 msgid "buyingPanel/collectible/notResearchedVehiclesWarning"
 msgstr "Tier %(level)s %(nation)s vehicle is not researched"
 
@@ -68,6 +71,12 @@ msgstr "Discount on purchasing:"
 
 msgid "buyingPanel/customOffer/research"
 msgstr "Discount on research:"
+
+msgid "buyingPanel/fromBoxes/highlightenLabel"
+msgstr "Large Boxes!"
+
+msgid "buyingPanel/fromBoxes/label"
+msgstr "This vehicle may drop from"
 
 msgid "buyingPanel/frontlinePack/couponLabel"
 msgstr "Apply a coupon discount: %(value)s"

@@ -188,6 +188,7 @@ class Comp7WeeklyQuestPacker(_EventUIDataPacker):
 
 class DailyQuestUIDataPacker(BattleQuestUIDataPacker):
     eventsCache = dependency.descriptor(IEventsCache)
+    _NY_BONUSES_ORDER = ('battleToken', 'entitlements')
 
     def pack(self, model=None):
         if model is not None and not isinstance(model, DailyQuestModel):
@@ -198,6 +199,21 @@ class DailyQuestUIDataPacker(BattleQuestUIDataPacker):
             self._packModel(model)
             self.__resolveQuestIcon(model)
             return model
+
+    def _packModel(self, model):
+        super(DailyQuestUIDataPacker, self)._packModel(model)
+        model.setIsLockedForReroll(self._event.getData().get('meta', {}).get('locked', False))
+
+    def _packBonuses(self, model):
+        self._tooltipData = {}
+        packer = getDefaultBonusPacker()
+        bonuses = sorted(self._event.getBonuses(), key=self.__keySortOrder)
+        packQuestBonusModelAndTooltipData(packer, model.getBonuses(), self._event, self._tooltipData, bonuses)
+
+    def __keySortOrder(self, bonus):
+        if bonus.getName() in self._NY_BONUSES_ORDER:
+            return self._NY_BONUSES_ORDER.index(bonus.getName())
+        return len(self._NY_BONUSES_ORDER)
 
     def __resolveQuestIcon(self, model):
         iconId = self._event.getIconID()

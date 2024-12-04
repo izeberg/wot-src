@@ -1,10 +1,10 @@
 import BigWorld
-from cgf_script.entity_dyn_components import BWEntitiyComponentTracker
+from cgf_script.entity_dyn_components import BWEntityComponentTracker
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 ARENA_INFO_COMPONENTS = {}
 
-class ArenaInfo(BigWorld.Entity, BWEntitiyComponentTracker):
+class ArenaInfo(BigWorld.Entity, BWEntityComponentTracker):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
     def __init__(self):

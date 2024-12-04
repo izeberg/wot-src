@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/normal/lod2/Turret_02</nodefullVisual>
+	<parent>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/normal/lod3/Turret_02</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.374028 -0.005142 -2.316090</min>
+		<max>1.380275 1.689058 1.423864</max>
+	</visibilityBox>
+</root>

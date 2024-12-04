@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h_newyear/customization/Fir/Floor/NY25_Floor_01_AM_Garland.dds</Texture>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/h_newyear/customization/Fir/Floor/NY25_Floor_01_CM.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h_newyear/customization/Fir/Floor/NY25_Floor_01_CM.dds</Texture>
+					</property>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 0.200000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_contrast
+						<Float>40.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>650.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.530000</Float>
+					</property>
+					<property>
+						speed
+						<Float>0.200000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>7.000000</Float>
+					</property>
+					<property>
+						patternFilteringMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.008785 1.099210 0.366110</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/customization/Fir/Floor/NY25_Floor_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/customization/Fir/Floor/NY25_Floor_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/customization/Fir/Floor/NY25_Floor_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.090531 0.791026 -0.022517</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.136063 -0.000622 -1.296817</min>
+		<max>1.000000 1.582673 1.251783</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>99698</geometrySize>
+	<minUVDensity>0.018851</minUVDensity>
+</root>

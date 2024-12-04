@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.602674 -0.002815 -3.362100</min>
+		<max>1.602674 1.334009 3.975956</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/crash/lod3/Chassis</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+</root>

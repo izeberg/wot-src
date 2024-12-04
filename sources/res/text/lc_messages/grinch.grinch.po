@@ -1,0 +1,243 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "arena_start_errors/prb/kick/timeout"
+msgstr ""
+"Maximum time in queue for battle has expired. Select another server or try "
+"again later."
+
+msgid "banner/eventLasts"
+msgstr "Until %(day)s %(month)s"
+
+msgid "banner/info/disabled"
+msgstr "The event will be active soon"
+
+msgid "banner/infoSmall/disabled"
+msgstr "The event will be active soon"
+
+msgid "banner/new"
+msgstr "NEW"
+
+msgid "banner/pause"
+msgstr ""
+"Chapter %(chapter)s battles\n"
+"start on %(date)s"
+
+msgid "banner/postmortem"
+msgstr ""
+"Event battles are over\n"
+"Progression is available"
+
+msgid "banner/postmortem_until"
+msgstr "Until %(date)s"
+
+msgid "banner/startsIn"
+msgstr "Starts in %(start)s"
+
+msgid "banner/subtitle"
+msgstr "Festive Game Mode"
+
+msgid "banner/title"
+msgstr "WINTER RAID"
+
+msgid "battle/helpView/hint1"
+msgstr "Presents spawn in the center of the map, but can be found all over it"
+
+msgid "battle/helpView/hint2"
+msgstr "Grab presents and deliver them to your team's base"
+
+msgid "battle/helpView/hint3"
+msgstr "You can also steal presents from enemy teams' bases"
+
+msgid "battle/helpView/hint4"
+msgstr "Destroy enemy vehicles to make them drop presents"
+
+msgid "battle/helpView/title"
+msgstr "How to Play"
+
+msgid "battle/loadingScreen/hint1/description"
+msgstr ""
+"Collect presents to win. You can find them scattered on the map or at enemy "
+"bases, and pick them up after destroying enemy vehicles."
+
+msgid "battle/loadingScreen/hint1/title"
+msgstr "Get the presents!"
+
+msgid "battle/loadingScreen/hint2/description"
+msgstr ""
+"Stay alert, as other teams will try to steal presents from you. Prevent them"
+" from doing so—or steal their presents first!"
+
+msgid "battle/loadingScreen/hint2/title"
+msgstr "Winter Raid"
+
+msgid "battle/loadingScreen/hint3/description"
+msgstr ""
+"Your team's base will restore your HP over time, unless you are under enemy "
+"fire."
+
+msgid "battle/loadingScreen/hint3/title"
+msgstr "Home sweet home"
+
+msgid "battle/loadingScreen/hint4/description"
+msgstr ""
+"Choose the right vehicle type to maximize your performance. Carriers are "
+"super-sneaky, Supports can heal allies, and Assaults deal huge damage."
+
+msgid "battle/loadingScreen/hint4/title"
+msgstr "Type it out"
+
+msgid "battle/settings/disabled"
+msgstr "You cannot change these settings in this game mode"
+
+msgid "common/teams/blue"
+msgstr "Team Blue"
+
+msgid "common/teams/magenta"
+msgstr "Team Purple"
+
+msgid "common/teams/yellow"
+msgstr "Team Yellow"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"A mysterious van of curiosities has appeared in the Holiday Ops Village. "
+"Inside, among a whole host of weird and wonderful things, lies an unusual "
+"board game. A closer look at it reveals a miniature winter world made of "
+"paper, and...are those figures moving? The board beckons to dive into a "
+"festive challenge for an unforgettable adventure and heaps of presents!"
+
+msgid "entryPointTooltip/header"
+msgstr "WINTER RAID"
+
+msgid "entryPointTooltip/performanceRisk/text/highRisk"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You will "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also probable."
+
+msgid "entryPointTooltip/performanceRisk/text/mediumRisk"
+msgstr ""
+"This mode demands high computer performance. You will experience issues with"
+" map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "entryPointTooltip/performanceRisk/title/highRisk"
+msgstr "Low Performance"
+
+msgid "entryPointTooltip/performanceRisk/title/mediumRisk"
+msgstr "Reduced Performance"
+
+msgid "headerButtons/fightBtn/tooltip/notAvailable/body"
+msgstr "Battles will be available when the next Chapter begins."
+
+msgid "headerButtons/fightBtn/tooltip/notAvailable/header"
+msgstr "Battles unavailable"
+
+msgid "npc"
+msgstr "Guardian tank"
+
+msgid "postBattle/battleScore/scoreType/ability_assist"
+msgstr "Ability Assist"
+
+msgid "postBattle/battleScore/scoreType/base_defended"
+msgstr "Base Defended"
+
+msgid "postBattle/battleScore/scoreType/damage_assist"
+msgstr "Damage Assist"
+
+msgid "postBattle/battleScore/scoreType/damage_caused"
+msgstr "Damage Caused"
+
+msgid "postBattle/battleScore/scoreType/delivered"
+msgstr "Delivered"
+
+msgid "postBattle/battleScore/scoreType/destroyed"
+msgstr "Destroyed"
+
+msgid "postBattle/battleScore/scoreType/spotted"
+msgstr "Spotted"
+
+msgid "postBattle/battleScore/teamLabel/cyan"
+msgstr "Blue"
+
+msgid "postBattle/battleScore/teamLabel/magenta"
+msgstr "Purple"
+
+msgid "postBattle/battleScore/teamLabel/yellow"
+msgstr "Yellow"
+
+msgid "postBattle/battleScore/teamPosition/first"
+msgstr "1st"
+
+msgid "postBattle/battleScore/teamPosition/second"
+msgstr "2nd"
+
+msgid "postBattle/battleScore/teamPosition/third"
+msgstr "3rd"
+
+msgid "postBattle/captionSubtitle"
+msgstr "Battle ended: %(timestamp)s"
+
+msgid "postBattle/captionTitle"
+msgstr "Winter Raid %(nickname)s"
+
+msgid "postBattle/close"
+msgstr "CLOSE"
+
+msgid "postBattle/continueButton"
+msgstr "Continue"
+
+msgid "postBattle/place"
+msgstr "Place"
+
+msgid "postBattle/placeInTeam"
+msgstr "Place in team"
+
+msgid "postBattle/tab/battleResults"
+msgstr "Battle Result"
+
+msgid "postBattle/tab/battleScore"
+msgstr "Battle Score"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistBlizzard"
+msgstr "Ability Assist"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistBuff"
+msgstr "Ability Assist"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistFlare"
+msgstr "Ability Assist"
+
+msgid "ribbon/efficiencyRibbons/baseDefenderBonus"
+msgstr "Base Defended"
+
+msgid "ribbon/efficiencyRibbons/blizzardCausedDamage"
+msgstr "Damage Caused"
+
+msgid "ribbon/efficiencyRibbons/damagedByBlizzard"
+msgstr "Damage Received"
+
+msgid "ribbon/efficiencyRibbons/damagedBySnowstorm"
+msgstr "Damage Received"
+
+msgid "ribbon/efficiencyRibbons/presentsDelivery"
+msgstr "Delivered"
+
+msgid "ribbon/efficiencyRibbons/rageDamage"
+msgstr "Damage Received"
+
+msgid "ribbon/efficiencyRibbons/turretDealtDamage"
+msgstr "Damage Caused"
+
+msgid "ribbon/efficiencyRibbons/turretDestroyed"
+msgstr "Turret Destroyed"

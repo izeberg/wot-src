@@ -51,15 +51,15 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.051290 0.265548 2.280837</groupOrigin>
+				<groupOrigin>0.051290 0.072655 2.280837</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-0.291752 -0.260486 -1.383832</min>
-		<max>0.394331 0.791581 5.945505</max>
+		<max>0.394331 0.405796 5.945505</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>44924</geometrySize>
+	<geometrySize>40538</geometrySize>
 	<minUVDensity>0.022318</minUVDensity>
 </root>

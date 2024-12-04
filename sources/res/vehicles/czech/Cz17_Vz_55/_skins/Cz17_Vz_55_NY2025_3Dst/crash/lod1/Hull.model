@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod2/Hull</parent>
+	<extent>64</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.737878 -0.984706 -3.887631</min>
+		<max>1.737866 0.586967 3.646683</max>
+	</visibilityBox>
+</root>

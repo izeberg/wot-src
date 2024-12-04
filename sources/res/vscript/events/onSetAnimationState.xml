@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<name>onSetAnimationState</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>HANGAR</senderAspects>
+	<receiverAspects>HANGAR</receiverAspects>
+	<param>
+		<name>value</name>
+		<typecode>StringT</typecode>
+	</param>
+</root>

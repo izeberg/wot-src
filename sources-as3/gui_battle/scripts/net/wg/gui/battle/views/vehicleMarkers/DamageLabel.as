@@ -71,7 +71,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.tfMap["white"] = this.white;
       }
       
-      public final function dispose() : void
+      public function dispose() : void
       {
          this._disposed = true;
          this.green = null;
@@ -92,6 +92,11 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.tfMap["purple"] = null;
          this.tfMap["white"] = null;
          this.tfMap = null;
+      }
+      
+      protected function updateTextFieldMap(param1:String, param2:TextField) : void
+      {
+         this.tfMap[param1] = param2;
       }
       
       private function showTF(param1:String) : void

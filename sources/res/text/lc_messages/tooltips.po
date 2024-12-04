@@ -739,6 +739,9 @@ msgstr ""
 "suspension hit points and repair speed. Decreases the penalty from a damaged"
 " ammo rack and engine. Fully restores suspension hit points after repairs."
 
+msgid "advanced/modernizedImprovedSightsEnhancedAimDrives"
+msgstr "Reduces aiming circle size and the reticle aiming time"
+
 msgid "advanced/modernizedTurbochargerRotationMechanism"
 msgstr ""
 "Increases engine power and top speed. Reduces reticle dispersion during "
@@ -3245,7 +3248,7 @@ msgid "customization/disabledTabs/paint/body"
 msgstr "No suitable paints for the %(tankName)s."
 
 msgid "customization/disabledTabs/projectionDecal/body"
-msgstr "No suitable Decals for the %(tankName)s."
+msgstr "No suitable decals for the %(tankName)s."
 
 msgid "customization/disabledTabs/uncustomStyle/body"
 msgstr "No suitable 3D styles for the %(tankName)s in your Depot."
@@ -8374,6 +8377,73 @@ msgstr "Reach a specific Festive Atmosphere Level."
 msgid "notrecruitedtankman/ny24defaultGirl/label"
 msgstr "Holiday Ops 2024"
 
+msgid "notrecruitedtankman/ny25_girl_1/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2025. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny25_girl_1/label"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25_girl_2/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2025. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny25_girl_2/label"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25_girl_3/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2025. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny25_girl_3/label"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25_girl_4/desc"
+msgstr ""
+"Awarded for reaching a certain Festive Atmosphere Level during Holiday Ops "
+"2025. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one additional perk to 100%."
+
+msgid "notrecruitedtankman/ny25_girl_4/label"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25_men/desc"
+msgstr ""
+"All-action tough guy? Possibly. Cold-blooded enforcer? Perhaps. Street-smart"
+" purveyor of worldly wisdom? Yeah, you could say that. A man of many roles "
+"and even more talents, Jason has now been tasked with his most demanding "
+"duty yet: running the show in Holiday Ops 2025. Luckily, he knows his way "
+"around an armored vehicle, and he definitely isn't afraid of the odd "
+"explosion. It's best to get him recruited to your crew ASAP because, "
+"well...let's just say you don't want to be on his naughty list."
+
+msgid "notrecruitedtankman/ny25_men/event"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25_men/label"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25defaultGirl/desc"
+msgstr ""
+"A female crew member is awarded for reaching a specific Festive Atmosphere "
+"Level. The female crew member has the Brothers in Arms perk trained to 100% "
+"and enough experience to train one perk to 100%."
+
+msgid "notrecruitedtankman/ny25defaultGirl/event"
+msgstr "Holiday Ops 2025"
+
+msgid "notrecruitedtankman/ny25defaultGirl/howToGetInfo"
+msgstr "Reach a specific Festive Atmosphere Level."
+
+msgid "notrecruitedtankman/ny25defaultGirl/label"
+msgstr "Holiday Ops 2025"
+
 msgid "notrecruitedtankman/offspring_commander/desc"
 msgstr ""
 "The lead singer, guitar player, and songwriter is a modern-day Renaissance "
@@ -10967,6 +11037,9 @@ msgstr "And %(count)s more"
 
 msgid "quests/awards/additional/header"
 msgstr "Rewards:"
+
+msgid "quests/awards/additional/header/count"
+msgstr "And %(count)s More"
 
 msgid "quests/awards/nearest/header"
 msgstr "Next Rewards:"

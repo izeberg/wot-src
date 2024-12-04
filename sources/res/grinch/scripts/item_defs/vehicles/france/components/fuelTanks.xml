@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ids>
+		<Large_grinch>50001</Large_grinch>
+	</ids>
+	<shared>
+		<Large_grinch>
+			<tags/>
+			<price>100</price>
+			<weight>300</weight>
+			<maxHealth>100000</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
+			<healthRegenPerSec>
+				10000.0
+				<!--BW_String-->
+			</healthRegenPerSec>
+			<healthBurnPerSec>45</healthBurnPerSec>
+			<chanceToHitByProjectile>0</chanceToHitByProjectile>
+			<chanceToHitByExplosion>0</chanceToHitByExplosion>
+		</Large_grinch>
+	</shared>
+</root>

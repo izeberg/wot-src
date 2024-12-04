@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.587975 -0.006419 -2.732341</min>
+		<max>1.576011 2.632595 1.704793</max>
+	</visibilityBox>
+</root>

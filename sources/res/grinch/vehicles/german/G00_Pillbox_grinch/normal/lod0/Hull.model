@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>grinch/vehicles/german/G00_Pillbox_grinch/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-0.557452 0.000000 -0.557452</min>
+		<max>0.557452 1.279366 0.558149</max>
+	</visibilityBox>
+	<parent>grinch/vehicles/german/G00_Pillbox_grinch/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

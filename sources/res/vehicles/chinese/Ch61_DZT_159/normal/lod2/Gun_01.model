@@ -2,10 +2,10 @@
 <root>
 	<nodefullVisual>vehicles/chinese/Ch61_DZT_159/normal/lod2/Gun_01</nodefullVisual>
 	<parent>vehicles/chinese/Ch61_DZT_159/normal/lod3/Gun_01</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-0.248709 -0.260486 -0.235055</min>
-		<max>0.394331 0.783013 5.945536</max>
+		<max>0.394331 0.413078 5.945536</max>
 	</visibilityBox>
 </root>

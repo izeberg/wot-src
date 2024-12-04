@@ -90,6 +90,8 @@ package net.wg.gui.lobby.header
       private static const ONLINE_COUNTER_ONLY:uint = 4;
        
       
+      public var nyBtnGlow:Sprite = null;
+      
       public var centerBg:TutorialClip = null;
       
       public var centerMenuBg:TutorialClip = null;
@@ -165,7 +167,9 @@ package net.wg.gui.lobby.header
          constraints.addElement(this.fightBtn.name,this.fightBtn,Constraints.CENTER_H);
          constraints.addElement(this.mainMenuButtonBar.name,this.mainMenuButtonBar,Constraints.CENTER_H);
          constraints.addElement(this.mainMenuGradient.name,this.mainMenuGradient,Constraints.CENTER_H);
+         constraints.addElement(this.nyBtnGlow.name,this.nyBtnGlow,Constraints.CENTER_H);
          this.centerBg.mouseChildren = this.centerBg.mouseEnabled = false;
+         this.nyBtnGlow.mouseChildren = this.nyBtnGlow.mouseEnabled = false;
          this.centerMenuBg.mouseChildren = this.centerMenuBg.mouseEnabled = false;
          this.mainMenuGradient.mouseEnabled = false;
          this.mainMenuGradient.mouseChildren = false;
@@ -403,9 +407,16 @@ package net.wg.gui.lobby.header
       public function as_hideMenu(param1:Boolean) : void
       {
          this.centerMenuBg.visible = !param1;
+         this.nyBtnGlow.visible = !param1;
          this.onlineCounter.visible = !param1;
          this.mainMenuGradient.visible = !param1;
          this.mainMenuButtonBar.visible = !param1;
+      }
+      
+      public function as_hideHeader(param1:Boolean) : void
+      {
+         visible = !param1;
+         dispatchEvent(new HeaderEvents(HeaderEvents.VISIBILITY_CHANGED,0));
       }
       
       public function as_initOnlineCounter(param1:Boolean) : void
@@ -609,7 +620,7 @@ package net.wg.gui.lobby.header
             _loc11_.showLegacySelector = param9;
             _loc11_.hasNew = param10;
             _loc11_.eventBgLinkage = param8;
-            if(param7)
+            if(param7 && !this.nyBtnGlow.visible)
             {
                this.sparks.play();
             }
@@ -617,10 +628,15 @@ package net.wg.gui.lobby.header
             {
                this.sparks.stop();
             }
-            this.sparks.visible = param7;
+            this.sparks.visible = param7 && !this.nyBtnGlow.visible;
             this._headerButtonsHelper.invalidateDataById(HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR);
             this.as_doDisableHeaderButton(HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR,param3);
          }
+      }
+      
+      public function as_updateNYVisibility(param1:Boolean) : void
+      {
+         this.nyBtnGlow.visible = param1;
       }
       
       public function as_updateOnlineCounter(param1:String, param2:String, param3:String, param4:Boolean) : void

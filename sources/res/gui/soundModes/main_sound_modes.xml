@@ -1325,6 +1325,15 @@
 				<bank>BP15/BP15_en_US_tankmen_9/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>celebrity2025_en</name>
+			<wwise_language>cel_25_en</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>cel_25_en/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

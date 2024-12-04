@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visualScript>
+		<battleTypes>
+			<arenaBonusType>GRINCH</arenaBonusType>
+			<gameplayNames>ctf</gameplayNames>
+		</battleTypes>
+		<client>
+			<plan>
+				<name>grinch_vsm</name>
+			</plan>
+			<plan>
+				<name>grinch_cache</name>
+			</plan>
+		</client>
+	</visualScript>
+</root>

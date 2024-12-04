@@ -10,7 +10,11 @@ package net.wg.gui.lobby.vehicleCustomization.data
       
       public var hasVideo:Boolean = false;
       
-      public var popoverBtnVisible:Boolean = false;
+      public var actionButtonVisible:Boolean = false;
+      
+      public var nySpecial:Boolean = false;
+      
+      public var grinchEnable:Boolean = false;
       
       public function FilterFallbackDataVO(param1:Object)
       {
