@@ -17,7 +17,6 @@ class NYGeneralConsts(object):
     ATMOSPHERE_POINTS_PER_RANK = 'atmospherePointsPerUsedToyRank'
     DAILY_PREFIX = 'dailyPrefix'
     WEEKLY_PREFIX = 'weeklyPrefix'
-    QUESTS_START_DAY = 'questsStartDay'
     SMALL_LOOTBOX_ID = 'smallLootBoxId'
     FIRST_ENTRANCE_TOKEN = 'firstEntranceToken'
     PET_VISIBLE = 'petVisible'

@@ -1,12 +1,16 @@
 from collections import namedtuple
 import random, logging
 from account_helpers import AccountSettings
-from account_helpers.AccountSettings import NY_DAILY_QUESTS_HOVERED, NY_WEEKLY_QUESTS_HOVERED, NY_DAILY_MEDIA, NY_GENERATION_TIME, NY_DAILY_VIDEO_DAY_VISITED, NY_DAILY_VIDEO_VISITED_AT, NY_FIRST_VIDEO_VISITED
+from account_helpers.AccountSettings import NY_DAILY_QUESTS_HOVERED, NY_WEEKLY_QUESTS_HOVERED, NY_DAILY_MEDIA, NY_GENERATION_TIME, NY_DAILY_VIDEO_DAY_VISITED, NY_DAILY_VIDEO_VISITED_AT, NY_FIRST_VIDEO_SHUFFLE
+from account_helpers.settings_core.settings_constants import NewYearStorageKeys
 from gui.impl.backport import BackportTooltipWindow
-from helpers import dependency
-from helpers.time_utils import ONE_DAY, ONE_WEEK, WEEK_END
 from gui.impl.gen.resources import R
 from gui.impl.gui_decorators import args2params
+from gui.shared.missions.packers.events import BattleQuestUIDataPacker
+from helpers import dependency
+from helpers.time_utils import ONE_DAY, ONE_WEEK, WEEK_END
+from skeletons.gui.shared import IItemsCache
+from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.server_events import IEventsCache
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.quests.ny_quests_model import NyQuestsModel
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.quests.ny_quest_card_model import NyQuestCardModel
@@ -15,8 +19,7 @@ from new_year.helpers.server_settings import getNewYearGeneralConfig
 from new_year.gui.impl.lobby.new_year.sub_model_presenter import HistorySubModelPresenter
 from new_year.ny_constants import InternalViewState
 from new_year.gui.impl.new_year.new_year_bonus_packer import getNewYearBonusPacker
-from gui.shared.missions.packers.events import BattleQuestUIDataPacker
-from skeletons.gui.shared import IItemsCache
+from new_year.gui.impl.lobby.new_year.tooltips.ny_quest_mode_tooltip import NyQuestModeTooltip
 Media = namedtuple('Media', 'videoUrl,soundUrl')
 VEHICLE_LVL_INDEX = 2
 MAIN_VIDEO = R.videos.new_year.quests.quest_giver_first_entry()
@@ -42,6 +45,7 @@ class NyQuestsView(HistorySubModelPresenter):
     _INTERNAL_VIEW_STATE = InternalViewState.CHALLENGE
     __eventsCache = dependency.descriptor(IEventsCache)
     __itemsCache = dependency.descriptor(IItemsCache)
+    __settingsCore = dependency.descriptor(ISettingsCore)
 
     def __init__(self, viewModel, *args):
         super(NyQuestsView, self).__init__(viewModel, *args)
@@ -61,9 +65,9 @@ class NyQuestsView(HistorySubModelPresenter):
         AccountSettings.setNewYear(settings, value)
 
     def __generateVideoOrder(self):
-        if not self.getSettings(NY_FIRST_VIDEO_VISITED):
+        if not self.getSettings(NY_FIRST_VIDEO_SHUFFLE):
             random.shuffle(DAILY_MEDIA)
-            self.setSettings(NY_FIRST_VIDEO_VISITED, True)
+            self.setSettings(NY_FIRST_VIDEO_SHUFFLE, True)
             self.setSettings(NY_DAILY_MEDIA, DAILY_MEDIA)
         if getDaysFromGeneration() >= 7:
             newDate = self.getSettings(NY_GENERATION_TIME) + ONE_WEEK * (getDaysFromStart() / 7)
@@ -71,31 +75,31 @@ class NyQuestsView(HistorySubModelPresenter):
             random.shuffle(DAILY_MEDIA)
             self.setSettings(NY_DAILY_MEDIA, DAILY_MEDIA)
 
-    def __checkVideoVisitedToday(self):
-        if self.getSettings(NY_DAILY_VIDEO_DAY_VISITED) and getDaysFromVisitVideo() > 0:
-            self.setSettings(NY_DAILY_VIDEO_DAY_VISITED, False)
-            self.setSettings(NY_DAILY_VIDEO_VISITED_AT, self.getSettings(NY_DAILY_VIDEO_VISITED_AT) + ONE_DAY * getDaysFromStart())
-
     def __getCurrentVideoInfo(self, checkVisit):
         currentDaysDiff = getDaysFromStart() % WEEK_END
         if getDaysFromVisitVideo() > 0:
             self.setSettings(NY_DAILY_VIDEO_DAY_VISITED, False)
-            self.setSettings(NY_DAILY_VIDEO_VISITED_AT, self.getSettings(NY_DAILY_VIDEO_VISITED_AT) + ONE_DAY * getDaysFromStart())
+            self.setSettings(NY_DAILY_VIDEO_VISITED_AT, self.getSettings(NY_DAILY_VIDEO_VISITED_AT) + ONE_DAY * getDaysFromVisitVideo())
         if checkVisit and self.getSettings(NY_DAILY_VIDEO_DAY_VISITED):
             return (R.invalid(), R.invalid())
-        if getDaysFromStart() <= 0:
-            self.setSettings(NY_FIRST_VIDEO_VISITED, True)
+        if getDaysFromStart() <= self.__settingsCore.serverSettings.getNewYearStorage().get(NewYearStorageKeys.NY_FIRST_QUEST_ENTRANCE, 0):
             return (
              MAIN_VIDEO, MAIN_SOUND)
         if currentDaysDiff == 0:
-            currentIndex = getWeekFromStart() - 1
+            currentIndex = getWeekFromStart()
             media = WEEKLY_MEDIA[(currentIndex if currentIndex <= 5 else -1)]
         else:
             media = self.getSettings(NY_DAILY_MEDIA)[(currentDaysDiff - 1)]
         return (media.videoUrl, media.soundUrl)
 
+    def __updateMainVideoInfo(self):
+        if not self.__settingsCore.serverSettings.getNewYearStorage().get(NewYearStorageKeys.NY_FIRST_QUEST_VIDEO_VISITED, False):
+            self.__settingsCore.serverSettings.saveInNewYearStorage({NewYearStorageKeys.NY_FIRST_QUEST_VIDEO_VISITED: True})
+            self.__settingsCore.serverSettings.saveInNewYearStorage({NewYearStorageKeys.NY_FIRST_QUEST_ENTRANCE: getDaysFromStart()})
+
     def initialize(self, *args, **kwargs):
         super(NyQuestsView, self).initialize(*args, **kwargs)
+        self.__updateMainVideoInfo()
         self.__setUpSettings()
         self.__updateData()
 
@@ -105,9 +109,11 @@ class NyQuestsView(HistorySubModelPresenter):
         return self.__tooltipData.get(questId, {}).get(tooltipId)
 
     def createToolTipContent(self, event, contentID):
-        if R.views.dyn('gui_lootboxes').isValid() and contentID == R.views.dyn('gui_lootboxes').lobby.gui_lootboxes.tooltips.LootboxTooltip():
+        if R.views.dyn('gui_lootboxes').isValid() and contentID == R.views.gui_lootboxes.lobby.gui_lootboxes.tooltips.LootboxTooltip():
             tooltipData = self.__getTooltipData(event)
             return tooltipData.tooltip(*tooltipData.specialArgs)
+        if contentID == R.views.new_year.lobby.new_year.tooltips.NyQuestModeTooltip():
+            return NyQuestModeTooltip(event.getArgument('battleModes'), event.getArgument('minVehicleLevel'), event.getArgument('maxVehicleLevel'))
         return super(NyQuestsView, self).createToolTipContent(event, contentID)
 
     def createToolTip(self, event):
@@ -192,10 +198,10 @@ class NyQuestsView(HistorySubModelPresenter):
             self.setSettings(NY_DAILY_MEDIA, DAILY_MEDIA)
         if self.getSettings(NY_DAILY_VIDEO_DAY_VISITED) is None:
             self.setSettings(NY_DAILY_VIDEO_DAY_VISITED, False)
-        if self.getSettings(NY_FIRST_VIDEO_VISITED) is None:
-            self.setSettings(NY_FIRST_VIDEO_VISITED, False)
+        if self.getSettings(NY_FIRST_VIDEO_SHUFFLE) is None:
+            self.setSettings(NY_FIRST_VIDEO_SHUFFLE, False)
         if not self.getSettings(NY_GENERATION_TIME):
-            self.setSettings(NY_GENERATION_TIME, self.__config.getQuestsStartDay())
+            self.setSettings(NY_GENERATION_TIME, self.__config.getNewYearStartDate())
         if not self.getSettings(NY_DAILY_VIDEO_VISITED_AT):
-            self.setSettings(NY_DAILY_VIDEO_VISITED_AT, self.__config.getQuestsStartDay())
+            self.setSettings(NY_DAILY_VIDEO_VISITED_AT, self.__config.getNewYearStartDate())
         return

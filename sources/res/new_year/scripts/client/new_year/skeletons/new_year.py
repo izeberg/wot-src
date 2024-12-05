@@ -1,5 +1,5 @@
 import typing
-from adisp import adisp_async
+from adisp import adisp_async, adisp_process
 from new_year_common.items.components.ny_constants import RANDOM_VALUE, FillerState
 from skeletons.gui.game_control import IFestivityController, IGameController, IFestivityTutorialController
 if typing.TYPE_CHECKING:
@@ -153,6 +153,22 @@ class INewYearController(IFestivityController):
         raise NotImplementedError
 
     def isUIControlsLocked(self):
+        raise NotImplementedError
+
+    @adisp_async
+    @adisp_process
+    def switchToNewYearPrebattle(self, callback):
+        raise NotImplementedError
+
+    @adisp_process
+    def switchFromNewYearPrebattle(self):
+        raise NotImplementedError
+
+    def ifNewYearBattleMode(self):
+        raise NotImplementedError
+
+    @property
+    def prbNewYearActionName(self):
         raise NotImplementedError
 
 

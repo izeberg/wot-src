@@ -1,7 +1,6 @@
 from debug_utils import LOG_ERROR
 from ExtensionsManager import g_extensionsManager
 from constants import CURRENT_REALM
-from helpers.time_utils import getTimestampByStrDate
 from new_year.ny_constants import NyWidgetTopMenu
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.new_year_info_view_model import NewYearInfoViewModel, Tabs
 from new_year.gui.impl.lobby.new_year.ny_views_helpers import showInfoVideo
@@ -57,8 +56,8 @@ class NyInfoView(HistorySubModelPresenter):
             model.setMinMultiplier(min(multipliersList))
             model.setMaxMultiplier(max(multipliersList))
             model.setStartTab(startTab)
-            model.setStartDate(getTimestampByStrDate(self.__config.getNewYearStartDate()))
-            model.setEndDate(getTimestampByStrDate(self.__config.getNewYearEndDate()))
+            model.setStartDate(self.__config.getNewYearStartDate())
+            model.setEndDate(self.__config.getNewYearEndDate())
             self.__updateStatus(model=model)
             self.__updateBoxesExistance(model=model)
 

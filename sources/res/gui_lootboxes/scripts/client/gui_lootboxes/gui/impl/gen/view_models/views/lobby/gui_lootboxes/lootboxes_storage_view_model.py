@@ -26,6 +26,7 @@ class ReturnPlace(IntEnum):
     TO_FAIR = 8
     TO_SKATING = 9
     TO_ATTRACTION = 10
+    TO_PET = 11
 
 
 class LootboxesStorageViewModel(ViewModel):

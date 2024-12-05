@@ -391,6 +391,9 @@ msgstr "Натиск"
 msgid "battleType/name/epicQueue"
 msgstr "Линия фронта"
 
+msgid "battleType/name/epicRandom"
+msgstr "Генеральное сражение"
+
 msgid "battleType/name/mapbox"
 msgstr "Разведка боем"
 
@@ -410,7 +413,7 @@ msgid "battleType/name/trainingsList"
 msgstr "Тренировочный бой"
 
 msgid "battleType/name/versusAI"
-msgstr "Бой против ИИ"
+msgstr "Полигон"
 
 msgid "battleType/quoted"
 msgstr "«%(battleType)s»"
@@ -1196,7 +1199,7 @@ msgstr ""
 "Получить жетоны в качестве награды можно за выполнение праздничных задач."
 
 msgid "craftView/rewardList/WT/name"
-msgstr "WT auf E100"
+msgstr "WT auf E 100"
 
 msgid "craftView/rewardList/header"
 msgstr "Испытайте удачу!"
@@ -3138,7 +3141,7 @@ msgstr "Награды:"
 msgid "questGiver/tooltip/battleModes/description"
 msgstr ""
 "Выполнение задач доступно на технике %(minVehicleLevel)s – %(maxVehicleLevel)s уровня в режимах:\n"
-"%(battleModes)s."
+"%(battleModes)s"
 
 msgid "questGiver/tooltip/battleModes/title"
 msgstr "Условия выполнения"

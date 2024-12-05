@@ -38,5 +38,5 @@ class NyDecorationTooltip(ViewImpl):
             model.setIsPremium(toy.isPremium())
             model.customizationZone.setValue(CustomizationZone(toy.getToyObject()))
             model.setUnlockLevel(toy.getRank())
-            model.setIsLocked(toy.getCount() == 0)
+            model.setIsLocked(toy.getCount() + toy.getUsedCount() == 0)
             model.setIcon(toy.getIcon(size=EPIC_AWARD_SIZE) if self.__isToyIconEnabled else R.invalid())

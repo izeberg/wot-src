@@ -22,7 +22,7 @@ from helpers import time_utils
 from helpers.func_utils import waitEventAndCall
 from lootboxes_common import makeLootboxID
 from tutorial.control.game_vars import getVehicleByIntCD
-from messenger.formatters.service_channel import QuestAchievesFormatter
+from messenger.formatters.service_channel import LootBoxAchievesFormatter
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.surprise_machine.ny_surprise_machine_model import PurchaseFormState, MachineViews
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.surprise_machine.robot_tv_screen_view_model import RobotTvScreenState
 from new_year.gui.impl.new_year.sounds import NewYearSoundEvents, NewYearSoundsManager, NewYearSoundStates, NewYearSoundVars
@@ -213,7 +213,7 @@ class NySurpriseMachineView(HistorySubModelPresenter):
             return
 
     def __sendRewardNotification(self, rewards):
-        SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.machine.run.text(), time=time_utils.getDateTimeInLocal(time_utils.getCurrentTimestamp()).strftime('%d.%m.%y %H:%M:%S')), type=SM_TYPE.NYSurpriseMachineSingleReward, priority=NotificationPriorityLevel.MEDIUM, messageData={'rewards': QuestAchievesFormatter.formatQuestAchieves(rewards, asBattleFormatter=False, processTokens=False)})
+        SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.machine.run.text(), time=time_utils.getDateTimeInLocal(time_utils.getCurrentTimestamp()).strftime('%d.%m.%y %H:%M:%S')), type=SM_TYPE.NYSurpriseMachineSingleReward, priority=NotificationPriorityLevel.MEDIUM, messageData={'rewards': LootBoxAchievesFormatter.formatQuestAchieves(rewards, asBattleFormatter=False, processTokens=True)})
 
     def __coinApplied(self, success, rewards):
         if success and rewards:

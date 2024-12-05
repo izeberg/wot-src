@@ -286,7 +286,7 @@ NY_DAILY_MEDIA = 'NYDailyMedia'
 NY_GENERATION_TIME = 'NYGenerationTime'
 NY_DAILY_VIDEO_DAY_VISITED = 'NYFirstVideoDayVisited'
 NY_DAILY_VIDEO_VISITED_AT = 'NYFirstVideoVisitedAt'
-NY_FIRST_VIDEO_VISITED = 'NYFirstVideoVisited'
+NY_FIRST_VIDEO_SHUFFLE = 'NYFirstVideoShuffle'
 NY_ACTIVE_WIDGET_TRANSITION_SHOWN = 'NyActiveWidgetTransitionShown'
 NY_PET_SLOT_VISITED = 'NyPetSlotVisited'
 NY_GREETINGS_SEEN = 'NYGreetingsSeen'
@@ -1233,7 +1233,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                              NY_DAILY_QUESTS_HOVERED: {}, NY_WEEKLY_QUESTS_HOVERED: {}, NY_DAILY_MEDIA: [], NY_GENERATION_TIME: 0, 
                              NY_DAILY_VIDEO_VISITED_AT: 0, 
                              NY_DAILY_VIDEO_DAY_VISITED: False, 
-                             NY_FIRST_VIDEO_VISITED: False, 
+                             NY_FIRST_VIDEO_SHUFFLE: False, 
                              NY_ACTIVE_WIDGET_TRANSITION_SHOWN: False, 
                              NY_PET_SLOT_VISITED: False, 
                              NY_GREETINGS_SEEN: False}}, 

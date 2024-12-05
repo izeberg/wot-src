@@ -1325,6 +1325,12 @@ def _migrateTo128(core, data, initialized):
     nyStorageData[NewYearStorageKeys.NY_PET_TOYS_REMOVED] = False
 
 
+def _migrateTo129(core, data, initialized):
+    nyStorageData = data['nyStorage']
+    nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_VIDEO_VISITED] = False
+    nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_ENTRANCE] = 0
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1577,7 +1583,11 @@ _versions = (
  (
   126, _migrateTo126, False, False),
  (
-  127, _migrateTo127, False, False))
+  127, _migrateTo127, False, False),
+ (
+  127, _migrateTo128, False, False),
+ (
+  127, _migrateTo129, False, False))
 
 @adisp_async
 @adisp_process

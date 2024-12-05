@@ -40,7 +40,7 @@ def updateQuests(model, quest, questsArray, questModel, questFilterPrefix):
 
 
 def getDaysFromStart():
-    return int(time_utils.getServerUTCTime() - getNewYearGeneralConfig().getQuestsStartDay()) / ONE_DAY
+    return int(time_utils.getServerUTCTime() - getNewYearGeneralConfig().getNewYearStartDate()) / ONE_DAY
 
 
 def getDaysFromGeneration():
@@ -48,7 +48,7 @@ def getDaysFromGeneration():
 
 
 def getWeekFromStart():
-    return int(time_utils.getServerUTCTime() - getNewYearGeneralConfig().getQuestsStartDay()) / ONE_WEEK
+    return int(time_utils.getServerUTCTime() - getNewYearGeneralConfig().getNewYearStartDate()) / ONE_WEEK
 
 
 def getDaysFromVisitVideo():
@@ -56,11 +56,11 @@ def getDaysFromVisitVideo():
 
 
 def getDaysFromQuestsUpdate():
-    updatedAt = getQuestsUpdatedAt() if getQuestsUpdatedAt() != 0 else getNewYearGeneralConfig().getQuestsStartDay()
+    updatedAt = getQuestsUpdatedAt() if getQuestsUpdatedAt() != 0 else getNewYearGeneralConfig().getNewYearStartDate()
     return int((time_utils.getServerUTCTime() - updatedAt) / ONE_DAY)
 
 
 def updateQuestsUpdatedAt():
-    updatedAt = getQuestsUpdatedAt() if getQuestsUpdatedAt() != 0 else getNewYearGeneralConfig().getQuestsStartDay()
+    updatedAt = getQuestsUpdatedAt() if getQuestsUpdatedAt() != 0 else getNewYearGeneralConfig().getNewYearStartDate()
     newValue = updatedAt + getDaysFromQuestsUpdate() * ONE_DAY
     setQuestsUpdatedAt(newValue)

@@ -5,6 +5,8 @@ from shared_utils import CONST_CONTAINER
 from new_year_common.items.components.ny_constants import ToySettings
 from gui.sounds.filters import StatesGroup, States
 from sound_gui_manager import CommonSoundSpaceSettings
+from items.vehicles import getItemByCompactDescr
+from shared_utils import first
 RANDOM_STYLE_BOX = 'random'
 GLADE_PREFIX = 'GLADE_'
 
@@ -262,6 +264,10 @@ class VideoRewardsSoundControl(IVideoSoundManager):
         self.__bonusName = bonusName
 
     def start(self):
+        if self.__bonusName.startswith('customizations'):
+            styleDescr = getItemByCompactDescr(int(self.__bonusName.split('_')[1]))
+            vehicleItem = getItemByCompactDescr(first(first(styleDescr.filter.include).vehicles))
+            self.setBonusName(vehicleItem.name.split(':')[1])
         sound = self._SOUND_EVENT_TEMPLATE.format(NewYearLootBoxRewards.ALL.get(self.__bonusName, 'tank_default'))
         SoundGroups.g_instance.playSound2D(sound)
         self.__state = SoundManagerStates.PLAYING

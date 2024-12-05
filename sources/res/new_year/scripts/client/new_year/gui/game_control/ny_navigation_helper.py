@@ -1,3 +1,5 @@
+from skeletons.gui.shared.utils import IHangarSpace
+from helpers import dependency
 from new_year.gui.impl.new_year.navigation import NewYearNavigation
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from new_year.gui.shared.event_dispatcher import showLootBoxEntry
@@ -28,16 +30,19 @@ def _externalSwitchToViewWithCtx(ctx, *args, **kwargs):
 
 
 class NewYearNavigationHelper(object):
+    __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def onLobbyInited(self):
         g_eventBus.addListener(LobbySimpleEvent.SWITCH_NEW_YEAR_VIEW, self.__onSwitchEvent, EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.addListener(LobbySimpleEvent.SHOW_LOOT_BOX_VIEW, self.__onShowLootBox, EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.addListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.__onCameraEntityUpdated)
+        self.__hangarSpace.onHeroTankReady += self.__onHeroTankReady
 
     def clear(self):
         g_eventBus.removeListener(LobbySimpleEvent.SWITCH_NEW_YEAR_VIEW, self.__onSwitchEvent, EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(LobbySimpleEvent.SHOW_LOOT_BOX_VIEW, self.__onShowLootBox, EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.__onCameraEntityUpdated)
+        self.__hangarSpace.onHeroTankReady -= self.__onHeroTankReady
         NewYearNavigation.clear()
 
     @staticmethod
@@ -68,3 +73,6 @@ class NewYearNavigationHelper(object):
         state = ctx['state']
         if state != CameraMovementStates.FROM_OBJECT:
             NewYearNavigation.closeMainView()
+
+    def __onHeroTankReady(self):
+        NewYearNavigation.onHeroTankReady()

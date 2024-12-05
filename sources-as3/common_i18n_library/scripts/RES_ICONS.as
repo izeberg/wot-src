@@ -17629,6 +17629,22 @@ package
       
       public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICQUEUE_ICON_SMALL:String = "../maps/icons/mode_selector/mode/epicQueue/icon_small.png";
       
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_BG_B0:String = "../maps/icons/mode_selector/mode/epicRandom/bg_b0.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_BG_B1:String = "../maps/icons/mode_selector/mode/epicRandom/bg_b1.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_BG_B2:String = "../maps/icons/mode_selector/mode/epicRandom/bg_b2.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_BG_B3:String = "../maps/icons/mode_selector/mode/epicRandom/bg_b3.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_ICON_BIG:String = "../maps/icons/mode_selector/mode/epicRandom/icon_big.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_ICON_HUGE:String = "../maps/icons/mode_selector/mode/epicRandom/icon_huge.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_ICON_MEDIUM:String = "../maps/icons/mode_selector/mode/epicRandom/icon_medium.png";
+      
+      public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICRANDOM_ICON_SMALL:String = "../maps/icons/mode_selector/mode/epicRandom/icon_small.png";
+      
       public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICTRAININGSLIST_BG_B1:String = "../maps/icons/mode_selector/mode/epicTrainingsList/bg_b1.png";
       
       public static const MAPS_ICONS_MODE_SELECTOR_MODE_EPICTRAININGSLIST_BG_B2:String = "../maps/icons/mode_selector/mode/epicTrainingsList/bg_b2.png";
@@ -20539,6 +20555,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_EMPTY:String = "../maps/icons/quests/bonuses/badges/80x80/badge_empty.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_A156_T54_2022:String = "../maps/icons/quests/bonuses/big/A156_T54_2022.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_A163_H_3:String = "../maps/icons/quests/bonuses/big/A163_H_3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_A163_H_3_2:String = "../maps/icons/quests/bonuses/big/A163_H_3_2.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_ABILITYTOKEN:String = "../maps/icons/quests/bonuses/big/abilityToken.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_ADDITINVISIBILITYDEVICEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/additInvisibilityDeviceBattleBooster.png";
@@ -20620,6 +20642,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CAMOUFLAGENET:String = "../maps/icons/quests/bonuses/big/camouflageNet.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CARBONDIOXIDE:String = "../maps/icons/quests/bonuses/big/carbonDioxide.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/big/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CHOCOLATE:String = "../maps/icons/quests/bonuses/big/chocolate.png";
       
@@ -20731,6 +20755,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CRYSTAL:String = "../maps/icons/quests/bonuses/big/crystal.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/big/Cz32_Vz_58_Koncept.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_DAILY_QUESTS_REWARDS:String = "../maps/icons/quests/bonuses/big/daily_quests_rewards.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_DECAL:String = "../maps/icons/quests/bonuses/big/decal.png";
@@ -20787,6 +20813,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_EXTRASLOT:String = "../maps/icons/quests/bonuses/big/extraSlot.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/big/F129_Schneider_120_AC_Gendarme.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_FIREFIGHTING:String = "../maps/icons/quests/bonuses/big/fireFighting.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_FIREFIGHTINGBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/fireFightingBattleBooster.png";
@@ -20808,6 +20836,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GASOLINE100:String = "../maps/icons/quests/bonuses/big/gasoline100.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GASOLINE105:String = "../maps/icons/quests/bonuses/big/gasoline105.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/big/GB118_Taurus_CA.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/big/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G104_STUG_IV:String = "../maps/icons/quests/bonuses/big/germany-G104_Stug_IV.png";
       
@@ -20858,6 +20890,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_IMPROVEDVENTILATION_NY:String = "../maps/icons/quests/bonuses/big/improvedVentilation_ny.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_INSCRIPTION:String = "../maps/icons/quests/bonuses/big/inscription.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/big/It32_Prototipo_6.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/big/largeMedkit.png";
       
@@ -20987,6 +21021,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_QUALITYOIL:String = "../maps/icons/quests/bonuses/big/qualityOil.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_R199_SU_122V:String = "../maps/icons/quests/bonuses/big/R199_SU_122V.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/big/R203_Object_168N.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/big/radioman_lastEffort.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_RADIOMAN_LASTEFFORT_NY:String = "../maps/icons/quests/bonuses/big/radioman_lastEffort_ny.png";
@@ -21034,6 +21072,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_RESOURCE_CLAN_PROMORESOURCE:String = "../maps/icons/quests/bonuses/big/resource_clan_promoresource.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_REWARD_SHEET:String = "../maps/icons/quests/bonuses/big/reward_sheet.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_S31_STRV_K:String = "../maps/icons/quests/bonuses/big/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_SACOIN:String = "../maps/icons/quests/bonuses/big/sacoin.png";
       
@@ -21105,13 +21145,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/virtuosoBattleBooster.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A101_M56:String = "../maps/icons/quests/bonuses/s180x135/A101_M56.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A156_T54_2022:String = "../maps/icons/quests/bonuses/s180x135/A156_T54_2022.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A104_M4A3E8A:String = "../maps/icons/quests/bonuses/s180x135/A104_M4A3E8A.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A163_H_3:String = "../maps/icons/quests/bonuses/s180x135/A163_H_3.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A123_T78:String = "../maps/icons/quests/bonuses/s180x135/A123_T78.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A86_T23E3:String = "../maps/icons/quests/bonuses/s180x135/A86_T23E3.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_A163_H_3_2:String = "../maps/icons/quests/bonuses/s180x135/A163_H_3_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_AUTOEXTINGUISHERS:String = "../maps/icons/quests/bonuses/s180x135/autoExtinguishers.png";
       
@@ -21145,7 +21183,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_BOOSTER_XP_PREMIUM:String = "../maps/icons/quests/bonuses/s180x135/booster_xp_premium.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CH24_TYPE64:String = "../maps/icons/quests/bonuses/s180x135/Ch24_Type64.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s180x135/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COATEDOPTICS:String = "../maps/icons/quests/bonuses/s180x135/coatedOptics.png";
       
@@ -21161,7 +21199,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CRYSTAL:String = "../maps/icons/quests/bonuses/s180x135/crystal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CZ15_SKODA_T:String = "../maps/icons/quests/bonuses/s180x135/Cz15_Skoda_T.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/s180x135/Cz32_Vz_58_Koncept.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_DEFAULT:String = "../maps/icons/quests/bonuses/s180x135/default.png";
       
@@ -21191,31 +21229,15 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_EXTRASLOT:String = "../maps/icons/quests/bonuses/s180x135/extraSlot.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_F28_105_LEFH:String = "../maps/icons/quests/bonuses/s180x135/F28_105_leFH.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_F69_AMX13_57:String = "../maps/icons/quests/bonuses/s180x135/F69_AMX13_57.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_F85_M4A1_FL1:String = "../maps/icons/quests/bonuses/s180x135/F85_M4A1_FL1.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/s180x135/F129_Schneider_120_AC_Gendarme.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_FIREFIGHTING:String = "../maps/icons/quests/bonuses/s180x135/fireFighting.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_FREEXP:String = "../maps/icons/quests/bonuses/s180x135/freeXP.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_G109_STEYR_W:String = "../maps/icons/quests/bonuses/s180x135/G109_Steyr_W.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/s180x135/GB118_Taurus_CA.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_G118_VK4503:String = "../maps/icons/quests/bonuses/s180x135/G118_VK4503.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_G36_PZII_J:String = "../maps/icons/quests/bonuses/s180x135/G36_PzII_J.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_G48_E_25:String = "../maps/icons/quests/bonuses/s180x135/G48_E-25.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_G70_PZIV_HYD:String = "../maps/icons/quests/bonuses/s180x135/G70_PzIV_Hyd.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GB108_A46:String = "../maps/icons/quests/bonuses/s180x135/GB108_A46.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GB37_VALLIAN:String = "../maps/icons/quests/bonuses/s180x135/GB37_Vallian.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GB95_EKINS_F:String = "../maps/icons/quests/bonuses/s180x135/GB95_Ekins_F.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/s180x135/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GOLD:String = "../maps/icons/quests/bonuses/s180x135/gold.png";
       
@@ -21225,7 +21247,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IMPROVEDVENTILATION:String = "../maps/icons/quests/bonuses/s180x135/improvedVentilation.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_J12_CHI_NU_K:String = "../maps/icons/quests/bonuses/s180x135/J12_Chi_Nu_K.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/s180x135/It32_Prototipo_6.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s180x135/largeMedkit.png";
       
@@ -21261,17 +21283,9 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_PREMIUM_UNIVERSAL:String = "../maps/icons/quests/bonuses/s180x135/premium_universal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R156_IS_2M:String = "../maps/icons/quests/bonuses/s180x135/R156_IS_2M.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R199_SU_122V:String = "../maps/icons/quests/bonuses/s180x135/R199_SU_122V.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R160_T_50_2:String = "../maps/icons/quests/bonuses/s180x135/R160_T_50_2.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R186_KV_1_SC:String = "../maps/icons/quests/bonuses/s180x135/R186_KV_1_Sc.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R193_M4A2_T:String = "../maps/icons/quests/bonuses/s180x135/R193_M4A2_T_.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R219_WAFFENT:String = "../maps/icons/quests/bonuses/s180x135/R219_Waffent.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R50_SU76I:String = "../maps/icons/quests/bonuses/s180x135/R50_SU76I.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/s180x135/R203_Object_168N.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s180x135/radioman_lastEffort.png";
       
@@ -21279,7 +21293,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RECERTIFICATIONFORM:String = "../maps/icons/quests/bonuses/s180x135/recertificationForm.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_S01_STRV_74:String = "../maps/icons/quests/bonuses/s180x135/S01_Strv_74_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_S31_STRV_K:String = "../maps/icons/quests/bonuses/s180x135/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_SLOTS:String = "../maps/icons/quests/bonuses/s180x135/slots.png";
       
@@ -21288,6 +21302,16 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_SMALLREPAIRKIT:String = "../maps/icons/quests/bonuses/s180x135/smallRepairkit.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE:String = "../maps/icons/quests/bonuses/s180x135/style.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D_31214:String = "../maps/icons/quests/bonuses/s180x135/style_3d_31214.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D_31247:String = "../maps/icons/quests/bonuses/s180x135/style_3d_31247.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D_31248:String = "../maps/icons/quests/bonuses/s180x135/style_3d_31248.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D_31255:String = "../maps/icons/quests/bonuses/s180x135/style_3d_31255.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D_31256:String = "../maps/icons/quests/bonuses/s180x135/style_3d_31256.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMEN:String = "../maps/icons/quests/bonuses/s180x135/tankmen.png";
       
@@ -21303,13 +21327,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_VEHICLES:String = "../maps/icons/quests/bonuses/s180x135/vehicles.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A101_M56:String = "../maps/icons/quests/bonuses/s232x174/A101_M56.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A156_T54_2022:String = "../maps/icons/quests/bonuses/s232x174/A156_T54_2022.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A104_M4A3E8A:String = "../maps/icons/quests/bonuses/s232x174/A104_M4A3E8A.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A163_H_3:String = "../maps/icons/quests/bonuses/s232x174/A163_H_3.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A123_T78:String = "../maps/icons/quests/bonuses/s232x174/A123_T78.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A86_T23E3:String = "../maps/icons/quests/bonuses/s232x174/A86_T23E3.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_A163_H_3_2:String = "../maps/icons/quests/bonuses/s232x174/A163_H_3_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s232x174/additionalInvisibilityDevice.png";
       
@@ -21375,7 +21397,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CAMOUFLAGENET:String = "../maps/icons/quests/bonuses/s232x174/camouflageNet.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CH24_TYPE64:String = "../maps/icons/quests/bonuses/s232x174/Ch24_Type64.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s232x174/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CHOCOLATE:String = "../maps/icons/quests/bonuses/s232x174/chocolate.png";
       
@@ -21401,7 +21423,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CRYSTAL:String = "../maps/icons/quests/bonuses/s232x174/crystal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CZ15_SKODA_T:String = "../maps/icons/quests/bonuses/s232x174/Cz15_Skoda_T.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/s232x174/Cz32_Vz_58_Koncept.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_DRIVER_SMOOTHDRIVING:String = "../maps/icons/quests/bonuses/s232x174/driver_smoothDriving.png";
       
@@ -21427,11 +21449,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_EXTRAHEALTHRESERVE:String = "../maps/icons/quests/bonuses/s232x174/extraHealthReserve.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_F28_105_LEFH:String = "../maps/icons/quests/bonuses/s232x174/F28_105_leFH.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_F69_AMX13_57:String = "../maps/icons/quests/bonuses/s232x174/F69_AMX13_57.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_F85_M4A1_FL1:String = "../maps/icons/quests/bonuses/s232x174/F85_M4A1_FL1.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/s232x174/F129_Schneider_120_AC_Gendarme.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_FIREFIGHTING:String = "../maps/icons/quests/bonuses/s232x174/fireFighting.png";
       
@@ -21439,25 +21457,13 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_FREEXP:String = "../maps/icons/quests/bonuses/s232x174/freeXP.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_G109_STEYR_W:String = "../maps/icons/quests/bonuses/s232x174/G109_Steyr_W.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_G118_VK4503:String = "../maps/icons/quests/bonuses/s232x174/G118_VK4503.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_G36_PZII_J:String = "../maps/icons/quests/bonuses/s232x174/G36_PzII_J.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_G48_E_25:String = "../maps/icons/quests/bonuses/s232x174/G48_E-25.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_G70_PZIV_HYD:String = "../maps/icons/quests/bonuses/s232x174/G70_PzIV_Hyd.png";
-      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GASOLINE100:String = "../maps/icons/quests/bonuses/s232x174/gasoline100.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GASOLINE105:String = "../maps/icons/quests/bonuses/s232x174/gasoline105.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GB108_A46:String = "../maps/icons/quests/bonuses/s232x174/GB108_A46.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/s232x174/GB118_Taurus_CA.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GB37_VALLIAN:String = "../maps/icons/quests/bonuses/s232x174/GB37_Vallian.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GB95_EKINS_F:String = "../maps/icons/quests/bonuses/s232x174/GB95_Ekins_F.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/s232x174/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_GOLD:String = "../maps/icons/quests/bonuses/s232x174/gold.png";
       
@@ -21491,7 +21497,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_INSCRIPTION:String = "../maps/icons/quests/bonuses/s232x174/inscription.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_J12_CHI_NU_K:String = "../maps/icons/quests/bonuses/s232x174/J12_Chi_Nu_K.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/s232x174/It32_Prototipo_6.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s232x174/largeMedkit.png";
       
@@ -21569,17 +21575,9 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_QUALITYOIL:String = "../maps/icons/quests/bonuses/s232x174/qualityOil.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R156_IS_2M:String = "../maps/icons/quests/bonuses/s232x174/R156_IS_2M.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R199_SU_122V:String = "../maps/icons/quests/bonuses/s232x174/R199_SU_122V.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R160_T_50_2:String = "../maps/icons/quests/bonuses/s232x174/R160_T_50_2.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R186_KV_1_SC:String = "../maps/icons/quests/bonuses/s232x174/R186_KV_1_Sc.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R193_M4A2_T:String = "../maps/icons/quests/bonuses/s232x174/R193_M4A2_T_.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R219_WAFFENT:String = "../maps/icons/quests/bonuses/s232x174/R219_Waffent.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R50_SU76I:String = "../maps/icons/quests/bonuses/s232x174/R50_SU76I.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/s232x174/R203_Object_168N.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s232x174/radioman_lastEffort.png";
       
@@ -21611,7 +21609,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s232x174/removedRpmLimiter.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_S01_STRV_74:String = "../maps/icons/quests/bonuses/s232x174/S01_Strv_74_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_S31_STRV_K:String = "../maps/icons/quests/bonuses/s232x174/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/sixthSenseBattleBooster.png";
       
@@ -21638,6 +21636,16 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_306:String = "../maps/icons/quests/bonuses/s232x174/style_3d_306.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31214:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31214.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31247:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31247.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31248:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31248.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31255:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31255.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31256:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31256.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_334:String = "../maps/icons/quests/bonuses/s232x174/style_3d_334.png";
       
@@ -21803,13 +21811,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/virtuosoBattleBooster.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A101_M56:String = "../maps/icons/quests/bonuses/s296x222/A101_M56.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A156_T54_2022:String = "../maps/icons/quests/bonuses/s296x222/A156_T54_2022.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A104_M4A3E8A:String = "../maps/icons/quests/bonuses/s296x222/A104_M4A3E8A.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A163_H_3:String = "../maps/icons/quests/bonuses/s296x222/A163_H_3.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A123_T78:String = "../maps/icons/quests/bonuses/s296x222/A123_T78.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A86_T23E3:String = "../maps/icons/quests/bonuses/s296x222/A86_T23E3.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_A163_H_3_2:String = "../maps/icons/quests/bonuses/s296x222/A163_H_3_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s296x222/additionalInvisibilityDevice.png";
       
@@ -21873,7 +21879,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CAMOUFLAGENET:String = "../maps/icons/quests/bonuses/s296x222/camouflageNet.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CH24_TYPE64:String = "../maps/icons/quests/bonuses/s296x222/Ch24_Type64.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s296x222/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CHOCOLATE:String = "../maps/icons/quests/bonuses/s296x222/chocolate.png";
       
@@ -21905,7 +21911,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CRYSTAL:String = "../maps/icons/quests/bonuses/s296x222/crystal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CZ15_SKODA_T:String = "../maps/icons/quests/bonuses/s296x222/Cz15_Skoda_T.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/s296x222/Cz32_Vz_58_Koncept.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_DRIVER_SMOOTHDRIVING:String = "../maps/icons/quests/bonuses/s296x222/driver_smoothDriving.png";
       
@@ -21931,11 +21937,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_EXTRAHEALTHRESERVE:String = "../maps/icons/quests/bonuses/s296x222/extraHealthReserve.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_F28_105_LEFH:String = "../maps/icons/quests/bonuses/s296x222/F28_105_leFH.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_F69_AMX13_57:String = "../maps/icons/quests/bonuses/s296x222/F69_AMX13_57.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_F85_M4A1_FL1:String = "../maps/icons/quests/bonuses/s296x222/F85_M4A1_FL1.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/s296x222/F129_Schneider_120_AC_Gendarme.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_FIREFIGHTING:String = "../maps/icons/quests/bonuses/s296x222/fireFighting.png";
       
@@ -21943,25 +21945,13 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_FREEXP:String = "../maps/icons/quests/bonuses/s296x222/freeXP.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_G109_STEYR_W:String = "../maps/icons/quests/bonuses/s296x222/G109_Steyr_W.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_G118_VK4503:String = "../maps/icons/quests/bonuses/s296x222/G118_VK4503.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_G36_PZII_J:String = "../maps/icons/quests/bonuses/s296x222/G36_PzII_J.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_G48_E_25:String = "../maps/icons/quests/bonuses/s296x222/G48_E-25.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_G70_PZIV_HYD:String = "../maps/icons/quests/bonuses/s296x222/G70_PzIV_Hyd.png";
-      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GASOLINE100:String = "../maps/icons/quests/bonuses/s296x222/gasoline100.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GASOLINE105:String = "../maps/icons/quests/bonuses/s296x222/gasoline105.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GB108_A46:String = "../maps/icons/quests/bonuses/s296x222/GB108_A46.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/s296x222/GB118_Taurus_CA.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GB37_VALLIAN:String = "../maps/icons/quests/bonuses/s296x222/GB37_Vallian.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GB95_EKINS_F:String = "../maps/icons/quests/bonuses/s296x222/GB95_Ekins_F.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/s296x222/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_GOLD:String = "../maps/icons/quests/bonuses/s296x222/gold.png";
       
@@ -21995,7 +21985,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_INSCRIPTION:String = "../maps/icons/quests/bonuses/s296x222/inscription.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_J12_CHI_NU_K:String = "../maps/icons/quests/bonuses/s296x222/J12_Chi_Nu_K.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/s296x222/It32_Prototipo_6.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s296x222/largeMedkit.png";
       
@@ -22071,19 +22061,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_QUALITYOIL:String = "../maps/icons/quests/bonuses/s296x222/qualityOil.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R156_IS_2M:String = "../maps/icons/quests/bonuses/s296x222/R156_IS_2M.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R199_SU_122V:String = "../maps/icons/quests/bonuses/s296x222/R199_SU_122V.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R160_T_50_2:String = "../maps/icons/quests/bonuses/s296x222/R160_T_50_2.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R186_KV_1_SC:String = "../maps/icons/quests/bonuses/s296x222/R186_KV_1_Sc.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R193_M4A2_T:String = "../maps/icons/quests/bonuses/s296x222/R193_M4A2_T_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/s296x222/R203_Object_168N.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R207_HT_130:String = "../maps/icons/quests/bonuses/s296x222/R207_HT_130.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R219_WAFFENT:String = "../maps/icons/quests/bonuses/s296x222/R219_Waffent.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R50_SU76I:String = "../maps/icons/quests/bonuses/s296x222/R50_SU76I.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s296x222/radioman_lastEffort.png";
       
@@ -22115,7 +22097,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s296x222/removedRpmLimiter.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_S01_STRV_74:String = "../maps/icons/quests/bonuses/s296x222/S01_Strv_74_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_S31_STRV_K:String = "../maps/icons/quests/bonuses/s296x222/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/sixthSenseBattleBooster.png";
       
@@ -22142,6 +22124,16 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_306:String = "../maps/icons/quests/bonuses/s296x222/style_3d_306.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31214:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31214.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31247:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31247.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31248:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31248.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31255:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31255.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31256:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31256.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_334:String = "../maps/icons/quests/bonuses/s296x222/style_3d_334.png";
       
@@ -22307,13 +22299,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/virtuosoBattleBooster.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A101_M56:String = "../maps/icons/quests/bonuses/s360x270/A101_M56.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A156_T54_2022:String = "../maps/icons/quests/bonuses/s360x270/A156_T54_2022.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A104_M4A3E8A:String = "../maps/icons/quests/bonuses/s360x270/A104_M4A3E8A.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A163_H_3:String = "../maps/icons/quests/bonuses/s360x270/A163_H_3.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A123_T78:String = "../maps/icons/quests/bonuses/s360x270/A123_T78.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A86_T23E3:String = "../maps/icons/quests/bonuses/s360x270/A86_T23E3.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_A163_H_3_2:String = "../maps/icons/quests/bonuses/s360x270/A163_H_3_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s360x270/additionalInvisibilityDevice.png";
       
@@ -22353,7 +22343,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CAMOUFLAGENET:String = "../maps/icons/quests/bonuses/s360x270/camouflageNet.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CH24_TYPE64:String = "../maps/icons/quests/bonuses/s360x270/Ch24_Type64.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s360x270/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CHOCOLATE:String = "../maps/icons/quests/bonuses/s360x270/chocolate.png";
       
@@ -22377,7 +22367,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CRYSTAL:String = "../maps/icons/quests/bonuses/s360x270/crystal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CZ15_SKODA_T:String = "../maps/icons/quests/bonuses/s360x270/Cz15_Skoda_T.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/s360x270/Cz32_Vz_58_Koncept.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_DRIVER_SMOOTHDRIVING:String = "../maps/icons/quests/bonuses/s360x270/driver_smoothDriving.png";
       
@@ -22397,35 +22387,19 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_EXTRAHEALTHRESERVE:String = "../maps/icons/quests/bonuses/s360x270/extraHealthReserve.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_F28_105_LEFH:String = "../maps/icons/quests/bonuses/s360x270/F28_105_leFH.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_F69_AMX13_57:String = "../maps/icons/quests/bonuses/s360x270/F69_AMX13_57.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_F85_M4A1_FL1:String = "../maps/icons/quests/bonuses/s360x270/F85_M4A1_FL1.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/s360x270/F129_Schneider_120_AC_Gendarme.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_FIREFIGHTING:String = "../maps/icons/quests/bonuses/s360x270/fireFighting.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_FIREFIGHTING_NY:String = "../maps/icons/quests/bonuses/s360x270/fireFighting_ny.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_G109_STEYR_W:String = "../maps/icons/quests/bonuses/s360x270/G109_Steyr_W.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_G118_VK4503:String = "../maps/icons/quests/bonuses/s360x270/G118_VK4503.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_G36_PZII_J:String = "../maps/icons/quests/bonuses/s360x270/G36_PzII_J.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_G48_E_25:String = "../maps/icons/quests/bonuses/s360x270/G48_E-25.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_G70_PZIV_HYD:String = "../maps/icons/quests/bonuses/s360x270/G70_PzIV_Hyd.png";
-      
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GASOLINE100:String = "../maps/icons/quests/bonuses/s360x270/gasoline100.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GASOLINE105:String = "../maps/icons/quests/bonuses/s360x270/gasoline105.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GB108_A46:String = "../maps/icons/quests/bonuses/s360x270/GB108_A46.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/s360x270/GB118_Taurus_CA.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GB37_VALLIAN:String = "../maps/icons/quests/bonuses/s360x270/GB37_Vallian.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GB95_EKINS_F:String = "../maps/icons/quests/bonuses/s360x270/GB95_Ekins_F.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/s360x270/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_GOLD_SMALL:String = "../maps/icons/quests/bonuses/s360x270/gold_small.png";
       
@@ -22459,9 +22433,9 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_INTELLIGENCE:String = "../maps/icons/quests/bonuses/s360x270/intelligence.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_I_LVL_CHN:String = "../maps/icons/quests/bonuses/s360x270/I_lvl_chn.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/s360x270/It32_Prototipo_6.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_J12_CHI_NU_K:String = "../maps/icons/quests/bonuses/s360x270/J12_Chi_Nu_K.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_I_LVL_CHN:String = "../maps/icons/quests/bonuses/s360x270/I_lvl_chn.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s360x270/largeMedkit.png";
       
@@ -22511,17 +22485,9 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_QUALITYOIL:String = "../maps/icons/quests/bonuses/s360x270/qualityOil.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R156_IS_2M:String = "../maps/icons/quests/bonuses/s360x270/R156_IS_2M.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R199_SU_122V:String = "../maps/icons/quests/bonuses/s360x270/R199_SU_122V.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R160_T_50_2:String = "../maps/icons/quests/bonuses/s360x270/R160_T_50_2.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R186_KV_1_SC:String = "../maps/icons/quests/bonuses/s360x270/R186_KV_1_Sc.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R193_M4A2_T:String = "../maps/icons/quests/bonuses/s360x270/R193_M4A2_T_.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R219_WAFFENT:String = "../maps/icons/quests/bonuses/s360x270/R219_Waffent.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R50_SU76I:String = "../maps/icons/quests/bonuses/s360x270/R50_SU76I.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/s360x270/R203_Object_168N.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s360x270/radioman_lastEffort.png";
       
@@ -22551,7 +22517,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s360x270/removedRpmLimiter.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_S01_STRV_74:String = "../maps/icons/quests/bonuses/s360x270/S01_Strv_74_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_S31_STRV_K:String = "../maps/icons/quests/bonuses/s360x270/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_SLOTS:String = "../maps/icons/quests/bonuses/s360x270/slots.png";
       
@@ -22562,6 +22528,16 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STEREOSCOPE:String = "../maps/icons/quests/bonuses/s360x270/stereoscope.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D:String = "../maps/icons/quests/bonuses/s360x270/style_3d.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D_31214:String = "../maps/icons/quests/bonuses/s360x270/style_3d_31214.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D_31247:String = "../maps/icons/quests/bonuses/s360x270/style_3d_31247.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D_31248:String = "../maps/icons/quests/bonuses/s360x270/style_3d_31248.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D_31255:String = "../maps/icons/quests/bonuses/s360x270/style_3d_31255.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D_31256:String = "../maps/icons/quests/bonuses/s360x270/style_3d_31256.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TANKMEN:String = "../maps/icons/quests/bonuses/s360x270/tankmen.png";
       
@@ -22577,13 +22553,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_VEHICLES:String = "../maps/icons/quests/bonuses/s360x270/vehicles.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A101_M56:String = "../maps/icons/quests/bonuses/s400x300/A101_M56.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A156_T54_2022:String = "../maps/icons/quests/bonuses/s400x300/A156_T54_2022.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A104_M4A3E8A:String = "../maps/icons/quests/bonuses/s400x300/A104_M4A3E8A.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A163_H_3:String = "../maps/icons/quests/bonuses/s400x300/A163_H_3.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A123_T78:String = "../maps/icons/quests/bonuses/s400x300/A123_T78.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A86_T23E3:String = "../maps/icons/quests/bonuses/s400x300/A86_T23E3.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_A163_H_3_2:String = "../maps/icons/quests/bonuses/s400x300/A163_H_3_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s400x300/additionalInvisibilityDevice.png";
       
@@ -22649,7 +22623,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CAMOUFLAGENET:String = "../maps/icons/quests/bonuses/s400x300/camouflageNet.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CH24_TYPE64:String = "../maps/icons/quests/bonuses/s400x300/Ch24_Type64.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s400x300/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CHOCOLATE:String = "../maps/icons/quests/bonuses/s400x300/chocolate.png";
       
@@ -22681,7 +22655,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CRYSTAL:String = "../maps/icons/quests/bonuses/s400x300/crystal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CZ15_SKODA_T:String = "../maps/icons/quests/bonuses/s400x300/Cz15_Skoda_T.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/s400x300/Cz32_Vz_58_Koncept.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_DRIVER_SMOOTHDRIVING:String = "../maps/icons/quests/bonuses/s400x300/driver_smoothDriving.png";
       
@@ -22707,11 +22681,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_EXTRAHEALTHRESERVE:String = "../maps/icons/quests/bonuses/s400x300/extraHealthReserve.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_F28_105_LEFH:String = "../maps/icons/quests/bonuses/s400x300/F28_105_leFH.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_F69_AMX13_57:String = "../maps/icons/quests/bonuses/s400x300/F69_AMX13_57.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_F85_M4A1_FL1:String = "../maps/icons/quests/bonuses/s400x300/F85_M4A1_FL1.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/s400x300/F129_Schneider_120_AC_Gendarme.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_FIREFIGHTING:String = "../maps/icons/quests/bonuses/s400x300/fireFighting.png";
       
@@ -22719,25 +22689,13 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_FREEXP:String = "../maps/icons/quests/bonuses/s400x300/freeXP.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_G109_STEYR_W:String = "../maps/icons/quests/bonuses/s400x300/G109_Steyr_W.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_G118_VK4503:String = "../maps/icons/quests/bonuses/s400x300/G118_VK4503.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_G36_PZII_J:String = "../maps/icons/quests/bonuses/s400x300/G36_PzII_J.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_G48_E_25:String = "../maps/icons/quests/bonuses/s400x300/G48_E-25.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_G70_PZIV_HYD:String = "../maps/icons/quests/bonuses/s400x300/G70_PzIV_Hyd.png";
-      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GASOLINE100:String = "../maps/icons/quests/bonuses/s400x300/gasoline100.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GASOLINE105:String = "../maps/icons/quests/bonuses/s400x300/gasoline105.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GB108_A46:String = "../maps/icons/quests/bonuses/s400x300/GB108_A46.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/s400x300/GB118_Taurus_CA.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GB37_VALLIAN:String = "../maps/icons/quests/bonuses/s400x300/GB37_Vallian.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GB95_EKINS_F:String = "../maps/icons/quests/bonuses/s400x300/GB95_Ekins_F.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/s400x300/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_GOLD:String = "../maps/icons/quests/bonuses/s400x300/gold.png";
       
@@ -22771,7 +22729,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_INSCRIPTION:String = "../maps/icons/quests/bonuses/s400x300/inscription.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_J12_CHI_NU_K:String = "../maps/icons/quests/bonuses/s400x300/J12_Chi_Nu_K.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/s400x300/It32_Prototipo_6.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s400x300/largeMedkit.png";
       
@@ -22851,19 +22809,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_QUALITYOIL:String = "../maps/icons/quests/bonuses/s400x300/qualityOil.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R156_IS_2M:String = "../maps/icons/quests/bonuses/s400x300/R156_IS_2M.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R199_SU_122V:String = "../maps/icons/quests/bonuses/s400x300/R199_SU_122V.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R160_T_50_2:String = "../maps/icons/quests/bonuses/s400x300/R160_T_50_2.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R186_KV_1_SC:String = "../maps/icons/quests/bonuses/s400x300/R186_KV_1_Sc.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R193_M4A2_T:String = "../maps/icons/quests/bonuses/s400x300/R193_M4A2_T_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/s400x300/R203_Object_168N.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R207_HT_130:String = "../maps/icons/quests/bonuses/s400x300/R207_HT_130.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R219_WAFFENT:String = "../maps/icons/quests/bonuses/s400x300/R219_Waffent.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R50_SU76I:String = "../maps/icons/quests/bonuses/s400x300/R50_SU76I.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s400x300/radioman_lastEffort.png";
       
@@ -22895,7 +22845,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s400x300/removedRpmLimiter.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_S01_STRV_74:String = "../maps/icons/quests/bonuses/s400x300/S01_Strv_74_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_S31_STRV_K:String = "../maps/icons/quests/bonuses/s400x300/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/sixthSenseBattleBooster.png";
       
@@ -22922,6 +22872,16 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_306:String = "../maps/icons/quests/bonuses/s400x300/style_3d_306.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31214:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31214.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31247:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31247.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31248:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31248.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31255:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31255.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31256:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31256.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_334:String = "../maps/icons/quests/bonuses/s400x300/style_3d_334.png";
       
@@ -23091,13 +23051,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/virtuosoBattleBooster.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A101_M56:String = "../maps/icons/quests/bonuses/s600x450/A101_M56.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A156_T54_2022:String = "../maps/icons/quests/bonuses/s600x450/A156_T54_2022.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A104_M4A3E8A:String = "../maps/icons/quests/bonuses/s600x450/A104_M4A3E8A.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A163_H_3:String = "../maps/icons/quests/bonuses/s600x450/A163_H_3.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A123_T78:String = "../maps/icons/quests/bonuses/s600x450/A123_T78.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A86_T23E3:String = "../maps/icons/quests/bonuses/s600x450/A86_T23E3.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_A163_H_3_2:String = "../maps/icons/quests/bonuses/s600x450/A163_H_3_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s600x450/additionalInvisibilityDevice.png";
       
@@ -23163,7 +23121,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CAMOUFLAGENE:String = "../maps/icons/quests/bonuses/s600x450/camouflageNe.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CH24_TYPE64:String = "../maps/icons/quests/bonuses/s600x450/Ch24_Type64.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s600x450/Ch56_BZ_74_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CHOCOLATE:String = "../maps/icons/quests/bonuses/s600x450/chocolate.png";
       
@@ -23195,7 +23153,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CRYSTAL:String = "../maps/icons/quests/bonuses/s600x450/crystal.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CZ15_SKODA_T:String = "../maps/icons/quests/bonuses/s600x450/Cz15_Skoda_T.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CZ32_VZ_58_KONCEPT:String = "../maps/icons/quests/bonuses/s600x450/Cz32_Vz_58_Koncept.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_DRIVER_SMOOTHDRIVING:String = "../maps/icons/quests/bonuses/s600x450/driver_smoothDriving.png";
       
@@ -23221,11 +23179,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_EXTRASLOT:String = "../maps/icons/quests/bonuses/s600x450/extraSlot.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_F28_105_LEFH:String = "../maps/icons/quests/bonuses/s600x450/F28_105_leFH.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_F69_AMX13_57:String = "../maps/icons/quests/bonuses/s600x450/F69_AMX13_57.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_F85_M4A1_FL1:String = "../maps/icons/quests/bonuses/s600x450/F85_M4A1_FL1.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_F129_SCHNEIDER_120_AC_GENDARME:String = "../maps/icons/quests/bonuses/s600x450/F129_Schneider_120_AC_Gendarme.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_FILLERS:String = "../maps/icons/quests/bonuses/s600x450/fillers.png";
       
@@ -23235,21 +23189,9 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_FREEXP:String = "../maps/icons/quests/bonuses/s600x450/freeXP.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_G109_STEYR_W:String = "../maps/icons/quests/bonuses/s600x450/G109_Steyr_W.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_GB118_TAURUS_CA:String = "../maps/icons/quests/bonuses/s600x450/GB118_Taurus_CA.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_G118_VK4503:String = "../maps/icons/quests/bonuses/s600x450/G118_VK4503.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_G36_PZII_J:String = "../maps/icons/quests/bonuses/s600x450/G36_PzII_J.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_G48_E_25:String = "../maps/icons/quests/bonuses/s600x450/G48_E-25.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_G70_PZIV_HYD:String = "../maps/icons/quests/bonuses/s600x450/G70_PzIV_Hyd.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_GB108_A46:String = "../maps/icons/quests/bonuses/s600x450/GB108_A46.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_GB37_VALLIAN:String = "../maps/icons/quests/bonuses/s600x450/GB37_Vallian.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_GB95_EKINS_F:String = "../maps/icons/quests/bonuses/s600x450/GB95_Ekins_F.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_GB128_NEMESIS:String = "../maps/icons/quests/bonuses/s600x450/GB128_Nemesis.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_GOLD:String = "../maps/icons/quests/bonuses/s600x450/gold.png";
       
@@ -23285,7 +23227,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_INTELLIGENCE:String = "../maps/icons/quests/bonuses/s600x450/intelligence.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_J12_CHI_NU_K:String = "../maps/icons/quests/bonuses/s600x450/J12_Chi_Nu_K.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_IT32_PROTOTIPO_6:String = "../maps/icons/quests/bonuses/s600x450/It32_Prototipo_6.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s600x450/largeMedkit.png";
       
@@ -23355,19 +23297,13 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_PROJECTIONDECAL_157052:String = "../maps/icons/quests/bonuses/s600x450/projectionDecal_157052.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R156_IS_2M:String = "../maps/icons/quests/bonuses/s600x450/R156_IS_2M.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R199_SU_122V:String = "../maps/icons/quests/bonuses/s600x450/R199_SU_122V.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R160_T_50_2:String = "../maps/icons/quests/bonuses/s600x450/R160_T_50_2.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R186_KV_1_SC:String = "../maps/icons/quests/bonuses/s600x450/R186_KV_1_Sc.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R193_M4A2_T:String = "../maps/icons/quests/bonuses/s600x450/R193_M4A2_T_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R203_OBJECT_168N:String = "../maps/icons/quests/bonuses/s600x450/R203_Object_168N.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R207_HT_130:String = "../maps/icons/quests/bonuses/s600x450/R207_HT_130.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R219_WAFFENT:String = "../maps/icons/quests/bonuses/s600x450/R219_Waffent.png";
-      
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R50_SU76I:String = "../maps/icons/quests/bonuses/s600x450/R50_SU76I.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s600x450/radioman_lastEffort.png";
       
@@ -23397,7 +23333,7 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_RECERTIFICATIONFORM:String = "../maps/icons/quests/bonuses/s600x450/recertificationForm.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_S01_STRV_74:String = "../maps/icons/quests/bonuses/s600x450/S01_Strv_74_.png";
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_S31_STRV_K:String = "../maps/icons/quests/bonuses/s600x450/S31_Strv_K.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_S32_BOFORS_TORNVAGN:String = "../maps/icons/quests/bonuses/s600x450/S32_Bofors_Tornvagn.png";
       
@@ -23428,6 +23364,16 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_306:String = "../maps/icons/quests/bonuses/s600x450/style_3d_306.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31214:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31214.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31247:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31247.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31248:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31248.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31255:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31255.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31256:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31256.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_334:String = "../maps/icons/quests/bonuses/s600x450/style_3d_334.png";
       

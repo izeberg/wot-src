@@ -54,9 +54,6 @@ class GeneralConfig(object):
     def getWeeklyPrefix(self):
         return self._config.get(NYGeneralConsts.WEEKLY_PREFIX)
 
-    def getQuestsStartDay(self):
-        return self._config.get(NYGeneralConsts.QUESTS_START_DAY)
-
     def getSmallLootboxID(self):
         return self._config.get(NYGeneralConsts.SMALL_LOOTBOX_ID)
 

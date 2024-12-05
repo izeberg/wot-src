@@ -519,6 +519,8 @@ class NewYearStorageKeys(CONST_CONTAINER):
     NY_FIRST_ENTRANCE = 'NYFirstEntrance'
     NY_WELCOME_NOTIFICATION = 'NYWelcomeNotification'
     NY_PET_TOYS_REMOVED = 'NyPetToysRemoved'
+    NY_FIRST_QUEST_VIDEO_VISITED = 'NyFirstQuestVideoVisited'
+    NY_FIRST_QUEST_ENTRANCE = 'NYFirstQuestEntrance'
     DECORATIONS_POPOVER_VIEWED = 'decorationsPopoverViewed'
     DECORATIONS_POPOVER_BROKEN = 'decorationsPopoverBroken'
     BOOL_FLAGS = (
