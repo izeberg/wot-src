@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A169_TF_3/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.773354 -0.000523 -3.235094</min>
+		<max>1.769354 0.998435 3.241903</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A169_TF_3/normal/lod3/Chassis</nodefullVisual>
+</root>

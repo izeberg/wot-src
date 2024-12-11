@@ -745,6 +745,10 @@ package
       
       public static const DETAILSHELP_MAINTITLE:String = "#comp7:detailsHelp/mainTitle";
       
+      public static const DETAILSHELP_TYPES_TITLE:String = "#comp7:detailsHelp/types/title";
+      
+      public static const DETAILSHELP_TYPES:String = "#comp7:detailsHelp/types";
+      
       public static const DETAILSHELP_ROLESKILLS_TITLE:String = "#comp7:detailsHelp/roleSkills/title";
       
       public static const DETAILSHELP_ROLESKILLS:String = "#comp7:detailsHelp/roleSkills";
@@ -921,11 +925,15 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_TITLE_MODIFICATOR:String = "#comp7:whatsNewView/slides/title/modificator";
       
+      public static const WHATSNEWVIEW_SLIDES_TITLE_NEWTYPES:String = "#comp7:whatsNewView/slides/title/newTypes";
+      
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_SHOP:String = "#comp7:whatsNewView/slides/description/shop";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_SEASONVEHICLES:String = "#comp7:whatsNewView/slides/description/seasonVehicles";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_MODIFICATOR:String = "#comp7:whatsNewView/slides/description/modificator";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_NEWTYPES:String = "#comp7:whatsNewView/slides/description/newTypes";
       
       public static const WHATSNEWVIEW_CONFIRMBUTTON:String = "#comp7:whatsNewView/confirmButton";
       

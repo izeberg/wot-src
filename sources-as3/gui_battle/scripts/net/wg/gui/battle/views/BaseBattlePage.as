@@ -573,7 +573,7 @@ package net.wg.gui.battle.views
          return AMMUNITION_PANEL_Y_SHIFT;
       }
       
-      protected function showComponent(param1:String, param2:Boolean) : void
+      private function showComponent(param1:String, param2:Boolean) : void
       {
          var _loc3_:IDisplayableComponent = null;
          _loc3_ = this._componentsStorage[param1];

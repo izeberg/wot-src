@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Orso/crash/lod0/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.428498 -0.347053 -1.262148</min>
+		<max>0.428498 0.519112 6.589972</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It33_Orso/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

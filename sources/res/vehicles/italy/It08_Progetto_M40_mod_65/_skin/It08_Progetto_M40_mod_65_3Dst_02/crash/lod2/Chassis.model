@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod3/Chassis</parent>
+	<extent>96</extent>
+	<visibilityBox>
+		<min>-1.522177 -0.000043 -3.448294</min>
+		<max>1.521144 1.152682 3.732553</max>
+	</visibilityBox>
+</root>

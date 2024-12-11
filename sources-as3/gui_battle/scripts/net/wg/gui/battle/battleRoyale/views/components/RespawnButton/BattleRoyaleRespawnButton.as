@@ -137,10 +137,6 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
       {
       }
       
-      public function setStage(param1:int) : void
-      {
-      }
-      
       public function get consumablesVO() : ConsumablesVO
       {
          return this._consumablesVo;

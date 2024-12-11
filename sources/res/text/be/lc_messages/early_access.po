@@ -1,0 +1,658 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "battleResults/tokenCompensation"
+msgstr "Дадатковая ўзнагарода:"
+
+msgid "buyConfirmationView/buttonText"
+msgstr "Так!"
+
+msgid "buyConfirmationView/infoText"
+msgstr "Купля неўзабаве паступіць на ваш акаўнт."
+
+msgid "buyConfirmationView/title"
+msgstr "Дзякуй за куплю!"
+
+msgid "buyView/button/back"
+msgstr "Назад"
+
+msgid "buyView/button/buy"
+msgstr "Купіць"
+
+msgid "buyView/confirm/count"
+msgid_plural "plural/buyView/confirm/count"
+msgstr[0] "%(count)s ЖЭТОН РАННЯГА ДОСТУПУ"
+msgstr[1] "%(count)s ЖЭТОНЫ РАННЯГА ДОСТУПУ"
+msgstr[2] "%(count)s ЖЭТОНАЎ РАННЯГА ДОСТУПУ"
+
+msgid "buyView/confirm/tokens"
+msgstr "КУПЛЯ ЖЭТОНАЎ РАННЯГА ДОСТУПУ"
+
+msgid "buyView/progress/balance"
+msgstr "+ %(balance)s"
+
+msgid "buyView/progress/count"
+msgstr "%(count)s /"
+
+msgid "buyView/progress/tokens"
+msgstr "Кошт куплі:"
+
+msgid "buyView/tooltip/description"
+msgstr ""
+"Націсніце %(controlsImage)s, каб павялічыць/паменшыць колькасць жэтонаў "
+"ранняга доступу на 1 %(tokenImage)s"
+
+msgid "buyView/vehiclePreview/endFooter"
+msgstr "Вы атрымалі ўсю тэхніку ранняга доступу, даступную на дадзены момант."
+
+msgid "buyView/vehiclePreview/footer"
+msgstr ""
+"Калі вы не паспееце атрымаць машыну, то усе ўкладзеныя ў яе жэтоны будуць "
+"кампенсаваны."
+
+msgid "buyView/vehiclePreview/header/done"
+msgstr "Уся тэхніка атрымана"
+
+msgid "buyView/vehiclePreview/header/process"
+msgstr ""
+"Колькасць жэтонаў, неабходных для атрымання тэхнікі ранняга доступу:  "
+"%(tokenNeed)s"
+
+msgid "clientNotifications/buy/fail/body"
+msgstr "Аперацыя часова недаступная. Паспрабуйце пазней."
+
+msgid "clientNotifications/buy/success/allTokens/body"
+msgstr "Усе жэтоны ранняга доступу атрыманы!"
+
+msgid "clientNotifications/buy/success/body"
+msgstr ""
+"Куплена жэтонаў: %(tokenAmount)s\n"
+"Патрачана золата: %(goldAmount)s."
+
+msgid "clientNotifications/feature/state/available"
+msgstr ""
+"Падзея зноў працуе. Выбачаеце за нязручнасці.\n"
+"%(newEndDate)s"
+
+msgid "clientNotifications/feature/state/available/newEndDate"
+msgstr "Падзея працягнута да %(newDate)s."
+
+msgid "clientNotifications/feature/state/finished"
+msgstr "Падзея «Ранні доступ» завершана."
+
+msgid "clientNotifications/feature/state/paused"
+msgstr "Ранні доступ часова недаступны."
+
+msgid "clientNotifications/header"
+msgstr "Ранні доступ"
+
+msgid "clientNotifications/postprogression/finishSoon/body"
+msgstr ""
+"Доступ да дадатковага этапу заканчваецца %(endDate)s. Паспейце атрымаць "
+"узнагароду!"
+
+msgid "clientNotifications/progression/finishSoon/body"
+msgstr ""
+"Доступ да этапаў I-IV заканчваецца %(endDate)s. Паспей атрымаць узнагароду!"
+
+msgid "clientNotifications/quests/nextchapter/available"
+msgstr "Раздзел %(count)s: стане даступны %(date)s"
+
+msgid "clientNotifications/quests/postprogression/completed"
+msgstr "Задачы дадатковага этапу ранняга доступу выкананы!"
+
+msgid "clientNotifications/quests/progression/completed"
+msgstr "Задачы этапу %(count)s ранняга доступу выкананы!"
+
+msgid "clientNotifications/rewardHeader"
+msgstr "Віншуем!"
+
+msgid "clientNotifications/start/chapter/body"
+msgstr "Даступны этап %(count)s з новымі задачамі і ўзнагародамі."
+
+msgid "clientNotifications/start/chapter/button"
+msgstr "Да задач"
+
+msgid "clientNotifications/start/event/body"
+msgstr ""
+"Ваяры! Ранні доступ да новай тэхнікі %(nation)s. Паспейце прайсці ўсе "
+"задачы, каб атрымаць тэхніку ранняга доступу. У працэсе праходжання вас "
+"чакаюць і іншыя каштоўныя ўзнагароды."
+
+msgid "clientNotifications/start/event/button"
+msgstr "Да тэхнікі ранняга доступу"
+
+msgid "clientNotifications/start/postprogression/chapter/body"
+msgstr "Даступны дадатковы этап з новымі задачамі і ўзнагародамі."
+
+msgid "compensationTooltip/compensationText"
+msgstr "Курс кампенсацыі: %(count)s"
+
+msgid "compensationTooltip/compensationValue"
+msgstr "="
+
+msgid "compensationTooltip/content"
+msgstr ""
+"Калі да заканчэння падзеі вы не набераце дастатковай колькасці жэтонаў, "
+"неабходных для атрымання машыны, то ўсе наяўныя жэтоны будуць спісаны, а вы "
+"атрымаеце кампенсацыю ў крэдытах за кожны ўкладзены жэтон."
+
+msgid "compensationTooltip/title"
+msgstr "Кампенсацыя"
+
+msgid "currencyToken"
+msgstr "Жэтоны ранняга доступу"
+
+msgid "entryPoint/disabledTooltip/description"
+msgstr ""
+"Падзея недаступная з тэхнічных прычын. Увесь дасягнуты прагрэс захаваны."
+
+msgid "entryPoint/disabledTooltip/iconLabel"
+msgstr "Часова недаступна"
+
+msgid "entryPoint/disabledTooltip/title"
+msgstr "Ранні доступ"
+
+msgid "entryPoint/postProgressionDisabledTooltip/description"
+msgstr ""
+"Падзея недаступная з тэхнічных прычын. Далейшы прагрэс па задачах "
+"дадатковага этапу ўлічвацца не будзе да аднаўлення працаздольнасці падзеі."
+
+msgid "entryPoint/postProgressionDisabledTooltip/title"
+msgstr "Задачы дадатковага этапу ранняга доступу"
+
+msgid "entryPoint/tooltip/chapter/allTasksResolved"
+msgstr "Усе задачы этапу выкананы"
+
+msgid "entryPoint/tooltip/chapter/locked"
+msgid_plural "plural/entryPoint/tooltip/chapter/locked"
+msgstr[0] "Выканайце яшчэ %(number)s задачу папярэдняга этапу"
+msgstr[1] "Выканайце яшчэ %(number)s задачы папярэдняга этапу"
+msgstr[2] "Выканайце яшчэ %(number)s задач папярэдняга этапу"
+
+msgid "entryPoint/tooltip/chapter/postProgressionSubTitle"
+msgstr "Для %(text)"
+
+msgid "entryPoint/tooltip/chapter/postProgressionTitle"
+msgstr "Дадатковы этап"
+
+msgid "entryPoint/tooltip/chapter/since"
+msgstr "З %(day)d %(month)s %(year)s, %(time)s."
+
+msgid "entryPoint/tooltip/chapter/subTitle"
+msgstr "Выканана задач:"
+
+msgid "entryPoint/tooltip/chapter/title"
+msgstr "Этап %(number)s"
+
+msgid "entryPoint/tooltip/chapter/waitForNext"
+msgstr "Доступ адкрыецца праз %(time)s"
+
+msgid "entryPoint/tooltip/header/days"
+msgstr "%(day)s сут"
+
+msgid "entryPoint/tooltip/header/daysWithHours"
+msgstr "%(day)s сут %(hour)s гадз"
+
+msgid "entryPoint/tooltip/header/hours"
+msgstr "%(hour)s гадз"
+
+msgid "entryPoint/tooltip/header/hoursWithMinutes"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "entryPoint/tooltip/header/min"
+msgstr "%(min)s хв"
+
+msgid "entryPoint/tooltip/header/postProgressionCompletedSubTitle"
+msgstr "Да завяршэння падзеі %(days)s"
+
+msgid "entryPoint/tooltip/header/postProgressionSubTitle"
+msgstr "Задачы дадатковага этапу даступныя яшчэ %(days)s"
+
+msgid "entryPoint/tooltip/header/postProgressionTitle"
+msgstr "Задачы дадатковага этапу ранняга доступу"
+
+msgid "entryPoint/tooltip/header/sec"
+msgstr "< 1 хв"
+
+msgid "entryPoint/tooltip/header/subTitle"
+msgstr "Задачы этапаў I-IV даступныя яшчэ %(days)s"
+
+msgid "entryPoint/tooltip/header/title"
+msgstr "Задачы падзеі «Ранні доступ»"
+
+msgid "entryPoint/tooltip/progress"
+msgstr "%(completed)s / %(total)s"
+
+msgid "entryPoint/tooltip/tokens/title"
+msgstr "Атрыманыя жэтоны ранняга доступу:"
+
+msgid "featureName/text"
+msgstr "Падзея «Ранні доступ»"
+
+msgid "header/backLink/goToLabel/china"
+msgstr "ДА ТЭХНІКІ КІТАЯ"
+
+msgid "header/backLink/goToLabel/czech"
+msgstr "ДА ТЭХНІКІ ЧЭХАСЛАВАКІІ"
+
+msgid "header/backLink/goToLabel/earlyAccess"
+msgstr "ДА ТЭХНІКІ РАННЯГА ДОСТУПУ"
+
+msgid "header/backLink/goToLabel/france"
+msgstr "ДА ТЭХНІКІ ФРАНЦЫІ"
+
+msgid "header/backLink/goToLabel/germany"
+msgstr "ДА ТЭХНІКІ ГЕРМАНІІ"
+
+msgid "header/backLink/goToLabel/italy"
+msgstr "ДА ТЭХНІКІ ІТАЛІІ"
+
+msgid "header/backLink/goToLabel/japan"
+msgstr "ДА ТЭХНІКІ ЯПОНІІ"
+
+msgid "header/backLink/goToLabel/poland"
+msgstr "ДА ТЭХНІКІ ПОЛЬШЧЫ"
+
+msgid "header/backLink/goToLabel/sweden"
+msgstr "ДА ТЭХНІКІ ШВЕЦЫІ"
+
+msgid "header/backLink/goToLabel/uk"
+msgstr "ДА ТЭХНІКІ ВЯЛІКАБРЫТАНІІ"
+
+msgid "header/backLink/goToLabel/usa"
+msgstr "ДА ТЭХНІКІ ЗША"
+
+msgid "header/backLink/goToLabel/ussr"
+msgstr "ДА ТЭХНІКІ СССР"
+
+msgid "header/backLink/label"
+msgstr "НАЗАД"
+
+msgid "header/closeLink"
+msgstr "У ГАРАЖ"
+
+msgid "header/dateFormat/between"
+msgstr "%(fromDate)s — %(toDate)s"
+
+msgid "header/dateFormat/until"
+msgstr "ДА %(toDate)s"
+
+msgid "header/featureName/active"
+msgstr "ФАЗА ВЫКАНАННЯ ЗАДАЧ"
+
+msgid "header/featureName/buy"
+msgstr "ФАЗА ДАКУПКІ"
+
+msgid "header/featureName/completed"
+msgstr "ЗАДАЧЫ ВЫКАНАНЫ"
+
+msgid "header/featureName/postProgression"
+msgstr "ФАЗА ЗАДАЧ ДАДАТКОВАГА ЭТАПУ"
+
+msgid "header/infoLink"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "header/title/buyView"
+msgstr "КУПЛЯ ЖЭТОНАЎ РАННЯГА ДОСТУПУ"
+
+msgid "header/title/introView"
+msgstr "РАННІ ДОСТУП"
+
+msgid "header/title/questsView"
+msgstr "ЗАДАЧЫ РАННЯГА ДОСТУПУ"
+
+msgid "header/title/vehicleView"
+msgstr "ТЭХНІКА РАННЯГА ДОСТУПУ"
+
+msgid "introView/continueButtonText"
+msgstr "Працягнуць"
+
+msgid "introView/description/first"
+msgstr ""
+"Задачы не знікаюць у канцы дня: вы зможаце выканаць іх усе, колькі б дзён ні"
+" прапусцілі. Задачы выконваюцца паслядоўна."
+
+msgid "introView/description/second"
+msgstr ""
+"Усе выкананыя задачы складаюцца ў агульную прагрэсію. За пэўную колькасць "
+"выкананых задач вы атрымліваеце жэтоны, за якія можна атрымаць тэхніку "
+"ранняга доступу."
+
+msgid "introView/description/third"
+msgstr ""
+"За выкананне задач усіх чатырох этапаў, а таксама за дадатковы пяты этап вы "
+"будзеце атрымліваць розныя каштоўныя ўзнагароды."
+
+msgid "introView/exitButtonText"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "introView/infoText"
+msgstr ""
+"Усе падрабязнасці чытайце на старонцы «Пра падзею» або на сайце гульні."
+
+msgid "introView/title/first"
+msgstr "Новы этап штодня"
+
+msgid "introView/title/second"
+msgstr "Тэхніка за выкананне задач"
+
+msgid "introView/title/third"
+msgstr "Дадатковыя ўзнагароды"
+
+msgid "questsView/chapter/disabled/cycleFinished/body"
+msgstr ""
+"Задачы больш не выдаюцца: час на праходжанне этапу скончыўся. Вы можаце "
+"дакупіць адсутныя ў вас жэтоны."
+
+msgid "questsView/chapter/disabled/doFuture/body"
+msgstr "Выканайце задачы папярэдняга этапу."
+
+msgid "questsView/chapter/disabled/doFuture/header"
+msgstr "Этап недаступны"
+
+msgid "questsView/chapter/disabled/doFuture/note"
+msgstr "Доступ адкрыецца %(startText)s"
+
+msgid "questsView/chapter/disabled/doFuture/noteDate"
+msgstr "%(color_open)sс %(startDate)s %(color_close)s"
+
+msgid "questsView/chapter/postProgression"
+msgstr "Дадатковы этап"
+
+msgid "questsView/chapter/postprogression/disabled/doFuture/body"
+msgstr "Заданні гэтага этапу выконваюцца на %(text)s"
+
+msgid "questsView/chapter/postprogression/disabled/doFuture/samelvl/body"
+msgstr ""
+"Заданні гэтага этапу выконваюцца на тэхніцы ранняга доступу %(lvl)s узроўню."
+
+msgid "questsView/chapter/quests/label"
+msgstr "Выканана задач:"
+
+msgid "questsView/chapter/quests/progress"
+msgstr "%(completed)s / %(total)s"
+
+msgid "questsView/chapter/title"
+msgstr "Этап %(index)s"
+
+msgid "questsView/chapter/tokens/progress"
+msgstr "%(received)s / %(total)s"
+
+msgid "questsView/quest/currencyToken/label"
+msgstr "Жэтоны ранняга доступу:"
+
+msgid "questsView/quest/currencyToken/rewardReceived"
+msgid_plural "rewardReceived"
+msgstr[0] "Узнагарода атрымана"
+msgstr[1] "Узнагароды атрыманы"
+msgstr[2] "Узнагароды атрыманы"
+
+msgid "questsView/quest/disabled/cycleFinished/body"
+msgstr ""
+"Задачы больш не выдаюцца: час на праходжанне этапу скончыўся. Вы можаце "
+"дакупіць адсутныя ў вас жэтоны."
+
+msgid "questsView/quest/disabled/doFuture/body"
+msgstr "Выканайце папярэднюю задачу гэтага этапу."
+
+msgid "questsView/quest/disabled/doFuture/header"
+msgstr "Задача недаступная"
+
+msgid "questsView/quest/progress"
+msgstr "%(current)s / %(total)s"
+
+msgid "questsView/quest/vehicleType/AT-SPG"
+msgstr "СТ-САУ %(minLvl)s-%(maxLvl)s узроўняў"
+
+msgid "questsView/quest/vehicleType/SPG"
+msgstr "САУ %(minLvl)s-%(maxLvl)s узроўняў"
+
+msgid "questsView/quest/vehicleType/any"
+msgstr "любой тэхніцы %(minLvl)s-%(maxLvl)s узроўняў"
+
+msgid "questsView/quest/vehicleType/delimiter"
+msgstr ", "
+
+msgid "questsView/quest/vehicleType/heavyTank"
+msgstr "цяжкіх танках %(minLvl)s-%(maxLvl)s узроўняў"
+
+msgid "questsView/quest/vehicleType/label"
+msgstr "Выконваецца на "
+
+msgid "questsView/quest/vehicleType/lightTank"
+msgstr "лёгкіх танках %(minLvl)s-%(maxLvl)s узроўняў"
+
+msgid "questsView/quest/vehicleType/mediumTank"
+msgstr "сярэдніх танках %(minLvl)s-%(maxLvl)s узроўняў"
+
+msgid "questsView/quest/vehicleType/names"
+msgstr "%(vehicles)s"
+
+msgid "questsView/vehicleButton/content"
+msgstr ""
+"ТЭХНІКА\n"
+"РАННЯГА\n"
+"ДОСТУПУ"
+
+msgid "questsView/vehicleButton/tooltip/body"
+msgstr "Асноўная прагрэсія падзеі «Ранні доступ»."
+
+msgid "questsView/vehicleButton/tooltip/header"
+msgstr "Тэхніка ранняга доступу"
+
+msgid "rewardsView/footer/buttonText"
+msgstr "Так!"
+
+msgid "rewardsView/footer/description"
+msgstr ""
+"Гэта яшчэ не ўсе ўзнагароды падзеі. Выконвайце задачы ранняга доступу і "
+"атрымлівайце ўзнагароды за іх выкананне."
+
+msgid "rewardsView/header/closeButtonText"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rewardsView/header/featureName"
+msgstr "РАННІ ДОСТУП"
+
+msgid "rewardsView/header/subTitle"
+msgstr "Атрымана ўзнагарода за выкананне задач дадатковага этапу."
+
+msgid "rewardsView/header/title"
+msgstr "ЗАДАЧА ВЫКАНАНА!"
+
+msgid "rewardsView/restRewardsTooltip/headerText"
+msgstr "Узнагароды"
+
+msgid "serviceChannelMessages/compensation/body"
+msgstr "Рэшта жэтонаў ранняга доступу была кампенсавана крэдытамі."
+
+msgid "serviceChannelMessages/compensation/credits"
+msgstr "Атрымана крэдытаў: "
+
+msgid "serviceChannelMessages/compensation/title"
+msgstr "Кампенсацыя"
+
+msgid "serviceChannelMessages/compensation/tokens"
+msgstr "Кампенсавана жэтонаў: "
+
+msgid "serviceChannelMessages/obtainVehicle/text"
+msgstr ""
+"Дата: %(date)s\n"
+"Дададзена тэхніка:\n"
+"%(vehicles)s"
+
+msgid "serviceChannelMessages/obtainVehicle/title"
+msgstr "Тэхніка ранняга доступу"
+
+msgid "serviceChannelMessages/questAchieves/text"
+msgstr "Жэтонаў ранняга доступу"
+
+msgid "serviceChannelMessages/questAchieves/title"
+msgstr "Задача ранняга доступу выканана! Узнагарода:"
+
+msgid "tankView/compare/label"
+msgstr "Дадаць&nbsp;да&nbsp;параўнання"
+
+msgid "tankView/preview/label"
+msgstr "Перадпрагляд"
+
+msgid "tankView/questsWidget/body"
+msgstr "Выконваюцца ў Выпадковых баях і Націску."
+
+msgid "tankView/questsWidget/header"
+msgstr "Задачы"
+
+msgid "tankView/questsWidget/mainProgress/noteDate"
+msgstr "%(color_open)sз %(startDate)s да %(endDate)s %(color_close)s"
+
+msgid "tankView/questsWidget/postprogression/noteDate"
+msgstr "%(color_open)sда %(endDate)s %(color_close)s"
+
+msgid "tankView/questsWidget/progress"
+msgstr ""
+"Асноўныя этапы:&nbsp;%(mainProgress)s\n"
+"Дадатковы этап:&nbsp;%(postProgress)s"
+
+msgid "tankView/questsWidget/timeText/until"
+msgstr "Да %(time)s"
+
+msgid "tankView/questsWidget/timeText/untilLastHours/chapters"
+msgstr "Да канца этапаў I - IV: %(time)s"
+
+msgid "tankView/questsWidget/timeText/untilLastHours/postProgression"
+msgstr "Да канца: %(time)s"
+
+msgid "tankView/questsWidget/title/chapters"
+msgstr ""
+"ЗАДАЧЫ РАННЯГА ДОСТУПУ\n"
+"ЭТАПЫ I-IV"
+
+msgid "tankView/questsWidget/title/completed"
+msgstr "ЗАДАЧЫ ВЫКАНАНЫ"
+
+msgid "tankView/questsWidget/title/postProgression"
+msgstr "ДАДАТКОВЫЯ ЗАДАЧЫ"
+
+msgid "tankView/shopWidget/body"
+msgstr ""
+"Дакупіўшы адсутныя ў вас жэтоны, вы адразу атрымаеце тэхніку ранняга "
+"доступу."
+
+msgid "tankView/shopWidget/content"
+msgstr ""
+"ЖЭТОНЫ\n"
+"РАННЯГА ДОСТУПУ"
+
+msgid "tankView/shopWidget/header"
+msgstr "Жэтоны ранняга доступу"
+
+msgid "tankView/vehicleCarousel/postProgressTooltip/body"
+msgstr ""
+"На гэтай машыне можна выконваць\n"
+"задачы дадатковага этапу."
+
+msgid "tankView/vehicleCarousel/tokenTooltip/body"
+msgstr ""
+"Жэтоны можна атрымаць ва ўзнагароду за выкананне задач ранняга доступу або "
+"купіць."
+
+msgid "tankView/vehicleCarousel/tokenTooltip/header"
+msgstr "Жэтоны ранняга доступу"
+
+msgid "tankView/vehicleInfo/buyProgress/inInventory/buttonText"
+msgstr "Паказаць у Гаражы"
+
+msgid "tankView/vehicleInfo/buyProgress/inInventory/label"
+msgstr "У Гаражы"
+
+msgid "tankView/vehicleInfo/buyProgress/inProgress"
+msgstr "Неабходна жэтонаў ранняга доступу: "
+
+msgid "tankView/vehicleInfo/buyProgress/locked"
+msgstr "Атрымайце папярэднюю машыну."
+
+msgid "tankView/vehicleInfo/buyProgress/purchasable/buttonText"
+msgstr "Купіць"
+
+msgid "tankView/vehicleInfo/researchCondition/experienceText"
+msgstr "Даследаванне па заканчэнні ранняга доступу:"
+
+msgid "tankView/vehicleInfo/researchCondition/header"
+msgstr "УМОВЫ АТРЫМАННЯ ТЭХНІКІ"
+
+msgid "tooltip/currency/availabilityPeriod"
+msgstr ""
+"Даступны %(brown_open)sз %(startDay)d %(startMonth)s %(startYear)d г. да "
+"%(endDay)d %(endMonth)s %(endYear)d г.%(brown_close)s"
+
+msgid "tooltip/currency/availabilityPeriodShort"
+msgstr ""
+"Даступны %(brown_open)sз %(startDay)d %(startMonth)s да %(endDay)d "
+"%(endMonth)s %(endYear)d г.%(brown_close)s"
+
+msgid "tooltip/currency/description"
+msgstr ""
+"Асаблівая валюта, даступная падчас правядзення падзеі «Ранні доступ». "
+"Выкарыстоўваецца для атрымання тэхнікі ранняга доступу."
+
+msgid "tooltip/currency/gain/currency"
+msgstr "%(whiteSpanish_open)sЖэтоны ранняга доступу%(whiteSpanish_close)s."
+
+msgid "tooltip/currency/gain/description"
+msgstr ""
+"Жэтоны ранняга доступу можна заслужыць за выкананне баявых задач або набыць "
+"за ўнутрыгульнявую валюту."
+
+msgid "tooltip/currency/gain/title"
+msgstr "Як атрымаць"
+
+msgid "tooltip/currency/info"
+msgstr ""
+"Аўтаматычна налічваецца на машыну, якая ў гэты момант выбрана для атрымання."
+
+msgid "tooltip/currency/progress"
+msgstr "%(received)s / %(total)s"
+
+msgid "tooltip/currency/progressLabel"
+msgstr "Атрымана"
+
+msgid "tooltip/currency/title"
+msgstr "Жэтоны ранняга доступу"
+
+msgid "vehicleInfo/body"
+msgstr "%(nation)s %(minLvl)s-%(maxLvl)s узроўняў."
+
+msgid "vehicleInfo/postprogression/vehicleType/AT-SPG"
+msgstr "СТ-САУ %(vehicleInfo)s"
+
+msgid "vehicleInfo/postprogression/vehicleType/SPG"
+msgstr "САУ %(vehicleInfo)s"
+
+msgid "vehicleInfo/postprogression/vehicleType/heavyTank"
+msgstr "цяжкіх танках %(vehicleInfo)s"
+
+msgid "vehicleInfo/postprogression/vehicleType/lightTank"
+msgstr "лёгкіх танках %(vehicleInfo)s"
+
+msgid "vehicleInfo/postprogression/vehicleType/mediumTank"
+msgstr "сярэдніх танках %(vehicleInfo)s"
+
+msgid "vehiclePreview/backToVehicleScreen"
+msgstr "ДА ТЭХНІКІ РАННЯГА ДОСТУПУ"
+
+msgid "vehiclePreview/bottomText"
+msgstr "Тэхніка ранняга доступу"

@@ -65,6 +65,8 @@ package net.wg.data.constants.generated
       
       public static const EARLY_ACCESS_SECONDARY_ENTRY_POINT:String = "EarlyAccessSecondaryEntryPoint";
       
+      public static const NY_QUEST_SECONDARY_ENTRY_POINT:String = "NYQuestSecondaryEntryPoint";
+      
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_BOTTOM:String = "simpleBottom";
@@ -86,6 +88,8 @@ package net.wg.data.constants.generated
       public static const VEH_PARAM_RENDERER_HIGHLIGHT_NEGATIVE:String = "negative";
       
       public static const VEH_PARAM_RENDERER_HIGHLIGHT_MIXED:String = "mixed";
+      
+      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
       
       public static const PROGRESSIVE_REWARD_WIDGET:String = "progressiveRewardWdgt";
       
@@ -166,18 +170,6 @@ package net.wg.data.constants.generated
       public static const COLLECTION_ENTRY_POINT:String = "CollectionEntryPoint";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
-      
-      public static const LOOTBOXES_WIDGET:String = "eventBoxEntryWidget";
-      
-      public static const WHITE_TIGER_WIDGET:String = "whiteTigerWidget";
-      
-      public static const WT_EVENT_ENTRY_POINT:String = "WTEventEntryPoint";
-      
-      public static const EVENT_CAROUSEL_WIDGET:String = "eventCarouselWidget";
-      
-      public static const EVENT_CREW_WIDGET:String = "eventCrewWidget";
-      
-      public static const EVENT_PARAMS_WIDGET:String = "eventParamsWidget";
        
       
       public function HANGAR_ALIASES()

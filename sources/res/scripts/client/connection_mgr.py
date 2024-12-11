@@ -320,7 +320,7 @@ class ConnectionManager(IConnectionManager):
     def checkClientServerVersions(self, clientVersion, serverVersion):
         if not isValidClientVersion(clientVersion, serverVersion) or ResMgr.activeContentType() in (constants.CONTENT_TYPE.INCOMPLETE,
          constants.CONTENT_TYPE.TUTORIAL):
-            LOG_DEBUG('Version mismatch. Client is "%s", server needs "%s".' % (
+            LOG_WARNING('Version mismatch. Client is "%s", server needs "%s".' % (
              clientVersion, serverVersion))
             self.onRejected(LOGIN_STATUS.LOGIN_BAD_PROTOCOL_VERSION, {})
             BigWorld.disconnect()

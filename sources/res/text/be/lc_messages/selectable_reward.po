@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "error/button"
+msgstr "Так!"
+
+msgid "error/description"
+msgstr ""
+"Інфармацыя часова недаступная. Выбачайце за нязручнасці, паспрабуйце яшчэ "
+"раз пазней."
+
+msgid "error/title"
+msgstr "Не ўдалося адкрыць выбар узнагароды"
+
+msgid "footer/closeBtn/label"
+msgstr "Выбраць пазней"
+
+msgid "footer/okBtn/label"
+msgstr "Забраць"
+
+msgid "footer/rewardsSelected"
+msgstr "Выбрана ўзнагарод:"
+
+msgid "footer/selectRewards"
+msgstr "Выберыце ўзнагароды з пададзеных катэгорый."
+
+msgid "reward/packSizeCount"
+msgstr "x{packSize}"
+
+msgid "reward/state_limited"
+msgstr "Дасягнуты максімум"
+
+msgid "reward/state_received"
+msgstr "Ужо атрымана"
+
+msgid "reward/tooltip/state_limited/body"
+msgstr ""
+"Дасягнуты ліміт прадметаў, якія можна выбраць у гэтай катэгорыі. Вы можаце "
+"скасаваць выбар пэўнай з адзінак, каб дадаць іншую."
+
+msgid "reward/tooltip/state_limited/header"
+msgstr "Дасягнуты максімум"
+
+msgid "tabs/counter"
+msgstr "%(count)s/%(limit)s"
+
+msgid "tabs/items/battleBooster"
+msgstr ""
+"Настаўленні\n"
+"да абсталявання"
+
+msgid "tabs/items/blueprint"
+msgstr "Фрагменты чарцяжоў"
+
+msgid "tabs/items/book"
+msgstr "Навучальны дапаможнік"
+
+msgid "tabs/items/brochure"
+msgstr "Навучальная брашура"
+
+msgid "tabs/items/deluxe"
+msgstr "Удасканаленае абсталяванне"
+
+msgid "tabs/items/expequipments"
+msgstr ""
+"Эксперыментальнае\n"
+"абсталяванне"
+
+msgid "tabs/items/guide"
+msgstr "Падручнік"
+
+msgid "tabs/items/new_device_fv"
+msgstr "Абсталяванне: Агнявая моц і Жывучасць"
+
+msgid "tabs/items/new_device_mi"
+msgstr "Абсталяванне: Мабільнасць і Разведка"
+
+msgid "tabs/items/trophy"
+msgstr "Трафейнае абсталяванне"
+
+msgid "tooltips/selectedRewards/description"
+msgstr "Націсніце «Забраць», каб атрымаць выбраныя ўзнагароды."
+
+msgid "tooltips/selectedRewards/reward/counter"
+msgstr " x%(count)s"
+
+msgid "tooltips/selectedRewards/reward/separator"
+msgstr ", "
+
+msgid "tooltips/selectedRewards/title"
+msgstr "Выбрана ўзнагарод: %(white_open)s%(count)s%(white_close)s"

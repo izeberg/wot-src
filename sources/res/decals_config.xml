@@ -29,8 +29,8 @@
 		<type>
 			<name>GBufferDecals</name>
 			<atlas>
-				<width>4096</width>
-				<height>4096</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>256</minWidth>
@@ -41,8 +41,8 @@
 				</constrains>
 			</atlas>
 			<atlas>
-				<width>4096</width>
-				<height>4096</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>256</minWidth>
@@ -53,8 +53,8 @@
 				</constrains>
 			</atlas>
 			<atlas>
-				<width>4096</width>
-				<height>4096</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>256</minWidth>
@@ -68,8 +68,8 @@
 		<type>
 			<name>OtherDecals</name>
 			<atlas>
-				<width>2048</width>
-				<height>2048</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT1</format>
 				<constrains>
 					<minWidth>128</minWidth>
@@ -111,8 +111,8 @@
 		<type>
 			<name>GBufferDecals</name>
 			<atlas>
-				<width>2048</width>
-				<height>2048</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>256</minWidth>
@@ -123,8 +123,8 @@
 				</constrains>
 			</atlas>
 			<atlas>
-				<width>2048</width>
-				<height>2048</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>256</minWidth>
@@ -142,8 +142,8 @@
 				</constrains>
 			</atlas>
 			<atlas>
-				<width>2048</width>
-				<height>2048</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>256</minWidth>
@@ -239,8 +239,8 @@
 		<type>
 			<name>GBufferDecals</name>
 			<atlas>
-				<width>1024</width>
-				<height>1024</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>64</minWidth>
@@ -251,8 +251,8 @@
 				</constrains>
 			</atlas>
 			<atlas>
-				<width>1024</width>
-				<height>1024</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>64</minWidth>
@@ -263,8 +263,8 @@
 				</constrains>
 			</atlas>
 			<atlas>
-				<width>1024</width>
-				<height>1024</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT5</format>
 				<constrains>
 					<minWidth>64</minWidth>
@@ -311,8 +311,8 @@
 		<type>
 			<name>OtherDecals</name>
 			<atlas>
-				<width>1024</width>
-				<height>1024</height>
+				<initialWidth>512</initialWidth>
+				<initialHeight>512</initialHeight>
 				<format>DXT1</format>
 				<constrains>
 					<minWidth>128</minWidth>

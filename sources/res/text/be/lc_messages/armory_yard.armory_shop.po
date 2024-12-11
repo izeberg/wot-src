@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "closeBtn/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "credits/description"
+msgstr "У наборы: %(value)s крэдытаў"
+
+msgid "credits/longDescription"
+msgstr ""
+"Асноўная гульнявая валюта.\n"
+"\n"
+"У наборы: %(value)s крэдытаў"
+
+msgid "credits/title"
+msgstr "Крэдыты"
+
+msgid "crystal/description"
+msgstr "У наборы: %(value)s бонаў"
+
+msgid "crystal/longDescription"
+msgstr ""
+"Рэдкая спецыялізаваная валюта, за якую купляюцца ўнікальныя тавары.\n"
+"\n"
+"У наборы: %(value)s бонаў"
+
+msgid "crystal/title"
+msgstr "Боны"
+
+msgid "equipCoin/description"
+msgstr "У наборы: %(value)s кампанентаў"
+
+msgid "equipCoin/longDescription"
+msgstr ""
+"Унутрыгульнявая валюта, якую можна выкарыстоўваць для наладжвання або дэмантажу.\n"
+"\n"
+"У наборы: %(value)s кампанентаў"
+
+msgid "equipCoin/title"
+msgstr "Кампаненты"
+
+msgid "featureName"
+msgstr "ЗБОРАЧНЫ ЦЭХ"
+
+msgid "freeXP/description"
+msgstr "У наборы: %(value)s вольнага досведу"
+
+msgid "freeXP/longDescription"
+msgstr ""
+"Гульнявы рэсурс, які можна патраціць на даследаванне любой тэхнікі і модуляў, а таксама скіраваць на навучанне экіпажа.\n"
+"\n"
+"У наборы: %(value)s вольнага досведу"
+
+msgid "freeXP/title"
+msgstr "Вольны досвед"
+
+msgid "gold/description"
+msgstr "У наборы: %(value)s золата"
+
+msgid "gold/longDescription"
+msgstr ""
+"Валюта, якая дазваляе паскорыць развіццё ў гульні «Мир танков».\n"
+"\n"
+"У наборы: %(value)s золата"
+
+msgid "gold/title"
+msgstr "Золата"
+
+msgid "notifications/bundleContent"
+msgstr ""
+"Набор Зборачнага цэха:\n"
+"%(vehicles)s\n"
+"Яшчэ ўзнагароды:\n"
+"%(items)s"
+
+msgid "notifications/description/armory_coin"
+msgstr "Патрачана жэтонаў: %(value)s"
+
+msgid "notifications/description/gold"
+msgstr "Патрачана золата: %(value)s"
+
+msgid "notifications/financialTransaction"
+msgstr ""
+"Дата:%(date)s\n"
+"%(currencies)s"
+
+msgid "notifications/purchaseContent"
+msgstr "%(product)s (%(count)s шт.)"
+
+msgid "premiumPlus/description_1"
+msgstr "У наборы: %(value)s дзень"
+
+msgid "premiumPlus/description_2"
+msgstr "У наборы: %(value)s дні"
+
+msgid "premiumPlus/description_3"
+msgstr "У наборы: %(value)s дзён"
+
+msgid "premiumPlus/longDescription"
+msgstr ""
+"Цалкам абноўлены прэміум акаўнт, які дзейнічае толькі ў гульні «Мир танков».\n"
+"\n"
+"%(dayStr)s"
+
+msgid "premiumPlus/title"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "product/bundle/armoryExtDescr"
+msgstr "%(color_open)sНаграды%(color_close)s Зборачнага цэха"
+
+msgid "product/bundle/longDescription/episode1"
+msgstr ""
+"У наборы вы знойдзеце галоўную ўзнагароду Зборачнага цэха — савецкую прэміум"
+" САУ VIII узроўню Аб'ект 156 О, а таксама каштоўную гульнявую маёмасць, якая"
+" дазволіць з камфортам апрабаваць навінку і ўпэўнена адчуваць сябе на полі "
+"бою."
+
+msgid "product/bundle/longDescription/episode2"
+msgstr ""
+"У наборы вы знойдзеце галоўную ўзнагароду Зборачнага цэха — чэхаславацкі "
+"цяжкі прэміум танк VIII узроўню TST, а таксама каштоўную гульнявую маёмасць,"
+" якая дазволіць з камфортам апрабаваць навінку і ўпэўнена адчуваць сябе на "
+"полі бою."
+
+msgid "product/bundle/longDescription/episode3"
+msgstr ""
+"У наборы вы знойдзеце галоўную ўзнагароду Зборачнага цэха — савецкую прэміум"
+" СТ-САУ VIII узроўню СУ-122, а таксама каштоўную гульнявую маёмасць, якая "
+"дазволіць з камфортам апрабаваць навінку і ўпэўнена адчуваць сябе на полі "
+"бою."
+
+msgid "product/bundle/title"
+msgstr "Набор з %(vehicleName)s"
+
+msgid "product/bundle/vehDescr"
+msgstr ""
+"%(color_open)s%(vehicleName)s%(color_close)s Прэміум танк %(vehicleLvl)s "
+"узроўню"
+
+msgid "product/customizationTitle/decals"
+msgstr "Дэколь \"%(styleName)s\""
+
+msgid "product/customizationTitle/style2D"
+msgstr "2D-стыль \"%(styleName)s\""
+
+msgid "product/customizationTitle/style3D"
+msgstr "3D-стыль \"%(styleName)s\""
+
+msgid "shopBuyView/backCaption"
+msgstr "НАЗАД"
+
+msgid "shopBuyView/backGoto"
+msgstr "У КРАМУ"
+
+msgid "shopBuyView/composition/crew"
+msgstr "Экіпаж"
+
+msgid "shopBuyView/composition/slot"
+msgstr "Слот у Гаражы"
+
+msgid "shopBuyView/composition/title"
+msgstr "СКЛАД НАБОРУ"
+
+msgid "shopBuyView/description/title"
+msgstr "АПІСАННЕ"
+
+msgid "shopBuyView/footer/buy"
+msgstr "Купіць"
+
+msgid "shopBuyView/footer/buyNotAvailable/description"
+msgstr ""
+"Каб разблакаваць доступ да куплі, завяршыце прагрэсію Зборачнага цэха."
+
+msgid "shopBuyView/footer/buyNotAvailable/title"
+msgstr "Купіць немагчыма"
+
+msgid "shopBuyView/footer/limit"
+msgstr "Можна купіць разоў: %(count)s"
+
+msgid "shopBuyView/header/available"
+msgstr "У наяўнасці:"
+
+msgid "shopBuyView/price/cost"
+msgstr "Кошт:"
+
+msgid "shopBuyView/price/or"
+msgstr "або"
+
+msgid "shopBuyView/reward/label"
+msgstr "Узнагароды"
+
+msgid "shopBuyView/reward/rest"
+msgstr "x%(count)s"
+
+msgid "shopBuyView/tooltip/buyNotAvailable"
+msgstr "Купіць немагчыма, калі папярэдні запыт яшчэ не апрацаваны."
+
+msgid "shopBuyView/vehicleImage/preview"
+msgstr "Перадпрагляд"
+
+msgid "shopView/card/altText"
+msgstr "або"
+
+msgid "shopView/card/bundleDescription"
+msgstr "Прэміум машына і іншыя ўзнагароды"
+
+msgid "shopView/intro/button/slide_3"
+msgstr "У Краму"
+
+msgid "shopView/intro/description/slide_1"
+msgstr ""
+"Тут можна купляць унікальную тэхніку і тавары як за золата, так і за вольныя"
+" жэтоны Зборачнага цэха."
+
+msgid "shopView/intro/description/slide_2"
+msgstr ""
+"За выкананне баявых задач, а таксама за праходжанне этапаў будаўніцтва вы "
+"будзеце атрымліваць розныя ўзнагароды на шляху да запаветнай машыны."
+
+msgid "shopView/intro/description/slide_3"
+msgstr ""
+"Прайдзіце прагрэсію Зборачнага цэха, і рэшта жэтонаў канвертуецца ў вольныя,"
+" за якія можна набыць унікальныя тавары ў краме Зборачнага цэха."
+
+msgid "shopView/intro/title/slide_1"
+msgstr "КРАМА ЗБОРАЧНАГА ЦЭХА"
+
+msgid "shopView/intro/title/slide_2"
+msgstr "УЗНАГАРОДЫ"
+
+msgid "shopView/intro/title/slide_3"
+msgstr "ВОЛЬНЫЯ ЖЭТОНЫ"
+
+msgid "shopView/shop/header"
+msgstr "КРАМА ЗБОРАЧНАГА ЦЭХА"
+
+msgid "shopView/shop/navigation/back"
+msgstr "У КАТЭГОРЫЮ"
+
+msgid "shopView/shop/navigation/backCaption"
+msgstr "НАЗАД"
+
+msgid "shopView/shop/navigation/close"
+msgstr "У ЗБОРАЧНЫ ЦЭХ"
+
+msgid "shopView/shop/sections/bundle"
+msgstr "НАБОРЫ"
+
+msgid "shopView/shop/sections/customization"
+msgstr "ВЫГЛЯД"
+
+msgid "shopView/shop/sections/maintain"
+msgstr "АБСЛУГОЎВАННЕ"
+
+msgid "shopView/shop/sections/other"
+msgstr "ІНШАЕ"
+
+msgid "shopView/shop/sections/vehicle"
+msgstr "ТЭХНКА"
+
+msgid "shopView/shop/tabs/all"
+msgstr "Усё"
+
+msgid "shopView/shop/tabs/bundle"
+msgstr "Наборы"
+
+msgid "shopView/shop/tabs/customization"
+msgstr "Выгляд"
+
+msgid "shopView/shop/tabs/maintain"
+msgstr "Абслугоўванне"
+
+msgid "shopView/shop/tabs/other"
+msgstr "Іншае"
+
+msgid "shopView/shop/tabs/vehicle"
+msgstr "Тэхніка"
+
+msgid "shopView/shop/tokensCount"
+msgstr "У наяўнасці:"
+
+msgid "tooltip/shop/currency/footnote"
+msgstr ""
+"Вольныя жэтоны пачынаюць назапашвацца ў тым выпадку, калі гулец ужо завяршыў"
+" асноўную прагрэсію Зборачнага цэха."
+
+msgid "tooltip/shop/currency/header/description"
+msgstr "Зборачны цэх"
+
+msgid "tooltip/shop/currency/header/text"
+msgstr "Вольны жэтон"
+
+msgid "tooltip/shop/currency/info"
+msgstr ""
+"%(green_open)sАтрымаць жэтоны%(green_close)s можна ва ўзнагароду за задачы "
+"Зборачнага цэха, а таксама за %(gold_open)sзолата%(gold_close)s. Колькасць "
+"жэтонаў абмежаваная."
+
+msgid "tooltip/shop/info/body"
+msgstr "Паўторны прагляд кароткага апісання працы крамы Зборачнага цэха."
+
+msgid "tooltip/shop/info/header"
+msgstr "Паўтор інтра"

@@ -17,12 +17,12 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_Track_LFront1</identifier>
+				<identifier>HP_Track_LFront</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.984321 -0.176388</row1>
-					<row2>0.000000 0.176388 0.984321</row2>
-					<row3>-1.339083 -0.000000 2.397802</row3>
+					<row1>-0.000000 0.985229 -0.171241</row1>
+					<row2>0.000000 0.171241 0.985229</row2>
+					<row3>-1.339083 0.000000 0.171945</row3>
 				</transform>
 			</node>
 			<node>
@@ -35,12 +35,12 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_Track_RFront1</identifier>
+				<identifier>HP_Track_RFront</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.984321 -0.176388</row1>
-					<row2>0.000000 0.176388 0.984321</row2>
-					<row3>1.345044 0.000000 2.397802</row3>
+					<row1>0.000000 0.985229 -0.171241</row1>
+					<row2>0.000000 0.171241 0.985229</row2>
+					<row3>1.345044 -0.000000 0.172886</row3>
 				</transform>
 			</node>
 			<node>
@@ -1073,11 +1073,12 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>V_BlendBone</node>
+		<node>Track_L1_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_VD_L0_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VT_L0_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
+		<node>Track_VD_L1_BlendBone</node>
 		<geometry>
 			<vertices>track_L1_Shape.vertices</vertices>
 			<stream>track_L1_Shape.uv2</stream>
@@ -1128,10 +1129,10 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>V_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VT_R0_BlendBone</node>
 		<node>Track_VT_R1_BlendBone</node>
 		<geometry>
@@ -1356,6 +1357,10 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
 						metallicGlossMap
 						<Texture>vehicles/french/F119_Projet_Murat/Projet_Murat_chassis_01_GMM.dds</Texture>
 					</property>
@@ -1370,10 +1375,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/french/F119_Projet_Murat/Projet_Murat_chassis_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						alphaReference
@@ -1442,6 +1443,10 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
 						metallicGlossMap
 						<Texture>vehicles/french/F119_Projet_Murat/Projet_Murat_chassis_01_GMM.dds</Texture>
 					</property>
@@ -1456,10 +1461,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/french/F119_Projet_Murat/Projet_Murat_chassis_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						alphaReference

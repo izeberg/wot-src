@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "crewBooks/button/label"
+msgstr "Адкрыць"
+
+msgid "crewBooks/description"
+msgstr "Перайсці да вывучэння вучэбных матэрыялаў."
+
+msgid "crewBooks/error/locked"
+msgstr "Аперацыя недаступная"
+
+msgid "crewBooks/title"
+msgstr "Вучэбныя матэрыялы ({count})"
+
+msgid "crewBooks/tutorial/crewOperations"
+msgstr ""
+"ДАСТУПНА МАГЧЫМАСЦЬ ВЫВУЧЭННЯ\n"
+"ВУЧЭБНЫХ МАТЭРЫЯЛАЎ"
+
+msgid "crewBooks/tutorial/readBook"
+msgstr ""
+"ПЕРАЙСЦІ ДА ВЫВУЧЭННЯ\n"
+"ВУЧЭБНЫХ МАТЭРЫЯЛАЎ"
+
+msgid "crewBooks/warning/membersInBattle/tooltip/body"
+msgstr "Экіпаж зараз у баі"
+
+msgid "crewBooks/warning/membersInBattle/tooltip/header"
+msgstr "Памылка"
+
+msgid "crewOperations/btn/tooltip/body"
+msgstr ""
+"Перавесці, перавучыць або вярнуць на машыну экіпаж, а таксама выкарыстаць "
+"вучэбныя матэрыялы."
+
+msgid "crewOperations/btn/tooltip/header"
+msgstr "Дзеянні з экіпажам"
+
+msgid "dropInBarrack/button/label"
+msgstr "Высадзіць"
+
+msgid "dropInBarrack/description"
+msgstr "Зняць з машыны ўвесь экіпаж."
+
+msgid "dropInBarrack/error/noCrew"
+msgstr "Няма экіпажу"
+
+msgid "dropInBarrack/title"
+msgstr "Зняцце экіпажу з машыны"
+
+msgid "dropInBarrack/warning/crewIsLocked/tooltip/body"
+msgstr "Высадка экіпажа недаступная."
+
+msgid "dropInBarrack/warning/crewIsLocked/tooltip/header"
+msgstr "Аперацыя недаступная"
+
+msgid "dropInBarrack/warning/inBattle/tooltip/body"
+msgstr "Экіпаж у баі"
+
+msgid "dropInBarrack/warning/inBattle/tooltip/header"
+msgstr "Памылка"
+
+msgid "dropInBarrack/warning/noSpace/tooltip/body"
+msgstr "У Жаўнерні замала месца"
+
+msgid "dropInBarrack/warning/noSpace/tooltip/header"
+msgstr "Аперацыя недаступная"
+
+msgid "retrain/button/label"
+msgstr "Перавучыць"
+
+msgid "retrain/description"
+msgstr "Перавучыць увесь экіпаж на гэту машыну."
+
+msgid "retrain/error/alreadyRetrained"
+msgstr "Экіпаж ужо навучаны"
+
+msgid "retrain/error/locked"
+msgstr "Аперацыя недаступная"
+
+msgid "retrain/error/noCrew"
+msgstr "Няма экіпажу"
+
+msgid "retrain/title"
+msgstr "Перавучванне экіпажу"
+
+msgid "return/button/label"
+msgstr "Вярнуць"
+
+msgid "return/description"
+msgstr "Вярнуць экіпаж, які ў апошнім баі быў на гэтай машыне."
+
+msgid "return/error/allDemobilized"
+msgstr "Экіпаж ужо дэмабілізаваны"
+
+msgid "return/error/alreadyOnPlaces"
+msgstr "Экіпаж у машыне"
+
+msgid "return/error/noPrevious"
+msgstr "Адваюйце прынамсі адзін бой на гэтай машыне"
+
+msgid "return/error/vehicleInBattle"
+msgstr "Машына ў баі"
+
+msgid "return/title"
+msgstr "Вяртанне экіпажу на машыну"
+
+msgid "return/warning/memberDemobilized/tooltip/body"
+msgstr "Некаторыя танкісты папярэдняга экіпажу былі дэмабілізаваныя"
+
+msgid "return/warning/memberDemobilized/tooltip/header"
+msgstr "Папярэджанне"
+
+msgid "return/warning/membersInBattle/tooltip/body"
+msgstr "Некаторыя танкісты папярэдняга экіпажу зараз у баі"
+
+msgid "return/warning/membersInBattle/tooltip/header"
+msgstr "Памылка"
+
+msgid "return/warning/noSpace/tooltip/body"
+msgstr ""
+"Нельга зняць экіпаж і перавесці яго ў Жаўнерню, бо ў Жаўнерні замала месца"
+
+msgid "return/warning/noSpace/tooltip/header"
+msgstr "Памылка"
+
+msgid "window/title"
+msgstr "Дзеянні з экіпажам"

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snowflakes_trail</name>
+		<type>particle</type>
+		<resource>particles/environment/hangar/h03_ny25_snowflakes_very_small.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.410000 0.570000 0.470000</value>
+				<inTangent>-34.477127 -0.000000 -3.581991</inTangent>
+				<outTangent>-2.440051 0.005093 3.329397</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.312467</startTime>
+				<value>-0.570000 0.490000 0.210000</value>
+				<inTangent>-0.794964 -0.314647 -2.602330</inTangent>
+				<outTangent>-0.794964 -0.314647 -2.602330</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>-0.280000 0.420000 -0.610000</value>
+				<inTangent>4.977569 -0.255009 -3.044005</inTangent>
+				<outTangent>4.977569 -0.255009 -3.044005</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.731759</startTime>
+				<value>0.550000 0.470000 -0.450000</value>
+				<inTangent>1.529690 0.294270 2.060064</inTangent>
+				<outTangent>1.529690 0.294270 2.060064</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.410000 0.570000 0.470000</value>
+				<inTangent>-2.214585 0.000001 0.891603</inTangent>
+				<outTangent>-2.214585 0.000001 0.891603</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

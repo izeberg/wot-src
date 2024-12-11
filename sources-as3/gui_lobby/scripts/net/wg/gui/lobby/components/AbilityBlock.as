@@ -67,7 +67,6 @@ package net.wg.gui.lobby.components
          {
             this.removeMouseListeners();
          }
-         buttonMode = useHandCursor = this._data != null;
       }
       
       private function addMouseListeners() : void
@@ -85,12 +84,10 @@ package net.wg.gui.lobby.components
       private function layout() : void
       {
          var _loc1_:int = 0;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
          _loc1_ = this.icon.width + this.abilityTF.width;
          var _loc2_:int = -(_loc1_ + ICON_RIGHT_PADDING) >> 1;
-         _loc3_ = this.abilityTF.height;
-         _loc4_ = this.abilityTF.height;
+         var _loc3_:int = this.abilityTF.height;
+         var _loc4_:int = this.abilityTF.height;
          this.icon.x = _loc2_;
          this.abilityTF.x = _loc2_ + this.icon.width + ICON_RIGHT_PADDING;
          this.abilityTF.y = _loc4_ - _loc3_ >> 1;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/normal/lod1/Hatch_anim</nodefullVisual>
+	<parent>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/normal/lod2/Hatch_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.216089 0.381672 -1.172784</min>
+		<max>0.157079 0.711519 -0.483925</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

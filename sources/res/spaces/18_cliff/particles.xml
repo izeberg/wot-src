@@ -94,6 +94,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/18_cliff_water_spray_e.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf_EU_018_StoneFence_Corner.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env002_Logs.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
@@ -179,7 +180,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_19_02_StoneFence_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafAM_004_GreenFence_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env_EU_041_RoadSigns.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle044_Barrel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_smallpole.vfx</fn_effect_bin>
@@ -229,8 +233,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/exterior/18_cliff_shore_foam.eff</fn_effect_bin>
@@ -241,6 +245,7 @@
 		<fn_effect_bin>particles/environment/interior/18_cliff_water_spray_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_018_StoneFence_Corner.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env002_Logs.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
@@ -325,7 +330,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_19_02_StoneFence_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAM_004_GreenFence_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_EU_041_RoadSigns.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle044_Barrel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_smallpole.eff</fn_effect_bin>
@@ -365,6 +373,7 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
@@ -488,6 +497,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/18_cliff_water_spray_e.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf_EU_018_StoneFence_Corner.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env002_Logs.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
@@ -573,7 +583,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_19_02_StoneFence_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafAM_004_GreenFence_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env_EU_041_RoadSigns.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle044_Barrel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_smallpole.vfx</fn_effect_bin>
@@ -623,8 +636,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/exterior/18_cliff_shore_foam.eff</fn_effect_bin>
@@ -635,6 +648,7 @@
 		<fn_effect_bin>particles/environment/interior/18_cliff_water_spray_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_018_StoneFence_Corner.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env002_Logs.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
@@ -719,7 +733,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_19_02_StoneFence_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAM_004_GreenFence_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_EU_041_RoadSigns.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle044_Barrel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_smallpole.eff</fn_effect_bin>
@@ -759,6 +776,7 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>

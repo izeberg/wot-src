@@ -65,6 +65,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env205_Boats03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env002_Logs.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
@@ -128,6 +129,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_UNI_027_WoodFenceSmall_Tile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafAM_004_GreenFence_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage2.vfx</fn_effect_bin>
@@ -193,22 +198,23 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/butterfly_red.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_big_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_big_all_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_medium_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_small_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_3.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_big_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_light_small_slow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_very_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_sparks_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/butterfly_white.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_all_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_medium_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_small_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_light_small_slow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_very_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_sparks_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env002_Logs.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
@@ -272,6 +278,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_UNI_027_WoodFenceSmall_Tile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAM_004_GreenFence_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage2.eff</fn_effect_bin>
@@ -418,6 +428,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env205_Boats03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env002_Logs.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
@@ -481,6 +492,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_UNI_027_WoodFenceSmall_Tile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafAM_004_GreenFence_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage2.vfx</fn_effect_bin>
@@ -546,22 +561,23 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/butterfly_red.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_big_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_big_all_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_medium_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_fire_small_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_3.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_big_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_light_small_slow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_smoke_very_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/05_prohorovka_sparks_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/butterfly_white.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_all_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_medium_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_small_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_light_small_slow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_very_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/05_prohorovka_sparks_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env002_Logs.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
@@ -625,6 +641,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_UNI_027_WoodFenceSmall_Tile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAM_004_GreenFence_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage2.eff</fn_effect_bin>

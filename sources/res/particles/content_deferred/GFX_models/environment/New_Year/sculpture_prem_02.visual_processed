@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/glow_animated.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/TilingMask_3.dds</Texture>
+					</property>
+					<property>
+						g_freshnelColor
+						<Vector4>1.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_freshnelParamsPacked
+						<Vector4>3.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_glowMask1Texture
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/cosm_shield_mask.dds</Texture>
+					</property>
+					<property>
+						g_glowMask2Texture
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/br_lightingDynamics_mask_05.dds</Texture>
+					</property>
+					<property>
+						g_lightMultipliersPacked
+						<Vector4>1.000000 10.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_maskBlending
+						<Int>1</Int>
+					</property>
+					<property>
+						g_useDistortionForMask1
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useFreshnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useMask2
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useTimeForDistortionMask1
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useTimeForMask2
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_uvStretchPacked
+						<Vector4>0.000000 0.000000 -100.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_glowColorMasked
+						<Vector4>0.662745 0.117647 0.290196 0.200000</Vector4>
+					</property>
+					<property>
+						g_uvSpeedPacked
+						<Vector4>0.200000 0.200000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.095263 3.324862 0.224526</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.057175 0.190319 -1.266287</min>
+		<max>2.866649 6.459406 1.715338</max>
+	</boundingBox>
+	<geometrySize>719172</geometrySize>
+	<minUVDensity>0.005081</minUVDensity>
+</root>

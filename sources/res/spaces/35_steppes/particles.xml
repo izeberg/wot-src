@@ -88,6 +88,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/35_steppes_yellow_petals_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_UNI_607_Kiosk.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_811_CamouflageTent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env002_Logs.vfx</fn_effect_bin>
@@ -101,6 +102,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_101_06_WoodenCart_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env608_Sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_envAF_006_BarellFuel2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_mle008_Canisters1.vfx</fn_effect_bin>
@@ -113,6 +115,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle020_GerMotocycle_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
@@ -172,6 +175,7 @@
 		<fn_effect_bin>particles/environment/interior/35_steppes_yellow_petals.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_607_Kiosk.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_811_CamouflageTent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env002_Logs.eff</fn_effect_bin>
@@ -185,6 +189,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_06_WoodenCart_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env608_Sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_envAF_006_BarellFuel2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_mle008_Canisters1.eff</fn_effect_bin>
@@ -197,6 +202,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
@@ -350,6 +356,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/35_steppes_yellow_petals_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_UNI_607_Kiosk.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_811_CamouflageTent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env002_Logs.vfx</fn_effect_bin>
@@ -363,6 +370,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_101_06_WoodenCart_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env608_Sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_envAF_006_BarellFuel2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_mle008_Canisters1.vfx</fn_effect_bin>
@@ -375,6 +383,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle020_GerMotocycle_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
@@ -434,6 +443,7 @@
 		<fn_effect_bin>particles/environment/interior/35_steppes_yellow_petals.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_607_Kiosk.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_811_CamouflageTent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env002_Logs.eff</fn_effect_bin>
@@ -447,6 +457,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_06_WoodenCart_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env608_Sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_envAF_006_BarellFuel2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_mle008_Canisters1.eff</fn_effect_bin>
@@ -459,6 +470,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>

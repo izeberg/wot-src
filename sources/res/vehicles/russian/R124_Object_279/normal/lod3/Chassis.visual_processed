@@ -1827,11 +1827,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						<Vector4>3.506850 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap
@@ -1894,11 +1890,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						<Vector4>3.506850 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap
@@ -1963,11 +1955,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						<Vector4>3.506850 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap
@@ -2033,11 +2021,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						<Vector4>3.506850 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap
@@ -2084,6 +2068,7 @@
 		<node>W_L10_BlendBone</node>
 		<node>W_L11_BlendBone</node>
 		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
 		<node>WD_L2_BlendBone</node>
 		<node>WD_L3_BlendBone</node>
 		<node>WD_L4_BlendBone</node>
@@ -2134,10 +2119,6 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -2239,10 +2220,6 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap

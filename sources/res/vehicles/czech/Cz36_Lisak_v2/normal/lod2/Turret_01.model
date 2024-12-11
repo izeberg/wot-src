@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz36_Lisak_v2/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.567132 -0.008121 -2.401017</min>
+		<max>1.591478 4.744377 3.090739</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz36_Lisak_v2/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

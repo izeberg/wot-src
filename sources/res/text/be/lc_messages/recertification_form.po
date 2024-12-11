@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "base/recertificationForm/description"
+msgstr ""
+"Дазваляе скінуць усе навыкі ў выбранага танкіста. Расходуецца пры "
+"выкарыстанні."
+
+msgid "dialogue/description"
+msgstr ""
+"Аднаразовы прадмет, што дазваляе скінуць усе навыкі любога выбранага "
+"танкіста."
+
+msgid "multipleUserName"
+msgstr "Бланкі перападрыхтоўкі"
+
+msgid "serviceChannelMessages/Availability/enabled"
+msgstr "Бланкі перападрыхтоўкі зноў даступныя. Выбачаемся за нязручнасці."
+
+msgid "serviceChannelMessages/Availability/error"
+msgstr "Памылка:"
+
+msgid "serviceChannelMessages/Availability/inactive"
+msgstr ""
+"Бланкі перападрыхтоўкі недаступныя.\n"
+"Паспрабуйце пазней."
+
+msgid "serviceChannelMessages/Financial/add"
+msgstr "Налічана"
+
+msgid "serviceChannelMessages/Financial/buy"
+msgstr "Куплена:"
+
+msgid "serviceChannelMessages/Financial/loss"
+msgstr "Выдаткавана"
+
+msgid "serviceChannelMessages/Financial/profit"
+msgstr "Атрымана"
+
+msgid "serviceChannelMessages/Financial/sell"
+msgstr "Прададзена:"
+
+msgid "serviceChannelMessages/Financial/text"
+msgstr ""
+"Бланкі перападрыхтоўкі (%(blanksCount)s).\n"
+"%(state)s крэдытаў: %(creditsCount)s"
+
+msgid "serviceChannelMessages/Reset/body"
+msgstr "Усе навыкі скінуты."
+
+msgid "serviceChannelMessages/Reset/header"
+msgstr "Скіданне навыкаў"
+
+msgid "serviceChannelMessages/ResetUsed/body"
+msgstr "Выдаткі %(currency)s: %(count)s."
+
+msgid "serviceChannelMessages/currencyBlanks"
+msgstr "бланкаў"
+
+msgid "storage/description"
+msgstr ""
+"Дазваляе скінуць навыкі ў любога выбранага танкіста. Расходуецца пры "
+"выкарыстанні."
+
+msgid "storage/userName"
+msgstr "Бланк перападрыхтоўкі"
+
+msgid "userName"
+msgstr "Бланк перападрыхтоўкі"

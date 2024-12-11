@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Orso/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/italy/It33_Orso/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.671104 -0.894030 -3.707040</min>
+		<max>1.723175 0.806639 3.918445</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

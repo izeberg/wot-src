@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>NY25_Skating_Prem_1</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s5</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s6</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s8</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s9</node>
+		<geometry>
+			<vertices>s9Shape.vertices</vertices>
+			<primitive>s9Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd9</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>35</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_Prem_1_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_Prem_1_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_Prem_1_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.062967 0.670512 5.466427</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s8</node>
+		<geometry>
+			<vertices>s8Shape.vertices</vertices>
+			<primitive>s8Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd8</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0027_Bench_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0027_Bench_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0027_Bench_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>4.046590 0.516559 -6.478671</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s6</node>
+		<geometry>
+			<vertices>s6Shape.vertices</vertices>
+			<primitive>s6Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd6</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>55</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Illumination/NY25_Lights_Houses_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.741176 0.741176 0.741176 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>7</Int>
+					</property>
+				</material>
+				<groupOrigin>0.615033 2.036211 5.071117</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s5</node>
+		<geometry>
+			<vertices>s5Shape.vertices</vertices>
+			<stream>s5Shape.uv2</stream>
+			<primitive>s5Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd5</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0002_XmasFir_Back_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0002_XmasFir_Back_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0002_XmasFir_Back_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.529762 0.632598 12.195406</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s4</node>
+		<geometry>
+			<vertices>s4Shape.vertices</vertices>
+			<primitive>s4Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd4</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/NY22_Sculpture_02_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>-0.230000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>0.240000</Float>
+					</property>
+					<property>
+						g_contrast
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>26.250000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.350000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.917647 0.647059 0.156863 1.000000</Vector4>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/NY22_Sculpture_02_Garland_CM.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/NY22_Sculpture_02_Garland_CM.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.200000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>5.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-1.648749 0.714739 11.953815</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s3</node>
+		<geometry>
+			<vertices>s3Shape.vertices</vertices>
+			<primitive>s3Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>1</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0035_Fir_Fence_03_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.690196 0.662745 0.627451 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>-1.082294 3.458885 -6.836935</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s2</node>
+		<geometry>
+			<vertices>s2Shape.vertices</vertices>
+			<primitive>s2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0035_Fir_Fence_03_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0035_Fir_Fence_03_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0035_Fir_Fence_03_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.096361 1.579588 -6.839701</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s1</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_Prem_1_Glow.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.549020 0.549020 0.549020 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>12.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.956093 -0.056390 9.547477</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s0</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/Ice_Cracked_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/Ice_Scratches_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/Snow_35_512_AM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_E_1_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/NY25_Skating_A_1_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.650000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.500000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/Ice_Cracked_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/Ice_Cracked_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/Snow_35_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/Ice_Cracked_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h03_mt_ny_2025/customization/Skatting/Ice_Scratches_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/Snow_35_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.013462 0.738695 9.442393</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-18.772764 -0.274739 -18.765120</min>
+		<max>19.970606 3.701958 36.386562</max>
+	</boundingBox>
+	<geometrySize>440862</geometrySize>
+	<minUVDensity>0.000313</minUVDensity>
+</root>

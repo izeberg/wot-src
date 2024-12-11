@@ -604,10 +604,6 @@
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle019_GerBoxes/hd_mle019_GerBoxes_AM.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
@@ -624,10 +620,6 @@
 					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle019_GerBoxes/hd_mle019_GerBoxes_AM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
 					</property>
 					<property>
 						texRandom
@@ -692,10 +684,6 @@
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle019_GerBoxes/hd_mle019_GerBoxes_AM.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
@@ -714,10 +702,6 @@
 						<Texture>content/MilitaryEnvironment/hd_mle019_GerBoxes/hd_mle019_GerBoxes_AM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
-					<property>
 						texRandom
 						<Texture>maps/fx/random.dds</Texture>
 					</property>
@@ -730,7 +714,7 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>0.021185 1.051928 -0.256166</groupOrigin>
+				<groupOrigin>0.021185 1.021152 -0.015995</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -772,10 +756,6 @@
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle019_GerBoxes/hd_mle019_GerBoxes_AM.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
@@ -794,10 +774,6 @@
 						<Texture>content/MilitaryEnvironment/hd_mle019_GerBoxes/hd_mle019_GerBoxes_AM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
-					<property>
 						texRandom
 						<Texture>maps/fx/random.dds</Texture>
 					</property>
@@ -810,14 +786,14 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.081790 1.077526 -0.283407</groupOrigin>
+				<groupOrigin>-0.081790 1.030797 -0.036824</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.241353 -0.015110 -1.264151</min>
-		<max>2.240697 2.152065 0.746837</max>
+		<min>-2.241353 -0.015110 -0.778827</min>
+		<max>2.240697 2.058606 0.746837</max>
 	</boundingBox>
-	<geometrySize>697776</geometrySize>
+	<geometrySize>695112</geometrySize>
 	<minUVDensity>0.022595</minUVDensity>
 </root>

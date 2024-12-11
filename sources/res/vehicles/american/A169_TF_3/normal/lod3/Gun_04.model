@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A169_TF_3/normal/lod4/Gun_04</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.525494 -0.228251 -0.055067</min>
+		<max>0.526105 0.278142 3.468318</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A169_TF_3/normal/lod3/Gun_04</nodefullVisual>
+	<tank>true</tank>
+</root>

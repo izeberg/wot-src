@@ -1,0 +1,1831 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "alertMessage/afterSeason"
+msgstr "Падзея «Ледзяны мядзведзь» завершана"
+
+msgid "alertMessage/allNotAvailable"
+msgstr "Баі на серверах пачнуцца праз %(primeDelta)s"
+
+msgid "alertMessage/allNotAvailableEnd"
+msgstr "Падзея «Ледзяны мядзведзь» завершана"
+
+msgid "alertMessage/allNotSet"
+msgstr "Рэжым недаступны на ўсіх серверах"
+
+msgid "alertMessage/betweenSeasons"
+msgstr "Падзея «Ледзяны мядзведзь» завершана"
+
+msgid "alertMessage/button/changeServer"
+msgstr "Змяніць сервер"
+
+msgid "alertMessage/button/moreInfo"
+msgstr "Падрабязней"
+
+msgid "alertMessage/modeOffline"
+msgstr "Рэжым недаступны: памылка базы даных."
+
+msgid "alertMessage/notAvailable"
+msgstr "Баі недаступныя на серверы %(serverName)s"
+
+msgid "alertMessage/notAvailableEnd"
+msgstr "Баі недаступныя на серверы %(serverName)s"
+
+msgid "alertMessage/notSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/standaloneNotAvailable"
+msgstr "Баі на серверы пачнуцца праз %(primeDelta)s"
+
+msgid "alertMessage/standaloneNotAvailableEnd"
+msgstr "Падзея «Ледзяны мядзведзь» завершана"
+
+msgid "alertMessage/standaloneNotSet"
+msgstr "Рэжым недаступны на серверы %(serverName)s"
+
+msgid "alertMessage/temporaryBan"
+msgstr "Удзел у рэжыме немагчымы. Разблакіроўка праз %(expiryTime)s"
+
+msgid "alertMessage/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "alertMessage/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "alertMessage/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "alertMessage/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "alertMessage/undefined"
+msgstr "?empty?"
+
+msgid "alertMessage/unsuitableVehicles"
+msgstr "У Гаражы няма прыдатнай тэхнікі %(levels)s узроўню"
+
+msgid "banner/info/disabled"
+msgstr "Рэжым спынення агню"
+
+msgid "banner/info/seasonEnd"
+msgstr "%(season)s завершана"
+
+msgid "banner/info/seasonEndSoon"
+msgstr "Апошняя магчымасць паказаць сваё майстэрства!"
+
+msgid "banner/info/seasonJustStarted"
+msgstr "Пакажыце, на што вы здольныя!"
+
+msgid "banner/infoSmall/disabled"
+msgstr "Чакайце прайм-тайму"
+
+msgid "banner/season"
+msgstr "Падзея «Ледзяны мядзведзь»"
+
+msgid "banner/seasonDate/seasonLasts"
+msgstr "Да %(day)s %(month)s"
+
+msgid "banner/seasonDate/seasonNotStarted"
+msgstr "З %(day)s %(month)s"
+
+msgid "banner/seasonDateSmall/seasonLasts"
+msgstr "Да %(day)s %(month)s"
+
+msgid "banner/seasonDateSmall/seasonNotStarted"
+msgstr "З %(day)s %(month)s"
+
+msgid "banner/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "banner/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "banner/title"
+msgstr "НАЦІСК"
+
+msgid "battleCarousel/filterButtonTooltip/body"
+msgstr "Налады адлюстравання тэхнікі з улікам тыпу, ролі і дзяржавы."
+
+msgid "battleCarousel/filterButtonTooltip/header"
+msgstr "Фільтр параметраў"
+
+msgid "battleCarousel/filterPopover/desc"
+msgstr "Тут паказаныя толькі машыны, што пасуюць да рэжыму."
+
+msgid "battleCarousel/noFilteredVehiclesMessage"
+msgstr "Няма машын, што пасуюць па параметрах"
+
+msgid "battleMessages/enableVOIP"
+msgstr ""
+"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
+"Увайсці ў галасавы чат (%(keyName)s)"
+
+msgid "battleMessages/specifyVOIP"
+msgstr ""
+"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
+"Для хуткага доступу да галасавой сувязі прызначце гарачую клавішу."
+
+msgid "battleMessages/withoutVOIP"
+msgstr ""
+"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
+"Для выкарыстання галасавой сувязі ўключыце гэтую функцыю ў наладах гульні."
+
+msgid "battlePage/rulesButtonLabel"
+msgstr "Інфармацыя пра рэжым (F1)"
+
+msgid "battlePage/statusNotificationTimers/aggressiveDetection"
+msgstr "Агляд машыны павялічаны"
+
+msgid "battlePage/statusNotificationTimers/allySupport"
+msgstr "Характарыстыкі экіпажа палепшаныя"
+
+msgid "battlePage/statusNotificationTimers/aoeHeal/healed"
+msgstr "Аднаўленне трываласці"
+
+msgid "battlePage/statusNotificationTimers/aoeHeal/healing"
+msgstr "Аднаўленне трываласці"
+
+msgid "battlePage/statusNotificationTimers/aoeInspire/inspired"
+msgstr "Характарыстыкі экіпажа палепшаныя"
+
+msgid "battlePage/statusNotificationTimers/aoeInspire/inspiring"
+msgstr "Характарыстыкі экіпажа палепшаныя"
+
+msgid "battlePage/statusNotificationTimers/berserk"
+msgstr "Хуткасць перанабівання павялічаная"
+
+msgid "battlePage/statusNotificationTimers/concentration"
+msgstr "ТТХ машыны палепшаныя"
+
+msgid "battlePage/statusNotificationTimers/hunter"
+msgstr "Аднаўленне трываласці"
+
+msgid "battlePage/statusNotificationTimers/juggernaut"
+msgstr "ТТХ машыны палепшаныя"
+
+msgid "battlePage/statusNotificationTimers/march"
+msgstr "ТТХ машыны палепшаныя"
+
+msgid "battlePage/statusNotificationTimers/riskyAttack/buff"
+msgstr "Рухомасць машыны павялічаная"
+
+msgid "battlePage/statusNotificationTimers/riskyAttack/heal"
+msgstr "Аднаўленне трываласці"
+
+msgid "battlePage/statusNotificationTimers/smoke/ally"
+msgstr "У дымах: замаскіраваны"
+
+msgid "battlePage/statusNotificationTimers/smoke/enemy"
+msgstr "У дымах. Агляд і эфектыўнасць экіпажа паменшаны."
+
+msgid "battlePage/statusNotificationTimers/smoke/enemyPostEffect"
+msgstr "Рэшткавая з'ява. Агляд і эфектыўнасць экіпажа паменшаны."
+
+msgid "battlePage/statusNotificationTimers/sniper"
+msgstr "Роскід гарматы паменшаны"
+
+msgid "battlePage/statusNotificationTimers/sureShot"
+msgstr "ТТХ машыны палепшаныя"
+
+msgid "battleResult/header/deserter"
+msgstr "На вас накладзенае дысцыплінарнае спагнанне — штраф да ачкоў рэйтынгу"
+
+msgid "battleResult/header/deserterQualification"
+msgstr ""
+"У дачыненні да вас было ўжыта дысцыплінарнае спагнанне — пасля праходжання "
+"кваліфікацыі рэйтынг будзе зніжаны."
+
+msgid "battleResult/label/deserter"
+msgstr "Дэзерцірства"
+
+msgid "battleResult/message/deserter"
+msgstr ""
+"Вы атрымалі дысцыплінарнае спагнанне.\n"
+"Страчана ачкоў рэйтынгу: %(penalty)s"
+
+msgid "battleResult/message/deserterQualification"
+msgstr ""
+"Вы збеглі з поля бою і атрымалі дысцыплінарнае спагнанне.\n"
+"Рэйтынг пасля праходжання кваліфікацыі будзе зніжаны."
+
+msgid "battleResult/message/header/deserter"
+msgstr "Дысцыплінарнае спагнанне"
+
+msgid "battleResult/personal/label"
+msgstr "Ачкі рэйтынгу"
+
+msgid "battleResult/personal/tooltip/descr"
+msgstr ""
+"Адлюстраванне бягучага прагрэсу гульца ў рангавай сістэме. Ачкі рэйтынгу "
+"можна атрымаць або страціць у залежнасці ад поспехаў у рэжыме."
+
+msgid "battleResult/personal/tooltip/loseDescr"
+msgstr ""
+"• паражэнні/нічыі ў баях рэжыму;\n"
+"• дысцыплінарнае спагнанне;\n"
+"• рангавую неактыўнасць."
+
+msgid "battleResult/personal/tooltip/loseTitle"
+msgstr "Ачкі рэйтынгу спісваюцца за:"
+
+msgid "battleResult/personal/tooltip/title"
+msgstr "Ачкі рэйтынгу"
+
+msgid "battleResult/qualification/descr/main"
+msgstr "Кваліфікацыйны бой"
+
+msgid "battleResult/qualification/descr/stats"
+msgstr "%(battleNumber)s - %(battleResult)s"
+
+msgid "battleResult/qualification/title"
+msgstr "Кваліфікацыя"
+
+msgid "battleResult/subTask/descr/getEliteRating"
+msgstr ""
+"Вы здабылі ачкі рэйтынгу. Для абароны рангу «Легенда» заставайцеся ў "
+"топ-%(topPercentage)d%% гульцоў табліцы лідараў."
+
+msgid "battleResult/subTask/descr/getMasterRating"
+msgstr ""
+"Вы здабылі ачкі рэйтынгу. Каб атрымаць ранг «Легенда», увайдзіце ў "
+"топ-%(topPercentage)d%% гульцоў табліцы лідараў."
+
+msgid "battleResult/subTask/descr/getRating"
+msgstr "Вы атрымалі ачкі рэйтынгу"
+
+msgid "battleResult/subTask/descr/loseEliteRating"
+msgstr ""
+"Вы страцілі ачкі рэйтынгу. Для абароны рангу «Легенда» заставайцеся ў "
+"топ-%(topPercentage)d%% гульцоў табліцы лідараў."
+
+msgid "battleResult/subTask/descr/loseMasterRating"
+msgstr ""
+"Вы страцілі ачкі рэйтынгу. Каб атрымаць ранг «Легенда», увайдзіце ў "
+"топ-%(topPercentage)d%% гульцоў табліцы лідараў."
+
+msgid "battleResult/subTask/descr/loseRating"
+msgstr "Вы страцілі ачкі рэйтынгу"
+
+msgid "battleResult/subTask/rating"
+msgstr "Ачкоў рэйтынгу: %(rating)d"
+
+msgid "battleResult/subTask/title/decrease"
+msgstr "Вас панізілі да %(division)s. %(rank)s"
+
+msgid "battleResult/subTask/title/noRaise"
+msgstr "%(rank)s. %(division)s"
+
+msgid "battleResult/subTask/title/raise"
+msgstr "Вас павысілі да %(division)s. %(rank)s!"
+
+msgid "battleResult/team/prestigePoints/body"
+msgstr ""
+"Сартаваць паводле ачкоў прэстыжу. Ачкі прэстыжу ўплываюць на колькасць "
+"здабытых і страчаных ачкоў рэйтынгу."
+
+msgid "battleResult/team/prestigePoints/header"
+msgstr "Ачкі прэстыжу"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s — %(end)s"
+
+msgid "calendarDay/timeLeft"
+msgid_plural "plural/calendarDay/timeLeft"
+msgstr[0] "Падзея «Ледзяны мядзведзь» працягнецца %(days)d дзень"
+msgstr[1] "Падзея «Ледзяны мядзведзь» працягнецца %(days)d дні"
+msgstr[2] "Падзея «Ледзяны мядзведзь» працягнецца %(days)d дзён"
+
+msgid "calendarDay/title"
+msgstr "Расклад"
+
+msgid "closeButtonLabel"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "countDown/text"
+msgstr ""
+"Да пачатку падзеі:\n"
+"%(timeLeft)s"
+
+msgid "detailsHelp/mainTitle"
+msgstr "Падказкі для рэжыму «Націск»"
+
+msgid "detailsHelp/poi"
+msgstr ""
+"Захоплівайце ключавыя пазіцыі і атрымлівайце тактычную перавагу. «Мінны "
+"склад» дае навык «Міннае поле», якія размяшчае на мапе міны, што "
+"пашкоджваюць тэхніку і аглушаюць экіпаж праціўніка. «Дымавы цэнтр» прыносіць"
+" навык «Дымавая заслона», які маскуе тэхніку хаўруснікаў і зніжае агляд і "
+"эфектыўнасць праціўніка ў зоне дзеяння."
+
+msgid "detailsHelp/poi/title"
+msgstr "Ключавыя пазіцыі"
+
+msgid "detailsHelp/roleSkills"
+msgstr ""
+"У залежнасці ад ролі кожная машына мае асаблівы навык з трыма ўзроўнямі "
+"зараду. Чым вышэйшы ўзровень зараду ў момант актывацыі навыку, тым мацнейшым"
+" будзе яго дзеянне. Узровень зараду павышаецца за кошт ачкоў прэстыжу, якія "
+"налічваюцца за баявыя дзеянні, захоп ключавых пазіцый і выкарыстанне "
+"тактычных навыкаў."
+
+msgid "detailsHelp/roleSkills/title"
+msgstr "Ролевыя навыкі"
+
+msgid "detailsHelp/rules"
+msgstr ""
+"Змагайцеся ў асаблівым рэжыме бою «Атака/абарона», у якім каманда атакоўцаў "
+"павінна захапіць прынамсі адну базу, а абаронцаў — абараніць абедзве базы ад"
+" захопу."
+
+msgid "detailsHelp/rules/title"
+msgstr "Атака/абарона"
+
+msgid "detailsHelp/seasonModifiers"
+msgstr ""
+"У баях Націску дзейнічае асаблівы мадыфікатар, які змяняе пэўныя "
+"характарыстыкі ўсёй тэхнікі: павышае трываласць, скарачае час падрыхтоўкі "
+"рыштунку, а таксама зніжае стандарты агляд і бронепрабівальнасць на "
+"дыстанцыі 100 метраў."
+
+msgid "detailsHelp/seasonModifiers/title"
+msgstr "Мадыфікатар Націску"
+
+msgid "detailsHelp/types"
+msgstr ""
+"У баях могуць удзельнічаць лёгкія, сярэднія і цяжкія танкі, а таксама СТ-САУ. \n"
+"САУ да ўдзелу ў баях не дапускаюцца."
+
+msgid "detailsHelp/types/title"
+msgstr "Тыпы тэхнікі"
+
+msgid "division/A"
+msgstr "A"
+
+msgid "division/B"
+msgstr "B"
+
+msgid "division/C"
+msgstr "C"
+
+msgid "division/D"
+msgstr "D"
+
+msgid "division/E"
+msgstr "E"
+
+msgid "division/note"
+msgstr "Дывізіён"
+
+msgid "division/text"
+msgstr "Дывізіён %(division)s"
+
+msgid "divisionTooltip/description"
+msgstr ""
+"У гэтым дывізіёне знаходзяцца гульцы, якія набралі "
+"{whiteSpanish_Open}ад&nbsp;%(fromScore)&nbsp;да&nbsp;%(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "divisionTooltip/heading"
+msgstr "Дывізіён %(divisionName)s"
+
+msgid "featureName"
+msgstr "НАЦІСК"
+
+msgid "featureNameCapitalized"
+msgstr "НАЦІСК"
+
+msgid "fifthRankTooltip/description"
+msgstr ""
+"Ранг {whiteSpanish_Open}«Чэмпіён»{whiteSpanish_Close} надаецца гульцам, якія"
+" набралі мінімум {whiteSpanish_Open}%(fromScore){whiteSpanish_Close} ачкоў "
+"рэйтынгу."
+
+msgid "generalRankTooltip/body/first"
+msgstr ""
+"Ранг {whiteSpanish_Open}«Жалеза»{whiteSpanish_Close} надаецца гульцам, якія "
+"набралі {whiteSpanish_Open}ад %(fromScore) да %(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "generalRankTooltip/body/fourth"
+msgstr ""
+"Ранг {whiteSpanish_Open}«Золата»{whiteSpanish_Close} надаецца гульцам, якія "
+"набралі {whiteSpanish_Open}ад %(fromScore) да %(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "generalRankTooltip/body/second"
+msgstr ""
+"Ранг {whiteSpanish_Open}«Бронза»{whiteSpanish_Close} надаецца гульцам, якія "
+"набралі {whiteSpanish_Open}ад %(fromScore) да %(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "generalRankTooltip/body/third"
+msgstr ""
+"Ранг {whiteSpanish_Open}«Срэбра»{whiteSpanish_Close} надаецца гульцам, якія "
+"набралі {whiteSpanish_Open}ад %(fromScore) да %(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "generalRankTooltip/subheading"
+msgstr "Уключае дывізіёны: %(divisions)s"
+
+msgid "infoPageButtonLabel"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "lastUpdateNote/info"
+msgstr "Адноўлена: %(date)s"
+
+msgid "lastUpdateNote/lastBestUserPoints/description"
+msgstr ""
+"Значэнне ачкоў рэйтынгу апошняга гульца ў рангу «Легенда»\n"
+"абнаўляецца кожныя %(count)s хвілін."
+
+msgid "lastUpdateNote/lastBestUserPoints/update"
+msgstr "Абнаўленне звестак..."
+
+msgid "lastUpdateNote/ratingPositions/description"
+msgstr ""
+"Табліца лідараў\n"
+"абнаўляецца кожныя %(count)s хвілін."
+
+msgid "lastUpdateNote/tooltip/info"
+msgstr "Апошняе абнаўленне: %(date)s"
+
+msgid "leaderboard/currentPosition/body"
+msgstr "Мая пазіцыя"
+
+msgid "leaderboard/currentPosition/none"
+msgstr ""
+"Каб патрапіць у табліцу лідараў, дасягніце рангу «Чэмпіён» або «Легенда»."
+
+msgid "leaderboard/error/buttonText"
+msgstr "Абнавіць"
+
+msgid "leaderboard/error/description"
+msgstr "Выбачайце за нязручнасці, паспрабуйце абнавіць старонку пазней."
+
+msgid "leaderboard/error/title"
+msgstr "Памылка загрузкі даных"
+
+msgid "leaderboard/noRecords/subtitle"
+msgstr ""
+"У табліцу лідараў трапляюць гульцы з рангамі «Чэмпіён» і «Легенда». Набярыце"
+" {whiteSpanish_Open}%(pointsCount)s{whiteSpanish_Close} ачкоў рэйтынгу і "
+"станьце першым!"
+
+msgid "leaderboard/noRecords/title"
+msgstr "Яшчэ ніводзін гулец не трапіў у табліцу лідараў гэтай падзеi"
+
+msgid "leaderboard/table/header/battlesCount"
+msgstr "Баі"
+
+msgid "leaderboard/table/header/order"
+msgstr "№"
+
+msgid "leaderboard/table/header/player"
+msgstr "Імя гульца"
+
+msgid "leaderboard/table/header/score"
+msgstr "Ачкі рэйтынгу"
+
+msgid "leaderboard/table/tooltip/battlesCount/body"
+msgstr "Колькасць баёў, адваяваных гульцом у рэжыме «Націск» у гэтай падзее."
+
+msgid "leaderboard/table/tooltip/battlesCount/header"
+msgstr "Баі"
+
+msgid "leaderboard/table/tooltip/order/body"
+msgstr "Пазіцыя гульца ў рэйтынгу."
+
+msgid "leaderboard/table/tooltip/order/header"
+msgstr "Пазіцыя"
+
+msgid "leaderboard/table/tooltip/player/body"
+msgstr "Імя гульца, які займае пазіцыю ў рэйтынгу."
+
+msgid "leaderboard/table/tooltip/player/header"
+msgstr "Імя гульца"
+
+msgid "leaderboard/table/tooltip/score/body"
+msgstr "Колькасць ачкоў рэйтынгу гульца, здабытых у гэтай падзее."
+
+msgid "leaderboard/table/tooltip/score/header"
+msgstr "Ачкі рэйтынгу"
+
+msgid "listSeparator"
+msgstr ", "
+
+msgid "mainWidget/ratingCalculation"
+msgstr ""
+"Чаканне вынікаў кваліфікацыі\n"
+"для надання рангу %(timer)s"
+
+msgid "mainWidget/status"
+msgstr "%(score)s / %(scoreToNextDivision)s"
+
+msgid "mainWidget/tooltip/inactive/body"
+msgstr "Вы будзеце страчваць ачкі рэйтынгу, калі не будзеце ваяваць у рэжыме."
+
+msgid "mainWidget/tooltip/inactive/header"
+msgstr "Рангавая неактыўнасць"
+
+msgid "mainWidget/tooltip/inactive/note"
+msgstr "Дзён да паніжэння рэйтынгу: %(days)s"
+
+msgid "mainWidget/warning"
+msgstr "Без удзелу ў баях ваш рэйтынг панізіцца."
+
+msgid "mainWidgetTooltip/battlesCounter"
+msgstr ""
+"%(battleIcon)s{cream_Open}%(battlesCount)s{cream_Close} / "
+"%(maxBattlesCount)s"
+
+msgid "mainWidgetTooltip/division"
+msgstr "Дывізіён: %(divisionName)s"
+
+msgid "mainWidgetTooltip/divisionDescription"
+msgstr ""
+"У гэтым дывізіёне знаходзяцца гульцы, якія набралі {whiteSpanish_Open}ад "
+"%(fromScore) да %(toScore){whiteSpanish_Close} ачкоў рэйтынгу."
+
+msgid "mainWidgetTooltip/info/fifth"
+msgstr ""
+"Для атрымання рангу «Легенда» ўвайдзіце ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў."
+
+msgid "mainWidgetTooltip/info/sixth"
+msgstr ""
+"Ранг «Легенда» надаецца "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў."
+
+msgid "mainWidgetTooltip/qualification/condition"
+msgid_plural "plural/mainWidgetTooltip/qualification/condition"
+msgstr[0] ""
+"Завяршыце %(maxBattlesCount)s бой у рэжыме для вызначэння вашага ўзроўню "
+"майстэрства і надання рангу."
+msgstr[1] ""
+"Завяршыце %(maxBattlesCount)s баі ў рэжыме для вызначэння вашага ўзроўню "
+"майстэрства і надання рангу."
+msgstr[2] ""
+"Завяршыце %(maxBattlesCount)s баёў у рэжыме для вызначэння вашага ўзроўню "
+"майстэрства і надання рангу."
+
+msgid "mainWidgetTooltip/qualificationName"
+msgstr "Кваліфікацыя"
+
+msgid "mainWidgetTooltip/ratingScore"
+msgstr "Ачкі рэйтынгу"
+
+msgid "membersWindow/memberCountDropdown/description"
+msgstr "Гульцоў у звязе"
+
+msgid "noVehicles/howTo/premium"
+msgstr "Скарыстайце Танкавы прэміум акаўнт"
+
+msgid "noVehicles/howTo/reserves"
+msgstr "Задзейнічайце асабістыя рэзервы"
+
+msgid "noVehicles/howTo/tasks"
+msgstr "Выконвайце баявыя задачы"
+
+msgid "noVehicles/howTo/title"
+msgstr "Як хутчэй атрымаць тэхніку %(levels)s узроўню?"
+
+msgid "noVehicles/text/vehicleAvailableForBuy"
+msgstr ""
+"Каб удзельнічаць у «Націску», вы мусіце мець прынамсі адну машыну %(levels)s узроўню, прыдатную для гульні ў рэжыме.\n"
+"У вас ёсць даследаваная, але не набытая тэхніка %(levels)s узроўню."
+
+msgid "noVehicles/text/vehicleAvailableForRestore"
+msgstr ""
+"Каб удзельнічаць у «Націску», вы мусіце мець прынамсі адну машыну %(levels)s узроўню, прыдатную для гульні ў рэжыме.\n"
+"У вас ёсць тэхніка %(levels)s узроўню, якую можна аднавіць."
+
+msgid "noVehicles/text/vehicleUnavailable"
+msgstr ""
+"Каб удзельнічаць у «Націску», вы мусіце мець прынамсі адну машыну %(levels)s узроўню, прыдатную для гульні ў рэжыме.\n"
+"Неабходную тэхніку можна ўзяць напракат, выканаўшы адмысловую баявую задачу."
+
+msgid "page/heading/leaderboard"
+msgstr "ТАБЛІЦА ЛІДАРАЎ"
+
+msgid "page/heading/progression"
+msgstr "РАНГАВАЯ СІСТЭМА"
+
+msgid "page/heading/qualification"
+msgstr "КВАЛІФІКАЦЫЯ"
+
+msgid "page/heading/rankRewards"
+msgstr "УЗНАГАРОДЫ ЗА РАНГІ"
+
+msgid "page/heading/weeklyQuests"
+msgstr "ШТОТЫДНЁВЫЯ ЗАДАЧА"
+
+msgid "page/heading/yearlyRewards"
+msgstr "ГАДАВЫЯ ЎЗНАГАРОДЫ"
+
+msgid "page/heading/yearlyStatistics"
+msgstr "ГАДАВАЯ СТАТЫСТЫКА"
+
+msgid "pagination/dots"
+msgstr "…"
+
+msgid "pagination/next"
+msgstr "Наперад"
+
+msgid "pagination/prev"
+msgstr "Назад"
+
+msgid "player_errors/equipment/fastRecharge/vehicleIsNotRecharged"
+msgstr "Недаступна: машына не перанабіваецца."
+
+msgid "player_errors/equipment/fastRecharge/vehicleIsOnFastRecharge"
+msgstr "Недаступна: час перанабівання ўжо зменшаны."
+
+msgid "player_errors/equipment/hunter/noDamagedEnemyVehicles"
+msgstr "Недаступна: няма пашкоджаных стрэламі машын супраціўніка."
+
+msgid "player_errors/equipment/hunter/vehicleIsNotDamaged"
+msgstr "Недаступна: аднаўленне трываласці непатрэбнае."
+
+msgid "player_errors/equipment/roleSkill/alreadyActivated"
+msgstr "Ралявая звычка «%(name)s» выкарыстоўваецца."
+
+msgid "player_errors/equipment/roleSkill/cooldown"
+msgstr "Ралявая звычка «%(name)s» недаступная: перазарадка."
+
+msgid "player_errors/equipment/roleSkill/unavailable"
+msgstr "Ралявая звычка «%(name)s» недаступная: няма зараду."
+
+msgid "player_messages/equipment/roleSkill/applied"
+msgstr "Ралявая звычка «%(name)s» актываваная!"
+
+msgid "player_messages/equipment/roleSkill/promoted"
+msgstr "Узровень зараду ралявой звычкі «%(name)s» павышаны!"
+
+msgid "player_messages/equipment/roleSkill/ready"
+msgstr "Ралявая звычка «%(equipment)s» гатовая да актывацыі."
+
+msgid "prebattleTimer/info/readyBtn/label"
+msgstr "Пацвердзіць выбар"
+
+msgid "prebattleTimer/info/readyBtn/tooltip/body"
+msgstr "Пацвердзіўшы выбар, вы не зможаце выбраць іншую машыну."
+
+msgid "prebattleTimer/wait/additionalInfo"
+msgstr ""
+"Выбірайце машыну, што найлепей пасуе для гэтай мапы і складу вашай каманды."
+
+msgid "prebattleTimer/wait/header"
+msgstr "Чаканне гульцоў..."
+
+msgid "prebattleTimer/wait/selectVehicle"
+msgstr "Выберыце машыну"
+
+msgid "primeTimeView/endOfCycle"
+msgstr "Этап на серверы %(server)s завяршыўся"
+
+msgid "primeTimeView/server"
+msgstr "Даступны для ўваходу сервер: %(server)s."
+
+msgid "primeTimeView/serverTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі будуць даступныя яшчэ %(time)s"
+
+msgid "primeTimeView/serverUnavailableTooltip"
+msgstr ""
+"Сервер %(server)s\n"
+"Баі стануць даступныя праз %(time)s"
+
+msgid "primeTimeView/servers"
+msgstr "Даступныя серверы:"
+
+msgid "primeTimeView/status/allServersDisabled"
+msgstr "Баі недаступныя на ўсіх серверах"
+
+msgid "primeTimeView/status/disableFirst"
+msgstr "Рэжым на серверы %(server)s недаступны"
+
+msgid "primeTimeView/status/primeIsAvailable"
+msgstr "Баі на серверы %(server)s будуць даступныя яшчэ %(time)s"
+
+msgid "primeTimeView/status/primeWillBeAvailable"
+msgstr "Баі на серверы %(server)s пачнуцца праз %(time)s"
+
+msgid "primeTimeView/status/seasonDisabled"
+msgstr "Падзея «Ледзяны мядзведзь» на серверы %(server)s завяршылася."
+
+msgid "primeTimeView/status/untill"
+msgstr "Баі на серверы %(server)s недаступныя да %(startTime)s"
+
+msgid "primeTimeView/title"
+msgstr "НАЦІСК"
+
+msgid "qualification/battlesCounter"
+msgstr ""
+"%(battleIcon)s{cream_Open}%(battlesCount)s{cream_Close} / "
+"%(maxBattlesCount)s"
+
+msgid "qualification/condition"
+msgid_plural "plural/qualification/condition"
+msgstr[0] ""
+"Завяршыце {white_Open}%(maxBattlesCount)s бой{white_Close} у рэжыме для "
+"вызначэння ўзроўню вайшага майстэрства і надання рангу."
+msgstr[1] ""
+"Завяршыце {white_Open}%(maxBattlesCount)s баі{white_Close} у рэжыме для "
+"вызначэння ўзроўню вайшага майстэрства і надання рангу."
+msgstr[2] ""
+"Завяршыце {white_Open}%(maxBattlesCount)s баёў{white_Close} у рэжыме для "
+"вызначэння ўзроўню вайшага майстэрства і надання рангу."
+
+msgid "qualification/conditionTooltip/body"
+msgid_plural "plural/qualification/conditionTooltip/body"
+msgstr[0] ""
+"Для праходжання кваліфікацыі завяршыце %(maxBattlesCount)s бой і дачакайцеся разліку рэйтынгу. Ваша баявая эфектыўнасць падчас кваліфікацыі ўплывае на выніковы ранг, які вы атрымаеце.\n"
+"Дэзерцірства ў кваліфікацыі прывядзе да горшага выніку, чым у самай няўдалай бітве."
+msgstr[1] ""
+"Для праходжання кваліфікацыі завяршыце %(maxBattlesCount)s баі і дачакайцеся разліку рэйтынгу. Ваша баявая эфектыўнасць падчас кваліфікацыі ўплывае на выніковы ранг, які вы атрымаеце.\n"
+"Дэзерцірства ў кваліфікацыі прывядзе да горшага выніку, чым у самай няўдалай бітве."
+msgstr[2] ""
+"Для праходжання кваліфікацыі завяршыце %(maxBattlesCount)s баёў і дачакайцеся разліку рэйтынгу. Ваша баявая эфектыўнасць падчас кваліфікацыі ўплывае на выніковы ранг, які вы атрымаеце.\n"
+"Дэзерцірства ў кваліфікацыі прывядзе да горшага выніку, чым у самай няўдалай бітве."
+
+msgid "qualification/conditionTooltip/header"
+msgstr "Правілы кваліфікацыі"
+
+msgid "qualification/counter"
+msgstr "%(battlesCount)s / %(maxBattlesCount)s"
+
+msgid "qualification/counterWithDescription"
+msgstr ""
+"%(counter)s\n"
+"Баёў праведзена"
+
+msgid "qualification/ratingCalculationDescription"
+msgstr "Чаканне вынікаў кваліфікацыі для надання рангу %(timerIcon)s"
+
+msgid "qualification/ratingCalculationTooltip"
+msgstr ""
+"Разлік рэйтынгу па выніках кваліфікацыі можа заняць да пяці хвілін. Пасля "
+"гэтага вам будзе нададзены ранг і вы зможаце працягваць гульню ў Націску."
+
+msgid "qualification/rewardsButton"
+msgstr "Да ўзнагарод"
+
+msgid "qualification/rewardsDescription"
+msgstr ""
+"Пасля завяршэння кваліфікацыі вы атрымаеце ўзнагароды за ўжо дасягнуты і ўсе"
+" папярэднія рангі."
+
+msgid "rank/achieved"
+msgstr "Дасягнуты"
+
+msgid "rank/current"
+msgstr "Цяперашні"
+
+msgid "rank/fifth"
+msgstr "Чэмпіён"
+
+msgid "rank/first"
+msgstr "Жалеза"
+
+msgid "rank/fourth"
+msgstr "Золата"
+
+msgid "rank/qualification"
+msgstr "Кваліфікацыя"
+
+msgid "rank/second"
+msgstr "Бронза"
+
+msgid "rank/sixth"
+msgstr "Легенда"
+
+msgid "rank/text"
+msgstr "Ранг %(rank)s"
+
+msgid "rank/third"
+msgstr "Срэбра"
+
+msgid "rankInactivityTooltip/description"
+msgstr "Вы будзеце страчваць ачкі рэйтынгу, калі не будзеце ваяваць у рэжыме."
+
+msgid "rankInactivityTooltip/heading"
+msgstr "Рангавая неактыўнасць"
+
+msgid "rankInactivityTooltip/timeLeft"
+msgstr "Дзён да паніжэння рэйтынгу: %(count)s"
+
+msgid "rankInfo/current/fifth"
+msgstr ""
+"Ранг «Чэмпіён» надаецца гульцам, якія набралі {whiteSpanish_Open}ад "
+"%(fromScore){whiteSpanish_Close} ачкоў рэйтынгу"
+
+msgid "rankInfo/current/sixth"
+msgstr ""
+"Ранг «Легенда» надаецца "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў"
+
+msgid "rankItemStatus/current/description/fifth"
+msgstr ""
+"Каб атрымаць ранг «Легенда», увайдзіце ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле колькасці ачкоў рэйтынгу."
+
+msgid "rankItemStatus/current/description/sixth"
+msgstr ""
+"Каб абараніць ранг «Легенда», заставайцеся ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле колькасці ачкоў рэйтынгу."
+
+msgid "rankItemStatus/current/extendedDescription/fifth"
+msgstr ""
+"Каб атрымаць ранг «Легенда», увайдзіце ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле ачкоў рэйтынгу. Колькасць ачкоў рэйтынгу ў апошняга гульца "
+"ў рангу "
+"«Легенда»&nbsp;—&nbsp;{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+
+msgid "rankItemStatus/current/extendedDescription/sixth"
+msgstr ""
+"Каб абараніць ранг «Легенда», заставайцеся ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле колькасці ачкоў рэйтынгу. Колькасць ачкоў рэйтынгу ў "
+"апошняга гульца ў рангу "
+"«Легенда»&nbsp;—&nbsp;{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+
+msgid "rankItemStatus/future/description/fifth"
+msgstr ""
+"Ранг «Чэмпіён» надаецца гульцам, якія набралі "
+"мінімум&nbsp;{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} ачкоў "
+"рэйтынгу."
+
+msgid "rankItemStatus/future/description/first"
+msgstr ""
+"Ранг «Жалеза» надаецца гульцам, якія набралі "
+"{whiteSpanish_Open}ад&nbsp;%(fromScore)&nbsp;да&nbsp;%(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "rankItemStatus/future/description/fourth"
+msgstr ""
+"Ранг «Золата» надаецца гульцам, якія набралі "
+"{whiteSpanish_Open}ад&nbsp;%(fromScore)&nbsp;да&nbsp;%(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "rankItemStatus/future/description/second"
+msgstr ""
+"Ранг «Бронза» надаецца гульцам, якія набралі "
+"{whiteSpanish_Open}ад&nbsp;%(fromScore)&nbsp;да&nbsp;%(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "rankItemStatus/future/description/sixth"
+msgstr ""
+"Каб атрымаць ранг «Легенда», увайдзіце ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле колькасці ачкоў рэйтынгу."
+
+msgid "rankItemStatus/future/description/third"
+msgstr ""
+"Ранг «Срэбра» надаецца гульцам, якія набралі "
+"{whiteSpanish_Open}ад&nbsp;%(fromScore)&nbsp;да&nbsp;%(toScore){whiteSpanish_Close}"
+" ачкоў рэйтынгу."
+
+msgid "rankItemStatus/future/extendedDescription/sixth"
+msgstr ""
+"Каб атрымаць ранг «Легенда», увайдзіце ў "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле ачкоў рэйтынгу. Колькасць ачкоў рэйтынгу ў апошняга гульца "
+"ў рангу "
+"«Легенда»&nbsp;—&nbsp;{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+
+msgid "rankItemStatus/previous/description/fifth"
+msgstr ""
+"Ранг «Чэмпіён» надаецца гульцам, якія набралі "
+"мінімум&nbsp;{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} ачкоў "
+"рэйтынгу."
+
+msgid "rankUpper/fifth"
+msgstr "ЧЭМПІЁН"
+
+msgid "rankUpper/first"
+msgstr "ЖАЛЕЗА"
+
+msgid "rankUpper/fourth"
+msgstr "ЗОЛАТА"
+
+msgid "rankUpper/second"
+msgstr "БРОНЗА"
+
+msgid "rankUpper/sixth"
+msgstr "ЛЕГЕНДА"
+
+msgid "rankUpper/third"
+msgstr "СРЭБРА"
+
+msgid "ratingScore/title"
+msgstr "Ачкі рэйтынгу"
+
+msgid "rewards/bonus/style_progress"
+msgstr "Камуфляж «%(name)s»"
+
+msgid "rewards/preview"
+msgstr "Перадпрагляд"
+
+msgid "rewards/qualification/condition/first"
+msgstr ""
+"Завяршыце кваліфікацыю для вызначэння ўзроўню вашага майстэрства і надання "
+"рангу."
+
+msgid "rewards/qualification/condition/second"
+msgstr ""
+"Пасля завяршэння кваліфікацыі вы атрымаеце ўзнагароды за ўжо дасягнуты ранг "
+"і ўсе папярэднія."
+
+msgid "rewards/shopButton"
+msgstr "Да крамы Націску"
+
+msgid "rewards/status/achieved"
+msgstr "Узнагарода атрымана"
+
+msgid "rewards/subtitle/customizations"
+msgstr ""
+"{whiteSpanish_Open}Для %(vehicleLevel)s узроўню тэхнікі{whiteSpanish_Close}"
+
+msgid "rewards/subtitle/styleProgress"
+msgstr "{whiteSpanish_Open}Для стылю «Ледзяны мядзведзь»{whiteSpanish_Close}"
+
+msgid "rewards/subtitle/vehicles_rent"
+msgstr "%(vehicleLevel)s узровень"
+
+msgid "rewardsScreen/additionalRewards"
+msgstr "Таксама атрымана:"
+
+msgid "rewardsScreen/button"
+msgstr "Так!"
+
+msgid "rewardsScreen/buttonToRewards"
+msgstr "Да ўзнагарод"
+
+msgid "rewardsScreen/description/qualificationEnded"
+msgstr "НАЦІСК. КВАЛІФІКАЦЫЯ ЗАВЕРШАНА"
+
+msgid "rewardsScreen/description/season"
+msgstr "НАЦІСК. ПАДЗЕЯ «ЛЕДЗЯНЫ МЯДЗВЕДЗЬ»."
+
+msgid "rewardsScreen/notice/subTitle"
+msgstr ""
+"На гэтым рангу вы можаце страціць частку ачкоў рэйтынгу, калі перастанеце "
+"змагацца ў рэжыме «Націск»."
+
+msgid "rewardsScreen/notice/title"
+msgstr "Рангавая неактыўнасць"
+
+msgid "rewardsScreen/subtitle/division"
+msgstr "{cream_Open}Ранг «%(rank)s»{cream_Close}"
+
+msgid "rewardsScreen/subtitle/qualificationRewards"
+msgstr ""
+"Па выніках кваліфікацыі вы атрымалі ўзнагароды за наступныя рангі: "
+"{cream_Open}%(ranks)s{cream_Close}"
+
+msgid "rewardsScreen/subtitle/qualificationRewardsSeparator"
+msgstr ", "
+
+msgid "rewardsScreen/subtitle/rankRewards"
+msgstr ""
+"Вы атрымалі ўзнагароду за павышэнне да рангу "
+"{cream_Open}«%(rank)s»{cream_Close}"
+
+msgid "rewardsScreen/subtitle/tokensRewards"
+msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
+msgstr[0] ""
+"Атрымана ўзнагарода за збор {cream_Open}%(tokensCount)s{cream_Close} манеты "
+"Націску"
+msgstr[1] ""
+"Атрымана ўзнагарода за збор {cream_Open}%(tokensCount)s{cream_Close} манет "
+"Націску"
+msgstr[2] ""
+"Атрымана ўзнагарода за збор {cream_Open}%(tokensCount)s{cream_Close} манет "
+"Націску"
+
+msgid "rewardsScreen/title/division"
+msgstr "ВЫ ДАСЯГНУЛІ ДЫВІЗІЁНА %(division)s"
+
+msgid "rewardsScreen/title/qualificationRank"
+msgstr "ДАСЯГНУТЫ РАНГ {cream_Open}«%(rankNameUpper)s»{cream_Close}"
+
+msgid "rewardsScreen/title/qualificationRewards"
+msgstr "УЗНАГАРОДА ЗА ДАСЯГНУТЫЯ РАНГІ"
+
+msgid "rewardsScreen/title/rank"
+msgstr "ДАСЯГНУТЫ РАНГ {cream_Open}«%(rankNameUpper)s»{cream_Close}"
+
+msgid "rewardsScreen/title/rankRewards"
+msgstr "УЗНАГАРОДА ЗА НОВЫ РАНГ"
+
+msgid "rewardsScreen/title/tokensRewards"
+msgstr "САБРАНЫ МАНЕТЫ НАЦІСКУ"
+
+msgid "scoreTooltip/body"
+msgstr ""
+"Ранг і дывізіён у рэжыме «Націск» залежаць ад колькасці здабытых ачкоў "
+"рэйтынгу. Перамагайце ў баях, каб стаць найлепшым."
+
+msgid "scoreTooltip/header"
+msgstr "Ачкі рэйтынгу"
+
+msgid "season/daysLeft"
+msgstr "Да завяршэння %(totalDays)s дз"
+
+msgid "season/hoursLeft"
+msgstr "Да завяршэння: %(hours)s гадз"
+
+msgid "season/minutesLeft"
+msgstr "Да завяршэння: %(minutes)s хв"
+
+msgid "season/name"
+msgstr "Націск: Ледзяны мядзведзь"
+
+msgid "season/over"
+msgstr "Падзея «Ледзяны мядзведзь» завершана"
+
+msgid "season/range"
+msgstr "%(startDate)s – %(endDate)s"
+
+msgid "season/secondsLeft"
+msgstr "Да завяршэння: %(seconds)s с"
+
+msgid "season/shortName"
+msgstr "Ледзяны мядзведзь"
+
+msgid "seasonModifier/title"
+msgstr "Мадыфікатар Націску"
+
+msgid "seasonPointTooltip/header"
+msgstr "Сцяг Ваўка"
+
+msgid "seasonPointTooltip/status/achieved"
+msgstr "Атрымана"
+
+msgid "seasonPointTooltip/status/notAchieved"
+msgstr "Не атрымана"
+
+msgid "seasonPointTooltip/status/possible"
+msgstr "Вы прэтэндуеце на сцяг"
+
+msgid "seasonPointTooltip/text/compensate"
+msgstr ""
+"Оставшиеся знамёна компенсируются бонами по курсу "
+"{bond_Open}1%(seasonPointIcon)s{bond_Close} к "
+"{bond_Open}%(seasonPointExchangeRate)s%(bondsIcon)s{bond_Close}"
+
+msgid "seasonPointTooltip/text/season"
+msgstr ""
+"Пасля заканчэння падзеi вы атрымаеце сцягі ў адпаведнасці з вашым рангам."
+
+msgid "seasonPointTooltip/text/year"
+msgstr "Кожныя 3 сцягі паляпшаюць узнагароду, якую вы атрымаеце ў канцы года."
+
+msgid "seasonalBattleSelector/tillEnd"
+msgstr "Падзея завяршыцца праз:"
+
+msgid "seasonalBattleSelector/timeTable/empty"
+msgstr "—"
+
+msgid "seasonalBattleSelector/timeTable/interval"
+msgstr "%(start)s — %(end)s"
+
+msgid "seasonalBattleSelector/timeTable/title"
+msgstr "Расклад матчаў"
+
+msgid "seasonalBattleSelector/timeTable/today"
+msgstr "Сёння"
+
+msgid "seasonalBattleSelector/timeTable/tomorrow"
+msgstr "Заўтра"
+
+msgid "selectorTooltip/desc"
+msgstr "Спаборніцкі рэжым. 7x7 | X узровень"
+
+msgid "selectorTooltip/title"
+msgstr "Націск"
+
+msgid "selectorTooltip/unavailable/finished"
+msgstr ""
+"Сачыце за навінамі на партале гульні, каб не прапусціць інфармацыю пра "
+"пачатак новай падзеi."
+
+msgid "selectorTooltip/unavailable/frozen"
+msgstr "Рэжым часова адключаны з тэхнічных прычын."
+
+msgid "selectorTooltip/unavailable/nextSeason"
+msgstr "Рэжым будзе даступны %(time)s"
+
+msgid "sidebar/tabs/tooltip/body/leaderboard"
+msgstr ""
+"Раздзел змяшчае інфармацыю пра найлепшых гульцоў гэтай падзеi ў рэжыме "
+"«Націск»."
+
+msgid "sidebar/tabs/tooltip/body/progression"
+msgstr ""
+"Раздзел змяшчае інфармацыю пра кваліфікацыю, а таксама пра ваш ранг, "
+"дывізіён і ачкі рэйтынгу пасля яе завяршэння."
+
+msgid "sidebar/tabs/tooltip/body/rankRewards"
+msgstr ""
+"Раздзел змяшчае інфармацыю пра ўзнагароды за здабыццё рангаў у рэжыме "
+"«Націск»."
+
+msgid "sidebar/tabs/tooltip/body/weeklyQuests"
+msgstr "Раздзел змяшчае інфармацыю пра штодзённыя задачы рэжыму «Націск»."
+
+msgid "sidebar/tabs/tooltip/body/yearlyRewards"
+msgstr ""
+"Раздзел змяшчае інфармацыю пра гадавыя ўзнагароды за атрыманне сцягоў Ваўка."
+
+msgid "sidebar/tabs/tooltip/body/yearlyStatistics"
+msgstr ""
+"Раздзел змяшчае інфармацыю пра вашы дасягненні ў кожным з сезонаў гэтага "
+"года Націску."
+
+msgid "sidebar/tabs/tooltip/header/leaderboard"
+msgstr "Табліца лідараў"
+
+msgid "sidebar/tabs/tooltip/header/progression"
+msgstr "Рангавая сістэма"
+
+msgid "sidebar/tabs/tooltip/header/rankRewards"
+msgstr "Узнагароды за рангі"
+
+msgid "sidebar/tabs/tooltip/header/weeklyQuests"
+msgstr "Штодзённыя задачы"
+
+msgid "sidebar/tabs/tooltip/header/yearlyRewards"
+msgstr "Гадавыя ўзнагароды"
+
+msgid "sidebar/tabs/tooltip/header/yearlyStatistics"
+msgstr "Гадавая статыстыка"
+
+msgid "sixthRankTooltip/description"
+msgstr ""
+"Ранг {whiteSpanish_Open}«Легенда»{whiteSpanish_Close} надаецца "
+"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} гульцоў табліцы"
+" лідараў паводле колькасці ачкоў рэйтынгу."
+
+msgid "system_messages/periodicReward/body"
+msgstr ""
+"Вы атрымалі штодзённую ўзнагароду за знаходжанне ў рангу «%(rank)s».\n"
+"%(rewards)s"
+
+msgid "system_messages/periodicReward/title"
+msgstr "Штодзённая ўзнагарода"
+
+msgid "system_messages/primeTime/end/body"
+msgstr ""
+"Баі ў рэжыме «Націск » недаступныя да заканчэння рэжыму спынення агню."
+
+msgid "system_messages/primeTime/end/title"
+msgstr "Рэжым спынення агню"
+
+msgid "system_messages/primeTime/start/body"
+msgstr "Баі ў рэжыме «Націск» зноў даступныя. Рэжым спынення агню завяршыўся."
+
+msgid "system_messages/primeTime/start/title"
+msgstr "Рэжым спынення агню"
+
+msgid "system_messages/qualificationReward/body"
+msgstr ""
+"Віншуем! Вы дасягнулі рангу «%(maxRank)s».\n"
+"Атрыманы ўзнагароды за рангі %(ranks)s:\n"
+"%(rewards)s"
+
+msgid "system_messages/qualificationReward/title"
+msgstr "Кваліфікацыя завершана"
+
+msgid "system_messages/regularReward/body"
+msgstr ""
+"Дата: %(at)s\n"
+"%(rewards)s"
+
+msgid "system_messages/regularReward/title"
+msgstr "Квіток"
+
+msgid "system_messages/temporaryBan/end/body"
+msgstr "Часовая блакіроўка знятая. Вы зноў можаце гуляць у рэжыме «Націск»."
+
+msgid "system_messages/temporaryBan/end/title"
+msgstr "Зняцце блакіроўкі"
+
+msgid "system_messages/tokenWeeklyReward/body"
+msgstr ""
+"Дата: %(at)s\n"
+"%(rewards)s"
+
+msgid "system_messages/tokenWeeklyReward/title"
+msgstr "Узнагарода за збор манет Націску"
+
+msgid "system_messages/weeklyReward/body"
+msgstr ""
+"Дата: %(at)s\n"
+"%(rewards)s"
+
+msgid "system_messages/weeklyReward/title"
+msgstr "Узнагарода за выкананне штотыднёвай задачы"
+
+msgid "system_messages/weeklyReward/tokens"
+msgstr "манета Націску"
+
+msgid "unit/message/modeOffline"
+msgstr "Немагчыма ўвайсці ў бой: памылка базы даных."
+
+msgid "unit/message/ratingRestriction"
+msgstr "Розніца ў ачках рэйтынгу паміж гульцамі звязу перавышае %(rating)s"
+
+msgid "voiceChat/active"
+msgstr "Выйсці з галасавога чата"
+
+msgid "voiceChat/inactive"
+msgstr "Увайсці ў галасавы чат"
+
+msgid "waitingSpinner/message"
+msgstr "Загрузка змесціва..."
+
+msgid "weeklyQuests/card/progress/counter"
+msgstr "%(current)s / %(total)s"
+
+msgid "weeklyQuests/card/status/active"
+msgstr "Выконваецца"
+
+msgid "weeklyQuests/card/status/completed"
+msgstr "Выканана"
+
+msgid "weeklyQuests/card/status/locked"
+msgstr "Недаступна"
+
+msgid "weeklyQuests/card/statusLockedTooltip/body/lockedByInactiveSeason"
+msgstr "Выкананне недаступнае: рэжым неактыўны."
+
+msgid "weeklyQuests/card/statusLockedTooltip/body/lockedByNoXVehicles"
+msgstr "Для разблакавання даследуйце і купіце машыну Х узроўню."
+
+msgid "weeklyQuests/card/statusLockedTooltip/body/lockedByPreviousQuest"
+msgstr "Для разблакавання выканайце папярэднюю задачу."
+
+msgid "weeklyQuests/card/statusLockedTooltip/header"
+msgstr "Задача недаступная"
+
+msgid "weeklyQuests/resetStatus/ended/lastWeek/title"
+msgstr "Усе задачы апошняга тыдня падзеі выкананы."
+
+msgid "weeklyQuests/resetStatus/ended/subtitle"
+msgstr "Задачы абновяцца праз"
+
+msgid "weeklyQuests/resetStatus/ended/title"
+msgstr "Задачы гэтага тыдня выкананы."
+
+msgid "weeklyQuests/resetStatus/lastWeek"
+msgstr "Апошні тыдзень падзеi! На выкананне задач засталося:"
+
+msgid "weeklyQuests/resetStatus/timer"
+msgstr "Задачы абновяцца праз"
+
+msgid "weeklyQuests/tokenProgress/description/done"
+msgstr "Усе ўзнагароды атрыманы"
+
+msgid "weeklyQuests/tokenProgress/description/normal"
+msgstr "Зарабляйце манеты Націску для атрымання ўзнагарод"
+
+msgid "whatsNewView/banner/title/large"
+msgstr "Падзея «Ледзяны мядзведзь»"
+
+msgid "whatsNewView/button/ok"
+msgstr "Я ў справе!"
+
+msgid "whatsNewView/confirmButton"
+msgstr "Так!"
+
+msgid "whatsNewView/deprecatedMaps"
+msgstr "ВЫКЛЮЧАНЫЯ"
+
+msgid "whatsNewView/mapChanges/addedMaps"
+msgstr "Дададзеныя мапы:"
+
+msgid "whatsNewView/mapChanges/heading"
+msgstr "Мапы"
+
+msgid "whatsNewView/mapChanges/removedMaps"
+msgstr "Выключаныя мапы:"
+
+msgid "whatsNewView/newMaps"
+msgstr "НОВЫЯ"
+
+msgid "whatsNewView/qualification/description"
+msgstr "У рэжыме ёсць акцыйная тэхніка."
+
+msgid "whatsNewView/qualification/heading"
+msgstr "Акцыйная тэхніка"
+
+msgid "whatsNewView/rankingSystem/description"
+msgstr "Праведзены пераразлік заробку ачкоў Націску за баі."
+
+msgid "whatsNewView/rankingSystem/heading"
+msgstr "Рангавая сістэма"
+
+msgid "whatsNewView/slides/description/introQualification"
+msgstr ""
+"Правядзіце 10 кваліфікацыйных баёў для вызначэння ўзроўню вашага майстэрства"
+" і надання вам рангу. Па заканчэнні вы атрымаеце ўзнагароду за дасягнуты "
+"ранг і ўсе папярэднія. Дэзерцірства і нічыя ў кваліфікацыі расцэньваюцца як "
+"паражэнне."
+
+msgid "whatsNewView/slides/description/modificator"
+msgstr ""
+"У падзеі дзейнічае асаблівы мадыфікатар націску, які павышае трываласць усёй"
+" тэхнікі, скарачае час падрыхтоўкі рыштунку і зніжае стандартны агляд."
+
+msgid "whatsNewView/slides/description/newSeason"
+msgstr ""
+"Змагайцеся ў асаблівым рэжыме бою «Атака/абарона». Правілы простыя: ёсць "
+"дзве базы. Адна каманда іх атакуе, іншая — абараняе. Пры гэтым пэўныя "
+"параметры ўсёй тэхнікі, што ўдзельнічае, зменены за кошт дзейнага ў падзеі "
+"мадыфікатара."
+
+msgid "whatsNewView/slides/description/newTypes"
+msgstr ""
+"У баях могуць удзельнічаць толькі лёгкія, сярэднія і цяжкія танкі і СТ-САУ Х узроўню. \n"
+"САУ да ўдзелу ў баях не дапускаюцца."
+
+msgid "whatsNewView/slides/description/pointsOfInterest"
+msgstr ""
+"Захоплівайце ключавыя пазіцыі і атрымлівайце тактычную перавагу. Захоп "
+"«Міннага склада» дазволіць актываваць навык «Міннае поле» і размясціць міны "
+"ў пазначанай зоне, якія пры дэтанацыі пашкоджваюць тэхніку і аглушаюць "
+"экіпаж. Захапіўшы «Дымавы цэнтр», вы зможаце актываваць навык «Дымавая "
+"заслона» і замаскаваць усю тэхніку хаўруснікаў у дымах і за імі. Праціўнік, "
+"апынуўшыся ў гэтай зоне, атрымае штраф да агляду і эфектыўнасці экіпажа."
+
+msgid "whatsNewView/slides/description/ranks"
+msgstr ""
+"Ваша майстэрства будзе ацэньвацца рангамі ад «Жалеза» да «Легенды» ў "
+"залежнасці ад вынікаў баёў. На старце падзеі кожнаму гульцу давядзецца "
+"прайсці 10 кваліфікацыйных баёў для вызначэння пачатковага рангу. Уцёкі з "
+"поля бою або нічыя ў кваліфікацыі будуць лічыцца пройгрышам."
+
+msgid "whatsNewView/slides/description/roleSkills"
+msgstr ""
+"У залежнасці ад ролі кожная машына мае асаблівы навык з трыма ўзроўнямі "
+"зараду. Чым вышэйшы ўзровень зараду ў момант актывацыі навыку, тым мацнейшым"
+" будзе яго дзеянне. Узровень зараду павышаецца за кошт ачкоў прэстыжу, якія "
+"налічваюцца за баявыя дзеянні, захоп ключавых пазіцый і выкарыстанне "
+"тактычных навыкаў."
+
+msgid "whatsNewView/slides/description/seasonVehicles"
+msgstr ""
+"Для ўдзелу ў Націску вы можаце ўзяць напракат тэхніку Х узроўню. Для гэтага "
+"неабходна выканаць адпаведную баявую задачу на тэхніцы VIII, IX і X "
+"узроўняў."
+
+msgid "whatsNewView/slides/description/shop"
+msgstr ""
+"У краме Націску вас чакае эксклюзіўная тэхніка і стылі, а таксама выгадная "
+"сістэма зніжак."
+
+msgid "whatsNewView/slides/description/vehiclesOnMap"
+msgstr ""
+"У баях могуць удзельнічаць толькі лёгкія, сярэднія і цяжкія танкі і СТ-САУ Х"
+" узроўню. САУ да ўдзелу ў баях не дапускаюцца. Выбраць тэхніку можна як у "
+"Гаражы, так і на старце бою, калі вы ўжо разумееце, на якой мапе будзе "
+"адбывацца бітва."
+
+msgid "whatsNewView/slides/title/introQualification"
+msgstr "Кваліфікацыя"
+
+msgid "whatsNewView/slides/title/maps"
+msgstr "Мапы"
+
+msgid "whatsNewView/slides/title/modificator"
+msgstr "Мадыфікатар падзеі"
+
+msgid "whatsNewView/slides/title/newSeason"
+msgstr "Падзея «Націск: Ледзяны мядзведзь» "
+
+msgid "whatsNewView/slides/title/newTypes"
+msgstr "Цяпер без САУ"
+
+msgid "whatsNewView/slides/title/pointsOfInterest"
+msgstr "Ключавыя пазіцыі"
+
+msgid "whatsNewView/slides/title/ranks"
+msgstr "Сістэма рангаў"
+
+msgid "whatsNewView/slides/title/roleSkills"
+msgstr "Ролевыя навыкі"
+
+msgid "whatsNewView/slides/title/seasonVehicles"
+msgstr "Пракатная тэхніка"
+
+msgid "whatsNewView/slides/title/shop"
+msgstr "Крама падзеі"
+
+msgid "whatsNewView/slides/title/vehiclesOnMap"
+msgstr "Тэхніка: тыпы і выбар на старце бою"
+
+msgid "whatsNewView/title"
+msgstr "НАЦІСК"
+
+msgid "whatsNewView/vehicleLimitations/description"
+msgstr ""
+"Для гульні ў падзеі «Ледзяны воўк» больш не даступныя машыны ролі САУ."
+
+msgid "whatsNewView/vehicleLimitations/heading"
+msgstr "Абмежаванні паводле тэхнікі"
+
+msgid "whatsNewView/vehiclesForRent/heading"
+msgstr "Пракатная тэхніка"
+
+msgid "yearlyRewards/banner/willReceived"
+msgstr "Узнагароды будуць налічаны пасля заканчэння рангавага года"
+
+msgid "yearlyRewards/description"
+msgstr ""
+"Па заканчэнні падзеі вы атрымаеце сцягі Ваўка ў адпаведнасці з вашым рангам"
+
+msgid "yearlyRewards/error/description"
+msgstr "Выбачайце за нязручнасці, паспрабуйце абнавіць старонку пазней."
+
+msgid "yearlyRewards/error/title"
+msgstr "Памылка загрузкі даных"
+
+msgid "yearlyRewards/main/fifth"
+msgstr "Камуфляж «Чэмпіён»"
+
+msgid "yearlyRewards/main/first"
+msgstr "Камуфляж «Жалеза»"
+
+msgid "yearlyRewards/main/fourth"
+msgstr "Камуфляж «Золата»"
+
+msgid "yearlyRewards/main/second"
+msgstr "Камуфляж «Бронза»"
+
+msgid "yearlyRewards/main/sixth"
+msgstr "Камуфляж «Легенда»"
+
+msgid "yearlyRewards/main/third"
+msgstr "Камуфляж «Срэбра»"
+
+msgid "yearlyRewards/rank/achieved"
+msgstr "Дасягнуты ранг: %(rank)s"
+
+msgid "yearlyRewards/rank/current"
+msgstr "Бягучы ранг: %(rank)s"
+
+msgid "yearlyRewards/rewardsState/claimed"
+msgstr "Узнагарода атрымана"
+
+msgid "yearlyRewards/rewardsState/guaranteed"
+msgstr "Узнагарода гарантавана"
+
+msgid "yearlyRewards/rewardsState/notAvailable"
+msgstr "Узнагарода не атрымана"
+
+msgid "yearlyRewards/rewardsState/possible"
+msgstr "Вы прэтэндуеце на ўзнагароду"
+
+msgid "yearlyRewards/rewardsState/tooltip/guaranteed"
+msgstr "Вы гарантавана атрымаеце гэту ўзнагароду ў канцы года."
+
+msgid "yearlyRewards/rewardsState/tooltip/notAvailable"
+msgstr ""
+"Заслужыце неабходную колькасць сцягоў Ваўка, каб атрымаць узнагароды ў канцы"
+" года."
+
+msgid "yearlyRewards/rewardsState/tooltip/possible"
+msgstr ""
+"Вы атрымаеце гэту ўзнагароду ў канцы года, калі захаваеце бягучы ранг або "
+"павысіце яго да заканчэння сезона."
+
+msgid "yearlyRewards/subtitle/styleProgress"
+msgstr "Для стылю «Каменны воўк»"
+
+msgid "yearlyRewards/vehicle"
+msgstr "Харыкейн"
+
+msgid "yearlyRewards/vehicleTooltip/body"
+msgstr ""
+"Машына з унікальным выглядам, якая выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewards/vehicleTooltip/header"
+msgstr "Харыкейн"
+
+msgid "yearlyRewardsTooltip/additional/fifth_1/body"
+msgstr "Памятная нашыўка, якая выдаецца за збор 15 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/fifth_1/header"
+msgstr "Націск 2023–2024: Чэмпіён"
+
+msgid "yearlyRewardsTooltip/additional/fifth_2/body"
+msgstr ""
+"Вы можаце выбраць тры адзінкі ўдасканаленага абсталявання ў якасці ўзнагароды. Кожны прадмет можна забраць толькі адзін раз:\n"
+" • Сістэма адводу парахавых газаў\n"
+" • Комплекс стабілізацыйнага абсталявання\n"
+" • Эксперыментальная сістэма набівання\n"
+" • Зносастойкія прыводы наводкі\n"
+" • Юсціраваная оптыка\n"
+" • Удасканаленая кампаноўка\n"
+" • Палепшаны кампрэсар\n"
+" • Павышаная снарадаўстойлівасць\n"
+" • Удасканаленая бартавая перадача"
+
+msgid "yearlyRewardsTooltip/additional/fifth_2/header"
+msgstr "Удасканаленае абсталяванне"
+
+msgid "yearlyRewardsTooltip/additional/fifth_3/body"
+msgstr ""
+"Асаблівы ўзнагародны 2D-стыль, якія выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/fifth_3/header"
+msgstr "Стыль «Каменны воўк»"
+
+msgid "yearlyRewardsTooltip/additional/fifth_4/body"
+msgstr ""
+"Выдаецца ў рэжыме «Націск» за збор сцягоў Ваўка.\n"
+"\n"
+"3 – Жалезны воўк\n"
+"6 – Бронзавы воўк\n"
+"9 – Срэбны воўк\n"
+"12 – Залаты воўк\n"
+"15 – Чэмпіён года Ваўка\n"
+"18 – Легенда года Ваўка\n"
+"\n"
+"У залежнасці ад колькасці сабраных сцягоў Ваўка вы атрымаеце адзін з медалёў."
+
+msgid "yearlyRewardsTooltip/additional/fifth_4/header"
+msgstr "Медаль «Альфа»"
+
+msgid "yearlyRewardsTooltip/additional/first_1/body"
+msgstr ""
+"Асаблівы ўзнагародны 2D-стыль, якія выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/first_1/header"
+msgstr "Стыль «Каменны воўк»"
+
+msgid "yearlyRewardsTooltip/additional/first_2/body"
+msgstr ""
+"Выдаецца ў рэжыме «Націск» за збор сцягоў Ваўка.\n"
+"\n"
+"3 – Жалезны воўк\n"
+"6 – Бронзавы воўк\n"
+"9 – Срэбны воўк\n"
+"12 – Залаты воўк\n"
+"15 – Чэмпіён года Ваўка\n"
+"18 – Легенда года Ваўка\n"
+"\n"
+"У залежнасці ад колькасці сабраных сцягоў Ваўка вы атрымаеце адзін з медалёў."
+
+msgid "yearlyRewardsTooltip/additional/first_2/header"
+msgstr "Медаль «Альфа»"
+
+msgid "yearlyRewardsTooltip/additional/fourth_1/body"
+msgstr ""
+"Унікальны 100%-ы экіпаж з «нулявым» навыкам «Таварышы па зброі» і досведам "
+"на вывучэнне двух іншых навыкаў на выбар."
+
+msgid "yearlyRewardsTooltip/additional/fourth_1/header"
+msgstr "Унікальны экіпаж"
+
+msgid "yearlyRewardsTooltip/additional/fourth_2/body"
+msgstr ""
+"Асаблівы ўзнагародны 2D-стыль, якія выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/fourth_2/header"
+msgstr "Стыль «Каменны воўк»"
+
+msgid "yearlyRewardsTooltip/additional/fourth_3/body"
+msgstr ""
+"Выдаецца ў рэжыме «Націск» за збор сцягоў Ваўка.\n"
+"\n"
+"3 – Жалезны воўк\n"
+"6 – Бронзавы воўк\n"
+"9 – Срэбны воўк\n"
+"12 – Залаты воўк\n"
+"15 – Чэмпіён года Ваўка\n"
+"18 – Легенда года Ваўка\n"
+"\n"
+"У залежнасці ад колькасці сабраных сцягоў Ваўка вы атрымаеце адзін з медалёў."
+
+msgid "yearlyRewardsTooltip/additional/fourth_3/header"
+msgstr "Медаль «Альфа»"
+
+msgid "yearlyRewardsTooltip/additional/second_1/body"
+msgstr ""
+"Вы можаце выбраць адну адзінку ўдасканаленага абсталявання ў якасці ўзнагароды. Кожны прадмет можна забраць толькі адзін раз:\n"
+" • Сістэма адводу парахавых газаў\n"
+" • Комплекс стабілізацыйнага абсталявання\n"
+" • Эксперыментальная сістэма набівання\n"
+" • Зносастойкія прыводы наводкі\n"
+" • Юсціраваная оптыка\n"
+" • Удасканаленая кампаноўка\n"
+" • Палепшаны кампрэсар\n"
+" • Павышаная снарадаўстойлівасць\n"
+" • Удасканаленая бартавая перадача"
+
+msgid "yearlyRewardsTooltip/additional/second_1/header"
+msgstr "Удасканаленае абсталяванне"
+
+msgid "yearlyRewardsTooltip/additional/second_2/body"
+msgstr ""
+"Асаблівы ўзнагародны 2D-стыль, якія выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/second_2/header"
+msgstr "Стыль «Каменны воўк»"
+
+msgid "yearlyRewardsTooltip/additional/second_3/body"
+msgstr ""
+"Выдаецца ў рэжыме «Націск» за збор сцягоў Ваўка.\n"
+"\n"
+"3 – Жалезны воўк\n"
+"6 – Бронзавы воўк\n"
+"9 – Срэбны воўк\n"
+"12 – Залаты воўк\n"
+"15 – Чэмпіён года Ваўка\n"
+"18 – Легенда года Ваўка\n"
+"\n"
+"У залежнасці ад колькасці сабраных сцягоў Ваўка вы атрымаеце адзін з медалёў."
+
+msgid "yearlyRewardsTooltip/additional/second_3/header"
+msgstr "Медаль «Альфа»"
+
+msgid "yearlyRewardsTooltip/additional/sixth_1/body"
+msgstr ""
+"Асаблівая адзнака, якая выдавалася найлепшым з найлепшых у год Ваўка рэжыму "
+"«Націск»."
+
+msgid "yearlyRewardsTooltip/additional/sixth_1/header"
+msgstr "Легенда пра Ваўка"
+
+msgid "yearlyRewardsTooltip/additional/sixth_2/body"
+msgstr "Памятная нашыўка, якая выдавалася за збор 18 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/sixth_2/header"
+msgstr "Націск 2023–2024: Легенда"
+
+msgid "yearlyRewardsTooltip/additional/sixth_3/body"
+msgstr ""
+"Асаблівы ўзнагародны 2D-стыль, якія выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/sixth_3/header"
+msgstr "Стыль «Каменны воўк»"
+
+msgid "yearlyRewardsTooltip/additional/sixth_4/body"
+msgstr ""
+"Выдаецца ў рэжыме «Націск» за збор сцягоў Ваўка.\n"
+"\n"
+"3 – Жалезны воўк\n"
+"6 – Бронзавы воўк\n"
+"9 – Срэбны воўк\n"
+"12 – Залаты воўк\n"
+"15 – Чэмпіён года Ваўка\n"
+"18 – Легенда года Ваўка\n"
+"\n"
+"У залежнасці ад колькасці сабраных сцягоў Ваўка вы атрымаеце адзін з медалёў."
+
+msgid "yearlyRewardsTooltip/additional/sixth_4/header"
+msgstr "Медаль «Легенда пра Ваўка»"
+
+msgid "yearlyRewardsTooltip/additional/third_1/body"
+msgstr ""
+"Вы можаце выбраць дзве адзінкі ўдасканаленага абсталявання ў якасці ўзнагароды. Кожны прадмет можна забраць толькі адзін раз:\n"
+" • Сістэма адводу парахавых газаў\n"
+" • Комплекс стабілізацыйнага абсталявання\n"
+" • Эксперыментальная сістэма набівання\n"
+" • Зносастойкія прыводы наводкі\n"
+" • Юсціраваная оптыка\n"
+" • Удасканаленая кампаноўка\n"
+" • Палепшаны кампрэсар\n"
+" • Павышаная снарадаўстойлівасць\n"
+" • Удасканаленая бартавая перадача"
+
+msgid "yearlyRewardsTooltip/additional/third_1/header"
+msgstr "Удасканаленае абсталяванне"
+
+msgid "yearlyRewardsTooltip/additional/third_2/body"
+msgstr ""
+"Асаблівы ўзнагародны 2D-стыль, якія выдаецца за дасягненні ў год Ваўка."
+
+msgid "yearlyRewardsTooltip/additional/third_2/header"
+msgstr "Стыль «Каменны воўк»"
+
+msgid "yearlyRewardsTooltip/additional/third_3/body"
+msgstr ""
+"Выдаецца ў рэжыме «Націск» за збор сцягоў Ваўка.\n"
+"\n"
+"3 – Жалезны воўк\n"
+"6 – Бронзавы воўк\n"
+"9 – Срэбны воўк\n"
+"12 – Залаты воўк\n"
+"15 – Чэмпіён года Ваўка\n"
+"18 – Легенда года Ваўка\n"
+"\n"
+"У залежнасці ад колькасці сабраных сцягоў Ваўка вы атрымаеце адзін з медалёў."
+
+msgid "yearlyRewardsTooltip/additional/third_3/header"
+msgstr "Медаль «Альфа»"
+
+msgid "yearlyRewardsTooltip/main/fifth/body"
+msgstr "Узнагародны камуфляж за збор 15 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/main/fifth/header"
+msgstr "Камуфляж «Чэмпіён»"
+
+msgid "yearlyRewardsTooltip/main/first/body"
+msgstr "Узнагародны камуфляж за збор 3 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/main/first/header"
+msgstr "Камуфляж «Жалеза»"
+
+msgid "yearlyRewardsTooltip/main/fourth/body"
+msgstr "Узнагародны камуфляж за збор 12 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/main/fourth/header"
+msgstr "Камуфляж «Золата»"
+
+msgid "yearlyRewardsTooltip/main/second/body"
+msgstr "Узнагародны камуфляж за збор 6 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/main/second/header"
+msgstr "Камуфляж «Бронза»"
+
+msgid "yearlyRewardsTooltip/main/sixth/body"
+msgstr "Узнагародны камуфляж за збор 18 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/main/sixth/header"
+msgstr "Камуфляж «Легенда»"
+
+msgid "yearlyRewardsTooltip/main/third/body"
+msgstr "Узнагародны камуфляж за збор 9 сцягоў Ваўка."
+
+msgid "yearlyRewardsTooltip/main/third/header"
+msgstr "Камуфляж «Срэбра»"
+
+msgid "yearlyStatistics/battles"
+msgstr "Баі (адзін./звяз.)"
+
+msgid "yearlyStatistics/dash"
+msgstr "—"
+
+msgid "yearlyStatistics/generationOfStatistics"
+msgstr "Разлік сезоннай статыстыкі..."
+
+msgid "yearlyStatistics/rankStatus"
+msgstr "Няма рангу"
+
+msgid "yearlyStatistics/rating"
+msgstr "Ачкі рэйтынгу"
+
+msgid "yearlyStatistics/seasonName/0"
+msgstr "Падзея І. Агністы воўк"
+
+msgid "yearlyStatistics/seasonName/1"
+msgstr "Падзея ІІ. Агністы воўк"
+
+msgid "yearlyStatistics/seasonName/2"
+msgstr "Падзея ІІІ. Агністы воўк"
+
+msgid "yearlyStatistics/seasonStatus/0"
+msgstr "%(start)s–%(end)s"
+
+msgid "yearlyStatistics/seasonStatus/1"
+msgstr "Зіма 2024"
+
+msgid "yearlyStatistics/seasonStatus/2"
+msgstr "Вясна 2024"
+
+msgid "yearlyStatistics/statisticsAvailability"
+msgstr ""
+"Статыстыка будзе даступная\n"
+"пасля заканчэння сезона"
+
+msgid "yearlyStatistics/superPlatoonBattles"
+msgstr "Баі (суперзвяз)"
+
+msgid "yearlyStatistics/wins"
+msgstr "Працэнт перамог"

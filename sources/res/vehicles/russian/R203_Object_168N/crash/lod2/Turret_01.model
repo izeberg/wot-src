@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R203_Object_168N/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.333616 -0.015553 -1.611532</min>
+		<max>1.334479 1.407629 1.438500</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R203_Object_168N/crash/lod2/Turret_01</nodefullVisual>
+</root>

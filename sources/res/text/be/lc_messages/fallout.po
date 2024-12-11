@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "awardWindow/additionalText/2"
+msgstr ""
+"Машыну X узроўню можна атрымаць напракат за выкананне адмысловых баявых "
+"задач."
+
+msgid "awardWindow/btnAction/1"
+msgstr "Да «Бою да апошняга»"
+
+msgid "awardWindow/btnAction/2"
+msgstr "Да баявых задач"
+
+msgid "awardWindow/header/1"
+msgstr "У вас з'явілася машына %s узроўню"
+
+msgid "awardWindow/header/2"
+msgstr "У вас з'явілася машына %s узроўню"
+
+msgid "awardWindow/mainText/1"
+msgstr ""
+"Віншуем! Па з'яўленні ў вашым Гаражы машыны %s узроўню вам адкрыўся доступ у"
+" рэжым гульні «Бой да апошняга»."
+
+msgid "awardWindow/mainText/2"
+msgstr ""
+"Віншуем! Вы атрымалі машыну %s узроўню. Каб мець доступ да рэжыму гульні "
+"«Бой да апошняга», купіце машыну X узроўню, калі такой у вас няма."
+
+msgid "awardWindow/title/1"
+msgstr "Інфармацыйны лісток"
+
+msgid "awardWindow/title/2"
+msgstr "Інфармацыйны лісток"
+
+msgid "battleLoading/multiteam/battleType"
+msgstr "«Сталёвае паляванне»"
+
+msgid "battleLoading/multiteam/winText"
+msgstr "Баявая задача: здабыць найбольшую колькасць ачкоў перамогі."
+
+msgid "battleSelectorWindow/domination/descr"
+msgstr ""
+"Бяруць удзел 2 каманды па 10 або 15 гульцоў у залежнасці ад мапы. Звязы дазваляюцца.\n"
+"Перамагае каманда, якая здабыла найбольшую колькасць ачкоў перамогі\n"
+"або знішчыла ўсю тэхніку супраціўніка."
+
+msgid "battleSelectorWindow/domination/title"
+msgstr "«Перавага»"
+
+msgid "battleSelectorWindow/dominationBattleBtnLbl"
+msgstr "Перайсці"
+
+msgid "battleSelectorWindow/headerDesc"
+msgstr ""
+"Тыпы баёў у гэтым рэжыме адрозніваюцца складам удзельнікаў і ўмовамі перамогі.\n"
+"У абодвух тыпах бою дазваляецца выкарыстанне баявых рэзерваў і адраджэнне ў баі (удзел у адным баі на некалькіх машынах па чарзе)."
+
+msgid "battleSelectorWindow/headerTitleStr"
+msgstr "«Бой да апошняга»"
+
+msgid "battleSelectorWindow/multiteam/descr"
+msgstr ""
+"Бяруць удзел адзіночныя гульцы, а таксама звязы з 3 гульцоў\n"
+"у фармаце «усе супраць усіх». Перамагае гулец або звяз,\n"
+"які здабыў найбольшую колькасць ачкоў перамогі."
+
+msgid "battleSelectorWindow/multiteam/title"
+msgstr "«Сталёвае паляванне»"
+
+msgid "battleSelectorWindow/multiteamBattleBtnLbl"
+msgstr "Перайсці"
+
+msgid "battleSelectorWindow/title"
+msgstr "«Бой да апошняга»"
+
+msgid "channel/label"
+msgstr "Бой да апошняга"
+
+msgid "falloutBattleSelectorWindow/autoSquad/label"
+msgstr "Аўтапошук каманды"
+
+msgid "hangarSwitch/14"
+msgstr "«Перавага»"
+
+msgid "hangarSwitch/15"
+msgstr "«Сталёвае паляванне»"
+
+msgid "hangarSwitch/btnLbl"
+msgstr "Змяніць"
+
+msgid "infoPanel/garage/descr"
+msgstr "Калі вас знішчылі, вяртайцеся ў той самы бой на іншай машыне."
+
+msgid "infoPanel/garage/head"
+msgstr "3 МАШЫНЫ НА БОЙ"
+
+msgid "infoPanel/garage/postmortemBtnLbl"
+msgstr "Рэжым назіральніка"
+
+msgid "infoPanel/garageMultiteam/descr"
+msgstr "Калі вас знішчылі, вяртайцеся ў той самы бой на іншай машыне."
+
+msgid "infoPanel/garageMultiteam/head"
+msgstr "1-3 МАШЫНЫ НА БОЙ"
+
+msgid "infoPanel/getFlags/descr"
+msgstr "Захоплівайце сцягі і дастаўляйце іх на базу."
+
+msgid "infoPanel/getFlags/head"
+msgstr "ПАЛЯВАННЕ НА СЦЯГІ"
+
+msgid "infoPanel/repair/descr"
+msgstr "Рамантуйце і абслугоўвайце тэхніку на кантрольных пунктах."
+
+msgid "infoPanel/repair/head"
+msgstr "ПОЎНЫ РАМОНТ"
+
+msgid "infoPanel/resourcePoints/descr"
+msgstr "Захоплівайце рэсурсы ў адмысловых пунктах."
+
+msgid "infoPanel/resourcePoints/head"
+msgstr "ПАЛЯВАННЕ НА РЭСУРСЫ"
+
+msgid "infoPanel/secretWin/descr"
+msgstr "За карысныя дзеянні ў баі вам налічваюцца ачкі перамогі."
+
+msgid "infoPanel/secretWin/head"
+msgstr "ПАДЛІК АЧКОЎ"
+
+msgid "infoPanel/singleHelpText/plus"
+msgstr "+"
+
+msgid "infoPanel/singleHelpText/winPoints/damage"
+msgstr "%(points)s за %(damageDealt)s адз. пашкоджанняў"
+
+msgid "infoPanel/singleHelpText/winPoints/flagCapture"
+msgstr "%s за дастаўку сцяга"
+
+msgid "infoPanel/singleHelpText/winPoints/flagDestroy"
+msgstr "%s за знішчэнне сцяга"
+
+msgid "infoPanel/singleHelpText/winPoints/kill"
+msgstr "%s за знішчэнне супраціўніка"
+
+msgid "multiselectionSlot/14/descriptionTitle"
+msgstr ""
+"Выберыце тэхніку. Прынамсі адна машына павінна быць %(topLevel)s узроўню."
+
+msgid "multiselectionSlot/14/message"
+msgstr "Група павінна складацца з 3 машын %(level)s узроўняў."
+
+msgid "multiselectionSlot/14/topTierVehicleRequired"
+msgstr ""
+"Для падзеі «Перавага» патрабуецца прынамсі адна машына %(requiredLevel)s узроўню.\n"
+"Група павінна складацца з 3 машын %(level)s узроўню."
+
+msgid "multiselectionSlot/15/descriptionTitle"
+msgstr "Выбар тэхнікі"
+
+msgid "multiselectionSlot/15/message"
+msgstr "Выберыце ў сваім Гаражы тэхніку %(level)s узроўню."
+
+msgid "multiselectionSlot/15/topTierVehicleRequired"
+msgstr ""
+"Для падзеі «Сталёвая перавага» патрабуецца прынамсі адна машына "
+"%(requiredLevel)s узроўню."
+
+msgid "multiselectionSlot/domination/requiredVehicleNotActivated"
+msgstr ""
+"Машына\n"
+"%(level)s узроўню"
+
+msgid "multiselectionSlot/domination/vehicleNotActivated"
+msgstr ""
+"Выберыце\n"
+"машыну"
+
+msgid "multiselectionSlot/groupNotReady"
+msgstr "Група не гатовая"
+
+msgid "multiselectionSlot/groupReady"
+msgstr "Група гатовая"
+
+msgid "multiselectionSlot/index"
+msgstr "%(index)d."
+
+msgid "multiselectionSlot/multiteam/vehicleNotActivated"
+msgstr ""
+"Выберыце\n"
+"машыну"
+
+msgid "multiselectionSlot/selectionRequirements"
+msgstr "%(level)s узровень"
+
+msgid "multiselectionSlot/selectionStatus"
+msgstr "Выбар тэхнікі"
+
+msgid "resourcePoints/cooldown/descr"
+msgstr "Даступна праз:"
+
+msgid "resourcePoints/disabled/descr"
+msgstr "На пункце супраціўнік!"
+
+msgid "resourcePoints/mining/descr"
+msgstr "Захоп рэсурсаў"
+
+msgid "safeZone/message"
+msgstr ""
+"Накіроўвайцеся ў\n"
+"бяспечную зону"
+
+msgid "safeZoneDirection/message"
+msgstr "Бяспечная зона"
+
+msgid "tankCarouselSlot/activateButton"
+msgstr "Выбраць"
+
+msgid "tankCarouselSlot/deactivateButton"
+msgstr "Скасаваць"
+
+msgid "tankCarouselSlot/selectionButtonTooltip"
+msgstr ""
+"Група павінна складацца з 3 машын %(level)s узроўню. Прынамсі 1 машына "
+"павінна быць %(requiredLevel)s узроўню і не ўдзельнічаць зараз у баі."

@@ -1,0 +1,139 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleProgress/hint"
+msgstr "Націсніце %(hintKey)s, каб пабачыць актыўныя задачы"
+
+msgid "buttons/battleSession/leave"
+msgstr "Выйсці"
+
+msgid "companyListView/filterButton/label"
+msgstr "Пошук"
+
+msgid "dialogs/buttons/notReady"
+msgstr "Не гатовы"
+
+msgid "dialogs/buttons/ready"
+msgstr "Гатовы!"
+
+msgid "labels/company/queue"
+msgstr "Чарга:"
+
+msgid "labels/level"
+msgstr "Узровень"
+
+msgid "labels/members"
+msgstr "Склад: %(openTag)s%(membersCount)d%(closeTag)s / %(maxMembersCount)d"
+
+msgid "labels/player"
+msgstr "Гулец"
+
+msgid "labels/sort/byName"
+msgstr "Паводле імя"
+
+msgid "labels/sort/byOrder"
+msgstr "Паводле дадавання"
+
+msgid "labels/sort/byStatus"
+msgstr "Паводле гатоўнасці"
+
+msgid "labels/sort/byVehicles"
+msgstr "Паводле тыпу тэхнікі"
+
+msgid "labels/stats/level"
+msgstr "Узровень:"
+
+msgid "labels/stats/maxPlayers"
+msgstr "Гульцоў:"
+
+msgid "labels/stats/sumLevel"
+msgstr "Сумарны ўзровень:"
+
+msgid "labels/stats/totalLevel"
+msgstr "Сумарны ўзровень: %(totalLevel)s"
+
+msgid "labels/stats/vehicleLevel"
+msgstr "Максімальны ўзровень тэхнікі:"
+
+msgid "labels/stats/vehicleSPGLevel"
+msgstr "Максімальны ўзровень САУ:"
+
+msgid "labels/vehicle"
+msgstr "Машына"
+
+msgid "memberList/empty/label"
+msgstr "Выберыце гульцоў з чаргі і перамясціце іх у асноўны склад."
+
+msgid "stats/battleSession/commonLevel"
+msgstr "Узровень:"
+
+msgid "stats/battleSession/required"
+msgstr "Вымогі:"
+
+msgid "stats/battleSession/vehicleType"
+msgstr "Тып:"
+
+msgid "switchPeripheryWindow/fort/applySwitchLabel"
+msgstr ""
+"Каб запланаваць або правесці Вылазку, перайдзіце на сервер %(server)s."
+
+msgid "switchPeripheryWindow/fort/description"
+msgstr ""
+"Зараз вы знаходзіцеся на серверы %(server)s, дзе правядзенне Вылазак "
+"абмежавана."
+
+msgid "switchPeripheryWindow/fort/header"
+msgstr "Увага!"
+
+msgid "switchPeripheryWindow/fort/selectServerLabel"
+msgstr "Каб запланаваць або правесці Вылазку, перайдзіце на іншы сервер:"
+
+msgid "switchPeripheryWindow/ranked/applySwitchLabel"
+msgstr ""
+"Перайдзіце на іншы сервер, каб працягнуць браць удзел у Рангавых баях."
+
+msgid "switchPeripheryWindow/ranked/description"
+msgstr ""
+"На серверы %(server)s наступіў рэжым спынення агню. Рангавыя баі "
+"недаступныя."
+
+msgid "switchPeripheryWindow/ranked/header"
+msgstr "Жаўнер!"
+
+msgid "switchPeripheryWindow/ranked/selectServerLabel"
+msgstr ""
+"Перайдзіце на іншы сервер, каб працягнуць браць удзел у Рангавых баях:"
+
+msgid "title/battleSession/arenaType"
+msgstr "Мапа:"
+
+msgid "title/battleSession/battlesLimit"
+msgstr "Баёў/Перамог:"
+
+msgid "title/battleSession/clanBattle/startTime"
+msgstr "%(startTime)s, %(peripheryName)s, %(arenaName)s"
+
+msgid "title/battleSession/comment"
+msgstr "Апісанне:"
+
+msgid "title/battleSession/header/battleSettings"
+msgstr "Налады бою:"
+
+msgid "title/battleSession/header/startTime"
+msgstr "Бой пачнецца праз:"
+
+msgid "title/battleSession/startTime"
+msgstr "Бой пачнецца а:"
+
+msgid "title/battleSession/unit"
+msgstr "рота"
+
+msgid "upButton/hint"
+msgstr "Націсніце, каб перайсці ў склад"

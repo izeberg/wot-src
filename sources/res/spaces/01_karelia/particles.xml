@@ -67,11 +67,14 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_water_mist.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_waterfall_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle011_GroupBoxes_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_811_CamouflageTent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env021_pier_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_mle008_Canisters1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/dryTree_01_fall.vfx</fn_effect_bin>
@@ -136,11 +139,14 @@
 		<fn_effect_bin>particles/environment/interior/10_hills_water_up.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/10_hills_water_up_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle011_GroupBoxes_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_811_CamouflageTent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env021_pier_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_mle008_Canisters1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/dryTree_01_fall.eff</fn_effect_bin>
@@ -275,11 +281,14 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/10_hills_water_up.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/10_hills_water_up_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle011_GroupBoxes_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_811_CamouflageTent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env021_pier_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_mle008_Canisters1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/dryTree_01_fall.vfx</fn_effect_bin>
@@ -344,11 +353,14 @@
 		<fn_effect_bin>particles/environment/interior/10_hills_water_up.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/10_hills_water_up_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle011_GroupBoxes_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_811_CamouflageTent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env021_pier_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_mle008_Canisters1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/dryTree_01_fall.eff</fn_effect_bin>

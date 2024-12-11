@@ -169,6 +169,43 @@
 			</block>
 			<block>
 				<class>Variable</class>
+				<id>Variable_8</id>
+				<params>
+					<param>
+						insignia0Effects
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_6</id>
 				<params>
 					<param>
@@ -650,6 +687,44 @@
 				</slots>
 			</block>
 			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_10</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_4</id>
+				<params>
+					<param>
+						Animator.setFloatParam
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\health\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\1.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_7</id>
 				<buddy>Variable_1</buddy>
@@ -664,7 +739,7 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_9</id>
+				<id>GetVariable_13</id>
 				<buddy>Variable_3</buddy>
 				<params>
 					<param>
@@ -674,17 +749,6 @@
 					</param>
 				</params>
 				<slots/>
-			</block>
-			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>ArenaPeriod</class>
@@ -724,144 +788,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_8</id>
-				<params>
-					<param>
-						Animator.startLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\stage0\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
-				<params>
-					<param>
-						Animator.startLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\stage1\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_10</id>
-				<params>
-					<param>
-						Animator.startLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>BattleGetVehicleInsigniaRank</class>
-				<id>BattleGetVehicleInsigniaRank_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_4</id>
-				<params>
-					<param>
-						Animator.setFloatParam
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\health\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\1.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Choice</class>
-				<id>Choice_1</id>
-				<params>
-					<param>
-						4
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_3</id>
-				<buddy>Variable_3</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_5</id>
-				<params>
-					<param>
-						Animator.startLayerByName
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\stage2\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_14</id>
 				<buddy>Variable_7</buddy>
@@ -888,14 +814,192 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_2</id>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>a</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_7</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_8</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_9</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Not</class>
+				<id>Not_2</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
-				<id>ComponentMethod_6</id>
+				<id>ComponentMethod_13</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\stage0\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>BattleGetVehicleInsigniaRank</class>
+				<id>BattleGetVehicleInsigniaRank_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Choice</class>
+				<id>Choice_2</id>
+				<params>
+					<param>
+						4
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_4</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_15</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_14</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\stage1\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_15</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\stage2\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_16</id>
 				<params>
 					<param>
 						Animator.startLayerByName
@@ -1320,16 +1424,16 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_12</from>
+				<from>ComponentMethod_4</from>
 				<input>input</input>
 				<to>If_3</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>CompareIntegers_1</from>
+				<from>And_1</from>
 				<input>value</input>
 				<to>If_3</to>
-				<output>equal</output>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>If_3</from>
@@ -1338,7 +1442,7 @@
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>GetVariable_9</from>
+				<from>GetVariable_13</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_9</to>
 				<output>value</output>
@@ -1356,40 +1460,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>BattleGetVehicleInsigniaRank_1</from>
-				<input>a</input>
-				<to>CompareIntegers_1</to>
-				<output>insigniaRank</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>in</input>
-				<to>ComponentMethod_8</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>GetVariable_3</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_8</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>GetVariable_3</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Sequence_1</from>
+				<from>ComponentMethod_12</from>
 				<input>in</input>
 				<to>ComponentMethod_10</to>
-				<output>o4</output>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>GetVariable_10</from>
@@ -1402,12 +1476,6 @@
 				<input>arg#0</input>
 				<to>ComponentMethod_10</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>vehicle</input>
-				<to>BattleGetVehicleInsigniaRank_1</to>
-				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>ComponentMethod_10</from>
@@ -1428,51 +1496,123 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_4</from>
-				<input>input</input>
-				<to>Choice_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>BattleGetVehicleInsigniaRank_1</from>
-				<input>index</input>
-				<to>Choice_1</to>
+				<from>BattleGetVehicleInsigniaRank_2</from>
+				<input>b</input>
+				<to>CompareIntegers_1</to>
 				<output>insigniaRank</output>
 			</connection>
 			<connection>
-				<from>Choice_1</from>
-				<input>in</input>
-				<to>ComponentMethod_5</to>
-				<output>o2</output>
+				<from>CompareIntegers_1</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>equal</output>
 			</connection>
 			<connection>
-				<from>GetVariable_3</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_5</to>
+				<from>GetVariable_9</from>
+				<input>i2</input>
+				<to>And_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVehicleGameObject_2</from>
+				<from>Choice_2</from>
+				<input>input</input>
+				<to>If_7</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>Not_2</from>
+				<input>value</input>
+				<to>If_7</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_13</from>
+				<input>input</input>
+				<to>SetVariable_8</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_4</from>
+				<input>a</input>
+				<to>Not_2</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_7</from>
+				<input>in</input>
+				<to>ComponentMethod_13</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>GetVariable_15</from>
 				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
+				<to>ComponentMethod_13</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_3</from>
+				<input>vehicle</input>
+				<to>BattleGetVehicleInsigniaRank_2</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>Sequence_1</from>
+				<input>input</input>
+				<to>Choice_2</to>
+				<output>o4</output>
+			</connection>
+			<connection>
+				<from>BattleGetVehicleInsigniaRank_2</from>
+				<input>index</input>
+				<to>Choice_2</to>
+				<output>insigniaRank</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_3</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_3</to>
 				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
-				<to>GetVehicleGameObject_2</to>
+				<to>GetVehicleGameObject_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Choice_1</from>
+				<from>Choice_2</from>
 				<input>in</input>
-				<to>ComponentMethod_6</to>
+				<to>ComponentMethod_14</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>GetVariable_15</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_14</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Choice_2</from>
+				<input>in</input>
+				<to>ComponentMethod_15</to>
+				<output>o2</output>
+			</connection>
+			<connection>
+				<from>GetVariable_15</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_15</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Choice_2</from>
+				<input>in</input>
+				<to>ComponentMethod_16</to>
 				<output>o3</output>
 			</connection>
 			<connection>
-				<from>GetVariable_3</from>
+				<from>GetVariable_15</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_6</to>
+				<to>ComponentMethod_16</to>
 				<output>value</output>
 			</connection>
 			<connection>

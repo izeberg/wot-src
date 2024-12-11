@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "channels/battle/common"
+msgstr "Агульны"
+
+msgid "channels/battle/team"
+msgstr "Камандны"
+
+msgid "channels/clan"
+msgstr "Клан"
+
+msgid "channels/common"
+msgstr "Агульны"
+
+msgid "channels/epic_training"
+msgstr "Супольныя вучэнні — Лінія фронту"
+
+msgid "channels/nubs"
+msgstr "Навабранцы"
+
+msgid "channels/prebattle"
+msgstr "Перадбаявы"
+
+msgid "channels/special_battles"
+msgstr "Адмысловы бой"
+
+msgid "channels/squad"
+msgstr "Звяз"
+
+msgid "channels/squadNotReady/tooltip/body"
+msgstr "Звяз сфарміраваны, чакайце гатоўнасці гульцоў."
+
+msgid "channels/squadNotReady/tooltip/header"
+msgstr "Звяз"
+
+msgid "channels/squadReady/tooltip/body"
+msgstr "Звяз сфарміраваны, усе гатовы."
+
+msgid "channels/squadReady/tooltip/header"
+msgstr "Звяз"
+
+msgid "channels/system"
+msgstr "Сістэмны"
+
+msgid "channels/tournament"
+msgstr "Турнір"
+
+msgid "channels/trading"
+msgstr "Гандлёвы"
+
+msgid "channels/training"
+msgstr "Вучэбны"
+
+msgid "errors/addmoderatorchatadmin"
+msgstr "Адміністратар чата таксама ёсць мадэратарам канала."
+
+msgid "errors/addmoderatorowner"
+msgstr "Уладальнік канала таксама ёсць мадэратарам канала."
+
+msgid "errors/banchannelowner"
+msgstr "Нельга забаніць уладальніка канала."
+
+msgid "errors/banchatadmin"
+msgstr "Нельга забаніць адміністратара чата."
+
+msgid "errors/banned"
+msgstr ""
+"Вас забаніў гулец %(banOwnerNick)s да %(banEndTime)s. Прычына: %(banReason)s"
+
+msgid "errors/bannedpermanent"
+msgstr "Вас забаніў гулец %(banOwnerNick)s. Прычына: %(banReason)s"
+
+msgid "errors/chatbanned"
+msgstr "Вас забанілі да %(banEndTime)s. Прычына: %(banReason)s"
+
+msgid "errors/chatbannedpermanent"
+msgstr "Вас забанілі. Прычына: %(banReason)s"
+
+msgid "errors/commandInCooldown"
+msgstr "Каманда %(command)s часова прыпынена на %(cooldownPeriod)s с."
+
+msgid "errors/delmoderatorchatadmin"
+msgstr "Нельга скасаваць мадэратарскія правы адміністратару канала."
+
+msgid "errors/delmoderatorowner"
+msgstr "Нельга скасаваць мадэратарскія правы ўладальніку канала."
+
+msgid "errors/timeincorrect"
+msgstr ""
+"Параметр «time» павінен быць дадатным значэннем хвілін [1-1440] або "
+"«permanent»"
+
+msgid "errors/toomanyargs"
+msgstr "Зашмат параметраў."
+
+msgid "errors/toosmallargs"
+msgstr "Замала параметраў."
+
+msgid "errors/userbanhimself"
+msgstr "Нельга забаніць самога сябе."
+
+msgid "messages/userbanned"
+msgstr ""
+"Гулец %(banedUser)s забанены карыстальнікам %(banOwnerNick)s да "
+"%(banEndTime)s. Прычына: %(banReason)s"
+
+msgid "messages/userbannedpermanent"
+msgstr ""
+"Гулец %(banedUser)s забанены карыстальнікам %(banOwnerNick)s. Прычына: "
+"%(banReason)s"

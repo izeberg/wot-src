@@ -1,0 +1,512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "addVehPopover/btnAdd"
+msgstr "Дадаць (%(count)d)"
+
+msgid "addVehPopover/btnCancel"
+msgstr "Скасаваць"
+
+msgid "addVehPopover/header"
+msgstr "Выбар тэхнікі для параўнання"
+
+msgid "addVehPopover/showOnlyMyVahicles"
+msgstr "Паказваць толькі тэхніку з Гаража"
+
+msgid "addVehPopover/tooltips/addToCompare/body"
+msgstr "Дадаць выбраную тэхніку да параўнання."
+
+msgid "addVehPopover/tooltips/addToCompare/header"
+msgstr "Дадаць"
+
+msgid "addVehPopover/tooltips/addToCompareDisabled/body"
+msgstr ""
+"Каб дадаць машыну да параўнання, выдаліце са спіса параўнання непатрэбную "
+"тэхніку."
+
+msgid "addVehPopover/tooltips/addToCompareDisabled/header"
+msgstr "Дадаць немагчыма"
+
+msgid "addVehPopover/tooltips/inHangar/body"
+msgstr "Упарадкаваць паводле наяўнасці ў Гаражы."
+
+msgid "addVehPopover/tooltips/inHangar/header"
+msgstr "Наяўнасць тэхнікі ў Гаражы"
+
+msgid "addVehPopover/tooltips/level/body"
+msgstr "Сартаваць паводле ўзроўню тэхнікі."
+
+msgid "addVehPopover/tooltips/level/header"
+msgstr "Тэхніка"
+
+msgid "addVehPopover/tooltips/nation/body"
+msgstr "Упарадкаваць паводле дзяржавы."
+
+msgid "addVehPopover/tooltips/nation/header"
+msgstr "Дзяржава"
+
+msgid "addVehPopover/tooltips/selectVehicle/body"
+msgstr "Упарадкаваць паводле выбранай тэхнікі."
+
+msgid "addVehPopover/tooltips/selectVehicle/header"
+msgstr "Выбраная тэхніка"
+
+msgid "addVehPopover/tooltips/title/body"
+msgstr "Упарадкаваць паводле назваў машын."
+
+msgid "addVehPopover/tooltips/title/header"
+msgstr "Назва"
+
+msgid "addVehPopover/tooltips/type/body"
+msgstr "Сартаваць паводле тыпу тэхнікі."
+
+msgid "addVehPopover/tooltips/type/header"
+msgstr "Тып"
+
+msgid "addVehPopover/vehicleName"
+msgstr "Назва"
+
+msgid "cartPopover/configurationType/basic"
+msgstr "Базавая"
+
+msgid "cartPopover/configurationType/current"
+msgstr "Як у Гаражы"
+
+msgid "cartPopover/configurationType/custom"
+msgstr "Наладжаная"
+
+msgid "cartPopover/configurationType/premium"
+msgstr "Прэміум"
+
+msgid "cartPopover/fullBasketCmpBtn/tooltip/attention"
+msgstr ""
+"Каб дадаць машыну да параўнання, выдаліце са спіса параўнання непатрэбную "
+"тэхніку."
+
+msgid "cartPopover/fullBasketCmpBtn/tooltip/header"
+msgstr "Дадаць немагчыма"
+
+msgid "cartPopover/gotoCompareBtn/label"
+msgstr "Да параўнання (%(value)s)"
+
+msgid "cartPopover/openCmpBtn/tooltip/body"
+msgstr "Перайсці да параўнання выбранай тэхнікі."
+
+msgid "cartPopover/openCmpBtn/tooltip/header"
+msgstr "?empty?"
+
+msgid "cartPopover/removeAllBtn/label"
+msgstr "Ачысціць спіс"
+
+msgid "cartPopover/removeAllBtn/tooltip/body"
+msgstr "Выдаліць усю тэхніку са спіса параўнання."
+
+msgid "cartPopover/removeAllBtn/tooltip/header"
+msgstr "?empty?"
+
+msgid "cartPopover/removeBtn/tooltip/body"
+msgstr "Націсніце, каб выдаліць машыну са спіса параўнання."
+
+msgid "cartPopover/removeBtn/tooltip/header"
+msgstr "?empty?"
+
+msgid "cartPopover/removeBtnLocked/tooltip/body"
+msgstr ""
+"Немагчыма выдаліць тэхніку са спіса параўнання, калі акно канфігуравання "
+"адкрыта."
+
+msgid "cartPopover/removeBtnLocked/tooltip/header"
+msgstr "?empty?"
+
+msgid "cartPopover/removeLockedBtn/tooltip/body"
+msgstr ""
+"Немагчыма выдаліць машыну са спіса параўнання, калі акно канфігуравання "
+"адкрыта."
+
+msgid "cartPopover/removeLockedBtn/tooltip/header"
+msgstr "?empty?"
+
+msgid "cartPopover/sorting/nation/body"
+msgstr "Паказвае дзяржавы выбраных машын."
+
+msgid "cartPopover/sorting/nation/header"
+msgstr "Дзяржава"
+
+msgid "cartPopover/sorting/vehLvl/body"
+msgstr "Паказвае ўзроўні выбраных машын."
+
+msgid "cartPopover/sorting/vehLvl/header"
+msgstr "Узровень"
+
+msgid "cartPopover/sorting/vehName"
+msgstr "Назва"
+
+msgid "cartPopover/sorting/vehName/tooltip/body"
+msgstr "Паказвае назвы выбраных машын."
+
+msgid "cartPopover/sorting/vehName/tooltip/header"
+msgstr "Назва"
+
+msgid "cartPopover/sorting/vehType/body"
+msgstr "Паказвае тыпы выбраных машын."
+
+msgid "cartPopover/sorting/vehType/header"
+msgstr "Тып"
+
+msgid "cartPopover/title"
+msgstr "Спіс параўнання"
+
+msgid "compareVehicleBtn/tooltips/miniclient/attention"
+msgstr ""
+"Параўнанне тэхнікі будзе даступнае пасля завяршэння спампавання. Завяршыце "
+"спампаванне."
+
+msgid "header/backBtn/descrLabel/hangar"
+msgstr "У ГАРАЖ"
+
+msgid "header/backBtn/descrLabel/personalAwards"
+msgstr "ДА ЎЗНАГАРОД"
+
+msgid "header/backBtn/descrLabel/researchTree"
+msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"
+
+msgid "header/backBtn/descrLabel/shop"
+msgstr "У КРАМУ"
+
+msgid "header/backBtn/label"
+msgstr "НАЗАД"
+
+msgid "header/closeBtn/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "menu/cloneForCompare"
+msgstr "Капіраваць для параўнання"
+
+msgid "modulesView/closeBtnLabel"
+msgstr "Скасаваць"
+
+msgid "modulesView/closeBtnLabel/tooltip/body"
+msgstr ""
+"Націсніце, каб скасаваць выбар модуляў і вярнуцца да наладжвання тэхнікі."
+
+msgid "modulesView/closeBtnLabel/tooltip/header"
+msgstr "?empty?"
+
+msgid "modulesView/compareBtnLabel"
+msgstr "Прыняць"
+
+msgid "modulesView/compareBtnLabel/tooltip/body"
+msgstr ""
+"Націсніце, каб захаваць выбраныя модулі і вярнуцца да наладжвання тэхнікі."
+
+msgid "modulesView/compareBtnLabel/tooltip/header"
+msgstr "?empty?"
+
+msgid "modulesView/resetBtnLabel"
+msgstr "Скінуць"
+
+msgid "modulesView/resetBtnLabel/tooltip/body"
+msgstr "Націсніце, каб вярнуць базавую камплектацыю машыны."
+
+msgid "modulesView/resetBtnLabel/tooltip/header"
+msgstr "?empty?"
+
+msgid "modulesView/title"
+msgstr "Наладжванне модуляў %(vehName)s"
+
+msgid "modulesView/vehicleStatus/inHangar"
+msgstr "Ёсць у Гаражы"
+
+msgid "modulesView/vehicleStatus/readyToBuy"
+msgstr "Не куплены"
+
+msgid "modulesView/vehicleStatus/readyToResearch"
+msgstr "Не даследаваны"
+
+msgid "store/compareVehicleBtn/tooltips/addToCompare/body"
+msgstr "Дадаць да параўнання"
+
+msgid "store/compareVehicleBtn/tooltips/addToCompare/header"
+msgstr "?empty?"
+
+msgid "store/compareVehicleBtn/tooltips/canNotAddToCompare/body"
+msgstr "Гэту машыну нельга дадаць да параўнання."
+
+msgid "store/compareVehicleBtn/tooltips/canNotAddToCompare/header"
+msgstr "?empty?"
+
+msgid "store/compareVehicleBtn/tooltips/disabled/body"
+msgstr ""
+"Каб дадаць машыну да параўнання, выдаліце са спіса параўнання непатрэбную "
+"тэхніку."
+
+msgid "store/compareVehicleBtn/tooltips/disabled/header"
+msgstr "Дадаць немагчыма"
+
+msgid "techTree/tooltips/addToCompare/body"
+msgstr "Дадаць да параўнання"
+
+msgid "techTree/tooltips/addToCompare/header"
+msgstr "?empty?"
+
+msgid "vehConf/applyBtnLabel"
+msgstr "Прымяніць"
+
+msgid "vehConf/btnCleanUp"
+msgstr "Ачысціць"
+
+msgid "vehConf/cancelBtnLabel"
+msgstr "Скасаваць"
+
+msgid "vehConf/cancelBtnLabel/tooltip/body"
+msgstr ""
+"Націсніце, каб скасаваць выбраныя налады і вярнуцца да параўнання тэхнікі."
+
+msgid "vehConf/cancelBtnLabel/tooltip/header"
+msgstr "Скасаваць"
+
+msgid "vehConf/compareBtnLabel/tooltip/body"
+msgstr ""
+"Націсніце, каб захаваць выбраныя налады і вярнуцца да параўнання тэхнікі."
+
+msgid "vehConf/compareBtnLabel/tooltip/header"
+msgstr "Прымяніць"
+
+msgid "vehConf/confAvailable"
+msgstr ""
+"МОЖНА\n"
+"НАЛАДЗІЦЬ"
+
+msgid "vehConf/crewTitle"
+msgstr "Уплыў навыкаў на ТТХ"
+
+msgid "vehConf/doesntAffect"
+msgstr "Не ўплывае на спрошчаныя ТТХ"
+
+msgid "vehConf/equipment"
+msgstr "Аснашчэнне"
+
+msgid "vehConf/header"
+msgstr "Канфігурацыя для %(vehName)s"
+
+msgid "vehConf/modifications/choose"
+msgstr "Выбраць мадыфікацыі"
+
+msgid "vehConf/modifications/title"
+msgstr "Мадыфікацыі"
+
+msgid "vehConf/modules"
+msgstr "Модулі"
+
+msgid "vehConf/resetBtnLabel"
+msgstr "Скінуць"
+
+msgid "vehConf/resetBtnLabel/tooltip/body"
+msgstr "Націсніце, каб вярнуць перадвызначаныя налады машыны."
+
+msgid "vehConf/resetBtnLabel/tooltip/header"
+msgstr "Скінуць"
+
+msgid "vehConf/skills/fadeText"
+msgstr "Прызначаць навыкі можна пры выбары 100%-га экіпажа."
+
+msgid "vehConf/tooltips/attentionIconCrew/body"
+msgstr "Некаторыя навыкі экіпажа былі дададзены да параўнання."
+
+msgid "vehConf/tooltips/attentionIconCrew/header"
+msgstr "?empty?"
+
+msgid "vehConf/tooltips/btnCleanUp/body"
+msgstr "Націсніце, каб прыбраць выбранае абсталяванне з канфігурацыі."
+
+msgid "vehConf/tooltips/btnCleanUp/header"
+msgstr "Ачысціць"
+
+msgid "vehConf/tooltips/camoInfo"
+msgstr ""
+"Выкарыстоўвайце летні, зімовы і пустынны камуфляж, каб павялічыць скрытасць "
+"машыны на мапе адпаведнага тыпу."
+
+msgid "vehConf/tooltips/camoInfoDisabled/body"
+msgstr ""
+"Гэты ўсесезонны камуфляж — неад'емная частка машыны. Яго немагчыма сцерці "
+"або накласці зверху новы."
+
+msgid "vehConf/tooltips/camoInfoDisabled/header"
+msgstr "Усесезонны камуфляж"
+
+msgid "vehConf/tooltips/camoTitle"
+msgstr "Камуфляж"
+
+msgid "vehConf/tooltips/defCamoInfo"
+msgstr ""
+"Тры тыпы камуфляжу накладзены \n"
+"без магчымасці сцірання: зімовы, летні, пустынны."
+
+msgid "vehConf/tooltips/deviceNotAffectedTTC"
+msgstr "Не ўплывае на разлік ТТХ машыны"
+
+msgid "vehConf/tooltips/modifications/description"
+msgstr ""
+"Выберыце мадыфікацыі, якія дазваляюць выканаць больш тонкую ролевую наладку "
+"машыны і змяніць яе ТТХ."
+
+msgid "vehConf/tooltips/modifications/remove"
+msgstr "Скасаваць усе мадыфікацыі"
+
+msgid "vehConf/tooltips/modifications/title"
+msgstr "Панэль мадыфікацый"
+
+msgid "vehConf/tooltips/revertBtn/body"
+msgstr "Націсніце, каб вярнуць перадвызначаныя налады машыны."
+
+msgid "vehConf/tooltips/revertBtn/header"
+msgstr "?empty?"
+
+msgid "vehConf/tooltips/topModulesLabel/body"
+msgstr ""
+"У гэтай машыны няма модуляў, якія можна даследаваць: яна пастаўляецца адразу"
+" з нязменным наборам модуляў."
+
+msgid "vehConf/tooltips/topModulesLabel/header"
+msgstr "Найлепшая камплектацыя"
+
+msgid "vehConf/tooltips/topModulesOff/body"
+msgstr "Націсніце, каб выбраць найлепшыя модулі для гэтай машыны."
+
+msgid "vehConf/tooltips/topModulesOff/header"
+msgstr "Найлепшая камплектацыя"
+
+msgid "vehConf/tooltips/topModulesOn/body"
+msgstr "Націсніце, каб скасаваць выбар найлепшых модуляў для гэтай машыны."
+
+msgid "vehConf/tooltips/topModulesOn/header"
+msgstr "Найлепшая камплектацыя"
+
+msgid "vehConf/topModulesBtnLabel"
+msgstr "Выбраць найлепшую камплектацыю"
+
+msgid "vehConf/topModulesLabel"
+msgstr "Найлепшая камплектацыя"
+
+msgid "vehPreview/compareInfo/addToCompare"
+msgstr "Дадаць да параўнання — "
+
+msgid "vehPreview/compareVehicleBtn/tooltips/addToCompare/body"
+msgstr "Дадаць да параўнання"
+
+msgid "vehPreview/compareVehicleBtn/tooltips/addToCompare/header"
+msgstr "?empty?"
+
+msgid "vehPreview/compareVehicleBtn/tooltips/canNotAddToCompare/body"
+msgstr "Гэту машыну нельга дадаць да параўнання."
+
+msgid "vehPreview/compareVehicleBtn/tooltips/canNotAddToCompare/header"
+msgstr "?empty?"
+
+msgid "vehPreview/compareVehicleBtn/tooltips/disabled/body"
+msgstr ""
+"Каб дадаць машыну да параўнання, выдаліце са спіса параўнання непатрэбную "
+"тэхніку."
+
+msgid "vehPreview/compareVehicleBtn/tooltips/disabled/header"
+msgstr "Дадаць немагчыма"
+
+msgid "vehicleCompareView/btnAddVehicles"
+msgstr "Дадаць да параўнання"
+
+msgid "vehicleCompareView/configurationType/basic"
+msgstr "Базавая"
+
+msgid "vehicleCompareView/configurationType/current"
+msgstr "Як у Гаражы"
+
+msgid "vehicleCompareView/configurationType/custom"
+msgstr "Наладжаная"
+
+msgid "vehicleCompareView/configure"
+msgstr "Наладзіць"
+
+msgid "vehicleCompareView/crew/current"
+msgstr "Цяперашні экіпаж"
+
+msgid "vehicleCompareView/crew/skill100"
+msgstr "Экіпаж 100%"
+
+msgid "vehicleCompareView/crew/skill50"
+msgstr "Экіпаж 50%"
+
+msgid "vehicleCompareView/crew/skill75"
+msgstr "Экіпаж 75%"
+
+msgid "vehicleCompareView/header"
+msgstr "Параўнанне тэхнікі"
+
+msgid "vehicleCompareView/toHangar"
+msgstr "Паказаць у Гаражы"
+
+msgid "vehicleCompareView/toPreview"
+msgstr "Перадпрагляд"
+
+msgid "vehicleCompareView/tooltips/addVehicles/body"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/addVehicles/header"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/attentionEquipment/header"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/configure/body"
+msgstr ""
+"Націсніце, каб перайсці на экран наладжвання параметраў, якія ўплываюць на "
+"тэхнічныя характарыстыкі машыны."
+
+msgid "vehicleCompareView/tooltips/configure/header"
+msgstr "Наладзіць параметры"
+
+msgid "vehicleCompareView/tooltips/crewDropDown/body"
+msgstr "Выбраць узровень экіпажу."
+
+msgid "vehicleCompareView/tooltips/crewDropDown/header"
+msgstr "Экіпаж"
+
+msgid "vehicleCompareView/tooltips/removeAllVehicles/body"
+msgstr "Націсніце, каб выдаліць усю тэхніку з параўнання."
+
+msgid "vehicleCompareView/tooltips/removeAllVehicles/header"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/removeFromCompare/body"
+msgstr "Выдаліць з параўнання"
+
+msgid "vehicleCompareView/tooltips/removeFromCompare/header"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/toHangar/body"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/toHangar/header"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/toPreview/body"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/tooltips/toPreview/header"
+msgstr "?empty?"
+
+msgid "vehicleCompareView/topPanel/noVehicle"
+msgstr "Тэхніка не выбрана"
+
+msgid "vehicleCompareView/topPanel/premium"
+msgstr "Прэміум"
+
+msgid "vehicleCompareView/topPanel/vehiclesCount"
+msgstr "Машын для параўнання: %(count)s"

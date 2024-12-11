@@ -261,18 +261,6 @@ class _VehicleQuestion(Question):
         return []
 
 
-class _BigPictureQuestion(Question):
-    __slots__ = ()
-
-    def getQuestionType(self):
-        return QuestionType.BIG_PICTURE
-
-    def convertAnswers(self, answers, optionId):
-        if answers:
-            return first(answers, {}).get('choices', [])
-        return []
-
-
 class _ImageQuestion(Question):
     __slots__ = ()
 
@@ -392,8 +380,7 @@ _SUPPORTED_QUESTION_TYPES = {QuestionType.IMAGE.value: _ImageQuestion,
    QuestionType.INTERACTIVE_MAP.value: _InteractiveMapQuestion, 
    QuestionType.TEXT.value: _TextQuestion, 
    QuestionType.MULTIPLE_CHOICE.value: _MulptipleChoiceQuestion, 
-   QuestionType.ALTERNATIVE.value: AlternativeQuestion, 
-   QuestionType.BIG_PICTURE.value: _BigPictureQuestion}
+   QuestionType.ALTERNATIVE.value: AlternativeQuestion}
 
 def getQuestionClass(questionType):
     return _SUPPORTED_QUESTION_TYPES.get(questionType)

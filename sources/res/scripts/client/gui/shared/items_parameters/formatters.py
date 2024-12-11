@@ -357,6 +357,17 @@ def shotDispersionAnglePreprocessor(values, states):
     return (values, _SLASH, states)
 
 
+def chassisRepairTimePreprocessor(values, states):
+    if states is not None:
+        _, chassisRepairTimeDiff = states[0]
+        if chassisRepairTimeDiff == 0 and len(states) == 2:
+            states = [
+             (
+              PARAM_STATE.NOT_APPLICABLE, chassisRepairTimeDiff)] + [states[1]]
+    return (
+     values, _SLASH, states)
+
+
 def _getRoundReload(value):
     return backport.getNiceNumberFormat(round(value, 1))
 

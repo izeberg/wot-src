@@ -409,7 +409,7 @@ class Shell(BasicItem):
                  'stun', 'effectsIndex', 'tags', 'secondaryAttackReason', 'useAltDamageRandomization',
                  'dynamicEffectsIndexes', 'hitDeviceChanceMultiplier', 'hitCrewChanceMultiplier',
                  'maxDistanceInsideVehicle', 'damagedDevicesLimit', 'engineFireFactor',
-                 'distanceDmg', 'skipSelfDamage')
+                 'distanceDmg')
 
     def __init__(self, typeID, componentID, componentName, compactDescr):
         super(Shell, self).__init__(typeID, componentID, componentName, compactDescr)
@@ -423,7 +423,6 @@ class Shell(BasicItem):
         self.type = None
         self.effectsIndex = component_constants.ZERO_INT
         self.dynamicEffectsIndexes = component_constants.EMPTY_TUPLE
-        self.skipSelfDamage = False
         self.isGold = False
         self.icon = None
         self.iconName = None

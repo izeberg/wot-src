@@ -160,7 +160,7 @@
 			</depth>
 			<expireByDamageReceived>false</expireByDamageReceived>
 			<healPerTick>
-				0.05
+				0.025
 				<!--BW_String-->
 			</healPerTick>
 			<healGroup>1</healGroup>
@@ -495,7 +495,7 @@
 				<influenceType>1</influenceType>
 				<hotParams>
 					<healPerTick>
-						0.035
+						0.0175
 						<!--BW_String-->
 					</healPerTick>
 					<healCrew>True</healCrew>

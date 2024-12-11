@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.615727 -0.022936 -2.121886</min>
+		<max>1.586694 3.530538 2.083045</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

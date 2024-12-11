@@ -2212,14 +2212,14 @@ class Comp7StatsBlock(_BattleStatsBlock, _Battle2StatsBlock, _MaxStatsBlock):
     def getAvgPoiCaptured(self):
         avgValue = self._getAvgValue(self.getBattlesCount, self.getPoiCaptured)
         if avgValue is not None:
-            return round(avgValue)
+            return avgValue
         else:
             return
 
     def getAvgRoleSkillUsed(self):
         avgValue = self._getAvgValue(self.getBattlesCount, self.getRoleSkillUsed)
         if avgValue is not None:
-            return round(avgValue)
+            return avgValue
         else:
             return
 

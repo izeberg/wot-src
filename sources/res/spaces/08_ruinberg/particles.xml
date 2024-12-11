@@ -21,6 +21,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_AM_015_AdvertisingPosters_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_EU_040_StreetLamp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_EU_426_VeneraStatue.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env029_Crypt_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env029_PolCross1.vfx</fn_effect_bin>
@@ -66,11 +67,14 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env_EU_037_TableCafe_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle006_WireBarricade1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle020_GerMotocycle_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_SU_003_He111_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_UNI_806_SdKfz251.vfx</fn_effect_bin>
@@ -144,6 +148,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_015_AdvertisingPosters_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_040_StreetLamp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_426_VeneraStatue.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env029_Crypt_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env029_PolCross1.eff</fn_effect_bin>
@@ -188,11 +193,14 @@
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_EU_037_TableCafe_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle006_WireBarricade1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_806_SdKfz251.eff</fn_effect_bin>
@@ -289,6 +297,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_AM_015_AdvertisingPosters_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_EU_040_StreetLamp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_EU_426_VeneraStatue.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env029_Crypt_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env029_PolCross1.vfx</fn_effect_bin>
@@ -334,11 +343,14 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env_EU_037_TableCafe_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle006_WireBarricade1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle020_GerMotocycle_ram.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_SU_003_He111_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_UNI_806_SdKfz251.vfx</fn_effect_bin>
@@ -412,6 +424,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_015_AdvertisingPosters_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_040_StreetLamp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_426_VeneraStatue.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env029_Crypt_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env029_PolCross1.eff</fn_effect_bin>
@@ -456,11 +469,14 @@
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_EU_037_TableCafe_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle006_WireBarricade1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle_ram.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_806_SdKfz251.eff</fn_effect_bin>

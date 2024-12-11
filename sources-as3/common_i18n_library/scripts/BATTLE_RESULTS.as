@@ -557,6 +557,8 @@ package
       
       public static const TEAM_STATS_LABELS_HEALED:String = "#battle_results:team/stats/labels_healed";
       
+      public static const TEAM_STATS_LABELS_HEALEDALLY:String = "#battle_results:team/stats/labels_healedAlly";
+      
       public static const TEAM_STATS_LABELS_CAPTUREDPOINTSOFINTEREST:String = "#battle_results:team/stats/labels_capturedPointsOfInterest";
       
       public static const TEAM_STATS_LABELS_ROLESKILLUSED:String = "#battle_results:team/stats/labels_roleSkillUsed";
@@ -628,6 +630,10 @@ package
       public static const DETAILS_CALCULATIONS_XPRECORD:String = "#battle_results:details/calculations/xpRecord";
       
       public static const DETAILS_CALCULATIONS_SQUADBONUS:String = "#battle_results:details/calculations/squadBonus";
+      
+      public static const DETAILS_CALCULATIONS_NEWYEAR:String = "#battle_results:details/calculations/newYear";
+      
+      public static const DETAILS_CALCULATIONS_VEHICLEBRANCH:String = "#battle_results:details/calculations/vehicleBranch";
       
       public static const DETAILS_CALCULATIONS_NOPENALTY:String = "#battle_results:details/calculations/noPenalty";
       

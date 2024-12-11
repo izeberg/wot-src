@@ -7,114 +7,6 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>gun</name>
-		<type>model</type>
-		<resource>particles/content_deferred/GFX_models/tank_customization/Pl26_Czolg_P_Wz_46_3dst_Verbesserter/Pl26_gun_marks.model</resource>
-		<castsShadow>false</castsShadow>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd0</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.219608 0.003922 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>0.500000</startTime>
-				<value>0.219608 0.003922 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 5.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>0.700000</startTime>
-				<value>0.219608 0.003922 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 5.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.000000</startTime>
-				<value>0.219608 0.003922 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd1</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.219608 0.003922 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>1.500000</startTime>
-				<value>0.219608 0.003922 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 5.000002</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>1.700000</startTime>
-				<value>0.219608 0.003922 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 4.999999</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.000000</startTime>
-				<value>0.219608 0.003922 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd2</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.219608 0.003922 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>2.500000</startTime>
-				<value>0.219608 0.003922 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 4.999999</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>2.700000</startTime>
-				<value>0.219608 0.003922 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 4.999999</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.000000</startTime>
-				<value>0.219608 0.003922 1.000000 1.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
-				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
 		<name>gun_lightning</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/tank_customization/Pl26_Czolg_P_Wz_46_3dst_Verbesserter/Pl26_gun_lightning.model</resource>
@@ -261,6 +153,159 @@
 				<inTangent>-89.998154</inTangent>
 				<outTangent>-89.998154</outTangent>
 				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/Pl26_Czolg_P_Wz_46_3dst_Verbesserter/Pl26_gun_mark.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 3.596436</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.219608 0.003922 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.219608 0.003922 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 4.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.219608 0.003922 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 4.999999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.219608 0.003922 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/Pl26_Czolg_P_Wz_46_3dst_Verbesserter/Pl26_gun_mark.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 3.994537</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.219608 0.003922 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.219608 0.003922 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.000002</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.219608 0.003922 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 5.000002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.219608 0.003922 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_03</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/Pl26_Czolg_P_Wz_46_3dst_Verbesserter/Pl26_gun_mark.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 4.396500</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.219608 0.003922 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.219608 0.003922 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.000005</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.219608 0.003922 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 5.000005</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.219608 0.003922 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>

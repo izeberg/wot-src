@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.248099 -0.326303 -1.417110</min>
+		<max>0.403563 0.426716 5.959471</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch61_DZT_159/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<nodelessVisual>vehicles/chinese/Ch61_DZT_159/crash/lod2/Gun_02</nodelessVisual>
+</root>

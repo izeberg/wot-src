@@ -63,8 +63,8 @@ VEHICLE_STATS_BLOCK_VO_META = base.PropertyMeta((
   'capturePointsVal', style.SlashedValuesBlock('capturePointsVal'), 'capturePoints'),
  (
   'mileage', style.MetersToKillometersItem('mileage'), 'mileage'),
- (
-  'healed', style.SlashedValuesBlock('healed'), 'healed'),
+ ('healed', 0, 'healed'),
+ ('healedAlly', 0, 'healedAlly'),
  ('capturedPointsOfInterest', 0, 'capturedPointsOfInterest'),
  ('roleSkillUsed', 0, 'roleSkillUsed')))
 VEHICLE_STATS_BLOCK_VO_META.bind(comp7.Comp7VehicleStatValuesBlock)

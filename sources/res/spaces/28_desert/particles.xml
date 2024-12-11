@@ -53,6 +53,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldAF_module_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_AS_005_WoodDryer_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env018_Trough.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env034_WattledBasket.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env202_ruscart.vfx</fn_effect_bin>
@@ -84,11 +85,15 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAS_012_RecycleBin4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envEU_009_TownEnv_flowerpot_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envSU_001_Thanger_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf013_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafAF_001_ClayFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafAF_001_ClayFence_07.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafAF_001_ClayFence_Corner_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env_AF_020_ClayStove_lifetime.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
@@ -130,8 +135,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAF_module_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_sand_floor_ee.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor_EE.eff</fn_effect_bin>
@@ -139,6 +144,7 @@
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AS_005_WoodDryer_end.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env018_Trough.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env034_WattledBasket.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env202_ruscart.eff</fn_effect_bin>
@@ -170,11 +176,15 @@
 		<fn_effect_bin>particles/Environment/objects/inf_envAS_012_RecycleBin4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envEU_009_TownEnv_flowerpot_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_001_Thanger_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf013_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAF_001_ClayFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAF_001_ClayFence_07.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAF_001_ClayFence_Corner_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_AF_020_ClayStove_lifetime.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
@@ -217,6 +227,7 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
@@ -305,6 +316,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/28_desert_sand_single_spot.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/28_desert_shimmer_distant.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_AS_005_WoodDryer_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env018_Trough.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env034_WattledBasket.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env202_ruscart.vfx</fn_effect_bin>
@@ -336,11 +348,15 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAS_012_RecycleBin4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envEU_009_TownEnv_flowerpot_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envSU_001_Thanger_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf013_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafAF_001_ClayFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafAF_001_ClayFence_07.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafAF_001_ClayFence_Corner_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env_AF_020_ClayStove_lifetime.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
@@ -382,8 +398,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAF_module_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_sand_floor_ee.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor_EE.eff</fn_effect_bin>
@@ -391,6 +407,7 @@
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AS_005_WoodDryer_end.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env018_Trough.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env034_WattledBasket.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env202_ruscart.eff</fn_effect_bin>
@@ -422,11 +439,15 @@
 		<fn_effect_bin>particles/Environment/objects/inf_envAS_012_RecycleBin4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envEU_009_TownEnv_flowerpot_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_001_Thanger_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf013_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAF_001_ClayFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAF_001_ClayFence_07.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAF_001_ClayFence_Corner_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_AF_020_ClayStove_lifetime.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
@@ -469,6 +490,7 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>

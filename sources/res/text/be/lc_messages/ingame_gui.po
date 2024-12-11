@@ -1,0 +1,3212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "aim/zoom"
+msgstr "×%(zoom)d"
+
+msgid "attackReason/artilleryProtection"
+msgstr "Артабстрэл"
+
+msgid "attackReason/artillery_sector"
+msgstr "Артабстрэл"
+
+msgid "attackReason/bombers"
+msgstr "Авіяўдар"
+
+msgid "battleCommunication/hint/description"
+msgstr ", каб адзначыць пазіцыю або паставіць маркер"
+
+msgid "battleCommunication/hint/press"
+msgstr "Націсніце"
+
+msgid "battleEndWarning/comp7_1/text"
+msgstr "Абараняйце абедзве базы! Да канца бою:"
+
+msgid "battleEndWarning/comp7_2/text"
+msgstr "Захапіце базу праціўніка! Да канца бою:"
+
+msgid "battleEndWarning/text"
+msgstr "Да канца бою:"
+
+msgid "battleMessenger/toxic/blackList/ADD_IN_BLACKLIST/body"
+msgstr ""
+"Тэкставыя і галасавыя паведамленні ад гэтага гульца будуць схаваны да канца "
+"бягучага бою."
+
+msgid "battleMessenger/toxic/blackList/ADD_IN_BLACKLIST/header"
+msgstr "Заблакіраваць паведамленні гэтага гульца"
+
+msgid "battleMessenger/toxic/blackList/CANT_ADD_IN_BLACKLIST/body"
+msgstr "Паведамленні гульца з чорнага спіса заблакіраваны."
+
+msgid "battleMessenger/toxic/blackList/CANT_ADD_IN_BLACKLIST/header"
+msgstr "Дзеянне недаступнае"
+
+msgid "battleMessenger/toxic/blackList/REMOVE_FROM_BLACKLIST/body"
+msgstr ""
+"Тэкставыя і галасавыя паведамленні ад гэтага гульца\n"
+"зноў стануць даступнымі."
+
+msgid "battleMessenger/toxic/blackList/REMOVE_FROM_BLACKLIST/header"
+msgstr "Разблакіраваць паведамленні гэтага гульца"
+
+msgid "battleProgress/hint/description"
+msgstr ", каб пабачыць асабістыя баявыя задачы"
+
+msgid "battleProgress/hint/noBindingKey"
+msgstr "Ключавыя клавішы не прызначаны"
+
+msgid "battleProgress/hint/press"
+msgstr "Націсніце"
+
+msgid "battle_notifier/lose"
+msgstr "Паражэнне!"
+
+msgid "battle_notifier/tie"
+msgstr "Нічыя!"
+
+msgid "battle_notifier/win"
+msgstr "Перамога!"
+
+msgid "burnout/hint/engineDamageWarning"
+msgstr "НЕБЯСПЕКА ПАЛОМКІ"
+
+msgid "burnout/hint/engineDamaged"
+msgstr "ПАЛОМКА РУХАВІКА"
+
+msgid "camera/hint/press"
+msgstr "Выкарыстоўвайце кола мышы"
+
+msgid "camera/hint/wheeled"
+msgstr "для змянення вугла нахілу і вышыні камеры"
+
+msgid "chat_example/affirmative"
+msgstr "Так!"
+
+msgid "chat_example/attack_enemy"
+msgstr "Падтрымайце агнём па <Имя противника>!"
+
+msgid "chat_example/attack_enemy_with_SPG"
+msgstr "Атакую <Имя противника>!"
+
+msgid "chat_example/attention_to_base_atk"
+msgstr "Захапіце базу!"
+
+msgid "chat_example/attention_to_base_def"
+msgstr "Бараніце базу!"
+
+msgid "chat_example/attention_to_cell"
+msgstr "Увага на <Квадрат на міні-карце>!"
+
+msgid "chat_example/attention_to_position"
+msgstr "Увага на пазіцыю!"
+
+msgid "chat_example/global_msg/atk/focus_hq"
+msgstr "Знішчыце цэлі"
+
+msgid "chat_example/global_msg/atk/save_tanks"
+msgstr "Беражыце тэхніку!"
+
+msgid "chat_example/global_msg/atk/time"
+msgstr "Захапіце зону"
+
+msgid "chat_example/global_msg/def/focus_hq"
+msgstr "Бараніце цэлі"
+
+msgid "chat_example/global_msg/def/save_tanks"
+msgstr "Беражыце тэхніку!"
+
+msgid "chat_example/global_msg/def/time"
+msgstr "Бараніце зоны"
+
+msgid "chat_example/global_msg/lane/center"
+msgstr "У зону патрабуецца падмацаванне"
+
+msgid "chat_example/global_msg/lane/east"
+msgstr "У зону патрабуецца падмацаванне"
+
+msgid "chat_example/global_msg/lane/west"
+msgstr "У зону патрабуецца падмацаванне"
+
+msgid "chat_example/going_there"
+msgstr "Скіроўваюся сюды!"
+
+msgid "chat_example/help_me"
+msgstr "Патрэбна дапамога!"
+
+msgid "chat_example/help_me_ex"
+msgstr "<Імя хаўрусніка>, памажы!"
+
+msgid "chat_example/negative"
+msgstr "Не!"
+
+msgid "chat_example/positive"
+msgstr "Так!"
+
+msgid "chat_example/reloading_cassette"
+msgstr ""
+"Буду гатовы да стрэлу праз: <Час перанабівання> с, снарадаў у магазіне: "
+"<Колькасць снарадаў> шт."
+
+msgid "chat_example/reloading_gun"
+msgstr "Перанабіваю яшчэ <Час перанабівання> c!"
+
+msgid "chat_example/reloading_ready"
+msgstr "Гатовы да стрэлу!"
+
+msgid "chat_example/reloading_ready_cassette"
+msgstr "Гатовы да стрэлу! Снарадаў у магазіне: <Колькасць снарадаў> шт."
+
+msgid "chat_example/reloading_unavailable"
+msgstr "Боезапас пусты."
+
+msgid "chat_example/spg_aim_area"
+msgstr "Наводжу на <Квадрат на міні-карце>!"
+
+msgid "chat_example/supporting_ally"
+msgstr "<Имя союзника>, я дапамагу табе!"
+
+msgid "chat_example/thanks"
+msgstr "<Имя союзника>, дзякуй!"
+
+msgid "chat_example/turn_back"
+msgstr "<Імя хаўрусніка>, назад!"
+
+msgid "chat_shortcuts/affirmative"
+msgstr "Так!"
+
+msgid "chat_shortcuts/attack_enemy"
+msgstr "Падтрымайце агнём па %(target)s"
+
+msgid "chat_shortcuts/attack_enemy_with_SPG"
+msgstr "Гатовы да стрэлу! Атакую %(target)s!"
+
+msgid "chat_shortcuts/attack_enemy_with_SPG_empty"
+msgstr "Боезапас пусты! Запытваю агонь па %(target)s!"
+
+msgid "chat_shortcuts/attack_enemy_with_SPG_reloading"
+msgstr "Атакую %(target)s! Перанабіваю яшчэ %(reloadTime)d с!"
+
+msgid "chat_shortcuts/attacking_base"
+msgstr "Я буду захопліваць базу!"
+
+msgid "chat_shortcuts/attacking_base_numbered"
+msgstr "Я захопліваю базу %(strArg1)s!"
+
+msgid "chat_shortcuts/attacking_enemy"
+msgstr "Атакую %(target)s!"
+
+msgid "chat_shortcuts/attention_to_base_atk"
+msgstr "Захапіце базу!"
+
+msgid "chat_shortcuts/attention_to_base_atk_numbered"
+msgstr "Захапіце базу %(strArg1)s!"
+
+msgid "chat_shortcuts/attention_to_base_def"
+msgstr "Бараніце базу!"
+
+msgid "chat_shortcuts/attention_to_base_def_numbered"
+msgstr "Бараніце базу %(strArg1)s!"
+
+msgid "chat_shortcuts/attention_to_cell"
+msgstr "Увага на %(cellName)s!"
+
+msgid "chat_shortcuts/attention_to_objective_atk"
+msgstr "Знішчыце цэль %(int32Arg1)s"
+
+msgid "chat_shortcuts/attention_to_objective_atk_autocommit"
+msgstr "Я атакую цэль %(int32Arg1)s!"
+
+msgid "chat_shortcuts/attention_to_objective_def"
+msgstr "Бараніце цэль %(int32Arg1)s!"
+
+msgid "chat_shortcuts/attention_to_objective_def_autocommit"
+msgstr "Я абараняю цэль %(int32Arg1)s!"
+
+msgid "chat_shortcuts/attention_to_position"
+msgstr "Увага на пазіцыю!"
+
+msgid "chat_shortcuts/attention_to_position_gridInfo"
+msgstr "Увага на %(gridId)s"
+
+msgid "chat_shortcuts/defending_base"
+msgstr "Я буду бараніць базу!"
+
+msgid "chat_shortcuts/defending_base_numbered"
+msgstr "Я абараняю базу %(strArg1)s!"
+
+msgid "chat_shortcuts/global_msg/atk/focus_hq"
+msgstr "Знішчайце цэлі!"
+
+msgid "chat_shortcuts/global_msg/atk/save_tanks"
+msgstr "Беражыце тэхніку — часу багата!"
+
+msgid "chat_shortcuts/global_msg/atk/time"
+msgstr "Усе сілы на захоп — часу мала!"
+
+msgid "chat_shortcuts/global_msg/def/focus_hq"
+msgstr "Бараніце цэлі!"
+
+msgid "chat_shortcuts/global_msg/def/save_tanks"
+msgstr "Беражыце тэхніку — нам трэба стрымаць націск!"
+
+msgid "chat_shortcuts/global_msg/def/time"
+msgstr "Бараніцеся як моцы стае — засталося нядоўга!"
+
+msgid "chat_shortcuts/global_msg/lane/center"
+msgstr "Зона %(strArg1)s патрабуе падмацавання!"
+
+msgid "chat_shortcuts/global_msg/lane/east"
+msgstr "Зона %(strArg1)s патрабуе падмацавання!"
+
+msgid "chat_shortcuts/global_msg/lane/west"
+msgstr "Зона %(strArg1)s патрабуе падмацавання!"
+
+msgid "chat_shortcuts/going_there"
+msgstr "Рухаюся на пазіцыю!"
+
+msgid "chat_shortcuts/going_there_gridInfo"
+msgstr "Рухаюся ў %(gridId)s"
+
+msgid "chat_shortcuts/help_me"
+msgstr "Патрэбна дапамога!"
+
+msgid "chat_shortcuts/help_me_ex"
+msgstr "%(target)s, памажы!"
+
+msgid "chat_shortcuts/negative"
+msgstr "Не!"
+
+msgid "chat_shortcuts/positive"
+msgstr "%(target)s, так!"
+
+msgid "chat_shortcuts/reloading_cassette"
+msgstr ""
+"Да стрэлу гатовы праз: %(floatArg1)d с, снарадаў у магазіне: %(int32Arg1)s "
+"шт."
+
+msgid "chat_shortcuts/reloading_gun"
+msgstr "Перанабіваю яшчэ %(floatArg1)d c!"
+
+msgid "chat_shortcuts/reloading_ready"
+msgstr "Гатовы да стрэлу!"
+
+msgid "chat_shortcuts/reloading_ready_cassette"
+msgstr "Да стрэлу гатовы! Снарадаў у магазіне: %(int32Arg1)s шт."
+
+msgid "chat_shortcuts/reloading_unavailable"
+msgstr "Боезапас пусты."
+
+msgid "chat_shortcuts/spg_aim_area"
+msgstr "Наводжу на пазіцыю. Да стрэлу гатовы!"
+
+msgid "chat_shortcuts/spg_aim_area_empty_gridInfo"
+msgstr "Назіраю %(gridId)s! Боезапас пусты!"
+
+msgid "chat_shortcuts/spg_aim_area_gridInfo"
+msgstr "Наводжу на %(gridId)s. Гатовы да стрэлу!"
+
+msgid "chat_shortcuts/spg_aim_area_reloading"
+msgstr "Наводжу на пазіцыю. Перанабіваю яшчэ %(reloadTime)d с!"
+
+msgid "chat_shortcuts/spg_aim_area_reloading_gridInfo"
+msgstr "Наводжу на %(gridId)s. Перанабіваю яшчэ %(reloadTime)d с!"
+
+msgid "chat_shortcuts/supporting_ally"
+msgstr "%(target)s, я дапамагу табе!"
+
+msgid "chat_shortcuts/thanks"
+msgstr "%(target)s, дзякуй!"
+
+msgid "chat_shortcuts/turn_back"
+msgstr "%(target)s, назад!"
+
+msgid "colorSettingsTipPanel/btnLabel"
+msgstr "Перайсці да налад"
+
+msgid "commanderCam/hint/description"
+msgstr "Круціце колца мышы на сябе, каб уключыць тактычны агляд"
+
+msgid "consumables_panel/equipment/activeSeconds"
+msgstr "Час працы: %(activeSeconds)s с."
+
+msgid "consumables_panel/equipment/cooldownSeconds"
+msgstr "Час перазарадкі: %(cooldownSeconds)s с"
+
+msgid "consumables_panel/equipment/tooltip/empty"
+msgstr "Слот пад рыштунак"
+
+msgid "countRibbons/multiSeparator"
+msgstr "×%(multiplier)d"
+
+msgid "cruise_ctrl/speedMetric"
+msgstr "км/гадз"
+
+msgid "damageIndicator/friendlyFire/noDamageLabel"
+msgstr "- -"
+
+msgid "damageIndicator/multiplier"
+msgstr "×%(multiplier)s"
+
+msgid "damageLog/multiplier"
+msgstr "×%(multiplier)s"
+
+msgid "damageLog/shellType/ARMOR_PIERCING"
+msgstr "ББ"
+
+msgid "damageLog/shellType/ARMOR_PIERCING_CR"
+msgstr "БП"
+
+msgid "damageLog/shellType/ARMOR_PIERCING_FSDS"
+msgstr "БАПС"
+
+msgid "damageLog/shellType/ARMOR_PIERCING_HE"
+msgstr "АФ"
+
+msgid "damageLog/shellType/FLAME"
+msgstr "АС"
+
+msgid "damageLog/shellType/HIGH_EXPLOSIVE"
+msgstr "АФ"
+
+msgid "damageLog/shellType/HOLLOW_CHARGE"
+msgstr "КС"
+
+msgid "damage_panel/crew/commander/destroyed"
+msgstr "Камандзір экіпажу паранены. ТТХ машыны пагоршыліся."
+
+msgid "damage_panel/crew/commander/normal"
+msgstr "Камандзір экіпажу"
+
+msgid "damage_panel/crew/driver/destroyed"
+msgstr "Механік-кіроўца паранены. Хуткасць руху і паваротаў знізілася."
+
+msgid "damage_panel/crew/driver/normal"
+msgstr "Механік-кіроўца"
+
+msgid "damage_panel/crew/gunner1/destroyed"
+msgstr "Наводчык паранены. Трапнасць стральбы пагоршылася."
+
+msgid "damage_panel/crew/gunner1/normal"
+msgstr "Наводчык"
+
+msgid "damage_panel/crew/gunner2/destroyed"
+msgstr "Другі наводчык паранены. Трапнасць стральбы пагоршылася."
+
+msgid "damage_panel/crew/gunner2/normal"
+msgstr "Другі наводчык"
+
+msgid "damage_panel/crew/loader1/destroyed"
+msgstr "Набоец паранены. Хуткасць перанабівання знізілася."
+
+msgid "damage_panel/crew/loader1/normal"
+msgstr "Набойца"
+
+msgid "damage_panel/crew/loader2/destroyed"
+msgstr "Другі набоец паранены. Хуткасць перанабівання знізілася."
+
+msgid "damage_panel/crew/loader2/normal"
+msgstr "Другі набоец"
+
+msgid "damage_panel/crew/radioman1/destroyed"
+msgstr "Радыст паранены. Радыус сувязі знізіўся."
+
+msgid "damage_panel/crew/radioman1/normal"
+msgstr "Радыст"
+
+msgid "damage_panel/crew/radioman2/destroyed"
+msgstr "Другі радыст паранены. Радыус сувязі знізіўся."
+
+msgid "damage_panel/crew/radioman2/normal"
+msgstr "Другі радыст"
+
+msgid "damage_panel/devices/ammoBay/critical"
+msgstr "Боеўкладка пашкоджана. Хуткасць перанабівання знізілася."
+
+msgid "damage_panel/devices/ammoBay/destroyed"
+msgstr "Выбух боезапасу."
+
+msgid "damage_panel/devices/ammoBay/normal"
+msgstr "Боеўкладка не пашкоджана."
+
+msgid "damage_panel/devices/chassis/critical"
+msgstr "Шасі пашкоджана."
+
+msgid "damage_panel/devices/chassis/destroyed"
+msgstr "Шасі няспраўнае. Рухацца немагчыма."
+
+msgid "damage_panel/devices/chassis/normal"
+msgstr "Шасі не пашкоджана."
+
+msgid "damage_panel/devices/engine/critical"
+msgstr "Рухавік пашкоджаны. Магутнасць зніжана."
+
+msgid "damage_panel/devices/engine/destroyed"
+msgstr "Рухавік няспраўны. Рухацца немагчыма."
+
+msgid "damage_panel/devices/engine/normal"
+msgstr "Рухавік не пашкоджаны."
+
+msgid "damage_panel/devices/fuelTank/critical"
+msgstr "Пашкоджаны паліўны бак."
+
+msgid "damage_panel/devices/fuelTank/destroyed"
+msgstr "Паліўны бак няспраўны."
+
+msgid "damage_panel/devices/fuelTank/normal"
+msgstr "Паліўны бак не пашкоджаны."
+
+msgid "damage_panel/devices/gun/critical"
+msgstr "Гармата пашкоджана. Трапнасць стральбы пагоршылася."
+
+msgid "damage_panel/devices/gun/destroyed"
+msgstr "Гармата заклінавалася. Страляць немагчыма."
+
+msgid "damage_panel/devices/gun/normal"
+msgstr "Гармата не пашкоджана."
+
+msgid "damage_panel/devices/radio/critical"
+msgstr "Радыёстанцыя пашкоджана."
+
+msgid "damage_panel/devices/radio/destroyed"
+msgstr "Радыёстанцыя няспраўная. Радыус сувязі знізіўся."
+
+msgid "damage_panel/devices/radio/normal"
+msgstr "Радыёстанцыя не пашкоджана."
+
+msgid "damage_panel/devices/surveyingDevice/critical"
+msgstr "Назіральныя прылады пашкоджаны."
+
+msgid "damage_panel/devices/surveyingDevice/destroyed"
+msgstr "Назіральныя прылады разбіты. Агляд паменшыўся."
+
+msgid "damage_panel/devices/surveyingDevice/normal"
+msgstr "Назіральныя прылады не пашкоджаны."
+
+msgid "damage_panel/devices/track/critical"
+msgstr "Шасі пашкоджана."
+
+msgid "damage_panel/devices/track/destroyed"
+msgstr "Шасі няспраўнае. Рухацца немагчыма."
+
+msgid "damage_panel/devices/track/normal"
+msgstr "Шасі не пашкоджана."
+
+msgid "damage_panel/devices/turretRotator/critical"
+msgstr "Вежа пашкоджана. Хуткасць павароту паменшылася."
+
+msgid "damage_panel/devices/turretRotator/destroyed"
+msgstr "Вежа заклінавалася. Паварочваць вежу немагчыма."
+
+msgid "damage_panel/devices/turretRotator/normal"
+msgstr "Вежа не пашкоджана."
+
+msgid "damage_panel/devices/wheel/critical"
+msgstr "Шасі пашкоджана."
+
+msgid "damage_panel/devices/wheel/destroyed"
+msgstr "Шасі няспраўнае. Рухацца немагчыма."
+
+msgid "damage_panel/devices/wheel/normal"
+msgstr "Шасі не пашкоджана."
+
+msgid "danger_zone/indicator"
+msgstr "Машына можа быць знішчана — тэрмінова пакіньце небяспечную зону!"
+
+msgid "destroyTimer/liftOver"
+msgstr "Машына вяртаецца ў строй..."
+
+msgid "devMaps/hint/description"
+msgstr "для знаёмства з асаблівасцямі мапы"
+
+msgid "devMaps/hint/press"
+msgstr "Націсніце"
+
+msgid "devMaps/mapInfo/info"
+msgstr ""
+"На гэтай мапе тэстуюцца бэта-версіі выпадковых падзей. Траплянне на такія "
+"баявыя лакацыі можна адключыць у наладах (укладка «Гульня», блок «Тыпы "
+"Выпадковых баёў»)."
+
+msgid "devMaps/mapInfo/text"
+msgstr "Тэставаная мапа"
+
+msgid "devices/ammo_bay"
+msgstr "боеўкладка"
+
+msgid "devices/chassis"
+msgstr "шасі"
+
+msgid "devices/engine"
+msgstr "рухавік"
+
+msgid "devices/fuel_tank"
+msgstr "паліўны бак"
+
+msgid "devices/gun"
+msgstr "гармата"
+
+msgid "devices/left_track"
+msgstr "левы тракавы пас"
+
+msgid "devices/radio"
+msgstr "радыёстанцыя"
+
+msgid "devices/right_track"
+msgstr "правы тракавы пас"
+
+msgid "devices/surveing_device"
+msgstr "назіральныя прылады"
+
+msgid "devices/track"
+msgstr "%(type)s тракавы пас"
+
+msgid "devices/track/back"
+msgstr "задняя"
+
+msgid "devices/track/front"
+msgstr "пярэдняя"
+
+msgid "devices/track/inner"
+msgstr "унутраныя"
+
+msgid "devices/track/left"
+msgstr "левы"
+
+msgid "devices/track/main"
+msgstr "асноўная"
+
+msgid "devices/track/outer"
+msgstr "знешняя"
+
+msgid "devices/track/reserve"
+msgstr "рэзервовая"
+
+msgid "devices/track/right"
+msgstr "правы"
+
+msgid "devices/turret_rotator"
+msgstr "паварот вежы"
+
+msgid "devices/wheel"
+msgstr "кола"
+
+msgid "distance/meters"
+msgstr "%(meters)d м"
+
+msgid "dynamicSquad/ally/add"
+msgstr ""
+"Націсніце, каб адправіць запрашэнне ў звяз,\n"
+"прыняць якое гулец зможа падчас бою ці пасля яго.%(text)s"
+
+msgid "dynamicSquad/ally/anonymized/clan"
+msgstr ""
+" \n"
+"\n"
+"Увага! Гульцы з вашага звязу будуць бачыць ваша сапраўднае гульнявое імя і тэг клана."
+
+msgid "dynamicSquad/ally/anonymized/noClan"
+msgstr ""
+" \n"
+"\n"
+"Увага! Гульцы з вашага звязу будуць бачыць ваша сапраўднае гульнявое імя."
+
+msgid "dynamicSquad/ally/disabled"
+msgstr "Гэтага хаўрусніка нельга запрасіць у звяз."
+
+msgid "dynamicSquad/ally/received"
+msgstr ""
+"Націсніце, каб прыняць запрашэнне ў звяз,\n"
+"які сфарміруецца падчас бою."
+
+msgid "dynamicSquad/ally/wasSent"
+msgstr ""
+"Запрашэнне гульцу адпраўлена, прыняўшы якое ён\n"
+"далучыцца да вашага звязу падчас бою або пасля яго."
+
+msgid "dynamicSquad/enemy/add"
+msgstr ""
+"Націсніце, каб адправіць запрашэнне ў звяз,\n"
+"прыняць якое гулец зможа толькі пасля бою.%(text)s"
+
+msgid "dynamicSquad/enemy/disabled"
+msgstr "Супраціўніка нельга запрасіць у звяз."
+
+msgid "dynamicSquad/enemy/received"
+msgstr ""
+"Націсніце, каб прыняць запрашэнне ў звяз,\n"
+"які сфарміруецца толькі пасля бою."
+
+msgid "dynamicSquad/enemy/wasSent"
+msgstr ""
+"Запрашэнне гульцу адпраўлена, прыняўшы\n"
+"якое ён далучыцца да вашага звязу пасля бою."
+
+msgid "dynamicSquad/hint/voipToggleKeyLeft"
+msgstr "Націсніце"
+
+msgid "dynamicSquad/hint/voipToggleKeyRight"
+msgstr ", каб уключыць галасавую сувязь"
+
+msgid "dynamicSquad/invite"
+msgstr "Запрашэнне ў звяз"
+
+msgid "efficiencyRibbons/AirstrikeDmg"
+msgstr "Пашкоджанні авіяўдарам"
+
+msgid "efficiencyRibbons/ArtilleryDmg"
+msgstr "Пашкоджанні артылерыйскім абстрэлам"
+
+msgid "efficiencyRibbons/CannonDmg"
+msgstr "Пашкоджанні гарматай"
+
+msgid "efficiencyRibbons/armor"
+msgstr "Блакіраванне пашкоджанняў"
+
+msgid "efficiencyRibbons/assistByAbility"
+msgstr "Падтрымка баявымі рэзервамі"
+
+msgid "efficiencyRibbons/assistSpot"
+msgstr "Пашкоджанні па выяўленні вамі"
+
+msgid "efficiencyRibbons/assistStun"
+msgstr "Падмога дэзарыентацыяй"
+
+msgid "efficiencyRibbons/assistTrack"
+msgstr "Збіў тракавы пас"
+
+msgid "efficiencyRibbons/berserker"
+msgstr "Пашкоджанні ад бэрсэрка"
+
+msgid "efficiencyRibbons/bonusRibbon"
+msgstr "Ролевы досвед"
+
+msgid "efficiencyRibbons/burn"
+msgstr "Падпал"
+
+msgid "efficiencyRibbons/capture"
+msgstr "Ачкі за захоп"
+
+msgid "efficiencyRibbons/crits"
+msgstr "Крытычныя пашкоджанні"
+
+msgid "efficiencyRibbons/damage"
+msgstr "Пашкоджанні стрэлам"
+
+msgid "efficiencyRibbons/damageByMinefield"
+msgstr "Пашкоджанні мінамі"
+
+msgid "efficiencyRibbons/dealtDamageByClingBrander"
+msgstr "Пашкоджанні Баявога робата"
+
+msgid "efficiencyRibbons/dealtDamageByCorrodingShot"
+msgstr "Пашкоджанні Кіслотным снарадам"
+
+msgid "efficiencyRibbons/dealtDamageByFireCircle"
+msgstr "Пашкоджанні агнём"
+
+msgid "efficiencyRibbons/dealtDamageByThunderStrike"
+msgstr "Пашкоджанні Электраразрадам"
+
+msgid "efficiencyRibbons/deathZone"
+msgstr "Пашкоджанні зонай"
+
+msgid "efficiencyRibbons/defence"
+msgstr "Ачкі за абарону"
+
+msgid "efficiencyRibbons/defenderBonus"
+msgstr "Зона абаронена"
+
+msgid "efficiencyRibbons/destructibleDamaged"
+msgstr "Прычынены пашкоджанні"
+
+msgid "efficiencyRibbons/destructibleDestroyed"
+msgstr "Цэль знішчана"
+
+msgid "efficiencyRibbons/destructiblesDefended"
+msgstr "Цэль абаронена"
+
+msgid "efficiencyRibbons/enemySectorCaptured"
+msgstr "Зона захоплена"
+
+msgid "efficiencyRibbons/kill"
+msgstr "Знішчыў"
+
+msgid "efficiencyRibbons/ram"
+msgstr "Таран"
+
+msgid "efficiencyRibbons/receivedBurn"
+msgstr "Пашкоджанні пажарам"
+
+msgid "efficiencyRibbons/receivedByClingBrander"
+msgstr "Пашкоджанні ад Баявога робата"
+
+msgid "efficiencyRibbons/receivedByCorrodingShot"
+msgstr "Пашкоджанні ад кіслаты"
+
+msgid "efficiencyRibbons/receivedByFireCircle"
+msgstr "Пашкоджанні ад агню"
+
+msgid "efficiencyRibbons/receivedByMinefield"
+msgstr "Пашкоджанні мінамі"
+
+msgid "efficiencyRibbons/receivedBySmoke"
+msgstr "Пашкоджанні каразійным воблакам"
+
+msgid "efficiencyRibbons/receivedByThunderStrike"
+msgstr "Пашкоджанні ад Электраразраду"
+
+msgid "efficiencyRibbons/receivedCrits"
+msgstr "Крытычнае пашкоджанне"
+
+msgid "efficiencyRibbons/receivedDamage"
+msgstr "Пашкоджанні стрэлам"
+
+msgid "efficiencyRibbons/receivedDmgBySpawnedBot"
+msgstr "Пашкоджанні брандарам"
+
+msgid "efficiencyRibbons/receivedRam"
+msgstr "Пашкоджанні таранам"
+
+msgid "efficiencyRibbons/receivedWorldCollision"
+msgstr "Пашкоджанні ўдарам"
+
+msgid "efficiencyRibbons/spawnedBotDmg"
+msgstr "Пашкоджанні брандарам"
+
+msgid "efficiencyRibbons/spotted"
+msgstr "Выявіў"
+
+msgid "efficiencyRibbons/staticDeathZone"
+msgstr "Пашкоджанні ад смяротнай зоны"
+
+msgid "efficiencyRibbons/stun"
+msgstr "Дэзарыентацыя"
+
+msgid "efficiencyRibbons/vehicleRecovery"
+msgstr "Машына пакінута"
+
+msgid "efficiencyRibbons/worldCollision"
+msgstr "Пашкоджанні пры падзенні"
+
+msgid "epic_players_panel/state/hidden/body"
+msgstr "Схаваць панэлі камандаў."
+
+msgid "epic_players_panel/state/hidden/header"
+msgstr "Схаваная панэль"
+
+msgid "epic_players_panel/state/hidden/note"
+msgstr "(Націскайце Ctrl+Tab, каб пераключацца між рэжымамі)"
+
+msgid "epic_players_panel/state/medium_player/body"
+msgstr "Паказаць імя гульца, знішчаныя цэлі і значкі тэхнікі."
+
+msgid "epic_players_panel/state/medium_player/header"
+msgstr "Сярэдняя панэль 1"
+
+msgid "epic_players_panel/state/medium_player/note"
+msgstr "(Націскайце Ctrl+Tab, каб пераключацца між рэжымамі)"
+
+msgid "epic_players_panel/state/medium_tank/body"
+msgstr "Паказаць знішчаныя цэлі, а таксама значок і назву машыны гульца."
+
+msgid "epic_players_panel/state/medium_tank/header"
+msgstr "Сярэдняя панэль 2"
+
+msgid "epic_players_panel/state/medium_tank/note"
+msgstr "(Націскайце Ctrl+Tab, каб пераключацца між рэжымамі)"
+
+msgid "epic_players_panel/state/short/body"
+msgstr "Паказаць знішчаныя цэлі і значкі тэхнікі."
+
+msgid "epic_players_panel/state/short/header"
+msgstr "Кароткая панэль"
+
+msgid "epic_players_panel/state/short/note"
+msgstr "(Націскайце Ctrl+Tab, каб пераключацца між рэжымамі)"
+
+msgid "epic_players_panel/state/toggle/body"
+msgstr "Паказваць толькі сваёй групы гульцоў або ўсіх трох груп."
+
+msgid "epic_players_panel/state/toggle/header"
+msgstr "Уключыць/адключыць слупкі"
+
+msgid "epic_players_panel/state/toggle/note"
+msgstr "(Націскайце Ctrl+Tab, каб пераключацца між рэжымамі)"
+
+msgid "flagNotification/flagAbsorbed"
+msgstr "Вы знішчылі сцяг!"
+
+msgid "flagNotification/flagCaptured"
+msgstr "Сцяг захоплены!"
+
+msgid "flagNotification/flagDelivered"
+msgstr "Сцяг дастаўлены."
+
+msgid "flagNotification/flagInbase"
+msgstr "Цяпер дастаўце яго ў штаб."
+
+msgid "flags/timer"
+msgstr "%(time)s з..."
+
+msgid "fortConsumables/timer/postfix"
+msgstr "з..."
+
+msgid "helpScreen/hint/description"
+msgstr ", каб азнаёміцца з асаблівасцямі машыны"
+
+msgid "helpScreen/hint/press"
+msgstr "Націсніце"
+
+msgid "helpScreen/mapbox/description"
+msgstr "для знаёмства з асаблівасцямі мапы"
+
+msgid "helpScreen/mapbox/press"
+msgstr "Націсніце"
+
+msgid "hint/noBindingKey"
+msgstr "Ключавыя клавішы не прызначаныя"
+
+msgid "hitMarker/blocked"
+msgstr "Браня не прабіта"
+
+msgid "hitMarker/critical"
+msgstr "Крытычныя пашкоджанні"
+
+msgid "hitMarker/missArmor"
+msgstr "Не патрапіў у браню"
+
+msgid "hitMarker/ricochet"
+msgstr "Рыкашэт"
+
+msgid "hitMarker/spacedArmorBlocked"
+msgstr "Экран не прабіты"
+
+msgid "hitMarker/trackBlocked"
+msgstr "Тракавы пас не прабіты"
+
+msgid "hitMarker/wheelBlocked"
+msgstr "Кола не прабіта"
+
+msgid "levelProgress/maxLevel"
+msgstr "МАКСІМАЛЬНЫ ЎЗРОВЕНЬ МАШЫНЫ"
+
+msgid "marker/meters"
+msgstr "м"
+
+msgid "optDeviceResurrection/ammoBay"
+msgstr "Падрыў боеўкладкі прадухілены абсталяваннем «%(device)s»"
+
+msgid "optDeviceResurrection/engine"
+msgstr "Паломка рухавіка прадухілена абсталяваннем «%(device)s»"
+
+msgid "optDeviceResurrection/fuelTank"
+msgstr "Узгаранне прадухілена абсталяваннем «%(device)s»"
+
+msgid "personalMissions/tip/additionalHeader"
+msgstr "Дадатковая ўмова:"
+
+msgid "personalMissions/tip/mainHeader"
+msgstr "Асноўная ўмова:"
+
+msgid "personalMissions/tip/noQuests/battleType"
+msgstr "Для гэтага тыпу бою няма прынятых да выканання баявых задач."
+
+msgid "personalMissions/tip/noQuests/vehicleType"
+msgstr "Для гэтага тыпу тэхнікі няма прынятых да выканання баявых задач."
+
+msgid "personal_reserves/hint/description"
+msgstr ", каб задзейнічаць асабістыя рэзервы"
+
+msgid "personal_reserves/hint/press"
+msgstr "Націсніце"
+
+msgid "player_errors/cant_move/chassis_damaged"
+msgstr "Рухацца немагчыма: пашкоджанае шасі."
+
+msgid "player_errors/cant_move/crew_inactive"
+msgstr "Рухацца немагчыма: экіпаж выбыў са строю."
+
+msgid "player_errors/cant_move/engine_damaged"
+msgstr "Рухацца немагчыма: пашкоджаны рухавік."
+
+msgid "player_errors/cant_move/vehicle_destroyed"
+msgstr "Рух немагчымы: машына знішчана."
+
+msgid "player_errors/cant_shoot/crew_inactive"
+msgstr "Страляць немагчыма: экіпаж выбыў са строю."
+
+msgid "player_errors/cant_shoot/gun_damaged"
+msgstr "Страляць немагчыма: гармата пашкоджана."
+
+msgid "player_errors/cant_shoot/gun_locked"
+msgstr "Страляць немагчыма"
+
+msgid "player_errors/cant_shoot/gun_overheated"
+msgstr "Стральба немагчымая: гармата перагрэта"
+
+msgid "player_errors/cant_shoot/gun_reload"
+msgstr "Гармата перанабіваецца"
+
+msgid "player_errors/cant_shoot/no_ammo"
+msgstr "Страляць немагчыма: няма снарадаў."
+
+msgid "player_errors/cant_shoot/no_flame_ammo"
+msgstr "Стральба немагчымая: скончылася агнясумесь."
+
+msgid "player_errors/cant_shoot/vehicle_destroyed"
+msgstr "Страляць немагчыма: машына знішчана."
+
+msgid "player_errors/cant_switch/assault_spg/camera_can_not_spawn"
+msgstr "Немагчыма перайсці ў прыцэл у гэтым пункце"
+
+msgid "player_errors/cant_switch/engine_destroyed"
+msgstr "Пераключыць рэжым немагчыма: рухавік выведзены са строю."
+
+msgid "player_errors/equipment/ability/alreadyActivated"
+msgstr "Мадыфікацыя «%(name)s» ужо актывавана."
+
+msgid "player_errors/equipment/ability/cooldown"
+msgstr "Мадыфікацыя «%(name)s» недаступная: перазарадка."
+
+msgid "player_errors/equipment/ability/exhausted"
+msgstr "Мадыфікацыя «%(name)s» недаступная."
+
+msgid "player_errors/equipment/alreadyActivated"
+msgstr "Зараз ужо актыўны: [%(name)s]"
+
+msgid "player_errors/equipment/extinguisher/doesNotActivated"
+msgstr "Рыштунак [%(name)s] не ўжываецца: няма пажару."
+
+msgid "player_errors/equipment/isInCooldown"
+msgstr "Недаступны. [%(name)s] падрыхтоўваецца да паўторнага ўжывання."
+
+msgid "player_errors/equipment/medkit/allTankmenAreSafe"
+msgstr "Экіпаж не патрабуе медычнай дапамогі."
+
+msgid "player_errors/equipment/medkit/tankmanIsSafe"
+msgstr "[%(entity)s] не патрабуе медычнай дапамогі."
+
+msgid "player_errors/equipment/order/notReady"
+msgstr "Рэзерв пакуль не гатовы."
+
+msgid "player_errors/equipment/poi/unavailable"
+msgstr "Для актывацыі тактычнай звычкі захапіце %(name)s"
+
+msgid "player_errors/equipment/repairEverything/crewAndDevicesAreOk"
+msgstr "Модулі і камандзір у выдатным стане, рамонт або лячэнне не патрэбны."
+
+msgid "player_errors/equipment/repairkit/allDevicesAreNotDamaged"
+msgstr "Усе прылады ў добрым стане і не патрабуюць рамонту."
+
+msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
+msgstr "[%(entity)s] у добрым стане і не патрабуе рамонту."
+
+msgid "player_messages/ALLY_HIT"
+msgstr "Траплянне ў хаўрусніка %(entity)s!"
+
+msgid "player_messages/COMBAT_BR_EQUIPMENT_READY"
+msgstr "Гатова да выкарыстання: [%(equipment)s]"
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY"
+msgstr "Артылерыйская батарэя разгорнута і гатовая да залпа."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_BOMBER"
+msgstr "Авіяцыя прыбыла і гатовая да бамбардзіроўкі."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_INSPIRE"
+msgstr "Ваш экіпаж гатовы падняць баявы дух хаўруснікаў."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_EPIC"
+msgstr "Міннае поле гатовае да разгортвання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_RECON"
+msgstr "Самалёт прыбыў і гатовы да правядзення выведкі."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_REGENERATION_KIT_EPIC"
+msgstr "Палявы рамонт гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SMOKE"
+msgstr "Батарэя да дымапуску гатовая."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_STEALTH_RADAR"
+msgstr "Дазор гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_ARTILLERY"
+msgstr "Артылерыйская батарэя %(player)s дала залп."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_BOMBER"
+msgstr "Авіяцыя %(player)s пачала бамбардзіроўку."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_HEALPOINT"
+msgstr "%(player)s стварае зону аднаўлення."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_INSPIRE"
+msgstr "%(player)s паднімае баявы дух."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_MINEFIELD_EPIC"
+msgstr "%(player)s разгарнуў міннае поле."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_RECON"
+msgstr "%(player)s выклікаў самалёт-выведнік."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_REGENERATION_KIT_EPIC"
+msgstr "%(player)s выкарыстаў палявы рамонт."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_SMOKE"
+msgstr "%(player)s паставіў дымавую заслону."
+
+msgid "player_messages/COMBAT_EQUIPMENT_USED_STEALTH_RADAR"
+msgstr "%(player)s у дазоры."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_ALLY_ALLY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_ALLY_ENEMY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_ALLY_SUICIDE"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_ENEMY_ALLY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_ENEMY_ENEMY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_ENEMY_SUICIDE"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_PROTECTION_UNKNOWN"
+msgstr "Машына знішчана агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_PROTECTION_UNKNOWN_ALLY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_ARTILLERY_PROTECTION_UNKNOWN_ENEMY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_BOMBER_ALLY_SUICIDE"
+msgstr "%(target)s знішчаны авіяўдарам."
+
+msgid "player_messages/DEATH_FROM_BOMBER_ENEMY_SUICIDE"
+msgstr "%(target)s знішчаны авіяўдарам."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ALLY_ALLY"
+msgstr "Хаўруснік %(target)s знішчаны хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ALLY_ENEMY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ALLY_SELF"
+msgstr "Машына знішчана хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s паглынуты зонай."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_ALLY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "Машына знішчана %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE"
+msgstr "%(target)s паглынуты зонай."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_SELF_ALLY"
+msgstr "Хаўруснік %(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_SELF_ENEMY"
+msgstr "%(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
+msgstr "Машына знішчана."
+
+msgid "player_messages/DEATH_FROM_DEVICE_EXPLOSION_AT_FIRE"
+msgstr "Прылада [%(device)s] выбухнула пры пажары."
+
+msgid "player_messages/DEATH_FROM_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "Прылада [%(device)s] выбухнула ад стрэлу %(entity)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ALLY_ALLY"
+msgstr "Хаўруснік %(attacker)s патапіў хаўрусніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ALLY_ENEMY"
+msgstr "%(attacker)s патапіў %(target)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ALLY_SELF"
+msgstr "Машына патоплена хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s патапіўся."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ENEMY_ALLY"
+msgstr "%(attacker)s патапіў %(target)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s патапіў супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ENEMY_SELF"
+msgstr "Машына патоплена %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_ENEMY_SUICIDE"
+msgstr "Самапатапленне супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_DROWNING_SELF_ALLY"
+msgstr "Хаўруснік %(target)s патоплены."
+
+msgid "player_messages/DEATH_FROM_DROWNING_SELF_ENEMY"
+msgstr "%(target)s патоплены."
+
+msgid "player_messages/DEATH_FROM_DROWNING_SELF_SUICIDE"
+msgstr "Машына затоплена."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_ALLY_ALLY"
+msgstr "Хаўруснік %(target)s знішчаны хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_ALLY_ENEMY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_ALLY_SELF"
+msgstr "Машына знішчана хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_ENEMY_ALLY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_ENEMY_SELF"
+msgstr "Машына знішчана %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_SELF_ALLY"
+msgstr "Хаўруснік %(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_GAS_ATTACK_SELF_ENEMY"
+msgstr "%(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW"
+msgstr "Экіпаж выбыў са строю."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_SHOT"
+msgstr "Экіпаж выбыў са строю ад стрэлу %(entity)s."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ALLY_ALLY"
+msgstr "Экіпаж хаўрусніка %(target)s знішчаны хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ALLY_ENEMY"
+msgstr "Экіпаж %(target)s забіты %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ALLY_SELF"
+msgstr "Экіпаж выбыў са строю ад хаўрусніка %(attacker)s."
+
+msgid ""
+"player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s знішчыў свой экіпаж."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ENEMY_ALLY"
+msgstr "Экіпаж %(target)s забіты %(attacker)s."
+
+msgid ""
+"player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ENEMY_ENEMY"
+msgstr "Экіпаж супраціўніка %(target)s забіты супраціўнікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Экіпаж выбыў са строю ад %(attacker)s."
+
+msgid ""
+"player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ENEMY_SUICIDE"
+msgstr "Супраціўнік %(target)s знішчыў свой экіпаж."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_SELF_ALLY"
+msgstr "Экіпаж хаўрусніка %(target)s забіты."
+
+msgid "player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_SELF_ENEMY"
+msgstr "Экіпаж %(target)s выбыў са строю."
+
+msgid ""
+"player_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Экіпаж выбыў са строю."
+
+msgid "player_messages/DEATH_FROM_MINE_EXPLOSION_ALLY_ENEMY_ARCADE"
+msgstr "%(attacker)s знішчыў мінамі %(target)s"
+
+msgid "player_messages/DEATH_FROM_MINE_EXPLOSION_ENEMY_ALLY_ARCADE"
+msgstr "%(attacker)s знішчыў мінамі %(target)s"
+
+msgid "player_messages/DEATH_FROM_MINE_EXPLOSION_SELF_ENEMY_ARCADE"
+msgstr "%(target)s знішчаны мінамі."
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ALLY_ALLY"
+msgstr "Хаўруснік %(attacker)s перакуліў хаўрусніка %(target)s"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ALLY_ENEMY"
+msgstr "%(attacker)s перакуліў %(target)s"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ALLY_SELF"
+msgstr "Машына перакулена хаўруснікам %(attacker)s"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s перакуліўся"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ENEMY_ALLY"
+msgstr "%(attacker)s перакуліў %(target)s"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s перакуліў супраціўніка %(target)s"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ENEMY_SELF"
+msgstr "Машына перакулена %(attacker)s і знішчана"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_ENEMY_SUICIDE"
+msgstr "Супраціўнік %(target)s перакуліўся"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_SELF_ALLY"
+msgstr "Хаўруснік %(target)s перакулены"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_SELF_ENEMY"
+msgstr "%(target)s перакулены"
+
+msgid "player_messages/DEATH_FROM_OVERTURN_SELF_SUICIDE"
+msgstr "Машына перакулена і знішчана"
+
+msgid "player_messages/DEATH_FROM_RAMMING_ALLY_ALLY"
+msgstr "Хаўруснік %(attacker)s знішчыў хаўрусніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ALLY_ENEMY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ALLY_SELF"
+msgstr "Машына знішчана хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s разбіўся."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ENEMY_ALLY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ENEMY_SELF"
+msgstr "Машына знішчана %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_RAMMING_ENEMY_SUICIDE"
+msgstr "Супраціўнік %(target)s разбіўся."
+
+msgid "player_messages/DEATH_FROM_RAMMING_SELF_ALLY"
+msgstr "Хаўруснік %(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_RAMMING_SELF_ENEMY"
+msgstr "%(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_RAMMING_SELF_SUICIDE"
+msgstr "Машына знішчана."
+
+msgid "player_messages/DEATH_FROM_RECOVERY_ALLY_SUICIDE"
+msgstr "%(target)s пакінуў сваю машыну."
+
+msgid "player_messages/DEATH_FROM_RECOVERY_ENEMY_SUICIDE"
+msgstr "%(target)s пакінуў сваю машыну."
+
+msgid "player_messages/DEATH_FROM_SECTOR_BOMBERS_UNKNOWN"
+msgstr "Машына знішчана падчас бамбардзіроўкі."
+
+msgid "player_messages/DEATH_FROM_SECTOR_BOMBERS_UNKNOWN_ALLY"
+msgstr "%(target)s знішчаны падчас бамбардзіроўкі."
+
+msgid "player_messages/DEATH_FROM_SECTOR_BOMBERS_UNKNOWN_ENEMY"
+msgstr "%(target)s знішчаны падчас бамбардзіроўкі."
+
+msgid "player_messages/DEATH_FROM_SECTOR_PROTECTION_UNKNOWN"
+msgstr "Машына знішчана агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SECTOR_PROTECTION_UNKNOWN_ALLY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SECTOR_PROTECTION_UNKNOWN_ENEMY"
+msgstr "%(target)s знішчаны агнём артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ALLY"
+msgstr "Хаўруснік %(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ALLY_ARTILLERY"
+msgstr ""
+"Хаўруснік %(attacker)s знішчыў %(target)s залпам артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ALLY_BOMBER"
+msgstr "Хаўруснік %(attacker)s знішчыў %(target)s бамбардзіроўкай."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_ARTILLERY"
+msgstr "%(attacker)s знішчыў артылерыйскім абстрэлам %(target)s"
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_BOMBER"
+msgstr "%(attacker)s знішчыў авіяўдарам %(target)s"
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_COMP7"
+msgstr "%(attacker)s знішчыў %(target)s (Агнявая падтрымка)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_POI"
+msgstr "%(attacker)s знішчыў %(target)s (Міннае поле)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s знішчыў сам сябе."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE_ARTILLERY"
+msgstr "Хаўруснік %(target)s знішчыў сам сябе залпам артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE_BOMBER"
+msgstr "Хаўруснік %(target)s знішчыў сам сябе бамбардзіроўкай."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_ARTILLERY"
+msgstr "%(attacker)s знішчыў артылерыйскім абстрэлам %(target)s"
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_BOMBER"
+msgstr "%(attacker)s знішчыў авіяўдарам %(target)s"
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_COMP7"
+msgstr "%(attacker)s знішчыў %(target)s (Агнявая падтрымка)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_POI"
+msgstr "%(attacker)s знішчыў %(target)s (Міннае поле)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ENEMY_ARTILLERY"
+msgstr ""
+"Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s залпам "
+"артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ENEMY_BOMBER"
+msgstr ""
+"Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s бамбардзіроўкай."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_SUICIDE"
+msgstr "Супраціўнік %(target)s знішчыў сам сябе."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_SUICIDE_ARTILLERY"
+msgstr "Супраціўнік %(target)s знішчыў сам сябе залпам артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_SUICIDE_BOMBER"
+msgstr "Супраціўнік %(target)s знішчыў сам сябе бамбардзіроўкай."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ALLY"
+msgstr "Хаўруснік %(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ALLY_ARTILLERY"
+msgstr "Хаўруснік %(target)s знішчаны залпам артылерыйскай батарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ALLY_BOMBER"
+msgstr "Хаўруснік %(target)s знішчаны бамбардзіроўкай."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY"
+msgstr "%(target)s знішчаны."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_ARTILLERY"
+msgstr "%(target)s знішчаны залпам артбатарэі."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_BOMBER"
+msgstr "%(target)s знішчаны авіяўдарам."
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_COMP7"
+msgstr "%(target)s знішчаны"
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_POI"
+msgstr "%(target)s знішчаны"
+
+msgid "player_messages/DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s знішчаны смяротнай зонай."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ALLY_ALLY"
+msgstr "Хаўруснік %(attacker)s разбіў хаўрусніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ALLY_ENEMY"
+msgstr "%(attacker)s разбіў %(target)s."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ALLY_SELF"
+msgstr "Машына разбіта хаўруснікам %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ALLY_SUICIDE"
+msgstr "Хаўруснік %(target)s разбіўся."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_ALLY"
+msgstr "%(attacker)s разбіў %(target)s."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_ENEMY"
+msgstr "Супраціўнік %(attacker)s разбіў супраціўніка %(target)s."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Машына разбіта %(attacker)s."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_SUICIDE"
+msgstr "Супраціўнік %(target)s разбіўся."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_SELF_ALLY"
+msgstr "Хаўруснік %(target)s разбіты."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_SELF_ENEMY"
+msgstr "%(target)s разбіты."
+
+msgid "player_messages/DEATH_FROM_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Машына разбіта."
+
+msgid "player_messages/DESTRUCTIBLE_DESTROYED_ALLY"
+msgstr "%(attacker)s знішчыў цэль: %(target)s."
+
+msgid "player_messages/DESTRUCTIBLE_DESTROYED_ENEMY"
+msgstr "%(attacker)s знішчыў цэль: %(target)s."
+
+msgid "player_messages/DESTRUCTIBLE_DESTROYED_SELF"
+msgstr "Вы знішчылі цэль: %(target)s."
+
+msgid "player_messages/DEVICE_CRITICAL_AT_FIRE"
+msgstr "Прылада [%(device)s] пашкоджана пажарам."
+
+msgid "player_messages/DEVICE_CRITICAL_AT_SHOT"
+msgstr "Стрэл %(entity)s пашкодзіў прыладу [%(device)s]."
+
+msgid "player_messages/DEVICE_DESTROYED_AT_FIRE"
+msgstr "Прылада [%(device)s] знішчана пажарам."
+
+msgid "player_messages/DEVICE_DESTROYED_AT_SHOT"
+msgstr "Прылада [%(device)s] знішчана стрэлам %(entity)s."
+
+msgid "player_messages/DEVICE_REPAIRED"
+msgstr "Прылада [%(device)s] адрамантавана."
+
+msgid "player_messages/DEVICE_REPAIRED_TO_CRITICAL"
+msgstr "Прылада [%(device)s] зноўку працуе."
+
+msgid "player_messages/DEVICE_STARTED_FIRE_AT_SHOT"
+msgstr "Прылада [%(device)s] загарэлася ад стрэлу %(entity)s."
+
+msgid "player_messages/ENGINE_CRITICAL_AT_BURNOUT"
+msgstr "Прылада [%(device)s] пашкоджана з-за выкарыстання рыўка з месца."
+
+msgid "player_messages/ENGINE_CRITICAL_AT_UNLIMITED_RPM"
+msgstr ""
+"Прылада [%(device)s] пашкоджана з-за падкручанага абмежавальніка абаротаў."
+
+msgid "player_messages/ENGINE_DESTROYED_AT_BURNOUT"
+msgstr "Прылада [%(device)s] выйшла са строю з-за выкарыстання рыўка з месца."
+
+msgid "player_messages/ENGINE_DESTROYED_AT_UNLIMITED_RPM"
+msgstr ""
+"Прылада [%(device)s] знішчана з-за падкручанага абмежавальніка абаротаў."
+
+msgid "player_messages/FIRE_STOPPED"
+msgstr "Пажар пагашаны."
+
+msgid "player_messages/OPT_DEVICE_USED"
+msgstr "%(message)s"
+
+msgid "player_messages/TANKMAN_HIT_AT_SHOT"
+msgstr "[%(device)s] паранены стрэлам %(entity)s."
+
+msgid "player_messages/TANKMAN_RESTORED"
+msgstr "[%(device)s] зноўку дзее."
+
+msgid "player_messages/allied_team_name"
+msgstr "Хаўруснікі"
+
+msgid "player_messages/ally_base_captured_by_notification"
+msgstr "Захоп нашай базы%s (%d)"
+
+msgid "player_messages/ally_base_captured_notification"
+msgstr "Наша база%s захоплена!"
+
+msgid "player_messages/base_capture_blocked"
+msgstr "Захоп базы заблакіраваны"
+
+msgid "player_messages/base_captured_by_notification"
+msgstr "Захоп базы%s (%d)"
+
+msgid "player_messages/base_captured_notification"
+msgstr "База%s захоплена!"
+
+msgid "player_messages/enemy_base_captured_by_notification"
+msgstr "Захоп базы%s супраціўніка (%d)"
+
+msgid "player_messages/enemy_base_captured_notification"
+msgstr "База%s супраціўніка захоплена!"
+
+msgid "player_messages/enemy_team_name"
+msgstr "Праціўнік"
+
+msgid "player_messages/poi_equipment_used_by_ally"
+msgstr "Хаўруснік %(name)s прымяніў тактычную звычку «%(equipment)s»"
+
+msgid "player_messages/poi_equipment_used_by_enemy"
+msgstr "Супернік прымяніў тактычную звычку «%(equipment)s»"
+
+msgid "player_messages/postmortem_caption"
+msgstr "Гулец: %(name)s (%(type)s); Трываласць: %(health)d%%"
+
+msgid "player_messages/postmortem_caption/other"
+msgstr "Гулец: %(name)s; Трываласць: %(health)d%%"
+
+msgid "player_messages/postmortem_caption/self"
+msgstr "Ваша машына (%(type)s) знішчана"
+
+msgid "player_messages/postmortem_userNoHasAmmo"
+msgstr "Страляць немагчыма: няма снарадаў."
+
+msgid "player_messages/replayControlsHelp1"
+msgstr "Каб кіраваць узнаўленнем, карыстайцеся наступнымі клавішамі:"
+
+msgid "player_messages/replayControlsHelp2"
+msgstr ""
+"Левая кнопка мышы: пераключацца між рэжымамі камеры\n"
+"Прабел: паўза"
+
+msgid "player_messages/replayControlsHelp3"
+msgstr ""
+"Стрэлка налева: пераматаць на 20 секунд назад (з Ctrl — на 40 секунд)\n"
+"Стрэлка направа: пераматаць на 20 секунд наперад (з Ctrl — на 40 секунд)\n"
+"Home/End — пераматаць на пачатак/канец\n"
+"Стрэлкі ўверх/уніз: паскорыць/запаволіць хуткасць узнаўлення"
+
+msgid "player_messages/replayFreeCameraActivated"
+msgstr "Вольная камера ўключана"
+
+msgid "player_messages/replayPaused"
+msgstr "Паўза"
+
+msgid "player_messages/replaySavedCameraActivated"
+msgstr "Нерухомая камера ўключана"
+
+msgid "player_messages/replaySpeedChange"
+msgstr "Хуткасць узнаўлення: %(speed)s×"
+
+msgid "player_messages/tank_in_fire"
+msgstr "Машына гарыць!"
+
+msgid "players_panel/state/large/body"
+msgstr "Паказаць імя гульца, знішчаныя ім цэлі, значок танка і назву машыны"
+
+msgid "players_panel/state/large/header"
+msgstr "Доўгая"
+
+msgid "players_panel/state/large/note"
+msgstr "(Націскайце Ctrl + Tab, каб пераключацца між рэжымамі)"
+
+msgid "players_panel/state/medium/body"
+msgstr "Паказаць імя гульца, знішчаныя ім цэлі і значок машыны"
+
+msgid "players_panel/state/medium/header"
+msgstr "Сярэдняя"
+
+msgid "players_panel/state/medium/note"
+msgstr "(Націскайце Ctrl + Tab, каб пераключацца між рэжымамі)"
+
+msgid "players_panel/state/medium2/body"
+msgstr "Паказаць знішчаную гульцом тэхніку, назву і значок машыны гульца."
+
+msgid "players_panel/state/medium2/header"
+msgstr "Сярэдняя 2"
+
+msgid "players_panel/state/medium2/note"
+msgstr "(Націскайце Ctrl + Tab, каб пераключацца між рэжымамі)"
+
+msgid "players_panel/state/none/body"
+msgstr "Схаваць панэлі камандаў"
+
+msgid "players_panel/state/none/header"
+msgstr "Не паказваць панэляў камандаў"
+
+msgid "players_panel/state/none/note"
+msgstr "(Націскайце Ctrl + Tab, каб пераключацца між рэжымамі)"
+
+msgid "players_panel/state/short/body"
+msgstr "Паказаць знішчаныя гульцом цэлі і значок машыны"
+
+msgid "players_panel/state/short/header"
+msgstr "Скарочаная"
+
+msgid "players_panel/state/short/note"
+msgstr "(Націскайце Ctrl + Tab, каб пераключацца між рэжымамі)"
+
+msgid "players_panel/unknown_clan"
+msgstr "?empty?"
+
+msgid "players_panel/unknown_frags"
+msgstr "—"
+
+msgid "players_panel/unknown_name"
+msgstr "Праціўнік"
+
+msgid "players_panel/unknown_vehicle"
+msgstr "..."
+
+msgid "players_panel/unknown_vehicleState"
+msgstr "------"
+
+msgid "postmortem/tips/exitHangar/label"
+msgstr "Выйсці ў Гараж"
+
+msgid "postmortem/tips/exitHangar/text"
+msgstr ""
+"Esc > Вярнуцца ў Гараж.\n"
+"Уступіце ў новы бой на іншай машыне."
+
+msgid "postmortem/tips/observerMode/label"
+msgstr "Рэжым назіральніка"
+
+msgid "postmortem/tips/observerMode/text"
+msgstr "Пераключайцеся між машынамі хаўруснікаў."
+
+msgid "postmortem_messages/DEATH_FROM_ARTILLERY_PROTECTION"
+msgstr "Машына знішчаная гарматным залпам"
+
+msgid "postmortem_messages/DEATH_FROM_ARTILLERY_PROTECTION_UNKNOWN"
+msgstr "Машына знішчана агнём артылерыйскай батарэі."
+
+msgid "postmortem_messages/DEATH_FROM_ARTILLERY_SECTOR"
+msgstr "Машына знішчаная гарматным залпам"
+
+msgid "postmortem_messages/DEATH_FROM_BOMBER"
+msgstr "Машына знішчана авіяўдарам"
+
+msgid "postmortem_messages/DEATH_FROM_BR_BOT"
+msgstr "Машына знішчана Марадзёрам."
+
+msgid "postmortem_messages/DEATH_FROM_CLING_BRANDER"
+msgstr "Машына знішчана Баявым робатам."
+
+msgid "postmortem_messages/DEATH_FROM_CORRODING_SHOT"
+msgstr "Машына знішчана Кіслотным разрадам."
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ALLY_SELF"
+msgstr "Машына знішчана ў забароненай зоне хаўруснікам"
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "Машына знішчана ў забароненай зоне"
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
+msgstr "Вы не паспелі пакінуць небяспечную зону"
+
+msgid "postmortem_messages/DEATH_FROM_DEVICE_EXPLOSION_AT_FIRE"
+msgstr "Прылада [%(device)s] выбухнула пры пажары"
+
+msgid "postmortem_messages/DEATH_FROM_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "Прылада [%(device)s] выбухнула ад стрэлу гульца"
+
+msgid "postmortem_messages/DEATH_FROM_DROWNING_ALLY_SELF"
+msgstr "Машына патоплена хаўруснікам"
+
+msgid "postmortem_messages/DEATH_FROM_DROWNING_ENEMY_SELF"
+msgstr "Машына патанула"
+
+msgid "postmortem_messages/DEATH_FROM_DROWNING_SELF_SUICIDE"
+msgstr "Машына патанула"
+
+msgid "postmortem_messages/DEATH_FROM_FIRE"
+msgstr "Пажар быў выкліканы гульцом"
+
+msgid "postmortem_messages/DEATH_FROM_FIRE_CIRCLE"
+msgstr "Машына знішчана Вогненным колам."
+
+msgid "postmortem_messages/DEATH_FROM_INACTIVE_CREW_AT_SHOT"
+msgstr "Экіпаж загінуў ад стрэлу гульца"
+
+msgid ""
+"postmortem_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ALLY_SELF"
+msgstr "Экіпаж выбыў са строю ад моцнага ўдару хаўрусніка"
+
+msgid ""
+"postmortem_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Экіпаж выбыў са строю ад моцнага ўдару"
+
+msgid ""
+"postmortem_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Экіпаж выбыў са строю ад моцнага ўдару"
+
+msgid "postmortem_messages/DEATH_FROM_KAMIKAZE"
+msgstr "Машына знішчана Брандарам."
+
+msgid "postmortem_messages/DEATH_FROM_MINE_EXPLOSION"
+msgstr "Машына знішчаная мінамі"
+
+msgid "postmortem_messages/DEATH_FROM_OVERTURN_ALLY_SELF"
+msgstr "Машына перакулена хаўруснікам"
+
+msgid "postmortem_messages/DEATH_FROM_OVERTURN_ENEMY_SELF"
+msgstr "Машына перакулена супраціўнікам"
+
+msgid "postmortem_messages/DEATH_FROM_OVERTURN_SELF_SUICIDE"
+msgstr "Машына знішчана перакульваннем"
+
+msgid "postmortem_messages/DEATH_FROM_RAMMING_ALLY_SELF"
+msgstr "Машына знішчана таранам хаўрусніка"
+
+msgid "postmortem_messages/DEATH_FROM_RAMMING_ENEMY_SELF"
+msgstr "Машына знішчана таранам"
+
+msgid "postmortem_messages/DEATH_FROM_RAMMING_SELF_SUICIDE"
+msgstr "Машына знішчана таранам"
+
+msgid "postmortem_messages/DEATH_FROM_RECOVERY"
+msgstr "Ваша машына знішчана"
+
+msgid "postmortem_messages/DEATH_FROM_SECTOR_BOMBERS_UNKNOWN"
+msgstr "Машына знішчана падчас бамбардзіроўкі."
+
+msgid "postmortem_messages/DEATH_FROM_SECTOR_PROTECTION_UNKNOWN"
+msgstr "Машына знішчана агнём артылерыйскай батарэі."
+
+msgid "postmortem_messages/DEATH_FROM_SHOT"
+msgstr "Машына падбіта гульцом"
+
+msgid "postmortem_messages/DEATH_FROM_SHOT_ARCADE_BOMBER_BATTLE_ROYALE"
+msgstr "Машына знішчана авіяўдарам."
+
+msgid "postmortem_messages/DEATH_FROM_SHOT_ARTILLERY"
+msgstr "Машына знішчана залпам артбатарэі"
+
+msgid "postmortem_messages/DEATH_FROM_SHOT_BOMBER"
+msgstr "Машына знішчана авіяўдарам"
+
+msgid "postmortem_messages/DEATH_FROM_STATIC_DEATH_ZONE_SELF_SUICIDE"
+msgstr "Машына знішчана смяротнай зонай"
+
+msgid "postmortem_messages/DEATH_FROM_THUNDER_STRIKE"
+msgstr "Машына знішчана Электрычным разрадам."
+
+msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_ALLY_SELF"
+msgstr "Машына разбіта хаўруснікам"
+
+msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Машына разбіта супраціўнікам"
+
+msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Машына разбіта"
+
+msgid "postmortem_messages/DEATH_UNKNOWN"
+msgstr "Ваша машына знішчана"
+
+msgid "prebattleAmmunitionPanel/currentSetup"
+msgstr "У баі выкарыстоўваецца выбраны камплект:"
+
+msgid "prebattleAmmunitionPanel/footer"
+msgstr ""
+"Выберыце камплектацыю да завяршэння адліку; далей яна будзе выкарыстоўвацца "
+"ў баі."
+
+msgid "prebattleAmmunitionPanel/header"
+msgstr "Выбар камплектацыі"
+
+msgid "prebattleAmmunitionPanel/loadingTimer"
+msgstr "Выбар камплекта рыштунку: {seconds} с"
+
+msgid "prebattleAmmunitionPanel/waitinForPlayers"
+msgstr "Выбар камплекта рыштунку:"
+
+msgid "prebattlemarker/prebattlemarker_0"
+msgstr "Роў"
+
+msgid "prebattlemarker/prebattlemarker_1"
+msgstr "Агляд"
+
+msgid "prebattlemarker/prebattlemarker_10"
+msgstr "Лес"
+
+msgid "prebattlemarker/prebattlemarker_11"
+msgstr "Сцежка"
+
+msgid "prebattlemarker/prebattlemarker_12"
+msgstr "Вуліца"
+
+msgid "prebattlemarker/prebattlemarker_13"
+msgstr "Руіны"
+
+msgid "prebattlemarker/prebattlemarker_14"
+msgstr "Мост"
+
+msgid "prebattlemarker/prebattlemarker_15"
+msgstr "Чыгунка"
+
+msgid "prebattlemarker/prebattlemarker_16"
+msgstr "Горад"
+
+msgid "prebattlemarker/prebattlemarker_17"
+msgstr "Вёска"
+
+msgid "prebattlemarker/prebattlemarker_18"
+msgstr "Плошча"
+
+msgid "prebattlemarker/prebattlemarker_19"
+msgstr "Завод"
+
+msgid "prebattlemarker/prebattlemarker_2"
+msgstr "Пагорак"
+
+msgid "prebattlemarker/prebattlemarker_20"
+msgstr "Маяк"
+
+msgid "prebattlemarker/prebattlemarker_21"
+msgstr "Цэнтр"
+
+msgid "prebattlemarker/prebattlemarker_22"
+msgstr "Замак"
+
+msgid "prebattlemarker/prebattlemarker_23"
+msgstr "Млын"
+
+msgid "prebattlemarker/prebattlemarker_24"
+msgstr "Горы"
+
+msgid "prebattlemarker/prebattlemarker_25"
+msgstr "Маршрут А"
+
+msgid "prebattlemarker/prebattlemarker_26"
+msgstr "Маршрут B"
+
+msgid "prebattlemarker/prebattlemarker_27"
+msgstr "Маршрут C"
+
+msgid "prebattlemarker/prebattlemarker_28"
+msgstr "Маршрут D"
+
+msgid "prebattlemarker/prebattlemarker_29"
+msgstr "Маршрут E"
+
+msgid "prebattlemarker/prebattlemarker_3"
+msgstr "Даліна"
+
+msgid "prebattlemarker/prebattlemarker_30"
+msgstr "Ледавік"
+
+msgid "prebattlemarker/prebattlemarker_31"
+msgstr "Аб'езд"
+
+msgid "prebattlemarker/prebattlemarker_32"
+msgstr "Пагоркі"
+
+msgid "prebattlemarker/prebattlemarker_33"
+msgstr "Дарога"
+
+msgid "prebattlemarker/prebattlemarker_34"
+msgstr "Гара"
+
+msgid "prebattlemarker/prebattlemarker_35"
+msgstr "Бункер"
+
+msgid "prebattlemarker/prebattlemarker_36"
+msgstr "Прысады"
+
+msgid "prebattlemarker/prebattlemarker_37"
+msgstr "Сцяна"
+
+msgid "prebattlemarker/prebattlemarker_38"
+msgstr "Камяні"
+
+msgid "prebattlemarker/prebattlemarker_39"
+msgstr "Цэхі"
+
+msgid "prebattlemarker/prebattlemarker_4"
+msgstr "Поле"
+
+msgid "prebattlemarker/prebattlemarker_40"
+msgstr "Гараж"
+
+msgid "prebattlemarker/prebattlemarker_41"
+msgstr "Вугаль"
+
+msgid "prebattlemarker/prebattlemarker_42"
+msgstr "Караблі"
+
+msgid "prebattlemarker/prebattlemarker_43"
+msgstr "Авіяносец"
+
+msgid "prebattlemarker/prebattlemarker_44"
+msgstr "Акопы"
+
+msgid "prebattlemarker/prebattlemarker_45"
+msgstr "Серпанцін"
+
+msgid "prebattlemarker/prebattlemarker_46"
+msgstr "Поўнач"
+
+msgid "prebattlemarker/prebattlemarker_47"
+msgstr "Поўдзень"
+
+msgid "prebattlemarker/prebattlemarker_48"
+msgstr "Захад"
+
+msgid "prebattlemarker/prebattlemarker_49"
+msgstr "Усход"
+
+msgid "prebattlemarker/prebattlemarker_5"
+msgstr "Града"
+
+msgid "prebattlemarker/prebattlemarker_50"
+msgstr "Дырыжабль"
+
+msgid "prebattlemarker/prebattlemarker_51"
+msgstr "Склады"
+
+msgid "prebattlemarker/prebattlemarker_6"
+msgstr "Бераг"
+
+msgid "prebattlemarker/prebattlemarker_7"
+msgstr "Рака"
+
+msgid "prebattlemarker/prebattlemarker_8"
+msgstr "Возера"
+
+msgid "prebattlemarker/prebattlemarker_9"
+msgstr "Балота"
+
+msgid "quickReply/hint/press"
+msgstr "Націсніце"
+
+msgid "quickReply/hint/toAcknowledge"
+msgstr ", каб пацвердзіць"
+
+msgid "quickReply/hint/toHelp"
+msgstr ", каб дапамагчы"
+
+msgid "quickReply/hint/toThank"
+msgstr ", каб падзякаваць"
+
+msgid "recovery/cooldown"
+msgstr "Машыну можна будзе пакінуць праз %(cooldown)s с"
+
+msgid "recovery/hint1"
+msgstr "Націсніце і ўтрымлівайце"
+
+msgid "recovery/hint2"
+msgstr ", каб пакінуць машыну"
+
+msgid "repairPoint/title"
+msgstr "Рамонт"
+
+msgid "repairPoint/unavailable"
+msgstr "Недаступны"
+
+msgid "respawnView/additionalTip"
+msgstr ""
+"Выберыце машыну, каб працягнуць. Калі ўся тэхніка на рамонце, бой "
+"працягнецца на першай даступнай машыне."
+
+msgid "respawnView/additionalTipLimited"
+msgstr ""
+"Выберыце машыну, каб працягнуць. Знішчаную машыну немагчыма адрамантаваць да"
+" сканчэння бою."
+
+msgid "respawnView/classNotAvailable"
+msgstr ""
+"Ліміт напрамку\n"
+"дасягнуты"
+
+msgid "respawnView/cooldownLbl"
+msgstr "На рамонце %(time)s"
+
+msgid "respawnView/destroyedLbl"
+msgstr "Знішчаны"
+
+msgid "respawnView/disabledLbl"
+msgstr "Машына недаступная"
+
+msgid "respawnView/emptySlotInfo"
+msgstr "Прыдатная машына не выбрана"
+
+msgid "respawnView/emptySlotInfoTooltip"
+msgstr "У групе адсутнічае машына X узроўню."
+
+msgid "respawnView/nextVehicleName"
+msgstr "Бой пачнецца на "
+
+msgid "respawnView/title"
+msgstr "Выбар тэхнікі"
+
+msgid "rewardWindow/anniversary_ga/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/anniversary_ga/descText"
+msgstr ""
+"Дзякуем за ўдзел у развіцці праекта «Мир танков». Ваш унёсак для нас "
+"бясцэнны!"
+
+msgid "rewardWindow/anniversary_ga/headerText"
+msgstr "Пахвальны ліст"
+
+msgid "rewardWindow/anniversary_ga/subHeaderText"
+msgstr "Вас вылучылі на ўзнагароду!"
+
+msgid "rewardWindow/anniversary_ga/winHeaderText"
+msgstr "Інфармацыйны лісток"
+
+msgid "rewardWindow/base/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/base/descText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/base/headerText"
+msgstr "Віншуем"
+
+msgid "rewardWindow/base/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/commander_marina/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/commander_marina/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/commander_marina/headerText"
+msgstr "Набор «Індыя»"
+
+msgid "rewardWindow/commander_marina/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/commander_patrick/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/commander_patrick/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/commander_patrick/headerText"
+msgstr "Набор Джульет"
+
+msgid "rewardWindow/commander_patrick/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/countLabel"
+msgstr "x{count}"
+
+msgid "rewardWindow/lootbox/btnLabel"
+msgstr "Да кантэйнераў"
+
+msgid "rewardWindow/lootbox/descText"
+msgstr "Вам налічаны кантэйнеры з каштоўнай узнагародай."
+
+msgid "rewardWindow/lootbox/headerText"
+msgstr "Атрыманы кантэйнеры!"
+
+msgid "rewardWindow/lootbox/isFreeDescText"
+msgstr ""
+"За выкананне баявых задач вы атрымліваеце кантэйнеры з каштоўнай "
+"узнагародай."
+
+msgid "rewardWindow/lootbox/winHeaderText"
+msgstr "Час адкрываць пасылкі!"
+
+msgid "rewardWindow/piggyBank/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/piggyBank/descText"
+msgstr ""
+"Назапашванне крэдытаў прыпынена. Працягніце прэміум акаўнт, каб далей "
+"папаўняць сховішча крэдытаў."
+
+msgid "rewardWindow/piggyBank/headerText"
+msgstr "Крэдыты атрыманы"
+
+msgid "rewardWindow/piggyBank/subHeaderText"
+msgstr "Сховішча крэдытаў адчынена"
+
+msgid "rewardWindow/piggyBank/winHeaderText"
+msgstr "Віншуем!"
+
+msgid "rewardWindow/twitch0/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/twitch0/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вам уручаецца шчодрая ўзнагарода."
+
+msgid "rewardWindow/twitch0/headerText"
+msgstr "Набор «Дэльта»"
+
+msgid "rewardWindow/twitch0/subHeaderText"
+msgstr "Вас вылучылі на ўзнагароду!"
+
+msgid "rewardWindow/twitch1/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch1/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вам даступнае рэкрутаванне новага"
+" камандзіра."
+
+msgid "rewardWindow/twitch1/headerText"
+msgstr "Набор «Альфа»"
+
+msgid "rewardWindow/twitch1/subHeaderText"
+msgstr "У нашым палку прыбыло!"
+
+msgid "rewardWindow/twitch10/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/twitch10/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch10/headerText"
+msgstr "Баявы пропуск"
+
+msgid "rewardWindow/twitch10/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch11/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/twitch11/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch11/headerText"
+msgstr "Набор Космас"
+
+msgid "rewardWindow/twitch11/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch12/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/twitch12/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальны стыль і іншыя"
+" каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch12/headerText"
+msgstr "Набор Зорная ноч"
+
+msgid "rewardWindow/twitch12/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch13/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch13/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch13/headerText"
+msgstr "Набор Чэрвень"
+
+msgid "rewardWindow/twitch13/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch14/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch14/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch14/headerText"
+msgstr "Набор «Ліпень»"
+
+msgid "rewardWindow/twitch14/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch15/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch15/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальны стыль і іншыя"
+" каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch15/headerText"
+msgstr "Набор «Дзясятка»"
+
+msgid "rewardWindow/twitch15/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch16/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch16/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальны стыль і іншыя"
+" каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch16/headerText"
+msgstr "«Мир танков»: набор «Старлайт»"
+
+msgid "rewardWindow/twitch16/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch17/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch17/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальны стыль і іншыя"
+" каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch17/headerText"
+msgstr "Набор Каралевы Мэйв"
+
+msgid "rewardWindow/twitch17/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch18/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch18/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch18/headerText"
+msgstr "Набор «Амяла»"
+
+msgid "rewardWindow/twitch18/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch19/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch19/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch19/headerText"
+msgstr "Набор «Багаты ўлоў!»"
+
+msgid "rewardWindow/twitch19/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch2/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/twitch2/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вам уручаецца шчодрая ўзнагарода."
+
+msgid "rewardWindow/twitch2/headerText"
+msgstr "Набор «Чарлі»"
+
+msgid "rewardWindow/twitch2/subHeaderText"
+msgstr "Вас вылучылі на ўзнагароду!"
+
+msgid "rewardWindow/twitch20/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch20/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch20/headerText"
+msgstr "Набор «G.I. JOE: Дзюк»"
+
+msgid "rewardWindow/twitch20/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch21/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch21/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch21/headerText"
+msgstr "Набор «G.I. JOE: Кобра»"
+
+msgid "rewardWindow/twitch21/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch22/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch22/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch22/headerText"
+msgstr "Набор «Танк-рок»"
+
+msgid "rewardWindow/twitch22/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch23/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch23/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch23/headerText"
+msgstr "Набор «Бясшумны паляўнічы»"
+
+msgid "rewardWindow/twitch23/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch24/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch24/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch24/headerText"
+msgstr "Набор «Асцярожна, пафарбавана»"
+
+msgid "rewardWindow/twitch24/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch25/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch25/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch25/headerText"
+msgstr "Набор «Аксамітны сезон»"
+
+msgid "rewardWindow/twitch25/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch26/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch26/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch26/headerText"
+msgstr "Набор «Высокае напружанне»"
+
+msgid "rewardWindow/twitch26/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch27/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch27/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch27/headerText"
+msgstr "Набор «Няма ратунку ад пачастунку»"
+
+msgid "rewardWindow/twitch27/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch28/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch28/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch28/headerText"
+msgstr "Набор «Паўночны ваяр»"
+
+msgid "rewardWindow/twitch28/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch29/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch29/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымліваеце каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch29/headerText"
+msgstr "Набор «Новы старт»"
+
+msgid "rewardWindow/twitch29/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch3/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch3/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вам уручаецца шчодрая ўзнагарода."
+
+msgid "rewardWindow/twitch3/headerText"
+msgstr "Набор «Эха»"
+
+msgid "rewardWindow/twitch3/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch30/btnLabel"
+msgstr "Яшчэ"
+
+msgid "rewardWindow/twitch30/descText"
+msgstr ""
+"Віншуем! За ўдзел у адмысловай акцыі вы атрымалі ўнікальны стыль і іншую "
+"каштоўную маёмасць."
+
+msgid "rewardWindow/twitch30/headerText"
+msgstr "Рэтрахвалі"
+
+msgid "rewardWindow/twitch30/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch31/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch31/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch31/headerText"
+msgstr "Адэпта Сарорытас"
+
+msgid "rewardWindow/twitch31/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch32/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch32/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch32/headerText"
+msgstr "Лепшы стралок"
+
+msgid "rewardWindow/twitch32/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch33/descText"
+msgstr "Вы атрымалі ўнікальную ўзнагароду за адмысловую акцыю"
+
+msgid "rewardWindow/twitch33/headerText"
+msgstr "ЖЫВЫ ЭФІР"
+
+msgid "rewardWindow/twitch33/mainReward_1"
+msgstr "Дыэлектрык"
+
+msgid "rewardWindow/twitch33/mainReward_2"
+msgstr "Кінжал"
+
+msgid "rewardWindow/twitch33/mainReward_3"
+msgstr "Зграя, наперад!"
+
+msgid "rewardWindow/twitch33/mainReward_4"
+msgstr "Выпускнік N-Cave"
+
+msgid "rewardWindow/twitch34/descText"
+msgstr "Вы атрымалі ўнікальную ўзнагароду за адмысловую акцыю"
+
+msgid "rewardWindow/twitch34/headerText"
+msgstr "ЖЫВЫ ЭФІР"
+
+msgid "rewardWindow/twitch34/mainReward_1"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch34/mainReward_2"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch34/mainReward_3"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch34/mainReward_4"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch35/descText"
+msgstr "Вы атрымалі ўнікальную ўзнагароду за адмысловую акцыю"
+
+msgid "rewardWindow/twitch35/headerText"
+msgstr "ЖЫВЫ ЭФІР"
+
+msgid "rewardWindow/twitch35/mainReward_1"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch35/mainReward_2"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch35/mainReward_3"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch35/mainReward_4"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch36/descText"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch36/headerText"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch36/mainReward_1"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch36/mainReward_2"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch36/mainReward_3"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch36/mainReward_4"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch37/btnLabel"
+msgstr "Выбраць узнагароды"
+
+msgid "rewardWindow/twitch37/descText"
+msgstr "Вы атрымалі ўнікальную ўзнагароду за адмысловую акцыю"
+
+msgid "rewardWindow/twitch37/headerText"
+msgstr "ЖЫВЫ ЭФІР"
+
+msgid "rewardWindow/twitch37/mainReward_1"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch37/mainReward_2"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch37/mainReward_3"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch37/mainReward_4"
+msgstr "?empty?"
+
+msgid "rewardWindow/twitch4/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch4/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch4/headerText"
+msgstr "Набор «Факстрот»"
+
+msgid "rewardWindow/twitch4/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch5/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch5/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch5/headerText"
+msgstr "Набор «Гольф»"
+
+msgid "rewardWindow/twitch5/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch6/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch6/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch6/headerText"
+msgstr "Набор «Гатэль»"
+
+msgid "rewardWindow/twitch6/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch7/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch7/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch7/headerText"
+msgstr "Набор Кіла"
+
+msgid "rewardWindow/twitch7/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch8/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch8/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch8/headerText"
+msgstr "Набор Ліма"
+
+msgid "rewardWindow/twitch8/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/twitch9/btnLabel"
+msgstr "Рэкрутаваць"
+
+msgid "rewardWindow/twitch9/descText"
+msgstr ""
+"Віншуем, баец! За ўдзел у адмысловай акцыі вы атрымліваеце ўнікальнага "
+"камандзіра і іншыя каштоўныя ўзнагароды."
+
+msgid "rewardWindow/twitch9/headerText"
+msgstr "Набор Майк"
+
+msgid "rewardWindow/twitch9/subHeaderText"
+msgstr "Атрыманы ўзнагароды"
+
+msgid "rewardWindow/wgcq_clan_reward/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/wgcq_clan_reward/descText"
+msgstr ""
+"Клан разлічвае на ваш далейшы ўдзел\n"
+"у прасоўванні Баявога паходу."
+
+msgid "rewardWindow/wgcq_clan_reward/headerText"
+msgstr "Трафей атрыманы!"
+
+msgid "rewardWindow/wgcq_clan_reward/secondBtnLabel"
+msgstr "Да Баявога паходу"
+
+msgid "rewardWindow/wgcq_clan_reward/subHeaderText"
+msgstr " "
+
+msgid "rewardWindow/wgcq_clan_reward/winHeaderText"
+msgstr "Баявы паход"
+
+msgid "rewardWindow/wgcq_player_reward/btnLabel"
+msgstr "Так!"
+
+msgid "rewardWindow/wgcq_player_reward/descText"
+msgstr ""
+"Клан разлічвае на ваш далейшы ўдзел\n"
+"у прасоўванні Баявога паходу."
+
+msgid "rewardWindow/wgcq_player_reward/headerText"
+msgstr "Узнагарода атрымана!"
+
+msgid "rewardWindow/wgcq_player_reward/secondBtnLabel"
+msgstr "Да Баявога паходу"
+
+msgid "rewardWindow/wgcq_player_reward/subHeaderText"
+msgstr " "
+
+msgid "rewardWindow/wgcq_player_reward/winHeaderText"
+msgstr "Баявы паход"
+
+msgid "rewardWindow/winHeaderText"
+msgstr "Віншуем!"
+
+msgid "scorePanel/mySquadLbl"
+msgstr "Наш звяз"
+
+msgid "scorePanel/playerScore"
+msgstr "Асабісты ўнёсак:"
+
+msgid "scorePanel/squadLbl"
+msgstr "Звяз %(sq_number)s"
+
+msgid "shells_kinds/ARMOR_PIERCING"
+msgstr "%(caliber)s-мм бранябойны снарад %(userString)s"
+
+msgid "shells_kinds/ARMOR_PIERCING_CR"
+msgstr "%(caliber)s-мм бранябойны падкаліберны снарад %(userString)s"
+
+msgid "shells_kinds/ARMOR_PIERCING_FSDS"
+msgstr "%(caliber)s мм БАПС %(userString)s"
+
+msgid "shells_kinds/ARMOR_PIERCING_HE"
+msgstr "%(caliber)s-мм бранябойны каморны снарад %(userString)s"
+
+msgid "shells_kinds/FLAME"
+msgstr "Агнямётная сумесь %(userString)s"
+
+msgid "shells_kinds/HIGH_EXPLOSIVE"
+msgstr "%(caliber)s-мм асколачна-фугасны снарад %(userString)s"
+
+msgid "shells_kinds/HOLLOW_CHARGE"
+msgstr "%(caliber)s-мм кумулятыўны снарад %(userString)s"
+
+msgid "shells_kinds/params/damage"
+msgstr "Сярэднія пашкоджанні: %(value)s адз."
+
+msgid "shells_kinds/params/damagePerSecond"
+msgstr "Пашкоджанні за секунду: %(value)s адз."
+
+msgid "shells_kinds/params/damageRange"
+msgstr "Пашкоджанні снарада: %(value)s адз."
+
+msgid "shells_kinds/params/explosionRadius"
+msgstr "Радыус паражэння: %(value)s м"
+
+msgid "shells_kinds/params/piercingPower"
+msgstr "Сярэдняя бронепрабівальнасць: %(value)s мм"
+
+msgid "shells_kinds/params/shotSpeed"
+msgstr "Хуткасць палёту: %(value)s м/с"
+
+msgid "shells_kinds/params/stunDuration"
+msgstr "Час дэзарыентацыі: %(maxValue)s с"
+
+msgid "siegeMode/hint/forMode/0"
+msgstr ", каб пераключыцца ў аблогавы рэжым"
+
+msgid "siegeMode/hint/forMode/1"
+msgstr "?empty?"
+
+msgid "siegeMode/hint/forMode/2"
+msgstr ", каб пераключыцца ў паходны рэжым"
+
+msgid "siegeMode/hint/forMode/3"
+msgstr "?empty?"
+
+msgid "siegeMode/hint/noBinding"
+msgstr "Ключавыя клавішы не прызначаны"
+
+msgid "siegeMode/hint/press"
+msgstr "Націсніце"
+
+msgid "siegeMode/hint/rocketAcceleration"
+msgstr ", каб задзейнічаць рэактыўныя паскаральнікі"
+
+msgid "siegeMode/hint/turboshaftEngine"
+msgstr ", каб пераключыць рэжым працы рухавіка"
+
+msgid "siegeMode/hint/wheeled"
+msgstr ", каб пераключыць рэжым руху"
+
+msgid "statistics/exit"
+msgstr "Націсніце Esc, каб вярнуцца ў Гараж..."
+
+msgid "statistics/final/heroes"
+msgstr "?empty?"
+
+msgid "statistics/final/lifeInfo/alive"
+msgstr "?empty?"
+
+msgid "statistics/final/lifeInfo/dead"
+msgstr "Знішчаны: %s"
+
+msgid "statistics/final/personal/capturePoints"
+msgstr "Захоп базы: %d%%"
+
+msgid "statistics/final/personal/damaged"
+msgstr "Пашкодзіў:"
+
+msgid "statistics/final/personal/directHits"
+msgstr "Пацэліў: %d"
+
+msgid "statistics/final/personal/directHitsReceived"
+msgstr "Атрымаў траплянняў: %d"
+
+msgid "statistics/final/personal/droppedCapturePoints"
+msgstr "Абарона базы: %d%%"
+
+msgid "statistics/final/personal/killed"
+msgstr "Знішчыў:"
+
+msgid "statistics/final/personal/postmortem"
+msgstr "(пасмяротна)"
+
+msgid "statistics/final/personal/shots"
+msgstr "Стрэліў: %d"
+
+msgid "statistics/final/personal/spotted"
+msgstr "Выявіў:"
+
+msgid "statistics/final/reasons/reason0"
+msgstr "?empty?"
+
+msgid "statistics/final/reasons/reason1lose"
+msgstr "Уся тэхніка хаўруснікаў знішчана."
+
+msgid "statistics/final/reasons/reason1tie"
+msgstr "Уся тэхніка знішчана!"
+
+msgid "statistics/final/reasons/reason1win"
+msgstr "Уся тэхніка супраціўніка знішчана."
+
+msgid "statistics/final/reasons/reason2"
+msgstr "Захоп базы."
+
+msgid "statistics/final/reasons/reason3"
+msgstr "Час бою скончыўся."
+
+msgid "statistics/final/stats/credits"
+msgstr "Крэдыты:"
+
+msgid "statistics/final/stats/experience"
+msgstr "Досвед:"
+
+msgid "statistics/final/stats/multipliedExp"
+msgstr "Досвед (×%d):"
+
+msgid "statistics/final/stats/repair"
+msgstr "Рамонт:"
+
+msgid "statistics/final/status/lose"
+msgstr "Паражэнне! %s"
+
+msgid "statistics/final/status/tie"
+msgstr "Нічыя! %s"
+
+msgid "statistics/final/status/win"
+msgstr "Перамога! %s"
+
+msgid "statistics/header"
+msgstr "Статыстыка бою"
+
+msgid "statistics/headers/header0"
+msgstr "#"
+
+msgid "statistics/headers/header1"
+msgstr "Гулец"
+
+msgid "statistics/headers/header2"
+msgstr "Тэхніка"
+
+msgid "statistics/headers/header3"
+msgstr "Стан"
+
+msgid "statistics/headers/header4"
+msgstr "Знішчана"
+
+msgid "statistics/playerState/0"
+msgstr "знішчаны"
+
+msgid "statistics/playerState/1"
+msgstr "па-за боем"
+
+msgid "statistics/playerState/2"
+msgstr "знішчаны"
+
+msgid "statistics/playerState/3"
+msgstr "у баі"
+
+msgid "statistics/playerState/4"
+msgstr "----"
+
+msgid "statistics/tab/line_up/enemy"
+msgstr "Праціўнік"
+
+msgid "statistics/tab/line_up/header"
+msgstr "Склад атрада"
+
+msgid "statistics/tab/line_up/title"
+msgstr "Склад каманд"
+
+msgid "statistics/tab/personalReserves/header"
+msgstr "Асабістыя рэзервы"
+
+msgid "statistics/tab/personalReserves/header/title"
+msgstr "Выкарыстанне асабістых рэзерваў"
+
+msgid "statistics/tab/quests/header"
+msgstr "Задачы"
+
+msgid "statistics/tab/quests/notAvailable/title"
+msgstr "Асабістыя баявыя задачы ў гэтым рэжыме бою недаступныя"
+
+msgid "statistics/tab/quests/nothingToPerform/descr"
+msgstr "Перайдзіце ў Гаражы на ўкладку «Кампаніі», каб выбраць задачу"
+
+msgid "statistics/tab/quests/nothingToPerform/title"
+msgstr "У вас няма задач, прынятых да выканання на гэтай машыне"
+
+msgid "statistics/tab/quests/status/done"
+msgstr "Асноўная ўмова выканана"
+
+msgid "statistics/tab/quests/status/fullDone"
+msgstr "Усё выканана"
+
+msgid "statistics/tab/quests/status/inProgress"
+msgstr "Выконваецца"
+
+msgid "statistics/tab/quests/status/increaseResult"
+msgstr "Паляпшэнне выніку"
+
+msgid "statistics/tab/quests/status/onPause"
+msgstr "Прыпынена"
+
+msgid "statistics/tab/quests/switchOff/title"
+msgstr "Паказ ходу выканання задач недаступны"
+
+msgid "statistics/tabs/group"
+msgstr "Камандныя дасягненні"
+
+msgid "statistics/tabs/heroes"
+msgstr "Героі бітвы"
+
+msgid "statistics/tabs/personal"
+msgstr "Асабістыя дасягненні"
+
+msgid "statistics/team1title"
+msgstr "Хаўруснікі"
+
+msgid "statistics/team2title"
+msgstr "Праціўнік"
+
+msgid "statusNotificationTimers/staticDeathZone"
+msgstr ""
+"Пакіньце\n"
+"смяротную зону!"
+
+msgid "stun/indicator"
+msgstr "Аглушэнне экіпажу"
+
+msgid "stun/seconds"
+msgstr "с"
+
+msgid "stunFlame/indicator"
+msgstr "Эфектыўнасць зніжана"
+
+msgid "tabStatsHint"
+msgstr "— Статыстыка"
+
+msgid "tankmen/commander"
+msgstr "камандзір экіпажу"
+
+msgid "tankmen/driver"
+msgstr "механік-кіроўца"
+
+msgid "tankmen/gunner"
+msgstr "наводчык"
+
+msgid "tankmen/loader"
+msgstr "набоец"
+
+msgid "tankmen/radioman"
+msgstr "радыст"
+
+msgid "timer/battlePeriod"
+msgstr "Да канца бою:"
+
+msgid "timer/started"
+msgstr "Бой пачынаецца!"
+
+msgid "timer/starting"
+msgstr "Бой пачнецца праз:"
+
+msgid "timer/waiting"
+msgstr "Чаканне гульцоў..."
+
+msgid "trajectoryView/hint/alternateModeLeft"
+msgstr "Націсніце"
+
+msgid "trajectoryView/hint/alternateModeRight"
+msgstr ", каб пераключыць рэжым прыцэльвання"
+
+msgid "trajectoryView/hint/noBindingKey"
+msgstr "Ключавыя клавішы не прызначаны"
+
+msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_ALLY_SELF"
+msgstr "Машына знішчана хаўруснікам %(entity)s у забароненай зоне."
+
+msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "Машына знішчана %(entity)s у забароненай зоне."
+
+msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
+msgstr "Машына знішчана забароненай зонай."
+
+msgid "vehicle_messages/DEATH_FROM_DROWNING_ALLY_SELF"
+msgstr "Машына патоплена хаўруснікам %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_DROWNING_ENEMY_SELF"
+msgstr "Машына патоплена %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_DROWNING_SELF_SUICIDE"
+msgstr "Машына затоплена."
+
+msgid "vehicle_messages/DEATH_FROM_FIRE"
+msgstr "Машына знішчана пажарам."
+
+msgid "vehicle_messages/DEATH_FROM_GAS_ATTACK_ALLY_SELF"
+msgstr "Машына знішчана хаўруснікам %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_GAS_ATTACK_ENEMY_SELF"
+msgstr "Машына знішчана %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ALLY_SELF"
+msgstr "Экіпаж выбыў са строю ад моцнага ўдару хаўрусніка %(entity)s."
+
+msgid ""
+"vehicle_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Экіпаж выбыў са строю ад моцнага ўдару %(entity)s."
+
+msgid ""
+"vehicle_messages/DEATH_FROM_INACTIVE_CREW_AT_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Экіпаж выбыў са строю ад моцнага ўдару."
+
+msgid "vehicle_messages/DEATH_FROM_OVERTURN_ALLY_SELF"
+msgstr "Машына перакулена хаўруснікам %(entity)s"
+
+msgid "vehicle_messages/DEATH_FROM_OVERTURN_ENEMY_SELF"
+msgstr "Машына перакулена супраціўнікам %(entity)s"
+
+msgid "vehicle_messages/DEATH_FROM_OVERTURN_SELF_SUICIDE"
+msgstr "Машына знішчана перакульваннем"
+
+msgid "vehicle_messages/DEATH_FROM_RAMMING_ALLY_SELF"
+msgstr "Машына знішчана таранам хаўрусніка %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_RAMMING_ENEMY_SELF"
+msgstr "Машына знішчана таранам %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_RAMMING_SELF_SUICIDE"
+msgstr "Машына знішчана таранам."
+
+msgid "vehicle_messages/DEATH_FROM_SHOT"
+msgstr "Машына падбіта %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_SHOT_ARTILLERY"
+msgstr "Машына знішчана залпам артылерыйскай батарэі %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_SHOT_BOMBER"
+msgstr "Машына знішчана бамбардзіроўкай %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_WORLD_COLLISION_ALLY_SELF"
+msgstr "Машына разбіта хаўруснікам %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Машына разбіта супраціўнікам %(entity)s."
+
+msgid "vehicle_messages/DEATH_FROM_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Машына разбіта."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_RAMMING_ALLY_ALLY"
+msgstr "Хаўруснік %(entity)s пашкодзіў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_RAMMING_ALLY_SELF"
+msgstr "Хаўруснік %(entity)s пашкодзіў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_RAMMING_ALLY_SUICIDE"
+msgstr "Прылада [%(device)s] пашкоджана ў выніку тарана."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_RAMMING_ENEMY_ALLY"
+msgstr "Супраціўнік %(entity)s пашкодзіў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_RAMMING_ENEMY_SELF"
+msgstr "Супраціўнік %(entity)s пашкодзіў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_RAMMING_SELF_SUICIDE"
+msgstr "Прылада [%(device)s] пашкоджана ў выніку тарана."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_ALLY_ALLY"
+msgstr "Хаўруснік %(entity)s пашкодзіў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_ALLY_SELF"
+msgstr "Хаўруснік %(entity)s пашкодзіў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_ALLY_SUICIDE"
+msgstr "Прылада [%(device)s] пашкодзілася ў выніку моцнага ўдару."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_ENEMY_ALLY"
+msgstr "Супраціўнік %(entity)s пашкодзіў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Супраціўнік %(entity)s пашкодзіў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Прылада [%(device)s] пашкодзілася ў выніку моцнага ўдару."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_RAMMING_ALLY_ALLY"
+msgstr "Хаўруснік %(entity)s знішчыў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_RAMMING_ALLY_SELF"
+msgstr "Хаўруснік %(entity)s знішчыў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_RAMMING_ALLY_SUICIDE"
+msgstr "Прылада [%(device)s] знішчана ў выніку тарана."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_RAMMING_ENEMY_ALLY"
+msgstr "Супраціўнік %(entity)s знішчыў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_RAMMING_ENEMY_SELF"
+msgstr "Супраціўнік %(entity)s знішчыў прыладу [%(device)s] таранам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_RAMMING_SELF_SUICIDE"
+msgstr "Прылада [%(device)s] знішчана ў выніку тарана."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_WORLD_COLLISION_ALLY_ALLY"
+msgstr "Хаўруснік %(entity)s знішчыў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_WORLD_COLLISION_ALLY_SELF"
+msgstr "Хаўруснік %(entity)s знішчыў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_WORLD_COLLISION_ALLY_SUICIDE"
+msgstr "Прылада [%(device)s] знішчана ў выніку моцнага ўдару."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_WORLD_COLLISION_ENEMY_ALLY"
+msgstr "Супраціўнік %(entity)s знішчыў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_WORLD_COLLISION_ENEMY_SELF"
+msgstr "Супраціўнік %(entity)s знішчыў прыладу [%(device)s] моцным ударам."
+
+msgid "vehicle_messages/DEVICE_DESTROYED_AT_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "Прылада [%(device)s] знішчана ў выніку моцнага ўдару."
+
+msgid "vehicle_messages/DEVICE_STARTED_FIRE_AT_RAMMING_ALLY_ALLY"
+msgstr ""
+"Прылада [%(device)s] загарэлася ў выніку тарана хаўрусніка %(entity)s."
+
+msgid "vehicle_messages/DEVICE_STARTED_FIRE_AT_RAMMING_ALLY_SELF"
+msgstr ""
+"Прылада [%(device)s] загарэлася ў выніку тарана хаўрусніка %(entity)s."
+
+msgid "vehicle_messages/DEVICE_STARTED_FIRE_AT_RAMMING_ALLY_SUICIDE"
+msgstr "Прылада [%(device)s] загарэлася ў выніку тарана."
+
+msgid "vehicle_messages/DEVICE_STARTED_FIRE_AT_RAMMING_ENEMY_ALLY"
+msgstr ""
+"Прылада [%(device)s] загарэлася ў выніку тарана супраціўніка %(entity)s."
+
+msgid "vehicle_messages/DEVICE_STARTED_FIRE_AT_RAMMING_ENEMY_SELF"
+msgstr ""
+"Прылада [%(device)s] загарэлася ў выніку тарана супраціўніка %(entity)s."
+
+msgid "vehicle_messages/DEVICE_STARTED_FIRE_AT_RAMMING_SELF_SUICIDE"
+msgstr "Прылада [%(device)s] загарэлася ў выніку тарана."
+
+msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_ALLY_ALLY"
+msgstr "[%(device)s] паранены ў выніку моцнага ўдару хаўрусніка %(entity)s."
+
+msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_ALLY_SELF"
+msgstr "[%(device)s] паранены ў выніку моцнага ўдару хаўрусніка %(entity)s."
+
+msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_ALLY_SUICIDE"
+msgstr "[%(device)s] паранены ў выніку моцнага ўдару."
+
+msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_ENEMY_ALLY"
+msgstr "[%(device)s] паранены ў выніку моцнага ўдару супраціўніка %(entity)s."
+
+msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_ENEMY_SELF"
+msgstr "[%(device)s] паранены ў выніку моцнага ўдару супраціўніка %(entity)s."
+
+msgid "vehicle_messages/TANKMAN_HIT_AT_WORLD_COLLISION_SELF_SUICIDE"
+msgstr "[%(device)s] паранены ў выніку моцнага ўдару."
+
+msgid "vehicle_messages/poi_equipment_used"
+msgstr "Тактычная звычка «%(equipment)s» выкарыстаная!"
+
+msgid "warning_zone/indicator"
+msgstr "Асцярожна! Вы побач з небяспечнай зонай."

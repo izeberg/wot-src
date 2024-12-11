@@ -1,0 +1,460 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "altShot/name"
+msgstr "Боепрыпас"
+
+msgid "ammoBay/name"
+msgstr "Боеўкладка"
+
+msgid "battleAbility/name"
+msgstr "Баявы рэзерв"
+
+msgid "battleBooster/name"
+msgstr "Настаўленне"
+
+msgid "chassis/desc"
+msgstr "?empty?"
+
+msgid "chassis/name"
+msgstr "Шасі"
+
+msgid "chassis/tags"
+msgstr "?empty?"
+
+msgid "crewSkins/itemType/common"
+msgstr "Звычайнае аблічча"
+
+msgid "crewSkins/itemType/epic"
+msgstr "Унікальнае аблічча"
+
+msgid "crewSkins/itemType/rare"
+msgstr "Рэдкае аблічча"
+
+msgid "customization/camouflage"
+msgstr "Камуфляж"
+
+msgid "customization/decal"
+msgstr "Дэколь"
+
+msgid "customization/emblem"
+msgstr "Эмблема"
+
+msgid "customization/inscription"
+msgstr "Надпіс"
+
+msgid "customization/modification"
+msgstr "Эфект"
+
+msgid "customization/outfit"
+msgstr "?empty?"
+
+msgid "customization/paint"
+msgstr "Фарба"
+
+msgid "customization/personalNumber_1"
+msgstr "Адназначны нумар"
+
+msgid "customization/personalNumber_2"
+msgstr "Двухзначны нумар"
+
+msgid "customization/personalNumber_3"
+msgstr "Трохзначны нумар"
+
+msgid "customization/plural/camouflage"
+msgstr "Камуфляж"
+
+msgid "customization/plural/decal"
+msgstr "Дэколі"
+
+msgid "customization/plural/emblem"
+msgstr "Эмблемы"
+
+msgid "customization/plural/inscription"
+msgstr "Надпісы"
+
+msgid "customization/plural/modification"
+msgstr "Эфекты"
+
+msgid "customization/plural/outfit"
+msgstr "?empty?"
+
+msgid "customization/plural/paint"
+msgstr "Фарбы"
+
+msgid "customization/plural/personalNumber"
+msgstr "Трохзначныя нумары"
+
+msgid "customization/plural/projectionDecal"
+msgstr "Дэколі"
+
+msgid "customization/plural/style"
+msgstr "Стылі"
+
+msgid "customization/projectionDecal"
+msgstr "Дэколь"
+
+msgid "customization/style"
+msgstr "Стыль"
+
+msgid "dualGun/name"
+msgstr "Спараныя гарматы"
+
+msgid "engine/desc"
+msgstr "?empty?"
+
+msgid "engine/name"
+msgstr "Рухавік"
+
+msgid "engine/tags"
+msgstr "?empty?"
+
+msgid "equipment/desc"
+msgstr "?empty?"
+
+msgid "equipment/name"
+msgstr "Рыштунак"
+
+msgid "equipment/tags"
+msgstr "?empty?"
+
+msgid "flameGun/name"
+msgstr "Агнямёт"
+
+msgid "fuelTank/name"
+msgstr "Паліўны бак"
+
+msgid "fuel_tank/desc"
+msgstr "?empty?"
+
+msgid "fuel_tank/name"
+msgstr "Паліўны бак"
+
+msgid "fuel_tank/tags"
+msgstr "?empty?"
+
+msgid "gun/desc"
+msgstr "?empty?"
+
+msgid "gun/name"
+msgstr "Гармата"
+
+msgid "gun/tags"
+msgstr "?empty?"
+
+msgid "marker/igr"
+msgstr "PC방 %(vehName)s"
+
+msgid "optionalDevice/desc"
+msgstr "?empty?"
+
+msgid "optionalDevice/name"
+msgstr "Абсталяванне"
+
+msgid "optionalDevice/tags"
+msgstr "?empty?"
+
+msgid "radio/desc"
+msgstr "?empty?"
+
+msgid "radio/name"
+msgstr "Радыёстанцыя"
+
+msgid "radio/tags"
+msgstr "?empty?"
+
+msgid "shell/dimension/inch"
+msgstr "\""
+
+msgid "shell/dimension/mm"
+msgstr "мм"
+
+msgid "shell/dimension/sm"
+msgstr "см"
+
+msgid "shell/kinds/ARMOR_PIERCING"
+msgstr "Бранябойны"
+
+msgid "shell/kinds/ARMOR_PIERCING_CR"
+msgstr "Падкаліберны"
+
+msgid "shell/kinds/ARMOR_PIERCING_FSDS"
+msgstr "Бранябойны апераны падкаліберны"
+
+msgid "shell/kinds/ARMOR_PIERCING_FSDS_SHORT"
+msgstr "Бранябойны апераны"
+
+msgid "shell/kinds/ARMOR_PIERCING_HE"
+msgstr "Бранябойны каморны"
+
+msgid "shell/kinds/FLAME"
+msgstr "Агнямётная сумесь"
+
+msgid "shell/kinds/HIGH_EXPLOSIVE"
+msgstr "Асколачна-фугасны"
+
+msgid "shell/kinds/HOLLOW_CHARGE"
+msgstr "Кумулятыўны"
+
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING"
+msgstr "ББ"
+
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING_CR"
+msgstr "БП"
+
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING_FSDS"
+msgstr "БАПС"
+
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING_HE"
+msgstr "БФ"
+
+msgid "shell/kindsAbbreviation/FLAME"
+msgstr "АС"
+
+msgid "shell/kindsAbbreviation/HIGH_EXPLOSIVE"
+msgstr "АФ"
+
+msgid "shell/kindsAbbreviation/HOLLOW_CHARGE"
+msgstr "КC"
+
+msgid "shell/kindsAbbreviation/SMOKE"
+msgstr "?empty?"
+
+msgid "shell/name"
+msgstr "%(caliber)s%(dimension)s %(kind)s %(name)s"
+
+msgid "shot/desc"
+msgstr "?empty?"
+
+msgid "shot/name"
+msgstr "Снарад"
+
+msgid "shot/tags"
+msgstr "?empty?"
+
+msgid "surveyingDevice/name"
+msgstr "Назіральныя прылады"
+
+msgid "tankman/Skill_not_be_used"
+msgstr "Пасля змены спецыялізацыі навыкі не дзейнічаюць."
+
+msgid "tankman/gender/man"
+msgstr "Мужчына"
+
+msgid "tankman/gender/woman"
+msgstr "Жанчына"
+
+msgid "tankman/roles/commander"
+msgstr "Камандзір"
+
+msgid "tankman/roles/driver"
+msgstr "Механік-кіроўца"
+
+msgid "tankman/roles/female/commander"
+msgstr "Камандзір"
+
+msgid "tankman/roles/female/driver"
+msgstr "Механік-кіроўца"
+
+msgid "tankman/roles/female/gunner"
+msgstr "Наводчыца"
+
+msgid "tankman/roles/female/loader"
+msgstr "Набойца"
+
+msgid "tankman/roles/female/objectiveCase/commander"
+msgstr "Камандзіра"
+
+msgid "tankman/roles/female/objectiveCase/driver"
+msgstr "Механіка-кіроўцы"
+
+msgid "tankman/roles/female/objectiveCase/gunner"
+msgstr "Наводчыцу"
+
+msgid "tankman/roles/female/objectiveCase/loader"
+msgstr "Набойцу"
+
+msgid "tankman/roles/female/objectiveCase/radioman"
+msgstr "Радыстку"
+
+msgid "tankman/roles/female/objectiveCase/upperCase/commander"
+msgstr "КАМАНДЗІРА"
+
+msgid "tankman/roles/female/objectiveCase/upperCase/driver"
+msgstr "МЕХАНІКА-КІРОЎЦУ"
+
+msgid "tankman/roles/female/objectiveCase/upperCase/gunner"
+msgstr "НАВОДЧЫЦУ"
+
+msgid "tankman/roles/female/objectiveCase/upperCase/loader"
+msgstr "НАБОЙЦУ"
+
+msgid "tankman/roles/female/objectiveCase/upperCase/radioman"
+msgstr "РАДЫСТКУ"
+
+msgid "tankman/roles/female/possessiveCase/commander"
+msgstr "навыкі камандзіра"
+
+msgid "tankman/roles/female/possessiveCase/driver"
+msgstr "навыкі механіка-кіроўцы"
+
+msgid "tankman/roles/female/possessiveCase/gunner"
+msgstr "навыкі наводчыцы"
+
+msgid "tankman/roles/female/possessiveCase/loader"
+msgstr "навыкі набойцы"
+
+msgid "tankman/roles/female/possessiveCase/radioman"
+msgstr "навыкі радысткі"
+
+msgid "tankman/roles/female/radioman"
+msgstr "Радыстка"
+
+msgid "tankman/roles/gunner"
+msgstr "Наводчык"
+
+msgid "tankman/roles/loader"
+msgstr "Набойца"
+
+msgid "tankman/roles/objectiveCase/commander"
+msgstr "Камандзіра"
+
+msgid "tankman/roles/objectiveCase/driver"
+msgstr "Механіка-кіроўцы"
+
+msgid "tankman/roles/objectiveCase/gunner"
+msgstr "Наводчыка"
+
+msgid "tankman/roles/objectiveCase/loader"
+msgstr "Набойцы"
+
+msgid "tankman/roles/objectiveCase/radioman"
+msgstr "Радыста"
+
+msgid "tankman/roles/objectiveCase/upperCase/commander"
+msgstr "КАМАНДЗІРА"
+
+msgid "tankman/roles/objectiveCase/upperCase/driver"
+msgstr "МЕХАНІКА-КІРОЎЦУ"
+
+msgid "tankman/roles/objectiveCase/upperCase/gunner"
+msgstr "НАВОДЧЫКА"
+
+msgid "tankman/roles/objectiveCase/upperCase/loader"
+msgstr "НАБОЙЦЫ"
+
+msgid "tankman/roles/objectiveCase/upperCase/radioman"
+msgstr "РАДЫСТА"
+
+msgid "tankman/roles/possessiveCase/commander"
+msgstr "навыкі камандзіра"
+
+msgid "tankman/roles/possessiveCase/driver"
+msgstr "навыкі механіка-кіроўцы"
+
+msgid "tankman/roles/possessiveCase/gunner"
+msgstr "навыкі наводчыка"
+
+msgid "tankman/roles/possessiveCase/loader"
+msgstr "навыкі набойцы"
+
+msgid "tankman/roles/possessiveCase/radioman"
+msgstr "навыкі радыста"
+
+msgid "tankman/roles/radioman"
+msgstr "Радыст"
+
+msgid "tankman/roles/smallResolution/normalCase/driver"
+msgstr "Механіка-кіроўцы"
+
+msgid "tankman/roles/smallResolution/upperCase/driver"
+msgstr "МЕХАНІКА-КІРОЎЦЫ"
+
+msgid "tankman/skills/main"
+msgstr "Асноўны навык"
+
+msgid "tankman/skills/permanent_descr"
+msgstr ""
+" \n"
+"\n"
+"Навык нельга скінуць."
+
+msgid "tankman/skills/type/perk"
+msgstr "Звычка. Пачынае дзейнічаць, дасягнуўшы 100% спрактыкаванасці."
+
+msgid "tankman/skills/type/perk_common"
+msgstr ""
+"Звычка. Пачынае дзейнічаць, дасягнуўшы<br/>100% спрактыкаванасці ва ўсіх "
+"танкістаў экіпажа."
+
+msgid "tankman/skills/type/perk_short"
+msgstr "Навык"
+
+msgid "tankman/skills/type/skill"
+msgstr ""
+"Навык. Дзейнічае ад пачатку вывучэння.<br/>Эфектыўнасць павялічваецца цягам "
+"усяго навучання."
+
+msgid "tankman/skills/type/skill_short"
+msgstr "Навык"
+
+msgid "track/name"
+msgstr "Тракавы пас"
+
+msgid "turret/desc"
+msgstr "?empty?"
+
+msgid "turret/name"
+msgstr "Вежа"
+
+msgid "turret/tags"
+msgstr "?empty?"
+
+msgid "turretRotator/name"
+msgstr "Вежа"
+
+msgid "vehicle/desc"
+msgstr "?empty?"
+
+msgid "vehicle/name"
+msgstr "Машына"
+
+msgid "vehicle/tags/at-spg/desc"
+msgstr "?empty?"
+
+msgid "vehicle/tags/at-spg/name"
+msgstr "СТ-САУ"
+
+msgid "vehicle/tags/heavy_tank/desc"
+msgstr "?empty?"
+
+msgid "vehicle/tags/heavy_tank/name"
+msgstr "Цяжкі танк"
+
+msgid "vehicle/tags/light_tank/desc"
+msgstr "?empty?"
+
+msgid "vehicle/tags/light_tank/name"
+msgstr "Лёгкі танк"
+
+msgid "vehicle/tags/medium_tank/desc"
+msgstr "?empty?"
+
+msgid "vehicle/tags/medium_tank/name"
+msgstr "Сярэдні танк"
+
+msgid "vehicle/tags/spg/desc"
+msgstr "?empty?"
+
+msgid "vehicle/tags/spg/name"
+msgstr "САУ"
+
+msgid "wheel/name"
+msgstr "Шасі"

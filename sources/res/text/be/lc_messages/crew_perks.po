@@ -1,0 +1,839 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "brotherhood/alt/description"
+msgstr ""
+"Павышэнне ўзроўню валодання асноўнай спецыяльнасцю вышэй за 100% не прыводзіць да паляпшэння гэтага навыку.\n"
+"\n"
+"Узровень валодання асноўнай спецыяльнасцю ўплывае на баявыя навыкі танкіста пры кіраванні машынай, а таксама на ўсе яго навыкі.\n"
+"\n"
+"Параметр можна дадаткова павысіць, паставіўшы абсталяванне або рыштунак з падобным эфектам, а настаўленне «Прадзіманне паветраводаў» узмоцніць эфект."
+
+msgid "brotherhood/alt/info"
+msgstr ""
+"У групавым навыку ўлічваецца сярэдні ўзровень яго вывучэння ўсімі танкістамі"
+" экіпажа. Пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю"
+" эфектыўнасць па меры вывучэння."
+
+msgid "brotherhood/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Узровень валодання асноўнай "
+"спецыяльнасцю{greenBright_End} усімі танкістамі экіпажа павышаны на "
+"{greenBright_Start}%(crewLevelIncrease)s{greenBright_End}."
+
+msgid "brotherhood/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне ўсімі танкістамі экіпажа павысіць іх "
+"{greenBright_Start}узровень валодання асноўнай "
+"спецыяльнасцю{greenBright_End} на "
+"{greenBright_Start}%(crewLevelIncrease)s{greenBright_End}."
+
+msgid "brotherhood/name"
+msgstr "Таварышы па зброі"
+
+msgid "brotherhood/shortDescription"
+msgstr "Павышае агульную эфектыўнасць экіпажа."
+
+msgid "brotherhood_offspring/name"
+msgstr "Нязломныя"
+
+msgid "brotherhood_sabaton/name"
+msgstr "Нязломныя"
+
+msgid "brotherhood_witches/name"
+msgstr "Шабас"
+
+msgid "brotherhood_yha/name"
+msgstr "Брацтва зайцоў"
+
+msgid "camouflage/alt/description"
+msgstr ""
+"Навык уплывае на скрытасць машыны. Яго можна дадаткова ўзмоцніць пры дапамозе настаўлення «Укрыцці на мясцовасці».\n"
+"\n"
+"Акрамя таго, скрытасць машыны павышаецца з нанясеннем камуфляжу або стылю, а таксама абсталяваннем з падобным эфектам."
+
+msgid "camouflage/alt/info"
+msgstr ""
+"У групавым навыку ўлічваецца сярэдні ўзровень яго вывучэння ўсімі танкістамі"
+" экіпажа. Пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю"
+" эфектыўнасць па меры вывучэння."
+
+msgid "camouflage/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Скрытасць{greenBright_End} машыны павышана на "
+"{greenBright_Start}%(maskingFactor)s{greenBright_End}."
+
+msgid "camouflage/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне ўсімі танкістамі экіпажа павысіць "
+"{greenBright_Start}скрытасць{greenBright_End} машыны на "
+"{greenBright_Start}%(maskingFactor)s{greenBright_End}."
+
+msgid "camouflage/name"
+msgstr "Маскіроўка"
+
+msgid "camouflage/shortDescription"
+msgstr "Павышае базавую скрытасьц машыны."
+
+msgid "commander_eagleEye/alt/description"
+msgstr ""
+"Дадаткова поле агляду можна павысіць, вывучыўшы навык «Радыёперахоп» або "
+"паставіўшы абсталяванне з падобным эфектам. Выкарыстанне настаўлення "
+"«Каліброўка оптыкі» ўзмацняе эфект."
+
+msgid "commander_eagleEye/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "commander_eagleEye/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Поле агляду{greenBright_End} павышана на "
+"{greenBright_Start}%(circularVisionRadius)s{greenBright_End}&zwnbsp;. У "
+"выпадку пашкоджання назіральных прылад эфект узмоцніцца да "
+"{greenBright_Start}%(circularVisionRadiusWhileSurveyingDeviceDamaged)s{greenBright_End}&zwnbsp;."
+
+msgid "commander_eagleEye/hudDescription"
+msgstr "Палепшаны агляд пры пашкоджаных назіральных прыладах."
+
+msgid "commander_eagleEye/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}поле агляду{greenBright_End} на"
+" {greenBright_Start}%(circularVisionRadius)s{greenBright_End}&zwnbsp;. У "
+"выпадку пашкоджання назіральных прылад эфект узмоцніцца да "
+"{greenBright_Start}%(circularVisionRadiusWhileSurveyingDeviceDamaged)s{greenBright_End}&zwnbsp;."
+
+msgid "commander_eagleEye/name"
+msgstr "Арліны зрок"
+
+msgid "commander_eagleEye/shortDescription"
+msgstr "Паляпшае агляд, асабліва пры няспраўнасці назіральных прылад."
+
+msgid "commander_enemyShotPredictor/alt/description"
+msgstr ""
+"Папярэджанне пра стрэл САУ праціўніка спрацоўвае з пэўнай затрымкай пасля "
+"пасля яе стрэлу па вашай машыне."
+
+msgid "commander_enemyShotPredictor/alt/info"
+msgstr ""
+"Навык з сітуацыйным эфектам пачынае дзейнічаць пры вывучэнні прынамсі на 1%,"
+" павялічваючы сваю эфектыўнасць па меры вывучэння."
+
+msgid "commander_enemyShotPredictor/currentLvlDescription"
+msgstr ""
+"{yellow_Start}Папярэджанне пра стрэл САУ{yellow_End} праціўніка і вызначэнне"
+" кірунку гэтага стрэлу адбываецца з затрымкай "
+"{yellow_Start}%(artNotificationDelayFactor)s{yellow_End}."
+
+msgid "commander_enemyShotPredictor/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне дазволіць атрымліваць {yellow_Start}папярэджанне пра стрэл "
+"САУ{yellow_End} праціўніка з затрымкай "
+"{yellow_Start}%(artNotificationDelayFactor)s{yellow_End} і вызначаць кірунак"
+" гэтага стрэлу."
+
+msgid "commander_enemyShotPredictor/name"
+msgstr "Гукавая разведка"
+
+msgid "commander_enemyShotPredictor/shortDescription"
+msgstr "Папярэджвае пра стрэл САУ праціўніка."
+
+msgid "commander_expert/alt/description"
+msgstr ""
+"Вызначэнне пашкоджання модуляў цэлі працуе для машын у зоне бачнасці "
+"камандзіра як у рэжыме прамой наводкі, так і ў артылерыйскім рэжыме "
+"прыцэльвання."
+
+msgid "commander_expert/alt/info"
+msgstr ""
+"Навык з сітуацыйным эфектам пачынае дзейнічаць пры вывучэнні прынамсі на 1%,"
+" павялічваючы сваю эфектыўнасць па меры вывучэння."
+
+msgid "commander_expert/currentLvlDescription"
+msgstr ""
+"Камандзір можа {yellow_Start}вызначыць пашкоджанні модуляў{yellow_End} цэлі "
+"з затрымкай {yellow_Start}%(damageMonitoringDelay)s{yellow_End}."
+
+msgid "commander_expert/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне дазволіць {yellow_Start}вызначаць пашкоджанні "
+"модуляў{yellow_End} цэлі з затрымкай "
+"{yellow_Start}%(damageMonitoringDelay)s{yellow_End}."
+
+msgid "commander_expert/name"
+msgstr "Эксперт"
+
+msgid "commander_expert/shortDescription"
+msgstr "Дазваляе вызначаць пашкоджанні модуляў цэлі."
+
+msgid "commander_sixthSense/alt/description"
+msgstr ""
+"Час выяўлення небяспекі можна паменшыць пры дапамозе настаўлення «Павышаная "
+"ўвага»."
+
+msgid "commander_sixthSense/alt/info"
+msgstr ""
+"Асаблівая здольнасць камандзіра не патрабуе вывучэння і даступная камандзіру"
+" ад пачатку."
+
+msgid "commander_sixthSense/currentLvlDescription"
+msgstr ""
+"Дазваляе камандзіру вызначыць, ці выяўлена яго машына праціўнікам. Пачынае "
+"дзейнічаць праз {greenBright_Start}%(delay)s{greenBright_End} з моманту "
+"выяўлення."
+
+msgid "commander_sixthSense/maxLvlDescription"
+msgstr ""
+"Дазваляе камандзіру вызначыць, ці выяўлена яго машына праціўнікам. Пачынае "
+"дзейнічаць праз {greenBright_Start}%(delay)s{greenBright_End} з моманту "
+"выяўлення."
+
+msgid "commander_sixthSense/name"
+msgstr "Шостае пачуцце"
+
+msgid "commander_sixthSense/shortDescription"
+msgstr "Дазваляе камандзіру вызначаць, ці выяўлена яго машына праціўнікам."
+
+msgid "commander_tutor/alt/description"
+msgstr ""
+"Раненне камандзіра не ўплывае на эфектыўнасць навыку. Надбаўка прымяняецца толькі да базавай колькасці досведу экіпажа, атрыманага ім па выніках бою.\n"
+"\n"
+"Дадатковы досвед экіпажа можна хутка атрымаць, выкарыстоўваючы вучэбныя матэрыялы або пры абмене вольнага досведу на досвед экіпажа."
+
+msgid "commander_tutor/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "commander_tutor/currentLvlDescription"
+msgstr ""
+"Колькасць атрыманага па выніках бою "
+"{greenBright_Start}досведу{greenBright_End} для {greenBright_Start}усіх "
+"танкістаў экіпажа{greenBright_End} павялічана на "
+"{greenBright_Start}%(xpBonusFactorPerLevel)s{greenBright_End}."
+
+msgid "commander_tutor/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павялічыць колькасць атрыманага па выніках бою "
+"{greenBright_Start}досведу{greenBright_End} для {greenBright_Start}усіх "
+"танкістаў экіпажа{greenBright_End} на "
+"{greenBright_Start}%(xpBonusFactorPerLevel)s{greenBright_End}."
+
+msgid "commander_tutor/name"
+msgstr "Настаўнік"
+
+msgid "commander_tutor/shortDescription"
+msgstr ""
+"Павялічвае колькасць досведу па выніках бою для ўсіх танкістаў экіпажа."
+
+msgid "commander_universalist/alt/description"
+msgstr ""
+"Камандзір можа замяніць толькі асноўную спецыяльнасць параненага танкіста. З"
+" павелічэннем колькасці параненых эфектыўнасць замены зніжаецца."
+
+msgid "commander_universalist/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "commander_universalist/currentLvlDescription"
+msgstr ""
+"Камандзір можа {greenBright_Start}замяніць параненага{greenBright_End} "
+"танкіста з эфектыўнасцю "
+"{greenBright_Start}%(woundedCrewEfficiency)s{greenBright_End}."
+
+msgid "commander_universalist/hudDescription"
+msgstr "Абавязкі параненага танкіста выконвае камандзір."
+
+msgid "commander_universalist/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне дазволіць камандзіру {greenBright_Start}замяняць "
+"параненага{greenBright_End} танкіста з эфектыўнасцю "
+"{greenBright_Start}%(woundedCrewEfficiency)s{greenBright_End}."
+
+msgid "commander_universalist/name"
+msgstr "Рукі на ўсе штукі"
+
+msgid "commander_universalist/shortDescription"
+msgstr "Дазваляе камандзіру замяняць у баі параненых танкістаў."
+
+msgid "driver_badRoadsKing/alt/description"
+msgstr ""
+"Павышае манеўранасць машыны і памяншае час набору максімальнай хуткасці пры "
+"руху па вязкіх і сярэдніх грунтах."
+
+msgid "driver_badRoadsKing/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "driver_badRoadsKing/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Страта хуткасці{greenBright_End} зніжана на "
+"{greenBright_Start}%(vehicleWeakSoilResistance)s{greenBright_End} пры руху "
+"па вязкіх і на "
+"{greenBright_Start}%(vehicleAverageSoilResistance)s{greenBright_End} пры "
+"руху па сярэдніх грунтах."
+
+msgid "driver_badRoadsKing/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне знізіць {greenBright_Start}страту хуткасці{greenBright_End}"
+" на {greenBright_Start}%(vehicleWeakSoilResistance)s{greenBright_End} пры "
+"руху па вязкіх і на "
+"{greenBright_Start}%(vehicleAverageSoilResistance)s{greenBright_End} пры "
+"руху па сярэдніх грунтах."
+
+msgid "driver_badRoadsKing/name"
+msgstr "Язда па бездаражы"
+
+msgid "driver_badRoadsKing/shortDescription"
+msgstr "Зніжае страту хуткасці на вязкіх і сярэдніх грунтах."
+
+msgid "driver_rammingMaster/alt/description"
+msgstr ""
+"Уплывае толькі на пашкоджанні пры сутыкненні машын і не ўлічвае сутыкненні з хаўруснікамі.\n"
+"\n"
+"Дадаткова знізіць пашкоджанні вашай машыны пры таране можна, паставіўшы абсталяванне з падобным эфектам."
+
+msgid "driver_rammingMaster/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "driver_rammingMaster/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Пашкоджанні{greenBright_End} праціўніку "
+"{greenBright_Start}таранам{greenBright_End} павышаны на "
+"{greenBright_Start}%(damageEnemiesByRamming)s{greenBright_End}, "
+"{greenBright_Start}вашы пашкоджанні{greenBright_End} зніжаны на "
+"{greenBright_Start}%(vehicleRamDamageResistance)s{greenBright_End}."
+
+msgid "driver_rammingMaster/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}урон{greenBright_End} "
+"праціўніку {greenBright_Start}таранам{greenBright_End} на "
+"{greenBright_Start}%(damageEnemiesByRamming)s{greenBright_End}, знізіўшы "
+"{greenBright_Start}вашы пашкоджанні{greenBright_End} на "
+"{greenBright_Start}%(vehicleRamDamageResistance)s{greenBright_End}."
+
+msgid "driver_rammingMaster/name"
+msgstr "На таран!"
+
+msgid "driver_rammingMaster/shortDescription"
+msgstr ""
+"Памяншае пашкоджанні ўласнай машыны і павялічвае пашкоджанні машыны "
+"супраціўніка пры таране."
+
+msgid "driver_smoothDriving/alt/description"
+msgstr ""
+"Не ўплывае на роскід нерухомай машыны і роскід пры павароце корпуса.\n"
+"\n"
+"Навык можна ўзмоцніць пры дапамозе настаўлення «Тонкасці работы каробкі перадач». Дадаткова роскід пры стральбе падчас руху можна знізіць, паставіўшы абсталяванне з падобным эфектам. Выкарыстанне настаўлення «Змазванне стабілізатараў» узмоцніць гэты эфект."
+
+msgid "driver_smoothDriving/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "driver_smoothDriving/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Роскід{greenBright_End} пры стральбе падчас руху зніжаны "
+"на "
+"{greenBright_Start}%(vehicleGunShotDispersionChassisMovement)s{greenBright_End}."
+
+msgid "driver_smoothDriving/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне знізіць {greenBright_Start}роскід{greenBright_End} пры "
+"стральбе падчас руху на "
+"{greenBright_Start}%(vehicleGunShotDispersionChassisMovement)s{greenBright_End}."
+
+msgid "driver_smoothDriving/name"
+msgstr "Роўная язда"
+
+msgid "driver_smoothDriving/shortDescription"
+msgstr "Зніжае роскід пры стральбе падчас руху."
+
+msgid "driver_tidyPerson/alt/description"
+msgstr ""
+"Дадаткова пажараўстойлівасць машыны можна павысіць, паставіўшы абсталяванне "
+"і рыштунак з падобным эфектам. Навык «Гашэнне пажару» павялічыць хуткасць "
+"гашэння пажару пры яго ўзнікненні."
+
+msgid "driver_tidyPerson/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "driver_tidyPerson/currentLvlDescription"
+msgstr ""
+"Імавернасць {greenBright_Start}узгарання рухавіка{greenBright_End} зніжана "
+"на {greenBright_Start}%(vehicleFireChance)s{greenBright_End}."
+
+msgid "driver_tidyPerson/maxLvlDescription"
+msgstr ""
+"Пры поўным вывучэнні імавернасць {greenBright_Start}узгарання "
+"рухавіка{greenBright_End} паменшыцца на "
+"{greenBright_Start}%(vehicleFireChance)s{greenBright_End}."
+
+msgid "driver_tidyPerson/name"
+msgstr "Чысціня і парадак"
+
+msgid "driver_tidyPerson/shortDescription"
+msgstr "Зніжае шанц узгарання рухавіка."
+
+msgid "driver_virtuoso/alt/description"
+msgstr ""
+"Дадаткова хуткасць павароту машыны можна павысіць, паставіўшы абсталяванне з"
+" падобным эфектам, а таксама выкарыстоўваючы рыштунак, які павышае "
+"магутнасць рухавіка."
+
+msgid "driver_virtuoso/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "driver_virtuoso/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Хуткасць павароту{greenBright_End} машыны павышана на "
+"{greenBright_Start}%(vehicleAllGroundRotationSpeed)s{greenBright_End}."
+
+msgid "driver_virtuoso/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}хуткасць "
+"павароту{greenBright_End} машыны на "
+"{greenBright_Start}%(vehicleAllGroundRotationSpeed)s{greenBright_End}"
+
+msgid "driver_virtuoso/name"
+msgstr "Тармажэнне счэпам"
+
+msgid "driver_virtuoso/shortDescription"
+msgstr "Павышае хуткасць павароту машыны."
+
+msgid "fireFighting/alt/description"
+msgstr "Навык можна ўзмацніць пры дапамозе настаўлення «Барацьба з агнём»."
+
+msgid "fireFighting/alt/info"
+msgstr ""
+"У групавым навыку ўлічваецца сярэдні ўзровень яго вывучэння ўсімі танкістамі"
+" экіпажа. Пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю"
+" эфектыўнасць па меры вывучэння."
+
+msgid "fireFighting/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Хуткасць гашэння{greenBright_End} пажару павышана на "
+"{greenBright_Start}%(fireExtinguishingRate)s{greenBright_End}."
+
+msgid "fireFighting/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне ўсімі танкістамі экіпажа павысіць "
+"{greenBright_Start}хуткасць гашэння{greenBright_End} пажару на "
+"{greenBright_Start}%(fireExtinguishingRate)s{greenBright_End}."
+
+msgid "fireFighting/name"
+msgstr "Гашэнне пажару"
+
+msgid "fireFighting/shortDescription"
+msgstr "Паскарае гашэнне пажару."
+
+msgid "gunner_gunsmith/alt/description"
+msgstr "Калі навык набыты двума наводчыкамі, эфект не сумуецца."
+
+msgid "gunner_gunsmith/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "gunner_gunsmith/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Штраф да роскіду{greenBright_End} пашкоджанай гарматы "
+"зніжаны на "
+"{greenBright_Start}%(vehicleGunShotDispersionWhileGunDamaged)s{greenBright_End}."
+
+msgid "gunner_gunsmith/hudDescription"
+msgstr "Зменшаны роскід пашкоджанй гарматы."
+
+msgid "gunner_gunsmith/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне знізіць {greenBright_Start}штраф да "
+"роскіду{greenBright_End} пашкоджанай гарматы на "
+"{greenBright_Start}%(vehicleGunShotDispersionWhileGunDamaged)s{greenBright_End}."
+
+msgid "gunner_gunsmith/name"
+msgstr "Збройнік"
+
+msgid "gunner_gunsmith/shortDescription"
+msgstr "Зніжае штраф да трапнасці пашкоджанай гарматы."
+
+msgid "gunner_rancorous/alt/description"
+msgstr ""
+"Дзейнічае як у рэжыме прамой наводкі, так і ў артылерыйскім прыцэле. Калі навык набыты двума наводчыкамі, эфект не сумуецца.\n"
+"\n"
+"Зону бачнасці наводчыка вызначае сектар ±10° (сумарна 20°) адносна гарматы машыны з улікам поля агляду.\n"
+"\n"
+"Навык можна дадаткова ўзмацніць пры дапамозе настаўлення «Засяроджанне на цэлі». Усталяванне «Палепшанага радыёабсталявання» яшчэ больш павялічыць час да знікнення."
+
+msgid "gunner_rancorous/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "gunner_rancorous/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Час да знікнення машыны{greenBright_End} праціўніка з "
+"зоны бачнасці наводчыка павялічаны на "
+"{greenBright_Start}%(vehicleEnemySpottingTime)s{greenBright_End}."
+
+msgid "gunner_rancorous/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павялічыць {greenBright_Start}час да знікнення "
+"машыны{greenBright_End} праціўніка з зоны бачнасці наводчыка на "
+"{greenBright_Start}%(vehicleEnemySpottingTime)s{greenBright_End}."
+
+msgid "gunner_rancorous/name"
+msgstr "Падсветка цэлі"
+
+msgid "gunner_rancorous/shortDescription"
+msgstr "Павялічвае час да знікнення праціўніка з зоны бачнасці наводчыка."
+
+msgid "gunner_smoothTurret/alt/description"
+msgstr ""
+"Калі навык набыты двума наводчыкамі, эфект не сумуецца.\n"
+"\n"
+"Навык можна ўзмацніць пры дапамозе настаўлення «Цвёрдая рука». Дадатковая роскід пры павароце вежы можна знізіць, паставіўшы абсталяванне з падобным эфектам. Выкарыстанне настаўленне «Змазванне стабілізатараў» узмоцніць гэты эфект."
+
+msgid "gunner_smoothTurret/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "gunner_smoothTurret/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Роскід{greenBright_End} пры павароце вежы зніжаны на "
+"{greenBright_Start}%(turretAimingDispersion)s{greenBright_End}."
+
+msgid "gunner_smoothTurret/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне знізіць {greenBright_Start}роскід{greenBright_End} пры "
+"павароце вежы на "
+"{greenBright_Start}%(turretAimingDispersion)s{greenBright_End}."
+
+msgid "gunner_smoothTurret/name"
+msgstr "Стральба наўскідку"
+
+msgid "gunner_smoothTurret/shortDescription"
+msgstr "Зніжае роскід пры павроце вежы."
+
+msgid "gunner_sniper/alt/description"
+msgstr "Калі навык набыты двума наводчыкамі, эфект не сумуецца."
+
+msgid "gunner_sniper/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "gunner_sniper/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Шанец паражэння модуляў{greenBright_End} і "
+"{greenBright_Start}танкістаў экіпажа{greenBright_End} праціўніка павышаны на"
+" {greenBright_Start}%(enemyModulesCrewCritChance)s{greenBright_End}. Толькі "
+"для бранябойных, падкаліберных, бранябойных апераных падкаліберных і "
+"кумулятыўных снарадаў."
+
+msgid "gunner_sniper/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}шанец паражэння "
+"модуляў{greenBright_End} і {greenBright_Start}танкістаў "
+"экіпажа{greenBright_End} праціўніка на "
+"{greenBright_Start}%(enemyModulesCrewCritChance)s{greenBright_End}. Толькі "
+"для бранябойных, падкаліберных, бранябойных апераных падкаліберных і "
+"кумулятыўных снарадаў."
+
+msgid "gunner_sniper/name"
+msgstr "Цалок"
+
+msgid "gunner_sniper/shortDescription"
+msgstr "Павышае шанц паражэння модуляў і экіпажа праціўніка."
+
+msgid "loader_desperado/alt/description"
+msgstr ""
+"Калі навык набыты двума набойцамі, эфект не сумуецца. Дадаткова хуткасць "
+"перанабівання можна павысіць, паставіўшы абсталяванне з падобным эфектам. "
+"Выкарыстанне настаўлення «Рацыянальная боеўкладка» ўзмоцніць гэты эфект."
+
+msgid "loader_desperado/alt/info"
+msgstr ""
+"Навык з сітуацыйным эфектам пачынае дзейнічаць пры вывучэнні прынамсі на 1%,"
+" павялічваючы сваю эфектыўнасць па меры вывучэння."
+
+msgid "loader_desperado/currentLvlDescription"
+msgstr ""
+"{yellow_Start}Перанабіванне гарматы{yellow_End} паскорыцца на "
+"{yellow_Start}%(vehicleGunReloadTime)s{yellow_End}, калі ў машыны застанецца"
+" не больш за 10%% трываласці."
+
+msgid "loader_desperado/hudDescription"
+msgstr "Паскоранае перанабіванне гарматы (нізкі запас трываласці машыны)"
+
+msgid "loader_desperado/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне паскорыць {yellow_Start}перанабіванне гарматы{yellow_End} "
+"на {yellow_Start}%(vehicleGunReloadTime)s{yellow_End}, калі ў машыны "
+"застанецца не больш за 10%% трываласці."
+
+msgid "loader_desperado/name"
+msgstr "Наплыў адрэналіну"
+
+msgid "loader_desperado/shortDescription"
+msgstr ""
+"Паскарае перанабіванне гарматы, калі ў машыны застаецца менш за 10% "
+"трываласці."
+
+msgid "loader_intuition/alt/description"
+msgstr ""
+"Улічваецца сярэдняе значэнне паміж набойцамі машыны. Для актывацыі навыку "
+"гармата, абедзве гарматы або магазін павінны быць цалкам зараджаныя. "
+"Мінімальны час змены снарада для цыклічных (стандартных) гармат — 1 с, для "
+"двухгарматных сістэм і магазінаў — 2,5 с."
+
+msgid "loader_intuition/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "loader_intuition/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Хуткасць змены тыпу снарада{greenBright_End} ва ўжо "
+"зараджанай гармаце павышана на "
+"{greenBright_Start}%(vehicleReloadTimeAfterShellChange)s{greenBright_End}."
+
+msgid "loader_intuition/hudDescription"
+msgstr "Павышана хуткасць змены тыпу снарада."
+
+msgid "loader_intuition/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}хуткасць змены тыпу "
+"снарада{greenBright_End} ва ўжо зараджанай гармаце на "
+"{greenBright_Start}%(vehicleReloadTimeAfterShellChange)s{greenBright_End}."
+
+msgid "loader_intuition/name"
+msgstr "Прадчуццё"
+
+msgid "loader_intuition/shortDescription"
+msgstr "Значная памяншае хуткасць змены тыпу снарада ў зараджанай гармаце."
+
+msgid "loader_pedant/alt/description"
+msgstr ""
+"Раненне набойцы не ўплывае на эфектыўнасць навыку. Калі навык набыты двума набойцамі, эфект не сумуецца.\n"
+"\n"
+"Навык можна ўзмацніць пры дапамозе настаўлення «Раскладка снарадаў». \n"
+"Дадаткова трываласць боеўкладкі можна павысіць, паставіўшы абсталяванне з падобным эфектам."
+
+msgid "loader_pedant/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "loader_pedant/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Трываласць боеўкладкі{greenBright_End} павышана на "
+"{greenBright_Start}%(vehicleAmmoBayStrength)s{greenBright_End}."
+
+msgid "loader_pedant/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}трываласць "
+"боеўкладкі{greenBright_End} на "
+"{greenBright_Start}%(vehicleAmmoBayStrength)s{greenBright_End}"
+
+msgid "loader_pedant/name"
+msgstr "Бяспечная боеўкладка"
+
+msgid "loader_pedant/shortDescription"
+msgstr "Павялічвае трываласць боеўкладкі"
+
+msgid "measureType/meters"
+msgstr "%s м"
+
+msgid "measureType/mph"
+msgstr "%s км/гадз"
+
+msgid "measureType/percents"
+msgstr "%s%%"
+
+msgid "measureType/seconds"
+msgstr "%s&nbsp;с"
+
+msgid "perkRole/commander"
+msgstr "Камандзір"
+
+msgid "perkRole/common"
+msgstr "Група"
+
+msgid "perkRole/driver"
+msgstr "Механік-кіроўца"
+
+msgid "perkRole/gunner"
+msgstr "Наводчык"
+
+msgid "perkRole/loader"
+msgstr "Набойца"
+
+msgid "perkRole/radioman"
+msgstr "Радыст"
+
+msgid "radioman_finder/alt/description"
+msgstr ""
+"Калі навык набыты двума радыстамі, эфект не сумуецца.\n"
+"\n"
+"Дадаткова поле агляду можна павысіць, вывучыўшы навык «Арліны зрок» або паставіўшы абсталяванне з падобным эфектам. Выкарыстанне настаўлення «Каліброўка оптыкі» ўзмацняе эфект."
+
+msgid "radioman_finder/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "radioman_finder/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Поле агляду{greenBright_End} павышана на "
+"{greenBright_Start}%(vehicleCircularVisionRadius)s{greenBright_End}."
+
+msgid "radioman_finder/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне павысіць {greenBright_Start}поле агляду{greenBright_End} на"
+" {greenBright_Start}%(vehicleCircularVisionRadius)s{greenBright_End}."
+
+msgid "radioman_finder/name"
+msgstr "Радыёперахват"
+
+msgid "radioman_finder/shortDescription"
+msgstr "Паляпшае агляд."
+
+msgid "radioman_inventor/alt/description"
+msgstr "Калі навык набыты двума радыстамі, эфект не сумуецца."
+
+msgid "radioman_inventor/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "radioman_inventor/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Далёкасць сувязі{greenBright_End} павялічана на "
+"{greenBright_Start}%(radioDistance)s{greenBright_End}."
+
+msgid "radioman_inventor/hudDescription"
+msgstr "Павышана эфектыўнасць экіпажа."
+
+msgid "radioman_inventor/maxLvlDescription"
+msgstr ""
+"Павялічыць {greenBright_Start}далёкасць сувязі{greenBright_End} на "
+"{greenBright_Start}%(radioDistance)s{greenBright_End}."
+
+msgid "radioman_inventor/name"
+msgstr "Узмацняльнік сігналу"
+
+msgid "radioman_inventor/shortDescription"
+msgstr "Павялічвае далёкасць радыёсувязі."
+
+msgid "radioman_lastEffort/alt/description"
+msgstr ""
+"Калі навык набыты двума радыстамі, эфект не сумуецца. Эфект дзейнічае ў тым выпадку, калі на момант знішчэння машыны радыст не быў паранены.\n"
+"\n"
+"Навык можна дадаткова ўзмацніць пры дапамозе настаўлення «Доўг перадусім»."
+
+msgid "radioman_lastEffort/alt/info"
+msgstr ""
+"Навык з сітуацыйным эфектам пачынае дзейнічаць пры вывучэнні прынамсі на 1%,"
+" павялічваючы сваю эфектыўнасць па меры вывучэння."
+
+msgid "radioman_lastEffort/currentLvlDescription"
+msgstr ""
+"Радыст можа {yellow_Start}перадаваць разведданыя{yellow_End} яшчэ "
+"{yellow_Start}%(radiomanDurationPerLevel)s{yellow_End} пасля знішчэння вашай"
+" машыны."
+
+msgid "radioman_lastEffort/hudDescription"
+msgstr " "
+
+msgid "radioman_lastEffort/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне дазволіць {yellow_Start}перадаваць разведданыя{yellow_End} "
+"яшчэ {yellow_Start}%(radiomanDurationPerLevel)s{yellow_End} пасля знішчэння "
+"вашай машыны."
+
+msgid "radioman_lastEffort/name"
+msgstr "З астатніх сіл"
+
+msgid "radioman_lastEffort/shortDescription"
+msgstr ""
+"Ненадоўга дазваляе перадаваць разведданыя пасля знішчэння вашай машыны."
+
+msgid "radioman_retransmitter/alt/description"
+msgstr "Калі навык набыты двума радыстамі, эфект не сумуецца."
+
+msgid "radioman_retransmitter/alt/info"
+msgstr ""
+"Навык пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю "
+"эфектыўнасць па меры вывучэння."
+
+msgid "radioman_retransmitter/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}далёкасць сувязі хаўрусных машын{greenBright_End} у "
+"радыусе дзеяння вашай радыёстанцыі павялічаны на "
+"{greenBright_Start}%(teamRadioBonusFactor)s{greenBright_End}."
+
+msgid "radioman_retransmitter/hudDescription"
+msgstr " "
+
+msgid "radioman_retransmitter/maxLvlDescription"
+msgstr ""
+"поўнае вывучэнне павялічыць {greenBright_Start}далёкасць сувязі хаўрусных "
+"машын{greenBright_End} у радыусе дзеяння вашай радыёстанцыі на "
+"{greenBright_Start}%(teamRadioBonusFactor)s{greenBright_End}."
+
+msgid "radioman_retransmitter/name"
+msgstr "Рэтрансляцыя"
+
+msgid "radioman_retransmitter/shortDescription"
+msgstr "Павышае далёкасць сувязі хаўруснікаў."
+
+msgid "repair/alt/description"
+msgstr ""
+"Навык уплывае на хуткасць рамонту модуляў машыны з «чырвонага» стану ў «жоўты».\n"
+"\n"
+"Дадаткова хуткасць рамонту можна павысіць, паставіўшы абсталявання або рыштунак з падобным эфектам."
+
+msgid "repair/alt/info"
+msgstr ""
+"У групавым навыку ўлічваецца сярэдні ўзровень яго вывучэння ўсімі танкістамі"
+" экіпажа. Пачынае дзейнічаць пры вывучэнні прынамсі на 1%, павялічваючы сваю"
+" эфектыўнасць па меры вывучэння."
+
+msgid "repair/currentLvlDescription"
+msgstr ""
+"{greenBright_Start}Хуткасць рамонту{greenBright_End} модуляў машыны павышана"
+" на {greenBright_Start}%(vehicleRepairSpeed)s{greenBright_End}."
+
+msgid "repair/maxLvlDescription"
+msgstr ""
+"Поўнае вывучэнне ўсімі танкістамі экіпажа павысіць "
+"{greenBright_Start}хуткасць рамонту{greenBright_End} модуляў машыны на "
+"{greenBright_Start}%(vehicleRepairSpeed)s{greenBright_End}."
+
+msgid "repair/name"
+msgstr "Рамонт"
+
+msgid "repair/shortDescription"
+msgstr "Паскарае рамонт пашкоджаных модуляў."
+
+msgid "sign/minus"
+msgstr "-"
+
+msgid "sign/plus"
+msgstr "+"

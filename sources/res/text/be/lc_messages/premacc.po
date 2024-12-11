@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "dailyExperiencePage/backBtnAddLabel"
+msgstr "ДА СТАТУСУ АКАЎНТУ"
+
+msgid "dailyExperiencePage/bonus/countOfExp"
+msgstr "Засталося прымяненняў: {expCount}"
+
+msgid "dailyExperiencePage/bonus/description"
+msgstr ""
+"Прымяняйце кіравальны бонус да досведу ў апошнім пераможным баі ў рэжымах "
+"«Выпадковы бой» або «Палігон»на выбранай машыне і атрымлівайце яшчэ больш "
+"досведу! Гэты бонус можна прымяніць толькі да апошняга пераможнага бою на "
+"выбранай машыне, а зрабіць гэта можна ў акне паслябаявой статыстыкі. "
+"Кіравальны бонус можна прымяняць як разам са штодзённым бонусам х2 (ці з "
+"іншым множнікам), так і без яе. За суткі можна прымяніць толькі наступную "
+"колькасць бонусаў: {maxExpCount}."
+
+msgid "dailyExperiencePage/bonus/title"
+msgstr "Кіравальны бонус да досведу"
+
+msgid "dailyExperiencePage/moreInfoBtn"
+msgstr "Падрабязней"
+
+msgid "dashboard/header/clanInfo/role"
+msgstr "{role} у клане"
+
+msgid "mapsBlacklist/backBtn/addLabel"
+msgstr "ДА СТАТУСУ АКАЎНТУ"
+
+msgid "mapsBlacklist/backBtn/label"
+msgstr "НАЗАД"
+
+msgid "mapsBlacklist/cooldown"
+msgstr "Змена мапы будзе даступная праз {}."
+
+msgid "mapsBlacklist/filtersTooltip/desc"
+msgstr "Паказваць/схаваць мапы гэтага тыпу."
+
+msgid "mapsBlacklist/filtersTooltip/header/desert"
+msgstr "Пустынныя мапы"
+
+msgid "mapsBlacklist/filtersTooltip/header/summer"
+msgstr "Летнія мапы"
+
+msgid "mapsBlacklist/filtersTooltip/header/winter"
+msgstr "Зімовыя мапы"
+
+msgid "mapsBlacklist/header"
+msgstr "Выключаныя мапы"
+
+msgid "mapsBlacklist/infoTooltip/desc"
+msgstr ""
+"Вы можаце выключыць з ратацыі адну мапу, а ўладальнікі Танкавага прэміум "
+"акаўнту — адразу дзве. Падчас гульні вы не будзеце трапляць на выключаныя "
+"мапы."
+
+msgid "mapsBlacklist/infoTooltip/header"
+msgstr "Выключаныя мапы"
+
+msgid "mapsBlacklist/infoTooltip/highlightDesc"
+msgstr ""
+"• Звярніце ўвагу: мапы выключаюцца толькі для Выпадковых баёў і толькі для "
+"тыпу «Звычайны бой»."
+
+msgid "mapsBlacklist/infoTooltip/rule1"
+msgstr ""
+"• Мапу нельга замяніць на працягу {maxCooldownTimeStr} пасля выключэння."
+
+msgid "mapsBlacklist/infoTooltip/rule2"
+msgstr ""
+"• Выключэнне мап дзейнічае толькі для тэхнікі IV або вышэйшага ўзроўню."
+
+msgid "mapsBlacklist/infoTooltip/rule3"
+msgstr ""
+"• Пры гульні ў звязе за выключаныя лічацца мапы, выбраныя камандзірам звязу."
+
+msgid "mapsBlacklist/mapName"
+msgstr "«{mapName}»"
+
+msgid "mapsBlacklist/mapsFilter"
+msgstr "Паказана мап: {count}"
+
+msgid "mapsBlacklist/mapsFilterSelected"
+msgstr "Паказана мап: {count} / {total}"
+
+msgid "mapsBlacklist/mapsFiltersLabel"
+msgstr "Тыпы мап:"
+
+msgid "mapsBlacklist/replaceDialog/cancelButton"
+msgstr "Скасаваць"
+
+msgid "mapsBlacklist/replaceDialog/closeButton"
+msgstr "Закрыць"
+
+msgid "mapsBlacklist/replaceDialog/description"
+msgstr ""
+"Выбраная мапа будзе заменена на мапу «{mapNameStr}». Змяніць свой выбар "
+"можна будзе праз {cooldownStr}."
+
+msgid "mapsBlacklist/replaceDialog/header"
+msgstr "Якую з мап вы хочаце замяніць?"
+
+msgid "mapsBlacklist/replaceDialog/okButton"
+msgstr "Выключыць"
+
+msgid "mapsBlacklist/replaceDialog/okButton/tooltip"
+msgstr "Выберыце мапу, якую вы хочаце замяніць"
+
+msgid "mapsBlacklist/selectDialog/cancelButton"
+msgstr "Скасаваць"
+
+msgid "mapsBlacklist/selectDialog/closeButton"
+msgstr "Закрыць"
+
+msgid "mapsBlacklist/selectDialog/description"
+msgstr "Змяніць свой выбар можна будзе праз {cooldownStr}."
+
+msgid "mapsBlacklist/selectDialog/header"
+msgstr ""
+"Ці выключыць мапу «{mapNameStr}» з Выпадковых баёў (для тыпу «Звычайны "
+"бой»)?"
+
+msgid "mapsBlacklist/selectDialog/okButton"
+msgstr "Выключыць"
+
+msgid "mapsBlacklist/slot/active/hoverBtn"
+msgstr "Выключыць"
+
+msgid "mapsBlacklist/slot/active/hoverStr"
+msgstr "Ці выключыць мапу {mapNameStr}?"
+
+msgid "mapsBlacklist/slot/change/hoverBtn"
+msgstr "Вярнуць"
+
+msgid "mapsBlacklist/slot/change/hoverStr"
+msgstr "Ці вярнуць мапу «{mapNameStr}» у Выпадковыя баі?"
+
+msgid "mapsBlacklist/slotTooltip/cooldown/body"
+msgstr "Замяніць гэтую мапу можна праз {cooldownStr}."
+
+msgid "mapsBlacklist/slotTooltip/cooldown/header"
+msgstr "Замена мапы недаступная"
+
+msgid "mapsBlacklist/slotTooltip/disabled/body"
+msgstr "Замяніць гэтую мапу можна праз {cooldownStr}."
+
+msgid "mapsBlacklist/slotTooltip/disabled/header"
+msgstr "Замена мапы недаступная"
+
+msgid "mapsBlacklist/smallSlot/active/label"
+msgstr "Не выбрана"
+
+msgid "mapsBlacklist/smallSlotCardTooltip/active/body"
+msgstr ""
+"Націсніце, каб выбраць мапу для выключэння з Выпадковых баёў (для тыпу "
+"Звычайны бой)."
+
+msgid "mapsBlacklist/smallSlotCardTooltip/active/header"
+msgstr "Мапа не выбрана"
+
+msgid "mapsBlacklist/smallSlotCardTooltip/change/body"
+msgstr "Выключаную мапу «{mapName}» можна змяніць на іншую."
+
+msgid "mapsBlacklist/smallSlotCardTooltip/change/header"
+msgstr "Замена мапы даступная"
+
+msgid "mapsBlacklist/smallSlotCardTooltip/cooldown/body"
+msgstr "Замяніць мапу «{mapName}» можна праз {cooldownStr}."
+
+msgid "mapsBlacklist/smallSlotCardTooltip/cooldown/header"
+msgstr "Замена мапы недаступная"
+
+msgid "mapsBlacklist/smallSlotCardTooltip/disabled/body"
+msgstr "Дадатковы слот даступны толькі пры актыўным Танкавым прэміум акаўнце."
+
+msgid "mapsBlacklist/smallSlotCardTooltip/disabled/header"
+msgstr "Слот недаступны"
+
+msgid "mapsBlacklist/smallSlotTooltip/active/body"
+msgstr ""
+"Выберыце мапу з ніжэйпададзенага спісу, каб выключыць яе з Выпадковых баёў "
+"(для тыпу «Звычайны бой»)."
+
+msgid "mapsBlacklist/smallSlotTooltip/active/header"
+msgstr "Мапа не выбрана"
+
+msgid "mapsBlacklist/smallSlotTooltip/change/body"
+msgstr ""
+"Выберыце мапу з ніжэйпададзенага спісу, каб выключыць яе з Выпадковых баёў "
+"(для тыпу «Звычайны бой»)."
+
+msgid "mapsBlacklist/smallSlotTooltip/change/header"
+msgstr "Замена мапы даступная"
+
+msgid "mapsBlacklist/smallSlotTooltip/cooldown/body"
+msgstr "Замяніць гэтую мапу можна праз {cooldownStr}."
+
+msgid "mapsBlacklist/smallSlotTooltip/cooldown/header"
+msgstr "Замена мапы недаступная"
+
+msgid "mapsBlacklist/smallSlotTooltip/disabled/body"
+msgstr ""
+"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
+"прэміум акаўнце."
+
+msgid "mapsBlacklist/smallSlotTooltip/disabled/header"
+msgstr "Слот недаступны"
+
+msgid "mapsBlacklistConfim/cancel"
+msgstr "Скасаваць"
+
+msgid "mapsBlacklistConfim/message"
+msgstr "Змяніць свой выбар можна будзе праз {cooldownTimeStr}."
+
+msgid "mapsBlacklistConfim/submit"
+msgstr "Выключыць"
+
+msgid "mapsBlacklistConfim/title"
+msgstr ""
+"Ці выключыць мапу «{mapName}» з Выпадковых баёў (для тыпу «Звычайны бой»)?"
+
+msgid "mapsBlacklistReplace/message"
+msgstr ""
+"Выбраная мапа будзе заменена на мапу «{mapName}». Змяніць свой выбар можна "
+"будзе праз {cooldownTimeStr}."
+
+msgid "mapsBlacklistReplace/title"
+msgstr "Якую з мап вы хочаце замяніць?"
+
+msgid "parentControlCard/infoPopover/body"
+msgstr ""
+"Ваш акаўнт знаходзіцца пад бацькоўскім кантролем.\n"
+"Больш падрабязна пра абмежаванні, звязаныя з бацькоўскім кантролем, чытайце {link}."
+
+msgid "parentControlCard/infoPopover/header"
+msgstr "Бацькоўскі кантроль"
+
+msgid "parentControlCard/infoPopover/link"
+msgstr "на партале"
+
+msgid "piggyBank/backBtnAddLabel"
+msgstr "ДА СТАТУСУ АКАЎНТУ"
+
+msgid "piggyBank/moreInfoBtn"
+msgstr "Падрабязней"
+
+msgid "piggyBank/premAccProlongBtn"
+msgstr "Прадоўжыць прэміум"
+
+msgid "piggyBank/premAccUnactiveMsg"
+msgstr ""
+"Сховішча крэдытаў можна папоўніць толькі пры наяўнасці Танкавага прэміум "
+"акаўнту."
+
+msgid "piggyBank/progressBarComplited"
+msgstr "Сховішча крэдытаў запоўнена"
+
+msgid "piggyBank/reserveBank/description"
+msgstr ""
+"Бярыце ўдзел у баях, каб напоўніць сховішча крэдытаў. Кожныя {period} сут "
+"сховішча адчыняецца, і назапашаныя крэдыты налічваюцца на ваш рахунак. "
+"Сховішча ўмяшчае да {maxAmount}."
+
+msgid "piggyBank/reserveBank/title"
+msgstr "Сховішча крэдытаў"
+
+msgid "piggyBank/reserveBankPremUnsearched/description"
+msgstr ""
+"Пакуль Танкавы прэміум акаўнт актыўны, у сховішча назапашваюцца дадатковыя "
+"{percDisc}% ад здабытых у баях крэдытаў. Максімальная ўмяшчальнасць "
+"сховішча — {maxAmount}. Кожныя {period} сут у запланаваны час сховішча "
+"адчыняецца, і ўсе назапашаныя крэдыты налічваюцца на ваш рахунак, нават калі"
+" тэрмін дзеяння прэміум акаўнту ўжо скончыўся."
+
+msgid "piggyBank/reserveBankPremUnsearched/title"
+msgstr "Атрымлівайце да {maxAmount}кожныя {period} сут."
+
+msgid "piggyBank/timeLeft/days"
+msgstr "{day} сут {hour} гадз"
+
+msgid "piggyBank/timeLeft/hours"
+msgstr "{hour} гадз {min} хв"
+
+msgid "piggyBank/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "piggyBank/timeToOpenBankMsg/title"
+msgstr "Сховішча крэдытаў адчыніцца праз:"
+
+msgid "piggyBankCard/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "piggyBankCard/timeLeft/hours"
+msgstr "%(hour)sгадз."
+
+msgid "piggyBankCard/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "piggyBankCard/timeLeft/min"
+msgstr "%(min)sм."

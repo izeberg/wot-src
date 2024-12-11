@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Snow_roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Plaster_grey_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Plaster_10_crash_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0007_Arch_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY24_0007_Arch_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Dirt_Plaster_05_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.000000 0.710000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Snow_roof_01_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Plaster_grey_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Plaster_10_crash_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Snow_roof_01_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Plaster_grey_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/tiles/Plaster_10_crash_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.039506 3.625827 -0.013713</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-4.166249 -0.647085 -0.999456</min>
+		<max>4.245261 7.898738 0.972031</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>9292</geometrySize>
+	<minUVDensity>0.001146</minUVDensity>
+</root>

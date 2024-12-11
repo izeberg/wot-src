@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/crash/lod3/Hull</parent>
+	<extent>96</extent>
+	<visibilityBox>
+		<min>-2.300835 -1.044359 -4.323834</min>
+		<max>2.409769 0.997111 4.597517</max>
+	</visibilityBox>
+</root>

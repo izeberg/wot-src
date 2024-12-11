@@ -1,0 +1,424 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "buyingPanel/Label"
+msgstr "Кошт у базавай камплектацыі"
+
+msgid "buyingPanel/alertLabel"
+msgstr "Унікальная машына — узнагарода за пэўныя гульнявыя падзеі"
+
+msgid "buyingPanel/availableForWotPlus"
+msgstr "Купля недаступная: гэтая машына даступная толькі з падпіскай."
+
+msgid "buyingPanel/buyBtn/label/buy"
+msgstr "Да куплі"
+
+msgid "buyingPanel/buyBtn/label/buyItemPack"
+msgstr "Купіць набор"
+
+msgid "buyingPanel/buyBtn/label/exchange"
+msgstr "Абмяняць"
+
+msgid "buyingPanel/buyBtn/label/obtain"
+msgstr "Атрымаць!"
+
+msgid "buyingPanel/buyBtn/label/offspring"
+msgstr "Да набору"
+
+msgid "buyingPanel/buyBtn/label/rent"
+msgstr "Узяць напракат"
+
+msgid "buyingPanel/buyBtn/label/research"
+msgstr "Даследаваць"
+
+msgid "buyingPanel/buyBtn/label/restore"
+msgstr "Аднавіць"
+
+msgid "buyingPanel/buyBtn/label/restoreRequested"
+msgstr "Вы ўжо падалі заяўку на аднаўленне танка"
+
+msgid "buyingPanel/buyBtn/label/showAdventCalendar"
+msgstr "ДА КАЛЕНДАРА"
+
+msgid "buyingPanel/buyBtn/label/toCalendar"
+msgstr "Да календара"
+
+msgid "buyingPanel/collectible/notResearchedVehiclesWarning"
+msgstr "Тэхніка %(nation)s %(level)s узроўню не даследавана"
+
+msgid "buyingPanel/compensation"
+msgstr "Вяртанне:"
+
+msgid "buyingPanel/compensation/body"
+msgstr ""
+"Набор змяшчае прадметы, якія ўжо ёсць на вашым акаўнце — іх кошт будзе "
+"кампенсаваны пасля куплі набору."
+
+msgid "buyingPanel/customOffer/buy"
+msgstr "Зніжка на куплю:"
+
+msgid "buyingPanel/customOffer/research"
+msgstr "Зніжка на даследаванне:"
+
+msgid "buyingPanel/frontlinePack/couponLabel"
+msgstr "Спатрэбіць купон на суму: %(value)s"
+
+msgid "buyingPanel/frontlinePack/titleLabel/active"
+msgstr "Машына са слотам і 100%-м экіпажам"
+
+msgid "buyingPanel/frontlinePack/titleLabel/inactive"
+msgstr "Скарыстайце купон, каб атрымаць зніжку"
+
+msgid "buyingPanel/frontlinePack/titleLabel/inactive_add_discount"
+msgstr "Скарыстайце купон, каб атрымаць дадатковую зніжку"
+
+msgid "buyingPanel/notResearchedVehicleWarning"
+msgstr "Машына або папярэднія модулі не даследаваны"
+
+msgid "buyingPanel/offer/rent/frontline/description/body/credits"
+msgstr "Гэтая машына прыдатная для гульні толькі ў рэжыме «Лінія фронту»."
+
+msgid "buyingPanel/offer/rent/frontline/description/body/gold"
+msgstr ""
+"Гэтая машына прыдатная для гульні толькі ў рэжыме «Лінія фронту». Узяўшы "
+"машыну напракат, вы атрымаеце магчымасць выкарыстоўваць выдаткаванае "
+"на пракат золата як адпаведную зніжку ў золаце на прэміум тэхніку. Для "
+"гэтага пасля афармлення пракату перайдзіце на галоўны экран «Лініі фронту». "
+"Зніжка не даецца на наборы з тэхнікай або тэхніку з Прэміум крамы."
+
+msgid "buyingPanel/offer/rent/frontline/description/header"
+msgstr "Увага!"
+
+msgid "buyingPanel/offer/rent/frontline/tooltip/best_offer/body"
+msgstr ""
+"Вам будзе даступны пракат на наступны этап; за бягучы этап вы не плаціце і "
+"можаце працягваць гуляць."
+
+msgid "buyingPanel/offer/rent/frontline/tooltip/best_offer/header"
+msgstr "Выгадная прапанова"
+
+msgid "buyingPanel/offer/rent/frontline/tooltip/body/cyclesLeft"
+msgstr "Засталося этапаў: %(value)s"
+
+msgid "buyingPanel/offer/rent/frontline/tooltip/body/timeLeft"
+msgstr "Засталося: %(value)s"
+
+msgid "buyingPanel/offer/rent/label/cycle"
+msgstr "На этап %(value)s"
+
+msgid "buyingPanel/offer/rent/label/cycles"
+msgstr "На этапы %(value)s"
+
+msgid "buyingPanel/offer/rent/label/season"
+msgstr "На сезон"
+
+msgid "buyingPanel/offer/rent/name/cycle"
+msgstr "Этап %(value)s"
+
+msgid "buyingPanel/offer/rent/name/cycles"
+msgstr "Этапы %(value)s"
+
+msgid "buyingPanel/offer/rent/name/season"
+msgstr "Сезон %(value)s"
+
+msgid "buyingPanel/offer/rent/title/frontline/ordinal"
+msgstr "Пракат толькі для рэжыму «Лінія фронту»"
+
+msgid "buyingPanel/personalTradeIn/title"
+msgstr "Абмен машыны: %(name)s"
+
+msgid "buyingPanel/present"
+msgstr "У падарунак"
+
+msgid "buyingPanel/progressionStyles/currentLevel"
+msgstr "ДАСТУПНЫ УЗРОВЕНЬ"
+
+msgid "buyingPanel/progressionStyles/notification/rewind_enable/text"
+msgstr "Выберыце адзін з варыянтаў стылю для яго перадпрагляду."
+
+msgid "buyingPanel/progressionStyles/notification/text"
+msgstr "Выберыце любы ўзровень стылю для яго перадпрагляду."
+
+msgid "buyingPanel/style/button/buy"
+msgstr "Купіць"
+
+msgid "buyingPanel/style/caption/userMoney"
+msgstr "Бягучы рахунак:"
+
+msgid "buyingPanel/style/description/button/text"
+msgstr "Выбраць рэсурсы"
+
+msgid "buyingPanel/style/description/maxLevel"
+msgstr "Максімальны ўзровень прагрэсійнага стылю"
+
+msgid "buyingPanel/style/description/nonProgression"
+msgstr "Адзіны 3D-стыль"
+
+msgid "buyingPanel/style/description/text"
+msgstr ""
+"Першыя %(topPlayers) гульцоў атрымаюць машыну з нумарным 3D-стылем,\n"
+"а пасля будзе адгружана %(basePlayers) машын без нумара."
+
+msgid "buyingPanel/style/description/title"
+msgstr "Укладзіце неабходныя рэсурсы і атрымайце %(vehicleName)!"
+
+msgid "buyingPanel/style/description/waiting"
+msgstr "Купля неўзабаве паступіць на ваш гульнявы акаўнт"
+
+msgid "buyingPanel/style/status/1"
+msgstr "Недастаткова ачкоў «Баявога пропуска»."
+
+msgid "buyingPanel/style/status/2"
+msgstr "Завяршыце тры асноўныя раздзелы «Баявога пропуска»."
+
+msgid "buyingPanel/tradeIn/expired"
+msgstr "Праграма абмену скончылася"
+
+msgid "buyingPanel/tradeIn/footerNote"
+msgstr "Стварыце сваю машыну, каб атрымаць зніжку на пэўную тэхніку"
+
+msgid "buyingPanel/tradeIn/invalidTradeOffVehicle"
+msgstr "Выбраная машына непрыдатная."
+
+msgid "buyingPanel/tradeIn/notAvailableTradeOffVehicles"
+msgstr "У вас няма тэхнікі, якую можна здаць па праграм абмену."
+
+msgid "buyingPanel/tradeIn/personaltradeOffPriceText"
+msgstr "АБМЕН БЕЗ ДАПЛАТЫ"
+
+msgid "buyingPanel/tradeIn/tradeOffPriceFreeText"
+msgstr "Без даплаты"
+
+msgid "buyingPanel/tradeIn/tradeOffPriceText"
+msgstr "Ацэнка вашай машыны:"
+
+msgid "buyingPanel/tradeInLabel"
+msgstr "Машыну можна абмяняць"
+
+msgid "buyingPanel/uniqueVehicleLabel"
+msgstr ""
+"Купіць гэтую машыну немагчыма — яна з'яўляецца ўзнагародай за "
+"ўнутрыгульнявыя дасягненні"
+
+msgid "disclaimer"
+msgstr ""
+"Група кампаній «Леста Игры» выкарыстоўвае спалучэнне «Т-34» у "
+"агульнаўжывальным значэнні для ўказання на рэальныя танкі і не звязана "
+"ніякімі стасункамі з праваўладальнікамі аднайменных таварных знакаў. "
+"Падрабязней"
+
+msgid "disclaimer/button"
+msgstr "тут."
+
+msgid "header/backBtn/descrLabel/adventCalendar"
+msgstr "НА КІРМАШ"
+
+msgid "header/backBtn/descrLabel/battleMatters"
+msgstr "ДА ВЫБАРУ МАШЫНЫ"
+
+msgid "header/backBtn/descrLabel/battleMattersMainReward"
+msgstr "ДА ГАЛОЎНАЙ УЗНАГАРОДЫ"
+
+msgid "header/backBtn/descrLabel/blueprintsExchange"
+msgstr "ДА ТАВАРАЎ ДЛЯ АБМЕНУ"
+
+msgid "header/backBtn/descrLabel/collections"
+msgstr "ДА КАЛЕКЦЫІ"
+
+msgid "header/backBtn/descrLabel/eventProgression"
+msgstr " "
+
+msgid "header/backBtn/descrLabel/frontline"
+msgstr "ДА ЛІНІІ ФРОНТУ"
+
+msgid "header/backBtn/descrLabel/hangar"
+msgstr "У ГАРАЖ"
+
+msgid "header/backBtn/descrLabel/lunar_marathon"
+msgstr "ДА РАЗДЗЕЛА I"
+
+msgid "header/backBtn/descrLabel/lunar_marathon_post"
+msgstr "ДА РАЗДЗЕЛА II"
+
+msgid "header/backBtn/descrLabel/marathon"
+msgstr "ДА ПРЫТОЕНАГА ТЫГРА"
+
+msgid "header/backBtn/descrLabel/personalAwards"
+msgstr "ДА ЎЗНАГАРОД"
+
+msgid "header/backBtn/descrLabel/ranked"
+msgstr "ДА РАНГАВЫХ БАЁЎ"
+
+msgid "header/backBtn/descrLabel/referralProgram"
+msgstr "ДА ВЫБАРУ ЎЗНАГАРОДЫ"
+
+msgid "header/backBtn/descrLabel/researchTree"
+msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"
+
+msgid "header/backBtn/descrLabel/resourceWell"
+msgstr "ДА БЮРО"
+
+msgid "header/backBtn/descrLabel/shop"
+msgstr "У КРАМУ"
+
+msgid "header/backBtn/descrLabel/storage"
+msgstr "НА СКЛАД"
+
+msgid "header/backBtn/descrLabel/vehPostProgression"
+msgstr "ДА ПАЛЯВОЙ МАДЭРНІЗАЦЫІ"
+
+msgid "header/backBtn/descrLabel/vehicleCompare"
+msgstr "ДА ПАРАЎНАННЯ"
+
+msgid "header/backBtn/label"
+msgstr "НАЗАД"
+
+msgid "header/closeBtn/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "header/title"
+msgstr "Перадпрагляд"
+
+msgid "hero/header/title"
+msgstr "Перадпрагляд"
+
+msgid "infoPanel/collectible/desc"
+msgstr ""
+"Асаблівыя машыны, якія купляюцца за крэдыты. Калекцыйная тэхніка не мае "
+"сувязі з Дрэвам даследаванняў, але мае модулі, якія можна даследаваць."
+
+msgid "infoPanel/collectible/title"
+msgstr ""
+"Калекцыйная\n"
+"тэхніка"
+
+msgid "infoPanel/level"
+msgstr "%(level)s узроўню"
+
+msgid "infoPanel/premium/bonsText"
+msgstr "Магчымасць заробку"
+
+msgid "infoPanel/premium/bonsTitle"
+msgstr "Боны"
+
+msgid "infoPanel/premium/builtInEqupmentText"
+msgstr "Пастаўляецца са штатным рыштункам: %(value)s шт."
+
+msgid "infoPanel/premium/builtInEqupmentTitle"
+msgstr "Бясплатна"
+
+msgid "infoPanel/premium/creditsMultiplier"
+msgstr "Больш"
+
+msgid "infoPanel/premium/creditsText"
+msgstr "крэдытаў за кожны бой"
+
+msgid "infoPanel/premium/crewTransferText"
+msgstr "Перавод экіпажу без штрафаў"
+
+msgid "infoPanel/premium/crewTransferTitle"
+msgstr "Бясплатна"
+
+msgid "infoPanel/premium/freeExpMultiplier"
+msgstr "Больш"
+
+msgid "infoPanel/premium/freeExpText"
+msgstr "баявога досведу і досведу экіпажа"
+
+msgid "infoPanel/premium/noCrewTransferPenaltyText"
+msgstr "?empty?"
+
+msgid "infoPanel/tab/browse/name"
+msgstr "Агульнае"
+
+msgid "infoPanel/tab/crewInfo/lockTitle"
+msgstr "Экіпаж нельга перавесці на іншую машыну"
+
+msgid "infoPanel/tab/crewInfo/name"
+msgstr "Экіпаж: %(crewCount)s"
+
+msgid "infoPanel/tab/eliteFactSheet/info"
+msgstr "Гістарычная даведка"
+
+msgid "infoPanel/tab/eliteFactSheet/title"
+msgstr "Перавагі прэміум тэхнікі"
+
+msgid "infoPanel/tab/factSheet/name"
+msgstr "Даведка"
+
+msgid "infoPanel/tab/listDesc/crew"
+msgstr "ТТХ паказаны для экіпажа, спрактыкаванага на 100%."
+
+msgid "infoPanel/tab/listDesc/crewEquips"
+msgstr ""
+"ТТХ паказаны для экіпажа, спрактыкаванага на 100%, з улікам усёй усталяванай"
+" маёмасці з набору."
+
+msgid "infoPanel/tab/listDesc/crewSkills"
+msgstr "ТТХ паказаны для 100%-га экіпажа з улікам навыкаў."
+
+msgid "infoPanel/tab/listDesc/crewSkillsEquips"
+msgstr ""
+"ТТХ паказаны для 100%-га экіпажа з улікам навыкаў і ўсёй усталяванай "
+"маёмасці з набору."
+
+msgid "infoPanel/tab/modules/name"
+msgstr "Модулі"
+
+msgid "infoPanel/tab/modules/unlockableModules"
+msgstr "У машыны ёсць модулі, якія можна даследаваць"
+
+msgid "modulesPanel/Label"
+msgstr "Базавая камплектацыя"
+
+msgid "modulesPanel/noModulesOptions"
+msgstr "Максімальная камплектацыя"
+
+msgid "modulesPanel/status/text"
+msgstr "Выбрана карыстальніцкая камплектацыя"
+
+msgid "modulesPanel/title"
+msgstr "Перадпрагляд модуляў"
+
+msgid "showcaseStyleBuying/actionBtn/label/buy"
+msgstr "Купіць"
+
+msgid "showcaseStyleBuying/actionBtn/tooltip/notEnoughFunds"
+msgstr "Замала сродкаў для куплі."
+
+msgid "showcaseStyleBuying/actionBtn/tooltip/serviceUnavailable"
+msgstr "Купля немагчымая: кашалёк недаступны"
+
+msgid "showcaseStyleBuying/actionBtn/tooltip/unavailable"
+msgstr "Купля немагчымая"
+
+msgid "showcaseStyleBuying/boughtMsg"
+msgstr "Вы ўжо маеце гэты стыль"
+
+msgid "showcaseStyleBuying/noVehicleMsg"
+msgstr "У Гаражы няма машыны, на якую можна насесці выбраны стыль"
+
+msgid "showcaseStyleBuying/outOfTimeMsg"
+msgstr "Продаж завершаны"
+
+msgid "showcaseStyleBuying/timeRemaining/desc"
+msgstr "Даступна на працягу:"
+
+msgid "topPanel/tab/baseVehicle/vehicle"
+msgstr "СТАНДАРТ"
+
+msgid "topPanel/tab/personalNumberVehicle/style"
+msgstr "З НУМАРАМ"
+
+msgid "topPanel/tab/style"
+msgstr "СТЫЛЬ"
+
+msgid "topPanel/tab/vehicle"
+msgstr "ПРА МАШЫНУ"

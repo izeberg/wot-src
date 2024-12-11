@@ -1,0 +1,664 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "additionalRewardsTooltip/header"
+msgstr "Астатнія ўзнагароды"
+
+msgid "compensationTooltip/contentDescription"
+msgstr "Кампенсацыя:"
+
+msgid "compensationTooltip/contentTitle"
+msgstr "Тэхніка:"
+
+msgid "compensationTooltip/description/collectionItem"
+msgstr "Кампенсацыя за элемент калекцыі"
+
+msgid "compensationTooltip/description/vehicles"
+msgstr "Кампенсацыя за машыну"
+
+msgid "compensationTooltip/footerDetails/collectionItem"
+msgstr "Кампенсацыя за ўжо наяўны элемент калекцыі."
+
+msgid "compensationTooltip/footerDetails/vehicles"
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+
+msgid "compensationTooltip/title/credits"
+msgstr "Крэдыты"
+
+msgid "compensationTooltip/title/gold"
+msgstr "Золата"
+
+msgid "entryPointWidget/count"
+msgstr "%(mult)s%(count)s"
+
+msgid "entryPointWidget/countHasInfinite"
+msgstr "%(mult)s%(count)s / %(infin)s"
+
+msgid "entryPointWidget/disabledTooltip/body"
+msgstr ""
+"У сапраўдны момант купля і адкрыццё кантэйнераў недаступныя па тэхнічных "
+"прычынах. Прыносім прабачэнні за часовыя нязручнасці."
+
+msgid "entryPointWidget/disabledTooltip/header"
+msgstr "Купля і адкрыццё часова недаступныя"
+
+msgid "entryPointWidget/hasInfiniteOnly"
+msgstr "%(mult)s%(infin)s"
+
+msgid "entryPointWidget/infin"
+msgstr "∞"
+
+msgid "entryPointWidget/maxBoxesCount"
+msgstr "999+"
+
+msgid "entryPointWidget/maxCount"
+msgstr "%(count)s+"
+
+msgid "entryPointWidget/maxCountHasInfinite"
+msgstr "%(count)s+ / %(infin)s"
+
+msgid "entryPointWidget/mult"
+msgstr "×"
+
+msgid "error/text"
+msgstr "Штосьці пайшло не так, паспрабуйце яшчэ раз пазней."
+
+msgid "error/title"
+msgstr "Не ўдалося адкрыць кантэйнер"
+
+msgid "footer/button/buy"
+msgstr "Купіць кантэйнер"
+
+msgid "footer/restriction/disabled"
+msgstr "Купіць кантэйнеры можна праз %(date)"
+
+msgid "footer/restriction/left"
+msgstr "Усе кантэйнеры ўжо куплены"
+
+msgid "footer/restriction/leftCount"
+msgstr "Можна купіць на працягу сутак: %(count)"
+
+msgid "footer/tooltip/buyBoxes/content"
+msgstr ""
+"На працягу сутак можна купіць не больш за {count} кантэйнераў. Адкрыць можна"
+" любую колькасць."
+
+msgid "footer/tooltip/buyBoxes/title"
+msgstr "{count} купляў за суткі"
+
+msgid "footer/tooltip/disabledBoxes/content"
+msgstr ""
+"Вы ўжо купілі {count} кантэйнераў за гэтыя суткі. Зноў купіць можна будзе "
+"праз {date}"
+
+msgid "footer/tooltip/disabledBoxes/title"
+msgstr "Купля недаступная"
+
+msgid "footer/tooltip/restriction/left/content"
+msgstr "Сёння апошні дзень падзеі, і вы ўжо дасягнулі ліміту купляў."
+
+msgid "footer/tooltip/restriction/left/title"
+msgstr "Купля недаступная"
+
+msgid "guaranteedReward/boxesLeft/bonus"
+msgstr "Яшчэ кантэйнераў да гарантаванай узнагароды, калі не выпадзе раней: "
+
+msgid "guaranteedReward/boxesLeft/vehicle"
+msgstr ""
+"Яшчэ кантэйнераў да гарантаванай машыны %(level)s узроўню, калі не выпадзе "
+"раней: "
+
+msgid "guaranteedReward/next/bonus"
+msgstr "Гарантаваная ўзнагарода ў наступным кантэйнеры!"
+
+msgid "guaranteedReward/next/vehicle"
+msgstr "Гарантаваная машына %(level)s узроўню ў наступным кантэйнеры!"
+
+msgid "guaranteedRewardTooltip/block1/bonus/text"
+msgstr ""
+"Гарантаваная ўзнагарода — найбольш каштоўная гульнявая маёмасць са спіса "
+"магчымага змесціва кантэйнераў. Узнагарода гарантавана выпадзе не пазней за "
+"%(boxNumber)s-ы кантэйнер. Калі яна выпадзе раней, адлік пачнецца нанова."
+
+msgid "guaranteedRewardTooltip/block1/bonus/title"
+msgstr "Механіка гарантаванай узнагароды"
+
+msgid "guaranteedRewardTooltip/block1/vehicle/text"
+msgstr ""
+"Гарантаваны танк — прэміум машына %(level)s узроўню са спіса магчымага "
+"змесціва кантэйнераў. Танк гарантавана выпадзе не пазней за %(boxNumber)s-ы "
+"кантэйнер. Калі атрымаеце машыну раней, адлік пачнецца нанова."
+
+msgid "guaranteedRewardTooltip/block1/vehicle/title"
+msgstr "Механіка гарантаванага танка"
+
+msgid "guaranteedRewardTooltip/block2/text"
+msgstr "Лічыльнік гарантаванай узнагароды агульны для наступных кантэйнераў:"
+
+msgid "guaranteedRewardTooltip/block2/title"
+msgstr "Агульны лічыльнік узнагарод:"
+
+msgid "guaranteedRewardTooltip/block3/text"
+msgstr ""
+"Маёмасць змешчана ў тры паслядоўныя спісы/этапы. Каб перайсці да наступнага "
+"спіса, трэба атрымаць усю маёмасць з «Асноўных узнагарод» бягучага спіса."
+
+msgid "guaranteedRewardTooltip/block3/title"
+msgstr "Гарантаваная ўзнагарода з этапаў"
+
+msgid "guaranteedRewardTooltip/block4/bonus/text"
+msgstr ""
+"Узнагароду з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
+
+msgid "guaranteedRewardTooltip/block4/vehicle/text"
+msgstr ""
+"Калі вы ўжо маеце ўсю тэхніку са спіса магчымага змесціва кантэйнераў, то "
+"паводле механікі выпадання гарантаванага танка ўсе наступныя машыны, "
+"атрыманыя з кантэйнераў, будуць кампенсаваны адпаведнай валютай."
+
+msgid "guaranteedRewardTooltip/block4/vehicle/title"
+msgstr "Калі ўся тэхніка ўжо атрымана:"
+
+msgid "keyWelcomeScreen/content/first/description"
+msgstr ""
+"Са стартам падзеі «Гонкі: рэстарт» на ваш акаўнт налічваецца бясконцая "
+"колькасць кантэйнераў новага тыпу. Іх можна адкрыць толькі з дапамогай "
+"ключоў або &nbsp;адмычак на&nbsp;працягу ўсяго святкавання "
+"Дня&nbsp;нараджэння гульні."
+
+msgid "keyWelcomeScreen/content/first/title"
+msgstr "Новы тып кантэйнераў"
+
+msgid "keyWelcomeScreen/content/second/description"
+msgstr ""
+"Ключы заўсёды адкрываюць кантэйнер, а адмычка можа зламацца падчас адкрыцця."
+" Ключы і&nbsp;адмычкі аднаразовыя."
+
+msgid "keyWelcomeScreen/content/second/title"
+msgstr "Ключы і адмычкі"
+
+msgid "keyWelcomeScreen/content/third/description"
+msgstr ""
+"Ключы і адмычкі можна атрымаць рознымі спосабамі на&nbsp;усім працягу "
+"святкавання Дня нараджэння. Таксама ключы можна набыць у Краме."
+
+msgid "keyWelcomeScreen/content/third/title"
+msgstr "Як атрымаць ключы і адмычкі?"
+
+msgid "keyWelcomeScreen/header/titleMain"
+msgstr "Кантэйнер «Дзень нараджэння 2024»"
+
+msgid "lootboxRotationTooltip/caption"
+msgstr "Вы можаце атрымаць адну з узнагарод бягучага спіса/этапу."
+
+msgid "lootboxRotationTooltip/description1"
+msgstr ""
+"Збярыце асноўныя ўзнагароды бягучага этапу, каб перайсці да наступнага."
+
+msgid "lootboxRotationTooltip/description2"
+msgstr "Кожны этап уключае ўнікальную тэхніку і іншую гульнявую маёмасць."
+
+msgid "lootboxRotationTooltip/description3"
+msgstr "Машына, якая выпала паўторна, будзе кампенсавана ў адпаведнай валюце."
+
+msgid "lootboxRotationTooltip/stage"
+msgstr "Этап"
+
+msgid "lootboxRotationTooltip/title"
+msgstr "Спісы змесціва"
+
+msgid "lootboxesWithKeys/about/ny_2025_big"
+msgstr "Пра кантэйнеры з этапамі"
+
+msgid "lootboxesWithKeys/availableLockpicks"
+msgstr "Даступна адмычак для кантэйнераў: %(icon) %(count)"
+
+msgid "lootboxesWithKeys/lbOpenCount"
+msgid_plural "plural/lootboxesWithKeys/lbOpenCount"
+msgstr[0] "Кантэйнер адкрыты"
+msgstr[1] "Адкрыта %(count)s кантэйнеры"
+msgstr[2] "Адкрыта %(count)s кантэйнераў"
+
+msgid "lootboxesWithKeys/lockpickBrokeButton"
+msgstr "Так!"
+
+msgid "lootboxesWithKeys/lockpickBrokeDesc"
+msgstr ""
+"Кантэйнер {cream_Open}«%(lootboxName)s»{cream_Close} адкрыць не ўдалося."
+
+msgid "lootboxesWithKeys/lockpickBrokeTitle"
+msgstr "АДМЫЧКА ЗЛАМАЛАСЯ"
+
+msgid "lootboxesWithKeys/openAll"
+msgstr "Адкрыць усе"
+
+msgid "lootboxesWithKeys/openLast"
+msgstr "Адкрыць апошні"
+
+msgid "lootboxesWithKeys/openMore"
+msgstr "Адкрыць яшчэ х%(count)"
+
+msgid "lootboxesWithKeys/openOne"
+msgstr "Адкрыць яшчэ 1"
+
+msgid "notification/lootBoxInvoiceReceived"
+msgstr "Налічана"
+
+msgid "openBoxScreen/about"
+msgstr "Пра кантэйнеры з этапамі"
+
+msgid "openBoxScreen/backBtn/0"
+msgstr "У ГАРАЖ"
+
+msgid "openBoxScreen/backBtn/1"
+msgstr "У КРАМУ"
+
+msgid "openBoxScreen/backBtn/10"
+msgstr "ДА АТРАКЦЫЁНА"
+
+msgid "openBoxScreen/backBtn/11"
+msgstr "ДА ГАДАВАНЦА"
+
+msgid "openBoxScreen/backBtn/2"
+msgstr "НА ПЛОШЧУ"
+
+msgid "openBoxScreen/backBtn/3"
+msgstr "ДА АСКЕПКАЎ"
+
+msgid "openBoxScreen/backBtn/4"
+msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
+
+msgid "openBoxScreen/backBtn/5"
+msgstr "ДА ЯЛІНЫ"
+
+msgid "openBoxScreen/backBtn/6"
+msgstr "ДА ІЛЮМІНАЦЫІ"
+
+msgid "openBoxScreen/backBtn/7"
+msgstr "ДА ІНСТАЛЯЦЫІ"
+
+msgid "openBoxScreen/backBtn/8"
+msgstr "НА КІРМАШ"
+
+msgid "openBoxScreen/backBtn/9"
+msgstr "ДА КАТКА"
+
+msgid "openBoxScreen/backBtnMain"
+msgstr "У Гараж"
+
+msgid "openBoxScreen/count/mult"
+msgstr "×%(count)s"
+
+msgid "openBoxScreen/noCurrentLootboxesMain"
+msgstr "У вас няма выбранага кантэйнера"
+
+msgid "openBoxScreen/noLootboxesMain"
+msgstr "У вас няма кантэйнераў"
+
+msgid "openBoxScreen/noLootboxesSecondary"
+msgstr ""
+"Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
+"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы."
+
+msgid "openBoxScreen/noLootboxesShopSecondary"
+msgstr ""
+"Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
+"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы. Некаторыя кантэйнеры "
+"можна дакупіць ва&nbsp;ўнутрыгульнявой Краме."
+
+msgid "optional/buy"
+msgstr "Дакупіць"
+
+msgid "optional/buyBox"
+msgstr "Дакупіць"
+
+msgid "optional/count"
+msgstr "Колькасць: %(count)s шт."
+
+msgid "optional/openBox"
+msgstr "Адкрыць"
+
+msgid "optional/openCount/all"
+msgstr "Усе"
+
+msgid "optional/openCount/numberCount"
+msgstr "%(count) шт."
+
+msgid "optional/openCount/one"
+msgstr "1 шт."
+
+msgid "optional/openProbabilityOverlay"
+msgstr "Імавернасць выпадання"
+
+msgid "optional/possibleRewardsTitle"
+msgstr "МАГЧЫМЫЯ ЎЗНАГАРОДЫ"
+
+msgid "possibleRewards/accountCustomizations"
+msgstr "Профіль"
+
+msgid "possibleRewards/boosters"
+msgstr "Паскарэнне развіцця"
+
+msgid "possibleRewards/crew"
+msgstr "Экіпаж"
+
+msgid "possibleRewards/currency"
+msgstr "Валюты"
+
+msgid "possibleRewards/equipments"
+msgstr "Абслугоўванне"
+
+msgid "possibleRewards/featureItems"
+msgstr "Узнагароды падзеі"
+
+msgid "possibleRewards/lootboxStageRotation"
+msgstr "Асноўныя ўзнагароды"
+
+msgid "possibleRewards/premium"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "possibleRewards/vehicle"
+msgstr "Тэхніка"
+
+msgid "possibleRewards/vehicleCustomizations"
+msgstr "Выгляд"
+
+msgid "probabilitiesOverlay/blockedReward"
+msgstr "Збярыце тэхніку з асноўнай узнагароды папярэдняга этапу"
+
+msgid "probabilitiesOverlay/boxAdditionalRewards"
+msgstr "Дадатковыя ўзнагароды"
+
+msgid "probabilitiesOverlay/boxDescription"
+msgstr ""
+"Маёмасць змешчана ў тры паслядоўныя спісы/этапы. Каб перайсці да наступнага "
+"спіса, трэба атрымаць усю маёмасць з «Асноўных узнагарод» бягучага спіса. У "
+"трэцім спісе з'яўляецца Waffenträger auf E 100, і вы можаце атрымаць гэту "
+"машыну. З кожнага срэбнага кантэйнера выпадае адна аздобка V узроўню, адна "
+"аздобка I-V узроўню і штосьці са спіса каштоўнай маёмасці. Калі ўся тэхніка "
+"ўжо сабрана, наступныя яе выпадзенні будуць кампенсаваны гульнявой валютай."
+
+msgid "probabilitiesOverlay/boxMainRewards"
+msgstr "Асноўныя ўзнагароды"
+
+msgid "probabilitiesOverlay/optional/header"
+msgstr "ІМАВЕРНАСЦЬ ВЫПАДАННЯ"
+
+msgid "probabilitiesOverlay/optional/ny_2025_tanks/description"
+msgstr ""
+"З кантэйнера з {cream_Open}імавернасцю{cream_Close} %(percentageIcon)s выпадае толькі {cream_Open}адна адзінка тэхнікі{cream_Close}.\n"
+"Пасля збору ўсёй тэхнікі машыны, якія выпалі паўторна, {cream_Open}кампенсуюцца золатам{cream_Close}."
+
+msgid "probabilitiesOverlay/optional/procentProbability"
+msgstr "%(probability)s%"
+
+msgid "probabilitiesOverlay/optional/separator"
+msgstr ", "
+
+msgid "probabilitiesOverlay/tabTitle"
+msgstr "Этап %(stage)"
+
+msgid "probabilitiesOverlay/tabTooltip"
+msgstr "Узнагароды са %(stage)s спіса маёмасці."
+
+msgid "probabilityGuaranteedRewardTooltip/text1"
+msgstr "Шанц выпадання прадмета з указанай групы."
+
+msgid "probabilityGuaranteedRewardTooltip/text2"
+msgstr ""
+"Узнагарода з гэтага спіса гарантавана выпадзе не пазней за %(boxNumber)s-ы "
+"кантэйнер. Калі атрымаеце ўзнагароду з групы раней, адлік пачнецца нанова."
+
+msgid "probabilityGuaranteedRewardTooltip/title"
+msgstr "Імавернасць і гарантаваныя ўзнагароды"
+
+msgid "rewards/controls/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rewards/controls/ok"
+msgstr "Так!"
+
+msgid "rewards/controls/showVehicle"
+msgstr "Паглядзець у Гаражы"
+
+msgid "rewards/header/subTitle"
+msgstr ""
+"Гульнявая маёмасць з кантэйнера {cream_Open}«%(lootboxName)s»{cream_Close}"
+
+msgid "rewards/header/title"
+msgstr "ВОСЬ ШТО ЎНУТРЫ"
+
+msgid "rewards/rent/battles"
+msgid_plural "battles"
+msgstr[0] "Напракат на %(battles)d бой"
+msgstr[1] "Напракат на %(battles)d баі"
+msgstr[2] "Напракат на %(battles)d баёў"
+
+msgid "rewards/rent/days"
+msgid_plural "days"
+msgstr[0] "Напракат на %(days)d дзень"
+msgstr[1] "Напракат на %(days)d дні"
+msgstr[2] "Напракат на %(days)d дзён"
+
+msgid "shared/animationControlsOffText"
+msgstr "Выключыць анімацыю"
+
+msgid "shared/animationControlsText"
+msgstr "Уключыць анімацыю"
+
+msgid "tier/tier_1"
+msgstr "Звычайны кантэйнер"
+
+msgid "tier/tier_2"
+msgstr "Бронзавы кантэйнер"
+
+msgid "tier/tier_3"
+msgstr "Срэбны кантэйнер"
+
+msgid "tier/tier_4"
+msgstr "Залаты кантэйнер"
+
+msgid "time/days"
+msgstr "сут"
+
+msgid "time/hours"
+msgstr "гадз"
+
+msgid "time/lessThenMinute"
+msgstr "Хвіліну"
+
+msgid "time/minutes"
+msgstr "хв"
+
+msgid "time/seconds"
+msgstr "с"
+
+msgid "tooltips/bonusGroup/headerDescription"
+msgstr "Вы атрымаеце адну з узнагарод спіса"
+
+msgid "tooltips/bonusGroup/possibleRewards"
+msgid_plural "count"
+msgstr[0] "І яшчэ %(count)s магчымая ўзнагарода"
+msgstr[1] "І яшчэ %(count)s магчымыя ўзнагароды"
+msgstr[2] "І яшчэ %(count)s магчымых узнагарод"
+
+msgid "tooltips/currencyKey/descriptionPart1/tanks_birthday_2024_key"
+msgstr ""
+"Ключ адкрывае кантэйнер «%(lootboxName)s» з імавернасцю "
+"{cream_Open}100%{cream_Close}."
+
+msgid "tooltips/currencyKey/descriptionPart1/tanks_birthday_2024_lockpick"
+msgstr ""
+"Адмычка адкрывае кантэйнер «%(lootboxName)s» з імавернасцю "
+"{cream_Open}%(count)s%{cream_Close}."
+
+msgid "tooltips/currencyKey/descriptionPart2/tanks_birthday_2024_key"
+msgstr "Ключы можна атрымаць:"
+
+msgid "tooltips/currencyKey/descriptionPart2/tanks_birthday_2024_lockpick"
+msgstr "Адмычкі можна атрымаць:"
+
+msgid "tooltips/currencyKey/descriptionPart3/tanks_birthday_2024_key"
+msgstr ""
+"• ва {cream_Open}ўнутрыгульнявой{cream_Close} або {cream_Open}Прэміум{cream_Close} крамах;\n"
+"• за {cream_Open}завяршэнне этапаў{cream_Close} падзеі «Гонкі: рэстарт»."
+
+msgid "tooltips/currencyKey/descriptionPart3/tanks_birthday_2024_lockpick"
+msgstr ""
+"• за выкананне {cream_Open}баявых задач{cream_Close};\n"
+"• з {cream_Open}кантэйнераў{cream_Close} «Дзень нараджэння 2024»;\n"
+"• за {cream_Open}завяршэнне этапаў{cream_Close} падзеі «Гонкі: рэстарт»."
+
+msgid "tooltips/currencyKey/footer/tanks_birthday_2024_key"
+msgstr "У наяўнасці:"
+
+msgid "tooltips/currencyKey/footer/tanks_birthday_2024_lockpick"
+msgstr "У наяўнасці:"
+
+msgid "tooltips/currencyKey/title_v1/tanks_birthday_2024_key"
+msgstr "Ключ ад кантэйнера «Дзень нараджэння 2024»."
+
+msgid "tooltips/currencyKey/title_v1/tanks_birthday_2024_lockpick"
+msgstr "Адмычка ад кантэйнера «Дзень нараджэння 2024»."
+
+msgid "tooltips/currencyKey/title_v2/tanks_birthday_2024_key"
+msgstr "Адкрыць ключом"
+
+msgid "tooltips/currencyKey/title_v2/tanks_birthday_2024_lockpick"
+msgstr "Адкрыць адмычкай"
+
+msgid "tooltips/currencyKey/title_v2_noKey/tanks_birthday_2024_key"
+msgstr "Ключоў няма ў наяўнасці"
+
+msgid "tooltips/currencyKey/title_v2_noKey/tanks_birthday_2024_lockpick"
+msgstr "Адмычак няма ў наяўнасці"
+
+msgid "tooltips/infoType/premVehicle/body"
+msgstr ""
+"Прэміум тэхніка не патрабуе даследавання і прыносіць больш крэдытаў, а "
+"таксама мае шэраг іншых пераваг."
+
+msgid "tooltips/infoType/premVehicle/header"
+msgstr "Прэміум машына"
+
+msgid "tooltips/infoType/premium"
+msgstr "Кантэйнер"
+
+msgid "tooltips/infoType/premiumDescription"
+msgstr ""
+"Асаблівы кантэйнер, у якім можа быць прэміум тэхніка, элементы выгляду, дні "
+"Танкавага прэміум акаўнту і іншыя каштоўныя ўзнагароды."
+
+msgid "tooltips/infoType/probability"
+msgstr "Імавернасць выпадання адной узнагароды са спіса:"
+
+msgid "tooltips/infoType/probabilityPremium"
+msgstr "Імавернасць выпадання адной з прэміум машын:"
+
+msgid "tooltips/infoType/probabilityPremiumDetails"
+msgstr ""
+"(або ў кожнай %(guaranteed)s-й скрынцы, калі ў папярэдніх %(fails)s не было "
+"тэхнікі)"
+
+msgid "tooltips/infoType/rentVehicle/body"
+msgstr ""
+"Гэта машына выдаецца або на пэўную колькасць баёў, або да ўказанай даты. "
+"Надзелена ўсімі асаблівасцямі прэміум тэхнікі."
+
+msgid "tooltips/infoType/rentVehicle/header"
+msgstr "Пракатная машына"
+
+msgid "tooltips/infoType/title"
+msgstr "Змесціва"
+
+msgid "tooltips/probability/body"
+msgstr "Шанц выпадання прадмета з указанай групы."
+
+msgid "tooltips/probability/header"
+msgstr "Імавернасць"
+
+msgid "tooltips/probabilityButton/description"
+msgstr ""
+"Усе ўзнагароды кантэйнера разбіты на {cream_Open}катэгорыі{cream_Close}. "
+"Кожная катэгорыя мае сваю {cream_Open}імавернасць{cream_Close} выпадання "
+"{cream_Open}адной{cream_Close} з яе ўзнагарод. Пры адкрыцці кантэйнера ёсць "
+"шанец атрымаць узнагароды з кожнай катэгорыі адначасова."
+
+msgid "tooltips/probabilityButton/title"
+msgstr "Імавернасць выпадання"
+
+msgid "tooltips/probabilityStageButtons/description1"
+msgstr ""
+"Маёмасць перамешчана ў тры паслядоўныя спісы, названыя этапамі. Каб перайсці"
+" да наступнага спіса, трэба атрымаць усю маёмасць з катэгорыі «Асноўныя "
+"ўзнагароды» бягучага этапу."
+
+msgid "tooltips/probabilityStageButtons/description2"
+msgstr ""
+"Узнагароду з трэцяга спіса можна атрымаць неабмежаваную колькасць разоў."
+
+msgid "tooltips/probabilityStageButtons/title"
+msgstr "Спісы змесціва"
+
+msgid "triggerHint/title"
+msgstr "Наяўныя ключы і адмычкі ад кантэйнераў «Дзень нараджэння 2024»."
+
+msgid "videoreward/button/title"
+msgstr "Працягнуць"
+
+msgid "videoreward/description/commonText"
+msgstr "Гарантаваная ўзнагарода!"
+
+msgid "videoreward/description/vehicleText"
+msgstr "Прыбыў гарантаваны танк!"
+
+msgid "videoreward/header/title"
+msgstr "Гарантаваная ўзнагарода!"
+
+msgid "welcomeScreen/button/acceptButton"
+msgstr "Так!"
+
+msgid "welcomeScreen/content/first/description"
+msgstr ""
+"У кантэйнерах знаходзіцца каштоўная гульнявая маёмасць, у тым ліку з пэўнай "
+"імавернасцю прэміум тэхніка, стылі, Танкавы прэміум акаўнт і шмат іншага."
+
+msgid "welcomeScreen/content/first/title"
+msgstr "Каштоўная маёмасць"
+
+msgid "welcomeScreen/content/second/description"
+msgstr ""
+"Гуляйце, перамагайце і атрымлівайце кантэйнеры ў межах сезонных падзей і за "
+"пэўныя баявыя задачы."
+
+msgid "welcomeScreen/content/second/title"
+msgstr "Як атрымаць кантэйнер?"
+
+msgid "welcomeScreen/content/third/description"
+msgstr ""
+"Вы можаце загадзя паглядзець увесь спіс магчымага змесціва кантэйнераў, а "
+"таксама імавернасць выпадання пэўных прадметаў."
+
+msgid "welcomeScreen/content/third/title"
+msgstr "Імавернасць"
+
+msgid "welcomeScreen/header/titleMain"
+msgstr "Кантэйнеры"
+
+msgid "welcomeScreen/header/titleSecond"
+msgstr ""
+"У кожным кантэйнеры знаходзіцца каштоўная гульнявая маёмасць. Азнаёмцеся з "
+"поўным спісам прадметаў і імавернасцю іх выпадання."

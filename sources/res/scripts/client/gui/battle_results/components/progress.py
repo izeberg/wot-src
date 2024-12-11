@@ -42,10 +42,10 @@ from skeletons.gui.shared import IItemsCache
 from items import tankmen
 if typing.TYPE_CHECKING:
     from typing import Dict, Tuple
-    from gui.battle_results.reusable import ReusableInfo
+    from gui.battle_results.reusable import _ReusableInfo
     from gui.Scaleform.daapi.view.lobby.server_events.events_helpers import BattlePassProgress
 _POST_BATTLE_RES = R.strings.battle_pass.reward.postBattle
-MIN_BATTLES_TO_SHOW_PROGRESS = 5
+_MIN_BATTLES_TO_SHOW_PROGRESS = 5
 _logger = logging.getLogger(__name__)
 
 def isQuestCompleted(_, pPrev, pCur):
@@ -104,7 +104,7 @@ class VehicleProgressHelper(object):
             if self.__vehicleXp - unlockProps.xpCost <= vehicleBattleXp:
                 if item.itemTypeID == GUI_ITEM_TYPE.VEHICLE:
                     avgBattles2Unlock = self.__getAvgBattles2Unlock(unlockProps)
-                    if self.__vehicleXp > unlockProps.xpCost or 0 < avgBattles2Unlock <= MIN_BATTLES_TO_SHOW_PROGRESS:
+                    if self.__vehicleXp > unlockProps.xpCost or 0 < avgBattles2Unlock <= _MIN_BATTLES_TO_SHOW_PROGRESS:
                         ready2UnlockVehicles.append(self.__makeUnlockVehicleVO(item, unlockProps, avgBattles2Unlock))
                 elif self.__vehicleXp > unlockProps.xpCost:
                     ready2UnlockModules.append(self.__makeUnlockModuleVO(item, unlockProps))
@@ -157,7 +157,7 @@ class VehicleProgressHelper(object):
                 else:
                     tmanDossier = self.itemsCache.items.getTankmanDossier(tman.invID)
                     avgBattles2NewSkill = self.__getAvgBattles2NewSkill(tmanDossier.getAvgXP(), tman)
-                    if 0 < avgBattles2NewSkill <= MIN_BATTLES_TO_SHOW_PROGRESS:
+                    if 0 < avgBattles2NewSkill <= _MIN_BATTLES_TO_SHOW_PROGRESS:
                         showNewEarnedSkill = True
                 if tman.newFreeSkillsCount > 0:
                     showNewFreeSkill = True
@@ -188,7 +188,7 @@ class VehicleProgressHelper(object):
 
     def __makeTankmanVO(self, tman, showNewFreeSkill, showNewEarnedSkill, avgBattles2NewSkill):
         prediction = ''
-        if 0 < avgBattles2NewSkill <= MIN_BATTLES_TO_SHOW_PROGRESS:
+        if 0 < avgBattles2NewSkill <= _MIN_BATTLES_TO_SHOW_PROGRESS:
             prediction = _ms(BATTLE_RESULTS.COMMON_NEWSKILLPREDICTION, battles=backport.getIntegralFormat(avgBattles2NewSkill))
         data = {'linkId': tman.invID}
         if showNewEarnedSkill:

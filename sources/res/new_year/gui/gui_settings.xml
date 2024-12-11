@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<setting>
+		<name>shop</name>
+		<type>dict</type>
+		<value>
+			<item>
+				$PARAMS(/ny_category/ny_category)
+				<name>newYearOldCollectionRewardUrl</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/featured/featured/items/platform_subscription/preview)
+				<name>buyRenewableSubscription</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/psa2021/psa2021)
+				<name>psaProducts</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>newYearInfo</name>
+		<type>dict</type>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/ny25video/
+				<name>baseURL</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+</root>

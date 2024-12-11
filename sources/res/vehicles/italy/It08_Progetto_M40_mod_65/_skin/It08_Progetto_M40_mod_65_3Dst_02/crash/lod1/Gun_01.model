@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod1/Gun_01</nodelessVisual>
+	<parent>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod2/Gun_01</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-0.333778 -0.323212 -0.911470</min>
+		<max>0.387982 0.298625 4.343554</max>
+	</visibilityBox>
+</root>

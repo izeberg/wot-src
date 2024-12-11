@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.405111 -0.024818 -2.459144</min>
+		<max>1.520684 1.899780 2.204454</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/crash/lod2/Turret_01</nodefullVisual>
+</root>

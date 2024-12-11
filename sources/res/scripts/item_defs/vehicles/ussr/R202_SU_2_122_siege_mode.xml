@@ -109,7 +109,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22100</weight>
-		<maxHealth>384</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>130</maxHealth>
 			<maxRegenHealth>85</maxRegenHealth>
@@ -3506,7 +3506,7 @@
 				<armor_4>0</armor_4>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>96</maxHealth>
+			<maxHealth>200</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -3527,7 +3527,7 @@
 			</surveyingDeviceHealth>
 			<guns>
 				<_122mm_cannon_M-30_1938_dualgun>
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>54</maxAmmo>
 					<armor>
 						<armor_1>
 							60
@@ -3552,11 +3552,14 @@
 						<gun>50</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.48
+						0.44
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>12</reloadTime>
-					<aimingTime>3</aimingTime>
+					<aimingTime>
+						2.6
+						<!--BW_String-->
+					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 6 1 6</maxPitch>

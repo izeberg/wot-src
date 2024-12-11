@@ -1,0 +1,685 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "categories/firepower"
+msgstr "агнявая моц"
+
+msgid "categories/mobility"
+msgstr "рухомасць"
+
+msgid "categories/stealth"
+msgstr "разведка"
+
+msgid "categories/survivability"
+msgstr "жывучасць"
+
+msgid "destroyPairModificationsDialog/acceptButton"
+msgstr "Так!"
+
+msgid "destroyPairModificationsDialog/cancelButton"
+msgstr "Не!"
+
+msgid "destroyPairModificationsDialog/destroyAll/description/credits"
+msgstr ""
+"Пасля скасавання мадыфікацый іх можна будзе нанова правесці за крэдыты."
+
+msgid "destroyPairModificationsDialog/destroyAll/description/default"
+msgstr "Пасля скасавання мадыфікацый іх можна будзе правесці нанова."
+
+msgid "destroyPairModificationsDialog/destroyAll/title"
+msgstr "Скасаваць бясплатна ўсе парныя мадыфікацыі?"
+
+msgid "destroyPairModificationsDialog/destroyOne/description/credits"
+msgstr ""
+"Пасля скасавання мадыфікацыі яе можна будзе нанова правесці за крэдыты."
+
+msgid "destroyPairModificationsDialog/destroyOne/description/default"
+msgstr "Пасля скасавання мадыфікацыі яе можна будзе правесці нанова."
+
+msgid "destroyPairModificationsDialog/destroyOne/title"
+msgstr "Скасаваць бясплатна парную мадыфікацыю «%(modification)s»?"
+
+msgid "hint/CompareModificationsPanel"
+msgstr "ПРАВЕСЦІ МАДЫФІКАЦЫІ"
+
+msgid "hint/CompareSpecializationButton"
+msgstr "ВЫБРАЦЬ КАТЭГОРЫЮ ЯЧЭЙКІ"
+
+msgid "hint/entryPoint"
+msgstr "ДАСТУПНЫЯ МАДЫФІКАЦЫІ"
+
+msgid "hint/switchEquipment/auxiliaryLoadout"
+msgstr ""
+"НАЦІСНІЦЕ ДЛЯ ПЕРАКЛЮЧЭННЯ\n"
+"ДАДАТКОВАГА РЫШТУНКУ"
+
+msgid "hint/switchEquipment/essentialsLoadout"
+msgstr ""
+"НАЦІСНІЦЕ ДЛЯ ПЕРАКЛЮЧЭННЯ\n"
+"НЕАБХОДНАГА РЫШТУНКУ"
+
+msgid "hint/vehiclePreview"
+msgstr "ЗМЕНЫ ТТХ МАШЫНЫ"
+
+msgid "postProgressionIntro/okButton"
+msgstr "Так!"
+
+msgid "postProgressionIntro/title"
+msgstr "ПАЛЯВАЯ МАДЭРНІЗАЦЫЯ"
+
+msgid "postProgressionLevelTooltipView/feature"
+msgstr "Асаблівая мадыфікацыя %(level):%(featureName)"
+
+msgid "postProgressionLevelTooltipView/lockedDescription"
+msgstr ""
+"Націсніце, каб убачыць змены ТТХ машыны пасля атрымання ўзроўню і вылучыць "
+"мадыфікацыі ва ўжытку."
+
+msgid "postProgressionLevelTooltipView/pairModification"
+msgstr "Парная мадыфікацыя %(level)"
+
+msgid "postProgressionLevelTooltipView/title"
+msgstr "Узровень Палявой мадэрнізацыі"
+
+msgid "researchEntry/status/notPurchased"
+msgstr "Даступная пасля куплі тэхнікі"
+
+msgid "researchEntry/status/notResearched"
+msgstr "Даступная пасля атрымання статусу «Элітны»"
+
+msgid "researchEntry/status/notResearchedNotPurchased"
+msgstr "Даступная пасля куплі тэхнікі і атрымання статусу «Элітны»"
+
+msgid "researchEntry/title"
+msgstr "ПАЛЯВАЯ МАДЭРНІЗАЦЫЯ"
+
+msgid "researchStepsDialog/acceptButton"
+msgstr "Павысіць"
+
+msgid "researchStepsDialog/bonus"
+msgstr "{unit} {text}"
+
+msgid "researchStepsDialog/cancelButton"
+msgstr "Скасаваць"
+
+msgid "researchStepsDialog/description/bonuses/double"
+msgstr "«{bonus1} і {bonus2}»"
+
+msgid "researchStepsDialog/description/bonuses/multiple"
+msgstr "«{bonuses}»"
+
+msgid "researchStepsDialog/description/bonuses/single"
+msgstr "«{bonus}»"
+
+msgid "researchStepsDialog/description/feature/optDevBoostersSwitch"
+msgstr "«Дадатковы рыштунак»"
+
+msgid "researchStepsDialog/description/feature/roleSlot"
+msgstr "«Слот»"
+
+msgid "researchStepsDialog/description/feature/shellsConsumablesSwitch"
+msgstr "«Неабходны рыштунак»"
+
+msgid "researchStepsDialog/description/features/double"
+msgstr "доступ да асаблівых мадыфікацый {name1} і {name2}"
+
+msgid "researchStepsDialog/description/features/multiple"
+msgstr "доступ да асаблівых мадыфікацый {names}"
+
+msgid "researchStepsDialog/description/features/single"
+msgstr "доступ да асаблівай мадыфікацыі {name}"
+
+msgid "researchStepsDialog/description/features/triple"
+msgstr "доступы да асаблівых мадыфікацый {name1}, {name2} і {name3}"
+
+msgid "researchStepsDialog/description/pairModification/multiple"
+msgstr "доступ да парных мадыфікацый {numbers} узроўню"
+
+msgid "researchStepsDialog/description/pairModification/single"
+msgstr "доступ да парнай мадыфікацыі {number} узроўню"
+
+msgid "researchStepsDialog/description/separator"
+msgstr ", "
+
+msgid "researchStepsDialog/description/text"
+msgstr "Будзе атрымана: {unlockedItems}."
+
+msgid "researchStepsDialog/title/multiple"
+msgstr "Павысіць узровень базавай мадыфікацыі да {level}?"
+
+msgid "researchStepsDialog/title/single"
+msgstr "Павысіць узровень базавай мадыфікацыі?"
+
+msgid "researchStepsDialog/totalPrice"
+msgstr "На аплату:"
+
+msgid "roleSlotTooltipView/appointment"
+msgstr "Прызначэнне"
+
+msgid "roleSlotTooltipView/availableRoles"
+msgstr "Даступныя катэгорыі: %(roles)."
+
+msgid "roleSlotTooltipView/currentRole"
+msgstr "Выбраная катэгорыя: %(roles)"
+
+msgid "roleSlotTooltipView/featureOpportunity"
+msgstr ""
+"Магчымасць прызначыць катэгорыю другога слота для абсталявання на гэтай "
+"машыне."
+
+msgid "roleSlotTooltipView/firstChoice"
+msgstr "Першае прызначэнне катэгорыі слота"
+
+msgid "roleSlotTooltipView/moneyShortage/appointment"
+msgstr "Прызначэнне ( %(notEnough) %(money))"
+
+msgid "roleSlotTooltipView/separator"
+msgstr ", "
+
+msgid "roleSlotTooltipView/title"
+msgstr "Катэгорыя другога слота"
+
+msgid "selectSlotSpecDialog/acceptButton/buyNotRequiredPanel"
+msgstr "Прызначыць"
+
+msgid "selectSlotSpecDialog/acceptButton/dealPanel"
+msgstr "Купіць і змяніць"
+
+msgid "selectSlotSpecDialog/acceptButton/exchangePanel"
+msgstr "Абмяняць"
+
+msgid "selectSlotSpecDialog/cancelButton"
+msgstr "Скасаваць"
+
+msgid "selectSlotSpecDialog/desc/change"
+msgstr "Змяніць катэгорыю слота можна за %(price)"
+
+msgid "selectSlotSpecDialog/desc/select"
+msgstr ""
+"Выбраная катэгорыя будзе прызначана другому слоту для абсталявання. Змяніць "
+"катэгорыю слота можна за %(price)"
+
+msgid "selectSlotSpecDialog/exchangeRate"
+msgstr "Курс абмену: %(gold) = %(credits)"
+
+msgid "selectSlotSpecDialog/exchangeWarning"
+msgstr "Абмен немагчымы: неабходна %(gold)"
+
+msgid "selectSlotSpecDialog/title/buyNotRequiredPanel"
+msgstr "Прызначце катэгорыю другога слота для абсталявання"
+
+msgid "selectSlotSpecDialog/title/dealPanel"
+msgstr "Змяніце катэгорыю другога слота для абсталявання"
+
+msgid "selectSlotSpecDialog/title/exchangePanel"
+msgstr "Для змены катэгорыі другога слота для абсталявання не стае %(credits)"
+
+msgid "selectSlotSpecDialog/totalPrice"
+msgstr "На аплату:"
+
+msgid "selectSlotSpecDialog/vehicleInfo"
+msgstr "%(level) %(typeIcon) %(name)"
+
+msgid "setupTooltipView/description/opt_dev_boosters_switch"
+msgstr ""
+"Магчымасць усталяваць дадатковы набор {cream_Open}абсталявання{cream_Close} "
+"і {cream_Open}настаўленняў.{cream_Close}"
+
+msgid "setupTooltipView/description/shells_consumables_switch"
+msgstr ""
+"Магчымасць усталяваць дадатковы набор {cream_Open}снарадаў{cream_Close} і "
+"{cream_Open}рыштунку.{cream_Close}"
+
+msgid "setupTooltipView/name/opt_dev_boosters_switch"
+msgstr "дадатковы рыштунак"
+
+msgid "setupTooltipView/name/shells_consumables_switch"
+msgstr "неабходны рыштунак"
+
+msgid "setupTooltipView/tip"
+msgstr ""
+"Пераключацца паміж асноўнай і альтэрнатыўнай камплектацыямі машыны можна ў "
+"Гаражы, а таксама падчас зваротнага адліку ў баі."
+
+msgid "setupTooltipView/title"
+msgstr "Альтэрнатыўная камплектацыя: {name}"
+
+msgid "slides/additionalEquipment/description"
+msgstr ""
+"%(accent)Дадатковы рыштунак%(/accent) — гэта частка камплектацыі машыны, "
+"якая складаецца з %(accent)абсталявання і настаўлення%(/accent). Пасля "
+"атрымання доступу да альтэрнатыўнай камплектацыі можна %(accent)пераключацца"
+" паміж варыянтамі%(/accent) дадатковага рыштунку падчас перадбаявога адліку."
+
+msgid "slides/additionalEquipment/title"
+msgstr "ДАДАТКОВЫ РЫШТУНАК"
+
+msgid "slides/alternativeEquipment/description"
+msgstr ""
+"Пасля даследавання пэўнага ўзроўню Палявой мадэрнізацыі вы атрымаеце доступ "
+"да %(accent)альтэрнатыўнай камплектацыі%(/accent) машыны і зможаце "
+"падрыхтаваць у Гаражы %(accent)дадатковы набор абсталявання, снарадаў і "
+"настаўленняў%(/accent). Ён не замяняе асноўнага, але адкрывае новыя "
+"магчымасці. Падчас зваротнага адліку можна ацаніць мапу/склад камандаў і "
+"%(accent)выбраць адну з дзвюх%(/accent) камплектацый машыны. Гэта дапаможа "
+"лепш адаптавацца да ўмоў будучай бітвы."
+
+msgid "slides/alternativeEquipment/title"
+msgstr "АЛЬТЭРНАТЫЎНАЯ КАМПЛЕКТАЦЫЯ МАШЫНЫ"
+
+msgid "slides/baseModifications/description"
+msgstr ""
+"%(accent)Базавыя мадыфікацыі%(/accent) даюць бонус да %(accent)адной з "
+"характарыстык %(/accent)машыны і адкрываюць доступ да парных мадыфікацый. "
+"Гэтыя мадыфікацыі ўсталёўваюцца на тэхніку бясплатна, а для іх даследавання "
+"неабходны баявы або вольны досвед."
+
+msgid "slides/baseModifications/title"
+msgstr "БАЗАВЫЯ МАДЫФІКАЦЫІ"
+
+msgid "slides/extraModification/description"
+msgstr ""
+"%(accent)Асаблівыя мадыфікацый%(/accent) адкрываюць доступ да альтэрнатыўнай"
+" камплектацыі машыны і даюць магчымасць %(accent)прызначыць "
+"катэгорыю%(/accent) другому слоту для абсталявання (для тэхнікі VIII–XІ "
+"узроўню). Змяніць выбраную катэгорыю слота можна за крэдыты."
+
+msgid "slides/extraModification/title"
+msgstr "АСАБЛІВЫЯ МАДЫФІКАЦЫІ: РОЛЕВАЯ ЯЧЭЙКА"
+
+msgid "slides/fieldModernization/description"
+msgstr ""
+"Палявая мадэрнізацыя — гэта магчымасць зрабіць больш тонкую ролевую наладку "
+"машыны і %(accent)змяніць яе ТТХ%(/accent) з дапамогай розных "
+"%(accent)мадыфікацый%(/accent). Доступ да кожнай наступнай мадыфікацыі "
+"адкрываецца пасля вывучэння папярэдняй."
+
+msgid "slides/fieldModernization/infoTitle"
+msgstr "ПАЛЯВАЯ МАДЭРНІЗАЦЫЯ"
+
+msgid "slides/fieldModernization/title"
+msgstr "ЗМЕНА ТТХ ТЭХНІКІ"
+
+msgid "slides/modificationTree/description"
+msgstr ""
+"Дрэва мадыфікацый даступнае для даследаванай і калекцыйнай %(accent)тэхнікі "
+"VI–XІ узроўняў%(/accent), якая атрымала %(accent)«Элітны» статус%(/accent). "
+"Для акцыйнай, падарункавай, узнагароднай і прэміум тэхнікі доступ да "
+"мадыфікацый адкрываецца адразу пасля куплі."
+
+msgid "slides/modificationTree/infoTitle"
+msgstr "ДАСЛЕДАВАННЕ МАДЫФІКАЦЫЙ"
+
+msgid "slides/modificationTree/title"
+msgstr "ДАСЛЕДАВАННЕ МАДЫФІКАЦЫЙ"
+
+msgid "slides/pairedModifications/description"
+msgstr ""
+"%(accent)Парныя мадыфікацыі паляпшаюць адну%(/accent) з характарыстык машыны за кошт %(accent)пагаршэння іншай%(/accent). Для даследавання мадыфікацый неабходны баявы або вольны досвед, а для іх усталявання — крэдыты. %(accent)Скасоўваць (здымаць з машыны)%(/accent) мадыфікацыі можна %(accent)бясплатна%(/accent).\n"
+"Пры продажы тэхнікі базавыя і асаблівыя мадыфікацыі захоўваюцца, аднак парныя скасоўваюцца."
+
+msgid "slides/pairedModifications/title"
+msgstr "ПАРНЫЯ МАДЫФІКАЦЫІ"
+
+msgid "slides/requiredEquipment/description"
+msgstr ""
+"%(accent)Неабходны рыштунак%(/accent) — гэта частка камплектацыі машыны, "
+"якая складаецца з%(accent)боекамплекту і рыштунку%(/accent). Пасля атрымання"
+" доступу да альтэрнатыўнай камплектацыі можна %(accent)пераключацца паміж "
+"варыянтамі%(/accent) неабходнага рыштунку за лічаныя секунды да пачатку бою."
+
+msgid "slides/requiredEquipment/title"
+msgstr "НЕАБХОДНЫ РЫШТУНАК"
+
+msgid "slides/roleInBattle/description"
+msgstr ""
+"У адрозненне ад тыпу роля машыны больш адлюстроўвае аптымальную "
+"%(accent)тактыку вядзення бою%(/accent), а таксама вызначае, якое "
+"%(accent)дрэва мадыфікацый%(/accent) будзе даступнае для канкрэтнай машыны."
+
+msgid "slides/roleInBattle/title"
+msgstr "РОЛЯ МАШЫНЫ Ў БАІ"
+
+msgid "slides/specialModifications/description/1/text"
+msgstr ""
+"Мадыфікацыі змяняюць характарыстыкі машыны, адкрываюць %(accent)доступ да "
+"альтэрнатыўнай камплектацыі%(/accent) і дазваляюць прызначыць катэгорыю "
+"%(accent)другому слоту%(/accent) для абсталявання."
+
+msgid "slides/specialModifications/description/2/text"
+msgstr ""
+"Альтэрнатыўная камплектацыя — гэта выбар %(accent)абсталявання, снарадаў, "
+"рыштунку і настаўленняў%(/accent). Паміж камплектацыямі можна пераключацца."
+
+msgid "slides/specialModifications/description/3/text"
+msgstr ""
+"Магчымасць выбраць і прызначыць катэгорыю%(accent)другому слоту%(/accent) "
+"для абсталявання. Непасрэдна ўплывае на эфектыўнасць машыны ў баі."
+
+msgid "slides/specialModifications/title"
+msgstr "МАДЫФІКАЦЫІ, АЛЬТЭРНАТЫЎНАЯ КАМПЛЕКТАЦЫЯ, КАТЭГОРЫЯ ЯЧЭЙКІ"
+
+msgid "tooltips/entry_point/description"
+msgstr "Магчымасць дадатковай змены характарыстык машыны."
+
+msgid "tooltips/entry_point/footerModulesAndVehicles"
+msgstr "Даследавана модуляў і машын: %(explored) / %(total)"
+
+msgid "tooltips/entry_point/footerOnlyModules"
+msgstr "Даследавана модуляў: %(explored) / %(total)"
+
+msgid "tooltips/entry_point/header"
+msgstr "Палявая мадэрнізацыя"
+
+msgid "tooltips/entry_point/status/notPurchased"
+msgstr "Даступная пасля куплі тэхнікі."
+
+msgid "tooltips/entry_point/status/notResearched"
+msgstr "Даступная пасля атрымання статусу «Элитны»."
+
+msgid "tooltips/entry_point/status/notResearchedNotPurchased"
+msgstr "Даступная пасля куплі тэхнікі і атрымання статусу «Элитны»."
+
+msgid "tooltips/feature/disabled/description"
+msgstr "Выбачайце за нязручнасці. Паспрабуйце пазней."
+
+msgid "tooltips/feature/disabled/title"
+msgstr "Асаблівыя мадыфікацыі недаступныя"
+
+msgid "tooltips/feature/subTitle"
+msgstr "Асаблівая мадыфікацыя %(level)"
+
+msgid "tooltips/notEnoughCredits/description"
+msgstr ""
+"Здабудзьце іх у баі, прадайце лішкі са Склада або атрымайце ў абмен за "
+"золата."
+
+msgid "tooltips/notEnoughCredits/title"
+msgstr "Замала крэдытаў"
+
+msgid "tooltips/pairModification/demount"
+msgstr "Дэмантаж"
+
+msgid "tooltips/pairModification/level"
+msgstr "Парная мадыфікацыя %(level)"
+
+msgid "tooltips/pairModification/modifiers"
+msgstr "Змена характарыстык машыны:"
+
+msgid "tooltips/pairModification/moneyShortage/demount"
+msgstr "Дэмантаж ( %(notEnough) %(money))"
+
+msgid "tooltips/pairModification/moneyShortage/mount"
+msgstr "Усталяванне ( %(notEnough) %(money))"
+
+msgid "tooltips/pairModification/mount"
+msgstr "Усталяванне"
+
+msgid "tooltips/pairModification/notInstalledFooter"
+msgstr ""
+"Націсніце, каб убачыць змены ТТХ машыны пасля ўсталявання гэтай мадыфікацыі."
+
+msgid "tooltips/pairModification/status/received/description"
+msgstr ""
+"Пасля скасавання мадыфікацыі вы зможаце за крэдыты ўсталяваць любую "
+"мадыфікацыю з гэтай пары."
+
+msgid "tooltips/pairModification/status/restricted/description"
+msgstr ""
+"Правядзенне гэтай мадыфікацыі аўтаматычна скасуе ўжо ўсталяваную з гэтай "
+"пары."
+
+msgid "tooltips/pairModification/status/restricted/title"
+msgstr "Усталявана іншая мадыфікацыя"
+
+msgid "tooltips/pairModification/status/unavailableLocked/description"
+msgstr ""
+"Дайдзіце да %(level) узроўню Палявой мадэрнізацыі, каб атрымаць доступ да "
+"гэтай мадыфікацыі"
+
+msgid "tooltips/pairModification/status/unavailableLocked/title"
+msgstr "Мадыфікацыя недаступная"
+
+msgid "tooltips/priceBlock/free"
+msgstr "Бясплатна"
+
+msgid "tooltips/priceBlock/notEnough"
+msgstr "не стае:"
+
+msgid "tooltips/ttc/approximately"
+msgstr "Прыблізная лічба. Дакладныя значэнні пададзены ў ТТХ."
+
+msgid "vehPostProgressionCmpView/compareControl/button/label/apply"
+msgstr "Прымяніць"
+
+msgid "vehPostProgressionCmpView/compareControl/button/label/cancel"
+msgstr "Скасаваць"
+
+msgid "vehPostProgressionCmpView/compareControl/button/label/reset"
+msgstr "Скінуць"
+
+msgid "vehPostProgressionCmpView/title"
+msgstr "Мадыфікацыі %(title)s"
+
+msgid "vehPostProgressionView/about"
+msgstr "ПРА ПАЛЯВУЮ МАДЭРНІЗАЦЫЮ"
+
+msgid "vehPostProgressionView/button/compare"
+msgstr "Дадаць да параўнання"
+
+msgid "vehPostProgressionView/button/demountAllPairs"
+msgstr "Знішчыць усе пары"
+
+msgid "vehPostProgressionView/button/demountAllPairs/tooltip/body"
+msgstr "Націсніце, каб знішчыць усе мадыфікацыі ва ўсіх парах."
+
+msgid "vehPostProgressionView/button/demountAllPairs/tooltip/header"
+msgstr "Знішчыць"
+
+msgid "vehPostProgressionView/button/preview"
+msgstr "Перадпрагляд"
+
+msgid "vehPostProgressionView/grid/featureButton/label/change"
+msgstr "Змяніць"
+
+msgid "vehPostProgressionView/grid/featureButton/label/prebattleSwitch"
+msgstr "Перад боем"
+
+msgid "vehPostProgressionView/grid/featureButton/label/select"
+msgstr "Выбраць"
+
+msgid ""
+"vehPostProgressionView/grid/featureButton/tooltip/prebattleSwitch/body/optDevBoostersSwitch"
+msgstr ""
+"Уключыць/адключыць магчымасць выбару камплектаў абсталявання і настаўленняў падчас перадбаявога адліку.\n"
+"{tip}"
+
+msgid ""
+"vehPostProgressionView/grid/featureButton/tooltip/prebattleSwitch/body/shellsConsumablesSwitch"
+msgstr ""
+"Уключыць/адключыць магчымасць выбару камплектаў снарадаў і рыштунку падчас перадбаявога адліку.\n"
+"{tip}"
+
+msgid ""
+"vehPostProgressionView/grid/featureButton/tooltip/prebattleSwitch/bodyTip"
+msgstr ""
+"Пры выключанай наладзе ў баі будуць выкарыстоўвацца камплекты, выбраныя ў "
+"Гаражы."
+
+msgid ""
+"vehPostProgressionView/grid/featureButton/tooltip/prebattleSwitch/header"
+msgstr "Пераключэнне перад боем"
+
+msgid "vehPostProgressionView/grid/featureButton/tooltip/unavailableBattle"
+msgstr "Машына ў баі."
+
+msgid "vehPostProgressionView/grid/featureButton/tooltip/unavailableBreaker"
+msgstr "Машына заблакавана."
+
+msgid "vehPostProgressionView/grid/featureButton/tooltip/unavailableBroken"
+msgstr "Машына патрабуе рамонту."
+
+msgid "vehPostProgressionView/grid/featureButton/tooltip/unavailableFormation"
+msgstr "Машына ў складзе фарміравання."
+
+msgid "vehPostProgressionView/grid/featureButton/tooltip/unavailablePurchase"
+msgstr "Прызначэнне катэгорыі слота недаступнае: машыны няма ў Гаражы."
+
+msgid "vehPostProgressionView/grid/featureButton/tooltip/unavailableRentOver"
+msgstr "Пракат машыны завершаны."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/buyButton/tooltip/unavailableBattle"
+msgstr "Машына ў баі."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/buyButton/tooltip/unavailableBreaker"
+msgstr "Машына заблакавана."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/buyButton/tooltip/unavailableBroken"
+msgstr "Машына патрабуе рамонту."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/buyButton/tooltip/unavailableFormation"
+msgstr "Машына ў складзе фарміравання."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/buyButton/tooltip/unavailablePurchase"
+msgstr "Усталяванне недаступнае: машыны няма ў Гаражы."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/buyButton/tooltip/unavailableRentOver"
+msgstr "Пракат машыны завершаны."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/discardButton/tooltip/body"
+msgstr "Націсніце, каб знішчыць мадыфікацыю ў гэтай пары."
+
+msgid ""
+"vehPostProgressionView/grid/pairModification/discardButton/tooltip/header"
+msgstr "Знішчыць"
+
+msgid "vehPostProgressionView/grid/pairModificationSeparator/label"
+msgstr "або"
+
+msgid "vehPostProgressionView/grid/progression/maxLevel"
+msgstr "Максімальны ўзровень Палявой мадэрнізацыі"
+
+msgid "vehPostProgressionView/grid/restrictions/label/multipleAllowedLevels"
+msgstr "Даступна для тэхнікі {minAllowedLevel} — {maxAllowedLevel} узроўняў"
+
+msgid "vehPostProgressionView/grid/restrictions/label/singleAllowedLevel"
+msgstr "Даступна для тэхнікі {allowedLevel} узроўню"
+
+msgid "vehPostProgressionView/hideVehParams"
+msgstr "СХАВАЦЬ ТТХ"
+
+msgid "vehPostProgressionView/persistentBonuses/bonusesSeparator"
+msgstr ", "
+
+msgid "vehPostProgressionView/persistentBonuses/nonZeroStepMultipleBonuses"
+msgstr "Пастаянны бонус: %(bonuses)"
+
+msgid "vehPostProgressionView/persistentBonuses/nonZeroStepOneBonus"
+msgstr "Пастаянны бонус: %(bonus)"
+
+msgid "vehPostProgressionView/persistentBonuses/nonZeroStepTwoBonuses"
+msgstr "Пастаянны бонус: %(bonus1) і %(bonus2)"
+
+msgid "vehPostProgressionView/persistentBonuses/zeroStepMultipleBonuses"
+msgstr "Павышэнне ўзроўню дасць пастаянныя бонусы: %(bonuses)"
+
+msgid "vehPostProgressionView/persistentBonuses/zeroStepOneBonus"
+msgstr "Павышэнне ўзроўню дасць пастаянны бонус %(bonus)"
+
+msgid "vehPostProgressionView/persistentBonuses/zeroStepTwoBonuses"
+msgstr "Павышэнне ўзроўню дасць пастаянныя бонусы %(bonus1) і %(bonus2)"
+
+msgid ""
+"vehPostProgressionView/purchasePreview/mainContent/button/label/levelUp"
+msgstr "Павысіць узровень"
+
+msgid ""
+"vehPostProgressionView/purchasePreview/mainContent/button/label/levelUpTo"
+msgstr "Павысіць да %(level)"
+
+msgid "vehPostProgressionView/purchasePreview/mainContent/summary/label"
+msgstr "Павышэнне ўзроўню дасць:"
+
+msgid "vehPostProgressionView/purchasePreview/summaryBonusItem/label/multiple"
+msgstr "Паляпшэнне ТТХ"
+
+msgid ""
+"vehPostProgressionView/purchasePreview/summaryFeatureItem/label/multiple"
+msgstr "Асаблівыя мадыфікацыі"
+
+msgid "vehPostProgressionView/purchasePreview/summaryFeatureItem/label/single"
+msgstr "Асаблівая мадыфікацыя {level}"
+
+msgid "vehPostProgressionView/purchasePreview/summaryPairItem/label/multiple"
+msgstr "Парныя мадыфікацыі"
+
+msgid "vehPostProgressionView/purchasePreview/summaryPairItem/label/single"
+msgstr "Парная мадыфікацыя {level}"
+
+msgid "vehPostProgressionView/purchasePreview/unavailableContent/button/label"
+msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableBattle"
+msgstr "Палявая мадэрнізацыя недаступная: машына ў баі."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableBreaker"
+msgstr "Палявая мадэрнізацыя недаступная: машына заблакавана."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableBroken"
+msgstr "Палявая мадэрнізацыя недаступная: машына патрабуе рамонту."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableElite"
+msgstr ""
+"Магчымасць дадаткова змяніць характарыстыкі машыны з'явіцца пасля атрымання "
+"«Элітнага» статусу."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableFormation"
+msgstr "Палявая мадэрнізацыя недаступная: машына ў складзе фарміравання."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailablePurchase"
+msgstr ""
+"Павышэнне ўзроўню Палявой мадэрнізацыі і даследаванне мадыфікацый магчымае "
+"пры наяўнасці машыны ў Гаражы."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableRent"
+msgstr ""
+"Палявая мадэрнізацыя недаступная для пракатнай тэхнікі. Купіце гэту машыну, "
+"каб атрымаць доступ."
+
+msgid ""
+"vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableRentOver"
+msgstr ""
+"Палявая мадэрнізацыя недаступная: пракат машыны завершаны. Працягніце "
+"пракат, каб атрымаць доступ."
+
+msgid "vehPostProgressionView/showVehParams"
+msgstr "ПАКАЗАЦЬ ТТХ"
+
+msgid "vehiclePreviewPage/button/entryPoint/tooltip/body"
+msgstr ""
+"Магчымасць дадатковай змены характарыстык машыны. Даступная пасля атрымання "
+"«Элітнага» статусу."
+
+msgid "vehiclePreviewPage/button/entryPoint/tooltip/header"
+msgstr "Палявая мадэрнізацыя"

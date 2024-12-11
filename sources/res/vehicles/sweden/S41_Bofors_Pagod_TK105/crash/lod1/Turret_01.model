@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.571882 0.064461 -1.706073</min>
+		<max>1.578877 1.458428 1.574922</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod1/Turret_01</nodefullVisual>
+</root>

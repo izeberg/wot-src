@@ -1,0 +1,213 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "collection/error/description"
+msgstr "Мы абтрэсваем пыл з вашай калекцыі, а пакуль рушце да бою."
+
+msgid "collection/error/title"
+msgstr "Калекцыі на рэстаўрацыі"
+
+msgid "collection/tooltip/completed"
+msgstr "Калекцыя «%(name)s, %(season)s / %(year)s» сабрана."
+
+msgid "collection/tooltip/progress"
+msgstr ""
+"Колькасць сабраных элементаў калекцыі «%(name)s, %(season)s / %(year)s»."
+
+msgid "footer/buttonText"
+msgstr "Да калекцыі"
+
+msgid "footer/collectionCompleted"
+msgstr "Калекцыя сабрана!"
+
+msgid "footer/okButtonText"
+msgstr "Так!"
+
+msgid "footer/progressbar/activeState/receivedElements/text"
+msgstr "Сабрана элементаў: %(received)s / %(total)s"
+
+msgid "footer/progressbar/tooltip/body"
+msgstr ""
+"Прагрэс збору калекцыі павялічваецца, калі вы атрымліваеце адпаведныя "
+"элементы ў межах падзеі або пасля яе завяршэння, калі гэта магчыма. "
+"Навядзіце курсор на неатрыманы элемент калекцыі, каб даведацца, як яго "
+"атрымаць."
+
+msgid "footer/progressbar/tooltip/note"
+msgstr ""
+"У калекцыі могуць быць элементы, якія атрымліваюцца ва ўзнагароду за збор "
+"гэтай жа калекцыі. Яны не ўлічваюцца ў лічыльніку элементаў і не паскараюць "
+"прагрэс збору, але раскрываюць дэталі бягучай падзеі."
+
+msgid "footer/progressbar/tooltip/title"
+msgstr "Збор элементаў калекцыі"
+
+msgid "header/overhead"
+msgstr "КАЛЕКЦЫЯ"
+
+msgid "header/rewardScreen/completed/battle_pass_10"
+msgstr "КАЛЕКЦЫЯ БАЯВЫ ПРОПУСК Х СЕЗОН"
+
+msgid "header/rewardScreen/completed/battle_pass_11"
+msgstr "КАЛЕКЦЫЯ БАЯВЫ ПРОПУСК ХІ СЕЗОН"
+
+msgid "header/rewardScreen/completed/mt_birthday2023"
+msgstr "КАЛЕКЦЫЯ ДЗЕНЬ НАРАДЖЭННЯ 12+1"
+
+msgid "header/seasonText/defaultConfig"
+msgstr "НАЗВА СЕЗОНА"
+
+msgid "header/seasonText/mt_birthday2023"
+msgstr "2023"
+
+msgid "header/subtitle"
+msgstr "КАЛЕКЦЫЯ САБРАНА!"
+
+msgid "header/subtitle/active"
+msgstr "УЗНАГАРОДА ЗА ЗБОР КАЛЕКЦЫІ"
+
+msgid "header/subtitle/completed"
+msgstr "КАЛЕКЦЫЯ САБРАНА"
+
+msgid "header/title/defaultConfig"
+msgstr "ШАБЛОННАЯ КАЛЕКЦЫЯ"
+
+msgid "header/title/mt_birthday2023"
+msgstr "ДЗЕНЬ НАРАДЖЭННЯ"
+
+msgid "intro/buttonClose/text"
+msgstr "Да калекцый"
+
+msgid "intro/content/description/text"
+msgstr ""
+"Калекцыі — гэта наборы ўнікальных элементаў, якія можна атрымаць у розных "
+"падзеях. Элементы ўяўляюць сабой эксклюзіўныя стылі, дэколі і іншыя "
+"прадметы, якія ў большасці выпадкаў нельга атрымаць у межах звычайнага "
+"гульнявога працэсу."
+
+msgid "intro/header/text"
+msgstr "Калекцыі гульні «Мир танков»"
+
+msgid "main/backText"
+msgstr "ДА КАЛЕКЦЫЙ"
+
+msgid "mainLayout/header/title"
+msgstr "Калекцыі гульні «Мир танков»"
+
+msgid "mainLayout/header/tooltip/body"
+msgstr ""
+"Калекцыі — гэта наборы ўнікальных элементаў, якія можна атрымаць у розных "
+"падзеях. Элементы ўяўляюць сабой эксклюзіўныя стылі, дэколі і іншыя "
+"прадметы, якія ў большасці выпадкаў нельга атрымаць у межах звычайнага "
+"гульнявога працэсу."
+
+msgid "mainLayout/header/tooltip/header"
+msgstr "Калекцыі гульні «Мир танков»"
+
+msgid "navigation/pageCounter"
+msgstr " / %(pageCount)s"
+
+msgid "notifications/button/goToCollection"
+msgstr "Да калекцыі"
+
+msgid "notifications/button/goToCollections"
+msgstr "Да калекцый"
+
+msgid "notifications/button/goToReward"
+msgstr "Да ўзнагароды"
+
+msgid "notifications/eventDisabled/text"
+msgstr "Калекцыі часова недаступныя."
+
+msgid "notifications/eventEnabled/text"
+msgstr "Калекцыі зноў даступныя. Выбачайце за нязручнасці."
+
+msgid "notifications/eventStart/text"
+msgstr ""
+"Ваяры, новая калекцыя гатовая да збору! Збірайце элементы калекцыі "
+"«%(feature)s», каб атрымаць унікальную ўзнагароду."
+
+msgid "notifications/eventStart/title"
+msgstr "Калекцыя «%(feature)s» цяпер даступная"
+
+msgid "notifications/feature/battle_pass_10"
+msgstr "БАЯВЫ ПРОПУСК"
+
+msgid "notifications/feature/battle_pass_11"
+msgstr "БАЯВЫ ПРОПУСК"
+
+msgid "notifications/feature/battle_pass_12"
+msgstr "БАЯВЫ ПРОПУСК"
+
+msgid "notifications/feature/mt_birthday2023"
+msgstr "Дзень нараджэння 12+1"
+
+msgid "notifications/finalReceived/text"
+msgstr "Вы сабралі калекцыю: «%(feature)s»"
+
+msgid "notifications/newItemsReceived/text"
+msgstr ""
+"Атрыманы новыя элементы калекцыі: \n"
+"\n"
+"%(items)s"
+
+msgid "notifications/newRewardsReceived/text"
+msgstr ""
+"Атрымана ўзнагарода за збор элементаў калекцыі:\n"
+"\n"
+"%(items)s"
+
+msgid "notifications/renew/text"
+msgstr "Калекцыя даступная"
+
+msgid "notifications/renew/title"
+msgstr "%(feature)s, %(season)s"
+
+msgid "notifications/season/battle_pass_10"
+msgstr "X СЕЗОН"
+
+msgid "notifications/season/battle_pass_11"
+msgstr "XI СЕЗОН"
+
+msgid "notifications/season/battle_pass_12"
+msgstr "?empty?"
+
+msgid "notifications/templates/featureSeason"
+msgstr "%(feature)s %(season)s"
+
+msgid "notifications/title/collectionName"
+msgstr "Калекцыя «%(feature)s»"
+
+msgid "notifications/title/congratulation"
+msgstr "Віншуем!"
+
+msgid "notifications/updatedEntry/text"
+msgstr "Калекцыі гульні «Мир танков»"
+
+msgid "notifications/updatedEntry/title"
+msgstr "Абнаўленне дасягненняў"
+
+msgid "overlays/preview/previewButton/text"
+msgstr "Перадпрагляд"
+
+msgid "overlays/preview/style/title/text"
+msgstr "%(styleName)s для %(vehicleInfo)"
+
+msgid "tooltips/item/achievement"
+msgstr "Медаль «%(name)s»"
+
+msgid "tooltips/receivedStatus"
+msgstr "Атрыманы"
+
+msgid "tooltips/title"
+msgstr "Элемент калекцыі"
+
+msgid "tooltips/unreceivedStatus"
+msgstr "Не атрыманы"

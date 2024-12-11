@@ -36,17 +36,17 @@ package net.wg.gui.components.controls
       
       public final function dispose() : void
       {
-         this.onDispose();
          this._disposed = true;
          this._tf = null;
          this.textField = null;
       }
       
-      protected function onDispose() : void
+      public function isDisposed() : Boolean
       {
+         return this._disposed;
       }
       
-      protected function updateSize() : void
+      private function updateSize() : void
       {
          if(this._autoSize == TextFieldAutoSize.NONE)
          {
@@ -164,11 +164,6 @@ package net.wg.gui.components.controls
       {
          this._autoSize = param1;
          this.textField.autoSize = param1;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
       
       protected function set isCacheAsBitmap(param1:Boolean) : void

@@ -199,6 +199,7 @@ class HierarchyManager(pybind11_object):
 	def findNodes(self, *args, **kwargs): pass
 	def getChildren(self, *args, **kwargs): pass
 	def getChildrenIncludingInactive(self, *args, **kwargs): pass
+	def getChildrenRecursively(self, *args, **kwargs): pass
 	def getParent(self, *args, **kwargs): pass
 	def getTopMostParent(self, *args, **kwargs): pass
 	def hasChildren(self, *args, **kwargs): pass

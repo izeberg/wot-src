@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R155_Object_277/_skin/R155_Object_277_3Dst_02/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.404112 -0.264917 -1.762327</min>
+		<max>0.500558 0.273633 6.070503</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

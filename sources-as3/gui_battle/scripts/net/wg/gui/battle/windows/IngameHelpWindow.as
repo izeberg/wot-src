@@ -3,10 +3,10 @@ package net.wg.gui.battle.windows
    import flash.geom.ColorTransform;
    import flash.text.TextField;
    import flash.utils.Dictionary;
-   import net.wg.data.constants.generated.BATTLEATLAS;
+   import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.generated.KEYBOARD_KEYS;
-   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.components.controls.CloseButtonText;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.windows.WindowEvent;
    import net.wg.infrastructure.base.meta.IIngameHelpWindowMeta;
    import net.wg.infrastructure.base.meta.impl.IngameHelpWindowMeta;
@@ -211,9 +211,9 @@ package net.wg.gui.battle.windows
       
       public var highlightActiveTargetTF:TextField = null;
       
-      public var background:BattleAtlasSprite = null;
+      public var background:Image = null;
       
-      public var bgInfo:BattleAtlasSprite = null;
+      public var bgInfo:Image = null;
       
       private var _keysDictionary:Dictionary;
       
@@ -252,7 +252,9 @@ package net.wg.gui.battle.windows
       override protected function configUI() : void
       {
          super.configUI();
-         this.background.imageName = BATTLEATLAS.HELP_WINDOW_BG;
+         this.background.cacheType = ImageCacheTypes.NOT_USE_CACHE;
+         this.bgInfo.cacheType = ImageCacheTypes.NOT_USE_CACHE;
+         this.background.source = RES_ICONS.MAPS_ICONS_BATTLEHELP_WINDOW_HELPWINDOW_BG;
          this.closeBtn.label = INGAME_HELP.BATTLECONTROLS_CLOSEBTNLABEL;
          this.closeBtn.addEventListener(ButtonEvent.CLICK,this.onBtnCloseClickHandler);
          updateStage(App.appWidth,App.appHeight);
@@ -282,7 +284,9 @@ package net.wg.gui.battle.windows
          window.removeEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
          this.closeBtn.dispose();
          this.closeBtn = null;
+         this.background.dispose();
          this.background = null;
+         this.bgInfo.dispose();
          this.bgInfo = null;
          this._keysDictionary = null;
          this.exampleTimeLeft = null;
@@ -489,7 +493,7 @@ package net.wg.gui.battle.windows
       
       private function updateColorDependencies(param1:Boolean) : void
       {
-         this.bgInfo.imageName = !!param1 ? BATTLEATLAS.HELP_WINDOW_INFO_BLIND : BATTLEATLAS.HELP_WINDOW_INFO;
+         this.bgInfo.source = !!param1 ? RES_ICONS.MAPS_ICONS_BATTLEHELP_WINDOW_HELPWINDOW_INFO_BLIND : RES_ICONS.MAPS_ICONS_BATTLEHELP_WINDOW_HELPWINDOW_INFO;
          var _loc2_:uint = this._colorMgr.getRGB(SCHEME_NAME);
          var _loc3_:ColorTransform = this._colorMgr.getTransform(SCHEME_NAME);
          this.exampleName.textColor = _loc2_;

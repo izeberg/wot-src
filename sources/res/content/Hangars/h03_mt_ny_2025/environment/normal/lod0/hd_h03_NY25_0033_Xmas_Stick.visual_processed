@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root_M</identifier>
+				<transform>
+					<row0>0.000000 0.998882 -0.047274</row0>
+					<row1>-0.000000 -0.047274 -0.998882</row1>
+					<row2>-1.000000 0.000000 0.000000</row2>
+					<row3>0.000000 0.786892 -0.023967</row3>
+				</transform>
+				<node>
+					<identifier>Spine1_M</identifier>
+					<transform>
+						<row0>0.995441 -0.095376 -0.000000</row0>
+						<row1>0.095376 0.995441 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>0.168514 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Chest_M</identifier>
+						<transform>
+							<row0>0.999821 -0.018896 -0.000000</row0>
+							<row1>0.018896 0.999821 -0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.152170 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Scapula_R</identifier>
+							<transform>
+								<row0>-0.073808 0.000944 0.997272</row0>
+								<row1>-0.067077 0.997730 -0.005909</row1>
+								<row2>-0.995014 -0.067330 -0.073577</row2>
+								<row3>0.294960 -0.022489 0.046702</row3>
+							</transform>
+							<node>
+								<identifier>Shoulder_R</identifier>
+								<transform>
+									<row0>0.640464 -0.062405 0.765449</row0>
+									<row1>0.043805 0.998039 0.044716</row1>
+									<row2>-0.766738 0.004892 0.641941</row2>
+									<row3>0.159596 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Elbow_R</identifier>
+									<transform>
+										<row0>0.752651 0.658420 0.000000</row0>
+										<row1>-0.658420 0.752651 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.224301 -0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>ElbowPart1_R</identifier>
+										<transform>
+											<row0>1.000000 -0.000000 0.000000</row0>
+											<row1>-0.000000 1.000000 -0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>0.150137 -0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Wrist_R</identifier>
+											<transform>
+												<row0>0.996743 0.031671 0.074159</row0>
+												<row1>-0.025943 0.996695 -0.076974</row1>
+												<row2>-0.076352 0.074800 0.994271</row2>
+												<row3>0.150137 -0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>Main</identifier>
+												<transform>
+													<row0>-0.388291 0.306030 0.869238</row0>
+													<row1>-0.666949 0.557591 -0.494238</row1>
+													<row2>-0.635932 -0.771646 -0.012401</row2>
+													<row3>-0.312509 0.051561 0.388824</row3>
+												</transform>
+												<node>
+													<identifier>Main_BlendBone</identifier>
+													<transform>
+														<row0>1.000000 -0.000000 -0.000000</row0>
+														<row1>-0.000000 1.000000 -0.000000</row1>
+														<row2>-0.000000 -0.000000 -1.000000</row2>
+														<row3>0.000000 -1.058837 0.000000</row3>
+													</transform>
+												</node>
+											</node>
+										</node>
+									</node>
+									<node>
+										<identifier>Elbow_R_BlendBone</identifier>
+										<transform>
+											<row0>-0.461334 0.357740 0.811907</row0>
+											<row1>-0.641507 0.497657 -0.583786</row1>
+											<row2>0.612895 0.790164 0.000093</row2>
+											<row3>0.637010 -0.456361 0.977587</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Shoulder_R_BlendBone</identifier>
+									<transform>
+										<row0>-0.582766 -0.034498 0.811907</row0>
+										<row1>-0.810498 -0.047819 -0.583786</row1>
+										<row2>-0.058964 0.998260 0.000093</row2>
+										<row3>1.004224 0.075939 0.977587</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Scapula_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.997272 0.005909 0.073577</row0>
+									<row1>-0.073579 -0.000001 -0.997289</row1>
+									<row2>0.005893 0.999983 -0.000436</row2>
+									<row3>0.056539 0.017903 1.399632</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Chest_M_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 -0.000000 -1.000000</row0>
+								<row1>0.997748 0.067077 0.000000</row1>
+								<row2>-0.067077 0.997748 -0.000000</row2>
+								<row3>-1.103067 -0.098810 -0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Spine1_M_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 -0.000000 -1.000000</row0>
+							<row1>0.998837 0.048211 0.000000</row1>
+							<row2>-0.048211 0.998837 -0.000000</row2>
+							<row3>-0.952567 -0.077948 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Root_M_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 -0.000000 -1.000000</row0>
+						<row1>0.998882 -0.047274 0.000000</row1>
+						<row2>0.047274 0.998882 -0.000000</row2>
+						<row3>-0.787145 0.013259 -0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Main_BlendBone</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/custom/emissive_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						emissiveTexture
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0033_Xmas_Stick_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_coldColor
+						<Vector4>0.200000 0.725490 0.909804 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissiveParams
+						<Vector4>1.000000 1.000000 0.200000 7.050000</Vector4>
+					</property>
+					<property>
+						g_hotColor
+						<Vector4>0.145098 0.376471 0.501961 1.000000</Vector4>
+					</property>
+					<property>
+						g_maskFromTex
+						<Bool>true</Bool>
+					</property>
+					<property>
+						phaseTexture
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0033_Xmas_Stick_02_AM.dds</Texture>
+					</property>
+					<property>
+						srcBlend
+						<Int>7</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.851024 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Main_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0033_Xmas_Stick_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0033_Xmas_Stick_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/hd_h03_NY25_0033_Xmas_Stick_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.946695 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.515738 0.046011 -0.515738</min>
+		<max>0.515738 1.847379 0.515738</max>
+	</boundingBox>
+	<geometrySize>51512</geometrySize>
+	<minUVDensity>0.936115</minUVDensity>
+</root>

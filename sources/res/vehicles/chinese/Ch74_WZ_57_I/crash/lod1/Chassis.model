@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.649957 -0.000146 -3.644614</min>
+		<max>1.649965 1.180472 3.769210</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch74_WZ_57_I/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch74_WZ_57_I/crash/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

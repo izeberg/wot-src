@@ -1,4 +1,4 @@
-import BigWorld, BattleReplay
+import BigWorld
 from aih_constants import CTRL_MODE_NAME
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.battle.comp7.start_countdown_sound_player import Comp7StartTimerSoundPlayer
@@ -31,8 +31,7 @@ class _Comp7Config(ComponentsConfig):
          (
           BATTLE_CTRL_ID.ARENA_PERIOD,
           (
-           _DynamicAliases.LOBBY_NOTIFIER,
-           BATTLE_VIEW_ALIASES.COMP7_TANK_CAROUSEL)),), (
+           _DynamicAliases.LOBBY_NOTIFIER,)),), (
          (
           _DynamicAliases.LOBBY_NOTIFIER, LobbyNotifier),))
 
@@ -238,7 +237,6 @@ class _ComponentsVisibilityManager(object):
         self.__components = {BATTLE_VIEW_ALIASES.DAMAGE_PANEL: self.__damagePanelPredicate, 
            BATTLE_VIEW_ALIASES.BATTLE_DAMAGE_LOG_PANEL: self.__damageLogPredicate, 
            BATTLE_VIEW_ALIASES.FRAG_CORRELATION_BAR: self.__fragCorrelationBarPredicate, 
-           BATTLE_VIEW_ALIASES.COMP7_TANK_CAROUSEL: self.__carouselPredicate, 
            BATTLE_VIEW_ALIASES.POINT_OF_INTEREST_NOTIFICATIONS_PANEL: self.__POINotificationsPredicate, 
            BATTLE_VIEW_ALIASES.RIBBONS_PANEL: self.__ribbonPanelPredicate, 
            BATTLE_VIEW_ALIASES.PERKS_PANEL: self.__perksPanelPredicate}
@@ -318,9 +316,6 @@ class _ComponentsVisibilityManager(object):
 
     def __perksPanelPredicate(self):
         return self.__arenaPeriod >= ARENA_PERIOD.BATTLE and self.__isBattleLoaded and avatar_getter.getPlayerTeam() == BigWorld.player().arena.vehicles[self.__controllingVehicleID]['team']
-
-    def __carouselPredicate(self):
-        return not BattleReplay.g_replayCtrl.isPlaying and self.__arenaPeriod < ARENA_PERIOD.BATTLE and self.__isBattleLoaded and not self.__isSelectionConfirmed and not self.__isFullStatsShown
 
     def __POINotificationsPredicate(self):
         return self.__arenaPeriod == ARENA_PERIOD.BATTLE and not self.__isFullStatsShown

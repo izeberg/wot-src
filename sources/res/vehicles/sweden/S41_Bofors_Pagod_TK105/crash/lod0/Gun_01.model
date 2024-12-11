@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.334061 -0.407320 -0.990017</min>
+		<max>0.453712 0.344582 3.200110</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod0/Gun_01</nodelessVisual>
+</root>

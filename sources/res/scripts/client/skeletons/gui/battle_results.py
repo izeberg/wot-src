@@ -28,10 +28,6 @@ class IBattleResultsService(object):
     def getResultsVO(self, arenaUniqueID):
         raise NotImplementedError
 
-    @property
-    def presenter(self):
-        raise NotImplementedError
-
     def popResultsAnimation(self, arenaUniqueID):
         raise NotImplementedError
 

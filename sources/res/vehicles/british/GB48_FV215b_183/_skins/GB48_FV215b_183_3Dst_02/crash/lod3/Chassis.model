@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.823971 -0.000771 -3.674103</min>
+		<max>1.824189 1.342588 3.916085</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

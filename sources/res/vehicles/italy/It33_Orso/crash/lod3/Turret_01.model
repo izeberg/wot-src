@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Orso/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/italy/It33_Orso/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.512246 0.011574 -2.582565</min>
+		<max>1.510299 1.677459 1.507864</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

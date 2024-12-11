@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Orso/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/italy/It33_Orso/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.598149 -0.000002 -3.571653</min>
+		<max>1.598149 1.145423 3.898119</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

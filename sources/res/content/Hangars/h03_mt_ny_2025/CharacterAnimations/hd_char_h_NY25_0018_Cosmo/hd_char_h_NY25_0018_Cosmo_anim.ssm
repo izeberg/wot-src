@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>choice</name>
+			<type>random_float</type>
+		</param>
+	</params>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>LooksAroundV2_2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>30.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>LooksAround_1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>30.000000</rangeStart>
+					<rangeEnd>60.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>WalkLeft_3</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>60.000000</rangeStart>
+					<rangeEnd>70.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>WalkRight_4</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>70.000000</rangeStart>
+					<rangeEnd>80.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>WavingHand_5</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>80.000000</rangeStart>
+					<rangeEnd>90.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>WavingHandV2_6</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>choice</name>
+					<rangeStart>90.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-22.500000 -118.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>WavingHand_5</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_char_h_NY25_0018_Cosmo/Sequence/NY_25_Rocketman_Idle_WavingHand_5.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>271.000000 33.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>LooksAroundV2_2</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_char_h_NY25_0018_Cosmo/Sequence/NY_25_Rocketman_Idle_LooksAroundV2_2.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-642.000000 30.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>LooksAround_1</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_char_h_NY25_0018_Cosmo/Sequence/NY_25_Rocketman_Idle_LooksAround_1.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-401.500000 33.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>WalkLeft_3</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_char_h_NY25_0018_Cosmo/Sequence/NY_25_Rocketman_Idle_WalkLeft_3.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-179.000000 34.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>WalkRight_4</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_char_h_NY25_0018_Cosmo/Sequence/NY_25_Rocketman_Idle_WalkRight_4.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>40.000000 34.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>WavingHandV2_6</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h03_mt_ny_2025/CharacterAnimations/hd_char_h_NY25_0018_Cosmo/Sequence/NY_25_Rocketman_Idle_WavingHandV2_6.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>500.000000 31.500000 0.000000</uiPosition>
+	</node>
+</root>

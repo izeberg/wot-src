@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/sweden/S41_Bofors_Pagod_TK105/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.439476 -0.273885 0.139394</min>
+		<max>0.266094 0.287155 7.406205</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

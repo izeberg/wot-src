@@ -138,6 +138,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_094_Windows_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_094_Windows_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_UNI_048_Stage.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env023_Agrimotor.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env201_Loudspeaker_fracture.vfx</fn_effect_bin>
@@ -179,8 +180,11 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf003_RabitzFence_End.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw007_Tupik.vfx</fn_effect_bin>
@@ -278,6 +282,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_SU_094_Windows_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_SU_094_Windows_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_048_Stage.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env023_Agrimotor.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env201_Loudspeaker_fracture.eff</fn_effect_bin>
@@ -318,8 +323,11 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf003_RabitzFence_End.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw007_Tupik.eff</fn_effect_bin>
@@ -549,6 +557,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_094_Windows_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_094_Windows_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_UNI_048_Stage.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env023_Agrimotor.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env201_Loudspeaker_fracture.vfx</fn_effect_bin>
@@ -590,8 +599,11 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf003_RabitzFence_End.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw007_Tupik.vfx</fn_effect_bin>
@@ -689,6 +701,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_SU_094_Windows_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_SU_094_Windows_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_048_Stage.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env023_Agrimotor.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env201_Loudspeaker_fracture.eff</fn_effect_bin>
@@ -729,8 +742,11 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf003_RabitzFence_End.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw007_Tupik.eff</fn_effect_bin>

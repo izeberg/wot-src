@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch74_WZ_57_I/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.277904 -0.300469 0.234778</min>
+		<max>0.438274 0.405098 4.623553</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch74_WZ_57_I/normal/lod1/Gun_01</nodefullVisual>
+</root>

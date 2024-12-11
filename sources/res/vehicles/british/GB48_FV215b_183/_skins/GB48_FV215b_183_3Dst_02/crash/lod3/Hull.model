@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.865782 -1.093501 -3.676446</min>
+		<max>1.868663 0.674709 3.984368</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

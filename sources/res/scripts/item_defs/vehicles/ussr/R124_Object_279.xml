@@ -1491,13 +1491,13 @@
 				<tracesParams>
 					<trackPairIdx>0</trackPairIdx>
 					<bufferPrefs>largeTank</bufferPrefs>
-					<textureSet>ussr_02</textureSet>
+					<textureSet>ussr_01</textureSet>
 					<size>
-						0.5 0.75
+						1 0.75
 						<!--BW_String-->
 					</size>
 					<offset>
-						0 1.2
+						0 0.1
 						<!--BW_String-->
 					</offset>
 					<centerOffsetFactor>1 1</centerOffsetFactor>
@@ -1505,13 +1505,13 @@
 				<tracesParams>
 					<trackPairIdx>1</trackPairIdx>
 					<bufferPrefs>largeTank</bufferPrefs>
-					<textureSet>ussr_02</textureSet>
+					<textureSet>ussr_01</textureSet>
 					<size>
-						0.5 0.75
+						1 0.75
 						<!--BW_String-->
 					</size>
 					<offset>
-						0 1.2
+						0 0.1
 						<!--BW_String-->
 					</offset>
 					<centerOffsetFactor>
@@ -5604,7 +5604,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				1.01 0.011 1.038 0 0.853 -0.107 0.67 0.413 0.5 0.5 0.298 0.5 0 0 0.196
+				1.01 0.011 1.038 0 0.949 -0.058 0.67 0.413 0.5 0.5 0.298 0.5 0 0 0.293
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
@@ -5706,6 +5706,7 @@
 		<tankmen/>
 	</deviceExtras>
 	<ability>juggernaut</ability>
+	<clientAdjustmentFactors/>
 	<effects>
 		<collision/>
 		<damagedStateGroup>large</damagedStateGroup>

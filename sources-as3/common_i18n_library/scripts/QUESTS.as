@@ -167,6 +167,14 @@ package
       
       public static const BONUSES_NOTAVAILABLE:String = "#quests:bonuses/notAvailable";
       
+      public static const BONUSNAME_NY22FILLERS:String = "#quests:bonusName/ny22Fillers";
+      
+      public static const BONUSNAME_NEWYEARSLOT:String = "#quests:bonusName/newYearSlot";
+      
+      public static const BONUSES_VARIADICDISCOUNT_DISCOUNTAMOUNT:String = "#quests:bonuses/variadicDiscount/discountAmount";
+      
+      public static const BONUSES_VARIADICDISCOUNT_BUTTONLABEL:String = "#quests:bonuses/variadicDiscount/buttonLabel";
+      
       public static const QUESTS_TITLE:String = "#quests:quests/title";
       
       public static const QUESTS_TITLE_MANEUVERSQUESTS:String = "#quests:quests/title/maneuversQuests";
@@ -1489,16 +1497,6 @@ package
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_XP_OTHER:String = "#quests:details/conditions/cumulative/xp/other";
       
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTBOSSVULNERABLEDAMAGE:String = "#quests:details/conditions/cumulative/wtBossVulnerableDamage";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_MAXWTPLASMABONUS:String = "#quests:details/conditions/cumulative/maxWtPlasmaBonus";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtGeneratorsCaptured";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTTOTALGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtTotalGeneratorsCaptured";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTDEATHCOUNT:String = "#quests:details/conditions/cumulative/wtDeathCount";
-      
       public static const DETAILS_DOSSIER_SNIPERSERIES:String = "#quests:details/dossier/sniperSeries";
       
       public static const DETAILS_DOSSIER_MAXSNIPERSERIES:String = "#quests:details/dossier/maxSniperSeries";
@@ -2551,6 +2549,8 @@ package
       
       public static const BONUSNAME_ENTITLEMENTS_RANKED_202203_ACCESS:String = "#quests:bonusName/entitlements/ranked_202203_access";
       
+      public static const BONUSNAME_ENTITLEMENTS_NY25_MARKETPLACE_UNLOCK:String = "#quests:bonusName/entitlements/ny25_marketplace_unlock";
+      
       public static const BONUSNAME_BATTLE_BONUS_X5:String = "#quests:bonusName/battle_bonus_x5";
       
       public static const BONUSNAME_CREW_BONUS_X3:String = "#quests:bonusName/crew_bonus_x3";
@@ -3379,6 +3379,10 @@ package
       
       public static const INFOPAGE_DAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/default";
       
+      public static const DAILYQUESTS_INFO_NYDAILYMISSIONS:String = "#quests:dailyQuests/info/NYDailyMissions";
+      
+      public static const DAILYQUESTS_INFO_DAILYMISSIONTITLE:String = "#quests:dailyQuests/info/dailyMissionTitle";
+      
       public static const INFOPAGE_DAILYMISSIONS_SUBSCRIPTION_DEFAULT:String = "#quests:infoPage/dailyMissions/subscription/default";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/default";
@@ -3386,6 +3390,8 @@ package
       public static const INFOPAGE_DAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/winback";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/winback";
+      
+      public static const DAILYQUESTS_INFO_GIFTSYSTEMDISABLEDDAILYMISSIONS:String = "#quests:dailyQuests/info/giftSystemDisabledDailyMissions";
       
       public static const INFOPAGE_PREMIUMMISSIONS_DEFAULT:String = "#quests:infoPage/premiumMissions/default";
       
@@ -3420,6 +3426,12 @@ package
       public static const INFOPAGE_MISSIONSWITCH_MIN:String = "#quests:infoPage/missionSwitch_min";
       
       public static const INFOPAGE_MISSIONSWITCH_WINBACK:String = "#quests:infoPage/missionSwitch/winback";
+      
+      public static const INFOPAGE_LOOTBOXCONDITIONSTITLE:String = "#quests:infoPage/lootboxConditionsTitle";
+      
+      public static const INFOPAGE_LOOTBOXCONDITIONS_DEFAULT:String = "#quests:infoPage/lootboxConditions/default";
+      
+      public static const INFOPAGE_LOOTBOXCONDITIONS_BUTTON:String = "#quests:infoPage/lootboxConditions/button";
       
       public static const DAILYQUESTS_CONDITION_DODAMAGE:String = "#quests:dailyQuests/condition/doDamage";
       
@@ -3478,6 +3490,10 @@ package
       public static const DEBUTBOXES_MISSIONS_HEADER_DISABLED:String = "#quests:debutBoxes/missions/header/disabled";
       
       public static const DEBUTBOXES_MISSIONS_HEADER_INFO:String = "#quests:debutBoxes/missions/header/info";
+      
+      public static const LOOTBOX_BOXCOUNT:String = "#quests:lootBox/boxCount";
+      
+      public static const LOOTBOX_BOXESLABEL:String = "#quests:lootBox/boxesLabel";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

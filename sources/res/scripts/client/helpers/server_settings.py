@@ -9,7 +9,7 @@ from battle_pass_common import BATTLE_PASS_CONFIG_NAME, BattlePassConfig
 from collections_common import CollectionsConfig
 from collector_vehicle import CollectorVehicleConsts
 from comp7_ranks_common import Comp7Division
-from constants import BATTLE_NOTIFIER_CONFIG, ClansConfig, Configs, DAILY_QUESTS_CONFIG, DOG_TAGS_CONFIG, MAGNETIC_AUTO_AIM_CONFIG, MISC_GUI_SETTINGS, PremiumConfigs, RENEWABLE_SUBSCRIPTION_CONFIG, PLAYER_SUBSCRIPTIONS_CONFIG, TOURNAMENT_CONFIG, PREM_BONUS_TYPES, PREMIUM_ENTITLEMENTS, ENTITLEMENT_TO_PREM_TYPE
+from constants import BATTLE_NOTIFIER_CONFIG, ClansConfig, Configs, DAILY_QUESTS_CONFIG, DOG_TAGS_CONFIG, MAGNETIC_AUTO_AIM_CONFIG, MISC_GUI_SETTINGS, PremiumConfigs, RENEWABLE_SUBSCRIPTION_CONFIG, PLAYER_SUBSCRIPTIONS_CONFIG, TOURNAMENT_CONFIG
 from debug_utils import LOG_DEBUG, LOG_NOTE
 from gifts.gifts_common import ClientReqStrategy, GiftEventID, GiftEventState
 from gui import GUI_SETTINGS, SystemMessages
@@ -783,21 +783,11 @@ class _EventBattlesConfig(namedtuple('_EventBattlesConfig', (
  'peripheryIDs',
  'primeTimes',
  'seasons',
- 'cycleTimes',
- 'progression',
- 'specialVehicles',
- 'stampsPerProgressionStage',
- 'stamp',
- 'ticketToken',
- 'quickBossTicketToken',
- 'quickHunterTicketToken',
- 'ticketsToDraw',
- 'lootBoxDailyPurchaseLimit',
- 'lootBoxCounterEntitlementID'))):
+ 'cycleTimes'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(isEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, cycleTimes={}, progression=[], specialVehicles=[], stampsPerProgressionStage=0, stamp='', ticketToken='', quickBossTicketToken='', quickHunterTicketToken='', ticketsToDraw=0, lootBoxDailyPurchaseLimit=0, lootBoxCounterEntitlementID='')
+        defaults = dict(isEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, cycleTimes={})
         defaults.update(kwargs)
         return super(_EventBattlesConfig, cls).__new__(cls, **defaults)
 
@@ -843,7 +833,7 @@ class GiftEventConfig(namedtuple('_GiftEventConfig', (
         return self.giftEventState == GiftEventState.DISABLED
 
 
-class GiftSystemConfig(namedtuple('_GiftSystemConfig', ('events',))):
+class GiftSystemConfig(namedtuple('_GiftSystemConfig', ('events', 'itemToEventID'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
@@ -864,7 +854,16 @@ class GiftSystemConfig(namedtuple('_GiftSystemConfig', ('events',))):
 
     @classmethod
     def __packEventConfigs(cls, data):
-        data['events'] = {eID:makeTupleByDict(GiftEventConfig, eData) for eID, eData in data['events'].iteritems()}
+        events = {eID:makeTupleByDict(GiftEventConfig, eData) for eID, eData in data['events'].iteritems()}
+        data['events'], data['itemToEventID'] = events, cls.__getItemToEventMap(events)
+
+    @classmethod
+    def __getItemToEventMap(cls, events):
+        result = {}
+        for eventID, eventConfig in events.iteritems():
+            result.update({itemID:eventID for itemID in eventConfig.giftItemIDs})
+
+        return result
 
 
 class _WellRewardConfig(namedtuple('_WellRewardConfig', ('bonus', 'limit', 'isSerial', 'sequence', 'rewardId'))):
@@ -1244,31 +1243,6 @@ class _GuiLootBoxesConfig(object):
         return self.__shopCategoryUrl
 
 
-EVENT_LOOT_BOXES_CONFIG = 'event_loot_boxes_config'
-
-class _EventLootBoxesConfig(object):
-    __slots__ = ('__isEnabled', '__startDateInUTC', '__finishDateInUTC', '__lootBoxBuyDayLimit')
-
-    def __init__(self, **kwargs):
-        super(_EventLootBoxesConfig, self).__init__()
-        self.__isEnabled = kwargs.get('enabled', False)
-        self.__startDateInUTC = kwargs.get('startDateInUTC', 0)
-        self.__finishDateInUTC = kwargs.get('finishDateInUTC', 0)
-        self.__lootBoxBuyDayLimit = kwargs.get('lootBoxBuyDayLimit', 0)
-
-    @property
-    def isEnabled(self):
-        return self.__isEnabled
-
-    @property
-    def lootBoxBuyDayLimit(self):
-        return self.__lootBoxBuyDayLimit
-
-    def getEventActiveTime(self):
-        return (
-         self.__startDateInUTC, self.__finishDateInUTC)
-
-
 class ArmoryYardConfig(namedtuple('ArmoryYardConfig', (
  'isEnabled', 'isPaused', 'seasons', 'animations', 'cycleTimes', 'tokenBase', 'receivedRewardTokenPostfix',
  'stageTokenPostfix', 'currencyTokenPostfix', 'tokenCost', 'rewards', 'introVideoLink', 'infoPageLink',
@@ -1531,7 +1505,6 @@ class ServerSettings(object):
         self.__playLimitsConfig = PlayLimitsConfig()
         self.__preModerationConfig = PreModerationConfig()
         self.__guiLootBoxesConfig = _GuiLootBoxesConfig()
-        self.__eventLootBoxesConfig = _EventLootBoxesConfig()
         self.__collectionsConfig = CollectionsConfig()
         self.__winbackConfig = WinbackConfig()
         self.__limitedUIConfig = _LimitedUIConfig()
@@ -1623,7 +1596,6 @@ class ServerSettings(object):
             self.__crystalRewardsConfig = makeTupleByDict(_crystalRewardsConfig, self.__serverSettings[_crystalRewardsConfig.CONFIG_NAME])
         self.__updateReactiveCommunicationConfig(self.__serverSettings)
         self.__updateGuiLootBoxesConfig(self.__serverSettings)
-        self.__updateEventLootBoxesConfig(self.__serverSettings)
         if BonusCapsConst.CONFIG_NAME in self.__serverSettings:
             BONUS_CAPS.OVERRIDE_BONUS_CAPS = self.__serverSettings[BonusCapsConst.CONFIG_NAME]
         else:
@@ -1833,7 +1805,6 @@ class ServerSettings(object):
             self.__updateVersusAI(serverSettingsDiff)
         self.__updatePersonalReserves(serverSettingsDiff)
         self.__updateGuiLootBoxesConfig(serverSettingsDiff)
-        self.__updateEventLootBoxesConfig(serverSettingsDiff)
         if Configs.COLLECTIONS_CONFIG.value in serverSettingsDiff:
             self.__updateCollectionsConfig(serverSettingsDiff)
         self.__updateLimitedUIConfig(serverSettingsDiff)
@@ -2104,6 +2075,9 @@ class ServerSettings(object):
     def isLootBoxesEnabled(self):
         return self.__getGlobalSetting('isLootBoxesEnabled')
 
+    def isLootBoxEnabled(self, boxId):
+        return self.__getGlobalSetting('lootBoxes_config', {}).get(boxId, {}).get('enabled', False)
+
     def isAnonymizerEnabled(self):
         return self.__getGlobalSetting('isAnonymizerEnabled', False)
 
@@ -2272,18 +2246,6 @@ class ServerSettings(object):
     def getPreferredMapsConfig(self):
         return self.__getGlobalSetting(PremiumConfigs.PREFERRED_MAPS, {})
 
-    def getPremiumPlusXPBonus(self):
-        battleBonuses = self.__getGlobalSetting('prem_battle_bonuses', {})
-        return battleBonuses.get(PREM_BONUS_TYPES.XP, {}).get(ENTITLEMENT_TO_PREM_TYPE[PREMIUM_ENTITLEMENTS.PLUS], 0)
-
-    def getPremiumPlusCreditsBonus(self):
-        battleBonuses = self.__getGlobalSetting('prem_battle_bonuses', {})
-        return battleBonuses.get(PREM_BONUS_TYPES.CREDITS, {}).get(ENTITLEMENT_TO_PREM_TYPE[PREMIUM_ENTITLEMENTS.PLUS], 0)
-
-    def getPremiumPlusTmenXPBonus(self):
-        battleBonuses = self.__getGlobalSetting('prem_battle_bonuses', {})
-        return battleBonuses.get(PREM_BONUS_TYPES.TMEN_XP, {}).get(ENTITLEMENT_TO_PREM_TYPE[PREMIUM_ENTITLEMENTS.PLUS], 0)
-
     def isEpicRandomEnabled(self):
         return self.__getGlobalSetting('isEpicRandomEnabled', False)
 
@@ -2426,14 +2388,14 @@ class ServerSettings(object):
     def getGuiLootBoxesConfig(self):
         return self.__guiLootBoxesConfig
 
-    def getEventLootBoxesConfig(self):
-        return self.__eventLootBoxesConfig
-
     def getAchievements20GeneralConfig(self):
         return Achievements20GeneralConfig(self.__getGlobalSetting(Configs.ACHIEVEMENTS20_CONFIG.value, {}))
 
     def getRPConfig(self):
         return self.__referralProgramConfig
+
+    def getNYConfig(self):
+        return self.__getGlobalSetting('ny_config', {})
 
     def __getGlobalSetting(self, settingsName, default=None):
         return self.__serverSettings.get(settingsName, default)
@@ -2574,18 +2536,6 @@ class ServerSettings(object):
             else:
                 _logger.error('Unexpected format of subscriptions service config: %r', config)
                 self.__guiLootBoxesConfig = _GuiLootBoxesConfig()
-        return
-
-    def __updateEventLootBoxesConfig(self, settings):
-        if EVENT_LOOT_BOXES_CONFIG in settings:
-            config = settings[EVENT_LOOT_BOXES_CONFIG]
-            if config is None:
-                self.__eventLootBoxesConfig = _EventLootBoxesConfig()
-            elif isinstance(config, dict):
-                self.__eventLootBoxesConfig = _EventLootBoxesConfig(**config)
-            else:
-                _logger.error('Unexpected format of subscriptions service config: %r', config)
-                self.__eventLootBoxesConfig = _EventLootBoxesConfig()
         return
 
     def __updateCollectionsConfig(self, diff):

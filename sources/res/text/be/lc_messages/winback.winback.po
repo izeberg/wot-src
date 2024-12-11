@@ -1,0 +1,603 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleQuestAwards/button"
+msgstr "Так!"
+
+msgid "battleQuestAwards/showInHangar"
+msgstr "Паглядзець у Гаражы"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "ФІНАЛЬНЫ ЭТАП ПРОЙДЗЕНЫ!"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "ЭТАП %(level)s ПРОЙДЗЕНЫ!"
+
+msgid "compensation/tooltip/footer/discount"
+msgstr "Кампенсацыя зніжкі на машыну, якая ўжо ёсць у Гаражы."
+
+msgid "compensation/tooltip/footer/gift"
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+
+msgid "compensation/tooltip/header/discount"
+msgstr "Кампенсацыя зніжкі на машыну"
+
+msgid "compensation/tooltip/header/gift"
+msgstr "Кампенсацыя за машыну"
+
+msgid "compensation/tooltip/vehicle/discount"
+msgstr "Зніжка на машыну %(level)s узроўню"
+
+msgid "compensation/tooltip/vehicle/gift"
+msgstr "Машына %(level)s узроўню"
+
+msgid "hint/text"
+msgstr ""
+"ВЫ МОЖАЦЕ ЗМЯНІЦЬ РЭЖЫМ\n"
+"БОЮ Ў ЛЮБЫ ЧАС"
+
+msgid "leaveBattleView/confirmation/cancel"
+msgstr "Застацца"
+
+msgid "leaveBattleView/confirmation/submit"
+msgstr "Уцячы"
+
+msgid "leaveBattleView/description"
+msgstr ""
+"Ваша тэхніка яшчэ можа ваяваць. Калі выйдзеце з бою зараз, вы не атрымаеце "
+"ўзнагароды за ўдзел у ім. Ці напэўна хочаце пакінуць бітву?"
+
+msgid "leaveBattleView/title"
+msgstr "Уцёкі з поля бою"
+
+msgid "leaveBattleView/warning"
+msgstr "Вы не атрымаеце ўзнагарод!"
+
+msgid "progression/battleQuests/timer/completed/text"
+msgstr "Выберыце прыдатныя ўзнагароды і забярыце іх."
+
+msgid "progression/battleQuests/timer/completed/title"
+msgstr "Усе задачы выкананы."
+
+msgid "progression/battleQuests/timer/inProgress/text"
+msgstr "Задачы з'явяцца праз"
+
+msgid "progression/battleQuests/timer/inProgress/title"
+msgstr "Усе штодзённыя задачы выкананы. Вяртайцеся пазней."
+
+msgid "progression/cards/points"
+msgstr ""
+"%(whiteSpanish_Open)s%(current)s/%(whiteSpanish_Close)s%(par_Open)s%(total)s%(par_Close)s"
+
+msgid "progression/counter"
+msgstr "%(completed)s / %(total)s"
+
+msgid "progression/description"
+msgstr ""
+"Кожная выкананая стандартная, прэміум ці бонусная задача набліжае вас да "
+"ўзнагароды."
+
+msgid "progression/header/aboutBtn/regular/label"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "progression/header/aboutBtn/winback/label"
+msgstr "ПРА ЗАДАЧЫ"
+
+msgid "progression/header/closeBtn/regular/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "progression/header/closeBtn/winback/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "progression/subtitle/regular/inProgress"
+msgstr "Выконваючы баявыя задачы, вы атрымліваеце ачкі прагрэсіі"
+
+msgid "progression/subtitle/winback/inProgress"
+msgstr "Выконваючы баявыя задачы, вы атрымліваеце ачкі прагрэсіі"
+
+msgid "progression/takeRewardsBtn/countdown"
+msgstr "Даступныя: %(leftTime)s"
+
+msgid "progression/takeRewardsBtn/title"
+msgstr "ЗАБРАЦЬ УЗНАГАРОДЫ"
+
+msgid "progression/takeRewardsBtn/tooltip"
+msgstr "Націсніце, каб выбраць і забраць узнагароды."
+
+msgid "progression/takeRewardsBtn/tooltipDisable"
+msgstr "Узнагароды часова недаступныя, выбачайце за нязручнасці."
+
+msgid "progression/timer"
+msgstr "Задачы абновяцца праз"
+
+msgid "progression/title"
+msgstr "Выканана задач: %(counter)s"
+
+msgid "progression/title/regular/complete"
+msgstr "ПРАГРЭСІЯ ПАЛІГОНА"
+
+msgid "progression/title/regular/inProgress"
+msgstr "ПРАГРЭСІЯ ПАЛІГОНА"
+
+msgid "progression/title/winback/complete"
+msgstr "З ВЯРТАННЕМ У СТРОЙ!"
+
+msgid "progression/title/winback/inProgress"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s або %(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "quests/bonuses/progressionToken/regular/body"
+msgstr ""
+"Выдаюцца за выкананне штодзённых задач у рэжыме «Палігон». Неабходныя для "
+"прасоўвання да новых узнагарод."
+
+msgid "quests/bonuses/progressionToken/regular/header"
+msgstr "Ачкі прагрэсіі Палігона"
+
+msgid "quests/bonuses/progressionToken/winback/body"
+msgstr ""
+"Патрэбны для прасоўвання па прагрэсіі падзеі «Зноў у строй», выдаюцца за "
+"выканання адпаведных баявых задач."
+
+msgid "quests/bonuses/progressionToken/winback/header"
+msgstr "Ачкі падзеі «Зноў у строй»"
+
+msgid "quests/tooltipHeader/regular"
+msgstr "Задачы Палігона"
+
+msgid "quests/tooltipHeader/winback"
+msgstr "Задачы Палігона"
+
+msgid "selectableRewardTooltip/basic/description"
+msgstr ""
+"Даступная даследаваная машына %(level)s узроўню на выбар. Яна ідзе з "
+"даследаванымі модулямі, слотам у Гаражы, 100%-м экіпажам з вывучанымі "
+"навыкамі «Таварышы па зброі» і «Рамонт»."
+
+msgid "selectableRewardTooltip/basic/title"
+msgstr "Машына %(level)s узроўню"
+
+msgid "selectableRewardTooltip/discount/description"
+msgstr ""
+"Зніжка %(researchDiscount)s на даследаванне і %(purchaseDiscount)s на куплю "
+"машыны %(level)s узроўню. Для выбару даступная тэхніка, якая даследуецца."
+
+msgid "selectableRewardTooltip/discount/footer"
+msgstr ""
+"Зніжка на {whiteSpanish_Open}даследаванне{whiteSpanish_Close} сумуецца са "
+"зніжкай ад наяўных фрагментаў чарцяжа машыны. Зніжка на "
+"{whiteSpanish_Open}куплю{whiteSpanish_Close} прымяняецца найвялікшая з "
+"даступных."
+
+msgid "selectableRewardTooltip/discount/title"
+msgstr "Зніжка на машыну %(level)s узроўню"
+
+msgid "serviceChannelMessages/awards/compensation/discount"
+msgstr "Зніжка на машыну %(level)s узроўню (на выбар) крэдытамі "
+
+msgid "serviceChannelMessages/awards/compensation/header"
+msgstr "Кампенсацыя:"
+
+msgid "serviceChannelMessages/awards/compensation/vehicle"
+msgstr "Машына %(level)s узроўню (на выбар) крэдытамі"
+
+msgid "serviceChannelMessages/awards/discount"
+msgstr "Даступная зніжка на машыну %(level)s узроўню на выбар"
+
+msgid "serviceChannelMessages/awards/discountConcrete"
+msgstr "%(name)s (%(expDiscount)d%% і %(creditDiscount)d%%)"
+
+msgid "serviceChannelMessages/awards/discountHeader"
+msgstr "Дададзена зніжка на даследаванне і куплю: "
+
+msgid "serviceChannelMessages/awards/tankman"
+msgstr "член экіпажа: %(name)s (x%(count)d)"
+
+msgid "serviceChannelMessages/awards/tankman/header"
+msgstr "Дададзена: "
+
+msgid "serviceChannelMessages/awards/vehicle"
+msgstr "Даступная машына %(level)s узроўню на выбар"
+
+msgid "serviceChannelMessages/header"
+msgstr "Віншуем!"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "Падрабязней"
+
+msgid "serviceChannelMessages/progressionName/regular"
+msgstr "Палігона"
+
+msgid "serviceChannelMessages/progressionName/winback"
+msgstr "«Зноў у строй»"
+
+msgid "serviceChannelMessages/progressionStage"
+msgstr "Вы прайшлі %(stage)s-ы этап прагрэсіі %(progressionName)s."
+
+msgid "serviceChannelMessages/selectRewardButton"
+msgstr "Выбраць узнагароду"
+
+msgid "serviceChannelMessages/selectableRewardReminder/body"
+msgstr "Выберыце ўзнагароды з даступных катэгорый."
+
+msgid "serviceChannelMessages/selectableRewardReminder/button"
+msgstr "Выбраць"
+
+msgid "serviceChannelMessages/selectableRewardReminder/header"
+msgstr "Даступныя ўзнагароды"
+
+msgid "takeReward/buttonText"
+msgstr "Забраць узнагароду"
+
+msgid "vehicleDiscountRewardTooltip/description"
+msgstr ""
+"Зніжка на даследаванне машыны сумуецца са зніжкай ад наяўных чарцяжоў "
+"машыны. Прымяняецца найвялікшая з даступных зніжка на куплю."
+
+msgid "widget/tooltip/description/regular/complete"
+msgstr ""
+"Выконвайце баявыя задачы і здабывайце ачкі прагрэсіі. За праходжанне кожнага"
+" этапу вы будзеце атрымліваць каштоўныя ўзнагароды."
+
+msgid "widget/tooltip/description/regular/inProgress"
+msgstr ""
+"Выконвайце баявыя задачы і здабывайце ачкі прагрэсіі. За праходжанне кожнага"
+" этапу вы будзеце атрымліваць каштоўныя ўзнагароды."
+
+msgid "widget/tooltip/description/winback/complete"
+msgstr ""
+"Вы прайшлі ўсе даступныя задачы, выберыце прыдатныя ўзнагароды і забярыце "
+"іх."
+
+msgid "widget/tooltip/description/winback/inProgress"
+msgstr ""
+"Выконвайце баявыя задачы і здабывайце ачкі прагрэсіі. За праходжанне кожнага"
+" этапу вы будзеце атрымліваць каштоўныя ўзнагароды."
+
+msgid "widget/tooltip/disable/regular/subtitle"
+msgstr ""
+"Зараз задачы прагрэсіі Палігона недаступныя з тэхнічных прычын. Выбачайце за"
+" часовыя нязручнасці."
+
+msgid "widget/tooltip/disable/regular/title"
+msgstr "Недаступна"
+
+msgid "widget/tooltip/disable/winback/subtitle"
+msgstr ""
+"Зарад задачы падзеі «Зноў у строй» недаступныя з тэхнічных прычын. Выбачайце"
+" за часовыя нязручнасці."
+
+msgid "widget/tooltip/disable/winback/title"
+msgstr "Недаступна"
+
+msgid "widget/tooltip/progression/regular/complete"
+msgstr "Прагрэсія пройдзена"
+
+msgid "widget/tooltip/progression/winback/complete"
+msgstr "Прагрэсія пройдзена"
+
+msgid "widget/tooltip/regular/timer"
+msgstr "Задачы абновяцца праз:"
+
+msgid "widget/tooltip/title/description/regular/complete"
+msgstr "Сістэма штодзённых задач у рэжыме «Палігон»."
+
+msgid "widget/tooltip/title/description/regular/inProgress"
+msgstr "Сістэма штодзённых задач у рэжыме «Палігон»."
+
+msgid "widget/tooltip/title/description/winback/complete"
+msgstr "Адмысловая прагрэсія для камфортнага вяртання у гульню."
+
+msgid "widget/tooltip/title/description/winback/inProgress"
+msgstr "Адмысловая прагрэсія для камфортнага вяртання у гульню."
+
+msgid "widget/tooltip/title/regular/complete"
+msgstr "Прагрэсія"
+
+msgid "widget/tooltip/title/regular/inProgress"
+msgstr "Прагрэсія"
+
+msgid "widget/tooltip/title/winback/complete"
+msgstr "З вяртаннем у строй!"
+
+msgid "widget/tooltip/title/winback/inProgress"
+msgstr "Зноў у строй"
+
+msgid "widget/tooltip/winback/timer"
+msgstr "Задачы абновяцца праз:"
+
+msgid "winbackIntro/buttonClose"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "winbackIntro/buttonContinue"
+msgstr "Так!"
+
+msgid "winbackIntro/cardDescription/first"
+msgstr ""
+"У вас аўтаматычна быў актываваны рэжым «Палігон»: баі праходзяць супраць "
+"машын пад кіраваннем штучнага інтэлекту. Змяніць рэжым можна ў любы час."
+
+msgid "winbackIntro/cardDescription/second"
+msgstr ""
+"У рэжыме «Палігон» вам будзе даступная прагрэсія з задачамі «Зноў у строй». "
+"Праходзячы яе, вы будзеце атрымліваць каштоўныя ўзнагароды."
+
+msgid "winbackIntro/cardDescription/third"
+msgstr ""
+"Ва ўзнагароду вы можаце атрымаць даследаваную машыну VI узроўню на выбар, "
+"зніжкі за даследаванне і куплю тэхнікі VII-X узроўняў, крэдыты, членаў "
+"экіпажа і іншыя каштоўныя ўзнагароды."
+
+msgid "winbackIntro/cardTitle/first"
+msgstr "Палігон"
+
+msgid "winbackIntro/cardTitle/second"
+msgstr "Зноў у строй"
+
+msgid "winbackIntro/cardTitle/third"
+msgstr "Узнагароды"
+
+msgid "winbackIntro/subtitle"
+msgstr ""
+"Мы рады зноў бачыць вас у страі! За час вашай адсутнасці ў гульні адбыліся "
+"пэўныя змены. Пра самыя істотныя з іх вы зможаце даведацца ў раздзеле «Што "
+"новага?» ў Палявой пошце."
+
+msgid "winbackIntro/title"
+msgstr "З ВЯРТАННЕМ, БАЕЦ!"
+
+msgid "winbackRewardView/buttons/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "winbackRewardView/buttons/confirm"
+msgstr "Так!"
+
+msgid "winbackRewardView/buttons/selectReward"
+msgstr "Выбраць узнагароду"
+
+msgid "winbackRewardView/buttons/showQuests"
+msgstr "Да задач"
+
+msgid "winbackRewardView/buttons/showVehicle"
+msgstr "Паглядзець у Гаражы"
+
+msgid "winbackRewardView/finalStage/regular/complete"
+msgstr "Фінальныя этап пройдзены: цыкл запаўненне прагрэсіі пачаўся нанова."
+
+msgid "winbackRewardView/premiumPlus"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "winbackRewardView/secondRowTitle"
+msgstr "Таксама атрымана:"
+
+msgid "winbackRewardView/selectableReward/discount"
+msgstr ""
+"Зніжка %(expDiscount)s на даследаванне і %(priceDiscount)s на куплю машыны "
+"%(level)s узроўню"
+
+msgid "winbackRewardView/selectableReward/expDiscount"
+msgstr "{white_Open}%(expDiscount)s%{white_Close}"
+
+msgid "winbackRewardView/selectableReward/gift"
+msgstr "Машына %(level)s узроўню"
+
+msgid "winbackRewardView/selectableReward/priceDiscount"
+msgstr "{cream_Open}%(priceDiscount)s%{cream_Close}"
+
+msgid "winbackRewardView/selectableReward/reserveDiscount"
+msgstr "Зніжка на машыну %(level)s узроўню"
+
+msgid "winbackRewardView/subtitle/regular/complete"
+msgstr "ПРАГРЭСІЯ ПАЛІГОНА"
+
+msgid "winbackRewardView/subtitle/regular/inProgress"
+msgstr "ЭТАП %(level)s ПРОЙДЗЕНЫ!"
+
+msgid "winbackRewardView/subtitle/regularProgressionCompleted"
+msgstr "За выкананне ланцужка штодзённых задач"
+
+msgid "winbackRewardView/subtitle/winback/complete"
+msgstr "ВІНШУЕМ, ВЫ ЗНОЎ У СТРАІ!"
+
+msgid "winbackRewardView/subtitle/winback/inProgress"
+msgstr "ЭТАП %(level)s ПРОЙДЗЕНЫ!"
+
+msgid "winbackRewardView/title/progressionStep"
+msgstr "УЗНАГАРОДЫ ЗА ВЫКАНАННЕ ЗАДАЧ"
+
+msgid "winbackRewardView/title/regular/inProgress"
+msgstr "ПРАГРЭСІЯ ПАЛІГОНА"
+
+msgid "winbackRewardView/title/selectedRewards"
+msgstr "АТРЫМАНЫ ЎЗНАГАРОДЫ"
+
+msgid "winbackRewardView/title/welcome"
+msgstr "З ВЯРТАННЕМ, БАЕЦ!"
+
+msgid "winbackRewardView/title/winback/complete"
+msgstr "ФІНАЛЬНЫ ЭТАП ПРОЙДЗЕНЫ!"
+
+msgid "winbackRewardView/title/winback/inProgress"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "winbackRewardView/title/winbackProgressionCompleted"
+msgstr "ПРАГРЭСІЯ ЗАВЕРШАНА"
+
+msgid "winbackRewardView/vehicleReward/discount"
+msgstr ""
+"Зніжка %(expDiscount)s на даследаванне\n"
+" і %(priceDiscount)s на куплю"
+
+msgid "winbackRewardView/vehicleReward/exp/discount"
+msgstr "Зніжка %(expDiscount)s на даследаванне тэхнікі"
+
+msgid "winbackRewardView/vehicleReward/expDiscount"
+msgstr "{white_Open}%(expDiscount)s%{white_Close}"
+
+msgid "winbackRewardView/vehicleReward/price/discount"
+msgstr "Зніжка %(priceDiscount)s на куплю тэхнкі"
+
+msgid "winbackRewardView/vehicleReward/priceDiscount"
+msgstr "{cream_Open}%(priceDiscount)s%{cream_Close}"
+
+msgid "winbackRewardView/vehicleReward/rent"
+msgstr "Сутак пракату: %(days)s"
+
+msgid "winbackRewardView/vehicleReward/reserveDiscount"
+msgstr "Зніжка на даследаванне і куплю"
+
+msgid "winbackSelectableRewardView/bluePrintReward/value"
+msgstr "x%(value)s"
+
+msgid "winbackSelectableRewardView/buttons/cancel"
+msgstr "Выбраць пазней"
+
+msgid "winbackSelectableRewardView/buttons/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "winbackSelectableRewardView/buttons/confirm"
+msgstr "Забраць"
+
+msgid "winbackSelectableRewardView/buttons/reset"
+msgstr "Скінуць фільтр"
+
+msgid "winbackSelectableRewardView/category/rewardsAvailabilityCounter"
+msgstr "%(rewardsSelected)s/%(rewardsAvailable)s"
+
+msgid "winbackSelectableRewardView/category/title"
+msgstr "Зніжка на машыну"
+
+msgid "winbackSelectableRewardView/category/titleDiscount"
+msgstr "Машына %(vehicleLevel)s узроўню"
+
+msgid "winbackSelectableRewardView/error/button"
+msgstr "Так!"
+
+msgid "winbackSelectableRewardView/error/description"
+msgstr ""
+"Інфармацыя часова недаступная. Выбачайце за нязручнасці, паспрабуйце яшчэ "
+"раз пазней."
+
+msgid "winbackSelectableRewardView/error/title"
+msgstr "Не ўдалося адкрыць акенца выбару ўзнагароды"
+
+msgid "winbackSelectableRewardView/filter/allTheVehiclesHaveBeenExplored"
+msgstr ""
+"Вы даследавалі ўсе машыны %(vehicleLevel)s узроўню, ва ўзнагароду вам "
+"даступны нацыянальныя фрагменты чарцяжоў."
+
+msgid "winbackSelectableRewardView/filter/placeholder"
+msgstr "Пошук паводле назвы"
+
+msgid "winbackSelectableRewardView/filter/searchResult"
+msgstr "%(itemsShown)s {par_Open}/ %(itemsAvailable)s{par_Close}"
+
+msgid "winbackSelectableRewardView/filter/shown"
+msgstr "Паказана:"
+
+msgid "winbackSelectableRewardView/filter/tooltip/body"
+msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
+
+msgid "winbackSelectableRewardView/filter/tooltip/header"
+msgstr "Паставіць стандартныя налады"
+
+msgid "winbackSelectableRewardView/footer/actionText/active"
+msgstr "Выбрана ўзнагарод: %(amountRewards)s %(infoIcon)s"
+
+msgid "winbackSelectableRewardView/footer/actionText/disable"
+msgstr "Выберыце ўзнагароды з прадстаўленых катэгорый"
+
+msgid "winbackSelectableRewardView/resetInf/text"
+msgstr "Нічога не знойдзена. Змяніце налады або скіньце фільтр."
+
+msgid "winbackSelectableRewardView/selectedReward/tooltip/blueprint/subtitle"
+msgstr ""
+"{white_Open}x%(bluePrintsAmount)s Нацыянальны фрагмент чарцяжа{white_Close} "
+"(%(countryName)s)"
+
+msgid ""
+"winbackSelectableRewardView/selectedReward/tooltip/rewardDiscount/subtitle"
+msgstr ""
+"{white_Open}%(name)s{white_Close} (Зніжка %(expDiscount)s% на даследаванне і"
+" %(priceDiscount)s% на куплю)"
+
+msgid ""
+"winbackSelectableRewardView/selectedReward/tooltip/rewardDiscount/title"
+msgstr "Зніжка на машыну %(level)s узроўню"
+
+msgid ""
+"winbackSelectableRewardView/selectedReward/tooltip/rewardForGift/subtitle"
+msgstr ""
+"{white_Open}%(name)s{white_Close} даследаваны ўсе модулі, ёсць слот у "
+"Гаражы, 100% экіпаж з вывучанымі навыкамі «Таварышы па зброі» і «Рамонт»."
+
+msgid "winbackSelectableRewardView/selectedReward/tooltip/rewardForGift/title"
+msgstr "Машына %(level)s узроўню"
+
+msgid "winbackSelectableRewardView/selectedReward/tooltip/rewardVehicle/crew"
+msgstr "Экіпаж%(skills)s"
+
+msgid ""
+"winbackSelectableRewardView/selectedReward/tooltip/rewardVehicle/crew/level"
+msgstr "%(value)s%%-ы экіпаж%(skills)s"
+
+msgid ""
+"winbackSelectableRewardView/selectedReward/tooltip/rewardVehicle/crew/skills"
+msgstr "з вывучанымі навыкамі «Таварышы па зброі» і «Рамонт»."
+
+msgid "winbackSelectableRewardView/selectedReward/tooltip/subtitle"
+msgstr "Націсніце «Забраць» і атрымайце выбраныя ўзнагароды."
+
+msgid "winbackSelectableRewardView/selectedReward/tooltip/title"
+msgstr "Выбрана ўзнагарод: %(amountRewards)s"
+
+msgid "winbackSelectableRewardView/tabs/buy"
+msgstr "Купля"
+
+msgid "winbackSelectableRewardView/tabs/exp"
+msgstr "Даследаванне"
+
+msgid "winbackSelectableRewardView/title/regular/additionText"
+msgstr "ПРАГРЭСІЯ ПАЛІГОНА"
+
+msgid "winbackSelectableRewardView/title/text"
+msgstr "ВЫБЕРЫЦЕ ЎЗНАГАРОДУ"
+
+msgid "winbackSelectableRewardView/title/winback/additionText"
+msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "winbackSelectableRewardView/vehicleName"
+msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"
+
+msgid "winbackSelectableRewardView/vehicleType/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "winbackSelectableRewardView/vehicleType/SPG"
+msgstr "САУ"
+
+msgid "winbackSelectableRewardView/vehicleType/heavyTank"
+msgstr "Цяжкі танк"
+
+msgid "winbackSelectableRewardView/vehicleType/lightTank"
+msgstr "Лёгкі танк"
+
+msgid "winbackSelectableRewardView/vehicleType/mediumTank"
+msgstr "Сярэдні танк"
+
+msgid "winbackTab"
+msgstr "Зноў у строй"

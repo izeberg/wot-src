@@ -74,18 +74,36 @@
 				<identifier>HP_Track_Exhaus_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 -1.000000 -0.000000</row1>
-					<row2>0.000000 0.000000 -1.000000</row2>
-					<row3>-1.532320 0.556491 -3.451805</row3>
+					<row1>0.000000 -0.984808 0.173648</row1>
+					<row2>0.000000 -0.173648 -0.984808</row2>
+					<row3>1.439456 0.556491 -3.505099</row3>
 				</transform>
 			</node>
 			<node>
 				<identifier>HP_Track_Exhaus_2</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.984808 0.173648</row1>
+					<row2>0.000000 -0.173648 -0.984808</row2>
+					<row3>1.570144 0.556491 -3.505099</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_3</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 -1.000000 -0.000000</row1>
 					<row2>0.000000 0.000000 -1.000000</row2>
-					<row3>1.532320 0.556491 -3.451805</row3>
+					<row3>-1.469456 0.556491 -3.505099</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_4</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -1.000000 -0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>-1.600144 0.556491 -3.505099</row3>
 				</transform>
 			</node>
 			<node>

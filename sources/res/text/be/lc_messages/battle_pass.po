@@ -1,0 +1,1719 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "awardsWidget/description/award"
+msgstr "Націсніце, каб выбраць прыдатныя ўзнагароды і забраць іх."
+
+msgid "awardsWidget/description/awardDisabled"
+msgstr "Узнагароды часова недаступныя, выбачайце за нязручнасці."
+
+msgid "awardsWidget/description/coin"
+msgstr ""
+"Націсніце, каб паглядзець каштоўныя тавары за жэтоны Баявога пропуска."
+
+msgid "awardsWidget/description/collection"
+msgstr "Націсніце, каб паглядзець калекцыю Баявога пропуска."
+
+msgid "awardsWidget/description/collectionCompleted"
+msgstr "Віншуем! Вы сабралі ўсе элементы калекцыі Баявога пропуска."
+
+msgid "awardsWidget/description/point"
+msgstr ""
+"Націсніце, каб паглядзець тавары мінулых сезонаў за ачкі Баявога пропуска."
+
+msgid "awardsWidget/description/pointLocked"
+msgstr ""
+"Націсніце, каб паглядзець тавары мінулых сезонаў за ачкі Баявога пропуска.\n"
+"Тавары можна будзе купіць пасля праходжання трох асноўных раздзелаў бягучага сезона."
+
+msgid "awardsWidget/description/pointLockedExceptExtra"
+msgstr ""
+"Націсніце, каб паглядзець тавары мінулых сезонаў за ачкі Баявога пропуска. Тавары можна будзе купіць пасля праходжання трох асноўных раздзелаў бягучага сезона.\n"
+"Праходжанне адмысловага раздзела на адкрыццё доступу не ўплывае."
+
+msgid "awardsWidget/description/pointLockedExceptExtraAndResource"
+msgstr ""
+"Націсніце, каб паглядзець тавары мінулых сезонаў за ачкі Баявога пропуска. Тавары можна будзе купіць пасля праходжання трох асноўных раздзелаў бягучага сезона.\n"
+"Праходжанне дадатковага і адмысловага раздзелаў на адкрыццё доступу не ўплывае."
+
+msgid "awardsWidget/description/pointLockedExceptResource"
+msgstr ""
+"Націсніце, каб паглядзець тавары мінулых сезонаў за ачкі Баявога пропуска. Тавары можна будзе купіць пасля праходжання трох асноўных раздзелаў бягучага сезона.\n"
+"Праходжанне дадатковага раздзела на адкрыццё доступу не ўплывае."
+
+msgid "awardsWidget/title/awardMultiple"
+msgstr ""
+"ЗАБРАЦЬ\n"
+"УЗНАГАРОДЫ"
+
+msgid "awardsWidget/title/awardSingle"
+msgstr ""
+"ЗАБРАЦЬ\n"
+"УЗНАГАРОДУ"
+
+msgid "awardsWidget/title/coin"
+msgstr ""
+"ТАВАРЫ\n"
+"ЗА ЖЭТОНЫ"
+
+msgid "awardsWidget/title/collection"
+msgstr "КАЛЕКЦЫЯ"
+
+msgid "awardsWidget/title/point"
+msgstr ""
+"ТАВАРЫ\n"
+"ЗА АЧКІ"
+
+msgid "battlePassAwardsView/additionalRewards/bpBuyLevelAwardsText"
+msgstr ""
+"Вы атрымалі палепшаную ўзнагароду за завершаны этап асноўнай часткі "
+"прагрэсіі. Працягвайце здабываць ачкі, каб атрымаць яшчэ больш узнагарод."
+
+msgid "battlePassAwardsView/additionalRewards/bpRemainLevelsAwardsText"
+msgstr "Яшчэ %(remainingAwardsCount)s"
+
+msgid "battlePassAwardsView/additionalRewards/button"
+msgstr "Так!"
+
+msgid "battlePassAwardsView/additionalRewards/seeMoreButtonText"
+msgstr "Паглядзець узнагароды"
+
+msgid "battlePassAwardsView/additionalRewards/subText"
+msgstr "Таксама атрымана:"
+
+msgid "battlePassAwardsView/footer/acceptButton"
+msgstr "Так!"
+
+msgid "battlePassAwardsView/footer/allChaptersText"
+msgstr "Вы разблакавалі ўзнагароды з палепшанай лінейкі для трох раздзелаў."
+
+msgid "battlePassAwardsView/footer/allChaptersWithResourceText"
+msgstr ""
+"Вы разблакавалі ўзнагароды з палепшанай лінейкі для чатырох раздзелаў."
+
+msgid "battlePassAwardsView/footer/boughtChapterText"
+msgstr "Вам даступныя ўсе ўзнагароды за куплены этап."
+
+msgid "battlePassAwardsView/footer/bpButtonTitle"
+msgstr "Купіць Палепшаны пропуск"
+
+msgid "battlePassAwardsView/footer/bpDescriptionGotStyle"
+msgstr ""
+"У пачатку кожнага раздзела вы атрымліваеце стыль, які можна паляпшаць па "
+"меры праходжання раздзела. Незавершаныя стылі можна будзе палепшыць і пасля "
+"завяршэння бягучага сезона Баявога пропуска."
+
+msgid "battlePassAwardsView/footer/bpInProgressTitle"
+msgstr ""
+"Купіце Палепшаны пропуск для бягучага раздзела і атрымайце палепшаныя "
+"ўзнагароды за ўжо завершаныя этапы, а таксама магчымасць атрымліваць будучыя"
+" ўзнагароды з палепшанай лінейкі ўзнагарод."
+
+msgid "battlePassAwardsView/footer/bpLastStagesTitle"
+msgstr ""
+"Купіце Палепшаны пропуск для бягучага раздзела і атрымайце ўзнагароды з "
+"палепшанай лінейкі за пройдзеныя этапы."
+
+msgid "battlePassAwardsView/footer/bpMoreTitle"
+msgstr "ЯШЧЭ ЁСЦЬ МАГЧЫМАСЦЬ!"
+
+msgid "battlePassAwardsView/footer/bpTitle"
+msgstr "ПАЛЕПШАНЫ ПРОПУСК"
+
+msgid "battlePassAwardsView/footer/getRewardsButton"
+msgstr "Забраць узнагароды"
+
+msgid "battlePassAwardsView/header/bpAllChapters"
+msgstr "Усе раздзелы"
+
+msgid "battlePassAwardsView/header/bpBoughtText"
+msgstr "ПАЛЕПШАНЫ ПРОПУСК КУПЛЕНЫ!"
+
+msgid "battlePassAwardsView/header/bpFinalLevelText"
+msgstr "ФІНАЛЬНЫ ЭТАП ПРОЙДЗЕНЫ!"
+
+msgid "battlePassAwardsView/header/bpLevelReceivedText"
+msgstr "ЭТАП %(currentLevel)s ПРОЙДЗЕНЫ!"
+
+msgid "battlePassAwardsView/header/bpLevelsText"
+msgstr "АТРЫМАНЫ ЎЗНАГАРОДЫ"
+
+msgid "battlePassAwardsView/header/bpReceivedText"
+msgstr "АТРЫМАНЫ ПАЛЕПШАНЫ ПРОПУСК"
+
+msgid "battlePassAwardsView/header/bpRewardText"
+msgstr "УЗНАГАРОДА АТРЫМАНА"
+
+msgid "battlePassAwardsView/header/bpTitle"
+msgstr "БАЯВЫ ПРОПУСК. РАЗДЗЕЛ «%(chapter)s»"
+
+msgid "battlePassAwardsView/header/bpTitleWithoutChapter"
+msgstr "БАЯВЫ ПРОПУСК"
+
+msgid "battlePassAwardsView/header/styleReceivedText"
+msgstr "СТЫЛЬ АТРЫМАНЫ"
+
+msgid "battlePassAwardsView/header/styleUpgradedText"
+msgstr "СТЫЛЬ ПАЛЕПШАНЫ"
+
+msgid "battlePassAwardsView/mainReward/battlePassNewDeviceGiftToken"
+msgstr "Штатнае абсталяванне на выбар"
+
+msgid "battlePassAwardsView/mainReward/battlePassTrophyGiftToken"
+msgstr "Трафейнае абсталяванне на выбар"
+
+msgid "battlePassAwardsView/mainReward/bpBuyAwardsCaption"
+msgstr ""
+"Вы разблакавалі ўзнагароды з палепшанай лінейкі ў раздзеле «%(chapter)s»"
+
+msgid "battlePassAwardsView/mainReward/commander"
+msgstr "Танкіст %(name)s"
+
+msgid "battlePassAwardsView/mainReward/newDeviceGiftToken/buttonText"
+msgstr "Перайсці да выбару"
+
+msgid "battlePassAwardsView/mainReward/newDeviceGiftToken/buttonTitle"
+msgstr "У раздзеле «Пастаўкі з тылу» на Складзе"
+
+msgid "battlePassAwardsView/mainReward/reward"
+msgstr "Медаль: %(name)s"
+
+msgid "battlePassAwardsView/mainReward/style"
+msgstr "3D-стыль: %(name)s"
+
+msgid "battlePassAwardsView/mainReward/styleLevel1"
+msgstr "Першы ўзровень стылю «%(styleName)s»"
+
+msgid "battlePassAwardsView/mainReward/styleLevel2"
+msgstr "Новы ўзровень стылю «%(styleName)s»"
+
+msgid "battlePassAwardsView/mainReward/styleLevel3"
+msgstr "Фінальнае паляпшэнне стылю «%(styleName)s»"
+
+msgid "battlePassAwardsView/mainReward/trophyGiftToken/buttonText"
+msgstr "Перайсці да выбару"
+
+msgid "battlePassAwardsView/mainReward/trophyGiftToken/buttonTitle"
+msgstr "У раздзеле «Пастаўкі з тылу» на Складзе"
+
+msgid "battlePassBuyLevelsView/backBtnText/progression"
+msgstr "ДА БАЯВОГА ПРОПУСКА"
+
+msgid "battlePassBuyLevelsView/backBtnText/shop"
+msgstr "У КРАМУ"
+
+msgid "battlePassBuyView/backBtnText/progression"
+msgstr "ДА БАЯВОГА ПРОПУСКА"
+
+msgid "battlePassBuyView/backBtnText/shop"
+msgstr "У КРАМУ"
+
+msgid "battlePassBuyView/btnBuy"
+msgstr "Купіць"
+
+msgid "battlePassBuyView/btnCancel"
+msgstr "Назад"
+
+msgid "battlePassBuyView/btnRewards"
+msgstr "Паглядзець узнагароды"
+
+msgid "battlePassBuyView/card/activeChapter/text"
+msgstr "Актыўны раздзел"
+
+msgid "battlePassBuyView/card/button/shopOffer"
+msgstr "Да набору"
+
+msgid "battlePassBuyView/card/competePreviousChapter"
+msgstr "Завяршыце раздзел {chapter}"
+
+msgid "battlePassBuyView/card/currentLevel/text"
+msgstr "Бягучы этап"
+
+msgid "battlePassBuyView/card/currentLevelHovered/text"
+msgstr "Бягучы этап: "
+
+msgid "battlePassBuyView/card/descr/bought"
+msgstr ""
+"Палепшаны пропуск куплены. Вам даступныя палепшаныя ўзнагароды за "
+"праходжанне этапаў."
+
+msgid "battlePassBuyView/card/descr/chapter"
+msgstr ""
+"Набыццё Палепшанага пропуска разблакуе доступ да лінейкі палепшаных "
+"узнагарод раздзела."
+
+msgid "battlePassBuyView/card/descr/chapterResource"
+msgstr ""
+"Вы можаце купіць Палепшаны пропуск гэтага раздзела або атрымаць яго "
+"бясплатна, купіўшы Палепшаны пропуск трох асноўных раздзелаў."
+
+msgid "battlePassBuyView/card/descr/shopOffer"
+msgstr ""
+"Купляючы палепшаны пропуск для трох асноўных раздзелаў, вы атрымліваеце "
+"палепшаны пропуск для дадатковага раздзела бясплатна."
+
+msgid "battlePassBuyView/card/divider"
+msgstr "або"
+
+msgid "battlePassBuyView/card/priceDivider"
+msgstr "або"
+
+msgid "battlePassBuyView/card/purchased"
+msgstr "УЖО КУПЛЕНА"
+
+msgid "battlePassBuyView/card/shopOfferWaning"
+msgstr "Гэты набор стане недаступным пасля куплі любога асобнага раздзела."
+
+msgid "battlePassBuyView/card/timer/lessMinute"
+msgstr "Засталося менш за хвіліну"
+
+msgid "battlePassBuyView/card/timer/time"
+msgstr "Засталося: %(time)s"
+
+msgid "battlePassBuyView/card/title/chapter"
+msgstr "РАЗДЗЕЛ {chapter}"
+
+msgid "battlePassBuyView/card/title/shopOffer"
+msgstr "ТРЫ Ў АДНЫМ"
+
+msgid "battlePassBuyView/card/title/shopOfferWide"
+msgstr "ПАЛЕПШАНЫ ПРОПУСК: НАБОР 3+1"
+
+msgid "battlePassBuyView/confirm/backBtnText"
+msgstr "ДА ВЫБАРУ ПРАПАНОЎ"
+
+msgid "battlePassBuyView/confirm/chapter"
+msgstr "РАЗДЗЕЛ «{name}»"
+
+msgid "battlePassBuyView/confirm/description"
+msgstr "Завяршыўшы ўсе этапы Палепшанага пропуска, вы атрымаеце:"
+
+msgid "battlePassBuyView/confirm/shopOfferWarning"
+msgstr ""
+"Пасля набыцця Палепшанага пропуска за золата, прапанова з наборам раздзелаў "
+"за рэальныя грошы стане недаступнай."
+
+msgid "battlePassBuyView/confirm/shopOfferWarningDisabledChapter"
+msgstr "Увага! Вы купляеце Палепшаны пропуск для недаступнага раздзела."
+
+msgid "battlePassBuyView/confirm/shopOfferWarningNoActiveChapter"
+msgstr "Увага! Вы купляеце Палепшаны пропуск для неактыўнага раздзела."
+
+msgid "battlePassBuyView/confirm/subTitle/finished"
+msgstr ""
+"Дае магчымасць атрымаць палепшаныя ўзнагароды за пройдзеныя этапы Баявога "
+"пропуска ў раздзеле {chapter}."
+
+msgid "battlePassBuyView/confirm/subTitle/inProgress"
+msgstr ""
+"Дае магчымасць атрымаць палепшаныя ўзнагароды за кожны пройдзены і наступныя"
+" этапы Баявога пропуска ў раздзеле {chapter}."
+
+msgid "battlePassBuyView/confirm/subTitle/notStarted"
+msgstr ""
+"Дае магчымасць атрымаць палепшаныя ўзнагароды за кожны пройдзены этап "
+"Баявога пропуска ў раздзеле {chapter}."
+
+msgid "battlePassBuyView/confirm/title"
+msgstr "КУПЛЯ ПАЛЕПШАНАГА ПРОПУСКА"
+
+msgid "battlePassBuyView/confirmAnyNumber/descr"
+msgstr ""
+"Купляючы этапы прагрэсіі, вы імгненна атрымліваеце ўсе ўзнагароды за кожны "
+"куплены этап."
+
+msgid "battlePassBuyView/confirmAnyNumber/moreRewards"
+msgstr "Яшчэ ўзнагарод: %(count)s"
+
+msgid "battlePassBuyView/confirmAnyNumber/title"
+msgstr "КУПЛЯ ЭТАПАЎ"
+
+msgid "battlePassBuyView/descr"
+msgstr "Адкрывае доступ да палепшаных узнагарод за пройдзеныя этапы."
+
+msgid "battlePassBuyView/levelsSelected"
+msgstr "Выбрана этапаў:"
+
+msgid "battlePassBuyView/multicurrencyPrice"
+msgstr "Кошт куплі:"
+
+msgid "battlePassBuyView/price"
+msgstr "Кошт куплі:"
+
+msgid "battlePassBuyView/priceDivider"
+msgstr "або"
+
+msgid "battlePassBuyView/reward/backBtn"
+msgstr "Назад"
+
+msgid "battlePassBuyView/reward/chapter"
+msgstr "РАЗДЗЕЛ «%(chapterName)s»"
+
+msgid "battlePassBuyView/reward/titleBattlePass"
+msgstr "УЗНАГАРОДЫ ПАЛЕПШАНАГА БАЯВОГА ПРОПУСКА"
+
+msgid "battlePassBuyView/reward/titleFutureRewards"
+msgstr "Гэтыя ўзнагароды будуць налічаны пасля завяршэння наступных этапаў."
+
+msgid "battlePassBuyView/reward/titleLevels"
+msgstr "УЗНАГАРОДЫ ЗА %(levels)s АДЗ. ЭТАПАЎ"
+
+msgid "battlePassBuyView/reward/titleNowRewards"
+msgstr "Зараз будуць налічаны наступныя ўзнагароды за этапы %(steps)"
+
+msgid "battlePassBuyView/reward/titleNowRewardsSingle"
+msgstr "Зараз будуць налічаны наступныя ўзнагароды за %(steps)-ы этап"
+
+msgid "battlePassBuyView/subTitle"
+msgstr ""
+"Палепшаны пропуск дае магчымасць атрымліваць узнагароды з ніжняй лінейкі "
+"прагрэсіі."
+
+msgid "battlePassBuyView/title"
+msgstr "ПАЛЕПШАНЫ ПРОПУСК"
+
+msgid "battlePassVehicleAwardView/button"
+msgstr "Так!"
+
+msgid "battlePassVehicleAwardView/content/description"
+msgstr "ДАСЯГНУТЫ ЛІМІТ АЧКОЎ"
+
+msgid "battlePassVehicleAwardView/content/postTitle"
+msgstr "БАЯВЫ ПРОПУСК. ЭЛІТНАЯ ЧАСТКА"
+
+msgid "battlePassVehicleAwardView/content/subTitle"
+msgstr "У якасці ўзнагароды вы атрымалі:"
+
+msgid "battlePassVehicleAwardView/content/title"
+msgstr "БАЯВЫ ПРОПУСК"
+
+msgid "battlepassTab"
+msgstr "Баявы пропуск"
+
+msgid "chapter/fullName/1"
+msgstr "Зноў у туман"
+
+msgid "chapter/fullName/145"
+msgstr "Чырвоная Фурыя"
+
+msgid "chapter/fullName/151"
+msgstr "Петрапаўлаўскі маяк"
+
+msgid "chapter/fullName/152"
+msgstr "Шторм скораны"
+
+msgid "chapter/fullName/153"
+msgstr "Сілавое поле"
+
+msgid "chapter/fullName/154"
+msgstr "Сумленная праца"
+
+msgid "chapter/fullName/2"
+msgstr "Праца для герояў"
+
+msgid "chapter/fullName/3"
+msgstr "Палярнае світанне"
+
+msgid "chapter/fullName/4"
+msgstr "Новы раздзел"
+
+msgid "chapter/fullName/quoted/145"
+msgstr "Чырвоная Фурыя"
+
+msgid "chapter/fullName/quoted/151"
+msgstr "Петрапаўлаўскі маяк"
+
+msgid "chapter/fullName/quoted/152"
+msgstr "Шторм скораны"
+
+msgid "chapter/fullName/quoted/153"
+msgstr "Сілавое поле"
+
+msgid "chapter/fullName/quoted/154"
+msgstr "Сумленная праца"
+
+msgid "chapter/fullNameUppercased/145"
+msgstr "ЧЫРВОНАЯ ФУРЫЯ"
+
+msgid "chapter/fullNameUppercased/151"
+msgstr "ПЕТРАПАЎЛАЎСКІ МАЯК"
+
+msgid "chapter/fullNameUppercased/152"
+msgstr "ШТОРМ СКОРАНЫ"
+
+msgid "chapter/fullNameUppercased/153"
+msgstr "СІЛАВОЕ ПОЛЕ"
+
+msgid "chapter/fullNameUppercased/154"
+msgstr "СУМЛЕННАЯ ПРАЦА"
+
+msgid "chapter/fullNameUppercased/quoted/145"
+msgstr "ЧЫРВОНАЯ ФУРЫЯ"
+
+msgid "chapter/fullNameUppercased/quoted/151"
+msgstr "ПЕТРАПАЎЛАЎСКІ МАЯК"
+
+msgid "chapter/fullNameUppercased/quoted/152"
+msgstr "ШТОРМ СКОРАНЫ"
+
+msgid "chapter/fullNameUppercased/quoted/153"
+msgstr "СІЛАВОЕ ПОЛЕ"
+
+msgid "chapter/fullNameUppercased/quoted/154"
+msgstr "СУМЛЕННАЯ ПРАЦА"
+
+msgid "chapter/title"
+msgstr "РАЗДЗЕЛ %(chapter)s"
+
+msgid "chapterChoice/activeTitle"
+msgstr "РАЗДЗЕЛЫ СЕЗОНА"
+
+msgid "chapterChoice/allChaptersCompleted/description"
+msgstr ""
+"Вы можаце патраціць ачкі Баявога пропуска ў адмысловай катэгорыі Крамы.\n"
+"Здабывайце ачкі, пакуль Баявы пропуск даступны."
+
+msgid "chapterChoice/allChaptersCompleted/title"
+msgstr "УСЕ РАЗДЗЕЛЫ ПРОЙДЗЕНЫЯ"
+
+msgid "chapterChoice/buy"
+msgstr "Купіць"
+
+msgid "chapterChoice/chapterBought/tooltip"
+msgstr ""
+"Вы ўжо купілі гэты раздзел, вам даступныя ўзнагароды з яго палепшанай "
+"лінейкі."
+
+msgid "chapterChoice/chapterCompleted"
+msgstr "Раздзел пройдзены"
+
+msgid "chapterChoice/completed"
+msgstr "Пройдзена"
+
+msgid "chapterChoice/confirmation/button/cancel"
+msgstr "Скасаваць"
+
+msgid "chapterChoice/confirmation/button/submit"
+msgstr "Актываваць"
+
+msgid "chapterChoice/confirmation/button/switch"
+msgstr "Пераключыцца"
+
+msgid "chapterChoice/confirmation/description/select"
+msgstr "Пераключыцца на іншыя раздзелы можна будзе ў любы момант."
+
+msgid "chapterChoice/confirmation/description/switch"
+msgstr ""
+"У вас ужо актываваны раздзел «%(chName)s», ён будзе пастаўлены на паўзу."
+
+msgid "chapterChoice/confirmation/title/select"
+msgstr "Актываваць раздзел «%(chName)s»?"
+
+msgid "chapterChoice/confirmation/title/switch"
+msgstr "Пераключыцца на раздзел «%(chName)s»?"
+
+msgid "chapterChoice/description/style"
+msgstr "Усе 3D-стылі прывязаны да пэўных раздзелаў."
+
+msgid "chapterChoice/description/tankman"
+msgstr "Усе члены экіпажа адпавядаюць пэўным раздзелам."
+
+msgid "chapterChoice/extraChapter/reward"
+msgstr "Прэміум тэхніка"
+
+msgid "chapterChoice/freePoints/description"
+msgstr "Неразмеркаваныя ачкі Баявога пропуска: "
+
+msgid "chapterChoice/freePoints/tooltip/description"
+msgstr ""
+"Ачкі назапашваюцца па меры праходжання Баявога пропуска, нават калі раздзел "
+"не выбраны. Выберыце раздзел, і назапашаныя ачкі будуць залічаны ў яго "
+"прагрэсію."
+
+msgid "chapterChoice/freePoints/tooltip/title"
+msgstr "Неразмеркаваныя ачкі Баявога пропуска"
+
+msgid "chapterChoice/stylePreview/backLabel"
+msgstr "ДА РАЗДЗЕЛАЎ"
+
+msgid "chapterChoice/stylePreview/forLabel/default"
+msgstr "Для %(vehicleName)s"
+
+msgid "chapterChoice/stylePreview/forLabel/marathon"
+msgstr "%(vehicleName)s"
+
+msgid "chapterChoice/stylePreview/forLabel/resource"
+msgstr "Для %(vehicleName)s"
+
+msgid "chapterChoice/stylePreview/label"
+msgstr "Перадпрагляд"
+
+msgid "chapterChoice/stylePreview/name"
+msgstr "Стыль «%(styleName)s»"
+
+msgid "chapterChoice/title"
+msgstr "ВЫБЕРЫЦЕ РАЗДЗЕЛ"
+
+msgid "chapterChoice/tooltip/disabledChapter/body"
+msgstr ""
+"Прайдзіце тры асноўныя раздзелы, каб адкрыць доступ да раздзела "
+"«%(chapterName)s»"
+
+msgid "chapterChoice/tooltip/disabledChapter/header"
+msgstr "Раздзел недаступны"
+
+msgid "chosenBonuses/bonus/blueprint_gift"
+msgstr "Нацыянальныя фрагменты чарцяжоў на выбар"
+
+msgid "chosenBonuses/bonus/book_gift"
+msgstr "Навучальны дапаможнік на выбар"
+
+msgid "chosenBonuses/bonus/brochure_gift"
+msgstr "Навучальная брашура на выбар"
+
+msgid "chosenBonuses/bonus/expequipments_gift"
+msgstr "Эксперыментальнае абсталяванне на выбар"
+
+msgid "chosenBonuses/bonus/guide_gift"
+msgstr "Падручнік на выбар"
+
+msgid "chosenBonuses/bonus/new_device_fv_gift"
+msgstr "Штатнае абсталяванне на выбар (Агнявая моц і Жывучасць)"
+
+msgid "chosenBonuses/bonus/new_device_mi_gift"
+msgstr "Штатнае абсталяванне на выбар (Мабільнасць і Разведка)"
+
+msgid "chosenBonuses/bonus/trophy_gift"
+msgstr "Трафейнае абсталяванне на выбар"
+
+msgid "common/collectionText"
+msgstr "(элемент калекцыі)"
+
+msgid "common/multiplier"
+msgstr "x%(multiplier)s"
+
+msgid "commonProgression/body/ended"
+msgstr "Сезон Баявога пропуска скончаны"
+
+msgid "dailyQuests/button"
+msgstr "Так!"
+
+msgid "dailyQuests/description"
+msgstr ""
+"Падчас дзеяння Баявога пропуска ва ўзнагароды за выкананне кожнай штодзённай"
+" задачы, у тым ліку бонуснай і фінальнай (за ланцужок з 45 задач), будуць "
+"дададзены ачкі Баявога пропуска."
+
+msgid "dailyQuests/descriptionAccent"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "dailyQuests/title"
+msgstr "Ачкі Баявога пропуска за штодзённыя задачы"
+
+msgid "extraIntroView/confirmLabel"
+msgstr "Так!"
+
+msgid "extraIntroView/freeProgression"
+msgstr "БАЗАВЫЯ ЎЗНАГАРОДЫ"
+
+msgid "extraIntroView/freeProgressionDescription"
+msgstr ""
+"Змагайцеся ў баях, здабывайце ачкі Баявога пропуска і праходзьце этапы "
+"гэтага раздзела, актываваўшы яго ў любы момант. За кожны этап вы будзеце "
+"атрымліваць узнагароды."
+
+msgid "extraIntroView/premium3dStyleVechicle"
+msgstr "3D-СТЫЛЬ"
+
+msgid "extraIntroView/premiumProgression"
+msgstr "ПАЛЕПШАНЫЯ ЎЗНАГАРОДЫ"
+
+msgid "extraIntroView/premiumProgressionDescription"
+msgstr ""
+"Гэтая лінейка ўзнагарод даступная толькі ўладальнікам Палепшанага пропуска. "
+"Таксама вы зможаце атрымаць %(vehicleName)s і 3D-стыль «%(styleName)s», "
+"выканаўшы толькі частку этапаў і  набыўшы адсутныя."
+
+msgid "extraIntroView/title"
+msgstr "УЛАДАРКА НОЧЫ"
+
+msgid "extraIntroView/titleDescription"
+msgstr ""
+"Падзея, галоўная ўзнагарода якой — %(vehicleName)s з персанальным 3D-стылем."
+
+msgid "finalReward/tankman/roles/commander"
+msgstr "камандзір"
+
+msgid "finalReward/tankman/roles/driver"
+msgstr "механік-кіроўца"
+
+msgid "finalReward/tankman/roles/gunner"
+msgstr "наводчык"
+
+msgid "finalReward/tankman/roles/loader"
+msgstr "набоец"
+
+msgid "finalReward/tankman/roles/radioman"
+msgstr "радыст"
+
+msgid "howToEarnPoints/battleTypeTitle/1"
+msgstr "Выпадковы бой"
+
+msgid "howToEarnPoints/battleTypeTitle/22"
+msgstr "Рангавы бой"
+
+msgid "howToEarnPoints/battleTypeTitle/27"
+msgstr "Лінія фронту"
+
+msgid "howToEarnPoints/battleTypeTitle/29"
+msgstr "Сталёвы паляўнічы"
+
+msgid "howToEarnPoints/battleTypeTitle/43"
+msgstr "Націск"
+
+msgid "howToEarnPoints/bonus"
+msgstr "+%(bonus)s"
+
+msgid "howToEarnPoints/card/battle/linkText"
+msgstr "Перайсці да задач"
+
+msgid "howToEarnPoints/card/battle/text"
+msgstr ""
+"Выконвайце баявыя задачы ў рэжыме «Сталёвы паляўнічы» і здабывайце "
+"дадатковыя ачкі."
+
+msgid "howToEarnPoints/card/battle/title"
+msgstr "Штодзённыя задачы"
+
+msgid "howToEarnPoints/card/comp7/text"
+msgstr ""
+"Выконвайце баявыя задачы ў рэжыме «Націск» і здабывайце дадатковыя ачкі."
+
+msgid "howToEarnPoints/card/comp7/title"
+msgstr "Штодзённыя задачы"
+
+msgid "howToEarnPoints/card/daily/linkText"
+msgstr "Перайсці да задач"
+
+msgid "howToEarnPoints/card/daily/text"
+msgstr "Выкананне штодзённых задач даступнае на тэхніцы любога ўзроўню."
+
+msgid "howToEarnPoints/card/daily/title"
+msgstr "Штодзённыя задачы"
+
+msgid "howToEarnPoints/card/epicBattlePoints/text"
+msgstr ""
+"За дасягненне ўзроўняў фронту вы будзеце здабываць дадатковыя ачкі Баявога "
+"пропуска."
+
+msgid "howToEarnPoints/card/epicBattlePoints/title"
+msgstr "Узнагарода за ўзроўні фронту"
+
+msgid "howToEarnPoints/card/limitPoints/text"
+msgstr ""
+"Пасля дасягнення ліміту ачкоў на машыне вы аднаразова атрымаеце ва "
+"ўзнагароду дадатковыя ачкі."
+
+msgid "howToEarnPoints/card/limitPoints/title"
+msgstr "Узнагарода за ліміт ачкоў"
+
+msgid "howToEarnPoints/card/specialVehicle/text"
+msgstr "На ключавой тэхніцы сезона вы здабываеце дадатковыя ачкі."
+
+msgid "howToEarnPoints/card/specialVehicle/title"
+msgstr "Ключавая тэхніка сезона"
+
+msgid "howToEarnPoints/description"
+msgstr ""
+"Ачкі Баявога пропуска патрэбны для паслядоўнага праходжання этапаў. Іх можна"
+" заслужыць у Выпадковых баях і большасці іншых рэжымаў, якія актыўныя падчас"
+" Баявога пропуска, за выкананне баявых і штодзённых задач, а таксама "
+"аднаразова за дасягненне ліміту ачкоў на канкрэтнай машыне."
+
+msgid "howToEarnPoints/lose/1"
+msgstr "Паражэнне/нічыя"
+
+msgid "howToEarnPoints/lose/22"
+msgstr "Паражэнне/нічыя"
+
+msgid "howToEarnPoints/lose/27"
+msgstr "Паражэнне"
+
+msgid "howToEarnPoints/lose/43"
+msgstr "Паражэнне"
+
+msgid "howToEarnPoints/rangeLevels/29"
+msgstr "Месца %(startLevel)d–%(endLevel)d"
+
+msgid "howToEarnPoints/rating/1"
+msgstr "Топ-%(level)d паводле досведу"
+
+msgid "howToEarnPoints/rating/22"
+msgstr "Топ-%(level)d паводле досведу"
+
+msgid "howToEarnPoints/rating/27"
+msgstr "Топ-%(level)d паводле досведу"
+
+msgid "howToEarnPoints/rating/29"
+msgstr "Топ-%(level)d паводле досведу"
+
+msgid "howToEarnPoints/rating/43"
+msgstr "Топ-%(level)d паводле ачкоў прэстыжу"
+
+msgid "howToEarnPoints/singleLevel/29"
+msgstr "Месца %(level)d"
+
+msgid "howToEarnPoints/solo/29"
+msgstr "Гульня сола"
+
+msgid "howToEarnPoints/squad/29"
+msgstr "Гульня звязам"
+
+msgid "howToEarnPoints/text/1"
+msgstr "Гуляйце на тэхніцы %(startLevel)s–%(endLevel)s узроўняў"
+
+msgid "howToEarnPoints/text/22"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)"
+
+msgid "howToEarnPoints/text/27"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
+
+msgid "howToEarnPoints/text/29"
+msgstr "Гуляйце на адмысловай тэхніцы рэжыму"
+
+msgid "howToEarnPoints/text/43"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
+
+msgid "howToEarnPoints/title"
+msgstr "ЯК ЗДАБЫЦЬ АЧКІ"
+
+msgid "howToEarnPoints/win/1"
+msgstr "Перамога"
+
+msgid "howToEarnPoints/win/22"
+msgstr "Перамога"
+
+msgid "howToEarnPoints/win/27"
+msgstr "Перамога"
+
+msgid "howToEarnPoints/win/43"
+msgstr "Перамога"
+
+msgid "intro/aboutButton"
+msgstr "ПРА БАЯВЫ ПРОПУСК"
+
+msgid "intro/button"
+msgstr "Так!"
+
+msgid "intro/seasonDescription/text"
+msgstr ""
+"Вітаем у НПК «Вулкан»! Тут сышліся самыя перадавыя тэхналогіі, прафесійны "
+"штат супрацоўнікаў і цяжкая заслона таямніцы, якая хавае да пары да часу "
+"істотную частку распрацовак. Хто ведае, можа быць цяперашняя прадукцыя НВК —"
+" частка чагосьці большага? Час пакажа... І чакаць давядзецца зусім нядоўга."
+
+msgid "intro/seasonDescription/title"
+msgstr "ТЭМАТЫЧНЫ СЕЗОН"
+
+msgid "intro/styles/text"
+msgstr ""
+"У гэтым сезоне Баявога пропуска прадстаўлены тры стылі для ключавой тэхнікі:"
+" Pz.Kpfw. VII, Type 71 і Аб'ект 430У"
+
+msgid "intro/styles/title"
+msgstr "НОВЫЯ СТЫЛІ"
+
+msgid "intro/title"
+msgstr "БАЯВЫ ПРОПУСК: ПАД НАПРУЖАННЕМ"
+
+msgid "offSeason/alertTooltip"
+msgstr "Вынікі галасавання часова недаступныя. Паспрабуйце зайсці пазней."
+
+msgid "offSeason/finished"
+msgstr "ЗАВЕРШАНЫ"
+
+msgid "offSeason/footerLose"
+msgstr ""
+"Пасля заканчэння бягучага сезона Баявога пропуска вам налічана шматразовая баявая задача на\n"
+"падвоены досвед экіпажа для тэхнікі IV–X узроўняў."
+
+msgid "offSeason/footerWin"
+msgstr ""
+"Пасля заканчэння бягучага сезона Баявога пропуска вам налічана шматразовая баявая задача на\n"
+"падвоены баявы досвед для тэхнікі IV–X узроўняў."
+
+msgid "offSeason/levelReached"
+msgstr ""
+"У межах сезона вы спыніліся на\n"
+"{level}-м этапе прагрэсіі."
+
+msgid "offSeason/levelReachedPost"
+msgstr ""
+"У межах сезона вы спыніліся на {level}-м этапе\n"
+"элітнай прагрэсіі."
+
+msgid "offSeason/noProgress"
+msgstr ""
+"Вы не правялі ніводнага бою ў межах\n"
+"Баявога пропуска."
+
+msgid "offSeason/postPassed"
+msgstr ""
+"Віншуем! У межах сезона вы цалкам прайшлі\n"
+"элітную частку прагрэсіі!"
+
+msgid "offSeason/sideChosen"
+msgstr "Выбралі бок {vehicle}"
+
+msgid "offSeason/startsSoon"
+msgstr "Наступны сезон хутка пачнецца!"
+
+msgid "offSeason/title"
+msgstr "Сезон %(season)s"
+
+msgid "points/top"
+msgstr "%(vehicle): %(bonus) за %(top) паводле досведу."
+
+msgid "points/topCount"
+msgstr "топ-%(top)s"
+
+msgid "prestige/top"
+msgstr "%(vehicle): %(bonus) за траплянне ў %(top) паводле ачкоў прэстыжу."
+
+msgid "progression/about/default"
+msgstr "ПРА БАЯВЫ ПРОПУСК"
+
+msgid "progression/about/marathon"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "progression/about/resource"
+msgstr "ПРА БАЯВЫ ПРОПУСК"
+
+msgid "progression/activateChapter"
+msgstr "Актываваць раздзел"
+
+msgid "progression/activateChapterDescr"
+msgstr "Актывуйце раздзел, каб атрымліваць узнагароды за яго праходжанне."
+
+msgid "progression/activateExtraChapterDescr"
+msgstr "Актывуйце раздзел, каб атрымліваць узнагароды за яго праходжанне."
+
+msgid "progression/activatePausedExtraChapterDescr"
+msgstr "Актывуйце раздзел, каб атрымліваць узнагароды за яго праходжанне."
+
+msgid "progression/backToCurrentStageArrow/descr"
+msgstr "Націсніце, каб вярнуцца да бягучага этапа."
+
+msgid "progression/backToPotentialStageArrow/descr"
+msgstr "Націсніце, каб вярнуцца да магчымага этапу."
+
+msgid "progression/baseProgressionDescr"
+msgstr "БАЗАВЫЯ ЎЗНАГАРОДЫ"
+
+msgid "progression/battlePassBuyBtn"
+msgstr "Купіць Палепшаны пропуск"
+
+msgid "progression/battlePassBuyDescr"
+msgstr ""
+"Палепшаны пропуск разблакуе лінейку палепшаных узнагарод для бягучага "
+"раздзела."
+
+msgid "progression/battlePassDisabled"
+msgstr ""
+"Прайдзіце тры асноўныя раздзелы, каб адкрыць доступ да бягучага раздзела."
+
+msgid "progression/battlePassNextChapterBuyDescr"
+msgstr ""
+"Завяршыце папярэдні раздзел, каб набыць Палепшаны пропуск у гэтым раздзеле."
+
+msgid "progression/battlePassNextChapterEpisodesDescr"
+msgstr "Завяршыце папярэдні раздзел, каб дакупіць этапы ў гэтым раздзеле."
+
+msgid "progression/btnAllChapters"
+msgstr "УСЕ РАЗДЗЕЛЫ"
+
+msgid "progression/btnExtras"
+msgstr ""
+"ДАДАТКОВЫЯ\n"
+"МАТЭРЫЯЛЫ"
+
+msgid "progression/btnExtrasTooltip"
+msgstr ""
+"Завяршайце этапы, і з часам вам адкрыюцца новыя матэрыялы. Адкрыта "
+"матэрыялаў: {opened} / {total}."
+
+msgid "progression/btnNoExtrasTooltip"
+msgstr "Завяршайце этапы і адкрывайце новыя матэрыялы."
+
+msgid "progression/btnRewardSelect"
+msgstr "ЗАБРАЦЬ УЗНАГАРОДУ"
+
+msgid "progression/btnRewardSelectTooltip"
+msgstr "Націсніце, каб выбраць прыдатныя ўзнагароды і забраць іх."
+
+msgid "progression/btnRewardsSelect"
+msgstr "ЗАБРАЦЬ УЗНАГАРОДУ"
+
+msgid "progression/btnRewardsUnavailable"
+msgstr ""
+"Часова недаступна з тэхнічных прычын. Мы ўжо займаемся вырашэннем праблемы."
+
+msgid "progression/btnTokensStore"
+msgstr ""
+"ТАВАРЫ\n"
+"ЗА ЖЭТОНЫ"
+
+msgid "progression/btnTokensStoreTooltip"
+msgstr ""
+"Націсніце, каб паглядзець каштоўныя тавары за жэтоны Баявога пропуска.\n"
+"Жэтонаў маецца: {bpcoinCount}."
+
+msgid "progression/chapterText"
+msgstr "РАЗДЗЕЛ %(chapter)s: %(chapterName)s"
+
+msgid "progression/currentStep"
+msgstr "Бягучы этап"
+
+msgid "progression/currentStepLocked"
+msgstr "ПАЛЕПШАНАЯ ЎЗНАГАРОДА"
+
+msgid "progression/episodeBuyBtn"
+msgstr "Дакупіць этапы"
+
+msgid "progression/episodeBuyDescr"
+msgstr "Вы атрымаеце ўзнагароды за кожны куплены этап."
+
+msgid "progression/episodeBuyDisableDescr"
+msgstr "Дакупіць любую колькасць этапаў можна праз %(day)"
+
+msgid "progression/error"
+msgstr ""
+"Баявы пропуск часова недаступны з тэхнічных прычын.\n"
+"Увесь прагрэс захаваны. Выбачайце за нязручнасці."
+
+msgid "progression/errorBtn"
+msgstr "У Гараж"
+
+msgid "progression/extraChapterWidget/crewTitle"
+msgstr "і %(name)s"
+
+msgid "progression/extraChapterWidget/styleCaption"
+msgstr "3D-стыль і танкіст з агучкай"
+
+msgid "progression/extraChapterWidget/styleRemark"
+msgstr "З Палепшаным пропускам"
+
+msgid "progression/extraChapterWidget/styleSubTitle"
+msgstr "і баявая задача для %(vehicleName)s"
+
+msgid "progression/extraChapterWidget/styleTitle"
+msgstr "Стыль «%(styleName)s»"
+
+msgid "progression/extraChapterWidget/vehicleCaption"
+msgstr "Прэміум тэхніка"
+
+msgid "progression/extraChapterWidget/voiceOverTooltip"
+msgstr "Націсніце, каб праслухаць прыклад голасу танкіста."
+
+msgid "progression/footer/freePointsDescr"
+msgstr "Неразмеркаваных ачкоў Баявога пропуска: "
+
+msgid "progression/footer/multicurrencyTooltip"
+msgstr "Можна купіць за золата або вольны досвед."
+
+msgid "progression/footer/status/disabled"
+msgstr "Раздзел «%(chapterName)s» недаступны"
+
+msgid "progression/footer/status/inactive"
+msgstr "Раздзел неактыўны"
+
+msgid "progression/footer/status/paused"
+msgstr "Раздзел на паўзе."
+
+msgid "progression/header/chapter/status"
+msgstr "Раздзел «%(chapterName)s»"
+
+msgid "progression/header/disabled"
+msgstr "недаступны"
+
+msgid "progression/header/inactive"
+msgstr "неактыўны"
+
+msgid "progression/header/paused"
+msgstr "на паўзе"
+
+msgid "progression/pausedStep"
+msgstr "Этап"
+
+msgid "progression/postProgressionDescr"
+msgstr "ЭЛІТНАЯ ЧАСТКА ПРАГРЭСІІ"
+
+msgid "progression/premiumProgressionDescr"
+msgstr "ПАЛЕПШАНЫЯ ЎЗНАГАРОДЫ"
+
+msgid "progression/progressionArrow"
+msgstr ""
+"ПАГЛЯДЗЕЦЬ\n"
+"УСЕ ЭТАПЫ"
+
+msgid "progression/progressionChapterArrow"
+msgstr "РАЗДЗЕЛА {chapter}"
+
+msgid "progression/progressionChapterGoTo"
+msgstr "ПЕРАЙСЦІ ДА"
+
+msgid "progression/season/end/extra"
+msgstr "Падзея завершыцца %(endDay)s %(endMonth)s у %(endTime)s"
+
+msgid "progression/season/end/normal"
+msgstr "Сезон %(seasonNum)s працягнецца да %(endDay)s %(endMonth)s"
+
+msgid "progression/seasonEndingDescr"
+msgstr "Да заканчэння падзеі засталося: "
+
+msgid "progression/seasonEndingTooltip"
+msgstr "Да заканчэння: {day}"
+
+msgid "progression/takeReward"
+msgstr "Забраць узнагароду"
+
+msgid "progression/trophySelectAwaiting"
+msgstr "ЧАКАЕ ВЫБАРУ"
+
+msgid "progression/widget3dStyle/currentStyle"
+msgstr "Стыль «{name}»"
+
+msgid "progression/widget3dStyle/forVehicle"
+msgstr "Для "
+
+msgid "progression/widget3dStyle/titleForClosedChapter"
+msgstr ""
+"Каб выбраць стыль,\n"
+"завяршыце папярэдні раздзел"
+
+msgid "progression/widget3dStyle/titleForLastChapter"
+msgstr ""
+"Выберыце стыль раздзела;\n"
+"яго можна адразу нанесці"
+
+msgid "progression/widget3dStyle/titleNoChapterSelected"
+msgstr ""
+"Каб атрымаць стыль,\n"
+"выберыце раздзел."
+
+msgid "progression/widget3dStyle/viewStyles"
+msgstr "Паглядзець усе стылі"
+
+msgid "questChainBonus"
+msgstr "Ланцужок баявых задач"
+
+msgid "randomQuestBonus"
+msgstr "Баявая задача для %(vehicle)s"
+
+msgid "reward/postBattle/comp7/progress"
+msgstr "Атрымана ачкоў за ўваходжанне ў топ паводле ачкоў прэстыжу:"
+
+msgid "reward/postBattle/comp7/progress/tooltip"
+msgstr ""
+"Атрымана ачкоў за ўваходжанне ў топ паводле ачкоў прэстыжу: %(points)d"
+
+msgid "reward/postBattle/progress"
+msgstr "Прагрэс этапу:"
+
+msgid "reward/postBattle/progress/battle/tooltip"
+msgstr "За ўваходжанне ў топ паводле досведу"
+
+msgid "reward/postBattle/progress/bonus/tooltip"
+msgstr "За дасягненне ліміту ачкоў на тэхніцы"
+
+msgid "reward/postBattle/progress/points"
+msgstr "Баявы пропуск: налічэнне ачкоў"
+
+msgid "reward/postBattle/progress/points/battle"
+msgstr "За ўваходжанне ў топ паводле досведу:"
+
+msgid "reward/postBattle/progress/points/bonus"
+msgstr "За дасягненне ліміту ачкоў на тэхніцы:"
+
+msgid "reward/postBattle/progress/points/quest"
+msgstr "За выкананне задач:"
+
+msgid "reward/postBattle/progress/pointsAux"
+msgstr "Атрымана ачкоў:"
+
+msgid "reward/postBattle/progress/pointsAux/tooltip"
+msgstr "Налічана вольных ачкоў"
+
+msgid "reward/postBattle/progress/quests/tooltip"
+msgstr "За выкананне задач"
+
+msgid "reward/postBattle/progress/tooltip"
+msgstr "Прагрэс этапу:"
+
+msgid "reward/postBattle/title"
+msgstr "%(level)d-ы этап раздзела «%(chapter)s»"
+
+msgid "reward/postBattle/title/free"
+msgstr "Баявы пропуск: налічаны вольныя ачкі"
+
+msgid "rewardChoice/crewBook/rewardDescription"
+msgstr "досведу кожнаму танкісту выбранай машыны %(nation)s"
+
+msgid "rewardChoice/subTitle"
+msgstr "ВЫБЕРЫЦЕ ЎЗНАГАРОДУ"
+
+msgid "rewardChoice/title"
+msgstr "БАЯВЫ ПРОПУСК"
+
+msgid "rewardChoice/titleChapter"
+msgstr "БАЯВЫ ПРОПУСК. РАЗДЗЕЛ «%(chapter)s»"
+
+msgid "rewardChoice/titleChapterLevel"
+msgstr "БАЯВЫ ПРОПУСК. РАЗДЗЕЛ «%(chapter)s», ЭТАП %(level)s"
+
+msgid "selectBonus/blueprint_gift"
+msgstr "Фрагменты чарцяжоў на выбар"
+
+msgid "selectBonus/book_gift"
+msgstr "Навучальны дапаможнік на выбар"
+
+msgid "selectBonus/brochure_gift"
+msgstr "Навучальная брашура на выбар"
+
+msgid "selectBonus/deluxe_gift"
+msgstr "Удасканаленае абсталяванне на выбар"
+
+msgid "selectBonus/expequipments_gift"
+msgstr "Эксперыментальнае абсталяванне на выбар"
+
+msgid "selectBonus/guide_gift"
+msgstr "Падручнік на выбар"
+
+msgid "selectBonus/new_device_fv_gift"
+msgstr "Абсталяванне на выбар"
+
+msgid "selectBonus/new_device_mi_gift"
+msgstr "Абсталяванне на выбар"
+
+msgid "selectBonus/trophy_gift"
+msgstr "Трафейнае абсталяванне на выбар"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s сут"
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "status/timeLeft/lessMin"
+msgstr "1 хв"
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "styleProgressBonus"
+msgstr "Паляпшэнне стылю «%(styleName)s» да %(level)s-га ўзроўню"
+
+msgid "styleProgression/finalLevel"
+msgstr "Фінальнае паляпшэнне стылю «%(styleName)s»"
+
+msgid "styleProgression/newLevel"
+msgstr "Новы ўзровень стылю «%(styleName)s»"
+
+msgid "styleProgression/newStyle"
+msgstr "Першы ўзровень стылю «%(styleName)s»"
+
+msgid "tooltips/RandomQuestTooltip/condition"
+msgstr "Умова: %(condition)"
+
+msgid "tooltips/RandomQuestTooltip/expireTime"
+msgstr ""
+"Задача дзейнічае %(whiteSpanish_Open)sда %(day)s "
+"%(month)s%(whiteSpanish_Close)s"
+
+msgid "tooltips/RandomQuestTooltip/rewards/consumables"
+msgstr ""
+"%(whiteSpanish_Open)sРыштунак:%(whiteSpanish_Close)s аптэчкі, рамонтныя "
+"камплекты і вогнетушыцелі"
+
+msgid "tooltips/RandomQuestTooltip/rewards/directives"
+msgstr ""
+"%(whiteSpanish_Open)sНастаўленні%(whiteSpanish_Close)s для абсталявання"
+
+msgid "tooltips/RandomQuestTooltip/rewards/money"
+msgstr ""
+"%(whiteSpanish_Open)sКрэдыты, боны і вольны досвед%(whiteSpanish_Close)s"
+
+msgid "tooltips/RandomQuestTooltip/rewards/personal_reserves"
+msgstr "%(whiteSpanish_Open)sАсабістыя рэзервы%(whiteSpanish_Close)s"
+
+msgid "tooltips/RandomQuestTooltip/rewards/premium"
+msgstr ""
+"%(whiteSpanish_Open)sДні Танкавага прэміум акаўнту%(whiteSpanish_Close)s"
+
+msgid "tooltips/RandomQuestTooltip/rewards/standardEquipment"
+msgstr "%(whiteSpanish_Open)sШтатнае абсталяванне%(whiteSpanish_Close)s"
+
+msgid "tooltips/RandomQuestTooltip/rewardsTitle"
+msgstr ""
+"Раз на суткі за выкананне задачы вы зможаце атрымаць адну з наступных "
+"узнагарод:"
+
+msgid "tooltips/RandomQuestTooltip/title"
+msgstr "Баявая задача для %(vehicleName)"
+
+msgid "tooltips/battlePassCoins/secondaryText"
+msgstr ""
+"Жэтоны будуць выдавацца на працягу трох сезонаў Баявога пропуска на працягу "
+"цэлага года. Распараджайцеся жэтонамі разважна."
+
+msgid "tooltips/battlePassCoins/text"
+msgstr ""
+"Каштоўная гульнявая валюта, якая выдаецца за праходжанне этапаў Баявога "
+"пропуска. Жэтоны можна абмяняць на асаблівыя ўзнагароды ў раздзеле «Тавары "
+"за жэтоны» ўнутрыгульнявой Крамы."
+
+msgid "tooltips/battlePassCoins/title"
+msgstr "Жэтон Баявога пропуска"
+
+msgid "tooltips/battlePassPoints/completed"
+msgstr "Пройдзены ўсе раздзелы і этапы прагрэсіі Баявога пропуска."
+
+msgid "tooltips/battlePassPoints/description"
+msgstr "Аўтаматычна дадаюцца да прагрэсіі Баявога пропуска."
+
+msgid "tooltips/battlePassPoints/title"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "tooltips/battlePassQuestsChain/secondaryText"
+msgstr "Задачы можна выконваць у Выпадковых баях і ў Генеральнай бітве."
+
+msgid "tooltips/battlePassQuestsChain/text"
+msgstr ""
+"Адкрывае доступ да ланцужка баявых задач, за выкананне якіх можна атрымаць "
+"дадатковую маёмасць: "
+
+msgid "tooltips/battlePassQuestsChain/title"
+msgstr "Доступ да ланцужка баявых задач"
+
+msgid "tooltips/claimRewards/0"
+msgstr "Асноўныя ўзнагароды атрыманы"
+
+msgid "tooltips/claimRewards/1"
+msgstr "Выберыце ўзнагароды за пройдзены этап"
+
+msgid "tooltips/claimRewards/multiple"
+msgstr "Выберыце ўзнагароды за пройдзеныя этапы"
+
+msgid "tooltips/commanders/chose"
+msgstr "АБО"
+
+msgid "tooltips/commanders/descr"
+msgstr ""
+"Завяршыўшы фінальны этап, ва ўзнагароду вы зможаце выбраць аднаго з "
+"унікальных танкістаў."
+
+msgid "tooltips/commanders/title"
+msgstr "Адзін з двух танкістаў"
+
+msgid "tooltips/completed/claimRewards"
+msgstr "Усе ўзнагароды атрыманы"
+
+msgid "tooltips/completed/finalLevel"
+msgstr "Пройдзены ўсе раздзелы і этапы прагрэсіі"
+
+msgid "tooltips/completed/got"
+msgstr "Узнагарода атрымана"
+
+msgid "tooltips/completed/message"
+msgstr ""
+"Цяпер вы можаце выкарыстоўваць назапашаныя ачкі Баявога пропуска ў раздзеле "
+"«Тавары за ачкі» ўнутрыгульнявой крамы."
+
+msgid "tooltips/completed/rewardsObtained"
+msgstr "Асноўныя ўзнагароды атрыманы"
+
+msgid "tooltips/completed/subTitle"
+msgstr "УСЕ РАЗДЗЕЛЫ ПРОЙДЗЕНЫЯ"
+
+msgid "tooltips/completed/title"
+msgstr "Баявы пропуск"
+
+msgid "tooltips/entryPoint/disabled/body"
+msgstr ""
+"Баявы пропуск часова недаступны з тэхнічных прычын.\n"
+"Увесь прагрэс захаваны. Выбачайце за нязручнасці."
+
+msgid "tooltips/entryPoint/disabled/header"
+msgstr "Баявы пропуск часова недаступны"
+
+msgid "tooltips/entryPoint/disabled/mapbox"
+msgstr ""
+"Баявы пропуск у рэжыме «Разведка боем» часова недаступны з тэхнічных прычын.\n"
+"Увесь прагрэс захаваны. Выбачайце за нязручнасці."
+
+msgid "tooltips/extra/daysAndHours"
+msgstr "%(D)s сут %(H)s гадз"
+
+msgid "tooltips/extra/min"
+msgstr "%(m)s хв"
+
+msgid "tooltips/footerBuyBtn/activateChapter/descr"
+msgstr "Актывуйце раздзел, каб атрымліваць узнагароды за яго праходжанне."
+
+msgid "tooltips/footerBuyBtn/battlePass/descr"
+msgstr ""
+"Купіць Палепшаны пропуск можна ў любы час. У гэтым выпадку вы імгненна "
+"атрымаеце ўсе палепшаныя ўзнагароды бягучага раздзела за пройдзеныя этапы і "
+"будзеце атрымліваць базавыя і палепшаныя ўзнагароды за кожны наступны этап "
+"да заканчэння раздзела."
+
+msgid "tooltips/footerBuyBtn/battlePass/nextChapter"
+msgstr "Завяршыце папярэдні раздзел, каб дакупіць этапы ў гэтым раздзеле."
+
+msgid "tooltips/footerBuyBtn/episode/descr"
+msgstr ""
+"Дакупіўшы этапы, вы імгненна атрымаеце за іх базавыя і палепшаныя "
+"ўзнагароды. Этапы купляюцца асобна для кожнага раздзела."
+
+msgid "tooltips/goldMission/description"
+msgstr ""
+"%(highlight)s калі вы прапусціце дзень, золата за яго налічана не будзе."
+
+msgid "tooltips/goldMission/highlightedDescription"
+msgstr "Звярніце ўвагу:"
+
+msgid "tooltips/goldMission/text"
+msgstr ""
+"Магчымасць атрымліваць %(count)s %(icon)s золата штодзённа %(duration)s за "
+"праведзеную бітву ў рэжыме «Выпадковы бой»."
+
+msgid "tooltips/goldMission/textDuration"
+msgstr "на працягу %(days)s дзён"
+
+msgid "tooltips/goldMission/title"
+msgstr "Штодзённае золата"
+
+msgid "tooltips/iconLock/descr1"
+msgstr ""
+"Вы можаце пашырыць спіс здабычы ў раздзеле, купіўшы Палепшаны пропуск. Ён "
+"набываецца для кожнага асобнага раздзела і дзейнічае толькі для яго. З "
+"Палепшаным пропускам вы будзеце атрымліваць узнагароды з абедзвюх лінеек за "
+"дасягненне кожнага наступнага этапу."
+
+msgid "tooltips/iconLock/descr2"
+msgstr ""
+"Купіць Палепшаны пропуск можна ў любы час. У гэтым выпадку вы імгненна "
+"атрымаеце ўсе палепшаныя ўзнагароды за пройдзеныя этапы, для якіх куплены "
+"Палепшаны пропуск. Палепшыць узнагароду можна на асноўным экране Баявога "
+"пропуска, націснуўшы на кнопку «Купіць Палепшаны пропуск»."
+
+msgid "tooltips/iconLock/title"
+msgstr "Палепшаная ўзнагарода Баявога пропуска"
+
+msgid "tooltips/inProgress/baseReward"
+msgstr "Базавая ўзнагарода"
+
+msgid "tooltips/inProgress/battleRoyale"
+msgstr "«Сталёвы паляўнічы»"
+
+msgid "tooltips/inProgress/chapter"
+msgstr "Раздзел «{name}»"
+
+msgid "tooltips/inProgress/epic"
+msgstr "«Лінія фронту»"
+
+msgid "tooltips/inProgress/getPointsFrom"
+msgstr "Правілы налічэння ачкоў у рэжыме %(battleType)s."
+
+msgid "tooltips/inProgress/hurryUp"
+msgstr ""
+"Паспейце купіць Палепшаны пропуск, каб атрымаць усе палепшаныя ўзнагароды за"
+" пройдзеныя этапы!"
+
+msgid "tooltips/inProgress/improvedReward"
+msgstr "Палепшаная ўзнагарода"
+
+msgid "tooltips/inProgress/level"
+msgstr "Бягучы этап"
+
+msgid "tooltips/inProgress/playGame/comp7"
+msgstr "Правілы налічэння ачкоў у рэжыме «Націск» на тэхніцы Х узроўню."
+
+msgid "tooltips/inProgress/playGame/mapbox"
+msgstr ""
+"Правілы налічэння ачкоў у рэжыме «Разведка боем» на тэхніцы VIII–Х узроўню."
+
+msgid "tooltips/inProgress/playGame/randoms"
+msgstr ""
+"Правілы налічэння ачкоў у Выпадковых баях (за выключэннем Генеральнай бітвы)"
+" на тэхніцы VI–X узроўняў."
+
+msgid "tooltips/inProgress/playGame/ranked"
+msgstr "У Рангавых баях даступны заробак ачкоў за выкананне штодзённых задач."
+
+msgid "tooltips/inProgress/timeLeft"
+msgstr "Засталося:"
+
+msgid "tooltips/notChosen/chapterAvailable"
+msgstr "Адкрыты доступ да раздзела «%(chapterName)»"
+
+msgid "tooltips/notChosen/description"
+msgstr ""
+"Каб прасоўвацца па прагрэсіі і атрымліваць каштоўныя ўзнагароды, неабходна "
+"выбраць раздзел."
+
+msgid "tooltips/notChosen/points"
+msgstr "Неразмеркавых ачкоў Баявога пропуска: %(points)"
+
+msgid "tooltips/notChosen/subTitle"
+msgstr "ВЫБЕРЫЦЕ РАЗДЗЕЛ"
+
+msgid "tooltips/notChosen/title"
+msgstr "Баявы пропуск"
+
+msgid "tooltips/notStarted/date"
+msgstr "%(day)s %(month)s"
+
+msgid "tooltips/notStarted/descr"
+msgstr ""
+"{date} стартуе сезон Баявога пропуска, які працягнецца абмежаваны час. Каб "
+"прыняць удзел, дастаткова гуляць у Выпадковых баях на любой тэхніцы VI-X "
+"узроўняў і здабываць ачкі прагрэсіі."
+
+msgid "tooltips/notStarted/noDate/descr"
+msgstr ""
+"Бягучы сезон завершаны. Сачыце за навінамі на сайце гульні, каб быць у курсе"
+" далейшых планаў."
+
+msgid "tooltips/notStarted/noDate/subTitle"
+msgstr "Сезон {seasonNum} завершаны"
+
+msgid "tooltips/notStarted/subTitle"
+msgstr "Сезон стартуе {date}"
+
+msgid "tooltips/notStarted/title"
+msgstr "Баявы пропуск"
+
+msgid "tooltips/points/footer"
+msgstr ""
+"Падрабязней пра спосабы заробку ачкоў у розных рэжымах можна даведацца, "
+"націснуўшы на пункт меню «Як здабыць ачкі»."
+
+msgid "tooltips/points/rules"
+msgstr "У Выпадковых баях ачкі налічваюцца наступным чынам:"
+
+msgid "tooltips/points/specialVehicles"
+msgstr "Ключавая тэхніка бягучага сезона зарабляе больш ачкоў:"
+
+msgid "tooltips/points/subtitle"
+msgstr ""
+"З дапамогай ачкоў Баявога пропуска адбываецца ваша прасоўванне па прагрэсіі."
+" Ачкі можна здабыць, гуляючы на тэхніцы VI-X узроўняў у Выпадковых баях (за "
+"выключэннем Генеральнай бітвы) і іншых гульнявых рэжымах, за выкананне "
+"адмысловых задач, а таксама аднаразова за дасягненне ліміту ачкоў на "
+"канкрэтнай машыне."
+
+msgid "tooltips/points/title"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "tooltips/pointsTable/lose"
+msgstr "За паражэнне/нічыю"
+
+msgid "tooltips/pointsTable/loseWithoutDraw"
+msgstr "За паражэнне"
+
+msgid "tooltips/pointsTable/place"
+msgstr "{place} месца"
+
+msgid "tooltips/pointsTable/places"
+msgstr "{place} месцы"
+
+msgid "tooltips/pointsTable/solo"
+msgstr "Сола"
+
+msgid "tooltips/pointsTable/squad"
+msgstr "Звяз"
+
+msgid "tooltips/pointsTable/topPlace"
+msgstr "Топ-{place} паводле досведу"
+
+msgid "tooltips/pointsTable/win"
+msgstr "За перамогу"
+
+msgid "tooltips/postProgress/body"
+msgstr ""
+"Элітная частка прагрэсіі пачынаецца пасля завяршэння {maxLevelBase}-га этапу"
+" асноўнай часткі і дае магчымасць рэгулярна здабываць каштоўную гульнявую "
+"валюту. Прасоўванне па этапах элітнай часткі прагрэсіі не патрабуе наяўнасці"
+" палепшанага пропуска."
+
+msgid "tooltips/postProgress/header"
+msgstr "Элітная частка прагрэсіі"
+
+msgid "tooltips/prestigePoints/lose"
+msgstr "Паражэнне/Нічыя"
+
+msgid "tooltips/prestigePoints/loseWithoutDraw"
+msgstr "Паражэнне"
+
+msgid "tooltips/prestigePoints/topPlace"
+msgstr "Топ-{place} паводле ачкоў прэстыжу"
+
+msgid "tooltips/prestigePoints/win"
+msgstr "Перамога"
+
+msgid "tooltips/progression/freePoints/body/default"
+msgstr ""
+"Калі вы не выбралі ніводнага раздзела, то будзеце назапашваць "
+"неразмеркаваныя ачкі Баявога пропуска. Пазней вы зможаце ўкласці іх у любы "
+"актываваны раздзел да завяршэння бягучага сезона Баявога пропуска. У "
+"адваротным выпадку ачкі будуць спісаны."
+
+msgid "tooltips/progression/freePoints/body/marathon"
+msgstr ""
+"Калі вы не выбралі ніводнага раздзела, то будзеце назапашваць "
+"неразмеркаваныя ачкі Баявога пропуска. Пазней вы зможаце ўкласці іх у любы "
+"актываваны раздзел (акрамя дадатковага) да завяршэння бягучага сезона "
+"Баявога пропуска. У адваротным выпадку ачкі будуць спісаны."
+
+msgid "tooltips/progression/freePoints/body/resource"
+msgstr ""
+"Калі вы не выбралі ніводнага раздзела, то будзеце назапашваць "
+"неразмеркаваныя ачкі Баявога пропуска. Пазней вы зможаце ўкласці іх у любы "
+"актываваны раздзел да завяршэння бягучага сезона Баявога пропуска. У "
+"адваротным выпадку ачкі будуць спісаны."
+
+msgid "tooltips/progression/freePoints/header"
+msgstr "Неразмеркаваныя ачкі Баявога пропуска"
+
+msgid "tooltips/secondaryEntryPoint/disabled/22"
+msgstr ""
+"Баявы пропуск у Рангавых баях часова недаступны з тэхнічных прычын.\n"
+"Увесь прагрэс захаваны. Выбачайце за нязручнасці."
+
+msgid "tooltips/styleUpgrade/chosen/levelWord"
+msgstr "узроўню"
+
+msgid "tooltips/styleUpgrade/chosen/subtitle"
+msgstr "Пасуе для тэхнікі"
+
+msgid "tooltips/styleUpgrade/chosen/text"
+msgstr "Паляпшае стыль раздзела да %(level) %(levelWord)"
+
+msgid "tooltips/styleUpgrade/chosen/title"
+msgstr "Паляпшэнне стылю «{styleName}»"
+
+msgid "tooltips/styleUpgrade/notChosen/text"
+msgstr ""
+"Каб выбраць стыль, націсніце на кнопку «Выбраць стыль» у пачатку прагрэсіі "
+"раздзела Баявога пропуска."
+
+msgid "tooltips/styleUpgrade/notChosen/title"
+msgstr "Паляпшэнне прагрэсійнага стылю раздзела"
+
+msgid "tooltips/styleUpgrade/notChosen/warning"
+msgstr "Стыль раздзела яшчэ не выбраны."
+
+msgid "tooltips/styleUpgrade/paragraphBottom"
+msgstr ""
+"Калі вам не ўдасца палепшыць стыль да максімальнага ўзроўню падчас "
+"праходжання Баявога пропуска, з'явіцца магчымасць палепшыць яго на экране "
+"«Выгляд» у Гаражы адразу пасля заканчэння бягучага сезона."
+
+msgid "tooltips/styleUpgrade/paragraphTop"
+msgstr ""
+"Пасля завяршэння гэтага этапу выбраны стыль раздзела аўтаматычна палепшыцца "
+"на адзін узровень."
+
+msgid "tooltips/styles/descr"
+msgstr ""
+"Завяршыўшы фінальны этап, ва ўзнагароду вы зможаце выбраць адзін са стыляў."
+
+msgid "tooltips/styles/footer"
+msgstr ""
+"Выбраўшы фінальную ўзнагароду, уладальнікі палепшанага пропуска атрымаюць "
+"абодва стылі."
+
+msgid "tooltips/styles/name"
+msgstr "Пасуе да %(name)"
+
+msgid "tooltips/styles/style"
+msgstr "Стыль «%(name)»"
+
+msgid "tooltips/styles/title"
+msgstr "Адзін з двух трохмерных стыляў"
+
+msgid "tooltips/unlockBattlePass"
+msgstr ""
+"Купіце Палепшаны пропуск, каб атрымаць доступ да лінейкі палепшаных "
+"узнагарод."
+
+msgid "tooltips/vehiclePoints/award"
+msgstr "Узнагарода да дасягненне ліміту ачкоў"
+
+msgid "tooltips/vehiclePoints/comp7"
+msgstr ""
+"Гуляйце ў рэжыме «Націск», здабывайце ачкі за выніковыя дзеянні, "
+"прасоўвайцеся па этапах прагрэсіі Баявога пропуска і атрымлівайце "
+"ўзнагароды."
+
+msgid "tooltips/vehiclePoints/continuePlaying"
+msgstr "Для далейшага прасоўвання па этапах гуляйце на іншых машынах."
+
+msgid "tooltips/vehiclePoints/descr"
+msgstr ""
+"Гуляйце ў выпадковых баях (за выключэннем Генеральнай бітвы), здабывайце "
+"ачкі за выніковыя дзеянні, прасоўвайцеся па этапах прагрэсіі Баявога "
+"пропуска і атрымлівайце ўзнагароды."
+
+msgid "tooltips/vehiclePoints/mapbox"
+msgstr ""
+"Гуляйце ў рэжыме «Разведка боем», здабывайце ачкі за выніковыя дзеянні, "
+"прасоўвайцеся па этапах прагрэсіі Баявога пропуска і атрымлівайце "
+"ўзнагароды."
+
+msgid "tooltips/vehiclePoints/pointsObtained"
+msgstr "Дасягнуты ліміт ачкоў"
+
+msgid "tooltips/vehiclePoints/ranked"
+msgstr ""
+"Гуляйце ў Рангавых баях, здабывайце ачкі за выніковыя дзеянні, прасоўвайцеся"
+" па этапах прагрэсіі Баявога пропуска і атрымлівайце ўзнагароды."
+
+msgid "tooltips/vehiclePoints/special/descr"
+msgstr ""
+"Гуляючы на ключавой тэхніцы гэтага сезона, вы будзеце здабываць больш ачкоў "
+"прагрэсіі."
+
+msgid "tooltips/vehiclePoints/title"
+msgstr "Ачкі Баявога пропуска"
+
+msgid "trophyDeviceUpgradeConfim/cancel"
+msgstr "Скасаваць"
+
+msgid "trophyDeviceUpgradeConfim/message"
+msgstr "Характарыстыкі зменяцца:"
+
+msgid "trophyDeviceUpgradeConfim/submit"
+msgstr "Правесці наладку"
+
+msgid "trophyDeviceUpgradeConfim/submitTooltip"
+msgstr "Не стае крэдытаў на наладку"
+
+msgid "trophyDeviceUpgradeConfim/title"
+msgstr ""
+"Наладзіць працу абсталявання\n"
+"{deviceName}?"
+
+msgid "trophyDeviceUpgradeConfim/title/template"
+msgstr "«{deviceName}»"
+
+msgid "universalTankmanBonus"
+msgstr "Універсальны танкіст: %(name)s"

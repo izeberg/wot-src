@@ -26,6 +26,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_AM_055_DryRoots_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_AM_055_DryRoots_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_EU_040_StreetLamp_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
@@ -107,6 +108,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafSU_92_02_BrickFence_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw011_Transformator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
@@ -172,6 +176,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_040_StreetLamp_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
@@ -252,6 +257,9 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafSU_92_02_BrickFence_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw011_Transformator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
@@ -336,6 +344,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_AM_055_DryRoots_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_AM_055_DryRoots_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_EU_040_StreetLamp_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
@@ -417,6 +426,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafSU_92_02_BrickFence_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw011_Transformator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
@@ -482,6 +494,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_EU_040_StreetLamp_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
@@ -562,6 +575,9 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafSU_92_02_BrickFence_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw011_Transformator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>

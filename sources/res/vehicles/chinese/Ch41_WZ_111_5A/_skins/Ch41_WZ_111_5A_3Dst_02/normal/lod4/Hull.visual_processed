@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.051467 -1.500000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.051467 0.646382</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.544639 0.838671</row1>
+					<row2>0.000000 -0.838671 0.544639</row2>
+					<row3>-1.345224 -0.021624 3.626489</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.374607 -0.927184</row1>
+					<row2>-0.000000 -0.927184 -0.374607</row2>
+					<row3>-1.345224 -0.021640 -3.573647</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.544639 0.838671</row1>
+					<row2>0.000000 -0.838671 0.544639</row2>
+					<row3>1.345215 -0.019239 3.624170</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.374607 -0.927184</row1>
+					<row2>-0.000000 -0.927184 -0.374607</row2>
+					<row3>1.345215 -0.019321 -3.575965</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.258819 0.965926 -0.000000</row0>
+					<row1>-0.000000 0.000000 1.000000</row1>
+					<row2>0.965926 -0.258819 0.000000</row2>
+					<row3>1.637683 0.527874 -1.475192</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.258819 -0.965926 -0.000000</row0>
+					<row1>0.000000 0.000000 1.000000</row1>
+					<row2>-0.965926 -0.258819 0.000000</row2>
+					<row3>-1.635718 0.536406 -1.474466</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.004180 0.597112 0.704425</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/WZ_111_5A_3Dst_02_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/WZ_111_5A_3Dst_02_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/WZ_111_5A_3Dst_02_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/WZ_111_5A_3Dst_02_proxy_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.010621 0.120411 -0.168363</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.773472 -0.520943 -4.042827</min>
+		<max>1.752231 0.761765 3.706102</max>
+	</boundingBox>
+	<geometrySize>5168</geometrySize>
+	<minUVDensity>0.005651</minUVDensity>
+</root>

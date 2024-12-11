@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "domain/accuracy/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на агульную рэзультатыўнасць стральбы па "
+"праціўніку."
+
+msgid "domain/accuracy/name"
+msgstr "Эфектыўнасць стральбы"
+
+msgid "domain/armorPiercing/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на здольнасць тэхнікі прабіваць браню "
+"праціўніка."
+
+msgid "domain/armorPiercing/name"
+msgstr "Бронепрабівальнасць"
+
+msgid "domain/battleParams/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на каранёвыя механікі гульнёвага працэсу."
+
+msgid "domain/battleParams/name"
+msgstr "Параметры бою"
+
+msgid "domain/comp7SeasonModifiers/description"
+msgstr ""
+"Мадыфікатар, які павялічвае трываласць усёй тэхнікі ў рэжыме, паскарае "
+"падрыхтоўку рыштунку і зніжае агляд."
+
+msgid "domain/comp7SeasonModifiers/name"
+msgstr "Мадыфікатар Націску"
+
+msgid "domain/concealment/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на здольнасць тэхнікі пазбягаць "
+"выяўлення."
+
+msgid "domain/concealment/name"
+msgstr "Маскіроўка"
+
+msgid "domain/damageDealing/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на здольнасць тэхнікі прычыняць "
+"пашкоджанні."
+
+msgid "domain/damageDealing/name"
+msgstr "Прычыненне пашкоджанняў"
+
+msgid "domain/mobility/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на дынамічныя і хуткасныя характарыстыкі."
+
+msgid "domain/mobility/name"
+msgstr "Манеўранасць і дынаміка"
+
+msgid "domain/randomization/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на роскід пашкоджанняў і "
+"бронепрабівальнасці."
+
+msgid "domain/randomization/name"
+msgstr "Выпадковыя велічыні"
+
+msgid "domain/sustaining/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на аднаўленне пашкоджаных "
+"модуляў/экіпажа."
+
+msgid "domain/sustaining/name"
+msgstr "Рамонтапрыдатнасць"
+
+msgid "domain/visibility/description"
+msgstr ""
+"Комплекс параметраў, што ўплываюць на здольнасць тэхнікі выяўляць "
+"праціўніка."
+
+msgid "domain/visibility/name"
+msgstr "Агляд"
+
+msgid "domain/vitality/description"
+msgstr "Комплекс параметраў, што ўплываюць на выжывальнасць машыны."
+
+msgid "domain/vitality/name"
+msgstr "Абароненасць"
+
+msgid "modifier/name/aimingTime"
+msgstr "Час прыцэльвання"
+
+msgid "modifier/name/armorDamage"
+msgstr "Пашкоджанні ад стрэлу"
+
+msgid "modifier/name/autoreloadTime"
+msgstr "Час перанабівання тэхнікі з механізмам данабівання"
+
+msgid "modifier/name/battleLength"
+msgstr "Час бою"
+
+msgid "modifier/name/bkMaxSpeed"
+msgstr "Максімальная хуткасць руху назад"
+
+msgid "modifier/name/burstInterval"
+msgstr "Час перанабівання снарадаў у магазіне"
+
+msgid "modifier/name/clipInterval"
+msgstr "Час перанабівання паміж стрэламі ў магазіне"
+
+msgid "modifier/name/damageRandomization"
+msgstr "Роскід пашкоджанняў"
+
+msgid "modifier/name/deviceDamage"
+msgstr "Пашкоджанні модуляў"
+
+msgid "modifier/name/dispFactorAfterShot"
+msgstr "Роскід пасля стрэлу"
+
+msgid "modifier/name/dispFactorChassisMovement"
+msgstr "Роскід падчас руху"
+
+msgid "modifier/name/dispFactorChassisRotation"
+msgstr "Роскід падчас павароту корпуса"
+
+msgid "modifier/name/dispFactorTurretRotation"
+msgstr "Роскід падчас павароту вежы"
+
+msgid "modifier/name/dispFactorWhileGunDamaged"
+msgstr "Роскід з пашкоджанай гарматай"
+
+msgid "modifier/name/enginePower"
+msgstr "Магутнасць рухавіка"
+
+msgid "modifier/name/envChassisDamage"
+msgstr "Пашкоджанні шасі пры падзенні"
+
+msgid "modifier/name/envHullDamage"
+msgstr "Пашкоджанні корпуса пры падзенні"
+
+msgid "modifier/name/envModuleDamageChance"
+msgstr "Пашкоджанні іншых модуляў пры падзенні"
+
+msgid "modifier/name/envTankmanDamageChance"
+msgstr "Пашкоджанні экіпажа пры падзенні"
+
+msgid "modifier/name/equipmentCooldown"
+msgstr "Перазарадка рыштунку"
+
+msgid "modifier/name/fwMaxSpeed"
+msgstr "Максімальная хуткасць руху наперад"
+
+msgid "modifier/name/gravityFactor"
+msgstr "Гравітацыя тэхнікі"
+
+msgid "modifier/name/gunRotationSpeed"
+msgstr "Хуткасць перасоўвання гарматы ў нерухомай рубцы"
+
+msgid "modifier/name/invisibilityOnMove"
+msgstr "Маскіроўка падчас руху"
+
+msgid "modifier/name/invisibilityOnStill"
+msgstr "Маскіроўка на месцы"
+
+msgid "modifier/name/normalizationAngle"
+msgstr "Нармалізацыя снарадаў"
+
+msgid "modifier/name/piercingPowerFirst"
+msgstr "Бронепрабівальнасць на 100 метраў"
+
+msgid "modifier/name/piercingPowerLast"
+msgstr "Бронепрабівальнасць на 500 метраў"
+
+msgid "modifier/name/piercingPowerRandomization"
+msgstr "Роскід бронепрабівальнасці"
+
+msgid "modifier/name/radioDistance"
+msgstr "Далёкасць радыёсувязі"
+
+msgid "modifier/name/reloadTime"
+msgstr "Час перанабівання"
+
+msgid "modifier/name/repairSpeed"
+msgstr "Хуткасць рамонту"
+
+msgid "modifier/name/ricochetAngle"
+msgstr ""
+"Вугал рыкашэту снарадаў. Чым вастрэйшы вугал, тым больш верагодны рыкашэт"
+
+msgid "modifier/name/rotationSpeedOnStill"
+msgstr "Хуткасць павароту корпуса"
+
+msgid "modifier/name/shellGravity"
+msgstr "Гравітацыя снарадаў"
+
+msgid "modifier/name/shellSpeed"
+msgstr "Хуткасць снарадаў"
+
+msgid "modifier/name/shotDispersionRadius"
+msgstr "Роскід на 100 метраў"
+
+msgid "modifier/name/turretPressureDamage"
+msgstr "Пашкоджанні ад ціску сарванай вежы"
+
+msgid "modifier/name/turretRammingDamage"
+msgstr "Пашкоджанні ад сарванай вежы"
+
+msgid "modifier/name/turretRotationSpeed"
+msgstr "Хуткасць павароту вежы"
+
+msgid "modifier/name/vehicleAoIRadius"
+msgstr "Далёкасць адрысоўкі"
+
+msgid "modifier/name/vehicleHealth"
+msgstr "Трываласць"
+
+msgid "modifier/name/vehiclePressureDamage"
+msgstr "Пашкоджанні ад ціску"
+
+msgid "modifier/name/vehicleRammingDamage"
+msgstr "Пашкоджанні ад тарана"
+
+msgid "modifier/name/visionMinRadius"
+msgstr "Радыус гарантаванага выяўлення"
+
+msgid "modifier/name/visionRadius"
+msgstr "Агляд"
+
+msgid "modifier/name/visionTime"
+msgstr "Бачнасць пасля выяўлення"
+
+msgid "modifiersDomainTooltip/restrict/max"
+msgstr "не&nbsp;больш за&nbsp;{value}"
+
+msgid "modifiersDomainTooltip/restrict/min"
+msgstr "не&nbsp;менш за&nbsp;{value}"
+
+msgid "modifiersDomainTooltip/restrict/oneRestriction"
+msgstr "(але {restriction})"
+
+msgid "modifiersDomainTooltip/restrict/twoRestriction"
+msgstr "(але {min}, {max})"
+
+msgid "modifiersDomainTooltip/subtitle/plural"
+msgstr "Мадыфікатар уплывае на параметры:"
+
+msgid "modifiersDomainTooltip/subtitle/single"
+msgstr "Мадыфікатар уплывае на параметр:"

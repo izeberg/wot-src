@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Door_1</identifier>
+				<transform>
+					<row0>1.000000 0.000132 0.000282</row0>
+					<row1>-0.000311 0.401143 0.916015</row1>
+					<row2>0.000007 -0.916015 0.401143</row2>
+					<row3>-0.171634 0.604970 -0.955477</row3>
+				</transform>
+				<node>
+					<identifier>Door_2</identifier>
+					<transform>
+						<row0>1.000000 0.000001 0.000000</row0>
+						<row1>-0.000000 1.000000 0.000001</row1>
+						<row2>-0.000000 -0.000001 1.000000</row2>
+						<row3>0.091183 0.001834 0.032598</row3>
+					</transform>
+					<node>
+						<identifier>Door_3</identifier>
+						<transform>
+							<row0>1.000000 0.000001 0.000001</row0>
+							<row1>0.000000 1.000000 0.000001</row1>
+							<row2>-0.000000 -0.000001 1.000000</row2>
+							<row3>-0.118605 0.002064 0.084883</row3>
+						</transform>
+						<node>
+							<identifier>Door_4</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000001</row1>
+								<row2>0.000000 -0.000001 1.000000</row2>
+								<row3>0.000010 -0.001844 -0.076842</row3>
+							</transform>
+							<node>
+								<identifier>Door_4_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 -0.000311 0.000007</row0>
+									<row1>0.000132 0.401141 -0.916016</row1>
+									<row2>-0.000282 -0.916016 -0.401141</row2>
+									<row3>0.199235 0.630448 0.896805</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Door_3_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 -0.000311 0.000007</row0>
+								<row1>0.000132 0.401141 -0.916016</row1>
+								<row2>-0.000282 -0.916016 -0.401141</row2>
+								<row3>0.199246 0.628602 0.819964</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Door_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000311 0.000007</row0>
+							<row1>0.000132 0.401142 -0.916016</row1>
+							<row2>-0.000282 -0.916016 -0.401142</row2>
+							<row3>0.080641 0.630666 0.904848</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Door_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000311 0.000007</row0>
+						<row1>0.000132 0.401143 -0.916015</row1>
+						<row2>-0.000282 -0.916015 -0.401143</row2>
+						<row3>0.171824 0.632499 0.937446</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Extractor</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000221 0.403987 -0.483925</row3>
+				</transform>
+				<node>
+					<identifier>Ejector</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 -0.000000 1.000000</row2>
+						<row3>-0.000568 0.005895 -0.486438</row3>
+					</transform>
+					<node>
+						<identifier>Ejector_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000347 -0.409883 0.970363</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Extractor_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.000221 -0.403987 0.483925</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Door_1_BlendBone</node>
+		<node>Door_2_BlendBone</node>
+		<node>Door_3_BlendBone</node>
+		<node>Door_4_BlendBone</node>
+		<node>Ejector_BlendBone</node>
+		<node>Extractor_BlendBone</node>
+		<geometry>
+			<vertices>turret_anim_Shape.vertices</vertices>
+			<primitive>turret_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/T62A_3dst_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/T62A_3dst_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/T62A_3dst_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R87_T62A/_skins/R87_T62A_3Dst/T62A_3dst_turret_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.028156 0.546825 0.828948</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.216920 0.381671 -1.173970</min>
+		<max>0.160609 0.711979 -0.483925</max>
+	</boundingBox>
+	<geometrySize>43532</geometrySize>
+	<minUVDensity>0.029200</minUVDensity>
+</root>

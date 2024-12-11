@@ -4,4 +4,8 @@
 	<parent>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.284539 -0.323367 -0.914382</min>
+		<max>0.286216 0.310909 4.343517</max>
+	</visibilityBox>
 </root>

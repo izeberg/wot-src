@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch74_WZ_57_I/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.649957 0.000159 -3.584620</min>
+		<max>1.649965 1.175948 3.671558</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch74_WZ_57_I/normal/lod3/Chassis</nodefullVisual>
+</root>

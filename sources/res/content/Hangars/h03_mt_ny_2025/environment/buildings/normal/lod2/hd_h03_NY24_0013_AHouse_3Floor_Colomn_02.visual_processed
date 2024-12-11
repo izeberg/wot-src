@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/interior_mapping.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						g_albedoMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/Interiors_hd_h03_NY24_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/Interiors_hd_h03_NY24_PM.dds</Texture>
+					</property>
+					<property>
+						g_platesMap
+						<Texture>content/Hangars/h03_mt_ny_2025/environment/buildings/Interiors_hd_h03_NY24_DM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-5.119943 8.477045 13.880064</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-38.532539 -2.262855 -6.178939</min>
+		<max>28.292654 19.216946 33.939068</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>264</geometrySize>
+	<minUVDensity>0.020491</minUVDensity>
+</root>

@@ -1,0 +1,274 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "activation/ActivateConfirm"
+msgstr "Актываваць"
+
+msgid "activation/BuyAndActivateConfirm"
+msgstr "Купіць і задзейнічаць"
+
+msgid "activation/activateBonus"
+msgstr "Задзейнічаць рэзерв: %(bonusDescription)s"
+
+msgid "activation/activateButton"
+msgstr "Актываваць"
+
+msgid "activation/activateButtonClan"
+msgstr "Да Ўмацаванага раёна"
+
+msgid "activation/battleXPDescription"
+msgstr "Бонус да баявога досведу на 1 гадз"
+
+msgid "activation/battleXPTitle"
+msgstr "Баявы досвед"
+
+msgid "activation/bonus"
+msgstr "БОНУС: +%(bonus)%"
+
+msgid "activation/buyAndActivateBoosterTitle"
+msgstr ""
+"Набыць і задзейнічаць палепшаны асабісты рэзерв, які дае %(boosterBonus)s да"
+" %(boosterTerm)s?"
+
+msgid "activation/buyGoldConfirm"
+msgstr "Дакупіць золата"
+
+msgid "activation/buyGoldTitle"
+msgstr ""
+"Дакупіць золата, неабходнае для набыцця палепшанага асабістага рэзерву, які "
+"дае %(boosterBonus)s да %(boosterTerm)s?"
+
+msgid "activation/buyGoldWarning"
+msgstr ""
+"{orange_Open}Для набыцця палепшанага асабістага рэзерву не стае "
+"золата:{orange_Close}"
+
+msgid "activation/clanBoostersDescription"
+msgstr "Крэдыты і баявы досвед"
+
+msgid "activation/clanBoostersDescriptionCrewAndFree"
+msgstr "Камбінаваны досвед"
+
+msgid "activation/clanBoostersTitle"
+msgstr "Кланавыя рэзервы"
+
+msgid "activation/clanLeaderActivateBonus"
+msgstr "Задзейнічаць рэзерв ва Ўмацаваным раёне"
+
+msgid "activation/clanMemberViewBonus"
+msgstr "Паглядзець ва Ўмацаваным раёне"
+
+msgid "activation/comboXPDescription"
+msgstr "Бонус да камбінаванага досведу на 1 гадз"
+
+msgid "activation/comboXPTitle"
+msgstr "Камбінаваны досвед"
+
+msgid "activation/creditsDescription"
+msgstr "Бонус да крэдытаў на 1 гадз"
+
+msgid "activation/creditsTitle"
+msgstr "Крэдыты"
+
+msgid "activation/frontLineXPDescription"
+msgstr "Бонус да франтавога досведу на 1 гадз"
+
+msgid "activation/frontLineXPTitle"
+msgstr "Франтавы досвед"
+
+msgid "activation/informationButton"
+msgstr "ІНФАРМАЦЫЯ"
+
+msgid "activation/onlyOnceHint"
+msgstr "ВЫБЕРЫЦЕ ПРЭМІЮ"
+
+msgid "activation/price"
+msgstr "Кошт:"
+
+msgid "activation/subTitle/main"
+msgstr ""
+"Задзейнічайце {whiteSpanish_Open}да трох асабістых "
+"рэзерваў{whiteSpanish_Close}, каб здабываць больш крэдытаў і досведу ў баі. "
+"Больш асабістых рэзерваў можна набыць у %(store)s."
+
+msgid "activation/subTitle/store"
+msgstr "Краме"
+
+msgid "activation/terms/booster_credits"
+msgstr "крэдытаў"
+
+msgid "activation/terms/booster_fl_xp"
+msgstr "франтавога досведу"
+
+msgid "activation/terms/booster_free_xp_and_crew_xp"
+msgstr "камбінаванага досведу"
+
+msgid "activation/terms/booster_xp"
+msgstr "баявога досведу"
+
+msgid "activation/title"
+msgstr "АСАБІСТЫЯ РЭЗЕРВЫ"
+
+msgid "activation/upgradeBoosterDescription"
+msgstr ""
+"{yellow_Open}Задзейнічаны стандартны асабісты рэзерв, які дае "
+"%(previousBoosterBonus)s да %(previousBoosterTerm)s, будзе "
+"спісаны.{yellow_Close}"
+
+msgid "activation/upgradeBoosterTitle"
+msgstr ""
+"Задзейнічаць палепшаны асабісты рэзерв, які дае%(boosterBonus)s да "
+"%(boosterTerm)s, замест задзейнічанага стандартнага асабістага рэзерву?"
+
+msgid "battleView/notice"
+msgstr ""
+"Вы атрымаеце бонус ад актываванага асабістага рэзерву, нават калі тэрмін яго дзеяння скончыцца падчас бою.\n"
+"Актываваць асабістыя рэзервы можна непасрэдна ў баі, пакуль не скончыўся час іх дзеяння."
+
+msgid "battleView/title"
+msgstr "Выкарыстанне асабістых рэзерваў"
+
+msgid "booster/useby/timeLeft/days"
+msgstr "%(d)s д"
+
+msgid "booster/useby/timeLeft/hours"
+msgstr "%(d)s гадз"
+
+msgid "booster/useby/timeLeft/minutes"
+msgstr "%(d)s хв"
+
+msgid "conversionView/battleXPSubtitle"
+msgstr "Канвертацыя баявога досведу"
+
+msgid "conversionView/battleXPTitle"
+msgstr "Баявы досвед"
+
+msgid "conversionView/boosterDescription"
+msgstr "%(value)s на %(effectTime)s"
+
+msgid "conversionView/creditsSubtitle"
+msgstr "Канвертацыя крэдытаў"
+
+msgid "conversionView/creditsTitle"
+msgstr "Крэдыты"
+
+msgid "conversionView/crewAndFreeXPSubtitle"
+msgstr "Канвертацыя досведу экіпажа і вольнага досведу"
+
+msgid "conversionView/crewFreeXPTitle"
+msgstr "Камбінаваны досвед"
+
+msgid "conversionView/crewXPSubtitle"
+msgstr "Канвертацыя досведу экіпажа"
+
+msgid "conversionView/freeXPSubtitle"
+msgstr "Канвертацыя вольнага досведу"
+
+msgid "conversionView/mainDescription"
+msgstr ""
+"Вашы ранейшыя асабістыя рэзервы канвертаваныя ў новыя. Час дзеяння ўсіх "
+"новых асабістых рэзерваў складае 1 гадзіну. Тут вы можаце больш даведацца "
+"пра канвертацыю."
+
+msgid "conversionView/mainTitle"
+msgstr "КАНВЕРТАЦЫЯ"
+
+msgid "conversionView/noConversion"
+msgstr "У вас няма рэзерваў, якія можна канвертаваць"
+
+msgid "depot/buyButton"
+msgstr "Да куплі"
+
+msgid "disabledReserveTooltip/text"
+msgstr "Ужо задзейнічаны іншы рэзерв гэтага тыпу."
+
+msgid "finishedReserveTooltip/text"
+msgstr ""
+"Тэрмін дзеяння гэтага асабістага рэзерву скончыўся падчас бою, аднак вы "
+"атрымаеце выніковы бонус."
+
+msgid "hangarEntry/minute"
+msgstr "%(minutesLeft)хв"
+
+msgid "hangarEntry/onlyOnceHint"
+msgstr "ВЫКАРЫСТАННЕ АСАБІСТЫХ РЭЗЕРВАЎ"
+
+msgid "hangarEntryTooltip/bonus"
+msgstr "+%(bonus)%"
+
+msgid "hangarEntryTooltip/tooltipDisabled"
+msgstr "Задзейнічаныя асабістыя резервы недаступныя ў гэтым рэжыме."
+
+msgid "intro/buttons/close"
+msgstr "Так!"
+
+msgid "intro/buttons/conversionInfo"
+msgstr "Пра канвертацыю"
+
+msgid "intro/pages/description1"
+msgstr ""
+"Задзейнічайце асабістыя рэзервы проста ў Гаражы. Цяпер можна адначасова "
+"задзейнічаць усе тры тыпы рэзерваў. Бонусы да вольнага досведу і досведу "
+"экіпажа былі аб'яднаныя ў адзін, які дае прыбаўку як да вольнага досведу, "
+"так і для досведу экіпажа за бой."
+
+msgid "intro/pages/description2"
+msgstr ""
+"Палепшаныя асабістыя рэзервы даюць павялічаны бонус да крэдытаў і досведу за"
+" бой. Набыць іх можна за золата."
+
+msgid "intro/pages/description3"
+msgstr ""
+"Даступныя для выкарыстання пэўны час. Калі ён скончыцца, асабістыя рэзервы будуць спісаныя з вашага акаўнту.\n"
+"{yellow_Open}Звычайныя рэзервы нельга задзейнічаць у гэты перыяд.{yellow_Close}"
+
+msgid "intro/pages/description4"
+msgstr ""
+"Націсніце клавішу TAB або B, каб задзейнічаць асабістыя рэзервы ў баі.\n"
+"{yellow_Open}Калі тэрмін дзеяння асабістага рэзерву скончыцца падчас бою, вы атрымаеце бонус ад гэтага рэзерву да рэсурсаў, здабытых у гэтым баі.{yellow_Close}"
+
+msgid "intro/pages/description5"
+msgstr ""
+"У межах новай сістэмы ўсе вашы ранейшыя асабістыя рэзервы былі канвертаваныя"
+" ў новыя. Ёсць два тыпы рэзерваў: стандартныя і палепшаныя, а час іх дзеяння"
+" складае 1 гадзіну. Асабістыя рэзервы з бонусамі да вольнага досведу і "
+"досведу экіпажа былі аб'яднаныя ў адзін тып, які дае бонус як да вольнага "
+"досведу, так і да досведу экіпажа за бой."
+
+msgid "intro/pages/title1"
+msgstr "ТРЫ ТЫПЫ АСАБІСТЫХ РЭЗЕРВАЎ"
+
+msgid "intro/pages/title2"
+msgstr "БОЛЬШАЯ ПРЭМІЯ"
+
+msgid "intro/pages/title3"
+msgstr "АСАБІСТЫЯ РЭЗЕРВЫ З АБМЕЖАВАНЫМ ТЭРМІНАМ ВЫКАРЫСТАННЯ"
+
+msgid "intro/pages/title4"
+msgstr "ВЫКАРЫСТАННЕ ПАДЧАС БОЮ"
+
+msgid "intro/pages/title5"
+msgstr "КАНВЕРТАЦЫЯ"
+
+msgid "intro/title"
+msgstr "АСАБІСТЫЯ РЭЗЕРВЫ 2.0"
+
+msgid "noPaidReserveTooltip/text"
+msgstr ""
+"Вы не маеце асабістых рэзерваў гэтага тыпу на Складзе. Іх можна дакупіць "
+"пазней або задзейнічаць у Гаражы."
+
+msgid "noReserveTooltip/infoText"
+msgstr ""
+"Выконвайце задачы і ўдзельнічайце у гульнёвых падзеях, каб атрымаць "
+"асабістыя рэзервы."
+
+msgid "noReserveTooltip/text"
+msgstr "Вы не маеце асабістых рэзерваў гэтага тыпу на Складзе."

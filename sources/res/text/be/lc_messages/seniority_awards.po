@@ -1,0 +1,267 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "multiOpenView/applyLabel"
+msgstr "Так!"
+
+msgid "multiOpenView/boxesInStorage"
+msgstr "Скрынак у наяўнасці: {count}"
+
+msgid "multiOpenView/boxesNotAvailable"
+msgstr "Скрынкі скончыліся"
+
+msgid "multiOpenView/openBoxesLabel"
+msgstr "Адкрыць {count} шт."
+
+msgid "multiOpenView/skipBtn"
+msgstr "ПРАПУСЦІЦЬ АНІМАЦЫЮ"
+
+msgid "multiOpenView/title"
+msgstr "Віншуем!"
+
+msgid "notifications/description"
+msgstr ""
+"Скрынкі з заслужанай узнагародай — у падарунак за выслугу гадоў! Адкрывайце "
+"і забірайце змесціва."
+
+msgid "notifications/header"
+msgstr "Заслужаная ўзнагарода"
+
+msgid "notifications/quest/button"
+msgstr "Забраць узнагароды"
+
+msgid "notifications/quest/title"
+msgstr ""
+"Узнагароды па выслузе гадоў\n"
+"чакаюць вас!"
+
+msgid "notifications/tokens/button"
+msgstr "У Краму"
+
+msgid "notifications/tokens/timeLeft/days"
+msgstr "%(day)s д %(hour)s гадз"
+
+msgid "notifications/tokens/timeLeft/hours"
+msgstr "%(hour)s гадз %(min)s хв"
+
+msgid "notifications/tokens/timeLeft/lessMin"
+msgstr "менш за хвіліну"
+
+msgid "notifications/tokens/timeLeft/min"
+msgstr "%(min)s хв"
+
+msgid "notifications/tokens/timer"
+msgstr "Да спісання жэтонаў: %(timeLeft)s"
+
+msgid "notifications/tokens/title"
+msgstr ""
+"Мяняйце жэтоны па выслузе\n"
+"гадоў на жаданую ўзнагароду!"
+
+msgid "openBoxView/autoOpenTooltip/body"
+msgstr ""
+"{date} мы адкрыем за вас скрынкі з заслужанай узнагародай і выдадзім "
+"узнагароды."
+
+msgid "openBoxView/autoOpenTooltip/header"
+msgstr "Аўтаматычнае адкрыццё"
+
+msgid "openBoxView/boxesInStorage"
+msgstr "Скрынак у наяўнасці: {count}"
+
+msgid "openBoxView/description"
+msgstr ""
+"Скрынкі з заслужанай узнагародай — у падарунак! Адкрывайце і забірайце "
+"змесціва."
+
+msgid "openBoxView/header"
+msgstr "Заслужаная ўзнагарода"
+
+msgid "openBoxView/openBoxesLabel"
+msgstr "Адкрыць {count} шт."
+
+msgid "rewardsScreen/showGiftButtonLabel"
+msgstr "Да ўзнагароды"
+
+msgid "rewardsView/applyBtn"
+msgstr "Так!"
+
+msgid "rewardsView/exchangeCoins"
+msgstr "Абмяняйце жэтоны на ўзнагароды ў Краме."
+
+msgid "rewardsView/gotoRewardsBtn"
+msgstr "У Краму"
+
+msgid "rewardsView/lootBox/descr"
+msgstr "Адкрыйце і забярыце змесціва!"
+
+msgid "rewardsView/lootBox/multiplier"
+msgstr "x"
+
+msgid "rewardsView/lootBox/title"
+msgstr ""
+"скрынак\n"
+"з заслужанай\n"
+"узнагародай"
+
+msgid "rewardsView/moreRewardsBtn"
+msgstr "Больш узнагарод!"
+
+msgid "rewardsView/nextBtn"
+msgstr "Да наступнай узнагароды (%(count)s)"
+
+msgid "rewardsView/openBtn"
+msgstr "Адкрыць"
+
+msgid "rewardsView/sacoin/counter"
+msgstr "×%(count)s"
+
+msgid "rewardsView/subTitle/AT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У %(gradientStart)sАЛЬФА-ТЭСТАВАННІ%(gradientEnd)s"
+
+msgid "rewardsView/subTitle/BT"
+msgstr "УЗНАГАРОДА ЗА ЎДЗЕЛ У %(gradientStart)sБЕТА-ТЭСТАВАННІ%(gradientEnd)s"
+
+msgid "rewardsView/subTitle/Y0"
+msgstr "УЗНАГАРОДА ЗА БАЯВЫЯ ЗАСЛУГІ"
+
+msgid "rewardsView/subTitle/Y1"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s1 ГОД%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y10"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s10 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y10_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 10 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y11"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s11 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y11_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 11 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y12"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s12 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y12_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 12 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y13"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s13 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y13_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЭТА-ТЭСЦЕ І\n"
+"13 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y14"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s14 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y1_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 1 ГОД У СТРАІ"
+
+msgid "rewardsView/subTitle/Y2"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s2 ГАДЫ%(gradientEnd)s Ў СТРАІ"
+
+msgid "rewardsView/subTitle/Y2_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 2 ГАДЫ Ў СТРАІ"
+
+msgid "rewardsView/subTitle/Y3"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s3 ГАДЫ%(gradientEnd)s Ў СТРАІ"
+
+msgid "rewardsView/subTitle/Y3_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 3 ГАДЫ Ў СТРАІ"
+
+msgid "rewardsView/subTitle/Y4"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s4 ГАДЫ%(gradientEnd)s Ў СТРАІ"
+
+msgid "rewardsView/subTitle/Y4_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 4 ГАДЫ Ў СТРАІ"
+
+msgid "rewardsView/subTitle/Y5"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s5 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y5_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 5 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y6"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s6 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y6_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 6 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y7"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s7 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y7_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 7 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y8"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s8 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y8_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 8 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/Y9"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s9 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y9_BT"
+msgstr ""
+"УЗНАГАРОДА ЗА ЎДЗЕЛ У БЕТА-ТЭСТАВАННІ\n"
+"І 9 ГАДОЎ У СТРАІ"
+
+msgid "rewardsView/subTitle/otherRewards"
+msgstr "Таксама атрымана:"
+
+msgid "rewardsView/textButton/back"
+msgstr "НАЗАД"
+
+msgid "rewardsView/textButton/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rewardsView/textButton/goto"
+msgstr "ДА ТЭХНІКІ"
+
+msgid "rewardsView/title"
+msgstr "ВІНШУЕМ!"
+
+msgid "specialItem/body"
+msgstr ""
+"Выдаюцца за баявыя заслугі. Пасля завяршэння падзеі рэшта жэтонаў будзе "
+"спісаная."
+
+msgid "specialItem/header"
+msgstr "%(count)s шт. жэтонаў за выслугу гадоў"
+
+msgid "tooltip/restrictedMode"
+msgstr "Аперацыя часова недаступная. Паспрабуйце пазней."

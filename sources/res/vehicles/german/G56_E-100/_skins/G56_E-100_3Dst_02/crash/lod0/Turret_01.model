@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/crash/lod1/Turret_01</parent>
+	<extent>32</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.568061 -0.058344 -2.515746</min>
+		<max>2.503386 1.672710 2.071956</max>
+	</visibilityBox>
+</root>

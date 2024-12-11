@@ -1,0 +1,924 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "PersonalMissionAwardView/award/freeSheet"
+msgstr "Атрыманы бланк загаду!"
+
+msgid "PersonalMissionAwardView/bottomTabs/awards/additionalAwards"
+msgstr "Узнагароды за выкананне з адзнакай усіх задач"
+
+msgid "PersonalMissionAwardView/bottomTabs/awards/mainAwards"
+msgstr "Асноўныя ўзнагароды"
+
+msgid "PersonalMissionAwardView/subTitle"
+msgstr "Націсніце на сваё імя ў гульні, каб выбраць нашыўку."
+
+msgid "PersonalMissionAwardView/title"
+msgstr "Атрыманы нашыўкі за выкананне аперацый!"
+
+msgid "PersonalMissionAwardView/title/one"
+msgstr "Атрымана нашыўка за аперацыю «%(vehicleName)s»!"
+
+msgid "PersonalMissionAwardView/title/perfect"
+msgstr "Атрыманы нашыўкі за выкананне з адзнакай!"
+
+msgid "PersonalMissionFirstEntryView/acknowledgeBtn"
+msgstr "Так!"
+
+msgid "PersonalMissionFirstEntryView/detailedDescription/btnBack"
+msgstr "НАЗАД"
+
+msgid "PersonalMissionFirstEntryView/item0/blocks/0/descr"
+msgstr ""
+"Задачы, умовы якіх трэба выканаць за адзін бой.\n"
+"\n"
+"• Каб завяршыць задачу, выканайце асноўную ўмову.\n"
+"• Пры выкананні задачы з адзнакай вы атрымаеце дадатковую ўзнагароду."
+
+msgid "PersonalMissionFirstEntryView/item0/blocks/0/title"
+msgstr "У рамках аднаго бою"
+
+msgid "PersonalMissionFirstEntryView/item0/blocks/1/descr"
+msgstr ""
+"Ход выканання задачы складваецца за ўсе баі.\n"
+"\n"
+"• Пры выкананні ў баі дадатковай умовы ход выканання асноўнай умовы будзе памножаны на пэўнае значэнне.\n"
+"• Выканайце дадатковую ўмову ўказаную колькасць разоў, каб атрымаць за яе ўзнагароду."
+
+msgid "PersonalMissionFirstEntryView/item0/blocks/1/title"
+msgstr "Накапляльныя"
+
+msgid "PersonalMissionFirstEntryView/item0/blocks/2/descr"
+msgstr ""
+"Задачы, на выкананне якіх даецца пэўная колькасць спроб. Калі пастаўленая ўмова не была выканана, ход выканання абнуліцца, і трэба будзе пачынаць спачатку.\n"
+"\n"
+"• Дадатковая ўмова, за якую даецца ўзнагарода, аналагічная асноўнай, аднак патрабуе дасягнуць значна лепшага выніку."
+
+msgid "PersonalMissionFirstEntryView/item0/blocks/2/title"
+msgstr "За серыю баёў"
+
+msgid "PersonalMissionFirstEntryView/item0/descr"
+msgstr ""
+"З'явіліся новыя тыпы задач, якія выконваюцца за серыю баёў, а не за адзін, "
+"як раней."
+
+msgid "PersonalMissionFirstEntryView/item0/header"
+msgstr "1. Задачы"
+
+msgid "PersonalMissionFirstEntryView/item0/innerDescr"
+msgstr "У залежнасці ад аперацыі задачы маюць пэўныя крытэрыі выканання ўмоў."
+
+msgid "PersonalMissionFirstEntryView/item0/warning"
+msgstr ""
+"Калі вы зменіце (скасуеце) задачу гэтага тыпу, увесь ход яе выканання "
+"абнуліцца, і вам давядзецца пачынаць нанова."
+
+msgid "PersonalMissionFirstEntryView/item1/blocks/0/descr"
+msgstr ""
+"Ход выканання задач паказваецца ў баявым інтэрфейсе.\n"
+"\n"
+"Не забывайцеся, што ход выканання некаторых умоў падлічваецца па заканчэнні бою. Некаторыя задачы трэба выконваць толькі на канкрэтным тыпе тэхнікі, але без абмежавання дзяржавы, а іншыя — на тэхніцы пэўнай дзяржавы."
+
+msgid "PersonalMissionFirstEntryView/item1/blocks/0/title"
+msgstr "Індыкатар ходу выканання ў баі"
+
+msgid "PersonalMissionFirstEntryView/item1/blocks/1/descr"
+msgstr ""
+"У некаторых задач ёсць дадатковыя абмежаванні, якія гулец павінен улічваць у баі, а менавіта:\n"
+"\n"
+"• Пэўны час на выкананне ўмоў (або іх часткі).\n"
+"• Абмежаванне па мінімальным значэнні: напрыклад, калі гулец прычыніць пашкоджанняў менш, чым патрабуецца, у ход выканання асноўнай умовы пойдзе нуль незалежна ад таго, колькі фактычна пашкоджанняў ён прычыніў."
+
+msgid "PersonalMissionFirstEntryView/item1/blocks/1/title"
+msgstr "Абмежаванні"
+
+msgid "PersonalMissionFirstEntryView/item1/blocks/2/descr"
+msgstr ""
+"У баі заўсёды можна, націснуўшы на клавішу Tab, адкрыць экран з падрабязным апісаннем задачы, якая зараз выконваецца.\n"
+"\n"
+"Такім чынам, прама ў баі заўсёды можна праглядзець умову, калі вы забылі, што трэба рабіць для яе выканання."
+
+msgid "PersonalMissionFirstEntryView/item1/blocks/2/title"
+msgstr "Дасочванне"
+
+msgid "PersonalMissionFirstEntryView/item1/descr"
+msgstr "Цяпер за ходам выканання задач можна сачыць у баі."
+
+msgid "PersonalMissionFirstEntryView/item1/header"
+msgstr "2. Ход выканання"
+
+msgid "PersonalMissionFirstEntryView/item1/innerDescr"
+msgstr "За ходам выканання задач можна дасочваць прама падчас бою."
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/0/descr"
+msgstr ""
+"Некаторыя задачы павінны выконвацца на канкрэтным тыпе тэхнікі (мадэль і "
+"дзяржава не маюць значэння)."
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/0/title"
+msgstr "Тып тэхнікі"
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/1/descr"
+msgstr ""
+"Частка задач патрабуе ўступаць у бой на пэўнай тэхніцы ўказаных дзяржаў. Усяго ёсць 4 аб'яднанні, паводле якіх размеркаваны задачы:\n"
+"\n"
+"• «Саюз»: СССР, Кітай.\n"
+"• «Блок»: Германія, Японія.\n"
+"• «Альянс»: ЗША, Вялікабрытанія, Польшча.\n"
+"• «Кааліцыя»: Францыя, Швецыя, Чэхаславакія, Італія."
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/1/title"
+msgstr "Аб'яднанні"
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/2/descr"
+msgstr ""
+"Кожная аперацыя мае свае патрабаванні па мінімальным узроўні машыны, на якой можна выконваць задачы:\n"
+"\n"
+"• StuG IV: IV–X\n"
+"• T28 HTC: V–X\n"
+"• Excalibur: VI–X\n"
+"• T 55A: VI–X\n"
+"• Аб'ект 260: VI–X\n"
+"• Chimera: VII–X\n"
+"• Аб'ект 279 (р): VIII–X"
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/2/title"
+msgstr "Узровень машыны"
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/3/descr"
+msgstr ""
+"Усе задачы даступны для выканання толькі ў рэжыме «Выпадковы бой» і ва ўсіх "
+"яго тыпах."
+
+msgid "PersonalMissionFirstEntryView/item2/blocks/3/title"
+msgstr "Рэжым «Выпадковы бой»"
+
+msgid "PersonalMissionFirstEntryView/item2/descr"
+msgstr ""
+"У кампаніі «Другі фронт» замест тыпаў тэхнікі з'явіліся нацыянальныя "
+"аб'яднанні."
+
+msgid "PersonalMissionFirstEntryView/item2/header"
+msgstr "3. Умовы"
+
+msgid "PersonalMissionFirstEntryView/item2/innerDescr"
+msgstr ""
+"У кампаніях ёсць як агульныя ўмовы, так і абмежаванні, якія накладаюцца на "
+"гульца пры выкананні задач."
+
+msgid "PersonalMissionFirstEntryView/item2/warning"
+msgstr "Уважліва сачыце за тым, якія патрабаванні мае задача."
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/0/descr"
+msgstr ""
+"Галоўная ўзнагарода — унікальныя машыны, якія нельга атрымаць іншы спосабам. Вось іх спіс па кампаніях:\n"
+"\n"
+"• «Доўгачаканае падмацаванне»: Stug IV, T28 HTC, T 55A, Аб'ект 260.\n"
+"• «Другі фронт»: Excalibur, Chimera, Аб'ект 279 (р)."
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/0/title"
+msgstr "Унікальная тэхніка"
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/1/descr"
+msgstr ""
+"У кожнай узнагароднай машыны свае састаўныя часткі, якія вы павінны сабраць, каб атрымаць саму машыну:\n"
+"\n"
+"• кампаненты — даюцца пры выкананні задач кампаніі «Доўгачаканае падмацаванне».\n"
+"• чарцяжы — даюцца пры выкананні задач кампаніі «Другі фронт»."
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/1/title"
+msgstr "Кампаненты і чарцяжы"
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/2/descr"
+msgstr ""
+"Унікальная жанчына-танкіст, якая мае звычку «Таварышы па зброі», а таксама пры прызначэнні камандзірам экіпажу мяняе агучку гульнявых падзей на жаночую.\n"
+"\n"
+"Пры рэкрутаванні можна выбраць дзяржаву, спецыяльнасць і машыну, на якой яна бясплатна стане спрактыкаванай на 100%."
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/2/title"
+msgstr "Танкістка"
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/3/descr"
+msgstr ""
+"Апроч тэхнікі, за выкананне задач можна атрымаць мноства іншых каштоўных "
+"узнагарод."
+
+msgid "PersonalMissionFirstEntryView/item3/blocks/3/title"
+msgstr "Іншыя ўзнагароды"
+
+msgid "PersonalMissionFirstEntryView/item3/descr"
+msgstr ""
+"У кампаніі «Другі фронт» за кожную задачу, якая завяршае галіну, вы "
+"атрымаеце адзін з чатырох чарцяжоў узнагароднай машыны."
+
+msgid "PersonalMissionFirstEntryView/item3/header"
+msgstr "4. Узнагароды"
+
+msgid "PersonalMissionFirstEntryView/item3/innerDescr"
+msgstr "Выконвайце задачы, каб атрымаць узнагароды і ўнікальную тэхніку."
+
+msgid "PersonalMissionFirstEntryView/items/more"
+msgstr "Падрабязней"
+
+msgid "PersonalMissionFirstEntryView/title"
+msgstr "КОРАТКА ПРА КАМПАНІІ"
+
+msgid "PersonalMissionFirstEntryView/videoBtnLabel"
+msgstr "Паглядзець відэа"
+
+msgid "PersonalMissionFirstEntryView/videoWindowHeader"
+msgstr "Відэаагляд абнаўлення"
+
+msgid "PersonalMissionsPlanRegion/mainAward/blueprintChassis"
+msgstr "Чарцяжы шасі"
+
+msgid "PersonalMissionsPlanRegion/mainAward/blueprintEngine"
+msgstr "Чарцяжы рухавіка"
+
+msgid "PersonalMissionsPlanRegion/mainAward/blueprintGun"
+msgstr "Чарцяжы гарматы"
+
+msgid "PersonalMissionsPlanRegion/mainAward/blueprintHull"
+msgstr "Чарцяжы корпуса"
+
+msgid "PersonalMissionsPlanRegion/mainAward/blueprintHullAndTurret"
+msgstr "Чарцяжы корпуса і вежы"
+
+msgid "PersonalMissionsPlanRegion/mainAward/chassis"
+msgstr "Шасі"
+
+msgid "PersonalMissionsPlanRegion/mainAward/engine"
+msgstr "Сілавая ўстаноўка"
+
+msgid "PersonalMissionsPlanRegion/mainAward/gun"
+msgstr "Гармата"
+
+msgid "PersonalMissionsPlanRegion/mainAward/hull"
+msgstr "Корпус"
+
+msgid "PersonalMissionsPlanRegion/mainAward/hullAndTurret"
+msgstr "Корпус і вежа"
+
+msgid "PersonalMissionsPlanRegion/mainAward/radio"
+msgstr "Радыёстанцыя"
+
+msgid "alliance/0/details"
+msgstr "Плацдарм для высадкі і прасоўвання войскаў Саюза."
+
+msgid "alliance/0/name"
+msgstr "Саюз"
+
+msgid "alliance/1/details"
+msgstr "Плацдарм для высадкі і прасоўвання войскаў Блока."
+
+msgid "alliance/1/name"
+msgstr "Блок"
+
+msgid "alliance/2/details"
+msgstr "Плацдарм для высадкі і прасоўвання войскаў Альянсу."
+
+msgid "alliance/2/name"
+msgstr "Альянс"
+
+msgid "alliance/3/details"
+msgstr "Плацдарм для высадкі і прасоўвання войскаў Кааліцыі."
+
+msgid "alliance/3/name"
+msgstr "Кааліцыя"
+
+msgid "awardsScreen/acceptBtn/label"
+msgstr "Так!"
+
+msgid "awardsScreen/closeBtn/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "awardsScreen/description/emailConfirmation"
+msgstr "За пацвярджэнне пошты"
+
+msgid "awardsScreen/header"
+msgstr "Аперацыя «%(missionName)s» выканана"
+
+msgid "awardsScreen/header/fullyCompleted"
+msgstr "Аперацыя «%(missionName)s» выканана з адзнакай"
+
+msgid "awardsScreen/headerExtra"
+msgstr "АТРЫМАНА ЎЗНАГАРОДА!"
+
+msgid "awardsView/closeBtn/label"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "awardsView/description"
+msgstr "Галоўная ўзнагарода аперацыі"
+
+msgid "awardsView/mainAwards/title"
+msgstr "Асноўныя ўзнагароды"
+
+msgid "awardsView/vehicleAward/mainAward"
+msgstr "Асноўная ўзнагарода"
+
+msgid "bonus/descr/attempts/card"
+msgstr "выканаць дадатковыя ўмовы, каб павялічыць ход выканання на %(value)s."
+
+msgid "bonus/descr/attempts/postBattle"
+msgstr "ход выканання асноўнай часткі задачы павялічыўся на %(value)s."
+
+msgid "bonus/descr/progress/card"
+msgstr ""
+"выканаць дадатковую ўмову, каб павялічыць дасягнуты ў баі ход выканання "
+"асноўнай умовы на ×%(value)s."
+
+msgid "bonus/descr/progress/postBattle"
+msgstr ""
+"дасягнуты ў баі ход выканання асноўнай умовы павялічыўся на ×%(value)s."
+
+msgid "bonus/multiplier/attempts"
+msgstr "Паскарэнне ходу выканання:"
+
+msgid "bonus/multiplier/progress"
+msgstr "Бонус ×%(value)s:"
+
+msgid "chainTooltipData/description/text/alliance0"
+msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
+
+msgid "chainTooltipData/description/text/alliance1"
+msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
+
+msgid "chainTooltipData/description/text/alliance2"
+msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
+
+msgid "chainTooltipData/description/text/alliance3"
+msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
+
+msgid "chainTooltipData/description/title"
+msgstr "Апісанне:"
+
+msgid "conditions/battlesLeft/bottomLabel"
+msgstr "Засталося баёў: %(count)s"
+
+msgid "conditions/biathlon/label/add"
+msgstr "Выканаць дадатковую ўмову ў %(goal)s баях з %(limit)s"
+
+msgid "conditions/biathlon/label/main"
+msgstr "Выканаць асноўную ўмову ў %(goal)s баях з %(limit)s"
+
+msgid "conditions/completed/bottomLabel"
+msgstr "Выканана"
+
+msgid "conditions/counter/label/add"
+msgstr "Выканаць дадатковую ўмову, разоў: %(count)s"
+
+msgid "conditions/counter/label/main"
+msgstr "Выканаць асноўную ўмову, разоў: %(count)s"
+
+msgid "conditions/currentProgress/bottomLabel"
+msgstr "Выканана: %(currentProgress)s"
+
+msgid "conditions/failed/bottomLabel"
+msgstr "Скончылася няўдала"
+
+msgid "conditions/limited/label/add"
+msgstr "Выканаць дадатковую ўмову за колькасць баёў: %(count)s"
+
+msgid "conditions/limited/label/main"
+msgstr "Выканаць асноўную ўмову за колькасць баёў: %(count)s"
+
+msgid "conditions/limiter/label"
+msgstr "Абмежаванне!"
+
+msgid "conditions/orGroup"
+msgstr "або"
+
+msgid "conditions/series/label/add"
+msgstr "Выконваць умовы ў %(count)s баях запар"
+
+msgid "conditions/series/label/main"
+msgstr "Выконваць умовы ў %(count)s баях запар"
+
+msgid "conditions/unlimited/label/add"
+msgstr "Выканаць дадатковую ўмову за любую колькасць баёў"
+
+msgid "conditions/unlimited/label/main"
+msgstr "Выканаць асноўную ўмову за любую колькасць баёў"
+
+msgid "detailedView/completeBtnLabel"
+msgstr "Выканаць за %(count)d %(icon)s"
+
+msgid "detailedView/conditionsFullylabel"
+msgstr "Для выканання з адзнакай"
+
+msgid "detailedView/conditionslabel"
+msgstr "Асноўная ўмова"
+
+msgid "detailedView/discardBtnLabel"
+msgstr "Скінуць"
+
+msgid "detailedView/infoPanel/header"
+msgstr "Апісанне і парады"
+
+msgid "detailedView/orCondition"
+msgstr "або"
+
+msgid "detailedView/recruitBtnLabel"
+msgstr "Атрымаць узнагароду"
+
+msgid "detailedView/retryBtnLabel"
+msgstr "Перавыканаць з адзнакай"
+
+msgid "detailedView/startBtnLabel"
+msgstr "Прыступіць"
+
+msgid "detailedView/status/NA"
+msgstr "Недаступна"
+
+msgid "detailedView/status/completed"
+msgstr "Выканана асноўная ўмова"
+
+msgid "detailedView/status/fullyCompleted"
+msgstr "Выканана з адзнакай"
+
+msgid "detailedView/status/inProgress"
+msgstr "Выконваецца"
+
+msgid "detailedView/status/returnSheet"
+msgstr "Закладзены: %(icon)s×1"
+
+msgid "detailedView/status/sheetUsed"
+msgstr "Выканана за %(icon)s×1"
+
+msgid "detailedView/tooltips/additionalConditions/body"
+msgstr ""
+"Гэта ваша мэта ў баі, якой неабходна дасягнуць акрамя асноўнай, каб атрымаць"
+" дадатковую ўзнагароду за выкананне задачы з адзнакай."
+
+msgid "detailedView/tooltips/additionalConditions/header"
+msgstr "Дадатковая ўмова"
+
+msgid "detailedView/tooltips/commonConditions/body"
+msgstr ""
+"Гэта ваша мэта ў баі, якой неабходна дасягнуць, каб атрымаць асноўную "
+"ўзнагароду за выкананне задачы з адзнакай."
+
+msgid "detailedView/tooltips/commonConditions/header"
+msgstr "Асноўная ўмова"
+
+msgid "detailedView/tooltips/discardBtn/body"
+msgstr "Націсніце, каб скінуць увесь ход выканання задачы."
+
+msgid "detailedView/tooltips/discardBtn/header"
+msgstr "Скідванне ходу выканання"
+
+msgid "detailedView/tooltips/holdAwardSheetBtn/body"
+msgstr "Націсніце, каб выканаць асноўную ўмову задачы, заклаўшы бланк загаду."
+
+msgid "detailedView/tooltips/holdAwardSheetBtn/disabled/body"
+msgstr ""
+"Выканайце з адзнакай усе задачы, якія завяршаюць галіны, у рамках любой "
+"аперацыі, каб атрымаць бланкі загаду."
+
+msgid "detailedView/tooltips/holdAwardSheetBtn/disabled/header"
+msgstr "Замала бланкаў загаду"
+
+msgid "detailedView/tooltips/holdAwardSheetBtn/header"
+msgstr "Закласці бланк загаду"
+
+msgid "detailedView/tooltips/locked"
+msgstr ""
+"Каб выкананне дадатковай умовы было залічана, трэба разам з ёй выканаць і "
+"асноўную ўмову."
+
+msgid "detailedView/tooltips/recruitBtn/body"
+msgstr "?empty?"
+
+msgid "detailedView/tooltips/recruitBtn/header"
+msgstr "?empty?"
+
+msgid "detailedView/tooltips/retryBtn/body"
+msgstr ""
+"Націсніце, каб паспрабаваць палепшыць вынік, выканаўшы асноўную і дадатковую"
+" ўмовы."
+
+msgid "detailedView/tooltips/retryBtn/header"
+msgstr "Перавыканаць з адзнакай"
+
+msgid "detailedView/tooltips/returnAwardListBtn/body"
+msgstr ""
+"Націсніце, каб перавыканаць задачу з адзнакай, выканаўшы асноўную і "
+"дадатковую ўмовы, вярнуўшы тым самым выкарыстаны бланк загаду."
+
+msgid "detailedView/tooltips/returnAwardListBtn/header"
+msgstr "Вярнуць бланк загаду"
+
+msgid "detailedView/tooltips/startBtn/body"
+msgstr ""
+"Націсніце, каб прыняць задачу да выканання. Выканайце ўмовы гэтай задачы і "
+"атрымайце адпаведную ўзнагароду."
+
+msgid "detailedView/tooltips/startBtn/header"
+msgstr "Прыступіць"
+
+msgid "fourFreeSheetsObtainedPopup/button"
+msgstr "Перайсці"
+
+msgid "fourFreeSheetsObtainedPopup/header"
+msgstr "Можна атрымаць машыну"
+
+msgid "fourFreeSheetsObtainedPopup/pm2/descr"
+msgstr ""
+"Закладзіце 3 бланкі загаду ў задачу «%(questName)s» і атрымайце чарцяжы "
+"машыны, якіх вам не стае."
+
+msgid "fourFreeSheetsObtainedPopup/pm2/pawnedDescr"
+msgstr ""
+"Вярніце закладзеныя ў задачы бланкі загаду (%(pawnedCount)s шт.), каб "
+"закласці 3 бланкі загаду ў «%(questName)s» і атрымаць чарцяжы машыны, якіх "
+"вам не стае."
+
+msgid "fourFreeSheetsObtainedPopup/regular/descr"
+msgstr ""
+"Закладзіце 4 бланкі загаду ў задачу «%(questName)s» і атрымайце кампанент "
+"машыны, якога вам не стае."
+
+msgid "fourFreeSheetsObtainedPopup/regular/pawnedDescr"
+msgstr ""
+"Вярніце закладзеныя ў задачы бланкі загаду (%(pawnedCount)s шт.), каб "
+"закласці 4 бланкі загаду ў %(questName)s і атрымаць кампанент машыны, якога "
+"вам не стае."
+
+msgid "freeSheetObtainedPopup/pm2/descrLeft"
+msgstr ""
+"За бланкі загаду можна выконваць любыя задачы ў галінах кампаніі «Другі "
+"фронт»."
+
+msgid "freeSheetObtainedPopup/pm2/descrRight"
+msgstr ""
+"Выконвайце з адзнакай усе задачы, якія завяршаюць галіны кампаніі «Другі "
+"фронт»."
+
+msgid "freeSheetObtainedPopup/pm2/title"
+msgstr "Атрыманы бланк загаду кампаніі «Другі фронт»"
+
+msgid "freeSheetObtainedPopup/pm2/titleLeft"
+msgstr "Як выкарыстоўваць"
+
+msgid "freeSheetObtainedPopup/pm2/titleRight"
+msgstr "Як здабыць"
+
+msgid "freeSheetObtainedPopup/regular/descrLeft"
+msgstr ""
+"За бланкі загаду можна выконваць\n"
+"любыя задачы ў галінах."
+
+msgid "freeSheetObtainedPopup/regular/descrRight"
+msgstr "Выконвайце з адзнакай усе задачы, якія завяршаюць галіны."
+
+msgid "freeSheetObtainedPopup/regular/title"
+msgstr "Атрыманы бланк загаду"
+
+msgid "freeSheetObtainedPopup/regular/titleLeft"
+msgstr "Як выкарыстоўваць"
+
+msgid "freeSheetObtainedPopup/regular/titleRight"
+msgstr "Як здабыць"
+
+msgid "freeSheetPopover/freeSheetsInfo/descr"
+msgstr "Даюцца за выкананне кожнай задачы, якая завяршае галіну."
+
+msgid "freeSheetPopover/freeSheetsInfo/title"
+msgstr "Маецца: %(count)d"
+
+msgid "freeSheetPopover/pawnedSheetsInfo/descr"
+msgstr "Каб вярнуць закладзены бланк загаду, перавыканайце задачу з адзнакай."
+
+msgid "freeSheetPopover/pawnedSheetsInfo/descr/noOne"
+msgstr ""
+"За бланкі загаду можна выконваць\n"
+"любыя задачы ў галінах."
+
+msgid "freeSheetPopover/pawnedSheetsInfo/title"
+msgstr "Закладзена ў задачы: %(count)d"
+
+msgid "freeSheetPopover/title"
+msgstr "Бланкі загаду"
+
+msgid "header/backBtn/descrLabel/campaign"
+msgstr "ДА МАП"
+
+msgid "header/backBtn/descrLabel/hangar"
+msgstr "У ГАРАЖ"
+
+msgid "header/backBtn/descrLabel/operation"
+msgstr "ДА АПЕРАЦЫІ"
+
+msgid "header/backBtn/label"
+msgstr "НАЗАД"
+
+msgid "operationInfo/awardsButton/label"
+msgstr "Узнагарода за аперацыю"
+
+msgid "operationInfo/chainVehReq/pm2"
+msgstr "%(vehType)s %(alliance)s %(minLevel)s-%(maxLevel)s узроўняў"
+
+msgid "operationInfo/chainVehReq/regular"
+msgstr "%(vehType)s %(minLevel)s-%(maxLevel)s узроўняў"
+
+msgid "operationInfo/label"
+msgstr "Кампаніі"
+
+msgid "operationInfo/operationBtn/postponed/days"
+msgstr "%(days)s сут"
+
+msgid "operationInfo/operationBtn/postponed/lessThanDay"
+msgstr "менш за 1 сут"
+
+msgid "operationInfo/title"
+msgstr "Аператыўная карта"
+
+msgid "operationTitle/label/done"
+msgstr "Бланкаў загаду: %(icon)s%(count)s/%(total)s %(infoIcon)s"
+
+msgid "operationTitle/label/excellentDone"
+msgstr "Усе задачы выкананы з адзнакай"
+
+msgid "operationTitle/label/inProgress/pm2"
+msgstr "Выконваць на тэхніцы  %(vehData)s"
+
+msgid "operationTitle/label/inProgress/regular"
+msgstr "Выконваць на тэхніцы галіны %(vehData)s"
+
+msgid "operationTitle/label/locked"
+msgstr "Недаступна: завяршыце папярэднюю аперацыю"
+
+msgid "operationTitle/label/noVehicle/pm2"
+msgstr "Выконваецца толькі на %(vehData)s"
+
+msgid "operationTitle/label/noVehicle/regular"
+msgstr "Недаступна: няма прыдатнай тэхнікі галіны %(vehData)s"
+
+msgid "operationTitle/label/toMaster"
+msgstr "Задач з адзнакай: %(count)s/%(total)s %(infoIcon)s"
+
+msgid "operationTitle/label/unlocked/pm2"
+msgstr "Выберыце задачу для выканання на тэхніцы  %(vehData)s"
+
+msgid "operationTitle/label/unlocked/regular"
+msgstr "Выберыце задачу для выканання на тэхніцы галіны %(vehData)s"
+
+msgid "operationTitle/title"
+msgstr "Аперацыя «%(title)s»"
+
+msgid "operationUnlockedWindow/awardText"
+msgstr ""
+"Віншуем! Цяпер вы можаце прыступіць да выканання аперацыі «%(title)s»."
+
+msgid "operationUnlockedWindow/descr"
+msgstr ""
+"Націсніце на кнопку «%(label)s», каб выбраць задачу і пачаць баявы шлях да "
+"новай узнагароды."
+
+msgid "operationUnlockedWindow/header"
+msgstr "Аперацыя «%(title)s»"
+
+msgid "operationUnlockedWindow/nextButton"
+msgstr "Прыступіць"
+
+msgid "operationUnlockedWindow/title"
+msgstr "Атрыманы доступ да аперацыі"
+
+msgid "operations/completed/desc"
+msgstr "Машына атрымана"
+
+msgid "operations/current/desc"
+msgstr "Выконваецца"
+
+msgid "operations/fullyCompleted/desc"
+msgstr ""
+"Выканана\n"
+"з адзнакай"
+
+msgid "operations/locked/desc"
+msgstr "Недаступна"
+
+msgid "operations/title1"
+msgstr "StuG IV"
+
+msgid "operations/title2"
+msgstr "T28 HTC"
+
+msgid "operations/title3"
+msgstr "T 55A"
+
+msgid "operations/title4"
+msgstr "Аб'ект 260"
+
+msgid "operations/title5"
+msgstr "Excalibur"
+
+msgid "operations/title6"
+msgstr "Chimera"
+
+msgid "operations/title7"
+msgstr "Аб'ект 279 (р)"
+
+msgid "operations/unlocked/desc"
+msgstr "Даступна"
+
+msgid "personalMissions/tankgirlsPopover/recruitBtn"
+msgstr "Рэкрутаваць"
+
+msgid "personalMissions/tankgirlsPopover/title"
+msgstr "Танкісткі"
+
+msgid "personalMissions/video/title"
+msgstr "Відэаагляд абнаўлення"
+
+msgid "questAwardScreen/continueBtn/label"
+msgstr "Працягнуць"
+
+msgid "questAwardScreen/nextQuest/title/questAccept"
+msgstr "Аўтаматычна прынята да выканання задача:"
+
+msgid "questAwardScreen/nextQuest/title/questImprove"
+msgstr "Вы аўтаматычна працягнеце паляпшаць вынік задачы:"
+
+msgid "questAwardScreen/nextQuestBtn/label"
+msgstr "Наступная задача"
+
+msgid "questAwardScreen/okBtn/label"
+msgstr "Так!"
+
+msgid "questAwardScreen/operation"
+msgstr "Аперацыя %(operation)s"
+
+msgid "questAwardScreen/quest"
+msgstr "Задача «%(quest)s» выканана!"
+
+msgid "questAwardScreen/recruitBtn/label"
+msgstr "Рэкрутаваць"
+
+msgid "questProgressTracking/status/onPause"
+msgstr "Прыпынена"
+
+msgid "questProgressTracking/trackingStatus"
+msgstr "Зараз выконваюцца абедзве задачы"
+
+msgid "sidebar/completed"
+msgstr "Выканана"
+
+msgid "sidebar/fullCompleted"
+msgstr "З адзнакай"
+
+msgid "sidebar/notSelected"
+msgstr "Няма прынятых"
+
+msgid "sidebar/vehicles/AT-SPG"
+msgstr "СТ-САУ"
+
+msgid "sidebar/vehicles/SPG"
+msgstr "САУ"
+
+msgid "sidebar/vehicles/heavyTank"
+msgstr "Цяжкія танкі"
+
+msgid "sidebar/vehicles/lightTank"
+msgstr "Лёгкія танкі"
+
+msgid "sidebar/vehicles/mediumTank"
+msgstr "Сярэднія танкі"
+
+msgid "statusPanel/freeSheetBtn/label"
+msgstr "Выканаць за %(count)d %(icon)s"
+
+msgid "statusPanel/freeSheets"
+msgstr "Маецца: %(count)s"
+
+msgid "statusPanel/pawnedSheets"
+msgstr "Закладзена ў задачы: %(count)s"
+
+msgid "statusPanel/status/allDone"
+msgstr "Усе задачы для %(vehicleClass)s выкананы"
+
+msgid "statusPanel/status/allExcellentDone"
+msgstr "Усе задачы для %(vehicleClass)s выкананы з адзнакай"
+
+msgid "statusPanel/status/freeSheet"
+msgstr "Бланк загаду закладзены"
+
+msgid "statusPanel/status/improve"
+msgstr "(Паляпшэнне выніку)"
+
+msgid "statusPanel/status/locked"
+msgstr "Недаступна: завяршыце папярэднюю аперацыю"
+
+msgid "statusPanel/status/pawned"
+msgstr "(Вяртанне %(count)d %(icon)s)"
+
+msgid "statusPanel/status/selectTask"
+msgstr "Выберыце задачу, каб прыступіць да выканання"
+
+msgid "tankmoduleTooltipData/alliance/help/body"
+msgstr ""
+"Даецца ў якасці ўзнагароды за выкананне асноўных умоў задачы, якая завяршае "
+"галіну %(vehType)s."
+
+msgid "tankmoduleTooltipData/alliance/info"
+msgstr "Чарцёж патрабуецца для атрымання %(vehName)s"
+
+msgid "tankmoduleTooltipData/help/body"
+msgstr ""
+"Даецца ў якасці ўзнагароды за выкананне асноўных умоў задачы, якая завяршае "
+"галіну %(vehType)s."
+
+msgid "tankmoduleTooltipData/help/title"
+msgstr "Як атрымаць"
+
+msgid "tankmoduleTooltipData/info"
+msgstr "Кампанент патрабуецца для атрымання %(vehName)s"
+
+msgid "tankmoduleTooltipData/status/alliance/notObtained"
+msgstr "Чарцёж не атрыманы"
+
+msgid "tankmoduleTooltipData/status/alliance/obtained"
+msgstr "Чарцёж атрыманы"
+
+msgid "tankmoduleTooltipData/status/available"
+msgstr "Даступны за %(count)d %(img)s"
+
+msgid "tankmoduleTooltipData/status/notObtained"
+msgstr "Кампанент не атрыманы"
+
+msgid "tankmoduleTooltipData/status/obtained"
+msgstr "Кантэйнер атрыманы"
+
+msgid "tankwomanTooltipData/advantages/brotherhood"
+msgstr "Звычка «Таварышы па зброі» спрактыкавана на 100%"
+
+msgid "tankwomanTooltipData/advantages/nation"
+msgstr ""
+"Можна выбраць дзяржаву, тып тэхнікі і асноўную спецыяльнасць, "
+"спрактыкаванасць у якой адразу будзе 100%."
+
+msgid "tankwomanTooltipData/advantages/newPerk"
+msgstr "На выбар дадатковы навык, вывучаны на 100%."
+
+msgid "tankwomanTooltipData/advantages/title"
+msgstr "Перавагі:"
+
+msgid "tankwomanTooltipData/desc/body"
+msgstr ""
+"Даецца ў якасці ўзнагароды за выкананне асноўных умоў кожнай задачы, якая "
+"завяршае галіну."
+
+msgid "tankwomanTooltipData/desc/title"
+msgstr "Як атрымаць:"
+
+msgid "tankwomanTooltipData/subTitle"
+msgstr "Унікальны танкіст"
+
+msgid "tankwomanTooltipData/title"
+msgstr "Танкістка"
+
+msgid "taskDetailsView/additionalConditions"
+msgstr "Дадатковая ўмова"
+
+msgid "taskDetailsView/btnLabel/returnAwardSheet"
+msgstr "Вярнуць бланк загаду"
+
+msgid "taskDetailsView/btnLabel/returnAwardSheets"
+msgstr "Вярнуць бланк загаду"
+
+msgid "taskDetailsView/mainConditions"
+msgstr "Асноўная ўмова"
+
+msgid "useAwardSheetWindow/cancelBtn"
+msgstr "Скасаваць"
+
+msgid "useAwardSheetWindow/info"
+msgstr "Каб вярнуць бланк загаду, перавыканайце задачу з адзнакай."
+
+msgid "useAwardSheetWindow/locked"
+msgstr "Каб вярнуць бланк загаду, выканайце ўсе задачы галіны."
+
+msgid "useAwardSheetWindow/needAmount"
+msgstr "Патрабуецца для выканання:"
+
+msgid "useAwardSheetWindow/pm2/noVehicle"
+msgstr "Каб вярнуць бланк загаду, патрабуецца тэхніка %(vehicleClass)s."
+
+msgid "useAwardSheetWindow/regular/noVehicle"
+msgstr "Каб вярнуць бланк загаду, патрабуецца тэхніка тыпу %(vehicleClass)s."
+
+msgid "useAwardSheetWindow/sheetsTotal"
+msgstr "Усяго маецца:"
+
+msgid "useAwardSheetWindow/submitBtn"
+msgstr "Выканаць"
+
+msgid "useAwardSheetWindow/title"
+msgstr "Выканаць асноўную ўмову"
