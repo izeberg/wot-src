@@ -408,6 +408,90 @@ package
       public static const THAT_DOG_LASTNAME:String = "#crew_skins:that_dog/LastName";
       
       public static const THAT_DOG_DESCR:String = "#crew_skins:that_dog/Descr";
+      
+      public static const NY25_BLOGGER01_NAME:String = "#crew_skins:ny25_blogger01/Name";
+      
+      public static const NY25_BLOGGER01_LASTNAME:String = "#crew_skins:ny25_blogger01/LastName";
+      
+      public static const NY25_BLOGGER01_DESCR:String = "#crew_skins:ny25_blogger01/Descr";
+      
+      public static const NY25_BLOGGER02_NAME:String = "#crew_skins:ny25_blogger02/Name";
+      
+      public static const NY25_BLOGGER02_LASTNAME:String = "#crew_skins:ny25_blogger02/LastName";
+      
+      public static const NY25_BLOGGER02_DESCR:String = "#crew_skins:ny25_blogger02/Descr";
+      
+      public static const NY25_BLOGGER03_NAME:String = "#crew_skins:ny25_blogger03/Name";
+      
+      public static const NY25_BLOGGER03_LASTNAME:String = "#crew_skins:ny25_blogger03/LastName";
+      
+      public static const NY25_BLOGGER03_DESCR:String = "#crew_skins:ny25_blogger03/Descr";
+      
+      public static const NY25_BLOGGER04_NAME:String = "#crew_skins:ny25_blogger04/Name";
+      
+      public static const NY25_BLOGGER04_LASTNAME:String = "#crew_skins:ny25_blogger04/LastName";
+      
+      public static const NY25_BLOGGER04_DESCR:String = "#crew_skins:ny25_blogger04/Descr";
+      
+      public static const NY25_BLOGGER05_NAME:String = "#crew_skins:ny25_blogger05/Name";
+      
+      public static const NY25_BLOGGER05_LASTNAME:String = "#crew_skins:ny25_blogger05/LastName";
+      
+      public static const NY25_BLOGGER05_DESCR:String = "#crew_skins:ny25_blogger05/Descr";
+      
+      public static const NY25_BLOGGER06_NAME:String = "#crew_skins:ny25_blogger06/Name";
+      
+      public static const NY25_BLOGGER06_LASTNAME:String = "#crew_skins:ny25_blogger06/LastName";
+      
+      public static const NY25_BLOGGER06_DESCR:String = "#crew_skins:ny25_blogger06/Descr";
+      
+      public static const NY25_BLOGGER07_NAME:String = "#crew_skins:ny25_blogger07/Name";
+      
+      public static const NY25_BLOGGER07_LASTNAME:String = "#crew_skins:ny25_blogger07/LastName";
+      
+      public static const NY25_BLOGGER07_DESCR:String = "#crew_skins:ny25_blogger07/Descr";
+      
+      public static const NY25_BLOGGER08_NAME:String = "#crew_skins:ny25_blogger08/Name";
+      
+      public static const NY25_BLOGGER08_LASTNAME:String = "#crew_skins:ny25_blogger08/LastName";
+      
+      public static const NY25_BLOGGER08_DESCR:String = "#crew_skins:ny25_blogger08/Descr";
+      
+      public static const NY25_BLOGGER09_NAME:String = "#crew_skins:ny25_blogger09/Name";
+      
+      public static const NY25_BLOGGER09_LASTNAME:String = "#crew_skins:ny25_blogger09/LastName";
+      
+      public static const NY25_BLOGGER09_DESCR:String = "#crew_skins:ny25_blogger09/Descr";
+      
+      public static const NY25_BLOGGER10_NAME:String = "#crew_skins:ny25_blogger10/Name";
+      
+      public static const NY25_BLOGGER10_LASTNAME:String = "#crew_skins:ny25_blogger10/LastName";
+      
+      public static const NY25_BLOGGER10_DESCR:String = "#crew_skins:ny25_blogger10/Descr";
+      
+      public static const NY25_BLOGGER11_NAME:String = "#crew_skins:ny25_blogger11/Name";
+      
+      public static const NY25_BLOGGER11_LASTNAME:String = "#crew_skins:ny25_blogger11/LastName";
+      
+      public static const NY25_BLOGGER11_DESCR:String = "#crew_skins:ny25_blogger11/Descr";
+      
+      public static const NY25_BLOGGER12_NAME:String = "#crew_skins:ny25_blogger12/Name";
+      
+      public static const NY25_BLOGGER12_LASTNAME:String = "#crew_skins:ny25_blogger12/LastName";
+      
+      public static const NY25_BLOGGER12_DESCR:String = "#crew_skins:ny25_blogger12/Descr";
+      
+      public static const NY25_BLOGGER13_NAME:String = "#crew_skins:ny25_blogger13/Name";
+      
+      public static const NY25_BLOGGER13_LASTNAME:String = "#crew_skins:ny25_blogger13/LastName";
+      
+      public static const NY25_BLOGGER13_DESCR:String = "#crew_skins:ny25_blogger13/Descr";
+      
+      public static const NY25_BLOGGER14_NAME:String = "#crew_skins:ny25_blogger14/Name";
+      
+      public static const NY25_BLOGGER14_LASTNAME:String = "#crew_skins:ny25_blogger14/LastName";
+      
+      public static const NY25_BLOGGER14_DESCR:String = "#crew_skins:ny25_blogger14/Descr";
        
       
       public function CREW_SKINS()
