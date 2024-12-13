@@ -68,6 +68,14 @@
 						normalMap
 						<Texture>vehicles/french/F129_Schneider_120_AC_Gendarme/Schneider_120_AC_Gendarme_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.000581 1.382309 0.034612</groupOrigin>
 			</primitiveGroup>
