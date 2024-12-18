@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB141_GSOR_the_TANK/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB141_GSOR_the_TANK/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.221884 -0.021279 -1.039449</min>
+		<max>1.225216 0.628049 1.088320</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

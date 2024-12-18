@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB141_GSOR_the_TANK/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB141_GSOR_the_TANK/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.536337 -0.536773 -3.638427</min>
+		<max>1.542101 0.586032 3.431056</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

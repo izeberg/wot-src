@@ -1362,6 +1362,21 @@
 		<tags>lightTank HD special scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
 		<level>5</level>
 	</GB146_Gabler_s_Destroyer>
+	<GB141_GSOR_the_TANK>
+		<id>84</id>
+		<userString>#gb_vehicles:GB141_GSOR_the_TANK</userString>
+		<shortUserString>#gb_vehicles:GB141_GSOR_the_TANK_short</shortUserString>
+		<description>#gb_vehicles:GB141_GSOR_the_TANK_descr</description>
+		<shortDescriptionSpecial>#gb_vehicles:GB141_GSOR_the_TANK_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB141_GSOR_the_TANK_long_special</longDescriptionSpecial>
+		<price>
+			5
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_universal HD special improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<level>9</level>
+	</GB141_GSOR_the_TANK>
 	<GB149_Centurion_MkI_A>
 		<id>88</id>
 		<userString>#gb_vehicles:GB149_Centurion_MkI_A</userString>

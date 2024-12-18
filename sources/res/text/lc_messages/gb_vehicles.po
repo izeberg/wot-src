@@ -284,6 +284,9 @@ msgstr "FV226 反制者"
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Chassis_GB141_GSOR_the_TANK"
+msgstr "GSOR坦克"
+
 msgid "Chassis_GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
 
@@ -1207,6 +1210,24 @@ msgstr ""
 msgid "GB13_FV215b_short_special"
 msgstr "高效的火炮，充沛的生命值"
 
+msgid "GB141_GSOR_the_TANK"
+msgstr "GSOR坦克"
+
+msgid "GB141_GSOR_the_TANK_descr"
+msgstr ""
+"查理曼大帝重型坦克标准设计的主要现代化改型。作为Y系GSOR项目的一部分，20世纪60年代初开始相关研发工作。它装备了计划中的GSOR "
+"1008自行反坦克炮的摇摆式炮塔。该项目仅停留在蓝图阶段。"
+
+msgid "GB141_GSOR_the_TANK_long_special"
+msgstr ""
+"GSOR坦克的主要突出特点是其HE炮弹的出色平均穿透力，凭借该优势，它可击穿轻装甲对手，造成更高损伤。同时，其标准炮弹的飞行速度和平均穿透力也可圈可点，得益于出色的火炮俯角，它可利用地形发挥自身优势。"
+
+msgid "GB141_GSOR_the_TANK_short"
+msgstr "GSOR坦克"
+
+msgid "GB141_GSOR_the_TANK_short_special"
+msgstr "高额的平均穿透力，HESH炮弹"
+
 msgid "GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
 
@@ -2071,6 +2092,9 @@ msgstr "米朵斯 H.O.P.O.C."
 msgid "Meteorite_M120"
 msgstr "流星 M120"
 
+msgid "Meteorite_M120_GSOR"
+msgstr "流星 M120 GSOR"
+
 msgid "Meteorite_Mk_202"
 msgstr "流星 Mk.202"
 
@@ -2476,6 +2500,9 @@ msgstr "FV226 反制者"
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Turret_1_GB141_GSOR_the_TANK"
+msgstr "GSOR坦克"
+
 msgid "Turret_1_GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
 
@@ -2824,6 +2851,9 @@ msgstr "WS No.22 Mk.3"
 msgid "WS_No_38_AFV"
 msgstr "WS No.38 AFV"
 
+msgid "WS_No_A41_GSOR"
+msgstr "WS No.A41 GSOR"
+
 msgid "Wright_Continental_R-975C1"
 msgstr "莱特-大陆 R-975C1"
 
@@ -2845,6 +2875,9 @@ msgid "Wright_Continental_R-975EC2_short"
 msgstr ""
 "莱特 大陆\n"
 "R-975 EC2"
+
+msgid "_105mm_APCR_L28_GSOR"
+msgstr "APDS L28 GSOR"
 
 msgid "_105mm_APCR_L5_SH"
 msgstr "APCR L5"
@@ -2876,6 +2909,9 @@ msgstr "105mm L7 AT炮"
 msgid "_105mm_AT_Gun_L7A1"
 msgstr "105mm L7A1 AT炮"
 
+msgid "_105mm_AT_Gun_L7A1_GSOR"
+msgstr "105mm L7A1 AT炮 GSOR"
+
 msgid "_105mm_AT_Gun_L7_N"
 msgstr "105mm L7 AT炮"
 
@@ -2900,8 +2936,14 @@ msgstr "HEAT L7 VD"
 msgid "_105mm_HEAT_M67"
 msgstr "HEAT M67"
 
+msgid "_105mm_HESH_L35_GSOR"
+msgstr "HESH L35 GSOR"
+
 msgid "_105mm_HESH_L7"
 msgstr "HESH-T L-37"
+
+msgid "_105mm_HESH_L7_GSOR"
+msgstr "HESH L7 GSOR"
 
 msgid "_105mm_HESH_L7_N"
 msgstr "HESH-T L-37 N"
