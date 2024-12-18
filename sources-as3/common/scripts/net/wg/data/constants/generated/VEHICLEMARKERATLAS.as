@@ -1771,6 +1771,8 @@ package net.wg.data.constants.generated
       
       public static const UK_GB14_M2:String = "uk-GB14_M2";
       
+      public static const UK_GB141_GSOR_THE_TANK:String = "uk-GB141_GSOR_the_TANK";
+      
       public static const UK_GB145_CRUSHER_ASE_4:String = "uk-GB145_Crusher_ASE_4";
       
       public static const UK_GB146_GABLER_S_DESTROYER:String = "uk-GB146_Gabler_s_Destroyer";

@@ -54,10 +54,9 @@ package net.wg.gui.lobby.battleResults.components
       
       public function invokeLayout() : Object
       {
-         var _loc2_:DisplayObject = null;
          var _loc4_:int = 0;
          var _loc1_:uint = this._target.numChildren;
-         _loc2_ = null;
+         var _loc2_:DisplayObject = null;
          var _loc3_:int = 0;
          if(_loc1_ > 0)
          {
