@@ -3754,7 +3754,7 @@
 			<guns>
 				<_120mm_RHD_MBT>
 					shared
-					<maxAmmo>50</maxAmmo>
+					<maxAmmo>52</maxAmmo>
 					<armor>
 						<armor_1>
 							250
@@ -3802,7 +3802,7 @@
 					</shotDispersionRadius>
 					<reloadTime>32</reloadTime>
 					<clip>
-						<count>5</count>
+						<count>4</count>
 						<rate>30</rate>
 					</clip>
 					<aimingTime>

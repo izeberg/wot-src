@@ -8,11 +8,11 @@
 		<loader/>
 	</crew>
 	<supplySlots>5 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_HT_break</postProgressionTree>
+	<postProgressionTree>role_HT_assault</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
-		<backward>15</backward>
+		<forward>30</forward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -89,7 +89,7 @@
 			<armor_8>0</armor_8>
 			<armor_9>40</armor_9>
 			<armor_10>20</armor_10>
-			<armor_11>240</armor_11>
+			<armor_11>270</armor_11>
 			<armor_12>40</armor_12>
 			<armor_13>130</armor_13>
 			<armor_14>130</armor_14>
@@ -98,12 +98,12 @@
 			<armor_17>70</armor_17>
 			<armor_18>40</armor_18>
 			<armor_19>40</armor_19>
-			<armor_20>250</armor_20>
+			<armor_20>285</armor_20>
 			<armor_21>130</armor_21>
 		</armor>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>16950</weight>
-		<maxHealth>1300</maxHealth>
+		<maxHealth>1400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -3049,7 +3049,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>370</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -3061,7 +3061,7 @@
 			<guns>
 				<_122mm_Type_57_I_M>
 					shared
-					<maxAmmo>45</maxAmmo>
+					<maxAmmo>52</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -22 1 -22</minPitch>
 						<maxPitch>
@@ -3097,11 +3097,11 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.42
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						15.6
+						11.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -3702,7 +3702,7 @@
 			<engines>
 				<_12150LT57>
 					<smplEnginePower>600</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</_12150LT57>
 			</engines>
 			<chassis>
