@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB141_GSOR_the_TANK/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB141_GSOR_the_TANK/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.439430 -0.554166 -1.923101</min>
+		<max>1.439565 1.348067 4.922176</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

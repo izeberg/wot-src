@@ -248,6 +248,7 @@ class NyMarketplaceView(SceneRotatableView, NyHistoryPresenter):
     def __onTabSelect(self, tabName, kitIdx=0, forced=False):
         if not self._tabCache.setMarketplaceTab(tabName) and not forced:
             return
+        self.__tabName = tabName
         self.__updateModel(tabName, kitIdx)
 
     def __updateModel(self, yearName, kitIdx=0):

@@ -287,6 +287,9 @@ msgstr "FV226 Contradictious"
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Chassis_GB141_GSOR_the_TANK"
+msgstr "GSOR the TANK"
+
 msgid "Chassis_GB145_Crusher_ASE_4"
 msgstr "Nergal"
 
@@ -1477,6 +1480,30 @@ msgstr ""
 
 msgid "GB13_FV215b_short_special"
 msgstr "An effective gun and a high number of hit points"
+
+msgid "GB141_GSOR_the_TANK"
+msgstr "GSOR the TANK"
+
+msgid "GB141_GSOR_the_TANK_descr"
+msgstr ""
+"A major modernization variant of the standard design for the Charlemagne "
+"heavy tank. It was developed in the early 1960s as part of the British GSOR "
+"program. The vehicle was equipped with the oscillating turret of the planned"
+" GSOR 1008 tank destroyer. The project went no further than blueprints."
+
+msgid "GB141_GSOR_the_TANK_long_special"
+msgstr ""
+"The main distinguishing feature of GSOR the TANK is the high penetration "
+"power of its HE shells, which allows it to deal increased damage to lightly "
+"armored enemies. Its gun also offers high standard shell velocity and "
+"penetration and, thanks to its excellent depression angles, it can always "
+"use the terrain to its advantage."
+
+msgid "GB141_GSOR_the_TANK_short"
+msgstr "GSOR TANK"
+
+msgid "GB141_GSOR_the_TANK_short_special"
+msgstr "High penetration power, HESH shells"
 
 msgid "GB145_Crusher_ASE_4"
 msgstr "Nergal"
@@ -2717,6 +2744,9 @@ msgstr "Meadows H.O.P. O.C."
 msgid "Meteorite_M120"
 msgstr "Meteorite M120"
 
+msgid "Meteorite_M120_GSOR"
+msgstr "Meteorite M120 GSOR"
+
 msgid "Meteorite_Mk_202"
 msgstr "Meteorite Mk. 202"
 
@@ -3122,6 +3152,9 @@ msgstr "FV226 Contradictious"
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Turret_1_GB141_GSOR_the_TANK"
+msgstr "GSOR the TANK"
+
 msgid "Turret_1_GB145_Crusher_ASE_4"
 msgstr "Nergal"
 
@@ -3470,6 +3503,9 @@ msgstr "WS No. 22 Mk. 3"
 msgid "WS_No_38_AFV"
 msgstr "WS No. 38 AFV"
 
+msgid "WS_No_A41_GSOR"
+msgstr "WS No. A41 GSOR"
+
 msgid "Wright_Continental_R-975C1"
 msgstr "Wright Continental R-975C1"
 
@@ -3491,6 +3527,9 @@ msgid "Wright_Continental_R-975EC2_short"
 msgstr ""
 "Wright (Continental)\n"
 "R975 EC2"
+
+msgid "_105mm_APCR_L28_GSOR"
+msgstr "APDS L28 GSOR"
 
 msgid "_105mm_APCR_L5_SH"
 msgstr "APCR L5"
@@ -3522,6 +3561,9 @@ msgstr "105 mm AT Gun L7"
 msgid "_105mm_AT_Gun_L7A1"
 msgstr "105 mm AT Gun L7A1"
 
+msgid "_105mm_AT_Gun_L7A1_GSOR"
+msgstr "105 mm AT Gun L7A1 GSOR"
+
 msgid "_105mm_AT_Gun_L7_N"
 msgstr "105 mm AT Gun L7"
 
@@ -3546,8 +3588,14 @@ msgstr "HEAT L7 VD"
 msgid "_105mm_HEAT_M67"
 msgstr "HEAT M67"
 
+msgid "_105mm_HESH_L35_GSOR"
+msgstr "HESH L35 GSOR"
+
 msgid "_105mm_HESH_L7"
 msgstr "HESH-T L-37"
+
+msgid "_105mm_HESH_L7_GSOR"
+msgstr "HESH L7 GSOR"
 
 msgid "_105mm_HESH_L7_N"
 msgstr "HESH-T L-37 N"

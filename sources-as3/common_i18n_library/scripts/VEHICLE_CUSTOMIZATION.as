@@ -3947,6 +3947,10 @@ package
       
       public static const CAMOUFLAGE_ADVENT_CALENDAR_2024_2_DESCRIPTION:String = "#vehicle_customization:camouflage/advent_calendar_2024_2/description";
       
+      public static const CAMOUFLAGE_SURPRISE_LABEL:String = "#vehicle_customization:camouflage/surprise/label";
+      
+      public static const CAMOUFLAGE_SURPRISE_DESCRIPTION:String = "#vehicle_customization:camouflage/surprise/description";
+      
       public static const CAMOUFLAGE_NY_2025_GUEST1_LABEL:String = "#vehicle_customization:camouflage/ny_2025_guest1/label";
       
       public static const CAMOUFLAGE_NY_2025_GUEST1_DESCRIPTION:String = "#vehicle_customization:camouflage/ny_2025_guest1/description";
@@ -13786,6 +13790,12 @@ package
       public static const REPAINT_BOOSTEROID_01:String = "#vehicle_customization:repaint/Boosteroid_01";
       
       public static const EMBLEM_SPECIAL_STICKER_859:String = "#vehicle_customization:emblem/special/sticker_859";
+      
+      public static const SPECIAL_STYLE_SURPRISE:String = "#vehicle_customization:special_style/surprise";
+      
+      public static const SPECIAL_STYLE_SURPRISE_DESC:String = "#vehicle_customization:special_style/surprise_desc";
+      
+      public static const SPECIAL_STYLE_SURPRISE_DESC_LONG:String = "#vehicle_customization:special_style/surprise_desc/long";
       
       public static const SPECIAL_STYLE_GAMEPLAY_MODE_PROGRESSION:String = "#vehicle_customization:special_style/gameplay_mode_progression";
       
