@@ -30,11 +30,119 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/antique_oddities"
+msgstr "Древние диковинки"
+
+msgid "attachment/antique_oddities/Cus_26_Mystic_Mirror"
+msgstr "Мистическое зеркало"
+
+msgid "attachment/antique_oddities/Cus_27_Mystic_Mystical_Things"
+msgstr "Антиквариат"
+
+msgid "attachment/antique_oddities/Cus_28_Mystic_Monkey"
+msgstr "Заводная обезьянка"
+
+msgid "attachment/antique_oddities/Cus_29_Mystic_Suitcases"
+msgstr "Старинный сундук"
+
+msgid "attachment/antique_oddities/Cus_30_Mystic_Telescope"
+msgstr "Зачарованный телескоп"
+
+msgid "attachment/dragon_vanguard"
+msgstr "Драконий авангард"
+
+msgid "attachment/dragon_vanguard/Cus_12_Asia_Dragon_Head"
+msgstr "Голова Хуо-луна"
+
+msgid "attachment/dragon_vanguard/Cus_12_Asia_Dragon_Head/description"
+msgstr ""
+"Хуо-лун никогда не отличался сентиментальностью. Жестокий по своей природе, "
+"этот дракон испепелил тысячи искателей сокровищ. Иронично, но именно тяга к "
+"уничтожению его и погубила..."
+
+msgid "attachment/dragon_vanguard/Cus_13_Asia_Shield_With_Weapon"
+msgstr "Арсенал"
+
+msgid "attachment/dragon_vanguard/Cus_14_Asia_Dragon_Weapon"
+msgstr "Ракета «Пламенный дракон вод»"
+
+msgid "attachment/dragon_vanguard/Cus_15_Asia_Arrow_Thrower"
+msgstr "Огненная повозка"
+
+msgid "attachment/dragon_vanguard/Cus_16_Asia_Battering_Ram"
+msgstr "Противоштурмовой брус"
+
 msgid "attachment/general"
 msgstr "Общие"
 
+msgid "attachment/iron_fury"
+msgstr "Стальная ярость"
+
+msgid "attachment/iron_fury/Cus_01_Brutal_Flamethrower"
+msgstr "Набор огнемётчика"
+
+msgid "attachment/iron_fury/Cus_02_Brutal_Ammunition_boxes"
+msgstr "Ящики с боеприпасами"
+
+msgid "attachment/iron_fury/Cus_03_Brutal_Night_vision_device"
+msgstr "Прицел ночного видения с прожектором"
+
+msgid "attachment/iron_fury/Cus_04_Brutal_Machine_Gun"
+msgstr "Модифицированный «Миниган»"
+
+msgid "attachment/iron_fury/Cus_04_Brutal_Machine_Gun/description"
+msgstr ""
+"«Мыслить нужно масштабнее. Вот есть у тебя автомат: магазин отстрелял — "
+"снаряжай новый. И кто знает, что за это время случится. То ли дело \"малыш\""
+" М134. С ним враги заканчиваются быстрее, чем лента»."
+
+msgid "attachment/iron_fury/Cus_25_Brutal_Recoilless_Rifle"
+msgstr "Безоткатное орудие"
+
+msgid "attachment/lionheart_recon"
+msgstr "Львиное сердце"
+
+msgid "attachment/lionheart_recon/Cus_05_Scout_Radar_Display"
+msgstr "Морской радар Type 159"
+
+msgid "attachment/lionheart_recon/Cus_06_Scout_Radar"
+msgstr "Радиолокатор Type 974"
+
+msgid "attachment/lionheart_recon/Cus_07_Scout_Motobike"
+msgstr "Велбайк"
+
+msgid "attachment/lionheart_recon/Cus_08_Scout_Manual_Rocket"
+msgstr "Противотанковое орудие"
+
+msgid "attachment/lionheart_recon/Cus_09_Scout_Rocket_System"
+msgstr "Подвесной ракетный контейнер"
+
+msgid "attachment/oceanic_sentinel"
+msgstr "Хранители океана"
+
+msgid "attachment/oceanic_sentinel/Cus_10_Marine_Harpoon"
+msgstr "Гарпунная пушка"
+
+msgid "attachment/oceanic_sentinel/Cus_11_Marine_Shark"
+msgstr "Проект 15-6К"
+
+msgid "attachment/oceanic_sentinel/Cus_11_Marine_Shark/description"
+msgstr ""
+"Акула-робот, созданная для уничтожения военных судов. Обладает инфракрасным "
+"зрением, способна улавливать малейшее движение воды на расстоянии до 80 км и"
+" содержит ядерный «сюрприз» в брюхе."
+
+msgid "attachment/oceanic_sentinel/Cus_17_Marine_Mine"
+msgstr "Морская мина"
+
+msgid "attachment/oceanic_sentinel/Cus_18_Marine_Periscope"
+msgstr "Морской бинокль"
+
+msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
+msgstr "Морской якорь"
+
 msgid "attachment/test"
-msgstr "Объекты исследования"
+msgstr "Тестовые"
 
 msgid "attachment/test/testAttachment1"
 msgstr "Объект исследования 001 — Железный конь"
@@ -56,6 +164,30 @@ msgstr "Объект исследования 004 — Шепчущий жнец"
 
 msgid "attachment/test/testAttachment5"
 msgstr "Объект исследования 005 — Глаза пустоты"
+
+msgid "attachment/thunderstrike"
+msgstr "Рок жив"
+
+msgid "attachment/thunderstrike/Cus_20_Rock_Guitar"
+msgstr "Гитара-огнемёт"
+
+msgid "attachment/thunderstrike/Cus_20_Rock_Guitar/description"
+msgstr ""
+"«Не имею ничего против грохота танков и канонады артиллерии, но не пора ли "
+"нам, парни, послушать что-нибудь помелодичнее? Заряжайте \"инструменты\": "
+"вдарим рок в этой дыре!»"
+
+msgid "attachment/thunderstrike/Cus_21_Rock_Stage_Fire_Generator"
+msgstr "Фаер-машина"
+
+msgid "attachment/thunderstrike/Cus_22_Rock_Soffits"
+msgstr "Студийное освещение"
+
+msgid "attachment/thunderstrike/Cus_23_Rock_Drums"
+msgstr "Ударная установка"
+
+msgid "attachment/thunderstrike/Cus_24_Rock_Speakers"
+msgstr "Концертные колонки"
 
 msgid "bonus/condition/camouflage"
 msgstr ""
@@ -614,6 +746,18 @@ msgstr "?empty?"
 
 msgid "camouflage/Blitztech/label"
 msgstr "Blitztech"
+
+msgid "camouflage/Boosteroid_01/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_01/label"
+msgstr "Полностью усиленный"
+
+msgid "camouflage/Boosteroid_02/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_02/label"
+msgstr "Здесь обитают драконы"
 
 msgid "camouflage/Borduit/description"
 msgstr ""
@@ -1577,6 +1721,18 @@ msgstr "?empty?"
 msgid "camouflage/ac/label"
 msgstr "Ас"
 
+msgid "camouflage/advent_calendar_2024_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/advent_calendar_2024_1/label"
+msgstr "Тихая ночь"
+
+msgid "camouflage/advent_calendar_2024_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/advent_calendar_2024_2/label"
+msgstr "Волшебная игрушка"
+
 msgid "camouflage/allbetsareoff/description"
 msgstr "?empty?"
 
@@ -1756,6 +1912,12 @@ msgstr ""
 
 msgid "camouflage/battle_of_bloggers_camo/label"
 msgstr "Герой битвы блогеров"
+
+msgid "camouflage/battle_of_bulge/description"
+msgstr "?empty?"
+
+msgid "camouflage/battle_of_bulge/label"
+msgstr "Арденнская операция"
 
 msgid "camouflage/battle_pass_s11_camo1/description"
 msgstr "?empty?"
@@ -2286,6 +2448,12 @@ msgstr "?empty?"
 
 msgid "camouflage/bear/label"
 msgstr "Чёрный медведь"
+
+msgid "camouflage/beast_4/description"
+msgstr "?empty?"
+
+msgid "camouflage/beast_4/label"
+msgstr "Циклон"
 
 msgid "camouflage/bicolor"
 msgstr "Двухцветные"
@@ -3832,6 +4000,12 @@ msgstr "?empty?"
 msgid "camouflage/gagarin/label"
 msgstr "Первый полёт"
 
+msgid "camouflage/gameplay_mode_progression/description"
+msgstr "?empty?"
+
+msgid "camouflage/gameplay_mode_progression/label"
+msgstr "Космическая значимость"
+
 msgid "camouflage/gamer/description"
 msgstr "?empty?"
 
@@ -4657,6 +4831,24 @@ msgstr "?empty?"
 msgid "camouflage/lunar_ny_2022/label"
 msgstr "Лунный тигр"
 
+msgid "camouflage/lunar_ny_2025_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar_ny_2025_1/label"
+msgstr "Танец змея"
+
+msgid "camouflage/lunar_ny_2025_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar_ny_2025_2/label"
+msgstr "Ледяной змей"
+
+msgid "camouflage/lunar_ny_2025_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar_ny_2025_3/label"
+msgstr "Клятва Мэнь-шэнь"
+
 msgid "camouflage/lunar_ny_ox/description"
 msgstr "?empty?"
 
@@ -5011,6 +5203,48 @@ msgstr "?empty?"
 
 msgid "camouflage/ny_2023_m_challenge/label"
 msgstr "Само совершенство"
+
+msgid "camouflage/ny_2025_bro/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_bro/label"
+msgstr "Из глубин"
+
+msgid "camouflage/ny_2025_cat/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_cat/label"
+msgstr "Пушистый комочек"
+
+msgid "camouflage/ny_2025_challenge/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_challenge/label"
+msgstr "Смертельная гонка"
+
+msgid "camouflage/ny_2025_dog/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_dog/label"
+msgstr "Хороший мальчик"
+
+msgid "camouflage/ny_2025_guest1/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_guest1/label"
+msgstr "Несокрушимый"
+
+msgid "camouflage/ny_2025_guest2/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_guest2/label"
+msgstr "Коллекционер"
+
+msgid "camouflage/ny_2025_snowman/description"
+msgstr "?empty?"
+
+msgid "camouflage/ny_2025_snowman/label"
+msgstr "Зимнее веселье"
 
 msgid "camouflage/oakwood_dark/description"
 msgstr "?empty?"
@@ -5598,6 +5832,12 @@ msgstr "?empty?"
 msgid "camouflage/steam_publisher_weekend/label"
 msgstr "Паровая тяга"
 
+msgid "camouflage/steam_unlock/description"
+msgstr "?empty?"
+
+msgid "camouflage/steam_unlock/label"
+msgstr "Стимроллер"
+
 msgid "camouflage/steel_hunter_arcade_1/description"
 msgstr "?empty?"
 
@@ -5647,6 +5887,12 @@ msgstr ""
 
 msgid "camouflage/supertest_camo/label"
 msgstr "Ветеран Супертеста"
+
+msgid "camouflage/surprise/description"
+msgstr "?empty?"
+
+msgid "camouflage/surprise/label"
+msgstr "Праздничное настроение"
 
 msgid "camouflage/t_october/description"
 msgstr "?empty?"
@@ -8082,6 +8328,11 @@ msgstr "НАНЕСЕНО МАКСИМАЛЬНОЕ КОЛИЧЕСТВО ДЕКА�
 msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "Ячейка недоступна: снимите уже нанесённую декаль из другой ячейки."
 
+msgid "customization/tooltip/quests/blitzkrieg_1026/condition"
+msgstr ""
+"Сражаясь в режиме «Натиск», победить в бою, уничтожив всю технику противника"
+" менее чем за 150 секунд."
+
 msgid "customization/tooltip/quests/blitzkrieg_836/condition"
 msgstr ""
 "Сражаясь в режиме «Натиск», победить в бою, уничтожив всю технику противника"
@@ -8249,6 +8500,24 @@ msgid "customization/tooltip/quests/comp7_4_1_ranks_65/condition"
 msgstr ""
 "Достигнуть ранга «Железо» в сезоне Лазурной мантикоры режима «Натиск»."
 
+msgid "customization/tooltip/quests/comp7_4_2_ranks_11/condition"
+msgstr "Достичь ранга «Легенда» в сезоне Алой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_21/condition"
+msgstr "Достичь ранга «Чемпион» в сезоне Алой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_35/condition"
+msgstr "Достичь ранга «Золото» в сезоне Алой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_45/condition"
+msgstr "Достичь ранга «Серебро» в сезоне Алой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_55/condition"
+msgstr "Достичь ранга «Бронза» в сезоне Алой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_65/condition"
+msgstr "Достичь ранга «Железо» в сезоне Алой мантикоры режима «Натиск»."
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "Достичь ранга «Золото» в сезоне Грифона режима «Натиск»."
 
@@ -8266,6 +8535,15 @@ msgstr "Достичь ранга «Серебро» в сезоне Грифо�
 
 msgid "customization/tooltip/quests/comp7_ranks_silver_1/condition"
 msgstr "Достичь ранга «Железо» в сезоне Грифона режима «Натиск»."
+
+msgid "customization/tooltip/quests/crushing_damage_1026_1/condition"
+msgstr "Нанести 25 000 ед. урона в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/crushing_damage_1026_2/condition"
+msgstr "Нанести 225 000 ед. урона в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/crushing_damage_1026_3/condition"
+msgstr "Нанести 550 000 ед. урона в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
 msgstr "Нанести 25 000 ед. урона в режиме «Натиск»."
@@ -8320,6 +8598,24 @@ msgstr "Нанести 225 000 ед. урона в режиме «Натиск»
 
 msgid "customization/tooltip/quests/crushing_damage_965_3/condition"
 msgstr "Нанести 550 000 ед. урона в режиме «Натиск»."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1026_1/condition"
+msgstr ""
+"Провести 10 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
+"(алый)»."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1026_2/condition"
+msgstr ""
+"Провести 25 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
+"(алый)»."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1026_3/condition"
+msgstr ""
+"Провести 50 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
+"(алый)»."
 
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr ""
@@ -8408,6 +8704,15 @@ msgstr ""
 "Провести 50 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
 "(лазурный)»."
 
+msgid "customization/tooltip/quests/destroyed_vehicles_1026_1/condition"
+msgstr "Уничтожить 15 машин противника в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1026_2/condition"
+msgstr "Уничтожить 150 машин противника в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1026_3/condition"
+msgstr "Уничтожить 350 машин противника в режиме «Натиск»."
+
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
 msgstr "Уничтожить 15 машин противника в режиме «Натиск»."
 
@@ -8462,6 +8767,9 @@ msgstr "Уничтожить 150 машин противника в режиме
 msgid "customization/tooltip/quests/destroyed_vehicles_965_3/condition"
 msgstr "Уничтожить 350 машин противника в режиме «Натиск»."
 
+msgid "customization/tooltip/quests/double_threat_1026/condition"
+msgstr "Одержать 25 побед в режиме «Натиск» в составе взвода из 2 человек."
+
 msgid "customization/tooltip/quests/double_threat_836/condition"
 msgstr "Одержать 25 побед в режиме «Натиск» в составе взвода из 2 человек."
 
@@ -8481,6 +8789,18 @@ msgstr ""
 msgid "customization/tooltip/quests/find_and_destroy_775/condition"
 msgstr ""
 "Обнаружить или уничтожить 500 машин противника, сражаясь в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/going_to_circle_1026_1/condition"
+msgstr ""
+"Суммарно заработать 250 очков захвата и защиты базы в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/going_to_circle_1026_2/condition"
+msgstr ""
+"Суммарно заработать 500 очков захвата и защиты базы в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/going_to_circle_1026_3/condition"
+msgstr ""
+"Суммарно заработать 750 очков захвата и защиты базы в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
 msgstr ""
@@ -8564,6 +8884,11 @@ msgstr ""
 "10 раз совершите первое уничтожение техники в бою, сражаясь в режиме "
 "«Натиск»."
 
+msgid "customization/tooltip/quests/last_man_1026/condition"
+msgstr ""
+"Победить в бою в режиме «Натиск», оставшись в одиночку против 3 и более "
+"машин противника."
+
 msgid "customization/tooltip/quests/last_man_836/condition"
 msgstr ""
 "Победить в бою в режиме «Натиск», оставшись в одиночку против 3 и более "
@@ -8616,6 +8941,11 @@ msgstr ""
 "50 раз занять первое место по очкам престижа в своей команде, сражаясь в "
 "режиме «Натиск»."
 
+msgid "customization/tooltip/quests/prestige_7v7_1026/condition"
+msgstr ""
+"50 раз занять первое место по очкам престижа в своей команде, сражаясь в "
+"режиме «Натиск»."
+
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
 msgstr ""
 "50 раз занять первое место по очкам престижа в своей команде, сражаясь в "
@@ -8641,6 +8971,10 @@ msgstr "Выполнено"
 
 msgid "customization/tooltip/quests/progressBig"
 msgstr "Выполнено: "
+
+msgid "customization/tooltip/quests/rampage_1026/condition"
+msgstr ""
+"Уничтожить в одном бою 5 машин противника, сражаясь в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/rampage_836/condition"
 msgstr ""
@@ -8709,6 +9043,11 @@ msgstr "Время на выполнение задачи истекло — э
 msgid "customization/tooltip/quests/status/unavailable"
 msgstr "Недоступно"
 
+msgid "customization/tooltip/quests/sudden_strike_1026/condition"
+msgstr ""
+"10 раз совершить первое уничтожение техники в бою, сражаясь в режиме "
+"«Натиск»."
+
 msgid "customization/tooltip/quests/sudden_strike_836/condition"
 msgstr ""
 "10 раз совершите первое уничтожение техники в бою, сражаясь в режиме "
@@ -8734,6 +9073,21 @@ msgstr "Одержать 15 побед в режиме «Натиск» в со�
 
 msgid "customization/tooltip/quests/supersquad_wins_775/condition"
 msgstr "Одержать 15 побед в режиме «Натиск» в составе супервзвода."
+
+msgid "customization/tooltip/quests/tactical_advantage_1026_1/condition"
+msgstr ""
+"Суммарно захватить командой 15 ключевых позиций в режиме «Натиск». В зачёт "
+"идут захваты игрока и союзников."
+
+msgid "customization/tooltip/quests/tactical_advantage_1026_2/condition"
+msgstr ""
+"Суммарно захватить командой 150 ключевых позиций в режиме «Натиск». В зачёт "
+"идут захваты игрока и союзников."
+
+msgid "customization/tooltip/quests/tactical_advantage_1026_3/condition"
+msgstr ""
+"Суммарно захватить командой 375 ключевых позиций в режиме «Натиск». В зачёт "
+"идут захваты игрока и союзников."
 
 msgid "customization/tooltip/quests/tactical_advantage_648_1/condition"
 msgstr ""
@@ -8837,6 +9191,10 @@ msgid "customization/tooltip/quests/veni_vidi_vici_775/condition"
 msgstr ""
 "Сражаясь в режиме «Натиск», победить в бою, уничтожив всю технику противника"
 " менее чем за 150 секунд."
+
+msgid "customization/tooltip/quests/workhorse_1026/condition"
+msgstr ""
+"Обнаружить или уничтожить 500 машин противника, сражаясь в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/workhorse_836/condition"
 msgstr ""
@@ -11834,6 +12192,12 @@ msgstr "Волнорез"
 msgid "emblem/special/sticker_843"
 msgstr "Лига «Натиска», зима 2025"
 
+msgid "emblem/special/sticker_859"
+msgstr "Boosteroid"
+
+msgid "emblem/special/sticker_861"
+msgstr "Воронка"
+
 msgid "filter/popover/bonusType/title"
 msgstr "Типы бонусов"
 
@@ -14479,11 +14843,65 @@ msgstr "Каржигис"
 msgid "inscription/special/special_766"
 msgstr "Гром"
 
+msgid "inscription/special/special_767"
+msgstr "Первый в Бастони"
+
 msgid "inscription/special/special_768"
 msgstr "Восходящая звезда"
 
 msgid "inscription/special/special_769"
 msgstr "Лига «Натиска», зима 2025"
+
+msgid "inscription/special/special_770"
+msgstr "Приветики!"
+
+msgid "inscription/special/special_771"
+msgstr "Эй, полегче!"
+
+msgid "inscription/special/special_772"
+msgstr "Последнее слово?"
+
+msgid "inscription/special/special_773"
+msgstr "Увидимся!"
+
+msgid "inscription/special/special_774"
+msgstr "Йо-хо-хо"
+
+msgid "inscription/special/special_775"
+msgstr "Моя коробочка!"
+
+msgid "inscription/special/special_776"
+msgstr "Альфа-пёс"
+
+msgid "inscription/special/special_777"
+msgstr "Беспроигрышный вариант"
+
+msgid "inscription/special/special_778"
+msgstr "Авангард"
+
+msgid "inscription/special/special_779"
+msgstr "Бегущий по краю"
+
+msgid "inscription/special/special_780"
+msgstr "Кошмар наяву"
+
+msgid "inscription/special/special_781"
+msgstr "7x7"
+
+msgid "inscription/special/special_782"
+msgstr "БУЙСТВО!!!"
+
+msgid "inscription/special/special_783"
+msgstr "Неудержимый"
+
+msgid "inscription/special/special_796"
+msgstr "Змеиная удача"
+
+msgid "inscription/special/special_797"
+msgstr "Знаменательный год"
+
+msgid "inscription/special/special_798"
+msgstr "Танец весны"
 
 msgid "inscription/special/special_81"
 msgstr "За Родину!"
@@ -17506,8 +17924,29 @@ msgstr "Сомурршенный подарок"
 msgid "projection_decals/holiday/projection_decal_653"
 msgstr "Опрятный парень"
 
+msgid "projection_decals/holiday/projection_decal_654"
+msgstr "По-джентльменски"
+
+msgid "projection_decals/holiday/projection_decal_658"
+msgstr "Чайку?"
+
+msgid "projection_decals/holiday/projection_decal_659"
+msgstr "Бенгальские огоньки"
+
 msgid "projection_decals/holiday/projection_decal_66"
 msgstr "Космический челнок"
+
+msgid "projection_decals/holiday/projection_decal_660"
+msgstr "Стреляй на стиле"
+
+msgid "projection_decals/holiday/projection_decal_661"
+msgstr "На острие"
+
+msgid "projection_decals/holiday/projection_decal_662"
+msgstr "В салоне кот"
+
+msgid "projection_decals/holiday/projection_decal_663"
+msgstr "В салоне пёс"
 
 msgid "projection_decals/holiday/projection_decal_67"
 msgstr "Восток-1"
@@ -20687,6 +21126,9 @@ msgstr ""
 "Выдавалась за выдающийся результат в таблице лидеров режима «Последний "
 "рубеж» события «Проект \"Вавилон\"»."
 
+msgid "projection_decals/special/projection_decal_787"
+msgstr "Почётный игрок Steam"
+
 msgid "projection_decals/special/projection_decal_788"
 msgstr "Гуль"
 
@@ -20771,6 +21213,21 @@ msgstr "Столбы Гедиминовы"
 msgid "projection_decals/special/projection_decal_811"
 msgstr "Первый Витис"
 
+msgid "projection_decals/special/projection_decal_812"
+msgstr "Праздничная ель"
+
+msgid "projection_decals/special/projection_decal_813"
+msgstr "Снежная команда"
+
+msgid "projection_decals/special/projection_decal_814"
+msgstr "Праздничный гость"
+
+msgid "projection_decals/special/projection_decal_815"
+msgstr "Ночной дозор"
+
+msgid "projection_decals/special/projection_decal_816"
+msgstr "Зимний рейд"
+
 msgid "projection_decals/special/projection_decal_818"
 msgstr "Нерушимая воля"
 
@@ -20795,6 +21252,9 @@ msgstr ""
 "Вот так мог выглядеть член экипажа мужского пола, если бы Wargaming оставил "
 "некоторые наработки из первоначального проекта игры."
 
+msgid "projection_decals/special/projection_decal_843"
+msgstr "Неоновый танк"
+
 msgid "projection_decals/special/projection_decal_85"
 msgstr "Эльфийка"
 
@@ -20802,6 +21262,21 @@ msgid "projection_decals/special/projection_decal_85/description"
 msgstr ""
 "Вот так мог выглядеть член экипажа женского пола, если бы Wargaming оставил "
 "некоторые наработки из первоначального проекта игры."
+
+msgid "projection_decals/special/projection_decal_854"
+msgstr "Мэнь-шэнь"
+
+msgid "projection_decals/special/projection_decal_855"
+msgstr "Пирожки на пару"
+
+msgid "projection_decals/special/projection_decal_856"
+msgstr "Змеиное сокровище"
+
+msgid "projection_decals/special/projection_decal_857"
+msgstr "По следу"
+
+msgid "projection_decals/special/projection_decal_858"
+msgstr "Взгляд дракона"
 
 msgid "projection_decals/special/projection_decal_86"
 msgstr "П-тушитель"
@@ -21195,6 +21670,45 @@ msgstr "Удаление декали"
 msgid "propertySheet/title/scale"
 msgstr "Масштабирование рисунка"
 
+msgid "questProgress/cust_progress_1026_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1026_10"
+msgstr "Кошмар наяву"
+
+msgid "questProgress/cust_progress_1026_11"
+msgstr "7x7"
+
+msgid "questProgress/cust_progress_1026_12"
+msgstr "БУЙСТВО!!!"
+
+msgid "questProgress/cust_progress_1026_13"
+msgstr "Неудержимый"
+
+msgid "questProgress/cust_progress_1026_2"
+msgstr "Сокрушительный урон"
+
+msgid "questProgress/cust_progress_1026_3"
+msgstr "Показательное выступление"
+
+msgid "questProgress/cust_progress_1026_4"
+msgstr "Едем в круг"
+
+msgid "questProgress/cust_progress_1026_5"
+msgstr "Тактическое преимущество"
+
+msgid "questProgress/cust_progress_1026_6"
+msgstr "До новых встреч"
+
+msgid "questProgress/cust_progress_1026_7"
+msgstr "Беспроигрышный вариант"
+
+msgid "questProgress/cust_progress_1026_8"
+msgstr "Авангард"
+
+msgid "questProgress/cust_progress_1026_9"
+msgstr "Бегущий по краю"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -21567,6 +22081,12 @@ msgstr "Фрейт Трейн"
 msgid "repaint/Blitztech"
 msgstr "Blitztech"
 
+msgid "repaint/Boosteroid_01"
+msgstr "Полностью усиленный"
+
+msgid "repaint/Boosteroid_02"
+msgstr "Здесь обитают драконы"
+
 msgid "repaint/Breadboard"
 msgstr "Макетная плата"
 
@@ -21704,6 +22224,9 @@ msgstr "Битва блогеров 2021"
 
 msgid "repaint/bear"
 msgstr "Чёрный медведь"
+
+msgid "repaint/beast_4"
+msgstr "Циклон"
 
 msgid "repaint/bp2021_1"
 msgstr "Ледник"
@@ -23609,6 +24132,17 @@ msgstr ""
 "\"Хребты безумия\". Это вообще не по-джентльменски. Ну ничего, я поищу и в "
 "своих рукавах соответствующие козыри»."
 
+msgid "special_style/A88_M53_55_NY25_3Dst"
+msgstr "Амфибия"
+
+msgid "special_style/A88_M53_55_NY25_3Dst_desc/long"
+msgstr ""
+"[СТРОГО КОНФИДЕНЦИАЛЬНО]\n"
+"\n"
+"Отчёт об испытаниях плавающей САУ\n"
+"\n"
+"В результате долгих месяцев доработок и прототипирования этим утром для испытаний был представлен модернизированный плавающий образец САУ M53/55. На суше машина продемонстрировала убедительные результаты, однако при контакте с водной поверхностью обнаружились многочисленные недостатки, которые сделали дальнейшую разработку невозможной. Заключение: немедленно свернуть всю работу над проектом плавающей САУ. НЕ ПЫТАТЬСЯ ВЫЙТИ НА МАШИНЕ НА ВОДУ!"
+
 msgid "special_style/A92_M60_3DSt_ZI_21"
 msgstr "Хэлрейзер"
 
@@ -23651,6 +24185,36 @@ msgid "special_style/Blitztech_desc"
 msgstr ""
 "Всесезонный стиль, доступный для получения в рамках события «Ваффентрагер: "
 "проект \"Гиперион\"»."
+
+msgid "special_style/Boosteroid_01"
+msgstr "Полностью усиленный"
+
+msgid "special_style/Boosteroid_01_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_01_desc/long"
+msgstr ""
+"Ваша машина пульсирует неослабевающей энергией, заряженная и готовая к бою. "
+"Ловко и проворно вы пробираетесь по полю боя, с лёгкостью минуя ловушки "
+"противника и уничтожая преследователей с потрясающей точностью. Оппоненты "
+"смотрят с трепетом, ошеломлённые мастерством командира этой неудержимой "
+"машины."
+
+msgid "special_style/Boosteroid_02"
+msgstr "Здесь обитают драконы"
+
+msgid "special_style/Boosteroid_02_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_02_desc/long"
+msgstr ""
+"В стародавние времена картографы отмечали неведомые земли фразой «Здесь "
+"обитают драконы» и изображениями жутких мифических созданий, предупреждая об"
+" опасностях, которые таят неисследованные регионы. Однако люди даже не "
+"догадывались, что драконы обитают гораздо ближе. Среди древних гор и "
+"позабытых руин их глаза сверкают в темноте, и только звук огненного дыхания "
+"неизменно прорезает вековую тишину. Скрытые от глаз смертных, они наблюдают "
+"и выжидают, чтобы однажды вернуться."
 
 msgid "special_style/Breadboard"
 msgstr "Макетная плата"
@@ -23854,6 +24418,20 @@ msgstr ""
 "Уникальный стиль, приуроченный к началу декабрьского контрнаступления под "
 "Москвой в 1941 году."
 
+msgid "special_style/Cz02_TVP_T50_NY25_3Dst"
+msgstr "Орлик"
+
+msgid "special_style/Cz02_TVP_T50_NY25_3Dst_desc/long"
+msgstr ""
+"«Дорога никогда не заканчивается. Та война прошла, но наш экипаж вновь идёт "
+"напролом за свободой и справедливостью. И как идёт! Они боятся наших "
+"поездов, а что скажут, когда на рельсах появится ОН! Прожектор рассекает "
+"ночь, колёса отстукивают ритм, и маленький \"Орлик\" приближается к точке "
+"назначения. Это уже не танк, а крайняя мера. Когда слова заканчиваются, в "
+"дело вступает \"Максим\". Когда дипломатия не работает, мы заряжаем "
+"бронебойные. Когда молчат остальные, мы говорим на языке войны. И говорим "
+"громко…»"
+
 msgid "special_style/Cz04_T50_51_3Dst"
 msgstr "Шторм"
 
@@ -23934,6 +24512,20 @@ msgstr ""
 "«Ты думаешь, раз правительство купило лицензию на производство советских машин, то мы тут же откажемся от идеи собственного танка? А все эти дни и ночи, когда мои инженеры не покладая рук с нуля создавали этот проект — это всё впустую, да? Как бы не так. Наша оружейная промышленность во все годы была одной из лучших в Европе! Так что пока я тут главный конструктор, мы пусть и тайком, под полом, но доведём до ума отечественный современный проект. Нам нужна своя броня, а не заимствование чужих технологий!\n"
 "\n"
 "Дорогой Ярек, мы знакомы уже 15 лет, и я всецело тебе доверяю: возьми своих парней и устрой нашему танку настоящую проверку, как ты умеешь. Я должен знать всё, на что способна эта машина — её слабые и сильные стороны. Легенду оставь мне: я придумаю, о чём доложить наверх. Не забудь, я жду тебя с Мартой на ужин в эту субботу»."
+
+msgid "special_style/Cz17_Vz_55_NY2025_3Dst"
+msgstr "Квинтэссенция"
+
+msgid "special_style/Cz17_Vz_55_NY2025_3Dst_desc/long"
+msgstr ""
+"«Оно того стоило: каждое видение, галлюцинация, каждый ночной кошмар, "
+"заставляющий просыпаться в холодном поту. Город, казалось, гудел от магии. "
+"Телепаты, прорицатели, алхимики, маги — все они были здесь, в любой таверне,"
+" в каждом переулке. Но даже представители самых тёмных магических практик, "
+"некроманты, не могли предвидеть подобной силы. Она струится внутри наших "
+"боевых машин, манит наших врагов, заставляя их питать иллюзорные надежды. "
+"Глупцы! Древние считали, что эфир — это дыхание богов. Я своими глазами "
+"увидел, на что он способен. Думаю, они знали, о чём говорили»."
 
 msgid "special_style/Cz17_Vz_55_OCN_3DSt"
 msgstr "Готический воин"
@@ -24207,6 +24799,18 @@ msgstr ""
 "всей военной машине великой Германии в северной Африке. У британских танков "
 "есть топливо»."
 
+msgid "special_style/G121_Grille_15_L63_NY2025_3Dst"
+msgstr "Удочка"
+
+msgid "special_style/G121_Grille_15_L63_NY2025_3Dst_desc/long"
+msgstr ""
+"«Дай человеку рыбу, и он будет сыт один день. Дай ему танк в виде удочки, и "
+"сражения будут кормить его всю жизнь! Немного притянуто за уши? Хотя, если "
+"подумать, охота на вражеский танк сродни рыбалке. Подсечёшь чуть раньше — "
+"спугнёшь. Чуть позже — успеет сорваться. Тут важна выдержка, внимательность."
+" А главное, нужно чувствовать момент. И рраз! Остаётся просто закончить "
+"начатое — противник заглотил наживку, и ему уже не уйти»."
+
 msgid "special_style/G134_PzKpfw_VII_3Dst"
 msgstr "Десятый олень"
 
@@ -24290,6 +24894,23 @@ msgstr ""
 "\n"
 "13.04\n"
 "Они всё-таки одобрили машину именно в этом виде. В каком мире я живу...»"
+
+msgid "special_style/G154_Kpz_07_RH_WD_3Dst"
+msgstr "Белый дракон"
+
+msgid "special_style/G154_Kpz_07_RH_WD_3Dst_desc"
+msgstr "?empty?"
+
+msgid "special_style/G154_Kpz_07_RH_WD_3Dst_desc/long"
+msgstr ""
+"Белый дракон — страж воды и воздуха, который охраняет всё доброе. Хоть его "
+"лик и может показаться грозным, это благородный зверь с чистой душой. Он "
+"обладает мудростью тысячелетий, а его могущество не знает границ, если он "
+"желает им воспользоваться. Но он существо не злонамеренное и не карающее, он"
+" — податель жизни, и чешуя его блестит ослепительной белизной, чище снега, "
+"что украшает верхушки гор. Год Дракона, что наступает каждые 12 лет, — "
+"благоприятное время, полное удачи и благополучия, ведь тогда Белый дракон "
+"делится своей бесконечной милостью со смертным миром."
 
 msgid "special_style/G162_Project_Kpz_07P_E_KL_3DSt"
 msgstr "Нуммер"
@@ -24633,6 +25254,18 @@ msgstr ""
 " нас одна. Хороший \"дембельский аккорд\" выходит, жаль, никто потом о нём "
 "не узнает — секретно тут всё, не для лишних глаз и ушей»."
 
+msgid "special_style/GB32_Tortoise_NY25_3DSt"
+msgstr "Черепаха"
+
+msgid "special_style/GB32_Tortoise_NY25_3DSt_desc/long"
+msgstr ""
+"«Тише едешь — дальше будешь. Так я считаю, при всём моём уважении к зайцам. "
+"Я старая, мудрая черепаха и знаю, о чём говорю. Мой панцирь немало повидал "
+"на своём веку. С возрастом на многие вещи начинаешь смотреть по-другому. "
+"Например, понимаешь, что терпение — ключ к успеху. Если подождать, "
+"обязательно случится что-то хорошее. Ну, например, заслуженный отпуск на "
+"Галапагосских островах...»"
+
 msgid "special_style/GB83_FV4005_3DSt_MD_21_XXII"
 msgstr "Дитя грома"
 
@@ -24673,6 +25306,19 @@ msgstr ""
 "Все звуки вдруг тонут в адском грохоте. Ты приходишь в себя, скрюченный на дне машины. Делаешь вдох, и лёгкие наполняет пурпурный дым, который проник сквозь пробоину. Ты чувствуешь, как он растворяет тебя изнутри. Как ты растекаешься, становишься частью танка. Это больно. Больнее, чем уколы снарядов. Плохое воспоминание. Лучше спать.\n"
 "\n"
 "Спать… Сон дарит это тягучее, плавное чувство покоя, в котором нет боли. Совсем нет."
+
+msgid "special_style/GB86_Centurion_Action_X_NY2025_3Dst"
+msgstr "Британская сталь"
+
+msgid "special_style/GB86_Centurion_Action_X_NY2025_3Dst_desc/long"
+msgstr ""
+"«Парни, вы знаете, что делать и знаете, как управляться с этой малышкой. Это"
+" отличная британская сталь, закалённая в бою, как и все вы. Нет ничего, что "
+"она не смогла бы выдержать, а значит, выдержим и мы, не впервой. Только не "
+"надо геройствовать: дисциплина превыше всего. Нам не нужно никого из себя "
+"строить, мы просто делаем своё дело. День за днём. И чаще всего в этом нет "
+"ничего увлекательного или волнительного. Но это наша работа, и мы её "
+"выполним!»"
 
 msgid "special_style/GB91_Super_Conqueror_MD22_III_3DSt"
 msgstr "Юпитер Фульгур"
@@ -25359,6 +26005,19 @@ msgstr ""
 "Всесезонный стиль, посвящённый международному авиакосмическому салону и "
 "выставке аэропортового оборудования."
 
+msgid "special_style/advent_calendar_2024_1"
+msgstr "Тихая ночь"
+
+msgid "special_style/advent_calendar_2024_1_desc"
+msgstr "Всесезонный стиль, погружающий в чарующую новогоднюю атмосферу."
+
+msgid "special_style/advent_calendar_2024_2"
+msgstr "Волшебная игрушка"
+
+msgid "special_style/advent_calendar_2024_2_desc"
+msgstr ""
+"Всесезонный стиль, посвящённый самому желанному на Новый год — подаркам."
+
 msgid "special_style/allbetsareoff"
 msgstr "Ставки сделаны"
 
@@ -25593,6 +26252,23 @@ msgstr ""
 "Уникальный всесезонный стиль, выдаваемый за участие в событии «Битва "
 "блогеров» в составе команды Amway921. Может быть нанесён на машину любой "
 "нации и уровня."
+
+msgid "special_style/battle_of_bulge"
+msgstr "Арденнская операция"
+
+msgid "special_style/battle_of_bulge_desc"
+msgstr ""
+"Всесезонный стиль в честь одной из самых важных побед союзников во Второй "
+"мировой войне."
+
+msgid "special_style/battle_of_bulge_desc/long"
+msgstr ""
+"В декабре 1944 года немецкие войска предприняли наступление через лес в "
+"Арденнах и смогли вклиниться в позиции союзников. В январе 1945-го союзные "
+"войска провели контратаку и заставили немцев отступить. Арденнская операция,"
+" или «Битва за выступ», стала одним из крупнейших сражений Второй мировой "
+"войны с участием американских войск и символом героического сопротивления "
+"союзников."
 
 msgid "special_style/battle_of_kursk_01"
 msgstr "Герой Курской битвы"
@@ -26401,6 +27077,24 @@ msgstr ""
 "решит перейти его порог, мои клыки и когти встретят его как полагается. Я "
 "знаю, что (а вернее, кого) они здесь ищут. Но мальчишки Бьёрна уже давно "
 "нет, а то, во что он превратился, им точно не понравится."
+
+msgid "special_style/beast_4"
+msgstr "Циклон"
+
+msgid "special_style/beast_4_desc"
+msgstr "Всесезонный стиль, вдохновлённый стихийной силой ветра."
+
+msgid "special_style/beast_4_desc/long"
+msgstr ""
+"«Знай, друг, хотя я и невидим, я повсюду. Древние воздавали мне почести, "
+"обращаясь к духам и божествам, ибо их путешествия, их урожай, смена сезонов "
+"— всё зависело от моей благосклонности. Я — дыхание, что дарует жизнь этой "
+"земле. Я — стихия, формирующая бытие. Я — суть действия, изменение, "
+"приводящее мир в движение, дающее смысл. Дух, что колышет листья в древних "
+"лесах, поднимает волны, вытачивает утёсы и вырезает каньоны. Я стремительно "
+"несусь через величественные горы и бескрайние океаны, пересекаю засушливые "
+"пустыни и танцую над бесплодными степями. Я — неукротимый ураган, "
+"надвигающийся циклон и шёпот, что служит предвестником бури»."
 
 msgid "special_style/black_prince_2019_3dst"
 msgstr "Игрушки Хобарта"
@@ -28123,6 +28817,23 @@ msgstr ""
 "гражданин». Он до сих пор остаётся одной из самых узнаваемых и почитаемых "
 "персон как на территории бывшего СССР, так и во всём мире."
 
+msgid "special_style/gameplay_mode_progression"
+msgstr "Космическая значимость"
+
+msgid "special_style/gameplay_mode_progression_desc"
+msgstr "Всесезонный стиль, украшенный мистическими изображениями."
+
+msgid "special_style/gameplay_mode_progression_desc/long"
+msgstr ""
+"«Мои любимые артефакты. Бесценные сокровища, отброшенные, как жалкие "
+"побрякушки. Безделицы, которые собирают пыль в затхлых антикварных "
+"магазинах. Невозможно представить мучения, которые я испытал, пока искал их "
+"повсюду все эти годы. Надо мной смеялись, считая меня ещё одним старым, "
+"убогим, странствующим торговцем. Если бы только они знали о космический "
+"значимости этих скромных реликвий, то не так охотно фыркали бы в мою "
+"сторону. Но это неважно. Теперь они снова мои. Именем света всевидящего "
+"солнца, мы развеем тени древних секретов. Начнём же ритуал...»"
+
 msgid "special_style/gamer"
 msgstr "Геймер"
 
@@ -28188,6 +28899,22 @@ msgstr ""
 "наших новых мощных машинах. Черепаший панцирь, может, и прочный, но снаряды "
 "бронированных боевых машин со всемогущими орудиями прочнее, и с их помощью "
 "мы наконец воплотим наш план господства над миром без Черепах!»"
+
+msgid "special_style/gb_ht_line"
+msgstr "Юнион Джек"
+
+msgid "special_style/gb_ht_line_desc"
+msgstr ""
+"Всесезонный стиль для тех, кто хочет продемонстрировать свою любовь ко всему"
+" британскому."
+
+msgid "special_style/gb_ht_line_desc/long"
+msgstr ""
+"Юнион Джек — это символ наследия и традиций Великобритании, олицетворяющий "
+"объединённые идентичности её наций. Хотя некоторые считают, что название "
+"«Юнион Джек» относится только к флагу, поднятому на море, оно используется "
+"для обозначения флага с XVII века. Его традиционные цвета — красный, белый и"
+" синий — стали мировым символом британской гордости, истории и единства."
 
 msgid "special_style/gift_NY_2019"
 msgstr "Многотонный подарочек"
@@ -28681,6 +29408,53 @@ msgstr ""
 "баланса, талисман. И всё будет ладно и тихо, пока он там. Пока его мягкие "
 "лапы ступают по облаку»."
 
+msgid "special_style/lunar_ny_2025_1"
+msgstr "Танец змея"
+
+msgid "special_style/lunar_ny_2025_1_desc"
+msgstr "Всесезонный стиль, посвящённый змеиной мудрости и грации."
+
+msgid "special_style/lunar_ny_2025_1_desc/long"
+msgstr ""
+"Во многих культурах змея ассоциируется с опасностью и соблазном, но в "
+"китайском гороскопе она олицетворяет мудрость, интуицию и преображение. В "
+"древней китайской мифологии божественные прародители человечества, Фу Си и "
+"Нюйва, изображались в виде необычных существ, сочетающих черты человека и "
+"змеи, символизируя созидание и баланс. Змею часто называют «маленьким "
+"драконом» и многие верят, что она приносит удачу. Люди, рождённые в год "
+"Змеи, обладают острым умом, твёрдыми суждениями и невероятной харизмой."
+
+msgid "special_style/lunar_ny_2025_2"
+msgstr "Ледяной змей"
+
+msgid "special_style/lunar_ny_2025_2_desc"
+msgstr "Всесезонный стиль, подчёркивающий тихую красоту зимы"
+
+msgid "special_style/lunar_ny_2025_2_desc/long"
+msgstr ""
+"В китайской культуре зима считается порой отдыха, размышлений и обновления, "
+"как и змея, которая символизирует изящное преображение и новые начинания. "
+"Жизнь замирает в тишине холодных зимних ночей, подобно змее, что тайно "
+"дремлет, набираясь сил для тёплой поры. В этом покое, окутанная морозами, "
+"она готовится к новому периоду жизни, который начнётся с приходом весны."
+
+msgid "special_style/lunar_ny_2025_3"
+msgstr "Клятва Мэнь-шэнь"
+
+msgid "special_style/lunar_ny_2025_3_desc"
+msgstr ""
+"Всесезонный стиль, посвящённый Мэнь-шэнь — божественным воинам, защищающим "
+"людей от злых духов."
+
+msgid "special_style/lunar_ny_2025_3_desc/long"
+msgstr ""
+"Мэнь-шэнь или «Боги дверей» — бесстрашные воины, охраняющие двери и врата. "
+"Они широко почитаются в китайском фольклоре и изображаются как свирепые "
+"стражи с грозным оружием в руках. Считается, что эти божества охраняют людей"
+" от злых духов. В Лунный Новый год семьи украшают свои двери яркими "
+"изображениями Мэнь-шэнь, чтобы те даровали защиту от злых сил и "
+"благословение мира, безопасности и процветания в наступающем году."
+
 msgid "special_style/manners"
 msgstr "О человеке судят по манерам"
 
@@ -28710,6 +29484,9 @@ msgstr ""
 
 msgid "special_style/manticore_progression"
 msgstr "Мифический зверь (лазурный)"
+
+msgid "special_style/manticore_progression_2024"
+msgstr "Мифический зверь (алый)"
 
 msgid "special_style/manticore_yearly"
 msgstr "Мифический зверь"
@@ -29342,6 +30119,124 @@ msgstr ""
 "не бегайте по салону;\n"
 "НЕ ИСПОЛЬЗУЙТЕ крышу для посадки в такси;\n"
 "не отвлекайте водителя во время движения — у него осталось всего пять штрафных баллов."
+
+msgid "special_style/ny_2025_bro"
+msgstr "Из глубин"
+
+msgid "special_style/ny_2025_bro_desc"
+msgstr ""
+"Всесезонный стиль, посвящённый диковинным созданиям, что обитают в глубинах "
+"семи морей."
+
+msgid "special_style/ny_2025_bro_desc/long"
+msgstr ""
+"С незапамятных времён моряки, бороздившие просторы семи морей, передавали из"
+" поколения в поколение легенды о жутких монстрах, таящихся в бездонных "
+"глубинах: великий Левиафан, морской змей, вселявший ужас, могучий Кракен, "
+"гроза викингов, Ктулху, вечный хранитель затонувшего города, и неуловимый "
+"белый кит, приносивший погибель даже самым опытным мореплавателям. Так пусть"
+" же легенды послужат предупреждением любому, кто посмеет бросить вызов морю "
+"в поисках неведомых земель и несметных сокровищ. Берегись чудовищ, обитающих"
+" во тьме бесконечных глубин."
+
+msgid "special_style/ny_2025_cat"
+msgstr "Пушистый комочек"
+
+msgid "special_style/ny_2025_cat_desc"
+msgstr "Всесезонный стиль, посвящённый венцу природного мира — котам."
+
+msgid "special_style/ny_2025_cat_desc/long"
+msgstr ""
+"«Что случилось, человек? Чихаешь? Прости, так иногда бывает. Должно быть, "
+"дело в моём природном обаянии. А может, это из-за моей чудесной шёрстки? "
+"Каюсь, она повсюду. Но ты же не против, правда? Я ведь такой замурчательный."
+" Так, а что ты там говорил про танки? Пожалуй, без меня. Лучше подсади-ка "
+"меня поближе к аквариуму. Золотые рыбки сами себя не съедят, знаешь ли»."
+
+msgid "special_style/ny_2025_challenge"
+msgstr "Смертельная гонка"
+
+msgid "special_style/ny_2025_challenge_desc"
+msgstr "Всесезонный стиль, передающий дух захватывающей бесконечной гонки."
+
+msgid "special_style/ny_2025_challenge_desc/long"
+msgstr ""
+"«Твоя машина — не просто бездушная оболочка. Она продолжение тебя самого, "
+"отражение твоего внутреннего \"я\". Каждый скол, каждая царапина, пулевое "
+"отверстие оставляют неизгладимые шрамы на тебе самом. В пылу гонки вы "
+"становитесь единым целым. Ты чувствуешь её мощь, струящуюся по твоим венам, "
+"а она безотказно отзывается на малейшее твоё движение. Поверь мне, это "
+"идеальная комбинация. Возможно, ты не сразу найдёшь такую тачку, но когда "
+"это случится, тебя уже никто не остановит»."
+
+msgid "special_style/ny_2025_dog"
+msgstr "Хороший мальчик"
+
+msgid "special_style/ny_2025_dog_desc"
+msgstr "Всесезонный стиль, посвящённый лучшим друзьям человека... и танкиста."
+
+msgid "special_style/ny_2025_dog_desc/long"
+msgstr ""
+"«Он прибился к нам во время манёвров в горах пару дней назад. Выглядел таким"
+" побитым, блохи его грызли нещадно. Но только нас увидел — сразу подбежал: "
+"хвост, как помело, язык болтается. Бедняга днями людей не видел. Мы думали, "
+"он прямо тут коньки и откинет, а нет — увязался следом, когда мы выдвинулись"
+" к казармам. Даже не спрашивайте, как нам удалось протащить его мимо "
+"постовых и прятать столько времени. Но мы просто не могли оставить там этого"
+" красавца!»"
+
+msgid "special_style/ny_2025_guest1"
+msgstr "Несокрушимый"
+
+msgid "special_style/ny_2025_guest1_desc"
+msgstr ""
+"Всесезонный стиль, который превратит вашу машину в закалённого в боях воина."
+
+msgid "special_style/ny_2025_guest1_desc/long"
+msgstr ""
+"«Посмотри внимательно на эту тачку. Она многое повидала. Вся побита, кузов в"
+" пулевых отверстиях. Такое чувство, будто прошла огонь, воду и медные трубы."
+" И она всё ещё на ходу! В отличие от тебя, у которого не хватает сил дойти "
+"до тренажёрки. Слушай, для того, чем мы тут занимаемся, нужна выдержка и "
+"сила духа. Нельзя просто взять и не выйти в бой. Отсидеться в кустах тоже не"
+" получится. Заруби себе на носу: дисциплина и стойкость превыше всего. И "
+"если ты опять придёшь ко мне жаловаться на то, что у тебя \"нет "
+"настроения\", разговор будет совсем другим. Вопросы?»"
+
+msgid "special_style/ny_2025_guest2"
+msgstr "Коллекционер"
+
+msgid "special_style/ny_2025_guest2_desc"
+msgstr ""
+"Всесезонный стиль, демонстрирующий, насколько важно иметь под рукой нужный "
+"«инструмент»."
+
+msgid "special_style/ny_2025_guest2_desc/long"
+msgstr ""
+"«Не подумай, что я хвастаюсь или что-то вроде того. Не в моём стиле. Я "
+"просто хочу быть уверен, что в любой ситуации у меня под рукой будет "
+"необходимый «инструмент». А ситуации бывают разные. Иногда нужно что-то "
+"элегантное, бесшумное, а иногда — что-то покрупнее, посолиднее, погромче. "
+"Да, случаи бывали разные, уже сбился со счёта. Но мои инструменты всегда в "
+"идеальном состоянии. Никогда ведь не знаешь, какой из них может понадобиться"
+" в следующую секунду. Но что бы ни случилось, я к этому готов!»"
+
+msgid "special_style/ny_2025_snowman"
+msgstr "Зимнее веселье"
+
+msgid "special_style/ny_2025_snowman_desc"
+msgstr "Всесезонный стиль со снеговиком — главным символом настоящей зимы!"
+
+msgid "special_style/ny_2025_snowman_desc/long"
+msgstr ""
+"«Снеговики — существа непостоянные. Ну, сами посудите: у кого ещё форма "
+"туловища зависит от температуры за окном. Тот, кто сегодня величественно "
+"стоит в центре праздничной площади, завтра вполне может \"поплыть\". А с "
+"нашей погодой — так и к вечеру. И это ещё полбеды. Вчера, например, в "
+"городке играли соседские дети. Совпадение ли, но у нашего снеговика "
+"появилась лишняя рука и куда-то исчезли ноги… Конечно, можно было бы "
+"попросить Чаффи заняться охраной снежного друга, но этот пёс уж слишком "
+"любит морковь…»"
 
 msgid "special_style/oakwood"
 msgstr "Дуб-хранитель"
@@ -30336,6 +31231,14 @@ msgstr ""
 "Всесезонный стиль, приуроченный к событию «Wargaming: Выходные издателя» в "
 "Steam."
 
+msgid "special_style/steam_unlock"
+msgstr "Стимроллер"
+
+msgid "special_style/steam_unlock_desc"
+msgstr ""
+"Всесезонный стиль с вентилями и манометрами, который обеспечит вам "
+"максимальную мощность в бою."
+
 msgid "special_style/steel_hunter_arcade_1"
 msgstr "Ветеран Зоны 404"
 
@@ -30377,6 +31280,25 @@ msgid "special_style/supertest_style_desc"
 msgstr ""
 "Уникальный всесезонный стиль, выдаваемый за выслугу лет участникам "
 "Супертеста. Может быть нанесён на машину любой нации и уровня."
+
+msgid "special_style/surprise"
+msgstr "Праздничное настроение"
+
+msgid "special_style/surprise_desc"
+msgstr ""
+"Всесезонный стиль, с которым даже самая грозная машина будет выглядеть "
+"нарядно."
+
+msgid "special_style/surprise_desc/long"
+msgstr ""
+"«Леденцы? На месте. Праздничные венки? Здесь. Пряники? Тоже тут. И ещё, "
+"обязательно не забыть уголь для непослушных детей! О, и конечно подарки, "
+"куда ж без них. Но вот какое дело — эти сани, ну не знаю. Не моё это. В "
+"смысле, лететь по небу в свете полной луны, наверное, ужасно круто и всё "
+"такое, но я предпочитаю что-то попроще, что-то... помощнее. Вот это по мне. "
+"Огромный, стальной, с отличной пушкой. Что, недостаточно празднично? Ладно, "
+"давай замотаем его в какую-нибудь красочную обёртку. Ну, бывай, счастливых "
+"праздников»."
 
 msgid "special_style/t50_2"
 msgstr "Бессмертная классика"

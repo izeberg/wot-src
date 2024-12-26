@@ -101,12 +101,10 @@ class AnimatorComponent(PyComponentWrapperBase):
 	def setFloatParam(self, *args, **kwargs): pass
 	def setTrigger(self, *args, **kwargs): pass
 	def start(self, *args, **kwargs): pass
-	def startLayer(self, *args, **kwargs): pass
 	def startLayerByIndex(self, *args, **kwargs): pass
 	def startLayerByName(self, *args, **kwargs): pass
 	startTime = property(lambda self: None)
 	def stop(self, *args, **kwargs): pass
-	def stopLayer(self, *args, **kwargs): pass
 	def stopLayerByIndex(self, *args, **kwargs): pass
 	def stopLayerByName(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass

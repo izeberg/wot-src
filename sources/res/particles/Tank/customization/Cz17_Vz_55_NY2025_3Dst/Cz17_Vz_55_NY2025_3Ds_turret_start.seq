@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.666667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>turret_lines</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Turret.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.577100 -0.425000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>m_turret</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.031373 0.909804 0.870588 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.646087</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.646087</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.238612</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.238612</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>turret_glass</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Glass_2.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.577100 -0.425000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>m_glass2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.031373 0.909804 0.870588 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.101744</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.101744</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.080357</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.080357</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.766667</startTime>
+				<value>0.031373 0.909804 0.870588 2.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -3.566296</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.566296</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.031373 0.909804 0.870588 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.101239</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.101239</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>m_glass2</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.050000 0.100000 0.000000</value>
+				<inTangent>-10.549845 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-10.549845 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>60.000000 0.050000 0.100000 0.000000</value>
+				<inTangent>184.821426 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>184.821426 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.766667</startTime>
+				<value>120.000000 0.050000 0.100000 0.000000</value>
+				<inTangent>-245.218246 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-245.218246 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>60.000000 0.050000 0.100000 0.000000</value>
+				<inTangent>-0.369173 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.369173 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

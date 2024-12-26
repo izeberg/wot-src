@@ -434,7 +434,7 @@ class UNIT_RESTRICTION(object):
     MODE_NOT_SET = 54
     MODE_NOT_AVAILABLE = 55
     BAN_IS_SET = 56
-    RATING_RESTRICTION = 57
+    RANK_RESTRICTION = 57
     MODE_OFFLINE = 58
     PLAY_LIMITS_IS_ACTIVE = 59
     HAS_FROZEN_VEHICLES = 60
@@ -467,6 +467,7 @@ class PRE_QUEUE_RESTRICTION(object):
     MODE_NOT_SET = 'mode/notSet'
     MODE_NOT_AVAILABLE = 'mode/notAvailable'
     MODE_OFFLINE = 'mode/offline'
+    MODE_IS_IN_PREANNOUNCE = 'mode/preannounce'
     VEHICLE_WILL_BE_UNLOCKED = 'vehicle/willBeUnlocked'
     BAN_IS_SET = 'ban/isSet'
     QUALIFICATION_RESULTS_PROCESSING = 'qualification/resultsProcessing'

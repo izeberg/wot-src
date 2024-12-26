@@ -106,7 +106,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>27250</weight>
-		<maxHealth>2080</maxHealth>
+		<maxHealth>2000</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>210</maxHealth>
 			<maxRegenHealth>140</maxRegenHealth>
@@ -3616,7 +3616,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_11 armor_4</primaryArmor>
 			<weight>14000</weight>
-			<maxHealth>520</maxHealth>
+			<maxHealth>500</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -3696,7 +3696,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						19.5
+						20.5
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>3</aimingTime>
@@ -3715,7 +3715,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.38
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<models>

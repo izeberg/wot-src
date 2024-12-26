@@ -148,6 +148,8 @@ package net.wg.data.constants.generated
       public static const HE20_EVENT_ENTRY_POINT:String = "he20EventEntryPoint";
       
       public static const CAROUSEL_EVENT_ENTRY_HOLDER:String = "carouselEventEntryHolder";
+      
+      public static const PLAYER_SATISFACTION_WIDGET:String = "PlayerSatisfactionWidget";
        
       
       public function HANGAR_ALIASES()

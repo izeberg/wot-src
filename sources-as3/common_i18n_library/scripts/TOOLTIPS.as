@@ -4027,10 +4027,6 @@ package
       
       public static const AWARDITEM_OPTIONAL_DEVICES_ASSISTANT_BODY:String = "#tooltips:awardItem/optional_devices_assistant/body";
       
-      public static const AWARDITEM_COMP7TOKENWEEKLYREWARD_HEADER:String = "#tooltips:awardItem/comp7TokenWeeklyReward/header";
-      
-      public static const AWARDITEM_COMP7TOKENWEEKLYREWARD_BODY:String = "#tooltips:awardItem/comp7TokenWeeklyReward/body";
-      
       public static const AWARDITEM_TOURCOIN_HEADER:String = "#tooltips:awardItem/tourcoin/header";
       
       public static const AWARDITEM_TOURCOIN_BODY:String = "#tooltips:awardItem/tourcoin/body";
@@ -5060,6 +5056,8 @@ package
       public static const ADVANCED_RECERTIFICATIONFORM_DESCRIPTION:String = "#tooltips:advanced/recertificationForm/description";
       
       public static const ADVANCED_COMMANDERSVIEW:String = "#tooltips:advanced/commandersView";
+      
+      public static const ADVANCED_MODERNIZEDIMPROVEDSIGHTSENHANCEDAIMDRIVES:String = "#tooltips:advanced/modernizedImprovedSightsEnhancedAimDrives";
       
       public static const ADVANCED_MODERNIZEDAIMDRIVESAIMINGSTABILIZER:String = "#tooltips:advanced/modernizedAimDrivesAimingStabilizer";
       
@@ -7441,6 +7439,36 @@ package
       
       public static const NOTRECRUITEDTANKMAN_NY24_GIRL_4_DESC:String = "#tooltips:notrecruitedtankman/ny24_girl_4/desc";
       
+      public static const NOTRECRUITEDTANKMAN_NY25DEFAULTGIRL_EVENT:String = "#tooltips:notrecruitedtankman/ny25defaultGirl/event";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25DEFAULTGIRL_LABEL:String = "#tooltips:notrecruitedtankman/ny25defaultGirl/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25DEFAULTGIRL_DESC:String = "#tooltips:notrecruitedtankman/ny25defaultGirl/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25DEFAULTGIRL_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/ny25defaultGirl/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_MEN_EVENT:String = "#tooltips:notrecruitedtankman/ny25_men/event";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_MEN_LABEL:String = "#tooltips:notrecruitedtankman/ny25_men/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_MEN_DESC:String = "#tooltips:notrecruitedtankman/ny25_men/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_1_LABEL:String = "#tooltips:notrecruitedtankman/ny25_girl_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_1_DESC:String = "#tooltips:notrecruitedtankman/ny25_girl_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_2_LABEL:String = "#tooltips:notrecruitedtankman/ny25_girl_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_2_DESC:String = "#tooltips:notrecruitedtankman/ny25_girl_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_3_LABEL:String = "#tooltips:notrecruitedtankman/ny25_girl_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_3_DESC:String = "#tooltips:notrecruitedtankman/ny25_girl_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_4_LABEL:String = "#tooltips:notrecruitedtankman/ny25_girl_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY25_GIRL_4_DESC:String = "#tooltips:notrecruitedtankman/ny25_girl_4/desc";
+      
       public static const ADDITIONALREWARDS_LEVELHEADER:String = "#tooltips:additionalRewards/levelHeader";
       
       public static const ADDITIONALREWARDS_GOLD:String = "#tooltips:additionalRewards/gold";
@@ -7508,6 +7536,10 @@ package
       public static const ROLESKILL_DESCRIPTION_PASSIVE:String = "#tooltips:roleSkill/description/passive";
       
       public static const ROLESKILL_INFO:String = "#tooltips:roleSkill/info";
+      
+      public static const ROLESKILL_STARTLEVEL_LOBBY:String = "#tooltips:roleSkill/startLevel/lobby";
+      
+      public static const ROLESKILL_STARTLEVEL_BATTLE:String = "#tooltips:roleSkill/startLevel/battle";
       
       public static const PERIODICREWARD_HEADER:String = "#tooltips:periodicReward/header";
       

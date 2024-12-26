@@ -123,7 +123,7 @@ OVERRIDEN_HEADER_COUNTER_ACTION_ALIASES = 'overridenHeaderCounterActionAliases'
 LIVE_OPS_WEB_EVENTS_COUNTERS = 'liveOpsWebEventsCounters'
 LIVE_OPS_WEB_EVENTS_UI_FLAGS = 'liveOpsWebEventsUIFlags'
 COMP7_BOND_EQUIPMENT_REMINDER_SHOWN_TIMESTAMP = 'comp7BondEquipmentReminderShown'
-COMP7_YEARLY_REWARD_SEEN = 'comp7YearlyRewardSeen'
+COMP7_LAST_SEASON_WITH_SEEN_REWARD = 'comp7LastSeasonWithSeenReward'
 VEHICLE_CAROUSEL_COUNTERS_SEEN = 'vehicleCarouselCountersSeen'
 STORE_TAB = 'store_tab'
 STATS_REGULAR_SORTING = 'statsSorting'
@@ -207,8 +207,9 @@ MARATHON_VIDEO_WAS_SHOWN_PREFIX = 'marathonRewardVideoWasShown'
 SUBTITLES = 'subtitles'
 MODULES_ANIMATION_SHOWN = 'collectibleVehiclesAnimWasShown'
 NEW_SHOP_TABS = 'newShopTabs'
-IS_COLLECTIBLE_VEHICLES_VISITED = 'isCollectibleVehiclesVisited'
+IS_COMP7_BONS_BANNER_VISITED = 'isComp7BonsBannerVisited'
 LAST_SHOP_TAB_COUNTER = 'lastShopTabCounter'
+CUSTOM_SHOP_SETTINGS = 'customShopSettings'
 QUESTS = 'quests'
 QUEST_DELTAS = 'questDeltas'
 QUEST_DELTAS_COMPLETION = 'questCompletion'
@@ -241,21 +242,20 @@ MINIMAP_SIZE = 'minimapSize'
 COMP7_LIGHT_INTRO_SHOWN = 'comp7LightIntroShown'
 COMP7_UI_SECTION = 'comp7'
 COMP7_WEEKLY_QUESTS_PAGE_TOKENS_COUNT = 'comp7WeeklyQuestsPageTokensCount'
+COMP7_WEEKLY_QUEST_WIDGET_PROGRESS = 'comp7WeeklyQuestWidgetProgress'
+COMP7_WEEKLY_QUEST_IN_WIDGET_ID = 'comp7WeeklyQuestInWidgetID'
+COMP7_WEEKLY_QUEST_IN_WIDGET_STATE = 'comp7WeeklyQuestInWidgetState'
 COMP7_SHOP_SEEN_PRODUCTS = 'comp7ShopSeenProducts'
 COMP7_LAST_SEASON = 'comp7LastSeason'
 FUN_RANDOM_NOTIFICATIONS = 'funRandomNotifications'
 FUN_RANDOM_NOTIFICATIONS_FROZEN = 'funRandomNotificationsFrozen'
 FUN_RANDOM_NOTIFICATIONS_PROGRESSIONS = 'funRandomNotificationsProgressions'
 FUN_RANDOM_NOTIFICATIONS_SUB_MODES = 'funRandomNotificationsSubModes'
-LOOT_BOXES = 'lootBoxes'
-EVENT_LOOT_BOXES = 'eventLootBoxes'
 LOOTBOX_SYSTEM = 'lootBoxSystem'
 LOOT_BOXES_WAS_STARTED = 'lootBoxesWasStarted'
 LOOT_BOXES_WAS_FINISHED = 'lootBoxesWasFinished'
 LOOT_BOXES_OPEN_ANIMATION_ENABLED = 'lootBoxesOpenAnimationEnabled'
-LOOT_BOXES_VIEWED_COUNT = 'lootBoxesViewedCount'
 LOOT_BOXES_HAS_NEW = 'lootBoxesHasNew'
-LOOT_BOXES_EVENT_UNIQUE_ID = 'lootBoxesEventUniqueID'
 LOOT_BOXES_UNIQUE_ID = 'lootBoxesUniqueID'
 LOOT_BOXES_INTRO_VIDEO_SHOWN = 'lootBoxesIntroVideoShown'
 COLLECTIONS_SECTION = 'collections'
@@ -1115,18 +1115,13 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   COMP7_LIGHT_PROGRESSION_POINTS_SEEN: 0, 
                   COMP7_LIGHT_INTRO_SHOWN: False, 
                   ROYALE_SQUAD_TIP_SHOWN_FOR_SEASON: 0, 
-                  LOOT_BOXES: {EVENT_LOOT_BOXES: {LOOT_BOXES_WAS_STARTED: False, 
-                                                  LOOT_BOXES_WAS_FINISHED: False, 
-                                                  LOOT_BOXES_OPEN_ANIMATION_ENABLED: True, 
-                                                  LOOT_BOXES_VIEWED_COUNT: 0, 
-                                                  LOOT_BOXES_EVENT_UNIQUE_ID: 0}}, 
                   LOOTBOX_SYSTEM: {LOOT_BOXES_UNIQUE_ID: 0, 
                                    LOOT_BOXES_WAS_STARTED: False, 
                                    LOOT_BOXES_WAS_FINISHED: False, 
                                    LOOT_BOXES_INTRO_VIDEO_SHOWN: False, 
                                    LOOT_BOXES_HAS_NEW: False, 
                                    LOOT_BOXES_OPEN_ANIMATION_ENABLED: True}, 
-                  Winback.WINBACK_SETTINGS: {Winback.COMPLETED_STARTING_QUEST_COUNT: 0, 
+                  CUSTOM_SHOP_SETTINGS: {}, Winback.WINBACK_SETTINGS: {Winback.COMPLETED_STARTING_QUEST_COUNT: 0, 
                                              Winback.INTRO_SHOWN: False, 
                                              Winback.BATTLE_SELECTOR_SETTINGS_BULLET_SHOWN: False}, 
                   ACHIEVEMENTS_INFO: {ACHIEVEMENTS_WTR_RANKS: {}, ACHIEVEMENTS_INITIAL_BATTLE_COUNT: -1, 
@@ -1166,7 +1161,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   SENIORITY_AWARDS_COUNTER: 1, 
                   DEMOUNT_KIT_SEEN: False, 
                   RECERTIFICATION_FORM_SEEN: False, 
-                  NEW_SHOP_TABS: {IS_COLLECTIBLE_VEHICLES_VISITED: False}, 
+                  NEW_SHOP_TABS: {IS_COMP7_BONS_BANNER_VISITED: False}, 
                   VPP_ENTRY_POINT_LAST_SEEN_STEP: {}, LIVE_OPS_WEB_EVENTS_COUNTERS: {}, VEHICLE_CAROUSEL_COUNTERS_SEEN: {}}, 
    KEY_NOTIFICATIONS: {ELEN_NOTIFICATIONS: {MISSIONS_CONSTANTS.ELEN_EVENT_STARTED_NOTIFICATION: set(), 
                                             MISSIONS_CONSTANTS.ELEN_EVENT_FINISHED_NOTIFICATION: set(), 
@@ -1188,7 +1183,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                      RESOURCE_WELL_END_SHOWN: set()}, 
                        COLLECTIONS_NOTIFICATIONS: {COLLECTION_START_SEEN: [], COLLECTION_RENEW_SEEN: {}, COLLECTIONS_UPDATED_ENTRY_SEEN: False}, 
                        COMP7_BOND_EQUIPMENT_REMINDER_SHOWN_TIMESTAMP: None, 
-                       COMP7_YEARLY_REWARD_SEEN: False}, 
+                       COMP7_LAST_SEASON_WITH_SEEN_REWARD: None}, 
    KEY_SESSION_SETTINGS: {STORAGE_VEHICLES_CAROUSEL_FILTER_1: {'ussr': False, 
                                                                'germany': False, 
                                                                'usa': False, 
@@ -1285,6 +1280,9 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                           LAST_SHOP_ACTION_COUNTER_MODIFICATION: None, 
                           OVERRIDEN_HEADER_COUNTER_ACTION_ALIASES: set()}, 
    KEY_UI_FLAGS: {COMP7_UI_SECTION: {COMP7_WEEKLY_QUESTS_PAGE_TOKENS_COUNT: 0, 
+                                     COMP7_WEEKLY_QUEST_WIDGET_PROGRESS: 0, 
+                                     COMP7_WEEKLY_QUEST_IN_WIDGET_ID: '', 
+                                     COMP7_WEEKLY_QUEST_IN_WIDGET_STATE: '', 
                                      COMP7_SHOP_SEEN_PRODUCTS: set(), 
                                      COMP7_LAST_SEASON: None}, 
                   COLLECTIONS_SECTION: {COLLECTION_SHOWN_NEW_REWARDS: {}, COLLECTION_SHOWN_NEW_ITEMS: {}, COLLECTION_SHOWN_NEW_ITEMS_COUNT: {}, COLLECTION_TUTORIAL_COMPLETED: set(), 
@@ -1356,7 +1354,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
 
 class AccountSettings(object):
     onSettingsChanging = Event.Event()
-    version = 80
+    version = 82
     settingsCore = dependency.descriptor(ISettingsCore)
     __cache = {'login': None, 'section': None}
     __sessionSettings = {'login': None, 'section': None}
@@ -2087,6 +2085,20 @@ class AccountSettings(object):
                             displayHistory['lastDisplayTime'][hintID] = lastDisplayTime
 
                         hintsSection.write('displayHistory', _pack(displayHistory))
+
+            if currVersion < 81:
+                pass
+            if currVersion < 82:
+                from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import LobbyHeader
+                for key, section in _filterAccountSection(ads):
+                    accSettings = AccountSettings._readSection(section, KEY_COUNTERS)
+                    if accSettings.has_key(NEW_SHOP_TABS):
+                        counters = _unpack(accSettings[NEW_SHOP_TABS].asString)
+                        if IS_COMP7_BONS_BANNER_VISITED not in counters:
+                            counters[IS_COMP7_BONS_BANNER_VISITED] = False
+                        if 'isCollectibleVehiclesVisited' in counters:
+                            del counters['isCollectibleVehiclesVisited']
+                        accSettings.write(NEW_SHOP_TABS, _pack(counters))
 
             ads.writeInt('version', AccountSettings.version)
         return

@@ -49,14 +49,11 @@ msgstr "%(firstCondition)s"
 msgid "progressionView/battleQuests/questsTotal/text"
 msgstr "Выполненных задач: "
 
-msgid "progressionView/battleQuests/timer/completed/text"
-msgstr "Задачи появятся через"
+msgid "progressionView/battleQuests/timer/eventResetTime/text"
+msgstr "До окончания события:"
 
 msgid "progressionView/battleQuests/timer/inProgress/text"
 msgstr "Задачи обновятся через"
-
-msgid "progressionView/battleQuests/timer/title"
-msgstr "Все ежедневные задачи выполнены. Возвращайтесь завтра"
 
 msgid "progressionView/card/points"
 msgstr ""
@@ -65,6 +62,9 @@ msgstr ""
 msgid "progressionView/subTitle/completed"
 msgstr ""
 "Зарабатывайте стальные печати и приобретайте стили Стального охотника."
+
+msgid "progressionView/subTitle/endEvent"
+msgstr "Событие завершено. Задачи и прогрессия недоступны."
 
 msgid "progressionView/subTitle/inProgress"
 msgstr ""

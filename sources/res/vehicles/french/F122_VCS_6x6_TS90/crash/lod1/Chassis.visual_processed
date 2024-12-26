@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Wheel_L_01_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 -0.102324</row1>
+					<row2>0.000000 0.102324 0.994751</row2>
+					<row3>-1.010903 0.000000 1.517219</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_01_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.010903 0.000000 1.437219</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_02_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 -0.102324</row1>
+					<row2>0.000000 0.102324 0.994751</row2>
+					<row3>-1.010905 0.000000 -0.079764</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_02_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.010905 0.000000 -0.159764</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_03_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 -0.102324</row1>
+					<row2>0.000000 0.102324 0.994751</row2>
+					<row3>-1.010905 0.000000 -1.676960</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_03_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.010905 0.000000 -1.756960</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_01_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 -0.102324</row1>
+					<row2>0.000000 0.102324 0.994751</row2>
+					<row3>1.010903 0.000000 1.517219</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_01_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.010903 0.000000 1.437219</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_02_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 -0.102324</row1>
+					<row2>0.000000 0.102324 0.994751</row2>
+					<row3>1.010905 0.000000 -0.079764</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_02_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.010905 0.000000 -0.159764</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_03_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 -0.102324</row1>
+					<row2>0.000000 0.102324 0.994751</row2>
+					<row3>1.010905 0.000000 -1.676961</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_03_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.010905 0.000000 -1.756961</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_gui</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.000000 -1.000000</row1>
+					<row2>0.000000 1.000000 0.000000</row2>
+					<row3>0.000000 5.564678 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>Tank</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.500000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Track_L0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.010905 -0.500000 1.477219</row3>
+					</transform>
+					<node>
+						<identifier>WD_L0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000005 0.628658 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_L0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.010911 -0.628658 -1.477219</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_L0_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.010905 0.000000 -1.477219</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_L1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.010905 -0.500000 -0.119764</row3>
+					</transform>
+					<node>
+						<identifier>W_L0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000005 0.628655 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>W_L0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.010911 -0.628655 0.119764</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_L1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.010905 0.000000 0.119764</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_L2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.010905 -0.500000 -1.716961</row3>
+					</transform>
+					<node>
+						<identifier>WD_L1</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000005 0.628658 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_L1_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.010911 -0.628658 1.716961</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_L2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.010905 0.000000 1.716961</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_R0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.010905 -0.500000 1.477219</row3>
+					</transform>
+					<node>
+						<identifier>WD_R0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.000008 0.628658 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_R0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.010897 -0.628658 -1.477219</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_R0_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.010905 0.000000 -1.477219</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_R1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.010905 -0.500000 -0.119764</row3>
+					</transform>
+					<node>
+						<identifier>W_R0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000008 0.628655 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>W_R0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.010897 -0.628655 0.119764</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_R1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.010905 0.000000 0.119764</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_R2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.010905 -0.500000 -1.716961</row3>
+					</transform>
+					<node>
+						<identifier>WD_R1</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>-0.000008 0.628658 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_R1_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.010897 -0.628658 1.716961</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_R2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.010905 0.000000 1.716961</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>V</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.567860 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>V_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -1.067860 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_R1_BlendBone</node>
+		<geometry>
+			<vertices>wd_R03_dShape.vertices</vertices>
+			<stream>wd_R03_dShape.colour</stream>
+			<primitive>wd_R03_dShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.008354 0.633004 1.701257</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>W_R0_BlendBone</node>
+		<geometry>
+			<vertices>w_R02_dShape.vertices</vertices>
+			<stream>w_R02_dShape.colour</stream>
+			<primitive>w_R02_dShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.008354 0.633004 0.105361</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_R0_BlendBone</node>
+		<geometry>
+			<vertices>wd_R01_dShape.vertices</vertices>
+			<stream>wd_R01_dShape.colour</stream>
+			<primitive>wd_R01_dShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.008354 0.633003 -1.492926</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_R1_BlendBone</node>
+		<geometry>
+			<vertices>wd_R03_tShape.vertices</vertices>
+			<stream>wd_R03_tShape.colour</stream>
+			<primitive>wd_R03_tShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.011714 0.621565 1.708662</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_R1_BlendBone</node>
+		<geometry>
+			<vertices>wd_R03Shape.vertices</vertices>
+			<primitive>wd_R03Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.014020 0.628659 1.716961</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_R0_BlendBone</node>
+		<geometry>
+			<vertices>wd_R01_tShape.vertices</vertices>
+			<stream>wd_R01_tShape.colour</stream>
+			<primitive>wd_R01_tShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.011929 0.628487 -1.478272</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_R0_BlendBone</node>
+		<geometry>
+			<vertices>wd_R01Shape.vertices</vertices>
+			<primitive>wd_R01Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.014020 0.628658 -1.477219</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_L1_BlendBone</node>
+		<geometry>
+			<vertices>wd_L03_dShape.vertices</vertices>
+			<stream>wd_L03_dShape.colour</stream>
+			<primitive>wd_L03_dShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.008354 0.633004 1.701257</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_L1_BlendBone</node>
+		<geometry>
+			<vertices>wd_L03_tShape.vertices</vertices>
+			<stream>wd_L03_tShape.colour</stream>
+			<primitive>wd_L03_tShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.011279 0.628578 1.716101</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_L1_BlendBone</node>
+		<geometry>
+			<vertices>wd_L03Shape.vertices</vertices>
+			<primitive>wd_L03Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.014020 0.628659 1.716322</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_L0_BlendBone</node>
+		<geometry>
+			<vertices>wd_L01_dShape.vertices</vertices>
+			<stream>wd_L01_dShape.colour</stream>
+			<primitive>wd_L01_dShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.008354 0.633003 -1.492926</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_L0_BlendBone</node>
+		<geometry>
+			<vertices>wd_L01_tShape.vertices</vertices>
+			<stream>wd_L01_tShape.colour</stream>
+			<primitive>wd_L01_tShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.010716 0.628576 -1.478942</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>WD_L0_BlendBone</node>
+		<geometry>
+			<vertices>wd_L01Shape.vertices</vertices>
+			<primitive>wd_L01Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.014020 0.628658 -1.477219</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>W_R0_BlendBone</node>
+		<geometry>
+			<vertices>wd_R02_tShape.vertices</vertices>
+			<stream>wd_R02_tShape.colour</stream>
+			<primitive>wd_R02_tShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.012268 0.627833 0.120398</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>W_R0_BlendBone</node>
+		<geometry>
+			<vertices>wd_R02Shape.vertices</vertices>
+			<primitive>wd_R02Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.014020 0.628658 0.119764</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>W_L0_BlendBone</node>
+		<geometry>
+			<vertices>wd_L02_dShape.vertices</vertices>
+			<stream>wd_L02_dShape.colour</stream>
+			<primitive>wd_L02_dShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.008354 0.633004 0.105361</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>W_L0_BlendBone</node>
+		<geometry>
+			<vertices>wd_L02_tShape.vertices</vertices>
+			<stream>wd_L02_tShape.colour</stream>
+			<primitive>wd_L02_tShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_tire_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_wheel_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.010715 0.628577 0.118392</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>W_L0_BlendBone</node>
+		<geometry>
+			<vertices>wd_L02Shape.vertices</vertices>
+			<primitive>wd_L02Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.014020 0.628658 0.119125</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Track_R2_BlendBone</node>
+		<node>Track_R0_BlendBone</node>
+		<node>V_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
+		<geometry>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.618533 0.649073 0.038632</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Track_L2_BlendBone</node>
+		<node>Track_L0_BlendBone</node>
+		<node>V_BlendBone</node>
+		<node>Track_L1_BlendBone</node>
+		<geometry>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F122_VCS_6x6_TS90/VCS_6x6_TS90_chassis_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.618533 0.648364 0.038632</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.254456 -0.008628 -2.346939</min>
+		<max>1.216042 1.254800 2.106207</max>
+	</boundingBox>
+	<geometrySize>562940</geometrySize>
+	<minUVDensity>0.013519</minUVDensity>
+</root>

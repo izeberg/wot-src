@@ -129,8 +129,8 @@ class ActionButtonStateVO(dict):
                                                '', {}), 
            UNIT_RESTRICTION.BAN_IS_SET: (
                                        '', {}), 
-           UNIT_RESTRICTION.RATING_RESTRICTION: (
-                                               backport.text(R.strings.comp7.unit.message.ratingRestriction(), rating=self.__comp7Ctrl.getPlatoonRatingRestriction()), {}), 
+           UNIT_RESTRICTION.RANK_RESTRICTION: (
+                                             backport.text(R.strings.comp7.unit.message.rankRangeRestriction()), {}), 
            UNIT_RESTRICTION.MODE_OFFLINE: (
                                          backport.text(R.strings.comp7.unit.message.modeOffline()), {}), 
            UNIT_RESTRICTION.PLAY_LIMITS_IS_ACTIVE: (

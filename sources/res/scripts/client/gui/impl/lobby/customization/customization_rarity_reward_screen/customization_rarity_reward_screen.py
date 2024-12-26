@@ -12,6 +12,7 @@ from gui.shared.view_helpers.blur_manager import CachedBlur
 from gui.sounds.filters import switchHangarOverlaySoundFilter
 from helpers import dependency
 from skeletons.gui.customization import ICustomizationService
+from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.gui.lobby_context import ILobbyContext
 from uilogging.customization_3d_objects.logger import CustomizationRarityRewardViewLogger
 from uilogging.customization_3d_objects.logging_constants import CustomizationButtons, CustomizationViewKeys
@@ -19,6 +20,7 @@ from uilogging.customization_3d_objects.logging_constants import CustomizationBu
 class CustomizationRarityRewardScreen(ViewImpl):
     __customizationService = dependency.descriptor(ICustomizationService)
     __lobbyCtx = dependency.descriptor(ILobbyContext)
+    __hangarSpace = dependency.descriptor(IHangarSpace)
     __slots__ = ('__element', '__isFirstEntry', '__uiLogger', '__sound')
     _REWARD_SOUND_ID = 'elements_cust_reward'
 
@@ -43,7 +45,9 @@ class CustomizationRarityRewardScreen(ViewImpl):
          (
           self.viewModel.goToExterior, self.__onGoToExterior),
          (
-          self.viewModel.goToGarage, self.__onGoToGarage))
+          self.viewModel.goToGarage, self.__onGoToGarage),
+         (
+          self.__hangarSpace.onVehicleChanged, self.__onVehicleChanged))
 
     def _onLoading(self, *args, **kwargs):
         super(CustomizationRarityRewardScreen, self)._onLoading(*args, **kwargs)
@@ -65,6 +69,9 @@ class CustomizationRarityRewardScreen(ViewImpl):
         self.__uiLogger.onViewClose(CustomizationViewKeys.CUSTOMIZATION_RARITY_REWARD_VIEW)
         self.__uiLogger = None
         return
+
+    def __onVehicleChanged(self):
+        self.viewModel.setIsExteriorEnabled(self.__isC11nEnabled())
 
     def __onGoToExterior(self):
         self.__uiLogger.onClick(CustomizationButtons.TO_EXTERIOR, parentScreen=CustomizationViewKeys.CUSTOMIZATION_RARITY_REWARD_VIEW)

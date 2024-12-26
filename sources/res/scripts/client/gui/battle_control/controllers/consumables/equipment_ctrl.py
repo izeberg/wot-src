@@ -616,10 +616,10 @@ class _ArtilleryAOEFort(_ArtilleryItem):
         return BATTLE_MARKERS_CONSTS.COLOR_RED
 
 
-class _EpicArtilleryItem(_OrderItem):
+class _EpicArtilleryItem(_ArtilleryItem):
 
     def getMarker(self):
-        return 'artillery'
+        return 'artillery_fort_ally'
 
     def getMarkerColor(self):
         return BATTLE_MARKERS_CONSTS.COLOR_GREEN

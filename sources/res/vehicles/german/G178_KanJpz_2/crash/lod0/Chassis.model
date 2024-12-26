@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.723810 -0.000172 -3.760710</min>
+		<max>1.732308 1.245113 4.368010</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G178_KanJpz_2/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G178_KanJpz_2/crash/lod1/Chassis</parent>
+	<extent>32</extent>
+</root>

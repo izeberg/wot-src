@@ -20,7 +20,7 @@ else:
 
 __all__ = ('MaterialInfo', 'DEFAULT_MATERIAL_INFO', 'EmblemSlot', 'LodSettings', 'NodesAndGroups',
            'Camouflage', 'DEFAULT_CAMOUFLAGE', 'SwingingSettings', 'I18nComponent',
-           'DeviceHealth', 'ModelStatesPaths', 'RocketAccelerationParams')
+           'DeviceHealth', 'ModelStatesPaths', 'RocketAccelerationParams', 'ImpulseData')
 MaterialInfo = reflectedNamedTuple('MaterialInfo', ('kind', 'armor', 'extra', 'multipleExtra',
                                                     'vehicleDamageFactor', 'useArmorHomogenization',
                                                     'useHitAngle', 'useAntifragmentationLining',
@@ -313,8 +313,9 @@ class ModelStatesPaths(object):
         return path
 
 
+ImpulseData = namedtuple('ImpulseData', ('magnitude', 'applyPoint', 'duration'))
+
 class RocketAccelerationParams(object):
-    ImpulseData = namedtuple('ImpulseData', ('magnitude', 'applyPoint', 'duration'))
     __slots__ = ('deployTime', 'reloadTime', 'reuseCount', 'duration', 'impulse', 'modifiers',
                  'kpi', 'effectsPrefab')
 

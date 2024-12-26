@@ -116,8 +116,20 @@
 					<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Hull.model</exploded>
 				</Cz17_Vz_55_3DSt_MD_21_XXII>
+				<Cz17_Vz_55_NY2025_3Dst>
+					<undamaged>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Hull.model</exploded>
+				</Cz17_Vz_55_NY2025_3Dst>
 			</sets>
 		</models>
+		<prefabs>
+			<sets>
+				<Cz17_Vz_55_NY2025_3Dst>
+					<custom>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_Vz_55_NY2025_3Dst.prefab</custom>
+				</Cz17_Vz_55_NY2025_3Dst>
+			</sets>
+		</prefabs>
 		<swinging>
 			<lodDist>FAR</lodDist>
 			<pitchParams>
@@ -150,16 +162,16 @@
 				<slotType>clan</slotType>
 				<slotId>10000</slotId>
 				<rayStart>
-					-0.002243 0.363807 2.84169
+					-0.708568 0.10451 3.406443
 					<!--BW_String-->
 				</rayStart>
-				<rayEnd>
-					-0.002243 0.175282 2.77493
+				<rayEnd>-0.708567 0.057384 3.389737</rayEnd>
+				<rayUp>
+					-0 0.33413 -0.942527
 					<!--BW_String-->
-				</rayEnd>
-				<rayUp>0 0 -1</rayUp>
+				</rayUp>
 				<size>
-					0.32
+					0.24
 					<!--BW_String-->
 				</size>
 			</slot>
@@ -1284,6 +1296,54 @@
 				<clipAngle>0.584951</clipAngle>
 				<anchorShift>0.055459</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.77522 0.171002 -1.125108
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999968 0.999968 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>1.764721 0.170998 -1.125108</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999968 0.999968 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					-0.015003 0.256 -4.132
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -1.570796 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999844 0.999893 0.999857</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1349,6 +1409,11 @@
 						<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Chassis.model</exploded>
 					</Cz17_Vz_55_3DSt_MD_21_XXII>
+					<Cz17_Vz_55_NY2025_3Dst>
+						<undamaged>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Chassis.model</exploded>
+					</Cz17_Vz_55_NY2025_3Dst>
 				</sets>
 			</models>
 			<traces>
@@ -1483,6 +1548,33 @@
 									<row3>-1.884734 1.092101 -0.107641</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>Cz17_Vz_55_NY2025_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.984401 0.000000 0.000000</row0>
+									<row1>0.000000 1.151033 0.000000</row1>
+									<row2>0.000000 0.000000 7.377042</row2>
+									<row3>0.000000 1.041106 -0.143912</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.579225 0.000000 0.000000</row0>
+									<row1>0.000000 0.326385 0.000000</row1>
+									<row2>0.000000 0.000000 7.248578</row2>
+									<row3>0.000000 1.449034 -0.107641</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.579229 0.000001 0.000000</row0>
+									<row1>-0.000000 0.277959 -0.171071</row1>
+									<row2>-0.000000 0.157242 0.255490</row2>
+									<row3>0.000000 1.192717 -4.152903</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.579230 0.000004 0.000000</row0>
+									<row1>-0.000000 0.294133 0.141466</row1>
+									<row2>0.000000 -0.182470 0.379390</row2>
+									<row3>0.000000 1.435568 3.519475</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1599,6 +1691,33 @@
 									<row1>-0.000000 0.766729 -0.000000</row1>
 									<row2>-0.000000 0.000000 7.630711</row2>
 									<row3>1.885000 1.092101 -0.107641</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>Cz17_Vz_55_NY2025_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.984401 0.000000 0.000000</row0>
+									<row1>0.000000 1.151033 0.000000</row1>
+									<row2>0.000000 0.000000 7.377042</row2>
+									<row3>0.000000 1.041106 -0.143912</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.579225 0.000000 0.000000</row0>
+									<row1>0.000000 0.326385 0.000000</row1>
+									<row2>0.000000 0.000000 7.248578</row2>
+									<row3>0.000000 1.449034 -0.107641</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.579229 0.000001 0.000000</row0>
+									<row1>-0.000000 0.277959 -0.171071</row1>
+									<row2>-0.000000 0.157242 0.255490</row2>
+									<row3>0.000000 1.192717 -4.152903</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.579230 0.000004 0.000000</row0>
+									<row1>-0.000000 0.294133 0.141466</row1>
+									<row2>0.000000 -0.182470 0.379390</row2>
+									<row3>0.000000 1.435568 3.519475</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1923,6 +2042,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<Cz17_Vz_55_NY2025_3Dst>
+							<segmentModelLeft>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/track/segment.model</segmentModelLeft>
+							<segmentModelRight>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/track/segment.model</segmentModelRight>
+						</Cz17_Vz_55_NY2025_3Dst>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -1956,17 +2081,18 @@
 						<model>vehicles/czech/Cz17_Vz_55/track/segment.model</model>
 						<length>0.150438</length>
 					</mainSegment>
+					<modelSets>
+						<Cz17_Vz_55_NY2025_3Dst>
+							<mainSegmentModel>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/track/segment.model</mainSegmentModel>
+						</Cz17_Vz_55_NY2025_3Dst>
+					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
-								<xStart>
-									-3.72429
-									<!--BW_String-->
-								</xStart>
-								<xStep>0.075219</xStep>
+								<xStart>-3.726078</xStart>
+								<xStep>0.074399</xStep>
 								<ySamples>
-									1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24412 1.24408 1.24109 1.23113 1.19762
+									1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.20067 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.19229 1.15685 1.14879 1.16678 1.21646 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25096 1.25092 1.24859 1.23952 1.21006
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2052,143 +2178,143 @@
 						<top>
 							<range>
 								<point>
-									1.52635 1.34307 -3.72607
+									1.52635 1.288611 -3.72607
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.6509
+									1.52635 1.288611 -3.6509
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.57572
+									1.52635 1.288611 -3.57572
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.50055
+									1.52635 1.288611 -3.50055
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.42537
+									1.52635 1.288611 -3.42537
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.3502
+									1.52635 1.288611 -3.3502
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.27502
+									1.52635 1.288611 -3.27502
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.19985
+									1.52635 1.288611 -3.19985
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.12468
+									1.52635 1.288611 -3.12468
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.0495
+									1.52635 1.288611 -3.0495
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.97433
+									1.52635 1.288611 -2.97433
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.89915
+									1.52635 1.288611 -2.89915
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.82398
+									1.52635 1.288611 -2.82398
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.7488
+									1.52635 1.288611 -2.7488
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.67363
+									1.52635 1.288611 -2.67363
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.59845
+									1.52635 1.288611 -2.59845
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.52328
+									1.52635 1.288611 -2.52328
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.44811
+									1.52635 1.288611 -2.44811
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.37293
+									1.52635 1.288611 -2.37293
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.29776
+									1.52635 1.288611 -2.29776
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.22258
+									1.52635 1.288611 -2.22258
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.14741
+									1.52635 1.288611 -2.14741
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.07223
+									1.52635 1.288611 -2.07223
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.99706
+									1.52635 1.288611 -1.99706
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.92189
+									1.52635 1.288611 -1.92189
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.84671
+									1.52635 1.288611 -1.84671
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.77154
+									1.52635 1.288611 -1.77154
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.69636
+									1.52635 1.288611 -1.69636
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.62119
+									1.52635 1.288611 -1.62119
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.54601
+									1.52635 1.288611 -1.54601
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.47084
+									1.52635 1.288611 -1.47084
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.39567
+									1.52635 1.288611 -1.39567
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.32049
+									1.52635 1.288611 -1.32049
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.24532
+									1.52635 1.288611 -1.24532
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.17014
+									1.52635 1.288611 -1.17014
 									<!--BW_String-->
 								</point>
 								<point>
@@ -2332,19 +2458,20 @@
 									<!--BW_String-->
 								</point>
 								<point>
-									1.58635 1.34307 1.53613
+									1.58635 1.280233 1.515184
 									<!--BW_String-->
 								</point>
 								<point>
-									1.58635 1.34307 1.61131
+									1.58635 1.244786 1.582308
 									<!--BW_String-->
 								</point>
 								<point>
-									1.58635 1.34307 1.68648
+									1.58635 1.23673 1.663923
 									<!--BW_String-->
 								</point>
+								<point>-1.361161 1.254695 1.745119</point>
 								<point>
-									1.58635 1.34307 1.76166
+									1.58635 1.304401 1.795495
 									<!--BW_String-->
 								</point>
 								<point>
@@ -2473,17 +2600,18 @@
 						<model>vehicles/czech/Cz17_Vz_55/track/segment.model</model>
 						<length>0.150439</length>
 					</mainSegment>
+					<modelSets>
+						<Cz17_Vz_55_NY2025_3Dst>
+							<mainSegmentModel>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/track/segment.model</mainSegmentModel>
+						</Cz17_Vz_55_NY2025_3Dst>
+					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
-								<xStart>
-									-3.72428
-									<!--BW_String-->
-								</xStart>
-								<xStep>0.075219</xStep>
+								<xStart>-3.736969</xStart>
+								<xStep>0.075288</xStep>
 								<ySamples>
-									1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24829 1.24405 1.24401 1.24092 1.23092 1.20238
+									1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.20612 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25513 1.25096 1.25092 1.24859 1.23952 1.21006
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2575,143 +2703,143 @@
 						<top>
 							<range>
 								<point>
-									1.52635 1.34307 -3.72607
+									1.52635 1.294057 -3.736962
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.6509
+									1.52635 1.294057 -3.661792
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.57572
+									1.52635 1.294057 -3.586612
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.50055
+									1.52635 1.294057 -3.511442
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.42537
+									1.52635 1.294057 -3.436262
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.3502
+									1.52635 1.294057 -3.361092
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.27502
+									1.52635 1.294057 -3.285912
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.19985
+									1.52635 1.294057 -3.210742
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.12468
+									1.52635 1.294057 -3.135572
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -3.0495
+									1.52635 1.294057 -3.060392
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.97433
+									1.52635 1.294057 -2.985222
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.89915
+									1.52635 1.294057 -2.910042
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.82398
+									1.52635 1.294057 -2.834872
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.7488
+									1.52635 1.294057 -2.759692
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.67363
+									1.52635 1.294057 -2.684522
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.59845
+									1.52635 1.294057 -2.609342
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.52328
+									1.52635 1.294057 -2.534172
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.44811
+									1.52635 1.294057 -2.459002
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.37293
+									1.52635 1.294057 -2.383822
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.29776
+									1.52635 1.294057 -2.308652
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.22258
+									1.52635 1.294057 -2.233472
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.14741
+									1.52635 1.294057 -2.158302
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -2.07223
+									1.52635 1.294057 -2.083122
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.99706
+									1.52635 1.294057 -2.007952
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.92189
+									1.52635 1.294057 -1.932782
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.84671
+									1.52635 1.294057 -1.857602
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.77154
+									1.52635 1.294057 -1.782432
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.69636
+									1.52635 1.294057 -1.707252
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.62119
+									1.52635 1.294057 -1.632082
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.54601
+									1.52635 1.294057 -1.556902
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.47084
+									1.52635 1.294057 -1.481732
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.39567
+									1.52635 1.294057 -1.406562
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.32049
+									1.52635 1.294057 -1.331382
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.24532
+									1.52635 1.294057 -1.256212
 									<!--BW_String-->
 								</point>
 								<point>
-									1.52635 1.34307 -1.17014
+									1.52635 1.294057 -1.181032
 									<!--BW_String-->
 								</point>
 								<point>
@@ -3191,6 +3319,13 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<prefabs>
+						<sets>
+							<Cz17_Vz_55_NY2025_3Dst>
+								<custom>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_Vz_55_NY2025_3Dst_Gun_02.prefab</custom>
+							</Cz17_Vz_55_NY2025_3Dst>
+						</sets>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/czech/Cz17_Vz_55/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/czech/Cz17_Vz_55/crash/lod0/Gun_02.model</destroyed>
@@ -3201,6 +3336,11 @@
 								<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Gun_02.model</destroyed>
 								<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Gun_02.model</exploded>
 							</Cz17_Vz_55_3DSt_MD_21_XXII>
+							<Cz17_Vz_55_NY2025_3Dst>
+								<undamaged>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod0/Gun_02.model</undamaged>
+								<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Gun_02.model</destroyed>
+								<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Gun_02.model</exploded>
+							</Cz17_Vz_55_NY2025_3Dst>
 						</sets>
 					</models>
 					<hitTester>
@@ -3283,6 +3423,27 @@
 							</rayUp>
 							<size>
 								0.7
+								<!--BW_String-->
+							</size>
+						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								-0.0048 -0.0032 4.17
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.0048 -0.0032 4.82
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.113618 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>Cz17_Vz_55_NY2025_3Dst</compatibleModels>
+							<size>
+								0.55
 								<!--BW_String-->
 							</size>
 						</slot>
@@ -3481,6 +3642,13 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<prefabs>
+						<sets>
+							<Cz17_Vz_55_NY2025_3Dst>
+								<custom>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_Vz_55_NY2025_3Dst_Gun_01.prefab</custom>
+							</Cz17_Vz_55_NY2025_3Dst>
+						</sets>
+					</prefabs>
 					<models>
 						<undamaged>vehicles/czech/Cz17_Vz_55/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/czech/Cz17_Vz_55/crash/lod0/Gun_01.model</destroyed>
@@ -3491,6 +3659,11 @@
 								<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Gun_01.model</exploded>
 							</Cz17_Vz_55_3DSt_MD_21_XXII>
+							<Cz17_Vz_55_NY2025_3Dst>
+								<undamaged>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Gun_01.model</exploded>
+							</Cz17_Vz_55_NY2025_3Dst>
 						</sets>
 					</models>
 					<hitTester>
@@ -3573,6 +3746,27 @@
 							</rayUp>
 							<size>
 								0.7
+								<!--BW_String-->
+							</size>
+						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								-0.0048 -0.0032 4.17
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.0048 -0.0032 4.82
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.113618 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>Cz17_Vz_55_NY2025_3Dst</compatibleModels>
+							<size>
+								0.55
 								<!--BW_String-->
 							</size>
 						</slot>
@@ -3660,6 +3854,11 @@
 						<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_3DSt_MD_21_XXII/crash/lod0/Turret_01.model</exploded>
 					</Cz17_Vz_55_3DSt_MD_21_XXII>
+					<Cz17_Vz_55_NY2025_3Dst>
+						<undamaged>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/crash/lod0/Turret_01.model</exploded>
+					</Cz17_Vz_55_NY2025_3Dst>
 				</sets>
 			</models>
 			<hitTester>
@@ -4668,6 +4867,27 @@
 					</scale>
 					<showOn>256</showOn>
 					<anchorShift>0.045455</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						-0.323 0.984 -1.309598
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>0.000004 0.931187 0.069533</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

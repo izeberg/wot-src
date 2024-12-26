@@ -110,7 +110,7 @@ class BasicSkill(legacy_stuff.LegacyStuff):
     @property
     def situational(self):
         if self.uiSettings:
-            return self.uiSettings.typeName is SkillTypeName.SITUATIONAL
+            return self.uiSettings.typeName == SkillTypeName.SITUATIONAL
         return False
 
     @property

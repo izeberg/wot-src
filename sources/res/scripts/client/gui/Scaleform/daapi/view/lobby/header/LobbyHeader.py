@@ -43,8 +43,6 @@ from gui.game_control.wallet import WalletController
 from gui.gold_fish import isGoldFishActionActive, isTimeToShowGoldFishPromo
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.impl.lobby.comp7.intro_screen import IntroScreenWindow
-from gui.impl.lobby.comp7.no_vehicles_screen import NoVehiclesScreenWindow
 from gui.impl.lobby.exchange.exchange_rates_helper import isGoldExchangeRateDiscountViewed, isExperienceTranslationRateDiscountViewed, setDiscountViewed
 from gui.limited_ui.lui_rules_storage import LUI_RULES
 from gui.platform.base.statuses.constants import StatusTypes
@@ -71,7 +69,7 @@ from gui.tournament.tournament_helpers import showTournaments, isTournamentEnabl
 from helpers import dependency, i18n, isPlayerAccount, time_utils
 from predefined_hosts import PING_STATUSES, g_preDefinedHosts
 from renewable_subscription_common.settings_constants import WotPlusState
-from shared_utils import CONST_CONTAINER, BitmaskHelper, first
+from shared_utils import CONST_CONTAINER, BitmaskHelper
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_matters import IBattleMattersController
@@ -125,12 +123,7 @@ def _predicateLobbyTopSubViews(view):
 
 def _isActiveShopNewCounters():
     newTabCounters = AccountSettings.getCounters(NEW_SHOP_TABS)
-    return not any(newTabCounters.values())
-
-
-def _updateShopNewCounters():
-    newTabCounters = AccountSettings.getCounters(NEW_SHOP_TABS)
-    AccountSettings.setCounters(NEW_SHOP_TABS, dict.fromkeys(newTabCounters, True))
+    return not all(newTabCounters.values())
 
 
 class HeaderMenuVisibilityState(BitmaskHelper):
@@ -368,7 +361,6 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         navigationPossible = yield self.lobbyContext.isHeaderNavigationPossible()
         if navigationPossible:
             hideWebBrowserOverlay()
-            self.__hideLobbySubViews()
             g_eventBus.handleEvent(events.LobbyHeaderMenuEvent(events.LobbyHeaderMenuEvent.MENU_CLICK, ctx={'alias': alias}), EVENT_BUS_SCOPE.LOBBY)
             self.__triggerViewLoad(alias)
         else:
@@ -805,13 +797,6 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
     def __onComp7MetaOpened(self, *_):
         for alias in self.TABS.ALL():
             self.as_doDeselectHeaderButtonS(alias)
-
-    @staticmethod
-    def __hideLobbySubViews():
-        for window in (NoVehiclesScreenWindow, IntroScreenWindow):
-            instances = window.getInstances()
-            if instances:
-                first(instances).destroy()
 
     def __updatePlayerInfoPanel(self, clanInfo, diff=None):
         if not isPlayerAccount():
@@ -1510,7 +1495,6 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
                     AccountSettings.setSessionSettings(OVERRIDEN_HEADER_COUNTER_ACTION_ALIASES, overridenActionAliases)
                 elif alias not in counters or _isActiveShopNewCounters():
                     counter = backport.text(R.strings.menu.headerButtons.defaultCounter())
-                    _updateShopNewCounters()
                 else:
                     counter = counters[alias]
                 AccountSettings.setCounters(NEW_LOBBY_TAB_COUNTER, counters)

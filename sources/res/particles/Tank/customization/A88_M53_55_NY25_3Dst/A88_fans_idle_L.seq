@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>7.500000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>fansL</name>
+		<type>model</type>
+		<resource>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod0/sequence_hull_L.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 15.681363 3.215316</inTangent>
+				<outTangent>0.000000 0.000000 3.215316</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 -1100.000000</value>
+				<inTangent>-0.000000 -0.000000 -885.784058</inTangent>
+				<outTangent>0.000000 0.000000 -885.784058</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000 0.000000 -2464.000000</value>
+				<inTangent>0.000000 0.000000 -189.388657</inTangent>
+				<outTangent>0.000000 0.000000 -189.388657</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.500000</startTime>
+				<value>0.000000 0.000000 -2880.000000</value>
+				<inTangent>-0.000000 -0.000000 1.403638</inTangent>
+				<outTangent>-0.000000 -0.000000 1.403638</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

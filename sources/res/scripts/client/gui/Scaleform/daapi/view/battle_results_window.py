@@ -37,6 +37,12 @@ def _wrapEmblemUrl(emblemUrl):
     return makeHtmlString('html_templates:lobby/battleResult', 'emblemUrl', {'url': emblemUrl})
 
 
+class IBattleResultsComponent(object):
+
+    def setArenaUniqueID(self, arenaUniqueID):
+        pass
+
+
 class BattleResultsWindow(BattleResultsMeta, IGlobalListener):
     __battleResults = dependency.descriptor(IBattleResultsService)
     __lobbyContext = dependency.descriptor(ILobbyContext)
@@ -56,7 +62,8 @@ class BattleResultsWindow(BattleResultsMeta, IGlobalListener):
         self.__dataSet = False
 
     def _onRegisterFlashComponent(self, viewPy, alias):
-        viewPy.updateQuestsInfo(arenaUniqueID=self.__arenaUniqueID)
+        if isinstance(viewPy, IBattleResultsComponent):
+            viewPy.setArenaUniqueID(arenaUniqueID=self.__arenaUniqueID)
 
     def onWindowClose(self):
         self.destroy()

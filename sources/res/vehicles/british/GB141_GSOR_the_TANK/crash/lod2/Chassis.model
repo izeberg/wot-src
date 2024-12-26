@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB141_GSOR_the_TANK/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.466923 0.010679 -3.409759</min>
+		<max>1.466922 1.117095 3.378489</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB141_GSOR_the_TANK/crash/lod2/Chassis</nodefullVisual>
+</root>

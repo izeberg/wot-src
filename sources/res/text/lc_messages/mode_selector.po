@@ -93,8 +93,14 @@ msgstr "Сезон Алой мантикоры завершён"
 msgid "mode/comp7/seasonEnd/third"
 msgstr "Сезон Нефритовой мантикоры завершён"
 
-msgid "mode/comp7/seasonStart"
+msgid "mode/comp7/seasonStart/first"
 msgstr "Сезон Лазурной мантикоры начнётся %(date)s"
+
+msgid "mode/comp7/seasonStart/second"
+msgstr "Сезон Алой мантикоры начнётся %(date)s"
+
+msgid "mode/comp7/seasonStart/third"
+msgstr "Сезон Нефритовой мантикоры начнётся %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Ранговая неактивность"

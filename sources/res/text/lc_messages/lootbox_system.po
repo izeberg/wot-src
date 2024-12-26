@@ -286,7 +286,7 @@ msgid "infoPage/rewards/divider"
 msgstr "|"
 
 msgid "infoPage/rewards/percent"
-msgstr "{probability}%"
+msgstr "%"
 
 msgid "infoPage/rewards/premiumDay"
 msgid_plural "plural/infoPage/rewards/premiumDay"
@@ -558,7 +558,10 @@ msgid "statisticsRewards/tooltips/category/label"
 msgstr "«%(label)»"
 
 msgid "statisticsRewards/tooltips/category/name"
-msgstr "%(num). %(name)"
+msgstr "%(num). %(name) %(count)"
+
+msgid "statisticsRewards/tooltips/category/nameCount"
+msgstr "×%(count)"
 
 msgid "statisticsRewards/tooltips/category/nationalBlueprint"
 msgstr "Национальный фрагмент"

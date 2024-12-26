@@ -290,6 +290,9 @@ msgstr ""
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM"
 
+msgid "AN_VRC-18V"
+msgstr "AN/VRC-18V"
+
 msgid "AN_VRC_18"
 msgstr "AN/VRC 18"
 
@@ -742,6 +745,9 @@ msgstr "Char Mle. 75"
 
 msgid "Chassis_F119_Char_Murat"
 msgstr "Char Murat"
+
+msgid "Chassis_F122_VCS_6x6_TS90"
+msgstr "VCS 6X6 TS 90"
 
 msgid "Chassis_F123_ERAC_105_Proto"
 msgstr "ERAC 105 Prototype"
@@ -1396,6 +1402,31 @@ msgstr "Char Murat"
 
 msgid "F119_Char_Murat_short_special"
 msgstr "Магазинная система заряжания, хорошая динамика и мобильность"
+
+msgid "F122_VCS_6x6_TS90"
+msgstr "VCS 6X6 TS 90"
+
+msgid "F122_VCS_6x6_TS90_descr"
+msgstr ""
+"VCS 6X6 TS 90 разрабатывался на экспорт, как разведывательная машина, "
+"способная вести бой с танками. Конструкция максимально унифицирована с "
+"бронеавтомобилем Renault VAB. Техника была представлена прессе в июне 1976 "
+"г., однако в серийное производство не пошла. Развитием VCS 6X6 TS 90 стала "
+"машина VBC-90."
+
+msgid "F122_VCS_6x6_TS90_long_special"
+msgstr ""
+"VCS 6X6 TS 90 — французский лёгкий колёсный танк IX уровня с высокими "
+"показателями скорости переднего и заднего хода. Не обладает различными "
+"режимами движения, которые нужно переключать самостоятельно. Оснащён 90-мм "
+"орудием с хорошей стабилизацией и скоростью сведения, а также магазином "
+"заряжания на два снаряда с быстрой перезарядкой внутри барабана (1,5 с)."
+
+msgid "F122_VCS_6x6_TS90_short"
+msgstr "VCS 6X6"
+
+msgid "F122_VCS_6x6_TS90_short_special"
+msgstr "Колёсная машина, барабан на 2 снаряда"
 
 msgid "F123_ERAC_105_Proto"
 msgstr "ERAC 105 Proto"
@@ -2459,6 +2490,9 @@ msgstr "G1 R"
 msgid "Renault_M26_27"
 msgstr "Renault M26/27"
 
+msgid "Renault_MIDS"
+msgstr "Renault MIDS"
+
 msgid "Renault_Naeder-FIEUX"
 msgstr "Renault Naeder-FIEUX"
 
@@ -2835,6 +2869,9 @@ msgstr "Char Mle. 75"
 
 msgid "Turret_1_F119_Char_Murat"
 msgstr "Char Murat"
+
+msgid "Turret_1_F122_VCS_6x6_TS90"
+msgstr "VCS 6X6 TS 90"
 
 msgid "Turret_1_F123_ERAC_105_Proto"
 msgstr "ERAC 105 Prototype"
@@ -3771,6 +3808,9 @@ msgstr "OE"
 msgid "_90mm_OE_90_D_919"
 msgstr "OE-90 D. 919"
 
+msgid "_90mm_OE_F2"
+msgstr "OE 90 F2"
+
 msgid "_90mm_OE_mle_1924"
 msgstr "OE mle. 1924"
 
@@ -3786,11 +3826,20 @@ msgstr "OLF-90-DS2"
 msgid "_90mm_OFL_90_D_919"
 msgstr "OFL-90 D. 919"
 
+msgid "_90mm_OFL_F1"
+msgstr "OFL 90 F1"
+
+msgid "_90mm_OFL_F3"
+msgstr "OFL 90 F3"
+
 msgid "_90mm_POT_90_D_919"
 msgstr "POT-90 D. 919"
 
 msgid "_90mm_Prf1941"
 msgstr "Prf. mle. 1941"
+
+msgid "_90mm_T90_22_Mle_F3"
+msgstr "90 mm T90.22 Mle. F3"
 
 msgid "_90mm_canon_DCA_30"
 msgstr "90 mm DCA 30"

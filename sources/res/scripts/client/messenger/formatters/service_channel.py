@@ -17,7 +17,7 @@ from cache import cached_property
 from chat_shared import MapRemovedFromBLReason, SYS_MESSAGE_TYPE, decompressSysMessage
 from comp7_common import Comp7QuestType, isComp7YearlyAchievement
 from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE, AUTO_MAINTENANCE_RESULT, AUTO_MAINTENANCE_TYPE, FAIRPLAY_VIOLATION_SYS_MSG_SAVED_DATA, FINISH_REASON, INVOICE_ASSET, KICK_REASON, KICK_REASON_NAMES, NC_MESSAGE_PRIORITY, NC_MESSAGE_TYPE, OFFER_TOKEN_PREFIX, PREBATTLE_TYPE, PREMIUM_ENTITLEMENTS, PREMIUM_TYPE, RESTRICTION_TYPE, SCENARIO_RESULT, SYS_MESSAGE_CLAN_EVENT, SYS_MESSAGE_CLAN_EVENT_NAMES, SYS_MESSAGE_FORT_EVENT_NAMES, SwitchState
-from debug_utils import LOG_ERROR
+from debug_utils import LOG_ERROR, LOG_DEBUG_DEV
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentPurpose, ComponentViewType
 from dossiers2.custom.records import DB_ID_TO_RECORD, RECORD_DB_IDS
@@ -40,7 +40,7 @@ from gui.game_control.blueprints_convert_sale_controller import BCSActionState
 from gui.impl import backport
 from gui.impl.backport import getNiceNumberFormat
 from gui.impl.gen import R
-from gui.impl.lobby.comp7.comp7_quest_helpers import getActualSeasonWeeklyRewardToken, getComp7QuestType, isComp7Quest
+from gui.impl.lobby.comp7.comp7_quest_helpers import getComp7QuestType, isComp7Quest
 from gui.impl.lobby.winback.winback_helpers import getDiscountFromBlueprint, getDiscountFromGoody, getLevelFromSelectableToken
 from gui.mapbox.mapbox_helpers import formatMapboxRewards
 from gui.prb_control.formatters import getPrebattleFullDescription
@@ -2193,7 +2193,7 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
                     boxesList.append(backport.text(R.strings.lootboxes.notification.lootBoxesAutoOpen.counter(), boxName=lootBox.getUserName(), count=tokenData.get(b'count', 0)))
 
         if boxesList:
-            return g_settings.htmlTemplates.format(b'eventLootBoxesInvoiceReceived', {b'boxes': (b', ').join(boxesList)})
+            return g_settings.htmlTemplates.format(b'lootBoxesInvoiceReceived', {b'boxes': (b', ').join(boxesList)})
         else:
             return b''
 
@@ -2959,15 +2959,12 @@ class QuestAchievesFormatter(object):
         tokens = data.get(b'tokens')
         personalExchangeDiscountsInfo = []
         if tokens:
-            comp7WeeklyRewardToken = getActualSeasonWeeklyRewardToken()
             for tokenID, tokenData in tokens.iteritems():
                 count = backport.getIntegralFormat(tokenData.get(b'count', 1))
                 if tokenID.startswith(BATTLE_BONUS_X5_TOKEN):
                     itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.quests.bonusName.battle_bonus_x5()), count=count))
                 elif tokenID.startswith(CREW_BONUS_X3_TOKEN):
                     itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.quests.bonusName.crew_bonus_x3()), count=count))
-                elif tokenID == comp7WeeklyRewardToken:
-                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.comp7.system_messages.weeklyReward.tokens()), count=count))
                 elif tokenID.startswith(EXCHANGE_RATE_GOLD_NAME) or tokenID.startswith(EXCHANGE_RATE_FREE_XP_NAME):
                     personalExchangeDiscountsInfo.extend(_processPersonalExchangeRateToken(data={tokenID: tokenData}, itemsCache=cls._itemsCache))
 
@@ -4723,7 +4720,7 @@ class EpicLevelUpFormatter(WaitItemsSyncFormatter):
 
 class EpicQuestAchievesFormatter(QuestAchievesFormatter):
     __offersProvider = dependency.descriptor(IOffersDataProvider)
-    _itemsCache = dependency.descriptor(IItemsCache)
+    __itemsCache = dependency.descriptor(IItemsCache)
     __goodiesCache = dependency.descriptor(IGoodiesCache)
     _SEPARATOR = b'<br>'
     __rEpicReward = R.strings.messenger.serviceChannelMessages.epicReward
@@ -5614,13 +5611,14 @@ class FairplayFormatter(ServiceChannelFormatter):
 
     def format(self, message, *args):
         data = message.data
+        LOG_DEBUG_DEV(b'[ban] FairplayFormatter', data)
         if not data:
             return [MessageData(None, None)]
         else:
-            isStarted = message.data.get(b'isStarted', False)
-            reason = message.data.get(b'reason', b'')
-            extraData = message.data.get(b'extraData', {})
-            resrType = message.data.get(b'restrType', 0)
+            isStarted = data.get(b'isStarted', False)
+            reason = data.get(b'reason', b'')
+            extraData = data.get(b'extraData', {})
+            resrType = data.get(b'restrType', 0)
             if isStarted:
                 header, text = self.__getBanStartedMessage(reason, extraData, resrType)
             else:
@@ -5635,9 +5633,9 @@ class FairplayFormatter(ServiceChannelFormatter):
     def __isComp7DeserterBan(reason, extraData):
         return ARENA_BONUS_TYPE.COMP7 in extraData.get(b'bonusTypes', []) and FairplayViolations.COMP7_DESERTER in reason
 
-    def __getBanStartedMessage(self, reason, extraData, resrType):
+    def __getBanStartedMessage(self, reason, extraData, restrType):
         header, text = (None, None)
-        if resrType == RESTRICTION_TYPE.ARENA_BAN:
+        if restrType == RESTRICTION_TYPE.ARENA_BAN:
             if self.__isComp7DeserterBan(reason, extraData):
                 penalty = extraData.get(b'penalty', 0)
                 isQualification = extraData.get(b'qualActive', False)
@@ -5645,9 +5643,9 @@ class FairplayFormatter(ServiceChannelFormatter):
                 text = backport.text(R.strings.comp7.battleResult.message.deserterQualification() if isQualification else R.strings.comp7.battleResult.message.deserter(), penalty=penalty)
         return (header, text)
 
-    def __getBanStoppedMessage(self, extraData, resrType):
+    def __getBanStoppedMessage(self, extraData, restrType):
         header, text = (None, None)
-        if resrType == RESTRICTION_TYPE.ARENA_BAN:
+        if restrType == RESTRICTION_TYPE.ARENA_BAN:
             arenaType = ArenaType.g_cache[extraData.get(b'arenaTypeID', 0)]
             header = backport.text(R.strings.messenger.serviceChannelMessages.fairplayViolation.title.banRemoved())
             text = backport.text(R.strings.messenger.serviceChannelMessages.fairplayViolation.text.banRemoved(), mode=backport.text(R.strings.arenas.type.dyn(arenaType.gameplayName).name()))
@@ -5846,69 +5844,6 @@ class PrestigeFormatter(ServiceChannelFormatter):
         gradeType, grade = mapGradeIDToUI(getCurrentGrade(lvl, vehCD))
         formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx={b'title': title, b'text': text}, data={b'savedData': {b'vehCD': vehCD}, b'linkageData': {b'type': gradeType.value, b'grade': grade, b'lvl': lvl}})
         return MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE, messageType=message.type))
-
-
-class ConsumableReplacedItemsFormatter(ServiceChannelFormatter):
-    __CONSUMABLE_REPLACED_ITEMS = b'ConsumableReplacedItemsNotify'
-
-    def format(self, message, *args):
-        data = message.data
-        messagesListData = []
-        for messageDataKey in [b'replacedItems', b'itemsForWithdraw']:
-            messageData = data.get(messageDataKey)
-            if messageData:
-                replacedToText = self.__getReplacedMessageText(messageData, message.sentTime)
-                if replacedToText is not None:
-                    messagesListData.append(MessageData(replacedToText, self._getGuiSettings(message, self.__CONSUMABLE_REPLACED_ITEMS)))
-
-        return messagesListData
-
-    def __getReplacedMessageText(self, replaced, operationTime):
-        messageText = []
-        debitItems = self.__fillReplacedItemsText(replaced.get(b'debit'))
-        accruedItems = self.__fillReplacedItemsText(replaced.get(b'accrued'))
-        creditsAmount = replaced.get(b'credits')
-        if debitItems:
-            messageText.append(g_settings.htmlTemplates.format(b'replacedItemsDebit', {b'items': debitItems}))
-        if accruedItems:
-            messageText.append(g_settings.htmlTemplates.format(b'replacedItemsAccrued', {b'items': accruedItems}))
-        if creditsAmount:
-            messageText.append(g_settings.htmlTemplates.format(b'creditsAccrued', {b'amount': backport.getIntegralFormat(creditsAmount)}))
-        if messageText:
-            ctx = {b'text': (b'').join(messageText)}
-            if operationTime:
-                ctx[b'at'] = TimeFormatter.getLongDatetimeFormat(time_utils.makeLocalServerTime(operationTime))
-            return g_settings.msgTemplates.format(self.__CONSUMABLE_REPLACED_ITEMS, ctx=ctx)
-        else:
-            return
-
-    def __fillReplacedItemsText(self, items):
-        if items is None:
-            return b''
-        else:
-            result = []
-            _rTpl = R.strings.messenger.serviceChannelMessages.sysMsg.consumables.replacedItems
-            _rTplItems = _rTpl.items
-            _rItemDescription = _rTpl.item.many if len(items) > 1 else _rTpl.item.one
-            _replacedFrom = {4347: _rTplItems.qualityOil, 
-               1787: _rTplItems.lendLeaseOil, 
-               2043: _rTplItems.gasoline100, 
-               2299: _rTplItems.gasoline105}
-            equipmentsCache = vehicles_core.g_cache.equipments()
-            for intCD, count in items.items():
-                itemName = None
-                _rItemName = _replacedFrom.get(intCD)
-                if _rItemName:
-                    itemName = backport.text(_rItemName())
-                else:
-                    itemTypeID, _, compTypeID = vehicles_core.parseIntCompactDescr(intCD)
-                    if itemTypeID == I_T.equipment and compTypeID in equipmentsCache:
-                        itemDescr = equipmentsCache[compTypeID]
-                        itemName = itemDescr.i18n.userString
-                if itemName:
-                    result.append(backport.text(_rItemDescription(), name=itemName, count=count))
-
-            return (b'').join(result)
 
 
 class CrewBooksConversionFormatter(WaitItemsSyncFormatter, BaseBookConvertingFormatter):

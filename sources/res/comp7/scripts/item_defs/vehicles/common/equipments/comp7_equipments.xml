@@ -29,8 +29,8 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				13 21 30
-				<exports>vse</exports>
+				17 28 40
+				<exports>vse tooltip</exports>
 			</heal>
 			<secondaryHealDebuff>
 				0
@@ -39,7 +39,7 @@
 			<tickInterval>
 				1.0
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</tickInterval>
 		</script>
 	</comp7_aoe_heal>
@@ -101,17 +101,17 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				5 7 10
-				<exports>vse</exports>
+				6 8 12
+				<exports>vse tooltip</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				2
+				3
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
 				1.0
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</tickInterval>
 		</script>
 	</comp7_hunter>
@@ -147,7 +147,7 @@
 			<shotDispersionFactors>
 				0.55 0.475 0.3
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 			<clipReloadTimeBoost>
 				0.6 0.75 0.9
@@ -183,7 +183,7 @@
 			<gunReloadTimeBuff>
 				0.75 0.7 0.65
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<damageDistance>
 				150
@@ -192,7 +192,7 @@
 			<shotDispersionFactors>
 				0.8 0.675 0.55
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 		</script>
 	</comp7_berserk>
@@ -236,7 +236,7 @@
 		<tags>notForSale roleEquipment</tags>
 		<type>battleAbilities</type>
 		<soundNotification>comp_7_ability_ready</soundNotification>
-		<code>artillery</code>
+		<messagePostfix>artillery</messagePostfix>
 		<script>
 			Comp7RedlineEquipment
 			<visualScript>
@@ -313,9 +313,9 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<gunReloadTimeBuff>
-				0.7 0.55 0.4
+				0.7 0.575 0.45
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 		</script>
 	</comp7_fast_recharge>
@@ -336,29 +336,29 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				8
+				10
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				12 15 20
+				12 14 17
 				<exports>vse tooltip</exports>
 			</duration>
 			<dmgAbsorb>
 				0.85 0.775 0.70
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</dmgAbsorb>
 			<enginePowerFactor>
 				1.35
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</enginePowerFactor>
 			<fwMaxSpeedBonus>
 				10
 				<exports>vse tooltip</exports>
 			</fwMaxSpeedBonus>
 			<bkMaxSpeedBonus>
-				10
+				7
 				<exports>vse tooltip</exports>
 			</bkMaxSpeedBonus>
 			<rammingDamageBonus>
@@ -394,23 +394,23 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				25
+				15
 				<exports>vse tooltip</exports>
 			</duration>
 			<shotDispersionFactors>
 				0.8 0.7 0.6
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 			<slvl>
-				0.6 0.8 0.95
+				1.0 1.2 1.45
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</slvl>
 			<sdlvl>
 				0.6 0.8 0.95
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</sdlvl>
 		</script>
 	</comp7_sure_shot>
@@ -431,7 +431,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				5
+				3
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -483,13 +483,14 @@
 				<exports>vse tooltip</exports>
 			</healDuration>
 			<baseHeal>
-				100
+				70.0
+				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</baseHeal>
 			<extraHealFactor>
 				0.35 0.55 0.75
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</extraHealFactor>
 			<fwdSpeedBoost>
 				10
@@ -526,7 +527,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				8 12 17
+				7 10 15
 				<exports>vse tooltip</exports>
 			</duration>
 			<delay>
@@ -534,7 +535,7 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<startupDelay>
-				3
+				4
 				<exports>vse tooltip</exports>
 			</startupDelay>
 			<radius>
@@ -561,7 +562,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				3
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -571,7 +572,7 @@
 			<visionFactor>
 				1.15 1.2 1.25
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</visionFactor>
 		</script>
 	</comp7_aggressive_detection>

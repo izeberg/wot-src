@@ -621,54 +621,55 @@ class _Filter(object):
         raise NotImplementedError
 
 
+class VehicleFilterNode(object):
+    __metaclass__ = ReflectionMetaclass
+    __slots__ = ('nations', 'levels', 'tags', 'vehicles')
+
+    def __init__(self):
+        self.nations = None
+        self.levels = None
+        self.tags = None
+        self.vehicles = None
+        return
+
+    def __deepcopy__(self, memodict={}):
+        newItem = type(self)()
+        newItem.nations = deepcopy(self.nations)
+        newItem.levels = deepcopy(self.levels)
+        newItem.vehicles = deepcopy(self.vehicles)
+        newItem.tags = deepcopy(self.tags)
+        return newItem
+
+    def __str__(self):
+        result = []
+        if self.nations:
+            result.append(str(self.nations))
+        if self.levels:
+            result.append(str(self.levels))
+        if self.vehicles:
+            result.append(str(self.vehicles))
+        if self.tags:
+            result.append(str(self.tags))
+        return ('; ').join(result)
+
+    def match(self, vehicleDescr):
+        return self.matchVehicleType(vehicleDescr.type)
+
+    def matchVehicleType(self, vehicleType):
+        nationID = vehicleType.customizationNationID
+        if self.nations and nationID not in self.nations:
+            return False
+        if self.levels and vehicleType.level not in self.levels:
+            return False
+        if self.vehicles and vehicleType.compactDescr not in self.vehicles:
+            return False
+        if self.tags and not self.tags < vehicleType.tags:
+            return False
+        return True
+
+
 class VehicleFilter(_Filter):
     __metaclass__ = ReflectionMetaclass
-
-    class FilterNode(object):
-        __metaclass__ = ReflectionMetaclass
-        __slots__ = ('nations', 'levels', 'tags', 'vehicles')
-
-        def __init__(self):
-            self.nations = None
-            self.levels = None
-            self.tags = None
-            self.vehicles = None
-            return
-
-        def __deepcopy__(self, memodict={}):
-            newItem = type(self)()
-            newItem.nations = deepcopy(self.nations)
-            newItem.levels = deepcopy(self.levels)
-            newItem.vehicles = deepcopy(self.vehicles)
-            newItem.tags = deepcopy(self.tags)
-            return newItem
-
-        def __str__(self):
-            result = []
-            if self.nations:
-                result.append(str(self.nations))
-            if self.levels:
-                result.append(str(self.levels))
-            if self.vehicles:
-                result.append(str(self.vehicles))
-            if self.tags:
-                result.append(str(self.tags))
-            return ('; ').join(result)
-
-        def match(self, vehicleDescr):
-            return self.matchVehicleType(vehicleDescr.type)
-
-        def matchVehicleType(self, vehicleType):
-            nationID = vehicleType.customizationNationID
-            if self.nations and nationID not in self.nations:
-                return False
-            if self.levels and vehicleType.level not in self.levels:
-                return False
-            if self.vehicles and vehicleType.compactDescr not in self.vehicles:
-                return False
-            if self.tags and not self.tags < vehicleType.tags:
-                return False
-            return True
 
     def match(self, vehicleDescr):
         include = not self.include or any(f.match(vehicleDescr) for f in self.include)
@@ -679,47 +680,48 @@ class VehicleFilter(_Filter):
         return include and not (self.exclude and any(f.matchVehicleType(vehicleType) for f in self.exclude))
 
 
+class ItemsFilterNode(object):
+    __slots__ = ('ids', 'itemGroupNames', 'tags', 'types', 'customizationDisplayType')
+
+    def __init__(self):
+        self.ids = None
+        self.itemGroupNames = None
+        self.tags = None
+        self.types = None
+        self.customizationDisplayType = None
+        return
+
+    def __str__(self):
+        result = []
+        if self.ids is not None:
+            result.append(str(self.ids))
+        if self.itemGroupNames is not None:
+            result.append(str(self.itemGroupNames))
+        if self.tags is not None:
+            result.append(str(self.tags))
+        if self.types is not None:
+            result.append(str(self.types))
+        if self.customizationDisplayType is not None:
+            result.append(str(self.customizationDisplayType))
+        return ('; ').join(result)
+
+    def matchItem(self, item):
+        if self.ids is not None and item.id not in self.ids:
+            return False
+        else:
+            if self.itemGroupNames is not None and item.parentGroup.name not in self.itemGroupNames:
+                return False
+            if self.tags is not None and not self.tags < item.tags:
+                return False
+            if self.types is not None and item.itemType == CustomizationType.DECAL and item.type not in self.types:
+                return False
+            if self.customizationDisplayType is not None and item.customizationDisplayType != self.customizationDisplayType:
+                return False
+            return True
+
+
 class ItemsFilter(_Filter):
     __metaclass__ = ReflectionMetaclass
-
-    class FilterNode(object):
-        __slots__ = ('ids', 'itemGroupNames', 'tags', 'types', 'customizationDisplayType')
-
-        def __init__(self):
-            self.ids = None
-            self.itemGroupNames = None
-            self.tags = None
-            self.types = None
-            self.customizationDisplayType = None
-            return
-
-        def __str__(self):
-            result = []
-            if self.ids is not None:
-                result.append(str(self.ids))
-            if self.itemGroupNames is not None:
-                result.append(str(self.itemGroupNames))
-            if self.tags is not None:
-                result.append(str(self.tags))
-            if self.types is not None:
-                result.append(str(self.types))
-            if self.customizationDisplayType is not None:
-                result.append(str(self.customizationDisplayType))
-            return ('; ').join(result)
-
-        def matchItem(self, item):
-            if self.ids is not None and item.id not in self.ids:
-                return False
-            else:
-                if self.itemGroupNames is not None and item.parentGroup.name not in self.itemGroupNames:
-                    return False
-                if self.tags is not None and not self.tags < item.tags:
-                    return False
-                if self.types is not None and item.itemType == CustomizationType.DECAL and item.type not in self.types:
-                    return False
-                if self.customizationDisplayType is not None and item.customizationDisplayType != self.customizationDisplayType:
-                    return False
-                return True
 
     def match(self, item):
         include = not self.include or any(f.matchItem(item) for f in self.include)

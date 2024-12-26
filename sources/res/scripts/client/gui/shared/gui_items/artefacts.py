@@ -309,7 +309,8 @@ class BattleBooster(Equipment):
         return self.descriptor.iconName
 
     def getOverlayType(self, vehicle=None):
-        if self.isCrewBooster():
+        isLearnt = self.isAffectedSkillLearnt(vehicle)
+        if self.isCrewBooster() and not isLearnt:
             return 'battleBoosterReplace'
         return 'battleBooster'
 

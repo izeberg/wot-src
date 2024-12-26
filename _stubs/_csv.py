@@ -106,7 +106,7 @@ __doc__ = 'CSV parsing and writing.\n\nThis module provides classes that assist 
 __name__ = '_csv'
 __package__ = None
 __version__ = '1.0'
-_dialects = {'excel': <_csv.Dialect object at 0x00000000211A81E0>, 'excel-tab': <_csv.Dialect object at 0x00000000211A8210>}
+_dialects = {'excel': <_csv.Dialect object at 0x000000002492CF60>, 'excel-tab': <_csv.Dialect object at 0x000000002492CF90>}
 def field_size_limit(*args, **kwargs): pass
 def get_dialect(*args, **kwargs): pass
 def list_dialects(*args, **kwargs): pass

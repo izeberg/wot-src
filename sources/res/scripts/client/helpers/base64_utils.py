@@ -22,7 +22,7 @@ def pack(raw):
 def unpack(packed, default=None):
     try:
         return cPickle.loads(base64.b64decode(packed))
-    except (binascii.Error, cPickle.PickleError, UnicodeError, TypeError, ValueError):
+    except (binascii.Error, cPickle.PickleError, UnicodeError, TypeError, ValueError, EOFError):
         _logger.exception('Unpacking data fail.')
 
     return default

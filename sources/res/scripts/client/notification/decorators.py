@@ -13,11 +13,11 @@ from gui.clans.settings import CLAN_APPLICATION_STATES, CLAN_INVITE_STATES
 from gui.customization.shared import isVehicleCanBeCustomized
 from gui.impl import backport
 from gui.impl.gen import R
+from gui.impl.lobby.comp7.comp7_quest_helpers import hasAvailableWeeklyQuestsOfferGiftTokens
 from gui.prb_control import prbInvitesProperty
 from gui.prb_control.formatters.invites import getPrbInviteHtmlFormatter
 from gui.shared import EVENT_BUS_SCOPE, g_eventBus
 from gui.shared.events import HangarSpacesSwitcherEvent, ViewEventType
-from gui.shared.formatters import icons, text_styles
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.notifications import NotificationGroup, NotificationGuiSettings, NotificationPriorityLevel
 from gui.shared.system_factory import collectCustomizationHangarDecorator
@@ -34,7 +34,7 @@ from messenger.proto import proto_getter
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE
 from notification.settings import NOTIFICATION_BUTTON_STATE, NOTIFICATION_TYPE, makePathToIcon
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, IComp7Controller, IEventLootBoxesController, ILootBoxSystemController, IMapboxController, IResourceWellController, ISeniorityAwardsController
+from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, IComp7Controller, ILootBoxSystemController, IMapboxController, IResourceWellController, ISeniorityAwardsController
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
@@ -481,7 +481,7 @@ class Comp7BondEquipmentDecorator(MessageDecorator):
 
     def __getButtonState(self):
         state = NOTIFICATION_BUTTON_STATE.VISIBLE
-        if self.__comp7Controller.hasAvailableOfferTokens():
+        if hasAvailableWeeklyQuestsOfferGiftTokens():
             state |= NOTIFICATION_BUTTON_STATE.ENABLED
         return state
 
@@ -1257,49 +1257,6 @@ class SeniorityAwardsDecorator(MessageDecorator):
         if self.__seniorityAwardCtrl.timeLeft > 0:
             state |= NOTIFICATION_BUTTON_STATE.ENABLED
         return state
-
-
-class EventLootBoxesDecorator(MessageDecorator):
-    __eventLootBoxes = dependency.descriptor(IEventLootBoxesController)
-
-    def __init__(self, entityID, message, model):
-        super(EventLootBoxesDecorator, self).__init__(entityID, self.__makeEntity(message), self.__makeSettings(), model)
-        self.__eventLootBoxes.onStatusChange += self.__update
-        self.__eventLootBoxes.onAvailabilityChange += self.__update
-
-    def clear(self):
-        self.__eventLootBoxes.onStatusChange -= self.__update
-        self.__eventLootBoxes.onAvailabilityChange -= self.__update
-
-    def _make(self, formatted=None, settings=None):
-        self.__updateEntityButtons()
-        super(EventLootBoxesDecorator, self)._make(formatted, settings)
-
-    def __makeEntity(self, message):
-        return g_settings.msgTemplates.format('EventLootBoxStartSysMessage', ctx=message)
-
-    def __makeSettings(self):
-        return NotificationGuiSettings(isNotify=True, priorityLevel=NotificationPriorityLevel.MEDIUM)
-
-    def __updateEntityButtons(self):
-        if self._entity is None or not self._entity.get('buttonsLayout'):
-            return
-        labelText = backport.text(R.strings.lootboxes.notification.eventStart.button())
-        if self.__eventLootBoxes.useExternalShop():
-            labelText = text_styles.concatStylesWithSpace(labelText, icons.webLink())
-        self._entity['buttonsLayout'][0]['label'] = labelText
-        if self.__eventLootBoxes.isActive() and self.__eventLootBoxes.isLootBoxesAvailable():
-            state = NOTIFICATION_BUTTON_STATE.DEFAULT
-        else:
-            state = NOTIFICATION_BUTTON_STATE.VISIBLE
-        self._entity['buttonsStates'] = {'submit': state}
-        return
-
-    def __update(self, *_):
-        self.__updateEntityButtons()
-        if self._model is not None:
-            self._model.updateNotification(self.getType(), self._entityID, self._entity, False)
-        return
 
 
 class LootBoxSystemDecorator(MessageDecorator):

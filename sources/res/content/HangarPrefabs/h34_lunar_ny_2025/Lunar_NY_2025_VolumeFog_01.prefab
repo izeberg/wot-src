@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>Lunar_NY_2025_VolumeFog_01</name>
+			<UUID>569f166a-c90a-4899-b52f-28b81d4dfec8</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>FerrisWheel_Right_Ultra</name>
+			<UUID>e668f961-c1f7-3a8c-ab79-0f8347bdd1a7</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>BackCity</name>
+			<UUID>cc3aabe3-9f18-37b6-8a2d-bf82f4107cb0</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Mountains</name>
+			<UUID>c7a7e717-6c11-3798-89b3-5687f9530ced</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>FerrisWheel_Left</name>
+			<UUID>1f95264d-2f39-3145-a6d6-249214a33de0</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>MountainBuildings</name>
+			<UUID>bb9e4725-0c9f-32be-bc00-8a9cdc0c936f</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>BackCity</name>
+			<UUID>2be4af55-be31-33b0-96cd-fff0335143b7</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>FrontCity</name>
+			<UUID>b50992a0-2f56-392e-a082-d535aa58ca9d</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>FerrisWheel_Right_Med_High</name>
+			<UUID>88c6109d-1a4a-3bce-a5ab-a2a9c5aaaf5a</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>e668f961-c1f7-3a8c-ab79-0f8347bdd1a7</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cc3aabe3-9f18-37b6-8a2d-bf82f4107cb0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c7a7e717-6c11-3798-89b3-5687f9530ced</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1f95264d-2f39-3145-a6d6-249214a33de0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bb9e4725-0c9f-32be-bc00-8a9cdc0c936f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2be4af55-be31-33b0-96cd-fff0335143b7</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b50992a0-2f56-392e-a082-d535aa58ca9d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>88c6109d-1a4a-3bce-a5ab-a2a9c5aaaf5a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>569f166a-c90a-4899-b52f-28b81d4dfec8</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>569f166a-c90a-4899-b52f-28b81d4dfec8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e668f961-c1f7-3a8c-ab79-0f8347bdd1a7</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-168.923 11.5758 307.572
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							130.657 73.8519 219.349
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.79088e-07 -1.90657 8.56936e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cc3aabe3-9f18-37b6-8a2d-bf82f4107cb0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							128.832 70.4266 485.039
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							118.091 63.0751 83.0447
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.47061e-07 -1.24477 -6.19853e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c7a7e717-6c11-3798-89b3-5687f9530ced</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							454.374 65.6897 -344.408
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							179.21 63.366 122.352
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.14651e-07 -0.792768 1.47214e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1f95264d-2f39-3145-a6d6-249214a33de0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-508.036 -3.06973 297.554
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							80.8846 111.075 138.049
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-5.62024e-08 -1.02422 1.41018e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bb9e4725-0c9f-32be-bc00-8a9cdc0c936f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-50.8934 30.6131 -147.229
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							43.1774 43.8595 26.5985
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-2.68679e-07 -1.61479 2.47967e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2be4af55-be31-33b0-96cd-fff0335143b7</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							287.819 29.7446 258.994
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							112.626 86.9113 92.957
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							3.59027e-07 -0.741507 1.66247e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b50992a0-2f56-392e-a082-d535aa58ca9d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-396.603 1.75916 -225.878
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							122.103 94.8636 99.1738
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-5.88239e-07 1.08486 3.32456e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>88c6109d-1a4a-3bce-a5ab-a2a9c5aaaf5a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-168.923 11.5758 307.572
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							130.657 73.8519 219.349
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.79088e-07 -1.90657 8.56936e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>LocalFogComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e668f961-c1f7-3a8c-ab79-0f8347bdd1a7</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>100 100 100</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.99
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.41
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.565
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cc3aabe3-9f18-37b6-8a2d-bf82f4107cb0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>
+							0.843137 0.85098 0.980392 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>10 10 10</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.99
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.51
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.425
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c7a7e717-6c11-3798-89b3-5687f9530ced</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>
+							0.843137 0.85098 0.980392 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>10 10 10</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.99
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.21
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>
+							2.9
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.758
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1f95264d-2f39-3145-a6d6-249214a33de0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>
+							0.8 0.8 0.8 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>100 100 100</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.25
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.76
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>
+							2.1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.555
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bb9e4725-0c9f-32be-bc00-8a9cdc0c936f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>
+							0.980392 0.976471 0.92549 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>10 10 10</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.81
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.01
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.377
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2be4af55-be31-33b0-96cd-fff0335143b7</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>
+							0.843137 0.85098 0.980392 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>10 10 10</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.99
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.51
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.425
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b50992a0-2f56-392e-a082-d535aa58ca9d</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>10 10 10</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.99
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.01
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.532
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>88c6109d-1a4a-3bce-a5ab-a2a9c5aaaf5a</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>100 100 100</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.99
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.41
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.157
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

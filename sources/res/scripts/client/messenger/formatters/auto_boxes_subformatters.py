@@ -8,7 +8,7 @@ from gui.lootbox_system.common import TEXT_RESOURCE_PREFIX, NotificationPathPart
 from gui.server_events.bonuses import getMergedBonusesFromDicts
 from gui.shared.formatters import text_styles
 from gui.shared.gui_items.dossier import getAchievementFactory
-from gui.shared.gui_items.loot_box import ALL_LUNAR_NY_LOOT_BOX_TYPES, EventLootBoxes, WTLootBoxes, NewYearLootBoxes
+from gui.shared.gui_items.loot_box import ALL_LUNAR_NY_LOOT_BOX_TYPES, WTLootBoxes, NewYearLootBoxes
 from gui.shared.notifications import NotificationGroup, NotificationPriorityLevel
 from helpers import dependency
 from messenger import g_settings
@@ -97,21 +97,6 @@ class EventBoxesFormatter(AsyncAutoLootBoxSubFormatter):
             boxes.append(backport.text(self._getTextResPath().counter(), boxName=box.getUserName(), count=message.data[boxID]['count']))
 
         return (', ').join(boxes)
-
-
-class EventLootBoxesFormatter(EventBoxesFormatter):
-
-    @classmethod
-    def _isBoxOfThisGroup(cls, boxID):
-        return cls._isBoxOfRequiredTypes(boxID, EventLootBoxes.ALL())
-
-    @staticmethod
-    def _getMessageTemplate():
-        return 'EventLootBoxesAutoOpenMessage'
-
-    @staticmethod
-    def _getTextResPath():
-        return R.strings.lootboxes.notification.lootBoxesAutoOpen
 
 
 class NYPostEventBoxesFormatter(AsyncAutoLootBoxSubFormatter):
@@ -283,7 +268,7 @@ class LootBoxSystemAutoOpenFormatter(AsyncAutoLootBoxSubFormatter):
             openedEventsBoxes = self.__getEventNames(message.data) if openedBoxesIDs else {}
             messages = []
             for name in openedEventsBoxes.keys():
-                if R.strings.dyn(TEXT_RESOURCE_PREFIX + name).dyn(NotificationPathPart.MAIN).dyn(NotificationPathPart.AUTOOPEN).isValid():
+                if R.strings.dyn(TEXT_RESOURCE_PREFIX + name).isValid():
                     eventBoxes = openedEventsBoxes.pop(name)
                     messages.append(self.__getMessage(message, eventBoxes, name))
                     openedBoxesIDs -= eventBoxes

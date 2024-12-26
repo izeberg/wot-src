@@ -478,9 +478,3 @@ def showComp7BanWindow(arenaTypeID, time, duration, penalty, isQualification, no
         wnd.load()
     else:
         notificationMgr.append(WindowNotificationCommand(wnd))
-
-
-def showComp7YearlyRewardsSelectionWindow():
-    from gui.impl.lobby.comp7.yearly_rewards_selection_screen import YearlyRewardsSelectionWindow
-    window = YearlyRewardsSelectionWindow()
-    window.load()

@@ -1440,7 +1440,7 @@ msgid "A176_M103_110_long_special"
 msgstr ""
 "Главное преимущество M103M по сравнению с M103 — это его точное и комфортное"
 " 110-мм орудие с самым высоким уроном в минуту среди всех «тяжей» на уровне."
-" Такие впечатляющие показатели компенсируются более низким разовым уроном, "
+" Такие впечатляющие показатели компенсируются уменьшенным разовым уроном, "
 "что предполагает более активный стиль игры. В остальном это всё тот же "
 "старый добрый M103 с хорошей мобильностью и приличной живучестью."
 
@@ -1520,6 +1520,12 @@ msgstr "M46 KR"
 
 msgid "A63_M46_Patton_KR_short_special"
 msgstr "Комфортные углы вертикальной наводки, хороший обзор"
+
+msgid "A69_T110E5_7x7"
+msgstr "T110E5 7x7"
+
+msgid "A69_T110E5_7x7_short"
+msgstr "T110E5 7x7"
 
 msgid "A74_T1_E6_long_special"
 msgstr ""
@@ -5398,6 +5404,9 @@ msgstr "HVAP-DS-T M331A3"
 msgid "_76mm_AP_M339"
 msgstr "AP M339"
 
+msgid "_76mm_AP_M339E5"
+msgstr "AP M339E5"
+
 msgid "_76mm_AP_M79"
 msgstr "AP M62"
 
@@ -5509,6 +5518,9 @@ msgstr "HE M352"
 msgid "_76mm_HE_M352A1"
 msgstr "HE M352A1"
 
+msgid "_76mm_HE_M352E5"
+msgstr "HE M352E5"
+
 msgid "_76mm_HE_M42A1"
 msgstr "HE M42A1"
 
@@ -5520,6 +5532,9 @@ msgstr "HE M42B1"
 
 msgid "_76mm_HVAP_M319"
 msgstr "HVAP M319"
+
+msgid "_76mm_HVAP_M319E5"
+msgstr "HVAP M319E5"
 
 msgid "_76mm_HVAP_M93"
 msgstr "HVAP M93"

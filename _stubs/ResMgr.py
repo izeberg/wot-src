@@ -26,8 +26,10 @@ class DataSection(pybind11_object):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
-	def __getattribute__(self, *args, **kwargs): pass
+	def __getattr__(self, *args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
 	def __getitem__(self, *args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
 	def __hash__(*args, **kwargs): pass
 	def __init__(self, *args, **kwargs): pass
 	def __len__(self, *args, **kwargs): pass
@@ -38,6 +40,7 @@ class DataSection(pybind11_object):
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
 	def __setattr__(self, *args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass

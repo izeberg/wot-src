@@ -1447,6 +1447,18 @@ msgstr "Истекает через %H ч %M мин"
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Истекает через %MM:%SS"
 
+msgid "dailyQuests/comp7/nextTasks"
+msgstr "5 новых задач через:"
+
+msgid "dailyQuests/comp7/progressCounter"
+msgstr "%(current)d%(separator)s%(total)d"
+
+msgid "dailyQuests/comp7/questsCounter"
+msgstr "%(current)d / %(total)d"
+
+msgid "dailyQuests/comp7/reward"
+msgstr "Заберите награду!"
+
 msgid "dailyQuests/condition/battle_singular"
 msgstr "Провести бой"
 

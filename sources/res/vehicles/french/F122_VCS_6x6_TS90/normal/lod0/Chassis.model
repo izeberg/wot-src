@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F122_VCS_6x6_TS90/normal/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.209968 0.001012 -2.344537</min>
+		<max>1.209969 1.256306 2.104895</max>
+	</visibilityBox>
+	<parent>vehicles/french/F122_VCS_6x6_TS90/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

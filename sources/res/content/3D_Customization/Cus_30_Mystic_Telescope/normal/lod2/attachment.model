@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_30_Mystic_Telescope/normal/lod2/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_30_Mystic_Telescope/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.222513 -0.193549 -0.954157</min>
+		<max>0.109109 0.703216 0.670563</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -11,7 +11,7 @@
 	<postProgressionTree>role_HT_support</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>45</forward>
 		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
@@ -859,6 +859,57 @@
 					0.02
 					<!--BW_String-->
 				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					-1.623 0.310407 -0.918398
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999979 0.999979 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					1.623 0.310407 -0.918398
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999979 0.999979 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>
+					0.297 0.189 -3.648
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -1.570796 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999924 0.999924 0.999924</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
 			</slot>
 		</customizationSlots>
 		<customization>
@@ -2963,7 +3014,7 @@
 						0.198
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>18</reloadTime>
+					<reloadTime>17</reloadTime>
 					<aimingTime>
 						2.5
 						<!--BW_String-->
@@ -2988,7 +3039,7 @@
 						<rate>20</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>12 14 16 18</reloadTime>
+						<reloadTime>11 13 15 17</reloadTime>
 						<boostFraction>
 							0.5
 							<!--BW_String-->
@@ -4086,6 +4137,30 @@
 						<!--BW_String-->
 					</anchorShift>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0.118 0.994 0.166
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						-1.110996 0.744091 -0.553
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -4119,7 +4194,7 @@
 			<engines>
 				<AVDS_1790M>
 					<smplEnginePower>800</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</AVDS_1790M>
 			</engines>
 			<chassis>
@@ -4161,4 +4236,5 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
+	<baseColorID>1</baseColorID>
 </root>

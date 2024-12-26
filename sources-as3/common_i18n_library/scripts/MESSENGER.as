@@ -1239,28 +1239,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_CONVERTER_PROJECTIONDECALSDEMOUNTED:String = "#messenger:serviceChannelMessages/sysMsg/converter/projectionDecalsDemounted";
       
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_TITLE:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/title";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_DATE:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/date";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_DEBIT:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/debit";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ACCRUED:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/accrued";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_CREDITS_ACCRUED:String = "#messenger:serviceChannelMessages/sysMsg/consumables/credits/accrued";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ITEM_ONE:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/item/one";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ITEM_MANY:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/item/many";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ITEMS_QUALITYOIL:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/items/qualityOil";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ITEMS_LENDLEASEOIL:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/items/lendLeaseOil";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ITEMS_GASOLINE100:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline100";
-      
-      public static const SERVICECHANNELMESSAGES_SYSMSG_CONSUMABLES_REPLACEDITEMS_ITEMS_GASOLINE105:String = "#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline105";
-      
       public static const SERVICECHANNELMESSAGES_SYSMSG_REMOVECUSTOMIZATIONS:String = "#messenger:serviceChannelMessages/sysMsg/removeCustomizations";
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_CUSTOMIZATIONS_MAP_SUMMER:String = "#messenger:serviceChannelMessages/sysMsg/customizations/map/summer";

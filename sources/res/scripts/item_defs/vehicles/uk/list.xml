@@ -228,6 +228,20 @@
 		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>10</level>
 	</GB86_Centurion_Action_X>
+	<GB86_Centurion_Action_X_7x7>
+		<id>86</id>
+		<userString>#gb_vehicles:GB86_Centurion_Action_X_7x7</userString>
+		<description>#gb_vehicles:GB86_Centurion_Action_X_descr</description>
+		<shortUserString>#gb_vehicles:GB86_Centurion_Action_X_7x7_short</shortUserString>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<cannotBeBought>true</cannotBeBought>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals private secret cannot_be_sold comp7 special</tags>
+		<level>10</level>
+	</GB86_Centurion_Action_X_7x7>
 	<GB59_Cruiser_Mk_IV>
 		<id>29</id>
 		<userString>#gb_vehicles:GB59_Cruiser_Mk_IV</userString>
@@ -1295,21 +1309,57 @@
 		<tags>heavyTank role_HT_assault HD heavyTank1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user lockOutfit restoreWithStyle</tags>
 		<level>6</level>
 	</GB136_Churchill_BPXIV>
-	<GB139_FV226_Contradictions>
+	<GB139_FV226_Contradictious>
 		<id>249</id>
-		<userString>#gb_vehicles:GB139_FV226_Contradictions</userString>
-		<shortUserString>#gb_vehicles:GB139_FV226_Contradictions_short</shortUserString>
-		<description>#gb_vehicles:GB139_FV226_Contradictions_descr</description>
-		<shortDescriptionSpecial>#gb_vehicles:GB139_FV226_Contradictions_short_special</shortDescriptionSpecial>
-		<longDescriptionSpecial>#gb_vehicles:GB139_FV226_Contradictions_long_special</longDescriptionSpecial>
+		<userString>#gb_vehicles:GB139_FV226_Contradictious</userString>
+		<shortUserString>#gb_vehicles:GB139_FV226_Contradictious_short</shortUserString>
+		<description>#gb_vehicles:GB139_FV226_Contradictious_descr</description>
+		<shortDescriptionSpecial>#gb_vehicles:GB139_FV226_Contradictious_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB139_FV226_Contradictious_long_special</longDescriptionSpecial>
 		<price>
-			100
+			10200
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD siegeMode twinGun heavyTank1 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD siegeMode twinGun heavyTank1 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
 		<level>8</level>
-	</GB139_FV226_Contradictions>
+	</GB139_FV226_Contradictious>
+	<GB142_FV230_Canopener>
+		<id>85</id>
+		<userString>#gb_vehicles:GB142_FV230_Canopener</userString>
+		<description>#gb_vehicles:GB142_FV230_Canopener_descr</description>
+		<shortUserString>#gb_vehicles:GB142_FV230_Canopener_short</shortUserString>
+		<price>6100000</price>
+		<tags>heavyTank role_HT_universal HD siegeMode twinGun improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals</tags>
+		<level>10</level>
+	</GB142_FV230_Canopener>
+	<GB140_FV224_Chopper>
+		<id>89</id>
+		<userString>#gb_vehicles:GB140_FV224_Chopper</userString>
+		<description>#gb_vehicles:GB140_FV224_Chopper_descr</description>
+		<shortUserString>#gb_vehicles:GB140_FV224_Chopper_short</shortUserString>
+		<price>1500000</price>
+		<tags>heavyTank role_HT_universal HD heavyTank1 siegeMode twinGun improvedVentilation_class2_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<level>7</level>
+	</GB140_FV224_Chopper>
+	<GB148_FV227_Conceiver>
+		<id>90</id>
+		<userString>#gb_vehicles:GB148_FV227_Conceiver</userString>
+		<description>#gb_vehicles:GB148_FV227_Conceiver_descr</description>
+		<shortUserString>#gb_vehicles:GB148_FV227_Conceiver_short</shortUserString>
+		<price>2700000</price>
+		<tags>heavyTank role_HT_universal HD siegeMode twinGun improvedVentilation_class1_user  aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
+		<level>8</level>
+	</GB148_FV227_Conceiver>
+	<GB143_FV229_Contender>
+		<id>91</id>
+		<userString>#gb_vehicles:GB143_FV229_Contender</userString>
+		<description>#gb_vehicles:GB143_FV229_Contender_descr</description>
+		<shortUserString>#gb_vehicles:GB143_FV229_Contender_short</shortUserString>
+		<price>3600000</price>
+		<tags>heavyTank role_HT_universal HD siegeMode twinGun improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
+		<level>9</level>
+	</GB143_FV229_Contender>
 	<GB1020_Crusader_NewOnBoarding>
 		<id>400</id>
 		<userString>#gb_vehicles:GB20_Crusader</userString>
@@ -1353,13 +1403,28 @@
 		<shortDescriptionSpecial>#gb_vehicles:GB146_Gabler_s_Destroyer_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#gb_vehicles:GB146_Gabler_s_Destroyer_long_special</longDescriptionSpecial>
 		<price>
-			100
+			1450
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank HD special scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user secret testTank</tags>
+		<tags>lightTank HD special scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
 		<level>5</level>
 	</GB146_Gabler_s_Destroyer>
+	<GB141_GSOR_the_TANK>
+		<id>84</id>
+		<userString>#gb_vehicles:GB141_GSOR_the_TANK</userString>
+		<shortUserString>#gb_vehicles:GB141_GSOR_the_TANK_short</shortUserString>
+		<description>#gb_vehicles:GB141_GSOR_the_TANK_descr</description>
+		<shortDescriptionSpecial>#gb_vehicles:GB141_GSOR_the_TANK_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB141_GSOR_the_TANK_long_special</longDescriptionSpecial>
+		<price>
+			5
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_universal HD special improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<level>9</level>
+	</GB141_GSOR_the_TANK>
 	<GB149_Centurion_MkI_A>
 		<id>88</id>
 		<userString>#gb_vehicles:GB149_Centurion_MkI_A</userString>

@@ -52,6 +52,9 @@ msgid "description/Cz17_Vz_55_CN"
 msgstr ""
 "Иметь в Ангаре машину Vz.&nbsp;55 Gothic&nbsp;Warrior %(level)s&nbsp;уровня"
 
+msgid "description/Cz40_DBV_152"
+msgstr "Иметь в ангаре машину&nbsp;DBV-152 %(level)s&nbsp;уровня"
+
 msgid "description/G104_Stug_IV"
 msgstr ""
 "Завершить первую операцию и получить машину StuG&nbsp;IV "
@@ -110,6 +113,13 @@ msgstr "Иметь в Ангаре машину&nbsp;WT&nbsp;12 %(level)s&nbsp;�
 
 msgid "description/GB114_Vickers_MBT_Mk3"
 msgstr "Иметь в Ангаре машину&nbsp;Vickers&nbsp;3 %(level)s&nbsp;уровня"
+
+msgid "description/GB141_GSOR_the_TANK"
+msgstr "Иметь в Ангаре машину&nbsp;GSOR the TANK&nbsp;%(level)s&nbsp;уровня"
+
+msgid "description/GB146_Gabler_s_Destroyer"
+msgstr ""
+"Иметь в Ангаре машину&nbsp;Gabler’s&nbsp;Destroyer %(level)s&nbsp;уровня"
 
 msgid "description/GB96_Excalibur"
 msgstr ""
@@ -369,6 +379,11 @@ msgid "description/branch_uk_GB120_Concept_No_5"
 msgstr ""
 "Исследовать всю технику в ветке британских средних танков во главе с Concept"
 " No.&nbsp;5 %(level)s&nbsp;уровня"
+
+msgid "description/branch_uk_GB142_FV230_Canopener"
+msgstr ""
+"Исследовать всю технику в ветке британских тяжёлых танков во главе "
+"с&nbsp;FV230&nbsp;Canopener %(level)s&nbsp;уровня"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr ""
@@ -972,6 +987,9 @@ msgstr "LPT-67&nbsp;Šelma"
 msgid "name/Cz34_Vz_71_Tesak"
 msgstr "Vz.&nbsp;71&nbsp;Tesák"
 
+msgid "name/Cz40_DBV_152"
+msgstr "DBV-152"
+
 msgid "name/F06_ARL_44"
 msgstr "ARL&nbsp;44"
 
@@ -1265,6 +1283,24 @@ msgstr "FSV Scheme&nbsp;A"
 
 msgid "name/GB12_Conqueror"
 msgstr "Conqueror"
+
+msgid "name/GB140_FV224_Chopper"
+msgstr "FV224&nbsp;Chopper"
+
+msgid "name/GB141_GSOR_the_TANK"
+msgstr "GSOR&nbsp;the&nbsp;TANK"
+
+msgid "name/GB142_FV230_Canopener"
+msgstr "FV230&nbsp;Canopener"
+
+msgid "name/GB143_FV229_Contender"
+msgstr "FV229&nbsp;Contender"
+
+msgid "name/GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s&nbsp;Destroyer"
+
+msgid "name/GB148_FV227_Conceiver"
+msgstr "FV227&nbsp;Conceiver"
 
 msgid "name/GB20_Crusader"
 msgstr "Crusader"
@@ -1838,6 +1874,9 @@ msgstr "Великобритания: Manticore"
 
 msgid "name/branch_uk_GB120_Concept_No_5"
 msgstr "Великобритания: Concept&nbsp;No.&nbsp;5"
+
+msgid "name/branch_uk_GB142_FV230_Canopener"
+msgstr "Великобритания: FV230&nbsp;Canopener"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "Великобритания: Conqueror Gun Carriage"

@@ -132,9 +132,6 @@ msgstr "D.W. 2"
 msgid "Chassis_DickerMax"
 msgstr "Dicker Max"
 
-msgid "Chassis_E-100"
-msgstr "E 100"
-
 msgid "Chassis_E-100_SH"
 msgstr "E 100"
 
@@ -147,20 +144,36 @@ msgstr "E 50"
 msgid "Chassis_E-50_2"
 msgstr "E 50 verstärkteketten"
 
-msgid "Chassis_E-75"
-msgstr "E 75"
-
-msgid "Chassis_E-75_2"
-msgstr "E 75 verstärkteketten"
-
 msgid "Chassis_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
 
+msgid "Chassis_G04_PzVI_Tiger_I"
+msgstr "Pz.Kpfw. VI H Ausf. H1"
+
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
+
+msgid "Chassis_G04_PzVI_Tiger_I_2"
+msgstr "Pz.Kpfw. Tiger Ausf. E"
+
+msgid "Chassis_G06_PzII"
+msgstr "Pz.Kpfw. II Ausf. A"
+
+msgid "Chassis_G06_PzII_2"
+msgstr "Pz.Kpfw. II Ausf. F"
+
+msgid "Chassis_G06_PzII_2_short"
+msgstr ""
+"Pz.Kpfw. II\n"
+"Ausf. F"
+
+msgid "Chassis_G06_PzII_short"
+msgstr ""
+"Pz.Kpfw. II\n"
+"Ausf. A"
 
 msgid "Chassis_G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
@@ -170,6 +183,22 @@ msgstr "StuG III Ausf. B"
 
 msgid "Chassis_G101_StuG_III_2"
 msgstr "StuG III Ausf. E"
+
+msgid "Chassis_G102_Pz_III"
+msgstr "Pz.Kpfw. III Ausf. D"
+
+msgid "Chassis_G102_Pz_III_2"
+msgstr "Pz.Kpfw. III Ausf. E"
+
+msgid "Chassis_G102_Pz_III_2_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. E"
+
+msgid "Chassis_G102_Pz_III_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. D"
 
 msgid "Chassis_G103_RU_251"
 msgstr "Spähpanzer Ru 251 PT I"
@@ -199,6 +228,22 @@ msgstr "Pz.Kpfw. II Ausf. D"
 
 msgid "Chassis_G109_Steyr_WT"
 msgstr "Krupp-Steyr Waffenträger"
+
+msgid "Chassis_G10_PzIII_AusfJ"
+msgstr "Pz.Kpfw. III Ausf. J"
+
+msgid "Chassis_G10_PzIII_AusfJ_2"
+msgstr "Pz.Kpfw. III Ausf. L"
+
+msgid "Chassis_G10_PzIII_AusfJ_2_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. L"
+
+msgid "Chassis_G10_PzIII_AusfJ_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. J"
 
 msgid "Chassis_G110_Typ_205"
 msgstr "170 ton Panzer"
@@ -293,6 +338,17 @@ msgstr "VK 168.01 (M)"
 msgid "Chassis_G139_MKA"
 msgstr "mittlerer Kampfwagen für Ausland"
 
+msgid "Chassis_G13_VK3001H"
+msgstr "VK 30.01 (H)"
+
+msgid "Chassis_G13_VK3001H_2"
+msgstr "VK 30.01 (H) verstärkteketten"
+
+msgid "Chassis_G13_VK3001H_2_short"
+msgstr ""
+"VK 30.01 (H)\n"
+"verstärkteketten"
+
 msgid "Chassis_G140_HWK_30"
 msgstr "HWK 30"
 
@@ -311,11 +367,28 @@ msgstr "Kampfpanzer 50 t"
 msgid "Chassis_G154_Kpz_07_RH"
 msgstr "Kpz 07 RH"
 
+msgid "Chassis_G154_Kpz_07_RH_LN"
+msgstr "Белый дракон"
+
 msgid "Chassis_G158_VK2801_105_SPXXI"
 msgstr "VK 28.01 verstärkteketten"
 
 msgid "Chassis_G159_KPZ_3_Project_07_HK"
 msgstr "KPz 3 Projekt 07 HK"
+
+msgid "Chassis_G15_VK3601H"
+msgstr "VK 36.01 (H)"
+
+msgid "Chassis_G15_VK3601H_2"
+msgstr "VK 36.01 (H) verstärkteketten"
+
+msgid "Chassis_G15_VK3601H_2_short"
+msgstr ""
+"VK 36.01 (H)\n"
+"verstärkteketten"
+
+msgid "Chassis_G15_VK3601H_short"
+msgstr "VK 36.01 (H)"
 
 msgid "Chassis_G160_Pz_Kpfw_35_R_mit_T_26_Turm"
 msgstr "Pz.Kpfw. 35 R mit T-26 Turm"
@@ -347,11 +420,25 @@ msgstr "KJpz.T"
 msgid "Chassis_G169_T_54D"
 msgstr "T 54D"
 
+msgid "Chassis_G16_PzVIB_Tiger_II"
+msgstr "Tiger II Versuchs-Serie"
+
+msgid "Chassis_G16_PzVIB_Tiger_II_2"
+msgstr "Tiger II"
+
+msgid "Chassis_G16_PzVIB_Tiger_II_2_short"
+msgstr "Tiger II"
+
 msgid "Chassis_G16_PzVIB_Tiger_II_F"
 msgstr "Tiger II"
 
 msgid "Chassis_G16_PzVIB_Tiger_II_F_short"
 msgstr "Tiger II"
+
+msgid "Chassis_G16_PzVIB_Tiger_II_short"
+msgstr ""
+"Tiger II\n"
+"Versuchs-Serie"
 
 msgid "Chassis_G170_PzKpfwIV_Ausf_F2"
 msgstr "Pz.Kpfw. IV Ausf. F2"
@@ -365,8 +452,23 @@ msgstr "Tiger II Kuromorimine"
 msgid "Chassis_G173_BT42_DIT"
 msgstr "15 tonnin rynnäkkötykkipanssarivaunu BT-42"
 
+msgid "Chassis_G174_Kpz3_GST_Turm"
+msgstr "Kampfpanzer 3 GST Turm"
+
+msgid "Chassis_G178_KanJpz_2"
+msgstr "Kanonenjagdpanzer 2"
+
 msgid "Chassis_G179_Straussler_V4"
 msgstr "Straussler V–4/40"
+
+msgid "Chassis_G55_E-75"
+msgstr "E 75"
+
+msgid "Chassis_G55_E-75_2"
+msgstr "E 75 verstärkteketten"
+
+msgid "Chassis_G56_E-100"
+msgstr "E 100"
 
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
@@ -1929,6 +2031,23 @@ msgstr "Хорошие мобильность и скорострельност�
 msgid "G154_Kpz_07_RH"
 msgstr "Kampfpanzer 07 RH"
 
+msgid "G154_Kpz_07_RH_LN"
+msgstr "Белый дракон"
+
+msgid "G154_Kpz_07_RH_LN_descr"
+msgstr ""
+"Белый дракон — страж воды и воздуха, который охраняет всё доброе. Хоть его "
+"лик и может показаться грозным, это благородный зверь с чистой душой. Он "
+"обладает мудростью тысячелетий, а его могущество не знает границ, если он "
+"желает им воспользоваться. Но он существо не злонамеренное и не карающее, он"
+" — податель жизни, и чешуя его блестит ослепительной белизной, чище снега, "
+"что украшает верхушки гор. Год Дракона, что наступает каждые 12 лет, — "
+"благоприятное время, полное удачи и благополучия, ведь тогда Белый дракон "
+"делится своей бесконечной милостью со смертным миром."
+
+msgid "G154_Kpz_07_RH_LN_short"
+msgstr "Белый дракон"
+
 msgid "G154_Kpz_07_RH_descr"
 msgstr ""
 "В начале 1960-х годов параллельно с программой Standardpanzer была начата "
@@ -2395,6 +2514,57 @@ msgstr "BT-42 Jatk."
 
 msgid "G173_BT42_DIT_short_special"
 msgstr "Сокрушительный урон, высокая скорость"
+
+msgid "G174_Kpz3_GST_Turm"
+msgstr "Kpz. 3 GST Turm"
+
+msgid "G174_Kpz3_GST_Turm_descr"
+msgstr ""
+"Проект Kpz.3 GST существовал в двух вариантах. Первый выглядел как классический истребитель танков. Второй — Kpz.3 GST Turm — получил башню с ограниченными углами поворота, в которой размещался весь экипаж. Также Kpz.3 GST оснащался гидропневматической подвеской, похожей по конструкции на Kpz.70.\n"
+"\n"
+"Предполагалось, что Kpz.3 будут очень быстрыми боевыми машинами, с мощной лобовой бронёй и высокой скорострельностью. Однако ни один из проектов не заинтересовал командование Бундесвера, поэтому дальнейшие разработки шли по линии Leopard 2."
+
+msgid "G174_Kpz3_GST_Turm_long_special"
+msgstr ""
+"Немецкая штурмовая ПТ-САУ VIII уровня Kpz. 3 GST Turm с отличной лобовой "
+"бронёй, позволяющей занимать и удерживать ключевые позиции. Орудие с "
+"хорошими УВН, а также достойными показателями бронепробития и урона в минуту"
+" установлено во вращающейся башне, что обеспечивает комфортное ведения огня."
+" В свою очередь гидропневматическая подвеска помогает эффективно "
+"использовать неровности рельефа."
+
+msgid "G174_Kpz3_GST_Turm_short"
+msgstr "GST Turm"
+
+msgid "G174_Kpz3_GST_Turm_short_special"
+msgstr "Прочная лобовая броня, автоматическая гидропневматическая подвеска"
+
+msgid "G178_KanJpz_2"
+msgstr "Kanonenjagdpanzer 2"
+
+msgid "G178_KanJpz_2_descr"
+msgstr ""
+"В 1959 году появились первые проекты установки 105-мм орудий на "
+"Kanonenjagdpanzer. Одновременно возникала проблема слишком сильно торчащего "
+"вперёд ствола. В результате появился проект KanJpz-2. Орудийная установка на"
+" машине сдвинулась назад к правому борту, а лоб корпуса был ассиметричным. "
+"Проект остался на бумаге, однако многое из того, что было запланировано для "
+"KanJpz-2, позже неоднократно использовалось в более поздних проектах."
+
+msgid "G178_KanJpz_2_long_special"
+msgstr ""
+"Kanonenjagdpanzer 2 — немецкая ПТ-САУ VIII уровня, вооружённая 11-см "
+"орудием. Гидропневматическая подвеска обеспечивает дополнительные 7 градусов"
+" УВН и даёт возможность переключаться между походным и осадным режимами, как"
+" у шведских ПТ-САУ. Машина защищена только базовой бронёй, однако её "
+"скорости в походном режиме достаточно, чтобы быстро сменить позицию. При "
+"этом в осадном режиме значительно улучшаются характеристики орудия."
+
+msgid "G178_KanJpz_2_short"
+msgstr "KanJPz 2"
+
+msgid "G178_KanJpz_2_short_special"
+msgstr "Хорошая мобильность, гидропневматическая подвеска"
 
 msgid "G179_Straussler_V4"
 msgstr "Straussler V–4/40"
@@ -3147,6 +3317,9 @@ msgstr "MB 517"
 msgid "MB517P"
 msgstr "MB 517"
 
+msgid "MB_803_12"
+msgstr "MB 803/12"
+
 msgid "MB_837_Ea_600M"
 msgstr "MB 837 Ea 600M"
 
@@ -3164,6 +3337,9 @@ msgstr "MB 881 P"
 
 msgid "MTU803"
 msgstr "MTU803"
+
+msgid "MTU_MB_8V837D"
+msgstr "MTU MB 8V837"
 
 msgid "M_17T_nestejaahdytteinen_bensiinimoottori"
 msgstr "M-17T nestejäähdytteinen bensiinimoottori"
@@ -3253,9 +3429,6 @@ msgstr "Maybach HL 57 TR"
 msgid "Maybach_HL62TR"
 msgstr "Maybach HL 62 TR"
 
-msgid "Maybach_HL62TRM"
-msgstr "Maybach HL 62 TRM"
-
 msgid "Maybach_HL62TRM_1"
 msgstr "Maybach HL 62 TR"
 
@@ -3289,14 +3462,26 @@ msgstr "Maybach HL 120 TRM"
 msgid "Maybach_HL_120_TRM_112_R"
 msgstr "Maybach HL 120 TRM 112 R"
 
+msgid "Maybach_HL_120_TRM_Ausf_H"
+msgstr "Maybach HL 120 TRM Ausf. H"
+
 msgid "Maybach_HL_120_TRM_C"
 msgstr "Maybach HL 120 TRM V12"
 
 msgid "Maybach_HL_120_TRM_F"
 msgstr "Maybach HL 120 TRM"
 
+msgid "Maybach_HL_120_TRM_G"
+msgstr "Maybach HL 120 TRM/G"
+
+msgid "Maybach_HL_120_TRM_J"
+msgstr "Maybach HL 120 TRM/J"
+
 msgid "Maybach_HL_120_TRM_L"
 msgstr "Maybach HL 120 TRM L"
+
+msgid "Maybach_HL_120_TRM_M"
+msgstr "Maybach HL 120 TRM/M"
 
 msgid "Maybach_HL_120_TRM_R"
 msgstr "Maybach HL 120 TRM R"
@@ -3306,6 +3491,12 @@ msgstr "2 x Maybach HL 120 TRM"
 
 msgid "Maybach_HL_120_TR_A"
 msgstr "Maybach HL 120 TRM 112"
+
+msgid "Maybach_HL_120_TR_Ausf_H"
+msgstr "Maybach HL 120 TR Ausf. H"
+
+msgid "Maybach_HL_120_TR_E"
+msgstr "Maybach HL 120 TR/E"
 
 msgid "Maybach_HL_120_TR_R"
 msgstr "Maybach HL 120 TR R"
@@ -3324,6 +3515,9 @@ msgstr "Maybach HL 174"
 
 msgid "Maybach_HL_174_05"
 msgstr "Maybach HL 87"
+
+msgid "Maybach_HL_174_V1"
+msgstr "Maybach HL 174 V1"
 
 msgid "Maybach_HL_190"
 msgstr "Maybach HL 190"
@@ -3483,13 +3677,24 @@ msgstr ""
 "Maybach\n"
 "HL 234 TRM P30"
 
-msgid "Maybach_HL_234_TRM_P45_1"
+msgid "Maybach_HL_234_TRM_P40"
+msgstr "Maybach HL 234 TRM P40"
+
+msgid "Maybach_HL_234_TRM_P40_short"
+msgstr ""
+"Maybach HL 234\n"
+"TRM P40"
+
+msgid "Maybach_HL_234_TRM_P45"
 msgstr "Maybach HL 234 TRM P45"
+
+msgid "Maybach_HL_234_TRM_P45_1"
+msgstr "Maybach HL 234 TRM P45 G.W."
 
 msgid "Maybach_HL_234_TRM_P45_1_short"
 msgstr ""
 "Maybach HL 234\n"
-"TRM P45"
+"TRM P45 G.W."
 
 msgid "Maybach_HL_234_TRM_P45_Leicht"
 msgstr "Maybach HL 295 Ausf. A"
@@ -3499,11 +3704,22 @@ msgstr ""
 "Maybach HL 295\n"
 "Ausf. A"
 
+msgid "Maybach_HL_234_TRM_P45_short"
+msgstr ""
+"Maybach HL 234\n"
+"TRM P45"
+
 msgid "Maybach_HL_235"
 msgstr "Maybach HL 235"
 
 msgid "Maybach_HL_45P"
 msgstr "Maybach HL 45 P"
+
+msgid "Maybach_HL_57_TRM"
+msgstr "Maybach HL 57 TRM"
+
+msgid "Maybach_HL_62_TRM"
+msgstr "Maybach HL 62 TRM"
 
 msgid "Maybach_HL_98"
 msgstr "Maybach HL 98"
@@ -3611,10 +3827,10 @@ msgid "Porsche_Typ_100_1"
 msgstr "2x Porsche Typ 100/1"
 
 msgid "Porsche_Typ_100_1A"
-msgstr "2x Porsche Typ 100/1 Ausf. A"
+msgstr "2x Porsche Typ 101"
 
 msgid "Porsche_Typ_100_1A_short"
-msgstr "2x Porsche Typ100/1(A)"
+msgstr "2x Porsche Typ 101"
 
 msgid "Porsche_Typ_100_3"
 msgstr "2x Porsche Typ 100/3"
@@ -3622,8 +3838,14 @@ msgstr "2x Porsche Typ 100/3"
 msgid "Porsche_Typ_100_3A"
 msgstr "2x Porsche Typ 100/3A"
 
+msgid "Porsche_Typ_100_P"
+msgstr "2x Porsche Typ 100/P"
+
 msgid "Porsche_Typ_101_1_x2"
 msgstr "2 x Porsche Typ 101/1"
+
+msgid "Porsche_Typ_101_P"
+msgstr "2x Porsche Typ 101/P"
 
 msgid "Porsche_Typ_205_2"
 msgstr "Porsche Typ 205/2"
@@ -3845,30 +4067,6 @@ msgstr ""
 "Pz.Kpfw. III\n"
 "Ausf. A"
 
-msgid "PzIII_Ausf_C"
-msgstr "Pz.Kpfw. III Ausf. E"
-
-msgid "PzIII_Ausf_C_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. E"
-
-msgid "PzIII_Ausf_E"
-msgstr "Pz.Kpfw. III Ausf. J"
-
-msgid "PzIII_Ausf_E_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. J"
-
-msgid "PzIII_Ausf_M"
-msgstr "Pz.Kpfw. III Ausf. L"
-
-msgid "PzIII_Ausf_M_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. L"
-
 msgid "PzIII_IV"
 msgstr "Pz.Kpfw. III/IV"
 
@@ -3882,38 +4080,6 @@ msgstr ""
 
 msgid "PzIII_IV_short"
 msgstr "Pz. III/IV"
-
-msgid "PzIIIketten_Ausf_A"
-msgstr "Pz.Kpfw. III Ausf. D"
-
-msgid "PzIIIketten_Ausf_A_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. D"
-
-msgid "PzIIIketten_Ausf_B"
-msgstr "Pz.Kpfw. III Ausf. E"
-
-msgid "PzIIIketten_Ausf_B_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. E"
-
-msgid "PzIIIketten_Ausf_J"
-msgstr "Pz.Kpfw. III Ausf. J"
-
-msgid "PzIIIketten_Ausf_J_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. J"
-
-msgid "PzIIIketten_Ausf_L"
-msgstr "Pz.Kpfw. III Ausf. L"
-
-msgid "PzIIIketten_Ausf_L_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. L"
 
 msgid "PzIIL_Grosseturm"
 msgstr "Luchs 5 cm"
@@ -3948,18 +4114,6 @@ msgstr ""
 msgid "PzII_Luchs_short"
 msgstr "Luchs"
 
-msgid "PzII_Luchsturm"
-msgstr "Pz.Kpfw. II Ausf. F"
-
-msgid "PzII_Luchsturm_short"
-msgstr "Pz.Kpfw. II Ausf. F"
-
-msgid "PzII_Standartturm"
-msgstr "Pz.Kpfw. II Ausf. b"
-
-msgid "PzII_Standartturm_short"
-msgstr "Pz.Kpfw. II Ausf. b"
-
 msgid "PzII_ausf_J"
 msgstr "Pz.Kpfw. II Ausf. J"
 
@@ -3969,22 +4123,6 @@ msgstr ""
 "предыдущих вариантов — усиленное бронирование, орудие 2 cm KwK 38 и "
 "улучшенные смотровые приборы. В период с марта 1941 по декабрь 1942 года "
 "было выпущено 524 машины."
-
-msgid "PzII_ketten_Ausf_A"
-msgstr "Pz.Kpfw. II Ausf. A"
-
-msgid "PzII_ketten_Ausf_A_short"
-msgstr ""
-"Pz.Kpfw. II\n"
-"Ausf. A"
-
-msgid "PzII_ketten_Ausf_B"
-msgstr "Pz.Kpfw. II Ausf. F"
-
-msgid "PzII_ketten_Ausf_B_short"
-msgstr ""
-"Pz.Kpfw. II\n"
-"Ausf. F"
 
 msgid "PzII_short"
 msgstr "Pz. II"
@@ -4117,30 +4255,6 @@ msgstr "Pz.Kpfw. V/IV"
 msgid "PzVI"
 msgstr "Tiger I"
 
-msgid "PzVIB_Heinschel_Turm"
-msgstr "Tiger II Serienturm"
-
-msgid "PzVIB_Heinschel_Turm_short"
-msgstr ""
-"Tiger II\n"
-"Serienturm"
-
-msgid "PzVIB_Porsche_Turm"
-msgstr "Tiger II Turm Nr. 1-50"
-
-msgid "PzVIB_Porsche_Turm_short"
-msgstr ""
-"Tiger II\n"
-"Turm Nr. 1-50"
-
-msgid "PzVIB_Standardketten"
-msgstr "Tiger II Versuchs-Serie"
-
-msgid "PzVIB_Standardketten_short"
-msgstr ""
-"Tiger II\n"
-"Versuchs-Serie"
-
 msgid "PzVIB_Tiger_II"
 msgstr "Tiger II"
 
@@ -4180,22 +4294,8 @@ msgstr ""
 msgid "PzVIB_Tiger_II_short"
 msgstr "Tiger II"
 
-msgid "PzVIB_Vetstaerktketten"
-msgstr "Tiger II"
-
-msgid "PzVIB_Vetstaerktketten_short"
-msgstr "Tiger II"
-
-msgid "PzVI_Anfangsturm"
-msgstr "Pz.Kpfw. VI H Ausf. H2"
-
 msgid "PzVI_Anfangsturm_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. VI H Ausf. H2"
-
-msgid "PzVI_Anfangsturm_short"
-msgstr ""
-"Pz.Kpfw. VI H\n"
-"Ausf. H2"
 
 msgid "PzVI_Anfangsturm_short_MapsTraining_Player_HT_2"
 msgstr ""
@@ -4205,24 +4305,13 @@ msgstr ""
 msgid "PzVI_MapsTraining_Player_HT_2"
 msgstr "Tiger I (yч.)"
 
-msgid "PzVI_Porsche_Turm"
-msgstr "Pz.Kpfw. Tiger Ausf. E"
-
 msgid "PzVI_Porsche_Turm_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
-
-msgid "PzVI_Porsche_Turm_short"
-msgstr ""
-"Pz.Kpfw. Tiger\n"
-"Ausf. E"
 
 msgid "PzVI_Porsche_Turm_short_MapsTraining_Player_HT_2"
 msgstr ""
 "Pz.Kpfw. Tiger\n"
 "Ausf. E"
-
-msgid "PzVI_Standardketten"
-msgstr "Pz.Kpfw. VI H Ausf. H1"
 
 msgid "PzVI_Standardketten_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. VI H Ausf. H1"
@@ -4241,9 +4330,6 @@ msgstr ""
 
 msgid "PzVI_Tiger_P_short"
 msgstr "Tiger (P)"
-
-msgid "PzVI_Vetstaerktketten"
-msgstr "Pz.Kpfw. Tiger Ausf. E"
 
 msgid "PzVI_Vetstaerktketten_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -4474,6 +4560,12 @@ msgstr "SEM 25B"
 msgid "SEM_25C"
 msgstr "SEM 25C funkgerät"
 
+msgid "SEM_25E"
+msgstr "SEM 25E"
+
+msgid "SEM_25K"
+msgstr "SEM 25K"
+
 msgid "SEM_25_D_funkgerat"
 msgstr "SEM 25D funkgerät"
 
@@ -4650,9 +4742,6 @@ msgstr "E 25"
 msgid "Turret_1_E-50"
 msgstr "E 50 Ausf. A"
 
-msgid "Turret_1_E-75"
-msgstr "E 75 Ausf. A"
-
 msgid "Turret_1_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
@@ -4666,6 +4755,12 @@ msgid "Turret_1_G04_PzVI_Tiger_IA_short"
 msgstr ""
 "Pz.Kpfw. Tiger\n"
 "Ausf. E"
+
+msgid "Turret_1_G06_PzII"
+msgstr "Pz.Kpfw. II Ausf. b"
+
+msgid "Turret_1_G06_PzII_short"
+msgstr "Pz.Kpfw. II Ausf. b"
 
 msgid "Turret_1_G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
@@ -4698,6 +4793,14 @@ msgstr "Pz.Kpfw. II Ausf. D"
 
 msgid "Turret_1_G109_Steyr_WT"
 msgstr "Krupp-Steyr Waffenträger"
+
+msgid "Turret_1_G10_PzIII_AusfJ"
+msgstr "Pz.Kpfw. III Ausf. J"
+
+msgid "Turret_1_G10_PzIII_AusfJ_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. J"
 
 msgid "Turret_1_G110_Typ_205"
 msgstr "Mäuschen"
@@ -4780,6 +4883,14 @@ msgstr "VK 168.01 (M)"
 msgid "Turret_1_G139_MKA"
 msgstr "mittlerer Kampfwagen für Ausland"
 
+msgid "Turret_1_G13_VK3001H"
+msgstr "VK 30.01 (H) 0-Serie"
+
+msgid "Turret_1_G13_VK3001H_short"
+msgstr ""
+"VK 30.01 (H)\n"
+"0-Serie"
+
 msgid "Turret_1_G140_HWK_30"
 msgstr "HWK 30"
 
@@ -4801,11 +4912,20 @@ msgstr "Kunze Panzer"
 msgid "Turret_1_G154_Kpz_07_RH"
 msgstr "Kpz 07 RH"
 
+msgid "Turret_1_G154_Kpz_07_RH_LN"
+msgstr "Белый дракон"
+
 msgid "Turret_1_G158_VK2801_105_SPXXI"
 msgstr "VK 28.01 Ausf. B"
 
 msgid "Turret_1_G159_KPZ_3_Project_07_HK"
 msgstr "KPz 3 Projekt 07 HK"
+
+msgid "Turret_1_G15_VK3601H"
+msgstr "VK 36.01 (H)"
+
+msgid "Turret_1_G15_VK3601H_short"
+msgstr "VK 36.01 (H)"
 
 msgid "Turret_1_G160_Pz_Kpfw_35_R_mit_T_26_Turm"
 msgstr "T-26 Turm"
@@ -4837,11 +4957,19 @@ msgstr "T-III.v.E.U."
 msgid "Turret_1_G169_T_54D"
 msgstr "T 54D"
 
+msgid "Turret_1_G16_PzVIB_Tiger_II"
+msgstr "Tiger II Turm Nr. 1-50"
+
 msgid "Turret_1_G16_PzVIB_Tiger_II_F"
 msgstr "Tiger II"
 
 msgid "Turret_1_G16_PzVIB_Tiger_II_F_short"
 msgstr "Tiger II"
+
+msgid "Turret_1_G16_PzVIB_Tiger_II_short"
+msgstr ""
+"Tiger II\n"
+"Turm Nr. 1-50"
 
 msgid "Turret_1_G170_PzKpfwIV_Ausf_F2"
 msgstr "Pz.Kpfw. IV Ausf. F2"
@@ -4855,8 +4983,17 @@ msgstr "Tiger II Kuromorimine"
 msgid "Turret_1_G173_BT42_DIT"
 msgstr "BT-rynnäkkötykki"
 
+msgid "Turret_1_G174_Kpz3_GST_Turm"
+msgstr "Kampfpanzer 3 GST Turm"
+
+msgid "Turret_1_G178_KanJpz_2"
+msgstr "Kanonenjagdpanzer 2"
+
 msgid "Turret_1_G179_Straussler_V4"
 msgstr "Straussler V–4/40"
+
+msgid "Turret_1_G55_E-75"
+msgstr "E 75 Ausf. A"
 
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
@@ -5006,23 +5143,75 @@ msgstr "VK 28.01 Ausf. C"
 msgid "Turret_2_DW_II"
 msgstr "VK 30.01 (H) 0-Serie"
 
-msgid "Turret_2_E-100"
-msgstr "E 100"
-
 msgid "Turret_2_E-50"
 msgstr "E 50 Ausf. B"
 
 msgid "Turret_2_E-50_SH"
 msgstr "E 50 Basiert"
 
-msgid "Turret_2_E-75"
-msgstr "E 75 Ausf. B"
+msgid "Turret_2_G04_PzVI_Tiger_I"
+msgstr "Pz.Kpfw. Tiger Ausf. E"
+
+msgid "Turret_2_G04_PzVI_Tiger_I_short"
+msgstr ""
+"Pz.Kpfw. Tiger\n"
+"Ausf. E"
+
+msgid "Turret_2_G06_PzII"
+msgstr "Pz.Kpfw. II Ausf. F"
+
+msgid "Turret_2_G06_PzII_short"
+msgstr "Pz.Kpfw. II Ausf. F"
+
+msgid "Turret_2_G102_Pz_III"
+msgstr "Pz.Kpfw. III Ausf. E"
+
+msgid "Turret_2_G102_Pz_III_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. E"
+
+msgid "Turret_2_G10_PzIII_AusfJ"
+msgstr "Pz.Kpfw. III Ausf. L"
+
+msgid "Turret_2_G10_PzIII_AusfJ_short"
+msgstr ""
+"Pz.Kpfw. III\n"
+"Ausf. L"
 
 msgid "Turret_2_G113_SP_I_C"
 msgstr "Spähpanzer SP I C PT II Rh.-Nr. WK-G2"
 
 msgid "Turret_2_G126_HWK_12"
 msgstr "HWK 12 verbessert"
+
+msgid "Turret_2_G13_VK3001H"
+msgstr "VK 36.01 (H)"
+
+msgid "Turret_2_G13_VK3001H_short"
+msgstr "VK 36.01 (H)"
+
+msgid "Turret_2_G15_VK3601H"
+msgstr "Pz.Kpfw. VI H Ausf. H2"
+
+msgid "Turret_2_G15_VK3601H_short"
+msgstr ""
+"Pz.Kpfw. VI H\n"
+"Ausf. H2"
+
+msgid "Turret_2_G16_PzVIB_Tiger_II"
+msgstr "Tiger II Serienturm"
+
+msgid "Turret_2_G16_PzVIB_Tiger_II_short"
+msgstr ""
+"Tiger II\n"
+"Serienturm"
+
+msgid "Turret_2_G55_E-75"
+msgstr "E 75 Ausf. B"
+
+msgid "Turret_2_G56_E-100"
+msgstr "E 100"
 
 msgid "Turret_2_Indien_Panzer"
 msgstr "Indien-Panzer"
@@ -5151,28 +5340,6 @@ msgstr "VK 28.01"
 
 msgid "VK3001H"
 msgstr "VK 30.01 (H)"
-
-msgid "VK3001H_Eliteturm"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3001H_Eliteturm_short"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3001H_Standardturm"
-msgstr "VK 30.01 (H) 0-Serie"
-
-msgid "VK3001H_Standardturm_short"
-msgstr ""
-"VK 30.01 (H)\n"
-"0-Serie"
-
-msgid "VK3001H_ausf_B"
-msgstr "VK 30.01 (H) verstärkteketten"
-
-msgid "VK3001H_ausf_B_short"
-msgstr ""
-"VK 30.01 (H)\n"
-"verstärkteketten"
 
 msgid "VK3001H_descr"
 msgstr ""
@@ -5313,20 +5480,6 @@ msgstr "VK 30.02 M"
 msgid "VK3601H"
 msgstr "VK 36.01 (H)"
 
-msgid "VK3601H_Grosseturm"
-msgstr "Pz.Kpfw. VI H Ausf. H2"
-
-msgid "VK3601H_Grosseturm_short"
-msgstr ""
-"Pz.Kpfw. VI H\n"
-"Ausf. H2"
-
-msgid "VK3601H_Standardturm"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3601H_Standardturm_short"
-msgstr "VK 36.01 (H)"
-
 msgid "VK3601H_descr"
 msgstr ""
 "Немецкий опытный тяжёлый танк времён Второй мировой войны, разработанный "
@@ -5336,20 +5489,6 @@ msgstr ""
 " многие технические решения, которые впоследствии послужили основой при "
 "разработке тяжёлых танков Германии во Второй мировой войне. В дальнейшем "
 "шасси использовались в качестве базы для ремонтно-эвакуационных машин."
-
-msgid "VK3601H_henshelketten"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3601H_henshelketten_ausf_B"
-msgstr "VK 36.01 (H) verstärkteketten"
-
-msgid "VK3601H_henshelketten_ausf_B_short"
-msgstr ""
-"VK 36.01 (H)\n"
-"verstärkteketten"
-
-msgid "VK3601H_henshelketten_short"
-msgstr "VK 36.01 (H)"
 
 msgid "VK3601H_short"
 msgstr "VK 36.01 H"
@@ -5579,7 +5718,7 @@ msgid "_105mm_KwK45_L52"
 msgstr "10,5 cm Kw.K. L/52"
 
 msgid "_105mm_KwK45_L52_N"
-msgstr "10,5 cm KwsPz.K. L/52"
+msgstr "10.5 cm Kw.K. L/52 Ausf. B"
 
 msgid "_105mm_KwK45_L52_SH"
 msgstr "10,5 cm Kw.K. L/52"
@@ -5604,13 +5743,16 @@ msgid "_105mm_KwK46_L68"
 msgstr "10,5 cm Kw.K. L/68"
 
 msgid "_105mm_KwK46_L68_N"
-msgstr "10,5 cm KwsPz.K. L/68"
+msgstr "10.5 cm Kw.K. L/68 Ausf. B"
 
 msgid "_105mm_KwK46_L70"
 msgstr "10,5 cm Kw.K. L/70"
 
 msgid "_105mm_KwK46_L70_SH"
 msgstr "10,5 cm Kw.K. L/70"
+
+msgid "_105mm_Kw_K_L_68_Ausf_E"
+msgstr "10.5 cm Kw.K. L/68 Ausf. E"
 
 msgid "_105mm_Kw_K_L_73"
 msgstr "10,5 cm Kw.K. L/73"
@@ -5666,8 +5808,14 @@ msgstr "Pzgr 41 L1"
 msgid "_105mm_Pzgr_39_45"
 msgstr "Pzgr. 39/45"
 
+msgid "_105mm_Pzgr_39_E"
+msgstr "Pzgr. 39 E"
+
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr. 40/45"
+
+msgid "_105mm_Pzgr_40_E"
+msgstr "Pzgr. 40 E"
 
 msgid "_105mm_RH_Gun"
 msgstr "10,5 cm RH GUN"
@@ -5696,6 +5844,9 @@ msgstr "Sprgr LV"
 msgid "_105mm_Sprgr_45"
 msgstr "Sprgr. 45"
 
+msgid "_105mm_Sprgr_E"
+msgstr "Sprgr. E"
+
 msgid "_105mm_StuH42_L28"
 msgstr "10,5 cm Stu.H. 42 L/28"
 
@@ -5719,6 +5870,18 @@ msgstr "10WSc"
 
 msgid "_10WSc_WT"
 msgstr "10WSc A"
+
+msgid "_110mm_MGK"
+msgstr "11 cm Mittelgeschw.-Kanone"
+
+msgid "_110mm_MGK_AP"
+msgstr "MGK-11 AP"
+
+msgid "_110mm_MGK_APDS"
+msgstr "MGK-11 APDS"
+
+msgid "_110mm_MGK_HE"
+msgstr "MGK-11 HE"
 
 msgid "_114_mm_n_panssarivaunu_haupitsi_18"
 msgstr "114 mm:n Panssarivaunu Haupitsi 18"
@@ -5750,11 +5913,20 @@ msgstr "DM12 MZ"
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
 
+msgid "_120mm_Kan_L60"
+msgstr "12 cm Kan L/60"
+
 msgid "_120mm_M820"
 msgstr "M820 AP-T"
 
+msgid "_120mm_M820K"
+msgstr "M820K"
+
 msgid "_120mm_M820_HEAT"
 msgstr "M820 HEAT"
+
+msgid "_120mm_M820_HEATK"
+msgstr "HEATK"
 
 msgid "_120mm_M827"
 msgstr "M827"
@@ -5770,6 +5942,9 @@ msgstr "120 mm RhD"
 
 msgid "_120mm_SDRN1"
 msgstr "SDRN1 HE"
+
+msgid "_120mm_SDRN1K"
+msgstr "SDRN1K"
 
 msgid "_120mm_SDRN1V"
 msgstr "SDRN1V HE"
@@ -5802,7 +5977,7 @@ msgid "_128mm_KwK44_L55_7x7"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
 msgid "_128mm_KwK44_L55_N"
-msgstr "12,8 cm Kw.K. Ausf. E"
+msgstr "12.8 cm Kw.K. 44 L/55 Ausf. B"
 
 msgid "_128mm_KwK44_L55_SH"
 msgstr "12,8 cm Kw.K. 44 L/55"
@@ -5815,6 +5990,9 @@ msgstr "12,8 cm Kw.K. L/50 Ausf. A"
 
 msgid "_128mm_KwK_L55_TM"
 msgstr "12,8 cm Kw.K. L/55 TM"
+
+msgid "_128mm_Kw_K_44_L_55_Ausf_E"
+msgstr "12.8 cm Kw.K. 44 L/55 Ausf. E"
 
 msgid "_128mm_Kw_K_L_61K"
 msgstr "12,8 cm Kw.K. L/61K"
@@ -5900,6 +6078,12 @@ msgstr "Pzgr 43"
 msgid "_128mm_PzGr44M_SH"
 msgstr "Pzgr 44M"
 
+msgid "_128mm_Pzgr_39_E"
+msgstr "Pzgr. 39 E"
+
+msgid "_128mm_Pzgr_40_E"
+msgstr "Pzgr. 40 E"
+
 msgid "_128mm_Pzgr_N4"
 msgstr "Pzgr. Nr. 4"
 
@@ -5926,6 +6110,9 @@ msgstr "Sprgr ver. 18"
 
 msgid "_128mm_SprG19"
 msgstr "Sprgr 19"
+
+msgid "_128mm_Sprgr_18_E"
+msgstr "Sprgr. 18 E"
 
 msgid "_128mm_Sprgr_N9"
 msgstr "Sprgr. Nr. 9"
@@ -6068,11 +6255,20 @@ msgstr "2 cm Kw.K. 38"
 msgid "_20mm_KwK_38_L55A"
 msgstr "2 cm Kw.K. 38"
 
+msgid "_20mm_Kw_K_38_Ausf_F"
+msgstr "2 cm Kw.K. 38 Ausf. F"
+
 msgid "_20mm_Pzgr39"
 msgstr "Pzgr 39"
 
 msgid "_20mm_Pzgr39_S"
 msgstr "20×138mmB"
+
+msgid "_20mm_Pzgr_39F"
+msgstr "Pzgr. 39F"
+
+msgid "_20mm_Pzgr_40F"
+msgstr "Pzgr. 40F"
 
 msgid "_20mm_Solothurn_S_18_1000"
 msgstr "Solothurn S-18/1000"
@@ -6137,6 +6333,9 @@ msgstr "3,7 cm Kw.K. 36 L/46.5"
 msgid "_37mm_KwK_L46_f"
 msgstr "3,7 cm Kw.K. 36 L/46.5f"
 
+msgid "_37mm_Kw_K_D_T_4804"
+msgstr "3,7 cm Kw.K. D.T. 4804"
+
 msgid "_37mm_PaK_38t_L47"
 msgstr "3,7 cm Pak (t) L/47"
 
@@ -6149,6 +6348,12 @@ msgstr "Pzgr 36f"
 msgid "_37mm_Pzgr39t"
 msgstr "Pzgr 39 (t)"
 
+msgid "_37mm_Pzgr_39_D_T"
+msgstr "Pzgr. 39 D.T."
+
+msgid "_37mm_Pzgr_40_D_T"
+msgstr "Pzgr. 40 D.T."
+
 msgid "_37mm_SA_38f_L34"
 msgstr "3,7 cm SA 38 L/34"
 
@@ -6160,6 +6365,9 @@ msgstr "Sprgr 18f"
 
 msgid "_37mm_Sprg.18t"
 msgstr "Sprgr 18 (t)"
+
+msgid "_37mm_Sprgr_34_D_T"
+msgstr "Sprgr. 34 D.T."
 
 msgid "_40mm_36_M_Pancelgranat"
 msgstr "36 M. páncélgránát"
@@ -6239,6 +6447,18 @@ msgstr "5 cm Kw.K. 39 L/60L"
 msgid "_50mm_KwK_39_L60L1"
 msgstr "5 cm Kw.K. 39 L/60L1"
 
+msgid "_50mm_Kw_K_38_L_42_Ausf_E"
+msgstr "5 cm Kw.K. 38 L/42 Ausf. E"
+
+msgid "_50mm_Kw_K_38_L_42_Ausf_F"
+msgstr "5 cm Kw.K. 38 L/42 Ausf. F"
+
+msgid "_50mm_Kw_K_38_L_42_Ausf_J"
+msgstr "5 cm Kw.K. 38 L/42 Ausf. J"
+
+msgid "_50mm_Kw_K_39_L_60_Ausf_L"
+msgstr "5 cm Kw.K. 39 L/60 Ausf. L"
+
 msgid "_50mm_PaK_39_L60"
 msgstr "5 cm Pak 38 L/60"
 
@@ -6248,8 +6468,44 @@ msgstr "Pzgr 39"
 msgid "_50mm_Pzgr40"
 msgstr "Pzgr 40"
 
+msgid "_50mm_Pzgr_39E"
+msgstr "Pzgr. 39E"
+
+msgid "_50mm_Pzgr_39F"
+msgstr "Pzgr. 39F"
+
+msgid "_50mm_Pzgr_39J"
+msgstr "Pzgr. 39J"
+
+msgid "_50mm_Pzgr_39L"
+msgstr "Pzgr. 39L"
+
+msgid "_50mm_Pzgr_40E"
+msgstr "Pzgr. 40E"
+
+msgid "_50mm_Pzgr_40F"
+msgstr "Pzgr. 40F"
+
+msgid "_50mm_Pzgr_40J"
+msgstr "Pzgr. 40J"
+
+msgid "_50mm_Pzgr_40L"
+msgstr "Pzgr. 40L"
+
 msgid "_50mm_Sprg.18"
 msgstr "Sprgr 18"
+
+msgid "_50mm_Sprgr_18E"
+msgstr "Sprgr. 18E"
+
+msgid "_50mm_Sprgr_18F"
+msgstr "Sprgr. 18F"
+
+msgid "_50mm_Sprgr_18J"
+msgstr "Sprgr. 18J"
+
+msgid "_50mm_Sprgr_18L"
+msgstr "Sprgr. 18L"
 
 msgid "_7.92mm_AP"
 msgstr "Patrone 318 SmK-Rs-L'spur"
@@ -6259,6 +6515,15 @@ msgstr "Patrone 318 SmKH-Rs-L'spur"
 
 msgid "_7.92mm_Mauser_EW_141"
 msgstr "7,92 mm Mauser E.W. 141"
+
+msgid "_75_55_mm_Pzgr_41_H_K"
+msgstr "Pzgr. 41 H.K."
+
+msgid "_75_55_mm_Pzgr_41_W"
+msgstr "Pzgr. 41 W"
+
+msgid "_75_55_mm_Waffe_0725_Ausf_A"
+msgstr "7,5/5,5 cm Waffe 0725 Ausf. A"
 
 msgid "_75mm_40_M_Kulonleges_Nemet_Pancelgranat"
 msgstr "40 (40W) M. KNP"
@@ -6329,6 +6594,15 @@ msgstr "7,5 cm Kw.K. 42 L/70"
 msgid "_75mm_KwK_L70_A"
 msgstr "7,5 cm Kw.K. 42 L/70"
 
+msgid "_75mm_Kw_K_40_L_43_T_3001"
+msgstr "7,5 cm Kw.K. 40 T 3001"
+
+msgid "_75mm_Kw_K_40_L_48_Ausf_H"
+msgstr "7,5 cm Kw.K. 40 Ausf. H"
+
+msgid "_75mm_Kw_K_40_L_48_Typ_100"
+msgstr "7,5 cm Kw.K. 40 L/48"
+
 msgid "_75mm_PaK_39_L48"
 msgstr "7,5 cm Pak 39 L/48"
 
@@ -6368,6 +6642,24 @@ msgstr "Pzgr 39 L"
 msgid "_75mm_Pzgr39_KW_Ir"
 msgstr "Pzgr.Patr 39"
 
+msgid "_75mm_Pzgr_39_Ausf_H"
+msgstr "Pzgr. 39 Ausf. H"
+
+msgid "_75mm_Pzgr_39_T_3001"
+msgstr "Pzgr. 39 T 3001"
+
+msgid "_75mm_Pzgr_39_Typ_100"
+msgstr "Pzgr. 39 Typ 100"
+
+msgid "_75mm_Pzgr_40_Ausf_H"
+msgstr "Pzgr. 40 Ausf. H"
+
+msgid "_75mm_Pzgr_40_T_3001"
+msgstr "Pzgr. 40 T 3001"
+
+msgid "_75mm_Pzgr_40_Typ_100"
+msgstr "Pzgr. 40 Typ 100"
+
 msgid "_75mm_Sprg.18"
 msgstr "Sprgr 18"
 
@@ -6382,6 +6674,15 @@ msgstr "Sprgr 18 L"
 
 msgid "_75mm_Sprg.18_KW_Ir"
 msgstr "Sprgr.Patr 18"
+
+msgid "_75mm_Sprgr_18_Ausf_H"
+msgstr "Sprgr. 18 Ausf. H"
+
+msgid "_75mm_Sprgr_18_T_3001"
+msgstr "Sprgr. 18 T 3001"
+
+msgid "_75mm_Sprgr_18_Typ_100"
+msgstr "Sprgr. 18 Typ 100"
 
 msgid "_75mm_StuK42_L70"
 msgstr "7,5 cm Pak 42 L/70"
@@ -6438,7 +6739,7 @@ msgid "_88mm_KwK_43_L71D"
 msgstr "8,8 cm Kw.K. 43 L/71 (K)"
 
 msgid "_88mm_KwK_43_L71_N"
-msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
+msgstr "8.8 cm Kw.K. 43 L/71 Ausf. E"
 
 msgid "_88mm_KwK_43_L71_N_MapsTraining_Player_HT_2"
 msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
@@ -6448,6 +6749,18 @@ msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
 
 msgid "_88mm_KwK_L100"
 msgstr "8,8 cm Kw.K. L/100"
+
+msgid "_88mm_Kw_K_36_L_56_Ausf_E"
+msgstr "8,8 cm Kw.K. 36 L/56 Ausf. E"
+
+msgid "_88mm_Kw_K_36_L_56_Typ_100"
+msgstr "8,8 cm Kw.K. 36 L/56 Typ 100"
+
+msgid "_88mm_Kw_K_36_L_56_Typ_101"
+msgstr "8,8 cm Kw.K. 36 L/56 Typ 101"
+
+msgid "_88mm_Kw_K_43_L_71_Typ_101"
+msgstr "8,8 cm Kw.K. 43 L/71 Typ 101"
 
 msgid "_88mm_PaK_36_L56"
 msgstr "8,8 cm Pak L/56"
@@ -6471,7 +6784,7 @@ msgid "_88mm_Pzgr.40_43"
 msgstr "Pzgr 40/43"
 
 msgid "_88mm_Pzgr.40_43_n"
-msgstr "Pzgr 48"
+msgstr "Pzgr. 40/43 Ausf. E"
 
 msgid "_88mm_Pzgr39"
 msgstr "Pzgr 39"
@@ -6492,7 +6805,7 @@ msgid "_88mm_Pzgr39_43D"
 msgstr "Pzgr 39/43K"
 
 msgid "_88mm_Pzgr39_43_n"
-msgstr "Pzgr ver. 39/43"
+msgstr "Pzgr. 39/43 Ausf. E"
 
 msgid "_88mm_Pzgr39_43_n_MapsTraining_Player_HT_2"
 msgstr "Pzgr ver. 39/43"
@@ -6505,6 +6818,30 @@ msgstr "Pzgr 40/43K"
 
 msgid "_88mm_Pzgr_39_43A"
 msgstr "Pzgr 39/43A"
+
+msgid "_88mm_Pzgr_39_43_Typ_101"
+msgstr "Pzgr. 39/43 Typ 101"
+
+msgid "_88mm_Pzgr_39_Ausf_E"
+msgstr "Pzgr. 39 Ausf. E"
+
+msgid "_88mm_Pzgr_39_Typ_100"
+msgstr "Pzgr. 39 Typ 100"
+
+msgid "_88mm_Pzgr_39_Typ_101"
+msgstr "Pzgr. 39 Typ 101"
+
+msgid "_88mm_Pzgr_40_43_Typ_101"
+msgstr "Pzgr. 40/43 Typ 101"
+
+msgid "_88mm_Pzgr_40_Ausf_E"
+msgstr "Pzgr. 40 Ausf. E"
+
+msgid "_88mm_Pzgr_40_Typ_100"
+msgstr "Pzgr. 40 Typ 100"
+
+msgid "_88mm_Pzgr_40_Typ_101"
+msgstr "Pzgr. 40 Typ 101"
 
 msgid "_88mm_Sprg.18"
 msgstr "Sprgr 18"
@@ -6519,13 +6856,25 @@ msgid "_88mm_Sprg.43"
 msgstr "Sprgr 43"
 
 msgid "_88mm_Sprg.43_n"
-msgstr "Sprgr ver. 43"
+msgstr "Sprgr. 43 Ausf. E"
 
 msgid "_88mm_Sprg43D"
 msgstr "Sprgr 43K"
 
 msgid "_88mm_Sprgr.Flak_41"
 msgstr "Sprgr. Flak 41"
+
+msgid "_88mm_Sprgr_18_Ausf_E"
+msgstr "Sprgr. 18 Ausf. E"
+
+msgid "_88mm_Sprgr_18_Typ_100"
+msgstr "Sprgr. 18 Typ 100"
+
+msgid "_88mm_Sprgr_18_Typ_101"
+msgstr "Sprgr. 18 Typ 101"
+
+msgid "_88mm_Sprgr_43_Typ_101"
+msgstr "Sprgr. 43 Typ 101"
 
 msgid "_90_76mm_US_Kanone_M_32"
 msgstr "90/76 mm US-Kanone M 32"

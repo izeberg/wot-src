@@ -7,7 +7,7 @@ from adisp import adisp_process
 from battle_pass_common import BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_Q_CHAIN_BONUS_NAME, BATTLE_PASS_Q_CHAIN_TOKEN_PREFIX, BATTLE_PASS_RANDOM_QUEST_BONUS_NAME, BATTLE_PASS_RANDOM_QUEST_TOKEN_PREFIX, BATTLE_PASS_SELECT_BONUS_NAME, BATTLE_PASS_STYLE_PROGRESS_BONUS_NAME, BATTLE_PASS_TOKEN_3D_STYLE, BATTLE_PASS_TOKEN_PREFIX
 from blueprints.BlueprintTypes import BlueprintTypes
 from blueprints.FragmentTypes import getFragmentType
-from comp7_common import COMP7_WEEKLY_REWARD_TOKEN_REGEXP
+from comp7_common import COMP7_WEEKLY_QUESTS_COMPLETE_TOKEN_REGEXP
 from constants import CURRENCY_TOKEN_PREFIX, DOSSIER_TYPE, EVENT_TYPE as _ET, LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, RESOURCE_TOKEN_PREFIX, RentType, CUSTOMIZATION_PROGRESS_PREFIX, WoTPlusBonusType, MODERNIZED_DEVICES_TOKEN_PREFIX, STYLE_3D_PROGRESS_PREFIX
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from dog_tags_common.components_config import componentConfigAdapter as dogTagComponentConfig
@@ -202,7 +202,7 @@ class SimpleBonus(object):
     def getWrappedEpicBonusList(self):
         return self._getWrappedBonusList()
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         return self._getWrappedBonusList()
 
     def _getWrappedBonusList(self):
@@ -497,7 +497,7 @@ class _PremiumDaysBonus(IntegralBonus):
     def getIconLabel(self):
         return ''
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         result = self._getWrappedBonusList()
         for bonus in result:
             bonus['value'] = 1
@@ -660,7 +660,7 @@ class BattleTokensBonus(TokensBonus):
         else:
             return
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         return []
 
     def getWrappedEpicBonusList(self):
@@ -688,7 +688,7 @@ class Comp7TokenWeeklyRewardBonus(TokensBonus):
         self._name = COMP7_TOKEN_WEEKLY_REWARD_NAME
 
     def isShowInGUI(self):
-        return True
+        return False
 
     def getTooltip(self):
         header = TOOLTIPS.getAwardHeader(self.getName())
@@ -956,7 +956,7 @@ class X5BattleTokensBonus(TokensBonus):
             return bonusBattleTaskRes()
         return R.invalid()
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         result = []
         for _, tokenRecord in self.getTokens().iteritems():
             result.append({'id': 0, 
@@ -1000,7 +1000,7 @@ class X3CrewTokensBonus(TokensBonus):
             return crewBattleTaskRes()
         return R.invalid()
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         result = []
         for _, tokenRecord in self.getTokens().iteritems():
             result.append({'id': 0, 
@@ -1279,7 +1279,7 @@ def tokensFactory(name, value, isCompensation=False, ctx=None):
             result.append(ResourceBonus(name, {tID: tValue}, RESOURCE_TOKEN_PREFIX, isCompensation, ctx))
         elif tID.startswith(CUSTOMIZATION_PROGRESS_PREFIX):
             result.append(C11nProgressTokenBonus({tID: tValue}, isCompensation, ctx))
-        elif COMP7_WEEKLY_REWARD_TOKEN_REGEXP.match(tID):
+        elif COMP7_WEEKLY_QUESTS_COMPLETE_TOKEN_REGEXP.match(tID):
             result.append(Comp7TokenWeeklyRewardBonus(name, {tID: tValue}, isCompensation, ctx))
         elif tID.startswith(EXCHANGE_RATE_GOLD_NAME):
             accumulatedRewards[EXCHANGE_RATE_GOLD_NAME][tID] = tValue
@@ -1566,7 +1566,7 @@ class GoodiesBonus(SimpleBonus):
 
         return result
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         result = []
         for demountKit, count in self.getDemountKits().iteritems():
             if demountKit is not None:
@@ -2462,7 +2462,7 @@ class RandomBlueprintBonus(SimpleBonus):
     def canPacked(self):
         return False
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         return [
          {'id': 0, 
             'type': ItemPackType.BLUEPRINT_ANY, 
@@ -2540,7 +2540,7 @@ class VehicleBlueprintBonus(SimpleBonus):
     def getTooltip(self):
         return ''
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         return [
          {'id': self.getBlueprintSpecialArgs(), 
             'type': self._getWrapperType(), 
@@ -2819,7 +2819,7 @@ class CrewBooksBonus(SimpleBonus):
         return (
          self.getItems()[0][0].icon,)
 
-    def getWrappedEventLootBoxesBonusList(self):
+    def getWrappedLootBoxesBonusList(self):
         result = []
         icons = R.images.gui.maps.icons.crewBooks.books
         for item, count in self.getItems():

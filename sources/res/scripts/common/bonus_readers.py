@@ -919,6 +919,8 @@ def __readBonus_optionalData(config, bonusReaders, section, eventType):
             raise SoftException(("Invalid value for 'checkDepth' option: {}").format(depthLevel))
     if section.has_key('probabilityStageDependence'):
         properties['probabilityStageDependence'] = section['probabilityStageDependence'].asBool
+    if section.has_key('dropInGroup'):
+        properties['dropInGroup'] = section['dropInGroup'].asBool
     if properties:
         bonus['properties'] = properties
     return (limitIDs, probabilitiesList, bonusProbability, bonus)
@@ -1124,7 +1126,8 @@ __PROBABILITY_READERS = {'optional': __readBonus_optional,
    'oneof': __readBonus_oneof, 
    'group': __readBonus_group}
 _RESERVED_NAMES = frozenset(['config', 'properties', 'limitID', 'probability', 'compensation', 'name',
- 'shouldCompensated', 'probabilityStageDependence', 'bonusProbability', 'depthLevel'])
+ 'shouldCompensated', 'probabilityStageDependence', 'bonusProbability', 'depthLevel',
+ 'dropInGroup'])
 SUPPORTED_BONUSES = frozenset(__BONUS_READERS.iterkeys())
 __SORTED_BONUSES = sorted(SUPPORTED_BONUSES)
 SUPPORTED_BONUSES_IDS = dict((n, i) for i, n in enumerate(__SORTED_BONUSES))
@@ -1178,6 +1181,8 @@ def __readBonusConfig(section):
             config['showBonusInfo'] = data.asBool
         elif name == 'showProbabilitiesInfo':
             config['showProbabilitiesInfo'] = data.asBool
+        elif name == 'dropInGroupItemsCount':
+            config['dropInGroupItemsCount'] = data.asInt
         else:
             raise SoftException(('Unknown config section: {}').format(name))
 
@@ -1208,7 +1213,7 @@ def __readBonusSubSection(config, bonusReaders, section, eventType=None, checkLi
             if limitIDs:
                 resultLimitIDs.update(limitIDs)
         elif name in bonusReaders:
-            bonusReaders[name](bonus, name, subSection, eventType, checkLimit)
+            bonusReaders[name](bonus, name, subSection, eventType, checkLimit=checkLimit)
         elif name in _RESERVED_NAMES:
             pass
         else:

@@ -1298,7 +1298,12 @@ def _migrateTo131(core, data, initialized):
 
 
 def _migrateTo132(core, data, initialized):
-    data['gameExtData2'][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 2
+    pass
+
+
+def _migrateTo133(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
+    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.COMP7_SEASON_STATISTICS_SHOWN] = False
 
 
 _versions = (
@@ -1563,7 +1568,9 @@ _versions = (
  (
   131, _migrateTo131, False, False),
  (
-  132, _migrateTo132, False, False))
+  132, _migrateTo132, False, False),
+ (
+  133, _migrateTo133, False, False))
 
 @adisp_async
 @adisp_process

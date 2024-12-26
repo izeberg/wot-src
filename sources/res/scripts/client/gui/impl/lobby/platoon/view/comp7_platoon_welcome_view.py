@@ -7,11 +7,14 @@ from gui.impl.lobby.platoon.view.platoon_welcome_view import WelcomeView
 from gui.impl.lobby.premacc.squad_bonus_tooltip_content import SquadBonusTooltipContent
 from gui.prb_control.entities.comp7 import comp7_prb_helpers
 from gui.prb_control.settings import SELECTOR_BATTLE_TYPES
+from helpers import dependency
+from skeletons.gui.game_control import IComp7Controller
 _logger = logging.getLogger(__name__)
 strButtons = R.strings.platoon.buttons
 
 class Comp7WelcomeView(WelcomeView):
     _squadType = Type.COMP7
+    __comp7Controller = dependency.descriptor(IComp7Controller)
 
     def _initButtons(self):
         super(Comp7WelcomeView, self)._initButtons()
@@ -35,7 +38,7 @@ class Comp7WelcomeView(WelcomeView):
         with self.viewModel.transaction() as (model):
             model.createPlatoonForTwo.onClick -= self.__onCreateForTwo
             model.createPlatoonForSeven.onClick -= self.__onCreateForSeven
-            model.onOutsideClick += self._onOutsideClick
+            model.onOutsideClick -= self._onOutsideClick
 
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.lobby.premacc.tooltips.SquadBonusTooltip():
@@ -44,8 +47,18 @@ class Comp7WelcomeView(WelcomeView):
 
     @staticmethod
     def __onCreateForTwo():
-        comp7_prb_helpers.createComp7Squad(squadSize=2)
+        comp7Config = Comp7WelcomeView.__comp7Controller.getModeSettings()
+        if comp7Config is None:
+            return
+        else:
+            comp7_prb_helpers.createComp7Squad(squadSize=comp7Config.squadSizes[0])
+            return
 
     @staticmethod
     def __onCreateForSeven():
-        comp7_prb_helpers.createComp7Squad(squadSize=7)
+        comp7Config = Comp7WelcomeView.__comp7Controller.getModeSettings()
+        if comp7Config is None:
+            return
+        else:
+            comp7_prb_helpers.createComp7Squad(squadSize=comp7Config.squadSizes[1])
+            return

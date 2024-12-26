@@ -96,6 +96,8 @@ package net.wg.gui.lobby.battleResults.data
       
       public var comp7Rating:Comp7SubTaskVO = null;
       
+      public var showRateSatisfactionCmp:Boolean = false;
+      
       public function CommonStatsVO(param1:Object)
       {
          super(param1);

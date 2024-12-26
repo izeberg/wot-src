@@ -57,6 +57,8 @@ package net.wg.gui.battle.comp7
       private static const HELP_LABEL:String = "#comp7:battlePage/rulesButtonLabel";
       
       private static const MINIMAP_OFFSET:int = -2;
+      
+      private static const PLAYERS_PANEL_OFFSET:int = -220;
        
       
       public var pointsOfInterestNotificationPanel:PointsOfInterestNotificationPanel = null;
@@ -129,6 +131,7 @@ package net.wg.gui.battle.comp7
       override protected function initialize() : void
       {
          super.initialize();
+         playersPanelOffset = PLAYERS_PANEL_OFFSET;
          minimap.addEventListener(MinimapEvent.TRY_INIT_PREBATTLE_SIZE,this.onMinimapTryInitPrebattleSizeHandler);
       }
       

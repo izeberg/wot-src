@@ -127,6 +127,15 @@ msgstr "Выдаётся игрокам за их неоценимый вкла�
 msgid "13YearsOfService_descr"
 msgstr "Вы в игре с %(regDate)s"
 
+msgid "14YearsOfService"
+msgstr "За 14 лет в строю"
+
+msgid "14YearsOfService_condition"
+msgstr "Выдаётся игрокам за их неоценимый вклад в развитие World of Tanks."
+
+msgid "14YearsOfService_descr"
+msgstr "Вы в игре с %(regDate)s"
+
 msgid "BR2019Title15"
 msgstr "Вертикальный взлёт"
 
@@ -380,6 +389,15 @@ msgstr "• Выдаётся после прохождения прогресс�
 
 msgid "BattlePassCommonPr_NY24_descr"
 msgstr "Выдаётся в награду за успехи в событии «Похищение бриллианта»."
+
+msgid "BattlePassCommonPr_NY25"
+msgstr "Боевой пропуск"
+
+msgid "BattlePassCommonPr_NY25_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BattlePassCommonPr_NY25_descr"
+msgstr "За определённые успехи в игре."
 
 msgid "BigAnniversaryMedal_CN"
 msgstr "Большая юбилейная медаль"
@@ -1034,6 +1052,27 @@ msgid "NY24_CelebChallenge_descr"
 msgstr ""
 "Выдаётся за выполнение соответствующей задачи от Винни Джонса в рамках "
 "события «Новогоднее наступление 2024»."
+
+msgid "NY25_AtmsphrLevel"
+msgstr "Искра жизни"
+
+msgid "NY25_AtmsphrLevel_condition"
+msgstr ""
+"• Чем выше уровни объектов в Ангаре, тем ярче станет атмосфера праздника.\n"
+"• Выдаётся всем игрокам, выполнившим необходимое условие в течение события «Новогоднее наступление 2025»."
+
+msgid "NY25_AtmsphrLevel_descr"
+msgstr ""
+"Получить X уровень атмосферы праздника, приняв участие в событии «Новогоднее"
+" наступление 2025»."
+
+msgid "NY25_CelebChallenge"
+msgstr "Крутой перец"
+
+msgid "NY25_CelebChallenge_descr"
+msgstr ""
+"Выдаётся за выполнение соответствующей задачи от Джейсона Стейтема в рамках "
+"события «Новогоднее наступление 2025»."
 
 msgid "RP2018firstmed"
 msgstr "Курсант-отличник III степени"
@@ -1803,6 +1842,14 @@ msgstr "Ядовитое жало"
 msgid "comp7_4_1_descr"
 msgstr ""
 "Выдавалась за выполнение цепочки задач в сезоне Лазурной мантикоры режима "
+"«Натиск»."
+
+msgid "comp7_4_2"
+msgstr "Мифический бестиарий"
+
+msgid "comp7_4_2_descr"
+msgstr ""
+"Выдавалась за выполнение цепочки задач в сезоне Алой мантикоры режима "
 "«Натиск»."
 
 msgid "comp7_4_yearly_bronze"

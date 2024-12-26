@@ -3404,6 +3404,7 @@ class PyGroundEffectManager(pybind11_object):
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
 	def loadAirstrike(self, *args, **kwargs): pass
 	def loadArtillery(self, *args, **kwargs): pass
 	def playAirstrike(self, *args, **kwargs): pass
@@ -6747,6 +6748,7 @@ def projection(*args, **kwargs): pass
 protocolVersion = u'17.1.0 (5)'
 def purgeUrlRequestCache(*args, **kwargs): pass
 def quit(*args, **kwargs): pass
+def quitWithExitCode(*args, **kwargs): pass
 def registerShadowCaster(*args, **kwargs): pass
 def registerTextureStreamingViewpoint(*args, **kwargs): pass
 def reinitLoggers(*args, **kwargs): pass
@@ -6882,6 +6884,7 @@ def wg_checkAnyParticlesExist(*args, **kwargs): pass
 def wg_checkDestructibleIsBush(*args, **kwargs): pass
 def wg_clearAllScaleformTextures(*args, **kwargs): pass
 def wg_clearCrashedState(*args, **kwargs): pass
+def wg_clearDamageStickers(*args, **kwargs): pass
 def wg_clearDecals(*args, **kwargs): pass
 def wg_clearTextureReuseList(*args, **kwargs): pass
 def wg_clearTraces(*args, **kwargs): pass

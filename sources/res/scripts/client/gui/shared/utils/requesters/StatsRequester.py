@@ -302,10 +302,6 @@ class StatsRequester(AbstractSyncDataRequester, IStatsRequester):
         return
 
     @property
-    def isSsrPlayEnabled(self):
-        return self.getCacheValue('isSsrPlayEnabled', False)
-
-    @property
     def comp7(self):
         return self.getCacheValue('comp7', {})
 

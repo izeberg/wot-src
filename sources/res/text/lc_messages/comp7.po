@@ -67,6 +67,15 @@ msgstr "Бои недоступны на сервере %(serverName)s"
 msgid "alertMessage/notSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
 
+msgid "alertMessage/preannounce/first"
+msgstr "Сезон Лазурной мантикоры начинается %(date)s"
+
+msgid "alertMessage/preannounce/second"
+msgstr "Сезон Алой мантикоры начинается %(date)s"
+
+msgid "alertMessage/preannounce/third"
+msgstr "Сезон Нефритовой мантикоры начинается %(date)s"
+
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "Бои на сервере начнутся через %(primeDelta)s"
 
@@ -103,8 +112,24 @@ msgstr "?empty?"
 msgid "alertMessage/unsuitableVehicles"
 msgstr "В Ангаре нет подходящей техники %(levels)s уровня"
 
-msgid "banner/info/disabled"
-msgstr "Ожидайте прайм-тайма"
+msgid "awardsWidget/description/award"
+msgstr "Нажмите, чтобы выбрать подходящие награды и забрать их."
+
+msgid "awardsWidget/description/awardDisabled"
+msgstr ""
+"Финальные награды временно недоступны. Приносим извинения за неудобства."
+
+msgid "awardsWidget/title"
+msgid_plural "plural/awardsWidget/title"
+msgstr[0] ""
+"ЗАБРАТЬ\n"
+"НАГРАДУ"
+msgstr[1] ""
+"ЗАБРАТЬ\n"
+"НАГРАДЫ"
+msgstr[2] ""
+"ЗАБРАТЬ\n"
+"НАГРАДЫ"
 
 msgid "banner/info/seasonEnd/first"
 msgstr "Сезон Лазурной мантикоры завершён"
@@ -115,17 +140,8 @@ msgstr "Сезон Алой мантикоры завершён"
 msgid "banner/info/seasonEnd/third"
 msgstr "Сезон Нефритовой мантикоры завершён"
 
-msgid "banner/info/seasonEndSoon"
-msgstr "Последний шанс продемонстрировать свои навыки!"
-
-msgid "banner/info/seasonJustStarted"
-msgstr "Покажите, на что способны!"
-
 msgid "banner/infoSmall/disabled"
 msgstr "Режим прекращения огня"
-
-msgid "banner/infoSmall/seasonEndSoon"
-msgstr "Последний шанс блеснуть!"
 
 msgid "banner/season/first"
 msgstr "Лазурная мантикора"
@@ -137,24 +153,36 @@ msgid "banner/season/third"
 msgstr "Нефритовая мантикора"
 
 msgid "banner/seasonDate/seasonLasts"
-msgstr "%(season)s, до %(day)s %(month)s"
-
-msgid "banner/seasonDate/seasonNotStarted"
-msgstr "%(season)s, с %(day)s %(month)s"
-
-msgid "banner/seasonDateSmall/seasonLasts"
 msgstr "До %(day)s %(month)s"
 
+msgid "banner/seasonDate/seasonNotStarted"
+msgstr "Начало: %(day)s %(month)s, %(hour)s:%(min)s"
+
 msgid "banner/seasonDateSmall/seasonNotStarted"
-msgstr "С %(day)s %(month)s"
-
-msgid "banner/timeLeft/hours"
-msgstr "Прайм-тайм: %(hour)s ч %(min)s мин"
-
-msgid "banner/timeLeft/min"
-msgstr "Прайм-тайм: %(min)s мин"
+msgstr "%(day)s %(month)s, %(hour)s:%(min)s"
 
 msgid "banner/title"
+msgstr "НАТИСК"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"Соревновательный режим, в котором игроки сражаются в формате 7 на 7 на "
+"технике X уровня. Продвигайтесь по рангам, чтобы получить особые элементы "
+"внешнего вида, технику, боны и другие ценные награды."
+
+msgid "bannerTooltip/end"
+msgstr "Сезон завершён"
+
+msgid "bannerTooltip/notAvailable"
+msgstr "Режим прекращения огня"
+
+msgid "bannerTooltip/notStarted"
+msgstr "Начало: %(day)s %(month)s, %(hour)s:%(min)s"
+
+msgid "bannerTooltip/range"
+msgstr "%(startDate)s – %(endDate)s"
+
+msgid "bannerTooltip/title"
 msgstr "НАТИСК"
 
 msgid "battleCarousel/filterButtonTooltip/body"
@@ -358,6 +386,14 @@ msgstr[2] "Сезон Нефритовой мантикоры продлится
 msgid "calendarDay/title"
 msgstr "Расписание"
 
+msgid "claimRewards/button"
+msgstr "Получить награду"
+
+msgid "claimRewards/rewardsUnavailable"
+msgstr ""
+"Временно недоступно по техническим причинам. Мы уже работаем над решением "
+"проблемы."
+
 msgid "closeButtonLabel"
 msgstr "ЗАКРЫТЬ"
 
@@ -371,6 +407,9 @@ msgid "countDown/text"
 msgstr ""
 "До начала события:\n"
 "%(timeLeft)s"
+
+msgid "countdown/lastMinute"
+msgstr "<1 мин"
 
 msgid "crewMembersTooltip/description"
 msgstr ""
@@ -766,36 +805,6 @@ msgstr "Очки рейтинга"
 msgid "membersWindow/memberCountDropdown/description"
 msgstr "Игроков во взводе"
 
-msgid "modifier/name/engineFireChance"
-msgstr "Вероятность возгорания двигателя"
-
-msgid "modifier/name/innerModuleDamageReduction"
-msgstr "Снижение урона по внутренним модулям"
-
-msgid "modifier/name/rangeOfPotentialDamage"
-msgstr "Разброс урона"
-
-msgid "modifier/name/timeRemainingVisible"
-msgstr "Длительность обнаружения"
-
-msgid "modifier/name/vehicleDurability"
-msgstr "Прочность машины"
-
-msgid "modifier/valueType/HP"
-msgstr "%(hp)s ед."
-
-msgid "modifier/valueType/deviation"
-msgstr "+/–%(deviation)s%"
-
-msgid "modifier/valueType/meters"
-msgstr "%(meters)s м"
-
-msgid "modifier/valueType/percentage"
-msgstr "%(percentage)s%"
-
-msgid "modifier/valueType/seconds"
-msgstr "%(seconds)s с"
-
 msgid "noVehicles/howTo/premium"
 msgstr "Используйте Танковый премиум аккаунт"
 
@@ -1150,6 +1159,18 @@ msgstr "Ранг «%(rank)s»"
 msgid "rank/third"
 msgstr "Серебро"
 
+msgid "rankCompatibilityTable/playersRank"
+msgstr "Ранг игрока"
+
+msgid "rankCompatibilityTable/teammatesRank"
+msgstr "Ранг(и) совзводных"
+
+msgid "rankCompatibilityTooltip/description"
+msgstr "Во взводе могут состоять только игроки с одинаковым рангом."
+
+msgid "rankCompatibilityTooltip/heading"
+msgstr "Ранговые ограничения для взводов из %(count)s игроков"
+
 msgid "rankInactivityTooltip/description"
 msgstr ""
 "Вы будете терять очки рейтинга, если не будете проводить бои в режиме."
@@ -1288,8 +1309,7 @@ msgstr ""
 
 msgid "rewards/subtitle/styleProgress"
 msgstr ""
-"{whiteSpanish_Open}Для стиля «Мифический зверь "
-"(лазурный)»{whiteSpanish_Close}"
+"{whiteSpanish_Open}Для стиля «Мифический зверь (алый){whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -1305,6 +1325,9 @@ msgstr "К другим наградам"
 
 msgid "rewardsScreen/buttonToRewards"
 msgstr "К наградам"
+
+msgid "rewardsScreen/buttonToSelectedRewards"
+msgstr "Выбрать награду"
 
 msgid "rewardsScreen/buttonToShop"
 msgstr "К покупке"
@@ -1375,14 +1398,14 @@ msgstr ""
 msgid "rewardsScreen/subtitle/tokensRewards"
 msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
 msgstr[0] ""
-"Получена награда за сбор {cream_Open}%(tokensCount)s{cream_Close} монеты "
-"«Натиска»"
+"Награда за выполнение {cream_Open}%(tokensCount)s{cream_Close} еженедельной "
+"задачи"
 msgstr[1] ""
-"Получена награда за сбор {cream_Open}%(tokensCount)s{cream_Close} монет "
-"«Натиска»"
+"Награда за выполнение {cream_Open}%(tokensCount)s{cream_Close} еженедельных "
+"задач"
 msgstr[2] ""
-"Получена награда за сбор {cream_Open}%(tokensCount)s{cream_Close} монет "
-"«Натиска»"
+"Награда за выполнение {cream_Open}%(tokensCount)s{cream_Close} еженедельных "
+"задач"
 
 msgid "rewardsScreen/title/division"
 msgstr "ДОСТИГНУТ ДИВИЗИОН %(division)s"
@@ -1406,13 +1429,22 @@ msgstr[1] "ПОЛУЧЕНЫ НАГРАДЫ"
 msgstr[2] "ПОЛУЧЕНЫ НАГРАДЫ"
 
 msgid "rewardsScreen/title/tokensRewards"
-msgstr "СОБРАНЫ МОНЕТЫ НАТИСКА"
+msgstr "НАГРАДЫ ЗА ЕЖЕНЕДЕЛЬНЫЕ ЗАДАЧИ"
 
 msgid "rewardsScreen/title/yearlyRewards"
 msgstr "ГОДОВЫЕ НАГРАДЫ"
 
 msgid "rewardsScreen/yearlyVehicleCrew"
 msgstr "С уникальными членами экипажа:"
+
+msgid "rewardsSelectionScreen/description"
+msgstr "НАТИСК"
+
+msgid "rewardsSelectionScreen/title"
+msgid_plural "plural/rewardsSelectionScreen/title"
+msgstr[0] "ВЫБРАТЬ НАГРАДУ"
+msgstr[1] "ВЫБРАТЬ НАГРАДЫ"
+msgstr[2] "ВЫБРАТЬ НАГРАДЫ"
 
 msgid "scoreTooltip/body"
 msgstr ""
@@ -1794,7 +1826,7 @@ msgstr ""
 "%(rewards)s"
 
 msgid "system_messages/tokenWeeklyReward/title"
-msgstr "Награда за сбор монет Натиска"
+msgstr "Награды за выполнение еженедельных задач"
 
 msgid "system_messages/weeklyReward/body"
 msgstr ""
@@ -1803,9 +1835,6 @@ msgstr ""
 
 msgid "system_messages/weeklyReward/title"
 msgstr "Награда за выполнение еженедельной задачи"
-
-msgid "system_messages/weeklyReward/tokens"
-msgstr "монета Натиска"
 
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "В турнире нельзя получить или потерять очки рейтинга."
@@ -1825,8 +1854,8 @@ msgstr "Очки рейтинга нельзя заработать в трен�
 msgid "unit/message/modeOffline"
 msgstr "Невозможно выйти в бой: ошибка базы данных."
 
-msgid "unit/message/ratingRestriction"
-msgstr "Разница в очках рейтинга между игроками взвода превышает %(rating)s"
+msgid "unit/message/rankRangeRestriction"
+msgstr "Превышен лимит на разницу в рангах"
 
 msgid "voiceChat/active"
 msgstr "Выйти из голосового чата"
@@ -1836,6 +1865,61 @@ msgstr "Войти в голосовой чат"
 
 msgid "waitingSpinner/message"
 msgstr "Загрузка содержимого..."
+
+msgid "weeklyQuestTooltip/additionalRewards"
+msgstr ""
+"Вы получите дополнительную награду за выполнение "
+"{cream_Open}%(questsList)s{cream_Close} задач."
+
+msgid "weeklyQuestTooltip/countdownStatus"
+msgid_plural "plural/weeklyQuestTooltip/countdownStatus"
+msgstr[0] ""
+"%(value)s новая задача через:\n"
+"%(countdown)s"
+msgstr[1] ""
+"%(value)s новые задачи через:\n"
+"%(countdown)s"
+msgstr[2] ""
+"%(value)s новых задач через:\n"
+"%(countdown)s"
+
+msgid "weeklyQuestTooltip/counterQuests"
+msgstr "Выполнено задач: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuestTooltip/questsProgres"
+msgstr "{yellow_Open}%(current)s{yellow_Close} / %(total)s"
+
+msgid "weeklyQuestTooltip/takeRewards/header"
+msgstr "Так держать!"
+
+msgid "weeklyQuestTooltip/takeRewards/text"
+msgstr ""
+"Вы выполнили все еженедельные задачи.\n"
+"Не забудьте забрать награду, и до встречи в следующем сезоне!"
+
+msgid "weeklyQuests/CountdownStatus/active"
+msgid_plural "plural/weeklyQuests/CountdownStatus/active"
+msgstr[0] "%(value)s НОВАЯ ЗАДАЧА ЧЕРЕЗ %(countdown)s"
+msgstr[1] "%(value)s НОВЫЕ ЗАДАЧИ ЧЕРЕЗ %(countdown)s"
+msgstr[2] "%(value)s НОВЫХ ЗАДАЧ ЧЕРЕЗ %(countdown)s"
+
+msgid "weeklyQuests/CountdownStatus/done"
+msgstr "НОВЫЙ СЕЗОН — НОВЫЕ ЗАДАЧИ!"
+
+msgid "weeklyQuests/TokenProgress/header"
+msgstr "Выполнено задач: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuests/TokenProgress/subheader"
+msgid_plural "plural/weeklyQuests/TokenProgress/subheader"
+msgstr[0] ""
+"Каждую неделю вы будете получать %(value)s новую задачу. Чем больше задач вы"
+" выполните, тем ценнее будет награда!"
+msgstr[1] ""
+"Каждую неделю вы будете получать %(value)s новые задачи. Чем больше задач вы"
+" выполните, тем ценнее будет награда!"
+msgstr[2] ""
+"Каждую неделю вы будете получать %(value)s новых задач. Чем больше задач вы "
+"выполните, тем ценнее будет награда!"
 
 msgid "weeklyQuests/card/progress/counter"
 msgstr "%(current)s / %(total)s"
@@ -1861,130 +1945,79 @@ msgstr "Для разблокировки выполните предыдущу�
 msgid "weeklyQuests/card/statusLockedTooltip/header"
 msgstr "Задача недоступна"
 
-msgid "weeklyQuests/resetStatus/ended"
-msgstr "Все доступные задачи выполнены."
-
-msgid "weeklyQuests/resetStatus/lastWeek"
-msgstr ""
-"Последняя неделя сезона — успейте выполнить задачи и получить награды!"
-
-msgid "weeklyQuests/resetStatus/timer"
-msgstr ""
-"Прогресс по задачам сбрасывается каждую неделю. Обновление через: "
-"%(countdown)s"
-
-msgid "weeklyQuests/tokenProgress/description/done"
-msgstr "Все награды получены"
-
-msgid "weeklyQuests/tokenProgress/description/normal"
-msgstr "Зарабатывайте монеты Натиска для получения наград"
-
 msgid "whatsNewButtonLabel"
 msgstr "СЕЗОННЫЕ ОБНОВЛЕНИЯ"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "СЕЗОН ЛАЗУРНОЙ МАНТИКОРЫ"
+msgstr "СЕЗОН АЛОЙ МАНТИКОРЫ"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "НАТИСК. ЧТО НОВОГО?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Вперёд!"
+msgstr "За дело!"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Сражайтесь в каждом из трёх сезонов, чтобы получить ценные годовые награды. "
-"Получить уникальную машину стало легче. Чем лучше вы будете играть в течение"
-" года, тем более эксклюзивный стиль получите."
+"Все задачи теперь не имеют срока действия, и их можно выполнять в течение "
+"всего сезона. Вы можете следить за выполнением задач с помощью специального "
+"виджета в Ангаре. Вместо оборудования «Повышенная снарядостойкость» вы "
+"получите специальный жетон, который можно обменять на усовершенствованное "
+"оборудование в качестве награды."
 
 msgid "whatsNewView/intro/heading"
-msgstr "Добро пожаловать в год Мантикоры!"
+msgstr "Еженедельные задачи %(tag)"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Карты"
 
-msgid "whatsNewView/modifiers/NA"
-msgstr "Отсутствуют"
-
-msgid "whatsNewView/modifiers/added"
-msgstr "Новые модификаторы"
-
-msgid "whatsNewView/modifiers/changed"
-msgstr "Изменённые модификаторы"
-
-msgid "whatsNewView/modifiers/currentSeason"
-msgstr "Текущий сезон"
-
-msgid "whatsNewView/modifiers/description"
-msgstr "Для режима добавлены новые модификаторы, меняющие параметры техники."
-
-msgid "whatsNewView/modifiers/heading"
-msgstr "Обновлённые модификаторы «Натиска»"
-
-msgid "whatsNewView/modifiers/previousSeason"
-msgstr "Предыдущий сезон"
-
-msgid "whatsNewView/modifiers/random"
-msgstr "Случайные"
-
-msgid "whatsNewView/newVehicles/heading"
-msgstr "Новые машины, доступные в «Натиске»"
-
-msgid "whatsNewView/sectionDescription/assaultTankDestroyer"
+msgid "whatsNewView/roleSkills/description"
 msgstr ""
-"После активации ваша машина получит улучшенную динамику и станет наносить "
-"повышенный урон тараном технике противника, при этом получая меньше урона. "
-"Узнайте больше на странице «О событии» и в описании ролевого навыка."
+"Большинство ролевых навыков получили балансные правки. Подробнее читайте в "
+"статье о новом сезоне."
 
-msgid "whatsNewView/sectionDescription/ratingUpdate"
+msgid "whatsNewView/roleSkills/heading"
+msgstr "Ребаланс ролевых навыков"
+
+msgid "whatsNewView/sectionDescription/bondShop"
 msgstr ""
-"Количество очков рейтинга, получаемых в рангах «Железо», «Бронза» и "
-"«Серебро», увеличено."
+"К предметам магазина «Натиска» теперь можно быстро перейти из раздела "
+"«Товары за боны»."
 
-msgid "whatsNewView/sectionDescription/reconFlight"
-msgid_plural "plural/whatsNewView/sectionDescription/reconFlight"
-msgstr[0] ""
-"Теперь навык становится доступен спустя %(seconds)s секунду после начала "
-"боя. Игроки, обнаруженные этим навыком, увидят специальную иконку."
-msgstr[1] ""
-"Теперь навык становится доступен спустя %(seconds)s секунды после начала "
-"боя. Игроки, обнаруженные этим навыком, увидят специальную иконку."
-msgstr[2] ""
-"Теперь навык становится доступен спустя %(seconds)s секунд после начала боя."
-" Игроки, обнаруженные этим навыком, увидят специальную иконку."
+msgid "whatsNewView/sectionDescription/enemy"
+msgstr "Теперь вы можете видеть имена и ранги соперников в начале боя."
 
-msgid "whatsNewView/sectionDescription/shopUpdates"
+msgid "whatsNewView/sectionDescription/legendRank"
 msgstr ""
-"Новое усовершенствованное оборудование «Скрытая выхлопная система» станет "
-"доступно для покупки после достижения ранга «Серебро»."
+"Ранг «Легенда» присваивается игрокам, попавшим в "
+"{whiteSpanish_Open}топ-%(topPercentage)s%{whiteSpanish_Close} таблицы "
+"лидеров. Таблица обновляется каждые "
+"{whiteSpanish_Open}%(count)s&nbsp;минут{whiteSpanish_Close}."
 
-msgid "whatsNewView/sectionDescription/tournaments"
+msgid "whatsNewView/sectionDescription/platoons_2"
 msgstr ""
-"Не упустите шанс принять участие в новом турнире, в котором у каждой команды"
-" есть шанс на победу!"
+"Разница между самым низкоранговым и самым высокоранговым игроком взвода не "
+"может превышать один ранг."
 
-msgid "whatsNewView/sectionDescription/trainingRoom"
+msgid "whatsNewView/sectionDescription/platoons_7"
 msgstr ""
-"Теперь в режиме командной тренировки «Натиска» вам не нужно платить за "
-"боеприпасы, снаряжение и инструкции."
+"Разница между самым низкоранговым и самым высокоранговым игроком взвода не "
+"может превышать два ранга."
 
-msgid "whatsNewView/sectionHeading/assaultTankDestroyer"
-msgstr "Переработка ролевого навыка «ПТ-САУ штурмовая»"
+msgid "whatsNewView/sectionHeading/bondShop"
+msgstr "Интеграция с Магазином"
 
-msgid "whatsNewView/sectionHeading/ratingUpdate"
-msgstr "Обновление ранговой системы"
+msgid "whatsNewView/sectionHeading/enemy"
+msgstr "Знай своего врага"
 
-msgid "whatsNewView/sectionHeading/reconFlight"
-msgstr "Обновление ролевого навыка «Самолёт-разведчик»"
+msgid "whatsNewView/sectionHeading/legendRank"
+msgstr "Расширение ранга «Легенда»"
 
-msgid "whatsNewView/sectionHeading/shopUpdates"
-msgstr "Обновление магазина «Натиска»"
+msgid "whatsNewView/sectionHeading/platoons"
+msgstr "Новые ограничения по взводам — от рейтинга к рангам"
 
-msgid "whatsNewView/sectionHeading/tournaments"
-msgstr "Турниры"
-
-msgid "whatsNewView/sectionHeading/trainingRoom"
-msgstr "Тренировочная комната"
+msgid "whatsNewView/sectionSubtitle/platoons"
+msgstr "Взводы из %(count)s игроков"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "УДАЛЕНО"
@@ -2062,6 +2095,9 @@ msgstr ""
 "%(vehicle)s\n"
 "с уникальным 3D-стилем"
 
+msgid "yearlyRewards/preview/backButton"
+msgstr "К ГОДОВЫМ НАГРАДАМ"
+
 msgid "yearlyRewards/preview/style2d"
 msgstr "Просмотреть 2D-стиль"
 
@@ -2104,15 +2140,6 @@ msgstr ""
 
 msgid "yearlyRewards/stageDescription/active"
 msgstr "Активный этап"
-
-msgid "yearlyRewardsSelectionScreen/description"
-msgstr "НАТИСК. ГОД МАНТИКОРЫ"
-
-msgid "yearlyRewardsSelectionScreen/title"
-msgid_plural "plural/yearlyRewardsSelectionScreen/title"
-msgstr[0] "ВЫБРАТЬ НАГРАДУ"
-msgstr[1] "ВЫБРАТЬ НАГРАДЫ"
-msgstr[2] "ВЫБРАТЬ НАГРАДЫ"
 
 msgid "yearlyStatistics/battles"
 msgstr "Бои (один./взводн.)"

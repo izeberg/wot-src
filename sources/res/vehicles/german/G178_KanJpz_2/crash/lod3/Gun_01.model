@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.364352 -0.343221 -1.176360</min>
+		<max>0.365791 0.403451 5.394975</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/german/G178_KanJpz_2/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/german/G178_KanJpz_2/crash/lod4/Gun_01</parent>
+	<extent>192</extent>
+</root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						emissionMap
+						<Texture>particles/Tank/customization/GB86_Centurion_Action_X_NY2025_3Dst/lamp.dds</Texture>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>140.000000</Float>
+					</property>
+					<property>
+						waveLen
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_forwardMult
+						<Float>4.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000001 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.088287 -0.042500 -0.006250</min>
+		<max>0.088288 0.042500 0.006250</max>
+	</boundingBox>
+	<geometrySize>468</geometrySize>
+	<minUVDensity>45.838623</minUVDensity>
+</root>

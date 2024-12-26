@@ -255,6 +255,12 @@ msgstr "Отправить сообщение"
 msgid "members/footer/AT_SPG_Full"
 msgstr "Достигнут максимум ПТ-САУ во взводе"
 
+msgid "members/footer/comp7Limitations"
+msgstr "Высший ранг: ограничения"
+
+msgid "members/footer/comp7TopPlayer"
+msgstr "Высший ранг во взводе"
+
 msgid "members/footer/getNotReady"
 msgstr "Нажмите, чтобы отменить готовность."
 
@@ -306,11 +312,6 @@ msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 msgid "members/header/squad"
 msgstr ": Случайный бой"
 
-msgid "members/header/tooltip/comp7/body"
-msgstr ""
-"Разница в очках рейтинга между игроками взвода не должна превышать "
-"%(rating)s. Для игроков супервзвода таких ограничений нет."
-
 msgid "members/header/tooltip/comp7/dropdown"
 msgstr "Только командир взвода может менять лимит игроков."
 
@@ -318,9 +319,6 @@ msgid "members/header/tooltip/comp7/dropdown/item"
 msgstr ""
 "Изменение невозможно. Лимит игроков не может быть меньше их текущего "
 "количества."
-
-msgid "members/header/tooltip/comp7/header"
-msgstr "Правила формирования взвода"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""

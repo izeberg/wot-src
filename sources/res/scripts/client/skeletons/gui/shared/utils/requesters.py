@@ -379,10 +379,6 @@ class IStatsRequester(IRequester):
         raise NotImplementedError
 
     @property
-    def isSsrPlayEnabled(self):
-        raise NotImplementedError
-
-    @property
     def comp7(self):
         raise NotImplementedError
 

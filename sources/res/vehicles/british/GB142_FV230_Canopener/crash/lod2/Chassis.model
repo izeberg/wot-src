@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB142_FV230_Canopener/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.960222 -0.000000 -4.476337</min>
+		<max>1.960238 1.302647 3.724604</max>
+	</visibilityBox>
+</root>

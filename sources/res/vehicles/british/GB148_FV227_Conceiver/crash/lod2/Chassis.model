@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB148_FV227_Conceiver/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.813375 -0.000364 -4.200537</min>
+		<max>1.835283 1.059079 3.904890</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB148_FV227_Conceiver/crash/lod3/Chassis</parent>
+	<extent>96</extent>
+</root>

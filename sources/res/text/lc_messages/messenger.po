@@ -2290,9 +2290,7 @@ msgid "serviceChannelMessages/blueprintsConvertSale/restore"
 msgstr "Конвертация чертежей восстановлена"
 
 msgid "serviceChannelMessages/bondEquipmentChoosing"
-msgstr ""
-"Выберите усовершенствованное оборудование в качестве годовой награды "
-"«Натиска»."
+msgstr "Не забудьте забрать награду!"
 
 msgid "serviceChannelMessages/bondEquipmentChoosingButton"
 msgstr "К выбору"
@@ -2729,7 +2727,7 @@ msgstr ""
 "Шанс выиграть в текущих торгах снижен: ваша ставка стала ниже конкурентной."
 
 msgid "serviceChannelMessages/integratedAuction/button"
-msgstr "К Аукциону"
+msgstr "К событию"
 
 msgid "serviceChannelMessages/integratedAuction/lostRate/header"
 msgstr "Ставка проиграла. К возврату:"
@@ -2748,7 +2746,7 @@ msgstr ""
 "Пожалуйста, попробуйте ещё раз."
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/text"
-msgstr "Торги подходят к завершению."
+msgstr "Торги скоро закроются."
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/title"
 msgstr "Успейте сделать ставку!"
@@ -2757,7 +2755,7 @@ msgid "serviceChannelMessages/integratedAuction/stageStart/text"
 msgstr "Успейте сделать ставку. Количество товара ограничено."
 
 msgid "serviceChannelMessages/integratedAuction/stageStart/title"
-msgstr "Торги за новые лоты уже начались!"
+msgstr "Торги за новый лот начались!"
 
 msgid "serviceChannelMessages/invoiceReceived/berthsAccrued"
 msgstr "Добавлены койки в Казарму"
@@ -3049,7 +3047,7 @@ msgid "serviceChannelMessages/lootBoxes/header"
 msgstr "Вам посылка:"
 
 msgid "serviceChannelMessages/lootBoxes/item/name"
-msgstr "«%(name)s» %(colorTagOpen)sx%(count)s%(colorTagClose)s"
+msgstr "«%(name)s» %(colorTagOpen)s×%(count)s%(colorTagClose)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "Посмотреть"
@@ -3566,45 +3564,6 @@ msgstr "За подтверждение почты получена наград
 
 msgid "serviceChannelMessages/steamEmailCompletion/header"
 msgstr "Поздравляем!"
-
-msgid "serviceChannelMessages/sysMsg/consumables/credits/accrued"
-msgstr "Начислены кредиты:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/accrued"
-msgstr "Начислено снаряжение:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/date"
-msgstr "Дата"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/debit"
-msgstr "Списано снаряжение:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/item/many"
-msgstr ""
-" \n"
-"&nbsp;&nbsp;• %(name)s (×%(count)d)"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/item/one"
-msgstr " %(name)s (×%(count)d)"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline100"
-msgstr "100-октановый бензин"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline105"
-msgstr "105-октановый бензин"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/lendLeaseOil"
-msgstr "Ленд-лизовское масло"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/qualityOil"
-msgstr "Качественное масло"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/title"
-msgstr "Квитанция"
 
 msgid "serviceChannelMessages/sysMsg/converter/blueprintsReceived"
 msgstr "Получена компенсация за чертежи исследованной техники:"
