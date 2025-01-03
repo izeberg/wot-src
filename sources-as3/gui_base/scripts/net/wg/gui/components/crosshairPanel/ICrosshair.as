@@ -73,7 +73,9 @@ package net.wg.gui.components.crosshairPanel
       
       function removeOverheat() : void;
       
-      function setOverheatProgress(param1:Number, param2:Boolean, param3:Boolean = false) : void;
+      function setOverheatProgress(param1:Number, param2:Number, param3:Boolean = false, param4:Boolean = false) : void;
+      
+      function setFlameDistanceVisibility(param1:Boolean) : void;
       
       function get autoloaderBoostParams() : BoostIndicatorStateParamsVO;
       

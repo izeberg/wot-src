@@ -1,5 +1,5 @@
 import logging, typing, quest_progress
-from constants import QUEST_PROGRESS_STATE
+from constants import QUEST_PROGRESS_STATE, VEHICLE_CLASSES
 from gui.Scaleform.genConsts.QUEST_PROGRESS_BASE import QUEST_PROGRESS_BASE
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
 from gui.impl import backport
@@ -12,7 +12,9 @@ from gui.server_events.personal_progress import ORDERED_ICON_IDS
 _logger = logging.getLogger(__name__)
 PARAMS_KEYS = {'vehicleHealthFactor': backport.getNiceNumberFormat, 
    'stunSeveralTargets': backport.getIntegralFormat, 
-   'distanceGreatOrEqual': backport.getIntegralFormat}
+   'distanceGreatOrEqual': backport.getIntegralFormat, 
+   'desiredPosition': backport.getIntegralFormat, 
+   'distanceShortOrEqual': backport.getIntegralFormat}
 UI_HEADER_TYPES = {DISPLAY_TYPE.BIATHLON: QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_BIATHLON, 
    DISPLAY_TYPE.LIMITED: QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_LIMITED, 
    DISPLAY_TYPE.SERIES: QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_SERIES, 
@@ -52,6 +54,9 @@ class ClientProgress(quest_progress.IProgress):
 
     def isMain(self):
         return self._commonProgress.isMain()
+
+    def isAward(self):
+        return self._commonProgress.isAward()
 
     def setProgressGetter(self, progressGetter):
         self._progressGetter = progressGetter
@@ -94,6 +99,9 @@ class ClientProgress(quest_progress.IProgress):
     def isInOrGroup(self):
         return self._description.isInOrGroup
 
+    def groupID(self):
+        return self._commonProgress.groupID()
+
     def getFormattedMultiplierValue(self, scope=MULTIPLIER_SCOPE.CARD):
         multiplier = self.getMultiplier()
         if multiplier:
@@ -119,6 +127,9 @@ class ClientProgress(quest_progress.IProgress):
 
     def isLocked(self):
         return self.__isLocked
+
+    def isCumulative(self):
+        return self._commonProgress.isCumulative()
 
     def _getOrderType(self):
         if self._commonProgress.isMain():
@@ -285,9 +296,6 @@ class BodyProgress(ClientProgress):
 
         return data
 
-    def isCumulative(self):
-        return self._commonProgress.isCumulative()
-
     def getDescription(self):
         if self.getProgressID() in self.COMMON_PROGRESS_IDS:
             description = self.__getCommonDescription()
@@ -334,9 +342,13 @@ class BodyProgress(ClientProgress):
         return super(BodyProgress, self).getMultiplier() or self.__headerMultiplier
 
     def __getCommonDescription(self):
-        if self.getProgressID() == 'alive' and self._commonProgress.getParam('shouldBeUnspotted'):
-            return i18n.makeString('#personal_missions_details:quest_common_condition_description_%s' % 'isNotSpotted')
-        return i18n.makeString('#personal_missions_details:quest_common_condition_description_%s' % self.getProgressID())
+        commonConditionDescription = '#personal_missions_details:quest_common_condition_description_%s'
+        if self.getProgressID() == 'alive':
+            if self._commonProgress.getParam('shouldBeUnspotted'):
+                return i18n.makeString(commonConditionDescription % 'isNotSpotted')
+            if self._commonProgress.getParam('attackerUnharmed'):
+                return i18n.makeString(commonConditionDescription % 'attackerUnharmed')
+        return i18n.makeString(commonConditionDescription % self.getProgressID())
 
 
 class AverageProgress(BodyProgress):
@@ -373,9 +385,29 @@ class VehicleTypesProgress(BodyProgress):
     def getDoneTargets(self):
         return self._commonProgress.getUniqueKeys()
 
+    def getUniqueGoal(self):
+        return self._commonProgress.getUniqueGoal()
+
+    def getUniqueCount(self):
+        return self._commonProgress.getUniqueCount()
+
+    def getTotalGoal(self):
+        return self._commonProgress.getTotalGoal()
+
+    def getCounter(self):
+        return self._commonProgress.getCounter()
+
+    def getTotalCount(self):
+        return self._commonProgress.getTotalCount()
+
     def getLocalizationValues(self):
         data = super(VehicleTypesProgress, self).getLocalizationValues()
-        data.update(uniqueGoal=backport.getIntegralFormat(self._commonProgress.getUniqueGoal()))
+        vehTypesCount = self.getUniqueGoal()
+        totalTypesCount = len(VEHICLE_CLASSES)
+        totalGoal = self.getTotalGoal()
+        if (self.isCumulative() or vehTypesCount == totalTypesCount) and totalGoal % 5 == 0:
+            data.update(goal=backport.getIntegralFormat(totalGoal / vehTypesCount))
+        data.update(uniqueGoal=backport.getIntegralFormat(vehTypesCount))
         return data
 
 
@@ -395,4 +427,14 @@ class _MetricsWrappers(object):
         return self.__topMetricIdx
 
     def getMetrics(self, progress):
-        return [ wrapper(progress) for wrapper in self.__wrappers ]
+        metrics = []
+        for wrapper in self.__wrappers:
+            result = wrapper(progress)
+            if not result:
+                continue
+            if isinstance(result, list):
+                metrics.extend(result)
+            else:
+                metrics.append(result)
+
+        return metrics

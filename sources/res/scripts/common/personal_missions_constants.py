@@ -1,4 +1,8 @@
-
+from constants import OFFER_TOKEN_PREFIX
+PM3_PREFIX = 'pm3:'
+PM3_OFFER_TOKEN_PREFIX = OFFER_TOKEN_PREFIX + PM3_PREFIX
+PM3_SELECT_BONUS_NAME = 'pm3SelectBonus'
+PM3_PREFIX_NAME = 'pm3'
 
 class CONDITION_ICON:
     ASSIST = 'assist'
@@ -20,6 +24,7 @@ class CONDITION_ICON:
     GET_DAMAGE = 'get_damage'
     GET_HIT = 'get_hit'
     HIT = 'hit'
+    HIT_BLOCK = 'hit_block'
     HURT_1SHOT = 'hurt_1shot'
     HURT_VEHICLES = 'hurt_vehicles'
     KILL_1SHOT = 'kill_1shot'
@@ -41,6 +46,7 @@ class CONDITION_ICON:
     IMPROVE = 'improve'
     RANK_UP = 'rank_up'
     PRESTIGE_POINTS = 'prestige_points'
+    NO_DAMAGE = 'no_damage'
 
 
 class PROGRESS_TEMPLATE:

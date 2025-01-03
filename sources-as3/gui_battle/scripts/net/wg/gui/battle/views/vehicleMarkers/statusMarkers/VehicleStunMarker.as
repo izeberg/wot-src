@@ -4,7 +4,7 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
    import flash.text.TextField;
    import scaleform.gfx.TextFieldEx;
    
-   public class VehicleStunMarker extends VehicleAnimatedStatusBaseMarker
+   public class VehicleStunMarker extends VehicleAnimatedGlowMarker
    {
        
       
@@ -14,8 +14,6 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       public var waveContainer:MarkerAssetContainer = null;
       
-      public var glowContainer:MarkerAssetContainer = null;
-      
       private var _secString:String = "";
       
       private var _noTranslateEnabled:Boolean = false;
@@ -23,11 +21,13 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       public function VehicleStunMarker()
       {
          super();
+         this.arrowContainer.setAnimated(false);
       }
       
       override public function showEffectTimer(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean = true, param5:Boolean = true) : void
       {
          this.counterMc.visible = param2;
+         this.arrowContainer.setAnimated(true);
          super.showEffectTimer(param1,param2,param3,param4,param5);
       }
       
@@ -49,8 +49,6 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
             this.waveContainer.dispose();
             this.waveContainer = null;
          }
-         this.glowContainer.dispose();
-         this.glowContainer = null;
          this.arrowContainer.dispose();
          this.arrowContainer = null;
          this.counterMc = null;
@@ -63,9 +61,14 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          {
             this.waveContainer.updateColorSettings(color);
          }
-         this.glowContainer.updateColorSettings(color);
          this.arrowContainer.updateColorSettings(arrowColorFrame);
          TextField(this.counterMc.labelTf).textColor = param1;
+      }
+      
+      override protected function onHiddenStateShowed() : void
+      {
+         super.onHiddenStateShowed();
+         this.arrowContainer.setAnimated(false);
       }
       
       public function setSecondString(param1:String) : void

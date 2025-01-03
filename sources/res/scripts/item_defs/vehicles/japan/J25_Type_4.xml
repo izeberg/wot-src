@@ -14,7 +14,7 @@
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>25</forward>
-		<backward>10</backward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -6277,7 +6277,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						16.3
+						13.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -6417,7 +6417,7 @@
 				</_127mm_50_3rd_Year_Type>
 				<_150mm_45_41st_Year_Type>
 					shared
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>50</maxAmmo>
 					<unlocks>
 						<gun>
 							_140mm_50_3rd_Year_Type
@@ -6434,7 +6434,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 6.5 0.138889 6.5 0.166667 10 0.333333 10 0.444444 1 0.555556 1 0.666667 10 0.833333 10 0.861111 6.5 1 6.5
+							0 8 0.138889 8 0.166667 10 0.333333 10 0.444444 1 0.555556 1 0.666667 10 0.833333 10 0.861111 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6443,13 +6443,13 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.49
+						0.45
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>22</reloadTime>
+					<reloadTime>20</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.24
+							0.16
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>5</afterShot>
@@ -6459,7 +6459,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						3.2
+						3.0
 						<!--BW_String-->
 					</aimingTime>
 					<models>

@@ -5951,10 +5951,6 @@
 							_105mm_Experimental_Tank_Gun_Kai
 							<cost>18300</cost>
 						</gun>
-						<gun>
-							_150mm_Howitzer_Type96
-							<cost>14750</cost>
-						</gun>
 					</unlocks>
 					<armor>
 						<armor_1>
@@ -6106,10 +6102,10 @@
 					shared
 					<maxAmmo>100</maxAmmo>
 					<unlocks>
-						<vehicle>
-							J25_Type_4
-							<cost>177700</cost>
-						</vehicle>
+						<gun>
+							_150mm_Howitzer_Type96_O_I_120
+							<cost>44750</cost>
+						</gun>
 					</unlocks>
 					<armor>
 						<armor_1>
@@ -6252,8 +6248,14 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_105mm_Experimental_Tank_Gun_Kai>
-				<_150mm_Howitzer_Type96>
+				<_150mm_Howitzer_Type96_O_I_120>
 					shared
+					<unlocks>
+						<vehicle>
+							J25_Type_4
+							<cost>177700</cost>
+						</vehicle>
+					</unlocks>
 					<maxAmmo>60</maxAmmo>
 					<armor>
 						<armor_1>
@@ -6286,10 +6288,10 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.54
+						0.46
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>22</reloadTime>
+					<reloadTime>20</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.14
@@ -6305,7 +6307,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						3.3
+						3.0
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -6392,7 +6394,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_150mm_Howitzer_Type96>
+				</_150mm_Howitzer_Type96_O_I_120>
 			</guns>
 			<models>
 				<undamaged>vehicles/japan/J27_O_I_120/normal/lod0/Turret_01.model</undamaged>

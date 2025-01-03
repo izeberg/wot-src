@@ -296,7 +296,7 @@ msgstr ""
 "• Таранам\n"
 "• Патапленнем\n"
 "• У выніку моцнага ўдару\n"
-"•Перакульваннем"
+"• Перакульваннем"
 
 msgid "common/tooltip/kill/header"
 msgstr "Знішчэнне супраціўніка"
@@ -556,9 +556,6 @@ msgstr "Узнагарода за першую перамогу за дзень"
 msgid "details/calculations/multiplierInfo/vehicleSeparator"
 msgstr "• "
 
-msgid "details/calculations/newYear"
-msgstr "Новогодний бонус"
-
 msgid "details/calculations/noPenalty"
 msgstr "За адважны супраціў"
 
@@ -599,9 +596,6 @@ msgstr "За тактычную падрыхтоўку"
 
 msgid "details/calculations/total"
 msgstr "Агулам:"
-
-msgid "details/calculations/vehicleBranch"
-msgstr "Новогодний бонус"
 
 msgid "details/calculations/xpRecord"
 msgstr "Налічана за бой (%(color_tag_open)sрэкорд%(color_tag_close)s)"
@@ -1056,10 +1050,10 @@ msgid "team/stats/labels_flameExplosionHits"
 msgstr "\tпашкоджанняў ад АС або АФ снарадаў"
 
 msgid "team/stats/labels_healed"
-msgstr "Восстановлено очков прочности себе"
+msgstr "Адноўлена ачкоў трываласці сабе"
 
 msgid "team/stats/labels_healedAlly"
-msgstr "Восстановлено очков прочности союзникам"
+msgstr "Аднаўленне ачкоў трываласці хаўруснікам"
 
 msgid "team/stats/labels_hits"
 msgstr "\tпрамых траплянняў/прабіццяў"

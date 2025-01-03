@@ -1,0 +1,8 @@
+
+
+class COMMON_INDICATOR_CONSTS(object):
+    PREPARING = 'preparing'
+    ACTIVE = 'active'
+    READY = 'ready'
+    DISABLE = 'disable'
+    ROCKET_ACCELERATOR_INDICATOR_STATE = [PREPARING, ACTIVE, READY, DISABLE]

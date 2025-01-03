@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "alertMessage/allPeripheriesHalt"
+msgstr "Режим прекращения огня на всех серверах. Бои начнутся через %(time)s"
+
+msgid "alertMessage/button"
+msgstr "Сменить сервер"
+
+msgid "alertMessage/somePeripheriesHalt"
+msgstr "Режим прекращения огня на сервере %(serverName)s"
+
+msgid "battle/blogger_1"
+msgstr "Jove"
+
+msgid "battle/blogger_2"
+msgstr "LeBwa"
+
+msgid "battle/blogger_3"
+msgstr "Near_You"
+
+msgid "battle/blogger_4"
+msgstr "Yusha"
+
+msgid "battle/team/header"
+msgstr "Команда:"
+
+msgid "battleLoading/team/header"
+msgstr "Команда"
+
+msgid "battleLoading/winText"
+msgstr "Задача: победить в Битве блогеров. За этим мы тут."
+
+msgid "battleMessages/disableVOIP"
+msgstr "Голосовая связь отключена."
+
+msgid "battleMessages/disableVOIPButton"
+msgstr "Голосовая связь отключена. Войти в голосовой чат (%(keyName)s)"
+
+msgid "battleMessages/enableVOIP"
+msgstr "Голосовая связь включена."
+
+msgid "battleMessages/specifyVOIP"
+msgstr "Для быстрого доступа к голосовой связи назначьте горячую клавишу."
+
+msgid "battleMessages/withoutVOIP"
+msgstr ""
+"Голосовая связь отключена. Для использования голосовой связи включите эту "
+"функцию в настройках игры."
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s - %(end)s"
+
+msgid "entryPoint/availablePrimeTime/body"
+msgstr "ПО МАШИНАМ!"
+
+msgid "entryPoint/beforeRegistration/body"
+msgstr "ОЖИДАЙТЕ НАЧАЛА СОБЫТИЯ"
+
+msgid "entryPoint/eventFinish/body"
+msgstr "БИТВА ОКОНЧЕНА"
+
+msgid "entryPoint/eventFinish/footer"
+msgstr "К итогам события"
+
+msgid "entryPoint/notAvailablePrimeTime/body"
+msgstr "БОИ ВРЕМЕННО НЕДОСТУПНЫ"
+
+msgid "entryPoint/paused/body"
+msgstr "БОИ ВРЕМЕННО НЕДОСТУПНЫ"
+
+msgid "entryPoint/registration/afterStart/body"
+msgstr "БИТВА БЛОГЕРОВ НАЧАЛАСЬ"
+
+msgid "entryPoint/registration/afterStart/footer"
+msgstr "Выбирайте команду и в бой!"
+
+msgid "entryPoint/registration/beforeStart/body"
+msgstr "ВЫБИРАЙТЕ КОМАНДУ"
+
+msgid "entryPoint/tillDate/description"
+msgstr "До %(day)s %(month)s"
+
+msgid "entryPoint/timeLeft/days"
+msgstr "%(day)s д %(hour)s ч"
+
+msgid "entryPoint/timeLeft/hours"
+msgstr "%(hour)s ч %(min)s мин"
+
+msgid "entryPoint/timeLeft/lessMin"
+msgstr "менее минуты"
+
+msgid "entryPoint/timeLeft/min"
+msgstr "%(min)s мин."
+
+msgid "entryPoint/title"
+msgstr "Битва блогеров 2025"
+
+msgid "headerButtons/fightBtn/tooltip/currentServerUnavailable/body"
+msgstr "Событие недоступно на выбранном сервере."
+
+msgid "headerButtons/fightBtn/tooltip/disabled/body"
+msgstr "На сервере действует режим прекращения огня."
+
+msgid "headerButtons/fightBtn/tooltip/disabled/header"
+msgstr "Выход в бой недоступен"
+
+msgid "headerButtons/fightBtn/tooltip/vehLevelRequired/body"
+msgstr "Выберите машину %(level)s уровня."
+
+msgid "headerButtons/fightBtn/tooltip/vehLevelRequired/header"
+msgstr "Выход в бой недоступен"
+
+msgid "personalReward/title"
+msgstr "НАГРАДА ЗА ЛИЧНЫЙ ПРОГРЕСС!"
+
+msgid "prebattle/playerInvalid/leaderForbidden"
+msgstr "Вы не можете играть взводом на этом аккаунте"
+
+msgid "prebattle/playerInvalid/teamMismatch"
+msgstr "Совзводные должны состоять в одной команде."
+
+msgid "primeTime/header"
+msgstr "БИТВА БЛОГЕРОВ"
+
+msgid "primeTime/status/allServersDisabled"
+msgstr "Режим прекращения огня на всех серверах"
+
+msgid "primeTime/status/disableFirst"
+msgstr "Событие на сервере %(server)s недоступно"
+
+msgid "primeTime/status/primeIsAvailable"
+msgstr "Бои на %(server)s будут доступны ещё %(time)s"
+
+msgid "primeTime/status/primeWillBeAvailable"
+msgstr "Начало боёв на %(server)s через %(time)s"
+
+msgid "primeTime/tooltip/server/available/until"
+msgstr "Бои будут доступны ещё %(time)s"
+
+msgid "primeTime/tooltip/server/onServer"
+msgstr "Сервер %(server)s"
+
+msgid "primeTime/tooltip/server/unavailable/inTime"
+msgstr "Начало боёв через %(time)s"
+
+msgid "quests/bonuses/token/bob_points/body"
+msgstr "Очки, заработанные в событии «Битва блогеров 2025»."
+
+msgid "quests/bonuses/token/bob_points/header"
+msgstr "Очки Битвы блогеров"
+
+msgid "rewardScreen/button/ok"
+msgstr "Так точно!"
+
+msgid "rewardScreen/button/openNext"
+msgstr "Открыть ещё %(count)s"
+
+msgid "rewardScreen/level"
+msgstr "%(level)s УРОВЕНЬ ПРОЙДЕН"
+
+msgid "rewards/label/credits"
+msgstr "%(value)s Кредитов"
+
+msgid "rewards/label/crystal"
+msgstr "%(value)s Бон"
+
+msgid "rewards/label/rent"
+msgstr "Машина Х уровня"
+
+msgid "seasonModifier/title"
+msgstr "Модификатор события"
+
+msgid "selector/tooltip/body"
+msgstr "Событие завершится %(day)s"
+
+msgid "selectorTooltip/availability/days"
+msgstr "%(day)s д."
+
+msgid "selectorTooltip/availability/hours"
+msgstr "%(hour)s ч."
+
+msgid "selectorTooltip/availability/lessMin"
+msgstr "менее минуты"
+
+msgid "selectorTooltip/availability/min"
+msgstr "%(min)s мин."
+
+msgid "selectorTooltip/desc"
+msgstr ""
+"Четыре команды, возглавляемые известными блогерами, сражаются в решающей "
+"схватке. Участвуйте в эпическом противостоянии и присоединяйтесь к одной из "
+"команд, чтобы внести вклад в её победу."
+
+msgid "selectorTooltip/desc/ASIA"
+msgstr ""
+"Три команды, возглавляемые известными блогерами, сражаются в решающей "
+"схватке. Участвуйте в эпическом противостоянии и присоединяйтесь к одной из "
+"команд, чтобы внести вклад в её победу."
+
+msgid "selectorTooltip/desc/EU"
+msgstr ""
+"Четыре команды, возглавляемые известными блогерами, сражаются в решающей "
+"схватке. Участвуйте в эпическом противостоянии и присоединяйтесь к одной из "
+"команд, чтобы внести вклад в её победу."
+
+msgid "selectorTooltip/desc/NA"
+msgstr ""
+"Три команды, возглавляемые известными блогерами, сражаются в решающей "
+"схватке. Участвуйте в эпическом противостоянии и присоединяйтесь к одной из "
+"команд, чтобы внести вклад в её победу."
+
+msgid "selectorTooltip/desc/RU"
+msgstr ""
+"Четыре команды, возглавляемые известными блогерами, сражаются в решающей "
+"схватке. Участвуйте в эпическом противостоянии и присоединяйтесь к одной из "
+"команд, чтобы внести вклад в её победу."
+
+msgid "selectorTooltip/tillEnd"
+msgstr "До конца события:"
+
+msgid "selectorTooltip/timeTable/empty"
+msgstr "—"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "Расписание боёв"
+
+msgid "selectorTooltip/timeTable/today"
+msgstr "Сегодня"
+
+msgid "selectorTooltip/timeTable/tomorrow"
+msgstr "Завтра"
+
+msgid "selectorTooltip/title"
+msgstr "Битва блогеров 2025"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Начислены награды за участие в Битве блогеров 2025"
+
+msgid "skill/battle_rush"
+msgstr "Стремительный бой"
+
+msgid "skill/default"
+msgstr "Навык не активен"
+
+msgid "skill/description/battle_rush"
+msgstr "Команде нужно победить в первые 4 минуты боя."
+
+msgid "skill/description/default"
+msgstr "Навык не активирован"
+
+msgid "skill/description/morale_boost"
+msgstr "Игроки команды получают дополнительные очки по итогам боя."
+
+msgid "skill/description/raid"
+msgstr ""
+"Игроки могут атаковать противоположную команду. При победе часть очков "
+"прогрессии противника перейдёт атакующим."
+
+msgid "skill/description/risky_attack"
+msgstr ""
+"Команде нужно набрать определённое количество очков за час. В случае успеха "
+"ей будут начислены бонусные очки опыта."
+
+msgid "skill/description/saving_battle"
+msgstr "Команде нужно победить, потеряв не более двух машин."
+
+msgid "skill/description/territory_control"
+msgstr "Игрокам нужно одержать победу, захватив базу противника."
+
+msgid "skill/description/war_never_changes"
+msgstr "Игрокам нужно победить, уничтожив всю технику противника."
+
+msgid "skill/morale_boost"
+msgstr "Воодушевление"
+
+msgid "skill/raid"
+msgstr "Налёт"
+
+msgid "skill/risky_attack"
+msgstr "Рискованная атака"
+
+msgid "skill/saving_battle"
+msgstr "Сохранность матчасти"
+
+msgid "skill/territory_control"
+msgstr "Контроль территории"
+
+msgid "skill/timeLeft/days"
+msgstr "%(day)s д."
+
+msgid "skill/timeLeft/hours"
+msgstr "%(hour)s ч."
+
+msgid "skill/timeLeft/lessMin"
+msgstr "1 мин."
+
+msgid "skill/timeLeft/min"
+msgstr "%(min)s мин."
+
+msgid "skill/war_never_changes"
+msgstr "Решительное наступление"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s д."
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s ч."
+
+msgid "status/timeLeft/lessMin"
+msgstr "1 мин."
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s мин."
+
+msgid "systemMessage/notAvailable"
+msgstr "Режим «Битва блогеров» недоступен"
+
+msgid "systemMessage/notAvailable/primeTimeNotSet"
+msgstr "Бои Битвы блогеров недоступны на выбранном сервере."
+
+msgid "systemMessage/primeTime/battlesAvailable"
+msgstr "Режим прекращения огня окончен: бои Битвы блогеров снова доступны."
+
+msgid "systemMessage/primeTime/battlesUnavailable"
+msgstr "Бои Битвы блогеров недоступны до окончания режима прекращения огня."
+
+msgid "systemMessage/squad/notRegistered"
+msgstr "Необходимо зарегистрироваться в событии «Битва блогеров»"
+
+msgid "teamReward/title"
+msgstr "ПОЛУЧЕНА НАГРАДА!"
+
+msgid "teamReward/title/vehicle"
+msgstr "МАШИНА В АРЕНДУ!"
+
+msgid "widget/blogger_1"
+msgstr "Jove"
+
+msgid "widget/blogger_2"
+msgstr "LeBwa"
+
+msgid "widget/blogger_3"
+msgstr "Near_You"
+
+msgid "widget/blogger_4"
+msgstr "Yusha"
+
+msgid "widget/skill/inactive"
+msgstr "Навыки не активированы"
+
+msgid "widget/tooltip/activatedSkill/count"
+msgstr "Навык можно активировать ещё раз: %(countLeft)s"
+
+msgid "widget/tooltip/activatedSkill/title"
+msgstr "%(skillName)s"
+
+msgid "widget/tooltip/blogger_1"
+msgstr "Jove"
+
+msgid "widget/tooltip/blogger_2"
+msgstr "LeBwa"
+
+msgid "widget/tooltip/blogger_3"
+msgstr "Near_You"
+
+msgid "widget/tooltip/blogger_4"
+msgstr "Yusha"
+
+msgid "widget/tooltip/disabledSkill/description"
+msgstr ""
+"Навыки могут активировать только капитаны команд. Грамотная реализация "
+"навыков может обеспечить вашей команде дополнительные очки."
+
+msgid "widget/tooltip/disabledSkill/descriptionForBlogger"
+msgstr ""
+"Активируйте навыки, чтобы ваша команда могла заработать дополнительные очки."
+
+msgid "widget/tooltip/disabledSkill/title"
+msgstr "Навыки не активированы"
+
+msgid "widget/tooltip/progression/column/place"
+msgstr "Позиция"
+
+msgid "widget/tooltip/progression/column/progress"
+msgstr "Очки"
+
+msgid "widget/tooltip/progression/column/team"
+msgstr "Команда"
+
+msgid "widget/tooltip/progression/description"
+msgstr "Повышайте уровень, сражаясь в боях Битвы блогеров 2025."
+
+msgid "widget/tooltip/progression/level"
+msgstr "Ваш уровень: %(level)s"
+
+msgid "widget/tooltip/progression/personalReward"
+msgstr "Доступна личная награда: "
+
+msgid "widget/tooltip/progression/title"
+msgstr "Прогресс команд"
+
+msgid "widget/tooltip/progression/updateData"
+msgstr "Данные обновляются раз в несколько минут"
+
+msgid "widget/tooltip/progression/waitFirstResults"
+msgstr "Первые результаты появятся, когда команды проведут несколько боёв"

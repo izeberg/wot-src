@@ -1,8 +1,9 @@
 import typing
-from constants import QUEST_PROGRESS_STATE
+from constants import QUEST_PROGRESS_STATE, VEHICLE_CLASSES
 from gui.Scaleform.genConsts.QUESTSPROGRESS import QUESTSPROGRESS
 from gui.Scaleform.genConsts.QUEST_PROGRESS_BASE import QUEST_PROGRESS_BASE
 from gui.Scaleform.locale.QUESTS import QUESTS
+from gui.shared.gui_items.Vehicle import VEHICLE_TYPES_ORDER
 from gui.impl import backport
 from helpers.time_utils import ONE_MINUTE
 
@@ -12,6 +13,7 @@ class METRICS_TYPES(object):
     RANGE_VALUE = QUEST_PROGRESS_BASE.QP_METRIC_TYPE_RANGE
     VEHICLES_VALUE = QUEST_PROGRESS_BASE.QP_METRIC_TYPE_VEHICLES
     TIMER_VALUE = QUEST_PROGRESS_BASE.QP_METRIC_TYPE_TIMER
+    VEHICLES_RANGE_VALUE = QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_TYPE_RANGE
 
 
 def wrapSimple(_):
@@ -19,10 +21,13 @@ def wrapSimple(_):
 
 
 def wrapRangeValue(progress):
-    return {'title': QUESTS.METRICS_TITLE_PROGRESS, 
-       'value': _formatValue(progress.getCurrent()), 
-       'goal': _formatValue(progress.getGoal()), 
-       'mType': METRICS_TYPES.RANGE_VALUE}
+    if progress.getProgressID() == 'killsDiversity' and progress.isCumulative():
+        return None
+    else:
+        return {'title': QUESTS.METRICS_TITLE_PROGRESS, 
+           'value': _formatValue(progress.getCurrent()), 
+           'goal': _formatValue(progress.getGoal()), 
+           'mType': METRICS_TYPES.RANGE_VALUE}
 
 
 def wrapCurrentValue(progress):
@@ -30,7 +35,14 @@ def wrapCurrentValue(progress):
 
 
 def wrapVehiclesValue(progress):
-    return _wrapVehiclesValue(QUESTS.METRICS_TITLE_DONE, progress.getCurrent(), progress.getDoneTargets())
+    vehTypesCount = progress.getUniqueGoal()
+    totalTypesCount = len(VEHICLE_CLASSES)
+    totalGoal = progress.getTotalGoal()
+    doneTargets = progress.getDoneTargets()
+    if (progress.isCumulative() or vehTypesCount == totalTypesCount) and totalGoal % 5 == 0:
+        goal = totalGoal / vehTypesCount
+        return _wrapRangeVehiclesValue(totalGoal, progress.getCounter(), goal)
+    return _wrapVehiclesValue(QUESTS.METRICS_TITLE_DONE, progress.getCurrent(), doneTargets)
 
 
 def wrapLimiterValue(progress):
@@ -55,6 +67,31 @@ def _wrapSimpleValue(title, value):
     return {'title': title, 
        'value': value, 
        'mType': METRICS_TYPES.SIMPLE_VALUE}
+
+
+def _wrapRangeVehiclesValue(goal, counter, currentGoal):
+    vehTypes = [
+     QUESTSPROGRESS.QP_DOT]
+    doneTargets = []
+    totalValue = 0
+    for vType, vCount in counter.iteritems():
+        if vCount:
+            totalValue += min(vCount, currentGoal)
+            doneTargets.append(vType)
+
+    if doneTargets:
+        vehTypes = [ QUESTSPROGRESS.getQPOrangeVehicleType(vehType) for vehType in doneTargets ]
+    all = []
+    for vehType in VEHICLE_TYPES_ORDER:
+        all.append({'mType': METRICS_TYPES.VEHICLES_RANGE_VALUE, 
+           'value': _formatValue(totalValue), 
+           'goal': _formatValue(goal), 
+           'vehicleTypes': vehTypes, 
+           'vehType': QUESTSPROGRESS.getQPOrangeVehicleType(vehType), 
+           'currentGoal': _formatValue(currentGoal), 
+           'currentValue': _formatValue(min(counter.get(vehType, 0), currentGoal))})
+
+    return all
 
 
 def _wrapVehiclesValue(title, current, targets):

@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.528968 0.432893 -3.235713</row3>
+					<row3>-0.533639 0.486650 -3.182437</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.651610 0.561814 1.644074</row3>
+					<row3>-0.656281 0.615571 1.697351</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>-1.410090 0.152683 3.456540</row3>
+					<row3>-1.414761 0.206440 3.509817</row3>
 				</transform>
 			</node>
 			<node>
@@ -49,7 +49,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>-1.410090 0.160573 -3.429546</row3>
+					<row3>-1.414761 0.214330 -3.376269</row3>
 				</transform>
 			</node>
 			<node>
@@ -58,7 +58,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>1.410568 0.154442 3.458911</row3>
+					<row3>1.405897 0.208199 3.512187</row3>
 				</transform>
 			</node>
 			<node>
@@ -67,7 +67,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>1.410568 0.160739 -3.430552</row3>
+					<row3>1.405897 0.214495 -3.377275</row3>
 				</transform>
 			</node>
 			<node>
@@ -76,7 +76,7 @@
 					<row0>0.020446 0.998249 0.055512</row0>
 					<row1>0.999790 -0.020478 -0.000000</row1>
 					<row2>0.001137 0.055501 -0.998458</row2>
-					<row3>-1.200144 0.333757 -3.681940</row3>
+					<row3>-1.204815 0.387514 -3.628664</row3>
 				</transform>
 			</node>
 			<node>
@@ -85,7 +85,7 @@
 					<row0>-0.020513 0.999789 0.001224</row0>
 					<row1>0.998014 0.020550 -0.059540</row1>
 					<row2>-0.059552 -0.000000 -0.998225</row2>
-					<row3>1.200004 0.333757 -3.681940</row3>
+					<row3>1.195333 0.387514 -3.628664</row3>
 				</transform>
 			</node>
 			<node>
@@ -94,7 +94,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000070 0.513345 -0.221939</row3>
+					<row3>-0.004741 0.567102 -0.168663</row3>
 				</transform>
 			</node>
 		</node>
@@ -114,7 +114,10 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
+						<Vector4>
+							3.50685 3.50685 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -146,6 +149,14 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>false</Bool>
+					</property>
+					<property>
 						metallicGlossMap
 						<Texture>vehicles/czech/Cz36_Lisak_v2/Lisak_v2_hull_01_GMM.dds</Texture>
 					</property>
@@ -160,14 +171,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz36_Lisak_v2/Lisak_v2_hull_01_AO.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.011089 -0.037161 -0.057367</groupOrigin>

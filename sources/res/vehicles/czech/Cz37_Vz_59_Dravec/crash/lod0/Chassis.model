@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.666129 -0.000003 -3.682296</min>
+		<max>1.665987 1.173407 4.114746</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod0/Chassis</nodefullVisual>
+</root>

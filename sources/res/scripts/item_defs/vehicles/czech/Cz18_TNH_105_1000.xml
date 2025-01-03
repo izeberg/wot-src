@@ -78,7 +78,7 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>125</armor_1>
+			<armor_1>130</armor_1>
 			<armor_2>145</armor_2>
 			<armor_3>80</armor_3>
 			<armor_4>55</armor_4>
@@ -99,7 +99,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22083</weight>
-		<maxHealth>1160</maxHealth>
+		<maxHealth>1100</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -5008,7 +5008,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11200</weight>
-			<maxHealth>290</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>27</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5123,13 +5123,16 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>12</reloadTime>
+					<reloadTime>
+						10.5
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
-						2.9
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -5326,13 +5329,13 @@
 						<count>2</count>
 						<rate>24</rate>
 					</clip>
-					<reloadTime>25</reloadTime>
+					<reloadTime>21</reloadTime>
 					<aimingTime>
-						2.9
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.44
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -6443,7 +6446,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11400</weight>
-			<maxHealth>340</maxHealth>
+			<maxHealth>450</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -6572,13 +6575,13 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>11</reloadTime>
+					<reloadTime>10</reloadTime>
 					<aimingTime>
-						2.7
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -6785,13 +6788,13 @@
 						<count>2</count>
 						<rate>24</rate>
 					</clip>
-					<reloadTime>23</reloadTime>
+					<reloadTime>20</reloadTime>
 					<shotDispersionRadius>
 						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

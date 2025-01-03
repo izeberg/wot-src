@@ -23,5 +23,7 @@ package net.wg.gui.components.questProgress.interfaces.data
       function get questID() : int;
       
       function get isHeaderHasProgress() : Boolean;
+      
+      function get isMainOnly() : Boolean;
    }
 }

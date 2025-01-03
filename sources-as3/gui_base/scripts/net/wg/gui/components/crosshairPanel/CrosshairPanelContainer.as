@@ -163,7 +163,9 @@ package net.wg.gui.components.crosshairPanel
       
       private var _overheatProgress:Number = 0.0;
       
-      private var _isOverheated:Boolean = false;
+      private var _overheatTimeLeft:Number = 0.0;
+      
+      private var _isOverheatSnapshot:Boolean = false;
       
       private var _sniperCameraTransitionFx:CrosshairPanelSniperCameraTransitionFx = null;
       
@@ -397,6 +399,15 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setFlameDistanceVisibility(param1:Boolean) : void
+      {
+         var _loc2_:ICrosshair = null;
+         for each(_loc2_ in this._crosshairs)
+         {
+            _loc2_.setFlameDistanceVisibility(param1);
+         }
+      }
+      
       public function as_removeSpeedometer() : void
       {
          if(this._speedometer)
@@ -577,11 +588,12 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setOverheatProgress(param1:Number, param2:Boolean) : void
+      public function as_setOverheatProgress(param1:Number, param2:Number, param3:Boolean) : void
       {
          this._overheatProgress = param1;
-         this._isOverheated = param2;
-         this._currentCrosshair.setOverheatProgress(param1,param2);
+         this._overheatTimeLeft = param2;
+         this._isOverheatSnapshot = param3;
+         this._currentCrosshair.setOverheatProgress(param1,param2,false,param3);
       }
       
       public function as_setReloading(param1:Number, param2:Number, param3:Number, param4:Boolean) : void
@@ -747,7 +759,7 @@ package net.wg.gui.components.crosshairPanel
             this._currentCrosshair.visible = true;
             this._currentCrosshair.setVisibleNet(this._visibleNet);
             this._currentCrosshair.setNetSeparatorVisible(this._visibleNetSeparator);
-            this._currentCrosshair.setOverheatProgress(this._overheatProgress,this._isOverheated,true);
+            this._currentCrosshair.setOverheatProgress(this._overheatProgress,this._overheatTimeLeft,true,this._isOverheatSnapshot);
             if(_loc3_)
             {
                this._currentCrosshair.autoloaderBoostUpdate(_loc3_,0,true);

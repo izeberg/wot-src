@@ -17,6 +17,21 @@ if typing.TYPE_CHECKING:
     from gui.server_events.bonuses import SimpleBonus
 _logger = logging.getLogger(__name__)
 
+class NewYearLootBoxes(CONST_CONTAINER):
+    PREMIUM = 'newYear_premium'
+    SPECIAL = 'newYear_special'
+    SPECIAL_AUTO = 'newYear_special_auto'
+    COMMON = 'newYear_usual'
+    SURPRISE_COIN = 'ny_2025_surprise'
+
+
+class NewYearCategories(CONST_CONTAINER):
+    NEWYEAR = 'NewYear'
+    CHRISTMAS = 'Christmas'
+    ORIENTAL = 'Oriental'
+    FAIRYTALE = 'Fairytale'
+
+
 class EventCategories(CONST_CONTAINER):
     EVENT = 'Event'
 
@@ -44,9 +59,20 @@ class ReferralProgramLootBoxes(CONST_CONTAINER):
     SPECIAL = 'special_referral'
 
 
+ALL_LUNAR_NY_LOOT_BOX_TYPES = (
+ 'lunar_base', 'lunar_simple', 'lunar_special')
+LUNAR_NY_LOOT_BOXES_CATEGORIES = 'LunarNY'
 SENIORITY_AWARDS_LOOT_BOXES_TYPE = 'seniorityAwards'
 EVENT_LOOT_BOXES_CATEGORY = 'eventLootBoxes'
 REFERRAL_PROGRAM_CATEGORY = 'referralProgram'
+GUI_ORDER_NY = (
+ NewYearLootBoxes.COMMON,
+ NewYearLootBoxes.PREMIUM)
+CATEGORIES_GUI_ORDER_NY = (
+ NewYearCategories.NEWYEAR,
+ NewYearCategories.CHRISTMAS,
+ NewYearCategories.ORIENTAL,
+ NewYearCategories.FAIRYTALE)
 _BONUS_GROUPS = {BonusGroup.VEHICLE: ipTypeGroup.VEHICLE, 
    BonusGroup.PREMIUM: (
                       ipType.CUSTOM_PREMIUM_PLUS,), 
@@ -71,7 +97,6 @@ _GROUP_PRIORITIES = [
 class ClientLootBoxTags(Enum):
     HIDDEN_COUNT = 'hiddenCount'
     HIDDEN = 'hidden'
-    ALWAYS_SHOW = 'alwaysShow'
 
 
 def addBonusesToGroup(bonusGroup, bonuses):
@@ -83,7 +108,7 @@ class LootBox(GUIItem):
                  '__slotBonuses', '__guaranteedFrequencyName', '__tier', '__isEnabled',
                  '__userNameKey', '__iconName', '__description', '__videoKey', '__weight',
                  '__bonusGroups', '__autoOpenTime', '__rotationLists', '__config',
-                 '__rotationStage', '__tags', '__unlockKeys', '__manualMaxOpenCount')
+                 '__rotationStage', '__tags', '__unlockKeys')
 
     def __init__(self, lootBoxID, lootBoxConfig, invCount):
         super(LootBox, self).__init__()
@@ -106,20 +131,14 @@ class LootBox(GUIItem):
     def isActiveHiddenCount(self):
         return self.isHiddenCount() and self.__getTimeToAutoOpen() > 0
 
-    def isActiveAlwaysShow(self):
-        return self.isAlwaysShow() and self.__getTimeToAutoOpen() > 0
-
     def isHiddenCount(self):
         return ClientLootBoxTags.HIDDEN_COUNT.value in self.__tags
-
-    def isAlwaysShow(self):
-        return ClientLootBoxTags.ALWAYS_SHOW.value in self.__tags
 
     def isVisible(self):
         return ClientLootBoxTags.HIDDEN.value not in self.__tags
 
     def isVisibleInStorage(self):
-        return self.isVisible() and (self.getInventoryCount() > 0 or self.isActiveHiddenCount() or self.isActiveAlwaysShow())
+        return self.isVisible() and (self.getInventoryCount() > 0 or self.isActiveHiddenCount())
 
     def openedWithKey(self, keyID=None):
         if keyID:
@@ -179,11 +198,6 @@ class LootBox(GUIItem):
             return self.__autoOpenTime
         return 0
 
-    def getManualMaxOpenCount(self):
-        if self.__manualMaxOpenCount:
-            return self.__manualMaxOpenCount
-        return 0
-
     def getCategory(self):
         return self.__category
 
@@ -194,7 +208,7 @@ class LootBox(GUIItem):
         return self.__weight
 
     def isFree(self):
-        return self.__type in ('newYear_usual', 'ny_2024_VI')
+        return self.__type == NewYearLootBoxes.COMMON
 
     def isEnabled(self):
         return self.__isEnabled
@@ -241,18 +255,6 @@ class LootBox(GUIItem):
     def getRotationStage(self):
         return self.__rotationStage
 
-    def isMultipleStage(self):
-        return len(self.__rotationLists) > 1
-
-    def isVehicleGuaranteedOnly(self):
-        for slot in self.__iterateAllSlots():
-            guaranteedRewards = slot['limitIDsMap'].get(self.getGuaranteedFrequencyName(), [])
-            for reward in guaranteedRewards:
-                if reward.getName() not in ('vehicles', 'battleToken'):
-                    return False
-
-        return True
-
     def __getTimeToAutoOpen(self):
         if self.__autoOpenTime:
             return max(self.__autoOpenTime - time_utils.getServerUTCTime(), 0)
@@ -282,7 +284,6 @@ class LootBox(GUIItem):
         self.__videoKey = assetsConfig.get('video', '')
         self.__tags = assetsConfig.get('tags', set())
         self.__unlockKeys = lootBoxConfig.get('unlockKeys', set())
-        self.__manualMaxOpenCount = lootBoxConfig.get('manualMaxOpenCount')
         return
 
     def __iterateAllSlots(self):

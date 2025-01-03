@@ -2,12 +2,19 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
 {
    import flash.display.MovieClip;
    import net.wg.data.constants.VehicleStatus;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class FCVehicleMarker extends MovieClip implements IDisposable
    {
       
       private static const LAST_ANIM_FRAME:int = 12;
+      
+      private static const PREFIX:String = "fb_";
+      
+      private static const NORMAL_STATE:String = "Normal";
+      
+      private static const DESTROYED_STATE:String = "Destroyed";
       
       private static const NORMAL_FRAME_NAME:String = "normal";
       
@@ -20,9 +27,9 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       
       public var vehicleLevel:int = -1;
       
-      public var normalMarker:MovieClip = null;
+      public var normalMarker:BattleAtlasSprite = null;
       
-      public var destroyedMarker:MovieClip = null;
+      public var destroyedMarker:BattleAtlasSprite = null;
       
       private var _vehicleStatus:int = -1;
       
@@ -37,6 +44,8 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       public function FCVehicleMarker()
       {
          super();
+         this.normalMarker.isCentralize = true;
+         this.destroyedMarker.isCentralize = true;
       }
       
       public final function dispose() : void
@@ -50,6 +59,11 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
          this.update(param2,param3,param5,param4);
          addFrameScript(LAST_ANIM_FRAME,this.updateVehicleIDs);
          this._vehicleMarkerAnimFinishedHandler = param6;
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._isDisposed;
       }
       
       public function update(param1:String, param2:int, param3:int, param4:String) : void
@@ -125,19 +139,14 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       
       private function redraw() : void
       {
-         this.normalMarker.gotoAndStop(this._color + this._vehicleType);
-         this.destroyedMarker.gotoAndStop(this._color + this._vehicleType);
+         this.normalMarker.imageName = PREFIX + this._color + this._vehicleType + NORMAL_STATE;
+         this.destroyedMarker.imageName = PREFIX + this._color + this._vehicleType + DESTROYED_STATE;
       }
       
       public function set color(param1:String) : void
       {
          this._color = param1;
          this.redraw();
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._isDisposed;
       }
    }
 }

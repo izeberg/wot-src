@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A170_M4A3FL/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.451757 0.000482 -2.938541</min>
+		<max>1.451757 1.078031 2.691036</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A170_M4A3FL/normal/lod3/Chassis</nodefullVisual>
+</root>

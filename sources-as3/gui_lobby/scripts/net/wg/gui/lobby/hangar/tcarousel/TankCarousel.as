@@ -9,6 +9,7 @@ package net.wg.gui.lobby.hangar.tcarousel
    import net.wg.data.constants.Values;
    import net.wg.gui.components.carousels.events.TankItemEvent;
    import net.wg.gui.components.carousels.filters.TankCarouselFilters;
+   import net.wg.gui.components.controls.BitmapFill;
    import net.wg.gui.components.controls.events.RendererEvent;
    import net.wg.gui.components.controls.scroller.data.ScrollConfig;
    import net.wg.gui.lobby.hangar.tcarousel.helper.ITankCarouselHelper;
@@ -24,8 +25,6 @@ package net.wg.gui.lobby.hangar.tcarousel
       private static const HELP_ID_SEPARATOR:String = "_";
       
       private static const FILTERS_WIDTH:Number = 58;
-      
-      private static const ARROW_WIDTH:Number = 24;
       
       private static const ELASTICITY:Number = 0.25;
       
@@ -59,12 +58,22 @@ package net.wg.gui.lobby.hangar.tcarousel
       
       private static const INVALID_SCROLL_POS:String = "InvalidScrollPos";
       
+      private static const FADE_MASK_LABEL_SMALL:String = "small";
+      
+      private static const FADE_MASK_LABEL_LARGE:String = "large";
+      
       private static const OPTIMIZE_OFFSET:int = 10;
+      
+      private static const BG_ALPHA:Number = 0.8;
        
       
       public var vehicleFilters:TankCarouselFilters = null;
       
       public var background:MovieClip = null;
+      
+      public var tiledBackgroundCenter:BitmapFill = null;
+      
+      public var tiledBackgroundTop:BitmapFill = null;
       
       private var _carouselHelpLayoutId:String = null;
       
@@ -105,12 +114,13 @@ package net.wg.gui.lobby.hangar.tcarousel
             _loc3_ += _loc4_;
          }
          _loc5_ = param1 - _loc3_ - OFFSET_ARROW - this._rightMargin;
-         this.background.width = param1;
+         this.background.width = this.tiledBackgroundCenter.widthFill = this.tiledBackgroundTop.widthFill = param1;
          var _loc6_:int = _loc5_ + leftArrowOffset - rightArrowOffset;
          super.updateLayout(_loc5_,(_loc5_ - _loc6_ >> 1) + _loc3_);
          leftArrow.x = !!this.vehicleFilters.visible ? Number(param2 + _loc4_ + OFFSET_ARROW) : Number(OFFSET_ARROW);
-         startFadeMask.x = scrollList.x = leftArrow.x + ARROW_WIDTH + OFFSET_CAROUSEL;
-         endFadeMask.x = rightArrow.x - rightArrow.width - endFadeMask.width >> 0;
+         scrollList.x = leftArrow.x + leftArrow.width + OFFSET_CAROUSEL;
+         startFadeMask.x = leftArrow.x + leftArrow.width;
+         endFadeMask.x = rightArrow.x - rightArrow.width;
       }
       
       override protected function configUI() : void
@@ -141,9 +151,12 @@ package net.wg.gui.lobby.hangar.tcarousel
          addEventListener(TankItemEvent.SELECT_TELECOM_VEHICLE,this.onSelectTelecomVehicleHandler);
          this.vehicleFilters.addEventListener(RendererEvent.ITEM_CLICK,this.onVehicleFiltersItemClickHandler);
          this.vehicleFilters.addEventListener(Event.RESIZE,this.onVehicleFiltersResizeHandler);
-         this.background.mouseEnabled = false;
-         this.background.mouseChildren = false;
+         this.background.mouseEnabled = this.background.mouseChildren = false;
+         this.tiledBackgroundCenter.mouseEnabled = this.tiledBackgroundCenter.mouseChildren = false;
+         this.tiledBackgroundTop.mouseEnabled = this.tiledBackgroundTop.mouseChildren = false;
          App.utils.commons.addEmptyHitArea(this.background);
+         App.utils.commons.addEmptyHitArea(this.tiledBackgroundCenter);
+         App.utils.commons.addEmptyHitArea(this.tiledBackgroundTop);
          mouseEnabled = false;
          App.utils.helpLayout.registerComponent(this);
       }
@@ -211,6 +224,12 @@ package net.wg.gui.lobby.hangar.tcarousel
          this.vehicleFilters = null;
          this.background.hitArea = null;
          this.background = null;
+         this.tiledBackgroundCenter.hitArea = null;
+         this.tiledBackgroundCenter.dispose();
+         this.tiledBackgroundCenter = null;
+         this.tiledBackgroundTop.hitArea = null;
+         this.tiledBackgroundTop.dispose();
+         this.tiledBackgroundTop = null;
          this._helper = null;
          super.onDispose();
       }
@@ -404,9 +423,11 @@ package net.wg.gui.lobby.hangar.tcarousel
          var _loc5_:int = this._helper.padding.top;
          scrollList.y = _loc5_;
          this.background.height = -this.background.y + this._listVisibleHeight + _loc5_ + this._helper.padding.bottom;
+         this.tiledBackgroundCenter.heightFill = this.background.height;
          leftArrow.height = rightArrow.height = this._listVisibleHeight;
-         startFadeMask.height = endFadeMask.height = this._listVisibleHeight + _loc5_;
-         startFadeMask.y = endFadeMask.y = 0;
+         var _loc6_:String = this.isSmallDoubleCarouselEnabled || this.rowCount < 2 ? FADE_MASK_LABEL_SMALL : FADE_MASK_LABEL_LARGE;
+         startFadeMask.gotoAndStop(_loc6_);
+         endFadeMask.gotoAndStop(_loc6_);
          leftArrow.y = _loc5_;
          rightArrow.y = _loc5_ + this._listVisibleHeight;
          this.vehicleFilters.height = this._listVisibleHeight;
@@ -430,6 +451,11 @@ package net.wg.gui.lobby.hangar.tcarousel
       public function get isSmall() : Boolean
       {
          return !(this._helper is TankCarouselHelper && this._rowCount > 1);
+      }
+      
+      public function set isUiEffectsEnabled(param1:Boolean) : void
+      {
+         this.background.alpha = !!param1 ? Number(BG_ALPHA) : Number(1);
       }
       
       private function onSelectTelecomVehicleHandler(param1:TankItemEvent) : void

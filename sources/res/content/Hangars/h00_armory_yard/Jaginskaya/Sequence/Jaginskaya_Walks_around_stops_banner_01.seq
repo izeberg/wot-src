@@ -25,7 +25,7 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>jaginskaya_banner_sound</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
@@ -41,9 +41,9 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.466667</startTime>
-				<duration>29.233334</duration>
+				<duration>29.223749</duration>
 				<sequenceSound>ay_vo_jaginskaya_banner</sequenceSound>
-				<type>one_shot</type>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

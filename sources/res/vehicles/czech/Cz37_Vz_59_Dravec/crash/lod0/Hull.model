@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.794130 -0.964467 -3.409906</min>
+		<max>1.728481 0.616202 3.316196</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod0/Hull</nodefullVisual>
+</root>

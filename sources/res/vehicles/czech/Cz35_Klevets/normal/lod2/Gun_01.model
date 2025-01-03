@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz35_Klevets/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.401560 -0.680047 -0.188038</min>
+		<max>0.401560 0.689425 7.904809</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz35_Klevets/normal/lod2/Gun_01</nodefullVisual>
+</root>

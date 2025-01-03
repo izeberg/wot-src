@@ -1,4 +1,7 @@
-from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent
+from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 
-class BattleNotifierMeta(BaseDAAPIComponent):
-    pass
+class BattleNotifierMeta(InjectComponentAdaptor):
+
+    def as_updateVisibilityS(self, isVisible):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateVisibility(isVisible)

@@ -1266,7 +1266,7 @@
 			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.1
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
@@ -4003,7 +4003,7 @@
 						</armor_8>
 						<gun>40</gun>
 					</armor>
-					<turretYawLimits>-110 110</turretYawLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -4012,7 +4012,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.33
+						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>

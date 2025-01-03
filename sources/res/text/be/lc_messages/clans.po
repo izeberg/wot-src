@@ -36,7 +36,13 @@ msgid "banner/timeLeft/min"
 msgstr "%(min)s хв"
 
 msgid "banner/title"
-msgstr "СПРЫНТ"
+msgstr "КЛАНОВЫЙ СЕЗОН"
+
+msgid "banner/type/gm"
+msgstr "Этап {stage}: Глобальная карта"
+
+msgid "banner/type/maneuvers"
+msgstr "Этап {stage}: Спринт"
 
 msgid "clan/header/chatChannelBtn"
 msgstr "Чат клана"

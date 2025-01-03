@@ -5,5 +5,7 @@ package net.wg.infrastructure.base.meta
    public interface IBattleNotifierMeta extends IEventDispatcher
    {
        
+      
+      function as_updateVisibility(param1:Boolean) : void;
    }
 }

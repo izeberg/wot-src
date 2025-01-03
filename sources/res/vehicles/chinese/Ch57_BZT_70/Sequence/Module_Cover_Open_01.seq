@@ -24,5 +24,29 @@
 			</frame>
 		</track>
 	</sequenceObject>
+	<sequenceObject>
+		<name>ability_verni_vistrel_device_open_gameplay</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>0.966667</duration>
+				<value>Root|Module_cover</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>0.966667</duration>
+				<sequenceSound>ability_verni_vistrel_device_open</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
 	<events/>
 </root>

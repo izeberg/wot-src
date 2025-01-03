@@ -408,6 +408,16 @@ package net.wg.gui.lobby.techtree.nodes
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.COLLECTIBLE) > 0;
       }
       
+      public function isResetParagons() : Boolean
+      {
+         return this._nodeData != null && this._nodeData.isResetParagons;
+      }
+      
+      public function isLockedByParagons() : Boolean
+      {
+         return this._nodeData != null && this._nodeData.isLockedByParagons;
+      }
+      
       public function isElite() : Boolean
       {
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.ELITE) > 0;
@@ -504,7 +514,7 @@ package net.wg.gui.lobby.techtree.nodes
       {
          var _loc2_:String = null;
          this.vehicleButton.setData(this._data.vehicleButton);
-         this.blueprintBar.enabled = !this.isEarlyAccess();
+         this.blueprintBar.enabled = !this.isEarlyAccess() && !this.isLockedByParagons();
          this.blueprintBar.mouseEnabledOnDisabled = true;
          if(this.isEarlyAccess())
          {

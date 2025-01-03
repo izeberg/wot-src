@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz35_Klevets/crash/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.601706 -0.041426 -2.211402</min>
+		<max>1.828732 2.091570 1.532204</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz35_Klevets/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

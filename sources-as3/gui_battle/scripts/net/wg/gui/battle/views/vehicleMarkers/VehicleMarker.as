@@ -359,19 +359,28 @@ package net.wg.gui.battle.views.vehicleMarkers
          this._objectiveActionMarker = param1 != Values.EMPTY_STR ? param1 + ALTERNATIVE : param1;
       }
       
+      public function hideAbilityPyrometer() : void
+      {
+      }
+      
       public function hideArtyMarker() : void
       {
       }
       
-      public function hideStatusMarker(param1:int, param2:int, param3:Boolean = false, param4:Boolean = false) : void
+      public function hideDetectedByPyrometer() : void
       {
-         this.statusContainer.hideMarker(param1,param2,param3,param4);
-         this.updateMarkerSettings();
+         this.actionMarker.hidePyrometer();
       }
       
       public function hideSeparateMarker(param1:int, param2:Boolean = false) : void
       {
          this.statusContainer.hideAbilityMarker(param1,param2);
+         this.updateMarkerSettings();
+      }
+      
+      public function hideStatusMarker(param1:int, param2:int, param3:Boolean = false, param4:Boolean = false) : void
+      {
+         this.statusContainer.hideMarker(param1,param2,param3,param4);
          this.updateMarkerSettings();
       }
       
@@ -524,7 +533,6 @@ package net.wg.gui.battle.views.vehicleMarkers
             _loc17_ = 1;
          }
          this._maxHealthMult = MAX_HEALTH_PERCENT / _loc17_;
-         this.statusContainer.setSecondString(this.model.locSecString);
          if(this.model.entityName != Values.EMPTY_STR)
          {
             this._entityName = this.model.entityName;
@@ -553,6 +561,10 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.hitLabel.imitation = this.getIsPartVisible(DAMAGE_PANEL);
       }
       
+      public function showAbilityPyrometer() : void
+      {
+      }
+      
       public function showActionMarker(param1:String) : void
       {
          this.actionMarker.showAction(param1);
@@ -563,20 +575,26 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      public function showExInfo() : void
+      public function showDetectedByPyrometer(param1:Boolean = false, param2:int = 5000) : void
       {
+         this.actionMarker.showPyrometer(param1,param2);
          this.updateMarkerSettings();
       }
       
-      public function showStatusMarker(param1:int, param2:int, param3:Boolean, param4:Number, param5:int, param6:int, param7:Boolean = true, param8:Boolean = true) : void
+      public function showExInfo() : void
       {
-         this.statusContainer.showMarker(param1,param2,param3,param4,param5,param6,param7,param8);
          this.updateMarkerSettings();
       }
       
       public function showSeparateMarker(param1:int, param2:Boolean, param3:Number, param4:Boolean = true, param5:Boolean = true) : void
       {
          this.statusContainer.showAbilityMarker(param1,param2,param3,param4,param5);
+         this.updateMarkerSettings();
+      }
+      
+      public function showStatusMarker(param1:int, param2:int, param3:Boolean, param4:Number, param5:int, param6:int, param7:Boolean = true, param8:Boolean = true) : void
+      {
+         this.statusContainer.showMarker(param1,param2,param3,param4,param5,param6,param7,param8);
          this.updateMarkerSettings();
       }
       

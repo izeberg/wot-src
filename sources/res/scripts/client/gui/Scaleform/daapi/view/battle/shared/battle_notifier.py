@@ -1,6 +1,6 @@
 import logging
 from account_helpers.settings_core.settings_constants import GAME
-from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
+from gui.Scaleform.daapi.view.meta.BattleNotifierMeta import BattleNotifierMeta
 from gui.battle_control.controllers.arena_load_ctrl import IArenaLoadCtrlListener
 from gui.battle_control.controllers.battle_notifier_ctrl import IBattleNotifierListener
 from gui.impl.battle.battle_notifier.battle_notifier_view import BattleNotifierView
@@ -9,7 +9,7 @@ from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.lobby_context import ILobbyContext
 _logger = logging.getLogger(__name__)
 
-class BattleNotifier(InjectComponentAdaptor, IArenaLoadCtrlListener, IBattleNotifierListener):
+class BattleNotifier(BattleNotifierMeta, IArenaLoadCtrlListener, IBattleNotifierListener):
     __slots__ = ('__isArenaLoaded', '__isEnabledByServer')
     lobbyContext = dependency.descriptor(ILobbyContext)
     settingsCore = dependency.descriptor(ISettingsCore)
@@ -22,6 +22,7 @@ class BattleNotifier(InjectComponentAdaptor, IArenaLoadCtrlListener, IBattleNoti
     def _onPopulate(self):
         self.settingsCore.onSettingsChanged += self.__onSettingsChanged
         self._updateInjectedViewState()
+        self.as_updateVisibilityS(False)
 
     def _makeInjectView(self):
         return BattleNotifierView()
@@ -34,6 +35,7 @@ class BattleNotifier(InjectComponentAdaptor, IArenaLoadCtrlListener, IBattleNoti
 
     def resultsNotificationReceived(self, results):
         if self._injectView is not None:
+            self.as_updateVisibilityS(True)
             self._injectView.addBattleResults(results)
         return
 

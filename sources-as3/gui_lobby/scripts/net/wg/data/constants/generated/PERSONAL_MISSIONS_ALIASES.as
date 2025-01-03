@@ -7,11 +7,15 @@ package net.wg.data.constants.generated
       
       public static const PERSONAL_MISSIONS_MAP_VIEW_ALIAS:String = "PersonalMissionsMapView";
       
+      public static const PERSONAL_MISSIONS_PM_OLD_OPERATIONS:String = "PMOldOperations";
+      
+      public static const PERSONAL_MISSIONS_PM_OLD_OPERATIONS_LINKAGE:String = "PMOldOperationsUI";
+      
+      public static const PERSONAL_MISSIONS_PM3_OPERATIONS:String = "PM3Operations";
+      
+      public static const PERSONAL_MISSIONS_PM3_OPERATIONS_LINKAGE:String = "PM3OperationsUI";
+      
       public static const PERSONAL_MISSIONS_OPERATIONS:String = "PersonalMissionOperations";
-      
-      public static const PERSONAL_MISSIONS_OPERATIONS_PAGE_ALIAS:String = "PersonalMissionOperationsPage";
-      
-      public static const PERSONAL_MISSIONS2_OPERATIONS_PAGE_ALIAS:String = "PersonalMissionSeason2OperationsPage";
       
       public static const PERSONAL_MISSION_FIRST_ENTRY_VIEW_ALIAS:String = "PersonalMissionFirstEntryView";
       

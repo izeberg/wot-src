@@ -6320,6 +6320,12 @@
 				<_122mm_cannon_M-30S>
 					shared
 					<maxAmmo>39</maxAmmo>
+					<unlocks>
+						<vehicle>
+							R163_SU_122
+							<cost>27400</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							45

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/normal/lod3/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.465811 -0.322325 -0.509257</min>
+		<max>0.477050 0.546427 6.591670</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/normal/lod4/Gun_02</parent>
+</root>

@@ -166,6 +166,8 @@ package net.wg.data.constants.generated
       public static const COMP7_AGGRESSIVE_DETECTION_ICON:String = "Comp7AggressiveDetectionIconUI";
       
       public static const ABILITY_ICON:String = "secondaryAbilityIconUI";
+      
+      public static const THERMAL_VISION_WARNING:String = "thermalVisionWarningUI";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_LINKAGES()

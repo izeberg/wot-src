@@ -297,7 +297,7 @@ BATTLE_RESULTS = [
  (
   'eventEquipCoinList', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'eventCreditsFactor1000List', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+  'eventCreditsFactor100List', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
   'eventXPFactor100List', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
@@ -501,7 +501,7 @@ BATTLE_RESULTS = [
  (
   'questsProgress', dict, {}, None, 'joinDicts', ENTRY_TYPE.ACCOUNT_SELF),
  (
-  'PM2Progress', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+  'PMProgress', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
   'dogTags', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
@@ -658,7 +658,7 @@ BATTLE_RESULTS = [
  (
   'damagedVehicleCntAssistedStun', int, 0, None, 'sum', ENTRY_TYPE.SERVER),
  (
-  'isNotSpotted', bool, True, None, 'max', ENTRY_TYPE.SERVER),
+  'isNotSpotted', bool, True, None, 'min', ENTRY_TYPE.SERVER),
  (
   'isAnyHitReceivedWhileCapturing', bool, False, None, 'max', ENTRY_TYPE.SERVER),
  (
@@ -766,7 +766,17 @@ BATTLE_RESULTS = [
  (
   'teamSubscribersCount', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
-  'teamSubsBonusCredits', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF)]
+  'teamSubsBonusCredits', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'paragonCoins', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'originalParagonCoins', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'paragonCoinsReplay', str, '', ValueReplayPacker(), 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'paragonCoinsGrantedList', list, [], None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'paragonChapter', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF)]
 BATTLE_PASS_RESULTS = [
  (
   'bpChapter', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

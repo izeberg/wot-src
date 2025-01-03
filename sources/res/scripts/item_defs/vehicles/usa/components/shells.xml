@@ -4,8 +4,9 @@
 		<ap>ARMOR_PIERCING.png 0 0</ap>
 		<ap_premium>ARMOR_PIERCING_PREMIUM.png 0 0</ap_premium>
 		<ap_cr>ARMOR_PIERCING_CR.png 0 0</ap_cr>
-		<ap_fsds_premium>ARMOR_PIERCING_FSDS_PREMIUM.png 0 0</ap_fsds_premium>
 		<ap_cr_premium>ARMOR_PIERCING_CR_PREMIUM.png 0 0</ap_cr_premium>
+		<ap_fsds>ARMOR_PIERCING_FSDS.png 0 0</ap_fsds>
+		<ap_fsds_premium>ARMOR_PIERCING_FSDS_PREMIUM.png 0 0</ap_fsds_premium>
 		<he>HIGH_EXPLOSIVE.png 0 0</he>
 		<he_premium>HIGH_EXPLOSIVE_PREMIUM.png 0 0</he_premium>
 		<he_modern>HIGH_EXPLOSIVE_MODERN.png 0 0</he_modern>
@@ -362,7 +363,7 @@
 		<id>31028</id>
 		<userString>#usa_vehicles:_40mm_T13E3C2_flameshell_basic</userString>
 		<icon>flame</icon>
-		<price>57</price>
+		<price>50</price>
 		<kind>FLAME</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>40</caliber>
@@ -403,7 +404,7 @@
 		<id>31029</id>
 		<userString>#usa_vehicles:_40mm_T13E3C2_flameshell_alternative</userString>
 		<icon>flame_alternative</icon>
-		<price>57</price>
+		<price>60</price>
 		<kind>FLAME</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>40</caliber>
@@ -441,11 +442,11 @@
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
 	</_40mm_T13E3C2_flameshell_alternative>
-	<_40mm_M7_8_flameshell_basic>
-		<id>31026</id>
-		<userString>#usa_vehicles:_40mm_M7_8_flameshell_basic</userString>
+	<_40mm_M7_6E2_flameshell_basic>
+		<id>31031</id>
+		<userString>#usa_vehicles:_40mm_M7_6E2_flameshell_basic</userString>
 		<icon>flame</icon>
-		<price>60</price>
+		<price>80</price>
 		<kind>FLAME</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>40</caliber>
@@ -456,7 +457,80 @@
 		<stunInPoint>true</stunInPoint>
 		<stunDuration>2</stunDuration>
 		<damage>
-			<armor>15</armor>
+			<armor>13</armor>
+			<devices>20</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>1</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damageAbsorption>SPALLS</damageAbsorption>
+			<damage>
+				<armor>55</armor>
+				<devices>20</devices>
+			</damage>
+		</armorSpalls>
+		<deviceFaultTolerance>ammoBay</deviceFaultTolerance>
+		<hitDeviceChanceMultiplier>
+			0.75
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.0625
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+		<secondaryAttackReason>autoshoot</secondaryAttackReason>
+	</_40mm_M7_6E2_flameshell_basic>
+	<_40mm_M7_6E2_flameshell_alternative>
+		<id>31032</id>
+		<userString>#usa_vehicles:_40mm_M7_6E2_flameshell_alternative</userString>
+		<icon>flame_alternative</icon>
+		<price>95</price>
+		<kind>FLAME</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>40</caliber>
+		<isTracer>true</isTracer>
+		<effects>smallFlame_Pneumatic_2</effects>
+		<hasStun>false</hasStun>
+		<damage>
+			<armor>21</armor>
+			<devices>20</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>1</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damageAbsorption>SPALLS</damageAbsorption>
+			<damage>
+				<armor>70</armor>
+				<devices>20</devices>
+			</damage>
+		</armorSpalls>
+		<deviceFaultTolerance>ammoBay</deviceFaultTolerance>
+		<hitDeviceChanceMultiplier>
+			0.75
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.0625
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+		<secondaryAttackReason>autoshoot</secondaryAttackReason>
+	</_40mm_M7_6E2_flameshell_alternative>
+	<_40mm_M7_8_flameshell_basic>
+		<id>31026</id>
+		<userString>#usa_vehicles:_40mm_M7_8_flameshell_basic</userString>
+		<icon>flame</icon>
+		<price>100</price>
+		<kind>FLAME</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>40</caliber>
+		<isTracer>true</isTracer>
+		<effects>smallFlame_Pneumatic_1</effects>
+		<hasStun>false</hasStun>
+		<stunType>FLAME</stunType>
+		<stunInPoint>true</stunInPoint>
+		<stunDuration>2</stunDuration>
+		<damage>
+			<armor>14</armor>
 			<devices>20</devices>
 		</damage>
 		<armorSpalls>
@@ -477,7 +551,7 @@
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.125
+			0.0625
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
@@ -486,7 +560,7 @@
 		<id>31027</id>
 		<userString>#usa_vehicles:_40mm_M7_8_flameshell_alternative</userString>
 		<icon>flame_alternative</icon>
-		<price>70</price>
+		<price>120</price>
 		<kind>FLAME</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>40</caliber>
@@ -494,7 +568,7 @@
 		<effects>smallFlame_Pneumatic_2</effects>
 		<hasStun>false</hasStun>
 		<damage>
-			<armor>20</armor>
+			<armor>22</armor>
 			<devices>20</devices>
 		</damage>
 		<armorSpalls>
@@ -505,7 +579,7 @@
 			<coneAngle>90</coneAngle>
 			<damageAbsorption>SPALLS</damageAbsorption>
 			<damage>
-				<armor>70</armor>
+				<armor>75</armor>
 				<devices>20</devices>
 			</damage>
 		</armorSpalls>
@@ -515,7 +589,7 @@
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.125
+			0.0625
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
@@ -556,7 +630,7 @@
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.125
+			0.0625
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
@@ -565,7 +639,86 @@
 		<id>31034</id>
 		<userString>#usa_vehicles:_40mm_T13E3_flameshell_alternative</userString>
 		<icon>flame_alternative</icon>
-		<price>70</price>
+		<price>75</price>
+		<kind>FLAME</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>40</caliber>
+		<isTracer>true</isTracer>
+		<effects>smallFlame_Pneumatic_2</effects>
+		<hasStun>false</hasStun>
+		<damage>
+			<armor>20</armor>
+			<devices>20</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				0.75
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damageAbsorption>SPALLS</damageAbsorption>
+			<damage>
+				<armor>65</armor>
+				<devices>20</devices>
+			</damage>
+		</armorSpalls>
+		<deviceFaultTolerance>ammoBay</deviceFaultTolerance>
+		<hitDeviceChanceMultiplier>
+			0.75
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.0625
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+		<secondaryAttackReason>autoshoot</secondaryAttackReason>
+	</_40mm_T13E3_flameshell_alternative>
+	<_40mm_T13E2_flameshell_basic>
+		<id>31035</id>
+		<userString>#usa_vehicles:_40mm_T13E2_flameshell_basic</userString>
+		<icon>flame</icon>
+		<price>50</price>
+		<kind>FLAME</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>40</caliber>
+		<isTracer>true</isTracer>
+		<effects>smallFlame_Pneumatic_1</effects>
+		<hasStun>false</hasStun>
+		<stunType>FLAME</stunType>
+		<stunInPoint>true</stunInPoint>
+		<stunDuration>2</stunDuration>
+		<damage>
+			<armor>9</armor>
+			<devices>20</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				0.75
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damageAbsorption>SPALLS</damageAbsorption>
+			<damage>
+				<armor>40</armor>
+				<devices>20</devices>
+			</damage>
+		</armorSpalls>
+		<deviceFaultTolerance>ammoBay</deviceFaultTolerance>
+		<hitDeviceChanceMultiplier>
+			0.75
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.0625
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+		<secondaryAttackReason>autoshoot</secondaryAttackReason>
+	</_40mm_T13E2_flameshell_basic>
+	<_40mm_T13E2_flameshell_alternative>
+		<id>31036</id>
+		<userString>#usa_vehicles:_40mm_T13E2_flameshell_alternative</userString>
+		<icon>flame_alternative</icon>
+		<price>60</price>
 		<kind>FLAME</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>40</caliber>
@@ -584,7 +737,7 @@
 			<coneAngle>90</coneAngle>
 			<damageAbsorption>SPALLS</damageAbsorption>
 			<damage>
-				<armor>60</armor>
+				<armor>55</armor>
 				<devices>20</devices>
 			</damage>
 		</armorSpalls>
@@ -594,11 +747,11 @@
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.125
+			0.0625
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
-	</_40mm_T13E3_flameshell_alternative>
+	</_40mm_T13E2_flameshell_alternative>
 	<_6pdr_AP_MKs_4>
 		<id>12</id>
 		<userString>#usa_vehicles:_6pdr_AP_MKs_4</userString>
@@ -3432,7 +3585,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumArmorPiercing</effects>
 		<damage>
-			<armor>115</armor>
+			<armor>90</armor>
 			<devices>105</devices>
 		</damage>
 	</_76mm_AP_M80>
@@ -3447,7 +3600,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHollowCharge</effects>
 		<damage>
-			<armor>115</armor>
+			<armor>90</armor>
 			<devices>105</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>

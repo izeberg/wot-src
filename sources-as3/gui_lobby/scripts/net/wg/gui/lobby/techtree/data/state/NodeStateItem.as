@@ -8,15 +8,18 @@ package net.wg.gui.lobby.techtree.data.state
       
       private var _state:uint;
       
+      private var _extState:uint;
+      
       private var _props:StateProperties;
       
       private var _disposed:Boolean = false;
       
-      public function NodeStateItem(param1:uint, param2:StateProperties)
+      public function NodeStateItem(param1:uint, param2:StateProperties, param3:uint = 1)
       {
          super();
          this._state = param1;
          this._props = param2;
+         this._extState = param3;
       }
       
       public final function dispose() : void
@@ -28,6 +31,11 @@ package net.wg.gui.lobby.techtree.data.state
       public function getState() : uint
       {
          return this._state;
+      }
+      
+      public function getExtState() : uint
+      {
+         return this._extState;
       }
       
       public function isDisposed() : Boolean

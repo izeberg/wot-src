@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.326597 -0.013848 -2.056942</min>
+		<max>1.326506 1.299282 1.575039</max>
+	</visibilityBox>
+	<parent>vehicles/german/G171_E77/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G171_E77/crash/lod0/Turret_01</nodefullVisual>
+</root>

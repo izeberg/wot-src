@@ -1,159 +1,111 @@
 package net.wg.gui.lobby.personalMissions.components
 {
-   import flash.display.Graphics;
-   import flash.display.MovieClip;
    import flash.display.Sprite;
-   import flash.events.MouseEvent;
-   import net.wg.data.constants.LobbyMetrics;
+   import net.wg.data.constants.Linkages;
+   import net.wg.data.constants.generated.PERSONAL_MISSIONS_ALIASES;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
-   import net.wg.gui.lobby.personalMissions.components.operationsHeader.OperationTitleInfo;
-   import net.wg.gui.lobby.personalMissions.data.OperationDataVO;
-   import net.wg.gui.lobby.personalMissions.data.OperationTitleVO;
-   import net.wg.gui.lobby.personalMissions.events.OperationEvent;
+   import net.wg.gui.components.advanced.ViewStackEx;
+   import net.wg.gui.events.ViewStackEvent;
+   import net.wg.gui.lobby.components.SideBar;
    import net.wg.infrastructure.base.meta.IPersonalMissionOperationsMeta;
    import net.wg.infrastructure.base.meta.impl.PersonalMissionOperationsMeta;
-   import net.wg.infrastructure.managers.ITooltipMgr;
+   import net.wg.infrastructure.interfaces.IDAAPIModule;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
+   import scaleform.clik.data.DataProvider;
+   import scaleform.clik.events.IndexEvent;
    
    public class PersonalMissionOperations extends PersonalMissionOperationsMeta implements IPersonalMissionOperationsMeta
    {
       
-      private static const INVALID_OPERATIONS:String = "invalidOperations";
+      private static const INV_SELECTED_IDX:String = "invSelectedIdx";
       
-      private static const INVALID_TITLE:String = "invalidTitle";
+      private static const MENU_OFFSET_X:int = 32;
       
-      private static const HEADER_TOP_POSITION_MAX:int = 85;
+      private static const MENU_OFFSET_SMALL_X:int = 16;
       
-      private static const HEADER_TOP_POSITION_MIN:int = 55;
+      private static const MENU_OFFSET_Y:int = -102;
       
-      private static const CONTENT_TOP_POSITION_MIN:int = 300;
+      private static const MENU_OFFSET_SMALL_Y:int = -75;
       
-      private static const HEIGHT_BREAK_POINT:int = 812;
+      private static const MENU_BG_OFFSET_Y:int = 90;
       
-      private static const PAGE_HEIGHT_STATE_TALL:String = "stateTall";
+      private static const MENU_BG_OFFSET_SMALL_Y:int = 63;
       
-      private static const PAGE_HEIGHT_STATE_SHORT:String = "stateShort";
-      
-      private static const MENU_POSITION_X:int = 32;
-      
-      private static const MENU_POSITION_X_SMALL:int = 16;
-      
-      private static const FRAME_SMALL:int = 2;
-      
-      private static const FRAME_BIG:int = 1;
-      
-      private static const ITEM_WIDTH_SMALL:uint = 68;
-      
-      private static const ITEM_WIDTH:uint = 100;
-      
-      private static const ITEM_HEIGHT_SMALL:uint = 54;
-      
-      private static const ITEM_HEIGHT:uint = 80;
-      
-      private static const NEW_PM_OFFSET_Y_SMALL:int = -54;
-      
-      private static const NEW_PM_OFFSET_Y:int = -80;
+      private static const DP_SOURCE:Array = [{
+         "id":PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PM3_OPERATIONS,
+         "viewId":PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PM3_OPERATIONS,
+         "linkage":PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PM3_OPERATIONS_LINKAGE,
+         "tooltip":TOOLTIPS_CONSTANTS.PERSONAL_MISSIONS_ANNOUNCE,
+         "isWulfTooltip":true
+      },{
+         "id":PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PM_OLD_OPERATIONS,
+         "viewId":PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PM_OLD_OPERATIONS,
+         "linkage":PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PM_OLD_OPERATIONS_LINKAGE,
+         "tooltip":TOOLTIPS_CONSTANTS.PERSONAL_MISSIONS_OLD_OPERATIONS,
+         "isWulfTooltip":true
+      }];
        
       
-      public var operationInfo:OperationTitleInfo = null;
+      public var menu:SideBar;
       
-      public var content:AllOperationsContent = null;
+      public var menuBg:Sprite;
       
-      public var bg:Sprite = null;
+      public var content:ViewStackEx;
       
-      public var widget:MovieClip = null;
+      private var _currentAlias:String;
       
-      private var _titleVo:OperationTitleVO = null;
-      
-      private var _operations:Vector.<OperationDataVO> = null;
-      
-      private var _pageHeightState:String = "";
-      
-      private var _newPM:Sprite = null;
-      
-      private var _oldPM:Sprite = null;
-      
-      private var _tooltipMgr:ITooltipMgr;
+      private var _selectedIdx:int;
       
       public function PersonalMissionOperations()
       {
-         this._tooltipMgr = App.toolTipMgr;
          super();
       }
       
-      private static function calcPageHeightState(param1:Number) : String
+      override public function updateStage(param1:Number, param2:Number) : void
       {
-         return param1 >= HEIGHT_BREAK_POINT ? PAGE_HEIGHT_STATE_TALL : PAGE_HEIGHT_STATE_SHORT;
+         setSize(param1,param2);
+         this.menu.height = height;
+         this.content.setSize(width,height);
+      }
+      
+      override protected function initialize() : void
+      {
+         super.initialize();
+         this.menu.enableOversize = true;
+         this.updateMenu();
+         this.menu.dataProvider = new DataProvider(DP_SOURCE);
       }
       
       override protected function configUI() : void
       {
          super.configUI();
-         this.content.addEventListener(OperationEvent.CLICK,this.onContentOperationClickHandler);
-         this.operationInfo.addEventListener(OperationEvent.INFO_BTN_CLICK,this.onOperationInfoBtnClickHandler);
-         this.widget.mouseEnabled = false;
-         this._newPM = new Sprite();
-         this._oldPM = new Sprite();
-         this._newPM.mouseEnabled = this._oldPM.mouseEnabled = true;
-         this._newPM.addEventListener(MouseEvent.ROLL_OVER,this.onNewPMRollOverHandler);
-         this._newPM.addEventListener(MouseEvent.ROLL_OUT,this.onNewPMROllOutHandler);
-         this._oldPM.addEventListener(MouseEvent.ROLL_OVER,this.onOldPMRollOverHandler);
-         this._oldPM.addEventListener(MouseEvent.ROLL_OUT,this.onOldPMROllOutHandler);
-         var _loc1_:Graphics = this._newPM.graphics;
-         _loc1_.beginFill(4095,0);
-         _loc1_.drawRect(0,0,1,1);
-         _loc1_.endFill();
-         this.widget.addChild(this._newPM);
-         _loc1_ = this._oldPM.graphics;
-         _loc1_.beginFill(4095,0);
-         _loc1_.drawRect(0,0,1,1);
-         _loc1_.endFill();
-         this.widget.addChild(this._oldPM);
-         this.updateWidgetSizeAndPosition();
-      }
-      
-      override protected function onBeforeDispose() : void
-      {
-         this.operationInfo.removeEventListener(OperationEvent.INFO_BTN_CLICK,this.onOperationInfoBtnClickHandler);
-         this.content.removeEventListener(OperationEvent.CLICK,this.onContentOperationClickHandler);
-         this._newPM.removeEventListener(MouseEvent.ROLL_OVER,this.onNewPMRollOverHandler);
-         this._newPM.removeEventListener(MouseEvent.ROLL_OUT,this.onNewPMROllOutHandler);
-         this._oldPM.removeEventListener(MouseEvent.ROLL_OVER,this.onOldPMRollOverHandler);
-         this._oldPM.removeEventListener(MouseEvent.ROLL_OUT,this.onOldPMROllOutHandler);
-         super.onBeforeDispose();
+         this.content.addEventListener(ViewStackEvent.NEED_UPDATE,this.onContentNeedUpdateHandler,false,0,true);
+         this.menu.addEventListener(IndexEvent.INDEX_CHANGE,this.onMenuIndexChangeHandler,false,0,true);
       }
       
       override protected function onDispose() : void
       {
-         this.operationInfo.dispose();
-         this.operationInfo = null;
-         this._operations = null;
+         this.menuBg = null;
+         this.menu.removeEventListener(IndexEvent.INDEX_CHANGE,this.onMenuIndexChangeHandler,false);
+         this.menu.dispose();
+         this.menu = null;
+         this.content.removeEventListener(ViewStackEvent.NEED_UPDATE,this.onContentNeedUpdateHandler,false);
          this.content.dispose();
          this.content = null;
-         this.widget = null;
-         this.bg = null;
-         this._titleVo = null;
-         this._oldPM = null;
-         this._newPM = null;
-         this._tooltipMgr = null;
          super.onDispose();
       }
       
       override protected function draw() : void
       {
          super.draw();
-         if(this._titleVo && isInvalid(INVALID_TITLE))
+         if(InvalidationType.SIZE)
          {
-            this.operationInfo.update(this._titleVo);
+            this.updateMenu();
          }
-         if(this._operations && isInvalid(INVALID_OPERATIONS))
+         if(isInvalid(INV_SELECTED_IDX))
          {
-            this.content.setOperations(this._operations);
-         }
-         if(isInvalid(InvalidationType.SIZE))
-         {
-            this.updateSize();
+            this.menu.selectedIndex = this._selectedIdx;
          }
       }
       
@@ -162,61 +114,22 @@ package net.wg.gui.lobby.personalMissions.components
          closeViewS();
       }
       
-      override protected function setOperations(param1:Vector.<OperationDataVO>) : void
+      public function as_setSelectedTab(param1:int) : void
       {
-         this._operations = param1;
-         invalidate(INVALID_OPERATIONS);
-      }
-      
-      override protected function setTitle(param1:OperationTitleVO) : void
-      {
-         this._titleVo = param1;
-         invalidate(INVALID_TITLE);
-      }
-      
-      private function updateSize() : void
-      {
-         var _loc1_:String = calcPageHeightState(height);
-         if(this._pageHeightState != _loc1_)
+         if(param1 != this._selectedIdx)
          {
-            this._pageHeightState = _loc1_;
-            this.updateDependentComponents(this._pageHeightState);
+            this._selectedIdx = param1;
+            invalidate(INV_SELECTED_IDX);
          }
-         var _loc2_:int = width >> 1;
-         var _loc3_:int = height >> 1;
-         this.content.x = _loc2_;
-         this.content.y = _loc1_ == PAGE_HEIGHT_STATE_SHORT ? Number(CONTENT_TOP_POSITION_MIN + (App.appHeight - LobbyMetrics.MIN_STAGE_HEIGHT >> 1)) : Number(_loc3_);
-         this.operationInfo.x = _loc2_;
-         this.operationInfo.y = Math.min(HEADER_TOP_POSITION_MIN + (App.appHeight - LobbyMetrics.MIN_STAGE_HEIGHT >> 1),HEADER_TOP_POSITION_MAX);
-         this.bg.width = width;
-         this.bg.height = height + LobbyMetrics.LOBBY_MESSENGER_HEIGHT;
-         this.updateWidgetSizeAndPosition();
       }
       
-      private function updateDependentComponents(param1:String) : void
+      private function updateMenu() : void
       {
-         this.operationInfo.fontSize = param1 == PAGE_HEIGHT_STATE_TALL ? int(OperationTitleInfo.HEADER_FONT_BIG) : int(OperationTitleInfo.HEADER_FONT_SMALL);
-      }
-      
-      private function updateWidgetSizeAndPosition() : void
-      {
-         this.widget.y = height >> 1;
-         if(App.appWidth < StageSizeBoundaries.WIDTH_1600 || App.appHeight < StageSizeBoundaries.HEIGHT_900)
-         {
-            this.widget.gotoAndStop(FRAME_SMALL);
-            this._newPM.width = this._oldPM.width = ITEM_WIDTH_SMALL;
-            this._newPM.height = this._oldPM.height = ITEM_HEIGHT_SMALL;
-            this._newPM.y = NEW_PM_OFFSET_Y_SMALL;
-            this._newPM.x = this._oldPM.x = MENU_POSITION_X_SMALL;
-         }
-         else
-         {
-            this.widget.gotoAndStop(FRAME_BIG);
-            this._newPM.width = this._oldPM.width = ITEM_WIDTH;
-            this._newPM.height = this._oldPM.height = ITEM_HEIGHT;
-            this._newPM.y = NEW_PM_OFFSET_Y;
-            this._newPM.x = this._oldPM.x = MENU_POSITION_X;
-         }
+         var _loc1_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1600 || App.appHeight < StageSizeBoundaries.HEIGHT_900;
+         this.menu.itemRendererName = !!_loc1_ ? Linkages.SIDE_BAR_SMALL_RENDERER : Linkages.SIDE_BAR_NORMAL_RENDERER;
+         this.menu.x = !!_loc1_ ? Number(MENU_OFFSET_SMALL_X) : Number(MENU_OFFSET_X);
+         this.menu.y = (height >> 1) + (!!_loc1_ ? MENU_OFFSET_SMALL_Y : MENU_OFFSET_Y);
+         this.menuBg.y = this.menu.y - (this.menuBg.height >> 1) + (!!_loc1_ ? MENU_BG_OFFSET_SMALL_Y : MENU_BG_OFFSET_Y);
       }
       
       override public function get isModal() : Boolean
@@ -224,33 +137,27 @@ package net.wg.gui.lobby.personalMissions.components
          return true;
       }
       
-      private function onOldPMROllOutHandler(param1:MouseEvent) : void
+      private function onContentNeedUpdateHandler(param1:ViewStackEvent) : void
       {
-         this._tooltipMgr.hide();
+         var _loc2_:String = param1.viewId;
+         if(!isFlashComponentRegisteredS(_loc2_))
+         {
+            registerFlashComponentS(IDAAPIModule(param1.view),_loc2_);
+         }
       }
       
-      private function onNewPMROllOutHandler(param1:MouseEvent) : void
+      private function onMenuIndexChangeHandler(param1:IndexEvent) : void
       {
-         this._tooltipMgr.hide();
-      }
-      
-      private function onOldPMRollOverHandler(param1:MouseEvent) : void
-      {
-      }
-      
-      private function onNewPMRollOverHandler(param1:MouseEvent) : void
-      {
-         this._tooltipMgr.showWulfTooltip(TOOLTIPS_CONSTANTS.PERSONAL_MISSIONS_ANNOUNCE);
-      }
-      
-      private function onOperationInfoBtnClickHandler(param1:OperationEvent) : void
-      {
-         showInfoS();
-      }
-      
-      private function onContentOperationClickHandler(param1:OperationEvent) : void
-      {
-         onOperationClickS(param1.pmType,param1.id);
+         if(param1.index != -1)
+         {
+            this._selectedIdx = param1.index;
+            onTabSelectedS(this._selectedIdx);
+            if(isFlashComponentRegisteredS(this._currentAlias))
+            {
+               unregisterFlashComponentS(this._currentAlias);
+            }
+            this._currentAlias = param1.data.viewId;
+         }
       }
    }
 }

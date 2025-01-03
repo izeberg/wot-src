@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz37_Vz_59_Dravec/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.218928 -0.000247 -1.151561</min>
+		<max>1.210282 0.671801 1.158372</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

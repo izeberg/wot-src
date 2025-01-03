@@ -83,8 +83,8 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-server_constants = globals().get(&apos;server_constants&apos;)
-&quot;&quot;&quot;:type: server_constants&quot;&quot;&quot;
+constants = globals().get(&apos;constants&apos;)
+&quot;&quot;&quot;:type: constants&quot;&quot;&quot;
 
 items = globals().get(&apos;items&apos;)
 &quot;&quot;&quot;:type: items&quot;&quot;&quot;
@@ -109,7 +109,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress.increaseUntilComplete(ADD_PROGRESS_ID, addCondition)
     if questProgress.isCompleted(ADD_PROGRESS_ID):
         questProgress.increaseUntilComplete(ADD_SERIES_PROGRESS_ID, 1)
-    mainCondition = len(brfilter.filterDamageTo(result=[&apos;killed&apos;], level=range(brfilter.getMyLevel(), 12)))
+    mainCondition = len(brfilter.filterDamageTo(result=[&apos;killed&apos;], level=range(brfilter.getMyLevel(), constants.MAX_VEHICLE_LEVEL + 1)))
     questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID, additionalProgressID=ADD_SERIES_PROGRESS_ID))
@@ -142,28 +142,10 @@ def quest(eventType, eventData, quest, processor):
 			<enabled>true</enabled>
 			<id>pm2_5_4_7_add_award_list</id>
 			<serverOnly>true</serverOnly>
-			<conditions>
-				<preBattle>
-					<account>
-						<token>
-							<id>pm2_5_4_7_main_award_list</id>
-							<greaterOrEqual>1</greaterOrEqual>
-							<consume>
-								100
-								<force/>
-							</consume>
-						</token>
-					</account>
-				</preBattle>
-				<postBattle>
-					<and>
-						<results>
-							<key>addQuestCompleted</key>
-							<greaterOrEqual>1</greaterOrEqual>
-						</results>
-					</and>
-				</postBattle>
-			</conditions>
+			<conditions/>
+			<scripts>
+pass
+         </scripts>
 			<bonus>
 				<token>
 					<id>free_award_list_2</id>

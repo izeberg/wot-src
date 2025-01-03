@@ -113,6 +113,12 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          return this._disposed;
       }
       
+      public function getRenderersVisibleHeight() : uint
+      {
+         var _loc1_:Rectangle = this.renderersContainer.getBounds(this);
+         return _loc1_.y + _loc1_.height;
+      }
+      
       public function removeAllItems() : void
       {
          var _loc1_:int = 0;

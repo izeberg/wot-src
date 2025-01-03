@@ -1013,10 +1013,8 @@ class BattleReplay(object):
                 MessengerEntry.g_instance.gui.addClientMessage(messageText, isCurrentPlayer)
 
     def setFpsPingLag(self, fps, ping, isLaggingNow):
-        if self.isPlaying:
-            return
-        self.__replayCtrl.fps = int(fps)
-        self.__replayCtrl.ping = int(ping)
+        self.__replayCtrl.fps = fps
+        self.__replayCtrl.ping = ping
         self.__replayCtrl.isLaggingNow = isLaggingNow
 
     def onClientVersionDiffers(self):
@@ -1091,7 +1089,7 @@ class BattleReplay(object):
                     for field in ('damageEventList', 'xpReplay', 'creditsReplay', 'tmenXPReplay',
                                   'flXPReplay', 'goldReplay', 'crystalReplay', 'eventCoinReplay',
                                   'bpcoinReplay', 'freeXPReplay', 'avatarDamageEventList',
-                                  'equipCoinReplay', 'battlePassPointsReplay'):
+                                  'equipCoinReplay', 'battlePassPointsReplay', 'paragonCoinsReplay'):
                         personal[field] = None
 
                     for currency in personal.get('currencies', {}).itervalues():

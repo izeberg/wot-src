@@ -59,6 +59,7 @@ package net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.panelSw
       
       override public function setState(param1:int) : void
       {
+         super.setState(param1);
          if(param1 == state)
          {
             return;

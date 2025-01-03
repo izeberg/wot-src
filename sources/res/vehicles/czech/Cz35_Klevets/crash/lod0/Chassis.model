@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.710756 -0.000138 -3.907936</min>
+		<max>1.710756 1.239051 3.638067</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz35_Klevets/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/czech/Cz35_Klevets/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

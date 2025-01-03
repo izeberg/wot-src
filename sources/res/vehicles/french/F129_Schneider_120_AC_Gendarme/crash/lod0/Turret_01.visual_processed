@@ -72,6 +72,14 @@
 						g_detailUVTiling
 						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.030023 1.382303 0.018176</groupOrigin>
 			</primitiveGroup>

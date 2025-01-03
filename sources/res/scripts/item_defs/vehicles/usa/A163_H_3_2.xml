@@ -75,8 +75,7 @@
 			2.0
 			<!--BW_String-->
 		</priceFactor>
-		<tiling>1 1 0 0</tiling>
-		<exclusionMask/>
+		<density>1.113536 1.113536</density>
 	</camouflage>
 	<hull>
 		<armor>
@@ -152,6 +151,18 @@
 		<hangarShadowTexture>vehicles/american/A163_H_3_2/H_3_HangarShadowMap.dds</hangarShadowTexture>
 		<customizationSlots>
 			<slot>
+				<slotType>clan</slotType>
+				<slotId>10000</slotId>
+				<rayStart>0.466607 0.372228 3.705841</rayStart>
+				<rayEnd>0.466607 -0.127772 3.705841</rayEnd>
+				<rayUp>0 0 -1</rayUp>
+				<size>
+					0.32
+					<!--BW_String-->
+				</size>
+				<isUVProportional>false</isUVProportional>
+			</slot>
+			<slot>
 				<slotType>paint</slotType>
 				<slotId>11000</slotId>
 				<anchorPosition>0 0 0</anchorPosition>
@@ -170,6 +181,13 @@
 				<camouflage>HULL</camouflage>
 			</customizableVehicleAreas>
 		</customization>
+		<camouflage>
+			<density>
+				98.044708 98.2295
+				<!--BW_String-->
+			</density>
+			<aoTextureSize>512 512</aoTextureSize>
+		</camouflage>
 	</hull>
 	<chassis>
 		<Chassis_A163_H_3_2>
@@ -2227,6 +2245,13 @@
 					</sourceCollisionHullPoints>
 				</right>
 			</physicalTracks>
+			<camouflage>
+				<density>
+					98.044708 98.2295
+					<!--BW_String-->
+				</density>
+				<aoTextureSize>512 512</aoTextureSize>
+			</camouflage>
 			<repairTime>
 				6.85714293
 				<!--BW_String-->
@@ -2389,6 +2414,26 @@
 							<anchorDirection>0 1 0</anchorDirection>
 							<applyTo>4096</applyTo>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49000</slotId>
+							<rayStart>
+								0 0.124 3.96
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 0.124 4.56
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.14 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.6
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -2412,6 +2457,10 @@
 						-0 0.120243 0
 						<!--BW_String-->
 					</shotOffset>
+					<camouflage>
+						<density>61.452248 124.054733</density>
+						<aoTextureSize>512 512</aoTextureSize>
+					</camouflage>
 				</_155mm_Gun_T7>
 			</guns>
 			<models>
@@ -2449,6 +2498,13 @@
 				1.571 -0.597 0.959 -0.067 0.793 -0.178 0.771 0.779 0.43 0.5 0.01 0.5 0.199 0.1 0
 				<!--BW_String-->
 			</physicsShape>
+			<camouflage>
+				<density>
+					98.044708 98.2295
+					<!--BW_String-->
+				</density>
+				<aoTextureSize>512 512</aoTextureSize>
+			</camouflage>
 		</Turret_1_A163_H_3_2>
 	</turrets0>
 	<engines>

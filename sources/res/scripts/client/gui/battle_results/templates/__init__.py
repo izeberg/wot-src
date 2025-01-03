@@ -15,6 +15,7 @@ from gui.battle_results.templates.regular import REGULAR_PERSONAL_STATS_BLOCK
 from gui.battle_results.templates.regular import REGULAR_TEAMS_STATS_BLOCK
 from gui.battle_results.templates.regular import REGULAR_TEXT_STATS_BLOCK
 from gui.battle_results.templates.regular import CLAN_TEXT_STATS_BLOCK
+from gui.battle_results.templates.regular import PARAGONS_PROGRESS_STATS_BLOCK
 from gui.battle_results.templates.ranked_battles import RANKED_COMMON_STATS_BLOCK
 from gui.battle_results.templates.ranked_battles import RANKED_TEAMS_STATS_BLOCK
 from gui.battle_results.templates.ranked_battles import RANKED_RESULTS_BLOCK
@@ -54,7 +55,8 @@ __all__ = ('TOTAL_VO_META', 'MULTI_TEAM_TABS_BLOCK', 'REGULAR_TABS_BLOCK', 'VEHI
            'PROGRESSIVE_REWARD_VO', 'RANKED_RESULTS_STATE_BLOCK', 'BR_TOTAL_VO_META',
            'BR_TABS_BLOCK', 'BR_TEAM_STATS_BLOCK', 'BR_PERSONAL_STATS_BLOCK', 'BR_COMMON_STATS_BLOCK',
            'MAPS_TRAINING_RESULTS_BLOCK', 'COMP7_PERSONAL_STATS_BLOCK', 'COMP7_COMMON_STATS_BLOCK',
-           'COMP7_TEAMS_STATS_BLOCK', 'COMP7_BATTLE_PASS_PROGRESS_STATS_BLOCK', 'EFFICIENCY_TITLE_WITH_SKILLS_VO')
+           'COMP7_TEAMS_STATS_BLOCK', 'COMP7_BATTLE_PASS_PROGRESS_STATS_BLOCK', 'EFFICIENCY_TITLE_WITH_SKILLS_VO',
+           'PARAGONS_PROGRESS_STATS_BLOCK')
 TOTAL_VO_META = base.DictMeta({'personal': {}, 'common': {}, 'team1': [], 'team2': [], 'textData': {}, 'battlePass': None, 
    'quests': None, 
    'unlocks': [], 'tabInfo': [], 'cyberSport': None, 
@@ -62,4 +64,4 @@ TOTAL_VO_META = base.DictMeta({'personal': {}, 'common': {}, 'team1': [], 'team2
    'closingTeamMemberStatsEnabled': True, 
    'selectedTeamMemberId': -1, 
    'progressiveReward': None, 
-   'dog_tags': {}, 'efficiencyTitle': backport.text(R.strings.battle_results.common.battleEfficiencyWithoutOreders.title())})
+   'dog_tags': {}, 'paragons': {}, 'efficiencyTitle': backport.text(R.strings.battle_results.common.battleEfficiencyWithoutOreders.title())})

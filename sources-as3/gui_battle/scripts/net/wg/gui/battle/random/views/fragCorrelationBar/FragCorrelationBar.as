@@ -1,6 +1,5 @@
 package net.wg.gui.battle.random.views.fragCorrelationBar
 {
-   import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleStatusVO;
@@ -8,6 +7,8 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
    import net.wg.data.VO.daapi.DAAPIVehiclesStatsVO;
    import net.wg.data.constants.FragCorrelationBarStatus;
    import net.wg.data.constants.InvalidationType;
+   import net.wg.data.constants.generated.BATTLEATLAS;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.random.views.fragCorrelationBar.components.AllyTeamHealthBar;
    import net.wg.gui.battle.random.views.fragCorrelationBar.components.BaseTeamHealthBar;
    import net.wg.gui.battle.random.views.fragCorrelationBar.components.VehicleMarkersList;
@@ -52,17 +53,21 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
       
       public var enemyTeamFragsField:TextField = null;
       
-      public var greenBackground:Sprite = null;
+      public var greenBackground:BattleAtlasSprite = null;
       
-      public var redBackground:Sprite = null;
+      public var redBackground:BattleAtlasSprite = null;
       
-      public var purpleBackground:Sprite = null;
+      public var purpleBackground:BattleAtlasSprite = null;
       
       public var teamFragsSeparatorField:TextField = null;
       
       public var allyTeamHealthBar:AllyTeamHealthBar = null;
       
       public var enemyTeamHealthBar:BaseTeamHealthBar = null;
+      
+      public var bg:BattleAtlasSprite = null;
+      
+      private var _markersContainer:Sprite = null;
       
       private var _allyTeamFragsStr:String = "0";
       
@@ -98,8 +103,10 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
          TextFieldEx.setNoTranslate(this.teamFragsSeparatorField,true);
          this._winColorScheme = this._colorSchemeMgr.getScheme(FRAG_CORRELATION_WIN);
          this._loseColorScheme = this._colorSchemeMgr.getScheme(FRAG_CORRELATION_LOSE);
-         this._allyVehicleMarkersList = this.createVehicleMarkersLists(this,false,this._winColorScheme.aliasColor);
-         this._enemyVehicleMarkersList = this.createVehicleMarkersLists(this,true,this._loseColorScheme.aliasColor);
+         this._markersContainer = new Sprite();
+         addChildAt(this._markersContainer,getChildIndex(this.redBackground) + 1);
+         this._allyVehicleMarkersList = this.createVehicleMarkersLists(this._markersContainer,false,this._winColorScheme.aliasColor);
+         this._enemyVehicleMarkersList = this.createVehicleMarkersLists(this._markersContainer,true,this._loseColorScheme.aliasColor);
          mouseChildren = mouseEnabled = false;
       }
       
@@ -159,6 +166,10 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
          this._colorSchemeMgr.addEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorSchemasUpdatedHandler);
          this.allyTeamHealthBar.init(false,this._isColorblind);
          this.enemyTeamHealthBar.init(true,this._isColorblind);
+         this.bg.imageName = BATTLEATLAS.FRAG_BAR_BG;
+         this.greenBackground.imageName = BATTLEATLAS.FRAG_BAR_GREEN_BG;
+         this.redBackground.imageName = BATTLEATLAS.FRAG_BAR_RED_BG;
+         this.purpleBackground.imageName = BATTLEATLAS.FRAG_BAR_PURPLE_BG;
       }
       
       override protected function onDispose() : void
@@ -184,6 +195,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
          this._loseColorScheme.dispose();
          this._loseColorScheme = null;
          this._rightBg = null;
+         this.bg = null;
          super.onDispose();
       }
       
@@ -206,7 +218,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
          }
       }
       
-      public function as_updateTeamHealthValues(param1:String, param2:String, param3:int, param4:String, param5:int) : void
+      public function as_updateHP(param1:String, param2:String, param3:Number, param4:String, param5:Number) : void
       {
          this.allyTeamHealthBar.setHealthValue(param1,param3);
          this.enemyTeamHealthBar.setHealthValue(param4,param5);
@@ -329,7 +341,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
       {
       }
       
-      protected function createVehicleMarkersLists(param1:MovieClip, param2:Boolean, param3:String) : VehicleMarkersList
+      protected function createVehicleMarkersLists(param1:Sprite, param2:Boolean, param3:String) : VehicleMarkersList
       {
          return new VehicleMarkersList(param1,param2,param3);
       }

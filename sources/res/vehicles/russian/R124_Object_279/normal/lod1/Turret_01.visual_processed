@@ -115,6 +115,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R124_Object_279/Object_279_turret_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.034403 1.412345 0.019658</groupOrigin>
 			</primitiveGroup>

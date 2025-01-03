@@ -1,50 +1,71 @@
 <root>
 	<SubTexture>
 		<name> 183x63_operation_1 </name>
-		<x> 328 </x>
+		<x> 144 </x>
 		<y> 0 </y>
+		<width> 183 </width>
+		<height> 63 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> 183x63_operation_10 </name>
+		<x> 144 </x>
+		<y> 64 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> 183x63_operation_2 </name>
-		<x> 144 </x>
-		<y> 0 </y>
+		<x> 328 </x>
+		<y> 64 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> 183x63_operation_3 </name>
-		<x> 144 </x>
-		<y> 64 </y>
+		<x> 328 </x>
+		<y> 128 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> 183x63_operation_4 </name>
-		<x> 328 </x>
-		<y> 64 </y>
+		<x> 144 </x>
+		<y> 128 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> 183x63_operation_5 </name>
-		<x> 328 </x>
-		<y> 128 </y>
+		<x> 144 </x>
+		<y> 192 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> 183x63_operation_6 </name>
-		<x> 144 </x>
-		<y> 128 </y>
+		<x> 328 </x>
+		<y> 192 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> 183x63_operation_7 </name>
+		<x> 328 </x>
+		<y> 256 </y>
+		<width> 183 </width>
+		<height> 63 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> 183x63_operation_8 </name>
 		<x> 144 </x>
-		<y> 192 </y>
+		<y> 256 </y>
+		<width> 183 </width>
+		<height> 63 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> 183x63_operation_9 </name>
+		<x> 328 </x>
+		<y> 0 </y>
 		<width> 183 </width>
 		<height> 63 </height>
 	</SubTexture>
@@ -99,15 +120,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> orange_mediumTank </name>
-		<x> 99 </x>
-		<y> 28 </y>
+		<x> 1 </x>
+		<y> 0 </y>
 		<width> 14 </width>
 		<height> 18 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> orange_SPG </name>
-		<x> 1 </x>
-		<y> 19 </y>
+		<x> 99 </x>
+		<y> 28 </y>
 		<width> 14 </width>
 		<height> 18 </height>
 	</SubTexture>
@@ -127,43 +148,43 @@
 	</SubTexture>
 	<SubTexture>
 		<name> quest_done_perfectly </name>
-		<x> 112 </x>
-		<y> 0 </y>
-		<width> 31 </width>
-		<height> 27 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> quest_in_progress </name>
 		<x> 16 </x>
 		<y> 0 </y>
 		<width> 31 </width>
 		<height> 27 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> quest_not_available </name>
+		<name> quest_in_progress </name>
 		<x> 48 </x>
 		<y> 0 </y>
 		<width> 31 </width>
 		<height> 27 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> quest_on_pause </name>
+		<name> quest_not_available </name>
 		<x> 80 </x>
 		<y> 0 </y>
 		<width> 31 </width>
 		<height> 27 </height>
 	</SubTexture>
 	<SubTexture>
+		<name> quest_on_pause </name>
+		<x> 112 </x>
+		<y> 0 </y>
+		<width> 31 </width>
+		<height> 27 </height>
+	</SubTexture>
+	<SubTexture>
 		<name> silver_AT-SPG </name>
-		<x> 69 </x>
-		<y> 28 </y>
+		<x> 1 </x>
+		<y> 19 </y>
 		<width> 14 </width>
 		<height> 18 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> silver_heavyTank </name>
-		<x> 1 </x>
-		<y> 0 </y>
+		<x> 69 </x>
+		<y> 28 </y>
 		<width> 14 </width>
 		<height> 18 </height>
 	</SubTexture>

@@ -79,6 +79,8 @@ package net.wg.data.constants.generated
       
       public static const ROCKET_ACCELERATOR_INDICATOR:String = "rocketAcceleratorIndicator";
       
+      public static const THERMAL_VISION_INDICATOR:String = "thermalVisionIndicator";
+      
       public static const BOOTCAMP_CONSUMABLES_PANEL:String = "bootcampConsumablesPanel";
       
       public static const BOOTCAMP_RIBBONS_PANEL:String = "bootcampRibbonsPanel";

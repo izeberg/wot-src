@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/intunion/Un06_M47_Romach/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.166230 -0.000520 -2.464587</min>
+		<max>1.166503 4.272351 1.222359</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

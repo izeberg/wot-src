@@ -86,7 +86,7 @@ _VEHICLE_COMMAND_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE,
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE, BATTLE_CHAT_COMMAND_NAMES.TURNBACK,
  BATTLE_CHAT_COMMAND_NAMES.THANKS, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
- BATTLE_CHAT_COMMAND_NAMES.CONFIRM)
+ BATTLE_CHAT_COMMAND_NAMES.CONFIRM, BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT)
 _MUTE_MESSAGE_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTENTION_TO_POSITION,)
 _TEMPORARY_STICKY_NAMES = (
@@ -477,6 +477,9 @@ class BattleCommandFactory(IBattleCommandFactory):
         else:
             decorator = None
         return decorator
+
+    def createOverheatCantShootCommand(self, timeLeft):
+        return _OutCmdDecorator(BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT, messageArgs(floatArg1=timeLeft))
 
     def createReplyByName(self, replyID, replyType, replierID):
         return _OutCmdDecorator(BATTLE_CHAT_COMMAND_NAMES.REPLY, messageArgs(int32Arg1=replyID, int64Arg1=replierID, strArg1=replyType))

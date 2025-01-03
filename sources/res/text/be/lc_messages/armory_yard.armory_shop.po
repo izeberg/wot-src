@@ -73,9 +73,9 @@ msgstr "У наборы: %(value)s золата"
 
 msgid "gold/longDescription"
 msgstr ""
-"Валюта, позволяющая ускорить развитие в Мире танков.\n"
+"Валюта, якая дазваляе паскорыць развіццё ў гульні «Мир танков».\n"
 "\n"
-"В наборе: %(value)s золота"
+"У наборы: %(value)s золата"
 
 msgid "gold/title"
 msgstr "Золата"
@@ -99,7 +99,16 @@ msgstr ""
 "%(currencies)s"
 
 msgid "notifications/purchaseContent"
-msgstr "%(product)s (%(count)s шт.)"
+msgstr "%(product)s (%(count)sшт.)"
+
+msgid "notifications/purchaseContent/withoutCount"
+msgstr "%(product)s"
+
+msgid "notifications/purchaseContent/withoutPieces"
+msgstr "%(product)s: %(count)s"
+
+msgid "notifications/vehicle"
+msgstr "Техника: "
 
 msgid "premiumPlus/description_1"
 msgstr "У наборы: %(value)s дзень"
@@ -143,6 +152,24 @@ msgstr ""
 "дазволіць з камфортам апрабаваць навінку і ўпэўнена адчуваць сябе на полі "
 "бою."
 
+msgid "product/bundle/longDescription/episode4"
+msgstr ""
+"Штурмовая ПТ-САУ с неплохой динамикой и хорошим лобовым бронированием с "
+"рациональными углами наклона листов. Игровой процесс во многом схож с "
+"легендарной Tortoise, который диктует продвижение по заранее выбранному "
+"направлению в первых рядах и реализацию огневого потенциала орудия, которое "
+"фактически не имеет слабых сторон."
+
+msgid "product/bundle/longDescription/episode5"
+msgstr ""
+"Тяжёлый танк прорыва с отличным лобовым бронированием башни и корпуса, а "
+"также с комфортными углами склонения орудия и небольшими уязвимыми зонами. У"
+" орудия отличный разовый урон, который компенсируется относительно долгой "
+"перезарядкой. Но эту особенность можно обернуть в плюс, так как вам не нужно"
+" часто подставляться под ответный огонь. Большое количество положительных "
+"характеристик скомпенсировано не скромной точностью и низкой удельной "
+"мощностью."
+
 msgid "product/bundle/title"
 msgstr "Набор з %(vehicleName)s"
 
@@ -183,10 +210,10 @@ msgstr "Купіць"
 
 msgid "shopBuyView/footer/buyNotAvailable/description"
 msgstr ""
-"Чтобы разблокировать доступ к покупке, завершите прогрессию Сборочного цеха."
+"Каб разблакаваць доступ да куплі, завяршыце прагрэсію Зборачнага цэха."
 
 msgid "shopBuyView/footer/buyNotAvailable/title"
-msgstr "Покупка невозможна"
+msgstr "Купіць немагчыма"
 
 msgid "shopBuyView/footer/limit"
 msgstr "Можна купіць разоў: %(count)s"
@@ -219,12 +246,12 @@ msgid "shopView/card/bundleDescription"
 msgstr "Прэміум машына і іншыя ўзнагароды"
 
 msgid "shopView/intro/button/slide_3"
-msgstr "В Магазин"
+msgstr "У Краму"
 
 msgid "shopView/intro/description/slide_1"
 msgstr ""
-"Здесь можно покупать уникальную технику и товары как за золото, так и за "
-"свободные жетоны Сборочного цеха."
+"Тут можна купляць унікальную тэхніку і тавары як за золата, так і за вольныя"
+" жэтоны Зборачнага цэха."
 
 msgid "shopView/intro/description/slide_2"
 msgstr ""

@@ -1,5 +1,6 @@
 from gui.Scaleform.daapi.view.meta.NotificationPopUpViewerMeta import NotificationPopUpViewerMeta
 from gui.game_loading.resources.consts import Milestones
+from gui.impl.lobby.paragons.sound_constants import Sounds
 from gui.shared.notifications import NotificationPriorityLevel, NotificationGroup
 from helpers import dependency
 from messenger import g_settings
@@ -11,6 +12,7 @@ from notification.settings import NOTIFICATION_STATE
 from PlayerEvents import g_playerEvents
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.shared.utils import IHangarSpace
+import WWISE
 
 class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView):
     __connectionMgr = dependency.descriptor(IConnectionManager)
@@ -104,6 +106,8 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
         if notification.getPriorityLevel() != NotificationPriorityLevel.LOW:
             self.as_appendMessageS(self.__getPopUpVO(notification))
             self.__noDisplayingPopups = False
+        if notification.getSettings().isSoundable:
+            WWISE.WW_eventGlobal(Sounds.SOUND_SLIDE_IN)
 
     def __showAlertMessage(self, notification):
         NotificationMVC.g_instance.getAlertController().showAlertMessage(notification)
@@ -158,7 +162,6 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
             mvcInstance.getAlertController().onAllAlertsClosed += self.__allAlertsMessageCloseHandler
             g_messengerEvents.onLockPopUpMessages += self.__onLockPopUpMassages
             g_messengerEvents.onUnlockPopUpMessages += self.__onUnlockPopUpMessages
-            g_messengerEvents.onNotificationPopUpViewerStarted()
             self._model.setup()
         else:
             g_playerEvents.onLoadingMilestoneReached += self._onLoadingMilestoneReached

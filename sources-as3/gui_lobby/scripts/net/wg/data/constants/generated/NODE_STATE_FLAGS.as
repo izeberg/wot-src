@@ -64,6 +64,12 @@ package net.wg.data.constants.generated
       public static const HAS_TECH_TREE_EVENT:int = 536870912;
       
       public static const EARLY_ACCESS:int = 1073741824;
+      
+      public static const EXTENDED_DEFAULT:int = 1;
+      
+      public static const EXTENDED_RESET_FINISHED_PARAGONS:int = 2;
+      
+      public static const EXTENDED_LOCKED_BY_PARAGONS:int = 4;
        
       
       public function NODE_STATE_FLAGS()

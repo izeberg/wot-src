@@ -186,6 +186,10 @@ package net.wg.gui.lobby.techtree.helpers
          {
             return LineStyle.DASHED;
          }
+         if(_loc2_ && _loc2_.isLockedByParagons)
+         {
+            return LineStyle.DASHED;
+         }
          return LineStyle.SOLID;
       }
       

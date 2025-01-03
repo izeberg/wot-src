@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import defaultdict
 from constants import QUEST_PROGRESS_STATE
 from personal_missions_constants import PROGRESS_TEMPLATE
 
@@ -22,6 +22,12 @@ class IProgress(object):
     def checkIsCompleted(self):
         raise NotImplementedError
 
+    def isInOrGroup(self):
+        raise NotImplementedError
+
+    def groupID(self):
+        raise NotImplementedError
+
 
 class Progress(IProgress):
 
@@ -29,6 +35,7 @@ class Progress(IProgress):
         self.__progressID = progressID
         self.__isMain = False
         self.__isAward = False
+        self.__isInOrGroup = False
         self.__state = QUEST_PROGRESS_STATE.IN_PROGRESS
         self.__countDown = None
         self.__visibleScope = None
@@ -52,6 +59,9 @@ class Progress(IProgress):
     def checkIsCompleted(self):
         return False
 
+    def checkIsFailed(self):
+        return False
+
     def getParam(self, name):
         return self.__params.get(name)
 
@@ -73,10 +83,12 @@ class Progress(IProgress):
     def getState(self):
         return self.__state
 
-    def _setCfg(self, isMain=False, countdown=None, visibleScope=(), isCumulative=False, params=None, isAward=False):
+    def _setCfg(self, isMain=False, countdown=None, visibleScope=(), isCumulative=False, params=None, isAward=False, isInOrGroup=False, groupID=0):
         self.__isMain = isMain
         self.__isAward = isAward
         self.__countDown = countdown
+        self.__isInOrGroup = isInOrGroup
+        self.__groupID = groupID
         self.__visibleScope = visibleScope
         self.__isCumulative = isCumulative
         self.__params = params or {}
@@ -87,11 +99,23 @@ class Progress(IProgress):
     def getCountDown(self):
         return self.__countDown
 
+    def isInOrGroup(self):
+        return self.__isInOrGroup
+
+    def groupID(self):
+        return self.__groupID
+
     def _markAsChanged(self):
         self.__isChanged = True
 
     def markAsVisited(self):
         self.__isChanged = False
+
+    def setZero(self):
+        pass
+
+    def isZero(self):
+        return False
 
 
 class BinaryProgress(Progress):
@@ -106,9 +130,6 @@ class BinaryProgress(Progress):
     def _setCfg(self, isDelay=False, **kwargs):
         super(BinaryProgress, self)._setCfg(**kwargs)
         self.__isDelay = isDelay
-
-    def checkIsCompleted(self):
-        return False
 
 
 class ValueProgress(Progress):
@@ -157,6 +178,12 @@ class ValueProgress(Progress):
     def getValue(self):
         return self.__value
 
+    def setZero(self):
+        self.__value = 0
+
+    def isZero(self):
+        return self.__value == 0
+
     def _setCfg(self, goal=0, dynamicGoal=False, **kwargs):
         super(ValueProgress, self)._setCfg(**kwargs)
         self.__goal = goal
@@ -168,10 +195,10 @@ class CounterProgress(Progress):
     def __init__(self, progressID, config):
         self.__uniqueGoal = 0
         self.__totalGoal = 0
-        self.__counter = Counter()
+        self.__counter = defaultdict(int)
         super(CounterProgress, self).__init__(progressID, config)
 
-    def _setCfg(self, uniqueGoal=0, totalGoal=False, **kwargs):
+    def _setCfg(self, uniqueGoal=0, totalGoal=0, **kwargs):
         super(CounterProgress, self)._setCfg(**kwargs)
         self.__uniqueGoal = uniqueGoal
         self.__totalGoal = totalGoal
@@ -203,17 +230,23 @@ class CounterProgress(Progress):
 
     def setCounter(self, counter):
         if self.__counter != counter:
-            self.__counter = counter
+            self.__counter = defaultdict(int, counter)
             self._markAsChanged()
 
     def getProgress(self):
-        return {'counter': self.getCounter(), 
+        return {'counter': dict(self.getCounter()), 
            'state': self.getState()}
 
     def updateProgress(self, progress):
         if progress:
             self.setState(progress['state'])
             self.setCounter(progress['counter'])
+
+    def setZero(self):
+        self.__counter = defaultdict(int)
+
+    def isZero(self):
+        return not bool(self.__counter)
 
 
 class BattlesSeries(Progress):
@@ -234,7 +267,10 @@ class BattlesSeries(Progress):
         return self.__battles.count(False)
 
     def checkIsCompleted(self):
-        return False
+        return self.getSuccessfullBattles() >= self.getGoal()
+
+    def checkIsFailed(self):
+        return self.getBattlesLimit() < self.getFailedBattles() + self.getGoal()
 
     def setGoal(self, goal):
         if self.__goal != goal:
@@ -266,7 +302,6 @@ class BattlesSeries(Progress):
             self.setBattles(progress['battles'])
 
     def setZero(self):
-        self.setState(QUEST_PROGRESS_STATE.IN_PROGRESS)
         self.setBattles([])
 
     def isZero(self):
@@ -383,20 +418,22 @@ class CumulativeOnlyProgressCollector(IDataCollector):
 
 
 class ProgressStorage(object):
-    __slots__ = ('__progresses', '_buildrers', '_wasMultiplied', '_orProgresses')
+    __slots__ = ('__progresses', '_builders', '_wasMultiplied')
 
     def __init__(self, questCfg, savedProgresses=None):
         self.__progresses = {}
-        self._buildrers = {}
+        self._builders = {}
         self._wasMultiplied = None
-        self._orProgresses = {}
         for builder in self._getBuilders():
             self.__addBuilder(builder)
 
+        _isInOrGroup = {}
         for progressID, configData in questCfg.iteritems():
-            self.__progresses[progressID] = self._createProgress(progressID, configData)
-            if hasattr(self.__progresses[progressID], 'isInOrGroup') and self.__progresses[progressID].isInOrGroup():
-                self._orProgresses[progressID] = self.__progresses[progressID].isCompleted()
+            progress = self._createProgress(progressID, configData)
+            self.__progresses[progressID] = progress
+            isInOrGroup = progress.isInOrGroup()
+            isInOrGroupKey = (progress.isMain(), progress.isAward())
+            _isInOrGroup[(isInOrGroupKey, isInOrGroup)] = isInOrGroup
 
         if savedProgresses:
             self.update(savedProgresses)
@@ -407,10 +444,6 @@ class ProgressStorage(object):
             progress = self.__progresses.get(progressID)
             if progress:
                 progress.updateProgress(progressInfo)
-                if hasattr(progress, 'isInOrGroup') and progress.isInOrGroup():
-                    self._orProgresses[progressID] = progress.isCompleted()
-
-        self.__escapeFailedStateForOrGroup(progressesInfo)
 
     def getProgresses(self):
         return self.__progresses
@@ -421,18 +454,29 @@ class ProgressStorage(object):
     def getMainProgress(self):
         return [ value for value in self.__progresses.itervalues() if value.isMain() and value.isAward() ]
 
+    def getAddProgress(self):
+        return [ value for value in self.__progresses.itervalues() if not value.isMain() and value.isAward() ]
+
     def save(self):
         return self._collectProgressInfo(CumulativeOnlyProgressCollector())
 
+    @staticmethod
+    def collectSingleProgressInfo(dataCollector, progress):
+        if dataCollector.validate(progress):
+            return dataCollector.collect(progress)
+        else:
+            return
+
     def _createProgress(self, progressID, configData):
-        builder = self._buildrers[configData['type']]
+        builder = self._builders[configData['type']]
         return builder.build(progressID, configData)
 
     def _collectProgressInfo(self, dataCollector):
         result = {}
         for progressID, progress in self.__progresses.iteritems():
-            if dataCollector.validate(progress):
-                result[progressID] = dataCollector.collect(progress)
+            progressInfo = self.collectSingleProgressInfo(dataCollector, progress)
+            if progressInfo:
+                result[progressID] = progressInfo
 
         return result
 
@@ -445,24 +489,16 @@ class ProgressStorage(object):
          BattlesSeriesProgressBuilder)
 
     def __addBuilder(self, builder):
-        self._buildrers[builder.getTemplateID()] = builder
-
-    def __escapeFailedStateForOrGroup(self, progressesInfo):
-        if any(self._orProgresses.values()):
-            for progressID, progressInfo in progressesInfo.iteritems():
-                progress = self.__progresses.get(progressID)
-                if hasattr(progress, 'isInOrGroup') and progress.isInOrGroup() and progressInfo['state'] == QUEST_PROGRESS_STATE.FAILED:
-                    progress.setState(QUEST_PROGRESS_STATE.COMPLETED)
+        self._builders[builder.getTemplateID()] = builder
 
 
 class BaseQuestProgress(object):
 
     def __init__(self, questCfg, savedProgresses):
         self._progressStorage = ProgressStorage(questCfg, savedProgresses)
+        self._wasCompleted = self.checkComplete(self._progressStorage.getMainProgress())
         self._timeProvider = lambda : 0
-        self._wasFailed = False
-        self._wasCompleted = False
-        self._progressBeforeFailed = ''
+        self._progressBeforeFailed = {}
         self.updateIfConditionsAreAlreadySolved()
 
     def save(self):
@@ -474,26 +510,54 @@ class BaseQuestProgress(object):
     def getProgress(self, progressID):
         return self._progressStorage.getProgress(progressID)
 
+    def getAddProgress(self):
+        return self._progressStorage.getAddProgress()
+
     def getMainProgress(self):
         return self._progressStorage.getMainProgress()
+
+    @staticmethod
+    def checkComplete(progresses):
+        if not progresses:
+            return False
+        checkMethod = any if progresses[0].isInOrGroup() else all
+        return checkMethod(p.getState() in QUEST_PROGRESS_STATE.COMPLETED_STATES for p in progresses)
 
     def updateIfConditionsAreAlreadySolved(self):
         progresses = self._progressStorage.getMainProgress()
         if not progresses:
             return
         for progress in progresses:
-            if progress.isAward() and progress.isCumulative() and progress.checkIsCompleted():
-                self.setCompleted(progress.getProgressID(), True)
+            if progress.isCumulative() and progress.getState() not in QUEST_PROGRESS_STATE.FINISHED_STATES:
+                pID = progress.getProgressID()
+                if progress.checkIsCompleted():
+                    self.setCompleted(pID, True)
+                elif progress.checkIsFailed():
+                    self.setZero(pID)
 
-        isMainProgressCompleted = self.isCompleted(progresses[0].getProgressID())
-        for progress in (x for x in self._progressStorage.getProgresses().itervalues() if x not in progresses):
-            if progress.isAward() and progress.isCumulative() and progress.checkIsCompleted() and isMainProgressCompleted:
-                self.setCompleted(progress.getProgressID(), True)
+        isMainProgressCompleted = self.checkComplete(progresses)
+        if isMainProgressCompleted and progresses[0].isInOrGroup():
+            for progress in progresses:
+                if progress.getState() not in QUEST_PROGRESS_STATE.FINISHED_STATES:
+                    progress.setState(QUEST_PROGRESS_STATE.COMPLETED)
+
+        progresses = self._progressStorage.getAddProgress()
+        for progress in progresses:
+            if progress.isCumulative() and progress.getState() not in QUEST_PROGRESS_STATE.FINISHED_STATES:
+                pID = progress.getProgressID()
+                if progress.checkIsCompleted():
+                    self.setCompleted(pID, isMainProgressCompleted)
+                elif progress.checkIsFailed():
+                    self.setZero(pID)
+
+        if self.checkComplete(progresses) and progresses[0].isInOrGroup():
+            for progress in progresses:
+                if progress.getState() not in QUEST_PROGRESS_STATE.FINISHED_STATES:
+                    self.setCompleted(progress.getProgressID(), isMainProgressCompleted)
 
     def setCompleted(self, progressID, isMainProgressCompleted=True):
         progress = self._progressStorage.getProgress(progressID)
         if isMainProgressCompleted:
-            self.setWasCompleted(progressID, True)
             progress.setState(QUEST_PROGRESS_STATE.COMPLETED)
         else:
             progress.setState(QUEST_PROGRESS_STATE.PRELIMINARY_COMPLETED)
@@ -525,20 +589,11 @@ class BaseQuestProgress(object):
     def setZero(self, progressID):
         progress = self._progressStorage.getProgress(progressID)
         progress.setState(QUEST_PROGRESS_STATE.IN_PROGRESS)
-        if isinstance(progress, ValueProgress):
-            progress.setValue(0)
-        elif isinstance(progress, BattlesSeries):
-            progress.setBattles([])
-        else:
-            progress.setCounter(Counter())
+        progress.setZero()
 
     def isZero(self, progressID):
         progress = self._progressStorage.getProgress(progressID)
-        if isinstance(progress, ValueProgress):
-            return bool(progress.getState() is QUEST_PROGRESS_STATE.IN_PROGRESS and progress.getValue() == 0)
-        if isinstance(progress, BattlesSeries):
-            return bool(progress.getState() is QUEST_PROGRESS_STATE.IN_PROGRESS and progress.getBattles() == [])
-        return bool(progress.getState() is QUEST_PROGRESS_STATE.IN_PROGRESS and progress.getCounter() == Counter())
+        return bool(progress.getState() is QUEST_PROGRESS_STATE.IN_PROGRESS and progress.isZero())
 
     def setFailedIfNotCompleted(self, progressID):
         progress = self._progressStorage.getProgress(progressID)
@@ -553,7 +608,7 @@ class BaseQuestProgress(object):
         progress = self._progressStorage.getProgress(progressID)
         if progress.getState() not in QUEST_PROGRESS_STATE.COMPLETED_STATES:
             progress.setValue(value)
-            if progress.getValue() >= progress.getGoal():
+            if progress.checkIsCompleted():
                 self.setCompleted(progressID, isMainProgressCompleted)
         return self.isCompleted(progressID)
 
@@ -572,7 +627,7 @@ class BaseQuestProgress(object):
                             value *= multiplier
                         self._progressStorage._wasMultiplied = needMultiply
                 progress += value
-                if progress.getValue() >= progress.getGoal():
+                if progress.checkIsCompleted():
                     self.setCompleted(progressID, isMainProgressCompleted)
         return self.isCompleted(progressID)
 
@@ -588,7 +643,7 @@ class BaseQuestProgress(object):
         if not countdown or self._timeProvider() <= countdown:
             if progress.getState() not in QUEST_PROGRESS_STATE.COMPLETED_STATES:
                 progress.addValue(key, value)
-                if progress.getUniqueCount() >= progress.getUniqueGoal() and progress.getTotalCount() >= progress.getTotalGoal():
+                if progress.checkIsCompleted():
                     self.setCompleted(progressID, isMainProgressCompleted)
         return self.isCompleted(progressID)
 
@@ -621,9 +676,9 @@ class BaseQuestProgress(object):
             elif progress.getState() not in QUEST_PROGRESS_STATE.COMPLETED_STATES:
                 if progress.getBattlesLimit() > len(progress.getBattles()):
                     progress.addBattle(result)
-                    if progress.getSuccessfullBattles() >= progress.getGoal():
+                    if progress.checkIsCompleted():
                         self.setCompleted(progressID, self.isCompleted(mainID))
-                if progress.getBattlesLimit() < progress.getFailedBattles() + progress.getGoal():
+                if progress.checkIsFailed():
                     if self.isCompleted(mainID):
                         self.setWasFailed(progressID, True)
                         self.setZero(progressID)
@@ -632,9 +687,9 @@ class BaseQuestProgress(object):
         elif progress.getState() not in QUEST_PROGRESS_STATE.COMPLETED_STATES:
             if progress.getBattlesLimit() > len(progress.getBattles()):
                 progress.addBattle(result)
-                if progress.getSuccessfullBattles() >= progress.getGoal():
+                if progress.checkIsCompleted():
                     self.setCompleted(progressID)
-            if progress.getBattlesLimit() < progress.getFailedBattles() + progress.getGoal():
+            if progress.checkIsFailed():
                 self.setWasFailed(progressID, True)
                 self.setZero(progressID)
         return self.isCompleted(progressID)
@@ -678,30 +733,26 @@ class BaseQuestProgress(object):
     def setWasFailed(self, progressID, value):
         progress = self._progressStorage.getProgress(progressID)
         if progress.isAward():
-            self._progressBeforeFailed = str(self._progressStorage.save())
-            self._wasFailed = value
+            if value:
+                progressValue = self._progressStorage.collectSingleProgressInfo(CumulativeOnlyProgressCollector(), progress)
+                if progressValue is not None:
+                    self._progressBeforeFailed[progressID] = progressValue
+            else:
+                self._progressBeforeFailed.clear()
+        return
 
     def wasFailed(self, progressID):
         progress = self._progressStorage.getProgress(progressID)
         if progress.isAward():
-            return self._wasFailed
+            return bool(self._progressBeforeFailed)
         else:
             return False
 
     def getProgressBeforeFailed(self):
         return self._progressBeforeFailed
 
-    def setWasCompleted(self, progressID, value):
-        progress = self._progressStorage.getProgress(progressID)
-        if progress.isAward() and progress.isMain():
-            self._wasCompleted = value
-
-    def wasCompleted(self, progressID):
-        progress = self._progressStorage.getProgress(progressID)
-        if progress.isAward() and progress.isMain():
-            return self._wasCompleted
-        else:
-            return False
+    def wasCompleted(self):
+        return self._wasCompleted
 
 
 def hasCorrespondedCamouflage(vehDescr, outfit):

@@ -1,7 +1,8 @@
 package net.wg.gui.battle.views.debugPanel
 {
-   import flash.display.Sprite;
    import flash.text.TextField;
+   import net.wg.data.constants.generated.BATTLEATLAS;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.infrastructure.base.meta.IDebugPanelMeta;
    import net.wg.infrastructure.base.meta.impl.DebugPanelMeta;
    import scaleform.gfx.TextFieldEx;
@@ -9,109 +10,83 @@ package net.wg.gui.battle.views.debugPanel
    public class DebugPanel extends DebugPanelMeta implements IDebugPanelMeta
    {
       
-      private static const POS_X_0:int = 0;
-      
-      private static const POS_X_1:int = -23;
+      private static const REPLAY_POS_X:int = 23;
        
       
       public var fpsTF:TextField = null;
       
       public var pingTF:TextField = null;
       
-      public var lagOnlineSpr:Sprite = null;
+      public var lagOnlineSpr:BattleAtlasSprite = null;
       
-      public var lagOfflineSpr:Sprite = null;
+      public var lagOfflineSpr:BattleAtlasSprite = null;
       
-      private var _fpsFieldLength:int = -1;
-      
-      private var _isLagging:Boolean = false;
-      
-      private var _fpsStr:String = "";
-      
-      private var _pingStr:String = "";
+      public var bg:BattleAtlasSprite = null;
       
       public function DebugPanel()
       {
          super();
          TextFieldEx.setNoTranslate(this.fpsTF,true);
          TextFieldEx.setNoTranslate(this.pingTF,true);
-      }
-      
-      public function as_updatePingInfo(param1:String) : void
-      {
-         this.updatePingInfo(param1);
-      }
-      
-      public function as_updateFPSInfo(param1:String) : void
-      {
-         this.updateFPSInfo(param1);
-      }
-      
-      public function as_updateLagInfo(param1:Boolean) : void
-      {
-         this.updateLagInfo(param1);
-      }
-      
-      public function as_updatePingFPSInfo(param1:String, param2:String) : void
-      {
-         this.updatePingInfo(param1);
-         this.updateFPSInfo(param2);
-      }
-      
-      public function as_updatePingFPSLagInfo(param1:String, param2:String, param3:Boolean) : void
-      {
-         this.updatePingInfo(param1);
-         this.updateFPSInfo(param2);
-         this.updateLagInfo(param3);
-      }
-      
-      private function updatePingInfo(param1:String) : void
-      {
-         if(this._pingStr != param1)
-         {
-            this._pingStr = param1;
-            this.pingTF.text = this._pingStr;
-         }
-      }
-      
-      private function updateFPSInfo(param1:String) : void
-      {
-         if(this._fpsStr != param1)
-         {
-            this._fpsStr = param1;
-            this._fpsFieldLength = param1.length;
-            this.fpsTF.text = this._fpsStr;
-            if(this._fpsFieldLength > 4)
-            {
-               if(x != POS_X_0)
-               {
-                  x = POS_X_0;
-               }
-            }
-            else if(x != POS_X_1)
-            {
-               x = POS_X_1;
-            }
-         }
-      }
-      
-      private function updateLagInfo(param1:Boolean) : void
-      {
-         if(this._isLagging != param1)
-         {
-            this._isLagging = param1;
-            this.lagOnlineSpr.visible = !this._isLagging;
-            this.lagOfflineSpr.visible = this._isLagging;
-         }
+         this.lagOnlineSpr.imageName = BATTLEATLAS.DEBUG_ON;
+         this.lagOfflineSpr.imageName = BATTLEATLAS.DEBUG_OFF;
+         this.bg.imageName = BATTLEATLAS.DEBUG_BG;
       }
       
       override protected function onDispose() : void
       {
          this.lagOnlineSpr = null;
          this.lagOfflineSpr = null;
+         this.bg = null;
          this.fpsTF = null;
          this.pingTF = null;
          super.onDispose();
+      }
+      
+      public function as_initReplay() : void
+      {
+         x = REPLAY_POS_X;
+      }
+      
+      public function as_updateAll(param1:int, param2:int, param3:Boolean) : void
+      {
+         this.pingTF.text = param1.toString();
+         this.fpsTF.text = param2.toString();
+         this.lagOnlineSpr.visible = !param3;
+         this.lagOfflineSpr.visible = param3;
+      }
+      
+      public function as_updateFps(param1:int) : void
+      {
+         this.fpsTF.text = param1.toString();
+      }
+      
+      public function as_updatePing(param1:int) : void
+      {
+         this.pingTF.text = param1.toString();
+      }
+      
+      public function as_updatePingFPS(param1:int, param2:int) : void
+      {
+         this.pingTF.text = param1.toString();
+         this.fpsTF.text = param2.toString();
+      }
+      
+      public function as_updateReplay(param1:int, param2:int, param3:Boolean, param4:int) : void
+      {
+         if(param1 >= 0)
+         {
+            this.pingTF.text = param1.toString();
+         }
+         if(param4 > 0)
+         {
+            this.fpsTF.text = param4.toString() + "(" + param2.toString() + ")";
+         }
+         if(this.lagOfflineSpr.visible != param3)
+         {
+            this.lagOnlineSpr.visible = !param3;
+            this.lagOfflineSpr.visible = param3;
+         }
       }
    }
 }

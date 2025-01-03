@@ -65,10 +65,6 @@ package net.wg.gui.lobby.hangar.quests
          "ease":Quartic.easeOut,
          "fastTransform":false
       };
-      
-      private static const LEFTSIDE_SIDE_OFFSET_X:int = 20;
-      
-      private static const INV_RECREATE_DATA:String = "invRecreateData";
        
       
       public var questsHitArea:Sprite = null;
@@ -106,8 +102,6 @@ package net.wg.gui.lobby.hangar.quests
       private var _secondaryEntryPointLeft:IHeaderSecondaryWidget = null;
       
       private var _secondaryEntryPointRight:IHeaderSecondaryWidget = null;
-      
-      private var _useLeftSideOffset:Boolean = true;
       
       public function HeaderQuestsFlags()
       {
@@ -157,14 +151,12 @@ package net.wg.gui.lobby.hangar.quests
       
       override protected function draw() : void
       {
-         var _loc1_:Boolean = false;
          super.draw();
          if(this._questsGroupsData)
          {
-            _loc1_ = isInvalid(INV_RECREATE_DATA);
-            if(isInvalid(InvalidationType.DATA) || _loc1_)
+            if(isInvalid(InvalidationType.DATA))
             {
-               this.doUpdateData(_loc1_);
+               this.doUpdateData();
                invalidateSize();
             }
             if(isInvalid(InvalidationType.SIZE))
@@ -288,44 +280,10 @@ package net.wg.gui.lobby.hangar.quests
       
       public function setData(param1:Vector.<HeaderQuestGroupVO>) : void
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
-         var _loc5_:int = 0;
          if(param1 != null && this._questsGroupsData != param1)
          {
-            _loc2_ = false;
-            if(this._questsGroupsContainers)
-            {
-               _loc3_ = this._questsGroupsContainers.length;
-               _loc4_ = param1.length;
-               if(_loc3_ == _loc4_)
-               {
-                  _loc5_ = 0;
-                  while(_loc5_ < _loc3_)
-                  {
-                     if(param1[_loc5_].isRightSide != this._questsGroupsContainers[_loc5_].isRightSide)
-                     {
-                        _loc2_ = true;
-                        break;
-                     }
-                     _loc5_++;
-                  }
-               }
-               else
-               {
-                  _loc2_ = true;
-               }
-            }
             this._questsGroupsData = param1;
-            if(_loc2_)
-            {
-               invalidate(INV_RECREATE_DATA);
-            }
-            else
-            {
-               invalidateData();
-            }
+            invalidateData();
          }
       }
       
@@ -357,33 +315,33 @@ package net.wg.gui.lobby.hangar.quests
          }
       }
       
-      private function doUpdateData(param1:Boolean) : void
+      private function doUpdateData() : void
       {
-         var _loc3_:IHeaderQuestsContainer = null;
-         var _loc2_:HeaderQuestGroupVO = null;
-         var _loc4_:int = Boolean(this._questsGroupsData) ? int(this._questsGroupsData.length) : int(0);
-         var _loc5_:int = Boolean(this._questsGroupsContainers) ? int(this._questsGroupsContainers.length) : int(0);
-         var _loc6_:Boolean = param1 || _loc4_ != _loc5_;
-         if(!_loc6_)
+         var _loc2_:IHeaderQuestsContainer = null;
+         var _loc1_:HeaderQuestGroupVO = null;
+         var _loc3_:int = Boolean(this._questsGroupsData) ? int(this._questsGroupsData.length) : int(0);
+         var _loc4_:int = Boolean(this._questsGroupsContainers) ? int(this._questsGroupsContainers.length) : int(0);
+         var _loc5_:Boolean = _loc3_ != _loc4_;
+         if(!_loc5_)
          {
-            if(_loc5_ > 0)
+            if(_loc4_ > 0)
             {
-               for each(_loc3_ in this._questsGroupsContainers)
+               for each(_loc2_ in this._questsGroupsContainers)
                {
-                  _loc2_ = findGroupDataByID(this._questsGroupsData,_loc3_.groupID);
-                  if(!_loc3_.hasInformersEqualNewData(_loc2_))
+                  _loc1_ = findGroupDataByID(this._questsGroupsData,_loc2_.groupID);
+                  if(!_loc2_.hasInformersEqualNewData(_loc1_))
                   {
-                     _loc6_ = true;
+                     _loc5_ = true;
                      break;
                   }
                }
             }
             else
             {
-               _loc6_ = true;
+               _loc5_ = true;
             }
          }
-         if(_loc6_)
+         if(_loc5_)
          {
             App.toolTipMgr.hide();
             this.disposeQuestContainers();
@@ -760,7 +718,6 @@ package net.wg.gui.lobby.hangar.quests
       private function onMoveContainerCompleted() : void
       {
          this._isMoveContainerInProgress = false;
-         this.updateHitArea();
       }
       
       public function get hasQuests() : Boolean
@@ -795,20 +752,6 @@ package net.wg.gui.lobby.hangar.quests
             this._flagsOffsetY = param1;
             invalidateSize();
          }
-      }
-      
-      public function set useLeftSideOffset(param1:Boolean) : void
-      {
-         if(this._useLeftSideOffset != param1)
-         {
-            this._useLeftSideOffset = param1;
-            invalidateSize();
-         }
-      }
-      
-      private function get leftSideOffset() : Number
-      {
-         return !!this._useLeftSideOffset ? Number(LEFTSIDE_SIDE_OFFSET_X) : Number(0);
       }
       
       private function get entryPointWidth() : int

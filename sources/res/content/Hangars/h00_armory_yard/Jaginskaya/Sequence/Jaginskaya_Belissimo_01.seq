@@ -25,7 +25,7 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>Belissimo_01_sound</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
@@ -40,8 +40,8 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>4.766667</startTime>
-				<duration>29.400002</duration>
+				<startTime>0.000000</startTime>
+				<duration>36.420292</duration>
 				<sequenceSound>ay_vo_jaginskaya_belissimo</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

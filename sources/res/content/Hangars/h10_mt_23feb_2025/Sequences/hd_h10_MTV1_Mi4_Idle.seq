@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Mi4_body</name>
+		<type>model</type>
+		<resource>content/Hangars/h10_mt_23feb_2025/Environment/normal/lod0/hd_h10_MTV1_0018_Mi4_01.model</resource>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Mi4_screw_top</name>
+		<type>model</type>
+		<resource>content/Hangars/h10_mt_23feb_2025/Environment/normal/lod0/hd_h10_MTV1_0018_Mi4_02.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.000000</duration>
+				<value>Mi4_body|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 3.698666 -0.534517</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 719.999939 0.000000</inTangent>
+				<outTangent>0.000000 719.999939 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000 2160.000000 0.000000</value>
+				<inTangent>-0.000000 719.999939 -0.000000</inTangent>
+				<outTangent>-0.000000 719.999939 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Mi4_screw_side</name>
+		<type>model</type>
+		<resource>content/Hangars/h10_mt_23feb_2025/Environment/normal/lod0/hd_h10_MTV1_0018_Mi4_03.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.000000</duration>
+				<value>Mi4_body|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.139580 4.599609 12.161697</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 90.000000</value>
+				<inTangent>839.999939 0.000000 0.000000</inTangent>
+				<outTangent>839.999939 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>2520.000000 0.000000 90.000000</value>
+				<inTangent>839.999939 -0.000000 -0.000000</inTangent>
+				<outTangent>839.999939 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

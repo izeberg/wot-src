@@ -28,5 +28,9 @@ package net.wg.gui.interfaces
       function get readyToShow() : Boolean;
       
       function set readyToShow(param1:Boolean) : void;
+      
+      function get isHovered() : Boolean;
+      
+      function set isHovered(param1:Boolean) : void;
    }
 }

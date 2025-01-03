@@ -11,7 +11,7 @@
 	<postProgressionTree>role_MT_sniper</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>45</forward>
+		<forward>50</forward>
 		<backward>23</backward>
 	</speedLimits>
 	<invisibility>
@@ -5100,15 +5100,15 @@
 					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
-							230
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							160
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							75
+							120
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -6319,15 +6319,15 @@
 					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
-							230
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							160
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							75
+							120
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -6344,7 +6344,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.36
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>5</reloadTime>
@@ -6496,15 +6496,15 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							230
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							160
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							75
+							120
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -7511,11 +7511,11 @@
 			<engines>
 				<_Mitsubishi_12HM20WT>
 					<smplEnginePower>650</smplEnginePower>
-					<smplFwMaxSpeed>45</smplFwMaxSpeed>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_Mitsubishi_12HM20WT>
 				<_Mitsubishi_12HM21WT>
 					<smplEnginePower>750</smplEnginePower>
-					<smplFwMaxSpeed>45</smplFwMaxSpeed>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_Mitsubishi_12HM21WT>
 			</engines>
 			<chassis>

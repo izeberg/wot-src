@@ -30,15 +30,6 @@ class PreloadableWindow(WindowImpl):
             self.hide()
 
 
-def removeNationFromTechName(string):
-    result = string.split(':')
-    if len(result) > 1:
-        return result[1]
-    if result:
-        return result[0]
-    return ''
-
-
 def getNationFromTechName(string):
     result = string.split(':')
     if result:

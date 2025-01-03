@@ -177,6 +177,13 @@
 					<!--BW_String-->
 				</value>
 			</arg>
+			<arg>
+				<argId>gunHeatingFactor</argId>
+				<value>
+					-0.001
+					<!--BW_String-->
+				</value>
+			</arg>
 		</defaultBlockSettings>
 	</perk>
 	<perk>

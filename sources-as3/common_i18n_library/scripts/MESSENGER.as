@@ -679,7 +679,9 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_2:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/2";
       
-      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_BOTH:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/both";
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_3:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/3";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_MULTIPLE:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/multiple";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_FORTRESOURCE:String = "#messenger:serviceChannelMessages/battleResults/fortResource";
       
@@ -975,6 +977,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_OFFERTOKENBONUS_TITLE:String = "#messenger:serviceChannelMessages/offerTokenBonus/title";
       
+      public static const SERVICECHANNELMESSAGES_OFFERTOKENBONUS_ALTERNATIVETITLE:String = "#messenger:serviceChannelMessages/offerTokenBonus/alternativeTitle";
+      
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED:String = "#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued";
       
       public static const SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES:String = "#messenger:serviceChannelMessages/durationOfPremiumAccountExpires";
@@ -1146,6 +1150,8 @@ package
       public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_REPAIR:String = "#messenger:serviceChannelMessages/sysMsg/titles/repair";
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_CUSTOMIZATION:String = "#messenger:serviceChannelMessages/sysMsg/titles/customization";
+      
+      public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_BOBBATTLESAVAILABLE:String = "#messenger:serviceChannelMessages/sysMsg/titles/bobBattlesAvailable";
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_PAYMENTMETHODLINK:String = "#messenger:serviceChannelMessages/sysMsg/titles/paymentMethodLink";
       
@@ -2420,6 +2426,14 @@ package
       public static const SERVICECHANNELMESSAGES_REFERRALTRANSACTION_DATE:String = "#messenger:serviceChannelMessages/referralTransaction/date";
       
       public static const SERVICECHANNELMESSAGES_COMP7_COUPONRECEIVED:String = "#messenger:serviceChannelMessages/comp7/couponReceived";
+      
+      public static const SERVICECHANNELMESSAGES_PERSONALMISSION_3_EARLYPERFECTCOMPLETION_CONGRATS:String = "#messenger:serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats";
+      
+      public static const SERVICECHANNELMESSAGES_PERSONALMISSION_3_EARLYPERFECTCOMPLETION_REWARDSWILLBERECEIVED:String = "#messenger:serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived";
+      
+      public static const SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_HEADER:String = "#messenger:serviceChannelMessages/newYearMandarinsConvert/header";
+      
+      public static const SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_TEXT:String = "#messenger:serviceChannelMessages/newYearMandarinsConvert/text";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

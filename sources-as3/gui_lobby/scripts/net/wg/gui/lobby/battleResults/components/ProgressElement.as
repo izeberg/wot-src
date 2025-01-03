@@ -18,6 +18,8 @@ package net.wg.gui.lobby.battleResults.components
       
       private static const PROGRESS_INDICATOR_OFFSET_Y:int = 14;
       
+      private static const PROGRESS_DIFF_OFFSET_X:int = 24;
+      
       private static const LABEL_OFFSET_Y:int = -2;
       
       private static const HIT_MC_BOTTOM_MARGIN:int = 3;
@@ -108,7 +110,7 @@ package net.wg.gui.lobby.battleResults.components
                }
                else
                {
-                  this.progressDiff.textField.text = this._data.progressDiff;
+                  this.progressDiff.textField.htmlText = this._data.progressDiff;
                   this._showProgressDiffTooltip = Boolean(this._data.progressDiff);
                   this.checkProgressIndicator();
                }
@@ -125,10 +127,17 @@ package net.wg.gui.lobby.battleResults.components
          if(isInvalid(InvalidationType.SIZE))
          {
             _loc4_ = this.titleTF.label.length > 0 ? int(this.titleTF.height + LABEL_OFFSET_Y) : int(0);
-            this.progressDiff.y = this.progressTF.y = _loc4_;
-            this.progressIndicator.y = _loc4_ + PROGRESS_INDICATOR_OFFSET_Y;
+            if(this.progressTF.label.length > 0)
+            {
+               this.progressDiff.y = this.progressTF.y = _loc4_;
+               this.progressIndicator.y = _loc4_ + PROGRESS_INDICATOR_OFFSET_Y;
+            }
             this.questStatus.x = width - this.questStatus.width - STATE_RIGHT | 0;
             this.questStatus.y = this.progressDiff.y;
+            if(this.progressDiff.visible && !this.questStatus.visible && !this.progressIndicator.visible)
+            {
+               this.progressDiff.x = width - this.progressDiff.width - PROGRESS_DIFF_OFFSET_X | 0;
+            }
             this.hitMC.height = this.progressIndicator.y + this.progressIndicator.height + HIT_MC_BOTTOM_MARGIN;
             setSize(this.width,this.hitMC.height);
          }

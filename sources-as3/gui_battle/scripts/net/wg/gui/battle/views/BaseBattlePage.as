@@ -26,6 +26,7 @@ package net.wg.gui.battle.views
    import net.wg.gui.battle.views.postmortemPanel.PostmortemPanel;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
    import net.wg.gui.battle.views.rocketAcceleratorPanel.RocketAcceleratorPanel;
+   import net.wg.gui.battle.views.thermalVisionPanel.ThermalVisionPanel;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessages;
    import net.wg.gui.lobby.settings.config.ControlsFactory;
    import net.wg.infrastructure.base.meta.IBattlePageMeta;
@@ -73,6 +74,8 @@ package net.wg.gui.battle.views
       public var dualGunPanel:DualGunPanel = null;
       
       public var rocketAcceleratorPanel:RocketAcceleratorPanel = null;
+      
+      public var thermalVisionPanel:ThermalVisionPanel = null;
       
       public var minimap:BaseMinimap = null;
       
@@ -135,13 +138,12 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          var _loc3_:int = param1 >> 1;
-         _loc4_ = param2 >> 1;
+         var _loc4_:int = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -275,6 +277,10 @@ package net.wg.gui.battle.views
          {
             this.registerComponent(this.rocketAcceleratorPanel,BATTLE_VIEW_ALIASES.ROCKET_ACCELERATOR_INDICATOR);
          }
+         if(this.thermalVisionPanel)
+         {
+            this.registerComponent(this.thermalVisionPanel,BATTLE_VIEW_ALIASES.THERMAL_VISION_INDICATOR);
+         }
          this.createPostmortemTipsComponent();
          this.postmortemTips.setCompVisible(false);
          this.updatePostmortemTipsPosition();
@@ -321,6 +327,7 @@ package net.wg.gui.battle.views
          this.perksPanel = null;
          this.dualGunPanel = null;
          this.rocketAcceleratorPanel = null;
+         this.thermalVisionPanel = null;
          this.calloutPanel = null;
          this.gameMessagesPanel = null;
          this.minimap = null;
@@ -363,11 +370,6 @@ package net.wg.gui.battle.views
             setFocus(this);
          }
          super.onSetModalFocus(param1);
-      }
-      
-      private function isElementVisible(param1:InteractiveObject) : Boolean
-      {
-         return param1 && param1.visible && param1.parent != this && this.isElementVisible(param1.parent);
       }
       
       public function as_checkDAAPI() : void
@@ -573,6 +575,32 @@ package net.wg.gui.battle.views
          return AMMUNITION_PANEL_Y_SHIFT;
       }
       
+      protected function updateAmmunitionPanelY() : void
+      {
+         if(this.prebattleAmmunitionPanel)
+         {
+            this.prebattleAmmunitionPanel.setYPos(this.battleLoading && this.prebattleAmmunitionPanel.isInLoading ? int(this.battleLoading.getContentY() + this.getAmmunitionPanelYShift()) : int(_originalHeight - this.prebattleAmmunitionPanel.height + this.getLoadedPrebattleAmmoPanelYShift()));
+         }
+      }
+      
+      protected function anchorVictimDogTag() : void
+      {
+         if(this.postmortemTips)
+         {
+            PostmortemPanel(this.postmortemTips).anchorVictimDogTag(this.minimap.currentTopLeftPoint.y);
+         }
+      }
+      
+      protected function getLoadedPrebattleAmmoPanelYShift() : int
+      {
+         return 0;
+      }
+      
+      private function isElementVisible(param1:InteractiveObject) : Boolean
+      {
+         return param1 && param1.visible && param1.parent != this && this.isElementVisible(param1.parent);
+      }
+      
       private function showComponent(param1:String, param2:Boolean) : void
       {
          var _loc3_:IDisplayableComponent = null;
@@ -593,27 +621,6 @@ package net.wg.gui.battle.views
          this.postmortemTips.y = height;
          this.postmortemTips.updateElementsPosition();
          this.anchorVictimDogTag();
-      }
-      
-      protected function updateAmmunitionPanelY() : void
-      {
-         if(this.prebattleAmmunitionPanel)
-         {
-            this.prebattleAmmunitionPanel.setYPos(this.battleLoading && this.prebattleAmmunitionPanel.isInLoading ? int(this.battleLoading.getContentY() + this.getAmmunitionPanelYShift()) : int(_originalHeight - this.prebattleAmmunitionPanel.height + this.getLoadedPrebattleAmmoPanelYShift()));
-         }
-      }
-      
-      protected function anchorVictimDogTag() : void
-      {
-         if(this.postmortemTips)
-         {
-            PostmortemPanel(this.postmortemTips).anchorVictimDogTag(this.minimap.currentTopLeftPoint.y);
-         }
-      }
-      
-      protected function getLoadedPrebattleAmmoPanelYShift() : int
-      {
-         return 0;
       }
       
       protected function get prebattleAmmunitionPanelShown() : Boolean

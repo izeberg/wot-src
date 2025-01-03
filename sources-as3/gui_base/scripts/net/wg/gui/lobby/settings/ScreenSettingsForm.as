@@ -46,6 +46,8 @@ package net.wg.gui.lobby.settings
       
       public var isColorBlindCheckbox:CheckBox = null;
       
+      public var uiEffectsCheckbox:CheckBox = null;
+      
       public var fovLabel:LabelControl = null;
       
       public var fovRangeSlider:RangeSlider = null;
@@ -99,6 +101,7 @@ package net.wg.gui.lobby.settings
          this.gammaLabel.dispose();
          this.gammaSettingButton.dispose();
          this.isColorBlindCheckbox.dispose();
+         this.uiEffectsCheckbox.dispose();
          this.colorFilterLabel.dispose();
          this.colorFilterNameLabel.dispose();
          this.colorFilterImage.dispose();
@@ -122,6 +125,7 @@ package net.wg.gui.lobby.settings
          this.gammaLabel = null;
          this.gammaSettingButton = null;
          this.isColorBlindCheckbox = null;
+         this.uiEffectsCheckbox = null;
          this.colorFilterLabel = null;
          this.colorFilterNameLabel = null;
          this.colorFilterImage = null;
@@ -142,6 +146,9 @@ package net.wg.gui.lobby.settings
          this.interfaceScaleLabel.text = SETTINGS.INTERFACESCALE;
          this.interfaceScaleLabel.infoIcoType = InfoIcon.TYPE_INFO;
          this.isColorBlindCheckbox.label = SETTINGS.ISCOLORBLIND;
+         this.uiEffectsCheckbox.label = SETTINGS.UIEFFECTS;
+         this.uiEffectsCheckbox.toolTip = SETTINGS.UIEFFECTS;
+         this.uiEffectsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.refreshRateLabel.text = SETTINGS.REFRESHRATE;
          this.fovLabel.text = SETTINGS.FOV;
          this.dynamicFovCheckbox.label = SETTINGS.DYNAMICFOV;

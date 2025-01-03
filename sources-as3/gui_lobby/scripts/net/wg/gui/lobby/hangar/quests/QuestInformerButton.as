@@ -209,7 +209,7 @@ package net.wg.gui.lobby.hangar.quests
             }
             else if(this._questVO.isTooltipWulf)
             {
-               App.toolTipMgr.showWulfTooltip(this._questVO.tooltip,null);
+               App.toolTipMgr.showWulfTooltip(this._questVO.tooltip,this._questVO.questID);
             }
             else
             {

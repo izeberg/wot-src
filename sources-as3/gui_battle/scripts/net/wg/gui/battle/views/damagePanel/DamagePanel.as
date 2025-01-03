@@ -3,7 +3,6 @@ package net.wg.gui.battle.views.damagePanel
    import flash.display.Bitmap;
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
-   import flash.display.Shape;
    import flash.events.MouseEvent;
    import flash.geom.Rectangle;
    import flash.text.TextField;
@@ -16,7 +15,6 @@ package net.wg.gui.battle.views.damagePanel
    import net.wg.data.constants.Values;
    import net.wg.data.constants.VehicleModules;
    import net.wg.data.constants.VehicleTypes;
-   import net.wg.data.constants.generated.ATLAS_CONSTANTS;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_ITEM_STATES;
    import net.wg.gui.battle.components.BattleAtlasSprite;
@@ -103,7 +101,7 @@ package net.wg.gui.battle.views.damagePanel
       
       private var _tankmenCtrl:TankmenCtrl;
       
-      private var _cruiseVector:Vector.<Shape>;
+      private var _cruiseVector:Vector.<BattleAtlasSprite>;
       
       private var _cruiseStateShift:int = 2;
       
@@ -149,7 +147,7 @@ package net.wg.gui.battle.views.damagePanel
       
       public function DamagePanel()
       {
-         this._cruiseVector = new Vector.<Shape>();
+         this._cruiseVector = new Vector.<BattleAtlasSprite>();
          this._cruiseCurrentStateId = this._cruiseStateShift;
          this._cruiseNewStateId = this._cruiseCurrentStateId;
          this._atlasManager = App.atlasMgr;
@@ -194,20 +192,22 @@ package net.wg.gui.battle.views.damagePanel
       
       override protected function configUI() : void
       {
-         var _loc1_:Shape = null;
+         var _loc1_:BattleAtlasSprite = null;
+         var _loc2_:int = 0;
          super.configUI();
          _loc1_ = null;
-         var _loc2_:int = 0;
-         while(_loc2_ < CRUISE_STATE_COUNT)
+         _loc2_ = getChildIndex(this.healthBar);
+         var _loc3_:int = 0;
+         while(_loc3_ < CRUISE_STATE_COUNT)
          {
-            _loc1_ = new Shape();
-            this._atlasManager.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,BATTLEATLAS.cruise(_loc2_.toString()),_loc1_.graphics,Values.EMPTY_STR,false,true);
+            _loc1_ = new BattleAtlasSprite();
+            _loc1_.imageName = BATTLEATLAS.cruise(_loc3_.toString());
             _loc1_.visible = false;
             _loc1_.x = CRUISE_X_POSITION;
             _loc1_.y = CRUISE_Y_POSITION;
-            addChild(_loc1_);
+            addChildAt(_loc1_,_loc2_);
             this._cruiseVector.push(_loc1_);
-            _loc2_++;
+            _loc3_++;
          }
          this.fireIndicator.addEventListener(MouseEvent.CLICK,this.onFireIndicatorClickHandler);
          this.stunHitMC.addEventListener(MouseEvent.CLICK,this.onStunCounterMcClickHandler);
@@ -222,7 +222,7 @@ package net.wg.gui.battle.views.damagePanel
       
       override protected function onDispose() : void
       {
-         var _loc1_:Shape = null;
+         var _loc1_:BattleAtlasSprite = null;
          this.stunHitMC.removeEventListener(MouseEvent.CLICK,this.onStunCounterMcClickHandler);
          this.stunCounterMc.dispose();
          this.stunCounterMc = null;
@@ -310,11 +310,12 @@ package net.wg.gui.battle.views.damagePanel
       override protected function setup(param1:String, param2:int, param3:String, param4:Array, param5:Array, param6:Boolean, param7:Boolean) : void
       {
          this._hasWheel = param3 == VehicleTypes.WHEEL;
+         var _loc8_:int = getChildIndex(this.healthBar) + 1;
          this.updateHealth(param1,param2);
          if(this._tankmenCtrl != null)
          {
             this.toggleClickableAreas(this._tankmenCtrl.getItems(),false);
-            this.changeDisplayListForCtrl(this._tankmenCtrl,false);
+            this.changeDisplayListForCtrl(this._tankmenCtrl,false,_loc8_);
             this._tankmenCtrl.dispose();
          }
          if(!param7)
@@ -331,7 +332,7 @@ package net.wg.gui.battle.views.damagePanel
          this.toggleClickableAreas(this._modulesCtrl.getItems(),true);
          this.updateModuleAssets();
          this._tankmenCtrl = new TankmenCtrl(param4);
-         this.changeDisplayListForCtrl(this._tankmenCtrl,true);
+         this.changeDisplayListForCtrl(this._tankmenCtrl,true,_loc8_);
          this.toggleClickableAreas(this._tankmenCtrl.getItems(),true);
          this._isInited = true;
          invalidateData();
@@ -645,51 +646,58 @@ package net.wg.gui.battle.views.damagePanel
          }
       }
       
-      private function changeDisplayListForCtrl(param1:IDamagePanelItemsCtrl, param2:Boolean) : void
+      private function changeDisplayListForCtrl(param1:IDamagePanelItemsCtrl, param2:Boolean, param3:int = 0) : void
       {
-         var _loc7_:IAssetCreator = null;
-         var _loc3_:Vector.<IDamagePanelClickableItem> = param1.getItems();
-         var _loc4_:int = _loc3_.length;
-         var _loc5_:Vector.<IAssetCreator> = new Vector.<IAssetCreator>();
-         var _loc6_:int = 0;
-         while(_loc6_ < _loc4_)
+         var _loc8_:IAssetCreator = null;
+         var _loc4_:Vector.<IDamagePanelClickableItem> = param1.getItems();
+         var _loc5_:int = _loc4_.length;
+         var _loc6_:Vector.<IAssetCreator> = new Vector.<IAssetCreator>();
+         var _loc7_:int = 0;
+         while(_loc7_ < _loc5_)
          {
-            _loc7_ = _loc3_[_loc6_];
-            _loc5_.push(_loc7_);
-            _loc6_++;
+            _loc8_ = _loc4_[_loc7_];
+            _loc6_.push(_loc8_);
+            _loc7_++;
          }
-         this.changeItemsInDisplaceList(_loc5_,param2);
+         this.changeItemsInDisplaceList(_loc6_,param2,param3);
       }
       
-      private function changeItemsInDisplaceList(param1:Vector.<IAssetCreator>, param2:Boolean) : void
+      private function changeItemsInDisplaceList(param1:Vector.<IAssetCreator>, param2:Boolean, param3:int) : void
       {
-         var _loc5_:IAssetCreator = null;
-         var _loc6_:Vector.<DisplayObject> = null;
-         var _loc7_:int = 0;
+         var _loc6_:IAssetCreator = null;
+         var _loc7_:Vector.<DisplayObject> = null;
          var _loc8_:int = 0;
-         var _loc9_:DisplayObject = null;
-         var _loc3_:int = param1.length;
-         var _loc4_:int = 0;
-         while(_loc4_ < _loc3_)
+         var _loc9_:int = 0;
+         var _loc10_:DisplayObject = null;
+         var _loc4_:int = param1.length;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc4_)
          {
-            _loc5_ = param1[_loc4_];
-            _loc6_ = _loc5_.getDisplayItems();
-            _loc7_ = _loc6_.length;
-            _loc8_ = 0;
-            while(_loc8_ < _loc7_)
+            _loc6_ = param1[_loc5_];
+            _loc7_ = _loc6_.getDisplayItems();
+            _loc8_ = _loc7_.length;
+            _loc9_ = 0;
+            while(_loc9_ < _loc8_)
             {
-               _loc9_ = _loc6_[_loc8_];
+               _loc10_ = _loc7_[_loc9_];
                if(param2)
                {
-                  addChild(_loc9_);
+                  if(param3 != 0)
+                  {
+                     addChildAt(_loc10_,param3);
+                  }
+                  else
+                  {
+                     addChild(_loc10_);
+                  }
                }
                else
                {
-                  removeChild(_loc9_);
+                  removeChild(_loc10_);
                }
-               _loc8_++;
+               _loc9_++;
             }
-            _loc4_++;
+            _loc5_++;
          }
       }
       

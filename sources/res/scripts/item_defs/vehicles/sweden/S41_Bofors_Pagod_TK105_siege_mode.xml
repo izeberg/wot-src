@@ -1586,7 +1586,7 @@
 					<jointNode>Lever_Joint_L0</jointNode>
 					<trackNode>Track_L0</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 135.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1595,7 +1595,7 @@
 					<jointNode>Lever_Joint_R0</jointNode>
 					<trackNode>Track_R0</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 135.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1604,7 +1604,7 @@
 					<jointNode>Lever_Joint_L1</jointNode>
 					<trackNode>Track_L1</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 130
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1613,7 +1613,7 @@
 					<jointNode>Lever_Joint_R1</jointNode>
 					<trackNode>Track_R1</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 130
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1622,7 +1622,7 @@
 					<jointNode>Lever_Joint_L2</jointNode>
 					<trackNode>Track_L2</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 125
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1631,7 +1631,7 @@
 					<jointNode>Lever_Joint_R2</jointNode>
 					<trackNode>Track_R2</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 125
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1640,7 +1640,7 @@
 					<jointNode>Lever_Joint_L3</jointNode>
 					<trackNode>Track_L3</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 120
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1649,7 +1649,7 @@
 					<jointNode>Lever_Joint_R3</jointNode>
 					<trackNode>Track_R3</trackNode>
 					<limits>
-						175.0 134.0
+						175.0 120
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1658,7 +1658,7 @@
 					<jointNode>Lever_Joint_L4</jointNode>
 					<trackNode>Track_L4</trackNode>
 					<limits>
-						185.0 125.0
+						185.0 115
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1667,7 +1667,7 @@
 					<jointNode>Lever_Joint_R4</jointNode>
 					<trackNode>Track_R4</trackNode>
 					<limits>
-						185.0 125.0
+						185.0 115
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1676,7 +1676,7 @@
 					<jointNode>Lever_Joint_L5</jointNode>
 					<trackNode>Track_L5</trackNode>
 					<limits>
-						195.0 105.0
+						195.0 123
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1685,7 +1685,7 @@
 					<jointNode>Lever_Joint_R5</jointNode>
 					<trackNode>Track_R5</trackNode>
 					<limits>
-						195.0 105.0
+						195.0 123
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1694,7 +1694,7 @@
 					<jointNode>Lever_Joint_L6</jointNode>
 					<trackNode>Track_L6</trackNode>
 					<limits>
-						195.0 105.0
+						195.0 115
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1703,7 +1703,7 @@
 					<jointNode>Lever_Joint_R6</jointNode>
 					<trackNode>Track_R6</trackNode>
 					<limits>
-						195.0 105.0
+						195.0 115
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -2039,45 +2039,39 @@
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>89</segmentsCount>
 					<segmentsOuterThickness>
-						0.065
+						0.064
 						<!--BW_String-->
 					</segmentsOuterThickness>
-					<segmentsInnerThickness>0.011441</segmentsInnerThickness>
+					<segmentsInnerThickness>
+						0.015
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						-1.358
 						<!--BW_String-->
 					</segmentsPlaneOffset>
 					<mainSegment>
 						<model>vehicles/sweden/S41_Bofors_Pagod_TK105/track/segment.model</model>
-						<length>
-							0.14989
-							<!--BW_String-->
-						</length>
+						<length>0.149879</length>
 					</mainSegment>
 					<springsLength>
 						<backwardMovement>
 							<back>
-								0.14
+								0.145
 								<!--BW_String-->
 							</back>
-							<top>0.146357</top>
-							<front>
-								0.15
-								<!--BW_String-->
-							</front>
-							<bottom>0.120059</bottom>
+							<top>0.147237</top>
+							<front>0.144728</front>
+							<bottom>0.124231</bottom>
 						</backwardMovement>
 						<forwardMovement>
-							<back>
-								0.15
-								<!--BW_String-->
-							</back>
-							<top>0.146357</top>
+							<back>0.144229</back>
+							<top>0.147237</top>
 							<front>
-								0.14
+								0.145
 								<!--BW_String-->
 							</front>
-							<bottom>0.120059</bottom>
+							<bottom>0.124231</bottom>
 						</forwardMovement>
 					</springsLength>
 					<bottomWheels>
@@ -2095,45 +2089,39 @@
 						<topFront>
 							<wheelName>WD_L0</wheelName>
 							<basePos>2.846034 0.871547</basePos>
-							<shiftVec>
-								0.278323 0.13249
-								<!--BW_String-->
-							</shiftVec>
-							<jointIdx>11</jointIdx>
+							<shiftVec>0.294066 0.114739</shiftVec>
+							<jointIdx>10</jointIdx>
 						</topFront>
 						<topBack>
 							<wheelName>WD_L4</wheelName>
 							<basePos>-2.509588 0.851542</basePos>
-							<shiftVec>-0.259645 0.199007</shiftVec>
+							<shiftVec>-0.329209 0.077667</shiftVec>
 							<jointIdx>52</jointIdx>
 						</topBack>
 						<bottomBack>
 							<wheelName>W_L6</wheelName>
-							<basePos>
-								-1.978832 0.35664
-								<!--BW_String-->
-							</basePos>
-							<shiftVec>
-								0.02768 -0.310451
-								<!--BW_String-->
-							</shiftVec>
-							<jointIdx>62</jointIdx>
+							<basePos>-1.980394 0.360265</basePos>
+							<shiftVec>-0.000213 -0.336029</shiftVec>
+							<jointIdx>61</jointIdx>
 						</bottomBack>
 						<bottomFront>
 							<wheelName>W_L0</wheelName>
-							<basePos>1.993719 0.363211</basePos>
-							<shiftVec>0.000563 -0.310496</shiftVec>
+							<basePos>
+								1.99496 0.360265
+								<!--BW_String-->
+							</basePos>
+							<shiftVec>0.136922 -0.306868</shiftVec>
 							<jointIdx>0</jointIdx>
 						</bottomFront>
 					</snapWheels>
 					<radiusOverrides>
 						<wheel>
 							<name>WD_L4</name>
-							<radius>0.325761</radius>
+							<radius>0.336916</radius>
 						</wheel>
 						<wheel>
 							<name>WD_L0</name>
-							<radius>0.306788</radius>
+							<radius>0.314232</radius>
 						</wheel>
 					</radiusOverrides>
 					<teethSyncs>
@@ -2141,25 +2129,22 @@
 						<segmentSyncPivotOffset>0</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_L4</name>
-							<startAngle>
-								-3.15984
-								<!--BW_String-->
-							</startAngle>
+							<startAngle>-9.261582</startAngle>
 							<teethCount>16</teethCount>
 						</sync>
 						<sync>
 							<name>WD_L0</name>
-							<startAngle>-5.938011</startAngle>
+							<startAngle>-0.235491</startAngle>
 							<teethCount>16</teethCount>
 						</sync>
 					</teethSyncs>
 					<collisionHull>
 						<top>
 							<part>
-								<xStart>-2.139054</xStart>
-								<xStep>0.074945</xStep>
+								<xStart>-2.139282</xStart>
+								<xStep>0.074939</xStep>
 								<ySamples>
-									1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.15916 1.20473 1.21477 1.19532 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.1772 1.21021 1.21157 1.18208 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.1919 1.21426 1.20687 1.1654 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475
+									1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2169,239 +2154,239 @@
 						<top>
 							<range>
 								<point>
-									-1.43265 1.206708 -2.139054
+									-1.43265 1.309584 -2.139282
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -2.06411
+									-1.43265 1.309584 -2.064343
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.989165
+									-1.57265 1.309584 -1.989403
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.91422
+									-1.56265 1.309584 -1.914464
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.839275
+									-1.56265 1.309584 -1.839525
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.764331
+									-1.43265 1.309584 -1.764585
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.689386
+									-1.43265 1.309584 -1.689646
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.614441
+									-1.43265 1.309584 -1.614707
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.539496
+									-1.52265 1.309584 -1.539768
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.464551
+									-1.51265 1.309584 -1.464828
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.389607
+									-1.51265 1.309584 -1.389889
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.314662
+									-1.50265 1.309584 -1.31495
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.50265 1.206708 -1.239717
+									-1.49265 1.309584 -1.24001
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.164773
+									-1.48265 1.309584 -1.165071
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.089828
+									-1.43265 1.309584 -1.090131
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -1.014883
+									-1.46265 1.309584 -1.015192
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -0.939938
+									-1.46265 1.309584 -0.940253
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.864994
+									-1.45265 1.309584 -0.865314
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.790049
+									-1.43265 1.309584 -0.790374
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.715104
+									-1.43265 1.309584 -0.715435
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.640159
+									-1.43265 1.309584 -0.640495
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206708 -0.565215
+									-1.43265 1.309584 -0.565556
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.49027
+									-1.43265 1.309584 -0.490617
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.415325
+									-1.43265 1.309584 -0.415678
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.34038
+									-1.43265 1.309584 -0.340738
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.265435
+									-1.43265 1.309584 -0.265799
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.190491
+									-1.43265 1.309584 -0.190859
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.115546
+									-1.43265 1.309584 -0.11592
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 -0.040601
+									-1.43265 1.309584 -0.040981
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.034344
+									-1.43265 1.309584 0.033958
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.109288
+									-1.43265 1.309584 0.108898
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.184233
+									-1.43265 1.309584 0.183837
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.259178
+									-1.43265 1.309584 0.258777
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.334123
+									-1.43265 1.309584 0.333716
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.409068
+									-1.43265 1.309584 0.408655
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.484012
+									-1.43265 1.309584 0.483594
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.558957
+									-1.43265 1.309584 0.558534
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.633902
+									-1.43265 1.309584 0.633473
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.708847
+									-1.43265 1.309584 0.708413
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.783791
+									-1.43265 1.309584 0.783352
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.858736
+									-1.43265 1.309584 0.858291
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 0.933681
+									-1.43265 1.309584 0.93323
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.008626
+									-1.43265 1.309584 1.00817
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.08357
+									-1.43265 1.309583 1.083109
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.158515
+									-1.43265 1.309584 1.158049
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.23346
+									-1.43265 1.309583 1.232988
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.308404
+									-1.43265 1.309583 1.307927
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.383349
+									-1.43265 1.309583 1.382866
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.458294
+									-1.43265 1.309583 1.457806
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.533239
+									-1.43265 1.309583 1.532745
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.608183
+									-1.43265 1.309583 1.607685
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.683128
+									-1.43265 1.309583 1.682624
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.758073
+									-1.43265 1.309583 1.757563
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.833018
+									-1.43265 1.309583 1.832502
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.907962
+									-1.43265 1.309583 1.907442
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 1.982907
+									-1.43265 1.309583 1.982381
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 2.057852
+									-1.43265 1.309583 2.057321
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 2.132797
+									-1.43265 1.309583 2.13226
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.43265 1.206707 2.207742
+									-1.43265 1.309583 2.207199
 									<!--BW_String-->
 								</point>
 							</range>
@@ -2412,45 +2397,48 @@
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>89</segmentsCount>
 					<segmentsOuterThickness>
-						0.065
+						0.064
 						<!--BW_String-->
 					</segmentsOuterThickness>
-					<segmentsInnerThickness>0.011441</segmentsInnerThickness>
+					<segmentsInnerThickness>
+						0.015
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						1.358
 						<!--BW_String-->
 					</segmentsPlaneOffset>
 					<mainSegment>
 						<model>vehicles/sweden/S41_Bofors_Pagod_TK105/track/segment.model</model>
-						<length>
-							0.14989
-							<!--BW_String-->
-						</length>
+						<length>0.149879</length>
 					</mainSegment>
 					<springsLength>
 						<backwardMovement>
 							<back>
-								0.14
+								0.145
 								<!--BW_String-->
 							</back>
-							<top>0.146386</top>
+							<top>0.147267</top>
 							<front>
-								0.15
+								0.14473
 								<!--BW_String-->
 							</front>
-							<bottom>0.120083</bottom>
+							<bottom>
+								0.124
+								<!--BW_String-->
+							</bottom>
 						</backwardMovement>
 						<forwardMovement>
-							<back>
-								0.15
-								<!--BW_String-->
-							</back>
-							<top>0.146386</top>
+							<back>0.144232</back>
+							<top>0.147267</top>
 							<front>
-								0.14
+								0.145
 								<!--BW_String-->
 							</front>
-							<bottom>0.120083</bottom>
+							<bottom>
+								0.124
+								<!--BW_String-->
+							</bottom>
 						</forwardMovement>
 					</springsLength>
 					<bottomWheels>
@@ -2468,42 +2456,45 @@
 						<topFront>
 							<wheelName>WD_R0</wheelName>
 							<basePos>2.846034 0.871547</basePos>
-							<shiftVec>0.277431 0.134349</shiftVec>
+							<shiftVec>0.293231 0.116857</shiftVec>
 							<jointIdx>11</jointIdx>
 						</topFront>
 						<topBack>
 							<wheelName>WD_R4</wheelName>
 							<basePos>-2.509588 0.851542</basePos>
 							<shiftVec>
-								-0.26131 0.196816
+								-0.329834 0.07497
 								<!--BW_String-->
 							</shiftVec>
-							<jointIdx>52</jointIdx>
+							<jointIdx>53</jointIdx>
 						</topBack>
 						<bottomBack>
 							<wheelName>W_R6</wheelName>
-							<basePos>-1.984007 0.369021</basePos>
+							<basePos>-1.985342 0.372396</basePos>
 							<shiftVec>
-								0.03357 -0.322827
+								0.005455 -0.34816
 								<!--BW_String-->
 							</shiftVec>
 							<jointIdx>62</jointIdx>
 						</bottomBack>
 						<bottomFront>
 							<wheelName>W_R0</wheelName>
-							<basePos>1.988955 0.375129</basePos>
-							<shiftVec>0.006866 -0.322805</shiftVec>
+							<basePos>1.990012 0.372396</basePos>
+							<shiftVec>
+								0.000395 -0.34816
+								<!--BW_String-->
+							</shiftVec>
 							<jointIdx>0</jointIdx>
 						</bottomFront>
 					</snapWheels>
 					<radiusOverrides>
 						<wheel>
 							<name>WD_R4</name>
-							<radius>0.325762</radius>
+							<radius>0.336916</radius>
 						</wheel>
 						<wheel>
 							<name>WD_R0</name>
-							<radius>0.306788</radius>
+							<radius>0.314232</radius>
 						</wheel>
 					</radiusOverrides>
 					<teethSyncs>
@@ -2511,25 +2502,22 @@
 						<segmentSyncPivotOffset>0</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_R4</name>
-							<startAngle>-3.192443</startAngle>
+							<startAngle>-9.319354</startAngle>
 							<teethCount>16</teethCount>
 						</sync>
 						<sync>
 							<name>WD_R0</name>
-							<startAngle>
-								-5.95187
-								<!--BW_String-->
-							</startAngle>
+							<startAngle>-0.263762</startAngle>
 							<teethCount>16</teethCount>
 						</sync>
 					</teethSyncs>
 					<collisionHull>
 						<top>
 							<part>
-								<xStart>-2.139054</xStart>
-								<xStep>0.074945</xStep>
+								<xStart>-2.139283</xStart>
+								<xStep>0.074939</xStep>
 								<ySamples>
-									1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.17514 1.21712 1.22657 1.20832 1.15163 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.19149 1.22223 1.22352 1.19599 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475 1.20513 1.22609 1.21913 1.18078 1.14475 1.14475 1.14475 1.14475 1.14475 1.14475
+									1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.25096 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24822 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.25048 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763 1.24763
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2539,239 +2527,239 @@
 						<top>
 							<range>
 								<point>
-									1.43265 1.206708 -2.139054
+									1.43265 1.309584 -2.139283
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -2.064109
+									1.43265 1.309584 -2.064344
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.989164
+									1.43265 1.309584 -1.989405
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.91422
+									1.43265 1.309584 -1.914465
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.839275
+									1.57265 1.309584 -1.839526
 									<!--BW_String-->
 								</point>
 								<point>
-									1.56265 1.206708 -1.76433
+									1.57265 1.309584 -1.764587
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.689385
+									1.57265 1.309584 -1.689648
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.614441
+									1.43265 1.309584 -1.614708
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.539496
+									1.43265 1.309584 -1.539769
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.464551
+									1.52265 1.309584 -1.46483
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.389606
+									1.52265 1.309584 -1.38989
 									<!--BW_String-->
 								</point>
 								<point>
-									1.51265 1.206708 -1.314662
+									1.52265 1.309584 -1.314951
 									<!--BW_String-->
 								</point>
 								<point>
-									1.51265 1.206708 -1.239717
+									1.43265 1.309584 -1.240012
 									<!--BW_String-->
 								</point>
 								<point>
-									1.51265 1.206707 -1.164772
+									1.43265 1.309584 -1.165072
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -1.089827
+									1.48265 1.309584 -1.090133
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206708 -1.014883
+									1.48265 1.309584 -1.015194
 									<!--BW_String-->
 								</point>
 								<point>
-									1.46265 1.206707 -0.939938
+									1.43265 1.309584 -0.940255
 									<!--BW_String-->
 								</point>
 								<point>
-									1.46265 1.206707 -0.864993
+									1.43265 1.309584 -0.865315
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.790048
+									1.44265 1.309584 -0.790376
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.715104
+									1.43265 1.309584 -0.715436
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.640159
+									1.43265 1.309584 -0.640497
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.565214
+									1.43265 1.309584 -0.565558
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.490269
+									1.43265 1.309584 -0.490619
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.415324
+									1.43265 1.309584 -0.415679
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.34038
+									1.43265 1.309584 -0.34074
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.265435
+									1.43265 1.309584 -0.265801
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.19049
+									1.43265 1.309584 -0.190862
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.115545
+									1.43265 1.309584 -0.115922
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 -0.040601
+									1.43265 1.309584 -0.040983
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.034344
+									1.43265 1.309584 0.033957
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.109289
+									1.43265 1.309584 0.108896
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.184234
+									1.43265 1.309584 0.183835
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.259179
+									1.43265 1.309584 0.258774
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.334123
+									1.43265 1.309584 0.333714
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.409068
+									1.43265 1.309584 0.408653
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.484013
+									1.43265 1.309584 0.483592
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.558958
+									1.43265 1.309584 0.558532
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.633902
+									1.43265 1.309584 0.633471
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.708847
+									1.43265 1.309584 0.70841
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.783792
+									1.43265 1.309584 0.78335
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.858737
+									1.43265 1.309584 0.858289
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 0.933681
+									1.43265 1.309584 0.933228
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.008626
+									1.43265 1.309584 1.008167
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.083571
+									1.43265 1.309583 1.083107
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.158515
+									1.43265 1.309584 1.158046
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.23346
+									1.43265 1.309583 1.232985
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.308405
+									1.43265 1.309583 1.307925
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.38335
+									1.43265 1.309583 1.382864
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.458295
+									1.43265 1.309583 1.457803
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.533239
+									1.43265 1.309583 1.532743
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.608184
+									1.43265 1.309583 1.607682
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.683129
+									1.43265 1.309583 1.682621
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.758074
+									1.43265 1.309583 1.75756
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.833018
+									1.43265 1.309583 1.8325
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.907963
+									1.43265 1.309583 1.907439
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 1.982908
+									1.43265 1.309583 1.982378
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 2.057853
+									1.43265 1.309583 2.057318
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 2.132798
+									1.43265 1.309583 2.132257
 									<!--BW_String-->
 								</point>
 								<point>
-									1.43265 1.206707 2.207742
+									1.43265 1.309583 2.207196
 									<!--BW_String-->
 								</point>
 							</range>

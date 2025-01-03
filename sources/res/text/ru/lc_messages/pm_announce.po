@@ -14,41 +14,44 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
-msgid "newTooltip/footer"
-msgstr "Скоро в игре"
+msgid "newTooltip/active/footer"
+msgstr "Выполняется"
+
+msgid "newTooltip/active/subtitle"
+msgstr "Прогресс по операциям:"
+
+msgid "newTooltip/completed/footer"
+msgstr "Выполняется на отлично"
+
+msgid "newTooltip/completed/footerDescription"
+msgstr "Выполняйте задачи с отличием, чтобы получить все награды кампании."
+
+msgid "newTooltip/completed/subtitle"
+msgstr "Выполнено задач с отличием: "
+
+msgid "newTooltip/completedPerfect/footer"
+msgstr "Выполнено с отличием"
+
+msgid "newTooltip/completedPerfect/footerDescription"
+msgstr "Все задачи кампании выполнены с отличием, награды получены."
+
+msgid "newTooltip/divider"
+msgstr "/"
 
 msgid "newTooltip/header"
-msgstr "Кампания «Новые горизонты» в разработке"
+msgstr "Кампания «Новые горизонты»"
 
 msgid "newTooltip/operation"
 msgstr "Операция «%(title)s»:"
 
-msgid "newTooltip/operations/first"
-msgstr "ARMT"
-
-msgid "newTooltip/operations/second"
-msgstr "TF-2 Clark"
-
 msgid "newTooltip/operations/third"
 msgstr "Projet Murat"
-
-msgid "newTooltip/otherRewards"
-msgstr "...и другие награды"
 
 msgid "newTooltip/rewardTitle"
 msgstr "Награды кампании:"
 
-msgid "newTooltip/subtitle"
-msgstr "Задачи кампании:"
-
-msgid "newTooltip/vehicles/first"
-msgstr "ARMT"
-
 msgid "newTooltip/vehicles/last"
 msgstr "В разработке"
-
-msgid "newTooltip/vehicles/second"
-msgstr "TF-2 Clark"
 
 msgid "newTooltip/vehicles/third"
 msgstr "Projet Murat"
@@ -60,13 +63,13 @@ msgid "oldTooltip/complete"
 msgstr "Выполняется"
 
 msgid "oldTooltip/completed/body"
-msgstr "Выполняйте задачи с отличием, чтобы получить все награды кампании"
+msgstr "Выполняйте задачи с отличием, чтобы получить все награды кампании."
 
 msgid "oldTooltip/completed/header"
 msgstr "Выполняется на отлично"
 
 msgid "oldTooltip/completedPerfect/body"
-msgstr "Все задачи кампании выполнены с отличием, награды получены"
+msgstr "Все задачи кампании выполнены с отличием, награды получены."
 
 msgid "oldTooltip/completedPerfect/header"
 msgstr "Выполнено с отличием"
@@ -81,7 +84,7 @@ msgid "oldTooltip/operation"
 msgstr "Операция «%(title)s»:"
 
 msgid "oldTooltip/rewardTitle"
-msgstr "Награды кампании:"
+msgstr "Награды кампаний:"
 
 msgid "oldTooltip/subtitle"
 msgstr "Прогресс по операциям:"

@@ -20,13 +20,15 @@ package net.wg.gui.components.advanced
    public class ButtonBarEx extends ButtonBar implements IGroupedControl
    {
       
-      public static const FORWARD_STEP_INDEX:int = 1;
+      private static const FORWARD_STEP_INDEX:int = 1;
       
-      public static const BACKWARD_STEP_INDEX:int = -1;
+      private static const BACKWARD_STEP_INDEX:int = -1;
       
-      public static const TOOLTIP_PROP_NAME:String = "tooltip";
+      private static const TOOLTIP_PROP_NAME:String = "tooltip";
       
-      public static const ENABLED_PROP_NAME:String = "enabled";
+      private static const IS_WULF_TOOLTIP_PROP_NAME:String = "isWulfTooltip";
+      
+      private static const ENABLED_PROP_NAME:String = "enabled";
       
       protected static const INVALID_LAYOUT:String = "invalidLayout";
        
@@ -107,6 +109,10 @@ package net.wg.gui.components.advanced
             if(param1.hasOwnProperty(TOOLTIP_PROP_NAME) && _loc3_.hasOwnProperty(TOOLTIP_PROP_NAME))
             {
                param1[TOOLTIP_PROP_NAME] = _loc3_.tooltip;
+            }
+            if(param1.hasOwnProperty(IS_WULF_TOOLTIP_PROP_NAME) && _loc3_.hasOwnProperty(IS_WULF_TOOLTIP_PROP_NAME))
+            {
+               param1[IS_WULF_TOOLTIP_PROP_NAME] = _loc3_.isWulfTooltip;
             }
             if(_loc3_.hasOwnProperty(ENABLED_PROP_NAME))
             {

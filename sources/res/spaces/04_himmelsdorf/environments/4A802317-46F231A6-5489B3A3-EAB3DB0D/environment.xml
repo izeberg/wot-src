@@ -18,6 +18,8 @@
 			<scatterColor>1.000000 0.717647 0.321569 13.201479</scatterColor>
 			<skyLow>0.400000</skyLow>
 			<skyHigh>1.000000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -28,6 +30,8 @@
 			<startDistance>160.000000</startDistance>
 			<skyLow>0.000000</skyLow>
 			<skyHigh>0.180000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -113,7 +117,7 @@
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.380000</flareIntensity>
 		<objectThreshold>4.727920</objectThreshold>
-		<objectFlareIntensity>0.700000</objectFlareIntensity>
+		<objectFlareIntensity>0.400000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -194,6 +198,7 @@
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap/>
+		<layerMask/>
 	</overlayMaterial>
 	<day_night_cycle>
 		<forward>
@@ -206,6 +211,7 @@
 			<angleZ>124.000000</angleZ>
 		</deferred>
 		<sunScale>2.700000</sunScale>
+		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>250.000000 217.000000 183.000000</sunColor>
 		<sunTexture/>
 		<sunLightColor>0.800000 0.635294 0.329412</sunLightColor>
@@ -241,7 +247,7 @@
 	<Wetness>
 		<waterColor>0.164706 0.149020 0.141176</waterColor>
 		<waterAlpha>0.400000</waterAlpha>
-		<waveTexture>maps/water/ripple_normal_animation/normal000.dds</waveTexture>
+		<waveTexture>maps/water/ripple_normal_animation/normal</waveTexture>
 		<waveTextureCount>32</waveTextureCount>
 		<waveAnimationSpeed>8.000000</waveAnimationSpeed>
 		<waveUVScale>0.250000</waveUVScale>

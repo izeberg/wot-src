@@ -111,6 +111,14 @@ class SelectableRewardManager(object):
             return offer.availableTokens
 
     @classmethod
+    def getGiftTokenCount(cls, bonus):
+        offer = cls._getBonusOffer(bonus)
+        if offer is None:
+            return 0
+        else:
+            return offer.giftTokenCount
+
+    @classmethod
     def getRemainedChoicesForFeature(cls):
         result = 0
         for token in cls.__getFeatureTokens():
@@ -149,6 +157,19 @@ class SelectableRewardManager(object):
 
 class BattlePassSelectableRewardManager(SelectableRewardManager):
     _FEATURE = Features.BATTLE_PASS
+
+    @classmethod
+    def getTabTooltipData(cls, selectableBonus):
+        tokenID = selectableBonus.getValue().keys()[0]
+        if cls.isFeatureReward(tokenID):
+            return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
+             _getGiftTokenFromOffer(tokenID), True])
+        else:
+            return
+
+
+class PersonalMissionsSelectableRewardManager(SelectableRewardManager):
+    _FEATURE = Features.PERSONAL_MISSIONS
 
     @classmethod
     def getTabTooltipData(cls, selectableBonus):

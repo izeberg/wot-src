@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.199319 -0.000001 -1.272510</min>
+		<max>1.200976 1.191869 1.055271</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A170_M4A3FL/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A170_M4A3FL/crash/lod0/Turret_01</nodefullVisual>
+</root>

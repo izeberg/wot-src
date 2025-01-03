@@ -52,30 +52,30 @@
 					</node>
 				</node>
 				<node>
+					<identifier>static</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.999640 -0.026840</row1>
+						<row2>0.000000 0.026840 0.999640</row2>
+						<row3>0.000000 0.000000 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>static_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.999640 0.026840</row1>
+							<row2>0.000000 0.026840 -0.999640</row2>
+							<row3>0.000000 -0.000000 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
 						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-			<node>
-				<identifier>static</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.999640 -0.026840</row1>
-					<row2>0.000000 0.026840 0.999640</row2>
-					<row3>0.000000 0.000000 -0.000000</row3>
-				</transform>
-				<node>
-					<identifier>static_BlendBone</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 0.999640 0.026840</row1>
-						<row2>0.000000 0.026840 -0.999640</row2>
-						<row3>0.000000 -0.000000 0.000000</row3>
 					</transform>
 				</node>
 			</node>
@@ -87,22 +87,22 @@
 		<node>Gun_BlendBone</node>
 		<node>static_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_02_Shape.vertices</vertices>
+			<primitive>gun_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
 						<Int>64</Int>
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						<Texture>vehicles/italy/It31_CC_67_B/CC_67_B_guns_ID.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -129,15 +129,15 @@
 						<Texture>vehicles/italy/It33_Orso/Orso_proxy_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001220 0.050335 -3.115355</groupOrigin>
+				<groupOrigin>-0.007744 0.107832 -3.073850</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.468873 -0.303458 -0.507266</min>
-		<max>0.466433 0.404128 6.737976</max>
+		<min>-0.448704 -0.287819 -0.424287</min>
+		<max>0.433215 0.503484 6.571987</max>
 	</boundingBox>
-	<geometrySize>1424</geometrySize>
-	<minUVDensity>0.002624</minUVDensity>
+	<geometrySize>1648</geometrySize>
+	<minUVDensity>0.000594</minUVDensity>
 </root>

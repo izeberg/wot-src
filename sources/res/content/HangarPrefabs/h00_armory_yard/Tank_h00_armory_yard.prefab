@@ -146,7 +146,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							4.35848 4.5 6.46171
+							-3.53851 4.5 -6.94471
 							<!--BW_String-->
 						</value>
 					</property>
@@ -157,7 +157,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.523599 -2.54818 -1.72064e-08
+							0.523599 0.471239 -1.72064e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -313,7 +313,7 @@
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>34</value>
+						<value>-153</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
@@ -414,28 +414,28 @@
 			<version>1</version>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>3</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>ChangeStartParams</name>
 						<value>0</value>
 					</property>
 					<property>
-						<name>DrawFrustrum</name>
+						<name>Draw Frustrum</name>
 						<value>0</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>3</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>ChangeStartParams</name>
 						<value>0</value>
 					</property>
 					<property>
-						<name>DrawFrustrum</name>
+						<name>Draw Frustrum</name>
 						<value>0</value>
 					</property>
 				</config>

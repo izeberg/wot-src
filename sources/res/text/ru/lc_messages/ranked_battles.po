@@ -43,16 +43,16 @@ msgid "alertMessage/standaloneNotSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
 
 msgid "alertMessage/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "alertMessage/timeLeft/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "alertMessage/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "alertMessage/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "alertMessage/undefined"
 msgstr "?empty?"
@@ -476,10 +476,10 @@ msgid "introPage/timeLeft/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "introPage/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "introPage/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "notification/rankEarned"
 msgstr "получен ранг"
@@ -546,16 +546,16 @@ msgstr ""
 "%(leftSeasonName)s сезон завершился."
 
 msgid "primeTimes/serverTooltip/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "primeTimes/serverTooltip/timeLeft/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "primeTimes/serverTooltip/timeLeft/lessMin"
 msgstr "минуту"
 
 msgid "primeTimes/serverTooltip/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "primeTimes/serverTooltip/undefined"
 msgstr "?empty?"
@@ -701,16 +701,16 @@ msgid "questsTooltip/available"
 msgstr "До конца сезона %(timeDelta)s"
 
 msgid "questsTooltip/available/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "questsTooltip/available/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "questsTooltip/available/lessMin"
 msgstr "менее минуты"
 
 msgid "questsTooltip/available/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "questsTooltip/bottom"
 msgstr "Ещё задач: %(number)d"
@@ -1526,16 +1526,16 @@ msgid "statistic/vehicleRank"
 msgstr "Заработанные ранговые жетоны"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "status/timeLeft/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "status/timeLeft/lessMin"
 msgstr "минуту"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "tooltip/closeButton/body"
 msgstr "Награда будет начислена автоматически."

@@ -7,7 +7,7 @@ from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.shared.gui_items.Vehicle import VEHICLE_ROLES_LABELS, VEHICLE_CLASS_NAME
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
-from skeletons.gui.game_control import IDebutBoxesController, IEarlyAccessController
+from skeletons.gui.game_control import IDebutBoxesController, IEarlyAccessController, IParagonsController
 
 class FILTER_KEYS(object):
     ELITE = 'elite'
@@ -23,6 +23,7 @@ class FILTER_KEYS(object):
     BATTLE_ROYALE = 'battleRoyale'
     RANKED = 'ranked'
     DEBUT_BOXES = 'debut_boxes'
+    PARAGONS = 'paragons'
     EARLY_ACCESS = 'early_access'
 
 
@@ -238,6 +239,7 @@ class SessionCarouselFilter(_CarouselFilter):
 
 class BasicCriteriesGroup(CriteriesGroup):
     __debutBoxesController = dependency.descriptor(IDebutBoxesController)
+    __paragonsController = dependency.descriptor(IParagonsController)
     _earlyAccessController = dependency.descriptor(IEarlyAccessController)
 
     @staticmethod
@@ -257,6 +259,7 @@ class BasicCriteriesGroup(CriteriesGroup):
         self._setEarnCrystalsCriteria(filters)
         self._setVehicleNameCriteria(filters)
         self._setDebutBoxesCriteria(filters)
+        self._setParagonsCriteria(filters)
         self._setEarlyAccessCriteria(filters)
 
     def _setNationsCriteria(self, filters):
@@ -329,6 +332,14 @@ class BasicCriteriesGroup(CriteriesGroup):
     @classmethod
     def _debutBoxesCriteria(cls, vehicle):
         return cls.__debutBoxesController.isQuestsAvailableOnVehicle(vehicle)
+
+    def _setParagonsCriteria(self, filters):
+        if filters.get(FILTER_KEYS.PARAGONS):
+            self._criteria |= REQ_CRITERIA.CUSTOM(self._paragonsCriteria)
+
+    @classmethod
+    def _paragonsCriteria(cls, vehicle):
+        return vehicle.isResetParagons and cls.__paragonsController.getVehicleProgressPoints(vehicle.intCD) > 0
 
     def _setEarlyAccessCriteria(self, filters):
         if filters.get(FILTER_KEYS.EARLY_ACCESS):

@@ -336,6 +336,7 @@ package net.wg.gui.lobby.battleResults
          {
             this._progressBlocksData = _loc7_;
          }
+         this._progressBlocksData = this._statsUtilsManager.mergeArrays(this._progressBlocksData,this._data.paragons);
          this._progressBlocksData = this._statsUtilsManager.mergeArrays(this._progressBlocksData,_loc5_);
          if(_loc3_.rank)
          {

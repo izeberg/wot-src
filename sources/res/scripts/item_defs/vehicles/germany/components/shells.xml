@@ -1533,7 +1533,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing</effects>
 		<damage>
-			<armor>250</armor>
+			<armor>280</armor>
 			<devices>122</devices>
 		</damage>
 	</_90mm_Pzgr39_48>
@@ -1548,7 +1548,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainAPCR</effects>
 		<damage>
-			<armor>250</armor>
+			<armor>280</armor>
 			<devices>122</devices>
 		</damage>
 	</_90mm_Pzgr40_48>
@@ -1567,7 +1567,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>330</armor>
+			<armor>370</armor>
 			<devices>122</devices>
 		</damage>
 		<armorSpalls>
@@ -1577,7 +1577,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>165</armor>
+				<armor>185</armor>
 				<devices>60</devices>
 			</damage>
 		</armorSpalls>
@@ -3527,6 +3527,65 @@
 			</damage>
 		</armorSpalls>
 	</_128mm_SprG18_n>
+	<_128mm_PzGr39E>
+		<id>31009</id>
+		<userString>#germany_vehicles:_128mm_PzGr39E</userString>
+		<icon>ap</icon>
+		<price>1130</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>128</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>530</armor>
+			<devices>180</devices>
+		</damage>
+	</_128mm_PzGr39E>
+	<_128mm_PzGr40E>
+		<id>31010</id>
+		<userString>#germany_vehicles:_128mm_PzGr40E</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>128</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>530</armor>
+			<devices>180</devices>
+		</damage>
+	</_128mm_PzGr40E>
+	<_128mm_SprG18E>
+		<id>31011</id>
+		<userString>#germany_vehicles:_128mm_SprG18E</userString>
+		<icon>he_modern</icon>
+		<price>960</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>128</caliber>
+		<explosionRadius>
+			2.71
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>670</armor>
+			<devices>180</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.71
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>335</armor>
+				<devices>90</devices>
+			</damage>
+		</armorSpalls>
+	</_128mm_SprG18E>
 	<_128mm_PzGr39A>
 		<id>202</id>
 		<userString>#germany_vehicles:_128mm_PzGr39A</userString>

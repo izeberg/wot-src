@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-0.658008 -0.0424766 -0.739566
+			<!--BW_String-->
+		</min>
+		<max>
+			0.713562 0.0862919 0.765635
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodelessVisual>content/Environment/hd_env_SU_1082_Flowerbed_Snow/normal/lod0/hd_env_SU_1082_Flowerbed_Snow</nodelessVisual>
+	<extent>35.000000</extent>
+	<parent>content/Environment/hd_env_SU_1082_Flowerbed_Snow/normal/lod1/hd_env_SU_1082_Flowerbed_Snow</parent>
+</root>

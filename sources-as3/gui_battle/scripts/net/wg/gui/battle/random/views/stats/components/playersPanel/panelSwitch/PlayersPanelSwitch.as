@@ -31,6 +31,7 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch
       
       override public function setState(param1:int) : void
       {
+         super.setState(param1);
          if(param1 == state)
          {
             return;
@@ -77,8 +78,15 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch
       
       override protected function onDispose() : void
       {
-         this.bgMC = null;
          super.onDispose();
+         this.bgMC = null;
+      }
+      
+      override protected function toggleInteractiveElements(param1:Boolean) : void
+      {
+         var _loc2_:Function = !!param1 ? addChild : removeChild;
+         _loc2_(this.bgMC);
+         super.toggleInteractiveElements(param1);
       }
    }
 }

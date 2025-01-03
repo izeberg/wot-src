@@ -17159,6 +17159,14 @@ package
       
       public static const QUESTPROGRESS_CUST_PROGRESS_31257_14:String = "#vehicle_customization:questProgress/cust_progress_31257_14";
       
+      public static const QUESTPROGRESS_CUST_PROGRESS_31280_1:String = "#vehicle_customization:questProgress/cust_progress_31280_1";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_31268_1:String = "#vehicle_customization:questProgress/cust_progress_31268_1";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_31272_1:String = "#vehicle_customization:questProgress/cust_progress_31272_1";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_31276_1:String = "#vehicle_customization:questProgress/cust_progress_31276_1";
+      
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_3_1_RANKS_65_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_3_1_ranks_65/condition";
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_3_1_RANKS_55_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_3_1_ranks_55/condition";
@@ -17554,6 +17562,12 @@ package
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_2_RANKS_21_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_2_ranks_21/condition";
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_2_RANKS_11_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_2_ranks_11/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_BOB4_1_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/bob4_1/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_BOB4_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/bob4_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_BOB4_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/bob4_3/condition";
       
       public static const MAIN_STYLE_R165_OBJECT_703_II_2_3DST:String = "#vehicle_customization:main_style/R165_Object_703_II_2_3dst";
       
@@ -20827,6 +20841,108 @@ package
       
       public static const SPECIAL_STYLE_R155_OBJECT_277_3DST_02:String = "#vehicle_customization:special_style/R155_Object_277_3Dst_02";
       
+      public static const C_23_FEBRUARY_2025_01_PROJECTION_DECAL_NAME:String = "#vehicle_customization:23_February_2025_01/projection_decal/name";
+      
+      public static const C_23_FEBRUARY_2025_01_PROJECTION_DECAL_DESCRIPTION:String = "#vehicle_customization:23_February_2025_01/projection_decal/description";
+      
+      public static const C_23_FEBRUARY_2025_02_PROJECTION_DECAL_NAME:String = "#vehicle_customization:23_February_2025_02/projection_decal/name";
+      
+      public static const C_23_FEBRUARY_2025_02_PROJECTION_DECAL_DESCRIPTION:String = "#vehicle_customization:23_February_2025_02/projection_decal/description";
+      
+      public static const C_23_FEBRUARY_2025_PAINT_NAME:String = "#vehicle_customization:23_February_2025/Paint/name";
+      
+      public static const C_23_FEBRUARY_2025_PAINT_DESCRIPTION:String = "#vehicle_customization:23_February_2025/Paint/description";
+      
+      public static const C_23_FEBRUARY_2025_NAME:String = "#vehicle_customization:23_February_2025/name";
+      
+      public static const C_23_FEBRUARY_2025_DESCRIPTION:String = "#vehicle_customization:23_February_2025/description";
+      
+      public static const C_23_FEBRUARY_2025_LONGDESCRIPTION:String = "#vehicle_customization:23_February_2025/longDescription";
+      
+      public static const C_23_FEBRUARY_2025_CAMO_NAME:String = "#vehicle_customization:23_February_2025/Camo/name";
+      
+      public static const C_23_FEBRUARY_2025_CAMO_DESCRIPTION:String = "#vehicle_customization:23_February_2025/Camo/description";
+      
+      public static const CH61_DZT_159_NAME:String = "#vehicle_customization:Ch61_DZT_159/name";
+      
+      public static const CH61_DZT_159_DESCRIPTION:String = "#vehicle_customization:Ch61_DZT_159/description";
+      
+      public static const CH61_DZT_159_LONGDESCRIPTION:String = "#vehicle_customization:Ch61_DZT_159/longDescription";
+      
+      public static const CH61_DZT_159_CAMO_NAME:String = "#vehicle_customization:Ch61_DZT_159_Camo/name";
+      
+      public static const CH61_DZT_159_CAMO_DESCRIPTION:String = "#vehicle_customization:Ch61_DZT_159_Camo/description";
+      
+      public static const CAMOUFLAGE_ARMORYYARD_SUMMER_2025_NAME:String = "#vehicle_customization:camouflage/ArmoryYard_Summer_2025/name";
+      
+      public static const CAMOUFLAGE_ARMORYYARD_SUMMER_2025_DESCRIPTION:String = "#vehicle_customization:camouflage/ArmoryYard_Summer_2025/description";
+      
+      public static const CAMOUFLAGE_ARMORYYARD_DESERT_2025_NAME:String = "#vehicle_customization:camouflage/ArmoryYard_Desert_2025/name";
+      
+      public static const CAMOUFLAGE_ARMORYYARD_DESERT_2025_DESCRIPTION:String = "#vehicle_customization:camouflage/ArmoryYard_Desert_2025/description";
+      
+      public static const CAMOUFLAGE_ARMORYYARD_WINTER_2025_NAME:String = "#vehicle_customization:camouflage/ArmoryYard_Winter_2025/name";
+      
+      public static const CAMOUFLAGE_ARMORYYARD_WINTER_2025_DESCRIPTION:String = "#vehicle_customization:camouflage/ArmoryYard_Winter_2025/description";
+      
+      public static const PAINT_ARMORYYARD_SUMMER_2025_NAME:String = "#vehicle_customization:paint/ArmoryYard_Summer_2025/name";
+      
+      public static const PAINT_ARMORYYARD_SUMMER_2025_DESCRIPTION:String = "#vehicle_customization:paint/ArmoryYard_Summer_2025/description";
+      
+      public static const PAINT_ARMORYYARD_DESERT_2025_NAME:String = "#vehicle_customization:paint/ArmoryYard_Desert_2025/name";
+      
+      public static const PAINT_ARMORYYARD_DESERT_2025_DESCRIPTION:String = "#vehicle_customization:paint/ArmoryYard_Desert_2025/description";
+      
+      public static const PAINT_ARMORYYARD_WINTER_2025_NAME:String = "#vehicle_customization:paint/ArmoryYard_Winter_2025/name";
+      
+      public static const PAINT_ARMORYYARD_WINTER_2025_DESCRIPTION:String = "#vehicle_customization:paint/ArmoryYard_Winter_2025/description";
+      
+      public static const STYLE_ARMORYYARD_2025_NAME:String = "#vehicle_customization:style/ArmoryYard_2025/name";
+      
+      public static const STYLE_ARMORYYARD_2025_DESCRIPTION:String = "#vehicle_customization:style/ArmoryYard_2025/description";
+      
+      public static const STYLE_ARMORYYARD_2025_LONGDESCRIPTION:String = "#vehicle_customization:style/ArmoryYard_2025/longDescription";
+      
+      public static const C_8_MARCH_2025_CAMO_NAME:String = "#vehicle_customization:8_march_2025_camo/name";
+      
+      public static const C_8_MARCH_2025_CAMO_DESCRIPTION:String = "#vehicle_customization:8_march_2025_camo/description";
+      
+      public static const C_8_MARCH_2025_PAINT_NAME:String = "#vehicle_customization:8_march_2025_paint/name";
+      
+      public static const C_8_MARCH_2025_PAINT_DESCRIPTION:String = "#vehicle_customization:8_march_2025_paint/description";
+      
+      public static const C_8_MARCH_2025_PROJECTION_DECAL_NAME:String = "#vehicle_customization:8_march_2025_Projection_Decal/name";
+      
+      public static const C_8_MARCH_2025_PROJECTION_DECAL_DESCRIPTION:String = "#vehicle_customization:8_march_2025_Projection_Decal/description";
+      
+      public static const C_8_MARCH_2025_PROJECTION_DECAL_02_NAME:String = "#vehicle_customization:8_march_2025_Projection_Decal_02/name";
+      
+      public static const C_8_MARCH_2025_PROJECTION_DECAL_02_DESCRIPTION:String = "#vehicle_customization:8_march_2025_Projection_Decal_02/description";
+      
+      public static const C_8_MARCH_2025_STYLE_NAME:String = "#vehicle_customization:8_march_2025_Style/name";
+      
+      public static const C_8_MARCH_2025_STYLE_DESCRIPTION:String = "#vehicle_customization:8_march_2025_Style/description";
+      
+      public static const C_8_MARCH_2025_STYLE_LONGDESCRIPTION:String = "#vehicle_customization:8_march_2025_Style/longDescription";
+      
+      public static const ALPHA_2024_CAMO_NAME:String = "#vehicle_customization:Alpha_2024_camo/name";
+      
+      public static const ALPHA_2024_CAMO_DESCRIPTION:String = "#vehicle_customization:Alpha_2024_camo/description";
+      
+      public static const ALPHA_2024_PROJECTION_DECAL_NAME:String = "#vehicle_customization:Alpha_2024_Projection_Decal/name";
+      
+      public static const ALPHA_2024_PROJECTION_DECAL_DESCRIPTION:String = "#vehicle_customization:Alpha_2024_Projection_Decal/description";
+      
+      public static const ALPHA_2024_PAINT_NAME:String = "#vehicle_customization:Alpha_2024_Paint/name";
+      
+      public static const ALPHA_2024_PAINT_DESCRIPTION:String = "#vehicle_customization:Alpha_2024_Paint/description";
+      
+      public static const ALPHA_2024_STYLE_NAME:String = "#vehicle_customization:Alpha_2024_Style/name";
+      
+      public static const ALPHA_2024_STYLE_DESCRIPTION:String = "#vehicle_customization:Alpha_2024_Style/description";
+      
+      public static const ALPHA_2024_STYLE_LONGDESCRIPTION:String = "#vehicle_customization:Alpha_2024_Style/longDescription";
+      
       public static const PROSTOKVASHINO_2025_CAMO_01_NAME:String = "#vehicle_customization:Prostokvashino_2025_Camo_01/name";
       
       public static const PROSTOKVASHINO_2025_CAMO_01_DESCRIPTION:String = "#vehicle_customization:Prostokvashino_2025_Camo_01/description";
@@ -20876,6 +20992,456 @@ package
       public static const PROSTOKVASHINO_2025_STYLE_01_DESCRIPTION:String = "#vehicle_customization:Prostokvashino_2025_Style_01/description";
       
       public static const PROSTOKVASHINO_2025_STYLE_01_LONGDESCRIPTION:String = "#vehicle_customization:Prostokvashino_2025_Style_01/longDescription";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Inscription_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Inscription_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Inscription_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Inscription_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Inscription_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Inscription_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Inscription_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_INSCRIPTION_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Inscription_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_EMBLEM_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Emblem_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_EMBLEM_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Emblem_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Decal_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Decal_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Decal_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Decal_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Camo_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Camo_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Style_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_01_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_01_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT01_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint01_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Decal_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Decal_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT02_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint02_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Camo_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Camo_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Style_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_02_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_02_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Decal_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Decal_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Camo_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Camo_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Style_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_03_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_03_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT03_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint03_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Decal_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_DECAL_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Decal_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_PAINT04_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Paint04_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Camo_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_CAMO_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Camo_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_04_2025_NAME:String = "#vehicle_customization:BattleBloggers_Prem_Style_04_2025/name";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_04_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_04_2025/description";
+      
+      public static const BATTLEBLOGGERS_PREM_STYLE_04_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_Prem_Style_04_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_03_CAMO_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Camo_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_CAMO_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Camo_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_CAMO_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Camo_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_CAMO_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Camo_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_CAMO_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Camo_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_CAMO_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Camo_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_00_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Style_00_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_00_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_00_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_00_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_00_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Style_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_01_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_01_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Style_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_02_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_02_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Style_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_STYLE_03_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Style_03_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_03_PAINT01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Paint01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_PAINT01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Paint01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_PAINT01_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Paint01_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_PAINT01_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Paint01_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_PAINT02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Paint02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_PAINT02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Paint02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_PAINT02_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Paint02_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_PAINT02_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Paint02_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_PAINT03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Paint03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_PAINT03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Paint03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_PAINT03_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Paint03_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_PAINT03_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Paint03_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_DECAL01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Decal01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_DECAL01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Decal01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_DECAL01_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Decal01_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_DECAL01_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Decal01_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_DECAL02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Decal02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_DECAL02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Decal02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_DECAL02_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Decal02_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_DECAL02_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Decal02_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_DECAL03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Decal03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_DECAL03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Decal03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_03_DECAL03_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_03_Decal03_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_03_DECAL03_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_03_Decal03_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_CAMO_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Camo_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_CAMO_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Camo_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_CAMO_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Camo_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_CAMO_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Camo_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_CAMO_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Camo_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_CAMO_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Camo_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_00_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Style_00_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_00_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_00_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_00_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_00_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Style_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_01_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_01_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Style_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_02_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_02_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Style_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_STYLE_03_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Style_03_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_04_PAINT01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Paint01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_PAINT01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Paint01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_PAINT01_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Paint01_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_PAINT01_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Paint01_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_PAINT02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Paint02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_PAINT02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Paint02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_PAINT02_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Paint02_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_PAINT02_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Paint02_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_PAINT03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Paint03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_PAINT03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Paint03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_PAINT03_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Paint03_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_PAINT03_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Paint03_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_DECAL01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Decal01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_DECAL01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Decal01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_DECAL02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Decal02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_DECAL02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Decal02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_04_DECAL03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_04_Decal03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_04_DECAL03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_04_Decal03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_00_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Style_00_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_00_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_00_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_00_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_00_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Style_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_01_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_01_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Style_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_02_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_02_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Style_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_STYLE_03_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Style_03_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_02_DECAL01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Decal01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_DECAL01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Decal01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_DECAL02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Decal02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_DECAL02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Decal02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_DECAL03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Decal03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_DECAL03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Decal03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_PAINT01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Paint01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_PAINT01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Paint01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_PAINT01_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Paint01_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_PAINT01_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Paint01_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_PAINT02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Paint02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_PAINT02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Paint02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_PAINT02_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Paint02_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_PAINT02_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Paint02_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_PAINT03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Paint03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_PAINT03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Paint03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_PAINT03_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Paint03_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_PAINT03_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Paint03_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_CAMO_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Camo_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_CAMO_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Camo_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_CAMO_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Camo_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_CAMO_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Camo_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_02_CAMO_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_02_Camo_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_02_CAMO_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_02_Camo_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_DECAL01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Decal01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_DECAL01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Decal01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_DECAL2_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Decal2_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_DECAL2_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Decal2_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_DECAL03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Decal03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_DECAL03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Decal03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_CAMO_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Camo_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_CAMO_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Camo_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_CAMO_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Camo_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_CAMO_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Camo_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_CAMO_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Camo_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_CAMO_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Camo_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_PAINT01_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Paint01_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_PAINT01_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Paint01_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_PAINT01_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Paint01_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_PAINT01_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Paint01_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_PAINT02_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Paint02_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_PAINT02_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Paint02_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_PAINT02_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Paint02_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_PAINT02_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Paint02_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_PAINT03_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Paint03_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_PAINT03_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Paint03_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_PAINT03_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Paint03_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_PAINT03_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Paint03_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_00_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Style_00_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_00_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_00_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_00_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_00_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_01_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Style_01_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_01_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_01_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_01_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_01_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_02_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Style_02_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_02_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_02_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_02_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_02_2025/longDescription";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_03_2025_NAME:String = "#vehicle_customization:BattleBloggers_01_Style_03_2025/name";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_03_2025_DESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_03_2025/description";
+      
+      public static const BATTLEBLOGGERS_01_STYLE_03_2025_LONGDESCRIPTION:String = "#vehicle_customization:BattleBloggers_01_Style_03_2025/longDescription";
+      
+      public static const IT33_ORSO_3DST_01_STYLE_NAME:String = "#vehicle_customization:It33_Orso_3Dst_01_style/name";
+      
+      public static const IT33_ORSO_3DST_01_STYLE_DESCRIPTION:String = "#vehicle_customization:It33_Orso_3Dst_01_style/description";
+      
+      public static const IT33_ORSO_3DST_01_STYLE_LONGDESCRIPTION:String = "#vehicle_customization:It33_Orso_3Dst_01_style/longDescription";
        
       
       public function VEHICLE_CUSTOMIZATION()

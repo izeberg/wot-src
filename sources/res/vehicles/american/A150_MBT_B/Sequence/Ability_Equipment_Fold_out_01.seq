@@ -26,23 +26,23 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>ability_begli_ogon_gun_open</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.100000</startTime>
-				<duration>1.500000</duration>
-				<value>Root|GunUp</value>
+				<startTime>0.000000</startTime>
+				<duration>3.266667</duration>
+				<value>Root|Machine_gun_0</value>
 			</frame>
 		</track>
 		<track>
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.100000</startTime>
-				<duration>1.500000</duration>
+				<startTime>0.000000</startTime>
+				<duration>3.266667</duration>
 				<sequenceSound>ability_begli_ogon_gun_open</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

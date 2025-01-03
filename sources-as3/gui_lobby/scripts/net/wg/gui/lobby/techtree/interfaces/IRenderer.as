@@ -67,6 +67,10 @@ package net.wg.gui.lobby.techtree.interfaces
       
       function isTopActionNode() : Boolean;
       
+      function isResetParagons() : Boolean;
+      
+      function isLockedByParagons() : Boolean;
+      
       function invalidateNodeState() : void;
       
       function cleanUp() : void;

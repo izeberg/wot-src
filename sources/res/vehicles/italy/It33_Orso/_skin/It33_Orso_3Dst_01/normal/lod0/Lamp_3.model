@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/normal/lod0/Lamp_3</nodelessVisual>
+	<parent>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/normal/lod1/Lamp_3</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.719129 0.852802 -2.178520</min>
+		<max>-0.152663 1.048949 -2.032417</max>
+	</visibilityBox>
+</root>

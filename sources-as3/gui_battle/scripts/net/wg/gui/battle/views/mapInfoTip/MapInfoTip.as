@@ -32,6 +32,7 @@ package net.wg.gui.battle.views.mapInfoTip
       {
          this._tooltipMgr = App.toolTipMgr;
          super();
+         visible = this._mapInfoTipVisible;
       }
       
       override protected function configUI() : void
@@ -39,7 +40,6 @@ package net.wg.gui.battle.views.mapInfoTip
          this.mapInfoTipTF.text = INGAME_GUI.DEVMAPS_MAPINFO_TEXT;
          this.mapInfoTipTF.addEventListener(MouseEvent.MOUSE_OVER,this.onMapInfoTipMouseOverHandler);
          this.mapInfoTipTF.addEventListener(MouseEvent.MOUSE_OUT,this.onMapInfoTipMouseOutHandler);
-         this.mapInfoTipTF.visible = this._mapInfoTipVisible;
          this.updateLayout(App.appWidth);
          super.configUI();
       }
@@ -63,7 +63,7 @@ package net.wg.gui.battle.views.mapInfoTip
          if(this._mapInfoTipVisible != param1)
          {
             this._mapInfoTipVisible = param1;
-            this.mapInfoTipTF.visible = this._mapInfoTipVisible;
+            visible = this._mapInfoTipVisible;
          }
       }
       

@@ -280,6 +280,11 @@ package net.wg.gui.battle.views.questProgress
          this.showContent(true);
       }
       
+      public function getVisibleBottomY() : int
+      {
+         return this._visibleBottomY;
+      }
+      
       public function resetFirstShowByTimer() : void
       {
          this._isAllowShowContentByTimer = false;
@@ -331,14 +336,9 @@ package net.wg.gui.battle.views.questProgress
          }
       }
       
-      public function getVisibleBottomY() : int
-      {
-         return this._visibleBottomY;
-      }
-      
       private function updateSeparatorVisibility() : void
       {
-         this.separator.visible = this._separatorPositionAfterTaskIndex != Values.DEFAULT_INT && this._isQPVisibleBySettings;
+         this.separator.visible = this._isQPVisibleBySettings && this._separatorPositionAfterTaskIndex != Values.DEFAULT_INT && (items && items.length > 1);
       }
       
       private function updateFlagVisibility() : void

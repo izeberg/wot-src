@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F130_AMX_Tracteur_D/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.788785 -0.000000 -5.080872</min>
+		<max>1.788785 1.712800 5.079110</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F130_AMX_Tracteur_D/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -2507,16 +2507,6 @@ class SureShotEquipment(VisualScriptEquipment):
     __slots__ = ('duration', 'stabMovement', 'stabTurns', 'stabTurret', 'stabShot',
                  'reloadBonus', 'finalDispersion')
 
-    @property
-    def tooltipParams(self):
-        params = super(SureShotEquipment, self).tooltipParams
-        params['stabMovement'] = (self.stabMovement - 1.0) * 100
-        params['stabTurns'] = (self.stabTurns - 1.0) * 100
-        params['stabTurret'] = (self.stabTurret - 1.0) * 100
-        params['stabShot'] = (self.stabShot - 1.0) * 100
-        params['reloadBonus'] = (self.reloadBonus - 1.0) * 100
-        return params
-
     def _readConfig(self, xmlCtx, section):
         super(SureShotEquipment, self)._readConfig(xmlCtx, section)
         self.duration = section.readFloat('duration')
@@ -2533,13 +2523,6 @@ class JuggernautEquipment(VisualScriptEquipment):
     __slots__ = ('duration', 'enginePowerFactor', 'stunDurationFactor', 'repairBuff',
                  'gunReloadBoostSeconds', 'shotsLimitForGunBoost', 'minTimeBetweenReloadBoost')
 
-    @property
-    def tooltipParams(self):
-        params = super(JuggernautEquipment, self).tooltipParams
-        params['enginePowerFactor'] = (self.enginePowerFactor - 1.0) * 100
-        params['stunDurationFactor'] = self.stunDurationFactor * 100
-        return params
-
     def _readConfig(self, xmlCtx, section):
         super(JuggernautEquipment, self)._readConfig(xmlCtx, section)
         self.duration = section.readFloat('duration')
@@ -2555,16 +2538,6 @@ class JuggernautEquipment(VisualScriptEquipment):
 class ConcentrationEquipment(VisualScriptEquipment):
     __slots__ = ('duration', 'stabMovement', 'stabTurns', 'stabTurret', 'stabShot',
                  'addSecToTimeBtmClips', 'reloadFactor')
-
-    @property
-    def tooltipParams(self):
-        params = super(ConcentrationEquipment, self).tooltipParams
-        params['stabMovement'] = (self.stabMovement - 1.0) * 100
-        params['stabTurns'] = (self.stabTurns - 1.0) * 100
-        params['stabTurret'] = (self.stabTurret - 1.0) * 100
-        params['stabShot'] = (self.stabShot - 1.0) * 100
-        params['reloadFactor'] = (self.reloadFactor - 1.0) * 100
-        return params
 
     def _readConfig(self, xmlCtx, section):
         super(ConcentrationEquipment, self)._readConfig(xmlCtx, section)

@@ -275,8 +275,6 @@ package net.wg.data.constants
       
       public static const FC_MARKER_ITEM:String = "fcMarkerItemUI";
       
-      public static const BCFC_MARKER_ITEM:String = "BCFCMarkerItemUI";
-      
       public static const PRICE_COMPONENT:String = "PriceUI";
       
       public static const SHELL_BUTTON:String = "ShellButtonUI";
@@ -486,26 +484,6 @@ package net.wg.data.constants
       public static const RANKED_BATTLE_LOADING_TABLE_RENDERERS:String = "RankedBattleTableRenderersUI";
       
       public static const RANKED_BATTLE_LOADING_TIPS_RENDERERS:String = "RankedBattleTipRenderersUI";
-      
-      public static const TANKMAN_SHELLMAN:String = "Shellman";
-      
-      public static const TANKMAN_RADIST:String = "Radist";
-      
-      public static const TANKMAN_DRIVER:String = "Driver";
-      
-      public static const TANKMAN_GUNNER:String = "Gunner";
-      
-      public static const TANKMAN_COMANDER:String = "Comander";
-      
-      public static const TANKMAN_ORANGE_COMANDER:String = "OrangeComander";
-      
-      public static const TANKMAN_ORANGE_GUNNER:String = "OrangeGunner";
-      
-      public static const TANKMAN_ORANGE_LOADER:String = "OrangeShellman";
-      
-      public static const TANKMAN_ORANGE_RADIOMAN:String = "OrangeRadist";
-      
-      public static const TANKMAN_ORANGE_DRIVER:String = "OrangeDriver";
       
       public static const ATSPG_HULL_UI:String = "ATSPG_HULL_UI";
       
@@ -778,8 +756,6 @@ package net.wg.data.constants
       public static const ARTY_SHOT_INDICATOR_RENDERER:String = "ArtyShotIndicatorUI";
       
       public static const OVERHEAT_WIDGET:String = "OverheatWidgetUI";
-      
-      public static const OVERHEAT_STATE_MARKER:String = "OverheatStateUI";
       
       public static const EQUIPMENT_OVERLAY:String = "ListOverlayUI";
       
@@ -1063,6 +1039,8 @@ package net.wg.data.constants
       
       public static const COLLECTIVE_GOAL_ENTRY_POINT:String = "CollectiveGoalEntryPointUI";
       
+      public static const UNIVERSAL_FLAG_ENTRY_POINT:String = "UniversalFlagEntryPointUI";
+      
       public static const PLAYERS_PANEL_POI_PROGRESS_BAR_UI:String = "PlayersPanelPoiProgressBarUI";
       
       public static const POI_PROGRESS_BAR_UI:String = "PoiProgressBarUI";
@@ -1080,8 +1058,6 @@ package net.wg.data.constants
       public static const EARLY_ACCESS_ENTRY_POINT:String = "EarlyAccessEntryPointUI";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
-      
-      public static const NY_QUEST_ENTRY_POINT:String = "NYQuestEntryPointUI";
        
       
       public function Linkages()

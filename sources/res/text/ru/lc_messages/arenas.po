@@ -533,6 +533,18 @@ msgstr ""
 msgid "502_kamchatka/name"
 msgstr "Камчатка"
 
+msgid "503_kaliningrad/description"
+msgstr ""
+"Относительно симметричная локация, реконструирующая исторический центр "
+"города, раскинувшийся по обоим берегам реки Преголи. На карте расположено "
+"множество знаковых и узнаваемых объектов, которые сохраняют и передают "
+"атмосферу этого чудесного города. На карте достаточно объездов, укрытий и "
+"перепадов высот, что способствует разнообразной игре и поиску нестандартных "
+"решений, делая каждый бой по-своему уникальным."
+
+msgid "503_kaliningrad/name"
+msgstr "Калининград"
+
 msgid "59_asia_great_wall/description"
 msgstr ""
 "На карте много горных дорог и каньонов, поэтому важную роль играют разведка "
@@ -608,10 +620,10 @@ msgstr ""
 msgid "99_poland/name"
 msgstr "Студзянки"
 
-msgid "h00_armory_yard_ep3.xml/description"
+msgid "h00_armory_yard/description"
 msgstr "?empty?"
 
-msgid "h00_armory_yard_ep3.xml/name"
+msgid "h00_armory_yard/name"
 msgstr "?empty?"
 
 msgid "qa_content_01/description"
@@ -640,6 +652,12 @@ msgstr ""
 
 msgid "type/assault2/name"
 msgstr "Атака/Оборона"
+
+msgid "type/bob/description"
+msgstr "Задача: захватить базу или уничтожить всю технику противника."
+
+msgid "type/bob/name"
+msgstr "Битва блогеров"
 
 msgid "type/bootcamp/description0"
 msgstr "Чтобы завершить задание, следуйте подсказкам"

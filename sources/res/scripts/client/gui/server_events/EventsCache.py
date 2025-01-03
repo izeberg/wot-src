@@ -9,7 +9,7 @@ from debug_utils import LOG_DEBUG
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
 from gui.server_events import caches as quests_caches
 from gui.server_events.event_items import MotiveQuest, Quest, ServerEventAbstract, createAction, createQuest
-from gui.server_events.events_helpers import getEventsData, getRerollTimeout, isBattleRoyale, isDailyEpic, isBattleMattersQuestID, isMapsTraining, isMarathon, isPremium, isRankedDaily, isRankedPlatform, isFunRandomQuest, isVersusAIQuest
+from gui.server_events.events_helpers import getEventsData, getRerollTimeout, isBattleRoyale, isDailyEpic, isBattleMattersQuestID, isMarathon, isPremium, isRankedDaily, isRankedPlatform, isFunRandomQuest, isVersusAIQuest
 from gui.server_events.formatters import getLinkedActionID
 from gui.server_events.modifiers import ACTION_MODIFIER_TYPE, ACTION_SECTION_TYPE, clearModifiersCache
 from gui.server_events.personal_missions_cache import PersonalMissionsCache
@@ -209,7 +209,7 @@ class EventsCache(IEventsCache):
                 self.__personalMissions.update(self, diff)
 
             if diff is not None:
-                isQPUpdated = 'quests' in diff or 'potapovQuests' in diff or 'pm2_progress' in diff
+                isQPUpdated = 'quests' in diff or 'potapovQuests' in diff or 'pm_progress' in diff
                 if not isQPUpdated and 'tokens' in diff:
                     for tokenID in diff['tokens'].iterkeys():
                         if any(tokenID.startswith(t) for t in PM_TOKEN_PREFIXES):
@@ -291,8 +291,6 @@ class EventsCache(IEventsCache):
                         return False
                 if isVersusAIQuest(qGroup):
                     return q.isAvailable().isValid
-                if isMapsTraining(qGroup):
-                    return q.shouldBeShown()
                 if isRankedSeasonOff and (isRankedDaily(qGroup) or isRankedPlatform(qGroup)):
                     return False
                 if isFunRandomOff and isFunRandomQuest(qID):

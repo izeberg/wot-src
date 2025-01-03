@@ -25,6 +25,10 @@ package net.wg.gui.lobby.header.headerButtonBar
       
       private static const MSG_MUST_BE_OVERRIDDEN:String = "Method must be overridden!";
       
+      private static const ALPHA_ENABLED:Number = 1;
+      
+      private static const ALPHA_DISABLED:Number = 0.5;
+      
       public static const SEPARATOR_GRADIENT:String = "gradient";
       
       public static const SEPARATOR_DOT:String = "dot";
@@ -62,6 +66,8 @@ package net.wg.gui.lobby.header.headerButtonBar
       
       private var _availableWidth:Number = 0;
       
+      private var _isHovered:Boolean = false;
+      
       public function HeaderButtonContentItem()
       {
          this._minScreenPadding = new Padding(0,16,0,16);
@@ -83,6 +89,10 @@ package net.wg.gui.lobby.header.headerButtonBar
          {
             this._forceInvalidSize = true;
             this.updateSize();
+         }
+         if(isInvalid(InvalidationType.STATE))
+         {
+            this.updateState();
          }
       }
       
@@ -159,6 +169,10 @@ package net.wg.gui.lobby.header.headerButtonBar
                dispatchEvent(new HeaderEvents(HeaderEvents.HBC_UPDATED,this.bounds.width));
             }
          }
+      }
+      
+      protected function updateState() : void
+      {
       }
       
       protected function updateFontSize(param1:TextField, param2:Number) : void
@@ -354,6 +368,31 @@ package net.wg.gui.lobby.header.headerButtonBar
       public function getSeparatorType() : String
       {
          return SEPARATOR_GRADIENT;
+      }
+      
+      public function get isHovered() : Boolean
+      {
+         return this._isHovered;
+      }
+      
+      public function set isHovered(param1:Boolean) : void
+      {
+         if(this._isHovered == param1)
+         {
+            return;
+         }
+         this._isHovered = param1;
+         invalidateState();
+      }
+      
+      override public function set enabled(param1:Boolean) : void
+      {
+         if(param1 == super.enabled)
+         {
+            return;
+         }
+         super.enabled = param1;
+         this.alpha = !!param1 ? Number(ALPHA_ENABLED) : Number(ALPHA_DISABLED);
       }
    }
 }

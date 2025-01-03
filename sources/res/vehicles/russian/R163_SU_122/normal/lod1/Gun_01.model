@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.222898 -0.682402 0.330910</min>
+		<max>0.222100 0.630342 2.533440</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R163_SU_122/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/russian/R163_SU_122/normal/lod1/Gun_01</nodefullVisual>
+</root>

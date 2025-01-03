@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.691254 -0.000005 -3.250643</min>
+		<max>1.691245 1.388201 2.850651</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un06_M47_Romach/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/normal/lod0/Chassis</nodefullVisual>
+</root>

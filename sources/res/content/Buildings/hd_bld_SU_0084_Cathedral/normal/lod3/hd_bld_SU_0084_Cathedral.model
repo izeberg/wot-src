@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Buildings/hd_bld_SU_0084_Cathedral/normal/lod4/hd_bld_SU_0084_Cathedral</parent>
+	<extent>1200.000000</extent>
+	<visibilityBox>
+		<min>-31.182699 -1.500004 -16.038374</min>
+		<max>57.340290 53.755493 16.262259</max>
+	</visibilityBox>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0084_Cathedral/normal/lod3/hd_bld_SU_0084_Cathedral</nodelessVisual>
+</root>

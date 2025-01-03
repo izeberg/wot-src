@@ -4,6 +4,7 @@ package net.wg.gui.lobby.techtree.nodes
    import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
+   import flash.filters.ColorMatrixFilter;
    import flash.geom.ColorTransform;
    import flash.geom.Point;
    import flash.text.TextField;
@@ -76,6 +77,8 @@ package net.wg.gui.lobby.techtree.nodes
       private static const EARLY_ACCESS_BORDER_HIGHLIGHT_SHOW_LABEL:String = "show";
       
       private static const EARLY_ACCESS_BORDER_HIGHLIGHT_HIDE_LABEL:String = "hide";
+      
+      private static const PARAGONS_LOCK_FILTERS:Array = [new ColorMatrixFilter([0.25,0.25,0.25,0,0,0.25,0.25,0.25,0,0,0.25,0.25,0.25,0,0,0,0,0,1,0])];
        
       
       public var lockedModuleHighlight:NodeHighlightAnimation = null;
@@ -116,6 +119,8 @@ package net.wg.gui.lobby.techtree.nodes
       
       public var earlyAccessBorderHighlight:MovieClip = null;
       
+      public var paragonsLock:MovieClip = null;
+      
       private var _isFirstTimeActionShow:Boolean = false;
       
       private var _trade:TradeIco = null;
@@ -126,6 +131,10 @@ package net.wg.gui.lobby.techtree.nodes
       {
          this._tooltipMgr = App.toolTipMgr;
          super();
+         if(this.paragonsLock)
+         {
+            this.paragonsLock.filters = PARAGONS_LOCK_FILTERS;
+         }
       }
       
       override public function cleanUp() : void
@@ -228,7 +237,6 @@ package net.wg.gui.lobby.techtree.nodes
       
       override protected function validateData() : void
       {
-         var _loc1_:Boolean = false;
          var _loc5_:String = null;
          var _loc6_:Boolean = false;
          visible = !(this.isBlueprintMode && !canHaveBlueprint());
@@ -241,7 +249,7 @@ package net.wg.gui.lobby.techtree.nodes
          this.vehicleImage.source = this.getIconPath();
          this.typeAndLevel.setOwner(this);
          this.nameTF.text = getItemName();
-         _loc1_ = isLocked();
+         var _loc1_:Boolean = isLocked();
          var _loc2_:Boolean = isNext2Unlock();
          var _loc3_:String = (_loc1_ || _loc2_) && getNodeData().blueprintProgress.valueOf() > 0 ? DISCOUNT_LABEL_BLUE : DISCOUNT_LABEL_RED;
          var _loc4_:Boolean = hasAction || hasTechTreeEvent;
@@ -335,6 +343,10 @@ package net.wg.gui.lobby.techtree.nodes
          {
             this.nationChangeIcon.visible = getNodeData().isNationChangeAvailable;
          }
+         if(this.paragonsLock)
+         {
+            this.paragonsLock.visible = isLockedByParagons();
+         }
          this.nameTF.width = !!getNodeData().isNationChangeAvailable ? Number(NAME_TF_SHORT_WIDTH_FOR_NATION_CHANGE_ICON) : Number(NAME_TF_FULL_WIDTH);
          this.setTradeIcon();
          this.updateTechTreeEventBorder();
@@ -363,6 +375,13 @@ package net.wg.gui.lobby.techtree.nodes
          this.earlyAccessLock = null;
          this.earlyAccessBorder = null;
          this.earlyAccessBorderHighlight = null;
+         if(this.paragonsLock)
+         {
+            this.paragonsLock.removeEventListener(MouseEvent.ROLL_OVER,this.onParagonsLockRollOverHandler);
+            this.paragonsLock.removeEventListener(MouseEvent.ROLL_OUT,this.onParagonsLocksRollOutHandler);
+            this.paragonsLock.filters = null;
+         }
+         this.paragonsLock = null;
          this.button.dispose();
          this.button = null;
          this.typeAndLevel.dispose();
@@ -441,6 +460,12 @@ package net.wg.gui.lobby.techtree.nodes
             this.blueprintPlus.addEventListener(MouseEvent.ROLL_OVER,this.onBlueprintPlusRollOverHandler,false,0,true);
             this.blueprintPlus.addEventListener(MouseEvent.ROLL_OUT,this.onBlueprintPlusRollOutHandler,false,0,true);
             this.blueprintPlus.addEventListener(MouseEvent.CLICK,this.onBlueprintPlusClickHandler,false,0,true);
+         }
+         if(this.paragonsLock)
+         {
+            this.paragonsLock.buttonMode = true;
+            this.paragonsLock.addEventListener(MouseEvent.ROLL_OVER,this.onParagonsLockRollOverHandler,false,0,true);
+            this.paragonsLock.addEventListener(MouseEvent.ROLL_OUT,this.onParagonsLocksRollOutHandler,false,0,true);
          }
       }
       
@@ -550,6 +575,10 @@ package net.wg.gui.lobby.techtree.nodes
          {
             _loc1_.push(this._trade);
          }
+         if(this.paragonsLock != null)
+         {
+            _loc1_.push(this.paragonsLock);
+         }
          return _loc1_;
       }
       
@@ -637,6 +666,22 @@ package net.wg.gui.lobby.techtree.nodes
             this._tooltipMgr.hide();
          }
          this.blueprintPlusHoverEffectDisable();
+      }
+      
+      private function onParagonsLockRollOverHandler(param1:MouseEvent) : void
+      {
+         if(this._tooltipMgr)
+         {
+            this._tooltipMgr.showWulfTooltip(TOOLTIPS_CONSTANTS.PARAGONS_VEH_BRANCH_LOCKED,getID());
+         }
+      }
+      
+      private function onParagonsLocksRollOutHandler(param1:MouseEvent) : void
+      {
+         if(this._tooltipMgr)
+         {
+            this._tooltipMgr.hide();
+         }
       }
       
       private function onBlueprintPlusClickHandler(param1:MouseEvent) : void

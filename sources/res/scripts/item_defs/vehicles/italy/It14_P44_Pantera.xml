@@ -5376,10 +5376,7 @@
 						0.25
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>
-						9.6
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>8</reloadTime>
 					<aimingTime>
 						2.2
 						<!--BW_String-->
@@ -5403,11 +5400,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>2</count>
-						<rate>30</rate>
+						<count>3</count>
+						<rate>24</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 10</reloadTime>
+						<reloadTime>8 10 12</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It14_P44_Pantera/normal/lod0/Gun_01.model</undamaged>
@@ -5540,10 +5537,7 @@
 						0.225
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>
-						9.6
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>8</reloadTime>
 					<aimingTime>
 						2.2
 						<!--BW_String-->
@@ -5567,11 +5561,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>2</count>
-						<rate>30</rate>
+						<count>3</count>
+						<rate>24</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 10</reloadTime>
+						<reloadTime>8 10 12</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It14_P44_Pantera/normal/lod0/Gun_02.model</undamaged>
@@ -6685,10 +6679,10 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>3</count>
-						<rate>24</rate>
+						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 10 12</reloadTime>
+						<reloadTime>8 10 11</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It14_P44_Pantera/normal/lod0/Gun_03.model</undamaged>
@@ -6843,7 +6837,7 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>3</count>
-						<rate>24</rate>
+						<rate>30</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>8 10 11</reloadTime>

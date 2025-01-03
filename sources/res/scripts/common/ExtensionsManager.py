@@ -1,9 +1,8 @@
-import BigWorld, ResMgr, typing
+import BigWorld, ResMgr
 from collections import namedtuple
 _EXTENSIONS_RELATIVE_DIR = '../wot_ext'
 _EXTENSIONS_ABS_DIR = 'res/wot_ext'
 _EXTENSION_PATH_TEMPLATE = '{root}/{extension}/{path}'
-_EXTENSION_CLIENT_PATH_TEMPLATE = '{extension}/{path}'
 _EXTENSION_IMPORT_PATHS = [
  '',
  'scripts',
@@ -13,9 +12,6 @@ _EXTENSION_IMPORT_PATHS = [
  'scripts/common/Lib']
 
 def makeExtensionPath(extension, path):
-    from constants import IS_CLIENT
-    if IS_CLIENT:
-        return _EXTENSION_CLIENT_PATH_TEMPLATE.format(extension=extension, path=path)
     return _EXTENSION_PATH_TEMPLATE.format(root=_EXTENSIONS_RELATIVE_DIR, extension=extension, path=path)
 
 

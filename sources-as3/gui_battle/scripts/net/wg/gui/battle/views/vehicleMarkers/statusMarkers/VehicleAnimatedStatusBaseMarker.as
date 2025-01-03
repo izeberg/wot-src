@@ -1,12 +1,11 @@
 package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
 {
-   import flash.display.MovieClip;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersConstants;
    import net.wg.gui.battle.views.vehicleMarkers.events.StatusAnimationEvent;
-   import net.wg.infrastructure.interfaces.entity.IDisposable;
+   import net.wg.infrastructure.base.SimpleDisposable;
    import org.idmedia.as3commons.util.StringUtils;
    
-   public class VehicleAnimatedStatusBaseMarker extends MovieClip implements IDisposable
+   public class VehicleAnimatedStatusBaseMarker extends SimpleDisposable
    {
       
       protected static const STATE_SHOW:String = "show";
@@ -18,8 +17,6 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       protected static const STATE_HIDDEN:String = "hidden";
       
       protected static const LABEL_SOURCE:String = "_source";
-      
-      protected static const HIDDEN_STATE_STOP_FRAME:int = 52;
       
       protected static const HIDE_STATE_STOP_FRAME:int = 41;
       
@@ -36,8 +33,6 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       private var _statusID:int = -1;
       
-      private var _disposed:Boolean = false;
-      
       private var _isSourceVehicle:Boolean = false;
       
       public function VehicleAnimatedStatusBaseMarker()
@@ -48,10 +43,12 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          visible = false;
       }
       
-      public final function dispose() : void
+      override protected function onDispose() : void
       {
-         this._disposed = true;
-         this.onDispose();
+         super.onDispose();
+         stop();
+         addFrameScript(HIDE_STATE_STOP_FRAME,null);
+         addFrameScript(totalFrames - 1,null);
       }
       
       public function hideEffectTimer(param1:Boolean = false) : void
@@ -77,11 +74,6 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       public function isAtlasSrcMode() : Boolean
       {
          return this._atlasSrcMode;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
       
       public function isVisible() : Boolean
@@ -128,14 +120,13 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       public function setupFrameEvents() : void
       {
-         addFrameScript(HIDDEN_STATE_STOP_FRAME,this.onHiddenStateShowed);
+         addFrameScript(totalFrames - 1,this.onHiddenStateShowed);
          addFrameScript(HIDE_STATE_STOP_FRAME,this.evaluateOneShotAnimationFrameStates);
       }
       
       public function showEffectTimer(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean = true, param5:Boolean = true) : void
       {
          this.oneShotAnimation = param3;
-         visible = true;
          gotoAndPlay(!!param4 ? STATE_SHOW : STATE_BASE);
          this._isSourceVehicle = param2;
          this.updateSourceVehicle();
@@ -169,13 +160,6 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          }
       }
       
-      protected function onDispose() : void
-      {
-         stop();
-         addFrameScript(HIDE_STATE_STOP_FRAME,null);
-         addFrameScript(HIDDEN_STATE_STOP_FRAME,null);
-      }
-      
       protected function updateColorSettings(param1:uint) : void
       {
       }
@@ -197,7 +181,7 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          {
             gotoAndPlay(HIDE_STATE_NEXT_PLAY_FRAME);
          }
-         else if(currentFrame == HIDDEN_STATE_STOP_FRAME)
+         else if(currentFrame == totalFrames)
          {
             this.onHiddenStateShowed();
          }

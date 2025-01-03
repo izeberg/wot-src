@@ -1,123 +1,116 @@
 package net.wg.gui.battle.random.views.fragCorrelationBar.components
 {
-   import flash.display.BitmapData;
    import flash.display.Graphics;
-   import flash.display.MovieClip;
-   import net.wg.data.constants.InvalidationType;
+   import flash.display.Sprite;
+   import net.wg.data.constants.generated.ATLAS_CONSTANTS;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.components.BattleUIComponent;
    
    public class ScoreHealthBarElement extends BattleUIComponent
    {
       
-      private static const ALLY_DEFAULT_SCHEME:String = "ally";
+      private static const SETTINGS:Object = {};
       
-      private static const ENEMY_COLORBLIND_SCHEME:String = "enemy_colorblind";
+      private static const BG_INDEX:int = 0;
       
-      private static const ENEMY_DEFAULT_SCHEME:String = "enemy";
+      private static const PROGRESS_INDEX:int = 1;
       
-      private static const POSTFIX_BG:String = "_bg";
+      private static const INDICATOR_INDEX:int = 2;
       
-      private static const SCHEME_TO_BAR:Object = {
-         "ally":"green_bar",
-         "enemy_colorblind":"purple_bar",
-         "enemy":"red_bar"
-      };
-       
+      private static const RED:String = "red";
       
-      public var hpBar:MovieClip = null;
+      private static const GREEN:String = "green";
       
-      public var fillLayer:MovieClip = null;
+      private static const PURPLE:String = "purple";
       
-      public var fillLayerBG:MovieClip = null;
+      {
+         SETTINGS[RED] = [BATTLEATLAS.FB_RED_BG,BATTLEATLAS.FB_PROGRESS_RED,BATTLEATLAS.FB_INDICATOR_RED];
+         SETTINGS[PURPLE] = [BATTLEATLAS.FB_PURPLE_BG,BATTLEATLAS.FB_PROGRESS_PURPLE,BATTLEATLAS.FB_INDICATOR_PURPLE];
+         SETTINGS[GREEN] = [BATTLEATLAS.FB_GREEN_BG,BATTLEATLAS.FB_PROGRESS_GREEN,BATTLEATLAS.FB_INDICATOR_GREEN];
+      }
       
       private var _currentState:String = "";
       
-      private var _bitMapDataBar:BitmapData = null;
+      private var _progress:Number = 0;
       
-      private var _bitMapDataBarBG:BitmapData = null;
+      private var _bitMapDataBar:Sprite = null;
       
-      private var _actualHealthBarPercentage:Number = 1.0;
+      private var _bitMapDataBarBG:Sprite = null;
       
-      private var _wholeElementWidth:int = 0;
+      private var _progressIndicator:Sprite = null;
       
-      private var _originalHPBarX:int = 0;
+      private var _barWidth:int = 0;
+      
+      private var _curSettings:Array;
       
       public function ScoreHealthBarElement()
       {
          super();
-         this._originalHPBarX = this.hpBar.x;
+         this._bitMapDataBar = new Sprite();
+         this._bitMapDataBarBG = new Sprite();
+         this._progressIndicator = new Sprite();
+         addChild(this._bitMapDataBarBG);
+         addChild(this._bitMapDataBar);
+         addChild(this._progressIndicator);
       }
       
       override protected function onDispose() : void
       {
-         this.hpBar = null;
-         this.fillLayer = null;
          this._bitMapDataBar = null;
+         this._bitMapDataBarBG = null;
+         this._progressIndicator = null;
          super.onDispose();
-      }
-      
-      override protected function draw() : void
-      {
-         super.draw();
-         if(isInvalid(InvalidationType.DATA))
-         {
-            this.hpBar.x = this._originalHPBarX + this._actualHealthBarPercentage * this._wholeElementWidth;
-            this.drawGraphic(this._actualHealthBarPercentage);
-         }
       }
       
       public function setColor(param1:Boolean, param2:Boolean) : void
       {
-         var _loc3_:String = ALLY_DEFAULT_SCHEME;
+         var _loc3_:String = GREEN;
          if(param1)
          {
-            _loc3_ = !!param2 ? ENEMY_COLORBLIND_SCHEME : ENEMY_DEFAULT_SCHEME;
+            _loc3_ = !!param2 ? PURPLE : RED;
          }
          if(_loc3_ == this._currentState)
          {
             return;
          }
-         var _loc4_:String = SCHEME_TO_BAR[_loc3_];
-         this._bitMapDataBar = App.utils.classFactory.getObject(_loc4_) as BitmapData;
-         var _loc5_:String = SCHEME_TO_BAR[_loc3_] + POSTFIX_BG;
-         this._bitMapDataBarBG = App.utils.classFactory.getObject(_loc5_) as BitmapData;
          this._currentState = _loc3_;
-         gotoAndStop(this._currentState);
-         invalidateData();
+         this._curSettings = SETTINGS[_loc3_];
+         App.atlasMgr.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,this._curSettings[INDICATOR_INDEX],this._progressIndicator.graphics);
+         this.updateWidth(this._barWidth);
+         this.updateProgress();
       }
       
-      public function setWidth(param1:int) : void
+      public function setProgress(param1:Number) : void
       {
-         this._wholeElementWidth = param1;
-         invalidateData();
+         this._progress = param1;
+         this.updateProgress();
       }
       
-      public function setHealth(param1:int) : void
+      public function updateWidth(param1:int) : void
       {
-         this._actualHealthBarPercentage = Math.max(0,Math.min(param1 * 0.01,1));
-         invalidateData();
-      }
-      
-      private function drawGraphic(param1:Number) : void
-      {
-         if(!this._bitMapDataBar)
+         this._barWidth = param1;
+         if(this._curSettings)
          {
-            return;
+            this.drawImage(this._bitMapDataBarBG.graphics,this._curSettings[BG_INDEX],param1,10);
+            this.updateProgress();
          }
-         var _loc2_:Graphics = this.fillLayer.graphics;
-         _loc2_.clear();
-         _loc2_.beginBitmapFill(this._bitMapDataBar);
-         _loc2_.drawRect(0,0,param1 * this._wholeElementWidth,this._bitMapDataBar.height);
-         _loc2_.endFill();
-         if(!this._bitMapDataBarBG)
+      }
+      
+      private function updateProgress() : void
+      {
+         var _loc1_:int = 0;
+         if(this._curSettings)
          {
-            return;
+            _loc1_ = int(this._barWidth * this._progress);
+            this.drawImage(this._bitMapDataBar.graphics,this._curSettings[PROGRESS_INDEX],_loc1_,10);
+            this._progressIndicator.x = _loc1_ - (this._progressIndicator.width >> 1);
+            this._progressIndicator.y = -5;
          }
-         var _loc3_:Graphics = this.fillLayerBG.graphics;
-         _loc3_.clear();
-         _loc3_.beginBitmapFill(this._bitMapDataBarBG);
-         _loc3_.drawRect(0,0,this._wholeElementWidth,this._bitMapDataBarBG.height);
-         _loc3_.endFill();
+      }
+      
+      private function drawImage(param1:Graphics, param2:String, param3:int, param4:int) : void
+      {
+         App.atlasMgr.drawAtlasItemPart(ATLAS_CONSTANTS.BATTLE_ATLAS,param2,param1,param3,param4);
       }
    }
 }

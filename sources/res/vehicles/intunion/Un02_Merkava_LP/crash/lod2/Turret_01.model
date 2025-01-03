@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un02_Merkava_LP/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.435867 -0.090007 -2.810429</min>
+		<max>1.431792 1.047018 2.286902</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un02_Merkava_LP/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -4,6 +4,7 @@ package net.wg.gui.battle.epicRandom.battleloading
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
+   import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
@@ -12,6 +13,7 @@ package net.wg.gui.battle.epicRandom.battleloading
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.epicRandom.battleloading.components.EpicRandomStatsTable;
    import net.wg.gui.battle.epicRandom.battleloading.components.EpicRandomStatsTableCtrl;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import org.idmedia.as3commons.util.StringUtils;
@@ -47,13 +49,13 @@ package net.wg.gui.battle.epicRandom.battleloading
       
       public var mapBorder:MovieClip = null;
       
-      public var tipBackground:BattleAtlasSprite = null;
+      public var tipBackground:Image = null;
       
-      public var mapBackground:BattleAtlasSprite = null;
+      public var mapBackground:Image = null;
       
-      public var formBackgroundTable:BattleAtlasSprite = null;
+      public var bg:Image = null;
       
-      public var betaIcon:BattleAtlasSprite = null;
+      public var betaIcon:Image = null;
       
       public var table:EpicRandomStatsTable = null;
       
@@ -82,6 +84,7 @@ package net.wg.gui.battle.epicRandom.battleloading
       public function EpicRandomBattleLoadingForm()
       {
          super();
+         this.bg.cacheType = ImageCacheTypes.NOT_USE_CACHE;
          this._tableCtrl = new EpicRandomStatsTableCtrl(this.table);
       }
       
@@ -103,7 +106,7 @@ package net.wg.gui.battle.epicRandom.battleloading
             this.leftTank.x = this._leftTankInitX;
             this.rightTank.x = this._rightTankInitX;
             this.rightSquad.x = this._rightSquadInitX;
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TABLE;
+            this.bg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMBG;
          }
          if(param1.showTipsBackground)
          {
@@ -111,7 +114,7 @@ package net.wg.gui.battle.epicRandom.battleloading
             this.leftTank.x = this._leftTankInitX - TANK_ICON_SHIFT;
             this.rightTank.x = this._rightTankInitX + TANK_ICON_SHIFT;
             this.rightSquad.x = this._rightSquadInitX + SQUAD_ICON_SHIFT;
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TIPS;
+            this.bg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMBGTIPS;
          }
          this.team1Text.x = param1.leftTeamTitleLeft;
          this.team2Text.x = param1.rightTeamTitleLeft;
@@ -187,10 +190,13 @@ package net.wg.gui.battle.epicRandom.battleloading
          this.table = null;
          this.team1Text = null;
          this.team2Text = null;
+         this.tipBackground.dispose();
          this.tipBackground = null;
          this.mapBackground = null;
-         this.formBackgroundTable = null;
+         this.bg.dispose();
+         this.bg = null;
          this.mapBorder = null;
+         this.betaIcon.dispose();
          this.betaIcon = null;
          this.tipImage.dispose();
          this.tipImage = null;
@@ -211,7 +217,7 @@ package net.wg.gui.battle.epicRandom.battleloading
       override protected function initialize() : void
       {
          super.initialize();
-         this.formBackgroundTable.mouseChildren = this.formBackgroundTable.mouseEnabled = false;
+         this.bg.mouseChildren = this.bg.mouseEnabled = false;
          this.leftSquad.imageName = BATTLEATLAS.ICON_PLATOON;
          this.leftTank.imageName = BATTLEATLAS.ICON_TANK;
          this.rightTank.imageName = BATTLEATLAS.ICON_TANK;
@@ -233,7 +239,7 @@ package net.wg.gui.battle.epicRandom.battleloading
       {
          super.configUI();
          this.betaIcon.visible = true;
-         this.betaIcon.imageName = BATTLEATLAS.EPIC_RANDOMBETA_ICON;
+         this.betaIcon.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_EPICBETA;
       }
       
       override protected function onBattleTextUpdated() : void
@@ -258,7 +264,7 @@ package net.wg.gui.battle.epicRandom.battleloading
       private function showMap(param1:int, param2:int) : void
       {
          this.mapBackground.visible = true;
-         this.mapBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_MAP_BACKGROUND;
+         this.mapBackground.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMMAPBG;
          this.mapBorder.visible = true;
          this.map.setMinimapDataS(param1,param2,MAP_SIZE);
          this.map.border.visible = false;
@@ -274,7 +280,7 @@ package net.wg.gui.battle.epicRandom.battleloading
          {
             helpTip.y = param1;
             tipText.y = param2;
-            this.tipBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_TIP_BACKGROUND;
+            this.tipBackground.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_TIPSBG;
             this.tipImage.source = param3;
          }
       }

@@ -28,6 +28,12 @@ package net.wg.gui.battle.views.questProgress
       
       private static const ITEMS_START_POINT_MAIN_X:int = 0;
       
+      private static const ITEMS_START_POINT_MAIN_ONLY_X:int = 182;
+      
+      private static const MAIN_CONDITION_TF_X:int = 61;
+      
+      private static const MAIN_CONDITION_TF_MAIN_ONLY_X:int = ITEMS_START_POINT_MAIN_ONLY_X + MAIN_CONDITION_TF_X;
+      
       private static const ITEMS_START_POINT_ADD_X:int = 491;
       
       private static const MOUSE_WHEEL_DELTA_FACTOR:int = 2;
@@ -73,6 +79,8 @@ package net.wg.gui.battle.views.questProgress
       
       private var _toolTipMgr:ITooltipMgr;
       
+      private var _isMainOnly:Boolean;
+      
       public function QuestProgressTabView()
       {
          this._toolTipMgr = App.toolTipMgr;
@@ -92,6 +100,7 @@ package net.wg.gui.battle.views.questProgress
       override protected function initData(param1:IQuestProgressData) : void
       {
          super.initData(param1);
+         this._isMainOnly = param1.isMainOnly;
          var _loc2_:int = !!param1.isHeaderHasProgress ? int(Values.ZERO) : int(ADDITIONAL_CONTENT_HEIGHT);
          this._startContainerY = CONDITIONS_CONTAINER_START_Y - _loc2_;
          this.conditionsContainer.y = this._startContainerY;
@@ -103,7 +112,8 @@ package net.wg.gui.battle.views.questProgress
          this.conditionsContainerMask.height = _loc4_;
          this.scrollBar.height = _loc4_;
          this.conditionsContainerHitMc.height = _loc4_;
-         this.headerContainer.setData(param1.headerConditions,ITEMS_START_POINT_MAIN_X,ITEMS_START_POINT_ADD_X);
+         this.headerContainer.setData(param1.headerConditions,ITEMS_START_POINT_MAIN_X,ITEMS_START_POINT_ADD_X,this._isMainOnly);
+         this.addConditionTf.visible = !this._isMainOnly;
       }
       
       override protected function onUpdateHeaderProgress(param1:Vector.<IHeaderProgressData>) : void
@@ -153,7 +163,7 @@ package net.wg.gui.battle.views.questProgress
                {
                   if(_loc3_.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE)
                   {
-                     _loc3_.x = ITEMS_START_POINT_MAIN_X;
+                     _loc3_.x = !!this._isMainOnly ? Number(ITEMS_START_POINT_MAIN_ONLY_X) : Number(ITEMS_START_POINT_MAIN_X);
                      _loc3_.y = _loc1_;
                      _loc1_ += _loc3_.height + ITEMS_GAP;
                   }
@@ -173,6 +183,8 @@ package net.wg.gui.battle.views.questProgress
             }
             this.scrollBar.position = 0;
          }
+         this.mainConditionTf.x = !!this._isMainOnly ? Number(MAIN_CONDITION_TF_MAIN_ONLY_X) : Number(MAIN_CONDITION_TF_X);
+         this.headerContainer.x = !!this._isMainOnly ? Number(MAIN_CONDITION_TF_MAIN_ONLY_X) : Number(MAIN_CONDITION_TF_X);
          this.updateScrollBar();
          this.lock.visible = hasLockedItems();
          if(this.lock.visible)

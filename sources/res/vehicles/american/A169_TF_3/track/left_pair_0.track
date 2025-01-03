@@ -11,9 +11,9 @@
 			<authoring_tool>FBX COLLADA exporter</authoring_tool>
 			<comments/>
 		</contributor>
-		<created>2024-10-03T13:50:13Z</created>
+		<created>2024-10-24T12:02:58Z</created>
 		<keywords/>
-		<modified>2024-10-03T13:50:13Z</modified>
+		<modified>2024-10-24T12:02:58Z</modified>
 		<revision/>
 		<subject/>
 		<title/>
@@ -25,12 +25,12 @@
 	</asset>
 	<library_visual_scenes>
 		<visual_scene>
-			<id>left.track</id>
-			<name>left.track</name>
+			<id>left_pair_0.track</id>
+			<name>left_pair_0.track</name>
 			<node>
-				<name>L_loc</name>
-				<id>L_loc</id>
-				<sid>L_loc</sid>
+				<name>L_loc0</name>
+				<id>L_loc0</id>
+				<sid>L_loc0</sid>
 				<matrix>
 					1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000
 					<!--BW_String-->
@@ -47,7 +47,7 @@
 					<id>Track_L3_loc12</id>
 					<sid>Track_L3_loc12</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 74.049103 0.000000 0.000000 1.000000 41.266994 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 74.049103 0.000000 0.000000 1.000000 40.401680 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -63,7 +63,7 @@
 					<id>Track_L3_loc13</id>
 					<sid>Track_L3_loc13</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 60.247452 0.000000 0.000000 1.000000 15.293713 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 64.290092 0.000000 0.000000 1.000000 17.548992 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -79,7 +79,7 @@
 					<id>Track_L3_loc14</id>
 					<sid>Track_L3_loc14</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 37.153587 0.000000 0.000000 1.000000 9.792418 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 40.522453 0.000000 0.000000 1.000000 8.638342 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -95,7 +95,7 @@
 					<id>Track_L3_loc15</id>
 					<sid>Track_L3_loc15</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 16.128101 0.000000 0.000000 1.000000 22.075005 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 16.416861 0.000000 0.000000 1.000000 21.402197 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -111,7 +111,7 @@
 					<id>Track_L3_loc16</id>
 					<sid>Track_L3_loc16</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 9.684094 0.000000 0.000000 1.000000 53.665230 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 -147.899994 0.000000 1.000000 0.000000 9.684094 0.000000 0.000000 1.000000 50.957474 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -378,35 +378,22 @@
 	</library_visual_scenes>
 	<scene>
 		<instance_visual_scene>
-			<url>#left.track</url>
+			<url>#left_pair_0.track</url>
 		</instance_visual_scene>
 	</scene>
 	<wheels>
-		<wheel>WD_L0</wheel>
 		<wheel>WD_L1</wheel>
-		<wheel>W_L0</wheel>
-		<wheel>W_L1</wheel>
-		<wheel>W_L2</wheel>
 		<wheel>W_L3</wheel>
 		<wheel>W_L4</wheel>
 		<wheel>W_L5</wheel>
 	</wheels>
 	<nodes>
-		<node>Track_VD_L0</node>
 		<node>Track_VD_L1</node>
-		<node>Track_VT_L0</node>
-		<node>Track_VT_L1</node>
-		<node>Track_VT_L2</node>
-		<node>Track_VT_L3</node>
-		<node>Track_VT_L4</node>
 		<node>Track_VT_L5</node>
 		<node>Track_VT_L6</node>
 		<node>Track_VT_L7</node>
 		<node>Track_VT_L8</node>
 		<node>Track_VT_L9</node>
-		<node>Track_L0</node>
-		<node>Track_L1</node>
-		<node>Track_L2</node>
 		<node>Track_L3</node>
 		<node>Track_L4</node>
 		<node>Track_L5</node>

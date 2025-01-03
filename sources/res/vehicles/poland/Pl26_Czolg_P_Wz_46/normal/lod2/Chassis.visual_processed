@@ -17,7 +17,7 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_Track_LFront</identifier>
+				<identifier>HP_Track_LFront__track_left_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
@@ -26,7 +26,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_Track_LRear</identifier>
+				<identifier>HP_Track_LRear__track_left_0</identifier>
 				<transform>
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
@@ -35,7 +35,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_Track_RFront</identifier>
+				<identifier>HP_Track_RFront__track_right_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
@@ -44,12 +44,48 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_Track_RRear</identifier>
+				<identifier>HP_Track_RRear__track_right_0</identifier>
 				<transform>
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
 					<row3>1.341270 -0.003149 -2.410431</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_LFront__track_left_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>-1.341000 -0.003149 2.378021</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_LRear__track_left_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>0.000000 0.102324 -0.994751</row2>
+					<row3>-1.341270 -0.003149 0.375426</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_RFront__track_right_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>1.341270 -0.003149 2.378021</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_RRear__track_right_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>0.000000 0.102324 -0.994751</row2>
+					<row3>1.341270 -0.003149 0.375426</row3>
 				</transform>
 			</node>
 			<node>
@@ -59,42 +95,6 @@
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
 					<row3>0.000000 5.532983 -0.000000</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_LFront1</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.993847 -0.110758</row1>
-					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.341000 -0.003149 2.378021</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_LRear1</identifier>
-				<transform>
-					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.994751 0.102324</row1>
-					<row2>0.000000 0.102324 -0.994751</row2>
-					<row3>-1.341270 -0.003149 0.375426</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_RFront1</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.993847 -0.110758</row1>
-					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.341270 -0.003149 2.378021</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_RRear1</identifier>
-				<transform>
-					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.994751 0.102324</row1>
-					<row2>0.000000 0.102324 -0.994751</row2>
-					<row3>1.341270 -0.003149 0.375426</row3>
 				</transform>
 			</node>
 			<node>

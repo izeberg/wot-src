@@ -17,6 +17,8 @@
 			<scatterColor>1.000000 0.488500 0.010000 2.000000</scatterColor>
 			<skyLow>0.050000</skyLow>
 			<skyHigh>0.280000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -27,6 +29,8 @@
 			<startDistance>100.000000</startDistance>
 			<skyLow>-0.050000</skyLow>
 			<skyHigh>0.150000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -72,6 +76,19 @@
 		<colorCorrection>
 			<map>system/maps/post_processing/cube/P_curve_1ACF-40hssdF.dds</map>
 		</colorCorrection>
+		<rainDistortion>
+			<map>system/maps/void_cch.dds</map>
+			<enable>false</enable>
+			<dropsStrength>1.000000</dropsStrength>
+			<dripsStrength>1.000000</dripsStrength>
+			<dropsFrequency>0.250000</dropsFrequency>
+			<tileDrops>10.000000</tileDrops>
+			<textMip>1.000000</textMip>
+			<dripFrequency>2.000000</dripFrequency>
+			<dripTileMove>1.000000 1.000000 1.000000 1.000000</dripTileMove>
+			<dropsSize>0.700000 0.100000</dropsSize>
+			<tileNoise>1.000000 1.000000</tileNoise>
+		</rainDistortion>
 		<filmgrain>
 			<enable>true</enable>
 			<scale>0.120000</scale>
@@ -99,7 +116,7 @@
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.280000</flareIntensity>
 		<objectThreshold>2.000000</objectThreshold>
-		<objectFlareIntensity>0.520000</objectFlareIntensity>
+		<objectFlareIntensity>0.420000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -164,7 +181,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.750000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
+		<flakesUvScale>0.800000</flakesUvScale>
+		<flakesGloss>0.890000</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 	</PBS>
 	<Weather>
 		<wind>
@@ -176,6 +197,7 @@
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap/>
+		<layerMask/>
 	</overlayMaterial>
 	<day_night_cycle>
 		<forward>
@@ -188,6 +210,7 @@
 			<angleZ>252.889999</angleZ>
 		</deferred>
 		<sunScale>4.000000</sunScale>
+		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>248.624985 153.458191 57.183750</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.597386 0.309804</sunLightColor>

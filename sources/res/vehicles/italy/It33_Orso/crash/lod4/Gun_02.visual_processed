@@ -24,7 +24,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_crashUVTiling
-						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
@@ -47,22 +47,33 @@
 						<Texture>vehicles/italy/It33_Orso/Orso_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						<Texture>vehicles/italy/It33_Orso/Orso_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.007744 0.107832 2.909942</groupOrigin>
+				<groupOrigin>-0.007744 0.107832 3.040227</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.448704 -0.287819 -0.454019</min>
-		<max>0.433215 0.503484 6.273902</max>
+		<min>-0.448704 -0.287819 -0.457909</min>
+		<max>0.433215 0.503484 6.538363</max>
 	</boundingBox>
-	<geometrySize>1144</geometrySize>
-	<minUVDensity>0.003179</minUVDensity>
+	<missingBspMaterial>
+		<material>
+			<identifier>proxy</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>proxy</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>proxy</identifier>
+		</material>
+	</missingBspMaterial>
+	<geometrySize>1352</geometrySize>
+	<minUVDensity>0.000905</minUVDensity>
 </root>

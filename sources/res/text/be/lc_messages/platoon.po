@@ -132,7 +132,7 @@ msgid "headerButton/searching"
 msgstr "Шуканне..."
 
 msgid "headerButton/squad"
-msgstr "Стварыць звяз"
+msgstr "Взводная игра"
 
 msgid "headerButton/tooltips/battleRoyaleSquad/body"
 msgstr ""
@@ -140,6 +140,14 @@ msgstr ""
 "паляўнічы»."
 
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/bobSquad/body"
+msgstr ""
+"Создание формирования из 2-3 игроков для совместной игры в боях события "
+"«Битва блогеров»."
+
+msgid "headerButton/tooltips/bobSquad/header"
 msgstr "Звяз"
 
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
@@ -169,11 +177,11 @@ msgstr "Звяз"
 
 msgid "headerButton/tooltips/eventSquad/body"
 msgstr ""
-"Создание формирования из 2–3 игроков для совместной игры в событии «Большие "
-"гонки»."
+"Стварэнне фармавання з 2–3 гульцоў для сумеснай гульні ў падзеі «Вялікія "
+"гонкі»."
 
 msgid "headerButton/tooltips/eventSquad/header"
-msgstr "Взвод события «Большие гонки»"
+msgstr "Звяз падзеі «Вялікія гонкі»."
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
 msgstr "Націсніце, каб перайсці ў меню звязу."
@@ -288,6 +296,9 @@ msgstr "Штраф да досведу з-за памылковага склад
 msgid "members/header/battle_royal"
 msgstr ": Сталёвы паляўнічы"
 
+msgid "members/header/bob"
+msgstr ": Битва блогеров"
+
 msgid "members/header/comp7"
 msgstr ": «Націск»"
 
@@ -295,7 +306,7 @@ msgid "members/header/epic"
 msgstr ": Лінія фронту"
 
 msgid "members/header/event"
-msgstr ": Событие"
+msgstr ": Падзея"
 
 msgid "members/header/mapbox"
 msgstr ": Разведка боем"
@@ -333,7 +344,7 @@ msgid "members/header/tooltip/epic/header"
 msgstr "Правілы фармавання звязу"
 
 msgid "members/header/tooltip/event/body"
-msgstr "Взвод должен состоять из трёх специальных машин режима."
+msgstr "Звяз павінен складацца з трох адмысловых машын рэжыму."
 
 msgid "members/header/tooltip/event/header"
 msgstr "Правілы фармавання звязу"

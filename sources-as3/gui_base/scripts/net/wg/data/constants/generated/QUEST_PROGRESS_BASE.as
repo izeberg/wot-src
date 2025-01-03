@@ -59,6 +59,8 @@ package net.wg.data.constants.generated
       
       public static const QP_METRIC_TYPE_LIMITER:String = "metricLimiter";
       
+      public static const QP_VEHICLES_METRIC_TYPE_RANGE:String = "vehiclesMetricRangeValues";
+      
       public static const QUEST_PROGRESS_METRICS_SKIP_TAB:Array = [QP_METRIC_TYPE_LIMITER,QP_METRIC_TYPE_SIMPLE_VALUE,QP_METRIC_TYPE_SIMPLE];
       
       public static const QP_METRIC_SIMPLE_CMP_TAB:String = "QPMetricsSimpleCmpTabUI";
@@ -66,6 +68,8 @@ package net.wg.data.constants.generated
       public static const QP_METRIC_SIMPLE_VALUE_CMP_TAB:String = "QPMetricsSimpleValueCmpTabUI";
       
       public static const QP_METRIC_RANGE_VALUES_CMP_TAB:String = "QPMetricsRangeValuesCmpTabUI";
+      
+      public static const QP_VEHICLES_METRIC_RANGE_VALUES_CMP_TAB:String = "QPMetricsVehiclesRangeValuesCmpTabUI";
       
       public static const QP_METRIC_VEHICLES_CMP_TAB:String = "QPMetricsVehiclesCmpTabUI";
       
@@ -78,6 +82,8 @@ package net.wg.data.constants.generated
       public static const QP_METRIC_SIMPLE_VALUE_CMP_TOP:String = "QPMetricsSimpleValueCmpTopUI";
       
       public static const QP_METRIC_RANGE_VALUES_CMP_TOP:String = "QPMetricsRangeValuesCmpTopUI";
+      
+      public static const QP_VEHICLES_METRIC_RANGE_VALUES_CMP_TOP:String = "QPMetricsVehiclesRangeValuesCmpTopUI";
       
       public static const QP_METRIC_VEHICLES_CMP_TOP:String = "QPMetricsVehiclesCmpTopUI";
       

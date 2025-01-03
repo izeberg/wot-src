@@ -1,6 +1,7 @@
 package net.wg.gui.battle.views.battleTimer
 {
    import flash.display.MovieClip;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.infrastructure.base.meta.IEpicBattleTimerMeta;
    import net.wg.infrastructure.base.meta.impl.EpicBattleTimerMeta;
    
@@ -22,6 +23,11 @@ package net.wg.gui.battle.views.battleTimer
       {
          super();
          this.overtimeIcon.visible = false;
+      }
+      
+      override protected function createBG() : void
+      {
+         shadow.imageName = BATTLEATLAS.EPIC_TIMER_ANIM_BG;
       }
       
       override protected function onDispose() : void

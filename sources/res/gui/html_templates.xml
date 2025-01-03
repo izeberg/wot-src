@@ -764,6 +764,10 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				<crew_bonus_x3>&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/bonus_x3.png&apos; width=&apos;46&apos; height=&apos;18&apos; vspace=&apos;-4&apos; /&gt;&lt;font color=&apos;#95907F&apos;&gt;(x%(value)s) &lt;/font&gt;</crew_bonus_x3>
 				<earlyAccessToken>_(#quests:bonuses/item/earlyAccessToken): %(count)d &lt;img src=&apos;img://gui/maps/icons/quests/bonuses/small/earlyAccessToken.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos;/&gt;</earlyAccessToken>
 				<versusAIProgressionsToken>&lt;img src=&apos;img://gui/maps/icons/missions/tokens/16x16/token_%(progressionName)s.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos;/&gt;&lt;font color=&apos;#95907F&apos;&gt; %(valueName)s (x%(count)s)&lt;/font&gt;</versusAIProgressionsToken>
+				<bobTokens>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/quests/bonuses/small/bob_points.png&apos; width=&apos;16&apos; height=&apos;16&apos; vSpace=&apos;-10&apos; /&gt;</bobTokens>
+				<entitlement>%(value)s)</entitlement>
+				<paragonsUnlocks>_(#quests:bonusName/paragonsUnlocks)%(value)s</paragonsUnlocks>
+				<tmanToken>_(#quests:bonusName/tmanToken) %(value)s</tmanToken>
 			</bonuses>
 			<carouselBonuses>
 				<credits>&lt;font face=&apos;$FieldFont&apos; size=&apos;22&apos; color=&apos;#CED9D9&apos;&gt;&lt;b&gt;%(value)s &lt;/b&gt;&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/CreditsIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; /&gt;</credits>
@@ -1199,7 +1203,7 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 		<referralButton>
 			<iconTemplate>&lt;img src=&apos;img://gui/maps/icons/messenger/%(iconName)s.png&apos; width=&apos;%(width)s&apos; height=&apos;%(height)s&apos; vspace=&apos;-31&apos;/&gt;</iconTemplate>
 		</referralButton>
-		<onlineCounter>&lt;b&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;12&quot; color=&quot;#CBAC77&quot;&gt;%(key)s%(delimiter)s &lt;/font&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;12&quot; color=&quot;#8C8C7C&quot;&gt;%(value)s&lt;/font&gt;&lt;/b&gt;</onlineCounter>
+		<onlineCounter>&lt;b&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#FFDD99&quot;&gt;%(key)s%(delimiter)s &lt;/font&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#FEFEEC&quot;&gt;%(clusterUsers)s&lt;/font&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#E9E2BF&quot;&gt;%(regionUsers)s&lt;/font&gt;&lt;/b&gt;</onlineCounter>
 		<tank_carousel>
 			<statistic>
 				<wins>&lt;img src=&apos;img://gui/maps/icons/statistic/wins24_gray.png&apos; width=&apos;18&apos; height=&apos;24&apos; vspace=&apos;-7&apos;/&gt;%(wins)s</wins>
@@ -1349,4 +1353,10 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			</roleSkill>
 		</tooltips>
 	</comp7>
+	<bob>
+		<voiceChat>
+			<fullStatsStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#cbac77&apos;&gt;%(message)s&lt;/font&gt;</fullStatsStyle>
+			<playersPanelStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#ffdd99&apos;&gt;%(message)s&lt;/font&gt;</playersPanelStyle>
+		</voiceChat>
+	</bob>
 </root>

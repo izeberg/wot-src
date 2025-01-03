@@ -147,6 +147,9 @@ msgstr "<Імя хаўрусніка>, памажы!"
 msgid "chat_example/negative"
 msgstr "Не!"
 
+msgid "chat_example/overheat_cant_shoot"
+msgstr "Орудие перегрето! Не могу стрелять еще <Время остывания> с."
+
 msgid "chat_example/positive"
 msgstr "Так!"
 
@@ -283,6 +286,9 @@ msgstr "%(target)s, памажы!"
 
 msgid "chat_shortcuts/negative"
 msgstr "Не!"
+
+msgid "chat_shortcuts/overheat_cant_shoot"
+msgstr "Орудие перегрето! Не могу стрелять еще %(floatArg1)d с."
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s, так!"
@@ -947,13 +953,13 @@ msgid "player_errors/cant_shoot/gun_damaged"
 msgstr "Страляць немагчыма: гармата пашкоджана."
 
 msgid "player_errors/cant_shoot/gun_locked"
-msgstr "Страляць немагчыма"
+msgstr "Стрельба невозможна."
 
 msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "Стральба немагчымая: гармата перагрэта"
+msgstr "Стрельба невозможна: орудие перегрето."
 
 msgid "player_errors/cant_shoot/gun_reload"
-msgstr "Гармата перанабіваецца"
+msgstr "Орудие перезаряжается."
 
 msgid "player_errors/cant_shoot/no_ammo"
 msgstr "Страляць немагчыма: няма снарадаў."
@@ -965,7 +971,10 @@ msgid "player_errors/cant_shoot/vehicle_destroyed"
 msgstr "Страляць немагчыма: машына знішчана."
 
 msgid "player_errors/cant_switch/assault_spg/camera_can_not_spawn"
-msgstr "Немагчыма перайсці ў прыцэл у гэтым пункце"
+msgstr "Невозможно перейти в прицел в данной точке."
+
+msgid "player_errors/cant_switch/change_shell/gun_overheated"
+msgstr "Орудие перегрето. Смена снарядов невозможна."
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Пераключыць рэжым немагчыма: рухавік выведзены са строю."
@@ -2481,7 +2490,7 @@ msgid "rewardWindow/twitch31/headerText"
 msgstr "Адэпта Сарорытас"
 
 msgid "rewardWindow/twitch31/subHeaderText"
-msgstr "Атрыманыя ўзнагароды"
+msgstr "Атрыманы ўзнагароды"
 
 msgid "rewardWindow/twitch32/btnLabel"
 msgstr "Рэкрутаваць"
@@ -2495,7 +2504,7 @@ msgid "rewardWindow/twitch32/headerText"
 msgstr "Лепшы стралок"
 
 msgid "rewardWindow/twitch32/subHeaderText"
-msgstr "Атрыманыя ўзнагароды"
+msgstr "Атрыманы ўзнагароды"
 
 msgid "rewardWindow/twitch33/descText"
 msgstr "Вы атрымалі ўнікальную ўзнагароду за адмысловую акцыю"
@@ -2758,6 +2767,9 @@ msgstr "Пашкоджанні снарада: %(value)s адз."
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"
+
+msgid "shells_kinds/params/flameMaxDistance"
+msgstr "Дальность огнеметания: %(value)s м"
 
 msgid "shells_kinds/params/piercingPower"
 msgstr "Сярэдняя бронепрабівальнасць: %(value)s мм"

@@ -3307,7 +3307,10 @@
 							0 -14.25 1 -14.25
 							<!--BW_String-->
 						</minPitch>
-						<maxPitch>0 5 1 5</maxPitch>
+						<maxPitch>
+							0.00000 7.00 0.38889 7.00 0.41667 5.00 0.58333 5.00 0.61111 7.00 1.00000 7.00
+							<!--BW_String-->
+						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
 						0.33

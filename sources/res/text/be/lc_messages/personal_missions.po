@@ -344,6 +344,15 @@ msgstr "Паскарэнне ходу выканання:"
 msgid "bonus/multiplier/progress"
 msgstr "Бонус ×%(value)s:"
 
+msgid "campaignTitle/1"
+msgstr "Долгожданное подкрепление"
+
+msgid "campaignTitle/2"
+msgstr "Второй фронт"
+
+msgid "campaignTitle/3"
+msgstr "Новые горизонты"
+
 msgid "chainTooltipData/description/text/alliance0"
 msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
 
@@ -708,6 +717,12 @@ msgstr "Недаступна"
 msgid "operations/title1"
 msgstr "StuG IV"
 
+msgid "operations/title10"
+msgstr "Projet Murat"
+
+msgid "operations/title11"
+msgstr "Аттестация"
+
 msgid "operations/title2"
 msgstr "T28 HTC"
 
@@ -725,6 +740,12 @@ msgstr "Chimera"
 
 msgid "operations/title7"
 msgstr "Аб'ект 279 (р)"
+
+msgid "operations/title8"
+msgstr "ARMT"
+
+msgid "operations/title9"
+msgstr "TF-2 Clark"
 
 msgid "operations/unlocked/desc"
 msgstr "Даступна"
@@ -766,7 +787,7 @@ msgid "questProgressTracking/status/onPause"
 msgstr "Прыпынена"
 
 msgid "questProgressTracking/trackingStatus"
-msgstr "Зараз выконваюцца абедзве задачы"
+msgstr "Сейчас выполняется несколько задач"
 
 msgid "sidebar/completed"
 msgstr "Выканана"

@@ -591,7 +591,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<vehiclesDebitedQuestsReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/vehiclesDebited): &lt;font color=&apos;#D6D7D4&apos;&gt;%(vehicles)s&lt;/font&gt;&lt;/font&gt;</vehiclesDebitedQuestsReceived>
 		<vehiclesRentedQuestsReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/vehiclesRented): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(vehicles)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</vehiclesRentedQuestsReceived>
 		<compensationForQuestsReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/compensation) %(items)s %(compensation)s&lt;/font&gt;</compensationForQuestsReceived>
-		<goldCompensationQuestsReceived>&lt;br/&gt;_(#messenger:serviceChannelMessages/invoiceReceived/compensation/gold) &lt;font color=&apos;#FFC363&apos;&gt;%(amount)s&lt;/font&gt;</goldCompensationQuestsReceived>
+		<goldCompensationQuestsReceived>&lt;br/&gt;_(#messenger:serviceChannelMessages/invoiceReceived/compensation/gold) &lt;font color=&apos;#D6D7D4&apos;&gt;%(amount)s&lt;/font&gt;</goldCompensationQuestsReceived>
 		<creditsCompensationQuestsReceived>&lt;br/&gt;_(#messenger:serviceChannelMessages/invoiceReceived/compensation/credits) &lt;font color=&apos;#D6D7D4&apos;&gt;%(amount)s&lt;/font&gt;</creditsCompensationQuestsReceived>
 		<battleResultClubRatingUp>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/club/rating/up): &lt;font color=&apos;#D6D7D4&apos;&gt;%(rating)s&lt;/font&gt;&lt;/font&gt;</battleResultClubRatingUp>
 		<battleResultClubRatingDown>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/club/rating/down): &lt;font color=&apos;#D6D7D4&apos;&gt;%(rating)s&lt;/font&gt;&lt;/font&gt;</battleResultClubRatingDown>
@@ -617,6 +617,8 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<freeXpDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/freeXpDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</freeXpDebitedInvoiceReceived>
 		<equipCoinAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/equipCoinAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</equipCoinAccruedInvoiceReceived>
 		<equipCoinDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/equipCoinDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</equipCoinDebitedInvoiceReceived>
+		<paragonsProgressPointsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/paragonsProgressPointsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</paragonsProgressPointsAccruedInvoiceReceived>
+		<paragonsProgressPointsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/paragonsProgressPointsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</paragonsProgressPointsDebitedInvoiceReceived>
 		<itemsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/itemsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(items)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</itemsAccruedInvoiceReceived>
 		<itemsInstalledInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/itemsInstalled): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(items)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</itemsInstalledInvoiceReceived>
 		<itemsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/itemsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(items)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</itemsDebitedInvoiceReceived>
@@ -679,7 +681,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<postBattleSharingLink>&lt;font color=&quot;#CBAC77&quot;&gt;_(#messenger:chat/postBattleSharing/label): %(arena)s, %(vehicle)s, %(xp)s&lt;/font&gt;&lt;a href=&quot;event:%(linkCode)s&quot;&gt; %(arrowButton)s &lt;/a&gt; &lt;font color=&quot;#CBAC77&quot;&gt;</postBattleSharingLink>
 		<badgeAchievement>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/badgeAchievement): &lt;font color=&apos;#D6D7D4&apos;&gt;%(badges)s&lt;/font&gt;&lt;/font&gt;</badgeAchievement>
 		<removedBadgeAchievement>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/removedBadgeAchievement): &lt;font color=&apos;#D6D7D4&apos;&gt;%(badges)s&lt;/font&gt;&lt;/font&gt;</removedBadgeAchievement>
-		<tankwoman>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tankwoman): %(count)s&lt;/font&gt;</tankwoman>
 		<rankedFinalYearCompensation>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/rankedFinaleAwardsNotification/compensation)&lt;/font&gt;</rankedFinalYearCompensation>
 		<rankedFinalYearPoints>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/rankedFinaleAwardsNotification/text)&lt;/font&gt;</rankedFinalYearPoints>
 		<offerTokenText>&lt;font color=&apos;#D6D7D4&apos;&gt;%(text)s&lt;/font&gt;</offerTokenText>
@@ -707,8 +708,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<rpPointsAdded>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralProgramPointsAdded/body):&lt;/font&gt; &lt;font color=&apos;#CBAC77&apos;&gt;%(points)s&lt;/font&gt;</rpPointsAdded>
 		<rpPointsDebited>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralProgramPointsDebited/body):&lt;/font&gt; &lt;font color=&apos;#CBAC77&apos;&gt;%(points)s&lt;/font&gt;</rpPointsDebited>
 		<transactionTime>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralTransaction/date):&lt;/font&gt; &lt;font color=&apos;#8C8C7E&apos;&gt;%(at)s&lt;/font&gt;</transactionTime>
-		<battleQuestsNYBoxes>&lt;font color=&apos;#D6D7D4&apos;&gt;%(text)s&lt;/font&gt;&lt;/font&gt;</battleQuestsNYBoxes>
-		<battleQuestsNYGiftStamps>&lt;font color=&apos;#D6D7D4&apos;&gt;%(text)s&lt;/font&gt;&lt;/font&gt;</battleQuestsNYGiftStamps>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<SimpleGiftSysMessage>
@@ -1409,6 +1408,12 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>ClockIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</PeriodicBattlesNotSetSysMessage>
+		<BobBattlesAvailableSysMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>ClockIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#messenger:serviceChannelMessages/sysMsg/titles/bobBattlesAvailable)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</BobBattlesAvailableSysMessage>
 		<PaymentMethodLinkSysMessage>
 			<type>grey</type>
 			<icon>ConfirmIcon</icon>
@@ -1672,6 +1677,14 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>InformationIcon</icon>
 			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s:&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
 		</personalMissionsCustom>
+		<PM3EarlyPerfectCompletion>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/seniorityRewardHeader)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats):&lt;/font&gt;
+%(achieves)s&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived)&lt;/font&gt;</message>
+		</PM3EarlyPerfectCompletion>
 		<defaultMessage>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
@@ -2142,25 +2155,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 				</button>
 			</buttonsLayout>
 		</EmailConfirmationReminder>
-		<PsaCoinReminder>
-			<priority>low</priority>
-			<type>grey</type>
-			<icon>InformationIcon</icon>
-			<bgIcon>psa_notification_background</bgIcon>
-			<groupID>offer</groupID>
-			<message>&lt;font color=&quot;#E9E2BF&quot; face=&quot;$TitleFont&quot; size=&quot;15&quot;&gt;_(#messenger:serviceChannelMessages/payerSeniority/coins/header)&lt;/font&gt;&lt;br/&gt;
-&lt;TEXTFORMAT LEADING=&apos;0&apos;&gt;&lt;font color=&quot;#8C8C7E&quot; face=&quot;$FieldFont&quot; size=&quot;14&quot;&gt;_(#messenger:serviceChannelMessages/payerSeniority/coins/body)&lt;/font&gt;&lt;/TEXTFORMAT&gt;&lt;br/&gt;
-&lt;img src=&apos;img://gui/maps/icons/messenger/psaCoin.png&apos; width=&apos;36&apos; height=&apos;36&apos; vspace=&apos;-6&apos;/&gt;&lt;font color=&quot;#FEFEEC&quot; face=&quot;$TitleFont&quot; size=&quot;36&quot;&gt;%(count)s&lt;/font&gt;
-&lt;font color=&quot;#E9E2BF&quot; face=&quot;$TitleFont&quot; size=&quot;6&quot;&gt;&lt;br/&gt;&lt;/font&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#messenger:serviceChannelMessages/payerSeniority/coins/button)</label>
-					<action>openPsaShop</action>
-					<width>107</width>
-				</button>
-			</buttonsLayout>
-		</PsaCoinReminder>
 		<PersonalMissionFailedMessage>
 			<type>personalMissionFailed</type>
 			<icon>WarningIcon</icon>
@@ -2222,27 +2216,24 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 				</button>
 			</buttonsLayout>
 		</LootBoxesSysMessage>
-		<LootBoxesAutoOpenMessage>
+		<LootBoxRewardsSysMessage>
 			<type>grey</type>
+			<priority>low</priority>
 			<icon>InformationIcon</icon>
-			<priority>high</priority>
-			<groupID>offer</groupID>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/header)&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/text)&lt;/font&gt; &lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#E9E2BF&quot;&gt; %(count)s&lt;/font&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/button)</label>
-					<action>lootBoxesAutoOpen</action>
-					<width>120</width>
-				</button>
-			</buttonsLayout>
-		</LootBoxesAutoOpenMessage>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#lootboxes:notification/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
+		</LootBoxRewardsSysMessage>
 		<WtEventLootBoxesAutoOpenMessage>
 			<priority>high</priority>
 			<type>yellow</type>
 			<icon>WarningIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/header)&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/text)&lt;/font&gt;&lt;br/&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/boxes)&lt;br/&gt;%(rewards)s</message>
 		</WtEventLootBoxesAutoOpenMessage>
+		<LunarBoxesAutoOpenMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/lunarBoxesAutoOpen/header)&lt;/font&gt;&lt;br/&gt;_(#messenger:serviceChannelMessages/lunarBoxesAutoOpen/body)&lt;br/&gt;%(rewards)s</message>
+		</LunarBoxesAutoOpenMessage>
 		<OfferGiftBonusesSysMessage>
 			<type>grey</type>
 			<priority>low</priority>
@@ -3449,6 +3440,12 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 				</button>
 			</buttonsLayout>
 		</ArmoryYardOpenChapterSysMessage>
+		<ArmoryYardBundlePurchaseSysMessage>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<bgIcon>BgAYBundlePurchase</bgIcon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
+		</ArmoryYardBundlePurchaseSysMessage>
 		<ReferralProgramPGBFullSysMessage>
 			<type>grey</type>
 			<priority>medium</priority>
@@ -3610,5 +3607,162 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 			</filters>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</EarlyAccessCommonSysMessage>
+		<bobRewardMessage>
+			<priority>low</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/invoice)&lt;/font&gt;
+			&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;_(#bob:serviceChannelMessages/lootBoxesAutoOpen/header):&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
+		</bobRewardMessage>
+		<projectIsAvailable>
+			<type>grey</type>
+			<priority>high</priority>
+			<linkage>ParagonsCustom</linkage>
+			<groupID>offer</groupID>
+			<message>&lt;textformat leading=&quot;4&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;_(#system_messages:paragons/projectAvailable/title)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;&lt;p align=&quot;center&quot;&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:paragons/projectAvailable/text)&lt;/font&gt;&lt;/p&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#system_messages:paragons/to/project/button)</label>
+					<action>showParagonsProjectView</action>
+				</button>
+			</buttonsLayout>
+		</projectIsAvailable>
+		<branchResetIsAvailable>
+			<type>grey</type>
+			<priority>medium</priority>
+			<linkage>ParagonsCustom</linkage>
+			<groupID>offer</groupID>
+			<message>&lt;textformat leading=&quot;4&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;_(#system_messages:paragons/branchResetAvailable/title)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;&lt;p align=&quot;center&quot;&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:paragons/branchResetAvailable/text)&lt;/font&gt;&lt;/p&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#system_messages:paragons/to/researchments/button)</label>
+					<action>showParagonsResearchesView</action>
+				</button>
+			</buttonsLayout>
+		</branchResetIsAvailable>
+		<projectIsContinuing>
+			<type>grey</type>
+			<priority>medium</priority>
+			<linkage>ParagonsCustom</linkage>
+			<groupID>offer</groupID>
+			<message>&lt;textformat leading=&quot;4&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;_(#system_messages:paragons/projectContinuing/title)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;&lt;p align=&quot;center&quot;&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:paragons/projectContinuing/text)&lt;/font&gt;&lt;/p&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#system_messages:paragons/to/project/button)</label>
+					<action>showParagonsProjectView</action>
+				</button>
+			</buttonsLayout>
+		</projectIsContinuing>
+		<newStageIsAvailable>
+			<type>grey</type>
+			<priority>medium</priority>
+			<linkage>ParagonsCustom</linkage>
+			<groupID>offer</groupID>
+			<message>&lt;textformat leading=&quot;4&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;_(#system_messages:paragons/newStageAvailable/title)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;&lt;p align=&quot;center&quot;&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:paragons/newStageAvailable/text)&lt;/font&gt;&lt;/p&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#system_messages:paragons/to/stages/button)</label>
+					<action>showParagonsStagesView</action>
+				</button>
+			</buttonsLayout>
+		</newStageIsAvailable>
+		<projectIsUnavailable>
+			<type>grey</type>
+			<icon>ParagonsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/unavalable/header)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:project/unavalable/body)&lt;/font&gt;
+</message>
+		</projectIsUnavailable>
+		<paragonsBranchResetError>
+			<type>grey</type>
+			<icon>ErrorIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;&lt;b&gt;_(#paragons:branch/resetting/error/header)&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:branch/resetting/error/body/first)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:branch/resetting/error/body/second)&lt;/font&gt;
+</message>
+		</paragonsBranchResetError>
+		<paragonsBattleReward>
+			<type>grey</type>
+			<icon>ParagonsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/name)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:battle/reward/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;
+</message>
+		</paragonsBattleReward>
+		<paragonsLevelReward>
+			<type>grey</type>
+			<icon>ParagonsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/name)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:battle/reward/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:level/reward/header)&lt;/font&gt;
+&lt;font color=&apos;#CED9D9&apos;&gt;%(rewards)s&lt;/font&gt;
+</message>
+		</paragonsLevelReward>
+		<paragonsLevelSelectableReward>
+			<type>grey</type>
+			<icon>ParagonsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/name)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:battle/reward/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;&amp;nbsp;&lt;/img&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:chapter/reward/header)&lt;/font&gt;
+&lt;font color=&apos;#CED9D9&apos;&gt;%(rewards)s&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:chapter/reward/selector/text)&lt;/font&gt;
+</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#paragons:chapter/reward/selector/button/text)</label>
+					<action>showParagonsProjectView</action>
+					<width>120</width>
+				</button>
+			</buttonsLayout>
+		</paragonsLevelSelectableReward>
+		<paragonsBranchReseted>
+			<type>grey</type>
+			<icon>ParagonsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:branch/reseted/header)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:branch/reseted/body/first)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;%(texts)s&lt;/font&gt;
+</message>
+		</paragonsBranchReseted>
+		<paragonsBranchIsUnavailable>
+			<type>grey</type>
+			<icon>ErrorIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:branch/unavailable/header)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:branch/unavailable/body)&lt;/font&gt;&lt;br/&gt;
+</message>
+		</paragonsBranchIsUnavailable>
+		<paragonsBranchIsAvailable>
+			<type>grey</type>
+			<icon>ParagonsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:branch/available/header)&lt;/font&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:branch/available/body)&lt;/font&gt;&lt;br/&gt;
+</message>
+		</paragonsBranchIsAvailable>
+		<paragonsFirstMainRewardBadgeAchieved>
+			<type>grey</type>
+			<priority>medium</priority>
+			<linkage>ParagonsCustom</linkage>
+			<groupID>offer</groupID>
+			<message>&lt;textformat leading=&quot;4&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;_(#system_messages:paragons/firstMainRewardBadgeAchieved/title)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;&lt;p align=&quot;center&quot;&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:paragons/firstMainRewardBadgeAchieved/text)&lt;/font&gt;&lt;/p&gt;</message>
+		</paragonsFirstMainRewardBadgeAchieved>
+		<paragonsChapterCompleted>
+			<type>grey</type>
+			<priority>high</priority>
+			<linkage>ParagonsCustom</linkage>
+			<groupID>offer</groupID>
+			<message>&lt;textformat leading=&quot;4&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;_(#system_messages:paragons/chapterCompleted/title)&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;&lt;p align=&quot;center&quot;&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;/p&gt;</message>
+		</paragonsChapterCompleted>
+		<NewYearMandarinsConverts>
+			<priority>medium</priority>
+			<type>yellow</type>
+			<icon>NyTokenIcon</icon>
+			<message>
+				&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;
+				<br/>
+			</message>
+		</NewYearMandarinsConverts>
 	</htmlTemplates>
 </root>

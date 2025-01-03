@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.384984 -0.268100 0.097526</min>
+		<max>0.384984 0.426150 2.179826</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A169_TF_3/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A169_TF_3/normal/lod0/Gun_01</nodefullVisual>
+</root>

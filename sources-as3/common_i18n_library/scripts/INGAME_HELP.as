@@ -328,6 +328,16 @@ package
       public static const DETAILSHELP_MULTITRACK_TITLE:String = "#ingame_help:detailsHelp/multiTrack/title";
       
       public static const DETAILSHELP_MULTITRACK_DESCRIPTION:String = "#ingame_help:detailsHelp/multiTrack/description";
+      
+      public static const DETAILSHELP_AUTOSHOOTFLAMETANK_HEADERTITLE:String = "#ingame_help:detailsHelp/autoShootFlameTank/headerTitle";
+      
+      public static const DETAILSHELP_AUTOSHOOTFLAMETANK_TITLE:String = "#ingame_help:detailsHelp/autoShootFlameTank/title";
+      
+      public static const DETAILSHELP_AUTOSHOOTFLAMETANK_DESCRIPTION:String = "#ingame_help:detailsHelp/autoShootFlameTank/description";
+      
+      public static const DETAILSHELP_AUTOSHOOTFLAMETANK_PROSCONS_TITLE:String = "#ingame_help:detailsHelp/autoShootFlameTank/prosCons/title";
+      
+      public static const DETAILSHELP_AUTOSHOOTFLAMETANK_PROSCONS:String = "#ingame_help:detailsHelp/autoShootFlameTank/prosCons";
        
       
       public function INGAME_HELP()

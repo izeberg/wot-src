@@ -346,6 +346,9 @@ msgstr "Tiger II"
 msgid "Chassis_G16_PzVIB_Tiger_II_F_short"
 msgstr "Tiger II"
 
+msgid "Chassis_G171_E77"
+msgstr "E 77"
+
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
 
@@ -904,6 +907,9 @@ msgstr "FuG 7"
 msgid "FuG7A"
 msgstr "FuG 7 Ausf. F"
 
+msgid "FuG7F"
+msgstr "FuG 7 Ausf. F"
+
 msgid "FuG7_SH"
 msgstr "FuG 7 K"
 
@@ -951,6 +957,9 @@ msgstr "Брандар 21"
 
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандар 21"
+
+msgid "G04"
+msgstr "G04"
 
 msgid "G04_PzVI_Tiger_IA"
 msgstr "Tiger I L/56"
@@ -2094,18 +2103,24 @@ msgstr "Erich Konzept I"
 
 msgid "G165_Erich_Konzept_I_descr"
 msgstr ""
-"У праекце канструктара Эрыха Юблакера «Erich Konzept I» у межах стварэння перспектыўнага танка была прапанавана канцэпцыя стабілізаванай танкавай вежы. У левай палове вежы знаходзіліся трое танкістаў, а ў правай — аўтамат набівання. Асноўная стаўка была зроблена на высокую рухомасць машыны, якую забяспечвала спараная сілавая ўстаноўка з двух дызельных апазітных рухавікоў. Праект быў прызнаны тэхнічна складаным і не атрымаў далейшага развіцця.\n"
+"В проекте конструктора Эриха Юблакера «Erich Konzept I» в рамках создания перспективного танка была предложена концепция стабилизированной танковой башни. В левой половине башни находились трое членов экипажа, а в правой — автомат заряжания. Основная ставка была сделана на высокую подвижность машины, которую обеспечивала спаренная силовая установка из двух дизельных оппозитных двигателей. К сожалению, проект был признан технически сложным и не получил дальнейшего развития.\n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "G165_Erich_Konzept_I_long_special"
-msgstr "?empty?"
+msgstr ""
+"Очень быстрый и прекрасно вооружённый танк, который способен первым занимать"
+" ключевые позиции на карте. Комфортный угол склонения позволяет играть «от "
+"рельефа», а существенный урон за выстрел охладит пыл любого, кто посмеет "
+"прогнать Erich Konzept I с удобной позиции. Танк очень удобен при "
+"тактической игре, когда нужно постоянно менять фланги и помогать союзникам "
+"на слабых направлениях."
 
 msgid "G165_Erich_Konzept_I_short"
 msgstr "Erich Kn. I"
 
 msgid "G165_Erich_Konzept_I_short_special"
-msgstr "?empty?"
+msgstr "Прекрасная мобильность и огневой потенциал"
 
 msgid "G166_LKpz_70_K"
 msgstr "LKpz.70 K"
@@ -2184,6 +2199,24 @@ msgstr ""
 
 msgid "G16_PzVIB_Tiger_II_F_short_special"
 msgstr "Моцная браня, дакладная гармата"
+
+msgid "G171_E77"
+msgstr "E 77"
+
+msgid "G171_E77_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G171_E77_long_special"
+msgstr "?empty?"
+
+msgid "G171_E77_short"
+msgstr "E 77"
+
+msgid "G171_E77_short_special"
+msgstr "?empty?"
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -4597,6 +4630,9 @@ msgstr "Tiger II"
 msgid "Turret_1_G16_PzVIB_Tiger_II_F_short"
 msgstr "Tiger II"
 
+msgid "Turret_1_G171_E77"
+msgstr "E 77"
+
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
 
@@ -5538,6 +5574,9 @@ msgstr "12,8 cm Kw.K. 44 L/55"
 msgid "_128mm_KwK46_L61"
 msgstr "12,8 cm Kw.K. 46 L/61"
 
+msgid "_128mm_KwK_L50"
+msgstr "12,8 cm KwK L/50"
+
 msgid "_128mm_KwK_L55_TM"
 msgstr "12,8 cm Kw.K. L/55 TM"
 
@@ -5577,6 +5616,9 @@ msgstr "Pzgr 39"
 msgid "_128mm_PzGr39A"
 msgstr "Pzgr 39 A"
 
+msgid "_128mm_PzGr39E"
+msgstr "Pzgr 39 E"
+
 msgid "_128mm_PzGr39K"
 msgstr "Pzgr 39 K"
 
@@ -5600,6 +5642,9 @@ msgstr "Pzgr 40"
 
 msgid "_128mm_PzGr40A"
 msgstr "Pzgr 40 A"
+
+msgid "_128mm_PzGr40E"
+msgstr "Pzgr 40 E"
 
 msgid "_128mm_PzGr40E_HEAT_SH"
 msgstr "Gr 55 HL"
@@ -5636,6 +5681,9 @@ msgstr "Sprgr 18"
 
 msgid "_128mm_SprG18A"
 msgstr "Sprgr 18 A"
+
+msgid "_128mm_SprG18E"
+msgstr "Sprgr 18 E"
 
 msgid "_128mm_SprG18_E"
 msgstr "Sprgr 18 E"

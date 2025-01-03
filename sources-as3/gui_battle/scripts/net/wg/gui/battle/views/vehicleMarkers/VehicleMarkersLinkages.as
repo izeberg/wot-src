@@ -38,6 +38,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       public static const ACTION_SUPPORTING_ALLY:String = "SupportingAllyUI";
       
       public static const ACTION_SUPPORTING_ALLY_ALTERNATIVE:String = "SupportingAllyAlternativeUI";
+      
+      public static const PYROMETER_ACTION:String = "PyrometerInActionUI";
        
       
       public function VehicleMarkersLinkages()

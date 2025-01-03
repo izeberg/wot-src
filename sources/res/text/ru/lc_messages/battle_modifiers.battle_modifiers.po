@@ -29,6 +29,14 @@ msgstr "Комплекс параметров, влияющих на корне�
 msgid "domain/battleParams/name"
 msgstr "Параметры боя"
 
+msgid "domain/bobSeasonModifiers/description"
+msgstr ""
+"Изменения коснутся следующих параметров: разброс орудия, разброс "
+"бронепробития, прочность, получаемый урон от специальных снарядов."
+
+msgid "domain/bobSeasonModifiers/name"
+msgstr "Модификатор события"
+
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
 "Модификатор, увеличивающий прочность всей техники в режиме, уменьшающий "
@@ -112,6 +120,10 @@ msgstr "Разброс урона"
 msgid "modifier/name/deviceDamage"
 msgstr "Урон по модулям"
 
+msgid "modifier/name/dirtBoost"
+msgstr ""
+"Сцепление с грунтами было увеличено для исключения частых заносов техники."
+
 msgid "modifier/name/dispFactorAfterShot"
 msgstr "Разброс после выстрела"
 
@@ -144,6 +156,9 @@ msgstr "Урон экипажу от падения"
 
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перезарядка снаряжения"
+
+msgid "modifier/name/fakeImprovedShellDamage"
+msgstr "Урон от специального снаряда"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максимальная скорость движения вперёд"
@@ -195,6 +210,21 @@ msgstr "Скорость снарядов"
 
 msgid "modifier/name/shotDispersionRadius"
 msgstr "Разброс на 100 метров"
+
+msgid "modifier/name/speedBoostATSPG"
+msgstr "Максимальная скорость вперёд и назад (ПТ-САУ)"
+
+msgid "modifier/name/speedBoostHT"
+msgstr "Максимальная скорость вперёд и назад (ТТ)"
+
+msgid "modifier/name/speedBoostLT"
+msgstr "Максимальная скорость вперёд и назад (ЛТ)"
+
+msgid "modifier/name/speedBoostMT"
+msgstr "Максимальная скорость вперёд и назад (СТ)"
+
+msgid "modifier/name/speedBoostSPG"
+msgstr "Максимальная скорость вперёд и назад (САУ)"
 
 msgid "modifier/name/turretPressureDamage"
 msgstr "Урон от давления сорванной башни"

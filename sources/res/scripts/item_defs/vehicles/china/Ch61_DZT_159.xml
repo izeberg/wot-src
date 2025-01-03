@@ -2763,7 +2763,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>410</circularVisionRadius>
+			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -2796,7 +2796,7 @@
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
@@ -3713,8 +3713,8 @@
 	</physics>
 	<rocketAcceleration>
 		<deployTime>5</deployTime>
-		<reloadTime>5</reloadTime>
-		<reuseCount>10</reuseCount>
+		<reloadTime>8</reloadTime>
+		<reuseCount>8</reuseCount>
 		<duration>7</duration>
 		<impulse>
 			<magnitude>40</magnitude>
@@ -3731,7 +3731,7 @@
 			<mul>
 				<name>dynAttrs/engine/power</name>
 				<value>
-					2.5
+					2.0
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -3775,7 +3775,7 @@
 			<mul>
 				<name>vehicleEnginePower</name>
 				<value>
-					2.5
+					2.0
 					<!--BW_String-->
 				</value>
 			</mul>

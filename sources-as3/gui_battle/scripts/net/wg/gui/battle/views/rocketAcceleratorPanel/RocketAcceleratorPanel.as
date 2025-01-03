@@ -3,11 +3,11 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
    import flash.display.MovieClip;
    import flash.external.ExternalInterface;
    import flash.text.TextField;
-   import net.wg.data.constants.generated.ROCKET_ACCELERATOR_INDICATOR;
-   import net.wg.infrastructure.base.meta.IRocketAcceleratorIndicatorMeta;
-   import net.wg.infrastructure.base.meta.impl.RocketAcceleratorIndicatorMeta;
+   import net.wg.data.constants.generated.COMMON_INDICATOR_CONSTS;
+   import net.wg.infrastructure.base.meta.ICommonIndicatorMeta;
+   import net.wg.infrastructure.base.meta.impl.CommonIndicatorMeta;
    
-   public class RocketAcceleratorPanel extends RocketAcceleratorIndicatorMeta implements IRocketAcceleratorIndicatorMeta
+   public class RocketAcceleratorPanel extends CommonIndicatorMeta implements ICommonIndicatorMeta
    {
       
       private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
@@ -25,11 +25,11 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
       
       public var timerTF:TextField;
       
-      public var balloonMask:MovieClip;
+      public var progressMask:MovieClip;
+      
+      protected var _time:Number = -1;
       
       private var _state:String = "preparing";
-      
-      private var _time:Number = -1;
       
       public function RocketAcceleratorPanel()
       {
@@ -41,14 +41,14 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
          super.configUI();
          mouseEnabled = mouseChildren = false;
          gotoAndStop(this._state + INSTANTLY_POSTFIX);
-         this.balloonMask.y = BALLOON_Y;
+         this.progressMask.y = BALLOON_Y;
       }
       
       override protected function onDispose() : void
       {
          this.countTF = null;
          this.timerTF = null;
-         this.balloonMask = null;
+         this.progressMask = null;
          super.onDispose();
       }
       
@@ -70,7 +70,7 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
       
       public function as_setProgress(param1:Number) : void
       {
-         this.balloonMask.y = BALLOON_Y - BALLOON_H_FULL * param1;
+         this.progressMask.y = BALLOON_Y - BALLOON_H_FULL * param1 | 0;
       }
       
       public function as_setState(param1:String) : void
@@ -79,7 +79,7 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
          {
             return;
          }
-         if(this._state == ROCKET_ACCELERATOR_INDICATOR.DISABLE)
+         if(this._state == COMMON_INDICATOR_CONSTS.DISABLE)
          {
             gotoAndStop(param1 + INSTANTLY_POSTFIX);
          }
@@ -98,8 +98,8 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
       
       public function as_updateLayout(param1:Number, param2:Number) : void
       {
-         this.x = param1 + OFFSET;
-         this.y = param2 + OFFSET;
+         this.x = param1 + OFFSET | 0;
+         this.y = param2 + OFFSET | 0;
       }
    }
 }

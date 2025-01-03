@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G171_E77/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.711645 -0.000000 -3.080780</min>
+		<max>1.711645 1.174132 3.125993</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G171_E77/normal/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

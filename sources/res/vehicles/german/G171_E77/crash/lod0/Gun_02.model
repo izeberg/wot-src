@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G171_E77/crash/lod0/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.418153 -0.538216 -2.067491</min>
+		<max>0.529827 0.325644 5.570969</max>
+	</visibilityBox>
+	<parent>vehicles/german/G171_E77/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,15 +1,13 @@
-import typing, CGF
+import typing
 from operator import attrgetter
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import EarlyAccess
-from cgf_components.hangar_camera_manager import HangarCameraManager
 from constants import Configs, MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL, QUEUE_TYPE
 from early_access_common import makeEarlyAccessToken, getGroupName, EARLY_ACCESS_POSTPR_KEY, EARLY_ACCESS_PREFIX
 from Event import Event, EventManager
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.game_control.season_provider import SeasonProvider
 from gui.impl.gen.view_models.views.lobby.early_access.early_access_state_enum import State
-from gui.impl.lobby.early_access.hangar_feature_state import EarlyAccessHangarFeatureState
 from gui.prb_control.entities.listener import IGlobalListener
 from gui.server_events.event_items import Group
 from gui.server_events.conditions import EarlyAccessVehicleDescr
@@ -22,7 +20,6 @@ from skeletons.gui.game_control import IEarlyAccessController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
-from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.connection_mgr import IConnectionManager
 if typing.TYPE_CHECKING:
     from gui.server_events.event_items import Quest
@@ -55,7 +52,6 @@ class EarlyAccessController(IEarlyAccessController, SeasonProvider, IGlobalListe
         self.onFeatureStateChanged = Event(self.__eventManager)
         self.__sysMessagesController = _EarlyAccessSystemMessagesController()
         self.sysMessageController.init()
-        self.__hangarFeatureState = EarlyAccessHangarFeatureState()
         self.__firstVehicleCD = None
         self.__currProgressVehicleCD = None
         self.__currentEndSeasonDate = None
@@ -65,18 +61,6 @@ class EarlyAccessController(IEarlyAccessController, SeasonProvider, IGlobalListe
     @property
     def sysMessageController(self):
         return self.__sysMessagesController
-
-    @property
-    def hangarFeatureState(self):
-        return self.__hangarFeatureState
-
-    @property
-    @dependency.replace_none_kwargs(hangarSpace=IHangarSpace)
-    def cgfCameraManager(self, hangarSpace=None):
-        if hangarSpace is not None and hangarSpace.space is not None:
-            return CGF.getManager(hangarSpace.space.getSpaceID(), HangarCameraManager)
-        else:
-            return
 
     def onLobbyInited(self, event):
         self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChanged
@@ -93,15 +77,10 @@ class EarlyAccessController(IEarlyAccessController, SeasonProvider, IGlobalListe
         self.sysMessageController.stopNotify()
         g_clientUpdateManager.removeObjectCallbacks(self)
 
-    def init(self):
-        self.__hangarFeatureState.init()
-
     def fini(self):
-        self.__hangarFeatureState.fini()
         self.__lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChanged
         self.sysMessageController.fini()
         self.__sysMessagesController = None
-        self.__hangarFeatureState = None
         return
 
     @staticmethod

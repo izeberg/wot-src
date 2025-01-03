@@ -10,7 +10,7 @@
 			</lines>
 		</R11_MS-1>
 		<R42_T-60>
-			<row>3</row>
+			<row>4</row>
 			<column>2</column>
 			<lines>
 				<R43_T-70/>
@@ -24,7 +24,7 @@
 			</lines>
 		</R08_BT-2>
 		<R43_T-70>
-			<row>3</row>
+			<row>4</row>
 			<column>3</column>
 			<lines>
 				<R24_SU-76/>
@@ -39,7 +39,7 @@
 			</lines>
 		</R174_BT-5>
 		<R24_SU-76>
-			<row>3</row>
+			<row>4</row>
 			<column>4</column>
 			<lines>
 				<R100_SU122A/>
@@ -54,7 +54,7 @@
 			</lines>
 		</R06_T-28>
 		<R03_BT-7>
-			<row>12</row>
+			<row>11</row>
 			<column>4</column>
 			<lines>
 				<R04_T-34/>
@@ -69,9 +69,10 @@
 			</lines>
 		</R100_SU122A>
 		<R02_SU-85>
-			<row>3</row>
+			<row>4</row>
 			<column>5</column>
 			<lines>
+				<R163_SU_122/>
 				<R17_SU-100/>
 			</lines>
 		</R02_SU-85>
@@ -85,7 +86,7 @@
 			</lines>
 		</R80_KV1>
 		<R04_T-34>
-			<row>12</row>
+			<row>11</row>
 			<column>5</column>
 			<lines>
 				<R07_T-34-85/>
@@ -93,7 +94,7 @@
 			</lines>
 		</R04_T-34>
 		<R12_A-20>
-			<row>14</row>
+			<row>13</row>
 			<column>5</column>
 			<lines>
 				<R101_MT25/>
@@ -106,8 +107,15 @@
 				<R15_S-51/>
 			</lines>
 		</R26_SU-8>
+		<R163_SU_122>
+			<row>2</row>
+			<column>6</column>
+			<lines>
+				<R166_SU_D15/>
+			</lines>
+		</R163_SU_122>
 		<R17_SU-100>
-			<row>3</row>
+			<row>4</row>
 			<column>6</column>
 			<lines>
 				<R74_SU100M1/>
@@ -115,7 +123,7 @@
 			</lines>
 		</R17_SU-100>
 		<R77_KV2>
-			<row>4</row>
+			<row>5</row>
 			<column>6</column>
 			<lines>
 				<R18_SU-152>
@@ -131,28 +139,28 @@
 			</lines>
 		</R13_KV-1s>
 		<R72_T150>
-			<row>9</row>
+			<row>8</row>
 			<column>6</column>
 			<lines>
 				<R39_KV-3/>
 			</lines>
 		</R72_T150>
 		<R07_T-34-85>
-			<row>12</row>
+			<row>11</row>
 			<column>6</column>
 			<lines>
 				<R23_T-43/>
 			</lines>
 		</R07_T-34-85>
 		<R57_A43>
-			<row>13</row>
+			<row>12</row>
 			<column>6</column>
 			<lines>
 				<R59_A44/>
 			</lines>
 		</R57_A43>
 		<R101_MT25>
-			<row>14</row>
+			<row>13</row>
 			<column>6</column>
 			<lines>
 				<R131_Tank_Gavalov/>
@@ -165,15 +173,22 @@
 				<R27_SU-14/>
 			</lines>
 		</R15_S-51>
-		<R74_SU100M1>
+		<R166_SU_D15>
 			<row>2</row>
+			<column>7</column>
+			<lines>
+				<R210_ISU_2SH_II/>
+			</lines>
+		</R166_SU_D15>
+		<R74_SU100M1>
+			<row>3</row>
 			<column>7</column>
 			<lines>
 				<R58_SU-101/>
 			</lines>
 		</R74_SU100M1>
 		<R18_SU-152>
-			<row>3</row>
+			<row>4</row>
 			<column>7</column>
 			<lines>
 				<R47_ISU-152/>
@@ -188,7 +203,7 @@
 			</lines>
 		</R01_IS>
 		<R39_KV-3>
-			<row>9</row>
+			<row>8</row>
 			<column>7</column>
 			<lines>
 				<R73_KV4/>
@@ -196,21 +211,21 @@
 			</lines>
 		</R39_KV-3>
 		<R23_T-43>
-			<row>12</row>
+			<row>11</row>
 			<column>7</column>
 			<lines>
 				<R20_T-44/>
 			</lines>
 		</R23_T-43>
 		<R59_A44>
-			<row>13</row>
+			<row>12</row>
 			<column>7</column>
 			<lines>
 				<R60_Object416/>
 			</lines>
 		</R59_A44>
 		<R131_Tank_Gavalov>
-			<row>14</row>
+			<row>13</row>
 			<column>7</column>
 			<lines>
 				<R107_LTB/>
@@ -223,15 +238,22 @@
 				<R51_Object_212/>
 			</lines>
 		</R27_SU-14>
-		<R58_SU-101>
+		<R210_ISU_2SH_II>
 			<row>2</row>
+			<column>8</column>
+			<lines>
+				<R167_Object_715_G/>
+			</lines>
+		</R210_ISU_2SH_II>
+		<R58_SU-101>
+			<row>3</row>
 			<column>8</column>
 			<lines>
 				<R93_Object263/>
 			</lines>
 		</R58_SU-101>
 		<R47_ISU-152>
-			<row>3</row>
+			<row>4</row>
 			<column>8</column>
 			<lines>
 				<R53_Object_704/>
@@ -246,28 +268,28 @@
 			</lines>
 		</R19_IS-3>
 		<R139_IS_M>
-			<row>8</row>
+			<row>7</row>
 			<column>8</column>
 			<lines>
 				<R153_Object_705/>
 			</lines>
 		</R139_IS_M>
 		<R73_KV4>
-			<row>9</row>
+			<row>8</row>
 			<column>8</column>
 			<lines>
 				<R63_ST_I/>
 			</lines>
 		</R73_KV4>
 		<R170_IS_2_II>
-			<row>10</row>
+			<row>9</row>
 			<column>8</column>
 			<lines>
 				<R171_IS_3_II/>
 			</lines>
 		</R170_IS_2_II>
 		<R20_T-44>
-			<row>12</row>
+			<row>11</row>
 			<column>8</column>
 			<lines>
 				<R96_Object_430/>
@@ -275,14 +297,14 @@
 			</lines>
 		</R20_T-44>
 		<R60_Object416>
-			<row>13</row>
+			<row>12</row>
 			<column>8</column>
 			<lines>
 				<R104_Object_430_II/>
 			</lines>
 		</R60_Object416>
 		<R107_LTB>
-			<row>14</row>
+			<row>13</row>
 			<column>8</column>
 			<lines>
 				<R109_T54S/>
@@ -295,22 +317,29 @@
 				<R52_Object_261/>
 			</lines>
 		</R51_Object_212>
-		<R93_Object263>
+		<R167_Object_715_G>
 			<row>2</row>
+			<column>9</column>
+			<lines>
+				<R211_Object_261_4_II/>
+			</lines>
+		</R167_Object_715_G>
+		<R93_Object263>
+			<row>3</row>
 			<column>9</column>
 			<lines>
 				<R149_Object_268_4/>
 			</lines>
 		</R93_Object263>
 		<R53_Object_704>
-			<row>3</row>
+			<row>4</row>
 			<column>9</column>
 			<lines>
 				<R88_Object268/>
 			</lines>
 		</R53_Object_704>
 		<R81_IS8>
-			<row>4</row>
+			<row>5</row>
 			<column>9</column>
 			<lines>
 				<R155_Object_277/>
@@ -324,49 +353,49 @@
 			</lines>
 		</R151_Object_257_2>
 		<R153_Object_705>
-			<row>8</row>
+			<row>7</row>
 			<column>9</column>
 			<lines>
 				<R145_Object_705_A/>
 			</lines>
 		</R153_Object_705>
 		<R63_ST_I>
-			<row>9</row>
+			<row>8</row>
 			<column>9</column>
 			<lines>
 				<R90_IS_4M/>
 			</lines>
 		</R63_ST_I>
 		<R171_IS_3_II>
-			<row>10</row>
+			<row>9</row>
 			<column>9</column>
 			<lines>
 				<R169_ST_II/>
 			</lines>
 		</R171_IS_3_II>
 		<R96_Object_430>
-			<row>11</row>
+			<row>10</row>
 			<column>9</column>
 			<lines>
 				<R148_Object_430_U/>
 			</lines>
 		</R96_Object_430>
 		<R40_T-54>
-			<row>12</row>
+			<row>11</row>
 			<column>9</column>
 			<lines>
 				<R97_Object_140/>
 			</lines>
 		</R40_T-54>
 		<R104_Object_430_II>
-			<row>13</row>
+			<row>12</row>
 			<column>9</column>
 			<lines>
 				<R144_K_91/>
 			</lines>
 		</R104_Object_430_II>
 		<R109_T54S>
-			<row>14</row>
+			<row>13</row>
 			<column>9</column>
 			<lines>
 				<R132_VNII_100LT/>
@@ -376,16 +405,20 @@
 			<row>1</row>
 			<column>10</column>
 		</R52_Object_261>
-		<R149_Object_268_4>
+		<R211_Object_261_4_II>
 			<row>2</row>
+			<column>10</column>
+		</R211_Object_261_4_II>
+		<R149_Object_268_4>
+			<row>3</row>
 			<column>10</column>
 		</R149_Object_268_4>
 		<R88_Object268>
-			<row>3</row>
+			<row>4</row>
 			<column>10</column>
 		</R88_Object268>
 		<R155_Object_277>
-			<row>4</row>
+			<row>5</row>
 			<column>10</column>
 		</R155_Object_277>
 		<R45_IS-7>
@@ -393,31 +426,31 @@
 			<column>10</column>
 		</R45_IS-7>
 		<R145_Object_705_A>
-			<row>8</row>
+			<row>7</row>
 			<column>10</column>
 		</R145_Object_705_A>
 		<R90_IS_4M>
-			<row>9</row>
+			<row>8</row>
 			<column>10</column>
 		</R90_IS_4M>
 		<R169_ST_II>
-			<row>10</row>
+			<row>9</row>
 			<column>10</column>
 		</R169_ST_II>
 		<R148_Object_430_U>
-			<row>11</row>
+			<row>10</row>
 			<column>10</column>
 		</R148_Object_430_U>
 		<R97_Object_140>
-			<row>12</row>
+			<row>11</row>
 			<column>10</column>
 		</R97_Object_140>
 		<R144_K_91>
-			<row>13</row>
+			<row>12</row>
 			<column>10</column>
 		</R144_K_91>
 		<R132_VNII_100LT>
-			<row>14</row>
+			<row>13</row>
 			<column>10</column>
 		</R132_VNII_100LT>
 	</nodes>

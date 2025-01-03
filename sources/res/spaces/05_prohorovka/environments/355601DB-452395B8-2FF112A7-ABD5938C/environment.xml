@@ -18,6 +18,8 @@
 			<scatterColor>1.000000 0.792000 0.520000 64.000000</scatterColor>
 			<skyLow>0.050000</skyLow>
 			<skyHigh>0.320000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -28,6 +30,8 @@
 			<startDistance>100.000000</startDistance>
 			<skyLow>-0.040000</skyLow>
 			<skyHigh>0.140000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -73,6 +77,19 @@
 		<colorCorrection>
 			<map>system/maps/post_processing/cube/P_curve_1ACF-40hssd.dds</map>
 		</colorCorrection>
+		<rainDistortion>
+			<map>system/maps/void_cch.dds</map>
+			<enable>false</enable>
+			<dropsStrength>1.000000</dropsStrength>
+			<dripsStrength>1.000000</dripsStrength>
+			<dropsFrequency>0.250000</dropsFrequency>
+			<tileDrops>10.000000</tileDrops>
+			<textMip>1.000000</textMip>
+			<dripFrequency>2.000000</dripFrequency>
+			<dripTileMove>1.000000 1.000000 1.000000 1.000000</dripTileMove>
+			<dropsSize>0.700000 0.100000</dropsSize>
+			<tileNoise>1.000000 1.000000</tileNoise>
+		</rainDistortion>
 		<filmgrain>
 			<enable>false</enable>
 			<scale>0.150000</scale>
@@ -100,7 +117,7 @@
 		<glareSize>0.020000</glareSize>
 		<flareIntensity>0.500000</flareIntensity>
 		<objectThreshold>4.727921</objectThreshold>
-		<objectFlareIntensity>0.570000</objectFlareIntensity>
+		<objectFlareIntensity>0.400000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -165,7 +182,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.000000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
+		<flakesUvScale>0.800000</flakesUvScale>
+		<flakesGloss>0.890000</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 	</PBS>
 	<Weather>
 		<wind>
@@ -176,17 +197,21 @@
 	<overlayMaterial>
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
+		<colorTintMap/>
+		<layerMask/>
 	</overlayMaterial>
 	<day_night_cycle>
 		<forward>
 			<angle>43.259998</angle>
 			<angleZ>253.940002</angleZ>
+			<angleShadow>43.259998</angleShadow>
 		</forward>
 		<deferred>
 			<angle>46.259998</angle>
 			<angleZ>253.610001</angleZ>
 		</deferred>
 		<sunScale>4.500000</sunScale>
+		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>255.000000 200.000000 163.000000</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.784314 0.639216</sunLightColor>
@@ -202,10 +227,7 @@
 	<dirt>
 		<normal>vehicles/russian/Tank_detail/Dirt3NM.dds</normal>
 		<configFile>maps/dirt_presets/dirt_preset_drymud.xml</configFile>
-		<color>
-			0.510000 0.430000 0.330000 0.05000
-			<!--BW_String-->
-		</color>
+		<color>0.510000 0.430000 0.330000 0.050000</color>
 		<enabled>true</enabled>
 	</dirt>
 	<SkyDome>
@@ -235,4 +257,12 @@
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.140000</waveMaskSpeed>
 	</Wetness>
+	<DOF>
+		<enable>false</enable>
+		<nearStart>2.000000</nearStart>
+		<nearDist>3.000000</nearDist>
+		<farStart>50.000000</farStart>
+		<farDist>20.000000</farDist>
+		<blurRadius>0.006000</blurRadius>
+	</DOF>
 </root>

@@ -569,6 +569,8 @@
 							<item>role_MT_universal_base_5</item>
 							<item>role_XI_279_base_4</item>
 							<item>role_XI_279_base_5</item>
+							<item>role_HT_flame_base_4</item>
+							<item>role_HT_flame_base_5</item>
 						</value>
 					</item>
 					<item>
@@ -649,6 +651,8 @@
 							<item>role_MT_universal_base_5</item>
 							<item>role_XI_279_base_4</item>
 							<item>role_XI_279_base_5</item>
+							<item>role_HT_flame_base_4</item>
+							<item>role_HT_flame_base_5</item>
 						</value>
 					</item>
 					<item>
@@ -729,6 +733,8 @@
 							<item>role_MT_universal_base_5</item>
 							<item>role_XI_279_base_4</item>
 							<item>role_XI_279_base_5</item>
+							<item>role_HT_flame_base_4</item>
+							<item>role_HT_flame_base_5</item>
 						</value>
 					</item>
 					<item>
@@ -1457,6 +1463,8 @@
 							<item>role_MT_universal_base_5</item>
 							<item>role_XI_279_base_4</item>
 							<item>role_XI_279_base_5</item>
+							<item>role_HT_flame_base_4</item>
+							<item>role_HT_flame_base_5</item>
 						</value>
 					</item>
 					<item>
@@ -3103,6 +3111,103 @@
 						<type>list</type>
 						<value>
 							<item>improvedVentilationBattleBooster</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>autoShootFireUntilOverheatTime</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>loader_desperado</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>autoShootFlameChangeShellTime</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>optionalDevice</name>
+						<type>list</type>
+						<value>
+							<item>improvedVentilation_tier1</item>
+							<item>improvedVentilation_tier2</item>
+							<item>improvedVentilation_tier3</item>
+							<item>deluxImprovedVentilation</item>
+							<item>tankRammer_tier1</item>
+							<item>tankRammer_tier2</item>
+							<item>deluxRammer</item>
+							<item>trophyBasicTankRammer</item>
+							<item>trophyUpgradedTankRammer</item>
+							<item>trophyBasicImprovedVentilation</item>
+							<item>trophyUpgradedImprovedVentilation</item>
+						</value>
+					</item>
+					<item>
+						<name>equipment</name>
+						<type>list</type>
+						<value>
+							<item>cocacola</item>
+							<item>chocolate</item>
+							<item>ration</item>
+							<item>hotCoffee</item>
+							<item>ration_china</item>
+							<item>ration_uk</item>
+							<item>ration_japan</item>
+							<item>ration_czech</item>
+							<item>ration_sweden</item>
+							<item>ration_poland</item>
+							<item>ration_italy</item>
+						</value>
+					</item>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>brotherhood</item>
+							<item>loader_desperado</item>
+						</value>
+					</item>
+					<item>
+						<name>battleBooster</name>
+						<type>list</type>
+						<value>
+							<item>rammerBattleBooster</item>
+							<item>improvedVentilationBattleBooster</item>
+						</value>
+					</item>
+					<item>
+						<name>postProgressionPairModifications</name>
+						<type>list</type>
+						<value>
+							<item>role_HT_support_pair_4_1</item>
+							<item>role_HT_support_pair_4_2</item>
+							<item>role_MT_sniper_pair_4_1</item>
+							<item>role_MT_sniper_pair_4_2</item>
+							<item>role_MT_support_pair_4_1</item>
+							<item>role_MT_support_pair_4_2</item>
+							<item>role_ATSPG_universal_pair_5_1</item>
+							<item>role_ATSPG_universal_pair_5_2</item>
+							<item>role_ATSPG_support_pair_4_1</item>
+							<item>role_ATSPG_support_pair_4_2</item>
+							<item>role_ATSPG_sniper_pair_4_1</item>
+							<item>role_ATSPG_sniper_pair_4_2</item>
+							<item>role_lightTank_pair_2_1</item>
+							<item>role_lightTank_pair_2_2</item>
+							<item>role_LT_wheeled_pair_4_1</item>
+							<item>role_LT_wheeled_pair_4_2</item>
+							<item>role_SPG_pair_4_1</item>
+							<item>role_SPG_pair_4_2</item>
+							<item>role_ATSPG_assault_pair_4_1</item>
+							<item>role_ATSPG_assault_pair_4_2</item>
+							<item>role_XI_279_pair_5_1</item>
+							<item>role_XI_279_pair_5_2</item>
 						</value>
 					</item>
 				</value>

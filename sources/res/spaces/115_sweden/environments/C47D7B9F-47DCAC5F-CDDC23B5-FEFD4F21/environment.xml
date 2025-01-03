@@ -11,6 +11,7 @@
 			<angleZ>181.539993</angleZ>
 		</deferred>
 		<sunScale>3.000000</sunScale>
+		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>255.000000 133.917496 58.650005</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.619608 0.309804</sunLightColor>
@@ -40,6 +41,8 @@
 			<scatterColor>1.000000 0.420382 0.000000 9.380000</scatterColor>
 			<skyLow>0.020000</skyLow>
 			<skyHigh>0.300000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -50,6 +53,8 @@
 			<startDistance>100.000000</startDistance>
 			<skyLow>-0.000000</skyLow>
 			<skyHigh>0.450000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -95,6 +100,19 @@
 		<colorCorrection>
 			<map>system/maps/post_processing/cube/P_curve_1ACF-40hs.dds</map>
 		</colorCorrection>
+		<rainDistortion>
+			<map>system/maps/void_cch.dds</map>
+			<enable>false</enable>
+			<dropsStrength>1.000000</dropsStrength>
+			<dripsStrength>1.000000</dripsStrength>
+			<dropsFrequency>0.250000</dropsFrequency>
+			<tileDrops>10.000000</tileDrops>
+			<textMip>1.000000</textMip>
+			<dripFrequency>2.000000</dripFrequency>
+			<dripTileMove>1.000000 1.000000 1.000000 1.000000</dripTileMove>
+			<dropsSize>0.700000 0.100000</dropsSize>
+			<tileNoise>1.000000 1.000000</tileNoise>
+		</rainDistortion>
 		<filmgrain>
 			<enable>true</enable>
 			<scale>0.120000</scale>
@@ -122,7 +140,7 @@
 		<glareSize>0.010000</glareSize>
 		<flareIntensity>0.180296</flareIntensity>
 		<objectThreshold>3.321928</objectThreshold>
-		<objectFlareIntensity>0.560000</objectFlareIntensity>
+		<objectFlareIntensity>0.400000</objectFlareIntensity>
 		<haloEnable>true</haloEnable>
 		<sunTexture1>system/maps/PSF_ldr.dds</sunTexture1>
 		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
@@ -217,6 +235,7 @@
 		<enable>true</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap/>
+		<layerMask/>
 		<layer>
 			<texture>maps/overlay/Ice_wall_3.dds</texture>
 			<normalMap>maps/overlay/Ice_wall_3_NM.dds</normalMap>

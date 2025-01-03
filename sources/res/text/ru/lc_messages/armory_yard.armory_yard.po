@@ -48,19 +48,19 @@ msgid "bundles/buyTokenTooltip"
 msgstr "Перейти к покупке любого количества жетонов строительства"
 
 msgid "bundles/countdown/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "bundles/countdown/daysWithHours"
 msgstr "%(day)s д  %(hour)s ч"
 
 msgid "bundles/countdown/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "bundles/countdown/hoursWithMinutes"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "bundles/countdown/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "bundles/countdown/sec"
 msgstr "< 1 мин"
@@ -426,11 +426,11 @@ msgstr "Этап строительства"
 msgid "mainView/progress/title"
 msgstr "СБОРОЧНЫЙ ЦЕХ"
 
-msgid "mainView/quest/all/label"
-msgstr "Выполняется:"
-
 msgid "mainView/quest/battleType/dot"
 msgstr "."
+
+msgid "mainView/quest/battleType/ellipsis"
+msgstr "..."
 
 msgid "mainView/quest/battleType/label"
 msgstr "В режимах:"
@@ -450,29 +450,41 @@ msgstr[0] "Награда получена"
 msgstr[1] "Награды получены"
 msgstr[2] "Награды получены"
 
+msgid "mainView/quest/levelRangeSeparator"
+msgstr "-"
+
+msgid "mainView/quest/levelSeparator"
+msgstr ", "
+
 msgid "mainView/quest/progress"
 msgstr "%(current)s %(par_open)s/ %(total)s%(par_close)s"
 
 msgid "mainView/quest/vehicleType/AT-SPG"
-msgstr "ПТ-САУ VI-XI уровней"
+msgstr "ПТ-САУ"
 
 msgid "mainView/quest/vehicleType/SPG"
-msgstr "САУ VI-XI уровней"
-
-msgid "mainView/quest/vehicleType/any"
-msgstr "VI-XI уровней"
+msgstr "САУ"
 
 msgid "mainView/quest/vehicleType/heavyTank"
-msgstr "Тяжёлые танки VI-XI уровней"
+msgstr "Тяжёлые танки"
 
 msgid "mainView/quest/vehicleType/label"
 msgstr "На технике:"
 
+msgid "mainView/quest/vehicleType/level"
+msgstr "%(from)s уровня"
+
+msgid "mainView/quest/vehicleType/levelsMultiple"
+msgstr "%(from)s уровней"
+
+msgid "mainView/quest/vehicleType/levelsRange"
+msgstr "%(from)s%(separator)s%(to)s"
+
 msgid "mainView/quest/vehicleType/lightTank"
-msgstr "Лёгкие танки VI-XI уровней"
+msgstr "Лёгкие танки"
 
 msgid "mainView/quest/vehicleType/mediumTank"
-msgstr "Средние танки VI-XI уровней"
+msgstr "Средние танки"
 
 msgid "mainView/quests/title"
 msgstr "ЗАДАЧИ СБОРОЧНОГО ЦЕХА"
@@ -505,79 +517,61 @@ msgid "mainView/title/step/1"
 msgstr "Знакомство с ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Установка двигателя"
+msgstr "Установка органов управления и системы пожаротушения"
 
 msgid "mainView/title/step/11"
-msgstr "Установка топливной системы"
-
-msgid "mainView/title/step/12"
-msgstr "Установка воздушных фильтров и системы пожаротушения"
-
-msgid "mainView/title/step/13"
-msgstr "Установка системы охлаждения"
-
-msgid "mainView/title/step/14"
-msgstr "Установка защитных кожухов и систем хранения"
-
-msgid "mainView/title/step/15"
-msgstr "Монтаж боевого отделения"
-
-msgid "mainView/title/step/16"
 msgstr "Доставка орудия"
 
+msgid "mainView/title/step/12"
+msgstr "Установка внутреннего оборудования башни"
+
+msgid "mainView/title/step/13"
+msgstr "Установка орудия и башни"
+
+msgid "mainView/title/step/14"
+msgstr "Установка ММГ снарядов"
+
+msgid "mainView/title/step/15"
+msgstr "Установка ведущих колёс"
+
+msgid "mainView/title/step/16"
+msgstr "Установка поддерживающих катков"
+
 msgid "mainView/title/step/17"
-msgstr "Загрузка боекомплекта (ММГ)"
+msgstr "Протяжка гусеничных лент"
 
 msgid "mainView/title/step/18"
-msgstr "Установка орудия"
+msgstr "Покраска"
 
 msgid "mainView/title/step/19"
-msgstr "Установка ведущих колёс"
+msgstr "Установка навесного оборудования"
 
 msgid "mainView/title/step/2"
 msgstr "Габариты машины"
 
 msgid "mainView/title/step/20"
-msgstr "Установка элементов подвески"
-
-msgid "mainView/title/step/21"
-msgstr "Монтаж катков"
-
-msgid "mainView/title/step/22"
-msgstr "Натягивание гусениц"
-
-msgid "mainView/title/step/23"
-msgstr "Покраска"
-
-msgid "mainView/title/step/24"
-msgstr "Монтаж элементов внешней защиты"
-
-msgid "mainView/title/step/25"
-msgstr "Монтаж навесного оборудования"
-
-msgid "mainView/title/step/26"
 msgstr "Выкатка машины"
 
 msgid "mainView/title/step/3"
-msgstr "Проработка бронирования корпуса"
+msgstr "Конструкция башни и орудия"
 
 msgid "mainView/title/step/4"
-msgstr "Схема вооружения"
+msgstr "Разнесение толщин брони"
 
 msgid "mainView/title/step/5"
-msgstr "Компоновочная схема силовой установки"
+msgstr "Компоновочная схема"
 
 msgid "mainView/title/step/6"
-msgstr "Схема доп. защиты и боевого отделения"
-
-msgid "mainView/title/step/7"
-msgstr "Экстерьер"
-
-msgid "mainView/title/step/8"
 msgstr "Закалка брони"
 
+msgid "mainView/title/step/7"
+msgstr "Установка двигателя"
+
+msgid "mainView/title/step/8"
+msgstr "Монтаж трансмиссии и приводов"
+
 msgid "mainView/title/step/9"
-msgstr "Установка трансмиссии"
+msgstr "Установка топливных баков и системы охлаждения"
 
 msgid "mainView/title/step/final"
 msgstr "Строительство завершено"
@@ -593,8 +587,8 @@ msgstr "Глава %(count)d: %(chapter_name)s станет доступна %(s
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Бойцы! У вас есть возможность построить уникальную машину — премиум ПТ-САУ "
-"IX уровня. Событие начинается %(startDate)s."
+"Бойцы! У вас есть возможность построить уникальную машину — тяжёлый премиум "
+"танк VIII уровня WZ-57-I. Событие начинается %(startDate)s."
 
 msgid "notifications/bundleOutTime"
 msgstr ""
@@ -815,6 +809,30 @@ msgstr "Получено"
 msgid "tooltip/currency/title"
 msgstr "Жетоны строительства"
 
+msgid "tooltip/quests/task/arcade"
+msgstr "Аркада"
+
+msgid "tooltip/quests/task/header"
+msgstr "Задача выполняется"
+
+msgid "tooltip/quests/task/separator"
+msgstr ", "
+
+msgid "tooltip/quests/task/subtitle/battleType"
+msgid_plural "battleType"
+msgstr[0] "В режиме:"
+msgstr[1] "В режимах:"
+msgstr[2] "В режимах:"
+
+msgid "tooltip/quests/task/subtitle/vehicleLevel"
+msgid_plural "vehicleLevel"
+msgstr[0] "На технике уровня:"
+msgstr[1] "На технике уровней:"
+msgstr[2] "На технике уровней:"
+
+msgid "tooltip/quests/task/subtitle/vehicleType"
+msgstr "На технике типа:"
+
 msgid "tooltip/tab/progression/body"
 msgstr "Просмотр достигнутого прогресса в событии «Сборочный цех»."
 
@@ -879,7 +897,7 @@ msgid "widget/countdown/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "widget/countdown/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "widget/countdown/sec"
 msgstr "< 1 мин"

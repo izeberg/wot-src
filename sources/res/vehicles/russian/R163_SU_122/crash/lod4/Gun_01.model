@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.171596 -0.300511 0.665141</min>
+		<max>0.170696 0.317837 2.533438</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/russian/R163_SU_122/crash/lod4/Gun_01</nodelessVisual>
+</root>

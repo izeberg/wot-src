@@ -4,6 +4,7 @@ package net.wg.gui.battle.battleloading.renderers
    import flash.text.TextField;
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.components.controls.BadgeComponent;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.icons.PlayerActionMarker;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
@@ -611,35 +612,35 @@ package net.wg.gui.battle.battleloading.renderers
       
       public var badgeEnemy14:BadgeComponent;
       
-      public var selfBgAlly0:BattleAtlasSprite;
+      public var selfBgAlly0:Image;
       
-      public var selfBgAlly1:BattleAtlasSprite;
+      public var selfBgAlly1:Image;
       
-      public var selfBgAlly2:BattleAtlasSprite;
+      public var selfBgAlly2:Image;
       
-      public var selfBgAlly3:BattleAtlasSprite;
+      public var selfBgAlly3:Image;
       
-      public var selfBgAlly4:BattleAtlasSprite;
+      public var selfBgAlly4:Image;
       
-      public var selfBgAlly5:BattleAtlasSprite;
+      public var selfBgAlly5:Image;
       
-      public var selfBgAlly6:BattleAtlasSprite;
+      public var selfBgAlly6:Image;
       
-      public var selfBgAlly7:BattleAtlasSprite;
+      public var selfBgAlly7:Image;
       
-      public var selfBgAlly8:BattleAtlasSprite;
+      public var selfBgAlly8:Image;
       
-      public var selfBgAlly9:BattleAtlasSprite;
+      public var selfBgAlly9:Image;
       
-      public var selfBgAlly10:BattleAtlasSprite;
+      public var selfBgAlly10:Image;
       
-      public var selfBgAlly11:BattleAtlasSprite;
+      public var selfBgAlly11:Image;
       
-      public var selfBgAlly12:BattleAtlasSprite;
+      public var selfBgAlly12:Image;
       
-      public var selfBgAlly13:BattleAtlasSprite;
+      public var selfBgAlly13:Image;
       
-      public var selfBgAlly14:BattleAtlasSprite;
+      public var selfBgAlly14:Image;
       
       public var backTestersAlly:Vector.<BattleAtlasSprite>;
       
@@ -681,7 +682,7 @@ package net.wg.gui.battle.battleloading.renderers
       
       public var badgesEnemy:Vector.<BadgeComponent>;
       
-      public var selfBgs:Vector.<BattleAtlasSprite>;
+      public var selfBgs:Vector.<Image>;
       
       private var _disposed:Boolean = false;
       
@@ -729,6 +730,7 @@ package net.wg.gui.battle.battleloading.renderers
       protected function onDispose() : void
       {
          var _loc1_:IDisposable = null;
+         var _loc2_:Image = null;
          for each(_loc1_ in this.playerActionMarkersAlly)
          {
             _loc1_.dispose();
@@ -755,6 +757,10 @@ package net.wg.gui.battle.battleloading.renderers
          this.backTestersEnemy.length = 0;
          this.icoTestersAlly.length = 0;
          this.icoTestersEnemy.length = 0;
+         for each(_loc2_ in this.selfBgs)
+         {
+            _loc2_.dispose();
+         }
          this.selfBgs.length = 0;
          this.textFieldsAlly = null;
          this.textFieldsEnemy = null;
@@ -1189,9 +1195,9 @@ package net.wg.gui.battle.battleloading.renderers
          return new <BattleAtlasSprite>[this.icoIGRAlly0,this.icoIGRAlly1,this.icoIGRAlly2,this.icoIGRAlly3,this.icoIGRAlly4,this.icoIGRAlly5,this.icoIGRAlly6,this.icoIGRAlly7,this.icoIGRAlly8,this.icoIGRAlly9,this.icoIGRAlly10,this.icoIGRAlly11,this.icoIGRAlly12,this.icoIGRAlly13,this.icoIGRAlly14];
       }
       
-      protected function getSelfBgs() : Vector.<BattleAtlasSprite>
+      protected function getSelfBgs() : Vector.<Image>
       {
-         return new <BattleAtlasSprite>[this.selfBgAlly0,this.selfBgAlly1,this.selfBgAlly2,this.selfBgAlly3,this.selfBgAlly4,this.selfBgAlly5,this.selfBgAlly6,this.selfBgAlly7,this.selfBgAlly8,this.selfBgAlly9,this.selfBgAlly10,this.selfBgAlly11,this.selfBgAlly12,this.selfBgAlly13,this.selfBgAlly14];
+         return new <Image>[this.selfBgAlly0,this.selfBgAlly1,this.selfBgAlly2,this.selfBgAlly3,this.selfBgAlly4,this.selfBgAlly5,this.selfBgAlly6,this.selfBgAlly7,this.selfBgAlly8,this.selfBgAlly9,this.selfBgAlly10,this.selfBgAlly11,this.selfBgAlly12,this.selfBgAlly13,this.selfBgAlly14];
       }
       
       protected function getTextFieldsEnemy() : Vector.<TextField>

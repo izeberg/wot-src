@@ -1,20 +1,21 @@
 package net.wg.gui.battle.views.vehicleMarkers
 {
    import flash.display.MovieClip;
+   import flash.events.Event;
    import flash.geom.Point;
    import flash.utils.getDefinitionByName;
+   import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Values;
    import net.wg.gui.battle.views.actionMarkers.ActionMarkerStates;
    import net.wg.gui.battle.views.actionMarkers.BaseActionMarker;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
-   import scaleform.clik.motion.Tween;
    
    public class VehicleActionMarker extends BaseActionMarker implements IDisposable
    {
       
-      private static const BASE_HEIGHT:int = 20;
+      private static const BASE_WIDTH:int = 20;
       
-      private static const HIDE_DURATION:int = 1000;
+      private static const BASE_HEIGHT:int = 20;
       
       private static const ACTION_RENDERER_MAP:Object = {
          "reloading_gun":VehicleMarkersLinkages.ACTION_RELOADING,
@@ -45,9 +46,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private var _isVisible:Boolean = false;
       
-      private var _currentRenderer:MovieClip = null;
-      
-      private var _hideTween:Tween = null;
+      private var _currentRenderer:ActionAnim = null;
       
       private var _entityName:String = "enemy";
       
@@ -58,6 +57,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       private var _count:int = 0;
       
       private var _lastState:int = -1;
+      
+      private var _pyrometer:PyrometerAction = null;
       
       public const ARROW_POSITION:Point = new Point(0,0);
       
@@ -76,21 +77,39 @@ package net.wg.gui.battle.views.vehicleMarkers
          super.setReplyCount(param1);
       }
       
+      override protected function draw() : void
+      {
+         super.draw();
+         if(isInvalid(InvalidationType.POSITION))
+         {
+            this.updatePositions();
+         }
+      }
+      
       override protected function onDispose() : void
       {
          this.removeActionRenderer();
-         if(this._hideTween)
-         {
-            this._hideTween.dispose();
-         }
-         this._hideTween = null;
          this._currentRenderer = null;
          if(this._actionIconStateMarker != null)
          {
             this._actionIconStateMarker.dispose();
          }
          this._actionIconStateMarker = null;
+         if(this._pyrometer)
+         {
+            this._pyrometer.dispose();
+            this._pyrometer = null;
+         }
          super.onDispose();
+      }
+      
+      public function hidePyrometer() : void
+      {
+         if(this._pyrometer)
+         {
+            this._pyrometer.hideImmediately();
+            invalidatePosition();
+         }
       }
       
       public function isVisible() : Boolean
@@ -107,15 +126,29 @@ package net.wg.gui.battle.views.vehicleMarkers
          var _loc3_:String = ACTION_RENDERER_MAP[param1];
          if(_loc3_ != Values.EMPTY_STR)
          {
-            this._isVisible = true;
             this._currentRenderer = this.createActionRenderer(_loc3_);
          }
+         this._currentRenderer.show();
+         this._isVisible = true;
          this._actionIconStateMarker = ActionIconStateMarker(this._currentRenderer.getChildByName(ACTION_ICON_STATE));
          this._actionJustChanged = true;
          if(param2 && this._lastState != -1)
          {
             this.updateActionRenderer(this._lastState);
          }
+         invalidatePosition();
+      }
+      
+      public function showPyrometer(param1:Boolean, param2:int) : void
+      {
+         if(!this._pyrometer)
+         {
+            this._pyrometer = PyrometerAction(this.createActionRenderer(VehicleMarkersLinkages.PYROMETER_ACTION));
+         }
+         this._pyrometer.isAlly = param1;
+         this._pyrometer.showByDuration(param2);
+         this._isVisible = true;
+         invalidatePosition();
       }
       
       public function stopAction(param1:Boolean = true) : void
@@ -124,13 +157,13 @@ package net.wg.gui.battle.views.vehicleMarkers
          {
             if(param1)
             {
-               this._hideTween = new Tween(HIDE_DURATION,this._currentRenderer,{"alpha":0});
+               this._currentRenderer.hideAnim();
             }
             else
             {
-               this._currentRenderer.alpha = 0;
+               this._currentRenderer.hideImmediately();
             }
-            this._isVisible = false;
+            this.updateVisibility();
          }
       }
       
@@ -164,6 +197,32 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
+      private function updatePositions() : void
+      {
+         if(!this._isVisible)
+         {
+            return;
+         }
+         var _loc1_:Vector.<MovieClip> = new Vector.<MovieClip>(0);
+         if(this._pyrometer && this._pyrometer.visible)
+         {
+            _loc1_.push(this._pyrometer);
+         }
+         if(this._currentRenderer && this._currentRenderer.visible)
+         {
+            _loc1_.push(this._currentRenderer);
+         }
+         var _loc2_:int = _loc1_.length;
+         var _loc3_:int = _loc2_ > 1 ? int(-_loc2_ * (BASE_WIDTH >> 1) >> 1) : int(0);
+         var _loc4_:int = 0;
+         while(_loc4_ < _loc2_)
+         {
+            _loc1_[_loc4_].x = _loc3_;
+            _loc3_ += BASE_WIDTH;
+            _loc4_++;
+         }
+      }
+      
       private function removeActionRenderer() : void
       {
          if(!this._currentRenderer)
@@ -171,15 +230,16 @@ package net.wg.gui.battle.views.vehicleMarkers
             return;
          }
          removeChild(this._currentRenderer);
+         this._currentRenderer.removeEventListener(Event.COMPLETE,this.onHideAnimComplete);
          this._currentRenderer = null;
       }
       
-      private function createActionRenderer(param1:String) : MovieClip
+      private function createActionRenderer(param1:String) : ActionAnim
       {
          var rendererClass:Class = null;
          var rendererLinkage:String = param1;
          this.removeActionRenderer();
-         var renderer:MovieClip = null;
+         var renderer:ActionAnim = null;
          try
          {
             rendererClass = getDefinitionByName(rendererLinkage) as Class;
@@ -187,12 +247,24 @@ package net.wg.gui.battle.views.vehicleMarkers
             if(renderer)
             {
                addChild(renderer);
+               renderer.addEventListener(Event.COMPLETE,this.onHideAnimComplete);
             }
          }
          catch(error:ReferenceError)
          {
          }
          return renderer;
+      }
+      
+      private function onHideAnimComplete() : void
+      {
+         this.updateVisibility();
+         invalidatePosition();
+      }
+      
+      private function updateVisibility() : void
+      {
+         this._isVisible = this._currentRenderer && this._currentRenderer.visible || this._pyrometer && this._pyrometer.visible;
       }
       
       override protected function get getReplyPosition() : Point

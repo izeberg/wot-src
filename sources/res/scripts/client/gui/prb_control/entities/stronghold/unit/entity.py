@@ -43,6 +43,7 @@ _CREATION_TIMEOUT = 30
 ERROR_MAX_RETRY_COUNT = 3
 SUCCESS_STATUSES = (200, 201, 403, 409)
 DEFAULT_OK_WEB_REQUEST_ID = 0
+LEVELS_FROZEN_VEHICLES = (10, )
 
 class StrongholdDynamicRosterSettings(DynamicRosterSettings):
 
@@ -666,12 +667,14 @@ class StrongholdEntity(UnitEntity):
         pInfo = self.getPlayerInfo()
         return isLeaguesEnabled() and self.isInQueue() and pInfo.isInSlot
 
-    def getEventFrozenVehicles(self, spaID=None):
-        if self.__eventFrozenVehiclesRequester is not None:
-            if spaID is None:
-                spaID = account_helpers.getAccountDatabaseID()
-            return self.__eventFrozenVehiclesRequester.getCache().get(spaID)
+    def getEventFrozenVehicles(self, spaID=None, vehLevel=None):
+        if vehLevel is not None and vehLevel not in LEVELS_FROZEN_VEHICLES:
+            return
         else:
+            if self.__eventFrozenVehiclesRequester is not None:
+                if spaID is None:
+                    spaID = account_helpers.getAccountDatabaseID()
+                return self.__eventFrozenVehiclesRequester.getCache().get(spaID)
             return
 
     def getFortBattleForbiddenVehicles(self):
@@ -876,16 +879,15 @@ class StrongholdEntity(UnitEntity):
         else:
             self.__forbiddenVehiclesRequester = ForbiddenVehiclesRequester()
         self.__getForbiddenVehicles()
-        if not self.__isStrongholdEventEnabled():
+        if not g_clanCache.strongholdEventProvider.isRunning() or not self.__isStrongholdEventEnabled():
             return False
+        if self.__eventFrozenVehiclesRequester is not None:
+            self.__eventFrozenVehiclesRequester.stop()
         else:
-            if self.__eventFrozenVehiclesRequester is not None:
-                self.__eventFrozenVehiclesRequester.stop()
-            else:
-                self.__eventFrozenVehiclesRequester = FrozenVehiclesRequester()
-            self.__eventFrozenVehiclesRequester.onUpdated += self.__frozenVehiclesUpdated
-            self.__getEventFrozenVehicles()
-            return True
+            self.__eventFrozenVehiclesRequester = FrozenVehiclesRequester()
+        self.__eventFrozenVehiclesRequester.onUpdated += self.__frozenVehiclesUpdated
+        self.__getEventFrozenVehicles()
+        return True
 
     def __onStrongholdUpdate(self, response):
         if not self.__processResponseMessage(response):

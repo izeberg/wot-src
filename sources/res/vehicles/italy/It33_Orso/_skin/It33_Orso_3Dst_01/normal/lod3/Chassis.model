@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.598149 -0.002648 -3.558829</min>
+		<max>1.598149 1.145631 3.747378</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

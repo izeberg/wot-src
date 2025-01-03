@@ -9,6 +9,7 @@ package net.wg.gui.battle.epicRandom.battleloading.renderers
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.views.stats.constants.PlayerStatusSchemeName;
    import net.wg.gui.components.controls.BadgeComponent;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.icons.PlayerActionMarker;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.IColorScheme;
@@ -56,7 +57,7 @@ package net.wg.gui.battle.epicRandom.battleloading.renderers
       
       public var icoIGR:BattleAtlasSprite = null;
       
-      public var selfBg:BattleAtlasSprite = null;
+      public var selfBg:Image = null;
       
       public var rankBadge:BadgeComponent = null;
       
@@ -94,7 +95,7 @@ package net.wg.gui.battle.epicRandom.battleloading.renderers
          this._defaultVehicleFieldXPosition = this.vehicleField.x;
          this._defaultVehicleFieldWidth = this.vehicleField.width;
          this.selfBg.visible = false;
-         this.selfBg.imageName = BATTLEATLAS.BATTLE_LOADING_SELF_TABLE_BACKGROUND;
+         this.selfBg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_SELFBG;
          this.vehicleLevelIcon.isCentralizeByX = true;
          this.testerIcon.visible = false;
          this.testerBG.visible = false;
@@ -104,6 +105,7 @@ package net.wg.gui.battle.epicRandom.battleloading.renderers
       {
          this.testerBG = null;
          this.testerIcon = null;
+         this.selfBg.dispose();
          this.selfBg = null;
          this.vehicleField = null;
          this.textField = null;

@@ -118,6 +118,43 @@
 				</slots>
 			</block>
 			<block>
+				<class>Variable</class>
+				<id>Variable_2</id>
+				<params>
+					<param>
+						isPlayerVehicle
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
 				<params/>
@@ -143,15 +180,57 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>IsPlayerVehicle</class>
+				<id>IsPlayerVehicle_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>HasComponent</class>
-				<id>HasComponent_1</id>
+				<id>HasComponent_2</id>
 				<params>
 					<param>
-						Dynamic Model
+						Transform
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>StopPlan</class>
+				<id>StopPlan_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -172,6 +251,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_2</id>
 				<params/>
@@ -185,6 +270,18 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -213,28 +310,15 @@
 				<slots/>
 			</block>
 			<block>
-				<class>ArenaPeriod</class>
-				<id>ArenaPeriod_2</id>
-				<params>
-					<param>
-						Battle
-						<name>Period</name>
-						<type>EArenaPeriodT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>And</class>
-				<id>And_2</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>LogicGate</class>
+				<id>LogicGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>FrameEvent</class>
@@ -246,24 +330,6 @@
 						<const>\0.030000\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>Get Player Vehicle</class>
-				<id>Get Player Vehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetComponentProperty</class>
@@ -291,7 +357,7 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_4</id>
+				<id>GetVariable_5</id>
 				<buddy>Variable_3</buddy>
 				<params>
 					<param>
@@ -304,7 +370,7 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_5</id>
+				<id>GetVariable_4</id>
 				<buddy>Variable_3</buddy>
 				<params>
 					<param>
@@ -335,35 +401,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
-				<params>
-					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						getSelf
-						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetPlayerVehicleGun</class>
-				<id>GetPlayerVehicleGun_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_7</id>
 				<buddy>Variable_5</buddy>
@@ -383,21 +420,15 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Atan2</class>
-				<id>Atan2_3</id>
+				<class>GetPlayerVehicleGun</class>
+				<id>GetPlayerVehicleGun_1</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>SplitVector</class>
-				<id>SplitVector_4</id>
-				<params>
-					<param>
-						Vector3T
-						<name>Value Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
+				<class>Atan2</class>
+				<id>Atan2_3</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -408,6 +439,18 @@
 					<param>
 						Vector3T
 						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SplitVector</class>
+				<id>SplitVector_4</id>
+				<params>
+					<param>
+						Vector3T
+						<name>Value Type</name>
 						<type>TypeT</type>
 					</param>
 				</params>
@@ -455,6 +498,18 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetCamera</class>
+				<id>GetCamera_4</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SubtractFloat</class>
+				<id>SubtractFloat_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_3</id>
 				<buddy>Variable_1</buddy>
@@ -465,12 +520,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetCamera</class>
-				<id>GetCamera_4</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -488,12 +537,6 @@
 			<block>
 				<class>Atan2</class>
 				<id>Atan2_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>SubtractFloat</class>
-				<id>SubtractFloat_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -528,6 +571,23 @@
 				<params/>
 				<slots/>
 			</block>
+			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -543,7 +603,7 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>HasComponent_1</from>
+				<from>HasComponent_2</from>
 				<input>value</input>
 				<to>If_2</to>
 				<output>res</output>
@@ -561,16 +621,70 @@
 				<output>node</output>
 			</connection>
 			<connection>
+				<from>SetVariable_3</from>
+				<input>input</input>
+				<to>If_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>IsPlayerVehicle_1</from>
+				<input>value</input>
+				<to>If_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>If_3</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_1</from>
+				<input>value</input>
+				<to>If_3</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_1</from>
+				<input>vehicle</input>
+				<to>IsPlayerVehicle_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
 				<from>FindFirstNode_2</from>
 				<input>gameObject</input>
-				<to>HasComponent_1</to>
+				<to>HasComponent_2</to>
 				<output>node</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_1</to>
+				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>PrintToGameLogs_1</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>If_2</from>
 				<input>input</input>
 				<to>PrintToGameLogs_1</to>
 				<output>false</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -603,40 +717,22 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>ArenaPeriod_2</from>
-				<input>i1</input>
-				<to>And_2</to>
-				<output>isActive</output>
+				<from>If_3</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>true</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_1</from>
-				<input>i2</input>
-				<to>And_2</to>
-				<output>res</output>
+				<from>ArenaPeriodStartEvent_1</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>start</output>
 			</connection>
 			<connection>
-				<from>And_2</from>
+				<from>LogicGate_1</from>
 				<input>active</input>
 				<to>FrameEvent_1</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>Get Player Vehicle_1</from>
-				<input>a</input>
-				<to>CompareVehicles_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_1</from>
-				<input>b</input>
-				<to>CompareVehicles_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_1</to>
-				<output>vehicleObject</output>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>FrameEvent_1</from>
@@ -672,12 +768,6 @@
 				<from>GetVariable_1</from>
 				<input>a</input>
 				<to>MatrixRotation_3</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -759,6 +849,18 @@
 				<output>z</output>
 			</connection>
 			<connection>
+				<from>Atan2_2</from>
+				<input>a</input>
+				<to>SubtractFloat_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Atan2_3</from>
+				<input>b</input>
+				<to>SubtractFloat_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>GetVariable_3</from>
 				<input>a</input>
 				<to>SplitVector_2</to>
@@ -775,18 +877,6 @@
 				<input>b</input>
 				<to>Atan2_2</to>
 				<output>z</output>
-			</connection>
-			<connection>
-				<from>Atan2_2</from>
-				<input>a</input>
-				<to>SubtractFloat_1</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>Atan2_3</from>
-				<input>b</input>
-				<to>SubtractFloat_1</to>
-				<output>res</output>
 			</connection>
 			<connection>
 				<from>GetCamera_4</from>

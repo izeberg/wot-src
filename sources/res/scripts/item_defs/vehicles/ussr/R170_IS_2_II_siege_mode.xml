@@ -12,8 +12,8 @@
 	<postProgressionTree>role_HT_break</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>34</forward>
-		<backward>12</backward>
+		<forward>36</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -79,20 +79,20 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>110</armor_1>
+			<armor_1>135</armor_1>
 			<armor_2>155</armor_2>
 			<armor_3>90</armor_3>
 			<armor_4>60</armor_4>
 			<armor_5>20</armor_5>
-			<armor_6>220</armor_6>
+			<armor_6>270</armor_6>
 			<armor_7>30</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>20</armor_9>
 			<armor_10>125</armor_10>
 			<armor_11>145</armor_11>
 			<armor_12>150</armor_12>
-			<armor_13>220</armor_13>
-			<armor_14>80</armor_14>
+			<armor_13>270</armor_13>
+			<armor_14>95</armor_14>
 			<armor_15>150</armor_15>
 			<armor_16>80</armor_16>
 			<armor_17>75</armor_17>
@@ -114,7 +114,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>25750</weight>
-		<maxHealth>1160</maxHealth>
+		<maxHealth>1200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -5864,7 +5864,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>290</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5874,7 +5874,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>360</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -5932,7 +5932,7 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>6</reloadTime>
@@ -5943,7 +5943,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.366894 7 0.430556 3 0.569444 3 0.633106 7 1 7
+							0 8 0.366894 8 0.430556 3 0.569444 3 0.633106 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6134,16 +6134,16 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.333333 7 0.397222 4 0.444444 3 0.555556 3 0.602778 4 0.66667 7 1 7
+							0 8 0.333333 8 0.397222 4 0.444444 3 0.555556 3 0.602778 4 0.66667 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						9.2
+						9.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -6166,7 +6166,7 @@
 							<!--BW_String-->
 						</reloadLockTime>
 						<reloadTimes>
-							9.5 9.5
+							9.0 9.0
 							<!--BW_String-->
 						</reloadTimes>
 						<rateTime>4</rateTime>
@@ -7828,7 +7828,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>340</maxHealth>
+			<maxHealth>400</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7838,7 +7838,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>350</circularVisionRadius>
+			<circularVisionRadius>370</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -7918,7 +7918,7 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7932,7 +7932,7 @@
 					<pitchLimits>
 						<minPitch>0 -22 1 -22</minPitch>
 						<maxPitch>
-							0 7 0.366894 7 0.430556 3 0.569444 3 0.633106 7 1 7
+							0 8 0.366894 8 0.430556 3 0.569444 3 0.633106 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8145,12 +8145,12 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.333333 7 0.397222 4 0.444444 3 0.555556 3 0.602778 4 0.66667 7 1 7
+							0 8 0.333333 8 0.397222 4 0.444444 3 0.555556 3 0.602778 4 0.66667 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -9756,11 +9756,11 @@
 			<engines>
 				<V-12-5M1>
 					<smplEnginePower>680</smplEnginePower>
-					<smplFwMaxSpeed>34</smplFwMaxSpeed>
+					<smplFwMaxSpeed>36</smplFwMaxSpeed>
 				</V-12-5M1>
 				<V-12-6M1>
 					<smplEnginePower>750</smplEnginePower>
-					<smplFwMaxSpeed>34</smplFwMaxSpeed>
+					<smplFwMaxSpeed>36</smplFwMaxSpeed>
 				</V-12-6M1>
 			</engines>
 			<chassis>

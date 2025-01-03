@@ -5,11 +5,12 @@ from collector_vehicle import CollectorVehicleConsts
 from PlayerEvents import g_playerEvents
 from gui import InputHandler
 from gui.ClientUpdateManager import g_clientUpdateManager
+from gui.limited_ui.lui_rules_storage import LuiRules
 from gui.prb_control.entities.listener import IGlobalListener
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import dependency
-from skeletons.gui.game_control import IWalletController, IVehicleComparisonBasket, IRentalsController, IRestoreController, IEarlyAccessController
+from skeletons.gui.game_control import IWalletController, IVehicleComparisonBasket, IRentalsController, IRestoreController, IEarlyAccessController, IParagonsController, ILimitedUIController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.techtree_events import ITechTreeEventsListener
@@ -92,7 +93,16 @@ class IPage(object):
     def invalidateEventsData(self):
         pass
 
-    def invalidateParagonsAnouncement(self):
+    def invalidateParagonsUnlocks(self):
+        pass
+
+    def invalidateParagonsUnlocksStateChange(self):
+        pass
+
+    def invalidateParagonsEntryPoint(self, isNeedUpdateLevels=True):
+        pass
+
+    def invalidateTechTreeButtons(self):
         pass
 
     def clearSelectedNation(self):
@@ -143,6 +153,7 @@ class _StatsListener(_Listener):
     def startListen(self, page):
         super(_StatsListener, self).startListen(page)
         self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChanged
+        g_playerEvents.onClientUpdated += self.__onClientUpdate
         g_clientUpdateManager.addCallbacks({_CREDITS_DIFF_KEY: self._onCreditsUpdate, 
            _GOLD_DIFF_KEY: self._onGoldUpdate, 
            _FREE_XP_DIFF_KEY: self._onFreeXPUpdate, 
@@ -152,6 +163,7 @@ class _StatsListener(_Listener):
 
     def stopListen(self):
         self.__lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChanged
+        g_playerEvents.onClientUpdated -= self.__onClientUpdate
         g_clientUpdateManager.removeObjectCallbacks(self)
         super(_StatsListener, self).stopListen()
 
@@ -173,6 +185,7 @@ class _StatsListener(_Listener):
 
     def _onUnlocksUpdate(self, unlocks):
         self._page.invalidateUnlocks(unlocks)
+        self._page.invalidateTechTreeButtons()
 
     def __onServerSettingsChanged(self, diff):
         if self.__lobbyContext.getServerSettings().isShopDataChangedInDiff(diff, 'isEnabled'):
@@ -180,6 +193,11 @@ class _StatsListener(_Listener):
         if CollectorVehicleConsts.CONFIG_NAME in diff:
             self._page.invalidateVehicleCollectorState()
         return
+
+    def __onClientUpdate(self, diff, _):
+        for statName in diff.get(_STAT_DIFF_KEY, {}):
+            if statName == ('unlocks', '_d'):
+                self._page.redraw()
 
 
 class _ItemsCacheListener(_Listener):
@@ -226,6 +244,7 @@ class _ItemsCacheListener(_Listener):
             vehLocks = cache.get(_CACHE_VEHS_LOCK_KEY)
             if vehLocks:
                 self._page.invalidateVehLocks(vehLocks)
+                self._page.invalidateTechTreeButtons()
 
     def __items_onSyncCompleted(self, reason, invalidated):
         self.__invalidated = set()
@@ -339,6 +358,50 @@ class _EarlyAccessListener(_Listener):
 
     def __onUpdated(self):
         self._page.invalidateEarlyAccess()
+        self._page.invalidateTechTreeButtons()
+
+
+class _ParagonsListener(_Listener):
+    __paragonsController = dependency.descriptor(IParagonsController)
+    __limitedUIController = dependency.descriptor(ILimitedUIController)
+
+    def startListen(self, page):
+        super(_ParagonsListener, self).startListen(page)
+        self.__paragonsController.onParagonsUnlocksChanged += self.__onParagonsUnlocksChanged
+        self.__paragonsController.onSettingsChanged += self.__onParagonsSettingsUpdated
+        self.__paragonsController.onParagonsStateChanged += self.__onParagonsStateUpdated
+        self.__paragonsController.onProgressPointsChanged += self.__onParagonsProgressPointsChanged
+        self.__limitedUIController.startObserve(LuiRules.PARAGONS_ENTRY_POINT, self.__onLUIRulesUpdated)
+
+    def stopListen(self):
+        self.__paragonsController.onParagonsUnlocksChanged -= self.__onParagonsUnlocksChanged
+        self.__paragonsController.onSettingsChanged -= self.__onParagonsSettingsUpdated
+        self.__paragonsController.onParagonsStateChanged -= self.__onParagonsStateUpdated
+        self.__paragonsController.onProgressPointsChanged -= self.__onParagonsProgressPointsChanged
+        self.__limitedUIController.stopObserve(LuiRules.PARAGONS_ENTRY_POINT, self.__onLUIRulesUpdated)
+        super(_ParagonsListener, self).stopListen()
+
+    def __onParagonsUnlocksChanged(self, paragonsUnlockIDs, isGranted):
+        self._page.invalidateParagonsUnlocks()
+
+    def __onParagonsUnlocksStateChanged(self, diff):
+        self._page.invalidateParagonsUnlocksStateChange()
+
+    def __onLUIRulesUpdated(self, *_):
+        self._page.invalidateParagonsEntryPoint(isNeedUpdateLevels=False)
+        self._page.invalidateTechTreeButtons()
+
+    def __onParagonsProgressPointsChanged(self):
+        self._page.invalidateParagonsEntryPoint(isNeedUpdateLevels=False)
+
+    def __onParagonsStateUpdated(self):
+        self._page.invalidateTechTreeButtons()
+        self._page.invalidateParagonsEntryPoint(isNeedUpdateLevels=False)
+
+    def __onParagonsSettingsUpdated(self, *_):
+        self._page.invalidateParagonsEntryPoint()
+        self._page.invalidateTechTreeButtons()
+        self._page.invalidateParagonsUnlocks()
 
 
 class _TechTreeActionEventsListener(_Listener):
@@ -347,18 +410,13 @@ class _TechTreeActionEventsListener(_Listener):
     def startListen(self, page):
         super(_TechTreeActionEventsListener, self).startListen(page)
         self.__techTreeEventsListener.onSettingsChanged += self.__onSettingsChanged
-        self.__techTreeEventsListener.onEntryPointUpdated += self.__onEntryPointsUpdated
 
     def stopListen(self):
         self.__techTreeEventsListener.onSettingsChanged -= self.__onSettingsChanged
-        self.__techTreeEventsListener.onEntryPointUpdated -= self.__onEntryPointsUpdated
         super(_TechTreeActionEventsListener, self).stopListen()
 
     def __onSettingsChanged(self):
         self._page.invalidateEventsData()
-
-    def __onEntryPointsUpdated(self):
-        self._page.invalidateParagonsAnouncement()
 
 
 class _TechTreeDevRealmListener(_Listener):
@@ -390,6 +448,7 @@ class TTListenerDecorator(_Listener):
         self._restore = _RestoreListener()
         self._blueprints = _BlueprintsListener()
         self._earlyAccess = _EarlyAccessListener()
+        self._paragons = _ParagonsListener()
         self._actions = _TechTreeActionEventsListener()
         self._devRealms = _TechTreeDevRealmListener()
 
@@ -403,6 +462,7 @@ class TTListenerDecorator(_Listener):
         self._restore.startListen(proxy)
         self._blueprints.startListen(proxy)
         self._earlyAccess.startListen(proxy)
+        self._paragons.startListen(proxy)
         self._actions.startListen(proxy)
         if IS_DEVELOPMENT:
             self._devRealms.startListen(proxy)
@@ -416,6 +476,7 @@ class TTListenerDecorator(_Listener):
         self._restore.stopListen()
         self._blueprints.stopListen()
         self._earlyAccess.stopListen()
+        self._paragons.stopListen()
         self._actions.stopListen()
         if IS_DEVELOPMENT:
             self._devRealms.stopListen()

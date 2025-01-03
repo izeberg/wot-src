@@ -99,7 +99,16 @@ msgstr ""
 "%(currencies)s"
 
 msgid "notifications/purchaseContent"
-msgstr "%(product)s (%(count)s шт.)"
+msgstr "%(product)s (%(count)sшт.)"
+
+msgid "notifications/purchaseContent/withoutCount"
+msgstr "%(product)s"
+
+msgid "notifications/purchaseContent/withoutPieces"
+msgstr "%(product)s: %(count)s"
+
+msgid "notifications/vehicle"
+msgstr "Техника: "
 
 msgid "premiumPlus/description_1"
 msgstr "В наборе: %(value)s день"
@@ -141,6 +150,24 @@ msgstr ""
 "САУ IX уровня СУ-122 (1956), а также ценное игровое имущество, которое "
 "позволит с комфортом опробовать новинку и уверенно чувствовать себя на поле "
 "боя."
+
+msgid "product/bundle/longDescription/episode4"
+msgstr ""
+"Штурмовая ПТ-САУ с неплохой динамикой и хорошим лобовым бронированием с "
+"рациональными углами наклона листов. Игровой процесс во многом схож с "
+"легендарной Tortoise, который диктует продвижение по заранее выбранному "
+"направлению в первых рядах и реализацию огневого потенциала орудия, которое "
+"фактически не имеет слабых сторон."
+
+msgid "product/bundle/longDescription/episode5"
+msgstr ""
+"Тяжёлый танк прорыва с отличным лобовым бронированием башни и корпуса, а "
+"также с комфортными углами склонения орудия и небольшими уязвимыми зонами. У"
+" орудия отличный разовый урон, который компенсируется относительно долгой "
+"перезарядкой. Но эту особенность можно обернуть в плюс, так как вам не нужно"
+" часто подставляться под ответный огонь. Большое количество положительных "
+"характеристик скомпенсировано скромной точностью и низкой удельной "
+"мощностью."
 
 msgid "product/bundle/title"
 msgstr "Набор с %(vehicleName)s"

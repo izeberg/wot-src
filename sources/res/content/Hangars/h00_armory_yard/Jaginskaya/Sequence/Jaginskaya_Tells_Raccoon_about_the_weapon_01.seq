@@ -25,7 +25,7 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>jaginskaya_gun_sound</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
@@ -40,10 +40,10 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>9.866667</startTime>
-				<duration>34.966667</duration>
+				<startTime>0.000000</startTime>
+				<duration>56.567165</duration>
 				<sequenceSound>ay_vo_jaginskaya_gun</sequenceSound>
-				<type>one_shot</type>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

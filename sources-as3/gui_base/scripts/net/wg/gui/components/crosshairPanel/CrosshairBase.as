@@ -10,13 +10,15 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.data.constants.generated.CROSSHAIR_CONSTANTS;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
-   import net.wg.gui.components.crosshairPanel.components.OverheatBar;
    import net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderIndicator;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
+   import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatBar;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    
    public class CrosshairBase extends MovieClip implements ICrosshair
    {
+      
+      private static const NET_MC_SHORT_LABEL:String = "short";
       
       private static const TYPE_PREFIX:String = "type";
       
@@ -43,7 +45,7 @@ package net.wg.gui.components.crosshairPanel
       
       public var centerMC:MovieClip = null;
       
-      public var netMC:Sprite = null;
+      public var netMC:MovieClip = null;
       
       public var netSeparator:Sprite = null;
       
@@ -123,6 +125,7 @@ package net.wg.gui.components.crosshairPanel
          }
          this._overheatBar.setOverheatMarkers(param1);
          this._overheatBar.visible = true;
+         this.updateNetMC();
       }
       
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
@@ -181,6 +184,14 @@ package net.wg.gui.components.crosshairPanel
          if(this._overheatBar)
          {
             this._overheatBar.visible = false;
+         }
+      }
+      
+      public function setFlameDistanceVisibility(param1:Boolean) : void
+      {
+         if(this._overheatBar)
+         {
+            this._overheatBar.isDistanceVisible = param1;
          }
       }
       
@@ -287,6 +298,7 @@ package net.wg.gui.components.crosshairPanel
          {
             this.netType = param1;
             this.updateNetType();
+            this.updateNetMC();
             this.updateCenterMC();
             this.updateComponentsAlpha();
             this.updateHealthBarMC();
@@ -296,7 +308,7 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setOverheatProgress(param1:Number, param2:Boolean, param3:Boolean = false) : void
+      public function setOverheatProgress(param1:Number, param2:Number, param3:Boolean = false, param4:Boolean = false) : void
       {
          if(this._overheatBar)
          {
@@ -306,7 +318,7 @@ package net.wg.gui.components.crosshairPanel
             }
             else
             {
-               this._overheatBar.updateInfo(param1,param2);
+               this._overheatBar.updateInfo(param1,param2,param4);
             }
          }
       }
@@ -569,6 +581,11 @@ package net.wg.gui.components.crosshairPanel
       private function updateCenterMC() : void
       {
          this.centerMC.gotoAndStop(TYPE_PREFIX + this.centerType);
+      }
+      
+      private function updateNetMC() : void
+      {
+         this.netMC.gotoAndStop(this._overheatBar && this._overheatBar.visible ? NET_MC_SHORT_LABEL : 1);
       }
       
       private function updateHealthBarMC() : void

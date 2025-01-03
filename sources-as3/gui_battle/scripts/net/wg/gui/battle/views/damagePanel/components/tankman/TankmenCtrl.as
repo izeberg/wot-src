@@ -1,7 +1,7 @@
 package net.wg.gui.battle.views.damagePanel.components.tankman
 {
-   import net.wg.data.constants.Linkages;
    import net.wg.data.constants.RolesState;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_ITEM_STATES;
    import net.wg.gui.battle.views.damagePanel.interfaces.IDamagePanelClickableItem;
    import net.wg.gui.battle.views.damagePanel.interfaces.IDamagePanelItemsCtrl;
@@ -33,11 +33,11 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
          super();
          this._identifiersByType = {};
          this._items = new TankmanDumper();
-         this._identifiersByType[RolesState.COMANDER] = new TankmanIdentifiers(Linkages.TANKMAN_COMANDER,Linkages.TANKMAN_ORANGE_COMANDER);
-         this._identifiersByType[RolesState.GUNNER] = new TankmanIdentifiers(Linkages.TANKMAN_GUNNER,Linkages.TANKMAN_ORANGE_GUNNER);
-         this._identifiersByType[RolesState.DRIVER] = new TankmanIdentifiers(Linkages.TANKMAN_DRIVER,Linkages.TANKMAN_ORANGE_DRIVER);
-         this._identifiersByType[RolesState.RADIOMAN] = new TankmanIdentifiers(Linkages.TANKMAN_RADIST,Linkages.TANKMAN_ORANGE_RADIOMAN);
-         this._identifiersByType[RolesState.LOADER] = new TankmanIdentifiers(Linkages.TANKMAN_SHELLMAN,Linkages.TANKMAN_ORANGE_LOADER,-1);
+         this._identifiersByType[RolesState.COMANDER] = new TankmanIdentifiers(BATTLEATLAS.TANKMEN_COMANDER,BATTLEATLAS.TANKMEN_ORANGE_COMANDER);
+         this._identifiersByType[RolesState.GUNNER] = new TankmanIdentifiers(BATTLEATLAS.TANKMEN_GUNNER,BATTLEATLAS.TANKMEN_ORANGE_GUNNER);
+         this._identifiersByType[RolesState.DRIVER] = new TankmanIdentifiers(BATTLEATLAS.TANKMEN_DRIVER,BATTLEATLAS.TANKMEN_ORANGE_DRIVER);
+         this._identifiersByType[RolesState.RADIOMAN] = new TankmanIdentifiers(BATTLEATLAS.TANKMEN_RADIST,BATTLEATLAS.TANKMEN_ORANGE_RADIST);
+         this._identifiersByType[RolesState.LOADER] = new TankmanIdentifiers(BATTLEATLAS.TANKMEN_SHELLMAN,BATTLEATLAS.TANKMEN_ORANGE_SHELLMAN,-1);
          var _loc2_:int = param1.length;
          var _loc3_:int = 0;
          var _loc4_:int = 0;

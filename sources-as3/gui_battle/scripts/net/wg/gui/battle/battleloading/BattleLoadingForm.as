@@ -4,6 +4,7 @@ package net.wg.gui.battle.battleloading
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
+   import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
@@ -15,6 +16,7 @@ package net.wg.gui.battle.battleloading
    import net.wg.gui.battle.battleloading.renderers.TipPlayerItemRenderer;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
    import net.wg.gui.battle.components.BattleAtlasSprite;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.infrastructure.events.ListDataProviderEvent;
@@ -56,11 +58,11 @@ package net.wg.gui.battle.battleloading
       
       public var mapBorder:MovieClip;
       
-      public var tipBackground:BattleAtlasSprite;
+      public var tipBackground:Image;
       
-      public var mapBackground:BattleAtlasSprite;
+      public var mapBackground:Image;
       
-      public var formBackgroundTable:BattleAtlasSprite;
+      public var bg:Image;
       
       public var leftSquad:BattleAtlasSprite = null;
       
@@ -95,6 +97,7 @@ package net.wg.gui.battle.battleloading
       public function BattleLoadingForm()
       {
          super();
+         this.bg.cacheType = ImageCacheTypes.NOT_USE_CACHE;
       }
       
       override public function addVehiclesInfo(param1:Boolean, param2:Vector.<DAAPIVehicleInfoVO>, param3:Vector.<Number>) : void
@@ -117,7 +120,7 @@ package net.wg.gui.battle.battleloading
          {
             this.leftSquad.x = this._leftSquadInitX;
             this.rightSquad.x = this._rightSquadInitX;
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TABLE;
+            this.bg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMBG;
             if(this.leftTank)
             {
                this.leftTank.x = this._leftTankInitX;
@@ -131,7 +134,7 @@ package net.wg.gui.battle.battleloading
          {
             this.leftSquad.x = this._leftSquadInitX - SQUAD_ICON_SHIFT;
             this.rightSquad.x = this._rightSquadInitX + SQUAD_ICON_SHIFT;
-            this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TIPS;
+            this.bg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMBGTIPS;
             if(this.leftTank)
             {
                this.leftTank.x = this._leftTankInitX - TANK_ICON_SHIFT;
@@ -240,9 +243,12 @@ package net.wg.gui.battle.battleloading
          this.rightSquad = null;
          this.team1Text = null;
          this.team2Text = null;
+         this.tipBackground.dispose();
          this.tipBackground = null;
+         this.mapBackground.dispose();
          this.mapBackground = null;
-         this.formBackgroundTable = null;
+         this.bg.dispose();
+         this.bg = null;
          this.mapBorder = null;
          this._teamDP.removeEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onAllyDataProviderUpdateItemHandler);
          this._teamDP.cleanUp();
@@ -287,7 +293,7 @@ package net.wg.gui.battle.battleloading
       {
          super.initialize();
          battleIcon.visible = false;
-         this.formBackgroundTable.mouseChildren = this.formBackgroundTable.mouseEnabled = false;
+         this.bg.mouseChildren = this.bg.mouseEnabled = false;
          this.leftSquad.imageName = BATTLEATLAS.ICON_PLATOON;
          this.rightSquad.imageName = BATTLEATLAS.ICON_PLATOON;
          this._leftSquadInitX = this.leftSquad.x;
@@ -349,7 +355,7 @@ package net.wg.gui.battle.battleloading
       private function showMap(param1:int, param2:int) : void
       {
          this.mapBackground.visible = true;
-         this.mapBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_MAP_BACKGROUND;
+         this.mapBackground.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMMAPBG;
          this.mapBorder.visible = true;
          this.map.setMinimapDataS(param1,param2,MAP_SIZE);
          this.map.border.visible = false;
@@ -365,7 +371,7 @@ package net.wg.gui.battle.battleloading
          {
             helpTip.y = param1;
             tipText.y = param2;
-            this.tipBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_TIP_BACKGROUND;
+            this.tipBackground.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_TIPSBG;
             this.tipImage.source = param3;
          }
       }

@@ -612,6 +612,12 @@ msgstr ""
 msgid "blueprints/switch_on"
 msgstr "Чертежи техники снова доступны."
 
+msgid "bob/claimeReward/server_error"
+msgstr "Ошибка сервера"
+
+msgid "bob/claimeReward/server_error/COOLDOWN"
+msgstr "Действие недоступно. Дождитесь завершения текущей операции."
+
 msgid "bonuses/booster/value"
 msgstr "%(name)s (x%(count)d)"
 
@@ -2552,6 +2558,66 @@ msgstr ""
 msgid "optionalDevices_remove/error"
 msgstr "Ошибка при настройке оборудования. Повторите попытку позже."
 
+msgid "paragons/branchResetAvailable/text"
+msgstr ""
+"Сбрасывайте ветки техники, продвигайтесь по прогрессии и забирайте ценные "
+"награды."
+
+msgid "paragons/branchResetAvailable/title"
+msgstr "Доступен сброс ветки!"
+
+msgid "paragons/chapterCompleted/text"
+msgstr ""
+"Получена медаль за завершение сезона&nbsp;%(chapter_name)s "
+"проекта&nbsp;«Орбита»."
+
+msgid "paragons/chapterCompleted/title"
+msgstr "Поздравляем!"
+
+msgid "paragons/firstMainRewardBadgeAchieved/text"
+msgstr ""
+"Получена медаль за первую\n"
+"машину XI уровня."
+
+msgid "paragons/firstMainRewardBadgeAchieved/title"
+msgstr "Поздравляем!"
+
+msgid "paragons/newStageAvailable/text"
+msgstr "Проходите этапы и опробуйте новую технику в бою."
+
+msgid "paragons/newStageAvailable/title"
+msgstr "Доступен новый сезон!"
+
+msgid "paragons/newVehicleAvailable/text"
+msgstr "Уникальная техника XI уровня стала доступна в наградах."
+
+msgid "paragons/newVehicleAvailable/title"
+msgstr "Новая техника в проекте «Орбита»!"
+
+msgid "paragons/projectAvailable/text"
+msgstr "Зарабатывайте очки прогрессии и получайте уникальные награды."
+
+msgid "paragons/projectAvailable/title"
+msgstr "Доступен проект «Орбита»!"
+
+msgid "paragons/projectContinuing/text"
+msgstr "Все функции восстановлены и работают в штатном режиме."
+
+msgid "paragons/projectContinuing/title"
+msgstr "Проект «Орбита» возобновлен!"
+
+msgid "paragons/to/awards/button"
+msgstr "К наградам"
+
+msgid "paragons/to/project/button"
+msgstr "К проекту"
+
+msgid "paragons/to/researchments/button"
+msgstr "К Дереву исследований"
+
+msgid "paragons/to/stages/button"
+msgstr "К сезонам"
+
 msgid "parentControl/linkText"
 msgstr "Указать дату"
 
@@ -2709,6 +2775,32 @@ msgid "personalMissions/select/success"
 msgstr ""
 "Выбор боевых задач выполнен успешно. Текущие выбранные задачи: "
 "%(questNames)s."
+
+msgid "personalMissions/switch/campaign/disabled"
+msgstr "Кампания временно недоступна для выполнения."
+
+msgid "personalMissions/switch/campaign/enabled"
+msgstr "Кампания снова доступна для выполнения."
+
+msgid "personalMissions/switch/campaign/header"
+msgstr "Кампания «%(campaignTitle)s»"
+
+msgid "personalMissions/switch/operation/disabled"
+msgstr "Операция временно недоступна для выполнения."
+
+msgid "personalMissions/switch/operation/enabled"
+msgstr "Операция снова доступна для выполнения."
+
+msgid "personalMissions/switch/operation/header"
+msgstr "Операция «%(operationTitle)s»"
+
+msgid "personalMissions/switch/quest/disabled"
+msgstr ""
+"Задача «%(questTitle)s» временно недоступна.\n"
+"К выполнению были приняты задачи: %(selectedQuestTitles)s"
+
+msgid "personalMissions/switch/quest/header"
+msgstr "Задача «%(questTitle)s»"
 
 msgid "personalMissions/tankmenGain"
 msgstr "Начислено: девушка-танкист"
@@ -2870,6 +2962,9 @@ msgstr "Выбранная машина не подходит для данно�
 
 msgid "prebattle/teamInvalid/observers"
 msgstr "Команда не может состоять только из наблюдателей."
+
+msgid "prebattle/vehicleInvalid/bobOnly"
+msgstr "Выбранная машина подходит только для режима «Битва блогеров»."
 
 msgid "prebattle/vehicleInvalid/epicOnly"
 msgstr "Выбранная машина подходит только для режима «Линия фронта»."
@@ -4332,10 +4427,10 @@ msgstr ""
 "свободного опыта %(freeXP)s."
 
 msgid "vehiclePostProgression/buyPairModification/body"
-msgstr "Модификация %(modification)s для %(vehicle)s успешно проведена."
+msgstr "Модернизация %(modification)s для %(vehicle)s успешно проведена."
 
 msgid "vehiclePostProgression/buyPairModification/title"
-msgstr "Проведение модификации"
+msgstr "Проведение модернизации"
 
 msgid "vehiclePostProgression/changeSlotCategory/body"
 msgstr "Категория %(category)s для второго слота %(vehicle)s назначена."
@@ -4347,16 +4442,16 @@ msgid "vehiclePostProgression/creditsSpent"
 msgstr "Потрачено кредитов: %(value)s."
 
 msgid "vehiclePostProgression/discardAllPairsModification/body"
-msgstr "Все парные модификации для %(vehicle)s отменены."
+msgstr "Все парные модернизации для %(vehicle)s отменены."
 
 msgid "vehiclePostProgression/discardPairModification/body"
-msgstr "Модификация %(modification)s для %(vehicle)s отменена."
+msgstr "Модернизация %(modification)s для %(vehicle)s отменена."
 
 msgid "vehiclePostProgression/discardPairModification/title"
-msgstr "Отмена модификации"
+msgstr "Отмена модернизации"
 
 msgid "vehiclePostProgression/discardPairsModification/body"
-msgstr "Модификации %(modifications)s для %(vehicle)s отменены."
+msgstr "Модернизации %(modifications)s для %(vehicle)s отменены."
 
 msgid ""
 "vehiclePostProgression/discardPairsModification/modifications/separator"
@@ -4369,26 +4464,26 @@ msgid "vehiclePostProgression/freeExperienceSpent"
 msgstr "Потрачено свободного опыта: %(value)s."
 
 msgid "vehiclePostProgression/modificationProcessorError/body"
-msgstr "Ошибка схемы модификаций. Повторите попытку позже."
+msgstr "Ошибка схемы модернизаций. Повторите попытку позже."
 
 msgid "vehiclePostProgression/modificationProcessorError/title"
 msgstr "Ошибка"
 
 msgid "vehiclePostProgression/researchStep/body"
 msgstr ""
-"Базовая модификация %(level)s уровня для %(vehicle)s исследована и "
+"Базовая модернизация %(level)s уровня для %(vehicle)s исследована и "
 "проведена."
 
 msgid "vehiclePostProgression/researchSteps/body"
 msgstr ""
-"Базовые модификации %(levels)s уровня для %(vehicle)s исследованы и "
+"Базовые модернизации %(levels)s уровня для %(vehicle)s исследованы и "
 "проведены."
 
 msgid "vehiclePostProgression/researchSteps/levels/separator"
 msgstr ", "
 
 msgid "vehiclePostProgression/researchSteps/title"
-msgstr "Исследование модификации"
+msgstr "Исследование модернизации"
 
 msgid "vehiclePostProgression/setSlotCategory/body"
 msgstr "Категория %(category)s для второго слота %(vehicle)s назначена."
@@ -4415,7 +4510,7 @@ msgid "vehiclePostProgression/unlockFeature/shells_consumables_switch/title"
 msgstr "Необходимое оснащение"
 
 msgid "vehiclePostProgression/vehiclesUnlockPostProgression/single/body"
-msgstr "Получен доступ к схеме модификаций для %(vehicle)s."
+msgstr "Получен доступ к схеме модернизации для %(vehicle)s."
 
 msgid "vehiclePostProgression/vehiclesUnlockPostProgression/title"
 msgstr "Полевая модернизация"
@@ -4423,9 +4518,9 @@ msgstr "Полевая модернизация"
 msgid ""
 "vehiclePostProgression/vehiclesUnlockPostProgression/welcomeUnlock/body"
 msgstr ""
-"Получен доступ к схеме модификаций техники. Вы можете совершить более тонкую"
-" ролевую настройку ваших машин и изменить их ТТХ с помощью различных "
-"модификаций."
+"Получен доступ к схеме модернизаций техники. Вы можете совершить более "
+"тонкую ролевую настройку ваших машин и изменить их ТТХ с помощью различных "
+"модернизаций."
 
 msgid "vehicle_buy/invalid_vehicle"
 msgstr "Покупка «%(vehName)s» не удалась. Неправильная машина."

@@ -91,7 +91,6 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
          {
             this._distanceDrawer.visible = param1;
          }
-         this.directionLinePlaceholder.visible = !param1;
       }
       
       public function as_updateShotDistance(param1:Number) : void

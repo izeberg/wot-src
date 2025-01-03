@@ -116,6 +116,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_hull_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.016543 -0.008327 -0.056500</groupOrigin>
 			</primitiveGroup>
@@ -149,6 +153,18 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000230 -0.385775 0.083077</groupOrigin>

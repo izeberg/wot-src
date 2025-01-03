@@ -25,16 +25,16 @@ msgid "PromoPremiumIgrWindow/windowTitle"
 msgstr "Специальная техника в IGR"
 
 msgid "Time/timeLeftShort/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "Time/timeLeftShort/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "Time/timeLeftShort/lessMin"
 msgstr "менее минуты"
 
 msgid "Time/timeLeftShort/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "Time/timeValue/days"
 msgstr "%(day)s д %(hour)s ч %(min)s мин"
@@ -46,7 +46,7 @@ msgid "Time/timeValue/lessMin"
 msgstr "минуту"
 
 msgid "Time/timeValue/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "Time/timeValueShort/days"
 msgstr "%(day)s д %(hour)s ч"
@@ -58,7 +58,7 @@ msgid "Time/timeValueShort/lessMin"
 msgstr "01 мин"
 
 msgid "Time/timeValueShort/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "Time/timeValueShort/noLeadingZeroes/days"
 msgstr "%(day)s д %(hour)s ч"
@@ -67,10 +67,10 @@ msgid "Time/timeValueShort/noLeadingZeroes/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "Time/timeValueShort/noLeadingZeroes/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "Time/timeValueShort/noLeadingZeroes/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "Time/timeValueWithSecs/days"
 msgstr "%(day)s д %(hour)s ч"
@@ -688,6 +688,9 @@ msgstr "Линия фронта"
 msgid "bonusType/29"
 msgstr "«Стальной охотник»"
 
+msgid "bonusType/32"
+msgstr "Битва блогеров"
+
 msgid "bonusType/37"
 msgstr "«Разведка боем»"
 
@@ -884,10 +887,10 @@ msgid "boosters/timeLeft/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "boosters/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "boosters/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "boostersWindow/activeBoosters"
 msgstr "Сейчас активны: %(activeNo)s/%(allNo)s"
@@ -1094,6 +1097,9 @@ msgstr "Копировать имя"
 
 msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "Создать взвод охотников"
+
+msgid "contextMenu/createBobSquad"
+msgstr "Создать взвод для Битвы блогеров"
 
 msgid "contextMenu/createComp7Squad"
 msgstr "Создать взвод для Натиска"
@@ -1369,7 +1375,7 @@ msgstr "Отозвать приглашение во взвод"
 
 msgid "copy"
 msgstr ""
-"© Леста Игры, 2022-2024. Игра «Мир танков» основана на интеллектуальной "
+"© Леста Игры, 2022-2025. Игра «Мир танков» основана на интеллектуальной "
 "собственности третьих лиц. Все права на объекты прав третьих лиц принадлежат"
 " их законным правообладателям."
 
@@ -2217,6 +2223,13 @@ msgstr ""
 msgid "extraParams/name/foliageMaskingFactor"
 msgstr "Параметр, отвечающий за силу эффекта маскировки от растительности."
 
+msgid "extraParams/name/limitsForGunBoost"
+msgstr ""
+"Параметр, отвечающий за количество учитываемых попаданий по вашей машине, "
+"которые определяют бонус к скорости перезарядки. / Временная задержка после "
+"ускорения перезарядки, по истечении которой попадания по вам снова начнут "
+"ускорять перезарядку."
+
 msgid "extraParams/name/minTimeBetweenReloadBoost"
 msgstr ""
 "Временная задержка после ускорения перезарядки, по истечении которой "
@@ -2230,14 +2243,37 @@ msgstr ""
 msgid "extraParams/name/radiomanHitChance"
 msgstr "Параметр, отвечающий за шанс избежать ранений радистом."
 
-msgid "extraParams/name/shotsLimitForGunBoost"
-msgstr ""
-"Параметр, отвечающий за количество учитываемых попаданий по вашей машине, "
-"которые определяют бонус к скорости перезарядки."
-
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
 "Параметр, отвечающий за силу негативного эффекта при дезориентации экипажа."
+
+msgid "extraParams/name/temperatureCoolingDelay"
+msgstr "Время между прекращением стрельбы и началом охлаждения орудия."
+
+msgid "extraParams/name/temperatureCoolingPerSec"
+msgstr ""
+"Количество условных единиц температуры, рассеиваемых в единицу времени."
+
+msgid "extraParams/name/temperatureDamageFactor"
+msgstr ""
+"Модификатор, применяемый к значению среднего урона на каждой термической "
+"стадии соответственно."
+
+msgid "extraParams/name/temperatureHeatingPerSec"
+msgstr ""
+"Количество условных единиц температуры, накапливаемых орудием за секунду "
+"непрерывной стрельбы."
+
+msgid "extraParams/name/temperatureMaxTemperature"
+msgstr ""
+"Максимальное значение температуры (в условных единицах), которым обладает "
+"каждая термическая стадия. При превышении даного значения орудие либо "
+"переходит в следующую стадию, либо перегревается на последней стидии."
+
+msgid "extraParams/name/temperatureStatesCount"
+msgstr ""
+"Количество термических стадий, которыми обладает орудие. Каждая термическая "
+"стадия может обладать своими специфическими атрибутами и модификаторами."
 
 msgid "extraParams/name/vehPenaltyForDamageEngineAndCombat"
 msgstr ""
@@ -2373,7 +2409,8 @@ msgstr ""
 
 msgid "extraParams/name/vehicleReloadTimeAfterShellChange"
 msgstr ""
-"Параметр, отвечающий за скорость смены типа снаряда в уже заряженном орудии."
+"Параметр, отвечающий за скорость смены типа боеприпаса в уже заряженном "
+"орудии."
 
 msgid "extraParams/name/vehicleRepairSpeed"
 msgstr ""
@@ -2871,7 +2908,7 @@ msgid "headerButtons/barracks"
 msgstr "Казарма"
 
 msgid "headerButtons/battle"
-msgstr "В бой!"
+msgstr "В БОЙ"
 
 msgid "headerButtons/battle/availableSince"
 msgstr "Доступно с: %(datetime)s"
@@ -2944,6 +2981,33 @@ msgstr "Взвод охотников"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Создать взвод из 2 игроков"
+
+msgid "headerButtons/battle/types/bob"
+msgstr "Битва блогеров"
+
+msgid "headerButtons/battle/types/bob/availability/frozen"
+msgstr "Режим временно отключён"
+
+msgid "headerButtons/battle/types/bob/availability/postEvent"
+msgstr "Бои недоступны"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/days"
+msgstr "До конца события: %(day)s д"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/hours"
+msgstr "До конца события: %(hour)s ч"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/lessMin"
+msgstr "До конца события: менее 1 ч"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/min"
+msgstr "До конца события: менее 1 ч"
+
+msgid "headerButtons/battle/types/bob/availability/until"
+msgstr "C %(date)s"
+
+msgid "headerButtons/battle/types/bob/descr"
+msgstr "?empty?"
 
 msgid "headerButtons/battle/types/comp7"
 msgstr "Натиск"
@@ -3034,10 +3098,10 @@ msgid "headerButtons/battle/types/mapbox"
 msgstr "Разведка боем"
 
 msgid "headerButtons/battle/types/mapbox/availability/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "headerButtons/battle/types/mapbox/availability/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "headerButtons/battle/types/mapbox/availability/lessThanHour"
 msgstr "менее 1 ч"
@@ -3067,7 +3131,7 @@ msgid "headerButtons/battle/types/ranked/availability"
 msgstr "Доступ в режим: "
 
 msgid "headerButtons/battle/types/ranked/availability/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "headerButtons/battle/types/ranked/availability/ended"
 msgstr "Сезон окончен"
@@ -3076,13 +3140,13 @@ msgid "headerButtons/battle/types/ranked/availability/frozen"
 msgstr "Режим временно отключён"
 
 msgid "headerButtons/battle/types/ranked/availability/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "headerButtons/battle/types/ranked/availability/lessMin"
 msgstr "менее минуты"
 
 msgid "headerButtons/battle/types/ranked/availability/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "headerButtons/battle/types/ranked/availability/notSet"
 msgstr "Бои недоступны"
@@ -3216,6 +3280,12 @@ msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/body"
 msgstr "На этом сервере режим прекращения огня."
 
 msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/header"
+msgstr "Выход в бой недоступен"
+
+msgid "headerButtons/fightBtn/tooltip/bobOnly/body"
+msgstr "Выбранная машина подходит только для события «Битва блогеров 2025»."
+
+msgid "headerButtons/fightBtn/tooltip/bobOnly/header"
 msgstr "Выход в бой недоступен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/body"
@@ -3900,6 +3970,9 @@ msgstr "Разминка"
 msgid "loading/battleTypes/31000"
 msgstr "Полигон"
 
+msgid "loading/battleTypes/32"
+msgstr "Битва блогеров"
+
 msgid "loading/battleTypes/4"
 msgstr "Боевое обучение"
 
@@ -3992,6 +4065,9 @@ msgid "loading/battleTypes/desc/31"
 msgstr " "
 
 msgid "loading/battleTypes/desc/31000"
+msgstr " "
+
+msgid "loading/battleTypes/desc/32"
 msgstr " "
 
 msgid "loading/battleTypes/desc/4"
@@ -4351,16 +4427,16 @@ msgid "login/version"
 msgstr "Мир танков"
 
 msgid "mapBlackList/timeLeftShort/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "mapBlackList/timeLeftShort/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "mapBlackList/timeLeftShort/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "mapBlackList/timeLeftShort/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "moduleFits/already_installed"
 msgstr "?empty?"
@@ -4440,6 +4516,9 @@ msgid "moduleInfo/autoReloadGunLabel/boost"
 msgstr ""
 "Доработанная система дозарядки:\n"
 "Позволяет уменьшить базовое время дозарядки снарядов."
+
+msgid "moduleInfo/autoShootFlameGunLabel"
+msgstr "Безмагазинная система"
 
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазинная система заряжания"
@@ -4530,6 +4609,12 @@ msgstr "Время дозарядки одного снаряда"
 msgid "moduleInfo/params/autoReloadTime/boost"
 msgstr "Базовое время дозарядки одного снаряда"
 
+msgid "moduleInfo/params/autoShootFlameChangeShellTime"
+msgstr "Время подключения огнесмеси"
+
+msgid "moduleInfo/params/autoShootFlameOverheatCoolingTime"
+msgstr "Время охлаждения орудия при перегреве"
+
 msgid "moduleInfo/params/avgDamage"
 msgstr "Средний урон"
 
@@ -4538,6 +4623,9 @@ msgstr "Средний урон"
 
 msgid "moduleInfo/params/avgDamagePerMinute"
 msgstr "Средний урон в минуту"
+
+msgid "moduleInfo/params/avgDamagePerSecond"
+msgstr "Средний урон в секунду"
 
 msgid "moduleInfo/params/avgPiercingPower"
 msgstr "Средняя бронепробиваемость"
@@ -4605,7 +4693,7 @@ msgid "moduleInfo/params/drivingControl"
 msgstr "К управляемости на скорости"
 
 msgid "moduleInfo/params/dualAccuracyCoolingDelay"
-msgstr "Время остывания орудия после выстрела"
+msgstr "Время охлаждения орудия после выстрела"
 
 msgid "moduleInfo/params/duration"
 msgstr "Продолжительность"
@@ -4703,6 +4791,9 @@ msgstr "Время полной перезарядки"
 msgid "moduleInfo/params/reloadTime"
 msgstr "Скорострельность"
 
+msgid "moduleInfo/params/reloadTimePerSecond"
+msgstr "Скорострельность орудия в секунду"
+
 msgid "moduleInfo/params/reloadTimeSecs"
 msgstr "Заряжание орудия"
 
@@ -4739,6 +4830,18 @@ msgstr "Время дезориентации"
 msgid "moduleInfo/params/stunMaxDurationList"
 msgstr "Время дезориентации"
 
+msgid "moduleInfo/params/thermalVisionDistance"
+msgstr "Обзор с пирометром"
+
+msgid "moduleInfo/params/thermalVisionObserveTime"
+msgstr "Время до обнаружения противника"
+
+msgid "moduleInfo/params/thermalVisionReloadTime"
+msgstr "Время перезарядки прибора"
+
+msgid "moduleInfo/params/thermalVisionReuseAndDuration"
+msgstr "Пирометр (количество использований, раз / время действия прибора, с)"
+
 msgid "moduleInfo/params/turboshaftEnginePower"
 msgstr "Мощность двигателя (турбо)"
 
@@ -4753,6 +4856,11 @@ msgstr "Масса"
 
 msgid "moduleInfo/rocketAccelerationEngine"
 msgstr "Реактивные ускорители, повышающие мобильность"
+
+msgid "moduleInfo/thermalVisionTurret"
+msgstr ""
+"Пирометр: позволяет обнаружить машины противника в секторе покрытия прибора,"
+" игнорируя их маскировку, но учитывая укрытия."
 
 msgid "moduleInfo/title"
 msgstr " "
@@ -4874,9 +4982,6 @@ msgstr "СССР"
 
 msgid "onlineCounter/delimiter"
 msgstr " / "
-
-msgid "onlineCounter/total"
-msgstr "Всего"
 
 msgid "onlineCounter/unavailable"
 msgstr "- -"
@@ -6262,15 +6367,6 @@ msgstr "?empty?"
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Нет в Ангаре"
 
-msgid "tankCarousel/vehicleStates/nyTank"
-msgstr "Новогодняя техника"
-
-msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
-msgstr "Свободных слотов: %(count)d"
-
-msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
-msgstr "Все слоты заняты"
-
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Доступна аренда машины"
 
@@ -6356,11 +6452,23 @@ msgstr "Скорость, набираемая за 5 секунд"
 msgid "tank_params/autoReloadTime"
 msgstr "Время дозарядки одного снаряда"
 
+msgid "tank_params/autoShootFireUntilOverheatTime"
+msgstr "Время непрерывной стрельбы"
+
+msgid "tank_params/autoShootFlameChangeShellTime"
+msgstr "Подключение огнесмеси"
+
+msgid "tank_params/autoShootFlameOverheatCoolingTime"
+msgstr "Время охлаждения орудия при перегреве"
+
 msgid "tank_params/avgDamage"
 msgstr "Средний урон"
 
 msgid "tank_params/avgDamagePerMinute"
 msgstr "Средний урон в минуту"
+
+msgid "tank_params/avgDamagePerSecond"
+msgstr "Средний урон в секунду"
 
 msgid "tank_params/avgPiercingPower"
 msgstr "Средняя бронепробиваемость"
@@ -6411,7 +6519,7 @@ msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "Время остывания орудия"
 
 msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
-msgstr "Время остывания орудия после выстрела"
+msgstr "Время охлаждения орудия после выстрела"
 
 msgid "tank_params/duration"
 msgstr "Время действия умения"
@@ -6560,6 +6668,9 @@ msgstr "Наблюдение"
 msgid "tank_params/reloadTime"
 msgstr "Скорострельность орудия"
 
+msgid "tank_params/reloadTimePerSecond"
+msgstr "Скорострельность орудия"
+
 msgid "tank_params/reloadTimeSecs"
 msgstr "Заряжание орудия"
 
@@ -6596,6 +6707,9 @@ msgstr "Макс. скорость / задний ход"
 msgid "tank_params/spm"
 msgstr "(выстр/мин)"
 
+msgid "tank_params/sps"
+msgstr "(выстр/с)"
+
 msgid "tank_params/sqm"
 msgstr "(м²)"
 
@@ -6613,6 +6727,12 @@ msgstr "Время перехода в осадный / походный реж�
 
 msgid "tank_params/t"
 msgstr "(т)"
+
+msgid "tank_params/thermalVisionDistance"
+msgstr "Обзор с пирометром"
+
+msgid "tank_params/thermalVisionReuseAndDuration"
+msgstr "Пирометр"
 
 msgid "tank_params/timeOfReaching"
 msgstr "Время преодоления 100 м"
@@ -6693,7 +6813,7 @@ msgid "tank_params/vpm"
 msgstr "(ед./мин)"
 
 msgid "tank_params/vps"
-msgstr "(ед/с)"
+msgstr "(ед./с)"
 
 msgid "tank_params/wheeledSpeedModeSpeed"
 msgstr "Макс. скорость / задний ход (скоростной)"
@@ -6819,7 +6939,7 @@ msgid "timeLeft/full/hour"
 msgstr "{hour} ч {min} мин"
 
 msgid "timeLeft/full/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "timeLeft/full/min"
 msgstr "{min} мин"
@@ -6831,7 +6951,7 @@ msgid "timeLeft/short/hour"
 msgstr "{hour} ч"
 
 msgid "timeLeft/short/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "timeLeft/short/min"
 msgstr "{min} мин"
@@ -7104,11 +7224,23 @@ msgstr "Время дозарядки одного снаряда (c)"
 msgid "vehicleInfo/params/autoReloadTimeBoost"
 msgstr "Базовое время дозарядки одного снаряда (с)"
 
+msgid "vehicleInfo/params/autoShootFireUntilOverheatTime"
+msgstr "Время непрерывной стрельбы (с)"
+
+msgid "vehicleInfo/params/autoShootFlameChangeShellTime"
+msgstr "Подключение огнесмеси (с)"
+
+msgid "vehicleInfo/params/autoShootFlameOverheatCoolingTime"
+msgstr "Время охлаждения орудия при перегреве (с)"
+
 msgid "vehicleInfo/params/avgDamage"
 msgstr "Средний урон за выстрел"
 
 msgid "vehicleInfo/params/avgDamagePerMinute"
 msgstr "Средний урон в минуту"
+
+msgid "vehicleInfo/params/avgDamagePerSecond"
+msgstr "Средний урон в секунду"
 
 msgid "vehicleInfo/params/avgPiercingPower"
 msgstr "Средняя бронепробиваемость"
@@ -7141,7 +7273,7 @@ msgid "vehicleInfo/params/clipFireRate"
 msgstr "Перезарядка (полная/между/кол-во)"
 
 msgid "vehicleInfo/params/dualAccuracyCoolingDelay"
-msgstr "Время остывания орудия после выстрела (с)"
+msgstr "Время охлаждения орудия после выстрела (с)"
 
 msgid "vehicleInfo/params/enginePower"
 msgstr "Мощность двигателя (л.с.)"
@@ -7188,6 +7320,9 @@ msgstr "Время между выстрелом и переходом к зар
 msgid "vehicleInfo/params/reloadTime"
 msgstr "Скорострельность орудия (выстр/мин)"
 
+msgid "vehicleInfo/params/reloadTimePerSecond"
+msgstr "Скорострельность орудия (выстр/с)"
+
 msgid "vehicleInfo/params/reloadTimeSecs"
 msgstr "Заряжание орудия (с)"
 
@@ -7220,6 +7355,12 @@ msgstr "Время перехода в осадный режим (с)"
 
 msgid "vehicleInfo/params/switchTime"
 msgstr "Время перехода в осадный / походный режим (с)"
+
+msgid "vehicleInfo/params/thermalVisionDistance"
+msgstr "Обзор с пирометром (м)"
+
+msgid "vehicleInfo/params/thermalVisionReuseAndDuration"
+msgstr "Пирометр (кол-во/время)"
 
 msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "Кассета (турбо) (с/шт./шт.)"
@@ -7348,19 +7489,19 @@ msgid "vehiclePreview/timeLeft/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "vehiclePreview/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "vehiclePreview/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "vehiclePreview/timeLeftShort/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "vehiclePreview/timeLeftShort/lessMin"
 msgstr "01 мин"
 
 msgid "vehiclePreview/timeLeftShort/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "vehicleRestore/timeLeftShort/days"
 msgstr "%(day)sд"

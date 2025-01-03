@@ -3,6 +3,7 @@ package net.wg.gui.lobby.hangar
    import fl.motion.easing.Quadratic;
    import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
+   import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.display.Stage;
    import flash.events.Event;
@@ -56,6 +57,8 @@ package net.wg.gui.lobby.hangar
       private static const INVALIDATE_CAROUSEL_EVENT_ENTRY_STATE:String = "invalidateCarouselEventEntryState";
       
       private static const INVALIDATE_COMP7_MODIFIERS_VISIBILITY:String = "invalidComp7Modifiers";
+      
+      private static const INVALIDATE_BOB_MODIFIERS_VISIBILITY:String = "invalidBobModifiers";
       
       private static const ENTRY_CONT_POSITION_INVALID:String = "entryContPositionInvalid";
       
@@ -131,11 +134,19 @@ package net.wg.gui.lobby.hangar
       
       private static const COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
       
+      private static const BOB_MODIFIERS_PANEL_INJECT_WIDTH:int = 354;
+      
+      private static const BOB_MODIFIERS_PANEL_INJECT_HEIGHT:int = 58;
+      
+      private static const BOB_MODIFIERS_PANEL_INJECT_OFFSET_Y:int = 2;
+      
+      private static const BOB_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
+      
       private static const SMALL_SCREEN_WIDTH_THRESHOLD:int = 1280;
       
       private static const PARAMS_SMALL_SCREEN_BOTTOM_MARGIN:int = 36;
       
-      private static const AMMUNITION_PANEL_OFFSET_Y:int = -19;
+      private static const AMMUNITION_PANEL_OFFSET_Y:int = 4;
       
       private static const AMMUNITION_PANEL_INJECT_OFFSET_RIGHT:int = 5;
       
@@ -148,6 +159,8 @@ package net.wg.gui.lobby.hangar
       private static const CAROUSEL_EVENT_ENTRY_Y_OFFSET:int = 127;
       
       private static const CAROUSEL_EVENT_ENTRY_MARGIN:int = 1;
+      
+      private static const BOTTOM_BG_ALPHA:Number = 0.8;
        
       
       public var vehResearchPanel:ResearchPanel;
@@ -211,6 +224,8 @@ package net.wg.gui.lobby.hangar
       private var _isVisible:Boolean = true;
       
       private var _comp7ModifiersPanelInject:GFInjectComponent;
+      
+      private var _bobModifiersPanelInject:GFInjectComponent;
       
       private var _isCnSubscribeVisible:Boolean = false;
       
@@ -286,7 +301,6 @@ package net.wg.gui.lobby.hangar
          if(this.header != null)
          {
             this.header.x = param1 >> 1;
-            this.header.updateStage(param1,param2);
          }
          if(this._alertMessageBlock)
          {
@@ -315,18 +329,13 @@ package net.wg.gui.lobby.hangar
          this._appStage.addEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_HIDE_ANIM_COMPLETE,this.onAmmunitionViewHideAnimCompleteHandler);
          this.ammunitionPanelInject.addEventListener(Event.RESIZE,this.onAmmunitionPanelInjectResizeHandler);
          this.ammunitionPanelInject.addEventListener(AmmunitionPanelInjectEvents.HELP_LAYOUT_CHANGED,this.onAmmunitionPanelInjectHelpLayoutChangedHandler);
+         addEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
          if(this.vehResearchPanel != null)
          {
             registerFlashComponentS(this.vehResearchPanel,HANGAR_ALIASES.RESEARCH_PANEL);
          }
          this.updateElementsPosition();
          this.updateHeaderMargin();
-      }
-      
-      override protected function onInitModalFocus(param1:InteractiveObject) : void
-      {
-         super.onInitModalFocus(param1);
-         this._gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscapeHandler,true);
       }
       
       override protected function onBeforeDispose() : void
@@ -338,6 +347,7 @@ package net.wg.gui.lobby.hangar
          this._gameInputMgr.clearKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscapeHandler);
          this._appStage.dispatchEvent(new LobbyEvent(LobbyEvent.UNREGISTER_DRAGGING));
          this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_HIDE_ANIM_COMPLETE,this.onAmmunitionViewHideAnimCompleteHandler);
+         removeEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
          this._gameInputMgr.clearKeyHandler(Keyboard.F1,KeyboardEvent.KEY_DOWN,this.showLayoutHandler);
          this._gameInputMgr.clearKeyHandler(Keyboard.F1,KeyboardEvent.KEY_UP,this.closeLayoutHandler);
          this.ammunitionPanel.removeEventListener(Event.RESIZE,this.onAmmunitionPanelResizeHandler);
@@ -363,6 +373,7 @@ package net.wg.gui.lobby.hangar
          this.removeComp7ModifiersPanel();
          this.removeBattleRoyaleContainer();
          this.removeComp7ModifiersPanel();
+         this.removeBobModifiersPanel();
          this.bottomBg.dispose();
          this.bottomBg = null;
          this.teaser.dispose();
@@ -420,6 +431,7 @@ package net.wg.gui.lobby.hangar
          this.bottomBg.mouseEnabled = false;
          this._gameInputMgr.setKeyHandler(Keyboard.F1,KeyboardEvent.KEY_DOWN,this.showLayoutHandler,true);
          this._gameInputMgr.setKeyHandler(Keyboard.F1,KeyboardEvent.KEY_UP,this.closeLayoutHandler,true);
+         this._gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscapeHandler,true);
          this.ammunitionPanel.addEventListener(Event.RESIZE,this.onAmmunitionPanelResizeHandler);
          this.ammunitionPanel.addEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onAmmunitionPanelRequestFocusHandler);
          this.switchModePanel.addEventListener(ComponentEvent.SHOW,this.onSwitchModePanelShowHandler);
@@ -444,7 +456,7 @@ package net.wg.gui.lobby.hangar
          var _loc1_:Boolean = isInvalid(ENTRY_CONT_POSITION_INVALID,INVALIDATE_AMMUNITION_PANEL_SIZE);
          var _loc2_:Boolean = isInvalid(PARAMS_POSITION_INVALID);
          var _loc3_:Boolean = false;
-         if(this.carousel && isInvalid(INVALIDATE_CAROUSEL_SIZE))
+         if(isInvalid(INVALIDATE_CAROUSEL_SIZE))
          {
             this._carousel.visible = this._carouselVisible;
             this.updateCarouselPosition();
@@ -469,6 +481,10 @@ package net.wg.gui.lobby.hangar
             invalidate(INVALIDATE_CAROUSEL_EVENT_ENTRY_STATE);
          }
          if(isInvalid(INVALIDATE_COMP7_MODIFIERS_VISIBILITY))
+         {
+            _loc2_ = true;
+         }
+         if(isInvalid(INVALIDATE_BOB_MODIFIERS_VISIBILITY))
          {
             _loc2_ = true;
          }
@@ -598,6 +614,20 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      public function addBobModifiers() : void
+      {
+         if(!this._bobModifiersPanelInject)
+         {
+            this._bobModifiersPanelInject = new GFInjectComponent();
+            this._bobModifiersPanelInject.setManageSize(true);
+            this._bobModifiersPanelInject.width = BOB_MODIFIERS_PANEL_INJECT_WIDTH;
+            this._bobModifiersPanelInject.height = BOB_MODIFIERS_PANEL_INJECT_HEIGHT;
+            addChild(this._bobModifiersPanelInject);
+            registerFlashComponentS(this._bobModifiersPanelInject,HANGAR_ALIASES.BOB_MODIFIERS_PANEL);
+            invalidate(INVALIDATE_BOB_MODIFIERS_VISIBILITY);
+         }
+      }
+      
       public function as_closeHelpLayout() : void
       {
          this._helpLayout.hide();
@@ -691,6 +721,18 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      public function as_setBobModifiersVisible(param1:Boolean) : void
+      {
+         if(param1 && !this._bobModifiersPanelInject)
+         {
+            this.addBobModifiers();
+         }
+         if(!param1 && this._bobModifiersPanelInject)
+         {
+            this.removeBobModifiers();
+         }
+      }
+      
       public function as_setControlsVisible(param1:Boolean) : void
       {
          if(param1 != this.isControlsVisible)
@@ -746,6 +788,15 @@ package net.wg.gui.lobby.hangar
          {
             this._carouselEventEntryVisible = param1;
             invalidate(INVALIDATE_CAROUSEL_EVENT_ENTRY_STATE);
+         }
+      }
+      
+      public function as_updateUiEffectsState(param1:Boolean) : void
+      {
+         this.bottomBg.alpha = !!param1 ? Number(BOTTOM_BG_ALPHA) : Number(1);
+         if(this._carousel)
+         {
+            this._carousel.isUiEffectsEnabled = param1;
          }
       }
       
@@ -832,6 +883,18 @@ package net.wg.gui.lobby.hangar
          invalidate(INVALIDATE_COMP7_MODIFIERS_VISIBILITY);
       }
       
+      public function removeBobModifiers() : void
+      {
+         this.removeBobModifiersPanel();
+         invalidate(INVALIDATE_BOB_MODIFIERS_VISIBILITY);
+      }
+      
+      public function setAnimatorVisibility(param1:Boolean) : void
+      {
+         this._isVisibleByAnimator = param1;
+         this.resolveVisibility();
+      }
+      
       public function tryRemoveBattleRoyaleContainer() : void
       {
          this.removeBattleRoyaleComponents();
@@ -841,12 +904,6 @@ package net.wg.gui.lobby.hangar
             this._battleRoyaleComponents.dispose();
             this._battleRoyaleComponents = null;
          }
-      }
-      
-      public function setAnimatorVisibility(param1:Boolean) : void
-      {
-         this._isVisibleByAnimator = param1;
-         this.resolveVisibility();
       }
       
       public function updateAmmunitionPanelPosition() : void
@@ -883,6 +940,19 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      private function removeBobModifiersPanel() : void
+      {
+         if(this._bobModifiersPanelInject != null)
+         {
+            removeChild(this._bobModifiersPanelInject);
+            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.BOB_MODIFIERS_PANEL))
+            {
+               unregisterFlashComponentS(HANGAR_ALIASES.BOB_MODIFIERS_PANEL);
+            }
+            this._bobModifiersPanelInject = null;
+         }
+      }
+      
       private function removeBattleRoyaleContainer() : void
       {
          if(this._battleRoyaleComponents != null)
@@ -902,7 +972,7 @@ package net.wg.gui.lobby.hangar
       {
          if(!this._hangarViewSwitchAnimator)
          {
-            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.vehicleParametersContainer,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject]),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
+            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.vehicleParametersContainer,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject,this._bobModifiersPanelInject]),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
          }
       }
       
@@ -1072,11 +1142,16 @@ package net.wg.gui.lobby.hangar
          {
             _loc2_ -= this._comp7ModifiersPanelInject.height + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
          }
+         if(this._bobModifiersPanelInject)
+         {
+            _loc2_ -= this._bobModifiersPanelInject.height + BOB_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
+         }
          if(_loc2_ > 0)
          {
             this.params.height = _loc2_;
          }
          this.updateComp7ModifiersPosition();
+         this.updateBobModifiersPosition();
       }
       
       private function hideTooltip() : void
@@ -1101,6 +1176,15 @@ package net.wg.gui.lobby.hangar
          {
             this._comp7ModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
             this._comp7ModifiersPanelInject.x = this.params.x + this.params.width - this._comp7ModifiersPanelInject.width + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
+         }
+      }
+      
+      private function updateBobModifiersPosition() : void
+      {
+         if(this._bobModifiersPanelInject)
+         {
+            this._bobModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + BOB_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
+            this._bobModifiersPanelInject.x = this.params.x + this.params.width - this._bobModifiersPanelInject.width + BOB_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
          }
       }
       
@@ -1136,7 +1220,6 @@ package net.wg.gui.lobby.hangar
          {
             this.header.x = _width >> 1;
             this.header.y = _loc1_;
-            this.header.updateStage(_originalWidth,_originalHeight);
          }
          if(this.switchModePanel.visible)
          {
@@ -1245,6 +1328,15 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      private function onHangarShowDropDownHandler(param1:CrewDropDownEvent) : void
+      {
+         var _loc2_:MovieClip = param1.dropDownref;
+         var _loc3_:Point = globalToLocal(new Point(_loc2_.x,_loc2_.y));
+         addChild(_loc2_);
+         _loc2_.x = _loc3_.x;
+         _loc2_.y = _loc3_.y;
+      }
+      
       private function showLayoutHandler(param1:InputEvent) : void
       {
          var _loc2_:InputDetails = param1.details;
@@ -1278,6 +1370,7 @@ package net.wg.gui.lobby.hangar
       private function onParamsResizeHandler(param1:Event) : void
       {
          this.updateComp7ModifiersPosition();
+         this.updateBobModifiersPosition();
       }
       
       private function onEventsEntryContainerResizeHandler(param1:Event) : void

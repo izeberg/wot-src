@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz37_Vz_59_Dravec/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.665940 -0.021047 -3.157450</min>
+		<max>1.666078 1.169667 3.188242</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/normal/lod3/Chassis</nodefullVisual>
+</root>

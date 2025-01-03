@@ -38,6 +38,10 @@
 						normalMap
 						<Texture>vehicles/russian/R124_Object_279/Object_279_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000001 0.218086 0.030912</groupOrigin>
 			</primitiveGroup>

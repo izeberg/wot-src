@@ -1037,6 +1037,42 @@
 				<bank>red_fury/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>bb25_Jove</name>
+			<wwise_language>bloggers/BB25_Jove</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>bloggers/BB25_Jove/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>bb25_LeBwa</name>
+			<wwise_language>bloggers/BB25_LeBwa</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>bloggers/BB25_LeBwa/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>bb25_NearYou</name>
+			<wwise_language>bloggers/BB25_NearYou</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>bloggers/BB25_NearYou/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>bb25_Yusha</name>
+			<wwise_language>bloggers/BB25_Yusha</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>bloggers/BB25_Yusha/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

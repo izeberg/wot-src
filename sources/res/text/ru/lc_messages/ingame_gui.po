@@ -147,6 +147,9 @@ msgstr "<Имя союзника>, помоги!"
 msgid "chat_example/negative"
 msgstr "Никак нет!"
 
+msgid "chat_example/overheat_cant_shoot"
+msgstr "Орудие перегрето! Не могу стрелять еще <Время остывания> с."
+
 msgid "chat_example/positive"
 msgstr "Так точно!"
 
@@ -285,6 +288,9 @@ msgstr "%(target)s, помоги!"
 
 msgid "chat_shortcuts/negative"
 msgstr "Никак нет!"
+
+msgid "chat_shortcuts/overheat_cant_shoot"
+msgstr "Орудие перегрето! Не могу стрелять еще %(floatArg1)d с."
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s, так точно!"
@@ -968,6 +974,9 @@ msgstr "Стрельба невозможна: машина уничтожена
 
 msgid "player_errors/cant_switch/assault_spg/camera_can_not_spawn"
 msgstr "Невозможно перейти в прицел в данной точке"
+
+msgid "player_errors/cant_switch/change_shell/gun_overheated"
+msgstr "Орудие перегрето. Смена снарядов невозможна."
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Смена режима недоступна: двигатель выведен из строя."
@@ -2761,6 +2770,9 @@ msgstr "Урон снаряда: %(value)s ед."
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радиус поражения: %(value)s м"
+
+msgid "shells_kinds/params/flameMaxDistance"
+msgstr "Дальность огнеметания: %(value)s м"
 
 msgid "shells_kinds/params/piercingPower"
 msgstr "Средняя бронепробиваемость: %(value)s мм"

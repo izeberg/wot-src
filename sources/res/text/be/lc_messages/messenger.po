@@ -1979,10 +1979,15 @@ msgstr ""
 "Віншуем!\n"
 "За паспяховае выкананне асабістых баявых задач кампаніі «Другі фронт» вам надалі наступныя ўзнагароды"
 
-msgid "serviceChannelMessages/battleResults/personalMissions/both"
+msgid "serviceChannelMessages/battleResults/personalMissions/3"
 msgstr ""
-"Віншуем!\n"
-"За паспяховае выкананне асабістых баявых задач абедзвюх кампаній вам надалі наступныя ўзнагароды"
+"Поздравляем!\n"
+"За успешное выполнение личных боевых задач кампании «Новые горизонты» вам присвоены следующие награды"
+
+msgid "serviceChannelMessages/battleResults/personalMissions/multiple"
+msgstr ""
+"Поздравляем!\n"
+"За успешное выполнение личных боевых задач кампаний %(text)s вам присвоены следующие награды"
 
 msgid "serviceChannelMessages/battleResults/piggyBank"
 msgstr "У сховішча крэдытаў паступіла"
@@ -2918,7 +2923,7 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "Паглядзець"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
-msgstr "Открыто порталов: %(boxes)s"
+msgstr "Адкрыта парталаў: %(boxes)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/counter"
 msgstr "%(boxName)s (x%(count)d)"
@@ -2997,14 +3002,35 @@ msgstr ""
 msgid "serviceChannelMessages/multiplier"
 msgstr " (x%(count)s)"
 
+msgid "serviceChannelMessages/newYearMandarinsConvert/header"
+msgstr "Фінансавая аперацыя"
+
+msgid "serviceChannelMessages/newYearMandarinsConvert/text"
+msgstr ""
+"Обмен %(mandarinsCount)s шт. мандаринов успешно завершён.\n"
+"Получено жетонов: %(machineCount)s."
+
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "У Жаўнерню"
 
 msgid "serviceChannelMessages/notrecruitedTankman/removedTankmen"
 msgstr "Спісана танкістаў: %(count)s"
 
+msgid "serviceChannelMessages/offerTokenBonus/alternativeTitle"
+msgstr "награда на выбор"
+
 msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Пастаўкі з тылу"
+
+msgid ""
+"serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
+msgstr "За досрочное прохождение аттестации вам присвоены следующие награды"
+
+msgid ""
+"serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived"
+msgstr ""
+"Все награды, положенные за выполнение этого этапа, будут начислены "
+"автоматически после выпуска машины."
 
 msgid "serviceChannelMessages/personalReservesConverted"
 msgstr "Усе вашы асабістыя рэзервы канвертаваныя."
@@ -3589,6 +3615,9 @@ msgid "serviceChannelMessages/sysMsg/removeCustomizations"
 msgstr ""
 "З-за змены модуляў наступныя элементы выгляду машыны былі зняты з "
 "%(vehicle)s."
+
+msgid "serviceChannelMessages/sysMsg/titles/bobBattlesAvailable"
+msgstr "Бои Битвы блогеров доступны"
 
 msgid "serviceChannelMessages/sysMsg/titles/customization"
 msgstr "Змяненне выгляду машыны:"

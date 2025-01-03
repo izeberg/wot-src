@@ -7,6 +7,8 @@ package net.wg.gui.lobby.hangar.quests
    import flash.geom.Point;
    import flash.utils.Dictionary;
    import net.wg.data.Aliases;
+   import net.wg.data.constants.SoundManagerStates;
+   import net.wg.data.constants.SoundTypes;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.HANGAR_HEADER_QUESTS;
    import net.wg.gui.lobby.hangar.data.HeaderQuestGroupVO;
@@ -41,8 +43,6 @@ package net.wg.gui.lobby.hangar.quests
       private static const GROUP_ICON_SHIFT_Y:int = 37;
       
       private static const SHOW_CONTENT_DELAY_STEP_INDEX:int = 100;
-      
-      private static const LEFTSIDE_EXPAND_OFFSET_X:int = 20;
        
       
       private var _questsInformers:Vector.<IQuestInformerButton> = null;
@@ -101,6 +101,7 @@ package net.wg.gui.lobby.hangar.quests
          if(!this._isSingle && this._isAnimExpanded)
          {
             this._isAnimExpanded = false;
+            App.soundMgr.playControlsSnd(SoundManagerStates.SND_OUT,SoundTypes.HANGAR_FLAG_GROUP,null);
             this.onAnimQuests(this._questsInformers,false);
          }
       }
@@ -307,10 +308,6 @@ package net.wg.gui.lobby.hangar.quests
             else
             {
                _loc5_ = _loc6_ = -HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP;
-            }
-            if(!this._isRightSide)
-            {
-               _loc6_ += LEFTSIDE_EXPAND_OFFSET_X;
             }
          }
          else
@@ -572,10 +569,6 @@ package net.wg.gui.lobby.hangar.quests
          _loc1_ = this._questsInformers.length;
          if(this.isAnimExpanded)
          {
-            if(!this._isRightSide)
-            {
-               return _loc1_ * HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP - LEFTSIDE_EXPAND_OFFSET_X;
-            }
             return _loc1_ * HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP;
          }
          return (_loc1_ - 1) * HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_GROUP_STEP + HEADER_QUESTS_CONSTANTS.QUEST_BUTTONS_STEP;

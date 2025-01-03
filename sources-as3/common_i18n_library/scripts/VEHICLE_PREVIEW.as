@@ -45,6 +45,8 @@ package
       
       public static const HEADER_BACKBTN_DESCRLABEL_COLLECTIONS:String = "#vehicle_preview:header/backBtn/descrLabel/collections";
       
+      public static const HEADER_BACKBTN_DESCRLABEL_BOB:String = "#vehicle_preview:header/backBtn/descrLabel/bob";
+      
       public static const HEADER_TITLE:String = "#vehicle_preview:header/title";
       
       public static const HEADER_CLOSEBTN_LABEL:String = "#vehicle_preview:header/closeBtn/label";
@@ -60,6 +62,8 @@ package
       public static const BUYINGPANEL_ALERTLABEL:String = "#vehicle_preview:buyingPanel/alertLabel";
       
       public static const BUYINGPANEL_UNIQUEVEHICLELABEL:String = "#vehicle_preview:buyingPanel/uniqueVehicleLabel";
+      
+      public static const BUYINGPANEL_PMOPERATIONVEHICLELABEL:String = "#vehicle_preview:buyingPanel/pmOperationVehicleLabel";
       
       public static const BUYINGPANEL_AVAILABLEFORWOTPLUS:String = "#vehicle_preview:buyingPanel/availableForWotPlus";
       
@@ -129,8 +133,6 @@ package
       
       public static const BUYINGPANEL_BUYBTN_LABEL_RESTORE:String = "#vehicle_preview:buyingPanel/buyBtn/label/restore";
       
-      public static const BUYINGPANEL_BUYBTN_LABEL_RESTOREREQUESTED:String = "#vehicle_preview:buyingPanel/buyBtn/label/restoreRequested";
-      
       public static const BUYINGPANEL_BUYBTN_LABEL_RESEARCH:String = "#vehicle_preview:buyingPanel/buyBtn/label/research";
       
       public static const BUYINGPANEL_BUYBTN_LABEL_OBTAIN:String = "#vehicle_preview:buyingPanel/buyBtn/label/obtain";
@@ -142,8 +144,6 @@ package
       public static const BUYINGPANEL_NOTRESEARCHEDVEHICLEWARNING:String = "#vehicle_preview:buyingPanel/notResearchedVehicleWarning";
       
       public static const BUYINGPANEL_COLLECTIBLE_NOTRESEARCHEDVEHICLESWARNING:String = "#vehicle_preview:buyingPanel/collectible/notResearchedVehiclesWarning";
-      
-      public static const BUYINGPANEL_BUYBTN_LABEL_TOCALENDAR:String = "#vehicle_preview:buyingPanel/buyBtn/label/toCalendar";
       
       public static const BUYINGPANEL_COMPENSATION:String = "#vehicle_preview:buyingPanel/compensation";
       

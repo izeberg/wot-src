@@ -529,7 +529,7 @@ msgid "chat/chatContactsListOnly"
 msgstr "Прымаць паведамленні толькі са спіса кантактаў"
 
 msgid "chat/disableBattleChat"
-msgstr "Адключыць чат з хаўруснікамі"
+msgstr "Отключить чат"
 
 msgid "chat/enableStoreChannelsWindows"
 msgstr "Памятаць пазіцыю камеры і вокнаў каналаў"
@@ -2468,6 +2468,23 @@ msgid "tripleBuffered/description"
 msgstr ""
 "Змякчае рэзкія скачкі відарыса падчас змены кадраў (толькі пры ўключаным "
 "параметры «Вертыкальная сінхранізацыя»)."
+
+msgid "uiEffects"
+msgstr "Эффекты интерфейса"
+
+msgid "uiEffects/attention"
+msgstr ""
+"Включение этой настройки может\n"
+"привести к снижению производительности."
+
+msgid "uiEffects/body"
+msgstr ""
+"Данная настройка включает или отключает\n"
+"дополнительные визуальные эффекты\n"
+"интерфейса."
+
+msgid "uiEffects/header"
+msgstr "Эффекты интерфейса"
 
 msgid "vertSync"
 msgstr "Вертыкальная сінхранізацыя"

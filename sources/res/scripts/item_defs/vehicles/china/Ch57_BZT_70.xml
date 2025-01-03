@@ -1743,11 +1743,11 @@
 			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.22
+					0.25
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.22
+					0.25
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -1865,6 +1865,7 @@
 									<wheelName>W_L2</wheelName>
 									<wheelName>W_L1</wheelName>
 									<wheelName>W_L0</wheelName>
+									<isGroudGroup>true</isGroudGroup>
 									<groupRadius>
 										0.27462
 										<!--BW_String-->
@@ -1960,6 +1961,7 @@
 									<wheelName>W_R2</wheelName>
 									<wheelName>W_R1</wheelName>
 									<wheelName>W_R0</wheelName>
+									<isGroudGroup>true</isGroudGroup>
 									<groupRadius>
 										0.27462
 										<!--BW_String-->
@@ -2061,6 +2063,7 @@
 									<wheelName>W_L10</wheelName>
 									<wheelName>W_L9</wheelName>
 									<wheelName>W_L8</wheelName>
+									<isGroudGroup>true</isGroudGroup>
 									<groupRadius>
 										0.27462
 										<!--BW_String-->
@@ -2159,6 +2162,7 @@
 									<wheelName>W_R10</wheelName>
 									<wheelName>W_R9</wheelName>
 									<wheelName>W_R8</wheelName>
+									<isGroudGroup>true</isGroudGroup>
 									<groupRadius>
 										0.27462
 										<!--BW_String-->
@@ -2381,6 +2385,7 @@
 					</scrollProcessor>
 					<trackPairIdx>1</trackPairIdx>
 				</group>
+				<generalWheels>true</generalWheels>
 			</wheels>
 			<drivingWheels>WD_L0 WD_L1</drivingWheels>
 			<effects>
@@ -2515,9 +2520,8 @@
 				</trackPair>
 			</trackNodes>
 			<groundNodes>
-				<node>
-					<name>Track_L0</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
+				<group>
+					<template>Track_L</template>
 					<isLeft>true</isLeft>
 					<minOffset>
 						-0.1
@@ -2527,221 +2531,12 @@
 						0.3
 						<!--BW_String-->
 					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L1</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L2</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L3</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L4</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L5</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L6</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L7</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L8</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L9</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L10</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L11</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L12</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L13</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L14</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_L15</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>true</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R0</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
+					<startIndex>0</startIndex>
+					<count>16</count>
+					<affectedWheelsTemplate>W_L</affectedWheelsTemplate>
+				</group>
+				<group>
+					<template>Track_R</template>
 					<isLeft>false</isLeft>
 					<minOffset>
 						-0.1
@@ -2751,218 +2546,10 @@
 						0.3
 						<!--BW_String-->
 					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R1</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R2</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R3</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R4</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R5</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R6</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R7</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>0</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R8</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R9</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R10</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R11</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R12</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R13</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R14</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
-				<node>
-					<name>Track_R15</name>
-					<collisionSamplesCount>1</collisionSamplesCount>
-					<isLeft>false</isLeft>
-					<minOffset>
-						-0.1
-						<!--BW_String-->
-					</minOffset>
-					<maxOffset>
-						0.3
-						<!--BW_String-->
-					</maxOffset>
-					<trackPairIdx>1</trackPairIdx>
-				</node>
+					<startIndex>0</startIndex>
+					<count>16</count>
+					<affectedWheelsTemplate>W_R</affectedWheelsTemplate>
+				</group>
 			</groundNodes>
 			<splineDesc>
 				<trackPair>
@@ -5658,13 +5245,10 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>26</reloadTime>
-					<aimingTime>
-						2.8
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>3</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.15
+							0.18
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5717,19 +5301,6 @@
 						<slot>
 							<slotType>projectionDecal</slotType>
 							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>-0.000037 2.664573 1.432211</position>
-							<rotation>
-								0.457288 -0.000037 3.14153
-								<!--BW_String-->
-							</rotation>
-							<scale>3.051444 6.073806 3.051444</scale>
-							<showOn>4368</showOn>
-							<anchorShift>-0.315662</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
 							<tags>formfactor_rect1x2</tags>
 							<position>-0.000078 2.053531 1.924895</position>
 							<rotation>
@@ -6099,25 +5670,6 @@
 				<slot>
 					<slotType>projectionDecal</slotType>
 					<slotId>35010</slotId>
-					<tags>formfactor_square</tags>
-					<position>
-						-0.000049 2.35893 0.573408
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.355297 -0.000031 3.14153
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						2.07465 1.28692 2.07465
-						<!--BW_String-->
-					</scale>
-					<showOn>4352</showOn>
-					<anchorShift>-0.010989</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35011</slotId>
 					<tags>formfactor_rect1x2 direction_right_to_left</tags>
 					<position>-0.000018 2.484976 -0.688565</position>
 					<rotation>
@@ -6135,24 +5687,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35012</slotId>
-					<tags>formfactor_rect1x2</tags>
-					<position>-0.000055 2.284508 0.749695</position>
-					<rotation>0.443192 -0.000038 3.141523</rotation>
-					<scale>
-						1.666919 0.899854 1.66692
-						<!--BW_String-->
-					</scale>
-					<showOn>4352</showOn>
-					<clipAngle>0.525344</clipAngle>
-					<anchorShift>
-						0.07
-						<!--BW_String-->
-					</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35013</slotId>
+					<slotId>35011</slotId>
 					<tags>formfactor_rect1x2 direction_right_to_left</tags>
 					<position>-1.346784 1.881192 -0.346372</position>
 					<rotation>
@@ -6169,7 +5704,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35014</slotId>
+					<slotId>35012</slotId>
 					<tags>formfactor_rect1x3 direction_right_to_left</tags>
 					<position>-1.338922 1.897961 0.046765</position>
 					<rotation>1.094926 -1.421989 -3.007562</rotation>
@@ -6180,7 +5715,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35015</slotId>
+					<slotId>35013</slotId>
 					<tags>formfactor_rect1x4 direction_right_to_left</tags>
 					<position>-1.333387 1.907307 -0.397651</position>
 					<rotation>
@@ -6200,7 +5735,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35016</slotId>
+					<slotId>35014</slotId>
 					<tags>formfactor_rect1x6 direction_right_to_left</tags>
 					<position>-1.336356 1.901484 -0.397655</position>
 					<rotation>
@@ -6217,7 +5752,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35017</slotId>
+					<slotId>35015</slotId>
 					<tags>formfactor_rect1x2 direction_left_to_right</tags>
 					<position>
 						1.347 1.88119 -0.346372
@@ -6240,7 +5775,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35018</slotId>
+					<slotId>35016</slotId>
 					<tags>formfactor_rect1x3 direction_left_to_right</tags>
 					<position>
 						1.339 1.89796 0.046765
@@ -6260,7 +5795,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35019</slotId>
+					<slotId>35017</slotId>
 					<tags>formfactor_rect1x6 direction_left_to_right</tags>
 					<position>
 						1.336 1.90148 -0.397655
@@ -6280,7 +5815,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35020</slotId>
+					<slotId>35018</slotId>
 					<tags>formfactor_rect1x2</tags>
 					<position>
 						-0.000018 2.07058 -1.943115
@@ -6299,7 +5834,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35021</slotId>
+					<slotId>35019</slotId>
 					<tags>formfactor_rect1x3</tags>
 					<position>
 						0.000003 1.89077 -2.246748
@@ -6319,7 +5854,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35022</slotId>
+					<slotId>35020</slotId>
 					<tags>formfactor_rect1x4</tags>
 					<position>
 						0.000002 1.925249 -2.37206
@@ -6339,7 +5874,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35023</slotId>
+					<slotId>35021</slotId>
 					<tags>formfactor_rect1x6</tags>
 					<position>0.000002 1.946695 -2.365979</position>
 					<rotation>
@@ -6356,7 +5891,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35024</slotId>
+					<slotId>35022</slotId>
 					<tags>formfactor_rect1x2 direction_right_to_left</tags>
 					<position>
 						-1.51911 1.59027 -0.346673
@@ -6376,7 +5911,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35025</slotId>
+					<slotId>35023</slotId>
 					<tags>formfactor_rect1x2 direction_left_to_right</tags>
 					<position>
 						1.5191 1.59025 -0.346662
@@ -6396,7 +5931,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35026</slotId>
+					<slotId>35024</slotId>
 					<tags>formfactor_rect1x3</tags>
 					<position>
 						-0 2.480215 -1.898993
@@ -6419,7 +5954,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35027</slotId>
+					<slotId>35025</slotId>
 					<tags>formfactor_rect1x4</tags>
 					<position>0.000001 2.480131 -1.947198</position>
 					<rotation>
@@ -6439,7 +5974,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35028</slotId>
+					<slotId>35026</slotId>
 					<tags>formfactor_rect1x4 direction_left_to_right</tags>
 					<position>
 						1.333 1.90731 -0.397651
@@ -6462,7 +5997,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35029</slotId>
+					<slotId>35027</slotId>
 					<tags>formfactor_square direction_left_to_right</tags>
 					<position>
 						1.62664 1.32706 -0.041833
@@ -6485,7 +6020,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35030</slotId>
+					<slotId>35028</slotId>
 					<tags>formfactor_rect1x4 direction_right_to_left</tags>
 					<position>-0.000923 2.350198 -0.678882</position>
 					<rotation>
@@ -6503,7 +6038,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35031</slotId>
+					<slotId>35029</slotId>
 					<tags>formfactor_rect1x3 direction_right_to_left</tags>
 					<position>-0.000747 2.394499 -0.577932</position>
 					<rotation>
@@ -6521,7 +6056,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35032</slotId>
+					<slotId>35030</slotId>
 					<tags>formfactor_square safe right direction_left_to_right</tags>
 					<position>
 						1.14101 1.72522 0.881729
@@ -6539,7 +6074,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35033</slotId>
+					<slotId>35031</slotId>
 					<tags>formfactor_square safe left direction_right_to_left</tags>
 					<position>
 						-1.14102 1.72523 0.881721
@@ -6557,7 +6092,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35034</slotId>
+					<slotId>35032</slotId>
 					<tags>formfactor_rect1x2 safe left direction_right_to_left</tags>
 					<position>-1.302153 1.928339 1.095096</position>
 					<rotation>0.816762 -1.164871 3.132116</rotation>
@@ -6572,7 +6107,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35035</slotId>
+					<slotId>35033</slotId>
 					<tags>formfactor_rect1x2 safe right direction_left_to_right</tags>
 					<position>
 						1.302 1.92834 1.0951
@@ -6593,7 +6128,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35036</slotId>
+					<slotId>35034</slotId>
 					<tags>formfactor_rect1x2 mimic left direction_right_to_left</tags>
 					<position>
 						-1.371 1.9069 0.930405
@@ -6614,7 +6149,7 @@
 				</slot>
 				<slot>
 					<slotType>projectionDecal</slotType>
-					<slotId>35037</slotId>
+					<slotId>35035</slotId>
 					<tags>formfactor_rect1x2 mimic right direction_left_to_right</tags>
 					<position>1.370585 1.906902 0.930405</position>
 					<rotation>0.916473 1.185951 3.115587</rotation>

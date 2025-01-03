@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.756493 -0.815416 -3.451962</min>
+		<max>1.760728 0.657678 3.069965</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un06_M47_Romach/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

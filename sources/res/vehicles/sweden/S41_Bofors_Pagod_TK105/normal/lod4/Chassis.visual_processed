@@ -1386,10 +1386,14 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
+					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AM.dds</Texture>
@@ -1405,10 +1409,6 @@
 					<property>
 						normalMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_ANM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.362897 0.638412 -0.155005</groupOrigin>
@@ -1424,10 +1424,14 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
+					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AM.dds</Texture>
@@ -1443,10 +1447,6 @@
 					<property>
 						normalMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_ANM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.360554 0.638412 -0.155005</groupOrigin>

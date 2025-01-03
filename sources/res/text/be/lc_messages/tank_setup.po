@@ -306,7 +306,7 @@ msgstr "настаўленне"
 
 msgid "dialogs/confirm/item/demountPairModification"
 msgstr ""
-"Пры правядзенні гэтай парнай мадыфікацыі альтэрнатыўная будзе скасавана."
+"При проведении этой парной модернизации альтернативная будет отменена."
 
 msgid "dialogs/confirm/item/equipment"
 msgstr "рыштунак"
@@ -318,7 +318,7 @@ msgid "dialogs/confirm/item/optionalDevice"
 msgstr "абсталяванне"
 
 msgid "dialogs/confirm/item/postProgressionPairModification"
-msgstr "парную мадыфікацыю"
+msgstr "парную модернизацию"
 
 msgid "dialogs/confirm/items/battleAbility"
 msgstr "баявыя рэзервы"
@@ -1029,6 +1029,9 @@ msgstr ""
 "ад негатыўнага эфекту аглушэння\n"
 "экіпажа"
 
+msgid "kpi/bonus/negative/temperatureDamageFactor"
+msgstr "Модификатор среднего урона"
+
 msgid "kpi/bonus/negative/vehPenaltyForDamageEngineAndCombat"
 msgstr "ад штрафу за пашкоджаныя боеўкладку і рухавік"
 
@@ -1081,7 +1084,7 @@ msgid "kpi/bonus/negative/vehicleEnginePower"
 msgstr "ад магутнасці рухавіка"
 
 msgid "kpi/bonus/negative/vehicleFinalDispersion"
-msgstr "ад пачатковага памеру круга навядзення"
+msgstr "от размера круга сведения"
 
 msgid "kpi/bonus/negative/vehicleFireChance"
 msgstr "ад імавернасці ўзгарання рухавіка"
@@ -1262,6 +1265,9 @@ msgstr "да хуткасці гашэння пажару"
 msgid "kpi/bonus/positive/foliageMaskingFactor"
 msgstr "да эфекту маскіроўкі ад расліннасці"
 
+msgid "kpi/bonus/positive/limitsForGunBoost"
+msgstr "колькасць траплянняў, якія ўлічваюцца"
+
 msgid "kpi/bonus/positive/minTimeBetweenReloadBoost"
 msgstr "затрымка паўторнай актывацыі"
 
@@ -1273,11 +1279,26 @@ msgstr ""
 msgid "kpi/bonus/positive/radiomanHitChance"
 msgstr "да абароны радыстаў ад раненняў"
 
-msgid "kpi/bonus/positive/shotsLimitForGunBoost"
-msgstr "колькасць траплянняў, якія ўлічваюцца"
-
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "да негатыўнага эфекту аглушэння"
+
+msgid "kpi/bonus/positive/temperatureCoolingDelay"
+msgstr "Задержка охлаждения"
+
+msgid "kpi/bonus/positive/temperatureCoolingPerSec"
+msgstr "Скорость охлаждения"
+
+msgid "kpi/bonus/positive/temperatureDamageFactor"
+msgstr "Модификатор среднего урона"
+
+msgid "kpi/bonus/positive/temperatureHeatingPerSec"
+msgstr "Скорость нагревания"
+
+msgid "kpi/bonus/positive/temperatureMaxTemperature"
+msgstr "Максимальная температура стадии"
+
+msgid "kpi/bonus/positive/temperatureStatesCount"
+msgstr "Термические стадии орудия"
 
 msgid "kpi/bonus/positive/vehPenaltyForDamageEngineAndCombat"
 msgstr "да штрафу за пашкоджаныя боеўкладку і рухавік"
@@ -1440,8 +1461,11 @@ msgstr ""
 "да штрафу пры раненні танкіста з экіпажа,\n"
 "акрамя камандзіра"
 
-msgid "kpi/bonus/specValueTypes/vehicleGunAndGunClipCooldown"
+msgid "kpi/bonus/specValueTypes/limitsForGunBoost"
 msgstr "c"
+
+msgid "kpi/bonus/specValueTypes/vehicleGunAndGunClipCooldown"
+msgstr " "
 
 msgid "kpi/bonus/ttc/negative/crewHitChance"
 msgstr "ад аховы экіпажа ад раненняў"
@@ -1526,7 +1550,7 @@ msgid "kpi/bonus/ttc/negative/vehicleEnginePower"
 msgstr "ад магутнасці рухавіка"
 
 msgid "kpi/bonus/ttc/negative/vehicleFinalDispersion"
-msgstr "ад пачатковага памеру круга навядзення"
+msgstr "от размера круга сведения"
 
 msgid "kpi/bonus/ttc/negative/vehicleFireChance"
 msgstr "ад імавернасці ўзгарання рухавіка"
@@ -1814,14 +1838,14 @@ msgstr "c"
 msgid "kpi/bonus/valueTypes/default"
 msgstr "%"
 
-msgid "kpi/bonus/valueTypes/minTimeBetweenReloadBoost"
+msgid "kpi/bonus/valueTypes/limitsForGunBoost"
+msgstr " "
+
+msgid "kpi/bonus/valueTypes/limitsForGunBoostSpec"
 msgstr "c"
 
 msgid "kpi/bonus/valueTypes/radiomanActivityTimeAfterVehicleDestroy"
 msgstr "с"
-
-msgid "kpi/bonus/valueTypes/shotsLimitForGunBoost"
-msgstr " "
 
 msgid "kpi/bonus/valueTypes/vehicleBackwardMaxSpeed"
 msgstr "км/гадз"
@@ -1841,11 +1865,26 @@ msgstr "c"
 msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
-msgid "kpi/title/minTimeBetweenReloadBoost"
-msgstr "Затрымка паўторнай актывацыі"
+msgid "kpi/title/limitsForGunBoost"
+msgstr "Количество учитываемых попаданий (по количеству / по времени)"
 
-msgid "kpi/title/shotsLimitForGunBoost"
-msgstr "Колькасць траплянняў, якія ўлічваюцца"
+msgid "kpi/title/temperatureCoolingDelay"
+msgstr "Задержка охлаждения (с)"
+
+msgid "kpi/title/temperatureCoolingPerSec"
+msgstr "Скорость охлаждения (ед./с)"
+
+msgid "kpi/title/temperatureDamageFactor"
+msgstr "Модификатор среднего урона"
+
+msgid "kpi/title/temperatureHeatingPerSec"
+msgstr "Скорость нагревания (ед./с)"
+
+msgid "kpi/title/temperatureMaxTemperature"
+msgstr "Максимальная температура стадии (ед.)"
+
+msgid "kpi/title/temperatureStatesCount"
+msgstr "Термические стадии орудия"
 
 msgid "kpi/title/vehicleGunAndGunClipCooldown"
 msgstr "Бонус да перанабівання (поўнае/паміж)"

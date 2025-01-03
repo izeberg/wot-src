@@ -200,57 +200,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>medkitHelp</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/hangar_training/medicinekit/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/hangar_training/medicinekit/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>repairkitHelp</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/hangar_training/repair/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/hangar_training/repair/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>fireExtinguisherHelp</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/hangar_training/firefighting/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/hangar_training/firefighting/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>globalMapSummary</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -1102,10 +1051,26 @@
 							<item>
 								<name>isEnabled</name>
 								<type>bool</type>
-								<value>True</value>
+								<value>False</value>
 							</item>
 							<item>
 								https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/lbz20/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+					<item>
+						<name>pm3InfoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/personal-combat-missions/
 								<name>url</name>
 								<type>url</type>
 							</item>
@@ -1128,6 +1093,22 @@
 							</item>
 							<item>
 								https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/lbz20/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+					<item>
+						<name>pm3InfoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/personal-combat-missions/
 								<name>url</name>
 								<type>url</type>
 							</item>
@@ -1247,11 +1228,6 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/ny_category/ny_category)
-				<name>newYearOldCollectionRewardUrl</name>
-				<type>url</type>
-			</item>
-			<item>
 				$PARAMS(/recommended-packs)
 				<name>buyMoreGoldUrl</name>
 				<type>url</type>
@@ -1364,16 +1340,6 @@
 			<item>
 				$PARAMS(/open)
 				<name>splitUrl</name>
-				<type>url</type>
-			</item>
-			<item>
-				$PARAMS(/featured/featured/items/platform_subscription/preview)
-				<name>buyRenewableSubscription</name>
-				<type>url</type>
-			</item>
-			<item>
-				$PARAMS(/psa2021/psa2021)
-				<name>psaProducts</name>
 				<type>url</type>
 			</item>
 			<item>
@@ -1590,17 +1556,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>newYearInfo</name>
-		<type>dict</type>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/ny25video/
-				<name>baseURL</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>tournamentsURL</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -1636,23 +1591,6 @@
 			</item>
 			<item>
 				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>infoPageBootcamp</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/Bootcamp/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/Bootcamp/
 				<name>CT</name>
 				<type>url</type>
 			</item>
@@ -2204,38 +2142,35 @@
 		</value>
 	</setting>
 	<setting>
-		<name>lootBoxInfoPagesURL</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
+		<name>bobEvent</name>
+		<type>dict</type>
 		<value>
 			<item>
-				<name>default</name>
-				<type>dict</type>
-				<value>
-					<item>
-						https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/container_stages/
-						<name>ny_2025_big</name>
-						<type>url</type>
-					</item>
-				</value>
+				$PARAMS(skills/)
+				<name>skillsUrl</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(info/)
+				<name>info</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(registration/)
+				<name>registration</name>
+				<type>url</type>
 			</item>
 		</value>
 	</setting>
 	<setting>
-		<name>lootBoxShopURL</name>
+		<name>ParagonsInfoPageURL</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
+				https://webbrg.tanki.su/ru/promocontent/orbita-project/
 				<name>default</name>
-				<type>dict</type>
-				<value>
-					<item>
-						$PARAMS(/new_year_2025/new_year_2025)
-						<name>ny_2025_big</name>
-						<type>url</type>
-					</item>
-				</value>
+				<type>url</type>
 			</item>
 		</value>
 	</setting>

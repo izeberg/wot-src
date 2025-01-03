@@ -299,6 +299,16 @@ package net.wg.gui.lobby.vehicleCompare.nodes
          return false;
       }
       
+      public function isResetParagons() : Boolean
+      {
+         return false;
+      }
+      
+      public function isLockedByParagons() : Boolean
+      {
+         return false;
+      }
+      
       public function cleanUp() : void
       {
       }

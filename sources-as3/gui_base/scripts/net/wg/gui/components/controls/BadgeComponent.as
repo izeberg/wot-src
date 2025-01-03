@@ -49,7 +49,7 @@ package net.wg.gui.components.controls
          }
          if(param1.isAtlasSource)
          {
-            App.atlasMgr.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,param1.icon,graphics,"",true);
+            App.atlasMgr.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,param1.icon,graphics);
          }
          else
          {

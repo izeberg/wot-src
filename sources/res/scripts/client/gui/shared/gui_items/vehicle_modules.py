@@ -8,7 +8,7 @@ from gui.impl.gen import R
 from gui.shared.items_parameters.params_cache import g_paramsCache
 from gui.shared.utils.functions import replaceHyphenToUnderscore
 from gui.shared.gui_items.fitting_item import FittingItem, ICONS_MASK
-from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN
+from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTOSHOOT_FLAME
 from gui.shared.money import Currency
 import nations
 from items import vehicles as veh_core
@@ -161,6 +161,9 @@ class VehicleTurret(VehicleModule):
             return (
              installPossible, reason)
 
+    def hasThermalVision(self):
+        return self.descriptor.thermalVision is not None
+
     def getInstalledVehicles(self, vehicles):
         result = set()
         for vehicle in vehicles:
@@ -172,6 +175,10 @@ class VehicleTurret(VehicleModule):
     @property
     def icon(self):
         return RES_ICONS.MAPS_ICONS_MODULES_TOWER
+
+    def getExtraIconInfo(self, vehDescr=None):
+        if self.hasThermalVision():
+            return backport.image(R.images.gui.maps.icons.modules.thermalVisionIcon())
 
     def getBonusIcon(self, size='small'):
         if size == 'small':
@@ -220,6 +227,10 @@ class VehicleGun(VehicleModule):
 
     def isFlameGun(self):
         return self._defaultAmmo[0].type == SHELL_TYPES.FLAME
+
+    def isAutoShootFlameGun(self, vehicleDescr=None):
+        typeToCheck = GUN_AUTOSHOOT_FLAME if vehicleDescr is not None else GUN_CAN_BE_AUTOSHOOT_FLAME
+        return self.getReloadingType(vehicleDescr) == typeToCheck
 
     def getInstalledVehicles(self, vehicles):
         result = set()

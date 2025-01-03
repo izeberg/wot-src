@@ -24,6 +24,12 @@ package
       public static const SHOPSALES_EVENTFINISHFORMAT:String = "#event:shopSales/eventFinishFormat";
       
       public static const SHOPSALES_TITLE:String = "#event:shopSales/title";
+      
+      public static const UNIVERSALFLAG_UNAVALIBLEHEADER:String = "#event:universalFlag/unavalibleHeader";
+      
+      public static const UNIVERSALFLAG_UNAVALIBLETEXT:String = "#event:universalFlag/unavalibleText";
+      
+      public static const UNIVERSALFLAG_TIMERFORMAT:String = "#event:universalFlag/timerFormat";
        
       
       public function EVENT()

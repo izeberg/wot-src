@@ -37,6 +37,8 @@ package net.wg.gui.components.questProgress.data
       
       private var _isHeaderHasProgress:Boolean = true;
       
+      private var _isMainOnly:Boolean = true;
+      
       public function QuestProgressVO(param1:Object = null)
       {
          super(param1);
@@ -86,6 +88,7 @@ package net.wg.gui.components.questProgress.data
                _loc8_ = new HeaderProgressDataVO(_loc6_[_loc9_]);
                this._headerConditions.push(_loc8_);
                this._isHeaderHasProgress = this._isHeaderHasProgress && _loc8_.progressType != QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_NONE;
+               this._isMainOnly = this._isMainOnly && _loc8_.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE;
                _loc9_++;
             }
             return false;
@@ -218,6 +221,11 @@ package net.wg.gui.components.questProgress.data
       public function get isHeaderHasProgress() : Boolean
       {
          return this._isHeaderHasProgress;
+      }
+      
+      public function get isMainOnly() : Boolean
+      {
+         return this._isMainOnly;
       }
    }
 }

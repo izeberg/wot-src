@@ -65,6 +65,10 @@
 						normalMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/Module_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.095697 0.966508 -0.886568</groupOrigin>
 			</primitiveGroup>

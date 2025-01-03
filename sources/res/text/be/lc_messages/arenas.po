@@ -523,6 +523,18 @@ msgstr ""
 msgid "502_kamchatka/name"
 msgstr "Камчатка"
 
+msgid "503_kaliningrad/description"
+msgstr ""
+"Относительно симметричная локация, реконструирующая исторический центр "
+"города, раскинувшийся по обоим берегам реки Преголи. На карте расположено "
+"множество знаковых и узнаваемых объектов, которые сохраняют и передают "
+"атмосферу этого чудесного города. На карте достаточно объездов, укрытий и "
+"перепадов высот, что способствует разнообразной игре и поиску нестандартных "
+"решений, делая каждый бой по-своему уникальным."
+
+msgid "503_kaliningrad/name"
+msgstr "Калининград"
+
 msgid "59_asia_great_wall/description"
 msgstr ""
 "На мапе шмат горных дарог і каньёнаў, таму важную ролю граюць выведка і "
@@ -597,14 +609,14 @@ msgstr ""
 msgid "99_poland/name"
 msgstr "Студзянкі"
 
-msgid "h00_armory_yard_ep3.xml/description"
+msgid "h00_armory_yard/description"
 msgstr "?empty?"
 
-msgid "h00_armory_yard_ep3.xml/name"
+msgid "h00_armory_yard/name"
 msgstr "?empty?"
 
 msgid "qa_content_01/description"
-msgstr "QA_Content. Карта для проверки LODs и др. проверок"
+msgstr "QA_Content. Мапа для праверкі LODs і іншых праверак"
 
 msgid "qa_content_01/name"
 msgstr "QA_Content_01"
@@ -629,6 +641,12 @@ msgstr ""
 
 msgid "type/assault2/name"
 msgstr "Атака/Абарона"
+
+msgid "type/bob/description"
+msgstr "Баявая задача: захапіць базу або знішчыць усю тэхніку супраціўніка."
+
+msgid "type/bob/name"
+msgstr "Битва Блогеров"
 
 msgid "type/bootcamp/description0"
 msgstr "Каб завяршыць заданне, кіруйцеся падказкамі"
@@ -667,8 +685,8 @@ msgstr ""
 
 msgid "type/comp7_1/short_description"
 msgstr ""
-"Вы в команде обороны. Задача: защищать обе базы до окончания боя или "
-"уничтожить всю технику противника."
+"Задача: защищать обе базы до окончания боя или уничтожить всю технику "
+"противника."
 
 msgid "type/comp7_1/timer_message"
 msgstr ""
@@ -684,8 +702,8 @@ msgstr ""
 
 msgid "type/comp7_2/short_description"
 msgstr ""
-"Вы в команде атаки. Задача: захватить одну из баз противника \n"
-"до окончания боя или уничтожить всю вражескую технику."
+"Вы ў камандзе атакі. Задача: захапіць адну з баз праціўніка \n"
+"да заканчэння бою або знішчыць усю варожую тэхніку."
 
 msgid "type/comp7_2/timer_message"
 msgstr ""

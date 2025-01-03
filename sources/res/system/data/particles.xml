@@ -270,6 +270,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_bright_flash_HE_4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flame_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flame_small_aep.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flame_tank_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flash_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flash_AP_1_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flash_AP_3_1.vfx</fn_effect_bin>
@@ -478,9 +479,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_explose_SCA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_explose_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_explose_SFA_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_rbn.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_rbn_alt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_small_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_small_aep.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_small_aep_ALT.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_ground_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_ground_SFA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_hc_1.vfx</fn_effect_bin>
@@ -1368,8 +1369,8 @@
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SC_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SCA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SF_4.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SFA.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_2.eff</fn_effect_bin>
@@ -1448,6 +1449,7 @@
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SFA_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/hit_flame_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/hit_flame_tank_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/oilHit_AP_1.eff</fn_effect_bin>
@@ -1604,6 +1606,8 @@
 		<fn_effect_bin>particles/shells_eff/trace_apfsds.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_assault_spg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_auto.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn_alt.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/trace_flame_small_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HC_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HC_2.eff</fn_effect_bin>
@@ -2836,6 +2840,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_bright_flash_HE_4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flame_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flame_small_aep.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flame_tank_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flash_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flash_AP_1_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flash_AP_3_1.vfx</fn_effect_bin>
@@ -3048,9 +3053,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_explose_SCA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_explose_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_explose_SFA_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_rbn.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_rbn_alt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_small_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_small_aep.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_small_aep_ALT.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_ground_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_ground_SFA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_hc_1.vfx</fn_effect_bin>
@@ -4069,8 +4074,8 @@
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SC_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SCA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SF_4.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SFA.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_2.eff</fn_effect_bin>
@@ -4149,6 +4154,7 @@
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SFA_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/hit_flame_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/hit_flame_tank_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/oilHit_AP_1.eff</fn_effect_bin>
@@ -4305,6 +4311,8 @@
 		<fn_effect_bin>particles/shells_eff/trace_apfsds.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_assault_spg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_auto.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn_alt.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/trace_flame_small_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HC_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/trace_HC_2.eff</fn_effect_bin>

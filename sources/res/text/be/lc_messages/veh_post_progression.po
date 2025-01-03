@@ -27,33 +27,31 @@ msgid "destroyPairModificationsDialog/cancelButton"
 msgstr "Не!"
 
 msgid "destroyPairModificationsDialog/destroyAll/description/credits"
-msgstr ""
-"Пасля скасавання мадыфікацый іх можна будзе нанова правесці за крэдыты."
+msgstr "После отмены модернизаций их можно будет заново провести за кредиты."
 
 msgid "destroyPairModificationsDialog/destroyAll/description/default"
-msgstr "Пасля скасавання мадыфікацый іх можна будзе правесці нанова."
+msgstr "После отмены модернизаций их можно будет провести заново."
 
 msgid "destroyPairModificationsDialog/destroyAll/title"
-msgstr "Скасаваць бясплатна ўсе парныя мадыфікацыі?"
+msgstr "Отменить бесплатно все парные модернизации?"
 
 msgid "destroyPairModificationsDialog/destroyOne/description/credits"
-msgstr ""
-"Пасля скасавання мадыфікацыі яе можна будзе нанова правесці за крэдыты."
+msgstr "После отмены модернизации её можно будет заново провести за кредиты."
 
 msgid "destroyPairModificationsDialog/destroyOne/description/default"
-msgstr "Пасля скасавання мадыфікацыі яе можна будзе правесці нанова."
+msgstr "После отмены модернизации её можно будет провести заново."
 
 msgid "destroyPairModificationsDialog/destroyOne/title"
-msgstr "Скасаваць бясплатна парную мадыфікацыю «%(modification)s»?"
+msgstr "Отменить бесплатно парную модернизацию «%(modification)s»?"
 
 msgid "hint/CompareModificationsPanel"
-msgstr "ПРАВЕСЦІ МАДЫФІКАЦЫІ"
+msgstr "ПРОВЕСТИ МОДЕРНИЗАЦИИ"
 
 msgid "hint/CompareSpecializationButton"
 msgstr "ВЫБРАЦЬ КАТЭГОРЫЮ ЯЧЭЙКІ"
 
 msgid "hint/entryPoint"
-msgstr "ДАСТУПНЫЯ МАДЫФІКАЦЫІ"
+msgstr "ДОСТУПНЫ МОДЕРНИЗАЦИИ"
 
 msgid "hint/switchEquipment/auxiliaryLoadout"
 msgstr ""
@@ -75,15 +73,15 @@ msgid "postProgressionIntro/title"
 msgstr "ПАЛЯВАЯ МАДЭРНІЗАЦЫЯ"
 
 msgid "postProgressionLevelTooltipView/feature"
-msgstr "Асаблівая мадыфікацыя %(level):%(featureName)"
+msgstr "Особая модернизация %(level): %(featureName)"
 
 msgid "postProgressionLevelTooltipView/lockedDescription"
 msgstr ""
-"Націсніце, каб убачыць змены ТТХ машыны пасля атрымання ўзроўню і вылучыць "
-"мадыфікацыі ва ўжытку."
+"Нажмите, чтобы увидеть изменения ТТХ машины после получения уровня и "
+"выделить применяемые модернизации."
 
 msgid "postProgressionLevelTooltipView/pairModification"
-msgstr "Парная мадыфікацыя %(level)"
+msgstr "Парная модернизация %(level)"
 
 msgid "postProgressionLevelTooltipView/title"
 msgstr "Узровень Палявой мадэрнізацыі"
@@ -128,22 +126,22 @@ msgid "researchStepsDialog/description/feature/shellsConsumablesSwitch"
 msgstr "«Неабходны рыштунак»"
 
 msgid "researchStepsDialog/description/features/double"
-msgstr "доступ да асаблівых мадыфікацый {name1} і {name2}"
+msgstr "доступ к особым модернизациям {name1} и {name2}"
 
 msgid "researchStepsDialog/description/features/multiple"
-msgstr "доступ да асаблівых мадыфікацый {names}"
+msgstr "доступ к особым модернизациям {names}"
 
 msgid "researchStepsDialog/description/features/single"
-msgstr "доступ да асаблівай мадыфікацыі {name}"
+msgstr "доступ к особой модернизации {name}"
 
 msgid "researchStepsDialog/description/features/triple"
-msgstr "доступы да асаблівых мадыфікацый {name1}, {name2} і {name3}"
+msgstr "доступ к особым модернизациям {name1}, {name2} и {name3}"
 
 msgid "researchStepsDialog/description/pairModification/multiple"
-msgstr "доступ да парных мадыфікацый {numbers} узроўню"
+msgstr "доступ к парным модернизациям {numbers} уровня"
 
 msgid "researchStepsDialog/description/pairModification/single"
-msgstr "доступ да парнай мадыфікацыі {number} узроўню"
+msgstr "доступ к парной модернизации {number} уровня"
 
 msgid "researchStepsDialog/description/separator"
 msgstr ", "
@@ -152,10 +150,10 @@ msgid "researchStepsDialog/description/text"
 msgstr "Будзе атрымана: {unlockedItems}."
 
 msgid "researchStepsDialog/title/multiple"
-msgstr "Павысіць узровень базавай мадыфікацыі да {level}?"
+msgstr "Повысить уровень базовой модернизации до {level}?"
 
 msgid "researchStepsDialog/title/single"
-msgstr "Павысіць узровень базавай мадыфікацыі?"
+msgstr "Повысить уровень базовой модернизации?"
 
 msgid "researchStepsDialog/totalPrice"
 msgstr "На аплату:"
@@ -276,30 +274,30 @@ msgstr "АЛЬТЭРНАТЫЎНАЯ КАМПЛЕКТАЦЫЯ МАШЫНЫ"
 
 msgid "slides/baseModifications/description"
 msgstr ""
-"%(accent)Базавыя мадыфікацыі%(/accent) даюць бонус да %(accent)адной з "
-"характарыстык %(/accent)машыны і адкрываюць доступ да парных мадыфікацый. "
-"Гэтыя мадыфікацыі ўсталёўваюцца на тэхніку бясплатна, а для іх даследавання "
-"неабходны баявы або вольны досвед."
+"%(accent)Базовые модернизации%(/accent) дают бонус к %(accent)одной из "
+"характеристик%(/accent) машины и открывают доступ к парным модернизациям. "
+"Эти модернизации устанавливаются на технику бесплатно, а для их исследования"
+" необходим боевой или свободный опыт."
 
 msgid "slides/baseModifications/title"
-msgstr "БАЗАВЫЯ МАДЫФІКАЦЫІ"
+msgstr "БАЗОВЫЕ МОДЕРНИЗАЦИИ"
 
 msgid "slides/extraModification/description"
 msgstr ""
-"%(accent)Асаблівыя мадыфікацый%(/accent) адкрываюць доступ да альтэрнатыўнай"
-" камплектацыі машыны і даюць магчымасць %(accent)прызначыць "
-"катэгорыю%(/accent) другому слоту для абсталявання (для тэхнікі VIII–XІ "
-"узроўню). Змяніць выбраную катэгорыю слота можна за крэдыты."
+"%(accent)Особые модернизации%(/accent) открывают доступ к альтернативной "
+"комплектации машины и дают возможность %(accent)назначить "
+"категорию%(/accent) второму слоту для оборудования (для техники VIII–XI "
+"уровней). Изменить выбранную категорию слота можно за кредиты."
 
 msgid "slides/extraModification/title"
-msgstr "АСАБЛІВЫЯ МАДЫФІКАЦЫІ: РОЛЕВАЯ ЯЧЭЙКА"
+msgstr "ОСОБЫЕ МОДЕРНИЗАЦИИ: РОЛЕВОЙ СЛОТ"
 
 msgid "slides/fieldModernization/description"
 msgstr ""
-"Палявая мадэрнізацыя — гэта магчымасць зрабіць больш тонкую ролевую наладку "
-"машыны і %(accent)змяніць яе ТТХ%(/accent) з дапамогай розных "
-"%(accent)мадыфікацый%(/accent). Доступ да кожнай наступнай мадыфікацыі "
-"адкрываецца пасля вывучэння папярэдняй."
+"Полевая модернизация — это возможность совершить более тонкую ролевую "
+"настройку машины и %(accent)изменить её ТТХ%(/accent) с помощью различных "
+"%(accent)модернизаций%(/accent). Доступ к каждой следующей модернизации "
+"открывается после изучения предыдущей."
 
 msgid "slides/fieldModernization/infoTitle"
 msgstr "ПАЛЯВАЯ МАДЭРНІЗАЦЫЯ"
@@ -309,24 +307,24 @@ msgstr "ЗМЕНА ТТХ ТЭХНІКІ"
 
 msgid "slides/modificationTree/description"
 msgstr ""
-"Дрэва мадыфікацый даступнае для даследаванай і калекцыйнай %(accent)тэхнікі "
-"VI–XІ узроўняў%(/accent), якая атрымала %(accent)«Элітны» статус%(/accent). "
-"Для акцыйнай, падарункавай, узнагароднай і прэміум тэхнікі доступ да "
-"мадыфікацый адкрываецца адразу пасля куплі."
+"Дерево модернизаций доступно для исследуемой и коллекционной "
+"%(accent)техники VI–XI уровней%(/accent), получившей %(accent)«Элитный» "
+"статус%(/accent). Для акционной, подарочной, наградной и премиум техники "
+"доступ к модернизациям открывается сразу после покупки."
 
 msgid "slides/modificationTree/infoTitle"
-msgstr "ДАСЛЕДАВАННЕ МАДЫФІКАЦЫЙ"
+msgstr "ИССЛЕДОВАНИЕ МОДЕРНИЗАЦИЙ"
 
 msgid "slides/modificationTree/title"
-msgstr "ДАСЛЕДАВАННЕ МАДЫФІКАЦЫЙ"
+msgstr "ИССЛЕДОВАНИЕ МОДЕРНИЗАЦИЙ"
 
 msgid "slides/pairedModifications/description"
 msgstr ""
-"%(accent)Парныя мадыфікацыі паляпшаюць адну%(/accent) з характарыстык машыны за кошт %(accent)пагаршэння іншай%(/accent). Для даследавання мадыфікацый неабходны баявы або вольны досвед, а для іх усталявання — крэдыты. %(accent)Скасоўваць (здымаць з машыны)%(/accent) мадыфікацыі можна %(accent)бясплатна%(/accent).\n"
-"Пры продажы тэхнікі базавыя і асаблівыя мадыфікацыі захоўваюцца, аднак парныя скасоўваюцца."
+"%(accent)Парные модернизации улучшают одну%(/accent) из характеристик машины за счёт %(accent)ухудшения другой%(/accent). Для исследования модернизаций необходим боевой или свободный опыт, а для их установки — кредиты. %(accent)Отменять (снимать с машины)%(/accent) модернизации можно %(accent)бесплатно%(/accent).\n"
+"При продаже техники базовые и особые модернизации сохраняются, однако парные отменяются."
 
 msgid "slides/pairedModifications/title"
-msgstr "ПАРНЫЯ МАДЫФІКАЦЫІ"
+msgstr "ПАРНЫЕ МОДЕРНИЗАЦИИ"
 
 msgid "slides/requiredEquipment/description"
 msgstr ""
@@ -340,18 +338,18 @@ msgstr "НЕАБХОДНЫ РЫШТУНАК"
 
 msgid "slides/roleInBattle/description"
 msgstr ""
-"У адрозненне ад тыпу роля машыны больш адлюстроўвае аптымальную "
-"%(accent)тактыку вядзення бою%(/accent), а таксама вызначае, якое "
-"%(accent)дрэва мадыфікацый%(/accent) будзе даступнае для канкрэтнай машыны."
+"В отличие от типа, роль машины более точно отражает оптимальную "
+"%(accent)тактику ведения боя%(/accent), а также определяет, какое "
+"%(accent)дерево модернизаций%(/accent) будет доступно для конкретной машины."
 
 msgid "slides/roleInBattle/title"
 msgstr "РОЛЯ МАШЫНЫ Ў БАІ"
 
 msgid "slides/specialModifications/description/1/text"
 msgstr ""
-"Мадыфікацыі змяняюць характарыстыкі машыны, адкрываюць %(accent)доступ да "
-"альтэрнатыўнай камплектацыі%(/accent) і дазваляюць прызначыць катэгорыю "
-"%(accent)другому слоту%(/accent) для абсталявання."
+"Модернизации изменяют характеристики машины, открывают %(accent)доступ к "
+"альтернативной комплектации%(/accent) и позволяют назначить категорию "
+"%(accent)второму слоту%(/accent) для оборудования."
 
 msgid "slides/specialModifications/description/2/text"
 msgstr ""
@@ -364,7 +362,7 @@ msgstr ""
 "для абсталявання. Непасрэдна ўплывае на эфектыўнасць машыны ў баі."
 
 msgid "slides/specialModifications/title"
-msgstr "МАДЫФІКАЦЫІ, АЛЬТЭРНАТЫЎНАЯ КАМПЛЕКТАЦЫЯ, КАТЭГОРЫЯ ЯЧЭЙКІ"
+msgstr "МОДЕРНИЗАЦИИ, АЛЬТЕРНАТИВНАЯ КОМПЛЕКТАЦИЯ, КАТЕГОРИЯ СЛОТА"
 
 msgid "tooltips/entry_point/description"
 msgstr "Магчымасць дадатковай змены характарыстык машыны."
@@ -391,10 +389,10 @@ msgid "tooltips/feature/disabled/description"
 msgstr "Выбачайце за нязручнасці. Паспрабуйце пазней."
 
 msgid "tooltips/feature/disabled/title"
-msgstr "Асаблівыя мадыфікацыі недаступныя"
+msgstr "Особые модернизации недоступны"
 
 msgid "tooltips/feature/subTitle"
-msgstr "Асаблівая мадыфікацыя %(level)"
+msgstr "Особая модернизация %(level)"
 
 msgid "tooltips/notEnoughCredits/description"
 msgstr ""
@@ -408,7 +406,7 @@ msgid "tooltips/pairModification/demount"
 msgstr "Дэмантаж"
 
 msgid "tooltips/pairModification/level"
-msgstr "Парная мадыфікацыя %(level)"
+msgstr "Парная модернизация %(level)"
 
 msgid "tooltips/pairModification/modifiers"
 msgstr "Змена характарыстык машыны:"
@@ -424,28 +422,29 @@ msgstr "Усталяванне"
 
 msgid "tooltips/pairModification/notInstalledFooter"
 msgstr ""
-"Націсніце, каб убачыць змены ТТХ машыны пасля ўсталявання гэтай мадыфікацыі."
+"Нажмите, чтобы увидеть изменения ТТХ машины после установки этой "
+"модернизации."
 
 msgid "tooltips/pairModification/status/received/description"
 msgstr ""
-"Пасля скасавання мадыфікацыі вы зможаце за крэдыты ўсталяваць любую "
-"мадыфікацыю з гэтай пары."
+"После отмены модернизации вы сможете за кредиты установить любую "
+"модернизацию из этой пары."
 
 msgid "tooltips/pairModification/status/restricted/description"
 msgstr ""
-"Правядзенне гэтай мадыфікацыі аўтаматычна скасуе ўжо ўсталяваную з гэтай "
-"пары."
+"Проведение данной модернизации автоматически отменит уже установленную из "
+"этой пары."
 
 msgid "tooltips/pairModification/status/restricted/title"
-msgstr "Усталявана іншая мадыфікацыя"
+msgstr "Установлена другая модернизация"
 
 msgid "tooltips/pairModification/status/unavailableLocked/description"
 msgstr ""
-"Дайдзіце да %(level) узроўню Палявой мадэрнізацыі, каб атрымаць доступ да "
-"гэтай мадыфікацыі"
+"Дойдите до %(level) уровня Полевой модернизации, чтобы получить доступ к "
+"этой модернизации"
 
 msgid "tooltips/pairModification/status/unavailableLocked/title"
-msgstr "Мадыфікацыя недаступная"
+msgstr "Модернизация недоступна"
 
 msgid "tooltips/priceBlock/free"
 msgstr "Бясплатна"
@@ -466,7 +465,7 @@ msgid "vehPostProgressionCmpView/compareControl/button/label/reset"
 msgstr "Скінуць"
 
 msgid "vehPostProgressionCmpView/title"
-msgstr "Мадыфікацыі %(title)s"
+msgstr "Модернизации %(title)s"
 
 msgid "vehPostProgressionView/about"
 msgstr "ПРА ПАЛЯВУЮ МАДЭРНІЗАЦЫЮ"
@@ -478,7 +477,7 @@ msgid "vehPostProgressionView/button/demountAllPairs"
 msgstr "Знішчыць усе пары"
 
 msgid "vehPostProgressionView/button/demountAllPairs/tooltip/body"
-msgstr "Націсніце, каб знішчыць усе мадыфікацыі ва ўсіх парах."
+msgstr "Нажмите, чтобы уничтожить все модернизации во всех парах."
 
 msgid "vehPostProgressionView/button/demountAllPairs/tooltip/header"
 msgstr "Знішчыць"
@@ -561,7 +560,7 @@ msgstr "Пракат машыны завершаны."
 
 msgid ""
 "vehPostProgressionView/grid/pairModification/discardButton/tooltip/body"
-msgstr "Націсніце, каб знішчыць мадыфікацыю ў гэтай пары."
+msgstr "Нажмите, чтобы уничтожить модернизацию в этой паре."
 
 msgid ""
 "vehPostProgressionView/grid/pairModification/discardButton/tooltip/header"
@@ -619,16 +618,16 @@ msgstr "Паляпшэнне ТТХ"
 
 msgid ""
 "vehPostProgressionView/purchasePreview/summaryFeatureItem/label/multiple"
-msgstr "Асаблівыя мадыфікацыі"
+msgstr "Особые модернизации"
 
 msgid "vehPostProgressionView/purchasePreview/summaryFeatureItem/label/single"
-msgstr "Асаблівая мадыфікацыя {level}"
+msgstr "Особая модернизация {level}"
 
 msgid "vehPostProgressionView/purchasePreview/summaryPairItem/label/multiple"
-msgstr "Парныя мадыфікацыі"
+msgstr "Парные модернизации"
 
 msgid "vehPostProgressionView/purchasePreview/summaryPairItem/label/single"
-msgstr "Парная мадыфікацыя {level}"
+msgstr "Парная модернизация {level}"
 
 msgid "vehPostProgressionView/purchasePreview/unavailableContent/button/label"
 msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"
@@ -658,8 +657,8 @@ msgstr "Палявая мадэрнізацыя недаступная: машы
 msgid ""
 "vehPostProgressionView/purchasePreview/unavailableContent/label/unavailablePurchase"
 msgstr ""
-"Павышэнне ўзроўню Палявой мадэрнізацыі і даследаванне мадыфікацый магчымае "
-"пры наяўнасці машыны ў Гаражы."
+"Повышение уровня Полевой модернизации и исследование модернизаций возможно "
+"при наличии машины в Ангаре."
 
 msgid ""
 "vehPostProgressionView/purchasePreview/unavailableContent/label/unavailableRent"

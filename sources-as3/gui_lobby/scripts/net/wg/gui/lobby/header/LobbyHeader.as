@@ -81,7 +81,7 @@ package net.wg.gui.lobby.header
       
       private static const SPARKS_OFFSET_Y:int = -10;
       
-      private static const OPTIMIZE_OFFSET:int = 10;
+      private static const OPTIMIZE_OFFSET:int = -2;
       
       private static const BG_OVERLAY_ONLY:uint = 1;
       
@@ -89,16 +89,12 @@ package net.wg.gui.lobby.header
       
       private static const ONLINE_COUNTER_ONLY:uint = 4;
       
-      private static const NY_WIDGET_Y_OFFSET:int = -2;
-      
-      private static const INV_NY_WIDGET_ITEMS:String = "invMenuItems";
+      private static const RESIZE_BG_ALPHA:Number = 0.8;
        
       
+      public var fightButtonBg:TutorialClip = null;
+      
       public var centerBg:TutorialClip = null;
-      
-      public var mainMenuNYGlow:Sprite = null;
-      
-      public var nyBtnGlow:Sprite = null;
       
       public var centerMenuBg:TutorialClip = null;
       
@@ -140,14 +136,6 @@ package net.wg.gui.lobby.header
       
       private var _tooltipMgr:ITooltipMgr;
       
-      private var _nyWidget:NYWidgetUI = null;
-      
-      private var _nyWidgetVisible:Boolean = false;
-      
-      private var _isShowBattleBtnGlow:Boolean = false;
-      
-      private var _isShowMainMenuGlow:Boolean = false;
-      
       public function LobbyHeader()
       {
          this._tooltipMgr = App.toolTipMgr;
@@ -167,7 +155,7 @@ package net.wg.gui.lobby.header
          }
          var _loc1_:Rectangle = this.resizeBg.getBounds(App.stage);
          _loc1_.width = App.appWidth;
-         _loc1_.height -= OPTIMIZE_OFFSET;
+         _loc1_.height += OPTIMIZE_OFFSET;
          return new <Rectangle>[_loc1_];
       }
       
@@ -175,18 +163,16 @@ package net.wg.gui.lobby.header
       {
          super.configUI();
          constraints = new Constraints(this,ConstrainMode.REFLOW);
+         constraints.addElement(this.fightButtonBg.name,this.fightButtonBg,Constraints.CENTER_H);
          constraints.addElement(this.centerBg.name,this.centerBg,Constraints.CENTER_H);
          constraints.addElement(this.centerMenuBg.name,this.centerMenuBg,Constraints.CENTER_H);
-         constraints.addElement(this.mainMenuNYGlow.name,this.mainMenuNYGlow,Constraints.CENTER_H);
-         constraints.addElement(this.nyBtnGlow.name,this.nyBtnGlow,Constraints.CENTER_H);
          constraints.addElement(this.resizeBg.name,this.resizeBg,Constraints.LEFT | Constraints.RIGHT | Constraints.TOP);
          constraints.addElement(this.fightBtn.name,this.fightBtn,Constraints.CENTER_H);
          constraints.addElement(this.mainMenuButtonBar.name,this.mainMenuButtonBar,Constraints.CENTER_H);
          constraints.addElement(this.mainMenuGradient.name,this.mainMenuGradient,Constraints.CENTER_H);
+         this.fightButtonBg.mouseChildren = this.fightButtonBg.mouseEnabled = false;
          this.centerBg.mouseChildren = this.centerBg.mouseEnabled = false;
          this.centerMenuBg.mouseChildren = this.centerMenuBg.mouseEnabled = false;
-         this.mainMenuNYGlow.mouseChildren = this.mainMenuNYGlow.mouseEnabled = false;
-         this.nyBtnGlow.mouseChildren = this.nyBtnGlow.mouseEnabled = false;
          this.mainMenuGradient.mouseChildren = this.mainMenuGradient.mouseEnabled = false;
          this.hitArea = this.resizeBg;
          this.updateSize();
@@ -205,23 +191,6 @@ package net.wg.gui.lobby.header
       override protected function draw() : void
       {
          super.draw();
-         if(isInvalid(INV_NY_WIDGET_ITEMS))
-         {
-            this.nyBtnGlow.visible = this._isShowBattleBtnGlow;
-            this.mainMenuNYGlow.visible = this._isShowMainMenuGlow;
-            if(this._nyWidgetVisible && isDAAPIInited)
-            {
-               if(this._nyWidget == null)
-               {
-                  this.addNYWidget();
-               }
-            }
-            else if(this._nyWidget != null)
-            {
-               this.removeNYWidget();
-            }
-            invalidate(InvalidationType.SIZE);
-         }
          if(isInvalid(InvalidationType.SIZE))
          {
             constraints.update(width,height);
@@ -275,6 +244,8 @@ package net.wg.gui.lobby.header
          this.mainMenuGradient.dispose();
          this.mainMenuGradient = null;
          this.resizeBg = null;
+         this.fightButtonBg.dispose();
+         this.fightButtonBg = null;
          this.centerBg.dispose();
          this.centerBg = null;
          this.centerMenuBg.dispose();
@@ -412,6 +383,7 @@ package net.wg.gui.lobby.header
          this._actualEnabledVal = !param1;
          this.fightBtn.enabled = !this._isInCoolDown ? Boolean(this._actualEnabledVal) : Boolean(!this._isInCoolDown);
          this.fightBtn.validateNow();
+         this.fightButtonBg.visible = this.fightBtn.enabled;
       }
       
       public function as_doDeselectHeaderButton(param1:String) : void
@@ -480,7 +452,7 @@ package net.wg.gui.lobby.header
       {
          this._isInCoolDown = true;
          this._scheduler.cancelTask(this.stopReadyCoolDown);
-         this.fightBtn.enabled = false;
+         this.fightBtn.enabled = this.fightButtonBg.visible = false;
          this._scheduler.scheduleTask(this.stopReadyCoolDown,param1 * 1000);
       }
       
@@ -624,6 +596,11 @@ package net.wg.gui.lobby.header
          }
       }
       
+      public function as_updateUiEffectsState(param1:Boolean) : void
+      {
+         this.resizeBg.alpha = !!param1 ? Number(RESIZE_BG_ALPHA) : Number(1);
+      }
+      
       public function as_updateBattleType(param1:String, param2:String, param3:Boolean, param4:String, param5:String, param6:String, param7:Boolean, param8:Boolean, param9:Boolean, param10:Boolean) : void
       {
          var _loc11_:HBC_BattleTypeVo = HBC_BattleTypeVo(this._headerButtonsHelper.getContentDataById(HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR));
@@ -634,10 +611,10 @@ package net.wg.gui.lobby.header
             _loc11_.battleTypeID = param6;
             _loc11_.tooltip = param4;
             _loc11_.tooltipType = param5;
-            _loc11_.eventBgEnabled = param7 && !this.nyBtnGlow.visible;
+            _loc11_.eventBgEnabled = param7;
             _loc11_.showLegacySelector = param9;
             _loc11_.hasNew = param10;
-            if(param8 && !this.nyBtnGlow.visible)
+            if(param8)
             {
                if(!this.sparks)
                {
@@ -647,24 +624,16 @@ package net.wg.gui.lobby.header
             }
             if(this.sparks)
             {
-               this.sparks.visible = param8 && !this.nyBtnGlow.visible;
+               this.sparks.visible = param8;
             }
             this._headerButtonsHelper.invalidateDataById(HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR);
             this.as_doDisableHeaderButton(HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR,param3);
          }
       }
       
-      public function as_updateNYVisibility(param1:Boolean, param2:Boolean, param3:Boolean) : void
+      public function as_updateOnlineCounter(param1:String, param2:String, param3:Boolean) : void
       {
-         this._isShowBattleBtnGlow = param1;
-         this._isShowMainMenuGlow = param2;
-         this._nyWidgetVisible = param3;
-         invalidate(INV_NY_WIDGET_ITEMS);
-      }
-      
-      public function as_updateOnlineCounter(param1:String, param2:String, param3:String, param4:Boolean) : void
-      {
-         this.onlineCounter.updateCount(param1,param2,param3,param4);
+         this.onlineCounter.updateCount(param1,param2,param3);
       }
       
       public function as_updatePingStatus(param1:int, param2:Boolean) : void
@@ -750,17 +719,12 @@ package net.wg.gui.lobby.header
             this.sparks.y = this.fightBtn.y + SPARKS_OFFSET_Y;
          }
          movePlatoonPopoverS(this.getSquadButtonMiddleXPosition(this._headerButtonsHelper.searchButtonById(HeaderButtonsHelper.ITEM_ID_SQUAD)));
-         if(this._nyWidgetVisible && this._nyWidget)
-         {
-            this._nyWidget.x = this.mainMenuNYGlow.x + (this.mainMenuNYGlow.width - this._nyWidget.width >> 1) >> 0;
-            this._nyWidget.y = this.mainMenuNYGlow.y + (this.mainMenuNYGlow.height >> 1) + NY_WIDGET_Y_OFFSET >> 0;
-         }
          dispatchEvent(new LifeCycleEvent(LifeCycleEvent.ON_GRAPHICS_RECTANGLES_UPDATE));
       }
       
       private function stopReadyCoolDown() : void
       {
-         this.fightBtn.enabled = this._actualEnabledVal;
+         this.fightBtn.enabled = this.fightButtonBg.visible = this._actualEnabledVal;
          this._isInCoolDown = false;
       }
       
@@ -932,20 +896,6 @@ package net.wg.gui.lobby.header
          param1.stopImmediatePropagation();
          this.unregisterPR2WidgetBtn();
          registerFlashComponentS(IDAAPIModule(param1.target),HANGAR_ALIASES.PERSONAL_RESERVES_WIDGET_INJECT);
-      }
-      
-      private function addNYWidget() : void
-      {
-         this._nyWidget = App.instance.utils.classFactory.getComponent(HANGAR_ALIASES.NY_MAIN_WIDGET_UI,NYWidgetUI);
-         addChildAt(this._nyWidget,getChildIndex(this.mainMenuNYGlow) - 1);
-         registerFlashComponentS(this._nyWidget,HANGAR_ALIASES.NY_MAIN_WIDGET_UI);
-      }
-      
-      private function removeNYWidget() : void
-      {
-         removeChild(this._nyWidget);
-         unregisterFlashComponentS(HANGAR_ALIASES.NY_MAIN_WIDGET_UI);
-         this._nyWidget = null;
       }
    }
 }

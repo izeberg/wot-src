@@ -6,7 +6,7 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function as_updateTeamHealthValues(param1:String, param2:String, param3:int, param4:String, param5:int) : void;
+      function as_updateHP(param1:String, param2:String, param3:Number, param4:String, param5:Number) : void;
       
       function as_updateViewSetting(param1:int) : void;
    }

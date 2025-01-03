@@ -13,11 +13,11 @@ package net.wg.gui.components.controls
    {
        
       
-      public var btn:BlackButton = null;
+      public var btn:SoundButtonEx = null;
       
-      private var _rendererData:SimpleRendererVO = null;
+      protected var _rendererData:SimpleRendererVO = null;
       
-      private var _index:uint = 0;
+      protected var _index:uint = 0;
       
       private var _selected:Boolean = false;
       
@@ -31,7 +31,7 @@ package net.wg.gui.components.controls
       override protected function configUI() : void
       {
          super.configUI();
-         this.btn.toggleEnable = true;
+         this.enableButtonToggle();
          this.btn.addEventListener(ButtonEvent.CLICK,this.onBtnClickHandler);
       }
       
@@ -43,7 +43,7 @@ package net.wg.gui.components.controls
             if(this._rendererData != null)
             {
                this.btn.visible = true;
-               this.btn.iconSource = this._rendererData.value;
+               this.updateButtonIcon();
                if(this._updateSelectedFromData)
                {
                   this.btn.selected = this._rendererData.selected;
@@ -65,6 +65,16 @@ package net.wg.gui.components.controls
          this.btn = null;
          this._rendererData = null;
          super.onDispose();
+      }
+      
+      protected function enableButtonToggle() : void
+      {
+         BlackButton(this.btn).toggleEnable = true;
+      }
+      
+      protected function updateButtonIcon() : void
+      {
+         BlackButton(this.btn).iconSource = this._rendererData.value;
       }
       
       public function getData() : Object
@@ -136,7 +146,7 @@ package net.wg.gui.components.controls
          this._selected = param1;
       }
       
-      private function onBtnClickHandler(param1:ButtonEvent) : void
+      protected function onBtnClickHandler(param1:ButtonEvent) : void
       {
          this.selectable = !this.selectable;
          dispatchEvent(new RendererEvent(RendererEvent.ITEM_CLICK,this._index,true));

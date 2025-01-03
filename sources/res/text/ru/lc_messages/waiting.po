@@ -23,6 +23,9 @@ msgstr "Начинаем охоту..."
 msgid "blueprints/convertFragments"
 msgstr "Создание фрагментов..."
 
+msgid "bob/claimReward"
+msgstr "Получение награды..."
+
 msgid "browser/init"
 msgstr "Загрузка содержимого..."
 
@@ -114,6 +117,9 @@ msgid "download/battlePass"
 msgstr "Синхронизация данных игрока..."
 
 msgid "download/blueprints"
+msgstr "Синхронизация данных игрока..."
+
+msgid "download/bob"
 msgstr "Синхронизация данных игрока..."
 
 msgid "download/discounts"
@@ -343,6 +349,12 @@ msgstr "Подключение..."
 
 msgid "moduleUpgrade"
 msgstr "Наладка оборудования..."
+
+msgid "paragons/loadSelector"
+msgstr "Синхронизация доступной техники..."
+
+msgid "paragons/selectReward"
+msgstr "Отправляем технику в Ангар..."
 
 msgid "prebattle/assign"
 msgstr "Перемещение..."

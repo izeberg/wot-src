@@ -25,6 +25,8 @@ package net.wg.data.constants.generated
       
       public static const VERSUS_AI_TANK_CAROUSEL:String = "versusAITankCarousel";
       
+      public static const BOB_TANK_CAROUSEL:String = "bobTankCarousel";
+      
       public static const AMMUNITION_PANEL:String = "ammunitionPanel";
       
       public static const RESEARCH_PANEL:String = "researchPanel";
@@ -47,6 +49,8 @@ package net.wg.data.constants.generated
       
       public static const COMP7_PRIME_TIME_ALIAS:String = "comp7PrimeTime";
       
+      public static const BOB_PRIME_TIME:String = "rankedPrimeTime.swf";
+      
       public static const COMP7_PUNISHMENT_DIALOG:String = "comp7PunishmentDialog";
       
       public static const COMP7_ENTRY_POINT:String = "Comp7EntryPoint";
@@ -64,8 +68,6 @@ package net.wg.data.constants.generated
       public static const ARMORY_YARD_VEH_POST_PROGRESSION:String = "armoryYardVehPostProgression";
       
       public static const EARLY_ACCESS_SECONDARY_ENTRY_POINT:String = "EarlyAccessSecondaryEntryPoint";
-      
-      public static const NY_QUEST_SECONDARY_ENTRY_POINT:String = "NYQuestSecondaryEntryPoint";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
       
@@ -89,8 +91,6 @@ package net.wg.data.constants.generated
       
       public static const VEH_PARAM_RENDERER_HIGHLIGHT_MIXED:String = "mixed";
       
-      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
-      
       public static const PROGRESSIVE_REWARD_WIDGET:String = "progressiveRewardWdgt";
       
       public static const DAILY_QUEST_WIDGET:String = "dqWidget";
@@ -110,6 +110,8 @@ package net.wg.data.constants.generated
       public static const BATTLE_MATTERS_ENTRY_POINT:String = "battleMattersEntryPoint";
       
       public static const COLLECTIVE_GOAL_ENTRY_POINT:String = "collectiveGoalEntryPoint";
+      
+      public static const UNIVERSAL_FLAG_ENTRY_POINT:String = "universalFlagEntryPoint";
       
       public static const COMP7_WIDGET:String = "comp7Widget";
       
@@ -170,6 +172,14 @@ package net.wg.data.constants.generated
       public static const COLLECTION_ENTRY_POINT:String = "CollectionEntryPoint";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
+      
+      public static const BOB_ENTRY_POINT:String = "BobEntryPoint";
+      
+      public static const BOB_HANGAR_WIDGET:String = "BobHangarWidget";
+      
+      public static const BOB_MODIFIERS_PANEL:String = "bobModifiersPanel";
+      
+      public static const BOB_VEHICLE_PARAMETERS:String = "bobVehicleParameters";
        
       
       public function HANGAR_ALIASES()
