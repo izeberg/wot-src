@@ -24441,6 +24441,8 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_171:String = "../maps/icons/library/badges/24x24/badge_171.png";
       
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_172:String = "../maps/icons/library/badges/24x24/badge_172.png";
+      
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_173:String = "../maps/icons/library/badges/24x24/badge_173.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_174:String = "../maps/icons/library/badges/24x24/badge_174.png";

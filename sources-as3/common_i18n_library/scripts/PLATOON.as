@@ -217,6 +217,8 @@ package
       
       public static const MEMBERS_FOOTER_COMP7LIMITATIONS:String = "#platoon:members/footer/comp7Limitations";
       
+      public static const MEMBERS_FOOTER_COMP7INVITE:String = "#platoon:members/footer/comp7Invite";
+      
       public static const MEMBERS_FOOTER_VEHICLES_DIFFERENTLEVELS:String = "#platoon:members/footer/vehicles/differentLevels";
       
       public static const MEMBERS_CHAT_CHATNAME:String = "#platoon:members/chat/chatName";

@@ -37,7 +37,8 @@ class CloseConfirmatorsHelper(object):
          VIEW_ALIAS.LOBBY_RESEARCH,
          VIEW_ALIAS.WIKI_VIEW,
          VIEW_ALIAS.BROWSER_VIEW,
-         VIEW_ALIAS.VEHICLE_PREVIEW]
+         VIEW_ALIAS.VEHICLE_PREVIEW,
+         VIEW_ALIAS.PERSONAL_MISSIONS_PAGE]
 
     def getRestrictedGuiImplViews(self):
         return [

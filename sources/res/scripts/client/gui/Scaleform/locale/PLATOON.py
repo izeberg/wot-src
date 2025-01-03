@@ -119,6 +119,7 @@ class PLATOON(object):
     MEMBERS_FOOTER_AT_SPG_FULL = '#platoon:members/footer/AT_SPG_Full'
     MEMBERS_FOOTER_COMP7TOPPLAYER = '#platoon:members/footer/comp7TopPlayer'
     MEMBERS_FOOTER_COMP7LIMITATIONS = '#platoon:members/footer/comp7Limitations'
+    MEMBERS_FOOTER_COMP7INVITE = '#platoon:members/footer/comp7Invite'
     MEMBERS_FOOTER_VEHICLES_DIFFERENTLEVELS = '#platoon:members/footer/vehicles/differentLevels'
     MEMBERS_CHAT_CHATNAME = '#platoon:members/chat/chatName'
     MEMBERS_CHAT_SENDMESSAGE_HEADER = '#platoon:members/chat/sendMessage/header'
