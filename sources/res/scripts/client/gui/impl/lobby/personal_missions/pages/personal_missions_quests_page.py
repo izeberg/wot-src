@@ -7,14 +7,17 @@ from gui.impl.gen.view_models.views.lobby.personal_missions.pages.pm3_quests_lin
 from gui.impl.gen.view_models.views.lobby.personal_missions.pages.pm3_quests_page_tab_model import Pm3QuestsPageTabModel, TabState
 from gui.impl.gen.view_models.views.lobby.personal_missions.pages.pm3_quests_view_model import Pm3QuestsViewModel, OperationState
 from gui.server_events.event_items import PersonalMission
+from gui.server_events.events_dispatcher import showPersonalMissionsOperationsMap
 from gui.shared.event_dispatcher import showHangar
 from helpers import dependency
+from personal_missions import PM_BRANCH
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IPersonalMissionsController
-from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsVehicleView
+from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsVehicleView, SERVER_SETTINGS_KEYS
 from frameworks.wulf import Array
 from constants import MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from CurrentVehicle import g_currentVehicle
+from skeletons.gui.lobby_context import ILobbyContext
 QuestLineTypeIndexes = {0: QuestLineType.HIT, 
    1: QuestLineType.KILLS, 
    2: QuestLineType.ASSIST, 
@@ -29,6 +32,7 @@ class PersonalMissionQuestsPage(PageSubModelPresenter):
                  '__currentOperationId', '__backFromQuest')
     __personalMissionsCtrl = dependency.descriptor(IPersonalMissionsController)
     __settingsCore = dependency.descriptor(ISettingsCore)
+    __lobbyContext = dependency.descriptor(ILobbyContext)
 
     def __init__(self, viewModel, parentView):
         super(PersonalMissionQuestsPage, self).__init__(viewModel, parentView)
@@ -72,7 +76,9 @@ class PersonalMissionQuestsPage(PageSubModelPresenter):
          (
           self.viewModel.backToOperation, self.__backToOperation),
          (
-          self.viewModel.openVehicleViewWindow, self.__openVehicleViewWindow))
+          self.viewModel.openVehicleViewWindow, self.__openVehicleViewWindow),
+         (
+          self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onSettingsChange))
 
     def getTabOperationState(self, quests):
         if not self.__operation.isUnlocked():
@@ -108,6 +114,18 @@ class PersonalMissionQuestsPage(PageSubModelPresenter):
         if quest.isInProgress():
             return CardState.INPROGRESS
         return CardState.AVAILABLE
+
+    def __onSettingsChange(self, diff):
+        if not any(key in SERVER_SETTINGS_KEYS for key in diff.iterkeys()):
+            return
+        if not self.__lobbyContext.getServerSettings().isPersonalMissionsEnabled(PM_BRANCH.PERSONAL_MISSION_3):
+            showHangar()
+            return
+        operation = self.__personalMissionsCtrl.getOperationById(self.__currentOperationId)
+        if operation.isDisabled():
+            showPersonalMissionsOperationsMap(PM_BRANCH.PERSONAL_MISSION_3)
+            return
+        self.__updateData()
 
     def __updateData(self, isSwitched=False):
         ctrl = self.__personalMissionsCtrl

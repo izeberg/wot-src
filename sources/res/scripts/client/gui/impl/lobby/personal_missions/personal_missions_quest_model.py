@@ -99,7 +99,7 @@ class QuestModelParser(object):
         descriptionName = ('{}_description_{}').format(generalQuestId, questName)
         titleResId = R.strings.personal_missions_details.dyn(titleName)()
         configs = quest.get('config', {})
-        paramsObj = configs.get('params', {})
+        paramsObj = configs.get('params', {}).copy()
         paramsObj['goal'] = configs.get('goal', configs.get('totalGoal', 0) / configs.get('uniqueGoal', 1))
         questDescription = quest.get('description', {})
         if isinstance(questDescription, PMConstants.AverageDescription):
@@ -147,11 +147,11 @@ class QuestModelParser(object):
         questConfig = questsConfigs[taskName]
         config = questConfig['config']
         battlesLimit = config.get('battlesLimit', 0)
-        if 'battlesSeries' in taskName and battlesLimit > 0:
+        description = questConfig.get('description', None)
+        if isinstance(description, PMConstants.HeaderDescription) and description.displayType == PMConstants.DISPLAY_TYPE.BIATHLON:
             self.__addProgressesForBattlesSeriesWithLimit(progressionModel, battlesLimit, questProgress, taskName, isDone)
             return
         else:
-            description = questConfig.get('description', None)
             if 'battlesSeries' in taskName and isinstance(description, PMConstants.HeaderDescription) and description.displayType == PMConstants.DISPLAY_TYPE.SERIES:
                 self.__addProgressesForBattlesSeriesWithDisplayTypeSeries(progressionModel, questConfig, questProgress, taskName, isDone)
                 return
@@ -162,10 +162,12 @@ class QuestModelParser(object):
                 self.__addProgressesForKillsDiversity(progressionModel, questConfig, questProgress, taskName, isDone)
                 return
             valueTo = config.get('goal', 0)
-            if isinstance(description, PMConstants.AverageDescription):
-                valueTo //= questsConfigs[description.counterID]['config'].get('goal', 1)
-            prevValues = self.__getPrevProgressQuest(self.generalQuestID, taskName)
             currValue = valueTo if isDone else min(questProgress.get('value', 0), valueTo)
+            if isinstance(description, PMConstants.AverageDescription):
+                counter = questsConfigs[description.counterID]['config'].get('goal', 1)
+                valueTo //= counter
+                currValue //= counter
+            prevValues = self.__getPrevProgressQuest(self.generalQuestID, taskName)
             self.__addQuestItemPartProgressModel(progressionModel, valueTo, prevValues, currValue, False)
             self.__saveProgressQuest(self.generalQuestID, taskName, currValue)
             return

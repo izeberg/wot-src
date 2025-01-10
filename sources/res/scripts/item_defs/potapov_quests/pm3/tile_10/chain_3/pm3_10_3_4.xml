@@ -21,7 +21,6 @@ filter = globals().get(&apos;BattleResults&apos;)
 
 MAIN_PROGRESS_ID = &apos;damage&apos;
 MAIN_PROGRESS_HITS = &apos;hitsReceived&apos;
-MAIN_PROGRESS_ALIVE = &apos;alive&apos;
 MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
 
 def onInit(eventType, eventData, quest, processor):
@@ -33,17 +32,11 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-
-    myHealth = brfilter.getMyHP()
-    questProgress.getProgress(MAIN_PROGRESS_ID).setGoal(myHealth * questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;vehicleHealthFactor&quot;))
-    directHitsReceived = eventData[&apos;avatarResults&apos;][&apos;directHitsReceived&apos;]
-
     if brfilter.alive():
-        damageRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;])
-        directHitsReceivedRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_HITS, directHitsReceived)
-        if damageRes and directHitsReceivedRes:
-            questProgress.setComplete(MAIN_PROGRESS_ALIVE)
-            questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
+        if questProgress.increaseUntilComplete(MAIN_PROGRESS_HITS, eventData[&apos;avatarResults&apos;][&apos;directHitsReceived&apos;]):
+            myHealth = brfilter.getMyHP()
+            questProgress.getProgress(MAIN_PROGRESS_ID).setGoal(myHealth * questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;vehicleHealthFactor&quot;))
+            questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;])
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

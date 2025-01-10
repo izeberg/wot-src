@@ -206,6 +206,8 @@ package net.wg.data.constants.generated
       public static const PROGRESS_DASHED_DASH_STATE_FAILED:String = "failed";
       
       public static const PROGRESS_DASHED_DASH_STATE_CURRENT:String = "current";
+      
+      public static const DEFAULT_GROUP_ID:int = 1;
        
       
       public function QUEST_PROGRESS_BASE()

@@ -349,6 +349,7 @@ class PersonalMissions(object):
     INTRO_SEEN = 'personalMissionsIntroSeen'
     PREV_COMPLETED_QUESTS = 'prevCompletedQuests'
     CURR_QUESTS_STATEMENT = 'currentQuestStatement'
+    OPERATIONS_VIDEO_REWARDS_STATUS = 'operationsVideoRewardsStatus'
 
 
 class Paragons(object):
@@ -1083,7 +1084,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                           QUEST_DELTAS_PROGRESS: dict(), 
                                           QUEST_DELTAS_TOKENS_PROGRESS: dict()}}, 
                   'checkBoxConfirmator': {'questsConfirmDialogShow': True, 
-                                          'questsConfirmDialogShowPM2': True}, 
+                                          'questsConfirmDialogShowPM2': True, 
+                                          'questsConfirmDialogShowPM3': True}, 
                   DOG_TAGS: {'lastVisitedDogTagsTabIdx': None, 
                              'onboardingEnabled': True, 
                              'seenComps': set()}, 
@@ -1508,7 +1510,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                        EarlyAccess.ALL_TOKENS_RECEIVED: False, 
                                        EarlyAccess.PREV_COMPLETED_QUESTS: {}}, 
    PersonalMissions.PERSONAL_MISSIONS_SETTINGS: {PersonalMissions.INTRO_SEEN: False, 
-                                                 PersonalMissions.PREV_COMPLETED_QUESTS: {}, PersonalMissions.CURR_QUESTS_STATEMENT: {}}, 
+                                                 PersonalMissions.PREV_COMPLETED_QUESTS: {}, PersonalMissions.CURR_QUESTS_STATEMENT: {}, PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS: {}}, 
    Paragons.PARAGONS_SETTINGS: {Paragons.INTRO_SEEN: False, 
                                 Paragons.NEED_TO_SHOW_ANIMATION_FOR_PARAGONS_UNLOCK_IDS: set(), 
                                 Paragons.NEED_TO_SHOW_ANIMATION_FOR_PARAGONS_RESET_BRANCH: False, 

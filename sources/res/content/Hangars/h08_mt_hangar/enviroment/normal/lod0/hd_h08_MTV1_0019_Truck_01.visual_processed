@@ -21,7 +21,7 @@
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_glass.fx</fx>
 					<materialKind>112</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						dirtAlbedoMap
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0019_Truck_01_AM.dds</Texture>

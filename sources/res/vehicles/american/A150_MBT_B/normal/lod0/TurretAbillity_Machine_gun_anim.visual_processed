@@ -138,6 +138,10 @@
 						normalMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.597625 0.891368 -0.637088</groupOrigin>
 			</primitiveGroup>
@@ -171,6 +175,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.180476 0.445845 -0.914311</groupOrigin>
@@ -206,6 +214,10 @@
 						normalMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.518258 0.386584 -0.941140</groupOrigin>
 			</primitiveGroup>
@@ -239,6 +251,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.917812 0.299935 -1.513679</groupOrigin>

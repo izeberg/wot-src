@@ -6,11 +6,11 @@ from itertools import chain, ifilter
 import ArenaType, BigWorld, gui.awards.event_dispatcher as award_events
 from frameworks.wulf import Array
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_rewards_view_model import CompletedQuestsType
-from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsVideoRewardView, showPersonalMissionsRewardsView
+from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsVideoRewardView, showPersonalMissionsRewardsView, showOperationAdditionRewardsView
 from gui.shared.account_settings_helper import AccountSettingsHelper
 import personal_missions, wg_async
 from PlayerEvents import g_playerEvents
-from account_helpers.AccountSettings import AccountSettings, RANKED_CURRENT_AWARDS_BUBBLE_YEAR_REACHED, RANKED_YEAR_POSITION, SPEAKERS_DEVICE
+from account_helpers.AccountSettings import AccountSettings, RANKED_CURRENT_AWARDS_BUBBLE_YEAR_REACHED, RANKED_YEAR_POSITION, SPEAKERS_DEVICE, PersonalMissions
 from account_helpers.settings_core.settings_constants import SOUND
 from adisp import adisp_process
 from battle_pass_common import BattlePassRewardReason, get3DStyleProgressToken
@@ -1893,9 +1893,10 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
                 viewType = self.__getCompletedQuestsType(completedQuestUniqueIDs, quest)
                 self.__postponedAwards[quest.getID()] = {'viewType': viewType}
 
-        nextQuest = next(iter(self.__postponedAwards))
+        nextQuest = first(self.__postponedAwards.iterkeys())
         if not self.__openedAwardScreen:
             showPersonalMissionsRewardsView(nextQuest, viewType=self.__postponedAwards[nextQuest]['viewType'])
+            self.__postponedAwards.pop(nextQuest, '')
             self.__openedAwardScreen = True
 
     @staticmethod
@@ -1944,17 +1945,28 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
         return
 
     def __onRewardsViewClose(self, **kwargs):
-        questId = kwargs.get('questId', '')
-        if self.__postponedAwards.pop(questId, ''):
-            nextQuest = next(iter(self.__postponedAwards), 0)
-            if nextQuest > 0:
-                showPersonalMissionsRewardsView(nextQuest, viewType=self.__postponedAwards[nextQuest]['viewType'])
-            else:
-                self.__openedAwardScreen = False
-        if self.__completedOperationId is not None:
-            showPersonalMissionsVideoRewardView(self.__completedOperationId)
+        nextQuest = first(self.__postponedAwards.iterkeys())
+        if nextQuest is not None:
+            showPersonalMissionsRewardsView(nextQuest, viewType=self.__postponedAwards[nextQuest]['viewType'])
+            self.__postponedAwards.pop(nextQuest, '')
+        else:
+            self.__openedAwardScreen = False
+        if self.__completedOperationId is None:
+            return
+        else:
+            settings = AccountSettings.getPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS)
+            completedOperationId = self.__completedOperationId
             self.__completedOperationId = None
-        return
+            if settings.get(completedOperationId, False):
+                operation = self.__pm3Controller.getOperationById(completedOperationId)
+                if operation is not None and operation.isFullCompleted():
+                    showOperationAdditionRewardsView(completedOperationId)
+                return
+            settings.setdefault(completedOperationId, False)
+            settings[completedOperationId] = True
+            AccountSettings.setPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS, settings)
+            showPersonalMissionsVideoRewardView(completedOperationId)
+            return
 
 
 class BobPersonalRewardHandler(ServiceChannelHandler):

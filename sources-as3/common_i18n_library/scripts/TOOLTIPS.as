@@ -6585,6 +6585,8 @@ package
       
       public static const BATTLEPASSOFFER_TITLE_NEW_DEVICE_MI_GIFT:String = "#tooltips:battlePassOffer/title/new_device_mi_gift";
       
+      public static const BATTLEPASSOFFER_TITLE_NEW_DEVICE_PM3_GIFT:String = "#tooltips:battlePassOffer/title/new_device_pm3_gift";
+      
       public static const BATTLEPASSOFFER_FOOTER_NEW_DEVICE_MI_GIFT:String = "#tooltips:battlePassOffer/footer/new_device_mi_gift";
       
       public static const BATTLEPASSOFFER_TITLE_BLUEPRINT_GIFT:String = "#tooltips:battlePassOffer/title/blueprint_gift";

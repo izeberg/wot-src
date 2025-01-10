@@ -34,10 +34,10 @@ def onFinishBattle(eventType, eventData, quest, processor):
     brfilter = filter.BattleResultsFilter(eventData)
     topByExp = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;xp&apos;]
     topByExpRes = topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_EXP).getParam(&quot;desiredPosition&quot;)
-    myHealth = brfilter.getMyHP()
-    questProgress.getProgress(MAIN_PROGRESS_ID).setGoal(myHealth * questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;vehicleHealthFactor&quot;))
 
     if topByExpRes:
+        myHealth = brfilter.getMyHP()
+        questProgress.getProgress(MAIN_PROGRESS_ID).setGoal(myHealth * questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;vehicleHealthFactor&quot;))
         questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;])
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))

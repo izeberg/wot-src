@@ -1,11 +1,7 @@
 import logging
 from functools import partial
 import typing, BigWorld
-from gui.impl import backport
-from gui.impl.gen import R
-from gui.SystemMessages import SM_TYPE
 from gui.shared.formatters import text_styles
-from gui.shared.notifications import NotificationPriorityLevel
 from gui.shared.gui_items.Vehicle import getUserName
 from gui.shared.gui_items.processors import Processor, makeError, makeSuccess
 from gui.shared.gui_items.processors.plugins import ParagonsResetBranchValidator, ParagonsSetChapterValidator, ParagonsSetChapterLevelValidator, ParagonsValidateSelectedRewardEntCode, ParagonsValidateSelectedRewardInOrder
@@ -13,7 +9,6 @@ from gui.shared.utils.decorators import adisp_process
 from helpers import dependency
 from items.components.c11n_constants import ItemTags
 from paragons_common import PARAGONS_ENTITLEMENT_TO_NUMBER_CODES
-from paragons_helpers import pushParagonsBranchResetedNotification
 from skeletons.gui.game_control import IParagonsController
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
@@ -60,11 +55,17 @@ class ParagonsResetBranchProcessor(Processor):
         return
 
     def _successHandler(self, code, ctx=None):
-        pushParagonsBranchResetedNotification(credits=self._credits, equipments=self._equipments, instructions=self._instructions, ammunitions=self._ammunitions, appearances=self._appearances, kits=self._kits, crews=self._crews)
-        return makeSuccess('')
+        auxData = {'credits': self._credits, 
+           'equipments': self._equipments, 
+           'instructions': self._instructions, 
+           'ammunitions': self._ammunitions, 
+           'appearances': self._appearances, 
+           'kits': self._kits, 
+           'crews': self._crews}
+        return makeSuccess(auxData=auxData)
 
     def _errorHandler(self, code, errStr='', ctx=None):
-        return makeError(backport.text(R.strings.paragons.systemMessage.resetBranch.Error()))
+        return makeError()
 
     def _request(self, callback):
         BigWorld.player().paragons.resetBranch(self.__branchID, self.__isStock, partial(self.__resetBranchCallback, callback))
@@ -124,10 +125,10 @@ class ParagonsSetChapterProcessor(Processor):
         self.__chapterID = chapterID
 
     def _successHandler(self, code, ctx=None):
-        return makeSuccess(userMsg=backport.text(R.strings.paragons.systemMessage.setChapter.Success.header(), chapterID=self.__chapterID), msgType=SM_TYPE.Information, msgPriority=NotificationPriorityLevel.MEDIUM)
+        return makeSuccess()
 
     def _errorHandler(self, code, errStr='', ctx=None):
-        return makeError(backport.text(R.strings.paragons.systemMessage.setChapter.Error()))
+        return makeError()
 
     def _request(self, callback):
         BigWorld.player().paragons.setChapter(self.__chapterID, partial(self.__setChapterCallback, callback))

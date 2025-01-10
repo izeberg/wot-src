@@ -28,10 +28,10 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    topByExp = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;xp&apos;]
+    topByExp = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;total&apos;][&apos;xp&apos;]
     topByExpRes = topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_EXP).getParam(&quot;desiredPosition&quot;)
 
-    blockedDamage = eventData[&apos;avatarResults&apos;][&apos;damageBlokcedByArmor&apos;]
+    blockedDamage = eventData[&apos;avatarResults&apos;][&apos;damageBlockedByArmor&apos;]
 
     if topByExpRes:
         questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, blockedDamage)

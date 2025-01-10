@@ -1,6 +1,7 @@
 import logging, typing
 from frameworks.wulf.view.submodel_presenter import SubModelPresenter
 from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.paragons.tooltips.rewards_header_tooltip_model import RewardsHeaderTooltipModel
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.lobby.paragons.paragons_helpers.paragons_model_helpers import fillChapterModel
@@ -8,6 +9,8 @@ from gui.impl.lobby.paragons.paragons_window_events import showParagonsSelectRew
 from gui.impl.lobby.paragons.tooltips.branch_select_tooltip import BranchSelectTooltip
 from gui.impl.lobby.paragons.tooltips.vehicle_select_tooltip import VehicleSelectTooltip
 from gui.impl.gen.view_models.views.lobby.paragons.navigation_view_model import TabId
+from gui.impl.pub import ViewImpl
+from frameworks.wulf import ViewSettings
 from helpers import dependency
 from skeletons.gui.game_control import IParagonsController
 from skeletons.gui.shared import IItemsCache
@@ -61,6 +64,12 @@ class RewardsPresenter(SubModelPresenter):
         else:
             if contentID == R.views.lobby.paragons.tooltips.VehicleSelectTooltip():
                 return VehicleSelectTooltip(layoutID=R.views.lobby.paragons.tooltips.VehicleSelectTooltip())
+            if contentID == R.views.lobby.paragons.tooltips.RewardsHeaderTooltip():
+                rewardsHeaderModel = RewardsHeaderTooltipModel()
+                rewardsHeaderModel.setIsLevelAchieved(event.getArgument('isCompleted'))
+                rewardsHeaderModel.setIsCurrentLevel(event.getArgument('isCurrentLevel'))
+                settings = ViewSettings(layoutID=R.views.lobby.paragons.tooltips.RewardsHeaderTooltip(), model=rewardsHeaderModel)
+                return ViewImpl(settings)
             return
 
     def getTooltipData(self, event):

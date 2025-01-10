@@ -14,7 +14,8 @@ PARAMS_KEYS = {'vehicleHealthFactor': backport.getNiceNumberFormat,
    'stunSeveralTargets': backport.getIntegralFormat, 
    'distanceGreatOrEqual': backport.getIntegralFormat, 
    'desiredPosition': backport.getIntegralFormat, 
-   'distanceShortOrEqual': backport.getIntegralFormat}
+   'distanceShortOrEqual': backport.getIntegralFormat, 
+   'damagedHealthPercent': backport.getIntegralFormat}
 UI_HEADER_TYPES = {DISPLAY_TYPE.BIATHLON: QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_BIATHLON, 
    DISPLAY_TYPE.LIMITED: QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_LIMITED, 
    DISPLAY_TYPE.SERIES: QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_SERIES, 
@@ -136,6 +137,9 @@ class ClientProgress(quest_progress.IProgress):
             return QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE
         return QUEST_PROGRESS_BASE.ADD_ORDER_TYPE
 
+    def __repr__(self):
+        return ('<{} orderType={} getContainerType={} groupID={} isInOrGroup={}>').format(self.__class__.__name__, self._getOrderType(), self.getContainerType(), self.groupID(), self.isInOrGroup())
+
 
 class HeaderProgress(ClientProgress):
     __slots__ = ClientProgress.__slots__ + ('__labelsGetter', '_scope')
@@ -174,7 +178,8 @@ class HeaderProgress(ClientProgress):
            'value': self.getCurrent(), 
            'goal': self.getGoal(), 
            'scope': self._scope, 
-           'state': self.getState()}
+           'state': self.getState(), 
+           'groupID': self.groupID()}
 
     def getProgress(self):
         return self._commonProgress.getProgress()
@@ -292,7 +297,7 @@ class BodyProgress(ClientProgress):
         for param, formatter in PARAMS_KEYS.iteritems():
             value = self._commonProgress.getParam(param)
             if value:
-                data.update({param: formatter(value)})
+                data[param] = formatter(value)
 
         return data
 
@@ -317,7 +322,8 @@ class BodyProgress(ClientProgress):
            'multiplier': self.getFormattedMultiplierValue(), 
            'progressType': self.getProgressType(), 
            'topMetricIndex': self.__metricsWrapper.getTopMetricIdx(), 
-           'isInOrGroup': self._description.isInOrGroup}
+           'isInOrGroup': self._description.isInOrGroup, 
+           'groupID': self.groupID()}
 
     def getTitle(self):
         if self.getProgressID() in self.COMMON_PROGRESS_IDS:
@@ -406,8 +412,9 @@ class VehicleTypesProgress(BodyProgress):
         totalTypesCount = len(VEHICLE_CLASSES)
         totalGoal = self.getTotalGoal()
         if (self.isCumulative() or vehTypesCount == totalTypesCount) and totalGoal % 5 == 0:
-            data.update(goal=backport.getIntegralFormat(totalGoal / vehTypesCount))
-        data.update(uniqueGoal=backport.getIntegralFormat(vehTypesCount))
+            data['goal'] = backport.getIntegralFormat(totalGoal / vehTypesCount)
+        data['totalGoal'] = backport.getIntegralFormat(totalGoal)
+        data['uniqueGoal'] = backport.getIntegralFormat(vehTypesCount)
         return data
 
 

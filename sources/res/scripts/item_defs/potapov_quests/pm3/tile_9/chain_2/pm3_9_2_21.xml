@@ -20,6 +20,7 @@ filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
 MAIN_PROGRESS_ID = &apos;blockedDamage&apos;
 MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
+MAIN_PROGRESS_TOP_BY_EXP = &apos;topByExp&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():

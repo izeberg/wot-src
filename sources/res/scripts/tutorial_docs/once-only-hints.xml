@@ -1117,6 +1117,7 @@
 				<direction>B</direction>
 				<loop>True</loop>
 			</arrow>
+			<update-runtime>True</update-runtime>
 			<condition>
 				<class-condition>
 					LimitedUIHintChecker

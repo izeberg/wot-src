@@ -8,59 +8,14 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_h08_MTV1_0006_Platform_02</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s2</node>
+		<node>Scene Root</node>
 		<geometry>
-			<vertices>sShape2.vertices</vertices>
-			<stream>sShape2.uv2</stream>
-			<primitive>sShape2.indices</primitive>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -139,17 +94,8 @@
 				</material>
 				<groupOrigin>-0.000002 1.038212 0.000000</groupOrigin>
 			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s1</node>
-		<geometry>
-			<vertices>s1Shape.vertices</vertices>
-			<stream>s1Shape.uv2</stream>
-			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
-				0
+				1
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -174,22 +120,13 @@
 				</material>
 				<groupOrigin>0.000000 0.462400 0.071523</groupOrigin>
 			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s0</node>
-		<geometry>
-			<vertices>s0Shape.vertices</vertices>
-			<stream>s0Shape.uv2</stream>
-			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
-				0
+				2
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>112</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Metal_01_Painted_512_AM.dds</Texture>
@@ -263,11 +200,11 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<constraints/>
 	<boundingBox>
-		<min>-1.964363 -0.059834 -10.368544</min>
+		<min>-1.964363 -0.059834 -10.257364</min>
 		<max>1.964357 1.836414 10.257364</max>
 	</boundingBox>
-	<geometrySize>565192</geometrySize>
+	<customBsp>true</customBsp>
+	<geometrySize>565032</geometrySize>
 	<minUVDensity>0.000838</minUVDensity>
 </root>

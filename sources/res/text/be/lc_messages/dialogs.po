@@ -2529,6 +2529,23 @@ msgstr "Пацвердзіць"
 msgid "questsConfirmDiscardDialog/title"
 msgstr "Скідванне ходу выканання"
 
+msgid "questsConfirmPm3Dialog/cancel"
+msgstr "Скасаваць"
+
+msgid "questsConfirmPm3Dialog/checkBox"
+msgstr "Не пытаць мяне больш"
+
+msgid "questsConfirmPm3Dialog/message"
+msgstr ""
+"При выборе боевой задачи «%(newQuest)s» выполнение задачи «%(oldQuest)s» "
+"будет приостановлено."
+
+msgid "questsConfirmPm3Dialog/submit"
+msgstr "Пацвердзіць"
+
+msgid "questsConfirmPm3Dialog/title"
+msgstr "Пацвярджэнне выбару задачы"
+
 msgid "questsConfirmProgressDialog/cancel"
 msgstr "Скасаваць"
 

@@ -3304,6 +3304,7 @@ class TOOLTIPS(object):
     BATTLEPASSOFFER_TITLE_NEW_DEVICE_FV_GIFT = '#tooltips:battlePassOffer/title/new_device_fv_gift'
     BATTLEPASSOFFER_FOOTER_NEW_DEVICE_FV_GIFT = '#tooltips:battlePassOffer/footer/new_device_fv_gift'
     BATTLEPASSOFFER_TITLE_NEW_DEVICE_MI_GIFT = '#tooltips:battlePassOffer/title/new_device_mi_gift'
+    BATTLEPASSOFFER_TITLE_NEW_DEVICE_PM3_GIFT = '#tooltips:battlePassOffer/title/new_device_pm3_gift'
     BATTLEPASSOFFER_FOOTER_NEW_DEVICE_MI_GIFT = '#tooltips:battlePassOffer/footer/new_device_mi_gift'
     BATTLEPASSOFFER_TITLE_BLUEPRINT_GIFT = '#tooltips:battlePassOffer/title/blueprint_gift'
     BATTLEPASSOFFER_FOOTER_BLUEPRINT_GIFT = '#tooltips:battlePassOffer/footer/blueprint_gift'

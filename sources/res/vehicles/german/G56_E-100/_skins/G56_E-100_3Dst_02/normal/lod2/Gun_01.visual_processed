@@ -66,6 +66,7 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -73,13 +74,42 @@
 				0
 				<material>
 					<identifier>tank_guns_skinned</identifier>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailUVTiling
+						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/E-100_3Dst_02_guns_GMM.dds</Texture>
@@ -95,22 +125,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G56_E-100/_skins/G56_E-100_3Dst_02/E-100_3Dst_02_guns_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000167 0.161916 -2.702824</groupOrigin>

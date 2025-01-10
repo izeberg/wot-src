@@ -230,6 +230,11 @@ package net.wg.gui.lobby.battleResults.components
          this.questStatus.x = width - this.questStatus.width - STATE_RIGHT | 0;
          this.questStatus.y = this.questTitleTF.y + QUEST_STATUS_PADDING_TOP | 0;
          this.lineMC.y = this.questTitleTF.y + this.questTitleTF.height + LINE_SEPARATOR_PADDING | 0;
+         if(this._linkBtn != null)
+         {
+            this._linkBtn.x = this.questTitleTF.x + this.questTitleTF.width + LINK_BTN_PADDING_LEFT | 0;
+            this._linkBtn.y = this.questTitleTF.y + (this.questTitleTF.height - this._linkBtn.height >> 1) + LINK_BTN_PADDING_TOP | 0;
+         }
          if(this.collapsedToggleBtn.selected && this._model.collapsedToggleBtnVisible && this._model.personalInfo != null)
          {
             this.questDescrTF.y = QUEST_DESCR_CONTENT_TF_Y;
@@ -287,8 +292,6 @@ package net.wg.gui.lobby.battleResults.components
          this._linkBtn.soundType = SoundTypes.NORMAL_BTN;
          this._linkBtn.scaleX = this._linkBtn.scaleY = 1;
          addChild(this._linkBtn);
-         this._linkBtn.x = this.questTitleTF.x + this.questTitleTF.width + LINK_BTN_PADDING_LEFT | 0;
-         this._linkBtn.y = this.questTitleTF.y + (this.questTitleTF.height - this._linkBtn.height >> 1) + LINK_BTN_PADDING_TOP | 0;
          this._linkBtn.addEventListener(ButtonEvent.CLICK,this.onLinkBtnClickHandler);
          this._linkBtn.addEventListener(MouseEvent.ROLL_OUT,this.onLinkBtnRollOutHandler);
          this._linkBtn.addEventListener(MouseEvent.ROLL_OVER,this.onLinkBtnRollOverHandler);

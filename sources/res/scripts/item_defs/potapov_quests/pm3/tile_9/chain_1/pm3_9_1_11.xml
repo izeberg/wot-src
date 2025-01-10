@@ -19,7 +19,7 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
 MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
-MAIN_PROGRESS_ID = &apos;kills&apos;
+MAIN_PROGRESS_KILLS = &apos;kills&apos;
 MAIN_PROGRESS_WIN = &apos;win&apos;
 
 def onInit(eventType, eventData, quest, processor):
@@ -34,8 +34,8 @@ def onFinishBattle(eventType, eventData, quest, processor):
 
     kills = eventData[&apos;avatarResults&apos;][&apos;kills&apos;]
     if brfilter.win():
-        questProgress.setComplete(MAIN_PROGRESS_WIN)
-        questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, 1)
+        questProgress.setCompleted(MAIN_PROGRESS_WIN)
+        questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_KILLS, kills)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

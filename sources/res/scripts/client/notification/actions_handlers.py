@@ -19,7 +19,7 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.paragons.navigation_view_model import TabId
 from gui.impl.lobby.early_access.early_access_window_events import showEarlyAccessQuestsView, showEarlyAccessVehicleView
-from gui.impl.lobby.paragons.paragons_window_events import showParagonsNavigationView
+from gui.impl.lobby.paragons.paragons_window_events import showParagonsNavigationView, showParagonsSelectRewardsWindow
 from gui.impl.lobby.poll.poll_browser_action import PollBrowserButtonHandler
 from gui.platform.base.statuses.constants import StatusTypes
 from gui.prb_control import prbDispatcherProperty, prbInvitesProperty
@@ -1457,6 +1457,24 @@ class ParagonsProjectViewHandler(NavigationDisabledActionHandler):
         return
 
 
+class ParagonsSelectRewardViewHandler(NavigationDisabledActionHandler):
+
+    @classmethod
+    def getNotType(cls):
+        return NOTIFICATION_TYPE.MESSAGE
+
+    @classmethod
+    def getActions(cls):
+        return ('showParagonsSelectRewardView', )
+
+    def doAction(self, model, entityID, action):
+        notification = model.getNotification(self.getNotType(), entityID)
+        auxData = notification.getSettings().auxData
+        if auxData is not None:
+            showParagonsSelectRewardsWindow(auxData['chapter'], auxData['level'], auxData['entitlements'][0])
+        return
+
+
 class ParagonsCharaptersViewHandler(NavigationDisabledActionHandler):
 
     @classmethod
@@ -1560,7 +1578,8 @@ _AVAILABLE_HANDLERS = (
  _OpenPollBrowserHandler,
  ParagonsProjectViewHandler,
  ParagonsCharaptersViewHandler,
- ShowParagonsResearchesViewHandler)
+ ShowParagonsResearchesViewHandler,
+ ParagonsSelectRewardViewHandler)
 registerNotificationsActionsHandlers(_AVAILABLE_HANDLERS)
 
 class NotificationsActionsHandlers(object):

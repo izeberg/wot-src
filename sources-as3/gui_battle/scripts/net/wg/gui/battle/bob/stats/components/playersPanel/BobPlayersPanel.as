@@ -15,7 +15,7 @@ package net.wg.gui.battle.bob.stats.components.playersPanel
       
       private static const MIN_HEIGHT:int = 768;
       
-      private static const PREBATTLE_SKILL_BOTTOM_OFFSET:int = 80;
+      private static const PREBATTLE_SKILL_BOTTOM_OFFSET:int = 240;
        
       
       public var prebattleTeamSkill:BobPlayersPrebattleTeamSkill = null;

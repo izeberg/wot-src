@@ -16,7 +16,7 @@
 				</postBattle>
 			</conditions>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<crystal>200</crystal>
 				<token>
 					<id>token:pt:final:s3:t10:main</id>
@@ -50,7 +50,7 @@
 						<isAlive/>
 						<win/>
 						<results>
-							<key>freeXP</key>
+							<key>originalXP</key>
 							<greaterOrEqual>1500</greaterOrEqual>
 						</results>
 					</and>

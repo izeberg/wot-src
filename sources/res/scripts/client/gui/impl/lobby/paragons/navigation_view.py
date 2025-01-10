@@ -1,5 +1,5 @@
 import logging, typing, adisp
-from frameworks.wulf import ViewFlags, ViewSettings, ViewModel, WindowFlags, WindowLayer
+from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
 from functools import partial
 from gui import GUI_SETTINGS
 from gui.impl.gen.view_models.views.lobby.paragons.navigation_view_model import NavigationViewModel, TabId
@@ -55,9 +55,6 @@ class NavigationView(ViewImpl):
         return super(NavigationView, self).createToolTip(event)
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.paragons.tooltips.RewardsHeaderTooltip():
-            settings = ViewSettings(layoutID=R.views.lobby.paragons.tooltips.RewardsHeaderTooltip(), model=ViewModel())
-            return ViewImpl(settings)
         subViewTooltip = self.__tabsToPresenter[self.__currentTabID].createToolTipContent(event, contentID)
         if subViewTooltip:
             return subViewTooltip

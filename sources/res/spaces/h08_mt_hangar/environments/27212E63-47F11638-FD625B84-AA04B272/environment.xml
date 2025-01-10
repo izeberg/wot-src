@@ -140,15 +140,15 @@
 	</GodRays>
 	<SSAO>
 		<enable>true</enable>
-		<radius>0.100000</radius>
-		<amplify>0.600000</amplify>
-		<fadeNear>4.000000</fadeNear>
+		<radius>0.070000</radius>
+		<amplify>0.200000</amplify>
+		<fadeNear>0.810000</fadeNear>
 		<terrainAOGammaCorrection>0.250000</terrainAOGammaCorrection>
 		<influences>
 			<speedtree>0.600000 0.800000</speedtree>
 			<terrain>1.000000 0.000000</terrain>
 			<objects>0.950000 0.000000</objects>
-			<localLights>0.000000</localLights>
+			<localLights>0.530000</localLights>
 		</influences>
 	</SSAO>
 	<Shadow>

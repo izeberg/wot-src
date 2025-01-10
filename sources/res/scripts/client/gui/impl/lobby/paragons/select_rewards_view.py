@@ -1,4 +1,4 @@
-import functools, wg_async
+import functools, logging, wg_async
 from adisp import adisp_process
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, ViewStatus
 from gui.Scaleform.Waiting import Waiting
@@ -24,6 +24,7 @@ from gui.shared.gui_items.processors.paragons import MarkSelectedRewardsProcesso
 from helpers import dependency
 from BWUtil import AsyncReturn
 from skeletons.gui.game_control import IParagonsRewardsShopController, IVehicleComparisonBasket, IParagonsController
+_logger = logging.getLogger(__name__)
 _MAX_AVAILABLE_TO_SELECT = 1
 
 def _getVehicleBonus(key, value):
@@ -189,15 +190,13 @@ class SelectRewardsView(ViewImpl):
         callback(res)
 
     @adisp_process
-    def __markReward(self, callback=None):
+    def __markReward(self):
         res = yield MarkSelectedRewardsProcessor(self.__chapterID, self.__levelID, self.__entitlementID).request()
-        callback(res)
+        _logger.info('[Paragons]: rewardMarked %s', res)
 
-    @wg_async.wg_async
     def __onSelectableRewardReceived(self, _):
-        yield wg_async.await_callback(self.__markReward)()
-        if self.viewStatus not in (ViewStatus.DESTROYED, ViewStatus.DESTROYING):
-            self.__asyncEvent.set()
+        self.__asyncEvent.set()
+        self.__markReward()
 
 
 class SelectRewardsViewWindow(LobbyWindow):

@@ -27,6 +27,8 @@ package net.wg.gui.components.questProgress.data
       
       private var _conditionIcon:String = "";
       
+      private var _groupID:int = 1;
+      
       public function HeaderProgressDataVO(param1:Object)
       {
          super(param1);
@@ -140,6 +142,16 @@ package net.wg.gui.components.questProgress.data
       public function set conditionIcon(param1:String) : void
       {
          this._conditionIcon = param1;
+      }
+      
+      public function set groupID(param1:int) : void
+      {
+         this._groupID = param1;
+      }
+      
+      public function get groupID() : int
+      {
+         return this._groupID;
       }
    }
 }

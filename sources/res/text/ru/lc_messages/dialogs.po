@@ -2533,6 +2533,23 @@ msgstr "Подтвердить"
 msgid "questsConfirmDiscardDialog/title"
 msgstr "Сброс прогресса"
 
+msgid "questsConfirmPm3Dialog/cancel"
+msgstr "Отменить"
+
+msgid "questsConfirmPm3Dialog/checkBox"
+msgstr "Больше не спрашивать"
+
+msgid "questsConfirmPm3Dialog/message"
+msgstr ""
+"При выборе боевой задачи «%(newQuest)s» выполнение задачи «%(oldQuest)s» "
+"будет приостановлено."
+
+msgid "questsConfirmPm3Dialog/submit"
+msgstr "Подтвердить"
+
+msgid "questsConfirmPm3Dialog/title"
+msgstr "Подтверждение выбора задачи"
+
 msgid "questsConfirmProgressDialog/cancel"
 msgstr "Отменить"
 

@@ -20,7 +20,7 @@
 				</postBattle>
 			</conditions>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<crystal>200</crystal>
 				<token>
 					<id>token:pt:final:s3:t10:main</id>
@@ -47,14 +47,6 @@
 			<conditions>
 				<postBattle>
 					<and>
-						<results>
-							<plus>
-								<key>damageDealt</key>
-								<key>damageReceived</key>
-								<key>damageBlockedByArmor</key>
-							</plus>
-							<greaterOrEqual>4000</greaterOrEqual>
-						</results>
 						<results>
 							<plus>
 								<key>damageDealt</key>

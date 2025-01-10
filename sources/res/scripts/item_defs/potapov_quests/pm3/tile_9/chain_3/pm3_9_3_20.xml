@@ -10,7 +10,7 @@
 pass
          </scripts>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t9:main</id>
 					<expires>
@@ -44,10 +44,10 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;damageAndAssist&apos;
+MAIN_PROGRESS_ID = &apos;assist&apos;
 MAIN_SERIES_ID = &apos;battlesSeries&apos;
 
-ADD_PROGRESS_ID = &apos;damageAndAssistAdv&apos;
+ADD_PROGRESS_ID = &apos;assistAdv&apos;
 ADD_SERIES_ID = &apos;battlesSeriesAdv&apos;
 
 def onInit(eventType, eventData, quest, processor):

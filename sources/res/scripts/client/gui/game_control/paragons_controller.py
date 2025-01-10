@@ -15,6 +15,7 @@ from gui.shared.money import Money
 from gui.shared.utils.requesters import REQ_CRITERIA
 from PlayerEvents import g_playerEvents as events
 from helpers import dependency, server_settings
+from paragons_helpers import pushParagonsBranchResetedNotification, pushParagonsBranchResetErrorNotification
 from helpers.server_settings import ParagonsConfig
 from items import vehicles
 from paragons_common import VehicleResetUnavailabilityReasons, ParagonsEntitlements, getParagonsEntitlement, PARAGONS_PDATA_KEY, PARAGONS_UNLOCKS_PDATA_KEY, PARAGONS_COINS_TOKEN, PARAGONS_SELECTED_REWARD_TOKEN_PREFIX, TOKEN_PREFIX_TO_ENT_CODE, PARAGONS_SELECTED_REWARDS_ORDER_PDATA_KEY, PARAGONS_CHAPTER_PROGRESS_PDATA_KEY
@@ -470,7 +471,10 @@ class _ParagonsBranchesController(object):
     @adisp_process
     def resetBranch(self, branchID, isStockVehConfiguration=False, ctx=None, callback=None):
         result = yield ParagonsResetBranchProcessor(branchID, isStockVehConfiguration, ctx).request()
-        SystemMessages.pushMessagesFromResult(result)
+        if result is not None and result.success:
+            pushParagonsBranchResetedNotification(**result.auxData)
+        else:
+            pushParagonsBranchResetErrorNotification()
         if callback is not None:
             callback(result.success)
         return

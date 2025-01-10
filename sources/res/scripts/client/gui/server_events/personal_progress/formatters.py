@@ -39,7 +39,9 @@ class ProgressesFormatter(object):
             if isMain is not None:
                 progresses = self._storage.getHeaderProgresses(isMain)
                 if progresses:
-                    result.append(first(progresses.values()).getHeaderData())
+                    for progress in progresses.itervalues():
+                        result.append(progress.getHeaderData())
+
                 else:
                     result.append(self.__addDummyHeaderProgress(isMain))
             else:
@@ -51,14 +53,8 @@ class ProgressesFormatter(object):
                     else:
                         addProgresses.append(progress)
 
-                if mainProgresses:
-                    result.append(first(mainProgresses).getHeaderData())
-                else:
-                    result.append(self.__addDummyHeaderProgress(isMain=True))
-                if addProgresses:
-                    result.append(first(addProgresses).getHeaderData())
-                else:
-                    result.append(self.__addDummyHeaderProgress(isMain=False))
+                self.__addHeaderData(result, mainProgresses, isMain=True)
+                self.__addHeaderData(result, addProgresses, isMain=False)
         return result
 
     @classmethod
@@ -68,7 +64,15 @@ class ProgressesFormatter(object):
     @classmethod
     def _sortedBodyProgresses(cls, progresses):
         return sorted(progresses.itervalues(), key=lambda p: (
-         not p.isMain(), p.getPriority()))
+         p.groupID(), not p.isMain(), p.getPriority()))
+
+    def __addHeaderData(self, result, progresses, isMain):
+        if progresses:
+            for progress in progresses:
+                result.append(progress.getHeaderData())
+
+        else:
+            result.append(self.__addDummyHeaderProgress(isMain=isMain))
 
     def __addDummyHeaderProgress(self, isMain):
         if isMain:
@@ -192,9 +196,12 @@ class PM3PostBattleConditionsFormatter(PostBattleConditionsFormatter):
         result = []
         isWithAdd = self._event.getPMType().withAdd
         isQuestCumulative = any(progress.isCumulative() for progress in itertools.chain(self._storage.getBodyProgresses(isMain).itervalues(), self._storage.getHeaderProgresses(isMain).itervalues()))
+        limiterIDs = set(progress.getLimiter().getProgressID() for progress in self._storage.getBodyProgresses(isMain).itervalues() if progress.getLimiter())
         processedProgressIDs = set()
         for progressID, progress in itertools.chain(self._storage.getHeaderProgresses(isMain).iteritems(), self._storage.getBodyProgresses(isMain).iteritems()):
             if progressID in processedProgressIDs:
+                continue
+            if progressID in limiterIDs:
                 continue
             isBattlesSeries = progress.getContainerType() == CONTAINER.HEADER
             title = self.__getTitle(progress, isMain, isWithAdd, progress.getGoal() if isBattlesSeries else 0)

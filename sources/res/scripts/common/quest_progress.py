@@ -179,7 +179,7 @@ class ValueProgress(Progress):
         return self.__value
 
     def setZero(self):
-        self.__value = 0
+        self.setValue(0)
 
     def isZero(self):
         return self.__value == 0
@@ -243,7 +243,7 @@ class CounterProgress(Progress):
             self.setCounter(progress['counter'])
 
     def setZero(self):
-        self.__counter = defaultdict(int)
+        self.setCounter(defaultdict(int))
 
     def isZero(self):
         return not bool(self.__counter)
@@ -259,6 +259,7 @@ class BattlesSeries(Progress):
 
     def addBattle(self, result):
         self.__battles.append(result)
+        self._markAsChanged()
 
     def getSuccessfullBattles(self):
         return self.__battles.count(True)
@@ -427,13 +428,9 @@ class ProgressStorage(object):
         for builder in self._getBuilders():
             self.__addBuilder(builder)
 
-        _isInOrGroup = {}
         for progressID, configData in questCfg.iteritems():
             progress = self._createProgress(progressID, configData)
             self.__progresses[progressID] = progress
-            isInOrGroup = progress.isInOrGroup()
-            isInOrGroupKey = (progress.isMain(), progress.isAward())
-            _isInOrGroup[(isInOrGroupKey, isInOrGroup)] = isInOrGroup
 
         if savedProgresses:
             self.update(savedProgresses)

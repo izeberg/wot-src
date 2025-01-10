@@ -10,7 +10,7 @@
 pass
          </scripts>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t9:main</id>
 					<expires>
@@ -33,7 +33,15 @@ pass
 			<enabled>true</enabled>
 			<id>pm3_9_3_25_add</id>
 			<serverOnly>true</serverOnly>
-			<conditions/>
+			<conditions>
+				<postBattle>
+					<results>
+						<key>originalXP</key>
+						<max>10</max>
+						<total/>
+					</results>
+				</postBattle>
+			</conditions>
 			<scripts>
 LOG = globals().get(&apos;LOG&apos;)
 &quot;&quot;&quot;:type: typing.LOG_DEBUG_DEV&quot;&quot;&quot;
@@ -74,11 +82,8 @@ def onFinishBattle(eventType, eventData, quest, processor):
     topByExpRes = topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;desiredPosition&quot;)
     topByExpResAdv = topByFreeExp &lt;= questProgress.getProgress(ADD_PROGRESS_ID).getParam(&quot;desiredPosition&quot;)
 
-    if topByExpRes:
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
-
-    if topByExpResAdv:
-        questProgress.increaseUntilComplete(ADD_PROGRESS_SERIES, 1)
+    questProgress.increaseEveryProgress(MAIN_PROGRESS_SERIES, topByExpRes)
+    questProgress.increaseEveryProgress(ADD_PROGRESS_SERIES, topByExpResAdv)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

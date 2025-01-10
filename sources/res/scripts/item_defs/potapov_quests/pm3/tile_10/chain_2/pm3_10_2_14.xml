@@ -30,9 +30,9 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-    mainCondition = brfilter.sumDamage(
-        brfilter.filterDamageTo(attackerFlags=[&apos;had_full_health&apos;]))
+    mainCondition = brfilter.sumDamage(brfilter.filterDamageTo(attackerFlags=[&apos;had_full_health&apos;]))
     questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

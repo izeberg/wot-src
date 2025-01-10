@@ -243,6 +243,8 @@ package
       
       public static const REWARDS_LABEL_CREDITS:String = "#bob:rewards/label/credits";
       
+      public static const REWARDS_LABEL_FREEXP:String = "#bob:rewards/label/freeXP";
+      
       public static const REWARDS_LABEL_RENT:String = "#bob:rewards/label/rent";
       
       public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_HEADER:String = "#bob:serviceChannelMessages/lootBoxesAutoOpen/header";

@@ -1014,7 +1014,9 @@ class BobTokenQuestFormatter(AsyncTokenQuestsSubFormatter):
 
     @classmethod
     def _isQuestOfThisGroup(cls, questID):
-        return cls.__bobController.personalRewardQuestName == questID or questID.startswith(cls.__bobController.teamRewardQuestPrefix)
+        if cls.__bobController.personalRewardQuestName:
+            return cls.__bobController.personalRewardQuestName == questID or questID.startswith(cls.__bobController.teamRewardQuestPrefix)
+        return False
 
     def __buildMessage(self, questID, message):
         data = message.data or {}

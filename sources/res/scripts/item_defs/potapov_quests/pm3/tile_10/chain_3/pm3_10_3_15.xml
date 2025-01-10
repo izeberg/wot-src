@@ -10,7 +10,7 @@
 pass
          </scripts>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<crystal>200</crystal>
 				<token>
 					<id>token:pt:final:s3:t10:main</id>
@@ -47,7 +47,7 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 
 MAIN_PROGRESS_PIERCE = &apos;piercingSeries&apos;
 ADD_PROGRESS_KILLS = &apos;kills&apos;
-ADD_PROGRESS_SERIES = &apos;battlesSeries&apos;
+ADD_PROGRESS_SERIES = &apos;battlesSeriesAdv&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():

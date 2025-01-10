@@ -1334,8 +1334,6 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
        INVOICE_ASSET.PREMIUM | 16: b'premiumDebitedInvoiceReceived', 
        INVOICE_ASSET.FREE_XP | 16: b'freeXpDebitedInvoiceReceived', 
        INVOICE_ASSET.EQUIP_COIN | 16: b'equipCoinDebitedInvoiceReceived'}
-    __paragonsTemplateKeys = {b'progressPoints': {b'received': b'paragonsProgressPointsAccruedInvoiceReceived', 
-                           b'debited': b'paragonsProgressPointsDebitedInvoiceReceived'}}
     __blueprintsTemplateKeys = {BlueprintTypes.VEHICLE: ('vehicleBlueprintsAccruedInvoiceReceived', 'vehicleBlueprintsDebitedInvoiceReceived'), 
        BlueprintTypes.NATIONAL: ('nationalBlueprintsAccruedInvoiceReceived', 'nationalBlueprintsDebitedInvoiceReceived'), 
        BlueprintTypes.INTELLIGENCE_DATA: ('intelligenceBlueprintsAccruedInvoiceReceived', 'intelligenceBlueprintsDebitedInvoiceReceived')}
@@ -5862,6 +5860,7 @@ class ParagonsLevelCompletedFormatter(ServiceChannelFormatter):
                    b'chapter': chapter, 
                    b'level': level}
                 if showSelector:
+                    parameters[b'entitlements'] = levelRewards.get(b'entitlements', {}).keys()
                     message = self._makeMessage(ParagonsSystemMessages.LEVEL_SELECTABLE_REWARDS, message, parameters)
                 else:
                     message = self._makeMessage(ParagonsSystemMessages.LEVEL_REWARDS, message, parameters)

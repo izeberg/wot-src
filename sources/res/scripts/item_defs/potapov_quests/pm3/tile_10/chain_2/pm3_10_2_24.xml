@@ -34,11 +34,10 @@ def onFinishBattle(eventType, eventData, quest, processor):
     brfilter = filter.BattleResultsFilter(eventData)
 
     topByExp = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;xp&apos;]
-    topByExpRes = topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_EXP).getParam(&quot;desiredPosition&quot;)
-    mainCondition = brfilter.sumCrits(criticalType=questProgress.getProgress(MAIN_PROGRESS_CRITS).getParam(&quot;critTypes&quot;))
-
-    if topByExpRes:
+    if topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_EXP).getParam(&quot;desiredPosition&quot;):
+        mainCondition = brfilter.sumCrits(criticalType=questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;critTypes&quot;))
         questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, mainCondition)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

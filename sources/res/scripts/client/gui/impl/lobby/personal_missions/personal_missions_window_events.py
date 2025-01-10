@@ -12,6 +12,7 @@ from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_main_quests_view_model import PageViewIdEnum
 _logger = logging.getLogger(__name__)
 PM3_INFO_PAGE = 'pm3InfoPage'
+SERVER_SETTINGS_KEYS = ('disabledPMOperations', 'disabledPersonalMissions', 'isPM3QuestEnabled')
 
 def checkIntroSeen():
 
@@ -98,4 +99,10 @@ def __createPersonalMissionsBrowserView(url, viewFlags, returnClb=None):
 def showPersonalMissionsRewardsView(qID, selectedBonuses=None, viewType=CompletedQuestsType.COMPLETE):
     from gui.impl.lobby.personal_missions.personal_missions_rewards_view import PersonalMissionsRewardsWindow
     window = PersonalMissionsRewardsWindow(qID, selectedBonuses, viewType)
+    window.load()
+
+
+def showOperationAdditionRewardsView(operationID):
+    from gui.impl.lobby.personal_missions.personal_missions_rewards_view import PersonalMissionsRewardsWindow
+    window = PersonalMissionsRewardsWindow(operationID=operationID)
     window.load()

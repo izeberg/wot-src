@@ -6,6 +6,7 @@ from gui.Scaleform.locale.QUESTS import QUESTS
 from gui.shared.gui_items.Vehicle import VEHICLE_TYPES_ORDER
 from gui.impl import backport
 from helpers.time_utils import ONE_MINUTE
+from personal_missions_constants import PROGRESS_TEMPLATE
 
 class METRICS_TYPES(object):
     SIMPLE = QUEST_PROGRESS_BASE.QP_METRIC_TYPE_SIMPLE
@@ -47,8 +48,11 @@ def wrapVehiclesValue(progress):
 
 def wrapLimiterValue(progress):
     limiterProgress = progress.getLimiter()
-    return {'mType': QUEST_PROGRESS_BASE.QP_METRIC_TYPE_LIMITER, 
-       'value': _formatValue(limiterProgress.getRest()), 
+    if limiterProgress.getTemplateID() == PROGRESS_TEMPLATE.BINARY:
+        value = ''
+    else:
+        value = _formatValue(limiterProgress.getRest())
+    return {'mType': QUEST_PROGRESS_BASE.QP_METRIC_TYPE_LIMITER, 'value': value, 
        'isActive': limiterProgress.getState() not in QUEST_PROGRESS_STATE.COMPLETED_STATES}
 
 

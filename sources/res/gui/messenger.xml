@@ -617,8 +617,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<freeXpDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/freeXpDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</freeXpDebitedInvoiceReceived>
 		<equipCoinAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/equipCoinAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</equipCoinAccruedInvoiceReceived>
 		<equipCoinDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/equipCoinDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</equipCoinDebitedInvoiceReceived>
-		<paragonsProgressPointsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/paragonsProgressPointsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</paragonsProgressPointsAccruedInvoiceReceived>
-		<paragonsProgressPointsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/paragonsProgressPointsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</paragonsProgressPointsDebitedInvoiceReceived>
 		<itemsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/itemsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(items)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</itemsAccruedInvoiceReceived>
 		<itemsInstalledInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/itemsInstalled): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(items)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</itemsInstalledInvoiceReceived>
 		<itemsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/itemsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(items)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</itemsDebitedInvoiceReceived>
@@ -3714,7 +3712,7 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 				<button>
 					<type>submit</type>
 					<label>_(#paragons:chapter/reward/selector/button/text)</label>
-					<action>showParagonsProjectView</action>
+					<action>showParagonsSelectRewardView</action>
 					<width>120</width>
 				</button>
 			</buttonsLayout>

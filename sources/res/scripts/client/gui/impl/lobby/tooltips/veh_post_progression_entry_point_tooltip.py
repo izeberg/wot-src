@@ -41,17 +41,18 @@ class VehPostProgressionEntryPointTooltip(ViewImpl):
             model.setModulesExplored(len(eliteProgress.unlocked))
             model.setModulesTotal(len(eliteProgress.total))
             model.setHasVehiclesToUnlock(hasVehiclesToUnlock)
+            model.setIsVehicleElite(self.__vehicle.isElite or not eliteProgress.toUnlock)
 
     def __getStatus(self, eliteProgress):
         status = R.strings.veh_post_progression.tooltips.entry_point.status
         isPurchased = self.__vehicle.isPurchased
-        fullyUnlocked = not eliteProgress.toUnlock
+        isElite = self.__vehicle.isElite or not eliteProgress.toUnlock
         if self.__vehicle.postProgressionAvailability(unlockOnly=True):
             return R.invalid()
-        if not isPurchased and not fullyUnlocked:
+        if not isPurchased and not isElite:
             return status.notResearchedNotPurchased()
         if not isPurchased:
             return status.notPurchased()
-        if not fullyUnlocked:
+        if not isElite:
             return status.notResearched()
         return R.invalid()

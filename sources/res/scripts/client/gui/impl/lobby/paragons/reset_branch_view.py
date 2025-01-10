@@ -129,9 +129,10 @@ class ResetBranchView(ViewImpl):
         self.getViewModel().setTotalCredits(totalCredits)
 
     def __onClose(self):
+        closeCallback = self.__closeCallback
         self.destroy()
-        if self.__closeCallback is not None:
-            self.__closeCallback()
+        if closeCallback is not None:
+            closeCallback()
         return
 
     def __resetBranch(self):

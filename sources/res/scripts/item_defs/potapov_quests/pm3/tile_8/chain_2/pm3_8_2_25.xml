@@ -10,7 +10,7 @@
 pass
          </scripts>
 			<bonus>
-				<premium>1</premium>
+				<premium_plus>1</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t8:main</id>
 					<expires>
@@ -73,11 +73,8 @@ def onFinishBattle(eventType, eventData, quest, processor):
     topByExpRes = topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;desiredPosition&quot;)
     topByExpResAdv = topByFreeExp &lt;= questProgress.getProgress(ADD_PROGRESS_ID).getParam(&quot;desiredPosition&quot;)
 
-    if topByExpRes:
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
-
-    if topByExpResAdv:
-        questProgress.increaseUntilComplete(ADD_PROGRESS_SERIES, 1)
+    questProgress.increaseEveryProgress(MAIN_PROGRESS_SERIES, topByExpRes)
+    questProgress.increaseEveryProgress(ADD_PROGRESS_SERIES, topByExpResAdv)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

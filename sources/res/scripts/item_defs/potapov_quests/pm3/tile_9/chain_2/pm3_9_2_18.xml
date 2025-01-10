@@ -39,7 +39,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     mainCondition = eventData[&apos;avatarResults&apos;][&apos;killsAssistedRadio&apos;]
     brfilter = filter.BattleResultsFilter(eventData)
     if brfilter.alive():
-        questProgress.setComplete(MAIN_PROGRESS_ALIVE)
+        questProgress.setCompleted(MAIN_PROGRESS_ALIVE)
         questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, mainCondition)
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

@@ -32,5 +32,7 @@ package net.wg.gui.components.questProgress.interfaces.components
       function get isInOrGroup() : Boolean;
       
       function get isHidden() : Boolean;
+      
+      function get groupID() : int;
    }
 }

@@ -19,13 +19,14 @@
 						<vehicleDamage>
 							<attackReason>0</attackReason>
 							<enemyImmobilized/>
+							<eventCount/>
 							<greaterOrEqual>5</greaterOrEqual>
 						</vehicleDamage>
 					</and>
 				</postBattle>
 			</conditions>
 			<bonus>
-				<premium>1</premium>
+				<premium_plus>1</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t8:main</id>
 					<expires>
@@ -62,6 +63,7 @@
 						<vehicleDamage>
 							<attackReason>0</attackReason>
 							<enemyImmobilized/>
+							<eventCount/>
 							<greaterOrEqual>5</greaterOrEqual>
 						</vehicleDamage>
 						<win/>

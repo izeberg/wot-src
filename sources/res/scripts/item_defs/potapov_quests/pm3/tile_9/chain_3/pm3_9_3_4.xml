@@ -31,10 +31,12 @@ def onFinishBattle(eventType, eventData, quest, processor):
 
     brfilter = filter.BattleResultsFilter(eventData)
 
-    levelDiff = questProgress.getProgress(MAIN_PROGRESS_DAMAGE).getParam(&apos;targetLevelDiff&apos;)
-    hits = len(brfilter.filterDamageTo(
-                                   result=[&apos;damaged&apos;],
-                                   level=range(brfilter.getMyLevel() + levelDiff, constants.MAX_VEHICLE_LEVEL + 1)))
+    levelDiff = questProgress.getProgress(MAIN_PROGRESS_HITS).getParam(&apos;targetLevelDiff&apos;)
+    attackReason = questProgress.getProgress(MAIN_PROGRESS_HITS).getParam(&apos;attackReasons&apos;)
+    hits = sum(len(shots) for shots in brfilter.filterDamageTo(
+               method=attackReason,
+               result=[&apos;damaged&apos;],
+               level=range(brfilter.getMyLevel() + levelDiff, constants.MAX_VEHICLE_LEVEL + 1)).itervalues())
     questProgress.increaseUntilComplete(MAIN_PROGRESS_HITS, hits)
 
     dist = questProgress.getProgress(MAIN_PROGRESS_KILLS).getParam(&apos;distanceShortOrEqual&apos;)

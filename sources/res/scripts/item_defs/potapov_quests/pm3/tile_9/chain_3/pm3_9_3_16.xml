@@ -31,12 +31,15 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-    assist = brfilter.sumAssisted(eventData[&apos;avatarResults&apos;][&apos;assistEventList&apos;])
+    assistDamage = eventData[&apos;avatarResults&apos;][&apos;damageAssistedTrack&apos;]
+    assistDamage += eventData[&apos;avatarResults&apos;][&apos;damageAssistedRadio&apos;]
+
     piercings = eventData[&apos;avatarResults&apos;][&apos;piercingEnemyHits&apos;]
 
-    assistRes = questProgress.updateUntilComplete(MAIN_PROGRESS_ASSIST, assist)
-    piercingsRes = questProgress.updateUntilComplete(MAIN_PROGRESS_PIERCING, piercings)
-    questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, assistRes and piercingsRes)
+    assistRes = questProgress.updateUntilComplete(MAIN_PROGRESS_ASSIST, assistDamage)
+    piercingsRes = questProgress.updateUntilComplete(MAIN_PROGRESS_PIERCINGS, piercings)
+    if assistRes and piercingsRes:
+        questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

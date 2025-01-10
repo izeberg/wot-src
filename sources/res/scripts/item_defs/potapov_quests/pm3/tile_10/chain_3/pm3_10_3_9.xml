@@ -16,7 +16,10 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;crits&apos;
+filter = globals().get(&apos;BattleResults&apos;)
+&quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
+
+MAIN_PROGRESS_CRITS = &apos;crits&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():
@@ -26,8 +29,10 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    mainCondition = eventData[&apos;avatarResults&apos;][&apos;critsCount&apos;]
-    questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
+    brfilter = filter.BattleResultsFilter(eventData)
+    crits = brfilter.sumCrits(criticalType=questProgress.getProgress(MAIN_PROGRESS_CRITS).getParam(&quot;critTypes&quot;))
+    questProgress.increaseUntilComplete(MAIN_PROGRESS_CRITS, crits)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

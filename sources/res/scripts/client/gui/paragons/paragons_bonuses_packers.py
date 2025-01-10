@@ -10,12 +10,11 @@ from gui.server_events.bonuses import SimpleBonus
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.missions.packers.bonus import SimpleBonusUIPacker, TmanTemplateBonusPacker, getDefaultBonusPackersMap, BonusUIPacker, StyleProgressBonusUIPacker
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from gui.impl.gen.view_models.views.lobby.paragons.common.paragons_vehicle_model import ParagonsVehicleModel
+from gui.impl.gen.view_models.views.lobby.paragons.common.paragons_vehicle_model import ParagonsVehicleModel, VehicleType
 from gui.impl.gen.view_models.views.lobby.paragons.common.paragons_unlock_model import ParagonsUnlockModel
 from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel
-from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyleCamouflage
+from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyle
 from gui.shared.missions.packers.bonus import VehiclesBonusUIPacker
-from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.vehicle_bonus_model import VehicleType
 from gui.shared.gui_items.Vehicle import getNationLessName
 from gui.shared.gui_items.customization import CustomizationTooltipContext
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
@@ -130,14 +129,8 @@ class ParagonsProgressStyleBonusUIPacker(StyleProgressBonusUIPacker):
         styleID = bonus.getStyleID()
         branchID = bonus.getBranchID()
         progressLevel = bonus.getProgressLevel()
-        camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel)
-        icon = ''
-        label = ''
-        if camo is not None:
-            icon = cls.__getIcon(styleID, progressLevel)
-            label = cls.__getLabel(camo)
-        model.setIcon(icon)
-        model.setLabel(label)
+        model.setIcon(cls.__getIcon(styleID, progressLevel))
+        model.setLabel(bonus.format())
         model.setStyleID(styleID)
         model.setBranchID(branchID)
         model.setProgressLevel(progressLevel)
@@ -156,8 +149,8 @@ class ParagonsProgressStyleBonusUIPacker(StyleProgressBonusUIPacker):
         styleID = bonus.getStyleID()
         branchID = bonus.getBranchID()
         progressLevel = bonus.getProgressLevel()
-        camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel)
-        tooltipData = TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=camo.intCD, showStatusBlock=False))
+        style = getProgressionStyle(styleID, branchID, progressLevel)
+        tooltipData = TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=style.intCD, showStatusBlock=False))
         return [
          tooltipData]
 

@@ -3,17 +3,19 @@ from frameworks.wulf.view.submodel_presenter import PageSubModelPresenter
 from gui.impl.backport.backport_tooltip import _BackportTooltipContent
 from gui.impl.gen.view_models.views.lobby.personal_missions.pages.pm3_card_model import Pm3CardModel, SmallCardState
 import SoundGroups
+from gui.server_events.events_dispatcher import showPersonalMissionsOperationsMap
 from gui.server_events.pm3_constants import SOUNDS
 from gui.impl.gen.view_models.views.lobby.personal_missions.pages.pm3_quest_view_model import Pm3QuestViewModel, QuestState, QuestLineType
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_main_quests_view_model import PageViewIdEnum
 from gui.impl.lobby.personal_missions.personal_missions_quest_model import QuestModelParser
-from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsRewardsSelectionWindow
+from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsRewardsSelectionWindow, showPersonalMissionsOperationWindow, SERVER_SETTINGS_KEYS
 from gui.server_events.event_items import PersonalMission
 from gui.shared.event_dispatcher import showHangar
 from helpers import dependency, int2roman
 from personal_missions import PM_BRANCH
 from skeletons.gui.game_control import IPersonalMissionsController
 from gui.impl.gen import R
+from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from gui.shared.utils import decorators
 from gui import SystemMessages
@@ -29,6 +31,7 @@ class PersonalMissionQuestPage(PageSubModelPresenter):
     __slots__ = ('__lastUpdateTime', '__currentQuestId', '__questModelParser')
     __personalMissionsCtrl = dependency.descriptor(IPersonalMissionsController)
     __eventsCache = dependency.descriptor(IEventsCache)
+    __lobbyContext = dependency.descriptor(ILobbyContext)
 
     def __init__(self, viewModel, parentView):
         super(PersonalMissionQuestPage, self).__init__(viewModel, parentView)
@@ -123,7 +126,27 @@ class PersonalMissionQuestPage(PageSubModelPresenter):
          (
           self.viewModel.getSelectionBonus, self.__getSelectionBonus),
          (
-          self.viewModel.updateRewards, self.__updateData))
+          self.viewModel.updateRewards, self.__updateData),
+         (
+          self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onSettingsChange))
+
+    def __onSettingsChange(self, diff):
+        if not any(key in SERVER_SETTINGS_KEYS for key in diff.iterkeys()):
+            return
+        if not self.__lobbyContext.getServerSettings().isPersonalMissionsEnabled(PM_BRANCH.PERSONAL_MISSION_3):
+            showHangar()
+            return
+        ctrl = self.__personalMissionsCtrl
+        currentQuest = ctrl.getQuest(self.__currentQuestId)
+        operationID = currentQuest.getOperationID()
+        operation = ctrl.getOperationById(operationID)
+        if operation.isDisabled():
+            showPersonalMissionsOperationsMap(PM_BRANCH.PERSONAL_MISSION_3)
+            return
+        if currentQuest.isDisabled():
+            showPersonalMissionsOperationWindow(PageViewIdEnum.QUESTS, operationID)
+            return
+        self.__updateData()
 
     def __updateData(self, isShowAnimationRewards=False):
         ctrl = self.__personalMissionsCtrl

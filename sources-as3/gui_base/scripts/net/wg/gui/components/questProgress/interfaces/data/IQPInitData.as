@@ -27,5 +27,7 @@ package net.wg.gui.components.questProgress.interfaces.data
       function get isHiddenInBattleHud() : Boolean;
       
       function get tooltip() : String;
+      
+      function get groupID() : int;
    }
 }

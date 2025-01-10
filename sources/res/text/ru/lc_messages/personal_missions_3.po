@@ -33,7 +33,9 @@ msgstr ""
 "ИСПОЛНЕНИЮ"
 
 msgid "OperationsView/info/tooltip"
-msgstr "Нажмите, чтобы подробнее узнать о кампании «Новые горизонты»."
+msgstr ""
+"Нажмите, чтобы подробнее узнать о\n"
+"кампании «Новые горизонты»."
 
 msgid "OperationsView/operationName"
 msgstr "ОПЕРАЦИЯ"
@@ -66,7 +68,7 @@ msgid "QuestView/acceptButton/default"
 msgstr "Приступить"
 
 msgid "QuestView/acceptButton/done_basic"
-msgstr "Приступить к выполнению"
+msgstr "Перевыполнить с отличием"
 
 msgid "QuestView/acceptButton/tooltip/body"
 msgstr ""
@@ -397,6 +399,9 @@ msgstr "ЗАКРЫТЬ"
 msgid "RewardsView/header/company"
 msgstr "КАМПАНИИ"
 
+msgid "RewardsView/header/gotOneReward"
+msgstr "ПОЛУЧЕНА НАГРАДА!"
+
 msgid "RewardsView/header/gotRewards"
 msgstr "ПОЛУЧЕНЫ НАГРАДЫ"
 
@@ -413,7 +418,10 @@ msgid "RewardsView/header/taskStatus/completeWithHonor"
 msgstr "Выполнено с отличием"
 
 msgid "RewardsView/header/title"
-msgstr "ОПЕРАЦИЯ %(operationName)"
+msgstr "ОПЕРАЦИЯ «%(operationName)»"
+
+msgid "RewardsView/header/titleWithHonor"
+msgstr "ОПЕРАЦИЯ «%(operationName)» ВЫПОЛНЕНА С ОТЛИЧИЕМ"
 
 msgid "VehicleTabs/tooltip/subtitle"
 msgstr ""
@@ -437,6 +445,31 @@ msgstr "НАЗАД"
 
 msgid "VehicleView/compare/label"
 msgstr "Добавить&nbsp;к&nbsp;сравнению"
+
+msgid "VehicleView/description/A161_ARMT"
+msgstr ""
+"Крупный легкий танк с плохой маскировкой и отсутсвием брони – эти недостатки"
+" компесируются отличным огневым потенциалом для своего уровня. Комфортное "
+"орудие с огромным количеством снарядов в барабане в сумме с потрясающей "
+"динамикой позволят ARMT уничтожить любого одноклассника."
+
+msgid "VehicleView/description/A173_TF_2_CLARK"
+msgstr ""
+"Машина прекрасно защищена, что способствует агрессивной тактике игры на "
+"первой линии. Мобильность довольно скромная, поэтому лучше заранее "
+"планировать направление для атаки, а также возможные пути отступления в "
+"случае смены картины боя. Мощное орудие способно противостоять любой цели на"
+" небольшой дистанции, дальний бой из-за недостаточной точности может быть "
+"малоэффективен."
+
+msgid "VehicleView/description/F119_Projet_Murat"
+msgstr ""
+"Французский средний танк с крепкой лобовой бронёй (за исключением уязвимой "
+"НЛД), хорошей мобильностью и орудием для ближнего боя с магазином на 3 "
+"снаряда. Исключительно комфортный угол склонения орудия в 12 градусов "
+"позволяет уверенно чувствовать себя в позиционных боях, делая складки "
+"местности и особенности рельефа лучшими союзниками. Машина оснащена "
+"многогусеничным движителем, что косвенно влияет на выживаемость."
 
 msgid "VehicleView/goTo"
 msgstr "К ОПЕРАЦИИ"
@@ -554,7 +587,7 @@ msgid "selectBonus/point"
 msgstr "• %(item)s"
 
 msgid "tooltips/IntroVideoView/body"
-msgstr "Нажмите, чтобы пропустить просмотр видео."
+msgstr "Нажмите, чтобы пропустить видео."
 
 msgid "tooltips/OperationsView/lastOperation/active/body"
 msgstr ""

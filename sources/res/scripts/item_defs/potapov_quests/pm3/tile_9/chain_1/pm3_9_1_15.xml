@@ -7,15 +7,13 @@
 			<serverOnly>true</serverOnly>
 			<conditions>
 				<postBattle>
-					<and>
-						<vehicleKills>
-							<greaterOrEqual>7</greaterOrEqual>
-						</vehicleKills>
-					</and>
+					<vehicleKills>
+						<greaterOrEqual>7</greaterOrEqual>
+					</vehicleKills>
 				</postBattle>
 			</conditions>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t9:main</id>
 					<expires>

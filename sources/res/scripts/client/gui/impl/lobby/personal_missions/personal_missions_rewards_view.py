@@ -57,7 +57,8 @@ class PersonalMissionsRewardsView(ViewImpl):
         return super(PersonalMissionsRewardsView, self).getViewModel()
 
     def closeView(self):
-        self.soundManager.playSound(VoiceOvers.STOP_REWARD_VO)
+        if self.soundManager.isSoundPlaying(VoiceOvers.REWARD_SCREEN_VO):
+            self.soundManager.playSound(VoiceOvers.STOP_REWARD_VO)
         self.soundManager.setState(SOUNDS.STATE_OVERLAY_HANGAR_GENERAL_GROUP, SOUNDS.STATE_OVERLAY_HANGAR_GENERAL_OFF)
         self.destroy()
         self.__personalMissionsController.onRewardsViewClose(questId=self.__questId, isSelectedRewards=self.__selectedBonuses is not None)

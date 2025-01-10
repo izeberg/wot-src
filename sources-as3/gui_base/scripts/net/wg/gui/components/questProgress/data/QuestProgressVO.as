@@ -33,9 +33,15 @@ package net.wg.gui.components.questProgress.data
       
       private var _headerConditions:Vector.<IHeaderProgressData> = null;
       
+      private var _secondHeaderConditions:Vector.<IHeaderProgressData> = null;
+      
       private var _bodyProgressData:Vector.<IQuestProgressItemData> = null;
       
+      private var _secondBodyProgressData:Vector.<IQuestProgressItemData> = null;
+      
       private var _isHeaderHasProgress:Boolean = true;
+      
+      private var _isSecondHeaderHasProgress:Boolean = true;
       
       private var _isMainOnly:Boolean = true;
       
@@ -48,8 +54,8 @@ package net.wg.gui.components.questProgress.data
       override protected function onDataWrite(param1:String, param2:Object) : Boolean
       {
          var _loc3_:Array = null;
-         var _loc4_:Object = null;
-         var _loc5_:IQuestProgressItemData = null;
+         var _loc4_:QuestProgressItemVO = null;
+         var _loc5_:Object = null;
          var _loc6_:Array = null;
          var _loc7_:int = 0;
          var _loc8_:HeaderProgressDataVO = null;
@@ -61,17 +67,20 @@ package net.wg.gui.components.questProgress.data
                _loc3_ = param2 as Array;
                App.utils.asserter.assertNotNull(_loc3_,BODY_PROGRESS_FIELD_NAME + Errors.INVALID_TYPE + Array);
                this._bodyProgressData = new Vector.<IQuestProgressItemData>();
-               for each(_loc4_ in _loc3_)
-               {
-                  this._bodyProgressData.push(new QuestProgressItemVO(_loc4_));
-               }
+               this._secondBodyProgressData = new Vector.<IQuestProgressItemData>();
                this._bodyItemsMap = new Dictionary();
-               for each(_loc5_ in this._bodyProgressData)
+               for each(_loc5_ in _loc3_)
                {
-                  if(_loc5_.id)
+                  _loc4_ = new QuestProgressItemVO(_loc5_);
+                  if(_loc4_.initData.groupID > QUEST_PROGRESS_BASE.DEFAULT_GROUP_ID)
                   {
-                     this._bodyItemsMap[_loc5_.id] = _loc5_;
+                     this._secondBodyProgressData.push(_loc4_);
                   }
+                  else
+                  {
+                     this._bodyProgressData.push(_loc4_);
+                  }
+                  this._bodyItemsMap[_loc4_.id] = _loc4_;
                }
             }
             return false;
@@ -82,13 +91,12 @@ package net.wg.gui.components.questProgress.data
             App.utils.asserter.assertNotNull(_loc6_,HEADER_PROGRESS_FIELD_NAME + Errors.INVALID_TYPE + Array);
             _loc7_ = _loc6_.length;
             this._headerConditions = new Vector.<IHeaderProgressData>();
+            this._secondHeaderConditions = new Vector.<IHeaderProgressData>();
             _loc9_ = 0;
             while(_loc9_ < _loc7_)
             {
                _loc8_ = new HeaderProgressDataVO(_loc6_[_loc9_]);
-               this._headerConditions.push(_loc8_);
-               this._isHeaderHasProgress = this._isHeaderHasProgress && _loc8_.progressType != QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_NONE;
-               this._isMainOnly = this._isMainOnly && _loc8_.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE;
+               this.addHeaderItem(_loc8_);
                _loc9_++;
             }
             return false;
@@ -108,6 +116,15 @@ package net.wg.gui.components.questProgress.data
             this._bodyProgressData.splice(0,this._bodyProgressData.length);
             this._bodyProgressData = null;
          }
+         if(this._secondBodyProgressData)
+         {
+            for each(_loc1_ in this._secondBodyProgressData)
+            {
+               _loc1_.dispose();
+            }
+            this._secondBodyProgressData.splice(0,this._secondBodyProgressData.length);
+            this._secondBodyProgressData = null;
+         }
          this.clearHeaderConditions();
          App.utils.data.cleanupDynamicObject(this._bodyItemsMap);
          this._bodyItemsMap = null;
@@ -124,6 +141,11 @@ package net.wg.gui.components.questProgress.data
          return param1 in this._bodyItemsMap ? this._bodyItemsMap[param1] : null;
       }
       
+      public function getSecondData() : Vector.<IQuestProgressItemData>
+      {
+         return this._secondBodyProgressData;
+      }
+      
       public function parseProgressData(param1:String, param2:Object) : IQPProgressData
       {
          var _loc3_:IQuestProgressItemData = this.getDataItem(param1);
@@ -133,12 +155,15 @@ package net.wg.gui.components.questProgress.data
       
       public function updateHeaderProgressData(param1:Array) : void
       {
-         var _loc2_:Object = null;
+         var _loc2_:HeaderProgressDataVO = null;
+         var _loc3_:Object = null;
          this.clearHeaderConditions();
          this._headerConditions = new Vector.<IHeaderProgressData>();
-         for each(_loc2_ in param1)
+         this._secondHeaderConditions = new Vector.<IHeaderProgressData>();
+         for each(_loc3_ in param1)
          {
-            this._headerConditions.push(new HeaderProgressDataVO(_loc2_));
+            _loc2_ = new HeaderProgressDataVO(_loc3_);
+            this.addHeaderItem(_loc2_);
          }
       }
       
@@ -149,9 +174,27 @@ package net.wg.gui.components.questProgress.data
          _loc3_.updateProgressData(param2);
       }
       
+      private function addHeaderItem(param1:HeaderProgressDataVO) : void
+      {
+         if(param1.groupID > QUEST_PROGRESS_BASE.DEFAULT_GROUP_ID)
+         {
+            this._secondHeaderConditions.push(param1);
+            this._isSecondHeaderHasProgress = this._isSecondHeaderHasProgress && param1.progressType != QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_NONE;
+         }
+         else
+         {
+            this._headerConditions.push(param1);
+            this._isHeaderHasProgress = this._isHeaderHasProgress && param1.progressType != QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_NONE;
+         }
+         this._isMainOnly = this._isMainOnly && param1.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE;
+      }
+      
       private function clearHeaderConditions() : void
       {
          var _loc1_:IDisposable = null;
+         this._isHeaderHasProgress = true;
+         this._isSecondHeaderHasProgress = true;
+         this._isMainOnly = true;
          if(this._headerConditions)
          {
             for each(_loc1_ in this._headerConditions)
@@ -161,11 +204,25 @@ package net.wg.gui.components.questProgress.data
             this._headerConditions.splice(0,this._headerConditions.length);
             this._headerConditions = null;
          }
+         if(this._secondHeaderConditions)
+         {
+            for each(_loc1_ in this._secondHeaderConditions)
+            {
+               _loc1_.dispose();
+            }
+            this._secondHeaderConditions.splice(0,this._secondHeaderConditions.length);
+            this._secondHeaderConditions = null;
+         }
       }
       
       public function get headerConditions() : Vector.<IHeaderProgressData>
       {
          return this._headerConditions;
+      }
+      
+      public function get secondHeaderConditions() : Vector.<IHeaderProgressData>
+      {
+         return this._secondHeaderConditions;
       }
       
       public function get questName() : String
@@ -221,6 +278,11 @@ package net.wg.gui.components.questProgress.data
       public function get isHeaderHasProgress() : Boolean
       {
          return this._isHeaderHasProgress;
+      }
+      
+      public function get isSecondHeaderHasProgress() : Boolean
+      {
+         return this._isSecondHeaderHasProgress;
       }
       
       public function get isMainOnly() : Boolean

@@ -139,6 +139,13 @@ package net.wg.gui.battle.views.questProgress
             _loc2_ = _loc4_.orderType;
             _loc3_++;
          }
+         if(secondItems && secondItems.length)
+         {
+            for each(_loc4_ in secondItems)
+            {
+               _loc4_.alpha = ALPHA_HIDE;
+            }
+         }
          for each(_loc5_ in orItems)
          {
             _loc5_.alpha = ALPHA_HIDE;
@@ -147,7 +154,7 @@ package net.wg.gui.battle.views.questProgress
          this.flag.setData(param1.questIndexStr,param1.questIcon);
          this.flag.alpha = ALPHA_HIDE;
          this.separator.alpha = ALPHA_HIDE;
-         this.lock.setLockedItemsCount(items.length - this._separatorPositionAfterTaskIndex - 1);
+         this.lock.setLockedItemsCount(this.getTotalItemsCount() - this._separatorPositionAfterTaskIndex - 1);
          this.lock.resetShownContent();
          this.showContent(this._isUseAnim && !this._isContentShown);
       }
@@ -178,31 +185,40 @@ package net.wg.gui.battle.views.questProgress
       
       override protected function doLayout() : void
       {
-         var _loc2_:int = 0;
-         var _loc3_:IQPItemRenderer = null;
+         var _loc1_:IQPItemRenderer = null;
          if(!this._isAllowLayoutContent)
          {
             return;
          }
          this._flagWidth = this.flag.getFlagWidth();
          this._flagBottomY = this.flag.y + this.flag.height;
-         var _loc1_:int = Boolean(items) ? int(items.length) : int(Values.ZERO);
-         this._positions.recalculate(_loc1_,this._flagWidth,this._separatorPositionAfterTaskIndex);
+         this._positions.recalculate(this.getTotalItemsCount(),this._flagWidth,this._separatorPositionAfterTaskIndex);
          this.flag.x = this._positions.flagToX;
          this.separator.x = this._positions.separatorToX;
          this.lock.x = this._positions.lockToX;
+         var _loc2_:int = 0;
          if(items)
          {
-            _loc2_ = 0;
-            for each(_loc3_ in items)
+            for each(_loc1_ in items)
             {
-               if(_loc3_.visible)
+               if(_loc1_.visible)
                {
-                  _loc3_.x = this._positions.itemToX(_loc2_);
+                  _loc1_.x = this._positions.itemToX(_loc2_);
                   _loc2_++;
                }
             }
             this.layoutOrItems();
+         }
+         if(secondItems)
+         {
+            for each(_loc1_ in secondItems)
+            {
+               if(_loc1_.visible)
+               {
+                  _loc1_.x = this._positions.itemToX(_loc2_);
+                  _loc2_++;
+               }
+            }
          }
       }
       
@@ -244,6 +260,10 @@ package net.wg.gui.battle.views.questProgress
          this.lock.visible = this._isQPVisibleBySettings && hasLockedItems();
          this.updateSeparatorVisibility();
          for each(_loc1_ in items)
+         {
+            _loc1_.visible = this._isQPVisibleBySettings;
+         }
+         for each(_loc1_ in secondItems)
          {
             _loc1_.visible = this._isQPVisibleBySettings;
          }
@@ -329,11 +349,30 @@ package net.wg.gui.battle.views.questProgress
                }
                _loc3_++;
             }
+            _loc3_ = 0;
+            while(_loc3_ < secondItems.length)
+            {
+               if(_loc2_ + _loc3_ > this._separatorPositionAfterTaskIndex)
+               {
+                  secondItems[_loc3_].unlock();
+               }
+               _loc3_++;
+            }
             if(this.lock.visible)
             {
                this.lock.hide();
             }
          }
+      }
+      
+      private function getTotalItemsCount() : int
+      {
+         var _loc1_:int = Boolean(items) ? int(items.length) : int(Values.ZERO);
+         if(secondItems && secondItems.length)
+         {
+            _loc1_ += secondItems.length;
+         }
+         return _loc1_;
       }
       
       private function updateSeparatorVisibility() : void
@@ -358,6 +397,11 @@ package net.wg.gui.battle.views.questProgress
             _loc1_.alpha = ALPHA_HIDE;
             _loc1_.x = Values.ZERO;
          }
+         for each(_loc1_ in secondItems)
+         {
+            _loc1_.alpha = ALPHA_HIDE;
+            _loc1_.x = Values.ZERO;
+         }
          for each(_loc2_ in orItems)
          {
             _loc2_.alpha = ALPHA_HIDE;
@@ -372,10 +416,9 @@ package net.wg.gui.battle.views.questProgress
       
       private function showContent(param1:Boolean) : void
       {
-         var _loc3_:int = 0;
-         var _loc4_:Tween = null;
-         var _loc5_:int = 0;
-         var _loc6_:IQPItemOrConditionIcon = null;
+         var _loc3_:Tween = null;
+         var _loc4_:int = 0;
+         var _loc5_:IQPItemOrConditionIcon = null;
          this._isContentShown = true;
          this._isUseAnim = param1;
          if(!this._isAllowShowContentByTimer)
@@ -396,8 +439,7 @@ package net.wg.gui.battle.views.questProgress
             if(items)
             {
                this._flagWidth = this.flag.getFlagWidth();
-               _loc3_ = Boolean(items) ? int(items.length) : int(Values.ZERO);
-               this._positions.recalculate(_loc3_,this._flagWidth,this._separatorPositionAfterTaskIndex);
+               this._positions.recalculate(this.getTotalItemsCount(),this._flagWidth,this._separatorPositionAfterTaskIndex);
                this.flag.x = -this._flagWidth >> 1;
                this._flagTween = new Tween(FADE_IN_DURATION,this.flag,{
                   "x":this._positions.flagToX,
@@ -428,28 +470,11 @@ package net.wg.gui.battle.views.questProgress
                   });
                   this._separatorTween.fastTransform = false;
                }
-               _loc4_ = null;
+               _loc3_ = null;
                this._itemsTween = new Vector.<Tween>();
-               _loc5_ = 0;
-               for each(_loc2_ in items)
-               {
-                  if(_loc2_.visible)
-                  {
-                     _loc2_.x = Values.ZERO;
-                     _loc4_ = new Tween(FADE_IN_DURATION,_loc2_,{
-                        "x":this._positions.itemToX(_loc5_),
-                        "alpha":ALPHA_SHOW
-                     },{
-                        "paused":false,
-                        "ease":Quartic.easeOut,
-                        "delay":0,
-                        "onComplete":null
-                     });
-                     _loc4_.fastTransform = false;
-                     this._itemsTween.push(_loc4_);
-                     _loc5_++;
-                  }
-               }
+               _loc4_ = 0;
+               _loc4_ = this.tweenItems(items,_loc4_);
+               _loc4_ = this.tweenItems(secondItems,_loc4_);
             }
          }
          else
@@ -462,11 +487,41 @@ package net.wg.gui.battle.views.questProgress
             {
                _loc2_.alpha = ALPHA_SHOW;
             }
-            for each(_loc6_ in orItems)
+            for each(_loc2_ in secondItems)
             {
-               _loc6_.alpha = ALPHA_SHOW;
+               _loc2_.alpha = ALPHA_SHOW;
+            }
+            for each(_loc5_ in orItems)
+            {
+               _loc5_.alpha = ALPHA_SHOW;
             }
          }
+      }
+      
+      private function tweenItems(param1:Vector.<IQPItemRenderer>, param2:int) : int
+      {
+         var _loc3_:Tween = null;
+         var _loc4_:IQPItemRenderer = null;
+         for each(_loc4_ in param1)
+         {
+            if(_loc4_.visible)
+            {
+               _loc4_.x = Values.ZERO;
+               _loc3_ = new Tween(FADE_IN_DURATION,_loc4_,{
+                  "x":this._positions.itemToX(param2),
+                  "alpha":ALPHA_SHOW
+               },{
+                  "paused":false,
+                  "ease":Quartic.easeOut,
+                  "delay":0,
+                  "onComplete":null
+               });
+               _loc3_.fastTransform = false;
+               this._itemsTween.push(_loc3_);
+               param2++;
+            }
+         }
+         return param2;
       }
       
       private function layoutOrItems() : void

@@ -10,7 +10,7 @@
 pass
          </scripts>
 			<bonus>
-				<premium>1</premium>
+				<premium_plus>1</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t8:main</id>
 					<expires>
@@ -44,10 +44,10 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;damageAndAssist&apos;
+MAIN_PROGRESS_ID = &apos;assist&apos;
 MAIN_SERIES_ID = &apos;battlesSeries&apos;
 
-ADD_PROGRESS_ID = &apos;damageAndAssistAdv&apos;
+ADD_PROGRESS_ID = &apos;assistAdv&apos;
 ADD_SERIES_ID = &apos;battlesSeriesAdv&apos;
 
 def onInit(eventType, eventData, quest, processor):
@@ -59,7 +59,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     result = eventData[&apos;avatarResults&apos;]
-    totalAssistedDamage = result[&apos;damageDealt&apos;] + result[&apos;damageAssistedRadio&apos;] + result[&apos;damageAssistedTrack&apos;]
+    totalAssistedDamage = result[&apos;damageAssistedRadio&apos;] + result[&apos;damageAssistedTrack&apos;]
 
     questProgress.increaseSumProgress(MAIN_PROGRESS_ID, MAIN_SERIES_ID, totalAssistedDamage)
     questProgress.increaseSumProgress(ADD_PROGRESS_ID, ADD_SERIES_ID, totalAssistedDamage)

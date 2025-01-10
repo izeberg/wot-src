@@ -16,7 +16,7 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;damage&apos;
+MAIN_PROGRESS_KILLS = &apos;killsDiversity&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():

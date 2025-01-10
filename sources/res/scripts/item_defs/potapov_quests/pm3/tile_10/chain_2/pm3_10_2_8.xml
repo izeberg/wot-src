@@ -31,11 +31,10 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-    destroyedTracks = brfilter.sumCrits(criticalType=questProgress.getProgress(MAIN_PROGRESS_CRITS).getParam(&quot;critTypes&quot;))
-    kills = eventData[&apos;avatarResults&apos;][&apos;kills&apos;]
-    killsRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, kills)
-    if killRes:
+    if questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;kills&apos;]):
+        destroyedTracks = brfilter.sumCrits(criticalType=questProgress.getProgress(MAIN_PROGRESS_CRITS).getParam(&quot;critTypes&quot;))
         questProgress.increaseUntilComplete(MAIN_PROGRESS_CRITS, destroyedTracks)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

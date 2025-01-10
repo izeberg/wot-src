@@ -27,13 +27,11 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    mainCondition = eventData[&apos;avatarResults&apos;][&apos;damaged&apos;]
-
     topByDamage = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;damageDealt&apos;]
     topByDamageRes = topByDamage &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_DAMAGE).getParam(&quot;desiredPosition&quot;)
-
     if topByDamageRes:
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
+        questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;damagedHp&apos;])
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

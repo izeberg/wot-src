@@ -25,7 +25,7 @@ def onInit(eventType, eventData, quest, processor):
 
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
-    questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, eventsData[&apos;avatarResults&apos;][&apos;freeXP&apos;])
+    questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;originalXP&apos;])
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

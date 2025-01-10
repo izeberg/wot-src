@@ -10,7 +10,7 @@
 pass
          </scripts>
 			<bonus>
-				<premium>2</premium>
+				<premium_plus>2</premium_plus>
 				<token>
 					<id>token:pt:final:s3:t9:main</id>
 					<expires>
@@ -75,8 +75,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress.increaseBattleSeriesUntilCompleteOrFail(MAIN_PROGRESS_SERIES, topByDamageRes)
     questProgress.increaseBattleSeriesUntilCompleteOrFail(ADD_PROGRESS_SERIES, topByDamageAddRes)
 
-    eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID,
-                                additionalProgressID=ADD_SERIES_PROGRESS_ID))
+    eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 
 events = {

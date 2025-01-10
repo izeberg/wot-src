@@ -57,7 +57,7 @@ package net.wg.gui.components.questProgress.components.headerProgress
          var _loc2_:IHeaderProgressItem = null;
          for each(_loc3_ in param1)
          {
-            _loc2_ = this.getItemByOrderType(_loc3_.orderType);
+            _loc2_ = this.getItemByOrderType(_loc3_.orderType,_loc3_.goal,_loc3_.progressType);
             if(_loc2_)
             {
                _loc2_.update(_loc3_);
@@ -108,14 +108,14 @@ package net.wg.gui.components.questProgress.components.headerProgress
          }
       }
       
-      private function getItemByOrderType(param1:String) : IHeaderProgressItem
+      private function getItemByOrderType(param1:String, param2:int, param3:String) : IHeaderProgressItem
       {
-         var _loc2_:IHeaderProgressItem = null;
-         for each(_loc2_ in this._headerConditions)
+         var _loc4_:IHeaderProgressItem = null;
+         for each(_loc4_ in this._headerConditions)
          {
-            if(_loc2_.orderType == param1)
+            if(_loc4_.orderType == param1 && _loc4_.goal == param2 && _loc4_.progressType == param3)
             {
-               return _loc2_;
+               return _loc4_;
             }
          }
          return null;

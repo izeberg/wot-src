@@ -5,7 +5,14 @@
 			<enabled>true</enabled>
 			<id>pm3_9_1_9_main</id>
 			<serverOnly>true</serverOnly>
-			<conditions/>
+			<conditions>
+				<postBattle>
+					<results>
+						<key>kills</key>
+						<max>10</max>
+					</results>
+				</postBattle>
+			</conditions>
 			<scripts>
 QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 &quot;&quot;&quot;:type: quest_definitions.QUEST_EVENT_TYPE&quot;&quot;&quot;
@@ -13,15 +20,9 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-server_constants = globals().get(&apos;server_constants&apos;)
-&quot;&quot;&quot;:type: server_constants&quot;&quot;&quot;
-
-items = globals().get(&apos;items&apos;)
-&quot;&quot;&quot;:type: items&quot;&quot;&quot;
-
-filter = globals().get(&apos;BattleResults&apos;)
-&quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
-MAIN_PROGRESS_ID = &apos;damage&apos;
+MAIN_PROGRESS_TOP_BY_KILLS = &apos;topByKills&apos;
+MAIN_PROGRESS_HITS_FREQUENCY = &apos;hitsFrequency&apos;
+MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():
@@ -31,10 +32,13 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    brfilter = filter.BattleResultsFilter(eventData)
-    mainCondition = brfilter.sumDamage(
-        brfilter.filterDamageTo(vehType=questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&apos;targetClasses&apos;)))
-    questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
+    shots = eventData[&apos;avatarResults&apos;][&apos;shots&apos;]
+    if shots:
+        killsPosition = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;kills&apos;]
+        if killsPosition &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_KILLS).getParam(&apos;desiredPosition&apos;):
+            hitsFrequency = eventData[&apos;avatarResults&apos;][&apos;enemyHits&apos;] * 100. / shots
+            questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_HITS_FREQUENCY, hitsFrequency)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

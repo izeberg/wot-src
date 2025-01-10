@@ -18,7 +18,8 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 
 filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
-MAIN_PROGRESS_ID = &apos;damage&apos;
+
+MAIN_PROGRESS_DAMAGE = &apos;damage&apos;
 MAIN_PROGRESS_ALIVE = &apos;alive&apos;
 
 def onInit(eventType, eventData, quest, processor):
@@ -30,10 +31,10 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-    mainCondition = brfilter.sumDamage(brfilter.filterDamageTo(targetFlags=[&apos;immobilized&apos;]))
     if brfilter.alive():
-        questProgress.setComplete(MAIN_PROGRESS_ALIVE)
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
+        mainCondition = brfilter.sumDamage(brfilter.filterDamageTo(targetFlags=[&apos;immobilized&apos;]))
+        questProgress.increaseUntilComplete(MAIN_PROGRESS_DAMAGE, mainCondition)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

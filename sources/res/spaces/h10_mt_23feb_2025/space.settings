@@ -142,7 +142,7 @@
 	<isTemporaryOrEventSpace>true</isTemporaryOrEventSpace>
 	<hangarSettings>
 		<customizationHangarSettings>
-			<v_start_pos>-189.554001 0.015000 6.000000</v_start_pos>
+			<v_start_pos>-189.554001 -0.055000 6.000000</v_start_pos>
 			<v_start_angles>180.000000 0.000000 0.000000</v_start_angles>
 			<shadow_forward_y_offset>-0.020000</shadow_forward_y_offset>
 			<shadow_deferred_y_offset>0.000000</shadow_deferred_y_offset>
@@ -151,7 +151,7 @@
 				<maxHeight>3</maxHeight>
 			</havokSceneBounds>
 		</customizationHangarSettings>
-		<v_start_pos>-189.554001 0.000000 6.000000</v_start_pos>
+		<v_start_pos>-189.554001 -0.055000 6.000000</v_start_pos>
 		<v_start_angles>180.000000 0.000000 0.000000</v_start_angles>
 		<shadow_light_dir>-0.300000 -0.500000 0.700000</shadow_light_dir>
 		<vehicle_gun_pitch>0.000000</vehicle_gun_pitch>

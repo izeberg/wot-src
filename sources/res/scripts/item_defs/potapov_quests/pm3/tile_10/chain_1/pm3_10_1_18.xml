@@ -16,7 +16,7 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;assist&apos;
+MAIN_PROGRESS_ASSIST = &apos;assist&apos;
 MAIN_PROGRESS_MILEAGE = &apos;mileage&apos;
 MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
 
@@ -28,13 +28,10 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    assist = eventData[&apos;avatarResults&apos;][&apos;damageAssistedRadio&apos;]
     mileage = eventData[&apos;avatarResults&apos;][&apos;mileage&apos;]
-
-    assistRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, assist)
-    mileageRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_MILEAGE, mileage)
-    if assistRes and mileageRes:
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
+    if questProgress.increaseUntilComplete(MAIN_PROGRESS_MILEAGE, mileage):
+        assistDamage = eventData[&apos;avatarResults&apos;][&apos;damageAssistedRadio&apos;]
+        questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ASSIST, assistDamage)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

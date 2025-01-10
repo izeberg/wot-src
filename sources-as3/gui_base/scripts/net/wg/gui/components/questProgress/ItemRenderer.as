@@ -151,6 +151,11 @@ package net.wg.gui.components.questProgress
          return this._progressData.isHidden;
       }
       
+      public function get groupID() : int
+      {
+         return this._initData.groupID;
+      }
+      
       protected function get progressData() : IQPProgressData
       {
          return this._progressData;

@@ -18,7 +18,9 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 
 filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
+
 MAIN_PROGRESS_ID = &apos;damage&apos;
+MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():
@@ -32,7 +34,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
     myHealth = brfilter.getMyHP()
     questProgress.getProgress(MAIN_PROGRESS_ID).setGoal(myHealth * questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;vehicleHealthFactor&quot;))
 
-    increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;])
+    questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;])
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

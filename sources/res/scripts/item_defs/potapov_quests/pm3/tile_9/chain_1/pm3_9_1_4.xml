@@ -19,6 +19,9 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 items = globals().get(&apos;items&apos;)
 &quot;&quot;&quot;:type: items&quot;&quot;&quot;
 
+filter = globals().get(&apos;BattleResults&apos;)
+&quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
+
 MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
 MAIN_PROGRESS_KILLS = &apos;killsDiversity&apos;
 
@@ -30,14 +33,15 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    distance = -questProgress.getProgress(MAIN_PROGRESS_KILLS).getParam(&apos;distanceShortOrEqual&apos;)
-    for _, victimTypeCompDescr, eventList  in eventData[&apos;avatarResults&apos;][&apos;killList&apos;]:
-        for event in eventList:
-            reqDistance = distance if distance != 0 else -event[DAMAGE_PARAMETERS.circularVisionRadius]
-            if reqDistance &gt; copysign(event[DAMAGE_PARAMETERS.distance], reqDistance):
-                continue
-            vehClass = items.vehicles.getVehicleClass(victimTypeCompDescr)
-            questProgress.increaseSeriesCounterUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_KILLS, vehClass, 1)
+    brfilter = filter.BattleResultsFilter(eventData)
+
+    dist = questProgress.getProgress(MAIN_PROGRESS_KILLS).getParam(&apos;distanceShortOrEqual&apos;)
+    kills = brfilter.filterDamageTo(distance=-dist, result=[&apos;killed&apos;])
+    for _, victimTypeCompDescr in kills:
+        vehClass = items.vehicles.getVehicleClass(victimTypeCompDescr)
+        if questProgress.increaseCounterUntilComplete(MAIN_PROGRESS_KILLS, vehClass, 1):
+            questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
+            break
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

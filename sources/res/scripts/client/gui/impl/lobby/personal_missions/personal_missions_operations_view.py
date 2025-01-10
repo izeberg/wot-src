@@ -10,6 +10,7 @@ from gui.selectable_reward.common import PersonalMissionsSelectableRewardManager
 from gui.server_events.event_items import PMOperation
 from gui.shared.event_dispatcher import showHangar
 from gui.shared.gui_items import Vehicle
+from personal_missions import PM_BRANCH
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IPersonalMissionsController
 from helpers import dependency
@@ -17,11 +18,12 @@ from account_helpers import AccountSettings
 from account_helpers.AccountSettings import PersonalMissions
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_operations_view_model import RewardsStatus
 from gui.impl.gen.view_models.views.lobby.personal_missions.pm3_operation_model import Pm3OperationModel, MissionStatus
+from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from helpers import int2roman, i18n
 from gui.impl.gen.view_models.views.lobby.personal_missions.pm3_operation_model import LastMissionStatus
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_main_quests_view_model import PageViewIdEnum
-from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsOperationWindow, showPersonalMissionsWebbrg, PM3_INFO_PAGE, showPersonalMissionsRewardsSelectionWindow
+from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsOperationWindow, showPersonalMissionsWebbrg, PM3_INFO_PAGE, showPersonalMissionsRewardsSelectionWindow, SERVER_SETTINGS_KEYS
 from gui.server_events.pm3_constants import SOUNDS
 if typing.TYPE_CHECKING:
     import Event
@@ -38,6 +40,7 @@ class PersonalMissionsOperationsView(ViewImpl):
     __itemsCache = dependency.descriptor(IItemsCache)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __selectableRewardManager = PersonalMissionsSelectableRewardManager
+    __lobbyContext = dependency.descriptor(ILobbyContext)
 
     def __init__(self, layoutID=R.views.lobby.personal_missions.PersonalMissionsOperationsView()):
         settings = ViewSettings(layoutID)
@@ -110,7 +113,17 @@ class PersonalMissionsOperationsView(ViewImpl):
          (
           self.viewModel.onTakeRewards, self.__onTakeRewards),
          (
-          self.viewModel.onInfo, self.__onInfo))
+          self.viewModel.onInfo, self.__onInfo),
+         (
+          self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onSettingsChange))
+
+    def __onSettingsChange(self, diff):
+        if not any(key in SERVER_SETTINGS_KEYS for key in diff.iterkeys()):
+            return
+        if not self.__lobbyContext.getServerSettings().isPersonalMissionsEnabled(PM_BRANCH.PERSONAL_MISSION_3):
+            showHangar()
+            return
+        self.__updateModel()
 
     def __updateModel(self):
         with self.viewModel.transaction() as (model):

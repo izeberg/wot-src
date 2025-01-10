@@ -137,6 +137,11 @@ package net.wg.gui.battle.views.questProgress
          this._originalView.updateHeaderProgress(param1);
       }
       
+      public function updateSecondHeaderProgress(param1:Vector.<IHeaderProgressData>) : void
+      {
+         this._originalView.updateSecondHeaderProgress(param1);
+      }
+      
       private function clearDynamicData() : void
       {
          if(this._currentItem)

@@ -5,7 +5,14 @@
 			<enabled>true</enabled>
 			<id>pm3_10_1_24_main</id>
 			<serverOnly>true</serverOnly>
-			<conditions/>
+			<conditions>
+				<postBattle>
+					<results>
+						<key>kills</key>
+						<max>10</max>
+					</results>
+				</postBattle>
+			</conditions>
 			<scripts>
 LOG = globals().get(&apos;LOG&apos;)
 &quot;&quot;&quot;:type: typing.LOG_DEBUG_DEV&quot;&quot;&quot;
@@ -17,7 +24,7 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
 MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
-MAIN_PROGRESS_TOP_BY_DAMAGE = &apos;topByDamage&apos;
+MAIN_PROGRESS_TOP_BY_KILLS = &apos;topByKills&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():
@@ -27,10 +34,10 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    topByDamage = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;damageDealt&apos;]
-    topByDamageRes = topByDamage &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_DAMAGE).getParam(&quot;desiredPosition&quot;)
+    topByKills = eventData[&apos;avatarResults&apos;][&apos;misc&apos;][&apos;max&apos;][&apos;kills&apos;]
+    topByKillsRes = topByKills &lt;= questProgress.getProgress(MAIN_PROGRESS_TOP_BY_KILLS).getParam(&quot;desiredPosition&quot;)
 
-    if topByDamageRes:
+    if topByKillsRes:
         questProgress.increaseUntilComplete(MAIN_PROGRESS_SERIES, 1)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))

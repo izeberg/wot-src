@@ -19,7 +19,7 @@ quest_progress = globals().get(&apos;quest_progress&apos;)
 filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;damage&apos;
+MAIN_PROGRESS_DAMAGE = &apos;damage&apos;
 MAIN_PROGRESS_KILLS = &apos;kills&apos;
 
 def onInit(eventType, eventData, quest, processor):
@@ -30,14 +30,12 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    damage = eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;]
     brfilter = filter.BattleResultsFilter(eventData)
-    mainCondition = len(
-        brfilter.filterDamageTo(result=[&apos;killed&apos;], vehType=questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&apos;targetClasses&apos;)))
-    damageRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, damage)
-
-    if damageRes:
-        damageRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_KILLS, mainCondition)
+    damage = eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;]
+    if questProgress.increaseUntilComplete(MAIN_PROGRESS_DAMAGE, damage):
+        mainCondition = len(
+            brfilter.filterDamageTo(result=[&apos;killed&apos;], vehType=questProgress.getProgress(MAIN_PROGRESS_KILLS).getParam(&apos;targetClasses&apos;)))
+        questProgress.increaseUntilComplete(MAIN_PROGRESS_KILLS, mainCondition)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

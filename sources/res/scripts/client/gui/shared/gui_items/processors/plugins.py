@@ -766,7 +766,7 @@ class PMSelectConfirmator(CheckBoxConfirmator):
         self.oldQuest = oldQuest
 
     def _makeMeta(self):
-        return CheckBoxDialogMeta('questsConfirmDialog', messageCtx={'newQuest': self.quest.getUserName(), 
+        return CheckBoxDialogMeta('questsConfirmPm3Dialog' if self.settingFieldName == 'questsConfirmDialogShowPM3' else 'questsConfirmDialog', messageCtx={'newQuest': self.quest.getUserName(), 
            'oldQuest': self.oldQuest.getUserName()})
 
 

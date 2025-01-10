@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<name>ResourceLoaded</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>CLIENT</senderAspects>
+	<receiverAspects>CLIENT</receiverAspects>
+	<param>
+		<name>gameObject</name>
+		<typecode>GameObjectT</typecode>
+	</param>
+</root>

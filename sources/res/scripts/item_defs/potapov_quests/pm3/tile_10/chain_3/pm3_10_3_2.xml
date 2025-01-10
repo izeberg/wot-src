@@ -20,7 +20,7 @@ filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
 
 MAIN_PROGRESS_ID = &apos;blockedDamage&apos;
-MAIN_PROGRESS_ALIVE = &apos;alive&apos;
+MAIN_PROGRESS_SERIES = &apos;battlesSeries&apos;
 
 def onInit(eventType, eventData, quest, processor):
     for event in events.iterkeys():
@@ -30,11 +30,11 @@ def onInit(eventType, eventData, quest, processor):
 def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
-    blockedDamage = eventData[&apos;avatarResults&apos;][&apos;damageBlockedByArmor&apos;]
     brfilter = filter.BattleResultsFilter(eventData)
     if brfilter.alive():
-        questProgress.setComplete(MAIN_PROGRESS_ALIVE)
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, blockedDamage)
+        blockedDamage = eventData[&apos;avatarResults&apos;][&apos;damageBlockedByArmor&apos;]
+        questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, blockedDamage)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

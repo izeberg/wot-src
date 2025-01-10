@@ -16,6 +16,9 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
+constants = globals().get(&apos;constants&apos;)
+&quot;&quot;&quot;:type: constants&quot;&quot;&quot;
+
 filter = globals().get(&apos;BattleResults&apos;)
 &quot;&quot;&quot;:type: battle_result_filters&quot;&quot;&quot;
 
@@ -31,12 +34,15 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     brfilter = filter.BattleResultsFilter(eventData)
-    levelDiff = questProgress.getProgress(MAIN_PROGRESS_DAMAGE).getParam(&apos;targetLevelDiff&apos;)
-    mainCondition = len(brfilter.filterDamageTo(
-                                   result=[&apos;damaged&apos;],
-                                   level=range(brfilter.getMyLevel() + levelDiff, constants.MAX_VEHICLE_LEVEL + 1)))
+    attackReason = questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&apos;attackReasons&apos;)
+    levelDiff = questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&apos;targetLevelDiff&apos;)
+    levelRange = range(brfilter.getMyLevel() + levelDiff, constants.MAX_VEHICLE_LEVEL + 1)
 
-    questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, mainCondition)
+    hits = sum(len(shots) for shots in brfilter.filterDamageTo(result=[&apos;damaged&apos;],
+                                                               method=attackReason,
+                                                               level=levelRange).itervalues())
+    questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, hits)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

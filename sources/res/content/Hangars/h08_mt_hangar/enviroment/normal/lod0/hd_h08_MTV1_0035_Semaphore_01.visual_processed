@@ -8,60 +8,20 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_h08_MTV1_0035_Semaphore_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s1</node>
+		<node>Scene Root</node>
 		<geometry>
-			<vertices>s1Shape.vertices</vertices>
-			<primitive>s1Shape.indices</primitive>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/glow.fx</fx>
-					<materialKind>112</materialKind>
+					<materialKind>0</materialKind>
 					<collisionFlags>255</collisionFlags>
-					<property>
-						alphaReference
-						<Int>5</Int>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0022_Kiosk_glass_AM.dds</Texture>
@@ -74,23 +34,19 @@
 						selfIllumination
 						<Float>2000.000000</Float>
 					</property>
+					<property>
+						alphaReference
+						<Int>5</Int>
+					</property>
 				</material>
 				<groupOrigin>0.241918 3.699493 -0.988499</groupOrigin>
 			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s0</node>
-		<geometry>
-			<vertices>s0Shape.vertices</vertices>
-			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
-				0
+				1
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>112</materialKind>
+					<materialKind>0</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
@@ -113,11 +69,11 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<constraints/>
 	<boundingBox>
 		<min>-0.254320 -0.042383 -1.258330</min>
 		<max>0.263975 3.971649 0.176156</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>6626</geometrySize>
-	<minUVDensity>0.064729</minUVDensity>
+	<minUVDensity>0.064728</minUVDensity>
 </root>

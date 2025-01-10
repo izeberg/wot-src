@@ -145,7 +145,7 @@ class AverageDescription(RegularDescription):
 class HeaderDescription(IClientDescription):
     __slots__ = ('displayType', 'isInOrGroup')
 
-    def __init__(self, displayType):
+    def __init__(self, displayType, isInOrGroup=False):
         self.displayType = displayType
         self.isInOrGroup = False
 

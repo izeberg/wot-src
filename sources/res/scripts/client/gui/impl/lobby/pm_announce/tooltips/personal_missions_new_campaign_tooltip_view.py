@@ -37,14 +37,11 @@ class PersonalMissionsNewCampaignTooltipView(ViewImpl):
         operations = self.__eventsCache.getPersonalMissions().getOperationsForBranch(PM_BRANCH.PERSONAL_MISSION_3)
         array = model.getOperations()
         rewardsArray = model.getRewards()
-        isFullCompleted = True
-        isCompleted = True
+        isFullCompleted = all(operation.isFullCompleted() for operation in operations.itervalues())
+        isCompleted = all(operation.isCompleted() for operation in operations.itervalues())
         for operation in operations.itervalues():
-            operationCompleted = operation.isCompleted()
-            isCompleted = isCompleted and operationCompleted
-            questCount = operation.getQuestsCount()
-            completedQuestsCount = len(operation.getCompletedQuests())
-            isFullCompleted = isFullCompleted and operationCompleted and questCount == completedQuestsCount
+            questCount = len(operation.getQuestsByFilter(lambda q: q.isFinal())) if isCompleted else operation.getQuestsCount()
+            completedQuestsCount = len(operation.getQuestsByFilter(lambda q: q.isFinal() and q.isFullCompleted()) if isCompleted else operation.getCompletedQuests())
             nextModel = PersonalMissionsOldCampaignTooltipOperationsModel()
             nextModel.setName(operation.getShortUserName())
             nextModel.setCompleted(completedQuestsCount)

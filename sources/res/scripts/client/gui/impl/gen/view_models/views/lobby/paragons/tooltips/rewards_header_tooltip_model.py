@@ -7,18 +7,18 @@ class RewardsHeaderTooltipModel(ViewModel):
         super(RewardsHeaderTooltipModel, self).__init__(properties=properties, commands=commands)
 
     def getIsLevelAchieved(self):
-        return self._getBoolean(0)
+        return self._getBool(0)
 
     def setIsLevelAchieved(self, value):
-        self._setBoolean(0, value)
+        self._setBool(0, value)
 
     def getIsCurrentLevel(self):
-        return self._getBoolean(1)
+        return self._getBool(1)
 
     def setIsCurrentLevel(self, value):
-        self._setBoolean(1, value)
+        self._setBool(1, value)
 
     def _initialize(self):
         super(RewardsHeaderTooltipModel, self)._initialize()
-        self._addBooleanProperty('isLevelAchieved')
-        self._addBooleanProperty('isCurrentLevel')
+        self._addBoolProperty('isLevelAchieved', False)
+        self._addBoolProperty('isCurrentLevel', False)

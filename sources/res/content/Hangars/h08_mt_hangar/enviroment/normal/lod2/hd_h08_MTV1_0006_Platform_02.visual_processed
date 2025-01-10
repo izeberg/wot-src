@@ -8,40 +8,13 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_h08_MTV1_0006_Platform_02</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod2</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s0</node>
+		<node>Scene Root</node>
 		<geometry>
-			<vertices>s0Shape.vertices</vertices>
-			<primitive>s0Shape.indices</primitive>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -70,11 +43,11 @@
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
-	<constraints/>
 	<boundingBox>
 		<min>-1.964361 -0.059834 -10.368544</min>
-		<max>1.964356 1.835011 10.256124</max>
+		<max>1.964355 1.835011 10.256124</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>102</geometrySize>
 	<minUVDensity>0.011230</minUVDensity>
 </root>

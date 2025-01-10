@@ -32,7 +32,8 @@ def onFinishBattle(eventType, eventData, quest, processor):
 
     brfilter = filter.BattleResultsFilter(eventData)
     spotted = eventData[&apos;avatarResults&apos;][&apos;spotted&apos;]
-    hits = len(brfilter.filterDamageTo(result=[&apos;damaged&apos;]))
+    attackReason = questProgress.getProgress(MAIN_PROGRESS_HITS).getParam(&apos;attackReasons&apos;)
+    hits = sum(len(shots) for shots in brfilter.filterDamageTo(method=attackReason, result=[&apos;damaged&apos;]).itervalues())
     spottedResults = questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, spotted)
     hitsResults = questProgress.increaseUntilComplete(MAIN_PROGRESS_HITS, hits)
     if spottedResults and hitsResults:

@@ -34,8 +34,8 @@ def onFinishBattle(eventType, eventData, quest, processor):
     brfilter = filter.BattleResultsFilter(eventData)
     if brfilter.win():
         mainCondition = eventData[&apos;avatarResults&apos;][&apos;originalXP&apos;]
-        questProgress.setComplete(MAIN_PROGRESS_WIN)
         questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, mainCondition)
+
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
 

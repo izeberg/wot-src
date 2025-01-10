@@ -23,4 +23,3 @@ class RestRewardsTooltipView(ViewImpl):
             rewardsModel = vm.getRewards()
             rewardsModel.clear()
             fillViewModelsArray(self._rewards, rewardsModel)
-            rewardsModel.invalidate()

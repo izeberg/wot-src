@@ -32,9 +32,10 @@ def onFinishBattle(eventType, eventData, quest, processor):
     brfilter = filter.BattleResultsFilter(eventData)
     damagedEventList = brfilter.filterDamageTo(
         result=[&apos;damaged&apos;],
+        method=questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&apos;attackReasons&apos;),
         vehType=questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&apos;targetClasses&apos;))
 
-    mainCondition = sum(len(shots) for shot in damagedEventList.itervalues())
+    mainCondition = sum(len(shots) for shots in damagedEventList.itervalues())
     questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, mainCondition)
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())

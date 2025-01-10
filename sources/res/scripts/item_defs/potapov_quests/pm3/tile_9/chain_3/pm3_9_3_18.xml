@@ -32,11 +32,12 @@ def onFinishBattle(eventType, eventData, quest, processor):
 
     brfilter = filter.BattleResultsFilter(eventData)
     if brfilter.win():
-        questProgresses.setComplete(MAIN_PROGRESS_WIN)
-        assist = brfilter.sumAssisted(eventData[&apos;avatarResults&apos;][&apos;assistEventList&apos;])
+        questProgress.setCompleted(MAIN_PROGRESS_WIN)
+        assistDamage = eventData[&apos;avatarResults&apos;][&apos;damageAssistedTrack&apos;]
+        assistDamage += eventData[&apos;avatarResults&apos;][&apos;damageAssistedRadio&apos;]
         damage = eventData[&apos;avatarResults&apos;][&apos;damageDealt&apos;]
 
-        mainCondition = damage + assist
+        mainCondition = damage + assistDamage
         questProgress.increaseSeriesUntilComplete(MAIN_PROGRESS_SERIES, MAIN_PROGRESS_ID, mainCondition)
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))

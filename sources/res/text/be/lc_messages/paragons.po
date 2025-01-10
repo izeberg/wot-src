@@ -962,10 +962,10 @@ msgid "seasonsProgression/stageText/activeStage"
 msgstr "Активный сезон"
 
 msgid "seasonsProgression/stageText/availableSoon"
-msgstr "Скоро будет доступен"
+msgstr "В разработке"
 
 msgid "seasonsProgression/stageText/rewardStage"
-msgstr "Награды"
+msgstr "Награды сезона"
 
 msgid "seasonsProgression/stageText/selectStage"
 msgstr "Выбрать сезон"
@@ -1008,28 +1008,6 @@ msgstr "Заблокированный сезон проекта «Орбита�
 
 msgid "seasonsProgression/tooltip/header/finished"
 msgstr "Пройденный сезон проекта «Орбита»"
-
-msgid "systemMessage/resetBranch/Error"
-msgstr ""
-"+++Произошла ошибка.\n"
-"Попробуйте позже.+++"
-
-msgid "systemMessage/resetBranch/Success/body"
-msgstr ""
-"+++Были сброшены до неисследованного состояния: %(vehicles)s.\n"
-"\n"
-"Выкачайте эту технику заново, сыграйте на ней один победный бой и заработайте ключи шифрования для повышения уровня доступа.+++"
-
-msgid "systemMessage/resetBranch/Success/header"
-msgstr "Ветка сброшена"
-
-msgid "systemMessage/setChapter/Error"
-msgstr ""
-"+++Произошла ошибка.\n"
-"Попробуйте позже.+++"
-
-msgid "systemMessage/setChapter/Success/header"
-msgstr "+++Выбрана глава «%(chapterID)»+++"
 
 msgid "vehiclePreview/backButton"
 msgstr "К ПРОЕКТУ «ОРБИТА»"

@@ -16,7 +16,7 @@ QUEST_EVENT_TYPE = globals().get(&apos;QUEST_EVENT_TYPE&apos;)
 quest_progress = globals().get(&apos;quest_progress&apos;)
 &quot;&quot;&quot;:type: quest_progress&quot;&quot;&quot;
 
-MAIN_PROGRESS_ID = &apos;hitsReceived&apos;
+MAIN_PROGRESS_HITS = &apos;hitsReceived&apos;
 MAIN_PROGRESS_BLOCKED = &apos;blockedDamage&apos;
 
 def onInit(eventType, eventData, quest, processor):
@@ -28,12 +28,8 @@ def onFinishBattle(eventType, eventData, quest, processor):
     questProgress = quest_progress.BaseQuestProgress(quest.config, processor.getQuestProgress(quest.progressID))
 
     blockedDamage = eventData[&apos;avatarResults&apos;][&apos;damageBlockedByArmor&apos;]
-    hitsReceived = eventData[&apos;avatarResults&apos;][&apos;directHitsReceived&apos;]
-
-    blockedDamageRes = questProgress.increaseUntilComplete(MAIN_PROGRESS_BLOCKED, blockedDamage)
-
-    if blockedDamageRes:
-        questProgress.increaseUntilComplete(MAIN_PROGRESS_ID, hitsReceived)
+    if questProgress.increaseUntilComplete(MAIN_PROGRESS_BLOCKED, blockedDamage):
+        questProgress.increaseUntilComplete(MAIN_PROGRESS_HITS, eventData[&apos;avatarResults&apos;][&apos;directHitsReceived&apos;])
 
     eventData[&apos;results&apos;].update(processor.checkComplete(questProgress, quest.progressID))
     processor.setQuestProgress(quest.progressID, questProgress.save())
