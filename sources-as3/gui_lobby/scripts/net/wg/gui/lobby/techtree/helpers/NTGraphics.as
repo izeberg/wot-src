@@ -74,11 +74,17 @@ package net.wg.gui.lobby.techtree.helpers
       
       override protected function onDispose() : void
       {
-         this._tween.paused = true;
-         this._tween.dispose();
-         this._tween = null;
-         this._tweenWrapper.dispose();
-         this._tweenWrapper = null;
+         if(this._tween)
+         {
+            this._tween.paused = true;
+            this._tween.dispose();
+            this._tween = null;
+         }
+         if(this._tweenWrapper)
+         {
+            this._tweenWrapper.dispose();
+            this._tweenWrapper = null;
+         }
          this.mainLine = null;
          this._zeroSprite = null;
          this.clearUp();

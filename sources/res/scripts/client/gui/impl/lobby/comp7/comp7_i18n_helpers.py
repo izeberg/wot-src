@@ -1,6 +1,6 @@
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.comp7.tooltips.division_tooltip_model import Rank, Division
+from gui.impl.gen.view_models.views.lobby.comp7.enums import Rank, Division
 RANK_MAP = {Rank.FIRST: 'first', 
    Rank.SECOND: 'second', 
    Rank.THIRD: 'third', 

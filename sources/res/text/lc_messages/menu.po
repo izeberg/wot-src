@@ -1254,7 +1254,7 @@ msgid "contextMenu/withdrawInvitationToSquad"
 msgstr "Withdraw invitation to join Platoon"
 
 msgid "copy"
-msgstr "© 2009–2024 Wargaming.net. All rights reserved."
+msgstr "© 2009–2025 Wargaming.net. All rights reserved."
 
 msgid "counter/newCounter"
 msgstr "NEW"
@@ -1629,9 +1629,6 @@ msgstr "WoT Plus Exclusive Vehicle Unavailable"
 
 msgid "customization/title"
 msgstr "Exterior"
-
-msgid "dateTime/dateMonth"
-msgstr "{day} {monthName}"
 
 msgid "dateTime/fromToWithYear"
 msgstr "from {fromMonth} {fromDay} through {toMonth} {toDay}, {toYear}"
@@ -3182,6 +3179,12 @@ msgid "headerButtons/fightBtn/tooltip/comp7Offline/body"
 msgstr "Mode unavailable: Database error."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/header"
+msgstr "Unable to Enter Battle"
+
+msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/body"
+msgstr "Mode unavailable: Season has not started"
+
+msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"

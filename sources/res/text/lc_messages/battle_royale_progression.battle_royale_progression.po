@@ -49,14 +49,11 @@ msgstr "%(firstCondition)s"
 msgid "progressionView/battleQuests/questsTotal/text"
 msgstr "Completed missions: "
 
-msgid "progressionView/battleQuests/timer/completed/text"
-msgstr "Missions will be available in"
+msgid "progressionView/battleQuests/timer/eventResetTime/text"
+msgstr "Event ends in:"
 
 msgid "progressionView/battleQuests/timer/inProgress/text"
 msgstr "Missions will be updated in"
-
-msgid "progressionView/battleQuests/timer/title"
-msgstr "All daily missions completed. Please check back tomorrow"
 
 msgid "progressionView/card/points"
 msgstr ""
@@ -64,6 +61,10 @@ msgstr ""
 
 msgid "progressionView/subTitle/completed"
 msgstr "Earn Steel Seals to get Steel Hunter styles."
+
+msgid "progressionView/subTitle/endEvent"
+msgstr ""
+"The event has ended. Missions and the Progression are no longer available."
 
 msgid "progressionView/subTitle/inProgress"
 msgstr ""

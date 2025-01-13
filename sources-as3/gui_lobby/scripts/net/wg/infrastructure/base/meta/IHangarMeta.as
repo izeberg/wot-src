@@ -48,10 +48,6 @@ package net.wg.infrastructure.base.meta
       
       function as_hideTeaserTimer() : void;
       
-      function as_setRewardKitsVisible(param1:Boolean) : void;
-      
-      function as_setGiftEntryVisible(param1:Boolean) : void;
-      
       function as_showSwitchToAmmunition() : void;
       
       function as_setDQWidgetLayout(param1:int) : void;
@@ -61,5 +57,7 @@ package net.wg.infrastructure.base.meta
       function as_updateHangarComponents(param1:Array, param2:Array) : void;
       
       function as_setBattleRoyaleSpaceLoaded(param1:Boolean) : void;
+      
+      function as_setComp7SpaceLoaded(param1:Boolean) : void;
    }
 }

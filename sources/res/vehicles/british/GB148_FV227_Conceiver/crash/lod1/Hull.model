@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB148_FV227_Conceiver/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.949296 -0.837607 -4.008426</min>
+		<max>1.954130 0.899259 3.781455</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB148_FV227_Conceiver/crash/lod2/Hull</parent>
+	<extent>64</extent>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB140_FV224_Chopper/crash/lod1/Turret_02</nodefullVisual>
+	<parent>vehicles/british/GB140_FV224_Chopper/crash/lod2/Turret_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.299585 -0.013730 -1.717567</min>
+		<max>1.246909 1.937467 1.357200</max>
+	</visibilityBox>
+</root>

@@ -65,10 +65,6 @@ package
       
       public static const BUYINGPANEL_UNIQUEVEHICLELABEL:String = "#vehicle_preview:buyingPanel/uniqueVehicleLabel";
       
-      public static const BUYINGPANEL_FROMBOXES_LABEL:String = "#vehicle_preview:buyingPanel/fromBoxes/label";
-      
-      public static const BUYINGPANEL_FROMBOXES_HIGHLIGHTENLABEL:String = "#vehicle_preview:buyingPanel/fromBoxes/highlightenLabel";
-      
       public static const BUYINGPANEL_AVAILABLEFORWOTPLUS:String = "#vehicle_preview:buyingPanel/availableForWotPlus";
       
       public static const BUYINGPANEL_TRADEINLABEL:String = "#vehicle_preview:buyingPanel/tradeInLabel";
@@ -130,8 +126,6 @@ package
       public static const BUYINGPANEL_BUYBTN_LABEL_BUY:String = "#vehicle_preview:buyingPanel/buyBtn/label/buy";
       
       public static const BUYINGPANEL_BUYBTN_LABEL_EXCHANGE:String = "#vehicle_preview:buyingPanel/buyBtn/label/exchange";
-      
-      public static const BUYINGPANEL_BUYBTN_LABEL_TOBOXES:String = "#vehicle_preview:buyingPanel/buyBtn/label/toBoxes";
       
       public static const BUYINGPANEL_BUYBTN_LABEL_BUYITEMPACK:String = "#vehicle_preview:buyingPanel/buyBtn/label/buyItemPack";
       

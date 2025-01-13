@@ -252,6 +252,15 @@ msgstr "Send Message"
 msgid "members/footer/AT_SPG_Full"
 msgstr "The Platoon has reached the maximum number of tank destroyers"
 
+msgid "members/footer/comp7Invite"
+msgstr "Invite"
+
+msgid "members/footer/comp7Limitations"
+msgstr "Top rank restrictions"
+
+msgid "members/footer/comp7TopPlayer"
+msgstr "Top Platoon player rank"
+
 msgid "members/footer/getNotReady"
 msgstr "Click to indicate that you are not ready."
 
@@ -303,11 +312,6 @@ msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 msgid "members/header/squad"
 msgstr ": Random Battle"
 
-msgid "members/header/tooltip/comp7/body"
-msgstr ""
-"The difference in Rating Points between players in a Platoon should not "
-"exceed %(rating)s. There are no such restrictions for Super Platoon players."
-
 msgid "members/header/tooltip/comp7/dropdown"
 msgstr "Only the Platoon Commander can change the player limit."
 
@@ -315,9 +319,6 @@ msgid "members/header/tooltip/comp7/dropdown/item"
 msgstr ""
 "Unable to change. The player limit cannot be lower than the current number "
 "of players."
-
-msgid "members/header/tooltip/comp7/header"
-msgstr "Rules for Creating a Platoon"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""

@@ -8,7 +8,7 @@ package net.wg.infrastructure.base.meta
       
       function onShowS(param1:Number) : void;
       
-      function onChangeS(param1:Number) : void;
+      function onChangeS() : void;
       
       function onHideS(param1:Number) : void;
       

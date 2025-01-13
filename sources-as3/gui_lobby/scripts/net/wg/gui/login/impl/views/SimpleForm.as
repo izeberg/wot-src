@@ -20,7 +20,10 @@ package net.wg.gui.login.impl.views
    import net.wg.gui.login.impl.ev.LoginEvent;
    import net.wg.gui.login.impl.vo.SimpleFormVo;
    import net.wg.gui.login.impl.vo.SubmitDataVo;
+   import net.wg.infrastructure.events.StageSizeMangerEvent;
+   import net.wg.utils.StageBreakPointList;
    import scaleform.clik.constants.InputValue;
+   import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.events.InputEvent;
    import scaleform.clik.events.ListEvent;
@@ -52,6 +55,8 @@ package net.wg.gui.login.impl.views
       private static const SOCIAL_Y:uint = 157;
       
       private static const MESSAGE_Y:uint = 208;
+      
+      private static const CHINA_SHIFTING:uint = 63;
        
       
       public var serverTF:TextField;
@@ -145,6 +150,7 @@ package net.wg.gui.login.impl.views
          this.login.removeEventListener(Event.CHANGE,this.onInputChangeHandler);
          this.pass.removeEventListener(Event.CHANGE,this.onInputChangeHandler);
          this.rememberPwdCheckbox.removeEventListener(Event.SELECT,this.onRememberPwdCheckboxSelectHandler);
+         App.stageSizeMgr.removeEventListener(StageSizeMangerEvent.BREAK_POINT_CHANGED,this.onBreakPointChangedHandler);
          this.rememberPwdCheckbox.removeEventListener(MouseEvent.MOUSE_OVER,this.onRememberPwdCheckboxMouseOverHandler);
          this.rememberPwdCheckbox.removeEventListener(MouseEvent.ROLL_OUT,this.onRememberPwdCheckboxRollOutHandler);
          this.rememberPwdCheckbox.removeEventListener(MouseEvent.MOUSE_DOWN,this.onRememberPwdCheckboxMouseDownHandler);
@@ -238,6 +244,10 @@ package net.wg.gui.login.impl.views
             this.updateSubmitEnabled();
             this.updatePosition();
          }
+         else if(isInvalid(InvalidationType.SIZE))
+         {
+            this.updatePosition();
+         }
          if(isInvalid(INV_PASSWORD))
          {
             this.pass.text = this._dataVo.pwd;
@@ -269,6 +279,16 @@ package net.wg.gui.login.impl.views
             this.socialGroup.y = SOCIAL_Y;
             message.y = MESSAGE_Y;
          }
+         switch(App.stageSizeMgr.currentBreakPoint)
+         {
+            case StageBreakPointList.EXTRA_SMALL:
+            case StageBreakPointList.SMALL:
+            case StageBreakPointList.MEDIUM:
+               if(App.globalVarsMgr.isChinaS())
+               {
+                  message.y -= CHINA_SHIFTING;
+               }
+         }
       }
       
       override protected function redrawAll() : void
@@ -294,8 +314,14 @@ package net.wg.gui.login.impl.views
          this.rememberPwdCheckbox.addEventListener(MouseEvent.MOUSE_OVER,this.onRememberPwdCheckboxMouseOverHandler);
          this.rememberPwdCheckbox.addEventListener(MouseEvent.ROLL_OUT,this.onRememberPwdCheckboxRollOutHandler);
          this.rememberPwdCheckbox.addEventListener(MouseEvent.MOUSE_DOWN,this.onRememberPwdCheckboxMouseDownHandler);
+         App.stageSizeMgr.addEventListener(StageSizeMangerEvent.BREAK_POINT_CHANGED,this.onBreakPointChangedHandler);
          this.registerLink.addEventListener(ButtonEvent.CLICK,this.onRegisterLinkClickHandler);
          this.recoveryLink.addEventListener(ButtonEvent.CLICK,this.onRecoveryLinkClickHandler);
+      }
+      
+      private function onBreakPointChangedHandler(param1:StageSizeMangerEvent) : void
+      {
+         invalidateSize();
       }
       
       public function updateInputForm(param1:InteractiveObject, param2:Boolean) : void

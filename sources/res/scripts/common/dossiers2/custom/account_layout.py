@@ -13,7 +13,6 @@ from dossiers2.custom.dependencies import EPIC_BATTLE_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import STEAM_ACHIEVEMENT_DEPENDENCIES
 from dossiers2.custom.dependencies import VEHICLE_ACHIEVEMENTS_DEPENDENCIES, VEHICLE_ACHIEVEMENTS_POP_UPS
 from dossiers2.custom.dependencies import CUSTOMIZATION_ACHIEVEMENTS_DEPENDENCIES, CUSTOMIZATION_ACHIEVEMENTS_POP_UPS
-from dossiers2.custom.dependencies import PLAYER_BADGES_DEPENDENCIES
 from battle_statistics_layouts import *
 TOTAL_BLOCK_LAYOUT = [
  'creationTime', 'lastBattleTime', 'battleLifeTime', 'treesCut', 'mileage']
@@ -366,7 +365,7 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'comp7_4_yearly_iron', 'comp7_4_yearly_bronze', 'comp7_4_yearly_silver',
  'comp7_4_yearly_gold', 'comp7_4_yearly_champion', 'comp7_4_yearly_legend',
  'hw2024Medal', 'BattlePassCommonPr_15extra', 'NY25_AtmsphrLevel',
- 'NY25_CelebChallenge', '14YearsOfService']
+ 'NY25_CelebChallenge', '14YearsOfService', 'BattlePassCommonPr_NY25']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -432,7 +431,7 @@ _singleAchievementsPopUps = [
  'comp7_4_yearly_iron', 'comp7_4_yearly_bronze', 'comp7_4_yearly_silver',
  'comp7_4_yearly_gold', 'comp7_4_yearly_champion', 'comp7_4_yearly_legend', 'hw2024Medal',
  'BattlePassCommonPr_15extra', 'NY25_AtmsphrLevel', 'NY25_CelebChallenge',
- '14YearsOfService']
+ '14YearsOfService', 'BattlePassCommonPr_NY25']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']
@@ -445,7 +444,7 @@ _clanAchievementsPopUps = ['medalRotmistrov']
 _clanAchievementsBlockBuilder = StaticSizeBlockBuilder('clanAchievements', CLAN_ACHIEVEMENTS_BLOCK_LAYOUT, {}, _clanAchievementsPopUps)
 RANKED_BADGES_BLOCK_LAYOUT = [
  '1', '2', '3', '4', '5', '6', '7', '8', '9']
-_playerBadgesBlockBuilder = DictBlockBuilder('playerBadges', 'I', 'I', PLAYER_BADGES_DEPENDENCIES)
+_playerBadgesBlockBuilder = DictBlockBuilder('playerBadges', 'I', 'I', {})
 _rankedSeasonsBlockBuilder = DictBlockBuilder('rankedSeasons', 'II', 'BHHHH', {})
 _rareAchievementsBlockBuilder = ListBlockBuilder('rareAchievements', 'I', {})
 UNIQUE_ACHIEVEMENT_VALUES = [

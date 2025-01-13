@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Stop</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>Move</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Stop</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/A176_M103_110_HBP_3Dst/Turret_Torch_Stop.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Transition_1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Move</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-373.000000 -177.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Move</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/A176_M103_110_HBP_3Dst/Turret_Torch_Move.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Transition_2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Stop</name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Move</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Move</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-378.000000 151.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Transition_1</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>Move</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-611.000000 -20.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Transition_2</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>Stop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-104.000000 -24.000000 0.000000</uiPosition>
+	</node>
+</root>

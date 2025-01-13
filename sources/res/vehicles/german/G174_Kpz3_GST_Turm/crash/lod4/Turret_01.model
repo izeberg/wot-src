@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.618887 -0.031358 -1.575263</min>
+		<max>1.595499 1.118399 1.561844</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G174_Kpz3_GST_Turm/crash/lod4/Turret_01</nodefullVisual>
+</root>

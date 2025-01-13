@@ -1,10 +1,11 @@
-import types, BigWorld, ResMgr, i18n, constants
+import types, os, enum, BigWorld, ResMgr, i18n, constants
 from aih_constants import CTRL_MODE_NAME, CTRL_MODES
 from debug_utils import LOG_CURRENT_EXCEPTION
 from soft_exception import SoftException
-from abc import abstractmethod
+from external_strings_utils import unicode_from_utf8
 VERSION_FILE_PATH = '../version.xml'
 _CLIENT_VERSION = None
+LOC_VERSION_FILE_PATH = '../loc_version.xml'
 
 def gEffectsDisabled():
     return False
@@ -155,20 +156,20 @@ def getHelperServicesConfig(manager):
 
 def isShowingKillCam--- This code section failed: ---
 
- L. 234         0  LOAD_CONST               -1
+ L. 239         0  LOAD_CONST               -1
                 3  LOAD_CONST               ('DeathCamEvent',)
                 6  IMPORT_NAME           0  'gui.shared.events'
                 9  IMPORT_FROM           1  'DeathCamEvent'
                12  STORE_FAST            0  'DeathCamEvent'
                15  POP_TOP          
 
- L. 235        16  LOAD_GLOBAL           2  'BigWorld'
+ L. 240        16  LOAD_GLOBAL           2  'BigWorld'
                19  LOAD_ATTR             3  'player'
                22  CALL_FUNCTION_0       0  None
                25  LOAD_ATTR             4  'inputHandler'
                28  STORE_FAST            1  'inputHandler'
 
- L. 238        31  LOAD_FAST             1  'inputHandler'
+ L. 243        31  LOAD_FAST             1  'inputHandler'
                34  POP_JUMP_IF_FALSE    74  'to 74'
                37  LOAD_FAST             1  'inputHandler'
                40  LOAD_ATTR             5  'ctrlModeName'
@@ -242,4 +243,14 @@ def unicodeToStr(data):
             res[unicodeToStr(k)] = unicodeToStr(v)
 
         return res
-    return data# Decompile failed :(
+    return data
+
+
+def getPreferencesDirPath():
+    _, prefsPath = unicode_from_utf8(BigWorld.wg_getPreferencesFilePath())
+    return os.path.dirname(prefsPath)
+
+
+class ExitCode(enum.IntEnum):
+    SUCCESS = 0
+    FAILED = 1# Decompile failed :(

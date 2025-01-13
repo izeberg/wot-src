@@ -1,7 +1,6 @@
 import typing
 from shared_utils import findFirst
-from gui.impl.gen.view_models.views.lobby.comp7.division_info_model import Division
-from gui.impl.gen.view_models.views.lobby.comp7.main_widget_model import Rank
+from gui.impl.gen.view_models.views.lobby.comp7.enums import Division, Rank
 from gui.impl.gen.view_models.views.lobby.comp7.season_model import SeasonState
 from gui.impl.gen.view_models.views.lobby.comp7.year_model import YearState
 from gui.periodic_battles.models import PeriodType
@@ -15,7 +14,10 @@ _SEASON_START_DURATION_DAYS = 7
 _SEASON_END_DURATION_DAYS = 7
 
 def getDivisionEnumValue(division):
-    return tuple(Division)[(division.index - 1)]
+    if division is not None:
+        return tuple(Division)[(division.index - 1)]
+    else:
+        return
 
 
 def getRankEnumValue(division):
@@ -94,6 +96,29 @@ def getCurrentSeasonState(comp7Controller=None):
     if periodInfo.cycleBorderRight.delta(currentTime) < time_utils.ONE_DAY * _SEASON_END_DURATION_DAYS:
         return SeasonState.ENDSOON
     return SeasonState.ACTIVE
+
+
+@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
+def getBannerSeasonState(comp7Controller=None):
+    startNotificationsPeriodLength = time_utils.ONE_DAY * 14
+    endNotificationsPeriodLength = time_utils.ONE_DAY * 14
+    currentTime = time_utils.getCurrentLocalServerTimestamp()
+    periodInfo = comp7Controller.getPeriodInfo()
+    if periodInfo.periodType in (PeriodType.BEFORE_SEASON, PeriodType.BEFORE_CYCLE, PeriodType.BETWEEN_SEASONS):
+        return SeasonState.NOTSTARTED
+    if periodInfo.periodType in (PeriodType.AFTER_SEASON, PeriodType.AFTER_CYCLE,
+     PeriodType.ALL_NOT_AVAILABLE_END, PeriodType.NOT_AVAILABLE_END,
+     PeriodType.STANDALONE_NOT_AVAILABLE_END):
+        return SeasonState.END
+    if periodInfo.periodType in (PeriodType.ALL_NOT_AVAILABLE, PeriodType.STANDALONE_NOT_AVAILABLE):
+        return SeasonState.DISABLED
+    if periodInfo.cycleBorderLeft.delta(currentTime) < startNotificationsPeriodLength:
+        status = SeasonState.JUSTSTARTED
+    elif periodInfo.cycleBorderRight.delta(currentTime) < endNotificationsPeriodLength:
+        status = SeasonState.ENDSOON
+    else:
+        status = SeasonState.ACTIVE
+    return status
 
 
 @dependency.replace_none_kwargs(comp7Controller=IComp7Controller)

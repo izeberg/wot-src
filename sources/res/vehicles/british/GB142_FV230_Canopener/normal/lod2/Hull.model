@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB142_FV230_Canopener/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.034559 -0.622691 -4.513913</min>
+		<max>2.034617 0.930488 3.766504</max>
+	</visibilityBox>
+</root>

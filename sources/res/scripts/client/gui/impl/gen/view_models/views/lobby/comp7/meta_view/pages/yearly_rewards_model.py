@@ -1,17 +1,9 @@
-from enum import Enum, IntEnum
+from enum import Enum
 from frameworks.wulf import Array
+from gui.impl.gen.view_models.views.lobby.comp7.enums import Rank
 from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.pages.yearly_rewards_card_model import YearlyRewardsCardModel
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_item_base_model import ProgressionItemBaseModel
-
-class Rank(IntEnum):
-    FIRST = 6
-    SECOND = 5
-    THIRD = 4
-    FOURTH = 3
-    FIFTH = 2
-    SIXTH = 1
-
 
 class BannerState(Enum):
     DEFAULT = 'default'

@@ -69,12 +69,6 @@ package net.wg.data.constants.generated
       
       public static const VEH_PARAM_RENDERER_HIGHLIGHT_MIXED:String = "mixed";
       
-      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
-      
-      public static const NY_GIFT_WIDGET_UI:String = "NYEntryPointWidgetUI";
-      
-      public static const REWARD_KITS_ENTRANCE_POINT:String = "rewardKitsEntrancePoint";
-      
       public static const PROGRESSIVE_REWARD_WIDGET:String = "progressiveRewardWdgt";
       
       public static const PRESTIGE_PROGRESS_WIDGET:String = "prestigeProgressWidget";
@@ -154,6 +148,8 @@ package net.wg.data.constants.generated
       public static const HE20_EVENT_ENTRY_POINT:String = "he20EventEntryPoint";
       
       public static const CAROUSEL_EVENT_ENTRY_HOLDER:String = "carouselEventEntryHolder";
+      
+      public static const PLAYER_SATISFACTION_WIDGET:String = "PlayerSatisfactionWidget";
        
       
       public function HANGAR_ALIASES()

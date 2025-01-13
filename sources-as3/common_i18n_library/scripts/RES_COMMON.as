@@ -55,12 +55,6 @@ package
       
       public static const MAPS_ICONS_MARATHON_REWARDWINDOW_BG:String = "../maps/icons/marathon/rewardWindow/bg.png";
       
-      public static const MAPS_ICONS_NEWYEAR_POPOVERS_BG:String = "../maps/icons/newYear/popovers/bg.png";
-      
-      public static const MAPS_ICONS_NEWYEAR_RESOURCEPROGRESSION_BG:String = "../maps/icons/newYear/resourceProgression/bg.png";
-      
-      public static const MAPS_ICONS_NEWYEAR_SHOPOVERLAY_BG:String = "../maps/icons/newYear/shopOverlay/bg.png";
-      
       public static const MAPS_ICONS_PERSONALEXCHANGERATES_ALLPERSONALEXCHANGES_BG:String = "../maps/icons/personalExchangeRates/allPersonalExchanges/bg.png";
       
       public static const MAPS_ICONS_PRESTIGE_VEHICLESTATISTICSVIEW_BG:String = "../maps/icons/prestige/vehicleStatisticsView/bg.png";

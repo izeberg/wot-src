@@ -711,8 +711,8 @@ package net.wg.gui.lobby.techtree.sub
       {
          if(this._cursorMgr != null)
          {
-            this._cursorMgr.unRegisterDragging(this);
             this._cursorMgr.unRegisterDragging(this.premiumHitArea);
+            this._cursorMgr.unRegisterDragging(this);
          }
       }
       

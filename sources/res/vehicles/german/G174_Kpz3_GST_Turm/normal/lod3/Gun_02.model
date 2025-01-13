@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.635054 -0.342492 -0.235119</min>
+		<max>0.630234 0.469402 6.080406</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G174_Kpz3_GST_Turm/normal/lod3/Gun_02</nodefullVisual>
+	<parent>vehicles/german/G174_Kpz3_GST_Turm/normal/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+</root>

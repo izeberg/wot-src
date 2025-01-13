@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB140_FV224_Chopper/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB140_FV224_Chopper/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.721162 -0.739211 -4.147403</min>
+		<max>1.726373 0.580134 3.114902</max>
+	</visibilityBox>
+</root>

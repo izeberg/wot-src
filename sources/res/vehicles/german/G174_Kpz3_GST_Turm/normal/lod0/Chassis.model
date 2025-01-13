@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G174_Kpz3_GST_Turm/normal/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.769574 -0.000013 -3.368440</min>
+		<max>1.769574 1.439265 3.570906</max>
+	</visibilityBox>
+	<parent>vehicles/german/G174_Kpz3_GST_Turm/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

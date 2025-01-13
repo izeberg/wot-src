@@ -9,7 +9,7 @@
 	</crew>
 	<supplySlots>1 6 8 8 8</supplySlots>
 	<speedLimits>
-		<forward>35</forward>
+		<forward>40</forward>
 		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
@@ -5732,7 +5732,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>240</circularVisionRadius>
+			<circularVisionRadius>280</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>40</maxHealth>
 				<maxRegenHealth>20</maxRegenHealth>
@@ -5745,12 +5745,6 @@
 				<_37mm_Bofors_wz_37>
 					shared
 					<maxAmmo>140</maxAmmo>
-					<unlocks>
-						<gun>
-							_47mm_QFSA
-							<cost>75</cost>
-						</gun>
-					</unlocks>
 					<armor>
 						<armor_1>
 							15
@@ -5763,29 +5757,23 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						3.6
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>3</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5851,110 +5839,6 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_37mm_Bofors_wz_37>
-				<_47mm_QFSA>
-					shared
-					<maxAmmo>115</maxAmmo>
-					<armor>
-						<armor_1>
-							15
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							8
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.4
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.5
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.5
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 12 1 12</maxPitch>
-					</pitchLimits>
-					<models>
-						<undamaged>vehicles/poland/Pl09_7TP/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/poland/Pl09_7TP/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/poland/Pl09_7TP/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/poland/Pl09_7TP/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/poland/Pl09_7TP/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_small</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.078599 -0.128797 0.442566</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.152781 0.152781
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>0.077918 -0.040894 0.268942</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>0.155835 -0.081793 0.000000</shotOffset>
-					<camouflage>
-						<density>
-							141.02 140.642
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_47mm_QFSA>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl09_7TP/normal/lod0/Turret_01.model</undamaged>
@@ -6677,29 +6561,26 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.4
+						2.7
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6836,163 +6717,6 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_37mm_Bofors_wz_37>
-				<_47mm_QFSA>
-					shared
-					<maxAmmo>115</maxAmmo>
-					<armor>
-						<armor_1>
-							18
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							8
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.4
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.2
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.5
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 12 1 12</maxPitch>
-					</pitchLimits>
-					<models>
-						<undamaged>vehicles/poland/Pl09_7TP/normal/lod0/Gun_05.model</undamaged>
-						<destroyed>vehicles/poland/Pl09_7TP/crash/lod0/Gun_05.model</destroyed>
-						<exploded>vehicles/poland/Pl09_7TP/crash/lod0/Gun_05.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/poland/Pl09_7TP/collision/Gun_05.model</collisionModelServer>
-						<collisionModelClient>vehicles/poland/Pl09_7TP/collision_client/Gun_05.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_small</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.04183 -0.03809 0.539301
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.182393 0.182393
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.042165 -0.034988 0.274163</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.18874 1.72828 0.647641
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.55774 3.14088 0.001028
-								<!--BW_String-->
-							</rotation>
-							<scale>0.792848 0.355133 0.792843</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.483322</clipAngle>
-							<anchorShift>0.079847</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.188876 2.00615 0.728354
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.55772 3.14088 0.001028
-								<!--BW_String-->
-							</rotation>
-							<scale>0.665809 0.298229 0.665803</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.367745</clipAngle>
-							<anchorShift>0.009847</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45002</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								-0.188735 2.05149 0.647641
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.55774 3.14088 0.001028
-								<!--BW_String-->
-							</rotation>
-							<scale>0.683143 0.305993 0.683138</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.367745</clipAngle>
-							<anchorShift>0.079847</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<density>
-							141.02 140.642
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_47mm_QFSA>
 				<_40mm_DL55>
 					shared
 					<maxAmmo>120</maxAmmo>
@@ -7831,12 +7555,12 @@
 		<detailed>
 			<engines>
 				<PLInz235>
-					<smplEnginePower>130</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplEnginePower>140</smplEnginePower>
+					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</PLInz235>
 				<PLInz155>
-					<smplEnginePower>140</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplEnginePower>150</smplEnginePower>
+					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</PLInz155>
 			</engines>
 			<chassis>

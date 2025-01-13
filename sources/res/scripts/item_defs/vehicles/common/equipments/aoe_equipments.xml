@@ -12,6 +12,7 @@
 		<notInShop>true</notInShop>
 		<tags>notForSale avatar trigger</tags>
 		<type>battleAbilities</type>
+		<messagePostfix>ARTILLERY</messagePostfix>
 		<script>
 			AreaOfEffectEquipment
 			<shortDescription>#artefacts:artillery/shortDescr</shortDescription>
@@ -84,6 +85,7 @@
 		<notInShop>true</notInShop>
 		<tags>notForSale avatar trigger</tags>
 		<type>battleAbilities</type>
+		<messagePostfix>BOMBER</messagePostfix>
 		<script>
 			AttackBomberEquipment
 			<shortDescription>#artefacts:bomber/shortDescr</shortDescription>
@@ -159,6 +161,7 @@
 		<notInShop>true</notInShop>
 		<tags>notForSale avatar trigger</tags>
 		<type>battleAbilities</type>
+		<messagePostfix>ARTILLERY_DEATH_ZONE_AOE</messagePostfix>
 		<script>
 			AreaOfEffectEquipment
 			<shortDescription>#artefacts:artillery/shortDescr</shortDescription>

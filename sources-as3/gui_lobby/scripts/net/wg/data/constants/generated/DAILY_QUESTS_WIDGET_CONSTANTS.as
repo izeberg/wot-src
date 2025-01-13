@@ -10,6 +10,10 @@ package net.wg.data.constants.generated
       public static const WIDGET_LAYOUT_MICRO:int = 2;
       
       public static const WIDGET_LAYOUT_SINGLE:int = 4;
+      
+      public static const WIDGET_LAYOUT_COMP7_NORMAL:int = 5;
+      
+      public static const WIDGET_LAYOUT_COMP7_MINI:int = 6;
        
       
       public function DAILY_QUESTS_WIDGET_CONSTANTS()

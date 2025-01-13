@@ -13,6 +13,43 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
+				<id>Variable_48</id>
+				<params>
+					<param>
+						AllowHints
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						true
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_32</id>
 				<params>
 					<param>
@@ -509,6 +546,30 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_40</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_50</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_3</id>
 				<params/>
@@ -578,6 +639,31 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_86</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_32</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_4</id>
 				<params/>
@@ -596,15 +682,9 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SelectHint</class>
-				<id>SelectHint_2</id>
-				<params>
-					<param>
-						newbie.newbie.PPH_AUTO_AIMING_02
-						<name>scope, hintId</name>
-						<type>StringT</type>
-					</param>
-				</params>
+				<class>CanShowHint</class>
+				<id>CanShowHint_31</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -626,6 +706,18 @@
 						2
 						<name>Masks Count</name>
 						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SelectHint</class>
+				<id>SelectHint_2</id>
+				<params>
+					<param>
+						newbie.newbie.PPH_AUTO_AIMING_02
+						<name>scope, hintId</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -684,6 +776,30 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_41</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_51</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_83</id>
 				<buddy>Variable_42</buddy>
@@ -714,6 +830,19 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_87</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_4</id>
 				<params>
@@ -735,6 +864,18 @@
 				</slots>
 			</block>
 			<block>
+				<class>And</class>
+				<id>And_30</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_58</id>
 				<buddy>Variable_32</buddy>
@@ -745,6 +886,12 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_29</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -766,6 +913,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_42</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_2</id>
 				<buddy>Variable_46</buddy>
@@ -777,6 +930,24 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_52</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -800,6 +971,37 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_88</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_29</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_28</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SelectHint</class>
 				<id>SelectHint_4</id>
 				<params>
@@ -809,6 +1011,12 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_43</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -836,6 +1044,24 @@
 				<slots/>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_53</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_1</id>
 				<params>
@@ -855,6 +1081,37 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_89</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_28</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_27</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -1105,6 +1362,24 @@
 				<output>id</output>
 			</connection>
 			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>If_40</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>And_32</from>
+				<input>value</input>
+				<to>If_40</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_5</from>
+				<input>input</input>
+				<to>SetVariable_50</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>SelectHint_7</from>
 				<input>hintId</input>
 				<to>CanShowHint_3</to>
@@ -1165,7 +1440,7 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_1</from>
+				<from>If_40</from>
 				<input>Show_Hint</input>
 				<to>Macro_5</to>
 				<output>true</output>
@@ -1177,9 +1452,27 @@
 				<output>id</output>
 			</connection>
 			<connection>
+				<from>GetVariable_86</from>
+				<input>i1</input>
+				<to>And_32</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_31</from>
+				<input>i2</input>
+				<to>And_32</to>
+				<output>result</output>
+			</connection>
+			<connection>
 				<from>SelectHint_8</from>
 				<input>hintId</input>
 				<to>CanShowHint_4</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>SelectHint_2</from>
+				<input>hintId</input>
+				<to>CanShowHint_31</to>
 				<output>id</output>
 			</connection>
 			<connection>
@@ -1231,6 +1524,24 @@
 				<output>equal</output>
 			</connection>
 			<connection>
+				<from>If_30</from>
+				<input>input</input>
+				<to>If_41</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>And_30</from>
+				<input>value</input>
+				<to>If_41</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_4</from>
+				<input>input</input>
+				<to>SetVariable_51</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>GetVariable_83</from>
 				<input>a</input>
 				<to>CompareIntegers_13</to>
@@ -1249,7 +1560,7 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_30</from>
+				<from>If_41</from>
 				<input>Show_Hint</input>
 				<to>Macro_4</to>
 				<output>true</output>
@@ -1258,6 +1569,24 @@
 				<from>SelectHint_3</from>
 				<input>HintID</input>
 				<to>Macro_4</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_87</from>
+				<input>i1</input>
+				<to>And_30</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_29</from>
+				<input>i2</input>
+				<to>And_30</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_3</from>
+				<input>hintId</input>
+				<to>CanShowHint_29</to>
 				<output>id</output>
 			</connection>
 			<connection>
@@ -1274,15 +1603,63 @@
 			</connection>
 			<connection>
 				<from>If_30</from>
+				<input>input</input>
+				<to>If_42</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>And_29</from>
+				<input>value</input>
+				<to>If_42</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_2</from>
+				<input>input</input>
+				<to>SetVariable_52</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
+				<from>If_42</from>
 				<input>Show_Hint</input>
 				<to>Macro_2</to>
-				<output>false</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>SelectHint_4</from>
 				<input>HintID</input>
 				<to>Macro_2</to>
 				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_88</from>
+				<input>i1</input>
+				<to>And_29</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_28</from>
+				<input>i2</input>
+				<to>And_29</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_4</from>
+				<input>hintId</input>
+				<to>CanShowHint_28</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>OnPlayerAutoAim_1</from>
+				<input>input</input>
+				<to>If_43</to>
+				<output>onEnabled</output>
+			</connection>
+			<connection>
+				<from>And_28</from>
+				<input>value</input>
+				<to>If_43</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>SelectHint_5</from>
@@ -1297,10 +1674,16 @@
 				<output>result</output>
 			</connection>
 			<connection>
-				<from>OnPlayerAutoAim_1</from>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>SetVariable_53</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
+				<from>If_43</from>
 				<input>Show_Hint</input>
 				<to>Macro_1</to>
-				<output>onEnabled</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>OnPlayerAutoAim_1</from>
@@ -1312,6 +1695,24 @@
 				<from>SelectHint_1</from>
 				<input>HintID</input>
 				<to>Macro_1</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_89</from>
+				<input>i1</input>
+				<to>And_28</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_27</from>
+				<input>i2</input>
+				<to>And_28</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_1</from>
+				<input>hintId</input>
+				<to>CanShowHint_27</to>
 				<output>id</output>
 			</connection>
 		</connections>

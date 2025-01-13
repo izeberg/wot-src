@@ -1,7 +1,7 @@
-import time, ResMgr, struct, quest_xml_source, nations
+import struct, time, ResMgr, nations, quest_xml_source
+from constants import ITEM_DEFS_PATH, IS_CLIENT, IS_WEB, EVENT_TYPE, PERSONAL_MISSION_FREE_TOKEN_NAME, PERSONAL_MISSION_2_FREE_TOKEN_NAME, PERSONAL_MISSION_FINAL_PAWN_COST, PERSONAL_MISSION_2_FINAL_PAWN_COST
 from items import _xml, ItemsPrices, vehicles
 from items.vehicles import VEHICLE_CLASS_TAGS
-from constants import ITEM_DEFS_PATH, IS_CLIENT, IS_WEB, EVENT_TYPE, PERSONAL_MISSION_FREE_TOKEN_NAME, PERSONAL_MISSION_2_FREE_TOKEN_NAME, PERSONAL_MISSION_FINAL_PAWN_COST, PERSONAL_MISSION_2_FINAL_PAWN_COST
 from nations import ALLIANCES_TAGS
 from soft_exception import SoftException
 if IS_CLIENT:
@@ -195,13 +195,13 @@ class TileCache(object):
 
 class PQCache(object):
 
-    def __init__(self):
+    def __init__(self, auxData=None):
         self.__potapovQuestIDToQuestType = {}
         self.__questUniqueIDToPotapovQuestID = {}
         self.__tileIDchainIDToPotapovQuestID = {}
         self.__tileIDchainIDToFinalPotapovQuestID = {}
         self.__tileIDchainIDToInitialPotapovQuestID = {}
-        self.__readQuestList()
+        self.__readQuestList(auxData=auxData)
 
     def questByPotapovQuestID(self, potapovQuestID):
         if potapovQuestID not in self.__potapovQuestIDToQuestType:
@@ -240,7 +240,7 @@ class PQCache(object):
     def __iter__(self):
         return self.__questUniqueIDToPotapovQuestID.iteritems()
 
-    def __readQuestList(self):
+    def __readQuestList(self, auxData=None):
         xmlPath = POTAPOV_QUEST_XML_PATH + '/list.xml'
         section = ResMgr.openSection(xmlPath)
         if section is None:
@@ -301,7 +301,7 @@ class PQCache(object):
             questPath = ('').join([POTAPOV_QUEST_XML_PATH, '/', questBranchName, '/tile_', tileID, '/chain_',
              chainID, '/', qname, '.xml'])
             questCtx = (None, questPath)
-            nodes = xmlSource.readFromInternalFile(questPath, curTime)
+            nodes = xmlSource.readFromInternalFile(questPath, curTime, auxData)
             nodes = nodes.get(EVENT_TYPE.POTAPOV_QUEST, None)
             if nodes is None:
                 _xml.raiseWrongXml(questCtx, 'potapovQuest', 'Potapov quests are not specified.')

@@ -16,10 +16,10 @@ from gui.impl import backport
 from gui.impl.backport import BackportTooltipWindow
 from gui.impl.backport.backport_tooltip import TooltipData
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.comp7.base_product_model import ProductTypes, ProductState, Rank
+from gui.impl.gen.view_models.views.lobby.comp7.base_product_model import ProductTypes, ProductState
+from gui.impl.gen.view_models.views.lobby.comp7.enums import MetaRootViews, Rank
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.pages.rank_discount_model import RankDiscountModel
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.pages.shop_model import ShopModel, ShopState
-from gui.impl.gen.view_models.views.lobby.comp7.meta_view.root_view_model import MetaRootViews
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.comp7 import comp7_model_helpers, comp7_shared
 from gui.impl.lobby.comp7.meta_view.meta_view_helper import setDivisionData, setRankData, getRankDivisions
@@ -365,6 +365,7 @@ class ShopPage(PageSubModelPresenter):
 
     def __goToStyle(self):
         self.__switchCameraToDefault = False
+        self.__switchVehicleToDefault = False
         customizationCallback = partial(_onCustomizationLoadedCallback, styleCD=self.__currentItemCD)
         if self.__c11nService.getCtx() is None:
             self.__c11nService.showCustomization(g_currentPreviewVehicle.invID, callback=customizationCallback)

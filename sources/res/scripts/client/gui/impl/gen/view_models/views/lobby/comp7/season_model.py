@@ -1,4 +1,5 @@
-from enum import Enum, IntEnum
+from enum import IntEnum
+from gui.impl.gen.view_models.views.lobby.comp7.enums import SeasonName
 from frameworks.wulf import ViewModel
 
 class SeasonState(IntEnum):
@@ -8,12 +9,6 @@ class SeasonState(IntEnum):
     ENDSOON = 3
     END = 4
     DISABLED = 5
-
-
-class SeasonName(Enum):
-    FIRST = 'first'
-    SECOND = 'second'
-    THIRD = 'third'
 
 
 class SeasonModel(ViewModel):

@@ -120,7 +120,7 @@ package net.wg.gui.lobby.post
       {
          super.configUI();
          this._stateName = VERSION_PROMO;
-         alpha = 0;
+         this.alpha = 0;
          this.hitMc.buttonMode = true;
          this.hitMc.mouseChildren = false;
          this.hover.visible = false;
@@ -131,17 +131,6 @@ package net.wg.gui.lobby.post
          this.hitMc.addEventListener(MouseEvent.CLICK,this.onHitMcClickHandler);
          this.closeBtn.addEventListener(MouseEvent.CLICK,this.onCloseBtnClickHandler);
          this.image.addEventListener(UILoaderEvent.COMPLETE,this.onImageCompleteHandler);
-      }
-      
-      private function onRollOverHandler(param1:MouseEvent) : void
-      {
-         this.hover.visible = true;
-         this._soundMgr.playControlsSnd(SoundManagerStates.SND_OVER,SoundTypes.ITEM_RDR,null);
-      }
-      
-      private function onRollOutHandler(param1:MouseEvent) : void
-      {
-         this.hover.visible = false;
       }
       
       override protected function draw() : void
@@ -311,11 +300,6 @@ package net.wg.gui.lobby.post
          }
       }
       
-      private function get isStateSmall() : Boolean
-      {
-         return this._stateName + SMALL_TEASER_POSTFIX == this._currentState;
-      }
-      
       private function resizeImage() : void
       {
          var _loc1_:Number = NaN;
@@ -368,6 +352,32 @@ package net.wg.gui.lobby.post
             this.image.x = IMG_DEFAULT_POS;
             this.image.y = IMG_DEFAULT_POS;
          }
+      }
+      
+      override public function set alpha(param1:Number) : void
+      {
+         super.alpha = param1;
+         var _loc2_:Boolean = param1 > 0;
+         if(visible != _loc2_)
+         {
+            visible = _loc2_;
+         }
+      }
+      
+      private function get isStateSmall() : Boolean
+      {
+         return this._stateName + SMALL_TEASER_POSTFIX == this._currentState;
+      }
+      
+      private function onRollOverHandler(param1:MouseEvent) : void
+      {
+         this.hover.visible = true;
+         this._soundMgr.playControlsSnd(SoundManagerStates.SND_OVER,SoundTypes.ITEM_RDR,null);
+      }
+      
+      private function onRollOutHandler(param1:MouseEvent) : void
+      {
+         this.hover.visible = false;
       }
       
       private function onImageCompleteHandler(param1:UILoaderEvent) : void

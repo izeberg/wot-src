@@ -30,12 +30,6 @@ package net.wg.infrastructure.base.meta
       
       function showVehiclesSideBarS() : void;
       
-      function nyGoToLootboxesS() : void;
-      
-      function nyGoToChallengeS() : void;
-      
-      function nyGoToBoardGameS() : void;
-      
       function as_showBill() : void;
       
       function as_hideBill() : void;

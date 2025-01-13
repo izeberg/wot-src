@@ -195,11 +195,8 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.addEventListener(CustomizationEvent.SELECT_HOT_FILTER,this.onBottomPanelCarouselSelectHotFilterHandler);
          this.carousel.addEventListener(CustomizationEvent.NEW_ANIMATION_SHOWN,this.onBottomPanelCarouselNewAnimationShownHandler);
          this.carousel.addEventListener(CustomizationEvent.SHOW_ATTACHMENTS_VIDEO,this.onShowAttachmentsVideoHandler);
-         this.carousel.addEventListener(CustomizationEvent.EMPTY_STATE_ACTION,this.onEmptyStateActionHandler);
+         this.carousel.addEventListener(CustomizationEvent.SHOW_VEHICLES_SIDEBAR,this.onShowVehiclesSideBaHandler);
          App.stage.addEventListener(CustomizationEvent.ITEMS_POPOVER_CLOSED,this.onStageItemsPopoverClosedHandler);
-         this.carousel.addEventListener(CustomizationEvent.NY_GOTO_LOOTBOXES,this.onNavigateToLootboxesHandler);
-         this.carousel.addEventListener(CustomizationEvent.NY_GOTO_CHALLENGE,this.onNavigateToChallengeHandler);
-         this.carousel.addEventListener(CustomizationEvent.NY_GOTO_BOARDGAME,this.onNavigateToBoardGameHandler);
          this.overlay.addEventListener(MouseEvent.CLICK,this.onOverlayClickHandler);
          this.overlay.visible = false;
          this._utils.universalBtnStyles.setStyle(this.itemsPopoverBtn,UniversalBtnStylesConst.STYLE_HEAVY_GREEN);
@@ -230,10 +227,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this.overlay.removeEventListener(MouseEvent.CLICK,this.onOverlayClickHandler);
          App.stage.removeEventListener(CustomizationEvent.ITEMS_POPOVER_CLOSED,this.onStageItemsPopoverClosedHandler);
          this.carousel.removeEventListener(CustomizationEvent.SHOW_ATTACHMENTS_VIDEO,this.onShowAttachmentsVideoHandler);
-         this.carousel.removeEventListener(CustomizationEvent.EMPTY_STATE_ACTION,this.onEmptyStateActionHandler);
-         this.carousel.removeEventListener(CustomizationEvent.NY_GOTO_LOOTBOXES,this.onNavigateToLootboxesHandler);
-         this.carousel.removeEventListener(CustomizationEvent.NY_GOTO_CHALLENGE,this.onNavigateToChallengeHandler);
-         this.carousel.removeEventListener(CustomizationEvent.NY_GOTO_BOARDGAME,this.onNavigateToBoardGameHandler);
+         this.carousel.removeEventListener(CustomizationEvent.SHOW_VEHICLES_SIDEBAR,this.onShowVehiclesSideBaHandler);
          super.onBeforeDispose();
       }
       
@@ -684,22 +678,7 @@ package net.wg.gui.lobby.vehicleCustomization
          showVideoS();
       }
       
-      private function onNavigateToLootboxesHandler(param1:CustomizationEvent) : void
-      {
-         nyGoToLootboxesS();
-      }
-      
-      private function onNavigateToChallengeHandler(param1:CustomizationEvent) : void
-      {
-         nyGoToChallengeS();
-      }
-      
-      private function onNavigateToBoardGameHandler(param1:CustomizationEvent) : void
-      {
-         nyGoToBoardGameS();
-      }
-      
-      private function onEmptyStateActionHandler(param1:CustomizationEvent) : void
+      private function onShowVehiclesSideBaHandler(param1:CustomizationEvent) : void
       {
          showVehiclesSideBarS();
       }

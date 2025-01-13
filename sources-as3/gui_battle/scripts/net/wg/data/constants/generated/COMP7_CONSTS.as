@@ -48,6 +48,8 @@ package net.wg.data.constants.generated
       public static const COMP7_QUALIFICATION_SUB_TASK_UI:String = "Comp7QualificationSubTaskUI";
       
       public static const STATUS_MARKER_CONFIRMED_STATE:String = "confirmed";
+      
+      public static const COMP7_SHOP_ID:String = "comp7Shop";
        
       
       public function COMP7_CONSTS()

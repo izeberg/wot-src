@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB148_FV227_Conceiver/normal/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.812572 -0.000364 -3.830629</min>
+		<max>1.812572 0.997159 3.783585</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB148_FV227_Conceiver/normal/lod1/Chassis</parent>
+	<extent>32</extent>
+</root>

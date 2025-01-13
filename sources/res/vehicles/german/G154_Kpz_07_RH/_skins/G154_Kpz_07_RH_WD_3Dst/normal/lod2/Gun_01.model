@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G154_Kpz_07_RH/_skins/G154_Kpz_07_RH_WD_3Dst/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.336410 -0.796972 -1.311907</min>
+		<max>1.329916 2.181894 6.487535</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G154_Kpz_07_RH/_skins/G154_Kpz_07_RH_WD_3Dst/normal/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+</root>

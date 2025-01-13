@@ -152,8 +152,6 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         if flagsGetter is None:
             return {'isVisible': isVisible, 'quests': []}
         else:
-            if self._festivityController.isEnabled():
-                return {'isVisible': True, 'isNYWidgetVisible': True, 'quests': []}
             isGrouped = self.__screenWidth <= _SCREEN_WIDTH_FOR_MARATHON_GROUP
             params = {QuestFlagTypes.MARATHON: {'isGrouped': isGrouped}}
             quests = flagsGetter.getVO(self._currentVehicle.item, params)
@@ -183,7 +181,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         isBPAvailable = not self.__battlePassController.isDisabled()
         isValidBattleType = self.prbDispatcher and self.prbDispatcher.getEntity() and self.__battlePassController.isValidBattleType(self.prbDispatcher.getEntity())
         isRuleCompleted = self.__limitedUIController.isRuleCompleted(LUI_RULES.BattlePassEntry)
-        isVisible = isBPAvailable and isValidBattleType and isRuleCompleted and not self._festivityController.isEnabled()
+        isVisible = isBPAvailable and isValidBattleType and isRuleCompleted
         if isVisible:
             return HANGAR_ALIASES.BATTLE_PASSS_ENTRY_POINT
         return ''

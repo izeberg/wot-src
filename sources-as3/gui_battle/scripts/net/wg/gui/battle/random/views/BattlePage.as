@@ -109,6 +109,8 @@ package net.wg.gui.battle.random.views
       
       public var newbieHint:NewbieHint = null;
       
+      protected var playersPanelOffset:int = -246;
+      
       private var _playersPanelState:int = -1;
       
       private var _playersPanelHasInvite:Boolean = false;
@@ -125,11 +127,6 @@ package net.wg.gui.battle.random.views
       {
          this._tweens = new Vector.<Tween>();
          super();
-      }
-      
-      protected function getDamagePanelSpacing() : int
-      {
-         return Values.ZERO;
       }
       
       override public function updateStage(param1:Number, param2:Number) : void
@@ -393,21 +390,6 @@ package net.wg.gui.battle.random.views
          return param1;
       }
       
-      protected function getAvailableMinimapHeight() : Number
-      {
-         var _loc1_:Number = Values.ZERO;
-         if(this.playersPanel)
-         {
-            _loc1_ = this.playersPanel.panelHeight;
-         }
-         return App.appHeight - _loc1_;
-      }
-      
-      protected function getAvailableMinimapWidth() : Number
-      {
-         return App.appWidth - this.consumablesPanel.panelWidth;
-      }
-      
       override protected function playerMessageListPositionUpdate() : void
       {
          if(minimap.visible)
@@ -470,6 +452,36 @@ package net.wg.gui.battle.random.views
          this.updateConsumablePanel(param1);
       }
       
+      override protected function setComponentsVisibility(param1:Vector.<String>, param2:Vector.<String>) : void
+      {
+         var _loc3_:Boolean = this.teamBasesPanelUI.isCompVisible();
+         super.setComponentsVisibility(param1,param2);
+         if(this.teamBasesPanelUI.isCompVisible() != _loc3_)
+         {
+            this.updateTeamBasesPanelPosition();
+         }
+      }
+      
+      protected function getDamagePanelSpacing() : int
+      {
+         return Values.ZERO;
+      }
+      
+      protected function getAvailableMinimapHeight() : Number
+      {
+         var _loc1_:Number = Values.ZERO;
+         if(this.playersPanel)
+         {
+            _loc1_ = this.playersPanel.panelHeight;
+         }
+         return App.appHeight - _loc1_;
+      }
+      
+      protected function getAvailableMinimapWidth() : Number
+      {
+         return App.appWidth - this.consumablesPanel.panelWidth;
+      }
+      
       protected function updateMapInfoHintLayout() : void
       {
          if(this.mapInfoTip)
@@ -505,13 +517,38 @@ package net.wg.gui.battle.random.views
          this.battleMessenger.y = damagePanel.y - this.battleMessenger.height + MESSENGER_Y_OFFSET - this.getDamagePanelSpacing();
       }
       
-      override protected function setComponentsVisibility(param1:Vector.<String>, param2:Vector.<String>) : void
+      protected function updateBattleDamageLogPanelPosition() : void
       {
-         var _loc3_:Boolean = this.teamBasesPanelUI.isCompVisible();
-         super.setComponentsVisibility(param1,param2);
-         if(this.teamBasesPanelUI.isCompVisible() != _loc3_)
+         var _loc1_:int = BattleDamageLogConstants.MAX_VIEW_RENDER_COUNT;
+         if(this.battleDamageLogPanel.x + BattleDamageLogConstants.MAX_DAMAGE_LOG_VIEW_WIDTH >= this.consumablesPanel.x)
          {
-            this.updateTeamBasesPanelPosition();
+            _loc1_ = BattleDamageLogConstants.MIN_VIEW_RENDER_COUNT;
+         }
+         this.battleDamageLogPanel.setDetailActionCount(_loc1_);
+      }
+      
+      protected function updateDamageLogPosition() : void
+      {
+         if(this.playersPanel && (this._playersPanelHasInvite || this._playersPanelState > PLAYERS_PANEL_STATE.HIDDEN))
+         {
+            this.battleDamageLogPanel.updateTopContainerPosition(this.playersPanel.listLeft.getRenderersVisibleWidth() + this.playersPanelOffset);
+         }
+         else
+         {
+            this.battleDamageLogPanel.updateTopContainerPosition(BattleDamageLogPanel.SCREEN_BORDER_X_POS);
+         }
+      }
+      
+      protected function consumablesPanelUpdatePosition() : void
+      {
+         if(isPostMortem)
+         {
+            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
+            this.updateBattleDamageLogPosInPostmortem();
+         }
+         else
+         {
+            this.updateBattleDamageLogPanelPosition();
          }
       }
       
@@ -551,16 +588,6 @@ package net.wg.gui.battle.random.views
          return this.getChildIndex(param1) > this.getChildIndex(param2);
       }
       
-      protected function updateBattleDamageLogPanelPosition() : void
-      {
-         var _loc1_:int = BattleDamageLogConstants.MAX_VIEW_RENDER_COUNT;
-         if(this.battleDamageLogPanel.x + BattleDamageLogConstants.MAX_DAMAGE_LOG_VIEW_WIDTH >= this.consumablesPanel.x)
-         {
-            _loc1_ = BattleDamageLogConstants.MIN_VIEW_RENDER_COUNT;
-         }
-         this.battleDamageLogPanel.setDetailActionCount(_loc1_);
-      }
-      
       private function swapElementsByMouseInteraction(param1:DisplayObject, param2:DisplayObject) : void
       {
          if(!App.contextMenuMgr.isShown() && this.checkZIndexes(param1,param2))
@@ -569,15 +596,51 @@ package net.wg.gui.battle.random.views
          }
       }
       
-      protected function updateDamageLogPosition() : void
+      private function updateTeamBasesPanelPosition(param1:Boolean = false) : void
       {
-         if(this.playersPanel && (this._playersPanelHasInvite || this._playersPanelState > PLAYERS_PANEL_STATE.HIDDEN))
+         var _loc2_:int = 0;
+         this._teamBasesPanelY = this.fragCorrelationBar != null && this.fragCorrelationBar.isCompVisible() ? int(this._teamBasesPanelDefaultY) : int(TEAM_BASES_PANEL_OFFSET);
+         this.clearTweens();
+         if(this.teamBasesPanelUI.y != this._teamBasesPanelY)
          {
-            this.battleDamageLogPanel.updateTopContainerPosition(this.playersPanel.listLeft.getRenderersVisibleWidth() + BattleDamageLogPanel.PLAYERS_PANEL_OFFSET);
+            if(param1)
+            {
+               this._tweens.push(new Tween(TWEEN_DURATION,this.teamBasesPanelUI,{"y":this._teamBasesPanelY},{"ease":Linear.easeIn}));
+            }
+            else
+            {
+               this.teamBasesPanelUI.y = this._teamBasesPanelY;
+            }
          }
-         else
+         this.updatePositionForQuestProgress();
+         if(this.newbieHint)
          {
-            this.battleDamageLogPanel.updateTopContainerPosition(BattleDamageLogPanel.SCREEN_BORDER_X_POS);
+            _loc2_ = Boolean(this.teamBasesPanelUI.panelHeight) ? int(this._teamBasesPanelY + this.teamBasesPanelUI.panelHeight | 0) : int(0);
+            if(this.newbieHint.y != _loc2_)
+            {
+               if(param1)
+               {
+                  this._tweens.push(new Tween(TWEEN_DURATION,this.newbieHint,{"y":_loc2_},{"ease":Linear.easeIn}));
+               }
+               else
+               {
+                  this.newbieHint.y = _loc2_;
+               }
+            }
+         }
+      }
+      
+      private function clearTweens() : void
+      {
+         var _loc1_:Tween = null;
+         if(this._tweens.length > 0)
+         {
+            for each(_loc1_ in this._tweens)
+            {
+               _loc1_.dispose();
+               _loc1_ = null;
+            }
+            this._tweens.length = 0;
          }
       }
       
@@ -671,67 +734,6 @@ package net.wg.gui.battle.random.views
       {
          minimap.updateSizeIndex(false);
          this.consumablesPanelUpdatePosition();
-      }
-      
-      protected function consumablesPanelUpdatePosition() : void
-      {
-         if(isPostMortem)
-         {
-            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-            this.updateBattleDamageLogPosInPostmortem();
-         }
-         else
-         {
-            this.updateBattleDamageLogPanelPosition();
-         }
-      }
-      
-      private function updateTeamBasesPanelPosition(param1:Boolean = false) : void
-      {
-         var _loc2_:int = 0;
-         this._teamBasesPanelY = this.fragCorrelationBar != null && this.fragCorrelationBar.isCompVisible() ? int(this._teamBasesPanelDefaultY) : int(TEAM_BASES_PANEL_OFFSET);
-         this.clearTweens();
-         if(this.teamBasesPanelUI.y != this._teamBasesPanelY)
-         {
-            if(param1)
-            {
-               this._tweens.push(new Tween(TWEEN_DURATION,this.teamBasesPanelUI,{"y":this._teamBasesPanelY},{"ease":Linear.easeIn}));
-            }
-            else
-            {
-               this.teamBasesPanelUI.y = this._teamBasesPanelY;
-            }
-         }
-         this.updatePositionForQuestProgress();
-         if(this.newbieHint)
-         {
-            _loc2_ = Boolean(this.teamBasesPanelUI.panelHeight) ? int(this._teamBasesPanelY + this.teamBasesPanelUI.panelHeight | 0) : int(0);
-            if(this.newbieHint.y != _loc2_)
-            {
-               if(param1)
-               {
-                  this._tweens.push(new Tween(TWEEN_DURATION,this.newbieHint,{"y":_loc2_},{"ease":Linear.easeIn}));
-               }
-               else
-               {
-                  this.newbieHint.y = _loc2_;
-               }
-            }
-         }
-      }
-      
-      private function clearTweens() : void
-      {
-         var _loc1_:Tween = null;
-         if(this._tweens.length > 0)
-         {
-            for each(_loc1_ in this._tweens)
-            {
-               _loc1_.dispose();
-               _loc1_ = null;
-            }
-            this._tweens.length = 0;
-         }
       }
    }
 }

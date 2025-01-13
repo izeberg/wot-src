@@ -481,6 +481,13 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
+			<id>128</id>
+			<name>Cz02_TVP_T50_NY25_3Dst</name>
+			<modelName>particles/Tank/customization/Cz02_TVP_T50_NY25_3Dst/Cz02_TVP_T50_NY25_3Dst.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/Cz02_TVP_T50_NY25_3Dst/Cz02_TVP_T50_NY25_3Dst_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
 			<id>129</id>
 			<name>GB145_Crusher_ASE_4</name>
 			<modelName>particles/Tank/customization/GB145_Crusher_ASE_4/GB145_Crusher_ASE_4.prefab</modelName>
@@ -508,10 +515,10 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
-			<id>128</id>
-			<name>Cz02_TVP_T50_NY25_3Dst</name>
-			<modelName>particles/Tank/customization/Cz02_TVP_T50_NY25_3Dst/Cz02_TVP_T50_NY25_3Dst.prefab</modelName>
-			<hangarModelName>particles/Tank/customization/Cz02_TVP_T50_NY25_3Dst/Cz02_TVP_T50_NY25_3Dst_hangar.prefab</hangarModelName>
+			<id>133</id>
+			<name>A176_M103_110_HBP_3Dst</name>
+			<modelName>particles/Tank/customization/A176_M103_110_HBP_3Dst/A176_M103_110_HBP_3Dst.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/A176_M103_110_HBP_3Dst/A176_M103_110_HBP_3Dst.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 	</itemGroup>

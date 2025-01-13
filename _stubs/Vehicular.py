@@ -524,6 +524,7 @@ class GeneralWheelsAnimatorConfig(pybind11_object):
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
 	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
 	def __hash__(*args, **kwargs): pass
 	def __init__(self, *args, **kwargs): pass
 	__module__ = 'Vehicular'
@@ -533,6 +534,7 @@ class GeneralWheelsAnimatorConfig(pybind11_object):
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
 	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
@@ -848,6 +850,7 @@ class PhysicalDestroyedTrackConfig(pybind11_object):
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
 	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
 	def __hash__(*args, **kwargs): pass
 	def __init__(self, *args, **kwargs): pass
 	__module__ = 'Vehicular'
@@ -857,6 +860,7 @@ class PhysicalDestroyedTrackConfig(pybind11_object):
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
 	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
@@ -893,6 +897,7 @@ class PhysicalTrackBuilder(pybind11_object):
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
 	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
 	def __hash__(*args, **kwargs): pass
 	def __init__(self, *args, **kwargs): pass
 	__module__ = 'Vehicular'
@@ -902,6 +907,7 @@ class PhysicalTrackBuilder(pybind11_object):
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
 	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass

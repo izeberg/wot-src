@@ -2,8 +2,6 @@
 <root>
 	<htmlTemplatesSimple>
 		<adventLootbox>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/lootbox/title): %(count)s&lt;/font&gt;</adventLootbox>
-		<adventNYGP>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/ny_gp/title): &lt;font color=&apos;#C9C9B6&apos;&gt;%(count)s&lt;/font&gt;&lt;/font&gt;</adventNYGP>
-		<adventNyTerminalToken>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/nyTerminalToken/title): %(count)s&lt;/font&gt;</adventNyTerminalToken>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<adventCalendarQuestReward>
@@ -24,35 +22,19 @@
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#advent_calendar.advent_calendar:notification/progerssion/finished)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/reward/received)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(rewards)s&lt;/font&gt;</message>
 		</adventCalendarProgressionFinishedReward>
-		<AdventCalendarDoorsAvailableFirstEntry>
+		<AdventCalendarReminder>
 			<groupID>offer</groupID>
-			<priority>medium</priority>
-			<gfViewName>AdventCalendarDoorsAvailableFirstEntry</gfViewName>
-			<gfViewPopUpHeight>410</gfViewPopUpHeight>
-			<gfViewPopUpWidth>290</gfViewPopUpWidth>
-			<gfViewHeight>290</gfViewHeight>
-			<gfViewWidth>282</gfViewWidth>
-			<linkage>GamefaceNotification</linkage>
-		</AdventCalendarDoorsAvailableFirstEntry>
-		<AdventCalendarDoorsAvailable>
-			<groupID>offer</groupID>
-			<priority>medium</priority>
-			<gfViewName>AdventCalendarDoorsAvailable</gfViewName>
-			<gfViewPopUpHeight>320</gfViewPopUpHeight>
-			<gfViewPopUpWidth>290</gfViewPopUpWidth>
-			<gfViewHeight>290</gfViewHeight>
-			<gfViewWidth>282</gfViewWidth>
-			<linkage>GamefaceNotification</linkage>
-		</AdventCalendarDoorsAvailable>
-		<AdventCalendarDoorsAvailablePostEvent>
-			<groupID>offer</groupID>
-			<priority>medium</priority>
-			<gfViewName>AdventCalendarDoorsAvailablePostEvent</gfViewName>
-			<gfViewPopUpHeight>330</gfViewPopUpHeight>
-			<gfViewPopUpWidth>290</gfViewPopUpWidth>
-			<gfViewHeight>320</gfViewHeight>
-			<gfViewWidth>282</gfViewWidth>
-			<linkage>GamefaceNotification</linkage>
-		</AdventCalendarDoorsAvailablePostEvent>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<linkage>AdventCalendarReward</linkage>
+			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/adventCalendar/reward/header)&lt;/font&gt;&lt;/textformat&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/adventCalendar/reward/button)</label>
+					<action>showAdventCalendar</action>
+				</button>
+			</buttonsLayout>
+			<buttonsAlign>center</buttonsAlign>
+		</AdventCalendarReminder>
 	</htmlTemplates>
 </root>
