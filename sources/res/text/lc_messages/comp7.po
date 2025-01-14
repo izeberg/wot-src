@@ -65,6 +65,15 @@ msgstr "战斗在%(serverName)s服务器上不开放"
 msgid "alertMessage/notSet"
 msgstr "此模式在%(serverName)s服务器上不开放"
 
+msgid "alertMessage/preannounce/first"
+msgstr "苍蓝蝎狮赛季开启时间: %(date)s"
+
+msgid "alertMessage/preannounce/second"
+msgstr "绯红蝎狮赛季开启时间: %(date)s"
+
+msgid "alertMessage/preannounce/third"
+msgstr "翡翠蝎狮赛季开启时间: %(date)s"
+
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "距此服务器上的战斗开放还有%(primeDelta)s"
 
@@ -101,8 +110,23 @@ msgstr "?empty?"
 msgid "alertMessage/unsuitableVehicles"
 msgstr "车库中没有满足要求的%(levels)s级坦克"
 
-msgid "banner/info/disabled"
-msgstr "等待黄金时间开启"
+msgid "awardsWidget/description/award"
+msgstr "点击选择并领取您的奖励。"
+
+msgid "awardsWidget/description/awardDisabled"
+msgstr "最终奖励暂时不可用。我们对造成的不便深表歉意。"
+
+msgid "awardsWidget/title"
+msgid_plural "plural/awardsWidget/title"
+msgstr[0] ""
+"领取\n"
+"奖励"
+msgstr[1] ""
+"领取\n"
+"奖励"
+msgstr[2] ""
+"领取\n"
+"奖励"
 
 msgid "banner/info/seasonEnd/first"
 msgstr "苍蓝蝎狮赛季已结束"
@@ -113,17 +137,8 @@ msgstr "绯红蝎狮赛季已结束"
 msgid "banner/info/seasonEnd/third"
 msgstr "翡翠蝎狮赛季已结束"
 
-msgid "banner/info/seasonEndSoon"
-msgstr "展示您战斗技巧的最佳机会！"
-
-msgid "banner/info/seasonJustStarted"
-msgstr "同场竞技，一显身手！"
-
 msgid "banner/infoSmall/disabled"
 msgstr "休战期"
-
-msgid "banner/infoSmall/seasonEndSoon"
-msgstr "大放异彩的最后机会！"
 
 msgid "banner/season/first"
 msgstr "苍蓝蝎狮"
@@ -135,24 +150,33 @@ msgid "banner/season/third"
 msgstr "翡翠蝎狮"
 
 msgid "banner/seasonDate/seasonLasts"
-msgstr "%(season)s，%(month)s%(day)s日结束"
-
-msgid "banner/seasonDate/seasonNotStarted"
-msgstr "%(season)s，%(month)s%(day)s日开始"
-
-msgid "banner/seasonDateSmall/seasonLasts"
 msgstr "%(month)s%(day)s日结束"
 
+msgid "banner/seasonDate/seasonNotStarted"
+msgstr "开启时间: %(month)s%(day)s日%(hour)s:%(min)s"
+
 msgid "banner/seasonDateSmall/seasonNotStarted"
-msgstr "%(month)s%(day)s日开始"
-
-msgid "banner/timeLeft/hours"
-msgstr "黄金时间: %(hour)s时%(min)s分"
-
-msgid "banner/timeLeft/min"
-msgstr "黄金时间: %(min)s分"
+msgstr "%(month)s%(day)s日%(hour)s:%(min)s"
 
 msgid "banner/title"
+msgstr "天梯战"
+
+msgid "bannerTooltip/description"
+msgstr "一种竞技性模式，使用X级坦克以7对7的形式进行。晋升段位，获取独特个性化元素、坦克、战争债券，以及其他珍贵奖励。"
+
+msgid "bannerTooltip/end"
+msgstr "赛季已结束"
+
+msgid "bannerTooltip/notAvailable"
+msgstr "休战期"
+
+msgid "bannerTooltip/notStarted"
+msgstr "开启时间: %(month)s%(day)s日%(hour)s:%(min)s"
+
+msgid "bannerTooltip/range"
+msgstr "%(startDate)s–%(endDate)s"
+
+msgid "bannerTooltip/title"
 msgstr "天梯战"
 
 msgid "battleCarousel/filterButtonTooltip/body"
@@ -342,6 +366,12 @@ msgstr[2] "翡翠蝎狮赛季将持续%(days)d天"
 msgid "calendarDay/title"
 msgstr "时间表"
 
+msgid "claimRewards/button"
+msgstr "领取奖励"
+
+msgid "claimRewards/rewardsUnavailable"
+msgstr "由于技术原因，该操作暂时不可用。我们正在努力解决这个问题。"
+
 msgid "closeButtonLabel"
 msgstr "关闭"
 
@@ -355,6 +385,9 @@ msgid "countDown/text"
 msgstr ""
 "距活动开始还有：\n"
 "%(timeLeft)s"
+
+msgid "countdown/lastMinute"
+msgstr "少于1分钟"
 
 msgid "crewMembersTooltip/description"
 msgstr ""
@@ -637,7 +670,7 @@ msgid "leaderboard/table/tooltip/score/header"
 msgstr "评级点数"
 
 msgid "listSeparator"
-msgstr "，"
+msgstr "、"
 
 msgid "mainWidget/ratingCalculation"
 msgstr ""
@@ -692,36 +725,6 @@ msgstr "评级点数"
 
 msgid "membersWindow/memberCountDropdown/description"
 msgstr "组队玩家"
-
-msgid "modifier/name/engineFireChance"
-msgstr "发动机起火几率"
-
-msgid "modifier/name/innerModuleDamageReduction"
-msgstr "降低内部模块所受到的损伤"
-
-msgid "modifier/name/rangeOfPotentialDamage"
-msgstr "潜在损伤浮动范围"
-
-msgid "modifier/name/timeRemainingVisible"
-msgstr "可见时长"
-
-msgid "modifier/name/vehicleDurability"
-msgstr "坦克生命值"
-
-msgid "modifier/valueType/HP"
-msgstr "%(hp)s点"
-
-msgid "modifier/valueType/deviation"
-msgstr "+/-%(deviation)s%"
-
-msgid "modifier/valueType/meters"
-msgstr "%(meters)s米"
-
-msgid "modifier/valueType/percentage"
-msgstr "%(percentage)s%"
-
-msgid "modifier/valueType/seconds"
-msgstr "%(seconds)s秒"
 
 msgid "noVehicles/howTo/premium"
 msgstr "使用《坦克世界》高级账号"
@@ -1060,6 +1063,18 @@ msgstr "%(rank)s段位"
 msgid "rank/third"
 msgstr "白银"
 
+msgid "rankCompatibilityTable/playersRank"
+msgstr "玩家段位"
+
+msgid "rankCompatibilityTable/teammatesRank"
+msgstr "小队成员段位"
+
+msgid "rankCompatibilityTooltip/description"
+msgstr "小队只能由段位相近的玩家组成。"
+
+msgid "rankCompatibilityTooltip/heading"
+msgstr "%(count)s人小队的段位限制"
+
 msgid "rankInactivityTooltip/description"
 msgstr "如果不参加此模式的战斗，您会失去一定的评级点数。"
 
@@ -1165,7 +1180,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "适用于{whiteSpanish_Open}%(vehicleLevel)s级坦克{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}适用于融合兽(苍蓝)风格{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}适用于\"融合兽(绯红)\"风格{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s级"
@@ -1181,6 +1196,9 @@ msgstr "前往其他奖励"
 
 msgid "rewardsScreen/buttonToRewards"
 msgstr "前往奖励"
+
+msgid "rewardsScreen/buttonToSelectedRewards"
+msgstr "选择奖励"
 
 msgid "rewardsScreen/buttonToShop"
 msgstr "前往购买"
@@ -1240,9 +1258,9 @@ msgstr "您已获得了晋升至{cream_Open}%(rank)s{cream_Close}段位的奖励
 
 msgid "rewardsScreen/subtitle/tokensRewards"
 msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
-msgstr[0] "已获得收集{cream_Open}%(tokensCount)s{cream_Close}幸运点数的奖励"
-msgstr[1] "已获得收集{cream_Open}%(tokensCount)s{cream_Close}幸运点数的奖励"
-msgstr[2] "已获得收集{cream_Open}%(tokensCount)s{cream_Close}幸运点数的奖励"
+msgstr[0] "完成{cream_Open}%(tokensCount)s{cream_Close}个每周任务的奖励"
+msgstr[1] "完成{cream_Open}%(tokensCount)s{cream_Close}个每周任务的奖励"
+msgstr[2] "完成{cream_Open}%(tokensCount)s{cream_Close}个每周任务的奖励"
 
 msgid "rewardsScreen/title/division"
 msgstr "已达到梯队%(division)s"
@@ -1266,13 +1284,22 @@ msgstr[1] "已获得奖励"
 msgstr[2] "已获得奖励"
 
 msgid "rewardsScreen/title/tokensRewards"
-msgstr "已收集幸运点数"
+msgstr "每周任务奖励"
 
 msgid "rewardsScreen/title/yearlyRewards"
 msgstr "年度奖励"
 
 msgid "rewardsScreen/yearlyVehicleCrew"
 msgstr "附带独特乘员:"
+
+msgid "rewardsSelectionScreen/description"
+msgstr "天梯战"
+
+msgid "rewardsSelectionScreen/title"
+msgid_plural "plural/rewardsSelectionScreen/title"
+msgstr[0] "选择奖励"
+msgstr[1] "选择奖励"
+msgstr[2] "选择奖励"
 
 msgid "scoreTooltip/body"
 msgstr "您所获评级点数将决定您在天梯战模式中的段位和梯队。获得战斗胜利，成为最强者！"
@@ -1624,7 +1651,7 @@ msgstr ""
 "%(rewards)s"
 
 msgid "system_messages/tokenWeeklyReward/title"
-msgstr "收集幸运点数的奖励"
+msgstr "完成每周任务的奖励"
 
 msgid "system_messages/weeklyReward/body"
 msgstr ""
@@ -1633,9 +1660,6 @@ msgstr ""
 
 msgid "system_messages/weeklyReward/title"
 msgstr "每周任务的奖励"
-
-msgid "system_messages/weeklyReward/tokens"
-msgstr "幸运点数"
 
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "在赛事中不会获取或失去评级点数。"
@@ -1655,8 +1679,8 @@ msgstr "在天梯战训练中无法获取评级点数。"
 msgid "unit/message/modeOffline"
 msgstr "无法加入战斗: 数据库错误。"
 
-msgid "unit/message/ratingRestriction"
-msgstr "此小队中玩家的评级点数之差超过了%(rating)s"
+msgid "unit/message/rankRangeRestriction"
+msgstr "超出段位差距限制"
 
 msgid "voiceChat/active"
 msgstr "离开语音聊天"
@@ -1666,6 +1690,53 @@ msgstr "加入语音聊天"
 
 msgid "waitingSpinner/message"
 msgstr "加载内容中..."
+
+msgid "weeklyQuestTooltip/additionalRewards"
+msgstr "完成{cream_Open}%(questsList)s{cream_Close}个任务即可获得额外奖励"
+
+msgid "weeklyQuestTooltip/countdownStatus"
+msgid_plural "plural/weeklyQuestTooltip/countdownStatus"
+msgstr[0] ""
+"距%(value)s个新任务开放还有:\n"
+"%(countdown)s"
+msgstr[1] ""
+"距%(value)s个新任务开放还有:\n"
+"%(countdown)s"
+msgstr[2] ""
+"距%(value)s个新任务开放还有:\n"
+"%(countdown)s"
+
+msgid "weeklyQuestTooltip/counterQuests"
+msgstr "已完成任务: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuestTooltip/questsProgres"
+msgstr "{yellow_Open}%(current)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuestTooltip/takeRewards/header"
+msgstr "干得漂亮！"
+
+msgid "weeklyQuestTooltip/takeRewards/text"
+msgstr ""
+"您已完成所有的每周任务。\n"
+"别忘了领取您的奖励，下个赛季见！"
+
+msgid "weeklyQuests/CountdownStatus/active"
+msgid_plural "plural/weeklyQuests/CountdownStatus/active"
+msgstr[0] "距%(value)s个新任务开放还有%(countdown)s"
+msgstr[1] "距%(value)s个新任务开放还有%(countdown)s"
+msgstr[2] "距%(value)s个新任务开放还有%(countdown)s"
+
+msgid "weeklyQuests/CountdownStatus/done"
+msgstr "新任务将于下赛季开放！"
+
+msgid "weeklyQuests/TokenProgress/header"
+msgstr "已完成任务: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuests/TokenProgress/subheader"
+msgid_plural "plural/weeklyQuests/TokenProgress/subheader"
+msgstr[0] "您每周将获得%(value)s个新任务。每完成一个任务即可推进奖励进度！"
+msgstr[1] "您每周将获得%(value)s个新任务。每完成一个任务即可推进奖励进度！"
+msgstr[2] "您每周将获得%(value)s个新任务。每完成一个任务即可推进奖励进度！"
 
 msgid "weeklyQuests/card/progress/counter"
 msgstr "%(current)s/%(total)s"
@@ -1691,107 +1762,64 @@ msgstr "完成前置任务以解锁这一个。"
 msgid "weeklyQuests/card/statusLockedTooltip/header"
 msgstr "任务未开放"
 
-msgid "weeklyQuests/resetStatus/ended"
-msgstr "已完成所有任务。"
-
-msgid "weeklyQuests/resetStatus/lastWeek"
-msgstr "本周是赛季的最后一周—请抓紧时间完成任务并获得奖励！"
-
-msgid "weeklyQuests/resetStatus/timer"
-msgstr "任务完成进度每周都会重置。距下次更新还有: %(countdown)s"
-
-msgid "weeklyQuests/tokenProgress/description/done"
-msgstr "已获得所有奖励"
-
-msgid "weeklyQuests/tokenProgress/description/normal"
-msgstr "收集幸运点数以获得奖励"
-
 msgid "whatsNewButtonLabel"
 msgstr "赛季更新"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "苍蓝蝎狮赛季"
+msgstr "绯红蝎狮赛季"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "天梯战有什么新内容？"
 
 msgid "whatsNewView/button/ok"
-msgstr "出发！"
+msgstr "我们开始吧！"
 
 msgid "whatsNewView/intro/description"
-msgstr "参加全部3个赛季，投身战斗，获取珍贵的年度奖励，现在，获取独特坦克变得更加容易。在整个赛年中的表现越好，获得的风格就越独特。"
+msgstr ""
+"任务不再失效，整个赛季期间均可完成，您可通过车库中的小部件追踪当前任务的进度。炮弹抗性加强配件已替换为改进型配件令牌，让您可选择任意改进型配件作为奖励。"
 
 msgid "whatsNewView/intro/heading"
-msgstr "欢迎来到蝎狮赛年！"
+msgstr "每周任务%(tag)"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "地图"
 
-msgid "whatsNewView/modifiers/NA"
-msgstr "无"
+msgid "whatsNewView/roleSkills/description"
+msgstr "大部分角色能力已获得平衡性改动。欲知更多详情，请查阅赛季专题文章。"
 
-msgid "whatsNewView/modifiers/added"
-msgstr "新增修改器"
+msgid "whatsNewView/roleSkills/heading"
+msgstr "角色能力平衡性改动"
 
-msgid "whatsNewView/modifiers/changed"
-msgstr "经过调整的修改器"
+msgid "whatsNewView/sectionDescription/bondShop"
+msgstr "现在可从战争债券物品界面轻松访问天梯战商店。"
 
-msgid "whatsNewView/modifiers/currentSeason"
-msgstr "当前赛季"
+msgid "whatsNewView/sectionDescription/enemy"
+msgstr "现在您可在战斗开始时查看对手的昵称和段位。"
 
-msgid "whatsNewView/modifiers/description"
-msgstr "添加了更多可改变坦克参数的模式专属修改器。"
+msgid "whatsNewView/sectionDescription/legendRank"
+msgstr ""
+"现在名列排行榜{whiteSpanish_Open}前%(topPercentage)s%{whiteSpanish_Close}的玩家将拥有传说段位，排名每{whiteSpanish_Open}%(count)s分钟{whiteSpanish_Close}更新一次。"
 
-msgid "whatsNewView/modifiers/heading"
-msgstr "天梯战修改器更新"
+msgid "whatsNewView/sectionDescription/platoons_2"
+msgstr "最低段位和最高段位玩家之间的段位差距不得大于1个段位。"
 
-msgid "whatsNewView/modifiers/previousSeason"
-msgstr "上一个赛季"
+msgid "whatsNewView/sectionDescription/platoons_7"
+msgstr "最低段位和最高段位玩家之间的段位差距不得大于2个段位。"
 
-msgid "whatsNewView/modifiers/random"
-msgstr "标准模式"
+msgid "whatsNewView/sectionHeading/bondShop"
+msgstr "商店整合"
 
-msgid "whatsNewView/newVehicles/heading"
-msgstr "天梯战中开放的新坦克"
+msgid "whatsNewView/sectionHeading/enemy"
+msgstr "知己知彼"
 
-msgid "whatsNewView/sectionDescription/assaultTankDestroyer"
-msgstr "激活后，坦克的动力会增强，对敌人造成的撞击损伤也会提高，同时受到的损伤亦会降低。您可在\"关于活动\"页面和界面中的\"角色能力\"描述中了解更多详情。"
+msgid "whatsNewView/sectionHeading/legendRank"
+msgstr "传说段位扩充"
 
-msgid "whatsNewView/sectionDescription/ratingUpdate"
-msgstr "提高黑铁、青铜和白银段位所获得评级点数。"
+msgid "whatsNewView/sectionHeading/platoons"
+msgstr "全新小队限制标准: 评级点数改为段位"
 
-msgid "whatsNewView/sectionDescription/reconFlight"
-msgid_plural "plural/whatsNewView/sectionDescription/reconFlight"
-msgstr[0] "现在，该能力在战斗开始%(seconds)s秒后开放使用。玩家被该能力发现后，界面上会显示一个特殊图标。"
-msgstr[1] "现在，该能力在战斗开始%(seconds)s秒后开放使用。玩家被该能力发现后，界面上会显示一个特殊图标。"
-msgstr[2] "现在，该能力在战斗开始%(seconds)s秒后开放使用。玩家被该能力发现后，界面上会显示一个特殊图标。"
-
-msgid "whatsNewView/sectionDescription/shopUpdates"
-msgstr "达到白银段位后，您就能购买全新改进型配件——隐蔽排气装置。"
-
-msgid "whatsNewView/sectionDescription/tournaments"
-msgstr "千万不要错过参加全新季中赛事的机会，每支团队都有机会获胜！"
-
-msgid "whatsNewView/sectionDescription/trainingRoom"
-msgstr "现在可以在天梯战训练模式中免费使用弹药、给养和指令。"
-
-msgid "whatsNewView/sectionHeading/assaultTankDestroyer"
-msgstr "突击型自行反坦克炮角色能力重制"
-
-msgid "whatsNewView/sectionHeading/ratingUpdate"
-msgstr "段位系统更新"
-
-msgid "whatsNewView/sectionHeading/reconFlight"
-msgstr "侦察飞行角色能力更新"
-
-msgid "whatsNewView/sectionHeading/shopUpdates"
-msgstr "天梯战商店更新"
-
-msgid "whatsNewView/sectionHeading/tournaments"
-msgstr "赛事"
-
-msgid "whatsNewView/sectionHeading/trainingRoom"
-msgstr "训练房间"
+msgid "whatsNewView/sectionSubtitle/platoons"
+msgstr "%(count)s人小队"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "已排除"
@@ -1865,6 +1893,9 @@ msgstr ""
 "%(vehicle)s\n"
 "与独特3D风格"
 
+msgid "yearlyRewards/preview/backButton"
+msgstr "年度奖励"
+
 msgid "yearlyRewards/preview/style2d"
 msgstr "预览2D风格"
 
@@ -1903,15 +1934,6 @@ msgstr "如果在赛季结束前保持或晋升当前段位，您将在赛年尾
 
 msgid "yearlyRewards/stageDescription/active"
 msgstr "已激活的阶段"
-
-msgid "yearlyRewardsSelectionScreen/description"
-msgstr "天梯战蝎狮赛年"
-
-msgid "yearlyRewardsSelectionScreen/title"
-msgid_plural "plural/yearlyRewardsSelectionScreen/title"
-msgstr[0] "选择奖励"
-msgstr[1] "选择奖励"
-msgstr[2] "选择奖励"
 
 msgid "yearlyStatistics/battles"
 msgstr "战斗(单人/小队)"

@@ -201,6 +201,9 @@ msgstr "?empty?"
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM 47"
 
+msgid "AN_VRC-18V"
+msgstr "AN/VRC-18V"
+
 msgid "AN_VRC_18"
 msgstr "AN/VRC 18"
 
@@ -627,6 +630,9 @@ msgstr "夏尔75"
 
 msgid "Chassis_F119_Char_Murat"
 msgstr "\"缪拉\""
+
+msgid "Chassis_F122_VCS_6x6_TS90"
+msgstr "VCS 6X6 TS 90"
 
 msgid "Chassis_F123_ERAC_105_Proto"
 msgstr "ERAC 105原型车"
@@ -1146,6 +1152,25 @@ msgstr "\"缪拉\""
 
 msgid "F119_Char_Murat_short_special"
 msgstr "弹夹装填系统，出色的操控性和机动性"
+
+msgid "F122_VCS_6x6_TS90"
+msgstr "VCS 6X6 TS 90"
+
+msgid "F122_VCS_6x6_TS90_descr"
+msgstr ""
+"VCS 6X6 TS "
+"90作为出口型的侦察车辆研发，并具备与坦克对抗的实力。设计上尽可能与雷诺VAB装甲运兵车通用。该坦克于1976年6月向媒体公开，但从未进入量产阶段。该项目促成了VBC-90的研发。"
+
+msgid "F122_VCS_6x6_TS90_long_special"
+msgstr ""
+"VCS 6X6 TS "
+"90是一辆F系IX级轮式轻型坦克，拥有出色的机动性，最大前进速度和最大倒车速度俱佳。该坦克仅有一种驾驶模式，因此无需来回切换。它配备一门稳定性较高的90毫米2连发弹夹炮，短装填时间仅为1.5秒，而且瞄准时间也可圈可点。"
+
+msgid "F122_VCS_6x6_TS90_short"
+msgstr "VCS 6X6"
+
+msgid "F122_VCS_6x6_TS90_short_special"
+msgstr "轮式坦克，2连发弹夹炮"
 
 msgid "F123_ERAC_105_Proto"
 msgstr "ERAC 105原型车"
@@ -1944,6 +1969,9 @@ msgstr "雷诺 G1"
 msgid "Renault_M26_27"
 msgstr "雷诺 M26/27"
 
+msgid "Renault_MIDS"
+msgstr "雷诺 MIDS"
+
 msgid "Renault_Naeder-FIEUX"
 msgstr "雷诺 内德-菲厄"
 
@@ -2294,6 +2322,9 @@ msgstr "夏尔75"
 
 msgid "Turret_1_F119_Char_Murat"
 msgstr "\"缪拉\""
+
+msgid "Turret_1_F122_VCS_6x6_TS90"
+msgstr "VCS 6X6 TS 90"
 
 msgid "Turret_1_F123_ERAC_105_Proto"
 msgstr "ERAC 105原型车"
@@ -3223,6 +3254,9 @@ msgstr "OE"
 msgid "_90mm_OE_90_D_919"
 msgstr "OE-90 D.919"
 
+msgid "_90mm_OE_F2"
+msgstr "OE 90 F2"
+
 msgid "_90mm_OE_mle_1924"
 msgstr "OE mle.24"
 
@@ -3238,11 +3272,20 @@ msgstr "OLF-90-DS2"
 msgid "_90mm_OFL_90_D_919"
 msgstr "OFL-90 D.919"
 
+msgid "_90mm_OFL_F1"
+msgstr "OFL 90 F1"
+
+msgid "_90mm_OFL_F3"
+msgstr "OFL 90 F3"
+
 msgid "_90mm_POT_90_D_919"
 msgstr "POT-90 D.919"
 
 msgid "_90mm_Prf1941"
 msgstr "Prf. mle.41"
+
+msgid "_90mm_T90_22_Mle_F3"
+msgstr "90mm T90.22 Mle.F3炮"
 
 msgid "_90mm_canon_DCA_30"
 msgstr "90mm DCA 30炮"

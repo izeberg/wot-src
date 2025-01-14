@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F122_VCS_6x6_TS90/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.292001 -0.592135 -2.994856</min>
+		<max>1.268093 0.928971 2.917350</max>
+	</visibilityBox>
+	<parent>vehicles/french/F122_VCS_6x6_TS90/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

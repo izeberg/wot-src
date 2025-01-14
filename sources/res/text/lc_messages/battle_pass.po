@@ -378,6 +378,9 @@ msgstr "战斗通行证"
 msgid "chapter/fullName/10021"
 msgstr "猎牛之歌"
 
+msgid "chapter/fullName/10041"
+msgstr "第一滴血"
+
 msgid "chapter/fullName/1114"
 msgstr "猎牛之歌"
 
@@ -392,6 +395,9 @@ msgstr "短暂希望"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
+
+msgid "chapter/fullNameUppercased/10041"
+msgstr "第一滴血"
 
 msgid "chapter/fullNameUppercased/1114"
 msgstr "猎牛之歌"
@@ -725,13 +731,15 @@ msgid "intro/button"
 msgstr "收到！"
 
 msgid "intro/seasonDescription/text"
-msgstr "在战斗通行证赛季XV中，您将有机会获得专属的最终兵器主题3D风格，这些风格适用于本赛季的核心坦克: K-91、5号概念车、VII号坦克。"
+msgstr ""
+"本次战斗通行证是与传奇电影系列联动的特殊活动。这将是一场短暂但惊险刺激的旅程，\n"
+"其中主题奖励的设计灵感源于经典的《第一滴血》宇宙。您准备好为生存而战了吗？"
 
 msgid "intro/seasonDescription/title"
-msgstr "全新主题3D风格"
+msgstr "与《第一滴血》系列的联动"
 
 msgid "intro/title"
-msgstr "赛季XV: 传承起源"
+msgstr "第一滴血"
 
 msgid "points/top"
 msgstr "%(vehicle):所获经验排名%(top)时%(bonus)。"
@@ -743,7 +751,7 @@ msgid "postProgression/buyState/buyButton"
 msgstr "购买高级通行证"
 
 msgid "postProgression/buyState/description"
-msgstr "购买高级通行证后，您将立即解锁获取1辆拥有独特3D风格的金币坦克和全部高级通行证奖励的机会。"
+msgstr "购买高级通行证后，您将立即获得M系IX级金币重型坦克\"兰博\"(其独特外观的设计灵感源于著名电影系列)，以及高级通行证的所有奖励。"
 
 msgid "postProgression/buyState/moreRewards"
 msgstr "其他奖励: %(count)s"
@@ -812,7 +820,7 @@ msgid "progression/battlePassBuyBtn"
 msgstr "购买高级通行证"
 
 msgid "progression/battlePassBuyDescr"
-msgstr "高级通行证可以解锁当前章节的高级奖励轨道。"
+msgstr "购买高级通行证即可解锁高级奖励轨道。"
 
 msgid "progression/battlePassNextChapterBuyDescr"
 msgstr "完成前一章节以购买此章节的高级通行证。"
@@ -1085,11 +1093,17 @@ msgstr "战斗通行证: \"%(chapter)s\"章节，阶段%(level)s"
 msgid "season/fullName/1002"
 msgstr "猎牛之歌"
 
+msgid "season/fullName/1004"
+msgstr "第一滴血"
+
 msgid "season/fullName/15"
 msgstr "传承起源"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "猎牛之歌"
+
+msgid "season/fullNameUppercased/1004"
+msgstr "第一滴血"
 
 msgid "season/fullNameUppercased/15"
 msgstr "传承起源"
@@ -1149,9 +1163,7 @@ msgid "tankmenVoiceover/close"
 msgstr "关闭"
 
 msgid "tankmenVoiceover/description"
-msgstr ""
-"所有乘员都拥有零历练兄弟连特长，以及足以将额外2项特长\n"
-"训练至100%的乘员经验。"
+msgstr "全部乘员均附带足以将3项特长训练至100%熟练度的乘员经验。"
 
 msgid "tankmenVoiceover/free"
 msgstr ""
@@ -1321,7 +1333,7 @@ msgid "tooltips/footerBuyBtn/battlePass/nextChapter"
 msgstr "完成前一章节以购买该章节中的阶段。"
 
 msgid "tooltips/footerBuyBtn/episode/descr"
-msgstr "购买阶段后，您将立即获得其基础和高级奖励。各个章节的阶段需单独购买。"
+msgstr "通过购买阶段，您将立即获得它们的基础和高级奖励。"
 
 msgid "tooltips/goldMission/description"
 msgstr "%(highlight)s您将无法从错过的日期中获得金币。"
@@ -1339,12 +1351,10 @@ msgid "tooltips/goldMission/title"
 msgstr "每日金币"
 
 msgid "tooltips/iconLock/descr1"
-msgstr ""
-"您可购买高级通行证来获得更多阶段奖励。各个章节的战斗通行证可单独购买，并在相应章节内生效。购买高级通行证后，完成每个后续阶段时，您都将同时获得基础和高级奖励。"
+msgstr "您可以通过购买高级通行证来使阶段奖励更丰厚。有了高级通行证，达到每个后续阶段时，您将同时获得基础和高级奖励。"
 
 msgid "tooltips/iconLock/descr2"
-msgstr ""
-"您可随时购买高级通行证。购买章节的高级通行证后，您将立即获得该章节已完成阶段的全部高级奖励。在战斗通行证主界面点击\"购买高级通行证\"按钮即可进行购买，更加丰厚的奖励在等着您。"
+msgstr "您可以随时购买高级通行证。它将立即为您发放已完成阶段的全部高级奖励。您可在战斗通行证主界面点击\"购买高级通行证\"按钮，使您的奖励更加丰厚。"
 
 msgid "tooltips/iconLock/title"
 msgstr "战斗通行证的高级奖励"

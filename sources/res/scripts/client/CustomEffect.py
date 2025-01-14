@@ -12,6 +12,11 @@ def getEffectList(name):
     return gEffectLists.get(name, None)
 
 
+def setEffectList(data):
+    global gEffectLists
+    gEffectLists = data
+
+
 class RangeTable(object):
 
     def __init__(self, keys, values):

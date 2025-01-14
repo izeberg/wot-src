@@ -1215,7 +1215,7 @@ msgid "contextMenu/withdrawInvitationToSquad"
 msgstr "撤回加入小队的邀请"
 
 msgid "copy"
-msgstr "2009–2024 Wargaming.net. 保留所有权利。"
+msgstr "©2009–2025 Wargaming.net. 保留所有权利。"
 
 msgid "counter/newCounter"
 msgstr "新的"
@@ -1583,9 +1583,6 @@ msgstr "坦克世界Plus专属坦克暂时无法使用"
 
 msgid "customization/title"
 msgstr "个性化"
-
-msgid "dateTime/dateMonth"
-msgstr "{monthName}{day}日"
 
 msgid "dateTime/fromToWithYear"
 msgstr "从{fromMonth}月{fromDay}日到{toMonth}月{toDay}日，{toYear}"
@@ -3032,6 +3029,12 @@ msgstr "模式暂不开放: 数据库错误。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/header"
 msgstr "无法加入战斗"
+
+msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/body"
+msgstr "模式暂不开放: 赛季尚未开启"
+
+msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
+msgstr "加入战斗失败"
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
 msgstr "根据资格赛结果计算评级可能需要几分钟时间。之后，系统会为您分配段位，然后您就能在天梯战中继续战斗了。"

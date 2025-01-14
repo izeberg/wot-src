@@ -915,6 +915,7 @@
 		<viewType>background</viewType>
 		<purpose>BASE</purpose>
 		<glossaryName>COMP7_4_1_IRON</glossaryName>
+		<isSecret>true</isSecret>
 	</component>
 	<component>
 		<componentId>643</componentId>
@@ -922,6 +923,7 @@
 		<viewType>background</viewType>
 		<purpose>BASE</purpose>
 		<glossaryName>COMP7_4_1_BRONZE</glossaryName>
+		<isSecret>true</isSecret>
 	</component>
 	<component>
 		<componentId>644</componentId>
@@ -929,6 +931,7 @@
 		<viewType>background</viewType>
 		<purpose>BASE</purpose>
 		<glossaryName>COMP7_4_1_SILVER</glossaryName>
+		<isSecret>true</isSecret>
 	</component>
 	<component>
 		<componentId>645</componentId>
@@ -936,6 +939,7 @@
 		<viewType>background</viewType>
 		<purpose>BASE</purpose>
 		<glossaryName>COMP7_4_1_GOLD</glossaryName>
+		<isSecret>true</isSecret>
 	</component>
 	<component>
 		<componentId>646</componentId>
@@ -943,6 +947,7 @@
 		<viewType>background</viewType>
 		<purpose>BASE</purpose>
 		<glossaryName>COMP7_4_1_CHAMPION</glossaryName>
+		<isSecret>true</isSecret>
 	</component>
 	<component>
 		<componentId>647</componentId>
@@ -950,6 +955,49 @@
 		<viewType>background</viewType>
 		<purpose>BASE</purpose>
 		<glossaryName>COMP7_4_1_LEGEND</glossaryName>
+		<isSecret>true</isSecret>
+	</component>
+	<component>
+		<componentId>648</componentId>
+		<resourceRoot>#dogtags:component/background/base/648</resourceRoot>
+		<viewType>background</viewType>
+		<purpose>BASE</purpose>
+		<glossaryName>COMP7_4_2_IRON</glossaryName>
+	</component>
+	<component>
+		<componentId>649</componentId>
+		<resourceRoot>#dogtags:component/background/base/649</resourceRoot>
+		<viewType>background</viewType>
+		<purpose>BASE</purpose>
+		<glossaryName>COMP7_4_2_BRONZE</glossaryName>
+	</component>
+	<component>
+		<componentId>650</componentId>
+		<resourceRoot>#dogtags:component/background/base/650</resourceRoot>
+		<viewType>background</viewType>
+		<purpose>BASE</purpose>
+		<glossaryName>COMP7_4_2_SILVER</glossaryName>
+	</component>
+	<component>
+		<componentId>651</componentId>
+		<resourceRoot>#dogtags:component/background/base/651</resourceRoot>
+		<viewType>background</viewType>
+		<purpose>BASE</purpose>
+		<glossaryName>COMP7_4_2_GOLD</glossaryName>
+	</component>
+	<component>
+		<componentId>652</componentId>
+		<resourceRoot>#dogtags:component/background/base/652</resourceRoot>
+		<viewType>background</viewType>
+		<purpose>BASE</purpose>
+		<glossaryName>COMP7_4_2_CHAMPION</glossaryName>
+	</component>
+	<component>
+		<componentId>653</componentId>
+		<resourceRoot>#dogtags:component/background/base/653</resourceRoot>
+		<viewType>background</viewType>
+		<purpose>BASE</purpose>
+		<glossaryName>COMP7_4_2_LEGEND</glossaryName>
 	</component>
 	<startingComponents>
 		<components>66 300</components>

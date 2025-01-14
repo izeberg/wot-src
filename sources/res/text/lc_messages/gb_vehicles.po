@@ -284,14 +284,45 @@ msgstr "FV226 反制者"
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Chassis_GB140_FV224_Chopper"
+msgstr "FV224 斩裂者"
+
+msgid "Chassis_GB140_FV224_Chopper_2"
+msgstr "FV224 斩裂者 Mk.II"
+
 msgid "Chassis_GB141_GSOR_the_TANK"
 msgstr "GSOR坦克"
+
+msgid "Chassis_GB142_FV230_Canopener"
+msgstr "FV230 爆裂者"
+
+msgid "Chassis_GB143_FV229_Contender"
+msgstr "FV229 角逐者"
+
+msgid "Chassis_GB143_FV229_Contender_2"
+msgstr "FV229 角逐者 Mk.II"
+
+msgid "Chassis_GB143_FV229_Contender_2_short"
+msgstr ""
+"FV229 角逐者\n"
+"Mk.II"
 
 msgid "Chassis_GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
 
 msgid "Chassis_GB146_Gabler_s_Destroyer"
 msgstr "加布勒突击战车"
+
+msgid "Chassis_GB148_FV227_Conceiver"
+msgstr "FV227 构想者"
+
+msgid "Chassis_GB148_FV227_Conceiver_2"
+msgstr "FV227 构想者 Mk.II"
+
+msgid "Chassis_GB148_FV227_Conceiver_2_short"
+msgstr ""
+"FV227 构想者\n"
+"Mk.II"
 
 msgid "Chassis_GB149_Centurion_MkI_A"
 msgstr "百夫长 Mk.IA"
@@ -1210,6 +1241,16 @@ msgstr ""
 msgid "GB13_FV215b_short_special"
 msgstr "高效的火炮，充沛的生命值"
 
+msgid "GB140_FV224_Chopper"
+msgstr "FV224 斩裂者"
+
+msgid "GB140_FV224_Chopper_descr"
+msgstr ""
+"一个重型岸防坦克项目，Y系在战事结束后立即开启了它的研发工作。该坦克在炮塔中安装有2门火炮、全景式瞄准镜以及光学测距仪，预计能和敌方两栖突击登陆支援舰只势均力敌。宽大的履带确保了良好的越野能力。然而，由于悬挂系统可靠性较低且设计复杂、火炮口径不足，以及缺乏核防护能力，该计划最终被叫停。"
+
+msgid "GB140_FV224_Chopper_short"
+msgstr "FV224 斩裂者"
+
 msgid "GB141_GSOR_the_TANK"
 msgstr "GSOR坦克"
 
@@ -1227,6 +1268,27 @@ msgstr "GSOR坦克"
 
 msgid "GB141_GSOR_the_TANK_short_special"
 msgstr "高额的平均穿透力，HESH炮弹"
+
+msgid "GB142_FV230_Canopener"
+msgstr "FV230 爆裂者"
+
+msgid "GB142_FV230_Canopener_descr"
+msgstr ""
+"Y系于20世纪50年代下半叶研发的重型岸防坦克计划，用于防御可能的敌军跨洋登陆作战。强劲的火力、卓越的防护(包括厚重且大倾角布置的车体装甲)与良好的机动性，使其成为令敌方登陆舰只望而生畏的对手。火炮的炮口制退器上安装有活动防护罩，可防止炮膛受潮。\n"
+"然而，在研发过程中，人们逐渐意识到反舰导弹才是未来海战的主力，而非火炮。最终，该计划被认为不具备前景，在建造原型车之前被叫停。"
+
+msgid "GB142_FV230_Canopener_short"
+msgstr "FV230 爆裂者"
+
+msgid "GB143_FV229_Contender"
+msgstr "FV229 角逐者"
+
+msgid "GB143_FV229_Contender_descr"
+msgstr ""
+"一辆研发于20世纪50年代下半叶的重型岸防坦克，属于海岸防御项目的一部分，主要用来防御S系军队在开战后可能的跨海峡登陆作战。坦克计划装备双管火炮系统，能够对轻型登陆舰、两栖坦克以及抢滩登陆的战斗坦克进行有效打击。同时，它的装甲要能够同时抵御坦克炮以及支援登陆的海军舰炮打击。该项目仅停留在蓝图阶段。"
+
+msgid "GB143_FV229_Contender_short"
+msgstr "FV229 角逐者"
 
 msgid "GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
@@ -1263,6 +1325,17 @@ msgstr "加布勒突击战车"
 
 msgid "GB146_Gabler_s_Destroyer_short_special"
 msgstr "弹夹装填系统，出色的机动性"
+
+msgid "GB148_FV227_Conceiver"
+msgstr "FV227 构想者"
+
+msgid "GB148_FV227_Conceiver_descr"
+msgstr ""
+"FV227 构想者是一种重在对抗敌方坦克而非反制工事的突击坦克概念。其主要任务是在战斗中为多功能的百夫长坦克提供支援。FV227 "
+"构想者计划配备两门相同的大口径火炮，能够交替射击或齐射。当时几乎所有的发达的坦克工业体都尝试开发过装备双管火炮系统的坦克，但无一例外都未能进入生产阶段。"
+
+msgid "GB148_FV227_Conceiver_short"
+msgstr "FV227 构想者"
 
 msgid "GB149_Centurion_MkI_A"
 msgstr "百夫长 Mk.IA"
@@ -1824,6 +1897,12 @@ msgstr "高机动性和良好的火炮"
 msgid "GB86_Centurion_Action_X"
 msgstr "百夫长 AX"
 
+msgid "GB86_Centurion_Action_X_7x7"
+msgstr "百夫长 AX 7v7"
+
+msgid "GB86_Centurion_Action_X_7x7_short"
+msgstr "百夫长 AX 7v7"
+
 msgid "GB86_Centurion_Action_X_descr"
 msgstr "?empty?"
 
@@ -2062,6 +2141,22 @@ msgstr "利兰 L60 NO.4 Mk.13A"
 msgid "Leyland_L60_No_4_Mk_1A"
 msgstr "利兰 L60 No.4 Mk.1A"
 
+msgid "Leyland_L60_No_4_Mk_2"
+msgstr "利兰 L60 No.4 Mk.2"
+
+msgid "Leyland_L60_No_4_Mk_2_short"
+msgstr ""
+"利兰 L60 No.4\n"
+"Mk.2"
+
+msgid "Leyland_L60_No_4_Mk_3"
+msgstr "利兰 L60 No.4 Mk.3"
+
+msgid "Leyland_L60_No_4_Mk_3_short"
+msgstr ""
+"利兰 L60 No.4\n"
+"Mk.3"
+
 msgid "Leyland_L60_No_4_SH"
 msgstr "利兰 L No.90-4"
 
@@ -2281,6 +2376,9 @@ msgstr "罗·罗 B81"
 msgid "Rolls_Royce_Griffon"
 msgstr "罗·罗 格里芬"
 
+msgid "Rolls_Royce_Griffon_180"
+msgstr "罗·罗 格里芬 180"
+
 msgid "Rolls_Royce_Griffon_A"
 msgstr "罗·罗 格里芬 A型"
 
@@ -2296,6 +2394,21 @@ msgstr "罗·罗 流星 GD"
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "罗·罗 流星 M120A"
 
+msgid "Rolls_Royce_Meteor_M120B"
+msgstr ""
+"罗·罗 流星\n"
+"M120B"
+
+msgid "Rolls_Royce_Meteor_M120C"
+msgstr ""
+"罗·罗 流星\n"
+"M120C"
+
+msgid "Rolls_Royce_Meteor_M120F"
+msgstr ""
+"罗·罗 流星\n"
+"M120F"
+
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "罗·罗 流星 M300"
 
@@ -2307,6 +2420,11 @@ msgstr "罗·罗 流星 Mk.IVB/12"
 
 msgid "Rolls_Royce_Meteor_Mk_IVA"
 msgstr "罗·罗 流星 Mk.IVA"
+
+msgid "Rolls_Royce_Meteor_Mk_IXA"
+msgstr ""
+"罗·罗 流星\n"
+"Mk.IXA"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "罗·罗 流星 P型"
@@ -2373,6 +2491,12 @@ msgstr "2x 罗·罗 幻影 II"
 
 msgid "Rover_Meteorite"
 msgstr "流浪者陨石"
+
+msgid "SR_C42H"
+msgstr "SR C42H"
+
+msgid "SR_C42a"
+msgstr "SR C42a"
 
 msgid "Sunbeam_Amazon"
 msgstr "亚马逊-桑比姆"
@@ -2500,14 +2624,26 @@ msgstr "FV226 反制者"
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
 
+msgid "Turret_1_GB140_FV224_Chopper"
+msgstr "FV224 斩裂者"
+
 msgid "Turret_1_GB141_GSOR_the_TANK"
 msgstr "GSOR坦克"
+
+msgid "Turret_1_GB142_FV230_Canopener"
+msgstr "FV230 爆裂者"
+
+msgid "Turret_1_GB143_FV229_Contender"
+msgstr "FV229 角逐者"
 
 msgid "Turret_1_GB145_Crusher_ASE_4"
 msgstr "涅伽尔"
 
 msgid "Turret_1_GB146_Gabler_s_Destroyer"
 msgstr "加布勒突击战车"
+
+msgid "Turret_1_GB148_FV227_Conceiver"
+msgstr "FV227 构想者"
 
 msgid "Turret_1_GB149_Centurion_MkI_A"
 msgstr "百夫长 Mk.IA"
@@ -2764,6 +2900,25 @@ msgstr "征服者 Mk.II ABP"
 msgid "Turret_2_GB136_Churchill_BPXIV"
 msgstr "“丘吉尔”VII"
 
+msgid "Turret_2_GB140_FV224_Chopper"
+msgstr "FV224 斩裂者 Mk.II"
+
+msgid "Turret_2_GB143_FV229_Contender"
+msgstr "FV229 角逐者 Mk.II"
+
+msgid "Turret_2_GB143_FV229_Contender_short"
+msgstr ""
+"FV229 角逐者\n"
+"Mk.II"
+
+msgid "Turret_2_GB148_FV227_Conceiver"
+msgstr "FV227 构想者 Mk.II"
+
+msgid "Turret_2_GB148_FV227_Conceiver_short"
+msgstr ""
+"FV227 构想者\n"
+"Mk.II"
+
 msgid "Turret_2_GB14_M2"
 msgstr "M2A4"
 
@@ -2824,6 +2979,24 @@ msgstr "FV4202系列"
 msgid "Twin_105_mm_Gun_L7_MBC"
 msgstr "105mm L7 MBC双管炮"
 
+msgid "Twin_105_mm_Gun_T8_MBC"
+msgstr "105mm T8 MBC双管炮"
+
+msgid "Twin_120_mm_Gun_L1_MBC"
+msgstr "120mm L1 MBC双管炮"
+
+msgid "Twin_20pdr_Gun_MBC"
+msgstr "20磅 MBC双管炮"
+
+msgid "Twin_20pdr_Gun_MBC_MkII"
+msgstr "20磅 MBC Mk.II双管炮"
+
+msgid "Twin_32pdr_Gun_MBC"
+msgstr "32磅 MBC双管炮"
+
+msgid "Twin_32pdr_Gun_MBC_Mk2"
+msgstr "32磅 MBC Mk.2双管炮"
+
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "贝德福德双六缸"
 
@@ -2845,8 +3018,14 @@ msgstr "WS No.22 CT"
 msgid "WS_No_19_GD"
 msgstr "WS No.19 GD"
 
+msgid "WS_No_19_Mk_IIB"
+msgstr "WS No.19 Mk.IIB"
+
 msgid "WS_No_22_Mk_3"
 msgstr "WS No.22 Mk.3"
+
+msgid "WS_No_22c"
+msgstr "WS No.22c"
 
 msgid "WS_No_38_AFV"
 msgstr "WS No.38 AFV"
@@ -2891,6 +3070,9 @@ msgstr "APDS L-27 MBC"
 msgid "_105mm_APCR_L7_N"
 msgstr "APDS L-28 N"
 
+msgid "_105mm_APCR_T29E3_MBC"
+msgstr "APCR T29E3 MBC"
+
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
 
@@ -2902,6 +3084,9 @@ msgstr "AP Mk. 5 MBC"
 
 msgid "_105mm_AP_Mk7"
 msgstr "AP Mk7"
+
+msgid "_105mm_AP_T32_MBC"
+msgstr "AP T32 MBC"
 
 msgid "_105mm_AT_Gun_L7"
 msgstr "105mm L7 AT炮"
@@ -2965,6 +3150,9 @@ msgstr "HESH-T L-35 N"
 
 msgid "_105mm_HE_M1"
 msgstr "HE M1"
+
+msgid "_105mm_HE_M11_MBC"
+msgstr "HE M11 MBC"
 
 msgid "_105mm_HV_AP"
 msgstr "105mm HV AP"
@@ -3050,11 +3238,17 @@ msgstr "APDS L15P1"
 msgid "_120mm_APDS_L1A1"
 msgstr "APDS L1"
 
+msgid "_120mm_APDS_L1_MBC"
+msgstr "APDS L1 MBC"
+
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
 
 msgid "_120mm_AP_L15A1_DU"
 msgstr "AP L15A11 DU"
+
+msgid "_120mm_AP_L1_MBC"
+msgstr "AP L1 MBC"
 
 msgid "_120mm_AP_Mk_1"
 msgstr "120mm AP"
@@ -3100,6 +3294,9 @@ msgstr "120 mm L15 HE"
 
 msgid "_120mm_HE_L1A1"
 msgstr "HESH-T L1"
+
+msgid "_120mm_HE_L1_MBC"
+msgstr "HE L1 MBC"
 
 msgid "_120mm_QF_1_gun"
 msgstr "冈萨洛 QF 120mm炮"
@@ -3203,14 +3400,26 @@ msgstr "HE Mk.1C"
 msgid "_20pdr_APC_Mk2"
 msgstr "APC Mk.2"
 
+msgid "_20pdr_APC_Mk2_MBC"
+msgstr "APC Mk.2 MBC"
+
+msgid "_20pdr_APC_Mk2b_MBC"
+msgstr "APC Mk.2b MBC"
+
 msgid "_20pdr_APC_Mk4ST_SH"
 msgstr "APC Mk.4ST"
 
 msgid "_20pdr_AP_Mk1"
 msgstr "AP Mk.1"
 
+msgid "_20pdr_AP_Mk1_MBC"
+msgstr "AP Mk.1 MBC"
+
 msgid "_20pdr_AP_Mk1_SH"
 msgstr "AP Mk.1"
+
+msgid "_20pdr_AP_Mk1b_MBC"
+msgstr "AP Mk.1b MBC"
 
 msgid "_20pdr_AT_Gun_Type_A"
 msgstr "OQF 20磅AT炮 A型"
@@ -3232,6 +3441,12 @@ msgstr "OQF 20磅炮 B型"
 
 msgid "_20pdr_HE_Mk3"
 msgstr "HE Mk.3"
+
+msgid "_20pdr_HE_Mk3_MBC"
+msgstr "HE Mk.3 MBC"
+
+msgid "_20pdr_HE_Mk3b_MBC"
+msgstr "HE Mk.3b MBC"
 
 msgid "_25pdr_AP_Mk_1T"
 msgstr "AP-T Mk.1T"
@@ -3386,14 +3601,32 @@ msgstr "APCR Mk.3"
 msgid "_32pdr_APCR_MkII"
 msgstr "APDS Mk.2T"
 
+msgid "_32pdr_APC_Mk2_MBC"
+msgstr "APDS Mk.2 MBC"
+
+msgid "_32pdr_APDS_Mk2b_MBC"
+msgstr "APDS Mk.2b MBC"
+
 msgid "_32pdr_APDS_Mk_3"
 msgstr "APDS Mk.3"
+
+msgid "_32pdr_AP_Mk1_MBC"
+msgstr "APCBC Mk.1 MBC"
+
+msgid "_32pdr_AP_Mk1b_MBC"
+msgstr "APCBC Mk.1b MBC"
 
 msgid "_32pdr_AP_MkI"
 msgstr "AP Mk.1"
 
 msgid "_32pdr_HEAT_Mk_3_SH"
 msgstr "AP Mk.3"
+
+msgid "_32pdr_HE_Mk5_MBC"
+msgstr "HE Mk.5 MBC"
+
+msgid "_32pdr_HE_Mk5b_MBC"
+msgstr "HE Mk.5b MBC"
 
 msgid "_32pdr_HE_MkI"
 msgstr "HE Mk.1A"

@@ -1229,18 +1229,6 @@ msgstr "已移除个人声望点数"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "扣除全局经验"
 
-msgid "platformCurrencyMsg/debited/ny_amber"
-msgstr "已移除春暖琥珀"
-
-msgid "platformCurrencyMsg/debited/ny_crystal"
-msgstr "已移除新生岩晶"
-
-msgid "platformCurrencyMsg/debited/ny_emerald"
-msgstr "已移除圣洁翡翠"
-
-msgid "platformCurrencyMsg/debited/ny_iron"
-msgstr "已移除天外陨铁"
-
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "已移除军旅积分"
 
@@ -1264,18 +1252,6 @@ msgstr "已添加个人声望点数"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "收到全局经验"
-
-msgid "platformCurrencyMsg/received/ny_amber"
-msgstr "已添加春暖琥珀"
-
-msgid "platformCurrencyMsg/received/ny_crystal"
-msgstr "已添加新生岩晶"
-
-msgid "platformCurrencyMsg/received/ny_emerald"
-msgstr "已添加圣洁翡翠"
-
-msgid "platformCurrencyMsg/received/ny_iron"
-msgstr "已添加天外陨铁"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "已添加军旅积分"
@@ -2053,9 +2029,6 @@ msgid ""
 "serviceChannelMessages/battleResults/quests/rankedBonusBattles/persistent"
 msgstr "%(count)s场标准"
 
-msgid "serviceChannelMessages/battleResults/quests/variadicDiscount"
-msgstr "已获得%(level)s级坦克的%(discount)s%%折扣"
-
 msgid "serviceChannelMessages/battleResults/quests/vehicleSlots"
 msgstr "收到车位"
 
@@ -2213,7 +2186,7 @@ msgid "serviceChannelMessages/blueprintsConvertSale/restore"
 msgstr "蓝图兑换已恢复。"
 
 msgid "serviceChannelMessages/bondEquipmentChoosing"
-msgstr "选择您的天梯战年度奖励: 改进型配件。"
+msgstr "别忘了领取您的奖励！"
 
 msgid "serviceChannelMessages/bondEquipmentChoosingButton"
 msgstr "前往选择"
@@ -2303,7 +2276,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "交易"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "竞拍"
+msgstr "杰森的特别竞拍"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "已获得令牌"
@@ -2627,7 +2600,7 @@ msgid "serviceChannelMessages/integratedAuction/belowCompetitiveRate/text"
 msgstr "您赢得当前竞拍的几率下降了:您当前的出价低于竞争性出价。"
 
 msgid "serviceChannelMessages/integratedAuction/button"
-msgstr "前往竞拍"
+msgstr "前往活动"
 
 msgid "serviceChannelMessages/integratedAuction/lostRate/header"
 msgstr "您的出价已失败。将退回:"
@@ -2642,7 +2615,7 @@ msgid "serviceChannelMessages/integratedAuction/rateError/text"
 msgstr "出价失败。没有扣除资金。请稍后重试。"
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/text"
-msgstr "竞拍即将结束。"
+msgstr "出价即将关闭。"
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/title"
 msgstr "抓紧时间出价！"
@@ -2651,7 +2624,7 @@ msgid "serviceChannelMessages/integratedAuction/stageStart/text"
 msgstr "抓紧时间出价！物品数量有限。"
 
 msgid "serviceChannelMessages/integratedAuction/stageStart/title"
-msgstr "新拍卖物品的竞拍已开始！"
+msgstr "新拍品的出价已开始！"
 
 msgid "serviceChannelMessages/invoiceReceived/berthsAccrued"
 msgstr "添加床位到兵营"
@@ -2836,12 +2809,6 @@ msgstr "收到%(nationName)s坦克蓝图碎片"
 msgid "serviceChannelMessages/invoiceReceived/nationalBlueprintsDebited"
 msgstr "移除%(nationName)s坦克蓝图碎片"
 
-msgid "serviceChannelMessages/invoiceReceived/nyToysAccruedInvoiceReceived"
-msgstr "已添加装饰物:"
-
-msgid "serviceChannelMessages/invoiceReceived/nyToysDebitedInvoiceReceived"
-msgstr "已移除装饰物:"
-
 msgid "serviceChannelMessages/invoiceReceived/offersAccrued"
 msgstr "已添加"
 
@@ -2914,9 +2881,6 @@ msgstr "已移除乘员未分配的经验"
 msgid "serviceChannelMessages/invoiceReceived/tankmenToRemove"
 msgstr "已解雇"
 
-msgid "serviceChannelMessages/invoiceReceived/toyTypeWrapper"
-msgstr "%(name)s(x%(count)s)"
-
 msgid "serviceChannelMessages/invoiceReceived/unlockedModules"
 msgstr "已研发所有模块"
 
@@ -2945,22 +2909,16 @@ msgid "serviceChannelMessages/lootBoxes/footer"
 msgstr "点击按钮查看内容。"
 
 msgid "serviceChannelMessages/lootBoxes/header"
-msgstr "已收到包裹"
+msgstr "您收到了一个包裹:"
 
 msgid "serviceChannelMessages/lootBoxes/item/name"
-msgstr "%(name)s: %(colorTagOpen)s%(count)s%(colorTagClose)s"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/boxesAndCoins"
-msgstr "我们开启了您全部的补给品和霞飞狗礼袋，使用了您的终端令牌，并把假日行动2025的奖励添加到了您的账号中。"
-
-msgid "serviceChannelMessages/lootBoxesAutoOpen/boxesCounter"
-msgstr "已开启的大型补给品数量: %(count)s"
+msgstr "%(name)s %(colorTagOpen)sx%(count)s%(colorTagClose)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
-msgstr "前往奖励"
+msgstr "查看"
 
-msgid "serviceChannelMessages/lootBoxesAutoOpen/coinsCounter"
-msgstr "已激活的礼物终端次数: %(count)s"
+msgid "serviceChannelMessages/lootBoxesAutoOpen/counter"
+msgstr "x%(count)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
 msgstr "已激活次元之门:%(boxes)s"
@@ -2982,8 +2940,8 @@ msgstr "我们激活了您的所有次元之门，并将所有物品发送到了
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
 msgstr "已获得奖励"
 
-msgid "serviceChannelMessages/lootBoxesAutoOpen/sacksCounter"
-msgstr "已开启的礼袋数量: %(count)s"
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr "我们开启了您全部的补给品，并把假日行动的奖励添加至您的账号"
 
 msgid "serviceChannelMessages/lunarBoxesAutoOpen/body"
 msgstr "我们为您开启了春节寄福活动中的所有红包。"
@@ -3039,12 +2997,6 @@ msgstr "您可以在侦察任务中参与关于%(mapName)s地图的问卷调查�
 msgid "serviceChannelMessages/multiplier"
 msgstr " (x%(count)s)"
 
-msgid "serviceChannelMessages/newYear/celebrityChallenge/achievements"
-msgstr "已获得勋章"
-
-msgid "serviceChannelMessages/newYear/celebrityChallenge/optDevices"
-msgstr "已添加试验型配件"
-
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "前往兵营"
 
@@ -3071,9 +3023,6 @@ msgstr "将过期的储备:"
 
 msgid "serviceChannelMessages/personalReservesSoonExpire/title"
 msgstr "即将损失的限时储备"
-
-msgid "serviceChannelMessages/personalReservesTitle"
-msgstr "个人储备转换"
 
 msgid "serviceChannelMessages/piggyBank/continueAfterSmashed"
 msgstr "新的积累周期开始了。"
@@ -3458,45 +3407,6 @@ msgstr "验证邮箱的奖励:"
 
 msgid "serviceChannelMessages/steamEmailCompletion/header"
 msgstr "恭喜！"
-
-msgid "serviceChannelMessages/sysMsg/consumables/credits/accrued"
-msgstr "收到银币:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/accrued"
-msgstr "收到给养:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/date"
-msgstr "日期"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/debit"
-msgstr "已移除给养:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/item/many"
-msgstr ""
-" \n"
-"&nbsp;&nbsp;• %(name)s(x%(count)d)"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/item/one"
-msgstr "%(name)s(x%(count)d)"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline100"
-msgstr "100号汽油"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline105"
-msgstr "105号汽油"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/lendLeaseOil"
-msgstr "租借燃油"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/qualityOil"
-msgstr "高质量燃油"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/title"
-msgstr "收到"
 
 msgid "serviceChannelMessages/sysMsg/converter/blueprintsReceived"
 msgstr "已获得已研发坦克补偿的蓝图碎片："

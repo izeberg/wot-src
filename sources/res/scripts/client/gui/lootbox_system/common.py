@@ -20,10 +20,6 @@ class NotificationPathPart(str, Enum):
     HEADER = 'header'
     TEXT = 'text'
     COUNT = 'count'
-    BOXES_AND_COINS = 'boxesAndCoins'
-    BOXES_COUNTER = 'boxesCounter'
-    COINS_COUNTER = 'coinsCounter'
-    SACKS_COUNTER = 'sacksCounter'
 
 
 class BonusTypeForPreview(str, Enum):

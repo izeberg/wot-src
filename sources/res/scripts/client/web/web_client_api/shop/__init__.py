@@ -1,6 +1,7 @@
 from web.web_client_api import w2capi
 from web.web_client_api.shop.actions import ActionsWebApiMixin
 from web.web_client_api.shop.boosters import BoostersInfoWebApiMixin
+from web.web_client_api.shop.common import SettingsWebApiMixin
 from web.web_client_api.shop.renewable_subscription import RenewableSubWebApiMixin
 from web.web_client_api.shop.stats import BalanceWebApiMixin
 from web.web_client_api.shop.stock import ItemsWebApiMixin
@@ -9,5 +10,5 @@ from web.web_client_api.shop.trade import TradeWebApiMixin
 from web.web_client_api.shop.unified_trade_in import UnifiedTradeInWebApiMixin
 
 @w2capi(name='shop', key='action')
-class ShopWebApi(ActionsWebApiMixin, BalanceWebApiMixin, ItemsWebApiMixin, TradeWebApiMixin, UnifiedTradeInWebApiMixin, BoostersInfoWebApiMixin, RenewableSubWebApiMixin, TelecomRentalsWebApiMixin):
+class ShopWebApi(ActionsWebApiMixin, BalanceWebApiMixin, ItemsWebApiMixin, TradeWebApiMixin, UnifiedTradeInWebApiMixin, BoostersInfoWebApiMixin, RenewableSubWebApiMixin, TelecomRentalsWebApiMixin, SettingsWebApiMixin):
     pass

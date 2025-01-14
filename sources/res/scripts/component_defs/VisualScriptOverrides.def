@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<params>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</params>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo/>
+	</ofEntity>
+	<DefaultKeyName>visualScriptOverrides</DefaultKeyName>
+</root>

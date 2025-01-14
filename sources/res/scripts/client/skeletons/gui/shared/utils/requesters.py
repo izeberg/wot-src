@@ -379,10 +379,6 @@ class IStatsRequester(IRequester):
         raise NotImplementedError
 
     @property
-    def isSsrPlayEnabled(self):
-        raise NotImplementedError
-
-    @property
     def comp7(self):
         raise NotImplementedError
 
@@ -974,9 +970,6 @@ class ITokensRequester(IRequester):
         raise NotImplementedError
 
     def getLootBoxByTokenID(self, tokenID):
-        raise NotImplementedError
-
-    def getNyCoins(self):
         raise NotImplementedError
 
     def getLootBoxByID(self, boxID):

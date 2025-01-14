@@ -393,9 +393,9 @@
 		<shop_buy_button>shop_buy_button</shop_buy_button>
 		<shop_buy_instructions>shop_buy_instructions</shop_buy_instructions>
 		<auction_place_bid>auction_place_bid</auction_place_bid>
+		<auction_whoosh>auction_whoosh</auction_whoosh>
 		<gui_reward_screen_general>gui_reward_screen_general</gui_reward_screen_general>
 		<gui_hangar_neutral_screen>gui_hangar_neutral_screen</gui_hangar_neutral_screen>
-		<gui_lootbox_in_game_shop_box_buy>gui_lootbox_in_game_shop_box_buy</gui_lootbox_in_game_shop_box_buy>
 		<gui_hangar_simple_execution_screen>gui_hangar_simple_execution_screen</gui_hangar_simple_execution_screen>
 		<gui_random_reward_appear>gui_random_reward_appear</gui_random_reward_appear>
 		<gui_random_reward_icon>gui_random_reward_icon</gui_random_reward_icon>
@@ -463,12 +463,6 @@
 		<ev_hangar_lootbox_enter>ev_hangar_lootbox_enter</ev_hangar_lootbox_enter>
 		<ev_hangar_lootbox_exit>ev_hangar_lootbox_exit</ev_hangar_lootbox_exit>
 		<ev_hangar_lootbox_highlight>ev_hangar_lootbox_highlight</ev_hangar_lootbox_highlight>
-		<gui_lb_amb_on>gui_lb_amb_on</gui_lb_amb_on>
-		<gui_lb_amb_off>gui_lb_amb_off</gui_lb_amb_off>
-		<gui_lb_infopage_enter>gui_lb_infopage_enter</gui_lb_infopage_enter>
-		<gui_lb_infopage_exit>gui_lb_infopage_exit</gui_lb_infopage_exit>
 		<gui_lb_ingame_shop_box_exit>gui_lb_ingame_shop_box_exit</gui_lb_ingame_shop_box_exit>
-		<gui_lb_video_pause>gui_lb_video_pause</gui_lb_video_pause>
-		<gui_lb_video_resume>gui_lb_video_resume</gui_lb_video_resume>
 	</effects>
 </root>

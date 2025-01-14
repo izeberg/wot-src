@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A176_M103_110/_skins/A176_M103_110_HBP_3Dst/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A176_M103_110/_skins/A176_M103_110_HBP_3Dst/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.827729 -0.000002 -3.354415</min>
+		<max>1.827730 1.500460 3.461277</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

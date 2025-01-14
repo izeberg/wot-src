@@ -47,14 +47,11 @@ msgstr "%(firstCondition)s"
 msgid "progressionView/battleQuests/questsTotal/text"
 msgstr "已完成任务:"
 
-msgid "progressionView/battleQuests/timer/completed/text"
-msgstr "距任务开放还有"
+msgid "progressionView/battleQuests/timer/eventResetTime/text"
+msgstr "距活动结束还有:"
 
 msgid "progressionView/battleQuests/timer/inProgress/text"
 msgstr "距任务更新还有"
-
-msgid "progressionView/battleQuests/timer/title"
-msgstr "所有每日任务均已完成。请明天再来查看"
 
 msgid "progressionView/card/points"
 msgstr ""
@@ -62,6 +59,9 @@ msgstr ""
 
 msgid "progressionView/subTitle/completed"
 msgstr "获取钢铁印章以获得钢铁猎手风格。"
+
+msgid "progressionView/subTitle/endEvent"
+msgstr "活动已结束。任务和进度不再开放。"
 
 msgid "progressionView/subTitle/inProgress"
 msgstr ""

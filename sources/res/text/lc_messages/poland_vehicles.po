@@ -680,6 +680,12 @@ msgstr "SDP 60 G"
 msgid "Pl29_NC_Wz_70T"
 msgstr "NC 70 B"
 
+msgid "Pl29_NC_Wz_70T_7x7"
+msgstr "NC 70 B 7v7"
+
+msgid "Pl29_NC_Wz_70T_7x7_short"
+msgstr "NC 70 B 7v7"
+
 msgid "Pl29_NC_Wz_70T_descr"
 msgstr ""
 "NC 70 "
@@ -829,9 +835,6 @@ msgid "Turret_1_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP T I"
 
 msgid "Turret_1_Pl06_10TP"
-msgstr "博福斯双人型"
-
-msgid "Turret_1_Pl07_14TP"
 msgstr "博福斯双人型"
 
 msgid "Turret_1_Pl08_50TP_Prototyp_Resilient"
@@ -1080,6 +1083,9 @@ msgstr "3PPod-21"
 msgid "_105mm_Bofors_wz_34"
 msgstr "博福斯105mm wz.34炮"
 
+msgid "_105mm_Bofors_wz_34M"
+msgstr "博福斯105mm wz.34M炮"
+
 msgid "_105mm_POB_6M"
 msgstr "3PK-6M"
 
@@ -1104,17 +1110,26 @@ msgstr "sgr m/50 B"
 msgid "_105mm_slpgr_m_43_1"
 msgstr "slpgr m/43(1)"
 
+msgid "_105mm_slpgr_m_43_1M"
+msgstr "slpgr m/43(1M)"
+
 msgid "_105mm_slpgr_m_52"
 msgstr "slpgr m/52"
 
 msgid "_105mm_slpprj_fm_49"
 msgstr "slpprj fm/49"
 
+msgid "_105mm_slpprj_fm_49M"
+msgstr "slpprj fm/49M"
+
 msgid "_105mm_slpprj_m_59"
 msgstr "slpprj m/59"
 
 msgid "_105mm_tung_sgr_m_34"
 msgstr "sgr m/34(钨芯）"
+
+msgid "_105mm_tung_sgr_m_34M"
+msgstr "sgr m/34M(钨芯)"
 
 msgid "_105mm_wz_22_24_G1_APCR_SH"
 msgstr "APCR wz.22/24"
@@ -1266,14 +1281,26 @@ msgstr "40 mm HE"
 msgid "_40mm_auto_Boforsa"
 msgstr "40mm博福斯自动炮"
 
+msgid "_40mm_auto_Boforsa_II"
+msgstr "40mm博福斯自动炮 II"
+
 msgid "_40mm_pocisk_podkalibrowy"
 msgstr "APCR"
+
+msgid "_40mm_pocisk_podkalibrowy_II"
+msgstr "APCR II"
 
 msgid "_40mm_pocisk_przeciwpancerny_wz_36"
 msgstr "AP wz.36"
 
+msgid "_40mm_pocisk_przeciwpancerny_wz_36_II"
+msgstr "AP wz.36 II"
+
 msgid "_40mm_pocisk_wybuchowy_wz_36"
 msgstr "HE wz.36"
+
+msgid "_40mm_pocisk_wybuchowy_wz_36_II"
+msgstr "HE wz.36 II"
 
 msgid "_47mm_AP"
 msgstr "AP QFSA"
@@ -1303,7 +1330,7 @@ msgid "_47mm_slpprj_m_39"
 msgstr "slpprj m/39"
 
 msgid "_75mm_APCBC_K"
-msgstr "7.5cm KwK炮"
+msgstr "AP wz.97"
 
 msgid "_75mm_KwK_L70"
 msgstr "7.5cm KwK L/70炮"
@@ -1312,7 +1339,7 @@ msgid "_75mm_Pzgr.40L"
 msgstr "Pzgr 40 L"
 
 msgid "_75mm_Pzgr.40L_K"
-msgstr "Pzgr 40 LM"
+msgstr "APCR wz.36/37"
 
 msgid "_75mm_Pzgr.40_K"
 msgstr "Pzgr 40 L"
@@ -1321,7 +1348,7 @@ msgid "_75mm_Pzgr39L"
 msgstr "Pzgr 39 L"
 
 msgid "_75mm_Pzgr39L_K"
-msgstr "Pzgr 39 LM"
+msgstr "AP wz.36/37"
 
 msgid "_75mm_Pzgr39_K"
 msgstr "Pzgr 39 L"
@@ -1330,19 +1357,28 @@ msgid "_75mm_Sprg.18L"
 msgstr "Sprgr 19 L"
 
 msgid "_75mm_Sprg.18L_K"
-msgstr "Sprg 18 LC"
+msgstr "HE wz.36/37"
 
 msgid "_75mm_Sprg.18_K"
-msgstr "Sprgr 18 L"
+msgstr "HE wz.97"
 
 msgid "_75mm_Sprg.18_K2"
 msgstr "Sprgr 18 LM"
 
+msgid "_75mm_pocisk_podkalibrowy_wz_36_37M"
+msgstr "APCR wz.36/37M"
+
 msgid "_75mm_pocisk_podkalibrowy_wz_36_38"
 msgstr "APCR wz.36/38"
 
+msgid "_75mm_pocisk_przeciwpancerny_wz_36_37M"
+msgstr "AP wz.36/37M"
+
 msgid "_75mm_pocisk_przeciwpancerny_wz_36_38"
 msgstr "AP wz.36/38"
+
+msgid "_75mm_pocisk_wybuchowy_wz_36_37M"
+msgstr "HE wz.36/37M"
 
 msgid "_75mm_pocisk_wybuchowy_wz_36_38"
 msgstr "HE wz.36/38"
@@ -1355,6 +1391,9 @@ msgstr "75mm wz 22/24炮"
 
 msgid "_75mm_wz_36_37"
 msgstr "75mm wz.36/37炮"
+
+msgid "_75mm_wz_36_37M"
+msgstr "75mm wz.36/37M炮"
 
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"
@@ -1381,13 +1420,13 @@ msgid "_85mm_ZiS_S-53_B"
 msgstr "85mm ZiS-S-53炮"
 
 msgid "_90mm_AP"
-msgstr "AP wz.39/90"
+msgstr "AP wz.39/40"
 
 msgid "_90mm_APCR"
-msgstr "APCR wz.39/90"
+msgstr "APCR wz.39/40"
 
 msgid "_90mm_HE"
-msgstr "HE wz.39/90"
+msgstr "HE wz.39/40"
 
 msgid "_90mm_armata_wz_39_44"
 msgstr "90mm wz.39/44炮"
@@ -1407,14 +1446,26 @@ msgstr "90mm wz.46炮"
 msgid "_90mm_pocisk_podkalibrowy_wz_39"
 msgstr "APCR wz.39"
 
+msgid "_90mm_pocisk_podkalibrowy_wz_39_40M"
+msgstr "APCR wz.39/40M"
+
 msgid "_90mm_pocisk_przeciwpancerny_wz_39"
 msgstr "AP wz. 39"
+
+msgid "_90mm_pocisk_przeciwpancerny_wz_39_40M"
+msgstr "AP wz.39/40M"
 
 msgid "_90mm_pocisk_wybuchowy_wz_39"
 msgstr "HE wz.39"
 
+msgid "_90mm_pocisk_wybuchowy_wz_39_40M"
+msgstr "HE wz.39/40M"
+
 msgid "_90mm_wz_39_40"
-msgstr "90mm wz.39/90炮"
+msgstr "90mm wz.39/40炮"
+
+msgid "_90mm_wz_39_40M"
+msgstr "90mm wz.39/40M炮"
 
 msgid "_90mm_wz_39_90"
 msgstr "90mm wz.39-90炮"
@@ -1423,4 +1474,4 @@ msgid "_9RM"
 msgstr "9RM"
 
 msgid "_Gr_38_HL_A_K"
-msgstr "Pzgr 38 L"
+msgstr "HEAT w.97"

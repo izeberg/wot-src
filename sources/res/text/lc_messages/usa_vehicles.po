@@ -948,6 +948,23 @@ msgstr "弹夹装填系统，独特外观"
 msgid "A176_M103_110"
 msgstr "M103M"
 
+msgid "A176_M103_110_CFE_R"
+msgstr "兰博"
+
+msgid "A176_M103_110_CFE_R_descr"
+msgstr ""
+"\"队长呼叫乌鸦。乌鸦请回答。兰博？我是特劳特曼。好好听着。在我见过的士兵里，你最优秀。你那次驾驶坦克的表现非常英勇，但是也很鲁莽，还好你小子命大。约翰，这次可不能冒险。坦克部队之间的战斗需要不同的应对策略。本次任务不是单兵作战，跟以前一样，你需要与团队合作。我知道你能行。嘿，你说不定还会乐在其中。出发吧，小伙，给他们些颜色瞧瞧。\""
+
+msgid "A176_M103_110_CFE_R_long_special"
+msgstr ""
+"与常规的M103相比，\"兰博\"的主要优势在于其110毫米火炮，该火炮的平均每分钟损伤在同等级重型坦克中首屈一指。这意味着更激进的玩法，但也意味着较低的平均单发损伤。在其他方面，\"兰博\"与其前身几乎完全相同，具有良好的机动性和不错的生存能力。"
+
+msgid "A176_M103_110_CFE_R_short"
+msgstr "兰博"
+
+msgid "A176_M103_110_CFE_R_short_special"
+msgstr "较高的射速，良好的正面装甲"
+
 msgid "A176_M103_110_descr"
 msgstr ""
 "在1957年至1974年的整个服役期间，M103经过了数次现代化改进。到了20世纪60年代末，为M103换装具有110毫米线膛炮的研究被提上了日程，该火炮具有良好的弹道性能。由于可行性不高，该项目最终仅停留在理论研究阶段。"
@@ -1007,6 +1024,12 @@ msgstr "M46 \"猛虎\""
 
 msgid "A63_M46_Patton_KR_short_special"
 msgstr "良好的火炮俯角和观察范围"
+
+msgid "A69_T110E5_7x7"
+msgstr "T110E5 7v7"
+
+msgid "A69_T110E5_7x7_short"
+msgstr "T110E5 7v7"
 
 msgid "A74_T1_E6_long_special"
 msgstr "一辆M系II级轻型坦克，拥有不错的机动性，以及弹夹装填式的高射速火炮。尽管装甲薄弱，但由于穿透力和精度欠佳，最适合它的依然是中近距离作战。"
@@ -1376,6 +1399,9 @@ msgstr "毒刺"
 
 msgid "Chassis_A176_M103_110"
 msgstr "M103M"
+
+msgid "Chassis_A176_M103_110_CFE_R"
+msgstr "兰博"
 
 msgid "Chassis_A27_T82"
 msgstr "T82原型1号车"
@@ -3339,6 +3365,9 @@ msgstr "毒刺"
 msgid "Turret_1_A176_M103_110"
 msgstr "M103M"
 
+msgid "Turret_1_A176_M103_110_CFE_R"
+msgstr "兰博"
+
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
 
@@ -4510,6 +4539,9 @@ msgstr "HVAP-DS-T M331A3"
 msgid "_76mm_AP_M339"
 msgstr "AP M339"
 
+msgid "_76mm_AP_M339E5"
+msgstr "AP M339E5"
+
 msgid "_76mm_AP_M79"
 msgstr "AP M62"
 
@@ -4623,6 +4655,9 @@ msgstr "HE M352"
 msgid "_76mm_HE_M352A1"
 msgstr "HE M352A1"
 
+msgid "_76mm_HE_M352E5"
+msgstr "HE M352E5"
+
 msgid "_76mm_HE_M42A1"
 msgstr "HE M42A1"
 
@@ -4634,6 +4669,9 @@ msgstr "HE M42B1"
 
 msgid "_76mm_HVAP_M319"
 msgstr "HVAP M319"
+
+msgid "_76mm_HVAP_M319E5"
+msgstr "HVAP M319E5"
 
 msgid "_76mm_HVAP_M93"
 msgstr "HVAP M93"

@@ -47,6 +47,9 @@ msgstr "拥有116-F3(%(level)s级)"
 msgid "description/Cz17_Vz_55_CN"
 msgstr "拥有Vz.55&nbsp;哥特勇士(%(level)s级)"
 
+msgid "description/Cz40_DBV_152"
+msgstr "拥有DBV-152(%(level)s级)"
+
 msgid "description/G104_Stug_IV"
 msgstr "完成第1个作战行动，并拥有IV号突击炮(%(level)s级)"
 
@@ -262,6 +265,9 @@ msgstr "研发Y系曼蒂科尔(%(level)s级)轻型坦克研发分支中的所有
 
 msgid "description/branch_uk_GB120_Concept_No_5"
 msgstr "研发Y系5号概念车(%(level)s级)中型坦克研发分支中的所有坦克"
+
+msgid "description/branch_uk_GB142_FV230_Canopener"
+msgstr "研发Y系FV230 爆裂者(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr "研发Y系征服者GC(%(level)s级)自行火炮研发分支中的所有坦克"
@@ -770,6 +776,9 @@ msgstr "LPT-67&nbsp;S"
 msgid "name/Cz34_Vz_71_Tesak"
 msgstr "Vz.71&nbsp;T"
 
+msgid "name/Cz40_DBV_152"
+msgstr "DBV-152"
+
 msgid "name/F06_ARL_44"
 msgstr "ARL&nbsp;44"
 
@@ -1064,11 +1073,23 @@ msgstr "FSV&nbsp;方案A"
 msgid "name/GB12_Conqueror"
 msgstr "征服者"
 
+msgid "name/GB140_FV224_Chopper"
+msgstr "FV224&nbsp;斩裂者"
+
 msgid "name/GB141_GSOR_the_TANK"
 msgstr "GSOR坦克"
 
+msgid "name/GB142_FV230_Canopener"
+msgstr "FV230&nbsp;爆裂者"
+
+msgid "name/GB143_FV229_Contender"
+msgstr "FV229&nbsp;角逐者"
+
 msgid "name/GB146_Gabler_s_Destroyer"
 msgstr "加布勒突击战车"
+
+msgid "name/GB148_FV227_Conceiver"
+msgstr "FV227&nbsp;构想者"
 
 msgid "name/GB20_Crusader"
 msgstr "十字军"
@@ -1642,6 +1663,9 @@ msgstr "Y系: 曼蒂科尔"
 
 msgid "name/branch_uk_GB120_Concept_No_5"
 msgstr "Y系:&nbsp;5号概念车"
+
+msgid "name/branch_uk_GB142_FV230_Canopener"
+msgstr "Y系: FV230&nbsp;爆裂者"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "Y系: 征服者GC"

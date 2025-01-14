@@ -133,6 +133,27 @@ msgstr "海军望远镜"
 msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
 msgstr "无杆锚"
 
+msgid "attachment/test"
+msgstr "测试对象"
+
+msgid "attachment/test/testAttachment1"
+msgstr "001号测试对象——钢铁骏马"
+
+msgid "attachment/test/testAttachment2"
+msgstr "002号测试对象——深渊之舟"
+
+msgid "attachment/test/testAttachment3"
+msgstr "003号测试对象——永恒之花"
+
+msgid "attachment/test/testAttachment3/description"
+msgstr "自19世纪起就有记载的一款花盆，里面盛开着永不凋零的花。试图摘下这些花的人会感到无比的恐惧，而且花盆还与主人的突然失踪有关。"
+
+msgid "attachment/test/testAttachment4"
+msgstr "004号测试对象——低语收割者"
+
+msgid "attachment/test/testAttachment5"
+msgstr "005号测试对象——虚空之眼"
+
 msgid "attachment/thunderstrike"
 msgstr "撼人心魄"
 
@@ -699,6 +720,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Boosteroid_01/label"
 msgstr "全面提升"
+
+msgid "camouflage/Boosteroid_02/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_02/label"
+msgstr "小心恶龙"
 
 msgid "camouflage/Borduit/description"
 msgstr "应用这些个性化进入战斗，给阻挡您前进的所有敌人注入恐惧。博格人擅长出其不意，而且总能带来毁灭性的力量。抵抗是徒劳的！"
@@ -1689,6 +1716,12 @@ msgstr "奖励给参加团队冲突活动队伍的玩家的涂装图案。"
 msgid "camouflage/battle_of_bloggers_camo/label"
 msgstr "团队冲突英雄"
 
+msgid "camouflage/battle_of_bulge/description"
+msgstr "?empty?"
+
+msgid "camouflage/battle_of_bulge/label"
+msgstr "阿登反击战"
+
 msgid "camouflage/battle_pass_s11_camo1/description"
 msgstr "?empty?"
 
@@ -2217,6 +2250,12 @@ msgstr "?empty?"
 msgid "camouflage/bear/label"
 msgstr "黑熊"
 
+msgid "camouflage/beast_4/description"
+msgstr "?empty?"
+
+msgid "camouflage/beast_4/label"
+msgstr "黑风凶煞"
+
 msgid "camouflage/bicolor"
 msgstr "双色"
 
@@ -2333,6 +2372,24 @@ msgstr "?empty?"
 
 msgid "camouflage/bp2023_4/label"
 msgstr "三头骆驼"
+
+msgid "camouflage/bp2025_holiday_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_holiday_1/label"
+msgstr "第一滴血"
+
+msgid "camouflage/bp2025_holiday_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_holiday_2/label"
+msgstr "第一滴血2"
+
+msgid "camouflage/bp2025_holiday_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_holiday_3/label"
+msgstr "第一滴血3"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -4370,6 +4427,24 @@ msgstr "?empty?"
 msgid "camouflage/lunar_ny_2022/label"
 msgstr "皎月灵虎"
 
+msgid "camouflage/lunar_ny_2025_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar_ny_2025_1/label"
+msgstr "双蛇共舞"
+
+msgid "camouflage/lunar_ny_2025_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar_ny_2025_2/label"
+msgstr "蓝冰灵蛇"
+
+msgid "camouflage/lunar_ny_2025_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar_ny_2025_3/label"
+msgstr "镇宅门神"
+
 msgid "camouflage/lunar_ny_ox/description"
 msgstr "?empty?"
 
@@ -5323,6 +5398,12 @@ msgstr "?empty?"
 
 msgid "camouflage/steam_publisher_weekend/label"
 msgstr "蒸汽动力"
+
+msgid "camouflage/steam_unlock/description"
+msgstr "?empty?"
+
+msgid "camouflage/steam_unlock/label"
+msgstr "蒸汽机"
 
 msgid "camouflage/steel_hunter_arcade_1/description"
 msgstr "?empty?"
@@ -6875,24 +6956,6 @@ msgstr "此坦克的预设样式不可用"
 msgid "customization/decalPopover/remove"
 msgstr "移除"
 
-msgid "customization/earn/challenge/button"
-msgstr "前往挑战>"
-
-msgid "customization/earn/challenge/description"
-msgstr "在假日行动挑战中最多可获得5款独特3D附件"
-
-msgid "customization/earn/lootbox/button"
-msgstr "前往补给品>"
-
-msgid "customization/earn/lootbox/description"
-msgstr "从假日行动大型补给品中最多可获得15款独特3D附件"
-
-msgid "customization/earn/raid/button"
-msgstr "前往寒冬突袭>"
-
-msgid "customization/earn/raid/description"
-msgstr "在寒冬突袭中最多可获得5款独特3D附件"
-
 msgid "customization/editablePopover/defaultBtn/disabled"
 msgstr "风格元素设为默认。"
 
@@ -6936,9 +6999,6 @@ msgstr "未输入战术数字的数字。"
 
 msgid "customization/emptyState/attachments"
 msgstr "可安装3D附件的坦克"
-
-msgid "customization/emptyState/video"
-msgstr "播放视频"
 
 msgid "customization/escHelp/left"
 msgstr "您可按下"
@@ -7615,12 +7675,6 @@ msgstr "售价(所有元素)"
 msgid "customization/tooltip/inventory/title"
 msgstr "库存"
 
-msgid "customization/tooltip/ny/reward/remainsToCollect"
-msgstr "距获得奖励还需要收集资源的次数: %(count)s"
-
-msgid "customization/tooltip/ny/reward/rewardReceived"
-msgstr "已获得奖励"
-
 msgid "customization/tooltip/oneTaskDescription"
 msgstr "完成任务:%(name)s"
 
@@ -7632,6 +7686,9 @@ msgstr "最大应用数量"
 
 msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "空位不可用: 从另一个空位中移除任意已应用的贴花。"
+
+msgid "customization/tooltip/quests/blitzkrieg_1026/condition"
+msgstr "在150秒内，通过击毁所有敌方坦克赢得1场天梯战。"
 
 msgid "customization/tooltip/quests/blitzkrieg_836/condition"
 msgstr "通过在150秒内击毁所有敌方坦克赢得1场天梯战战斗。"
@@ -7768,6 +7825,24 @@ msgstr "在天梯战模式苍蓝蝎狮赛季中达到青铜段位。"
 msgid "customization/tooltip/quests/comp7_4_1_ranks_65/condition"
 msgstr "在天梯战模式苍蓝蝎狮赛季中达到黑铁段位。"
 
+msgid "customization/tooltip/quests/comp7_4_2_ranks_11/condition"
+msgstr "在天梯战模式绯红蝎狮赛季中达到传说段位。"
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_21/condition"
+msgstr "在天梯战模式绯红蝎狮赛季中达到勇士段位。"
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_35/condition"
+msgstr "在天梯战模式绯红蝎狮赛季中达到黄金段位。"
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_45/condition"
+msgstr "在天梯战模式绯红蝎狮赛季中达到白银段位。"
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_55/condition"
+msgstr "在天梯战模式绯红蝎狮赛季中达到青铜段位。"
+
+msgid "customization/tooltip/quests/comp7_4_2_ranks_65/condition"
+msgstr "在天梯战模式绯红蝎狮赛季中达到黑铁段位。"
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "在天梯战模式狮鹫赛季达到黄金段位。"
 
@@ -7785,6 +7860,15 @@ msgstr "在天梯战模式狮鹫赛季达到白银段位。"
 
 msgid "customization/tooltip/quests/comp7_ranks_silver_1/condition"
 msgstr "在天梯战模式狮鹫赛季达到黑铁段位。"
+
+msgid "customization/tooltip/quests/crushing_damage_1026_1/condition"
+msgstr "在天梯战中，累计造成25000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1026_2/condition"
+msgstr "在天梯战中，累计造成225000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1026_3/condition"
+msgstr "在天梯战中，累计造成550000点损伤。"
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
 msgstr "在天梯战中，累计造成25000点损伤。"
@@ -7840,6 +7924,18 @@ msgstr "在天梯战中，累计造成225000点损伤。"
 msgid "customization/tooltip/quests/crushing_damage_965_3/condition"
 msgstr "在天梯战中，累计造成550000点损伤。"
 
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1026_1/condition"
+msgstr "驾驶应用了\"融合兽(绯红)\"风格的坦克完成10场天梯战战斗。"
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1026_2/condition"
+msgstr "驾驶应用了\"融合兽(绯红)\"风格的坦克完成25场天梯战战斗。"
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1026_3/condition"
+msgstr "驾驶应用了\"融合兽(绯红)\"风格的坦克完成50场天梯战战斗。"
+
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr "驾驶应用了羽翼和利爪风格的坦克参加10场天梯战战斗。"
 
@@ -7893,6 +7989,15 @@ msgstr "驾驶应用了融合兽(苍蓝)风格的坦克完成25场天梯战战�
 
 msgid "customization/tooltip/quests/demonstration_performance_965_3/condition"
 msgstr "驾驶应用了融合兽(苍蓝)风格的坦克完成50场天梯战战斗。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1026_1/condition"
+msgstr "在天梯战中，累计击毁15辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1026_2/condition"
+msgstr "在天梯战中，累计击毁150辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1026_3/condition"
+msgstr "在天梯战中，累计击毁350辆敌方坦克。"
 
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
 msgstr "在天梯战中，累计击毁15辆敌方坦克。"
@@ -7948,6 +8053,9 @@ msgstr "在天梯战中，累计击毁150辆敌方坦克。"
 msgid "customization/tooltip/quests/destroyed_vehicles_965_3/condition"
 msgstr "在天梯战中，累计击毁350辆敌方坦克。"
 
+msgid "customization/tooltip/quests/double_threat_1026/condition"
+msgstr "在天梯战的2人小队中获胜25次。"
+
 msgid "customization/tooltip/quests/double_threat_836/condition"
 msgstr "在天梯战的2人小队中获胜25次。"
 
@@ -7965,6 +8073,15 @@ msgstr "在天梯战中，点亮或击毁总计750辆敌方坦克。"
 
 msgid "customization/tooltip/quests/find_and_destroy_775/condition"
 msgstr "在天梯战中点亮或击毁总计500辆敌方坦克。"
+
+msgid "customization/tooltip/quests/going_to_circle_1026_1/condition"
+msgstr "在天梯战中，累计获得250点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1026_2/condition"
+msgstr "在天梯战中，累计获得500点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1026_3/condition"
+msgstr "在天梯战中，累计获得750点基地占领/防御点数。"
 
 msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
 msgstr "在天梯战中，累计获得250点基地占领/防御点数。"
@@ -8026,6 +8143,9 @@ msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10�
 msgid "customization/tooltip/quests/initiator_775/condition"
 msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
 
+msgid "customization/tooltip/quests/last_man_1026/condition"
+msgstr "在天梯战中，独自对抗至少3辆敌方坦克，并取得战斗胜利。"
+
 msgid "customization/tooltip/quests/last_man_836/condition"
 msgstr "在天梯战中，在至少3辆敌方坦克的围攻下独自获得胜利。"
 
@@ -8062,6 +8182,9 @@ msgstr "在天梯战中，获得的声望点数排名本队第1名，完成50次
 msgid "customization/tooltip/quests/prestige_775/condition"
 msgstr "在天梯战中，获得的声望点数排名本队第1名，完成50次。"
 
+msgid "customization/tooltip/quests/prestige_7v7_1026/condition"
+msgstr "在天梯战中，获得的声望点数排名本队第1，完成50次。"
+
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
 msgstr "在天梯战中，获得的声望点数排名本队第1名，完成50次。"
 
@@ -8079,6 +8202,9 @@ msgstr "已完成"
 
 msgid "customization/tooltip/quests/progressBig"
 msgstr "已完成: "
+
+msgid "customization/tooltip/quests/rampage_1026/condition"
+msgstr "在1场天梯战中击毁5辆敌方坦克。"
 
 msgid "customization/tooltip/quests/rampage_836/condition"
 msgstr "在1场天梯战中击毁5辆敌方坦克。"
@@ -8137,6 +8263,9 @@ msgstr "任务完成时间已结束。没有解锁该元素。"
 msgid "customization/tooltip/quests/status/unavailable"
 msgstr "不可用"
 
+msgid "customization/tooltip/quests/sudden_strike_1026/condition"
+msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
+
 msgid "customization/tooltip/quests/sudden_strike_836/condition"
 msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
 
@@ -8154,6 +8283,15 @@ msgstr "在超级小队中进行天梯战并获胜15次。"
 
 msgid "customization/tooltip/quests/supersquad_wins_775/condition"
 msgstr "在超级小队中进行天梯战并获胜15次。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1026_1/condition"
+msgstr "在天梯战中，配合团队累计占领15个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1026_2/condition"
+msgstr "在天梯战中，配合团队累计占领150个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1026_3/condition"
+msgstr "在天梯战中，配合团队累计占领375个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
 
 msgid "customization/tooltip/quests/tactical_advantage_648_1/condition"
 msgstr "在天梯战中，配合团队累计占领15个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
@@ -8217,6 +8355,9 @@ msgstr "通过在180秒内击毁所有敌方坦克赢得1场天梯战。"
 
 msgid "customization/tooltip/quests/veni_vidi_vici_775/condition"
 msgstr "通过在150秒内击毁所有敌方坦克赢得1场天梯战。"
+
+msgid "customization/tooltip/quests/workhorse_1026/condition"
+msgstr "在天梯战中，累计点亮或击毁500辆敌方坦克。"
 
 msgid "customization/tooltip/quests/workhorse_836/condition"
 msgstr "在天梯战中，点亮或击毁总计500辆敌方坦克。"
@@ -11208,6 +11349,9 @@ msgstr "2025冬季OLS"
 msgid "emblem/special/sticker_859"
 msgstr "Boosteroid"
 
+msgid "emblem/special/sticker_861"
+msgstr "涡旋"
+
 msgid "filter/popover/bonusType/title"
 msgstr "加成类型"
 
@@ -13831,6 +13975,9 @@ msgstr "无敌勇士"
 msgid "inscription/special/special_766"
 msgstr "电闪雷鸣"
 
+msgid "inscription/special/special_767"
+msgstr "巴斯托尼"
+
 msgid "inscription/special/special_768"
 msgstr "明日之星"
 
@@ -13857,6 +14004,45 @@ msgstr "箱子是我的啦"
 
 msgid "inscription/special/special_776"
 msgstr "狗老大"
+
+msgid "inscription/special/special_777"
+msgstr "双赢"
+
+msgid "inscription/special/special_778"
+msgstr "先锋"
+
+msgid "inscription/special/special_779"
+msgstr "剑走偏锋"
+
+msgid "inscription/special/special_780"
+msgstr "敌人的噩梦"
+
+msgid "inscription/special/special_781"
+msgstr "7对7"
+
+msgid "inscription/special/special_782"
+msgstr "狂暴模式！！！"
+
+msgid "inscription/special/special_783"
+msgstr "势如破竹"
+
+msgid "inscription/special/special_784"
+msgstr "兰博"
+
+msgid "inscription/special/special_785"
+msgstr "什么都没结束！"
+
+msgid "inscription/special/special_786"
+msgstr "是他们先动手的"
+
+msgid "inscription/special/special_796"
+msgstr "灵蛇献吉祥"
+
+msgid "inscription/special/special_797"
+msgstr "蛇年运亨通"
+
+msgid "inscription/special/special_798"
+msgstr "蛇舞春风起"
 
 msgid "inscription/special/special_81"
 msgstr "为了祖国！"
@@ -19562,6 +19748,9 @@ msgstr "英雄"
 msgid "projection_decals/special/projection_decal_786/description"
 msgstr "授予在巴比伦计划活动背水一战模式排行榜上，取得较高排名的玩家。"
 
+msgid "projection_decals/special/projection_decal_787"
+msgstr "动力十足"
+
 msgid "projection_decals/special/projection_decal_788"
 msgstr "噬灵兽"
 
@@ -19664,6 +19853,15 @@ msgstr "寒冬突袭"
 msgid "projection_decals/special/projection_decal_818"
 msgstr "不屈不挠"
 
+msgid "projection_decals/special/projection_decal_819"
+msgstr "游击专家"
+
+msgid "projection_decals/special/projection_decal_819/description"
+msgstr ""
+"RAMBO™著作权归属于STUDIOCANAL S.A.S.（欧映嘉纳影业）。©2025 STUDIOCANAL S.A.S. "
+"保留所有权利。RAMBO™ is a Trademark owned by STUDIOCANAL S.A.S. © 2025 STUDIOCANAL "
+"S.A.S. (R) All Rights Reserved."
+
 msgid "projection_decals/special/projection_decal_82"
 msgstr "善行改变世界"
 
@@ -19683,6 +19881,15 @@ msgstr "兽人"
 msgid "projection_decals/special/projection_decal_84/description"
 msgstr "现在您肯定能想象，如果WG使用最初的那几个设计概念，男性乘员会是什么样。"
 
+msgid "projection_decals/special/projection_decal_840"
+msgstr "第一滴血海报"
+
+msgid "projection_decals/special/projection_decal_841"
+msgstr "第一滴血2海报"
+
+msgid "projection_decals/special/projection_decal_842"
+msgstr "第一滴血3海报"
+
 msgid "projection_decals/special/projection_decal_843"
 msgstr "霓虹坦克"
 
@@ -19691,6 +19898,21 @@ msgstr "女精灵"
 
 msgid "projection_decals/special/projection_decal_85/description"
 msgstr "现在您肯定能想象，如果WG使用最初的那几个设计概念，女性乘员会是什么样。"
+
+msgid "projection_decals/special/projection_decal_854"
+msgstr "门神"
+
+msgid "projection_decals/special/projection_decal_855"
+msgstr "美味蒸包"
+
+msgid "projection_decals/special/projection_decal_856"
+msgstr "灵蛇宝藏"
+
+msgid "projection_decals/special/projection_decal_857"
+msgstr "循味追猎"
+
+msgid "projection_decals/special/projection_decal_858"
+msgstr "龙之凝视"
 
 msgid "projection_decals/special/projection_decal_86"
 msgstr "红色警告！"
@@ -20052,6 +20274,45 @@ msgstr "移除贴花"
 
 msgid "propertySheet/title/scale"
 msgstr "图案缩放"
+
+msgid "questProgress/cust_progress_1026_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1026_10"
+msgstr "敌人的噩梦"
+
+msgid "questProgress/cust_progress_1026_11"
+msgstr "7对7"
+
+msgid "questProgress/cust_progress_1026_12"
+msgstr "狂暴模式！！！"
+
+msgid "questProgress/cust_progress_1026_13"
+msgstr "势如破竹"
+
+msgid "questProgress/cust_progress_1026_2"
+msgstr "毁灭性损伤"
+
+msgid "questProgress/cust_progress_1026_3"
+msgstr "展示技艺"
+
+msgid "questProgress/cust_progress_1026_4"
+msgstr "冲进占领圈"
+
+msgid "questProgress/cust_progress_1026_5"
+msgstr "战术优势"
+
+msgid "questProgress/cust_progress_1026_6"
+msgstr "我们下次见"
+
+msgid "questProgress/cust_progress_1026_7"
+msgstr "双赢"
+
+msgid "questProgress/cust_progress_1026_8"
+msgstr "先锋"
+
+msgid "questProgress/cust_progress_1026_9"
+msgstr "剑走偏锋"
 
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
@@ -20428,6 +20689,9 @@ msgstr "闪电技术"
 msgid "repaint/Boosteroid_01"
 msgstr "全面提升"
 
+msgid "repaint/Boosteroid_02"
+msgstr "小心恶龙"
+
 msgid "repaint/Breadboard"
 msgstr "集成电路"
 
@@ -20565,6 +20829,9 @@ msgstr "?empty?"
 
 msgid "repaint/bear"
 msgstr "黑熊"
+
+msgid "repaint/beast_4"
+msgstr "黑风凶煞"
 
 msgid "repaint/bp2021_1"
 msgstr "冰川"
@@ -22195,6 +22462,13 @@ msgid "special_style/A172_M4A3E8_Sherman_BPXIV_3Dst_desc/long"
 msgstr ""
 "\"'全世界的目光都聚焦在你们身上，'他们会说。这下压力来了。只要阻止邪恶势力扩张，确保这个热爱自由的世界拥有光明未来就行了。没问题，各位，午饭前就能搞定。好在我抗压能力比较强。压力能帮我集中精力、果断行事。诺曼底行动的时候就是这样。没有时间思考——精神高度紧张。最终，我们打了一个漂亮仗。所以，如果全世界的目光都聚焦在我们身上，我希望他们已经大饱眼福了。我们的故事值得世代相传。\""
 
+msgid "special_style/A176_M103_110_HBP_3Dst"
+msgstr "兰博"
+
+msgid "special_style/A176_M103_110_HBP_3Dst_desc/long"
+msgstr ""
+"\"队长呼叫乌鸦。乌鸦请回答。兰博？我是特劳特曼。好好听着。在我见过的士兵里，你最优秀。你那次驾驶坦克的表现非常英勇，但是也很鲁莽，还好你小子命大。约翰，这次可不能冒险。坦克部队之间的战斗需要不同的应对策略。本次任务不是单兵作战，跟以前一样，你需要与团队合作。我知道你能行。嘿，你说不定还会乐在其中。出发吧，小伙，给他们些颜色瞧瞧。\""
+
 msgid "special_style/A40_T95_SC_3DSt"
 msgstr "美妙的震动"
 
@@ -22317,6 +22591,16 @@ msgstr "?empty?"
 msgid "special_style/Boosteroid_01_desc/long"
 msgstr ""
 "您的坦克充满无穷能量，随时准备战斗。它在战场上灵活机动，游刃有余，突破敌方围追堵截后，以毁灭性的精度击毁追兵。对手们敬畏地看着这辆势不可挡的战斗机器，对其指挥官的战斗技巧赞叹不已。"
+
+msgid "special_style/Boosteroid_02"
+msgstr "小心恶龙"
+
+msgid "special_style/Boosteroid_02_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_02_desc/long"
+msgstr ""
+"古时候，地图绘制者会在已知世界的边缘标上\"小心恶龙\"的字样和可怕的神兽形象，以警示未知区域潜藏的危险。然而，他们并未意识到，龙不仅栖息在遥远的地球边缘，它们其实近在咫尺，深藏在古老的山脉和被遗忘的废墟中。它们熔岩般的双眼在黑暗中闪烁，伴有火焰的呼吸在寂静中回响——它们藏匿于凡人视线之外，静静等待，准备再次现身。"
 
 msgid "special_style/Breadboard"
 msgstr "集成电路"
@@ -22724,6 +23008,16 @@ msgstr ""
 "\n"
 "4月4日\n"
 "他们批准了这种配置的坦克。这个世界怎么了...”"
+
+msgid "special_style/G154_Kpz_07_RH_WD_3Dst"
+msgstr "白龙"
+
+msgid "special_style/G154_Kpz_07_RH_WD_3Dst_desc"
+msgstr "?empty?"
+
+msgid "special_style/G154_Kpz_07_RH_WD_3Dst_desc/long"
+msgstr ""
+"白龙是水与气的守护者，也是一切美好事物的保卫者。虽面貌威严，却是一头仁心仁德的高贵神兽。它积蕴着千年的智慧，力量无穷无尽，若愿施展，具有移山填海之力。然而，白龙既非邪恶之徒，亦非睚眦必报之辈，它赋予万物生命，其鳞片如耀眼光华，洁白胜过圣山之巅的皑皑白雪。"
 
 msgid "special_style/G162_Project_Kpz_07P_E_KL_3DSt"
 msgstr "魔法数字"
@@ -23648,6 +23942,16 @@ msgstr "团队冲突：Amway921"
 msgid "special_style/battle_of_bloggers_04_desc"
 msgstr "在团队冲突活动中加入Amway921队而获得的独特全地形风格。可以应用于任意系别和等级的坦克。"
 
+msgid "special_style/battle_of_bulge"
+msgstr "阿登反击战"
+
+msgid "special_style/battle_of_bulge_desc"
+msgstr "一款全地形风格，纪念盟军在战事中取得的最重大胜利之一。"
+
+msgid "special_style/battle_of_bulge_desc/long"
+msgstr ""
+"1944年12月，D系在阿登森林发动攻势，致使盟军防线出现了\"突出部位\"。1945年1月，盟军发起反击，迫使D系撤退。阿登反击战是M系在战事中进行的规模最大的战斗，这场战斗作为盟军英勇抵抗的象征而被人们铭记。"
+
 msgid "special_style/battle_of_kursk_01"
 msgstr "屏障"
 
@@ -24299,6 +24603,18 @@ msgstr ""
 "比约恩，对，那是我以前的名字。我住在北方的一个小村庄里。父亲经常带我去打猎。他当然知道我有多讨厌打猎: "
 "追踪、射击、屠戮。我的心日渐阴暗，充满了无名之火。最终，该发生的还是发生了，我迷失在了这片黑暗的森林里，就好像我自己希望的那样。我作为人类的最后记忆是一个凭空出现的巫师，没错，我永远不会忘记那个诅咒。因为它，没人敢踏足这里半步，此言非虚。现在，这片森林里只有一个猎手，此处不欢迎任何人类或野兽。这是我的家，谁想闯入，先要问问我的尖牙厉爪答不答应。他们在这里找什么，或者说找谁，我心知肚明。但是小比约恩早已不复存在，没有人会喜欢他现在的样子。"
 
+msgid "special_style/beast_4"
+msgstr "黑风凶煞"
+
+msgid "special_style/beast_4_desc"
+msgstr "一款全地形风格，专为风元素力量而设计。"
+
+msgid "special_style/beast_4_desc/long"
+msgstr ""
+"\"朋友，请知晓，尽管我无形，却无处不在。古人通过灵魂和神祇崇拜我，因为他们的旅程、收获和季节，全都取决于我的恩赐。我是赋予大地生命的气息，是塑造现存世界的元素之力。我即行动，我即改变，为这个世界带来动能与使命:"
+" "
+"轻摇古老森林的树叶，掀起惊涛骇浪，凿刻悬崖峡谷。我飞越崇山峻岭，席卷广阔海洋，横跨干旱沙漠，舞动于贫瘠的草原之上。我是带来天昏地暗的风暴，也是高耸入云的气旋，亦是孕育风暴的低语。\""
+
 msgid "special_style/black_prince_2019_3dst"
 msgstr "霍巴特滑稽坦克"
 
@@ -24406,6 +24722,43 @@ msgstr "三头骆驼"
 msgid "special_style/bp2023_4_desc/long"
 msgstr ""
 "一款全地形风格，描绘了桑德罗·曼奇尼在寻找水源后所带回来的三头驯养的骆驼。丽贝卡和埃米尔始终没有弄明白，这名冒险家究竟是如何得到这些动物的，但是当这群人的坦克被永远埋进沙子时，这些沙漠之舟便成了他们的救命恩人。"
+
+msgid "special_style/bp2025_holiday_1"
+msgstr "第一滴血"
+
+msgid "special_style/bp2025_holiday_1_desc"
+msgstr ""
+"一款全地形风格，其设计灵感源于电影《第一滴血》。\n"
+"第一滴血 & ©1982 STUDIOCANAL S.A.S. 保留所有权利。©2025 STUDIOCANAL S.A.S. 保留所有权利。FIRST BLOOD ™ & © 1982 STUDIOCANAL S.A.S. All Rights Reserved. © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
+
+msgid "special_style/bp2025_holiday_1_desc/long"
+msgstr ""
+"前特种部队队员约翰·兰博一直备受战场服役的经历困扰，他四处游荡，试图让内心重归平静并找到生活的目标。但他在旅途中与一个小镇的警长发生了冲突，被关进监狱后对方仍不善罢甘休。这最终演变为一场大规模抓捕行动，兰博不但需要利用自己的战斗经验和求生本能来摆脱追兵，还要与内心的创伤争斗。"
+
+msgid "special_style/bp2025_holiday_2"
+msgstr "第一滴血2"
+
+msgid "special_style/bp2025_holiday_2_desc"
+msgstr ""
+"一款全地形风格，其设计灵感源于电影《第一滴血2》。\n"
+"第一滴血2 & ©1985 STUDIOCANAL S.A.S. 保留所有权利。©2025 STUDIOCANAL S.A.S. 保留所有权利。RAMBO: FIRST BLOOD PART II ™ & © 1985 STUDIOCANAL S.A.S. All Rights Reserved. © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
+
+msgid "special_style/bp2025_holiday_2_desc/long"
+msgstr ""
+"在希望小镇与执法者的争斗导致他锒铛入狱。数年后，他被给予一次重获自由的机会。条件则是重返战场执行一项绝密的单人任务。这次任务将深入敌后，位于茂密的丛林中，危险无处不在"
+" ，兰博被迫再次面对自己的过去，必须利用所有的战斗技巧来求生。"
+
+msgid "special_style/bp2025_holiday_3"
+msgstr "第一滴血3"
+
+msgid "special_style/bp2025_holiday_3_desc"
+msgstr ""
+"一款全地形风格，其设计灵感源于电影《第一滴血3》。\n"
+"第一滴血3 & ©1988 STUDIOCANAL S.A.S. 保留所有权利。©2025 STUDIOCANAL S.A.S. 保留所有权利。RAMBO III ™ & © 1988 STUDIOCANAL S.A.S. All Rights Reserved. © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
+
+msgid "special_style/bp2025_holiday_3_desc/long"
+msgstr ""
+"经过多年的残酷战斗和内心挣扎，兰博的生活似乎重归平静。直到他的前指挥官特劳特曼上校被俘虏，兰博别无选择，只能再次出山。为了拯救亦师亦友的上校，他孤身一人前往更加残酷的战场。这场几乎不可能完成的任务中，当地势力给予了兰博不可多得的帮助。"
 
 msgid "special_style/bp8_auction_1"
 msgstr "帝皇怒火"
@@ -25544,6 +25897,16 @@ msgid "special_style/gang_desc/long"
 msgstr ""
 "\"那些乌龟的阴谋越来越狡猾了。如果我们要一举消灭他们，我们就得学会适应。他们明白我们的科技堡垒是这世界上最伟大的工程学造物！光是看上科技堡垒一眼他们就被吓破胆了，所以他们才会全力以赴地试图摧毁它——我们就来个瓮中捉鳖，用我们强大的全新机器打败他们。龟壳的确很硬，但配有强大火炮的战争机器装甲更硬，我们将使用这些战争机器来消灭那些乌龟，统治世界！\""
 
+msgid "special_style/gb_ht_line"
+msgstr "联合杰克"
+
+msgid "special_style/gb_ht_line_desc"
+msgstr "一款全地形风格，尽显您对Y系的热爱。"
+
+msgid "special_style/gb_ht_line_desc/long"
+msgstr ""
+"联合杰克是Y系传承和传统的象征，代表着其地区联合的身份。尽管有人认为\"联合杰克\"这一名称仅在海上悬挂时用于指代其颜色，但自17世纪以来，这一名称已成为旗帜本身的代名词。其标志性的红、白、蓝三色，在全球范围内，成为了Y系自豪感、历史、团结的象征。"
+
 msgid "special_style/gift_NY_2019"
 msgstr "沉重的礼物"
 
@@ -25898,6 +26261,36 @@ msgid "special_style/lunar_ny_2022_desc/long"
 msgstr ""
 "\"它在群星之间翱翔—是在天空中闪烁的空灵精灵，是和平与安宁的不朽守护者。它从穹宇向我们降下了最柔和的目光。以最轻盈的脚步进入我们的梦乡。这名守护者的肌肤是由闪烁的月光编织而成的。它是平衡的守护者，是一个图腾。所有的一切都会是祥和且安静的，只要它还在那里—只要它还在祥云上漫步。\""
 
+msgid "special_style/lunar_ny_2025_1"
+msgstr "双蛇共舞"
+
+msgid "special_style/lunar_ny_2025_1_desc"
+msgstr "一款全地形风格，专为蛇的智慧与优雅而设计。"
+
+msgid "special_style/lunar_ny_2025_1_desc/long"
+msgstr ""
+"在许多文化中，蛇常被视为危险与诱惑的象征，而在十二生肖中，蛇代表着智慧、敏锐与蜕变。在古代神话中，创造人类的神祇伏羲与女娲也被描绘成半人半蛇的形象，象征创造与平衡。蛇又被称为\"小龙\"，能带来连连好运。蛇年出生的人被认为是深思熟虑、头脑敏锐、判断力强，同时还拥有令人无法抗拒的魅力。"
+
+msgid "special_style/lunar_ny_2025_2"
+msgstr "蓝冰灵蛇"
+
+msgid "special_style/lunar_ny_2025_2_desc"
+msgstr "一款全地形风格，专为宁静美丽的冬季而设计。"
+
+msgid "special_style/lunar_ny_2025_2_desc/long"
+msgstr ""
+"在东方文化中，冬季被视为休养生息、思考过去、孕育新生的季节，就像蛇象征着优雅的蜕变与新生。当寒冷的冬夜将生命带入寂静时，蛇也悄然进入沉睡，暗中积蓄力量，为即将到来的温暖时光做准备。在静默的期待中，它观察、反思，等待着藏匿在厚重霜冻下的新生，准备在春天的到来中绽放。"
+
+msgid "special_style/lunar_ny_2025_3"
+msgstr "镇宅门神"
+
+msgid "special_style/lunar_ny_2025_3_desc"
+msgstr "一款全地形风格，专为镇宅辟邪的门神而设计。"
+
+msgid "special_style/lunar_ny_2025_3_desc/long"
+msgstr ""
+"门神是守卫着千家万户大门的勇猛战将，是东方民间传说中的尊崇人物。他们气势威严、手持威武兵器，因其驱邪避灾的能力而备受敬仰。在春节庆祝活动期间，家家户户会将色彩鲜艳的门神画贴在门上，祈求驱除恶灵，保佑来年平安吉祥、福寿双全。"
+
 msgid "special_style/manners"
 msgstr "人靠衣装"
 
@@ -25914,6 +26307,9 @@ msgstr ""
 
 msgid "special_style/manticore_progression"
 msgstr "融合兽(苍蓝)"
+
+msgid "special_style/manticore_progression_2024"
+msgstr "融合兽(绯红)"
 
 msgid "special_style/manticore_yearly"
 msgstr "融合兽"
@@ -27185,6 +27581,12 @@ msgstr "蒸汽动力"
 
 msgid "special_style/steam_publisher_weekend_desc"
 msgstr "一款为Steam上的Wargaming发行商周末活动设计的全地形风格。"
+
+msgid "special_style/steam_unlock"
+msgstr "蒸汽机"
+
+msgid "special_style/steam_unlock_desc"
+msgstr "一款全地形风格，其中的阀门和仪表可帮助您在战场上一往无前。"
 
 msgid "special_style/steel_hunter_arcade_1"
 msgstr "梦境之地老兵"

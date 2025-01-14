@@ -31,7 +31,7 @@
 			</lines>
 		</GB04_Valentine>
 		<GB58_Cruiser_Mk_III>
-			<row>10</row>
+			<row>11</row>
 			<column>3</column>
 			<lines>
 				<GB59_Cruiser_Mk_IV/>
@@ -54,7 +54,7 @@
 			</lines>
 		</GB07_Matilda>
 		<GB59_Cruiser_Mk_IV>
-			<row>10</row>
+			<row>11</row>
 			<column>4</column>
 			<lines>
 				<GB60_Covenanter/>
@@ -84,21 +84,21 @@
 			</lines>
 		</GB08_Churchill_I>
 		<GB107_Cavalier>
-			<row>8</row>
+			<row>9</row>
 			<column>5</column>
 			<lines>
 				<GB21_Cromwell/>
 			</lines>
 		</GB107_Cavalier>
 		<GB124_AEC_Armoured_Car>
-			<row>9</row>
+			<row>10</row>
 			<column>5</column>
 			<lines>
 				<GB122_Staghound_Mk_III/>
 			</lines>
 		</GB124_AEC_Armoured_Car>
 		<GB60_Covenanter>
-			<row>10</row>
+			<row>11</row>
 			<column>5</column>
 			<lines>
 				<GB20_Crusader/>
@@ -130,24 +130,25 @@
 			<column>6</column>
 			<lines>
 				<GB10_Black_Prince/>
+				<GB140_FV224_Chopper/>
 			</lines>
 		</GB09_Churchill_VII>
 		<GB21_Cromwell>
-			<row>8</row>
+			<row>9</row>
 			<column>6</column>
 			<lines>
 				<GB22_Comet/>
 			</lines>
 		</GB21_Cromwell>
 		<GB122_Staghound_Mk_III>
-			<row>9</row>
+			<row>10</row>
 			<column>6</column>
 			<lines>
 				<GB126_FSV_Scheme_A/>
 			</lines>
 		</GB122_Staghound_Mk_III>
 		<GB20_Crusader>
-			<row>10</row>
+			<row>11</row>
 			<column>6</column>
 			<lines>
 				<GB104_GSR_3301_Setter/>
@@ -181,22 +182,29 @@
 				<GB11_Caernarvon/>
 			</lines>
 		</GB10_Black_Prince>
-		<GB22_Comet>
+		<GB140_FV224_Chopper>
 			<row>8</row>
+			<column>7</column>
+			<lines>
+				<GB148_FV227_Conceiver/>
+			</lines>
+		</GB140_FV224_Chopper>
+		<GB22_Comet>
+			<row>9</row>
 			<column>7</column>
 			<lines>
 				<GB23_Centurion/>
 			</lines>
 		</GB22_Comet>
 		<GB126_FSV_Scheme_A>
-			<row>9</row>
+			<row>10</row>
 			<column>7</column>
 			<lines>
 				<GB125_Saladin/>
 			</lines>
 		</GB126_FSV_Scheme_A>
 		<GB104_GSR_3301_Setter>
-			<row>10</row>
+			<row>11</row>
 			<column>7</column>
 			<lines>
 				<GB102_LHMTV/>
@@ -230,22 +238,29 @@
 				<GB12_Conqueror/>
 			</lines>
 		</GB11_Caernarvon>
-		<GB23_Centurion>
+		<GB148_FV227_Conceiver>
 			<row>8</row>
+			<column>8</column>
+			<lines>
+				<GB143_FV229_Contender/>
+			</lines>
+		</GB148_FV227_Conceiver>
+		<GB23_Centurion>
+			<row>9</row>
 			<column>8</column>
 			<lines>
 				<GB24_Centurion_Mk3/>
 			</lines>
 		</GB23_Centurion>
 		<GB125_Saladin>
-			<row>9</row>
+			<row>10</row>
 			<column>8</column>
 			<lines>
 				<GB123_GSOR_1006_v7/>
 			</lines>
 		</GB125_Saladin>
 		<GB102_LHMTV>
-			<row>10</row>
+			<row>11</row>
 			<column>8</column>
 			<lines>
 				<GB103_GSOR3301_AVR_FS/>
@@ -279,22 +294,29 @@
 				<GB91_Super_Conqueror/>
 			</lines>
 		</GB12_Conqueror>
-		<GB24_Centurion_Mk3>
+		<GB143_FV229_Contender>
 			<row>8</row>
+			<column>9</column>
+			<lines>
+				<GB142_FV230_Canopener/>
+			</lines>
+		</GB143_FV229_Contender>
+		<GB24_Centurion_Mk3>
+			<row>9</row>
 			<column>9</column>
 			<lines>
 				<GB86_Centurion_Action_X/>
 			</lines>
 		</GB24_Centurion_Mk3>
 		<GB123_GSOR_1006_v7>
-			<row>9</row>
+			<row>10</row>
 			<column>9</column>
 			<lines>
 				<GB120_Concept_No_5/>
 			</lines>
 		</GB123_GSOR_1006_v7>
 		<GB103_GSOR3301_AVR_FS>
-			<row>10</row>
+			<row>11</row>
 			<column>9</column>
 			<lines>
 				<GB100_Manticore/>
@@ -316,16 +338,20 @@
 			<row>6</row>
 			<column>10</column>
 		</GB91_Super_Conqueror>
-		<GB86_Centurion_Action_X>
+		<GB142_FV230_Canopener>
 			<row>8</row>
+			<column>10</column>
+		</GB142_FV230_Canopener>
+		<GB86_Centurion_Action_X>
+			<row>9</row>
 			<column>10</column>
 		</GB86_Centurion_Action_X>
 		<GB120_Concept_No_5>
-			<row>9</row>
+			<row>10</row>
 			<column>10</column>
 		</GB120_Concept_No_5>
 		<GB100_Manticore>
-			<row>10</row>
+			<row>11</row>
 			<column>10</column>
 		</GB100_Manticore>
 	</nodes>

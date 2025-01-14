@@ -845,14 +845,6 @@ msgstr "良好的战斗表现、单人和小队战斗结果中获得较高的排
 msgid "awardItem/brcoin/header"
 msgstr "钢铁印章"
 
-msgid "awardItem/comp7TokenWeeklyReward/body"
-msgstr ""
-"一种特殊货币，完成最后一项每周任务的奖励。\n"
-"获取幸运点数可为您带来额外奖励。"
-
-msgid "awardItem/comp7TokenWeeklyReward/header"
-msgstr "幸运点数"
-
 msgid "awardItem/completionTokens/body"
 msgstr "组装奖励坦克所需的一套模块。"
 
@@ -6660,6 +6652,16 @@ msgstr ""
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/boosteroid_foxwood/desc"
+msgstr ""
+"威廉整日与忠实的猎犬温斯顿相伴，毕生都献给了狩猎艺术。童年时，他便跟随父亲外出狩猎，并被森林中的奇景深深吸引，从此以后，无论刮风下雨，他每天都会头戴斜纹软呢帽，身着猎装夹克。平日里，威廉和蔼可亲，宛如长辈一般；但在追踪猎物时，他便展现出一位老练神射手的冷静与精准。他猎人的本能在坦克战中发挥得淋漓尽致，一旦瞄准目标，如鹰般锐利的目光可确保他百发百中。"
+
+msgid "notrecruitedtankman/boosteroid_foxwood/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_foxwood/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/bp-commander-1_1/desc"
 msgstr ""
 "她是一位坚定而倔强的女性。在童年时代，她从父亲那学会了如何驾驶坦克战斗。后来，她转而跟随母亲学医。虽然从学院毕业后，她在战地医院取得了不错的成绩，但她坚持要转入坦克部队，希望在那里证明自己作为坦克车长的潜力。"
@@ -7563,6 +7565,57 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp1003_1/label"
 msgstr "沙丘2——命运降临"
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/desc"
+msgstr ""
+"\"小镇警长\"？一些人可能会瞧不起这个职位，但对于威尔·蒂斯尔来说，维护希望小镇治安是至高无上的荣誉；在他眼中，约翰·兰博那样无法无天的无业游民是对城镇治安的最大威胁。这名执法者具有强烈的排外意识，其傲慢的态度甚至会让他做出过激的行为。蒂斯尔警长绝不容忍任何扰乱其宁静小镇的违法行为。不要被他的外表蒙蔽:"
+" 但凡有人敢挑战他作为警长的权威，他必将借法律之名重拳出击。"
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/desc"
+msgstr ""
+"马歇尔·默多克是一名能说会道的谈判专家，致力为国家和人民服务。起码他的言谈举止给人这么一种印象。然而，他那充满魅力的外表下隐藏着一颗诡计多端、唯利是图的心，总是把保护自身利益放到第一位。这名自私自利之徒擅长操控局势走向，甚至会无所不用其极地扩大自身利益，因此一般人很难看清他的真面目。"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/desc"
+msgstr ""
+"退役老兵、孤狼、幸存者，这些都是约翰·詹姆斯·兰博的称谓，他的实力不容小觑。他坚韧不拔、足智多谋，而且力量超凡，这名久经沙场的战士几乎是完美的战斗机器。然而，在目睹到战争的恐怖后，他饱受痛苦回忆的折磨。尽管他竭力想要回归平民生活，但这可能使他与当局产生矛盾。兰博非常忠诚并且很想让自己饱经风霜的内心归于平静，这不仅是为了他自己，更是为了保护自己珍重的人。"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/desc"
+msgstr ""
+"朋友、导师，并且还是兰博曾经的指挥官，塞缪尔·特劳特曼上校是为数不多真正理解兰博的人，因为一般人很难与一名前绿色贝雷帽队员共情。其他人可能会认为兰博是一名冷血无情的战斗机器，特劳特曼上校却明白他的灵魂饱受折磨，被痛苦的创伤所困扰，也因此明白兰博急需开导和支持。作为一位功名赫赫的老兵，特劳特曼也面临着艰难的抉择——忠于体制还是忠于自己的士兵，最终他坚定地选择支持孤立无援的兰博。"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/desc"
+msgstr ""
+"柯宝拥有非凡的战斗能力和机智的头脑，她是一位坚定的自由战士，致力于解救人民并创造美好的未来。她坚强的外表下有一颗善良的心，并且非常关心自己的亲人。即使兰博的前路危机四伏，这名女战士依然奋不顾身地选择帮助他。柯宝从始至终都充满同情心且积极向上，她坚信不能抛弃任何人，尤其是兰博。"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -8731,10 +8784,10 @@ msgid "personalMissions/freeSheet/title"
 msgstr "%(campaignName)s通行令"
 
 msgid "personalMissions/freeSheet/used/Header"
-msgstr "提交通行令:"
+msgstr "已提交的通行令:"
 
 msgid "personalMissions/freeSheet/used/text"
-msgstr "想要取回并提交通行令，请完成任务的主要及次要条件。"
+msgstr "想要取回通行令并再次使用，请完成任务的主要及次要条件。"
 
 msgid "personalMissions/loyalService/descr"
 msgstr "一个独特的奖章，将在战斗中显示在昵称旁边，奖章会展示给两队的玩家。"
@@ -9271,9 +9324,6 @@ msgstr "还有%(count)s个"
 
 msgid "quests/awards/additional/header"
 msgstr "奖励:"
-
-msgid "quests/awards/additional/header/count"
-msgstr "还有%(count)s个"
 
 msgid "quests/awards/nearest/header"
 msgstr "下组奖励:"
@@ -10049,6 +10099,13 @@ msgstr "被动效果"
 
 msgid "roleSkill/info"
 msgstr "角色能力可在战斗中被动充能。出色的战斗表现和占领焦点位置/基地可加快这个过程。"
+
+msgid "roleSkill/startLevel/battle"
+msgstr "战斗开始时将自动获得该能力的%(startLevel)s级充能"
+
+msgid "roleSkill/startLevel/lobby"
+msgstr ""
+"战斗开始时将{colorTagOpen}自动{colorTagClose}获得该能力的{colorTagOpen}%(startLevel)s级充能{colorTagClose}"
 
 msgid "seasonalBattleSelector/tillEnd"
 msgstr "距赛季结束还有:"

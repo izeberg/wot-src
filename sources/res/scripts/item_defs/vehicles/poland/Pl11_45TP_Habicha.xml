@@ -7117,18 +7117,18 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_90mm_wz_39_40>
+				<_90mm_wz_39_40M>
 					shared
 					<maxAmmo>45</maxAmmo>
 					<armor>
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.2
+						7.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7146,7 +7146,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7241,7 +7241,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_90mm_wz_39_40>
+				</_90mm_wz_39_40M>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl11_45TP_Habicha/normal/lod0/Turret_01.model</undamaged>
@@ -8339,17 +8339,20 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_90mm_wz_39_40>
+				<_90mm_wz_39_40M>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<armor>
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>8</reloadTime>
+					<reloadTime>
+						7.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.14
@@ -8365,7 +8368,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8480,7 +8483,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_90mm_wz_39_40>
+				</_90mm_wz_39_40M>
 				<_105mm_Bofors_wz_34>
 					shared
 					<maxAmmo>40</maxAmmo>
@@ -9679,15 +9682,6 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<N2_L>
-			shared
-			<unlocks>
-				<radio>
-					RKD
-					<cost>3700</cost>
-				</radio>
-			</unlocks>
-		</N2_L>
 		<RKD>shared</RKD>
 	</radios>
 	<clientAdjustmentFactors/>

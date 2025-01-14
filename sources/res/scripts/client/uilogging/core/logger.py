@@ -108,6 +108,7 @@ class UILoggingCore(IUILoggingCore):
         self._handler.onDestroy += self._shutdown
         self._started = True
         self._startSessionKeeper()
+        playerEvents.onUILoggingStarted()
         self._logger.debug('Started.')
 
     def _stop(self, *args, **kwargs):

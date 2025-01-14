@@ -5056,13 +5056,8 @@
 			<userString>#czech_vehicles:_152_mm_D_20SM</userString>
 			<tags/>
 			<level>10</level>
-			<price>340000</price>
+			<price>300000</price>
 			<notInShop>true</notInShop>
-			<models>
-				<undamaged>vehicles/czech/Cz40_DBV_152/normal/lod0/Gun_01.model</undamaged>
-				<destroyed>vehicles/czech/Cz40_DBV_152/crash/lod0/Gun_01.model</destroyed>
-				<exploded>vehicles/czech/Cz40_DBV_152/crash/lod0/Gun_01.model</exploded>
-			</models>
 			<impulse>
 				0.62
 				<!--BW_String-->
@@ -5078,41 +5073,35 @@
 			<effects>shot_huge_mb</effects>
 			<reloadEffect>reload115_152</reloadEffect>
 			<pitchLimits>
-				<minPitch>
-					0.0 -45.0 1.0 -45.0
-					<!--BW_String-->
-				</minPitch>
-				<maxPitch>
-					0.0 7.0 1.0 7.0
-					<!--BW_String-->
-				</maxPitch>
+				<minPitch>0 -15 1 -15</minPitch>
+				<maxPitch>0 7 1 7</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>20</rotationSpeed>
 			<reloadTime>
-				16.5
+				20.1
 				<!--BW_String-->
 			</reloadTime>
 			<maxAmmo>60</maxAmmo>
 			<aimingTime>
-				4.04
+				1.8
 				<!--BW_String-->
 			</aimingTime>
 			<weight>4370</weight>
-			<maxHealth>252</maxHealth>
-			<maxRegenHealth>126</maxRegenHealth>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>110</maxRegenHealth>
 			<repairCost>10</repairCost>
 			<invisibilityFactorAtShot>
-				0.1
+				0.135
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				0.4
+				0.34
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
 				<turretRotation>
-					0.08
+					0.16
 					<!--BW_String-->
 				</turretRotation>
 				<afterShot>

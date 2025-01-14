@@ -1,7 +1,7 @@
 import logging
 
 def getLogger(loggerName):
-    return logging.getLogger(('GameLoading:{}').format(loggerName))
+    return logging.getLogger(('GameLoading.{}').format(loggerName))
 
 
 def getSequencesViewHistoryLogger():
@@ -22,6 +22,10 @@ def getResourcesLogger():
 
 def getStatesLogger():
     return getLogger('States')
+
+
+def getTransitionsLogger():
+    return getLogger('Transitions')
 
 
 def getStateMachineLogger():

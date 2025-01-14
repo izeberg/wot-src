@@ -1,15 +1,12 @@
 package net.wg.infrastructure.base.meta
 {
    import flash.events.IEventDispatcher;
-   import net.wg.infrastructure.interfaces.IDAAPIModule;
    
    public interface INotificationsListMeta extends IEventDispatcher
    {
        
       
       function onClickActionS(param1:uint, param2:Number, param3:String) : void;
-      
-      function registerGFNotificationS(param1:IDAAPIModule, param2:String, param3:String, param4:Boolean, param5:Object) : void;
       
       function getMessageActualTimeS(param1:Number) : String;
       

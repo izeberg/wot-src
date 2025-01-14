@@ -114,7 +114,7 @@ msgid "battle/respawnMessagePanel/squad/squadmanRespawned/title"
 msgstr "盟友坦克已重生"
 
 msgid "battle/respawnMessagePanel/squad/stayInCover/description"
-msgstr "脱离战斗！"
+msgstr "停止交火！"
 
 msgid "battle/respawnMessagePanel/squad/stayInCover/title"
 msgstr "正在使盟友重生"
@@ -982,7 +982,7 @@ msgstr "重生充能次数可从空投中获取。"
 
 msgid "tooltips/respawn/platoon/description"
 msgstr ""
-"您需要脱离战斗{brown_Open}%(timeToResurrect)s秒{brown_Close}才能使盟友重生。该机制仅在战斗的前{brown_Open}%(duration)s分钟{brown_Close}内生效。小队中的盟友共享重生充能次数。"
+"您需要停止交火{brown_Open}%(timeToResurrect)s秒{brown_Close}才能使盟友重生。该机制仅在战斗的前{brown_Open}%(duration)s分钟{brown_Close}内生效。小队中的盟友共享重生充能次数。"
 
 msgid "tooltips/respawn/platoon/title"
 msgstr "组队战斗时"

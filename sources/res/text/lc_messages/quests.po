@@ -47,10 +47,10 @@ msgid "action/auto/femalePassportChangeCost"
 msgstr "修改乘员个人资料折扣"
 
 msgid "action/auto/freeXPConversionDiscrecity"
-msgstr "个体经验兑换全局经验比率优惠"
+msgstr "战斗经验兑换全局经验折扣"
 
 msgid "action/auto/freeXPToTManXPRate"
-msgstr "全局经验兑换乘员经验比率优惠"
+msgstr "全局经验兑换乘员经验折扣"
 
 msgid "action/auto/goldDropSkillsCost"
 msgstr "重置乘员特长折扣"
@@ -218,10 +218,10 @@ msgid "action/button/femalePassportChangeCost"
 msgstr "修改乘员个人资料"
 
 msgid "action/button/freeXPConversionDiscrecity"
-msgstr "个体经验兑换全局经验"
+msgstr "兑换战斗经验"
 
 msgid "action/button/freeXPToTManXPRate"
-msgstr "兑换个体经验"
+msgstr "兑换经验"
 
 msgid "action/button/goldDropSkillsCost"
 msgstr "重置特长"
@@ -1100,9 +1100,6 @@ msgstr "签名"
 msgid "bonusName/modification"
 msgstr "效果"
 
-msgid "bonusName/ny_gp"
-msgstr "礼物硬币"
-
 msgid "bonusName/optional_devices_assistant"
 msgstr "配件助手"
 
@@ -1226,9 +1223,6 @@ msgstr "乘员皮肤:"
 msgid "bonuses/item/freeXPFactor"
 msgstr "全局经验系数"
 
-msgid "bonuses/item/ny23RandomResources"
-msgstr "资源"
-
 msgid "bonuses/item/premium"
 msgstr "高级账号天数:"
 
@@ -1330,6 +1324,18 @@ msgstr "%H时%M分后过期"
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "在%MM:%SS后过期"
+
+msgid "dailyQuests/comp7/nextTasks"
+msgstr "距5个新任务开放还有:"
+
+msgid "dailyQuests/comp7/progressCounter"
+msgstr "%(current)d%(separator)s%(total)d"
+
+msgid "dailyQuests/comp7/questsCounter"
+msgstr "%(current)d/%(total)d"
+
+msgid "dailyQuests/comp7/reward"
+msgstr "领取您的奖励！"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "进行一场战斗"
@@ -3617,7 +3623,7 @@ msgid "details/modifiers/economics/femalePassportChangeCost"
 msgstr "修改女性乘员个人资料折扣"
 
 msgid "details/modifiers/economics/freeXPConversionDiscrecity"
-msgstr "个体经验兑换全局经验折扣"
+msgstr "战斗经验兑换全局经验费用"
 
 msgid "details/modifiers/economics/freeXPToTManXPRate"
 msgstr "全局经验兑换乘员经验折扣"
@@ -4110,10 +4116,6 @@ msgstr ""
 msgid "infoPage/dailyMissions/default"
 msgstr "普通任务的完成条件随机，并且每天都可完成。与个人任务相似，其任务进度仅在每场战斗结束后更新。这些任务没有任何时间限制，随时都可以完成。"
 
-msgid "infoPage/dailyMissions/nyDailyDailyMissions"
-msgstr ""
-"普通任务的完成条件随机，并且每天都可完成。与个人任务相似，普通任务进度仅在每场战斗结束后更新。请记得在获得普通任务的当天完成。否则，该任务会顺延至第二天，并导致您无法完成后续任务。假日行动2025期间，每个任务都会为您带来数量不等的{fff_Open}随机资源{fff_Close}。"
-
 msgid "infoPage/dailyMissions/winback"
 msgstr "普通任务的完成条件随机，并且每天都可完成。其任务进度仅在每场战斗结束后更新。这些任务没有时间限制，可在任意时间完成。"
 
@@ -4250,12 +4252,6 @@ msgstr "战略任务"
 
 msgid "item/type/specialMission"
 msgstr "要塞:特殊任务"
-
-msgid "lockedForRerollTooltip/body"
-msgstr "该任务在活动期间每天都可完成，且不可重置。"
-
-msgid "lockedForRerollTooltip/header"
-msgstr "固定任务"
 
 msgid "metrics/state/done"
 msgstr "已完成"

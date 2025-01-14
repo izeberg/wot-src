@@ -1653,6 +1653,10 @@ package
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/body";
       
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/body";
+      
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_DELIMITER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/delimiter";
       
       public static const HEADERBUTTONS_DEFAULTCOUNTER:String = "#menu:headerButtons/defaultCounter";
@@ -3636,8 +3640,6 @@ package
       public static const DATETIME_MONTHS_SHORTSMALL_12:String = "#menu:dateTime/months/shortSmall/12";
       
       public static const DATETIME_SHORTDATEFORMATWITHOUTYEAR:String = "#menu:dateTime/shortDateFormatWithoutYear";
-      
-      public static const DATETIME_DATEMONTH:String = "#menu:dateTime/dateMonth";
       
       public static const VALIDATION_PUBLICINFO_ABBREV_INVALID:String = "#menu:validation/publicInfo/abbrev/invalid";
       

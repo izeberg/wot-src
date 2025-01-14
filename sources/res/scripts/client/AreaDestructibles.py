@@ -1,12 +1,11 @@
 import math, random
+from collections import namedtuple
 from functools import partial
 from time import clock
-from collections import namedtuple
-import BigWorld, Math, DestructiblesCache
+import BigWorld, DestructiblesCache, Math, WWISE, persistent_data_cache_common as pdc, physics_shared
 from constants import DESTRUCTIBLE_MATKIND
 from debug_utils import LOG_ERROR, LOG_CODEPOINT_WARNING
 from helpers import isPlayerAccount
-import physics_shared, WWISE
 COLOR_WHITE = 4294967295
 COLOR_RED = 4294901760
 g_cache = None
@@ -21,7 +20,7 @@ def init():
     global g_cache
     global g_destructiblesAnimator
     global g_destructiblesManager
-    g_cache = ClientDestructiblesCache()
+    g_cache = pdc.load('area_destructibles_cache', ClientDestructiblesCache)
     g_destructiblesManager = DestructiblesManager()
     g_destructiblesAnimator = _DestructiblesAnimator()
 

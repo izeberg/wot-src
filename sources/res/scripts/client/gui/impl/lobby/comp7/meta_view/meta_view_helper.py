@@ -1,7 +1,6 @@
 import logging, typing
-from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_division import Division, State
-from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_division import ProgressionDivision
-from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_item_base_model import Rank
+from gui.impl.gen.view_models.views.lobby.comp7.enums import Division, Rank
+from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_division import ProgressionDivision, State
 from gui.impl.lobby.comp7 import comp7_shared
 from helpers import dependency
 from intervals import Interval
@@ -13,6 +12,12 @@ if typing.TYPE_CHECKING:
     from gui.impl.gen.view_models.views.lobby.comp7.meta_view.progression_item_base_model import ProgressionItemBaseModel
     from helpers.server_settings import Comp7RanksConfig
 _logger = logging.getLogger(__name__)
+
+def setRankItemData(itemModel, rankIdx, ranksConfig):
+    setRankData(itemModel, rankIdx, ranksConfig)
+    setDivisionData(itemModel, getRankDivisions(rankIdx, ranksConfig))
+    return itemModel
+
 
 def setProgressionItemData(itemModel, parentModel, rankIdx, ranksConfig):
     setRankData(itemModel, rankIdx, ranksConfig)

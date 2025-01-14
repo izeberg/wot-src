@@ -10067,48 +10067,48 @@
 		<userString>#artefacts:poi_artillery_aoe/name</userString>
 		<description>#artefacts:poi_artillery_aoe/descr</description>
 		<icon>poi_artillery 0 0</icon>
-		<price>
-			150
-			<gold/>
-		</price>
+		<price>0</price>
 		<notInShop>true</notInShop>
-		<tags>notForSale avatar trigger poiEquipment</tags>
+		<tags>notForSale poiEquipment</tags>
 		<type>battleAbilities</type>
-		<code>artillery</code>
+		<messagePostfix>artillery</messagePostfix>
 		<soundNotification>comp_7_ability_ready</soundNotification>
 		<script>
 			PoiArtilleryEquipment
-			<shortDescription>#artefacts:poi_artillery_aoe/shortDescr</shortDescription>
-			<longDescription>#artefacts:poi_artillery_aoe/longDescr</longDescription>
-			<shortFilterAlert/>
-			<longFilterAlert/>
-			<cooldownTime>0</cooldownTime>
-			<cooldownFactors/>
-			<sharedCooldownTime>0</sharedCooldownTime>
-			<consumeAmmo>true</consumeAmmo>
-			<disableAllyDamage>true</disableAllyDamage>
-			<cooldownTimeRespawnFactor>1</cooldownTimeRespawnFactor>
-			<minApplyRadius>20</minApplyRadius>
-			<maxApplyRadius>300</maxApplyRadius>
-			<requireAssists>true</requireAssists>
-			<delay>3</delay>
+			<visualScript>
+				<server>
+					<plan>PointsOfInterest/abilities/artillery_server</plan>
+				</server>
+			</visualScript>
+			<delay>
+				3
+				<exports>vse tooltip</exports>
+			</delay>
+			<radius>
+				25
+				<exports>vse tooltip</exports>
+			</radius>
+			<damage>
+				400
+				<exports>vse tooltip</exports>
+			</damage>
+			<stunDuration>
+				10
+				<exports>vse tooltip</exports>
+			</stunDuration>
+			<fraction>
+				0
+				<exports>vse tooltip</exports>
+			</fraction>
+			<areaShow>always</areaShow>
 			<duration>
 				1.0
 				<!--BW_String-->
 			</duration>
-			<maxCount>1</maxCount>
-			<shotsNumber>1</shotsNumber>
-			<explodeDestructible>true</explodeDestructible>
-			<areaRadius>25</areaRadius>
 			<areaVisual>content/Interface/TargetPoint/circle_shot_area.visual</areaVisual>
 			<areaUsedPrefab>content/CGFPrefabs/Battle/Consumables/shot_area.prefab</areaUsedPrefab>
-			<areaVisibleToEnemies>false</areaVisibleToEnemies>
 			<areaColor>0xFF25FF25</areaColor>
-			<areaShow>before</areaShow>
-			<noOwner>false</noOwner>
-			<attackerType>ARTILLERY_EQ</attackerType>
-			<shotSoundPreDelay>1</shotSoundPreDelay>
-			<wwsoundShot>eb_ability_artillery_firing</wwsoundShot>
+			<requireAssists>true</requireAssists>
 			<effects>
 				<action>
 					<shotEffects>epicArtilleryStrike</shotEffects>
@@ -10118,25 +10118,6 @@
 					<repeatDelayDeviationPercent>0</repeatDelayDeviationPercent>
 				</action>
 			</effects>
-			<actions>
-				<action>
-					<type>DamageVehicleWithDispersion</type>
-					<applyTo>enemy_team</applyTo>
-					<args>
-						<damage>400</damage>
-						<damageDispersionPercent>0</damageDispersionPercent>
-					</args>
-				</action>
-				<action>
-					<type>StunVehicleAndSendResults</type>
-					<applyTo>all</applyTo>
-					<args>
-						<shellCompactDescr>88858</shellCompactDescr>
-						<sendAttackResults>True</sendAttackResults>
-						<ignoreStunResistanceDuration>False</ignoreStunResistanceDuration>
-					</args>
-				</action>
-			</actions>
 		</script>
 	</poi_artillery_aoe>
 	<poi_radar>
@@ -10174,6 +10155,7 @@
 		<notInShop>true</notInShop>
 		<tags>notForSale avatar trigger</tags>
 		<type>battleAbilities</type>
+		<messagePostfix>ARTILLERY</messagePostfix>
 		<script>
 			AreaOfEffectEquipment
 			<shortDescription>#artefacts:artillery/shortDescr</shortDescription>
@@ -10246,6 +10228,7 @@
 		<notInShop>true</notInShop>
 		<tags>notForSale avatar trigger</tags>
 		<type>battleAbilities</type>
+		<messagePostfix>BOMBER</messagePostfix>
 		<script>
 			AttackBomberEquipment
 			<shortDescription>#artefacts:bomber/shortDescr</shortDescription>
@@ -10321,6 +10304,7 @@
 		<notInShop>true</notInShop>
 		<tags>notForSale avatar trigger</tags>
 		<type>battleAbilities</type>
+		<messagePostfix>ARTILLERY_DEATH_ZONE_AOE</messagePostfix>
 		<script>
 			AreaOfEffectEquipment
 			<shortDescription>#artefacts:artillery/shortDescr</shortDescription>
@@ -10424,8 +10408,8 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				13 21 30
-				<exports>vse</exports>
+				17 28 40
+				<exports>vse tooltip</exports>
 			</heal>
 			<secondaryHealDebuff>
 				0
@@ -10434,7 +10418,7 @@
 			<tickInterval>
 				1.0
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</tickInterval>
 		</script>
 	</comp7_aoe_heal>
@@ -10496,17 +10480,17 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				5 7 10
-				<exports>vse</exports>
+				6 8 12
+				<exports>vse tooltip</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				2
+				3
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
 				1.0
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</tickInterval>
 		</script>
 	</comp7_hunter>
@@ -10542,7 +10526,7 @@
 			<shotDispersionFactors>
 				0.55 0.475 0.3
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 			<clipReloadTimeBoost>
 				0.6 0.75 0.9
@@ -10578,7 +10562,7 @@
 			<gunReloadTimeBuff>
 				0.75 0.7 0.65
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<damageDistance>
 				150
@@ -10587,7 +10571,7 @@
 			<shotDispersionFactors>
 				0.8 0.675 0.55
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 		</script>
 	</comp7_berserk>
@@ -10631,7 +10615,7 @@
 		<tags>notForSale roleEquipment</tags>
 		<type>battleAbilities</type>
 		<soundNotification>comp_7_ability_ready</soundNotification>
-		<code>artillery</code>
+		<messagePostfix>artillery</messagePostfix>
 		<script>
 			Comp7RedlineEquipment
 			<visualScript>
@@ -10708,9 +10692,9 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<gunReloadTimeBuff>
-				0.7 0.55 0.4
+				0.7 0.575 0.45
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 		</script>
 	</comp7_fast_recharge>
@@ -10731,29 +10715,29 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				8
+				10
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				12 15 20
+				12 14 17
 				<exports>vse tooltip</exports>
 			</duration>
 			<dmgAbsorb>
 				0.85 0.775 0.70
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</dmgAbsorb>
 			<enginePowerFactor>
 				1.35
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</enginePowerFactor>
 			<fwMaxSpeedBonus>
 				10
 				<exports>vse tooltip</exports>
 			</fwMaxSpeedBonus>
 			<bkMaxSpeedBonus>
-				10
+				7
 				<exports>vse tooltip</exports>
 			</bkMaxSpeedBonus>
 			<rammingDamageBonus>
@@ -10789,23 +10773,23 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				25
+				15
 				<exports>vse tooltip</exports>
 			</duration>
 			<shotDispersionFactors>
 				0.8 0.7 0.6
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</shotDispersionFactors>
 			<slvl>
-				0.6 0.8 0.95
+				1.0 1.2 1.45
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</slvl>
 			<sdlvl>
 				0.6 0.8 0.95
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</sdlvl>
 		</script>
 	</comp7_sure_shot>
@@ -10826,7 +10810,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				5
+				3
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -10878,13 +10862,14 @@
 				<exports>vse tooltip</exports>
 			</healDuration>
 			<baseHeal>
-				100
+				70.0
+				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</baseHeal>
 			<extraHealFactor>
 				0.35 0.55 0.75
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</extraHealFactor>
 			<fwdSpeedBoost>
 				10
@@ -10921,7 +10906,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				8 12 17
+				7 10 15
 				<exports>vse tooltip</exports>
 			</duration>
 			<delay>
@@ -10929,7 +10914,7 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<startupDelay>
-				3
+				4
 				<exports>vse tooltip</exports>
 			</startupDelay>
 			<radius>
@@ -10956,7 +10941,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				3
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -10966,7 +10951,7 @@
 			<visionFactor>
 				1.15 1.2 1.25
 				<!--BW_String-->
-				<exports>vse</exports>
+				<exports>vse tooltip</exports>
 			</visionFactor>
 		</script>
 	</comp7_aggressive_detection>

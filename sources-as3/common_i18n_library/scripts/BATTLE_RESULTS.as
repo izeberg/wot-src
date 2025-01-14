@@ -329,6 +329,8 @@ package
       
       public static const COMMON_VEHICLESTATE_DEAD29:String = "#battle_results:common/vehicleState/dead29";
       
+      public static const COMMON_VEHICLESTATE_DEAD30:String = "#battle_results:common/vehicleState/dead30";
+      
       public static const COMMON_VEHICLESTATE_DEAD35:String = "#battle_results:common/vehicleState/dead35";
       
       public static const COMMON_VEHICLESTATE_PREMATURELEAVE:String = "#battle_results:common/vehicleState/prematureLeave";
@@ -678,10 +680,6 @@ package
       public static const DETAILS_CALCULATIONS_XPRECORD:String = "#battle_results:details/calculations/xpRecord";
       
       public static const DETAILS_CALCULATIONS_SQUADBONUS:String = "#battle_results:details/calculations/squadBonus";
-      
-      public static const DETAILS_CALCULATIONS_NEWYEAR:String = "#battle_results:details/calculations/newYear";
-      
-      public static const DETAILS_CALCULATIONS_VEHICLEBRANCH:String = "#battle_results:details/calculations/vehicleBranch";
       
       public static const DETAILS_CALCULATIONS_NOPENALTY:String = "#battle_results:details/calculations/noPenalty";
       

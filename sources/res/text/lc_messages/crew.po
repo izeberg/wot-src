@@ -394,7 +394,7 @@ msgid "matrix/bonusTooltip/list/xp"
 msgstr "训练附加特长无需花费经验。"
 
 msgid "matrix/freeResetButton"
-msgstr "重置"
+msgstr "免费重置"
 
 msgid "matrix/increaseButton"
 msgstr "快速训练"
@@ -728,6 +728,21 @@ msgstr "全部金币自行反坦克炮"
 
 msgid "premiumVehType/plural/lowerCase/SPG"
 msgstr "全部金币自行火炮"
+
+msgid "premiumVehType/plural/lowerCase/base/AT-SPG"
+msgstr "金币自行反坦克炮"
+
+msgid "premiumVehType/plural/lowerCase/base/SPG"
+msgstr "金币自行火炮"
+
+msgid "premiumVehType/plural/lowerCase/base/heavyTank"
+msgstr "金币重型坦克"
+
+msgid "premiumVehType/plural/lowerCase/base/lightTank"
+msgstr "金币轻型坦克"
+
+msgid "premiumVehType/plural/lowerCase/base/mediumTank"
+msgstr "金币中型坦克"
 
 msgid "premiumVehType/plural/lowerCase/heavyTank"
 msgstr "全部金币重型坦克"

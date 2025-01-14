@@ -646,14 +646,14 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SnowDunesSmall_36_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_35_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice3_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Frosty_02_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Step_01_AM</terrain>
 	</kind>
 	<kind>
 		<id>111</id>
 		<desc>stone</desc>
 		<help>Stone</help>
 		<effect_material>stone</effect_material>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_large_rectangular_03_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_large_rectangular_05_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_rock14_debris_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_rock14_debris_dark_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_pavement_02_AM</terrain>
@@ -758,23 +758,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_wet_oil_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_wet_oil_03_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Obsidian_01_AM</terrain>
-	</kind>
-	<kind>
-		<id>116</id>
-		<desc>paper</desc>
-		<help>Paper</help>
-		<effect_material>paper</effect_material>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_02_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_03_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_04_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_05_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_06_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_07_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_08_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_09_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_10_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_11_AM</terrain>
 	</kind>
 	<kind>
 		<id>254</id>

@@ -244,6 +244,15 @@ msgstr "发送消息"
 msgid "members/footer/AT_SPG_Full"
 msgstr "小队中的自行反坦克炮数量已达到上限"
 
+msgid "members/footer/comp7Invite"
+msgstr "邀请"
+
+msgid "members/footer/comp7Limitations"
+msgstr "最高段位限制"
+
+msgid "members/footer/comp7TopPlayer"
+msgstr "小队成员最高段位"
+
 msgid "members/footer/getNotReady"
 msgstr "点击以表示您未就绪。"
 
@@ -295,17 +304,11 @@ msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 msgid "members/header/squad"
 msgstr ": 标准模式"
 
-msgid "members/header/tooltip/comp7/body"
-msgstr "小队中玩家的评级点数之差不可超过%(rating)s。超级小队玩家不受此限。"
-
 msgid "members/header/tooltip/comp7/dropdown"
 msgstr "只有小队指挥官才能更改成员数量上限。"
 
 msgid "members/header/tooltip/comp7/dropdown/item"
 msgstr "无法更改。成员数量上限不可低于当前成员数量。"
-
-msgid "members/header/tooltip/comp7/header"
-msgstr "创建小队的规则"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""

@@ -81,7 +81,7 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>80</armor_1>
+			<armor_1>110</armor_1>
 			<armor_2>110</armor_2>
 			<armor_3>70</armor_3>
 			<armor_4>30</armor_4>
@@ -90,15 +90,15 @@
 			<armor_7>160</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>70</armor_9>
-			<armor_10>150</armor_10>
+			<armor_10>200</armor_10>
 			<armor_11>20</armor_11>
 			<armor_12>30</armor_12>
 			<armor_13>30</armor_13>
-			<armor_14>140</armor_14>
+			<armor_14>190</armor_14>
 			<armor_15>40</armor_15>
-			<armor_16>40</armor_16>
+			<armor_16>50</armor_16>
 			<armor_17>60</armor_17>
-			<armor_19>60</armor_19>
+			<armor_19>80</armor_19>
 			<armor_20>20</armor_20>
 			<leftTrack>20</leftTrack>
 			<rightTrack>20</rightTrack>
@@ -4890,17 +4890,26 @@
 				<armor_10>210</armor_10>
 				<armor_11>190</armor_11>
 				<armor_12>170</armor_12>
-				<armor_13>150</armor_13>
+				<armor_13>175</armor_13>
 				<armor_14>140</armor_14>
 				<armor_15>130</armor_15>
-				<armor_16>120</armor_16>
+				<armor_16>140</armor_16>
 				<armor_17>110</armor_17>
-				<armor_18>100</armor_18>
+				<armor_18>110</armor_18>
 				<armor_19>90</armor_19>
-				<armor_20>80</armor_20>
+				<armor_20>100</armor_20>
 				<armor_21>70</armor_21>
 				<armor_22>60</armor_22>
 				<armor_23>50</armor_23>
+				<armor_24>85</armor_24>
+				<armor_25>115</armor_25>
+				<armor_26>135</armor_26>
+				<armor_27>150</armor_27>
+				<armor_28>80</armor_28>
+				<armor_29>75</armor_29>
+				<armor_30>160</armor_30>
+				<armor_31>140</armor_31>
+				<armor_32>140</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>12000</weight>
@@ -4927,12 +4936,6 @@
 				<_105mm_M68_L7>
 					shared
 					<maxAmmo>60</maxAmmo>
-					<unlocks>
-						<gun>
-							_120mm_M58
-							<cost>42000</cost>
-						</gun>
-					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -5008,12 +5011,15 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.28
+						0.24
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>11</reloadTime>
+					<reloadTime>
+						10.3
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5022,7 +5028,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5116,195 +5122,6 @@
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
 				</_105mm_M68_L7>
-				<_120mm_M58>
-					shared
-					<maxAmmo>45</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0.00000 8.00 0.25000 8.00 0.37500 2.00 0.50000 0.00 0.62500 2.00 0.75000 8.00 1.00000 8.00
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							270
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							240
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							120
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							6
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_7>
-							230
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<armor_8>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_8>
-						<armor_9>
-							200
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_9>
-						<armor_10>
-							180
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_10>
-						<armor_11>
-							30
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_11>
-						<armor_12>
-							220
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_12>
-						<armor_13>
-							140
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_13>
-						<armor_14>
-							100
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_14>
-						<armor_15>
-							40
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_15>
-						<armor_16>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_16>
-						<armor_17>
-							160
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_17>
-						<gun>40</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.28
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						11.4
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.12
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.4
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.19
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000145 0.029062 3.13436
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.370706 0.370706
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000145 0.029062 3.13436
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.01 0.06 5.47
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.01 0.06 5.99
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.18 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.52
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<models>
-						<undamaged>vehicles/japan/J41_Type_68/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/japan/J41_Type_68/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/japan/J41_Type_68/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/japan/J41_Type_68/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/japan/J41_Type_68/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large</effects>
-					<reloadEffect>reload115_152</reloadEffect>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<shotOffset>
-						-0.000491 0.060499 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<density>103.221977 102.068283</density>
-						<aoTextureSize>1024 512</aoTextureSize>
-					</camouflage>
-				</_120mm_M58>
 			</guns>
 			<models>
 				<undamaged>vehicles/japan/J41_Type_68/normal/lod0/Turret_01.model</undamaged>
@@ -6154,7 +5971,7 @@
 					60
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_9>
-				<armor_10>170</armor_10>
+				<armor_10>200</armor_10>
 				<armor_11>120</armor_11>
 				<armor_12>70</armor_12>
 				<armor_13>30</armor_13>
@@ -6164,7 +5981,7 @@
 				<armor_17>200</armor_17>
 				<armor_18>180</armor_18>
 				<armor_19>160</armor_19>
-				<armor_20>140</armor_20>
+				<armor_20>170</armor_20>
 				<armor_21>120</armor_21>
 				<armor_22>110</armor_22>
 				<armor_23>100</armor_23>
@@ -6172,6 +5989,9 @@
 				<armor_25>70</armor_25>
 				<armor_26>60</armor_26>
 				<armor_27>50</armor_27>
+				<armor_28>165</armor_28>
+				<armor_29>160</armor_29>
+				<armor_30>170</armor_30>
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>13000</weight>
@@ -6269,15 +6089,15 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.28
+						0.24
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						10.5
+						9.8
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6286,7 +6106,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6381,191 +6201,6 @@
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
 				</_105mm_M68_L7>
-				<_120mm_M58>
-					shared
-					<maxAmmo>45</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0.00000 8.00 0.25000 8.00 0.37500 2.00 0.50000 0.00 0.62500 2.00 0.75000 8.00 1.00000 8.00
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							300
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							220
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							130
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							280
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							260
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							200
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<armor_8>
-							170
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_8>
-						<armor_9>
-							120
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_9>
-						<armor_10>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_10>
-						<armor_11>
-							40
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_11>
-						<armor_12>
-							140
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_12>
-						<armor_13>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_13>
-						<armor_14>
-							40
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_14>
-						<armor_15>
-							40
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_15>
-						<gun>40</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.28
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						10.9
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.2
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.19
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000145 0.029062 3.13436
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.370706 0.370706
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000145 0.029062 3.13436
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.01 0.06 5.76
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.01 0.06 6.29
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.18 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.53
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<models>
-						<undamaged>vehicles/japan/J41_Type_68/normal/lod0/Gun_05.model</undamaged>
-						<destroyed>vehicles/japan/J41_Type_68/crash/lod0/Gun_05.model</destroyed>
-						<exploded>vehicles/japan/J41_Type_68/crash/lod0/Gun_05.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/japan/J41_Type_68/collision/Gun_05.model</collisionModelServer>
-						<collisionModelClient>vehicles/japan/J41_Type_68/collision_client/Gun_05.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large</effects>
-					<reloadEffect>reload115_152</reloadEffect>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<shotOffset>
-						0.000001 0.062753 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<density>103.221977 102.068283</density>
-						<aoTextureSize>1024 512</aoTextureSize>
-					</camouflage>
-				</_120mm_M58>
 				<_120mm_Type_60_Gun>
 					shared
 					<maxAmmo>45</maxAmmo>
@@ -6646,7 +6281,7 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.28
+						0.24
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>10</reloadTime>
@@ -7687,15 +7322,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<JAN-GRC-3Z>
-			shared
-			<unlocks>
-				<radio>
-					JAN-GRC-4Z
-					<cost>9500</cost>
-				</radio>
-			</unlocks>
-		</JAN-GRC-3Z>
 		<JAN-GRC-4Z>shared</JAN-GRC-4Z>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -7770,7 +7396,7 @@
 			<off>strv_siege_mode_off_PC</off>
 		</soundStateChange>
 		<autoSwitchOffRequiredVehicleSpeed>25</autoSwitchOffRequiredVehicleSpeed>
-		<autoSwitchOnRequiredVehicleSpeed>10</autoSwitchOnRequiredVehicleSpeed>
+		<autoSwitchOnRequiredVehicleSpeed>25</autoSwitchOnRequiredVehicleSpeed>
 	</siege_mode>
 	<hull_aiming>
 		<pitch>

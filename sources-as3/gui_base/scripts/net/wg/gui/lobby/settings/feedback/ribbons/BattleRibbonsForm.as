@@ -174,7 +174,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       {
          App.utils.data.cleanupDynamicObject(this._itemsMap);
          this._itemsMap = null;
-         this.ribbonsScrollPane.target = null;
          this.ribbonsScrollPane.dispose();
          this.ribbonsScrollPane = null;
          this.ribbonsScrollBar.dispose();
@@ -184,7 +183,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
             this.ribbonsContainer.dispose();
          }
          this.ribbonsContainer = null;
-         this.controlsScrollPane.target = null;
          this.controlsScrollPane.dispose();
          this.controlsScrollPane = null;
          this.controlsScrollBar.dispose();

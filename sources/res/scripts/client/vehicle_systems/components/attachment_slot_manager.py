@@ -1,3 +1,4 @@
+from functools import partial
 import CGF, Math, GenericComponents, math_utils
 from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerComponent
 from cgf_script.managers_registrator import autoregister, onAddedQuery
@@ -83,6 +84,14 @@ def _getAttachmentFromSlot(appearance, slotId):
 
 
 def _updateAttachmentSlot(appearance, gameObject, attachmentSlot):
+
+    def _onLoaded(prefabPath, go):
+        hierarchy = CGF.HierarchyManager(go.spaceID)
+        findResult = hierarchy.findComponentInParent(go, AttachmentSlotComponent)
+        if findResult is not None and len(findResult) > 1 and findResult[1].prefabPath != prefabPath:
+            CGF.removeGameObject(go)
+        return
+
     hierarchy = CGF.HierarchyManager(gameObject.spaceID)
     attachment = _getAttachmentFromSlot(appearance, attachmentSlot.slotId)
     if attachment and attachmentSlot.update(attachment.scale, attachment.rotation, attachment.modelName):
@@ -91,7 +100,7 @@ def _updateAttachmentSlot(appearance, gameObject, attachmentSlot):
             CGF.removeGameObject(child)
 
         if attachment.modelName:
-            CGF.loadGameObjectIntoHierarchy(attachment.modelName, gameObject, _getAttachmentTransform(attachment))
+            CGF.loadGameObjectIntoHierarchy(attachment.modelName, gameObject, _getAttachmentTransform(attachment), hierarchyLoadedCallback=partial(_onLoaded, attachment.modelName))
     elif not attachment:
         attachmentSlot.clear()
         children = hierarchy.getChildren(gameObject) or []

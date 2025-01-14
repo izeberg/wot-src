@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/british/GB140_FV224_Chopper/crash/lod2/Gun_01</nodelessVisual>
+	<parent>vehicles/british/GB140_FV224_Chopper/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.560465 -0.171309 -0.997098</min>
+		<max>0.556391 0.296047 4.853426</max>
+	</visibilityBox>
+</root>

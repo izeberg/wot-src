@@ -110,9 +110,6 @@ msgstr "DW2"
 msgid "Chassis_DickerMax"
 msgstr "大麦克斯"
 
-msgid "Chassis_E-100"
-msgstr "E-100"
-
 msgid "Chassis_E-100_SH"
 msgstr "E 100"
 
@@ -125,20 +122,32 @@ msgstr "E-50"
 msgid "Chassis_E-50_2"
 msgstr "E-50加强型"
 
-msgid "Chassis_E-75"
-msgstr "E-75"
-
-msgid "Chassis_E-75_2"
-msgstr "E-75加强型"
-
 msgid "Chassis_E50_Ausf_M"
 msgstr "E-50M"
 
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
 
+msgid "Chassis_G04_PzVI_Tiger_I"
+msgstr "“虎”式H1型"
+
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "“虎”式E型"
+
+msgid "Chassis_G04_PzVI_Tiger_I_2"
+msgstr "\"虎\"式E型"
+
+msgid "Chassis_G06_PzII"
+msgstr "II号A型"
+
+msgid "Chassis_G06_PzII_2"
+msgstr "II号F型"
+
+msgid "Chassis_G06_PzII_2_short"
+msgstr "II号F型"
+
+msgid "Chassis_G06_PzII_short"
+msgstr "II号A型"
 
 msgid "Chassis_G100_Gtraktor_Krupp"
 msgstr "克虏伯试验车"
@@ -148,6 +157,18 @@ msgstr "III号突击炮B型"
 
 msgid "Chassis_G101_StuG_III_2"
 msgstr "III号突击炮E型"
+
+msgid "Chassis_G102_Pz_III"
+msgstr "III号D型"
+
+msgid "Chassis_G102_Pz_III_2"
+msgstr "III号E型"
+
+msgid "Chassis_G102_Pz_III_2_short"
+msgstr "III号E型"
+
+msgid "Chassis_G102_Pz_III_short"
+msgstr "III号D型"
 
 msgid "Chassis_G103_RU_251"
 msgstr "Ru 251 PT I"
@@ -177,6 +198,18 @@ msgstr "II号D型"
 
 msgid "Chassis_G109_Steyr_WT"
 msgstr "斯太尔 WT"
+
+msgid "Chassis_G10_PzIII_AusfJ"
+msgstr "III号J型"
+
+msgid "Chassis_G10_PzIII_AusfJ_2"
+msgstr "III号L型"
+
+msgid "Chassis_G10_PzIII_AusfJ_2_short"
+msgstr "III号L型"
+
+msgid "Chassis_G10_PzIII_AusfJ_short"
+msgstr "III号J型"
 
 msgid "Chassis_G110_Typ_205"
 msgstr "170吨坦克"
@@ -271,6 +304,15 @@ msgstr "VK16801(M)"
 msgid "Chassis_G139_MKA"
 msgstr "MKA"
 
+msgid "Chassis_G13_VK3001H"
+msgstr "VK3001(H)"
+
+msgid "Chassis_G13_VK3001H_2"
+msgstr "VK3001(H)加强型"
+
+msgid "Chassis_G13_VK3001H_2_short"
+msgstr "VK3001(H)加强型"
+
 msgid "Chassis_G140_HWK_30"
 msgstr "HWK 30"
 
@@ -289,11 +331,26 @@ msgstr "50吨主战方案"
 msgid "Chassis_G154_Kpz_07_RH"
 msgstr "07RH主战方案"
 
+msgid "Chassis_G154_Kpz_07_RH_LN"
+msgstr "白龙"
+
 msgid "Chassis_G158_VK2801_105_SPXXI"
 msgstr "VK2801加强型"
 
 msgid "Chassis_G159_KPZ_3_Project_07_HK"
 msgstr "07HK主战方案3型"
+
+msgid "Chassis_G15_VK3601H"
+msgstr "VK3601(H)"
+
+msgid "Chassis_G15_VK3601H_2"
+msgstr "VK3601(H)加强型"
+
+msgid "Chassis_G15_VK3601H_2_short"
+msgstr "VK3601(H)加强型"
+
+msgid "Chassis_G15_VK3601H_short"
+msgstr "VK3601(H)"
 
 msgid "Chassis_G160_Pz_Kpfw_35_R_mit_T_26_Turm"
 msgstr "35 R T-26型"
@@ -325,11 +382,25 @@ msgstr "KJpz.T"
 msgid "Chassis_G169_T_54D"
 msgstr "T-54D"
 
+msgid "Chassis_G16_PzVIB_Tiger_II"
+msgstr "“虎王” 试验型"
+
+msgid "Chassis_G16_PzVIB_Tiger_II_2"
+msgstr "\"虎王\""
+
+msgid "Chassis_G16_PzVIB_Tiger_II_2_short"
+msgstr "\"虎王\""
+
 msgid "Chassis_G16_PzVIB_Tiger_II_F"
 msgstr "\"虎王\""
 
 msgid "Chassis_G16_PzVIB_Tiger_II_F_short"
 msgstr "\"虎王\""
+
+msgid "Chassis_G16_PzVIB_Tiger_II_short"
+msgstr ""
+"“虎王” \n"
+"试验型"
 
 msgid "Chassis_G170_PzKpfwIV_Ausf_F2"
 msgstr "IV号F2型"
@@ -343,8 +414,23 @@ msgstr "\"虎王\"黑森峰"
 msgid "Chassis_G173_BT42_DIT"
 msgstr "15吨突击坦克 BT-42"
 
+msgid "Chassis_G174_Kpz3_GST_Turm"
+msgstr "3GST常规型主战"
+
+msgid "Chassis_G178_KanJpz_2"
+msgstr "KJPZ 2"
+
 msgid "Chassis_G179_Straussler_V4"
 msgstr "V–4/40"
+
+msgid "Chassis_G55_E-75"
+msgstr "E-75"
+
+msgid "Chassis_G55_E-75_2"
+msgstr "E-75加强型"
+
+msgid "Chassis_G56_E-100"
+msgstr "E-100"
 
 msgid "Chassis_G58_VK4502P"
 msgstr "VK4502(P)B型"
@@ -1525,6 +1611,23 @@ msgstr "机动优秀，火炮射速快"
 msgid "G154_Kpz_07_RH"
 msgstr "07RH主战方案"
 
+msgid "G154_Kpz_07_RH_LN"
+msgstr "白龙"
+
+msgid "G154_Kpz_07_RH_LN_descr"
+msgstr ""
+"白龙是水与气的守护者，也是一切美好事物的保卫者。虽面貌威严，却是一头仁心仁德的高贵神兽。它积蕴着千年的智慧，力量无穷无尽，若愿施展，具有移山填海之力。然而，白龙既非邪恶之徒，亦非睚眦必报之辈，它赋予万物生命，其鳞片如耀眼光华，洁白胜过圣山之巅的皑皑白雪。"
+
+msgid "G154_Kpz_07_RH_LN_long_special"
+msgstr ""
+"这辆坦克兼具中型和轻型坦克的特点，拥有完美的速度和机动性，能使它一马当先地抢占有利位置。90毫米火炮的稳定性和射速可圈可点，但是穿透力和单发损伤并不出众。"
+
+msgid "G154_Kpz_07_RH_LN_short"
+msgstr "白龙"
+
+msgid "G154_Kpz_07_RH_LN_short_special"
+msgstr "机动优秀，每分钟损伤高"
+
 msgid "G154_Kpz_07_RH_descr"
 msgstr ""
 "在上世纪60年代初，与“标准坦克”项目并行研发的还有一系列轻量化坦克项目。设计阶段考虑了多种动力单元、悬挂装置和乘员布局方案。这些坦克的共性是都采用了特殊构造的摇摆炮塔。项目在草图阶段被叫停，但其中一个方案后来在改进过的“豹”I底盘上进行了测试。"
@@ -1832,6 +1935,44 @@ msgstr "BT-42继续高中"
 
 msgid "G173_BT42_DIT_short_special"
 msgstr "惊人的单发损伤，较高的速度"
+
+msgid "G174_Kpz3_GST_Turm"
+msgstr "3GST常规型主战"
+
+msgid "G174_Kpz3_GST_Turm_descr"
+msgstr ""
+"Kpz.3 GST计划有2个版本。第一个版本的外形类似于经典的自行反坦克炮。第二个版本是3GST常规型主战，其炮塔能够在有限角度内旋转，且全体车组乘员都位于炮塔内。3GST常规型主战配备与Kpz.70类似的液气悬挂装置。\n"
+"\n"
+"按照设计，3GST常规型主战的机动性极佳，拥有坚固的正面装甲和高射速火炮。然而，这2个版本均未能得到D系军方决策者的青睐。最终，由于该坦克的设计过于反常规，研发工作转向了进一步改进\"豹\"II系列。"
+
+msgid "G174_Kpz3_GST_Turm_long_special"
+msgstr ""
+"3GST常规型主战是D系VIII级突击型自行反坦克炮。其主要优势在于坚固的正面装甲，使其能够占据关键点位，同时液气悬挂装置让它能轻松利用地形。这辆自行反坦克炮的火炮非常契合其角色，具有高额的平均穿透力和平均每分钟损伤，以及良好的火炮手感。除此以外，其可旋转炮塔还拥有出色的射界。"
+
+msgid "G174_Kpz3_GST_Turm_short"
+msgstr "3GST常规型主战"
+
+msgid "G174_Kpz3_GST_Turm_short_special"
+msgstr "坚固的正面装甲，自动液气悬挂装置"
+
+msgid "G178_KanJpz_2"
+msgstr "KJPZ 2"
+
+msgid "G178_KanJpz_2_descr"
+msgstr ""
+"1959年，出现了首批安装105毫米炮的火炮式坦克歼击车方案，但同时也面临着炮管前伸过长的问题。为此启动了KJPZ "
+"2项目，火炮移动到了车体右后侧，前部车体因此呈现不对称结构。虽然仅停留在蓝图阶段，但KJPZ 2的大多数设计理念均在后续其它项目中得到了运用。"
+
+msgid "G178_KanJpz_2_long_special"
+msgstr ""
+"KJPZ "
+"2是一辆D系VIII级自行反坦克炮，配备一门11厘米口径火炮。得益于液气悬挂装置，它拥有额外的-7度俯角，以及与V系自行反坦克炮相似的行驶/攻城模式。这辆自行反坦克炮仅拥有基础防护，但在行驶模式下拥有出色的机动性，可迅速抢占有利点位。而在攻城模式下，其火炮则具有出色的手感和平均每分钟损伤。"
+
+msgid "G178_KanJpz_2_short"
+msgstr "KJPZ 2"
+
+msgid "G178_KanJpz_2_short_special"
+msgstr "良好的机动性，液气悬挂装置"
 
 msgid "G179_Straussler_V4"
 msgstr "V–4/40"
@@ -2413,6 +2554,9 @@ msgstr "MB 517"
 msgid "MB517P"
 msgstr "MB 517P"
 
+msgid "MB_803_12"
+msgstr "MB 803/12"
+
 msgid "MB_837_Ea_600M"
 msgstr "MB 837 Ea 600M"
 
@@ -2430,6 +2574,9 @@ msgstr "MB 881 P"
 
 msgid "MTU803"
 msgstr "MTU803"
+
+msgid "MTU_MB_8V837D"
+msgstr "MTU MB 8V837"
 
 msgid "M_17T_nestejaahdytteinen_bensiinimoottori"
 msgstr "M-17T汽油发动机(水冷型)"
@@ -2509,9 +2656,6 @@ msgstr "迈巴赫 HL 57 TR"
 msgid "Maybach_HL62TR"
 msgstr "迈巴赫 HL 62 TR"
 
-msgid "Maybach_HL62TRM"
-msgstr "迈巴赫 HL 62 TRM"
-
 msgid "Maybach_HL62TRM_1"
 msgstr "迈巴赫 HL 62 TRM_1"
 
@@ -2545,14 +2689,26 @@ msgstr "迈巴赫 HL 120TRM"
 msgid "Maybach_HL_120_TRM_112_R"
 msgstr "迈巴赫 HL 120 TRM 112 R"
 
+msgid "Maybach_HL_120_TRM_Ausf_H"
+msgstr "迈巴赫 HL 120 TRM H型"
+
 msgid "Maybach_HL_120_TRM_C"
 msgstr "迈巴赫 HL 120 TRM V12"
 
 msgid "Maybach_HL_120_TRM_F"
 msgstr "迈巴赫 HL 120TRM"
 
+msgid "Maybach_HL_120_TRM_G"
+msgstr "迈巴赫 HL 120 TRM/G"
+
+msgid "Maybach_HL_120_TRM_J"
+msgstr "迈巴赫 HL 120 TRM/J"
+
 msgid "Maybach_HL_120_TRM_L"
 msgstr "迈巴赫 HL 120 TRM L"
+
+msgid "Maybach_HL_120_TRM_M"
+msgstr "迈巴赫 HL 120 TRM/M"
 
 msgid "Maybach_HL_120_TRM_R"
 msgstr "迈巴赫 HL 120 TRM R"
@@ -2562,6 +2718,12 @@ msgstr "2 x迈巴赫 HL 120 TRM"
 
 msgid "Maybach_HL_120_TR_A"
 msgstr "迈巴赫 HL 120 TRM 112"
+
+msgid "Maybach_HL_120_TR_Ausf_H"
+msgstr "迈巴赫 HL 120 TR H型"
+
+msgid "Maybach_HL_120_TR_E"
+msgstr "迈巴赫 HL 120 TR/E"
 
 msgid "Maybach_HL_120_TR_R"
 msgstr "迈巴赫 HL 120 TR R"
@@ -2580,6 +2742,9 @@ msgstr "迈巴赫 HL 174"
 
 msgid "Maybach_HL_174_05"
 msgstr "迈巴赫 HL 87"
+
+msgid "Maybach_HL_174_V1"
+msgstr "迈巴赫 HL 174 V1"
 
 msgid "Maybach_HL_190"
 msgstr "迈巴赫 HL 190"
@@ -2739,13 +2904,24 @@ msgstr ""
 "迈巴赫\n"
 "HL 234 TRM P30"
 
-msgid "Maybach_HL_234_TRM_P45_1"
+msgid "Maybach_HL_234_TRM_P40"
+msgstr "迈巴赫 HL 234 TRM P40"
+
+msgid "Maybach_HL_234_TRM_P40_short"
+msgstr ""
+"迈巴赫 HL 234\n"
+"TRM P40"
+
+msgid "Maybach_HL_234_TRM_P45"
 msgstr "迈巴赫 HL 234 TRM P45"
+
+msgid "Maybach_HL_234_TRM_P45_1"
+msgstr "迈巴赫 HL 234 TRM P45 GW"
 
 msgid "Maybach_HL_234_TRM_P45_1_short"
 msgstr ""
 "迈巴赫 HL 234\n"
-"TRM P45"
+"TRM P45 GW"
 
 msgid "Maybach_HL_234_TRM_P45_Leicht"
 msgstr "迈巴赫 HL 295 A型"
@@ -2755,11 +2931,22 @@ msgstr ""
 "迈巴赫 HL 295\n"
 "A型"
 
+msgid "Maybach_HL_234_TRM_P45_short"
+msgstr ""
+"迈巴赫 HL 234\n"
+"TRM P45"
+
 msgid "Maybach_HL_235"
 msgstr "迈巴赫 HL 235"
 
 msgid "Maybach_HL_45P"
 msgstr "迈巴赫 HL 45P"
+
+msgid "Maybach_HL_57_TRM"
+msgstr "迈巴赫 HL 57 TRM"
+
+msgid "Maybach_HL_62_TRM"
+msgstr "迈巴赫 HL 62 TRM"
 
 msgid "Maybach_HL_98"
 msgstr "迈巴赫 HL 98"
@@ -2843,10 +3030,10 @@ msgid "Porsche_Typ_100_1"
 msgstr "2x保时捷 100/1型"
 
 msgid "Porsche_Typ_100_1A"
-msgstr "2x保时捷 100/1 A型"
+msgstr "2x保时捷 101型"
 
 msgid "Porsche_Typ_100_1A_short"
-msgstr "2x保时捷 100/1 A型"
+msgstr "2x保时捷 101型"
 
 msgid "Porsche_Typ_100_3"
 msgstr "2x保时捷 100/3型"
@@ -2854,8 +3041,14 @@ msgstr "2x保时捷 100/3型"
 msgid "Porsche_Typ_100_3A"
 msgstr "2x保时捷 100/3 A型"
 
+msgid "Porsche_Typ_100_P"
+msgstr "2x保时捷 100/P型"
+
 msgid "Porsche_Typ_101_1_x2"
 msgstr "2x保时捷 101/1型"
+
+msgid "Porsche_Typ_101_P"
+msgstr "2x保时捷 101/P型"
 
 msgid "Porsche_Typ_205_2"
 msgstr "保时捷 205/2型"
@@ -3034,24 +3227,6 @@ msgstr "III号A型"
 msgid "PzIII_Ausf_A_short"
 msgstr "III号A型"
 
-msgid "PzIII_Ausf_C"
-msgstr "III号E型"
-
-msgid "PzIII_Ausf_C_short"
-msgstr "III号E型"
-
-msgid "PzIII_Ausf_E"
-msgstr "III号J型"
-
-msgid "PzIII_Ausf_E_short"
-msgstr "III号J型"
-
-msgid "PzIII_Ausf_M"
-msgstr "III号L型"
-
-msgid "PzIII_Ausf_M_short"
-msgstr "III号L型"
-
 msgid "PzIII_IV"
 msgstr "III/IV号坦克"
 
@@ -3060,30 +3235,6 @@ msgstr "?empty?"
 
 msgid "PzIII_IV_short"
 msgstr "III/IV号坦克"
-
-msgid "PzIIIketten_Ausf_A"
-msgstr "III号D型"
-
-msgid "PzIIIketten_Ausf_A_short"
-msgstr "III号D型"
-
-msgid "PzIIIketten_Ausf_B"
-msgstr "III号E型"
-
-msgid "PzIIIketten_Ausf_B_short"
-msgstr "III号E型"
-
-msgid "PzIIIketten_Ausf_J"
-msgstr "III号J型"
-
-msgid "PzIIIketten_Ausf_J_short"
-msgstr "III号J型"
-
-msgid "PzIIIketten_Ausf_L"
-msgstr "III号L型"
-
-msgid "PzIIIketten_Ausf_L_short"
-msgstr "III号L型"
 
 msgid "PzIIL_Grosseturm"
 msgstr "“山猫”5cm炮型"
@@ -3109,35 +3260,11 @@ msgstr "?empty?"
 msgid "PzII_Luchs_short"
 msgstr "II型\"山猫\""
 
-msgid "PzII_Luchsturm"
-msgstr "II号F型"
-
-msgid "PzII_Luchsturm_short"
-msgstr "II号F型"
-
-msgid "PzII_Standartturm"
-msgstr "II号B型"
-
-msgid "PzII_Standartturm_short"
-msgstr "II号B型"
-
 msgid "PzII_ausf_J"
 msgstr "II号J型"
 
 msgid "PzII_descr"
 msgstr "?empty?"
-
-msgid "PzII_ketten_Ausf_A"
-msgstr "II号A型"
-
-msgid "PzII_ketten_Ausf_A_short"
-msgstr "II号A型"
-
-msgid "PzII_ketten_Ausf_B"
-msgstr "II号F型"
-
-msgid "PzII_ketten_Ausf_B_short"
-msgstr "II号F型"
 
 msgid "PzII_short"
 msgstr "II号坦克"
@@ -3240,26 +3367,6 @@ msgstr "V-IV号坦克"
 msgid "PzVI"
 msgstr "“虎”式"
 
-msgid "PzVIB_Heinschel_Turm"
-msgstr "“虎王”量产型"
-
-msgid "PzVIB_Heinschel_Turm_short"
-msgstr "“虎王”量产型"
-
-msgid "PzVIB_Porsche_Turm"
-msgstr "“虎王”1-50号"
-
-msgid "PzVIB_Porsche_Turm_short"
-msgstr "“虎王”1-50号"
-
-msgid "PzVIB_Standardketten"
-msgstr "“虎王” 试验型"
-
-msgid "PzVIB_Standardketten_short"
-msgstr ""
-"“虎王” \n"
-"试验型"
-
 msgid "PzVIB_Tiger_II"
 msgstr "\"虎王\""
 
@@ -3284,22 +3391,8 @@ msgstr "?empty?"
 msgid "PzVIB_Tiger_II_short"
 msgstr "\"虎王\""
 
-msgid "PzVIB_Vetstaerktketten"
-msgstr "\"虎王\""
-
-msgid "PzVIB_Vetstaerktketten_short"
-msgstr "\"虎王\""
-
-msgid "PzVI_Anfangsturm"
-msgstr "“虎”式H2型"
-
 msgid "PzVI_Anfangsturm_MapsTraining_Player_HT_2"
 msgstr "“虎”式H2型"
-
-msgid "PzVI_Anfangsturm_short"
-msgstr ""
-"“虎”式\n"
-"H2型"
 
 msgid "PzVI_Anfangsturm_short_MapsTraining_Player_HT_2"
 msgstr ""
@@ -3309,24 +3402,13 @@ msgstr ""
 msgid "PzVI_MapsTraining_Player_HT_2"
 msgstr "“虎”式 (tr.)"
 
-msgid "PzVI_Porsche_Turm"
-msgstr "“虎”式E型"
-
 msgid "PzVI_Porsche_Turm_MapsTraining_Player_HT_2"
 msgstr "“虎”式E型"
-
-msgid "PzVI_Porsche_Turm_short"
-msgstr ""
-"“虎”式\n"
-"E型"
 
 msgid "PzVI_Porsche_Turm_short_MapsTraining_Player_HT_2"
 msgstr ""
 "“虎”式\n"
 "E型"
-
-msgid "PzVI_Standardketten"
-msgstr "“虎”式H1型"
 
 msgid "PzVI_Standardketten_MapsTraining_Player_HT_2"
 msgstr "“虎”式H1型"
@@ -3339,9 +3421,6 @@ msgstr "?empty?"
 
 msgid "PzVI_Tiger_P_short"
 msgstr "“虎”(P)"
-
-msgid "PzVI_Vetstaerktketten"
-msgstr "“虎”式E型"
 
 msgid "PzVI_Vetstaerktketten_MapsTraining_Player_HT_2"
 msgstr "“虎”式E型"
@@ -3515,6 +3594,12 @@ msgstr "SEM 25B"
 msgid "SEM_25C"
 msgstr "SEM 25C无线电台"
 
+msgid "SEM_25E"
+msgstr "SEM 25E"
+
+msgid "SEM_25K"
+msgstr "SEM 25K"
+
 msgid "SEM_25_D_funkgerat"
 msgstr "SEM 25D无线电台"
 
@@ -3667,9 +3752,6 @@ msgstr "E-25"
 msgid "Turret_1_E-50"
 msgstr "E-50 A型"
 
-msgid "Turret_1_E-75"
-msgstr "E-75 A型"
-
 msgid "Turret_1_E50_Ausf_M"
 msgstr "E-50M"
 
@@ -3683,6 +3765,12 @@ msgid "Turret_1_G04_PzVI_Tiger_IA_short"
 msgstr ""
 "“虎”式\n"
 "E型"
+
+msgid "Turret_1_G06_PzII"
+msgstr "II号B型"
+
+msgid "Turret_1_G06_PzII_short"
+msgstr "II号B型"
 
 msgid "Turret_1_G100_Gtraktor_Krupp"
 msgstr "克虏伯试验车"
@@ -3715,6 +3803,12 @@ msgstr "II号D型"
 
 msgid "Turret_1_G109_Steyr_WT"
 msgstr "斯太尔 WT"
+
+msgid "Turret_1_G10_PzIII_AusfJ"
+msgstr "III号J型"
+
+msgid "Turret_1_G10_PzIII_AusfJ_short"
+msgstr "III号J型"
 
 msgid "Turret_1_G110_Typ_205"
 msgstr "“鼠”式原型车"
@@ -3797,6 +3891,14 @@ msgstr "VK16801(M)"
 msgid "Turret_1_G139_MKA"
 msgstr "MKA"
 
+msgid "Turret_1_G13_VK3001H"
+msgstr "VK3001(H) (0批次)"
+
+msgid "Turret_1_G13_VK3001H_short"
+msgstr ""
+"VK3001(H)\n"
+"(0批次)"
+
 msgid "Turret_1_G140_HWK_30"
 msgstr "HWK 30"
 
@@ -3818,11 +3920,20 @@ msgstr "昆泽试验车"
 msgid "Turret_1_G154_Kpz_07_RH"
 msgstr "07RH主战方案"
 
+msgid "Turret_1_G154_Kpz_07_RH_LN"
+msgstr "白龙"
+
 msgid "Turret_1_G158_VK2801_105_SPXXI"
 msgstr "VK2801 B型"
 
 msgid "Turret_1_G159_KPZ_3_Project_07_HK"
 msgstr "07HK主战方案3型"
+
+msgid "Turret_1_G15_VK3601H"
+msgstr "VK3601(H)"
+
+msgid "Turret_1_G15_VK3601H_short"
+msgstr "VK3601(H)"
 
 msgid "Turret_1_G160_Pz_Kpfw_35_R_mit_T_26_Turm"
 msgstr "T-26"
@@ -3854,11 +3965,17 @@ msgstr "T-III.v.E.U."
 msgid "Turret_1_G169_T_54D"
 msgstr "T-54D"
 
+msgid "Turret_1_G16_PzVIB_Tiger_II"
+msgstr "“虎王”1-50号"
+
 msgid "Turret_1_G16_PzVIB_Tiger_II_F"
 msgstr "\"虎王\""
 
 msgid "Turret_1_G16_PzVIB_Tiger_II_F_short"
 msgstr "\"虎王\""
+
+msgid "Turret_1_G16_PzVIB_Tiger_II_short"
+msgstr "“虎王”1-50号"
 
 msgid "Turret_1_G170_PzKpfwIV_Ausf_F2"
 msgstr "IV号F2型"
@@ -3872,8 +3989,17 @@ msgstr "\"虎王\"黑森峰"
 msgid "Turret_1_G173_BT42_DIT"
 msgstr "BT-突击炮"
 
+msgid "Turret_1_G174_Kpz3_GST_Turm"
+msgstr "3GST常规型主战"
+
+msgid "Turret_1_G178_KanJpz_2"
+msgstr "KJPZ 2"
+
 msgid "Turret_1_G179_Straussler_V4"
 msgstr "V–4/40"
+
+msgid "Turret_1_G55_E-75"
+msgstr "E-75 A型"
 
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK4502(P) B型"
@@ -4019,23 +4145,69 @@ msgstr "VK2801 C型"
 msgid "Turret_2_DW_II"
 msgstr "VK3001(H) (0批次)"
 
-msgid "Turret_2_E-100"
-msgstr "E-100"
-
 msgid "Turret_2_E-50"
 msgstr "E-50 B型"
 
 msgid "Turret_2_E-50_SH"
 msgstr "E-50基础型"
 
-msgid "Turret_2_E-75"
-msgstr "E-75 B型"
+msgid "Turret_2_G04_PzVI_Tiger_I"
+msgstr "\"虎\"式E型"
+
+msgid "Turret_2_G04_PzVI_Tiger_I_short"
+msgstr ""
+"“虎”式\n"
+"E型"
+
+msgid "Turret_2_G06_PzII"
+msgstr "II号F型"
+
+msgid "Turret_2_G06_PzII_short"
+msgstr "II号F型"
+
+msgid "Turret_2_G102_Pz_III"
+msgstr "III号E型"
+
+msgid "Turret_2_G102_Pz_III_short"
+msgstr "III号E型"
+
+msgid "Turret_2_G10_PzIII_AusfJ"
+msgstr "III号L型"
+
+msgid "Turret_2_G10_PzIII_AusfJ_short"
+msgstr "III号L型"
 
 msgid "Turret_2_G113_SP_I_C"
 msgstr "SPIC PT II Rh.-Nr.WK-G2"
 
 msgid "Turret_2_G126_HWK_12"
 msgstr "HWK12改进型"
+
+msgid "Turret_2_G13_VK3001H"
+msgstr "VK3601(H)"
+
+msgid "Turret_2_G13_VK3001H_short"
+msgstr "VK3601(H)"
+
+msgid "Turret_2_G15_VK3601H"
+msgstr "\"虎\"式H2型"
+
+msgid "Turret_2_G15_VK3601H_short"
+msgstr ""
+"“虎”式\n"
+"H2型"
+
+msgid "Turret_2_G16_PzVIB_Tiger_II"
+msgstr "“虎王”量产型"
+
+msgid "Turret_2_G16_PzVIB_Tiger_II_short"
+msgstr "“虎王”量产型"
+
+msgid "Turret_2_G55_E-75"
+msgstr "E-75 B型"
+
+msgid "Turret_2_G56_E-100"
+msgstr "E-100"
 
 msgid "Turret_2_Indien_Panzer"
 msgstr "\"IDA坦克方案\""
@@ -4140,26 +4312,6 @@ msgstr "VK2801"
 msgid "VK3001H"
 msgstr "VK3001(H)"
 
-msgid "VK3001H_Eliteturm"
-msgstr "VK3601(H)"
-
-msgid "VK3001H_Eliteturm_short"
-msgstr "VK3601(H)"
-
-msgid "VK3001H_Standardturm"
-msgstr "VK3001(H) (0批次)"
-
-msgid "VK3001H_Standardturm_short"
-msgstr ""
-"VK3001(H)\n"
-"(0批次)"
-
-msgid "VK3001H_ausf_B"
-msgstr "VK3001(H)加强型"
-
-msgid "VK3001H_ausf_B_short"
-msgstr "VK3001(H)加强型"
-
 msgid "VK3001H_descr"
 msgstr "?empty?"
 
@@ -4257,34 +4409,8 @@ msgstr "VK3002(M)"
 msgid "VK3601H"
 msgstr "VK3601(H)"
 
-msgid "VK3601H_Grosseturm"
-msgstr "“虎”式 H2型"
-
-msgid "VK3601H_Grosseturm_short"
-msgstr ""
-"“虎”式\n"
-"H2型"
-
-msgid "VK3601H_Standardturm"
-msgstr "VK3601(H)"
-
-msgid "VK3601H_Standardturm_short"
-msgstr "VK3601(H)"
-
 msgid "VK3601H_descr"
 msgstr "?empty?"
-
-msgid "VK3601H_henshelketten"
-msgstr "VK3601(H)"
-
-msgid "VK3601H_henshelketten_ausf_B"
-msgstr "VK3601(H)加强型"
-
-msgid "VK3601H_henshelketten_ausf_B_short"
-msgstr "VK3601(H)加强型"
-
-msgid "VK3601H_henshelketten_short"
-msgstr "VK3601(H)"
 
 msgid "VK3601H_short"
 msgstr "VK3601(H)"
@@ -4494,9 +4620,7 @@ msgstr ""
 "L/52炮"
 
 msgid "_105mm_KwK45_L52_N"
-msgstr ""
-"10.5cm KwsPzK\n"
-"L/52炮"
+msgstr "10.5cm KwK L/52炮 B型"
 
 msgid "_105mm_KwK45_L52_SH"
 msgstr "10.5cm KwK L/52炮"
@@ -4525,9 +4649,7 @@ msgid "_105mm_KwK46_L68"
 msgstr "10.5cm KwK L/68炮"
 
 msgid "_105mm_KwK46_L68_N"
-msgstr ""
-"10.5cm KwsPzK\n"
-"L/68炮"
+msgstr "10.5cm KwK L/68炮 B型"
 
 msgid "_105mm_KwK46_L70"
 msgstr ""
@@ -4536,6 +4658,9 @@ msgstr ""
 
 msgid "_105mm_KwK46_L70_SH"
 msgstr "10.5cm KwK L/70炮"
+
+msgid "_105mm_Kw_K_L_68_Ausf_E"
+msgstr "10.5cm KwK L/68炮 E型"
 
 msgid "_105mm_Kw_K_L_73"
 msgstr "10.5cm KwK L/73炮"
@@ -4591,8 +4716,14 @@ msgstr "Pzgr 41 L1"
 msgid "_105mm_Pzgr_39_45"
 msgstr "Pzgr 39/45"
 
+msgid "_105mm_Pzgr_39_E"
+msgstr "Pzgr 39 E"
+
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr 40/45"
+
+msgid "_105mm_Pzgr_40_E"
+msgstr "Pzgr 40 E"
 
 msgid "_105mm_RH_Gun"
 msgstr "10.5 cm RH炮"
@@ -4620,6 +4751,9 @@ msgstr "Sprgr LV"
 
 msgid "_105mm_Sprgr_45"
 msgstr "Sprgr 45"
+
+msgid "_105mm_Sprgr_E"
+msgstr "Sprgr E"
 
 msgid "_105mm_StuH42_L28"
 msgstr ""
@@ -4653,6 +4787,18 @@ msgstr "10WSc"
 msgid "_10WSc_WT"
 msgstr "10WSc A"
 
+msgid "_110mm_MGK"
+msgstr "11cm 中速炮"
+
+msgid "_110mm_MGK_AP"
+msgstr "MGK-11 AP"
+
+msgid "_110mm_MGK_APDS"
+msgstr "MGK-11 APDS"
+
+msgid "_110mm_MGK_HE"
+msgstr "MGK-11 HE"
+
 msgid "_114_mm_n_panssarivaunu_haupitsi_18"
 msgstr "114mm Psv.H/18"
 
@@ -4683,11 +4829,20 @@ msgstr "DM12 MZ"
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
 
+msgid "_120mm_Kan_L60"
+msgstr "12cm L/60炮"
+
 msgid "_120mm_M820"
 msgstr "M820 AP-T"
 
+msgid "_120mm_M820K"
+msgstr "M820K"
+
 msgid "_120mm_M820_HEAT"
 msgstr "M820 HEAT"
+
+msgid "_120mm_M820_HEATK"
+msgstr "HEATK"
 
 msgid "_120mm_M827"
 msgstr "M827"
@@ -4703,6 +4858,9 @@ msgstr "120mm RhD炮"
 
 msgid "_120mm_SDRN1"
 msgstr "SDRN1 HE"
+
+msgid "_120mm_SDRN1K"
+msgstr "SDRN1K"
 
 msgid "_120mm_SDRN1V"
 msgstr "SDRN1V HE"
@@ -4735,7 +4893,7 @@ msgid "_128mm_KwK44_L55_7x7"
 msgstr "12.8cm KwK 44 L/55炮"
 
 msgid "_128mm_KwK44_L55_N"
-msgstr "12.8cm KwK 炮 E型"
+msgstr "12.8cm KwK 44 L/55炮 B型"
 
 msgid "_128mm_KwK44_L55_SH"
 msgstr ""
@@ -4752,6 +4910,9 @@ msgstr "12.8cm KwK L/50炮 A型"
 
 msgid "_128mm_KwK_L55_TM"
 msgstr "12.8cm KwK L/55 TM炮"
+
+msgid "_128mm_Kw_K_44_L_55_Ausf_E"
+msgstr "12.8cm KwK 44 L/55炮 E型"
 
 msgid "_128mm_Kw_K_L_61K"
 msgstr ""
@@ -4845,6 +5006,12 @@ msgstr "Pzgr 43"
 msgid "_128mm_PzGr44M_SH"
 msgstr "Pzgr 44M"
 
+msgid "_128mm_Pzgr_39_E"
+msgstr "Pzgr 39 E"
+
+msgid "_128mm_Pzgr_40_E"
+msgstr "Pzgr 40 E"
+
 msgid "_128mm_Pzgr_N4"
 msgstr "Pzgr Nr.4"
 
@@ -4871,6 +5038,9 @@ msgstr "Sprgr v18"
 
 msgid "_128mm_SprG19"
 msgstr "Sprgr 19"
+
+msgid "_128mm_Sprgr_18_E"
+msgstr "Sprgr 18 E"
 
 msgid "_128mm_Sprgr_N9"
 msgstr "Sprgr Nr.9"
@@ -5019,11 +5189,20 @@ msgstr "2cm KwK 38炮"
 msgid "_20mm_KwK_38_L55A"
 msgstr "2cm KwK 38炮"
 
+msgid "_20mm_Kw_K_38_Ausf_F"
+msgstr "2cm KwK 38炮 F型"
+
 msgid "_20mm_Pzgr39"
 msgstr "Pzgr 39"
 
 msgid "_20mm_Pzgr39_S"
 msgstr "20×138mmB"
+
+msgid "_20mm_Pzgr_39F"
+msgstr "Pzgr 39F"
+
+msgid "_20mm_Pzgr_40F"
+msgstr "Pzgr 40F"
 
 msgid "_20mm_Solothurn_S_18_1000"
 msgstr "索洛图恩 S-18/1000"
@@ -5098,6 +5277,9 @@ msgstr ""
 msgid "_37mm_KwK_L46_f"
 msgstr "3.7cm KwK 36 L/46.5f炮"
 
+msgid "_37mm_Kw_K_D_T_4804"
+msgstr "3.7cm KwK DT 4804炮"
+
 msgid "_37mm_PaK_38t_L47"
 msgstr ""
 "3.7cm PaK38(t)\n"
@@ -5112,6 +5294,12 @@ msgstr "Pzgr 36f"
 msgid "_37mm_Pzgr39t"
 msgstr "Pzgr 39 (t)"
 
+msgid "_37mm_Pzgr_39_D_T"
+msgstr "Pzgr 39 DT"
+
+msgid "_37mm_Pzgr_40_D_T"
+msgstr "Pzgr 40 DT"
+
 msgid "_37mm_SA_38f_L34"
 msgstr "3.7cm SA 38 L/34炮"
 
@@ -5123,6 +5311,9 @@ msgstr "Sprgr 18f"
 
 msgid "_37mm_Sprg.18t"
 msgstr "Sprgr 18 (t)"
+
+msgid "_37mm_Sprgr_34_D_T"
+msgstr "Sprgr 34 DT"
 
 msgid "_40mm_36_M_Pancelgranat"
 msgstr "AP 36M."
@@ -5216,6 +5407,18 @@ msgstr ""
 "5cm KwK 39\n"
 "L/60L1炮"
 
+msgid "_50mm_Kw_K_38_L_42_Ausf_E"
+msgstr "5cm KwK 38 L/42炮 E型"
+
+msgid "_50mm_Kw_K_38_L_42_Ausf_F"
+msgstr "5cm KwK 38 L/42炮 F型"
+
+msgid "_50mm_Kw_K_38_L_42_Ausf_J"
+msgstr "5cm KwK 38 L/42炮 J型"
+
+msgid "_50mm_Kw_K_39_L_60_Ausf_L"
+msgstr "5cm KwK 39 L/60炮 L型"
+
 msgid "_50mm_PaK_39_L60"
 msgstr "5cm PaK 38 L/60炮"
 
@@ -5225,8 +5428,44 @@ msgstr "Pzgr 39"
 msgid "_50mm_Pzgr40"
 msgstr "Pzgr 40"
 
+msgid "_50mm_Pzgr_39E"
+msgstr "Pzgr 39E"
+
+msgid "_50mm_Pzgr_39F"
+msgstr "Pzgr 39F"
+
+msgid "_50mm_Pzgr_39J"
+msgstr "Pzgr 39J"
+
+msgid "_50mm_Pzgr_39L"
+msgstr "Pzgr 39L"
+
+msgid "_50mm_Pzgr_40E"
+msgstr "Pzgr 40E"
+
+msgid "_50mm_Pzgr_40F"
+msgstr "Pzgr 40F"
+
+msgid "_50mm_Pzgr_40J"
+msgstr "Pzgr 40J"
+
+msgid "_50mm_Pzgr_40L"
+msgstr "Pzgr 40L"
+
 msgid "_50mm_Sprg.18"
 msgstr "Sprgr 18"
+
+msgid "_50mm_Sprgr_18E"
+msgstr "Sprgr 18E"
+
+msgid "_50mm_Sprgr_18F"
+msgstr "Sprgr 18F"
+
+msgid "_50mm_Sprgr_18J"
+msgstr "Sprgr 18J"
+
+msgid "_50mm_Sprgr_18L"
+msgstr "Sprgr 18L"
 
 msgid "_7.92mm_AP"
 msgstr "7.92×94mm弹"
@@ -5236,6 +5475,15 @@ msgstr "7.92×94mm弹(钨芯)"
 
 msgid "_7.92mm_Mauser_EW_141"
 msgstr "7.92mm 毛瑟 E.W.141机枪"
+
+msgid "_75_55_mm_Pzgr_41_H_K"
+msgstr "Pzgr 41 HK"
+
+msgid "_75_55_mm_Pzgr_41_W"
+msgstr "Pzgr 41 W"
+
+msgid "_75_55_mm_Waffe_0725_Ausf_A"
+msgstr "7.5/5.5cm 武器 0725 A型"
 
 msgid "_75mm_40_M_Kulonleges_Nemet_Pancelgranat"
 msgstr "40 (40W) M.KNP"
@@ -5262,9 +5510,7 @@ msgid "_75mm_KwK41_L58U_conic"
 msgstr "7.5/5.5cm 武器SP"
 
 msgid "_75mm_KwK41_L58_conic"
-msgstr ""
-"7.5cm KwK41\n"
-"L/58 锥膛炮"
+msgstr "7.5/5.5cm 武器 0725"
 
 msgid "_75mm_KwK45_L100"
 msgstr "7.5cm KwK L/100炮"
@@ -5326,6 +5572,17 @@ msgstr "7.5cm KwK L/70炮"
 msgid "_75mm_KwK_L70_A"
 msgstr "7.5cm KwK L/70炮"
 
+msgid "_75mm_Kw_K_40_L_43_T_3001"
+msgstr "7.5cm KwK 40 T炮(3001)"
+
+msgid "_75mm_Kw_K_40_L_48_Ausf_H"
+msgstr "7.5cm KwK 40炮 H型"
+
+msgid "_75mm_Kw_K_40_L_48_Typ_100"
+msgstr ""
+"7.5cm KwK 40\n"
+"L/48炮 100型"
+
 msgid "_75mm_PaK_39_L48"
 msgstr ""
 "7.5cm PaK 39\n"
@@ -5371,6 +5628,24 @@ msgstr "Pzgr 39 L"
 msgid "_75mm_Pzgr39_KW_Ir"
 msgstr "Pzgr Patr 39"
 
+msgid "_75mm_Pzgr_39_Ausf_H"
+msgstr "Pzgr 39 H型"
+
+msgid "_75mm_Pzgr_39_T_3001"
+msgstr "Pzgr 39 T 3001"
+
+msgid "_75mm_Pzgr_39_Typ_100"
+msgstr "Pzgr 39 100型"
+
+msgid "_75mm_Pzgr_40_Ausf_H"
+msgstr "Pzgr 40 H型"
+
+msgid "_75mm_Pzgr_40_T_3001"
+msgstr "Pzgr 40 T 3001"
+
+msgid "_75mm_Pzgr_40_Typ_100"
+msgstr "Pzgr 40 100型"
+
 msgid "_75mm_Sprg.18"
 msgstr "Sprgr 18"
 
@@ -5385,6 +5660,15 @@ msgstr "Sprgr 18 L"
 
 msgid "_75mm_Sprg.18_KW_Ir"
 msgstr "Sprgr Patr 18"
+
+msgid "_75mm_Sprgr_18_Ausf_H"
+msgstr "Sprgr 18 H型"
+
+msgid "_75mm_Sprgr_18_T_3001"
+msgstr "Sprgr 18 T 3001"
+
+msgid "_75mm_Sprgr_18_Typ_100"
+msgstr "Sprgr 18 100型"
 
 msgid "_75mm_StuK42_L70"
 msgstr ""
@@ -5467,9 +5751,7 @@ msgid "_88mm_KwK_43_L71D"
 msgstr "8.8cm KwK 43 L/71 (K)炮"
 
 msgid "_88mm_KwK_43_L71_N"
-msgstr ""
-"8.8cm KwK 43\n"
-"L/71炮 Vlt型"
+msgstr "8.8cm KwK 43 L/71炮 E型"
 
 msgid "_88mm_KwK_43_L71_N_MapsTraining_Player_HT_2"
 msgstr ""
@@ -5483,6 +5765,18 @@ msgstr ""
 
 msgid "_88mm_KwK_L100"
 msgstr "8.8cm KwK L/100炮"
+
+msgid "_88mm_Kw_K_36_L_56_Ausf_E"
+msgstr "8.8cm KwK 36 L/56炮 E型"
+
+msgid "_88mm_Kw_K_36_L_56_Typ_100"
+msgstr "8.8cm KwK 36 L/56炮 100型"
+
+msgid "_88mm_Kw_K_36_L_56_Typ_101"
+msgstr "8.8cm KwK 36 L/56炮 101型"
+
+msgid "_88mm_Kw_K_43_L_71_Typ_101"
+msgstr "8.8cm KwK 43 L/71炮 101型"
 
 msgid "_88mm_PaK_36_L56"
 msgstr ""
@@ -5512,7 +5806,7 @@ msgid "_88mm_Pzgr.40_43"
 msgstr "Pzgr 40/43"
 
 msgid "_88mm_Pzgr.40_43_n"
-msgstr "Pzgr 48"
+msgstr "Pzgr 40/43 E型"
 
 msgid "_88mm_Pzgr39"
 msgstr "Pzgr 39"
@@ -5533,7 +5827,7 @@ msgid "_88mm_Pzgr39_43D"
 msgstr "Pzgr 39/43K"
 
 msgid "_88mm_Pzgr39_43_n"
-msgstr "Pzgr v39/43"
+msgstr "Pzgr 39/43 E型"
 
 msgid "_88mm_Pzgr39_43_n_MapsTraining_Player_HT_2"
 msgstr "Pzgr v39/43"
@@ -5546,6 +5840,30 @@ msgstr "Pzgr 40/43K"
 
 msgid "_88mm_Pzgr_39_43A"
 msgstr "Pzgr 39/43A"
+
+msgid "_88mm_Pzgr_39_43_Typ_101"
+msgstr "Pzgr 39/43 101型"
+
+msgid "_88mm_Pzgr_39_Ausf_E"
+msgstr "Pzgr 39 E型"
+
+msgid "_88mm_Pzgr_39_Typ_100"
+msgstr "Pzgr 39 100型"
+
+msgid "_88mm_Pzgr_39_Typ_101"
+msgstr "Pzgr 39 101型"
+
+msgid "_88mm_Pzgr_40_43_Typ_101"
+msgstr "Pzgr 40/43 101型"
+
+msgid "_88mm_Pzgr_40_Ausf_E"
+msgstr "Pzgr 40 E型"
+
+msgid "_88mm_Pzgr_40_Typ_100"
+msgstr "Pzgr 40 100型"
+
+msgid "_88mm_Pzgr_40_Typ_101"
+msgstr "Pzgr 40 101型"
 
 msgid "_88mm_Sprg.18"
 msgstr "Sprgr 18"
@@ -5560,13 +5878,25 @@ msgid "_88mm_Sprg.43"
 msgstr "Sprgr 43"
 
 msgid "_88mm_Sprg.43_n"
-msgstr "Sprgr v43"
+msgstr "Sprgr 43 E型"
 
 msgid "_88mm_Sprg43D"
 msgstr "Sprgr 43K"
 
 msgid "_88mm_Sprgr.Flak_41"
 msgstr "Sprgr Flak 41"
+
+msgid "_88mm_Sprgr_18_Ausf_E"
+msgstr "Sprgr 18 E型"
+
+msgid "_88mm_Sprgr_18_Typ_100"
+msgstr "Sprgr 18 100型"
+
+msgid "_88mm_Sprgr_18_Typ_101"
+msgstr "Sprgr 18 101型"
+
+msgid "_88mm_Sprgr_43_Typ_101"
+msgstr "Sprgr 43 101型"
 
 msgid "_90_76mm_US_Kanone_M_32"
 msgstr "90mm US M32炮"

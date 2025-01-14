@@ -6,15 +6,12 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.vo.NotificationViewInitVO;
    import net.wg.infrastructure.base.SmartPopOverView;
    import net.wg.infrastructure.exceptions.AbstractException;
-   import net.wg.infrastructure.interfaces.IDAAPIModule;
    
    public class NotificationsListMeta extends SmartPopOverView
    {
        
       
       public var onClickAction:Function;
-      
-      public var registerGFNotification:Function;
       
       public var getMessageActualTime:Function;
       
@@ -57,12 +54,6 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.onClickAction,"onClickAction" + Errors.CANT_NULL);
          this.onClickAction(param1,param2,param3);
-      }
-      
-      public function registerGFNotificationS(param1:IDAAPIModule, param2:String, param3:String, param4:Boolean, param5:Object) : void
-      {
-         App.utils.asserter.assertNotNull(this.registerGFNotification,"registerGFNotification" + Errors.CANT_NULL);
-         this.registerGFNotification(param1,param2,param3,param4,param5);
       }
       
       public function getMessageActualTimeS(param1:Number) : String

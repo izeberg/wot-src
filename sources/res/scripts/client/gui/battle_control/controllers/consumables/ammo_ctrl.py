@@ -889,6 +889,8 @@ class AmmoController(MethodsRules, ViewComponentsController):
                                                                                                        0))[1]
         if self.__gunSettings.isDualGun:
             readyToQuickChange &= self.__dualGunQuickChangeReady
+        if self.__gunSettings.isTwinGun():
+            readyToQuickChange &= self.getShellsQuantityLeft() > 1
         return self.__quickChangerActive and readyToQuickChange and canChange and self.__shellChangeTime > 0
 
     def updateVehicleQuickShellChanger(self, isActive):

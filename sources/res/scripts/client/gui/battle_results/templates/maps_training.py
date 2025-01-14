@@ -1,13 +1,10 @@
 from gui.battle_results.components import base, maps_training
-_MAPS_TRAINING_VO_META = base.DictMeta({'result': {}, 'goal': {}, 'duration': 0, 
+_MAPS_TRAINING_VO_META = base.DictMeta({'goal': {}, 'duration': 0, 
    'stats': [], 'geometryId': 0, 
    'team': 0, 
    'vehicle': {}, 'doneValue': -1, 
    'wasDone': False, 
    'scenarioProgress': [], 'rewards': [], 'accountProgress': {}})
-_MAPS_TRAINING_RESULT_VO_META = base.DictMeta({'str': '', 
-   'value': '', 
-   'win': False})
 _MAPS_TRAINING_BATTLE_GOAL_VO_META = base.DictMeta({'heavyTank': [
                0, 0], 
    'mediumTank': [
@@ -22,7 +19,6 @@ _MAPS_TRAINING_VEHICLE_VO_META = base.DictMeta({'type': '',
    'name': ''})
 _MAPS_TRAINING_ACC_PROGRESS_VO_META = base.DictMeta({'hasImproved': False})
 _components = (
- maps_training.BattleResultBlock(_MAPS_TRAINING_RESULT_VO_META, 'result'),
  maps_training.BattleGoalsBlock(_MAPS_TRAINING_BATTLE_GOAL_VO_META, 'goal'),
  maps_training.BattleDurationItem('duration'),
  maps_training.StatsBlock(base.ListMeta(), 'stats'),

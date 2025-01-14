@@ -135,8 +135,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleloading.BattleLoading;
    import net.wg.gui.battle.battleloading.BattleLoadingForm;
    import net.wg.gui.battle.battleloading.BattleLoadingHelper;
-   import net.wg.gui.battle.battleloading.SimpleBattleLoading;
-   import net.wg.gui.battle.battleloading.SimpleBattleLoadingForm;
    import net.wg.gui.battle.battleloading.constants.PlayerStatus;
    import net.wg.gui.battle.battleloading.constants.VehicleStatus;
    import net.wg.gui.battle.battleloading.constants.VehicleStatusSchemes;
@@ -1195,10 +1193,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_BATTLELOADING_BATTLELOADINGFORM:Class = BattleLoadingForm;
       
       public static const NET_WG_GUI_BATTLE_BATTLELOADING_BATTLELOADINGHELPER:Class = BattleLoadingHelper;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLELOADING_SIMPLEBATTLELOADING:Class = SimpleBattleLoading;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLELOADING_SIMPLEBATTLELOADINGFORM:Class = SimpleBattleLoadingForm;
       
       public static const NET_WG_GUI_BATTLE_BATTLELOADING_CONSTANTS_PLAYERSTATUS:Class = PlayerStatus;
       

@@ -4583,7 +4583,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -4620,7 +4620,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -4662,7 +4662,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -4841,7 +4841,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -4878,7 +4878,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -4920,7 +4920,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -5465,7 +5465,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -5502,7 +5502,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -5544,7 +5544,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -5697,7 +5697,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					True
+					False
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -5734,7 +5734,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					True
+					False
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -5776,7 +5776,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					True
+					False
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -6351,6 +6351,122 @@
 					gold
 					<name>highlight</name>
 					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>comp7_4_2_master</name>
+			<type>dict</type>
+			<value>
+				<item>
+					173
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					4.25
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					14
+					<name>group</name>
+					<type>int</type>
+				</item>
+				<item>
+					1
+					<name>class</name>
+					<type>int</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					True
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>comp7_4_2_elite</name>
+			<type>dict</type>
+			<value>
+				<item>
+					174
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					4.25
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					14
+					<name>group</name>
+					<type>int</type>
+				</item>
+				<item>
+					1
+					<name>class</name>
+					<type>int</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					True
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>comp7_4_2_elite_suffix</name>
+			<type>dict</type>
+			<value>
+				<item>
+					175
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					1.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					19
+					<name>group</name>
+					<type>int</type>
+				</item>
+				<item>
+					3
+					<name>class</name>
+					<type>int</type>
+				</item>
+				<item>
+					2
+					<name>layout</name>
+					<type>int</type>
+				</item>
+				<item>
+					1
+					<name>type</name>
+					<type>int</type>
 				</item>
 				<item>
 					True

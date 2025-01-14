@@ -481,7 +481,7 @@ msgid "detailedView/tooltips/retryBtn/header"
 msgstr "完美完成"
 
 msgid "detailedView/tooltips/returnAwardListBtn/body"
-msgstr "点击完成主要和次要条件。如果您完美完成任务，就能重新取回自己的通行令。"
+msgstr "点击完成主要和次要条件。如果您完美完成任务，即可取回通行令。"
 
 msgid "detailedView/tooltips/returnAwardListBtn/header"
 msgstr "取回通行令"
@@ -838,22 +838,22 @@ msgid "useAwardSheetWindow/cancelBtn"
 msgstr "取消"
 
 msgid "useAwardSheetWindow/info"
-msgstr "完美完成任务并取回通行令。"
+msgstr "完美完成任务即可取回通行令。"
 
 msgid "useAwardSheetWindow/locked"
-msgstr "完成系列中的所有任务并取回通行令。"
+msgstr "完成系列中的所有任务即可取回通行令。"
 
 msgid "useAwardSheetWindow/needAmount"
-msgstr "通行令:"
+msgstr "所需通行令:"
 
 msgid "useAwardSheetWindow/pm2/noVehicle"
-msgstr "检索订单所需的车辆: %(vehicleClass)s."
+msgstr "取回通行令所需的坦克: %(vehicleClass)s。"
 
 msgid "useAwardSheetWindow/regular/noVehicle"
-msgstr "检索订单所需的车辆: %(vehicleClass)s."
+msgstr "取回通行令所需的坦克: %(vehicleClass)s。"
 
 msgid "useAwardSheetWindow/sheetsTotal"
-msgstr "总计:"
+msgstr "可用总数:"
 
 msgid "useAwardSheetWindow/submitBtn"
 msgstr "完成"

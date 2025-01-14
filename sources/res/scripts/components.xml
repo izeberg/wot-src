@@ -29,13 +29,13 @@
 		<BattleHintsComponent/>
 		<Fire/>
 		<RocketAccelerationController/>
-		<RocketAccelerationDisabler/>
 		<KillCamDataComponent/>
 		<AutoShootGunController/>
 		<TwinGunController/>
 		<RocketAcceleration/>
 		<VisualScriptEquipment/>
 		<VisualScriptCache/>
+		<VisualScriptOverrides/>
 		<VisualScriptEquipmentPublic/>
 		<VisualScriptPlan/>
 		<VehicleCircle/>

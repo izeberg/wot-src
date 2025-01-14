@@ -1,17 +1,5 @@
-from enum import Enum
+from gui.impl.gen.view_models.views.lobby.comp7.enums import SeasonName, SeasonPointState
 from frameworks.wulf import ViewModel
-
-class SeasonPointState(Enum):
-    ACHIEVED = 'achieved'
-    POSSIBLE = 'possible'
-    NOTACHIEVED = 'notAchieved'
-
-
-class SeasonName(Enum):
-    FIRST = 'first'
-    SECOND = 'second'
-    THIRD = 'third'
-
 
 class SeasonPointModel(ViewModel):
     __slots__ = ()

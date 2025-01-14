@@ -1,14 +1,5 @@
-from enum import IntEnum
+from gui.impl.gen.view_models.views.lobby.comp7.enums import Rank
 from frameworks.wulf import ViewModel
-
-class Rank(IntEnum):
-    FIRST = 6
-    SECOND = 5
-    THIRD = 4
-    FOURTH = 3
-    FIFTH = 2
-    SIXTH = 1
-
 
 class TableRecordModel(ViewModel):
     __slots__ = ()
