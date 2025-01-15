@@ -17,7 +17,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const PARAM_RENDERERS_GAP_SMALL:int = 20;
       
-      private static const PARAM_RENDERED_WIDTH:int = 110;
+      private static const PARAM_RENDERED_WIDTH:int = 120;
       
       private static const STYLE_INFO_TEXT_OFFSET_Y:int = 36;
       

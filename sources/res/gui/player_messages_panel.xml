@@ -482,7 +482,23 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_SELF_SUICIDE_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_SELF_SUICIDE)</item>
+				<item>self</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_SELF_ALLY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_SELF_ALLY)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_SELF_ALLY_ARTILLERY_DEATH_ZONE_AOE</name>
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_SELF_ALLY)</item>
@@ -498,7 +514,23 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_SELF_ENEMY_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_SELF_ENEMY)</item>
+				<item>self</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE_ARTILLERY_DEATH_ZONE_AOE</name>
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE)</item>
@@ -538,7 +570,23 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ALLY_SELF_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_SELF)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_ALLY_ALLY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_ALLY)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ALLY_ALLY_ARTILLERY_DEATH_ZONE_AOE</name>
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_ALLY)</item>
@@ -554,7 +602,23 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ALLY_ENEMY_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_ENEMY)</item>
+				<item>green</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE)</item>
+				<item>green</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE_ARTILLERY_DEATH_ZONE_AOE</name>
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE)</item>
@@ -570,7 +634,23 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ENEMY_SELF_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_ENEMY_ALLY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_ALLY)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ENEMY_ALLY_ARTILLERY_DEATH_ZONE_AOE</name>
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_ALLY)</item>
@@ -586,6 +666,14 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ENEMY_ENEMY_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_ENEMY)</item>
+				<item>green</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_UNKNOWN_ALLY</name>
 			<type>list</type>
 			<value>
@@ -594,7 +682,23 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_FROM_DEATH_ZONE_UNKNOWN_ALLY_ARTILLERY_DEATH_ZONE_AOE</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
 			<name>DEATH_FROM_DEATH_ZONE_UNKNOWN_ENEMY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE)</item>
+				<item>green</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_UNKNOWN_ENEMY_ARTILLERY_DEATH_ZONE_AOE</name>
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SUICIDE)</item>
@@ -1230,6 +1334,54 @@
 			<type>list</type>
 			<value>
 				<item>_(#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_ENEMY_ARTILLERY)</item>
+				<item>green</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_SELF_SUICIDE_BOMBER</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:postmortem_messages/DEATH_FROM_SHOT_BOMBER)</item>
+				<item>self</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_SELF_SUICIDE_ARTILLERY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:postmortem_messages/DEATH_FROM_SHOT_ARTILLERY)</item>
+				<item>self</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_UNKNOWN_ALLY_BOMBER</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE_BOMBER)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_UNKNOWN_ALLY_ARTILLERY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE_ARTILLERY)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_UNKNOWN_ENEMY_BOMBER</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_SUICIDE_BOMBER)</item>
+				<item>green</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_SHOT_UNKNOWN_ENEMY_ARTILLERY</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_SUICIDE_ARTILLERY)</item>
 				<item>green</item>
 			</value>
 		</message>

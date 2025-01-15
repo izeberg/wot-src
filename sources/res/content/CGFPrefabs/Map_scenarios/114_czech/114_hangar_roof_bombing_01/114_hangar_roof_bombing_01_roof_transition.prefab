@@ -267,6 +267,26 @@
 			<UUID>b4c4b6da-3478-43da-808d-85e0cdf70545</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>114_hangar_roof_bombing_01_debris_temporary_collider</name>
+			<UUID>9eb91658-0a7d-3dd7-9176-5209af6bd895</UUID>
+			<flags>10</flags>
+		</GameObject>
+		<GameObject>
+			<name>114_hangar_roof_bombing_01_debris_temporary_collider_01</name>
+			<UUID>b6b9d6ac-8132-451c-be29-05945ba2bf33</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>114_hangar_roof_bombing_01_debris_temporary_collider_02</name>
+			<UUID>bf6e50b8-c2c9-360b-83b1-7d2647986d43</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>114_hangar_roof_bombing_01_debris_temporary_collider_03</name>
+			<UUID>299dc46f-ac5a-3e2d-bdd1-861a2db65328</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -789,6 +809,46 @@
 					<property>
 						<name>Parent</name>
 						<link>4b0669e3-9b02-4919-b3c4-edc9b902569f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9eb91658-0a7d-3dd7-9176-5209af6bd895</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4b0669e3-9b02-4919-b3c4-edc9b902569f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b6b9d6ac-8132-451c-be29-05945ba2bf33</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9eb91658-0a7d-3dd7-9176-5209af6bd895</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bf6e50b8-c2c9-360b-83b1-7d2647986d43</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9eb91658-0a7d-3dd7-9176-5209af6bd895</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>299dc46f-ac5a-3e2d-bdd1-861a2db65328</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9eb91658-0a7d-3dd7-9176-5209af6bd895</link>
 					</property>
 				</config>
 			</component>
@@ -1333,7 +1393,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							2.23517e-08 0.101075 -0.299353
+							2.51457e-08 0.101075 -0.299353
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2071,6 +2131,114 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9eb91658-0a7d-3dd7-9176-5209af6bd895</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.158768 -1.46385 -23.2733
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.7 0.7 0.7
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.0819288 2.52729 -0.0286787
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b6b9d6ac-8132-451c-be29-05945ba2bf33</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-7.22224 -0.320485 1.19048
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							5.10201 16.8594 8.35408
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.028532 2.13226 -0.111332
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bf6e50b8-c2c9-360b-83b1-7d2647986d43</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-11.5645 -2.76543 -16.4975
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							7.01225 16.8594 9.28586
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0774457 0.520324 -0.0429965
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>299dc46f-ac5a-3e2d-bdd1-861a2db65328</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-29.2004 -5.94166 -47.026
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							7.01225 16.8594 6.24814
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.028532 2.13226 -0.111332
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -10422,6 +10590,32 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>9eb91658-0a7d-3dd7-9176-5209af6bd895</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											3.65507
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											7.67161
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -10492,11 +10686,11 @@
 												<value>(( 23.1976,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 49.2399,       0), ( 1.29536,    -0.6,       0,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 23.1976,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 49.2399,       0), ( 1.29536,    -0.6,       0,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 23.1976,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 49.2399,       0), ( 1.29536,    -0.6,       0,       1))</value>
 											</property>
 										</object>
@@ -10517,11 +10711,11 @@
 												<value>(( 35.0927,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 17.7852,       0), ( 0.29348,    -0.6, 17.9435,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 35.0927,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 17.7852,       0), ( 0.29348,    -0.6, 17.9435,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 35.0927,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 17.7852,       0), ( 0.29348,    -0.6, 17.9435,       1))</value>
 											</property>
 										</object>
@@ -10542,11 +10736,11 @@
 												<value>(( 10.8946,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 7.83139,       0), ( 22.7854,    -0.6, 18.8373,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 10.8946,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 7.83139,       0), ( 22.7854,    -0.6, 18.8373,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 10.8946,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 7.83139,       0), ( 22.7854,    -0.6, 18.8373,       1))</value>
 											</property>
 										</object>
@@ -10567,11 +10761,11 @@
 												<value>(( 40.9925,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 14.1135,       0), ( 4.59637,    -0.6,-16.6207,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 40.9925,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 14.1135,       0), ( 4.59637,    -0.6,-16.6207,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 40.9925,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 14.1135,       0), ( 4.59637,    -0.6,-16.6207,       1))</value>
 											</property>
 										</object>
@@ -10592,11 +10786,11 @@
 												<value>(( 4.56469,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 20.2594,       0), ( 13.4437,-0.599998,-0.39842,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 4.56469,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 20.2594,       0), ( 13.4437,-0.599998,-0.39842,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 4.56469,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 20.2594,       0), ( 13.4437,-0.599998,-0.39842,       1))</value>
 											</property>
 										</object>
@@ -10617,11 +10811,11 @@
 												<value>(( 7.21525,-7.51202e-07, 7.08935,       0), (-1.09225e-06,       7,1.85339e-06,       0), (-3.01465,-1.28276e-06, 3.06819,       0), (-12.3757,-0.600002,-6.90742,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 7.21525,-7.51202e-07, 7.08935,       0), (-1.09225e-06,       7,1.85339e-06,       0), (-3.01465,-1.28276e-06, 3.06819,       0), (-12.3757,-0.600002,-6.90742,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 7.21525,-7.51202e-07, 7.08935,       0), (-1.09225e-06,       7,1.85339e-06,       0), (-3.01465,-1.28276e-06, 3.06819,       0), (-12.3757,-0.600002,-6.90742,       1))</value>
 											</property>
 										</object>
@@ -10642,11 +10836,11 @@
 												<value>(( 12.6387,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 2.74716,       0), (-0.907494,-0.600002,-25.7831,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 12.6387,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 2.74716,       0), (-0.907494,-0.600002,-25.7831,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 12.6387,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 2.74716,       0), (-0.907494,-0.600002,-25.7831,       1))</value>
 											</property>
 										</object>
@@ -10667,11 +10861,11 @@
 												<value>(( 5.67544,-3.62389e-06,-5.22364,       0), (2.78974e-06,       7,-1.82521e-06,       0), ( 12.5784,-1.44951e-06, 13.6663,       0), ( 19.1807,-0.600005, 10.9116,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 5.67544,-3.62389e-06,-5.22364,       0), (2.78974e-06,       7,-1.82521e-06,       0), ( 12.5784,-1.44951e-06, 13.6663,       0), ( 19.1807,-0.600005, 10.9116,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 5.67544,-3.62389e-06,-5.22364,       0), (2.78974e-06,       7,-1.82521e-06,       0), ( 12.5784,-1.44951e-06, 13.6663,       0), ( 19.1807,-0.600005, 10.9116,       1))</value>
 											</property>
 										</object>
@@ -10692,11 +10886,11 @@
 												<value>(( 2.78354,1.11808e-06,-2.54953,       0), (-3.13849e-06, 7.00001,-3.5676e-07,       0), ( 2.90004,1.46162e-06, 3.16623,       0), ( 29.1748,-0.599999, 19.5244,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 2.78354,1.11808e-06,-2.54953,       0), (-3.13849e-06, 7.00001,-3.5676e-07,       0), ( 2.90004,1.46162e-06, 3.16623,       0), ( 29.1748,-0.599999, 19.5244,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 2.78354,1.11808e-06,-2.54953,       0), (-3.13849e-06, 7.00001,-3.5676e-07,       0), ( 2.90004,1.46162e-06, 3.16623,       0), ( 29.1748,-0.599999, 19.5244,       1))</value>
 											</property>
 										</object>
@@ -10717,11 +10911,11 @@
 												<value>(( 1.84488,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 10.5368,       0), ( 25.5318,-0.600004,-16.6353,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 1.84488,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 10.5368,       0), ( 25.5318,-0.600004,-16.6353,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 1.84488,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 10.5368,       0), ( 25.5318,-0.600004,-16.6353,       1))</value>
 											</property>
 										</object>
@@ -10742,11 +10936,11 @@
 												<value>(( 3.49888,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 9.53934,       0), (-16.9533,-0.600002,-14.7139,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 3.49888,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 9.53934,       0), (-16.9533,-0.600002,-14.7139,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 3.49888,       0,       0,       0), (       0,       7,       0,       0), (       0,       0, 9.53934,       0), (-16.9533,-0.600002,-14.7139,       1))</value>
 											</property>
 										</object>
@@ -10767,11 +10961,11 @@
 												<value>((    3.32,       0,       0,       0), (       0, 7.00001,       0,       0), (       0,       0, 12.5906,       0), (-18.2062,-0.600004, 17.5973,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>((    3.32,       0,       0,       0), (       0, 7.00001,       0,       0), (       0,       0, 12.5906,       0), (-18.2062,-0.600004, 17.5973,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>((    3.32,       0,       0,       0), (       0, 7.00001,       0,       0), (       0,       0, 12.5906,       0), (-18.2062,-0.600004, 17.5973,       1))</value>
 											</property>
 										</object>
@@ -10805,6 +10999,138 @@
 											<property>
 												<name>Radius</name>
 												<value>60</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9eb91658-0a7d-3dd7-9176-5209af6bd895</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Environment/hd_env_UNI_014_Debris/normal/lod0/hd_env_UNI_014_Debris_14_1.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b6b9d6ac-8132-451c-be29-05945ba2bf33</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_01.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bf6e50b8-c2c9-360b-83b1-7d2647986d43</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_01.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>299dc46f-ac5a-3e2d-bdd1-861a2db65328</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_01.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -11007,6 +11333,62 @@
 					<property>
 						<name>cameraName</name>
 						<value>roof_bombing_01_scenario</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9eb91658-0a7d-3dd7-9176-5209af6bd895</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b6b9d6ac-8132-451c-be29-05945ba2bf33</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bf6e50b8-c2c9-360b-83b1-7d2647986d43</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>299dc46f-ac5a-3e2d-bdd1-861a2db65328</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
 					</property>
 				</config>
 			</component>
@@ -11524,6 +11906,66 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>9eb91658-0a7d-3dd7-9176-5209af6bd895</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_014_Debris/normal/lod0/hd_env_UNI_014_Debris_14_1.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b6b9d6ac-8132-451c-be29-05945ba2bf33</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bf6e50b8-c2c9-360b-83b1-7d2647986d43</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>299dc46f-ac5a-3e2d-bdd1-861a2db65328</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>GameObjectFollowerComponent</type>
@@ -11849,6 +12291,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -11870,6 +12344,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -11895,6 +12401,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -11916,6 +12454,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -11941,6 +12511,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -11962,6 +12564,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -11987,6 +12621,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -12009,6 +12675,38 @@
 					<property>
 						<name>oneTimeEffect</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

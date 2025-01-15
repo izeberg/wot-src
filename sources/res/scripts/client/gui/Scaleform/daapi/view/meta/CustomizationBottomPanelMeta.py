@@ -38,15 +38,6 @@ class CustomizationBottomPanelMeta(BaseDAAPIComponent):
     def showVehiclesSideBar(self):
         self._printOverrideError('showVehiclesSideBar')
 
-    def nyGoToLootboxes(self):
-        self._printOverrideError('nyGoToLootboxes')
-
-    def nyGoToChallenge(self):
-        self._printOverrideError('nyGoToChallenge')
-
-    def nyGoToBoardGame(self):
-        self._printOverrideError('nyGoToBoardGame')
-
     def as_showBillS(self):
         if self._isDAAPIInited():
             return self.flashObject.as_showBill()

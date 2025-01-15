@@ -74,16 +74,24 @@
 				0
 				<material>
 					<identifier>tank_equipment_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
 						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_equipment_AM.dds</Texture>
 					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap
@@ -97,14 +105,6 @@
 						normalMap
 						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_equipment_ANM.dds</Texture>
 					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-0.001392 0.136469 -2.232607</groupOrigin>
 			</primitiveGroup>
@@ -112,17 +112,9 @@
 				1
 				<material>
 					<identifier>tank_guns_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_guns_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_guns_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_guns_AM.dds</Texture>
@@ -130,6 +122,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_guns_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>1.753430 1.753430 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -140,8 +136,12 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>1.753420 1.753420 0.000000 0.000000</Vector4>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch01_Type59/_skins/Ch65_Type59_IC4_3DSt/Type59_IC4_3DSt_guns_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.070902 -2.047369</groupOrigin>
@@ -151,8 +151,8 @@
 	<constraints/>
 	<boundingBox>
 		<min>-0.236147 -0.199455 -0.172034</min>
-		<max>0.235140 0.389640 4.433486</max>
+		<max>0.235140 0.389641 4.433486</max>
 	</boundingBox>
-	<geometrySize>143470</geometrySize>
+	<geometrySize>143886</geometrySize>
 	<minUVDensity>0.017101</minUVDensity>
 </root>

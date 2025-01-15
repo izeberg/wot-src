@@ -1334,6 +1334,51 @@
 				<bank>cel_25_en/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>tankmen_bp1004_1</name>
+			<wwise_language>BPH4/BPH4_en_US_tankmen_1</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH4/BPH4_en_US_tankmen_1/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1004_2</name>
+			<wwise_language>BPH4/BPH4_en_US_tankmen_2</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH4/BPH4_en_US_tankmen_2/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1004_3</name>
+			<wwise_language>BPH4/BPH4_en_US_tankmen_3</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH4/BPH4_en_US_tankmen_3/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1004_4</name>
+			<wwise_language>BPH4/BPH4_en_US_tankmen_4</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH4/BPH4_en_US_tankmen_4/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1004_5</name>
+			<wwise_language>BPH4/BPH4_en_US_tankmen_5</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH4/BPH4_en_US_tankmen_5/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

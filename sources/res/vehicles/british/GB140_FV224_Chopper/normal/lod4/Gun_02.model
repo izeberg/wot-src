@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.684925 -0.288850 -0.206797</min>
+		<max>0.684925 0.258093 4.746611</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB140_FV224_Chopper/normal/lod4/Gun_02</nodefullVisual>
+</root>

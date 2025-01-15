@@ -195,8 +195,6 @@ package
       
       public static const SYSTEM_MESSAGES_WEEKLYREWARD_BODY:String = "#comp7:system_messages/weeklyReward/body";
       
-      public static const SYSTEM_MESSAGES_WEEKLYREWARD_TOKENS:String = "#comp7:system_messages/weeklyReward/tokens";
-      
       public static const SYSTEM_MESSAGES_SHOP_PURCHASE_ERROR:String = "#comp7:system_messages/shop/purchase/error";
       
       public static const SYSTEM_MESSAGES_SHOP_OFFER_NEWITEMS_TITLE:String = "#comp7:system_messages/shop/offer/newItems/title";
@@ -303,13 +301,15 @@ package
       
       public static const REWARDSSCREEN_BUTTONTOSHOP:String = "#comp7:rewardsScreen/buttonToShop";
       
+      public static const REWARDSSCREEN_BUTTONTOSELECTEDREWARDS:String = "#comp7:rewardsScreen/buttonToSelectedRewards";
+      
       public static const REWARDSSCREEN_NOTICE_TITLE:String = "#comp7:rewardsScreen/notice/title";
       
       public static const REWARDSSCREEN_NOTICE_SUBTITLE:String = "#comp7:rewardsScreen/notice/subTitle";
       
-      public static const YEARLYREWARDSSELECTIONSCREEN_DESCRIPTION:String = "#comp7:yearlyRewardsSelectionScreen/description";
+      public static const REWARDSSELECTIONSCREEN_DESCRIPTION:String = "#comp7:rewardsSelectionScreen/description";
       
-      public static const YEARLYREWARDSSELECTIONSCREEN_TITLE:String = "#comp7:yearlyRewardsSelectionScreen/title";
+      public static const REWARDSSELECTIONSCREEN_TITLE:String = "#comp7:rewardsSelectionScreen/title";
       
       public static const RANKINFO_CURRENT_FIFTH:String = "#comp7:rankInfo/current/fifth";
       
@@ -365,11 +365,9 @@ package
       
       public static const PURCHASE_ERROR_DESCRIPTION:String = "#comp7:purchase/error/description";
       
-      public static const WEEKLYQUESTS_RESETSTATUS_LASTWEEK:String = "#comp7:weeklyQuests/resetStatus/lastWeek";
+      public static const WEEKLYQUESTS_TOKENPROGRESS_HEADER:String = "#comp7:weeklyQuests/TokenProgress/header";
       
-      public static const WEEKLYQUESTS_RESETSTATUS_TIMER:String = "#comp7:weeklyQuests/resetStatus/timer";
-      
-      public static const WEEKLYQUESTS_RESETSTATUS_ENDED:String = "#comp7:weeklyQuests/resetStatus/ended";
+      public static const WEEKLYQUESTS_TOKENPROGRESS_SUBHEADER:String = "#comp7:weeklyQuests/TokenProgress/subheader";
       
       public static const WEEKLYQUESTS_CARD_PROGRESS_COUNTER:String = "#comp7:weeklyQuests/card/progress/counter";
       
@@ -387,9 +385,23 @@ package
       
       public static const WEEKLYQUESTS_CARD_STATUSLOCKEDTOOLTIP_BODY_LOCKEDBYNOXVEHICLES:String = "#comp7:weeklyQuests/card/statusLockedTooltip/body/lockedByNoXVehicles";
       
-      public static const WEEKLYQUESTS_TOKENPROGRESS_DESCRIPTION_NORMAL:String = "#comp7:weeklyQuests/tokenProgress/description/normal";
+      public static const WEEKLYQUESTS_COUNTDOWNSTATUS_ACTIVE:String = "#comp7:weeklyQuests/CountdownStatus/active";
       
-      public static const WEEKLYQUESTS_TOKENPROGRESS_DESCRIPTION_DONE:String = "#comp7:weeklyQuests/tokenProgress/description/done";
+      public static const WEEKLYQUESTS_COUNTDOWNSTATUS_DONE:String = "#comp7:weeklyQuests/CountdownStatus/done";
+      
+      public static const WEEKLYQUESTTOOLTIP_QUESTSPROGRES:String = "#comp7:weeklyQuestTooltip/questsProgres";
+      
+      public static const WEEKLYQUESTTOOLTIP_COUNTERQUESTS:String = "#comp7:weeklyQuestTooltip/counterQuests";
+      
+      public static const WEEKLYQUESTTOOLTIP_ADDITIONALREWARDS:String = "#comp7:weeklyQuestTooltip/additionalRewards";
+      
+      public static const WEEKLYQUESTTOOLTIP_COUNTDOWNSTATUS:String = "#comp7:weeklyQuestTooltip/countdownStatus";
+      
+      public static const WEEKLYQUESTTOOLTIP_TAKEREWARDS_HEADER:String = "#comp7:weeklyQuestTooltip/takeRewards/header";
+      
+      public static const WEEKLYQUESTTOOLTIP_TAKEREWARDS_TEXT:String = "#comp7:weeklyQuestTooltip/takeRewards/text";
+      
+      public static const YEARLYREWARDS_PREVIEW_BACKBUTTON:String = "#comp7:yearlyRewards/preview/backButton";
       
       public static const YEARLYREWARDS_PREVIEW_STYLE2D:String = "#comp7:yearlyRewards/preview/style2d";
       
@@ -839,6 +851,12 @@ package
       
       public static const ALERTMESSAGE_MODEOFFLINE:String = "#comp7:alertMessage/modeOffline";
       
+      public static const ALERTMESSAGE_PREANNOUNCE_FIRST:String = "#comp7:alertMessage/preannounce/first";
+      
+      public static const ALERTMESSAGE_PREANNOUNCE_SECOND:String = "#comp7:alertMessage/preannounce/second";
+      
+      public static const ALERTMESSAGE_PREANNOUNCE_THIRD:String = "#comp7:alertMessage/preannounce/third";
+      
       public static const BATTLEPAGE_STATUSNOTIFICATIONTIMERS_AOEINSPIRE_INSPIRING:String = "#comp7:battlePage/statusNotificationTimers/aoeInspire/inspiring";
       
       public static const BATTLEPAGE_STATUSNOTIFICATIONTIMERS_AOEINSPIRE_INSPIRED:String = "#comp7:battlePage/statusNotificationTimers/aoeInspire/inspired";
@@ -993,33 +1011,19 @@ package
       
       public static const BANNER_SEASON_THIRD:String = "#comp7:banner/season/third";
       
-      public static const BANNER_INFO_SEASONJUSTSTARTED:String = "#comp7:banner/info/seasonJustStarted";
-      
-      public static const BANNER_INFO_SEASONENDSOON:String = "#comp7:banner/info/seasonEndSoon";
-      
-      public static const BANNER_INFOSMALL_SEASONENDSOON:String = "#comp7:banner/infoSmall/seasonEndSoon";
-      
       public static const BANNER_INFO_SEASONEND_FIRST:String = "#comp7:banner/info/seasonEnd/first";
       
       public static const BANNER_INFO_SEASONEND_SECOND:String = "#comp7:banner/info/seasonEnd/second";
       
       public static const BANNER_INFO_SEASONEND_THIRD:String = "#comp7:banner/info/seasonEnd/third";
       
-      public static const BANNER_INFO_DISABLED:String = "#comp7:banner/info/disabled";
-      
       public static const BANNER_INFOSMALL_DISABLED:String = "#comp7:banner/infoSmall/disabled";
-      
-      public static const BANNER_SEASONDATE_SEASONNOTSTARTED:String = "#comp7:banner/seasonDate/seasonNotStarted";
       
       public static const BANNER_SEASONDATESMALL_SEASONNOTSTARTED:String = "#comp7:banner/seasonDateSmall/seasonNotStarted";
       
+      public static const BANNER_SEASONDATE_SEASONNOTSTARTED:String = "#comp7:banner/seasonDate/seasonNotStarted";
+      
       public static const BANNER_SEASONDATE_SEASONLASTS:String = "#comp7:banner/seasonDate/seasonLasts";
-      
-      public static const BANNER_SEASONDATESMALL_SEASONLASTS:String = "#comp7:banner/seasonDateSmall/seasonLasts";
-      
-      public static const BANNER_TIMELEFT_HOURS:String = "#comp7:banner/timeLeft/hours";
-      
-      public static const BANNER_TIMELEFT_MIN:String = "#comp7:banner/timeLeft/min";
       
       public static const BATTLECAROUSEL_NOFILTEREDVEHICLESMESSAGE:String = "#comp7:battleCarousel/noFilteredVehiclesMessage";
       
@@ -1031,7 +1035,7 @@ package
       
       public static const BATTLEPAGE_RULESBUTTONLABEL:String = "#comp7:battlePage/rulesButtonLabel";
       
-      public static const UNIT_MESSAGE_RATINGRESTRICTION:String = "#comp7:unit/message/ratingRestriction";
+      public static const UNIT_MESSAGE_RANKRANGERESTRICTION:String = "#comp7:unit/message/rankRangeRestriction";
       
       public static const UNIT_MESSAGE_MODEOFFLINE:String = "#comp7:unit/message/modeOffline";
       
@@ -1065,73 +1069,35 @@ package
       
       public static const WHATSNEWVIEW_INTRO_DESCRIPTION:String = "#comp7:whatsNewView/intro/description";
       
-      public static const WHATSNEWVIEW_SECTIONHEADING_SHOPUPDATES:String = "#comp7:whatsNewView/sectionHeading/shopUpdates";
+      public static const WHATSNEWVIEW_SECTIONHEADING_LEGENDRANK:String = "#comp7:whatsNewView/sectionHeading/legendRank";
       
-      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_SHOPUPDATES:String = "#comp7:whatsNewView/sectionDescription/shopUpdates";
+      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_LEGENDRANK:String = "#comp7:whatsNewView/sectionDescription/legendRank";
       
-      public static const WHATSNEWVIEW_SECTIONHEADING_RATINGUPDATE:String = "#comp7:whatsNewView/sectionHeading/ratingUpdate";
+      public static const WHATSNEWVIEW_SECTIONHEADING_ENEMY:String = "#comp7:whatsNewView/sectionHeading/enemy";
       
-      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_RATINGUPDATE:String = "#comp7:whatsNewView/sectionDescription/ratingUpdate";
+      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_ENEMY:String = "#comp7:whatsNewView/sectionDescription/enemy";
       
-      public static const WHATSNEWVIEW_SECTIONHEADING_ASSAULTTANKDESTROYER:String = "#comp7:whatsNewView/sectionHeading/assaultTankDestroyer";
+      public static const WHATSNEWVIEW_SECTIONHEADING_BONDSHOP:String = "#comp7:whatsNewView/sectionHeading/bondShop";
       
-      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_ASSAULTTANKDESTROYER:String = "#comp7:whatsNewView/sectionDescription/assaultTankDestroyer";
+      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_BONDSHOP:String = "#comp7:whatsNewView/sectionDescription/bondShop";
       
-      public static const WHATSNEWVIEW_SECTIONHEADING_RECONFLIGHT:String = "#comp7:whatsNewView/sectionHeading/reconFlight";
+      public static const WHATSNEWVIEW_SECTIONHEADING_PLATOONS:String = "#comp7:whatsNewView/sectionHeading/platoons";
       
-      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_RECONFLIGHT:String = "#comp7:whatsNewView/sectionDescription/reconFlight";
+      public static const WHATSNEWVIEW_SECTIONSUBTITLE_PLATOONS:String = "#comp7:whatsNewView/sectionSubtitle/platoons";
       
-      public static const WHATSNEWVIEW_SECTIONHEADING_TRAININGROOM:String = "#comp7:whatsNewView/sectionHeading/trainingRoom";
+      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_PLATOONS_2:String = "#comp7:whatsNewView/sectionDescription/platoons_2";
       
-      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_TRAININGROOM:String = "#comp7:whatsNewView/sectionDescription/trainingRoom";
-      
-      public static const WHATSNEWVIEW_SECTIONHEADING_TOURNAMENTS:String = "#comp7:whatsNewView/sectionHeading/tournaments";
-      
-      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_TOURNAMENTS:String = "#comp7:whatsNewView/sectionDescription/tournaments";
+      public static const WHATSNEWVIEW_SECTIONDESCRIPTION_PLATOONS_7:String = "#comp7:whatsNewView/sectionDescription/platoons_7";
       
       public static const WHATSNEWVIEW_MAPCHANGES_HEADING:String = "#comp7:whatsNewView/mapChanges/heading";
       
       public static const WHATSNEWVIEW_VEHICLESFORRENT_HEADING:String = "#comp7:whatsNewView/vehiclesForRent/heading";
       
-      public static const WHATSNEWVIEW_NEWVEHICLES_HEADING:String = "#comp7:whatsNewView/newVehicles/heading";
+      public static const WHATSNEWVIEW_ROLESKILLS_HEADING:String = "#comp7:whatsNewView/roleSkills/heading";
+      
+      public static const WHATSNEWVIEW_ROLESKILLS_DESCRIPTION:String = "#comp7:whatsNewView/roleSkills/description";
       
       public static const WHATSNEWVIEW_BUTTON_OK:String = "#comp7:whatsNewView/button/ok";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_HEADING:String = "#comp7:whatsNewView/modifiers/heading";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_RANDOM:String = "#comp7:whatsNewView/modifiers/random";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_PREVIOUSSEASON:String = "#comp7:whatsNewView/modifiers/previousSeason";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_CURRENTSEASON:String = "#comp7:whatsNewView/modifiers/currentSeason";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_DESCRIPTION:String = "#comp7:whatsNewView/modifiers/description";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_CHANGED:String = "#comp7:whatsNewView/modifiers/changed";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_ADDED:String = "#comp7:whatsNewView/modifiers/added";
-      
-      public static const MODIFIER_NAME_VEHICLEDURABILITY:String = "#comp7:modifier/name/vehicleDurability";
-      
-      public static const MODIFIER_NAME_TIMEREMAININGVISIBLE:String = "#comp7:modifier/name/timeRemainingVisible";
-      
-      public static const MODIFIER_NAME_RANGEOFPOTENTIALDAMAGE:String = "#comp7:modifier/name/rangeOfPotentialDamage";
-      
-      public static const MODIFIER_NAME_INNERMODULEDAMAGEREDUCTION:String = "#comp7:modifier/name/innerModuleDamageReduction";
-      
-      public static const MODIFIER_NAME_ENGINEFIRECHANCE:String = "#comp7:modifier/name/engineFireChance";
-      
-      public static const WHATSNEWVIEW_MODIFIERS_NA:String = "#comp7:whatsNewView/modifiers/NA";
-      
-      public static const MODIFIER_VALUETYPE_PERCENTAGE:String = "#comp7:modifier/valueType/percentage";
-      
-      public static const MODIFIER_VALUETYPE_SECONDS:String = "#comp7:modifier/valueType/seconds";
-      
-      public static const MODIFIER_VALUETYPE_DEVIATION:String = "#comp7:modifier/valueType/deviation";
-      
-      public static const MODIFIER_VALUETYPE_METERS:String = "#comp7:modifier/valueType/meters";
-      
-      public static const MODIFIER_VALUETYPE_HP:String = "#comp7:modifier/valueType/HP";
       
       public static const TOURNAMENTSWIDGET_HEADING:String = "#comp7:tournamentsWidget/heading";
       
@@ -1173,6 +1139,18 @@ package
       
       public static const CREWMEMBERSTOOLTIP_PERKS:String = "#comp7:crewMembersTooltip/perks";
       
+      public static const BANNERTOOLTIP_TITLE:String = "#comp7:bannerTooltip/title";
+      
+      public static const BANNERTOOLTIP_DESCRIPTION:String = "#comp7:bannerTooltip/description";
+      
+      public static const BANNERTOOLTIP_NOTSTARTED:String = "#comp7:bannerTooltip/notStarted";
+      
+      public static const BANNERTOOLTIP_NOTAVAILABLE:String = "#comp7:bannerTooltip/notAvailable";
+      
+      public static const BANNERTOOLTIP_END:String = "#comp7:bannerTooltip/end";
+      
+      public static const BANNERTOOLTIP_RANGE:String = "#comp7:bannerTooltip/range";
+      
       public static const GRANDTOURNAMENTWIDGET_COUNTDOWN:String = "#comp7:grandTournamentWidget/countdown";
       
       public static const GRANDTOURNAMENTWIDGET_COUNTDOWNSHORT:String = "#comp7:grandTournamentWidget/countdownShort";
@@ -1190,6 +1168,26 @@ package
       public static const GRANDTOURNAMENTWIDGET_COUNTER_MINUTES:String = "#comp7:grandTournamentWidget/counter/minutes";
       
       public static const GRANDTOURNAMENTWIDGET_COUNTER_LASTMINUTE:String = "#comp7:grandTournamentWidget/counter/lastMinute";
+      
+      public static const AWARDSWIDGET_TITLE:String = "#comp7:awardsWidget/title";
+      
+      public static const AWARDSWIDGET_DESCRIPTION_AWARD:String = "#comp7:awardsWidget/description/award";
+      
+      public static const AWARDSWIDGET_DESCRIPTION_AWARDDISABLED:String = "#comp7:awardsWidget/description/awardDisabled";
+      
+      public static const CLAIMREWARDS_REWARDSUNAVAILABLE:String = "#comp7:claimRewards/rewardsUnavailable";
+      
+      public static const CLAIMREWARDS_BUTTON:String = "#comp7:claimRewards/button";
+      
+      public static const RANKCOMPATIBILITYTOOLTIP_HEADING:String = "#comp7:rankCompatibilityTooltip/heading";
+      
+      public static const RANKCOMPATIBILITYTOOLTIP_DESCRIPTION:String = "#comp7:rankCompatibilityTooltip/description";
+      
+      public static const RANKCOMPATIBILITYTABLE_PLAYERSRANK:String = "#comp7:rankCompatibilityTable/playersRank";
+      
+      public static const RANKCOMPATIBILITYTABLE_TEAMMATESRANK:String = "#comp7:rankCompatibilityTable/teammatesRank";
+      
+      public static const COUNTDOWN_LASTMINUTE:String = "#comp7:countdown/lastMinute";
        
       
       public function COMP7()

@@ -39,13 +39,7 @@ package net.wg.gui.lobby.vehicleCustomization.events
       
       public static const SHOW_ATTACHMENTS_VIDEO:String = "BottomPanelEmptyVideo";
       
-      public static const EMPTY_STATE_ACTION:String = "BottomPanelAttachmentsPopover";
-      
-      public static const NY_GOTO_LOOTBOXES:String = "NYGoToLootboxes";
-      
-      public static const NY_GOTO_CHALLENGE:String = "NYGoToChallenge";
-      
-      public static const NY_GOTO_BOARDGAME:String = "NYGoToBoardGame";
+      public static const SHOW_VEHICLES_SIDEBAR:String = "BottomPanelAttachmentsPopover";
        
       
       private var _index:int = -1;

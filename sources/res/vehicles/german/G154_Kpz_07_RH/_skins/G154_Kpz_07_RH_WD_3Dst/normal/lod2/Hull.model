@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G154_Kpz_07_RH/_skins/G154_Kpz_07_RH_WD_3Dst/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.756016 -0.611116 -3.224068</min>
+		<max>1.697305 0.797841 3.228984</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G154_Kpz_07_RH/_skins/G154_Kpz_07_RH_WD_3Dst/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G174_Kpz3_GST_Turm/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/german/G174_Kpz3_GST_Turm/crash/lod2/Hull</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-1.983170 -1.142076 -3.629043</min>
+		<max>1.936040 1.480749 3.585872</max>
+	</visibilityBox>
+</root>

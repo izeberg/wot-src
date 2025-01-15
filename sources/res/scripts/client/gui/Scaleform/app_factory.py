@@ -246,8 +246,7 @@ class AS3_AppFactory(IAppFactory):
         libs = [
          'guiControlsLobbyBattleDynamic.swf',
          'guiControlsLobbyDynamic.swf', 'guiControlsLobbyDynamic2.swf',
-         'popovers.swf', 'iconLibrary.swf', 'ub_lootboxes.swf',
-         'animations/fadeWindow/fadeWindow.swf']
+         'popovers.swf', 'iconLibrary.swf']
         app.as_loadLibrariesS(libs)
         mainWindow = self.getMainWindow()
         g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY, parent=mainWindow)), EVENT_BUS_SCOPE.LOBBY)

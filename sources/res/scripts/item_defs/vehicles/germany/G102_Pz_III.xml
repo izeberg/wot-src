@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>6000</weight>
-		<maxHealth>340</maxHealth>
+		<maxHealth>344</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>100</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -2112,15 +2112,15 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<PzIIIketten_Ausf_A>
-			<userString>#germany_vehicles:PzIIIketten_Ausf_A</userString>
-			<shortUserString>#germany_vehicles:PzIIIketten_Ausf_A_short</shortUserString>
+		<Chassis_G102_Pz_III>
+			<userString>#germany_vehicles:Chassis_G102_Pz_III</userString>
+			<shortUserString>#germany_vehicles:Chassis_G102_Pz_III_short</shortUserString>
 			<tags/>
 			<level>2</level>
 			<price>660</price>
 			<unlocks>
 				<chassis>
-					PzIIIketten_Ausf_B
+					Chassis_G102_Pz_III_2
 					<cost>375</cost>
 				</chassis>
 			</unlocks>
@@ -2139,11 +2139,11 @@
 			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.32
+					0.28
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.32
+					0.28
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3832,10 +3832,10 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</PzIIIketten_Ausf_A>
-		<PzIIIketten_Ausf_B>
-			<userString>#germany_vehicles:PzIIIketten_Ausf_B</userString>
-			<shortUserString>#germany_vehicles:PzIIIketten_Ausf_B_short</shortUserString>
+		</Chassis_G102_Pz_III>
+		<Chassis_G102_Pz_III_2>
+			<userString>#germany_vehicles:Chassis_G102_Pz_III_2</userString>
+			<shortUserString>#germany_vehicles:Chassis_G102_Pz_III_2_short</shortUserString>
 			<tags/>
 			<level>3</level>
 			<price>2050</price>
@@ -3854,11 +3854,11 @@
 			<rotationSpeed>44</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.29
+					0.26
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.29
+					0.26
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -5547,917 +5547,15 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</PzIIIketten_Ausf_B>
+		</Chassis_G102_Pz_III_2>
 	</chassis>
 	<turrets0>
-		<PzIII_Ausf_A>
-			<userString>#germany_vehicles:PzIII_Ausf_A</userString>
-			<shortUserString>#germany_vehicles:PzIII_Ausf_A_short</shortUserString>
-			<tags/>
-			<level>2</level>
-			<price>720</price>
-			<armor>
-				<armor_1>16</armor_1>
-				<armor_2>16</armor_2>
-				<armor_3>
-					14.5
-					<!--BW_String-->
-				</armor_3>
-				<armor_4>
-					14.5
-					<!--BW_String-->
-				</armor_4>
-				<armor_5>10</armor_5>
-				<armor_6>10</armor_6>
-				<armor_7>
-					14.5
-					<!--BW_String-->
-				</armor_7>
-				<armor_8>0</armor_8>
-			</armor>
-			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-			<weight>800</weight>
-			<maxHealth>65</maxHealth>
-			<rotationSpeed>44</rotationSpeed>
-			<turretRotatorHealth>
-				<maxHealth>70</maxHealth>
-				<maxRegenHealth>35</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
-			</turretRotatorHealth>
-			<circularVisionRadius>320</circularVisionRadius>
-			<surveyingDeviceHealth>
-				<maxHealth>50</maxHealth>
-				<maxRegenHealth>25</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
-			</surveyingDeviceHealth>
-			<guns>
-				<_37mm_KwK_L46>
-					shared
-					<unlocks>
-						<turret>
-							PzIII_Ausf_C
-							<cost>400</cost>
-						</turret>
-					</unlocks>
-					<maxAmmo>360</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							14.5
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.43
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						2.3
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.3
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-						<afterShot>3</afterShot>
-					</shotDispersionFactors>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/german/G102_Pz_III/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/german/G102_Pz_III/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/german/G102_Pz_III/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/german/G102_Pz_III/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/german/G102_Pz_III/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_KwK_L46</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>-0.101257 0.008811 0.849412</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.097985 0.076088 0.146389</anchorPosition>
-							<anchorDirection>
-								-0 0.707429 0.706784
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.101257 0.008816 0.849415</anchorPosition>
-							<anchorDirection>
-								-0.000003 0.000001 1
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						-0.101196 0.006003 -0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.8 0.8 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							165.404 171.271
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_37mm_KwK_L46>
-			</guns>
-			<models>
-				<undamaged>vehicles/german/G102_Pz_III/normal/lod0/Turret_01.model</undamaged>
-				<destroyed>vehicles/german/G102_Pz_III/crash/lod0/Turret_01.model</destroyed>
-				<exploded>vehicles/german/G102_Pz_III/crash/lod0/Turret_01.model</exploded>
-			</models>
-			<hitTester>
-				<collisionModelServer>vehicles/german/G102_Pz_III/collision/Turret_01.model</collisionModelServer>
-				<collisionModelClient>vehicles/german/G102_Pz_III/collision_client/Turret_01.model</collisionModelClient>
-			</hitTester>
-			<gunPosition>
-				-0.000000 0.26 0.747777
-				<!--BW_String-->
-			</gunPosition>
-			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
-			<physicsShape>
-				1 0.01 1.01 0 0.56 0.195 1 0.505 0.07 0.5 0.37 0.5 0.155 0.72 0.37
-				<!--BW_String-->
-			</physicsShape>
-			<customizationSlots>
-				<slot>
-					<slotType>paint</slotType>
-					<slotId>31000</slotId>
-					<anchorPosition>
-						0 0.566276 0
-						<!--BW_String-->
-					</anchorPosition>
-					<anchorDirection>0 1 0</anchorDirection>
-				</slot>
-				<slot>
-					<slotType>camouflage</slotType>
-					<slotId>32000</slotId>
-					<anchorPosition>
-						0 0.566276 0
-						<!--BW_String-->
-					</anchorPosition>
-					<anchorDirection>0 1 0</anchorDirection>
-				</slot>
-				<slot>
-					<slotType>player</slotType>
-					<slotId>33000</slotId>
-					<rayStart>-0.886436 0.327321 0.527295</rayStart>
-					<rayEnd>-0.615652 0.198869 0.514046</rayEnd>
-					<rayUp>0 1 0</rayUp>
-					<size>
-						0.25
-						<!--BW_String-->
-					</size>
-				</slot>
-				<slot>
-					<slotType>player</slotType>
-					<slotId>33001</slotId>
-					<isMirrored>true</isMirrored>
-					<rayStart>0.886436 0.327321 0.527295</rayStart>
-					<rayEnd>0.615652 0.198869 0.514046</rayEnd>
-					<rayUp>0 1 0</rayUp>
-					<size>
-						0.25
-						<!--BW_String-->
-					</size>
-					<hideIfDamaged>true</hideIfDamaged>
-				</slot>
-				<slot>
-					<slotType>inscription</slotType>
-					<slotId>34000</slotId>
-					<rayStart>
-						-0.008175 0.230586 -1.03394
-						<!--BW_String-->
-					</rayStart>
-					<rayEnd>0.003646 0.146257 -0.852973</rayEnd>
-					<rayUp>0 1 0</rayUp>
-					<size>
-						0.591
-						<!--BW_String-->
-					</size>
-					<hideIfDamaged>true</hideIfDamaged>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35000</slotId>
-					<tags>formfactor_square</tags>
-					<position>
-						0.001308 2.06059 0.501756
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.077087 -0.000004 3.14158
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.2382 0.190113 1.2382
-						<!--BW_String-->
-					</scale>
-					<showOn>4352</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<verticalMirror>true</verticalMirror>
-					<anchorShift>0.104507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35001</slotId>
-					<tags>formfactor_rect1x2</tags>
-					<position>
-						0.001308 2.05384 0.589119
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.077087 -0.000004 3.14158
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.30173 0.199868 1.30174
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<anchorShift>0.104509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35002</slotId>
-					<tags>formfactor_rect1x3</tags>
-					<position>
-						0.001308 2.05384 0.589118
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.077087 -0.000004 3.14158
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.30173 0.199868 1.30174
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<anchorShift>0.104507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35003</slotId>
-					<tags>formfactor_rect1x4</tags>
-					<position>
-						0.001308 2.05384 0.589118
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.077087 -0.000004 3.14158
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.30173 0.199868 1.30174
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<anchorShift>0.104507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35004</slotId>
-					<tags>formfactor_square</tags>
-					<position>
-						0.001315 2.39879 -0.333566
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.077087 -0.000004 3.14158
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						0.654079 0.2 0.654081
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.599989</clipAngle>
-					<verticalMirror>true</verticalMirror>
-					<anchorShift>0.104507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35005</slotId>
-					<tags>formfactor_square</tags>
-					<position>
-						-0.000215 1.98161 -0.612754
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.74291 -0.002997 -0.00304
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						0.804145 0.45226 0.804144
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.786723</clipAngle>
-					<anchorShift>0.084508</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35006</slotId>
-					<tags>formfactor_rect1x2</tags>
-					<position>
-						-0.000171 1.89679 -0.627498
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.74291 -0.002997 -0.00304
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.06504 0.598991 1.06504
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.786723</clipAngle>
-					<anchorShift>0.084508</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35007</slotId>
-					<tags>formfactor_rect1x3</tags>
-					<position>
-						-0.000171 1.89678 -0.627498
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.74291 -0.002997 -0.00304
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.10741 0.62282 1.10741
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.786723</clipAngle>
-					<anchorShift>
-						0.08451
-						<!--BW_String-->
-					</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35008</slotId>
-					<tags>formfactor_rect1x4</tags>
-					<position>
-						-0.000171 1.89678 -0.627498
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.74291 -0.002997 -0.00304
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.14903 0.646228 1.14903
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.786723</clipAngle>
-					<anchorShift>0.084509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35009</slotId>
-					<tags>formfactor_rect1x6</tags>
-					<position>
-						-0.000171 1.89678 -0.627497
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.74291 -0.002997 -0.00304
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.19107 0.669871 1.19107
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.786723</clipAngle>
-					<anchorShift>
-						0.08451
-						<!--BW_String-->
-					</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35010</slotId>
-					<tags>formfactor_square direction_right_to_left</tags>
-					<position>
-						-0.808138 1.89974 0.208924
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.98858 1.52932 -0.047934
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						0.650497 0.31134 0.650497
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35011</slotId>
-					<tags>formfactor_square direction_right_to_left</tags>
-					<position>
-						-0.809277 1.88682 0.630876
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.15511 -1.53392 3.06029
-						<!--BW_String-->
-					</rotation>
-					<scale>0.573236 0.274362 0.573236</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35012</slotId>
-					<tags>formfactor_square direction_right_to_left</tags>
-					<position>
-						-0.795107 1.93003 -0.128148
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.97998 1.37768 0.070454
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						0.650497 0.31134 0.650496
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>-0.056701</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35013</slotId>
-					<tags>formfactor_rect1x2 direction_right_to_left</tags>
-					<position>
-						-0.810236 1.88288 0.208601
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69614 1.4182 -0.156143
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.10182 0.527351 1.10182
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35014</slotId>
-					<tags>formfactor_rect1x2 direction_right_to_left</tags>
-					<position>
-						-0.813048 1.86089 0.63044
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.71615 1.456 -0.228401
-						<!--BW_String-->
-					</rotation>
-					<scale>0.816918 0.390992 0.816917</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.014507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35015</slotId>
-					<tags>formfactor_rect1x3 direction_right_to_left</tags>
-					<position>
-						-0.812764 1.85944 0.290419
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69614 1.41819 -0.156143
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.34736 0.64487 1.34735
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>
-						1.03307
-						<!--BW_String-->
-					</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35016</slotId>
-					<tags>formfactor_rect1x4 direction_right_to_left</tags>
-					<position>
-						-0.810804 1.87336 0.338251
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69614 1.41819 -0.156143
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.43476 0.686703 1.43476
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>
-						1.03307
-						<!--BW_String-->
-					</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35017</slotId>
-					<tags>formfactor_rect1x6 direction_right_to_left</tags>
-					<position>
-						-0.810803 1.87336 0.338251
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69615 1.41819 -0.156142
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.48781 0.712092 1.48781
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>
-						1.03307
-						<!--BW_String-->
-					</clipAngle>
-					<anchorShift>
-						0.02451
-						<!--BW_String-->
-					</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35018</slotId>
-					<tags>formfactor_square direction_left_to_right</tags>
-					<position>
-						0.808166 1.89972 0.208929
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.98855 -1.52926 0.047997
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						0.650498 0.31134 0.650497
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35019</slotId>
-					<tags>formfactor_square direction_left_to_right</tags>
-					<position>
-						0.809303 1.8868 0.63088
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.15514 1.53397 -3.06026
-						<!--BW_String-->
-					</rotation>
-					<scale>0.573235 0.274361 0.573235</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35020</slotId>
-					<tags>formfactor_square direction_left_to_right</tags>
-					<position>
-						0.795138 1.93 -0.128143
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.97996 -1.37759 -0.070507
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						0.650497 0.31134 0.650496
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>-0.068191</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35021</slotId>
-					<tags>formfactor_rect1x2 direction_left_to_right</tags>
-					<position>
-						0.810264 1.88286 0.208606
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69612 -1.41825 0.156221
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.10182 0.52735 1.10182
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35022</slotId>
-					<tags>formfactor_rect1x2 direction_left_to_right</tags>
-					<position>
-						0.813072 1.86086 0.630444
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.71612 -1.45595 0.228472
-						<!--BW_String-->
-					</rotation>
-					<scale>0.816917 0.390992 0.816916</scale>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.014509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35023</slotId>
-					<tags>formfactor_rect1x3 direction_left_to_right</tags>
-					<position>
-						0.81279 1.85942 0.290423
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69612 -1.41824 0.156221
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.34736 0.64487 1.34735
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>
-						1.03307
-						<!--BW_String-->
-					</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35024</slotId>
-					<tags>formfactor_rect1x4 direction_left_to_right</tags>
-					<position>
-						0.81083 1.87334 0.338255
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69613 -1.41824 0.15622
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.43476 0.686703 1.43476
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>
-						1.03307
-						<!--BW_String-->
-					</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35025</slotId>
-					<tags>formfactor_rect1x6 direction_left_to_right</tags>
-					<position>
-						0.81083 1.87334 0.338255
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.69612 -1.41824 0.156221
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.48781 0.712092 1.4878
-						<!--BW_String-->
-					</scale>
-					<showOn>256</showOn>
-					<clipAngle>
-						1.03307
-						<!--BW_String-->
-					</clipAngle>
-					<anchorShift>0.024509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35026</slotId>
-					<tags>formfactor_rect1x2 direction_right_to_left</tags>
-					<position>
-						0.001215 2.05685 0.549866
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.008171 -1.56905 3.06494
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.19106 0.182876 1.19107
-						<!--BW_String-->
-					</scale>
-					<showOn>4352</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<verticalMirror>true</verticalMirror>
-					<anchorShift>0.104511</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35027</slotId>
-					<tags>formfactor_rect1x3 direction_right_to_left</tags>
-					<position>
-						0.001215 2.05685 0.549866
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.008171 -1.56905 3.06494
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.19106 0.182876 1.19107
-						<!--BW_String-->
-					</scale>
-					<showOn>4352</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<verticalMirror>true</verticalMirror>
-					<anchorShift>0.104509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35028</slotId>
-					<tags>formfactor_rect1x4 direction_right_to_left</tags>
-					<position>
-						0.001215 2.05685 0.549866
-						<!--BW_String-->
-					</position>
-					<rotation>
-						0.008171 -1.56905 3.06494
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.19106 0.182876 1.19107
-						<!--BW_String-->
-					</scale>
-					<showOn>4352</showOn>
-					<clipAngle>0.793358</clipAngle>
-					<verticalMirror>true</verticalMirror>
-					<anchorShift>0.104509</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35029</slotId>
-					<tags>formfactor_rect1x2 mimic left direction_right_to_left</tags>
-					<position>
-						-0.813561 1.88752 0.208344
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.99064 1.46424 -0.069885
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.28713 0.616046 1.28713
-						<!--BW_String-->
-					</scale>
-					<hiddenForUser>true</hiddenForUser>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024507</anchorShift>
-				</slot>
-				<slot>
-					<slotType>projectionDecal</slotType>
-					<slotId>35030</slotId>
-					<tags>formfactor_rect1x2 mimic right direction_left_to_right</tags>
-					<position>
-						0.813589 1.8875 0.208348
-						<!--BW_String-->
-					</position>
-					<rotation>
-						1.99061 -1.46416 0.069816
-						<!--BW_String-->
-					</rotation>
-					<scale>
-						1.28713 0.616046 1.28713
-						<!--BW_String-->
-					</scale>
-					<hiddenForUser>true</hiddenForUser>
-					<showOn>256</showOn>
-					<clipAngle>0.982741</clipAngle>
-					<anchorShift>0.024507</anchorShift>
-				</slot>
-			</customizationSlots>
-			<customization>
-				<customizableVehicleAreas>
-					<paint>TURRET</paint>
-					<camouflage>TURRET</camouflage>
-				</customizableVehicleAreas>
-			</customization>
-			<camouflage>
-				<tiling>
-					1.2 0.6 0.000000 0.000000
-					<!--BW_String-->
-				</tiling>
-				<density>
-					95.3743 94.9777
-					<!--BW_String-->
-				</density>
-				<aoTextureSize>512 256</aoTextureSize>
-			</camouflage>
-		</PzIII_Ausf_A>
-		<PzIII_Ausf_C>
-			<userString>#germany_vehicles:PzIII_Ausf_C</userString>
-			<shortUserString>#germany_vehicles:PzIII_Ausf_C_short</shortUserString>
+		<Turret_2_G102_Pz_III>
+			<userString>#germany_vehicles:Turret_2_G102_Pz_III</userString>
+			<shortUserString>#germany_vehicles:Turret_2_G102_Pz_III_short</shortUserString>
 			<tags/>
 			<level>3</level>
 			<price>2000</price>
-			<unlocks>
-				<gun>
-					_50mm_KwK_38_L42
-					<cost>500</cost>
-				</gun>
-			</unlocks>
 			<armor>
 				<armor_1>30</armor_1>
 				<armor_2>30</armor_2>
@@ -6472,7 +5570,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2200</weight>
-			<maxHealth>85</maxHealth>
+			<maxHealth>86</maxHealth>
 			<rotationSpeed>35</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -6492,119 +5590,14 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_37mm_KwK_L46>
-					shared
-					<maxAmmo>360</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<armor>
-						<armor_1>
-							30
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.42
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						2.3
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.3
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/german/G102_Pz_III/normal/lod0/Gun_04.model</undamaged>
-						<destroyed>vehicles/german/G102_Pz_III/crash/lod0/Gun_04.model</destroyed>
-						<exploded>vehicles/german/G102_Pz_III/crash/lod0/Gun_04.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/german/G102_Pz_III/collision/Gun_04.model</collisionModelServer>
-						<collisionModelClient>vehicles/german/G102_Pz_III/collision_client/Gun_04.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_KwK_L46</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>-0.098675 0.009093 0.870372</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.097918 0.089882 0.170183</anchorPosition>
-							<anchorDirection>
-								-0 0.707477 0.706737
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.098675 0.009089 0.870373</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						-0.098893 0.011412 -0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.8 0.8 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							165.404 171.271
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_37mm_KwK_L46>
-				<_50mm_KwK_38_L42>
+				<_50mm_Kw_K_38_L_42_Ausf_E>
 					shared
 					<maxAmmo>135</maxAmmo>
 					<unlocks>
-						<vehicle>
-							G101_StuG_III
-							<cost>3800</cost>
-						</vehicle>
-						<vehicle>
-							G10_PzIII_AusfJ
-							<cost>3800</cost>
-						</vehicle>
+						<gun>
+							_50mm_Kw_K_38_L_42_Ausf_F
+							<cost>500</cost>
+						</gun>
 					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
@@ -6626,17 +5619,36 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.5
+						2.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.29
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionRadius>
+						0.45
+						<!--BW_String-->
+					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<turretRotation>
+							0.16
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/german/G102_Pz_III/normal/lod0/Gun_06.model</undamaged>
 						<destroyed>vehicles/german/G102_Pz_III/crash/lod0/Gun_06.model</destroyed>
@@ -6692,6 +5704,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<shotOffset>
 						-0.074803 0.011411 0
 						<!--BW_String-->
@@ -6707,7 +5720,142 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_50mm_KwK_38_L42>
+				</_50mm_Kw_K_38_L_42_Ausf_E>
+				<_50mm_Kw_K_38_L_42_Ausf_F>
+					shared
+					<maxAmmo>135</maxAmmo>
+					<unlocks>
+						<vehicle>
+							G101_StuG_III
+							<cost>3800</cost>
+						</vehicle>
+						<vehicle>
+							G10_PzIII_AusfJ
+							<cost>3800</cost>
+						</vehicle>
+					</unlocks>
+					<pitchLimits>
+						<minPitch>0 -20 1 -20</minPitch>
+						<maxPitch>0 10 1 10</maxPitch>
+					</pitchLimits>
+					<armor>
+						<armor_1>
+							25
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_1>
+						<armor_3>
+							10
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_3>
+						<armor_4>
+							0
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_4>
+						<gun>10</gun>
+					</armor>
+					<reloadTime>
+						2.5
+						<!--BW_String-->
+					</reloadTime>
+					<aimingTime>
+						2.3
+						<!--BW_String-->
+					</aimingTime>
+					<invisibilityFactorAtShot>
+						0.29
+						<!--BW_String-->
+					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionRadius>
+						0.44
+						<!--BW_String-->
+					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<turretRotation>
+							0.16
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
+					<models>
+						<undamaged>vehicles/german/G102_Pz_III/normal/lod0/Gun_06.model</undamaged>
+						<destroyed>vehicles/german/G102_Pz_III/crash/lod0/Gun_06.model</destroyed>
+						<exploded>vehicles/german/G102_Pz_III/crash/lod0/Gun_06.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModelServer>vehicles/german/G102_Pz_III/collision/Gun_06.model</collisionModelServer>
+						<collisionModelClient>vehicles/german/G102_Pz_III/collision_client/Gun_06.model</collisionModelClient>
+					</hitTester>
+					<effects>shot_medium</effects>
+					<reloadEffect>reload50_75</reloadEffect>
+					<customizationSlots>
+						<slot>
+							<slotType>paint</slotType>
+							<slotId>41000</slotId>
+							<anchorPosition>
+								-0.074335 0.005769 1.17842
+								<!--BW_String-->
+							</anchorPosition>
+							<anchorDirection>
+								-0 0.000119 1
+								<!--BW_String-->
+							</anchorDirection>
+							<applyTo>4096</applyTo>
+						</slot>
+						<slot>
+							<slotType>paint</slotType>
+							<slotId>41001</slotId>
+							<anchorPosition>-0.074274 0.182702 0.182693</anchorPosition>
+							<anchorDirection>
+								-0 0.707107 0.707107
+								<!--BW_String-->
+							</anchorDirection>
+							<applyTo>16384</applyTo>
+						</slot>
+						<slot>
+							<slotType>camouflage</slotType>
+							<slotId>42000</slotId>
+							<anchorPosition>
+								-0.074335 0.005765 1.17842
+								<!--BW_String-->
+							</anchorPosition>
+							<anchorDirection>
+								0 0.000174 1
+								<!--BW_String-->
+							</anchorDirection>
+							<applyTo>4096</applyTo>
+						</slot>
+					</customizationSlots>
+					<customization>
+						<customizableVehicleAreas>
+							<paint>GUN GUN_2</paint>
+							<camouflage>GUN</camouflage>
+						</customizableVehicleAreas>
+					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
+					<shotOffset>
+						-0.074803 0.011411 0
+						<!--BW_String-->
+					</shotOffset>
+					<camouflage>
+						<tiling>
+							0.8 0.8 0.000000 0.000000
+							<!--BW_String-->
+						</tiling>
+						<density>
+							162.19 161.018
+							<!--BW_String-->
+						</density>
+						<aoTextureSize>512 512</aoTextureSize>
+					</camouflage>
+				</_50mm_Kw_K_38_L_42_Ausf_F>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G102_Pz_III/normal/lod0/Turret_02.model</undamaged>
@@ -7456,28 +6604,19 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</PzIII_Ausf_C>
+		</Turret_2_G102_Pz_III>
 	</turrets0>
 	<engines>
-		<Maybach_HL_108TR>
+		<Maybach_HL_120_TR_E>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_120_TR
-					<cost>710</cost>
-				</engine>
-			</unlocks>
-		</Maybach_HL_108TR>
-		<Maybach_HL_120_TR>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_120_TRM
+					Maybach_HL_120_TRM_G
 					<cost>1500</cost>
 				</engine>
 			</unlocks>
-		</Maybach_HL_120_TR>
-		<Maybach_HL_120_TRM>shared</Maybach_HL_120_TRM>
+		</Maybach_HL_120_TR_E>
+		<Maybach_HL_120_TRM_G>shared</Maybach_HL_120_TRM_G>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
@@ -7497,30 +6636,20 @@
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_108TR>
-					<smplEnginePower>
-						338.33
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_120_TR_E>
+					<smplEnginePower>400</smplEnginePower>
 					<smplFwMaxSpeed>68</smplFwMaxSpeed>
-				</Maybach_HL_108TR>
-				<Maybach_HL_120_TR>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>68</smplFwMaxSpeed>
-				</Maybach_HL_120_TR>
-				<Maybach_HL_120_TRM>
+				</Maybach_HL_120_TR_E>
+				<Maybach_HL_120_TRM_G>
 					<smplEnginePower>
 						465.2037
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>68</smplFwMaxSpeed>
-				</Maybach_HL_120_TRM>
+				</Maybach_HL_120_TRM_G>
 			</engines>
 			<chassis>
-				<PzIIIketten_Ausf_A>
+				<Chassis_G102_Pz_III>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7541,8 +6670,8 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</PzIIIketten_Ausf_A>
-				<PzIIIketten_Ausf_B>
+				</Chassis_G102_Pz_III>
+				<Chassis_G102_Pz_III_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7563,7 +6692,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</PzIIIketten_Ausf_B>
+				</Chassis_G102_Pz_III_2>
 			</chassis>
 		</detailed>
 	</physics>

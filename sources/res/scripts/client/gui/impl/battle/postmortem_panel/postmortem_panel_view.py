@@ -1,16 +1,32 @@
-import logging
+import logging, typing, BigWorld
+from PlayerEvents import g_playerEvents
 from aih_constants import CTRL_MODE_NAME
-from constants import ARENA_GUI_TYPE
+from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as BONUS_TYPE
+from constants import ARENA_GUI_TYPE, PlayerSatisfactionRating
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.battle.postmorten_panel.postmortem_info_panel_view_model import PostmortemInfoPanelViewModel
+from gui.impl.gen.view_models.views.battle.postmorten_panel.rating_button_model import RateButtonEnum
+from gui.impl.gui_decorators import args2params
 from gui.impl.pub import ViewImpl
 from gui.shared.events import DeathCamEvent
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
 from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.battle_control import avatar_getter
+from gui.impl.common.player_satisfaction_rating.player_satisfaction_sound import playSoundForRating
+from player_satisfaction_schema import playerSatisfactionSchema
+from gui.impl.common.player_satisfaction_rating.randomize_feedback import SELECTION_ORDER, getFeedbackResID
+if typing.TYPE_CHECKING:
+    from typing import Tuple, Optional, Callable
+    from Event import Event
+    from constants import FINISH_REASON
 _logger = logging.getLogger(__name__)
+_MODEL_TO_COMMON_ENUM_MAP = {RateButtonEnum.WORSE: PlayerSatisfactionRating.WORSE, 
+   RateButtonEnum.USUAL: PlayerSatisfactionRating.USUAL, 
+   RateButtonEnum.BETTER: PlayerSatisfactionRating.BETTER, 
+   RateButtonEnum.UNSET: PlayerSatisfactionRating.NONE}
+_COMMON_TO_MODEL_ENUM_MAP = {v:k for k, v in _MODEL_TO_COMMON_ENUM_MAP.iteritems()}
 
 class PostmortemPanelView(ViewImpl, CallbackDelayer):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
@@ -24,30 +40,74 @@ class PostmortemPanelView(ViewImpl, CallbackDelayer):
     def viewModel(self):
         return super(PostmortemPanelView, self).getViewModel()
 
-    def _initialize(self, *args, **kwargs):
-        super(PostmortemPanelView, self)._initialize()
-        isFrontline = self.sessionProvider.arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.EPIC_RANGE
-        self.viewModel.setIsFrontline(isFrontline)
-        isFreeCamAvailable = avatar_getter.isPostmortemFeatureEnabled(CTRL_MODE_NAME.DEATH_FREE_CAM)
-        self.viewModel.setIsFreecamAvailable(isFreeCamAvailable)
-        ctrl = self.sessionProvider.shared.vehicleState
-        if ctrl is not None:
-            ctrl.onPostMortemSwitched += self.__onPostMortemSwitched
+    @property
+    def isRatingWidgetEnabled--- This code section failed: ---
+
+ L.  63         0  LOAD_FAST             0  'self'
+                3  LOAD_ATTR             0  'sessionProvider'
+                6  LOAD_ATTR             1  'arenaVisitor'
+                9  LOAD_ATTR             2  'bonus'
+               12  STORE_FAST            1  'bonusTypeVistor'
+
+ L.  64        15  LOAD_FAST             1  'bonusTypeVistor'
+               18  LOAD_ATTR             3  'hasBonusCap'
+               21  LOAD_GLOBAL           4  'BONUS_TYPE'
+               24  LOAD_ATTR             5  'PLAYER_SATISFACTION_RATING'
+               27  CALL_FUNCTION_1       1  None
+               30  STORE_FAST            2  'hasBonusCap'
+
+ L.  65        33  LOAD_GLOBAL           6  'playerSatisfactionSchema'
+               36  LOAD_ATTR             7  'getModel'
+               39  CALL_FUNCTION_0       0  None
+               42  STORE_FAST            3  'config'
+
+ L.  66        45  LOAD_FAST             3  'config'
+               48  POP_JUMP_IF_FALSE    76  'to 76'
+               51  LOAD_FAST             2  'hasBonusCap'
+               54  JUMP_IF_FALSE_OR_POP    79  'to 79'
+               57  LOAD_FAST             3  'config'
+               60  LOAD_ATTR             8  'enabledInterfaces'
+               63  LOAD_ATTR             9  'spectatorMode'
+               66  JUMP_IF_FALSE_OR_POP    79  'to 79'
+               69  LOAD_FAST             3  'config'
+               72  LOAD_ATTR            10  'enabled'
+               75  RETURN_END_IF    
+             76_0  COME_FROM            66  '66'
+             76_1  COME_FROM            54  '54'
+             76_2  COME_FROM            48  '48'
+               76  LOAD_GLOBAL          11  'False'
+               79  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `RETURN_END_IF' instruction at offset 75
+
+    def _getEvents(self):
+        events = [
+         (
+          self.viewModel.onRateButtonClick, self.__onRateButtonClick),
+         (
+          g_playerEvents.onRoundFinished, self._onRoundFinished)]
         killCamCtrl = self.sessionProvider.shared.killCamCtrl
         if killCamCtrl:
-            killCamCtrl.onKillCamModeStateChanged += self.__onKillCamStateChanged
-        return
+            events.append((killCamCtrl.onKillCamModeStateChanged, self.__onKillCamStateChanged))
+        ctrl = self.sessionProvider.shared.vehicleState
+        if ctrl is not None:
+            events.append((ctrl.onPostMortemSwitched, self.__onPostMortemSwitched))
+        return tuple(events)
+
+    def _initialize(self, *args, **kwargs):
+        super(PostmortemPanelView, self)._initialize()
+        with self.viewModel.transaction() as (model):
+            model.setIsRatingWidgetEnabled(self.isRatingWidgetEnabled)
+            self._setButtonConfig(model)
+            isFrontline = self.sessionProvider.arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.EPIC_RANGE
+            model.setIsFrontline(isFrontline)
+            isFreeCamAvailable = avatar_getter.isPostmortemFeatureEnabled(CTRL_MODE_NAME.DEATH_FREE_CAM)
+            model.setIsFreecamAvailable(isFreeCamAvailable)
 
     def _finalize(self):
         super(PostmortemPanelView, self)._finalize()
-        ctrl = self.sessionProvider.shared.vehicleState
-        if ctrl is not None:
-            ctrl.onPostMortemSwitched -= self.__onPostMortemSwitched
-        killCamCtrl = self.sessionProvider.shared.killCamCtrl
-        if killCamCtrl:
-            killCamCtrl.onKillCamModeStateChanged -= self.__onKillCamStateChanged
         self.stopCallback(self.__stopHint)
-        return
 
     def __onPostMortemSwitched(self, _, respawnAvailable):
         self.__startHint()
@@ -64,3 +124,28 @@ class PostmortemPanelView(ViewImpl, CallbackDelayer):
 
     def __stopHint(self):
         self.viewModel.setIsBlinking(False)
+
+    @args2params(RateButtonEnum)
+    def __onRateButtonClick(self, rating):
+        rating = _MODEL_TO_COMMON_ENUM_MAP.get(rating, PlayerSatisfactionRating.NONE)
+        if rating is PlayerSatisfactionRating.NONE:
+            _logger.warning('Received unmappable rating from widget callback: %s', rating)
+            return
+        playSoundForRating(rating)
+        BigWorld.player().cell.submitPlayerSatisfactionRating(rating)
+
+    def _onRoundFinished(self, winnerTeam, reason):
+        self.viewModel.setIsRatingWidgetVisible(False)
+
+    def _setButtonConfig(self, model):
+        arenaUniqueID = self.sessionProvider.arenaVisitor.getArenaUniqueID()
+        buttonArray = model.getRatingButtons()
+        buttonArray.clear()
+        buttonArray.reserve(len(RateButtonEnum))
+        for rating in SELECTION_ORDER:
+            buttonModel = model.getRatingButtonsType()()
+            buttonModel.setButtonVariant(_COMMON_TO_MODEL_ENUM_MAP[rating])
+            buttonModel.setFeedbackString(getFeedbackResID(rating, arenaUniqueID))
+            buttonArray.addViewModel(buttonModel)
+
+        buttonArray.invalidate()# Decompile failed :(

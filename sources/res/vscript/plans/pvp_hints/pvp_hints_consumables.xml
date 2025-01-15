@@ -13,6 +13,43 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
+				<id>Variable_48</id>
+				<params>
+					<param>
+						AllowHints
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						true
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_2</id>
 				<params>
 					<param>
@@ -507,6 +544,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_49</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>OnPlayerVehicleFireEvent</class>
 				<id>OnPlayerVehicleFireEvent_1</id>
 				<params/>
@@ -555,6 +598,19 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
+				<id>GetVariable_89</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
 				<id>GetVariable_2</id>
 				<buddy>Variable_2</buddy>
 				<params>
@@ -587,6 +643,63 @@
 					<slot>
 						<name>b</name>
 						<const>\1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_37</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_36</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_53</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -632,6 +745,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_50</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Sequence</class>
 				<id>Sequence_12</id>
 				<params>
@@ -659,6 +778,76 @@
 						<const>\2.500000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_90</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_55</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_39</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_38</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -708,6 +897,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_51</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetPlayerEquipmentState</class>
 				<id>GetPlayerEquipmentState_10</id>
 				<params/>
@@ -742,58 +937,47 @@
 				</slots>
 			</block>
 			<block>
-				<class>SelectHint</class>
-				<id>SelectHint_5</id>
+				<class>GetVariable</class>
+				<id>GetVariable_91</id>
+				<buddy>Variable_48</buddy>
 				<params>
 					<param>
-						newbie.newbie.PPH_CONSUMABLES_10
-						<name>scope, hintId</name>
-						<type>StringT</type>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
+				<class>SetVariable</class>
+				<id>SetVariable_54</id>
+				<buddy>Variable_48</buddy>
 				<params>
 					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
+						<name>value</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
+				<class>And</class>
+				<id>And_41</id>
 				<params>
 					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
 					</param>
 				</params>
-				<slots>
-					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -817,9 +1001,58 @@
 				</slots>
 			</block>
 			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_40</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SelectHint</class>
+				<id>SelectHint_5</id>
+				<params>
+					<param>
+						newbie.newbie.PPH_CONSUMABLES_10
+						<name>scope, hintId</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_53</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_92</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>If</class>
 				<id>If_41</id>
 				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_35</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -842,6 +1075,51 @@
 			<block>
 				<class>OnPlayerVehicleStun</class>
 				<id>OnPlayerVehicleStun_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_56</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_11</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_34</id>
 				<params/>
 				<slots/>
 			</block>
@@ -1004,27 +1282,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_11</id>
-				<params>
-					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_7</id>
 				<params/>
@@ -1144,6 +1401,12 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_55</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_47</id>
 				<params/>
 				<slots/>
@@ -1179,6 +1442,19 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_94</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>CompareString</class>
 				<id>CompareString_2</id>
 				<params/>
@@ -1192,6 +1468,18 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_29</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>Timer</class>
@@ -1209,6 +1497,51 @@
 						<const>\2.500000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_5</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_58</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_28</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>Not</class>
@@ -1262,6 +1595,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_57</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Not</class>
 				<id>Not_12</id>
 				<params/>
@@ -1287,6 +1626,24 @@
 				<id>If_17</id>
 				<params/>
 				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_60</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetPlayerEquipmentState</class>
@@ -1327,6 +1684,58 @@
 						<const>\2.500000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_6</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_96</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_31</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_30</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>Not</class>
@@ -1475,6 +1884,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_59</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Not</class>
 				<id>Not_14</id>
 				<params/>
@@ -1498,56 +1913,20 @@
 				</slots>
 			</block>
 			<block>
-				<class>SelectHint</class>
-				<id>SelectHint_8</id>
+				<class>SetVariable</class>
+				<id>SetVariable_62</id>
+				<buddy>Variable_48</buddy>
 				<params>
 					<param>
-						newbie.newbie.PPH_CONSUMABLES_08
-						<name>scope, hintId</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_5</id>
-				<params>
-					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_6</id>
-				<params>
-					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
+						<name>value</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -1573,6 +1952,80 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_98</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_33</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_32</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SelectHint</class>
+				<id>SelectHint_8</id>
+				<params>
+					<param>
+						newbie.newbie.PPH_CONSUMABLES_08
+						<name>scope, hintId</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_61</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_100</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_23</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>If</class>
 				<id>If_18</id>
 				<params/>
@@ -1591,6 +2044,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_22</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Timer</class>
 				<id>Timer_7</id>
 				<params>
@@ -1604,6 +2063,24 @@
 					<slot>
 						<name>time0</name>
 						<const>\2.500000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_64</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -1629,6 +2106,27 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_7</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1769,6 +2267,12 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_63</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_19</id>
 				<params/>
 				<slots/>
@@ -1814,6 +2318,76 @@
 				</slots>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_66</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_102</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_3</id>
+				<params>
+					<param>
+						Hint_Manager
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Show_only_if_vehicle_is_alive</name>
+						<const>\true\</const>
+					</slot>
+					<slot>
+						<name>Hide_on_vehicle_destruction</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_25</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_24</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Sequence</class>
 				<id>Sequence_10</id>
 				<params>
@@ -1835,6 +2409,12 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_65</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -1890,6 +2470,24 @@
 				</slots>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_68</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>GetPlayerEquipmentState</class>
 				<id>GetPlayerEquipmentState_13</id>
 				<params/>
@@ -1905,60 +2503,6 @@
 				<id>Not_5</id>
 				<params/>
 				<slots/>
-			</block>
-			<block>
-				<class>SelectHint</class>
-				<id>SelectHint_10</id>
-				<params>
-					<param>
-						newbie.newbie.PPH_CONSUMABLES_09
-						<name>scope, hintId</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_7</id>
-				<params>
-					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_3</id>
-				<params>
-					<param>
-						Hint_Manager
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>Show_only_if_vehicle_is_alive</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>Hide_on_vehicle_destruction</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -1980,6 +2524,49 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_104</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>And</class>
+				<id>And_27</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CanShowHint</class>
+				<id>CanShowHint_26</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SelectHint</class>
+				<id>SelectHint_10</id>
+				<params>
+					<param>
+						newbie.newbie.PPH_CONSUMABLES_09
+						<name>scope, hintId</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -2284,6 +2871,18 @@
 				<output>true</output>
 			</connection>
 			<connection>
+				<from>SetVariable_3</from>
+				<input>input</input>
+				<to>If_49</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>And_37</from>
+				<input>value</input>
+				<to>If_49</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>Or_2</from>
 				<input>active</input>
 				<to>OnPlayerVehicleFireEvent_1</to>
@@ -2314,6 +2913,48 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>GetVariable_89</from>
+				<input>i1</input>
+				<to>And_37</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_36</from>
+				<input>i2</input>
+				<to>And_37</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_2</from>
+				<input>hintId</input>
+				<to>CanShowHint_36</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>If_49</from>
+				<input>Show_Hint</input>
+				<to>Macro_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Sequence_12</from>
+				<input>Hide_Hint</input>
+				<to>Macro_1</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>SelectHint_2</from>
+				<input>HintID</input>
+				<to>Macro_1</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>SetVariable_53</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>If_20</from>
 				<input>input</input>
 				<to>If_21</to>
@@ -2338,6 +2979,18 @@
 				<output>canBeActivated</output>
 			</connection>
 			<connection>
+				<from>Timer_5</from>
+				<input>input</input>
+				<to>If_50</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_39</from>
+				<input>value</input>
+				<to>If_50</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>OnPlayerVehicleFireEvent_1</from>
 				<input>input</input>
 				<to>Sequence_12</to>
@@ -2354,6 +3007,48 @@
 				<input>cancel</input>
 				<to>Timer_5</to>
 				<output>o1</output>
+			</connection>
+			<connection>
+				<from>If_50</from>
+				<input>Show_Hint</input>
+				<to>Macro_2</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Timer_5</from>
+				<input>Hide_Hint</input>
+				<to>Macro_2</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>SelectHint_4</from>
+				<input>HintID</input>
+				<to>Macro_2</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>Macro_2</from>
+				<input>input</input>
+				<to>SetVariable_55</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
+				<from>GetVariable_90</from>
+				<input>i1</input>
+				<to>And_39</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_38</from>
+				<input>i2</input>
+				<to>And_39</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_4</from>
+				<input>hintId</input>
+				<to>CanShowHint_38</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>GetPlayerEquipmentState_9</from>
@@ -2386,6 +3081,18 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>Timer_6</from>
+				<input>input</input>
+				<to>If_51</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_41</from>
+				<input>value</input>
+				<to>If_51</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>GetPlayerEquipmentState_10</from>
 				<input>a</input>
 				<to>Not_7</to>
@@ -2404,46 +3111,28 @@
 				<output>o2</output>
 			</connection>
 			<connection>
-				<from>SetVariable_3</from>
-				<input>Show_Hint</input>
-				<to>Macro_1</to>
-				<output>out</output>
+				<from>Macro_4</from>
+				<input>input</input>
+				<to>SetVariable_54</to>
+				<output>ShowHintOutput</output>
 			</connection>
 			<connection>
-				<from>Sequence_12</from>
-				<input>Hide_Hint</input>
-				<to>Macro_1</to>
-				<output>o0</output>
+				<from>GetVariable_91</from>
+				<input>i1</input>
+				<to>And_41</to>
+				<output>value</output>
 			</connection>
 			<connection>
-				<from>SelectHint_2</from>
-				<input>HintID</input>
-				<to>Macro_1</to>
-				<output>id</output>
+				<from>CanShowHint_40</from>
+				<input>i2</input>
+				<to>And_41</to>
+				<output>result</output>
 			</connection>
 			<connection>
-				<from>Timer_5</from>
-				<input>Show_Hint</input>
-				<to>Macro_2</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>Timer_5</from>
-				<input>Hide_Hint</input>
-				<to>Macro_2</to>
-				<output>cancelOut</output>
-			</connection>
-			<connection>
-				<from>SelectHint_4</from>
-				<input>HintID</input>
-				<to>Macro_2</to>
-				<output>id</output>
-			</connection>
-			<connection>
-				<from>Timer_6</from>
+				<from>If_51</from>
 				<input>Show_Hint</input>
 				<to>Macro_4</to>
-				<output>event0</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>Timer_6</from>
@@ -2458,6 +3147,24 @@
 				<output>id</output>
 			</connection>
 			<connection>
+				<from>SelectHint_5</from>
+				<input>hintId</input>
+				<to>CanShowHint_40</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>Timer_1</from>
+				<input>input</input>
+				<to>If_53</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_35</from>
+				<input>value</input>
+				<to>If_53</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>OnPlayerVehicleStun_1</from>
 				<input>input</input>
 				<to>If_41</to>
@@ -2468,6 +3175,18 @@
 				<input>value</input>
 				<to>If_41</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_92</from>
+				<input>i1</input>
+				<to>And_35</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_34</from>
+				<input>i2</input>
+				<to>And_35</to>
+				<output>result</output>
 			</connection>
 			<connection>
 				<from>If_41</from>
@@ -2492,6 +3211,36 @@
 				<input>active</input>
 				<to>OnPlayerVehicleStun_1</to>
 				<output>result</output>
+			</connection>
+			<connection>
+				<from>Macro_11</from>
+				<input>input</input>
+				<to>SetVariable_56</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
+				<from>If_53</from>
+				<input>Show_Hint</input>
+				<to>Macro_11</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Timer_1</from>
+				<input>Hide_Hint</input>
+				<to>Macro_11</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>SelectHint_1</from>
+				<input>HintID</input>
+				<to>Macro_11</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>SelectHint_1</from>
+				<input>hintId</input>
+				<to>CanShowHint_34</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>OnPlayerVehicleStun_1</from>
@@ -2596,24 +3345,6 @@
 				<output>onFireEnds</output>
 			</connection>
 			<connection>
-				<from>Timer_1</from>
-				<input>Show_Hint</input>
-				<to>Macro_11</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>Timer_1</from>
-				<input>Hide_Hint</input>
-				<to>Macro_11</to>
-				<output>cancelOut</output>
-			</connection>
-			<connection>
-				<from>SelectHint_1</from>
-				<input>HintID</input>
-				<to>Macro_11</to>
-				<output>id</output>
-			</connection>
-			<connection>
 				<from>If_47</from>
 				<input>input</input>
 				<to>If_7</to>
@@ -2704,6 +3435,18 @@
 				<output>canBeActivated</output>
 			</connection>
 			<connection>
+				<from>Timer_2</from>
+				<input>input</input>
+				<to>If_55</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_29</from>
+				<input>value</input>
+				<to>If_55</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>OnPlayerVehicleDeviceCrit_1</from>
 				<input>input</input>
 				<to>If_47</to>
@@ -2746,6 +3489,18 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>GetVariable_94</from>
+				<input>i1</input>
+				<to>And_29</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_28</from>
+				<input>i2</input>
+				<to>And_29</to>
+				<output>result</output>
+			</connection>
+			<connection>
 				<from>If_7</from>
 				<input>windup</input>
 				<to>Timer_2</to>
@@ -2756,6 +3511,36 @@
 				<input>cancel</input>
 				<to>Timer_2</to>
 				<output>o0</output>
+			</connection>
+			<connection>
+				<from>If_55</from>
+				<input>Show_Hint</input>
+				<to>Macro_5</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Timer_2</from>
+				<input>Hide_Hint</input>
+				<to>Macro_5</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>SelectHint_6</from>
+				<input>HintID</input>
+				<to>Macro_5</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>Macro_5</from>
+				<input>input</input>
+				<to>SetVariable_58</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
+				<from>SelectHint_6</from>
+				<input>hintId</input>
+				<to>CanShowHint_28</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>CompareString_4</from>
@@ -2794,6 +3579,18 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>Timer_3</from>
+				<input>input</input>
+				<to>If_57</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_31</from>
+				<input>value</input>
+				<to>If_57</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>CompareString_3</from>
 				<input>a</input>
 				<to>Not_12</to>
@@ -2818,6 +3615,12 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>Macro_6</from>
+				<input>input</input>
+				<to>SetVariable_60</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>GetPlayerEquipmentState_2</from>
 				<input>i1</input>
 				<to>And_8</to>
@@ -2840,6 +3643,42 @@
 				<input>cancel</input>
 				<to>Timer_3</to>
 				<output>o1</output>
+			</connection>
+			<connection>
+				<from>If_57</from>
+				<input>Show_Hint</input>
+				<to>Macro_6</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Timer_3</from>
+				<input>Hide_Hint</input>
+				<to>Macro_6</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>SelectHint_7</from>
+				<input>HintID</input>
+				<to>Macro_6</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_96</from>
+				<input>i1</input>
+				<to>And_31</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_30</from>
+				<input>i2</input>
+				<to>And_31</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_7</from>
+				<input>hintId</input>
+				<to>CanShowHint_30</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>LogicGate_1</from>
@@ -2938,6 +3777,18 @@
 				<output>isEquipped</output>
 			</connection>
 			<connection>
+				<from>Timer_4</from>
+				<input>input</input>
+				<to>If_59</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_33</from>
+				<input>value</input>
+				<to>If_59</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>GetPlayerEquipmentState_17</from>
 				<input>a</input>
 				<to>Not_14</to>
@@ -2956,46 +3807,16 @@
 				<output>o2</output>
 			</connection>
 			<connection>
-				<from>Timer_2</from>
-				<input>Show_Hint</input>
-				<to>Macro_5</to>
-				<output>event0</output>
+				<from>Macro_8</from>
+				<input>input</input>
+				<to>SetVariable_62</to>
+				<output>ShowHintOutput</output>
 			</connection>
 			<connection>
-				<from>Timer_2</from>
-				<input>Hide_Hint</input>
-				<to>Macro_5</to>
-				<output>cancelOut</output>
-			</connection>
-			<connection>
-				<from>SelectHint_6</from>
-				<input>HintID</input>
-				<to>Macro_5</to>
-				<output>id</output>
-			</connection>
-			<connection>
-				<from>Timer_3</from>
-				<input>Show_Hint</input>
-				<to>Macro_6</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>Timer_3</from>
-				<input>Hide_Hint</input>
-				<to>Macro_6</to>
-				<output>cancelOut</output>
-			</connection>
-			<connection>
-				<from>SelectHint_7</from>
-				<input>HintID</input>
-				<to>Macro_6</to>
-				<output>id</output>
-			</connection>
-			<connection>
-				<from>Timer_4</from>
+				<from>If_59</from>
 				<input>Show_Hint</input>
 				<to>Macro_8</to>
-				<output>event0</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>Timer_4</from>
@@ -3008,6 +3829,48 @@
 				<input>HintID</input>
 				<to>Macro_8</to>
 				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_98</from>
+				<input>i1</input>
+				<to>And_33</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_32</from>
+				<input>i2</input>
+				<to>And_33</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_8</from>
+				<input>hintId</input>
+				<to>CanShowHint_32</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>Timer_7</from>
+				<input>input</input>
+				<to>If_61</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_23</from>
+				<input>value</input>
+				<to>If_61</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_100</from>
+				<input>i1</input>
+				<to>And_23</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_22</from>
+				<input>i2</input>
+				<to>And_23</to>
+				<output>result</output>
 			</connection>
 			<connection>
 				<from>If_48</from>
@@ -3040,6 +3903,12 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>SelectHint_3</from>
+				<input>hintId</input>
+				<to>CanShowHint_22</to>
+				<output>id</output>
+			</connection>
+			<connection>
 				<from>If_18</from>
 				<input>windup</input>
 				<to>Timer_7</to>
@@ -3052,6 +3921,12 @@
 				<output>o0</output>
 			</connection>
 			<connection>
+				<from>Macro_7</from>
+				<input>input</input>
+				<to>SetVariable_64</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>GetPlayerEquipmentState_3</from>
 				<input>i1</input>
 				<to>And_9</to>
@@ -3062,6 +3937,24 @@
 				<input>i2</input>
 				<to>And_9</to>
 				<output>canBeActivated</output>
+			</connection>
+			<connection>
+				<from>If_61</from>
+				<input>Show_Hint</input>
+				<to>Macro_7</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Timer_7</from>
+				<input>Hide_Hint</input>
+				<to>Macro_7</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>SelectHint_3</from>
+				<input>HintID</input>
+				<to>Macro_7</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>GetVariable_5</from>
@@ -3142,6 +4035,18 @@
 				<output>id</output>
 			</connection>
 			<connection>
+				<from>Timer_9</from>
+				<input>input</input>
+				<to>If_63</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_25</from>
+				<input>value</input>
+				<to>If_63</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>If_18</from>
 				<input>input</input>
 				<to>If_19</to>
@@ -3178,10 +4083,64 @@
 				<output>o1</output>
 			</connection>
 			<connection>
+				<from>Macro_3</from>
+				<input>input</input>
+				<to>SetVariable_66</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
+				<from>If_63</from>
+				<input>Show_Hint</input>
+				<to>Macro_3</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Timer_9</from>
+				<input>Hide_Hint</input>
+				<to>Macro_3</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>SelectHint_9</from>
+				<input>HintID</input>
+				<to>Macro_3</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_102</from>
+				<input>i1</input>
+				<to>And_25</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_24</from>
+				<input>i2</input>
+				<to>And_25</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_9</from>
+				<input>hintId</input>
+				<to>CanShowHint_24</to>
+				<output>id</output>
+			</connection>
+			<connection>
 				<from>OnPlayerVehicleTankmanEvent_1</from>
 				<input>input</input>
 				<to>Sequence_10</to>
 				<output>onHealed</output>
+			</connection>
+			<connection>
+				<from>Timer_8</from>
+				<input>input</input>
+				<to>If_65</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>And_27</from>
+				<input>value</input>
+				<to>If_65</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>GetPlayerEquipmentState_14</from>
@@ -3226,52 +4185,22 @@
 				<output>o2</output>
 			</connection>
 			<connection>
+				<from>Macro_9</from>
+				<input>input</input>
+				<to>SetVariable_68</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>GetPlayerEquipmentState_13</from>
 				<input>a</input>
 				<to>Not_5</to>
 				<output>isEquipped</output>
 			</connection>
 			<connection>
-				<from>Timer_7</from>
-				<input>Show_Hint</input>
-				<to>Macro_7</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>Timer_7</from>
-				<input>Hide_Hint</input>
-				<to>Macro_7</to>
-				<output>cancelOut</output>
-			</connection>
-			<connection>
-				<from>SelectHint_3</from>
-				<input>HintID</input>
-				<to>Macro_7</to>
-				<output>id</output>
-			</connection>
-			<connection>
-				<from>Timer_9</from>
-				<input>Show_Hint</input>
-				<to>Macro_3</to>
-				<output>event0</output>
-			</connection>
-			<connection>
-				<from>Timer_9</from>
-				<input>Hide_Hint</input>
-				<to>Macro_3</to>
-				<output>cancelOut</output>
-			</connection>
-			<connection>
-				<from>SelectHint_9</from>
-				<input>HintID</input>
-				<to>Macro_3</to>
-				<output>id</output>
-			</connection>
-			<connection>
-				<from>Timer_8</from>
+				<from>If_65</from>
 				<input>Show_Hint</input>
 				<to>Macro_9</to>
-				<output>event0</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>Timer_8</from>
@@ -3283,6 +4212,24 @@
 				<from>SelectHint_10</from>
 				<input>HintID</input>
 				<to>Macro_9</to>
+				<output>id</output>
+			</connection>
+			<connection>
+				<from>GetVariable_104</from>
+				<input>i1</input>
+				<to>And_27</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_26</from>
+				<input>i2</input>
+				<to>And_27</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>SelectHint_10</from>
+				<input>hintId</input>
+				<to>CanShowHint_26</to>
 				<output>id</output>
 			</connection>
 		</connections>

@@ -3404,6 +3404,7 @@ class PyGroundEffectManager(pybind11_object):
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
 	def loadAirstrike(self, *args, **kwargs): pass
 	def loadArtillery(self, *args, **kwargs): pass
 	def playAirstrike(self, *args, **kwargs): pass
@@ -5631,7 +5632,6 @@ class WGVehiclePhysics(pybind11_object):
 	def onRammingCb(self, *args, **kwargs): pass
 	def onResurrectVehicle(self, *args, **kwargs): pass
 	def onSideMovementChangedCb(self, *args, **kwargs): pass
-	def onTransparentIntersectionCb(self, *args, **kwargs): pass
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
@@ -5657,16 +5657,13 @@ class WGVehiclePhysics(pybind11_object):
 	staticMode = property(lambda self: None)
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
-	def subscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
 	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
-	transparentMode = property(lambda self: None)
 	def unsubscribeAfterSimulation(self, *args, **kwargs): pass
 	def unsubscribeBeforeSimulation(self, *args, **kwargs): pass
-	def unsubscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	def updateSettings(self, *args, **kwargs): pass
 	vehicleID = property(lambda self: None)
 	velocity = property(lambda self: None)
@@ -5785,7 +5782,6 @@ class WGTankPhysics(WGVehiclePhysics):
 	def onRammingCb(self, *args, **kwargs): pass
 	def onResurrectVehicle(self, *args, **kwargs): pass
 	def onSideMovementChangedCb(self, *args, **kwargs): pass
-	def onTransparentIntersectionCb(self, *args, **kwargs): pass
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
@@ -5813,16 +5809,13 @@ class WGTankPhysics(WGVehiclePhysics):
 	staticMode = property(lambda self: None)
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
-	def subscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
 	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
-	transparentMode = property(lambda self: None)
 	def unsubscribeAfterSimulation(self, *args, **kwargs): pass
 	def unsubscribeBeforeSimulation(self, *args, **kwargs): pass
-	def unsubscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	def updateSettings(self, *args, **kwargs): pass
 	vehicleID = property(lambda self: None)
 	velocity = property(lambda self: None)
@@ -6155,7 +6148,6 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	def onResurrectVehicle(self, *args, **kwargs): pass
 	def onSideMovementChangedCb(self, *args, **kwargs): pass
 	onSteeringAnglesChangedCb = property(lambda self: None)
-	def onTransparentIntersectionCb(self, *args, **kwargs): pass
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	onWheelsScrollChangedCb = property(lambda self: None)
 	owner = property(lambda self: None)
@@ -6184,16 +6176,13 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	staticMode = property(lambda self: None)
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
-	def subscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
 	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
-	transparentMode = property(lambda self: None)
 	def unsubscribeAfterSimulation(self, *args, **kwargs): pass
 	def unsubscribeBeforeSimulation(self, *args, **kwargs): pass
-	def unsubscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	def updateSettings(self, *args, **kwargs): pass
 	vehicleID = property(lambda self: None)
 	velocity = property(lambda self: None)
@@ -6759,6 +6748,7 @@ def projection(*args, **kwargs): pass
 protocolVersion = u'17.1.0 (5)'
 def purgeUrlRequestCache(*args, **kwargs): pass
 def quit(*args, **kwargs): pass
+def quitWithExitCode(*args, **kwargs): pass
 def registerShadowCaster(*args, **kwargs): pass
 def registerTextureStreamingViewpoint(*args, **kwargs): pass
 def reinitLoggers(*args, **kwargs): pass
@@ -6894,11 +6884,11 @@ def wg_checkAnyParticlesExist(*args, **kwargs): pass
 def wg_checkDestructibleIsBush(*args, **kwargs): pass
 def wg_clearAllScaleformTextures(*args, **kwargs): pass
 def wg_clearCrashedState(*args, **kwargs): pass
+def wg_clearDamageStickers(*args, **kwargs): pass
 def wg_clearDecals(*args, **kwargs): pass
 def wg_clearTextureReuseList(*args, **kwargs): pass
 def wg_clearTraces(*args, **kwargs): pass
 def wg_collectScaleformTextures(*args, **kwargs): pass
-def wg_collideCustomSphereDynamicStatic(*args, **kwargs): pass
 def wg_collideDynamic(*args, **kwargs): pass
 def wg_collideDynamicStatic(*args, **kwargs): pass
 def wg_collideDynamics(*args, **kwargs): pass
@@ -6911,13 +6901,11 @@ def wg_copyToClipboard(*args, **kwargs): pass
 def wg_cpdata(*args, **kwargs): pass
 def wg_cpsalt(*args, **kwargs): pass
 def wg_crash(*args, **kwargs): pass
-def wg_createCollideSphere(*args, **kwargs): pass
 def wg_createSplineTrack(*args, **kwargs): pass
 def wg_debugLogging(*args, **kwargs): pass
 def wg_decalTextureIndex(*args, **kwargs): pass
 wg_defaultFlagEmblemCoords = (0, 0.1, 0.5, 0.9)
 wg_defaultFlagEmblemPath = u'system/maps/wg_emblem.dds'
-def wg_destroyCollideShape(*args, **kwargs): pass
 def wg_destroyFallAtom(*args, **kwargs): pass
 def wg_destroyFragile(*args, **kwargs): pass
 def wg_destroyModule(*args, **kwargs): pass

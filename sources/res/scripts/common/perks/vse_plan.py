@@ -105,8 +105,10 @@ class VsePlan(object):
             return
 
     def stop(self):
-        self._plan.stop()
+        if self._plan is not None:
+            self._plan.stop()
         self._isPlanStarted = False
+        return
 
     @callOnValidState
     def triggerVSPlanEvent(self, event):
@@ -123,7 +125,7 @@ class VsePlan(object):
 
     def destroy(self):
         if self._plan is not None:
-            self._plan.stop()
+            self.stop()
         else:
             ownerId = self._owner.id if self._owner else -1
             LOG_WARNING(('[PerksController] No plan for perkID:{0} vehicleID:{1} after destroy in applySelectedSetup ').format(self.perkId, ownerId))

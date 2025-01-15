@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F122_VCS_6x6_TS90/crash/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.523418 -0.223199 -1.123435</min>
+		<max>0.511433 0.222724 4.110765</max>
+	</visibilityBox>
+	<parent>vehicles/french/F122_VCS_6x6_TS90/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

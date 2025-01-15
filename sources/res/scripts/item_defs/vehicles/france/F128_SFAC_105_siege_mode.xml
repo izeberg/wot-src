@@ -105,12 +105,9 @@
 		<weight>12990</weight>
 		<maxHealth>880</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>240</maxHealth>
-			<maxRegenHealth>160</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>158</maxRegenHealth>
+			<repairCost>8</repairCost>
 		</ammoBayHealth>
 		<fakeTurrets>
 			<lobby>0</lobby>
@@ -778,8 +775,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>200</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>165</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -2286,7 +2283,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_F128_SFAC_105>
@@ -2326,19 +2323,16 @@
 			<maxHealth>220</maxHealth>
 			<rotationSpeed>22</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>155</maxHealth>
+				<maxRegenHealth>78</maxRegenHealth>
+				<repairCost>8</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>360</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
 				<repairCost>
-					1.0
+					2.0
 					<!--BW_String-->
 				</repairCost>
 			</surveyingDeviceHealth>
@@ -2370,7 +2364,7 @@
 							15
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
-						<gun>20</gun>
+						<gun>15</gun>
 					</armor>
 					<turretYawLimits>-69 69</turretYawLimits>
 					<pitchLimits>
@@ -2404,14 +2398,14 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.24
+						0.2
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<multiGunEffects>shot_dualgun_large_mb_L shot_dualgun_large_mb_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>3</chargeTime>
 						<shootImpulse>150</shootImpulse>
-						<reloadLockTime>4</reloadLockTime>
+						<reloadLockTime>3</reloadLockTime>
 						<reloadTimes>
 							10.5 10.5
 							<!--BW_String-->
@@ -2713,6 +2707,18 @@
 								0.8
 								<!--BW_String-->
 							</anchorShift>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0 0.486 2.37496
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -3821,6 +3827,69 @@
 						<!--BW_String-->
 					</anchorShift>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						-1.287 1.074157 1.486124
+						<!--BW_String-->
+					</position>
+					<rotation>
+						-0 -0 1.553343
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.999987 0.999987 1
+						<!--BW_String-->
+					</scale>
+					<applyType>universal</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						1.287 1.07416 1.486
+						<!--BW_String-->
+					</position>
+					<rotation>
+						-0 3.141593 1.570796
+						<!--BW_String-->
+					</rotation>
+					<scale>0.999998 0.999998 0.999998</scale>
+					<applyType>universal</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38002</slotId>
+					<position>
+						-0.959446 1.46763 -1.072
+						<!--BW_String-->
+					</position>
+					<rotation>
+						-0 -1.553343 1.570796
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.999977 0.99997 0.99997
+						<!--BW_String-->
+					</scale>
+					<applyType>universal</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38003</slotId>
+					<position>
+						1.029 1.551 1.208281
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -3865,7 +3934,7 @@
 		<detailed>
 			<engines>
 				<Moteur_moderne_3M_27_oie>
-					<smplEnginePower>550</smplEnginePower>
+					<smplEnginePower>480</smplEnginePower>
 					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Moteur_moderne_3M_27_oie>
 			</engines>

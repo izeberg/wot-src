@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G154_Kpz_07_RH/_skins/G154_Kpz_07_RH_WD_3Dst/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G154_Kpz_07_RH/_skins/G154_Kpz_07_RH_WD_3Dst/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.543178 -0.022684 -1.461227</min>
+		<max>1.535646 1.008100 1.723411</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

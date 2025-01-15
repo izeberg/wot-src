@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB143_FV229_Contender/crash/lod4/Gun_04</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/british/GB143_FV229_Contender/crash/lod3/Gun_04</nodefullVisual>
+	<visibilityBox>
+		<min>-0.591093 -0.348521 -1.218263</min>
+		<max>0.588569 0.358034 5.402632</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

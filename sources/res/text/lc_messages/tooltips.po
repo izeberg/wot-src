@@ -1008,14 +1008,6 @@ msgstr ""
 msgid "awardItem/brcoin/header"
 msgstr "Steel Seals"
 
-msgid "awardItem/comp7TokenWeeklyReward/body"
-msgstr ""
-"A special currency awarded for completing the last weekly mission.\n"
-"Earn Lucky Chips to receive additional rewards."
-
-msgid "awardItem/comp7TokenWeeklyReward/header"
-msgstr "Lucky Chip"
-
 msgid "awardItem/completionTokens/body"
 msgstr "A set of components required for award vehicle assembly."
 
@@ -7539,6 +7531,23 @@ msgstr ""
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "Team Clash 2021"
 
+msgid "notrecruitedtankman/boosteroid_foxwood/desc"
+msgstr ""
+"Never seen without his trusty hound Winston by his side, William has "
+"dedicated his life to the art of hunting. Captivated by the wonders of the "
+"forest during childhood outings with his father, he has donned his tweed cap"
+" and shooting jacket without fail every day since—come rain or shine. "
+"Affable and avuncular when he's not tracking his prey, William is a seasoned"
+" marksman with an unerring shot. His hunter's instinct translates seamlessly"
+" to tank battles—and once he has a target in his sights, his eagle-eyed "
+"focus ensures he never misses the mark."
+
+msgid "notrecruitedtankman/boosteroid_foxwood/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_foxwood/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/bp-commander-1_1/desc"
 msgstr ""
 "She's a determined and headstrong lady. In her childhood, she learned the "
@@ -8769,6 +8778,87 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp1003_1/label"
 msgstr "Dune: Part Two — Destiny Arrives"
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/desc"
+msgstr ""
+"\"Small-town sheriff\"? Some may sneer, but for Will Teasle, there's no "
+"higher honor than being the man who maintains the public order in Hope, "
+"Washington—and nothing worse than law-breaking drifters like John Rambo. A "
+"fiercely territorial enforcer whose pride can spill over into prejudice, "
+"Sheriff Teasle will tolerate no disturbance to his town's sleepy "
+"northwestern tranquility. And make no mistake: he'll make sure anyone he "
+"deems a threat to his authority as sheriff will feel the full force of the "
+"law."
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/desc"
+msgstr ""
+"A smooth talker and accomplished negotiator, Marshall Murdock is a true-blue"
+" American dedicated to serving his country and its citizens. Or that's what "
+"he'd have you believe, at least. Yet behind Murdock's charming demeanor is a"
+" calculating, pragmatic mind that's focused on self-preservation. An expert "
+"at manipulating situations to his advantage, Murdock is ready to do whatever"
+" it takes to protect his own interests—and it's never quite clear where his "
+"loyalties lie."
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/desc"
+msgstr ""
+"Veteran. Lone wolf. Survivor. Whatever you call him, John James Rambo is a "
+"force to be reckoned with. Resilient, resourceful, and extraordinarily "
+"powerful, this battle-hardened warrior is the ultimate fighting machine—yet,"
+" having seen things no man should, he is tortured by agonizing memories of "
+"the horrors of war. While his struggles to return to civilian life may put "
+"him at odds with those in authority, Rambo is deeply loyal and wants nothing"
+" more than to find peace—both for himself and for those he holds dear."
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/desc"
+msgstr ""
+"Friend, mentor, and one-time commanding officer to Rambo, Colonel Samuel "
+"Trautman is one of the few people who truly understands the troubled former "
+"Green Beret. Where others see a merciless soldier conditioned to kill, "
+"Trautman sees a tormented soul haunted by unspeakable trauma and in "
+"desperate need of guidance and support. A decorated combat veteran himself, "
+"Trautman walks a fine line between loyalty to his country and loyalty to his"
+" protégé, fighting Rambo's corner when no one else will."
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/desc"
+msgstr ""
+"Armed with exceptional combat skills and a resourceful mind, Co Bao is a "
+"determined freedom fighter committed to the struggle for liberation and a "
+"brighter future. But her tough exterior hides a pure heart and a genuine "
+"care for the fate of those dear to her. Risking everything to help Rambo, "
+"she remains resolute in the face of overwhelming adversity. Compassionate "
+"and positive to the last, Co Bao firmly believes that no one, especially not"
+" Rambo, is expendable."
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -11038,9 +11128,6 @@ msgstr "And %(count)s more"
 msgid "quests/awards/additional/header"
 msgstr "Rewards:"
 
-msgid "quests/awards/additional/header/count"
-msgstr "And %(count)s More"
-
 msgid "quests/awards/nearest/header"
 msgstr "Next Rewards:"
 
@@ -11892,6 +11979,16 @@ msgid "roleSkill/info"
 msgstr ""
 "Role Skills are charged passively during the battle. To speed up the "
 "process, perform well and capture Points of Interest/the base."
+
+msgid "roleSkill/startLevel/battle"
+msgstr ""
+"You will receive charge level %(startLevel)s automatically at the beginning "
+"of battle"
+
+msgid "roleSkill/startLevel/lobby"
+msgstr ""
+"You will receive {colorTagOpen}charge level %(startLevel)s{colorTagClose} "
+"{colorTagOpen}automatically{colorTagClose} at the beginning of battle"
 
 msgid "seasonalBattleSelector/tillEnd"
 msgstr "Season ends in:"

@@ -23,14 +23,14 @@ msgstr ""
 
 msgid "introScreenView/blockDescription/magicLootbox"
 msgstr ""
-"Complete the Calendar Progression to receive additional gifts, including a "
-"Large New Year Box. It is only available for completion through "
+"You will receive additional gifts for completing the Calendar Progression. "
+"It is only available for completion through "
 "{E9E2BF_Open}%(date)s{E9E2BF_Close}."
 
 msgid "introScreenView/blockDescription/whatCanYouGet"
 msgstr ""
-"Open all 31 doors to receive a unique 2D style, decals, days of WoT Premium "
-"Account, Crew books, Personal Reserves, and other rewards."
+"You are guaranteed to receive unique rewards for opening all 31 Calendar "
+"doors."
 
 msgid "introScreenView/blockTitle/howItWork"
 msgstr "How It Works"
@@ -127,35 +127,8 @@ msgstr ""
 msgid "mainView/tooltip/expired/title"
 msgstr "Door Not Opened in Time"
 
-msgid "mainView/tooltip/notEnoughResources/description"
-msgstr ""
-"Resources can be obtained for completing missions, collected daily from your"
-" Village and in your Best Friends' Villages, or received in Large Boxes."
-
-msgid "mainView/tooltip/notEnoughResources/title"
-msgstr "{orange_Open}Not Enough Resources{orange_Close}"
-
 msgid "marker/exclamationMark"
 msgstr "!"
-
-msgid "notification/adventCalendarDoorsAvailable/event/action"
-msgstr "Claim Reward"
-
-msgid "notification/adventCalendarDoorsAvailable/event/description"
-msgstr "Open Calendar doors every day and receive gifts."
-
-msgid "notification/adventCalendarDoorsAvailable/event/title"
-msgstr "Advent Calendar Gift Available!"
-
-msgid "notification/adventCalendarDoorsAvailable/postEvent/action"
-msgstr "To Calendar"
-
-msgid "notification/adventCalendarDoorsAvailable/postEvent/description"
-msgstr ""
-"Open remaining Advent Calendar doors using Holiday Ops resources by %(date)s"
-
-msgid "notification/adventCalendarDoorsAvailable/postEvent/title"
-msgstr "Don't Miss Out!"
 
 msgid "notification/door/opened/title"
 msgstr "Advent Calendar Door %(dayNumber)s Opened"
@@ -172,12 +145,6 @@ msgstr ""
 msgid "notification/lootbox/title"
 msgstr "Large New Year Box"
 
-msgid "notification/nyTerminalToken/title"
-msgstr "Gift Terminal Token Added"
-
-msgid "notification/ny_gp/title"
-msgstr "Gift Coins Added"
-
 msgid "notification/progerssion/finished"
 msgstr "Advent Calendar Progression Complete"
 
@@ -192,70 +159,6 @@ msgstr "Progression gifts can only be received in numerical order."
 
 msgid "progressionRewards/tooltip/lock/title"
 msgstr "Receive Previous Gift"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/attachment"
-msgstr "3D attachments"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/color_fir"
-msgstr "Color"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/credits"
-msgstr "Credits"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/gold"
-msgstr "Gold"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/highTierVehicles"
-msgstr "Tier VIII or IX Premium vehicle"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/lowTierVehicles"
-msgstr "Tier II–V Premium vehicle"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/nyRandomResource"
-msgstr "Random resources"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/ny_amber"
-msgstr "Warm Amber"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/ny_crystal"
-msgstr "Rock Crystal"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/ny_emerald"
-msgstr "Pure Emerald"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/ny_iron"
-msgstr "Meteoric Iron"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/premium_plus"
-msgstr "Days of WoT Premium Account"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/randomNyToy"
-msgstr "Random decoration"
-
-msgid "progressionRewards/tooltip/lootbox/bonusName/style_3d"
-msgstr "3D styles for Tier IX–X vehicles"
-
-msgid "progressionRewards/tooltip/lootbox/boxName"
-msgstr "Large New Year Box"
-
-msgid "progressionRewards/tooltip/lootbox/necessary/title"
-msgstr "EACH BOX CONTAINS"
-
-msgid "progressionRewards/tooltip/lootbox/probability/item/title"
-msgstr ""
-"Drop chance of items from the list: "
-"%(whiteSpanish_Open)s%(probability)s%(whiteSpanish_Close)s"
-
-msgid "progressionRewards/tooltip/lootbox/probability/vechicle/title"
-msgstr ""
-"Drop chance of items from the list: "
-"%(whiteSpanish_Open)s%(probability)s%(whiteSpanish_Close)s"
-
-msgid "progressionRewards/tooltip/lootbox/separator/comma"
-msgstr ", "
-
-msgid "progressionRewards/tooltip/lootbox/separator/slash"
-msgstr " / "
 
 msgid "progressionRewards/tooltip/lootbox/simple/body"
 msgstr "You will be able to discover what's inside the Box on %(date)s."
@@ -289,29 +192,6 @@ msgstr "%(img)s Receive the previous gift in the Progression to unlock."
 
 msgid "progressionRewards/tooltip/rewardReceived/title"
 msgstr "%(img)s Received"
-
-msgid "purchaseView/cancel"
-msgstr "Cancel"
-
-msgid "purchaseView/notEnoughResources/subTitle"
-msgstr ""
-"Resources can be obtained for completing missions,\n"
-"collected daily from your Village and in your Best Friends' Villages, or received in Large Boxes."
-
-msgid "purchaseView/notEnoughResources/title"
-msgstr "Not Enough Resources"
-
-msgid "purchaseView/open"
-msgstr "Open"
-
-msgid "purchaseView/title"
-msgstr "Open Advent Calendar door {cream_Open}%(day)s{cream_Close}?"
-
-msgid "purchaseView/toBoxes/label"
-msgstr "To Boxes"
-
-msgid "purchaseView/toBoxes/tooltip"
-msgstr "Click to go to Large Boxes"
 
 msgid "rewardView/confirm"
 msgstr "Affirmative!"

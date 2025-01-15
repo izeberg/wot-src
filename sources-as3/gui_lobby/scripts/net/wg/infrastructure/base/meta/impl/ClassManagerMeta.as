@@ -86,10 +86,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.MISSIONS_CONSTANTS;
    import net.wg.data.constants.generated.NODE_STATE_FLAGS;
    import net.wg.data.constants.generated.NOTIFICATIONS_CONSTANTS;
-   import net.wg.data.constants.generated.NY_CONSTS;
    import net.wg.data.constants.generated.PERSONAL_EXCHANGE_RATES;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_ALIASES;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_BUTTONS;
+   import net.wg.data.constants.generated.PLAYER_SATISFACTION_RATING;
    import net.wg.data.constants.generated.POSTPROGRESSION_CONSTS;
    import net.wg.data.constants.generated.PREBATTLE_ALIASES;
    import net.wg.data.constants.generated.PROFILE_CONSTANTS;
@@ -574,6 +574,14 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.EpicStats;
    import net.wg.gui.lobby.battleResults.IEmblemLoadedDelegate;
    import net.wg.gui.lobby.battleResults.TeamStats;
+   import net.wg.gui.lobby.battleResults.commendation.CBGEvent;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationBgMC;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationBtnData;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationButton;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationButtonGroupContainer;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionLayoutHelper;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidget;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidgetEvent;
    import net.wg.gui.lobby.battleResults.components.AlertMessage;
    import net.wg.gui.lobby.battleResults.components.BattleResultImageSwitcherView;
    import net.wg.gui.lobby.battleResults.components.BattleResultsEventRenderer;
@@ -1100,10 +1108,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.HangarAmunitionSwitchAnimator;
    import net.wg.gui.lobby.hangar.HangarContentHelper;
    import net.wg.gui.lobby.hangar.HangarHeader;
-   import net.wg.gui.lobby.hangar.NYEntryPointWidgetInject;
    import net.wg.gui.lobby.hangar.PrestigeProgressInject;
    import net.wg.gui.lobby.hangar.ResearchPanel;
-   import net.wg.gui.lobby.hangar.RewardKitsEntrancePointWidget;
    import net.wg.gui.lobby.hangar.SwitchModePanel;
    import net.wg.gui.lobby.hangar.VehPostProgressionBtn;
    import net.wg.gui.lobby.hangar.VehicleParameters;
@@ -1153,7 +1159,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.Comp7Widget;
    import net.wg.gui.lobby.hangar.quests.FlagContainer;
    import net.wg.gui.lobby.hangar.quests.FunRandomHangarWidget;
-   import net.wg.gui.lobby.hangar.quests.FunRandomNYHangarWidget;
    import net.wg.gui.lobby.hangar.quests.HEADER_QUESTS_CONSTANTS;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetDAAPI;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetInject;
@@ -1193,7 +1198,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRendererWithHighlight;
    import net.wg.gui.lobby.header.BadgeSlot;
    import net.wg.gui.lobby.header.LobbyHeader;
-   import net.wg.gui.lobby.header.NYWidgetUI;
    import net.wg.gui.lobby.header.OnlineCounter;
    import net.wg.gui.lobby.header.TankPanel;
    import net.wg.gui.lobby.header.events.BattleTypeSelectorEvent;
@@ -1438,15 +1442,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.modulesPanel.interfaces.IDeviceSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModuleSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModulesPanel;
-   import net.wg.gui.lobby.new_year.NYMainMenuInject;
-   import net.wg.gui.lobby.new_year.NYMainView;
-   import net.wg.gui.lobby.new_year.NYMainViewGFContentInject;
-   import net.wg.gui.lobby.new_year.NYMainViewSidebarUBInject;
-   import net.wg.gui.lobby.new_year.NYMainViewUBContentInject;
-   import net.wg.gui.lobby.ny2020.NYSelectVehiclePopover;
-   import net.wg.gui.lobby.ny2020.NYSelectVehicleRenderer;
-   import net.wg.gui.lobby.ny2020.NYVehicleSelectorFilter;
-   import net.wg.gui.lobby.ny2020.vo.NYSelectVehiclePopoverVO;
    import net.wg.gui.lobby.personalMissions.CampaignOperationsContainer;
    import net.wg.gui.lobby.personalMissions.PersonalMissionsPage;
    import net.wg.gui.lobby.personalMissions.components.AllOperationsContent;
@@ -1801,7 +1796,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.questsWindow.components.QuestBigIconAwardItem;
    import net.wg.gui.lobby.questsWindow.components.QuestIconAwardsBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestIconElement;
-   import net.wg.gui.lobby.questsWindow.components.QuestSingleLineTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestStatusComponent;
    import net.wg.gui.lobby.questsWindow.components.QuestTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestsCounter;
@@ -2396,7 +2390,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.CustomizationMainView;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationNonHistoricIcon;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationNotification;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationNyEarnRenderer;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationProgressiveKitPopover;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationPurchasesListItemRenderer;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationSaleRibbon;
@@ -2492,7 +2485,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabButtonVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomziationAnchorStateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.EarnListRendererVO;
    import net.wg.gui.lobby.vehicleCustomization.data.FilterFallbackDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.FiltersPopoverVO;
    import net.wg.gui.lobby.vehicleCustomization.data.FiltersStateVO;
@@ -2814,7 +2806,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.ProgressiveStyleMessageContent;
    import net.wg.gui.notification.ServiceMessageBase;
    import net.wg.gui.notification.ServiceMessageContent;
-   import net.wg.gui.notification.ServiceMessageContentBase;
    import net.wg.gui.notification.ServiceMessageItemRenderer;
    import net.wg.gui.notification.ServiceMessagePopUp;
    import net.wg.gui.notification.SystemMessageDialog;
@@ -2822,8 +2813,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.constants.ButtonType;
    import net.wg.gui.notification.constants.MessageMetrics;
    import net.wg.gui.notification.custom.ExchangeRatePersonalDiscount;
-   import net.wg.gui.notification.custom.GFNotification;
-   import net.wg.gui.notification.custom.GFNotificationInject;
    import net.wg.gui.notification.custom.NotificationAchievements;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntry;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntryWithoutWTR;
@@ -2854,7 +2843,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.events.NewsWidgetEvent;
    import net.wg.gui.notification.events.NotificationLayoutEvent;
    import net.wg.gui.notification.events.NotificationListEvent;
-   import net.wg.gui.notification.events.NotificationRegisteringEvent;
    import net.wg.gui.notification.events.ServiceMessageEvent;
    import net.wg.gui.notification.interfaces.IServiceMessage;
    import net.wg.gui.notification.vo.ButtonVO;
@@ -3095,13 +3083,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_NOTIFICATIONS_CONSTANTS:Class = NOTIFICATIONS_CONSTANTS;
       
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_NY_CONSTS:Class = NY_CONSTS;
-      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PERSONAL_EXCHANGE_RATES:Class = PERSONAL_EXCHANGE_RATES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PERSONAL_MISSIONS_ALIASES:Class = PERSONAL_MISSIONS_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PERSONAL_MISSIONS_BUTTONS:Class = PERSONAL_MISSIONS_BUTTONS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_PLAYER_SATISFACTION_RATING:Class = PLAYER_SATISFACTION_RATING;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_POSTPROGRESSION_CONSTS:Class = POSTPROGRESSION_CONSTS;
       
@@ -4145,6 +4133,22 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_TEAMSTATS:Class = TeamStats;
       
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_CBGEVENT:Class = CBGEvent;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBGMC:Class = CommendationBgMC;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBTNDATA:Class = CommendationBtnData;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBUTTON:Class = CommendationButton;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBUTTONGROUPCONTAINER:Class = CommendationButtonGroupContainer;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_PLAYERSATISFACTIONLAYOUTHELPER:Class = PlayerSatisfactionLayoutHelper;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_PLAYERSATISFACTIONWIDGET:Class = PlayerSatisfactionWidget;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_PLAYERSATISFACTIONWIDGETEVENT:Class = PlayerSatisfactionWidgetEvent;
+      
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_ALERTMESSAGE:Class = AlertMessage;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_BATTLERESULTIMAGESWITCHERVIEW:Class = BattleResultImageSwitcherView;
@@ -5179,13 +5183,9 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_HANGARHEADER:Class = HangarHeader;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_NYENTRYPOINTWIDGETINJECT:Class = NYEntryPointWidgetInject;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_PRESTIGEPROGRESSINJECT:Class = PrestigeProgressInject;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_RESEARCHPANEL:Class = ResearchPanel;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_REWARDKITSENTRANCEPOINTWIDGET:Class = RewardKitsEntrancePointWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_SWITCHMODEPANEL:Class = SwitchModePanel;
       
@@ -5285,8 +5285,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FUNRANDOMHANGARWIDGET:Class = FunRandomHangarWidget;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FUNRANDOMNYHANGARWIDGET:Class = FunRandomNYHangarWidget;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_HANGARWIDGETDAAPI:Class = HangarWidgetDAAPI;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_HANGARWIDGETINJECT:Class = HangarWidgetInject;
@@ -5364,8 +5362,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_BADGESLOT:Class = BadgeSlot;
       
       public static const NET_WG_GUI_LOBBY_HEADER_LOBBYHEADER:Class = LobbyHeader;
-      
-      public static const NET_WG_GUI_LOBBY_HEADER_NYWIDGETUI:Class = NYWidgetUI;
       
       public static const NET_WG_GUI_LOBBY_HEADER_ONLINECOUNTER:Class = OnlineCounter;
       
@@ -5854,24 +5850,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESLOT:Class = IModuleSlot;
       
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESPANEL:Class = IModulesPanel;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINMENUINJECT:Class = NYMainMenuInject;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEW:Class = NYMainView;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEWGFCONTENTINJECT:Class = NYMainViewGFContentInject;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEWSIDEBARUBINJECT:Class = NYMainViewSidebarUBInject;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEWUBCONTENTINJECT:Class = NYMainViewUBContentInject;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_NYSELECTVEHICLEPOPOVER:Class = NYSelectVehiclePopover;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_NYSELECTVEHICLERENDERER:Class = NYSelectVehicleRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_NYVEHICLESELECTORFILTER:Class = NYVehicleSelectorFilter;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_VO_NYSELECTVEHICLEPOPOVERVO:Class = NYSelectVehiclePopoverVO;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_CAMPAIGNOPERATIONSCONTAINER:Class = CampaignOperationsContainer;
       
@@ -6584,8 +6562,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSCOUNTER:Class = QuestsCounter;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSDASHLINEITEM:Class = QuestsDashlineItem;
-      
-      public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSINGLELINETEXTAWARDBLOCK:Class = QuestSingleLineTextAwardBlock;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSTATUSCOMPONENT:Class = QuestStatusComponent;
       
@@ -7747,8 +7723,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONNOTIFICATION:Class = CustomizationNotification;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONNYEARNRENDERER:Class = CustomizationNyEarnRenderer;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONPROGRESSIVEKITPOPOVER:Class = CustomizationProgressiveKitPopover;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONPURCHASESLISTITEMRENDERER:Class = CustomizationPurchasesListItemRenderer;
@@ -7938,8 +7912,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONTABNAVIGATORVO:Class = CustomizationTabNavigatorVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMZIATIONANCHORSTATEVO:Class = CustomziationAnchorStateVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_EARNLISTRENDERERVO:Class = EarnListRendererVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_FILTERFALLBACKDATAVO:Class = FilterFallbackDataVO;
       
@@ -8607,8 +8579,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGECONTENT:Class = ServiceMessageContent;
       
-      public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGECONTENTBASE:Class = ServiceMessageContentBase;
-      
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGEITEMRENDERER:Class = ServiceMessageItemRenderer;
       
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGEPOPUP:Class = ServiceMessagePopUp;
@@ -8622,10 +8592,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CONSTANTS_MESSAGEMETRICS:Class = MessageMetrics;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_EXCHANGERATEPERSONALDISCOUNT:Class = ExchangeRatePersonalDiscount;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_GFNOTIFICATION:Class = GFNotification;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_GFNOTIFICATIONINJECT:Class = GFNotificationInject;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONACHIEVEMENTS:Class = NotificationAchievements;
       
@@ -8686,8 +8652,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONLAYOUTEVENT:Class = NotificationLayoutEvent;
       
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONLISTEVENT:Class = NotificationListEvent;
-      
-      public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONREGISTERINGEVENT:Class = NotificationRegisteringEvent;
       
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_SERVICEMESSAGEEVENT:Class = ServiceMessageEvent;
       

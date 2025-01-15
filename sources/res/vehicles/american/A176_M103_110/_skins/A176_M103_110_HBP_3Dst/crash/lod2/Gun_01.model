@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A176_M103_110/_skins/A176_M103_110_HBP_3Dst/crash/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A176_M103_110/_skins/A176_M103_110_HBP_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.457915 -0.375776 -1.330219</min>
+		<max>0.481146 0.543611 5.406944</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

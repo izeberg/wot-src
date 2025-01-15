@@ -25,8 +25,6 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public var hitSplash:HealthBarAnimatedPart = null;
       
-      public var isSplashRunning:Boolean = false;
-      
       private var _color:String = "green";
       
       private var _maxHealth:Number = NaN;
@@ -37,8 +35,13 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private var _maxHealthMult:Number = NaN;
       
+      private var _flag:String;
+      
+      private var _isSplashRunning:Boolean = false;
+      
       public function HealthBar()
       {
+         this._flag = String.prototype;
          super();
       }
       
@@ -61,6 +64,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       override protected function draw() : void
       {
+         var barColor:String = null;
          var linkage:String = null;
          var healthProgressBarClass:Class = null;
          var progressBar:MovieClip = null;
@@ -73,7 +77,8 @@ package net.wg.gui.battle.views.vehicleMarkers
             {
                removeChild(this.healthBar);
             }
-            linkage = HEALTH_PROGRESS_BAR_PREFIX + this.getBarColor();
+            barColor = this._color != VehicleMarkersConstants.COLOR_RED && this._color != VehicleMarkersConstants.COLOR_PURPLE && this._color != VehicleMarkersConstants.COLOR_WHITE ? VehicleMarkersConstants.COLOR_GREEN : this._color;
+            linkage = HEALTH_PROGRESS_BAR_PREFIX + barColor;
             try
             {
                healthProgressBarClass = getDefinitionByName(linkage) as Class;
@@ -96,16 +101,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      protected function getBarColor() : String
-      {
-         return this._color != VehicleMarkersConstants.COLOR_RED && this._color != VehicleMarkersConstants.COLOR_PURPLE && this._color != VehicleMarkersConstants.COLOR_WHITE ? VehicleMarkersConstants.COLOR_GREEN : this._color;
-      }
-      
-      public function getVisibleWidth() : int
-      {
-         return this.getXForHealth(Math.min(this._currHealth,this._maxHealth),true);
-      }
-      
       public function updateHealth(param1:int, param2:String) : void
       {
          if(this._maxHealth == 0)
@@ -113,12 +108,13 @@ package net.wg.gui.battle.views.vehicleMarkers
             return;
          }
          this.hitSplash.setAnimationType(param2);
-         if(!this.isSplashRunning)
+         if(!this._isSplashRunning || param2 != this._flag)
          {
             this._beforeLastHit = this._currHealth;
+            this._flag = param2;
          }
          this._currHealth = param1;
-         this.isSplashRunning = true;
+         this._isSplashRunning = true;
          this.hitSplash.x = this.getXForHealth(this._currHealth,true);
          var _loc3_:int = this.getXForHealth(this._beforeLastHit,false) - this.hitSplash.x;
          this.hitSplash.scaleX = _loc3_ * ORIGINAL_SPLASH_WIDTH_MULT;
@@ -182,7 +178,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private function onHitSplashHideHandler(param1:Event) : void
       {
-         this.isSplashRunning = false;
+         this._isSplashRunning = false;
       }
    }
 }

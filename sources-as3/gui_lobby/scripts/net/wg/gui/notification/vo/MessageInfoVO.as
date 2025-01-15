@@ -15,16 +15,6 @@ package net.wg.gui.notification.vo
       
       public var linkage:String = "";
       
-      public var gfViewName:String = "";
-      
-      public var gfViewWidth:Number = -1;
-      
-      public var gfViewHeight:Number = -1;
-      
-      public var gfViewPopUpWidth:Number = -1;
-      
-      public var gfViewPopUpHeight:Number = -1;
-      
       public var message:String = "";
       
       public var icon:String = "";

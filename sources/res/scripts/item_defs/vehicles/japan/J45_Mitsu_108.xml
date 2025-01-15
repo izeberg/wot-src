@@ -5346,11 +5346,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.44
+						0.41
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.7
+						5.4
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -6178,23 +6178,27 @@
 			<level>5</level>
 			<price>10100</price>
 			<armor>
-				<armor_1>90</armor_1>
-				<armor_2>65</armor_2>
+				<armor_1>105</armor_1>
+				<armor_2>70</armor_2>
 				<armor_3>70</armor_3>
 				<armor_4>60</armor_4>
 				<armor_5>25</armor_5>
 				<armor_6>25</armor_6>
 				<armor_7>60</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>70</armor_9>
+				<armor_9>80</armor_9>
 				<armor_10>30</armor_10>
 				<armor_11>60</armor_11>
-				<armor_12>95</armor_12>
-				<armor_13>45</armor_13>
+				<armor_12>110</armor_12>
+				<armor_13>55</armor_13>
 				<armor_14>40</armor_14>
 				<armor_15>30</armor_15>
-				<armor_16>70</armor_16>
+				<armor_16>90</armor_16>
 				<armor_17>50</armor_17>
+				<armor_18>95</armor_18>
+				<armor_19>75</armor_19>
+				<armor_20>85</armor_20>
+				<armor_21>120</armor_21>
 			</armor>
 			<unlocks>
 				<gun>
@@ -6243,7 +6247,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							45
+							50
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -6271,11 +6275,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.42
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.5
+						5.1
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -6383,7 +6387,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							40
+							50
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -7205,15 +7209,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<_Hei>
-			shared
-			<unlocks>
-				<radio>
-					_Type96_Bo
-					<cost>1400</cost>
-				</radio>
-			</unlocks>
-		</_Hei>
 		<_Type96_Bo>
 			shared
 			<unlocks>

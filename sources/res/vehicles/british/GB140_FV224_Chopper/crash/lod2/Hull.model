@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB140_FV224_Chopper/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/british/GB140_FV224_Chopper/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.723839 -0.931598 -4.145610</min>
+		<max>1.749634 0.581456 3.114253</max>
+	</visibilityBox>
+</root>

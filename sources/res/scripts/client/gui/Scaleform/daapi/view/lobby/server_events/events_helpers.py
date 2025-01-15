@@ -1,4 +1,4 @@
-import logging, operator
+import operator
 from collections import defaultdict
 import typing
 from gui.Scaleform.daapi.view.lobby.customization.progression_helpers import getC11n2dProgressionLinkBtnParams
@@ -25,7 +25,6 @@ from gui.server_events.personal_progress.formatters import PostBattleConditionsF
 from gui.shared.formatters import icons, text_styles
 from helpers import dependency, i18n, int2roman, time_utils
 from helpers.i18n import makeString as _ms
-from items.components.ny_constants import CelebrityQuestTokenParts
 from nations import ALLIANCE_TO_NATIONS
 from optional_bonuses import TrackVisitor
 from personal_missions import PM_BRANCH
@@ -39,7 +38,6 @@ if typing.TYPE_CHECKING:
     from typing import Iterable, Union
     from gui.server_events.bonuses import BattlePassStyleProgressTokenBonus, TokensBonus
     from gui.server_events.event_items import Quest
-_logger = logging.getLogger(__name__)
 FINISH_TIME_LEFT_TO_SHOW = time_utils.ONE_DAY
 START_TIME_LIMIT = 5 * time_utils.ONE_DAY
 _AWARDS_PER_PAGE = 3
@@ -322,7 +320,7 @@ class QuestPostBattleInfo(EventPostBattleInfo, QuestInfoModel):
     def _getBonusDataFromOneOfBonuses(self, pCur=None):
         bonusData = self.event.getRawBonuses()
         trackResult = {}
-        if pCur:
+        if pCur is not None:
             pCurInnerDict = pCur.itervalues().next()
             bonusTracks = pCurInnerDict.get('bonusTracks', [])
             if bonusTracks:
@@ -405,40 +403,6 @@ class QuestPostBattleInfo(EventPostBattleInfo, QuestInfoModel):
                        'body': makeHtmlString('html_templates:lobby/quests/tooltips/progress', 'body', {'name': name}), 
                        'note': note}
             return (current, total, progressType, tooltip)
-
-
-class CelebrityQuestPostBattleInfo(QuestPostBattleInfo):
-    itemsCache = dependency.descriptor(IItemsCache)
-    eventsCache = dependency.descriptor(IEventsCache)
-
-    @property
-    def rewardEvent(self):
-        tokens = self.itemsCache.items.tokens.getTokens()
-        rewardQuestID = CelebrityQuestTokenParts.makeRewardsQuestIDFromQuestID(self.event.getID(), tokens)
-        if not rewardQuestID:
-            _logger.warning("can't find reward quest id for quest id %s", self.event.getID())
-            return
-        return self.eventsCache.getQuestByID(rewardQuestID)
-
-    def _getBonusDataFromOneOfBonuses(self, pCur=None):
-        bonusData = self.rewardEvent.getRawBonuses()
-        trackResult = {}
-        if pCur:
-            pCurInnerDict = pCur.itervalues().next()
-            bonusTracks = pCurInnerDict.get('bonusTracks', [])
-            if bonusTracks:
-                trackReplay = TrackVisitor(bonusTracks[(-1)], 1, None)
-                trackReplay.walkBonuses(bonusData, trackResult)
-        return trackResult
-
-    def _getBonuses(self, svrEvents, pCur=None, bonuses=None):
-        bonusData = self._getBonusDataFromOneOfBonuses(pCur)
-        bonuses = bonuses or self.rewardEvent.getBonuses(bonusData=bonusData)
-        result = OldStyleBonusesFormatter(self.rewardEvent).getFormattedBonuses(bonuses)
-        if result:
-            return [ award.getDict() for award in result ]
-        return [
-         formatters.packTextBlock(text_styles.alert(backport.text(R.strings.quests.bonuses.notAvailable()))).getDict()]
 
 
 class PersonalMissionPostBattleInfo(EventPostBattleInfo):
@@ -550,10 +514,6 @@ def _getEventInfoData(event):
 
 def getEventPostBattleInfo(event, svrEvents=None, pCur=None, pPrev=None, isProgressReset=False, isCompleted=False, progressData=None):
     return _getEventInfoData(event).getPostBattleInfo(svrEvents, pCur or {}, pPrev or {}, isProgressReset, isCompleted, progressData)
-
-
-def getCelebritiPostBattleInfo(event, svrEvents=None, pCur=None, pPrev=None, isProgressReset=False, isCompleted=False, progressData=None):
-    return CelebrityQuestPostBattleInfo(event).getPostBattleInfo(svrEvents, pCur or {}, pPrev or {}, isProgressReset, isCompleted, progressData)
 
 
 class Progression2dStyleFormater(object):

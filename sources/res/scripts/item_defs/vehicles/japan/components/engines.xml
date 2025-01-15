@@ -713,7 +713,7 @@
 			<maxRegenHealth>130</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<fireStartingChance>
-				0.12
+				0.15
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>346</rpm_min>
@@ -969,7 +969,7 @@
 			<maxRegenHealth>130</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<fireStartingChance>
-				0.1
+				0.12
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>280</rpm_min>
@@ -988,7 +988,7 @@
 			<maxRegenHealth>130</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<fireStartingChance>
-				0.1
+				0.12
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>253</rpm_min>
@@ -1008,7 +1008,7 @@
 			<maxRegenHealth>160</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<fireStartingChance>
-				0.2
+				0.1
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>240</rpm_min>
@@ -1168,18 +1168,18 @@
 		</Kawasaki_Ha_60_LB>
 		<Mitsubishi_12ZG>
 			<userString>#japan_vehicles:Mitsubishi_12ZG</userString>
-			<tags>gasoline</tags>
+			<tags>diesel</tags>
 			<level>9</level>
 			<price>81600</price>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
 			<power>700</power>
 			<weight>2400</weight>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>130</maxRegenHealth>
 			<repairCost>6</repairCost>
 			<fireStartingChance>
-				0.2
+				0.15
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>564</rpm_min>

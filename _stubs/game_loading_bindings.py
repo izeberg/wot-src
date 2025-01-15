@@ -10,6 +10,7 @@ def bringLoadingViewToTop(*args, **kwargs): pass
 def closeSplashScreen(*args, **kwargs): pass
 def createLoadingView(*args, **kwargs): pass
 def destroyLoadingView(*args, **kwargs): pass
+def getIsTransitioning(*args, **kwargs): pass
 def getIsVerbose(*args, **kwargs): pass
 def isViewOpened(*args, **kwargs): pass
 def setProgress(*args, **kwargs): pass

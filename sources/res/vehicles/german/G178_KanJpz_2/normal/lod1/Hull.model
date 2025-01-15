@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.738072 -0.656136 -3.434917</min>
+		<max>1.737141 2.593050 3.850844</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G178_KanJpz_2/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G178_KanJpz_2/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>

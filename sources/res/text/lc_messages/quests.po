@@ -1226,9 +1226,6 @@ msgstr "Inscription"
 msgid "bonusName/modification"
 msgstr "Effect"
 
-msgid "bonusName/ny_gp"
-msgstr "Gift Coins"
-
 msgid "bonusName/optional_devices_assistant"
 msgstr "Equipment Assistant"
 
@@ -1352,9 +1349,6 @@ msgstr "Crew Skin:"
 msgid "bonuses/item/freeXPFactor"
 msgstr "Free Experience coefficient"
 
-msgid "bonuses/item/ny23RandomResources"
-msgstr "resources"
-
 msgid "bonuses/item/premium"
 msgstr "Days of Wargaming Premium Account:"
 
@@ -1456,6 +1450,18 @@ msgstr "Expires in %H h %M min"
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Expires in %MM:%SS"
+
+msgid "dailyQuests/comp7/nextTasks"
+msgstr "5 new missions in:"
+
+msgid "dailyQuests/comp7/progressCounter"
+msgstr "%(current)d%(separator)s%(total)d"
+
+msgid "dailyQuests/comp7/questsCounter"
+msgstr "%(current)d / %(total)d"
+
+msgid "dailyQuests/comp7/reward"
+msgstr "Claim your reward!"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "Play a battle"
@@ -4599,15 +4605,6 @@ msgstr ""
 "only after the end of each battle. These missions do not have any time "
 "limits and can be completed at any time."
 
-msgid "infoPage/dailyMissions/nyDailyDailyMissions"
-msgstr ""
-"Standard Missions are random conditions that can be fulfilled every day. "
-"Similar to Personal Missions, progress in Standard Missions is only updated "
-"after each battle. Make sure to complete a standard mission the day you "
-"receive it, or it will be moved to the next day and you will be unable to "
-"complete subsequent missions. Each mission in Holiday Ops 2025 rewards you "
-"with a different number of {fff_Open}random resources.{fff_Close}"
-
 msgid "infoPage/dailyMissions/winback"
 msgstr ""
 "Standard Missions with random conditions can be completed every day. "
@@ -4769,14 +4766,6 @@ msgstr "Strategic mission"
 
 msgid "item/type/specialMission"
 msgstr "Stronghold: Special Instructions"
-
-msgid "lockedForRerollTooltip/body"
-msgstr ""
-"This mission will be available for completion every day during the event and"
-" cannot be re-rolled."
-
-msgid "lockedForRerollTooltip/header"
-msgstr "Fixed mission"
 
 msgid "metrics/state/done"
 msgstr "Completed"

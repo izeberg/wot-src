@@ -177,11 +177,6 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
 
         return result
 
-    @staticmethod
-    def isQueuePausingWindow(window):
-        return window.windowStatus in (WindowStatus.LOADING, WindowStatus.LOADED) and window.layer in (
-         WindowLayer.OVERLAY, WindowLayer.TOP_WINDOW, WindowLayer.FULLSCREEN_WINDOW)
-
     def __tryProcess(self):
         if not self.__locks:
             if self.isEnabled():
@@ -220,17 +215,13 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         if not self.__activeQueue or self.__isWaitingShown:
             return
         self.__processAfterWaiting = False
-        if self.isEnabled() and not self.__locks and not self.__gui.windowsManager.findWindows(self.isQueuePausingWindow):
+        if self.isEnabled() and not self.__locks and not self.__gui.windowsManager.findWindows(self.__overlappingWindowsPredicate):
             command = self.__activeQueue.pop(0)
-            if command.isOverdue():
-                _logger.debug('Command %r is overdue. Skip it.', command)
-                self.__processNext()
-            else:
-                _logger.debug('Executing next command: %r', command)
-                self.__currentWindow = command.getWindow()
-                self.__isExecuting = True
-                command.execute()
-                self.__isExecuting = False
+            _logger.debug('Executing next command: %r', command)
+            self.__currentWindow = command.getWindow()
+            self.__isExecuting = True
+            command.execute()
+            self.__isExecuting = False
         return
 
     def __destroyCurrentWindow(self):
@@ -258,3 +249,8 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
             BigWorld.cancelCallback(self.__callbackID)
             self.__callbackID = None
         return
+
+    @staticmethod
+    def __overlappingWindowsPredicate(window):
+        return window.windowStatus in (WindowStatus.LOADING, WindowStatus.LOADED) and window.layer in (
+         WindowLayer.OVERLAY, WindowLayer.TOP_WINDOW, WindowLayer.FULLSCREEN_WINDOW)

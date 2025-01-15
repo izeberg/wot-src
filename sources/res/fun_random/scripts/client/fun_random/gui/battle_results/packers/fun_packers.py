@@ -1,3 +1,4 @@
+from frameworks.wulf.view.array import fillIntsArray
 from fun_random_common.fun_constants import FunEfficiencyParameterCount
 from fun_random.gui.battle_results.packers.fun_progression_helpers import FunPbsProgressionHelper, FunPbsUnlimitedProgressionHelper
 from fun_random.gui.battle_results.pbs_helpers import getTotalTMenXPToShow, getTotalGoldToShow, getEventID, isCreditsShown, isGoldShown, isXpShown, isFreeXpShown, isTmenXpShown, isCrystalShown, isFunAddXpBonusStatusAcceptable
@@ -122,6 +123,8 @@ class FunRandomProgress(FunProgressionWatcher, FunAssetPacksMixin):
             model.setPreviousStage(progressionData.previousStage)
             model.setCurrentStage(progressionData.currentStage)
             model.setMaximumStage(progressionData.maximumStage)
+            stageRequiredCounters = model.getStageRequiredCounters()
+            fillIntsArray(progressionData.stageRequiredCounters, stageRequiredCounters)
             bonuses = progressionData.bonuses
             rewardsData = kwargs.get('rewardsData')
             if bonuses and rewardsData is not None:

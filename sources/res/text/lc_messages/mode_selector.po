@@ -90,8 +90,14 @@ msgstr "Season of the Crimson Manticore has ended"
 msgid "mode/comp7/seasonEnd/third"
 msgstr "Season of the Jade Manticore has ended"
 
-msgid "mode/comp7/seasonStart"
+msgid "mode/comp7/seasonStart/first"
 msgstr "Season of the Azure Manticore will start on %(date)s"
+
+msgid "mode/comp7/seasonStart/second"
+msgstr "Season of the Crimson Manticore will start on %(date)s"
+
+msgid "mode/comp7/seasonStart/third"
+msgstr "Season of the Jade Manticore will start on %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Rank Inactivity"

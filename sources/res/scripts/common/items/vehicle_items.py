@@ -302,10 +302,10 @@ class Turret(InstallableItem):
 class Gun(InstallableItem):
     __metaclass__ = ReflectionMetaclass
     __slots__ = ('rotationSpeed', 'reloadTime', 'aimingTime', 'maxAmmo', 'invisibilityFactorAtShot',
-                 'effects', 'reloadEffect', 'impulse', 'recoil', 'animateEmblemSlots',
-                 'shotOffset', 'turretYawLimits', 'pitchLimits', 'staticTurretYaw',
-                 'staticPitch', 'shotDispersionAngle', 'shotDispersionFactors', 'burst',
-                 'clip', 'shots', 'autoreload', 'autoreloadHasBoost', 'drivenJoints',
+                 'effectsCaliber', 'effects', 'reloadEffect', 'impulse', 'recoil',
+                 'animateEmblemSlots', 'shotOffset', 'turretYawLimits', 'pitchLimits',
+                 'staticTurretYaw', 'staticPitch', 'shotDispersionAngle', 'shotDispersionFactors',
+                 'burst', 'clip', 'shots', 'autoreload', 'autoreloadHasBoost', 'drivenJoints',
                  'customizableVehicleAreas', 'dualGun', 'edgeByVisualModel', 'prefabs',
                  'shootImpulses', 'dualAccuracy', 'isDamageMutable', 'forcedReloadTime',
                  'autoShoot', 'twinGun', '__weakref__')
@@ -335,6 +335,7 @@ class Gun(InstallableItem):
         self.autoShoot = component_constants.DEFAULT_GUN_AUTOSHOOT
         self.twinGun = component_constants.DEFAULT_GUN_TWINGUN
         self.drivenJoints = None
+        self.effectsCaliber = component_constants.ZERO_FLOAT
         self.effects = None
         self.reloadEffect = None
         self.impulse = component_constants.ZERO_FLOAT
@@ -399,7 +400,7 @@ class Shell(BasicItem):
     __slots__ = ('caliber', 'isTracer', 'isForceTracer', 'armorDamage', 'deviceDamage',
                  'damageRandomization', 'damageRandomizationType', 'piercingPowerRandomization',
                  'piercingPowerRandomizationType', 'icon', 'iconName', 'isGold',
-                 'type', 'stun', 'effectsIndex', 'tags', 'secondaryAttackReason',
+                 'type', 'stun', 'effectsCaliber', 'effectsIndex', 'tags', 'secondaryAttackReason',
                  'isDamageMutable', 'maxDistance', 'dynamicEffectsIndexes', 'obstaclesDamage',
                  'obstaclesPowerReduction')
 
@@ -416,6 +417,7 @@ class Shell(BasicItem):
         self.piercingPowerRandomizationType = RandomizationType.NORMAL
         self.stun = None
         self.type = None
+        self.effectsCaliber = component_constants.ZERO_FLOAT
         self.effectsIndex = component_constants.ZERO_INT
         self.dynamicEffectsIndexes = component_constants.EMPTY_TUPLE
         self.isGold = False

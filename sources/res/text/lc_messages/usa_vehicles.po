@@ -1421,6 +1421,33 @@ msgstr "Magazine loading system and a unique exterior"
 msgid "A176_M103_110"
 msgstr "M103M"
 
+msgid "A176_M103_110_CFE_R"
+msgstr "Rambo"
+
+msgid "A176_M103_110_CFE_R_descr"
+msgstr ""
+"\"Covey leader to Raven. Come in, Raven. Rambo? This is Trautman. Listen to "
+"me carefully now. You're the best damn soldier I've ever seen. What you did "
+"in that tank in Afghanistan was brave—brilliant, even. But it was also "
+"reckless, and you're damn lucky you didn't get yourself killed. We can't "
+"afford that kind of risk here, John. An all-out tank battle is a different "
+"ballgame. This isn't a solo mission, like before—it's a team effort. But I "
+"know you've got what it takes. Heck, you might even enjoy it. Now get out "
+"there and give 'em hell, son.\""
+
+msgid "A176_M103_110_CFE_R_long_special"
+msgstr ""
+"The Rambo's main advantage over the regular M103 is its 110 mm gun, which "
+"has the highest DPM of all heavies in its tier. This means more active play,"
+" but also lower alpha damage. Otherwise, the Rambo is identical to its "
+"predecessor, with good mobility and decent survivability."
+
+msgid "A176_M103_110_CFE_R_short"
+msgstr "Rambo"
+
+msgid "A176_M103_110_CFE_R_short_special"
+msgstr "High rate of fire, good frontal armor"
+
 msgid "A176_M103_110_descr"
 msgstr ""
 "Throughout its service from 1957 through 1974, the M103 was modernized "
@@ -1432,7 +1459,7 @@ msgstr ""
 msgid "A176_M103_110_long_special"
 msgstr ""
 "The M103M's main advantage over the regular M103 is its 110 mm gun, which "
-"has the highest DMP of all heavies in its tier as well as good accuracy and "
+"has the highest DPM of all heavies in its tier as well as good accuracy and "
 "stabilization. This means more active play, but also lower alpha damage. "
 "Otherwise, the M103M is identical to its predecessor, with good mobility and"
 " decent survivability."
@@ -1510,6 +1537,12 @@ msgstr "M46 KR"
 
 msgid "A63_M46_Patton_KR_short_special"
 msgstr "A decent gun depression angle and view range"
+
+msgid "A69_T110E5_7x7"
+msgstr "T110E5 7x7"
+
+msgid "A69_T110E5_7x7_short"
+msgstr "T110E5 7x7"
 
 msgid "A74_T1_E6_long_special"
 msgstr ""
@@ -1916,6 +1949,9 @@ msgstr "Stinger"
 
 msgid "Chassis_A176_M103_110"
 msgstr "M103M"
+
+msgid "Chassis_A176_M103_110_CFE_R"
+msgstr "Rambo"
 
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
@@ -4210,6 +4246,9 @@ msgstr "Stinger"
 msgid "Turret_1_A176_M103_110"
 msgstr "M103M"
 
+msgid "Turret_1_A176_M103_110_CFE_R"
+msgstr "Rambo"
+
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
 
@@ -5371,6 +5410,9 @@ msgstr "HVAP-DS-T M331A3"
 msgid "_76mm_AP_M339"
 msgstr "AP M339"
 
+msgid "_76mm_AP_M339E5"
+msgstr "AP M339E5"
+
 msgid "_76mm_AP_M79"
 msgstr "AP M62"
 
@@ -5482,6 +5524,9 @@ msgstr "HE M352"
 msgid "_76mm_HE_M352A1"
 msgstr "HE M352A1"
 
+msgid "_76mm_HE_M352E5"
+msgstr "HE M352E5"
+
 msgid "_76mm_HE_M42A1"
 msgstr "HE M42A1"
 
@@ -5493,6 +5538,9 @@ msgstr "HE M42B1"
 
 msgid "_76mm_HVAP_M319"
 msgstr "HVAP M319"
+
+msgid "_76mm_HVAP_M319E5"
+msgstr "HVAP M319E5"
 
 msgid "_76mm_HVAP_M93"
 msgstr "HVAP M93"

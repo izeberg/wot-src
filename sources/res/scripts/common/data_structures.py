@@ -1,4 +1,5 @@
 from collections import defaultdict
+from constants import PICKLER_PROTOCOL_METHODS
 from soft_exception import SoftException
 
 class DictObj(dict):
@@ -6,6 +7,10 @@ class DictObj(dict):
     def __getattr__(self, name):
         if name in self:
             return self[name]
+        else:
+            if name in PICKLER_PROTOCOL_METHODS:
+                raise AttributeError(name)
+            return
 
     def __setattr__(self, name, value):
         self[name] = value
