@@ -100,10 +100,11 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         historyName, guaranteedFrequencyName = box.getHistoryName(), box.getGuaranteedFrequencyName()
         if historyName not in boxesHistory:
             return 0
-        _, limits, _ = boxesHistory[historyName]
-        if guaranteedFrequencyName not in limits:
-            return 0
-        return limits[guaranteedFrequencyName][1]
+        else:
+            _, limits, _ = boxesHistory[historyName]
+            if limits is None or guaranteedFrequencyName not in limits:
+                return 0
+            return limits[guaranteedFrequencyName][1]
 
     def getLootBoxesStats(self):
         return self.getCacheValue('lootBoxes', {}).get('stats')
@@ -113,10 +114,11 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         historyName, probabilityBonusLimitName = box.getHistoryName(), box.getProbabilityBonusLimitName()
         if historyName not in boxesHistory:
             return 0
-        _, limits, _ = boxesHistory[historyName]
-        if probabilityBonusLimitName not in limits:
-            return 0
-        return limits[probabilityBonusLimitName][2]
+        else:
+            _, limits, _ = boxesHistory[historyName]
+            if limits is None or probabilityBonusLimitName not in limits:
+                return 0
+            return limits[probabilityBonusLimitName][2]
 
     def getLastViewedProgress(self, tokenId):
         return self.__tokensProgressDelta.getPrevValue(tokenId)
