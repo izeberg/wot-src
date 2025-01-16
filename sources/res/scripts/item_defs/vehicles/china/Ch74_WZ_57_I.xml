@@ -12,7 +12,7 @@
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>30</forward>
-		<backward>14</backward>
+		<backward>10</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3101,12 +3101,12 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.6
+						13.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.18
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3716,7 +3716,7 @@
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.1266
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>

@@ -9837,7 +9837,7 @@
 		<projection_decal>
 			<id>31230</id>
 			<texture>gui/maps/vehicles/decals/projection_decals/cool/NY_Blogger_2025.dds</texture>
-			<tags>formfactor_rect1x2 direction_right_to_left left</tags>
+			<tags>hiddenInUI styleOnly safe formfactor_rect1x2 direction_right_to_left left</tags>
 			<userString>#vehicle_customization:NY_Decal_Blogger_2025/name</userString>
 			<description>#vehicle_customization:NY_Decal_Blogger_2025/description</description>
 			<glossTexture>gui/maps/vehicles/decals/projection_decals/cool/NY_Blogger_2025_GMM.dds</glossTexture>
@@ -9849,7 +9849,6 @@
 				</exclude>
 			</vehicleFilter>
 		</projection_decal>
-		<tags>hiddenInUI styleOnly safe</tags>
 	</itemGroup>
 	<itemGroup>
 		<name>Prostokvashino_NY_2025</name>
