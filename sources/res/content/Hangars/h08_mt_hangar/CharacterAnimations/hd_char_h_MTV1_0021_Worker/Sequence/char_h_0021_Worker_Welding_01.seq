@@ -84,6 +84,17 @@
 			</frame>
 		</track>
 		<track>
+			<name>outerRadius</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
 			<name>multiplier</name>
 			<type>float</type>
 			<frame>

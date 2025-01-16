@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Hangars/h08_mt_hangar/personalization_objects/entourage/normal/lod1/hd_h08_MTV1_Entourage_01</nodefullVisual>
 	<parent>content/Hangars/h08_mt_hangar/personalization_objects/entourage/normal/lod2/hd_h08_MTV1_Entourage_01</parent>
 	<extent>300.000000</extent>
 	<visibilityBox>
 		<min>-8.032858 -0.111070 -9.475568</min>
 		<max>8.032852 0.081792 9.475567</max>
 	</visibilityBox>
+	<nodefullVisual>content/Hangars/h08_mt_hangar/personalization_objects/entourage/normal/lod1/hd_h08_MTV1_Entourage_01</nodefullVisual>
 </root>

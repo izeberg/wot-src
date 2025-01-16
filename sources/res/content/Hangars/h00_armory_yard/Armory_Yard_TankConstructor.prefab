@@ -5004,7 +5004,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -18671,7 +18671,7 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>0</value>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -18896,7 +18896,7 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>0</value>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -20576,7 +20576,7 @@
 				<config>
 					<property>
 						<name>poiName</name>
-						<value>Turret</value>
+						<value>Gun</value>
 					</property>
 				</config>
 			</component>

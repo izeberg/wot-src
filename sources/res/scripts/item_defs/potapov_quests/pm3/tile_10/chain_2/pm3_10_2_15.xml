@@ -41,8 +41,11 @@
 				<postBattle>
 					<and>
 						<vehicleKills>
-							<whileFullHealth/>
 							<greaterOrEqual>7</greaterOrEqual>
+						</vehicleKills>
+						<vehicleKills>
+							<whileFullHealth/>
+							<greaterOrEqual>3</greaterOrEqual>
 						</vehicleKills>
 						<win/>
 					</and>

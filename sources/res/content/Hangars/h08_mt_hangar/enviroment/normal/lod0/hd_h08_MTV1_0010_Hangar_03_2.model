@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0010_Hangar_03_2</nodefullVisual>
 	<visibilityBox>
 		<min>-44.431492 -1.000035 -85.579659</min>
 		<max>0.001479 33.585186 1.378115</max>
 	</visibilityBox>
 	<parent>content/Hangars/h08_mt_hangar/enviroment/normal/lod1/hd_h08_MTV1_0010_Hangar_03_2</parent>
 	<extent>600.000000</extent>
+	<nodefullVisual>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0010_Hangar_03_2</nodefullVisual>
 </root>

@@ -112,7 +112,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.680479 -1.515460</row3>
+					<row3>0.000000 0.675079 -1.511100</row3>
 				</transform>
 			</node>
 			<node>
@@ -121,7 +121,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
+					<row3>0.000000 0.000000 0.016000</row3>
 				</transform>
 			</node>
 		</node>
@@ -173,10 +173,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_hull_01_GMM.dds</Texture>
 					</property>
@@ -192,8 +188,12 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_hull_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>0.010066 -0.068075 0.001536</groupOrigin>
+				<groupOrigin>0.010066 -0.064786 0.001536</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1

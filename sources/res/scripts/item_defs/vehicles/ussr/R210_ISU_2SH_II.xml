@@ -1912,7 +1912,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
@@ -3175,7 +3175,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>34</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>

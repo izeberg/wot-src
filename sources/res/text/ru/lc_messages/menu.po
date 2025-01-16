@@ -2251,8 +2251,7 @@ msgid "extraParams/name/temperatureCoolingDelay"
 msgstr "Время между прекращением стрельбы и началом охлаждения орудия."
 
 msgid "extraParams/name/temperatureCoolingPerSec"
-msgstr ""
-"Количество условных единиц температуры, рассеиваемых в единицу времени."
+msgstr "Время, за которое орудие остынет на каждой стадии."
 
 msgid "extraParams/name/temperatureDamageFactor"
 msgstr ""
@@ -2261,14 +2260,8 @@ msgstr ""
 
 msgid "extraParams/name/temperatureHeatingPerSec"
 msgstr ""
-"Количество условных единиц температуры, накапливаемых орудием за секунду "
-"непрерывной стрельбы."
-
-msgid "extraParams/name/temperatureMaxTemperature"
-msgstr ""
-"Максимальное значение температуры (в условных единицах), которым обладает "
-"каждая термическая стадия. При превышении даного значения орудие либо "
-"переходит в следующую стадию, либо перегревается на последней стидии."
+"Время, за которое орудие нагреется при непрерывной стрельбе на каждой "
+"стадии."
 
 msgid "extraParams/name/temperatureStatesCount"
 msgstr ""

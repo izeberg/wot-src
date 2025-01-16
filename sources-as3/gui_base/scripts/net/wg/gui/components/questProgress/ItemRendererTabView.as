@@ -199,6 +199,7 @@ package net.wg.gui.components.questProgress
          {
             _loc4_ = this.resultMetric;
             _loc2_ = this.setMetricPosition(this.resultMetric,_loc2_,_loc1_);
+            _loc3_ = _loc3_ || _loc4_.visible;
          }
          if(!_loc1_ && _loc4_ && _loc3_)
          {

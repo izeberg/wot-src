@@ -285,12 +285,27 @@ package net.wg.gui.battle.views.questProgress
       
       private function createItems(param1:IQuestProgressData) : void
       {
+         var _loc3_:IQPItemRenderer = null;
+         var _loc4_:IQPItemRenderer = null;
+         var _loc5_:IQPItemOrConditionIcon = null;
          this._itemsMap = new Dictionary();
          this._items = new Vector.<IQPItemRenderer>(0);
          this._orItems = new Vector.<IQPItemOrConditionIcon>();
          this._secondItems = new Vector.<IQPItemRenderer>(0);
+         var _loc2_:Vector.<IQuestProgressItemData> = param1.getSecondData();
          this.initItems(param1.getData(),this._items);
-         this.initItems(param1.getSecondData(),this._secondItems);
+         this.initItems(_loc2_,this._secondItems);
+         if(!param1.isSecondHeaderHasProgress && _loc2_ && _loc2_.length)
+         {
+            _loc3_ = this._items[this._items.length - 1];
+            _loc4_ = this._secondItems[0];
+            if(_loc3_ && _loc3_.isInOrGroup && _loc4_.isInOrGroup && _loc3_.orderType == _loc4_.orderType)
+            {
+               _loc5_ = App.utils.classFactory.getComponent(this.getRendererOrLinkage(),IQPItemOrConditionIcon);
+               _loc5_.setItems(_loc3_,_loc4_);
+               this._orItems.push(_loc5_);
+            }
+         }
          this.manageOrBetweenItems();
       }
       

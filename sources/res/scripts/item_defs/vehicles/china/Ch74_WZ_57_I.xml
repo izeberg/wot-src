@@ -12,7 +12,7 @@
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
 		<forward>30</forward>
-		<backward>14</backward>
+		<backward>10</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3101,12 +3101,12 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.6
+						13.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.18
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3203,7 +3203,7 @@
 				<collisionModelServer>vehicles/chinese/Ch74_WZ_57_I/collision/Turret_01.model</collisionModelServer>
 				<collisionModelClient>vehicles/chinese/Ch74_WZ_57_I/collision_client/Turret_01.model</collisionModelClient>
 			</hitTester>
-			<gunPosition>0.000230 0.301282 1.017203</gunPosition>
+			<gunPosition>-0.000000 0.300468 1.138503</gunPosition>
 			<customizationSlots>
 				<slot>
 					<slotType>paint</slotType>
@@ -3716,7 +3716,7 @@
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.1266
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>

@@ -6108,7 +6108,7 @@
 			<mul>
 				<name>miscAttrs/gunAimingTimeFactor</name>
 				<value>
-					1.1
+					1.08
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6131,7 +6131,7 @@
 			<mul>
 				<name>vehicleGunAimSpeed</name>
 				<value>
-					0.9
+					0.92
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6144,7 +6144,7 @@
 			<mul>
 				<name>miscAttrs/gunAimingTimeFactor</name>
 				<value>
-					0.9
+					0.92
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6174,7 +6174,7 @@
 			<mul>
 				<name>vehicleGunAimSpeed</name>
 				<value>
-					1.1
+					1.08
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6700,7 +6700,7 @@
 			<mul>
 				<name>miscAttrs/gun/shotDispersionFactors/afterShot</name>
 				<value>
-					1.18
+					1.15
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6716,7 +6716,7 @@
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>
 				<value>
-					1.18
+					1.15
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6729,7 +6729,7 @@
 			<mul>
 				<name>miscAttrs/gun/shotDispersionFactors/afterShot</name>
 				<value>
-					0.82
+					0.85
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -6745,7 +6745,7 @@
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>
 				<value>
-					0.82
+					0.85
 					<!--BW_String-->
 				</value>
 			</mul>

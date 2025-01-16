@@ -1219,8 +1219,6 @@ package
       
       public static const EXTRAPARAMS_NAME_TEMPERATURESTATESCOUNT:String = "#menu:extraParams/name/temperatureStatesCount";
       
-      public static const EXTRAPARAMS_NAME_TEMPERATUREMAXTEMPERATURE:String = "#menu:extraParams/name/temperatureMaxTemperature";
-      
       public static const EXTRAPARAMS_NAME_TEMPERATUREHEATINGPERSEC:String = "#menu:extraParams/name/temperatureHeatingPerSec";
       
       public static const EXTRAPARAMS_NAME_TEMPERATURECOOLINGPERSEC:String = "#menu:extraParams/name/temperatureCoolingPerSec";

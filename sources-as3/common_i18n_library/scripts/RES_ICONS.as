@@ -23073,6 +23073,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/virtuosoBattleBooster.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s180x135/additionalInvisibilityDevice.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_AIMINGSTABILIZER:String = "../maps/icons/quests/bonuses/s180x135/aimingStabilizer.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_AUTOEXTINGUISHERS:String = "../maps/icons/quests/bonuses/s180x135/autoExtinguishers.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_BATTLEBOOSTERREPLACE_OVERLAY:String = "../maps/icons/quests/bonuses/s180x135/battleBoosterReplace_overlay.png";
@@ -23151,9 +23155,17 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GOLD:String = "../maps/icons/quests/bonuses/s180x135/gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GROUSERS:String = "../maps/icons/quests/bonuses/s180x135/grousers.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GUNNER_SMOOTHTURRET:String = "../maps/icons/quests/bonuses/s180x135/gunner_smoothTurret.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_HANDEXTINGUISHERS:String = "../maps/icons/quests/bonuses/s180x135/handExtinguishers.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IMPROVEDCONFIGURATION:String = "../maps/icons/quests/bonuses/s180x135/improvedConfiguration.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IMPROVEDROTATIONMECHANISM:String = "../maps/icons/quests/bonuses/s180x135/improvedRotationMechanism.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IMPROVEDSIGHTS:String = "../maps/icons/quests/bonuses/s180x135/improvedSights.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IMPROVEDVENTILATION:String = "../maps/icons/quests/bonuses/s180x135/improvedVentilation.png";
       
@@ -23200,6 +23212,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_SMALLMEDKIT:String = "../maps/icons/quests/bonuses/s180x135/smallMedkit.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_SMALLREPAIRKIT:String = "../maps/icons/quests/bonuses/s180x135/smallRepairkit.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STEREOSCOPE:String = "../maps/icons/quests/bonuses/s180x135/stereoscope.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_PROGRESS_31199_1:String = "../maps/icons/quests/bonuses/s180x135/style_progress_31199_1.png";
       
@@ -27172,6 +27186,14 @@ package
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G162_PROJECT_KPZ_07P_E_600X450:String = "../maps/icons/resourceWell/vehicles/G162_Project_Kpz_07P_E_600x450.png";
       
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G162_PROJECT_KPZ_07P_E_600X450_3D:String = "../maps/icons/resourceWell/vehicles/G162_Project_Kpz_07P_E_600x450_3d.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_IT33_ORSO_400X300:String = "../maps/icons/resourceWell/vehicles/It33_Orso_400x300.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_IT33_ORSO_400X300_3D:String = "../maps/icons/resourceWell/vehicles/It33_Orso_400x300_3d.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_IT33_ORSO_600X450:String = "../maps/icons/resourceWell/vehicles/It33_Orso_600x450.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_IT33_ORSO_600X450_3D:String = "../maps/icons/resourceWell/vehicles/It33_Orso_600x450_3d.png";
       
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_LEON_232X174:String = "../maps/icons/resourceWell/vehicles/Leon_232x174.png";
       

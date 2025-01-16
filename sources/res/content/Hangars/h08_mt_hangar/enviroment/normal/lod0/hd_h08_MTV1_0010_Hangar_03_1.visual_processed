@@ -174,10 +174,6 @@
 						<Int>168</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Alpha_AM.dds</Texture>
 					</property>
@@ -192,6 +188,10 @@
 					<property>
 						normalMap
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Alpha_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-21.271093 0.147874 35.582886</groupOrigin>
@@ -222,7 +222,7 @@
 					</property>
 					<property>
 						albedoHeightTile2
-						<Texture>content/Environment/00_Tiles/dds/Sand_Rough_01_AM.dds</Texture>
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Sand_Rough_01_AM.dds</Texture>
 					</property>
 					<property>
 						blendMask
@@ -266,7 +266,7 @@
 					</property>
 					<property>
 						metallicAOTile2
-						<Texture>content/Environment/00_Tiles/dds/Sand_Rough_01_MAO.dds</Texture>
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Sand_Rough_01_MAO.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile0
@@ -278,7 +278,7 @@
 					</property>
 					<property>
 						normalGlossSpecTile2
-						<Texture>content/Environment/00_Tiles/dds/Sand_Rough_01_GBMT.dds</Texture>
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Sand_Rough_01_GBMT.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-19.999996 0.347026 34.999981</groupOrigin>
@@ -839,6 +839,6 @@
 		<min>-44.431503 -1.000003 -4.710215</min>
 		<max>0.001479 33.585186 83.389023</max>
 	</boundingBox>
-	<geometrySize>1077552</geometrySize>
+	<geometrySize>1051900</geometrySize>
 	<minUVDensity>0.000074</minUVDensity>
 </root>

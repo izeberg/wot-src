@@ -1287,16 +1287,13 @@ msgid "kpi/bonus/positive/temperatureCoolingDelay"
 msgstr "Задержка охлаждения"
 
 msgid "kpi/bonus/positive/temperatureCoolingPerSec"
-msgstr "Скорость охлаждения"
+msgstr "Время охлаждения"
 
 msgid "kpi/bonus/positive/temperatureDamageFactor"
 msgstr "Модификатор среднего урона"
 
 msgid "kpi/bonus/positive/temperatureHeatingPerSec"
-msgstr "Скорость нагревания"
-
-msgid "kpi/bonus/positive/temperatureMaxTemperature"
-msgstr "Максимальная температура стадии"
+msgstr "Время нагревания"
 
 msgid "kpi/bonus/positive/temperatureStatesCount"
 msgstr "Термические стадии орудия"
@@ -1873,16 +1870,13 @@ msgid "kpi/title/temperatureCoolingDelay"
 msgstr "Задержка охлаждения (с)"
 
 msgid "kpi/title/temperatureCoolingPerSec"
-msgstr "Скорость охлаждения (ед./с)"
+msgstr "Время охлаждения (с)"
 
 msgid "kpi/title/temperatureDamageFactor"
 msgstr "Модификатор среднего урона"
 
 msgid "kpi/title/temperatureHeatingPerSec"
-msgstr "Скорость нагревания (ед./с)"
-
-msgid "kpi/title/temperatureMaxTemperature"
-msgstr "Максимальная температура стадии (ед.)"
+msgstr "Время нагревания (с)"
 
 msgid "kpi/title/temperatureStatesCount"
 msgstr "Термические стадии орудия"

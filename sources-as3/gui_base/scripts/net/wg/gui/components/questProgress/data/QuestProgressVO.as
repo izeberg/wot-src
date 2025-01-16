@@ -57,9 +57,6 @@ package net.wg.gui.components.questProgress.data
          var _loc4_:QuestProgressItemVO = null;
          var _loc5_:Object = null;
          var _loc6_:Array = null;
-         var _loc7_:int = 0;
-         var _loc8_:HeaderProgressDataVO = null;
-         var _loc9_:int = 0;
          if(param1 == BODY_PROGRESS_FIELD_NAME)
          {
             if(param2 != null)
@@ -89,16 +86,7 @@ package net.wg.gui.components.questProgress.data
          {
             _loc6_ = param2 as Array;
             App.utils.asserter.assertNotNull(_loc6_,HEADER_PROGRESS_FIELD_NAME + Errors.INVALID_TYPE + Array);
-            _loc7_ = _loc6_.length;
-            this._headerConditions = new Vector.<IHeaderProgressData>();
-            this._secondHeaderConditions = new Vector.<IHeaderProgressData>();
-            _loc9_ = 0;
-            while(_loc9_ < _loc7_)
-            {
-               _loc8_ = new HeaderProgressDataVO(_loc6_[_loc9_]);
-               this.addHeaderItem(_loc8_);
-               _loc9_++;
-            }
+            this.fillHeaderItems(_loc6_);
             return false;
          }
          return super.onDataWrite(param1,param2);
@@ -155,16 +143,8 @@ package net.wg.gui.components.questProgress.data
       
       public function updateHeaderProgressData(param1:Array) : void
       {
-         var _loc2_:HeaderProgressDataVO = null;
-         var _loc3_:Object = null;
          this.clearHeaderConditions();
-         this._headerConditions = new Vector.<IHeaderProgressData>();
-         this._secondHeaderConditions = new Vector.<IHeaderProgressData>();
-         for each(_loc3_ in param1)
-         {
-            _loc2_ = new HeaderProgressDataVO(_loc3_);
-            this.addHeaderItem(_loc2_);
-         }
+         this.fillHeaderItems(param1);
       }
       
       public function updateProgressData(param1:String, param2:IQPProgressData) : void
@@ -172,6 +152,27 @@ package net.wg.gui.components.questProgress.data
          var _loc3_:IQuestProgressItemData = this.getDataItem(param1);
          App.utils.asserter.assertNotNull(_loc3_,"Item data for id" + param1 + Errors.WASNT_FOUND);
          _loc3_.updateProgressData(param2);
+      }
+      
+      private function fillHeaderItems(param1:Array) : void
+      {
+         var _loc2_:HeaderProgressDataVO = null;
+         var _loc3_:Object = null;
+         this._headerConditions = new Vector.<IHeaderProgressData>();
+         this._secondHeaderConditions = new Vector.<IHeaderProgressData>();
+         for each(_loc3_ in param1)
+         {
+            _loc2_ = new HeaderProgressDataVO(_loc3_);
+            this.addHeaderItem(_loc2_);
+         }
+         if(!this._headerConditions.length)
+         {
+            this._isHeaderHasProgress = false;
+         }
+         if(!this._secondHeaderConditions.length)
+         {
+            this._isSecondHeaderHasProgress = false;
+         }
       }
       
       private function addHeaderItem(param1:HeaderProgressDataVO) : void

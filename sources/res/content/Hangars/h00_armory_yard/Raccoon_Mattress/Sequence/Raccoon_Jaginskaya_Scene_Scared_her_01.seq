@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>32.566666</duration>
+	<duration>32.299999</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -10,7 +10,7 @@
 			<type>animation</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>32.566666</duration>
+				<duration>32.299999</duration>
 				<resourceID>content/Hangars/h00_armory_yard/Raccoon_Mattress/Animation/Raccoon_Jaginskaya_Scene_Scared_her_01.fbx</resourceID>
 				<clipName/>
 				<speed>1.000000</speed>
@@ -20,7 +20,7 @@
 				<blendInTime>0.000000</blendInTime>
 				<blendOutTime>0.000000</blendOutTime>
 				<clipStartTime>0.000000</clipStartTime>
-				<clipEndTime>32.566666</clipEndTime>
+				<clipEndTime>32.299999</clipEndTime>
 			</frame>
 		</track>
 	</sequenceObject>
@@ -32,7 +32,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>32.566666</duration>
+				<duration>32.299999</duration>
 				<value>Root|Head_M</value>
 			</frame>
 		</track>
