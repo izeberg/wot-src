@@ -1870,6 +1870,7 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
         self.__postponedAwards = {}
         self.__completedOperationId = None
         self.__openedAwardScreen = False
+        self.__completedQuestUniqueIDs = set()
         return
 
     def start(self):
@@ -1881,6 +1882,7 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
         super(PersonalMission3RewardHandler, self).stop()
         self.__postponedAwards = {}
         self.__openedAwardScreen = False
+        self.eventsCache.onSyncCompleted -= self.__onShowAwardSyncCompleted
 
     def _showAward(self, ctx):
         _, message = ctx
@@ -1893,10 +1895,29 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
                 viewType = self.__getCompletedQuestsType(completedQuestUniqueIDs, quest)
                 self.__postponedAwards[quest.getID()] = {'viewType': viewType}
 
-        nextQuest = first(self.__postponedAwards.iterkeys())
+        self.__completedQuestUniqueIDs = completedQuestUniqueIDs
+        nextQuestId = first(self.__postponedAwards.iterkeys())
+        self.__tryShowAward(nextQuestId)
+
+    def __tryShowAward(self, questId):
+        nextQuest = self.__pm3Controller.getQuest(questId)
+        if not nextQuest.isCompleted():
+            self.eventsCache.onSyncCompleted += self.__onShowAwardSyncCompleted
+        else:
+            self.__showAward(questId)
+
+    def __onShowAwardSyncCompleted(self, *_):
+        nextQuestId = first(self.__postponedAwards.iterkeys())
+        quest = self.__pm3Controller.getQuest(nextQuestId)
+        if quest.isCompleted():
+            self.eventsCache.onSyncCompleted -= self.__onShowAwardSyncCompleted
+            self.__showAward(nextQuestId)
+
+    def __showAward(self, questId):
+        self.__updateCompletedOperationId(self.__completedQuestUniqueIDs)
         if not self.__openedAwardScreen:
-            showPersonalMissionsRewardsView(nextQuest, viewType=self.__postponedAwards[nextQuest]['viewType'])
-            self.__postponedAwards.pop(nextQuest, '')
+            showPersonalMissionsRewardsView(questId, viewType=self.__postponedAwards[questId]['viewType'])
+            self.__postponedAwards.pop(questId, '')
             self.__openedAwardScreen = True
 
     @staticmethod
@@ -1921,7 +1942,6 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
                 return False
             if isinstance(message.data, types.DictType):
                 completedQuests = message.data.get('completedQuestIDs', set())
-                self.__updateCompletedOperationId(completedQuests)
                 for questGeneralID in completedQuests:
                     quest = self.__pm3Controller.getQuestFromGeneralID(questGeneralID)
                     if quest and quest.getQuestBranchName() == PM3_PREFIX_NAME:
@@ -1946,14 +1966,13 @@ class PersonalMission3RewardHandler(BattleQuestsAutoWindowHandler):
 
     def __onRewardsViewClose(self, **kwargs):
         nextQuest = first(self.__postponedAwards.iterkeys())
+        self.__openedAwardScreen = False
         if nextQuest is not None:
-            showPersonalMissionsRewardsView(nextQuest, viewType=self.__postponedAwards[nextQuest]['viewType'])
-            self.__postponedAwards.pop(nextQuest, '')
-        else:
-            self.__openedAwardScreen = False
-        if self.__completedOperationId is None:
+            self.__tryShowAward(nextQuest)
             return
         else:
+            if self.__completedOperationId is None:
+                return
             settings = AccountSettings.getPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS)
             completedOperationId = self.__completedOperationId
             self.__completedOperationId = None

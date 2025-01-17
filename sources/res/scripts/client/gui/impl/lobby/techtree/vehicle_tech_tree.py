@@ -447,6 +447,8 @@ class VehicleTechTreeInvalidator(IPage):
             for nodeModel in nodesArray:
                 node = self.__dataProvider.getNodeByItemCD(nodeModel.getId())
                 bpfProps = node.getBpfProps()
+                nodeModel.setBlueprintBalance(bpfProps.filledCount if bpfProps is not None else 0)
+                nodeModel.setBlueprintMaxCount(bpfProps.totalCount if bpfProps is not None else 0)
                 nodeModel.setBlueprintCanConvert(bpfProps.canConvert if bpfProps is not None else 0)
 
             nodesArray.invalidate()
@@ -495,6 +497,7 @@ class VehicleTechTreeInvalidator(IPage):
         result = self.__dataProvider.invalidateVTypeXP()
         with self.viewModel.transaction() as (ts):
             fillStateResults = self.__fillNewNodeStates(ts, result)
+            self.__updateEarnXPs(ts, xps)
             updateVehiclesUnlocks(ts, fillStateResults)
 
     def invalidateUnlocks(self, unlocks):
@@ -583,3 +586,12 @@ class VehicleTechTreeInvalidator(IPage):
 
         nodes.invalidate()
         return diffIds
+
+    def __updateEarnXPs(self, model, xps):
+        nodesArray = model.getNodes()
+        for vehCD, value in xps.iteritems():
+            idx = self.__dataProvider.getNodeIndex(vehCD)
+            nodeModel = nodesArray[idx]
+            nodeModel.setEarnedXP(value)
+
+        nodesArray.invalidate()
