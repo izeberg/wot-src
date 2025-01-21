@@ -482,6 +482,9 @@ msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 msgid "Chassis_G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
+msgid "Chassis_G98_WT_auf_E_100_Phonix"
+msgstr "WT auf E 100 Phönix"
+
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
 
@@ -2807,6 +2810,29 @@ msgstr ""
 msgid "G92_VK7201_short_special"
 msgstr "Perfect armor, and good damage per shot"
 
+msgid "G98_WT_auf_E_100_Phonix"
+msgstr "WT auf E 100 Phönix"
+
+msgid "G98_WT_auf_E_100_Phonix_descr"
+msgstr ""
+"A variant of large-caliber anti-aircraft guns mounted on the E 100 chassis. "
+"128 mm gun with a magazine loading system was planned for use. Project "
+"development was halted with the end of World War II."
+
+msgid "G98_WT_auf_E_100_Phonix_long_special"
+msgstr ""
+"A Tier X German tank destroyer equipped with a powerful gun featuring a "
+"magazine reloading system. Thanks to its enormous firepower, this vehicle "
+"effectively takes on enemy vehicles, while its high penetration and good "
+"accuracy allow it to fire at enemies from afar. On the other hand, the "
+"vehicle has practically no armor."
+
+msgid "G98_WT_auf_E_100_Phonix_short"
+msgstr "Phönix"
+
+msgid "G98_WT_auf_E_100_Phonix_short_special"
+msgstr "A perfect gun and rotating turret"
+
 msgid "G98_Waffentrager_E100_P_cn"
 msgstr "Waffenträger auf E 100 (P) Mod"
 
@@ -3676,6 +3702,12 @@ msgstr "Maybach HL 295 (A)"
 
 msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
+
+msgid "Maybach_HL_234P60_P"
+msgstr "Maybach Neues Projekt P"
+
+msgid "Maybach_HL_234P60_P_short"
+msgstr "Maybach Neues Projekt P"
 
 msgid "Maybach_HL_234P60_WT"
 msgstr "Maybach Neues Projekt A"
@@ -5040,6 +5072,9 @@ msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 msgid "Turret_1_G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
+msgid "Turret_1_G98_WT_auf_E_100_Phonix"
+msgstr "WT auf E 100 Phönix"
+
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
 
@@ -5895,6 +5930,9 @@ msgstr "10,5 cm Panzerkanone L7A3"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_10WSc_P"
+msgstr "10WSc P"
+
 msgid "_10WSc_WT"
 msgstr "10WSc A"
 
@@ -5991,6 +6029,9 @@ msgstr "12,8 cm Kanone 43 L/55"
 msgid "_128mm_K44_2_L61"
 msgstr "12,8 cm Kanone L/61"
 
+msgid "_128mm_K44_2_L61_P"
+msgstr "12,8 cm Kanone L/61"
+
 msgid "_128mm_K44_2_L61_WT"
 msgstr "12,8 cm Kanone L/61 A"
 
@@ -6066,6 +6107,9 @@ msgstr "Pzgr 39 L"
 msgid "_128mm_PzGr39L50"
 msgstr "Pzgr 39 L"
 
+msgid "_128mm_PzGr39P"
+msgstr "Pzgr 39P"
+
 msgid "_128mm_PzGr39_E"
 msgstr "Pzgr 39 E"
 
@@ -6102,6 +6146,9 @@ msgstr "Pzgr 40/48"
 msgid "_128mm_PzGr43"
 msgstr "Pzgr 43"
 
+msgid "_128mm_PzGr43P"
+msgstr "Pzgr 43P"
+
 msgid "_128mm_PzGr44M_SH"
 msgstr "Pzgr 44M"
 
@@ -6137,6 +6184,9 @@ msgstr "Sprgr ver. 18"
 
 msgid "_128mm_SprG19"
 msgstr "Sprgr 19"
+
+msgid "_128mm_SprG19P"
+msgstr "Sprgr 19P"
 
 msgid "_128mm_Sprgr_18_E"
 msgstr "Sprgr. 18 E"
