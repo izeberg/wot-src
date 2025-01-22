@@ -42,7 +42,7 @@ from post_progression_common import TankSetupGroupsId
 from rent_common import parseRentID
 from shared_utils import findFirst, CONST_CONTAINER
 from skeletons.gui.customization import ICustomizationService
-from skeletons.gui.game_control import IIGRController, IRentalsController, IVehiclePostProgressionController, ITradeInController, IWotPlusController, IEarlyAccessController
+from skeletons.gui.game_control import IIGRController, IRentalsController, IVehiclePostProgressionController, ITradeInController, IWotPlusController, IEarlyAccessController, IParagonsController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
@@ -151,6 +151,7 @@ class VEHICLE_TAGS(CONST_CONTAINER):
     SECRET = 'secret'
     SECRET_EXTENDED = 'secretExtended'
     SPECIAL = 'special'
+    BOB = 'bob'
     OBSERVER = 'observer'
     DISABLED_IN_ROAMING = 'disabledInRoaming'
     EVENT = 'event_battles'
@@ -289,10 +290,13 @@ class Vehicle(FittingItem):
     __customizationService = dependency.descriptor(ICustomizationService)
     __postProgressionCtrl = dependency.descriptor(IVehiclePostProgressionController)
     __earlyAccessController = dependency.descriptor(IEarlyAccessController)
+    __paragonsController = dependency.descriptor(IParagonsController)
     tradeInCtrl = dependency.descriptor(ITradeInController)
 
-    def __init__(self, strCompactDescr=None, inventoryID=-1, typeCompDescr=None, proxy=None, extData=None, invData=None):
+    def __init__(self, strCompactDescr=None, inventoryID=-1, typeCompDescr=None, proxy=None, extData=None, invData=None, battleModifiers=None):
         self.__postProgressionCtrl.processVehExtData(getVehicleType(typeCompDescr or strCompactDescr), extData)
+        if battleModifiers:
+            extData['battleModifiers'] = battleModifiers
         if strCompactDescr is not None:
             vehDescr = vehicles.VehicleDescr(compactDescr=strCompactDescr, extData=extData)
         else:
@@ -484,6 +488,14 @@ class Vehicle(FittingItem):
         return self.__earlyAccessController.isEnabled() and (self.intCD in self.__earlyAccessController.getAffectedVehicles() or self.intCD in self.__earlyAccessController.getBlockedVehicles())
 
     @property
+    def isLockedByParagons(self):
+        return self.__paragonsController.isEnabled and self.intCD in self.__paragonsController.lockedItems
+
+    @property
+    def isResetParagons(self):
+        return self.__paragonsController.isVehicleReset(self.intCD)
+
+    @property
     def searchableUserName(self):
         return self._searchableUserName
 
@@ -606,10 +618,10 @@ class Vehicle(FittingItem):
         return
 
     def _getOutfitComponent(self, proxy, style, styleProgressionLevel, styleSerialNumber, season):
-        if style is not None and season != SeasonType.EVENT:
+        if style is not None:
             return self.__getStyledOutfitComponent(proxy, style, styleProgressionLevel, styleSerialNumber, season)
         else:
-            if self._isStyleInstalled and season != SeasonType.EVENT:
+            if self._isStyleInstalled:
                 return self.__getEmptyOutfitComponent()
             return self.__getCustomOutfitComponent(proxy, season)
 
@@ -644,6 +656,10 @@ class Vehicle(FittingItem):
     @property
     def iconContour(self):
         return getContourIconPath(self.name)
+
+    @property
+    def iconBonus(self):
+        return getBonusIconPath(self.name)
 
     @property
     def iconUnique(self):
@@ -1461,6 +1477,10 @@ class Vehicle(FittingItem):
         return checkForTags(self.tags, VEHICLE_TAGS.EVENT)
 
     @property
+    def isLowTierEvent(self):
+        return checkForTags(self.tags, VEHICLE_TAGS.LOW_TIER_EVENT)
+
+    @property
     def isOnlyForEpicBattles(self):
         return checkForTags(self.tags, VEHICLE_TAGS.EPIC_BATTLES)
 
@@ -1491,6 +1511,10 @@ class Vehicle(FittingItem):
     @property
     def isOnlyForComp7Battles(self):
         return checkForTags(self.tags, VEHICLE_TAGS.COMP7_BATTLES)
+
+    @property
+    def isOnlyForBob(self):
+        return checkForTags(self.tags, VEHICLE_TAGS.BOB)
 
     @property
     def isTelecom(self):
@@ -2175,6 +2199,14 @@ def getContourIconPath(vehicleName):
     resID = R.images.gui.maps.icons.vehicle.contour.dyn(unicName)()
     if resID == INVALID_RES_ID:
         resID = R.images.gui.maps.icons.vehicle.contour.noImage()
+    return backport.image(resID)
+
+
+def getBonusIconPath(vehicleName):
+    unicName = getIconResourceName(vehicleName)
+    resID = R.images.gui.maps.icons.quests.bonuses.big.dyn(unicName)()
+    if resID == INVALID_RES_ID:
+        resID = R.images.gui.maps.icons.vehicle.small.noImage()
     return backport.image(resID)
 
 

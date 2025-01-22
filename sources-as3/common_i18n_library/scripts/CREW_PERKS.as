@@ -259,6 +259,8 @@ package
       
       public static const LOADER_DESPERADO_ALT_INFO:String = "#crew_perks:loader_desperado/alt/info";
       
+      public static const LOADER_DESPERADO_ALERTDESCRIPTION:String = "#crew_perks:loader_desperado/alertDescription";
+      
       public static const LOADER_PEDANT_NAME:String = "#crew_perks:loader_pedant/name";
       
       public static const LOADER_PEDANT_SHORTDESCRIPTION:String = "#crew_perks:loader_pedant/shortDescription";
@@ -284,6 +286,8 @@ package
       public static const LOADER_INTUITION_ALT_DESCRIPTION:String = "#crew_perks:loader_intuition/alt/description";
       
       public static const LOADER_INTUITION_ALT_INFO:String = "#crew_perks:loader_intuition/alt/info";
+      
+      public static const LOADER_INTUITION_ALERTDESCRIPTION:String = "#crew_perks:loader_intuition/alertDescription";
       
       public static const RADIOMAN_FINDER_NAME:String = "#crew_perks:radioman_finder/name";
       

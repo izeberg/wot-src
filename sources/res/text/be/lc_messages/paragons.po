@@ -1,0 +1,1008 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "allRewards/button/list"
+msgstr "Спіс"
+
+msgid "allRewards/button/select"
+msgstr "Выбраць"
+
+msgid "allRewards/subtitle"
+msgstr ""
+"Звычайныя ўзнагароды аўтаматычна налічваюцца па дасягненні кожнага этапу.\n"
+"Тэхніку ХІ узроўню трэба выбіраць уручную."
+
+msgid "allRewards/title"
+msgstr "УЗНАГАРОДЫ СЕЗОНА %(level)s"
+
+msgid "allRewards/tooltip/branchSelectBody_1"
+msgstr ""
+"Тут адкрываецца доступ да даследавання і куплі тэхнікі, заблакаванай у межах"
+" праекта «Арбіта»."
+
+msgid "allRewards/tooltip/branchSelectHeader_1"
+msgstr "Доступ да галіны тэхнікі"
+
+msgid "allRewards/tooltip/branchSelectHeader_2"
+msgstr "Тэхніка заблакаванай галіны:"
+
+msgid "allRewards/tooltip/count"
+msgstr "... і яшчэ машын : {white_Open}%(count)s{white_Close}"
+
+msgid "allRewards/tooltip/current/additionalText"
+msgstr ""
+"Для прасоўвання па прагрэсіі скіньце галіну даследаванай тэхнікі, паўторна "
+"даследуйце ўсе машыны і правядзіце пераможны бой на кожнай з іх."
+
+msgid "allRewards/tooltip/current/text"
+msgstr ""
+"Здабывайце ачкі прагрэсіі праекта «Арбіта», каб атрымаць узнагароды за "
+"праходжанне этапу."
+
+msgid "allRewards/tooltip/current/title"
+msgstr "Бягучы этап"
+
+msgid "allRewards/tooltip/finished/text"
+msgstr "Этап пройдзены, узнагароды за яго атрыманы."
+
+msgid "allRewards/tooltip/finished/title"
+msgstr "Пройдзены этап"
+
+msgid "allRewards/tooltip/next/additionalText"
+msgstr ""
+"Для прасоўвання па прагрэсіі скіньце галіну даследаванай тэхнікі, паўторна "
+"даследуйце ўсе машыны і правядзіце пераможны бой на кожнай з іх."
+
+msgid "allRewards/tooltip/next/text"
+msgstr ""
+"Працягвайце прасоўвацца па прагрэсіі, каб атрымаць доступ да ўзнагарод "
+"гэтага этапу."
+
+msgid "allRewards/tooltip/next/title"
+msgstr "Этап недаступны"
+
+msgid "allRewards/tooltip/vehicleSelectBody_1"
+msgstr ""
+"Выберыце машыну ХІ узроўню са спіса даступных. Рэшту тэхнікі можна забраць "
+"на наступных этапах прагрэсіі."
+
+msgid "allRewards/tooltip/vehicleSelectBody_2"
+msgstr ""
+"Пералік даступнай тэхнікі будзе папаўняцца разам з выхадам новых сезонаў."
+
+msgid "allRewards/tooltip/vehicleSelectHeader_1"
+msgstr "Тэхніка на выбар"
+
+msgid "allRewards/tooltip/vehicleSelectHeader_2"
+msgstr "Даступная для выбару тэхніка:"
+
+msgid "allStageRewards/subTitle"
+msgstr ""
+"Звычайныя ўзнагароды налічваюцца па дасягненні кожнага этапу аўтаматычна.\n"
+"Тэхніку ХІ узроўню трэба выбіраць уручную."
+
+msgid "allStageRewards/title"
+msgstr "УЗНАГАРОДЫ ЗА ЎСЕ ЭТАПЫ"
+
+msgid "battle/reward/coins"
+msgstr "За бой налічана: %(coins)s"
+
+msgid "branch/available/body"
+msgstr "Праблема вырашана, заблакаваная галіна тэхнікі зноў даступная."
+
+msgid "branch/available/header"
+msgstr "Заблакаваная галіна вярнулася"
+
+msgid "branch/reseted/body/first"
+msgstr "Галіна скінута да недаследаванага стану."
+
+msgid "branch/reseted/body/second"
+msgstr "Зварот маёмасці:"
+
+msgid "branch/reseted/header"
+msgstr "Галіна скінута"
+
+msgid "branch/reseted/refund/ammunition"
+msgstr "Боекамплект %(amounts)s."
+
+msgid "branch/reseted/refund/appearance"
+msgstr "Элементы выгляду %(amounts)s."
+
+msgid "branch/reseted/refund/credits"
+msgstr "Крэдыты: %(amounts)s."
+
+msgid "branch/reseted/refund/crew"
+msgstr "Члены экіпажа %(amounts)s."
+
+msgid "branch/reseted/refund/equipment"
+msgstr "Абсталяванне %(amounts)s."
+
+msgid "branch/reseted/refund/instruction"
+msgstr "Настаўленні %(amounts)s."
+
+msgid "branch/reseted/refund/kit"
+msgstr "Рыштунак %(amounts)s."
+
+msgid "branch/resetting/error/body/first"
+msgstr "Адбылася памылка. Паспрабуйце паўтарыць аперацыю пазней."
+
+msgid "branch/resetting/error/body/second"
+msgstr "Уся тэхніка і рэсурсы захаваны."
+
+msgid "branch/resetting/error/header"
+msgstr "Памылка скіду"
+
+msgid "branch/unavailable/body"
+msgstr ""
+"Штосьці пайшло не так. Мы працуем над выпраўленнем непаладак, паспрабуйце "
+"пазней."
+
+msgid "branch/unavailable/header"
+msgstr "Заблакаваная галіна недаступная"
+
+msgid "chapter/reward/header"
+msgstr "Этап пройдзены! Узнагарода:"
+
+msgid "chapter/reward/selector/button/text"
+msgstr "Выбраць"
+
+msgid "chapter/reward/selector/text"
+msgstr "Выберыце ўзнагароды з даступных катэгорый."
+
+msgid "chapterName/id_1"
+msgstr "Сезон «Альфа»"
+
+msgid "chapterName/short/id_1"
+msgstr "«Альфа»"
+
+msgid "chapterName/shortUpperCase/id_1"
+msgstr "«АЛЬФА»"
+
+msgid "chapterName/upperCase/id_1"
+msgstr "СЕЗОН «АЛЬФА»"
+
+msgid "claimRewards/closeButton"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "claimRewards/errorScreen/button"
+msgstr "Так!"
+
+msgid "claimRewards/errorScreen/description"
+msgstr ""
+"Абнавіце экран або паўтарыце спробу пазней. Мы працуем над пошукам і "
+"выпраўленнем праблемы."
+
+msgid "claimRewards/errorScreen/title"
+msgstr "Адбылася памылка."
+
+msgid "claimRewards/footer/claimButton"
+msgstr "Забраць"
+
+msgid "claimRewards/footer/claimLaterButton"
+msgstr "Выбраць пазней"
+
+msgid "claimRewards/footer/text/chose"
+msgstr "Выбрана ўзнагарод: %(number)s"
+
+msgid "claimRewards/footer/text/notChosen"
+msgstr "Выберыце ўзнагароды з прадстаўленых катэгорый"
+
+msgid "claimRewards/footer/text/tooltip/description"
+msgstr "Націсніце «Забраць» і атрымайце выбраныя ўзнагароды."
+
+msgid "claimRewards/footer/text/tooltip/header"
+msgstr "Выбрана ўзнагарод: %(number)s"
+
+msgid "claimRewards/footer/text/tooltip/vehicleDescription"
+msgstr "Машына ХІ узроўню"
+
+msgid "claimRewards/purchaseScreen/alert"
+msgstr "Вы не можаце змяніць выбар!"
+
+msgid "claimRewards/purchaseScreen/cancelButton"
+msgstr "Скасаваць"
+
+msgid "claimRewards/purchaseScreen/confirmButton"
+msgstr "Пацвердзіць"
+
+msgid "claimRewards/purchaseScreen/title"
+msgstr "Забраць %(tankName)?"
+
+msgid "claimRewards/selectedRewards/number"
+msgstr "%(selected)s / %(all)s"
+
+msgid "claimRewards/selectedRewards/title"
+msgstr "Машына ХІ узроўню"
+
+msgid "claimRewards/selectedRewards/tooltip/body"
+msgstr "Выбар машыны ХІ узроўню."
+
+msgid "claimRewards/selectedRewards/tooltip/header"
+msgstr "Тэхніка ХІ узроўню"
+
+msgid "claimRewards/title"
+msgstr "ВЫБЕРЫЦЕ ЎЗНАГАРОДУ"
+
+msgid "claimRewards/titlePreview"
+msgstr "ТЭХНІКА НА ВЫБАР"
+
+msgid "entryPoint/tooltip/allChaptersCompleted"
+msgstr "УСЕ СЕЗОНЫ ПРОЙДЗЕНЫ"
+
+msgid "entryPoint/tooltip/chapterNotChosen"
+msgstr "ВЫБЕРЫЦЕ НАСТУПНЫ ЭТАП"
+
+msgid "entryPoint/tooltip/currentLevel"
+msgstr "Бягучы этап"
+
+msgid "entryPoint/tooltip/currentLevelRewards"
+msgstr "Узнагароды за этап"
+
+msgid "entryPoint/tooltip/firstEntry/description"
+msgstr ""
+"Праект «Арбіта» запушчаны! Прасоўвайцеся па прагрэсіі і атрымлівайце "
+"каштоўныя ўзнагароды."
+
+msgid "entryPoint/tooltip/firstEntry/rewards/point"
+msgstr "•"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_1"
+msgstr "Тэматычны прагрэсійны стыль;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_2"
+msgstr "Члены экіпажа:"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_3"
+msgstr "Прэміум тэхніка VIII - IX узроўняў;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_4"
+msgstr "Акцыйная тэхніка X узроўню;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_5"
+msgstr "Унікальныя машыны XI узроўню з новымі баявымі магчымасцямі."
+
+msgid "entryPoint/tooltip/firstEntry/rewards/subtitle"
+msgstr "Узнагароды за этапы сезона:"
+
+msgid "entryPoint/tooltip/firstEntry/steps/rewardsSubTitle"
+msgstr "Узнагароды за этапы сезона:"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_1"
+msgstr "%(colored)s з унікальнымі ўзнагародамі"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_1_colored"
+msgstr "Выберыце сезон"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_2"
+msgstr "%(colored)s даследаванай тэхнікі VI - X узроўню."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_2_colored"
+msgstr "Скіньце галіну"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_3"
+msgstr "%(colored)s даследаваныя машыны."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_3_colored"
+msgstr "Даследуйце гэту галіну паўторна і купіце"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_4"
+msgstr ""
+"Правядзіце %(colored)s на кожнай з гэтых машын у любым з прыдатных рэжымаў."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_4_colored"
+msgstr "пераможны бой"
+
+msgid "entryPoint/tooltip/firstEntry/steps/subTitle"
+msgstr "Як прасоўвацца па прагрэсіі:"
+
+msgid "entryPoint/tooltip/howToEarnPoints1"
+msgstr ""
+"%(colored)s даследаванай тэхнікі VI - X узроўню. Адну і тую ж галіну можна "
+"скінуць нанова пасля паўторнага яе даследавання."
+
+msgid "entryPoint/tooltip/howToEarnPoints1_colored"
+msgstr "Скіньце галіну"
+
+msgid "entryPoint/tooltip/howToEarnPoints2"
+msgstr "%(colored)s даследаваную тэхніку."
+
+msgid "entryPoint/tooltip/howToEarnPoints2_colored"
+msgstr "Даследуйце і купіце паўторна"
+
+msgid "entryPoint/tooltip/howToEarnPoints3"
+msgstr ""
+"Правядзіце %(colored)s на кожнай паўторна даследаванай машыне ў любым з "
+"рэжымаў: Выпадковы бой, Генеральная бітва, Націск, Рангавы бой, Лінія "
+"фронту, Палігон, Аркада, Умацаваныя раёны і Кланавыя баі."
+
+msgid "entryPoint/tooltip/howToEarnPoints3_colored"
+msgstr "пераможны бой"
+
+msgid "entryPoint/tooltip/howToEarnPointsHeader"
+msgstr "Як здабыць ачкі прагрэсіі:"
+
+msgid "entryPoint/tooltip/message/allChaptersCompleted"
+msgstr "Новыя сезоны з узнагародамі ўжо ў распрацоўцы."
+
+msgid "entryPoint/tooltip/message/chapterNotChosen"
+msgstr ""
+"Выберыце сезон, каб рухацца па прагрэсіі і атрымліваць каштоўныя ўзнагароды."
+
+msgid "entryPoint/tooltip/paused/description"
+msgstr "Праект часова прыпынены. Мы паведамім пра аднаўленне працы."
+
+msgid "entryPoint/tooltip/paused/title"
+msgstr "Праект «Арбіта» прыпынены"
+
+msgid "entryPoint/tooltip/points/description"
+msgstr ""
+"Працягвайце назапашваць ачкі прагрэсіі\n"
+"для іх пераносу на наступны сезон."
+
+msgid "entryPoint/tooltip/stage"
+msgstr "Сезон %(stage)"
+
+msgid "entryPoint/tooltip/title"
+msgstr "Праект «Арбіта»"
+
+msgid "entryPoint/tooltip/warning/needVehicleToReset"
+msgstr ""
+"Каб атрымаць доступ да скіду галін, трэба мець не менш за %(count) "
+"даследаваных машын Х узроўню ў Гаражы."
+
+msgid "entryPoint/tooltip/warning/noResettedBranches"
+msgstr ""
+"Каб працягнуць здабываць ачкі, скіньце прагрэс даследавання галіны тэхнікі."
+
+msgid "introView/closeButton"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "introView/description/first"
+msgstr ""
+"Скіньце галіну тэхнікі, паўторна даследуйце яе і купіце машыны ў Гараж. Усё "
+"абсталяванне і члены экіпажа вернуцца на Склад / у Жаўнерню. Баявы досвед, "
+"рыштунак, палявая мадэрнізацыя і ўся статыстыка захоўваюцца."
+
+msgid "introView/description/second"
+msgstr ""
+"За пераможны бой на паўторна даследаванай машыне налічваюцца ачкі прагрэсіі "
+"праекта «Арбіта»."
+
+msgid "introView/description/third"
+msgstr ""
+"За праходжанне этапаў актыўнага сезона праекта вы атрымаеце ўнікальныя "
+"элементы выгляду, членаў экіпажа і высокаўзроўневую тэхніку, у тым ліку "
+"машыны ХІ узроўню."
+
+msgid "introView/goToFeatureButton"
+msgstr "Да праекта «Арбіта»."
+
+msgid "introView/header/title"
+msgstr "ПРАЕКТ «АРБІТА»."
+
+msgid "introView/title/first"
+msgstr "Скід галін"
+
+msgid "introView/title/second"
+msgstr "Перамажыце ў баі"
+
+msgid "introView/title/third"
+msgstr "Атрымлівайце ўзнагароды"
+
+msgid "level/reward/header"
+msgstr "Узровень пройдзены! Узнагарода:"
+
+msgid "navigation/about"
+msgstr "Пра праект"
+
+msgid "navigation/button/back"
+msgstr "НАЗАД"
+
+msgid "navigation/button/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "navigation/button/goto"
+msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"
+
+msgid "navigation/chapters"
+msgstr "Сезоны"
+
+msgid "navigation/progress"
+msgstr "Прагрэсія"
+
+msgid "navigation/progression/button/compare"
+msgstr "Дадаць да параўнання"
+
+msgid "navigation/progression/button/preview"
+msgstr "Перадпрагляд"
+
+msgid "navigation/progression/button/selectVehicle"
+msgstr "Выбраць"
+
+msgid "navigation/progression/button/toCurrentStage"
+msgstr "Да бягучага этапу"
+
+msgid "navigation/progression/button/toRewards"
+msgstr "Да ўзнагарод"
+
+msgid "navigation/progression/button/toStage"
+msgstr "Да сезонаў"
+
+msgid "navigation/progression/button/viewBranch"
+msgstr "Паглядзець галіны тэхнікі"
+
+msgid "navigation/progression/button/viewVehicle"
+msgstr "Паглядзець тэхніку"
+
+msgid "navigation/progression/completedStages"
+msgstr "Завершана сезонаў:"
+
+msgid "navigation/progression/level"
+msgstr "ЭТАП %(level)"
+
+msgid "navigation/progression/levelPoints"
+msgstr "АЧКІ ЭТАПУ"
+
+msgid "navigation/progression/noAccess/description"
+msgstr "Выберыце сезон праекта «Арбіта», каб адкрыць доступ да прагрэсій."
+
+msgid "navigation/progression/noAccess/title"
+msgstr "Няма доступу"
+
+msgid "navigation/progression/pointsInStorage"
+msgstr "АЧКІ ПРАГРЭСІІ Ў СХОВІШЧЫ"
+
+msgid "navigation/progression/progress"
+msgstr "ПРАГРЭС СЕЗОНА"
+
+msgid "navigation/progression/progressionCompleted/description_1"
+msgstr "Зараз няма даступных сезонаў і ўзнагарод."
+
+msgid "navigation/progression/progressionCompleted/description_2"
+msgstr ""
+"Вы можаце працягнуць здабываць ачкі прагрэсіі, і яны перанясуцца на наступны"
+" выбраны сезон."
+
+msgid "navigation/progression/progressionCompleted/title"
+msgstr "Усе этапы пройдзены, узнагароды атрыманы"
+
+msgid "navigation/progression/text/splittedValue"
+msgstr " / %(value)"
+
+msgid "navigation/progression/tooltip/activeStoragePointsBody_1"
+msgstr ""
+"Ачкі прагрэсіі праекта «Арбіта»: бягучая колькасць / неабходная для "
+"праходжання этапу."
+
+msgid "navigation/progression/tooltip/activeStoragePointsBody_2"
+msgstr ""
+"Ачкі налічваюцца за пераможны бой на паўторна даследаванай і купленай "
+"тэхніцы са скінутай галіны."
+
+msgid "navigation/progression/tooltip/activeStoragePointsHeader_1"
+msgstr "Ачкі прагрэсіі праекта «Арбіта»"
+
+msgid "navigation/progression/tooltip/activeStoragePointsHeader_2"
+msgstr "Як здабыць"
+
+msgid "navigation/progression/tooltip/nextStageRewards"
+msgstr "Паглядзець узнагароды за наступны этап."
+
+msgid "navigation/progression/tooltip/prevStageRewards"
+msgstr "Паглядзець узнагароды за папярэдні этап."
+
+msgid "navigation/progression/tooltip/storagePointsBody"
+msgstr ""
+"Усе сабраныя ачкі прагрэсіі будуць аўтаматычна налічаны на наступны выбраны "
+"сезон."
+
+msgid "navigation/progression/tooltip/storagePointsHeader"
+msgstr "Сховішча ачкоў праекта «Арбіта»"
+
+msgid "navigation/progression/vehicleSelect/label"
+msgstr "Тэхніка XI узроўню"
+
+msgid "navigation/progression/warning/claimRewards"
+msgstr ""
+"Каб завяршыць бягучы сезон, забярыце ўсе даступныя для выбару ўзнагароды."
+
+msgid "navigation/rewards"
+msgstr "Узнагароды"
+
+msgid "navigation/tooltip/body/about"
+msgstr "Тут можна даведацца пра заробак ачкоў прагрэсіі."
+
+msgid "navigation/tooltip/body/chapters"
+msgstr "Даступныя для выбару сезоны, якія выйшлі раней."
+
+msgid "navigation/tooltip/body/progress"
+msgstr "Лінейка этапаў праекта «Арбіта» і ваш бягучы прагрэс."
+
+msgid "navigation/tooltip/body/rewards"
+msgstr "Узнагароды за ўсе этапы выбранага сезона праекта «Арбіта»."
+
+msgid "navigation/tooltip/body/rewards_disabled"
+msgstr ""
+"Узнагароды за ўсе этапы выбранага сезона праекта «Арбіта». Стануць "
+"даступнымі пасля выбару сезона."
+
+msgid "navigation/tooltip/header/about"
+msgstr "Пра праект «Арбіта»"
+
+msgid "navigation/tooltip/header/chapters"
+msgstr "Усе сезоны"
+
+msgid "navigation/tooltip/header/progress"
+msgstr "Прагрэс праекта «Арбіта»"
+
+msgid "navigation/tooltip/header/rewards"
+msgstr "Узнагароды сезона"
+
+msgid "postBattle/extraCoins"
+msgstr "Ачкі прагрэсіі змешчаны ў сховішча:"
+
+msgid "postBattle/notification"
+msgstr "Праект «Арбіта». Паступіла ачкоў прагрэсіі ў сховішча:"
+
+msgid "postBattle/progress"
+msgstr "Прагрэс этапу: %(number)s"
+
+msgid "postBattle/subtitle"
+msgstr "Сезон %(name)s"
+
+msgid "postBattle/tooltip/btnlabel/active"
+msgstr "Да прагрэсу праекта «Арбіта»"
+
+msgid "postBattle/tooltip/btnlabel/select"
+msgstr "Да выбару сезона праекта «Арбіта»"
+
+msgid "postBattle/tooltip/coins"
+msgstr "Ачкі праекта «Арбіта»"
+
+msgid "progressStylePreview/backButton"
+msgstr "ДА ПРАЕКТА «АРБІТА»"
+
+msgid "progressStylePreview/progress/description"
+msgstr ""
+"Выберыце ўзровень стылю і паглядзіце, як будзе выглядаць машына на розных "
+"этапах праходжання прагрэсіі праекта «Арбіта»."
+
+msgid "project/name"
+msgstr "Праект «Арбіта»"
+
+msgid "project/select/reward/message"
+msgstr "Выберыце ўзнагароды з даступных катэгорый."
+
+msgid "project/unavalable/body"
+msgstr ""
+"Штосьці пайшло не так. Мы працуем над выпраўленнем непаладак, паспрабуйце "
+"пазней."
+
+msgid "project/unavalable/header"
+msgstr "Праект «Арбіта» недаступны"
+
+msgid "resetBranch/buttons/back"
+msgstr "Назад"
+
+msgid "resetBranch/buttons/next"
+msgstr "Далей"
+
+msgid "resetBranch/buttons/reset"
+msgstr "Скінуць"
+
+msgid "resetBranch/captcha/error"
+msgstr "Пры ўводзе значэння дапушчана памылка."
+
+msgid "resetBranch/captcha/header"
+msgstr "Увядзіце кошт продажу"
+
+msgid "resetBranch/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "resetBranch/resultScreen/button"
+msgstr "Так!"
+
+msgid "resetBranch/resultScreen/subTitle/failed"
+msgstr ""
+"Выбачайце за часовыя нязручнасці, паспрабуйце паўтарыць аперацыю пазней."
+
+msgid "resetBranch/resultScreen/subTitle/success"
+msgstr ""
+"Паўторна даследуйце і купіце тэхніку скінутай галіны. а затым правядзіце на ёй пераможны бой,\n"
+"каб атрымаць ачкі прагрэсіі праекта «Арбіта»."
+
+msgid "resetBranch/resultScreen/title/failed"
+msgstr "Памылка скіду галіны"
+
+msgid "resetBranch/resultScreen/title/success"
+msgstr "Галіна паспяхова скінута"
+
+msgid "resetBranch/returnBack/battleBoosters"
+msgstr "Настаўленні"
+
+msgid "resetBranch/returnBack/crew"
+msgstr "Экіпаж"
+
+msgid "resetBranch/returnBack/customization"
+msgstr "Элементы выгляду"
+
+msgid "resetBranch/returnBack/equipments"
+msgstr "Рыштунак"
+
+msgid "resetBranch/returnBack/header"
+msgstr "На Склад / у Жаўнерню вернуцца"
+
+msgid "resetBranch/returnBack/optionalDevices"
+msgstr "Абсталяванне"
+
+msgid "resetBranch/returnBack/shells"
+msgstr "Боекамплект"
+
+msgid "resetBranch/step1/branchCount"
+msgstr "Зараз скінута галін: %(current)s / %(max)s"
+
+msgid "resetBranch/step1/description"
+msgstr ""
+"Тэхніка атрымае статус «недаследаваная», увесь назапашаны баявы досвед "
+"захоўваецца. За пераможны бой на гэтай тэхніцы налічваюцца ачкі праекта "
+"«Арбіта». За праходжанне этапаў праекта вы атрымаеце {cream_open}тэхніку, "
+"прагрэсійны стыль{cream_close} і тэматычных {cream_open}членаў "
+"экіпажа{cream_close}."
+
+msgid "resetBranch/step1/pointsDescription"
+msgstr "за пераможны бой"
+
+msgid "resetBranch/step1/total"
+msgstr "Усяго ачкоў прагрэсіі атрымаеце пасля пераможным баёў на тэхніцы:"
+
+msgid "resetBranch/step2/creditsBack"
+msgstr "Вернецца крэдытаў:"
+
+msgid "resetBranch/step2/description"
+msgstr ""
+"Кампенсуецца {cream_open}50%{cream_close} ад кошту тэхнікі. Абсталяванне, "
+"інструкцыі, боекамплект і рыштунак выгружаюцца на Склад "
+"{cream_open}бясплатна{cream_close}. Увесь баявы досвед, гульнявая "
+"статыстыка, знакі класнасці, адметныя адзнакі, элітны статус, узровень "
+"палявой мадэрнізацыі і яе выбраныя элементы захоўваюцца."
+
+msgid "resetBranch/step2/details"
+msgstr "Падрабязней"
+
+msgid "resetBranch/step2/module"
+msgstr "Усталяваць базавыя модулі са Склада, калі такія маюцца."
+
+msgid "resetBranch/step2/notInHangar"
+msgstr "Няма ў Гаражы"
+
+msgid "resetBranch/step2/returnBack"
+msgstr "На Склад вернецца"
+
+msgid "resetBranch/step3/confirmText"
+msgstr ""
+"Працэс незваротны: для гульні на тэхніцы, якая скідваецца, вам спатрэбіцца "
+"паўторна яе даследаваць і купіць."
+
+msgid "resetBranch/subtitle"
+msgstr "Праект «Арбіта»"
+
+msgid "resetBranch/title"
+msgstr "СКІД ГАЛІНЫ ТЭХНІКІ"
+
+msgid "resetBranch/tooltip/blueprint/count"
+msgstr ""
+"У наборы \n"
+"%(count)s %(countType)s"
+
+msgid "resetBranch/tooltip/blueprint/countType"
+msgstr "шт."
+
+msgid "resetBranch/tooltip/blueprint/description"
+msgstr "Аўтаматычна дапаўняе чарцёж машыны і дае зніжку на яе даследаванне."
+
+msgid "resetBranch/tooltip/blueprint/discount"
+msgstr ""
+"Зніжка на даследаванне: \n"
+"%(discount)s або {bond_open}%(experience)s{bond_close}"
+
+msgid "resetBranch/tooltip/blueprint/discountValue"
+msgstr "%(discountValue)s%"
+
+msgid "resetBranch/tooltip/blueprint/header"
+msgstr "Фрагмент чарцяжа"
+
+msgid "resetBranch/tooltip/bull"
+msgstr "•"
+
+msgid "resetBranch/tooltip/credits/description"
+msgstr ""
+"Пры скідзе галіны тэхнікі кампенсуецца 50% ад кошту кожнай машыны і "
+"ўсталяваных модуляў."
+
+msgid "resetBranch/tooltip/credits/header"
+msgstr "Крэдыты"
+
+msgid "resetBranch/tooltip/listSeparator"
+msgstr ", "
+
+msgid "resetBranch/tooltip/modules/description"
+msgstr ""
+"Пры продажы машыны на яе будуць усталяваны {cream_open}базавыя модулі{cream_close} (якія ўсталёўваюцца першапачаткова пры набыцці машыны), калі яны ёсць на Складзе. \n"
+" \n"
+"{cream_open}Даследаваныя{cream_close} модулі пры гэтым будуць зняты з машыны і бясплатна выгружаны на Склад."
+
+msgid "resetBranch/tooltip/modules/header"
+msgstr "Усталяваць базавыя модулі"
+
+msgid "resetBranch/tooltip/progressionPoints/description"
+msgstr ""
+"Патрэбны для прасоўвання па прагрэсіі праекта. Для атрымання ачкоў трэба "
+"правесці пераможны бой на паўторна даследаванай і набытай тэхніцы."
+
+msgid "resetBranch/tooltip/progressionPoints/header"
+msgstr "Ачкі праекта «Арбіта»"
+
+msgid "resetBranch/tooltip/resetBranch/description"
+msgstr "Максімальная колькасць адначасова скінутых галін тэхнікі {max_count}."
+
+msgid "resetBranch/tooltip/resetBranch/header"
+msgstr "Скінутыя галіны"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader1"
+msgstr "Дасягнуты ліміт скінутых галін"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader2"
+msgstr "Замала тэхнікі Х узроўню"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader3"
+msgstr "Скід галіны недаступны"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader4"
+msgstr "Праект «Арбіта» прыпынены"
+
+msgid "resetBranch/tooltip/resetButtonErrorText1"
+msgstr ""
+"Адначасова скінута "
+"{whiteSpanish_open}%(resetBranchesCount)s{whiteSpanish_close} галіны "
+"тэхнікі. Збярыце ўсе ачкі праекта «Арбіта» з любой скінутай галіны, каб "
+"атрымаць магчымасць скінуць новую."
+
+msgid "resetBranch/tooltip/resetButtonErrorText10"
+msgstr "Праект часова прыпынены. Мы паведамім пра аднаўленне працы."
+
+msgid "resetBranch/tooltip/resetButtonErrorText2"
+msgstr ""
+"Каб атрымаць магчымасць скіду галіны, павінна быць даследавана не менш за "
+"{cream_open}%(necessaryVehicleCount)s адз.{cream_close} тэхнікі Х узроўню. "
+"Зараз даследавана: {cream_open}%(vehicleCount)s адз.{cream_close}"
+
+msgid "resetBranch/tooltip/resetButtonErrorText3"
+msgstr ""
+"Для скіду новай галіны неабходна даследаваць і сабраць ачкі прагрэсіі "
+"праекта «Арбіта» на ўсёй тэхніцы скінутай галіны."
+
+msgid "resetBranch/tooltip/resetButtonErrorText5"
+msgstr "Тэхніка з ачкамі прагрэсіі: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText6"
+msgstr "Тэхніка патрабуе рамонту: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText7"
+msgstr "Тэхніка знаходзіцца ў баі: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText8"
+msgstr "Тэхніка знаходзіцца ў складзе фармавання: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText9"
+msgstr "Тэхніка патрабуе даследавання: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonHeader"
+msgstr "Скінуць галіну"
+
+msgid "resetBranch/tooltip/resetButtonList1"
+msgstr "Наяўная тэхніка прадаецца за {brown_open}50%{brown_close} ад кошту."
+
+msgid "resetBranch/tooltip/resetButtonList2"
+msgstr ""
+"Уся скінутая тэхніка становіцца {brown_open}недаследаванай{brown_close}."
+
+msgid "resetBranch/tooltip/resetButtonList3"
+msgstr ""
+"Экіпажы высаджваюцца ў Жаўнерню. Калі месцаў у Жаўнерні недастаткова, "
+"экіпажы зоймуць часовыя."
+
+msgid "resetBranch/tooltip/resetButtonList4"
+msgstr ""
+"Рыштунак, абсталяванне, боекамплект, элементы выгляду і настаўленні "
+"{brown_open}бясплатна{brown_close} выгружаюцца на Склад."
+
+msgid "resetBranch/tooltip/resetButtonList5"
+msgstr ""
+"Увесь баявы досвед, гульнявая статыстыка, знакі класнасці, адметныя адзнакі,"
+" эліты статус, узровень палявой мадэрнізацыі і яе выбраныя элементы "
+"{brown_open}захоўваюцца{brown_close}."
+
+msgid "resetBranch/tooltip/resetButtonList6"
+msgstr ""
+"За пераможны бой на паўторна даследаванай тэхніцы здабываюцца ачкі прагрэсіі"
+" праекта «Арбіта»."
+
+msgid "resetBranch/tooltip/resetButtonSubHeader"
+msgstr "Пры скідзе галіны:"
+
+msgid "resetBranch/tooltip/resetButtonText1"
+msgstr "Усяго скінута галін: {cream_open}%(current)s{cream_close} / %(max)s"
+
+msgid "resetBranch/tooltip/resetButtonText2"
+msgstr ""
+"Ачкі праекта «Арбіта»: {whiteSpanish_open}%(current)s{whiteSpanish_close}"
+
+msgid "resetBranch/tooltip/resetButtonText3"
+msgstr "Вернецца крэдытаў: {cred_open}%(current)s{cred_close}"
+
+msgid "resetBranch/tooltip/returnBack/additionalDescription"
+msgstr ""
+"Увесь баявы досвед, гульнявая статыстыка, знакі класнасці, адметныя адзнакі,"
+" эліты статус, узровень палявой мадэрнізацыі і яе выбраныя элементы "
+"захоўваюцца."
+
+msgid "resetBranch/tooltip/returnBack/description"
+msgstr ""
+"Абсталяванне, настаўленні, боекамплект і рыштунак выгружаюцца на Склад "
+"бясплатна. Экіпаж машыны высаджваецца ў Жаўнерню."
+
+msgid "resetBranch/tooltip/returnBack/header"
+msgstr "Вернецца на Склад / у Жаўнерню"
+
+msgid "resetBranch/tooltip/step1/descr"
+msgstr "Ачкі прагрэсіі праекта «Арбіта»."
+
+msgid "resetBranch/tooltip/step1/header"
+msgstr "Скід галіны тэхнікі: крок 1"
+
+msgid "resetBranch/tooltip/step2/descr"
+msgstr "Гульнявая маёмасць, якая вяртаецца."
+
+msgid "resetBranch/tooltip/step2/header"
+msgstr "Скід галіны тэхнікі: крок 2"
+
+msgid "resetBranch/tooltip/step3/descr"
+msgstr "Пацвярджэнне скіду галіны."
+
+msgid "resetBranch/tooltip/step3/header"
+msgstr "Скід галіны тэхнікі: крок 3"
+
+msgid "resetBranch/tooltip/totalProgressionPoints/description"
+msgstr ""
+"Патрэбны для прасоўвання па прагрэсіі праекта. Для атрымання здабудзьце "
+"перамогу ў баі ў любым з рэжымаў: Выпадковы бой, Генеральная бітвы, Націск, "
+"Рангавы бой, Лінія фронту, Палігон, Аркада, Умацаваныя раёны і Кланавыя баі."
+
+msgid "resetBranch/tooltip/totalProgressionPoints/header"
+msgstr "Ачкі праекта «Арбіта»"
+
+msgid "reward/branch"
+msgstr "Доступ да галіны тэхнікі"
+
+msgid "reward/branches"
+msgstr "Член экіпажа %(branch)s"
+
+msgid "reward/crew"
+msgstr "Член экіпажа %(crews)s"
+
+msgid "reward/selector/level/eleven"
+msgstr "Тэхніка ХІ узроўню"
+
+msgid "reward/style"
+msgstr "Стыль %(styles)s"
+
+msgid "reward/vehicle"
+msgstr "Тэхніка: «%(vehicles)s»"
+
+msgid "rewards/header"
+msgstr "Віншуем!"
+
+msgid "rewards/notification"
+msgstr "Атрымана ўзнагарода за праходжанне %(level)s этапу праекта «Арбіта»."
+
+msgid "rewards/paragonsUnlock"
+msgstr "Доступ да галіны тэхнікі"
+
+msgid "rewards/tman"
+msgstr "Член экіпажа «%(tmanName)s»"
+
+msgid "rewardsView/footer/buttonText"
+msgstr "Так!"
+
+msgid "rewardsView/footer/previewButtonText"
+msgstr "Паглядзець у Гаражы"
+
+msgid "rewardsView/header/closeButtonText"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rewardsView/header/subTitle"
+msgstr "Атрымана ўзнагарода за праходжанне %(level)s этапу праекта «Арбіта»."
+
+msgid "rewardsView/header/title"
+msgstr "Віншуем!"
+
+msgid "rewardsView/restRewardsTooltip/headerText"
+msgstr "Узнагароды"
+
+msgid "rewardsView/selectReward/button"
+msgstr "Выбраць"
+
+msgid "rewardsView/selectReward/label"
+msgstr "Тэхніка ХІ узроўню"
+
+msgid "seasonsProgression/headerText"
+msgstr "Праект «Арбіта»"
+
+msgid "seasonsProgression/selectedChapterRewardsOverlay/subTitle"
+msgstr ""
+"Звычайныя ўзнагароды налічваюцца па дасягненні кожнага этапу аўтаматычна.\n"
+"Тэхніку ХІ узроўню трэба выбіраць уручную."
+
+msgid "seasonsProgression/selectedChapterRewardsOverlay/title"
+msgstr "УЗНАГАРОДЫ ЗА ЎСЕ ЭТАПЫ"
+
+msgid "seasonsProgression/stageText/activeStage"
+msgstr "Актыўны сезон"
+
+msgid "seasonsProgression/stageText/availableSoon"
+msgstr "У распрацоўцы"
+
+msgid "seasonsProgression/stageText/rewardStage"
+msgstr "Узнагароды сезона"
+
+msgid "seasonsProgression/stageText/selectStage"
+msgstr "Выбраць сезон"
+
+msgid "seasonsProgression/subtitle/allStagesCompleted"
+msgstr ""
+"Усе сезоны праекта пройдзены і ўзнагароды атрыманы.\n"
+"Мы паведамім, калі адкрыецца новы сезон з чарговымі ўзнагародамі."
+
+msgid "seasonsProgression/subtitle/selectStageForGetReward"
+msgstr ""
+"Выберыце сезон праекта, каб атрымаць узнагароды за праходжанне яго этапаў."
+
+msgid "seasonsProgression/title/projectStages"
+msgstr "ВЫБАР СЕЗОНА"
+
+msgid "seasonsProgression/tooltip/body/announcement"
+msgstr "Новы сезон ужо ў працы і хутка будзе даступны."
+
+msgid "seasonsProgression/tooltip/body/default"
+msgstr "Выберыце сезон, каб атрымаць узнагароды за праходжанне яго этапаў."
+
+msgid "seasonsProgression/tooltip/body/disabled"
+msgstr "Прайдзіце сезон, актыўны на дадзены момант, каб выбраць наступны."
+
+msgid "seasonsProgression/tooltip/body/finished"
+msgstr "Усе этапы гэтага сезона пройдзены, узнагароды атрыманы."
+
+msgid "seasonsProgression/tooltip/btnRewards"
+msgstr "Паглядзець узнагароды гэтага сезона."
+
+msgid "seasonsProgression/tooltip/header/announcement"
+msgstr "Анонс новага сезона праекта «Арбіта»"
+
+msgid "seasonsProgression/tooltip/header/default"
+msgstr "Сезон праекта «Арбіта»"
+
+msgid "seasonsProgression/tooltip/header/disabled"
+msgstr "Заблакаваны сезон праекта «Арбіта»"
+
+msgid "seasonsProgression/tooltip/header/finished"
+msgstr "Пройдзены сезон праекта «Арбіта»"
+
+msgid "vehiclePreview/backButton"
+msgstr "ДА ПРАЕКТА «АРБІТА»"

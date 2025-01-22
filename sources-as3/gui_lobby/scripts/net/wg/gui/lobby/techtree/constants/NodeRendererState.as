@@ -52,6 +52,14 @@ package net.wg.gui.lobby.techtree.constants
       public static const EARLY_ACCESS_UNLOCKED:String = "earlyAccess_unlocked";
       
       public static const EARLY_ACCESS_INVENTORY:String = "earlyAccess_inventory";
+      
+      public static const PARAGONS_RESET_LOCKED:String = "paragonsReset_locked";
+      
+      public static const PARAGONS_RESET_NEXT2UNLOCK:String = "paragonsReset_next2unlock";
+      
+      public static const PARAGONS_RESET_NEXT4BUY:String = "paragonsReset_next4buy";
+      
+      public static const PARAGONS_RESET_UNLOCKED:String = "paragonsReset_unlocked";
        
       
       public function NodeRendererState()

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>56.700001</duration>
+	<duration>39.633335</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -10,7 +10,7 @@
 			<type>animation</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>56.700001</duration>
+				<duration>39.633335</duration>
 				<resourceID>content/Hangars/h00_armory_yard/Raccoon_Mattress/Animation/Raccoon_Jaginskaya_Scene_Tells_about_the_weapon_01.fbx</resourceID>
 				<clipName/>
 				<speed>1.000000</speed>
@@ -20,7 +20,7 @@
 				<blendInTime>0.000000</blendInTime>
 				<blendOutTime>0.000000</blendOutTime>
 				<clipStartTime>0.000000</clipStartTime>
-				<clipEndTime>56.700001</clipEndTime>
+				<clipEndTime>39.633335</clipEndTime>
 			</frame>
 		</track>
 	</sequenceObject>
@@ -32,7 +32,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>55.066666</duration>
+				<duration>39.633335</duration>
 				<value>Root|Head_M</value>
 			</frame>
 		</track>
@@ -40,36 +40,15 @@
 			<name>Footsteps</name>
 			<type>sound</type>
 			<frame>
-				<startTime>10.966667</startTime>
-				<duration>3.400002</duration>
-				<sequenceSound>ay_racoon_run</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-			<frame>
-				<startTime>14.466667</startTime>
-				<duration>7.466667</duration>
+				<startTime>2.900000</startTime>
+				<duration>8.433334</duration>
 				<sequenceSound>ay_racoon_walk</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 			<frame>
-				<startTime>38.600002</startTime>
-				<duration>2.299999</duration>
-				<sequenceSound>ay_racoon_walk</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-			<frame>
-				<startTime>40.933334</startTime>
-				<duration>4.733334</duration>
-				<sequenceSound>ay_racoon_run</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-			<frame>
-				<startTime>45.766670</startTime>
-				<duration>1.399998</duration>
+				<startTime>28.300001</startTime>
+				<duration>11.300001</duration>
 				<sequenceSound>ay_racoon_walk</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
@@ -79,7 +58,7 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>14.766667</startTime>
+				<startTime>13.100000</startTime>
 				<duration>0.966667</duration>
 				<sequenceSound>ay_racoon_squeak_01</sequenceSound>
 				<type>play_till_end</type>
@@ -87,13 +66,13 @@
 			</frame>
 			<frame>
 				<startTime>23.666668</startTime>
-				<duration>9.433334</duration>
+				<duration>4.600000</duration>
 				<sequenceSound>ay_racoon_rumble</sequenceSound>
 				<type>play_till_end</type>
 				<fade>3.000000</fade>
 			</frame>
 			<frame>
-				<startTime>39.400002</startTime>
+				<startTime>38.366669</startTime>
 				<duration>1.233334</duration>
 				<sequenceSound>ay_racoon_squeak_01</sequenceSound>
 				<type>play_till_end</type>

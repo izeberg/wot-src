@@ -1989,10 +1989,15 @@ msgstr ""
 "Поздравляем!\n"
 "За успешное выполнение личных боевых задач кампании «Второй фронт» вам присвоены следующие награды"
 
-msgid "serviceChannelMessages/battleResults/personalMissions/both"
+msgid "serviceChannelMessages/battleResults/personalMissions/3"
 msgstr ""
 "Поздравляем!\n"
-"За успешное выполнение личных боевых задач обеих кампаний вам присвоены следующие награды"
+"За успешное выполнение личных боевых задач кампании «Новые горизонты» вам присвоены следующие награды"
+
+msgid "serviceChannelMessages/battleResults/personalMissions/multiple"
+msgstr ""
+"Поздравляем!\n"
+"За успешное выполнение личных боевых задач кампаний %(text)s вам присвоены следующие награды"
 
 msgid "serviceChannelMessages/battleResults/piggyBank"
 msgstr "В хранилище кредитов поступило"
@@ -3006,14 +3011,35 @@ msgstr "Вы можете пройти опрос о карте %(mapName)s ре
 msgid "serviceChannelMessages/multiplier"
 msgstr " (x%(count)s)"
 
+msgid "serviceChannelMessages/newYearMandarinsConvert/header"
+msgstr "Финансовая операция"
+
+msgid "serviceChannelMessages/newYearMandarinsConvert/text"
+msgstr ""
+"Обмен %(mandarinsCount)s шт. мандаринов успешно завершён.\n"
+"Получено жетонов: %(machineCount)s."
+
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "В Казарму"
 
 msgid "serviceChannelMessages/notrecruitedTankman/removedTankmen"
 msgstr "Списано членов экипажа: %(count)s"
 
+msgid "serviceChannelMessages/offerTokenBonus/alternativeTitle"
+msgstr "награда на выбор"
+
 msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Поставки из тыла"
+
+msgid ""
+"serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
+msgstr "За досрочное прохождение аттестации вам присвоены следующие награды"
+
+msgid ""
+"serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived"
+msgstr ""
+"Все награды, положенные за выполнение этого этапа, будут начислены "
+"автоматически после выпуска машины."
 
 msgid "serviceChannelMessages/personalReservesConverted"
 msgstr "Все ваши личные резервы конвертированы."
@@ -3592,6 +3618,9 @@ msgid "serviceChannelMessages/sysMsg/removeCustomizations"
 msgstr ""
 "Из-за смены модулей следующие элементы внешнего вида были сняты с "
 "%(vehicle)s."
+
+msgid "serviceChannelMessages/sysMsg/titles/bobBattlesAvailable"
+msgstr "Бои Битвы блогеров доступны"
 
 msgid "serviceChannelMessages/sysMsg/titles/customization"
 msgstr "Изменение внешнего вида:"

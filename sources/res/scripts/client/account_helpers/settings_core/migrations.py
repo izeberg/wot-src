@@ -1,12 +1,13 @@
-import BigWorld, constants
+import BigWorld, logging, constants
 from account_helpers.AccountSettings import NEW_SETTINGS_COUNTER
-from account_helpers.settings_core.settings_constants import GAME, CONTROLS, VERSION, DAMAGE_INDICATOR, DAMAGE_LOG, BATTLE_EVENTS, SESSION_STATS, BattlePassStorageKeys, BattleCommStorageKeys, OnceOnlyHints, ScorePanelStorageKeys, SPGAim, GuiSettingsBehavior, NewYearStorageKeys
+from account_helpers.settings_core.settings_constants import GAME, CONTROLS, VERSION, DAMAGE_INDICATOR, DAMAGE_LOG, BATTLE_EVENTS, SESSION_STATS, BattlePassStorageKeys, BattleCommStorageKeys, OnceOnlyHints, ScorePanelStorageKeys, SPGAim, GuiSettingsBehavior, NewYearStorageKeys, GRAPHICS
 from adisp import adisp_process, adisp_async
 from debug_utils import LOG_DEBUG
 from gui.server_events.pm_constants import PM_TUTOR_FIELDS
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCache
 from skeletons.gui.game_control import IIGRController
+_logger = logging.getLogger(__name__)
 
 def _initializeDefaultSettings(core, data, initialized):
     LOG_DEBUG('Initializing server settings.')
@@ -1331,6 +1332,26 @@ def _migrateTo129(core, data, initialized):
     nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_ENTRANCE] = 0
 
 
+def _migrateTo130(core, data, initialized):
+    from account_helpers.AccountSettings import BOB_CAROUSEL_FILTER_1, BOB_CAROUSEL_FILTER_2, DEFAULT_VALUES, KEY_FILTERS
+    data['bobCarouselFilter1'] = DEFAULT_VALUES[KEY_FILTERS][BOB_CAROUSEL_FILTER_1]
+    data['bobCarouselFilter2'] = DEFAULT_VALUES[KEY_FILTERS][BOB_CAROUSEL_FILTER_2]
+
+
+def _migrateTo131(core, data, initialized):
+    from account_helpers.AccountSettings import AccountSettings
+    uiEffects = AccountSettings.getSettings(GRAPHICS.UI_EFFECTS)
+    if uiEffects is None:
+        presetIdx = BigWorld.autoDetectGraphicsSettings()
+        presets = core.options.getSetting(GRAPHICS.PRESETS).pack().get('options')
+        if presets:
+            uiEffectsIsEnabled = presets[presetIdx].get('settings', {}).get(GRAPHICS.UI_EFFECTS, False)
+            AccountSettings.setSettings(GRAPHICS.UI_EFFECTS, uiEffectsIsEnabled)
+        else:
+            _logger.warning('Graphic presets are not found')
+    return
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1585,9 +1606,13 @@ _versions = (
  (
   127, _migrateTo127, False, False),
  (
-  127, _migrateTo128, False, False),
+  128, _migrateTo128, False, False),
  (
-  127, _migrateTo129, False, False))
+  129, _migrateTo129, False, False),
+ (
+  130, _migrateTo130, False, False),
+ (
+  131, _migrateTo131, False, False))
 
 @adisp_async
 @adisp_process

@@ -145,6 +145,10 @@ package
       
       public static const TOOLTIP_DEBUT_BOXES_BODY:String = "#tank_carousel_filter:tooltip/debut_boxes/body";
       
+      public static const TOOLTIP_PARAGONS_HEADER:String = "#tank_carousel_filter:tooltip/paragons/header";
+      
+      public static const TOOLTIP_PARAGONS_BODY:String = "#tank_carousel_filter:tooltip/paragons/body";
+      
       public static const INFOTIP_HEADER_TITLE:String = "#tank_carousel_filter:infotip/header/title";
       
       public static const INFOTIP_HEADER_DESCRIPTION:String = "#tank_carousel_filter:infotip/header/description";

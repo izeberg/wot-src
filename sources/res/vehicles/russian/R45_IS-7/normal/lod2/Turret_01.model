@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<tank>true</tank>
 	<nodefullVisual>vehicles/russian/R45_IS-7/normal/lod2/Turret_01</nodefullVisual>
-	<materialNames/>
-	<visibilityBox>
-		<min>
-			-1.49324 -0.000383309 -2.36596
-			<!--BW_String-->
-		</min>
-		<max>
-			1.49324 2.14858 1.54106
-			<!--BW_String-->
-		</max>
-	</visibilityBox>
 	<parent>vehicles/russian/R45_IS-7/normal/lod3/Turret_01</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.493237 -0.000383 -2.365962</min>
+		<max>1.493237 2.148576 1.541056</max>
+	</visibilityBox>
+	<tank>true</tank>
 </root>

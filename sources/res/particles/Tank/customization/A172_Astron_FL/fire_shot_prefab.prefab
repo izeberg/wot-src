@@ -32,6 +32,16 @@
 			<UUID>76aeb60b-c4d8-441d-ace2-2a12d99f8608</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>overheatGunEffect</name>
+			<UUID>025d51be-ae8d-4cab-a430-06a8d678bf62</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>overheatSmokeEffect</name>
+			<UUID>64e294d1-b2b6-457d-a784-1907da3db8da</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -84,6 +94,26 @@
 					<property>
 						<name>Parent</name>
 						<link>3af68422-1329-4ee1-b085-d37aa6aa3d64</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fe1ea383-20e1-43a6-a42b-fb63d4fe676d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fe1ea383-20e1-43a6-a42b-fb63d4fe676d</link>
 					</property>
 				</config>
 			</component>
@@ -141,7 +171,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -202,55 +232,66 @@
 					</property>
 				</config>
 			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>GunRecoilAnimator</type>
-			<version>1</version>
 			<component>
-				<objectIndex>1</objectIndex>
-				<flags>0</flags>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
 				<config>
 					<property>
-						<name>Shots per minute</name>
-						<value>5000</value>
+						<name>Position</name>
+						<value>0 0 0</value>
 					</property>
 					<property>
-						<name>Groups</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Amplitude</name>
-										<value>
-											0.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>Backoff Time</name>
-										<value>
-											0.05
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>Return Time</name>
-										<value>
-											0.1
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>Recoil&apos;s Transforms</name>
-										<collection>
-											<item>
-												<link>8cf881cd-ad99-499d-baa0-bc4e3e6911b0</link>
-											</item>
-										</collection>
-									</property>
-								</object>
-							</item>
-						</collection>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/shots/shot_flame_start_auto.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -321,6 +362,10 @@
 						<value>Gun</value>
 					</property>
 					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
 					</property>
@@ -352,33 +397,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Particle</type>
-			<version>1</version>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>effect</name>
-						<isAsset>true</isAsset>
-						<value>particles/Tank/shots/shot_flame_start_auto.eff</value>
-					</property>
-					<property>
-						<name>Rate</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>oneTimeEffect</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>AutoShootingGunBurstPixie</type>
 			<version>1</version>
 			<component>
@@ -388,6 +406,30 @@
 					<property>
 						<name>rateFactor</name>
 						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>OverheatEffect</type>
+			<version>1</version>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectPath</name>
+						<value>particles/Tank/shots/fl_overheat.eff</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectPath</name>
+						<value>particles/Tank/shots/fl_overheat_long_smoke.eff</value>
 					</property>
 				</config>
 			</component>

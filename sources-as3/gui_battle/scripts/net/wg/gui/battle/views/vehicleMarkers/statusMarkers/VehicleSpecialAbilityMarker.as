@@ -5,16 +5,16 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
    
    public class VehicleSpecialAbilityMarker extends VehicleStunMarker
    {
-       
       
-      private const EMPTY_COLOR_STATE:String = "empty";
+      private static const EMPTY_COLOR_STATE:String = "empty";
+       
       
       public function VehicleSpecialAbilityMarker()
       {
          super();
          waveContainer.isAtlasCenterDrawMode = false;
-         waveContainer.updateColorSettings(this.EMPTY_COLOR_STATE);
-         arrowContainer.updateColorSettings(this.EMPTY_COLOR_STATE);
+         waveContainer.updateColorSettings(EMPTY_COLOR_STATE);
+         arrowContainer.updateColorSettings(EMPTY_COLOR_STATE);
       }
       
       override public function updateAssets() : void

@@ -25,6 +25,8 @@ package net.wg.gui.battle.views.questProgress
       
       private var _items:Vector.<IQPItemRenderer> = null;
       
+      private var _secondItems:Vector.<IQPItemRenderer> = null;
+      
       private var _orItems:Vector.<IQPItemOrConditionIcon> = null;
       
       private var _isInitCompleted:Boolean = false;
@@ -109,6 +111,11 @@ package net.wg.gui.battle.views.questProgress
          this.onUpdateHeaderProgress(param1);
       }
       
+      public function updateSecondHeaderProgress(param1:Vector.<IHeaderProgressData>) : void
+      {
+         this.onUpdateSecondHeaderProgress(param1);
+      }
+      
       protected function updateData(param1:String, param2:IQPProgressData) : void
       {
          this.updateItemById(param1,param2);
@@ -118,10 +125,14 @@ package net.wg.gui.battle.views.questProgress
       {
          var _loc2_:IQPItemRenderer = null;
          var _loc3_:IQPItemOrConditionIcon = null;
-         if(this._items == null)
+         if(!this._items)
          {
             this.createItems(param1);
             for each(_loc2_ in this._items)
+            {
+               this.addConditionItem(DisplayObject(_loc2_));
+            }
+            for each(_loc2_ in this._secondItems)
             {
                this.addConditionItem(DisplayObject(_loc2_));
             }
@@ -179,9 +190,24 @@ package net.wg.gui.battle.views.questProgress
       {
       }
       
+      protected function onUpdateSecondHeaderProgress(param1:Vector.<IHeaderProgressData>) : void
+      {
+      }
+      
       protected function hasLockedItems() : Boolean
       {
          return this._lockedItemsId.length > 0;
+      }
+      
+      protected function manageOrBetweenItems() : void
+      {
+         var _loc1_:IQPItemOrConditionIcon = null;
+         if(this._secondItems && this._secondItems.length)
+         {
+            _loc1_ = App.utils.classFactory.getComponent(this.getRendererOrLinkage(),IQPItemOrConditionIcon);
+            _loc1_.setItems(this._items[this._items.length - 1],this._secondItems[0]);
+            this._orItems.push(_loc1_);
+         }
       }
       
       private function updateItemRenderer(param1:IQPItemRenderer, param2:IQPProgressData) : void
@@ -221,6 +247,17 @@ package net.wg.gui.battle.views.questProgress
             this._items.splice(0,this._items.length);
             this._items = null;
          }
+         if(this._secondItems)
+         {
+            for each(_loc1_ in this._secondItems)
+            {
+               this.removeConditionItem(DisplayObject(_loc1_));
+               _loc1_.removeEventListener(QuestProgressComponentEvent.LAYOUT_COMPLETED,this.onItemRendererLayoutCompletedHandler);
+               _loc1_.dispose();
+            }
+            this._secondItems.splice(0,this._secondItems.length);
+            this._secondItems = null;
+         }
          if(this._orItems)
          {
             for each(_loc2_ in this._orItems)
@@ -248,38 +285,64 @@ package net.wg.gui.battle.views.questProgress
       
       private function createItems(param1:IQuestProgressData) : void
       {
+         var _loc3_:IQPItemRenderer = null;
          var _loc4_:IQPItemRenderer = null;
-         var _loc7_:IQuestProgressItemData = null;
+         var _loc5_:IQPItemOrConditionIcon = null;
          this._itemsMap = new Dictionary();
          this._items = new Vector.<IQPItemRenderer>(0);
          this._orItems = new Vector.<IQPItemOrConditionIcon>();
-         var _loc2_:String = this.getViewType();
-         var _loc3_:IQPItemOrConditionIcon = null;
-         var _loc5_:IQPItemRenderer = null;
-         var _loc6_:Vector.<IQuestProgressItemData> = param1.getData();
-         for each(_loc7_ in _loc6_)
+         this._secondItems = new Vector.<IQPItemRenderer>(0);
+         var _loc2_:Vector.<IQuestProgressItemData> = param1.getSecondData();
+         this.initItems(param1.getData(),this._items);
+         this.initItems(_loc2_,this._secondItems);
+         if(!param1.isSecondHeaderHasProgress && _loc2_ && _loc2_.length)
          {
-            if(!this.isHidden(_loc7_.initData))
+            _loc3_ = this._items[this._items.length - 1];
+            _loc4_ = this._secondItems[0];
+            if(_loc3_ && _loc3_.isInOrGroup && _loc4_.isInOrGroup && _loc3_.orderType == _loc4_.orderType)
             {
-               _loc4_ = App.utils.classFactory.getComponent(this.getRendererLinkage(),IQPItemRenderer);
-               _loc4_.addEventListener(QuestProgressComponentEvent.LAYOUT_COMPLETED,this.onItemRendererLayoutCompletedHandler);
-               _loc4_.viewType = _loc2_;
-               _loc4_.id = _loc7_.id;
-               _loc4_.init(_loc7_.initData);
-               _loc4_.initMetrics(_loc7_.progressData.metricsValue,_loc7_.progressData.state);
-               this.updateItemRenderer(_loc4_,_loc7_.progressData);
-               _loc4_.validateNow();
-               this._items.push(_loc4_);
-               this._itemsMap[_loc7_.id] = _loc4_;
-               if(_loc5_ && _loc5_.isInOrGroup && _loc4_.isInOrGroup && _loc5_.orderType == _loc7_.initData.orderType)
-               {
-                  _loc3_ = App.utils.classFactory.getComponent(this.getRendererOrLinkage(),IQPItemOrConditionIcon);
-                  _loc3_.setItems(_loc5_,_loc4_);
-                  this._orItems.push(_loc3_);
-               }
-               _loc5_ = _loc4_;
+               _loc5_ = App.utils.classFactory.getComponent(this.getRendererOrLinkage(),IQPItemOrConditionIcon);
+               _loc5_.setItems(_loc3_,_loc4_);
+               this._orItems.push(_loc5_);
             }
          }
+         this.manageOrBetweenItems();
+      }
+      
+      private function initItems(param1:Vector.<IQuestProgressItemData>, param2:Vector.<IQPItemRenderer>) : void
+      {
+         var _loc5_:IQuestProgressItemData = null;
+         var _loc3_:String = this.getViewType();
+         var _loc4_:IQPItemRenderer = null;
+         for each(_loc5_ in param1)
+         {
+            if(!this.isHidden(_loc5_.initData))
+            {
+               _loc4_ = this.initItem(_loc5_,_loc4_,_loc3_,param2);
+            }
+         }
+      }
+      
+      private function initItem(param1:IQuestProgressItemData, param2:IQPItemRenderer, param3:String, param4:Vector.<IQPItemRenderer>) : IQPItemRenderer
+      {
+         var _loc6_:IQPItemOrConditionIcon = null;
+         var _loc5_:IQPItemRenderer = App.utils.classFactory.getComponent(this.getRendererLinkage(),IQPItemRenderer);
+         _loc5_.addEventListener(QuestProgressComponentEvent.LAYOUT_COMPLETED,this.onItemRendererLayoutCompletedHandler);
+         _loc5_.viewType = param3;
+         _loc5_.id = param1.id;
+         _loc5_.init(param1.initData);
+         _loc5_.initMetrics(param1.progressData.metricsValue,param1.progressData.state);
+         this.updateItemRenderer(_loc5_,param1.progressData);
+         _loc5_.validateNow();
+         param4.push(_loc5_);
+         this._itemsMap[param1.id] = _loc5_;
+         if(param2 && param2.isInOrGroup && _loc5_.isInOrGroup && param2.orderType == _loc5_.orderType)
+         {
+            _loc6_ = App.utils.classFactory.getComponent(this.getRendererOrLinkage(),IQPItemOrConditionIcon);
+            _loc6_.setItems(param2,_loc5_);
+            this._orItems.push(_loc6_);
+         }
+         return _loc5_;
       }
       
       private function updateItems(param1:IQuestProgressData) : void
@@ -308,6 +371,11 @@ package net.wg.gui.battle.views.questProgress
       protected function get items() : Vector.<IQPItemRenderer>
       {
          return this._items;
+      }
+      
+      protected function get secondItems() : Vector.<IQPItemRenderer>
+      {
+         return this._secondItems;
       }
       
       protected function get orItems() : Vector.<IQPItemOrConditionIcon>

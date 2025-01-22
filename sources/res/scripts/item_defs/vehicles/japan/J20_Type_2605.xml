@@ -3881,7 +3881,7 @@
 			<guns>
 				<_150mm_45_41st_Year_Type>
 					shared
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>50</maxAmmo>
 					<unlocks>
 						<gun>
 							_140mm_50_3rd_Year_Type
@@ -3902,10 +3902,13 @@
 						0.143
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>20</reloadTime>
+					<reloadTime>
+						17.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.22
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3922,7 +3925,7 @@
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.47
+						0.44
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<models>

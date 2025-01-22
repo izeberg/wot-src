@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.526618 0.000000 -3.294897</min>
+		<max>1.526618 1.243210 3.658740</max>
+	</visibilityBox>
+</root>

@@ -226,6 +226,7 @@ package net.wg.infrastructure.helpers.statisticsDataController
             for each(_loc2_ in this._questProgressViews)
             {
                _loc2_.updateHeaderProgress(this._questProgressData.headerConditions);
+               _loc2_.updateSecondHeaderProgress(this._questProgressData.secondHeaderConditions);
             }
          }
       }

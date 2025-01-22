@@ -35,7 +35,7 @@ package net.wg.gui.battle.comp7.battleloading.renderers
             selfBg.visible = UserTags.isCurrentPlayer(model.userTags);
             if(selfBg.visible)
             {
-               selfBg.imageName = BATTLEATLAS.BATTLE_LOADING_SELF_TIPS_BACKGROUND;
+               selfBg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_SELFTIPSBG;
             }
          }
       }

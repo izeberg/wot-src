@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.519362 -0.305032 -0.437253</min>
+		<max>0.546971 0.742992 4.235752</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un06_M47_Romach/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/normal/lod0/Gun_02</nodefullVisual>
+</root>

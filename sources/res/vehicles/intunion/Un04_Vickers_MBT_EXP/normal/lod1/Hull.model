@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.596250 -0.649454 -3.776480</min>
+		<max>1.580878 0.775227 3.792458</max>
+	</visibilityBox>
+</root>

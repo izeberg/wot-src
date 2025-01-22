@@ -112,6 +112,8 @@ package net.wg.data.constants
       public static const PREMIUM_PANEL:String = "premiumPanel";
       
       public static const POST_PROGRESSION_MODULES:String = "postProgressionModules";
+      
+      public static const HANGAR_FLAG_GROUP:String = "hangarFlagsGloup";
        
       
       public function SoundTypes()

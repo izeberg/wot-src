@@ -7,7 +7,6 @@ from account_helpers.AccountSettings import GUI_LOOT_BOXES, LOOT_BOXES_COUNT, LO
 from account_helpers.settings_core.ServerSettingsManager import UI_STORAGE_KEYS
 from constants import Configs
 from constants import LOOTBOX_TOKEN_PREFIX, LOOTBOX_KEY_PREFIX
-from gui import GUI_SETTINGS
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getShopURL
 from gui.limited_ui.lui_rules_storage import LuiRules
@@ -131,8 +130,8 @@ class GuiLootBoxesController(IGuiLootBoxesController):
     def openShop(self, lootboxID=None):
         if self.isBuyAvailable():
             lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootboxID)) if lootboxID else None
-            handler = self.__shopWindowHandler.get(lootBox.getType(), None) if lootBox else None
-            if callable(handler):
+            handler = self.__shopWindowHandler.get(lootBox.getCategory(), None) if lootBox else None
+            if handler:
                 handler()
             else:
                 showShop(getShopURL() + self.__getConfig().getShopCategoryUrl())
@@ -181,12 +180,6 @@ class GuiLootBoxesController(IGuiLootBoxesController):
             return lb
         else:
             return
-
-    def getInfoPageURL(self, lootboxType):
-        return GUI_SETTINGS.lootBoxInfoPagesURL.get(lootboxType, '')
-
-    def getShopURL(self, lootboxType):
-        return GUI_SETTINGS.lootBoxShopURL.get(lootboxType, '')
 
     def __getConfig(self):
         return self.__lobbyContext.getServerSettings().getGuiLootBoxesConfig()

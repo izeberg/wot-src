@@ -353,6 +353,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.controls.ToggleRenderer;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.controls.UILoaderCut;
+   import net.wg.gui.components.controls.UniversalToggleRenderer;
    import net.wg.gui.components.controls.UserNameField;
    import net.wg.gui.components.controls.UserNameFieldShadowColor;
    import net.wg.gui.components.controls.VO.ActionPriceVO;
@@ -445,7 +446,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
-   import net.wg.gui.components.crosshairPanel.components.OverheatBar;
    import net.wg.gui.components.crosshairPanel.components.artyScale.ArtyIndicationScale;
    import net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicator;
    import net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicatorText;
@@ -475,6 +475,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarkerMixing;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.constants.GunMarkerConsts;
+   import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatBar;
+   import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatBarTweenProps;
+   import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatMarkersDrawer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
@@ -566,6 +569,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.questProgress.components.metrics.rangeValues.MetricsRangeValuesComponentBase;
    import net.wg.gui.components.questProgress.components.metrics.rangeValues.MetricsRangeValuesComponentTab;
    import net.wg.gui.components.questProgress.components.metrics.rangeValues.MetricsRangeValuesComponentTop;
+   import net.wg.gui.components.questProgress.components.metrics.rangeValues.VehicleMetricsRangeValuesComponentTop;
+   import net.wg.gui.components.questProgress.components.metrics.rangeValues.VehiclesMetricsRangeValuesComponentBase;
+   import net.wg.gui.components.questProgress.components.metrics.rangeValues.VehiclesMetricsRangeValuesComponentTab;
    import net.wg.gui.components.questProgress.components.metrics.result.MetricsResultComponentTab;
    import net.wg.gui.components.questProgress.components.metrics.simple.MetricsSimpleComponentBase;
    import net.wg.gui.components.questProgress.components.metrics.simple.MetricsSimpleComponentTab;
@@ -589,6 +595,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsSimpleVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsSimpleValueVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsTimerVO;
+   import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleRangeVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleVO;
    import net.wg.gui.components.questProgress.events.QuestProgressComponentEvent;
    import net.wg.gui.components.questProgress.interfaces.ITypedViewItem;
@@ -649,6 +656,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.inblocks.data.AtlasIconTextBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.BlockDataItemVO;
    import net.wg.gui.components.tooltips.inblocks.data.BlocksVO;
+   import net.wg.gui.components.tooltips.inblocks.data.BobTeamProgressBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.BuildUpBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.CounterTextBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.ImageBlockVO;
@@ -1615,6 +1623,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_UILOADERCUT:Class = UILoaderCut;
       
+      public static const NET_WG_GUI_COMPONENTS_CONTROLS_UNIVERSALTOGGLERENDERER:Class = UniversalToggleRenderer;
+      
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_USERNAMEFIELD:Class = UserNameField;
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_USERNAMEFIELDSHADOWCOLOR:Class = UserNameFieldShadowColor;
@@ -1793,8 +1803,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBARCONTAINER:Class = CrosshairClipQuantityBarContainer;
       
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_OVERHEATBAR:Class = OverheatBar;
-      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_ARTYSCALE_ARTYINDICATIONSCALE:Class = ArtyIndicationScale;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_ARTYSHOT_ARTYSHOTINDICATOR:Class = ArtyShotIndicator;
@@ -1852,6 +1860,12 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_IGUNMARKERMIXING:Class = IGunMarkerMixing;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_CONSTANTS_GUNMARKERCONSTS:Class = GunMarkerConsts;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_OVERHEATBAR_OVERHEATBAR:Class = OverheatBar;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_OVERHEATBAR_OVERHEATBARTWEENPROPS:Class = OverheatBarTweenProps;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_OVERHEATBAR_OVERHEATMARKERSDRAWER:Class = OverheatMarkersDrawer;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETER:Class = Speedometer;
       
@@ -2041,6 +2055,12 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_COMPONENTS_METRICS_RANGEVALUES_METRICSRANGEVALUESCOMPONENTTOP:Class = MetricsRangeValuesComponentTop;
       
+      public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_COMPONENTS_METRICS_RANGEVALUES_VEHICLEMETRICSRANGEVALUESCOMPONENTTOP:Class = VehicleMetricsRangeValuesComponentTop;
+      
+      public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_COMPONENTS_METRICS_RANGEVALUES_VEHICLESMETRICSRANGEVALUESCOMPONENTBASE:Class = VehiclesMetricsRangeValuesComponentBase;
+      
+      public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_COMPONENTS_METRICS_RANGEVALUES_VEHICLESMETRICSRANGEVALUESCOMPONENTTAB:Class = VehiclesMetricsRangeValuesComponentTab;
+      
       public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_COMPONENTS_METRICS_RESULT_METRICSRESULTCOMPONENTTAB:Class = MetricsResultComponentTab;
       
       public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_COMPONENTS_METRICS_SIMPLE_METRICSSIMPLECOMPONENTBASE:Class = MetricsSimpleComponentBase;
@@ -2086,6 +2106,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_DATA_METRICS_QPMETRICSSIMPLEVO:Class = QPMetricsSimpleVO;
       
       public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_DATA_METRICS_QPMETRICSTIMERVO:Class = QPMetricsTimerVO;
+      
+      public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_DATA_METRICS_QPMETRICSVEHICLERANGEVO:Class = QPMetricsVehicleRangeVO;
       
       public static const NET_WG_GUI_COMPONENTS_QUESTPROGRESS_DATA_METRICS_QPMETRICSVEHICLEVO:Class = QPMetricsVehicleVO;
       
@@ -2194,6 +2216,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BLOCKDATAITEMVO:Class = BlockDataItemVO;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BLOCKSVO:Class = BlocksVO;
+      
+      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BOBTEAMPROGRESSBLOCKVO:Class = BobTeamProgressBlockVO;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BUILDUPBLOCKVO:Class = BuildUpBlockVO;
       

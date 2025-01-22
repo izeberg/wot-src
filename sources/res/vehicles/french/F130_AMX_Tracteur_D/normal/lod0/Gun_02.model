@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F130_AMX_Tracteur_D/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F130_AMX_Tracteur_D/normal/lod0/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.400518 -0.293933 -0.022829</min>
+		<max>0.400518 0.334329 4.600138</max>
+	</visibilityBox>
+</root>

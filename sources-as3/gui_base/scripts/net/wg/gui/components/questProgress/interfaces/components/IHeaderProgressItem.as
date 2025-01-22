@@ -12,5 +12,9 @@ package net.wg.gui.components.questProgress.interfaces.components
       function update(param1:IHeaderProgressData) : void;
       
       function get orderType() : String;
+      
+      function get progressType() : String;
+      
+      function get goal() : int;
    }
 }

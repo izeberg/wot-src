@@ -62,6 +62,8 @@ package net.wg.gui.lobby.battleResults.data
       
       public var efficiencyTitle:String = "";
       
+      public var paragons:Array = null;
+      
       public var team1:DataProvider;
       
       public var team2:DataProvider;
@@ -191,6 +193,11 @@ package net.wg.gui.lobby.battleResults.data
          {
             this.progressiveReward.dispose();
             this.progressiveReward = null;
+         }
+         if(this.paragons)
+         {
+            this.paragons.splice(0);
+            this.paragons = null;
          }
          this.common.dispose();
          this.common = null;

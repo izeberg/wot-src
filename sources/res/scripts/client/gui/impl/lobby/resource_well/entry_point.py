@@ -99,7 +99,12 @@ class EntryPoint(ViewImpl):
             return EventState.PAUSED
         if self.__resourceWell.isCompleted():
             return EventState.COMPLETED
+        if self.__isSoldOut():
+            return EventState.SOLDOUT
         return EventState.ACTIVE
+
+    def __isSoldOut(self):
+        return self.__resourceWell.getRewardLeftCount(isTop=True) == 0 and self.__resourceWell.getRewardLeftCount(isTop=False) == 0
 
     def __getProgress(self):
         maxPoints = self.__resourceWell.getMaxPoints()

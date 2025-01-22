@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.525572 -0.000025 -2.289388</min>
+		<max>1.475017 1.112540 1.271284</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/crash/lod0/Turret_02</nodefullVisual>
+	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/crash/lod1/Turret_02</parent>
+	<extent>32</extent>
+</root>

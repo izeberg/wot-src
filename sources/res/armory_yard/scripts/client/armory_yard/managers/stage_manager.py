@@ -32,11 +32,12 @@ def showVideo(videoName, onVideoClose, isAutoClose=True):
     window.load()
 
 
-class HullXrayManager(TimeDeltaMeter):
+class PartXrayManager(TimeDeltaMeter):
     __hangarSpace = dependency.descriptor(IHangarSpace)
 
-    def __init__(self):
+    def __init__(self, partName):
         TimeDeltaMeter.__init__(self)
+        self.__partName = partName
         self.__isInTransition = False
         self.__transitionTime = 0.0
         self.__currentDuration = 0.0
@@ -53,20 +54,21 @@ class HullXrayManager(TimeDeltaMeter):
     def isInTransition(self):
         return self.__isInTransition
 
-    def isOpen(self):
-        return self.__isOpen
-
     def openXray(self):
+        if self.__isOpen:
+            return
         self.measureDeltaTime()
-        self.__currentDuration = self.cgfStageManager.openXray()
+        self.__currentDuration = self.cgfStageManager.openXray(self.__partName)
         if self.__currentDuration > 0.0:
             self.__transitionTime = 0.0
             self.__isInTransition = True
             self.__isOpening = True
 
     def closeXray(self):
+        if not self.__isOpen:
+            return
         self.measureDeltaTime()
-        self.__currentDuration = self.cgfStageManager.closeXray()
+        self.__currentDuration = self.cgfStageManager.closeXray(self.__partName)
         if self.__currentDuration > 0.0:
             self.__transitionTime = 0.0
             self.__isInTransition = True
@@ -107,7 +109,7 @@ class StageManager(CallbackDelayer, TimeDeltaMeter):
         self.__hidedDetailsOnStage = False
         self.__fadeManager = ArmoryYardFadeManager()
         self.__fadeManager.setup()
-        self.__hullXrayManager = HullXrayManager()
+        self.__partXrayManagers = {}
         self.__eventManager = EventManager()
         self.onStartStage = Event(self.__eventManager)
         self.onFinishStage = Event(self.__eventManager)
@@ -134,9 +136,8 @@ class StageManager(CallbackDelayer, TimeDeltaMeter):
         self.__clear()
         self.__eventManager.clear()
         self.__fadeManager.destroy()
-        self.__hullXrayManager = None
+        self.__partXrayManagers = {}
         super(StageManager, self).destroy()
-        return
 
     def startStages(self, fromStage, toStage, reset=False, forceUpdate=False):
         if reset:
@@ -186,7 +187,9 @@ class StageManager(CallbackDelayer, TimeDeltaMeter):
         return result
 
     def setStage(self, stage):
-        self.__hullXrayManager.reset()
+        for partManager in self.__partXrayManagers.values():
+            partManager.reset()
+
         self.cgfStageManager.activateToStage(0, stage + 1)
         self.cgfStageManager.tryHideUnnecessaryPartsAfterStage(stage)
         self.cgfStageManager.hideNonSequenceObjectAfterStage()
@@ -216,8 +219,13 @@ class StageManager(CallbackDelayer, TimeDeltaMeter):
         if self.__paused:
             return 0.0
         else:
-            if self.__hullXrayManager.isInTransition():
-                self.__hullXrayManager.update()
+            isAnyXrayInTransition = False
+            for partManager in self.__partXrayManagers.values():
+                if partManager.isInTransition():
+                    partManager.update()
+                    isAnyXrayInTransition = True
+
+            if isAnyXrayInTransition:
                 return 0.0
             if self.__currentStage is None or self.cgfStageManager.getRoot() is None:
                 self.__clear()
@@ -229,9 +237,17 @@ class StageManager(CallbackDelayer, TimeDeltaMeter):
                 self.cgfStageManager.turnOffRecorderHighlight()
                 self.__fadeIn(partial(showVideo, videoName, self.__fadeOut))
                 return 0.0
-            if self.cgfStageManager.stageHasXray(self.__currentStage) and not self.__hullXrayManager.isOpen():
-                self.__hullXrayManager.openXray()
-                self.__xrayDuration = self.__hullXrayManager.cgfStageManager.openXrayDuration
+            activeXrayPartNames = self.cgfStageManager.getActiveXrayPartNames(self.__currentStage)
+            if activeXrayPartNames:
+                duration = 0.0
+                for partName in activeXrayPartNames:
+                    if partName not in self.__partXrayManagers:
+                        self.__partXrayManagers[partName] = PartXrayManager(partName)
+                    partManager = self.__partXrayManagers[partName]
+                    partManager.openXray()
+                    duration = max(duration, self.cgfStageManager.getOpenXrayDuration(partName))
+
+                self.__xrayDuration = duration
             if not self.__isPlaying:
                 self.__playTime = 0.0
                 self.__isPlaying = True
@@ -259,12 +275,16 @@ class StageManager(CallbackDelayer, TimeDeltaMeter):
                         self.__currentStage = self.__currentGroup = None
                         self.cgfStageManager.turnOnHighlight(self.cgfStageManager.getCameraDataByStageIndex(self.__previousStage))
                         self.__armoryYardCtrl.cameraManager.isStagePlaying = False
-                        if self.__hullXrayManager.isOpen():
-                            self.__hullXrayManager.closeXray()
+                        for partManager in self.__partXrayManagers.values():
+                            partManager.closeXray()
+
                     else:
                         self.__currentStage, self.__currentGroup = self.__stageQueue.get()
-                        if not self.cgfStageManager.stageHasXray(self.__currentStage) and self.__hullXrayManager.isOpen():
-                            self.__hullXrayManager.closeXray()
+                        nextActiveXrayPartNames = self.cgfStageManager.getActiveXrayPartNames(self.__currentStage)
+                        for partName in self.__partXrayManagers:
+                            if partName not in nextActiveXrayPartNames:
+                                self.__partXrayManagers[partName].closeXray()
+
                     if self.__previousStage != self.__currentStage:
                         self.cgfStageManager.tryHideUnnecessaryPartsAfterStage(self.__previousStage)
                         self.cgfStageManager.showNonSequenceObjectAfterStage(self.__previousStage)

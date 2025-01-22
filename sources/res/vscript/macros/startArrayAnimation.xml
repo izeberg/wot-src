@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>startArrayAnimation</name>
+		<isMacro>true</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT;HANGAR</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_1</id>
+				<params>
+					<param>
+						out
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_1</id>
+				<params>
+					<param>
+						in
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IterateArray</class>
+				<id>IterateArray_1</id>
+				<params>
+					<param>
+						GameObjectArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>forward</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>PrintToGameLogs</class>
+				<id>PrintToGameLogs_1</id>
+				<params>
+					<param>
+						ERROR
+						<name>Log Level</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\Animation start error\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_3</id>
+				<params>
+					<param>
+						GO
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						GameObjectArrayT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_2</id>
+				<params>
+					<param>
+						layerName
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						StringT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>IterateArray_1</from>
+				<input>out</input>
+				<to>MacroOutput_1</to>
+				<output>complete</output>
+			</connection>
+			<connection>
+				<from>MacroInput_1</from>
+				<input>input</input>
+				<to>IterateArray_1</to>
+				<output>in</output>
+			</connection>
+			<connection>
+				<from>MacroInput_3</from>
+				<input>array</input>
+				<to>IterateArray_1</to>
+				<output>GO</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_3</from>
+				<input>input</input>
+				<to>PrintToGameLogs_1</to>
+				<output>failure</output>
+			</connection>
+			<connection>
+				<from>IterateArray_1</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>IterateArray_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>MacroInput_2</from>
+				<input>arg#0</input>
+				<to>ComponentMethod_3</to>
+				<output>layerName</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

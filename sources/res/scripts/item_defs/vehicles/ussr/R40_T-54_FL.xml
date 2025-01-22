@@ -3720,11 +3720,11 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.5
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<reloadTime>
@@ -3748,7 +3748,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 6 0.394672 6 0.458334 2 0.541666 2 0.605328 6 1 6
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>

@@ -2,6 +2,7 @@ import typing
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.Scaleform.daapi.view.lobby.clans.clan_helpers import getStrongholdEventUrl
 from gui.clans.clan_cache import g_clanCache
+from gui.clans.clan_helpers import isStrongholdsEnabled
 from gui.clans.formatters import DUMMY_UNAVAILABLE_DATA
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.stronghold.stronghold_entry_point_view_model import StrongholdEntryPointViewModel, State
@@ -12,7 +13,7 @@ from helpers import time_utils, dependency
 from skeletons.gui.shared import IItemsCache
 
 def isStrongholdEntryPointAvailable():
-    return True
+    return isStrongholdsEnabled()
 
 
 class StrongholdEntryPointView(ViewImpl):
@@ -64,7 +65,17 @@ class StrongholdEntryPointView(ViewImpl):
             tx.setState(state)
             tx.setStartTimestamp(startTime)
             tx.setEndTimestamp(endTime)
+            eventSettings = g_clanCache.strongholdEventProvider.getSettings()
+            if eventSettings is not None:
+                sprintType = eventSettings.getSprintType()
+                sprintNumber = eventSettings.getSprintNumber()
+            else:
+                sprintType = 'initial'
+                sprintNumber = '0'
+            tx.setSprintType(sprintType)
+            tx.setSprintStage(str(sprintNumber))
             self.__restartNotifier(timeUntilUpdateState)
+        return
 
     def __restartNotifier(self, timeUntilUpdateState):
         if self.__notifier is not None:
@@ -83,6 +94,7 @@ class StrongholdEntryPointView(ViewImpl):
             return (State.DATAERROR, 0, 0, 0)
         else:
             timeNow = time_utils.getServerUTCTime()
+            eventStart = eventSettings.getVisibleStartDate()
             eventEnd = eventSettings.getVisibleEndDate()
             if g_clanCache.isInClan and isRunning:
                 clanInfo = g_clanCache.strongholdEventProvider.getClanPrimeTime()
@@ -118,6 +130,8 @@ class StrongholdEntryPointView(ViewImpl):
                      primeTimeStart,
                      primeTimeEnd + time_utils.ONE_DAY,
                      primeTimeStart - timeNow if primeTimeStart < eventEnd else eventEnd - timeNow)
+                if primeStartDayStart == primeEndDayStart and eventSettings.getVisibleEndDate() < primeTimeEnd:
+                    return (State.ENDED, 0, 0, 0)
                 return (
                  State.PRIMETIMETOMORROW,
                  primeTimeStart,
@@ -126,13 +140,13 @@ class StrongholdEntryPointView(ViewImpl):
             if isRunning:
                 return (
                  State.STARTED,
-                 eventSettings.getVisibleStartDate(),
+                 eventStart,
                  eventEnd,
                  eventEnd - timeNow)
             if eventSettings.getVisibleStartDate() > timeNow:
                 return (
                  State.NOTSTARTED,
-                 eventSettings.getVisibleStartDate(),
+                 eventStart,
                  eventEnd,
                  eventSettings.getVisibleStartDate() - timeNow)
             return (

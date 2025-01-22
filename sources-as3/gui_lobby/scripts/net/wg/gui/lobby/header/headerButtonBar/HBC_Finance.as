@@ -1,5 +1,6 @@
 package net.wg.gui.lobby.header.headerButtonBar
 {
+   import fl.motion.easing.Linear;
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import flash.geom.Rectangle;
@@ -15,6 +16,7 @@ package net.wg.gui.lobby.header.headerButtonBar
    import net.wg.infrastructure.interfaces.ITweenAnimatorHandler;
    import net.wg.infrastructure.interfaces.IUIComponentEx;
    import net.wg.infrastructure.interfaces.IWalletStatusVO;
+   import scaleform.clik.motion.Tween;
    
    public class HBC_Finance extends HBC_ActionItem implements ITweenAnimatorHandler
    {
@@ -42,6 +44,8 @@ package net.wg.gui.lobby.header.headerButtonBar
       private static const MONEY_TOP_Y:int = 9;
       
       private static const MONEY_CENTER_Y:int = 16;
+      
+      private static const MONEY_TWEEN_DURATION:int = 100;
        
       
       public var moneyIconText:IconText = null;
@@ -55,6 +59,10 @@ package net.wg.gui.lobby.header.headerButtonBar
       private var _newIndicator:INewIndicator = null;
       
       private var _financeVo:HBC_FinanceVo = null;
+      
+      private var _moneyHoverTween:Tween = null;
+      
+      private var _isTopLayout:Boolean = false;
       
       public function HBC_Finance()
       {
@@ -80,7 +88,6 @@ package net.wg.gui.lobby.header.headerButtonBar
       
       override protected function updateSize() : void
       {
-         var _loc5_:Boolean = false;
          updateFontSize(this.moneyIconText.textField,useFontSize);
          var _loc1_:IUIComponentEx = !!this.moneyIconText.visible ? this.moneyIconText : this.wallet;
          var _loc2_:Number = doItTextField.textWidth;
@@ -88,10 +95,10 @@ package net.wg.gui.lobby.header.headerButtonBar
          var _loc4_:Number = Math.max(_loc3_,_loc2_) + RIGHT_PADDING;
          _loc1_.x = (_loc4_ - _loc3_ >> 1) + LEFT_PADDING;
          bounds.width = _loc4_;
-         _loc5_ = _loc2_ > 0;
+         this._isTopLayout = _loc2_ > 0;
          doItTextField.x = _loc4_ - _loc2_ >> 1;
-         this.moneyIconText.y = !!_loc5_ ? Number(MONEY_TOP_Y) : Number(MONEY_CENTER_Y);
-         this.wallet.y = !!_loc5_ ? Number(WALLET_TOP_Y) : Number(WALLET_CENTER_Y);
+         this.moneyIconText.y = this._isTopLayout && isHovered ? Number(MONEY_TOP_Y) : Number(MONEY_CENTER_Y);
+         this.wallet.y = this._isTopLayout && isHovered ? Number(WALLET_TOP_Y) : Number(WALLET_CENTER_Y);
          super.updateSize();
       }
       
@@ -149,6 +156,17 @@ package net.wg.gui.lobby.header.headerButtonBar
          }
       }
       
+      override protected function updateState() : void
+      {
+         super.updateState();
+         this.clearTweens();
+         if(this._isTopLayout)
+         {
+            this._moneyHoverTween = new Tween(MONEY_TWEEN_DURATION,!!this.moneyIconText.visible ? this.moneyIconText : this.wallet,{"y":(!!isHovered ? MONEY_TOP_Y : MONEY_CENTER_Y)},{"ease":Linear.easeIn});
+            doItTextField.visible = isHovered;
+         }
+      }
+      
       override protected function isDiscountEnabled() : Boolean
       {
          return this._financeVo.isDiscountEnabled || this._financeVo.isHasAction;
@@ -156,6 +174,7 @@ package net.wg.gui.lobby.header.headerButtonBar
       
       override protected function onDispose() : void
       {
+         this.clearTweens();
          this._financeVo = null;
          this.moneyIconText.dispose();
          this.moneyIconText = null;
@@ -250,6 +269,15 @@ package net.wg.gui.lobby.header.headerButtonBar
          if(buttonActionContent != null)
          {
             buttonActionContent.setEnabled(true);
+         }
+      }
+      
+      private function clearTweens() : void
+      {
+         if(this._moneyHoverTween)
+         {
+            this._moneyHoverTween.dispose();
+            this._moneyHoverTween = null;
          }
       }
       

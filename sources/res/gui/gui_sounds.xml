@@ -290,6 +290,12 @@
 				</sounds>
 				<groups/>
 			</postProgressionModules>
+			<hangarFlagsGloup>
+				<sounds>
+					<wwout>pm_flag_unhover</wwout>
+				</sounds>
+				<groups/>
+			</hangarFlagsGloup>
 		</schemas>
 		<overrides/>
 	</controls>
@@ -463,5 +469,9 @@
 		<bp_reward_screen>bp_reward_screen</bp_reward_screen>
 		<double_eleven_bookmarks_ui>double_eleven_bookmarks_ui</double_eleven_bookmarks_ui>
 		<double_eleven_unlock_ui>double_eleven_unlock_ui</double_eleven_unlock_ui>
+		<gui_bb_bloggers_highlight>gui_bb_bloggers_highlight</gui_bb_bloggers_highlight>
+		<gui_bb_bloggers_buttons_play>gui_bb_bloggers_buttons_play</gui_bb_bloggers_buttons_play>
+		<gui_bb_bloggers_skills_up>gui_bb_bloggers_skills_up</gui_bb_bloggers_skills_up>
+		<gui_bb_bloggers_hangar_skills_up>gui_bb_bloggers_hangar_skills_up</gui_bb_bloggers_hangar_skills_up>
 	</effects>
 </root>

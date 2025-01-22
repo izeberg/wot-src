@@ -73,6 +73,8 @@ package net.wg.gui.lobby.settings
       
       public var isColorBlindCheckbox:CheckBox = null;
       
+      public var uiEffectsCheckbox:CheckBox = null;
+      
       public var colorFilterLabel:LabelControl = null;
       
       public var colorFilterNameLabel:LabelControl = null;
@@ -247,6 +249,7 @@ package net.wg.gui.lobby.settings
          this.gammaLabel = null;
          this.gammaSettingButton = null;
          this.isColorBlindCheckbox = null;
+         this.uiEffectsCheckbox = null;
          this.colorFilterLabel = null;
          this.colorFilterNameLabel = null;
          this.colorFilterImage = null;
@@ -422,6 +425,7 @@ package net.wg.gui.lobby.settings
          this.gammaLabel = this.screenForm.gammaLabel;
          this.gammaSettingButton = this.screenForm.gammaSettingButton;
          this.isColorBlindCheckbox = this.screenForm.isColorBlindCheckbox;
+         this.uiEffectsCheckbox = this.screenForm.uiEffectsCheckbox;
          this.colorFilterLabel = this.screenForm.colorFilterLabel;
          this.colorFilterNameLabel = this.screenForm.colorFilterNameLabel;
          this.colorFilterImage = this.screenForm.colorFilterImage;

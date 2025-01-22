@@ -1,10 +1,12 @@
 import logging
 from collections import namedtuple
-from functools import partial
+from functools import partial, wraps
 from time import sleep, time
 import typing, BigWorld
 from BWUtil import AsyncReturn
 from PlayerEvents import g_playerEvents
+from helpers import dependency
+from skeletons.gui.game_control import IParagonsController
 from wg_async import wg_async, wg_await, AsyncScope, AsyncEvent, BrokenPromiseError
 from debug_utils import LOG_DEBUG
 _logger = logging.getLogger(__name__)
@@ -162,3 +164,14 @@ def waitEventAndCall(event, func):
         func()
     except BrokenPromiseError:
         _logger.debug('%s has not been called. AsyncEvent scope has been destroyed', func.__name__ if hasattr(func, __name__) else func)
+
+
+def checkParagonsEnabled(func):
+
+    @wraps(func)
+    def wrapped(*args, **kwargs):
+        paragonsController = dependency.instance(IParagonsController)
+        if paragonsController.isEnabled:
+            return func(*args, **kwargs)
+
+    return wrapped

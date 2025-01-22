@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.661464 -0.976430 -3.916214</min>
+		<max>1.692986 0.773965 3.802698</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

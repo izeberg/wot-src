@@ -3807,6 +3807,4443 @@ msgstr "Урон"
 msgid "pm2_7_4_9_title_hitsAdv"
 msgstr "Для улучшения результата"
 
+msgid "pm3_10_1_1"
+msgstr "А-1"
+
+msgid "pm3_10_1_10"
+msgstr "Б-5"
+
+msgid "pm3_10_1_10_description_assist"
+msgstr ""
+"Союзники должны суммарно нанести %(goal)s ед. урона по обездвиженному вами "
+"противнику."
+
+msgid "pm3_10_1_10_description_assistedKillsAdv"
+msgstr ""
+"Союзники должны уничтожить %(goal)s машины противника, пока они обездвижены "
+"вами."
+
+msgid "pm3_10_1_10_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_10_1_10_description_crits"
+msgstr "Обездвижить %(goal)s разных машин противника, сбивая гусеницы."
+
+msgid "pm3_10_1_10_description_critsAdv"
+msgstr "Обездвижить %(goal)s разных машин противника, сбивая гусеницы."
+
+msgid "pm3_10_1_10_short"
+msgstr "Б-5"
+
+msgid "pm3_10_1_10_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_10_1_10_title_assistedKillsAdv"
+msgstr "Содействие"
+
+msgid "pm3_10_1_10_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_10_1_10_title_critsAdv"
+msgstr "Гусеницы"
+
+msgid "pm3_10_1_11"
+msgstr "В-1"
+
+msgid "pm3_10_1_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_11_description_piercingSeries"
+msgstr "Пробить броню противника %(goal)s раза подряд."
+
+msgid "pm3_10_1_11_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_10_1_11_short"
+msgstr "В-1"
+
+msgid "pm3_10_1_11_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_10_1_11_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_1_12"
+msgstr "В-2"
+
+msgid "pm3_10_1_12_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за любое количество боёв."
+
+msgid "pm3_10_1_12_description_topByDamage"
+msgstr ""
+"Засчитываются бои, в которых вы попали в топ-%(desiredPosition)s своей "
+"команды по урону."
+
+msgid "pm3_10_1_12_short"
+msgstr "В-2"
+
+msgid "pm3_10_1_12_title_hits"
+msgstr "Урон"
+
+msgid "pm3_10_1_12_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_1_13"
+msgstr "В-3"
+
+msgid "pm3_10_1_13_description_alive"
+msgstr "Засчитываются бои, в которых ваша машина не была уничтожена."
+
+msgid "pm3_10_1_13_description_kills"
+msgstr "Уничтожить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_10_1_13_short"
+msgstr "В-3"
+
+msgid "pm3_10_1_13_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_1_13_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_14"
+msgstr "В-4"
+
+msgid "pm3_10_1_14_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_14_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, не потеряв очков прочности до этого момента."
+
+msgid "pm3_10_1_14_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_1_14_short"
+msgstr "В-4"
+
+msgid "pm3_10_1_14_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_14_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_1_15"
+msgstr "В-5"
+
+msgid "pm3_10_1_15_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_10_1_15_description_damageAdv"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника за бой и не потерять очков "
+"прочности до этого момента."
+
+msgid "pm3_10_1_15_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_1_15_short"
+msgstr "В-5"
+
+msgid "pm3_10_1_15_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_15_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_10_1_15_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_1_16"
+msgstr "Г-1"
+
+msgid "pm3_10_1_16_description_assistedHits"
+msgstr ""
+"Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
+"сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_10_1_16_description_kills"
+msgstr ""
+"Засчитываются бои, в которых вы уничтожили не менее %(goal)s машин "
+"противника."
+
+msgid "pm3_10_1_16_short"
+msgstr "Г-1"
+
+msgid "pm3_10_1_16_title_assistedHits"
+msgstr "Содействие"
+
+msgid "pm3_10_1_16_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_17"
+msgstr "Г-2"
+
+msgid "pm3_10_1_17_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_10_1_17_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_17_description_piercings"
+msgstr "Пробить броню противника %(goal)s раза за бой."
+
+msgid "pm3_10_1_17_short"
+msgstr "Г-2"
+
+msgid "pm3_10_1_17_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_10_1_17_title_piercings"
+msgstr "Пробитие"
+
+msgid "pm3_10_1_18"
+msgstr "Г-3"
+
+msgid "pm3_10_1_18_description_assist"
+msgstr "Передать разведданные для нанесения %(goal)s ед. урона."
+
+msgid "pm3_10_1_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_18_description_mileage"
+msgstr "Проехать %(goal)s метров за бой."
+
+msgid "pm3_10_1_18_short"
+msgstr "Г-3"
+
+msgid "pm3_10_1_18_title_assist"
+msgstr "Разведданные"
+
+msgid "pm3_10_1_18_title_mileage"
+msgstr "Результат"
+
+msgid "pm3_10_1_19"
+msgstr "Г-4"
+
+msgid "pm3_10_1_19_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машин противника за любое "
+"количество боёв."
+
+msgid "pm3_10_1_19_short"
+msgstr "Г-4"
+
+msgid "pm3_10_1_19_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_1_1_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона тяжёлым танкам противника за любое количество "
+"боёв."
+
+msgid "pm3_10_1_1_short"
+msgstr "А-1"
+
+msgid "pm3_10_1_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_2"
+msgstr "А-2"
+
+msgid "pm3_10_1_20"
+msgstr "Г-5"
+
+msgid "pm3_10_1_20_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_10_1_20_description_assistAdv"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_10_1_20_description_battlesSeries"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_10_1_20_description_battlesSeriesAdv"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_10_1_20_short"
+msgstr "Г-5"
+
+msgid "pm3_10_1_20_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_10_1_20_title_assistAdv"
+msgstr "Содействие"
+
+msgid "pm3_10_1_21"
+msgstr "Д-1"
+
+msgid "pm3_10_1_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_21_description_blockedHits"
+msgstr "Заблокировать %(goal)s попадания за бой."
+
+msgid "pm3_10_1_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_10_1_21_short"
+msgstr "Д-1"
+
+msgid "pm3_10_1_21_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_10_1_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_1_22"
+msgstr "Д-2"
+
+msgid "pm3_10_1_22_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_22_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_10_1_22_short"
+msgstr "Д-2"
+
+msgid "pm3_10_1_22_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_1_23"
+msgstr "Д-3"
+
+msgid "pm3_10_1_23_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника за любое количество боёв."
+
+msgid "pm3_10_1_23_description_kills"
+msgstr ""
+"Засчитываются бои, в которых вы уничтожили как минимум %(goal)s машину "
+"противника."
+
+msgid "pm3_10_1_23_short"
+msgstr "Д-3"
+
+msgid "pm3_10_1_23_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_23_title_kills"
+msgstr "Результат"
+
+msgid "pm3_10_1_24"
+msgstr "Д-4"
+
+msgid "pm3_10_1_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_24_description_topByKills"
+msgstr ""
+"Попасть в топ-%(desiredPosition)s своей команды по уничтоженным машинам "
+"противника."
+
+msgid "pm3_10_1_24_short"
+msgstr "Д-4"
+
+msgid "pm3_10_1_24_title_topByKills"
+msgstr "Результат"
+
+msgid "pm3_10_1_25"
+msgstr "Д-5"
+
+msgid "pm3_10_1_25_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_10_1_25_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_10_1_25_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_10_1_25_description_topByExpAdv"
+msgstr "Занять первое место по опыту среди обеих команд."
+
+msgid "pm3_10_1_25_short"
+msgstr "Д-5"
+
+msgid "pm3_10_1_25_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_1_25_title_topByExpAdv"
+msgstr "Результат"
+
+msgid "pm3_10_1_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за любое количество боёв."
+
+msgid "pm3_10_1_2_short"
+msgstr "А-2"
+
+msgid "pm3_10_1_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_10_1_3"
+msgstr "А-3"
+
+msgid "pm3_10_1_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_10_1_3_description_kills"
+msgstr ""
+"Уничтожить %(goal)s тяжёлых танков противника за любое количество боёв."
+
+msgid "pm3_10_1_3_short"
+msgstr "А-3"
+
+msgid "pm3_10_1_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_10_1_3_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_4"
+msgstr "А-4"
+
+msgid "pm3_10_1_4_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_1_4_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_10_1_4_description_hitsReceived"
+msgstr ""
+"Количество полученных попаданий без урона должно превышать количество "
+"полученных пробитий."
+
+msgid "pm3_10_1_4_short"
+msgstr "А-4"
+
+msgid "pm3_10_1_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_4_title_hitsReceived"
+msgstr "Броня"
+
+msgid "pm3_10_1_5"
+msgstr "А-5"
+
+msgid "pm3_10_1_5_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_1_5_description_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_10_1_5_description_damageDealtReceivedAndBlockedAdv"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_10_1_5_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_1_5_short"
+msgstr "А-5"
+
+msgid "pm3_10_1_5_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_1_5_title_damageDealtReceivedAndBlocked"
+msgstr "Комплексное условие"
+
+msgid "pm3_10_1_5_title_damageDealtReceivedAndBlockedAdv"
+msgstr "Комплексное условие"
+
+msgid "pm3_10_1_5_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_1_6"
+msgstr "Б-1"
+
+msgid "pm3_10_1_6_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, находящейся в радиусе обзора,"
+" за любое количество боёв."
+
+msgid "pm3_10_1_6_short"
+msgstr "Б-1"
+
+msgid "pm3_10_1_6_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_7"
+msgstr "Б-2"
+
+msgid "pm3_10_1_7_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона ПТ-САУ и средним танкам противника за любое "
+"количество боёв."
+
+msgid "pm3_10_1_7_description_win"
+msgstr "Засчитывается урон, нанесённый в победных боях."
+
+msgid "pm3_10_1_7_short"
+msgstr "Б-2"
+
+msgid "pm3_10_1_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_7_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_1_8"
+msgstr "Б-3"
+
+msgid "pm3_10_1_8_description_alive"
+msgstr ""
+"Засчитывается урон, нанесённый в боях, где ваша машина не была уничтожена."
+
+msgid "pm3_10_1_8_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона обездвиженной технике противника за любое "
+"количество боёв."
+
+msgid "pm3_10_1_8_short"
+msgstr "Б-3"
+
+msgid "pm3_10_1_8_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_1_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_9"
+msgstr "Б-4"
+
+msgid "pm3_10_1_9_description_crits"
+msgstr ""
+"Повредить или вывести из строя %(goal)s внутренних модулей или членов "
+"экипажа противника за любое количество боёв."
+
+msgid "pm3_10_1_9_short"
+msgstr "Б-4"
+
+msgid "pm3_10_1_9_title_crits"
+msgstr "Костолом"
+
+msgid "pm3_10_2_1"
+msgstr "А-6"
+
+msgid "pm3_10_2_10"
+msgstr "Б-10"
+
+msgid "pm3_10_2_10_description_battlesSeries"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_10_2_10_description_battlesSeriesAdv"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_10_2_10_description_damage"
+msgstr "Иметь средний урон за 10 боёв не ниже %(goal)s ед."
+
+msgid "pm3_10_2_10_description_damageAdv"
+msgstr "Иметь средний урон за 10 боёв не ниже %(goal)s ед."
+
+msgid "pm3_10_2_10_short"
+msgstr "Б-10"
+
+msgid "pm3_10_2_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_10_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_10_2_11"
+msgstr "В-6"
+
+msgid "pm3_10_2_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_11_description_hits"
+msgstr "Нанести урон %(goal)s машинам за бой."
+
+msgid "pm3_10_2_11_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_10_2_11_short"
+msgstr "В-6"
+
+msgid "pm3_10_2_11_title_hits"
+msgstr "Урон"
+
+msgid "pm3_10_2_11_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_2_12"
+msgstr "В-7"
+
+msgid "pm3_10_2_12_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника, оставаясь незамеченным, за любое "
+"количество боёв."
+
+msgid "pm3_10_2_12_short"
+msgstr "В-7"
+
+msgid "pm3_10_2_12_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_13"
+msgstr "В-8"
+
+msgid "pm3_10_2_13_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_13_description_damagePercent"
+msgstr ""
+"Нанести урон %(goal)s машинам противника, составляющий более "
+"%(damagedHealthPercent)s%% от прочности каждой цели, за бой."
+
+msgid "pm3_10_2_13_short"
+msgstr "В-8"
+
+msgid "pm3_10_2_13_title_damagePercent"
+msgstr "Урон"
+
+msgid "pm3_10_2_14"
+msgstr "В-9"
+
+msgid "pm3_10_2_14_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, не потеряв очков прочности до этого момента, за "
+"любое количество боёв."
+
+msgid "pm3_10_2_14_short"
+msgstr "В-9"
+
+msgid "pm3_10_2_14_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_15"
+msgstr "В-10"
+
+msgid "pm3_10_2_15_description_kills"
+msgstr "Уничтожить %(goal)s машин противника за бой."
+
+msgid "pm3_10_2_15_description_killsAdv"
+msgstr ""
+"Уничтожить %(goal)s машины противника за бой. Не потерять очков прочности до"
+" этого момента."
+
+msgid "pm3_10_2_15_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_2_15_short"
+msgstr "В-10"
+
+msgid "pm3_10_2_15_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_15_title_killsAdv"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_15_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_2_16"
+msgstr "Г-6"
+
+msgid "pm3_10_2_16_description_alive"
+msgstr "Засчитываются бои, в которых ваша машина не была уничтожена."
+
+msgid "pm3_10_2_16_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_10_2_16_short"
+msgstr "Г-6"
+
+msgid "pm3_10_2_16_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_2_16_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_2_17"
+msgstr "Г-7"
+
+msgid "pm3_10_2_17_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_2_17_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_17_description_spotNumber"
+msgstr "Обнаружить %(goal)s САУ противника."
+
+msgid "pm3_10_2_17_short"
+msgstr "Г-7"
+
+msgid "pm3_10_2_17_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_2_17_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_2_18"
+msgstr "Г-8"
+
+msgid "pm3_10_2_18_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_2_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_18_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машины противника за бой."
+
+msgid "pm3_10_2_18_short"
+msgstr "Г-8"
+
+msgid "pm3_10_2_18_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_2_18_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_2_19"
+msgstr "Г-9"
+
+msgid "pm3_10_2_19_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона лёгким танкам противника за любое количество "
+"боёв."
+
+msgid "pm3_10_2_19_short"
+msgstr "Г-9"
+
+msgid "pm3_10_2_19_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_1_description_blockedDamage"
+msgstr ""
+"Засчитываются бои, в которых вы заблокировали не менее %(goal)s ед. урона."
+
+msgid "pm3_10_2_1_description_hitsReceived"
+msgstr "Получить %(goal)s попаданий с уроном и без за любое количество боёв."
+
+msgid "pm3_10_2_1_short"
+msgstr "А-6"
+
+msgid "pm3_10_2_1_title_blockedDamage"
+msgstr "Результат"
+
+msgid "pm3_10_2_1_title_hitsReceived"
+msgstr "Попадания"
+
+msgid "pm3_10_2_2"
+msgstr "А-7"
+
+msgid "pm3_10_2_20"
+msgstr "Г-10"
+
+msgid "pm3_10_2_20_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_10_2_20_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_10_2_20_description_damageAdv"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_10_2_20_short"
+msgstr "Г-10"
+
+msgid "pm3_10_2_20_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_20_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_10_2_21"
+msgstr "Д-6"
+
+msgid "pm3_10_2_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_21_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_10_2_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_10_2_21_short"
+msgstr "Д-6"
+
+msgid "pm3_10_2_21_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_10_2_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_2_22"
+msgstr "Д-7"
+
+msgid "pm3_10_2_22_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_22_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_2_22_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта за бой."
+
+msgid "pm3_10_2_22_short"
+msgstr "Д-7"
+
+msgid "pm3_10_2_22_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_2_22_title_xp"
+msgstr "Результат"
+
+msgid "pm3_10_2_23"
+msgstr "Д-8"
+
+msgid "pm3_10_2_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_23_description_hitsReceived"
+msgstr ""
+"Количество полученных попаданий без урона должно превышать количество "
+"полученных пробитий."
+
+msgid "pm3_10_2_23_description_hitsReceivedLimit"
+msgstr "Получить %(goal)s пробитий за бой."
+
+msgid "pm3_10_2_23_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_10_2_23_short"
+msgstr "Д-8"
+
+msgid "pm3_10_2_23_title_hitsReceived"
+msgstr "Результат"
+
+msgid "pm3_10_2_23_title_hitsReceivedLimit"
+msgstr "Пробитие"
+
+msgid "pm3_10_2_23_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_2_24"
+msgstr "Д-9"
+
+msgid "pm3_10_2_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_24_description_crits"
+msgstr "Обездвижить машину противника."
+
+msgid "pm3_10_2_24_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_10_2_24_short"
+msgstr "Д-9"
+
+msgid "pm3_10_2_24_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_10_2_24_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_2_25"
+msgstr "Д-10"
+
+msgid "pm3_10_2_25_description_markOfMasteryI"
+msgstr "Получить знак классности «1 степень» и выше."
+
+msgid "pm3_10_2_25_description_markOfMasteryISeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_10_2_25_description_markOfMasteryMaster"
+msgstr "Получить знак классности «Мастер»."
+
+msgid "pm3_10_2_25_description_markOfMasteryMasterSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_10_2_25_short"
+msgstr "Д-10"
+
+msgid "pm3_10_2_25_title_markOfMasteryI"
+msgstr "Результат"
+
+msgid "pm3_10_2_25_title_markOfMasteryMaster"
+msgstr "Результат"
+
+msgid "pm3_10_2_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за любое количество боёв."
+
+msgid "pm3_10_2_2_description_kills"
+msgstr ""
+"Уничтожить %(goal)s тяжёлых танков противника за любое количество боёв."
+
+msgid "pm3_10_2_2_short"
+msgstr "А-7"
+
+msgid "pm3_10_2_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_10_2_2_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_3"
+msgstr "А-8"
+
+msgid "pm3_10_2_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_10_2_3_short"
+msgstr "А-8"
+
+msgid "pm3_10_2_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_10_2_4"
+msgstr "А-9"
+
+msgid "pm3_10_2_4_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника с дистанции %(distanceShortOrEqual)s "
+"метров и ближе за любое количество боёв."
+
+msgid "pm3_10_2_4_short"
+msgstr "А-9"
+
+msgid "pm3_10_2_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_5"
+msgstr "А-10"
+
+msgid "pm3_10_2_5_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_10_2_5_description_blockedDamage"
+msgstr ""
+"Получить заблокированного урона в %(vehicleHealthFactor)s раза больше "
+"прочности собственной машины."
+
+msgid "pm3_10_2_5_description_blockedDamageAdv"
+msgstr ""
+"Получить заблокированного урона в %(vehicleHealthFactor)s раза больше "
+"прочности собственной машины."
+
+msgid "pm3_10_2_5_short"
+msgstr "А-10"
+
+msgid "pm3_10_2_5_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_10_2_5_title_blockedDamageAdv"
+msgstr "Броня"
+
+msgid "pm3_10_2_6"
+msgstr "Б-6"
+
+msgid "pm3_10_2_6_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_6_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон технике противника, находящейся в "
+"радиусе обзора."
+
+msgid "pm3_10_2_6_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_10_2_6_short"
+msgstr "Б-6"
+
+msgid "pm3_10_2_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_10_2_6_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_2_7"
+msgstr "Б-7"
+
+msgid "pm3_10_2_7_description_damage"
+msgstr "Засчитываются бои, в которых вы нанесли не менее %(goal)s ед. урона."
+
+msgid "pm3_10_2_7_description_kills"
+msgstr ""
+"Уничтожить суммарно %(goal)s ПТ-САУ и средних танков противника за любое "
+"количество боёв."
+
+msgid "pm3_10_2_7_short"
+msgstr "Б-7"
+
+msgid "pm3_10_2_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_7_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_8"
+msgstr "Б-8"
+
+msgid "pm3_10_2_8_description_crits"
+msgstr ""
+"Обездвижить %(goal)s разных машин противника за любое количество боёв."
+
+msgid "pm3_10_2_8_description_kills"
+msgstr ""
+"Засчитываются бои, в которых вы уничтожили как минимум %(goal)s машину "
+"противника."
+
+msgid "pm3_10_2_8_short"
+msgstr "Б-8"
+
+msgid "pm3_10_2_8_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_10_2_8_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_9"
+msgstr "Б-9"
+
+msgid "pm3_10_2_9_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_2_9_description_kills"
+msgstr "Уничтожить ПТ-САУ или САУ противника."
+
+msgid "pm3_10_2_9_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_10_2_9_short"
+msgstr "Б-9"
+
+msgid "pm3_10_2_9_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_9_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_3_1"
+msgstr "А-11"
+
+msgid "pm3_10_3_10"
+msgstr "Б-15"
+
+msgid "pm3_10_3_10_description_crits"
+msgstr "Обездвижить противника, сбив гусеницы %(goal)s разным машинам."
+
+msgid "pm3_10_3_10_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон обездвиженной технике противника."
+
+msgid "pm3_10_3_10_description_kills"
+msgstr "Уничтожить %(goal)s обездвиженных машин противника."
+
+msgid "pm3_10_3_10_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_3_10_short"
+msgstr "Б-15"
+
+msgid "pm3_10_3_10_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_10_3_10_title_hits"
+msgstr "Урон"
+
+msgid "pm3_10_3_10_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_10_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_3_11"
+msgstr "В-11"
+
+msgid "pm3_10_3_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_11_description_damage"
+msgstr "Нанести %(goal)s ед. урона с дистанции более 300 метров."
+
+msgid "pm3_10_3_11_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_10_3_11_short"
+msgstr "В-11"
+
+msgid "pm3_10_3_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_11_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_3_12"
+msgstr "В-12"
+
+msgid "pm3_10_3_12_description_kills"
+msgstr "Уничтожить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_10_3_12_short"
+msgstr "В-12"
+
+msgid "pm3_10_3_12_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_13"
+msgstr "В-13"
+
+msgid "pm3_10_3_13_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, оставаясь незамеченным в момент его нанесения, "
+"за любое количество боёв."
+
+msgid "pm3_10_3_13_short"
+msgstr "В-13"
+
+msgid "pm3_10_3_13_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_14"
+msgstr "В-14"
+
+msgid "pm3_10_3_14_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_14_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s по урону среди обеих команд."
+
+msgid "pm3_10_3_14_short"
+msgstr "В-14"
+
+msgid "pm3_10_3_14_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_3_15"
+msgstr "В-15"
+
+msgid "pm3_10_3_15_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_10_3_15_description_kills"
+msgstr "Уничтожить %(goal)s машины противника."
+
+msgid "pm3_10_3_15_description_piercingSeries"
+msgstr "Пробить броню противника %(goal)s раз подряд."
+
+msgid "pm3_10_3_15_short"
+msgstr "В-15"
+
+msgid "pm3_10_3_15_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_15_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_10_3_16"
+msgstr "Г-11"
+
+msgid "pm3_10_3_16_description_assistedHits"
+msgstr ""
+"Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
+"сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_10_3_16_short"
+msgstr "Г-11"
+
+msgid "pm3_10_3_16_title_assistedHits"
+msgstr "Содействие"
+
+msgid "pm3_10_3_17"
+msgstr "Г-12"
+
+msgid "pm3_10_3_17_description_assist"
+msgstr ""
+"Передать разведданые для нанесения %(goal)s ед. урона за любое количество "
+"боёв."
+
+msgid "pm3_10_3_17_short"
+msgstr "Г-12"
+
+msgid "pm3_10_3_17_title_assist"
+msgstr "Разведданые"
+
+msgid "pm3_10_3_18"
+msgstr "Г-13"
+
+msgid "pm3_10_3_18_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_3_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_18_description_spotNumber"
+msgstr "Обнаружить %(goal)s САУ противника."
+
+msgid "pm3_10_3_18_short"
+msgstr "Г-13"
+
+msgid "pm3_10_3_18_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_3_18_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_19"
+msgstr "Г-14"
+
+msgid "pm3_10_3_19_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_19_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машины противника за бой."
+
+msgid "pm3_10_3_19_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_3_19_short"
+msgstr "Г-14"
+
+msgid "pm3_10_3_19_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_19_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_3_1_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон тяжёлым танкам противника за любое "
+"количество боёв."
+
+msgid "pm3_10_3_1_short"
+msgstr "А-11"
+
+msgid "pm3_10_3_1_title_hits"
+msgstr "Урон"
+
+msgid "pm3_10_3_2"
+msgstr "А-12"
+
+msgid "pm3_10_3_20"
+msgstr "Г-15"
+
+msgid "pm3_10_3_20_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_3_20_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машин противника за бой."
+
+msgid "pm3_10_3_20_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_3_20_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта за бой."
+
+msgid "pm3_10_3_20_short"
+msgstr "Г-15"
+
+msgid "pm3_10_3_20_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_3_20_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_20_title_win"
+msgstr "Результат"
+
+msgid "pm3_10_3_20_title_xp"
+msgstr "Результат"
+
+msgid "pm3_10_3_21"
+msgstr "Д-11"
+
+msgid "pm3_10_3_21_description_alive"
+msgstr "Не получить никакого урона в бою."
+
+msgid "pm3_10_3_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_10_3_21_short"
+msgstr "Д-11"
+
+msgid "pm3_10_3_21_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_3_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_3_22"
+msgstr "Д-12"
+
+msgid "pm3_10_3_22_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта за любое количество боёв."
+
+msgid "pm3_10_3_22_short"
+msgstr "Д-12"
+
+msgid "pm3_10_3_22_title_xp"
+msgstr "Результат"
+
+msgid "pm3_10_3_23"
+msgstr "Д-13"
+
+msgid "pm3_10_3_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_23_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_10_3_23_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_10_3_23_short"
+msgstr "Д-13"
+
+msgid "pm3_10_3_23_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_23_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_3_24"
+msgstr "Д-14"
+
+msgid "pm3_10_3_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_24_description_kills"
+msgstr "Уничтожить машину противника."
+
+msgid "pm3_10_3_24_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_10_3_24_short"
+msgstr "Д-14"
+
+msgid "pm3_10_3_24_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_24_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_10_3_25"
+msgstr "Д-15"
+
+msgid "pm3_10_3_25_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_10_3_25_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_10_3_25_description_topByDamage"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_10_3_25_description_topByDamageAdv"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_10_3_25_description_winAdv"
+msgstr "Победить в бою."
+
+msgid "pm3_10_3_25_short"
+msgstr "Д-15"
+
+msgid "pm3_10_3_25_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_3_25_title_topByDamageAdv"
+msgstr "Результат"
+
+msgid "pm3_10_3_25_title_winAdv"
+msgstr "Результат"
+
+msgid "pm3_10_3_2_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_3_2_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_10_3_2_short"
+msgstr "А-12"
+
+msgid "pm3_10_3_2_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_3_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_10_3_3"
+msgstr "А-13"
+
+msgid "pm3_10_3_3_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_3_3_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попадания за бой."
+
+msgid "pm3_10_3_3_short"
+msgstr "А-13"
+
+msgid "pm3_10_3_3_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_3_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_10_3_4"
+msgstr "А-14"
+
+msgid "pm3_10_3_4_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_3_4_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_4_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_10_3_4_description_hitsReceived"
+msgstr "Получить %(goal)s попадания за бой."
+
+msgid "pm3_10_3_4_short"
+msgstr "А-14"
+
+msgid "pm3_10_3_4_title_alive"
+msgstr "Результат"
+
+msgid "pm3_10_3_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_4_title_hitsReceived"
+msgstr "Попадания"
+
+msgid "pm3_10_3_5"
+msgstr "А-15"
+
+msgid "pm3_10_3_5_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_10_3_5_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_10_3_5_description_damage"
+msgstr ""
+"Нанести урона в %(vehicleHealthFactor)s раза больше, чем прочность "
+"собственной машины."
+
+msgid "pm3_10_3_5_description_damageAdv"
+msgstr ""
+"Нанести урона в %(vehicleHealthFactor)s раза больше, чем прочность "
+"собственной машины."
+
+msgid "pm3_10_3_5_description_spotNumberAdv"
+msgstr "Обнаружить %(goal)s машины противника."
+
+msgid "pm3_10_3_5_short"
+msgstr "А-15"
+
+msgid "pm3_10_3_5_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_5_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_10_3_5_title_spotNumberAdv"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_6"
+msgstr "Б-11"
+
+msgid "pm3_10_3_6_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_6_description_hits"
+msgstr "Выстрелом нанести урон машине противника уровнем выше."
+
+msgid "pm3_10_3_6_short"
+msgstr "Б-11"
+
+msgid "pm3_10_3_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_10_3_7"
+msgstr "Б-12"
+
+msgid "pm3_10_3_7_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_7_description_damage"
+msgstr ""
+"Нанести урона в %(vehicleHealthFactor)s раза больше, чем прочность "
+"собственной машины."
+
+msgid "pm3_10_3_7_short"
+msgstr "Б-12"
+
+msgid "pm3_10_3_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_8"
+msgstr "Б-13"
+
+msgid "pm3_10_3_8_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_10_3_8_description_damage"
+msgstr "Нанести %(goal)s ед. урона обездвиженной технике противника за бой."
+
+msgid "pm3_10_3_8_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_10_3_8_short"
+msgstr "Б-13"
+
+msgid "pm3_10_3_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_8_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_10_3_9"
+msgstr "Б-14"
+
+msgid "pm3_10_3_9_description_crits"
+msgstr ""
+"Вывести из строя %(goal)s модулей или членов экипажа противника за любое "
+"количество боёв."
+
+msgid "pm3_10_3_9_short"
+msgstr "Б-14"
+
+msgid "pm3_10_3_9_title_crits"
+msgstr "Костолом"
+
+msgid "pm3_8_1_1"
+msgstr "А-1"
+
+msgid "pm3_8_1_10"
+msgstr "Б-5"
+
+msgid "pm3_8_1_10_description_crits"
+msgstr "Обездвижить %(goal)s разных машин противника, сбивая гусеницы."
+
+msgid "pm3_8_1_10_description_hits"
+msgstr "Выстрелами %(goal)s раз нанести урон по обездвиженным машинам."
+
+msgid "pm3_8_1_10_description_kills"
+msgstr "Уничтожить %(goal)s обездвиженные машины."
+
+msgid "pm3_8_1_10_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_1_10_short"
+msgstr "Б-5"
+
+msgid "pm3_8_1_10_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_8_1_10_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_1_10_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_10_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_1_11"
+msgstr "В-1"
+
+msgid "pm3_8_1_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_11_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, не потеряв очков прочности до этого момента."
+
+msgid "pm3_8_1_11_short"
+msgstr "В-1"
+
+msgid "pm3_8_1_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_12"
+msgstr "В-2"
+
+msgid "pm3_8_1_12_description_kills"
+msgstr "Уничтожить %(goal)s машин противника, оставаясь незамеченным."
+
+msgid "pm3_8_1_12_short"
+msgstr "В-2"
+
+msgid "pm3_8_1_12_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_13"
+msgstr "В-3"
+
+msgid "pm3_8_1_13_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_13_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона обездвиженной технике противника за любое "
+"количество боёв."
+
+msgid "pm3_8_1_13_description_piercingSeries"
+msgstr "Пробить броню противника %(goal)s раза подряд."
+
+msgid "pm3_8_1_13_short"
+msgstr "В-3"
+
+msgid "pm3_8_1_13_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_13_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_8_1_14"
+msgstr "В-4"
+
+msgid "pm3_8_1_14_description_crits"
+msgstr ""
+"Вывести из строя %(goal)s модулей или членов экипажа противника за любое "
+"количество боёв."
+
+msgid "pm3_8_1_14_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника за любое количество боёв."
+
+msgid "pm3_8_1_14_short"
+msgstr "В-4"
+
+msgid "pm3_8_1_14_title_crits"
+msgstr "Костолом"
+
+msgid "pm3_8_1_14_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_15"
+msgstr "В-5"
+
+msgid "pm3_8_1_15_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_8_1_15_description_kills"
+msgstr "Уничтожить %(goal)s машины противника."
+
+msgid "pm3_8_1_15_description_piercingSeries"
+msgstr "Пробить броню противника %(goal)s раз подряд."
+
+msgid "pm3_8_1_15_short"
+msgstr "В-5"
+
+msgid "pm3_8_1_15_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_15_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_8_1_16"
+msgstr "Г-1"
+
+msgid "pm3_8_1_16_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_8_1_16_short"
+msgstr "Г-1"
+
+msgid "pm3_8_1_16_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_1_17"
+msgstr "Г-2"
+
+msgid "pm3_8_1_17_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_8_1_17_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_17_description_spotNumber"
+msgstr "Обнаружить %(goal)s САУ противника."
+
+msgid "pm3_8_1_17_short"
+msgstr "Г-2"
+
+msgid "pm3_8_1_17_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_1_17_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_1_18"
+msgstr "Г-3"
+
+msgid "pm3_8_1_18_description_assist"
+msgstr "Передать разведданные для нанесения %(goal)s ед. урона за 1 бой."
+
+msgid "pm3_8_1_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_18_description_mileage"
+msgstr "Проехать %(goal)s метров за бой."
+
+msgid "pm3_8_1_18_short"
+msgstr "Г-3"
+
+msgid "pm3_8_1_18_title_assist"
+msgstr "Разведданные"
+
+msgid "pm3_8_1_18_title_mileage"
+msgstr "Результат"
+
+msgid "pm3_8_1_19"
+msgstr "Г-4"
+
+msgid "pm3_8_1_19_description_assistedHits"
+msgstr ""
+"Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
+"сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_8_1_19_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машин противника за любое "
+"количество боёв."
+
+msgid "pm3_8_1_19_short"
+msgstr "Г-4"
+
+msgid "pm3_8_1_19_title_assistedHits"
+msgstr "Содействие"
+
+msgid "pm3_8_1_19_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_1_1_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона тяжёлым танкам противника за любое количество "
+"боёв."
+
+msgid "pm3_8_1_1_short"
+msgstr "А-1"
+
+msgid "pm3_8_1_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_2"
+msgstr "А-2"
+
+msgid "pm3_8_1_20"
+msgstr "Г-5"
+
+msgid "pm3_8_1_20_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_8_1_20_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машин противника за бой."
+
+msgid "pm3_8_1_20_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_1_20_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта."
+
+msgid "pm3_8_1_20_short"
+msgstr "Г-5"
+
+msgid "pm3_8_1_20_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_1_20_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_1_20_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_1_20_title_xp"
+msgstr "Результат"
+
+msgid "pm3_8_1_21"
+msgstr "Д-1"
+
+msgid "pm3_8_1_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_8_1_21_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_1_21_short"
+msgstr "Д-1"
+
+msgid "pm3_8_1_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_1_21_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_1_22"
+msgstr "Д-2"
+
+msgid "pm3_8_1_22_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_22_description_blockedHits"
+msgstr "Заблокировать %(goal)s попадания."
+
+msgid "pm3_8_1_22_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_8_1_22_short"
+msgstr "Д-2"
+
+msgid "pm3_8_1_22_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_8_1_22_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_1_23"
+msgstr "Д-3"
+
+msgid "pm3_8_1_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_23_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_8_1_23_short"
+msgstr "Д-3"
+
+msgid "pm3_8_1_23_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_1_24"
+msgstr "Д-4"
+
+msgid "pm3_8_1_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_24_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_8_1_24_short"
+msgstr "Д-4"
+
+msgid "pm3_8_1_24_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_25"
+msgstr "Д-5"
+
+msgid "pm3_8_1_25_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_8_1_25_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_8_1_25_description_topByDamage"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_8_1_25_description_topByDamageAdv"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_8_1_25_description_winAdv"
+msgstr "Победить в бою."
+
+msgid "pm3_8_1_25_short"
+msgstr "Д-5"
+
+msgid "pm3_8_1_25_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_8_1_25_title_topByDamageAdv"
+msgstr "Результат"
+
+msgid "pm3_8_1_25_title_winAdv"
+msgstr "Результат"
+
+msgid "pm3_8_1_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за любое количество боёв."
+
+msgid "pm3_8_1_2_short"
+msgstr "А-2"
+
+msgid "pm3_8_1_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_8_1_3"
+msgstr "А-3"
+
+msgid "pm3_8_1_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_8_1_3_description_kills"
+msgstr ""
+"Уничтожить %(goal)s тяжёлых танка противника за любое количество боёв."
+
+msgid "pm3_8_1_3_short"
+msgstr "А-3"
+
+msgid "pm3_8_1_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_8_1_3_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_4"
+msgstr "А-4"
+
+msgid "pm3_8_1_4_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_8_1_4_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_4_description_hitsReceived"
+msgstr "Получить %(goal)s попаданий с уроном и без за бой."
+
+msgid "pm3_8_1_4_short"
+msgstr "А-4"
+
+msgid "pm3_8_1_4_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_1_4_title_hitsReceived"
+msgstr "Попадания"
+
+msgid "pm3_8_1_5"
+msgstr "А-5"
+
+msgid "pm3_8_1_5_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_8_1_5_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_8_1_5_description_damage"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_8_1_5_description_damageAdv"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_8_1_5_description_spotNumberAdv"
+msgstr "Обнаружить %(goal)s машины противника."
+
+msgid "pm3_8_1_5_short"
+msgstr "А-5"
+
+msgid "pm3_8_1_5_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_5_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_8_1_5_title_spotNumberAdv"
+msgstr "Обнаружение"
+
+msgid "pm3_8_1_6"
+msgstr "Б-1"
+
+msgid "pm3_8_1_6_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за любое количество боёв."
+
+msgid "pm3_8_1_6_short"
+msgstr "Б-1"
+
+msgid "pm3_8_1_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_1_7"
+msgstr "Б-2"
+
+msgid "pm3_8_1_7_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_1_7_description_kills"
+msgstr "Уничтожить в бою ПТ-САУ или САУ противника."
+
+msgid "pm3_8_1_7_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_8_1_7_short"
+msgstr "Б-2"
+
+msgid "pm3_8_1_7_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_7_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_8_1_8"
+msgstr "Б-3"
+
+msgid "pm3_8_1_8_description_crits"
+msgstr ""
+"Обездвижить %(goal)s разных машин противника, сбивая гусеницы, за любое "
+"количество боёв."
+
+msgid "pm3_8_1_8_short"
+msgstr "Б-3"
+
+msgid "pm3_8_1_8_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_8_1_9"
+msgstr "Б-4"
+
+msgid "pm3_8_1_9_description_hits"
+msgstr "Выстрелами %(goal)s раз нанести урон за любое количество боёв."
+
+msgid "pm3_8_1_9_description_kills"
+msgstr ""
+"Уничтожить %(goal)s обездвиженных машин противника за любое количество боёв."
+
+msgid "pm3_8_1_9_short"
+msgstr "Б-4"
+
+msgid "pm3_8_1_9_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_1_9_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_1"
+msgstr "А-6"
+
+msgid "pm3_8_2_10"
+msgstr "Б-10"
+
+msgid "pm3_8_2_10_description_assist"
+msgstr ""
+"Союзники должны суммарно нанести %(goal)s ед. урона по обездвиженному вами "
+"противнику."
+
+msgid "pm3_8_2_10_description_assistedKillsAdv"
+msgstr ""
+"Союзники должны уничтожить 3 машины противника, пока они обездвижены вами."
+
+msgid "pm3_8_2_10_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_8_2_10_description_crits"
+msgstr "Обездвижить %(goal)s разные машины противника, сбивая гусеницы."
+
+msgid "pm3_8_2_10_description_critsAdv"
+msgstr "Обездвижить %(goal)s разных машин противника, сбивая гусеницы."
+
+msgid "pm3_8_2_10_short"
+msgstr "Б-10"
+
+msgid "pm3_8_2_10_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_8_2_10_title_assistedKillsAdv"
+msgstr "Содействие"
+
+msgid "pm3_8_2_10_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_8_2_10_title_critsAdv"
+msgstr "Гусеницы"
+
+msgid "pm3_8_2_11"
+msgstr "В-6"
+
+msgid "pm3_8_2_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_11_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за бой."
+
+msgid "pm3_8_2_11_short"
+msgstr "В-6"
+
+msgid "pm3_8_2_11_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_2_12"
+msgstr "В-7"
+
+msgid "pm3_8_2_12_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, оставаясь незамеченным в момент его нанесения, "
+"за любое количество боёв."
+
+msgid "pm3_8_2_12_short"
+msgstr "В-7"
+
+msgid "pm3_8_2_12_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_13"
+msgstr "В-8"
+
+msgid "pm3_8_2_13_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника с дистанции более 300 метров за любое "
+"количество боёв."
+
+msgid "pm3_8_2_13_short"
+msgstr "В-8"
+
+msgid "pm3_8_2_13_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_14"
+msgstr "В-9"
+
+msgid "pm3_8_2_14_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_14_description_kills"
+msgstr "Уничтожить машину противника за бой."
+
+msgid "pm3_8_2_14_short"
+msgstr "В-9"
+
+msgid "pm3_8_2_14_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_15"
+msgstr "В-10"
+
+msgid "pm3_8_2_15_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_8_2_15_description_damageAdv"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника за бой, не потеряв очков "
+"прочности до этого момента."
+
+msgid "pm3_8_2_15_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_2_15_short"
+msgstr "В-10"
+
+msgid "pm3_8_2_15_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_15_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_8_2_15_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_2_16"
+msgstr "Г-6"
+
+msgid "pm3_8_2_16_description_assistedHits"
+msgstr ""
+"Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
+"сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_8_2_16_short"
+msgstr "Г-6"
+
+msgid "pm3_8_2_16_title_assistedHits"
+msgstr "Содействие"
+
+msgid "pm3_8_2_17"
+msgstr "Г-7"
+
+msgid "pm3_8_2_17_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_17_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за бой."
+
+msgid "pm3_8_2_17_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_2_17_short"
+msgstr "Г-7"
+
+msgid "pm3_8_2_17_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_2_17_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_2_18"
+msgstr "Г-8"
+
+msgid "pm3_8_2_18_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_8_2_18_description_assistedKills"
+msgstr "Передать разведданные для уничтожения машины противника."
+
+msgid "pm3_8_2_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_18_short"
+msgstr "Г-8"
+
+msgid "pm3_8_2_18_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_2_18_title_assistedKills"
+msgstr "Разведданные"
+
+msgid "pm3_8_2_19"
+msgstr "Г-9"
+
+msgid "pm3_8_2_19_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_8_2_19_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_19_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машины противника за бой."
+
+msgid "pm3_8_2_19_short"
+msgstr "Г-9"
+
+msgid "pm3_8_2_19_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_2_19_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_2_1_description_hitsReceived"
+msgstr "Получить %(goal)s попаданий с уроном и без за любое количество боёв."
+
+msgid "pm3_8_2_1_short"
+msgstr "А-6"
+
+msgid "pm3_8_2_1_title_hitsReceived"
+msgstr "Попадания"
+
+msgid "pm3_8_2_2"
+msgstr "А-7"
+
+msgid "pm3_8_2_20"
+msgstr "Г-10"
+
+msgid "pm3_8_2_20_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_8_2_20_description_assistAdv"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_8_2_20_description_battlesSeries"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_8_2_20_description_battlesSeriesAdv"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_8_2_20_short"
+msgstr "Г-10"
+
+msgid "pm3_8_2_20_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_8_2_20_title_assistAdv"
+msgstr "Содействие"
+
+msgid "pm3_8_2_21"
+msgstr "Д-6"
+
+msgid "pm3_8_2_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_8_2_21_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_2_21_short"
+msgstr "Д-6"
+
+msgid "pm3_8_2_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_2_21_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_2_22"
+msgstr "Д-7"
+
+msgid "pm3_8_2_22_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_22_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_8_2_22_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_8_2_22_short"
+msgstr "Д-7"
+
+msgid "pm3_8_2_22_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_8_2_22_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_2_23"
+msgstr "Д-8"
+
+msgid "pm3_8_2_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_23_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_2_23_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта за бой."
+
+msgid "pm3_8_2_23_short"
+msgstr "Д-8"
+
+msgid "pm3_8_2_23_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_2_23_title_xp"
+msgstr "Результат"
+
+msgid "pm3_8_2_24"
+msgstr "Д-9"
+
+msgid "pm3_8_2_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_2_24_description_crits"
+msgstr "Обездвижить машину противника."
+
+msgid "pm3_8_2_24_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_8_2_24_short"
+msgstr "Д-9"
+
+msgid "pm3_8_2_24_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_8_2_24_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_2_25"
+msgstr "Д-10"
+
+msgid "pm3_8_2_25_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_8_2_25_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_8_2_25_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_8_2_25_description_topByExpAdv"
+msgstr "Занять первое место по опыту среди обеих команд."
+
+msgid "pm3_8_2_25_short"
+msgstr "Д-10"
+
+msgid "pm3_8_2_25_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_2_25_title_topByExpAdv"
+msgstr "Результат"
+
+msgid "pm3_8_2_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за любое количество боёв."
+
+msgid "pm3_8_2_2_description_kills"
+msgstr ""
+"Уничтожить %(goal)s тяжёлых танков противника за любое количество боёв."
+
+msgid "pm3_8_2_2_short"
+msgstr "А-7"
+
+msgid "pm3_8_2_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_8_2_2_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_3"
+msgstr "А-8"
+
+msgid "pm3_8_2_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_8_2_3_short"
+msgstr "А-8"
+
+msgid "pm3_8_2_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_8_2_4"
+msgstr "А-9"
+
+msgid "pm3_8_2_4_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника с дистанции %(distanceShortOrEqual)s "
+"метров и ближе за любое количество боёв."
+
+msgid "pm3_8_2_4_short"
+msgstr "А-9"
+
+msgid "pm3_8_2_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_5"
+msgstr "А-10"
+
+msgid "pm3_8_2_5_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_8_2_5_description_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_8_2_5_description_damageDealtReceivedAndBlockedAdv"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_8_2_5_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_2_5_short"
+msgstr "А-10"
+
+msgid "pm3_8_2_5_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_2_5_title_damageDealtReceivedAndBlocked"
+msgstr "Комплексное условие"
+
+msgid "pm3_8_2_5_title_damageDealtReceivedAndBlockedAdv"
+msgstr "Комплексное условие"
+
+msgid "pm3_8_2_5_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_2_6"
+msgstr "Б-6"
+
+msgid "pm3_8_2_6_description_hits"
+msgstr "Выстрелами %(goal)s раз нанести урон за любое количество боёв."
+
+msgid "pm3_8_2_6_short"
+msgstr "Б-6"
+
+msgid "pm3_8_2_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_2_7"
+msgstr "Б-7"
+
+msgid "pm3_8_2_7_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника уровнем выше за любое "
+"количество боёв."
+
+msgid "pm3_8_2_7_description_hits"
+msgstr ""
+"Выстрелами повредить %(goal)s разных машин противника за любое количество "
+"боёв."
+
+msgid "pm3_8_2_7_short"
+msgstr "Б-7"
+
+msgid "pm3_8_2_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_7_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_2_8"
+msgstr "Б-8"
+
+msgid "pm3_8_2_8_description_crits"
+msgstr ""
+"Обездвижить %(goal)s разных машин противника, сбивая гусеницы, за любое "
+"количество боёв."
+
+msgid "pm3_8_2_8_short"
+msgstr "Б-8"
+
+msgid "pm3_8_2_8_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_8_2_9"
+msgstr "Б-9"
+
+msgid "pm3_8_2_9_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, находящейся в радиусе обзора,"
+" за любое количество боёв."
+
+msgid "pm3_8_2_9_description_killsDiversity"
+msgstr ""
+"Уничтожить по %(goal)s единице техники каждого типа за любое количество "
+"боёв."
+
+msgid "pm3_8_2_9_short"
+msgstr "Б-9"
+
+msgid "pm3_8_2_9_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_9_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_1"
+msgstr "А-11"
+
+msgid "pm3_8_3_10"
+msgstr "Б-15"
+
+msgid "pm3_8_3_10_description_battlesSeries"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_8_3_10_description_battlesSeriesAdv"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_8_3_10_description_damage"
+msgstr "Иметь средний урон за 10 боёв не ниже %(goal)s ед."
+
+msgid "pm3_8_3_10_description_damageAdv"
+msgstr "Иметь средний урон за 10 боёв не ниже %(goal)s ед."
+
+msgid "pm3_8_3_10_short"
+msgstr "Б-15"
+
+msgid "pm3_8_3_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_10_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_8_3_11"
+msgstr "В-11"
+
+msgid "pm3_8_3_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_11_description_damage"
+msgstr "Нанести %(goal)s ед. урона за бой."
+
+msgid "pm3_8_3_11_short"
+msgstr "В-11"
+
+msgid "pm3_8_3_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_12"
+msgstr "В-12"
+
+msgid "pm3_8_3_12_description_kills"
+msgstr "Уничтожить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_8_3_12_short"
+msgstr "В-12"
+
+msgid "pm3_8_3_12_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_13"
+msgstr "В-13"
+
+msgid "pm3_8_3_13_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_13_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона с дистанции более %(distanceGreatOrEqual)s "
+"метров."
+
+msgid "pm3_8_3_13_short"
+msgstr "В-13"
+
+msgid "pm3_8_3_13_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_14"
+msgstr "В-14"
+
+msgid "pm3_8_3_14_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за любое количество боёв."
+
+msgid "pm3_8_3_14_short"
+msgstr "В-14"
+
+msgid "pm3_8_3_14_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_3_15"
+msgstr "В-15"
+
+msgid "pm3_8_3_15_description_kills"
+msgstr "Уничтожить %(goal)s машин противника за бой."
+
+msgid "pm3_8_3_15_description_killsAdv"
+msgstr ""
+"Уничтожить %(goal)s машины противника за бой, не потеряв очков прочности до "
+"этого момента."
+
+msgid "pm3_8_3_15_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_3_15_short"
+msgstr "В-15"
+
+msgid "pm3_8_3_15_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_15_title_killsAdv"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_15_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_3_16"
+msgstr "Г-11"
+
+msgid "pm3_8_3_16_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_8_3_16_short"
+msgstr "Г-11"
+
+msgid "pm3_8_3_16_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_3_17"
+msgstr "Г-12"
+
+msgid "pm3_8_3_17_description_assist"
+msgstr ""
+"Передать разведданые для нанесения %(goal)s ед. урона за любое количество "
+"боёв."
+
+msgid "pm3_8_3_17_short"
+msgstr "Г-12"
+
+msgid "pm3_8_3_17_title_assist"
+msgstr "Разведданные"
+
+msgid "pm3_8_3_18"
+msgstr "Г-13"
+
+msgid "pm3_8_3_18_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон технике противника за любое количество "
+"боёв."
+
+msgid "pm3_8_3_18_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_8_3_18_short"
+msgstr "Г-13"
+
+msgid "pm3_8_3_18_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_3_18_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_3_19"
+msgstr "Г-14"
+
+msgid "pm3_8_3_19_description_assist"
+msgstr "Передать разведданные для нанесения %(goal)s ед. урона за бой."
+
+msgid "pm3_8_3_19_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_19_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_3_19_short"
+msgstr "Г-14"
+
+msgid "pm3_8_3_19_title_assist"
+msgstr "Разведданные"
+
+msgid "pm3_8_3_19_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_3_1_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_1_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_8_3_1_short"
+msgstr "А-11"
+
+msgid "pm3_8_3_1_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_8_3_2"
+msgstr "А-12"
+
+msgid "pm3_8_3_20"
+msgstr "Г-15"
+
+msgid "pm3_8_3_20_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_8_3_20_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_8_3_20_description_damageAdv"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_8_3_20_short"
+msgstr "Г-15"
+
+msgid "pm3_8_3_20_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_20_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_8_3_21"
+msgstr "Д-11"
+
+msgid "pm3_8_3_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_8_3_21_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_8_3_21_short"
+msgstr "Д-11"
+
+msgid "pm3_8_3_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_3_21_title_win"
+msgstr "Результат"
+
+msgid "pm3_8_3_22"
+msgstr "Д-12"
+
+msgid "pm3_8_3_22_description_alive"
+msgstr "Не получить никакого урона в бою."
+
+msgid "pm3_8_3_22_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_22_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_8_3_22_short"
+msgstr "Д-12"
+
+msgid "pm3_8_3_22_title_alive"
+msgstr "Результат"
+
+msgid "pm3_8_3_22_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_3_23"
+msgstr "Д-13"
+
+msgid "pm3_8_3_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_23_description_kills"
+msgstr "Уничтожить машину противника."
+
+msgid "pm3_8_3_23_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_8_3_23_short"
+msgstr "Д-13"
+
+msgid "pm3_8_3_23_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_23_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_8_3_24"
+msgstr "Д-14"
+
+msgid "pm3_8_3_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_24_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_8_3_24_short"
+msgstr "Д-14"
+
+msgid "pm3_8_3_24_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_25"
+msgstr "Д-15"
+
+msgid "pm3_8_3_25_description_markOfMasteryI"
+msgstr "Получить знак классности «1 степень» и выше."
+
+msgid "pm3_8_3_25_description_markOfMasteryISeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_8_3_25_description_markOfMasteryMaster"
+msgstr "Получить знак классности «Мастер»."
+
+msgid "pm3_8_3_25_description_markOfMasteryMasterSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_8_3_25_short"
+msgstr "Д-15"
+
+msgid "pm3_8_3_25_title_markOfMasteryI"
+msgstr "Результат"
+
+msgid "pm3_8_3_25_title_markOfMasteryMaster"
+msgstr "Результат"
+
+msgid "pm3_8_3_2_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_2_description_blockedHits"
+msgstr "Заблокировать %(goal)s попадания за бой."
+
+msgid "pm3_8_3_2_short"
+msgstr "А-12"
+
+msgid "pm3_8_3_2_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_8_3_3"
+msgstr "А-13"
+
+msgid "pm3_8_3_3_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон тяжёлым танкам противника за любое "
+"количество боёв."
+
+msgid "pm3_8_3_3_short"
+msgstr "А-13"
+
+msgid "pm3_8_3_3_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_3_4"
+msgstr "А-14"
+
+msgid "pm3_8_3_4_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_8_3_4_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машины противника с дистанции 150 метров и ближе за "
+"любое количество боёв."
+
+msgid "pm3_8_3_4_short"
+msgstr "А-14"
+
+msgid "pm3_8_3_4_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_8_3_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_5"
+msgstr "А-15"
+
+msgid "pm3_8_3_5_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_8_3_5_description_blockedDamage"
+msgstr ""
+"Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_8_3_5_description_blockedDamageAdv"
+msgstr ""
+"Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_8_3_5_short"
+msgstr "А-15"
+
+msgid "pm3_8_3_5_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_8_3_5_title_blockedDamageAdv"
+msgstr "Броня"
+
+msgid "pm3_8_3_6"
+msgstr "Б-11"
+
+msgid "pm3_8_3_6_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_6_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за бой."
+
+msgid "pm3_8_3_6_short"
+msgstr "Б-11"
+
+msgid "pm3_8_3_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_3_7"
+msgstr "Б-12"
+
+msgid "pm3_8_3_7_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_7_description_damage"
+msgstr ""
+"Нанести урона в %(vehicleHealthFactor)s раза больше, чем прочность "
+"собственной машины."
+
+msgid "pm3_8_3_7_short"
+msgstr "Б-12"
+
+msgid "pm3_8_3_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_8"
+msgstr "Б-13"
+
+msgid "pm3_8_3_8_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона обездвиженной технике противника за любое "
+"количество боёв."
+
+msgid "pm3_8_3_8_short"
+msgstr "Б-13"
+
+msgid "pm3_8_3_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_9"
+msgstr "Б-14"
+
+msgid "pm3_8_3_9_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_8_3_9_description_hits"
+msgstr "Выстрелом нанести урон машине противника уровнем выше."
+
+msgid "pm3_8_3_9_short"
+msgstr "Б-14"
+
+msgid "pm3_8_3_9_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_1_1"
+msgstr "А-1"
+
+msgid "pm3_9_1_10"
+msgstr "Б-5"
+
+msgid "pm3_9_1_10_description_battlesSeries"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_9_1_10_description_battlesSeriesAdv"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_9_1_10_description_damage"
+msgstr "Иметь средний урон за 10 боёв не ниже %(goal)s ед."
+
+msgid "pm3_9_1_10_description_damageAdv"
+msgstr "Иметь средний урон за 10 боёв не ниже %(goal)s ед."
+
+msgid "pm3_9_1_10_short"
+msgstr "Б-5"
+
+msgid "pm3_9_1_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_10_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_9_1_11"
+msgstr "В-1"
+
+msgid "pm3_9_1_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_11_description_kills"
+msgstr "Уничтожить машину противника."
+
+msgid "pm3_9_1_11_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_1_11_short"
+msgstr "В-1"
+
+msgid "pm3_9_1_11_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_11_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_1_12"
+msgstr "В-2"
+
+msgid "pm3_9_1_12_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_12_description_hitsFrequency"
+msgstr ""
+"Попаданий с пробитием по итогам боя должно быть не меньше %(goal)s%% от "
+"общего числа выстрелов."
+
+msgid "pm3_9_1_12_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_9_1_12_short"
+msgstr "В-2"
+
+msgid "pm3_9_1_12_title_hitsFrequency"
+msgstr "Результат"
+
+msgid "pm3_9_1_12_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_9_1_13"
+msgstr "В-3"
+
+msgid "pm3_9_1_13_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_1_13_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_13_description_kills"
+msgstr "Уничтожить машину противника, оставаясь незамеченным."
+
+msgid "pm3_9_1_13_short"
+msgstr "В-3"
+
+msgid "pm3_9_1_13_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_1_13_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_14"
+msgstr "В-4"
+
+msgid "pm3_9_1_14_description_battlesSeries1"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_14_description_battlesSeries2"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_14_description_hitsFrequency"
+msgstr "Точность стрельбы по итогам боя должна быть не ниже %(goal)s%%."
+
+msgid "pm3_9_1_14_description_topByDamage1"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_9_1_14_description_topByDamage2"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_9_1_14_short"
+msgstr "В-4"
+
+msgid "pm3_9_1_14_title_hitsFrequency"
+msgstr "Результат"
+
+msgid "pm3_9_1_14_title_topByDamage1"
+msgstr "Результат"
+
+msgid "pm3_9_1_14_title_topByDamage2"
+msgstr "Результат"
+
+msgid "pm3_9_1_15"
+msgstr "В-5"
+
+msgid "pm3_9_1_15_description_kills"
+msgstr "Уничтожить %(goal)s машин противника за бой."
+
+msgid "pm3_9_1_15_description_killsAdv"
+msgstr ""
+"Уничтожить %(goal)s машины противника за бой, не потеряв очков прочности до "
+"этого момента."
+
+msgid "pm3_9_1_15_description_winAdv"
+msgstr "Победить в бою."
+
+msgid "pm3_9_1_15_short"
+msgstr "В-5"
+
+msgid "pm3_9_1_15_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_15_title_killsAdv"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_15_title_winAdv"
+msgstr "Результат"
+
+msgid "pm3_9_1_16"
+msgstr "Г-1"
+
+msgid "pm3_9_1_16_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_9_1_16_short"
+msgstr "Г-1"
+
+msgid "pm3_9_1_16_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_1_17"
+msgstr "Г-2"
+
+msgid "pm3_9_1_17_description_assistedHits"
+msgstr ""
+"Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
+"сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_9_1_17_short"
+msgstr "Г-2"
+
+msgid "pm3_9_1_17_title_assistedHits"
+msgstr "Содействие"
+
+msgid "pm3_9_1_18"
+msgstr "Г-3"
+
+msgid "pm3_9_1_18_description_assistedKills"
+msgstr ""
+"Передать разведданые для уничтожения %(goal)s машин противника за любое "
+"количество боёв."
+
+msgid "pm3_9_1_18_short"
+msgstr "Г-3"
+
+msgid "pm3_9_1_18_title_assistedKills"
+msgstr "Разведданные"
+
+msgid "pm3_9_1_19"
+msgstr "Г-4"
+
+msgid "pm3_9_1_19_description_alive"
+msgstr "Учитываются бои, в которых игрок выжил."
+
+msgid "pm3_9_1_19_description_damage"
+msgstr "Нанести %(goal)s ед. урона САУ противника за любое количество боёв."
+
+msgid "pm3_9_1_19_description_spotNumber"
+msgstr "Обнаружить %(goal)s САУ противника за любое количество боёв."
+
+msgid "pm3_9_1_19_short"
+msgstr "Г-4"
+
+msgid "pm3_9_1_19_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_1_19_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_19_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_1_1_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона тяжёлым танкам противника за любое количество "
+"боёв."
+
+msgid "pm3_9_1_1_short"
+msgstr "А-1"
+
+msgid "pm3_9_1_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_2"
+msgstr "А-2"
+
+msgid "pm3_9_1_20"
+msgstr "Г-5"
+
+msgid "pm3_9_1_20_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_9_1_20_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_9_1_20_description_damageAdv"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_9_1_20_short"
+msgstr "Г-5"
+
+msgid "pm3_9_1_20_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_20_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_9_1_21"
+msgstr "Д-1"
+
+msgid "pm3_9_1_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_21_description_blockedHits"
+msgstr "Заблокировать %(goal)s попадания за бой."
+
+msgid "pm3_9_1_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_9_1_21_short"
+msgstr "Д-1"
+
+msgid "pm3_9_1_21_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_9_1_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_9_1_22"
+msgstr "Д-2"
+
+msgid "pm3_9_1_22_description_killsDiversity"
+msgstr "Уничтожить по %(goal)s машине каждого типа за любое количество боёв."
+
+msgid "pm3_9_1_22_short"
+msgstr "Д-2"
+
+msgid "pm3_9_1_22_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_23"
+msgstr "Д-3"
+
+msgid "pm3_9_1_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_23_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_9_1_23_short"
+msgstr "Д-3"
+
+msgid "pm3_9_1_23_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_9_1_24"
+msgstr "Д-4"
+
+msgid "pm3_9_1_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_24_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_9_1_24_short"
+msgstr "Д-4"
+
+msgid "pm3_9_1_24_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_25"
+msgstr "Д-5"
+
+msgid "pm3_9_1_25_description_markOfMasteryI"
+msgstr "Получить знак классности «1 степень» и выше."
+
+msgid "pm3_9_1_25_description_markOfMasteryISeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_9_1_25_description_markOfMasteryMaster"
+msgstr "Получить знак классности «Мастер»."
+
+msgid "pm3_9_1_25_description_markOfMasteryMasterSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_9_1_25_short"
+msgstr "Д-5"
+
+msgid "pm3_9_1_25_title_markOfMasteryI"
+msgstr "Результат"
+
+msgid "pm3_9_1_25_title_markOfMasteryMaster"
+msgstr "Результат"
+
+msgid "pm3_9_1_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за любое количество боёв."
+
+msgid "pm3_9_1_2_short"
+msgstr "А-2"
+
+msgid "pm3_9_1_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_9_1_3"
+msgstr "А-3"
+
+msgid "pm3_9_1_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_9_1_3_description_kills"
+msgstr ""
+"Уничтожить %(goal)s тяжёлых танков противника за любое количество боёв."
+
+msgid "pm3_9_1_3_short"
+msgstr "А-3"
+
+msgid "pm3_9_1_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_9_1_3_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_4"
+msgstr "А-4"
+
+msgid "pm3_9_1_4_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_4_description_killsDiversity"
+msgstr ""
+"Уничтожить %(totalGoal)s машины разных типов с дистанции "
+"%(distanceShortOrEqual)s метров и ближе."
+
+msgid "pm3_9_1_4_short"
+msgstr "А-4"
+
+msgid "pm3_9_1_4_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_5"
+msgstr "А-5"
+
+msgid "pm3_9_1_5_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_9_1_5_description_blockedDamage"
+msgstr ""
+"Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_9_1_5_description_blockedDamageAdv"
+msgstr ""
+"Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_9_1_5_short"
+msgstr "А-5"
+
+msgid "pm3_9_1_5_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_9_1_5_title_blockedDamageAdv"
+msgstr "Броня"
+
+msgid "pm3_9_1_6"
+msgstr "Б-1"
+
+msgid "pm3_9_1_6_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_1_6_description_battlesSeries1"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_6_description_battlesSeries2"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_6_description_hitsDiversity"
+msgstr ""
+"Нанести урон %(totalGoal)s машинам противника %(uniqueGoal)s разных типов за"
+" бой."
+
+msgid "pm3_9_1_6_description_kills"
+msgstr "Уничтожить %(goal)s машины противника за бой."
+
+msgid "pm3_9_1_6_short"
+msgstr "Б-1"
+
+msgid "pm3_9_1_6_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_1_6_title_hitsDiversity"
+msgstr "Урон"
+
+msgid "pm3_9_1_6_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_7"
+msgstr "Б-2"
+
+msgid "pm3_9_1_7_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона ПТ-САУ и средним танкам противника за любое "
+"количество боёв."
+
+msgid "pm3_9_1_7_short"
+msgstr "Б-2"
+
+msgid "pm3_9_1_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_8"
+msgstr "Б-3"
+
+msgid "pm3_9_1_8_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, находящейся в радиусе обзора,"
+" за любое количество боёв."
+
+msgid "pm3_9_1_8_short"
+msgstr "Б-3"
+
+msgid "pm3_9_1_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_9"
+msgstr "Б-4"
+
+msgid "pm3_9_1_9_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_1_9_description_hitsFrequency"
+msgstr "Точность стрельбы по итогам боя должна быть не ниже %(goal)s%%."
+
+msgid "pm3_9_1_9_description_topByKills"
+msgstr ""
+"Попасть в топ-%(desiredPosition)s своей команды по уничтоженным машинам "
+"противника."
+
+msgid "pm3_9_1_9_short"
+msgstr "Б-4"
+
+msgid "pm3_9_1_9_title_hitsFrequency"
+msgstr "Результат"
+
+msgid "pm3_9_1_9_title_topByKills"
+msgstr "Результат"
+
+msgid "pm3_9_2_1"
+msgstr "А-6"
+
+msgid "pm3_9_2_10"
+msgstr "Б-10"
+
+msgid "pm3_9_2_10_description_crits"
+msgstr "Обездвижить %(goal)s разных машин противника, сбивая гусеницы."
+
+msgid "pm3_9_2_10_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон обездвиженной технике противника."
+
+msgid "pm3_9_2_10_description_kills"
+msgstr "Уничтожить %(goal)s обездвиженные машин противника."
+
+msgid "pm3_9_2_10_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_2_10_short"
+msgstr "Б-10"
+
+msgid "pm3_9_2_10_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_9_2_10_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_2_10_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_10_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_2_11"
+msgstr "В-6"
+
+msgid "pm3_9_2_11_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_11_description_damage"
+msgstr "Нанести %(goal)s ед. урона за бой."
+
+msgid "pm3_9_2_11_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
+
+msgid "pm3_9_2_11_short"
+msgstr "В-6"
+
+msgid "pm3_9_2_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_11_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_9_2_12"
+msgstr "В-7"
+
+msgid "pm3_9_2_12_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, оставаясь незамеченным в момент его нанесения, "
+"за любое количество боёв."
+
+msgid "pm3_9_2_12_short"
+msgstr "В-7"
+
+msgid "pm3_9_2_12_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_13"
+msgstr "В-8"
+
+msgid "pm3_9_2_13_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника с дистанции более "
+"%(distanceGreatOrEqual)s метров за любое количество боёв."
+
+msgid "pm3_9_2_13_short"
+msgstr "В-8"
+
+msgid "pm3_9_2_13_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_14"
+msgstr "В-9"
+
+msgid "pm3_9_2_14_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_14_description_topByDamage"
+msgstr "Попасть в топ-%(desiredPosition)s по урону среди обеих команд."
+
+msgid "pm3_9_2_14_short"
+msgstr "В-9"
+
+msgid "pm3_9_2_14_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_9_2_15"
+msgstr "В-10"
+
+msgid "pm3_9_2_15_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_9_2_15_description_kills"
+msgstr "Уничтожить %(goal)s машины противника."
+
+msgid "pm3_9_2_15_description_piercingSeries"
+msgstr "Пробить броню противника %(goal)s раз подряд."
+
+msgid "pm3_9_2_15_short"
+msgstr "В-10"
+
+msgid "pm3_9_2_15_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_15_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_9_2_16"
+msgstr "Г-6"
+
+msgid "pm3_9_2_16_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_16_description_hits"
+msgstr "Выстрелами %(goal)s раза нанести урон."
+
+msgid "pm3_9_2_16_description_spotNumber"
+msgstr "Обнаружить %(goal)s машины противника за бой."
+
+msgid "pm3_9_2_16_short"
+msgstr "Г-6"
+
+msgid "pm3_9_2_16_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_2_16_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_2_17"
+msgstr "Г-7"
+
+msgid "pm3_9_2_17_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_9_2_17_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона лёгким танкам противника за любое количество "
+"боёв."
+
+msgid "pm3_9_2_17_short"
+msgstr "Г-7"
+
+msgid "pm3_9_2_17_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_9_2_17_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_18"
+msgstr "Г-8"
+
+msgid "pm3_9_2_18_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_2_18_description_assistedKills"
+msgstr ""
+"Передать разведданые для уничтожения %(goal)s машин противника за бой."
+
+msgid "pm3_9_2_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_18_short"
+msgstr "Г-8"
+
+msgid "pm3_9_2_18_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_2_18_title_assistedKills"
+msgstr "Разведданные"
+
+msgid "pm3_9_2_19"
+msgstr "Г-9"
+
+msgid "pm3_9_2_19_description_alive"
+msgstr "Засчитываются бои, в которых ваша машина не была уничтожена."
+
+msgid "pm3_9_2_19_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы, за любое количество боёв."
+
+msgid "pm3_9_2_19_short"
+msgstr "Г-9"
+
+msgid "pm3_9_2_19_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_2_19_title_assist"
+msgstr "Обнаружение"
+
+msgid "pm3_9_2_1_description_hitsReceived"
+msgstr "Получить %(goal)s попаданий с уроном и без за любое количество боёв."
+
+msgid "pm3_9_2_1_short"
+msgstr "А-6"
+
+msgid "pm3_9_2_1_title_hitsReceived"
+msgstr "Попадания"
+
+msgid "pm3_9_2_2"
+msgstr "А-7"
+
+msgid "pm3_9_2_20"
+msgstr "Г-10"
+
+msgid "pm3_9_2_20_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_2_20_description_spotNumber"
+msgstr ""
+"Оставаясь необнаруженным, обнаружить %(goal)s машин противника за бой."
+
+msgid "pm3_9_2_20_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_2_20_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта."
+
+msgid "pm3_9_2_20_short"
+msgstr "Г-10"
+
+msgid "pm3_9_2_20_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_2_20_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_2_20_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_2_20_title_xp"
+msgstr "Результат"
+
+msgid "pm3_9_2_21"
+msgstr "Д-6"
+
+msgid "pm3_9_2_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_21_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_9_2_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_9_2_21_short"
+msgstr "Д-6"
+
+msgid "pm3_9_2_21_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_9_2_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_9_2_22"
+msgstr "Д-7"
+
+msgid "pm3_9_2_22_description_killsDiversity"
+msgstr ""
+"Уничтожить по %(goal)s машине противника каждого типа за любое количество "
+"боёв."
+
+msgid "pm3_9_2_22_short"
+msgstr "Д-7"
+
+msgid "pm3_9_2_22_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_23"
+msgstr "Д-8"
+
+msgid "pm3_9_2_23_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_23_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_2_23_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта за бой."
+
+msgid "pm3_9_2_23_short"
+msgstr "Д-8"
+
+msgid "pm3_9_2_23_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_2_23_title_xp"
+msgstr "Результат"
+
+msgid "pm3_9_2_24"
+msgstr "Д-9"
+
+msgid "pm3_9_2_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_24_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_9_2_24_short"
+msgstr "Д-9"
+
+msgid "pm3_9_2_24_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_25"
+msgstr "Д-10"
+
+msgid "pm3_9_2_25_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_9_2_25_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_9_2_25_description_topByDamage"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_9_2_25_description_topByDamageAdv"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_9_2_25_description_winAdv"
+msgstr "Победить в бою."
+
+msgid "pm3_9_2_25_short"
+msgstr "Д-10"
+
+msgid "pm3_9_2_25_title_topByDamage"
+msgstr "Результат"
+
+msgid "pm3_9_2_25_title_topByDamageAdv"
+msgstr "Результат"
+
+msgid "pm3_9_2_25_title_winAdv"
+msgstr "Результат"
+
+msgid "pm3_9_2_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за любое количество боёв."
+
+msgid "pm3_9_2_2_description_kills"
+msgstr ""
+"Уничтожить %(goal)s тяжёлых танков противника за любое количество боёв."
+
+msgid "pm3_9_2_2_short"
+msgstr "А-7"
+
+msgid "pm3_9_2_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_9_2_2_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_3"
+msgstr "А-8"
+
+msgid "pm3_9_2_3_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_2_3_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попадания за бой."
+
+msgid "pm3_9_2_3_short"
+msgstr "А-8"
+
+msgid "pm3_9_2_3_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_2_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_9_2_4"
+msgstr "А-9"
+
+msgid "pm3_9_2_4_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника с дистанции %(distanceShortOrEqual)s "
+"метров и ближе за любое количество боёв."
+
+msgid "pm3_9_2_4_short"
+msgstr "А-9"
+
+msgid "pm3_9_2_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_5"
+msgstr "А-10"
+
+msgid "pm3_9_2_5_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_9_2_5_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_9_2_5_description_damage"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_9_2_5_description_damageAdv"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_9_2_5_description_spotNumberAdv"
+msgstr "Обнаружить %(goal)s машины противника."
+
+msgid "pm3_9_2_5_short"
+msgstr "А-10"
+
+msgid "pm3_9_2_5_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_5_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_9_2_5_title_spotNumberAdv"
+msgstr "Обнаружение"
+
+msgid "pm3_9_2_6"
+msgstr "Б-6"
+
+msgid "pm3_9_2_6_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_2_6_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_6_description_hits"
+msgstr "Выстрелами %(goal)s раза нанести урон технике противника за бой."
+
+msgid "pm3_9_2_6_short"
+msgstr "Б-6"
+
+msgid "pm3_9_2_6_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_2_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_2_7"
+msgstr "Б-7"
+
+msgid "pm3_9_2_7_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_2_7_description_killsDiversity"
+msgstr ""
+"Уничтожить %(totalGoal)s машины противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_9_2_7_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_2_7_short"
+msgstr "Б-7"
+
+msgid "pm3_9_2_7_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_7_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_2_8"
+msgstr "Б-8"
+
+msgid "pm3_9_2_8_description_crits"
+msgstr ""
+"Обездвижить %(goal)s разных машин противника, сбивая гусеницы, за любое "
+"количество боёв."
+
+msgid "pm3_9_2_8_short"
+msgstr "Б-8"
+
+msgid "pm3_9_2_8_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_9_2_9"
+msgstr "Б-9"
+
+msgid "pm3_9_2_9_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за любое количество боёв."
+
+msgid "pm3_9_2_9_short"
+msgstr "Б-9"
+
+msgid "pm3_9_2_9_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_3_1"
+msgstr "А-11"
+
+msgid "pm3_9_3_10"
+msgstr "Б-15"
+
+msgid "pm3_9_3_10_description_assist"
+msgstr ""
+"Союзники должны суммарно нанести %(goal)s ед. урона по обездвиженному вами "
+"противнику."
+
+msgid "pm3_9_3_10_description_assistedKillsAdv"
+msgstr ""
+"Союзники должны уничтожить %(goal)s машины противника, пока они обездвижены "
+"вами."
+
+msgid "pm3_9_3_10_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях из %(battlesLimit)s"
+
+msgid "pm3_9_3_10_description_crits"
+msgstr ""
+"Обездвижить за бой %(goal)s разные машины противника, сбивая гусеницы."
+
+msgid "pm3_9_3_10_description_critsAdv"
+msgstr "Обездвижить %(goal)s разных машин противника, сбивая гусеницы."
+
+msgid "pm3_9_3_10_short"
+msgstr "Б-15"
+
+msgid "pm3_9_3_10_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_9_3_10_title_assistedKillsAdv"
+msgstr "Содействие"
+
+msgid "pm3_9_3_10_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_9_3_10_title_critsAdv"
+msgstr "Гусеницы"
+
+msgid "pm3_9_3_11"
+msgstr "В-11"
+
+msgid "pm3_9_3_11_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника за любое количество боёв."
+
+msgid "pm3_9_3_11_short"
+msgstr "В-11"
+
+msgid "pm3_9_3_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_3_12"
+msgstr "В-12"
+
+msgid "pm3_9_3_12_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машин противника, не потеряв очков прочности до этого "
+"момента, за любое количество боёв."
+
+msgid "pm3_9_3_12_short"
+msgstr "В-12"
+
+msgid "pm3_9_3_12_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_13"
+msgstr "В-13"
+
+msgid "pm3_9_3_13_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_13_description_damagePercent"
+msgstr ""
+"Нанести урон %(goal)s машинам противника, составляющий более "
+"%(damagedHealthPercent)s%% от прочности каждой цели, за бой."
+
+msgid "pm3_9_3_13_short"
+msgstr "В-13"
+
+msgid "pm3_9_3_13_title_damagePercent"
+msgstr "Урон"
+
+msgid "pm3_9_3_14"
+msgstr "В-14"
+
+msgid "pm3_9_3_14_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_14_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, не потеряв очков прочности до этого момента."
+
+msgid "pm3_9_3_14_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_3_14_short"
+msgstr "В-14"
+
+msgid "pm3_9_3_14_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_3_14_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_3_15"
+msgstr "В-15"
+
+msgid "pm3_9_3_15_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника за бой."
+
+msgid "pm3_9_3_15_description_damageAdv"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника за бой и не потерять очков "
+"прочности до этого момента."
+
+msgid "pm3_9_3_15_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_3_15_short"
+msgstr "В-15"
+
+msgid "pm3_9_3_15_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_3_15_title_damageAdv"
+msgstr "Урон"
+
+msgid "pm3_9_3_15_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_3_16"
+msgstr "Г-11"
+
+msgid "pm3_9_3_16_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_9_3_16_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_16_description_piercings"
+msgstr "Пробить броню противника %(goal)s разa за бой."
+
+msgid "pm3_9_3_16_short"
+msgstr "Г-11"
+
+msgid "pm3_9_3_16_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_9_3_16_title_piercings"
+msgstr "Пробитие"
+
+msgid "pm3_9_3_17"
+msgstr "Г-12"
+
+msgid "pm3_9_3_17_description_assist"
+msgstr ""
+"Передать разведданые для нанесения %(goal)s ед. урона за любое количество "
+"боёв."
+
+msgid "pm3_9_3_17_short"
+msgstr "Г-12"
+
+msgid "pm3_9_3_17_title_assist"
+msgstr "Разведданные"
+
+msgid "pm3_9_3_18"
+msgstr "Г-13"
+
+msgid "pm3_9_3_18_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_18_description_damageAndAssist"
+msgstr ""
+"Совместно с союзниками нанести %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_9_3_18_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_3_18_short"
+msgstr "Г-13"
+
+msgid "pm3_9_3_18_title_damageAndAssist"
+msgstr "Содействие"
+
+msgid "pm3_9_3_18_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_3_19"
+msgstr "Г-14"
+
+msgid "pm3_9_3_19_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон технике противника за любое количество "
+"боёв."
+
+msgid "pm3_9_3_19_description_spotNumber"
+msgstr "Обнаружить %(goal)s машин противника за любое количество боёв."
+
+msgid "pm3_9_3_19_short"
+msgstr "Г-14"
+
+msgid "pm3_9_3_19_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_3_19_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_3_1_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон тяжёлым танкам противника за любое "
+"количество боёв."
+
+msgid "pm3_9_3_1_short"
+msgstr "А-11"
+
+msgid "pm3_9_3_1_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_3_2"
+msgstr "А-12"
+
+msgid "pm3_9_3_20"
+msgstr "Г-15"
+
+msgid "pm3_9_3_20_description_assist"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_9_3_20_description_assistAdv"
+msgstr ""
+"Помочь союзникам нанести суммарно %(goal)s ед. урона технике противника, "
+"передавая разведданные или сбивая гусеницы."
+
+msgid "pm3_9_3_20_description_battlesSeries"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_9_3_20_description_battlesSeriesAdv"
+msgstr "Уложиться в %(goal)s боёв"
+
+msgid "pm3_9_3_20_short"
+msgstr "Г-15"
+
+msgid "pm3_9_3_20_title_assist"
+msgstr "Содействие"
+
+msgid "pm3_9_3_20_title_assistAdv"
+msgstr "Содействие"
+
+msgid "pm3_9_3_21"
+msgstr "Д-11"
+
+msgid "pm3_9_3_21_description_alive"
+msgstr "Не получить никакого урона в бою."
+
+msgid "pm3_9_3_21_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_21_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
+
+msgid "pm3_9_3_21_short"
+msgstr "Д-11"
+
+msgid "pm3_9_3_21_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_3_21_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_9_3_22"
+msgstr "Д-12"
+
+msgid "pm3_9_3_22_description_killsDiversity"
+msgstr ""
+"Уничтожить по %(goal)s машине противника каждого типа за любое количество "
+"боёв."
+
+msgid "pm3_9_3_22_short"
+msgstr "Д-12"
+
+msgid "pm3_9_3_22_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_23"
+msgstr "Д-13"
+
+msgid "pm3_9_3_23_description_xp"
+msgstr "Заработать %(goal)s ед. «чистого» опыта за любое количество боёв."
+
+msgid "pm3_9_3_23_short"
+msgstr "Д-13"
+
+msgid "pm3_9_3_23_title_xp"
+msgstr "Результат"
+
+msgid "pm3_9_3_24"
+msgstr "Д-14"
+
+msgid "pm3_9_3_24_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_24_description_damage"
+msgstr "Нанести урона больше, чем прочность собственной машины."
+
+msgid "pm3_9_3_24_short"
+msgstr "Д-14"
+
+msgid "pm3_9_3_24_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_3_25"
+msgstr "Д-15"
+
+msgid "pm3_9_3_25_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_9_3_25_description_battlesSeriesAdv"
+msgstr "Выполнить в %(goal)s боях подряд"
+
+msgid "pm3_9_3_25_description_topByExp"
+msgstr "Попасть в топ-%(desiredPosition)s по опыту среди обеих команд."
+
+msgid "pm3_9_3_25_description_topByExpAdv"
+msgstr "Занять первое место по опыту среди обеих команд."
+
+msgid "pm3_9_3_25_short"
+msgstr "Д-15"
+
+msgid "pm3_9_3_25_title_topByExp"
+msgstr "Результат"
+
+msgid "pm3_9_3_25_title_topByExpAdv"
+msgstr "Результат"
+
+msgid "pm3_9_3_2_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_3_2_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_2_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_9_3_2_short"
+msgstr "А-12"
+
+msgid "pm3_9_3_2_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_3_2_title_blockedDamage"
+msgstr "Броня"
+
+msgid "pm3_9_3_3"
+msgstr "А-13"
+
+msgid "pm3_9_3_3_description_blockedHits"
+msgstr "Заблокировать %(goal)s попаданий за любое количество боёв."
+
+msgid "pm3_9_3_3_short"
+msgstr "А-13"
+
+msgid "pm3_9_3_3_title_blockedHits"
+msgstr "Броня"
+
+msgid "pm3_9_3_4"
+msgstr "А-14"
+
+msgid "pm3_9_3_4_description_hits"
+msgstr ""
+"Выстрелами %(goal)s раз нанести урон технике противника уровнем выше за "
+"любое количество боёв."
+
+msgid "pm3_9_3_4_description_kills"
+msgstr ""
+"Уничтожить %(goal)s машины противника с дистанции %(distanceShortOrEqual)s "
+"метров и ближе за любое количество боёв."
+
+msgid "pm3_9_3_4_short"
+msgstr "А-14"
+
+msgid "pm3_9_3_4_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_3_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_5"
+msgstr "А-15"
+
+msgid "pm3_9_3_5_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_9_3_5_description_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_9_3_5_description_damageDealtReceivedAndBlockedAdv"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона за бой."
+
+msgid "pm3_9_3_5_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_3_5_short"
+msgstr "А-15"
+
+msgid "pm3_9_3_5_title_alive"
+msgstr "Результат"
+
+msgid "pm3_9_3_5_title_damageDealtReceivedAndBlocked"
+msgstr "Комплексное условие"
+
+msgid "pm3_9_3_5_title_damageDealtReceivedAndBlockedAdv"
+msgstr "Комплексное условие"
+
+msgid "pm3_9_3_5_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_3_6"
+msgstr "Б-11"
+
+msgid "pm3_9_3_6_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_6_description_hits"
+msgstr "Нанести урон %(goal)s машинам противника за бой."
+
+msgid "pm3_9_3_6_description_win"
+msgstr "Победить в бою."
+
+msgid "pm3_9_3_6_short"
+msgstr "Б-11"
+
+msgid "pm3_9_3_6_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_3_6_title_win"
+msgstr "Результат"
+
+msgid "pm3_9_3_7"
+msgstr "Б-12"
+
+msgid "pm3_9_3_7_description_kills"
+msgstr ""
+"Уничтожить суммарно %(goal)s ПТ-САУ, САУ и средних танков противника за "
+"любое количество боёв."
+
+msgid "pm3_9_3_7_short"
+msgstr "Б-12"
+
+msgid "pm3_9_3_7_title_kills"
+msgstr "Уничтожить"
+
+msgid "pm3_9_3_8"
+msgstr "Б-13"
+
+msgid "pm3_9_3_8_description_crits"
+msgstr ""
+"Обездвижить %(goal)s разных машин противника, сбивая гусеницы, за любое "
+"количество боёв."
+
+msgid "pm3_9_3_8_short"
+msgstr "Б-13"
+
+msgid "pm3_9_3_8_title_crits"
+msgstr "Гусеницы"
+
+msgid "pm3_9_3_9"
+msgstr "Б-14"
+
+msgid "pm3_9_3_9_description_battlesSeries"
+msgstr "Выполнить в %(goal)s боях"
+
+msgid "pm3_9_3_9_description_damage"
+msgstr ""
+"Нанести урона в %(vehicleHealthFactor)s раз больше, чем прочность "
+"собственной машины."
+
+msgid "pm3_9_3_9_short"
+msgstr "Б-14"
+
+msgid "pm3_9_3_9_title_damage"
+msgstr "Урон"
+
 msgid "quest/advice/biathlon/description"
 msgstr ""
 "Каждая задача этого типа имеет ограниченное количество попыток на выполнение"
@@ -5664,6 +10101,9 @@ msgstr "САУ-9"
 msgid "quest_common_condition_description_alive"
 msgstr "Не быть уничтоженным по итогу боя"
 
+msgid "quest_common_condition_description_attackerUnharmed"
+msgstr "Не получить никакого урона в бою."
+
 msgid "quest_common_condition_description_base"
 msgstr "Принять участие в успешном захвате или сбитии захвата базы"
 
@@ -5681,6 +10121,9 @@ msgstr "Выжить"
 
 msgid "quest_common_condition_title_base"
 msgstr "Захват/защита"
+
+msgid "quest_common_condition_title_battlesSeries"
+msgstr "Выполнить условия, раз: %(count)d"
 
 msgid "quest_common_condition_title_complex"
 msgstr "Комплексное условие"

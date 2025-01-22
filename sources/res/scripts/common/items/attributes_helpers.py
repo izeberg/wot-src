@@ -1,4 +1,4 @@
-from items._xml import raiseWrongXml
+from items._xml import raiseWrongXml, readFloat
 from typing import Dict, Tuple, Iterable, List, TYPE_CHECKING
 if TYPE_CHECKING:
     import ResMgr
@@ -81,12 +81,12 @@ ALLOWED_DYNAMIC_ATTRS = {
  'gun/changeShell/reloadFactor',
  'gun/piercing',
  'gun/maxDistanceFactor',
- 'gun/shotRateFactor',
  'gun/shellSpeedFactor',
  'gun/reloadTime',
  'gun/rotationSpeed',
  'gun/shotDispersionFactors/afterShot',
  'gun/shotDispersionFactors/turretRotation',
+ 'gun/temperature/heatingFactor',
  'healthBurnPerSecLossFraction',
  'healthFactor',
  'multShotDispersionFactor',
@@ -133,7 +133,7 @@ def readModifiers(xmlCtx, section):
     modifiers = []
     for opType, data in section.items():
         name = data.readString('name')
-        value = data.readFloat('value')
+        value = readFloat(xmlCtx, data, 'value')
         modifier = createModifier(xmlCtx, opType, name, value)
         if modifier:
             modifiers.append(modifier)

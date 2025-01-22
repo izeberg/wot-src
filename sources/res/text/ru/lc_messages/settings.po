@@ -530,7 +530,7 @@ msgid "chat/chatContactsListOnly"
 msgstr "Принимать сообщения только из списка контактов"
 
 msgid "chat/disableBattleChat"
-msgstr "Отключить чат с союзниками"
+msgstr "Отключить чат"
 
 msgid "chat/enableStoreChannelsWindows"
 msgstr "Запоминать положение и размеры окон каналов"
@@ -2473,6 +2473,23 @@ msgid "tripleBuffered/description"
 msgstr ""
 "Смягчает резкие скачки изображения при смене кадров (только при включённой "
 "функции «Вертикальная синхронизация»)."
+
+msgid "uiEffects"
+msgstr "Эффекты интерфейса"
+
+msgid "uiEffects/attention"
+msgstr ""
+"Включение этой настройки может\n"
+"привести к снижению производительности."
+
+msgid "uiEffects/body"
+msgstr ""
+"Данная настройка включает или отключает\n"
+"дополнительные визуальные эффекты\n"
+"интерфейса."
+
+msgid "uiEffects/header"
+msgstr "Эффекты интерфейса"
 
 msgid "vertSync"
 msgstr "Вертикальная синхронизация"

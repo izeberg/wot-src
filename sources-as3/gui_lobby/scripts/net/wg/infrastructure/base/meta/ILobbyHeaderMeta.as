@@ -72,6 +72,8 @@ package net.wg.infrastructure.base.meta
       
       function as_updateAnonymizedState(param1:Boolean) : void;
       
+      function as_updateUiEffectsState(param1:Boolean) : void;
+      
       function as_setWalletStatus(param1:Object) : void;
       
       function as_disableFightButton(param1:Boolean) : void;
@@ -84,7 +86,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setFightBtnTooltip(param1:String, param2:Boolean) : void;
       
-      function as_updateOnlineCounter(param1:String, param2:String, param3:String, param4:Boolean) : void;
+      function as_updateOnlineCounter(param1:String, param2:String, param3:Boolean) : void;
       
       function as_initOnlineCounter(param1:Boolean) : void;
       
@@ -107,7 +109,5 @@ package net.wg.infrastructure.base.meta
       function as_setIsFullscreenBattleSelectorShowing(param1:Boolean) : void;
       
       function as_setButtonHighlight(param1:String, param2:String) : void;
-      
-      function as_updateNYVisibility(param1:Boolean, param2:Boolean, param3:Boolean) : void;
    }
 }

@@ -9,10 +9,12 @@ package net.wg.infrastructure.managers.impl
    import flash.utils.Dictionary;
    import net.wg.data.constants.Errors;
    import net.wg.data.constants.Linkages;
+   import net.wg.data.constants.Values;
    import net.wg.infrastructure.events.AtlasEvent;
    import net.wg.infrastructure.interfaces.IAtlas;
    import net.wg.infrastructure.interfaces.IAtlasItemVO;
    import net.wg.infrastructure.managers.IAtlasManager;
+   import org.idmedia.as3commons.util.StringUtils;
    
    public class AtlasManager extends EventDispatcher implements IAtlasManager
    {
@@ -46,6 +48,62 @@ package net.wg.infrastructure.managers.impl
          this._lastAtlas = null;
       }
       
+      public function drawAtlasItemPart(param1:String, param2:String, param3:Graphics, param4:int, param5:int) : void
+      {
+         var _loc6_:IAtlas = this.getAtlas(param1);
+         if(_loc6_ == null || _loc6_.atlasBitmapData == null)
+         {
+            return;
+         }
+         var _loc7_:IAtlasItemVO = this.getAtlasItem(_loc6_,param2,Values.EMPTY_STR);
+         if(_loc7_)
+         {
+            this.drawAtlasPart(_loc6_,_loc7_,param3,param4,param5);
+         }
+      }
+      
+      public function drawGraphics(param1:String, param2:String, param3:Graphics, param4:String = "", param5:Boolean = false, param6:Boolean = false, param7:Boolean = false) : void
+      {
+         var _loc10_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc8_:IAtlas = this.getAtlas(param1);
+         if(_loc8_ == null || _loc8_.atlasBitmapData == null)
+         {
+            return;
+         }
+         var _loc9_:IAtlasItemVO = this.getAtlasItem(_loc8_,param2,param4);
+         if(_loc9_)
+         {
+            _loc10_ = 0;
+            _loc11_ = 0;
+            if(param7)
+            {
+               _loc10_ = -(_loc9_.width >> 1);
+               _loc11_ = -(_loc9_.height >> 1);
+            }
+            this.drawAtlasPart(_loc8_,_loc9_,param3,_loc9_.width,_loc9_.height,_loc10_,_loc11_,param5,param6);
+         }
+         else
+         {
+            DebugUtils.LOG_ERROR("AtlasManager can\'t find item \'" + param2 + "\' (altName: \'" + param4 + "\' ) in atlas \'" + param1 + "\'");
+            this.drawNotFoundImg(param3);
+         }
+      }
+      
+      public function forgetAtlas(param1:String, param2:Function) : void
+      {
+         var _loc4_:int = 0;
+         var _loc3_:Vector.<Function> = this._atlasesDict[param1].pendingInitialization;
+         if(_loc3_)
+         {
+            _loc4_ = _loc3_.indexOf(param2);
+            if(_loc4_ != -1)
+            {
+               _loc3_.splice(_loc4_,1);
+            }
+         }
+      }
+      
       public function getNewBitmapData(param1:String, param2:String, param3:String = "") : BitmapData
       {
          var _loc4_:IAtlas = this.getAtlas(param1);
@@ -66,58 +124,15 @@ package net.wg.infrastructure.managers.impl
          return _loc6_;
       }
       
-      public function drawGraphics(param1:String, param2:String, param3:Graphics, param4:String = "", param5:Boolean = false, param6:Boolean = false, param7:Boolean = false) : void
-      {
-         var _loc10_:Number = NaN;
-         var _loc11_:Number = NaN;
-         var _loc12_:Matrix = null;
-         var _loc8_:IAtlas = this.getAtlas(param1);
-         App.utils.asserter.assert(_loc8_ != null && _loc8_.atlasBitmapData != null,"AtlasManager atlas or atlas bitmap \'" + param1 + Errors.CANT_NULL);
-         if(_loc8_ == null || _loc8_.atlasBitmapData == null)
-         {
-            return;
-         }
-         var _loc9_:IAtlasItemVO = this.getAtlasItem(_loc8_,param2,param4);
-         if(_loc9_)
-         {
-            _loc10_ = 0;
-            _loc11_ = 0;
-            if(param7)
-            {
-               _loc10_ = -(_loc9_.width >> 1);
-               _loc11_ = -(_loc9_.height >> 1);
-            }
-            _loc12_ = new Matrix();
-            _loc12_.translate(-_loc9_.x + _loc10_,-_loc9_.y + _loc11_);
-            param3.clear();
-            param3.beginBitmapFill(_loc8_.atlasBitmapData,_loc12_,param6,param5);
-            param3.drawRect(_loc10_,_loc11_,_loc9_.width,_loc9_.height);
-            param3.endFill();
-         }
-         else
-         {
-            DebugUtils.LOG_ERROR("AtlasManager can\'t find item \'" + param2 + "\' (altName: \'" + param4 + "\' ) in atlas \'" + param1 + "\'");
-            param3.clear();
-            param3.beginFill(16711680,0.5);
-            param3.drawRect(0,0,10,10);
-            param3.endFill();
-         }
-      }
-      
-      private function getAtlasItem(param1:IAtlas, param2:String, param3:String) : IAtlasItemVO
-      {
-         var _loc4_:IAtlasItemVO = param1.getAtlasItemVOByName(param2);
-         if(!_loc4_ && param3 != "")
-         {
-            _loc4_ = param1.getAtlasItemVOByName(param3);
-         }
-         return _loc4_;
-      }
-      
       public function isAtlasInitialized(param1:String) : Boolean
       {
          var _loc2_:IAtlas = this.getAtlas(param1);
          return _loc2_ != null && _loc2_.isAtlasInitialized;
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._isDisposed;
       }
       
       public function registerAtlas(param1:String, param2:Object = null) : void
@@ -179,18 +194,32 @@ package net.wg.infrastructure.managers.impl
          }
       }
       
-      public function forgetAtlas(param1:String, param2:Function) : void
+      private function drawAtlasPart(param1:IAtlas, param2:IAtlasItemVO, param3:Graphics, param4:int, param5:int, param6:int = 0, param7:int = 0, param8:Boolean = false, param9:Boolean = false) : void
       {
-         var _loc4_:int = 0;
-         var _loc3_:Vector.<Function> = this._atlasesDict[param1].pendingInitialization;
-         if(_loc3_)
+         var _loc10_:Matrix = new Matrix();
+         _loc10_.translate(-param2.x + param6,-param2.y + param7);
+         param3.clear();
+         param3.beginBitmapFill(param1.atlasBitmapData,_loc10_,param9,param8);
+         param3.drawRect(param6,param7,param4,param5);
+         param3.endFill();
+      }
+      
+      private function drawNotFoundImg(param1:Graphics) : void
+      {
+         param1.clear();
+         param1.beginFill(16711680,0.5);
+         param1.drawRect(0,0,10,10);
+         param1.endFill();
+      }
+      
+      private function getAtlasItem(param1:IAtlas, param2:String, param3:String) : IAtlasItemVO
+      {
+         var _loc4_:IAtlasItemVO = param1.getAtlasItemVOByName(param2);
+         if(!_loc4_ && StringUtils.isEmpty(param3))
          {
-            _loc4_ = _loc3_.indexOf(param2);
-            if(_loc4_ != -1)
-            {
-               _loc3_.splice(_loc4_,1);
-            }
+            _loc4_ = param1.getAtlasItemVOByName(param3);
          }
+         return _loc4_;
       }
       
       private function getAtlas(param1:String) : IAtlas
@@ -216,11 +245,6 @@ package net.wg.infrastructure.managers.impl
          }
          _loc3_.pendingInitialization.length = 0;
       }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._isDisposed;
-      }
    }
 }
 
@@ -233,11 +257,11 @@ class AtlasVO implements IDisposable
    
    public var atlas:IAtlas;
    
-   private var _disposed:Boolean = false;
-   
    public var locks:Array;
    
    public var pendingInitialization:Vector.<Function>;
+   
+   private var _disposed:Boolean = false;
    
    function AtlasVO(param1:IAtlas)
    {

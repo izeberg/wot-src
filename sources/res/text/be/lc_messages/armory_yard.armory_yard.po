@@ -425,11 +425,11 @@ msgstr "Этап будаўніцтва"
 msgid "mainView/progress/title"
 msgstr "ЗБОРАЧНЫ ЦЭХ"
 
-msgid "mainView/quest/all/label"
-msgstr "Выконваецца:"
-
 msgid "mainView/quest/battleType/dot"
 msgstr "."
+
+msgid "mainView/quest/battleType/ellipsis"
+msgstr "..."
 
 msgid "mainView/quest/battleType/label"
 msgstr "У рэжымах:"
@@ -449,29 +449,41 @@ msgstr[0] "Узнагарода атрымана"
 msgstr[1] "Узнагароды атрыманы"
 msgstr[2] "Узнагароды атрыманы"
 
+msgid "mainView/quest/levelRangeSeparator"
+msgstr "-"
+
+msgid "mainView/quest/levelSeparator"
+msgstr ", "
+
 msgid "mainView/quest/progress"
 msgstr "%(current)s %(par_open)s/ %(total)s%(par_close)s"
 
 msgid "mainView/quest/vehicleType/AT-SPG"
-msgstr "СТ-САУ VI-XI узроўняў"
+msgstr "СТ-САУ"
 
 msgid "mainView/quest/vehicleType/SPG"
-msgstr "САУ VI-XI узроўняў"
-
-msgid "mainView/quest/vehicleType/any"
-msgstr "VI-XI узроўняў"
+msgstr "САУ"
 
 msgid "mainView/quest/vehicleType/heavyTank"
-msgstr "Цяжкія танкі VI-XI узроўняў"
+msgstr "Цяжкія танкі"
 
 msgid "mainView/quest/vehicleType/label"
 msgstr "На тэхніцы:"
 
+msgid "mainView/quest/vehicleType/level"
+msgstr "%(from)s узроўні"
+
+msgid "mainView/quest/vehicleType/levelsMultiple"
+msgstr "%(from)s узроўняў"
+
+msgid "mainView/quest/vehicleType/levelsRange"
+msgstr "%(from)s%(separator)s%(to)s"
+
 msgid "mainView/quest/vehicleType/lightTank"
-msgstr "Лёгкія танкі VI-XI узроўняў"
+msgstr "Лёгкія танкі"
 
 msgid "mainView/quest/vehicleType/mediumTank"
-msgstr "Сярэднія танкі VI-XI узроўняў"
+msgstr "Сярэднія танкі"
 
 msgid "mainView/quests/title"
 msgstr "ЗАДАЧЫ ЗБОРАЧНАГА ЦЭХА"
@@ -504,79 +516,61 @@ msgid "mainView/title/step/1"
 msgstr "Знаёмства з ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Усталяванне рухавіка"
+msgstr "Мантаж органаў кіравання і сістэмы гашэння пажару"
 
 msgid "mainView/title/step/11"
-msgstr "Усталяванне паліўнай сістэмы"
-
-msgid "mainView/title/step/12"
-msgstr "Усталяванне паветраных фільтра і сістэмы гашэння пажару"
-
-msgid "mainView/title/step/13"
-msgstr "Усталяванне сістэмы ахалоджвання"
-
-msgid "mainView/title/step/14"
-msgstr "Усталяванне ахоўных кажухоў і сістэм захоўвання"
-
-msgid "mainView/title/step/15"
-msgstr "Мантаж баявога аддзялення"
-
-msgid "mainView/title/step/16"
 msgstr "Дастаўка гарматы"
 
+msgid "mainView/title/step/12"
+msgstr "Мантаж ўнутранага абсталявання вежы"
+
+msgid "mainView/title/step/13"
+msgstr "Мантаж гарматы і вежы"
+
+msgid "mainView/title/step/14"
+msgstr "Усталяванне ММГ снарадаў"
+
+msgid "mainView/title/step/15"
+msgstr "Мантаж вядучых колаў"
+
+msgid "mainView/title/step/16"
+msgstr "Усталяванне падтрымных каткоў"
+
 msgid "mainView/title/step/17"
-msgstr "Загрузка боекамплекту (ММГ)"
+msgstr "Працяжка тракавых пасаў"
 
 msgid "mainView/title/step/18"
-msgstr "Усталяванне гарматы"
+msgstr "Афарбоўка"
 
 msgid "mainView/title/step/19"
-msgstr "Усталяванне вядучых колаў"
+msgstr "Мантаж навяснога абсталявання"
 
 msgid "mainView/title/step/2"
 msgstr "Габарыты машыны"
 
 msgid "mainView/title/step/20"
-msgstr "Усталяванне элементаў падвескі"
-
-msgid "mainView/title/step/21"
-msgstr "Мантаж каткоў"
-
-msgid "mainView/title/step/22"
-msgstr "Нацягванне тракавых пасаў"
-
-msgid "mainView/title/step/23"
-msgstr "Пафарбоўка"
-
-msgid "mainView/title/step/24"
-msgstr "Мантаж элементаў вонкавай аховы"
-
-msgid "mainView/title/step/25"
-msgstr "Мантаж навяснога абсталявання"
-
-msgid "mainView/title/step/26"
 msgstr "Выкатка машыны"
 
 msgid "mainView/title/step/3"
-msgstr "Прапрацоўка браніравання корпуса"
+msgstr "Канструкцыя вежы і гарматы"
 
 msgid "mainView/title/step/4"
-msgstr "Схема ўзбраення"
+msgstr "Разнясенне таўшчынь брані"
 
 msgid "mainView/title/step/5"
-msgstr "Кампанавальная схема сілавой устаноўкі"
+msgstr "Кампанавальная схема"
 
 msgid "mainView/title/step/6"
-msgstr "Схема дадатковай аховы і баявога аддзялення"
-
-msgid "mainView/title/step/7"
-msgstr "Экстэр'ер"
-
-msgid "mainView/title/step/8"
 msgstr "Загартоўка брані"
 
+msgid "mainView/title/step/7"
+msgstr "Мантаж рухавіка"
+
+msgid "mainView/title/step/8"
+msgstr "Мантаж трансмісіі і прыводаў"
+
 msgid "mainView/title/step/9"
-msgstr "Усталяванне трансмісіі"
+msgstr "Мантаж паліўных бакаў і сістэмы ахалоджвання"
 
 msgid "mainView/title/step/final"
 msgstr "Будаўніцтва завершана"
@@ -592,8 +586,8 @@ msgstr "Раздзел %(count)d: %(chapter_name)s будзе даступны %
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Ваяры! У вас ёсць магчымасць пабудаваць унікальную машыну — прэміум СТ САУ "
-"ІХ узроўню. Падзея пачынаецца %(startDate)s."
+"Байцы! У вас ёсць магчымасць пабудаваць унікальную машыну — цяжкі прэміум "
+"танк VIII узроўню WZ-57-I. Падзея пачынаецца %(startDate)s."
 
 msgid "notifications/bundleOutTime"
 msgstr ""
@@ -780,9 +774,9 @@ msgstr "жэтоны будаўніцтва"
 
 msgid "tooltip/currency/gain/description"
 msgstr ""
-"Выконвайце задачы ў раздзелах, каб атрымліваць %(yellow_open)sжэтоны "
-"будаўніцтва%(yellow_close)s. Улічыце, што колькасць жэтонаў у кожным "
-"раздзеле абмежаваная."
+"Выконвайце задачы ў раздзелах, каб атрымліваць "
+"%(yellow_open)s%(token)s%(yellow_close)s. Улічыце, што колькасць жэтонаў у "
+"кожным раздзеле абмежаваная."
 
 msgid "tooltip/currency/gain/title"
 msgstr "Як атрымаць"
@@ -816,6 +810,30 @@ msgstr "Атрымана"
 
 msgid "tooltip/currency/title"
 msgstr "Жэтоны будаўніцтва"
+
+msgid "tooltip/quests/task/arcade"
+msgstr "Аркада"
+
+msgid "tooltip/quests/task/header"
+msgstr "Задача выконваецца"
+
+msgid "tooltip/quests/task/separator"
+msgstr ", "
+
+msgid "tooltip/quests/task/subtitle/battleType"
+msgid_plural "battleType"
+msgstr[0] "У рэжыме:"
+msgstr[1] "У рэжымах:"
+msgstr[2] "У рэжымах:"
+
+msgid "tooltip/quests/task/subtitle/vehicleLevel"
+msgid_plural "vehicleLevel"
+msgstr[0] "На тэхніцы ўзроўню:"
+msgstr[1] "На тэхніцы ўзроўняў:"
+msgstr[2] "На тэхніцы ўзроўняў:"
+
+msgid "tooltip/quests/task/subtitle/vehicleType"
+msgstr "На тэхніцы тыпу:"
 
 msgid "tooltip/tab/progression/body"
 msgstr "Прагляд дасягнутага прагрэсу ў падзеі «Зборачны цэх»."

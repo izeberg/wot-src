@@ -1,6 +1,6 @@
 package net.wg.gui.battle.random.views.fragCorrelationBar.components
 {
-   import flash.display.MovieClip;
+   import flash.display.Sprite;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.constants.FragCorrelationBarStatus;
    import net.wg.data.constants.Linkages;
@@ -12,25 +12,25 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       
       private static const TIER_GROUPING_Y_OFFSET:int = 23;
       
-      private static const MARKERS_TOP_OFFSET:int = 17;
+      private static const MARKERS_TOP_OFFSET:int = 33;
       
       private static const TIER_GROUPING_Y_OFFSET_NO_BAR:int = 13;
       
-      private static const MARKERS_TOP_OFFSET_NO_BAR:int = 7;
+      private static const MARKERS_TOP_OFFSET_NO_BAR:int = 23;
       
-      private static const ALLY_MARKERS_START_POSITION:int = -88;
+      private static const ALLY_MARKERS_START_POSITION:int = -72;
       
-      private static const ENEMY_MARKERS_START_POSITION:int = 58;
+      private static const ENEMY_MARKERS_START_POSITION:int = 74;
       
-      private static const ALLY_TIER_GROUPING_START_POSITION:int = -71;
+      private static const ALLY_TIER_GROUPING_START_POSITION:int = -56;
       
-      private static const ENEMY_TIER_GROUPING_START_POSITION:int = 42;
+      private static const ENEMY_TIER_GROUPING_START_POSITION:int = 57;
       
       private static const MARKER_SHIFT:int = 16;
       
-      private static const ALLY_TIER_GROUPING_SHIFT:int = 30;
+      private static const ALLY_TIER_GROUPING_SHIFT:int = 15;
       
-      private static const ENEMY_TIER_GROUPING_SHIFT:int = 0;
+      private static const ENEMY_TIER_GROUPING_SHIFT:int = -15;
       
       private static const TIER_7_GROUPING_OFFSET:int = 2;
       
@@ -49,7 +49,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       
       private var _vehicleIDs:Vector.<Number>;
       
-      private var _container:MovieClip = null;
+      private var _container:Sprite = null;
       
       private var _color:String = "";
       
@@ -75,7 +75,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       
       private var _disposed:Boolean = false;
       
-      public function VehicleMarkersList(param1:MovieClip, param2:Boolean, param3:String)
+      public function VehicleMarkersList(param1:Sprite, param2:Boolean, param3:String)
       {
          this._vehicleMarkers = new Vector.<FCVehicleMarker>(0);
          this._vehicleIDs = new Vector.<Number>();
@@ -155,6 +155,11 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
             _loc1_.visible = false;
          }
          this.updateTierGroupingVisibility(this._isVehicleCounterShown);
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
       }
       
       public function setIsForcedTierGrouping(param1:Boolean) : void
@@ -336,11 +341,6 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
          }
       }
       
-      protected function getMarkerLinkage() : String
-      {
-         return Linkages.FC_MARKER_ITEM;
-      }
-      
       private function cleanVehicleMarker() : void
       {
          this._vehicleMarkers.splice(0,this._vehicleMarkers.length);
@@ -381,7 +381,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       
       private function addVehicle(param1:DAAPIVehicleInfoVO) : void
       {
-         var _loc2_:FCVehicleMarker = FCVehicleMarker(this._classFactory.getObject(this.getMarkerLinkage()));
+         var _loc2_:FCVehicleMarker = FCVehicleMarker(this._classFactory.getObject(Linkages.FC_MARKER_ITEM));
          _loc2_.init(param1.vehicleID,param1.vehicleType,param1.vehicleStatus,this._color,param1.vehicleLevel,this);
          this._vehicleMarkers.push(_loc2_);
          if(!this._isVehicleCounterShown)
@@ -389,7 +389,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
             _loc2_.visible = false;
          }
          this.addActiveTierLevels(param1.vehicleLevel);
-         this._container.addChild(_loc2_);
+         this._container.addChildAt(_loc2_,0);
       }
       
       private function addActiveTierLevels(param1:int) : void
@@ -433,6 +433,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       private function positionTierInfo(param1:int, param2:int, param3:int) : void
       {
          var _loc4_:int = 0;
+         var _loc5_:TierGroupingElement = null;
          if(param1 < this._activeTierGroupings.length)
          {
             _loc4_ = this._markerShift > 0 ? int(ENEMY_TIER_GROUPING_SHIFT) : int(ALLY_TIER_GROUPING_SHIFT);
@@ -448,8 +449,9 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
             {
                _loc4_ += this._markerShift > 0 ? -TIER_7_GROUPING_OFFSET : TIER_7_GROUPING_OFFSET;
             }
-            this._activeTierGroupings[param1].x = param3 + _loc4_;
-            this._activeTierGroupings[param1].setTierLevel(param2);
+            _loc5_ = this._activeTierGroupings[param1];
+            _loc5_.x = param3 + _loc4_;
+            _loc5_.setTierLevel(param2);
          }
       }
       
@@ -559,11 +561,6 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       protected function get vehicleMarkers() : Vector.<FCVehicleMarker>
       {
          return this._vehicleMarkers;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

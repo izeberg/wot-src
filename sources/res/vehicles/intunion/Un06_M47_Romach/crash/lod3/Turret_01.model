@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un06_M47_Romach/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/crash/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.165131 -0.088950 -2.462825</min>
+		<max>1.167773 1.374980 1.290959</max>
+	</visibilityBox>
+</root>

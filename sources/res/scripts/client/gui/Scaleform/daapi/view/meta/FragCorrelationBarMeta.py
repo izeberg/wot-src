@@ -2,9 +2,9 @@ from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPICompone
 
 class FragCorrelationBarMeta(BaseDAAPIComponent):
 
-    def as_updateTeamHealthValuesS(self, allyTeamHealth, diffValue, allyTeamHealthPercentage, enemyTeamHealth, enemyTeamHealthPercentage):
+    def as_updateHPS(self, allyHP, diff, allyHPProgress, enemyHP, enemyHPProgress):
         if self._isDAAPIInited():
-            return self.flashObject.as_updateTeamHealthValues(allyTeamHealth, diffValue, allyTeamHealthPercentage, enemyTeamHealth, enemyTeamHealthPercentage)
+            return self.flashObject.as_updateHP(allyHP, diff, allyHPProgress, enemyHP, enemyHPProgress)
 
     def as_updateViewSettingS(self, setting):
         if self._isDAAPIInited():

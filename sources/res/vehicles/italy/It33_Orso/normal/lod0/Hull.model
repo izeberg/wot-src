@@ -5,8 +5,8 @@
 		<min>-1.686719 -0.543226 -3.702957</min>
 		<max>1.686719 0.734828 3.925540</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/italy/It33_Orso/normal/lod0/Hull</nodefullVisual>
 	<parent>vehicles/italy/It33_Orso/normal/lod1/Hull</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It33_Orso/normal/lod0/Hull</nodefullVisual>
 </root>

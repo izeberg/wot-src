@@ -11,6 +11,7 @@ package net.wg.gui.battle.battleloading.renderers
    import net.wg.gui.battle.components.BattleUIComponentsHolder;
    import net.wg.gui.battle.views.stats.constants.PlayerStatusSchemeName;
    import net.wg.gui.components.controls.BadgeComponent;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.icons.PlayerActionMarker;
    import net.wg.infrastructure.interfaces.IColorScheme;
    import net.wg.infrastructure.managers.IColorSchemeManager;
@@ -45,7 +46,7 @@ package net.wg.gui.battle.battleloading.renderers
       
       protected var model:DAAPIVehicleInfoVO;
       
-      protected var selfBg:BattleAtlasSprite;
+      protected var selfBg:Image;
       
       private var _vehicleField:TextField;
       

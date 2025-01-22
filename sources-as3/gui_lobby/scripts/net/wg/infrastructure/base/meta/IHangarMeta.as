@@ -24,6 +24,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setComp7ModifiersVisible(param1:Boolean) : void;
       
+      function as_setBobModifiersVisible(param1:Boolean) : void;
+      
       function as_setVisible(param1:Boolean) : void;
       
       function as_showHelpLayout() : void;
@@ -57,5 +59,7 @@ package net.wg.infrastructure.base.meta
       function as_updateHangarComponents(param1:Array, param2:Array) : void;
       
       function as_setVehicleParams(param1:String, param2:String) : void;
+      
+      function as_updateUiEffectsState(param1:Boolean) : void;
    }
 }

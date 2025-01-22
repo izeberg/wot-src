@@ -150,7 +150,7 @@ package net.wg.gui.lobby.questsWindow
                _loc6_ = null;
                if(this._tasksPool[_loc5_] && this._tasksPool[_loc5_].length > 0)
                {
-                  _loc6_ = this._tasksPool[_loc5_].pop();
+                  _loc6_ = this._tasksPool[_loc5_].shift();
                }
                else
                {

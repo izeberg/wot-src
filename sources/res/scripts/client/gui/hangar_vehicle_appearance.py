@@ -30,7 +30,10 @@ from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.ClientHangarSpace import hangarCFG
 from gui.battle_control.vehicle_getter import hasTurretRotator
 from cgf_components.hangar_camera_manager import HangarCameraManager
+from cgf_components.customizable_model_component import CustomizableModelManager
 import GenericComponents, CGF
+from items import vehicles
+from shared_utils import findFirst
 if TYPE_CHECKING:
     from vehicle_outfit.outfit import Outfit as TOutfit
     from items.vehicles import VehicleDescrType
@@ -145,6 +148,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         self._crashedModelCollisions = None
         self.shadowManager = None
         self.turretRotator = None
+        self.__customizablePrefabsManager = CGF.getManager(self.__spaceId, CustomizableModelManager)
         cfg = hangarCFG()
         self.__currentEmblemsAlpha = cfg['emblems_alpha_undamaged']
         self.__showMarksOnGun = self.settingsCore.getSetting('showMarksOnGun')
@@ -456,9 +460,15 @@ class HangarVehicleAppearance(ScriptGameObject):
             self.__showMarksOnGun = not diff['showMarksOnGun']
             self.refresh()
 
+    def _getStyleIdForUniqueVeh(self, vehDesc):
+        cache = vehicles.g_cache.customization20()
+        styleId, _ = findFirst(lambda (styleId, style): style.isLockedOnVehicle and style.matchVehicleType(vehDesc.type), cache.styles.iteritems(), (0,
+                                                                                                                                                     0))
+        return styleId
+
     def _getActiveOutfit(self, vDesc):
         if g_currentPreviewVehicle.isPresent() and not g_currentPreviewVehicle.isHeroTank:
-            return self.__getVehicleOutfit(g_currentPreviewVehicle.item)
+            return self.__getVehicleOutfit(vehicle=g_currentPreviewVehicle.item, styleId=self._getStyleIdForUniqueVeh(vDesc))
         else:
             if not g_currentVehicle.isPresent():
                 if vDesc is not None:
@@ -719,8 +729,9 @@ class HangarVehicleAppearance(ScriptGameObject):
         self.__updateDecals(outfit)
         self.__updateProjectionDecals(outfit)
         self.__updateSequences(outfit)
+        self.__customizablePrefabsManager.applyTempOutfitToAttachments(self, self.__vDesc, outfit)
         from prefab_attachment_utils import addPrefabAttachments
-        addPrefabAttachments(self, self.__vEntity.typeDescriptor, True)
+        addPrefabAttachments(self, self.__vEntity.typeDescriptor)
         if callback is not None:
             callback()
         return
@@ -846,8 +857,10 @@ class HangarVehicleAppearance(ScriptGameObject):
             modelAnimator.animator.stop()
 
         self.__modelAnimators = []
+        from cgf_components.prefab_attachment_component import PrefabAttachmentComponent
         for go in self.undamagedStateChildren:
-            CGF.removeGameObject(go)
+            if not go.findComponentByType(PrefabAttachmentComponent):
+                CGF.removeGameObject(go)
 
         self.undamagedStateChildren = []
         return
@@ -1052,11 +1065,13 @@ class HangarVehicleAppearance(ScriptGameObject):
                 return progressionOutfit
         return outfit
 
-    def __getVehicleOutfit(self, vehicle):
-        season = g_tankActiveCamouflage.get(vehicle.intCD, vehicle.getAnyOutfitSeason())
-        g_tankActiveCamouflage[vehicle.intCD] = season
-        outfit = vehicle.getOutfit(season)
-        if not outfit:
-            vehicleCD = g_currentPreviewVehicle.item.descriptor.makeCompactDescr()
-            outfit = self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)
-        return outfit
+    def __getVehicleOutfit(self, vehicle, styleId=0):
+        if vehicle.isInInventory:
+            season = g_tankActiveCamouflage.get(vehicle.intCD, vehicle.getAnyOutfitSeason())
+            g_tankActiveCamouflage[vehicle.intCD] = season
+            outfit = vehicle.getOutfit(season)
+            return outfit
+        vehicleCD = g_currentPreviewVehicle.item.descriptor.makeCompactDescr()
+        if vehicle.isOutfitLocked and styleId > 0:
+            return self.customizationService.getOutfitByStyleId(styleId=styleId, vehicleCD=vehicleCD)
+        return self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)

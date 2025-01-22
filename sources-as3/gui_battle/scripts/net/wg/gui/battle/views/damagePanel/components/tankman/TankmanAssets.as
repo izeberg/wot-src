@@ -1,11 +1,11 @@
 package net.wg.gui.battle.views.damagePanel.components.tankman
 {
-   import flash.display.Bitmap;
    import flash.display.DisplayObject;
    import flash.utils.clearTimeout;
    import flash.utils.setTimeout;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.BATTLE_ITEM_STATES;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.views.damagePanel.DamagePanel;
    import net.wg.gui.battle.views.damagePanel.components.DamagePanelItemClickArea;
    import net.wg.gui.battle.views.damagePanel.components.statusIndicator.StatusArrow;
@@ -36,9 +36,9 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
       private static const BUFF_STATUS_ID:int = 1;
        
       
-      private var _critical:Bitmap;
+      private var _critical:BattleAtlasSprite;
       
-      private var _normal:Bitmap;
+      private var _normal:BattleAtlasSprite;
       
       private var _stunIndicator:StunArrow;
       
@@ -62,21 +62,22 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
       
       public function TankmanAssets(param1:String, param2:String, param3:String, param4:int, param5:int, param6:int)
       {
+         var _loc7_:int = 0;
          super();
          this._name = param1;
-         var _loc7_:Class = App.utils.classFactory.getClass(param2);
-         var _loc8_:Class = App.utils.classFactory.getClass(param3);
-         this._normal = new Bitmap(new _loc7_());
-         this._critical = new Bitmap(new _loc8_());
+         this._normal = new BattleAtlasSprite();
+         this._critical = new BattleAtlasSprite();
+         this._normal.imageName = param2;
+         this._critical.imageName = param3;
          this._tankmanHit = new DamagePanelItemClickArea(param1,this._critical.width,this._critical.height,TANKMAN_HIT_AREA_PADDING);
          this._stunIndicator = App.utils.classFactory.getComponent(STUN_ARROW_LINKAGE,StunArrow);
          this._buffIndicator = App.utils.classFactory.getComponent(BUFF_ARROW_LINKAGE,StatusArrow);
-         var _loc9_:int = (DamagePanel.PANEL_WIDTH - param5 * X_STEP >> 1) + X_OFFSET;
-         var _loc10_:int = _loc9_ + X_STEP * param4;
-         var _loc11_:int = Y_POS;
+         _loc7_ = (DamagePanel.PANEL_WIDTH - param5 * X_STEP >> 1) + X_OFFSET;
+         var _loc8_:int = _loc7_ + X_STEP * param4;
+         var _loc9_:int = Y_POS;
          this.state = BATTLE_ITEM_STATES.NORMAL;
-         this._tankmanHit.x = this._critical.x = this._normal.x = _loc10_ + param6;
-         this._tankmanHit.y = this._critical.y = this._normal.y = _loc11_;
+         this._tankmanHit.x = this._critical.x = this._normal.x = _loc8_ + param6;
+         this._tankmanHit.y = this._critical.y = this._normal.y = _loc9_;
          this._stunIndicator.x = this._tankmanHit.x + X_STUN_OFFSET;
          this._stunIndicator.y = this._tankmanHit.y + Y_STUN_OFFSET;
          this._buffIndicator.x = this._tankmanHit.x + X_STUN_OFFSET;
@@ -93,16 +94,14 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
          this._buffIndicator = null;
          this._tankmanHit.dispose();
          this._tankmanHit = null;
-         this._critical.bitmapData.dispose();
          this._critical = null;
-         this._normal.bitmapData.dispose();
          this._normal = null;
          this._isDisposed = true;
       }
       
       public function getDisplayItems() : Vector.<DisplayObject>
       {
-         return new <DisplayObject>[this._critical,this._normal,this._stunIndicator,this._buffIndicator];
+         return new <DisplayObject>[this._stunIndicator,this._buffIndicator,this._critical,this._normal];
       }
       
       public function showDestroyed() : void

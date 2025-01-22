@@ -2,6 +2,8 @@ package net.wg.gui.battle.views.battleTimer
 {
    import flash.display.MovieClip;
    import flash.text.TextField;
+   import net.wg.data.constants.generated.BATTLEATLAS;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.infrastructure.base.meta.IBattleTimerMeta;
    import net.wg.infrastructure.base.meta.impl.BattleTimerMeta;
    import scaleform.gfx.TextFieldEx;
@@ -16,7 +18,9 @@ package net.wg.gui.battle.views.battleTimer
       
       public var background:MovieClip = null;
       
-      public var shadow:MovieClip = null;
+      public var delimiter:BattleAtlasSprite = null;
+      
+      public var shadow:BattleAtlasSprite = null;
       
       private var _isCritical:Boolean = false;
       
@@ -27,8 +31,15 @@ package net.wg.gui.battle.views.battleTimer
       public function BattleAnimationTimer()
       {
          super();
+         this.delimiter.imageName = BATTLEATLAS.TIMER_DELIMITER;
+         this.createBG();
          TextFieldEx.setNoTranslate(this.minutesTF,true);
          TextFieldEx.setNoTranslate(this.secondsTF,true);
+      }
+      
+      protected function createBG() : void
+      {
+         this.shadow.imageName = BATTLEATLAS.TIMER_ANIM_BG;
       }
       
       public function as_setTotalTime(param1:String, param2:String) : void
@@ -72,6 +83,7 @@ package net.wg.gui.battle.views.battleTimer
       
       override protected function onDispose() : void
       {
+         this.delimiter = null;
          this.background = null;
          this.minutesTF = null;
          this.secondsTF = null;

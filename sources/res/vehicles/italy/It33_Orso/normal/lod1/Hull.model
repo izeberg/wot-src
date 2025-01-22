@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/italy/It33_Orso/normal/lod1/Hull</nodefullVisual>
 	<parent>vehicles/italy/It33_Orso/normal/lod2/Hull</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
@@ -8,4 +7,5 @@
 		<max>1.687711 0.734828 3.927981</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It33_Orso/normal/lod1/Hull</nodefullVisual>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz35_Klevets/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.710756 -0.000139 -3.738672</min>
+		<max>1.710756 1.243768 3.513925</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz35_Klevets/normal/lod2/Chassis</nodefullVisual>
+</root>

@@ -111,40 +111,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>DynamicModel</type>
-			<version>1</version>
-			<component>
-				<objectIndex>1</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h00_armory_yard/Jaginskaya/normal/lod0/Jaginskaya_anim.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Hangars/h00_armory_yard/Raccoon_Mattress/normal/lod0/Raccoon_Mattress_anim.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>Animator</type>
 			<version>2</version>
 			<component>
@@ -324,6 +290,40 @@
 					<property>
 						<name>Loop Count</name>
 						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h00_armory_yard/Jaginskaya/normal/lod0/Jaginskaya_anim.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h00_armory_yard/Raccoon_Mattress/normal/lod0/Raccoon_Mattress_anim.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

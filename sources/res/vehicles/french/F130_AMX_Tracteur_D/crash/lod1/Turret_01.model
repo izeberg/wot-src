@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F130_AMX_Tracteur_D/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.403606 -0.001207 -1.939458</min>
+		<max>1.850518 1.220438 1.697187</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F130_AMX_Tracteur_D/crash/lod1/Turret_01</nodefullVisual>
+</root>

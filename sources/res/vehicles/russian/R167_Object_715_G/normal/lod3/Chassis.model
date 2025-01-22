@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.610098 0.042473 -3.625351</min>
+		<max>1.610098 1.058262 3.641441</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R167_Object_715_G/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R167_Object_715_G/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

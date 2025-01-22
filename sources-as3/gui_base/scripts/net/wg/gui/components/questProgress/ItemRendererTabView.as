@@ -12,6 +12,7 @@ package net.wg.gui.components.questProgress
    import net.wg.data.constants.generated.QUEST_PROGRESS_BASE;
    import net.wg.gui.components.questProgress.components.metrics.result.MetricsResultComponentTab;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsLimiterVO;
+   import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleRangeVO;
    import net.wg.gui.components.questProgress.interfaces.components.IMetricsComponent;
    import net.wg.gui.components.questProgress.interfaces.data.IQPInitData;
    import net.wg.gui.components.questProgress.interfaces.data.IQPMetrics;
@@ -112,6 +113,7 @@ package net.wg.gui.components.questProgress
          var _loc4_:int = 0;
          var _loc5_:String = null;
          var _loc6_:int = 0;
+         var _loc7_:QPMetricsVehicleRangeVO = null;
          if(this._metricsCmpnts && param1)
          {
             _loc3_ = param1.length;
@@ -131,7 +133,15 @@ package net.wg.gui.components.questProgress
                }
                if(isMetricAllow(_loc5_))
                {
-                  this._metricsCmpntsMap[_loc5_].update(param1[_loc6_],param2);
+                  if(_loc5_ == QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_TYPE_RANGE)
+                  {
+                     _loc7_ = QPMetricsVehicleRangeVO(param1[_loc6_]);
+                     this._metricsCmpntsMap[_loc5_][_loc7_.vehType].update(param1[_loc6_],param2);
+                  }
+                  else
+                  {
+                     this._metricsCmpntsMap[_loc5_].update(param1[_loc6_],param2);
+                  }
                }
                _loc6_++;
             }
@@ -189,6 +199,7 @@ package net.wg.gui.components.questProgress
          {
             _loc4_ = this.resultMetric;
             _loc2_ = this.setMetricPosition(this.resultMetric,_loc2_,_loc1_);
+            _loc3_ = _loc3_ || _loc4_.visible;
          }
          if(!_loc1_ && _loc4_ && _loc3_)
          {
@@ -219,6 +230,7 @@ package net.wg.gui.components.questProgress
       {
          var _loc5_:IQPMetrics = null;
          var _loc6_:String = null;
+         var _loc7_:QPMetricsVehicleRangeVO = null;
          this._metricsCmpnts = new Vector.<IMetricsComponent>();
          this._metricsCmpntsMap = new Dictionary();
          var _loc3_:IMetricsComponent = null;
@@ -240,7 +252,19 @@ package net.wg.gui.components.questProgress
                _loc3_.init(_loc5_,param2);
                this.addChild(DisplayObject(_loc3_));
                this._metricsCmpnts.push(_loc3_);
-               this._metricsCmpntsMap[_loc4_] = _loc3_;
+               if(_loc4_ == QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_TYPE_RANGE)
+               {
+                  if(!(_loc4_ in this._metricsCmpntsMap))
+                  {
+                     this._metricsCmpntsMap[_loc4_] = new Dictionary();
+                  }
+                  _loc7_ = QPMetricsVehicleRangeVO(_loc5_);
+                  this._metricsCmpntsMap[_loc4_][_loc7_.vehType] = _loc3_;
+               }
+               else
+               {
+                  this._metricsCmpntsMap[_loc4_] = _loc3_;
+               }
             }
          }
          super.doInitMetrics(param1,param2);

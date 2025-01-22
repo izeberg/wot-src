@@ -123,6 +123,8 @@ package net.wg.data.constants.generated
       
       public static const TOOLTIP_QUEST_OR_CONDITION_BLOCK_LINKAGE:String = "QuestOrConditionBlockUI";
       
+      public static const TOOLTIP_BOB_TEAM_PROGRESS_BLOCK:String = "BobTeamProgressBlockUI";
+      
       public static const ALIGN_LEFT:String = "left";
       
       public static const ALIGN_RIGHT:String = "right";

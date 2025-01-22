@@ -14,19 +14,11 @@ package net.wg.gui.lobby.questsWindow.components
       private static const MAX_TOOLTIP_WIDTH:int = 300;
       
       private static const TEXT_FIELD_PADDING:int = 5;
-      
-      private static const WARNING_STR:String = "Warn: not one items can be visible. Full items text: ";
        
       
-      public var textTf:TextField = null;
+      public var textTf:TextField;
       
-      protected var _showTooltip:Boolean = true;
-      
-      private var _tooltip:String = "";
-      
-      private var _specialTooltipArgs:Array = null;
-      
-      private var _isTooltipSpecial:Boolean = false;
+      private var _tooltip:String;
       
       private var _wulfTooltipArg:String = "";
       
@@ -40,6 +32,8 @@ package net.wg.gui.lobby.questsWindow.components
       
       private var _linesLimit:int = -1;
       
+      private var _showTooltip:Boolean = true;
+      
       public function QuestTextAwardBlock()
       {
          super();
@@ -47,36 +41,50 @@ package net.wg.gui.lobby.questsWindow.components
       
       override public function setData(param1:Object) : void
       {
+         var _loc10_:int = 0;
          var _loc2_:TextBlockVO = new TextBlockVO(param1);
          var _loc3_:Vector.<String> = _loc2_.items;
          var _loc4_:String = _loc2_.separator;
          var _loc5_:String = _loc3_.join(_loc4_) + _loc2_.endline;
+         var _loc6_:Number = this.textTf.height;
+         var _loc7_:int = _loc4_.length;
+         var _loc8_:String = _loc2_.ellipsis;
+         var _loc9_:int = _loc3_.length;
          this._linesLimit = _loc2_.linesLimit;
-         if(this.calcVisibleItemsLen(_loc3_,_loc5_,_loc2_.ellipsis,_loc4_.length) == 0)
+         this.textTf.htmlText = _loc5_;
+         if(!this.fixedMode || !this.lineLimit)
          {
-            DebugUtils.LOG_WARNING(WARNING_STR + _loc5_);
+            while(this.textTf.textHeight + TEXT_FIELD_PADDING > _loc6_)
+            {
+               this.textTf.htmlText = _loc5_.substr(0,this.getItemsStringLen(_loc3_,--_loc9_,_loc7_)) + _loc8_;
+               this._showTooltip = true;
+            }
+         }
+         else
+         {
+            _loc10_ = this.textTf.length;
+            App.utils.commons.truncateHtmlTextMultiline(this.textTf,_loc5_,this.lineLimit,this.lineEnd);
+            this._showTooltip = _loc10_ != this.textTf.length;
+         }
+         if(_loc9_ == 0)
+         {
+            DebugUtils.LOG_WARNING("Warn: not one items can be visible. Full items text: " + _loc5_);
          }
          else
          {
             App.utils.commons.updateTextFieldSize(this.textTf,false,true);
-            this.updateSize();
+            setSize(width,actualHeight);
             if(this._showTooltip)
             {
                this.textTf.addEventListener(MouseEvent.ROLL_OVER,this.onTextTfRollOverHandler);
                this.textTf.addEventListener(MouseEvent.ROLL_OUT,this.onTextTfRollOutHandler);
                this._isTooltipComplex = StringUtils.isNotEmpty(_loc2_.complexTooltip);
-               this._isTooltipSpecial = StringUtils.isNotEmpty(_loc2_.specialTooltip);
                this._isTooltipWulf = StringUtils.isNotEmpty(_loc2_.wulfTooltip);
                this._isTypedTooltip = StringUtils.isNotEmpty(_loc2_.typedTooltip);
                if(this._isTooltipWulf)
                {
                   this._tooltip = _loc2_.wulfTooltip;
                   this._wulfTooltipArg = _loc2_.wulfTooltipArg;
-               }
-               else if(this._isTooltipSpecial)
-               {
-                  this._tooltip = _loc2_.specialTooltip;
-                  this._specialTooltipArgs = _loc2_.specialTooltipArgs;
                }
                else if(this._isTooltipComplex)
                {
@@ -101,40 +109,7 @@ package net.wg.gui.lobby.questsWindow.components
          this.textTf.removeEventListener(MouseEvent.ROLL_OVER,this.onTextTfRollOverHandler);
          this.textTf.removeEventListener(MouseEvent.ROLL_OUT,this.onTextTfRollOutHandler);
          this.textTf = null;
-         if(this._specialTooltipArgs != null)
-         {
-            this._specialTooltipArgs.splice(0,this._specialTooltipArgs.length);
-            this._specialTooltipArgs = null;
-         }
          super.onDispose();
-      }
-      
-      protected function updateSize() : void
-      {
-         setSize(width,actualHeight);
-      }
-      
-      protected function calcVisibleItemsLen(param1:Vector.<String>, param2:String, param3:String, param4:int) : int
-      {
-         var _loc7_:int = 0;
-         var _loc5_:Number = this.textTf.height;
-         var _loc6_:int = param1.length;
-         this.textTf.htmlText = param2;
-         if(!this.fixedMode || !this.lineLimit)
-         {
-            while(this.textTf.textHeight + TEXT_FIELD_PADDING > _loc5_)
-            {
-               this.textTf.htmlText = param2.substr(0,this.getItemsStringLen(param1,--_loc6_,param4)) + param3;
-               this._showTooltip = true;
-            }
-         }
-         else
-         {
-            _loc7_ = this.textTf.length;
-            App.utils.commons.truncateHtmlTextMultiline(this.textTf,param2,this.lineLimit,this.lineEnd);
-            this._showTooltip = _loc7_ != this.textTf.length;
-         }
-         return _loc6_;
       }
       
       private function getItemsStringLen(param1:Vector.<String>, param2:int, param3:int) : int

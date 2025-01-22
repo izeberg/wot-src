@@ -6,15 +6,17 @@ package net.wg.gui.lobby.messengerBar
    import flash.events.EventPhase;
    import flash.events.MouseEvent;
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import net.wg.data.Aliases;
    import net.wg.data.constants.Directions;
    import net.wg.data.constants.Errors;
    import net.wg.data.constants.Linkages;
+   import net.wg.data.constants.UniversalBtnStylesConst;
    import net.wg.data.constants.generated.CONTACTS_ALIASES;
    import net.wg.data.constants.generated.SESSION_STATS_CONSTANTS;
    import net.wg.data.constants.generated.VEHICLE_COMPARE_CONSTANTS;
    import net.wg.gui.components.advanced.BlinkingButton;
-   import net.wg.gui.components.controls.IconTextBigButton;
+   import net.wg.gui.components.controls.universalBtn.UniversalBtn;
    import net.wg.gui.events.MessengerBarEvent;
    import net.wg.gui.lobby.messengerBar.carousel.ChannelCarousel;
    import net.wg.gui.lobby.vehicleCompare.controls.VehicleCompareAnim;
@@ -33,11 +35,14 @@ package net.wg.gui.lobby.messengerBar
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.utils.Constraints;
+   import scaleform.clik.utils.Padding;
    
    public class MessengerBar extends MessengerBarMeta implements IMessengerBarMeta, IDAAPIModule, IHelpLayoutComponent
    {
       
       public static const BAR_VISIBLE_HEIGHT:int = 35;
+      
+      public static const GRAPHIC_OPT_HEIGHT:int = 36;
       
       private static const BAR_HEIGHT:int = 45;
       
@@ -96,13 +101,19 @@ package net.wg.gui.lobby.messengerBar
       private static const HELP_LAYOUT_ID_SESSION_STATS_BUTTON:String = "sessionStatsButton";
       
       private static const HELP_LAYOUT_ID_NOTIFICATIONS_BUTTON:String = "notificationsButton";
+      
+      private static const BUTTON_SOUND_ID:String = "channelButton";
+      
+      private static const BUTTON_SOUND_TYPE:String = "messengerButton";
+      
+      private static const BUTTON_DISABLED_FILL_PADDING:Padding = new Padding(2,1,2,2);
        
       
       public var channelCarousel:ChannelCarousel;
       
       public var notificationListBtn:NotificationListButton;
       
-      public var channelButton:IconTextBigButton;
+      public var channelButton:UniversalBtn;
       
       public var contactsListBtn:ButtonWithCounter;
       
@@ -161,9 +172,15 @@ package net.wg.gui.lobby.messengerBar
          constraints = new Constraints(this,ConstrainMode.REFLOW);
       }
       
+      override public function getRectangles() : Vector.<Rectangle>
+      {
+         return new <Rectangle>[new Rectangle(0,App.appHeight - GRAPHIC_OPT_HEIGHT,App.appWidth,GRAPHIC_OPT_HEIGHT)];
+      }
+      
       override protected function onPopulate() : void
       {
          super.onPopulate();
+         App.graphicsOptimizationMgr.register(this);
          this._rightSideBtnsOrder = new <IDisplayObject>[this.notificationListBtn,this.sessionStatsBtn,this.vehicleCompareCartBtn];
          registerFlashComponentS(this.notificationListBtn,Aliases.NOTIFICATION_LIST_BUTTON);
          registerFlashComponentS(this.contactsListBtn,Aliases.CONTACTS_LIST_BUTTON);
@@ -233,8 +250,13 @@ package net.wg.gui.lobby.messengerBar
          this.animPlacer.mouseEnabled = false;
          this.animPlacer.mouseChildren = false;
          var _loc1_:Boolean = App.globalVarsMgr.isInRoamingS();
+         App.utils.universalBtnStyles.setStyle(this.channelButton,UniversalBtnStylesConst.STYLE_HEAVY_CRYSTAL);
          this.channelButton.enabled = !_loc1_;
          this.channelButton.tooltip = TOOLTIPS.LOBY_MESSENGER_CHANNELS_BUTTON;
+         this.channelButton.useHtmlText = true;
+         this.channelButton.disabledFillPadding = this.sessionStatsBtn.disabledFillPadding = this.vehicleCompareCartBtn.disabledFillPadding = this.contactsListBtn.disabledFillPadding = BUTTON_DISABLED_FILL_PADDING;
+         this.channelButton.soundId = this.sessionStatsBtn.soundId = this.vehicleCompareCartBtn.soundId = this.contactsListBtn.soundId = BUTTON_SOUND_ID;
+         this.channelButton.soundType = this.sessionStatsBtn.soundType = this.vehicleCompareCartBtn.soundType = this.contactsListBtn.soundType = BUTTON_SOUND_TYPE;
          this.fakeChnlBtn.visible = _loc1_;
          this.fakeChnlBtn.addEventListener(MouseEvent.ROLL_OVER,this.onFakeChnlBtnRollOverHandler);
          this.fakeChnlBtn.addEventListener(MouseEvent.ROLL_OUT,this.onFakeChnlBtnRollOutHandler);
@@ -258,12 +280,12 @@ package net.wg.gui.lobby.messengerBar
          {
             if(isInvalid(InvalidationType.DATA))
             {
-               this.channelButton.htmlIconStr = this._initData.channelsHtmlIcon;
-               this.contactsListBtn.icon = this._initData.contactsHtmlIcon;
+               this.channelButton.iconSource = this._initData.channelsHtmlIcon;
+               this.contactsListBtn.iconSource = this._initData.contactsHtmlIcon;
                this.contactsListBtn.tooltip = this._initData.contactsTooltip;
-               this.vehicleCompareCartBtn.icon = this._initData.vehicleCompareHtmlIcon;
+               this.vehicleCompareCartBtn.iconSource = this._initData.vehicleCompareHtmlIcon;
                this.vehicleCompareCartBtn.tooltip = this._initData.vehicleCompareTooltip;
-               this.sessionStatsBtn.icon = this._initData.sessionStatsHtmlIcon;
+               this.sessionStatsBtn.iconSource = this._initData.sessionStatsHtmlIcon;
             }
             if(isInvalid(INV_REFERRAL_BUTTON))
             {
@@ -383,6 +405,12 @@ package net.wg.gui.lobby.messengerBar
          }
       }
       
+      public function as_setReferralBtnLimitIndication(param1:Boolean) : void
+      {
+         this._initData.isReferralScoresLimitIndication = param1;
+         invalidate(INV_REFERRAL_BUTTON);
+      }
+      
       public function as_setReferralButtonEnabled(param1:Boolean) : void
       {
          this.referralBtn.enabled = param1;
@@ -430,12 +458,6 @@ package net.wg.gui.lobby.messengerBar
             this._vehicleCmpBtnVisible = param1;
             invalidate(INV_VEHICLE_CMP_VISIBLE);
          }
-      }
-      
-      public function as_setReferralBtnLimitIndication(param1:Boolean) : void
-      {
-         this._initData.isReferralScoresLimitIndication = param1;
-         invalidate(INV_REFERRAL_BUTTON);
       }
       
       public function getLayoutProperties() : Vector.<HelpLayoutVO>

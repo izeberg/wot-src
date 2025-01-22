@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.268487 -0.329246 -1.346469</min>
+		<max>0.268331 0.353837 5.371680</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un02_Merkava_LP/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un02_Merkava_LP/crash/lod2/Gun_02</nodefullVisual>
+</root>

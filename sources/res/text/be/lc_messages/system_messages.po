@@ -595,6 +595,12 @@ msgstr ""
 msgid "blueprints/switch_on"
 msgstr "Чарцяжы тэхнікі зноў даступныя."
 
+msgid "bob/claimeReward/server_error"
+msgstr "Памылка сервера"
+
+msgid "bob/claimeReward/server_error/COOLDOWN"
+msgstr "Дзеянне недаступнае. Дачакайце заканчэння бягучай аперацыі."
+
 msgid "bonuses/booster/value"
 msgstr "%(name)s (×%(count)d)"
 
@@ -2510,6 +2516,66 @@ msgstr ""
 msgid "optionalDevices_remove/error"
 msgstr "Памылка наладжвання абсталявання. Паспрабуйце яшчэ раз пазней."
 
+msgid "paragons/branchResetAvailable/text"
+msgstr ""
+"Скідвайце галіны тэхнікі, прасоўвайце па прагрэсіі і забірайце каштоўныя "
+"ўзнагароды."
+
+msgid "paragons/branchResetAvailable/title"
+msgstr "Даступны скід галіны!"
+
+msgid "paragons/chapterCompleted/text"
+msgstr ""
+"Атрыманы медаль за завяршэнне сезона&nbsp;%(chapter_name)s "
+"праекта&nbsp;«Арбіта»."
+
+msgid "paragons/chapterCompleted/title"
+msgstr "Віншуем!"
+
+msgid "paragons/firstMainRewardBadgeAchieved/text"
+msgstr ""
+"Атрыманы медаль за першую\n"
+"машыну ХІ узроўню."
+
+msgid "paragons/firstMainRewardBadgeAchieved/title"
+msgstr "Віншуем!"
+
+msgid "paragons/newStageAvailable/text"
+msgstr "Праходзьце этапы і апрабуйце новую тэхніку ў баі."
+
+msgid "paragons/newStageAvailable/title"
+msgstr "Даступны новы сезон!"
+
+msgid "paragons/newVehicleAvailable/text"
+msgstr "Унікальная тэхніка ХІ узроўню стала даступнай ва ўзнагародах."
+
+msgid "paragons/newVehicleAvailable/title"
+msgstr "Новая тэхніка ў праекце «Арбіта»!"
+
+msgid "paragons/projectAvailable/text"
+msgstr "Здабывайце ачкі прагрэсіі і атрымлівайце ўнікальныя ўзнагароды."
+
+msgid "paragons/projectAvailable/title"
+msgstr "Даступны праект «Арбіта»!"
+
+msgid "paragons/projectContinuing/text"
+msgstr "Усе функцыі адноўлены і працуюць у штатным рэжыме."
+
+msgid "paragons/projectContinuing/title"
+msgstr "Праект «Арбіта» адноўлены!"
+
+msgid "paragons/to/awards/button"
+msgstr "Да ўзнагарод"
+
+msgid "paragons/to/project/button"
+msgstr "Да праекта"
+
+msgid "paragons/to/researchments/button"
+msgstr "Да Дрэва даследаванняў"
+
+msgid "paragons/to/stages/button"
+msgstr "Да сезонаў"
+
 msgid "parentControl/linkText"
 msgstr "Пазначыць дату"
 
@@ -2666,6 +2732,32 @@ msgstr "Зараз выбраць задачу немагчыма. Чакайц�
 
 msgid "personalMissions/select/success"
 msgstr "Выбар баявых задач выкананы. Выбраныя баявыя задачы: %(questNames)s."
+
+msgid "personalMissions/switch/campaign/disabled"
+msgstr "Кампанія часова недаступная для выканання."
+
+msgid "personalMissions/switch/campaign/enabled"
+msgstr "Кампанія зноў даступная для выканання."
+
+msgid "personalMissions/switch/campaign/header"
+msgstr "Кампанія «%(campaignTitle)s»"
+
+msgid "personalMissions/switch/operation/disabled"
+msgstr "Аперацыя часова недаступная для выканання."
+
+msgid "personalMissions/switch/operation/enabled"
+msgstr "Аперацыя зноў даступная для выканання."
+
+msgid "personalMissions/switch/operation/header"
+msgstr "Аперацыя «%(operationTitle)s»"
+
+msgid "personalMissions/switch/quest/disabled"
+msgstr ""
+"Задача «%(questTitle)s» часова недаступная.\n"
+"Да выканання былі прыняты задачы: %(selectedQuestTitles)s"
+
+msgid "personalMissions/switch/quest/header"
+msgstr "Задача «%(questTitle)s»"
 
 msgid "personalMissions/tankmenGain"
 msgstr "Атрымана ў распараджэнне: танкістка"
@@ -2826,6 +2918,9 @@ msgstr "Выбраная машына не можа браць удзел у г�
 
 msgid "prebattle/teamInvalid/observers"
 msgstr "Каманда не можа складацца толькі з назіральнікаў."
+
+msgid "prebattle/vehicleInvalid/bobOnly"
+msgstr "Выбраная машына прыдатная толькі для рэжыму «Бітва блогераў»."
 
 msgid "prebattle/vehicleInvalid/epicOnly"
 msgstr "Выбраная машына прыдатная толькі для рэжыму «Лінія фронту»."
@@ -4282,10 +4377,10 @@ msgstr ""
 "%(unspentXP)s, вольнага досведу %(freeXP)s."
 
 msgid "vehiclePostProgression/buyPairModification/body"
-msgstr "Мадыфікацыя %(modification)s для %(vehicle)s паспяхова праведзена."
+msgstr "Мадэрнізацыя %(modification)s для %(vehicle)s паспяхова праведзена."
 
 msgid "vehiclePostProgression/buyPairModification/title"
-msgstr "Правядзенне мадыфікацыі"
+msgstr "Правядзенне мадэрнізацыі"
 
 msgid "vehiclePostProgression/changeSlotCategory/body"
 msgstr "Катэгорыя %(category)s для другога слота %(vehicle)s прызначана."
@@ -4297,16 +4392,16 @@ msgid "vehiclePostProgression/creditsSpent"
 msgstr "Патрачана крэдытаў: %(value)s."
 
 msgid "vehiclePostProgression/discardAllPairsModification/body"
-msgstr "Усе парныя мадыфікацыі для %(vehicle)s скасаваны."
+msgstr "Усе парныя мадэрнізацыі для %(vehicle)s скасаваны."
 
 msgid "vehiclePostProgression/discardPairModification/body"
-msgstr "Мадыфікацыя %(modification)s для %(vehicle)s скасавана."
+msgstr "Мадэрнізацыя %(modification)s для %(vehicle)s скасавана."
 
 msgid "vehiclePostProgression/discardPairModification/title"
-msgstr "Скасаванне мадыфікацыі"
+msgstr "Скасаванне мадэрнізацыі"
 
 msgid "vehiclePostProgression/discardPairsModification/body"
-msgstr "Мадыфікацыі %(modifications)s для %(vehicle)s скасаваны."
+msgstr "Мадэрнізацыі %(modifications)s для %(vehicle)s скасаваны."
 
 msgid ""
 "vehiclePostProgression/discardPairsModification/modifications/separator"
@@ -4319,26 +4414,26 @@ msgid "vehiclePostProgression/freeExperienceSpent"
 msgstr "Патрачана вольнага досведу: %(value)s."
 
 msgid "vehiclePostProgression/modificationProcessorError/body"
-msgstr "Памылка схемы мадыфікацый. Паспрабуйце пазней."
+msgstr "Памылка схемы мадэрнізацыі. Паспрабуйце пазней."
 
 msgid "vehiclePostProgression/modificationProcessorError/title"
 msgstr "Памылка"
 
 msgid "vehiclePostProgression/researchStep/body"
 msgstr ""
-"Базавая мадыфікацыя %(level)s узроўню для %(vehicle)s даследавана і "
+"Базавая мадэрнізацыя %(level)s узроўню для %(vehicle)s даследавана і "
 "праведзена."
 
 msgid "vehiclePostProgression/researchSteps/body"
 msgstr ""
-"Базавыя мадыфікацыі %(levels)sузроўню для %(vehicle)s даследаваны і "
+"Базавыя мадэрнізацыі %(levels)sузроўню для %(vehicle)s даследаваны і "
 "праведзены."
 
 msgid "vehiclePostProgression/researchSteps/levels/separator"
 msgstr ", "
 
 msgid "vehiclePostProgression/researchSteps/title"
-msgstr "Даследаванне мадыфікацыі"
+msgstr "Даследаванне мадэрнізацыі"
 
 msgid "vehiclePostProgression/setSlotCategory/body"
 msgstr "Катэгорыя %(category)s для другога слота %(vehicle)s прызначана."
@@ -4365,7 +4460,7 @@ msgid "vehiclePostProgression/unlockFeature/shells_consumables_switch/title"
 msgstr "Неабходны рыштунак"
 
 msgid "vehiclePostProgression/vehiclesUnlockPostProgression/single/body"
-msgstr "Атрыманы доступ да схемы мадыфікацый для %(vehicle)s."
+msgstr "Атрыманы доступ да схемы мадэрнзацыі для %(vehicle)s."
 
 msgid "vehiclePostProgression/vehiclesUnlockPostProgression/title"
 msgstr "Палявая мадэрнізацыя"
@@ -4373,9 +4468,9 @@ msgstr "Палявая мадэрнізацыя"
 msgid ""
 "vehiclePostProgression/vehiclesUnlockPostProgression/welcomeUnlock/body"
 msgstr ""
-"Атрыманы доступ да схемы мадыфікацый тэхнікі. Вы можаце выканаць больш "
+"Атрыманы доступ да схемы мадэрнізацыі тэхнікі. Вы можаце выканаць больш "
 "тонкую ролевую наладку вашых машын і змяніць ТТХ з дапамогай розных "
-"мадыфікацый."
+"мадэрнізацый."
 
 msgid "vehicle_buy/invalid_vehicle"
 msgstr "Не ўдалося купіць «%(vehName)s». Памылковая машына."
@@ -4490,10 +4585,10 @@ msgstr ""
 "аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
 
 msgid "vehicle_repair/credits_error"
-msgstr "Каб адрамантаваць «%(vehName)s», не стае «%(needed)s» крэдытаў."
+msgstr "Каб адрамантаваць «%(vehName)s», не стае %(needed)s."
 
 msgid "vehicle_repair/not_enough_credits"
-msgstr "Каб адрамантаваць «%(vehName)s», не стае «%(needed)s» крэдытаў."
+msgstr "Каб адрамантаваць «%(vehName)s», не стае %(needed)s."
 
 msgid "vehicle_repair/server_error"
 msgstr "Не ўдалося адрамантаваць «%(vehName)s». Паспрабуйце пазней."

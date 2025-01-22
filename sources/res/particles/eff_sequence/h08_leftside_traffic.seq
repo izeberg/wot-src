@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>68.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>bus</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0071_LAZ695B_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>9.566668</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -4.887930</inTangent>
+				<outTangent>0.000000 0.000000 -4.887930</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>62.000004</startTime>
+				<value>0.000000 0.000000 -256.290466</value>
+				<inTangent>-0.000000 -0.000000 -4.887930</inTangent>
+				<outTangent>-0.000000 -0.000000 -4.887930</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 5.921052 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>truck</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0019_Truck.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -5.608106</inTangent>
+				<outTangent>0.000000 0.000000 -5.608106</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>45.700005</startTime>
+				<value>0.000000 0.000000 -256.290466</value>
+				<inTangent>-0.000000 -0.000000 -5.608106</inTangent>
+				<outTangent>-0.000000 -0.000000 -4.709666</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 5.921052 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gaz_black</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0055_GAZ_M21_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>37.966667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -9.466738</inTangent>
+				<outTangent>0.000000 0.000000 -9.466738</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>54.466671</startTime>
+				<value>0.000000 0.000000 -156.201202</value>
+				<inTangent>0.000000 0.000000 -8.431250</inTangent>
+				<outTangent>0.000000 0.000000 -8.431250</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>68.000000</startTime>
+				<value>0.000000 0.000000 -256.290466</value>
+				<inTangent>-0.000000 -0.000000 -7.395761</inTangent>
+				<outTangent>-0.000000 -0.000000 -7.395761</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 5.921052 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -37,11 +37,6 @@ package net.wg.gui.battle.views.damagePanel.components
          return this._itemName;
       }
       
-      public function set itemName(param1:String) : void
-      {
-         this._itemName = param1;
-      }
-      
       public function isDisposed() : Boolean
       {
          return this._disposed;

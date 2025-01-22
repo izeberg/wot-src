@@ -43,3 +43,15 @@ msgstr "Получено имущество:"
 
 msgid "serviceChannelMessages/lootbox/openedLootBoxes/header"
 msgstr "Открытие контейнеров"
+
+msgid "serviceChannelMessages/nyMachine/autoopen/header"
+msgstr "Автоиспользование жетонов"
+
+msgid "serviceChannelMessages/nyMachine/autoopen/machineCoin"
+msgstr "Жетоны %(coins)s"
+
+msgid "serviceChannelMessages/nyMachine/autoopen/rewardsTitle"
+msgstr "Получено имущество:"
+
+msgid "serviceChannelMessages/nyMachine/autoopen/writeOff"
+msgstr "Списано:"

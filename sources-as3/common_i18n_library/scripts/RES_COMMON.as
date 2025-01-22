@@ -15,6 +15,8 @@ package
       
       public static const MAPS_ICONS_ACHIEVEMENTS_BG:String = "../maps/icons/achievements/bg.png";
       
+      public static const MAPS_ICONS_BATTLE_STATS_BG:String = "../maps/icons/battle/stats/bg.png";
+      
       public static const MAPS_ICONS_BATTLEMATTERS_ENTRYPOINT_BG:String = "../maps/icons/battleMatters/entryPoint/bg.png";
       
       public static const MAPS_ICONS_BATTLEPASS_OFF_SEASON_BG:String = "../maps/icons/battlePass/off_season/bg.png";
@@ -24,6 +26,8 @@ package
       public static const MAPS_ICONS_BATTLEROYALE_BATTLERESULT_BG:String = "../maps/icons/battleRoyale/battleResult/bg.png";
       
       public static const MAPS_ICONS_BLUEPRINTS_FRAGMENT_CONVERSION_BG:String = "../maps/icons/blueprints/fragment/conversion/bg.png";
+      
+      public static const MAPS_ICONS_BOB_HANGAR_PRIMETIMEVIEW_BG:String = "../maps/icons/bob/hangar/primeTimeView/bg.png";
       
       public static const MAPS_ICONS_COLLECTIONS_INTRO_BG:String = "../maps/icons/collections/intro/bg.png";
       
@@ -63,6 +67,18 @@ package
       
       public static const MAPS_ICONS_MARATHON_REWARDWINDOW_BG:String = "../maps/icons/marathon/rewardWindow/bg.png";
       
+      public static const MAPS_ICONS_PERSONALMISSIONS3_INTROVIEW_BG:String = "../maps/icons/personalMissions3/IntroView/bg.png";
+      
+      public static const MAPS_ICONS_PERSONALMISSIONS3_INTROVIEW_VIDEOBUTTON_BG:String = "../maps/icons/personalMissions3/IntroView/videoButton/bg.png";
+      
+      public static const MAPS_ICONS_PERSONALMISSIONS3_OPERATIONSVIEW_BG:String = "../maps/icons/personalMissions3/OperationsView/bg.png";
+      
+      public static const MAPS_ICONS_PERSONALMISSIONS3_QUESTSVIEW_BG:String = "../maps/icons/personalMissions3/QuestsView/bg.png";
+      
+      public static const MAPS_ICONS_PERSONALMISSIONS3_REWARDSVIEW_BG:String = "../maps/icons/personalMissions3/RewardsView/bg.png";
+      
+      public static const MAPS_ICONS_PERSONALMISSIONS3_TOOLTIPS_LASTOPERATIONTOOLTIP_BG:String = "../maps/icons/personalMissions3/tooltips/LastOperationTooltip/bg.png";
+      
       public static const MAPS_ICONS_PM_ANNOUNCE_TOOLTIPS_NEW_BG:String = "../maps/icons/pm_announce/tooltips/new/bg.png";
       
       public static const MAPS_ICONS_PM_ANNOUNCE_TOOLTIPS_OLD_BG:String = "../maps/icons/pm_announce/tooltips/old/bg.png";
@@ -70,8 +86,6 @@ package
       public static const MAPS_ICONS_RANKEDBATTLES_AWARDS_BG:String = "../maps/icons/rankedBattles/awards/bg.png";
       
       public static const MAPS_ICONS_RESOURCEWELL_INTRO_BG:String = "../maps/icons/resourceWell/intro/bg.png";
-      
-      public static const MAPS_ICONS_SENIORITYAWARDS_NOTIFICATION_BG:String = "../maps/icons/seniorityAwards/notification/bg.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_SMALL_USSR_DOG_1:String = "../maps/icons/tankmen/icons/small/ussr-dog-1.png";
       

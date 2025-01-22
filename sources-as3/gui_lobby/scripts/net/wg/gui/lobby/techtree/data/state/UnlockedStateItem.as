@@ -12,9 +12,9 @@ package net.wg.gui.lobby.techtree.data.state
       
       private var _availableForBuy:StateProperties;
       
-      public function UnlockedStateItem(param1:StateProperties, param2:StateProperties, param3:uint = 4)
+      public function UnlockedStateItem(param1:StateProperties, param2:StateProperties, param3:uint = 4, param4:uint = 1)
       {
-         super(param3,param1);
+         super(param3,param1,param4);
          this._availableForBuy = param2;
       }
       

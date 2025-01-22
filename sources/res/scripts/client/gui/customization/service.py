@@ -34,6 +34,7 @@ from vehicle_systems.stricted_loading import makeCallbackWeak
 from vehicle_systems.camouflages import getStyleProgressionOutfit
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from cgf_components.hangar_camera_manager import HangarCameraManager
+from cgf_components.c11n_logic_manager import C11nLogicManager
 if typing.TYPE_CHECKING:
     from gui.customization.constants import CustomizationModeSource
     from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationModes, CustomizationTabs
@@ -79,6 +80,10 @@ class _ServiceHelpersMixin(object):
         vehDesc = VehicleDescr(vehicleCD)
         decals = createNationalEmblemComponents(vehDesc)
         component = CustomizationOutfit(decals=decals)
+        return self.itemsFactory.createOutfit(component=component, vehicleCD=vehicleCD)
+
+    def getOutfitByStyleId(self, vehicleCD, styleId):
+        component = CustomizationOutfit(styleId=styleId)
         return self.itemsFactory.createOutfit(component=component, vehicleCD=vehicleCD)
 
     def tryOnOutfit(self, outfit):
@@ -271,9 +276,13 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         callback = self.__showCustomizationKwargs.get('callback', None)
         loadCallback = lambda : self.__loadCustomization(vehInvID, callback, season, modeId, tabId)
         if self.__showCustomizationCallbackId is None:
+            customizationLogicManager = CGF.getManager(self.hangarSpace.spaceID, C11nLogicManager)
+            if customizationLogicManager:
+                customizationLogicManager.onC11nEnter()
             cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
             if cameraManager:
-                cameraManager.switchByCameraName('Customization')
+                resetTransform = customizationLogicManager is None
+                cameraManager.switchByCameraName('Customization', resetTransform=resetTransform)
             ClientSelectableCameraObject.deselectAll()
             self.hangarSpace.space.getVehicleEntity().onSelect()
             self.__moveHangarVehicleToCustomizationRoom()
@@ -283,10 +292,14 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
 
     def closeCustomization(self):
         if self.hangarSpace.space is not None:
+            customizationLogicManager = CGF.getManager(self.hangarSpace.spaceID, C11nLogicManager)
+            if customizationLogicManager:
+                customizationLogicManager.onC11nExit()
             self.hangarSpace.space.turretAndGunAngles.reset()
             cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
             if cameraManager:
-                cameraManager.switchToTank()
+                resetTransform = customizationLogicManager is None
+                cameraManager.switchToTank(resetTransform=resetTransform)
         self.__destroyCtx()
         self.onVisibilityChanged(False)
         return

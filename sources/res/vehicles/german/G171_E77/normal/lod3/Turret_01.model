@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G171_E77/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G171_E77/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.343986 -0.032880 -2.066312</min>
+		<max>1.354947 1.308590 1.585609</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

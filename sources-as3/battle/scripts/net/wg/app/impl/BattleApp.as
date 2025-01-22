@@ -9,6 +9,7 @@ package net.wg.app.impl
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
    import net.wg.data.constants.generated.ATLAS_CONSTANTS;
    import net.wg.data.constants.generated.LAYER_NAMES;
+   import net.wg.gui.battle.bob.data.BobDAAPIVehicleInfoVO;
    import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO;
    import net.wg.gui.battle.epicRandom.VO.daapi.EpicRandomDAAPIVehicleInfoVO;
    import net.wg.gui.battle.ranked.VO.daapi.RankedDAAPIVehicleInfoVO;
@@ -20,11 +21,11 @@ package net.wg.app.impl
    import net.wg.gui.components.containers.TooltipContainer;
    import net.wg.gui.components.controls.VO.BadgeVisualVO;
    import net.wg.gui.components.questProgress.data.QPProgressVO;
-   import net.wg.gui.components.questProgress.data.metrics.QPMetricsLimiterVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsRangeVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsSimpleVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsSimpleValueVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsTimerVO;
+   import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleRangeVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleVO;
    import net.wg.infrastructure.interfaces.ICursorManager;
    import net.wg.infrastructure.managers.GlobalVarsManager;
@@ -139,9 +140,11 @@ package net.wg.app.impl
          registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsSimpleVO",QPMetricsSimpleVO);
          registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsTimerVO",QPMetricsTimerVO);
          registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsVehicleVO",QPMetricsVehicleVO);
-         registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsLimiterVO",QPMetricsLimiterVO);
+         registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsRangeVO",QPMetricsRangeVO);
+         registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsVehicleRangeVO",QPMetricsVehicleRangeVO);
          registerClassAlias("net.wg.gui.components.controls.VO.BadgeVisualVO",BadgeVisualVO);
          registerClassAlias("net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO",Comp7DAAPIVehicleInfoVO);
+         registerClassAlias("net.wg.gui.battle.bob.data.BobDAAPIVehicleInfoVO",BobDAAPIVehicleInfoVO);
       }
       
       override protected function onPopUpManagerInit() : void

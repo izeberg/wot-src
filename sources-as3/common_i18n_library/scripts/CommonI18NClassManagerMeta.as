@@ -15,6 +15,8 @@ package
       
       public static const BATTLE_ROYALE:Class = BATTLE_ROYALE;
       
+      public static const BOB:Class = BOB;
+      
       public static const BOOTCAMP:Class = BOOTCAMP;
       
       public static const CHAT:Class = CHAT;

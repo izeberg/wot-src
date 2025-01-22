@@ -13,16 +13,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>onActivate</name>
-			<UUID>055fc6f6-7157-493d-bcb2-2f72b68f2d96</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
-			<name>onCooldown</name>
-			<UUID>c7f0cec2-a321-4153-8d22-cf65ce98301d</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
 			<name>turret</name>
 			<UUID>3bb568d4-5d82-4e00-b95b-011284f80ad5</UUID>
 			<flags>0</flags>
@@ -113,32 +103,12 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>0bf0df25-a39a-4c3b-8e4b-9aabce372255</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>7</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>0bf0df25-a39a-4c3b-8e4b-9aabce372255</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
 						<link>3eca65a9-3875-337a-b5cb-e7f4fc7b3ccf</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<objectIndex>9</objectIndex>
+				<objectIndex>7</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -201,7 +171,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -219,7 +189,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -273,7 +243,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -291,123 +261,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
 						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>9</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NodeFollower</type>
-			<version>1</version>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>HP_turretAbillity</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>HP_hullAbillity</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>Sound3D</type>
-			<version>1</version>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Object name</name>
-						<value>startSound</value>
-					</property>
-					<property>
-						<name>Event name</name>
-						<value>ability_naprolom_booster_start</value>
-					</property>
-					<property>
-						<name>AutoStart</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>9</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Object name</name>
-						<value>stopSound</value>
-					</property>
-					<property>
-						<name>Event name</name>
-						<value>ability_naprolom_booster_stop</value>
-					</property>
-					<property>
-						<name>AutoStart</name>
-						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -416,7 +270,7 @@
 			<type>Animator</type>
 			<version>2</version>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -506,7 +360,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>6</objectIndex>
+				<objectIndex>4</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -597,31 +451,96 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>VSEComponent</type>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>startSound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ability_naprolom_booster_start</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>stopSound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ability_naprolom_booster_stop</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NodeFollower</type>
 			<version>1</version>
 			<component>
 				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>vscript/plans/vehicles/ussr/R124_Object_279_Abillity_OnActivate.xml</value>
+						<name>NodeName</name>
+						<value>HP_turretAbillity</value>
 					</property>
 					<property>
-						<name>AutoStart</name>
-						<value>1</value>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>HP_hullAbillity</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vscript/plans/vehicles/ussr/R124_Object_279_Abillity_OnCooldown.xml</value>
+						<value>vscript/plans/vehicles/ussr/R124_Object_279_Abillity.xml</value>
 					</property>
 					<property>
 						<name>AutoStart</name>
@@ -634,7 +553,7 @@
 			<type>DisableEngineExhaustComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 			</component>
 		</ComponentPool>

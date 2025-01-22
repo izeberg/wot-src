@@ -309,7 +309,7 @@ msgid "awardsScreen/header/fullyCompleted"
 msgstr "Аперацыя «%(missionName)s» выканана з адзнакай"
 
 msgid "awardsScreen/headerExtra"
-msgstr "АТРЫМАНА ЎЗНАГАРОДА!"
+msgstr "ВЫ АТРЫМАЛІ ЎЗНАГАРОДУ!"
 
 msgid "awardsView/closeBtn/label"
 msgstr "ЗАКРЫЦЬ"
@@ -344,6 +344,15 @@ msgstr "Паскарэнне ходу выканання:"
 msgid "bonus/multiplier/progress"
 msgstr "Бонус ×%(value)s:"
 
+msgid "campaignTitle/1"
+msgstr "Доўгачаканае падмацаванне"
+
+msgid "campaignTitle/2"
+msgstr "Другі фронт"
+
+msgid "campaignTitle/3"
+msgstr "Новыя гарызонты"
+
 msgid "chainTooltipData/description/text/alliance0"
 msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
 
@@ -369,7 +378,7 @@ msgid "conditions/biathlon/label/main"
 msgstr "Выканаць асноўную ўмову ў %(goal)s баях з %(limit)s"
 
 msgid "conditions/completed/bottomLabel"
-msgstr "Выканана"
+msgstr "Завершана"
 
 msgid "conditions/counter/label/add"
 msgstr "Выканаць дадатковую ўмову, разоў: %(count)s"
@@ -432,10 +441,10 @@ msgid "detailedView/retryBtnLabel"
 msgstr "Перавыканаць з адзнакай"
 
 msgid "detailedView/startBtnLabel"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "detailedView/status/NA"
-msgstr "Недаступна"
+msgstr "Недаступная"
 
 msgid "detailedView/status/completed"
 msgstr "Выканана асноўная ўмова"
@@ -521,7 +530,7 @@ msgstr ""
 "атрымайце адпаведную ўзнагароду."
 
 msgid "detailedView/tooltips/startBtn/header"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "fourFreeSheetsObtainedPopup/button"
 msgstr "Перайсці"
@@ -686,7 +695,7 @@ msgid "operationUnlockedWindow/header"
 msgstr "Аперацыя «%(title)s»"
 
 msgid "operationUnlockedWindow/nextButton"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "operationUnlockedWindow/title"
 msgstr "Атрыманы доступ да аперацыі"
@@ -708,6 +717,12 @@ msgstr "Недаступна"
 msgid "operations/title1"
 msgstr "StuG IV"
 
+msgid "operations/title10"
+msgstr "Project Murat"
+
+msgid "operations/title11"
+msgstr "Атэстацыя"
+
 msgid "operations/title2"
 msgstr "T28 HTC"
 
@@ -725,6 +740,12 @@ msgstr "Chimera"
 
 msgid "operations/title7"
 msgstr "Аб'ект 279 (р)"
+
+msgid "operations/title8"
+msgstr "ARMT"
+
+msgid "operations/title9"
+msgstr "TF-2 Clark"
 
 msgid "operations/unlocked/desc"
 msgstr "Даступна"
@@ -766,7 +787,7 @@ msgid "questProgressTracking/status/onPause"
 msgstr "Прыпынена"
 
 msgid "questProgressTracking/trackingStatus"
-msgstr "Зараз выконваюцца абедзве задачы"
+msgstr "Зараз выконваецца некалькі задач"
 
 msgid "sidebar/completed"
 msgstr "Выканана"

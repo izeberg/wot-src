@@ -27,31 +27,31 @@ msgid "destroyPairModificationsDialog/cancelButton"
 msgstr "Никак нет!"
 
 msgid "destroyPairModificationsDialog/destroyAll/description/credits"
-msgstr "После отмены модификаций их можно будет заново провести за кредиты."
+msgstr "После отмены модернизаций их можно будет заново провести за кредиты."
 
 msgid "destroyPairModificationsDialog/destroyAll/description/default"
-msgstr "После отмены модификаций их можно будет провести заново."
+msgstr "После отмены модернизаций их можно будет провести заново."
 
 msgid "destroyPairModificationsDialog/destroyAll/title"
-msgstr "Отменить бесплатно все парные модификации?"
+msgstr "Отменить бесплатно все парные модернизации?"
 
 msgid "destroyPairModificationsDialog/destroyOne/description/credits"
-msgstr "После отмены модификации её можно будет заново провести за кредиты."
+msgstr "После отмены модернизации её можно будет заново провести за кредиты."
 
 msgid "destroyPairModificationsDialog/destroyOne/description/default"
-msgstr "После отмены модификации её можно будет провести заново."
+msgstr "После отмены модернизации её можно будет провести заново."
 
 msgid "destroyPairModificationsDialog/destroyOne/title"
-msgstr "Отменить бесплатно парную модификацию «%(modification)s»?"
+msgstr "Отменить бесплатно парную модернизацию «%(modification)s»?"
 
 msgid "hint/CompareModificationsPanel"
-msgstr "ПРОВЕСТИ МОДИФИКАЦИИ"
+msgstr "ПРОВЕСТИ МОДЕРНИЗАЦИИ"
 
 msgid "hint/CompareSpecializationButton"
 msgstr "ВЫБРАТЬ КАТЕГОРИЮ СЛОТА"
 
 msgid "hint/entryPoint"
-msgstr "ДОСТУПНЫ МОДИФИКАЦИИ"
+msgstr "ДОСТУПНЫ МОДЕРНИЗАЦИИ"
 
 msgid "hint/switchEquipment/auxiliaryLoadout"
 msgstr ""
@@ -73,15 +73,15 @@ msgid "postProgressionIntro/title"
 msgstr "ПОЛЕВАЯ МОДЕРНИЗАЦИЯ"
 
 msgid "postProgressionLevelTooltipView/feature"
-msgstr "Особая модификация %(level): %(featureName)"
+msgstr "Особая модернизация %(level): %(featureName)"
 
 msgid "postProgressionLevelTooltipView/lockedDescription"
 msgstr ""
 "Нажмите, чтобы увидеть изменения ТТХ машины после получения уровня и "
-"выделить применяемые модификации."
+"выделить применяемые модернизации."
 
 msgid "postProgressionLevelTooltipView/pairModification"
-msgstr "Парная модификация %(level)"
+msgstr "Парная модернизация %(level)"
 
 msgid "postProgressionLevelTooltipView/title"
 msgstr "Уровень Полевой модернизации"
@@ -126,22 +126,22 @@ msgid "researchStepsDialog/description/feature/shellsConsumablesSwitch"
 msgstr "«Необходимое оснащение»"
 
 msgid "researchStepsDialog/description/features/double"
-msgstr "доступ к особым модификациям {name1} и {name2}"
+msgstr "доступ к особым модернизациям {name1} и {name2}"
 
 msgid "researchStepsDialog/description/features/multiple"
-msgstr "доступ к особым модификациям {names}"
+msgstr "доступ к особым модернизациям {names}"
 
 msgid "researchStepsDialog/description/features/single"
-msgstr "доступ к особой модификации {name}"
+msgstr "доступ к особой модернизации {name}"
 
 msgid "researchStepsDialog/description/features/triple"
-msgstr "доступ к особым модификациям {name1}, {name2} и {name3}"
+msgstr "доступ к особым модернизациям {name1}, {name2} и {name3}"
 
 msgid "researchStepsDialog/description/pairModification/multiple"
-msgstr "доступ к парным модификациям {numbers} уровня"
+msgstr "доступ к парным модернизациям {numbers} уровня"
 
 msgid "researchStepsDialog/description/pairModification/single"
-msgstr "доступ к парной модификации {number} уровня"
+msgstr "доступ к парной модернизации {number} уровня"
 
 msgid "researchStepsDialog/description/separator"
 msgstr ", "
@@ -150,10 +150,10 @@ msgid "researchStepsDialog/description/text"
 msgstr "Будет получено: {unlockedItems}."
 
 msgid "researchStepsDialog/title/multiple"
-msgstr "Повысить уровень базовой модификации до {level}?"
+msgstr "Повысить уровень базовой модернизации до {level}?"
 
 msgid "researchStepsDialog/title/single"
-msgstr "Повысить уровень базовой модификации?"
+msgstr "Повысить уровень базовой модернизации?"
 
 msgid "researchStepsDialog/totalPrice"
 msgstr "К оплате:"
@@ -277,29 +277,29 @@ msgstr "АЛЬТЕРНАТИВНАЯ КОМПЛЕКТАЦИЯ МАШИНЫ"
 
 msgid "slides/baseModifications/description"
 msgstr ""
-"%(accent)Базовые модификации%(/accent) дают бонус к %(accent)одной из "
-"характеристик%(/accent) машины и открывают доступ к парным модификациям. Эти"
-" модификации устанавливаются на технику бесплатно, а для их исследования "
-"необходим боевой или свободный опыт."
+"%(accent)Базовые модернизации%(/accent) дают бонус к %(accent)одной из "
+"характеристик%(/accent) машины и открывают доступ к парным модернизациям. "
+"Эти модернизации устанавливаются на технику бесплатно, а для их исследования"
+" необходим боевой или свободный опыт."
 
 msgid "slides/baseModifications/title"
-msgstr "БАЗОВЫЕ МОДИФИКАЦИИ"
+msgstr "БАЗОВЫЕ МОДЕРНИЗАЦИИ"
 
 msgid "slides/extraModification/description"
 msgstr ""
-"%(accent)Особые модификации%(/accent) открывают доступ к альтернативной "
+"%(accent)Особые модернизации%(/accent) открывают доступ к альтернативной "
 "комплектации машины и дают возможность %(accent)назначить "
 "категорию%(/accent) второму слоту для оборудования (для техники VIII–XI "
 "уровней). Изменить выбранную категорию слота можно за кредиты."
 
 msgid "slides/extraModification/title"
-msgstr "ОСОБЫЕ МОДИФИКАЦИИ: РОЛЕВОЙ СЛОТ"
+msgstr "ОСОБЫЕ МОДЕРНИЗАЦИИ: РОЛЕВОЙ СЛОТ"
 
 msgid "slides/fieldModernization/description"
 msgstr ""
 "Полевая модернизация — это возможность совершить более тонкую ролевую "
 "настройку машины и %(accent)изменить её ТТХ%(/accent) с помощью различных "
-"%(accent)модификаций%(/accent). Доступ к каждой следующей модификации "
+"%(accent)модернизаций%(/accent). Доступ к каждой следующей модернизации "
 "открывается после изучения предыдущей."
 
 msgid "slides/fieldModernization/infoTitle"
@@ -310,24 +310,24 @@ msgstr "ИЗМЕНЕНИЕ ТТХ ТЕХНИКИ"
 
 msgid "slides/modificationTree/description"
 msgstr ""
-"Дерево модификаций доступно для исследуемой и коллекционной %(accent)техники"
-" VI–XI уровней%(/accent), получившей %(accent)«Элитный» статус%(/accent). "
-"Для акционной, подарочной, наградной и премиум техники доступ к модификациям"
-" открывается сразу после покупки."
+"Дерево модернизаций доступно для исследуемой и коллекционной "
+"%(accent)техники VI–XI уровней%(/accent), получившей %(accent)«Элитный» "
+"статус%(/accent). Для акционной, подарочной, наградной и премиум техники "
+"доступ к модернизациям открывается сразу после покупки."
 
 msgid "slides/modificationTree/infoTitle"
-msgstr "ИССЛЕДОВАНИЕ МОДИФИКАЦИЙ"
+msgstr "ИССЛЕДОВАНИЕ МОДЕРНИЗАЦИЙ"
 
 msgid "slides/modificationTree/title"
-msgstr "ИССЛЕДОВАНИЕ МОДИФИКАЦИЙ"
+msgstr "ИССЛЕДОВАНИЕ МОДЕРНИЗАЦИЙ"
 
 msgid "slides/pairedModifications/description"
 msgstr ""
-"%(accent)Парные модификации улучшают одну%(/accent) из характеристик машины за счёт %(accent)ухудшения другой%(/accent). Для исследования модификаций необходим боевой или свободный опыт, а для их установки — кредиты. %(accent)Отменять (снимать с машины)%(/accent) модификации можно %(accent)бесплатно%(/accent).\n"
-"При продаже техники базовые и особые модификации сохраняются, однако парные отменяются."
+"%(accent)Парные модернизации улучшают одну%(/accent) из характеристик машины за счёт %(accent)ухудшения другой%(/accent). Для исследования модернизаций необходим боевой или свободный опыт, а для их установки — кредиты. %(accent)Отменять (снимать с машины)%(/accent) модернизации можно %(accent)бесплатно%(/accent).\n"
+"При продаже техники базовые и особые модернизации сохраняются, однако парные отменяются."
 
 msgid "slides/pairedModifications/title"
-msgstr "ПАРНЫЕ МОДИФИКАЦИИ"
+msgstr "ПАРНЫЕ МОДЕРНИЗАЦИИ"
 
 msgid "slides/requiredEquipment/description"
 msgstr ""
@@ -344,14 +344,14 @@ msgid "slides/roleInBattle/description"
 msgstr ""
 "В отличие от типа, роль машины более точно отражает оптимальную "
 "%(accent)тактику ведения боя%(/accent), а также определяет, какое "
-"%(accent)дерево модификаций%(/accent) будет доступно для конкретной машины."
+"%(accent)дерево модернизаций%(/accent) будет доступно для конкретной машины."
 
 msgid "slides/roleInBattle/title"
 msgstr "РОЛЬ МАШИНЫ В БОЮ"
 
 msgid "slides/specialModifications/description/1/text"
 msgstr ""
-"Модификации изменяют характеристики машины, открывают %(accent)доступ к "
+"Модернизации изменяют характеристики машины, открывают %(accent)доступ к "
 "альтернативной комплектации%(/accent) и позволяют назначить категорию "
 "%(accent)второму слоту%(/accent) для оборудования."
 
@@ -367,7 +367,7 @@ msgstr ""
 "для оборудования. Напрямую влияет на эффективность машины в бою."
 
 msgid "slides/specialModifications/title"
-msgstr "МОДИФИКАЦИИ, АЛЬТЕРНАТИВНАЯ КОМПЛЕКТАЦИЯ, КАТЕГОРИЯ СЛОТА"
+msgstr "МОДЕРНИЗАЦИИ, АЛЬТЕРНАТИВНАЯ КОМПЛЕКТАЦИЯ, КАТЕГОРИЯ СЛОТА"
 
 msgid "tooltips/entry_point/description"
 msgstr "Возможность дополнительного изменения характеристик машины."
@@ -394,10 +394,10 @@ msgid "tooltips/feature/disabled/description"
 msgstr "Приносим извинения за временные неудобства. Повторите попытку позже."
 
 msgid "tooltips/feature/disabled/title"
-msgstr "Особые модификации недоступны"
+msgstr "Особые модернизации недоступны"
 
 msgid "tooltips/feature/subTitle"
-msgstr "Особая модификация %(level)"
+msgstr "Особая модернизация %(level)"
 
 msgid "tooltips/notEnoughCredits/description"
 msgstr ""
@@ -410,7 +410,7 @@ msgid "tooltips/pairModification/demount"
 msgstr "Демонтаж"
 
 msgid "tooltips/pairModification/level"
-msgstr "Парная модификация %(level)"
+msgstr "Парная модернизация %(level)"
 
 msgid "tooltips/pairModification/modifiers"
 msgstr "Изменение характеристик машины:"
@@ -427,28 +427,28 @@ msgstr "Установка"
 msgid "tooltips/pairModification/notInstalledFooter"
 msgstr ""
 "Нажмите, чтобы увидеть изменения ТТХ машины после установки этой "
-"модификации."
+"модернизации."
 
 msgid "tooltips/pairModification/status/received/description"
 msgstr ""
-"После отмены модификации вы сможете за кредиты установить любую модификацию "
-"из этой пары."
+"После отмены модернизации вы сможете за кредиты установить любую "
+"модернизацию из этой пары."
 
 msgid "tooltips/pairModification/status/restricted/description"
 msgstr ""
-"Проведение данной модификации автоматически отменит уже установленную из "
+"Проведение данной модернизации автоматически отменит уже установленную из "
 "этой пары."
 
 msgid "tooltips/pairModification/status/restricted/title"
-msgstr "Установлена другая модификация"
+msgstr "Установлена другая модернизация"
 
 msgid "tooltips/pairModification/status/unavailableLocked/description"
 msgstr ""
 "Дойдите до %(level) уровня Полевой модернизации, чтобы получить доступ к "
-"этой модификации"
+"этой модернизации"
 
 msgid "tooltips/pairModification/status/unavailableLocked/title"
-msgstr "Модификация недоступна"
+msgstr "Модернизация недоступна"
 
 msgid "tooltips/priceBlock/free"
 msgstr "Бесплатно"
@@ -469,7 +469,7 @@ msgid "vehPostProgressionCmpView/compareControl/button/label/reset"
 msgstr "Сбросить"
 
 msgid "vehPostProgressionCmpView/title"
-msgstr "Модификации %(title)s"
+msgstr "Модернизации %(title)s"
 
 msgid "vehPostProgressionView/about"
 msgstr "О ПОЛЕВОЙ МОДЕРНИЗАЦИИ"
@@ -481,7 +481,7 @@ msgid "vehPostProgressionView/button/demountAllPairs"
 msgstr "Уничтожить все пары"
 
 msgid "vehPostProgressionView/button/demountAllPairs/tooltip/body"
-msgstr "Нажмите, чтобы уничтожить все модификации во всех парах."
+msgstr "Нажмите, чтобы уничтожить все модернизации во всех парах."
 
 msgid "vehPostProgressionView/button/demountAllPairs/tooltip/header"
 msgstr "Уничтожить"
@@ -564,7 +564,7 @@ msgstr "Аренда машины завершена."
 
 msgid ""
 "vehPostProgressionView/grid/pairModification/discardButton/tooltip/body"
-msgstr "Нажмите, чтобы уничтожить модификацию в этой паре."
+msgstr "Нажмите, чтобы уничтожить модернизацию в этой паре."
 
 msgid ""
 "vehPostProgressionView/grid/pairModification/discardButton/tooltip/header"
@@ -622,16 +622,16 @@ msgstr "Улучшение ТТХ"
 
 msgid ""
 "vehPostProgressionView/purchasePreview/summaryFeatureItem/label/multiple"
-msgstr "Особые модификации"
+msgstr "Особые модернизации"
 
 msgid "vehPostProgressionView/purchasePreview/summaryFeatureItem/label/single"
-msgstr "Особая модификация {level}"
+msgstr "Особая модернизация {level}"
 
 msgid "vehPostProgressionView/purchasePreview/summaryPairItem/label/multiple"
-msgstr "Парные модификации"
+msgstr "Парные модернизации"
 
 msgid "vehPostProgressionView/purchasePreview/summaryPairItem/label/single"
-msgstr "Парная модификация {level}"
+msgstr "Парная модернизация {level}"
 
 msgid "vehPostProgressionView/purchasePreview/unavailableContent/button/label"
 msgstr "К Дереву исследований"
@@ -661,7 +661,7 @@ msgstr "Полевая модернизация недоступна: машин
 msgid ""
 "vehPostProgressionView/purchasePreview/unavailableContent/label/unavailablePurchase"
 msgstr ""
-"Повышение уровня Полевой модернизации и исследование модификаций возможно "
+"Повышение уровня Полевой модернизации и исследование модернизаций возможно "
 "при наличии машины в Ангаре."
 
 msgid ""

@@ -156,6 +156,8 @@ package net.wg.gui.components.questProgress
                return QUEST_PROGRESS_BASE.QP_METRIC_TIMER_CMP_TOP;
             case QUEST_PROGRESS_BASE.QP_METRIC_TYPE_LIMITER:
                return QUEST_PROGRESS_BASE.QP_METRIC_LIMITER_CMP_TOP;
+            case QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_TYPE_RANGE:
+               return QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_RANGE_VALUES_CMP_TOP;
             default:
                App.utils.asserter.assert(false,"Metrics linkage for type:" + param1 + Errors.WASNT_FOUND);
                return null;
@@ -178,6 +180,8 @@ package net.wg.gui.components.questProgress
                return QUEST_PROGRESS_BASE.QP_METRIC_TIMER_CMP_TAB;
             case QUEST_PROGRESS_BASE.QP_METRIC_TYPE_LIMITER:
                return QUEST_PROGRESS_BASE.QP_METRIC_LIMITER_CMP_TAB;
+            case QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_TYPE_RANGE:
+               return QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_RANGE_VALUES_CMP_TAB;
             default:
                App.utils.asserter.assert(false,"Metrics linkage for type:" + param1 + Errors.WASNT_FOUND);
                return null;

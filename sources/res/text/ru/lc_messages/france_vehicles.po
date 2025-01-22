@@ -226,6 +226,12 @@ msgstr "AMX 50 120"
 msgid "AMX_50_68t"
 msgstr "AMX 50 B"
 
+msgid "AMX_50_68t_bob"
+msgstr "AMX 50 B BB"
+
+msgid "AMX_50_68t_bob_short"
+msgstr "AMX 50 B BB"
+
 msgid "AMX_50_68t_descr"
 msgstr ""
 "Разработка была начата в 1951 году компанией DEFA. К 1958 году танк AMX 50 B"
@@ -781,6 +787,9 @@ msgstr "Schneider 90 DCA"
 msgid "Chassis_F129_Schneider_120_AC_Gendarme"
 msgstr "Schneider 120 AC"
 
+msgid "Chassis_F130_AMX_Tracteur_D"
+msgstr "AMX Tracteur D"
+
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -1020,6 +1029,9 @@ msgid "ER_26_ter"
 msgstr "ER 26 ter"
 
 msgid "ER_27"
+msgstr "ER 27"
+
+msgid "ER_27_D"
 msgstr "ER 27"
 
 msgid "ER_28"
@@ -1456,6 +1468,30 @@ msgstr "Gendarme"
 
 msgid "F129_Schneider_120_AC_Gendarme_short_special"
 msgstr "Огромный огневой потенциал, хорошая динамика"
+
+msgid "F130_AMX_Tracteur_D"
+msgstr "AMX Tracteur D"
+
+msgid "F130_AMX_Tracteur_D_descr"
+msgstr ""
+"После окончания Первой мировой войны французское командование продумывало концепцию тяжёлого танка, предназначенного для усиления Линии Мажино. В мае 1936 года задачу по проектированию возложили на фирмы AMX, ARL и FCM. Фирмой AMX разрабатывался проект сверхтяжёлого танка прорыва Tracteur С на основе опыта боевых действий Первой Мировой войны. Проект Tracteur D был дальнейшим развитием проекта Tracteur С. Новый танк предусматривал противоснарядное бронирование, вспомогательную башню на корме (как у AMX Tracteur C), а главную башню спроектировали заново. Поскольку с двигателями ASTER возникли проблемы, проект переработали под авиационный двигатель Hispano-Suiza. К моменту появления проекта AMX Tracteur D в 1940 году французам было уже не до танков прорыва, поэтому проект остался только в виде эскиза.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "F130_AMX_Tracteur_D_long_special"
+msgstr ""
+"Крупный штурмовой танк, настоящий сухопутный броненосец с прекрасной "
+"фронтальной защищённостью и запоминающимся для противника разовым уроном. "
+"Наличие уязвимых зон и довольно скромная мобильность несколько снижают "
+"безнаказанность этой машины, выступающей в роли тарана, однако возможность "
+"сдерживать удар превосходящих сил противника, выбрав узкий коридор на карте,"
+" с лихвой перекрывает недостатки машины."
+
+msgid "F130_AMX_Tracteur_D_short"
+msgstr "Tracteur D"
+
+msgid "F130_AMX_Tracteur_D_short_special"
+msgstr "Прекрасное фронтальное бронирование, высокий разовый урон"
 
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -2032,6 +2068,9 @@ msgstr "Hispano-Suiza HS 110"
 
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
+
+msgid "Hispano_Suiza_12Z"
+msgstr "Hispano-Suiza 12Z"
 
 msgid "Hotchkiss_35_1"
 msgstr "Hotchkiss 35"
@@ -2741,6 +2780,9 @@ msgstr "АР58"
 msgid "Turret_1_F129_Schneider_120_AC_Gendarme"
 msgstr "Schneider 120 AC"
 
+msgid "Turret_1_F130_AMX_Tracteur_D"
+msgstr "AMX Tracteur D"
+
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -3253,6 +3295,9 @@ msgstr "13.2 mm Hotchkiss"
 msgid "_130mm_45_Model_1935"
 msgstr "130 mm/45 Model 1935"
 
+msgid "_130mm_Canon_Mle1924"
+msgstr "130 mm Canon mle. 1924"
+
 msgid "_130mm_Capped_Common"
 msgstr "Capped Common"
 
@@ -3261,6 +3306,15 @@ msgstr "Capped Common Semi-AP"
 
 msgid "_130mm_Common_HE"
 msgstr "Common HE"
+
+msgid "_130mm_OE_Mle1923"
+msgstr "ОЕ Mle 1923"
+
+msgid "_130mm_OPS_130"
+msgstr "ОРS 130"
+
+msgid "_130mm_OP_Mle1923"
+msgstr "ОР Mle 1923"
 
 msgid "_155_OE_mle_1956"
 msgstr "OE mle. 1956"

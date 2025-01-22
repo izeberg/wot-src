@@ -943,7 +943,7 @@ msgid "action/time/left"
 msgstr "Засталося:"
 
 msgid "battleCondition/state/completed"
-msgstr "Выканана"
+msgstr "Завершана"
 
 msgid "battleCondition/state/completed_perfectly"
 msgstr "Выканана з адзнакай"
@@ -1152,8 +1152,8 @@ msgstr "Дэколь"
 msgid "bonusName/emblem"
 msgstr "Эмблема"
 
-msgid "bonusName/entitlements/ny25_marketplace_unlock"
-msgstr "Адкрыты доступ да куплі стыляў мінулых гадоў!"
+msgid "bonusName/entitlements/paragon_rewards_choice_v_11"
+msgstr "Тэхніка ХІ узроўню"
 
 msgid "bonusName/entitlements/ranked_2020_discount"
 msgstr "Павелічэнне зніжкі"
@@ -1203,14 +1203,11 @@ msgstr "Надпіс"
 msgid "bonusName/modification"
 msgstr "Эфект"
 
-msgid "bonusName/newYearSlot"
-msgstr "Навагодні слот"
-
-msgid "bonusName/ny22Fillers"
-msgstr "Антыпаўтаральнік"
-
 msgid "bonusName/paint"
 msgstr "Фарба"
+
+msgid "bonusName/paragonsUnlocks"
+msgstr "Доступ да галіны тэхнікі"
 
 msgid "bonusName/personalNumber"
 msgstr "Трохзначны нумар"
@@ -1236,6 +1233,9 @@ msgstr "Слоты ў Гаражы"
 msgid "bonusName/style"
 msgstr "Стыль"
 
+msgid "bonusName/styleProgress"
+msgstr "Стыль «%(name)s» (%(progress)s этап)"
+
 msgid "bonusName/tankmen/no_skills"
 msgstr "Экіпаж"
 
@@ -1250,6 +1250,9 @@ msgstr "Каэфіцыент досведу экіпажу"
 
 msgid "bonusName/team_credits_bonus"
 msgstr "Камандны бонус да крэдытаў"
+
+msgid "bonusName/tmanToken"
+msgstr "Член экіпажа"
 
 msgid "bonusName/xp"
 msgstr "Баявы досвед"
@@ -1376,12 +1379,6 @@ msgstr "Дзён Танкавага прэміум акаўнту: %(value)s"
 
 msgid "bonuses/tankmen/description"
 msgstr "%(value)s"
-
-msgid "bonuses/variadicDiscount/buttonLabel"
-msgstr "Выбраць"
-
-msgid "bonuses/variadicDiscount/discountAmount"
-msgstr "-{amount}%"
 
 msgid "bonuses/vehicles/crewLvl"
 msgstr "%d%% экіпаж"
@@ -1528,27 +1525,6 @@ msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
 
 msgid "dailyQuests/header/winback"
 msgstr "ЗНОЎ У СТРОЙ"
-
-msgid "dailyQuests/info/NYDailyMissions"
-msgstr ""
-"Стандартныя задачы складаюцца з выпадковых умоў, а выконваць іх можна "
-"штодзень. Як і ў Асабістых баявых задачах, прагрэс выканання стандартных "
-"задач абнаўляецца пасля кожнага бою. Гэтыя задачы лепш выконваць у дзень іх "
-"выдачы, інакш яны перанясуцца на наступны дзень, а наступная задача не будзе"
-" выдадзена да выканання бягучай. У перыяд падзеі ў задачу абавязкова "
-"дадаюцца малыя навагоднія каробкі і святочныя маркі ў дадатак да ўзнагароды."
-
-msgid "dailyQuests/info/dailyMissionTitle"
-msgstr "Стандартныя задачы"
-
-msgid "dailyQuests/info/giftSystemDisabledDailyMissions"
-msgstr ""
-"Стандартныя задачы складаюцца з выпадковых умоў, а выконваць іх можна "
-"штодзень. Як і ў Асабістых баявых задачах, прагрэс выканання стандартных "
-"задач абнаўляецца пасля кожнага бою. Гэтыя задачы лепш выконваць у дзень іх "
-"выдачы, інакш яны перанясуцца на наступны дзень, а наступная задача не будзе"
-" выдадзена да выканання бягучай. На перыяд падзеі ў задачу абавязкова "
-"дадаюцца малыя каробкі ў дадатак да ўзнагароды."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/available"
 msgstr "Даступна праз:"
@@ -3278,6 +3254,9 @@ msgstr "Адваяваных Генеральных бітваў"
 msgid "details/dossier/27/battlesCount"
 msgstr "Праведзеных баёў у рэжыме «Лінія фронту»"
 
+msgid "details/dossier/32/battlesCount"
+msgstr "Праведзеных баёў у рэжыме Бітва блогераў»"
+
 msgid "details/dossier/37/battlesCount"
 msgstr "Праведзеных баёў у рэжыме «Разведка боем»"
 
@@ -3642,7 +3621,7 @@ msgid "details/dossier/medalBurda"
 msgstr "Медаль Бурды"
 
 msgid "details/dossier/medalCarius"
-msgstr "Ступень медаля Кáрыюса"
+msgstr "Ступень медаля Самохіна"
 
 msgid "details/dossier/medalCrucialContribution"
 msgstr "«Вырашальны ўнёсак»"
@@ -3660,13 +3639,13 @@ msgid "details/dossier/medalFadin"
 msgstr "Медаль Фадзіна"
 
 msgid "details/dossier/medalHalonen"
-msgstr "Медаль Хáланэна"
+msgstr "Медаль Крысава"
 
 msgid "details/dossier/medalKay"
 msgstr "Ступень медаля Кэя"
 
 msgid "details/dossier/medalKnispel"
-msgstr "Ступень медаля Кнíспэля"
+msgstr "Ступень медаля Гудзя"
 
 msgid "details/dossier/medalKolobanov"
 msgstr "Медаль Калабанава"
@@ -3681,7 +3660,7 @@ msgid "details/dossier/medalLeClerc"
 msgstr "Ступень медаля Леклéрка"
 
 msgid "details/dossier/medalLehvaslaiho"
-msgstr "Медаль Лехвяслайха"
+msgstr "Медаль Хазава"
 
 msgid "details/dossier/medalNikolas"
 msgstr "Медаль Нікалза"
@@ -3702,13 +3681,13 @@ msgid "details/dossier/medalRadleyWalters"
 msgstr "Медаль Рэдлі-Уолтэрза"
 
 msgid "details/dossier/medalTamadaYoshio"
-msgstr "Медаль Ёсіё Тамады"
+msgstr "Медаль Трубіна"
 
 msgid "details/dossier/medalTarczay"
-msgstr "Медаль Тарцая"
+msgstr "Медаль Любушкіна"
 
 msgid "details/dossier/medalWittmann"
-msgstr "Медаль Бёльтэра"
+msgstr "Медаль Ушакова"
 
 msgid "details/dossier/mousebane"
 msgstr "«Мышалоў»"
@@ -4660,18 +4639,6 @@ msgstr "Пра штодзённыя задачы"
 msgid "infoPage/infoButtonTooltip/header/winback"
 msgstr "Пра задачы"
 
-msgid "infoPage/lootboxConditions/button"
-msgstr "Так!"
-
-msgid "infoPage/lootboxConditions/default"
-msgstr ""
-"На працягу ўсёй святочнай падзеі да ўзнагарод за выкананне штодзённых задач "
-"будуць дадаткова выдадзены кантэйнеры з ёлачнымі аздобкамі як за стандартныя"
-" задачы, так і за бонусную."
-
-msgid "infoPage/lootboxConditionsTitle"
-msgstr "Кантэйнеры «Ёлачныя аздобкі» ў штодзённых задачах"
-
 msgid "infoPage/missionSwitch/winback"
 msgstr ""
 "Раз на 4 гадзіны любую са стандартных задач можна замяніць на іншую "
@@ -4783,14 +4750,8 @@ msgstr "Стратэгічная задача"
 msgid "item/type/specialMission"
 msgstr "Умацаваны раён: асобыя ўказанні"
 
-msgid "lootBox/boxCount"
-msgstr "x%(count)s"
-
-msgid "lootBox/boxesLabel"
-msgstr "Кантэйнер %(boxName)s %(boxCount)s"
-
 msgid "metrics/state/done"
-msgstr "Выканана"
+msgstr "Завершана"
 
 msgid "metrics/state/failed"
 msgstr "Скончылася няўдала"
@@ -5026,7 +4987,7 @@ msgid "missions/filter/filterButton/header"
 msgstr "Фільтр задач"
 
 msgid "missions/filter/popover/defaultButton/body"
-msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
+msgstr "Націсніце, каб скінуць налады фільтра на стандартны стан."
 
 msgid "missions/filter/popover/defaultButton/header"
 msgstr "Скінуць фільтр"
@@ -5092,6 +5053,12 @@ msgstr ""
 msgid "missions/tab/battle_pass/header"
 msgstr "Баявы пропуск"
 
+msgid "missions/tab/bob/body"
+msgstr "Гульнявая падзея Бітва блогераў 2025»"
+
+msgid "missions/tab/bob/header"
+msgstr "Бітва блогераў 2025"
+
 msgid "missions/tab/categories/body"
 msgstr "Баявыя задачы, якія можна выканаць адзін або некалькі разоў."
 
@@ -5133,6 +5100,9 @@ msgstr "Штодзённыя баявыя задачы, прымеркаваны
 
 msgid "missions/tab/kursk/header"
 msgstr "Курская бітва"
+
+msgid "missions/tab/label/bob"
+msgstr "Бітва блогераў"
 
 msgid "missions/tab/label/categories"
 msgstr "Баявыя задачы"
@@ -5347,6 +5317,9 @@ msgstr "Выконваць на %(vehType)s %(minLevel)s–%(maxLevel)s узро
 
 msgid "personalMission/status/addInProgress"
 msgstr "Паляпшэнне выніку: выканайце асноўную і дадатковую ўмовы"
+
+msgid "personalMission/status/allDone"
+msgstr "Выкананы ўсе ўмовы"
 
 msgid "personalMission/status/doneWithPawn"
 msgstr "Асноўная ўмова выканана за %(count)s"

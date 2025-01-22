@@ -69,5 +69,15 @@ package net.wg.gui.components.questProgress.components.headerProgress
       {
          return this._data != null ? this._data.orderType : Values.EMPTY_STR;
       }
+      
+      public function get progressType() : String
+      {
+         return this._data != null ? this._data.progressType : Values.EMPTY_STR;
+      }
+      
+      public function get goal() : int
+      {
+         return this._data != null ? int(this._data.goal) : int(Values.ZERO);
+      }
    }
 }

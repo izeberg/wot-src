@@ -108,10 +108,12 @@ package net.wg.infrastructure.base.meta
       
       function as_setDualAccActive(param1:Boolean) : void;
       
-      function as_setOverheatProgress(param1:Number, param2:Boolean) : void;
+      function as_setOverheatProgress(param1:Number, param2:Number, param3:Boolean) : void;
       
       function as_addOverheat(param1:Array) : void;
       
       function as_removeOverheat() : void;
+      
+      function as_setFlameDistanceVisibility(param1:Boolean) : void;
    }
 }

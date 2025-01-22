@@ -40,3 +40,12 @@ msgstr "До начала: %(timerText)"
 
 msgid "shopSales/title"
 msgstr "ТОРГОВЫЙ КАРАВАН"
+
+msgid "universalFlag/timerFormat"
+msgstr "{prefix} %(timerText)"
+
+msgid "universalFlag/unavalibleHeader"
+msgstr "Событие недоступно"
+
+msgid "universalFlag/unavalibleText"
+msgstr "Событие недоступно по техническим причинам."

@@ -11,7 +11,7 @@
 	<postProgressionTree>role_HT_universal</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>46</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -82,7 +82,10 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>127</armor_1>
+			<armor_1>
+				114.3
+				<!--BW_String-->
+			</armor_1>
 			<armor_2>
 				152.4
 				<!--BW_String-->
@@ -133,7 +136,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>23814</weight>
-		<maxHealth>1760</maxHealth>
+		<maxHealth>1900</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -1742,7 +1745,7 @@
 			</terrainResistance>
 			<brakeForce>60000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -4052,8 +4055,8 @@
 			</armor>
 			<primaryArmor>armor_1 armor_10 armor_4</primaryArmor>
 			<weight>18000</weight>
-			<maxHealth>440</maxHealth>
-			<rotationSpeed>30</rotationSpeed>
+			<maxHealth>500</maxHealth>
+			<rotationSpeed>36</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
 				<maxRegenHealth>85</maxRegenHealth>
@@ -4062,7 +4065,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>410</circularVisionRadius>
+			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -4082,7 +4085,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.344444 10 0.388889 -1 0.569444 -1 0.625 5 0.644444 6 0.655556 10 1 10
+							0 8 0.344444 8 0.388889 -1 0.569444 -1 0.625 5 0.644444 6 0.655556 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -4091,10 +4094,13 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.35
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>
+						10.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.11
@@ -5420,7 +5426,7 @@
 			<engines>
 				<Continental_AOI_1195_5A>
 					<smplEnginePower>1000</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplFwMaxSpeed>46</smplFwMaxSpeed>
 				</Continental_AOI_1195_5A>
 			</engines>
 			<chassis>

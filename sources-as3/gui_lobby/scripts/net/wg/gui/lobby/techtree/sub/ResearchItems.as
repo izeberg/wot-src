@@ -74,6 +74,8 @@ package net.wg.gui.lobby.techtree.sub
       
       public var backgroundCollectible:Sprite = null;
       
+      public var backgroundParagonsReset:Sprite = null;
+      
       public var nationFlagContainer:NationFlagContainer = null;
       
       private var _requestInCoolDown:Boolean = false;
@@ -173,6 +175,7 @@ package net.wg.gui.lobby.techtree.sub
             rootRenderer.validateNow();
             this.background.scaleX = this.background.scaleY = _loc1_;
             this.backgroundCollectible.scaleX = this.backgroundCollectible.scaleY = _loc1_;
+            this.backgroundParagonsReset.scaleX = this.backgroundParagonsReset.scaleY = _loc1_;
             this.nationFlagContainer.scaleX = this.nationFlagContainer.scaleY = _loc1_;
             invalidateLayout();
          }
@@ -215,6 +218,7 @@ package net.wg.gui.lobby.techtree.sub
          this._vehicleNodeClass = null;
          this.background = null;
          this.backgroundCollectible = null;
+         this.backgroundParagonsReset = null;
          this.nationFlagContainer.dispose();
          this.nationFlagContainer = null;
          this.view = null;
@@ -541,8 +545,19 @@ package net.wg.gui.lobby.techtree.sub
       
       private function updateBackground() : void
       {
-         this.background.visible = !rootRenderer.isCollectible();
-         this.backgroundCollectible.visible = rootRenderer.isCollectible();
+         this.background.visible = this.backgroundCollectible.visible = this.backgroundParagonsReset.visible = false;
+         if(rootRenderer.isResetParagons())
+         {
+            this.backgroundParagonsReset.visible = true;
+         }
+         else if(rootRenderer.isCollectible())
+         {
+            this.backgroundCollectible.visible = true;
+         }
+         else
+         {
+            this.background.visible = true;
+         }
       }
       
       private function updateTopRenderers() : void

@@ -35,7 +35,43 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LFront</identifier>
+				<identifier>HP_TrackUp_LFront__track_left_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>-1.402495 0.048893 -0.306000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear__track_left_0</identifier>
+				<transform>
+					<row0>-0.999999 0.000000 -0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>0.000000 -0.139173 -0.990267</row2>
+					<row3>-1.402495 0.055288 -3.093000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront__track_right_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>1.402495 0.048893 -0.306000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear__track_right_0</identifier>
+				<transform>
+					<row0>-0.999999 0.000000 -0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>0.000000 -0.139173 -0.990267</row2>
+					<row3>1.402495 0.055288 -3.093000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront__track_left_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
@@ -44,16 +80,16 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LRear</identifier>
+				<identifier>HP_TrackUp_LRear__track_left_1</identifier>
 				<transform>
 					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.990268 -0.139173</row1>
+					<row1>-0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>-1.402495 0.055288 -3.002000</row3>
+					<row3>-1.402495 0.055288 0.800000</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RFront</identifier>
+				<identifier>HP_TrackUp_RFront__track_right_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
@@ -62,12 +98,12 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RRear</identifier>
+				<identifier>HP_TrackUp_RRear__track_right_1</identifier>
 				<transform>
 					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.990268 -0.139173</row1>
+					<row1>-0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>1.402495 0.055288 -3.002360</row3>
+					<row3>1.402495 0.055288 0.800000</row3>
 				</transform>
 			</node>
 			<node>

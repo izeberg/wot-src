@@ -13,7 +13,5 @@ package net.wg.infrastructure.base.meta
       function onClickButtonDetailsS() : void;
       
       function onClickInfoBtnS() : void;
-      
-      function onNyQuestsClickS() : void;
    }
 }

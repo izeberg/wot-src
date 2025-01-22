@@ -516,9 +516,13 @@ class FittingItem(GUIItem):
 
     def _mayPurchase(self, price, money):
         if self.itemTypeID not in (
-         GUI_ITEM_TYPE.EQUIPMENT, GUI_ITEM_TYPE.OPTIONALDEVICE, GUI_ITEM_TYPE.SHELL,
-         GUI_ITEM_TYPE.BATTLE_BOOSTER, GUI_ITEM_TYPE.CREW_BOOKS) and not self.isUnlocked and not self.isCollectible:
-            return (False, GUI_ITEM_ECONOMY_CODE.UNLOCK_ERROR)
+         GUI_ITEM_TYPE.EQUIPMENT,
+         GUI_ITEM_TYPE.OPTIONALDEVICE,
+         GUI_ITEM_TYPE.SHELL,
+         GUI_ITEM_TYPE.BATTLE_BOOSTER,
+         GUI_ITEM_TYPE.CREW_BOOKS) and not self.isUnlocked and not self.isCollectible:
+            return (
+             False, GUI_ITEM_ECONOMY_CODE.UNLOCK_ERROR)
         if self.isHidden:
             return (False, GUI_ITEM_ECONOMY_CODE.ITEM_IS_HIDDEN)
         return self._isEnoughMoney(price, money)

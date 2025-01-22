@@ -131,6 +131,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>1.362897 0.638412 -0.155005</groupOrigin>
 			</primitiveGroup>
@@ -194,6 +198,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.360554 0.638412 -0.155005</groupOrigin>

@@ -107,7 +107,7 @@ class ItemsCache(IItemsCache):
         self.__waitForSync = True
         wasSyncFailed = self.__syncFailed
         self.__syncFailed = False
-        self.onSyncStarted()
+        self.onSyncStarted(updateReason)
         if updateReason != CACHE_SYNC_REASON.DOSSIER_RESYNC or wasSyncFailed:
             invalidItems = self.__items.invalidateCache(diff)
         else:
@@ -130,7 +130,7 @@ class ItemsCache(IItemsCache):
         self.__waitForSync = True
         wasSyncFailed = self.__syncFailed
         self.__syncFailed = False
-        self.onSyncStarted()
+        self.onSyncStarted(updateReason)
 
         def cbWrapper(*args):
             self.__waitForSync = False

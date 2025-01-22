@@ -871,6 +871,10 @@ package
       
       public static const BANNER_TITLE:String = "#clans:banner/title";
       
+      public static const BANNER_TYPE_MANEUVERS:String = "#clans:banner/type/maneuvers";
+      
+      public static const BANNER_TYPE_GM:String = "#clans:banner/type/gm";
+      
       public static const BANNER_INFO_BATTLESEND:String = "#clans:banner/info/battlesEnd";
       
       public static const BANNER_INFO_BATTLESTODAY:String = "#clans:banner/info/battlesToday";

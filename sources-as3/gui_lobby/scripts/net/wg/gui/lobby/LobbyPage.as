@@ -17,7 +17,6 @@ package net.wg.gui.lobby
    import net.wg.gui.components.containers.ManagedContainer;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
    import net.wg.gui.events.LobbyEvent;
-   import net.wg.gui.lobby.hangar.CrewDropDownEvent;
    import net.wg.gui.lobby.header.LobbyHeader;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Settings;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButton;
@@ -33,7 +32,6 @@ package net.wg.gui.lobby
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.motion.Tween;
    import scaleform.clik.utils.Constraints;
-   import scaleform.gfx.Extensions;
    
    public class LobbyPage extends LobbyPageMeta implements ILobbyPage
    {
@@ -104,16 +102,8 @@ package net.wg.gui.lobby
          {
             if(_loc5_)
             {
-               if(this.header.visible)
-               {
-                  _loc5_.y = TOP_SUB_VIEW_POSITION;
-                  _loc5_.updateStage(param1,_loc4_);
-               }
-               else
-               {
-                  _loc5_.y = 0;
-                  _loc5_.updateStage(param1,_loc4_);
-               }
+               _loc5_.y = TOP_SUB_VIEW_POSITION;
+               _loc5_.updateStage(param1,_loc4_);
             }
          }
          this.header.width = param1;
@@ -175,14 +165,12 @@ package net.wg.gui.lobby
          this.subTopContainer = this.addSubContainer(LAYER_NAMES.TOP_SUB_VIEW,_loc1_ + 1);
          this.subViewContainer.manageSize = false;
          this.subTopContainer.manageSize = false;
-         addEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
       }
       
       override protected function onDispose() : void
       {
          App.stage.removeEventListener(LobbyEvent.REGISTER_DRAGGING,this.onRegisterDraggingHandler);
          App.stage.removeEventListener(LobbyEvent.UNREGISTER_DRAGGING,this.onUnregisterDraggingHandler);
-         removeEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
          removeEventListener(TeaserEvent.HIDE,this.onTeaserHideHandler,true);
          removeChild(this.notificationPopupViewer);
          this.vehicleHitArea.hit.removeEventListener(MouseEvent.MOUSE_WHEEL,this.onHitAreaMouseWheelHandler);
@@ -394,33 +382,6 @@ package net.wg.gui.lobby
       private function onUnregisterDraggingHandler(param1:LobbyEvent) : void
       {
          this.unregisterDragging();
-      }
-      
-      private function onHangarShowDropDownHandler(param1:CrewDropDownEvent) : void
-      {
-         var _loc2_:DisplayObject = param1.dropDownref;
-         var _loc3_:Point = globalToLocal(new Point(_loc2_.x,_loc2_.y));
-         addChild(_loc2_);
-         _loc2_.x = _loc3_.x;
-         _loc2_.y = _loc3_.y;
-      }
-      
-      public function as_setHeaderVisible(param1:Boolean) : void
-      {
-         this.header.visible = param1;
-         this.updateCursorState();
-         this.updateStage(App.appWidth,App.appHeight);
-      }
-      
-      private function updateCursorState() : void
-      {
-         var _loc1_:DisplayObject = Extensions.getMouseTopMostEntity(false);
-         var _loc2_:Boolean = this.vehicleHitArea.hit == _loc1_;
-         if(!_loc2_)
-         {
-            this._resetDragParams = true;
-         }
-         notifyCursorOver3dSceneS(_loc2_);
       }
    }
 }

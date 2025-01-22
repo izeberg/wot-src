@@ -128,6 +128,8 @@ package net.wg.data.constants.generated
       public static const CRITICAL_VIEW:String = "criticalView";
       
       public static const ABILITY:String = "ability";
+      
+      public static const THERMAL_VISION_WARNING:String = "thermalVisionWarning";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_TYPES()

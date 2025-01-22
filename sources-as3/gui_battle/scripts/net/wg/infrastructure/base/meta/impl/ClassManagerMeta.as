@@ -44,6 +44,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.BATTLE_TOP_HINT_CONSTS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
+   import net.wg.data.constants.generated.COMMON_INDICATOR_CONSTS;
    import net.wg.data.constants.generated.COMP7_CONSTS;
    import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
    import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
@@ -57,7 +58,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.PREBATTLE_TIMER;
    import net.wg.data.constants.generated.QUEST_PROGRESS_BATTLE;
    import net.wg.data.constants.generated.RADIAL_MENU_CONSTS;
-   import net.wg.data.constants.generated.ROCKET_ACCELERATOR_INDICATOR;
    import net.wg.data.constants.generated.SIEGE_MODE_CONSTS;
    import net.wg.gui.battle.ClassicFullStats;
    import net.wg.gui.battle.StatsBase;
@@ -152,6 +152,27 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleloading.vo.VehicleDataVO;
    import net.wg.gui.battle.battleloading.vo.VehicleInfoVO;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
+   import net.wg.gui.battle.bob.BobBattleLoading;
+   import net.wg.gui.battle.bob.BobBattleLoadingForm;
+   import net.wg.gui.battle.bob.BobBattlePage;
+   import net.wg.gui.battle.bob.BobRendererContainer;
+   import net.wg.gui.battle.bob.BobTablePlayerItemRenderer;
+   import net.wg.gui.battle.bob.data.BobBattleStatisticDataController;
+   import net.wg.gui.battle.bob.data.BobDAAPIVehicleInfoVO;
+   import net.wg.gui.battle.bob.data.BobDAAPIVehiclesDataVO;
+   import net.wg.gui.battle.bob.stats.components.VoiceChatActivation;
+   import net.wg.gui.battle.bob.stats.components.data.VoiceChatActivationVO;
+   import net.wg.gui.battle.bob.stats.components.events.VoiceChatActivationEvent;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.BobPlayersPanel;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.BobPlayersPrebattleTeamSkill;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersListHeader;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersListHeaderLabels;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersListTeamSkill;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelList;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListItem;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListItemHolder;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListLeft;
+   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListRight;
    import net.wg.gui.battle.comp7.Comp7BattlePage;
    import net.wg.gui.battle.comp7.Comp7HelpCtrl;
    import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO;
@@ -737,6 +758,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.minimap.components.entries.personal.PingFlashMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.personal.RectangleAreaMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.personal.SimpleAttentionToFlashMinimapEntry;
+   import net.wg.gui.battle.views.minimap.components.entries.personal.ThermalVisionMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.personal.VideoCameraMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.personal.ViewPointMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.personal.ViewRangeCirclesMinimapEntry;
@@ -902,10 +924,12 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.superPlatoonPanel.renderers.PlatoonInviteRenderer;
    import net.wg.gui.battle.views.superPlatoonPanel.renderers.PlatoonMemberListItemRenderer;
    import net.wg.gui.battle.views.superPlatoonPanel.renderers.PlayerInfoContainer;
+   import net.wg.gui.battle.views.thermalVisionPanel.ThermalVisionPanel;
    import net.wg.gui.battle.views.upgradePanel.BattleUpgradePanel;
    import net.wg.gui.battle.views.upgradePanel.NotificationBorderAnimation;
    import net.wg.gui.battle.views.upgradePanel.NotificationBorderContainer;
    import net.wg.gui.battle.views.upgradePanel.data.UpgradePanelVO;
+   import net.wg.gui.battle.views.vehicleMarkers.ActionAnim;
    import net.wg.gui.battle.views.vehicleMarkers.ActionIconStateMarker;
    import net.wg.gui.battle.views.vehicleMarkers.AnimateExplosion;
    import net.wg.gui.battle.views.vehicleMarkers.BranderVehicle2dMarker;
@@ -920,6 +944,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.IMarkerManagerHandler;
    import net.wg.gui.battle.views.vehicleMarkers.IVehicleMarkerInvokable;
    import net.wg.gui.battle.views.vehicleMarkers.IVehicleMarkersManager;
+   import net.wg.gui.battle.views.vehicleMarkers.PyrometerAction;
    import net.wg.gui.battle.views.vehicleMarkers.StaticArtyMarker;
    import net.wg.gui.battle.views.vehicleMarkers.StaticObjectMarker;
    import net.wg.gui.battle.views.vehicleMarkers.TargetMarker;
@@ -943,6 +968,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.events.VehicleMarkersManagerEvent;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerTimer;
+   import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleAnimatedGlowMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleAnimatedStatusBaseMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleBerserkerMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleEngineerEffectMarker;
@@ -969,12 +995,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.bootcamp.BCBattleEquipmentButton;
    import net.wg.gui.bootcamp.BCBattlePage;
    import net.wg.gui.bootcamp.BCFCVehicleMarker;
-   import net.wg.gui.bootcamp.BCFragCorrelationBar;
    import net.wg.gui.bootcamp.BCHighlightsOverlay;
    import net.wg.gui.bootcamp.BCIntroFadeOut;
    import net.wg.gui.bootcamp.BCPrebattleTimer;
    import net.wg.gui.bootcamp.BCSecondaryHint;
-   import net.wg.gui.bootcamp.BCVehicleMarkersList;
    import net.wg.gui.bootcamp.prebattleHints.BCPrebattleHints;
    import net.wg.gui.bootcamp.prebattleHints.controls.CrosshairContainer;
    import net.wg.gui.components.controls.ReadOnlyScrollingList;
@@ -1049,6 +1073,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLE_VIEW_ALIASES:Class = BATTLE_VIEW_ALIASES;
       
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_COMMON_INDICATOR_CONSTS:Class = COMMON_INDICATOR_CONSTS;
+      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_COMP7_CONSTS:Class = COMP7_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_CONSUMABLES_PANEL_SETTINGS:Class = CONSUMABLES_PANEL_SETTINGS;
@@ -1074,8 +1100,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_QUEST_PROGRESS_BATTLE:Class = QUEST_PROGRESS_BATTLE;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_RADIAL_MENU_CONSTS:Class = RADIAL_MENU_CONSTS;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_ROCKET_ACCELERATOR_INDICATOR:Class = ROCKET_ACCELERATOR_INDICATOR;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_SIEGE_MODE_CONSTS:Class = SIEGE_MODE_CONSTS;
       
@@ -1298,6 +1322,48 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_PLAYERSTATS_BATTLEROYALEPLAYERSTATS:Class = BattleRoyalePlayerStats;
       
       public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_PLAYERSTATS_BATTLEROYALEPLAYERSTATVO:Class = BattleRoyalePlayerStatVO;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_BOBBATTLELOADING:Class = BobBattleLoading;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_BOBBATTLELOADINGFORM:Class = BobBattleLoadingForm;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_BOBBATTLEPAGE:Class = BobBattlePage;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_BOBRENDERERCONTAINER:Class = BobRendererContainer;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_BOBTABLEPLAYERITEMRENDERER:Class = BobTablePlayerItemRenderer;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_DATA_BOBBATTLESTATISTICDATACONTROLLER:Class = BobBattleStatisticDataController;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_DATA_BOBDAAPIVEHICLEINFOVO:Class = BobDAAPIVehicleInfoVO;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_DATA_BOBDAAPIVEHICLESDATAVO:Class = BobDAAPIVehiclesDataVO;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_VOICECHATACTIVATION:Class = VoiceChatActivation;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_DATA_VOICECHATACTIVATIONVO:Class = VoiceChatActivationVO;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_EVENTS_VOICECHATACTIVATIONEVENT:Class = VoiceChatActivationEvent;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_BOBPLAYERSPANEL:Class = BobPlayersPanel;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_BOBPLAYERSPREBATTLETEAMSKILL:Class = BobPlayersPrebattleTeamSkill;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSLISTHEADER:Class = BobPlayersListHeader;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSLISTHEADERLABELS:Class = BobPlayersListHeaderLabels;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSLISTTEAMSKILL:Class = BobPlayersListTeamSkill;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLIST:Class = BobPlayersPanelList;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTITEM:Class = BobPlayersPanelListItem;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTITEMHOLDER:Class = BobPlayersPanelListItemHolder;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTLEFT:Class = BobPlayersPanelListLeft;
+      
+      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTRIGHT:Class = BobPlayersPanelListRight;
       
       public static const NET_WG_GUI_BATTLE_COMP7_COMP7BATTLEPAGE:Class = Comp7BattlePage;
       
@@ -2469,6 +2535,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_PERSONAL_SIMPLEATTENTIONTOFLASHMINIMAPENTRY:Class = SimpleAttentionToFlashMinimapEntry;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_PERSONAL_THERMALVISIONMINIMAPENTRY:Class = ThermalVisionMinimapEntry;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_PERSONAL_VIDEOCAMERAMINIMAPENTRY:Class = VideoCameraMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_PERSONAL_VIEWPOINTMINIMAPENTRY:Class = ViewPointMinimapEntry;
@@ -2799,6 +2867,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_RENDERERS_PLAYERINFOCONTAINER:Class = PlayerInfoContainer;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_THERMALVISIONPANEL_THERMALVISIONPANEL:Class = ThermalVisionPanel;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_UPGRADEPANEL_BATTLEUPGRADEPANEL:Class = BattleUpgradePanel;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_UPGRADEPANEL_NOTIFICATIONBORDERANIMATION:Class = NotificationBorderAnimation;
@@ -2806,6 +2876,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_UPGRADEPANEL_NOTIFICATIONBORDERCONTAINER:Class = NotificationBorderContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_UPGRADEPANEL_DATA_UPGRADEPANELVO:Class = UpgradePanelVO;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_ACTIONANIM:Class = ActionAnim;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_ACTIONICONSTATEMARKER:Class = ActionIconStateMarker;
       
@@ -2834,6 +2906,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_IVEHICLEMARKERINVOKABLE:Class = IVehicleMarkerInvokable;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_IVEHICLEMARKERSMANAGER:Class = IVehicleMarkersManager;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_PYROMETERACTION:Class = PyrometerAction;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATICARTYMARKER:Class = StaticArtyMarker;
       
@@ -2868,6 +2942,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATUSMARKERS_MARKERASSETCONTAINER:Class = MarkerAssetContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATUSMARKERS_MARKERTIMER:Class = MarkerTimer;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATUSMARKERS_VEHICLEANIMATEDGLOWMARKER:Class = VehicleAnimatedGlowMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATUSMARKERS_VEHICLEANIMATEDSTATUSBASEMARKER:Class = VehicleAnimatedStatusBaseMarker;
       
@@ -2933,8 +3009,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BOOTCAMP_BCFCVEHICLEMARKER:Class = BCFCVehicleMarker;
       
-      public static const NET_WG_GUI_BOOTCAMP_BCFRAGCORRELATIONBAR:Class = BCFragCorrelationBar;
-      
       public static const NET_WG_GUI_BOOTCAMP_BCHIGHLIGHTSOVERLAY:Class = BCHighlightsOverlay;
       
       public static const NET_WG_GUI_BOOTCAMP_BCINTROFADEOUT:Class = BCIntroFadeOut;
@@ -2942,8 +3016,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BOOTCAMP_BCPREBATTLETIMER:Class = BCPrebattleTimer;
       
       public static const NET_WG_GUI_BOOTCAMP_BCSECONDARYHINT:Class = BCSecondaryHint;
-      
-      public static const NET_WG_GUI_BOOTCAMP_BCVEHICLEMARKERSLIST:Class = BCVehicleMarkersList;
       
       public static const NET_WG_GUI_BOOTCAMP_PREBATTLEHINTS_BCPREBATTLEHINTS:Class = BCPrebattleHints;
       

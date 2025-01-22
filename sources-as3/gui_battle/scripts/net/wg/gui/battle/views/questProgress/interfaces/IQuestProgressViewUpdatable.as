@@ -16,6 +16,8 @@ package net.wg.gui.battle.views.questProgress.interfaces
       
       function updateHeaderProgress(param1:Vector.<IHeaderProgressData>) : void;
       
+      function updateSecondHeaderProgress(param1:Vector.<IHeaderProgressData>) : void;
+      
       function findItemById(param1:String) : IQPItemRenderer;
    }
 }

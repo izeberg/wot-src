@@ -340,7 +340,8 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS = '#messenger:serviceChannelMessages/battleResults/personalMissions'
     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_1 = '#messenger:serviceChannelMessages/battleResults/personalMissions/1'
     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_2 = '#messenger:serviceChannelMessages/battleResults/personalMissions/2'
-    SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_BOTH = '#messenger:serviceChannelMessages/battleResults/personalMissions/both'
+    SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_3 = '#messenger:serviceChannelMessages/battleResults/personalMissions/3'
+    SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_MULTIPLE = '#messenger:serviceChannelMessages/battleResults/personalMissions/multiple'
     SERVICECHANNELMESSAGES_BATTLERESULTS_FORTRESOURCE = '#messenger:serviceChannelMessages/battleResults/fortResource'
     SERVICECHANNELMESSAGES_BATTLERESULTS_FORTBUILDING = '#messenger:serviceChannelMessages/battleResults/fortBuilding'
     SERVICECHANNELMESSAGES_BATTLERESULTS_FORTRESOURCE_CLAN = '#messenger:serviceChannelMessages/battleResults/fortResource/clan'
@@ -488,6 +489,7 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_INVOICERECEIVED_PURCHASE_RECEIVED_FROM = '#messenger:serviceChannelMessages/invoiceReceived/purchase/received_from'
     SERVICECHANNELMESSAGES_QUOTEDTEXTTEMPLATE = '#messenger:serviceChannelMessages/quotedTextTemplate'
     SERVICECHANNELMESSAGES_OFFERTOKENBONUS_TITLE = '#messenger:serviceChannelMessages/offerTokenBonus/title'
+    SERVICECHANNELMESSAGES_OFFERTOKENBONUS_ALTERNATIVETITLE = '#messenger:serviceChannelMessages/offerTokenBonus/alternativeTitle'
     SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED = '#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued'
     SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES = '#messenger:serviceChannelMessages/durationOfPremiumAccountExpires'
     SERVICECHANNELMESSAGES_PREMIUMBOUGHT = '#messenger:serviceChannelMessages/premiumBought'
@@ -574,6 +576,7 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_SYSMSG_TITLES_REMOVE = '#messenger:serviceChannelMessages/sysMsg/titles/remove'
     SERVICECHANNELMESSAGES_SYSMSG_TITLES_REPAIR = '#messenger:serviceChannelMessages/sysMsg/titles/repair'
     SERVICECHANNELMESSAGES_SYSMSG_TITLES_CUSTOMIZATION = '#messenger:serviceChannelMessages/sysMsg/titles/customization'
+    SERVICECHANNELMESSAGES_SYSMSG_TITLES_BOBBATTLESAVAILABLE = '#messenger:serviceChannelMessages/sysMsg/titles/bobBattlesAvailable'
     SERVICECHANNELMESSAGES_SYSMSG_TITLES_PAYMENTMETHODLINK = '#messenger:serviceChannelMessages/sysMsg/titles/paymentMethodLink'
     SERVICECHANNELMESSAGES_SYSMSG_TITLES_PAYMENTMETHODUNLINK = '#messenger:serviceChannelMessages/sysMsg/titles/paymentMethodUnlink'
     SERVICECHANNELMESSAGES_PREBATTLE_BATTLETYPE_TOURNAMENT = '#messenger:serviceChannelMessages/prebattle/battleType/tournament'
@@ -1211,6 +1214,10 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_REFERRALTRANSACTION_HEADER = '#messenger:serviceChannelMessages/referralTransaction/header'
     SERVICECHANNELMESSAGES_REFERRALTRANSACTION_DATE = '#messenger:serviceChannelMessages/referralTransaction/date'
     SERVICECHANNELMESSAGES_COMP7_COUPONRECEIVED = '#messenger:serviceChannelMessages/comp7/couponReceived'
+    SERVICECHANNELMESSAGES_PERSONALMISSION_3_EARLYPERFECTCOMPLETION_CONGRATS = '#messenger:serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats'
+    SERVICECHANNELMESSAGES_PERSONALMISSION_3_EARLYPERFECTCOMPLETION_REWARDSWILLBERECEIVED = '#messenger:serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived'
+    SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_HEADER = '#messenger:serviceChannelMessages/newYearMandarinsConvert/header'
+    SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_TEXT = '#messenger:serviceChannelMessages/newYearMandarinsConvert/text'
     CLIENT_ERROR_SHARED_ENUM = (
      CLIENT_ERROR_SHARED_TRY_LATER,
      CLIENT_ERROR_SHARED_GENERIC,
@@ -1308,7 +1315,8 @@ class MESSENGER(object):
     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_ENUM = (
      SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_1,
      SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_2,
-     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_BOTH)
+     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_3,
+     SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_MULTIPLE)
     SERVICECHANNELMESSAGES_CURRENCYUPDATE_ALL_ENUM = (
      SERVICECHANNELMESSAGES_CURRENCYUPDATE_RECEIVED_CREDITS,
      SERVICECHANNELMESSAGES_CURRENCYUPDATE_RECEIVED_GOLD,

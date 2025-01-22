@@ -9,7 +9,7 @@
 		<loader/>
 	</crew>
 	<supplySlots>2 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_MT_sniper</postProgressionTree>
+	<postProgressionTree>role_MT_assault</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
 		<forward>55</forward>
@@ -79,16 +79,16 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>100</armor_1>
+			<armor_1>150</armor_1>
 			<armor_2>60</armor_2>
-			<armor_3>60</armor_3>
+			<armor_3>70</armor_3>
 			<armor_4>40</armor_4>
 			<armor_5>25</armor_5>
 			<armor_6>30</armor_6>
-			<armor_7>16</armor_7>
+			<armor_7>25</armor_7>
 			<armor_8>0</armor_8>
 			<armor_10>16</armor_10>
-			<armor_11>60</armor_11>
+			<armor_11>70</armor_11>
 			<armor_12>25</armor_12>
 			<armor_13>40</armor_13>
 			<armor_14>25</armor_14>
@@ -5667,12 +5667,18 @@
 			<userString>#germany_vehicles:Turret_1_Panther_II</userString>
 			<shortUserString>#germany_vehicles:Turret_1_Panther_II_short</shortUserString>
 			<tags/>
+			<unlocks>
+				<turret>
+					Turret_2_Panther_II
+					<cost>15100</cost>
+				</turret>
+			</unlocks>
 			<level>7</level>
 			<price>22100</price>
 			<armor>
-				<armor_1>120</armor_1>
+				<armor_1>180</armor_1>
 				<armor_2>60</armor_2>
-				<armor_3>60</armor_3>
+				<armor_3>80</armor_3>
 				<armor_4>60</armor_4>
 				<armor_5>40</armor_5>
 				<armor_6>40</armor_6>
@@ -5730,30 +5736,22 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<unlocks>
-						<turret>
-							Turret_2_Panther_II
-							<cost>15100</cost>
-						</turret>
 						<gun>
 							_75mm_KwK45_L100
 							<cost>16100</cost>
 						</gun>
-						<gun>
-							_105mm_StuH42_L28Pz
-							<cost>3800</cost>
-						</gun>
 					</unlocks>
 					<armor>
 						<armor_1>
-							120
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							80
+							130
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							100
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -5936,15 +5934,15 @@
 					</shotDispersionFactors>
 					<armor>
 						<armor_1>
-							120
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							80
+							130
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							100
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -6100,187 +6098,6 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_75mm_KwK45_L100>
-				<_105mm_StuH42_L28Pz>
-					shared
-					<maxAmmo>50</maxAmmo>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<armor>
-						<armor_1>
-							120
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							80
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							100
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>35</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.55
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 8 0.5 8 1 8
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<invisibilityFactorAtShot>
-						0.209
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/german/G64_Panther_II/normal/lod0/Gun_11.model</undamaged>
-						<destroyed>vehicles/german/G64_Panther_II/crash/lod0/Gun_11.model</destroyed>
-						<exploded>vehicles/german/G64_Panther_II/crash/lod0/Gun_11.model</exploded>
-						<sets>
-							<Halloween_3Dst>
-								<undamaged>vehicles/german/G64_Panther_II/_skins/Halloween_3Dst/normal/lod0/Gun_11.model</undamaged>
-								<destroyed>vehicles/german/G64_Panther_II/_skins/Halloween_3Dst/crash/lod0/Gun_11.model</destroyed>
-								<exploded>vehicles/german/G64_Panther_II/_skins/Halloween_3Dst/crash/lod0/Gun_11.model</exploded>
-							</Halloween_3Dst>
-						</sets>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/german/G64_Panther_II/collision/Gun_11.model</collisionModelServer>
-						<collisionModelClient>vehicles/german/G64_Panther_II/collision_client/Gun_11.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large_mb</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000031 -0.009836 0.82513
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.192152 0.192152
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000031 -0.009836 0.82513
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								-0.02659 1.9997 0.426331
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.662876 -0.000031 3.14154
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								2.27034 1.63214 2.27034
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.428237</clipAngle>
-							<anchorShift>0.745686</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								0.000044 2.26883 0.768014
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.34335 -0.000355 3.14123
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.22521 0.837645 1.22521
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.739794</clipAngle>
-							<anchorShift>0.695184</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>-0.000062 -0.019671 0.881506</rayStart>
-							<rayEnd>-0.000062 -0.019671 1.313506</rayEnd>
-							<rayUp>
-								0.097 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.432
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.8 0.8 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							95.8976 91.9221
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_105mm_StuH42_L28Pz>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G64_Panther_II/normal/lod0/Turret_01.model</undamaged>
@@ -7066,19 +6883,15 @@
 			<level>8</level>
 			<price>28550</price>
 			<unlocks>
-				<vehicle>
-					G54_E-50
-					<cost>161790</cost>
-				</vehicle>
 				<gun>
 					_88mm_KwK_43_L71
 					<cost>16500</cost>
 				</gun>
 			</unlocks>
 			<armor>
-				<armor_1>120</armor_1>
+				<armor_1>190</armor_1>
 				<armor_2>100</armor_2>
-				<armor_3>60</armor_3>
+				<armor_3>100</armor_3>
 				<armor_4>60</armor_4>
 				<armor_5>40</armor_5>
 				<armor_6>40</armor_6>
@@ -7143,15 +6956,15 @@
 					</shotDispersionFactors>
 					<armor>
 						<armor_1>
-							150
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							120
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							100
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -7298,15 +7111,15 @@
 					</shotDispersionFactors>
 					<armor>
 						<armor_1>
-							150
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							120
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							100
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -7426,161 +7239,6 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_75mm_KwK45_L100>
-				<_105mm_StuH42_L28Pz>
-					shared
-					<maxAmmo>50</maxAmmo>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<armor>
-						<armor_1>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							120
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							100
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<gun>35</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.55
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<aimingTime>
-						2.1
-						<!--BW_String-->
-					</aimingTime>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 8 0.5 8 1 8
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<invisibilityFactorAtShot>
-						0.209
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<reloadTime>
-						7.6
-						<!--BW_String-->
-					</reloadTime>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/german/G64_Panther_II/normal/lod0/Gun_12.model</undamaged>
-						<destroyed>vehicles/german/G64_Panther_II/crash/lod0/Gun_12.model</destroyed>
-						<exploded>vehicles/german/G64_Panther_II/crash/lod0/Gun_12.model</exploded>
-						<sets>
-							<Halloween_3Dst>
-								<undamaged>vehicles/german/G64_Panther_II/_skins/Halloween_3Dst/normal/lod0/Gun_12.model</undamaged>
-								<destroyed>vehicles/german/G64_Panther_II/_skins/Halloween_3Dst/crash/lod0/Gun_12.model</destroyed>
-								<exploded>vehicles/german/G64_Panther_II/_skins/Halloween_3Dst/crash/lod0/Gun_12.model</exploded>
-							</Halloween_3Dst>
-						</sets>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/german/G64_Panther_II/collision/Gun_12.model</collisionModelServer>
-						<collisionModelClient>vehicles/german/G64_Panther_II/collision_client/Gun_12.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large_mb</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000533 -0.009836 1.70227
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.227491 0.227492
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000533 -0.009836 1.27487
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.001066 -0.021671 1.81046
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.001066 -0.021671 2.22646
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.095 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.416
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.8 0.8 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							95.8976 91.9221
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_105mm_StuH42_L28Pz>
 				<_88mm_KwK_43_L71>
 					shared
 					<maxAmmo>60</maxAmmo>
@@ -7614,15 +7272,15 @@
 					</shotDispersionFactors>
 					<armor>
 						<armor_1>
-							150
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							120
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							100
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -7744,6 +7402,12 @@
 				</_88mm_KwK_43_L71>
 				<_88mm_KwK_L100>
 					shared
+					<unlocks>
+						<vehicle>
+							G54_E-50
+							<cost>102000</cost>
+						</vehicle>
+					</unlocks>
 					<maxAmmo>60</maxAmmo>
 					<shotDispersionRadius>
 						0.3
@@ -7781,15 +7445,15 @@
 					</pitchLimits>
 					<armor>
 						<armor_1>
-							150
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							120
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							100
+							150
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>

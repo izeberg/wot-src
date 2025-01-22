@@ -187,7 +187,6 @@
 		<description>#item_types:gun/desc</description>
 		<tags>
 			<clip/>
-			<lockedReloadTime/>
 		</tags>
 	</vehicleGun>
 	<vehicleEngine>
@@ -354,6 +353,7 @@
 			<hideIfIncompatible/>
 			<styleSerialNumber/>
 			<lockedOnVehicle/>
+			<paragons/>
 			<NY2018_style/>
 			<NY2019_style/>
 			<NY2020_style/>

@@ -1,6 +1,5 @@
 package net.wg.gui.battle.views.battleNotifier
 {
-   import net.wg.data.constants.InvalidationType;
    import net.wg.infrastructure.base.meta.IBattleNotifierMeta;
    import net.wg.infrastructure.base.meta.impl.BattleNotifierMeta;
    import net.wg.infrastructure.interfaces.entity.IDisplayableComponent;
@@ -19,29 +18,34 @@ package net.wg.gui.battle.views.battleNotifier
       private static const HEIGHT_BREAKPOINT:Number = 960;
        
       
-      private var _stageHeight:int = 0;
+      private var _localVisibility:Boolean = true;
+      
+      private var _globalVisibility:Boolean = true;
       
       public function BattleNotifier()
       {
          super();
          setManageSize(true);
-         this.setSize(WIDTH,HEIGHT);
+         setSize(WIDTH,HEIGHT);
+         mouseChildren = false;
+         mouseEnabled = false;
       }
       
-      override protected function draw() : void
+      public function as_updateVisibility(param1:Boolean) : void
       {
-         super.draw();
-         if(isInvalid(InvalidationType.POSITION))
-         {
-            this.y = this._stageHeight > HEIGHT_BREAKPOINT ? Number(NORMAL_Y) : Number(SMALL_Y);
-         }
+         this._localVisibility = param1;
+         this.updateVisibility();
       }
       
-      override protected function configUI() : void
+      public function isCompVisible() : Boolean
       {
-         super.configUI();
-         this.mouseChildren = false;
-         this.mouseEnabled = false;
+         return visible;
+      }
+      
+      public function setCompVisible(param1:Boolean) : void
+      {
+         this._globalVisibility = param1;
+         this.updateVisibility();
       }
       
       public function updateStage(param1:Number, param2:Number) : void
@@ -50,18 +54,12 @@ package net.wg.gui.battle.views.battleNotifier
          {
             return;
          }
-         this._stageHeight = param2;
-         invalidate(InvalidationType.POSITION);
+         y = param2 > HEIGHT_BREAKPOINT ? Number(NORMAL_Y) : Number(SMALL_Y);
       }
       
-      public function setCompVisible(param1:Boolean) : void
+      private function updateVisibility() : void
       {
-         visible = param1;
-      }
-      
-      public function isCompVisible() : Boolean
-      {
-         return visible;
+         visible = this._localVisibility && this._globalVisibility;
       }
    }
 }

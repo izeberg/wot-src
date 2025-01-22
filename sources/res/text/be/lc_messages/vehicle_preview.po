@@ -41,14 +41,8 @@ msgstr "Даследаваць"
 msgid "buyingPanel/buyBtn/label/restore"
 msgstr "Аднавіць"
 
-msgid "buyingPanel/buyBtn/label/restoreRequested"
-msgstr "Вы ўжо падалі заяўку на аднаўленне танка"
-
 msgid "buyingPanel/buyBtn/label/showAdventCalendar"
 msgstr "ДА КАЛЕНДАРА"
-
-msgid "buyingPanel/buyBtn/label/toCalendar"
-msgstr "Да календара"
 
 msgid "buyingPanel/collectible/notResearchedVehiclesWarning"
 msgstr "Тэхніка %(nation)s %(level)s узроўню не даследавана"
@@ -133,6 +127,11 @@ msgstr "Пракат толькі для рэжыму «Лінія фронту�
 
 msgid "buyingPanel/personalTradeIn/title"
 msgstr "Абмен машыны: %(name)s"
+
+msgid "buyingPanel/pmOperationVehicleLabel"
+msgstr ""
+"Купля недаступная: гэтая машына — узнагарода за выкананне ўсіх задач "
+"аперацыі «%(operationName)s»"
 
 msgid "buyingPanel/present"
 msgstr "У падарунак"
@@ -228,6 +227,9 @@ msgstr "ДА ГАЛОЎНАЙ УЗНАГАРОДЫ"
 
 msgid "header/backBtn/descrLabel/blueprintsExchange"
 msgstr "ДА ТАВАРАЎ ДЛЯ АБМЕНУ"
+
+msgid "header/backBtn/descrLabel/bob"
+msgstr "ДА БІТВЫ БЛОГЕРАЎ"
 
 msgid "header/backBtn/descrLabel/collections"
 msgstr "ДА КАЛЕКЦЫІ"

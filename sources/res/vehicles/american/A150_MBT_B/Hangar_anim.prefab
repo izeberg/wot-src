@@ -18,13 +18,13 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Concentration</name>
-			<UUID>b89c63c8-dc93-3810-a07c-629031c111a5</UUID>
+			<name>hatchSleeve</name>
+			<UUID>fd102d20-58fc-3861-82d2-4157f44bd163</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>hatchSleeve</name>
-			<UUID>fd102d20-58fc-3861-82d2-4157f44bd163</UUID>
+			<name>machineGun</name>
+			<UUID>5d9a1112-8049-3348-af06-d18a7b632478</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -168,6 +168,298 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>Animator</type>
+			<version>2</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>vehicles/american/A150_MBT_B/Animation/Anim_Camera_open_01.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>open</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>vehicles/american/A150_MBT_B/Animation/Anim_Camera_close_01.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>close</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/american/A150_MBT_B/Animation/Anim_Camera_open_01.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>vehicles/american/A150_MBT_B/Sequence/Ability_Equipment_Fold_out_01_hangar.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>open</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>vehicles/american/A150_MBT_B/Sequence/Ability_Equipment_Folds_01_hangar.seq</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>close</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/american/A150_MBT_B/Sequence/Ability_Equipment_Fold_out_01_hangar.seq</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
@@ -207,7 +499,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/american/A150_MBT_B/normal/lod0/TurretAbillity_Machine_gun_anim.model</value>
+						<value>vehicles/american/A150_MBT_B/normal/lod0/HatchSleeve_anim.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -222,7 +514,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/american/A150_MBT_B/normal/lod0/HatchSleeve_anim.model</value>
+						<value>vehicles/american/A150_MBT_B/normal/lod0/TurretAbillity_Machine_gun_anim.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -254,11 +546,11 @@
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>NodeName</name>
-						<value>HP_abillity_01</value>
+						<value>HP_sleeveSpawnPoint</value>
 					</property>
 					<property>
 						<name>DeactivateIfInvalid</name>
@@ -276,7 +568,7 @@
 				<config>
 					<property>
 						<name>NodeName</name>
-						<value>HP_sleeveSpawnPoint</value>
+						<value>HP_abillity_01</value>
 					</property>
 					<property>
 						<name>DeactivateIfInvalid</name>
@@ -285,6 +577,133 @@
 					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/vehicles/usa/A150_MBT_B_Hangar_anim.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CustomizableModelAttachmentComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

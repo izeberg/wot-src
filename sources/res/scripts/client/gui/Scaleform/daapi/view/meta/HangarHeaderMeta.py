@@ -25,6 +25,10 @@ class HangarHeaderMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_setCollectiveGoalEntryPoint(value)
 
+    def as_setUniversalFlagEntryPointS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setUniversalFlagEntryPoint(value)
+
     def as_setArmoryYardEntryPointS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_setArmoryYardEntryPoint(value)
@@ -32,7 +36,3 @@ class HangarHeaderMeta(BaseDAAPIComponent):
     def as_setEarlyAccessEntryPointS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_setEarlyAccessEntryPoint(value)
-
-    def as_setNYQuestEntryPointS(self, value):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setNYQuestEntryPoint(value)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.611429 -0.000014 -2.951506</min>
+		<max>1.611022 1.069810 2.907184</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un14_T54D/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/normal/lod0/Chassis</nodefullVisual>
+</root>

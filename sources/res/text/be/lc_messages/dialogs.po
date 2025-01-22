@@ -419,7 +419,7 @@ msgstr ""
 "даецца."
 
 msgid "bootcamp/retry/submit"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "bootcamp/retry/title"
 msgstr "На Вучэбны палігон"
@@ -472,7 +472,7 @@ msgstr ""
 "машыну са спрактыкаваным на 100%% экіпажам."
 
 msgid "bootcamp/start/submit"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "bootcamp/start/title"
 msgstr "На Вучэбны палігон"
@@ -487,18 +487,6 @@ msgstr ""
 
 msgid "bootcampCenterUnavailable/title"
 msgstr "Вучэбны палігон недаступны"
-
-msgid "breakDecorations/cancel"
-msgstr "Скасаваць"
-
-msgid "breakDecorations/message"
-msgstr "Разбіць аздобкі і атрымаць %(price)s?"
-
-msgid "breakDecorations/submit"
-msgstr "Пацвердзіць"
-
-msgid "breakDecorations/title"
-msgstr "Папярэджанне аперацыі"
 
 msgid "buyBerths/hangarBerths/header"
 msgstr "Месцы ў Жаўнерні (%(berthsCount)s шт)"
@@ -2352,18 +2340,6 @@ msgstr "Добра"
 msgid "moneyTransferRestriction/title"
 msgstr "Перавод золата забаронены."
 
-msgid "newYear/buyToy/cancel"
-msgstr "Скасаваць"
-
-msgid "newYear/buyToy/message"
-msgstr "Купіць аздобку за %(price)s?"
-
-msgid "newYear/buyToy/submit"
-msgstr "Купіць"
-
-msgid "newYear/buyToy/title"
-msgstr "Пацвярджэнне аперацыі"
-
 msgid "nextBattleOptionConfirmation/cancel"
 msgstr "Не"
 
@@ -2552,6 +2528,23 @@ msgstr "Пацвердзіць"
 
 msgid "questsConfirmDiscardDialog/title"
 msgstr "Скідванне ходу выканання"
+
+msgid "questsConfirmPm3Dialog/cancel"
+msgstr "Скасаваць"
+
+msgid "questsConfirmPm3Dialog/checkBox"
+msgstr "Не пытаць мяне больш"
+
+msgid "questsConfirmPm3Dialog/message"
+msgstr ""
+"Пры выбары баявой задачы «%(newQuest)s» выкананне задачы «%(oldQuest)s» "
+"будзе прыпынена."
+
+msgid "questsConfirmPm3Dialog/submit"
+msgstr "Пацвердзіць"
+
+msgid "questsConfirmPm3Dialog/title"
+msgstr "Пацвярджэнне выбару задачы"
 
 msgid "questsConfirmProgressDialog/cancel"
 msgstr "Скасаваць"

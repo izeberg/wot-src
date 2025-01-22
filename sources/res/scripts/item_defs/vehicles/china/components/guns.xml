@@ -106,6 +106,7 @@
 		<_122-mm_60-122T_T>31014</_122-mm_60-122T_T>
 		<_122mm_Type_57_I_M>31015</_122mm_Type_57_I_M>
 		<_122mm_Type_57_I>31016</_122mm_Type_57_I>
+		<_130mm_59_130TA_bob>31017</_130mm_59_130TA_bob>
 	</ids>
 	<shared>
 		<_37mm_APX_SA18>
@@ -3799,7 +3800,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>181 160</piercingPower>
+					<piercingPower>212 201</piercingPower>
 				</_100mm_UBR-412>
 				<_100mm_UBR-412P>
 					<defaultPortion>
@@ -3812,7 +3813,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>241 213</piercingPower>
+					<piercingPower>258 243</piercingPower>
 				</_100mm_UBR-412P>
 				<_100mm_UOF-412>
 					<defaultPortion>
@@ -4126,7 +4127,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>189 167</piercingPower>
+					<piercingPower>230 215</piercingPower>
 				</_100mm_UBR-412>
 				<_100mm_UBR-412P>
 					<defaultPortion>
@@ -4139,7 +4140,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>244 215</piercingPower>
+					<piercingPower>265 255</piercingPower>
 				</_100mm_UBR-412P>
 				<_100mm_UOF-412>
 					<defaultPortion>
@@ -8224,6 +8225,118 @@
 				</_130mm_HE>
 			</shots>
 		</_130mm_59_130TA>
+		<_130mm_59_130TA_bob>
+			<userString>#china_vehicles:_130mm_59_130TA</userString>
+			<tags/>
+			<level>10</level>
+			<price>330000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.62
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.66
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_largeext_mb</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -18.0 1.0 -18.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				15.4
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>28</maxAmmo>
+			<aimingTime>
+				3.42
+				<!--BW_String-->
+			</aimingTime>
+			<weight>3090</weight>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_130mm_AP>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1020</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>250 232</piercingPower>
+				</_130mm_AP>
+				<_130mm_HEAT>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>930</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>340 340</piercingPower>
+				</_130mm_HEAT>
+				<_130mm_HE>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>930</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>65 65</piercingPower>
+				</_130mm_HE>
+			</shots>
+		</_130mm_59_130TA_bob>
 		<_130mm_59_130TA_7x7>
 			<userString>#china_vehicles:_130mm_59_130TA</userString>
 			<tags/>
@@ -8691,7 +8804,7 @@
 				<recoilEffect>large</recoilEffect>
 			</recoil>
 			<effects>shot_largeext_mb</effects>
-			<reloadEffect>reload_automat_reloading_115_152</reloadEffect>
+			<reloadEffect>reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -18.0 1.0 -18.0

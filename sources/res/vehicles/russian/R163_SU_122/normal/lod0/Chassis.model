@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.469887 -0.001240 -2.963184</min>
+		<max>1.469890 0.961207 2.839761</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R163_SU_122/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R163_SU_122/normal/lod0/Chassis</nodefullVisual>
+</root>

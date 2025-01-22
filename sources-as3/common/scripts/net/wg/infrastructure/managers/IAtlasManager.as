@@ -17,6 +17,8 @@ package net.wg.infrastructure.managers
       
       function drawGraphics(param1:String, param2:String, param3:Graphics, param4:String = "", param5:Boolean = false, param6:Boolean = false, param7:Boolean = false) : void;
       
+      function drawAtlasItemPart(param1:String, param2:String, param3:Graphics, param4:int, param5:int) : void;
+      
       function getNewBitmapData(param1:String, param2:String, param3:String = "") : BitmapData;
       
       function waitForAtlasInit(param1:String, param2:Function) : void;

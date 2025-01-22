@@ -90,8 +90,10 @@
 		<fn_effect_bin>particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_flame_start_auto.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/hit_flame_small_aep.eff</fn_effect_bin>
-		<fn_effect_bin>particles/shells_eff/trace_flame_small_aep_alt.eff</fn_effect_bin>
-		<fn_effect_bin>particles/shells_eff/trace_flame_small_aep.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn_alt.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/fl_overheat_long_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/fl_overheat.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/s31_strv_k/soul_shimmer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/s31_strv_k/holy_settling.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/s31_strv_k/holy_settling2.vfx</fn_effect_bin>
@@ -110,10 +112,12 @@
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/customization/f18_bat_chatillon25t_3dst_bp_mt/f18_bat_chatillon25t_flame.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/cosmic_boost_trail_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/shells_eff/trace_flame_small_aep.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/shells_eff/trace_flame_small_aep_alt.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/shells_eff/trace_flame_rbn.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/shells_eff/trace_flame_rbn_alt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/shells_eff/hit_flame_small_aep.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/shots/shot_flame_start_auto.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/shots/fl_overheat_long_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/shots/fl_overheat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/CorrodedHit/CorrodedHit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/CorrodedHit/CorrodedHit_Fail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/CorrodedHit/CorrodedHit_Trace.vfx</fn_effect_bin>
@@ -270,6 +274,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_bright_flash_HE_4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flame_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flame_small_aep.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flame_tank_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flash_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flash_AP_1_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/hit_flash_AP_3_1.vfx</fn_effect_bin>
@@ -478,9 +483,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_explose_SCA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_explose_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_explose_SFA_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_rbn.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_rbn_alt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_small_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_small_aep.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_flame_small_aep_ALT.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_ground_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_ground_SFA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/trace_hc_1.vfx</fn_effect_bin>
@@ -1448,6 +1453,7 @@
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SFA_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/hit_flame_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/hit_flame_tank_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/oilHit_AP_1.eff</fn_effect_bin>
@@ -2634,8 +2640,10 @@
 		<fn_effect_bin>particles/tank/rocket_accelerator/start_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_flame_start_auto.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/hit_flame_small_aep.eff</fn_effect_bin>
-		<fn_effect_bin>particles/shells_eff/trace_flame_small_aep_alt.eff</fn_effect_bin>
-		<fn_effect_bin>particles/shells_eff/trace_flame_small_aep.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn_alt.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/trace_flame_rbn.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/fl_overheat_long_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/fl_overheat.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/f18_bat_chatillon25t_3dst_bp_mt/f18_bat_chatillon25t_distortion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/f18_bat_chatillon25t_3dst_bp_mt/f18_bat_chatillon25t_flame.eff</fn_effect_bin>
@@ -2663,10 +2671,12 @@
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/f18_bat_chatillon25t_3dst_bp_mt/f18_bat_chatillon25t_flame.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/f18_bat_chatillon25t_3dst_bp_mt/f18_bat_chatillon25t_distortion.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/tank/shots/shot_flame_start_auto.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/shells_eff/trace_flame_rbn.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/shells_eff/trace_flame_rbn_alt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/shells_eff/hit_flame_small_aep.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/shells_eff/trace_flame_small_aep_alt.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/shells_eff/trace_flame_small_aep.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/shots/shot_flame_start_auto.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/shots/fl_overheat_long_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/shots/fl_overheat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/cosmic_boost_trail_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/a143_m_v_y_3dst/a143_m_v_y_3dst_distortion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/customization/a143_m_v_y_3dst/a143_m_v_y_3dst_distortion.vfx</fn_effect_bin>
@@ -2836,6 +2846,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_bright_flash_HE_4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flame_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flame_small_aep.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flame_tank_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flash_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flash_AP_1_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/hit_flash_AP_3_1.vfx</fn_effect_bin>
@@ -3048,9 +3059,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_explose_SCA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_explose_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_explose_SFA_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_rbn.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_rbn_alt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_small_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_small_aep.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_flame_small_aep_ALT.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_ground_SFA.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_ground_SFA_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/trace_hc_1.vfx</fn_effect_bin>
@@ -4149,6 +4160,7 @@
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SFA_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/groundHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/hit_flame_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/hit_flame_tank_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/metalHit_APFSDS_5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/oilHit_AP_1.eff</fn_effect_bin>

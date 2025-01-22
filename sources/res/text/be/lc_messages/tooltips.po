@@ -542,9 +542,8 @@ msgstr ""
 "Можа прычыніць пашкоджанні, а таксама пашкодзіць унутраныя модулі і "
 "танкістаў экіпажа нават без прабіцця брані. Мае больш высокую імавернасць "
 "прычынення пашкоджанняў у параўнанні са снарадамі іншых тыпаў, хоць само "
-"значэнне пашкоджанняў можа быць невысокае. Можа прабіць тонкія экраны і "
-"некаторыя разбуральныя перашкоды. Пры траплянні ў цэль дэзарыентуе экіпаж "
-"праціўніка."
+"значэнне пашкоджанняў можа быць невысокім. Можа прабіць тонкія экраны і "
+"некаторыя разбуральныя перашкоды."
 
 msgid "advanced/HIGH_EXPLOSIVE"
 msgstr ""
@@ -870,6 +869,9 @@ msgstr ""
 "манеўраваць і пераадольваць пад'ёмы. Павялічвае максімальную хуткасць машыны"
 " наперад і назад, што дазваляе хутчэй займаць пазіцыю і пазбягаць агню ў "
 "адказ."
+
+msgid "advanced/vehicleAutoShootFlameGun"
+msgstr "?empty?"
 
 msgid "advanced/vehicleChassis"
 msgstr ""
@@ -1777,6 +1779,9 @@ msgstr "Абсталяванне на выбар"
 
 msgid "battlePassOffer/title/new_device_mi_gift"
 msgstr "Абсталяванне на выбар"
+
+msgid "battlePassOffer/title/new_device_pm3_gift"
+msgstr "Штатнае абсталяванне"
 
 msgid "battlePassOffer/title/recertification_gift"
 msgstr "Бланк перападрыхтоўкі"
@@ -4860,7 +4865,7 @@ msgid "equipment/restriction"
 msgstr "Абмежаванне:"
 
 msgid "event/squad/disable/body"
-msgstr "Выберыце %(tankName)%s"
+msgstr "Выберыце %(tankName)s"
 
 msgid "event/squad/disable/header"
 msgstr "Увага!"
@@ -5393,10 +5398,8 @@ msgstr "Задачы для гэтага тыпу тэхнікі выканан�
 
 msgid "hangar/header/personalMissions/disabledAll/body"
 msgstr ""
-"Вы не можаце выконваць задачы абедзвюх кампаній на тэхніцы I–III узроўняў. "
-"Выберыце машыну IV або вышэйшага ўзроўню, каб атрымаць доступ да кампаніі "
-"«Доўгачаканае падмацаванне», або машыну VI або вышэйшага ўзроўню, каб "
-"атрымаць доступ да абедзвюх кампаній."
+"Для тэхнікі I-III узроўняў праходжанне кампаній недаступнае. Выберыце машыну"
+" IV і вышэйшага ўзроўню."
 
 msgid "hangar/header/personalMissions/disabledAll/header"
 msgstr "Кампаніі недаступныя"
@@ -5410,7 +5413,7 @@ msgid "hangar/header/personalMissions/done/header"
 msgstr "Усе задачы выкананы з адзнакай"
 
 msgid "hangar/header/personalMissions/doneAll/body"
-msgstr "Вы выканалі ўсе даступныя асабістыя баявыя задачы абедзвюх кампаній."
+msgstr "Вы выканалі ўсе даступныя асабістыя баявыя задачы ўсіх кампаній."
 
 msgid "hangar/header/personalMissions/doneAll/header"
 msgstr "Асабістыя баявыя задачы недаступныя"
@@ -5424,9 +5427,8 @@ msgstr "Задачы для гэтага тыпу тэхнікі выканан�
 
 msgid "hangar/header/personalMissions/lowLevel/body"
 msgstr ""
-"Выбрана машына занадта нізкага ўзроўню. Каб атрымаць доступ да задач "
-"кампаніі «Другі фронт», выберыце машыну ўзроўню, які адпавядае бягучай "
-"аперацыі."
+"Выбрана машына непрыдатнага ўзроўню. Каб атрымаць доступ да задач кампаніі, "
+"выберыце машыну ўзроўню, які адпавядае бягучай аперацыі."
 
 msgid "hangar/header/personalMissions/lowLevel/header"
 msgstr "Няма даступных задач"
@@ -5441,13 +5443,11 @@ msgstr "Задача недаступная"
 
 msgid "hangar/header/personalMissions/noVehicle/body"
 msgstr ""
-"Вы не можаце выконваць задачы абедзвюх кампаній на тэхніцы I–III узроўняў. "
-"Выберыце машыну IV або вышэйшага ўзроўню, каб атрымаць доступ да кампаніі "
-"«Доўгачаканае падмацаванне», або машыну VI або вышэйшага ўзроўню, каб "
-"атрымаць доступ да абедзвюх кампаній."
+"Для тэхнікі I-III і XI узроўняў выкананне бягучых задач недаступнае. "
+"Выберыце машыну з IV па X узровень."
 
 msgid "hangar/header/personalMissions/noVehicle/header"
-msgstr "Кампаніі недаступныя"
+msgstr "Кампанія недаступная"
 
 msgid "hangar/header/personalMissions/operation_disabled/body"
 msgstr ""
@@ -5479,8 +5479,8 @@ msgstr "Задачы для гэтага тыпу тэхнікі выканан�
 
 msgid "hangar/header/personalMissions2/noVehicle/body"
 msgstr ""
-"Вы не можаце выконваць бягучыя задачы кампаніі на тэхніцы I–V узроўняў. "
-"Выберыце машыну VI або вышэйшага ўзроўню."
+"Для тэхнікі I–V і XI узроўняў выкананне бягучых задач недаступнае. Выберыце "
+"машыну з VI па X узровень."
 
 msgid "hangar/header/personalMissions2/noVehicle/header"
 msgstr "Кампанія недаступная"
@@ -5492,6 +5492,14 @@ msgstr ""
 "кампаніі."
 
 msgid "hangar/header/personalMissions2/unavailableFull/header"
+msgstr "Кампанія недаступная"
+
+msgid "hangar/header/personalMissions3/noVehicle/body"
+msgstr ""
+"Для тэхнікі I–V узроўняў выкананне бягучых задач кампаніі недаступнае. "
+"Выберыце машыну VI узроўню і вышэйшага."
+
+msgid "hangar/header/personalMissions3/noVehicle/header"
 msgstr "Кампанія недаступная"
 
 msgid "hangar/header/quests/bottom"
@@ -5950,6 +5958,14 @@ msgstr "Націсніце, каб адкрыць спіс даступных р
 
 msgid "header/battleType/header"
 msgstr "Выбар рэжыму бою"
+
+msgid "header/bobSquad/body"
+msgstr ""
+"Стварэнне фармавання з 2-3 гульцоў для сумеснай гульні з баях рэжыму «Бітва "
+"блогераў»."
+
+msgid "header/bobSquad/header"
+msgstr "Звяз"
 
 msgid "header/buttons/available"
 msgstr "Маецца"
@@ -6660,7 +6676,7 @@ msgid "marathon/off/header"
 msgstr "Падзея недаступная"
 
 msgid "marathon/state/complete"
-msgstr "Завяршылася"
+msgstr "Завершана"
 
 msgid "marathon/state/end"
 msgstr "Да завяршэння: %(value)s"
@@ -7264,6 +7280,42 @@ msgstr ""
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "Бітва блогераў 2021"
 
+msgid "notrecruitedtankman/bob25_commander_1/desc"
+msgstr ""
+"Выдавалася ва ўзнагароду падчас падзеі «Бітва блогераў 2025». У камандзіра "
+"вывучаны «нулявы» навык «Таварышы па зброі» і ад 1 да 4 навыкаў на выбар ў "
+"залежнасці ад занятага па выніках падзеі месца."
+
+msgid "notrecruitedtankman/bob25_commander_1/label"
+msgstr "Падзея «Бітва блогераў 2025»"
+
+msgid "notrecruitedtankman/bob25_commander_2/desc"
+msgstr ""
+"Выдавалася ва ўзнагароду падчас падзеі «Бітва блогераў 2025». У камандзіра "
+"вывучаны «нулявы» навык «Таварышы па зброі» і ад 1 да 4 навыкаў на выбар ў "
+"залежнасці ад занятага па выніках падзеі месца."
+
+msgid "notrecruitedtankman/bob25_commander_2/label"
+msgstr "Падзея «Бітва блогераў 2025»"
+
+msgid "notrecruitedtankman/bob25_commander_3/desc"
+msgstr ""
+"Выдавалася ва ўзнагароду падчас падзеі «Бітва блогераў 2025». У камандзіра "
+"вывучаны «нулявы» навык «Таварышы па зброі» і ад 1 да 4 навыкаў на выбар ў "
+"залежнасці ад занятага па выніках падзеі месца."
+
+msgid "notrecruitedtankman/bob25_commander_3/label"
+msgstr "Падзея «Бітва блогераў 2025»"
+
+msgid "notrecruitedtankman/bob25_commander_4/desc"
+msgstr ""
+"Выдавалася ва ўзнагароду падчас падзеі «Бітва блогераў 2025». У камандзіра "
+"вывучаны «нулявы» навык «Таварышы па зброі» і ад 1 да 4 навыкаў на выбар ў "
+"залежнасці ад занятага па выніках падзеі месца."
+
+msgid "notrecruitedtankman/bob25_commander_4/label"
+msgstr "Падзея «Бітва блогераў 2025»"
+
 msgid "notrecruitedtankman/bp-commander-1_1/desc"
 msgstr ""
 "Мэтанакіраваная і ўпартая. З дзяцінства абазнаная ў асаблівасцях баявога "
@@ -7848,7 +7900,7 @@ msgid "notrecruitedtankman/ny22defaultGirl/howToGetInfo"
 msgstr "Дасягнуць пададзенага ўзроўню святочнасці."
 
 msgid "notrecruitedtankman/ny22defaultGirl/label"
-msgstr "Наш Новы год 2025"
+msgstr "Навагодняе наступленне 2022"
 
 msgid "notrecruitedtankman/ny22men/desc"
 msgstr ""
@@ -7872,11 +7924,11 @@ msgstr "Навагодняе наступленне 2022"
 msgid "notrecruitedtankman/ny22woman/desc"
 msgstr ""
 "Выдавалася ва ўзнагароду за дасягненне пэўнага ўзроўню святочнасці ў межах "
-"падзеі «Наш Новы год». У танкісткі вывучаны «Таварышы па зброі», а таксама "
-"дастаткова досведу для дадатковага навыку на выбар."
+"падзеі «Навагодняе наступленне 2022». У дзяўчыны вывучаны «Таварышы па "
+"зброі», а таксама дастаткова досведу для дадатковага навыку на выбар."
 
 msgid "notrecruitedtankman/ny22woman/label"
-msgstr "Наш Новы год 2024"
+msgstr "Навагодняе наступленне 2022"
 
 msgid "notrecruitedtankman/ny23_girl_1/desc"
 msgstr ""
@@ -8628,10 +8680,10 @@ msgstr "Падзея «Час герояў»"
 msgid "notrecruitedtankman/tankmen_T3_1/desc"
 msgstr ""
 "Кірыл Фархутдзінаў (пазыўны «Легат») — камандзір шматзадачнага танкавага "
-"звязу, самы дасведчаны і хрышчоны агнём у баях афіцэр штурмавога крыла "
-"«Арбіты». Стрыманы і рацыянальны, не па гадах разважлівы і асцярожны. Беражэ"
-" асабовы склад, аддаючы перавагу начным вылазкам і робячы стаўку на "
-"непрыкметнасць, імклівасць і вывераную тактыку."
+"звязу, самы дасведчаны афіцэр штурмавога крыла «Арбіты», загартаваны ў баях."
+" Стрыманы і рацыянальны, не па гадах разважлівы і асцярожны. Беражэ асабовы "
+"склад, аддаючы перавагу начным вылазкам і робячы стаўку на непрыкметнасць, "
+"імклівасць і вывераную тактыку."
 
 msgid "notrecruitedtankman/tankmen_T3_1/label"
 msgstr "Праект «Арбіта», спецатрад Легата"
@@ -9623,6 +9675,15 @@ msgstr ""
 msgid "only10Mode/header"
 msgstr "Пошук баёў з тэхнікай толькі X узроўню"
 
+msgid "paragons/tankCarousel/card/body"
+msgstr ""
+"Для атрымання перамажыце ў баі ў любым з рэжымаў: Выпадковы бой, Генеральная"
+" бітва, Націск, Рангавы бой, Лінія фронту, Палігон, Акрада, Умацаваныя раёны"
+" і Кланавыя баі."
+
+msgid "paragons/tankCarousel/card/header"
+msgstr "Ачкі праекта «Арбіта»"
+
 msgid "parameter/categories"
 msgstr "Катэгорыя: "
 
@@ -9683,6 +9744,9 @@ msgstr ""
 
 msgid "perks/irrelevant"
 msgstr "Несумяшчальная спецыялізацыя. Навык не працуе."
+
+msgid "perks/warning"
+msgstr "Звярніце ўвагу!"
 
 msgid "perks/zeroPerkInfo"
 msgstr "«Нулявы» навык не патрабуе досведу і не можа быць зменены гульцом."
@@ -10736,6 +10800,11 @@ msgstr "Не выканана"
 msgid "quests/status/notready"
 msgstr "Баявая задача недаступная"
 
+msgid "quests/unavailable/bobRegistration"
+msgstr ""
+"Каб атрымаць доступ да гэтых задач, уступіце ў адну з камандаў Бітвы "
+"блогераў, калі яшчэ ёсць такая магчымасць."
+
 msgid "quests/unavailable/bottom"
 msgstr "Задача недаступная"
 
@@ -11192,6 +11261,9 @@ msgstr ""
 msgid "researchPage/vehicle/button/compare/disabled/header"
 msgstr "Дадаць немагчыма"
 
+msgid "researchPage/vehicle/paragons/resetVehicle/progressPoints/text"
+msgstr "%(points)s Ачкі праекта «Арбіта» за перамогу"
+
 msgid "researchPage/vehicle/status/earlyAccessNotEnoughTokens/header"
 msgstr "Машына недаступная"
 
@@ -11211,6 +11283,12 @@ msgid "researchPage/vehicle/status/earlyAccessSoon/text"
 msgstr ""
 "Магчымасць даследаваць і купіць гэту машыну з'явіцца пасля заканчэння "
 "ранняга доступу."
+
+msgid "researchPage/vehicle/status/lockedByParagons/header"
+msgstr "Даследаванне недаступнае"
+
+msgid "researchPage/vehicle/status/lockedByParagons/text"
+msgstr "Галіна разблакуецца за асаблівую ўзнагароду ў праекце «Арбіта»."
 
 msgid "researchPage/vehicle/status/parentModuleIsLocked/body"
 msgstr ""
@@ -11821,6 +11899,9 @@ msgstr "Падкаліберныя снарады"
 msgid "storage/filter/shells/btns/type/armor_piercing_fsds"
 msgstr "Бранябойныя апераныя падкаліберныя снарады"
 
+msgid "storage/filter/shells/btns/type/flame"
+msgstr "Агнямётная сумесь"
+
 msgid "storage/filter/shells/btns/type/high_explosive"
 msgstr "Асколачна-фугасныя снарады"
 
@@ -12027,6 +12108,20 @@ msgstr ""
 "Дапрацаваная сістэма данабівання дазваляе паменшыць базавы час данабівання "
 "снарадаў."
 
+msgid "tank_params/desc/autoShootFireUntilOverheatTime"
+msgstr ""
+"Час няспыннай стральбы ў секундах, за які гармата з цалкам ахалоджанага "
+"стану пераходзіць у перагрэты стан."
+
+msgid "tank_params/desc/autoShootFlameChangeShellTime"
+msgstr ""
+"Час паміж пачаткам пераключэння агнясумесі і гатоўнасці да стральбы. "
+"Падключэнне агнясумесі адбываецца ў пачатку бою або пры змене тыпу "
+"вогнесумесі."
+
+msgid "tank_params/desc/autoShootFlameOverheatCoolingTime"
+msgstr "Час, за які гармата астыне і будзе гатовая да далейшай стральбы."
+
 msgid "tank_params/desc/avgDamage"
 msgstr ""
 "Сярэднія пашкоджанні, якія прычыняюцца базавым снарадам за адзін стрэл пры "
@@ -12036,6 +12131,11 @@ msgid "tank_params/desc/avgDamagePerMinute"
 msgstr ""
 "Пашкоджанні, якія можна патэнцыйна прычыніць машыне супраціўніка, калі на "
 "працягу 1 хвіліны ўсе траплянні будуць прабіваць браню."
+
+msgid "tank_params/desc/avgDamagePerSecond"
+msgstr ""
+"Колькасць пашкоджанняў, якія патэнцыйна прычыняюцца праціўніку за 1 секунду "
+"пры няспынным прабіцці брані."
 
 msgid "tank_params/desc/avgPiercingPower"
 msgstr ""
@@ -12195,6 +12295,9 @@ msgstr ""
 msgid "tank_params/desc/reloadTime"
 msgstr "Колькасць стрэлаў за хвіліну."
 
+msgid "tank_params/desc/reloadTimePerSecond"
+msgstr "Колькасць стрэлаў за секунду."
+
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr ""
 "Час, за які гармата (або абедзве гарматы, калі ў машыны спараная гарматная "
@@ -12256,6 +12359,16 @@ msgstr ""
 "Час на пераключэнне залежыць ад стану рухавіка. Калі рухавік пашкоджаны, час"
 " на пераключэнне павялічваецца. Калі рухавік выведзены са строю, "
 "пераключыцца ў іншы рэжым немагчыма."
+
+msgid "tank_params/desc/thermalVisionDistance"
+msgstr ""
+"Пірометр дазваляе выявіць у сектары пакрыцця прылады тэхніку праціўніка."
+
+msgid "tank_params/desc/thermalVisionReuseAndDuration"
+msgstr ""
+"Дазваляе выявіць машыны праціўніка ў сектары пакрыцця прылады, ігнаруючы іх "
+"маскіроўку. Пры гэтым тэхніка, чые габарытныя пункты знаходзяцца за "
+"ўкрыццём, не будзе выяўлена."
 
 msgid "tank_params/desc/timeOfReaching"
 msgstr ""
@@ -12392,10 +12505,7 @@ msgid "tankman/vehicleSpecialization"
 msgstr "%(tankName)s, %(level)s"
 
 msgid "tanksFilter/counter/close/body"
-msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
-
-msgid "tanksFilter/counter/close/header"
-msgstr "Паставіць стандартныя налады"
+msgstr "Націсніце, каб скінуць налады фільтра на стандартны стан."
 
 msgid "tanks_carousel/buy_slot/body"
 msgstr "Націсніце, каб адкрыць акенца пацвярджэння куплі слота."
@@ -12812,7 +12922,7 @@ msgstr ""
 "• гулец можа пісаць толькі ў чат звязу."
 
 msgid "turnOffCombatChat/header"
-msgstr "Адключыць чат з хаўруснікамі"
+msgstr "Адключыць чат"
 
 msgid "useFreeXP/body"
 msgstr ""
@@ -12842,7 +12952,7 @@ msgstr "Дадаць немагчыма"
 msgid "vehPostProgressionView/unlockLevel/body"
 msgstr ""
 "Дайдзіце да {level} узроўню Палявой мадэрнізацыі, каб атрымаць доступ да "
-"гэтай мадыфікацыі."
+"гэтай мадэрнізацыі."
 
 msgid "vehPostProgressionView/unlockLevel/header"
 msgstr "Патрэбны ўзровень"
@@ -12876,6 +12986,9 @@ msgstr "Досвед за першую перамогу за дзень"
 
 msgid "vehicle/damage"
 msgstr "<h1>Пашкоджанні</h1> <h2>(hp)</h2>"
+
+msgid "vehicle/deal/bob/main"
+msgstr "Машына для падзеі «Бітва блогераў 2025»"
 
 msgid "vehicle/deal/epic/main"
 msgstr "Машына для рэжыму «Лінія фронту»"

@@ -542,8 +542,7 @@ msgstr ""
 "Может нанести урон, а также повредить внутренние модули и членов экипажа "
 "даже без пробития брони. Имеет более высокую вероятность нанесения урона по "
 "сравнению со снарядами других типов, хотя само значение урона может быть "
-"невысоким. Может пробить тонкие экраны и некоторые разрушаемые препятствия. "
-"При попадании в цель дезориентирует экипаж противника."
+"невысоким. Может пробить тонкие экраны и некоторые разрушаемые препятствия."
 
 msgid "advanced/HIGH_EXPLOSIVE"
 msgstr ""
@@ -872,6 +871,9 @@ msgstr ""
 "маневрировать и преодолевать подъёмы. Увеличивает максимальную скорость "
 "машины вперёд и назад, что позволяет быстрее занимать позицию и избегать "
 "ответного огня."
+
+msgid "advanced/vehicleAutoShootFlameGun"
+msgstr "?empty?"
 
 msgid "advanced/vehicleChassis"
 msgstr ""
@@ -1787,6 +1789,9 @@ msgstr "Оборудование на выбор"
 
 msgid "battlePassOffer/title/new_device_mi_gift"
 msgstr "Оборудование на выбор"
+
+msgid "battlePassOffer/title/new_device_pm3_gift"
+msgstr "Штатное оборудование"
 
 msgid "battlePassOffer/title/recertification_gift"
 msgstr "Бланк переподготовки"
@@ -4857,7 +4862,7 @@ msgid "equipment/restriction"
 msgstr "Ограничение:"
 
 msgid "event/squad/disable/body"
-msgstr "Выберите %(tankName)%s"
+msgstr "Выберите %(tankName)s"
 
 msgid "event/squad/disable/header"
 msgstr "Внимание!"
@@ -5390,10 +5395,8 @@ msgstr "Задачи для этого типа техники выполнен�
 
 msgid "hangar/header/personalMissions/disabledAll/body"
 msgstr ""
-"Для техники I-III уровней выполнение задач обеих кампаний недоступно. "
-"Выберите машину IV уровня и выше, чтобы получить доступ к кампании "
-"«Долгожданное подкрепление» или машину VI уровня и выше для доступа к обеим "
-"кампаниям."
+"Для техники I-III уровней прохождение кампаний недоступно. Выберите машину "
+"IV уровня и выше."
 
 msgid "hangar/header/personalMissions/disabledAll/header"
 msgstr "Кампании недоступны"
@@ -5407,7 +5410,7 @@ msgid "hangar/header/personalMissions/done/header"
 msgstr "Все задачи выполнены c отличием"
 
 msgid "hangar/header/personalMissions/doneAll/body"
-msgstr "Вы выполнили все доступные личные боевые задачи обеих компаний."
+msgstr "Вы выполнили все доступные личные боевые задачи всех кампаний."
 
 msgid "hangar/header/personalMissions/doneAll/header"
 msgstr "Личные боевые задачи недоступны"
@@ -5421,8 +5424,8 @@ msgstr "Задачи для этого типа техники выполнен�
 
 msgid "hangar/header/personalMissions/lowLevel/body"
 msgstr ""
-"Выбрана машина слишком низкого уровня. Для доступа к задачам кампании "
-"«Второй фронт» выберите машину соответствующего текущей операции уровня."
+"Выбрана машина неподходящего уровня. Для доступа к задачам кампании выберите"
+" машину соответствующего текущей операции уровня."
 
 msgid "hangar/header/personalMissions/lowLevel/header"
 msgstr "Доступных задач нет"
@@ -5437,13 +5440,11 @@ msgstr "Выполнение недоступно"
 
 msgid "hangar/header/personalMissions/noVehicle/body"
 msgstr ""
-"Для техники I-III уровней выполнение задач обеих кампаний недоступно. "
-"Выберите машину IV уровня и выше, чтобы получить доступ к кампании "
-"«Долгожданное подкрепление» или машину VI уровня и выше для доступа к обеим "
-"кампаниям."
+"Для техники I-III и XI уровней выполнение текущих задач кампании недоступно."
+" Выберите машину с IV по X уровень."
 
 msgid "hangar/header/personalMissions/noVehicle/header"
-msgstr "Кампании недоступны"
+msgstr "Кампания недоступна"
 
 msgid "hangar/header/personalMissions/operation_disabled/body"
 msgstr ""
@@ -5475,8 +5476,8 @@ msgstr "Задачи для этого типа техники выполнен�
 
 msgid "hangar/header/personalMissions2/noVehicle/body"
 msgstr ""
-"Для техники I–V уровней выполнение текущих задач кампании недоступно. "
-"Выберите машину VI уровня и выше."
+"Для техники I–V и XI уровней выполнение текущих задач кампании недоступно. "
+"Выберите машину с VI по X уровень."
 
 msgid "hangar/header/personalMissions2/noVehicle/header"
 msgstr "Кампания недоступна"
@@ -5488,6 +5489,14 @@ msgstr ""
 "кампании."
 
 msgid "hangar/header/personalMissions2/unavailableFull/header"
+msgstr "Кампания недоступна"
+
+msgid "hangar/header/personalMissions3/noVehicle/body"
+msgstr ""
+"Для техники I–V уровней выполнение текущих задач кампании недоступно. "
+"Выберите машину VI уровня и выше."
+
+msgid "hangar/header/personalMissions3/noVehicle/header"
 msgstr "Кампания недоступна"
 
 msgid "hangar/header/quests/bottom"
@@ -5951,6 +5960,14 @@ msgstr "Нажмите, чтобы открыть список доступны�
 
 msgid "header/battleType/header"
 msgstr "Выбор режима боя"
+
+msgid "header/bobSquad/body"
+msgstr ""
+"Создание формирования из 2-3 игроков для совместной игры в боях режима "
+"«Битва блогеров»."
+
+msgid "header/bobSquad/header"
+msgstr "Взвод"
 
 msgid "header/buttons/available"
 msgstr "В наличии"
@@ -7275,6 +7292,42 @@ msgstr ""
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "Битва блогеров 2021"
 
+msgid "notrecruitedtankman/bob25_commander_1/desc"
+msgstr ""
+"Выдавался в награду во время события «Битва блогеров 2025». У командира "
+"изучен «нулевой» навык «Боевое братство» и от 1 до 4 навыков на выбор в "
+"зависимости от занятого по итогам события места."
+
+msgid "notrecruitedtankman/bob25_commander_1/label"
+msgstr "Событие «Битва блогеров 2025»"
+
+msgid "notrecruitedtankman/bob25_commander_2/desc"
+msgstr ""
+"Выдавался в награду во время события «Битва блогеров 2025». У командира "
+"изучен «нулевой» навык «Боевое братство» и от 1 до 4 навыков на выбор в "
+"зависимости от занятого по итогам события места."
+
+msgid "notrecruitedtankman/bob25_commander_2/label"
+msgstr "Событие «Битва блогеров 2025»"
+
+msgid "notrecruitedtankman/bob25_commander_3/desc"
+msgstr ""
+"Выдавался в награду во время события «Битва блогеров 2025». У командира "
+"изучен «нулевой» навык «Боевое братство» и от 1 до 4 навыков на выбор в "
+"зависимости от занятого по итогам события места."
+
+msgid "notrecruitedtankman/bob25_commander_3/label"
+msgstr "Событие «Битва блогеров 2025»"
+
+msgid "notrecruitedtankman/bob25_commander_4/desc"
+msgstr ""
+"Выдавался в награду во время события «Битва блогеров 2025». У командира "
+"изучен «нулевой» навык «Боевое братство» и от 1 до 4 навыков на выбор в "
+"зависимости от занятого по итогам события места."
+
+msgid "notrecruitedtankman/bob25_commander_4/label"
+msgstr "Событие «Битва блогеров 2025»"
+
 msgid "notrecruitedtankman/bp-commander-1_1/desc"
 msgstr ""
 "Целеустремлённая и упрямая. С детства хорошо знакома с особенностями боевого"
@@ -7865,7 +7918,7 @@ msgid "notrecruitedtankman/ny22defaultGirl/howToGetInfo"
 msgstr "Достичь указанного уровня атмосферы праздника."
 
 msgid "notrecruitedtankman/ny22defaultGirl/label"
-msgstr "Наш Новый год 2025"
+msgstr "Новогоднее наступление 2022"
 
 msgid "notrecruitedtankman/ny22men/desc"
 msgstr ""
@@ -7889,11 +7942,11 @@ msgstr "Новогоднее наступление 2022"
 msgid "notrecruitedtankman/ny22woman/desc"
 msgstr ""
 "Выдавалась в награду за достижение определённого уровня атмосферы праздника "
-"в рамках события «Наш Новый год». У девушки изучено «Боевое братство», а "
-"также достаточно опыта на дополнительный навык на выбор."
+"в рамках события «Новогоднее наступление 2022». У девушки изучено «Боевое "
+"братство», а также достаточно опыта на дополнительный навык на выбор."
 
 msgid "notrecruitedtankman/ny22woman/label"
-msgstr "Наш Новый год 2024"
+msgstr "Новогоднее наступление 2022"
 
 msgid "notrecruitedtankman/ny23_girl_1/desc"
 msgstr ""
@@ -9649,6 +9702,15 @@ msgstr ""
 msgid "only10Mode/header"
 msgstr "Поиск боёв с техникой только X уровня"
 
+msgid "paragons/tankCarousel/card/body"
+msgstr ""
+"Для получения победите в бою в любом из режимов: Случайный бой, Генеральное "
+"сражение, Натиск, Ранговый бой, Линия фронта, Полигон, Аркада, Укрепрайоны и"
+" Клановые бои."
+
+msgid "paragons/tankCarousel/card/header"
+msgstr "Очки проекта «Орбита»"
+
 msgid "parameter/categories"
 msgstr "Категория: "
 
@@ -9710,6 +9772,9 @@ msgstr ""
 
 msgid "perks/irrelevant"
 msgstr "Несовместимая специализация. Навык не работает."
+
+msgid "perks/warning"
+msgstr "Обратите внимание!"
 
 msgid "perks/zeroPerkInfo"
 msgstr "«Нулевой» навык не требует опыта и не может быть изменён игроком."
@@ -10767,6 +10832,11 @@ msgstr "Не выполнено"
 msgid "quests/status/notready"
 msgstr "Боевая задача недоступна"
 
+msgid "quests/unavailable/bobRegistration"
+msgstr ""
+"Чтобы получить доступ к этим задачам, вступите в одну из команд Битвы "
+"блогеров, если ещё есть такая возможность."
+
 msgid "quests/unavailable/bottom"
 msgstr "Задача недоступна"
 
@@ -11224,6 +11294,9 @@ msgstr ""
 msgid "researchPage/vehicle/button/compare/disabled/header"
 msgstr "Добавление невозможно"
 
+msgid "researchPage/vehicle/paragons/resetVehicle/progressPoints/text"
+msgstr "%(points)s Очки проекта «Орбита» за победу"
+
 msgid "researchPage/vehicle/status/earlyAccessNotEnoughTokens/header"
 msgstr "Машина недоступна"
 
@@ -11243,6 +11316,12 @@ msgid "researchPage/vehicle/status/earlyAccessSoon/text"
 msgstr ""
 "Возможность исследовать и купить данную машину появится после окончания "
 "раннего доступа."
+
+msgid "researchPage/vehicle/status/lockedByParagons/header"
+msgstr "Исследование недоступно"
+
+msgid "researchPage/vehicle/status/lockedByParagons/text"
+msgstr "Ветка разблокируется за особую награду в проекте «Орбита»."
 
 msgid "researchPage/vehicle/status/parentModuleIsLocked/body"
 msgstr ""
@@ -11850,6 +11929,9 @@ msgstr "Подкалиберные снаряды"
 msgid "storage/filter/shells/btns/type/armor_piercing_fsds"
 msgstr "Бронебойные оперённые подкалиберные снаряды"
 
+msgid "storage/filter/shells/btns/type/flame"
+msgstr "Огнемётная смесь"
+
 msgid "storage/filter/shells/btns/type/high_explosive"
 msgstr "Осколочно-фугасные снаряды"
 
@@ -12057,6 +12139,20 @@ msgstr ""
 "Доработанная система дозарядки магазина позволяет уменьшить базовое время "
 "дозарядки снарядов."
 
+msgid "tank_params/desc/autoShootFireUntilOverheatTime"
+msgstr ""
+"Время непрерывной стрельбы в секундах, за которое орудие из полностью "
+"охлаждённого состояния переходит в перегретое состояние."
+
+msgid "tank_params/desc/autoShootFlameChangeShellTime"
+msgstr ""
+"Время между началом подключения огнесмеси и готовности к стрельбе. "
+"Подключение огнесмеси происходит в начале боя или при смене типа огнесмеси."
+
+msgid "tank_params/desc/autoShootFlameOverheatCoolingTime"
+msgstr ""
+"Время, за которое орудие остынет и будет готово к последующей стрельбе."
+
 msgid "tank_params/desc/avgDamage"
 msgstr ""
 "Средний урон, наносимый базовым снарядом за один выстрел при пробитии брони."
@@ -12064,6 +12160,11 @@ msgstr ""
 msgid "tank_params/desc/avgDamagePerMinute"
 msgstr ""
 "Количество урона, потенциально наносимого противнику за 1 минуту при "
+"постоянном пробитии брони."
+
+msgid "tank_params/desc/avgDamagePerSecond"
+msgstr ""
+"Количество урона, потенциально наносимого противнику за 1 секунду при "
 "постоянном пробитии брони."
 
 msgid "tank_params/desc/avgPiercingPower"
@@ -12222,6 +12323,9 @@ msgstr ""
 msgid "tank_params/desc/reloadTime"
 msgstr "Количество выстрелов в минуту."
 
+msgid "tank_params/desc/reloadTimePerSecond"
+msgstr "Количество выстрелов в секунду."
+
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr ""
 "Время, за которое орудие (или оба орудия, если у машины спаренная орудийная "
@@ -12282,6 +12386,16 @@ msgstr ""
 "Время перехода зависит от состояния двигателя. При повреждённом двигателе "
 "время перехода увеличивается. При выведенном из строя двигателе смена режима"
 " невозможна."
+
+msgid "tank_params/desc/thermalVisionDistance"
+msgstr ""
+"Пирометр позволяет обнаружить в секторе покрытия прибора технику противника."
+
+msgid "tank_params/desc/thermalVisionReuseAndDuration"
+msgstr ""
+"Позволяет обнаружить машины противника в секторе покрытия прибора, игнорируя"
+" их маскировку. При этом техника, чьи габаритные точки находятся за "
+"укрытием, не будет обнаружена."
 
 msgid "tank_params/desc/timeOfReaching"
 msgstr ""
@@ -12422,10 +12536,7 @@ msgid "tankman/vehicleSpecialization"
 msgstr "%(tankName)s, %(level)s"
 
 msgid "tanksFilter/counter/close/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
-
-msgid "tanksFilter/counter/close/header"
-msgstr "Установить по умолчанию"
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
 
 msgid "tanks_carousel/buy_slot/body"
 msgstr "Нажмите, чтобы вызвать окно подтверждения покупки слота."
@@ -12565,16 +12676,16 @@ msgid "techTreePage/event/time"
 msgstr "До конца акции: %(time)s"
 
 msgid "techTreePage/event/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "techTreePage/event/timeLeft/hours"
 msgstr "%(hour)s ч %(min)s мин"
 
 msgid "techTreePage/event/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "techTreePage/event/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "techTreePage/eventGeneral/time"
 msgstr "До конца события: %(time)s"
@@ -12841,7 +12952,7 @@ msgstr ""
 "• игрок может писать только в чат взвода."
 
 msgid "turnOffCombatChat/header"
-msgstr "Отключить чат с союзниками"
+msgstr "Отключить чат"
 
 msgid "useFreeXP/body"
 msgstr ""
@@ -12871,7 +12982,7 @@ msgstr "Добавление невозможно"
 msgid "vehPostProgressionView/unlockLevel/body"
 msgstr ""
 "Дойдите до {level} уровня Полевой модернизации, чтобы получить доступ к этой"
-" модификации."
+" модернизации."
 
 msgid "vehPostProgressionView/unlockLevel/header"
 msgstr "Требуемый уровень"
@@ -12905,6 +13016,9 @@ msgstr "Опыт за первую победу в день"
 
 msgid "vehicle/damage"
 msgstr "<h1>Урон</h1> <h2>(hp)</h2>"
+
+msgid "vehicle/deal/bob/main"
+msgstr "Машина для события «Битва блогеров 2025»"
 
 msgid "vehicle/deal/epic/main"
 msgstr "Машина для режима «Линия фронта»"

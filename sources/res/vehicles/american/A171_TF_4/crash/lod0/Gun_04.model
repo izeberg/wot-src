@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A171_TF_4/crash/lod0/Gun_04</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A171_TF_4/crash/lod1/Gun_04</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.549129 -0.258018 -0.745182</min>
+		<max>0.197034 0.312001 4.118775</max>
+	</visibilityBox>
+</root>

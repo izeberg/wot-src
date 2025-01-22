@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/normal/lod0/Gun_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.121992 0.204405 -1.509711</min>
+		<max>0.121992 0.381566 -1.321846</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz37_Vz_59_Dravec/normal/lod1/Gun_anim_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

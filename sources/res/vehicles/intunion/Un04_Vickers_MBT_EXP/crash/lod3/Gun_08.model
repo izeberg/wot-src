@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/crash/lod3/Gun_08</nodelessVisual>
+	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/crash/lod4/Gun_08</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.670471 -0.225541 -1.657670</min>
+		<max>0.492022 0.249848 4.741339</max>
+	</visibilityBox>
+</root>

@@ -14,41 +14,44 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
-msgid "newTooltip/footer"
-msgstr "Хутка ў гульні"
+msgid "newTooltip/active/footer"
+msgstr "Выконваецца"
+
+msgid "newTooltip/active/subtitle"
+msgstr "Прагрэс па аперацыях:"
+
+msgid "newTooltip/completed/footer"
+msgstr "Выконваецца на выдатна"
+
+msgid "newTooltip/completed/footerDescription"
+msgstr "Выконвайце задачы з адзнакай, каб атрымаць усе ўзнагароды кампаніі."
+
+msgid "newTooltip/completed/subtitle"
+msgstr "Выканана задач з адзнакай: "
+
+msgid "newTooltip/completedPerfect/footer"
+msgstr "Выканана з адзнакай"
+
+msgid "newTooltip/completedPerfect/footerDescription"
+msgstr "Усе задачы кампаніі выкананы з адзнакай, узнагароды атрыманы."
+
+msgid "newTooltip/divider"
+msgstr "/"
 
 msgid "newTooltip/header"
-msgstr "Кампанія «Новыя гарызонты» ў распрацоўцы"
+msgstr "Кампанія «Новыя гарызонты»"
 
 msgid "newTooltip/operation"
 msgstr "Аперацыя «%(title)s»:"
 
-msgid "newTooltip/operations/first"
-msgstr "ARMT"
-
-msgid "newTooltip/operations/second"
-msgstr "TF-2 Clark"
-
 msgid "newTooltip/operations/third"
 msgstr "Project Murat"
-
-msgid "newTooltip/otherRewards"
-msgstr "...і іншыя ўзнагароды"
 
 msgid "newTooltip/rewardTitle"
 msgstr "Узнагароды кампаніі:"
 
-msgid "newTooltip/subtitle"
-msgstr "Задачы кампаніі:"
-
-msgid "newTooltip/vehicles/first"
-msgstr "ARMT"
-
 msgid "newTooltip/vehicles/last"
 msgstr "У распрацоўцы"
-
-msgid "newTooltip/vehicles/second"
-msgstr "TF-2 Clark"
 
 msgid "newTooltip/vehicles/third"
 msgstr "Project Murat"
@@ -60,13 +63,13 @@ msgid "oldTooltip/complete"
 msgstr "Выконваецца"
 
 msgid "oldTooltip/completed/body"
-msgstr "Выконвайце задачы з адрозненнем, каб атрымаць усе ўзнагароды кампаніі"
+msgstr "Выконвайце задачы з адзнакай, каб атрымаць усе ўзнагароды кампаніі."
 
 msgid "oldTooltip/completed/header"
 msgstr "Выконваецца на выдатна"
 
 msgid "oldTooltip/completedPerfect/body"
-msgstr "Усе задачы кампаніі выкананы з адрозненнем, узнагароды атрыманы"
+msgstr "Усе задачы кампаніі выкананы з адзнакай, узнагароды атрыманы."
 
 msgid "oldTooltip/completedPerfect/header"
 msgstr "Выканана з адзнакай"
@@ -81,7 +84,7 @@ msgid "oldTooltip/operation"
 msgstr "Аперацыя «%(title)s»:"
 
 msgid "oldTooltip/rewardTitle"
-msgstr "Узнагароды кампаніі:"
+msgstr "Узнагароды кампаній:"
 
 msgid "oldTooltip/subtitle"
 msgstr "Прагрэс па аперацыях:"

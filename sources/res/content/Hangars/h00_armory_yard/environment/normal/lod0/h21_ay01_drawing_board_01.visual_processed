@@ -38,6 +38,14 @@
 						normalMap
 						<Texture>content/Hangars/h00_armory_yard/environment/h21_ay01_Photo_ANM.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>150</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.125716 1.490554 0.085926</groupOrigin>
 			</primitiveGroup>

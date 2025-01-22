@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz35_Klevets/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.750912 -1.004816 -3.941161</min>
+		<max>1.745350 0.716412 3.642782</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz35_Klevets/crash/lod2/Hull</nodefullVisual>
+</root>

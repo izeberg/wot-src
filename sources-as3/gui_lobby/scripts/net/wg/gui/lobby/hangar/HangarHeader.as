@@ -1,6 +1,6 @@
 package net.wg.gui.lobby.hangar
 {
-   import flash.display.MovieClip;
+   import flash.display.Sprite;
    import flash.events.Event;
    import flash.geom.Rectangle;
    import net.wg.data.constants.Directions;
@@ -16,6 +16,7 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
+   import net.wg.gui.lobby.hangar.quests.BobHangarWidget;
    import net.wg.gui.lobby.hangar.quests.Comp7Widget;
    import net.wg.gui.lobby.hangar.quests.FunRandomHangarWidget;
    import net.wg.gui.lobby.hangar.quests.HeaderQuestsEvent;
@@ -57,18 +58,14 @@ package net.wg.gui.lobby.hangar
       
       private static const QUESTS_FLAGS_DEFAULT_X_OFFSET:int = 0;
       
-      private static const QUESTS_FLAGS_NY_X_OFFSET_SMALL:int = -100;
+      private static const QUESTS_FLAGS_NY_X_OFFSET_SMALL:int = -80;
       
       private static const QUESTS_FLAGS_NY_X_OFFSET_BIG:int = -135;
       
       private static const INVALIDATE_OBJECTS_OFFSET:String = "invalidateObjectOffset";
-      
-      private static const BG_LBL_NY:String = "ny";
-      
-      private static const BG_LBL_USUAL:String = "usual";
        
       
-      public var mcBackground:MovieClip;
+      public var mcBackground:Sprite;
       
       public var questsFlags:HeaderQuestsFlags;
       
@@ -78,11 +75,11 @@ package net.wg.gui.lobby.hangar
       
       private var _data:HangarHeaderVO;
       
-      private var _isSmallScreen:Boolean = false;
-      
       private var _scheduler:IScheduler;
       
       private var _secondaryPointX:int = 0;
+      
+      private var _bobWidget:BobHangarWidget = null;
       
       public function HangarHeader()
       {
@@ -95,12 +92,6 @@ package net.wg.gui.lobby.hangar
       {
          super.onPopulate();
          registerFlashComponentS(this.secondaryEntryPoint,HANGAR_ALIASES.SECONDARY_ENTRY_POINT);
-      }
-      
-      public function updateStage(param1:Number, param2:Number) : void
-      {
-         this._isSmallScreen = App.appWidth <= StageSizeBoundaries.WIDTH_1366 || App.appHeight <= StageSizeBoundaries.HEIGHT_768;
-         invalidate(INVALIDATE_OBJECTS_OFFSET);
       }
       
       override protected function configUI() : void
@@ -137,39 +128,33 @@ package net.wg.gui.lobby.hangar
          this._widget = null;
          this.mcBackground = null;
          this._data = null;
+         this._bobWidget = null;
          super.onDispose();
       }
       
       override protected function draw() : void
       {
-         var _loc1_:Boolean = false;
-         var _loc2_:Boolean = false;
-         var _loc3_:int = 0;
-         var _loc4_:Number = NaN;
+         var _loc1_:int = 0;
          super.draw();
          if(this._data && isInvalid(InvalidationType.DATA))
          {
-            _loc1_ = Boolean(this._data) ? Boolean(this._data.isNYWidgetVisible) : Boolean(false);
-            _loc2_ = Boolean(this._data) ? Boolean(this._data.isPostNYEnabled) : Boolean(false);
             visible = this._data.isVisible;
             if(this._data.isVisible)
             {
                this.questsFlags.setData(this._data.questsGroups);
-               this.questsFlags.useLeftSideOffset = _loc1_ || _loc2_;
             }
-            this.mcBackground.gotoAndStop(!!_loc1_ ? BG_LBL_NY : BG_LBL_USUAL);
          }
          if(isInvalid(InvalidationType.LAYOUT))
          {
-            _loc3_ = 0;
+            _loc1_ = 0;
             if(this.secondaryEntryPoint.visible)
             {
                if(this._widget)
                {
-                  _loc3_ = (this._widget.width >> 1) + this._widget.marginRight + this._secondaryPointX;
-                  this.secondaryEntryPoint.x = _loc3_;
+                  _loc1_ = (this._widget.width >> 1) + this._widget.marginRight + this._secondaryPointX;
+                  this.secondaryEntryPoint.x = _loc1_;
                   this.secondaryEntryPoint.y = this._widget.marginTop;
-                  this.questsFlags.offsetRightSideX = _loc3_ + this.secondaryEntryPoint.width + SECONDARY_ENTRY_POINT_OFFSET >> 0;
+                  this.questsFlags.offsetRightSideX = _loc1_ + this.secondaryEntryPoint.width + SECONDARY_ENTRY_POINT_OFFSET >> 0;
                }
                else
                {
@@ -192,13 +177,6 @@ package net.wg.gui.lobby.hangar
                this.questsFlags.flagsOffsetY = HeaderQuestsFlags.DEFAULT_FLAGS_OFFSET_Y;
             }
          }
-         if(isInvalid(INVALIDATE_OBJECTS_OFFSET))
-         {
-            _loc1_ = Boolean(this._data) ? Boolean(this._data.isNYWidgetVisible) : Boolean(false);
-            _loc2_ = Boolean(this._data) ? Boolean(this._data.isPostNYEnabled) : Boolean(false);
-            _loc4_ = !!this._isSmallScreen ? Number(QUESTS_FLAGS_NY_X_OFFSET_SMALL) : Number(QUESTS_FLAGS_NY_X_OFFSET_BIG);
-            this.questsFlags.x = !!_loc1_ ? Number(_loc4_) : Number(QUESTS_FLAGS_DEFAULT_X_OFFSET);
-         }
       }
       
       override protected function setData(param1:HangarHeaderVO) : void
@@ -210,7 +188,6 @@ package net.wg.gui.lobby.hangar
          this._data = param1;
          invalidateState();
          invalidateData();
-         invalidate(INVALIDATE_OBJECTS_OFFSET);
       }
       
       public function as_addEntryPoint(param1:String) : void
@@ -246,6 +223,11 @@ package net.wg.gui.lobby.hangar
          this.setQuestFlagsEntryPoint(param1,Linkages.COLLECTIVE_GOAL_ENTRY_POINT,HANGAR_ALIASES.COLLECTIVE_GOAL_ENTRY_POINT,true);
       }
       
+      public function as_setUniversalFlagEntryPoint(param1:Boolean) : void
+      {
+         this.setQuestFlagsEntryPoint(param1,Linkages.UNIVERSAL_FLAG_ENTRY_POINT,HANGAR_ALIASES.UNIVERSAL_FLAG_ENTRY_POINT,true);
+      }
+      
       public function as_setArmoryYardEntryPoint(param1:Boolean) : void
       {
          this.setQuestFlagsEntryPoint(param1,Linkages.ARMORY_YARD_ENTRY_POINT,HANGAR_ALIASES.ARMORY_YARD_ENTRY_POINT,false);
@@ -254,11 +236,6 @@ package net.wg.gui.lobby.hangar
       public function as_setEarlyAccessEntryPoint(param1:Boolean) : void
       {
          this.setQuestFlagsEntryPoint(param1,Linkages.EARLY_ACCESS_ENTRY_POINT,HANGAR_ALIASES.EARLY_ACCESS_SECONDARY_ENTRY_POINT,false);
-      }
-      
-      public function as_setNYQuestEntryPoint(param1:Boolean) : void
-      {
-         this.setQuestFlagsEntryPoint(param1,Linkages.NY_QUEST_ENTRY_POINT,HANGAR_ALIASES.NY_QUEST_SECONDARY_ENTRY_POINT,false);
       }
       
       public function as_setSecondaryEntryPointVisible(param1:Boolean) : void
@@ -437,6 +414,8 @@ package net.wg.gui.lobby.hangar
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
             case HANGAR_ALIASES.COMP7_WIDGET:
                return new Comp7Widget();
+            case HANGAR_ALIASES.BOB_HANGAR_WIDGET:
+               return new BobHangarWidget();
             case HANGAR_ALIASES.EPIC_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.EPIC_WIDGET,EpicBattlesWidget);
             case FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET:

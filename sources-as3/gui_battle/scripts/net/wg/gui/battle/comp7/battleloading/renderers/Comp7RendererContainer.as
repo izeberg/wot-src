@@ -4,6 +4,7 @@ package net.wg.gui.battle.comp7.battleloading.renderers
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.random.battleloading.renderers.RandomRendererContainer;
    import net.wg.gui.components.controls.BadgeComponent;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.icons.PlayerActionMarker;
    
    public class Comp7RendererContainer extends RandomRendererContainer
@@ -122,9 +123,9 @@ package net.wg.gui.battle.comp7.battleloading.renderers
          return new <BadgeComponent>[badgeAlly0,badgeAlly1,badgeAlly2,badgeAlly3,badgeAlly4,badgeAlly5,badgeAlly6];
       }
       
-      override protected function getSelfBgs() : Vector.<BattleAtlasSprite>
+      override protected function getSelfBgs() : Vector.<Image>
       {
-         return new <BattleAtlasSprite>[selfBgAlly0,selfBgAlly1,selfBgAlly2,selfBgAlly3,selfBgAlly4,selfBgAlly5,selfBgAlly6];
+         return new <Image>[selfBgAlly0,selfBgAlly1,selfBgAlly2,selfBgAlly3,selfBgAlly4,selfBgAlly5,selfBgAlly6];
       }
       
       override protected function getIcoTestersEnemy() : Vector.<BattleAtlasSprite>

@@ -1030,13 +1030,13 @@ msgid "rewardsScreen/title/division"
 msgstr "ВЫ ДАСЯГНУЛІ ДЫВІЗІЁНА %(division)s"
 
 msgid "rewardsScreen/title/qualificationRank"
-msgstr "ДАСЯГНУТЫ РАНГ {cream_Open}«%(rankNameUpper)s»{cream_Close}"
+msgstr "ДАСЯГНУТЫ РАНГ {cream_Open}«%(rankUpperName)s»{cream_Close}"
 
 msgid "rewardsScreen/title/qualificationRewards"
 msgstr "УЗНАГАРОДА ЗА ДАСЯГНУТЫЯ РАНГІ"
 
 msgid "rewardsScreen/title/rank"
-msgstr "ДАСЯГНУТЫ РАНГ {cream_Open}«%(rankNameUpper)s»{cream_Close}"
+msgstr "ДАСЯГНУТЫ РАНГ {cream_Open}«%(rankUpperName)s»{cream_Close}"
 
 msgid "rewardsScreen/title/rankRewards"
 msgstr "УЗНАГАРОДА ЗА НОВЫ РАНГ"

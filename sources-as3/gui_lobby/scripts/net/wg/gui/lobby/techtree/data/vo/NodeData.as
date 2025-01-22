@@ -57,6 +57,8 @@ package net.wg.gui.lobby.techtree.data.vo
       
       public var state:uint = 0;
       
+      public var extendedState:uint = 0;
+      
       public var iconPath:String = "";
       
       public var smallIconPath:String = "";
@@ -151,6 +153,10 @@ package net.wg.gui.lobby.techtree.data.vo
          if(!isNaN(param1.state))
          {
             this.state = param1.state;
+         }
+         if(!isNaN(param1.extendedState))
+         {
+            this.extendedState = param1.extendedState;
          }
          this.clearUnlockProps();
          this.unlockProps = new UnlockProps();
@@ -381,6 +387,16 @@ package net.wg.gui.lobby.techtree.data.vo
       public function get isNext2Unlock() : Boolean
       {
          return (this.state & NODE_STATE_FLAGS.NEXT_2_UNLOCK) > 0;
+      }
+      
+      public function get isResetParagons() : Boolean
+      {
+         return (this.extendedState & NODE_STATE_FLAGS.EXTENDED_RESET_FINISHED_PARAGONS) > 0;
+      }
+      
+      public function get isLockedByParagons() : Boolean
+      {
+         return (this.extendedState & NODE_STATE_FLAGS.EXTENDED_LOCKED_BY_PARAGONS) > 0;
       }
    }
 }

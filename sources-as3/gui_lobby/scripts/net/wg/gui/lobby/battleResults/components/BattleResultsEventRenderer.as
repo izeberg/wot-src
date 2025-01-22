@@ -223,7 +223,8 @@ package net.wg.gui.lobby.battleResults.components
       
       private function checkProgressList(param1:int) : int
       {
-         var _loc2_:Boolean = this._data.progressList && this._data.progressList.length > 0;
+         var _loc2_:Boolean = false;
+         _loc2_ = this._data.progressList && this._data.progressList.length > 0;
          this.progressList.visible = _loc2_;
          if(_loc2_)
          {
@@ -246,10 +247,10 @@ package net.wg.gui.lobby.battleResults.components
       private function checkLabels() : int
       {
          var _loc1_:Boolean = false;
-         if(this.taskTF.text != this._questInfo.description)
+         if(this.taskTF.htmlText != this._questInfo.description)
          {
-            this.taskTF.text = this._questInfo.description;
-            _loc1_ = StringUtils.isNotEmpty(this.taskTF.text);
+            this.taskTF.htmlText = this._questInfo.description;
+            _loc1_ = StringUtils.isNotEmpty(this._questInfo.description);
             this.linkBtn.x = (!!_loc1_ ? this.taskTF.x + this.taskTF.getLineMetrics(this.taskTF.numLines - 1).width + LINKBTN_PADDING : this.taskTF.x) | 0;
             this.linkBtn.y = (!!_loc1_ ? this.taskTF.textHeight + this.taskTF.y - this.linkBtn.height : this.taskTF.y) + LINK_BTN_Y_OFFSET | 0;
          }

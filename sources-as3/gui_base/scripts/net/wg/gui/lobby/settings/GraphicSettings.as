@@ -120,7 +120,8 @@ package net.wg.gui.lobby.settings
          var _loc5_:String = null;
          this._graphicsQualityDataProv = {};
          var _loc2_:Object = param1.data;
-         this._qualityOrderIdList = _loc2_.qualityOrder;
+         this._qualityOrderIdList = _loc2_.qualityOrder.concat();
+         this._qualityOrderIdList.push("uiEffects");
          if(this._qualityOrderIdList is Vector.<String>)
          {
             _loc3_ = this._qualityOrderIdList.length;
@@ -1557,6 +1558,10 @@ package net.wg.gui.lobby.settings
          if(_loc4_.isDependOn)
          {
             this.updateDependedControl(_loc3_);
+         }
+         if(_loc2_ == uiEffectsCheckbox && !this._isCustomPreset)
+         {
+            this.tryFindPreset();
          }
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc3_,_loc2_.selected));
       }

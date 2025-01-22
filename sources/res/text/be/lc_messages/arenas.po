@@ -523,6 +523,18 @@ msgstr ""
 msgid "502_kamchatka/name"
 msgstr "Камчатка"
 
+msgid "503_kaliningrad/description"
+msgstr ""
+"Адносна сіметрычная лакацыя — рэканструкцыя гістарычнага цэнтра горада, які "
+"размясціўся па абодва берагі ракі Прэгалі. На мапе размешчана мноства "
+"знакавых і пазнавальных аб'ектаў, якія захоўваюць і перадаюць атмасферу "
+"гэтага цудоўнага горада. На мапе дастаткова аб'ездаў, укрыццяў і перападаў "
+"вышынь, што спрыяе разнастайнай гульні і пошуку нестандартных рашэнняў, "
+"робячы кожным бой па-свойму ўнікальным."
+
+msgid "503_kaliningrad/name"
+msgstr "Калінінград"
+
 msgid "59_asia_great_wall/description"
 msgstr ""
 "На мапе шмат горных дарог і каньёнаў, таму важную ролю граюць выведка і "
@@ -597,10 +609,10 @@ msgstr ""
 msgid "99_poland/name"
 msgstr "Студзянкі"
 
-msgid "h00_armory_yard_ep3.xml/description"
+msgid "h00_armory_yard/description"
 msgstr "?empty?"
 
-msgid "h00_armory_yard_ep3.xml/name"
+msgid "h00_armory_yard/name"
 msgstr "?empty?"
 
 msgid "qa_content_01/description"
@@ -629,6 +641,12 @@ msgstr ""
 
 msgid "type/assault2/name"
 msgstr "Атака/Абарона"
+
+msgid "type/bob/description"
+msgstr "Баявая задача: захапіць базу або знішчыць усю тэхніку супраціўніка."
+
+msgid "type/bob/name"
+msgstr "Бітва блогераў"
 
 msgid "type/bootcamp/description0"
 msgstr "Каб завяршыць заданне, кіруйцеся падказкамі"
@@ -667,7 +685,7 @@ msgstr ""
 
 msgid "type/comp7_1/short_description"
 msgstr ""
-"Задача: абараняць абедзве базы за заканчэння бою або знішчыць усю тэхніку "
+"Задача: абараняць абедзве базы да заканчэння бою або знішчыць усю тэхніку "
 "праціўніка."
 
 msgid "type/comp7_1/timer_message"

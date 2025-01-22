@@ -8,9 +8,13 @@ package net.wg.gui.components.questProgress.interfaces.data
       
       function getData() : Vector.<IQuestProgressItemData>;
       
+      function getSecondData() : Vector.<IQuestProgressItemData>;
+      
       function getDataItem(param1:String) : IQuestProgressItemData;
       
       function get headerConditions() : Vector.<IHeaderProgressData>;
+      
+      function get secondHeaderConditions() : Vector.<IHeaderProgressData>;
       
       function get questName() : String;
       
@@ -23,5 +27,9 @@ package net.wg.gui.components.questProgress.interfaces.data
       function get questID() : int;
       
       function get isHeaderHasProgress() : Boolean;
+      
+      function get isSecondHeaderHasProgress() : Boolean;
+      
+      function get isMainOnly() : Boolean;
    }
 }

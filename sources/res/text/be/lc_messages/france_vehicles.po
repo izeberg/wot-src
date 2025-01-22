@@ -227,6 +227,12 @@ msgstr "AMX 50 120"
 msgid "AMX_50_68t"
 msgstr "AMX 50 B"
 
+msgid "AMX_50_68t_bob"
+msgstr "AMX 50 B BB"
+
+msgid "AMX_50_68t_bob_short"
+msgstr "AMX 50 B BB"
+
 msgid "AMX_50_68t_descr"
 msgstr ""
 "Распрацоўка пачалася ў 1951 г. кампаніяй DEFA. Да 1958 г. танк AMX 50 B "
@@ -780,6 +786,9 @@ msgstr "Schneider 90 DCA"
 msgid "Chassis_F129_Schneider_120_AC_Gendarme"
 msgstr "Schneider 120 AC"
 
+msgid "Chassis_F130_AMX_Tracteur_D"
+msgstr "AMX Tracteur D"
+
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -1019,6 +1028,9 @@ msgid "ER_26_ter"
 msgstr "ER 26 ter"
 
 msgid "ER_27"
+msgstr "ER 27"
+
+msgid "ER_27_D"
 msgstr "ER 27"
 
 msgid "ER_28"
@@ -1358,9 +1370,9 @@ msgstr ""
 "Французскі сярэдні танк з моцнай лабавой бранёй (за выключэннем уразлівай "
 "НЛД), добрай мабільнасцю і гарматай для блізкага бою з магазінам на 3 "
 "снарады. Выключна камфортны вугал нахілу гарматы на 12 градусаў дазваляе "
-"ўпэўнена адчуваць сябе ў пазіцыйных баях, робячы складкі мясцовасці і "
-"асаблівасці рэльефу найлепшымі хаўруснікамі. Машына абсталявана "
-"шматгусенічнымі рухачамі, што ўскосна ўплывае на выжывальнасць."
+"ўпэўнена пачувацца ў пазіцыйных баях, робячы складкі мясцовасці і "
+"асаблівасці рэльефу найлепшымі саюзнікамі. Машына аснашчана шматгусенічным "
+"рухачом, што ўскосна ўплывае на выжывальнасць."
 
 msgid "F119_Projet_Murat_short"
 msgstr "Projet Murat"
@@ -1454,6 +1466,30 @@ msgstr "Gendarme"
 
 msgid "F129_Schneider_120_AC_Gendarme_short_special"
 msgstr "Вялізны агнявы патэнцыял, добрая дынаміка"
+
+msgid "F130_AMX_Tracteur_D"
+msgstr "AMX Tracteur D"
+
+msgid "F130_AMX_Tracteur_D_descr"
+msgstr ""
+"Пасля заканчэння Першай сусветнай вайны французскае камандаванне прадумвала канцэпцыю цяжкага танка, прызначанага для ўзмацнення Лініі Мажыно. У маі 1936 года праектаванне даручылі фірме AMX, ARL і FCM. Фірмай AMX распрацоўваўся праект звышцяжкага танка прарыву Tracteur З з улікам досведу баявых дзеянняў Першай сусветнай вайны. Праект Tracteur D быў далейшым развіццём праекта Tracteur С. Новы танк прадугледжваў супрацьснараднае браніраванне, дапаможную вежу на карме (як у AMX Tracteur C), а галоўную вежу спраектавалі нанова. Паколькі з рухавікамі ASTER узніклі праблемы, праект перапрацавалі пад авіяцыйны рухавік Hispano-Suiza. На момант з'яўлення праекта AMX Tracteur D у 1940 годзе французам было ўжо не да танкаў прарыву, таму праект застаўся толькі ў выглядзе эскіза.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "F130_AMX_Tracteur_D_long_special"
+msgstr ""
+"Буйны штурмавы танк, сапраўдны сухапутны браняносец з выдатнай франтальнай "
+"бранёй і ўражвальнай забойнасцю стрэлу. Наяўнасць слабых зон і абмежаваная "
+"мабільнасць не дазваляюць гэтай машыне, якая выступае ў ролі тарана, "
+"беспакарана дамінаваць на полі бою. Аднак танк выдатна стрымлівае ўдар "
+"перавышаючых сілаў праціўніка ў вузкіх праходах мапы, кампенсуючы свае "
+"недахопы."
+
+msgid "F130_AMX_Tracteur_D_short"
+msgstr "Tracteur D"
+
+msgid "F130_AMX_Tracteur_D_short_special"
+msgstr "Выдатнае франтальнае браніраванне, высокая забойнасць стрэлу"
 
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -2028,6 +2064,9 @@ msgstr "Hispano-Suiza HS 110"
 
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
+
+msgid "Hispano_Suiza_12Z"
+msgstr "Hispano-Suiza 12Z"
 
 msgid "Hotchkiss_35_1"
 msgstr "Hotchkiss 35"
@@ -2736,6 +2775,9 @@ msgstr "АР58"
 msgid "Turret_1_F129_Schneider_120_AC_Gendarme"
 msgstr "Schneider 120 AC"
 
+msgid "Turret_1_F130_AMX_Tracteur_D"
+msgstr "AMX Tracteur D"
+
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -3247,6 +3289,9 @@ msgstr "13.2 mm Hotchkiss"
 msgid "_130mm_45_Model_1935"
 msgstr "130 mm/45 Model 1935"
 
+msgid "_130mm_Canon_Mle1924"
+msgstr "130 mm Canon mle. 1924"
+
 msgid "_130mm_Capped_Common"
 msgstr "Capped Common"
 
@@ -3255,6 +3300,15 @@ msgstr "Capped Common Semi-AP"
 
 msgid "_130mm_Common_HE"
 msgstr "Common HE"
+
+msgid "_130mm_OE_Mle1923"
+msgstr "ОЕ Mle 1923"
+
+msgid "_130mm_OPS_130"
+msgstr "ОРS 130"
+
+msgid "_130mm_OP_Mle1923"
+msgstr "ОР Mle 1923"
 
 msgid "_155_OE_mle_1956"
 msgstr "OE mle. 1956"

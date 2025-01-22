@@ -1,7 +1,6 @@
 package net.wg.gui.battle.ranked.battleloading.renderers
 {
    import net.wg.data.constants.UserTags;
-   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.battleloading.renderers.BaseRendererContainer;
    
    public class TablePlayerItemRenderer extends RankedPlayerItemRenderer
@@ -20,7 +19,7 @@ package net.wg.gui.battle.ranked.battleloading.renderers
             selfBg.visible = UserTags.isCurrentPlayer(model.userTags);
             if(selfBg.visible)
             {
-               selfBg.imageName = BATTLEATLAS.BATTLE_LOADING_SELF_TABLE_BACKGROUND;
+               selfBg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_SELFBG;
             }
          }
       }

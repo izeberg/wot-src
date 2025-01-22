@@ -31,6 +31,14 @@ msgstr ""
 msgid "domain/battleParams/name"
 msgstr "Параметры бою"
 
+msgid "domain/bobSeasonModifiers/description"
+msgstr ""
+"Змены закрануць наступныя параметры: роскід гарматы, роскід "
+"бронепрабівальнасці, трываласць, пашкоджанні ад спецыяльных снарадаў."
+
+msgid "domain/bobSeasonModifiers/name"
+msgstr "Мадыфікатар падзеі"
+
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
 "Мадыфікатар, які павялічвае трываласць усёй тэхнікі ў рэжыме, паскарае "
@@ -119,6 +127,10 @@ msgstr "Роскід пашкоджанняў"
 msgid "modifier/name/deviceDamage"
 msgstr "Пашкоджанні модуляў"
 
+msgid "modifier/name/dirtBoost"
+msgstr ""
+"Счапленне з грунтамі было павялічана, каб выключыць частыя заносы тэхнікі."
+
 msgid "modifier/name/dispFactorAfterShot"
 msgstr "Роскід пасля стрэлу"
 
@@ -151,6 +163,9 @@ msgstr "Пашкоджанні экіпажа пры падзенні"
 
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перазарадка рыштунку"
+
+msgid "modifier/name/fakeImprovedShellDamage"
+msgstr "Пашкоджанні ад спецыяльнага снарада"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"
@@ -203,6 +218,21 @@ msgstr "Хуткасць снарадаў"
 
 msgid "modifier/name/shotDispersionRadius"
 msgstr "Роскід на 100 метраў"
+
+msgid "modifier/name/speedBoostATSPG"
+msgstr "Максімальная хуткасць уперад і назад (СТ-САУ)"
+
+msgid "modifier/name/speedBoostHT"
+msgstr "Максімальная хуткасць уперад і назад (ЦТ)"
+
+msgid "modifier/name/speedBoostLT"
+msgstr "Максімальная хуткасць уперад і назад (ЛТ)"
+
+msgid "modifier/name/speedBoostMT"
+msgstr "Максімальная хуткасць уперад і назад (СТ)"
+
+msgid "modifier/name/speedBoostSPG"
+msgstr "Максімальная хуткасць уперад і назад (САУ)"
 
 msgid "modifier/name/turretPressureDamage"
 msgstr "Пашкоджанні ад ціску сарванай вежы"

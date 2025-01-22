@@ -15,6 +15,8 @@ package net.wg.gui.components.questProgress.components.headerProgress
       private static const MAIN_CONDITIONS_WIDTH:int = 442;
       
       private static const ADD_CONDITIONS_WIDTH:int = 313;
+      
+      private static const ALL_WIDTH:int = 442;
        
       
       private var _headerConditions:Vector.<IHeaderProgressItem> = null;
@@ -24,6 +26,8 @@ package net.wg.gui.components.questProgress.components.headerProgress
       private var _startXAddType:int = 0;
       
       private var _disposed:Boolean = false;
+      
+      private var _isMainOnly:Boolean = false;
       
       public function HeaderProgressContainer()
       {
@@ -37,10 +41,11 @@ package net.wg.gui.components.questProgress.components.headerProgress
          this._headerConditions = null;
       }
       
-      public function setData(param1:Vector.<IHeaderProgressData>, param2:int, param3:int) : void
+      public function setData(param1:Vector.<IHeaderProgressData>, param2:int, param3:int, param4:Boolean = false) : void
       {
          this._startXMainType = param2;
          this._startXAddType = param3;
+         this._isMainOnly = param4;
          this.cleanHeaders(this._headerConditions);
          this._headerConditions = new Vector.<IHeaderProgressItem>(0);
          this.createHeaders(this._headerConditions,param1);
@@ -52,7 +57,7 @@ package net.wg.gui.components.questProgress.components.headerProgress
          var _loc2_:IHeaderProgressItem = null;
          for each(_loc3_ in param1)
          {
-            _loc2_ = this.getItemByOrderType(_loc3_.orderType);
+            _loc2_ = this.getItemByOrderType(_loc3_.orderType,_loc3_.goal,_loc3_.progressType);
             if(_loc2_)
             {
                _loc2_.update(_loc3_);
@@ -87,7 +92,14 @@ package net.wg.gui.components.questProgress.components.headerProgress
             _loc4_ = App.utils.classFactory.getComponent(_loc3_,IHeaderProgressItem);
             if(_loc4_)
             {
-               _loc5_ = _loc6_.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE ? int(MAIN_CONDITIONS_WIDTH) : int(ADD_CONDITIONS_WIDTH);
+               if(this._isMainOnly)
+               {
+                  _loc5_ = ALL_WIDTH;
+               }
+               else
+               {
+                  _loc5_ = _loc6_.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE ? int(MAIN_CONDITIONS_WIDTH) : int(ADD_CONDITIONS_WIDTH);
+               }
                _loc4_.setData(_loc6_,_loc5_);
                _loc4_.x = _loc4_.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE ? Number(this._startXMainType) : Number(this._startXAddType);
                param1.push(_loc4_);
@@ -96,14 +108,14 @@ package net.wg.gui.components.questProgress.components.headerProgress
          }
       }
       
-      private function getItemByOrderType(param1:String) : IHeaderProgressItem
+      private function getItemByOrderType(param1:String, param2:int, param3:String) : IHeaderProgressItem
       {
-         var _loc2_:IHeaderProgressItem = null;
-         for each(_loc2_ in this._headerConditions)
+         var _loc4_:IHeaderProgressItem = null;
+         for each(_loc4_ in this._headerConditions)
          {
-            if(_loc2_.orderType == param1)
+            if(_loc4_.orderType == param1 && _loc4_.goal == param2 && _loc4_.progressType == param3)
             {
-               return _loc2_;
+               return _loc4_;
             }
          }
          return null;

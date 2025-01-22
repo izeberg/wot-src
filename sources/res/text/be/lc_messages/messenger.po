@@ -1979,10 +1979,15 @@ msgstr ""
 "Віншуем!\n"
 "За паспяховае выкананне асабістых баявых задач кампаніі «Другі фронт» вам надалі наступныя ўзнагароды"
 
-msgid "serviceChannelMessages/battleResults/personalMissions/both"
+msgid "serviceChannelMessages/battleResults/personalMissions/3"
 msgstr ""
 "Віншуем!\n"
-"За паспяховае выкананне асабістых баявых задач абедзвюх кампаній вам надалі наступныя ўзнагароды"
+"За паспяховае выкананне асабістых баявых задач кампаніі «Новыя гарызонты» вам нададзены наступныя ўзнагароды"
+
+msgid "serviceChannelMessages/battleResults/personalMissions/multiple"
+msgstr ""
+"Віншуем!\n"
+"За паспяховае выкананне асабістых баявых задач кампаніі %(text)s вам нададзены наступныя ўзнагароды"
 
 msgid "serviceChannelMessages/battleResults/piggyBank"
 msgstr "У сховішча крэдытаў паступіла"
@@ -2997,14 +3002,36 @@ msgstr ""
 msgid "serviceChannelMessages/multiplier"
 msgstr " (x%(count)s)"
 
+msgid "serviceChannelMessages/newYearMandarinsConvert/header"
+msgstr "Фінансавая аперацыя"
+
+msgid "serviceChannelMessages/newYearMandarinsConvert/text"
+msgstr ""
+"Абмен %(mandarinsCount)s шт. мандарынаў завершаны.\n"
+"Атрымана жэтонаў: %(machineCount)s."
+
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "У Жаўнерню"
 
 msgid "serviceChannelMessages/notrecruitedTankman/removedTankmen"
 msgstr "Спісана танкістаў: %(count)s"
 
+msgid "serviceChannelMessages/offerTokenBonus/alternativeTitle"
+msgstr "узнагарода на выбар"
+
 msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Пастаўкі з тылу"
+
+msgid ""
+"serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
+msgstr ""
+"За датэрміновае праходжанне атэстацыі вам нададзены наступныя ўзнагароды"
+
+msgid ""
+"serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived"
+msgstr ""
+"Усе ўзнагароды, належныя за выкананне гэтага этапу, будуць налічаны "
+"аўтаматычна пасля выпуску машыны."
 
 msgid "serviceChannelMessages/personalReservesConverted"
 msgstr "Усе вашы асабістыя рэзервы канвертаваныя."
@@ -3073,7 +3100,7 @@ msgid "serviceChannelMessages/prebattle/finish/timeout"
 msgstr "Час чакання скончыўся"
 
 msgid "serviceChannelMessages/prebattle/finishedTime"
-msgstr "Скончана"
+msgstr "Завершана"
 
 msgid "serviceChannelMessages/prebattle/numberOfBattle"
 msgstr "(бітва %s)"
@@ -3589,6 +3616,9 @@ msgid "serviceChannelMessages/sysMsg/removeCustomizations"
 msgstr ""
 "З-за змены модуляў наступныя элементы выгляду машыны былі зняты з "
 "%(vehicle)s."
+
+msgid "serviceChannelMessages/sysMsg/titles/bobBattlesAvailable"
+msgstr "Баі Бітвы блогераў даступныя"
 
 msgid "serviceChannelMessages/sysMsg/titles/customization"
 msgstr "Змяненне выгляду машыны:"

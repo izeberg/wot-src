@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.611429 -0.000180 -2.966458</min>
+		<max>1.611022 1.069810 2.919139</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un14_T54D/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/crash/lod0/Chassis</nodefullVisual>
+</root>

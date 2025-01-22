@@ -1,7 +1,6 @@
 package net.wg.gui.battle.comp7.battleloading
 {
    import net.wg.data.constants.Linkages;
-   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
    import net.wg.gui.battle.battleloading.BattleLoadingForm;
    import net.wg.gui.battle.battleloading.renderers.BaseRendererContainer;
@@ -23,7 +22,7 @@ package net.wg.gui.battle.comp7.battleloading
       override public function setFormDisplayData(param1:VisualTipInfoVO) : void
       {
          super.setFormDisplayData(param1);
-         formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TIPS_7X7;
+         bg.source = RES_ICONS.MAPS_ICONS_BATTLELOADING_FORMBGTIPS_7X7;
       }
       
       override public function toString() : String

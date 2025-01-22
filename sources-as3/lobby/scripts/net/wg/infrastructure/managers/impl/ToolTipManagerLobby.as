@@ -36,6 +36,8 @@ package net.wg.infrastructure.managers.impl
       
       private static const NUM_COMPOUND_PRICE_BLOCK_POOL_ITEMS:int = 4;
       
+      private static const NUM_BOB_TEAM_PROGRESS_BLOCK_POOL_ITEMS:int = 5;
+      
       private static const REQUIRED_LIB:String = "guiControlsLobbyBattleDynamic.swf";
        
       
@@ -82,6 +84,7 @@ package net.wg.infrastructure.managers.impl
          this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_META_LEVEL_PROGRESS_BLOCK_LINKAGE,NUM_META_LEVEL_PROGRESS_BLOCK_POOL_ITEMS);
          this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_COMPOUND_PRICE_BLOCK_LINKAGE,NUM_COMPOUND_PRICE_BLOCK_POOL_ITEMS);
          _loc1_.addPool(Linkages.TOOLTIP_SEPARATOR_UI,new ComponentsPool(NUM_SEPARATOR_POOL_ITEMS,Linkages.TOOLTIP_SEPARATOR_UI,Separator));
+         this.addTooltipBlocksPool(_loc1_,BLOCKS_TOOLTIP_TYPES.TOOLTIP_BOB_TEAM_PROGRESS_BLOCK,NUM_BOB_TEAM_PROGRESS_BLOCK_POOL_ITEMS);
       }
       
       private function addTooltipBlocksPool(param1:IPoolManager, param2:String, param3:uint) : void

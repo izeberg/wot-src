@@ -11,7 +11,7 @@
 	<postProgressionTree>role_MT_sniper</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>45</forward>
+		<forward>50</forward>
 		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
@@ -6951,21 +6951,21 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							124
+							230
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							70
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							40
+							70
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6974,7 +6974,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7176,21 +7176,21 @@
 					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
-							124
+							230
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							70
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							40
+							70
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -8514,21 +8514,21 @@
 					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
-							124
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							90
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							40
+							120
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -8537,7 +8537,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -8550,7 +8550,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -8696,21 +8696,21 @@
 					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
-							124
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							90
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							40
+							120
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -8718,7 +8718,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -8880,21 +8880,21 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							124
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							90
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							40
+							120
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -8913,7 +8913,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.2
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -10266,11 +10266,11 @@
 						528.6406
 						<!--BW_String-->
 					</smplEnginePower>
-					<smplFwMaxSpeed>45</smplFwMaxSpeed>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_Mitsubishi_DL10T>
 				<_Mitsubishi_12HM20WT>
 					<smplEnginePower>650</smplEnginePower>
-					<smplFwMaxSpeed>45</smplFwMaxSpeed>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_Mitsubishi_12HM20WT>
 			</engines>
 			<chassis>

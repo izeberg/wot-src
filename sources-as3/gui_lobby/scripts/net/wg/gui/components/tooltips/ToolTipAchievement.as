@@ -202,6 +202,7 @@ package net.wg.gui.components.tooltips
       override protected function redraw() : void
       {
          var _loc4_:Number = NaN;
+         var _loc7_:Separator = null;
          var _loc10_:String = null;
          var _loc11_:String = null;
          var _loc12_:Array = null;
@@ -220,7 +221,7 @@ package net.wg.gui.components.tooltips
          this._flagsBlocks = new Vector.<AchievementsCustomBlockItem>();
          topPosition = bgShadowMargin.top + contentMargin.top;
          var _loc6_:Number = bgShadowMargin.left + contentMargin.left;
-         var _loc7_:Separator = null;
+         _loc7_ = null;
          separators = new Vector.<Separator>();
          this._headerTF.autoSize = TextFieldAutoSize.LEFT;
          this._headerTF.htmlText = Utils.instance.htmlWrapper(_loc5_.aName,Utils.instance.COLOR_HEADER,TITLE_BIG_FONT_SIZE,TITLE_FONT_NAME);

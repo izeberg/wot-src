@@ -13,6 +13,8 @@ package net.wg.data.constants
       
       public static const STYLE_SLIM_LIME:String = "slimLime";
       
+      public static const STYLE_SLIM_CRYSTAL:String = "slimCrystal";
+      
       public static const STYLE_HEAVY_BLACK:String = "heavyBlack";
       
       public static const STYLE_HEAVY_GREEN:String = "heavyGreen";
@@ -21,9 +23,7 @@ package net.wg.data.constants
       
       public static const STYLE_HEAVY_LIME:String = "heavyLime";
       
-      public static const STYLE_HEAVY_NY_TRANSPARENT:String = "heavyNYTransparent";
-      
-      public static const STYLE_SLIM_NY_TRANSPARENT:String = "slimNYTransparent";
+      public static const STYLE_HEAVY_CRYSTAL:String = "heavyCrystal";
        
       
       public function UniversalBtnStylesConst()

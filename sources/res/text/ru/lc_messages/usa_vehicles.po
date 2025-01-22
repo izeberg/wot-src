@@ -1001,15 +1001,18 @@ msgstr ""
 
 msgid "A150_MBT_B_long_special"
 msgstr ""
-"Американский тяжёлый танк с необычным бронированием: грамотное расположение "
-"бронелистов обеспечивает большую защищённость, что в совокупности с отменным"
-" орудием позволяет как активно защищаться, так и вести за собой союзников."
+"Тяжёлый танк поддержки, способный быстро уничтожать противника за счёт "
+"боеприпасов БОПС и модернизации «Беглый огонь». Стоит выделить отличную "
+"мобильность и комфортный магазин, позволяющие эффективно атаковать с "
+"флангов, реализовывая высокий огневой потенциал. Для максимально "
+"эффективного применения машины будет полезным знать слабые стороны "
+"противника и его уязвимые зоны."
 
 msgid "A150_MBT_B_short"
 msgstr "MBT-B"
 
 msgid "A150_MBT_B_short_special"
-msgstr "Крепкая броня, универсальное орудие"
+msgstr "Магазинная система заряжания, особые боеприпасы"
 
 msgid "A151_TS_60"
 msgstr "TS-60"
@@ -1188,7 +1191,7 @@ msgstr "M24 No.594"
 
 msgid "A160_M24_594_descr"
 msgstr ""
-"Одним из проектов сравнительных испытаний американских и иностранных подвесок стали испытания танка М24 Chafee, у которого штатная подвеска была заменена на гусеничную часть от немецкого тягача SdKfz8. Подвеска немецких тягачей с шахматным расположением катков и гусеницей с игольчатыми подшипниками обладала выдающимися ходовыми качествами и представляла большой интерес для исследователей. В целом испытания адаптированной подвески не выявили явных преимуществ перед штатной подвеской М24 Chafee.\n"
+"Одним из проектов сравнительных испытаний американских и иностранных подвесок стали испытания танка М24 Chaffee, у которого штатная подвеска была заменена на гусеничную часть от немецкого тягача SdKfz8. Подвеска немецких тягачей с шахматным расположением катков и гусеницей с игольчатыми подшипниками обладала выдающимися ходовыми качествами и представляла большой интерес для исследователей. В целом испытания адаптированной подвески не выявили явных преимуществ перед штатной подвеской М24 Chaffee.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
@@ -1216,13 +1219,17 @@ msgstr ""
 "Характеристики машины могут быть изменены без компенсации."
 
 msgid "A161_ARMT_long_special"
-msgstr "?empty?"
+msgstr ""
+"Лёгкий танк со скромным бронированием, но впечатляющей огневой мощью. "
+"Магазинное орудие машины на огромное количество снарядов способно "
+"существенно потрепать любого одноклассника, а выдающаяся динамика позволяет "
+"искать потенциальные цели практически по всей карте."
 
 msgid "A161_ARMT_short"
 msgstr "ARMT"
 
 msgid "A161_ARMT_short_special"
-msgstr "?empty?"
+msgstr "Отличная динамика, вместительный магазин"
 
 msgid "A162_ATAC_II"
 msgstr "ATAC II"
@@ -1322,6 +1329,9 @@ msgid "A165_XM57_short_special"
 msgstr ""
 "Отличное лобовое бронирование, угол склонения мощного орудия до 13 градусов"
 
+msgid "A169_TF_3"
+msgstr "TF-3"
+
 msgid "A169_TF_3_T"
 msgstr "TF-3 T"
 
@@ -1345,6 +1355,53 @@ msgstr "TF-3 T"
 
 msgid "A169_TF_3_T_short_special"
 msgstr "?empty?"
+
+msgid "A169_TF_3_descr"
+msgstr ""
+"Опираясь на опыт применения танков M4 Sherman, которые были переоборудованы "
+"в огнеметные танки, Химический корпус армии США объявил конкурс на "
+"разработку концепта огнеметного танка для ведения боевых действий в "
+"индокитайском регионе, в частности, для поддержки пехоты в сражениях "
+"Корейской войны. Одним из условий была унификация узлов и взаимозаменяемость"
+" компонентов с серийными машинами. Компания Cadillac представила концепт, "
+"который был одобрен для дальнейшего развития, вследствие чего, в 1952 году "
+"Cadillac начали работу над прототипом. 27 июля 1953 года Пханмунджомское "
+"перемирие положило конец боевым действиям. Работу над проектом заморозили."
+
+msgid "A169_TF_3_short"
+msgstr "TF-3"
+
+msgid "A170_M4A3FL"
+msgstr "M4A3FL"
+
+msgid "A170_M4A3FL_descr"
+msgstr ""
+"К вопросу создания огнемётных танков военные США подошли уже после начала "
+"Второй мировой войны. Летом 1942-го года Служба химического вооружения (CWS)"
+" приступила к испытаниям танковых огнемётов, в частности, специальной "
+"огнемётной версии Medium Tank M4A3. Данная модель получила новую сварную "
+"башню и дополнительную броневую защиту корпуса. Однако проект, так и не "
+"получивший специального обозначения, далее концепции не продвинулся."
+
+msgid "A170_M4A3FL_short"
+msgstr "M4A3FL"
+
+msgid "A171_TF_4"
+msgstr "TF-4"
+
+msgid "A171_TF_4_descr"
+msgstr ""
+"В начале 50-х годов в странах НАТО весьма популярной идеей стала "
+"четырёхгусеничная схема, именно её попытались реализовать на новом "
+"огнемётном танке TF-4. Танк должен был получить очень мощную броневую "
+"защиту, чтобы успешно действовать в качестве огнемётной машины, и "
+"гидростатическую трансмиссию для обеспечения высокой подвижности. Слабо "
+"проработанный концепт разработки привел к тому, что TF-4 даже не попал в "
+"общий список вопросов конференций Question Mark. По итогу проект затерялся "
+"среди прочих и не получил дальнейшего развития."
+
+msgid "A171_TF_4_short"
+msgstr "TF-4"
 
 msgid "A172_ASTRON_FL"
 msgstr "Astron-FL"
@@ -1394,9 +1451,9 @@ msgstr ""
 "Машина прекрасно защищена, что способствует агрессивной тактике игры на "
 "первой линии. Мобильность довольно скромная, поэтому лучше заранее "
 "планировать направление для атаки, а также возможные пути отступления в "
-"случае смены картины боя. Мощное орудие способно противостоять любой цели на"
-" небольшой дистанции, дальний бой из-за недостаточной точности может быть "
-"малоэффективен."
+"случае смены картины боя. Огнеметное орудие способно противостоять любой "
+"цели на небольшой дистанции, но дальний бой (из-за особенностей срельбы) "
+"неэффективен."
 
 msgid "A173_TF_2_CLARK_short"
 msgstr "TF-2 CLARK"
@@ -1609,6 +1666,9 @@ msgstr "AN GRC 8E"
 
 msgid "AN_GRC_8L"
 msgstr "AN/GRC-8M"
+
+msgid "AN_GRC_8_4"
+msgstr "AN/GRC-8F"
 
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
@@ -1869,8 +1929,26 @@ msgstr "H-3"
 msgid "Chassis_A165_XM57"
 msgstr "XM-57"
 
+msgid "Chassis_A169_TF_3"
+msgstr "FT-3E1"
+
+msgid "Chassis_A169_TF_3_2"
+msgstr "FT-3E2"
+
 msgid "Chassis_A169_TF_3_2_T"
 msgstr "FT-3E2"
+
+msgid "Chassis_A170_M4A3FL"
+msgstr "M4A3FL-Е1"
+
+msgid "Chassis_A170_M4A3FL_2"
+msgstr "M4A3FL-Е2"
+
+msgid "Chassis_A171_TF_4"
+msgstr "TF-4E1"
+
+msgid "Chassis_A171_TF_4_2"
+msgstr "TF-4E2"
 
 msgid "Chassis_A172_ASTRON_FL"
 msgstr "Astron-FL"
@@ -2177,6 +2255,14 @@ msgstr "Continental AOI-1490-1"
 msgid "Continental_AOI_1790_12"
 msgstr "Continental AOI-1790-12"
 
+msgid "Continental_AOI_1790_12_4"
+msgstr "Continental AOI-1790-12F"
+
+msgid "Continental_AOI_1790_12_4_short"
+msgstr ""
+"Continental\n"
+"AOI-1790-12F"
+
 msgid "Continental_AOI_1790_12_T"
 msgstr "Continental AOI-1790-12"
 
@@ -2325,6 +2411,14 @@ msgstr ""
 msgid "Continental_AOSI_1195_6"
 msgstr "Continental AOSI-1195-6"
 
+msgid "Continental_AOSI_1195_6_4"
+msgstr "Continental AOSI-1195-6"
+
+msgid "Continental_AOSI_1195_6_4_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-6"
+
 msgid "Continental_AOSI_1195_6_short"
 msgstr ""
 "Continental\n"
@@ -2462,10 +2556,26 @@ msgstr ""
 "Continental\n"
 "AV-1790-8 RM"
 
+msgid "Continental_AV_1790_1"
+msgstr "Continental AV-1790-1"
+
+msgid "Continental_AV_1790_1_short"
+msgstr ""
+"Continental\n"
+"AV-1790-1"
+
+msgid "Continental_AV_1790_3"
+msgstr "Continental AV-1790-3"
+
 msgid "Continental_AV_1790_3_T"
 msgstr "Continental AV-1790-3"
 
 msgid "Continental_AV_1790_3_T_short"
+msgstr ""
+"Continental\n"
+"AV-1790-3"
+
+msgid "Continental_AV_1790_3_short"
 msgstr ""
 "Continental\n"
 "AV-1790-3"
@@ -2617,6 +2727,9 @@ msgstr "Ford GAA"
 msgid "Ford_GAA_A"
 msgstr "Ford GAA A"
 
+msgid "Ford_GAA_FL"
+msgstr "Ford GAA"
+
 msgid "Ford_GAA_R"
 msgstr "Ford GAA early"
 
@@ -2640,6 +2753,9 @@ msgstr "Ford GAFM2A2"
 
 msgid "Ford_GAF_500"
 msgstr "Ford GAF (500)"
+
+msgid "Ford_GAF_FL"
+msgstr "Ford GAF"
 
 msgid "Ford_GAF_R1"
 msgstr "Ford GAF (T92 HMC)"
@@ -4221,6 +4337,15 @@ msgstr "H-3"
 msgid "Turret_1_A165_XM57"
 msgstr "XM-57"
 
+msgid "Turret_1_A169_TF_3"
+msgstr "FT-3A"
+
+msgid "Turret_1_A170_M4A3FL"
+msgstr "M4A3FL-А"
+
+msgid "Turret_1_A171_TF_4"
+msgstr "TF-4A"
+
 msgid "Turret_1_A172_ASTRON_FL"
 msgstr "Astron-FL"
 
@@ -4386,8 +4511,17 @@ msgstr "M-VI-Y B"
 msgid "Turret_2_A147_M_II_Y"
 msgstr "M-II-Y B"
 
+msgid "Turret_2_A169_TF_3"
+msgstr "FT-3B"
+
 msgid "Turret_2_A169_TF_3_T"
 msgstr "FT-3B"
+
+msgid "Turret_2_A170_M4A3FL"
+msgstr "M4A3FL-B"
+
+msgid "Turret_2_A171_TF_4"
+msgstr "TF-4B"
 
 msgid "Turret_2_A27_T82"
 msgstr "T82 HMC"
@@ -5221,6 +5355,15 @@ msgstr "37 mm M1924A1"
 msgid "_37mm_semiautomatic_gun_M1924_short"
 msgstr "37 mm M1924"
 
+msgid "_40mm_M7_6E2_flamegun"
+msgstr "M7-6E2 Flamethrower"
+
+msgid "_40mm_M7_6E2_flameshell_alternative"
+msgstr "Ft.F. M7-6E2 Mod"
+
+msgid "_40mm_M7_6E2_flameshell_basic"
+msgstr "Ft.F. M7-6E2"
+
 msgid "_40mm_M7_8_flamegun"
 msgstr "M7-8 Flamethrower"
 
@@ -5233,6 +5376,15 @@ msgstr "Ft.F. M7-8 Mod"
 msgid "_40mm_M7_8_flameshell_basic"
 msgstr "Ft.F. M7-8"
 
+msgid "_40mm_T13E2_flamegun"
+msgstr "T13E2 Flamethrower"
+
+msgid "_40mm_T13E2_flameshell_alternative"
+msgstr "Ft.F. E1-mod"
+
+msgid "_40mm_T13E2_flameshell_basic"
+msgstr "Ft.F. E1"
+
 msgid "_40mm_T13E3C2_flamegun"
 msgstr "T13E3C2 Flamethrower"
 
@@ -5241,6 +5393,9 @@ msgstr "Ft.F. E3C2 Mod"
 
 msgid "_40mm_T13E3C2_flameshell_basic"
 msgstr "Ft.F. E3C2"
+
+msgid "_40mm_T13E3_flamegun"
+msgstr "T13E3 Flamethrower"
 
 msgid "_40mm_T13E3_flamegun_T"
 msgstr "T13E3 Flamethrower"

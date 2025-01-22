@@ -132,7 +132,7 @@ msgid "headerButton/searching"
 msgstr "Шуканне..."
 
 msgid "headerButton/squad"
-msgstr "Стварыць звяз"
+msgstr "Звязовая гульня"
 
 msgid "headerButton/tooltips/battleRoyaleSquad/body"
 msgstr ""
@@ -140,6 +140,14 @@ msgstr ""
 "паляўнічы»."
 
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
+msgstr "Звяз"
+
+msgid "headerButton/tooltips/bobSquad/body"
+msgstr ""
+"Стварэнне фармавання з 2-3 гульцоў для сумеснай гульні ў баях падзеі «Бітва "
+"блогераў 2025»."
+
+msgid "headerButton/tooltips/bobSquad/header"
 msgstr "Звяз"
 
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
@@ -287,6 +295,9 @@ msgstr "Штраф да досведу з-за памылковага склад
 
 msgid "members/header/battle_royal"
 msgstr ": Сталёвы паляўнічы"
+
+msgid "members/header/bob"
+msgstr ": Бітва блогераў"
 
 msgid "members/header/comp7"
 msgstr ": «Націск»"

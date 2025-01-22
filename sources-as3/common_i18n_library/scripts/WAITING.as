@@ -217,6 +217,10 @@ package
       
       public static const DOWNLOAD_REFPROGRAM:String = "#waiting:download/refProgram";
       
+      public static const DOWNLOAD_BOB:String = "#waiting:download/bob";
+      
+      public static const BOB_CLAIMREWARD:String = "#waiting:bob/claimReward";
+      
       public static const UPDATINGSKILLWINDOW:String = "#waiting:updatingSkillWindow";
       
       public static const PREBATTLE_CREATE:String = "#waiting:prebattle/create";
@@ -338,6 +342,10 @@ package
       public static const DOWNLOAD_ACHIEVEMENTS20:String = "#waiting:download/achievements20";
       
       public static const LOOTBOXOPENINIG:String = "#waiting:lootboxOpeninig";
+      
+      public static const PARAGONS_LOADSELECTOR:String = "#waiting:paragons/loadSelector";
+      
+      public static const PARAGONS_SELECTREWARD:String = "#waiting:paragons/selectReward";
        
       
       public function WAITING()

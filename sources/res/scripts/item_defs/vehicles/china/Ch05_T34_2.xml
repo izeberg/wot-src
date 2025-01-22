@@ -4414,6 +4414,12 @@
 		<Turret_1_Ch05_T34_2>
 			<userString>#china_vehicles:Turret_1_Ch05_T34_2</userString>
 			<tags/>
+			<unlocks>
+				<turret>
+					Turret_2_Ch05_T34_2
+					<cost>15200</cost>
+				</turret>
+			</unlocks>
 			<level>7</level>
 			<price>12840</price>
 			<armor>
@@ -4490,7 +4496,7 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -4656,12 +4662,6 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<unlocks>
-						<turret>
-							Turret_2_Ch05_T34_2
-							<cost>15200</cost>
-						</turret>
-					</unlocks>
 					<armor>
 						<armor_1>
 							170
@@ -4682,7 +4682,7 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -5711,7 +5711,7 @@
 				</gun>
 			</unlocks>
 			<armor>
-				<armor_1>180</armor_1>
+				<armor_1>190</armor_1>
 				<armor_2>155</armor_2>
 				<armor_3>120</armor_3>
 				<armor_4>60</armor_4>
@@ -5760,7 +5760,7 @@
 					</pitchLimits>
 					<armor>
 						<armor_1>
-							180
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -5778,11 +5778,11 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.5
+						4.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5800,7 +5800,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5949,7 +5949,7 @@
 					</pitchLimits>
 					<armor>
 						<armor_1>
-							180
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -5967,11 +5967,11 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.5
+						4.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5988,7 +5988,10 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.9
+						<!--BW_String-->
+					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.25
 						<!--BW_String-->
@@ -6129,7 +6132,7 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							180
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -6147,11 +6150,11 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						9.1
+						7.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -6169,7 +6172,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6298,7 +6301,7 @@
 					<maxAmmo>40</maxAmmo>
 					<armor>
 						<armor_1>
-							180
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -6316,7 +6319,7 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.43
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>12</reloadTime>
@@ -6481,7 +6484,7 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							180
+							190
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -6499,11 +6502,11 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.5
+						7.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -6521,7 +6524,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.8
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

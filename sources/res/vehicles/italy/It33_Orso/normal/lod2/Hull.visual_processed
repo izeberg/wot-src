@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.663798 2.096797</row3>
+					<row3>0.000000 0.663797 2.096797</row3>
 				</transform>
 			</node>
 			<node>
@@ -114,7 +114,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>8.416440 8.416440 0.000000 0.000000</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -161,14 +161,6 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It33_Orso/Orso_hull_01_AO.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>-0.000056 0.096203 0.111843</groupOrigin>
 			</primitiveGroup>
@@ -178,6 +170,6 @@
 		<min>-1.687822 -0.542157 -3.704296</min>
 		<max>1.687711 0.734562 3.927981</max>
 	</boundingBox>
-	<geometrySize>290378</geometrySize>
+	<geometrySize>290346</geometrySize>
 	<minUVDensity>0.000880</minUVDensity>
 </root>

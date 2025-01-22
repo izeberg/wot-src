@@ -1,3 +1,4 @@
+import math
 from collections import namedtuple
 from constants import IS_CLIENT, IS_WEB, IS_EDITOR, IS_BOT
 from items.components import component_constants, c11n_constants
@@ -305,3 +306,26 @@ class RocketAccelerationParams(object):
 
     def __repr__(self):
         return ('deployTime={}, reloadTime={}, reuseCount={}, duration={}, impulse={}, modifiers={}').format(self.deployTime, self.reloadTime, self.reuseCount, self.duration, self.impulse, self.modifiers)
+
+
+class ThermalVisionParams(object):
+    __slots__ = ('initialReloadTime', 'reloadTime', 'duration', 'hSectorAngle', 'vSectorAngle',
+                 'distance', 'timeToObserve', 'timeInObservation', 'useCount')
+
+    def __init__(self, initialReloadTime, reloadTime, duration, hSectorAngle, vSectorAngle, distance, timeToObserve, timeInObservation, useCount):
+        self.initialReloadTime = initialReloadTime
+        self.reloadTime = reloadTime
+        self.duration = duration
+        self.hSectorAngle = math.radians(hSectorAngle)
+        self.vSectorAngle = math.radians(vSectorAngle)
+        self.distance = distance
+        self.timeToObserve = timeToObserve
+        self.timeInObservation = timeInObservation
+        self.useCount = useCount
+
+    def __repr__(self):
+        reprItems = []
+        for item in self.__slots__:
+            reprItems.append(('{}={}').format(item, getattr(self, item, None)))
+
+        return (', ').join(reprItems)

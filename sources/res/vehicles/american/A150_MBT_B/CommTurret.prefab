@@ -102,148 +102,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ComponentsVisibilityController</type>
-			<version>1</version>
-			<component>
-				<objectIndex>1</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>EdgeDrawerComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>1</objectIndex>
-				<flags>1</flags>
-				<config>
-					<property>
-						<name>triggerSource</name>
-						<link>9a421b8e-6877-4c0f-af8e-3dc572dcb1d5</link>
-					</property>
-					<property>
-						<name>isAnimated</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>triggerSource</name>
-						<link>9a421b8e-6877-4c0f-af8e-3dc572dcb1d5</link>
-					</property>
-					<property>
-						<name>isAnimated</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>DynamicModel</type>
-			<version>1</version>
-			<component>
-				<objectIndex>1</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/american/A150_MBT_B/normal/lod0/TurretCamera.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/american/A150_MBT_B/normal/lod0/TurretCamera_Door_anim.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NodeFollower</type>
-			<version>1</version>
-			<component>
-				<objectIndex>0</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>HP_TurretCamera_01</value>
-					</property>
-					<property>
-						<name>DeactivateIfInvalid</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>Animator</type>
 			<version>2</version>
 			<component>
@@ -392,6 +250,148 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>EdgeDrawerComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>triggerSource</name>
+						<link>9a421b8e-6877-4c0f-af8e-3dc572dcb1d5</link>
+					</property>
+					<property>
+						<name>isAnimated</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>triggerSource</name>
+						<link>9a421b8e-6877-4c0f-af8e-3dc572dcb1d5</link>
+					</property>
+					<property>
+						<name>isAnimated</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/american/A150_MBT_B/normal/lod0/TurretCamera.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/american/A150_MBT_B/normal/lod0/TurretCamera_Door_anim.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NodeFollower</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>HP_TurretCamera_01</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>
@@ -405,6 +405,62 @@
 					</property>
 					<property>
 						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CustomizableModelAttachmentComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
 						<value>1</value>
 					</property>
 				</config>

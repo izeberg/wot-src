@@ -17,6 +17,8 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       public function VehicleStatusMarker()
       {
          super();
+         this.glowContainer.setAnimated(false);
+         this.iconContainer.setAnimated(false);
       }
       
       override public function showEffectTimer(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean = true, param5:Boolean = true) : void
@@ -62,6 +64,13 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
          {
             this.timer.color = param1;
          }
+      }
+      
+      override protected function onHiddenStateShowed() : void
+      {
+         super.onHiddenStateShowed();
+         this.glowContainer.setAnimated(false);
+         this.iconContainer.setAnimated(false);
       }
       
       override protected function onDispose() : void

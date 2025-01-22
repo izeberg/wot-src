@@ -2,20 +2,19 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
 {
    import flash.text.TextField;
    import net.wg.data.constants.FragCorrelationBarStatus;
-   import net.wg.data.constants.InvalidationType;
    import scaleform.gfx.TextFieldEx;
    
    public class AllyTeamHealthBar extends BaseTeamHealthBar
    {
       
-      private static const HP_BAR_TO_DIFF_TF_OFFSET:int = -6;
+      private static const HP_BAR_LEFT_PADDING:int = -9;
        
       
       public var diffHpTF:TextField = null;
       
-      private var _diffValue:String = "";
+      private var _diffIsVisible:Boolean = false;
       
-      private var _showDiffValue:Boolean = false;
+      private var _diff:String = "";
       
       public function AllyTeamHealthBar()
       {
@@ -26,14 +25,15 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
       override public function setViewSettings(param1:int) : void
       {
          super.setViewSettings(param1);
-         var _loc2_:Boolean = FragCorrelationBarStatus.isShowHPDifferenceValues(param1);
-         if(_loc2_ == this._showDiffValue)
-         {
-            return;
-         }
-         this._showDiffValue = _loc2_;
-         invalidatePosition();
-         invalidateData();
+         this._diffIsVisible = FragCorrelationBarStatus.isShowHPDifferenceValues(param1);
+         this.diffHpTF.visible = this._diffIsVisible;
+         this.setDiffValues(this._diff);
+      }
+      
+      override protected function updatePositions() : void
+      {
+         super.updatePositions();
+         this.diffHpTF.x = hpBar.x - hpBar.width - this.diffHpTF.width + HP_BAR_LEFT_PADDING;
       }
       
       override protected function onDispose() : void
@@ -42,41 +42,13 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
          super.onDispose();
       }
       
-      override protected function draw() : void
-      {
-         super.draw();
-         if(isInvalid(InvalidationType.POSITION))
-         {
-            if(this._showDiffValue)
-            {
-               if(!this.diffHpTF.visible)
-               {
-                  this.diffHpTF.visible = true;
-               }
-               this.diffHpTF.x = hpBar.x - getHealthBarWidth() + HP_BAR_TO_DIFF_TF_OFFSET - this.diffHpTF.width;
-            }
-            else if(this.diffHpTF.visible)
-            {
-               this.diffHpTF.visible = false;
-            }
-         }
-         if(isInvalid(InvalidationType.DATA))
-         {
-            if(this._showDiffValue)
-            {
-               this.diffHpTF.text = this._diffValue;
-            }
-         }
-      }
-      
       public function setDiffValues(param1:String) : void
       {
-         if(param1 == this._diffValue)
+         this._diff = param1;
+         if(this._diffIsVisible)
          {
-            return;
+            this.diffHpTF.text = param1;
          }
-         this._diffValue = param1;
-         invalidateData();
       }
    }
 }

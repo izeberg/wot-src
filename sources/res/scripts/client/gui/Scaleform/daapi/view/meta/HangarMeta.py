@@ -33,6 +33,10 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_setComp7ModifiersVisible(value)
 
+    def as_setBobModifiersVisibleS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setBobModifiersVisible(value)
+
     def as_setVisibleS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_setVisible(value)
@@ -100,3 +104,7 @@ class HangarMeta(View):
     def as_setVehicleParamsS(self, linkage, alias):
         if self._isDAAPIInited():
             return self.flashObject.as_setVehicleParams(linkage, alias)
+
+    def as_updateUiEffectsStateS(self, isEnabled):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateUiEffectsState(isEnabled)

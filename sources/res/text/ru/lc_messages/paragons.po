@@ -1,0 +1,1013 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "allRewards/button/list"
+msgstr "Список"
+
+msgid "allRewards/button/select"
+msgstr "Выбрать"
+
+msgid "allRewards/subtitle"
+msgstr ""
+"Обычные награды автоматически начисляются по достижении каждого этапа.\n"
+"Технику XI уровня нужно выбирать вручную."
+
+msgid "allRewards/title"
+msgstr "НАГРАДЫ СЕЗОНА %(level)s"
+
+msgid "allRewards/tooltip/branchSelectBody_1"
+msgstr ""
+"Здесь открывается доступ к исследованию и покупке техники заблокированной "
+"ветки в рамках проекта «Орбита»."
+
+msgid "allRewards/tooltip/branchSelectHeader_1"
+msgstr "Доступ к ветке техники"
+
+msgid "allRewards/tooltip/branchSelectHeader_2"
+msgstr "Техника заблокированной ветки:"
+
+msgid "allRewards/tooltip/count"
+msgstr "... и ещё машин: {white_Open}%(count)s{white_Close}"
+
+msgid "allRewards/tooltip/current/additionalText"
+msgstr ""
+"Для продвижения по прогрессии сбросьте ветку исследованной техники, повторно"
+" исследуйте все машины и проведите победный бой на каждой из них."
+
+msgid "allRewards/tooltip/current/text"
+msgstr ""
+"Зарабатывайте очки прогрессии проекта «Орбита», чтобы получить награды за "
+"прохождение этапа."
+
+msgid "allRewards/tooltip/current/title"
+msgstr "Текущий этап"
+
+msgid "allRewards/tooltip/finished/text"
+msgstr "Этап пройден, награды за него получены."
+
+msgid "allRewards/tooltip/finished/title"
+msgstr "Пройденный этап"
+
+msgid "allRewards/tooltip/next/additionalText"
+msgstr ""
+"Для продвижения по прогрессии сбросьте ветку исследованной техники, повторно"
+" исследуйте все машины и проведите победный бой на каждой из них."
+
+msgid "allRewards/tooltip/next/text"
+msgstr ""
+"Продолжайте продвигаться по прогрессии, чтобы получить доступ к наградам "
+"этого этапа."
+
+msgid "allRewards/tooltip/next/title"
+msgstr "Этап недоступен"
+
+msgid "allRewards/tooltip/vehicleSelectBody_1"
+msgstr ""
+"Выберите машину XI уровня из списка доступных. Оставшуюся технику можно "
+"забрать на следующих этапах прогрессии."
+
+msgid "allRewards/tooltip/vehicleSelectBody_2"
+msgstr ""
+"Перечень доступной техники будет пополняться по мере выхода новых сезонов."
+
+msgid "allRewards/tooltip/vehicleSelectHeader_1"
+msgstr "Техника на выбор"
+
+msgid "allRewards/tooltip/vehicleSelectHeader_2"
+msgstr "Доступная для выбора техника:"
+
+msgid "allStageRewards/subTitle"
+msgstr ""
+"Обычные награды начисляются по достижении каждого этапа автоматически.\n"
+"Технику ХI уровня нужно выбирать вручную."
+
+msgid "allStageRewards/title"
+msgstr "НАГРАДЫ ЗА ВСЕ ЭТАПЫ"
+
+msgid "battle/reward/coins"
+msgstr "За бой начислено: %(coins)s"
+
+msgid "branch/available/body"
+msgstr "Проблема решена, заблокированная ветка техники снова доступна."
+
+msgid "branch/available/header"
+msgstr "Заблокированная ветка вернулась"
+
+msgid "branch/reseted/body/first"
+msgstr "Ветка сброшена до неисследованного состояния."
+
+msgid "branch/reseted/body/second"
+msgstr "Возврат имущества:"
+
+msgid "branch/reseted/header"
+msgstr "Ветка сброшена"
+
+msgid "branch/reseted/refund/ammunition"
+msgstr "Боекомлект %(amounts)s."
+
+msgid "branch/reseted/refund/appearance"
+msgstr "Элементы внешнего вида %(amounts)s."
+
+msgid "branch/reseted/refund/credits"
+msgstr "Кредиты: %(amounts)s."
+
+msgid "branch/reseted/refund/crew"
+msgstr "Члены экипажа %(amounts)s."
+
+msgid "branch/reseted/refund/equipment"
+msgstr "Оборудование %(amounts)s."
+
+msgid "branch/reseted/refund/instruction"
+msgstr "Предбоевые инструкции %(amounts)s."
+
+msgid "branch/reseted/refund/kit"
+msgstr "Снаряжение %(amounts)s."
+
+msgid "branch/resetting/error/body/first"
+msgstr "Произошла ошибка. Попробуйте повторить операцию позже."
+
+msgid "branch/resetting/error/body/second"
+msgstr "Вся техника и ресурсы сохранены."
+
+msgid "branch/resetting/error/header"
+msgstr "Ошибка сброса"
+
+msgid "branch/unavailable/body"
+msgstr ""
+"Что-то пошло не так. Мы работаем над устранением неполадок, попробуйте "
+"позже."
+
+msgid "branch/unavailable/header"
+msgstr "Заблокированная ветка недоступна"
+
+msgid "chapter/reward/header"
+msgstr "Этап пройден! Награда:"
+
+msgid "chapter/reward/selector/button/text"
+msgstr "Выбрать"
+
+msgid "chapter/reward/selector/text"
+msgstr "Выберите награды из доступных категорий."
+
+msgid "chapterName/id_1"
+msgstr "Сезон «Альфа»"
+
+msgid "chapterName/short/id_1"
+msgstr "«Альфа»"
+
+msgid "chapterName/shortUpperCase/id_1"
+msgstr "«АЛЬФА»"
+
+msgid "chapterName/upperCase/id_1"
+msgstr "СЕЗОН «АЛЬФА»"
+
+msgid "claimRewards/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "claimRewards/errorScreen/button"
+msgstr "Так точно!"
+
+msgid "claimRewards/errorScreen/description"
+msgstr ""
+"Обновите экран или повторите попытку позже. Мы работаем над поиском и "
+"устранением проблемы."
+
+msgid "claimRewards/errorScreen/title"
+msgstr "Произошла ошибка"
+
+msgid "claimRewards/footer/claimButton"
+msgstr "Забрать"
+
+msgid "claimRewards/footer/claimLaterButton"
+msgstr "Выбрать позже"
+
+msgid "claimRewards/footer/text/chose"
+msgstr "Выбрано наград: %(number)s"
+
+msgid "claimRewards/footer/text/notChosen"
+msgstr "Выберите награды из представленных категорий"
+
+msgid "claimRewards/footer/text/tooltip/description"
+msgstr "Нажмите «Забрать» и получите выбранные награды."
+
+msgid "claimRewards/footer/text/tooltip/header"
+msgstr "Выбрано наград: %(number)s"
+
+msgid "claimRewards/footer/text/tooltip/vehicleDescription"
+msgstr "Машина XI уровня"
+
+msgid "claimRewards/purchaseScreen/alert"
+msgstr "Вы не сможете изменить выбор!"
+
+msgid "claimRewards/purchaseScreen/cancelButton"
+msgstr "Отменить"
+
+msgid "claimRewards/purchaseScreen/confirmButton"
+msgstr "Подтвердить"
+
+msgid "claimRewards/purchaseScreen/title"
+msgstr "Забрать %(tankName)?"
+
+msgid "claimRewards/selectedRewards/number"
+msgstr "%(selected)s / %(all)s"
+
+msgid "claimRewards/selectedRewards/title"
+msgstr "Машина XI уровня"
+
+msgid "claimRewards/selectedRewards/tooltip/body"
+msgstr "Выбор машины XI уровня."
+
+msgid "claimRewards/selectedRewards/tooltip/header"
+msgstr "Техника XI уровня"
+
+msgid "claimRewards/title"
+msgstr "ВЫБЕРИТЕ НАГРАДУ"
+
+msgid "claimRewards/titlePreview"
+msgstr "ТЕХНИКА НА ВЫБОР"
+
+msgid "entryPoint/tooltip/allChaptersCompleted"
+msgstr "ВСЕ СЕЗОНЫ ПРОЙДЕНЫ"
+
+msgid "entryPoint/tooltip/chapterNotChosen"
+msgstr "ВЫБЕРИТЕ СЛЕДУЮЩИЙ ЭТАП"
+
+msgid "entryPoint/tooltip/currentLevel"
+msgstr "Текущий этап"
+
+msgid "entryPoint/tooltip/currentLevelRewards"
+msgstr "Награды за этап"
+
+msgid "entryPoint/tooltip/firstEntry/description"
+msgstr ""
+"Проект «Орбита» запущен! Продвигайтесь по прогрессии и получайте ценные "
+"награды."
+
+msgid "entryPoint/tooltip/firstEntry/rewards/point"
+msgstr "•"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_1"
+msgstr "Тематический прогрессионный стиль;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_2"
+msgstr "Члены экипажа;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_3"
+msgstr "Премиум техника VIII - IX уровней;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_4"
+msgstr "Акционная техника X уровня;"
+
+msgid "entryPoint/tooltip/firstEntry/rewards/reward_5"
+msgstr "Уникальные машины XI уровня с новыми боевыми возможностями."
+
+msgid "entryPoint/tooltip/firstEntry/rewards/subtitle"
+msgstr "Награды за этапы сезона:"
+
+msgid "entryPoint/tooltip/firstEntry/steps/rewardsSubTitle"
+msgstr "Награды за этапы сезона:"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_1"
+msgstr "%(colored)s с уникальными наградами."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_1_colored"
+msgstr "Выберите сезон"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_2"
+msgstr "%(colored)s исследуемой техники VI - X уровня."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_2_colored"
+msgstr "Сбросьте ветку"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_3"
+msgstr "%(colored)s исследованные машины."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_3_colored"
+msgstr "Исследуйте эту ветку повторно и купите"
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_4"
+msgstr ""
+"Проведите %(colored)s на каждой из этих машин в любом из подходящих режимов."
+
+msgid "entryPoint/tooltip/firstEntry/steps/step_4_colored"
+msgstr "победный бой"
+
+msgid "entryPoint/tooltip/firstEntry/steps/subTitle"
+msgstr "Как продвигаться по прогрессии:"
+
+msgid "entryPoint/tooltip/howToEarnPoints1"
+msgstr ""
+"%(colored)s исследуемой техники VI - X уровня. Одну и ту же ветку можно "
+"сбросить заново после повторного её исследования."
+
+msgid "entryPoint/tooltip/howToEarnPoints1_colored"
+msgstr "Сбросьте ветку"
+
+msgid "entryPoint/tooltip/howToEarnPoints2"
+msgstr "%(colored)s исследованную технику."
+
+msgid "entryPoint/tooltip/howToEarnPoints2_colored"
+msgstr "Исследуйте и купите повторно"
+
+msgid "entryPoint/tooltip/howToEarnPoints3"
+msgstr ""
+"Проведите %(colored)s на каждой повторно исследованной машине в любом из "
+"режимов: Случайный бой, Генеральное сражение, Натиск, Ранговый бой, Линия "
+"фронта, Полигон, Аркада, Укрепрайоны и Клановые бои."
+
+msgid "entryPoint/tooltip/howToEarnPoints3_colored"
+msgstr "победный бой"
+
+msgid "entryPoint/tooltip/howToEarnPointsHeader"
+msgstr "Как заработать очки прогрессии:"
+
+msgid "entryPoint/tooltip/message/allChaptersCompleted"
+msgstr "Новые сезоны с наградами уже в разработке."
+
+msgid "entryPoint/tooltip/message/chapterNotChosen"
+msgstr ""
+"Выберите сезон, чтобы двигаться по прогрессии и получать ценные награды."
+
+msgid "entryPoint/tooltip/paused/description"
+msgstr "Проект временно приостановлен. Мы сообщим о возобновлении работы."
+
+msgid "entryPoint/tooltip/paused/title"
+msgstr "Проект «Орбита» приостановлен"
+
+msgid "entryPoint/tooltip/points/description"
+msgstr ""
+"Продолжайте накапливать очки прогрессии\n"
+"для их переноса на следующий сезон."
+
+msgid "entryPoint/tooltip/stage"
+msgstr "Сезон %(stage)"
+
+msgid "entryPoint/tooltip/title"
+msgstr "Проект «Орбита»"
+
+msgid "entryPoint/tooltip/warning/needVehicleToReset"
+msgstr ""
+"Чтобы получить доступ к сбросу веток, нужно иметь не менее %(count) "
+"исследуемых машин Х уровня в Ангаре."
+
+msgid "entryPoint/tooltip/warning/noResettedBranches"
+msgstr ""
+"Чтобы продолжить зарабатывать очки, сбросьте прогресс исследования ветки "
+"техники."
+
+msgid "introView/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "introView/description/first"
+msgstr ""
+"Сбросьте ветку техники, повторно исследуйте её и купите машины в Ангар. Все "
+"оборудование и члены экипажа вернутся на Склад / в Казарму. Боевой опыт, "
+"оснащение, полевая модернизация и вся статистика сохранятся."
+
+msgid "introView/description/second"
+msgstr ""
+"За победный бой на повторно исследованной машине начисляются очки прогрессии"
+" проекта «Орбита»."
+
+msgid "introView/description/third"
+msgstr ""
+"За прохождение этапов активного сезона проекта вы получите уникальные "
+"элементы внешнего вида, членов экипажа и высокоуровневую технику, в том "
+"числе машины XI уровня."
+
+msgid "introView/goToFeatureButton"
+msgstr "К проекту «Орбита»"
+
+msgid "introView/header/title"
+msgstr "ПРОЕКТ «ОРБИТА»"
+
+msgid "introView/title/first"
+msgstr "Сброс веток"
+
+msgid "introView/title/second"
+msgstr "Победите в бою"
+
+msgid "introView/title/third"
+msgstr "Получайте награды"
+
+msgid "level/reward/header"
+msgstr "Уровень пройден! Награда:"
+
+msgid "navigation/about"
+msgstr "О проекте"
+
+msgid "navigation/button/back"
+msgstr "НАЗАД"
+
+msgid "navigation/button/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "navigation/button/goto"
+msgstr "К ДЕРЕВУ ИССЛЕДОВАНИЙ"
+
+msgid "navigation/chapters"
+msgstr "Сезоны"
+
+msgid "navigation/progress"
+msgstr "Прогрессия"
+
+msgid "navigation/progression/button/compare"
+msgstr "Добавить к сравнению"
+
+msgid "navigation/progression/button/preview"
+msgstr "Предпросмотр"
+
+msgid "navigation/progression/button/selectVehicle"
+msgstr "Выбрать"
+
+msgid "navigation/progression/button/toCurrentStage"
+msgstr "К текущему этапу"
+
+msgid "navigation/progression/button/toRewards"
+msgstr "К наградам"
+
+msgid "navigation/progression/button/toStage"
+msgstr "К сезонам"
+
+msgid "navigation/progression/button/viewBranch"
+msgstr "Посмотреть ветки техники"
+
+msgid "navigation/progression/button/viewVehicle"
+msgstr "Посмотреть технику"
+
+msgid "navigation/progression/completedStages"
+msgstr "Завершено сезонов: "
+
+msgid "navigation/progression/level"
+msgstr "ЭТАП %(level)"
+
+msgid "navigation/progression/levelPoints"
+msgstr "ОЧКИ ЭТАПА"
+
+msgid "navigation/progression/noAccess/description"
+msgstr "Выберите сезон проекта «Орбита», чтобы открыть доступ к прогрессии."
+
+msgid "navigation/progression/noAccess/title"
+msgstr "Нет доступа"
+
+msgid "navigation/progression/pointsInStorage"
+msgstr "ОЧКИ ПРОГРЕССИИ В ХРАНИЛИЩЕ"
+
+msgid "navigation/progression/progress"
+msgstr "ПРОГРЕСС СЕЗОНА"
+
+msgid "navigation/progression/progressionCompleted/description_1"
+msgstr "В настоящий момент нет доступных сезонов и наград."
+
+msgid "navigation/progression/progressionCompleted/description_2"
+msgstr ""
+"Вы можете продолжить зарабатывать очки прогрессии, и они перенесутся на "
+"следующий выбранный сезон."
+
+msgid "navigation/progression/progressionCompleted/title"
+msgstr "Все этапы пройдены, награды получены"
+
+msgid "navigation/progression/text/splittedValue"
+msgstr " / %(value)"
+
+msgid "navigation/progression/tooltip/activeStoragePointsBody_1"
+msgstr ""
+"Очки прогрессии проекта «Орбита»: текущее количество / необходимое для "
+"прохождения этапа."
+
+msgid "navigation/progression/tooltip/activeStoragePointsBody_2"
+msgstr ""
+"Очки начисляются за победный бой на повторно исследованной и купленной "
+"технике из сброшенной ветки."
+
+msgid "navigation/progression/tooltip/activeStoragePointsHeader_1"
+msgstr "Очки прогрессии проекта «Орбита»"
+
+msgid "navigation/progression/tooltip/activeStoragePointsHeader_2"
+msgstr "Как заработать"
+
+msgid "navigation/progression/tooltip/nextStageRewards"
+msgstr "Посмотреть награды за следующий этап."
+
+msgid "navigation/progression/tooltip/prevStageRewards"
+msgstr "Посмотреть награды за предыдущий этап."
+
+msgid "navigation/progression/tooltip/storagePointsBody"
+msgstr ""
+"Все собранные очки прогрессии будут автоматически начислены на следующий "
+"выбранный сезон."
+
+msgid "navigation/progression/tooltip/storagePointsHeader"
+msgstr "Хранилище очков проекта «Орбита»"
+
+msgid "navigation/progression/vehicleSelect/label"
+msgstr "Техника XI уровня"
+
+msgid "navigation/progression/warning/claimRewards"
+msgstr ""
+"Чтобы завершить текущий сезон, заберите все доступные для выбора награды."
+
+msgid "navigation/rewards"
+msgstr "Награды"
+
+msgid "navigation/tooltip/body/about"
+msgstr "Здесь можно узнать о заработке очков прогрессии."
+
+msgid "navigation/tooltip/body/chapters"
+msgstr "Ранее вышедшие и доступные для выбора сезоны."
+
+msgid "navigation/tooltip/body/progress"
+msgstr "Линейка этапов проекта «Орбита» и ваш текущий прогресс."
+
+msgid "navigation/tooltip/body/rewards"
+msgstr "Награды за все этапы выбранного сезона проекта «Орбита»."
+
+msgid "navigation/tooltip/body/rewards_disabled"
+msgstr ""
+"Награды за все этапы выбранного сезона проекта «Орбита». Станут доступны "
+"после выбора сезона."
+
+msgid "navigation/tooltip/header/about"
+msgstr "О проекте «Орбита»"
+
+msgid "navigation/tooltip/header/chapters"
+msgstr "Все сезоны"
+
+msgid "navigation/tooltip/header/progress"
+msgstr "Прогресс проекта «Орбита»"
+
+msgid "navigation/tooltip/header/rewards"
+msgstr "Награды сезона"
+
+msgid "postBattle/extraCoins"
+msgstr "Очки прогрессии помещены в хранилище:"
+
+msgid "postBattle/notification"
+msgstr "Проект «Орбита». Поступило очков прогрессии в хранилище:"
+
+msgid "postBattle/progress"
+msgstr "Прогресс этапа: %(number)s"
+
+msgid "postBattle/subtitle"
+msgstr "Сезон %(name)s"
+
+msgid "postBattle/tooltip/btnlabel/active"
+msgstr "К прогрессу проекта «Орбита»"
+
+msgid "postBattle/tooltip/btnlabel/select"
+msgstr "К выбору сезона проекта «Орбита»"
+
+msgid "postBattle/tooltip/coins"
+msgstr "Очки проекта «Орбита»"
+
+msgid "progressStylePreview/backButton"
+msgstr "К ПРОЕКТУ «ОРБИТА»"
+
+msgid "progressStylePreview/progress/description"
+msgstr ""
+"Выберите уровень стиля и посмотрите, как будет выглядеть машина\n"
+"на разных этапах прохождения прогрессии проекта «Орбита»."
+
+msgid "project/name"
+msgstr "Проект «Орбита»"
+
+msgid "project/select/reward/message"
+msgstr "Выберите награды из доступных категорий."
+
+msgid "project/unavalable/body"
+msgstr ""
+"Что-то пошло не так. Мы работаем над устранением неполадок, попробуйте "
+"позже."
+
+msgid "project/unavalable/header"
+msgstr "Проект «Орбита» недоступен"
+
+msgid "resetBranch/buttons/back"
+msgstr "Назад"
+
+msgid "resetBranch/buttons/next"
+msgstr "Далее"
+
+msgid "resetBranch/buttons/reset"
+msgstr "Сбросить"
+
+msgid "resetBranch/captcha/error"
+msgstr "При вводе значения допущена ошибка."
+
+msgid "resetBranch/captcha/header"
+msgstr "Введите стоимость продажи"
+
+msgid "resetBranch/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "resetBranch/resultScreen/button"
+msgstr "Так точно!"
+
+msgid "resetBranch/resultScreen/subTitle/failed"
+msgstr ""
+"Приносим извинения за временные неудобства, попробуйте повторить операцию "
+"позже."
+
+msgid "resetBranch/resultScreen/subTitle/success"
+msgstr ""
+"Повторно исследуйте и купите технику сброшенной ветки, а затем проведите на ней победный бой,\n"
+"чтобы получить очки прогрессии проекта «Орбита»."
+
+msgid "resetBranch/resultScreen/title/failed"
+msgstr "Ошибка сброса ветки"
+
+msgid "resetBranch/resultScreen/title/success"
+msgstr "Ветка успешно сброшена"
+
+msgid "resetBranch/returnBack/battleBoosters"
+msgstr "Предбоевые инструкции"
+
+msgid "resetBranch/returnBack/crew"
+msgstr "Экипаж"
+
+msgid "resetBranch/returnBack/customization"
+msgstr "Элементы внешнего вида"
+
+msgid "resetBranch/returnBack/equipments"
+msgstr "Снаряжение"
+
+msgid "resetBranch/returnBack/header"
+msgstr "На Склад / в Казарму вернутся"
+
+msgid "resetBranch/returnBack/optionalDevices"
+msgstr "Оборудование"
+
+msgid "resetBranch/returnBack/shells"
+msgstr "Боекомплект"
+
+msgid "resetBranch/step1/branchCount"
+msgstr "Сейчас сброшено веток: %(current)s / %(max)s"
+
+msgid "resetBranch/step1/description"
+msgstr ""
+"Техника получит статус «неисследованная», весь накопленный боевой опыт "
+"сохраняется. За победный бой на этой технике начисляются очки проекта "
+"«Орбита». За прохождение этапов проекта вы получите {cream_open}технику, "
+"прогрессионный стиль{cream_close} и тематических {cream_open}членов "
+"экипажа{cream_close}."
+
+msgid "resetBranch/step1/pointsDescription"
+msgstr "за победный бой"
+
+msgid "resetBranch/step1/total"
+msgstr "Всего очков прогрессии получите после победных боёв на технике:"
+
+msgid "resetBranch/step2/creditsBack"
+msgstr "Вернётся кредитов:"
+
+msgid "resetBranch/step2/description"
+msgstr ""
+"Компенсируется {cream_open}50%{cream_close} от стоимости техники. "
+"Оборудование, инструкции, боекомплект и снаряжение выгружается на Склад "
+"{cream_open}бесплатно{cream_close}. Весь боевой опыт, игровая статистика, "
+"знаки классности, отличительные отметки, элитный статус, уровень полевой "
+"модернизации и её выбранные элементы сохраняются."
+
+msgid "resetBranch/step2/details"
+msgstr "Подробнее"
+
+msgid "resetBranch/step2/module"
+msgstr "Установить базовые модули со Склада, если таковые имеются."
+
+msgid "resetBranch/step2/notInHangar"
+msgstr "Нет в Ангаре"
+
+msgid "resetBranch/step2/returnBack"
+msgstr "На Склад вернётся"
+
+msgid "resetBranch/step3/confirmText"
+msgstr ""
+"Процесс необратим: для игры на сбрасываемой технике вам потребуется повторно"
+" её исследовать и купить."
+
+msgid "resetBranch/subtitle"
+msgstr "Проект «Орбита»"
+
+msgid "resetBranch/title"
+msgstr "СБРОС ВЕТКИ ТЕХНИКИ"
+
+msgid "resetBranch/tooltip/blueprint/count"
+msgstr ""
+"В наборе \n"
+"%(count)s %(countType)s"
+
+msgid "resetBranch/tooltip/blueprint/countType"
+msgstr "шт."
+
+msgid "resetBranch/tooltip/blueprint/description"
+msgstr ""
+"Автоматически дополняет чертёж машины и даёт скидку на её исследование."
+
+msgid "resetBranch/tooltip/blueprint/discount"
+msgstr ""
+"Скидка на исследование: \n"
+"%(discount)s или {bond_open}%(experience)s{bond_close}"
+
+msgid "resetBranch/tooltip/blueprint/discountValue"
+msgstr "%(discountValue)s%"
+
+msgid "resetBranch/tooltip/blueprint/header"
+msgstr "Фрагмент чертежа"
+
+msgid "resetBranch/tooltip/bull"
+msgstr "•"
+
+msgid "resetBranch/tooltip/credits/description"
+msgstr ""
+"При сбросе ветки техники компенсируется 50% от стоимости каждой машины и "
+"установленных модулей."
+
+msgid "resetBranch/tooltip/credits/header"
+msgstr "Кредиты"
+
+msgid "resetBranch/tooltip/listSeparator"
+msgstr ", "
+
+msgid "resetBranch/tooltip/modules/description"
+msgstr ""
+"При продаже машины на неё будут установлены {cream_open}базовые модули{cream_close} (устанавливаемые изначально при покупке машины), если таковые имеются на Складе. \n"
+" \n"
+"{cream_open}Исследуемые{cream_close} модули при этом будут сняты с машины и бесплатно выгружены на Склад."
+
+msgid "resetBranch/tooltip/modules/header"
+msgstr "Установить базовые модули"
+
+msgid "resetBranch/tooltip/progressionPoints/description"
+msgstr ""
+"Нужны для продвижения по прогрессии проекта. Для получения очков нужно "
+"провести победный бой на повторно исследованной и приобретённой технике."
+
+msgid "resetBranch/tooltip/progressionPoints/header"
+msgstr "Очки проекта «Орбита»"
+
+msgid "resetBranch/tooltip/resetBranch/description"
+msgstr ""
+"Максимальное количество одновременно сброшенных веток техники {max_count}."
+
+msgid "resetBranch/tooltip/resetBranch/header"
+msgstr "Сброшенные ветки"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader1"
+msgstr "Достигнут лимит сброшенных веток"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader2"
+msgstr "Недостаточно техники Х уровня"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader3"
+msgstr "Сброс ветки недоступен"
+
+msgid "resetBranch/tooltip/resetButtonErrorHeader4"
+msgstr "Проект «Орбита» приостановлен"
+
+msgid "resetBranch/tooltip/resetButtonErrorText1"
+msgstr ""
+"Одновременно сброшено "
+"{whiteSpanish_open}%(resetBranchesCount)s{whiteSpanish_close} ветки техники."
+" Соберите все очки проекта «Орбита» с любой сброшенной ветки, чтобы получить"
+" возможность сбросить новую."
+
+msgid "resetBranch/tooltip/resetButtonErrorText10"
+msgstr "Проект временно приостановлен. Мы сообщим о возобновлении работы."
+
+msgid "resetBranch/tooltip/resetButtonErrorText2"
+msgstr ""
+"Чтобы получить возможность сброса ветки, должно быть исследовано не менее "
+"{cream_open}%(necessaryVehicleCount)s ед.{cream_close} техники Х уровня. "
+"Сейчас исследовано: {cream_open}%(vehicleCount)s ед.{cream_close}"
+
+msgid "resetBranch/tooltip/resetButtonErrorText3"
+msgstr ""
+"Для сброса новой ветки необходимо исследовать и собрать очки прогрессии "
+"проекта «Орбита» на всей технике сброшенной ветки."
+
+msgid "resetBranch/tooltip/resetButtonErrorText5"
+msgstr "Техника с очками прогрессии: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText6"
+msgstr "Техника нуждается в ремонте: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText7"
+msgstr "Техника находится в бою: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText8"
+msgstr "Техника находится в составе формирования: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonErrorText9"
+msgstr "Техника нуждается в исследовании: %(value)s"
+
+msgid "resetBranch/tooltip/resetButtonHeader"
+msgstr "Сбросить ветку"
+
+msgid "resetBranch/tooltip/resetButtonList1"
+msgstr ""
+"Имеющаяся техника продаётся за {brown_open}50%{brown_close} от стоимости."
+
+msgid "resetBranch/tooltip/resetButtonList2"
+msgstr ""
+"Вся сброшенная техника становится {brown_open}неисследованной{brown_close}."
+
+msgid "resetBranch/tooltip/resetButtonList3"
+msgstr ""
+"Экипажи высаживаются в Казарму. Если мест в Казарме недостаточно, экипажи "
+"займут временные."
+
+msgid "resetBranch/tooltip/resetButtonList4"
+msgstr ""
+"Снаряжение, оборудование, боекомплект, элементы внешнего вида и инструкции "
+"{brown_open}бесплатно{brown_close} выгружаются на Склад."
+
+msgid "resetBranch/tooltip/resetButtonList5"
+msgstr ""
+"Весь боевой опыт, игровая статистика, знаки классности, отличительные "
+"отметки, элитный статус, уровень полевой модернизации и её выбранные "
+"элементы {brown_open}сохраняются{brown_close}."
+
+msgid "resetBranch/tooltip/resetButtonList6"
+msgstr ""
+"За победный бой на повторно исследованной технике зарабатываются очки "
+"прогрессии проекта «Орбита»."
+
+msgid "resetBranch/tooltip/resetButtonSubHeader"
+msgstr "При сбросе ветки:"
+
+msgid "resetBranch/tooltip/resetButtonText1"
+msgstr "Всего сброшено веток: {cream_open}%(current)s{cream_close} / %(max)s"
+
+msgid "resetBranch/tooltip/resetButtonText2"
+msgstr ""
+"Очки проекта «Орбита»: {whiteSpanish_open}%(current)s{whiteSpanish_close}"
+
+msgid "resetBranch/tooltip/resetButtonText3"
+msgstr "Вернётся кредитов: {cred_open}%(current)s{cred_close}"
+
+msgid "resetBranch/tooltip/returnBack/additionalDescription"
+msgstr ""
+"Весь боевой опыт, игровая статистика, знаки классности, отличительные "
+"отметки, элитный статус, уровень полевой модернизации и её выбранные "
+"элементы сохраняются."
+
+msgid "resetBranch/tooltip/returnBack/description"
+msgstr ""
+"Оборудование, инструкции, боекомплект и снаряжение выгружается на Склад "
+"бесплатно. Экипаж машины высаживается в Казарму."
+
+msgid "resetBranch/tooltip/returnBack/header"
+msgstr "Вернётся на Склад / в Казарму"
+
+msgid "resetBranch/tooltip/step1/descr"
+msgstr "Очки прогрессии проекта «Орбита»."
+
+msgid "resetBranch/tooltip/step1/header"
+msgstr "Сброс ветки техники: шаг 1"
+
+msgid "resetBranch/tooltip/step2/descr"
+msgstr "Возвращаемое игровое имущество."
+
+msgid "resetBranch/tooltip/step2/header"
+msgstr "Сброс ветки техники: шаг 2"
+
+msgid "resetBranch/tooltip/step3/descr"
+msgstr "Подтверждение сброса ветки."
+
+msgid "resetBranch/tooltip/step3/header"
+msgstr "Сброс ветки техники: шаг 3"
+
+msgid "resetBranch/tooltip/totalProgressionPoints/description"
+msgstr ""
+"Нужны для продвижения по прогрессии проекта. Для получения победите в бою в "
+"любом из режимов: Случайный бой, Генеральное сражение, Натиск, Ранговый бой,"
+" Линия фронта, Полигон, Аркада, Укрепрайоны и Клановые бои."
+
+msgid "resetBranch/tooltip/totalProgressionPoints/header"
+msgstr "Очки проекта «Орбита»"
+
+msgid "reward/branch"
+msgstr "Доступ к ветке техники"
+
+msgid "reward/branches"
+msgstr "Член экипажа %(branch)s"
+
+msgid "reward/crew"
+msgstr "Член экипажа %(crews)s"
+
+msgid "reward/selector/level/eleven"
+msgstr "Техника XI уровня"
+
+msgid "reward/style"
+msgstr "Стиль %(styles)s"
+
+msgid "reward/vehicle"
+msgstr "Техника: «%(vehicles)s»"
+
+msgid "rewards/header"
+msgstr "Поздравляем!"
+
+msgid "rewards/notification"
+msgstr "Получена награда за прохождение %(level)s этапа проекта «Орбита»."
+
+msgid "rewards/paragonsUnlock"
+msgstr "Доступ к ветке техники"
+
+msgid "rewards/tman"
+msgstr "Член экипажа «%(tmanName)s»"
+
+msgid "rewardsView/footer/buttonText"
+msgstr "Так точно!"
+
+msgid "rewardsView/footer/previewButtonText"
+msgstr "Посмотреть в Ангаре"
+
+msgid "rewardsView/header/closeButtonText"
+msgstr "ЗАКРЫТЬ"
+
+msgid "rewardsView/header/subTitle"
+msgstr "Получена награда за прохождение %(level)s этапа проекта «Орбита»."
+
+msgid "rewardsView/header/title"
+msgstr "Поздравляем!"
+
+msgid "rewardsView/restRewardsTooltip/headerText"
+msgstr "Награды"
+
+msgid "rewardsView/selectReward/button"
+msgstr "Выбрать"
+
+msgid "rewardsView/selectReward/label"
+msgstr "Техника XI уровня"
+
+msgid "seasonsProgression/headerText"
+msgstr "Проект «Орбита»"
+
+msgid "seasonsProgression/selectedChapterRewardsOverlay/subTitle"
+msgstr ""
+"Обычные награды начисляются по достижении каждого этапа автоматически.\n"
+"Технику ХI уровня нужно выбирать вручную."
+
+msgid "seasonsProgression/selectedChapterRewardsOverlay/title"
+msgstr "НАГРАДЫ ЗА ВСЕ ЭТАПЫ"
+
+msgid "seasonsProgression/stageText/activeStage"
+msgstr "Активный сезон"
+
+msgid "seasonsProgression/stageText/availableSoon"
+msgstr "В разработке"
+
+msgid "seasonsProgression/stageText/rewardStage"
+msgstr "Награды сезона"
+
+msgid "seasonsProgression/stageText/selectStage"
+msgstr "Выбрать сезон"
+
+msgid "seasonsProgression/subtitle/allStagesCompleted"
+msgstr ""
+"Все сезоны проекта пройдены и награды получены.\n"
+"Мы сообщим, когда откроется новый сезон с очередными наградами."
+
+msgid "seasonsProgression/subtitle/selectStageForGetReward"
+msgstr ""
+"Выберите сезон проекта, чтобы получить награды за прохождение его этапов."
+
+msgid "seasonsProgression/title/projectStages"
+msgstr "ВЫБОР СЕЗОНА"
+
+msgid "seasonsProgression/tooltip/body/announcement"
+msgstr "Новый сезон уже в работе и скоро будет доступен."
+
+msgid "seasonsProgression/tooltip/body/default"
+msgstr "Выберите сезон, чтобы получить награды за прохождение его этапов."
+
+msgid "seasonsProgression/tooltip/body/disabled"
+msgstr "Пройдите сезон, активный в данный момент, чтобы выбрать следующий."
+
+msgid "seasonsProgression/tooltip/body/finished"
+msgstr "Все этапы этого сезона пройдены, награды получены."
+
+msgid "seasonsProgression/tooltip/btnRewards"
+msgstr "Посмотреть награды этого сезона."
+
+msgid "seasonsProgression/tooltip/header/announcement"
+msgstr "Анонс нового сезона проекта «Орбита»"
+
+msgid "seasonsProgression/tooltip/header/default"
+msgstr "Сезон проекта «Орбита»"
+
+msgid "seasonsProgression/tooltip/header/disabled"
+msgstr "Заблокированный сезон проекта «Орбита»"
+
+msgid "seasonsProgression/tooltip/header/finished"
+msgstr "Пройденный сезон проекта «Орбита»"
+
+msgid "vehiclePreview/backButton"
+msgstr "К ПРОЕКТУ «ОРБИТА»"

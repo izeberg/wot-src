@@ -89,7 +89,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>15400</weight>
-		<maxHealth>1240</maxHealth>
+		<maxHealth>1400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2034,7 +2034,7 @@
 			</terrainResistance>
 			<brakeForce>37800</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>46</rotationSpeed>
+			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -3670,7 +3670,7 @@
 			</terrainResistance>
 			<brakeForce>42500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>48</rotationSpeed>
+			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -5307,6 +5307,12 @@
 		<Turret_1_T-54_2>
 			<userString>#ussr_vehicles:Turret_1_T-54_2</userString>
 			<tags/>
+			<unlocks>
+				<turret>
+					Turret_2_T-54_2
+					<cost>23540</cost>
+				</turret>
+			</unlocks>
 			<level>8</level>
 			<price>31400</price>
 			<armor>
@@ -5326,7 +5332,7 @@
 			</armor>
 			<primaryArmor>armor_10 armor_1 armor_9</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>310</maxHealth>
+			<maxHealth>250</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5383,21 +5389,21 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.9
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<reloadTime>
-						8.8
+						7.5
 						<!--BW_String-->
 					</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 5 0.394672 5 0.458334 3 0.541666 3 0.605328 5 1 5
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5542,12 +5548,6 @@
 				<_100mm_LB-1>
 					shared
 					<maxAmmo>50</maxAmmo>
-					<unlocks>
-						<turret>
-							Turret_2_T-54_2
-							<cost>23540</cost>
-						</turret>
-					</unlocks>
 					<armor>
 						<armor_1>
 							200
@@ -5580,17 +5580,17 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.8
+						7.5
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 5 0.394672 5 0.458334 3 0.541666 3 0.605328 5 1 5
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6916,11 +6916,7 @@
 			<unlocks>
 				<gun>
 					_100mm_D54_obr_45
-					<cost>59300</cost>
-				</gun>
-				<gun>
-					_100mm_D-10T2S
-					<cost>59300</cost>
+					<cost>34300</cost>
 				</gun>
 			</unlocks>
 			<armor>
@@ -6928,7 +6924,7 @@
 				<armor_2>171</armor_2>
 				<armor_3>180</armor_3>
 				<armor_4>57</armor_4>
-				<armor_5>30</armor_5>
+				<armor_5>40</armor_5>
 				<armor_6>107</armor_6>
 				<armor_7>121</armor_7>
 				<armor_8>0</armor_8>
@@ -6945,7 +6941,7 @@
 			</armor>
 			<primaryArmor>armor_10 armor_3 armor_9</primaryArmor>
 			<weight>8500</weight>
-			<maxHealth>410</maxHealth>
+			<maxHealth>350</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7000,15 +6996,15 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<reloadTime>
-						8.5
+						7.0
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7028,7 +7024,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 5 0.394672 5 0.458334 2 0.541666 2 0.605328 5 1 5
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7221,15 +7217,15 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.35
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.5
+						7.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -7249,7 +7245,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 5 0.394672 5 0.458334 2 0.541666 2 0.605328 5 1 5
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7396,6 +7392,12 @@
 				<_100mm_D54_obr_45>
 					shared
 					<maxAmmo>50</maxAmmo>
+					<unlocks>
+						<gun>
+							_100mm_D-10T2S
+							<cost>44100</cost>
+						</gun>
+					</unlocks>
 					<armor>
 						<armor_1>
 							240
@@ -7424,18 +7426,21 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.33
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.5
+						8.0
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						2.1
+						<!--BW_String-->
+					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 5 0.394672 5 0.458334 2 0.541666 2 0.605328 5 1 5
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7616,11 +7621,11 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.5
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<reloadTime>
@@ -7644,7 +7649,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 6 0.394672 6 0.458334 2 0.541666 2 0.605328 6 1 6
+							0 7 0.394672 7 0.458334 3 0.541666 3 0.605328 7 1 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -9019,28 +9024,30 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
+					<axleCount>5</axleCount>
 				</Chassis_T-54_2>
 				<Chassis_T-54_3>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1771
+								0.0871
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.04855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0805
+								0.0205
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>
 					</grounds>
+					<axleCount>5</axleCount>
 				</Chassis_T-54_3>
 			</chassis>
 		</detailed>

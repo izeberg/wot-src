@@ -101,6 +101,8 @@ package
       
       public static const PLAYER_ERRORS_CANT_SWITCH_ASSAULT_SPG_CAMERA_CAN_NOT_SPAWN:String = "#ingame_gui:player_errors/cant_switch/assault_spg/camera_can_not_spawn";
       
+      public static const PLAYER_ERRORS_CANT_SWITCH_CHANGE_SHELL_GUN_OVERHEATED:String = "#ingame_gui:player_errors/cant_switch/change_shell/gun_overheated";
+      
       public static const PLAYER_ERRORS_EQUIPMENT_ALREADYACTIVATED:String = "#ingame_gui:player_errors/equipment/alreadyActivated";
       
       public static const PLAYER_ERRORS_EQUIPMENT_ISINCOOLDOWN:String = "#ingame_gui:player_errors/equipment/isInCooldown";
@@ -221,6 +223,8 @@ package
       
       public static const CHAT_SHORTCUTS_RELOADING_UNAVAILABLE:String = "#ingame_gui:chat_shortcuts/reloading_unavailable";
       
+      public static const CHAT_SHORTCUTS_OVERHEAT_CANT_SHOOT:String = "#ingame_gui:chat_shortcuts/overheat_cant_shoot";
+      
       public static const CHAT_SHORTCUTS_SPG_AIM_AREA_GRIDINFO:String = "#ingame_gui:chat_shortcuts/spg_aim_area_gridInfo";
       
       public static const CHAT_SHORTCUTS_SPG_AIM_AREA:String = "#ingame_gui:chat_shortcuts/spg_aim_area";
@@ -338,6 +342,8 @@ package
       public static const CHAT_EXAMPLE_RELOADING_READY_CASSETTE:String = "#ingame_gui:chat_example/reloading_ready_cassette";
       
       public static const CHAT_EXAMPLE_RELOADING_UNAVAILABLE:String = "#ingame_gui:chat_example/reloading_unavailable";
+      
+      public static const CHAT_EXAMPLE_OVERHEAT_CANT_SHOOT:String = "#ingame_gui:chat_example/overheat_cant_shoot";
       
       public static const CHAT_EXAMPLE_HELP_ME:String = "#ingame_gui:chat_example/help_me";
       
@@ -508,6 +514,8 @@ package
       public static const SHELLS_KINDS_PARAMS_EXPLOSIONRADIUS:String = "#ingame_gui:shells_kinds/params/explosionRadius";
       
       public static const SHELLS_KINDS_PARAMS_STUNDURATION:String = "#ingame_gui:shells_kinds/params/stunDuration";
+      
+      public static const SHELLS_KINDS_PARAMS_FLAMEMAXDISTANCE:String = "#ingame_gui:shells_kinds/params/flameMaxDistance";
       
       public static const DAMAGE_PANEL_DEVICES_TURRETROTATOR_NORMAL:String = "#ingame_gui:damage_panel/devices/turretRotator/normal";
       

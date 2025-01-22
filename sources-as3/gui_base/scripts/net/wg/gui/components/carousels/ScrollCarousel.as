@@ -1,6 +1,6 @@
 package net.wg.gui.components.carousels
 {
-   import flash.display.Sprite;
+   import flash.display.MovieClip;
    import flash.events.Event;
    import net.wg.gui.components.carousels.interfaces.IScroller;
    import net.wg.gui.components.controls.events.ScrollEvent;
@@ -17,9 +17,9 @@ package net.wg.gui.components.carousels
       
       public var scrollList:IScroller = null;
       
-      public var startFadeMask:Sprite = null;
+      public var startFadeMask:MovieClip = null;
       
-      public var endFadeMask:Sprite = null;
+      public var endFadeMask:MovieClip = null;
       
       public var leftArrow:IArrowButton = null;
       

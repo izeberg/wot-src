@@ -333,8 +333,7 @@ class SettingsCore(ISettingsCore):
           GRAPHICS.BORDERLESS_SIZE,
           options.BorderlessSizeSetting(storage=VIDEO_SETTINGS_STORAGE)),
          (
-          GRAPHICS.COLOR_BLIND,
-          options.AccountDumpSetting(GRAPHICS.COLOR_BLIND, GRAPHICS.COLOR_BLIND)),
+          GRAPHICS.COLOR_BLIND, options.AccountDumpSetting(GRAPHICS.COLOR_BLIND, GRAPHICS.COLOR_BLIND)),
          (
           GRAPHICS.IGB_HARDWARE_ACCELERATION, options.IGBHardwareAccelerationSetting()),
          (
@@ -378,6 +377,8 @@ class SettingsCore(ISettingsCore):
           GRAPHICS.VERTICAL_SYNC, options.VerticalSyncSetting()),
          (
           GRAPHICS.COLOR_BLIND, options.AccountDumpSetting(GRAPHICS.COLOR_BLIND, GRAPHICS.COLOR_BLIND)),
+         (
+          GRAPHICS.UI_EFFECTS, options.AccountDumpSetting(GRAPHICS.UI_EFFECTS, GRAPHICS.UI_EFFECTS)),
          (
           GRAPHICS.TESSELLATION_SUPPORTED, options.ReadOnlySetting(BigWorld.isTesselationSupported)),
          (

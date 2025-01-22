@@ -65,6 +65,10 @@
 						normalMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.015329 0.376007 -0.141182</groupOrigin>
 			</primitiveGroup>

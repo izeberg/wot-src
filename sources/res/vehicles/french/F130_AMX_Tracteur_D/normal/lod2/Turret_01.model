@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F130_AMX_Tracteur_D/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/french/F130_AMX_Tracteur_D/normal/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.439744 -0.000225 -2.028491</min>
+		<max>1.398221 1.217861 1.697229</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

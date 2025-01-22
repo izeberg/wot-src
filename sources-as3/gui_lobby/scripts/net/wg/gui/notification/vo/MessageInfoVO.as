@@ -1,21 +1,14 @@
 package net.wg.gui.notification.vo
 {
-   import net.wg.data.constants.Values;
    import net.wg.data.daapi.base.DAAPIDataClass;
    import net.wg.gui.notification.constants.ButtonState;
    
    public class MessageInfoVO extends DAAPIDataClass
    {
       
-      private static const FIELD_CATEGORY:String = "category";
-      
-      private static const FIELD_COUNT:String = "count";
-      
       private static const BUTTONS_LAYOUT_NAME:String = "buttonsLayout";
       
       private static const BUTTONS_STATE_NAME:String = "buttonsStates";
-      
-      private static const CATEGORY_SPECIAL:String = "Special";
        
       
       public var type:String = "";
@@ -27,10 +20,6 @@ package net.wg.gui.notification.vo
       public var icon:String = "";
       
       public var defaultIcon:String = "";
-      
-      public var nyData:Object = null;
-      
-      public var buttonsAlign:String = "left";
       
       public var savedID:Number = -1;
       
@@ -48,6 +37,8 @@ package net.wg.gui.notification.vo
       
       public var linkageData:Object = null;
       
+      public var buttonsAlign:String = "left";
+      
       private var _buttonsLayout:Vector.<ButtonVO>;
       
       private var _buttonsStates:Object;
@@ -63,7 +54,6 @@ package net.wg.gui.notification.vo
       {
          App.utils.data.cleanupDynamicObject(this._buttonsStates);
          this._buttonsStates = null;
-         this.nyData = null;
          if(this.filters)
          {
             this.filters.splice(0,this.filters.length);
@@ -139,31 +129,6 @@ package net.wg.gui.notification.vo
             _loc2_++;
          }
          return false;
-      }
-      
-      public function hasWarning(param1:String) : Boolean
-      {
-         var _loc2_:Boolean = false;
-         if(this._buttonsStates.hasOwnProperty(param1))
-         {
-            _loc2_ = (this._buttonsStates[param1] & ButtonState.WARNING) > 0;
-         }
-         return _loc2_;
-      }
-      
-      public function isSpecialNYCategory() : Boolean
-      {
-         return this.nyCategory == CATEGORY_SPECIAL;
-      }
-      
-      public function get nyCategory() : String
-      {
-         return Boolean(this.nyData) ? this.nyData[FIELD_CATEGORY] : Values.EMPTY_STR;
-      }
-      
-      public function get nyCount() : String
-      {
-         return Boolean(this.nyData) ? this.nyData[FIELD_COUNT] : Values.EMPTY_STR;
       }
    }
 }

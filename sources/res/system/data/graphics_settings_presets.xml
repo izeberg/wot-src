@@ -98,6 +98,10 @@
 			<label>SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED</label>
 			<activeOption>1</activeOption>
 		</entry>
+		<entry>
+			<label>uiEffects</label>
+			<activeOption>1</activeOption>
+		</entry>
 	</graphicsPreferences>
 	<graphicsPreferences>
 		MAX
@@ -195,6 +199,10 @@
 		</entry>
 		<entry>
 			<label>SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED</label>
+			<activeOption>1</activeOption>
+		</entry>
+		<entry>
+			<label>uiEffects</label>
 			<activeOption>1</activeOption>
 		</entry>
 	</graphicsPreferences>
@@ -297,6 +305,10 @@
 			<label>SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED</label>
 			<activeOption>1</activeOption>
 		</entry>
+		<entry>
+			<label>uiEffects</label>
+			<activeOption>1</activeOption>
+		</entry>
 	</graphicsPreferences>
 	<graphicsPreferences>
 		MEDIUM
@@ -397,6 +409,10 @@
 			<label>SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED</label>
 			<activeOption>0</activeOption>
 		</entry>
+		<entry>
+			<label>uiEffects</label>
+			<activeOption>1</activeOption>
+		</entry>
 	</graphicsPreferences>
 	<graphicsPreferences>
 		LOW
@@ -492,6 +508,10 @@
 			<label>SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED</label>
 			<activeOption>0</activeOption>
 		</entry>
+		<entry>
+			<label>uiEffects</label>
+			<activeOption>0</activeOption>
+		</entry>
 	</graphicsPreferences>
 	<graphicsPreferences>
 		MIN
@@ -585,6 +605,10 @@
 		</entry>
 		<entry>
 			<label>SNIPER_MODE_TERRAIN_TESSELLATION_ENABLED</label>
+			<activeOption>0</activeOption>
+		</entry>
+		<entry>
+			<label>uiEffects</label>
 			<activeOption>0</activeOption>
 		</entry>
 	</graphicsPreferences>

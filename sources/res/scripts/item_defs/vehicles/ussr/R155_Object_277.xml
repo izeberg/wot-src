@@ -4258,6 +4258,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								-0.004956 0 2.16731
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.004956 0 2.71131
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.128 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>R155_Object_277_3Dst_02</compatibleModels>
+							<size>
+								0.544
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>

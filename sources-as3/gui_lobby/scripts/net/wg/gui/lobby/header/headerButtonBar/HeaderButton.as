@@ -3,6 +3,7 @@ package net.wg.gui.lobby.header.headerButtonBar
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import flash.display.Sprite;
+   import flash.events.MouseEvent;
    import flash.geom.Point;
    import flash.geom.Rectangle;
    import flash.text.TextFieldAutoSize;
@@ -30,10 +31,6 @@ package net.wg.gui.lobby.header.headerButtonBar
       
       private static const BTN_DATA_INVALID:String = "button_data_invalid";
       
-      private static const ALPHA_ENABLED:Number = 1;
-      
-      private static const ALPHA_DISABLED:Number = 0.4;
-      
       private static const LAYOUT_ID_SEPARATOR:String = "_";
        
       
@@ -58,8 +55,6 @@ package net.wg.gui.lobby.header.headerButtonBar
       private var _maxScreenPrc:Number = 0;
       
       private var _isShowSeparator:Boolean = false;
-      
-      private var _isDisableMcVisible:Boolean = true;
       
       private var _helpLayoutId:String = "";
       
@@ -195,20 +190,6 @@ package net.wg.gui.lobby.header.headerButtonBar
          }
       }
       
-      override protected function updateDisable() : void
-      {
-         if(disableMc != null)
-         {
-            disableMc.x = disabledFillPadding.left;
-            disableMc.y = disabledFillPadding.top;
-            disableMc.scaleX = 1 / scaleX;
-            disableMc.scaleY = 1 / scaleY;
-            disableMc.widthFill = (this.bounds.width * scaleX | 0) - disabledFillPadding.horizontal;
-            disableMc.heightFill = (this.bounds.height * scaleY | 0) - disabledFillPadding.vertical;
-            disableMc.visible = !this._dataVo.enabled && this._dataVo.id != HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR && this._isDisableMcVisible;
-         }
-      }
-      
       public function getHitArea() : DisplayObject
       {
          return this;
@@ -260,7 +241,7 @@ package net.wg.gui.lobby.header.headerButtonBar
             return;
          }
          this.enabled = this._dataVo.enabled && !this._dataVo.softDisable;
-         this.updateDisable();
+         updateDisable();
       }
       
       public function updateScreen(param1:String, param2:Number, param3:Number) : void
@@ -342,19 +323,11 @@ package net.wg.gui.lobby.header.headerButtonBar
             this._helpLayout.unregisterComponent(this);
          }
          mouseEnabledOnDisabled = this._dataVo.id == HeaderButtonsHelper.ITEM_ID_PREM || this._dataVo.id == HeaderButtonsHelper.ITEM_ID_WOT_PLUS || this._dataVo.id == HeaderButtonsHelper.ITEM_ID_SQUAD;
-         if(this._dataVo.id == HeaderButtonsHelper.ITEM_ID_SQUAD)
-         {
-            this.isDisableMcVisible = false;
-         }
          invalidate(_loc2_);
       }
       
       override public function set enabled(param1:Boolean) : void
       {
-         if(this._dataVo && (this._dataVo.id == HeaderButtonsHelper.ITEM_ID_SQUAD || this._dataVo.id == HeaderButtonsHelper.ITEM_ID_BATTLE_SELECTOR))
-         {
-            this.alpha = !!param1 ? Number(ALPHA_ENABLED) : Number(ALPHA_DISABLED);
-         }
          super.enabled = param1;
          if(this._content)
          {
@@ -392,10 +365,22 @@ package net.wg.gui.lobby.header.headerButtonBar
          return this._content;
       }
       
-      public function set isDisableMcVisible(param1:Boolean) : void
+      override protected function onMouseRollOverHandler(param1:MouseEvent) : void
       {
-         this._isDisableMcVisible = param1;
-         this.updateDisable();
+         super.onMouseRollOverHandler(param1);
+         if(this._content != null)
+         {
+            this._content.isHovered = true;
+         }
+      }
+      
+      override protected function onMouseRollOutHandler(param1:MouseEvent) : void
+      {
+         super.onMouseRollOutHandler(param1);
+         if(this._content != null)
+         {
+            this._content.isHovered = false;
+         }
       }
       
       private function onContentHbcSizeUpdatedHandler(param1:HeaderEvents) : void
@@ -412,7 +397,7 @@ package net.wg.gui.lobby.header.headerButtonBar
          {
             this._upperContent.setAvailableWidth(this.bounds.width);
          }
-         this.updateDisable();
+         updateDisable();
          this.separator.x = this._dataVo.direction == TextFieldAutoSize.LEFT ? Number(_loc2_) : Number(0);
          dispatchEvent(new HeaderEvents(HeaderEvents.HBC_SIZE_UPDATED,this.bounds.width));
       }

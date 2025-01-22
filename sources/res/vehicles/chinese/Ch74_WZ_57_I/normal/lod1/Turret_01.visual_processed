@@ -42,10 +42,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -81,10 +78,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_turret_01_GMM.dds</Texture>
 					</property>
@@ -99,6 +92,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000000 2.293709 -0.076193</groupOrigin>

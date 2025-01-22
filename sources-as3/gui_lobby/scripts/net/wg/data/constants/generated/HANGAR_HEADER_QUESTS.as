@@ -13,6 +13,8 @@ package net.wg.data.constants.generated
       
       public static const QUEST_TYPE_PERSONAL_PM2:String = "pm2";
       
+      public static const QUEST_TYPE_PERSONAL_PM3:String = "pm3";
+      
       public static const QUEST_TYPE_EVENT:String = "eventQuest";
       
       public static const QUEST_TYPE_BATTLE_PASS:String = "questBattlePass";

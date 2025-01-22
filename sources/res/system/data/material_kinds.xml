@@ -582,6 +582,8 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_wet_light_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandSoft_01_00342_Dark_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/StonesSandyDark_00346_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Gravel_Sandy_Fine_08_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Soil_Damaged_Big_02_AM</terrain>
 	</kind>
 	<kind>
 		<id>106</id>
@@ -662,10 +664,9 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SnowDunesSmall_36_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_35_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice3_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice2_NY2021_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice3_NY2021_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Frosty_02_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Step_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_04_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Mud_02_AM</terrain>
 	</kind>
 	<kind>
 		<id>111</id>
@@ -747,6 +748,12 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_large_rectangular_03_AM.dds</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_Stony_Fine_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_red_debris_rocks_Cosmic_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Stone_03_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Square_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_large_rectangular_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_09_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingBlockStonyBigSnow_00129_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Mid_03_AM</terrain>
 	</kind>
 	<kind>
 		<id>112</id>

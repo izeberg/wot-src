@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/Environment/hd_env_SU_1083_Outhouse_Snow/normal/lod3/hd_env_SU_1083_Outhouse_Snow</nodefullVisual>
+	<parent>content/Environment/hd_env_SU_1083_Outhouse_Snow/normal/lod4/hd_env_SU_1083_Outhouse_Snow</parent>
+	<extent>250.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<visibilityBox>
+		<min>-2.734540 -0.001256 -2.122846</min>
+		<max>2.567851 3.146002 2.068614</max>
+	</visibilityBox>
+</root>

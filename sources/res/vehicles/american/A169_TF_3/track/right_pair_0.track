@@ -11,9 +11,9 @@
 			<authoring_tool>FBX COLLADA exporter</authoring_tool>
 			<comments/>
 		</contributor>
-		<created>2024-10-03T13:50:13Z</created>
+		<created>2024-10-24T12:02:58Z</created>
 		<keywords/>
-		<modified>2024-10-03T13:50:13Z</modified>
+		<modified>2024-10-24T12:02:58Z</modified>
 		<revision/>
 		<subject/>
 		<title/>
@@ -25,12 +25,12 @@
 	</asset>
 	<library_visual_scenes>
 		<visual_scene>
-			<id>right.track</id>
-			<name>right.track</name>
+			<id>right_pair_0.track</id>
+			<name>right_pair_0.track</name>
 			<node>
-				<name>R_loc</name>
-				<id>R_loc</id>
-				<sid>R_loc</sid>
+				<name>R_loc0</name>
+				<id>R_loc0</id>
+				<sid>R_loc0</sid>
 				<matrix>
 					1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000
 					<!--BW_String-->
@@ -47,7 +47,7 @@
 					<id>Track_R3_loc12</id>
 					<sid>Track_R3_loc12</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 74.049103 0.000000 0.000000 1.000000 48.315598 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 73.922966 0.000000 0.000000 1.000000 44.756008 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -63,7 +63,7 @@
 					<id>Track_R3_loc13</id>
 					<sid>Track_R3_loc13</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 60.247452 0.000000 0.000000 1.000000 22.342316 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 62.663849 0.000000 0.000000 1.000000 23.226007 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -79,7 +79,7 @@
 					<id>Track_R3_loc14</id>
 					<sid>Track_R3_loc14</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 37.153587 0.000000 0.000000 1.000000 16.841021 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 43.426281 0.000000 0.000000 1.000000 16.019327 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -95,7 +95,7 @@
 					<id>Track_R3_loc15</id>
 					<sid>Track_R3_loc15</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 16.128101 0.000000 0.000000 1.000000 29.123610 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 16.596365 0.000000 0.000000 1.000000 27.094860 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -111,7 +111,7 @@
 					<id>Track_R3_loc16</id>
 					<sid>Track_R3_loc16</sid>
 					<matrix>
-						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 9.684094 0.000000 0.000000 1.000000 60.713833 0.000000 0.000000 0.000000 1.000000
+						1.000000 0.000000 0.000000 147.899994 0.000000 1.000000 0.000000 9.684094 0.000000 0.000000 1.000000 55.125191 0.000000 0.000000 0.000000 1.000000
 						<!--BW_String-->
 						<sid>matrix</sid>
 					</matrix>
@@ -378,35 +378,22 @@
 	</library_visual_scenes>
 	<scene>
 		<instance_visual_scene>
-			<url>#right.track</url>
+			<url>#right_pair_0.track</url>
 		</instance_visual_scene>
 	</scene>
 	<wheels>
-		<wheel>WD_R0</wheel>
 		<wheel>WD_R1</wheel>
-		<wheel>W_R0</wheel>
-		<wheel>W_R1</wheel>
-		<wheel>W_R2</wheel>
 		<wheel>W_R3</wheel>
 		<wheel>W_R4</wheel>
 		<wheel>W_R5</wheel>
 	</wheels>
 	<nodes>
-		<node>Track_VD_R0</node>
 		<node>Track_VD_R1</node>
-		<node>Track_VT_R0</node>
-		<node>Track_VT_R1</node>
-		<node>Track_VT_R2</node>
-		<node>Track_VT_R3</node>
-		<node>Track_VT_R4</node>
 		<node>Track_VT_R5</node>
 		<node>Track_VT_R6</node>
 		<node>Track_VT_R7</node>
 		<node>Track_VT_R8</node>
 		<node>Track_VT_R9</node>
-		<node>Track_R0</node>
-		<node>Track_R1</node>
-		<node>Track_R2</node>
 		<node>Track_R3</node>
 		<node>Track_R4</node>
 		<node>Track_R5</node>

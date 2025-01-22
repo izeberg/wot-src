@@ -15,6 +15,8 @@ package net.wg.gui.lobby.components
       
       public var tooltip:String;
       
+      public var isWulfTooltip:Boolean;
+      
       public var iconUp:MovieClip;
       
       public var iconHover:MovieClip;
@@ -76,7 +78,14 @@ package net.wg.gui.lobby.components
          if(this.tooltip)
          {
             this._isTooltipShown = true;
-            this._toolTipMgr.showComplex(this.tooltip);
+            if(this.isWulfTooltip)
+            {
+               this._toolTipMgr.showWulfTooltip(this.tooltip);
+            }
+            else
+            {
+               this._toolTipMgr.showComplex(this.tooltip);
+            }
          }
       }
       

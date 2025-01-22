@@ -368,7 +368,7 @@ package net.wg.gui.battle.epicRandom.views.stats.components.fullStats
          }
          if(isInvalid(RandomFullStatsValidationType.VEHICLE_ICON))
          {
-            if(this.vehicleIcon)
+            if(this.vehicleIcon && this._vehicleImage)
             {
                this.vehicleIcon.visible = true;
                this.vehicleIcon.setImageNames(this._vehicleImage,BATTLEATLAS.UNKNOWN);

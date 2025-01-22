@@ -3,8 +3,8 @@
 	<shadow_model_name>content/Environment/envH_shadowPlane/gw.model</shadow_model_name>
 	<shadow_default_texture_name>content/Environment/envH_shadowPlane/GW_shad.dds</shadow_default_texture_name>
 	<shadow_empty_texture_name>system/maps/aid_null.dds</shadow_empty_texture_name>
-	<igrPremHangarPath>spaces/h01_victory_day_2024</igrPremHangarPath>
-	<igrPremHangarPathCN>spaces/h01_victory_day_2024</igrPremHangarPathCN>
+	<igrPremHangarPath>spaces/h08_mt_hangar</igrPremHangarPath>
+	<igrPremHangarPathCN>spaces/h08_mt_hangar</igrPremHangarPathCN>
 	<hangar_scene_spaces>
 		<item>
 			<name>BATTLE_ROYALE</name>
@@ -19,7 +19,7 @@
 		</item>
 		<item>
 			<name>DEFAULT</name>
-			<space>h01_victory_day_2024</space>
+			<space>h08_mt_hangar</space>
 		</item>
 		<item>
 			<name>COMP7</name>
@@ -27,7 +27,7 @@
 		</item>
 		<item>
 			<name>BOOTCAMP</name>
-			<space>h01_victory_day_2024</space>
+			<space>h08_mt_hangar</space>
 		</item>
 	</hangar_scene_spaces>
 </root>

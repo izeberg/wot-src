@@ -35,7 +35,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LFront1</identifier>
+				<identifier>HP_TrackUp_LFront__track_left_1</identifier>
 				<transform>
 					<row0>1.000000 -0.000000 -0.000000</row0>
 					<row1>0.000000 0.766045 0.642788</row1>
@@ -44,7 +44,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LRear</identifier>
+				<identifier>HP_TrackUp_LRear__track_left_0</identifier>
 				<transform>
 					<row0>-0.999998 -0.000000 -0.000000</row0>
 					<row1>0.000000 0.918308 -0.395866</row1>
@@ -53,7 +53,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RFront1</identifier>
+				<identifier>HP_TrackUp_RFront__track_right_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.766045 0.642788</row1>
@@ -62,7 +62,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RRear</identifier>
+				<identifier>HP_TrackUp_RRear__track_right_0</identifier>
 				<transform>
 					<row0>-1.000000 -0.000000 -0.000000</row0>
 					<row1>0.000000 0.918279 -0.395933</row1>
@@ -71,7 +71,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LRear1</identifier>
+				<identifier>HP_TrackUp_LRear__track_left_1</identifier>
 				<transform>
 					<row0>-0.999999 0.000000 -0.000000</row0>
 					<row1>0.000000 0.894778 -0.446511</row1>
@@ -80,7 +80,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LFront</identifier>
+				<identifier>HP_TrackUp_LFront__track_left_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.830207 0.557455</row1>
@@ -89,7 +89,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RRear1</identifier>
+				<identifier>HP_TrackUp_RReartrack_right_1</identifier>
 				<transform>
 					<row0>-0.999999 0.000000 -0.000000</row0>
 					<row1>0.000000 0.894803 -0.446461</row1>
@@ -98,7 +98,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RFront</identifier>
+				<identifier>HP_TrackUp_RFront__track_right_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.830231 0.557419</row1>

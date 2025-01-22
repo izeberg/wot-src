@@ -1,0 +1,1129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "OperationsView/completedLast"
+msgstr "Выкананне замыкальных задач з адзнакай:"
+
+msgid "OperationsView/completedTasks"
+msgstr "Выканана задач:"
+
+msgid "OperationsView/development"
+msgstr "У распрацоўцы"
+
+msgid "OperationsView/divider"
+msgstr "/"
+
+msgid "OperationsView/hint"
+msgstr ""
+"АДКРЫЙЦЕ АПЕРАЦЫЮ\n"
+"І ПРЫМІЦЕ ЗАДАЧУ ДА\n"
+"ВЫКАНАННЯ"
+
+msgid "OperationsView/info/tooltip"
+msgstr ""
+"Націсніце, каб падрабязней даведацца пра\n"
+"кампанію «Новыя гарызонты»."
+
+msgid "OperationsView/operationName"
+msgstr "АПЕРАЦЫЯ"
+
+msgid "OperationsView/step"
+msgstr "%(name)s"
+
+msgid "OperationsView/takeRewards/title"
+msgstr "ЗАБРАЦЬ УЗНАГАРОДЫ"
+
+msgid "OperationsView/takeRewards/tooltip"
+msgstr "Націсніце, каб выбраць прыдатныя ўзнагароды і забраць іх."
+
+msgid "OperationsView/takeRewards/tooltipDisable"
+msgstr "Выбар узнагарод часова недаступны, выбачайце за нязручнасці."
+
+msgid "OperationsView/title"
+msgstr "Новыя гарызонты"
+
+msgid "OperationsView/unavailable"
+msgstr "Недаступна"
+
+msgid "OperationsView/warningOperation"
+msgstr "Завяршыць аперацыю"
+
+msgid "OperationsView/warningOperationName"
+msgstr "«%(name)s»"
+
+msgid "QuestView/acceptButton/default"
+msgstr "Распачаць"
+
+msgid "QuestView/acceptButton/done_basic"
+msgstr "Перавыканаць з адзнакай"
+
+msgid "QuestView/acceptButton/tooltip/body"
+msgstr ""
+"Націсніце, каб прыняць задачу да выканання. Выканайце ўмовы гэтай задачы і "
+"атрымайце адпаведную ўзнагароду."
+
+msgid "QuestView/acceptButton/tooltip/body/available"
+msgstr ""
+"Націсніце, каб прыняць задачу да выканання. Выканайце ўмовы гэтай задачы і "
+"атрымайце адпаведную ўзнагароду."
+
+msgid "QuestView/acceptButton/tooltip/body/done_basic"
+msgstr ""
+"Націсніце, каб паспрабаваць палепшыць вынік, выканаўшы асноўную і дадатковую"
+" ўмовы."
+
+msgid "QuestView/acceptButton/tooltip/body/no_tech"
+msgstr "Няма неабходнай тэхнікі для выканання задачы."
+
+msgid "QuestView/acceptButton/tooltip/body/previous_progress"
+msgstr "Для доступу да задачы завяршыце неабходную аперацыю."
+
+msgid "QuestView/acceptButton/tooltip/body/previous_progress_all"
+msgstr "Для доступу да задачы неабходна выканаць чатыры папярэднія задачы."
+
+msgid "QuestView/acceptButton/tooltip/header/available"
+msgstr "Распачаць выкананне"
+
+msgid "QuestView/acceptButton/tooltip/header/done_basic"
+msgstr "Перавыканаць з адзнакай"
+
+msgid "QuestView/acceptButton/tooltip/header/no_tech"
+msgstr "Няма прыдатнай тэхнікі"
+
+msgid "QuestView/acceptButton/tooltip/header/previous_progress"
+msgstr "Папярэдняя аперацыя не выканана"
+
+msgid "QuestView/acceptButton/tooltip/header/previous_progress_all"
+msgstr "Выканайце папярэднія задачы"
+
+msgid "QuestView/avgProgress"
+msgstr "Сярэднія пашкоджанні: %(from)s / %(to)s"
+
+msgid "QuestView/backButton/backText"
+msgstr "НАЗАД"
+
+msgid "QuestView/backButton/to"
+msgstr "ДА АПЕРАЦЫІ"
+
+msgid "QuestView/conditionProgress/avg"
+msgstr "Засталося баёў: %(value)s"
+
+msgid "QuestView/conditionProgress/full"
+msgstr "Прагрэс: %(from)s / %(to)s"
+
+msgid "QuestView/conditionProgress/short"
+msgstr "%(from)s / %(to)s"
+
+msgid "QuestView/infoText/default"
+msgstr "Задача выконваецца на тэхніцы %(value)s узроўню"
+
+msgid "QuestView/infoText/done"
+msgstr "Усе ўзнагароды атрыманы"
+
+msgid "QuestView/infoText/tooltip/header"
+msgstr "Распачаць выкананне"
+
+msgid "QuestView/orQuest"
+msgstr "АБО"
+
+msgid "QuestView/questTitle/available"
+msgstr "Асноўная ўмова"
+
+msgid "QuestView/questTitle/done"
+msgstr "Выканана"
+
+msgid "QuestView/questTitle/honor/available"
+msgstr "Для выканання з адзнакай"
+
+msgid "QuestView/questTitle/honor/done"
+msgstr "Выканана"
+
+msgid "QuestView/questTitle/honor/info/tooltip/body"
+msgstr ""
+"Каб выкананне дадатковай умовы залічылася, трэба разам з ёй выканаць і "
+"асноўную ўмову."
+
+msgid "QuestView/questTitle/honor/tooltip/body/available"
+msgstr ""
+"Гэта ваша мэта, якую неабходна дасягнуць у баі разам з асноўнай для "
+"атрымання дадатковай узнагароды і выканання задачы з адзнакай."
+
+msgid "QuestView/questTitle/honor/tooltip/body/done"
+msgstr "Дадатковая ўмова выканана"
+
+msgid "QuestView/questTitle/honor/tooltip/header/available"
+msgstr "Дадатковая ўмова"
+
+msgid "QuestView/questTitle/tooltip/body/available"
+msgstr ""
+"Гэта ваша мэта, якую неабходна дасягнуць у баі для атрымання асноўнай "
+"узнагароды і выканання задачы."
+
+msgid "QuestView/questTitle/tooltip/body/done"
+msgstr "Асноўная ўмова выканана"
+
+msgid "QuestView/questTitle/tooltip/header/available"
+msgstr "Асноўная ўмова"
+
+msgid "QuestView/repeatProgress/default"
+msgstr "Выканана: %(from)s / %(to)s"
+
+msgid "QuestView/repeatProgress/done"
+msgstr "Завершана"
+
+msgid "QuestView/repeatProgress/failed"
+msgstr "Няўдача"
+
+msgid "QuestView/repeatTitle/tooltip/biathlon"
+msgstr ""
+"За ўказаную колькасці спробаў неабходна правесці пэўную колькасць баёў, у "
+"якіх будзе выканана пастаўленая ўмова. Калі колькасць спроб, якая "
+"застанецца, будзе меншай за неабходную колькасць выкананых умоваў, то "
+"прагрэс будзе аўтаматычна скінуты, а выкананне задачы пачнецца нанова."
+
+msgid "QuestView/repeatTitle/tooltip/counter"
+msgstr "Прагрэс залічваецца, калі ў межах бою былі выкананы ўсе ўмовы."
+
+msgid "QuestView/repeatTitle/tooltip/series"
+msgstr ""
+"Умовы трэба выконваць у кожным баі серыі запар. Няўдача ў адным баі "
+"перапыніць серыю, і трэба будзе пачынаць нанова."
+
+msgid "QuestView/subtitle/available"
+msgstr "Задача выконваецца на тэхніцы %(value)s узроўню"
+
+msgid "QuestView/subtitle/done"
+msgstr "Выканана"
+
+msgid "QuestView/subtitle/done_basic"
+msgstr "Асноўная ўмова выканана"
+
+msgid "QuestView/subtitle/done_honor"
+msgstr "Выканана з адзнакай"
+
+msgid "QuestView/subtitle/in_progress"
+msgstr "Выконваецца"
+
+msgid "QuestView/subtitle/in_progress_honor"
+msgstr "Асноўная ўмова выканана: задача выконваецца з адзнакай"
+
+msgid "QuestView/subtitle/no_tech"
+msgstr "Недаступна: няма прыдатнай тэхнікі %(value)s узроўню"
+
+msgid "QuestView/subtitle/previous_progress"
+msgstr "Недаступна: завяршыце аперацыю «%(value)s»"
+
+msgid "QuestView/subtitle/previous_progress_all"
+msgstr "Недаступна: завяршыце чатыры папярэднія задачы"
+
+msgid "QuestView/title"
+msgstr "%(name)s"
+
+msgid "QuestsLine/tooltip/subtitle/assist"
+msgstr ""
+"Пасуе непрыкметная тэхніка з дакладнымі гарматамі, здольная ўпэўнена "
+"прычыняць пашкоджанні з дыстанцыі і пры гэтым заставацца непрыкметнай."
+
+msgid "QuestsLine/tooltip/subtitle/battle"
+msgstr ""
+"Пасуе хуткая тэхніка з добрым аглядам і/або маскіроўкай, здольная выяўляць "
+"сілы праціўніка і падтрымліваць эфектыўную перадачу разведданых."
+
+msgid "QuestsLine/tooltip/subtitle/hit"
+msgstr ""
+"Пасуюць машыны з высокай агнявой моцай, а таксама тэхніка, здольная доўга "
+"выжываць на пярэдняй лініі дзякуючы выкарыстанню брані."
+
+msgid "QuestsLine/tooltip/subtitle/kills"
+msgstr ""
+"Пасуе дапаможная тэхніка, якая дзейнічае ў групе з асноўнымі ўдарнымі "
+"сіламі, здольная эфектыўна знерухомліваць праціўніка і падтрымліваць агнём."
+
+msgid "QuestsLine/tooltip/subtitle/master"
+msgstr ""
+"Пасуе любая тэхніка, эфектыўнасць якой вы зможаце раскрыць напоўніцу, "
+"падладзіўшыся пад карціну бою."
+
+msgid "QuestsLine/tooltip/title/assist"
+msgstr "Фланг схаванай прысутнасці"
+
+msgid "QuestsLine/tooltip/title/battle"
+msgstr "Фланг выведкі"
+
+msgid "QuestsLine/tooltip/title/hit"
+msgstr "Фланг актыўнага бою"
+
+msgid "QuestsLine/tooltip/title/kills"
+msgstr "Фланг падмогі"
+
+msgid "QuestsLine/tooltip/title/master"
+msgstr "Фланг асабістага майстэрства"
+
+msgid "QuestsView/backButton/caption"
+msgstr "НАЗАД"
+
+msgid "QuestsView/backButton/to"
+msgstr "ДА АПЕРАЦЫЙ"
+
+msgid "QuestsView/footer/rewardBtn/text"
+msgstr "Узнагароды аперацыі"
+
+msgid "QuestsView/header/subtitle/active"
+msgstr ""
+"Выконваецца на тэхніцы галіны %(minVehicleLevel) - %(maxVehicleLevel) "
+"узроўню."
+
+msgid "QuestsView/header/subtitle/alert"
+msgstr "Выберыце задачу, каб прыступіць да выканання"
+
+msgid "QuestsView/header/subtitle/complete"
+msgstr "Выберыце пятую задачу для выканання з адзнакай"
+
+msgid "QuestsView/header/subtitle/completeWithHonor"
+msgstr "Усе задачы галіны выкананы з адзнакай"
+
+msgid "QuestsView/header/subtitle/locked"
+msgstr "Недаступна: завяршыце аперацыю «%(prevOperationName)»"
+
+msgid "QuestsView/header/subtitle/lockedNoVehicle"
+msgstr ""
+"Недаступна: няма прыдатнай тэхнікі %(minVehicleLevel) - %(maxVehicleLevel) "
+"узроўню"
+
+msgid "QuestsView/header/title/text"
+msgstr "ОПЕРАЦИЯ «%(operationName)»"
+
+msgid "QuestsView/lockProgress/text"
+msgstr "%(current)s / %(total)s"
+
+msgid "QuestsView/tab/divider"
+msgstr "/"
+
+msgid "QuestsView/tab/progress"
+msgstr "%(minVehicleLevel) - %(maxVehicleLevel) узровень"
+
+msgid "ResetView/applyButton"
+msgstr "Пацвердзіць"
+
+msgid "ResetView/cancelButton"
+msgstr "Скасаваць"
+
+msgid "ResetView/closeButton"
+msgstr "Закрыць"
+
+msgid "ResetView/subtitle"
+msgstr "Увесь прагрэс задачы «%(id)s» будзе скінуты."
+
+msgid "ResetView/title"
+msgstr "Скінуць прагрэс?"
+
+msgid "ResetView/warning"
+msgstr "Увага! Бягучы прагрэс баявой задачы будзе страчаны."
+
+msgid "RewardsSelectionView/subtitle"
+msgstr "ВЫБАР УЗНАГАРОДЫ"
+
+msgid "RewardsSelectionView/title"
+msgstr "КАМПАНІІ"
+
+msgid "RewardsView/content/awards/additional/bottom"
+msgstr "І яшчэ: %(count)s"
+
+msgid "RewardsView/content/btn/chooseReward"
+msgstr "Выбраць узнагароду"
+
+msgid "RewardsView/content/questCount/divider"
+msgstr "/"
+
+msgid "RewardsView/content/questCount/text"
+msgstr "Выканана задач з адзнакай для атрымання ўзнагароды «Атэстацыя»"
+
+msgid "RewardsView/footer/allFlagTasksComplete"
+msgstr ""
+"Усе задачы %(type)s для тэхнікі %(questLevelFrom) - %(questLevelTo) узроўню "
+"выкананы з адзнакай."
+
+msgid "RewardsView/footer/allTasksComplete"
+msgstr ""
+"Усе задачы бягучай аперацыі для тэхнікі %(questLevelFrom) - %(questLevelTo) "
+"узроўню выкананы з адзнакай."
+
+msgid "RewardsView/footer/btn/accept"
+msgstr "Так!"
+
+msgid "RewardsView/footer/btn/continue"
+msgstr "Працягнуць"
+
+msgid "RewardsView/footer/btn/nextTask"
+msgstr "Наступная задача"
+
+msgid "RewardsView/footer/nextTask/improve"
+msgstr "Вы аўтаматычна працягнеце паляпшаць вынік задачы:"
+
+msgid "RewardsView/footer/nextTask/title"
+msgstr "Аўтаматычна прынята да выканання задача:"
+
+msgid "RewardsView/footer/type/assist"
+msgstr "Фланг схаванай прысутнасці"
+
+msgid "RewardsView/footer/type/battle"
+msgstr "Фланг выведкі"
+
+msgid "RewardsView/footer/type/hit"
+msgstr "Фланг актыўнага бою"
+
+msgid "RewardsView/footer/type/kills"
+msgstr "Фланг падмогі"
+
+msgid "RewardsView/footer/type/master"
+msgstr "Фланг асабістага майстэрства"
+
+msgid "RewardsView/header/btn/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "RewardsView/header/company"
+msgstr "КАМПАНІІ"
+
+msgid "RewardsView/header/gotOneReward"
+msgstr "ВЫ АТРЫМАЛІ ЎЗНАГАРОДУ!"
+
+msgid "RewardsView/header/gotRewards"
+msgstr "АТРЫМАНЫ ЎЗНАГАРОДЫ"
+
+msgid "RewardsView/header/subtitle"
+msgstr "ЗАДАЧА %(questID) ВЫКАНАНА!"
+
+msgid "RewardsView/header/taskStatus/complete"
+msgstr "Выканана асноўная ўмова"
+
+msgid "RewardsView/header/taskStatus/completeAdd"
+msgstr "Дадатковая ўмова выканана"
+
+msgid "RewardsView/header/taskStatus/completeWithHonor"
+msgstr "Выканана з адзнакай"
+
+msgid "RewardsView/header/title"
+msgstr "АПЕРАЦЫЯ «%(operationName)»"
+
+msgid "RewardsView/header/titleWithHonor"
+msgstr "АПЕРАЦЫЯ «%(operationName)» ВЫКАНАНА З АДРОЗНЕННЕМ"
+
+msgid "VehicleTabs/tooltip/subtitle"
+msgstr ""
+"Задачы галіны даступныя для выканання на любой тэхніцы "
+"%(minVehicleLevel)s-%(maxVehicleLevel)s узроўню."
+
+msgid "VehicleTabs/tooltip/title"
+msgstr "Галіна %(minVehicleLevel)s-%(maxVehicleLevel)s узроўню"
+
+msgid "VehicleView/additionalRewards/body/default"
+msgstr "За выкананне аперацыі"
+
+msgid "VehicleView/additionalRewards/body/honor"
+msgstr "За выкананне аперацый з адзнакай"
+
+msgid "VehicleView/additionalRewards/header"
+msgstr "ІНШЫЯ ЎЗНАГАРОДЫ"
+
+msgid "VehicleView/backButton"
+msgstr "НАЗАД"
+
+msgid "VehicleView/compare/label"
+msgstr "Дадаць&nbsp;да&nbsp;параўнання"
+
+msgid "VehicleView/description/A161_ARMT"
+msgstr ""
+"Лёгкі танк са сціплым браніраваннем, але ўражальнай баявой моцай. Магазінная"
+" гармата машыны на вялізную колькасць снарадаў здольная істотна патузаць "
+"любога аднакласніка, а выбітная дынаміка дазваляе шукаць патэнцыйныя цэлі "
+"практычна па ўсёй мапе."
+
+msgid "VehicleView/description/A173_TF_2_CLARK"
+msgstr ""
+"Машына выдатна абаронена, што спрыяе агрэсіўнай тактыцы гульні на першай "
+"лініі. Мабільнасць даволі сціплая, таму лепш загадзя планаваць кірунак для "
+"атакі, а таксама магчымыя шляхі адступлення ў выпадку змены карціны бою. "
+"Агнямётная гармата здольная супрацьстаяць любой цэлі на невялікай дыстанцыі,"
+" але далёкі бой (праз асаблівасці стральбы) малаэфектыўны."
+
+msgid "VehicleView/description/F119_Projet_Murat"
+msgstr ""
+"Французскі сярэдні танк з моцнай лабавой бранёй (за выключэннем уразлівай "
+"НЛД), добрай мабільнасцю і гарматай для блізкага бою з магазінам на 3 "
+"снарады. Выключна камфортны вугал нахілу гарматы на 12 градусаў дазваляе "
+"ўпэўнена пачувацца ў пазіцыйных баях, робячы складкі мясцовасці і "
+"асаблівасці рэльефу найлепшымі саюзнікамі. Машына аснашчана шматгусенічным "
+"рухачом, што ўскосна ўплывае на выжывальнасць."
+
+msgid "VehicleView/goTo"
+msgstr "ДА АПЕРАЦЫІ"
+
+msgid "VehicleView/preview/label"
+msgstr "Перадпрагляд"
+
+msgid "VehicleView/researchCondition/body"
+msgstr "Для атрымання машыны неабходна выканаць усе задачы аперацыі %(name)s"
+
+msgid "VehicleView/researchCondition/header"
+msgstr "УМОВЫ АТРЫМАННЯ ТЭХНІКІ"
+
+msgid "VehicleView/researchCondition/progress"
+msgstr "%(from)s / %(to)s"
+
+msgid "VehicleView/restoreButton"
+msgstr "Аднавіць"
+
+msgid "VehicleView/restoreTooltip/body"
+msgstr "Аднаўленне гэтай тэхнікі будзе даступнае праз %(value)s"
+
+msgid "VehicleView/restoreTooltip/daysHours"
+msgstr "%(days)sсут %(hours)sгадз"
+
+msgid "VehicleView/restoreTooltip/header"
+msgstr "Аднаўленне"
+
+msgid "VehicleView/restoreTooltip/hoursMinutes"
+msgstr "%(hours)sгадз %(minutes)sхв"
+
+msgid "VehicleView/restoreTooltip/minutes"
+msgstr "%(minutes)sхв"
+
+msgid "VehicleView/restoreTooltip/seconds"
+msgstr "< 1м"
+
+msgid "VehicleView/title"
+msgstr "УЗНАГАРОДЫ АПЕРАЦЫІ %(name)s"
+
+msgid "VehicleView/vehicleInfo/body/inHangar"
+msgstr "У Гаражы"
+
+msgid "VehicleView/vehicleInfo/body/inHangarButton"
+msgstr "Паглядзець у Гаражы"
+
+msgid "VehicleView/vehiclePreviewBack"
+msgstr "ДА АПЕРАЦЫІ"
+
+msgid "VideoRewardsView/btn/accept"
+msgstr "Так!"
+
+msgid "VideoRewardsView/btn/showInHangar"
+msgstr "Паглядзець у Гаражы"
+
+msgid "VideoRewardsView/header/title/companyComplete"
+msgstr "КАМПАНІЯ ВЫКАНАНА!"
+
+msgid "VideoRewardsView/header/title/complete"
+msgstr "АПЕРАЦЫЯ ВЫКАНАНА!"
+
+msgid "VideoRewardsView/header/title/completeWithHonor"
+msgstr "АПЕРАЦЫЯ ВЫКАНАНА З АДРОЗНЕННЕМ!"
+
+msgid "VideoRewardsView/received/text"
+msgstr "Таксама атрымана:"
+
+msgid "introView/acceptButton"
+msgstr "Так!"
+
+msgid "introView/closeButton"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "introView/header"
+msgstr "КАМПАНІЯ «НОВЫЯ ГАРЫЗОНТЫ»"
+
+msgid "introView/infoButton"
+msgstr "Падрабязней"
+
+msgid "introView/infoCard/first"
+msgstr "Тры паслядоўныя аперацыі з новымі задачамі."
+
+msgid "introView/infoCard/second"
+msgstr "Новыя танкі VII-X узроўню: ARMT, TF-2 CLARK і Projet Murat."
+
+msgid "introView/infoCard/third"
+msgstr ""
+"Вішанька на торце: звышцяжкі двухгарматны танк ХІ узроўню (у распрацоўцы)"
+
+msgid "introView/videoButton/buttonText"
+msgstr "ПРА КАМПАНІЮ"
+
+msgid "introView/videoButton/lbzName"
+msgstr "«НОВЫЯ ГАРЫЗОНТЫ»"
+
+msgid "newCampaignHint"
+msgstr ""
+"ДАСТУПНАЯ НОВАЯ\n"
+"КАМПАНІЯ"
+
+msgid "selectBonus/error"
+msgstr "Выбар часова недаступны"
+
+msgid "selectBonus/etc"
+msgstr "...і іншае абсталяванне."
+
+msgid "selectBonus/expequipments"
+msgstr "Эксперыментальнае абсталяванне на выбар"
+
+msgid "selectBonus/new_device_pm3"
+msgstr "Абсталяванне на выбар"
+
+msgid "selectBonus/point"
+msgstr "• %(item)s"
+
+msgid "tooltips/IntroVideoView/body"
+msgstr "Націсніце, каб прапусціць відэа."
+
+msgid "tooltips/OperationsView/lastOperation/active/body"
+msgstr ""
+"Для получения техники необходимо выполнить с отличием все пятые (замыкающие)"
+" задачи кампании «Новые горизонты»."
+
+msgid "tooltips/OperationsView/lastOperation/active/completedText"
+msgstr "Выканана пятых задач з адзнакай:"
+
+msgid "tooltips/OperationsView/lastOperation/active/footer"
+msgstr "Выконваецца"
+
+msgid "tooltips/OperationsView/lastOperation/active/rewards"
+msgstr "Узнагароды за выкананне этапу:"
+
+msgid "tooltips/OperationsView/lastOperation/active/subtitle"
+msgstr "Умова выканання этапу"
+
+msgid "tooltips/OperationsView/lastOperation/completed/footer"
+msgstr "Выканана"
+
+msgid "tooltips/OperationsView/lastOperation/completed/footerSubtitle"
+msgstr "Усе ўмовы этапу выкананы, узнагароды атрыманы."
+
+msgid "tooltips/OperationsView/lastOperation/development/bgText"
+msgstr "У распрацоўцы"
+
+msgid "tooltips/OperationsView/lastOperation/development/body"
+msgstr ""
+"Для атрымання тэхнікі неабходна выканаць з адзнакай усе пятыя (замыкальныя) "
+"задачы кампаніі «Новыя гарызонты»."
+
+msgid "tooltips/OperationsView/lastOperation/development/bodyDescription"
+msgstr ""
+"У вас ёсць магчымасць атрымаць унікальную машыну, выканаўшы з адзнакай усе "
+"пятыя (замыкальныя) задачы кампаніі «Новыя гарызонты» да таго, як этап "
+"«&zwnbsp;%(name)s» стане даступным."
+
+msgid "tooltips/OperationsView/lastOperation/development/footer"
+msgstr "Хутка ў гульні"
+
+msgid "tooltips/OperationsView/lastOperation/development/header"
+msgstr "Этап «%(name)s» (у распрацоўцы)"
+
+msgid "tooltips/OperationsView/lastOperation/development/rewards"
+msgstr "Узнагарода за датэрміновае выкананне этапу:"
+
+msgid "tooltips/OperationsView/lastOperation/development/subtitle"
+msgstr "Узнагарода за выкананне этапу:"
+
+msgid "tooltips/OperationsView/lastOperation/header"
+msgstr "Этап «%(name)s»"
+
+msgid "tooltips/OperationsView/operation/active/body"
+msgstr "Для атрымання машыны выканайце ўсе задачы аперацыі."
+
+msgid "tooltips/OperationsView/operation/active/header"
+msgstr "Выконваецца"
+
+msgid "tooltips/OperationsView/operation/available/body"
+msgstr "Выберыце задачу для выканання."
+
+msgid "tooltips/OperationsView/operation/available/header"
+msgstr "Даступна"
+
+msgid "tooltips/OperationsView/operation/branch"
+msgstr "%(name)s узровень"
+
+msgid "tooltips/OperationsView/operation/completed/body"
+msgstr "Выканайце ўсе замыкальныя задачы кампаніі з адзнакай."
+
+msgid "tooltips/OperationsView/operation/completed/header"
+msgstr "Выконваецца з адзнакай"
+
+msgid "tooltips/OperationsView/operation/completedPerfectly/body"
+msgstr "Усе задачы выкананы з адзнакай, узнагароды атрыманы."
+
+msgid "tooltips/OperationsView/operation/completedPerfectly/header"
+msgstr "Выканана з адзнакай"
+
+msgid "tooltips/OperationsView/operation/disabled/body"
+msgstr "Завяршыце аперацыю «%(name)s»."
+
+msgid "tooltips/OperationsView/operation/disabled/header"
+msgstr "Недаступна"
+
+msgid "tooltips/OperationsView/operation/disabledLevel/body"
+msgstr "Няма прыдатнай тэхнікі %(from)s - %(to)s узроўню."
+
+msgid "tooltips/OperationsView/operation/divider"
+msgstr "/"
+
+msgid "tooltips/OperationsView/operation/header"
+msgstr "Аперацыя «%(name)s»"
+
+msgid "tooltips/OperationsView/operation/rewards"
+msgstr "Узнагароды за выкананне аперацыі:"
+
+msgid "tooltips/OperationsView/operation/rewardsCompleted"
+msgstr "Узнагароды за выкананне з адзнакай:"
+
+msgid "tooltips/OperationsView/operation/simple/disabled/body"
+msgstr ""
+"Аперацыя часова недаступная з тэхнічных прычын. Мы працуем над выпраўленнем "
+"праблемы."
+
+msgid "tooltips/OperationsView/operation/simple/disabled/header"
+msgstr "Аперацыя «%(name)s» недаступная"
+
+msgid "tooltips/OperationsView/operation/tasks"
+msgstr "Задачы аперацыі:"
+
+msgid "tooltips/OperationsView/operation/tasksCompleted"
+msgstr "Выканана задач з адрозненнем:"
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/content/type11"
+msgstr ""
+"Складаецца з назапашвальных умоў: вам трэба выканаць умовы ва ўказанай "
+"колькасці баёў і не абавязкова запар. Залічвацца будуць толькі паспяховыя "
+"баі, у якіх былі выкананы ўсе ўмовы блока, пры гэтым колькасць спробаў — "
+"неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/content/type5"
+msgstr ""
+"Складаецца з адной назапашвальнай умовы: у вас ёсць неабмежаваная колькасць "
+"баёў, вынік кожнага з якіх пойдзе ў агульную «скарбонку» да поўнага яе "
+"напаўнення."
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/content/type6"
+msgstr ""
+"Складаецца з назапашвальных умоў: вам трэба выканаць умовы ва ўказанай "
+"колькасці баёў і не абавязкова запар. Залічвацца будуць толькі паспяховыя "
+"баі, у якіх былі выкананы ўсе ўмовы блока, пры гэтым колькасць спробаў — "
+"неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/content/type7"
+msgstr ""
+"Складаецца з назапашвальнай умовы паводле тыпаў тэхнікі: у вас ёсць "
+"неабмежаваная колькасць баёў, у якіх трэба назапасіць пэўны прагрэс паводле "
+"кожнага тыпу тэхнікі. Вынік кожнага бою пойдзе ў «скарбонку» паводле тыпаў "
+"тэхнікі да поўнага іх напаўнення."
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/title/type11"
+msgstr "Сегмент 1"
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/title/type5"
+msgstr "Сегмент 1"
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/title/type6"
+msgstr "Сегмент 1"
+
+msgid "tooltips/QuestInfoTooltip/firstBlock/title/type7"
+msgstr "Сегмент 1"
+
+msgid "tooltips/QuestInfoTooltip/firstCondition/type20"
+msgstr ""
+"%(condition) трэба выконваць запар у кожным баі серыі. Няўдача ў адным баі "
+"перапыніць серыю, і трэба будзе пачынаць нанова."
+
+msgid "tooltips/QuestInfoTooltip/firstCondition/type22"
+msgstr ""
+"%(condition) за ўказаную колькасць спробаў неабходна правесці пэўную "
+"колькасць баёў, у якіх будзе выканана пастаўленая ўмова. Калі колькасць "
+"спробаў, якія засталіся, будзе меншай за неабходную колькасць выкананых "
+"умоваў, то прагрэс аўтаматычна будзе скінуты, а задача пачнецца нанова."
+
+msgid "tooltips/QuestInfoTooltip/firstCondition/type23"
+msgstr "%(condition) патрабуецца выканаць пастаўленую ўмову за адзін бой."
+
+msgid "tooltips/QuestInfoTooltip/firstCondition/type24"
+msgstr ""
+"%(condition) па выніку адведзенай колькасці баёў неабходна назапасіць пэўны "
+"сярэдні вынік. Калі атрыманы фінальны вынік будзе меншы за чаканы, то "
+"прагрэс аўтаматычна будзе скінуты, а задача пачнецца нанова."
+
+msgid "tooltips/QuestInfoTooltip/firstCondition/type25"
+msgstr ""
+"%(condition) па выніку адведзенай колькасці баёў неабходна назапасіць пэўны "
+"сярэдні вынік. Калі атрыманы фінальны вынік будзе меншы за чаканы, то "
+"прагрэс аўтаматычна будзе скінуты, а задача пачнецца нанова."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type1"
+msgstr "Задача гэтага тыпу складаецца з адной назапашвальнай умовы."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type10"
+msgstr ""
+"Задачы гэтага тыпу складаюцца з некалькіх узаемадапаўняльных умоваў: "
+"назапашвальнай і абмежавальнай."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type11"
+msgstr ""
+"Задача гэтага тыпу складаецца з двух сегментаў, якія выконваюцца паралельна."
+" Для выканання задачы неабходна выканаць усе ўмовы."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type2"
+msgstr ""
+"Задача гэтага тыпу складаецца з некалькіх назапашвальных умоваў, якія "
+"выконваюцца паралельна. Для выканання задачы неабходна выканаць усе ўмовы."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type20"
+msgstr ""
+"Кожная задача гэтага тыпу мае абмежаваную колькасць спроб на выкананне "
+"пастаўленай умовы."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type21"
+msgstr ""
+"У задачах гэтага тыпу патрабуецца выканаць пастаўленую ўмову за адзін бой."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type22"
+msgstr ""
+"Кожная задача гэтага тыпу мае абмежаваную колькасць спроб на выкананне "
+"пастаўленай умовы."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type23"
+msgstr ""
+"Кожная задача гэтага тыпу мае абмежаваную колькасць спроб на выкананне "
+"пастаўленай умовы."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type24"
+msgstr ""
+"Задачы гэтага тыпу накапляльныя, г.зн. патрабуць ад гульцоў выканання ўмоў "
+"за некалькі баёў."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type25"
+msgstr ""
+"Задачы гэтага тыпу накапляльныя, г.зн. патрабуць ад гульцоў выканання ўмоў "
+"за некалькі баёў."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type3"
+msgstr ""
+"Задачы гэтага тыпу накапляльныя, г.зн. патрабуць ад гульцоў выканання ўмоў "
+"на працягу некалькіх баёў (неабавязкова запар)."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type4"
+msgstr ""
+"Задачы гэтага тыпу накапляльныя, г.зн. патрабуць ад гульцоў выканання ўмоў "
+"на працягу некалькіх баёў (неабавязкова запар)."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type5"
+msgstr ""
+"Задача гэтага тыпу складаецца з двух сегментаў, якія выконваюцца паралельна."
+" Сегменты аддзелены адзін ад аднаго канструкцыяй «або»: для выканання задачы"
+" неабходна выканаць усе ўмовы ў любым з двух сегментаў."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type6"
+msgstr ""
+"Задача гэтага тыпу складаецца з двух сегментаў, якія выконваюцца паралельна."
+" Сегменты аддзелены адзін ад аднаго канструкцыяй «або»: для выканання задачы"
+" неабходна выканаць усе ўмовы ў любым з двух сегментаў."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type7"
+msgstr ""
+"Задача гэтага тыпу складаецца з двух сегментаў, якія выконваюцца паралельна."
+" Сегменты аддзелены адзін ад аднаго канструкцыяй «або»: для выканання задачы"
+" неабходна выканаць усе ўмовы ў любым з двух сегментаў."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type8"
+msgstr ""
+"Задача гэтага тыпу складаецца з назапашвальнай умовы для кожнага тыпу "
+"тэхнікі."
+
+msgid "tooltips/QuestInfoTooltip/firstText/type9"
+msgstr ""
+"Задача гэтага тыпу складаецца з некалькіх узаемадапаўняльных умоваў: "
+"назапашвальнай паводле тыпаў тэхнікі і абмежавальнай."
+
+msgid "tooltips/QuestInfoTooltip/mainCondition"
+msgstr "Асноўная ўмова:"
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/content/type11"
+msgstr ""
+"Складаецца з назапашвальнай умовы: вам трэба выканаць умову ва ўказанай "
+"колькасці баёў і не абавязкова запар. Залічвацца будуць толькі паспяховыя "
+"баі, пры гэтым колькасць спробаў — неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/content/type5"
+msgstr ""
+"Складаецца з назапашвальнай умовы: вам трэба выканаць умову ва ўказанай "
+"колькасці баёў і не абавязкова запар. Залічвацца будуць толькі паспяховыя "
+"баі, пры гэтым колькасць спробаў — неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/content/type6"
+msgstr ""
+"Складаецца з назапашвальнай умовы: вам трэба выканаць умову ва ўказанай "
+"колькасці баёў і не абавязкова запар. Залічвацца будуць толькі паспяховыя "
+"баі, пры гэтым колькасць спробаў — неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/content/type7"
+msgstr ""
+"Складаецца з адной назапашвальнай умовы: у вас ёсць неабмежаваная колькасць "
+"баёў, вынік кожнага з якіх пойдзе ў агульную «скарбонку» да поўнага яе "
+"напаўнення."
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/title/type11"
+msgstr "Сегмент 2"
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/title/type5"
+msgstr "Сегмент 2"
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/title/type6"
+msgstr "Сегмент 2"
+
+msgid "tooltips/QuestInfoTooltip/secondBlock/title/type7"
+msgstr "Сегмент 2"
+
+msgid "tooltips/QuestInfoTooltip/secondCondition/type20"
+msgstr ""
+"%(condition) аналагічна асноўнай, а прагрэс па ёй ідзе паралельна. Сама "
+"ўмова больш складаная, на яе выкананне можа быць адведзена іншая колькасць "
+"спробаў. Дадатковая ўмова можа быць правалена нават у тым выпадку, калі "
+"асноўная выконваецца паспяхова. Пры гэтым дадатковая ўмова стане недаступнай"
+" для паўторнага выканання, пакуль не пачнецца новая серыя спробаў."
+
+msgid "tooltips/QuestInfoTooltip/secondCondition/type22"
+msgstr ""
+"%(condition) аналагічна асноўнай, а прагрэс па ёй ідзе паралельна. Сама "
+"ўмова больш складаная, на яе выкананне можа быць адведзена іншая колькасць "
+"спробаў. Дадатковая ўмова можа быць правалена нават у тым выпадку, калі "
+"асноўная выконваецца паспяхова. Пры гэтым дадатковая ўмова стане недаступнай"
+" для паўторнага выканання, пакуль не пачнецца новая серыя спробаў."
+
+msgid "tooltips/QuestInfoTooltip/secondCondition/type23"
+msgstr ""
+"%(condition) за ўказаную колькасць спробаў неабходна правесці пэўную "
+"колькасць баёў, у якіх будзе выканана пастаўленая ўмова. Калі колькасць "
+"спробаў, якія засталіся, будзе меншай за неабходную колькасць выкананых "
+"умоваў, то прагрэс аўтаматычна будзе скінуты, а задача пачнецца нанова."
+
+msgid "tooltips/QuestInfoTooltip/secondCondition/type24"
+msgstr ""
+"%(condition) аналагічна асноўнай, а прагрэс па ёй ідзе паралельна. Сама "
+"ўмова больш складаная, на яе выкананне можа быць адведзена іншая колькасць "
+"спробаў. Дадатковая ўмова можа быць правалена нават у тым выпадку, калі "
+"асноўная выконваецца паспяхова. Пры гэтым дадатковая ўмова стане недаступнай"
+" для паўторнага выканання, пакуль не пачнецца новая серыя спробаў."
+
+msgid "tooltips/QuestInfoTooltip/secondCondition/type25"
+msgstr ""
+"%(condition) аналагічна асноўнай, а прагрэс па ёй ідзе паралельна. Сама "
+"ўмова больш складаная, на яе выкананне можа быць адведзена іншая колькасць "
+"спробаў. Дадатковая ўмова можа быць правалена нават у тым выпадку, калі "
+"асноўная выконваецца паспяхова. Пры гэтым дадатковая ўмова стане недаступнай"
+" для паўторнага выканання, пакуль не пачнецца новая серыя спробаў."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type1"
+msgstr ""
+"У вас неабмежаваная колькасці баёў, вынік кожнага з якіх пойдзе ў агульную "
+"«скарбонку» да поўнага яе напаўнення."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type10"
+msgstr ""
+"Назапашвальная ўмова: у вас ёсць неабмежаваная колькасць баёў, вынік кожнага"
+" з якіх пойдзе ў агульную «скарбонку» да поўнага яе напаўнення. Залічваюцца "
+"толькі паспяховыя баі, у якіх быў назапашаны прагрэс і былі выкананы "
+"абмежавальныя ўмовы, пры гэтым колькасць спробаў — неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type11"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type2"
+msgstr ""
+"У вас неабмежаваная колькасці баёў, вынік кожнага з якіх пойдзе ў агульную "
+"«скарбонку» да поўнага яе напаўнення."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type20"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type21"
+msgstr ""
+"Для выканання дадатковай умовы (адначасова з асноўнай або ж паляпшаючы "
+"вынік) неабходная абавязкова выканаць і асноўную ўмову, інакш задача не "
+"будзе залічана і ўзнагарода за дадатковую ўмову не будзе атрымана."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type22"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type23"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type24"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type25"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type3"
+msgstr ""
+"Вам трэба выканаць умову ва ўказанай колькасці баёў і не абавязкова запар. "
+"Залічвацца будуць толькі паспяховыя баі, пры гэтым колькасць спробаў — "
+"неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type4"
+msgstr ""
+"Вам трэба выканаць умову ва ўказанай колькасці баёў і не абавязкова запар. "
+"Залічвацца будуць толькі паспяховыя баі, у якіх былі выкананы ўсе ўмовы "
+"задачы, пры гэтым колькасць спробаў — неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type5"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type6"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type7"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type8"
+msgstr ""
+"У вас ёсць неабмежаваная колькасць баёў, у якіх неабходна назапасіць пэўны "
+"прагрэс на кожным тыпе тэхнікі. Вынік кожнага бою пойдзе ў «скарбонку» "
+"паводле тыпаў тэхнікі да яе напаўнення."
+
+msgid "tooltips/QuestInfoTooltip/secondText/type9"
+msgstr ""
+"Назапашвальная ўмова паводле тыпаў тэхнікі: у вас ёсць неабмежаваная "
+"колькасць баёў, у якіх трэба назапасіць пэўны прагрэс на кожным тыпе "
+"тэхнікі. Вынік кожнага бою пойдзе ў «скарбонку» паводле тыпаў тэхнікі да яе "
+"напаўнення. Залічвацца будуць толькі паспяховыя баі, у якіх быў назапашаны "
+"прагрэс і былі выкананы абмежавальныя ўмовы задачы, пры гэтым колькасць "
+"спробаў — неабмежаваная."
+
+msgid "tooltips/QuestInfoTooltip/secondaryCondition"
+msgstr "Дадатковая ўмова:"
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type1"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type10"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type2"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type3"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type4"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type8"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/thirdText/type9"
+msgstr ""
+"Пры змене задачы на іншую ўвесь назапашаны прагрэс бягучай задачы "
+"захоўваецца і будзе пастаўлены на паўзу."
+
+msgid "tooltips/QuestInfoTooltip/title"
+msgstr "Апісанне і парады"
+
+msgid "tooltips/RestRewards/header"
+msgstr "Узнагароды"
+
+msgid "tooltips/questCard/Or"
+msgstr "або"
+
+msgid "tooltips/questCard/body/switch"
+msgstr "Задача часова недаступная для выканання."
+
+msgid "tooltips/questCard/content/rewardForMainCondition"
+msgstr "Узнагарода за выкананне:"
+
+msgid "tooltips/questCard/footer/additional/noTech"
+msgstr ""
+"Няма прыдатнай тэхнікі %(minVehicleLevel) - %(maxVehicleLevel) узроўню."
+
+msgid "tooltips/questCard/footer/additional/notAvailablePrevQuestNotCompleted"
+msgstr "Завяршыце аперацыю «%(operationName)»"
+
+msgid "tooltips/questCard/footer/additional/previousProgress"
+msgstr "Завяршыце аперацыю «%(prevOperationName)s»"
+
+msgid "tooltips/questCard/footer/additional/previousProgressAll"
+msgstr "Прайдзіце ўсе папярэднія задачы падгаліны."
+
+msgid "tooltips/questCard/footer/available"
+msgstr "Даступная для выканання"
+
+msgid "tooltips/questCard/footer/done"
+msgstr "Выканана"
+
+msgid "tooltips/questCard/footer/doneBasic"
+msgstr "Асноўная ўмова выканана"
+
+msgid "tooltips/questCard/footer/doneHonor"
+msgstr "Выканана з адзнакай"
+
+msgid "tooltips/questCard/footer/inProgress"
+msgstr "Выконваецца"
+
+msgid "tooltips/questCard/footer/lock"
+msgstr "Недаступная"
+
+msgid "tooltips/questCard/footer/noTech"
+msgstr "Недаступная"
+
+msgid "tooltips/questCard/footer/previousProgress"
+msgstr "Недаступная"
+
+msgid "tooltips/questCard/footer/previousProgressAll"
+msgstr "Недаступная"
+
+msgid "tooltips/questCard/header/addCondition"
+msgstr "Для выканання з адзнакай:"
+
+msgid "tooltips/questCard/header/condition"
+msgstr "Умова:"
+
+msgid "tooltips/questCard/header/mainCondition"
+msgstr "Асноўная ўмова:"
+
+msgid "tooltips/questCard/header/switch"
+msgstr "%(id)s %(questName)s"

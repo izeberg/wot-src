@@ -12,16 +12,16 @@
 			<property>spawnProgeression</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.334000</value>
+				<value>0.595000</value>
 				<inTangent>0.037333</inTangent>
-				<outTangent>0.020200</outTangent>
+				<outTangent>0.038010</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.000000</startTime>
-				<value>0.414800</value>
-				<inTangent>0.020200</inTangent>
-				<outTangent>0.024000</outTangent>
+				<value>0.747042</value>
+				<inTangent>0.038010</inTangent>
+				<outTangent>0.051250</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
@@ -54,9 +54,9 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>4.000000</duration>
-				<sequenceSound>ay_ep_04_seq_stage_03</sequenceSound>
-				<type>play_till_end</type>
+				<duration>3.949229</duration>
+				<sequenceSound>ay_ep_05_seq_stage_03</sequenceSound>
+				<type>one_shot</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

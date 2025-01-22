@@ -30,6 +30,11 @@ msgstr "ПЕРЕХОД К ЧЕРТЕЖУ"
 msgid "blueprints/techtree/switchButton"
 msgstr "О ЧЕРТЕЖАХ"
 
+msgid "carouselFilter/carousel/vehicle/vehicleFilters/paragonsFirstEnter"
+msgstr ""
+"Техника с несобранными\n"
+"очками проекта «Орбита»."
+
 msgid "collectibleVehicles/researchModules"
 msgstr "ИССЛЕДОВАТЬ МОДУЛИ"
 
@@ -99,11 +104,6 @@ msgstr ""
 "НАЧНИТЕ ПОИСК ИГРОКОВ\n"
 "ДЛЯ ФОРМИРОВАНИЯ ВЗВОДА"
 
-msgid "probabilitiesOverlay/probabilityHint"
-msgstr ""
-"КАТЕГОРИЯ С МЕХАНИКОЙ\n"
-"ГАРАНТИРОВАННОЙ НАГРАДЫ"
-
 msgid "sessionStat/openBtn"
 msgstr "СЕССИОННАЯ СТАТИСТИКА"
 
@@ -122,3 +122,8 @@ msgid "tradeIn/shop"
 msgstr ""
 "НОВАЯ ОПЕРАЦИЯ\n"
 "С ПРЕМИУМ ТЕХНИКОЙ"
+
+msgid "vehicleTechtree/paragons/entryPoint"
+msgstr ""
+"Получен допуск к\n"
+"проекту «Орбита»"

@@ -9,6 +9,7 @@ package net.wg.gui.components.questProgress.data
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsSimpleVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsSimpleValueVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsTimerVO;
+   import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleRangeVO;
    import net.wg.gui.components.questProgress.data.metrics.QPMetricsVehicleVO;
    import net.wg.gui.components.questProgress.interfaces.data.IQPMetrics;
    import net.wg.gui.components.questProgress.interfaces.data.IQPProgressData;
@@ -108,6 +109,8 @@ package net.wg.gui.components.questProgress.data
                return new QPMetricsTimerVO(param2);
             case QUEST_PROGRESS_BASE.QP_METRIC_TYPE_LIMITER:
                return new QPMetricsLimiterVO(param2);
+            case QUEST_PROGRESS_BASE.QP_VEHICLES_METRIC_TYPE_RANGE:
+               return new QPMetricsVehicleRangeVO(param2);
             default:
                App.utils.asserter.assert(false,"Metrics component type:" + param1 + Errors.WASNT_FOUND);
                return null;

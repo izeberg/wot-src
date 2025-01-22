@@ -69,6 +69,11 @@
 			<type>FLOAT16_4</type>
 		</TEXCOORD>
 		<TEXCOORD>
+			<stream>3</stream>
+			<semanticIndex>8</semanticIndex>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+		<TEXCOORD>
 			<stream>4</stream>
 			<semanticIndex>6</semanticIndex>
 			<type>FLOAT4</type>

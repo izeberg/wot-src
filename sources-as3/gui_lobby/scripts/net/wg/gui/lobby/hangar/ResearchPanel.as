@@ -6,8 +6,10 @@ package net.wg.gui.lobby.hangar
    import flash.text.TextField;
    import net.wg.data.constants.Directions;
    import net.wg.data.constants.IconsTypes;
+   import net.wg.data.constants.UniversalBtnStylesConst;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.gui.components.controls.IconText;
+   import net.wg.gui.components.controls.universalBtn.UniversalBtn;
    import net.wg.gui.data.VehCompareEntrypointVO;
    import net.wg.gui.data.VehPostProgressionEntryPointVO;
    import net.wg.gui.interfaces.ISoundButtonEx;
@@ -44,9 +46,13 @@ package net.wg.gui.lobby.hangar
       private static const COMPARE_BTN_OFFSET:int = -13;
       
       private static const IGR_LABEL_OFFSET:int = 6;
+      
+      private static const BUTTON_SOUND_ID:String = "unlockButton";
+      
+      private static const BUTTON_SOUND_TYPE:String = "iconTextButton";
        
       
-      public var button:ISoundButtonEx = null;
+      public var button:UniversalBtn = null;
       
       public var xpText:IconText = null;
       
@@ -87,14 +93,20 @@ package net.wg.gui.lobby.hangar
          this.mouseEnabled = false;
          this.igrLabel.addEventListener(MouseEvent.MOUSE_OVER,this.onIgrLabelMouseOverHandler);
          this.igrLabel.addEventListener(MouseEvent.MOUSE_OUT,this.onIgrLabelMouseOutHandler);
+         App.utils.universalBtnStyles.setStyle(this.button,UniversalBtnStylesConst.STYLE_SLIM_GREEN);
+         this.button.addEventListener(Event.RESIZE,this.onButtonResizeHandler);
+         this.button.addEventListener(ButtonEvent.CLICK,this.onButtonClickHandler);
+         this.button.label = MENU.UNLOCKS_UNLOCKBUTTON;
+         this.button.tooltip = TOOLTIPS.HANGAR_UNLOCKBUTTON;
+         this.button.soundId = BUTTON_SOUND_ID;
+         this.button.soundType = BUTTON_SOUND_TYPE;
          App.utils.helpLayout.registerComponent(this);
-         this.gotoPostProgressionBtn.focusable = false;
-         this.gotoPostProgressionBtn.visible = false;
          this.addToCompareBtn.addEventListener(ButtonEvent.CLICK,this.onAddToCompareBtnClickHandler);
          this.addToCompareBtn.mouseEnabledOnDisabled = true;
          this.addToCompareBtn.focusable = false;
          this.addToCompareBtn.visible = false;
          this.mcButtonsConnector.visible = false;
+         this.gotoPostProgressionBtn.visible = false;
       }
       
       override protected function onPopulate() : void
@@ -102,9 +114,6 @@ package net.wg.gui.lobby.hangar
          super.onPopulate();
          this.xpText.focusable = false;
          this.xpText.mouseChildren = false;
-         this.button.addEventListener(ButtonEvent.CLICK,this.onButtonClickHandler);
-         this.button.label = MENU.UNLOCKS_UNLOCKBUTTON;
-         this.button.tooltip = TOOLTIPS.HANGAR_UNLOCKBUTTON;
       }
       
       override protected function onDispose() : void
@@ -114,6 +123,7 @@ package net.wg.gui.lobby.hangar
          this.igrLabel.removeEventListener(MouseEvent.MOUSE_OVER,this.onIgrLabelMouseOverHandler);
          this.igrLabel.removeEventListener(MouseEvent.MOUSE_OUT,this.onIgrLabelMouseOutHandler);
          this.button.removeEventListener(ButtonEvent.CLICK,this.onButtonClickHandler);
+         this.button.removeEventListener(Event.RESIZE,this.onButtonResizeHandler);
          this.button.dispose();
          this.button = null;
          this.gotoPostProgressionBtn.removeEventListener(ButtonEvent.CLICK,this.onGoToPostProgressionBtnClickHandler);
@@ -140,7 +150,7 @@ package net.wg.gui.lobby.hangar
          var _loc4_:int = 0;
          var _loc5_:int = 0;
          super.draw();
-         if(this._data != null && isInvalid(InvalidationType.DATA))
+         if(this._data != null && (isInvalid(InvalidationType.DATA) || isInvalid(InvalidationType.LAYOUT)))
          {
             this.xpText.text = App.utils != null ? App.utils.locale.integer(this._earnedXP) : this._earnedXP.toString();
             this.xpText.icon = !!this._isElite ? IconsTypes.ELITE_XP : IconsTypes.XP;
@@ -306,6 +316,11 @@ package net.wg.gui.lobby.hangar
       private function onIgrLabelMouseOutHandler(param1:MouseEvent) : void
       {
          App.toolTipMgr.hide();
+      }
+      
+      private function onButtonResizeHandler(param1:Event) : void
+      {
+         invalidateLayout();
       }
    }
 }

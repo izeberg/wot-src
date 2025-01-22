@@ -147,6 +147,9 @@ msgstr "<Імя хаўрусніка>, памажы!"
 msgid "chat_example/negative"
 msgstr "Не!"
 
+msgid "chat_example/overheat_cant_shoot"
+msgstr "Гармата перагрэта! Не магу страляць яшчэ <Час астывання> с."
+
 msgid "chat_example/positive"
 msgstr "Так!"
 
@@ -283,6 +286,9 @@ msgstr "%(target)s, памажы!"
 
 msgid "chat_shortcuts/negative"
 msgstr "Не!"
+
+msgid "chat_shortcuts/overheat_cant_shoot"
+msgstr "Гармата перагрэта! Не магу страляць яшчэ %(floatArg1)d с."
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s, так!"
@@ -950,7 +956,7 @@ msgid "player_errors/cant_shoot/gun_locked"
 msgstr "Страляць немагчыма"
 
 msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "Стральба немагчымая: гармата перагрэта"
+msgstr "Страляць немагчыма: гармата перагрэтая"
 
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Гармата перанабіваецца"
@@ -966,6 +972,9 @@ msgstr "Страляць немагчыма: машына знішчана."
 
 msgid "player_errors/cant_switch/assault_spg/camera_can_not_spawn"
 msgstr "Немагчыма перайсці ў прыцэл у гэтым пункце"
+
+msgid "player_errors/cant_switch/change_shell/gun_overheated"
+msgstr "Гармата перагрэтая! Змена снарадаў немагчымая."
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Пераключыць рэжым немагчыма: рухавік выведзены са строю."
@@ -2758,6 +2767,9 @@ msgstr "Пашкоджанні снарада: %(value)s адз."
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"
+
+msgid "shells_kinds/params/flameMaxDistance"
+msgstr "Далёкасць вогнемятання: %(value)s м"
 
 msgid "shells_kinds/params/piercingPower"
 msgstr "Сярэдняя бронепрабівальнасць: %(value)s мм"

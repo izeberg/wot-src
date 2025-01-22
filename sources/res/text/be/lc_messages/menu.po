@@ -685,6 +685,9 @@ msgstr "Лінія фронту"
 msgid "bonusType/29"
 msgstr "«Сталёвы паляўнічы»"
 
+msgid "bonusType/32"
+msgstr "Бітва блогераў"
+
 msgid "bonusType/37"
 msgstr "«Выведка боем»"
 
@@ -1090,6 +1093,9 @@ msgstr "Скапіраваць імя"
 msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "Стварыць звяз паляўнічых"
 
+msgid "contextMenu/createBobSquad"
+msgstr "Стварыць звяз для Бітвы блогераў"
+
 msgid "contextMenu/createComp7Squad"
 msgstr "Стварыць звяз для «Націску»"
 
@@ -1363,7 +1369,7 @@ msgstr "Адклікаць запрашэнне ў звяз"
 
 msgid "copy"
 msgstr ""
-"© Леста Игры, 2022-2024. Гульня «Мир танков» заснавана на інтэлектуальнай "
+"© Леста Игры, 2022-2025. Гульня «Мир танков» заснавана на інтэлектуальнай "
 "уласнасці трэціх асоб. Усе правы на аб'екты правоў трэціх асоб належаць іх "
 "законным праваўладальнікам."
 
@@ -2202,6 +2208,13 @@ msgstr ""
 msgid "extraParams/name/foliageMaskingFactor"
 msgstr "Параметр, які адказвае за сілу эфекту маскіроўкі ад расліннасці."
 
+msgid "extraParams/name/limitsForGunBoost"
+msgstr ""
+"Параметр адказвае за колькасць улічаных траплянняў па вашай машыне, якія "
+"вызначаюць бонус да хуткасці перанабівання. / Часовая затрымка пасля "
+"паскарэння перанабівання, пасля заканчэння якой траплянні па вас зноў "
+"пачнуць паскараць перанабіванне."
+
 msgid "extraParams/name/minTimeBetweenReloadBoost"
 msgstr ""
 "Часовая затрымка пасля паскарэння перанабівання, пасля заканчэння якой "
@@ -2215,14 +2228,29 @@ msgstr ""
 msgid "extraParams/name/radiomanHitChance"
 msgstr "Параметр, які адказвае за шанц пазбегнуць раненняў радыстам."
 
-msgid "extraParams/name/shotsLimitForGunBoost"
-msgstr ""
-"Параметр, які адказвае за колькасць улічаных траплянняў па вашай машыне, "
-"якія вызначаюць бонус да хуткасці перанабівання."
-
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
 "Параметр, які адказвае за сілу негатыўнага эфекту пры дэзарыентацыі экіпажа."
+
+msgid "extraParams/name/temperatureCoolingDelay"
+msgstr "Час паміж спыненнем стральбы і пачаткам ахаладжэння гарматы."
+
+msgid "extraParams/name/temperatureCoolingPerSec"
+msgstr "Час, за які гармата астыне на кожнай стадыі."
+
+msgid "extraParams/name/temperatureDamageFactor"
+msgstr ""
+"Мадыфікатар, які прымяняецца да значэння сярэдніх пашкоджанняў на кожнай "
+"тэрмічнай стадыі адпаведна."
+
+msgid "extraParams/name/temperatureHeatingPerSec"
+msgstr ""
+"Час, за які гармата нагрэецца пры няспыннай стральбе на кожнай стадыі."
+
+msgid "extraParams/name/temperatureStatesCount"
+msgstr ""
+"Колькасць тэрмічных стадый, якімі валодае гармата. Кожная тэрмічная стадыя "
+"можа валодаць сваімі спецыфічнымі атрыбутамі і мадыфікатарамі."
 
 msgid "extraParams/name/vehPenaltyForDamageEngineAndCombat"
 msgstr ""
@@ -2359,7 +2387,7 @@ msgstr ""
 
 msgid "extraParams/name/vehicleReloadTimeAfterShellChange"
 msgstr ""
-"Параметр, які адказвае за хуткасць змены тыпу снарада ва ўжо зараджанай "
+"Параметр, які адказвае за хуткасць змены тыпу боепрыпасу ва ўжо зараджанай "
 "гармаце."
 
 msgid "extraParams/name/vehicleRepairSpeed"
@@ -2859,7 +2887,7 @@ msgid "headerButtons/barracks"
 msgstr "Жаўнерня"
 
 msgid "headerButtons/battle"
-msgstr "Да бою!"
+msgstr "ДА БОЮ"
 
 msgid "headerButtons/battle/availableSince"
 msgstr "Даступна з %(datetime)s"
@@ -2932,6 +2960,33 @@ msgstr "Звяз паляўнічых"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Стварыць звяз з 2 байцоў"
+
+msgid "headerButtons/battle/types/bob"
+msgstr "Бітва блогераў"
+
+msgid "headerButtons/battle/types/bob/availability/frozen"
+msgstr "Рэжым часова адключаны"
+
+msgid "headerButtons/battle/types/bob/availability/postEvent"
+msgstr "Баі недаступныя"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/days"
+msgstr "Да канца падзеі: %(day)s дз"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/hours"
+msgstr "Да канца падзеі: %(hour)s гадз"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/lessMin"
+msgstr "Да канца падзеі: менш за 1 гадз"
+
+msgid "headerButtons/battle/types/bob/availability/timeLeft/min"
+msgstr "Да канца падзеі: менш за 1 гадз"
+
+msgid "headerButtons/battle/types/bob/availability/until"
+msgstr "З %(date)s"
+
+msgid "headerButtons/battle/types/bob/descr"
+msgstr "?empty?"
 
 msgid "headerButtons/battle/types/comp7"
 msgstr "Націск"
@@ -3204,6 +3259,12 @@ msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/body"
 msgstr "На гэтым серверы дзейнічае рэжым спынення агню."
 
 msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/header"
+msgstr "Нельга ўступіць у бой"
+
+msgid "headerButtons/fightBtn/tooltip/bobOnly/body"
+msgstr "Выбраная машына прыдатная толькі для падзеі «Бітва блогераў 2025»."
+
+msgid "headerButtons/fightBtn/tooltip/bobOnly/header"
 msgstr "Нельга ўступіць у бой"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/body"
@@ -3888,6 +3949,9 @@ msgstr "Размінка"
 msgid "loading/battleTypes/31000"
 msgstr "Палігон"
 
+msgid "loading/battleTypes/32"
+msgstr "Бітва блогераў"
+
 msgid "loading/battleTypes/4"
 msgstr "Баявое навучанне"
 
@@ -3981,6 +4045,9 @@ msgid "loading/battleTypes/desc/31"
 msgstr " "
 
 msgid "loading/battleTypes/desc/31000"
+msgstr " "
+
+msgid "loading/battleTypes/desc/32"
 msgstr " "
 
 msgid "loading/battleTypes/desc/4"
@@ -4121,7 +4188,7 @@ msgstr ""
 msgid "login/social/warning/SOCIAL_NETWORK_LOGOUT_BOTH"
 msgstr ""
 "Вы выйшлі з акаўнту %(userName)s. Для вашай бяспекі таксама выйдзіце з "
-"акаўнтаў %(socialNetworkLink)s і %(wargamingNetLink)s."
+"акаўнтаў %(socialNetworkLink)s і %(lestaGamesLink)s."
 
 msgid "login/status/ALREADY_ONLINE_LOCALLY"
 msgstr "The client is already online locally (i.e. exploring space offline)."
@@ -4426,6 +4493,9 @@ msgstr ""
 "Дапрацаваная сістэма данабівання:\n"
 "Дазваляе зменшыць базавы час данабівання снарадаў."
 
+msgid "moduleInfo/autoShootFlameGunLabel"
+msgstr "Безмагазінная сістэма"
+
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазінная сістэма набівання"
 
@@ -4515,6 +4585,12 @@ msgstr "Час данабівання аднаго снарада"
 msgid "moduleInfo/params/autoReloadTime/boost"
 msgstr "Базавы час данабівання аднаго снарада"
 
+msgid "moduleInfo/params/autoShootFlameChangeShellTime"
+msgstr "Час падключэння агнясумесі"
+
+msgid "moduleInfo/params/autoShootFlameOverheatCoolingTime"
+msgstr "Час ахаладжэння гарматы пры перагрэве"
+
 msgid "moduleInfo/params/avgDamage"
 msgstr "Сярэднія пашкоджанні"
 
@@ -4523,6 +4599,9 @@ msgstr "Сярэднія пашкоджанні"
 
 msgid "moduleInfo/params/avgDamagePerMinute"
 msgstr "Сярэднія пашкоджанні за хвіліну"
+
+msgid "moduleInfo/params/avgDamagePerSecond"
+msgstr "Сярэднія пашкоджанні за секунду"
 
 msgid "moduleInfo/params/avgPiercingPower"
 msgstr "Сярэдняя бронепрабівальнасць"
@@ -4590,7 +4669,7 @@ msgid "moduleInfo/params/drivingControl"
 msgstr "Да кіравальнасці на хуткасці"
 
 msgid "moduleInfo/params/dualAccuracyCoolingDelay"
-msgstr "Час астывання гарматы пасля стрэлу"
+msgstr "Час ахаладжэння гарматы пасля стрэлу"
 
 msgid "moduleInfo/params/duration"
 msgstr "Працягласць"
@@ -4688,6 +4767,9 @@ msgstr "Час поўнага перанабівання"
 msgid "moduleInfo/params/reloadTime"
 msgstr "Хуткастрэльнасць"
 
+msgid "moduleInfo/params/reloadTimePerSecond"
+msgstr "Хуткастрэльнасць гарматы за секунду"
+
 msgid "moduleInfo/params/reloadTimeSecs"
 msgstr "Набіванне гарматы"
 
@@ -4724,6 +4806,18 @@ msgstr "Час дэзарыентацыі"
 msgid "moduleInfo/params/stunMaxDurationList"
 msgstr "Час дэзарыентацыі"
 
+msgid "moduleInfo/params/thermalVisionDistance"
+msgstr "Агляд з пірометрам"
+
+msgid "moduleInfo/params/thermalVisionObserveTime"
+msgstr "Час да выяўлення праціўніка"
+
+msgid "moduleInfo/params/thermalVisionReloadTime"
+msgstr "Час перазарадкі прылады"
+
+msgid "moduleInfo/params/thermalVisionReuseAndDuration"
+msgstr "Пірометр (колькасць выкарыстанняў, разоў / час дзеяння прылады, с)"
+
 msgid "moduleInfo/params/turboshaftEnginePower"
 msgstr "Магутнасць рухавіка (турба)"
 
@@ -4738,6 +4832,11 @@ msgstr "Маса"
 
 msgid "moduleInfo/rocketAccelerationEngine"
 msgstr "Рэактыўныя паскаральнікі, што павышаюць рухомасць"
+
+msgid "moduleInfo/thermalVisionTurret"
+msgstr ""
+"Пірометр: дазваляе выявіць машыны праціўніка ў сектары пакрыцця прылады, "
+"ігнаруючы іх маскіроўку, але ўлічваючы ўкрыцці."
 
 msgid "moduleInfo/title"
 msgstr " "
@@ -4859,9 +4958,6 @@ msgstr "СССР"
 
 msgid "onlineCounter/delimiter"
 msgstr " / "
-
-msgid "onlineCounter/total"
-msgstr "Усяго"
 
 msgid "onlineCounter/unavailable"
 msgstr "- -"
@@ -6243,15 +6339,6 @@ msgstr "?empty?"
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Няма ў Гаражы"
 
-msgid "tankCarousel/vehicleStates/nyTank"
-msgstr "Навагодняя тэхніка"
-
-msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
-msgstr "Вольных слотаў: %(count)d"
-
-msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
-msgstr "Усе слоты заняты"
-
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Пракат машыны даступны"
 
@@ -6337,11 +6424,23 @@ msgstr "Хуткасць, якая набіраецца за 5 секунд"
 msgid "tank_params/autoReloadTime"
 msgstr "Час данабівання аднаго снарада"
 
+msgid "tank_params/autoShootFireUntilOverheatTime"
+msgstr "Час няспыннай стральбы"
+
+msgid "tank_params/autoShootFlameChangeShellTime"
+msgstr "Падключэннне агнясумесі"
+
+msgid "tank_params/autoShootFlameOverheatCoolingTime"
+msgstr "Час ахаладжэння гарматы пры перагрэве"
+
 msgid "tank_params/avgDamage"
 msgstr "Сярэднія пашкоджанні"
 
 msgid "tank_params/avgDamagePerMinute"
 msgstr "Сярэднія пашкоджанні за хвіліну"
+
+msgid "tank_params/avgDamagePerSecond"
+msgstr "Сярэднія пашкоджанні за секунду"
 
 msgid "tank_params/avgPiercingPower"
 msgstr "Сярэдняя бронепрабівальнасць"
@@ -6392,7 +6491,7 @@ msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "Час астывання гарматы"
 
 msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
-msgstr "Час астывання гарматы пасля стрэлу"
+msgstr "Час ахаладжэння гарматы пасля стрэлу"
 
 msgid "tank_params/duration"
 msgstr "Час дзеяння ўмення"
@@ -6541,6 +6640,9 @@ msgstr "Назіранне"
 msgid "tank_params/reloadTime"
 msgstr "Хуткастрэльнасць гарматы"
 
+msgid "tank_params/reloadTimePerSecond"
+msgstr "Хуткастрэльнасць гарматы"
+
 msgid "tank_params/reloadTimeSecs"
 msgstr "Набіванне гарматы"
 
@@ -6577,6 +6679,9 @@ msgstr "Макс. хуткасць / задні ход"
 msgid "tank_params/spm"
 msgstr "(стр/хв)"
 
+msgid "tank_params/sps"
+msgstr "(стрэл/с)"
+
 msgid "tank_params/sqm"
 msgstr "(м²)"
 
@@ -6594,6 +6699,12 @@ msgstr "Час пераключэння ў аблогавы / паходны р�
 
 msgid "tank_params/t"
 msgstr "(т)"
+
+msgid "tank_params/thermalVisionDistance"
+msgstr "Агляд з пірометрам"
+
+msgid "tank_params/thermalVisionReuseAndDuration"
+msgstr "Пірометр"
 
 msgid "tank_params/timeOfReaching"
 msgstr "Час праходжання 100 м"
@@ -6674,7 +6785,7 @@ msgid "tank_params/vpm"
 msgstr "(адз./хв)"
 
 msgid "tank_params/vps"
-msgstr "(адз/с)"
+msgstr "(адз./с)"
 
 msgid "tank_params/wheeledSpeedModeSpeed"
 msgstr "Макс. хуткасць / задні ход (хуткасны)"
@@ -7085,11 +7196,23 @@ msgstr "Час данабівання аднаго снарада (c)"
 msgid "vehicleInfo/params/autoReloadTimeBoost"
 msgstr "Базавы час данабівання аднаго снарада (с)"
 
+msgid "vehicleInfo/params/autoShootFireUntilOverheatTime"
+msgstr "Час няспыннай стральбы (с)"
+
+msgid "vehicleInfo/params/autoShootFlameChangeShellTime"
+msgstr "Падключэнне агнясумесі (с)"
+
+msgid "vehicleInfo/params/autoShootFlameOverheatCoolingTime"
+msgstr "Час ахаладжэння гарматы пры перагрэве (с)"
+
 msgid "vehicleInfo/params/avgDamage"
 msgstr "Сярэднія пашкоджанні за стрэл"
 
 msgid "vehicleInfo/params/avgDamagePerMinute"
 msgstr "Сярэднія пашкоджанні за хвіліну"
+
+msgid "vehicleInfo/params/avgDamagePerSecond"
+msgstr "Сярэднія пашкоджанні за секунду"
 
 msgid "vehicleInfo/params/avgPiercingPower"
 msgstr "Сярэдняя бронепрабівальнасць"
@@ -7122,7 +7245,7 @@ msgid "vehicleInfo/params/clipFireRate"
 msgstr "Перанабіванне (поўнае/паміж/колькасць)"
 
 msgid "vehicleInfo/params/dualAccuracyCoolingDelay"
-msgstr "Час астывання гарматы пасля стрэлу (с)"
+msgstr "Час ахаладжэння гарматы пасля стрэлу (с)"
 
 msgid "vehicleInfo/params/enginePower"
 msgstr "Магутнасць рухавіка (к.с.)"
@@ -7169,6 +7292,9 @@ msgstr "Час паміж стрэлам і пераходам да набіта
 msgid "vehicleInfo/params/reloadTime"
 msgstr "Хуткастрэльнасць гарматы (стр/хв)"
 
+msgid "vehicleInfo/params/reloadTimePerSecond"
+msgstr "Хуткастрэльнасць гарматы (стрэл/с)"
+
 msgid "vehicleInfo/params/reloadTimeSecs"
 msgstr "Набіванне гарматы (с)"
 
@@ -7201,6 +7327,12 @@ msgstr "Час пераключэння ў аблогавы рэжым (с)"
 
 msgid "vehicleInfo/params/switchTime"
 msgstr "Час пераключэння ў аблогавы / паходны рэжым (с)"
+
+msgid "vehicleInfo/params/thermalVisionDistance"
+msgstr "Агляд з пірометрам (м)"
+
+msgid "vehicleInfo/params/thermalVisionReuseAndDuration"
+msgstr "Пірометр (кольк./час)"
 
 msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "Касета (турба) (с/шт./шт.)"

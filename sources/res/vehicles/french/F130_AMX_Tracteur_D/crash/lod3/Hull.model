@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F130_AMX_Tracteur_D/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.820195 -1.318513 -5.232884</min>
+		<max>1.825982 1.234173 4.919422</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F130_AMX_Tracteur_D/crash/lod3/Hull</nodefullVisual>
+</root>

@@ -262,6 +262,85 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fep132/capsUserName"
+msgstr "АРКАДА"
+
+msgid "modes/fep132/detailedUserName"
+msgstr "%(modeName)s: %(subModeName)s"
+
+msgid "modes/fep132/metaProgressionTooltip/header/active"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fep132/metaProgressionTooltip/subheader"
+msgstr "Задача Аркады"
+
+msgid "modes/fep132/metaProgressionTooltip/timer/completedResettable"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/fep132/modeSubSelector/progression/info"
+msgstr "Задача Аркады"
+
+msgid "modes/fep132/modeSubSelector/progression/timer"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/fep132/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/fep132/mode_selector/description"
+msgstr "Баі з дадатковымі мадыфікатарамі."
+
+msgid "modes/fep132/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "modes/fep132/mode_selector/progression/resettable"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/fep132/notification/finishSubModes/withProgression"
+msgstr "Рэжым %(subModeName)s завершаны: прагрэсія скінута."
+
+msgid "modes/fep132/notification/finishSubModes/withoutProgression"
+msgstr "Рэжым %(subModeName)s завершаны."
+
+msgid "modes/fep132/notification/newSubModes/withProgression"
+msgstr "Даступныя новыя ўзнагароды і рэжым %(subModeName)s."
+
+msgid "modes/fep132/notification/newSubModes/withoutProgression"
+msgstr "Даступны новы рэжым — %(subModeName)s."
+
+msgid "modes/fep132/notification/switchOffSubModes"
+msgstr "Рэжым %(subModeName)s недаступны: вядуцца тэхнічныя працы."
+
+msgid "modes/fep132/notification/switchOnSubModes"
+msgstr "Рэжым %(subModeName)s зноў даступны."
+
+msgid "modes/fep132/progression/congratulation/descr"
+msgstr "Вы прайшлі ўсе этапы Аркады"
+
+msgid "modes/fep132/progression/title"
+msgstr "ЗАДАЧА АРКАДЫ"
+
+msgid "modes/fep132/scheduler/notification/available"
+msgstr "Баі рэжыму %(subModeName)s зноў даступныя."
+
+msgid "modes/fep132/scheduler/notification/available/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/fep132/scheduler/notification/primeTime"
+msgstr ""
+"Баі рэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення агню."
+
+msgid "modes/fep132/scheduler/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/fep132/tooltip/filter/body"
+msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
+
+msgid "modes/fep132/tooltip/filter/header"
+msgstr "Тэхніка рэжыму «Аркада»"
+
+msgid "modes/fep132/userName"
+msgstr "Аркада"
+
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
@@ -547,6 +626,57 @@ msgstr "Камандзір звязу змяніў падрэжым на %(subMo
 msgid "scheduler/notification/squadModeSwitch/title"
 msgstr "Змена падрэжыму"
 
+msgid "sub_modes/classicBattle132/capsUserName"
+msgstr "КЛАСІКА"
+
+msgid "sub_modes/classicBattle132/detailsHelp/page1/description"
+msgstr ""
+"У гэтым рэжыме няма ніякіх мадыфікатараў, а ўмовы перамогі аналагічныя "
+"Выпадковым баям. Вынікі не ідуць у статыстыку, таму гуляйце, эксперыментуйце"
+" і атрымлівайце задавальненне. Скарыстайцеся магчымасцю паспрабаваць "
+"нестандартныя тактыкі, каб выкарыстаць здабыты досвед у Выпадковых баях."
+
+msgid "sub_modes/classicBattle132/detailsHelp/page1/title"
+msgstr "Класіка"
+
+msgid "sub_modes/classicBattle132/detailsHelpHint/description"
+msgstr "для знаёмства з асаблівасцямі рэжыму"
+
+msgid "sub_modes/classicBattle132/detailsHelpHint/press"
+msgstr "Націсніце"
+
+msgid "sub_modes/classicBattle132/detailsHelpTitle"
+msgstr "Класіка"
+
+msgid "sub_modes/classicBattle132/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/classicBattle132/subModeCard/description"
+msgstr ""
+"Стандартныя баі без мадыфікатараў\n"
+"і ўліку ў статыстыку"
+
+msgid "sub_modes/classicBattle132/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "sub_modes/classicBattle132/subModeCard/title"
+msgstr "Класіка"
+
+msgid "sub_modes/classicBattle132/tips/tip1/description"
+msgstr ""
+"Класічны бой паводле звыклых правілаў. Не бойцеся за сваю статыстыку: "
+"гуляйце з задавальненнем і карыстайцеся шанцам адпрацаваць нестандартныя "
+"тактыкі."
+
+msgid "sub_modes/classicBattle132/tips/tip1/title"
+msgstr "Класіка"
+
+msgid "sub_modes/classicBattle132/userName"
+msgstr "Класіка"
+
+msgid "sub_modes/classicBattle132/userName/quoted"
+msgstr "«Класіка»"
+
 msgid "sub_modes/development/capsUserName"
 msgstr "?empty?"
 
@@ -594,6 +724,56 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/speedUp132/capsUserName"
+msgstr "НА ЎСІХ ПАРАХ"
+
+msgid "sub_modes/speedUp132/detailsHelp/page1/description"
+msgstr ""
+"Ва ўсёй тэхнікі ў рэжым павялічаны максімальная хуткасць і магутнасць "
+"рухавікоў, палепшана стабілізацыя і паскорана перанабіванне. Далёкасць "
+"радыёсувязі і агляд абмежаваны, таму адзіны варыянт эфектыўнай гульні — рух "
+"наперад і імклівыя манеўры ў самую гушчу бітвы."
+
+msgid "sub_modes/speedUp132/detailsHelp/page1/title"
+msgstr "На ўсіх парах"
+
+msgid "sub_modes/speedUp132/detailsHelpHint/description"
+msgstr "для знаёмства з асаблівасцямі рэжыму"
+
+msgid "sub_modes/speedUp132/detailsHelpHint/press"
+msgstr "Націсніце"
+
+msgid "sub_modes/speedUp132/detailsHelpTitle"
+msgstr "На ўсіх парах"
+
+msgid "sub_modes/speedUp132/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/speedUp132/subModeCard/description"
+msgstr ""
+"Баі са змененымі\n"
+"параметрамі"
+
+msgid "sub_modes/speedUp132/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "sub_modes/speedUp132/subModeCard/title"
+msgstr "На ўсіх парах"
+
+msgid "sub_modes/speedUp132/tips/tip1/description"
+msgstr ""
+"Хуткасць гульні прыкметна павялічана. Выкарыстоўвайце гэта для імгненнага "
+"наступу на агаломшанага праціўніка."
+
+msgid "sub_modes/speedUp132/tips/tip1/title"
+msgstr "На ўсіх парах"
+
+msgid "sub_modes/speedUp132/userName"
+msgstr "На ўсіх парах"
+
+msgid "sub_modes/speedUp132/userName/quoted"
+msgstr "«На ўсіх парах»"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

@@ -14,7 +14,9 @@ package net.wg.gui.battle.views.battleMessenger
    import flash.text.TextFormat;
    import flash.ui.Keyboard;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_MESSAGES_CONSTS;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.components.buttons.BattleButton;
    import net.wg.gui.battle.views.battleMessenger.VO.BattleMessengerReceiverVO;
    import net.wg.gui.battle.views.battleMessenger.VO.BattleMessengerSettingsVO;
@@ -72,7 +74,7 @@ package net.wg.gui.battle.views.battleMessenger
       
       public var hit:MovieClip = null;
       
-      public var itemBackground:MovieClip = null;
+      public var bg:BattleAtlasSprite = null;
       
       public var backgroundLayer:Sprite = null;
       
@@ -180,6 +182,7 @@ package net.wg.gui.battle.views.battleMessenger
          addChild(this._messagesContainer);
          this._messagesContainer.name = MESSAGES_CONTAINER;
          this._messagesContainer.mouseEnabled = false;
+         this.bg.imageName = BATTLEATLAS.MESSENGER_BG;
          this._scheduler = App.utils.scheduler;
       }
       
@@ -311,7 +314,7 @@ package net.wg.gui.battle.views.battleMessenger
          this._blackMessagesPool = null;
          this._selfMessagesPool.dispose();
          this._selfMessagesPool = null;
-         this.itemBackground = null;
+         this.bg = null;
          this.receiverField = null;
          this.messageInputField = null;
          this.hintBackground = null;
@@ -729,7 +732,7 @@ package net.wg.gui.battle.views.battleMessenger
       private function setAlpha(param1:Number) : void
       {
          this.receiverField.alpha = param1;
-         this.itemBackground.alpha = param1;
+         this.bg.alpha = param1;
          this.messageInputField.alpha = param1;
       }
       

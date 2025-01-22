@@ -1007,15 +1007,18 @@ msgstr ""
 
 msgid "A150_MBT_B_long_special"
 msgstr ""
-"Амерыканскі цяжкі танк з нязвыклым браніраванне: прадуманае размяшчэнне "
-"бронелістоў паляпшае абароненасць, што разам з дасканалай гарматай дазваляе "
-"як актыўна абараняцца, так і весці за сабой хаўруснікаў."
+"Цяжкі танк падтрымкі, здольны хутка знішчаць праціўніка за кошт боепрыпасаў "
+"БАСП і мадэрнізацыі «Беглы агонь». Варта адзначыць выдатную мабільнасць і "
+"камфортны магазін, якія дазваляюць эфектыўна атакаваць з флангаў, "
+"рэалізоўваючы высокі агнявы патэнцыял. Для максімальна эфектыўнага "
+"выкарыстання машыны будзе карысным ведаць слабыя бакі праціўніка і яго "
+"ўразлівыя зоны."
 
 msgid "A150_MBT_B_short"
 msgstr "MBT-B"
 
 msgid "A150_MBT_B_short_special"
-msgstr "Моцная браня, універсальная гармата"
+msgstr "Магазінная сістэма набівання, асаблівыя боепрыпасы"
 
 msgid "A151_TS_60"
 msgstr "TS-60"
@@ -1222,13 +1225,17 @@ msgstr ""
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "A161_ARMT_long_special"
-msgstr "?empty?"
+msgstr ""
+"Лёгкі танк са сціплым браніраваннем, але ўражальнай баявой моцай. Магазінная"
+" гармата машыны на вялізную колькасць снарадаў здольная істотна патузаць "
+"любога аднакласніка, а выбітная дынаміка дазваляе шукаць патэнцыйныя цэлі "
+"практычна па ўсёй мапе."
 
 msgid "A161_ARMT_short"
 msgstr "ARMT"
 
 msgid "A161_ARMT_short_special"
-msgstr "?empty?"
+msgstr "Выдатная дынаміка, умяшчальны магазін"
 
 msgid "A162_ATAC_II"
 msgstr "ATAC II"
@@ -1330,6 +1337,9 @@ msgid "A165_XM57_short_special"
 msgstr ""
 "Выдатнае лабавое браніраванне, вугал нахілу магутнай гарматы да 13 градусаў"
 
+msgid "A169_TF_3"
+msgstr "TF-3"
+
 msgid "A169_TF_3_T"
 msgstr "TF-3 T"
 
@@ -1353,6 +1363,53 @@ msgstr "TF-3 T"
 
 msgid "A169_TF_3_T_short_special"
 msgstr "?empty?"
+
+msgid "A169_TF_3_descr"
+msgstr ""
+"Абапіраючыся на досвед выкарыстання танкаў M4 Sherman, якія былі "
+"пераабсталяваны ў агнямётныя машыны, Хімічны корпус арміі ЗША абвясціў "
+"конкурс на распрацоўку канцэпту агнямётнага танка для вядзення баявых "
+"дзеянняў у індакітайскім рэгіёне, у прыватнасці, для падтрымкі пяхоты ў баях"
+" Карэйскай вайны. Адной з умоў была ўніфікацыя вузлоў і ўзаемазамяняльнасць "
+"кампанентаў з серыйнымі машынамі. Кампанія Cadillac прэзентавала канцэпт, "
+"які быў прыняты для далейшага развіцця, у выніку чаго ў 1952 году Cadillac "
+"пачала працу над прататыпам. 27 ліпеня 1953 года Пханмунджомскае замірэнне "
+"паклала канец баявым дзеянням. Працу над праектам замарозілі."
+
+msgid "A169_TF_3_short"
+msgstr "TF-3"
+
+msgid "A170_M4A3FL"
+msgstr "M4A3FL"
+
+msgid "A170_M4A3FL_descr"
+msgstr ""
+"Да пытання стварэння агнямётных танкаў ваенныя ЗША падышлі ўжо пасля пачатку"
+" Другой сусветнай вайны. Улетку 1942-га года Служба хімічнага ўзбраення "
+"(CWS) распачала выпрабаванні танкавых агнямётаў, у прыватнасці, спецыяльнай "
+"агнямётнай версіі Medium Tank M4A3. Гэтая мадэль атрымала новую зварную вежу"
+" і дадатковую бранявую абарону корпуса. Аднак праект, які так і не атрымаў "
+"адмысловага абазначэння, далей канцэпцыі не прасунуўся."
+
+msgid "A170_M4A3FL_short"
+msgstr "M4A3FL"
+
+msgid "A171_TF_4"
+msgstr "TF-4"
+
+msgid "A171_TF_4_descr"
+msgstr ""
+"У пачатку 50-х гадоў у краінах НАТА вельмі папулярнай ідэяй стала "
+"чатырохгусенічная схема. І менавіта яе паспрабавалі рэалізаваць на новым "
+"агнямётным танку TF-4. Танк меў атрымаць вельмі магутную бранявую абарону, "
+"каб паспяхова дзейнічаць у якасці агнямётнай машыны, і гідрастатычную "
+"трансмісію для забеспячэння высокай рухомасці. Слаба распрацаваны канцэпт "
+"прывёў да таго, што TF-4 нават не патрапіў у агульны спіс пытанняў "
+"канферэнцый Question Mark. У выніку праект згубіўся сярод іншых і не атрымаў"
+" далейшага развіцця."
+
+msgid "A171_TF_4_short"
+msgstr "TF-4"
 
 msgid "A172_ASTRON_FL"
 msgstr "Astron-FL"
@@ -1402,8 +1459,8 @@ msgstr ""
 "Машына выдатна абаронена, што спрыяе агрэсіўнай тактыцы гульні на першай "
 "лініі. Мабільнасць даволі сціплая, таму лепш загадзя планаваць кірунак для "
 "атакі, а таксама магчымыя шляхі адступлення ў выпадку змены карціны бою. "
-"Магутная гармата здольная супрацьстаяць любой цэлі на невялікай дыстанцыі, "
-"далёкі бой праз недастатковую дакладнасць можа быць малаэфектыўны."
+"Агнямётная гармата здольная супрацьстаяць любой цэлі на невялікай дыстанцыі,"
+" але далёкі бой (праз асаблівасці стральбы) малаэфектыўны."
 
 msgid "A173_TF_2_CLARK_short"
 msgstr "TF-2 CLARK"
@@ -1616,6 +1673,9 @@ msgstr "AN GRC 8E"
 
 msgid "AN_GRC_8L"
 msgstr "AN/GRC-8M"
+
+msgid "AN_GRC_8_4"
+msgstr "AN/GRC-8F"
 
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
@@ -1876,8 +1936,26 @@ msgstr "H-3"
 msgid "Chassis_A165_XM57"
 msgstr "XM-57"
 
+msgid "Chassis_A169_TF_3"
+msgstr "FT-3E1"
+
+msgid "Chassis_A169_TF_3_2"
+msgstr "FT-3E2"
+
 msgid "Chassis_A169_TF_3_2_T"
 msgstr "FT-3E2"
+
+msgid "Chassis_A170_M4A3FL"
+msgstr "M4A3FL-Е1"
+
+msgid "Chassis_A170_M4A3FL_2"
+msgstr "M4A3FL-Е2"
+
+msgid "Chassis_A171_TF_4"
+msgstr "TF-4E1"
+
+msgid "Chassis_A171_TF_4_2"
+msgstr "TF-4E2"
 
 msgid "Chassis_A172_ASTRON_FL"
 msgstr "Astron-FL"
@@ -2184,6 +2262,14 @@ msgstr "Continental AOI-1490-1"
 msgid "Continental_AOI_1790_12"
 msgstr "Continental AOI-1790-12"
 
+msgid "Continental_AOI_1790_12_4"
+msgstr "Continental AOI-1790-12F"
+
+msgid "Continental_AOI_1790_12_4_short"
+msgstr ""
+"Continental\n"
+"AOI-1790-12F"
+
 msgid "Continental_AOI_1790_12_T"
 msgstr "Continental AOI-1790-12"
 
@@ -2332,6 +2418,14 @@ msgstr ""
 msgid "Continental_AOSI_1195_6"
 msgstr "Continental AOSI-1195-6"
 
+msgid "Continental_AOSI_1195_6_4"
+msgstr "Continental AOSI-1195-6"
+
+msgid "Continental_AOSI_1195_6_4_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-6"
+
 msgid "Continental_AOSI_1195_6_short"
 msgstr ""
 "Continental\n"
@@ -2469,10 +2563,26 @@ msgstr ""
 "Continental\n"
 "AV-1790-8 RM"
 
+msgid "Continental_AV_1790_1"
+msgstr "Continental AV-1790-1"
+
+msgid "Continental_AV_1790_1_short"
+msgstr ""
+"Continental\n"
+"AV-1790-1"
+
+msgid "Continental_AV_1790_3"
+msgstr "Continental AV-1790-3"
+
 msgid "Continental_AV_1790_3_T"
 msgstr "Continental AV-1790-3"
 
 msgid "Continental_AV_1790_3_T_short"
+msgstr ""
+"Continental\n"
+"AV-1790-3"
+
+msgid "Continental_AV_1790_3_short"
 msgstr ""
 "Continental\n"
 "AV-1790-3"
@@ -2622,6 +2732,9 @@ msgstr "Ford GAA"
 msgid "Ford_GAA_A"
 msgstr "Ford GAA A"
 
+msgid "Ford_GAA_FL"
+msgstr "Ford GAA"
+
 msgid "Ford_GAA_R"
 msgstr "Ford GAA early"
 
@@ -2645,6 +2758,9 @@ msgstr "Ford GAFM2A2"
 
 msgid "Ford_GAF_500"
 msgstr "Ford GAF (500)"
+
+msgid "Ford_GAF_FL"
+msgstr "Ford GAF"
 
 msgid "Ford_GAF_R1"
 msgstr "Ford GAF (T92 HMC)"
@@ -4222,6 +4338,15 @@ msgstr "H-3"
 msgid "Turret_1_A165_XM57"
 msgstr "XM-57"
 
+msgid "Turret_1_A169_TF_3"
+msgstr "FT-3A"
+
+msgid "Turret_1_A170_M4A3FL"
+msgstr "M4A3FL-А"
+
+msgid "Turret_1_A171_TF_4"
+msgstr "TF-4A"
+
 msgid "Turret_1_A172_ASTRON_FL"
 msgstr "Astron-FL"
 
@@ -4387,8 +4512,17 @@ msgstr "M-VI-Y B"
 msgid "Turret_2_A147_M_II_Y"
 msgstr "M-II-Y B"
 
+msgid "Turret_2_A169_TF_3"
+msgstr "FT-3B"
+
 msgid "Turret_2_A169_TF_3_T"
 msgstr "FT-3B"
+
+msgid "Turret_2_A170_M4A3FL"
+msgstr "M4A3FL-B"
+
+msgid "Turret_2_A171_TF_4"
+msgstr "TF-4B"
 
 msgid "Turret_2_A27_T82"
 msgstr "T82 HMC"
@@ -5222,6 +5356,15 @@ msgstr "37 mm M1924A1"
 msgid "_37mm_semiautomatic_gun_M1924_short"
 msgstr "37 mm M1924"
 
+msgid "_40mm_M7_6E2_flamegun"
+msgstr "M7-6E2 Flamethrower"
+
+msgid "_40mm_M7_6E2_flameshell_alternative"
+msgstr "Ft.F. M7-6E2 Mod"
+
+msgid "_40mm_M7_6E2_flameshell_basic"
+msgstr "Ft.F. M7-6E2"
+
 msgid "_40mm_M7_8_flamegun"
 msgstr "M7-8 Flamethrower"
 
@@ -5234,6 +5377,15 @@ msgstr "Ft.F. M7-8 Mod"
 msgid "_40mm_M7_8_flameshell_basic"
 msgstr "Ft.F. M7-8"
 
+msgid "_40mm_T13E2_flamegun"
+msgstr "T13E2 Flamethrower"
+
+msgid "_40mm_T13E2_flameshell_alternative"
+msgstr "Ft.F. E1-mod"
+
+msgid "_40mm_T13E2_flameshell_basic"
+msgstr "Ft.F. E1"
+
 msgid "_40mm_T13E3C2_flamegun"
 msgstr "T13E3C2 Flamethrower"
 
@@ -5242,6 +5394,9 @@ msgstr "Ft.F. E3C2 Mod"
 
 msgid "_40mm_T13E3C2_flameshell_basic"
 msgstr "Ft.F. E3C2"
+
+msgid "_40mm_T13E3_flamegun"
+msgstr "T13E3 Flamethrower"
 
 msgid "_40mm_T13E3_flamegun_T"
 msgstr "T13E3 Flamethrower"

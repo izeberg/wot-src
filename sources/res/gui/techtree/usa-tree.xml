@@ -24,7 +24,7 @@
 			</lines>
 		</A03_M3_Stuart>
 		<A57_M8A1>
-			<row>3</row>
+			<row>2</row>
 			<column>4</column>
 			<lines>
 				<A18_M41/>
@@ -50,14 +50,14 @@
 			</lines>
 		</A22_M5_Stuart>
 		<A18_M41>
-			<row>2</row>
+			<row>1</row>
 			<column>5</column>
 			<lines>
 				<A87_M44/>
 			</lines>
 		</A18_M41>
 		<A30_M10_Wolverine>
-			<row>3</row>
+			<row>2</row>
 			<column>5</column>
 			<lines>
 				<A31_M36_Slagger/>
@@ -87,26 +87,33 @@
 			</lines>
 		</A34_M24_Chaffee>
 		<A87_M44>
-			<row>2</row>
+			<row>1</row>
 			<column>6</column>
 			<lines>
 				<A32_M12/>
 			</lines>
 		</A87_M44>
 		<A31_M36_Slagger>
-			<row>3</row>
+			<row>2</row>
 			<column>6</column>
 			<lines>
 				<A64_T25_AT/>
 			</lines>
 		</A31_M36_Slagger>
 		<A41_M18_Hellcat>
-			<row>4</row>
+			<row>3</row>
 			<column>6</column>
 			<lines>
 				<A72_T25_2/>
 			</lines>
 		</A41_M18_Hellcat>
+		<A142_Pawlack_Tank>
+			<row>4</row>
+			<column>6</column>
+			<lines>
+				<A147_M_II_Y/>
+			</lines>
+		</A142_Pawlack_Tank>
 		<A10_M6>
 			<row>6</row>
 			<column>6</column>
@@ -114,18 +121,12 @@
 				<A11_T29/>
 			</lines>
 		</A10_M6>
-		<A142_Pawlack_Tank>
-			<row>8</row>
-			<column>6</column>
-			<lines>
-				<A147_M_II_Y/>
-			</lines>
-		</A142_Pawlack_Tank>
 		<A06_M4A3E8_Sherman>
 			<row>10</row>
 			<column>6</column>
 			<lines>
 				<A07_T20/>
+				<A170_M4A3FL/>
 			</lines>
 		</A06_M4A3E8_Sherman>
 		<A94_T37>
@@ -136,26 +137,33 @@
 			</lines>
 		</A94_T37>
 		<A32_M12>
-			<row>2</row>
+			<row>1</row>
 			<column>7</column>
 			<lines>
 				<A37_M40M43/>
 			</lines>
 		</A32_M12>
 		<A64_T25_AT>
-			<row>3</row>
+			<row>2</row>
 			<column>7</column>
 			<lines>
 				<A39_T28/>
 			</lines>
 		</A64_T25_AT>
 		<A72_T25_2>
-			<row>4</row>
+			<row>3</row>
 			<column>7</column>
 			<lines>
 				<A68_T28_Prototype/>
 			</lines>
 		</A72_T25_2>
+		<A147_M_II_Y>
+			<row>4</row>
+			<column>7</column>
+			<lines>
+				<A139_M_III_Y/>
+			</lines>
+		</A147_M_II_Y>
 		<A11_T29>
 			<row>6</row>
 			<column>7</column>
@@ -163,13 +171,13 @@
 				<A12_T32/>
 			</lines>
 		</A11_T29>
-		<A147_M_II_Y>
+		<A170_M4A3FL>
 			<row>8</row>
 			<column>7</column>
 			<lines>
-				<A139_M_III_Y/>
+				<A169_TF_3/>
 			</lines>
-		</A147_M_II_Y>
+		</A170_M4A3FL>
 		<A07_T20>
 			<row>10</row>
 			<column>7</column>
@@ -186,26 +194,33 @@
 			</lines>
 		</A112_T71E2R>
 		<A37_M40M43>
-			<row>2</row>
+			<row>1</row>
 			<column>8</column>
 			<lines>
 				<A88_M53_55/>
 			</lines>
 		</A37_M40M43>
 		<A39_T28>
-			<row>3</row>
+			<row>2</row>
 			<column>8</column>
 			<lines>
 				<A40_T95/>
 			</lines>
 		</A39_T28>
 		<A68_T28_Prototype>
-			<row>4</row>
+			<row>3</row>
 			<column>8</column>
 			<lines>
 				<A14_T30/>
 			</lines>
 		</A68_T28_Prototype>
+		<A139_M_III_Y>
+			<row>4</row>
+			<column>8</column>
+			<lines>
+				<A144_M_VI_Y/>
+			</lines>
+		</A139_M_III_Y>
 		<A12_T32>
 			<row>6</row>
 			<column>8</column>
@@ -213,13 +228,13 @@
 				<A66_M103/>
 			</lines>
 		</A12_T32>
-		<A139_M_III_Y>
+		<A169_TF_3>
 			<row>8</row>
 			<column>8</column>
 			<lines>
-				<A144_M_VI_Y/>
+				<A171_TF_4/>
 			</lines>
-		</A139_M_III_Y>
+		</A169_TF_3>
 		<A90_T69>
 			<row>9</row>
 			<column>8</column>
@@ -242,26 +257,33 @@
 			</lines>
 		</A97_M41_Bulldog>
 		<A88_M53_55>
-			<row>2</row>
+			<row>1</row>
 			<column>9</column>
 			<lines>
 				<A38_T92/>
 			</lines>
 		</A88_M53_55>
 		<A40_T95>
-			<row>3</row>
+			<row>2</row>
 			<column>9</column>
 			<lines>
 				<A85_T110E3/>
 			</lines>
 		</A40_T95>
 		<A14_T30>
-			<row>4</row>
+			<row>3</row>
 			<column>9</column>
 			<lines>
 				<A83_T110E4/>
 			</lines>
 		</A14_T30>
+		<A144_M_VI_Y>
+			<row>4</row>
+			<column>9</column>
+			<lines>
+				<A143_M_V_Y/>
+			</lines>
+		</A144_M_VI_Y>
 		<A66_M103>
 			<row>6</row>
 			<column>9</column>
@@ -269,13 +291,13 @@
 				<A69_T110E5/>
 			</lines>
 		</A66_M103>
-		<A144_M_VI_Y>
+		<A171_TF_4>
 			<row>8</row>
 			<column>9</column>
 			<lines>
-				<A143_M_V_Y/>
+				<A172_ASTRON_FL/>
 			</lines>
-		</A144_M_VI_Y>
+		</A171_TF_4>
 		<A89_T54E1>
 			<row>9</row>
 			<column>9</column>
@@ -298,25 +320,29 @@
 			</lines>
 		</A100_T49>
 		<A38_T92>
-			<row>2</row>
+			<row>1</row>
 			<column>10</column>
 		</A38_T92>
 		<A85_T110E3>
-			<row>3</row>
+			<row>2</row>
 			<column>10</column>
 		</A85_T110E3>
 		<A83_T110E4>
-			<row>4</row>
+			<row>3</row>
 			<column>10</column>
 		</A83_T110E4>
+		<A143_M_V_Y>
+			<row>4</row>
+			<column>10</column>
+		</A143_M_V_Y>
 		<A69_T110E5>
 			<row>6</row>
 			<column>10</column>
 		</A69_T110E5>
-		<A143_M_V_Y>
+		<A172_ASTRON_FL>
 			<row>8</row>
 			<column>10</column>
-		</A143_M_V_Y>
+		</A172_ASTRON_FL>
 		<A67_T57_58>
 			<row>9</row>
 			<column>10</column>

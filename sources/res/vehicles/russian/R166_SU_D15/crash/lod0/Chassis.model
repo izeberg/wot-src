@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.474283 -0.000138 -3.347761</min>
+		<max>1.477683 1.073102 2.984560</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R166_SU_D15/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R166_SU_D15/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

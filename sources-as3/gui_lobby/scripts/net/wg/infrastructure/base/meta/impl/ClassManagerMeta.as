@@ -52,6 +52,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.BARRACKS_CONSTANTS;
    import net.wg.data.constants.generated.BATTLEROYALE_ALIASES;
    import net.wg.data.constants.generated.BATTLEROYALE_CONSTS;
+   import net.wg.data.constants.generated.BATTLE_OF_BLOGGERS_ALIASES;
    import net.wg.data.constants.generated.BATTLE_RESULTS_PREMIUM_STATES;
    import net.wg.data.constants.generated.BATTLE_RESULT_TYPES;
    import net.wg.data.constants.generated.BOOSTER_CONSTANTS;
@@ -422,6 +423,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.inblocks.blocks.AdvancedKeyBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.BadgeInfoBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.BlueprintBlock;
+   import net.wg.gui.components.tooltips.inblocks.blocks.BobTeamProgressBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.CompoundPriceBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.CrewSkillsBlock;
    import net.wg.gui.components.tooltips.inblocks.blocks.DashLineItemPriceBlock;
@@ -1190,6 +1192,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.data.EntryPointVO;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ArmoryYardWidgetEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BREntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BobEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CollectionEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CommonEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.Comp7EntryPoint;
@@ -1214,6 +1217,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.ArmoryYardEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
+   import net.wg.gui.lobby.hangar.quests.BobHangarWidget;
    import net.wg.gui.lobby.hangar.quests.CollectiveGoalEntryPoint;
    import net.wg.gui.lobby.hangar.quests.Comp7Widget;
    import net.wg.gui.lobby.hangar.quests.EarlyAccessEntryPoint;
@@ -1228,7 +1232,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.HeaderSecondaryWidgetInject;
    import net.wg.gui.lobby.hangar.quests.IHeaderEntryPoint;
    import net.wg.gui.lobby.hangar.quests.IHeaderSecondaryWidget;
-   import net.wg.gui.lobby.hangar.quests.NYQuestEntryPoint;
    import net.wg.gui.lobby.hangar.quests.QuestFlagEntryPointBase;
    import net.wg.gui.lobby.hangar.quests.QuestFlagIconContainer;
    import net.wg.gui.lobby.hangar.quests.QuestInformerButton;
@@ -1236,6 +1239,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
+   import net.wg.gui.lobby.hangar.quests.UniversalFlagEntryPoint;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
    import net.wg.gui.lobby.hangar.tcarousel.CarouselProgressionPoints;
@@ -1263,7 +1267,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRendererWithHighlight;
    import net.wg.gui.lobby.header.BadgeSlot;
    import net.wg.gui.lobby.header.LobbyHeader;
-   import net.wg.gui.lobby.header.NYWidgetUI;
    import net.wg.gui.lobby.header.OnlineCounter;
    import net.wg.gui.lobby.header.TankPanel;
    import net.wg.gui.lobby.header.events.BattleTypeSelectorEvent;
@@ -1378,7 +1381,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.missions.MissionDetailsContainerView;
    import net.wg.gui.lobby.missions.MissionsBattleMattersView;
    import net.wg.gui.lobby.missions.MissionsBattlePassView;
-   import net.wg.gui.lobby.missions.MissionsCategoriesView;
    import net.wg.gui.lobby.missions.MissionsFilterPopoverView;
    import net.wg.gui.lobby.missions.MissionsGFContainerView;
    import net.wg.gui.lobby.missions.MissionsGroupedView;
@@ -1411,7 +1413,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.missions.components.MissionsFilter;
    import net.wg.gui.lobby.missions.components.MissionsList;
    import net.wg.gui.lobby.missions.components.MissionsTokenListRenderer;
-   import net.wg.gui.lobby.missions.components.NYMissionsBanner;
    import net.wg.gui.lobby.missions.components.detailedView.AbstractPopoverWithScrollableGroupPanel;
    import net.wg.gui.lobby.missions.components.detailedView.ConditionsComponentPanel;
    import net.wg.gui.lobby.missions.components.detailedView.MissionAccountRequirementRenderer;
@@ -1511,16 +1512,14 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.modulesPanel.interfaces.IDeviceSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModuleSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModulesPanel;
-   import net.wg.gui.lobby.newYear.NYSelectVehiclePopover;
-   import net.wg.gui.lobby.newYear.NYSelectVehicleRenderer;
-   import net.wg.gui.lobby.newYear.NYVehicleSelectorFilter;
-   import net.wg.gui.lobby.newYear.vo.NYSelectVehiclePopoverVO;
    import net.wg.gui.lobby.personalMissions.CampaignOperationsContainer;
    import net.wg.gui.lobby.personalMissions.PersonalMissionsPage;
    import net.wg.gui.lobby.personalMissions.components.AllOperationsContent;
    import net.wg.gui.lobby.personalMissions.components.OperationButton;
    import net.wg.gui.lobby.personalMissions.components.OperationButtonPostponed;
    import net.wg.gui.lobby.personalMissions.components.OperationRenderer;
+   import net.wg.gui.lobby.personalMissions.components.PM3Operations;
+   import net.wg.gui.lobby.personalMissions.components.PMOldOperations;
    import net.wg.gui.lobby.personalMissions.components.PMPaginatorArrowsController;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardBtnAnim;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardBtnReflect;
@@ -1865,7 +1864,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.questsWindow.components.QuestBigIconAwardItem;
    import net.wg.gui.lobby.questsWindow.components.QuestIconAwardsBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestIconElement;
-   import net.wg.gui.lobby.questsWindow.components.QuestSingleLineTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestStatusComponent;
    import net.wg.gui.lobby.questsWindow.components.QuestTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestsCounter;
@@ -2902,6 +2900,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.SMAchievementsFirstEntryWithoutWTR;
    import net.wg.gui.notification.custom.SMBattleMattersReminder;
    import net.wg.gui.notification.custom.SMCollectionsCustom;
+   import net.wg.gui.notification.custom.SMParagonsMessageContent;
    import net.wg.gui.notification.custom.SMSeniorityAwardsQuest;
    import net.wg.gui.notification.custom.SMSeniorityAwardsTokens;
    import net.wg.gui.notification.custom.SMWotPlusAttendanceBig;
@@ -3096,6 +3095,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLEROYALE_ALIASES:Class = BATTLEROYALE_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLEROYALE_CONSTS:Class = BATTLEROYALE_CONSTS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLE_OF_BLOGGERS_ALIASES:Class = BATTLE_OF_BLOGGERS_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLE_RESULTS_PREMIUM_STATES:Class = BATTLE_RESULTS_PREMIUM_STATES;
       
@@ -3830,6 +3831,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_BADGEINFOBLOCK:Class = BadgeInfoBlock;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_BLUEPRINTBLOCK:Class = BlueprintBlock;
+      
+      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_BOBTEAMPROGRESSBLOCK:Class = BobTeamProgressBlock;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_BLOCKS_COMPOUNDPRICEBLOCK:Class = CompoundPriceBlock;
       
@@ -5427,6 +5430,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_ARMORYYARDWIDGETENTRYPOINT:Class = ArmoryYardWidgetEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BOBENTRYPOINT:Class = BobEntryPoint;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BRENTRYPOINT:Class = BREntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_COLLECTIONENTRYPOINT:Class = CollectionEntryPoint;
@@ -5477,6 +5482,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_BATTLEPASSENTRYPOINT:Class = BattlePassEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_BOBHANGARWIDGET:Class = BobHangarWidget;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_COLLECTIVEGOALENTRYPOINT:Class = CollectiveGoalEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_COMP7WIDGET:Class = Comp7Widget;
@@ -5505,8 +5512,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_IHEADERSECONDARYWIDGET:Class = IHeaderSecondaryWidget;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_NYQUESTENTRYPOINT:Class = NYQuestEntryPoint;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTFLAGENTRYPOINTBASE:Class = QuestFlagEntryPointBase;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTFLAGICONCONTAINER:Class = QuestFlagIconContainer;
@@ -5520,6 +5525,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINT:Class = SecondaryEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINTCONTENT:Class = SecondaryEntryPointContent;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_UNIVERSALFLAGENTRYPOINT:Class = UniversalFlagEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WINBACKWIDGET:Class = WinbackWidget;
       
@@ -5574,8 +5581,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_BADGESLOT:Class = BadgeSlot;
       
       public static const NET_WG_GUI_LOBBY_HEADER_LOBBYHEADER:Class = LobbyHeader;
-      
-      public static const NET_WG_GUI_LOBBY_HEADER_NYWIDGETUI:Class = NYWidgetUI;
       
       public static const NET_WG_GUI_LOBBY_HEADER_ONLINECOUNTER:Class = OnlineCounter;
       
@@ -5805,8 +5810,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSBATTLEPASSVIEW:Class = MissionsBattlePassView;
       
-      public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSCATEGORIESVIEW:Class = MissionsCategoriesView;
-      
       public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSFILTERPOPOVERVIEW:Class = MissionsFilterPopoverView;
       
       public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSGFCONTAINERVIEW:Class = MissionsGFContainerView;
@@ -5870,8 +5873,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_MISSIONS_COMPONENTS_MISSIONVEHICLEPARAMRENDERER:Class = MissionVehicleParamRenderer;
       
       public static const NET_WG_GUI_LOBBY_MISSIONS_COMPONENTS_MISSIONVEHICLETYPERENDERER:Class = MissionVehicleTypeRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_MISSIONS_COMPONENTS_NYMISSIONSBANNER:Class = NYMissionsBanner;
       
       public static const NET_WG_GUI_LOBBY_MISSIONS_COMPONENTS_DETAILEDVIEW_ABSTRACTPOPOVERWITHSCROLLABLEGROUPPANEL:Class = AbstractPopoverWithScrollableGroupPanel;
       
@@ -6071,14 +6072,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESPANEL:Class = IModulesPanel;
       
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_NYSELECTVEHICLEPOPOVER:Class = NYSelectVehiclePopover;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_NYSELECTVEHICLERENDERER:Class = NYSelectVehicleRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_NYVEHICLESELECTORFILTER:Class = NYVehicleSelectorFilter;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_VO_NYSELECTVEHICLEPOPOVERVO:Class = NYSelectVehiclePopoverVO;
-      
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_CAMPAIGNOPERATIONSCONTAINER:Class = CampaignOperationsContainer;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_PERSONALMISSIONSPAGE:Class = PersonalMissionsPage;
@@ -6142,6 +6135,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONSREGIONAWARDS:Class = PersonalMissionsRegionAwards;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONVEHICLEAWARD:Class = PersonalMissionVehicleAward;
+      
+      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PM3OPERATIONS:Class = PM3Operations;
+      
+      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PMOLDOPERATIONS:Class = PMOldOperations;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PMPAGINATORARROWSCONTROLLER:Class = PMPaginatorArrowsController;
       
@@ -6782,8 +6779,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSCOUNTER:Class = QuestsCounter;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSDASHLINEITEM:Class = QuestsDashlineItem;
-      
-      public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSINGLELINETEXTAWARDBLOCK:Class = QuestSingleLineTextAwardBlock;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSTATUSCOMPONENT:Class = QuestStatusComponent;
       
@@ -8852,6 +8847,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMBATTLEMATTERSREMINDER:Class = SMBattleMattersReminder;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMCOLLECTIONSCUSTOM:Class = SMCollectionsCustom;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMPARAGONSMESSAGECONTENT:Class = SMParagonsMessageContent;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMSENIORITYAWARDSQUEST:Class = SMSeniorityAwardsQuest;
       

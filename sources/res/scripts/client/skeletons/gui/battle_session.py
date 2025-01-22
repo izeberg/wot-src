@@ -1,6 +1,6 @@
 import typing
 if typing.TYPE_CHECKING:
-    from gui.battle_control.arena_info.interfaces import IAppearanceCacheController, IPointsOfInterestController, IComp7PrebattleSetupController, IComp7VOIPController, IMapZonesController, IProgressionController, IRadarController, ISpawnController, IArenaVehiclesController, IVehicleCountController, IOverrideSettingsController, IBattleSpamController
+    from gui.battle_control.arena_info.interfaces import IAppearanceCacheController, IPointsOfInterestController, IComp7PrebattleSetupController, IComp7VOIPController, IMapZonesController, IProgressionController, IRadarController, ISpawnController, IArenaVehiclesController, IVehicleCountController, IOverrideSettingsController, IBattleSpamController, IBobVOIPController
     from gui.battle_control.controllers.consumables.equipment_ctrl import EquipmentsController
 
 class ISharedControllersLocator(object):
@@ -216,6 +216,14 @@ class IDynamicControllersLocator(object):
 
     @property
     def overrideSettingsController(self):
+        raise NotImplementedError
+
+    @property
+    def bob(self):
+        raise NotImplementedError
+
+    @property
+    def bobVOIPController(self):
         raise NotImplementedError
 
 
@@ -651,6 +659,9 @@ class IBattleContext(object):
         raise NotImplementedError
 
     def extractLastArenaWinStatus(self):
+        raise NotImplementedError
+
+    def areQuestsEnabledForArena(self):
         raise NotImplementedError
 
 

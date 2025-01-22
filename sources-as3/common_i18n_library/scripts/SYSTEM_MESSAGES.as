@@ -171,6 +171,8 @@ package
       
       public static const PREBATTLE_VEHICLEINVALID_WILLBEUNLOCKEDINBATTLE:String = "#system_messages:prebattle/vehicleInvalid/willBeUnlockedInBattle";
       
+      public static const PREBATTLE_VEHICLEINVALID_BOBONLY:String = "#system_messages:prebattle/vehicleInvalid/bobOnly";
+      
       public static const PREBATTLE_VEHICLEINVALID_NOTSETREADYSTATUS:String = "#system_messages:prebattle/vehicleInvalid/notSetReadyStatus";
       
       public static const PREBATTLE_VEHICLEINVALID_FALLOUTONLY:String = "#system_messages:prebattle/vehicleInvalid/falloutOnly";
@@ -1683,6 +1685,22 @@ package
       
       public static const PERSONALMISSIONS_REWARD_TANKWOMAN_SERVER_ERROR_DISABLED:String = "#system_messages:personalMissions/reward/tankwoman/server_error/DISABLED";
       
+      public static const PERSONALMISSIONS_SWITCH_OPERATION_HEADER:String = "#system_messages:personalMissions/switch/operation/header";
+      
+      public static const PERSONALMISSIONS_SWITCH_OPERATION_ENABLED:String = "#system_messages:personalMissions/switch/operation/enabled";
+      
+      public static const PERSONALMISSIONS_SWITCH_OPERATION_DISABLED:String = "#system_messages:personalMissions/switch/operation/disabled";
+      
+      public static const PERSONALMISSIONS_SWITCH_CAMPAIGN_HEADER:String = "#system_messages:personalMissions/switch/campaign/header";
+      
+      public static const PERSONALMISSIONS_SWITCH_CAMPAIGN_ENABLED:String = "#system_messages:personalMissions/switch/campaign/enabled";
+      
+      public static const PERSONALMISSIONS_SWITCH_CAMPAIGN_DISABLED:String = "#system_messages:personalMissions/switch/campaign/disabled";
+      
+      public static const PERSONALMISSIONS_SWITCH_QUEST_HEADER:String = "#system_messages:personalMissions/switch/quest/header";
+      
+      public static const PERSONALMISSIONS_SWITCH_QUEST_DISABLED:String = "#system_messages:personalMissions/switch/quest/disabled";
+      
       public static const PERSONALMISSIONS_TANKMENGAIN:String = "#system_messages:personalMissions/tankmenGain";
       
       public static const PERSONALMISSIONS_FREEAWARDLISTGAIN:String = "#system_messages:personalMissions/freeAwardListGain";
@@ -2706,6 +2724,46 @@ package
       public static const DEBUTBOXES_DISABLED_BODY:String = "#system_messages:debutBoxes/disabled/body";
       
       public static const COMP7_OPEN_SHOP:String = "#system_messages:comp7/open_shop";
+      
+      public static const BOB_CLAIMEREWARD_SERVER_ERROR_COOLDOWN:String = "#system_messages:bob/claimeReward/server_error/COOLDOWN";
+      
+      public static const BOB_CLAIMEREWARD_SERVER_ERROR:String = "#system_messages:bob/claimeReward/server_error";
+      
+      public static const PARAGONS_PROJECTAVAILABLE_TITLE:String = "#system_messages:paragons/projectAvailable/title";
+      
+      public static const PARAGONS_PROJECTAVAILABLE_TEXT:String = "#system_messages:paragons/projectAvailable/text";
+      
+      public static const PARAGONS_BRANCHRESETAVAILABLE_TITLE:String = "#system_messages:paragons/branchResetAvailable/title";
+      
+      public static const PARAGONS_BRANCHRESETAVAILABLE_TEXT:String = "#system_messages:paragons/branchResetAvailable/text";
+      
+      public static const PARAGONS_PROJECTCONTINUING_TITLE:String = "#system_messages:paragons/projectContinuing/title";
+      
+      public static const PARAGONS_PROJECTCONTINUING_TEXT:String = "#system_messages:paragons/projectContinuing/text";
+      
+      public static const PARAGONS_NEWSTAGEAVAILABLE_TITLE:String = "#system_messages:paragons/newStageAvailable/title";
+      
+      public static const PARAGONS_NEWSTAGEAVAILABLE_TEXT:String = "#system_messages:paragons/newStageAvailable/text";
+      
+      public static const PARAGONS_NEWVEHICLEAVAILABLE_TITLE:String = "#system_messages:paragons/newVehicleAvailable/title";
+      
+      public static const PARAGONS_NEWVEHICLEAVAILABLE_TEXT:String = "#system_messages:paragons/newVehicleAvailable/text";
+      
+      public static const PARAGONS_TO_PROJECT_BUTTON:String = "#system_messages:paragons/to/project/button";
+      
+      public static const PARAGONS_TO_RESEARCHMENTS_BUTTON:String = "#system_messages:paragons/to/researchments/button";
+      
+      public static const PARAGONS_TO_STAGES_BUTTON:String = "#system_messages:paragons/to/stages/button";
+      
+      public static const PARAGONS_TO_AWARDS_BUTTON:String = "#system_messages:paragons/to/awards/button";
+      
+      public static const PARAGONS_FIRSTMAINREWARDBADGEACHIEVED_TITLE:String = "#system_messages:paragons/firstMainRewardBadgeAchieved/title";
+      
+      public static const PARAGONS_FIRSTMAINREWARDBADGEACHIEVED_TEXT:String = "#system_messages:paragons/firstMainRewardBadgeAchieved/text";
+      
+      public static const PARAGONS_CHAPTERCOMPLETED_TITLE:String = "#system_messages:paragons/chapterCompleted/title";
+      
+      public static const PARAGONS_CHAPTERCOMPLETED_TEXT:String = "#system_messages:paragons/chapterCompleted/text";
        
       
       public function SYSTEM_MESSAGES()

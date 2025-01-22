@@ -637,11 +637,11 @@
 					<name>type</name>
 				</item>
 				<item>
-					class
+					action
 					<name>section</name>
 				</item>
 				<item>
-					1408.0
+					1.26
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -661,11 +661,11 @@
 					<name>type</name>
 				</item>
 				<item>
-					class
+					action
 					<name>section</name>
 				</item>
 				<item>
-					1408.2
+					1.25
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -997,11 +997,11 @@
 					<name>type</name>
 				</item>
 				<item>
-					class
+					action
 					<name>section</name>
 				</item>
 				<item>
-					1407.9
+					1.24
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1813,7 +1813,7 @@
 					<name>type</name>
 				</item>
 				<item>
-					memorial
+					action
 					<name>section</name>
 				</item>
 				<item>
@@ -1984,7 +1984,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1.21
+					1.22
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -2008,7 +2008,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1.22
+					1.23
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -2032,7 +2032,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1.20
+					1.21
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -3850,11 +3850,11 @@
 					<name>type</name>
 				</item>
 				<item>
-					special
+					action
 					<name>section</name>
 				</item>
 				<item>
-					102.95
+					1.18
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -4021,7 +4021,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1.18
+					1.19
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -4069,7 +4069,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1.19
+					1.20
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -11216,6 +11216,78 @@
 				</item>
 				<item>
 					1443.91
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:personalMissionsThird</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1469.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:ParagonsFirstElevenVehicle</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					memorial
+					<name>section</name>
+				</item>
+				<item>
+					1469.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:ParagonsFirstSeason</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.019
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>

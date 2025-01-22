@@ -4,6 +4,8 @@ package net.wg.data.constants.generated
    {
       
       public static const ABILITY:String = "ability";
+      
+      public static const PYROMETER:String = "pyrometer";
        
       
       public function BATTLE_MARKER_ABILITIES_CONSTS()

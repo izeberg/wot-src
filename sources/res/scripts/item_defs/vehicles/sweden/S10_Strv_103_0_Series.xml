@@ -81,7 +81,7 @@
 			<battle>0</battle>
 		</fakeTurrets>
 		<armor>
-			<armor_1>40</armor_1>
+			<armor_1>45</armor_1>
 			<armor_2>60</armor_2>
 			<armor_3>30</armor_3>
 			<armor_4>30</armor_4>
@@ -2325,7 +2325,7 @@
 			</terrainResistance>
 			<brakeForce>37000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.40
@@ -3516,7 +3516,7 @@
 			</terrainResistance>
 			<brakeForce>37000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.40
@@ -4744,7 +4744,7 @@
 					<turretYawLimits>-3 3</turretYawLimits>
 					<staticTurretYaw>0</staticTurretYaw>
 					<reloadTime>
-						8.6
+						8.2
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -4860,7 +4860,7 @@
 					<turretYawLimits>-3 3</turretYawLimits>
 					<staticTurretYaw>0</staticTurretYaw>
 					<reloadTime>
-						8.6
+						8.2
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>

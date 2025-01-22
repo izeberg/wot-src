@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/intunion/Un06_M47_Romach/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.756494 -1.078098 -3.451962</min>
+		<max>1.800201 0.809105 3.088976</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/crash/lod0/Hull</nodefullVisual>
+</root>

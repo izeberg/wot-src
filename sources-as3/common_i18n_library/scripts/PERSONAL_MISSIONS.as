@@ -21,6 +21,12 @@ package
       
       public static const DETAILEDVIEW_TOOLTIPS_HOLDAWARDSHEETBTN_DISABLED:String = "#personal_missions:detailedView/tooltips/holdAwardSheetBtn/disabled";
       
+      public static const CAMPAIGNTITLE_1:String = "#personal_missions:campaignTitle/1";
+      
+      public static const CAMPAIGNTITLE_2:String = "#personal_missions:campaignTitle/2";
+      
+      public static const CAMPAIGNTITLE_3:String = "#personal_missions:campaignTitle/3";
+      
       public static const HEADER_BACKBTN_LABEL:String = "#personal_missions:header/backBtn/label";
       
       public static const HEADER_BACKBTN_DESCRLABEL_CAMPAIGN:String = "#personal_missions:header/backBtn/descrLabel/campaign";
@@ -42,6 +48,14 @@ package
       public static const OPERATIONS_TITLE6:String = "#personal_missions:operations/title6";
       
       public static const OPERATIONS_TITLE7:String = "#personal_missions:operations/title7";
+      
+      public static const OPERATIONS_TITLE8:String = "#personal_missions:operations/title8";
+      
+      public static const OPERATIONS_TITLE9:String = "#personal_missions:operations/title9";
+      
+      public static const OPERATIONS_TITLE10:String = "#personal_missions:operations/title10";
+      
+      public static const OPERATIONS_TITLE11:String = "#personal_missions:operations/title11";
       
       public static const OPERATIONS_CURRENT_DESC:String = "#personal_missions:operations/current/desc";
       

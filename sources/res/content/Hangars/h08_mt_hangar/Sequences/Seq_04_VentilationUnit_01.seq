@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Screw_01</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0040_VentilationUnit_Screw.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.480000 0.605000 -0.802000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.000000 0.000000</value>
+				<inTangent>90.000000 0.000000 0.000000</inTangent>
+				<outTangent>90.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>360.000000 -0.000000 0.000000</value>
+				<inTangent>90.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>90.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Screw_02</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0040_VentilationUnit_Screw.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.480000 0.605000 0.802000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.000000 0.000000</value>
+				<inTangent>450.000000 0.000000 0.000000</inTangent>
+				<outTangent>450.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1800.000000 -0.000000 0.000000</value>
+				<inTangent>450.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>450.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

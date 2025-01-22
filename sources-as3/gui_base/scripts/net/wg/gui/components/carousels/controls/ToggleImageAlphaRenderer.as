@@ -1,5 +1,6 @@
 package net.wg.gui.components.carousels.controls
 {
+   import net.wg.gui.components.controls.BlackButton;
    import net.wg.gui.components.controls.ToggleRenderer;
    
    public class ToggleImageAlphaRenderer extends ToggleRenderer
@@ -16,7 +17,7 @@ package net.wg.gui.components.carousels.controls
       override protected function configUI() : void
       {
          super.configUI();
-         btn.disabledImageAlpha = DESABLED_ALPHA;
+         BlackButton(btn).disabledImageAlpha = DESABLED_ALPHA;
       }
    }
 }

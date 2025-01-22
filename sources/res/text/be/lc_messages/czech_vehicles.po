@@ -131,8 +131,14 @@ msgstr "Т-78"
 msgid "Chassis_Cz32_Vz_58_Koncept"
 msgstr "Vz. 58 Koncept"
 
+msgid "Chassis_Cz35_Klevets"
+msgstr "TNH T Klevets"
+
 msgid "Chassis_Cz36_Lisak_v2"
 msgstr "Lišák v.2"
+
+msgid "Chassis_Cz37_Vz_59_Dravec"
+msgstr "Vz. 59"
 
 msgid "Cz00_COSM_Gravizapa"
 msgstr "Марсаход"
@@ -586,6 +592,24 @@ msgstr "Vz. 58 K"
 msgid "Cz32_Vz_58_Koncept_short_special"
 msgstr "Высокія пашкоджанні за хвіліну, добрае браніраванне вежы"
 
+msgid "Cz35_Klevets"
+msgstr "TNH T Klevets"
+
+msgid "Cz35_Klevets_descr"
+msgstr ""
+"У пачатку 50-х гадоў Чэхаславакія пачала праектаванне ўласных цяжкіх танкаў. Адзін з праектаў, якія знаходзіліся ў высокай ступені прапрацоўкі — танк Vz.55. Ён быў выбраны ў якасці базавага шасі для новай цяжкай САУ. На адзіным шасі меркавалася мантаваць дзве артсістэмы аднолькавага калібру. Для ўзбраення супрацьтанкавай САУ была спраектавана магутная 152-мм гармата на аснове зенітнай гарматы. Другі варыянт — штурмавая САУ з гаўбічным узбраеннем. Асаблівасцю канструкцыі стала размяшчэнне ўзбраення ў вежы з абмежаваным сектарам вярчэння. Для зніжэння нагрузкі на падвеску ў кармавой частцы былі прадугледжаны гідраўлічныя ўпоры-аўтрыгеры. У якасці сродку самаабароны разглядалася спараная зенітная ўстаноўка 14,5-мм кулямётаў ZK-514. Праекту далі назву «Klevets» — баявы молат з дзюбападобным байком. Да рэалізацыі праекта ў метале справа не дайшла з эканамічных і тэхналагічных прычын.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "Cz35_Klevets_long_special"
+msgstr "?empty?"
+
+msgid "Cz35_Klevets_short"
+msgstr "Klevets"
+
+msgid "Cz35_Klevets_short_special"
+msgstr "?empty?"
+
 msgid "Cz36_Lisak_v2"
 msgstr "Lišák v.2"
 
@@ -608,6 +632,18 @@ msgstr "Lišák v.2"
 msgid "Cz36_Lisak_v2_short_special"
 msgstr "Добрае франтальнае браніраванне, двухгарматная ўстаноўка"
 
+msgid "Cz37_Vz_59_Dravec"
+msgstr "Vz. 59 «Dravec»"
+
+msgid "Cz37_Vz_59_Dravec_descr"
+msgstr ""
+"У канцы 1950-х гадоў у Чэхаславакіі была ініцыявана распрацоўка сярэдняга танка, які спалучаў у сабе дастатковую агнявую моц, нізкі профіль, добрыя хадавыя якасці, высокую хуткасць і хуткастрэльнасць. У выніку праект Dravec вылучаўся нязвыклай кампаноўкай. Баявое аддзяленне меркавалася размясціць у кармавой частцы танка, гармату — у калыхальнай частцы вежы з падачай снарадаў з дапамогай аўтамата набівання. Рухавік і трансмісія ў насавой частцы машыны давалі дадатковую абарону экіпажу, а тарсіённая падвеска забяспечвала досыць мяккую хаду на вялікай хуткасці. Разам з тым масавая вытворчасць шматлікіх складаных вузлоў канструкцыі танка яшчэ не была асвоена, і яго сабекошт быў бы вельмі высокім. Вытворчасць машын класічнай кампаноўкі палічылі больш перспектыўнай, і ўсе працы над праектам былі згорнуты.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "Cz37_Vz_59_Dravec_short"
+msgstr "«Dravec»"
+
 msgid "DTN_10"
 msgstr "DTN-10"
 
@@ -628,6 +664,9 @@ msgstr "Lorenz"
 
 msgid "Praga_AXK"
 msgstr "Praga AXK"
+
+msgid "Praga_AXK_X16"
+msgstr "Praga AXK Х-16"
 
 msgid "Praga_NR"
 msgstr "Praga NR"
@@ -671,10 +710,16 @@ msgstr "Radiostanice RM-31T"
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "Radiostanice RM-31T GW"
 
+msgid "Radiostanice_RM_31T_K"
+msgstr "Radiostanice RM-31T"
+
 msgid "Radiostanice_R_112"
 msgstr "Radiostanice R-112"
 
 msgid "Radiostanice_R_113"
+msgstr "Radiostanice R-113"
+
+msgid "Radiostanice_R_113_D"
 msgstr "Radiostanice R-113"
 
 msgid "Radiostanice_vz_29"
@@ -827,8 +872,14 @@ msgstr "Škoda S-III"
 msgid "Turret_1_Cz32_Vz_58_Koncept"
 msgstr "Vz. 58 Koncept"
 
+msgid "Turret_1_Cz35_Klevets"
+msgstr "TNH T Klevets"
+
 msgid "Turret_1_Cz36_Lisak_v2"
 msgstr "Lišák v.2"
+
+msgid "Turret_1_Cz37_Vz_59_Dravec"
+msgstr "Vz. 59"
 
 msgid "Turret_2_Cz02_TVP_T50"
 msgstr "Škoda T 50 (1950)"
@@ -872,6 +923,12 @@ msgstr "V-2-34"
 msgid "V_2_34M"
 msgstr "V-2-34M"
 
+msgid "V_55"
+msgstr "V-55"
+
+msgid "_100mm_2A48"
+msgstr "100 mm 2A48"
+
 msgid "_100mm_A20"
 msgstr "100 mm A20"
 
@@ -890,6 +947,9 @@ msgstr "JPSv"
 msgid "_100mm_JPrSv"
 msgstr "JPrSv"
 
+msgid "_100mm_Narazovy_vz_412_Dravec"
+msgstr "Nárazový vz. 412"
+
 msgid "_100mm_Narazovy_vz_49"
 msgstr "Nárazový vz. 49"
 
@@ -902,6 +962,9 @@ msgstr "Průpalný S 53"
 msgid "_100mm_Prupalny_vz_50"
 msgstr "Průpalný vz. 50"
 
+msgid "_100mm_Prupalny_vz_PP5_Dravec"
+msgstr "Průpalný vz. PP5"
+
 msgid "_100mm_Prurazny_412"
 msgstr "Průrazný 412"
 
@@ -913,6 +976,9 @@ msgstr "Průrazný vz. 49 (s jádrem)"
 
 msgid "_100mm_Prurazny_vz_50"
 msgstr "Průrazný vz. 50"
+
+msgid "_100mm_Prurazny_vz_PJ8_Dravec"
+msgstr "Průrazný vz. PJ8"
 
 msgid "_100mm_R11"
 msgstr "100 mm R11"
@@ -1057,6 +1123,18 @@ msgstr "Марсаход"
 
 msgid "_150mm_Railgun"
 msgstr "Марсаход"
+
+msgid "_152mm_AT"
+msgstr "152 mm AT"
+
+msgid "_152mm_Narazovy_vz_550"
+msgstr "Nárazový vz. 550"
+
+msgid "_152mm_Prupalny_vz_540_HEAT"
+msgstr "Průpalný vz. 540 "
+
+msgid "_152mm_Prurazny_vz_540"
+msgstr "Průrazný vz. 540"
 
 msgid "_24mm_Narazovy_vz_38"
 msgstr "Nárazový vz.38"

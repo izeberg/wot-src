@@ -426,7 +426,7 @@ package net.wg.gui.lobby.techtree.nodes
       
       protected function updateStateProps() : void
       {
-         this._stateProps = NodeStateCollection.instance.getStateProps(this._entityType,!!this._dataInited ? uint(this._valueObject.state) : uint(0),this.getExtraState());
+         this._stateProps = NodeStateCollection.instance.getStateProps(this._entityType,!!this._dataInited ? uint(this._valueObject.state) : uint(0),!!this._dataInited ? uint(this._valueObject.extendedState) : uint(0),this.getExtraState());
          this._nodeState = this._stateProps.state;
          statesSelected = Vector.<String>([STATE_PREFIX_SELECTED,this._nodeState + STATE_UNION]);
          statesDefault = Vector.<String>([this._nodeState + STATE_UNION]);
@@ -566,6 +566,16 @@ package net.wg.gui.lobby.techtree.nodes
       protected function get isFirstTimeEarlyAccessShow() : Boolean
       {
          return !!this._dataInited ? Boolean(this._valueObject.isFirstTimeEarlyAccessShow) : Boolean(false);
+      }
+      
+      public function isResetParagons() : Boolean
+      {
+         return !!this._dataInited ? Boolean(this._valueObject.isResetParagons) : Boolean(false);
+      }
+      
+      public function isLockedByParagons() : Boolean
+      {
+         return !!this._dataInited ? Boolean(this._valueObject.isLockedByParagons) : Boolean(false);
       }
       
       private function onNodeClickHandler(param1:MouseEvent) : void

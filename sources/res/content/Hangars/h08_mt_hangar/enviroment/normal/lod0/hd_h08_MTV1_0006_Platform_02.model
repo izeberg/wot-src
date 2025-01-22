@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.964363 -0.059834 -10.368544</min>
+		<max>1.964357 1.836414 10.257364</max>
+	</visibilityBox>
+	<parent>content/Hangars/h08_mt_hangar/enviroment/normal/lod1/hd_h08_MTV1_0006_Platform_02</parent>
+	<extent>600.000000</extent>
+	<parent>content/Hangars/h08_mt_hangar/enviroment/normal/lod1/hd_h08_MTV1_0006_Platform_02</parent>
+	<extent>500.000000</extent>
+	<nodelessVisual>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0006_Platform_02</nodelessVisual>
+</root>

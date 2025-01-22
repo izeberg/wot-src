@@ -169,6 +169,9 @@
 			<runDelayDev>45</runDelayDev>
 			<maxPlayersInTeam>7</maxPlayersInTeam>
 		</COMP7>
+		<BOB>
+			<maxPlayersInTeam>7</maxPlayersInTeam>
+		</BOB>
 		<BATTLE_ROYALE_SOLO>
 			<runDelayDev>15</runDelayDev>
 		</BATTLE_ROYALE_SOLO>
@@ -365,6 +368,12 @@
 			<battleEndWarningDuration>5</battleEndWarningDuration>
 			<battleEndingSoonTime>60</battleEndingSoonTime>
 		</comp7>
+		<bob>
+			<roundLength>600</roundLength>
+			<battleEndWarningAppearTime>120</battleEndWarningAppearTime>
+			<battleEndWarningDuration>5</battleEndWarningDuration>
+			<battleEndingSoonTime>60</battleEndingSoonTime>
+		</bob>
 	</gameplayTypes>
 	<extraSoundRemapping>
 		<story_mode>
@@ -412,5 +421,6 @@
 				</loadBanks>
 			</soundRemapping>
 		</comp7>
+		<bob/>
 	</extraSoundRemapping>
 </root>

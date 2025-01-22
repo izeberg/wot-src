@@ -14,6 +14,9 @@ class IVideoSoundManager(object):
     def unpause(self):
         raise NotImplementedError
 
+    def setVolume(self):
+        pass
+
 
 class DummySoundManager(object):
 

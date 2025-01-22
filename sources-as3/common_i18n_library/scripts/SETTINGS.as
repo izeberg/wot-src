@@ -497,6 +497,14 @@ package
       
       public static const ISCOLORBLIND_DESCRIPTION:String = "#settings:isColorBlind/description";
       
+      public static const UIEFFECTS:String = "#settings:uiEffects";
+      
+      public static const UIEFFECTS_HEADER:String = "#settings:uiEffects/header";
+      
+      public static const UIEFFECTS_BODY:String = "#settings:uiEffects/body";
+      
+      public static const UIEFFECTS_ATTENTION:String = "#settings:uiEffects/attention";
+      
       public static const VERTSYNC:String = "#settings:vertSync";
       
       public static const VERTSYNC_DESCRIPTION:String = "#settings:vertSync/description";

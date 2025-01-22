@@ -27,6 +27,8 @@ package
       
       public static const MISSIONS_TAB_WINBACK:String = "#quests:missions/tab/winback";
       
+      public static const MISSIONS_TAB_BOB:String = "#quests:missions/tab/bob";
+      
       public static const MISSIONS_FILTERCOUNTER_CLOSEBUTTON:String = "#quests:missions/filterCounter/closeButton";
       
       public static const MISSIONS_FILTER_FILTERBUTTON:String = "#quests:missions/filter/filterButton";
@@ -137,6 +139,12 @@ package
       
       public static const BONUSNAME_BLUEPRINTS_UNIVERSAL:String = "#quests:bonusName/blueprints/universal";
       
+      public static const BONUSNAME_PARAGONSUNLOCKS:String = "#quests:bonusName/paragonsUnlocks";
+      
+      public static const BONUSNAME_TMANTOKEN:String = "#quests:bonusName/tmanToken";
+      
+      public static const BONUSNAME_STYLEPROGRESS:String = "#quests:bonusName/styleProgress";
+      
       public static const BONUSES_CREDITS_DESCRIPTION:String = "#quests:bonuses/credits/description";
       
       public static const BONUSES_GOLD_DESCRIPTION:String = "#quests:bonuses/gold/description";
@@ -166,14 +174,6 @@ package
       public static const BONUSES_ITEM_TANKMEN_WITH_SKILLS:String = "#quests:bonuses/item/tankmen/with_skills";
       
       public static const BONUSES_NOTAVAILABLE:String = "#quests:bonuses/notAvailable";
-      
-      public static const BONUSNAME_NY22FILLERS:String = "#quests:bonusName/ny22Fillers";
-      
-      public static const BONUSNAME_NEWYEARSLOT:String = "#quests:bonusName/newYearSlot";
-      
-      public static const BONUSES_VARIADICDISCOUNT_DISCOUNTAMOUNT:String = "#quests:bonuses/variadicDiscount/discountAmount";
-      
-      public static const BONUSES_VARIADICDISCOUNT_BUTTONLABEL:String = "#quests:bonuses/variadicDiscount/buttonLabel";
       
       public static const QUESTS_TITLE:String = "#quests:quests/title";
       
@@ -1901,6 +1901,8 @@ package
       
       public static const DETAILS_DOSSIER_7_BATTLESCOUNT:String = "#quests:details/dossier/7/battlesCount";
       
+      public static const DETAILS_DOSSIER_32_BATTLESCOUNT:String = "#quests:details/dossier/32/battlesCount";
+      
       public static const DETAILS_DOSSIER_9_BATTLESCOUNT:String = "#quests:details/dossier/9/battlesCount";
       
       public static const DETAILS_DOSSIER_13_BATTLESCOUNT:String = "#quests:details/dossier/13/battlesCount";
@@ -2076,6 +2078,12 @@ package
       public static const MISSIONS_TAB_LABEL_KURSK:String = "#quests:missions/tab/label/kursk";
       
       public static const MISSIONS_TAB_LABEL_MARATHON:String = "#quests:missions/tab/label/marathon";
+      
+      public static const MISSIONS_TAB_LABEL_BOB:String = "#quests:missions/tab/label/bob";
+      
+      public static const MISSIONS_TAB_BOB_HEADER:String = "#quests:missions/tab/bob/header";
+      
+      public static const MISSIONS_TAB_BOB_BODY:String = "#quests:missions/tab/bob/body";
       
       public static const MISSIONS_TAB_KURSK_HEADER:String = "#quests:missions/tab/kursk/header";
       
@@ -2549,7 +2557,7 @@ package
       
       public static const BONUSNAME_ENTITLEMENTS_RANKED_202203_ACCESS:String = "#quests:bonusName/entitlements/ranked_202203_access";
       
-      public static const BONUSNAME_ENTITLEMENTS_NY25_MARKETPLACE_UNLOCK:String = "#quests:bonusName/entitlements/ny25_marketplace_unlock";
+      public static const BONUSNAME_ENTITLEMENTS_PARAGON_REWARDS_CHOICE_V_11:String = "#quests:bonusName/entitlements/paragon_rewards_choice_v_11";
       
       public static const BONUSNAME_BATTLE_BONUS_X5:String = "#quests:bonusName/battle_bonus_x5";
       
@@ -3107,6 +3115,8 @@ package
       
       public static const PERSONALMISSION_STATUS_FULLDONE:String = "#quests:personalMission/status/fullDone";
       
+      public static const PERSONALMISSION_STATUS_ALLDONE:String = "#quests:personalMission/status/allDone";
+      
       public static const PERSONALMISSION_STATUS_DONEWITHPAWN:String = "#quests:personalMission/status/doneWithPawn";
       
       public static const PERSONALMISSION_STATUS_INPROGRESS:String = "#quests:personalMission/status/inProgress";
@@ -3379,10 +3389,6 @@ package
       
       public static const INFOPAGE_DAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/default";
       
-      public static const DAILYQUESTS_INFO_NYDAILYMISSIONS:String = "#quests:dailyQuests/info/NYDailyMissions";
-      
-      public static const DAILYQUESTS_INFO_DAILYMISSIONTITLE:String = "#quests:dailyQuests/info/dailyMissionTitle";
-      
       public static const INFOPAGE_DAILYMISSIONS_SUBSCRIPTION_DEFAULT:String = "#quests:infoPage/dailyMissions/subscription/default";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/default";
@@ -3390,8 +3396,6 @@ package
       public static const INFOPAGE_DAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/winback";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/winback";
-      
-      public static const DAILYQUESTS_INFO_GIFTSYSTEMDISABLEDDAILYMISSIONS:String = "#quests:dailyQuests/info/giftSystemDisabledDailyMissions";
       
       public static const INFOPAGE_PREMIUMMISSIONS_DEFAULT:String = "#quests:infoPage/premiumMissions/default";
       
@@ -3426,12 +3430,6 @@ package
       public static const INFOPAGE_MISSIONSWITCH_MIN:String = "#quests:infoPage/missionSwitch_min";
       
       public static const INFOPAGE_MISSIONSWITCH_WINBACK:String = "#quests:infoPage/missionSwitch/winback";
-      
-      public static const INFOPAGE_LOOTBOXCONDITIONSTITLE:String = "#quests:infoPage/lootboxConditionsTitle";
-      
-      public static const INFOPAGE_LOOTBOXCONDITIONS_DEFAULT:String = "#quests:infoPage/lootboxConditions/default";
-      
-      public static const INFOPAGE_LOOTBOXCONDITIONS_BUTTON:String = "#quests:infoPage/lootboxConditions/button";
       
       public static const DAILYQUESTS_CONDITION_DODAMAGE:String = "#quests:dailyQuests/condition/doDamage";
       
@@ -3490,10 +3488,6 @@ package
       public static const DEBUTBOXES_MISSIONS_HEADER_DISABLED:String = "#quests:debutBoxes/missions/header/disabled";
       
       public static const DEBUTBOXES_MISSIONS_HEADER_INFO:String = "#quests:debutBoxes/missions/header/info";
-      
-      public static const LOOTBOX_BOXCOUNT:String = "#quests:lootBox/boxCount";
-      
-      public static const LOOTBOX_BOXESLABEL:String = "#quests:lootBox/boxesLabel";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.530400 1.602960</row3>
+					<row3>0.000000 0.530400 1.598600</row3>
 				</transform>
 			</node>
 		</node>
@@ -38,11 +38,52 @@
 				<material>
 					<identifier>tank_turret_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						g_detailUVTiling
+						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_turret_01_ANM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -53,24 +94,8 @@
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_turret_01_AO.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>8.416441 4.208220 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_turret_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_turret_01_ANM.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.014516 1.753801 -0.019421</groupOrigin>

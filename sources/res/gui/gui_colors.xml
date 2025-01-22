@@ -1797,4 +1797,35 @@
 			<rgba>131 121 254 255</rgba>
 		</color_blind>
 	</areaBorder>
+	<playersListBloggerName>
+		<rgba>254 254 236 255</rgba>
+	</playersListBloggerName>
+	<blogger_1>
+		<rgba>224 26 27 255</rgba>
+		<transform>
+			<mult>0 0 0 1</mult>
+			<offset>224 26 27 0</offset>
+		</transform>
+	</blogger_1>
+	<blogger_2>
+		<rgba>245 143 35 255</rgba>
+		<transform>
+			<mult>0 0 0 1</mult>
+			<offset>245 143 35 0</offset>
+		</transform>
+	</blogger_2>
+	<blogger_3>
+		<rgba>213 12 213 255</rgba>
+		<transform>
+			<mult>0 0 0 1</mult>
+			<offset>213 12 213 0</offset>
+		</transform>
+	</blogger_3>
+	<blogger_4>
+		<rgba>27 153 229 255</rgba>
+		<transform>
+			<mult>0 0 0 1</mult>
+			<offset>27 153 229 0</offset>
+		</transform>
+	</blogger_4>
 </root>

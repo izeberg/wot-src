@@ -41,14 +41,8 @@ msgstr "Исследовать"
 msgid "buyingPanel/buyBtn/label/restore"
 msgstr "Восстановить"
 
-msgid "buyingPanel/buyBtn/label/restoreRequested"
-msgstr "Вы уже подали заявку на восстановление танка"
-
 msgid "buyingPanel/buyBtn/label/showAdventCalendar"
 msgstr "К КАЛЕНДАРЮ"
-
-msgid "buyingPanel/buyBtn/label/toCalendar"
-msgstr "К календарю"
 
 msgid "buyingPanel/collectible/notResearchedVehiclesWarning"
 msgstr "Техника %(nation)s %(level)s уровня не исследована"
@@ -133,6 +127,11 @@ msgstr "Аренда только для режима «Линия фронта�
 
 msgid "buyingPanel/personalTradeIn/title"
 msgstr "Обмен машины: %(name)s"
+
+msgid "buyingPanel/pmOperationVehicleLabel"
+msgstr ""
+"Покупка недоступна: эта машина — награда за выполнение всех задач операции "
+"«%(operationName)s»"
 
 msgid "buyingPanel/present"
 msgstr "В подарок"
@@ -225,6 +224,9 @@ msgstr "К ГЛАВНОЙ НАГРАДЕ"
 
 msgid "header/backBtn/descrLabel/blueprintsExchange"
 msgstr "К ТОВАРАМ ДЛЯ ОБМЕНА"
+
+msgid "header/backBtn/descrLabel/bob"
+msgstr "К БИТВЕ БЛОГЕРОВ"
 
 msgid "header/backBtn/descrLabel/collections"
 msgstr "К КОЛЛЕКЦИИ"

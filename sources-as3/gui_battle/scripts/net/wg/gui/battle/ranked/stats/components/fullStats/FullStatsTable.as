@@ -2,12 +2,14 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
 {
    import flash.display.MovieClip;
    import flash.text.TextField;
+   import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.components.PlayerStatusView;
    import net.wg.gui.battle.views.stats.SpeakAnimation;
    import net.wg.gui.battle.views.stats.fullStats.FullStatsTableBase;
    import net.wg.gui.components.controls.BadgeComponent;
+   import net.wg.gui.components.controls.Image;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class FullStatsTable extends FullStatsTableBase
@@ -16,7 +18,7 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
       private static const NUM_ROWS:int = 10;
        
       
-      public var background:BattleAtlasSprite = null;
+      public var background:Image = null;
       
       public var leftTank:BattleAtlasSprite = null;
       
@@ -844,7 +846,8 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
          this.vehicleTypeCollection = new <BattleAtlasSprite>[this.vehicleType_c1r1,this.vehicleType_c1r2,this.vehicleType_c1r3,this.vehicleType_c1r4,this.vehicleType_c1r5,this.vehicleType_c1r6,this.vehicleType_c1r7,this.vehicleType_c1r8,this.vehicleType_c1r9,this.vehicleType_c1r10,this.vehicleType_c2r1,this.vehicleType_c2r2,this.vehicleType_c2r3,this.vehicleType_c2r4,this.vehicleType_c2r5,this.vehicleType_c2r6,this.vehicleType_c2r7,this.vehicleType_c2r8,this.vehicleType_c2r9,this.vehicleType_c2r10];
          this.testerBackCollection = new <BattleAtlasSprite>[this.testerBack_c1r1,this.testerBack_c1r2,this.testerBack_c1r3,this.testerBack_c1r4,this.testerBack_c1r5,this.testerBack_c1r6,this.testerBack_c1r7,this.testerBack_c1r8,this.testerBack_c1r9,this.testerBack_c1r10,this.testerBack_c2r1,this.testerBack_c2r2,this.testerBack_c2r3,this.testerBack_c2r4,this.testerBack_c2r5,this.testerBack_c2r6,this.testerBack_c2r7,this.testerBack_c2r8,this.testerBack_c2r9,this.testerBack_c2r10];
          this.icoTesterCollection = new <BattleAtlasSprite>[this.icoTester_c1r1,this.icoTester_c1r2,this.icoTester_c1r3,this.icoTester_c1r4,this.icoTester_c1r5,this.icoTester_c1r6,this.icoTester_c1r7,this.icoTester_c1r8,this.icoTester_c1r9,this.icoTester_c1r10,this.icoTester_c2r1,this.icoTester_c2r2,this.icoTester_c2r3,this.icoTester_c2r4,this.icoTester_c2r5,this.icoTester_c2r6,this.icoTester_c2r7,this.icoTester_c2r8,this.icoTester_c2r9,this.icoTester_c2r10];
-         this.background.imageName = BATTLEATLAS.STATS_TABLE_BG;
+         this.background.cacheType = ImageCacheTypes.NOT_USE_CACHE;
+         this.background.source = RES_ICONS.MAPS_ICONS_BATTLE_STATS_TABLE_BG;
          this.leftTank.imageName = BATTLEATLAS.STATS_TABLE_TANK;
          this.leftFrag.imageName = BATTLEATLAS.STATS_TABLE_FRAGS;
          this.leftRank.imageName = BATTLEATLAS.ICON_RANK;
@@ -1242,6 +1245,7 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
          this.vehicleIconCollection = null;
          this.vehicleLevelCollection = null;
          this.vehicleTypeCollection = null;
+         this.background.dispose();
          this.background = null;
          this.leftTank = null;
          this.leftFrag = null;

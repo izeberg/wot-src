@@ -2977,7 +2977,7 @@
 	</_105mm_HEAT_L7_AL>
 	<_105mm_HEAT_L7_HVKE_T>
 		<id>31006</id>
-		<userString>#gb_vehicles:_105mm_HESH_L7</userString>
+		<userString>#gb_vehicles:_105mm_HEAT_L7_AL</userString>
 		<icon>hc_premium</icon>
 		<price>5200</price>
 		<improved>true</improved>
@@ -4128,7 +4128,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>770</armor>
+			<armor>910</armor>
 			<devices>191</devices>
 		</damage>
 		<armorSpalls>
@@ -4138,7 +4138,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>385</armor>
+				<armor>455</armor>
 				<devices>95</devices>
 			</damage>
 		</armorSpalls>
@@ -4161,7 +4161,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>770</armor>
+			<armor>910</armor>
 			<devices>191</devices>
 		</damage>
 		<armorSpalls>
@@ -4171,7 +4171,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>385</armor>
+				<armor>455</armor>
 				<devices>95</devices>
 			</damage>
 		</armorSpalls>

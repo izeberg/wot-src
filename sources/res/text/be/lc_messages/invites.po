@@ -153,6 +153,11 @@ msgstr ""
 "Калі прымеце запрашэнне, вы будзеце аўтаматычна выключаны з фарміравання і "
 "перамешчаны на сервер %(host)s."
 
+msgid "invites/note/change_and_leave/PREBATTLE_BOB"
+msgstr ""
+"Прыняўшы запрашэнне, вы аўтаматычна пакінеце фармаванне і пяройдзеце на "
+"сервер %(host)s."
+
 msgid "invites/note/change_and_leave/PREBATTLE_CLAN"
 msgstr ""
 "Калі прымеце запрашэнне, вы будзеце выключаны з удзельнікаў бою на "
@@ -248,6 +253,11 @@ msgstr ""
 "Прыняўшы запрашэнне, вы пакінеце рэжым «Вялікае паляванне» і пяройдзеце на "
 "сервер %(host)s."
 
+msgid "invites/note/change_and_leave/QUEUE_BOB"
+msgstr ""
+"Прыняўшы запрашэнне, вы пакінеце рэжым «Бітва блогераў» і пяройдзеце на "
+"сервер %(host)s."
+
 msgid "invites/note/change_and_leave/QUEUE_COMP7"
 msgstr ""
 "Калі прымеце запрашэнне, вы выйдзеце з рэжыму «Націск» і пяройдзеце на "
@@ -299,6 +309,9 @@ msgstr "Прыняўшы запрашэнне, вы аўтаматычна па�
 msgid "invites/note/leave/PREBATTLE_BATTLE_ROYALE_TOURNAMENT"
 msgstr ""
 "Калі прымеце запрашэнне, вы будзеце аўтаматычна выключаны з фарміравання."
+
+msgid "invites/note/leave/PREBATTLE_BOB"
+msgstr "Прыняўшы запрашэнне, вы аўтаматычна пакінеце фармаванне."
 
 msgid "invites/note/leave/PREBATTLE_CLAN"
 msgstr ""
@@ -366,6 +379,9 @@ msgstr "Прыняўшы запрашэнне, вы пакінеце рэжым 
 
 msgid "invites/note/leave/QUEUE_BATTLE_ROYALE_TOURNAMENT"
 msgstr "Прыняўшы запрашэнне, вы пакінеце рэжым «Вялікае паляванне»."
+
+msgid "invites/note/leave/QUEUE_BOB"
+msgstr "Прыняўшы запрашэнне, вы пакінеце рэжым «Бітва блогераў»."
 
 msgid "invites/note/leave/QUEUE_COMP7"
 msgstr "Калі прымеце запрашэнне, вы выйдзеце з рэжыму «Націск»."
@@ -459,6 +475,9 @@ msgstr "Запрашэнне адклікана."
 
 msgid "invites/text/BATTLE_ROYALE"
 msgstr "Запрашэнне далучыцца да звязу Сталёвых паляўнічых"
+
+msgid "invites/text/BOB"
+msgstr "Запрашэнне ўступіць у звяз для Бітвы блогераў"
 
 msgid "invites/text/COMP7"
 msgstr "Запрашэнне ўступіць у звяз рэжыму «Націск»"

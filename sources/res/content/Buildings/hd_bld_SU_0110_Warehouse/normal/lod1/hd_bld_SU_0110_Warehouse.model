@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Buildings/hd_bld_SU_0110_Warehouse/normal/lod2/hd_bld_SU_0110_Warehouse</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-15.933566 -1.931599 -7.688609</min>
+		<max>16.015760 26.407410 7.474085</max>
+	</visibilityBox>
+	<nodefullVisual>content/Buildings/hd_bld_SU_0110_Warehouse/normal/lod1/hd_bld_SU_0110_Warehouse</nodefullVisual>
+</root>
