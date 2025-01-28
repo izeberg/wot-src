@@ -444,6 +444,9 @@ msgstr "IV号H型\"鮟鱇\""
 msgid "Chassis_G85_Aufklarungspanzer_V"
 msgstr "“黑豹”侦察车"
 
+msgid "Chassis_G98_WT_auf_E_100_Phonix"
+msgstr "E-100 WT\"凤凰\""
+
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "E-100 WT(P)"
 
@@ -2127,6 +2130,22 @@ msgstr ""
 msgid "G92_VK7201_short_special"
 msgstr "完美的装甲，良好的单发损伤"
 
+msgid "G98_WT_auf_E_100_Phonix"
+msgstr "E-100 WT\"凤凰\""
+
+msgid "G98_WT_auf_E_100_Phonix_descr"
+msgstr "在E-100底盘上安装大口径高射炮的项目，计划使用带有弹夹装填系统的128毫米火炮。战争的结束为其画上了终止符。"
+
+msgid "G98_WT_auf_E_100_Phonix_long_special"
+msgstr ""
+"一辆D系X级自行反坦克炮，拥有一门搭载了弹夹装填系统的大威力火炮。惊人的火力使其可以有效对抗敌方坦克，出色的穿透力和精度让它可以在远距离命中敌方。然而，这辆坦克几乎没有任何装甲防护。"
+
+msgid "G98_WT_auf_E_100_Phonix_short"
+msgstr "E-100 WT\"凤凰\""
+
+msgid "G98_WT_auf_E_100_Phonix_short_special"
+msgstr "完美的火炮，可全向旋转的炮塔"
+
 msgid "G98_Waffentrager_E100_P_cn"
 msgstr "E-100 WT(P)"
 
@@ -2886,6 +2905,12 @@ msgstr "迈巴赫 HL 295 (A)"
 
 msgid "Maybach_HL_234P60"
 msgstr "迈巴赫新型发动机"
+
+msgid "Maybach_HL_234P60_P"
+msgstr "迈巴赫新型发动机 P"
+
+msgid "Maybach_HL_234P60_P_short"
+msgstr "迈巴赫新型发动机 P"
 
 msgid "Maybach_HL_234P60_WT"
 msgstr "迈巴赫新型发动机A方案"
@@ -4013,6 +4038,9 @@ msgstr "IV号H型\"鮟鱇\""
 msgid "Turret_1_G85_Aufklarungspanzer_V"
 msgstr "“黑豹”侦察车"
 
+msgid "Turret_1_G98_WT_auf_E_100_Phonix"
+msgstr "E-100 WT\"凤凰\""
+
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "E-100 WT(P)"
 
@@ -4784,6 +4812,9 @@ msgstr "10.5cm L7A3 坦克炮"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_10WSc_P"
+msgstr "10WSc P"
+
 msgid "_10WSc_WT"
 msgstr "10WSc A"
 
@@ -4880,6 +4911,9 @@ msgstr "12.8cm K43 L/55炮"
 msgid "_128mm_K44_2_L61"
 msgstr "12.8cm L/61炮"
 
+msgid "_128mm_K44_2_L61_P"
+msgstr "12.8cm L/61炮"
+
 msgid "_128mm_K44_2_L61_WT"
 msgstr "12.8cm L/61炮 A型"
 
@@ -4967,6 +5001,9 @@ msgstr "Pzgr 39 L"
 msgid "_128mm_PzGr39L50"
 msgstr "Pzgr 39 L"
 
+msgid "_128mm_PzGr39P"
+msgstr "Pzgr 39P"
+
 msgid "_128mm_PzGr39_E"
 msgstr "Pzgr 39 E"
 
@@ -5003,6 +5040,9 @@ msgstr "Pzgr 40/48"
 msgid "_128mm_PzGr43"
 msgstr "Pzgr 43"
 
+msgid "_128mm_PzGr43P"
+msgstr "Pzgr 43P"
+
 msgid "_128mm_PzGr44M_SH"
 msgstr "Pzgr 44M"
 
@@ -5038,6 +5078,9 @@ msgstr "Sprgr v18"
 
 msgid "_128mm_SprG19"
 msgstr "Sprgr 19"
+
+msgid "_128mm_SprG19P"
+msgstr "Sprgr 19P"
 
 msgid "_128mm_Sprgr_18_E"
 msgstr "Sprgr 18 E"
