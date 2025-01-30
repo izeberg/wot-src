@@ -102,6 +102,12 @@ msgstr "НАЗАД"
 msgid "buyBundle/backGoto"
 msgstr "ДА ВЫБАРУ НАБОРАЎ"
 
+msgid "buyBundle/bundleTitle"
+msgid_plural "plural/buyBundle/bundleTitle"
+msgstr[0] "%(levelCount)s ЖЭТОН БУДАЎНІЦТВА"
+msgstr[1] "%(levelCount)s ЖЭТОНА БУДАЎНІЦТВА"
+msgstr[2] "%(levelCount)s ЖЭТОНАЎ БУДАЎНІЦТВА"
+
 msgid "buyBundle/controlBack"
 msgstr "Назад"
 
@@ -125,15 +131,6 @@ msgstr "КУПЛЯ НАБОРУ"
 
 msgid "buyBundle/title"
 msgstr "ЖЭТОНЫ БУДАЎНІЦТВА"
-
-msgid "buyBundle/titleLargeBundle"
-msgstr "15 ЖЭТОНАЎ БУДАЎНІЦТВА"
-
-msgid "buyBundle/titleMediumBundle"
-msgstr "9 ЖЭТОНАЎ БУДАЎНІЦТВА"
-
-msgid "buyBundle/titleSmallBundle"
-msgstr "3 ЖЭТОНЫ БУДАЎНІЦТВА"
 
 msgid "buyView/backButton/mainView"
 msgstr "У ЦЭХ"

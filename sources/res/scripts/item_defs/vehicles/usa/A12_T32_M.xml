@@ -64,8 +64,12 @@
 		7.92
 		<!--BW_String-->
 	</repairCost>
+	<premiumVehicleXPFactor>
+		0.1
+		<!--BW_String-->
+	</premiumVehicleXPFactor>
 	<crewXpFactor>
-		1.0
+		1.5
 		<!--BW_String-->
 	</crewXpFactor>
 	<camouflage>

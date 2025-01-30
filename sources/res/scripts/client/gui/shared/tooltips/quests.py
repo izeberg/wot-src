@@ -248,7 +248,7 @@ class UnavailableQuestTooltipData(BlocksTooltipData):
                 items.extend(rankedOverrides)
                 return items
         requiredTokens = set([ token.getID() for token in quest.accountReqs.getTokens() if not token.isAvailable() ])
-        if self.__bobController.teamTokens <= requiredTokens:
+        if self.__bobController.teamTokens and self.__bobController.teamTokens <= requiredTokens:
             msg = backport.text(R.strings.tooltips.quests.unavailable.bobRegistration())
             return [
              formatters.packTextBlockData(text=text_styles.main(msg))]
