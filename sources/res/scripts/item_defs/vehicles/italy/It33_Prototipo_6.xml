@@ -117,14 +117,11 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>11910</weight>
-		<maxHealth>1080</maxHealth>
+		<maxHealth>1040</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>220</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>158</maxRegenHealth>
+			<repairCost>8</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/italy/It33_Prototipo_6/normal/lod0/Hull.model</undamaged>
@@ -1379,7 +1376,7 @@
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>35</rotationSpeed>
+			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -1394,12 +1391,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>200</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
-			<repairCost>
-				7.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>165</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/italy/It33_Prototipo_6/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/italy/It33_Prototipo_6/crash/lod0/Chassis.model</destroyed>
@@ -2588,7 +2582,7 @@
 			</physicalTracks>
 			<camouflage/>
 			<repairTime>
-				5.71428585
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_It33_Prototipo_6>
@@ -2630,33 +2624,27 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>270</maxHealth>
+			<maxHealth>260</maxHealth>
 			<rotationSpeed>35</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>140</maxHealth>
-				<maxRegenHealth>70</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>155</maxHealth>
+				<maxRegenHealth>78</maxRegenHealth>
+				<repairCost>8</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<repairCost>2</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<_105mm_Cannone_da_105_58_Rh_V1>
 					shared
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>50</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.00000 8.00 0.38889 8.00 0.39444 0.00 0.60556 0.00 0.61111 8.00 1.00000 8.00
+							0.00000 9.00 0.38889 9.00 0.39444 0.00 0.60556 0.00 0.61111 9.00 1.00000 9.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -2712,7 +2700,7 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.32
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>10</reloadTime>
@@ -2728,7 +2716,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.4
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -2741,7 +2729,10 @@
 						<rate>24</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>10 12 16</reloadTime>
+						<reloadTime>
+							8.5 10 13
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<customizationSlots>
 						<slot>

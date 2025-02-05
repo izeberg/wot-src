@@ -2459,11 +2459,11 @@
 		<shortDescriptionSpecial>#ussr_vehicles:R217_Object_Kust_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#ussr_vehicles:R217_Object_Kust_long_special</longDescriptionSpecial>
 		<price>
-			100
+			9750
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_sniper HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user testTank secret</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</R217_Object_Kust>
 	<R225_SU_100i>
