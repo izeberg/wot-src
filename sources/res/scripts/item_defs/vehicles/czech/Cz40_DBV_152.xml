@@ -11,7 +11,7 @@
 	<postProgressionTree>role_ATSPG_sniper</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>50</forward>
+		<forward>52</forward>
 		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
@@ -114,7 +114,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>8000</weight>
-		<maxHealth>1440</maxHealth>
+		<maxHealth>1400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>188</maxRegenHealth>
@@ -886,7 +886,7 @@
 			</terrainResistance>
 			<brakeForce>37000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.3
@@ -2719,14 +2719,14 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11200</weight>
-			<maxHealth>360</maxHealth>
-			<rotationSpeed>16</rotationSpeed>
+			<maxHealth>350</maxHealth>
+			<rotationSpeed>18</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>185</maxHealth>
 				<maxRegenHealth>93</maxRegenHealth>
 				<repairCost>10</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>370</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -2748,16 +2748,16 @@
 						<maxPitch>0 7 1 7</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.34
+						0.32
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						20.1
+						20.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.3
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -2770,7 +2770,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.8
+						1.6
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3813,8 +3813,8 @@
 		<detailed>
 			<engines>
 				<_5_TD_DBV>
-					<smplEnginePower>750</smplEnginePower>
-					<smplFwMaxSpeed>50</smplFwMaxSpeed>
+					<smplEnginePower>700</smplEnginePower>
+					<smplFwMaxSpeed>52</smplFwMaxSpeed>
 				</_5_TD_DBV>
 			</engines>
 			<chassis>

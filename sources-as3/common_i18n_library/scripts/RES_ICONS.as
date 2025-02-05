@@ -26791,6 +26791,26 @@ package
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_DEFAULT_TOOLTIPS_GLOW:String = "../maps/icons/lootBoxSystem/customizable/default/tooltips/glow.png";
       
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/lunar/autoOpenView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_AWARDVIEWS_OPENINGBOX_COMMON:String = "../maps/icons/lootBoxSystem/customizable/lunar/awardViews/openingBox/common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_AWARDVIEWS_OPENINGBOX_RARE:String = "../maps/icons/lootBoxSystem/customizable/lunar/awardViews/openingBox/rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_ENTRY_POINT_LOOTBOXGOLD:String = "../maps/icons/lootBoxSystem/customizable/lunar/entry_point/lootboxGold.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_ENTRY_POINT_LOOTBOXTOOLTIP:String = "../maps/icons/lootBoxSystem/customizable/lunar/entry_point/lootboxTooltip.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_HASBOXESVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/lunar/hasBoxesView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_HASBOXESVIEW_BOX:String = "../maps/icons/lootBoxSystem/customizable/lunar/hasBoxesView/box.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_HASBOXESVIEW_HOVER:String = "../maps/icons/lootBoxSystem/customizable/lunar/hasBoxesView/hover.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_INFOPAGE_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/lunar/infopage/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_LUNAR_NOBOXESVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/lunar/noBoxesView/background.png";
+      
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_LOOTBOX_24040101:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/lootBox_24040101.png";
       
       public static const MAPS_ICONS_MANUAL_BACKGROUNDS_ACHIEVES:String = "../maps/icons/manual/backgrounds/achieves.png";
@@ -32769,6 +32789,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/big/lootBox_gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_LUNAR:String = "../maps/icons/quests/bonuses/big/lootBox_lunar.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/big/lootBox_silver.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_MILITARYEXERCISES:String = "../maps/icons/quests/bonuses/big/militaryExercises.png";
@@ -33189,6 +33211,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s180x135/lootBox_gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_LUNAR:String = "../maps/icons/quests/bonuses/s180x135/lootBox_lunar.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s180x135/lootBox_silver.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_MODERNIZEDAIMDRIVESAIMINGSTABILIZER:String = "../maps/icons/quests/bonuses/s180x135/modernizedAimDrivesAimingStabilizer.png";
@@ -33279,7 +33303,23 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE:String = "../maps/icons/quests/bonuses/s180x135/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_195:String = "../maps/icons/quests/bonuses/s180x135/style_195.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_31009:String = "../maps/icons/quests/bonuses/s180x135/style_31009.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_31010:String = "../maps/icons/quests/bonuses/s180x135/style_31010.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_380:String = "../maps/icons/quests/bonuses/s180x135/style_380.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D:String = "../maps/icons/quests/bonuses/s180x135/style_3d.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_500:String = "../maps/icons/quests/bonuses/s180x135/style_500.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_503:String = "../maps/icons/quests/bonuses/s180x135/style_503.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_626:String = "../maps/icons/quests/bonuses/s180x135/style_626.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_688:String = "../maps/icons/quests/bonuses/s180x135/style_688.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKMAN:String = "../maps/icons/quests/bonuses/s180x135/tankman.png";
       
@@ -33462,6 +33502,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s232x174/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s232x174/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_LUNAR:String = "../maps/icons/quests/bonuses/s232x174/lootBox_lunar.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s232x174/lootBox_silver.png";
       
@@ -33846,6 +33888,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s296x222/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s296x222/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_LUNAR:String = "../maps/icons/quests/bonuses/s296x222/lootBox_lunar.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s296x222/lootBox_silver.png";
       
@@ -34811,6 +34855,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s600x450/lootBox_gold.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_LUNAR:String = "../maps/icons/quests/bonuses/s600x450/lootBox_lunar.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s600x450/lootBox_silver.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_MODERNIZEDAIMDRIVESAIMINGSTABILIZER:String = "../maps/icons/quests/bonuses/s600x450/modernizedAimDrivesAimingStabilizer.png";
@@ -34915,7 +34961,23 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE:String = "../maps/icons/quests/bonuses/s600x450/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_195:String = "../maps/icons/quests/bonuses/s600x450/style_195.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_31009:String = "../maps/icons/quests/bonuses/s600x450/style_31009.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_31010:String = "../maps/icons/quests/bonuses/s600x450/style_31010.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_380:String = "../maps/icons/quests/bonuses/s600x450/style_380.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D:String = "../maps/icons/quests/bonuses/s600x450/style_3d.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_500:String = "../maps/icons/quests/bonuses/s600x450/style_500.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_503:String = "../maps/icons/quests/bonuses/s600x450/style_503.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_626:String = "../maps/icons/quests/bonuses/s600x450/style_626.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_688:String = "../maps/icons/quests/bonuses/s600x450/style_688.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_PROGRESS_1026_1:String = "../maps/icons/quests/bonuses/s600x450/style_progress_1026_1.png";
       
@@ -35378,6 +35440,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_FUN_RANDOM:String = "../maps/icons/quests/bonuses/small/lootBox_fun_random.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/small/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_LUNAR:String = "../maps/icons/quests/bonuses/small/lootBox_lunar.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/small/lootBox_silver.png";
       
