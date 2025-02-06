@@ -129,6 +129,12 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
         if self.state == THERMAL_VISION_STATE.IDLE:
             self.cell.tryActivate()
 
+    def onEnemyInSector(self):
+        self.__indicatorProxy.setEntityInSector(True)
+
+    def onSectorEmpty(self):
+        self.__indicatorProxy.setEntityInSector(False)
+
     def __updateState(self):
         if self.playerVehId != self.entity.id:
             return

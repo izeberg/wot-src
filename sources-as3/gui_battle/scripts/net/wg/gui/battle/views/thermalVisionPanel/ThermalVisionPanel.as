@@ -1,9 +1,10 @@
 package net.wg.gui.battle.views.thermalVisionPanel
 {
    import flash.display.MovieClip;
-   import net.wg.gui.battle.views.rocketAcceleratorPanel.RocketAcceleratorPanel;
+   import net.wg.infrastructure.base.meta.IThermalVisionIndicatorMeta;
+   import net.wg.infrastructure.base.meta.impl.ThermalVisionIndicatorMeta;
    
-   public class ThermalVisionPanel extends RocketAcceleratorPanel
+   public class ThermalVisionPanel extends ThermalVisionIndicatorMeta implements IThermalVisionIndicatorMeta
    {
       
       private static const PROGRESS_Y:int = 21;
@@ -21,6 +22,8 @@ package net.wg.gui.battle.views.thermalVisionPanel
       
       public var timer:MovieClip;
       
+      public var enemyMarker:MovieClip;
+      
       public function ThermalVisionPanel()
       {
          super();
@@ -37,12 +40,15 @@ package net.wg.gui.battle.views.thermalVisionPanel
       {
          super.configUI();
          progressMask.y = PROGRESS_Y;
+         this.enemyMarker.stop();
+         this.enemyMarker.visible = false;
       }
       
       override protected function onDispose() : void
       {
          this.count = null;
          this.timer = null;
+         this.enemyMarker = null;
          super.onDispose();
       }
       
@@ -69,6 +75,23 @@ package net.wg.gui.battle.views.thermalVisionPanel
       {
          this.x = param1 + OFFSET_X | 0;
          this.y = param2 + OFFSET_Y | 0;
+      }
+      
+      public function as_setEnemyIndicator(param1:Boolean) : void
+      {
+         if(this.enemyMarker.visible == param1)
+         {
+            return;
+         }
+         if(param1)
+         {
+            this.enemyMarker.gotoAndPlay(1);
+         }
+         else
+         {
+            this.enemyMarker.stop();
+         }
+         this.enemyMarker.visible = param1;
       }
    }
 }

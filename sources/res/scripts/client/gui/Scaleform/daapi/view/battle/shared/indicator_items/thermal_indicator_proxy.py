@@ -24,11 +24,17 @@ class ThermalVisionIndicatorProxy(object):
     def setIndicator(self, indicator):
         self.__indicator = indicator
 
+    def setEntityInSector(self, state):
+        if self.__indicator is not None:
+            self.__indicator.as_setEnemyIndicatorS(state)
+        return
+
     def __onIdleReceived(self, stateStatus):
         self.__indicator.clearCallbacks()
         self.__indicator.as_setProgressS(1)
         self.__indicator.as_setActiveTimeS(0)
         self.__indicator.as_setCountS(stateStatus.useCount)
+        self.setEntityInSector(False)
 
     def __onActiveReceived(self, stateStatus):
         self.__indicator.clearCallbacks()
@@ -37,11 +43,13 @@ class ThermalVisionIndicatorProxy(object):
     def __onReloadingReceived(self, stateStatus):
         self.__indicator.clearCallbacks()
         self.__indicator.startReloadAnimation(stateStatus.startTime, stateStatus.reloadTime)
+        self.setEntityInSector(False)
 
     def __onDisabledReceived(self, _):
         self.__indicator.clearCallbacks()
         self.__indicator.as_setProgressS(0)
         self.__indicator.as_setActiveTimeS(0)
+        self.setEntityInSector(False)
 
     @noexcept
     def setState(self, stateStatus):

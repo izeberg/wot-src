@@ -1,6 +1,6 @@
 import BigWorld
 from constants import THERMAL_VISION_STATE
-from gui.Scaleform.daapi.view.battle.shared.indicator_items.base import BaseIndicator
+from gui.Scaleform.daapi.view.meta.ThermalVisionIndicatorMeta import ThermalVisionIndicatorMeta
 from gui.Scaleform.genConsts.COMMON_INDICATOR_CONSTS import COMMON_INDICATOR_CONSTS
 from helpers.CallbackDelayer import CallbackDelayer
 _STATES_MAPPING = {THERMAL_VISION_STATE.IDLE: COMMON_INDICATOR_CONSTS.READY, 
@@ -10,7 +10,7 @@ _STATES_MAPPING = {THERMAL_VISION_STATE.IDLE: COMMON_INDICATOR_CONSTS.READY,
 _PROGRESS_FORWARD = 0
 _PROGRESS_BACKWARD = 1
 
-class ThermalVisionIndicator(BaseIndicator, CallbackDelayer):
+class ThermalVisionIndicator(ThermalVisionIndicatorMeta, CallbackDelayer):
 
     def __init__(self):
         super(ThermalVisionIndicator, self).__init__('thermalVisionController')

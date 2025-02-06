@@ -19,6 +19,8 @@
 		<onThermalDisappear>
 			<Arg>OBJECT_ID</Arg>
 		</onThermalDisappear>
+		<onEnemyInSector/>
+		<onSectorEmpty/>
 	</ClientMethods>
 	<DefaultKeyName>thermalVisionController</DefaultKeyName>
 </root>
