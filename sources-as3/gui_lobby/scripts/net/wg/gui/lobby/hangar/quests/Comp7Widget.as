@@ -1,9 +1,7 @@
 package net.wg.gui.lobby.hangar.quests
 {
-   import flash.display.BlendMode;
+   import flash.display.Sprite;
    import flash.events.Event;
-   import net.wg.data.constants.ImageCacheTypes;
-   import net.wg.gui.components.controls.Image;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    
@@ -23,13 +21,11 @@ package net.wg.gui.lobby.hangar.quests
       private static const MARGIN_RIGHT_SMALL:int = -85;
       
       private static const MARGIN_TOP:int = 0;
-      
-      private static const BG_POS_X:int = -57;
        
       
-      private var _isSmall:Boolean = false;
+      public var bgImage:Sprite = null;
       
-      private var _bgImage:Image = null;
+      private var _isSmall:Boolean = false;
       
       public function Comp7Widget()
       {
@@ -43,14 +39,8 @@ package net.wg.gui.lobby.hangar.quests
          width = WIDTH;
          height = HEIGHT;
          x = -(WIDTH >> 1);
-         this._bgImage = new Image();
-         this._bgImage.cacheType = ImageCacheTypes.NOT_USE_CACHE;
-         this._bgImage.blendMode = BlendMode.ADD;
-         this._bgImage.tabEnabled = this._bgImage.mouseEnabled = this._bgImage.mouseChildren = false;
-         this._bgImage.source = RES_ICONS.MAPS_ICONS_COMP7_BACKGROUNDS_HANGAR_WIDGET_BG;
-         this._bgImage.x = BG_POS_X;
-         addChildAt(this._bgImage,0);
-         App.utils.commons.addEmptyHitArea(this._bgImage);
+         this.bgImage.tabEnabled = this.bgImage.mouseEnabled = this.bgImage.mouseChildren = false;
+         this.bgImage.hitArea = this;
       }
       
       override protected function draw() : void
@@ -66,9 +56,8 @@ package net.wg.gui.lobby.hangar.quests
       override protected function onDispose() : void
       {
          App.stage.removeEventListener(Event.RESIZE,this.onStageResizeHandler);
-         this._bgImage.hitArea = null;
-         this._bgImage.dispose();
-         this._bgImage = null;
+         this.bgImage.hitArea = null;
+         this.bgImage = null;
          super.onDispose();
       }
       

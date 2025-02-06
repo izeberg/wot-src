@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl34_Cs53_56_Woitek/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/poland/Pl34_Cs53_56_Woitek/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.525686 -0.236679 -0.049973</min>
+		<max>0.526025 0.375864 6.125824</max>
+	</visibilityBox>
+</root>

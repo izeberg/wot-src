@@ -175,6 +175,9 @@ msgstr "SDP 40 Zadymka"
 msgid "Chassis_Pl33_SDP_Wz_40_2"
 msgstr "SDP 40 Zadymka-Wzmocnione"
 
+msgid "Chassis_Pl34_Cs53_56_Woitek"
+msgstr "CS-53/56"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
@@ -939,6 +942,26 @@ msgstr ""
 msgid "Pl33_SDP_Wz_40_short"
 msgstr "Zadymka"
 
+msgid "Pl34_Cs53_56_Woitek"
+msgstr "CS-53/56 Wojtek"
+
+msgid "Pl34_Cs53_56_Woitek_descr"
+msgstr ""
+"Проект Военно-технической академии Варшавы, в котором башня 56-тонного танка"
+" устанавливалась на шасси среднего танка CS-53. Машина получилась сложная, "
+"малотехнологичная и дорогостоящая. В итоге польские военные решили "
+"сосредоточиться на организации крупносерийного выпуска советского Т-54, а "
+"новый тяжёлый танк так и не вышел за рамки бумажного проекта."
+
+msgid "Pl34_Cs53_56_Woitek_long_special"
+msgstr "?empty?"
+
+msgid "Pl34_Cs53_56_Woitek_short"
+msgstr "Wojtek"
+
+msgid "Pl34_Cs53_56_Woitek_short_special"
+msgstr "?empty?"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -962,6 +985,9 @@ msgstr "10RT-26P"
 
 msgid "RT10_26P_A"
 msgstr "10RT-26PA"
+
+msgid "RT10_26P_W"
+msgstr "10RT-26P"
 
 msgid "RTU_Jesion"
 msgstr "RTU «Jesion»"
@@ -1125,6 +1151,9 @@ msgstr "SDP 44 Burza"
 msgid "Turret_1_Pl33_SDP_Wz_40"
 msgstr "SDP 40 Zadymka"
 
+msgid "Turret_1_Pl34_Cs53_56_Woitek"
+msgstr "CS-53/56"
+
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
 
@@ -1169,6 +1198,9 @@ msgstr "CS-53 MH"
 
 msgid "V-2-34_B"
 msgstr "V-2-34"
+
+msgid "W-53M2"
+msgstr "W-53M2"
 
 msgid "W_12_5"
 msgstr "W12-5"
@@ -1386,6 +1418,9 @@ msgstr "WOF-471P"
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
 
+msgid "_122mm_armata_wz_53_56"
+msgstr "122 mm armata wz. 53/56"
+
 msgid "_122mm_armata_wz_56"
 msgstr "122 mm armata wz. 56"
 
@@ -1412,6 +1447,15 @@ msgstr "122 mm armata wz.43/50"
 
 msgid "_122mm_wz_53"
 msgstr "122 mm wz. 53"
+
+msgid "_122mm_wz_53_56_DM"
+msgstr "BR-471D"
+
+msgid "_122mm_wz_53_56_M"
+msgstr "BR-471B"
+
+msgid "_122mm_wz_53_56_OF"
+msgstr "OF-471"
 
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
@@ -1594,7 +1638,7 @@ msgid "_75mm_wz_36_37"
 msgstr "75 mm wz. 36/37"
 
 msgid "_75mm_wz_36_37M"
-msgstr "75 mm wz. 36/37"
+msgstr "75 mm wz. 36/37M"
 
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"

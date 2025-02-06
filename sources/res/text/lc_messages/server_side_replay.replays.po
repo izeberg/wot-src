@@ -1,0 +1,324 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "closeButtonLabel"
+msgstr "ЗАКРЫТЬ"
+
+msgid "featureName"
+msgstr "РЕПЛЕИ"
+
+msgid "filter/apply"
+msgstr "Применить фильтр"
+
+msgid "filter/group/nation/title"
+msgstr "Нация"
+
+msgid "filter/group/vehicleTier/longTitle"
+msgstr "Уровень"
+
+msgid "filter/group/vehicleTier/shortTitle"
+msgstr "Уровень"
+
+msgid "filter/group/vehicleType/barracks/title"
+msgstr "Специализация"
+
+msgid "filter/group/vehicleType/tankChange/title"
+msgstr "Тип техники"
+
+msgid "filter/reset"
+msgstr "Сбросить фильтр"
+
+msgid "filter/tooltip/nation/crewMember/body"
+msgstr "Включить/отключить отображение членов экипажа данной нации."
+
+msgid "filter/tooltip/nation/skins/body"
+msgstr "Включить/отключить отображение обликов данной нации."
+
+msgid "filter/tooltip/nation/vehicles/body"
+msgstr "Включить/отключить отображение техники данной нации."
+
+msgid "filter/tooltip/vehicleType/body"
+msgstr "Включить/отключить отображение техники данного типа."
+
+msgid "filter/tooltip/vehicleType/header/AT-SPG"
+msgstr "ПТ-САУ"
+
+msgid "filter/tooltip/vehicleType/header/SPG"
+msgstr "САУ"
+
+msgid "filter/tooltip/vehicleType/header/heavyTank"
+msgstr "Тяжёлые танки"
+
+msgid "filter/tooltip/vehicleType/header/lightTank"
+msgstr "Лёгкие танки"
+
+msgid "filter/tooltip/vehicleType/header/mediumTank"
+msgstr "Средние танки"
+
+msgid "filter/vehicles/noVehicles"
+msgstr ""
+"Не найдено техники, удовлетворяющей\n"
+"условиям поиска"
+
+msgid "filter/vehicles/tooltip/name/body"
+msgstr "Сортировать по названию техники."
+
+msgid "filter/vehicles/tooltip/name/header"
+msgstr "Название"
+
+msgid "filter/vehicles/tooltip/tier/body"
+msgstr "Сортировать по уровню техники."
+
+msgid "filter/vehicles/tooltip/tier/header"
+msgstr "Уровень"
+
+msgid "filter/vehicles/tooltip/type/body"
+msgstr "Сортировать по типу техники."
+
+msgid "filter/vehicles/tooltip/type/header"
+msgstr "Тип"
+
+msgid "filter/vehicles/vehicleName"
+msgstr "Название"
+
+msgid "filterPanel/counter/apply/body"
+msgstr "Нажмите, чтобы применить фильтр."
+
+msgid "filterPanel/counter/apply/header"
+msgstr "Применить выбранные фильтры"
+
+msgid "filterPanel/counter/reset/body"
+msgstr "Нажмите, чтобы сбросить фильтр."
+
+msgid "filterPanel/counter/reset/header"
+msgstr "Сбросить все фильтры"
+
+msgid "filterPopover/checkboxes/primeTime"
+msgstr "Показывать только реплеи боёв, проведённых в прайм-тайм"
+
+msgid "filterPopover/lastDays"
+msgid_plural "plural/filterPopover/lastDays"
+msgstr[0] "За последний %(count)s день"
+msgstr[1] "За последние %(count)s дня"
+msgstr[2] "За последние %(count)s дней"
+
+msgid "filterPopover/title"
+msgstr "Фильтр реплеев"
+
+msgid "filterPopover/tooltip/body"
+msgstr "Настроить фильтр реплеев по типу техники, уровню, нации и т. д."
+
+msgid "filterPopover/tooltip/header"
+msgstr "Фильтр по параметрам"
+
+msgid "findReplay/buttonText/find"
+msgstr "Найти реплей"
+
+msgid "findReplay/buttonText/refresh"
+msgstr "Очистить"
+
+msgid "findReplay/buttonText/watch"
+msgstr "Смотреть реплей!"
+
+msgid "findReplay/errorMessage"
+msgstr "Ничего не найдено. Измените критерии поиска."
+
+msgid "findReplay/inputPlaceholder"
+msgstr "Введите ARENA_ID..."
+
+msgid "findReplay/successMessage"
+msgstr "ИИ нашёл реплей, который вы искали. Приятного просмотра."
+
+msgid "page/heading/bestReplays"
+msgstr "ЛУЧШИЕ РЕПЛЕИ"
+
+msgid "page/heading/findReplay"
+msgstr "НАЙТИ РЕПЛЕЙ (ДЛЯ РАЗРАБОТКИ)"
+
+msgid "page/heading/myReplays"
+msgstr "МОИ РЕПЛЕИ"
+
+msgid "sidebar/tabs/tooltip/body/bestReplays"
+msgstr "Раздел содержит информацию о лучших реплеях от всех игроков WoT"
+
+msgid "sidebar/tabs/tooltip/body/findReplay"
+msgstr "В этом разделе можно найти реплей по определённым параметрам."
+
+msgid "sidebar/tabs/tooltip/body/myReplays"
+msgstr "Раздел содержит информацию о ваших лучших реплеях."
+
+msgid "sidebar/tabs/tooltip/header/bestReplays"
+msgstr "Лучшие реплеи"
+
+msgid "sidebar/tabs/tooltip/header/findReplay"
+msgstr "Найти реплей"
+
+msgid "sidebar/tabs/tooltip/header/myReplays"
+msgstr "Мои реплеи"
+
+msgid "statsParam/damageAssisted"
+msgstr "Топ-1 по урону, нанесённому с вашей помощью"
+
+msgid "statsParam/damageBlockedByArmor"
+msgstr "Топ-1 по заблокированному урону"
+
+msgid "statsParam/damageDealt"
+msgstr "Топ-1 по нанесённому урону"
+
+msgid "statsParam/earnedXp"
+msgstr "Топ-1 по заработанному опыту"
+
+msgid "statsParam/kills"
+msgstr "Топ-1 по уничтоженной технике"
+
+msgid "table/error/buttonText"
+msgstr "Обновить"
+
+msgid "table/error/description"
+msgstr ""
+"Приносим извинения за временные неудобства, попробуйте обновить страницу "
+"позже."
+
+msgid "table/error/title"
+msgstr "Ошибка загрузки данных"
+
+msgid "table/header/damageAssisted"
+msgstr "Помощь в уничтожении"
+
+msgid "table/header/damageBlockedByArmor"
+msgstr "Заблокированный урон"
+
+msgid "table/header/damageDealt"
+msgstr "Урон"
+
+msgid "table/header/date"
+msgstr "Дата"
+
+msgid "table/header/earnedXp"
+msgstr "Заработанный опыт"
+
+msgid "table/header/kills"
+msgstr "Уничтоженная техника"
+
+msgid "table/header/map"
+msgstr "Карта"
+
+msgid "table/header/marksOfMastery"
+msgstr "Знаки классности"
+
+msgid "table/header/player"
+msgstr "Имя игрока"
+
+msgid "table/header/vehicle"
+msgstr "Машина"
+
+msgid "table/noRecords/buttonText"
+msgstr "Сбросить фильтр"
+
+msgid "table/noRecords/title"
+msgstr "Ничего не найдено. Измените настройки или сбросьте фильтр."
+
+msgid "table/noRecords/tooltip/body"
+msgstr "Нажмите, чтобы сбросить фильтр."
+
+msgid "table/noRecords/tooltip/header"
+msgstr "Сбросить все фильтры"
+
+msgid "table/tooltip/damageAssisted/body"
+msgstr "Количество урона, нанесённого с помощью игрока в реплее."
+
+msgid "table/tooltip/damageAssisted/header"
+msgstr "Содействие"
+
+msgid "table/tooltip/damageBlockedByArmor/body"
+msgstr "Количество урона, заблокированного игроком в реплее."
+
+msgid "table/tooltip/damageBlockedByArmor/header"
+msgstr "Урон, заблокированный бронёй"
+
+msgid "table/tooltip/damageDealt/body"
+msgstr "Количество урона, нанесённого игроком в реплее."
+
+msgid "table/tooltip/damageDealt/header"
+msgstr "Нанесённый урон"
+
+msgid "table/tooltip/date/body"
+msgstr "Дата записи реплея."
+
+msgid "table/tooltip/date/header"
+msgstr "Дата реплея"
+
+msgid "table/tooltip/earnedXp/body"
+msgstr "Количество опыта, заработанного игроком в реплее."
+
+msgid "table/tooltip/earnedXp/header"
+msgstr "Заработанный опыт"
+
+msgid "table/tooltip/epicMedals/body"
+msgstr "Эпические медали, заработанные игроком в реплее."
+
+msgid "table/tooltip/epicMedals/header"
+msgstr "Эпические медали"
+
+msgid "table/tooltip/favorite/body"
+msgstr "Нажмите, чтобы добавить реплей в список избранных."
+
+msgid "table/tooltip/favorite/header"
+msgstr "Избранные"
+
+msgid "table/tooltip/favoriteActive/body"
+msgstr "Нажмите, чтобы удалить реплей из списка избранных."
+
+msgid "table/tooltip/kills/body"
+msgstr "Количество машин противника, уничтоженных игроком в реплее"
+
+msgid "table/tooltip/kills/header"
+msgstr "Уничтоженная техника"
+
+msgid "table/tooltip/map/body"
+msgstr "Карта реплея."
+
+msgid "table/tooltip/map/header"
+msgstr "Карта"
+
+msgid "table/tooltip/marksOfMastery/body"
+msgstr "Особые достижения игрока в реплее."
+
+msgid "table/tooltip/marksOfMastery/header"
+msgstr "Знаки классности"
+
+msgid "table/tooltip/player/body"
+msgstr "Имя игрока в реплее."
+
+msgid "table/tooltip/player/header"
+msgstr "Имя игрока"
+
+msgid "table/tooltip/vehicle/body"
+msgstr "Машина, на которой был записан реплей."
+
+msgid "table/tooltip/vehicle/header"
+msgstr "Машина"
+
+msgid "tableInfo/amount"
+msgstr "Показано реплеев: %(amount)s"
+
+msgid "tableInfo/filter"
+msgstr "Фильтр"
+
+msgid "waitingSpinner/message"
+msgstr "Загрузка содержимого..."

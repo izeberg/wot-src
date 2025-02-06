@@ -54,10 +54,6 @@ class JunkTankmenView(BaseTankmanListView):
     def _filterState(self):
         return
 
-    @property
-    def _uiLoggingKey(self):
-        return
-
     def _fillTankmanCard(self, cardsList, tankman):
         tm = TankmanModel()
         setTankmanModel(tm, tankman, tmanNativeVeh=self.itemsCache.items.getItemByCD(tankman.vehicleNativeDescr.type.compactDescr), tmanVeh=self.itemsCache.items.getVehicle(tankman.vehicleInvID))

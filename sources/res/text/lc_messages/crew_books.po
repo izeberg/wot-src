@@ -160,11 +160,22 @@ msgstr "{expTagOpen}+%(exp)s{expTagClose} опыта каждому члену �
 msgid "items/universalGuide/Name"
 msgstr "Универсальное руководство"
 
+msgid "page/mentoringLicense/hint"
+msgstr "К НАСТАВНИЧЕСТВУ"
+
+msgid "page/mentoringLicense/title"
+msgstr "НАСТАВНИЧЕСТВО"
+
 msgid "page/title"
 msgstr "УСКОРЕННОЕ ОБУЧЕНИЕ"
 
 msgid "tooltip/buyManual"
 msgstr "Купить учебное пособие"
+
+msgid "tooltip/mouseWheel"
+msgstr ""
+"Используйте колесо мыши {mouseIcon}, чтобы увеличить/уменьшить количество "
+"учебных материалов."
 
 msgid "tooltip/outOfStock"
 msgstr "Учебные материалы отсутствуют"

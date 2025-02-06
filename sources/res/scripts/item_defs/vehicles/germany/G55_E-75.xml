@@ -2249,6 +2249,48 @@
 				<showOn>16</showOn>
 				<anchorShift>0.062324</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.881613 -0.011133 -1.366
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0.047822 0 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999995 0.999995 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.87793 -0.011133 -1.366
+					<!--BW_String-->
+				</position>
+				<rotation>0.047822 3.139847 1.569051</rotation>
+				<scale>0.999994 0.999994 0.999999</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>-0.353413 -0.034537 -3.613689</position>
+				<rotation>
+					-0 -1.570796 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999994 0.999993 0.999994</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -3014,7 +3056,6 @@
 						</G55_E-75_MDXXIII4_3DSt>
 					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -3498,7 +3539,6 @@
 						</G55_E-75_MDXXIII4_3DSt>
 					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -4710,7 +4750,6 @@
 						</G55_E-75_MDXXIII4_3DSt>
 					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -5194,7 +5233,6 @@
 						</G55_E-75_MDXXIII4_3DSt>
 					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -6919,6 +6957,30 @@
 						<!--BW_String-->
 					</anchorShift>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						-0.399 1.153 -1.219
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						0.697 1.21 -0.797
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -8332,6 +8394,30 @@
 					</scale>
 					<showOn>256</showOn>
 					<anchorShift>0.098031</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						-0.397 1.181 -1.203
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						0.787 1.182 -0.13
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

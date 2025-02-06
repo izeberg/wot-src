@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A176_M103_110/_skins/A176_M103_110_HBP_3Dst/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.744236 -0.007906 -3.593090</min>
+		<max>1.521769 2.983547 1.567894</max>
+	</visibilityBox>
+	<parent>vehicles/american/A176_M103_110/_skins/A176_M103_110_HBP_3Dst/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

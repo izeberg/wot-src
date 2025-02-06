@@ -13,6 +13,15 @@ msgstr ""
 msgid "buyVehicleWindow/buyBtn"
 msgstr "Купить"
 
+msgid "buyVehicleWindow/consumablesTooltip/body"
+msgstr "Будет загружено следующее снаряжение: %(consumables)s."
+
+msgid "buyVehicleWindow/consumablesTooltip/header"
+msgstr "Купить снаряжение"
+
+msgid "buyVehicleWindow/consumablesTooltip/listSeparator"
+msgstr ", "
+
 msgid "buyVehicleWindow/countCrewLbl"
 msgstr "Членов экипажа: %(count)s"
 
@@ -36,6 +45,9 @@ msgstr ""
 
 msgid "buyVehicleWindow/equipment/ammo"
 msgstr "Загрузить боекомплект"
+
+msgid "buyVehicleWindow/equipment/consumables"
+msgstr "Загрузить снаряжение"
 
 msgid "buyVehicleWindow/equipment/slot"
 msgstr "Слот в Ангаре"

@@ -154,98 +154,6 @@ msgstr ""
 "Бесплатный сброс навыков или автоматическое распределение неизученных "
 "навыков у всех членов экипажа на аккаунте."
 
-msgid "crewNpsWelcome/1/block/1/description"
-msgstr ""
-"Теперь для каждой специальности доступны шесть навыков, в том числе "
-"несколько новых."
-
-msgid "crewNpsWelcome/1/block/2/description"
-msgstr ""
-"Кроме того, для изучения доступны три групповых навыка: «Боевое братство», "
-"«Маскировка» и «Ремонт». Навык «Пожаротушение» теперь может изучить только "
-"радист."
-
-msgid "crewNpsWelcome/1/block/3/description"
-msgstr ""
-"Добавлены новые навыки вместо некоторых существующих, но не пользующихся "
-"популярностью. Оставшиеся навыки улучшены."
-
-msgid "crewNpsWelcome/1/subtitle"
-msgstr ""
-"Добавлены новые навыки, а также переработаны или выведены из игры некоторые "
-"существующие"
-
-msgid "crewNpsWelcome/1/title"
-msgstr "Обновлённые навыки экипажа"
-
-msgid "crewNpsWelcome/2/block/1/description"
-msgstr ""
-"Члены экипажа теперь могут изучить до шести навыков в рамках основной "
-"специальности. Весь дополнительный заработанный опыт компенсируется в виде "
-"учебных материалов."
-
-msgid "crewNpsWelcome/2/block/2/description"
-msgstr ""
-"Это нововведение ограничивает общее количество навыков, доступных для "
-"изучения, и делает игру более честной. Выбирайте с умом!"
-
-msgid "crewNpsWelcome/2/block/3/description"
-msgstr ""
-"После изучения шести навыков члены экипажа продолжат зарабатывать опыт, "
-"который будет компенсироваться в виде универсальных руководств."
-
-msgid "crewNpsWelcome/2/subtitle"
-msgstr "Лимит на количество изучаемых навыков"
-
-msgid "crewNpsWelcome/2/title"
-msgstr "Ограничение эффективности экипажа"
-
-msgid "crewNpsWelcome/3/block/1/description"
-msgstr ""
-"Если у нескольких членов экипажа одинаковая специальность, уровень изученных"
-" ими навыков усредняется. Чтобы навык действовал с максимальной "
-"эффективностью, он должен быть полностью изучен всеми членами экипажа с этой"
-" специальностью."
-
-msgid "crewNpsWelcome/3/block/2/description"
-msgstr ""
-"Танкисты с совмещёнными специальностями могут изучить больше навыков в "
-"рамках дополнительных специальностей. Эти навыки не содержат опыт и не "
-"влияют на лимит."
-
-msgid "crewNpsWelcome/3/block/3/description"
-msgstr ""
-"При сбросе навыков теперь также сбрасываются «нулевые» навыки, при этом все "
-"их полезные свойства сохраняются."
-
-msgid "crewNpsWelcome/3/subtitle"
-msgstr "Дополнительные навыки, дублируемые навыки, сброс «нулевых» навыков"
-
-msgid "crewNpsWelcome/3/title"
-msgstr "Прочие изменения в системе навыков"
-
-msgid "crewNpsWelcome/4/block/1/description"
-msgstr ""
-"В течение некоторого времени вы сможете сбрасывать навыки неограниченное "
-"количество раз."
-
-msgid "crewNpsWelcome/4/block/2/description"
-msgstr ""
-"Этот период начинается сегодня и продлится 30 дней. Попробуйте различные "
-"комбинации навыков и выберите те, которые лучше всего подходят для вашего "
-"стиля игры."
-
-msgid "crewNpsWelcome/4/block/3/description"
-msgstr ""
-"После завершения пробного периода первый сброс навыков для каждого танкиста "
-"будет бесплатным."
-
-msgid "crewNpsWelcome/4/subtitle"
-msgstr "Пробный период и бесплатный первый сброс навыков"
-
-msgid "crewNpsWelcome/4/title"
-msgstr "Время экспериментов!"
-
 msgid "filter/group/details/title"
 msgstr "Подробнее"
 
@@ -547,6 +455,9 @@ msgstr ""
 "Становится доступен при изучении пятого навыка основной специальности. Не "
 "требует опыта."
 
+msgid "matrix/skillTooltip/main/additional/header"
+msgstr "Уровень владения"
+
 msgid "matrix/skillTooltip/main/available/discountLabel/1"
 msgstr ""
 "У этого члена экипажа есть «нулевой» навык. Количество требуемого опыта "
@@ -646,28 +557,26 @@ msgstr "СКИДКА В {discountAmount}% НА СМЕНУ СПЕЦИАЛЬНОС
 msgid "memberChange/title"
 msgstr "ВЫБРАТЬ {role}: {vehicle}"
 
-msgid "npsIntro/compensation/additional"
-msgstr "Дополнительная компенсация:"
-
-msgid "npsIntro/compensation/description"
-msgstr "На ваш аккаунт добавлены следующие предметы в качестве компенсации:"
-
-msgid "npsIntro/compensation/title"
-msgstr "УСПЕШНАЯ КОМПЕНСАЦИЯ"
-
-msgid "npsIntro/intro/description"
+msgid "mentoringLicense/tooltip/amount"
 msgstr ""
-"Изменения в системе навыков, новые и переработанные навыки, пробный период "
-"для бесплатного сброса навыков."
+"{whiteSpanish_Open}%(value)s{whiteSpanish_Close} %(icon)s {par_Open}На "
+"Складе{par_Close}"
 
-msgid "npsIntro/intro/title"
-msgstr "ОБНОВЛЕНИЯ СИСТЕМЫ ЭКИПАЖА"
+msgid "mentoringLicense/tooltip/infoBlock"
+msgstr ""
+"После подтверждения член экипажа, опыт которого переводится, будет "
+"демобилизован."
 
-msgid "npsIntro/skipButton/title"
-msgstr "Пропустить"
+msgid "mentoringLicense/tooltip/mainDescription"
+msgstr ""
+"Механика «Наставничество» позволяет перевести опыт одного члена экипажа "
+"другому той же нации."
 
-msgid "npsIntro/viewButton/title"
-msgstr "К изменениям"
+msgid "mentoringLicense/tooltip/mainHeader"
+msgstr "Наставничество"
+
+msgid "personalData/card/edit"
+msgstr "Редактировать"
 
 msgid "personalData/card/remove"
 msgstr "Снять"
@@ -847,8 +756,8 @@ msgstr "В бою себя не проявил, наград не имеет."
 
 msgid "serviceRecord/tooltip/averageXP/body"
 msgstr ""
-"Отношение общего количества заработанного опыта к количеству проведённых "
-"боёв на данной машине."
+"Отношение общего количества заработанного опыта к количеству боёв, "
+"проведённых на машине, на которую назначен этот член экипажа."
 
 msgid "serviceRecord/tooltip/averageXP/header"
 msgstr "Средний опыт за бой"
@@ -1009,9 +918,3 @@ msgid "vehicleParamsDecorator/perkTip"
 msgstr ""
 "*Наведите курсор на навык, чтобы увидеть, как он влияет на соответствующие "
 "характеристики при изучении на 100% с текущим уровнем эффективности навыков."
-
-msgid "welcomeScreen/button/confirm"
-msgstr "Так точно!"
-
-msgid "welcomeScreen/button/next"
-msgstr "Далее"

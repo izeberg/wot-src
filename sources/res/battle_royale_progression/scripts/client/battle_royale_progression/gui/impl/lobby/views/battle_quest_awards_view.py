@@ -1,8 +1,9 @@
+from battle_royale.gui.impl.lobby.tooltips.proxy_currency_tooltip_view import ProxyCurrencyTooltipView
 from battle_royale_progression.gui.impl.gen.view_models.views.lobby.views.battle_quest_awards_model import BattleQuestAwardsModel, BattleStatus
 from battle_royale_progression.gui.impl.lobby.views.bonus_packer import getBonusPacker
 from battle_royale_progression.gui.sounds_constants import GENERAL_SOUND_SPACE
 from frameworks.wulf import ViewSettings, WindowFlags
-from gui.battle_pass.battle_pass_bonuses_packers import packBonusModelAndTooltipData
+from gui.battle_pass.battle_pass_bonuses_packers import packBonusModelAndTooltipData, useBigAwardInjection
 from gui.impl.gen import R
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
@@ -32,6 +33,11 @@ class BattleQuestAwardsView(ViewImpl):
     def viewModel(self):
         return super(BattleQuestAwardsView, self).getViewModel()
 
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.battle_royale.lobby.tooltips.ProxyCurrencyTooltipView():
+            return ProxyCurrencyTooltipView()
+        return super(BattleQuestAwardsView, self).createToolTipContent(event, contentID)
+
     @createBackportTooltipDecorator()
     def createToolTip(self, event):
         return super(BattleQuestAwardsView, self).createToolTip(event)
@@ -52,7 +58,8 @@ class BattleQuestAwardsView(ViewImpl):
             model.setBattleStatus((isFinishStage or BattleStatus).INPROGRESS if 1 else BattleStatus.COMPLETED)
             model.setLevel(level)
             rewards = model.getRewards()
-            packBonusModelAndTooltipData(bonuses, rewards, self.__tooltipData, getBonusPacker())
+            with useBigAwardInjection():
+                packBonusModelAndTooltipData(bonuses, rewards, self.__tooltipData, getBonusPacker())
 
     def _onLoading(self, *args, **kwargs):
         super(BattleQuestAwardsView, self)._onLoading(args, kwargs)

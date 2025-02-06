@@ -711,7 +711,7 @@ class AbstractBattleMode(object):
     def registerMessengerServerFormatters(self):
         from gui.shared.system_factory import registerMessengerServerFormatter
         for sysMsgType, formatter in self._client_messengerServerFormatters.iteritems():
-            registerMessengerServerFormatter(sysMsgType, formatter)
+            registerMessengerServerFormatter(sysMsgType, formatter, True)
 
     def registerClientTokenQuestsSubFormatters(self):
         from gui.shared.system_factory import registerTokenQuestsSubFormatters

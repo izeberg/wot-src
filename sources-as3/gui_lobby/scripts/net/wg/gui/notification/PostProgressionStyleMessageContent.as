@@ -48,6 +48,7 @@ package net.wg.gui.notification
       
       override protected function updateLayout() : void
       {
+         var _loc1_:Number = NaN;
          if(timeComponent != null)
          {
             timeComponent.visible = false;
@@ -60,8 +61,13 @@ package net.wg.gui.notification
          {
             buttonsGroup.x = this._messageWidth - buttonsGroup.width >> 1;
             buttonsGroup.y = this._defaultHeight + this._heightOffset - buttonsGroup.height - MESSAGE_PADDING_BOTTOM | 0;
+            textField.y = buttonsGroup.y - BUTTONS_GROUP_PADDING_TOP - textField.height;
          }
-         textField.y = buttonsGroup.y - BUTTONS_GROUP_PADDING_TOP - textField.height;
+         else
+         {
+            _loc1_ = icon.y + icon.height;
+            textField.y = _loc1_ + (background.y + background.height - _loc1_ - textField.height - MESSAGE_PADDING_BOTTOM) / 2 | 0;
+         }
       }
       
       override protected function updateData() : void

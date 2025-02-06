@@ -19,24 +19,6 @@ msgstr "Нажмите, чтобы отменить поиск совзводн�
 msgid "buttons/createPlatoon/caption"
 msgstr "Новый взвод"
 
-msgid "buttons/createPlatoon/comp7/forSeven/caption"
-msgstr "7 игроков"
-
-msgid "buttons/createPlatoon/comp7/forSeven/description"
-msgstr "Создание супервзвода, состоящего из семи игроков."
-
-msgid "buttons/createPlatoon/comp7/forSeven/text"
-msgstr "7 игроков"
-
-msgid "buttons/createPlatoon/comp7/forTwo/caption"
-msgstr "2 игрока"
-
-msgid "buttons/createPlatoon/comp7/forTwo/description"
-msgstr "Создание взвода, состоящего из двух игроков."
-
-msgid "buttons/createPlatoon/comp7/forTwo/text"
-msgstr "2 игрока"
-
 msgid "buttons/createPlatoon/description"
 msgstr "Создайте взвод и пригласите друзей для совместной игры."
 
@@ -294,9 +276,6 @@ msgstr "Достигнут максимум колёсных танков во �
 msgid "members/header/battle_royal"
 msgstr ": Стальной охотник"
 
-msgid "members/header/comp7"
-msgstr ": Натиск"
-
 msgid "members/header/epic"
 msgstr ": Линия фронта"
 
@@ -314,14 +293,6 @@ msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
 msgid "members/header/squad"
 msgstr ": Случайный бой"
-
-msgid "members/header/tooltip/comp7/dropdown"
-msgstr "Только командир взвода может менять лимит игроков."
-
-msgid "members/header/tooltip/comp7/dropdown/item"
-msgstr ""
-"Изменение невозможно. Лимит игроков не может быть меньше их текущего "
-"количества."
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""
@@ -342,6 +313,9 @@ msgstr "Взвод должен состоять из машин одного у
 
 msgid "members/header/tooltip/standard/header"
 msgstr "Правила формирования взвода"
+
+msgid "membersWindow/memberCountDropdown/description"
+msgstr "Игроков во взводе"
 
 msgid "searching/estimated/caption"
 msgstr "Расчётное время"

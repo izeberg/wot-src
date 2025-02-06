@@ -751,6 +751,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BATTLEROYALEBRCOIN:String = "#messenger:serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin";
       
+      public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BATTLEROYALESTPCOIN:String = "#messenger:serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin";
+      
       public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BRPROGRESSIONTITLE:String = "#messenger:serviceChannelMessages/BRbattleResults/BRProgressionTitle";
       
       public static const SERVICECHANNELMESSAGES_CURRENCYUPDATE_AUCTION:String = "#messenger:serviceChannelMessages/currencyUpdate/auction";
@@ -1965,6 +1967,10 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_BATTLE_FINAL_ADDITIONALTEXT:String = "#messenger:serviceChannelMessages/battlePassReward/battle/final/additionalText";
       
+      public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_POSTPROGRESSION_NEWLEVEL_TEXT:String = "#messenger:serviceChannelMessages/battlePassReward/postProgression/newLevel/text";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_POSTPROGRESSION_NEWLEVELS_TEXT:String = "#messenger:serviceChannelMessages/battlePassReward/postProgression/newLevels/text";
+      
       public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_ACTIVATECHAPTER_TEXT:String = "#messenger:serviceChannelMessages/battlePassReward/activateChapter/text";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASSREWARD_BUYWITHOUTREWARDS_TEXT:String = "#messenger:serviceChannelMessages/battlePassReward/buyWithoutRewards/text";
@@ -2008,6 +2014,12 @@ package
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_FREEPOINTSUSED_HEADER:String = "#messenger:serviceChannelMessages/battlePass/freePointsUsed/header";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_FREEPOINTSUSED_TEXT:String = "#messenger:serviceChannelMessages/battlePass/freePointsUsed/text";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_FREEPOINTSUSED_POSTPROGRESSION_TEXT:String = "#messenger:serviceChannelMessages/battlePass/freePointsUsed/postProgression/text";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_POSTPROGRESSIONACTIVATED_TEXT:String = "#messenger:serviceChannelMessages/battlePass/postProgressionActivated/text";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_POSTPROGRESSIONPAUSED_TEXT:String = "#messenger:serviceChannelMessages/battlePass/postProgressionPaused/text";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASSHREWARD_BATTLE_NEWLEVEL_TEXT:String = "#messenger:serviceChannelMessages/battlePassHReward/battle/newLevel/text";
       
@@ -2275,6 +2287,10 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_BRCOIN:String = "#messenger:platformCurrencyMsg/debited/brcoin";
       
+      public static const PLATFORMCURRENCYMSG_RECEIVED_STPCOIN:String = "#messenger:platformCurrencyMsg/received/stpcoin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_STPCOIN:String = "#messenger:platformCurrencyMsg/debited/stpcoin";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_EQUIP_COIN:String = "#messenger:platformCurrencyMsg/received/equip_coin";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_EQUIP_COIN:String = "#messenger:platformCurrencyMsg/debited/equip_coin";
@@ -2290,6 +2306,10 @@ package
       public static const PLATFORMCURRENCYMSG_RECEIVED_TOURCOIN:String = "#messenger:platformCurrencyMsg/received/tourcoin";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_TOURCOIN:String = "#messenger:platformCurrencyMsg/debited/tourcoin";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_BPTALER:String = "#messenger:platformCurrencyMsg/received/bptaler";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_BPTALER:String = "#messenger:platformCurrencyMsg/debited/bptaler";
       
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       

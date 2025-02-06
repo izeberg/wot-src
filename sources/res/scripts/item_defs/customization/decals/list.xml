@@ -1583,6 +1583,31 @@
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>411</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_49.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_49</userString>
+			<mirror>true</mirror>
+		</decal>
+		<decal>
+			<id>412</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_50.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_50</userString>
+			<mirror>true</mirror>
+		</decal>
+		<name>Valentine&apos;s Day</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/cool</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
 		<decal>
 			<id>416</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_55.dds</texture>
@@ -1799,26 +1824,6 @@
 			<mirror>false</mirror>
 		</decal>
 		<name>Cool</name>
-		<type>EMBLEM</type>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:emblem/cool</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>emblems 50g notInShop</priceGroup>
-		<decal>
-			<id>411</id>
-			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_49.dds</texture>
-			<userString>#vehicle_customization:emblem/cool/sticker_49</userString>
-			<mirror>true</mirror>
-		</decal>
-		<decal>
-			<id>412</id>
-			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_50.dds</texture>
-			<userString>#vehicle_customization:emblem/cool/sticker_50</userString>
-			<mirror>true</mirror>
-		</decal>
-		<name>Valentine&apos;s Day</name>
 		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
@@ -7757,6 +7762,26 @@
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
 		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1131</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_860.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_860</userString>
+			<tags>styleOnly</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>onslaught_spring</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
 			<include>
 				<levels>8 9 10</levels>
 			</include>
@@ -8311,6 +8336,11 @@
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 150g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>16022</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_859.dds</texture>
@@ -14661,6 +14691,65 @@
 			<mirror>false</mirror>
 		</decal>
 		<name>NY 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1128</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_784.dds</texture>
+			<description>#vehicle_customization:projection_decals/special/projection_decal_819/description</description>
+			<userString>#vehicle_customization:inscription/special/special_784</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1129</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_785.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_785</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1130</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_786.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_786</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Battle Pass 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1132</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_787.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_787</userString>
+			<tags>styleOnly</tags>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1133</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_788.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_788</userString>
+			<tags>styleOnly</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>onslaught_spring</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
 	<itemGroup>

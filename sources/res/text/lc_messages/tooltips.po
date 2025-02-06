@@ -703,7 +703,7 @@ msgid "advanced/improvedVentilation"
 msgstr "Усиливает навыки экипажа, что улучшает все характеристики машины."
 
 msgid "advanced/info"
-msgstr "дополнительная информация"
+msgstr "Дополнительная информация"
 
 msgid "advanced/instructions"
 msgstr ""
@@ -988,6 +988,14 @@ msgstr "Начисляются в рамках Боевого пропуска"
 
 msgid "awardItem/bpcoin/header"
 msgstr "Жетоны"
+
+msgid "awardItem/bptaler/body"
+msgstr ""
+"Проходите прогрессию и зарабатывайте монеты, которые можно потратить в "
+"Хранилище Боевого пропуска в Магазине"
+
+msgid "awardItem/bptaler/header"
+msgstr "Монеты"
 
 msgid "awardItem/brcoin/body"
 msgstr ""
@@ -1382,10 +1390,7 @@ msgid "awardItem/oneof/rankedSeason/previewStyle/body"
 msgstr "Нажмите для просмотра стиля"
 
 msgid "awardItem/optional_devices_assistant/body"
-msgstr ""
-"Это особый бонус подписки WoT Plus, который предоставляет сводку по "
-"популярным вариантам оснащения для определённой машины, помогая понять "
-"текущие тенденции и предпочтения среди других танкистов."
+msgstr "Информация о популярных вариантах оснащения."
 
 msgid "awardItem/optional_devices_assistant/header"
 msgstr "Знаток оборудования"
@@ -1492,6 +1497,14 @@ msgstr ""
 
 msgid "awardItem/steelHunterPoint/header"
 msgstr "Очки охоты"
+
+msgid "awardItem/stpcoin/body"
+msgstr ""
+"Валюта, зарабатываемая в сражениях режима «Стальной охотник». Печати можно обменять на уникальные награды в Лавке трилистника.\n"
+"При игре во взводе печати делятся поровну между совзводными. Указанная сумма — ваша часть общего банка."
+
+msgid "awardItem/stpcoin/header"
+msgstr "Печати удачи"
 
 msgid "awardItem/tankman/body"
 msgstr ""
@@ -2316,6 +2329,12 @@ msgstr ""
 
 msgid "battle_royale/hangar/vehicle/leftTime"
 msgstr "Доступен до: %(leftTime)s"
+
+msgid "battle_royale/hangar/vehicle/shamrock"
+msgstr ""
+"%(shamrock)s Бонус к печатям удачи за попадание в топ-10 в одиночном бою или"
+" в топ-7 во взводном. Бонус может быть активирован раз в сутки на каждой "
+"машине режима."
 
 msgid "battle_royale/hangar/vehicle/status"
 msgstr "Один из Стальных охотников"
@@ -5350,6 +5369,28 @@ msgstr "Шарик"
 msgid "hangar/crew/specialty_skills"
 msgstr "Навыки:"
 
+msgid "hangar/easyTankEquip/body"
+msgstr "Нажмите, чтобы быстро подготовить машину."
+
+msgid "hangar/easyTankEquip/disabled/default/body"
+msgstr "Быстрое обслуживание недоступно для выбранной машины."
+
+msgid "hangar/easyTankEquip/disabled/default/header"
+msgstr "Недоступно"
+
+msgid "hangar/easyTankEquip/disabled/inappropriateVehicle/body"
+msgstr ""
+"Быстрое обслуживание доступно только для техники %(tier)s уровня и выше."
+
+msgid "hangar/easyTankEquip/disabled/switch/body"
+msgstr "Быстрое обслуживание временно недоступно. Попробуйте позже."
+
+msgid "hangar/easyTankEquip/disabled/switch/header"
+msgstr "Технические проблемы"
+
+msgid "hangar/easyTankEquip/header"
+msgstr "Быстрое обслуживание"
+
 msgid "hangar/elen/bottom/allperiphery/body"
 msgstr ""
 "Генеральные сражения не учитываются. Учитываются следующие типы Случайных "
@@ -6215,6 +6256,12 @@ msgstr "Посмотреть статистику боёв и полученны
 msgid "header/buttons/profile/header"
 msgstr "Достижения"
 
+msgid "header/buttons/replays/body"
+msgstr "Смотрите клиентские и серверные реплеи!"
+
+msgid "header/buttons/replays/header"
+msgstr "Реплеи"
+
 msgid "header/buttons/shop/body"
 msgstr ""
 "Здесь вы можете купить всё необходимое для комфортной игры: золото, премиум "
@@ -6759,6 +6806,28 @@ msgstr "Игрок ещё не определился с выбором подх
 
 msgid "medalion/noVehicle/header"
 msgstr "Машина не выбрана"
+
+msgid "mentorAssignment/advanced/description"
+msgstr "Перевод всего опыта одного члена экипажа другому той же нации."
+
+msgid "mentorAssignment/advanced/header"
+msgstr "Наставничество"
+
+msgid "mentorAssignment/description"
+msgstr ""
+"Перевод всего опыта члена экипажа (%(crewName)s) другому члену экипажа той "
+"же нации."
+
+msgid "mentorAssignment/title"
+msgstr "Наставничество"
+
+msgid "mentorAssignment/warning/crewRemove"
+msgstr ""
+"После подтверждения член экипажа будет демобилизован без возможности "
+"восстановления."
+
+msgid "mentorAssignment/warning/freeSkills"
+msgstr "Опыт «нулевого» навыка не переводится"
 
 msgid "minimapAlpha/body"
 msgstr ""
@@ -7496,6 +7565,34 @@ msgstr ""
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "Битва блогеров 2021"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/desc"
+msgstr ""
+"С детства Эмраха восхищала неуловимая связь между тенями и реальным миром. Движимый жаждой знаний и врождённым талантом к алхимии, он отправился в погоню за неизведанным, оставив свой дом в Турции. Во время своих странствий он присоединился к группе кочующих магов и волшебников, а вскоре лицом к лицу столкнулся со зловещей потусторонней угрозой.\n"
+"Бесконечные занятия и эксперименты позволили ему в совершенстве освоить алхимию металлов. Позже Эмрах вступил в ряды особой армии, защищающей его мир от бесконечных опасностей из других вселенных."
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_foxwood/desc"
+msgstr ""
+"Неразлучный со своим верным псом Уинстоном, Уильям посвятил жизнь охоте. Всё"
+" детство он провёл в прогулках по лесу с отцом, где каждый раз был очарован "
+"чудесами зелёного царства. С тех пор каждый день, в любую погоду, он "
+"неизменно надевает свою твидовую кепку и охотничью куртку. Уильям — "
+"дружелюбный и добродушный парень, но только когда не выслеживает добычу. Это"
+" превосходный стрелок, который всегда бьёт точно в цель. Его охотничьи "
+"инстинкты придутся как нельзя кстати в танковых сражениях, и если противник "
+"окажется у него на мушке, то уже не уйдёт."
+
+msgid "notrecruitedtankman/boosteroid_foxwood/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_foxwood/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/bp-commander-1_1/desc"
 msgstr ""
@@ -8737,6 +8834,89 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp1003_1/label"
 msgstr "Дюна: Часть вторая — Зов судьбы"
 
+msgid "notrecruitedtankman/tankmen_bp1004_1/desc"
+msgstr ""
+"«Провинциальный шериф»? Может, кто-то и поморщится от этих слов, но для "
+"Уилла Тизла нет чести выше, чем поддерживать общественный порядок в Хоупе, "
+"штат Вашингтон. Как и нет ничего хуже подозрительных бродяг вроде Джона "
+"Рэмбо. Шериф Тизл — ярый блюститель закона, чья гордость иногда может "
+"перерастать в предубеждение. Он не потерпит, чтобы спокойствие его северо-"
+"западного городка что-то нарушило. И будьте уверены: Уилл Тизл позаботится о"
+" том, чтобы привить уважение к правопорядку каждому, кого он сочтёт угрозой "
+"своей власти."
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_1/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/desc"
+msgstr ""
+"Маршалл Мёрдок — обходительный собеседник и опытный переговорщик. Он "
+"настоящий американец, посвятивший себя служению своей стране и её гражданам."
+" По крайней мере, он хочет, чтобы вы так думали. Однако за обаятельной "
+"личиной скрывается расчётливый, прагматичный ум, сосредоточенный на "
+"самосохранении. Мёрдок мастерски манипулирует ситуацией и готов пойти на "
+"всё, чтобы защитить свои интересы. А кому он верен, никогда не ясно до "
+"конца."
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_2/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/desc"
+msgstr ""
+"Ветеран. Одинокий волк. Прирождённый боец. Джон Джеймс Рэмбо — сила, с "
+"которой нужно считаться, как его ни назови. Стойкий, находчивый и необычайно"
+" сильный, этот закаленный в боях воин — идеальная боевая машина. Однако он "
+"повидал то, чего не должен видеть ни один человек, и теперь его терзают "
+"мучительные воспоминания об ужасах войны. Хотя его попытки вернуться к "
+"мирной жизни приводят к конфликтам с властями, Рэмбо остаётся верным долгу и"
+" хочет лишь одного: обрести покой. Как для себя, так и для тех, кто ему "
+"дорог."
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_3/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/desc"
+msgstr ""
+"Полковник Сэмюэл Траутман — друг, наставник и некогда командир Рэмбо. Он "
+"один из немногих, кто по-настоящему понимает многострадального бывшего "
+"«зелёного берета». Там, где другие видят безжалостного солдата, обученного "
+"убивать, Траутман видит душу, истерзанную невообразимыми травмами, которая "
+"отчаянно нуждается в наставнике и поддержке. Будучи орденоносным ветераном "
+"боевых действий, полковник балансирует на тонкой грани между привязанностью "
+"к своему подопечному и верностью стране, но всё равно отстаивает интересы "
+"Рэмбо как никто другой."
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_4/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/desc"
+msgstr ""
+"Ко Бао — обладательница исключительных боевых навыков и находчивого ума, "
+"готовая бороться за свободу и светлое будущее не покладая рук. Но за фасадом"
+" волевой женщины скрывается чистое сердце и искренняя забота о судьбе "
+"близких. Ко Бао рискует всем, чтобы помочь Рэмбо, а упорство не покидает её "
+"даже перед лицом, казалось бы, непосильных испытаний. Она сохраняет доброту "
+"и сострадание до последнего и твёрдо верит, что никого (особенно Рэмбо) "
+"нельзя считать расходным материалом."
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1004_5/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
 "Восемнадцать лет службы в сухопутных войсках абсолютно не повлияли на "
@@ -9349,6 +9529,70 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp15_9/label"
 msgstr "Боевой пропуск: «Викинги»"
+
+msgid "notrecruitedtankman/tankmen_bp16_1/desc"
+msgstr ""
+"Заслуженный командир, который всегда доводит дело до конца. У Томаша два "
+"увлечения: бронированная техника и, как бы парадоксально это ни звучало, "
+"природа. Если он не занят тренировками с экипажем, вы, вероятно, найдёте его"
+" где-нибудь неподалёку, записывающего в свой блокнот очередной занимательный"
+" факт об окружающей флоре или фауне. Пытливый ум завёл этого бойца в джунгли"
+" центральной Африки, где в полной мере раскрывается его богатый танковый "
+"опыт и тяга к природе."
+
+msgid "notrecruitedtankman/tankmen_bp16_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_1/label"
+msgstr "Боевой пропуск, XVI сезон"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/desc"
+msgstr ""
+"Железная дисциплина Ватару не позволяет ему устраивать шумиху на ровном "
+"месте. Однако молодые годы, которые прошли за рулём мотоцикла, дают о себе "
+"знать и проявляются в бесконечной любви к машинам и страсти к соревнованиям,"
+" а также в абсолютном пренебрежении любыми правилами. И хотя лихие деньки, "
+"проведённые на залитых неоном улицах Токио, давно прошли, его страсть к "
+"напряжённым состязаниям никуда не исчезла, как и желание совершенствоваться "
+"каждый день."
+
+msgid "notrecruitedtankman/tankmen_bp16_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/label"
+msgstr "Боевой пропуск, XVI сезон"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/desc"
+msgstr ""
+"Конрад родом из уединённой деревушки, притаившейся среди бескрайних лесов на"
+" юго-западе Германии. Он всегда мечтал написать большой роман о родной "
+"земле, ведь, вне всяких сомнений, ничего не сможет превзойти его любимый "
+"Шварцвальд! У судьбы, однако, были иные планы. Командование отправило его на"
+" другой конец света — участвовать в испытаниях новейших танков. И хотя он "
+"скучает по свежему горному воздуху, чужие пейзажи вдохновляют на написание "
+"новых историй."
+
+msgid "notrecruitedtankman/tankmen_bp16_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/label"
+msgstr "Боевой пропуск, XVI сезон"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/desc"
+msgstr ""
+"Одарённый лингвист, полиглот и опытный переговорщик, Анжелика филигранно "
+"справляется с любыми, даже самыми сложными задачами. Она с лёгкостью находит"
+" подход к людям и не теряется в стрессовых ситуациях. Иногда кажется, чем "
+"сложнее условия, тем ей комфортнее. Ходят слухи, что в прошлом она "
+"участвовала в шпионских операциях. Анжелика никогда их не подтверждала, но и"
+" не опровергала, а на любой неловкий вопрос всегда находила ответ с присущим"
+" ей шармом и интеллектом."
+
+msgid "notrecruitedtankman/tankmen_bp16_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/label"
+msgstr "Боевой пропуск, XVI сезон"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -10187,9 +10431,8 @@ msgstr "Поиск боёв с техникой только X уровня"
 msgid "parameter/categories"
 msgstr "Категория: "
 
-msgid "periodicReward/comp7/body"
-msgstr ""
-"Особая награда, которая выдаётся ежедневно игрокам из таблицы лидеров."
+msgid "periodicReward/body"
+msgstr "?empty?"
 
 msgid "periodicReward/header"
 msgstr "Ежедневная награда"
@@ -11292,30 +11535,33 @@ msgstr ""
 "Член экипажа {cream_Open}%(tankman)s{cream_Close} достиг лимита навыков. "
 "Весь опыт сверх лимита будет потерян."
 
+msgid "quickTraining/FullTrainedTankman"
+msgstr ""
+"Член экипажа {cream_Open}%(tankman)s{cream_Close} достиг лимита навыков."
+
 msgid "quickTraining/LowPECrew"
 msgstr ""
-"Экипаж не отвечает требованиям для обучения: у некоторых его членов низкая "
-"эффективность навыков.{newLine}Перейдите в их "
-"{cream_Open}профили{cream_Close}, чтобы обучить их."
+"Экипаж не отвечает требованиям для обучения: у некоторых танкистов низкая "
+"эффективность навыков. Перейдите в их {cream_Open}профили{cream_Close}, "
+"чтобы обучить их."
 
 msgid "quickTraining/LowPENotFullCrew"
 msgstr ""
-"Экипаж не отвечает требованиям для обучения: он неполный, а у некоторых его "
-"членов низкая эффективность навыков.{newLine}Перейдите в их "
+"Экипаж не отвечает требованиям для обучения: состав неполный, а у некоторых "
+"танкистов низкая эффективность навыков. Перейдите в их "
 "{cream_Open}профили{cream_Close}, чтобы обучить их."
 
 msgid "quickTraining/LowPENotTrainedCrew"
 msgstr ""
-"Экипаж не отвечает требованиям для обучения: некоторые его члены обучены на "
-"другую машину, а у некоторых низкая эффективность навыков.{newLine}Перейдите"
-" в их {cream_Open}профили{cream_Close}, чтобы обучить их."
+"Экипаж не отвечает требованиям для обучения: некоторые танкисты обучены на "
+"другую машину, а у других низкая эффективность навыков. Перейдите в их "
+"{cream_Open}профили{cream_Close}, чтобы обучить их."
 
 msgid "quickTraining/LowPENotTrainedNotFullCrew"
 msgstr ""
-"Экипаж не отвечает требованиям для обучения: он неполный, некоторые его "
-"члены обучены на другую машину, а у некоторых низкая эффективность "
-"навыков.{newLine}Перейдите в их {cream_Open}профили{cream_Close}, чтобы "
-"обучить их."
+"Экипаж не отвечает требованиям для обучения: состав неполный, некоторые "
+"танкисты обучены на другую машину, а у других низкая эффективность навыков. "
+"Перейдите в их {cream_Open}профили{cream_Close}, чтобы обучить их."
 
 msgid "quickTraining/LowPEtipsPersonal"
 msgstr ""
@@ -11338,11 +11584,6 @@ msgstr ""
 "После изучения {cream_Open}%(tankman)s{cream_Close} достигнет лимита "
 "навыков. Весь опыт сверх лимита будет потерян."
 
-msgid "quickTraining/chooseAnyCrewMember"
-msgstr ""
-"Вы можете выбрать члена экипажа для ускоренного изучения его навыков с "
-"помощью свободного опыта или учебных материалов."
-
 msgid "quickTraining/lostXpTooltip/body"
 msgstr ""
 "Некоторые члены экипажа достигли лимита навыков. После изучения весь опыт "
@@ -11353,26 +11594,38 @@ msgstr "Дополнительный опыт будет потерян"
 
 msgid "quickTraining/notFullAndNotTrainedCrew"
 msgstr ""
-"Экипаж не отвечает требованиям для обучения: он неполный, а некоторые его "
-"члены обучены на другую машину.{newLine}Перейдите в их "
+"Экипаж не отвечает требованиям для обучения: состав неполный, а некоторые "
+"танкисты обучены на другую машину. Перейдите в их "
 "{cream_Open}профили{cream_Close}, чтобы обучить их."
 
 msgid "quickTraining/notFullCrew"
 msgstr ""
-"Экипаж не отвечает требованиям для применения учебных материалов ко всему экипажу:\n"
-"неполный экипаж."
+"Экипаж не отвечает требованиям для применения учебных материалов ко всем "
+"танкистам: неполный состав."
 
 msgid "quickTraining/notTrainedThisVehicle"
 msgstr ""
-"Экипаж не отвечает требованиям для обучения: некоторые его члены обучены на "
-"другую машину.{newLine}Перейдите в их {cream_Open}профили{cream_Close}, "
-"чтобы обучить их."
+"Экипаж не отвечает требованиям для обучения: некоторые танкисты обучены на "
+"другую машину. Перейдите в их {cream_Open}профили{cream_Close}, чтобы "
+"обучить их."
 
-msgid "quickTraining/unavailableTooltip/body"
+msgid "quickTraining/unavailable/body/allFullyTrained"
 msgstr "У всех членов экипажа изучены все навыки."
 
-msgid "quickTraining/unavailableTooltip/header"
+msgid "quickTraining/unavailable/body/lowEfficiency"
+msgstr "У этого члена экипажа низкая эффективность навыков на этой машине."
+
+msgid "quickTraining/unavailable/body/perkLimit"
+msgstr "Достигнут лимит изученных навыков."
+
+msgid "quickTraining/unavailable/header/allTrained"
 msgstr "Ускоренное обучение недоступно"
+
+msgid "quickTraining/unavailable/header/book"
+msgstr "Учебный материал недоступен"
+
+msgid "quickTraining/unavailable/header/freeXp"
+msgstr "Свободный опыт недоступен"
 
 msgid "quickTraining/xpEnoughforPostProgression"
 msgstr ""
@@ -11846,12 +12099,13 @@ msgstr ""
 
 msgid "roleSkill/startLevel/battle"
 msgstr ""
-"Вы получите %(startLevel)s заряд этого умения автоматически в начале боя"
+"Вы получите %(startLevel)s уровень заряда для этого умения автоматически в "
+"начале боя"
 
 msgid "roleSkill/startLevel/lobby"
 msgstr ""
-"Вы получите {colorTagOpen}%(startLevel)s заряд{colorTagClose} этого умения "
-"{colorTagOpen}автоматически{colorTagClose} в начале боя"
+"Вы получите {colorTagOpen}%(startLevel)s уровень заряда{colorTagClose} для "
+"этого умения {colorTagOpen}автоматически{colorTagClose} в начале боя"
 
 msgid "seasonalBattleSelector/tillEnd"
 msgstr "До конца сезона:"
@@ -12373,11 +12627,22 @@ msgstr ""
 msgid "soundQualityOn/header"
 msgstr "Низкое качество"
 
-msgid "squadBonus/comp7/description"
-msgstr "Играя взводом, вы можете получать дополнительные кредиты и опыт."
+msgid "specializationWotPlus/content/header"
+msgstr "Члены экипажа обучаются на 50% быстрее на премиум технике:"
 
-msgid "squadBonus/comp7/noExpDescription"
-msgstr "Вы можете получить дополнительные кредиты, играя во взводе."
+msgid "specializationWotPlus/content/transfer"
+msgstr ""
+"Бесплатная пересадка экипажа между машинами любого типа и уровня без штрафов"
+
+msgid "specializationWotPlus/description"
+msgstr "Эта машина идёт только с подпиской WoT Plus."
+
+msgid "specializationWotPlus/header"
+msgstr "Специализация"
+
+msgid "specializationWotPlus/vehicle"
+msgstr ""
+"%(level)s {par_Open}%(type)s{par_Close} {gold_Open}%(name)s{gold_Close}"
 
 msgid "squadBonus/complex/body"
 msgstr ""

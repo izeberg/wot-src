@@ -66,7 +66,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const PRICE_OFFSET_HORIZONTAL:int = 13;
       
-      private static const STAGE_SWITCHER_Y:int = -175;
+      private static const STAGE_SWITCHER_Y:int = -140;
       
       private static const ITEMS_BUTTON_OFFSET:int = 5;
       
@@ -228,6 +228,10 @@ package net.wg.gui.lobby.vehicleCustomization
          App.stage.removeEventListener(CustomizationEvent.ITEMS_POPOVER_CLOSED,this.onStageItemsPopoverClosedHandler);
          this.carousel.removeEventListener(CustomizationEvent.SHOW_ATTACHMENTS_VIDEO,this.onShowAttachmentsVideoHandler);
          this.carousel.removeEventListener(CustomizationEvent.SHOW_VEHICLES_SIDEBAR,this.onShowVehiclesSideBaHandler);
+         if(this._stageSwitcher != null)
+         {
+            this._stageSwitcher.removeEventListener(Event.RESIZE,this.onStageSwitcherResizeHandler);
+         }
          super.onBeforeDispose();
       }
       
@@ -328,10 +332,6 @@ package net.wg.gui.lobby.vehicleCustomization
             this.infoLabel.x = _width >> 1;
             this.tabBg.x = _width - this.tabBg.width >> 1;
             this.tabGlow.x = _width - this.tabGlow.width >> 1;
-            if(this._stageSwitcher != null)
-            {
-               this._stageSwitcher.x = (_width >> 1) - (this._stageSwitcher.width >> 1);
-            }
             if(this.helpMessage.visible)
             {
                this.helpMessage.x = _width - this.helpMessage.width >> 1;
@@ -365,8 +365,9 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function setBottomPanelTabsData(param1:CustomizationTabNavigatorVO) : void
       {
+         var _loc2_:Boolean = false;
          this.tabNavigator.setData(param1);
-         var _loc2_:Boolean = param1.selectedTab == Values.DEFAULT_INT;
+         _loc2_ = param1.selectedTab == Values.DEFAULT_INT;
          this.infoLabel.visible = _loc2_;
          this.tabNavigator.switchState(!_loc2_);
       }
@@ -470,6 +471,7 @@ package net.wg.gui.lobby.vehicleCustomization
             this._stageSwitcher.y = STAGE_SWITCHER_Y;
             addChildAt(this._stageSwitcher,0);
             registerFlashComponentS(this._stageSwitcher,CUSTOMIZATION_ALIASES.PROGRESSION_STYLES_STAGE_SWITCHER);
+            this._stageSwitcher.addEventListener(Event.RESIZE,this.onStageSwitcherResizeHandler);
             this._stageSwitcher.visible = true;
          }
          if(param1)
@@ -720,6 +722,15 @@ package net.wg.gui.lobby.vehicleCustomization
       private function onTabNavigatorResizeHandler(param1:Event) : void
       {
          this.updateVerticalPositions();
+      }
+      
+      private function onStageSwitcherResizeHandler(param1:Event) : void
+      {
+         if(this._stageSwitcher != null)
+         {
+            this._stageSwitcher.x = _width - this._stageSwitcher.width >> 1;
+         }
+         invalidateLayout();
       }
    }
 }

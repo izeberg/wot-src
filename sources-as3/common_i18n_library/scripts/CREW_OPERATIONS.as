@@ -29,6 +29,10 @@ package
       
       public static const RETURN_BUTTON_LABEL:String = "#crew_operations:return/button/label";
       
+      public static const RETURN_TOGGLE_LABEL:String = "#crew_operations:return/toggle/label";
+      
+      public static const RETURN_TOGGLE_DESCRIPTION:String = "#crew_operations:return/toggle/description";
+      
       public static const RETURN_ERROR_NOPREVIOUS:String = "#crew_operations:return/error/noPrevious";
       
       public static const RETURN_ERROR_ALLDEMOBILIZED:String = "#crew_operations:return/error/allDemobilized";

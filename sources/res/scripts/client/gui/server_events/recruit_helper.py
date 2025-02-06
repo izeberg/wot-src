@@ -1,5 +1,5 @@
 import typing
-from account_helpers.AccountSettings import AccountSettings, RECRUIT_NOTIFICATIONS
+from account_helpers.AccountSettings import AccountSettings, RECRUITS_NOTIFICATIONS
 from helpers.i18n import makeString as _ms
 from constants import ENDLESS_TOKEN_TIME
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
@@ -8,11 +8,12 @@ from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.gui_items import Tankman
+from gui.shared.utils.functions import replaceHyphenToUnderscore
 from helpers import dependency
 from items import tankmen, vehicles
 from items.components import skills_constants
 from items.components.component_constants import EMPTY_STRING
-from items.components.tankmen_components import SPECIAL_CREW_TAG
+from items.special_crew import CustomCrew
 from items.tankmen import TankmanDescr, MAX_SKILL_LEVEL
 from nations import NONE_INDEX, INDICES, NAMES as NationNames
 from shared_utils import first, findFirst
@@ -108,7 +109,7 @@ class _BaseRecruitInfo(object):
     __slots__ = ('_recruitID', '_expiryTime', '_nations', '_freeSkills', '_learntSkills',
                  '_freeXP', '_roleLevel', '_lastSkillLevel', '_roles', '_firstName',
                  '_lastName', '_group', '_icon', '_sourceID', '_isPremium', '_isFemale',
-                 '_hasNewSkill', '_tankmanSkill')
+                 '_hasNewSkill', '_crewCustomName')
 
     def __init__(self, recruitID, expiryTime, nations, learntSkills, freeSkills, freeXP, roleLevel, lastSkillLevel, firstName, lastName, roles, icon, group, sourceID, isPremium, isFemale, hasNewSkill):
         self._recruitID = recruitID
@@ -128,7 +129,7 @@ class _BaseRecruitInfo(object):
         self._isPremium = isPremium
         self._isFemale = isFemale
         self._hasNewSkill = hasNewSkill
-        self._tankmanSkill = self._getTankmanSkill()
+        self._crewCustomName = self._getCrewCustomName()
 
     def __cmp__(self, other):
         return cmp(self.getExpiryTimeStamp(), other.getExpiryTimeStamp())
@@ -262,8 +263,8 @@ class _BaseRecruitInfo(object):
              count, lastSkillLevel)
         return (0, 0)
 
-    def getTankmanSkill(self):
-        return self._tankmanSkill
+    def getCrewCustomName(self):
+        return self._crewCustomName
 
     def _getSkillsForDescr(self):
         return self._learntSkills
@@ -271,8 +272,8 @@ class _BaseRecruitInfo(object):
     def _getFreeSkillsForDescr(self):
         return ()
 
-    def _getTankmanSkill(self):
-        return Tankman.TankmanSkill
+    def _getCrewCustomName(self):
+        return EMPTY_STRING
 
     def __makeFakeDescriptor(self):
         vehType = vehicles.VehicleDescr(typeID=(0, 0)).type
@@ -357,25 +358,25 @@ class _TokenRecruitInfo(_BaseRecruitInfo):
         super(_TokenRecruitInfo, self).__init__(tokenName, expiryTime, nationNames, skills, freeSkills, freeXP, roleLevel, lastSkillLevel, firstName, lastName, allowedRoles, icon, group, sourceID, isPremium, isFemale, hasNewSkill)
 
     def getEventName(self):
-        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(self._sourceID)
+        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(replaceHyphenToUnderscore(self._sourceID))
         if dynAccessor.isValid() and dynAccessor.dyn('event').isValid():
             return backport.text(dynAccessor.event())
         return backport.text(R.strings.tooltips.notrecruitedtankman.base.event())
 
     def getLabel(self):
-        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(self._sourceID)
+        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(replaceHyphenToUnderscore(self._sourceID))
         if dynAccessor.isValid() and dynAccessor.dyn('label').isValid():
             return backport.text(dynAccessor.label())
         return backport.text(R.strings.tooltips.notrecruitedtankman.tankman.label())
 
     def getDescription(self):
-        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(self._sourceID)
+        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(replaceHyphenToUnderscore(self._sourceID))
         if dynAccessor.isValid() and dynAccessor.dyn('desc').isValid():
             return backport.text(dynAccessor.desc())
         return backport.text(R.strings.tooltips.notrecruitedtankman.tankman.desc())
 
     def getHowToGetInfo(self):
-        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(self._sourceID)
+        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(replaceHyphenToUnderscore(self._sourceID))
         if dynAccessor.isValid() and dynAccessor.dyn('howToGetInfo').isValid():
             return backport.text(dynAccessor.howToGetInfo())
         return backport.text(R.strings.tooltips.notrecruitedtankman.tankman.howToGetInfo())
@@ -399,18 +400,13 @@ class _TokenRecruitInfo(_BaseRecruitInfo):
     def _getFreeSkillsForDescr(self):
         return self.__freeSkills
 
-    def _getTankmanSkill(self):
+    def _getCrewCustomName(self):
         nationID = self._getDefaultNation()
         nationGroup = self._getNationGroup(nationID)
-        if self.__hasTagInTankmenGroup(nationID, nationGroup, SPECIAL_CREW_TAG.SABATON):
-            return Tankman.SabatonTankmanSkill
-        if self.__hasTagInTankmenGroup(nationID, nationGroup, SPECIAL_CREW_TAG.OFFSPRING):
-            return Tankman.OffspringTankmanSkill
-        if self.__hasTagInTankmenGroup(nationID, nationGroup, SPECIAL_CREW_TAG.YHA):
-            return Tankman.YhaTankmanSkill
-        if self.__hasTagInTankmenGroup(nationID, nationGroup, SPECIAL_CREW_TAG.WITCHES_CREW):
-            return Tankman.WitchesTankmanSkill
-        return super(_TokenRecruitInfo, self)._getTankmanSkill()
+        customCrewName = CustomCrew.getCrewName(nationID, nationGroup.groupID, self._isPremium)
+        if customCrewName:
+            return customCrewName
+        return super(_TokenRecruitInfo, self)._getCrewCustomName()
 
     def __parseTankmanData(self, nationID):
         empty = ([], EMPTY_STRING, EMPTY_STRING, EMPTY_STRING, False)
@@ -438,9 +434,6 @@ class _TokenRecruitInfo(_BaseRecruitInfo):
              nationConfig.getLastName(lastNameId), nationConfig.getIcon(iconId),
              nationGroup.isFemales)
 
-    def __hasTagInTankmenGroup(self, nationID, group, tag):
-        return tankmen.hasTagInTankmenGroup(nationID, group.groupID, self._isPremium, tag)
-
 
 def _getRecruitInfoFromQuest(questID):
     for quest, opName in getTankmanRewardQuests():
@@ -458,14 +451,6 @@ def _getRecruitInfoFromToken(tokenName, eventsCache=None):
         return
     else:
         return _TokenRecruitInfo(tokenName, expiryTime, **tokenData)
-
-
-def _getRecruitUniqueIDs():
-    result = []
-    for recruitID, count in getRecruitIDs().iteritems():
-        result.extend([ str(idx) + recruitID for idx in xrange(count) ])
-
-    return set(result)
 
 
 def getRecruitInfo(recruitID):
@@ -517,10 +502,37 @@ def getSourceIdFromQuest(questID):
 
 
 def getNewRecruitsCounter():
-    previous = AccountSettings.getNotifications(RECRUIT_NOTIFICATIONS)
-    current = _getRecruitUniqueIDs()
-    return len(current.difference(previous))
+    return sum(getNewRecruits().values())
 
 
-def setNewRecruitsVisited():
-    AccountSettings.setNotifications(RECRUIT_NOTIFICATIONS, _getRecruitUniqueIDs())
+def getNewRecruits():
+    previous = AccountSettings.getNotifications(RECRUITS_NOTIFICATIONS)
+    newRecruitsList = {}
+    for recruitID, count in getRecruitIDs().iteritems():
+        seenRecruitCount = previous.get(recruitID)
+        if seenRecruitCount:
+            needToSeeCount = count - seenRecruitCount
+            if not needToSeeCount:
+                continue
+            newRecruitsList[recruitID] = needToSeeCount
+        else:
+            newRecruitsList[recruitID] = count
+
+    return newRecruitsList
+
+
+def setNewRecruitVisited(recruitID):
+    recruitsVisited = AccountSettings.getNotifications(RECRUITS_NOTIFICATIONS)
+    recruitsVisited[recruitID] = recruitsVisited[recruitID] + 1 if recruitID in recruitsVisited else 1
+    AccountSettings.setNotifications(RECRUITS_NOTIFICATIONS, recruitsVisited)
+
+
+def removeRecruitForVisit(recruitID):
+    recruitsVisited = AccountSettings.getNotifications(RECRUITS_NOTIFICATIONS)
+    if recruitID in recruitsVisited:
+        newCount = recruitsVisited.get(recruitID) - 1
+        if newCount > 0:
+            recruitsVisited[recruitID] = newCount
+        else:
+            recruitsVisited.pop(recruitID)
+        AccountSettings.setNotifications(RECRUITS_NOTIFICATIONS, recruitsVisited)

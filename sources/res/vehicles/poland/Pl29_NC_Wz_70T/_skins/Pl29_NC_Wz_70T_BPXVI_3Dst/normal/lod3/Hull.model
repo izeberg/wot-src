@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl29_NC_Wz_70T/_skins/Pl29_NC_Wz_70T_BPXVI_3Dst/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl29_NC_Wz_70T/_skins/Pl29_NC_Wz_70T_BPXVI_3Dst/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.103567 -0.474695 -3.177132</min>
+		<max>2.072894 2.029772 3.284986</max>
+	</visibilityBox>
+</root>

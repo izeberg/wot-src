@@ -76,6 +76,15 @@ msgstr "Коробок в наличии: %(boxesCount)"
 msgid "awardViews/quantityTitle/noBoxes"
 msgstr "Коробки закончились"
 
+msgid "bonuses/customization/rarity/epic"
+msgstr "Эпический"
+
+msgid "bonuses/customization/rarity/legendary"
+msgstr "Легендарный"
+
+msgid "bonuses/customization/rarity/rare"
+msgstr "Редкий"
+
 msgid "bonuses/description/battle_booster"
 msgstr "Предбоевая инструкция"
 
@@ -99,6 +108,9 @@ msgstr "Фрагмент чертежа (%(nation)s)"
 
 msgid "bonuses/label/blueprints/universalFragment"
 msgstr "Универсальный фрагмент"
+
+msgid "bonuses/label/bpcoin"
+msgstr "Жетон Боевого пропуска"
 
 msgid "boxTooltip/description/text/default"
 msgstr ""
@@ -233,6 +245,9 @@ msgstr "Коробки закончились"
 
 msgid "helpers/doubleBreakLine"
 msgstr "<br/><br/>"
+
+msgid "helpers/lootBoxBonus"
+msgstr "%(boxName)s: %(count)s"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr ""
@@ -464,6 +479,9 @@ msgstr[0] "%(count) шт."
 msgstr[1] "%(count) шт."
 msgstr[2] "%(count) шт."
 
+msgid "statisticsRewards/label/attachment"
+msgstr "3D-объекты"
+
 msgid "statisticsRewards/label/battle_bonus_x5"
 msgstr "Задачи на x5 опыта за бой"
 
@@ -503,9 +521,6 @@ msgstr "Свободный опыт"
 msgid "statisticsRewards/label/gold"
 msgstr "Золото"
 
-msgid "statisticsRewards/label/lootBox_default"
-msgstr "Стандартная коробка"
-
 msgid "statisticsRewards/label/new_device_mi_gift"
 msgstr "Штатное оборудование"
 
@@ -541,6 +556,9 @@ msgstr "Сбросить статистику"
 
 msgid "statisticsRewards/resetButton/tooltipText"
 msgstr "Нажмите, чтобы сбросить статистику."
+
+msgid "statisticsRewards/tooltips/category/attachment"
+msgstr "%(num). %(label) %(count) %(rarity)"
 
 msgid "statisticsRewards/tooltips/category/compensationCount"
 msgid_plural "plural/statisticsRewards/tooltips/category/compensationCount"

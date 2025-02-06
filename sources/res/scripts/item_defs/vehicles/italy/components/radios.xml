@@ -210,10 +210,10 @@
 			<notInShop>true</notInShop>
 			<weight>45</weight>
 			<distance>745</distance>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>75</maxRegenHealth>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>95</maxRegenHealth>
 			<repairCost>
-				3.5
+				2.5
 				<!--BW_String-->
 			</repairCost>
 		</RV_4P>

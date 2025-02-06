@@ -13,6 +13,8 @@ package net.wg.data.vo
       
       private var _statesLinkage:String = "";
       
+      private var _shineLinkage:String = "";
+      
       private var _disableBitmapSrc:String = "";
       
       private var _toggleIndicatorLinkage:String = "";
@@ -29,9 +31,11 @@ package net.wg.data.vo
       
       private var _shadowFilter:DropShadowFilter = null;
       
+      private var _shineWidth:uint = 0;
+      
       private var _disposed:Boolean = false;
       
-      public function UniversalStyle(param1:String, param2:String, param3:String, param4:String, param5:uint, param6:uint, param7:Dictionary, param8:DropShadowFilter)
+      public function UniversalStyle(param1:String, param2:String, param3:String, param4:String, param5:uint, param6:uint, param7:Dictionary, param8:DropShadowFilter, param9:String, param10:uint)
       {
          super();
          this._statesLinkage = param1;
@@ -43,6 +47,8 @@ package net.wg.data.vo
          this._tfStateColors = param7;
          this._displayObjectsCash = new Vector.<IUniversalBtnStyledDisplayObjects>();
          this._shadowFilter = param8;
+         this._shineLinkage = param9;
+         this._shineWidth = param10;
       }
       
       public function addStyledDisplayObjects(param1:IUniversalBtnStyledDisplayObjects) : void
@@ -74,6 +80,7 @@ package net.wg.data.vo
          }
          this._displayObjectsCash.splice(0,this._displayObjectsCash.length);
          this._displayObjectsCash = null;
+         this._shadowFilter = null;
       }
       
       public function getStyledDisplayObjects() : IUniversalBtnStyledDisplayObjects
@@ -128,6 +135,16 @@ package net.wg.data.vo
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      public function get shineLinkage() : String
+      {
+         return this._shineLinkage;
+      }
+      
+      public function get shineWidth() : uint
+      {
+         return this._shineWidth;
       }
    }
 }

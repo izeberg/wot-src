@@ -1044,6 +1044,9 @@ msgstr "Фрагменты чертежей техники:"
 msgid "bonusName/bpcoin"
 msgstr "Жетоны"
 
+msgid "bonusName/bptaler"
+msgstr "Монеты"
+
 msgid "bonusName/brcoin"
 msgstr "Стальные печати"
 
@@ -1248,6 +1251,9 @@ msgstr "Ежедневный призовой бой."
 msgid "bonusName/slots"
 msgstr "Слотов в Ангаре"
 
+msgid "bonusName/stpcoin"
+msgstr "Печати удачи"
+
 msgid "bonusName/style"
 msgstr "Стиль"
 
@@ -1280,6 +1286,9 @@ msgstr "Личный резерв: «%(name)s» (x%(count)s)"
 
 msgid "bonuses/bpcoin/description"
 msgstr "%(value)s жетонов"
+
+msgid "bonuses/bptaler/description"
+msgstr "Монеты: %(value)s"
 
 msgid "bonuses/compensation/body"
 msgstr ""
@@ -1446,18 +1455,6 @@ msgstr "Истекает через %H ч %M мин"
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Истекает через %MM:%SS"
-
-msgid "dailyQuests/comp7/nextTasks"
-msgstr "5 новых задач через:"
-
-msgid "dailyQuests/comp7/progressCounter"
-msgstr "%(current)d%(separator)s%(total)d"
-
-msgid "dailyQuests/comp7/questsCounter"
-msgstr "%(current)d / %(total)d"
-
-msgid "dailyQuests/comp7/reward"
-msgstr "Заберите награду!"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "Провести бой"

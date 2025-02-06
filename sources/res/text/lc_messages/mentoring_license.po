@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-03 10:00+0300\n"
+"PO-Revision-Date: 2024-09-03 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MentoringLicenseAwards/button/primary"
+msgstr "К ускоренному обучению"
+
+msgid "MentoringLicenseAwards/button/secondary"
+msgstr "Так точно!"
+
+msgid "MentoringLicenseAwards/title"
+msgstr "СЕРТИФИКАТ НАСТАВНИКА"
+
+msgid "MentoringLicenseAwards/underTitle"
+msgstr ""
+"Предмет, начисленный на ваш аккаунт, позволяет перевести опыт одного члена экипажа другому той же нации.\n"
+"Вы можете использовать его на экране ускоренного обучения."
+
+msgid "assignmentDialog/confirm"
+msgstr ""
+"Чтобы подтвердить, введите количество опыта члена экипажа, выбранного для "
+"перевода."
+
+msgid "assignmentDialog/price"
+msgstr "Стоимость:"
+
+msgid "assignmentDialog/subtitle"
+msgstr "Перевод всего опыта между членами экипажа"
+
+msgid "assignmentDialog/title"
+msgstr "Подтверждение перевода"
+
+msgid "assignmentDialog/warning/oneWay"
+msgstr ""
+"Этот член экипажа будет демобилизован\n"
+"без возможности восстановления."
+
+msgid "assignmentDialog/warning/xpLose"
+msgstr "{xpLose} дополнительного опыта будет потеряно."
+
+msgid "dialogue/description"
+msgstr ""
+"Предмет снаряжения, позволяющий перевести весь опыт одного члена экипажа "
+"другому той же нации."
+
+msgid "mentorAssigment/card/lostXP"
+msgstr ""
+"{orange_Open}Будет потеряно дополнительного опыта:{orange_Close}%(amount)s"
+
+msgid "mentorAssigment/card/select"
+msgstr "ВЫБРАТЬ"
+
+msgid "mentorAssigment/card/totalXP"
+msgstr "Всего опыта:%(amount)s"
+
+msgid "mentorAssigment/licensesAmount"
+msgstr "{yellow_Open}Сертификаты наставника:{yellow_Close} %(amount)s"
+
+msgid "mentorAssigment/noSuitableTankman"
+msgstr "Нет подходящих членов экипажа"
+
+msgid "mentorAssigment/tips/info"
+msgstr ""
+"Выберите члена экипажа для перевода всего опыта.\n"
+"Он будет демобилизован, а {cream_Open}%(name)s{cream_Close} получит весь опыт."
+
+msgid "mentorAssigment/tips/lostXP"
+msgstr ""
+"После перевода опыта {cream_Open}%(name)s{cream_Close} достигнет лимита "
+"навыков. Весь опыт сверх лимита будет потерян."
+
+msgid "mentorAssigment/title"
+msgstr "ВЫБОР НАСТАВНИКА"
+
+msgid "mentorAssigment/tooltip/fullyTrainedMentor"
+msgstr ""
+"Член экипажа {bond_Open}%(name)s{bond_Close} достиг лимита навыков и не "
+"может быть выбран для перевода опыта."
+
+msgid "multipleUserName"
+msgstr "Сертификаты наставника"
+
+msgid "serviceChannelMessages/TransferUsed/body"
+msgstr "Использовано сертификатов: %(amount)s"
+
+msgid "serviceChannelMessages/TransferXP/body"
+msgstr "Переведено опыта экипажа: "
+
+msgid "serviceChannelMessages/TransferXP/header"
+msgstr "Наставничество"
+
+msgid "serviceChannelMessages/TransferXP/lost"
+msgstr ""
+"<font color='#8C8C7E'>Потеряно дополнительного опыта: <font "
+"color='#E9E2BF'>%(xpLost)s</font><br>"
+
+msgid "serviceChannelMessages/adding/header"
+msgstr "Сертификат наставника"
+
+msgid "serviceChannelMessages/adding/text"
+msgstr ""
+"У вас есть сертификат наставника.\n"
+"Для применения перейдите к <font color='#E9E2BF'>ускоренному обучению</font>."
+
+msgid "storage/description"
+msgstr ""
+"Позволяет перевести опыт одного члена экипажа\n"
+"другому той же нации."
+
+msgid "storage/userName"
+msgstr "Сертификат наставника"
+
+msgid "userName"
+msgstr "Сертификат наставника"

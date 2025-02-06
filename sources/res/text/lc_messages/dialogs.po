@@ -572,24 +572,6 @@ msgstr "Закрыть"
 msgid "common/submit"
 msgstr "Продолжить"
 
-msgid "comp7/deserter/cancel"
-msgstr "Отменить"
-
-msgid "comp7/deserter/message"
-msgstr ""
-"Сражение ещё не завершено. Выходя из боя до его завершения, вы подставляете команду.\n"
-"К вам будет {brown_open}применено дисциплинарное взыскание.{brown_close}\n"
-"Вы уверены, что хотите покинуть бой?"
-
-msgid "comp7/deserter/msgTitle"
-msgstr "Вы потеряете очки рейтинга!"
-
-msgid "comp7/deserter/submit"
-msgstr "Бежать"
-
-msgid "comp7/deserter/title"
-msgstr "Бегство с поля боя"
-
 msgid "confirmBattleBoosterBuyAndInstall/cancel"
 msgstr "Отменить"
 
@@ -2192,16 +2174,6 @@ msgstr ""
 "Вы нарушили игровые правила на карте {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} в {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
 "Доступ к боям режима {whiteSpanish_Open}«%(mode)s»{whiteSpanish_Close} временно заблокирован."
 
-msgid "punishmentWindow/message/ban/comp7"
-msgstr ""
-"Вы нарушили игровые правила на карте {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} в {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
-"Вы оштрафованы на {whiteSpanish_Open}%(penalty)s{whiteSpanish_Close} очков рейтинга, доступ к боям режима {whiteSpanish_Open}«Натиск»{whiteSpanish_Close} временно заблокирован."
-
-msgid "punishmentWindow/message/ban/comp7/qualification"
-msgstr ""
-"Вы нарушили игровые правила на карте {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} в {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
-"Доступ к боям режима {whiteSpanish_Open}«Натиск»{whiteSpanish_Close} временно заблокирован, ваш рейтинг был снижен."
-
 msgid "punishmentWindow/message/penalty"
 msgstr ""
 "Вы нарушили игровые правила на карте {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} в {whiteSpanish_Open}%(time)s{whiteSpanish_Close}\n"
@@ -2487,6 +2459,11 @@ msgid "recruit/warning/premiumVehicle"
 msgstr ""
 "Членов экипажа не нужно рекрутировать на премиум технику. Вы можете "
 "пересадить экипаж на премиум машину того же типа без штрафов."
+
+msgid "recruit/warning/slotChanged"
+msgstr ""
+"Этого члена экипажа нельзя рекрутировать на выбранную машину. Он будет "
+"отправлен в Казарму."
 
 msgid "recruitConversionConfirm/warning"
 msgstr ""
@@ -2801,11 +2778,6 @@ msgid "retrain/warning/irrelevantPerkAndPrem"
 msgstr ""
 "Экипаж можно пересадить на премиум машину того же типа без переобучения и "
 "штрафов, однако неподходящие навыки нужно сбросить вручную."
-
-msgid "retrain/warning/premiumVehicle"
-msgstr ""
-"Членов экипажа можно пересадить на премиум машину того же типа без "
-"переобучения и штрафов."
 
 msgid "rudyInfo/message"
 msgstr ""

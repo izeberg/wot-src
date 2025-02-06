@@ -86,7 +86,6 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -195,6 +194,5 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 	</deferred>
 </root>

@@ -5084,6 +5084,7 @@ class WGGunRotatorImpl(pybind11_object):
 	isDispersionChanged = property(lambda self: None)
 	isFixed = property(lambda self: None)
 	isGunMoved = property(lambda self: None)
+	isHullPitchAimingAvailable = property(lambda self: None)
 	isLocked = property(lambda self: None)
 	lockedGunRotationSpeed = property(lambda self: None)
 	pitchOrigin = property(lambda self: None)

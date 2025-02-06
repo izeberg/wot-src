@@ -1072,7 +1072,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank role_LT_universal HD lockExceptProgression inGame scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
+		<tags>lightTank role_LT_universal HD lockExceptProgression scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
 		<level>7</level>
 	</F69_AMX13_57_100_GrandFinal>
 	<F68_AMX_Chasseur_de_char_46>
@@ -1102,7 +1102,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank role_LT_universal HD inGame scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
+		<tags>lightTank role_LT_universal HD scout improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
 		<level>7</level>
 	</F69_AMX13_57_100>
 	<F65_FCM_50t>
@@ -1184,11 +1184,11 @@
 		<shortDescriptionSpecial>#france_vehicles:F128_SFAC_105_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F128_SFAC_105_long_special</longDescriptionSpecial>
 		<price>
-			100
+			9950
 			<gold/>
 		</price>
 		<notInShop>True</notInShop>
-		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG siegeMode dualgun charger extraHealthReserve_class1_user antifragmentationLining_medium_user secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG siegeMode dualgun charger extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</F128_SFAC_105>
 	<F39_AMR_P103>

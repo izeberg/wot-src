@@ -143,6 +143,45 @@ class DomainOption(pybind11_object):
 
 DomainServer = DomainOption.DomainServer
 
+class ISingleton(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CGF'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'ISingleton'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class EventsSingleton(ISingleton):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CGF'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'EventsSingleton'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def postEvent(self, *args, **kwargs): pass
+
+
 class GameObject(pybind11_object):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
@@ -211,6 +250,25 @@ class HierarchyManager(pybind11_object):
 	def hasChildren(self, *args, **kwargs): pass
 	def hasParent(self, *args, **kwargs): pass
 	roots = property(lambda self: None)
+
+
+class IEvent(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CGF'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'IEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
 
 LockDomain = DomainOption.LockDomain
 
@@ -402,6 +460,25 @@ class Reaction(pybind11_object):
 	def __subclasshook__(*args, **kwargs): pass
 
 
+class SingletonAccessor(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CGF'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'SingletonAccessor'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(self, *args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
 class World(pybind11_object):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
@@ -437,6 +514,7 @@ def dumpCgfState(*args, **kwargs): pass
 def dumpCgfWorldHierarchy(*args, **kwargs): pass
 def dumpTickGraph(*args, **kwargs): pass
 def enableCompletely(*args, **kwargs): pass
+def findSingleton(*args, **kwargs): pass
 def getAllWorlds(*args, **kwargs): pass
 def getManager(*args, **kwargs): pass
 def hotReload(*args, **kwargs): pass
@@ -451,7 +529,9 @@ def loadGameObjectIntoHierarchy(*args, **kwargs): pass
 def loadGameObjectSection(*args, **kwargs): pass
 def loadGameObjectsSpace(*args, **kwargs): pass
 def registerComponent(*args, **kwargs): pass
+def registerEvent(*args, **kwargs): pass
 def registerManager(*args, **kwargs): pass
+def registerModule(*args, **kwargs): pass
 def registerModulePath(*args, **kwargs): pass
 def removeGameObject(*args, **kwargs): pass
 def removeNetworkEntity(*args, **kwargs): pass

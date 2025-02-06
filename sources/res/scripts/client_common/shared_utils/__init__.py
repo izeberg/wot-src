@@ -3,7 +3,7 @@ from functools import partial, wraps
 import typing, BigWorld
 from adisp import adisp_async
 if typing.TYPE_CHECKING:
-    from typing import Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Type, TypeVar, Union
+    from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Type, TypeVar, Union
     T = TypeVar('T')
     R = TypeVar('R')
 _logger = logging.getLogger(__name__)
@@ -74,6 +74,11 @@ def safeIndexOf(item, collection, default=None):
     if item in collection:
         return collection.index(item)
     return default
+
+
+def safeCall(function, *args, **kwargs):
+    if callable(function):
+        return function(*args, **kwargs)
 
 
 def notImplementedCall(taskID, onNotImplementedCall=None):

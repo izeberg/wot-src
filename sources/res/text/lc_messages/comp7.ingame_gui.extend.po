@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-07-06 18:34+0200\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "player_errors/equipment/fastRecharge/vehicleIsNotRecharged"
+msgstr "Недоступно: машина не на перезарядке."
+
+msgid "player_errors/equipment/fastRecharge/vehicleIsOnFastRecharge"
+msgstr "Недоступно: время перезарядки уже уменьшено."
+
+msgid "player_errors/equipment/hunter/noDamagedEnemyVehicles"
+msgstr "Недоступно: нет повреждённых выстрелами машин противника."
+
+msgid "player_errors/equipment/hunter/vehicleIsNotDamaged"
+msgstr "Недоступно: восстановление прочности не требуется."
+
+msgid "player_errors/equipment/roleSkill/alreadyActivated"
+msgstr "Ролевой навык «%(name)s» уже активирован."
+
+msgid "player_errors/equipment/roleSkill/cooldown"
+msgstr "Ролевой навык «%(name)s» недоступен: перезарядка."
+
+msgid "player_errors/equipment/roleSkill/unavailable"
+msgstr "Ролевой навык «%(name)s» недоступен: нет заряда."
+
+msgid "player_messages/equipment/roleSkill/applied"
+msgstr "Ролевой навык «%(name)s» активирован!"
+
+msgid "player_messages/equipment/roleSkill/promoted"
+msgstr "Уровень заряда ролевого навыка «%(name)s» повышен!"
+
+msgid "player_messages/equipment/roleSkill/ready"
+msgstr "Ролевой навык «%(equipment)s» готов к активации."

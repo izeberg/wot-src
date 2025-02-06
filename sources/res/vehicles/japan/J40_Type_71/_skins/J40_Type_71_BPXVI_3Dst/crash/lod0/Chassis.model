@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/crash/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.673730 -0.000647 -4.696088</min>
+		<max>1.673730 1.205599 3.355065</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

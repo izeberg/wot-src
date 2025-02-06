@@ -81,9 +81,9 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_hideTeaserTimer()
 
-    def as_showSwitchToAmmunitionS(self):
+    def as_animateHangarViewsS(self, isShow):
         if self._isDAAPIInited():
-            return self.flashObject.as_showSwitchToAmmunition()
+            return self.flashObject.as_animateHangarViews(isShow)
 
     def as_setDQWidgetLayoutS(self, layout):
         if self._isDAAPIInited():

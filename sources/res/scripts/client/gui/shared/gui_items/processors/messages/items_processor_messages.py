@@ -309,3 +309,12 @@ class BattleBoostersApplyProcessorMessage(BaseLayoutProcessorMessage):
 
     def _getOperation(self):
         return 'apply'
+
+
+class EasyTankEquipApplyProcessorMessage(BaseLayoutProcessorMessage):
+
+    def _getLayoutPrefix(self):
+        return 'easyTankEquip'
+
+    def _getOperation(self):
+        return 'apply'

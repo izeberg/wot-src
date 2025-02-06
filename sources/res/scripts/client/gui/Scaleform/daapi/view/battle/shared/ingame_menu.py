@@ -1,4 +1,4 @@
-import BigWorld, constants, BattleReplay
+import constants, BattleReplay
 from adisp import adisp_process
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.genConsts.INGAMEMENU_CONSTANTS import INGAMEMENU_CONSTANTS
@@ -23,8 +23,7 @@ from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.game_control import IServerStatsController
 from gui.Scaleform.locale.MENU import MENU
-from gui.Scaleform.daapi.view.battle.shared.premature_leave import showLeaverAliveWindow, showExitWindow, showLeaverReplayWindow, showComp7LeaverAliveWindow
-from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
+from gui.Scaleform.daapi.view.battle.shared.premature_leave import showLeaverAliveWindow, showExitWindow, showLeaverReplayWindow
 
 class IngameMenu(IngameMenuMeta, BattleGUIKeyHandler):
     serverStats = dependency.descriptor(IServerStatsController)
@@ -146,9 +145,6 @@ class IngameMenu(IngameMenuMeta, BattleGUIKeyHandler):
 
     @staticmethod
     def _showLeaverAliveWindow(isPlayerIGR):
-        player = BigWorld.player()
-        if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.COMP7):
-            return showComp7LeaverAliveWindow()
         return showLeaverAliveWindow(isPlayerIGR)
 
     @staticmethod

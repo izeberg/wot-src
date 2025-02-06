@@ -107,13 +107,23 @@ msgid "return/error/alreadyOnPlaces"
 msgstr "Экипаж уже на местах"
 
 msgid "return/error/noPrevious"
-msgstr "Проведите хотя бы один бой на данной машине"
+msgstr ""
+"Проведите хотя бы один бой\n"
+"на данной машине"
 
 msgid "return/error/vehicleInBattle"
 msgstr "Машина в бою"
 
 msgid "return/title"
 msgstr "Возврат экипажа в машину"
+
+msgid "return/toggle/description"
+msgstr ""
+"Автоматически возвращать экипаж, который был в предыдущем бою на этой "
+"машине."
+
+msgid "return/toggle/label"
+msgstr "Возврат экипажа"
 
 msgid "return/warning/memberDemobilized/tooltip/body"
 msgstr ""

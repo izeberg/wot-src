@@ -332,13 +332,28 @@
 		<shortDescriptionSpecial>#usa_vehicles:A176_M103_110_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A176_M103_110_long_special</longDescriptionSpecial>
 		<price>
-			100
+			12900
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>9</level>
 	</A176_M103_110>
+	<A176_M103_110_CFE_R>
+		<id>261</id>
+		<userString>#usa_vehicles:A176_M103_110_CFE_R</userString>
+		<description>#usa_vehicles:A176_M103_110_CFE_R_descr</description>
+		<shortUserString>#usa_vehicles:A176_M103_110_CFE_R_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A176_M103_110_CFE_R_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A176_M103_110_CFE_R_long_special</longDescriptionSpecial>
+		<price>
+			12900
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals lockOutfit restoreWithStyle</tags>
+		<level>9</level>
+	</A176_M103_110_CFE_R>
 	<A34_M24_Chaffee>
 		<id>38</id>
 		<userString>#usa_vehicles:M24_Chaffee</userString>
@@ -829,7 +844,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD secret testTank improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special earn_crystals</tags>
+		<tags>heavyTank role_HT_support HD secret testTank improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special earn_crystals</tags>
 		<level>10</level>
 	</A150_MBT_B>
 	<A149_AMBT>
@@ -1100,6 +1115,21 @@
 		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user lockOutfit restoreWithStyle</tags>
 		<level>6</level>
 	</A172_M4A3E8_Sherman_BPXIV>
+	<A167_TS_6>
+		<id>195</id>
+		<userString>#usa_vehicles:A167_TS_6</userString>
+		<description>#usa_vehicles:A167_TS_6_descr</description>
+		<shortUserString>#usa_vehicles:A167_TS_6_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A167_TS_6_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A167_TS_6_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_assault HD secret testTank improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
+		<level>9</level>
+	</A167_TS_6>
 	<A160_M24_594>
 		<id>196</id>
 		<userString>#usa_vehicles:A160_M24_594</userString>
@@ -1127,7 +1157,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD special patton inGame improvedVentilation_class2_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank role_MT_universal HD special patton improvedVentilation_class2_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
 		<level>9</level>
 	</A169_PattonIII_120>
 	<A136_T42>
@@ -1359,7 +1389,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD special inGame improvedVentilation_class2_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
+		<tags>mediumTank role_MT_universal HD special improvedVentilation_class2_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>10</level>
 	</A95_T95_E6>
 	<A104_M4A3E8A>
@@ -1955,4 +1985,19 @@
 		<level>5</level>
 		<notInShop>True</notInShop>
 	</A1034_M24_Chaffee_StoryMode>
+	<A171_IMT>
+		<id>259</id>
+		<userString>#usa_vehicles:A171_IMT</userString>
+		<shortUserString>#usa_vehicles:A171_IMT_short</shortUserString>
+		<description>#usa_vehicles:A171_IMT_descr</description>
+		<shortDescriptionSpecial>#usa_vehicles:A171_IMT_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A171_IMT_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<level>8</level>
+	</A171_IMT>
 </root>

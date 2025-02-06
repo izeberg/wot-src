@@ -568,9 +568,9 @@ msgstr ""
 
 msgid "battlePassH/switch_started/body"
 msgstr ""
-"Бойцы! Это особенный Боевой пропуск, и вы сейчас в этом убедитесь.\n"
+"Бойцы! Это особенный Боевой пропуск, и сейчас вы в этом убедитесь.\n"
 "\n"
-"За прохождение прогрессии вы получите премиум танк в особенном 3D-стиле, элементы внешнего вида и многое другое!"
+"За прохождение прогрессии вы получите премиум машину с особенным 3D-стилем, элементы внешнего вида и многое другое!"
 
 msgid "battlePassH/switch_started/title"
 msgstr "Боевой пропуск: «%(seasonName)s»"
@@ -1548,6 +1548,27 @@ msgstr "Получены трофеи: %(value)s"
 
 msgid "earning/trophy/single"
 msgstr "Получен трофей: «%(value)s»"
+
+msgid "easyTankEquip/switch_pause_off/body"
+msgstr ""
+"Быстрое обслуживание снова доступно. Приносим извинения за неудобства."
+
+msgid "easyTankEquip/switch_pause_on/body"
+msgstr "Быстрое обслуживание временно недоступно: идут технические работы."
+
+msgid "easyTankEquip_apply/error"
+msgstr ""
+"Ошибка при применении шаблона быстрого обслуживания. Попробуйте позже."
+
+msgid "easyTankEquip_apply/not_enough_money"
+msgstr ""
+"Ошибка при применении шаблона быстрого обслуживания: недостаточно средств "
+"для покупки."
+
+msgid "easyTankEquip_apply/wallet_not_available"
+msgstr ""
+"Быстрое обслуживание недоступно. Всё ваше золото станет доступно после "
+"автоматического восстановления работоспособности Единого кошелька."
 
 msgid "epicBattles/levelUp/awards"
 msgstr "Получена награда:"
@@ -3511,6 +3532,9 @@ msgstr "Ошибка возврата экипажа. Неправильная �
 msgid "return_crew/not_enough_space"
 msgstr "Для высаживаемого экипажа недостаточно места в Казарме."
 
+msgid "return_crew/return_unavailable"
+msgstr "Некоторые члены экипажа не могут вернуться в машину."
+
 msgid "return_crew/server_error"
 msgstr "Возврат экипажа не выполнен. Попробуйте позже."
 
@@ -3827,6 +3851,9 @@ msgstr ""
 " уже привязана к учётной записи Wargaming.net. Дополнительную информацию "
 "можно узнать в Центре поддержки пользователей."
 
+msgid "tankman/tankmanToRemove"
+msgstr "Член экипажа демобилизован."
+
 msgid "techtree/action/expireTime"
 msgstr "%(days)s д"
 
@@ -4011,6 +4038,9 @@ msgid "training/error/swapTeams"
 msgstr ""
 "Произошла серверная ошибка при попытке поменять команды игроков местами. "
 "Попробуйте повторить операцию позже."
+
+msgid "transferXP/server_error"
+msgstr "Операция недоступна. Попробуйте позже."
 
 msgid "unit/error/wgshEvent/AccountDoesNotHavePermissions"
 msgstr "Действие недоступно. Недостаточно полномочий."
@@ -4599,6 +4629,9 @@ msgstr ""
 "Получен доступ к схеме модификаций техники. Вы можете совершить более тонкую"
 " ролевую настройку ваших машин и изменить их ТТХ с помощью различных "
 "модификаций."
+
+msgid "vehicle_auto_return/server_error"
+msgstr "Операция недоступна. Попробуйте позже."
 
 msgid "vehicle_buy/invalid_vehicle"
 msgstr "Покупка «%(vehName)s» не удалась. Неправильная машина."

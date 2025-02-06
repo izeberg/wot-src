@@ -1271,6 +1271,9 @@ msgstr "Добавлен компонент"
 msgid "platformCurrencyMsg/debited/bpbit"
 msgstr "Списано очков Боевого пропуска"
 
+msgid "platformCurrencyMsg/debited/bptaler"
+msgstr "Списано монет"
+
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "Списано стальных печатей"
 
@@ -1286,6 +1289,9 @@ msgstr "Списано личных очков славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Списано свободного опыта"
 
+msgid "platformCurrencyMsg/debited/stpcoin"
+msgstr "Списано печатей удачи"
+
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "Списано очков похода"
 
@@ -1294,6 +1300,9 @@ msgstr "Списано жетонов за выслугу лет"
 
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Начислено очков Боевого пропуска"
+
+msgid "platformCurrencyMsg/received/bptaler"
+msgstr "Начислено монет"
 
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "Начислено стальных печатей"
@@ -1309,6 +1318,9 @@ msgstr "Начислено личных очков славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Получено свободного опыта"
+
+msgid "platformCurrencyMsg/received/stpcoin"
+msgstr "Получено печатей удачи"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "Начислено очков похода"
@@ -1564,6 +1576,9 @@ msgstr "Получено очков Боевого пропуска: %(pointsDif
 msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
 msgstr "Получено стальных печатей: %(value)s"
 
+msgid "serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin"
+msgstr "Получено печатей удачи: %(value)s"
+
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "Машина уничтожена"
 
@@ -1791,6 +1806,10 @@ msgstr "Жетон академии"
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "Использованы нераспределённые очки"
 
+msgid "serviceChannelMessages/battlePass/freePointsUsed/postProgression/text"
+msgstr ""
+"Потрачено неиспользованных очков после активации Тропы престижа: %(points)s."
+
 msgid "serviceChannelMessages/battlePass/freePointsUsed/text"
 msgstr ""
 "Вы использовали нераспределённые очки Боевого пропуска: %(points)s для главы"
@@ -1798,6 +1817,12 @@ msgstr ""
 
 msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатное оборудование на выбор"
+
+msgid "serviceChannelMessages/battlePass/postProgressionActivated/text"
+msgstr "Тропа престижа активирована"
+
+msgid "serviceChannelMessages/battlePass/postProgressionPaused/text"
+msgstr "Тропа престижа приостановлена"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
 msgstr "Достигнут лимит очков"
@@ -1869,7 +1894,7 @@ msgstr "Продолжайте играть и зарабатывать очки
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"Вы завершили все главы Боевого пропуска %(season)s сезона.\n"
+"Вы прошли все этапы %(season)s сезона Боевого пропуска.\n"
 "Получена награда:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"
@@ -1934,6 +1959,16 @@ msgstr "Поздравляем!"
 
 msgid "serviceChannelMessages/battlePassReward/header/voted"
 msgstr "Начислена награда"
+
+msgid "serviceChannelMessages/battlePassReward/postProgression/newLevel/text"
+msgstr ""
+"Пройден этап Тропы престижа.\n"
+"Получена награда:"
+
+msgid "serviceChannelMessages/battlePassReward/postProgression/newLevels/text"
+msgstr ""
+"Пройдено этапов Тропы престижа: %(amount)s\n"
+"Получена награда:"
 
 msgid "serviceChannelMessages/battlePassReward/tman"
 msgstr "Член экипажа:"
@@ -2380,7 +2415,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "Финансовая операция"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "Специальные предложение Джейсона"
+msgstr "Аукцион"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Получено жетонов"

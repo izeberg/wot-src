@@ -62,68 +62,10 @@ msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "Очки Боевого пропуска"
 
 msgid "mode/battleRoyaleQueue/description"
-msgstr "Королевская битва"
+msgstr "Битва за трилистник"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "Стальной охотник"
-
-msgid "mode/comp7/battlePassTooltip/body"
-msgstr ""
-"Играя на технике X уровня в режиме "
-"{whiteSpanish_open}«Натиск»{whiteSpanish_close}, вы будете зарабатывать "
-"очки. Они нужны для продвижения по прогрессии Боевого пропуска."
-
-msgid "mode/comp7/battlePassTooltip/header"
-msgstr "Очки Боевого пропуска"
-
-msgid "mode/comp7/calendarTooltip"
-msgstr "Событие продлится до %(date)s"
-
-msgid "mode/comp7/description"
-msgstr ""
-"Соревновательный режим. 7x7 %(parSecondary_open)sI%(parSecondary_close)s "
-"X&nbsp;уровень"
-
-msgid "mode/comp7/seasonEnd/first"
-msgstr "Сезон Лазурной мантикоры завершён"
-
-msgid "mode/comp7/seasonEnd/second"
-msgstr "Сезон Алой мантикоры завершён"
-
-msgid "mode/comp7/seasonEnd/third"
-msgstr "Сезон Нефритовой мантикоры завершён"
-
-msgid "mode/comp7/seasonStart/first"
-msgstr "Сезон Лазурной мантикоры начнётся %(date)s"
-
-msgid "mode/comp7/seasonStart/second"
-msgstr "Сезон Алой мантикоры начнётся %(date)s"
-
-msgid "mode/comp7/seasonStart/third"
-msgstr "Сезон Нефритовой мантикоры начнётся %(date)s"
-
-msgid "mode/comp7/warning"
-msgstr "Ранговая неактивность"
-
-msgid "mode/comp7/widgetDescription/qualification"
-msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] ""
-"Завершите %(maxBattlesCount)s бой\n"
-"для прохождения квалификации."
-msgstr[1] ""
-"Завершите %(maxBattlesCount)s боя\n"
-"для прохождения квалификации."
-msgstr[2] ""
-"Завершите %(maxBattlesCount)s боёв\n"
-"для прохождения квалификации."
-
-msgid "mode/comp7/widgetDescription/status"
-msgstr ""
-"%(rank)s\n"
-"%(division)s"
-
-msgid "mode/comp7/yearEnd"
-msgstr "Год Мантикоры завершился"
 
 msgid "mode/epicBattle/condition"
 msgstr "30x30&nbsp;{par_open}I{par_close}&nbsp;%(levels)s&nbsp;уровни"

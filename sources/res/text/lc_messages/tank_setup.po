@@ -9,6 +9,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "abilities/actions/toInfoPage"
 msgstr "ПОДРОБНЕЕ О РЕЖИМЕ"
@@ -180,11 +186,20 @@ msgstr "Купить"
 msgid "dealPanel/fromStorage"
 msgstr "Со Склада:"
 
+msgid "dealPanel/fromVehicle"
+msgstr "Установлено:"
+
 msgid "dealPanel/repair"
 msgstr "Требуется ремонт"
 
 msgid "dealPanel/toBePaid"
 msgstr "К оплате:"
+
+msgid "dealPanel/tooltip/fromStorage"
+msgstr "На Складе"
+
+msgid "dealPanel/tooltip/fromVehicle"
+msgstr "Установлено на машину"
 
 msgid "dealPanel/tooltip/notEnough"
 msgstr "Недостаточно средств для покупки"
@@ -524,6 +539,9 @@ msgstr "Обменять"
 msgid "dialogs/goldExchange/default/status"
 msgstr "Курс обмена: %(gold)s = %(credits)s"
 
+msgid "dialogs/goldExchange/easyTankEquip/title"
+msgstr "Для быстрого обслуживания необходимо %(credits)s"
+
 msgid "dialogs/goldExchange/item/battleBooster"
 msgstr "инструкции"
 
@@ -638,6 +656,95 @@ msgstr ""
 
 msgid "dialogs/sell/text"
 msgstr "Стоимость продажи 1 ед.:"
+
+msgid "easyTankEquipView/alert/demountNotPossible"
+msgstr "Недостаточно ресурсов для демонтажа."
+
+msgid "easyTankEquipView/alert/loadCapacityNotEnough"
+msgstr "Установите ходовую с большей грузоподъёмностью."
+
+msgid "easyTankEquipView/alert/notFormed"
+msgstr "Для этой машины рекомендации недоступны"
+
+msgid "easyTankEquipView/alert/unableToMount"
+msgstr "Недостаточно грузоподъёмности для установки модуля."
+
+msgid "easyTankEquipView/consumables/presetNames/advanced"
+msgstr "Продвинутое"
+
+msgid "easyTankEquipView/consumables/presetNames/improved"
+msgstr "Усовершенствованное"
+
+msgid "easyTankEquipView/consumables/presetNames/standard"
+msgstr "Штатное"
+
+msgid "easyTankEquipView/consumables/title"
+msgstr "СНАРЯЖЕНИЕ"
+
+msgid "easyTankEquipView/crew/bunksAlert"
+msgstr ""
+"Недостаточно места в Казарме для перевода и операций с экипажем. Купите "
+"дополнительные койки."
+
+msgid "easyTankEquipView/crew/multiplier"
+msgstr "×%(count)s"
+
+msgid "easyTankEquipView/crew/presetNames/experienced"
+msgstr "Опытный экипаж"
+
+msgid "easyTankEquipView/crew/presetNames/newCrew"
+msgstr "Новый экипаж"
+
+msgid "easyTankEquipView/crew/recruit"
+msgid_plural "plural/easyTankEquipView/crew/recruit"
+msgstr[0] ""
+"%(count)s\n"
+"Новый член экипажа будет рекрутирован"
+msgstr[1] ""
+"%(count)s\n"
+"Новых члена экипажа будут рекрутированы"
+msgstr[2] ""
+"%(count)s\n"
+"Новых членов экипажа будут рекрутированы"
+
+msgid "easyTankEquipView/crew/title"
+msgstr "ЭКИПАЖ"
+
+msgid "easyTankEquipView/discount"
+msgstr "–%(value)s%"
+
+msgid "easyTankEquipView/installed"
+msgstr "Готов"
+
+msgid "easyTankEquipView/optDevices/presetNames/advanced"
+msgstr "Продвинутое"
+
+msgid "easyTankEquipView/optDevices/presetNames/standard"
+msgstr "Штатное"
+
+msgid "easyTankEquipView/optDevices/title"
+msgstr "ОБОРУДОВАНИЕ"
+
+msgid "easyTankEquipView/shells/presetNames/advanced"
+msgstr "Продвинутые"
+
+msgid "easyTankEquipView/shells/presetNames/standard"
+msgstr "Штатное"
+
+msgid "easyTankEquipView/shells/title"
+msgstr "БОЕКОМПЛЕКТ"
+
+msgid "easyTankEquipView/styles/builtInStyle"
+msgstr "На технику уже нанесён стиль"
+
+msgid "easyTankEquipView/styles/rent"
+msgstr "В аренду на %(battlesCount)s боёв за %(price)s"
+
+msgid "easyTankEquipView/styles/title"
+msgstr "ГОТОВЫЕ СТИЛИ"
+
+msgid "easyTankEquipView/title"
+msgstr "БЫСТРОЕ ОБСЛУЖИВАНИЕ"
 
 msgid "effects/name"
 msgstr "Эффект"
@@ -1853,46 +1960,72 @@ msgstr "км/ч"
 msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
+msgid "popularLoadouts/common"
+msgstr "Популярное"
+
+msgid "popularLoadouts/legendary"
+msgstr "Легендарное"
+
 msgid "popularLoadouts/noData"
-msgstr "Данные недоступны"
+msgstr "Нет данных"
 
-msgid "popularLoadouts/place/first"
-msgstr "1-й"
+msgid "popularLoadouts/noDataLegendary"
+msgstr "Нет данных"
 
-msgid "popularLoadouts/place/second"
-msgstr "2-й"
+msgid "popularLoadouts/tooltip/commonlyUsed"
+msgstr ""
+"%(whiteSpanish_Open)sПопулярное.%(whiteSpanish_Close)s Подобрано на основе "
+"текущих предпочтений в оборудовании среди всех игроков World of Tanks."
 
-msgid "popularLoadouts/place/third"
-msgstr "3-й"
+msgid "popularLoadouts/tooltip/conditions"
+msgstr "Сбор данных"
 
-msgid "popularLoadouts/title"
-msgstr "Популярные варианты оснащения"
+msgid "popularLoadouts/tooltip/dataForOnslaught"
+msgstr ""
+"Если по текущему сезону «Натиска» ещё нет информации, используются данные "
+"предыдущего сезона."
 
-msgid "popularLoadouts/tooltip/genericEquipment"
-msgstr "Показано стандартное, трофейное и усовершенствованное оборудование"
+msgid "popularLoadouts/tooltip/dataTaken"
+msgstr ""
+"Помощник доступен для %(whiteSpanish_Open)sСлучайных "
+"боёв%(whiteSpanish_Close)s и режима "
+"%(whiteSpanish_Open)s«Натиск»%(whiteSpanish_Close)s."
+
+msgid "popularLoadouts/tooltip/genericItems"
+msgstr "Отображены сводные данные по всем типам оборудования."
+
+msgid "popularLoadouts/tooltip/header"
+msgstr "Бонус подписки WoT Plus"
 
 msgid "popularLoadouts/tooltip/headerDescription"
 msgstr ""
-"Это особый бонус подписки WoT Plus, который предоставляет сводку по "
-"популярным вариантам оснащения для определённой машины, помогая понять "
-"текущие тенденции и предпочтения среди других танкистов."
+"Получайте точную информацию об оборудовании, собранную на основе миллионов "
+"проведённых сражений, и выкладывайтесь по максимуму в каждом бою."
 
 msgid "popularLoadouts/tooltip/headerTitle"
-msgstr "Популярные варианты оснащения"
+msgstr "Знаток оборудования"
 
-msgid "popularLoadouts/tooltip/notEnoughData/alternative"
-msgstr "Варианты для машины:"
+msgid "popularLoadouts/tooltip/legendary"
+msgstr ""
+"%(whiteSpanish_Open)sЛегендарное.%(whiteSpanish_Close)s Самое популярное "
+"оборудование среди игроков, достигших уровня «Легенда» в рейтинге WTR."
+
+msgid "popularLoadouts/tooltip/loadoutTypes"
+msgstr "Варианты оснащения"
+
+msgid "popularLoadouts/tooltip/notEnoughData/combinedDescription"
+msgstr ""
+"Предлагаемое оснащение основано на популярных вариантах для техники со "
+"схожим стилем игры."
 
 msgid "popularLoadouts/tooltip/notEnoughData/headerDescription"
-msgstr ""
-"По выбранной машине нет информации. Вы можете ознакомиться с вариантами "
-"оснащения для техники со схожим стилем игры."
+msgstr "Представлены данные для машины ниже со схожим стилем игры:"
 
 msgid "popularLoadouts/tooltip/notEnoughData/headerTitle"
-msgstr "Данные недоступны"
+msgstr "Информация об оснащении недоступна"
 
-msgid "popularLoadouts/tooltip/randomBattleCalculation"
-msgstr "Информация на основе режима «Случайный бой»"
+msgid "popularLoadouts/vehicleNotAvailable"
+msgstr "Выбранная машина не подходит для этого режима"
 
 msgid "section/battleAbilities"
 msgstr "БОЕВЫЕ РЕЗЕРВЫ"

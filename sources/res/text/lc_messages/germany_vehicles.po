@@ -482,6 +482,9 @@ msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 msgid "Chassis_G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
+msgid "Chassis_G98_WT_auf_E_100_Phonix"
+msgstr "WT auf E 100 Phönix"
+
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
 
@@ -2045,8 +2048,18 @@ msgstr ""
 "благоприятное время, полное удачи и благополучия, ведь тогда Белый дракон "
 "делится своей бесконечной милостью со смертным миром."
 
+msgid "G154_Kpz_07_RH_LN_long_special"
+msgstr ""
+"Танк находится на стыке типов СТ и ЛТ и обладает отличной скоростью и "
+"манёвренностью, что позволяет оперативно занимать выгодные позиции на поле "
+"боя. Его 90-мм орудие отличается хорошей стабилизацией и скорострельностью. "
+"Вместе с тем показатели бронепробития и разового урона не самые высокие."
+
 msgid "G154_Kpz_07_RH_LN_short"
 msgstr "Белый дракон"
+
+msgid "G154_Kpz_07_RH_LN_short_special"
+msgstr "Хорошая динамика и урон в минуту"
 
 msgid "G154_Kpz_07_RH_descr"
 msgstr ""
@@ -2616,6 +2629,12 @@ msgstr "Заяц"
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "Заяц"
 
+msgid "G25_PzII_Luchs_SHXXI_L"
+msgstr "404"
+
+msgid "G25_PzII_Luchs_SHXXI_L_short"
+msgstr "404"
+
 msgid "G32_PzV_PzIV_CN_long_special"
 msgstr ""
 "Немецкий средний танк VI уровня. Обладает хорошей огневой мощью и отличной "
@@ -2788,6 +2807,30 @@ msgstr ""
 
 msgid "G92_VK7201_short_special"
 msgstr "Отличная броня, хороший разовый урон"
+
+msgid "G98_WT_auf_E_100_Phonix"
+msgstr "WT auf E 100 Phönix"
+
+msgid "G98_WT_auf_E_100_Phonix_descr"
+msgstr ""
+"Вариант установки зенитных орудий большого калибра на шасси танка Е 100. "
+"Предполагалось использовать пушку калибром 128 миллиметров с магазинной "
+"системой заряжания. Разработка проекта была остановлена в связи с окончанием"
+" Второй мировой войны."
+
+msgid "G98_WT_auf_E_100_Phonix_long_special"
+msgstr ""
+"Немецкая ПТ-САУ X уровня, обладающая мощным орудием с барабанной системой "
+"заряжания. Огромная огневая мощь позволяет быстро уничтожать технику "
+"противника, а высокое бронепробитие и хорошая точность дают возможность "
+"вести огонь с дальних дистанций. В то же время у машины практически нет "
+"брони."
+
+msgid "G98_WT_auf_E_100_Phonix_short"
+msgstr "Phönix"
+
+msgid "G98_WT_auf_E_100_Phonix_short_special"
+msgstr "Великолепное орудие, вращающаяся башня"
 
 msgid "G98_Waffentrager_E100_P_cn"
 msgstr "Waffenträger auf E 100 (P) Mod"
@@ -3659,6 +3702,12 @@ msgstr "Maybach HL 295 (A)"
 
 msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
+
+msgid "Maybach_HL_234P60_P"
+msgstr "Maybach Neues Projekt P"
+
+msgid "Maybach_HL_234P60_P_short"
+msgstr "Maybach Neues Projekt P"
 
 msgid "Maybach_HL_234P60_WT"
 msgstr "Maybach Neues Projekt A"
@@ -5007,6 +5056,9 @@ msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 msgid "Turret_1_G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
+msgid "Turret_1_G98_WT_auf_E_100_Phonix"
+msgstr "WT auf E 100 Phönix"
+
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
 
@@ -5868,6 +5920,9 @@ msgstr "10,5 cm Panzerkanone L7A3"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_10WSc_P"
+msgstr "10WSc P"
+
 msgid "_10WSc_WT"
 msgstr "10WSc A"
 
@@ -5964,6 +6019,9 @@ msgstr "12,8 cm Kanone 43 L/55"
 msgid "_128mm_K44_2_L61"
 msgstr "12,8 cm Kanone L/61"
 
+msgid "_128mm_K44_2_L61_P"
+msgstr "12,8 cm Kanone L/61"
+
 msgid "_128mm_K44_2_L61_WT"
 msgstr "12,8 cm Kanone L/61 A"
 
@@ -6039,6 +6097,9 @@ msgstr "Pzgr 39 L"
 msgid "_128mm_PzGr39L50"
 msgstr "Pzgr 39 L"
 
+msgid "_128mm_PzGr39P"
+msgstr "Pzgr 39P"
+
 msgid "_128mm_PzGr39_E"
 msgstr "Pzgr 39 E"
 
@@ -6075,6 +6136,9 @@ msgstr "Pzgr 40/48"
 msgid "_128mm_PzGr43"
 msgstr "Pzgr 43"
 
+msgid "_128mm_PzGr43P"
+msgstr "Pzgr 43P"
+
 msgid "_128mm_PzGr44M_SH"
 msgstr "Pzgr 44M"
 
@@ -6110,6 +6174,9 @@ msgstr "Sprgr ver. 18"
 
 msgid "_128mm_SprG19"
 msgstr "Sprgr 19"
+
+msgid "_128mm_SprG19P"
+msgstr "Sprgr 19P"
 
 msgid "_128mm_Sprgr_18_E"
 msgstr "Sprgr. 18 E"
@@ -6601,7 +6668,7 @@ msgid "_75mm_Kw_K_40_L_48_Ausf_H"
 msgstr "7,5 cm Kw.K. 40 Ausf. H"
 
 msgid "_75mm_Kw_K_40_L_48_Typ_100"
-msgstr "7,5 cm Kw.K. 40 L/48"
+msgstr "7,5 cm Kw.K. 40 L/48 Typ 100"
 
 msgid "_75mm_PaK_39_L48"
 msgstr "7,5 cm Pak 39 L/48"

@@ -55,6 +55,8 @@ package
       
       public static const TEAM_EPICRESPAWNHEADER:String = "#battle_results:team/epicRespawnHeader";
       
+      public static const BATTLERESULT_TEAM_PRESTIGEPOINTS:String = "#battle_results:battleResult/team/prestigePoints";
+      
       public static const CYBERSPORT_BTNTOTEAMPROFILE:String = "#battle_results:cyberSport/btnToTeamProfile";
       
       public static const CYBERSPORT_POINTS:String = "#battle_results:cyberSport/points";
@@ -826,6 +828,10 @@ package
       public static const PRESTIGE_COMMON_DESCRIPTION:String = "#battle_results:prestige/common/description";
       
       public static const PRESTIGE_MAX_DESCRIPTION:String = "#battle_results:prestige/max/description";
+      
+      public static const BATTLERESULT_TEAM_PRESTIGEPOINTS_HEADER:String = "#battle_results:battleResult/team/prestigePoints/header";
+      
+      public static const BATTLERESULT_TEAM_PRESTIGEPOINTS_BODY:String = "#battle_results:battleResult/team/prestigePoints/body";
       
       public static const TEAM_STATS_PARAMETER_SHOTS:String = "#battle_results:team/stats/parameter/shots";
       

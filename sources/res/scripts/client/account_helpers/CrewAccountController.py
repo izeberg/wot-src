@@ -10,7 +10,15 @@ class CrewAccountController(object):
         self.tankmanIdxSkillsUnlockAnimation = {}
         self.tankmanLearnedSkillsAnimanion = {}
         self.tankmanVeteranAnimanion = {}
+        self._conversionResults = {}
+        self.autoReturnCrewData = {}
         self.__inventory.onStartSynchronize += self.__onStartSynchronizeInventory
+
+    def getAutoReturnCrewData(self, vehicleIntCD):
+        return self.autoReturnCrewData.get(vehicleIntCD, [])
+
+    def setAutoReturnCrewData(self, vehicleIntCD, skipTmanInvIDs):
+        self.autoReturnCrewData[vehicleIntCD] = skipTmanInvIDs
 
     def clearTankmanAnimanions(self, tankmaninvID):
         if tankmaninvID in self.tankmanVeteranAnimanion:
@@ -35,6 +43,19 @@ class CrewAccountController(object):
 
     def indexSkillsUnlockAnimation(self, tankmaninvID):
         return self.tankmanIdxSkillsUnlockAnimation.get(tankmaninvID)
+
+    def setConversionResults(self, resultsDict):
+        self._conversionResults = resultsDict
+
+    def getSkillsCrewBooksConversion(self):
+        crewBooks = {}
+        for book in self._conversionResults.get('skillsCrewBooksConversion', []):
+            crewBooks.update({book['compDescr']: book['count']})
+
+        return crewBooks
+
+    def getSkillsCrewBoostersReplacement(self):
+        return self._conversionResults.get('skillsCrewBoostersReplacement', {})
 
     def clear(self):
         self.__inventory.onStartSynchronize -= self.__onStartSynchronizeInventory

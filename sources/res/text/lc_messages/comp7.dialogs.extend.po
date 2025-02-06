@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-10 22:04+0200\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "comp7/deserter/cancel"
+msgstr "Отменить"
+
+msgid "comp7/deserter/message"
+msgstr ""
+"Сражение ещё не завершено. Выходя из боя до его завершения, вы подставляете команду.\n"
+"К вам будет {brown_open}применено дисциплинарное взыскание.{brown_close}\n"
+"Вы уверены, что хотите покинуть бой?"
+
+msgid "comp7/deserter/msgTitle"
+msgstr "Вы потеряете очки рейтинга!"
+
+msgid "comp7/deserter/submit"
+msgstr "Бежать"
+
+msgid "comp7/deserter/title"
+msgstr "Бегство с поля боя"
+
+msgid "punishmentWindow/message/ban/comp7"
+msgstr ""
+"Вы нарушили игровые правила на карте {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} в {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
+"Вы оштрафованы на {whiteSpanish_Open}%(penalty)s{whiteSpanish_Close} очков рейтинга. Доступ к боям режима {whiteSpanish_Open}«Натиск»{whiteSpanish_Close} временно заблокирован."
+
+msgid "punishmentWindow/message/ban/comp7/qualification"
+msgstr ""
+"Вы нарушили игровые правила на карте {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} в {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
+"Доступ к боям режима {whiteSpanish_Open}«Натиск»{whiteSpanish_Close} временно заблокирован. Ваш рейтинг снижен."

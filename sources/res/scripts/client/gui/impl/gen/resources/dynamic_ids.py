@@ -5,27 +5,27 @@ class DynamicIds(DynAccessor):
 
     class _dialog_window(DynAccessor):
         __slots__ = ()
-        bottom_content = DynAccessor(94702)
-        balance_content = DynAccessor(94703)
+        bottom_content = DynAccessor(94997)
+        balance_content = DynAccessor(94998)
 
     dialog_window = _dialog_window()
 
     class _tooltip(DynAccessor):
         __slots__ = ()
-        normal_content = DynAccessor(94704)
-        advanced_content = DynAccessor(94705)
+        normal_content = DynAccessor(94999)
+        advanced_content = DynAccessor(95000)
 
     tooltip = _tooltip()
 
     class _blueprint_screen(DynAccessor):
         __slots__ = ()
-        balance_content = DynAccessor(94706)
+        balance_content = DynAccessor(95001)
 
     blueprint_screen = _blueprint_screen()
 
     class _demo_window(DynAccessor):
         __slots__ = ()
-        image_props = DynAccessor(94707)
-        bottom_panel = DynAccessor(94708)
+        image_props = DynAccessor(95002)
+        bottom_panel = DynAccessor(95003)
 
     demo_window = _demo_window()

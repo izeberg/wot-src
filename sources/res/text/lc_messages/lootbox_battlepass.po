@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "autoOpenView/boxCount"
+msgid_plural "plural/autoOpenView/boxCount"
+msgstr[0] "%(count) оставшийся ваучер"
+msgstr[1] "%(count) оставшихся ваучера"
+msgstr[2] "%(count) оставшихся ваучеров"
+
+msgid "autoOpenView/subTitle"
+msgstr "Мы обменяли за вас %(boxCount)."
+
+msgid "awardViews/footer/backButton/"
+msgstr "Назад к ваучерам"
+
+msgid "awardViews/footer/checkbox/"
+msgstr "Показывать анимацию"
+
+msgid "awardViews/quantityTitle/boxesAvailable"
+msgstr "Доступно: %(boxesCount)"
+
+msgid "awardViews/quantityTitle/noBoxes"
+msgstr "Ваучеры закончились"
+
+msgid "boxTooltip/description/text/commonTicket"
+msgstr ""
+"Обменивайте ваучеры на награды! Вы можете их заработать на Тропе престижа."
+
+msgid "boxTooltip/howGet/text/commonTicket"
+msgstr "Ваучеры можно заработать на Тропе престижа."
+
+msgid "common/boxCategory/lowerCase/commonTicket"
+msgstr "Ваучер"
+
+msgid "common/boxCategory/upperCase/commonTicket"
+msgstr "ВАУЧЕР"
+
+msgid "common/loader"
+msgstr "Стираем защитный слой..."
+
+msgid "eventName/lowerCase"
+msgstr "Ваучеры"
+
+msgid "eventName/upperCase"
+msgstr "ВАУЧЕРЫ"
+
+msgid "hasBoxesView/openButtonText"
+msgstr "Обменять ваучер"
+
+msgid "hasBoxesView/quantityTitle/boxesAvailable"
+msgstr "Доступно: %(boxesCount)"
+
+msgid "hasBoxesView/quantityTitle/noBoxes"
+msgstr "Ваучеры закончились"
+
+msgid "infoPage/footer/description/autoOpen"
+msgstr "Ваучеры могут быть получены в качестве награды на Тропе престижа."
+
+msgid "infoPage/footer/description/compensation"
+msgstr ""
+"Если до окончания сезона Боевого пропуска на вашем аккаунте останутся "
+"ваучеры, они будут использованы автоматически."
+
+msgid "infoPage/footer/title/autoOpen"
+msgstr "Получить ваучеры"
+
+msgid "infoPage/footer/title/compensation"
+msgstr "Автообмен"
+
+msgid "infoPage/header/description"
+msgstr ""
+"Обменяйте ваучер на награду из списка ниже. Вы можете получить кредиты, "
+"свободный&nbsp;опыт, а также компоненты для экспериментального оборудования."
+
+msgid "noBoxesView/description/"
+msgstr ""
+"У вас нет ваучеров. Их можно заработать\n"
+" на Тропе престижа."
+
+msgid "noBoxesView/descriptionCn/"
+msgstr ""
+"У вас нет ваучеров. Их можно заработать\n"
+" на Тропе престижа."
+
+msgid "preview/backLabel"
+msgstr "К ВАУЧЕРАМ"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Ваучеров обменяно: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Обменяны оставшиеся ваучеры"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"После завершения сезона Боевого пропуска мы обменяли за вас все ваучеры и "
+"начислили награды на ваш аккаунт."
+
+msgid "serviceChannelMessages/lootBoxesDisabled/header"
+msgstr "Обмен ваучеров приостановлен"
+
+msgid "serviceChannelMessages/lootBoxesDisabled/text"
+msgstr "Операции с ваучерами временно недоступны: ведутся технические работы."
+
+msgid "serviceChannelMessages/lootBoxesEnabled/header"
+msgstr "Обмен ваучеров доступен"
+
+msgid "serviceChannelMessages/lootBoxesEnabled/text"
+msgstr "Операции с ваучерами снова доступны. Вперёд!"
+
+msgid "serviceChannelMessages/open"
+msgstr "%(boxName)s обменян!"
+
+msgid "serviceChannelMessages/server_error"
+msgstr "Ваучер не обменян"
+
+msgid "serviceChannelMessages/server_error/FAILURE"
+msgstr "Ошибка обмена"
+
+msgid "singleRewardView/footer/openNextButton/"
+msgstr "Обменять следующий"

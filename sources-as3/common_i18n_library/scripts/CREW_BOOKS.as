@@ -41,6 +41,10 @@ package
       
       public static const PAGE_TITLE:String = "#crew_books:page/title";
       
+      public static const PAGE_MENTORINGLICENSE_TITLE:String = "#crew_books:page/mentoringLicense/title";
+      
+      public static const PAGE_MENTORINGLICENSE_HINT:String = "#crew_books:page/mentoringLicense/hint";
+      
       public static const BUTTONS_LEARN:String = "#crew_books:buttons/learn";
       
       public static const BUTTONS_CANCEL:String = "#crew_books:buttons/cancel";
@@ -120,6 +124,8 @@ package
       public static const TOOLTIP_UNIVERSALBOOK_MAINTEXT:String = "#crew_books:tooltip/universalBook/mainText";
       
       public static const TOOLTIP_UNIVERSALGUIDE_MAINTEXT:String = "#crew_books:tooltip/universalGuide/mainText";
+      
+      public static const TOOLTIP_MOUSEWHEEL:String = "#crew_books:tooltip/mouseWheel";
        
       
       public function CREW_BOOKS()

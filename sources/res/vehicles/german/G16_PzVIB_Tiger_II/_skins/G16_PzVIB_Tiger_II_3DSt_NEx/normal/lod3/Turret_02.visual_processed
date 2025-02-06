@@ -36,36 +36,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_02</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_ANM.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_AO.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.004045 0.580904 -0.222771</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>tank_equipment_01</identifier>
 					<property>
 						selfIllumination
@@ -93,12 +63,42 @@
 				</material>
 				<groupOrigin>0.058166 1.085713 -0.362382</groupOrigin>
 			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_turret_02</identifier>
+					<property>
+						selfIllumination
+						<Float>0.000000</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G16_PzVIB_Tiger_II/_skins/G16_PzVIB_Tiger_II_3DSt_NEx/PzVIB_Tiger_II_3DSt_NEx_turret_02_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.004045 0.580904 -0.222771</groupOrigin>
+			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.288107 -0.029083 -2.112351</min>
 		<max>1.338204 1.935035 1.666808</max>
 	</boundingBox>
-	<geometrySize>84668</geometrySize>
+	<geometrySize>84396</geometrySize>
 	<minUVDensity>0.002420</minUVDensity>
 </root>

@@ -227,8 +227,8 @@
 		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/05_prohorovka_sparks_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/114_czech_explosion_low.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gas_combustion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gasolin_fire_big.eff</fn_effect_bin>
@@ -360,9 +360,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
@@ -612,8 +610,8 @@
 		<fn_effect_bin>particles/environment/interior/05_prohorovka_smoke_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/05_prohorovka_sparks_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/114_czech_explosion_low.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/114_czech_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gas_combustion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/114_czech_gasolin_fire_big.eff</fn_effect_bin>
@@ -747,9 +745,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>

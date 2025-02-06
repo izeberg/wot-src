@@ -1101,6 +1101,9 @@ msgstr "Покинуть взвод"
 msgid "contextMenu/lockSlot"
 msgstr "Заблокировать слот"
 
+msgid "contextMenu/mentorAssignment"
+msgstr "Наставничество"
+
 msgid "contextMenu/messenger/closeAllExceptCurrent"
 msgstr "Закрыть все, кроме текущего"
 
@@ -2426,6 +2429,9 @@ msgstr "Единовременная акция в Премиум магазин
 msgid "goldFish/windowHeader"
 msgstr "Информационный листок"
 
+msgid "hangar/ammunitionPanel/easyTankEquipBtn"
+msgstr "Быстрое обслуживание"
+
 msgid "hangar/ammunitionPanel/maitenanceBtn"
 msgstr "Ремонт"
 
@@ -2882,26 +2888,6 @@ msgstr "Взвод охотников"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Создать взвод из 2 игроков"
-
-msgid "headerButtons/battle/types/comp7"
-msgstr "Натиск"
-
-msgid "headerButtons/battle/types/comp7/descr"
-msgstr "?empty?"
-
-msgid "headerButtons/battle/types/comp7/extra/endsIn"
-msgstr "До конца сезона: %(timeLeft)s"
-
-msgid "headerButtons/battle/types/comp7/extra/finished"
-msgstr ""
-"Следите за новостями на портале игры, чтобы не пропустить информацию о "
-"начале нового сезона."
-
-msgid "headerButtons/battle/types/comp7/extra/frozen"
-msgstr "Режим временно отключён по техническим причинам."
-
-msgid "headerButtons/battle/types/comp7/extra/startsAt"
-msgstr "С %(time)s"
 
 msgid "headerButtons/battle/types/comp7Squad"
 msgstr "Создать взвод Натиск"
@@ -3942,6 +3928,9 @@ msgstr " "
 
 msgid "loading/battleTypes/desc/9"
 msgstr " "
+
+msgid "loading/battleTypes/subTitle/23"
+msgstr "Битва за трилистник"
 
 msgid "loading/helpTip"
 msgstr "Для вызова экрана помощи в бою нажмите клавишу F1."
@@ -6837,10 +6826,10 @@ msgid "training/info/timeout/label"
 msgstr "Время боя:"
 
 msgid "training/info/timeout/value"
-msgstr "%d минут"
+msgstr "%(roundLength)s мин"
 
 msgid "training/info/title"
-msgstr "Тренировочная комната (%s)"
+msgstr "Тренировочная комната (%(arenaName)s)"
 
 msgid "training/info/useCommonVoiceChat"
 msgstr "общая"
