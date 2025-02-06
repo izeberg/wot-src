@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>VFX/GB86_Centurion_Action_X_NY2025_3Dst/GB86_Centurion_Action_X_NY2025_3Dst_control</name>
+		<isMacro>false</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>Variable</class>
+				<id>Variable_3</id>
+				<params>
+					<param>
+						battleNotStart
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
+				<id>Variable_1</id>
+				<params>
+					<param>
+						turretGO
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_1</id>
+				<params>
+					<param>
+						Sequence.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetRootOf</class>
+				<id>GetRootOf_2</id>
+				<params/>
+				<slots/>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>default</input>
+				<to>Variable_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetRootOf_2</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>root</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>vehicle</input>
+				<to>Macro_2</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>Macro_2</from>
+				<input>in</input>
+				<to>ComponentMethod_1</to>
+				<output>onBattleStart</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetRootOf_2</to>
+				<output>value</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

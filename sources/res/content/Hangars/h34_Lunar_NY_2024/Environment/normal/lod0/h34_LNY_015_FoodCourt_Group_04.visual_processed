@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>103</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h34_Lunar_NY_2024/Environment/h34_LNY_015_FoodCourt_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h34_Lunar_NY_2024/Environment/h34_LNY_015_FoodCourt_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h34_Lunar_NY_2024/Environment/h34_LNY_015_FoodCourt_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.790842 2.087121 1.958278</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h34_Lunar_NY_2024/Environment/h34_LNY_015_FoodCourt_AM.dds</Texture>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						speed
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_forwardMult
+						<Float>0.500000</Float>
+					</property>
+				</material>
+				<groupOrigin>-4.124404 2.100893 4.140438</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-5.170851 -0.023081 -3.138108</min>
+		<max>8.752535 4.184058 7.054665</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>131656</geometrySize>
+	<minUVDensity>0.014337</minUVDensity>
+</root>

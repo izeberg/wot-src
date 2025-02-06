@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params/>
+	<node>
+		<name>wait_to start</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/A88_shutter_gun_02_closed.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-434.000000 95.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>start</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/A88_shutter_gun_02_fadein_to_idle.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-373.000000 -50.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>idle</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/A88_M53_55_NY25_3Dst/A88_shutter_gun_02_idle.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<uiPosition>-246.000000 -136.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>3.000000 3.000000</time>
+		<transition>
+			<to>start</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-284.000000 18.000000 0.000000</uiPosition>
+	</node>
+</root>

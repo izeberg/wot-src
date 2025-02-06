@@ -1653,6 +1653,10 @@ package
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/body";
       
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/body";
+      
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_DELIMITER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/delimiter";
       
       public static const HEADERBUTTONS_DEFAULTCOUNTER:String = "#menu:headerButtons/defaultCounter";

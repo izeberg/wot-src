@@ -578,8 +578,8 @@
 			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
 			<power>600</power>
 			<weight>1770</weight>
-			<maxHealth>260</maxHealth>
-			<maxRegenHealth>129</maxRegenHealth>
+			<maxHealth>275</maxHealth>
+			<maxRegenHealth>138</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<fireStartingChance>
 				0.15
@@ -778,8 +778,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>304</rpm_min>
-			<rpm_max>2288</rpm_max>
+			<rpm_min>280</rpm_min>
+			<rpm_max>2360</rpm_max>
 		</AVDS_1790_2D>
 		<AVDS_1790M>
 			<userString>#italy_vehicles:AVDS_1790M</userString>

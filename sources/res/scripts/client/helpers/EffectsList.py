@@ -657,7 +657,7 @@ class _ShotSoundEffectDesc(_BaseSoundEvent):
 class _NodeSoundEffectDesc(_BaseSoundEvent):
     TYPE = '_NodeSoundEffectDesc'
     effectUniqId = 0
-    __slots__ = ('_soundName', 'effectUniqId', '_dopplerEffect')
+    __slots__ = ('_soundName', '_dopplerEffect')
 
     def __init__(self, dataSection):
         super(_NodeSoundEffectDesc, self).__init__(dataSection)

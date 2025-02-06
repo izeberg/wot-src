@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.382169 -0.847502 -2.759842</min>
+		<max>0.405097 0.464827 9.911549</max>
+	</visibilityBox>
+</root>

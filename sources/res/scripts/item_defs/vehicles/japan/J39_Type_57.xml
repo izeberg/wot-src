@@ -105,7 +105,7 @@
 			<armor_23>20</armor_23>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>25065</weight>
+		<weight>25475</weight>
 		<maxHealth>1160</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
@@ -1044,7 +1044,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>50000</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
@@ -2387,7 +2387,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>50000</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
@@ -3742,17 +3742,24 @@
 				<armor_12>230</armor_12>
 				<armor_13>210</armor_13>
 				<armor_14>170</armor_14>
-				<armor_15>100</armor_15>
-				<armor_16>130</armor_16>
-				<armor_17>110</armor_17>
+				<armor_15>115</armor_15>
+				<armor_16>150</armor_16>
+				<armor_17>125</armor_17>
 				<armor_18>80</armor_18>
-				<armor_19>50</armor_19>
+				<armor_19>60</armor_19>
 				<armor_20>230</armor_20>
 				<armor_21>100</armor_21>
 				<armor_22>40</armor_22>
 				<armor_23>140</armor_23>
-				<armor_24>70</armor_24>
+				<armor_24>75</armor_24>
 				<armor_25>60</armor_25>
+				<armor_26>95</armor_26>
+				<armor_27>130</armor_27>
+				<armor_28>110</armor_28>
+				<armor_29>65</armor_29>
+				<armor_30>50</armor_30>
+				<armor_31>105</armor_31>
+				<armor_32>90</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>9500</weight>
@@ -3850,16 +3857,13 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.28
+						0.26
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						11.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>11</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.13
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -3869,7 +3873,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.4
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -5096,13 +5100,16 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.28
+						0.26
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>11</reloadTime>
+					<reloadTime>
+						10.4
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -5111,10 +5118,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -5302,7 +5306,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.28
+						0.24
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6330,25 +6334,7 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<_Type96_Bo>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Otsu
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</_Type96_Bo>
-		<_Type3_Otsu>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Ko
-					<cost>9300</cost>
-				</radio>
-			</unlocks>
-		</_Type3_Otsu>
-		<_Type3_Ko>shared</_Type3_Ko>
+		<JAN-GRC-4Z>shared</JAN-GRC-4Z>
 	</radios>
 	<clientAdjustmentFactors/>
 	<physics>

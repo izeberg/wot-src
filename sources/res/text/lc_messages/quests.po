@@ -1451,6 +1451,18 @@ msgstr "Expires in %H h %M min"
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Expires in %MM:%SS"
 
+msgid "dailyQuests/comp7/nextTasks"
+msgstr "5 new missions in:"
+
+msgid "dailyQuests/comp7/progressCounter"
+msgstr "%(current)d%(separator)s%(total)d"
+
+msgid "dailyQuests/comp7/questsCounter"
+msgstr "%(current)d / %(total)d"
+
+msgid "dailyQuests/comp7/reward"
+msgstr "Claim your reward!"
+
 msgid "dailyQuests/condition/battle_singular"
 msgstr "Play a battle"
 

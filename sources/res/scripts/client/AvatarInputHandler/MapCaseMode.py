@@ -594,6 +594,16 @@ class _Comp7ArenaBoundPlaneStrikeSelector(_Comp7ArenaBoundArtilleryStrikeSelecto
         return
 
 
+class _Comp7PoiArtilleryStrikeSelector(_ArenaBoundArtilleryStrikeSelector):
+
+    def _getAreaSize(self):
+        radius = self._getRadius()
+        return Vector2(radius * 2, radius * 2)
+
+    def _getRadius(self):
+        return self.equipment.radius
+
+
 _STRIKE_SELECTORS = {artefacts.RageArtillery: _ArtilleryStrikeSelector, 
    artefacts.RageBomber: _BomberStrikeSelector, 
    artefacts.EpicArtillery: _ArtilleryStrikeSelector, 
@@ -606,7 +616,7 @@ _STRIKE_SELECTORS = {artefacts.RageArtillery: _ArtilleryStrikeSelector,
    artefacts.AttackArtilleryFortEquipment: _ArenaBoundArtilleryStrikeSelector, 
    artefacts.Comp7ReconEquipment: _Comp7ArenaBoundPlaneStrikeSelector, 
    artefacts.Comp7RedlineEquipment: _Comp7ArenaBoundArtilleryStrikeSelector, 
-   artefacts.PoiArtilleryEquipment: _ArenaBoundArtilleryStrikeSelector}
+   artefacts.PoiArtilleryEquipment: _Comp7PoiArtilleryStrikeSelector}
 
 class MapCaseControlModeBase(IControlMode, CallbackDelayer):
     guiSessionProvider = dependency.descriptor(IBattleSessionProvider)

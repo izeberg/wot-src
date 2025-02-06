@@ -74,3 +74,4 @@ class HANGAR_ALIASES(object):
     EVENT_COINS_COMPONENT = 'eventCoinsComponent'
     HE20_EVENT_ENTRY_POINT = 'he20EventEntryPoint'
     CAROUSEL_EVENT_ENTRY_HOLDER = 'carouselEventEntryHolder'
+    PLAYER_SATISFACTION_WIDGET = 'PlayerSatisfactionWidget'

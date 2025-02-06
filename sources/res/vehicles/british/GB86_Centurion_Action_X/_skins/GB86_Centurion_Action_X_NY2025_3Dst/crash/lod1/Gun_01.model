@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.345814 -0.292401 -1.908356</min>
+		<max>0.264522 0.191040 4.732471</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/crash/lod2/Gun_01</parent>
+	<extent>64</extent>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_NY2025_3Dst/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+</root>

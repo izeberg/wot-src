@@ -44,10 +44,10 @@ class DealPanelModel(PriceModel):
     def setTotalItemsInStorage(self, value):
         self._setNumber(9, value)
 
-    def getIsEliteOrPremium(self):
+    def getShowEliteXp(self):
         return self._getBool(10)
 
-    def setIsEliteOrPremium(self, value):
+    def setShowEliteXp(self, value):
         self._setBool(10, value)
 
     def _initialize(self):
@@ -58,7 +58,7 @@ class DealPanelModel(PriceModel):
         self._addBoolProperty('isAutoRenewalEnabled', False)
         self._addBoolProperty('isDisabled', False)
         self._addNumberProperty('totalItemsInStorage', 0)
-        self._addBoolProperty('isEliteOrPremium', False)
+        self._addBoolProperty('showEliteXp', False)
         self.onDealConfirmed = self._addCommand('onDealConfirmed')
         self.onDealCancelled = self._addCommand('onDealCancelled')
         self.onAutoRenewalChanged = self._addCommand('onAutoRenewalChanged')

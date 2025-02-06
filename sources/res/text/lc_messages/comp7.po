@@ -65,6 +65,15 @@ msgstr "Battles are not available on the %(serverName)s server"
 msgid "alertMessage/notSet"
 msgstr "This mode is not available on the %(serverName)s server"
 
+msgid "alertMessage/preannounce/first"
+msgstr "Season of the Azure Manticore starts: %(date)s"
+
+msgid "alertMessage/preannounce/second"
+msgstr "Season of the Crimson Manticore starts: %(date)s"
+
+msgid "alertMessage/preannounce/third"
+msgstr "Season of the Jade Manticore starts: %(date)s"
+
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "Battles on this server will be available in %(primeDelta)s"
 
@@ -102,8 +111,25 @@ msgstr "?empty?"
 msgid "alertMessage/unsuitableVehicles"
 msgstr "No suitable Tier %(levels)s vehicles in the Garage"
 
-msgid "banner/info/disabled"
-msgstr "Wait for Prime Time"
+msgid "awardsWidget/description/award"
+msgstr "Click to select and claim your rewards."
+
+msgid "awardsWidget/description/awardDisabled"
+msgstr ""
+"FinalRewards are temporarily unavailable. We apologize for the "
+"inconvenience."
+
+msgid "awardsWidget/title"
+msgid_plural "plural/awardsWidget/title"
+msgstr[0] ""
+"CLAIM\n"
+"REWARD"
+msgstr[1] ""
+"CLAIM\n"
+"REWARDS"
+msgstr[2] ""
+"CLAIM\n"
+"REWARDS"
 
 msgid "banner/info/seasonEnd/first"
 msgstr "The Season of the Azure Manticore has ended"
@@ -114,17 +140,8 @@ msgstr "The Season of the Crimson Manticore has ended"
 msgid "banner/info/seasonEnd/third"
 msgstr "The Season of the Jade Manticore has ended"
 
-msgid "banner/info/seasonEndSoon"
-msgstr "Last chance to show off your skills!"
-
-msgid "banner/info/seasonJustStarted"
-msgstr "Show what you can do!"
-
 msgid "banner/infoSmall/disabled"
 msgstr "Ceasefire"
-
-msgid "banner/infoSmall/seasonEndSoon"
-msgstr "Last chance to shine!"
 
 msgid "banner/season/first"
 msgstr "Azure Manticore"
@@ -136,24 +153,36 @@ msgid "banner/season/third"
 msgstr "Jade Manticore"
 
 msgid "banner/seasonDate/seasonLasts"
-msgstr "%(season)s, until %(month)s %(day)s"
-
-msgid "banner/seasonDate/seasonNotStarted"
-msgstr "%(season)s, from %(month)s %(day)s"
-
-msgid "banner/seasonDateSmall/seasonLasts"
 msgstr "Until %(month)s %(day)s"
 
+msgid "banner/seasonDate/seasonNotStarted"
+msgstr "Starts %(month)s %(day)s at %(hour)s:%(min)s"
+
 msgid "banner/seasonDateSmall/seasonNotStarted"
-msgstr "From %(month)s %(day)s"
-
-msgid "banner/timeLeft/hours"
-msgstr "Prime Time: %(hour)s h %(min)s min"
-
-msgid "banner/timeLeft/min"
-msgstr "Prime Time: %(min)s min"
+msgstr "%(month)s %(day)s at %(hour)s:%(min)s"
 
 msgid "banner/title"
+msgstr "ONSLAUGHT"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"A competitive mode featuring 7v7 battles in Tier X vehicles. Rise through "
+"the ranks to earn unique customization elements, vehicles, bonds, and other "
+"valuable rewards."
+
+msgid "bannerTooltip/end"
+msgstr "Season ended"
+
+msgid "bannerTooltip/notAvailable"
+msgstr "Ceasefire"
+
+msgid "bannerTooltip/notStarted"
+msgstr "Starts %(month)s %(day)s at %(hour)s:%(min)s"
+
+msgid "bannerTooltip/range"
+msgstr "%(startDate)s–%(endDate)s"
+
+msgid "bannerTooltip/title"
 msgstr "ONSLAUGHT"
 
 msgid "battleCarousel/filterButtonTooltip/body"
@@ -357,6 +386,14 @@ msgstr[2] "Season of the Jade Manticore will last for %(days)d days"
 msgid "calendarDay/title"
 msgstr "Schedule"
 
+msgid "claimRewards/button"
+msgstr "Claim Reward"
+
+msgid "claimRewards/rewardsUnavailable"
+msgstr ""
+"This operation is temporarily unavailable for technical reasons. We are "
+"working on fixing the issue."
+
 msgid "closeButtonLabel"
 msgstr "CLOSE"
 
@@ -370,6 +407,9 @@ msgid "countDown/text"
 msgstr ""
 "Event starts in:\n"
 "%(timeLeft)s"
+
+msgid "countdown/lastMinute"
+msgstr "<1 min"
 
 msgid "crewMembersTooltip/description"
 msgstr ""
@@ -763,36 +803,6 @@ msgstr "Rating Points"
 msgid "membersWindow/memberCountDropdown/description"
 msgstr "Players in the Platoon"
 
-msgid "modifier/name/engineFireChance"
-msgstr "Engine fire chance"
-
-msgid "modifier/name/innerModuleDamageReduction"
-msgstr "Inner module damage reduction"
-
-msgid "modifier/name/rangeOfPotentialDamage"
-msgstr "Range of potential damage"
-
-msgid "modifier/name/timeRemainingVisible"
-msgstr "Time remaining visible"
-
-msgid "modifier/name/vehicleDurability"
-msgstr "Vehicle durability"
-
-msgid "modifier/valueType/HP"
-msgstr "%(hp)s HP"
-
-msgid "modifier/valueType/deviation"
-msgstr "+/-%(deviation)s%"
-
-msgid "modifier/valueType/meters"
-msgstr "%(meters)s m"
-
-msgid "modifier/valueType/percentage"
-msgstr "%(percentage)s%"
-
-msgid "modifier/valueType/seconds"
-msgstr "%(seconds)s s"
-
 msgid "noVehicles/howTo/premium"
 msgstr "Use WoT Premium Account"
 
@@ -1150,6 +1160,18 @@ msgstr "%(rank)s Rank"
 msgid "rank/third"
 msgstr "Silver"
 
+msgid "rankCompatibilityTable/playersRank"
+msgstr "Player rank"
+
+msgid "rankCompatibilityTable/teammatesRank"
+msgstr "Platoon mate(s) rank"
+
+msgid "rankCompatibilityTooltip/description"
+msgstr "Platoons can only consist of players of similar ranks."
+
+msgid "rankCompatibilityTooltip/heading"
+msgstr "Rank restrictions for %(count)s-player Platoons"
+
 msgid "rankInactivityTooltip/description"
 msgstr "If you do not play in the mode, you will lose Rating Points."
 
@@ -1286,7 +1308,7 @@ msgstr ""
 
 msgid "rewards/subtitle/styleProgress"
 msgstr ""
-"{whiteSpanish_Open}For the Hybrid Beast (Azure) style{whiteSpanish_Close}"
+"{whiteSpanish_Open}For the Hybrid Beast (Crimson) style{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "Tier %(vehicleLevel)s"
@@ -1302,6 +1324,9 @@ msgstr "To Other Rewards"
 
 msgid "rewardsScreen/buttonToRewards"
 msgstr "To Rewards"
+
+msgid "rewardsScreen/buttonToSelectedRewards"
+msgstr "Select Reward"
 
 msgid "rewardsScreen/buttonToShop"
 msgstr "Go to Purchase"
@@ -1372,14 +1397,14 @@ msgstr ""
 msgid "rewardsScreen/subtitle/tokensRewards"
 msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
 msgstr[0] ""
-"Rewards received for collecting {cream_Open}%(tokensCount)s{cream_Close} "
-"Lucky Chip"
+"Reward for completing {cream_Open}%(tokensCount)s{cream_Close} weekly "
+"mission"
 msgstr[1] ""
-"Rewards received for collecting {cream_Open}%(tokensCount)s{cream_Close} "
-"Lucky Chips"
+"Reward for completing {cream_Open}%(tokensCount)s{cream_Close} weekly "
+"missions"
 msgstr[2] ""
-"Rewards received for collecting {cream_Open}%(tokensCount)s{cream_Close} "
-"Lucky Chips"
+"Reward for completing {cream_Open}%(tokensCount)s{cream_Close} weekly "
+"missions"
 
 msgid "rewardsScreen/title/division"
 msgstr "DIVISION %(division)s REACHED"
@@ -1403,13 +1428,22 @@ msgstr[1] "REWARDS RECEIVED"
 msgstr[2] "REWARDS RECEIVED"
 
 msgid "rewardsScreen/title/tokensRewards"
-msgstr "LUCKY CHIPS COLLECTED"
+msgstr "WEEKLY MISSION REWARDS"
 
 msgid "rewardsScreen/title/yearlyRewards"
 msgstr "ANNUAL REWARDS"
 
 msgid "rewardsScreen/yearlyVehicleCrew"
 msgstr "With unique crew members:"
+
+msgid "rewardsSelectionScreen/description"
+msgstr "ONSLAUGHT"
+
+msgid "rewardsSelectionScreen/title"
+msgid_plural "plural/rewardsSelectionScreen/title"
+msgstr[0] "CHOOSE REWARD"
+msgstr[1] "CHOOSE REWARDS"
+msgstr[2] "CHOOSE REWARDS"
 
 msgid "scoreTooltip/body"
 msgstr ""
@@ -1795,7 +1829,7 @@ msgstr ""
 "%(rewards)s"
 
 msgid "system_messages/tokenWeeklyReward/title"
-msgstr "Rewards for Collecting Lucky Chips"
+msgstr "Rewards for completing weekly missions"
 
 msgid "system_messages/weeklyReward/body"
 msgstr ""
@@ -1804,9 +1838,6 @@ msgstr ""
 
 msgid "system_messages/weeklyReward/title"
 msgstr "Reward for Weekly Mission"
-
-msgid "system_messages/weeklyReward/tokens"
-msgstr "Lucky Chip"
 
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "Rating Points cannot be earned or lost in a Tournament."
@@ -1826,10 +1857,8 @@ msgstr "Rating Points cannot be earned in Onslaught Training."
 msgid "unit/message/modeOffline"
 msgstr "Unable to join the battle: Database error."
 
-msgid "unit/message/ratingRestriction"
-msgstr ""
-"There is more than a %(rating)s difference in Rating Points between players "
-"in this Platoon"
+msgid "unit/message/rankRangeRestriction"
+msgstr "Rank difference restrictions exceeded"
 
 msgid "voiceChat/active"
 msgstr "Leave voice chat"
@@ -1839,6 +1868,61 @@ msgstr "Join voice chat"
 
 msgid "waitingSpinner/message"
 msgstr "Loading content..."
+
+msgid "weeklyQuestTooltip/additionalRewards"
+msgstr ""
+"You will receive an additional reward for completing "
+"{cream_Open}%(questsList)s{cream_Close} missions"
+
+msgid "weeklyQuestTooltip/countdownStatus"
+msgid_plural "plural/weeklyQuestTooltip/countdownStatus"
+msgstr[0] ""
+"%(value)s new mission in:\n"
+"%(countdown)s"
+msgstr[1] ""
+"%(value)s new missions in:\n"
+"%(countdown)s"
+msgstr[2] ""
+"%(value)s new missions in:\n"
+"%(countdown)s"
+
+msgid "weeklyQuestTooltip/counterQuests"
+msgstr "Missions completed: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuestTooltip/questsProgres"
+msgstr "{yellow_Open}%(current)s{yellow_Close} / %(total)s"
+
+msgid "weeklyQuestTooltip/takeRewards/header"
+msgstr "Well done!"
+
+msgid "weeklyQuestTooltip/takeRewards/text"
+msgstr ""
+"You have completed all weekly missions.\n"
+"Don't forget to claim your reward and see you in the next season!"
+
+msgid "weeklyQuests/CountdownStatus/active"
+msgid_plural "plural/weeklyQuests/CountdownStatus/active"
+msgstr[0] "%(value)s NEW MISSION IN %(countdown)s"
+msgstr[1] "%(value)s NEW MISSIONS IN %(countdown)s"
+msgstr[2] "%(value)s NEW MISSIONS IN %(countdown)s"
+
+msgid "weeklyQuests/CountdownStatus/done"
+msgstr "NEW MISSIONS NEXT SEASON!"
+
+msgid "weeklyQuests/TokenProgress/header"
+msgstr "Missions completed: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuests/TokenProgress/subheader"
+msgid_plural "plural/weeklyQuests/TokenProgress/subheader"
+msgstr[0] ""
+"You will receive %(value)s new mission every week. Each completed mission "
+"counts toward your reward!"
+msgstr[1] ""
+"You will receive %(value)s new missions every week. Each completed mission "
+"counts toward your reward!"
+msgstr[2] ""
+"You will receive %(value)s new missions every week. Each completed mission "
+"counts toward your reward!"
 
 msgid "weeklyQuests/card/progress/counter"
 msgstr "%(current)s / %(total)s"
@@ -1864,135 +1948,77 @@ msgstr "Complete the previous mission to unlock this one."
 msgid "weeklyQuests/card/statusLockedTooltip/header"
 msgstr "Mission Unavailable"
 
-msgid "weeklyQuests/resetStatus/ended"
-msgstr "All missions have been completed."
-
-msgid "weeklyQuests/resetStatus/lastWeek"
-msgstr ""
-"It is the last week of the Season—hurry up to complete missions and receive "
-"rewards!"
-
-msgid "weeklyQuests/resetStatus/timer"
-msgstr ""
-"The progress on completing missions is reset every week. Next update in: "
-"%(countdown)s"
-
-msgid "weeklyQuests/tokenProgress/description/done"
-msgstr "All rewards received"
-
-msgid "weeklyQuests/tokenProgress/description/normal"
-msgstr "Earn Lucky Chips to receive rewards"
-
 msgid "whatsNewButtonLabel"
 msgstr "SEASON UPDATES"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "SEASON OF THE AZURE MANTICORE"
+msgstr "SEASON OF THE CRIMSON MANTICORE"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "ONSLAUGHT. WHAT'S NEW?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Let's Go!"
+msgstr "Let's Do It!"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Fight in each of the three Seasons to earn valuable annual rewards, and now "
-"it's even easier to get your hands on a unique vehicle. The better your "
-"performance throughout the Year, the more exclusive the style you'll receive"
-" for it."
+"Missions no longer expire and remain available for completion throughout the"
+" entire season, and you can track active mission progress via a widget in "
+"the Garage. Increased Shell Resistance has been replaced with an improved "
+"equipment token, allowing you to select any improved equipment as a reward."
 
 msgid "whatsNewView/intro/heading"
-msgstr "Welcome to the Year of the Manticore!"
+msgstr "Weekly Missions %(tag)"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Maps"
 
-msgid "whatsNewView/modifiers/NA"
-msgstr "N/A"
-
-msgid "whatsNewView/modifiers/added"
-msgstr "Added Modifiers"
-
-msgid "whatsNewView/modifiers/changed"
-msgstr "Changed Modifiers"
-
-msgid "whatsNewView/modifiers/currentSeason"
-msgstr "Current Season"
-
-msgid "whatsNewView/modifiers/description"
+msgid "whatsNewView/roleSkills/description"
 msgstr ""
-"More mode-specific modifiers that change the parameters of the vehicle have "
-"been added."
+"The majority of Role Skills have received balance changes. Detailed "
+"information can be found in the season article."
 
-msgid "whatsNewView/modifiers/heading"
-msgstr "Onslaught Modifiers Update"
+msgid "whatsNewView/roleSkills/heading"
+msgstr "Role Skill Rebalance"
 
-msgid "whatsNewView/modifiers/previousSeason"
-msgstr "Previous Season"
-
-msgid "whatsNewView/modifiers/random"
-msgstr "Random"
-
-msgid "whatsNewView/newVehicles/heading"
-msgstr "New Vehicles Available in Onslaught"
-
-msgid "whatsNewView/sectionDescription/assaultTankDestroyer"
+msgid "whatsNewView/sectionDescription/bondShop"
 msgstr ""
-"Upon activation, your vehicle will receive increased dynamics and cause "
-"increased ram damage to enemies while incoming damage will be reduced. You "
-"can learn more on the About the Event page and in the Role Skill description"
-" in the interface."
+"Onslaught Shop items can now be easily accessed from the Items for Bonds "
+"screen."
 
-msgid "whatsNewView/sectionDescription/ratingUpdate"
+msgid "whatsNewView/sectionDescription/enemy"
+msgstr "You can now see enemies' nicknames and ranks at the start of battle."
+
+msgid "whatsNewView/sectionDescription/legendRank"
 msgstr ""
-"The number of Rating Points earned in the Iron, Bronze, and Silver ranks has"
-" been increased."
+"The {whiteSpanish_Open}top %(topPercentage)s%{whiteSpanish_Close} of players"
+" on the Leaderboard will now have the Legend rank, with positions updated "
+"every {whiteSpanish_Open}%(count)s&nbsp;minutes{whiteSpanish_Close}."
 
-msgid "whatsNewView/sectionDescription/reconFlight"
-msgid_plural "plural/whatsNewView/sectionDescription/reconFlight"
-msgstr[0] ""
-"Now, the skill becomes available %(seconds)s second after the battle starts."
-" A special icon is displayed for a player detected by the skill."
-msgstr[1] ""
-"Now, the skill becomes available %(seconds)s seconds after the battle "
-"starts. A special icon is displayed for a player detected by the skill."
-msgstr[2] ""
-"Now, the skill becomes available %(seconds)s seconds after the battle "
-"starts. A special icon is displayed for a player detected by the skill."
-
-msgid "whatsNewView/sectionDescription/shopUpdates"
+msgid "whatsNewView/sectionDescription/platoons_2"
 msgstr ""
-"A new item of improved equipment, Stealth Exhaust Unit, is available for "
-"purchase after you reach the Silver rank."
+"The rank difference between the lowest- and highest-ranked players cannot "
+"exceed one rank."
 
-msgid "whatsNewView/sectionDescription/tournaments"
+msgid "whatsNewView/sectionDescription/platoons_7"
 msgstr ""
-"Don't miss your chance to take part in the new mid-Season tournament, where "
-"every team has a chance to win!"
+"The rank difference between the lowest- and highest-ranked players cannot "
+"exceed two ranks."
 
-msgid "whatsNewView/sectionDescription/trainingRoom"
-msgstr ""
-"Ammo, consumables, and directives can now be used for free in Onslaught Team"
-" Training."
+msgid "whatsNewView/sectionHeading/bondShop"
+msgstr "Shop Integration"
 
-msgid "whatsNewView/sectionHeading/assaultTankDestroyer"
-msgstr "Assault Tank Destroyer Role Skill Rework"
+msgid "whatsNewView/sectionHeading/enemy"
+msgstr "Know Your Enemy"
 
-msgid "whatsNewView/sectionHeading/ratingUpdate"
-msgstr "Ranked System Update"
+msgid "whatsNewView/sectionHeading/legendRank"
+msgstr "Legend Rank Expansion"
 
-msgid "whatsNewView/sectionHeading/reconFlight"
-msgstr "Recon Flight Role Skill Update"
+msgid "whatsNewView/sectionHeading/platoons"
+msgstr "New Platoon Limitations: From Rating to Rank"
 
-msgid "whatsNewView/sectionHeading/shopUpdates"
-msgstr "Onslaught Shop Updates"
-
-msgid "whatsNewView/sectionHeading/tournaments"
-msgstr "Tournaments"
-
-msgid "whatsNewView/sectionHeading/trainingRoom"
-msgstr "Training Room"
+msgid "whatsNewView/sectionSubtitle/platoons"
+msgstr "%(count)s-player Platoons"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "EXCLUDED"
@@ -2069,6 +2095,9 @@ msgstr ""
 "%(vehicle)s\n"
 "With unique 3D styles"
 
+msgid "yearlyRewards/preview/backButton"
+msgstr "TO ANNUAL REWARDS"
+
 msgid "yearlyRewards/preview/style2d"
 msgstr "Preview 2D style"
 
@@ -2111,15 +2140,6 @@ msgstr ""
 
 msgid "yearlyRewards/stageDescription/active"
 msgstr "Active stage"
-
-msgid "yearlyRewardsSelectionScreen/description"
-msgstr "ONSLAUGHT. YEAR OF THE MANTICORE"
-
-msgid "yearlyRewardsSelectionScreen/title"
-msgid_plural "plural/yearlyRewardsSelectionScreen/title"
-msgstr[0] "CHOOSE REWARD"
-msgstr[1] "CHOOSE REWARDS"
-msgstr[2] "CHOOSE REWARDS"
 
 msgid "yearlyStatistics/battles"
 msgstr "Battles (Solo/Platoon)"

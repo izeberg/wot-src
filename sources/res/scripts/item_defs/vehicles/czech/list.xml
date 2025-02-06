@@ -303,11 +303,11 @@
 		<shortDescriptionSpecial>#czech_vehicles:Cz33_Vz_68_Squall_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#czech_vehicles:Cz33_Vz_68_Squall_long_special</longDescriptionSpecial>
 		<price>
-			100
+			6500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank role_LT_universal HD scout autocannon improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user secret testTank</tags>
+		<tags>lightTank role_LT_universal HD scout autocannon improvedVentilation_class3_user aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
 		<level>8</level>
 	</Cz33_Vz_68_Squall>
 	<Cz29_Pzw_39>
@@ -348,11 +348,11 @@
 		<shortDescriptionSpecial>#czech_vehicles:Cz40_DBV_152_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#czech_vehicles:Cz40_DBV_152_long_special</longDescriptionSpecial>
 		<price>
-			100
+			22500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user improvedVentilation_class2_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals special secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user improvedVentilation_class2_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals special</tags>
 		<level>10</level>
 	</Cz40_DBV_152>
 </root>

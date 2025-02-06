@@ -777,8 +777,6 @@ package net.wg.data.constants.generated
       
       public static const OPTDEV_SLOT_STATE_ACTIVE_SELECTED:String = "activeSelected";
       
-      public static const EVENT_LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT:String = "eventLootBoxesVehicleBlueprintFragment";
-      
       public static const COLLECTION_ITEM:String = "collectionItem";
       
       public static const ADVENT_CALENDAR_TANKMAN_NOT_RECRUITED:String = "adventCalendarTankmanNotRecruited";
@@ -870,8 +868,6 @@ package net.wg.data.constants.generated
       public static const COMP7_LOBBY_SET:Array = [COMP7_SELECTOR_INFO,COMP7_SELECTOR_UNAVAILABLE_INFO,COMP7_CALENDAR_DAY_INFO,COMP7_CALENDAR_DAY_EXTENDED_INFO,COMP7_ROLE_SKILL_LOBBY_TOOLTIP,COMP7_SELECTABLE_REWARD,COMP7_BATTLE_RESULTS_RATING_POINTS,TOURNAMENT_COMP7_BATTLE_RESULTS_RATING_POINTS,TRAINING_COMP7_BATTLE_RESULTS_RATING_POINTS];
       
       public static const COMP7_BATTLE_SET:Array = [COMP7_ROLE_SKILL_BATTLE_TOOLTIP,VEHICLE_ROLES];
-      
-      public static const EVLB_LOBBY_SET:Array = [EVENT_LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT];
       
       public static const WOT_PLUS_SET:Array = [WOT_PLUS];
       

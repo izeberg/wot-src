@@ -109,13 +109,15 @@ package net.wg.gui.lobby.hangar
       
       private static const VEH_RESEARCH_PANEL_OFFSET:int = 37;
       
-      private static const DQ_WIDGET_NORMAL_HEIGHT:int = 184;
+      private static const DQ_WIDGET_NORMAL_HEIGHT:int = 265;
       
       private static const DQ_WIDGET_MINI_HEIGHT:int = 60;
       
       private static const DQ_WIDGET_MICRO_HEIGHT:int = 58;
       
       private static const DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD:int = 699;
+      
+      private static const COMP7_DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD:int = 750;
       
       private static const DQ_WIDGET_WIDTH_THRESHOLD:int = 1200;
       
@@ -257,6 +259,8 @@ package net.wg.gui.lobby.hangar
       private var _isBRBattleTypeSelectorVisible:Boolean = false;
       
       private var _isBRSpaceLoaded:Boolean = false;
+      
+      private var _isComp7SpaceLoaded:Boolean = false;
       
       public function Hangar()
       {
@@ -425,6 +429,7 @@ package net.wg.gui.lobby.hangar
          this._eventsEntryContainer = null;
          this._currentWidgetLayout = 99;
          this._isBRSpaceLoaded = false;
+         this._isComp7SpaceLoaded = false;
          removeChild(this._carouselEventEntryContainer);
          this._carouselEventEntryContainer = null;
          super.onDispose();
@@ -690,6 +695,11 @@ package net.wg.gui.lobby.hangar
             this._battleRoyaleComponents.showHeader(!param1);
          }
          this._isBRSpaceLoaded = true;
+      }
+      
+      public function as_setComp7SpaceLoaded(param1:Boolean) : void
+      {
+         this._isComp7SpaceLoaded = param1;
       }
       
       public function as_setCarousel(param1:String, param2:String) : void
@@ -1004,8 +1014,8 @@ package net.wg.gui.lobby.hangar
       private function setupWidgetSizes() : void
       {
          this._widgetSizes = new Dictionary();
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [340,186];
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [190,65];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [365,266];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [270,65];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO] = [155,55];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_SINGLE] = [340,62];
       }
@@ -1100,7 +1110,8 @@ package net.wg.gui.lobby.hangar
          {
             return this._forcedWidgetLayout;
          }
-         if(App.appWidth >= DQ_WIDGET_WIDTH_THRESHOLD && this._carousel.y >= DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD)
+         var _loc1_:int = !!this._isComp7SpaceLoaded ? int(COMP7_DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD) : int(DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD);
+         if(App.appWidth >= DQ_WIDGET_WIDTH_THRESHOLD && this._carousel.y >= _loc1_)
          {
             return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL;
          }

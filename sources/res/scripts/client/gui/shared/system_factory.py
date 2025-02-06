@@ -58,6 +58,7 @@ QUEST_FLAGS = 56
 BATTLE_RESULTS_STATS_SORTING = 57
 LOOTBOX_AUTOOPEN_SUBFORMATTERS = 58
 EQUIPMENT_TRIGGERS = 59
+LOW_PRIORITY_WULF_WINDOWS = 60
 
 class _CollectEventsManager(object):
 
@@ -910,3 +911,15 @@ def registerBattleResultsStatsSorting(bonusType, sortingKey):
 
 def collectBattleResultsStatsSorting():
     return __collectEM.handleEvent(BATTLE_RESULTS_STATS_SORTING, {'sortingKey': {}})['sortingKey']
+
+
+def registerLowPriorityWulfWindows(layoutsID):
+
+    def onCollect(ctx):
+        ctx.extend(layoutsID)
+
+    __collectEM.addListener(LOW_PRIORITY_WULF_WINDOWS, onCollect)
+
+
+def collectLowPriorityWindows():
+    return __collectEM.handleEvent(LOW_PRIORITY_WULF_WINDOWS, ctx=[])

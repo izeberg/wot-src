@@ -97,8 +97,6 @@ package net.wg.gui.battle.views.postmortemPanel
       {
          this._colorSchemeMgr = App.colorSchemeMgr;
          super();
-         mouseChildren = false;
-         mouseEnabled = false;
       }
       
       override public function setPlayerInfo(param1:String) : void
@@ -321,15 +319,17 @@ package net.wg.gui.battle.views.postmortemPanel
       
       protected function createPostmortemPanelElements() : void
       {
+         var _loc1_:Number = NaN;
          if(!this.postmortemInfoPanel)
          {
             this.postmortemInfoPanel = new PostmortemInfoPanel();
             this.postmortemInfoPanel.name = POST_MORTEM_INFO_NAME;
             this.postmortemInfoPanel.setManageSize(true);
-            this.postmortemInfoPanel.setSize(this.parent.width,this.parent.height * POSTMORTEM_INFO_PANEL_HEIGHT_MULTIPLIER | 0);
+            _loc1_ = this.parent.height * POSTMORTEM_INFO_PANEL_HEIGHT_MULTIPLIER | 0;
+            this.postmortemInfoPanel.setSize(this.parent.width,_loc1_);
             this.postmortemInfoPanel.x = -this.postmortemInfoPanel.width * POSTMORTEM_INFO_PANEL_WIDTH_MULTIPLIER | 0;
-            this.postmortemInfoPanel.y = -this.parent.height * POSTMORTEM_INFO_PANEL_HEIGHT_MULTIPLIER | 0;
-            this._postmortemInfoPanelBaseYPosition = this.postmortemInfoPanel.y;
+            this._postmortemInfoPanelBaseYPosition = -_loc1_;
+            this.postmortemInfoPanel.y = this._postmortemInfoPanelBaseYPosition;
             addChild(this.postmortemInfoPanel);
             registerFlashComponentS(this.postmortemInfoPanel,BATTLE_VIEW_ALIASES.POSTMORTEM_INFO_PAGE);
          }

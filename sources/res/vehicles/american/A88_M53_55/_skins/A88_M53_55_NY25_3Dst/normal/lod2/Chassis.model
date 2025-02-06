@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.995429 -0.000713 -2.886299</min>
+		<max>1.993776 1.464335 3.601636</max>
+	</visibilityBox>
+</root>

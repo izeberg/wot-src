@@ -2118,6 +2118,8 @@ RECORDS = (
  (
   'singleAchievements', 'betaTester', 'p', 'B', 1),
  (
+  'singleAchievements', '14YearsOfService', 'p', 'B', 1),
+ (
   'singleAchievements', '13YearsOfService', 'p', 'B', 1),
  (
   'singleAchievements', '12YearsOfService', 'p', 'B', 1),
@@ -3446,7 +3448,13 @@ RECORDS = (
  (
   'singleAchievements', 'hw2024Medal', 'p', 'B', 1),
  (
-  'singleAchievements', 'BattlePassCommonPr_15extra', 'p', 'B', 1))
+  'singleAchievements', 'BattlePassCommonPr_15extra', 'p', 'B', 1),
+ (
+  'singleAchievements', 'NY25_AtmsphrLevel', 'p', 'B', 1),
+ (
+  'singleAchievements', 'NY25_CelebChallenge', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BattlePassCommonPr_NY25', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5171,7 +5179,11 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('achievements', 'wt2024HunterWinsEpic'): 2002, 
    ('achievements', 'mapboxClimateExpert'): 2003, 
    ('singleAchievements', 'hw2024Medal'): 2004, 
-   ('singleAchievements', 'BattlePassCommonPr_15extra'): 2005}
+   ('singleAchievements', 'BattlePassCommonPr_15extra'): 2005, 
+   ('singleAchievements', 'NY25_AtmsphrLevel'): 2006, 
+   ('singleAchievements', 'NY25_CelebChallenge'): 2007, 
+   ('singleAchievements', '14YearsOfService'): 2008, 
+   ('singleAchievements', 'BattlePassCommonPr_NY25'): 2009}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

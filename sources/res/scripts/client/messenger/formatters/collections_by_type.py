@@ -8,7 +8,6 @@ from messenger.formatters import auto_boxes_subformatters, token_quest_subformat
 from messenger.m_constants import SCH_CLIENT_MSG_TYPE
 registerLootBoxAutoOpenSubFormatters((
  auto_boxes_subformatters.EventBoxesFormatter(),
- auto_boxes_subformatters.EventLootBoxesFormatter(),
  auto_boxes_subformatters.NYPostEventBoxesFormatter(),
  auto_boxes_subformatters.NYGiftSystemSurpriseFormatter(),
  auto_boxes_subformatters.LunarNYEnvelopeAutoOpenFormatter(),
@@ -106,7 +105,6 @@ def initRegistrationFormatters():
     registerMessengerServerFormatter(_SM_TYPE.customizationProgressionChanged.index(), _sc.CustomizationProgressionChangedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.passiveXPActivated.index(), _wotPlusFormatters.PassiveXpActivatedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.passiveXPDeactivated.index(), _wotPlusFormatters.PassiveXpDeactivatedFormatter())
-    registerMessengerServerFormatter(_SM_TYPE.replacedConsumables.index(), _sc.ConsumableReplacedItemsFormatter())
     registerMessengerServerFormatter(_SM_TYPE.passiveXPSwitched.index(), _wotPlusFormatters.PassiveXpSwitchedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.wotPlusUnlocked.index(), _wotPlusFormatters.WotPlusUnlockedAwardFormatter())
     registerMessengerServerFormatter(_SM_TYPE.wotPlusRenewed.index(), _wotPlusFormatters.WotPlusRenewedFormatter())

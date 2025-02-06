@@ -1,4 +1,6 @@
-import logging, typing
+import logging
+from functools import partial
+import typing
 from adisp import adisp_process
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport import TooltipData
@@ -72,6 +74,12 @@ class SelectableRewardManager(object):
     def giftRawBonusesExtractor(gift, *_):
         return gift.rawBonuses
 
+    @staticmethod
+    def _getGiftTokenFromOffer(offerToken):
+        splitToken = offerToken.split(':')
+        splitToken[2] += '_gift'
+        return (':').join(splitToken)
+
     @classmethod
     def getBonusReceivedOptions(cls, bonus, extractor=None):
         if not isinstance(bonus, SelectableBonus):
@@ -90,17 +98,19 @@ class SelectableRewardManager(object):
             return result
 
     @classmethod
-    def getAvailableSelectableBonuses(cls, condition=None):
-
-        def isAvailableBonus(tokenID):
-            offer = SelectableRewardManager.__offersDataProvider.getOfferByToken(tokenID)
-            return offer is not None and offer.isOfferAvailable
-
-        return cls.getSelectableBonuses(lambda tokenID: isAvailableBonus(tokenID) and (not callable(condition) or condition(tokenID)))
+    def __isAvailableBonus(cls, condition, tokenID):
+        offer = cls.__offersDataProvider.getOfferByToken(tokenID)
+        return offer is not None and offer.isOfferAvailable and condition(tokenID)
 
     @classmethod
-    def getSelectableBonuses(cls, condition=None):
-        return [ SelectableBonus({tokenID: cls._packTokenData(token)}) for tokenID, token in cls._iterAvailableTokens() if cls.isFeatureReward(tokenID) and (not callable(condition) or condition(tokenID))
+    def getAvailableSelectableBonuses(cls, condition=bool):
+        condition = condition if callable(condition) else bool
+        return cls.getSelectableBonuses(partial(cls.__isAvailableBonus, condition))
+
+    @classmethod
+    def getSelectableBonuses(cls, condition=bool):
+        condition = condition if callable(condition) else bool
+        return [ SelectableBonus({tokenID: cls._packTokenData(token)}) for tokenID, token in cls._iterAvailableTokens() if cls.isFeatureReward(tokenID) and condition(tokenID)
                ]
 
     @classmethod
@@ -141,7 +151,7 @@ class SelectableRewardManager(object):
 
     @classmethod
     def _iterAvailableTokens(cls):
-        return ((tokenID, token) for tokenID, token in cls.__itemsCache.items.tokens.getTokens().iteritems())
+        return cls.__itemsCache.items.tokens.getTokens().iteritems()
 
     @classmethod
     def __getFeatureTokens(cls):
@@ -156,7 +166,7 @@ class BattlePassSelectableRewardManager(SelectableRewardManager):
         tokenID = selectableBonus.getValue().keys()[0]
         if cls.isFeatureReward(tokenID):
             return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, specialArgs=[
-             _getGiftTokenFromOffer(tokenID), True])
+             cls._getGiftTokenFromOffer(tokenID), True])
         else:
             return
 
@@ -169,7 +179,7 @@ class Comp7SelectableRewardManager(SelectableRewardManager):
         tokenID = selectableBonus.getValue().keys()[0]
         if cls.isFeatureReward(tokenID):
             return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.COMP7_SELECTABLE_REWARD, specialArgs=[
-             _getGiftTokenFromOffer(tokenID), True])
+             cls._getGiftTokenFromOffer(tokenID), True])
         else:
             return
 
@@ -200,7 +210,7 @@ class EpicSelectableRewardManager(SelectableRewardManager):
         tokenID = selectableBonus.getValue().keys()[0]
         if cls.isFeatureReward(tokenID):
             return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.EPIC_BATTLE_INSTRUCTION_TOOLTIP, specialArgs=[
-             _getGiftTokenFromOffer(tokenID)])
+             cls._getGiftTokenFromOffer(tokenID)])
         else:
             return
 
@@ -250,9 +260,3 @@ class WinbackSelectableRewardManager(SelectableRewardManager):
     @classmethod
     def getBonusOffer(cls, bonus):
         return cls._getBonusOffer(bonus)
-
-
-def _getGiftTokenFromOffer(offerToken):
-    splitToken = offerToken.split(':')
-    splitToken[2] += '_gift'
-    return (':').join(splitToken)

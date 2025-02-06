@@ -153,6 +153,17 @@ msgstr ""
 msgid "13YearsOfService_descr"
 msgstr "You have been in the game since %(regDate)s"
 
+msgid "14YearsOfService"
+msgstr "For 14 years of service"
+
+msgid "14YearsOfService_condition"
+msgstr ""
+"Awarded to players for their invaluable contribution to the evolution of "
+"World of Tanks."
+
+msgid "14YearsOfService_descr"
+msgstr "You have been in the game since %(regDate)s"
+
 msgid "BR2019Title15"
 msgstr "Taking Off"
 
@@ -390,6 +401,17 @@ msgstr "• Awarded for completing the Progression."
 
 msgid "BattlePassCommonPr_NY24_descr"
 msgstr "Awarded for your achievements during Snatch the Diamond."
+
+msgid "BattlePassCommonPr_NY25"
+msgstr "Long Road"
+
+msgid "BattlePassCommonPr_NY25_condition"
+msgstr "• Awarded for completing the Progression."
+
+msgid "BattlePassCommonPr_NY25_descr"
+msgstr ""
+"Awarded for your achievements during Rambo.\n"
+"RAMBO™ & © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
 
 msgid "BigAnniversaryMedal_CN"
 msgstr "Big Anniversary Medal"
@@ -1036,6 +1058,26 @@ msgid "NY24_CelebChallenge_descr"
 msgstr ""
 "Awarded for completing the corresponding Mission From Vinnie Jones during "
 "Holiday Ops 2024."
+
+msgid "NY25_AtmsphrLevel"
+msgstr "Spark of Life"
+
+msgid "NY25_AtmsphrLevel_condition"
+msgstr ""
+"• You can enhance the Festive Atmosphere by increasing the object Levels in your Village.\n"
+"• Awarded to all players who fulfill the respective condition during Holiday Ops 2025."
+
+msgid "NY25_AtmsphrLevel_descr"
+msgstr ""
+"Reach Festive Atmosphere Level X by participating in Holiday Ops 2025."
+
+msgid "NY25_CelebChallenge"
+msgstr "Tough Fella"
+
+msgid "NY25_CelebChallenge_descr"
+msgstr ""
+"Awarded for completing the corresponding Mission From Jason Statham during "
+"Holiday Ops 2025."
 
 msgid "RP2018firstmed"
 msgstr "Exemplary Cadet, Class III"
@@ -1828,6 +1870,14 @@ msgid "comp7_4_1_descr"
 msgstr ""
 "Awarded for completing a series of missions in Season of the Azure Manticore"
 " in Onslaught mode."
+
+msgid "comp7_4_2"
+msgstr "Hybrid Theory"
+
+msgid "comp7_4_2_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Crimson "
+"Manticore in Onslaught mode."
 
 msgid "comp7_4_yearly_bronze"
 msgstr "Bronze Manticore"

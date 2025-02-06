@@ -1,11 +1,5 @@
-from enum import Enum
+from gui.impl.gen.view_models.views.lobby.comp7.enums import SeasonPointState
 from frameworks.wulf import ViewModel
-
-class SeasonPointState(Enum):
-    ACHIEVED = 'achieved'
-    POSSIBLE = 'possible'
-    NOTACHIEVED = 'notAchieved'
-
 
 class SeasonPointTooltipModel(ViewModel):
     __slots__ = ()

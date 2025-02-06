@@ -532,6 +532,21 @@
 		<tags>lightTank role_LT_wheeled HD wheeledVehicle magneticAutoAim speedometer siegeMode scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_light_user</tags>
 		<level>9</level>
 	</F100_Panhard_EBR_90>
+	<F122_VCS_6x6_TS90>
+		<id>260</id>
+		<userString>#france_vehicles:F122_VCS_6x6_TS90</userString>
+		<shortUserString>#france_vehicles:F122_VCS_6x6_TS90_short</shortUserString>
+		<shortDescriptionSpecial>#france_vehicles:F122_VCS_6x6_TS90_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:F122_VCS_6x6_TS90_long_special</longDescriptionSpecial>
+		<description>#france_vehicles:F122_VCS_6x6_TS90_descr</description>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>lightTank role_LT_wheeled HD wheeledVehicle magneticAutoAim speedometer scout improvedVentilation_class3_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_light_user earn_crystals secret testTank</tags>
+		<level>9</level>
+	</F122_VCS_6x6_TS90>
 	<F108_Panhard_EBR_105>
 		<id>74</id>
 		<userString>#france_vehicles:F108_Panhard_EBR_105</userString>
@@ -1169,11 +1184,11 @@
 		<shortDescriptionSpecial>#france_vehicles:F128_SFAC_105_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F128_SFAC_105_long_special</longDescriptionSpecial>
 		<price>
-			100
+			9950
 			<gold/>
 		</price>
 		<notInShop>True</notInShop>
-		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG siegeMode dualgun charger extraHealthReserve_class1_user antifragmentationLining_medium_user secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG siegeMode dualgun charger extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</F128_SFAC_105>
 	<F39_AMR_P103>
@@ -1184,11 +1199,11 @@
 		<shortDescriptionSpecial>#france_vehicles:F39_AMR_P103_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#france_vehicles:F39_AMR_P103_long_special</longDescriptionSpecial>
 		<price>
-			100
+			500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank</tags>
+		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
 		<level>2</level>
 	</F39_AMR_P103>
 </root>

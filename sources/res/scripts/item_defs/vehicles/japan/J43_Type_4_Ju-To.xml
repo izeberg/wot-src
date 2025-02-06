@@ -1895,7 +1895,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>55000</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
@@ -3549,7 +3549,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>55000</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
@@ -5331,16 +5331,16 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.38
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.7
+						10.2
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -5350,7 +5350,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -6724,12 +6724,12 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.5
+						9.9
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -6739,7 +6739,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -8181,24 +8181,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<_Type96_Bo>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Otsu
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</_Type96_Bo>
-		<_Type3_Otsu>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Ko
-					<cost>9300</cost>
-				</radio>
-			</unlocks>
-		</_Type3_Otsu>
 		<_Type3_Ko>shared</_Type3_Ko>
 	</radios>
 	<clientAdjustmentFactors/>

@@ -6776,5 +6776,225 @@
 				<_3241>tankmen_bp15_9.png</_3241>
 			</icons>
 		</tankmen_bp15_9>
+		<tankmen_bp1004_1>
+			<groupID>256</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader tankmen_bp1004_1</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_3242>#gb_crew:names/tankmen_bp1004_1_n</_3242>
+			</firstNames>
+			<lastNames>
+				<_3242>#gb_crew:names/tankmen_bp1004_1</_3242>
+			</lastNames>
+			<icons>
+				<_3242>tankmen_bp1004_1.png</_3242>
+			</icons>
+		</tankmen_bp1004_1>
+		<tankmen_bp1004_2>
+			<groupID>257</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader tankmen_bp1004_2</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_3243>#gb_crew:names/tankmen_bp1004_2_n</_3243>
+			</firstNames>
+			<lastNames>
+				<_3243>#gb_crew:names/tankmen_bp1004_2</_3243>
+			</lastNames>
+			<icons>
+				<_3243>tankmen_bp1004_2.png</_3243>
+			</icons>
+		</tankmen_bp1004_2>
+		<tankmen_bp1004_3>
+			<groupID>258</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader tankmen_bp1004_3</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_3244>#gb_crew:names/tankmen_bp1004_3_n</_3244>
+			</firstNames>
+			<lastNames>
+				<_3244>#gb_crew:names/tankmen_bp1004_3</_3244>
+			</lastNames>
+			<icons>
+				<_3244>tankmen_bp1004_3.png</_3244>
+			</icons>
+		</tankmen_bp1004_3>
+		<tankmen_bp1004_4>
+			<groupID>259</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader tankmen_bp1004_4</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_3245>#gb_crew:names/tankmen_bp1004_4_n</_3245>
+			</firstNames>
+			<lastNames>
+				<_3245>#gb_crew:names/tankmen_bp1004_4</_3245>
+			</lastNames>
+			<icons>
+				<_3245>tankmen_bp1004_4.png</_3245>
+			</icons>
+		</tankmen_bp1004_4>
+		<tankmen_bp1004_5>
+			<groupID>260</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader tankmen_bp1004_5</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_3246>#gb_crew:names/tankmen_bp1004_5_n</_3246>
+			</firstNames>
+			<lastNames>
+				<_3246>#gb_crew:names/tankmen_bp1004_5</_3246>
+			</lastNames>
+			<icons>
+				<_3246>tankmen_bp1004_5.png</_3246>
+			</icons>
+		</tankmen_bp1004_5>
+		<boosteroid_foxwood>
+			<groupID>270</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3256>#gb_crew:names/boosteroid_foxwood_n</_3256>
+			</firstNames>
+			<lastNames>
+				<_3256>#gb_crew:names/boosteroid_foxwood</_3256>
+			</lastNames>
+			<icons>
+				<_3256>boosteroid_foxwood.png</_3256>
+			</icons>
+		</boosteroid_foxwood>
+		<ny25_men>
+			<groupID>246</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander celebrity25SpecialVoice</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3232>#gb_crew:names/ny25_men_n</_3232>
+			</firstNames>
+			<lastNames>
+				<_3232>#gb_crew:names/ny25_men</_3232>
+			</lastNames>
+			<icons>
+				<_3232>ny25_men.png</_3232>
+			</icons>
+		</ny25_men>
+		<ny25_girl_1>
+			<groupID>247</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3233>#gb_crew:names/ny25_girl_1n</_3233>
+			</firstNames>
+			<lastNames>
+				<_3233>#gb_crew:names/ny25_girl_1</_3233>
+			</lastNames>
+			<icons>
+				<_3233>ny25_girl_1.png</_3233>
+			</icons>
+		</ny25_girl_1>
+		<ny25_girl_2>
+			<groupID>248</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3234>#gb_crew:names/ny25_girl_2n</_3234>
+			</firstNames>
+			<lastNames>
+				<_3234>#gb_crew:names/ny25_girl_2</_3234>
+			</lastNames>
+			<icons>
+				<_3234>ny25_girl_2.png</_3234>
+			</icons>
+		</ny25_girl_2>
+		<ny25_girl_3>
+			<groupID>249</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3235>#gb_crew:names/ny25_girl_3n</_3235>
+			</firstNames>
+			<lastNames>
+				<_3235>#gb_crew:names/ny25_girl_3</_3235>
+			</lastNames>
+			<icons>
+				<_3235>ny25_girl_3.png</_3235>
+			</icons>
+		</ny25_girl_3>
+		<ny25_girl_4>
+			<groupID>250</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3236>#gb_crew:names/ny25_girl_4n</_3236>
+			</firstNames>
+			<lastNames>
+				<_3236>#gb_crew:names/ny25_girl_4</_3236>
+			</lastNames>
+			<icons>
+				<_3236>ny25_girl_4.png</_3236>
+			</icons>
+		</ny25_girl_4>
 	</premiumGroups>
 </root>

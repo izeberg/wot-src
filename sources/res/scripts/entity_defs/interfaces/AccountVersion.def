@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<Properties>
-		<requiredVersion_12700>
+		<requiredVersion_12710>
+			`
 			<Type>STRING</Type>
 			<Flags>BASE_AND_CLIENT</Flags>
-			<Default>na_1.27.0</Default>
-		</requiredVersion_12700>
+			<Default>na_1.27.1_4</Default>
+		</requiredVersion_12710>
 	</Properties>
 </root>

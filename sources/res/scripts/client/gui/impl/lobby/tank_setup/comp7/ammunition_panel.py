@@ -17,6 +17,7 @@ class Comp7AmmunitionPanelView(HangarAmmunitionPanelView):
             if tooltipId == TOOLTIPS_CONSTANTS.COMP7_ROLE_SKILL_LOBBY_TOOLTIP:
                 tooltipData = createTooltipData(isSpecial=True, specialAlias=tooltipId, specialArgs=(
                  event.getArgument('roleSkill'),
+                 self.__getCurrentVehicleRole(),
                  self.__getCurrentVehicleRoleSkillLevel()))
             if tooltipData is not None:
                 window = BackportTooltipWindow(tooltipData, self.getParentWindow())

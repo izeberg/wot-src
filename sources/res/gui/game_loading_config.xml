@@ -19,8 +19,8 @@
 			<texture>gui/maps/loading/sponsors_logo.png</texture>
 			<adaptive>
 				<texture>gui/maps/loading/sponsors_logo_big.png</texture>
-				<minWidth>1366</minWidth>
-				<minHeight>768</minHeight>
+				<minWidth>1600</minWidth>
+				<minHeight>900</minHeight>
 			</adaptive>
 		</logo>
 		<ageRating>
@@ -41,20 +41,27 @@
 		<clientLoading>
 			<showVfx>false</showVfx>
 			<contentState>1</contentState>
+			<showSmallLogo>true</showSmallLogo>
+			<minimalDuration>
+				2.0
+				<!--BW_String-->
+			</minimalDuration>
 		</clientLoading>
 		<login>
 			<showVfx>false</showVfx>
 			<contentState>0</contentState>
+			<showSmallLogo>false</showSmallLogo>
 		</login>
 		<playerLoading>
 			<showVfx>false</showVfx>
 			<contentState>1</contentState>
+			<showSmallLogo>true</showSmallLogo>
 		</playerLoading>
 	</states>
 	<logoList>
 		<logo>
 			<type>1</type>
-			<duration>5</duration>
+			<duration>3</duration>
 			<showCopyright>true</showCopyright>
 			<showVersion>true</showVersion>
 			<transitionDuration>
@@ -121,19 +128,32 @@
 			<title>#game_loading:defaultSlide/10/title</title>
 		</slide>
 	</defaultSlideList>
-	<statusTextDuration>13</statusTextDuration>
-	<statusTextList>
-		<text>#game_loading:client/status/load</text>
-	</statusTextList>
 	<progressSettings>
 		<client>
 			<settings>
 				<startPercent>0</startPercent>
 				<limitPercent>50</limitPercent>
 				<ticksInProgress>2000</ticksInProgress>
-				<minTickTimeSec>0</minTickTimeSec>
+				<minTickTimeSec>
+					0.1
+					<!--BW_String-->
+				</minTickTimeSec>
 			</settings>
-			<milestones/>
+			<milestones>
+				<default>
+					<milestone>
+						<name>client_loading</name>
+						<percent>0</percent>
+						<text>#game_loading:client/status/load</text>
+					</milestone>
+					<milestone>
+						<name>saving_pdc</name>
+						<percent>100</percent>
+						<text>#game_loading:client/status/fileOptimization</text>
+						<forceApply>True</forceApply>
+					</milestone>
+				</default>
+			</milestones>
 		</client>
 		<player>
 			<settings>
@@ -146,13 +166,13 @@
 				</minTickTimeSec>
 			</settings>
 			<milestones>
-				<connection>
+				<default>
 					<milestone>
 						<name>connection</name>
 						<percent>100</percent>
 						<text>#game_loading:player/status/login</text>
 					</milestone>
-				</connection>
+				</default>
 				<standard>
 					<milestone>
 						<name>enter</name>

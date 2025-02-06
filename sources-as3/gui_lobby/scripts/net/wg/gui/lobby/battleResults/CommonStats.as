@@ -5,6 +5,7 @@ package net.wg.gui.lobby.battleResults
    import flash.display.DisplayObjectContainer;
    import flash.display.InteractiveObject;
    import flash.events.Event;
+   import flash.geom.Point;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.data.constants.ArenaBonusTypes;
@@ -17,6 +18,8 @@ package net.wg.gui.lobby.battleResults
    import net.wg.gui.components.controls.ScrollBar;
    import net.wg.gui.components.controls.ScrollingListEx;
    import net.wg.gui.events.FinalStatisticEvent;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionLayoutHelper;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidget;
    import net.wg.gui.lobby.battleResults.components.AlertMessage;
    import net.wg.gui.lobby.battleResults.components.BattleResultsMedalsList;
    import net.wg.gui.lobby.battleResults.components.DetailsBlock;
@@ -43,6 +46,7 @@ package net.wg.gui.lobby.battleResults
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.IFormattedInt;
    import net.wg.infrastructure.interfaces.IViewStackContent;
+   import net.wg.utils.IClassFactory;
    import net.wg.utils.ILocale;
    import net.wg.utils.IScheduler;
    import org.idmedia.as3commons.util.StringUtils;
@@ -91,6 +95,8 @@ package net.wg.gui.lobby.battleResults
       private static const MEDALS_LIST_LEFT_X:int = 22;
       
       private static const ARENA_LBL_ALPHA:Number = 0.8;
+      
+      private static const PLAYER_SATISFACTION_CMP_LINKAGE:String = "PlayerSatisfactionWidgetUI";
        
       
       public var resultLbl:TextField;
@@ -183,6 +189,8 @@ package net.wg.gui.lobby.battleResults
       
       private var _scheduler:IScheduler;
       
+      private var playerSatisfactionWidget:PlayerSatisfactionWidget = null;
+      
       public function CommonStats()
       {
          this._linkageSelector = new ProgressReportLinkageSelector();
@@ -255,6 +263,14 @@ package net.wg.gui.lobby.battleResults
          this.prestigePoints = null;
          this.deserter.dispose();
          this.deserter = null;
+         if(this.playerSatisfactionWidget)
+         {
+            if(!this.playerSatisfactionWidget.isDisposed())
+            {
+               this.playerSatisfactionWidget.dispose();
+               this.playerSatisfactionWidget = null;
+            }
+         }
          this._data = null;
          this._statsUtilsManager = null;
          super.onDispose();
@@ -291,6 +307,7 @@ package net.wg.gui.lobby.battleResults
             this.xpCounter.validateNow();
             this.crystalCounter.validateNow();
             this.progressiveReward.validateNow();
+            this.updateSatisfactionRatingCmp();
             this.visible = true;
          }
          if(isInvalid(HEADER_INVALID))
@@ -324,11 +341,12 @@ package net.wg.gui.lobby.battleResults
       
       public function update(param1:Object) : void
       {
+         var _loc3_:CommonStatsVO = null;
          var _loc10_:ProgressiveRewardVO = null;
          var _loc13_:String = null;
          this._data = BattleResultsVO(param1);
          var _loc2_:PersonalDataVO = this._data.personal;
-         var _loc3_:CommonStatsVO = this._data.common;
+         _loc3_ = this._data.common;
          var _loc4_:Array = AwardExtractor.extract(this._data.quests);
          var _loc5_:Array = AwardExtractor.extract(this._data.battlePass);
          var _loc6_:Array = this._data.dog_tags;
@@ -698,6 +716,34 @@ package net.wg.gui.lobby.battleResults
       private function onEfficiencyListScrollHandler(param1:Event) : void
       {
          invalidate(HEADER_INVALID);
+      }
+      
+      private function updateSatisfactionRatingCmp() : void
+      {
+         var _loc1_:IClassFactory = null;
+         var _loc2_:Point = null;
+         if(this._data)
+         {
+            if(this._data.common.showRateSatisfactionCmp)
+            {
+               if(this.playerSatisfactionWidget == null)
+               {
+                  _loc1_ = App.utils.classFactory;
+                  this.playerSatisfactionWidget = _loc1_.getComponent(PLAYER_SATISFACTION_CMP_LINKAGE,PlayerSatisfactionWidget);
+                  addChild(this.playerSatisfactionWidget);
+                  _loc2_ = PlayerSatisfactionLayoutHelper.updateLayout(this,true);
+                  this.playerSatisfactionWidget.x = _loc2_.x;
+                  this.playerSatisfactionWidget.y = _loc2_.y;
+               }
+            }
+            else if(this.playerSatisfactionWidget)
+            {
+               PlayerSatisfactionLayoutHelper.updateLayout(this,false);
+               removeChild(this.playerSatisfactionWidget);
+               this.playerSatisfactionWidget.destroy();
+               this.playerSatisfactionWidget = null;
+            }
+         }
       }
    }
 }

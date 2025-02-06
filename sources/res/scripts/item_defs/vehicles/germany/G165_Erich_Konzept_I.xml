@@ -99,12 +99,9 @@
 		<weight>19450</weight>
 		<maxHealth>1320</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>220</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>173</maxRegenHealth>
+			<repairCost>9</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/german/G165_Erich_Konzept_I/normal/lod0/Hull.model</undamaged>
@@ -804,6 +801,51 @@
 				<anchorShift>0.006107</anchorShift>
 				<hiddenForUser>true</hiddenForUser>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>-1.752985 0.236335 -0.801012</position>
+				<rotation>
+					0 -0 1.307862
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999997 0.999997 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.753 0.236335 -0.801012
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.307775
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					0 0.41933 -3.316
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -1.570796 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999983 0.999984 0.999983</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -822,7 +864,7 @@
 			<userString>#germany_vehicles:Chassis_G165_Erich_Konzept_I</userString>
 			<tags/>
 			<level>9</level>
-			<price>62900</price>
+			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<leftTrack>20</leftTrack>
@@ -851,8 +893,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>190</maxRegenHealth>
+			<maxHealth>240</maxHealth>
+			<maxRegenHealth>180</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -2569,7 +2611,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				5.71428585
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_G165_Erich_Konzept_I>
@@ -2579,7 +2621,7 @@
 			<userString>#germany_vehicles:Turret_1_G165_Erich_Konzept_I</userString>
 			<tags>cannotDetach</tags>
 			<level>9</level>
-			<price>52000</price>
+			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>0</armor_1>
@@ -2592,26 +2634,20 @@
 			<maxHealth>330</maxHealth>
 			<rotationSpeed>38</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>150</maxHealth>
-				<maxRegenHealth>75</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>170</maxHealth>
+				<maxRegenHealth>85</maxRegenHealth>
+				<repairCost>9</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>400</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<repairCost>2</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<_120_mm_Rh2B>
 					shared
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>130</armor_1>
 						<armor_2>90</armor_2>
@@ -2626,7 +2662,7 @@
 						<armor_11>115</armor_11>
 						<armor_12>85</armor_12>
 						<armor_13>95</armor_13>
-						<gun>40</gun>
+						<gun>50</gun>
 					</armor>
 					<aimingTime>
 						2.2
@@ -3257,6 +3293,30 @@
 								<!--BW_String-->
 							</anchorShift>
 							<hiddenForUser>true</hiddenForUser>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								0.703 0.451 0.672
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>turret</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48001</slotId>
+							<position>
+								-1.313 0.450381 0.028
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>

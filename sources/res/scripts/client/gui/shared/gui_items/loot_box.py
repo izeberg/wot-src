@@ -24,10 +24,6 @@ class NewYearCategories(CONST_CONTAINER):
     FAIRYTALE = 'Fairytale'
 
 
-class EventCategories(CONST_CONTAINER):
-    EVENT = 'Event'
-
-
 class WTLootBoxes(CONST_CONTAINER):
     WT_HUNTER = 'wt_hunter'
     WT_BOSS = 'wt_boss'
@@ -40,15 +36,9 @@ class LunarNYLootBoxTypes(Enum):
     SPECIAL = 'lunar_special'
 
 
-class EventLootBoxes(CONST_CONTAINER):
-    PREMIUM = 'event_premium'
-    COMMON = 'event_common'
-
-
 ALL_LUNAR_NY_LOOT_BOX_TYPES = ('lunar_base', 'lunar_simple', 'lunar_special')
 LUNAR_NY_LOOT_BOXES_CATEGORIES = 'LunarNY'
 SENIORITY_AWARDS_LOOT_BOXES_TYPE = 'seniorityAwards'
-EVENT_LOOT_BOXES_CATEGORY = 'eventLootBoxes'
 GUI_ORDER_NY = (
  NewYearLootBoxes.COMMON,
  NewYearLootBoxes.PREMIUM)

@@ -4,12 +4,14 @@ package net.wg.gui.lobby.battleResults
    import flash.events.FocusEvent;
    import flash.text.TextField;
    import flash.utils.Dictionary;
+   import net.wg.data.constants.generated.HANGAR_ALIASES;
    import net.wg.gui.components.advanced.ButtonBarEx;
    import net.wg.gui.components.advanced.ViewStack;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.events.FinalStatisticEvent;
    import net.wg.gui.events.QuestEvent;
    import net.wg.gui.events.ViewStackEvent;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidgetEvent;
    import net.wg.gui.lobby.battleResults.data.BattleResultsVO;
    import net.wg.gui.lobby.battleResults.data.TabInfoVO;
    import net.wg.gui.lobby.battleResults.event.BattleResultsViewEvent;
@@ -21,6 +23,7 @@ package net.wg.gui.lobby.battleResults
    import net.wg.infrastructure.base.meta.IBattleResultsMeta;
    import net.wg.infrastructure.base.meta.impl.BattleResultsMeta;
    import net.wg.infrastructure.events.FocusRequestEvent;
+   import net.wg.infrastructure.interfaces.IDAAPIModule;
    import net.wg.infrastructure.interfaces.IRegisteredComponent;
    import net.wg.infrastructure.uilogging.player_satisfaction_rating.PostBattleTeamLogger;
    import scaleform.clik.constants.InvalidationType;
@@ -78,6 +81,8 @@ package net.wg.gui.lobby.battleResults
          addEventListener(BattleResultsViewEvent.SHOW_DETAILS_PREMIUM,this.onShowDetailsPremiumHandler,false,0,true);
          addEventListener(BattleResultsViewEvent.SHOW_DETAILS_WOT_PLUS,this.onShowDetailsWotPlusHandler,false,0,true);
          addEventListener(BattleResultsViewEvent.SHOW_MANAGEABLE_XP_SCREEN,this.onShowManageableXPHandler,false,0,true);
+         addEventListener(PlayerSatisfactionWidgetEvent.CREATED,this.onPlayerSatisfactionWidgetCreated,false,0,true);
+         addEventListener(PlayerSatisfactionWidgetEvent.DESTROYED,this.onPlayerSatisfactionWidgetDestroyed,false,0,true);
          this.tabs_mc.visible = false;
          this.line.visible = false;
       }
@@ -111,6 +116,8 @@ package net.wg.gui.lobby.battleResults
          removeEventListener(BattleResultsViewEvent.SHOW_MANAGEABLE_XP_SCREEN,this.onShowManageableXPHandler);
          removeEventListener(DogTagLinkEvent.BATTLE_RESULTS_DOG_TAG_LINK_BTN_EVENT,this.onDogTagLinkBtnHandler);
          removeEventListener(PrestigeEvent.SHOW_TECHNIQUE_PROFILE,this.onPrestigeProgressBtnHandler);
+         removeEventListener(PlayerSatisfactionWidgetEvent.CREATED,this.onPlayerSatisfactionWidgetCreated);
+         removeEventListener(PlayerSatisfactionWidgetEvent.DESTROYED,this.onPlayerSatisfactionWidgetDestroyed);
          App.utils.data.cleanupDynamicObject(this._emblemLoadingDelegates);
          this._emblemLoadingDelegates = null;
          this.tabs_mc.removeEventListener(FocusEvent.FOCUS_IN,this.onTabFocusInHandler);
@@ -296,6 +303,20 @@ package net.wg.gui.lobby.battleResults
       private function onShowManageableXPHandler(param1:BattleResultsViewEvent) : void
       {
          onShowManageableXPScreenS();
+      }
+      
+      private function onPlayerSatisfactionWidgetCreated(param1:PlayerSatisfactionWidgetEvent) : void
+      {
+         param1.preventDefault();
+         param1.stopImmediatePropagation();
+         registerFlashComponentS(IDAAPIModule(param1.target),HANGAR_ALIASES.PLAYER_SATISFACTION_WIDGET);
+      }
+      
+      private function onPlayerSatisfactionWidgetDestroyed(param1:PlayerSatisfactionWidgetEvent) : void
+      {
+         param1.preventDefault();
+         param1.stopImmediatePropagation();
+         unregisterFlashComponentS(HANGAR_ALIASES.PLAYER_SATISFACTION_WIDGET);
       }
    }
 }

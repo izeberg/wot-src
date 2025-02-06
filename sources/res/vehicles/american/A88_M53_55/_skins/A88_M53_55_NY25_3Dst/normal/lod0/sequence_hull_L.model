@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod1/sequence_hull_L</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.304001 -0.248984 0.000000</min>
+		<max>0.327975 0.341729 0.284767</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/normal/lod0/sequence_hull_L</nodelessVisual>
+</root>

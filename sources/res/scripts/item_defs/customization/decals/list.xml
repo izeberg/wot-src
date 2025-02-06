@@ -1583,6 +1583,31 @@
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>411</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_49.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_49</userString>
+			<mirror>true</mirror>
+		</decal>
+		<decal>
+			<id>412</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_50.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_50</userString>
+			<mirror>true</mirror>
+		</decal>
+		<name>Valentine&apos;s Day</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/cool</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
 		<decal>
 			<id>416</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_55.dds</texture>
@@ -1799,26 +1824,6 @@
 			<mirror>false</mirror>
 		</decal>
 		<name>Cool</name>
-		<type>EMBLEM</type>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:emblem/cool</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>emblems 50g notInShop</priceGroup>
-		<decal>
-			<id>411</id>
-			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_49.dds</texture>
-			<userString>#vehicle_customization:emblem/cool/sticker_49</userString>
-			<mirror>true</mirror>
-		</decal>
-		<decal>
-			<id>412</id>
-			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_50.dds</texture>
-			<userString>#vehicle_customization:emblem/cool/sticker_50</userString>
-			<mirror>true</mirror>
-		</decal>
-		<name>Valentine&apos;s Day</name>
 		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
@@ -7556,6 +7561,111 @@
 			<mirror>true</mirror>
 			<tags>styleOnly questsProgression</tags>
 		</decal>
+		<decal>
+			<id>1301</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_844.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_780</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1302</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_845.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_782</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1303</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_846.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_781</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1304</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_847.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_768</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1305</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_848.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_769</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1306</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_849.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_770</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1307</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_850.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_771</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1308</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_851.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_772</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1309</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_852.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_773</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1310</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_853.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_774</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1311</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_854.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_775</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1312</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_855.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_776</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1313</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_856.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_777</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1314</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_857.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_778</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1315</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_858.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_779</userString>
+			<mirror>true</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
 		<name>Manticore</name>
 		<type>EMBLEM</type>
 	</itemGroup>
@@ -7644,6 +7754,29 @@
 			<mirror>true</mirror>
 		</decal>
 		<name>Tournaments 2024</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<levels>8 9 10</levels>
+			</include>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1134</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_861.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_861</userString>
+			<tags>styleOnly hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>beast 4</name>
 		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
@@ -8175,6 +8308,21 @@
 			<mirror>true</mirror>
 		</decal>
 		<name>mexican_independence_2023</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<name>Boosteroid</name>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 150g notInShop</priceGroup>
+		<decal>
+			<id>16022</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_859.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_859</userString>
+			<mirror>true</mirror>
+			<tags>hiddenInUI</tags>
+		</decal>
 		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
@@ -14327,6 +14475,55 @@
 			<mirror>false</mirror>
 			<tags>styleOnly</tags>
 		</decal>
+		<decal>
+			<id>1121</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_777.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_777</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1122</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_778.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_778</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1123</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_779.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_779</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1124</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_780.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_780</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1125</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_781.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_781</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1126</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_782.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_782</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1127</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_783.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_783</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
 		<name>Manticore</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
@@ -14395,6 +14592,143 @@
 			<mirror>false</mirror>
 		</decal>
 		<name>Tornaments 2024</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1103</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_767.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_767</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Battle of the Bulge</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1128</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_784.dds</texture>
+			<description>#vehicle_customization:projection_decals/special/projection_decal_819/description</description>
+			<userString>#vehicle_customization:inscription/special/special_784</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1129</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_785.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_785</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1130</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_786.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_786</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Battle Pass 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1107</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_770.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_770</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1108</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_771.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_771</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1109</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_772.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_772</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1110</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_773.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_773</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1118</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_774.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_774</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1119</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_775.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_775</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1120</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_776.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_776</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>NY 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1135</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_796.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_796</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1136</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_797.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_797</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1137</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_798.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_798</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Lunar NY 2025</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
 	<itemGroup>

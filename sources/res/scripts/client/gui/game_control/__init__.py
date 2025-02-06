@@ -66,6 +66,7 @@ def getGameControllersConfig(manager):
     from gui.game_control.account_completion import SteamCompletionController as _SteamCompletionController, DemoAccCompletionController as _DemoAccCompletionController
     from gui.game_control.comp7_controller import Comp7Controller as _Comp7Ctrl
     from gui.game_control.comp7_shop_controller import Comp7ShopController
+    from gui.game_control.comp7_weekly_quests_controller import Comp7WeeklyQuestsController
     from gui.game_control.veh_post_progression_controller import VehiclePostProgressionController
     from gui.game_control.wot_plus_controller import WotPlusController
     from gui.game_control.optional_devices_assistant_controller import OptionalDevicesAssistantController
@@ -77,7 +78,6 @@ def getGameControllersConfig(manager):
     from gui.game_control.resource_well_controller import ResourceWellController
     from gui.game_control.extension_stubs.fun_random_controller import FunRandomController
     from gui.game_control.hangar_switch_controller import HangarSpaceSwitchController
-    from gui.game_control.event_lootboxes_controller import EventLootBoxesController
     from gui.game_control.lootbox_system_controller import LootBoxSystemController
     from gui.entitlements.entitlements_controller import EntitlementsController
     from gui.game_control.winback_controller import WinbackController
@@ -147,6 +147,7 @@ def getGameControllersConfig(manager):
     _config(_interface.IFunRandomController, FunRandomController())
     _config(_interface.IComp7Controller, _Comp7Ctrl())
     _config(_interface.IComp7ShopController, Comp7ShopController())
+    _config(_interface.IComp7WeeklyQuestsController, Comp7WeeklyQuestsController())
     _config(_interface.ISeasonsController, _Seasons())
     _config(_interface.IBadgesController, _Badges())
     _config(_interface.IAnonymizerController, _Anonymizer())
@@ -165,7 +166,6 @@ def getGameControllersConfig(manager):
     _config(_interface.IGiftSystemController, GiftSystemController())
     _config(_interface.IRTSBattlesController, RTSBattlesController())
     _config(_interface.IResourceWellController, ResourceWellController())
-    _config(_interface.IEventLootBoxesController, EventLootBoxesController())
     _config(_interface.ILootBoxSystemController, LootBoxSystemController())
     _config(_interface.IEntitlementsController, EntitlementsController())
     _config(_interface.ICollectionsSystemController, CollectionsSystemController())

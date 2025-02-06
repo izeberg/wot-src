@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/crash/lod1/Gun_01</nodelessVisual>
+	<parent>vehicles/czech/Cz02_TVP_T50/_skins/Cz02_TVP_T50_NY25_3Dst/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.588168 -0.350290 -0.004614</min>
+		<max>0.587545 0.372829 5.643732</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB148_FV227_Conceiver/crash/lod3/Turret_02</nodefullVisual>
+	<visibilityBox>
+		<min>-1.306550 -0.033116 -2.445354</min>
+		<max>1.320011 1.363798 1.400220</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB148_FV227_Conceiver/crash/lod4/Turret_02</parent>
+	<extent>192</extent>
+</root>

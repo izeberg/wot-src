@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.599159 -0.021392 -1.594452</min>
+		<max>1.598871 1.118816 1.562226</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G174_Kpz3_GST_Turm/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G174_Kpz3_GST_Turm/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

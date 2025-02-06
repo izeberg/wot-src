@@ -333,13 +333,28 @@
 		<shortDescriptionSpecial>#usa_vehicles:A176_M103_110_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A176_M103_110_long_special</longDescriptionSpecial>
 		<price>
-			100
+			12900
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>9</level>
 	</A176_M103_110>
+	<A176_M103_110_CFE_R>
+		<id>261</id>
+		<userString>#usa_vehicles:A176_M103_110_CFE_R</userString>
+		<description>#usa_vehicles:A176_M103_110_CFE_R_descr</description>
+		<shortUserString>#usa_vehicles:A176_M103_110_CFE_R_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A176_M103_110_CFE_R_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A176_M103_110_CFE_R_long_special</longDescriptionSpecial>
+		<price>
+			12900
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals lockOutfit restoreWithStyle</tags>
+		<level>9</level>
+	</A176_M103_110_CFE_R>
 	<A34_M24_Chaffee>
 		<id>38</id>
 		<userString>#usa_vehicles:M24_Chaffee</userString>
@@ -383,6 +398,20 @@
 		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>10</level>
 	</A69_T110E5>
+	<A69_T110E5_7x7>
+		<id>260</id>
+		<userString>#usa_vehicles:A69_T110E5_7x7</userString>
+		<shortUserString>#usa_vehicles:A69_T110E5_7x7_short</shortUserString>
+		<description>#usa_vehicles:T110_descr</description>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<cannotBeBought>true</cannotBeBought>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals private secret cannot_be_sold comp7 special</tags>
+		<level>10</level>
+	</A69_T110E5_7x7>
 	<A72_T25_2>
 		<id>43</id>
 		<userString>#usa_vehicles:T25_2</userString>
@@ -722,11 +751,11 @@
 		<shortDescriptionSpecial>#usa_vehicles:A154_Convertible_Medium_Tank_T3E2_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A154_Convertible_Medium_Tank_T3E2_long_special</longDescriptionSpecial>
 		<price>
-			100
+			500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank</tags>
+		<tags>mediumTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
 		<level>3</level>
 	</A154_Convertible_Medium_Tank_T3E2>
 	<A153_XM66F>
@@ -1010,11 +1039,11 @@
 		<shortDescriptionSpecial>#usa_vehicles:A168_XM_57_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A168_XM_57_long_special</longDescriptionSpecial>
 		<price>
-			100
+			9400
 			<gold/>
 		</price>
 		<notInShop>True</notInShop>
-		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
 		<level>8</level>
 	</A168_XM_57>
 	<A72_T25_2_SH>
@@ -1803,11 +1832,11 @@
 		<shortDescriptionSpecial>#usa_vehicles:A76_M3_A3_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A76_M3_A3_long_special</longDescriptionSpecial>
 		<price>
-			100
+			500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank</tags>
+		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
 		<level>3</level>
 	</A76_M3_A3>
 	<A97_M41_Bulldog_FL>

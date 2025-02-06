@@ -49,6 +49,9 @@ msgstr "Own the&nbsp;116-F3 (Tier&nbsp;%(level)s)"
 msgid "description/Cz17_Vz_55_CN"
 msgstr "Own the&nbsp;Vz.&nbsp;55 Gothic Warrior (Tier&nbsp;%(level)s)"
 
+msgid "description/Cz40_DBV_152"
+msgstr "Own the&nbsp;DBV-152 (Tier&nbsp;%(level)s)"
+
 msgid "description/G104_Stug_IV"
 msgstr ""
 "Complete the first Operation and own the StuG&nbsp;IV (Tier&nbsp;%(level)s)"
@@ -92,6 +95,12 @@ msgstr "Own the&nbsp;WT&nbsp;12 (Tier&nbsp;%(level)s)"
 
 msgid "description/GB114_Vickers_MBT_Mk3"
 msgstr "Own the&nbsp;Vickers&nbsp;3 (Tier&nbsp;%(level)s)"
+
+msgid "description/GB141_GSOR_the_TANK"
+msgstr "Own&nbsp;GSOR the TANK&nbsp; (Tier&nbsp;%(level)s)"
+
+msgid "description/GB146_Gabler_s_Destroyer"
+msgstr "Own the&nbsp;Gabler’s&nbsp;Destroyer (Tier&nbsp;%(level)s)"
 
 msgid "description/GB96_Excalibur"
 msgstr ""
@@ -349,6 +358,11 @@ msgid "description/branch_uk_GB120_Concept_No_5"
 msgstr ""
 "Research all vehicles in the British medium branch that leads to the Concept"
 " No.&nbsp;5 (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_uk_GB142_FV230_Canopener"
+msgstr ""
+"Research all vehicles in the U.K. heavy branch that leads to "
+"the&nbsp;FV230&nbsp;Canopener (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr ""
@@ -934,6 +948,9 @@ msgstr "LPT-67&nbsp;Šelma"
 msgid "name/Cz34_Vz_71_Tesak"
 msgstr "Vz.&nbsp;71&nbsp;Tesák"
 
+msgid "name/Cz40_DBV_152"
+msgstr "DBV-152"
+
 msgid "name/F06_ARL_44"
 msgstr "ARL&nbsp;44"
 
@@ -1007,7 +1024,7 @@ msgid "name/F67_Bat_Chatillon155_55"
 msgstr "Bat.-Châtillon 155&nbsp;55"
 
 msgid "name/F75_Char_de_25t"
-msgstr "Bat.-Châtillon 12&nbsp;t&nbsp;AP"
+msgstr "Bat.-Châtillon 25&nbsp;t&nbsp;AP"
 
 msgid "name/F81_Char_de_65t"
 msgstr "AMX&nbsp;65&nbsp;t"
@@ -1227,6 +1244,24 @@ msgstr "FSV Scheme&nbsp;A"
 
 msgid "name/GB12_Conqueror"
 msgstr "Conqueror"
+
+msgid "name/GB140_FV224_Chopper"
+msgstr "FV224&nbsp;Chopper"
+
+msgid "name/GB141_GSOR_the_TANK"
+msgstr "GSOR&nbsp;the&nbsp;TANK"
+
+msgid "name/GB142_FV230_Canopener"
+msgstr "FV230&nbsp;Canopener"
+
+msgid "name/GB143_FV229_Contender"
+msgstr "FV229&nbsp;Contender"
+
+msgid "name/GB146_Gabler_s_Destroyer"
+msgstr "Gabler’s&nbsp;Destroyer"
+
+msgid "name/GB148_FV227_Conceiver"
+msgstr "FV227&nbsp;Conceiver"
 
 msgid "name/GB20_Crusader"
 msgstr "Crusader"
@@ -1800,6 +1835,9 @@ msgstr "U.K.: Manticore"
 
 msgid "name/branch_uk_GB120_Concept_No_5"
 msgstr "U.K.: Concept&nbsp;No.&nbsp;5"
+
+msgid "name/branch_uk_GB142_FV230_Canopener"
+msgstr "U.K.: FV230&nbsp;Canopener"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "U.K.: Conqueror Gun Carriage"

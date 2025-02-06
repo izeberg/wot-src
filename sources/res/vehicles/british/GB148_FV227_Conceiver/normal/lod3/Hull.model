@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB148_FV227_Conceiver/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.879894 -0.574510 -3.974914</min>
+		<max>1.893162 0.899254 3.918838</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB148_FV227_Conceiver/normal/lod4/Hull</parent>
+	<extent>192</extent>
+</root>

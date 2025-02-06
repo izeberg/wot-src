@@ -17,6 +17,7 @@ if typing.TYPE_CHECKING:
     from gui.Scaleform.daapi.view.lobby.hangar.Hangar import Hangar
     from gui.battle_pass.state_machine.delegator import BattlePassRewardLogic
     from gui.game_control.comp7_controller import _LeaderboardDataProvider
+    from gui.game_control.comp7_weekly_quests_controller import _Comp7WeeklyQuests
     from gui.game_control.epic_meta_game_ctrl import EpicMetaGameSkill
     from gui.game_control.mapbox_controller import ProgressionData
     from gui.game_control.trade_in import TradeInDiscounts
@@ -42,7 +43,7 @@ if typing.TYPE_CHECKING:
     from gui.shared.gui_items.badge import Badge
     from gui.shared.gui_items.fitting_item import RentalInfoProvider
     from gui.shared.gui_items.gui_item_economics import ItemPrice
-    from gui.shared.gui_items.loot_box import LootBox, EventLootBoxes
+    from gui.shared.gui_items.loot_box import LootBox
     from gui.shared.gui_items.Tankman import TankmanSkill
     from gui.shared.money import Money, CURRENCY_TYPE
     from gui.shared.utils.requesters.EpicMetaGameRequester import EpicMetaGameRequester
@@ -2327,94 +2328,6 @@ class IEntitlementsController(IGameController):
         raise NotImplementedError
 
 
-class IEventLootBoxesController(IGameController, IEntitlementsConsumer):
-    onStatusChange = None
-    onAvailabilityChange = None
-    onBoxesCountChange = None
-    onIntroShownChanged = None
-    onBoxesUpdate = None
-    onBoxInfoUpdated = None
-
-    @property
-    def boxCountToGuaranteedBonus(self):
-        raise NotImplementedError
-
-    def getSetting(self, category, setting):
-        raise NotImplementedError
-
-    def setSetting(self, category, setting, value):
-        raise NotImplementedError
-
-    def isEnabled(self):
-        raise NotImplementedError
-
-    def isActive(self):
-        raise NotImplementedError
-
-    def isLootBoxesAvailable(self):
-        raise NotImplementedError
-
-    def isBuyAvailable(self):
-        raise NotImplementedError
-
-    def isLootBoxesWasStarted(self):
-        raise NotImplementedError
-
-    def isLootBoxesWasFinished(self):
-        raise NotImplementedError
-
-    def useExternalShop(self):
-        raise NotImplementedError
-
-    def setIntroWasShown(self, value):
-        raise NotImplementedError
-
-    def getDayLimit(self):
-        raise NotImplementedError
-
-    def getGuaranteedBonusLimit(self, boxType):
-        raise NotImplementedError
-
-    def getEventActiveTime(self):
-        raise NotImplementedError
-
-    def openShop(self):
-        raise NotImplementedError
-
-    def getDayInfoStatistics(self):
-        raise NotImplementedError
-
-    def getExpiresAtLootBoxBuyCounter(self):
-        raise NotImplementedError
-
-    def getTimeLeftToResetPurchase(self):
-        raise NotImplementedError
-
-    def getCommonBoxInfo(self):
-        raise NotImplementedError
-
-    def getPremiumBoxInfo(self):
-        raise NotImplementedError
-
-    def getBoxInfo(self, boxType):
-        raise NotImplementedError
-
-    def getStoreInfo(self, category):
-        raise NotImplementedError
-
-    def getBoxesIDs(self, category):
-        raise NotImplementedError
-
-    def getBoxesCount(self):
-        raise NotImplementedError
-
-    def getBoxesInfo(self):
-        raise NotImplementedError
-
-    def getVehicleLevels(self, boxType):
-        raise NotImplementedError
-
-
 class ILootBoxSystemController(IGameController, IEntitlementsConsumer):
     onBoxesAvailabilityChanged = None
     onStatusChanged = None
@@ -3019,10 +2932,13 @@ class IComp7Controller(IGameController, ISeasonProvider):
     def isTrainingEnabled(self):
         raise NotImplementedError
 
-    def hasActiveSeason(self):
+    def hasActiveSeason(self, includePreannounced=False):
         raise NotImplementedError
 
     def getActualSeasonNumber(self):
+        raise NotImplementedError
+
+    def getCurrentSeason(self, now=None, includePreannounced=False):
         raise NotImplementedError
 
     def isQualificationActive(self):
@@ -3037,10 +2953,25 @@ class IComp7Controller(IGameController, ISeasonProvider):
     def isQualificationSquadAllowed(self):
         raise NotImplementedError
 
+    def preannounceSeasonId(self):
+        raise NotImplementedError
+
+    def isInPreannounceState(self):
+        raise NotImplementedError
+
+    def getPreannouncedSeason(self):
+        raise NotImplementedError
+
     def getRoleEquipment(self, roleName):
         raise NotImplementedError
 
     def getEquipmentStartLevel(self, roleName):
+        raise NotImplementedError
+
+    def getRoleEquipmentOverrides(self, roleName):
+        raise NotImplementedError
+
+    def getPoiEquipmentOverrides(self, poiName):
         raise NotImplementedError
 
     def getViewData(self, viewAlias):
@@ -3070,7 +3001,10 @@ class IComp7Controller(IGameController, ISeasonProvider):
     def getAlertBlock(self):
         raise NotImplementedError
 
-    def getPlatoonRatingRestriction(self):
+    def getPlatoonRankRestriction(self, squadSize=None):
+        raise NotImplementedError
+
+    def getPlatoonMaxRankRestriction(self):
         raise NotImplementedError
 
     def getStatsSeasonsKeys(self):
@@ -3109,15 +3043,6 @@ class IComp7Controller(IGameController, ISeasonProvider):
     def getGrandTournamentBannerData(self):
         raise NotImplementedError
 
-    def isComp7OfferToken(self, tokenName):
-        raise NotImplementedError
-
-    def isComp7OfferGiftToken(self, tokenName):
-        raise NotImplementedError
-
-    def hasAvailableOfferTokens(self):
-        raise NotImplementedError
-
     def updateEntitlementsCache(self, force=False, retryTimes=None):
         raise NotImplementedError
 
@@ -3141,6 +3066,16 @@ class IComp7ShopController(IGameController):
 
     def hasNewDiscounts(self, rank):
         raise NotImplementedError
+
+
+class IComp7WeeklyQuestsController(IGameController):
+    onWeeklyQuestsUpdated = None
+
+    def getQuests(self):
+        raise NotImplementedError()
+
+    def isInHideState(self):
+        raise NotImplementedError()
 
 
 class IHangarSpaceSwitchController(IGameController):

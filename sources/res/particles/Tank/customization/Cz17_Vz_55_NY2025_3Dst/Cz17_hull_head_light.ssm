@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Hit</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>engine_start_trigger</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>battle_state</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>wait</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/empty.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>start</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>engine_start_trigger</name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Head_light_def</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>battle_state</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>58.000000 -239.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Head_light_def</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_hull_head_light.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>hit_delay</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Hit</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>56.000000 -62.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Head_light_hit_def</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_hull_head_light_hit.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>hitting</to>
+			<blendDuration>1.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>47.000000 84.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>hitting</name>
+		<type>sleep</type>
+		<time>0.100000 0.100000</time>
+		<transition>
+			<to>Head_light_def</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>233.000000 15.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>hit_delay</name>
+		<type>sleep</type>
+		<time>0.100000 0.100000</time>
+		<transition>
+			<to>Head_light_hit_def</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-87.000000 9.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>start</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_hull_head_light_start.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Head_light_def</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-105.000000 -163.000000 0.000000</uiPosition>
+	</node>
+</root>

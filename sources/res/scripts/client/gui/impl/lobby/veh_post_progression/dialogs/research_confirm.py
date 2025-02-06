@@ -67,7 +67,7 @@ class PostProgressionResearchConfirm(FullScreenDialogView[ResearchStepsDialog]):
             self.__vehicle = self._itemsCache.items.getItemByCD(self.__vehicle.intCD)
         if self.__vehicle is not None and self.__updateData():
             if self._buyContent is not None:
-                self._buyContent.update(self.__price, self.__xpBalance)
+                self._buyContent.update(self.__price, self.__xpBalance, self.__vehicle)
             if self._mainContent is not None:
                 self._mainContent.update(self.__steps, self.__postProgression)
         else:
@@ -109,7 +109,7 @@ class PostProgressionResearchBottomContent(BaseSubModelView):
             BuyPriceModelBuilder.fillPriceModel(viewModel, convertPrice(mayConsume, balance, price), balance=balance)
             viewModel.getPrice().invalidate()
             viewModel.setIsDisabled(not mayConsume)
-            viewModel.setIsEliteOrPremium(vehicle.isPremium or vehicle.isElite)
+            viewModel.setShowEliteXp(vehicle.isPremium or vehicle.isElite)
 
 
 class PostProgressionResearchMainContent(BaseSubModelView):

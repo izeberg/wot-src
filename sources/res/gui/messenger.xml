@@ -662,7 +662,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<tankmenFreeXpDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/tankmenFreeXpDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(tankmenFreeXp)s&lt;/b&gt;&lt;/font&gt;%(spec)s&lt;/font&gt;</tankmenFreeXpDebitedInvoiceReceived>
 		<awardListAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/freeAwardListsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(count)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</awardListAccruedInvoiceReceived>
 		<awardListDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/freeAwardListsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(count)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</awardListDebitedInvoiceReceived>
-		<eventLootBoxesInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#lootboxes:notification/lootBoxesReceived/invoice): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boxes)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</eventLootBoxesInvoiceReceived>
+		<lootBoxesInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#lootboxes:notification/lootBoxesReceived/invoice): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boxes)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</lootBoxesInvoiceReceived>
 		<personalExchangeRateInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#personal_exchange_rates:notification/discountDescription/message): &lt;font color=&apos;#8C8C7E&apos;&gt;%(rate)s&lt;/font&gt;&lt;/font&gt;</personalExchangeRateInvoiceReceived>
 		<intelligenceBlueprintsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/intelligenceBlueprintsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</intelligenceBlueprintsAccruedInvoiceReceived>
 		<intelligenceBlueprintsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/intelligenceBlueprintsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</intelligenceBlueprintsDebitedInvoiceReceived>
@@ -723,9 +723,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<boosterExpiredCount>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/boosterExpired/message)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</boosterExpiredCount>
 		<personalReservesSoonExpire>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/personalReservesSoonExpire/description)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</personalReservesSoonExpire>
 		<personalReservesRelease>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/personalReservesRelease/description)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</personalReservesRelease>
-		<replacedItemsDebit>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/debit)%(items)s&lt;/font&gt;</replacedItemsDebit>
-		<replacedItemsAccrued>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/accrued)%(items)s&lt;/font&gt;</replacedItemsAccrued>
-		<creditsAccrued>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/sysMsg/consumables/credits/accrued) &lt;font color=&apos;#CED9D9&apos;&gt;&lt;b&gt;%(amount)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</creditsAccrued>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<SimpleGiftSysMessage>
@@ -3308,45 +3305,6 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<bgIcon>BgComp7Notification</bgIcon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(body)s&lt;/font&gt;</message>
 		</comp7QualificationRewardMessage>
-		<EventLootBoxStartSysMessage>
-			<type>grey</type>
-			<priority>medium</priority>
-			<icon>InformationIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#lootboxes:notification/eventStart/button)</label>
-					<action>openEventLootBoxesShop</action>
-				</button>
-			</buttonsLayout>
-		</EventLootBoxStartSysMessage>
-		<EventLootBoxFinishSysMessage>
-			<type>grey</type>
-			<priority>medium</priority>
-			<icon>InformationIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
-		</EventLootBoxFinishSysMessage>
-		<EventLootBoxEnabledSysMessage>
-			<type>grey</type>
-			<priority>high</priority>
-			<icon>InformationIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
-		</EventLootBoxEnabledSysMessage>
-		<EventLootBoxDisabledSysMessage>
-			<type>grey</type>
-			<priority>high</priority>
-			<icon>WarningIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
-		</EventLootBoxDisabledSysMessage>
-		<EventLootBoxesAutoOpenMessage>
-			<priority>high</priority>
-			<type>yellow</type>
-			<icon>WarningIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#lootboxes:notification/lootBoxesAutoOpen/title)&lt;/font&gt;&lt;br/&gt;
-&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#lootboxes:notification/lootBoxesAutoOpen/text)&lt;/font&gt;&lt;br/&gt;
-_(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</message>
-		</EventLootBoxesAutoOpenMessage>
 		<CollectionStartSysMessage>
 			<type>grey</type>
 			<priority>high</priority>
@@ -3588,11 +3546,6 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 				</button>
 			</buttonsLayout>
 		</FairplayViolationSysMessage>
-		<ConsumableReplacedItemsNotify>
-			<type>grey</type>
-			<icon>InformationIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/sysMsg/consumables/replacedItems/date):&lt;/font&gt; &lt;font color=&apos;#8C8C7E&apos;&gt;%(at)s&lt;/font&gt;&lt;br/&gt;%(text)s</message>
-		</ConsumableReplacedItemsNotify>
 		<ExchangeRatePersonalDiscount>
 			<priority>low</priority>
 			<groupID>offer</groupID>

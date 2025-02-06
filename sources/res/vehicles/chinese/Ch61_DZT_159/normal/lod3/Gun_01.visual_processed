@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.000022 0.000001 2.752697</row3>
+							<row3>-0.000022 0.000001 2.728518</row3>
 						</transform>
 					</node>
 					<node>
@@ -98,15 +98,15 @@
 						<Texture>vehicles/chinese/Ch61_DZT_159/DZT_159_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000088 0.260051 -2.855188</groupOrigin>
+				<groupOrigin>0.000088 0.075029 -2.855188</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.249485 -0.263020 -0.235038</min>
-		<max>0.249661 0.783122 5.945414</max>
+		<max>0.249661 0.413078 5.945414</max>
 	</boundingBox>
-	<geometrySize>11938</geometrySize>
+	<geometrySize>10298</geometrySize>
 	<minUVDensity>0.011622</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.472350 -0.262833 -0.077148</min>
+		<max>0.465308 0.327893 5.624454</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz17_Vz_55/_skins/Cz17_Vz_55_NY2025_3Dst/normal/lod0/Gun_02</nodefullVisual>
+</root>

@@ -171,10 +171,6 @@ package
       
       public static const MEMBERS_HEADER_NOBONUSPLACEHOLDER_TOOLTIP_BODY:String = "#platoon:members/header/noBonusPlaceholder/tooltip/body";
       
-      public static const MEMBERS_HEADER_TOOLTIP_COMP7_HEADER:String = "#platoon:members/header/tooltip/comp7/header";
-      
-      public static const MEMBERS_HEADER_TOOLTIP_COMP7_BODY:String = "#platoon:members/header/tooltip/comp7/body";
-      
       public static const MEMBERS_HEADER_TOOLTIP_COMP7_DROPDOWN:String = "#platoon:members/header/tooltip/comp7/dropdown";
       
       public static const MEMBERS_HEADER_TOOLTIP_COMP7_DROPDOWN_ITEM:String = "#platoon:members/header/tooltip/comp7/dropdown/item";
@@ -216,6 +212,12 @@ package
       public static const MEMBERS_FOOTER_HEAVYTANKFULL:String = "#platoon:members/footer/heavyTankFull";
       
       public static const MEMBERS_FOOTER_AT_SPG_FULL:String = "#platoon:members/footer/AT_SPG_Full";
+      
+      public static const MEMBERS_FOOTER_COMP7TOPPLAYER:String = "#platoon:members/footer/comp7TopPlayer";
+      
+      public static const MEMBERS_FOOTER_COMP7LIMITATIONS:String = "#platoon:members/footer/comp7Limitations";
+      
+      public static const MEMBERS_FOOTER_COMP7INVITE:String = "#platoon:members/footer/comp7Invite";
       
       public static const MEMBERS_FOOTER_VEHICLES_DIFFERENTLEVELS:String = "#platoon:members/footer/vehicles/differentLevels";
       

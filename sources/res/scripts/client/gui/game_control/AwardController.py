@@ -791,6 +791,7 @@ class CrewBooksQuestHandler(MultiTypeServiceChannelHandler):
 class CustomizationRewardHandler(MultiTypeServiceChannelHandler):
     __service = dependency.descriptor(ICustomizationService)
     __settingsCore = dependency.descriptor(ISettingsCore)
+    _hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, awardCtrl):
         super(CustomizationRewardHandler, self).__init__((
@@ -808,11 +809,19 @@ class CustomizationRewardHandler(MultiTypeServiceChannelHandler):
         super(CustomizationRewardHandler, self).fini()
         g_eventBus.removeListener(CustomizationEvent.ON_RARITY_REWARD_SCREEN_CLOSED, self._onRewardScreenClosed, EVENT_BUS_SCOPE.LOBBY)
         self._delayedElements = None
+        self._hangarSpace.onSpaceCreate -= self.__show
         self._rewardScreenInProgress = False
         return
 
     def _showAward(self, ctx):
         self._delayedElements.extend(sorted(self._getRareAttachments(ctx), key=lambda element: Rarity.UI_EFFECT.index(element.rarity), reverse=True))
+        if self._hangarSpace.spaceInited:
+            self._showRewardScreen()
+        else:
+            self._hangarSpace.onSpaceCreate += self.__show
+
+    def __show(self):
+        self._hangarSpace.onSpaceCreate -= self.__show
         self._showRewardScreen()
 
     def _needToShowAward(self, ctx):

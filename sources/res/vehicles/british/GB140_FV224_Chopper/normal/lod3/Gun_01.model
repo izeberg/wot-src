@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB140_FV224_Chopper/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.560665 -0.131527 -0.025978</min>
+		<max>0.561382 0.266623 4.882825</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB140_FV224_Chopper/normal/lod3/Gun_01</nodefullVisual>
+</root>

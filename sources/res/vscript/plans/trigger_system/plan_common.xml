@@ -548,6 +548,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>StopPlan</class>
+				<id>StopPlan_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_15</id>
 				<params>
@@ -572,8 +578,8 @@
 				<slots/>
 			</block>
 			<block>
-				<class>StopPlan</class>
-				<id>StopPlan_2</id>
+				<class>If</class>
+				<id>If_22</id>
 				<params/>
 				<slots/>
 			</block>
@@ -587,6 +593,29 @@
 						<type>EArenaPeriodT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_80</id>
+				<params>
+					<param>
+						PrintMessage
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>str</name>
+						<const>\battle arena period has been skipped\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>IsTriggerSystemEnabled</class>
+				<id>IsTriggerSystemEnabled_2</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -773,10 +802,22 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ArenaPeriodStartEvent_2</from>
+				<from>Macro_13</from>
+				<input>input</input>
+				<to>StopPlan_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_80</from>
+				<input>input</input>
+				<to>StopPlan_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>If_22</from>
 				<input>in</input>
 				<to>Macro_15</to>
-				<output>start</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>Macro_15</from>
@@ -785,15 +826,33 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_13</from>
+				<from>ArenaPeriodStartEvent_2</from>
 				<input>input</input>
-				<to>StopPlan_2</to>
-				<output>out</output>
+				<to>If_22</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>IsTriggerSystemEnabled_2</from>
+				<input>value</input>
+				<to>If_22</to>
+				<output>isEnabled</output>
 			</connection>
 			<connection>
 				<from>ContextPropertyGet_1</from>
 				<input>arena</input>
 				<to>ArenaPeriodStartEvent_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_22</from>
+				<input>in</input>
+				<to>Macro_80</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>ContextPropertyGet_1</from>
+				<input>arena</input>
+				<to>IsTriggerSystemEnabled_2</to>
 				<output>value</output>
 			</connection>
 			<connection>

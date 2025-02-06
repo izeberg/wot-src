@@ -2288,7 +2288,7 @@ msgid "serviceChannelMessages/blueprintsConvertSale/restore"
 msgstr "Blueprint conversion recovered."
 
 msgid "serviceChannelMessages/bondEquipmentChoosing"
-msgstr "Select improved equipment as your Onslaught Annual Reward."
+msgstr "Don't forget to claim your reward!"
 
 msgid "serviceChannelMessages/bondEquipmentChoosingButton"
 msgstr "Go to Select"
@@ -2380,7 +2380,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "Financial Transaction"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "Auction"
+msgstr "Jason's Special Offers"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Tokens received"
@@ -2731,7 +2731,7 @@ msgstr ""
 "currently lower than the competitive bid."
 
 msgid "serviceChannelMessages/integratedAuction/button"
-msgstr "To Auction"
+msgstr "To Event"
 
 msgid "serviceChannelMessages/integratedAuction/lostRate/header"
 msgstr "Your bid lost. To be returned:"
@@ -2748,16 +2748,16 @@ msgid "serviceChannelMessages/integratedAuction/rateError/text"
 msgstr "Bidding error. No funds were deducted. Please try again."
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/text"
-msgstr "The auction is about to end."
+msgstr "Bidding is about to close."
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/title"
 msgstr "Hurry Up and Make Your Bid!"
 
 msgid "serviceChannelMessages/integratedAuction/stageStart/text"
-msgstr "Hurry up and make your bid! Items are limited."
+msgstr "Hurry up and make your bid. Items are limited."
 
 msgid "serviceChannelMessages/integratedAuction/stageStart/title"
-msgstr "The Auction for New Lots Has Begun!"
+msgstr "Bidding for the New Lot Has Begun!"
 
 msgid "serviceChannelMessages/invoiceReceived/berthsAccrued"
 msgstr "Bunks added to the Barracks"
@@ -3562,45 +3562,6 @@ msgstr "Reward received for confirming email:"
 
 msgid "serviceChannelMessages/steamEmailCompletion/header"
 msgstr "Congratulations!"
-
-msgid "serviceChannelMessages/sysMsg/consumables/credits/accrued"
-msgstr "Credits added:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/accrued"
-msgstr "Consumables added:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/date"
-msgstr "Date"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/debit"
-msgstr "Consumables removed:"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/item/many"
-msgstr ""
-" \n"
-"&nbsp;&nbsp;• %(name)s (x%(count)d)"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/item/one"
-msgstr " %(name)s (x%(count)d)"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline100"
-msgstr "100-octane Gasoline"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/gasoline105"
-msgstr "105-octane Gasoline"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/lendLeaseOil"
-msgstr "Lend-Lease Oil"
-
-msgid ""
-"serviceChannelMessages/sysMsg/consumables/replacedItems/items/qualityOil"
-msgstr "Quality Oil"
-
-msgid "serviceChannelMessages/sysMsg/consumables/replacedItems/title"
-msgstr "Receipt"
 
 msgid "serviceChannelMessages/sysMsg/converter/blueprintsReceived"
 msgstr ""

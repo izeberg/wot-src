@@ -40,7 +40,7 @@
 		<GameObject>
 			<name>shot_impulse</name>
 			<UUID>9231ad77-66dd-424b-8333-16d628ec1e7e</UUID>
-			<flags>0</flags>
+			<flags>8</flags>
 		</GameObject>
 		<GameObject>
 			<name>light_main.prefab</name>
@@ -828,7 +828,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/british/GB139_FV226_Contradictions/normal/lod0/Gun_01.model</value>
+						<value>vehicles/british/GB139_FV226_Contradictious/normal/lod0/Gun_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -972,7 +972,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>vehicles/british/GB139_FV226_Contradictions/animation/left_gun_animation.ssm</value>
+										<value>vehicles/british/GB139_FV226_Contradictious/animation/left_gun_animation.ssm</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1026,7 +1026,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>vehicles/british/GB139_FV226_Contradictions/animation/right_gun_animation.ssm</value>
+										<value>vehicles/british/GB139_FV226_Contradictious/animation/right_gun_animation.ssm</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -1080,7 +1080,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/british/GB139_FV226_Contradictions/animation/left_gun_animation.ssm</value>
+						<value>vehicles/british/GB139_FV226_Contradictious/animation/left_gun_animation.ssm</value>
 					</property>
 					<property>
 						<name>Delay</name>

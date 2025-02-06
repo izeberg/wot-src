@@ -1,3 +1,4 @@
+from enum import IntEnum, Enum
 import enum, calendar, time
 from math import cos, radians
 from time import time as timestamp
@@ -836,6 +837,7 @@ class Configs(enum.Enum):
     ADVANCED_ACHIEVEMENTS_CONFIG = 'advanced_achievements_config'
     LOOTBOXES_TOOLTIP_CONFIG = 'lootboxes_tooltip_config'
     UNIT_ASSEMBLER_CONFIG = 'unit_assembler_config'
+    PLAYER_SATISFACTION_CONFIG = 'player_satisfaction_config'
 
 
 INBATTLE_CONFIGS = [
@@ -845,7 +847,8 @@ INBATTLE_CONFIGS = [
  'epic_config',
  'vehicle_post_progression_config',
  Configs.COMP7_CONFIG.value,
- Configs.COMP7_RANKS_CONFIG.value]
+ Configs.COMP7_RANKS_CONFIG.value,
+ Configs.PLAYER_SATISFACTION_CONFIG.value]
 
 class RESTRICTION_TYPE:
     NONE = 0
@@ -853,10 +856,10 @@ class RESTRICTION_TYPE:
     CHAT_BAN = 3
     CLAN = 5
     MINORS_RESTRICTION = 6
-    ARENA_BAN = 101
+    ARENA_BAN = 7
     RANGE = (
-     BAN, CHAT_BAN, CLAN, MINORS_RESTRICTION)
-    LOCAL_RANGE = (ARENA_BAN,)
+     BAN, CHAT_BAN, CLAN, MINORS_RESTRICTION,
+     ARENA_BAN)
 
 
 class RESTRICTION_SOURCE:
@@ -884,7 +887,8 @@ class RESTRICTION_SOURCE:
 SPA_RESTR_NAME_TO_RESTR_TYPE = {'game': RESTRICTION_TYPE.BAN, 
    'chat': RESTRICTION_TYPE.CHAT_BAN, 
    'clan': RESTRICTION_TYPE.CLAN, 
-   'all': RESTRICTION_TYPE.MINORS_RESTRICTION}
+   'all': RESTRICTION_TYPE.MINORS_RESTRICTION, 
+   'modes': RESTRICTION_TYPE.ARENA_BAN}
 RESTR_TYPE_TO_SPA_NAME = dict((x[1], x[0]) for x in SPA_RESTR_NAME_TO_RESTR_TYPE.iteritems())
 
 class SPA_ATTRS:
@@ -931,6 +935,7 @@ class BAN_TYPE(object):
     PUBLIC_COMMUNICATION_DENIED = 'public_communication_denied'
     PRIVATE_COMMUNICATION_DENIED = 'private_communication_denied'
     NONFRIEND_PRIVATE_COMMUNICATION_DENIED = 'nonfriend_private_communication_denied'
+    ARENA_BAN_PREFIX = 'arena_ban_'
     _PRIVATE_MESSAGE_BANS = (
      COMMUNICATION_DENIED,
      PRIVATE_COMMUNICATION_DENIED,
@@ -949,6 +954,14 @@ class BAN_TYPE(object):
     @classmethod
     def isBattleMessagesBan(cls, ban):
         return ban in cls._BATTLE_MESSAGES_BANS
+
+    @classmethod
+    def isArenaBan(cls, ban):
+        return ban is not None and ban.startswith(cls.ARENA_BAN_PREFIX)
+
+    @classmethod
+    def makeArenaBanType(cls, bonusType):
+        return cls.ARENA_BAN_PREFIX + bonusType.lower()
 
 
 class BAN_REASON(object):
@@ -3200,7 +3213,7 @@ class SkillProcessorArgs(object):
         self.hasActiveTankmanForBooster = hasActiveTankmanForBooster
 
     def isSkillActive(self):
-        return self.isActive and not self.isFire and self.level
+        return self.isActive and not self.isFire
 
     def isBoosterApplicable(self):
         return (self.isActive or self.hasActiveTankmanForBooster) and not self.isFire
@@ -3345,16 +3358,19 @@ class POSTMORTEM_MODIFIERS(object):
     ENABLED_IF_NO_ALLY = 'enabledIfNoAlly'
     DISABLE_TANK_TARGET_FOLLOW = 'disableTankFollow'
     DISABLE_TANK_CYCLE = 'disableTankCycle'
+    FORCED_IF_NO_LIVES = 'forcedIfNoLives'
     POSTMORTEM = {
      DISABLE_TANK_TARGET_FOLLOW,
      DISABLE_TANK_CYCLE}
     KILLCAM = {
      ENABLED_IF_NO_ALLY}
-    DEATHFREECAM = {}
+    DEATHFREECAM = {
+     FORCED_IF_NO_LIVES}
     ALL = {
      ENABLED_IF_NO_ALLY,
      DISABLE_TANK_TARGET_FOLLOW,
-     DISABLE_TANK_CYCLE}
+     DISABLE_TANK_CYCLE,
+     FORCED_IF_NO_LIVES}
 
 
 DEFAULT_POSTMORTEM_SETTINGS = {'deathfreecam': False, 'killcam': False}
@@ -3596,9 +3612,24 @@ class NEW_PERK_SYSTEM:
     BONUS_SKILL_ENABLING_FREQUENCY = float(MAX_MAJOR_PERKS) / MAX_BONUS_SKILLS_PER_ROLE
 
 
+PICKLER_PROTOCOL_METHODS = frozenset(('__getinitargs__', '__getstate__', '__setstate__',
+                                      '__getnewargs__'))
+
 class DIRECT_DETECTION_TYPE:
     RAYTRACE = 0
     RECON = 1
     FORCED = 2
     STEALTH_RADAR = 3
     SPECIAL_RECON = 4
+
+
+class PlayerSatisfactionRatingInterface(IntEnum):
+    POST_BATTLE_RESULTS = 0
+    POST_MORTEM = 1
+
+
+class PlayerSatisfactionRating(IntEnum):
+    NONE = -500
+    USUAL = 0
+    BETTER = 1
+    WORSE = -1

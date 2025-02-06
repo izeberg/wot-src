@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod0</identifier>
+			<transform>
+				<row0>0.000000 -1.000000 0.000000</row0>
+				<row1>1.000000 0.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>-0.000000 -0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>eyes</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_attachment</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>static_joint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_jaw</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.334122 0.307531 0.575677</row3>
+					</transform>
+					<node>
+						<identifier>joint_jaw_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.334122 -0.307531 -0.575677</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>joint_prop</identifier>
+					<transform>
+						<row0>0.882948 0.000000 -0.469472</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.469472 0.000000 0.882948</row2>
+						<row3>-0.521402 0.310083 -1.094393</row3>
+					</transform>
+					<node>
+						<identifier>joint_prop_BlendBone</identifier>
+						<transform>
+							<row0>0.882948 0.000000 0.469472</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.469472 0.000000 -0.882948</row2>
+							<row3>-0.053415 -0.310084 1.211075</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_joint_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>eyes</node>
+		<geometry>
+			<vertices>eyesShape.vertices</vertices>
+			<stream>eyesShape.colour</stream>
+			<primitive>eyesShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>m_glow</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>particles/3D_Customization/Cus_11_Marine_Shark/shark_eyes.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 0.000000 3.000000 0.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>300.000000 0.200000 0.500000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>1.000000 0.309804 0.168627</Vector3>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.192157 0.133333 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.307505 -0.247346 0.620140</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_jaw_BlendBone</node>
+		<node>static_joint_BlendBone</node>
+		<node>joint_prop_BlendBone</node>
+		<geometry>
+			<vertices>attachmentShape.vertices</vertices>
+			<primitive>attachmentShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Shark_mat_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_11_Marine_Shark/Shark_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_11_Marine_Shark/Shark_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_11_Marine_Shark/Shark_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_11_Marine_Shark/Shark_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.223375 0.356506 0.164041</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.724702 -0.000412 -1.238810</min>
+		<max>0.277952 0.713423 0.910728</max>
+	</boundingBox>
+	<geometrySize>457200</geometrySize>
+	<minUVDensity>0.011117</minUVDensity>
+</root>

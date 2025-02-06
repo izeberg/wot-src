@@ -89,6 +89,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.PERSONAL_EXCHANGE_RATES;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_ALIASES;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_BUTTONS;
+   import net.wg.data.constants.generated.PLAYER_SATISFACTION_RATING;
    import net.wg.data.constants.generated.POSTPROGRESSION_CONSTS;
    import net.wg.data.constants.generated.PREBATTLE_ALIASES;
    import net.wg.data.constants.generated.PROFILE_CONSTANTS;
@@ -573,6 +574,14 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.EpicStats;
    import net.wg.gui.lobby.battleResults.IEmblemLoadedDelegate;
    import net.wg.gui.lobby.battleResults.TeamStats;
+   import net.wg.gui.lobby.battleResults.commendation.CBGEvent;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationBgMC;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationBtnData;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationButton;
+   import net.wg.gui.lobby.battleResults.commendation.CommendationButtonGroupContainer;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionLayoutHelper;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidget;
+   import net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidgetEvent;
    import net.wg.gui.lobby.battleResults.components.AlertMessage;
    import net.wg.gui.lobby.battleResults.components.BattleResultImageSwitcherView;
    import net.wg.gui.lobby.battleResults.components.BattleResultsEventRenderer;
@@ -3080,6 +3089,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PERSONAL_MISSIONS_BUTTONS:Class = PERSONAL_MISSIONS_BUTTONS;
       
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_PLAYER_SATISFACTION_RATING:Class = PLAYER_SATISFACTION_RATING;
+      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_POSTPROGRESSION_CONSTS:Class = POSTPROGRESSION_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PREBATTLE_ALIASES:Class = PREBATTLE_ALIASES;
@@ -4121,6 +4132,22 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_IEMBLEMLOADEDDELEGATE:Class = IEmblemLoadedDelegate;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_TEAMSTATS:Class = TeamStats;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_CBGEVENT:Class = CBGEvent;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBGMC:Class = CommendationBgMC;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBTNDATA:Class = CommendationBtnData;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBUTTON:Class = CommendationButton;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_COMMENDATIONBUTTONGROUPCONTAINER:Class = CommendationButtonGroupContainer;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_PLAYERSATISFACTIONLAYOUTHELPER:Class = PlayerSatisfactionLayoutHelper;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_PLAYERSATISFACTIONWIDGET:Class = PlayerSatisfactionWidget;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMMENDATION_PLAYERSATISFACTIONWIDGETEVENT:Class = PlayerSatisfactionWidgetEvent;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_ALERTMESSAGE:Class = AlertMessage;
       

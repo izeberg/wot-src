@@ -3455,6 +3455,14 @@ package
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_COMP7PRESTIGEPOINTS:String = "#quests:details/conditions/cumulative/comp7PrestigePoints";
       
+      public static const DAILYQUESTS_COMP7_REWARD:String = "#quests:dailyQuests/comp7/reward";
+      
+      public static const DAILYQUESTS_COMP7_NEXTTASKS:String = "#quests:dailyQuests/comp7/nextTasks";
+      
+      public static const DAILYQUESTS_COMP7_QUESTSCOUNTER:String = "#quests:dailyQuests/comp7/questsCounter";
+      
+      public static const DAILYQUESTS_COMP7_PROGRESSCOUNTER:String = "#quests:dailyQuests/comp7/progressCounter";
+      
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       
       public static const QUEST_FLAG_STATUS_ENUM:Array = [QUEST_FLAG_STATUS_NOT_STARTED,QUEST_FLAG_STATUS_LOCKED,QUEST_FLAG_STATUS_FAILED,QUEST_FLAG_STATUS_COMPLETED,QUEST_FLAG_STATUS_IN_PROGRESS,QUEST_FLAG_STATUS_COMPLETED_PERFECTLY];

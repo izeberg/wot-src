@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A88_M53_55/_skins/A88_M53_55_NY25_3Dst/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.823533 -0.701638 -2.640831</min>
+		<max>2.180873 2.276310 1.462982</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

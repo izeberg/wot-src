@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F122_VCS_6x6_TS90/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F122_VCS_6x6_TS90/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.956803 -0.000001 -1.576310</min>
+		<max>0.952497 1.157763 1.003993</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

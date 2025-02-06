@@ -143,18 +143,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Choice</class>
-				<id>Choice_1</id>
-				<params>
-					<param>
-						4
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>MacroOutput</class>
 				<id>MacroOutput_10</id>
 				<params>
@@ -167,6 +155,18 @@
 						EventT
 						<name>Output Type</name>
 						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Choice</class>
+				<id>Choice_1</id>
+				<params>
+					<param>
+						5
+						<name>Output Count</name>
+						<type>IntT</type>
 					</param>
 				</params>
 				<slots/>
@@ -328,6 +328,12 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_12</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_1</id>
 				<params/>
 				<slots/>
@@ -370,6 +376,12 @@
 						<const>\2\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>CompareVehicles</class>
@@ -440,6 +452,12 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>Choice_1</from>
+				<input>onHitDamage</input>
+				<to>MacroOutput_10</to>
+				<output>o2</output>
+			</connection>
+			<connection>
 				<from>If_3</from>
 				<input>input</input>
 				<to>Choice_1</to>
@@ -450,12 +468,6 @@
 				<input>index</input>
 				<to>Choice_1</to>
 				<output>shakeReason</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>onHitDamage</input>
-				<to>MacroOutput_10</to>
-				<output>o2</output>
 			</connection>
 			<connection>
 				<from>Choice_1</from>
@@ -550,8 +562,20 @@
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>
 				<input>input</input>
-				<to>If_1</to>
+				<to>If_12</to>
 				<output>onDestroyed</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>value</input>
+				<to>If_12</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_12</from>
+				<input>input</input>
+				<to>If_1</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_3</from>
@@ -570,6 +594,12 @@
 				<input>a</input>
 				<to>CompareIntegers_2</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDestroyed_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>attacker</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_1</from>

@@ -836,6 +836,8 @@ class MENU(object):
     HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7RATINGCALCULATION_BODY = '#menu:headerButtons/fightBtn/tooltip/comp7RatingCalculation/body'
     HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_HEADER = '#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/header'
     HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_BODY = '#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/body'
+    HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_HEADER = '#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/header'
+    HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_BODY = '#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/body'
     HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_DELIMITER = '#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/delimiter'
     HEADERBUTTONS_DEFAULTCOUNTER = '#menu:headerButtons/defaultCounter'
     HEADERBUTTONS_RATING = '#menu:headerButtons/rating'

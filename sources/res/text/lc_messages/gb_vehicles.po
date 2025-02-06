@@ -281,17 +281,51 @@ msgstr "Charioteer Nomad"
 msgid "Chassis_GB136_Churchill_BPXIV"
 msgstr "Churchill VII"
 
-msgid "Chassis_GB139_FV226_Contradictions"
+msgid "Chassis_GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
 
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
+
+msgid "Chassis_GB140_FV224_Chopper"
+msgstr "FV224 Chopper"
+
+msgid "Chassis_GB140_FV224_Chopper_2"
+msgstr "FV224 Chopper Mk. II"
+
+msgid "Chassis_GB141_GSOR_the_TANK"
+msgstr "GSOR the TANK"
+
+msgid "Chassis_GB142_FV230_Canopener"
+msgstr "FV230 Canopener"
+
+msgid "Chassis_GB143_FV229_Contender"
+msgstr "FV229 Contender"
+
+msgid "Chassis_GB143_FV229_Contender_2"
+msgstr "FV229 Contender Mk. II"
+
+msgid "Chassis_GB143_FV229_Contender_2_short"
+msgstr ""
+"FV229 Contender\n"
+"Mk. II"
 
 msgid "Chassis_GB145_Crusher_ASE_4"
 msgstr "Nergal"
 
 msgid "Chassis_GB146_Gabler_s_Destroyer"
 msgstr "Gabler’s Destroyer"
+
+msgid "Chassis_GB148_FV227_Conceiver"
+msgstr "FV227 Conceiver"
+
+msgid "Chassis_GB148_FV227_Conceiver_2"
+msgstr "FV227 Conceiver Mk. II"
+
+msgid "Chassis_GB148_FV227_Conceiver_2_short"
+msgstr ""
+"FV227 Conceiver\n"
+"Mk. II"
 
 msgid "Chassis_GB149_Centurion_MkI_A"
 msgstr "Centurion Mk. IA"
@@ -1430,10 +1464,10 @@ msgstr "Crocodile"
 msgid "GB136_Churchill_BPXIV_short_special"
 msgstr "Good damage per minute, precise gun"
 
-msgid "GB139_FV226_Contradictions"
+msgid "GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
 
-msgid "GB139_FV226_Contradictions_descr"
+msgid "GB139_FV226_Contradictious_descr"
 msgstr ""
 "A fairly balanced design with traditionally British emphasis on firepower "
 "and defense. The vehicle's main feature was its armament: a 20-pounder and "
@@ -1444,7 +1478,7 @@ msgstr ""
 "requirements were wholly attainable, the tank turned out to be too heavy and"
 " bulky. The project was terminated."
 
-msgid "GB139_FV226_Contradictions_long_special"
+msgid "GB139_FV226_Contradictious_long_special"
 msgstr ""
 "A British heavy tank with selective fire modes. This vehicle is a versatile "
 "crack shot in its single-fire mode and a shotgun-wielding heavy storm "
@@ -1452,10 +1486,10 @@ msgstr ""
 "turret as well as decent mobility, this all-around warrior is sure to make a"
 " crucial contribution on the battlefield."
 
-msgid "GB139_FV226_Contradictions_short"
+msgid "GB139_FV226_Contradictious_short"
 msgstr "Contradictious"
 
-msgid "GB139_FV226_Contradictions_short_special"
+msgid "GB139_FV226_Contradictious_short_special"
 msgstr "Selective fire modes, good armor"
 
 msgid "GB13_FV215b"
@@ -1477,6 +1511,74 @@ msgstr ""
 
 msgid "GB13_FV215b_short_special"
 msgstr "An effective gun and a high number of hit points"
+
+msgid "GB140_FV224_Chopper"
+msgstr "FV224 Chopper"
+
+msgid "GB140_FV224_Chopper_descr"
+msgstr ""
+"A project for a heavy coastal defense tank developed by the U.K. immediately"
+" after World War II. Two guns on the turret combined with a panoramic "
+"reticle and an optical rangefinder would presumably enable the tank to fight"
+" on equal terms against amphibious assault support ships. Wide tracks, in "
+"turn, were supposed to ensure good crossing capacity. However, due to "
+"unreliable and complex suspension, guns of insufficient caliber, and a lack "
+"of nuclear protection, the project was terminated."
+
+msgid "GB140_FV224_Chopper_short"
+msgstr "Chopper"
+
+msgid "GB141_GSOR_the_TANK"
+msgstr "GSOR the TANK"
+
+msgid "GB141_GSOR_the_TANK_descr"
+msgstr ""
+"A major modernization variant of the standard design for the Charlemagne "
+"heavy tank. It was developed in the early 1960s as part of the British GSOR "
+"program. The vehicle was equipped with the oscillating turret of the planned"
+" GSOR 1008 tank destroyer. The project went no further than blueprints."
+
+msgid "GB141_GSOR_the_TANK_long_special"
+msgstr ""
+"The main distinguishing feature of GSOR the TANK is the high penetration "
+"power of its HE shells, which allows it to deal increased damage to lightly "
+"armored enemies. Its gun also offers high standard shell velocity and "
+"penetration and, thanks to its excellent depression angles, it can always "
+"use the terrain to its advantage."
+
+msgid "GB141_GSOR_the_TANK_short"
+msgstr "GSOR TANK"
+
+msgid "GB141_GSOR_the_TANK_short_special"
+msgstr "High penetration power, HESH shells"
+
+msgid "GB142_FV230_Canopener"
+msgstr "FV230 Canopener"
+
+msgid "GB142_FV230_Canopener_descr"
+msgstr ""
+"A project for a heavy coastal defense tank developed in the U.K. in the late 1950s as part of a program of coastal defense against suspected maritime landings. Impressive firepower, excellent armoring including strong sloped hull armor, and decent mobility made the vehicle a formidable opponent in combat against landing vessels. The gun was equipped with a mechanism comprising movable covers on the muzzle breaks to protect the bore from moisture.\n"
+"During the tank's development it became clear that anti-ship missiles would be the future of maritime battles and not artillery guns. As a result, the project was deemed to have no prospects and was discontinued before a prototype was built."
+
+msgid "GB142_FV230_Canopener_short"
+msgstr "Canopener"
+
+msgid "GB143_FV229_Contender"
+msgstr "FV229 Contender"
+
+msgid "GB143_FV229_Contender_descr"
+msgstr ""
+"A heavy coastal defense tank developed in the late 1950s as part of a "
+"corresponding program. It was chiefly designed for effective defense against"
+" the Soviet Army, which was expected to land on the English Channel shore "
+"during wartime. The tank was planned to be equipped with a double-barreled "
+"gun system able to cause guaranteed damage to light LSTs and amphibious "
+"vehicles, as well as fight tanks on the coast. Its armor, in turn, was "
+"supposed to ensure protection not only from tank ammunition but also from "
+"naval artillery supporting the landing. The project remained in blueprints."
+
+msgid "GB143_FV229_Contender_short"
+msgstr "Contender"
 
 msgid "GB145_Crusher_ASE_4"
 msgstr "Nergal"
@@ -1521,6 +1623,23 @@ msgstr "G. Destroyer"
 
 msgid "GB146_Gabler_s_Destroyer_short_special"
 msgstr "Magazine loading system, excellent mobility"
+
+msgid "GB148_FV227_Conceiver"
+msgstr "FV227 Conceiver"
+
+msgid "GB148_FV227_Conceiver_descr"
+msgstr ""
+"A project for the FV227 Conceiver tank, which developed a concept for "
+"assault tanks that emphasized counteracting enemy vehicles rather than "
+"fortifications. The vehicle's primary purpose was reinforcement of the "
+"versatile Centurion tanks in battle. It was planned to equip the FV227 "
+"Conceiver with two identical high-caliber guns. The guns could be fired "
+"alternately or in salvo. Virtually all developed countries in the world were"
+" attempting to develop a tank with a double-barreled gun system, but not one"
+" of these projects entered production."
+
+msgid "GB148_FV227_Conceiver_short"
+msgstr "Conceiver"
 
 msgid "GB149_Centurion_MkI_A"
 msgstr "Centurion Mk. IA"
@@ -2368,6 +2487,12 @@ msgstr "High dynamics and a decent gun"
 msgid "GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
+msgid "GB86_Centurion_Action_X_7x7"
+msgstr "Centurion Action X 7x7"
+
+msgid "GB86_Centurion_Action_X_7x7_short"
+msgstr "Cent. AX 7x7"
+
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "The Action X turret was planned to be used for later variants of the "
@@ -2687,6 +2812,22 @@ msgstr "Leyland L60 No. 4 Mk. 13A"
 msgid "Leyland_L60_No_4_Mk_1A"
 msgstr "Leyland L60 No. 4, Mk. 1A"
 
+msgid "Leyland_L60_No_4_Mk_2"
+msgstr "Leyland L60 No. 4, Mk. 2"
+
+msgid "Leyland_L60_No_4_Mk_2_short"
+msgstr ""
+"Leyland L60 No. 4,\n"
+"Mk. 2"
+
+msgid "Leyland_L60_No_4_Mk_3"
+msgstr "Leyland L60 No. 4, Mk. 3"
+
+msgid "Leyland_L60_No_4_Mk_3_short"
+msgstr ""
+"Leyland L60 No. 4,\n"
+"Mk. 3"
+
 msgid "Leyland_L60_No_4_SH"
 msgstr "Leyland L No.90-4"
 
@@ -2716,6 +2857,9 @@ msgstr "Meadows H.O.P. O.C."
 
 msgid "Meteorite_M120"
 msgstr "Meteorite M120"
+
+msgid "Meteorite_M120_GSOR"
+msgstr "Meteorite M120 GSOR"
 
 msgid "Meteorite_Mk_202"
 msgstr "Meteorite Mk. 202"
@@ -2903,6 +3047,9 @@ msgstr "Rolls-Royce B81"
 msgid "Rolls_Royce_Griffon"
 msgstr "Rolls-Royce Griffon"
 
+msgid "Rolls_Royce_Griffon_180"
+msgstr "Rolls-Royce Griffon 180"
+
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
@@ -2918,6 +3065,15 @@ msgstr "Rolls-Royce Meteor GD"
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "Rolls-Royce Meteor M120A"
 
+msgid "Rolls_Royce_Meteor_M120B"
+msgstr "Rolls-Royce Meteor M120B"
+
+msgid "Rolls_Royce_Meteor_M120C"
+msgstr "Rolls-Royce Meteor M120C"
+
+msgid "Rolls_Royce_Meteor_M120F"
+msgstr "Rolls-Royce Meteor M120F"
+
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "Rolls-Royce Meteor M300"
 
@@ -2929,6 +3085,9 @@ msgstr "Rolls-Royce Meteor Mk. IVB/12"
 
 msgid "Rolls_Royce_Meteor_Mk_IVA"
 msgstr "Rolls-Royce Meteor Mk. IVA"
+
+msgid "Rolls_Royce_Meteor_Mk_IXA"
+msgstr "Rolls-Royce Meteor Mk. IXA"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
@@ -2995,6 +3154,12 @@ msgstr "2x Rolls-Royce Phantom II"
 
 msgid "Rover_Meteorite"
 msgstr "Rover Meteorite"
+
+msgid "SR_C42H"
+msgstr "SR C42H"
+
+msgid "SR_C42a"
+msgstr "SR C42a"
 
 msgid "Sunbeam_Amazon"
 msgstr "Sunbeam Amazon"
@@ -3116,17 +3281,32 @@ msgstr "Crusher"
 msgid "Turret_1_GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
 
-msgid "Turret_1_GB139_FV226_Contradictions"
+msgid "Turret_1_GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
 
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
+
+msgid "Turret_1_GB140_FV224_Chopper"
+msgstr "FV224 Chopper"
+
+msgid "Turret_1_GB141_GSOR_the_TANK"
+msgstr "GSOR the TANK"
+
+msgid "Turret_1_GB142_FV230_Canopener"
+msgstr "FV230 Canopener"
+
+msgid "Turret_1_GB143_FV229_Contender"
+msgstr "FV229 Contender"
 
 msgid "Turret_1_GB145_Crusher_ASE_4"
 msgstr "Nergal"
 
 msgid "Turret_1_GB146_Gabler_s_Destroyer"
 msgstr "Gabler’s Destroyer"
+
+msgid "Turret_1_GB148_FV227_Conceiver"
+msgstr "FV227 Conceiver"
 
 msgid "Turret_1_GB149_Centurion_MkI_A"
 msgstr "Centurion Mk. IA"
@@ -3383,6 +3563,25 @@ msgstr "Conqueror Mk. II ABP"
 msgid "Turret_2_GB136_Churchill_BPXIV"
 msgstr "Churchill VII"
 
+msgid "Turret_2_GB140_FV224_Chopper"
+msgstr "FV224 Chopper Mk. II"
+
+msgid "Turret_2_GB143_FV229_Contender"
+msgstr "FV229 Contender Mk. II"
+
+msgid "Turret_2_GB143_FV229_Contender_short"
+msgstr ""
+"FV229 Contender\n"
+"Mk. II"
+
+msgid "Turret_2_GB148_FV227_Conceiver"
+msgstr "FV227 Conceiver Mk. II"
+
+msgid "Turret_2_GB148_FV227_Conceiver_short"
+msgstr ""
+"FV227 Conceiver\n"
+"Mk. II"
+
 msgid "Turret_2_GB14_M2"
 msgstr "M2A4"
 
@@ -3443,6 +3642,24 @@ msgstr "FV4202 Series"
 msgid "Twin_105_mm_Gun_L7_MBC"
 msgstr "Twin 105 mm Gun L7 MBC"
 
+msgid "Twin_105_mm_Gun_T8_MBC"
+msgstr "Twin 105 mm T8 Gun MBC"
+
+msgid "Twin_120_mm_Gun_L1_MBC"
+msgstr "Twin 120 mm Gun L1 MBC"
+
+msgid "Twin_20pdr_Gun_MBC"
+msgstr "Twin 20-pdr Gun MBC"
+
+msgid "Twin_20pdr_Gun_MBC_MkII"
+msgstr "Twin 20-pdr Gun MBC Mk. II"
+
+msgid "Twin_32pdr_Gun_MBC"
+msgstr "Twin 32-pdr Gun MBC"
+
+msgid "Twin_32pdr_Gun_MBC_Mk2"
+msgstr "Twin 32-pdr Gun MBC Mk. 2"
+
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "Bedford Twin-Six"
 
@@ -3464,11 +3681,20 @@ msgstr "WS No. 22 CT"
 msgid "WS_No_19_GD"
 msgstr "WS No. 19 GD"
 
+msgid "WS_No_19_Mk_IIB"
+msgstr "WS No. 19 Mk. IIB"
+
 msgid "WS_No_22_Mk_3"
 msgstr "WS No. 22 Mk. 3"
 
+msgid "WS_No_22c"
+msgstr "WS No. 22c"
+
 msgid "WS_No_38_AFV"
 msgstr "WS No. 38 AFV"
+
+msgid "WS_No_A41_GSOR"
+msgstr "WS No. A41 GSOR"
 
 msgid "Wright_Continental_R-975C1"
 msgstr "Wright Continental R-975C1"
@@ -3492,6 +3718,9 @@ msgstr ""
 "Wright (Continental)\n"
 "R975 EC2"
 
+msgid "_105mm_APCR_L28_GSOR"
+msgstr "APDS L28 GSOR"
+
 msgid "_105mm_APCR_L5_SH"
 msgstr "APCR L5"
 
@@ -3503,6 +3732,9 @@ msgstr "APDS L-27 MBC"
 
 msgid "_105mm_APCR_L7_N"
 msgstr "APDS L-28 N"
+
+msgid "_105mm_APCR_T29E3_MBC"
+msgstr "APCR T29E3 MBC"
 
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
@@ -3516,11 +3748,17 @@ msgstr "AP Mk. 5 MBC"
 msgid "_105mm_AP_Mk7"
 msgstr "AP Mk7"
 
+msgid "_105mm_AP_T32_MBC"
+msgstr "AP T32 MBC"
+
 msgid "_105mm_AT_Gun_L7"
 msgstr "105 mm AT Gun L7"
 
 msgid "_105mm_AT_Gun_L7A1"
 msgstr "105 mm AT Gun L7A1"
+
+msgid "_105mm_AT_Gun_L7A1_GSOR"
+msgstr "105 mm AT Gun L7A1 GSOR"
 
 msgid "_105mm_AT_Gun_L7_N"
 msgstr "105 mm AT Gun L7"
@@ -3546,8 +3784,14 @@ msgstr "HEAT L7 VD"
 msgid "_105mm_HEAT_M67"
 msgstr "HEAT M67"
 
+msgid "_105mm_HESH_L35_GSOR"
+msgstr "HESH L35 GSOR"
+
 msgid "_105mm_HESH_L7"
 msgstr "HESH-T L-37"
+
+msgid "_105mm_HESH_L7_GSOR"
+msgstr "HESH L7 GSOR"
 
 msgid "_105mm_HESH_L7_N"
 msgstr "HESH-T L-37 N"
@@ -3569,6 +3813,9 @@ msgstr "HESH-T L-35 N"
 
 msgid "_105mm_HE_M1"
 msgstr "HE M1"
+
+msgid "_105mm_HE_M11_MBC"
+msgstr "HE M11 MBC"
 
 msgid "_105mm_HV_AP"
 msgstr "105mm HV AP"
@@ -3654,11 +3901,17 @@ msgstr "APDS L15P1"
 msgid "_120mm_APDS_L1A1"
 msgstr "APDS L1"
 
+msgid "_120mm_APDS_L1_MBC"
+msgstr "APDS L1 MBC"
+
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
 
 msgid "_120mm_AP_L15A1_DU"
 msgstr "AP L15A11 DU"
+
+msgid "_120mm_AP_L1_MBC"
+msgstr "AP L1 MBC"
 
 msgid "_120mm_AP_Mk_1"
 msgstr "120 mm A.P."
@@ -3704,6 +3957,9 @@ msgstr "120 mm L15 HE"
 
 msgid "_120mm_HE_L1A1"
 msgstr "HESH-T L1"
+
+msgid "_120mm_HE_L1_MBC"
+msgstr "HE L1 MBC"
 
 msgid "_120mm_QF_1_gun"
 msgstr "QF 120 mm Gonsalo"
@@ -3807,14 +4063,26 @@ msgstr "HE Mk. 1C"
 msgid "_20pdr_APC_Mk2"
 msgstr "APC Mk. 2"
 
+msgid "_20pdr_APC_Mk2_MBC"
+msgstr "APC Mk. 2 MBC"
+
+msgid "_20pdr_APC_Mk2b_MBC"
+msgstr "APC Mk. 2b MBC"
+
 msgid "_20pdr_APC_Mk4ST_SH"
 msgstr "APC Mk. 4ST"
 
 msgid "_20pdr_AP_Mk1"
 msgstr "AP Mk. 1"
 
+msgid "_20pdr_AP_Mk1_MBC"
+msgstr "AP Mk. 1 MBC"
+
 msgid "_20pdr_AP_Mk1_SH"
 msgstr "AP Mk. 1"
+
+msgid "_20pdr_AP_Mk1b_MBC"
+msgstr "AP Mk. 1b MBC"
 
 msgid "_20pdr_AT_Gun_Type_A"
 msgstr "OQF 20-pdr AT Gun Type A Barrel"
@@ -3836,6 +4104,12 @@ msgstr "OQF 20-pdr Gun Type B Barrel"
 
 msgid "_20pdr_HE_Mk3"
 msgstr "HE Mk. 3"
+
+msgid "_20pdr_HE_Mk3_MBC"
+msgstr "HE Mk. 3 MBC"
+
+msgid "_20pdr_HE_Mk3b_MBC"
+msgstr "HE Mk. 3b MBC"
 
 msgid "_25pdr_AP_Mk_1T"
 msgstr "AP-T Mk. 1T"
@@ -3990,14 +4264,32 @@ msgstr "APCR Mk. 3"
 msgid "_32pdr_APCR_MkII"
 msgstr "APDS Mk. 2T"
 
+msgid "_32pdr_APC_Mk2_MBC"
+msgstr "APDS Mk. 2 MBC"
+
+msgid "_32pdr_APDS_Mk2b_MBC"
+msgstr "APDS Mk. 2b MBC"
+
 msgid "_32pdr_APDS_Mk_3"
 msgstr "APDS Mk. 3"
+
+msgid "_32pdr_AP_Mk1_MBC"
+msgstr "APCBC Mk. 1 MBC"
+
+msgid "_32pdr_AP_Mk1b_MBC"
+msgstr "APCBC Mk. 1b MBC"
 
 msgid "_32pdr_AP_MkI"
 msgstr "AP Mk. 1"
 
 msgid "_32pdr_HEAT_Mk_3_SH"
 msgstr "AP Mk. 3"
+
+msgid "_32pdr_HE_Mk5_MBC"
+msgstr "HE Mk. 5 MBC"
+
+msgid "_32pdr_HE_Mk5b_MBC"
+msgstr "HE Mk. 5b MBC"
 
 msgid "_32pdr_HE_MkI"
 msgstr "HE Mk. 1A"

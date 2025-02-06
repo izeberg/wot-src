@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F122_VCS_6x6_TS90/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F122_VCS_6x6_TS90/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.571492 -0.225818 -0.064294</min>
+		<max>0.276262 0.320550 4.118141</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

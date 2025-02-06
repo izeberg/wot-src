@@ -851,6 +851,12 @@ msgstr "Gonkiewicza"
 msgid "Pl29_NC_Wz_70T"
 msgstr "NC 70 Błyskawica"
 
+msgid "Pl29_NC_Wz_70T_7x7"
+msgstr "NC 70 Błyskawica 7x7"
+
+msgid "Pl29_NC_Wz_70T_7x7_short"
+msgstr "Błyskawica 7x7"
+
 msgid "Pl29_NC_Wz_70T_descr"
 msgstr ""
 "The NC 70 Błyskawica tank destroyer was developed as an anti-armor vehicle "
@@ -1019,9 +1025,6 @@ msgid "Turret_1_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza I"
 
 msgid "Turret_1_Pl06_10TP"
-msgstr "Bofors 2-osobowa"
-
-msgid "Turret_1_Pl07_14TP"
 msgstr "Bofors 2-osobowa"
 
 msgid "Turret_1_Pl08_50TP_Prototyp_Resilient"
@@ -1270,6 +1273,9 @@ msgstr "3PPod-21"
 msgid "_105mm_Bofors_wz_34"
 msgstr "105 mm Bofors wz. 34"
 
+msgid "_105mm_Bofors_wz_34M"
+msgstr "105 mm Bofors wz. 34M"
+
 msgid "_105mm_POB_6M"
 msgstr "3PK-6M"
 
@@ -1294,17 +1300,26 @@ msgstr "sgr m/50 B"
 msgid "_105mm_slpgr_m_43_1"
 msgstr "slpgr m/43(1)"
 
+msgid "_105mm_slpgr_m_43_1M"
+msgstr "slpgr m/43(1M)"
+
 msgid "_105mm_slpgr_m_52"
 msgstr "slpgr m/52"
 
 msgid "_105mm_slpprj_fm_49"
 msgstr "slpprj fm/49"
 
+msgid "_105mm_slpprj_fm_49M"
+msgstr "slpprj fm/49M"
+
 msgid "_105mm_slpprj_m_59"
 msgstr "slpprj m/59"
 
 msgid "_105mm_tung_sgr_m_34"
 msgstr "tung sgr m/34"
+
+msgid "_105mm_tung_sgr_m_34M"
+msgstr "tung sgr m/34M"
 
 msgid "_105mm_wz_22_24_G1_APCR_SH"
 msgstr "APCR wz.22/24"
@@ -1385,7 +1400,7 @@ msgid "_122mm_wz_43_50_G6_SH"
 msgstr "122 mm armata wz.43/50"
 
 msgid "_122mm_wz_53"
-msgstr "122 mm wz.53"
+msgstr "122 mm wz. 53"
 
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
@@ -1397,7 +1412,7 @@ msgid "_130mm_AZ_PB_46_A"
 msgstr "AZ-PB-46A"
 
 msgid "_130mm_R_14_wz_56"
-msgstr "130 mm R 14 wz.56"
+msgstr "130 mm R 14 wz. 56"
 
 msgid "_152mm_J_2"
 msgstr "152 mm J 2"
@@ -1456,14 +1471,26 @@ msgstr "40 mm HE"
 msgid "_40mm_auto_Boforsa"
 msgstr "40 mm auto. Boforsa"
 
+msgid "_40mm_auto_Boforsa_II"
+msgstr "40 mm auto. Boforsa II"
+
 msgid "_40mm_pocisk_podkalibrowy"
 msgstr "Pocisk podkalibrowy"
+
+msgid "_40mm_pocisk_podkalibrowy_II"
+msgstr "Pocisk podkalibrowy II"
 
 msgid "_40mm_pocisk_przeciwpancerny_wz_36"
 msgstr "Pocisk przeciwpancerny wz. 36"
 
+msgid "_40mm_pocisk_przeciwpancerny_wz_36_II"
+msgstr "Pocisk przeciwpancerny wz. 36 II"
+
 msgid "_40mm_pocisk_wybuchowy_wz_36"
 msgstr "Pocisk wybuchowy wz. 36"
+
+msgid "_40mm_pocisk_wybuchowy_wz_36_II"
+msgstr "Pocisk wybuchowy wz. 36 II"
 
 msgid "_47mm_AP"
 msgstr "AP QFSA"
@@ -1493,7 +1520,7 @@ msgid "_47mm_slpprj_m_39"
 msgstr "slpprj m/39"
 
 msgid "_75mm_APCBC_K"
-msgstr "7,5 cm Kw.K."
+msgstr "Pocisk przeciwpancerny wz. 97"
 
 msgid "_75mm_KwK_L70"
 msgstr "7,5 cm Kw.K. 42 L/70"
@@ -1502,7 +1529,7 @@ msgid "_75mm_Pzgr.40L"
 msgstr "Pzgr 40 L"
 
 msgid "_75mm_Pzgr.40L_K"
-msgstr "Pzgr 40 LM"
+msgstr "Pocisk podkalibrowy wz. 36/37"
 
 msgid "_75mm_Pzgr.40_K"
 msgstr "Pzgr 40 L"
@@ -1511,7 +1538,7 @@ msgid "_75mm_Pzgr39L"
 msgstr "Pzgr 39 L"
 
 msgid "_75mm_Pzgr39L_K"
-msgstr "Pzgr 39 LM"
+msgstr "Pocisk przeciwpancerny wz. 36/37"
 
 msgid "_75mm_Pzgr39_K"
 msgstr "Pzgr 39 L"
@@ -1520,19 +1547,28 @@ msgid "_75mm_Sprg.18L"
 msgstr "Sprgr 19 L"
 
 msgid "_75mm_Sprg.18L_K"
-msgstr "Sprg 18 LC"
+msgstr "Pocisk wybuchowy wz. 36/37"
 
 msgid "_75mm_Sprg.18_K"
-msgstr "Sprgr 18 L"
+msgstr "Pocisk wybuchowy wz. 97"
 
 msgid "_75mm_Sprg.18_K2"
 msgstr "Sprgr 18 LM"
 
+msgid "_75mm_pocisk_podkalibrowy_wz_36_37M"
+msgstr "Pocisk podkalibrowy wz. 36/37M"
+
 msgid "_75mm_pocisk_podkalibrowy_wz_36_38"
 msgstr "Pocisk podkalibrowy wz. 36/38"
 
+msgid "_75mm_pocisk_przeciwpancerny_wz_36_37M"
+msgstr "Pocisk przeciwpancerny wz. 36/37M"
+
 msgid "_75mm_pocisk_przeciwpancerny_wz_36_38"
 msgstr "Pocisk przeciwpancerny wz. 36/38"
+
+msgid "_75mm_pocisk_wybuchowy_wz_36_37M"
+msgstr "Pocisk wybuchowy wz. 36/37M"
 
 msgid "_75mm_pocisk_wybuchowy_wz_36_38"
 msgstr "Pocisk wybuchowy wz. 36/38"
@@ -1544,7 +1580,10 @@ msgid "_75mm_wz_22_24"
 msgstr "75 mm wz 22/24"
 
 msgid "_75mm_wz_36_37"
-msgstr "75 mm wz.36/37"
+msgstr "75 mm wz. 36/37"
+
+msgid "_75mm_wz_36_37M"
+msgstr "75 mm wz. 36/37M"
 
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"
@@ -1571,13 +1610,13 @@ msgid "_85mm_ZiS_S-53_B"
 msgstr "85 mm ZiS-S-53"
 
 msgid "_90mm_AP"
-msgstr "AP wz.39/90"
+msgstr "Pocisk przeciwpancerny wz. 39/40"
 
 msgid "_90mm_APCR"
-msgstr "APCR wz.39/90"
+msgstr "Pocisk podkalibrowy wz. 39/40"
 
 msgid "_90mm_HE"
-msgstr "HE wz.39/90"
+msgstr "Pocisk wybuchowy wz. 39/40"
 
 msgid "_90mm_armata_wz_39_44"
 msgstr "90 mm armata wz. 39/44"
@@ -1597,14 +1636,26 @@ msgstr "90 mm armata wz.46"
 msgid "_90mm_pocisk_podkalibrowy_wz_39"
 msgstr "Pocisk podkalibrowy wz. 39"
 
+msgid "_90mm_pocisk_podkalibrowy_wz_39_40M"
+msgstr "Pocisk podkalibrowy wz. 39/40M"
+
 msgid "_90mm_pocisk_przeciwpancerny_wz_39"
 msgstr "Pocisk przeciwpancerny wz. 39"
+
+msgid "_90mm_pocisk_przeciwpancerny_wz_39_40M"
+msgstr "Pocisk przeciwpancerny wz. 39/40M"
 
 msgid "_90mm_pocisk_wybuchowy_wz_39"
 msgstr "Pocisk wybuchowy wz. 39"
 
+msgid "_90mm_pocisk_wybuchowy_wz_39_40M"
+msgstr "Pocisk wybuchowy wz. 39/40M"
+
 msgid "_90mm_wz_39_40"
-msgstr "90 mm wz.39/90"
+msgstr "90 mm wz. 39/40"
+
+msgid "_90mm_wz_39_40M"
+msgstr "90 mm wz. 39/40M"
 
 msgid "_90mm_wz_39_90"
 msgstr "90 mm wz. 39-90"
@@ -1613,4 +1664,4 @@ msgid "_9RM"
 msgstr "9RM"
 
 msgid "_Gr_38_HL_A_K"
-msgstr "Pzgr 38 L"
+msgstr "Pocisk kumulacyjny wz. 97"

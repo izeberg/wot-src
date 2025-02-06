@@ -1,6 +1,6 @@
 from CurrentVehicle import g_currentVehicle
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.comp7.meta_view.tab_model import MetaRootViews
+from gui.impl.gen.view_models.views.lobby.comp7.enums import MetaRootViews
 from gui.periodic_battles.models import PrimeTimeStatus
 from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite
 from gui.prb_control.entities.base.pre_queue.actions_validator import PreQueueActionsValidator
@@ -17,6 +17,8 @@ class Comp7Validator(BaseActionsValidator):
         status, _, isInPrimeTime = self.__comp7Ctrl.getPrimeTimeStatus()
         if status == PrimeTimeStatus.NOT_SET:
             return ValidationResult(False, PRE_QUEUE_RESTRICTION.MODE_NOT_SET)
+        if self.__comp7Ctrl.isInPreannounceState():
+            return ValidationResult(False, PRE_QUEUE_RESTRICTION.MODE_IS_IN_PREANNOUNCE)
         if not self.__comp7Ctrl.isAvailable() or not isInPrimeTime:
             return ValidationResult(False, PRE_QUEUE_RESTRICTION.MODE_NOT_AVAILABLE)
         return super(Comp7Validator, self)._validate()

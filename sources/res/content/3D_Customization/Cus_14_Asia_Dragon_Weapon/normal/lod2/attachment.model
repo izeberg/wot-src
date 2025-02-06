@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_14_Asia_Dragon_Weapon/normal/lod2/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_14_Asia_Dragon_Weapon/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.470928 -0.000725 -1.248929</min>
+		<max>0.170397 0.635680 1.470253</max>
+	</visibilityBox>
+</root>
