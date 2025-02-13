@@ -104,7 +104,10 @@ class QuickTrainingViewContext(TankmanContext):
     def crew(self):
         if self.isSingleTankman:
             return [(0, self.tankman)]
-        return self._vehicle.crew
+        else:
+            if self._vehicle:
+                return self._vehicle.crew
+            return [(0, None)]
 
     @property
     def crewBooks(self):

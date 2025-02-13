@@ -37,7 +37,14 @@ class FreeXpStepperCalculator(object):
             self._possibleSkillLevel = possibleLevel
 
     def setAquiringPersonalXp(self, value):
-        self._aquiringPersonalXpAmount = value
+        if self._currentTankman is None:
+            return
+        else:
+            self._aquiringPersonalXpAmount = value
+            skillsCount, lastSkillLevel = self._currentTankman.descriptor.getTotalSkillsProgress(withFree=False, extraXP=value)
+            self._possibleSkillsCount = skillsCount
+            self._possibleSkillLevel = lastSkillLevel
+            return
 
     def getLevelUpXpCost(self):
         if not self._currentTankman:

@@ -8,7 +8,6 @@ from account_helpers.settings_core.settings_constants import BattlePassStorageKe
 from battle_pass_common import BattlePassConsts, BattlePassTankmenSource, HOLIDAY_SEASON_OFFSET, TANKMAN_QUEST_CHAIN_ENTITLEMENT_POSTFIX, isPostProgressionChapter
 from constants import ARENA_BONUS_TYPE, QUEUE_TYPE
 from gui import GUI_SETTINGS
-from gui.Scaleform.genConsts.SKILLS_CONSTANTS import SKILLS_CONSTANTS as SKILLS
 from gui.impl.gen import R
 from gui.impl.gen.view_models.common.price_model import PriceModel
 from gui.impl.wrappers.user_compound_price_model import PriceModelBuilder
@@ -301,12 +300,10 @@ def getDataByTankman(tankman):
     nation = getRecruitNation(tankman)
     iconName = tankman.getIconByNation(nation)
     tankmanName = tankman.getFullUserNameByNation(nation)
-    skills = tankman.getAllKnownSkills()
-    newSkillCount, _ = tankman.getNewSkillCount(onlyFull=True)
+    skills = tankman.getAllKnownSkills(True)
     groupName = tankman.getGroupName()
-    if newSkillCount > 0:
-        skills += [SKILLS.TYPE_NEW_SKILL] * (newSkillCount - skills.count(SKILLS.TYPE_NEW_SKILL))
-    return (iconName, tankmanName, skills, groupName)
+    return (
+     iconName, tankmanName, skills, groupName)
 
 
 @replace_none_kwargs(battlePass=IBattlePassController)

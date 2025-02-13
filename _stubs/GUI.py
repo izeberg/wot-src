@@ -2496,6 +2496,7 @@ class WGVehicleMarkersCanvasFlashAS3(Flash):
 	def markerInvoke(self, *args, **kwargs): pass
 	def markerSetActive(self, *args, **kwargs): pass
 	def markerSetBoundCheckEnabled(self, *args, **kwargs): pass
+	def markerSetCullPlanarEnabled(self, *args, **kwargs): pass
 	def markerSetLocationOffset(self, *args, **kwargs): pass
 	def markerSetMarkerObjectInFocus(self, *args, **kwargs): pass
 	def markerSetMatrix(self, *args, **kwargs): pass

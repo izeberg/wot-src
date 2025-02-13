@@ -1492,13 +1492,13 @@
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18002</slotId>
-				<position>
-					0.000008 0.68317 -4.350923
+				<position>0.000002 0.097424 -4.434935</position>
+				<rotation>
+					-0 -1.569051 1.38265
 					<!--BW_String-->
-				</position>
-				<rotation>0.000446 -1.569112 1.310605</rotation>
+				</rotation>
 				<scale>
-					0.999999 1 1
+					0.999998 1 0.999999
 					<!--BW_String-->
 				</scale>
 				<applyType>universal</applyType>

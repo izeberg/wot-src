@@ -1,3 +1,4 @@
+import BigWorld
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.lootbox_system.base.bonuses_packers import mergeNeededBonuses
@@ -78,7 +79,7 @@ class LootBoxSystemWebApi(object):
         eventName = box.getType()
         Views.load(ViewID.INFO, previousWindow=cmd.view_id, eventName=eventName)
         if cmd.view_id == ViewsIDs.OVERLAY:
-            self.__closeExistingShopOverlay()
+            BigWorld.callback(0.5, self.__closeExistingShopOverlay)
 
     def __addBonusesInfo(self, slotsInfo, eventName, fullInfo):
         result = {}

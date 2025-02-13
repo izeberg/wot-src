@@ -30,9 +30,12 @@ class CrewAccountController(object):
 
     def getTankmanVeteranAnimanion(self, tankmaninvID):
         tankman = self.__itemsCache.items.getTankman(tankmaninvID)
-        concurrent = not bool(tankman.descriptor.needXpForVeteran)
-        before = self.tankmanVeteranAnimanion.get(tankmaninvID)
-        return before is not None and not before and concurrent
+        if not tankman:
+            return False
+        else:
+            concurrent = not bool(tankman.descriptor.needXpForVeteran)
+            before = self.tankmanVeteranAnimanion.get(tankmaninvID)
+            return before is not None and not before and concurrent
 
     def setLearnedSkillsAnimanion(self, tankmaninvID, learnedSkills):
         skills = self.tankmanLearnedSkillsAnimanion.setdefault(tankmaninvID, [])

@@ -28,7 +28,6 @@ from gui.impl.gen import R
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.mode_selector.items.base_item import getInfoPageKey
 from gui.impl.pub import ViewImpl
-from gui.prb_control.entities.listener import IGlobalListener
 from gui.prb_control.events_dispatcher import g_eventDispatcher
 from gui.shared.event_dispatcher import showBrowserOverlayView, showHangar
 from helpers import dependency
@@ -40,7 +39,7 @@ if typing.TYPE_CHECKING:
     from gui.offers import OffersDataProvider
 _logger = logging.getLogger(__name__)
 
-class MetaRootView(ViewImpl, IGlobalListener):
+class MetaRootView(ViewImpl):
     __slots__ = ('__pages', '__tabId', '__products')
     __comp7Controller = dependency.descriptor(IComp7Controller)
     __comp7ShopController = dependency.descriptor(IComp7ShopController)
@@ -95,10 +94,6 @@ class MetaRootView(ViewImpl, IGlobalListener):
             if window is not None:
                 return window
         return super(MetaRootView, self).createContextMenu(event)
-
-    def onPrbEntitySwitched(self):
-        if not self.__comp7Controller.isComp7PrbActive():
-            showHangar()
 
     def switchPage(self, tabId, *args, **kwargs):
         if self.__currentPage.isLoaded:
@@ -164,7 +159,6 @@ class MetaRootView(ViewImpl, IGlobalListener):
             self.__guiLoader.windowsManager.onViewStatusChanged += self.__onViewStatusChanged
         self.__offersProvider.onOffersUpdated += self.__updateWeeklyQuestsClaimRewardsModel
         self.viewModel.claimRewardsModel.onGoToRewardSelection += showComp7AllRewardsSelectionWindow
-        self.startGlobalListening()
         return
 
     def __removeListeners(self):
@@ -182,7 +176,6 @@ class MetaRootView(ViewImpl, IGlobalListener):
             self.__guiLoader.windowsManager.onViewStatusChanged -= self.__onViewStatusChanged
         self.__offersProvider.onOffersUpdated -= self.__updateWeeklyQuestsClaimRewardsModel
         self.viewModel.claimRewardsModel.onGoToRewardSelection -= showComp7AllRewardsSelectionWindow
-        self.stopGlobalListening()
         return
 
     def __onShopDataUpdated(self, status):

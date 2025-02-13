@@ -1,5 +1,4 @@
-import BigWorld, SoundGroups, typing
-from itertools import chain
+import BigWorld, typing, SoundGroups
 from goodies import goodie_constants
 from gui.impl.dialogs import dialogs
 from gui.impl.gen.view_models.views.lobby.crew.help_navigate_from import HelpNavigateFrom
@@ -8,9 +7,9 @@ from gui.impl.lobby.crew.container_vews.quick_training.events import QuickTraini
 from gui.impl.lobby.crew.crew_sounds import SOUNDS
 from gui.shared import event_dispatcher
 from gui.shared.gui_items import GUI_ITEM_TYPE
-from gui.shared.gui_items.items_actions import factory
-from gui.shared.gui_items.Tankman import NO_TANKMAN, NO_SLOT
+from gui.shared.gui_items.Tankman import NO_SLOT, NO_TANKMAN
 from gui.shared.gui_items.Vehicle import NO_VEHICLE_ID
+from gui.shared.gui_items.items_actions import factory
 from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext
 if typing.TYPE_CHECKING:
@@ -72,7 +71,8 @@ class QuickTrainingInteractionController(InteractionController):
             if self.context.isSingleTankman:
                 return
         if updatedCrew:
-            if self.context.vehicle and self.context.vehicle.invID not in chain(*updatedCrew.keys()):
+            updatedVehicleIDs = [ k[0] if isinstance(k, tuple) else k for k in updatedCrew.keys() ]
+            if self.context.vehicle and self.context.vehicle.invID not in updatedVehicleIDs:
                 return
             if self.context.tankmanID not in updatedCrew.values()[0]:
                 self.context.update()
@@ -121,8 +121,7 @@ class QuickTrainingInteractionController(InteractionController):
             self.refresh()
 
     def _onFreeXpMouseEnter(self):
-        if not self.context.selection.hasAnyBook:
-            self.context.stepper.setInitialPossibleValues()
+        self.__refreshStepperWithAcquiringXp()
         self.context.selection.setPreSelectedFreeXp(self.context.stepper.getSkillUpXpCost())
         self.__updatePossibleCrewXp()
         self.refresh()
@@ -130,6 +129,7 @@ class QuickTrainingInteractionController(InteractionController):
     def _onFreeXpSelected(self, isSelected):
         if isSelected:
             self.context.selection.setFreeXpFromPreSelected()
+            self.__refreshStepperWithAcquiringXp()
             if self.context.selection.freeXp == 0:
                 self.context.selection.freeXp = self.context.stepper.getSkillUpXpCost()
             self.context.selection.clearPreSelected()
@@ -215,3 +215,8 @@ class QuickTrainingInteractionController(InteractionController):
     def __updatePossibleCrewXp(self):
         self.context.updatePossibleCrewState()
         self.view.crewWidget.updatePossibleSkillsLevel(*self.context.getPossibleCrewSkillsAndEfficiencies())
+
+    def __refreshStepperWithAcquiringXp(self):
+        self.context.stepper.setInitialPossibleValues()
+        personalBooksXp, commonBooksXp = self.context.selection.getAcquiringBooksXpValues()
+        self.context.stepper.setAquiringPersonalXp(commonBooksXp + personalBooksXp)

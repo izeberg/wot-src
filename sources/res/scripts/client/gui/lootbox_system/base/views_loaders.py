@@ -1,5 +1,7 @@
 import logging
 from typing import TYPE_CHECKING
+from ClientSelectableCameraObject import ClientSelectableCameraObject
+from CurrentVehicle import g_currentVehicle
 from adisp import adisp_process
 from gui import GUI_SETTINGS
 from gui.customization.constants import CustomizationModes
@@ -67,6 +69,7 @@ def showItemPreview(itemType, itemID, styleID, eventName, backCallback=None, cus
                 window.destroyWindow()
             selectVehicleInHangar(itemID, loadHangar=True)
         else:
+            ClientSelectableCameraObject.switchCamera()
             style = customization.getItemByID(GUI_ITEM_TYPE.STYLE, styleID) if styleID else None
             showVehiclePreviewWithoutBottomPanel(itemID, backCallback=backCallback, backBtnLabel=backLabel, style=style)
     elif itemType == 'customizations':
@@ -99,14 +102,13 @@ def showCustomizationHangar(style, previewBackCb=None, backBtnLabel=None, itemsC
     vehicles = itemsCache.items.getVehicles(REQ_CRITERIA.CUSTOM(style.mayInstall))
     vehicle = first(vehicles.itervalues()) if vehicles else None
     if style.isInInventory and vehicle is not None and vehicle.isInInventory and vehicle.isCustomizationEnabled():
-        customization.showCustomization(vehicle.invID, callback=_callback)
+        customization.showCustomization(vehicle.invID, callback=_callback, prevVehicleInvID=g_currentVehicle.invID)
     else:
         showVehicleStylePreview(style, previewBackCb=previewBackCb, backBtnLabel=backBtnLabel)
     return
 
 
 def showVehicleStylePreview(style, previewBackCb=None, backBtnLabel=''):
-    from ClientSelectableCameraObject import ClientSelectableCameraObject
     ClientSelectableCameraObject.switchCamera()
     if style.isProgression:
         raise SoftException('Progression styles is not supported')

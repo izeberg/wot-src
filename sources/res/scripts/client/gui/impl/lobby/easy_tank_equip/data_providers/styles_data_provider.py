@@ -122,7 +122,7 @@ class StylesDataProvider(BaseDataProvider):
 
     def __getStylesPresetInfo(self, style):
         isInstalled = self.__isStyleInstalled(style)
-        storedItemsCount = bool(style.boundInventoryCount(self.vehicle.intCD)) if style.isRentable else style.inventoryCount
+        storedItemsCount = int(bool(style.boundInventoryCount(self.vehicle.intCD) if style.isRentable else style.inventoryCount))
         return StylesPresetInfo(installed=isInstalled, storedItemsCount=storedItemsCount, installedItemsCount=int(isInstalled), itemPrice=style.getBuyPrice() if style.isRentable and storedItemsCount == 0 else ITEM_PRICE_ZERO, style=style)
 
     def __isStyleInstalled(self, style):

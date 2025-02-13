@@ -108,8 +108,33 @@
 			<flags>2</flags>
 		</GameObject>
 		<GameObject>
-			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_collision</name>
+			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_collision_01</name>
 			<UUID>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</UUID>
+			<flags>10</flags>
+		</GameObject>
+		<GameObject>
+			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_collision_02</name>
+			<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+			<flags>10</flags>
+		</GameObject>
+		<GameObject>
+			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_collision_03</name>
+			<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+			<flags>10</flags>
+		</GameObject>
+		<GameObject>
+			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_freeze_collision_02</name>
+			<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+			<flags>10</flags>
+		</GameObject>
+		<GameObject>
+			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_freeze_collision_01</name>
+			<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+			<flags>10</flags>
+		</GameObject>
+		<GameObject>
+			<name>18_plane_crashing_01_lighthouse_base_debris_transition_kill_freeze_collision_03</name>
+			<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
 			<flags>10</flags>
 		</GameObject>
 	</GameObjects>
@@ -319,6 +344,56 @@
 			</component>
 			<component>
 				<UUID>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -848,20 +923,155 @@
 					<property>
 						<name>Position</name>
 						<value>
-							11.1728 -0.85453 1.83195
+							11.0666 0.577782 2.7405
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							3.17543 6.00277 2.87583
+							3.70783 6.00277 2.43931
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 -0</value>
+						<value>
+							0.190913 0.151801 -0.0306419
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							10.2217 0.6632 -0.929114
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							3.70783 5.71633 2.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.130448 -0.542601 0.0519992
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							15.9968 0.373569 2.29865
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.59332 3.88766 1.59642
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0.029861 -0.788959 -0.118585</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							11.1605 0.233551 0.119006
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.46511 2.46785 2.19411
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -0.508573 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							10.8797 -0.0745201 2.2465
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.9187 2.46785 2.19411
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							9.77288e-08 3.12657 -0.00298731
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							14.896 0.233547 1.54102
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.49976 1.50143 1.33489
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -0.770372 0
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -1239,6 +1449,130 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.41487
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>5</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>1175e63d-fecf-4a09-a09f-3c4921bb7329</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.41884
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>5</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>19ed32c0-cd20-48b0-a6c5-0995863d83c3</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.32068
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											2.80779
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>0eb79486-9cbb-39c4-af6f-87e7886fbf55</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.32663
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											2.81671
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>1febec38-3527-3c94-afe0-fcc35084f3ab</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.3296
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											2.81374
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -1290,7 +1624,205 @@
 			<type>Colliders</type>
 			<version>1</version>
 			<component>
+				<UUID>19569690-6f8a-3f70-b145-5113c25d8dc5</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_EU_211_Lighthouse/normal/lod0/hd_bld_EU_211_Lighthouse_01_destroyed_05.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
 				<UUID>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
 				<flags>34</flags>
 				<config>
 					<property>
@@ -1327,12 +1859,96 @@
 			<type>StaticObstacle</type>
 			<version>1</version>
 			<component>
+				<UUID>19569690-6f8a-3f70-b145-5113c25d8dc5</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
+					</property>
+				</config>
+			</component>
+			<component>
 				<UUID>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</UUID>
 				<flags>34</flags>
 				<config>
 					<property>
 						<name>spawnResolveType</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value>18_plane_lighthouse_crashing_01_camera_01</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value>18_plane_lighthouse_crashing_01_camera_01</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value>18_plane_lighthouse_crashing_01_camera_01</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value>18_plane_lighthouse_crashing_01_camera_01</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value>18_plane_lighthouse_crashing_01_camera_01</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>2</value>
 					</property>
 					<property>
 						<name>cameraName</name>
@@ -1614,6 +2230,81 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Buildings/hd_bld_SU_103_LostCityConstructor/normal/lod0/hd_bld_SU_103_LostCityConstructor_Slab_04.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Particle</type>
@@ -1744,10 +2435,44 @@
 				<UUID>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</UUID>
 				<flags>34</flags>
 			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>34</flags>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>34</flags>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>34</flags>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>34</flags>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
+				<flags>34</flags>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>ShootingObstacle</type>
 			<version>1</version>
+			<component>
+				<UUID>19569690-6f8a-3f70-b145-5113c25d8dc5</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>19569690-6f8a-3f70-b145-5113c25d8dc5</link>
+					</property>
+					<property>
+						<name>receiver</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
 			<component>
 				<UUID>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</UUID>
 				<flags>34</flags>
@@ -1757,8 +2482,74 @@
 						<link>fa0e0e5f-0458-4f74-8b19-bde1b336e09f</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
+						<name>receiver</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>e1199e1a-5598-4eb0-94c5-eff3b8077cc8</link>
+					</property>
+					<property>
+						<name>receiver</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1175e63d-fecf-4a09-a09f-3c4921bb7329</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>1175e63d-fecf-4a09-a09f-3c4921bb7329</link>
+					</property>
+					<property>
+						<name>receiver</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>19ed32c0-cd20-48b0-a6c5-0995863d83c3</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>19ed32c0-cd20-48b0-a6c5-0995863d83c3</link>
+					</property>
+					<property>
+						<name>receiver</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0eb79486-9cbb-39c4-af6f-87e7886fbf55</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>0eb79486-9cbb-39c4-af6f-87e7886fbf55</link>
+					</property>
+					<property>
+						<name>receiver</name>
+						<link>edf03ae4-c2be-466e-ae4b-45304eee0ffe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1febec38-3527-3c94-afe0-fcc35084f3ab</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>1febec38-3527-3c94-afe0-fcc35084f3ab</link>
 					</property>
 					<property>
 						<name>receiver</name>

@@ -1,6 +1,7 @@
 from enum import Enum
 from PlayerEvents import g_playerEvents
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
+from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.Waiting import Waiting
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.lootbox_system.info_page_model import InfoPageModel
@@ -15,6 +16,7 @@ from gui.lootbox_system.base.decorators import createTooltipContentDecorator
 from gui.lootbox_system.base.sound import playInfopageEnterSound, playInfopageExitSound
 from gui.lootbox_system.base.utils import areUsedExternalTransitions, getInfoPageSettings, isCountryForShowingExternalLootList, openExternalLootList, isShopVisible
 from gui.lootbox_system.base.views_loaders import hideItemPreview, showItemPreview
+from gui.shared import events
 from gui.shared.event_dispatcher import showShop
 from helpers import dependency
 from shared_utils import first
@@ -101,8 +103,17 @@ class InfoPage(ViewImpl):
          (
           g_playerEvents.onDisconnected, self.__onDisconnected))
 
+    def _getListeners(self):
+        return (
+         (
+          events.BrowserEvent.BROWSER_CREATED, self.__handleBrowserCreated),)
+
     def __onDisconnected(self):
         self.destroyWindow()
+
+    def __handleBrowserCreated(self, event):
+        if event.ctx['browserID'] == VIEW_ALIAS.OVERLAY_WEB_STORE and not areUsedExternalTransitions(self.__eventName):
+            self.destroyWindow()
 
     def __sortedSlotsIDs(self, slotsInfo):
         return sorted(slotsInfo.keys()) or []
@@ -183,8 +194,6 @@ class InfoPage(ViewImpl):
 
     def __showShop(self):
         Views.load(ViewID.SHOP, executePreconditions=True, eventName=self.__eventName)
-        if not areUsedExternalTransitions(self.__eventName):
-            self.destroyWindow()
 
     def __showIntroPage(self):
         Views.load(ViewID.INTRO, eventName=self.__eventName)
@@ -195,7 +204,8 @@ class InfoPage(ViewImpl):
     def __onClose(self):
         if self.__previousWindowID == ViewsIDs.OVERLAY and self.__baseWindowID != ViewID.SHOP:
             Views.load(ViewID.SHOP, executePreconditions=True, eventName=self.__eventName)
-        self.destroyWindow()
+        else:
+            self.destroyWindow()
 
     def __reopen(self):
         hideItemPreview()
