@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.873164 -0.303510 -1.584676</min>
+		<max>0.282333 0.365879 6.494237</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/crash/lod1/Gun_01</nodelessVisual>
+</root>

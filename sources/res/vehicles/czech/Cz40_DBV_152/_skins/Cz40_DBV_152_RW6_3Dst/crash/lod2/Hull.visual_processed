@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.894118 0.011172 0.720104</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.301451 0.011172 1.831005</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000005 0.463462 -0.865309</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.000319 -0.022669 0.357478</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.001712 0.008441 0.098223</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_chassis_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_chassis_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_chassis_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_chassis_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_chassis_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000221 -0.401570 0.168610</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.956809 -0.914359 -3.151275</min>
+		<max>1.953385 0.600924 3.347722</max>
+	</boundingBox>
+	<geometrySize>318862</geometrySize>
+	<minUVDensity>0.002123</minUVDensity>
+</root>

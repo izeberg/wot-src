@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.972323 -0.898337 -3.151125</min>
+		<max>1.977139 0.604943 3.350621</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/crash/lod0/Hull</nodefullVisual>
+</root>

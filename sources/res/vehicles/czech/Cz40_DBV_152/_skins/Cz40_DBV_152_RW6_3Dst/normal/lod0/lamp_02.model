@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.858802 -0.000001 -2.115704</min>
+		<max>2.031341 1.468396 1.365974</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/normal/lod0/lamp_02</nodelessVisual>
+	<parent>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/normal/lod1/lamp_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

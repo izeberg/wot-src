@@ -4003,6 +4003,10 @@ package
       
       public static const CAMOUFLAGE_NY_2025_SNOWMAN_DESCRIPTION:String = "#vehicle_customization:camouflage/ny_2025_snowman/description";
       
+      public static const CAMOUFLAGE_CZ40_DBV_152_RW6_3DST_LABEL:String = "#vehicle_customization:camouflage/Cz40_DBV_152_RW6_3Dst/label";
+      
+      public static const CAMOUFLAGE_CZ40_DBV_152_RW6_3DST_DESCRIPTION:String = "#vehicle_customization:camouflage/Cz40_DBV_152_RW6_3Dst/description";
+      
       public static const CAMOUFLAGE_LUNAR_NY_2025_1_LABEL:String = "#vehicle_customization:camouflage/lunar_ny_2025_1/label";
       
       public static const CAMOUFLAGE_LUNAR_NY_2025_1_DESCRIPTION:String = "#vehicle_customization:camouflage/lunar_ny_2025_1/description";
@@ -13988,6 +13992,10 @@ package
       public static const SPECIAL_STYLE_GB_HT_LINE_DESC:String = "#vehicle_customization:special_style/gb_ht_line_desc";
       
       public static const SPECIAL_STYLE_GB_HT_LINE_DESC_LONG:String = "#vehicle_customization:special_style/gb_ht_line_desc/long";
+      
+      public static const SPECIAL_STYLE_CZ40_DBV_152_RW6_3DST:String = "#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst";
+      
+      public static const SPECIAL_STYLE_CZ40_DBV_152_RW6_3DST_DESC_LONG:String = "#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst_desc/long";
       
       public static const SPECIAL_STYLE_LUNAR_NY_2025_1:String = "#vehicle_customization:special_style/lunar_ny_2025_1";
       
