@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.858817 -0.008590 -2.115666</min>
+		<max>2.028387 1.453812 1.366133</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

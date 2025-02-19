@@ -2706,7 +2706,7 @@
 					<reloadTime>10</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -2729,10 +2729,7 @@
 						<rate>24</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>
-							8.5 10 13
-							<!--BW_String-->
-						</reloadTime>
+						<reloadTime>9 11 15</reloadTime>
 					</autoreload>
 					<customizationSlots>
 						<slot>
