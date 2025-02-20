@@ -3995,6 +3995,10 @@ package
       
       public static const CAMOUFLAGE_APRIL_FOOLS_DAY_2025_DESCRIPTION:String = "#vehicle_customization:camouflage/april_fools_day_2025/description";
       
+      public static const CAMOUFLAGE_CZ40_DBV_152_RW6_3DST_LABEL:String = "#vehicle_customization:camouflage/Cz40_DBV_152_RW6_3Dst/label";
+      
+      public static const CAMOUFLAGE_CZ40_DBV_152_RW6_3DST_DESCRIPTION:String = "#vehicle_customization:camouflage/Cz40_DBV_152_RW6_3Dst/description";
+      
       public static const CAMOUFLAGE_BP2025_HOLIDAY_1_LABEL:String = "#vehicle_customization:camouflage/bp2025_holiday_1/label";
       
       public static const CAMOUFLAGE_BP2025_HOLIDAY_1_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_holiday_1/description";
@@ -14048,6 +14052,10 @@ package
       public static const SPECIAL_STYLE_APRIL_FOOLS_DAY_2025_DESC:String = "#vehicle_customization:special_style/april_fools_day_2025_desc";
       
       public static const SPECIAL_STYLE_APRIL_FOOLS_DAY_2025_DESC_LONG:String = "#vehicle_customization:special_style/april_fools_day_2025_desc/long";
+      
+      public static const SPECIAL_STYLE_CZ40_DBV_152_RW6_3DST:String = "#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst";
+      
+      public static const SPECIAL_STYLE_CZ40_DBV_152_RW6_3DST_DESC_LONG:String = "#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst_desc/long";
       
       public static const SPECIAL_STYLE_ONSLAUGHT_SPRING:String = "#vehicle_customization:special_style/onslaught_spring";
       

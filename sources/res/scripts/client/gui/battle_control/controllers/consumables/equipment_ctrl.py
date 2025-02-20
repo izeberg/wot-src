@@ -1816,17 +1816,16 @@ class EquipmentsReplayPlayer(EquipmentsController):
         return
 
     def clear(self, leave=True):
-        if leave:
-            if self.__callbackID is not None:
-                BigWorld.cancelCallback(self.__callbackID)
-                self.__callbackID = None
-            if self.__callbackTimeID is not None:
-                BigWorld.cancelCallback(self.__callbackTimeID)
-                self.__callbackTimeID = None
-            self.__percents.clear()
-            self.__percentGetters.clear()
-            self.__times.clear()
-            self.__timeGetters.clear()
+        if self.__callbackID is not None:
+            BigWorld.cancelCallback(self.__callbackID)
+            self.__callbackID = None
+        if self.__callbackTimeID is not None:
+            BigWorld.cancelCallback(self.__callbackTimeID)
+            self.__callbackTimeID = None
+        self.__percents.clear()
+        self.__percentGetters.clear()
+        self.__times.clear()
+        self.__timeGetters.clear()
         super(EquipmentsReplayPlayer, self).clear(leave)
         return
 

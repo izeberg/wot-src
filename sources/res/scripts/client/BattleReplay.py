@@ -815,6 +815,8 @@ class BattleReplay(object):
            'regionCode': constants.AUTH_REALM, 
            'serverSettings': self.__serverSettings, 
            'hasMods': self.__replayCtrl.hasMods}
+        if not BigWorld.IS_CONSUMER_CLIENT_BUILD:
+            arenaInfo['branchURL'], arenaInfo['lastChangedRevision'] = self.__getBranchAndRevision()
         self.__replayCtrl.setArenaInfoStr(json.dumps(_JSON_Encode(arenaInfo)))
         self.__replayCtrl.recPlayerVehicleName = vehicleName
         self.__replayCtrl.recMapName = arenaName

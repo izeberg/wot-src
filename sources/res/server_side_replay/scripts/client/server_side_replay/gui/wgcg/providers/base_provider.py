@@ -58,7 +58,7 @@ class JwtRequestor(object):
 
     @adisp_async
     def requestJwt(self, callback):
-        if self.__jwtData and self.__jwtData['expirationTime'] < time.time():
+        if self.__jwtData and self.__jwtData['expirationTime'] > time.time():
             callback(self.__jwtData)
             return
         else:

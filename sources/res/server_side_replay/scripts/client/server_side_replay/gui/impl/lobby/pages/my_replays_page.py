@@ -124,7 +124,7 @@ class MyReplaysPage(PageSubModelPresenter):
                 model.setState(State.SUCCESS)
                 model.setIsLoading(False)
             return
-        bestReplaysObj = self.__serverReplayProvider.getMyReplays(useFake=False, vehicleType=list(self.__filterState[ToggleGroupType.VEHICLETYPE.value]), vehicleLevel=list(self.__filterState[ToggleGroupType.VEHICLETIER.value]), nation=list(self.__filterState[ToggleGroupType.NATION.value]), vehicleCDs=list(self.__filterState[ToggleGroupType.VEHICLECD.value]), sortBy=_ModelToDataStatParam.get(self.__selectedSortBy, StatParams.EARNEDXP.value))
+        bestReplaysObj = self.__serverReplayProvider.getMyReplays(useFake=False, vehicleType=list(self.__filterState[ToggleGroupType.VEHICLETYPE.value]), vehicleLevel=list(self.__filterState[ToggleGroupType.VEHICLETIER.value]), nation=list(self.__filterState[ToggleGroupType.NATION.value]), vehicleCDs=list(self.__filterState[ToggleGroupType.VEHICLECD.value]), sortBy='replay_date')
         if bestReplaysObj.isWaitingResponse and DataNames.MY_REPLAYS not in self.__loadingData:
             self.__loadingData.append(DataNames.MY_REPLAYS)
         if bestReplaysObj.isWaitingResponse and bestReplaysObj.data is None:

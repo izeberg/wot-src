@@ -25,7 +25,7 @@ package net.wg.gui.battle.battleRoyale.views.components.fullStats
       
       private static const VEHICLES_COUNTER_BOTTOM_OFFSET_BIG:int = 23;
       
-      private static const MINIMAP_ITEMS_BOTTOM_OFFSET:int = 178;
+      private static const MINIMAP_ITEMS_BOTTOM_OFFSET:int = 208;
       
       private static const MINIMAP_ITEMS_BOTTOM_OFFSET_BIG:int = 370;
       

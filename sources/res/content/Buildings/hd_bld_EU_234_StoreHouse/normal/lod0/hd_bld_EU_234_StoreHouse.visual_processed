@@ -8,60 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_EU_234_StoreHouse</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s3</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s4</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -150,7 +96,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.020277 6.922944 -0.021364</groupOrigin>
+				<groupOrigin>0.020277 6.922943 -0.021363</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -190,10 +136,6 @@
 					<property>
 						g_tile2Tint
 						<Vector4>1.000000 0.852800 0.680000 1.000000</Vector4>
-					</property>
-					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -240,7 +182,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.465663 11.009642 -0.013933</groupOrigin>
+				<groupOrigin>0.465663 11.009643 -0.013932</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -348,10 +290,6 @@
 						<Texture>content/Buildings/hd_bld_EU_234_StoreHouse/hd_bld_EU_234_StoreHouse_atlas_blend.png</Texture>
 					</property>
 					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_dirtColor
 						<Vector4>0.760000 0.899200 1.000000 0.080000</Vector4>
 					</property>
@@ -408,7 +346,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.270683 6.973237 -0.046786</groupOrigin>
+				<groupOrigin>0.270683 6.973235 -0.046785</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				4
@@ -438,15 +376,15 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.233508 7.105960 -0.086429</groupOrigin>
+				<groupOrigin>-0.233508 7.105959 -0.086427</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-9.136119 -0.304634 -7.471522</min>
-		<max>8.669104 13.659646 7.298663</max>
+		<min>-9.136119 -0.304636 -7.471522</min>
+		<max>8.669104 13.659646 7.298665</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>289356</geometrySize>
+	<geometrySize>289756</geometrySize>
 	<minUVDensity>0.002990</minUVDensity>
 </root>
