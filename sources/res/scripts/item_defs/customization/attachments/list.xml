@@ -521,6 +521,24 @@
 			<hangarModelName>particles/Tank/customization/A176_M103_110_HBP_3Dst/A176_M103_110_HBP_3Dst.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
+		<attachment>
+			<id>134</id>
+			<name>Cz40_ABM_122_RW6_3Dst_Lamp</name>
+			<modelName>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/lamp_switcher.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>135</id>
+			<name>Cz40_ABM_122_RW6_3Dst_GunNum</name>
+			<modelName>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/gun_number_switcher.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>136</id>
+			<name>Cz40_ABM_122_RW6_3Dst_GunNumWinter</name>
+			<modelName>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/gun_number_switcher_winter.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
 	</itemGroup>
 	<itemGroup>
 		<name>Dragon Vanguard</name>
