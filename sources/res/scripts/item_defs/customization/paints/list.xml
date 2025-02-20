@@ -8688,6 +8688,69 @@
 		</usages>
 	</itemGroup>
 	<itemGroup>
+		<name>Cz40_DBV_152_RW6_3Dst</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>czech:Cz40_DBV_152</vehicles>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>522</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_13.png</texture>
+			<color>102 97 79 255</color>
+			<gloss>
+				0.44
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>523</id>
+			<texture>gui/maps/vehicles/repaints/japan_color_01.png</texture>
+			<color>128 104 84 255</color>
+			<gloss>
+				0.44
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>524</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>140 140 140 255</color>
+			<gloss>
+				0.44
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/Cz40_DBV_152_RW6_3Dst</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<usages>
+			<item>
+				<componentType>ALL</componentType>
+				<cost>1</cost>
+			</item>
+		</usages>
+	</itemGroup>
+	<itemGroup>
 		<name>theboys</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>

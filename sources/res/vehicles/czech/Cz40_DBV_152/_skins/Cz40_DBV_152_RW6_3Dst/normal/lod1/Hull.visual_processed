@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.894118 0.011172 0.720104</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.301451 0.011172 1.831005</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.588811 0.808271</row1>
+					<row2>0.000000 -0.808271 0.588811</row2>
+					<row3>-1.365001 -0.025319 3.071416</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.086801 -0.996226</row1>
+					<row2>-0.000000 -0.996226 -0.086801</row2>
+					<row3>-1.365001 -0.254149 -2.893517</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.588811 0.808271</row1>
+					<row2>0.000000 -0.808271 0.588811</row2>
+					<row3>1.365001 -0.025319 3.071416</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.086801 -0.996226</row1>
+					<row2>-0.000000 -0.996226 -0.086801</row2>
+					<row3>1.365001 -0.254149 -2.893517</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.000000 0.000000 -1.000000</row0>
+					<row1>0.500000 0.866025 0.000000</row1>
+					<row2>0.866025 -0.500000 0.000000</row2>
+					<row3>1.646465 0.381540 1.976812</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.000000 0.000000 -1.000000</row0>
+					<row1>0.500000 0.866025 0.000000</row1>
+					<row2>0.866025 -0.500000 0.000000</row2>
+					<row3>1.646465 0.381540 1.380293</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_3</identifier>
+				<transform>
+					<row0>0.000000 0.000000 -1.000000</row0>
+					<row1>0.500000 0.866025 0.000000</row1>
+					<row2>0.866025 -0.500000 0.000000</row2>
+					<row3>1.646465 0.381540 0.783657</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000005 0.463462 -0.865309</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 7.013699 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_hull_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.003066 0.008235 0.098290</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>CamoNet</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_Camonet_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_Camonet_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_Camonet_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_Camonet_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.081356 0.020922 0.002886</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>equipment</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/DBV_152_RW6_3Dst_equipment_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.069082 0.415155 -0.158792</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.879857 -0.584481 -3.471310</min>
+		<max>2.042569 0.600946 3.477080</max>
+	</boundingBox>
+	<geometrySize>339906</geometrySize>
+	<minUVDensity>0.002112</minUVDensity>
+</root>

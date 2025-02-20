@@ -37415,6 +37415,22 @@ package
       
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW5_GB114_600X450_3D:String = "../maps/icons/resourceWell/vehicles/RW5_GB114_600x450_3d.png";
       
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_232X174:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_232x174.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_296X222:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_296x222.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_3D_232X174:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_3D_232x174.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_3D_296X222:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_3D_296x222.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_3D_400X300:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_3D_400x300.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_3D_600X450:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_3D_600x450.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_400X300:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_400x300.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_RW6_CZ40_DBV_152_600X450:String = "../maps/icons/resourceWell/vehicles/RW6_Cz40_DBV_152_600x450.png";
+      
       public static const MAPS_ICONS_ROLEEXP_ACTIONS_128X128_BLOCKANDTAKEDAMAGE:String = "../maps/icons/roleExp/actions/128x128/blockAndTakeDamage.png";
       
       public static const MAPS_ICONS_ROLEEXP_ACTIONS_128X128_BLOCKDAMAGE:String = "../maps/icons/roleExp/actions/128x128/blockDamage.png";

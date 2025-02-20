@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.868998 -0.280002 -0.000786</min>
+		<max>0.318895 0.499820 6.493845</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>
