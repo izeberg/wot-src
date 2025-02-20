@@ -104,6 +104,9 @@ msgstr "B.U.G.I. Wzmocniona"
 msgid "Chassis_Pl19_CS_52_LIS"
 msgstr "CS-52"
 
+msgid "Chassis_Pl209_ULAN"
+msgstr "ULAN"
+
 msgid "Chassis_Pl20_CS_44"
 msgstr "CS-44"
 
@@ -586,6 +589,28 @@ msgstr "CS-52 LIS"
 msgid "Pl19_CS_52_LIS_short_special"
 msgstr "Універсальнасць, добрая забойнасць стрэлу"
 
+msgid "Pl209_ULAN"
+msgstr "ULAN"
+
+msgid "Pl209_ULAN_descr"
+msgstr ""
+"После окончания Второй Мировой войны Польша осталась практически с неприкрытым побережьем Балтийского моря, поэтому командование военно-морского флота задумалось о создании танка береговой обороны, который мог бы вести огневую дуэль с кораблями противника. Для повышения мощности секундного залпа танк было предложено сделать двуствольным, а для размещения большого боекомплекта разработали объёмную сварную башню с развитой кормовой нишей для дополнительных снарядов. Для повышения скорострельности каждое орудие было оснащено механизированным досылателем, а обслуживал его отдельный заряжающий. К сожалению, данная машина дальше эскизного проекта не продвинулась, так как береговая артиллерия стала проигрывать в эффективности противокорабельным ракетным комплексам.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Pl209_ULAN_long_special"
+msgstr ""
+"Этот тяжёлый танк прорыва обладает неплохой динамикой, максимальной "
+"скоростью и крепким лобовым бронированием. Задача машины — проламывать "
+"направление и пользоваться преимуществами своей брони. Хороший угол "
+"склонения орудия позволяет уверенно чувствовать себя при игре «от рельефа»."
+
+msgid "Pl209_ULAN_short"
+msgstr "ULAN"
+
+msgid "Pl209_ULAN_short_special"
+msgstr "Хорошее бронирование, двухорудийная установка"
+
 msgid "Pl20_CS_44"
 msgstr "CS-44"
 
@@ -799,13 +824,13 @@ msgid "Pl29_NC_Wz_70T"
 msgstr "Wz.70 Żubr"
 
 msgid "Pl29_NC_Wz_70T_T"
-msgstr "Wz.70T T"
+msgstr "Wz.70T Test"
 
 msgid "Pl29_NC_Wz_70T_T_long_special"
 msgstr "?empty?"
 
 msgid "Pl29_NC_Wz_70T_T_short"
-msgstr "Wz.70T T"
+msgstr "Wz.70T (T)"
 
 msgid "Pl29_NC_Wz_70T_T_short_special"
 msgstr "?empty?"
@@ -840,13 +865,13 @@ msgid "Pl30_SDP_Wz58T"
 msgstr "Wz.58Т"
 
 msgid "Pl30_SDP_Wz58T_T"
-msgstr "Wz.58Т T"
+msgstr "Wz.58Т Test"
 
 msgid "Pl30_SDP_Wz58T_T_long_special"
 msgstr "?empty?"
 
 msgid "Pl30_SDP_Wz58T_T_short"
-msgstr "Wz.58Т T"
+msgstr "Wz.58Т (T)"
 
 msgid "Pl30_SDP_Wz58T_T_short_special"
 msgstr "?empty?"
@@ -902,13 +927,13 @@ msgid "Pl32_SDP_Wz_44"
 msgstr "Wz.44"
 
 msgid "Pl32_SDP_Wz_44_T"
-msgstr "Wz.44 T"
+msgstr "Wz.44 Test"
 
 msgid "Pl32_SDP_Wz_44_T_long_special"
 msgstr "?empty?"
 
 msgid "Pl32_SDP_Wz_44_T_short"
-msgstr "Wz.44 T"
+msgstr "Wz.44 (T)"
 
 msgid "Pl32_SDP_Wz_44_T_short_special"
 msgstr "?empty?"
@@ -1018,6 +1043,9 @@ msgstr "R-113P"
 msgid "R_113_P_SH"
 msgstr "R-113P MH"
 
+msgid "R_113_U"
+msgstr "R-113"
+
 msgid "R_123"
 msgstr "R-123"
 
@@ -1113,6 +1141,9 @@ msgstr "BUGі MH"
 
 msgid "Turret_1_Pl19_CS_52_LIS"
 msgstr "CS-52"
+
+msgid "Turret_1_Pl209_ULAN"
+msgstr "ULAN"
 
 msgid "Turret_1_Pl20_CS_44"
 msgstr "CS-44"
@@ -1221,6 +1252,9 @@ msgstr "W12-5P-1"
 
 msgid "W_12_5_P_SH"
 msgstr "W12-5P MH"
+
+msgid "W_12_U"
+msgstr "W-12"
 
 msgid "W_2_53M"
 msgstr "W-2-53M"
@@ -1420,6 +1454,15 @@ msgstr "OF-471"
 msgid "_122mm_OF-471M"
 msgstr "OF-471M"
 
+msgid "_122mm_PK_3BK10"
+msgstr "122 mm PK-3BK10"
+
+msgid "_122mm_PPK_471P"
+msgstr "122 mm PPk-471"
+
+msgid "_122mm_PW_471"
+msgstr "122 mm PW-471"
+
 msgid "_122mm_UBR-471P_P"
 msgstr "WBR-471B"
 
@@ -1455,6 +1498,9 @@ msgstr "AP wz.43/50"
 
 msgid "_122mm_wz_43_50_G6_SH"
 msgstr "122 mm armata wz.43/50"
+
+msgid "_122mm_wz_49_48_dualgun"
+msgstr "122mm wz.49/48 x2"
 
 msgid "_122mm_wz_53"
 msgstr "122mm wz.53"

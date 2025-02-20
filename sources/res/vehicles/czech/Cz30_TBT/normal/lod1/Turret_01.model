@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz30_TBT/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz30_TBT/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.488443 -0.000000 -2.285947</min>
+		<max>1.499154 1.218020 1.831132</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

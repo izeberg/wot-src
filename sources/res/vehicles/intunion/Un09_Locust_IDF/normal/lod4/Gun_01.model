@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.128917 -0.180620 -0.042535</min>
+		<max>0.181222 0.235470 1.459589</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un09_Locust_IDF/normal/lod4/Gun_01</nodefullVisual>
+</root>

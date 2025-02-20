@@ -25,8 +25,6 @@ package net.wg.data.constants.generated
       
       public static const VERSUS_AI_TANK_CAROUSEL:String = "versusAITankCarousel";
       
-      public static const BOB_TANK_CAROUSEL:String = "bobTankCarousel";
-      
       public static const AMMUNITION_PANEL:String = "ammunitionPanel";
       
       public static const RESEARCH_PANEL:String = "researchPanel";
@@ -48,8 +46,6 @@ package net.wg.data.constants.generated
       public static const COMP7_PRIME_TIME:String = "comp7PrimeTime.swf";
       
       public static const COMP7_PRIME_TIME_ALIAS:String = "comp7PrimeTime";
-      
-      public static const BOB_PRIME_TIME:String = "rankedPrimeTime.swf";
       
       public static const COMP7_PUNISHMENT_DIALOG:String = "comp7PunishmentDialog";
       
@@ -153,6 +149,8 @@ package net.wg.data.constants.generated
       
       public static const FUN_RANDOM_HANGAR_WIDGET:String = "FunRandomHangarWidget";
       
+      public static const FUN_RANDOM_MODIFIERS_PANEL:String = "FunRandomModifiersPanel";
+      
       public static const EVENT_CREW_HEALING_COMPONENT:String = "eventCrewHealingComponent";
       
       public static const EVENT_CREW_BOOSTER_COMPONENT:String = "eventCrewBoosterComponent";
@@ -172,14 +170,6 @@ package net.wg.data.constants.generated
       public static const COLLECTION_ENTRY_POINT:String = "CollectionEntryPoint";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
-      
-      public static const BOB_ENTRY_POINT:String = "BobEntryPoint";
-      
-      public static const BOB_HANGAR_WIDGET:String = "BobHangarWidget";
-      
-      public static const BOB_MODIFIERS_PANEL:String = "bobModifiersPanel";
-      
-      public static const BOB_VEHICLE_PARAMETERS:String = "bobVehicleParameters";
        
       
       public function HANGAR_ALIASES()

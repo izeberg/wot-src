@@ -37,7 +37,7 @@
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
-						<Vector4>0.000000 0.100000 0.800000 0.000000</Vector4>
+						<Vector4>0.000000 0.100000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						distortionFrames
@@ -85,7 +85,7 @@
 					</property>
 					<property>
 						TintlColor
-						<Vector4>0.082353 0.184314 0.850980 0.230000</Vector4>
+						<Vector4>0.333333 0.423529 1.000000 0.800000</Vector4>
 					</property>
 					<property>
 						doubleSided

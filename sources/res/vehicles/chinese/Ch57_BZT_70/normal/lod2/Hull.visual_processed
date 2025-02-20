@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>-1.254196 0.165776 3.739122</row3>
+					<row3>-1.254016 0.165776 3.739122</row3>
 				</transform>
 			</node>
 			<node>
@@ -49,7 +49,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>-1.874442 0.165776 3.739122</row3>
+					<row3>-1.864466 0.165776 3.739122</row3>
 				</transform>
 			</node>
 			<node>
@@ -58,7 +58,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>-1.254196 0.134756 -3.612230</row3>
+					<row3>-1.254016 0.134756 -3.612230</row3>
 				</transform>
 			</node>
 			<node>
@@ -67,7 +67,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>-1.874442 0.134756 -3.612230</row3>
+					<row3>-1.864466 0.134756 -3.612230</row3>
 				</transform>
 			</node>
 			<node>
@@ -76,7 +76,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>1.254196 0.165776 3.739122</row3>
+					<row3>1.252923 0.165776 3.739122</row3>
 				</transform>
 			</node>
 			<node>
@@ -94,7 +94,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>1.254196 0.134756 -3.612230</row3>
+					<row3>1.252923 0.134756 -3.612230</row3>
 				</transform>
 			</node>
 			<node>
@@ -146,8 +146,53 @@
 				<material>
 					<identifier>tank_hull_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_hull_01_ANM.dds</Texture>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_hull_01_AM.dds</Texture>
@@ -160,27 +205,15 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_hull_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_hull_01_ANM.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>-0.000940 -0.019867 0.115906</groupOrigin>
+				<groupOrigin>-0.010460 -0.019867 0.111682</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.202943 -0.635213 -3.964411</min>
+		<min>-2.221982 -0.635213 -3.972859</min>
 		<max>2.201063 0.595479 4.196223</max>
 	</boundingBox>
-	<geometrySize>75386</geometrySize>
+	<geometrySize>106166</geometrySize>
 	<minUVDensity>0.001503</minUVDensity>
 </root>

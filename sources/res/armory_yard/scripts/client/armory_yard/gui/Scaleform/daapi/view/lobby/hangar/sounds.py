@@ -13,7 +13,6 @@ class ArmoryYardSounds(CONST_CONTAINER):
     VIDEO_PAUSE = 'ay_video_pause'
     VIDEO_RESUME = 'ay_video_resume'
     VIDEO_STOP = 'ay_video_stop'
-    VIDEO_RTPC = 'RTPC_ext_video_volume'
 
 
 class ArmoryYardVideoSoundControl(IVideoSoundManager):
@@ -39,7 +38,6 @@ class ArmoryYardVideoSoundControl(IVideoSoundManager):
     def start(self):
         sound = self.videoSoundEvent
         if sound:
-            self.setVolume()
             SoundGroups.g_instance.playSound2D(sound)
             self.__state = SoundManagerStates.PLAYING
 
@@ -55,10 +53,6 @@ class ArmoryYardVideoSoundControl(IVideoSoundManager):
     def unpause(self):
         SoundGroups.g_instance.playSound2D(ArmoryYardSounds.VIDEO_RESUME)
         self.__state = SoundManagerStates.PLAYING
-
-    def setVolume(self):
-        volumeLevel = SoundGroups.g_instance.getMaxVolumeFromCategories(SoundGroups.USER_SETTINGS_CATEGORY_NAMES)
-        SoundGroups.g_instance.setRTPC(ArmoryYardSounds.VIDEO_RTPC, volumeLevel)
 
     def __getMapping(self):
         mapping = {}

@@ -10,6 +10,8 @@ class Ability(Enum):
     OVERCHARGE = 'overcharge'
     RAPID_SHELLING = 'rapid_shelling'
     POWER_SHOT = 'power_shot'
+    WAVE = 'wave'
+    STUN_SHOT = 'stun_shot'
 
 
 class AbilityModel(ViewModel):

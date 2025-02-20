@@ -1119,6 +1119,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.279239 0.570016 -0.015396</groupOrigin>
 			</primitiveGroup>
@@ -1206,6 +1210,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.279101 0.565191 -0.031767</groupOrigin>

@@ -127,6 +127,7 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       public function showEffectTimer(param1:Number, param2:Boolean, param3:Boolean, param4:Boolean = true, param5:Boolean = true) : void
       {
          this.oneShotAnimation = param3;
+         visible = true;
          gotoAndPlay(!!param4 ? STATE_SHOW : STATE_BASE);
          this._isSourceVehicle = param2;
          this.updateSourceVehicle();
@@ -171,8 +172,8 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       protected function onHiddenStateShowed() : void
       {
          visible = false;
-         dispatchEvent(new StatusAnimationEvent(StatusAnimationEvent.EVENT_HIDDEN,this._statusID,this.oneShotAnimation));
          this.oneShotAnimation = false;
+         dispatchEvent(new StatusAnimationEvent(StatusAnimationEvent.EVENT_HIDDEN,this._statusID,this.oneShotAnimation));
       }
       
       protected function evaluateOneShotAnimationFrameStates() : void

@@ -5,7 +5,7 @@ package net.wg.data.constants.generated
       
       public static const ABILITY:String = "ability";
       
-      public static const PYROMETER:String = "pyrometer";
+      public static const THERMAL_VISION:String = "thermal";
        
       
       public function BATTLE_MARKER_ABILITIES_CONSTS()

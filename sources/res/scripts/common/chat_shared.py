@@ -1586,7 +1586,8 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'earlyAccessCompensation',
  'paragonsLevelRewardsReceived',
  'paragonsCoinsGranted',
- 'paragonsChapterComplete'])
+ 'paragonsChapterComplete',
+ 'battlePassCapReset'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

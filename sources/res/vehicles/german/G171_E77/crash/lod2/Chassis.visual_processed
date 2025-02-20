@@ -83,10 +83,6 @@
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/german/tracks/E77_track_AM.dds</Texture>
 					</property>
@@ -125,10 +121,6 @@
 					<property>
 						alphaReference
 						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						diffuseMap

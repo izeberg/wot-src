@@ -943,7 +943,7 @@ msgid "action/time/left"
 msgstr "Засталося:"
 
 msgid "battleCondition/state/completed"
-msgstr "Выканана"
+msgstr "Завершана"
 
 msgid "battleCondition/state/completed_perfectly"
 msgstr "Выканана з адзнакай"
@@ -1153,7 +1153,7 @@ msgid "bonusName/emblem"
 msgstr "Эмблема"
 
 msgid "bonusName/entitlements/paragon_rewards_choice_v_11"
-msgstr "Техника XI уровня"
+msgstr "Тэхніка ХІ узроўню"
 
 msgid "bonusName/entitlements/ranked_2020_discount"
 msgstr "Павелічэнне зніжкі"
@@ -1207,7 +1207,7 @@ msgid "bonusName/paint"
 msgstr "Фарба"
 
 msgid "bonusName/paragonsUnlocks"
-msgstr "Доступ к ветке техники"
+msgstr "Доступ да галіны тэхнікі"
 
 msgid "bonusName/personalNumber"
 msgstr "Трохзначны нумар"
@@ -1234,7 +1234,7 @@ msgid "bonusName/style"
 msgstr "Стыль"
 
 msgid "bonusName/styleProgress"
-msgstr "Стиль «%(name)s» (%(progress)s этап)"
+msgstr "Стыль «%(name)s» (%(progress)s этап)"
 
 msgid "bonusName/tankmen/no_skills"
 msgstr "Экіпаж"
@@ -1252,7 +1252,7 @@ msgid "bonusName/team_credits_bonus"
 msgstr "Камандны бонус да крэдытаў"
 
 msgid "bonusName/tmanToken"
-msgstr "Член экипажа"
+msgstr "Член экіпажа"
 
 msgid "bonusName/xp"
 msgstr "Баявы досвед"
@@ -3254,9 +3254,6 @@ msgstr "Адваяваных Генеральных бітваў"
 msgid "details/dossier/27/battlesCount"
 msgstr "Праведзеных баёў у рэжыме «Лінія фронту»"
 
-msgid "details/dossier/32/battlesCount"
-msgstr "Проведённых боёв в режиме «Битва блогеров»"
-
 msgid "details/dossier/37/battlesCount"
 msgstr "Праведзеных баёў у рэжыме «Разведка боем»"
 
@@ -3621,7 +3618,7 @@ msgid "details/dossier/medalBurda"
 msgstr "Медаль Бурды"
 
 msgid "details/dossier/medalCarius"
-msgstr "Степень медали Самохина"
+msgstr "Ступень медаля Самохіна"
 
 msgid "details/dossier/medalCrucialContribution"
 msgstr "«Вырашальны ўнёсак»"
@@ -3639,13 +3636,13 @@ msgid "details/dossier/medalFadin"
 msgstr "Медаль Фадзіна"
 
 msgid "details/dossier/medalHalonen"
-msgstr "Медаль Крысова"
+msgstr "Медаль Крысава"
 
 msgid "details/dossier/medalKay"
 msgstr "Ступень медаля Кэя"
 
 msgid "details/dossier/medalKnispel"
-msgstr "Степень медали Гудзя"
+msgstr "Ступень медаля Гудзя"
 
 msgid "details/dossier/medalKolobanov"
 msgstr "Медаль Калабанава"
@@ -3660,7 +3657,7 @@ msgid "details/dossier/medalLeClerc"
 msgstr "Ступень медаля Леклéрка"
 
 msgid "details/dossier/medalLehvaslaiho"
-msgstr "Медаль Хазова"
+msgstr "Медаль Хазава"
 
 msgid "details/dossier/medalNikolas"
 msgstr "Медаль Нікалза"
@@ -3681,10 +3678,10 @@ msgid "details/dossier/medalRadleyWalters"
 msgstr "Медаль Рэдлі-Уолтэрза"
 
 msgid "details/dossier/medalTamadaYoshio"
-msgstr "Медаль Трубина"
+msgstr "Медаль Трубіна"
 
 msgid "details/dossier/medalTarczay"
-msgstr "Медаль Любушкина"
+msgstr "Медаль Любушкіна"
 
 msgid "details/dossier/medalWittmann"
 msgstr "Медаль Ушакова"
@@ -4712,7 +4709,7 @@ msgid "item/timer/tillFinish/onlyHours"
 msgstr "%(hours)s гадз"
 
 msgid "item/timer/tillFinish/shortFormat"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "item/timer/tillFinish/shortFullFormat"
 msgstr "Да сканчэння менш за гадзіну"
@@ -4751,7 +4748,7 @@ msgid "item/type/specialMission"
 msgstr "Умацаваны раён: асобыя ўказанні"
 
 msgid "metrics/state/done"
-msgstr "Выканана"
+msgstr "Завершана"
 
 msgid "metrics/state/failed"
 msgstr "Скончылася няўдала"
@@ -4987,7 +4984,7 @@ msgid "missions/filter/filterButton/header"
 msgstr "Фільтр задач"
 
 msgid "missions/filter/popover/defaultButton/body"
-msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
+msgstr "Націсніце, каб скінуць налады фільтра на стандартны стан."
 
 msgid "missions/filter/popover/defaultButton/header"
 msgstr "Скінуць фільтр"
@@ -5005,7 +5002,7 @@ msgid "missions/filter/popover/title"
 msgstr "Фільтр задач"
 
 msgid "missions/filterCounter/closeButton/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
+msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
 
 msgid "missions/filterCounter/closeButton/header"
 msgstr "Паставіць стандартныя налады"
@@ -5053,12 +5050,6 @@ msgstr ""
 msgid "missions/tab/battle_pass/header"
 msgstr "Баявы пропуск"
 
-msgid "missions/tab/bob/body"
-msgstr "Игровое событие «Битва блогеров 2025»"
-
-msgid "missions/tab/bob/header"
-msgstr "Битва блогеров 2025"
-
 msgid "missions/tab/categories/body"
 msgstr "Баявыя задачы, якія можна выканаць адзін або некалькі разоў."
 
@@ -5100,9 +5091,6 @@ msgstr "Штодзённыя баявыя задачы, прымеркаваны
 
 msgid "missions/tab/kursk/header"
 msgstr "Курская бітва"
-
-msgid "missions/tab/label/bob"
-msgstr "Битва блогеров"
 
 msgid "missions/tab/label/categories"
 msgstr "Баявыя задачы"
@@ -5319,7 +5307,7 @@ msgid "personalMission/status/addInProgress"
 msgstr "Паляпшэнне выніку: выканайце асноўную і дадатковую ўмовы"
 
 msgid "personalMission/status/allDone"
-msgstr "Выполнены все условия"
+msgstr "Выкананы ўсе ўмовы"
 
 msgid "personalMission/status/doneWithPawn"
 msgstr "Асноўная ўмова выканана за %(count)s"
@@ -5660,6 +5648,9 @@ msgstr "«Германія»"
 
 msgid "token/default/heavyTank"
 msgstr "«Цяжкі танк»"
+
+msgid "token/default/intunion"
+msgstr "«Сборная наций»"
 
 msgid "token/default/italy"
 msgstr "«Італія»"

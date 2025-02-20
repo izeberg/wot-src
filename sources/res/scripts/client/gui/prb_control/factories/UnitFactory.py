@@ -16,7 +16,6 @@ from gui.prb_control.entities.mapbox.squad.entity import MapboxSquadEntryPoint, 
 from gui.prb_control.entities.stronghold.unit.entity import StrongholdEntity, StrongholdEntryPoint, StrongholdBrowserEntryPoint, StrongholdBrowserEntity
 from gui.prb_control.entities.random.squad.entity import RandomSquadEntity, RandomSquadEntryPoint
 from gui.prb_control.entities.epic.squad.entity import EpicSquadEntity, EpicSquadEntryPoint
-from gui.prb_control.entities.bob.squad.entity import BobSquadEntity, BobSquadEntryPoint
 from gui.prb_control.items import PlayerDecorator, FunctionalState
 from gui.prb_control.settings import FUNCTIONAL_FLAG
 from gui.prb_control.settings import PREBATTLE_ACTION_NAME, CTRL_ENTITY_TYPE
@@ -28,7 +27,6 @@ registerUnitEntryPoint(PREBATTLE_ACTION_NAME.PUBLICS_LIST, PublicBrowserEntryPoi
 registerUnitEntryPoint(PREBATTLE_ACTION_NAME.STRONGHOLDS_BATTLES_LIST, StrongholdBrowserEntryPoint)
 registerUnitEntryPoint(PREBATTLE_ACTION_NAME.MAPBOX_SQUAD, MapboxSquadEntryPoint)
 registerUnitEntryPoint(PREBATTLE_ACTION_NAME.COMP7_SQUAD, Comp7SquadEntryPoint)
-registerUnitEntryPoint(PREBATTLE_ACTION_NAME.BOB_SQUAD, BobSquadEntryPoint)
 registerUnitEntryPointByType(PREBATTLE_TYPE.SQUAD, RandomSquadEntryPoint)
 registerUnitEntryPointByType(PREBATTLE_TYPE.EVENT, EventBattleSquadEntryPoint)
 registerUnitEntryPointByType(PREBATTLE_TYPE.EPIC, EpicSquadEntryPoint)
@@ -36,7 +34,6 @@ registerUnitEntryPointByType(PREBATTLE_TYPE.UNIT, PublicEntryPoint)
 registerUnitEntryPointByType(PREBATTLE_TYPE.STRONGHOLD, StrongholdEntryPoint)
 registerUnitEntryPointByType(PREBATTLE_TYPE.MAPBOX, MapboxSquadEntryPoint)
 registerUnitEntryPointByType(PREBATTLE_TYPE.COMP7, Comp7SquadEntryPoint)
-registerUnitEntryPointByType(PREBATTLE_TYPE.BOB, BobSquadEntryPoint)
 _SUPPORTED_INTRO_BY_TYPE = {PREBATTLE_TYPE.E_SPORT_COMMON: ESportIntroEntity}
 _SUPPORTED_BROWSER_BY_TYPE = {PREBATTLE_TYPE.UNIT: PublicBrowserEntity, 
    PREBATTLE_TYPE.STRONGHOLD: StrongholdBrowserEntity}
@@ -47,7 +44,6 @@ registerUnitEntity(PREBATTLE_TYPE.UNIT, PublicEntity)
 registerUnitEntity(PREBATTLE_TYPE.STRONGHOLD, StrongholdEntity)
 registerUnitEntity(PREBATTLE_TYPE.MAPBOX, MapboxSquadEntity)
 registerUnitEntity(PREBATTLE_TYPE.COMP7, Comp7SquadEntity)
-registerUnitEntity(PREBATTLE_TYPE.BOB, BobSquadEntity)
 
 class UnitFactory(ControlFactory):
 
@@ -106,5 +102,8 @@ class UnitFactory(ControlFactory):
             if prbType in _SUPPORTED_INTRO_BY_TYPE:
                 return self._createEntityByType(prbType, _SUPPORTED_INTRO_BY_TYPE)
             if prbType in _SUPPORTED_BROWSER_BY_TYPE and ctx.hasFlags(FUNCTIONAL_FLAG.UNIT_BROWSER):
+                initCtx = ctx.getInitCtx()
+                if hasattr(initCtx, 'kwargs'):
+                    return self._createEntityByType(prbType, _SUPPORTED_BROWSER_BY_TYPE, **initCtx.kwargs)
                 return self._createEntityByType(prbType, _SUPPORTED_BROWSER_BY_TYPE)
             return

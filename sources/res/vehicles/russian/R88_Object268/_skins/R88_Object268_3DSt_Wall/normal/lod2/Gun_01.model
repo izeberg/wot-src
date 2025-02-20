@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.382162 -0.332827 0.246427</min>
+		<max>0.382156 0.392131 4.249302</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

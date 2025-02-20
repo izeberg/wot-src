@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.519777 -0.879309 -3.292131</min>
+		<max>1.509998 0.769731 3.084594</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un01_Cromwell_VII/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un01_Cromwell_VII/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.033477 -0.000558 -1.837927</min>
+		<max>1.035223 0.864797 2.143886</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un09_Locust_IDF/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/intunion/Un09_Locust_IDF/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+</root>

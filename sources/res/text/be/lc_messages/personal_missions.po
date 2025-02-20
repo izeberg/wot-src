@@ -127,12 +127,12 @@ msgstr "Тып тэхнікі"
 
 msgid "PersonalMissionFirstEntryView/item2/blocks/1/descr"
 msgstr ""
-"Частка задач патрабуе ўступаць у бой на пэўнай тэхніцы ўказаных дзяржаў. Усяго ёсць 4 аб'яднанні, паводле якіх размеркаваны задачы:\n"
+"Часть задач требует выходить в бой на определённой технике указанных наций. Всего есть 4 объединения, по которым распределены задачи:\n"
 "\n"
-"• «Саюз»: СССР, Кітай.\n"
-"• «Блок»: Германія, Японія.\n"
-"• «Альянс»: ЗША, Вялікабрытанія, Польшча.\n"
-"• «Кааліцыя»: Францыя, Швецыя, Чэхаславакія, Італія."
+"• «Союз»: СССР, Китай.\n"
+"• «Блок»: Германия, Япония.\n"
+"• «Альянс»: США, Великобритания, Польша.\n"
+"• «Коалиция»: Франция, Швеция, Чехословакия, Италия, Сборная наций."
 
 msgid "PersonalMissionFirstEntryView/item2/blocks/1/title"
 msgstr "Аб'яднанні"
@@ -309,7 +309,7 @@ msgid "awardsScreen/header/fullyCompleted"
 msgstr "Аперацыя «%(missionName)s» выканана з адзнакай"
 
 msgid "awardsScreen/headerExtra"
-msgstr "АТРЫМАНА ЎЗНАГАРОДА!"
+msgstr "ВЫ АТРЫМАЛІ ЎЗНАГАРОДУ!"
 
 msgid "awardsView/closeBtn/label"
 msgstr "ЗАКРЫЦЬ"
@@ -345,13 +345,13 @@ msgid "bonus/multiplier/progress"
 msgstr "Бонус ×%(value)s:"
 
 msgid "campaignTitle/1"
-msgstr "Долгожданное подкрепление"
+msgstr "Доўгачаканае падмацаванне"
 
 msgid "campaignTitle/2"
-msgstr "Второй фронт"
+msgstr "Другі фронт"
 
 msgid "campaignTitle/3"
-msgstr "Новые горизонты"
+msgstr "Новыя гарызонты"
 
 msgid "chainTooltipData/description/text/alliance0"
 msgstr "Задачы аперацыі выконваць толькі на тэхніцы ўказаных дзяржаў."
@@ -378,7 +378,7 @@ msgid "conditions/biathlon/label/main"
 msgstr "Выканаць асноўную ўмову ў %(goal)s баях з %(limit)s"
 
 msgid "conditions/completed/bottomLabel"
-msgstr "Выканана"
+msgstr "Завершана"
 
 msgid "conditions/counter/label/add"
 msgstr "Выканаць дадатковую ўмову, разоў: %(count)s"
@@ -441,10 +441,10 @@ msgid "detailedView/retryBtnLabel"
 msgstr "Перавыканаць з адзнакай"
 
 msgid "detailedView/startBtnLabel"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "detailedView/status/NA"
-msgstr "Недаступна"
+msgstr "Недаступная"
 
 msgid "detailedView/status/completed"
 msgstr "Выканана асноўная ўмова"
@@ -530,7 +530,7 @@ msgstr ""
 "атрымайце адпаведную ўзнагароду."
 
 msgid "detailedView/tooltips/startBtn/header"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "fourFreeSheetsObtainedPopup/button"
 msgstr "Перайсці"
@@ -695,7 +695,7 @@ msgid "operationUnlockedWindow/header"
 msgstr "Аперацыя «%(title)s»"
 
 msgid "operationUnlockedWindow/nextButton"
-msgstr "Прыступіць"
+msgstr "Распачаць"
 
 msgid "operationUnlockedWindow/title"
 msgstr "Атрыманы доступ да аперацыі"
@@ -718,10 +718,10 @@ msgid "operations/title1"
 msgstr "StuG IV"
 
 msgid "operations/title10"
-msgstr "Projet Murat"
+msgstr "Project Murat"
 
 msgid "operations/title11"
-msgstr "Аттестация"
+msgstr "Атэстацыя"
 
 msgid "operations/title2"
 msgstr "T28 HTC"
@@ -787,7 +787,7 @@ msgid "questProgressTracking/status/onPause"
 msgstr "Прыпынена"
 
 msgid "questProgressTracking/trackingStatus"
-msgstr "Сейчас выполняется несколько задач"
+msgstr "Зараз выконваецца некалькі задач"
 
 msgid "sidebar/completed"
 msgstr "Выканана"

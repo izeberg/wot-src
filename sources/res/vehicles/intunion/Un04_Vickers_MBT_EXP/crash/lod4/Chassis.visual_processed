@@ -76,14 +76,14 @@
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_GMM.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_ANM.dds</Texture>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -94,12 +94,12 @@
 						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_GMM.dds</Texture>
 					</property>
 					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+						normalMap
+						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.266265 0.612369 -0.215794</groupOrigin>
@@ -119,14 +119,14 @@
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_GMM.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_ANM.dds</Texture>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -137,12 +137,12 @@
 						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_GMM.dds</Texture>
 					</property>
 					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+						normalMap
+						<Texture>vehicles/intunion/Un04_Vickers_MBT_EXP/Vickers_MBT_EXP_proxy_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.266265 0.612369 -0.215794</groupOrigin>

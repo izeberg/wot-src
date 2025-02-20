@@ -7,7 +7,6 @@ package net.wg.gui.lobby.window
    import flash.ui.Keyboard;
    import net.wg.data.ListDAAPIDataProvider;
    import net.wg.data.constants.UniversalBtnStylesConst;
-   import net.wg.data.constants.Values;
    import net.wg.gui.components.common.serverStats.ServerDropDown;
    import net.wg.gui.components.controls.CloseButtonText;
    import net.wg.gui.components.controls.universalBtn.UniversalBtn;
@@ -119,10 +118,6 @@ package net.wg.gui.lobby.window
             this.alertBG.visible = this._data.showAlertBG;
             this.serversDD.visible = this._data.serverDDVisible;
             this.serversDD.enabled = this._data.serversDDEnabled;
-            if(this._data.background != Values.EMPTY_STR)
-            {
-               setBackground(this._data.background);
-            }
             App.utils.commons.updateTextFieldSize(this.serversTf,true,false);
             App.utils.commons.updateTextFieldSize(this.statusTf,false,true);
             invalidateSize();

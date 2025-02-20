@@ -33,7 +33,6 @@ if TYPE_CHECKING:
     from gui.shared.gui_items.Vehicle import Vehicle
     from gui.veh_post_progression.models.progression import PostProgressionItem
     from items.vehicles import VehicleType
-    from typing import Any
 DO_LOG_BROKEN_SYNC = False
 
 def getDiffID(itemdID):
@@ -289,7 +288,6 @@ class REQ_CRITERIA(object):
         FUN_RANDOM = RequestCriteria(PredicateCondition(lambda item: item.isOnlyForFunRandomBattles))
         COMP7 = RequestCriteria(PredicateCondition(lambda item: item.isOnlyForComp7Battles))
         MODE_HIDDEN = RequestCriteria(PredicateCondition(lambda item: item.isModeHidden))
-        BOB_BATTLE = RequestCriteria(PredicateCondition(lambda item: item.isOnlyForBob))
         HAS_XP_FACTOR = RequestCriteria(PredicateCondition(lambda item: item.dailyXPFactor != -1))
         IS_RESTORE_POSSIBLE = RequestCriteria(PredicateCondition(lambda item: item.isRestorePossible()))
         CAN_TRADE_IN = RequestCriteria(PredicateCondition(lambda item: item.canTradeIn))
@@ -326,7 +324,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 559         0  LOAD_FAST             0  'item'
+ L. 556         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -626,7 +624,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1054         0  LOAD_FAST             0  'self'
+ L.1051         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -954,8 +952,8 @@ Parse error at or near `None' instruction at offset -1
         else:
             return
 
-    def getVehicleCopy(self, vehicle, battleModifiers=None):
-        return self.itemsFactory.createVehicle(typeCompDescr=vehicle.intCD, strCompactDescr=vehicle.descriptor.makeCompactDescr(), inventoryID=vehicle.invID, proxy=self, extData=self.__inventory.getVehExtData(vehicle.intCD), battleModifiers=battleModifiers)
+    def getVehicleCopy(self, vehicle):
+        return self.itemsFactory.createVehicle(typeCompDescr=vehicle.intCD, strCompactDescr=vehicle.descriptor.makeCompactDescr(), inventoryID=vehicle.invID, proxy=self, extData=self.__inventory.getVehExtData(vehicle.intCD))
 
     def getVehicleCopyByCD(self, typeCompDescr):
         vehicle = self.getItemByCD(typeCompDescr)

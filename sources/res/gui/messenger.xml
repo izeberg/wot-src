@@ -1406,12 +1406,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>ClockIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</PeriodicBattlesNotSetSysMessage>
-		<BobBattlesAvailableSysMessage>
-			<priority>high</priority>
-			<type>yellow</type>
-			<icon>ClockIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#messenger:serviceChannelMessages/sysMsg/titles/bobBattlesAvailable)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
-		</BobBattlesAvailableSysMessage>
 		<PaymentMethodLinkSysMessage>
 			<type>grey</type>
 			<icon>ConfirmIcon</icon>
@@ -2391,8 +2385,16 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>InformationIcon</icon>
 			<bgIcon>bg_battle_pass</bgIcon>
 			<bgIconSizeAuto>true</bgIconSizeAuto>
-			<message>&lt;font  face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battlePass/reachedCap/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battlePass/reachedCap/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</BattlePassReachedCapMessage>
+		<BattlePassCapResetMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>InformationIcon</icon>
+			<bgIcon>bg_battle_pass</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battlePass/capReset/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battlePass/capReset/text)&lt;/font&gt;</message>
+		</BattlePassCapResetMessage>
 		<BattlePassStyleReceivedMessage>
 			<type>grey</type>
 			<icon>BattlePassIcon</icon>
@@ -3605,13 +3607,6 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 			</filters>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</EarlyAccessCommonSysMessage>
-		<bobRewardMessage>
-			<priority>low</priority>
-			<type>grey</type>
-			<icon>InformationIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/invoice)&lt;/font&gt;
-			&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;_(#bob:serviceChannelMessages/lootBoxesAutoOpen/header):&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
-		</bobRewardMessage>
 		<projectIsAvailable>
 			<type>grey</type>
 			<priority>high</priority>

@@ -958,7 +958,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.500000 0.875000 0.000000 0.000000</Vector4>
+						<Vector4>4.208220 1.052055 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -1021,7 +1021,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.500000 0.875000 0.000000 0.000000</Vector4>
+						<Vector4>4.208220 1.052055 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -1076,7 +1076,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						<Vector4>4.208220 2.104110 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1126,6 +1126,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.278391 0.618946 -0.045500</groupOrigin>
@@ -1164,7 +1168,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						<Vector4>4.208220 2.104110 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1214,6 +1218,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.278391 0.618946 -0.045500</groupOrigin>

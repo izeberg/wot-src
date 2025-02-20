@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch52_WZ_122_6_F3/_skins/Ch52_WZ_122_6_F3_3Dst/normal/lod1/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.701846 -0.000003 -3.640740</min>
+		<max>1.701847 1.224316 3.952618</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch52_WZ_122_6_F3/_skins/Ch52_WZ_122_6_F3_3Dst/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+</root>

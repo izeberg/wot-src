@@ -46,6 +46,10 @@
 						colorIdMap
 						<Texture>vehicles/german/G171_E77/E77_guns_ID.dds</Texture>
 					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
+					</property>
 				</material>
 				<groupOrigin>-0.035265 -0.104901 1.818569</groupOrigin>
 			</primitiveGroup>

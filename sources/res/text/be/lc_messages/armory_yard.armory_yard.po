@@ -48,19 +48,19 @@ msgid "bundles/buyTokenTooltip"
 msgstr "Перайсці да куплі любой колькасці жэтонаў будаўніцтва"
 
 msgid "bundles/countdown/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s д."
 
 msgid "bundles/countdown/daysWithHours"
 msgstr "%(day)s сут %(hour)s гадз"
 
 msgid "bundles/countdown/hours"
-msgstr "%(hour)s гадз"
+msgstr "%(hour)s ч."
 
 msgid "bundles/countdown/hoursWithMinutes"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "bundles/countdown/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "bundles/countdown/sec"
 msgstr "< 1 хв"
@@ -102,6 +102,12 @@ msgstr "НАЗАД"
 msgid "buyBundle/backGoto"
 msgstr "ДА ВЫБАРУ НАБОРАЎ"
 
+msgid "buyBundle/bundleTitle"
+msgid_plural "plural/buyBundle/bundleTitle"
+msgstr[0] "%(levelCount)s ЖЭТОН БУДАЎНІЦТВА"
+msgstr[1] "%(levelCount)s ЖЭТОНА БУДАЎНІЦТВА"
+msgstr[2] "%(levelCount)s ЖЭТОНАЎ БУДАЎНІЦТВА"
+
 msgid "buyBundle/controlBack"
 msgstr "Назад"
 
@@ -125,15 +131,6 @@ msgstr "КУПЛЯ НАБОРУ"
 
 msgid "buyBundle/title"
 msgstr "ЖЭТОНЫ БУДАЎНІЦТВА"
-
-msgid "buyBundle/titleLargeBundle"
-msgstr "15 ЖЭТОНАЎ БУДАЎНІЦТВА"
-
-msgid "buyBundle/titleMediumBundle"
-msgstr "9 ЖЭТОНАЎ БУДАЎНІЦТВА"
-
-msgid "buyBundle/titleSmallBundle"
-msgstr "3 ЖЭТОНЫ БУДАЎНІЦТВА"
 
 msgid "buyView/backButton/mainView"
 msgstr "У ЦЭХ"
@@ -459,31 +456,31 @@ msgid "mainView/quest/progress"
 msgstr "%(current)s %(par_open)s/ %(total)s%(par_close)s"
 
 msgid "mainView/quest/vehicleType/AT-SPG"
-msgstr "ПТ-САУ"
+msgstr "СТ-САУ"
 
 msgid "mainView/quest/vehicleType/SPG"
 msgstr "САУ"
 
 msgid "mainView/quest/vehicleType/heavyTank"
-msgstr "Тяжёлые танки"
+msgstr "Цяжкія танкі"
 
 msgid "mainView/quest/vehicleType/label"
 msgstr "На тэхніцы:"
 
 msgid "mainView/quest/vehicleType/level"
-msgstr "%(from)s уровня"
+msgstr "%(from)s узроўні"
 
 msgid "mainView/quest/vehicleType/levelsMultiple"
-msgstr "%(from)s уровней"
+msgstr "%(from)s узроўняў"
 
 msgid "mainView/quest/vehicleType/levelsRange"
 msgstr "%(from)s%(separator)s%(to)s"
 
 msgid "mainView/quest/vehicleType/lightTank"
-msgstr "Лёгкие танки"
+msgstr "Лёгкія танкі"
 
 msgid "mainView/quest/vehicleType/mediumTank"
-msgstr "Средние танки"
+msgstr "Сярэднія танкі"
 
 msgid "mainView/quests/title"
 msgstr "ЗАДАЧЫ ЗБОРАЧНАГА ЦЭХА"
@@ -516,61 +513,61 @@ msgid "mainView/title/step/1"
 msgstr "Знаёмства з ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Установка органов управления и системы пожаротушения"
+msgstr "Мантаж органаў кіравання і сістэмы гашэння пажару"
 
 msgid "mainView/title/step/11"
-msgstr "Доставка орудия"
+msgstr "Дастаўка гарматы"
 
 msgid "mainView/title/step/12"
-msgstr "Установка внутреннего оборудования башни"
+msgstr "Мантаж ўнутранага абсталявання вежы"
 
 msgid "mainView/title/step/13"
-msgstr "Установка орудия и башни"
+msgstr "Мантаж гарматы і вежы"
 
 msgid "mainView/title/step/14"
-msgstr "Установка ММГ снарядов"
+msgstr "Усталяванне ММГ снарадаў"
 
 msgid "mainView/title/step/15"
-msgstr "Установка ведущих колёс"
+msgstr "Мантаж вядучых колаў"
 
 msgid "mainView/title/step/16"
-msgstr "Установка поддерживающих катков"
+msgstr "Усталяванне падтрымных каткоў"
 
 msgid "mainView/title/step/17"
-msgstr "Протяжка гусеничных лент"
+msgstr "Працяжка тракавых пасаў"
 
 msgid "mainView/title/step/18"
-msgstr "Покраска"
+msgstr "Афарбоўка"
 
 msgid "mainView/title/step/19"
-msgstr "Установка навесного оборудования"
+msgstr "Мантаж навяснога абсталявання"
 
 msgid "mainView/title/step/2"
 msgstr "Габарыты машыны"
 
 msgid "mainView/title/step/20"
-msgstr "Выкатка машины"
+msgstr "Выкатка машыны"
 
 msgid "mainView/title/step/3"
-msgstr "Конструкция башни и орудия"
+msgstr "Канструкцыя вежы і гарматы"
 
 msgid "mainView/title/step/4"
-msgstr "Разнесение толщин брони"
+msgstr "Разнясенне таўшчынь брані"
 
 msgid "mainView/title/step/5"
-msgstr "Компоновочная схема"
+msgstr "Кампанавальная схема"
 
 msgid "mainView/title/step/6"
-msgstr "Закалка брони"
+msgstr "Загартоўка брані"
 
 msgid "mainView/title/step/7"
-msgstr "Установка двигателя"
+msgstr "Мантаж рухавіка"
 
 msgid "mainView/title/step/8"
-msgstr "Монтаж трансмиссии и приводов"
+msgstr "Мантаж трансмісіі і прыводаў"
 
 msgid "mainView/title/step/9"
-msgstr "Установка топливных баков и системы охлаждения"
+msgstr "Мантаж паліўных бакаў і сістэмы ахалоджвання"
 
 msgid "mainView/title/step/final"
 msgstr "Будаўніцтва завершана"
@@ -586,8 +583,8 @@ msgstr "Раздзел %(count)d: %(chapter_name)s будзе даступны %
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Бойцы! У вас есть возможность построить уникальную машину — тяжёлый премиум "
-"танк VIII уровня WZ-57-I. Событие начинается %(startDate)s."
+"Байцы! У вас ёсць магчымасць пабудаваць унікальную машыну — цяжкі прэміум "
+"танк VIII узроўню WZ-57-I. Падзея пачынаецца %(startDate)s."
 
 msgid "notifications/bundleOutTime"
 msgstr ""
@@ -774,9 +771,9 @@ msgstr "жэтоны будаўніцтва"
 
 msgid "tooltip/currency/gain/description"
 msgstr ""
-"Выконвайце задачы ў раздзелах, каб атрымліваць %(yellow_open)sжэтоны "
-"будаўніцтва%(yellow_close)s. Улічыце, што колькасць жэтонаў у кожным "
-"раздзеле абмежаваная."
+"Выконвайце задачы ў раздзелах, каб атрымліваць "
+"%(yellow_open)s%(token)s%(yellow_close)s. Улічыце, што колькасць жэтонаў у "
+"кожным раздзеле абмежаваная."
 
 msgid "tooltip/currency/gain/title"
 msgstr "Як атрымаць"
@@ -815,25 +812,25 @@ msgid "tooltip/quests/task/arcade"
 msgstr "Аркада"
 
 msgid "tooltip/quests/task/header"
-msgstr "Задача выполняется"
+msgstr "Задача выконваецца"
 
 msgid "tooltip/quests/task/separator"
 msgstr ", "
 
 msgid "tooltip/quests/task/subtitle/battleType"
 msgid_plural "battleType"
-msgstr[0] "В режиме:"
+msgstr[0] "У рэжыме:"
 msgstr[1] "У рэжымах:"
 msgstr[2] "У рэжымах:"
 
 msgid "tooltip/quests/task/subtitle/vehicleLevel"
 msgid_plural "vehicleLevel"
-msgstr[0] "На технике уровня:"
-msgstr[1] "На технике уровней:"
-msgstr[2] "На технике уровней:"
+msgstr[0] "На тэхніцы ўзроўню:"
+msgstr[1] "На тэхніцы ўзроўняў:"
+msgstr[2] "На тэхніцы ўзроўняў:"
 
 msgid "tooltip/quests/task/subtitle/vehicleType"
-msgstr "На технике типа:"
+msgstr "На тэхніцы тыпу:"
 
 msgid "tooltip/tab/progression/body"
 msgstr "Прагляд дасягнутага прагрэсу ў падзеі «Зборачны цэх»."
@@ -899,7 +896,7 @@ msgid "widget/countdown/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "widget/countdown/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "widget/countdown/sec"
 msgstr "< 1 хв"

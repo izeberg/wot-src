@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl209_ULAN/normal/lod2/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl209_ULAN/normal/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.710143 -0.377207 0.027827</min>
+		<max>0.620534 0.438472 4.408766</max>
+	</visibilityBox>
+</root>

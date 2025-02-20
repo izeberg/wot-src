@@ -60,7 +60,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013999 3.507000 0.000000 0.000000</Vector4>
+						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -116,14 +116,14 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000390 0.512853 -0.522978</groupOrigin>
+				<groupOrigin>0.001965 1.046038 -0.821743</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.523722 0.042999 -2.691408</min>
-		<max>1.524501 0.982708 1.645452</max>
+		<min>-1.532692 0.042999 -3.288937</min>
+		<max>1.536621 2.049078 1.645452</max>
 	</boundingBox>
-	<geometrySize>80034</geometrySize>
+	<geometrySize>178070</geometrySize>
 	<minUVDensity>0.001068</minUVDensity>
 </root>

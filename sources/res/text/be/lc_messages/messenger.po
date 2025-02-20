@@ -1739,6 +1739,14 @@ msgstr "ТАНКАВАЯ АКАДЭМІЯ"
 msgid "serviceChannelMessages/battleMatters/token"
 msgstr "Жэтон акадэміі"
 
+msgid "serviceChannelMessages/battlePass/capReset/header"
+msgstr "Обновлён еженедельный лимит очков Боевого пропуска"
+
+msgid "serviceChannelMessages/battlePass/capReset/text"
+msgstr ""
+"Накопление очков Боевого пропуска на всей технике VI-XI уровня началось заново.\n"
+"Лимит очков обновляется еженедельно. Успейте достигнуть лимита очков, чтобы получить награду."
+
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "Выкарыстаны неразмеркаваныя ачкі"
 
@@ -1751,13 +1759,13 @@ msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатнае абсталяванне на выбар"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
-msgstr "Дасягнуты ліміт ачкоў"
+msgstr "Достигнут еженедельный лимит очков Боевого пропуска"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/text"
 msgstr ""
-"Здабыта максімальная колькасць ачкоў на %(vehName)s.\n"
-"Узнагарода за дасягненне ліміту: %(bonusPoints)s.\n"
-"Каб далей здабываць ачкі, змяніце машыну."
+"На %(vehNameHighlight)s заработано максимальное количество очков, доступное в неделю.\n"
+"Получено очков в награду: %(bonusPoints)s\n"
+"Лимит очков и награда обновляются еженедельно. Возвращайтесь позже, чтобы продолжить зарабатывать очки на %(vehName)s."
 
 msgid "serviceChannelMessages/battlePass/styleChosen/header"
 msgstr "Віншуем!"
@@ -1981,13 +1989,13 @@ msgstr ""
 
 msgid "serviceChannelMessages/battleResults/personalMissions/3"
 msgstr ""
-"Поздравляем!\n"
-"За успешное выполнение личных боевых задач кампании «Новые горизонты» вам присвоены следующие награды"
+"Віншуем!\n"
+"За паспяховае выкананне асабістых баявых задач кампаніі «Новыя гарызонты» вам нададзены наступныя ўзнагароды"
 
 msgid "serviceChannelMessages/battleResults/personalMissions/multiple"
 msgstr ""
-"Поздравляем!\n"
-"За успешное выполнение личных боевых задач кампаний %(text)s вам присвоены следующие награды"
+"Віншуем!\n"
+"За паспяховае выкананне асабістых баявых задач кампаніі %(text)s вам нададзены наступныя ўзнагароды"
 
 msgid "serviceChannelMessages/battleResults/piggyBank"
 msgstr "У сховішча крэдытаў паступіла"
@@ -3007,8 +3015,8 @@ msgstr "Фінансавая аперацыя"
 
 msgid "serviceChannelMessages/newYearMandarinsConvert/text"
 msgstr ""
-"Обмен %(mandarinsCount)s шт. мандаринов успешно завершён.\n"
-"Получено жетонов: %(machineCount)s."
+"Абмен %(mandarinsCount)s шт. мандарынаў завершаны.\n"
+"Атрымана жэтонаў: %(machineCount)s."
 
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "У Жаўнерню"
@@ -3017,20 +3025,21 @@ msgid "serviceChannelMessages/notrecruitedTankman/removedTankmen"
 msgstr "Спісана танкістаў: %(count)s"
 
 msgid "serviceChannelMessages/offerTokenBonus/alternativeTitle"
-msgstr "награда на выбор"
+msgstr "узнагарода на выбар"
 
 msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Пастаўкі з тылу"
 
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
-msgstr "За досрочное прохождение аттестации вам присвоены следующие награды"
+msgstr ""
+"За датэрміновае праходжанне атэстацыі вам нададзены наступныя ўзнагароды"
 
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/rewardsWillBeReceived"
 msgstr ""
-"Все награды, положенные за выполнение этого этапа, будут начислены "
-"автоматически после выпуска машины."
+"Усе ўзнагароды, належныя за выкананне гэтага этапу, будуць налічаны "
+"аўтаматычна пасля выпуску машыны."
 
 msgid "serviceChannelMessages/personalReservesConverted"
 msgstr "Усе вашы асабістыя рэзервы канвертаваныя."
@@ -3099,7 +3108,7 @@ msgid "serviceChannelMessages/prebattle/finish/timeout"
 msgstr "Час чакання скончыўся"
 
 msgid "serviceChannelMessages/prebattle/finishedTime"
-msgstr "Скончана"
+msgstr "Завершана"
 
 msgid "serviceChannelMessages/prebattle/numberOfBattle"
 msgstr "(бітва %s)"
@@ -3615,9 +3624,6 @@ msgid "serviceChannelMessages/sysMsg/removeCustomizations"
 msgstr ""
 "З-за змены модуляў наступныя элементы выгляду машыны былі зняты з "
 "%(vehicle)s."
-
-msgid "serviceChannelMessages/sysMsg/titles/bobBattlesAvailable"
-msgstr "Бои Битвы блогеров доступны"
 
 msgid "serviceChannelMessages/sysMsg/titles/customization"
 msgstr "Змяненне выгляду машыны:"

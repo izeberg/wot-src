@@ -428,6 +428,9 @@ msgstr "Каэфіцыент павароту ў інертным рэжыме (
 msgid "mttv/CameraView/cameraLabelVerticalFov"
 msgstr "Вертыкальны FOV (у градусах)"
 
+msgid "mttv/CameraView/cameraLockRollCheckbox"
+msgstr "Лок крена свободной камеры"
+
 msgid "mttv/CameraView/cameraView"
 msgstr "Камера"
 
@@ -467,9 +470,6 @@ msgstr "Канфігурацыя"
 msgid "mttv/FrameEditView/addFrame"
 msgstr "Add Frame"
 
-msgid "mttv/FrameEditView/addInfo"
-msgstr "Add Info"
-
 msgid "mttv/FrameEditView/apply"
 msgstr "Apply"
 
@@ -487,6 +487,9 @@ msgstr "FOV"
 
 msgid "mttv/FrameEditView/frameEdit"
 msgstr "Frame Edit"
+
+msgid "mttv/FrameEditView/groupDeletion"
+msgstr "Delete group"
 
 msgid "mttv/FrameEditView/play"
 msgstr "Play"
@@ -706,6 +709,9 @@ msgstr "Налады"
 
 msgid "mttv/OptionsView/timeWarpShift"
 msgstr "Перамотванне пры націснутым Shift (сек.)"
+
+msgid "mttv/RecordsView/InterpolationStep"
+msgstr "шаг выборки интерполяции(кол-во фреймов в 1 с)"
 
 msgid "mttv/RecordsView/bezierControlTension"
 msgstr "Жорсткасць кантрольных пунктаў:"

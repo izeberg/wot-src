@@ -21,7 +21,7 @@ pass
 					<count>1</count>
 				</token>
 				<token>
-					<id>offer:pm3:expequipments:655</id>
+					<id>offer:pm3:expequipments_gift:655</id>
 					<expires>
 						01.02.2050 00:00
 						<!--BW_String-->
@@ -34,15 +34,7 @@ pass
 			<enabled>true</enabled>
 			<id>pm3_10_1_25_add</id>
 			<serverOnly>true</serverOnly>
-			<conditions>
-				<postBattle>
-					<results>
-						<key>originalXP</key>
-						<max>10</max>
-						<total/>
-					</results>
-				</postBattle>
-			</conditions>
+			<conditions/>
 			<scripts>
 LOG = globals().get(&apos;LOG&apos;)
 &quot;&quot;&quot;:type: typing.LOG_DEBUG_DEV&quot;&quot;&quot;
@@ -69,7 +61,7 @@ def onFinishBattle(eventType, eventData, quest, processor):
 
     result = eventData[&apos;avatarResults&apos;]
     topByExp = result[&apos;misc&apos;][&apos;total&apos;][&apos;xp&apos;]
-    topByFreeExp = result[&apos;misc&apos;][&apos;total&apos;][&apos;originalXP&apos;]
+    topByFreeExp = result[&apos;misc&apos;][&apos;total&apos;][&apos;xp&apos;]
     topByExpRes = topByExp &lt;= questProgress.getProgress(MAIN_PROGRESS_ID).getParam(&quot;desiredPosition&quot;)
     topByExpResAdv = topByFreeExp &lt;= questProgress.getProgress(ADD_PROGRESS_ID).getParam(&quot;desiredPosition&quot;)
 

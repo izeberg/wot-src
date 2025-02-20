@@ -21,6 +21,7 @@ class CosmicEventDynObjects(DynObjectsBase):
         self._collectLootPrefabs()
         self._collectVehiclePrefabs()
         self._collectArtifactPrefabs()
+        self._collectDebufPrefabs()
         self._collectOtherPrefabs()
         BigWorld.loadResourceListBG(list(self.__cachedPrefabs), makeCallbackWeak(self.__onResourcesLoaded))
         CGF.cacheGameObjects(list(self.__cachedPrefabs), False)
@@ -56,6 +57,10 @@ class CosmicEventDynObjects(DynObjectsBase):
         prefabs = cosmic_prefabs.Artifact.RANGE
         self.__cachedPrefabs.update(prefabs)
 
+    def _collectDebufPrefabs(self):
+        prefabs = cosmic_prefabs.Debuf.RANGE
+        self.__cachedPrefabs.update(prefabs)
+
     def _collectOtherPrefabs(self):
         prefabs = ('content/CGFPrefabs/cosmic_event/cosmic_event_ability_pickup_end.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_ability_pickup_start.prefab',
@@ -69,7 +74,7 @@ class CosmicEventDynObjects(DynObjectsBase):
                    'content/CGFPrefabs/cosmic_event/cosmic_event_respawn_protection.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_rocket_booster.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_shield.prefab',
-                   'content/CGFPrefabs/cosmic_event/cosmic_event_sniper_mode.prefab',
+                   'content/CGFPrefabs/cosmic_event/cosmic_event_wave.prefab', 'content/CGFPrefabs/cosmic_event/cosmic_event_sniper_mode.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_supernova.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_supernova_hint.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_teleport_in.prefab',

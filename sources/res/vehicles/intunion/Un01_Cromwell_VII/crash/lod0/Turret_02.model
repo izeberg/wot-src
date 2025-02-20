@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.096467 -0.000000 -1.223513</min>
+		<max>0.960396 1.110741 0.967457</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un01_Cromwell_VII/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un01_Cromwell_VII/crash/lod0/Turret_02</nodefullVisual>
+</root>

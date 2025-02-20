@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Color stripes</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/cosm_event/ability_wave.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>5.000000 5.000000 5.000000</value>
+				<inTangent>20.000000 20.000000 20.000000</inTangent>
+				<outTangent>15.000000 15.000000 15.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>20.000000 20.000000 20.000000</value>
+				<inTangent>15.000000 15.000000 15.000000</inTangent>
+				<outTangent>15.000000 15.000000 15.000000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.023529 0.098039 0.450980 0.050000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.117647 0.000000 0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.023529 0.156863 0.450980 0.300000</value>
+				<inTangent>-0.000000 0.117647 -0.000000 0.500000</inTangent>
+				<outTangent>0.000000 -0.252101 0.000000 0.428572</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.023529 0.098039 0.450980 0.400000</value>
+				<inTangent>-0.000000 -0.252101 -0.000000 0.428572</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.499998</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.023529 0.098039 0.450980 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.499998</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.894118</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.025000 0.200000 2.000000 0.000000</value>
+				<inTangent>0.000000 0.300000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.300000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.025000 0.500000 2.000000 0.000000</value>
+				<inTangent>-0.000000 0.300000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 0.300000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Refraction</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/cosm_event/ability_overcharge_refraction_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>5.000000 5.000000 5.000000</value>
+				<inTangent>20.000000 20.000000 20.000000</inTangent>
+				<outTangent>17.307690 0.000000 17.307690</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.866667</startTime>
+				<value>20.000000 5.000000 20.000000</value>
+				<inTangent>17.307690 -0.000000 17.307690</inTangent>
+				<outTangent>17.307690 -0.000000 17.307690</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>0.866667</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>distortion_UV_Speed_Amount</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.750000 0.000000 0.200000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.000000 0.750000 0.000000 0.200000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.499999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.866667</startTime>
+				<value>0.000000 0.750000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.499999</inTangent>
+				<outTangent>-0.000000 -0.900000 -0.000000 -0.200000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Color blur</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/cosm_event/overcharge_cyl_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>6.000000 1.000000 6.000000</value>
+				<inTangent>20.000000 20.000000 20.000000</inTangent>
+				<outTangent>20.357141 1.071429 20.357141</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.933333</startTime>
+				<value>25.000000 2.000000 25.000000</value>
+				<inTangent>20.357141 1.071429 20.357141</inTangent>
+				<outTangent>20.357141 1.071429 20.357141</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.023529 0.098039 0.450980 0.050000</value>
+				<inTangent>0.235294 0.627451 2.823529 2.500000</inTangent>
+				<outTangent>0.235294 0.627451 2.823529 2.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>0.047059 0.160784 0.733333 0.300000</value>
+				<inTangent>0.096886 0.258362 1.162630 0.985294</inTangent>
+				<outTangent>0.096886 0.258362 1.162630 0.985294</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.023529 0.098039 0.450980 0.000000</value>
+				<inTangent>-0.041522 -0.110727 -0.498270 -0.529411</inTangent>
+				<outTangent>-0.041522 -0.110727 -0.498270 -0.529411</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

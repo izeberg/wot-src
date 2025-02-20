@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R223_T_54B_1958/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.635000 -0.826243 -3.330770</min>
+		<max>1.633000 0.594862 2.954710</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R223_T_54B_1958/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>

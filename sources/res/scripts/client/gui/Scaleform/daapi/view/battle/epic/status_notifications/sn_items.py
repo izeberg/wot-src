@@ -187,10 +187,10 @@ class ResupplyTimerSN(sn_items.TimerSN):
         ctrl = self._sessionProvider.dynamic.progressTimer
         if ctrl:
             ctrl.onTimerUpdated += self.__onTimerUpdated
-            ctrl.onVehicleEntered += self.__onVehicleEntered
+            ctrl.onVehicleEntered += self._onVehicleEntered
             ctrl.onVehicleLeft += self.__onVehicleLeft
             ctrl.onCircleStatusChanged += self.__onCircleStatusChanged
-            ctrl.onProgressUpdate += self.__onProgressUpdate
+            ctrl.onProgressUpdate += self._onProgressUpdate
 
     def getViewTypeID(self):
         return BATTLE_NOTIFICATIONS_TIMER_TYPES.RESUPPLY
@@ -203,10 +203,10 @@ class ResupplyTimerSN(sn_items.TimerSN):
         ctrl = self._sessionProvider.dynamic.progressTimer
         if ctrl:
             ctrl.onTimerUpdated -= self.__onTimerUpdated
-            ctrl.onVehicleEntered -= self.__onVehicleEntered
+            ctrl.onVehicleEntered -= self._onVehicleEntered
             ctrl.onVehicleLeft -= self.__onVehicleLeft
             ctrl.onCircleStatusChanged -= self.__onCircleStatusChanged
-            ctrl.onProgressUpdate -= self.__onProgressUpdate
+            ctrl.onProgressUpdate -= self._onProgressUpdate
         self.__curPointIdx = -1
 
     def _update(self, value):
@@ -215,7 +215,15 @@ class ResupplyTimerSN(sn_items.TimerSN):
             return
         self._setVisible(isVisible)
 
-    def __onVehicleEntered(self, circleType, pointIdx, state):
+    def _applyText(self, title='', additionalInfoText=None):
+        self._vo['title'] = title
+        if additionalInfoText:
+            self._vo['additionalInfo'] = additionalInfoText
+
+    def _onProgressUpdate(self, circleType, _, value):
+        pass
+
+    def _onVehicleEntered(self, circleType, pointIdx, state):
         if circleType is not PROGRESS_CIRCLE_TYPE.RESUPPLY_CIRCLE:
             return
         self.__curPointIdx = pointIdx
@@ -242,6 +250,7 @@ class ResupplyTimerSN(sn_items.TimerSN):
             return
         self._vo['additionalState'] = state
         if self._isVisible:
+            self._applyText()
             self._sendUpdate()
 
     def __onTimerUpdated(self, circleType, pointIdx, timeLeft):
@@ -250,16 +259,6 @@ class ResupplyTimerSN(sn_items.TimerSN):
         if pointIdx != self.__curPointIdx:
             return
         self._updateTimeParams(timeLeft, 0)
-        if self._isVisible:
-            self._sendUpdate()
-
-    def __onProgressUpdate(self, circleType, _, value):
-        if circleType is not PROGRESS_CIRCLE_TYPE.RESUPPLY_CIRCLE:
-            return
-        valueStr = str(value)
-        if 'additionalInfo' in self._vo and self._vo['additionalInfo'] == valueStr:
-            return
-        self._vo['additionalInfo'] = valueStr
         if self._isVisible:
             self._sendUpdate()
 

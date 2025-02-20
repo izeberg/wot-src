@@ -43,16 +43,16 @@ msgid "alertMessage/standaloneNotSet"
 msgstr "Рэжым недаступны на серверы %(serverName)s"
 
 msgid "alertMessage/timeLeft/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s д."
 
 msgid "alertMessage/timeLeft/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "alertMessage/timeLeft/lessMin"
-msgstr "1 хв"
+msgstr "1 мин."
 
 msgid "alertMessage/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "alertMessage/undefined"
 msgstr "?empty?"
@@ -492,10 +492,10 @@ msgid "introPage/timeLeft/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "introPage/timeLeft/lessMin"
-msgstr "1 хв"
+msgstr "1 мин."
 
 msgid "introPage/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "notification/rankEarned"
 msgstr "ранг атрыманы"
@@ -562,16 +562,16 @@ msgstr ""
 "%(leftSeasonName)s сезон завяршыўся."
 
 msgid "primeTimes/serverTooltip/timeLeft/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s д."
 
 msgid "primeTimes/serverTooltip/timeLeft/hours"
-msgstr "%(hour)s гадз"
+msgstr "%(hour)s ч."
 
 msgid "primeTimes/serverTooltip/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "primeTimes/serverTooltip/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "primeTimes/serverTooltip/undefined"
 msgstr "?empty?"
@@ -717,16 +717,16 @@ msgid "questsTooltip/available"
 msgstr "Да канца сезона %(timeDelta)s"
 
 msgid "questsTooltip/available/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s д."
 
 msgid "questsTooltip/available/hours"
-msgstr "%(hour)s гадз"
+msgstr "%(hour)s ч."
 
 msgid "questsTooltip/available/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "questsTooltip/available/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "questsTooltip/bottom"
 msgstr "Яшчэ задач: %(number)d"
@@ -837,16 +837,16 @@ msgstr ""
 "Часова недаступна з тэхнічных прычын. Мы ўжо займаемся вырашэннем праблемы."
 
 msgid "rankedBattleMainView/date/days"
-msgstr "Да завяршэння %(day)s сут"
+msgstr "Да завяршэння %(days)s сут"
 
 msgid "rankedBattleMainView/date/hours"
-msgstr "Да завяршэння %(hour)s гадз"
+msgstr "Да завяршэння %(hours)s гадз"
 
 msgid "rankedBattleMainView/date/lessMin"
 msgstr "Да завяршэння застаецца менш за хвіліну"
 
 msgid "rankedBattleMainView/date/min"
-msgstr "Да завяршэння %(min)s хв"
+msgstr "Да завяршэння %(minutes)s хв"
 
 msgid "rankedBattleMainView/date/period"
 msgstr "%(start)s — %(finish)s"
@@ -1539,16 +1539,16 @@ msgid "statistic/vehicleRank"
 msgstr "Рангавыя жэтоны здабыты"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s д."
 
 msgid "status/timeLeft/hours"
-msgstr "%(hour)s гадз"
+msgstr "%(hour)s ч."
 
 msgid "status/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "tooltip/closeButton/body"
 msgstr "Узнагарода будзе налічана аўтаматычна."

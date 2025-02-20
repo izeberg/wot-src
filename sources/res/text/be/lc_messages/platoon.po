@@ -132,7 +132,7 @@ msgid "headerButton/searching"
 msgstr "Шуканне..."
 
 msgid "headerButton/squad"
-msgstr "Взводная игра"
+msgstr "Звязовая гульня"
 
 msgid "headerButton/tooltips/battleRoyaleSquad/body"
 msgstr ""
@@ -140,14 +140,6 @@ msgstr ""
 "паляўнічы»."
 
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
-msgstr "Звяз"
-
-msgid "headerButton/tooltips/bobSquad/body"
-msgstr ""
-"Создание формирования из 2-3 игроков для совместной игры в боях события "
-"«Битва блогеров»."
-
-msgid "headerButton/tooltips/bobSquad/header"
 msgstr "Звяз"
 
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
@@ -165,6 +157,14 @@ msgstr ""
 
 msgid "headerButton/tooltips/comp7Squad/header"
 msgstr "Звяз"
+
+msgid "headerButton/tooltips/cosmicSquad/body"
+msgstr ""
+"Бои в режиме «На Марс: хаос» ведутся в свободном формате. Создание взводов "
+"невозможно."
+
+msgid "headerButton/tooltips/cosmicSquad/header"
+msgstr "Взводы недоступны"
 
 msgid "headerButton/tooltips/dominationSquad/body"
 msgstr ""
@@ -295,9 +295,6 @@ msgstr "Штраф да досведу з-за памылковага склад
 
 msgid "members/header/battle_royal"
 msgstr ": Сталёвы паляўнічы"
-
-msgid "members/header/bob"
-msgstr ": Битва блогеров"
 
 msgid "members/header/comp7"
 msgstr ": «Націск»"

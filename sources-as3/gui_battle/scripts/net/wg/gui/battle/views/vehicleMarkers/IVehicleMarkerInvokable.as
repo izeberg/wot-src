@@ -37,5 +37,9 @@ package net.wg.gui.battle.views.vehicleMarkers
       function updateStatusEffectTimer(param1:int, param2:Number, param3:Boolean = false) : void;
       
       function updateTimer(param1:String) : void;
+      
+      function showDetectedByPyrometer(param1:Boolean = false, param2:int = 5000) : void;
+      
+      function hideDetectedByPyrometer() : void;
    }
 }

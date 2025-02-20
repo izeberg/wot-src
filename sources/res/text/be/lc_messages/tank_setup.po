@@ -306,7 +306,7 @@ msgstr "настаўленне"
 
 msgid "dialogs/confirm/item/demountPairModification"
 msgstr ""
-"При проведении этой парной модернизации альтернативная будет отменена."
+"Пры правядзенні гэтай парнай мадэрнізацыі альтэрнатыўная будзе скасавана."
 
 msgid "dialogs/confirm/item/equipment"
 msgstr "рыштунак"
@@ -318,7 +318,7 @@ msgid "dialogs/confirm/item/optionalDevice"
 msgstr "абсталяванне"
 
 msgid "dialogs/confirm/item/postProgressionPairModification"
-msgstr "парную модернизацию"
+msgstr "парную мадэрнізацыю"
 
 msgid "dialogs/confirm/items/battleAbility"
 msgstr "баявыя рэзервы"
@@ -1030,7 +1030,7 @@ msgstr ""
 "экіпажа"
 
 msgid "kpi/bonus/negative/temperatureDamageFactor"
-msgstr "Модификатор среднего урона"
+msgstr "Мадыфікатар сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/negative/vehPenaltyForDamageEngineAndCombat"
 msgstr "ад штрафу за пашкоджаныя боеўкладку і рухавік"
@@ -1084,7 +1084,7 @@ msgid "kpi/bonus/negative/vehicleEnginePower"
 msgstr "ад магутнасці рухавіка"
 
 msgid "kpi/bonus/negative/vehicleFinalDispersion"
-msgstr "от размера круга сведения"
+msgstr "ад памеру круга навядзення"
 
 msgid "kpi/bonus/negative/vehicleFireChance"
 msgstr "ад імавернасці ўзгарання рухавіка"
@@ -1102,6 +1102,9 @@ msgstr "ад хуткасці навядзення"
 
 msgid "kpi/bonus/negative/vehicleGunAndGunClipCooldown"
 msgstr "ад хуткасці перанабівання"
+
+msgid "kpi/bonus/negative/vehicleGunDamage"
+msgstr "от среднего урона"
 
 msgid "kpi/bonus/negative/vehicleGunKillReloadTime"
 msgstr "ад перанабівання гарматы"
@@ -1283,19 +1286,19 @@ msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "да негатыўнага эфекту аглушэння"
 
 msgid "kpi/bonus/positive/temperatureCoolingDelay"
-msgstr "Задержка охлаждения"
+msgstr "Затрымка ахаладжэння"
 
-msgid "kpi/bonus/positive/temperatureCoolingPerSec"
-msgstr "Время охлаждения"
+msgid "kpi/bonus/positive/temperatureCoolingTime"
+msgstr "Час ахаладжэння"
 
 msgid "kpi/bonus/positive/temperatureDamageFactor"
-msgstr "Модификатор среднего урона"
+msgstr "Мадыфікатар сярэдніх пашкоджанняў"
 
-msgid "kpi/bonus/positive/temperatureHeatingPerSec"
-msgstr "Время нагревания"
+msgid "kpi/bonus/positive/temperatureHeatingTime"
+msgstr "Час награвання"
 
 msgid "kpi/bonus/positive/temperatureStatesCount"
-msgstr "Термические стадии орудия"
+msgstr "Тэрмічныя стадыі гарматы"
 
 msgid "kpi/bonus/positive/vehPenaltyForDamageEngineAndCombat"
 msgstr "да штрафу за пашкоджаныя боеўкладку і рухавік"
@@ -1367,6 +1370,9 @@ msgstr "да хуткасці навядзення"
 
 msgid "kpi/bonus/positive/vehicleGunAndGunClipCooldown"
 msgstr "ад хуткасці перанабівання"
+
+msgid "kpi/bonus/positive/vehicleGunDamage"
+msgstr "к среднему урону"
 
 msgid "kpi/bonus/positive/vehicleGunKillReloadTime"
 msgstr "да перанабівання гарматы"
@@ -1547,7 +1553,7 @@ msgid "kpi/bonus/ttc/negative/vehicleEnginePower"
 msgstr "ад магутнасці рухавіка"
 
 msgid "kpi/bonus/ttc/negative/vehicleFinalDispersion"
-msgstr "от размера круга сведения"
+msgstr "ад памеру круга навядзення"
 
 msgid "kpi/bonus/ttc/negative/vehicleFireChance"
 msgstr "ад імавернасці ўзгарання рухавіка"
@@ -1863,22 +1869,22 @@ msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
 msgid "kpi/title/limitsForGunBoost"
-msgstr "Количество учитываемых попаданий (по количеству / по времени)"
+msgstr "Колькасць улічаных траплянняў (паводле колькасці / часу)"
 
 msgid "kpi/title/temperatureCoolingDelay"
-msgstr "Задержка охлаждения (с)"
+msgstr "Затрымка ахаладжэння (с)"
 
-msgid "kpi/title/temperatureCoolingPerSec"
-msgstr "Время охлаждения (с)"
+msgid "kpi/title/temperatureCoolingTime"
+msgstr "Час ахаладжэння (с)"
 
 msgid "kpi/title/temperatureDamageFactor"
-msgstr "Модификатор среднего урона"
+msgstr "Мадыфікатар сярэдніх пашкоджанняў"
 
-msgid "kpi/title/temperatureHeatingPerSec"
-msgstr "Время нагревания (с)"
+msgid "kpi/title/temperatureHeatingTime"
+msgstr "Час награвання (с)"
 
 msgid "kpi/title/temperatureStatesCount"
-msgstr "Термические стадии орудия"
+msgstr "Тэрмічныя стадыі гарматы"
 
 msgid "kpi/title/vehicleGunAndGunClipCooldown"
 msgstr "Бонус да перанабівання (поўнае/паміж)"

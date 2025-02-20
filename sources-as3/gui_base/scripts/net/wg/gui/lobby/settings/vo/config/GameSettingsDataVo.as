@@ -108,6 +108,12 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var showArtyHitOnMap:SettingsControlProp = null;
       
+      public var showThermalVisionSectorOnMap:SettingsControlProp = null;
+      
+      public var disableThermalVisionEffect:SettingsControlProp = null;
+      
+      public var disableThermalVisionSectorEffect:SettingsControlProp = null;
+      
       public var showDamageIcon:SettingsControlProp = null;
       
       public var enableSpeedometer:SettingsControlProp = null;
@@ -199,6 +205,9 @@ package net.wg.gui.lobby.settings.vo.config
             "showVectorOnMap":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "showSectorOnMap":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "showArtyHitOnMap":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "showThermalVisionSectorOnMap":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "disableThermalVisionEffect":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "disableThermalVisionSectorEffect":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "showDamageIcon":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableSpeedometer":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableRepairTimer":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
@@ -306,6 +315,12 @@ package net.wg.gui.lobby.settings.vo.config
          this.showSectorOnMap = null;
          this.showArtyHitOnMap.dispose();
          this.showArtyHitOnMap = null;
+         this.showThermalVisionSectorOnMap.dispose();
+         this.showThermalVisionSectorOnMap = null;
+         this.disableThermalVisionEffect.dispose();
+         this.disableThermalVisionEffect = null;
+         this.disableThermalVisionSectorEffect.dispose();
+         this.disableThermalVisionSectorEffect = null;
          this.showDamageIcon.dispose();
          this.showDamageIcon = null;
          this.enableSpeedometer.dispose();

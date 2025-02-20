@@ -2076,6 +2076,12 @@ package
       public static const PLAYER_ERRORS_EQUIPMENT_ABILITY_COOLDOWN:String = "#ingame_gui:player_errors/equipment/ability/cooldown";
       
       public static const PLAYER_ERRORS_EQUIPMENT_ABILITY_ALREADYACTIVATED:String = "#ingame_gui:player_errors/equipment/ability/alreadyActivated";
+      
+      public static const PLAYER_ERRORS_THERMALVISION_DISABLED:String = "#ingame_gui:player_errors/thermalVision/disabled";
+      
+      public static const PLAYER_ERRORS_THERMALVISION_COOLDOWN:String = "#ingame_gui:player_errors/thermalVision/cooldown";
+      
+      public static const PLAYER_ERRORS_THERMALVISION_ALREADYACTIVATED:String = "#ingame_gui:player_errors/thermalVision/alreadyActivated";
        
       
       public function INGAME_GUI()

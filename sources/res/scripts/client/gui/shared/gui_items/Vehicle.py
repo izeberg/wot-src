@@ -151,7 +151,6 @@ class VEHICLE_TAGS(CONST_CONTAINER):
     SECRET = 'secret'
     SECRET_EXTENDED = 'secretExtended'
     SPECIAL = 'special'
-    BOB = 'bob'
     OBSERVER = 'observer'
     DISABLED_IN_ROAMING = 'disabledInRoaming'
     EVENT = 'event_battles'
@@ -293,10 +292,8 @@ class Vehicle(FittingItem):
     __paragonsController = dependency.descriptor(IParagonsController)
     tradeInCtrl = dependency.descriptor(ITradeInController)
 
-    def __init__(self, strCompactDescr=None, inventoryID=-1, typeCompDescr=None, proxy=None, extData=None, invData=None, battleModifiers=None):
+    def __init__(self, strCompactDescr=None, inventoryID=-1, typeCompDescr=None, proxy=None, extData=None, invData=None):
         self.__postProgressionCtrl.processVehExtData(getVehicleType(typeCompDescr or strCompactDescr), extData)
-        if battleModifiers:
-            extData['battleModifiers'] = battleModifiers
         if strCompactDescr is not None:
             vehDescr = vehicles.VehicleDescr(compactDescr=strCompactDescr, extData=extData)
         else:
@@ -1477,10 +1474,6 @@ class Vehicle(FittingItem):
         return checkForTags(self.tags, VEHICLE_TAGS.EVENT)
 
     @property
-    def isLowTierEvent(self):
-        return checkForTags(self.tags, VEHICLE_TAGS.LOW_TIER_EVENT)
-
-    @property
     def isOnlyForEpicBattles(self):
         return checkForTags(self.tags, VEHICLE_TAGS.EPIC_BATTLES)
 
@@ -1511,10 +1504,6 @@ class Vehicle(FittingItem):
     @property
     def isOnlyForComp7Battles(self):
         return checkForTags(self.tags, VEHICLE_TAGS.COMP7_BATTLES)
-
-    @property
-    def isOnlyForBob(self):
-        return checkForTags(self.tags, VEHICLE_TAGS.BOB)
 
     @property
     def isTelecom(self):

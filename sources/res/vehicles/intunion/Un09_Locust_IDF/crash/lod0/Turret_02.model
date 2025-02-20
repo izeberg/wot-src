@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.767722 -0.000004 -0.939758</min>
+		<max>0.767723 0.845637 0.692205</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un09_Locust_IDF/crash/lod0/Turret_02</nodefullVisual>
+	<parent>vehicles/intunion/Un09_Locust_IDF/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+</root>

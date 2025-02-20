@@ -148,7 +148,7 @@ msgid "chat_example/negative"
 msgstr "Не!"
 
 msgid "chat_example/overheat_cant_shoot"
-msgstr "Орудие перегрето! Не могу стрелять еще <Время остывания> с."
+msgstr "Орудие перегрето! Не могу стрелять еще <Время охлаждения> с."
 
 msgid "chat_example/positive"
 msgstr "Так!"
@@ -288,7 +288,7 @@ msgid "chat_shortcuts/negative"
 msgstr "Не!"
 
 msgid "chat_shortcuts/overheat_cant_shoot"
-msgstr "Орудие перегрето! Не могу стрелять еще %(floatArg1)d с."
+msgstr "Гармата перагрэта! Не магу страляць яшчэ %(floatArg1)d с."
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s, так!"
@@ -953,13 +953,13 @@ msgid "player_errors/cant_shoot/gun_damaged"
 msgstr "Страляць немагчыма: гармата пашкоджана."
 
 msgid "player_errors/cant_shoot/gun_locked"
-msgstr "Стрельба невозможна."
+msgstr "Стрельба невозможна"
 
 msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "Стрельба невозможна: орудие перегрето."
+msgstr "Стрельба невозможна: орудие перегрето"
 
 msgid "player_errors/cant_shoot/gun_reload"
-msgstr "Орудие перезаряжается."
+msgstr "Орудие перезаряжается"
 
 msgid "player_errors/cant_shoot/no_ammo"
 msgstr "Страляць немагчыма: няма снарадаў."
@@ -971,10 +971,10 @@ msgid "player_errors/cant_shoot/vehicle_destroyed"
 msgstr "Страляць немагчыма: машына знішчана."
 
 msgid "player_errors/cant_switch/assault_spg/camera_can_not_spawn"
-msgstr "Невозможно перейти в прицел в данной точке."
+msgstr "Невозможно перейти в прицел в данной точке"
 
 msgid "player_errors/cant_switch/change_shell/gun_overheated"
-msgstr "Орудие перегрето. Смена снарядов невозможна."
+msgstr "Гармата перагрэтая! Змена снарадаў немагчымая."
 
 msgid "player_errors/cant_switch/engine_destroyed"
 msgstr "Пераключыць рэжым немагчыма: рухавік выведзены са строю."
@@ -1017,6 +1017,15 @@ msgstr "Усе прылады ў добрым стане і не патрабу�
 
 msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s] у добрым стане і не патрабуе рамонту."
+
+msgid "player_errors/thermalVision/alreadyActivated"
+msgstr "Пирометр уже активирован."
+
+msgid "player_errors/thermalVision/cooldown"
+msgstr "Пирометр недоступен: прибор на перезарядке."
+
+msgid "player_errors/thermalVision/disabled"
+msgstr "Пирометр недоступен."
 
 msgid "player_messages/ALLY_HIT"
 msgstr "Траплянне ў хаўрусніка %(entity)s!"
@@ -2769,7 +2778,7 @@ msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"
 
 msgid "shells_kinds/params/flameMaxDistance"
-msgstr "Дальность огнеметания: %(value)s м"
+msgstr "Далёкасць вогнемятання: %(value)s м"
 
 msgid "shells_kinds/params/piercingPower"
 msgstr "Сярэдняя бронепрабівальнасць: %(value)s мм"

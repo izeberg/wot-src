@@ -199,6 +199,8 @@ package net.wg.data.constants.generated
       
       public static const CZECH_CZ00_COSM_GRAVIZAPA:String = "czech-cz00_cosm_gravizapa";
       
+      public static const CZECH_CZ00_COSM_PEPELAC:String = "czech-Cz00_COSM_Pepelac";
+      
       public static const CZECH_CZ01_SKODA_T40:String = "czech-Cz01_Skoda_T40";
       
       public static const CZECH_CZ02_TVP_T50:String = "czech-Cz02_TVP_T50";
@@ -244,6 +246,8 @@ package net.wg.data.constants.generated
       public static const CZECH_CZ21_TST:String = "czech-Cz21_TST";
       
       public static const CZECH_CZ29_PZW_39:String = "czech-Cz29_Pzw_39";
+      
+      public static const CZECH_CZ30_TBT:String = "czech-Cz30_TBT";
       
       public static const CZECH_CZ31_TATRA_T_III:String = "czech-Cz31_Tatra_T_III";
       
@@ -667,6 +671,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G171_E77:String = "germany-G171_E77";
       
+      public static const GERMANY_G171_E77_02:String = "germany-G171_E77_02";
+      
       public static const GERMANY_G18_JAGD_PANTHER:String = "germany-G18_JagdPanther";
       
       public static const GERMANY_G19_WESPE:String = "germany-G19_Wespe";
@@ -921,6 +927,32 @@ package net.wg.data.constants.generated
       
       public static const HIT_WHEEL_BLOCKED:String = "hit_wheel_blocked";
       
+      public static const INTUNION_UN01_CROMWELL_VII:String = "intunion-Un01_Cromwell_VII";
+      
+      public static const INTUNION_UN02_MERKAVA_LP:String = "intunion-Un02_Merkava_LP";
+      
+      public static const INTUNION_UN03_DEGEM_YUD:String = "intunion-Un03_Degem_Yud";
+      
+      public static const INTUNION_UN04_VICKERS_MBT_EXP:String = "intunion-Un04_Vickers_MBT_EXP";
+      
+      public static const INTUNION_UN05_SHOT_KAL_ALEF:String = "intunion-Un05_Shot_Kal_Alef";
+      
+      public static const INTUNION_UN06_M47_ROMACH:String = "intunion-Un06_M47_Romach";
+      
+      public static const INTUNION_UN07_RENAULT_R35:String = "intunion-Un07_Renault_R35";
+      
+      public static const INTUNION_UN08_HOTCHKISS_H_39_IDF:String = "intunion-Un08_Hotchkiss_H_39_IDF";
+      
+      public static const INTUNION_UN09_LOCUST_IDF:String = "intunion-Un09_Locust_IDF";
+      
+      public static const INTUNION_UN10_SHERMAN_KRUPP_IDF:String = "intunion-Un10_Sherman_Krupp_IDF";
+      
+      public static const INTUNION_UN11_SHERMAN_M3_IDF:String = "intunion-Un11_Sherman_M3_IDF";
+      
+      public static const INTUNION_UN13_T_54:String = "intunion-Un13_T-54";
+      
+      public static const INTUNION_UN14_T54_D:String = "intunion-Un14_T54D";
+      
       public static const ITALY_IT03_M15_42:String = "italy-It03_M15_42";
       
       public static const ITALY_IT04_FIAT_3000:String = "italy-It04_Fiat_3000";
@@ -1146,6 +1178,8 @@ package net.wg.data.constants.generated
       public static const POLAND_PL19_CS_52_LIS:String = "poland-Pl19_CS_52_LIS";
       
       public static const POLAND_PL20_CS_44:String = "poland-Pl20_CS_44";
+      
+      public static const POLAND_PL209_ULAN:String = "poland-Pl209_ULAN";
       
       public static const POLAND_PL21_CS_63:String = "poland-Pl21_CS_63";
       
@@ -1431,14 +1465,6 @@ package net.wg.data.constants.generated
       
       public static const SM_POINT_RECON_WHITE:String = "sm_pointRecon_white";
       
-      public static const SM_PYROMETER_GREEN:String = "sm_pyrometer_green";
-      
-      public static const SM_PYROMETER_PURPLE:String = "sm_pyrometer_purple";
-      
-      public static const SM_PYROMETER_RED:String = "sm_pyrometer_red";
-      
-      public static const SM_PYROMETER_WHITE:String = "sm_pyrometer_white";
-      
       public static const SM_RISKY_ATTACK_GREEN:String = "sm_riskyAttack_green";
       
       public static const SM_RISKY_ATTACK_PURPLE:String = "sm_riskyAttack_purple";
@@ -1470,6 +1496,14 @@ package net.wg.data.constants.generated
       public static const SM_SURE_SHOT_RED:String = "sm_sureShot_red";
       
       public static const SM_SURE_SHOT_WHITE:String = "sm_sureShot_white";
+      
+      public static const SM_THERMAL_GREEN:String = "sm_thermal_green";
+      
+      public static const SM_THERMAL_PURPLE:String = "sm_thermal_purple";
+      
+      public static const SM_THERMAL_RED:String = "sm_thermal_red";
+      
+      public static const SM_THERMAL_WHITE:String = "sm_thermal_white";
       
       public static const SM_WAVE_GREEN:String = "sm_wave_green";
       
@@ -2219,6 +2253,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R1012_VICKERS_MBT_EXP_T:String = "ussr-R1012_Vickers_MBT_EXP_T";
       
+      public static const USSR_R1013_IS_3_T:String = "ussr-R1013_IS_3_T";
+      
       public static const USSR_R104_OBJECT_430_II:String = "ussr-R104_Object_430_II";
       
       public static const USSR_R105_BT_7_A:String = "ussr-R105_BT_7A";
@@ -2495,11 +2531,15 @@ package net.wg.data.constants.generated
       
       public static const USSR_R22_T_46:String = "ussr-R22_T-46";
       
+      public static const USSR_R223_T_54_B_1958:String = "ussr-R223_T_54B_1958";
+      
       public static const USSR_R23_T_43:String = "ussr-R23_T-43";
       
       public static const USSR_R23_T_43_FL:String = "ussr-R23_T-43_FL";
       
       public static const USSR_R23_T_43_MAPS_TRAINING_PLAYER_MT_2:String = "ussr-R23_T-43_MapsTraining_Player_MT_2";
+      
+      public static const USSR_R230_MAUS:String = "ussr-R230_Maus";
       
       public static const USSR_R24_SU_76:String = "ussr-R24_SU-76";
       

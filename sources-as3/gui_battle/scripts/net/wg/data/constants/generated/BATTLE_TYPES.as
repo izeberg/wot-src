@@ -62,6 +62,8 @@ package net.wg.data.constants.generated
       public static const EPIC_BATTLE:String = "epicbattle";
       
       public static const COMP7:String = "comp7";
+      
+      public static const DOMINATION3:String = "domination3";
        
       
       public function BATTLE_TYPES()

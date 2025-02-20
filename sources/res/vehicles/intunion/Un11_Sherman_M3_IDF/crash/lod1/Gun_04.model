@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un11_Sherman_M3_IDF/crash/lod1/Gun_04</nodefullVisual>
+	<parent>vehicles/intunion/Un11_Sherman_M3_IDF/crash/lod2/Gun_04</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.514093 -0.398800 -1.094927</min>
+		<max>0.514590 0.272193 1.604271</max>
+	</visibilityBox>
+</root>

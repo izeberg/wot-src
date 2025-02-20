@@ -9,10 +9,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "mode/cosmic_event/description"
-msgstr "Отправляйтесь в экспедицию за&nbsp;космическим&nbsp;посланием"
+msgstr ""
+"Отправляйтесь в космос\n"
+"за научным прорывом"
 
 msgid "mode/cosmic_event/notStarted"
-msgstr "Бои временно недоступны"
+msgstr "Режим недоступен"
 
 msgid "mode/cosmic_event/primeTime"
 msgstr "----"
@@ -23,7 +25,18 @@ msgstr ""
 "%(current) / %(total)"
 
 msgid "mode/cosmic_event/title"
-msgstr "На Марс!"
+msgstr "На Марс: хаос"
+
+msgid "reward/equipCoin/name"
+msgstr "Компоненты"
+
+msgid "reward/lootbox/description"
+msgstr ""
+"Продвигаясь по прогрессии, вы будете получать контейнеры с тематическим "
+"содержимым."
+
+msgid "reward/lootbox/name"
+msgstr "Контейнеры"
 
 msgid "reward/prize/description"
 msgstr ""
@@ -40,3 +53,9 @@ msgstr ""
 
 msgid "reward/style2D/name"
 msgstr "2D-стиль"
+
+msgid "reward/tankmen/description"
+msgstr "При прохождении прогрессии вас ждут тематические члены экипажа."
+
+msgid "reward/tankmen/name"
+msgstr "Космонавты"

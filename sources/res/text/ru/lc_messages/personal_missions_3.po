@@ -128,6 +128,9 @@ msgstr "Прогресс: %(from)s / %(to)s"
 msgid "QuestView/conditionProgress/short"
 msgstr "%(from)s / %(to)s"
 
+msgid "QuestView/content/btn/chooseReward"
+msgstr "Выбрать награду"
+
 msgid "QuestView/infoText/default"
 msgstr "Задача выполняется на технике %(value)s уровня"
 
@@ -139,6 +142,18 @@ msgstr "Приступить к выполнению"
 
 msgid "QuestView/orQuest"
 msgstr "ИЛИ"
+
+msgid "QuestView/pauseButton/name/pause"
+msgstr "Пауза"
+
+msgid "QuestView/pauseButton/name/resume"
+msgstr "Возобновить"
+
+msgid "QuestView/pauseButton/tooltip/body/pause"
+msgstr "Нажмите, чтобы поставить прогресс выполнения задачи на паузу."
+
+msgid "QuestView/pauseButton/tooltip/body/resume"
+msgstr "Нажмите, чтобы продолжить выполнение задачи."
 
 msgid "QuestView/questTitle/available"
 msgstr "Основное условие"
@@ -204,6 +219,15 @@ msgstr ""
 "Условия нужно выполнять в каждом бою серии подряд. Неудача в одном бою "
 "прервёт серию, и нужно будет начинать заново."
 
+msgid "QuestView/resetButton/name"
+msgstr "Сбросить"
+
+msgid "QuestView/resetButton/tooltip/body/disabled"
+msgstr "Нельзя сбросить задачу с отсутствующим прогрессом её выполнения."
+
+msgid "QuestView/resetButton/tooltip/body/enabled"
+msgstr "Нажмите, чтобы сбросить весь текущий прогресс по задаче."
+
 msgid "QuestView/subtitle/available"
 msgstr "Задача доступна для выполнения на технике %(value)s уровня"
 
@@ -224,6 +248,9 @@ msgstr "Основное условие выполнено: задача вып�
 
 msgid "QuestView/subtitle/no_tech"
 msgstr "Недоступно: нет подходящей техники %(value)s уровня"
+
+msgid "QuestView/subtitle/pause"
+msgstr "Задача поставлена на паузу"
 
 msgid "QuestView/subtitle/previous_progress"
 msgstr "Недоступно: завершите операцию «%(value)s»"
@@ -261,7 +288,7 @@ msgstr ""
 "раскрыть, подстроившись под картину боя."
 
 msgid "QuestsLine/tooltip/title/assist"
-msgstr "Фланг скрытного присутствия"
+msgstr "Фланг скрытого присутствия"
 
 msgid "QuestsLine/tooltip/title/battle"
 msgstr "Фланг разведки"
@@ -324,7 +351,7 @@ msgid "ResetView/cancelButton"
 msgstr "Отменить"
 
 msgid "ResetView/closeButton"
-msgstr "Закрыть"
+msgstr "ЗАКРЫТЬ"
 
 msgid "ResetView/subtitle"
 msgstr "Весь прогресс по задаче «%(id)s» будет сброшен."
@@ -351,7 +378,7 @@ msgid "RewardsView/content/questCount/divider"
 msgstr "/"
 
 msgid "RewardsView/content/questCount/text"
-msgstr "Выполенно задач с отличем для получения награды этапа «Аттестация»"
+msgstr "Выполнено задач с отличием для получения награды этапа «Аттестация»"
 
 msgid "RewardsView/footer/allFlagTasksComplete"
 msgstr ""
@@ -458,8 +485,8 @@ msgstr ""
 "Машина прекрасно защищена, что способствует агрессивной тактике игры на "
 "первой линии. Мобильность довольно скромная, поэтому лучше заранее "
 "планировать направление для атаки, а также возможные пути отступления в "
-"случае смены картины боя. Огнеметное орудие способно противостоять любой "
-"цели на небольшой дистанции, но дальний бой (из-за особенностей срельбы) "
+"случае смены картины боя. Огнемётное орудие способно противостоять любой "
+"цели на небольшой дистанции, но дальний бой (из-за особенностей стрельбы) "
 "неэффективен."
 
 msgid "VehicleView/description/F119_Projet_Murat"
@@ -577,10 +604,10 @@ msgstr "Выбор временно недоступен"
 msgid "selectBonus/etc"
 msgstr "...и другое оборудование."
 
-msgid "selectBonus/expequipments"
+msgid "selectBonus/expequipments_gift"
 msgstr "Экспериментальное оборудование на выбор"
 
-msgid "selectBonus/new_device_pm3"
+msgid "selectBonus/new_device_pm3_gift"
 msgstr "Оборудование на выбор"
 
 msgid "selectBonus/point"
@@ -1101,6 +1128,9 @@ msgstr ""
 msgid "tooltips/questCard/footer/additional/notAvailablePrevQuestNotCompleted"
 msgstr "Завершите операцию «%(operationName)»"
 
+msgid "tooltips/questCard/footer/additional/pause"
+msgstr "Доступна для выполнения"
+
 msgid "tooltips/questCard/footer/additional/previousProgress"
 msgstr "Завершите операцию «%(prevOperationName)s»"
 
@@ -1122,11 +1152,17 @@ msgstr "Выполнено с отличием"
 msgid "tooltips/questCard/footer/inProgress"
 msgstr "Выполняется"
 
+msgid "tooltips/questCard/footer/inProgressHonor"
+msgstr "Выполняется с отличием"
+
 msgid "tooltips/questCard/footer/lock"
 msgstr "Недоступна"
 
 msgid "tooltips/questCard/footer/noTech"
 msgstr "Недоступна"
+
+msgid "tooltips/questCard/footer/pause"
+msgstr "Задача на паузе"
 
 msgid "tooltips/questCard/footer/previousProgress"
 msgstr "Недоступна"
@@ -1144,4 +1180,4 @@ msgid "tooltips/questCard/header/mainCondition"
 msgstr "Основное условие:"
 
 msgid "tooltips/questCard/header/switch"
-msgstr "%(id)s %(questName)s"
+msgstr "%(questName)s"

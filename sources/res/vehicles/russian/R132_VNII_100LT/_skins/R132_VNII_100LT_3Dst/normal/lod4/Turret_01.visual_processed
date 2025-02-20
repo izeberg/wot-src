@@ -9,24 +9,6 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>lod4</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>turret_01</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -1.311680 -0.149640</row3>
-				</transform>
-			</node>
-		</node>
-		<node>
 			<identifier>nodes_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
@@ -40,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.203570 0.863305</row3>
+					<row3>0.000000 0.203570 0.863306</row3>
 				</transform>
 			</node>
 		</node>
@@ -74,14 +56,18 @@
 						normalMap
 						<Texture>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst/VNII_100LT_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.009827 0.409938 -0.545669</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.058313 -0.005167 -2.185529</min>
-		<max>1.077967 0.825044 1.094189</max>
+		<min>-1.058313 -0.005167 -2.185528</min>
+		<max>1.077967 0.825044 1.094190</max>
 	</boundingBox>
 	<geometrySize>3428</geometrySize>
 	<minUVDensity>0.003932</minUVDensity>

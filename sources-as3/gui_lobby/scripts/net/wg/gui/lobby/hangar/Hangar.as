@@ -58,7 +58,7 @@ package net.wg.gui.lobby.hangar
       
       private static const INVALIDATE_COMP7_MODIFIERS_VISIBILITY:String = "invalidComp7Modifiers";
       
-      private static const INVALIDATE_BOB_MODIFIERS_VISIBILITY:String = "invalidBobModifiers";
+      private static const INVALIDATE_FUN_RANDOM_MODIFIERS_VISIBILITY:String = "invalidateFunRandomModifiers";
       
       private static const ENTRY_CONT_POSITION_INVALID:String = "entryContPositionInvalid";
       
@@ -134,13 +134,13 @@ package net.wg.gui.lobby.hangar
       
       private static const COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
       
-      private static const BOB_MODIFIERS_PANEL_INJECT_WIDTH:int = 354;
+      private static const FUN_RANDOM_MODIFIERS_PANEL_INJECT_WIDTH:int = 354;
       
-      private static const BOB_MODIFIERS_PANEL_INJECT_HEIGHT:int = 58;
+      private static const FUN_RANDOM_MODIFIERS_PANEL_INJECT_HEIGHT:int = 58;
       
-      private static const BOB_MODIFIERS_PANEL_INJECT_OFFSET_Y:int = 2;
+      private static const FUN_RANDOM_MODIFIERS_PANEL_INJECT_OFFSET_Y:int = 2;
       
-      private static const BOB_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
+      private static const FUN_RANDOM_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
       
       private static const SMALL_SCREEN_WIDTH_THRESHOLD:int = 1280;
       
@@ -225,7 +225,7 @@ package net.wg.gui.lobby.hangar
       
       private var _comp7ModifiersPanelInject:GFInjectComponent;
       
-      private var _bobModifiersPanelInject:GFInjectComponent;
+      private var _funRandomModifiersPanelInject:GFInjectComponent;
       
       private var _isCnSubscribeVisible:Boolean = false;
       
@@ -370,10 +370,8 @@ package net.wg.gui.lobby.hangar
       override protected function onDispose() : void
       {
          this.tryRemoveBattleRoyaleContainer();
-         this.removeComp7ModifiersPanel();
          this.removeBattleRoyaleContainer();
          this.removeComp7ModifiersPanel();
-         this.removeBobModifiersPanel();
          this.bottomBg.dispose();
          this.bottomBg = null;
          this.teaser.dispose();
@@ -484,7 +482,7 @@ package net.wg.gui.lobby.hangar
          {
             _loc2_ = true;
          }
-         if(isInvalid(INVALIDATE_BOB_MODIFIERS_VISIBILITY))
+         if(isInvalid(INVALIDATE_FUN_RANDOM_MODIFIERS_VISIBILITY))
          {
             _loc2_ = true;
          }
@@ -614,17 +612,17 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      public function addBobModifiers() : void
+      public function addFunRandomModifiers() : void
       {
-         if(!this._bobModifiersPanelInject)
+         if(!this._funRandomModifiersPanelInject)
          {
-            this._bobModifiersPanelInject = new GFInjectComponent();
-            this._bobModifiersPanelInject.setManageSize(true);
-            this._bobModifiersPanelInject.width = BOB_MODIFIERS_PANEL_INJECT_WIDTH;
-            this._bobModifiersPanelInject.height = BOB_MODIFIERS_PANEL_INJECT_HEIGHT;
-            addChild(this._bobModifiersPanelInject);
-            registerFlashComponentS(this._bobModifiersPanelInject,HANGAR_ALIASES.BOB_MODIFIERS_PANEL);
-            invalidate(INVALIDATE_BOB_MODIFIERS_VISIBILITY);
+            this._funRandomModifiersPanelInject = new GFInjectComponent();
+            this._funRandomModifiersPanelInject.setManageSize(true);
+            this._funRandomModifiersPanelInject.width = FUN_RANDOM_MODIFIERS_PANEL_INJECT_WIDTH;
+            this._funRandomModifiersPanelInject.height = FUN_RANDOM_MODIFIERS_PANEL_INJECT_HEIGHT;
+            addChild(this._funRandomModifiersPanelInject);
+            registerFlashComponentS(this._funRandomModifiersPanelInject,HANGAR_ALIASES.FUN_RANDOM_MODIFIERS_PANEL);
+            invalidate(INVALIDATE_FUN_RANDOM_MODIFIERS_VISIBILITY);
          }
       }
       
@@ -721,15 +719,15 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      public function as_setBobModifiersVisible(param1:Boolean) : void
+      public function as_setFunRandomModifiersVisible(param1:Boolean) : void
       {
-         if(param1 && !this._bobModifiersPanelInject)
+         if(param1 && !this._funRandomModifiersPanelInject)
          {
-            this.addBobModifiers();
+            this.addFunRandomModifiers();
          }
-         if(!param1 && this._bobModifiersPanelInject)
+         if(!param1 && this._funRandomModifiersPanelInject)
          {
-            this.removeBobModifiers();
+            this.removeFunRandomModifiers();
          }
       }
       
@@ -883,10 +881,10 @@ package net.wg.gui.lobby.hangar
          invalidate(INVALIDATE_COMP7_MODIFIERS_VISIBILITY);
       }
       
-      public function removeBobModifiers() : void
+      public function removeFunRandomModifiers() : void
       {
-         this.removeBobModifiersPanel();
-         invalidate(INVALIDATE_BOB_MODIFIERS_VISIBILITY);
+         this.removeFunRandomModifiersPanel();
+         invalidate(INVALIDATE_FUN_RANDOM_MODIFIERS_VISIBILITY);
       }
       
       public function setAnimatorVisibility(param1:Boolean) : void
@@ -940,16 +938,16 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      private function removeBobModifiersPanel() : void
+      private function removeFunRandomModifiersPanel() : void
       {
-         if(this._bobModifiersPanelInject != null)
+         if(this._funRandomModifiersPanelInject != null)
          {
-            removeChild(this._bobModifiersPanelInject);
-            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.BOB_MODIFIERS_PANEL))
+            removeChild(this._funRandomModifiersPanelInject);
+            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.FUN_RANDOM_MODIFIERS_PANEL))
             {
-               unregisterFlashComponentS(HANGAR_ALIASES.BOB_MODIFIERS_PANEL);
+               unregisterFlashComponentS(HANGAR_ALIASES.FUN_RANDOM_MODIFIERS_PANEL);
             }
-            this._bobModifiersPanelInject = null;
+            this._funRandomModifiersPanelInject = null;
          }
       }
       
@@ -972,7 +970,7 @@ package net.wg.gui.lobby.hangar
       {
          if(!this._hangarViewSwitchAnimator)
          {
-            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.vehicleParametersContainer,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject,this._bobModifiersPanelInject]),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
+            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.vehicleParametersContainer,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject,this._funRandomModifiersPanelInject]),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
          }
       }
       
@@ -1142,16 +1140,16 @@ package net.wg.gui.lobby.hangar
          {
             _loc2_ -= this._comp7ModifiersPanelInject.height + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
          }
-         if(this._bobModifiersPanelInject)
+         if(this._funRandomModifiersPanelInject)
          {
-            _loc2_ -= this._bobModifiersPanelInject.height + BOB_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
+            _loc2_ -= this._funRandomModifiersPanelInject.height + FUN_RANDOM_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
          }
          if(_loc2_ > 0)
          {
             this.params.height = _loc2_;
          }
          this.updateComp7ModifiersPosition();
-         this.updateBobModifiersPosition();
+         this.updateFunRandomModifiersPosition();
       }
       
       private function hideTooltip() : void
@@ -1179,12 +1177,12 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      private function updateBobModifiersPosition() : void
+      private function updateFunRandomModifiersPosition() : void
       {
-         if(this._bobModifiersPanelInject)
+         if(this._funRandomModifiersPanelInject)
          {
-            this._bobModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + BOB_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
-            this._bobModifiersPanelInject.x = this.params.x + this.params.width - this._bobModifiersPanelInject.width + BOB_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
+            this._funRandomModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + FUN_RANDOM_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
+            this._funRandomModifiersPanelInject.x = this.params.x + this.params.width - this._funRandomModifiersPanelInject.width + FUN_RANDOM_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
          }
       }
       
@@ -1370,7 +1368,7 @@ package net.wg.gui.lobby.hangar
       private function onParamsResizeHandler(param1:Event) : void
       {
          this.updateComp7ModifiersPosition();
-         this.updateBobModifiersPosition();
+         this.updateFunRandomModifiersPosition();
       }
       
       private function onEventsEntryContainerResizeHandler(param1:Event) : void

@@ -61,9 +61,9 @@ package
       
       public static const HEADERBUTTON_TOOLTIPS_VERSUSAISQUAD_BODY:String = "#platoon:headerButton/tooltips/versusAISquad/body";
       
-      public static const HEADERBUTTON_TOOLTIPS_BOBSQUAD_HEADER:String = "#platoon:headerButton/tooltips/bobSquad/header";
+      public static const HEADERBUTTON_TOOLTIPS_COSMICSQUAD_HEADER:String = "#platoon:headerButton/tooltips/cosmicSquad/header";
       
-      public static const HEADERBUTTON_TOOLTIPS_BOBSQUAD_BODY:String = "#platoon:headerButton/tooltips/bobSquad/body";
+      public static const HEADERBUTTON_TOOLTIPS_COSMICSQUAD_BODY:String = "#platoon:headerButton/tooltips/cosmicSquad/body";
       
       public static const BUTTONS_FINDPLAYERS_CAPTION:String = "#platoon:buttons/findPlayers/caption";
       
@@ -164,8 +164,6 @@ package
       public static const MEMBERS_HEADER_MAPBOX:String = "#platoon:members/header/mapbox";
       
       public static const MEMBERS_HEADER_COMP7:String = "#platoon:members/header/comp7";
-      
-      public static const MEMBERS_HEADER_BOB:String = "#platoon:members/header/bob";
       
       public static const MEMBERS_HEADER_TOOLTIP_STANDARD_HEADER:String = "#platoon:members/header/tooltip/standard/header";
       

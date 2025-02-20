@@ -81,7 +81,7 @@
 		<armor>
 			<armor_1>140</armor_1>
 			<armor_2>220</armor_2>
-			<armor_3>100</armor_3>
+			<armor_3>80</armor_3>
 			<armor_4>70</armor_4>
 			<armor_5>40</armor_5>
 			<armor_6>60</armor_6>
@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>16950</weight>
-		<maxHealth>1400</maxHealth>
+		<maxHealth>1300</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>

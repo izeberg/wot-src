@@ -91,6 +91,14 @@
 						diffuseMap
 						<Texture>content/Environment/hd_env_EU_026_ClayJug/hd_env_EU_026_ClayJug_AM.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.000509 0.395294 -0.000000</groupOrigin>
 			</primitiveGroup>

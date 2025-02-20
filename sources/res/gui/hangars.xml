@@ -29,5 +29,10 @@
 			<name>BOOTCAMP</name>
 			<space>h08_mt_hangar</space>
 		</item>
+		<item>
+			<name>ARMORY_YARD</name>
+			<space>h00_armory_yard</space>
+			<customEventMode>True</customEventMode>
+		</item>
 	</hangar_scene_spaces>
 </root>

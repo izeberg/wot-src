@@ -219,9 +219,9 @@ class _BaseRecruitInfo(object):
     def getFullUserName(self):
         firstName = self.getFirstName()
         lastName = self.getLastName()
-        if not firstName:
-            return lastName
-        return ('{} {}').format(firstName, lastName)
+        if not firstName and not lastName:
+            return ''
+        return ('{} {}').format(firstName, lastName).strip()
 
     def getRankID(self):
         return Tankman.calculateRankID(tankmen.MAX_SKILL_LEVEL, self._freeXP, skills=self._getSkillsForDescr(), freeSkills=self._getFreeSkillsForDescr(), lastSkillLevel=self._lastSkillLevel)

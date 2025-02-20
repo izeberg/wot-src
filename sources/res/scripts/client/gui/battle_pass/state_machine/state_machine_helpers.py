@@ -1,5 +1,5 @@
 import logging, typing
-from battle_pass_common import BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_TOKEN_3D_STYLE, BattlePassConsts, BattlePassRewardReason, BattlePassState, getBattlePassPassEntitlementName, getBattlePassShopEntitlementName
+from battle_pass_common import BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_TOKEN_3D_STYLE, BattlePassConsts, BattlePassRewardReason, BattlePassState, getBattlePassPassEntitlementName, BATTLE_PASS_SHOP_ENTITLEMENT_PASS
 from gui.battle_pass.battle_pass_helpers import getOfferTokenByGift, getStyleInfoForChapter
 from gui.impl.gen import R
 from gui.impl.pub.notification_commands import EventNotificationCommand, NotificationEvent
@@ -93,7 +93,7 @@ def packStartEvent(rewards, data, packageRewards, eventMethod, battlePass=None):
 
         if 'entitlements' in rewards:
             rewards['entitlements'].pop(getBattlePassPassEntitlementName(battlePass.getSeasonID()), None)
-            rewards['entitlements'].pop(getBattlePassShopEntitlementName(battlePass.getSeasonID()), None)
+            rewards['entitlements'].pop(BATTLE_PASS_SHOP_ENTITLEMENT_PASS, None)
             if not rewards['entitlements']:
                 rewards.pop('entitlements')
         if not isPremiumPurchase and not isRareLevel and not isFinalLevel or not rewards:

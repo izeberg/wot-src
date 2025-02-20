@@ -165,6 +165,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/Orso_3dst_01_hull_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000056 0.081392 0.114567</groupOrigin>
 			</primitiveGroup>
@@ -202,6 +206,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/Orso_3dst_01_equipment_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.030609 0.603422 -2.869777</groupOrigin>

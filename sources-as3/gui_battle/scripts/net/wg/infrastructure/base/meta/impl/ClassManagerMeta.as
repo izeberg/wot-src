@@ -152,27 +152,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleloading.vo.VehicleDataVO;
    import net.wg.gui.battle.battleloading.vo.VehicleInfoVO;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
-   import net.wg.gui.battle.bob.BobBattleLoading;
-   import net.wg.gui.battle.bob.BobBattleLoadingForm;
-   import net.wg.gui.battle.bob.BobBattlePage;
-   import net.wg.gui.battle.bob.BobRendererContainer;
-   import net.wg.gui.battle.bob.BobTablePlayerItemRenderer;
-   import net.wg.gui.battle.bob.data.BobBattleStatisticDataController;
-   import net.wg.gui.battle.bob.data.BobDAAPIVehicleInfoVO;
-   import net.wg.gui.battle.bob.data.BobDAAPIVehiclesDataVO;
-   import net.wg.gui.battle.bob.stats.components.VoiceChatActivation;
-   import net.wg.gui.battle.bob.stats.components.data.VoiceChatActivationVO;
-   import net.wg.gui.battle.bob.stats.components.events.VoiceChatActivationEvent;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.BobPlayersPanel;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.BobPlayersPrebattleTeamSkill;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersListHeader;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersListHeaderLabels;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersListTeamSkill;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelList;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListItem;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListItemHolder;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListLeft;
-   import net.wg.gui.battle.bob.stats.components.playersPanel.list.BobPlayersPanelListRight;
    import net.wg.gui.battle.comp7.Comp7BattlePage;
    import net.wg.gui.battle.comp7.Comp7HelpCtrl;
    import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO;
@@ -403,6 +382,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.eventInfoPanel.interfaces.IEventInfoPanel;
    import net.wg.gui.battle.events.BattleSoundEvent;
    import net.wg.gui.battle.events.RepairAnimEvent;
+   import net.wg.gui.battle.fep.views.FepBattlePage;
    import net.wg.gui.battle.interfaces.IBattleInfo;
    import net.wg.gui.battle.interfaces.IFullStats;
    import net.wg.gui.battle.interfaces.IPrebattleTimerBase;
@@ -743,6 +723,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.minimap.components.entries.epic.SectorBaseMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.epic.SectorMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.epic.SectorOverlayMinimapEntry;
+   import net.wg.gui.battle.views.minimap.components.entries.equipments.ReconEquipmentMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.AOEArtilleryMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryYellowMinimapEntry;
@@ -1323,48 +1304,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_PLAYERSTATS_BATTLEROYALEPLAYERSTATVO:Class = BattleRoyalePlayerStatVO;
       
-      public static const NET_WG_GUI_BATTLE_BOB_BOBBATTLELOADING:Class = BobBattleLoading;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_BOBBATTLELOADINGFORM:Class = BobBattleLoadingForm;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_BOBBATTLEPAGE:Class = BobBattlePage;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_BOBRENDERERCONTAINER:Class = BobRendererContainer;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_BOBTABLEPLAYERITEMRENDERER:Class = BobTablePlayerItemRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_DATA_BOBBATTLESTATISTICDATACONTROLLER:Class = BobBattleStatisticDataController;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_DATA_BOBDAAPIVEHICLEINFOVO:Class = BobDAAPIVehicleInfoVO;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_DATA_BOBDAAPIVEHICLESDATAVO:Class = BobDAAPIVehiclesDataVO;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_VOICECHATACTIVATION:Class = VoiceChatActivation;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_DATA_VOICECHATACTIVATIONVO:Class = VoiceChatActivationVO;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_EVENTS_VOICECHATACTIVATIONEVENT:Class = VoiceChatActivationEvent;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_BOBPLAYERSPANEL:Class = BobPlayersPanel;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_BOBPLAYERSPREBATTLETEAMSKILL:Class = BobPlayersPrebattleTeamSkill;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSLISTHEADER:Class = BobPlayersListHeader;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSLISTHEADERLABELS:Class = BobPlayersListHeaderLabels;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSLISTTEAMSKILL:Class = BobPlayersListTeamSkill;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLIST:Class = BobPlayersPanelList;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTITEM:Class = BobPlayersPanelListItem;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTITEMHOLDER:Class = BobPlayersPanelListItemHolder;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTLEFT:Class = BobPlayersPanelListLeft;
-      
-      public static const NET_WG_GUI_BATTLE_BOB_STATS_COMPONENTS_PLAYERSPANEL_LIST_BOBPLAYERSPANELLISTRIGHT:Class = BobPlayersPanelListRight;
-      
       public static const NET_WG_GUI_BATTLE_COMP7_COMP7BATTLEPAGE:Class = Comp7BattlePage;
       
       public static const NET_WG_GUI_BATTLE_COMP7_COMP7HELPCTRL:Class = Comp7HelpCtrl;
@@ -1824,6 +1763,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_EVENTS_BATTLESOUNDEVENT:Class = BattleSoundEvent;
       
       public static const NET_WG_GUI_BATTLE_EVENTS_REPAIRANIMEVENT:Class = RepairAnimEvent;
+      
+      public static const NET_WG_GUI_BATTLE_FEP_VIEWS_FEPBATTLEPAGE:Class = FepBattlePage;
       
       public static const NET_WG_GUI_BATTLE_INTERFACES_IBATTLEINFO:Class = IBattleInfo;
       
@@ -2504,6 +2445,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_EPIC_SECTORMINIMAPENTRY:Class = SectorMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_EPIC_SECTOROVERLAYMINIMAPENTRY:Class = SectorOverlayMinimapEntry;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_EQUIPMENTS_RECONEQUIPMENTMINIMAPENTRY:Class = ReconEquipmentMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_FORTCONSUMABLES_AOEARTILLERYMINIMAPENTRY:Class = AOEArtilleryMinimapEntry;
       

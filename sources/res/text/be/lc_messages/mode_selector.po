@@ -40,9 +40,9 @@ msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"
 
 msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
 msgstr ""
-"Гуляючы ў рэжыме {whiteSpanish_open}«Сталёвы паляўнічы»{whiteSpanish_close},"
-" вы будзеце здабываць ачкі. Яны патрэбны для прасоўвання па прагрэсіі "
-"Баявога пропуска."
+"Играя в режиме {whiteSpanish_open}«Стальной охотник»{whiteSpanish_close}, вы"
+" будете зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
+"пропуска."
 
 msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "Ачкі Баявога пропуска"
@@ -52,12 +52,6 @@ msgstr "Кожны сам за сябе!"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "Сталёвы паляўнічы"
-
-msgid "mode/bob/condition"
-msgstr "7x7 %(parSecondary_open)sI%(parSecondary_close)s X&nbsp;уровень"
-
-msgid "mode/bob/description"
-msgstr "Бои между командами известных блогеров."
 
 msgid "mode/bootcamp/call/1"
 msgstr "Прайдзіце і атрымайце ўзнагароду"
@@ -93,10 +87,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Падзея «Ледзяны мядзведзь» завершана"
+msgstr "Событие «Грозовой медведь» завершено"
 
 msgid "mode/comp7/seasonStart"
-msgstr "Падзея «Ледзяны мядзведзь» пачнецца %(date)s"
+msgstr "Событие «Грозовой медведь» начнётся %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Рангавая неактыўнасць"
@@ -217,6 +211,16 @@ msgstr ""
 
 msgid "mode/specBattlesList/description"
 msgstr "Глабальная карта і турніры."
+
+msgid "mode/strongholdsBattlesList/battlePassTooltip/body"
+msgstr ""
+"Участвуя в {whiteSpanish_open}Вылазках{whiteSpanish_close} и "
+"{whiteSpanish_open}Наступлениях{whiteSpanish_close} в Укрепрайоне, вы будете"
+" зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
+"пропуска."
+
+msgid "mode/strongholdsBattlesList/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
 
 msgid "mode/strongholdsBattlesList/call/1"
 msgstr "Ідзіце на бой як легіянер"

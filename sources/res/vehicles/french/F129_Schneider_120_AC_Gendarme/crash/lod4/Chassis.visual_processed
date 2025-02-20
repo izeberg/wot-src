@@ -65,6 +65,7 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
@@ -115,6 +116,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>

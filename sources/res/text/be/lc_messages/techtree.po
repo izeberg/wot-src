@@ -90,6 +90,12 @@ msgstr "Тэхніка Германіі"
 msgid "vehicle_tree/header/title/germany_blueprints"
 msgstr "Чарцяжы тэхнікі Германіі"
 
+msgid "vehicle_tree/header/title/intunion"
+msgstr "Техника Сборной наций"
+
+msgid "vehicle_tree/header/title/intunion_blueprints"
+msgstr "Чертежи техники Сборной наций"
+
 msgid "vehicle_tree/header/title/italy"
 msgstr "Тэхніка Італіі"
 
@@ -144,6 +150,9 @@ msgstr "Перайсці да тэхнікі Францыі"
 msgid "vehicle_tree/nationTooltip/germany"
 msgstr "Перайсці да тэхнікі Германіі"
 
+msgid "vehicle_tree/nationTooltip/intunion"
+msgstr "Перейти к технике Сборной наций"
+
 msgid "vehicle_tree/nationTooltip/italy"
 msgstr "Перайсці да тэхнікі Італіі"
 
@@ -167,11 +176,11 @@ msgstr "Перайсці да тэхнікі СССР"
 
 msgid "vehicle_tree/paragonsLocked/tooltip/body"
 msgstr ""
-"Для разблокировки ветки завершите этап %(level)\n"
-"сезона %(stage)s проекта «Орбита»."
+"Для разблакавання галіны завяршыце этап %(level)\n"
+"сезона %(stage)s праекта «Арбіта»."
 
 msgid "vehicle_tree/paragonsLocked/tooltip/header"
-msgstr "Заблокированная ветка"
+msgstr "Заблакаваная галіна"
 
 msgid "vehicle_tree/premium/title"
 msgstr "ПРЭМІУМ ТЭХНІКА"

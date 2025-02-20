@@ -749,6 +749,14 @@ package
       
       public static const DETAILSHELP_TYPES:String = "#comp7:detailsHelp/types";
       
+      public static const DETAILSHELP_SHOP_TITLE:String = "#comp7:detailsHelp/shop/title";
+      
+      public static const DETAILSHELP_SHOP:String = "#comp7:detailsHelp/shop";
+      
+      public static const DETAILSHELP_REWORK_TITLE:String = "#comp7:detailsHelp/rework/title";
+      
+      public static const DETAILSHELP_REWORK:String = "#comp7:detailsHelp/rework";
+      
       public static const DETAILSHELP_ROLESKILLS_TITLE:String = "#comp7:detailsHelp/roleSkills/title";
       
       public static const DETAILSHELP_ROLESKILLS:String = "#comp7:detailsHelp/roleSkills";
@@ -919,6 +927,8 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_TITLE_SHOP:String = "#comp7:whatsNewView/slides/title/shop";
       
+      public static const WHATSNEWVIEW_SLIDES_TITLE_SHOPINTRO:String = "#comp7:whatsNewView/slides/title/shopIntro";
+      
       public static const WHATSNEWVIEW_SLIDES_TITLE_MAPS:String = "#comp7:whatsNewView/slides/title/maps";
       
       public static const WHATSNEWVIEW_SLIDES_TITLE_SEASONVEHICLES:String = "#comp7:whatsNewView/slides/title/seasonVehicles";
@@ -929,11 +939,17 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_SHOP:String = "#comp7:whatsNewView/slides/description/shop";
       
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_SHOPINTRO:String = "#comp7:whatsNewView/slides/description/shopIntro";
+      
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_SEASONVEHICLES:String = "#comp7:whatsNewView/slides/description/seasonVehicles";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_MODIFICATOR:String = "#comp7:whatsNewView/slides/description/modificator";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_NEWTYPES:String = "#comp7:whatsNewView/slides/description/newTypes";
+      
+      public static const WHATSNEWVIEW_SLIDES_TITLE_REWORK:String = "#comp7:whatsNewView/slides/title/rework";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_REWORK:String = "#comp7:whatsNewView/slides/description/rework";
       
       public static const WHATSNEWVIEW_CONFIRMBUTTON:String = "#comp7:whatsNewView/confirmButton";
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.608538 -0.000036 -2.933670</min>
+		<max>1.608538 1.037214 2.892023</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R223_T_54B_1958/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/russian/R223_T_54B_1958/normal/lod3/Chassis</nodefullVisual>
+</root>

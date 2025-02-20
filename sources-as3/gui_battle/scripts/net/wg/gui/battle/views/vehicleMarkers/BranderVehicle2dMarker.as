@@ -250,7 +250,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function hideSeparateMarker(param1:int, param2:Boolean = false) : void
       {
-         this.statusContainer.hideAbilityMarker(param1,param2);
+         this.statusContainer.hideSeparateMarker(param1,param2);
          this.updateMarkerSettings();
       }
       
@@ -397,8 +397,19 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function showSeparateMarker(param1:int, param2:Boolean, param3:Number, param4:Boolean = true, param5:Boolean = true) : void
       {
-         this.statusContainer.showAbilityMarker(param1,param2,param3,param4,param5);
+         this.statusContainer.showSeparateMarker(param1,param2,param3,param4,param5);
          this.updateMarkerSettings();
+      }
+      
+      public function showDetectedByPyrometer(param1:Boolean = false, param2:int = 5000) : void
+      {
+         this.actionMarker.showPyrometer(param1,param2);
+         this.updateMarkerSettings();
+      }
+      
+      public function hideDetectedByPyrometer() : void
+      {
+         this.actionMarker.hidePyrometer();
       }
       
       public function stopActionMarker() : void

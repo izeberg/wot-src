@@ -68,14 +68,14 @@
 						<Vector3>1.000000 1.000000 1.000000</Vector3>
 					</property>
 				</material>
-				<groupOrigin>0.000997 0.394674 -0.002658</groupOrigin>
+				<groupOrigin>0.000997 0.394674 -0.014915</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.488519 0.185451 -3.317399</min>
+		<min>-1.488519 0.185451 -3.341915</min>
 		<max>1.490512 0.603898 3.312084</max>
 	</boundingBox>
 	<geometrySize>2688</geometrySize>
-	<minUVDensity>24.575357</minUVDensity>
+	<minUVDensity>24.575436</minUVDensity>
 </root>

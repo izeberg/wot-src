@@ -27,8 +27,6 @@ package
       
       public static const MISSIONS_TAB_WINBACK:String = "#quests:missions/tab/winback";
       
-      public static const MISSIONS_TAB_BOB:String = "#quests:missions/tab/bob";
-      
       public static const MISSIONS_FILTERCOUNTER_CLOSEBUTTON:String = "#quests:missions/filterCounter/closeButton";
       
       public static const MISSIONS_FILTER_FILTERBUTTON:String = "#quests:missions/filter/filterButton";
@@ -1901,8 +1899,6 @@ package
       
       public static const DETAILS_DOSSIER_7_BATTLESCOUNT:String = "#quests:details/dossier/7/battlesCount";
       
-      public static const DETAILS_DOSSIER_32_BATTLESCOUNT:String = "#quests:details/dossier/32/battlesCount";
-      
       public static const DETAILS_DOSSIER_9_BATTLESCOUNT:String = "#quests:details/dossier/9/battlesCount";
       
       public static const DETAILS_DOSSIER_13_BATTLESCOUNT:String = "#quests:details/dossier/13/battlesCount";
@@ -2078,12 +2074,6 @@ package
       public static const MISSIONS_TAB_LABEL_KURSK:String = "#quests:missions/tab/label/kursk";
       
       public static const MISSIONS_TAB_LABEL_MARATHON:String = "#quests:missions/tab/label/marathon";
-      
-      public static const MISSIONS_TAB_LABEL_BOB:String = "#quests:missions/tab/label/bob";
-      
-      public static const MISSIONS_TAB_BOB_HEADER:String = "#quests:missions/tab/bob/header";
-      
-      public static const MISSIONS_TAB_BOB_BODY:String = "#quests:missions/tab/bob/body";
       
       public static const MISSIONS_TAB_KURSK_HEADER:String = "#quests:missions/tab/kursk/header";
       
@@ -2378,6 +2368,8 @@ package
       public static const TOKEN_DEFAULT_SWEDEN:String = "#quests:token/default/sweden";
       
       public static const TOKEN_DEFAULT_ITALY:String = "#quests:token/default/italy";
+      
+      public static const TOKEN_DEFAULT_INTUNION:String = "#quests:token/default/intunion";
       
       public static const TOKEN_DEFAULT_WOT:String = "#quests:token/default/wot";
       

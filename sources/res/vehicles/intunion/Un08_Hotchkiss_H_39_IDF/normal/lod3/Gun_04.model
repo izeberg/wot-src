@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un08_Hotchkiss_H_39_IDF/normal/lod4/Gun_04</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.134823 -0.135606 -0.046139</min>
+		<max>0.201739 0.148426 1.047687</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un08_Hotchkiss_H_39_IDF/normal/lod3/Gun_04</nodefullVisual>
+</root>

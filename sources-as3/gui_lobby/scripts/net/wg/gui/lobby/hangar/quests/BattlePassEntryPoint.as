@@ -14,6 +14,8 @@ package net.wg.gui.lobby.hangar.quests
       private static const BP_ENTRY_POINT_OUTER_MARGIN_SMALL_X:int = -83;
       
       private static const SIZE:int = 256;
+      
+      private static const SIZE_SMALL:int = 255;
        
       
       private var _isSmall:Boolean = false;
@@ -36,6 +38,8 @@ package net.wg.gui.lobby.hangar.quests
       {
          super.onPopulate();
          setIsSmallS(this._isSmall);
+         var _loc1_:int = !!this._isSmall ? int(SIZE_SMALL) : int(SIZE);
+         setSize(_loc1_,_loc1_);
       }
       
       override protected function draw() : void
@@ -63,6 +67,7 @@ package net.wg.gui.lobby.hangar.quests
       
       private function setIsSmallSize(param1:Boolean) : void
       {
+         var _loc2_:int = 0;
          if(this._isSmall != param1)
          {
             this._isSmall = param1;
@@ -71,6 +76,8 @@ package net.wg.gui.lobby.hangar.quests
                return;
             }
             setIsSmallS(this._isSmall);
+            _loc2_ = !!this._isSmall ? int(SIZE_SMALL) : int(SIZE);
+            setSize(_loc2_,_loc2_);
          }
       }
       

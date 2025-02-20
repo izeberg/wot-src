@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.685294 0.003927 -3.806511</min>
+		<max>1.687222 1.073349 3.329596</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/crash/lod4/Chassis</parent>
+	<extent>192</extent>
+	<tank>true</tank>
+</root>

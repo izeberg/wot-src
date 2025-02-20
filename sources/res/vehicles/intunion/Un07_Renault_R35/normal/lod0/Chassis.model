@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.946752 -0.000000 -1.955358</min>
+		<max>0.946752 0.932693 2.064661</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un07_Renault_R35/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un07_Renault_R35/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -5,5 +5,5 @@ __all__ = ('getTooltipBuilders', )
 
 def getTooltipBuilders():
     return (
-     DataBuilder(TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN_UI, battle_pass.BattlePassGiftTokenTooltipData(contexts.BattlePassGiftTokenContext())),
+     DataBuilder(TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN, TOOLTIPS_CONSTANTS.BATTLE_PASS_GIFT_TOKEN_UI, battle_pass.BattlePassGiftTokenTooltipData(contexts.SelectableBonusesGiftTokenContext())),
      DataBuilder(TOOLTIPS_CONSTANTS.BATTLE_PASS_POINTS, TOOLTIPS_CONSTANTS.BLOCKS_DEFAULT_UI, battle_pass.BattlePassPointsTooltipData(contexts.ToolTipContext(None))))

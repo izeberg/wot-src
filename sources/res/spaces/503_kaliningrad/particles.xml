@@ -34,6 +34,10 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/503_kaliningrad_chimney_smoke_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/503_kaliningrad_dust_blow_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_0115_THouse_40_3.vfx</fn_effect_bin>
@@ -310,6 +314,10 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_under_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/503_kaliningrad_chimney_smoke_s.vfx</fn_effect_bin>

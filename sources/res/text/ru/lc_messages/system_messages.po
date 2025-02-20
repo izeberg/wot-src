@@ -612,12 +612,6 @@ msgstr ""
 msgid "blueprints/switch_on"
 msgstr "Чертежи техники снова доступны."
 
-msgid "bob/claimeReward/server_error"
-msgstr "Ошибка сервера"
-
-msgid "bob/claimeReward/server_error/COOLDOWN"
-msgstr "Действие недоступно. Дождитесь завершения текущей операции."
-
 msgid "bonuses/booster/value"
 msgstr "%(name)s (x%(count)d)"
 
@@ -1500,6 +1494,11 @@ msgstr "Динамическое разрешение уменьшено до %(
 
 msgid "drr_scale/step_up"
 msgstr "Динамическое разрешение увеличено до %(scale)d%%."
+
+msgid "dx10_nodeferred_warning"
+msgstr ""
+"Ваша видеокарта не поддерживает опцию «Улучшенная графика». Настройка "
+"изменена на опцию «Стандартная графика»."
 
 msgid "epicBattles/levelUp/awards"
 msgstr "Получена награда:"
@@ -2962,9 +2961,6 @@ msgstr "Выбранная машина не подходит для данно�
 
 msgid "prebattle/teamInvalid/observers"
 msgstr "Команда не может состоять только из наблюдателей."
-
-msgid "prebattle/vehicleInvalid/bobOnly"
-msgstr "Выбранная машина подходит только для режима «Битва блогеров»."
 
 msgid "prebattle/vehicleInvalid/epicOnly"
 msgstr "Выбранная машина подходит только для режима «Линия фронта»."

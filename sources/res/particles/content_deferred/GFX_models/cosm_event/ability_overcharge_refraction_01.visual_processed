@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert1</identifier>
+					<fx>shaders/custom/shield_shimmer.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.000000 1.000000 0.000000 0.500000</Vector4>
+					</property>
+					<property>
+						distortionFrames
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/cosmic_overcharge_nm.dds</Texture>
+					</property>
+					<property>
+						fresnelPower
+						<UInt>5</UInt>
+					</property>
+					<property>
+						phase_UV_Speed_Scale
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						phaseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_GMM.dds</Texture>
+					</property>
+					<property>
+						rampFresnelMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Gradient_transparentEdge_02.dds</Texture>
+					</property>
+					<property>
+						alphaFresnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						distortionAmount
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.999999 -1.000000 -0.999999</min>
+		<max>1.000000 1.000000 1.000000</max>
+	</boundingBox>
+	<geometrySize>25884</geometrySize>
+	<minUVDensity>0.050826</minUVDensity>
+</root>

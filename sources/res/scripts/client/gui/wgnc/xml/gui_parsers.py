@@ -9,7 +9,7 @@ class _ButtonsParser(SectionParser):
     def getTagName(self):
         return 'buttons'
 
-    def parse(self, section):
+    def parse(self, section, parentSection=None):
         result = []
         for name, sub in section.items():
             if name != 'button':
@@ -32,7 +32,7 @@ class _GUIActionsParser(SectionParser):
     def getTagName(self):
         return 'handlers'
 
-    def parse(self, section):
+    def parse(self, section, parentSection=None):
         result = []
         for name, sub in section.items():
             if name != 'handler':
@@ -55,7 +55,7 @@ class _PopUpParser(SectionParser):
     def getTagName(self):
         return 'popup'
 
-    def parse(self, section):
+    def parse(self, section, parentSection=None):
         body = formatText(self._readString('body', section))
         priority = self._readString('priority', section)
         if priority not in WGNC_POP_UP_PRIORITIES:
@@ -84,7 +84,7 @@ class _WindowParser(SectionParser):
     def getTagName(self):
         return 'window'
 
-    def parse(self, section):
+    def parse(self, section, parentSection=None):
         name = self._readString('name', section)
         body = formatText(self._readString('body', section))
         topic = section.readString('topic', '')
@@ -112,7 +112,7 @@ class _BrowserParser(SectionParser):
     def getTagName(self):
         return 'browser'
 
-    def parse(self, section):
+    def parse(self, section, parentSection=None):
         sub = _GUIActionsParser()
         if sub.getTagName() in section.keys():
             handlers = sub.parse(section[sub.getTagName()])
@@ -126,7 +126,7 @@ class _GUIItemsParser(ParsersCollection):
     def getTagName(self):
         return 'gui'
 
-    def parse(self, section):
+    def parse(self, section, parentSection=None):
         items = []
         for item in super(_GUIItemsParser, self).parse(section):
             items.append(item)

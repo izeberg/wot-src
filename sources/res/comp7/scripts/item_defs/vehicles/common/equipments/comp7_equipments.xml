@@ -25,15 +25,15 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<radius>
-				35
+				30
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				25 50 75
+				20 45 70
 				<exports>vse</exports>
 			</heal>
 			<secondaryHealDebuff>
-				20
+				25
 				<exports>vse tooltip</exports>
 			</secondaryHealDebuff>
 			<tickInterval>
@@ -60,7 +60,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				30
+				20
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -68,7 +68,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
-				7 12 17
+				10 15 20
 				<exports>vse tooltip</exports>
 			</crewBuff>
 		</script>
@@ -101,11 +101,11 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				10 15 25
+				10 15 20
 				<exports>vse</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				5
+				4
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -213,11 +213,11 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				10
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				20
+				25
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
@@ -307,11 +307,11 @@
 				</client>
 			</visualScript>
 			<cooldownSeconds>
-				20
+				15
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<gunReloadTimeBuff>
-				0.7 0.5 0.3
+				0.65 0.45 0.25
 				<!--BW_String-->
 				<exports>vse</exports>
 			</gunReloadTimeBuff>
@@ -352,7 +352,7 @@
 				<exports>vse</exports>
 			</stunDurationFactor>
 			<repairBuff>
-				33
+				75
 				<exports>vse tooltip</exports>
 			</repairBuff>
 			<gunReloadBoost>
@@ -437,7 +437,7 @@
 				<exports>vse tooltip</exports>
 			</damageDistance>
 			<damageFactors>
-				1.05 1.2 1.65
+				1.15 1.25 1.65
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</damageFactors>
@@ -485,7 +485,7 @@
 				<exports>vse tooltip</exports>
 			</fwdSpeedBoost>
 			<bkwSpeedBoost>
-				1
+				15
 				<exports>vse tooltip</exports>
 			</bkwSpeedBoost>
 			<enginePowerBuff>
@@ -507,7 +507,7 @@
 			Comp7ReconEquipment
 			<visualScript>
 				<server>
-					<plan>comp7Abilities/recon_server</plan>
+					<plan>comp7Abilities/recon_point_server</plan>
 				</server>
 			</visualScript>
 			<cooldownSeconds>

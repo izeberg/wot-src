@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un07_Renault_R35/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/intunion/Un07_Renault_R35/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.600115 -0.018133 -0.668818</min>
+		<max>0.578046 0.686550 0.540274</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

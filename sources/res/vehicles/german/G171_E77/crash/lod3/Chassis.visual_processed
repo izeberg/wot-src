@@ -73,17 +73,13 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
+					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
 						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						diffuseMap
@@ -124,10 +120,6 @@
 					<property>
 						alphaReference
 						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						diffuseMap

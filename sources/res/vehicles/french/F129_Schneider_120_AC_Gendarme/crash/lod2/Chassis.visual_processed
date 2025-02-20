@@ -110,6 +110,7 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
 			<stream>track_R_Shape.uv2</stream>

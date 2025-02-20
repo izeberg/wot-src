@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.701695 -0.358032 -0.555597</min>
+		<max>0.702361 0.856589 4.194973</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un03_Degem_Yud/normal/lod1/Gun_04</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un03_Degem_Yud/normal/lod0/Gun_04</nodefullVisual>
+</root>

@@ -208,9 +208,15 @@ msgstr "Вентыляцыя"
 msgid "archetype/modernizedAimDrivesAimingStabilizer/name/noTemplate"
 msgstr "Сістэма кіравання агнём"
 
+msgid "archetype/modernizedDamageVentilation/name/noTemplate"
+msgstr "Расточка каморы"
+
 msgid ""
 "archetype/modernizedExtraHealthReserveAntifragmentationLining/name/noTemplate"
 msgstr "Комплекс паляпшэння выжывальнасці"
+
+msgid "archetype/modernizedTankRammerSights/name/noTemplate"
+msgstr "Многозубая каретка досылателя"
 
 msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
 msgstr "Сістэма павышэння мабільнасці"
@@ -727,11 +733,12 @@ msgstr "Марш-кідок"
 
 msgid "comp7_recon/descr/active"
 msgstr ""
-"Праз {colorTagOpen}%(delay)d с{colorTagClose} над выбранай вамі зонай "
-"праляціць самалёт-выведнік. Заўважаная ў радыусе "
-"{colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d м{colorTagClose} "
-"тэхніка праціўніка будзе заставацца выяўленай на працягу "
-"{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}."
+"Через {colorTagOpen}%(delay)d с{colorTagClose} над выбранной вами зоной "
+"радиусом {colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d "
+"м{colorTagClose} пролетит самолёт-разведчик. Техника противника, замеченная "
+"в этой зоне, останется обнаруженной в течение "
+"{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}"
+" или до тех пор, пока не покинет её."
 
 msgid "comp7_recon/name"
 msgstr "Самалёт-выведнік"
@@ -771,11 +778,11 @@ msgstr "Трапны цалок"
 
 msgid "comp7_sure_shot/descr/active"
 msgstr ""
-"На наступныя {colorTagOpen}%(duration)d с{colorTagClose} памяншае роскід гарматы падчас руху, паваротаў шасі, павароту вежы і пасля стрэлу на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
+"На следующие {colorTagOpen}%(duration)d с{colorTagClose} уменьшает разброс орудия при движении, поворотах ходовой и вращении башни на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
 "\n"
-"Прычыненне пашкоджанняў стрэлам падчас дзеяння звычкі скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} ад адсотка, на які зменшылася трываласць машыны супраціўніка.\n"
+"Нанесение урона выстрелом в течение действия навыка сокращает время перезарядки на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} от процента, на который уменьшилась прочность машины противника.\n"
 "\n"
-"Знішчэнне супраціўніка стрэлам скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose}."
+"Уничтожение техники противника выстрелом сокращает время перезарядки на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose}."
 
 msgid "comp7_sure_shot/name"
 msgstr "Надзейны стрэл"
@@ -1712,6 +1719,36 @@ msgstr "Сістэма кіравання агнём T3"
 msgid "modernizedAimDrivesAimingStabilizer3/short_special"
 msgstr "Сістэма кіравання агнём T3"
 
+msgid "modernizedDamageVentilation"
+msgstr "Расточка каморы"
+
+msgid "modernizedDamageVentilation1/long_special"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation1/name"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation1/short_special"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation2/long_special"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation2/name"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation2/short_special"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation3/long_special"
+msgstr "Расточка каморы Т3"
+
+msgid "modernizedDamageVentilation3/name"
+msgstr "Расточка каморы Т3"
+
+msgid "modernizedDamageVentilation3/short_special"
+msgstr "Расточка каморы Т3"
+
 msgid "modernizedExtraHealthReserveAntifragmentationLining1/long_special"
 msgstr "Комплекс паляпшэння выжывальнасці T1"
 
@@ -1738,6 +1775,36 @@ msgstr "Комплекс паляпшэння выжывальнасці T3"
 
 msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
 msgstr "Комплекс паляпшэння выжывальнасці T3"
+
+msgid "modernizedTankRammerSights"
+msgstr "Многозубая каретка досылателя"
+
+msgid "modernizedTankRammerSights1/long_special"
+msgstr "Многозубая каретка досылателя Т1"
+
+msgid "modernizedTankRammerSights1/name"
+msgstr "Многозубая каретка досылателя Т1"
+
+msgid "modernizedTankRammerSights1/short_special"
+msgstr "Многозубая каретка досылателя Т1"
+
+msgid "modernizedTankRammerSights2/long_special"
+msgstr "Многозубая каретка досылателя Т2"
+
+msgid "modernizedTankRammerSights2/name"
+msgstr "Многозубая каретка досылателя Т2"
+
+msgid "modernizedTankRammerSights2/short_special"
+msgstr "Многозубая каретка досылателя Т2"
+
+msgid "modernizedTankRammerSights3/long_special"
+msgstr "Многозубая каретка досылателя Т3"
+
+msgid "modernizedTankRammerSights3/name"
+msgstr "Многозубая каретка досылателя Т3"
+
+msgid "modernizedTankRammerSights3/short_special"
+msgstr "Многозубая каретка досылателя Т3"
 
 msgid "modernizedTurbochargerRotationMechanism1/long_special"
 msgstr "Сістэма павышэння рухомасці T1"
@@ -1914,9 +1981,9 @@ msgstr ""
 
 msgid "rammerBattleBooster/descr"
 msgstr ""
-"%s ад часу набівання гарматы пры ўстаноўленым абсталяванні «Дасыльнік» "
-"(любога тыпу гарматы і калібру), «Эксперыментальная сістэма набівання» або "
-"«Трафейны дасыльнік»."
+"%s от времени заряжания орудия при установленном оборудовании «Досылатель» "
+"(любого типа орудия и калибра), «Экспериментальная система заряжания», "
+"«Трофейный досылатель» или «Многозубая каретка досылателя»."
 
 msgid "rammerBattleBooster/gain/deluxe"
 msgstr "-2,5%"
@@ -1926,10 +1993,14 @@ msgstr "-2,5%"
 
 msgid "rammerBattleBooster/long_special"
 msgstr ""
-"Расходуецца за 1 бой. Узмацняе эфект абсталявання «Дасыльнік» (любога тыпу "
-"гарматы і калібру), «Трафейны дасыльнік» або «Эксперыментальная сістэма "
-"набівання». Настаўленне будзе працаваць толькі пры наяўнасці на тэхніцы "
-"гэтага абсталявання."
+"Расходуется за 1 бой. Усиливает эффект оборудования «Досылатель» (любого "
+"типа орудия и калибра), «Трофейный досылатель» или «Экспериментальная "
+"система заряжания». При установке инструкции данное оборудование должно быть"
+" на технике, иначе инструкция работать не будет.Расходуется за 1 бой. "
+"Усиливает эффект оборудования «Досылатель» (любого типа орудия и калибра), "
+"«Трофейный досылатель», «Экспериментальная система заряжания» или "
+"«Многозубая каретка досылателя». При установке инструкции данное "
+"оборудование должно быть на технике, иначе инструкция работать не будет."
 
 msgid "rammerBattleBooster/name"
 msgstr "Рацыянальная боеўкладка"
@@ -2024,6 +2095,29 @@ msgstr "Толькі для тэхнікі Чэхаславакіі."
 
 msgid "ration_czech/short_special"
 msgstr "Павялічвае эфектыўнасць чэхаславацкіх экіпажаў"
+
+msgid "ration_intunion/always"
+msgstr "%(crewLevel)s да ўсіх навыкаў экіпажа. Расходуецца за адзін бой."
+
+msgid "ration_intunion/descr"
+msgstr "{colorTagOpen}+10%{colorTagClose} да ўсіх навыкаў экіпажа."
+
+msgid "ration_intunion/long_special"
+msgstr ""
+"Автоматически активируется после начала боя и действует на всём его "
+"протяжении. Подходит только для техники Сборной наций."
+
+msgid "ration_intunion/name"
+msgstr "Кофе с галетами"
+
+msgid "ration_intunion/onUse"
+msgstr "?empty?"
+
+msgid "ration_intunion/restriction"
+msgstr "Только для техники Сборной наций."
+
+msgid "ration_intunion/short_special"
+msgstr "Повышает эффективность экипажей Сборной наций."
 
 msgid "ration_italy/always"
 msgstr "%(crewLevel)s да ўсіх навыкаў экіпажа. Расходуецца за адзін бой."
@@ -2450,17 +2544,17 @@ msgstr "Павышэнне жыццяздольнасці модуляў"
 
 msgid "role_HT_flame_pair_2_1/splitName"
 msgstr ""
-"Повышение\n"
-"жизнеспособности\n"
-"модулей"
+"Павышэнне\n"
+"жыццяздольнасці\n"
+"модуляў"
 
 msgid "role_HT_flame_pair_2_2/name"
 msgstr "Легкасплаўныя вузлы мацавання"
 
 msgid "role_HT_flame_pair_2_2/splitName"
 msgstr ""
-"Легкосплавные\n"
-"узлы крепления"
+"Легкасплаўныя\n"
+"вузлы мацавання"
 
 msgid "role_HT_flame_pair_4_1/name"
 msgstr "Дадатковая шумаізаляцыя"
@@ -2483,8 +2577,8 @@ msgstr "Дадатковыя назіральныя прылады"
 
 msgid "role_HT_flame_pair_5_1/splitName"
 msgstr ""
-"Дополнительные\n"
-"приборы наблюдения"
+"Дадатковыя\n"
+"прылады назірання"
 
 msgid "role_HT_flame_pair_5_2/name"
 msgstr "Узмоцненыя злучэнні"
@@ -2861,20 +2955,20 @@ msgstr ""
 "канструкцыі"
 
 msgid "role_XI_279_pair_4_1/name"
-msgstr "Откидные дефлекторы"
+msgstr "Адкідныя дэфлектары"
 
 msgid "role_XI_279_pair_4_1/splitName"
 msgstr ""
-"Откидные\n"
-"дефлекторы"
+"Адкідныя\n"
+"дэфлектары"
 
 msgid "role_XI_279_pair_4_2/name"
-msgstr "Стереоскопическая схема дальномера"
+msgstr "Стэрэаскапічная схема дальнамера"
 
 msgid "role_XI_279_pair_4_2/splitName"
 msgstr ""
-"Стереоскопическая\n"
-"схема дальномера"
+"Стэрэаскапічная\n"
+"схема дальнамера"
 
 msgid "role_XI_279_pair_5_1/name"
 msgstr "Аднавузлавы механізм набівання"
@@ -2885,18 +2979,18 @@ msgstr ""
 "механізм набівання"
 
 msgid "role_XI_279_pair_5_2/name"
-msgstr "Оптико-гироскопический прибор"
+msgstr "Оптыка-гіраскапічная прылада"
 
 msgid "role_XI_279_pair_5_2/splitName"
 msgstr ""
-"Оптико-\n"
-"гироскопический прибор"
+"Оптыка-\n"
+"гіраскапічная прылада"
 
 msgid "role_XI_BZT_70_pair_4_1/name"
-msgstr "Откидные дефлекторы"
+msgstr "Адкідныя дэфлектары"
 
 msgid "role_XI_BZT_70_pair_4_1/splitName"
-msgstr "Откидные дефлекторы"
+msgstr "Адкідныя дэфлектары"
 
 msgid "role_XI_BZT_70_pair_4_2/name"
 msgstr "Легкасплаўныя агрэгаты"
@@ -2907,98 +3001,98 @@ msgstr ""
 "агрэгаты"
 
 msgid "role_XI_BZT_70_pair_5_1/name"
-msgstr "Повышение давления топлива"
+msgstr "Павышэнне ціску паліва"
 
 msgid "role_XI_BZT_70_pair_5_1/splitName"
 msgstr ""
-"Повышение\n"
-"давления топлива"
+"Павышэнне\n"
+"ціску паліва"
 
 msgid "role_XI_BZT_70_pair_5_2/name"
-msgstr "Оптико-гироскопический прибор"
+msgstr "Оптыка-гіраскапічная прылада"
 
 msgid "role_XI_BZT_70_pair_5_2/splitName"
 msgstr ""
-"Оптико-\n"
-"гироскопический прибор"
+"Оптыка-\n"
+"гіраскапічная прылада"
 
 msgid "role_XI_MBT_B_pair_4_1/name"
-msgstr "Экспериментальный топливный насос"
+msgstr "Эксперыментальная паліўная помпа"
 
 msgid "role_XI_MBT_B_pair_4_1/splitName"
 msgstr ""
-"Экспериментальный\n"
-"топливный насос"
+"Эксперыментальная\n"
+"паліўная помпа"
 
 msgid "role_XI_MBT_B_pair_4_2/name"
-msgstr "Оптико-гироскопический прибор"
+msgstr "Оптыка-гіраскапічная прылада"
 
 msgid "role_XI_MBT_B_pair_4_2/splitName"
 msgstr ""
-"Оптико-\n"
-"гироскопический прибор"
+"Оптыка-\n"
+"гіраскапічная прылада"
 
 msgid "role_XI_MBT_B_pair_5_1/name"
-msgstr "Стереоскопическая схема дальномера"
+msgstr "Стэрэаскапічная схема дальнамера"
 
 msgid "role_XI_MBT_B_pair_5_1/splitName"
 msgstr ""
-"Стереоскопическая\n"
-"схема дальномера"
+"Стэрэаскапічная\n"
+"схема дальнамера"
 
 msgid "role_XI_MBT_B_pair_5_2/name"
-msgstr "Улучшенный ДТК"
+msgstr "Палепшаны ДТК"
 
 msgid "role_XI_MBT_B_pair_5_2/splitName"
-msgstr "Улучшенный ДТК"
+msgstr "Палепшаны ДТК"
 
 msgid "role_XI_pair_1_1/name"
-msgstr "Усиленная перегородка МТО"
+msgstr "Узмоцненая перагародка МТА"
 
 msgid "role_XI_pair_1_1/splitName"
 msgstr ""
-"Усиленная\n"
-"перегородка МТО"
+"Узмоцненая\n"
+"перагародка МТА"
 
 msgid "role_XI_pair_1_2/name"
-msgstr "Электропривод наведения"
+msgstr "Электрапрывод навядзення"
 
 msgid "role_XI_pair_1_2/splitName"
 msgstr ""
-"Электропривод\n"
-"наведения"
+"Электрапрывод\n"
+"навядзення"
 
 msgid "role_XI_pair_2_1/name"
-msgstr "Улучшенная подвеска"
+msgstr "Палепшаная падвеска"
 
 msgid "role_XI_pair_2_1/splitName"
 msgstr ""
-"Улучшенная\n"
-"подвеска"
+"Палепшаная\n"
+"падвеска"
 
 msgid "role_XI_pair_2_2/name"
-msgstr "Двухплоскостной стабилизатор"
+msgstr "Двухплоскасны стабілізатар"
 
 msgid "role_XI_pair_2_2/splitName"
 msgstr ""
-"Двухплоскостной\n"
-"стабилизатор"
+"Двухплоскасны\n"
+"стабілізатар"
 
 msgid "role_XI_pair_3_1/name"
-msgstr "Композитный подбой"
+msgstr "Кампазітная падбіўка"
 
 msgid "role_XI_pair_3_1/splitName"
 msgstr ""
-"Композитный\n"
-"подбой"
+"Кампазітная\n"
+"падбіўка"
 
 msgid "role_XI_pair_3_2/name"
-msgstr "Усиленные отбойники"
+msgstr "Узмоцненыя адбойнікі"
 
 msgid "role_XI_pair_3_2/splitName"
 msgstr ""
-"Усиленные\n"
-"отбойники"
+"Узмоцненыя\n"
+"адбойнікі"
 
 msgid "role_heavyTank_pair_1_1/name"
 msgstr "Усюдыходнае шасі"

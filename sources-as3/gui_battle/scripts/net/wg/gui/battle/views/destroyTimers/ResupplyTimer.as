@@ -3,6 +3,7 @@ package net.wg.gui.battle.views.destroyTimers
    import flash.display.MovieClip;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.EPIC_CONSTS;
    import net.wg.gui.battle.components.FrameAnimationTimer;
    import net.wg.gui.battle.components.interfaces.IStatusNotification;
@@ -65,14 +66,22 @@ package net.wg.gui.battle.views.destroyTimers
       
       private var _actualState:int = -1;
       
+      private var _titleTF:TextField = null;
+      
+      private var _descriptionTF:TextField = null;
+      
+      private var _descriptionText:String = "";
+      
       public function ResupplyTimer()
       {
          super();
          init(false,true);
          TextFieldEx.setNoTranslate(this.cooldownTime.cooldownTF,true);
-         this.description.titleTF.autoSize = TextFieldAutoSize.LEFT;
-         this.description.descriptionTF.autoSize = TextFieldAutoSize.LEFT;
-         this.description.titleTF.text = EPIC_BATTLE.PROGRESS_TIMERS_RESUPPLY;
+         this._titleTF = this.description.titleTF;
+         this._titleTF.autoSize = TextFieldAutoSize.LEFT;
+         this._titleTF.text = EPIC_BATTLE.PROGRESS_TIMERS_RESUPPLY;
+         this._descriptionTF = this.description.descriptionTF;
+         this._descriptionTF.autoSize = TextFieldAutoSize.LEFT;
       }
       
       override protected function onDispose() : void
@@ -81,6 +90,8 @@ package net.wg.gui.battle.views.destroyTimers
          this.cooldownTime = null;
          this.progressAnimation.stop();
          this.progressAnimation = null;
+         this._titleTF = null;
+         this._descriptionTF = null;
          this.description = null;
          this.icon = null;
          if(this._tweenX != null)
@@ -89,6 +100,39 @@ package net.wg.gui.battle.views.destroyTimers
             this._tweenX = null;
          }
          super.onDispose();
+      }
+      
+      override protected function getProgressBarMc() : MovieClip
+      {
+         return this.progressAnimation;
+      }
+      
+      override protected function getTimerTF() : TextField
+      {
+         return this.cooldownTime.cooldownTF;
+      }
+      
+      override protected function invokeAdditionalActionOnIntervalUpdate() : void
+      {
+         this.icon.gotoAndStop(ICON_UNAVAILABLE_FRAME_LABEL);
+      }
+      
+      override protected function resetAnimState() : void
+      {
+      }
+      
+      override protected function onIntervalHideUpdateHandler() : void
+      {
+      }
+      
+      override protected function getStartFrame() : int
+      {
+         return START_FRAME;
+      }
+      
+      override protected function getEndFrame() : int
+      {
+         return END_FRAME;
       }
       
       public function cropSize() : Boolean
@@ -107,6 +151,11 @@ package net.wg.gui.battle.views.destroyTimers
          gotoAndStop(SHOW_FRAME_LABEL_END);
          this.setState(this._actualState);
          return true;
+      }
+      
+      public function getStatusCallback() : IStatusNotificationCallback
+      {
+         return null;
       }
       
       public function hideTimer() : void
@@ -137,12 +186,18 @@ package net.wg.gui.battle.views.destroyTimers
          this.description.descriptionTF.text = param1.toString() + PERCENT_TEXT;
       }
       
+      public function setSettings(param1:NotificationTimerSettingVO) : void
+      {
+         this._typeId = param1.typeId;
+      }
+      
       public function setState(param1:int) : void
       {
+         var _loc2_:String = Values.EMPTY_STR;
          switch(param1)
          {
             case EPIC_CONSTS.RESUPPLY_READY:
-               this.description.descriptionTF.text = EPIC_BATTLE.PROGRESS_TIMERS_ACTIVE;
+               _loc2_ = EPIC_BATTLE.PROGRESS_TIMERS_ACTIVE;
                this.icon.gotoAndStop(ICON_ACTIVE_FRAME_LABEL);
                this.cooldownTime.visible = false;
                this.progressAnimation.play();
@@ -150,20 +205,29 @@ package net.wg.gui.battle.views.destroyTimers
                this._actualState = param1;
                break;
             case EPIC_CONSTS.RESUPPLY_BLOCKED:
-               this.description.descriptionTF.text = EPIC_BATTLE.PROGRESS_TIMERS_UNAVAILABLE;
+               _loc2_ = EPIC_BATTLE.PROGRESS_TIMERS_UNAVAILABLE;
                this.icon.gotoAndStop(ICON_UNAVAILABLE_FRAME_LABEL);
                this.cooldownTime.visible = true;
                this.progressAnimation.visible = false;
                this._actualState = param1;
                break;
             case EPIC_CONSTS.RESUPPLY_FULL:
-               this.description.descriptionTF.text = EPIC_BATTLE.PROGRESS_TIMERS_FULLY_EQUIPPED;
+               _loc2_ = EPIC_BATTLE.PROGRESS_TIMERS_FULLY_EQUIPPED;
                this.icon.gotoAndStop(ICON_ACTIVE_FRAME_LABEL);
                this.cooldownTime.visible = false;
                this.progressAnimation.visible = true;
                this.progressAnimation.gotoAndStop(1);
                this._actualState = param1;
          }
+         this._descriptionTF.text = this._descriptionText != Values.EMPTY_STR ? this._descriptionText : _loc2_;
+      }
+      
+      public function setStaticText(param1:String, param2:String = "") : void
+      {
+      }
+      
+      public function setTimerFx(param1:ISecondaryTimerFX) : void
+      {
       }
       
       public function showTimer(param1:Boolean) : void
@@ -172,44 +236,19 @@ package net.wg.gui.battle.views.destroyTimers
          this._isShowing = true;
       }
       
-      public function get isSmallSize() : Boolean
-      {
-         return this._isSmallSize;
-      }
-      
-      public function set isSmallSize(param1:Boolean) : void
-      {
-         this._isSmallSize = param1;
-      }
-      
-      public function setSettings(param1:NotificationTimerSettingVO) : void
-      {
-         this._typeId = param1.typeId;
-      }
-      
-      public function get typeId() : String
-      {
-         return this._typeId;
-      }
-      
-      public function setTimerFx(param1:ISecondaryTimerFX) : void
-      {
-      }
-      
-      override public function get isActive() : Boolean
-      {
-         return this._isActive;
-      }
-      
-      override public function set isActive(param1:Boolean) : void
-      {
-         this._isActive = param1;
-      }
-      
       public function tweenToX(param1:int) : void
       {
          this.clearTweenX();
          this._tweenX = new Tween(TWEEN_X_DURATION,this,{"x":param1});
+      }
+      
+      public function updateData(param1:StatusNotificationVO) : void
+      {
+         this._descriptionText = param1.additionalInfo;
+         var _loc2_:String = param1.title;
+         this._titleTF.text = _loc2_ != Values.EMPTY_STR ? _loc2_ : EPIC_BATTLE.PROGRESS_TIMERS_RESUPPLY;
+         updateRadialTimer(param1.totalTime,param1.currentTime);
+         this.setState(param1.additionalState);
       }
       
       private function clearTweenX() : void
@@ -222,14 +261,35 @@ package net.wg.gui.battle.views.destroyTimers
          }
       }
       
+      override public function get isActive() : Boolean
+      {
+         return this._isActive;
+      }
+      
+      override public function set isActive(param1:Boolean) : void
+      {
+         this._isActive = param1;
+      }
+      
       override public function set x(param1:Number) : void
       {
          this.clearTweenX();
          super.x = param1;
       }
       
-      public function setStaticText(param1:String, param2:String = "") : void
+      public function get isSmallSize() : Boolean
       {
+         return this._isSmallSize;
+      }
+      
+      public function set isSmallSize(param1:Boolean) : void
+      {
+         this._isSmallSize = param1;
+      }
+      
+      public function get typeId() : String
+      {
+         return this._typeId;
       }
       
       public function get isShowing() : Boolean
@@ -240,51 +300,6 @@ package net.wg.gui.battle.views.destroyTimers
       public function get actualWidth() : Number
       {
          return FULL_SIZE_WIDTH;
-      }
-      
-      public function getStatusCallback() : IStatusNotificationCallback
-      {
-         return null;
-      }
-      
-      override protected function getProgressBarMc() : MovieClip
-      {
-         return this.progressAnimation;
-      }
-      
-      override protected function getTimerTF() : TextField
-      {
-         return this.cooldownTime.cooldownTF;
-      }
-      
-      override protected function invokeAdditionalActionOnIntervalUpdate() : void
-      {
-         this.icon.gotoAndStop(ICON_UNAVAILABLE_FRAME_LABEL);
-      }
-      
-      override protected function resetAnimState() : void
-      {
-      }
-      
-      override protected function onIntervalHideUpdateHandler() : void
-      {
-      }
-      
-      public function updateData(param1:StatusNotificationVO) : void
-      {
-         this.description.descriptionTF.text = param1.additionalInfo + PERCENT_TEXT;
-         updateRadialTimer(param1.totalTime,param1.currentTime);
-         this.setState(param1.additionalState);
-      }
-      
-      override protected function getStartFrame() : int
-      {
-         return START_FRAME;
-      }
-      
-      override protected function getEndFrame() : int
-      {
-         return END_FRAME;
       }
    }
 }

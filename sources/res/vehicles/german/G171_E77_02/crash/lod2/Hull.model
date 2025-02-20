@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G171_E77_02/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G171_E77_02/crash/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.903114 -0.920590 -3.275552</min>
+		<max>1.913897 0.662403 3.284961</max>
+	</visibilityBox>
+</root>

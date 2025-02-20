@@ -132,7 +132,7 @@ ARENA_GAMEPLAY_NAMES = ('ctf', 'domination', 'assault', 'nations', 'ctf2', 'domi
                         'assault2', 'fallout', 'fallout2', 'fallout3', 'fallout4',
                         'ctf30x30', 'domination30x30', 'sandbox', 'bootcamp', 'epic',
                         'maps_training', 'rts', 'rts_1x1', 'rts_bootcamp', 'comp7',
-                        'bob')
+                        'bob', 'domination3')
 if IS_EDITOR:
     ARENA_GAMEPLAY_READABLE_NAMES = ('Capture The Flag', 'Domination', 'Assault', 'Nations',
                                      'Capture The Flag 2', 'Domination 2', 'Assault 2',
@@ -140,7 +140,7 @@ if IS_EDITOR:
                                      'Fallout 4', 'Capture The Flag 30 vs 30', 'Domination 30 vs 30',
                                      'Sandbox', 'Bootcamp', 'Epic', 'Maps Training',
                                      'RTS', 'RTS 1 vs 1', 'RTS Boot Camp', 'Comp7',
-                                     'Battle of Bloggers')
+                                     'Battle of Bloggers', 'Domination 3')
 ARENA_GAMEPLAY_IDS = dict((value, index) for index, value in enumerate(ARENA_GAMEPLAY_NAMES))
 ARENA_GAMEPLAY_MASK_DEFAULT = 1048575
 VALID_TRAINING_ARENA_GAMEPLAY_IDS = frozenset(ARENA_GAMEPLAY_IDS[gameplayName] for gameplayName in ('ctf',
@@ -156,7 +156,8 @@ VALID_TRAINING_ARENA_GAMEPLAY_IDS = frozenset(ARENA_GAMEPLAY_IDS[gameplayName] f
                                                                                                     'domination30x30',
                                                                                                     'rts',
                                                                                                     'rts_1x1',
-                                                                                                    'rts_bootcamp'))
+                                                                                                    'rts_bootcamp',
+                                                                                                    'domination3'))
 
 class HANGAR_VISIBILITY_TAGS:
     LAYERS = ('1', '2', '3', '4', '5', '6', '7')
@@ -194,13 +195,12 @@ class ARENA_GUI_TYPE:
     RTS_BOOTCAMP = 28
     FUN_RANDOM = 29
     COMP7 = 30
-    BOB = 32
     VERSUS_AI = 31000
     RANGE = (
      UNKNOWN, RANDOM, TRAINING, CYBERSPORT, FALLOUT, EVENT_BATTLES, FALLOUT_CLASSIC,
      FALLOUT_MULTITEAM, SORTIE_2, FORT_BATTLE_2, RANKED, BOOTCAMP,
      EPIC_RANDOM, EPIC_RANDOM_TRAINING, EPIC_BATTLE, EPIC_TRAINING, BATTLE_ROYALE, MAPBOX,
-     MAPS_TRAINING, RTS, RTS_TRAINING, RTS_BOOTCAMP, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     MAPS_TRAINING, RTS, RTS_TRAINING, RTS_BOOTCAMP, FUN_RANDOM, COMP7, VERSUS_AI)
     RANDOM_RANGE = (
      RANDOM, EPIC_RANDOM)
     FALLOUT_RANGE = (
@@ -235,8 +235,7 @@ class ARENA_GUI_TYPE_LABEL:
        ARENA_GUI_TYPE.MAPS_TRAINING: 'maps_training', 
        ARENA_GUI_TYPE.FUN_RANDOM: 'fun_random', 
        ARENA_GUI_TYPE.COMP7: 'comp7', 
-       ARENA_GUI_TYPE.VERSUS_AI: 'versusAI', 
-       ARENA_GUI_TYPE.BOB: 'bob'}
+       ARENA_GUI_TYPE.VERSUS_AI: 'versusAI'}
 
 
 class ARENA_BONUS_TYPE:
@@ -300,6 +299,46 @@ class ARENA_BONUS_TYPE:
 
 ARENA_BONUS_TYPE_NAMES = dict([ (k, v) for k, v in ARENA_BONUS_TYPE.__dict__.iteritems() if isinstance(v, int) ])
 ARENA_BONUS_TYPE_IDS = dict([ (v, k) for k, v in ARENA_BONUS_TYPE_NAMES.iteritems() ])
+
+class ARENA_BONUS_TYPE_LABEL:
+    LABELS = {ARENA_BONUS_TYPE.UNKNOWN: 'special', 
+       ARENA_BONUS_TYPE.REGULAR: 'random', 
+       ARENA_BONUS_TYPE.TRAINING: 'training', 
+       ARENA_BONUS_TYPE.TOURNAMENT: 'tournament', 
+       ARENA_BONUS_TYPE.CLAN: 'clan', 
+       ARENA_BONUS_TYPE.CYBERSPORT: 'team7x7', 
+       ARENA_BONUS_TYPE.EVENT_BATTLES: 'event', 
+       ARENA_BONUS_TYPE.GLOBAL_MAP: 'globalMap', 
+       ARENA_BONUS_TYPE.TOURNAMENT_REGULAR: 'tournament_regular', 
+       ARENA_BONUS_TYPE.TOURNAMENT_CLAN: 'tournament_clan', 
+       ARENA_BONUS_TYPE.FALLOUT_CLASSIC: 'fallout_classic', 
+       ARENA_BONUS_TYPE.FALLOUT_MULTITEAM: 'fallout_multiteam', 
+       ARENA_BONUS_TYPE.SORTIE_2: 'sortie_2', 
+       ARENA_BONUS_TYPE.FORT_BATTLE_2: 'fort_battle_2', 
+       ARENA_BONUS_TYPE.RANKED: 'ranked', 
+       ARENA_BONUS_TYPE.BOOTCAMP: 'bootcamp', 
+       ARENA_BONUS_TYPE.EPIC_RANDOM: 'epic_random', 
+       ARENA_BONUS_TYPE.EPIC_RANDOM_TRAINING: 'epic_random_training', 
+       ARENA_BONUS_TYPE.EVENT_BATTLES_2: 'event_battles_2', 
+       ARENA_BONUS_TYPE.EPIC_BATTLE: 'epic_battle', 
+       ARENA_BONUS_TYPE.EPIC_BATTLE_TRAINING: 'epic_battle_training', 
+       ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO: 'battle_royale_solo', 
+       ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD: 'battle_royale_quad', 
+       ARENA_BONUS_TYPE.TOURNAMENT_EVENT: 'tournament_event', 
+       ARENA_BONUS_TYPE.BOB: 'bob', 
+       ARENA_BONUS_TYPE.EVENT_RANDOM: 'event_random', 
+       ARENA_BONUS_TYPE.BATTLE_ROYALE_TRN_SOLO: 'battle_royale_trn_solo', 
+       ARENA_BONUS_TYPE.BATTLE_ROYALE_TRN_SQUAD: 'battle_royale_trn_squad', 
+       ARENA_BONUS_TYPE.WEEKEND_BRAWL: 'weekend_brawl', 
+       ARENA_BONUS_TYPE.MAPBOX: 'mapbox', 
+       ARENA_BONUS_TYPE.MAPS_TRAINING: 'maps_training', 
+       ARENA_BONUS_TYPE.RTS: 'rts', 
+       ARENA_BONUS_TYPE.RTS_1x1: 'rts_1x1', 
+       ARENA_BONUS_TYPE.RTS_BOOTCAMP: 'rts_bootcamp', 
+       ARENA_BONUS_TYPE.FUN_RANDOM: 'fun_random', 
+       ARENA_BONUS_TYPE.COMP7: 'comp7', 
+       ARENA_BONUS_TYPE.VERSUS_AI: 'versusAI'}
+
 
 class ARENA_BONUS_MASK:
     TYPE_BITS = dict((name, 2 ** id) for id, name in enumerate(ARENA_BONUS_TYPE.RANGE[1:]))
@@ -461,23 +500,22 @@ class PREBATTLE_TYPE:
     RTS_TRAINING = 22
     FUN_RANDOM = 23
     COMP7 = 24
-    BOB = 25
     VERSUS_AI = 31000
     RANGE = (
      SQUAD, TRAINING, COMPANY, TOURNAMENT, CLAN, UNIT,
      CLUBS, FALLOUT, EVENT, STRONGHOLD, E_SPORT_COMMON,
      EPIC, EPIC_TRAINING, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT,
-     MAPBOX, MAPS_TRAINING, RTS, RTS_TRAINING, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     MAPBOX, MAPS_TRAINING, RTS, RTS_TRAINING, FUN_RANDOM, COMP7, VERSUS_AI)
     LEGACY_PREBATTLES = (
      TRAINING, TOURNAMENT, CLAN, EPIC_TRAINING, RTS_TRAINING)
     SQUAD_PREBATTLES = (
-     SQUAD, FALLOUT, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     SQUAD, FALLOUT, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI)
     UNIT_MGR_PREBATTLES = (
      UNIT, SQUAD, CLAN, FALLOUT, EVENT, STRONGHOLD,
-     E_SPORT_COMMON, EPIC, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     E_SPORT_COMMON, EPIC, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI)
     CREATE_FROM_CLIENT = (
      NONE, UNIT, SQUAD, EPIC, FALLOUT, EVENT, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7,
-     VERSUS_AI, BOB)
+     VERSUS_AI)
     CREATE_FROM_WEB = (
      UNIT, SQUAD, STRONGHOLD)
     TRAININGS = (
@@ -485,12 +523,11 @@ class PREBATTLE_TYPE:
     EXTERNAL_PREBATTLES = (
      STRONGHOLD, TOURNAMENT)
     CREATE_EX_FROM_SERVER = (
-     SQUAD, CLAN, EPIC, BATTLE_ROYALE, EVENT, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI,
-     BOB)
+     SQUAD, CLAN, EPIC, BATTLE_ROYALE, EVENT, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI)
     CREATE_EX_FROM_WEB = (
      SQUAD, CLAN)
     JOIN_EX = (
-     SQUAD, EPIC, EVENT, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     SQUAD, EPIC, EVENT, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI)
     EPIC_PREBATTLES = (
      EPIC, EPIC_TRAINING)
     RTS_PREBATTLES = (
@@ -1407,7 +1444,6 @@ class QUEUE_TYPE:
     RTS_BOOTCAMP = 27
     FUN_RANDOM = 28
     COMP7 = 29
-    BOB = 31
     VERSUS_AI = 31000
     FALLOUT = (
      FALLOUT_CLASSIC, FALLOUT_MULTITEAM)
@@ -1415,11 +1451,11 @@ class QUEUE_TYPE:
      RANDOMS, COMPANIES, VOLUNTEERS, UNITS, EVENT_BATTLES, UNIT_ASSEMBLER, SPEC_BATTLE, FALLOUT,
      FALLOUT_CLASSIC, FALLOUT_MULTITEAM, STRONGHOLD_UNITS, RANKED, BOOTCAMP, EPIC, TOURNAMENT_UNITS, BATTLE_ROYALE,
      BATTLE_ROYALE_TOURNAMENT, MAPBOX, MAPS_TRAINING, RTS, RTS_1x1, RTS_BOOTCAMP, FUN_RANDOM, COMP7,
-     VERSUS_AI, BOB)
+     VERSUS_AI)
     REMOVED = (
      COMPANIES,)
     BASE_ON_DEQUEUE = (
-     RANDOMS, EVENT_BATTLES, UNITS, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     RANDOMS, EVENT_BATTLES, UNITS, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI)
 
 
 QUEUE_TYPE_NAMES = {v:k for k, v in QUEUE_TYPE.__dict__.iteritems() if isinstance(v, int) if isinstance(v, int)}
@@ -1507,7 +1543,6 @@ class GameSeasonType(object):
     EVENT_BATTLES = 5
     FUN_RANDOM = 6
     COMP7 = 7
-    BOB = 10
 
 
 SEASON_TYPE_BY_NAME = {'ranked': GameSeasonType.RANKED, 
@@ -1515,8 +1550,7 @@ SEASON_TYPE_BY_NAME = {'ranked': GameSeasonType.RANKED,
    'battle_royale': GameSeasonType.BATTLE_ROYALE, 
    'mapbox': GameSeasonType.MAPBOX, 
    'event_battles': GameSeasonType.EVENT_BATTLES, 
-   'comp7': GameSeasonType.COMP7, 
-   'bob': GameSeasonType.BOB}
+   'comp7': GameSeasonType.COMP7}
 SEASON_NAME_BY_TYPE = {val:key for key, val in SEASON_TYPE_BY_NAME.iteritems()}
 CHANNEL_SEARCH_RESULTS_LIMIT = 50
 USER_SEARCH_RESULTS_LIMIT = 50
@@ -1613,7 +1647,7 @@ class REQUEST_COOLDOWN:
     MAKE_DENUNCIATION = 1.0
     PREFERRED_MAPS = 1.0
     APPLY_ADDITIONAL_XP = 2.0
-    SINGLE_TOKEN = 2.0
+    SINGLE_TOKEN = 5.0
     CMD_BUY_VEHICLE = 5.0
     LOG_CLIENT_SESSION_STATS = 5.0
     LOG_CLIENT_SYSTEM = 5.0
@@ -1983,8 +2017,6 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.BATTLE_MATTERS_QUESTS: 'battle matters quests show reward info', 
    USER_SERVER_SETTINGS.QUESTS_PROGRESS: 'feedback quests progress', 
    91: 'Loot box last viewed count', 
-   92: 'Battle of Bloggers carousel filter', 
-   93: 'Battle of Bloggers carousel filter', 
    USER_SERVER_SETTINGS.SESSION_STATS: 'sessiong statistics settings', 
    97: 'BattlePass carouse filter 1', 
    98: 'Battle Pass Storage', 
@@ -2225,16 +2257,14 @@ class INVITATION_TYPE:
     FUN_RANDOM = PREBATTLE_TYPE.FUN_RANDOM
     COMP7 = PREBATTLE_TYPE.COMP7
     VERSUS_AI = PREBATTLE_TYPE.VERSUS_AI
-    BOB = PREBATTLE_TYPE.BOB
     RANGE = (
-     SQUAD, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI, BOB)
+     SQUAD, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7, VERSUS_AI)
     TYPES_WITH_EXTRA_DATA = (FUN_RANDOM,)
     INVITATION_TYPE_FROM_ARENA_BONUS_TYPE_MAPPING = {ARENA_BONUS_TYPE.REGULAR: SQUAD, 
        ARENA_BONUS_TYPE.EPIC_RANDOM: SQUAD, 
        ARENA_BONUS_TYPE.EPIC_BATTLE: EPIC, 
        ARENA_BONUS_TYPE.EVENT_BATTLES: EVENT, 
-       ARENA_BONUS_TYPE.MAPBOX: MAPBOX, 
-       ARENA_BONUS_TYPE.BOB: BOB}
+       ARENA_BONUS_TYPE.MAPBOX: MAPBOX}
 
     @staticmethod
     def invitationTypeFromArenaBonusType(arenaBonusType):
@@ -2680,6 +2710,7 @@ class QUEST_TYPE_OPERATION_FOR_KAFKA:
     STOP_PAUSE = 6
     RESET = 7
     COMPLETED_AFTER_REBALANCE = 8
+    FAILED_AFTER_REBALANCE = 9
 
 
 class BotNamingType(object):

@@ -152,7 +152,7 @@
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
-					<fx>shaders/std_effects/PBS_ext_detail_detail_rigid_skinned_havok_fade.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_detail_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap

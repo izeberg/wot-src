@@ -563,8 +563,8 @@ msgstr "Павышае шанц паражэння модуляў і экіпа�
 
 msgid "loader_desperado/alertDescription"
 msgstr ""
-"При наличии механики нагрева орудия срабатывание навыка дополнительно "
-"уменьшает скорость накопления температуры на "
+"Пры наяўнасці механікі нагрэву гарматы спрацоўванне навыку дадаткова "
+"памяншае хуткасць назапашвання тэмпературы на "
 "{yellow_Start}%(temperatureGunHeating)s{yellow_End}."
 
 msgid "loader_desperado/alt/description"
@@ -586,8 +586,8 @@ msgstr ""
 
 msgid "loader_desperado/hudDescription"
 msgstr ""
-"Уменьшение времени перезарядки и скорости нагревания орудия (при низком "
-"запасе прочности машины)."
+"Памяншэнне часу перанабівання і хуткасці награвання гарматы (пры нізкім "
+"запасе трываласці машыны)."
 
 msgid "loader_desperado/maxLvlDescription"
 msgstr ""
@@ -606,7 +606,7 @@ msgstr ""
 msgid "loader_intuition/alertDescription"
 msgstr ""
 "При наличии механики нагрева орудия навык сработает только при полностью "
-"остывшем орудии."
+"охлаждённом орудии."
 
 msgid "loader_intuition/alt/description"
 msgstr ""
@@ -622,25 +622,24 @@ msgstr ""
 
 msgid "loader_intuition/currentLvlDescription"
 msgstr ""
-"{greenBright_Start}Скорость смены типа боеприпаса{greenBright_End} в уже "
-"заряженном орудии повышена на "
+"{greenBright_Start}Хуткасць змены тыпу боепрыпасу{greenBright_End} ва ўжо "
+"зараджанай гармаце павышана на "
 "{greenBright_Start}%(vehicleReloadTimeAfterShellChange)s{greenBright_End}."
 
 msgid "loader_intuition/hudDescription"
-msgstr "Повышена скорость смены типа боеприпаса."
+msgstr "Павышана хуткасць змены тыпу боепрыпасу."
 
 msgid "loader_intuition/maxLvlDescription"
 msgstr ""
-"Полное изучение повысит {greenBright_Start}скорость смены типа "
-"боеприпаса{greenBright_End} в уже заряженном орудии на "
+"Поўнае вывучэнне павысіць {greenBright_Start}хуткасць змены тыпу "
+"боепрыпасу{greenBright_End} ва ўжо зараджанай гармаце на "
 "{greenBright_Start}%(vehicleReloadTimeAfterShellChange)s{greenBright_End}."
 
 msgid "loader_intuition/name"
 msgstr "Прадчуццё"
 
 msgid "loader_intuition/shortDescription"
-msgstr ""
-"Значительно повышает скорость смены типа боеприпаса в заряженном орудии."
+msgstr "Значная павышае хуткасць змены тыпу боепрыпасу ў зараджанай гармаце."
 
 msgid "loader_pedant/alt/description"
 msgstr ""

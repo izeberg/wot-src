@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>
-			-7.2367 -1.49185 -8.55497
-			<!--BW_String-->
-		</min>
-		<max>
-			7.99852 65.3115 7.2367
-			<!--BW_String-->
-		</max>
+		<min>-7.236700 -1.491850 -8.554970</min>
+		<max>7.998520 65.311501 7.236700</max>
 	</visibilityBox>
 	<nodefullVisual>content/Buildings/hd_bld_EU_211_Lighthouse/normal/lod3/hd_bld_EU_211_Lighthouse</nodefullVisual>
 </root>

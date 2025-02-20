@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<parent>vehicles/american/A12_T32/crash/lod2/Hull</parent>
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-2.07222 -1.04714 -3.59631
-			<!--BW_String-->
-		</min>
-		<max>
-			2.39379 0.670876 3.55154
-			<!--BW_String-->
-		</max>
+		<min>-2.072220 -1.047140 -3.596310</min>
+		<max>2.393790 0.670876 3.551540</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/american/A12_T32/crash/lod1/Hull</nodefullVisual>
 </root>

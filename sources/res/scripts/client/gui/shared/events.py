@@ -321,7 +321,6 @@ class MissionsEvent(HasCtxEvent):
     ON_DEACTIVATE = 'onDeactivate'
     ON_TAB_CHANGED = 'onTabChanged'
     PAGE_INVALIDATE = 'pageInvalidate'
-    RELOAD_TAB_CONTEXT = 'reloadTabContext'
 
 
 class PersonalMissionsEvent(HasCtxEvent):

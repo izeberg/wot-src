@@ -158,11 +158,19 @@ package net.wg.gui.lobby.header.headerButtonBar
       
       override protected function updateState() : void
       {
+         var _loc1_:MovieClip = null;
+         var _loc2_:int = 0;
          super.updateState();
          this.clearTweens();
          if(this._isTopLayout)
          {
-            this._moneyHoverTween = new Tween(MONEY_TWEEN_DURATION,!!this.moneyIconText.visible ? this.moneyIconText : this.wallet,{"y":(!!isHovered ? MONEY_TOP_Y : MONEY_CENTER_Y)},{"ease":Linear.easeIn});
+            _loc1_ = !!this.moneyIconText.visible ? this.moneyIconText : this.wallet;
+            _loc2_ = !!isHovered ? int(WALLET_TOP_Y) : int(WALLET_CENTER_Y);
+            if(_loc1_ == this.moneyIconText)
+            {
+               _loc2_ = !!isHovered ? int(MONEY_TOP_Y) : int(MONEY_CENTER_Y);
+            }
+            this._moneyHoverTween = new Tween(MONEY_TWEEN_DURATION,_loc1_,{"y":_loc2_},{"ease":Linear.easeIn});
             doItTextField.visible = isHovered;
          }
       }

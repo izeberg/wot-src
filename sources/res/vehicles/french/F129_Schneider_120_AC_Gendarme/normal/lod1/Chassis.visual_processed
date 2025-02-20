@@ -291,7 +291,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>-1.368071 -0.479973 -2.220207</row3>
+						<row3>-1.368071 -0.483489 -2.220207</row3>
 					</transform>
 					<node>
 						<identifier>WD_L1</identifier>
@@ -299,7 +299,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 -0.000000 1.000000</row2>
-							<row3>0.000000 0.383253 -0.000000</row3>
+							<row3>0.000000 0.380778 -0.000000</row3>
 						</transform>
 						<node>
 							<identifier>WD_L1_BlendBone</identifier>
@@ -307,7 +307,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.368071 -0.403280 2.220207</row3>
+								<row3>1.368071 -0.397289 2.220207</row3>
 							</transform>
 						</node>
 					</node>
@@ -317,7 +317,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>1.368071 -0.020027 2.220207</row3>
+							<row3>1.368071 -0.016511 2.220207</row3>
 						</transform>
 					</node>
 				</node>
@@ -543,15 +543,15 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>1.368071 -0.479986 -2.130143</row3>
+						<row3>1.368071 -0.483489 -2.130143</row3>
 					</transform>
 					<node>
 						<identifier>WD_R1</identifier>
 						<transform>
 							<row0>1.000000 -0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 0.000000 1.000000</row2>
-							<row3>-0.000000 0.383266 0.000000</row3>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.000000 0.380791 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>WD_R1_BlendBone</identifier>
@@ -559,7 +559,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.368071 -0.403280 2.130143</row3>
+								<row3>-1.368071 -0.397302 2.130143</row3>
 							</transform>
 						</node>
 					</node>
@@ -569,7 +569,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>-1.368071 -0.020014 2.130143</row3>
+							<row3>-1.368071 -0.016511 2.130143</row3>
 						</transform>
 					</node>
 				</node>
@@ -1205,7 +1205,7 @@
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>1.347816 0.508742 -0.370090</groupOrigin>
+				<groupOrigin>1.347816 0.506999 -0.370090</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1280,7 +1280,7 @@
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-1.347811 0.509887 -0.326509</groupOrigin>
+				<groupOrigin>-1.347811 0.508223 -0.326509</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1296,8 +1296,8 @@
 		<node>WD_L0_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1346,7 +1346,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.288239 0.534240 -0.360862</groupOrigin>
+				<groupOrigin>-1.288239 0.531245 -0.360862</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1362,8 +1362,8 @@
 		<node>WD_R0_BlendBone</node>
 		<node>WD_R1_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1412,7 +1412,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.288239 0.534241 -0.405894</groupOrigin>
+				<groupOrigin>1.288239 0.531252 -0.405894</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1421,6 +1421,6 @@
 		<min>-1.597738 0.000159 -2.632223</min>
 		<max>1.597743 1.019615 3.293932</max>
 	</boundingBox>
-	<geometrySize>347078</geometrySize>
+	<geometrySize>346838</geometrySize>
 	<minUVDensity>0.078320</minUVDensity>
 </root>

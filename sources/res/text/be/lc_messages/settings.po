@@ -121,9 +121,9 @@ msgstr "Графіка"
 
 msgid "RENDER_PIPELINE/description"
 msgstr ""
-"Палепшаная: забяспечвае найбольшую якасць відарыса.\n"
+"Улучшенная: позволяет добиться максимального качества изображения. Опция доступна только с DirectX 11 и новее.\n"
 "\n"
-"Звычайная: забяспечвае найбольшую хуткадзейнасць, спрашчаючы або адключаючы некаторыя візуальныя эфекты."
+"Стандартная: позволяет добиться максимального быстродействия, упрощая или отключая некоторые визуальные эффекты."
 
 msgid "RENDER_PIPELINE/label"
 msgstr "Графіка:"
@@ -529,7 +529,7 @@ msgid "chat/chatContactsListOnly"
 msgstr "Прымаць паведамленні толькі са спіса кантактаў"
 
 msgid "chat/disableBattleChat"
-msgstr "Отключить чат"
+msgstr "Адключыць чат"
 
 msgid "chat/enableStoreChannelsWindows"
 msgstr "Памятаць пазіцыю камеры і вокнаў каналаў"
@@ -1186,6 +1186,12 @@ msgstr "Гістарычныя"
 msgid "game/customizationDisplayType/notHistorical"
 msgstr "Гістарычныя і негістарычныя"
 
+msgid "game/disableThermalVisionEffect"
+msgstr "Показывать эффект пирометра в снайперском прицеле"
+
+msgid "game/disableThermalVisionSectorEffect"
+msgstr "Показывать сектор пирометра в аркадном прицеле"
+
 msgid "game/displayPlatoonMembers"
 msgstr "Паказваць тэхніку ўдзельнікаў звязу ў Гаражы"
 
@@ -1353,6 +1359,9 @@ msgstr "Паказваць адметныя адзнакі"
 
 msgid "game/showSectorOnMap"
 msgstr "Паказваць сектар абстрэлу САУ"
+
+msgid "game/showThermalVisionSectorOnMap"
+msgstr "Показывать сектор действия пирометра"
 
 msgid "game/showVectorOnMap"
 msgstr "Паказваць прамень кірунку камеры"
@@ -2470,21 +2479,21 @@ msgstr ""
 "параметры «Вертыкальная сінхранізацыя»)."
 
 msgid "uiEffects"
-msgstr "Эффекты интерфейса"
+msgstr "Эфекты інтэрфейсу"
 
 msgid "uiEffects/attention"
 msgstr ""
-"Включение этой настройки может\n"
-"привести к снижению производительности."
+"Уключэнне гэтай налады можа\n"
+"прывесці да зніжэння прадукцыйнасці."
 
 msgid "uiEffects/body"
 msgstr ""
-"Данная настройка включает или отключает\n"
-"дополнительные визуальные эффекты\n"
-"интерфейса."
+"Гэтая налада выключае або адключае\n"
+"дадатковыя візуальныя эфекты\n"
+"інтэрфейсу."
 
 msgid "uiEffects/header"
-msgstr "Эффекты интерфейса"
+msgstr "Эфекты інтэрфейсу"
 
 msgid "vertSync"
 msgstr "Вертыкальная сінхранізацыя"

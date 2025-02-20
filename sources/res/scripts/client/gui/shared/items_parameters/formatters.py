@@ -165,8 +165,8 @@ KPI_FORMATTERS = {KPI.Name.DAMAGED_MODULES_DETECTION_TIME: _kpiNoSignValue,
    KPI.Name.LIMITS_FOR_GUN_BOOST: _kpiNoSignWithSpec, 
    KPI.Name.VEHICLE_GUN_AND_GUN_CLIP_COOLDOWN: _kpiWithSpec, 
    KPI.Name.TEMPERATURE_STATES_COUNT: _kpiNoSignNoEndingValue, 
-   KPI.Name.TEMPERATURE_HEATING_PER_SEC: _kpiNoSignNoEndingList, 
-   KPI.Name.TEMPERATURE_COOLING_PER_SEC: _kpiNoSignNoEndingList, 
+   KPI.Name.TEMPERATURE_HEATING_TIME: _kpiNoSignNoEndingList, 
+   KPI.Name.TEMPERATURE_COOLING_TIME: _kpiNoSignNoEndingList, 
    KPI.Name.TEMPERATURE_COOLING_DELAY: _kpiNoSignNoEndingList, 
    KPI.Name.TEMPERATURE_DAMAGE_FACTOR: _kpiFormatNoSignEndingForEveryValueList}
 COLORLESS_SCHEME = (
@@ -502,8 +502,8 @@ FORMAT_SETTINGS = {'relativePower': _integralFormat,
    AUTOSHOOT_FLAME_CHANGE_SHELL_TIME: _niceFormat, 
    AUOTSHOOT_FLAME_OVERHEAT_COOLING_TIME: _niceFormat, 
    AUTOSHOOT_FIRE_UNTIL_OVERHEAT_TIME: _niceFormat, 
-   KPI.Name.TEMPERATURE_HEATING_PER_SEC: _niceListFormat, 
-   KPI.Name.TEMPERATURE_COOLING_PER_SEC: _niceListFormat, 
+   KPI.Name.TEMPERATURE_HEATING_TIME: _niceListFormat, 
+   KPI.Name.TEMPERATURE_COOLING_TIME: _niceListFormat, 
    KPI.Name.TEMPERATURE_COOLING_DELAY: _niceListFormat}
 
 def _deltaWrapper(fn):
@@ -535,15 +535,13 @@ _SMART_ROUND_PARAMS = (
  'damage', 'piercingPower', 'bombDamage', 'shellsCount', 'shellReloadingTime',
  'reloadMagazineTime', 'reloadTime', DISPERSION_RADIUS, 'aimingTime', 'weight',
  DUAL_GUN_RATE_TIME, DUAL_GUN_CHARGE_TIME, 'crewRolesFactor')
-_STATES_INDEX_IN_COLOR_MAP = {PARAM_STATE.WORSE: 0, PARAM_STATE.NORMAL: 1, PARAM_STATE.BETTER: 2}
+_STATES_INDEX_IN_COLOR_MAP = {PARAM_STATE.WORSE: 0, PARAM_STATE.NORMAL: 1, PARAM_STATE.BETTER: 2, PARAM_STATE.NOT_APPLICABLE: 1}
 
 def colorize(paramStr, state, colorScheme):
     if isinstance(state, (tuple, list)):
         stateType, _ = state
     else:
         stateType = state
-    if stateType == PARAM_STATE.NOT_APPLICABLE:
-        return paramStr
     return colorScheme[_STATES_INDEX_IN_COLOR_MAP[stateType]](paramStr)
 
 

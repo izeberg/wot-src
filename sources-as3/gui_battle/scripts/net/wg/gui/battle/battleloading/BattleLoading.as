@@ -10,7 +10,6 @@ package net.wg.gui.battle.battleloading
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
    import net.wg.gui.battle.eventInfoPanel.data.EventInfoPanelVO;
    import net.wg.gui.components.controls.UILoaderAlt;
-   import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.gui.events.UILoaderEvent;
    import net.wg.infrastructure.interfaces.IDAAPIDataClass;
    import org.idmedia.as3commons.util.StringUtils;
@@ -190,11 +189,7 @@ package net.wg.gui.battle.battleloading
       override protected function onPopulate() : void
       {
          super.onPopulate();
-         var _loc1_:MinimapPresentation = this.form.getMapComponent();
-         if(_loc1_)
-         {
-            registerFlashComponentS(_loc1_,Aliases.MINIMAP_ON_BATTLE_LOADING);
-         }
+         registerFlashComponentS(this.form.getMapComponent(),Aliases.MINIMAP_ON_BATTLE_LOADING);
       }
       
       override protected function setEventInfoPanelData(param1:EventInfoPanelVO) : void

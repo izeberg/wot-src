@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>26.500002</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>25.000002</startTime>
+				<duration>1.033333</duration>
+				<resourceID>content/Environment/hd_env_UNI_673_CosmicDebris/animation/hd_env_UNI_673_CosmicDebris_06_up_01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.200000</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dust</name>
+		<type>particle</type>
+		<resource>particles/environment/interior/280_cosmic_debris_06_dust.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>25.000002</startTime>
+				<value>0.000000 1.586975 3.411537</value>
+				<inTangent>0.000000 1.318122 0.540502</inTangent>
+				<outTangent>0.000000 1.318122 0.540502</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.200001</startTime>
+				<value>0.000000 3.168720 4.060139</value>
+				<inTangent>-0.000000 1.318122 0.540502</inTangent>
+				<outTangent>-0.000000 1.318122 0.540502</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>25.000002</startTime>
+				<value>0.000000</value>
+				<inTangent>7.500000</inTangent>
+				<outTangent>15.000014</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.133335</startTime>
+				<value>2.000000</value>
+				<inTangent>15.000014</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.633335</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-8.571419</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.866669</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.571419</inTangent>
+				<outTangent>-4.285714</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>25.000002</startTime>
+				<duration>1.366667</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>25.000002</startTime>
+				<duration>1.500000</duration>
+				<sequenceSound>ev_cosmic_booster_seq</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

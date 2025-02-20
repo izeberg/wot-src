@@ -38,6 +38,9 @@ _STATUS_EFFECTS_PRIORITY = (
  BATTLE_MARKER_STATES.DEBUFF_STATE,
  BATTLE_MARKER_STATES.STUN_STATE,
  BATTLE_MARKER_STATES.INSPIRED_STATE)
+_SEPARATE_STATUS_EFFECTS = (
+ BATTLE_MARKER_STATES.ABILITY_STATE,
+ BATTLE_MARKER_STATES.THERMAL_VISION_STATE)
 _VEHICLE_MARKER_MIN_SCALE = 0.0
 _VEHICLE_MARKER_CULL_DISTANCE = 1000000
 _VEHICLE_MARKER_BOUNDS = Math.Vector4(50, 50, 80, 65)
@@ -209,7 +212,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
         return DefaultMarkerSubType.ENEMY_MARKER_SUBTYPE
 
     def showMarkerTimer(self, vehicleID, handle, statusID, leftTime, animated, isSourceVehicle=False):
-        if statusID == BATTLE_MARKER_STATES.ABILITY_STATE:
+        if statusID in _SEPARATE_STATUS_EFFECTS:
             self.__updateSeparateMarkerState(leftTime > 0, handle, statusID, leftTime, animated, isSourceVehicle)
         else:
             self._updateStatusMarkerState(vehicleID, leftTime > 0, handle, statusID, leftTime, animated, isSourceVehicle)
@@ -218,7 +221,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
         self._updateStatusEffectTimer(handle, statusID, leftTime, animated)
 
     def hideMarkerTimer(self, vehicleID, handle, statusID, currentlyActiveStatusID, animated, isSourceVehicle=False):
-        if statusID == BATTLE_MARKER_STATES.ABILITY_STATE:
+        if statusID in _SEPARATE_STATUS_EFFECTS:
             self.__updateSeparateMarkerState(False, handle, statusID, 0, animated, isSourceVehicle)
         else:
             self._updateStatusMarkerState(vehicleID, False, handle, statusID, 0, animated, isSourceVehicle)
@@ -299,6 +302,8 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
             self._updateAbilityMarker(vehicleID, value, handle, BATTLE_MARKER_STATES.ABILITY_STATE, showCountdown=True, isSourceVehicle=True)
         elif eventID == _EVENT_ID.DETECTED_BY_THERMAL_VISION:
             self.__showDetectedByThermalVision(handle, value)
+        elif eventID == _EVENT_ID.THERMAL_VISION_TIME:
+            self.__updateThermalVisionFinishTimeMarker(vehicleID, handle, value)
 
     def _onChatCommandTargetUpdate(self, _, chatCommandStates):
         for vehicleID, state in chatCommandStates.iteritems():
@@ -752,6 +757,14 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
 
     def __updatePassiveEngineeringMarker(self, vehicleID, handle, isAttacker, enabled, animated=True):
         self._updateStatusMarkerState(vehicleID, enabled, handle, BATTLE_MARKER_STATES.ENGINEER_STATE, enabled, animated, isAttacker)
+
+    def __updateThermalVisionFinishTimeMarker(self, vehicleID, handle, endTime):
+        vehicle = BigWorld.entities.get(vehicleID)
+        if vehicle is None or not vehicle.isAlive():
+            return
+        duration = max(endTime - BigWorld.serverTime(), 0)
+        self._updateMarkerTimer(vehicleID, handle=handle, duration=duration, statusID=BATTLE_MARKER_STATES.THERMAL_VISION_STATE, showCountdown=True, isSourceVehicle=True)
+        return
 
     def _getMarkerStatusPriority(self, markerState):
         try:

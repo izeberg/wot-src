@@ -142,14 +142,6 @@ msgstr ""
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
 msgstr "Взвод"
 
-msgid "headerButton/tooltips/bobSquad/body"
-msgstr ""
-"Создание формирования из 2-3 игроков для совместной игры в боях события "
-"«Битва блогеров 2025»."
-
-msgid "headerButton/tooltips/bobSquad/header"
-msgstr "Взвод"
-
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
 msgstr ""
 "До завершения квалификации вы не сможете создавать или присоединяться к взводам.\n"
@@ -165,6 +157,14 @@ msgstr ""
 
 msgid "headerButton/tooltips/comp7Squad/header"
 msgstr "Взвод"
+
+msgid "headerButton/tooltips/cosmicSquad/body"
+msgstr ""
+"Бои в режиме «На Марс: хаос» ведутся в свободном формате. Создание взводов "
+"невозможно."
+
+msgid "headerButton/tooltips/cosmicSquad/header"
+msgstr "Взводы недоступны"
 
 msgid "headerButton/tooltips/dominationSquad/body"
 msgstr ""
@@ -295,9 +295,6 @@ msgstr "Штраф к опыту из-за некорректного соста
 
 msgid "members/header/battle_royal"
 msgstr ": Стальной охотник"
-
-msgid "members/header/bob"
-msgstr ": Битва блогеров"
 
 msgid "members/header/comp7"
 msgstr ": Натиск"

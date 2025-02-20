@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un01_Cromwell_VII/crash/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.374035 -0.263796 -0.756217</min>
+		<max>0.254017 0.283249 2.224569</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un01_Cromwell_VII/crash/lod1/Gun_02</nodefullVisual>
+</root>

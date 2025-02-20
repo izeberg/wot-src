@@ -29,18 +29,10 @@ msgstr "Комплекс параметров, влияющих на корне�
 msgid "domain/battleParams/name"
 msgstr "Параметры боя"
 
-msgid "domain/bobSeasonModifiers/description"
-msgstr ""
-"Изменения коснутся следующих параметров: разброс орудия, разброс "
-"бронепробития, прочность, получаемый урон от специальных снарядов."
-
-msgid "domain/bobSeasonModifiers/name"
-msgstr "Модификатор события"
-
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
-"Модификатор, увеличивающий прочность всей техники в режиме, уменьшающий "
-"время подготовки снаряжения и снижающий обзор."
+"На всю технику в боях Натиска действует особый модификатор, изменяющий её "
+"параметры."
 
 msgid "domain/comp7SeasonModifiers/name"
 msgstr "Модификатор Натиска"
@@ -70,6 +62,15 @@ msgstr "Комплекс параметров, влияющих на разбр�
 
 msgid "domain/randomization/name"
 msgstr "Случайные величины"
+
+msgid "domain/stepRepairPoint/description"
+msgstr ""
+"Позволяет восстановить очки прочности машины, отремонтировать повреждённые "
+"модули и вернуть в строй членов экипажа, а также пополнить боекомплект прямо"
+" в бою."
+
+msgid "domain/stepRepairPoint/name"
+msgstr "Ремонтная зона"
 
 msgid "domain/sustaining/description"
 msgstr ""
@@ -120,10 +121,6 @@ msgstr "Разброс урона"
 msgid "modifier/name/deviceDamage"
 msgstr "Урон по модулям"
 
-msgid "modifier/name/dirtBoost"
-msgstr ""
-"Сцепление с грунтами было увеличено для исключения частых заносов техники."
-
 msgid "modifier/name/dispFactorAfterShot"
 msgstr "Разброс после выстрела"
 
@@ -157,8 +154,59 @@ msgstr "Урон экипажу от падения"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перезарядка снаряжения"
 
-msgid "modifier/name/fakeImprovedShellDamage"
-msgstr "Урон от специального снаряда"
+msgid "modifier/name/fakeEngineModifier"
+msgstr "Мощность двигателя (все, кроме ЛТ и СТ)"
+
+msgid "modifier/name/fakeEngineModifierLT"
+msgstr "Мощность двигателя (ЛТ)"
+
+msgid "modifier/name/fakeEngineModifierMT"
+msgstr "Мощность двигателя (СТ)"
+
+msgid "modifier/name/fakeModifierRepairCooldown"
+msgstr "Минимальное время перезарядки зоны ремонта после использования."
+
+msgid "modifier/name/fakeModifierRepairSpeed"
+msgstr "Скорость восстановления очков прочности машины."
+
+msgid "modifier/name/fakePiercingModifierLTSPGA"
+msgstr "Бронепробитие, 100 м (ЛТ, САУ штурмовые)"
+
+msgid "modifier/name/fakePiercingModifierMTHTATSPG"
+msgstr "Бронепробитие, 100 м (СТ, ТТ, ПТ-САУ)"
+
+msgid "modifier/name/fakeRadioModifier"
+msgstr "Радиус действия радиостанции (ЛТ, СТ, ТТ, ПТ-САУ, САУ штурмовые)"
+
+msgid "modifier/name/fakeRadioModifierSPG"
+msgstr "Радиус действия радиостанции (САУ поддержки)"
+
+msgid "modifier/name/fakeReloadModifierATSPG"
+msgstr "Время перезарядки (ПТ-САУ)"
+
+msgid "modifier/name/fakeReloadModifierHT"
+msgstr "Время перезарядки (ТТ)"
+
+msgid "modifier/name/fakeReloadModifierLT"
+msgstr "Время перезарядки (ЛТ)"
+
+msgid "modifier/name/fakeReloadModifierMTSPGA"
+msgstr "Время перезарядки (СТ, САУ штурмовые)"
+
+msgid "modifier/name/fakeReloadModifierSPGS"
+msgstr "Время перезарядки (САУ поддержки)"
+
+msgid "modifier/name/fakeVisionModifierATSPGSPGA"
+msgstr "Радиус обзора (ПТ-САУ, САУ штурмовые)"
+
+msgid "modifier/name/fakeVisionModifierLT"
+msgstr "Радиус обзора (ЛТ)"
+
+msgid "modifier/name/fakeVisionModifierMTHT"
+msgstr "Радиус обзора (СТ, ТТ)"
+
+msgid "modifier/name/fakeVisionModifierSPGS"
+msgstr "Радиус обзора (САУ поддержки)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максимальная скорость движения вперёд"
@@ -211,20 +259,8 @@ msgstr "Скорость снарядов"
 msgid "modifier/name/shotDispersionRadius"
 msgstr "Разброс на 100 метров"
 
-msgid "modifier/name/speedBoostATSPG"
-msgstr "Максимальная скорость вперёд и назад (ПТ-САУ)"
-
-msgid "modifier/name/speedBoostHT"
-msgstr "Максимальная скорость вперёд и назад (ТТ)"
-
-msgid "modifier/name/speedBoostLT"
-msgstr "Максимальная скорость вперёд и назад (ЛТ)"
-
-msgid "modifier/name/speedBoostMT"
-msgstr "Максимальная скорость вперёд и назад (СТ)"
-
-msgid "modifier/name/speedBoostSPG"
-msgstr "Максимальная скорость вперёд и назад (САУ)"
+msgid "modifier/name/thermalVisionDistance"
+msgstr "Обзор с пирометром"
 
 msgid "modifier/name/turretPressureDamage"
 msgstr "Урон от давления сорванной башни"
@@ -270,6 +306,9 @@ msgstr "(но {min}, {max})"
 
 msgid "modifiersDomainTooltip/subtitle/plural"
 msgstr "Модификатор влияет на параметры:"
+
+msgid "modifiersDomainTooltip/subtitle/short"
+msgstr "Параметры:"
 
 msgid "modifiersDomainTooltip/subtitle/single"
 msgstr "Модификатор влияет на параметр:"

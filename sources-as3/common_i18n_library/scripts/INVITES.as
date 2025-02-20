@@ -75,8 +75,6 @@ package
       
       public static const INVITES_TEXT_COMP7:String = "#invites:invites/text/COMP7";
       
-      public static const INVITES_TEXT_BOB:String = "#invites:invites/text/BOB";
-      
       public static const INVITES_TEXT_FORT_OFFENCE:String = "#invites:invites/text/fort/offence";
       
       public static const INVITES_TEXT_FORT_DEFENCE:String = "#invites:invites/text/fort/defence";
@@ -240,14 +238,6 @@ package
       public static const INVITES_NOTE_LEAVE_PERMANENTLY_QUEUE_WINBACK:String = "#invites:invites/note/leave_permanently/QUEUE_WINBACK";
       
       public static const INVITES_NOTE_CHANGE_AND_LEAVE_PERMANENTLY_QUEUE_WINBACK:String = "#invites:invites/note/change_and_leave_permanently/QUEUE_WINBACK";
-      
-      public static const INVITES_NOTE_LEAVE_QUEUE_BOB:String = "#invites:invites/note/leave/QUEUE_BOB";
-      
-      public static const INVITES_NOTE_CHANGE_AND_LEAVE_QUEUE_BOB:String = "#invites:invites/note/change_and_leave/QUEUE_BOB";
-      
-      public static const INVITES_NOTE_LEAVE_PREBATTLE_BOB:String = "#invites:invites/note/leave/PREBATTLE_BOB";
-      
-      public static const INVITES_NOTE_CHANGE_AND_LEAVE_PREBATTLE_BOB:String = "#invites:invites/note/change_and_leave/PREBATTLE_BOB";
       
       public static const INVITES_WARNING_ANONYMIZED:String = "#invites:invites/warning/anonymized";
       

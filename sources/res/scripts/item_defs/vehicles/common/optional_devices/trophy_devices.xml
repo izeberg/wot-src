@@ -101,7 +101,7 @@
 		</vehicleFilter>
 		<tags>rammer firepower trophyBasic</tags>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			UpgradableStaticDevice
@@ -151,7 +151,7 @@
 		</vehicleFilter>
 		<tags>rammer firepower trophyUpgraded</tags>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			UpgradedStaticDevice

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.336611 -0.638603 -3.311018</min>
+		<max>1.344220 1.073746 2.864288</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un11_Sherman_M3_IDF/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un11_Sherman_M3_IDF/normal/lod0/Hull</nodefullVisual>
+</root>

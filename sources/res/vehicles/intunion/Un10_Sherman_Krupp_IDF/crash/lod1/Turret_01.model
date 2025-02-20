@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un10_Sherman_Krupp_IDF/crash/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.038939 -0.000174 -1.160451</min>
+		<max>1.099513 1.186125 0.977850</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un10_Sherman_Krupp_IDF/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+</root>

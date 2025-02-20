@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl209_ULAN/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl209_ULAN/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.801097 -0.000002 -4.283077</min>
+		<max>1.801097 1.100579 4.231655</max>
+	</visibilityBox>
+</root>

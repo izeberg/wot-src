@@ -829,6 +829,20 @@ package
       
       public static const SUFFIX_BADGE_31040:String = "#badge:suffix/badge_31040";
       
+      public static const BADGE_31052:String = "#badge:badge_31052";
+      
+      public static const BADGE_31052_DESCR:String = "#badge:badge_31052_descr";
+      
+      public static const BADGE_31053:String = "#badge:badge_31053";
+      
+      public static const BADGE_31053_DESCR:String = "#badge:badge_31053_descr";
+      
+      public static const BADGE_31054:String = "#badge:badge_31054";
+      
+      public static const BADGE_31054_DESCR:String = "#badge:badge_31054_descr";
+      
+      public static const SUFFIX_BADGE_31054:String = "#badge:suffix/badge_31054";
+      
       public static const BADGE_31041:String = "#badge:badge_31041";
       
       public static const BADGE_31041_DESCR:String = "#badge:badge_31041_descr";

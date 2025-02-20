@@ -23,8 +23,7 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
                            'gui.Scaleform.daapi.view.lobby.session_stats', 'gui.Scaleform.daapi.view.lobby.epicBattleTraining',
                            'gui.Scaleform.daapi.view.lobby.tank_setup', 'gui.Scaleform.daapi.view.lobby.mapbox',
                            'gui.Scaleform.daapi.view.lobby.veh_post_progression',
-                           'gui.Scaleform.daapi.view.lobby.comp7', 'gui.Scaleform.daapi.view.lobby.collection',
-                           'gui.Scaleform.daapi.view.lobby.bob')
+                           'gui.Scaleform.daapi.view.lobby.comp7', 'gui.Scaleform.daapi.view.lobby.collection')
 _LOBBY_DEBUG_PACKAGES = ('gui.development.ui.messenger.view.lobby', 'gui.development.ui.demo',
                          'gui.Scaleform.daapi.view.lobby.epicBattleTraining', 'gui.development.ui.gf_viewer')
 _BATTLE_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.battle.shared', 'messenger.gui.Scaleform.view.battle')
@@ -107,9 +106,7 @@ _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
  (
   'gui.Scaleform.daapi.view.tooltips.wot_plus_builders', _TOOLTIPS.WOT_PLUS_SET),
  (
-  'gui.Scaleform.daapi.view.tooltips.early_access_builders', _TOOLTIPS.EARLY_ACCESS_LOBBY_SET),
- (
-  'gui.Scaleform.daapi.view.tooltips.bob_builders', _TOOLTIPS.BOB_SET)]
+  'gui.Scaleform.daapi.view.tooltips.early_access_builders', _TOOLTIPS.EARLY_ACCESS_LOBBY_SET)]
 _LOBBY_DEBUG_TOOLTIPS_BUILDERS_PATHS = (
  (
   'gui.development.ui.tooltips.development_builders', _TOOLTIPS.DEVELOPMENT_SET),)
@@ -160,6 +157,5 @@ registerScaleformBattlePackages(ARENA_GUI_TYPE.BOOTCAMP, BATTLE_PACKAGES + ('gui
 registerScaleformBattlePackages(ARENA_GUI_TYPE.MAPS_TRAINING, ('messenger.gui.Scaleform.view.battle',
                                                                'gui.Scaleform.daapi.view.battle.maps_training') + (_BATTLE_DEBUG_PACKAGES if HAS_DEV_RESOURCES else ()))
 registerScaleformBattlePackages(ARENA_GUI_TYPE.COMP7, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.comp7', ))
-registerScaleformBattlePackages(ARENA_GUI_TYPE.BOB, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.bob', ))
 registerBattleTooltipsBuilders(_BATTLE_TOOLTIPS_BUILDERS_PATHS)
 registerLobbyTooltipsBuilders(_LOBBY_TOOLTIPS_BUILDERS_PATHS)

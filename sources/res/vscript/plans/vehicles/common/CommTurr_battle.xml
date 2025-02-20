@@ -284,6 +284,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_4</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_5</id>
 				<buddy>Variable_5</buddy>
@@ -357,7 +363,7 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_5</id>
+				<id>GetVariable_4</id>
 				<buddy>Variable_3</buddy>
 				<params>
 					<param>
@@ -370,7 +376,7 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_4</id>
+				<id>GetVariable_5</id>
 				<buddy>Variable_3</buddy>
 				<params>
 					<param>
@@ -693,6 +699,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>FrameEvent_1</from>
+				<input>input</input>
+				<to>If_4</to>
+				<output>exec</output>
+			</connection>
+			<connection>
+				<from>GetPlayerVehicleGun_1</from>
+				<input>value</input>
+				<to>If_4</to>
+				<output>isLocked</output>
+			</connection>
+			<connection>
 				<from>GetComponentProperty_1</from>
 				<input>input</input>
 				<to>SetVariable_5</to>
@@ -735,10 +753,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>FrameEvent_1</from>
+				<from>If_4</from>
 				<input>in</input>
 				<to>GetComponentProperty_1</to>
-				<output>exec</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>GetVariable_4</from>

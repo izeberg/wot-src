@@ -361,6 +361,8 @@ package
       
       public static const MTTV_RECORDSVIEW_BEZIERCONTROLTENSION:String = "#development:mttv/RecordsView/bezierControlTension";
       
+      public static const MTTV_RECORDSVIEW_INTERPOLATIONSTEP:String = "#development:mttv/RecordsView/InterpolationStep";
+      
       public static const MTTV_RECORDSVIEW_SHOWPATH:String = "#development:mttv/RecordsView/showPath";
       
       public static const MTTV_RECORDSVIEW_SHOWSTATUS:String = "#development:mttv/RecordsView/showStatus";
@@ -609,6 +611,8 @@ package
       
       public static const MTTV_CAMERAVIEW_CAMERACHECKBOXSHAKER:String = "#development:mttv/CameraView/cameraCheckboxShaker";
       
+      public static const MTTV_CAMERAVIEW_CAMERALOCKROLLCHECKBOX:String = "#development:mttv/CameraView/cameraLockRollCheckbox";
+      
       public static const MTTV_CAMERAVIEW_SHAKERFIELDSETVERTICAL:String = "#development:mttv/CameraView/shakerFieldsetVertical";
       
       public static const MTTV_CAMERAVIEW_SHAKERFIELDSETHORIZONTAL:String = "#development:mttv/CameraView/shakerFieldsetHorizontal";
@@ -779,7 +783,7 @@ package
       
       public static const MTTV_FRAMEEDITVIEW_DELETE:String = "#development:mttv/FrameEditView/delete";
       
-      public static const MTTV_FRAMEEDITVIEW_ADDINFO:String = "#development:mttv/FrameEditView/addInfo";
+      public static const MTTV_FRAMEEDITVIEW_GROUPDELETION:String = "#development:mttv/FrameEditView/groupDeletion";
       
       public static const MTTV_FRAMEEDITVIEW_ADDFRAME:String = "#development:mttv/FrameEditView/addFrame";
        

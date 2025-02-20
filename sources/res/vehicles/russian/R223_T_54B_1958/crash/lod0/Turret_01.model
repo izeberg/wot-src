@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.324578 -0.186493 -1.397118</min>
+		<max>1.435090 1.303469 1.369000</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R223_T_54B_1958/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/russian/R223_T_54B_1958/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

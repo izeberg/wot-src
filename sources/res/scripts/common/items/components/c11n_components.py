@@ -423,6 +423,10 @@ class StyleItem(BaseCustomizationItem):
         return ItemTags.STYLE_PROGRESSION in self.tags
 
     @property
+    def isClanHidden(self):
+        return ItemTags.CLAN_HIDDEN in self.tags
+
+    @property
     def isLockedOnVehicle(self):
         return ItemTags.LOCKED_ON_VEHICLE in self.tags
 

@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.062 -0.0423621 -2.0206
-			<!--BW_String-->
-		</min>
-		<max>
-			1.06993 1.0222 1.06049
-			<!--BW_String-->
-		</max>
+		<min>-1.062000 -0.042362 -2.020600</min>
+		<max>1.069930 1.022200 1.060490</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/russian/R132_VNII_100LT/crash/lod4/Turret_01</nodefullVisual>
 </root>

@@ -457,7 +457,10 @@ class _QuestGroupWrapper(object):
         groupID, _ = self.item.getQuestsProgressionInfo()
         if not groupID:
             return ''
-        return backport.text(R.strings.vehicle_customization.questProgress.dyn(groupID)())
+        res = R.strings.vehicle_customization.questProgress.dyn(groupID)
+        if res.exists():
+            return backport.text(res())
+        return ''
 
 
 class _ClassicGroupWrapper(object):

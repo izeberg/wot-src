@@ -167,6 +167,11 @@
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_railgun_stonehit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_railgun_trace.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_railgun_waterhit_shallow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_stun_shot_sandhit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_stun_shot_shellfall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_stun_shot_stonehit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_stun_shot_trace.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_stun_shot_waterhit_shallow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/dirtHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/dirtHit_AP_1_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/dirtHit_AP_1_3.vfx</fn_effect_bin>
@@ -1270,6 +1275,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_flame_exhaust_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_flame_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_huge_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_huge_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_huge_APFSDS.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_huge_APFSDS_mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/shot_huge_aspg_01.vfx</fn_effect_bin>
@@ -1373,8 +1379,8 @@
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SC_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SCA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SF_4.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SFA.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_2.eff</fn_effect_bin>
@@ -1396,6 +1402,11 @@
 		<fn_effect_bin>particles/Shells_Eff/cosm_railgun_stonehit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/cosm_railgun_trace.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/cosm_railgun_waterhit_shallow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_sandhit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_shellfall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_stonehit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_trace.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_waterhit_shallow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/dirtHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/dirtHit_AP_1_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/dirtHit_AP_1_3.eff</fn_effect_bin>
@@ -2470,6 +2481,7 @@
 		<fn_effect_bin>particles/tank/shots/shot_flame_exhaust_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_flame_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_huge_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/shot_huge_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_huge_apfsds.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_huge_APFSDS_mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_huge_aspg_01.eff</fn_effect_bin>
@@ -2729,6 +2741,11 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_railgun_stonehit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_railgun_trace.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_railgun_waterhit_shallow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_stun_shot_sandhit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_stun_shot_shellfall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_stun_shot_stonehit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_stun_shot_trace.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_stun_shot_waterhit_shallow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/dirtHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/dirtHit_AP_1_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/dirtHit_AP_1_3.vfx</fn_effect_bin>
@@ -3973,6 +3990,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_flame_exhaust_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_flame_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_huge_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_huge_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_huge_APFSDS.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_huge_APFSDS_mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_huge_aspg_01.vfx</fn_effect_bin>
@@ -4080,8 +4098,8 @@
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SC_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SCA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SF_4.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorhit_SFA.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/armorHit_SFA.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/armorHit_SH_4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/br_br_trace_base_2.eff</fn_effect_bin>
@@ -4103,6 +4121,11 @@
 		<fn_effect_bin>particles/Shells_Eff/cosm_railgun_stonehit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/cosm_railgun_trace.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/cosm_railgun_waterhit_shallow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_sandhit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_shellfall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_stonehit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_trace.eff</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/cosm_stun_shot_waterhit_shallow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/dirtHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/dirtHit_AP_1_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/dirtHit_AP_1_3.eff</fn_effect_bin>
@@ -5177,6 +5200,7 @@
 		<fn_effect_bin>particles/tank/shots/shot_flame_exhaust_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_flame_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_huge_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/shot_huge_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_huge_apfsds.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/shots/shot_huge_APFSDS_mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/shots/shot_huge_aspg_01.eff</fn_effect_bin>

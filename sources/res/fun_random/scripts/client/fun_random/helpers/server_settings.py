@@ -32,18 +32,18 @@ class FunSubModeFiltrationConfig(namedtuple('FunSubModeFiltrationConfig', ('leve
 
 
 class FunSubModeSeasonalityConfig(namedtuple('FunSubModeSeasonalityConfig', ('isEnabled', 'peripheryIDs', 'seasons',
-                                           'primeTimes', 'cycleTimes'))):
+                                           'primeTimes', 'cycleTimes', 'geometryIDs'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(isEnabled=False, peripheryIDs=set(), seasons={}, primeTimes={}, cycleTimes=())
+        defaults = dict(isEnabled=False, peripheryIDs=set(), seasons={}, primeTimes={}, cycleTimes=(), geometryIDs=set())
         defaults.update(kwargs)
         cls.__packSeasonalityConfig(defaults)
         return super(FunSubModeSeasonalityConfig, cls).__new__(cls, **defaults)
 
     @classmethod
     def defaults(cls):
-        return cls(False, set(), {}, {}, ())
+        return cls(False, set(), {}, {}, (), set())
 
     def asDict(self):
         return self._asdict()

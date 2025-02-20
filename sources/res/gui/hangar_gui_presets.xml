@@ -90,28 +90,6 @@
 				</component>
 			</components>
 		</preset>
-		<preset>
-			<name>bob</name>
-			<basePreset>default</basePreset>
-			<components>
-				<component>
-					<name>bobModifiers</name>
-					<visible>True</visible>
-				</component>
-				<component>
-					<name>vehicleParameters</name>
-					<visible>True</visible>
-					<type>bobVehicleParameters</type>
-					<layout>VehicleParametersUI</layout>
-				</component>
-				<component>
-					<name>ammunitionInject</name>
-					<visible>True</visible>
-					<isChangeable>True</isChangeable>
-					<type>BobAmmunitionPanelView</type>
-				</component>
-			</components>
-		</preset>
 	</presets>
 	<queueTypePresets>
 		<item>
@@ -125,10 +103,6 @@
 		<item>
 			<queueType>23</queueType>
 			<presetName>mapbox</presetName>
-		</item>
-		<item>
-			<queueType>31</queueType>
-			<presetName>bob</presetName>
 		</item>
 	</queueTypePresets>
 </root>

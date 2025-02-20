@@ -569,18 +569,6 @@ package net.wg.data.constants.generated
       
       public static const COMP7_VEHICLE_PARAMS_TOOLTIP:String = "comp7VehicleParamsTooltip";
       
-      public static const BOB_SELECTOR_INFO:String = "bobSelectorInfo";
-      
-      public static const BOB_SERVER_PRIMETIME:String = "bobServerPrimeTime";
-      
-      public static const BOB_SKILL_INFO:String = "bobDSkillInfo";
-      
-      public static const BOB_PROGRESSIVE_INFO:String = "bobProgressiveInfo";
-      
-      public static const BOB_VEHICLE_PARAMS_TOOLTIP:String = "bobVehicleParamsTooltip";
-      
-      public static const BOB_TECH_MAIN_SHELL:String = "bobTechMainShell";
-      
       public static const BLOCKS_DEFAULT_UI:String = "ToolTipInblocksDefaultUI";
       
       public static const TANKMEN_UI:String = "ToolTipTankmenUI";
@@ -803,6 +791,8 @@ package net.wg.data.constants.generated
       
       public static const LOOT_BOX_TOOLTIP:String = "lootBoxTooltip";
       
+      public static const LOOT_BOX_EXTENDED_TOOLTIP:String = "lootBoxExtendedTooltip";
+      
       public static const LOOT_BOX_KEY_TOOLTIP:String = "lootBoxKeyTooltip";
       
       public static const LOOT_BOX_GUARANTEED_REWARD_TOOLTIP:String = "lootBoxGuaranteedRewardTooltip";
@@ -913,15 +903,13 @@ package net.wg.data.constants.generated
       
       public static const COMP7_BATTLE_SET:Array = [COMP7_ROLE_SKILL_BATTLE_TOOLTIP,VEHICLE_ROLES];
       
-      public static const LB_LOBBY_SET:Array = [LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT,LOOT_BOX_TOOLTIP,LOOT_BOX_KEY_TOOLTIP,LOOT_BOX_GUARANTEED_REWARD_TOOLTIP];
+      public static const LB_LOBBY_SET:Array = [LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT,LOOT_BOX_TOOLTIP,LOOT_BOX_KEY_TOOLTIP,LOOT_BOX_GUARANTEED_REWARD_TOOLTIP,LOOT_BOX_EXTENDED_TOOLTIP];
       
       public static const ARMORY_YARD_LOBBY_SET:Array = [ARMORY_YARD_AWARD_VEHICLE,ARMORY_YARD_ENTRY_POINT_ACTIVE,ARMORY_YARD_ENTRY_POINT_BEFORE_PROGRESSION];
       
       public static const WOT_PLUS_SET:Array = [WOT_PLUS];
       
       public static const EARLY_ACCESS_LOBBY_SET:Array = [EARLY_ACCESS_COMMON_INFO,EARLY_ACCESS_VEHICLE_LOCKED,EARLY_ACCESS_PAUSED,EARLY_ACCESS_CAROUSEL_VEHICLE_POST_PROGRESSION,EARLY_ACCESS_CURRENCY,EARLY_ACCESS_ENTRY_POINT];
-      
-      public static const BOB_SET:Array = [BOB_SELECTOR_INFO,BOB_SERVER_PRIMETIME,BOB_SKILL_INFO,BOB_PROGRESSIVE_INFO,BOB_VEHICLE_PARAMS_TOOLTIP,BOB_TECH_MAIN_SHELL];
        
       
       public function TOOLTIPS_CONSTANTS()

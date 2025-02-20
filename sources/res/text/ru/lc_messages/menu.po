@@ -689,7 +689,7 @@ msgid "bonusType/29"
 msgstr "«Стальной охотник»"
 
 msgid "bonusType/32"
-msgstr "Битва блогеров"
+msgstr "«Битва блогеров»"
 
 msgid "bonusType/37"
 msgstr "«Разведка боем»"
@@ -1015,7 +1015,7 @@ msgid "classes/short/AT-SPG"
 msgstr "ПТ-САУ"
 
 msgid "classes/short/Alliance-France"
-msgstr "Коалиции (Франция, Швеция, Чехословакия, Италия)"
+msgstr "Коалиции (Франция, Швеция, Чехословакия, Италия, Сборная наций)"
 
 msgid "classes/short/Alliance-Germany"
 msgstr "Блока (Германия, Япония)"
@@ -1097,9 +1097,6 @@ msgstr "Копировать имя"
 
 msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "Создать взвод охотников"
-
-msgid "contextMenu/createBobSquad"
-msgstr "Создать взвод для Битвы блогеров"
 
 msgid "contextMenu/createComp7Squad"
 msgstr "Создать взвод для Натиска"
@@ -2250,15 +2247,15 @@ msgstr ""
 msgid "extraParams/name/temperatureCoolingDelay"
 msgstr "Время между прекращением стрельбы и началом охлаждения орудия."
 
-msgid "extraParams/name/temperatureCoolingPerSec"
-msgstr "Время, за которое орудие остынет на каждой стадии."
+msgid "extraParams/name/temperatureCoolingTime"
+msgstr "Время, за которое орудие охладится на каждой стадии."
 
 msgid "extraParams/name/temperatureDamageFactor"
 msgstr ""
 "Модификатор, применяемый к значению среднего урона на каждой термической "
 "стадии соответственно."
 
-msgid "extraParams/name/temperatureHeatingPerSec"
+msgid "extraParams/name/temperatureHeatingTime"
 msgstr ""
 "Время, за которое орудие нагреется при непрерывной стрельбе на каждой "
 "стадии."
@@ -2820,7 +2817,7 @@ msgid "header/vehicleType/AT-SPG"
 msgstr "ПТ-САУ"
 
 msgid "header/vehicleType/Alliance-France"
-msgstr "Франция, Швеция, Чехословакия, Италия"
+msgstr "Франция, Швеция, Чехословакия, Италия, Сборная наций"
 
 msgid "header/vehicleType/Alliance-Germany"
 msgstr "Германия, Япония"
@@ -2862,7 +2859,7 @@ msgid "header/wotPlusExclusiveVehicleType/AT-SPG"
 msgstr "ПТ-САУ"
 
 msgid "header/wotPlusExclusiveVehicleType/Alliance-France"
-msgstr "Франция, Швеция, Чехословакия, Италия"
+msgstr "Франция, Швеция, Чехословакия, Италия, Сборная наций"
 
 msgid "header/wotPlusExclusiveVehicleType/Alliance-Germany"
 msgstr "Германия, Япония"
@@ -2974,33 +2971,6 @@ msgstr "Взвод охотников"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Создать взвод из 2 игроков"
-
-msgid "headerButtons/battle/types/bob"
-msgstr "Битва блогеров"
-
-msgid "headerButtons/battle/types/bob/availability/frozen"
-msgstr "Режим временно отключён"
-
-msgid "headerButtons/battle/types/bob/availability/postEvent"
-msgstr "Бои недоступны"
-
-msgid "headerButtons/battle/types/bob/availability/timeLeft/days"
-msgstr "До конца события: %(day)s д"
-
-msgid "headerButtons/battle/types/bob/availability/timeLeft/hours"
-msgstr "До конца события: %(hour)s ч"
-
-msgid "headerButtons/battle/types/bob/availability/timeLeft/lessMin"
-msgstr "До конца события: менее 1 ч"
-
-msgid "headerButtons/battle/types/bob/availability/timeLeft/min"
-msgstr "До конца события: менее 1 ч"
-
-msgid "headerButtons/battle/types/bob/availability/until"
-msgstr "C %(date)s"
-
-msgid "headerButtons/battle/types/bob/descr"
-msgstr "?empty?"
 
 msgid "headerButtons/battle/types/comp7"
 msgstr "Натиск"
@@ -3273,12 +3243,6 @@ msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/body"
 msgstr "На этом сервере режим прекращения огня."
 
 msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/header"
-msgstr "Выход в бой недоступен"
-
-msgid "headerButtons/fightBtn/tooltip/bobOnly/body"
-msgstr "Выбранная машина подходит только для события «Битва блогеров 2025»."
-
-msgid "headerButtons/fightBtn/tooltip/bobOnly/header"
 msgstr "Выход в бой недоступен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/body"
@@ -3963,9 +3927,6 @@ msgstr "Разминка"
 msgid "loading/battleTypes/31000"
 msgstr "Полигон"
 
-msgid "loading/battleTypes/32"
-msgstr "Битва блогеров"
-
 msgid "loading/battleTypes/4"
 msgstr "Боевое обучение"
 
@@ -4058,9 +4019,6 @@ msgid "loading/battleTypes/desc/31"
 msgstr " "
 
 msgid "loading/battleTypes/desc/31000"
-msgstr " "
-
-msgid "loading/battleTypes/desc/32"
 msgstr " "
 
 msgid "loading/battleTypes/desc/4"
@@ -4880,6 +4838,9 @@ msgstr "Чертежи техники Франции"
 msgid "nation_tree/blueprint_title/germany"
 msgstr "Чертежи техники Германии"
 
+msgid "nation_tree/blueprint_title/intunion"
+msgstr "Чертежи техники Сборной наций"
+
 msgid "nation_tree/blueprint_title/italy"
 msgstr "Чертежи техники Италии"
 
@@ -4912,6 +4873,9 @@ msgstr "Техника Франции"
 
 msgid "nation_tree/title/germany"
 msgstr "Техника Германии"
+
+msgid "nation_tree/title/intunion"
+msgstr "Техника Сборной наций"
 
 msgid "nation_tree/title/italy"
 msgstr "Техника Италии"
@@ -4948,6 +4912,9 @@ msgstr "Франция"
 
 msgid "nations/germany"
 msgstr "Германия"
+
+msgid "nations/intunion"
+msgstr "Сборная наций"
 
 msgid "nations/italy"
 msgstr "Италия"
@@ -6509,7 +6476,7 @@ msgid "tank_params/distanceDamage"
 msgstr "Урон снаряда"
 
 msgid "tank_params/dualAccuracyCoolingDelay"
-msgstr "Время остывания орудия"
+msgstr "Время охлаждения орудия"
 
 msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
 msgstr "Время охлаждения орудия после выстрела"
@@ -7567,6 +7534,12 @@ msgstr "К ТЕХНИКЕ ГЕРМАНИИ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/germany/blueprints"
 msgstr "К ЧЕРТЕЖАМ ГЕРМАНИИ"
+
+msgid "viewHeader/backBtn/descrLabel/techtree/intunion"
+msgstr "К ТЕХНИКЕ CБОРНОЙ НАЦИЙ"
+
+msgid "viewHeader/backBtn/descrLabel/techtree/intunion/blueprints"
+msgstr "К ЧЕРТЕЖАМ CБОРНОЙ НАЦИЙ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/italy"
 msgstr "К ТЕХНИКЕ ИТАЛИИ"

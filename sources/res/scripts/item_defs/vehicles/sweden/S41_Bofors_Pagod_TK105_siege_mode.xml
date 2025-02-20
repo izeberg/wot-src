@@ -106,6 +106,8 @@
 			<armor_25>120</armor_25>
 			<armor_26>80</armor_26>
 			<armor_27>60</armor_27>
+			<leftTrack>20</leftTrack>
+			<rightTrack>20</rightTrack>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>25180</weight>
@@ -1184,11 +1186,11 @@
 			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.14
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.14
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -1604,7 +1606,7 @@
 					<jointNode>Lever_Joint_L1</jointNode>
 					<trackNode>Track_L1</trackNode>
 					<limits>
-						175.0 130
+						175.0 130.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1613,7 +1615,7 @@
 					<jointNode>Lever_Joint_R1</jointNode>
 					<trackNode>Track_R1</trackNode>
 					<limits>
-						175.0 130
+						175.0 130.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1622,7 +1624,7 @@
 					<jointNode>Lever_Joint_L2</jointNode>
 					<trackNode>Track_L2</trackNode>
 					<limits>
-						175.0 125
+						175.0 125.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1631,7 +1633,7 @@
 					<jointNode>Lever_Joint_R2</jointNode>
 					<trackNode>Track_R2</trackNode>
 					<limits>
-						175.0 125
+						175.0 125.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1640,7 +1642,7 @@
 					<jointNode>Lever_Joint_L3</jointNode>
 					<trackNode>Track_L3</trackNode>
 					<limits>
-						175.0 120
+						175.0 120.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1649,7 +1651,7 @@
 					<jointNode>Lever_Joint_R3</jointNode>
 					<trackNode>Track_R3</trackNode>
 					<limits>
-						175.0 120
+						175.0 120.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1658,7 +1660,7 @@
 					<jointNode>Lever_Joint_L4</jointNode>
 					<trackNode>Track_L4</trackNode>
 					<limits>
-						185.0 115
+						185.0 115.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1667,7 +1669,7 @@
 					<jointNode>Lever_Joint_R4</jointNode>
 					<trackNode>Track_R4</trackNode>
 					<limits>
-						185.0 115
+						185.0 115.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1676,7 +1678,7 @@
 					<jointNode>Lever_Joint_L5</jointNode>
 					<trackNode>Track_L5</trackNode>
 					<limits>
-						195.0 123
+						195.0 123.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1685,7 +1687,7 @@
 					<jointNode>Lever_Joint_R5</jointNode>
 					<trackNode>Track_R5</trackNode>
 					<limits>
-						195.0 123
+						195.0 123.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1694,7 +1696,7 @@
 					<jointNode>Lever_Joint_L6</jointNode>
 					<trackNode>Track_L6</trackNode>
 					<limits>
-						195.0 115
+						195.0 115.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -1703,7 +1705,7 @@
 					<jointNode>Lever_Joint_R6</jointNode>
 					<trackNode>Track_R6</trackNode>
 					<limits>
-						195.0 115
+						195.0 115.0
 						<!--BW_String-->
 					</limits>
 				</lever>
@@ -2008,32 +2010,6 @@
 					<trackPairIdx>0</trackPairIdx>
 				</node>
 			</groundNodes>
-			<splineDesc>
-				<trackPair>
-					<trackPairIdx>0</trackPairIdx>
-					<segmentModelLeft>vehicles/sweden/S41_Bofors_Pagod_TK105/track/segment.model</segmentModelLeft>
-					<segmentModelRight>vehicles/sweden/S41_Bofors_Pagod_TK105/track/segment.model</segmentModelRight>
-					<left>vehicles/sweden/S41_Bofors_Pagod_TK105/track/left.track</left>
-					<right>vehicles/sweden/S41_Bofors_Pagod_TK105/track/right.track</right>
-					<segmentLength>
-						0.15
-						<!--BW_String-->
-					</segmentLength>
-					<segmentOffset>
-						0.1
-						<!--BW_String-->
-					</segmentOffset>
-					<segment2Offset>
-						0.1
-						<!--BW_String-->
-					</segment2Offset>
-					<atlas>
-						<UTiles>1</UTiles>
-						<VTiles>1</VTiles>
-					</atlas>
-				</trackPair>
-				<lodDist>SPLINE_TRACK</lodDist>
-			</splineDesc>
 			<physicalTracks>
 				<left>
 					<trackPairIdx>0</trackPairIdx>
@@ -3526,7 +3502,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				0.968 0 1.056 0.021 0.589 0.155 0.5 0.5 0.5 0.5 0.5 0.5 0.61 0.526 0
+				0.93 -0.047 0.93 0 0.592 0.066 0.566 0.5 0.531 0.5 0.514 0.5 0.296 0.089 0
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>

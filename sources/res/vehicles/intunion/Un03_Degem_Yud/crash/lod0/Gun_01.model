@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.485818 -0.340794 -1.191121</min>
+		<max>0.485768 0.224019 3.601914</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/intunion/Un03_Degem_Yud/crash/lod0/Gun_01</nodelessVisual>
+	<parent>vehicles/intunion/Un03_Degem_Yud/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

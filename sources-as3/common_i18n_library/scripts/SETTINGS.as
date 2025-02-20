@@ -345,6 +345,12 @@ package
       
       public static const GAME_SHOWARTYHITONMAP:String = "#settings:game/showArtyHitOnMap";
       
+      public static const GAME_SHOWTHERMALVISIONSECTORONMAP:String = "#settings:game/showThermalVisionSectorOnMap";
+      
+      public static const GAME_DISABLETHERMALVISIONEFFECT:String = "#settings:game/disableThermalVisionEffect";
+      
+      public static const GAME_DISABLETHERMALVISIONSECTOREFFECT:String = "#settings:game/disableThermalVisionSectorEffect";
+      
       public static const GAME_CAROUSELTYPE:String = "#settings:game/carouselType";
       
       public static const GAME_CAROUSELTYPE_SINGLE:String = "#settings:game/carouselType/single";

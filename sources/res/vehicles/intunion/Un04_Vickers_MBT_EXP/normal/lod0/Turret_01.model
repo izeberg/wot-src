@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod1/Turret_01</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>-1.307569 -0.000002 -1.794098</min>
+		<max>1.261855 1.983104 1.285024</max>
+	</visibilityBox>
+</root>

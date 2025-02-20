@@ -1052,9 +1052,6 @@
 			<isPremiumSubs>
 				<Type>BOOL</Type>
 			</isPremiumSubs>
-			<bobInfo>
-				<Type>PYTHON</Type>
-			</bobInfo>
 		</Properties>
 	</ARENA_ADDPLAYER_INFO>
 	<AVATAR_VEHICLE_ROSTER>
@@ -1240,6 +1237,9 @@
 			<duration>
 				<Type>FLOAT32</Type>
 			</duration>
+			<isObserved>
+				<Type>BOOL</Type>
+			</isObserved>
 		</Properties>
 	</IN_THERMAL_SECTOR_STATUS>
 	<SIEGE_STATE_STATUS>
@@ -2042,9 +2042,6 @@
 			<botDisplayStatus>
 				<Type>UINT8</Type>
 			</botDisplayStatus>
-			<bobInfo>
-				<Type>PYTHON</Type>
-			</bobInfo>
 		</Properties>
 	</CLIENT_VEHICLE_PUBLIC_INFO>
 	<PLAY_LIMITS>
@@ -2696,9 +2693,6 @@
 			<useCount>
 				<Type>INT8</Type>
 			</useCount>
-			<reloadTime>
-				<Type>FLOAT32</Type>
-			</reloadTime>
 		</Properties>
 	</THERMAL_VISION_STATE_STATUS>
 	<GOODIE_RESOURCE>
