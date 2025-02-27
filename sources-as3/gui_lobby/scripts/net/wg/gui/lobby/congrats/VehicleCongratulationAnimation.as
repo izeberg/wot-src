@@ -161,29 +161,29 @@ package net.wg.gui.lobby.congrats
       
       override protected function draw() : void
       {
-         var _loc1_:int = 0;
-         var _loc2_:int = 0;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
+         var leftOffset:int = 0;
+         var rightOffset:int = 0;
+         var fullWidth:int = 0;
+         var startX:int = 0;
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
-            _loc1_ = LEFT_TF_OFFSET;
-            _loc2_ = RIGHT_TF_OFFSET;
+            leftOffset = LEFT_TF_OFFSET;
+            rightOffset = RIGHT_TF_OFFSET;
             if(this._isElite)
             {
-               _loc1_ += TF_ELITE_EXTRA_OFFSET;
-               _loc2_ += TF_ELITE_EXTRA_OFFSET;
+               leftOffset += TF_ELITE_EXTRA_OFFSET;
+               rightOffset += TF_ELITE_EXTRA_OFFSET;
             }
-            _loc3_ = this.vehicleLevelTF.width + _loc1_ + this._vehicleType.width + _loc2_ + this.vehicleNameTF.width;
-            _loc4_ = width - _loc3_ >> 1;
+            fullWidth = this.vehicleLevelTF.width + leftOffset + this._vehicleType.width + rightOffset + this.vehicleNameTF.width;
+            startX = width - fullWidth >> 1;
             this.titleTF.x = width - this.titleTF.width >> 1;
             this.collectibleTF.x = width - this.collectibleTF.width >> 1;
-            this.vehicleLevelTF.x = _loc4_;
-            _loc4_ += this.vehicleLevelTF.width + _loc1_;
-            this._vehicleType.x = _loc4_;
-            _loc4_ += _loc2_ + this._vehicleType.width;
-            this.vehicleNameTF.x = _loc4_;
+            this.vehicleLevelTF.x = startX;
+            startX += this.vehicleLevelTF.width + leftOffset;
+            this._vehicleType.x = startX;
+            startX += rightOffset + this._vehicleType.width;
+            this.vehicleNameTF.x = startX;
             if(this.backButton.visible)
             {
                this.showInHangarButton.x = width - this.showInHangarButton.width - this.backButton.width - BUTTON_GAP >> 1;
@@ -204,12 +204,18 @@ package net.wg.gui.lobby.congrats
             visible = true;
             this.disposeTweens();
             this.repositionItems();
+            this.showInHangarButton.mouseChildren = this.showInHangarButton.mouseEnabled = false;
             this._tweens.push(new Tween(ANIMATION_DURATION,this.titleTF,{
                "y":this.titleTF.y,
                "alpha":1
             },{
                "ease":Regular.easeOut,
-               "fastTransform":false
+               "fastTransform":false,
+               "delay":BUTTON_TWEEN_DELAY,
+               "onComplete":function():void
+               {
+                  showInHangarButton.mouseChildren = showInHangarButton.mouseEnabled = true;
+               }
             }));
             this.titleTF.y -= TEXTS_TWEEN_TOP_PADDING;
             this.titleTF.alpha = 0;

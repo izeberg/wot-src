@@ -97,6 +97,18 @@
 						colorIdMap
 						<Texture>vehicles/german/G165_Erich_Konzept_I/Erich_Konzept_I_guns_ID.dds</Texture>
 					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000001 1.593000 -1.735900</groupOrigin>
 			</primitiveGroup>
@@ -123,6 +135,22 @@
 						normalMap
 						<Texture>vehicles/russian/R00_Badges/Paragon_2024/Paragon_2024_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>1.750000 1.750000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000000 -0.007762 0.000000</groupOrigin>
 			</primitiveGroup>
@@ -133,6 +161,21 @@
 		<min>-1.490631 -0.720000 -1.402777</min>
 		<max>1.490630 3.905999 4.874577</max>
 	</boundingBox>
+	<missingBspMaterial>
+		<material>
+			<identifier>tank_guns</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>tank_guns</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>tank_guns</identifier>
+		</material>
+	</missingBspMaterial>
 	<geometrySize>589444</geometrySize>
 	<minUVDensity>0.013694</minUVDensity>
 </root>

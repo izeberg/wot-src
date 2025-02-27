@@ -2135,7 +2135,7 @@ package net.wg.data.constants.generated
       
       public static const INTUNION_UN08_HOTCHKISS_H_39_IDF:String = "intunion-Un08_Hotchkiss_H_39_IDF";
       
-      public static const INTUNION_UN09_LOCUST_IDF:String = "intunion-Un09_Locust_IDF";
+      public static const INTUNION_UN09_LOCUST:String = "intunion-Un09_Locust";
       
       public static const INTUNION_UN10_SHERMAN_KRUPP_IDF:String = "intunion-Un10_Sherman_Krupp_IDF";
       

@@ -845,7 +845,7 @@ class RES_SHOP_EXT(object):
                           'gui/maps/shop/vehicles/180x135/Un05_Shot_Kal_Alef.png',
                           'gui/maps/shop/vehicles/180x135/Un06_M47_Romach.png', 'gui/maps/shop/vehicles/180x135/Un07_Renault_R35.png',
                           'gui/maps/shop/vehicles/180x135/Un08_Hotchkiss_H_39_IDF.png',
-                          'gui/maps/shop/vehicles/180x135/Un09_Locust_IDF.png', 'gui/maps/shop/vehicles/180x135/Un10_Sherman_Krupp_IDF.png',
+                          'gui/maps/shop/vehicles/180x135/Un09_Locust.png', 'gui/maps/shop/vehicles/180x135/Un10_Sherman_Krupp_IDF.png',
                           'gui/maps/shop/vehicles/180x135/Un11_Sherman_M3_IDF.png',
                           'gui/maps/shop/vehicles/180x135/Un13_T-54.png', 'gui/maps/shop/vehicles/180x135/Un14_T54D.png',
                           'gui/maps/shop/vehicles/360x270/A01_T1_Cunningham.png',
@@ -1500,7 +1500,7 @@ class RES_SHOP_EXT(object):
                           'gui/maps/shop/vehicles/360x270/Un05_Shot_Kal_Alef.png',
                           'gui/maps/shop/vehicles/360x270/Un06_M47_Romach.png', 'gui/maps/shop/vehicles/360x270/Un07_Renault_R35.png',
                           'gui/maps/shop/vehicles/360x270/Un08_Hotchkiss_H_39_IDF.png',
-                          'gui/maps/shop/vehicles/360x270/Un09_Locust_IDF.png', 'gui/maps/shop/vehicles/360x270/Un10_Sherman_Krupp_IDF.png',
+                          'gui/maps/shop/vehicles/360x270/Un09_Locust.png', 'gui/maps/shop/vehicles/360x270/Un10_Sherman_Krupp_IDF.png',
                           'gui/maps/shop/vehicles/360x270/Un11_Sherman_M3_IDF.png',
                           'gui/maps/shop/vehicles/360x270/Un13_T-54.png', 'gui/maps/shop/vehicles/360x270/Un14_T54D.png',
                           'gui/maps/shop/vehicles/600x450/A01_T1_Cunningham.png',
@@ -2155,7 +2155,7 @@ class RES_SHOP_EXT(object):
                           'gui/maps/shop/vehicles/600x450/Un05_Shot_Kal_Alef.png',
                           'gui/maps/shop/vehicles/600x450/Un06_M47_Romach.png', 'gui/maps/shop/vehicles/600x450/Un07_Renault_R35.png',
                           'gui/maps/shop/vehicles/600x450/Un08_Hotchkiss_H_39_IDF.png',
-                          'gui/maps/shop/vehicles/600x450/Un09_Locust_IDF.png', 'gui/maps/shop/vehicles/600x450/Un10_Sherman_Krupp_IDF.png',
+                          'gui/maps/shop/vehicles/600x450/Un09_Locust.png', 'gui/maps/shop/vehicles/600x450/Un10_Sherman_Krupp_IDF.png',
                           'gui/maps/shop/vehicles/600x450/Un11_Sherman_M3_IDF.png',
                           'gui/maps/shop/vehicles/600x450/Un13_T-54.png', 'gui/maps/shop/vehicles/600x450/Un14_T54D.png'))
 

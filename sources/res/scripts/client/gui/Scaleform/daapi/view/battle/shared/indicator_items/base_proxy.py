@@ -19,7 +19,6 @@ class BaseIndicatorProxy(object):
         raise NotImplementedError
 
     def onIndicatorLoaded(self, metaObject):
-        g_indicatorsStorage.onNewItem -= self.__onNewItem
         self._indicator = metaObject
         if self.__delayedStateStatus is not None:
             self.setState(self.__delayedStateStatus)
@@ -30,9 +29,7 @@ class BaseIndicatorProxy(object):
             return
 
     def init(self):
-        if self._indicator is None:
-            g_indicatorsStorage.onNewItem += self.__onNewItem
-        return
+        g_indicatorsStorage.onNewItem += self.__onNewItem
 
     def fini(self):
         g_indicatorsStorage.onNewItem -= self.__onNewItem

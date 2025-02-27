@@ -1,5 +1,6 @@
 from constants import BigWorld
 from gui.Scaleform.daapi.view.battle.shared.indicator_items.indicators_storage import g_indicatorsStorage
+from gui.shared import EVENT_BUS_SCOPE, events
 from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.Scaleform.daapi.view.meta.CommonIndicatorMeta import CommonIndicatorMeta
 from gui.battle_control.battle_constants import CROSSHAIR_VIEW_ID, VEHICLE_VIEW_STATE
@@ -7,12 +8,12 @@ from helpers import dependency
 from helpers.events_handler import EventsHandler
 
 class BaseIndicator(CommonIndicatorMeta, EventsHandler):
-    sessionProvider = dependency.descriptor(IBattleSessionProvider)
     __slots__ = ('__isAllowedByContext', '__isEnabled')
+    __sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
     def __init__(self):
         super(BaseIndicator, self).__init__()
-        self.__isAllowedByContext = True
+        self.__isAllowedByContext = False
         self.__isEnabled = False
 
     @property
@@ -36,12 +37,14 @@ class BaseIndicator(CommonIndicatorMeta, EventsHandler):
     def _populate(self):
         super(BaseIndicator, self)._populate()
         g_indicatorsStorage.add(self.componentName(), self)
+        self.addListener(events.GameEvent.BATTLE_LOADING, self.__handleBattleLoading, EVENT_BUS_SCOPE.BATTLE)
         self.__onVehicleControlling(self.attachedVehicle)
         self._subscribe()
         self.__updateVisibility()
 
     def _dispose(self):
         self._unsubscribe()
+        self.removeListener(events.GameEvent.BATTLE_LOADING, self.__handleBattleLoading, scope=EVENT_BUS_SCOPE.BATTLE)
         g_indicatorsStorage.pop(self.componentName())
         super(BaseIndicator, self)._dispose()
 
@@ -57,7 +60,7 @@ class BaseIndicator(CommonIndicatorMeta, EventsHandler):
         self.__updateVisibility()
 
     def __getCrosshairEvents(self):
-        crosshairCtrl = self.sessionProvider.shared.crosshair
+        crosshairCtrl = self.__sessionProvider.shared.crosshair
         if crosshairCtrl is None:
             return ()
         else:
@@ -70,16 +73,16 @@ class BaseIndicator(CommonIndicatorMeta, EventsHandler):
               crosshairCtrl.onCrosshairViewChanged, self.__onCrosshairViewChanged))
 
     def __getComp7Events(self):
-        prbCtrl = self.sessionProvider.dynamic.comp7PrebattleSetup
+        prbCtrl = self.__sessionProvider.dynamic.comp7PrebattleSetup
         if prbCtrl is None:
             return ()
         else:
             return (
              (
-              prbCtrl.onBattleStarted, self.__onBattleStarted),)
+              prbCtrl.onBattleStarted, self.__onComp7BattleStarted),)
 
     def __getVehicleStateEvents(self):
-        vStateCtrl = self.sessionProvider.shared.vehicleState
+        vStateCtrl = self.__sessionProvider.shared.vehicleState
         if vStateCtrl is None:
             return ()
         else:
@@ -89,17 +92,9 @@ class BaseIndicator(CommonIndicatorMeta, EventsHandler):
              (
               vStateCtrl.onVehicleControlling, self.__onVehicleControlling))
 
-    def __onBattleStarted(self):
-        self.__updateContextAvailability()
+    def __onComp7BattleStarted(self):
+        self.__isAllowedByContext = self.__isComp7IndicatorAllowed()
         self.__updateVisibility()
-
-    def __updateContextAvailability(self):
-        prebattleCtrl = self.sessionProvider.dynamic.comp7PrebattleSetup
-        if prebattleCtrl is not None:
-            self.__isAllowedByContext = prebattleCtrl.isVehicleStateIndicatorAllowed()
-        else:
-            self.__isAllowedByContext = True
-        return
 
     def __onVehicleControlling(self, vehicle):
         if vehicle is None:
@@ -120,7 +115,7 @@ class BaseIndicator(CommonIndicatorMeta, EventsHandler):
         self.as_setVisibleS(False)
 
     def _updateScale(self, *_):
-        self.as_updateLayoutS(*self.sessionProvider.shared.crosshair.getScaledPosition())
+        self.as_updateLayoutS(*self.__sessionProvider.shared.crosshair.getScaledPosition())
         self.__updateVisibility()
 
     def __onCrosshairViewChanged(self, viewID):
@@ -131,3 +126,11 @@ class BaseIndicator(CommonIndicatorMeta, EventsHandler):
 
     def __updateVisibility(self):
         self.as_setVisibleS(self.__isEnabled and self.__isAllowedByContext)
+
+    def __handleBattleLoading(self, event):
+        self.__isAllowedByContext = not event.ctx['isShown'] and self.__isComp7IndicatorAllowed()
+        self.__updateVisibility()
+
+    def __isComp7IndicatorAllowed(self):
+        prebattleCtrl = self.__sessionProvider.dynamic.comp7PrebattleSetup
+        return prebattleCtrl is None or prebattleCtrl.isVehicleStateIndicatorAllowed()

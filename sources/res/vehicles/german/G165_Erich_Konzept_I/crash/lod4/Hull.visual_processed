@@ -74,14 +74,6 @@
 				<material>
 					<identifier>tank_proxy</identifier>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
@@ -108,22 +100,14 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.000249 0.051756 0.127850</groupOrigin>
+				<groupOrigin>-0.002051 0.075427 -0.084440</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.750654 -0.587727 -3.192176</min>
-		<max>1.751151 0.691240 3.447875</max>
+		<min>-1.752954 -0.564056 -3.404466</min>
+		<max>1.748851 0.714911 3.235585</max>
 	</boundingBox>
 	<geometrySize>2968</geometrySize>
 	<minUVDensity>0.002902</minUVDensity>

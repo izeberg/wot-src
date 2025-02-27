@@ -94,22 +94,17 @@ class BattlePassProgressionsView(ViewImpl):
 
     @createTooltipContentDecorator()
     def createToolTipContent(self, event, contentID):
-        if not self.isFocused:
-            return None
-        else:
-            if contentID == R.views.lobby.battle_pass.tooltips.BuyStagesFooterTooltipView():
-                return BuyStagesFooterTooltipView(event.getArgument('isActive'))
-            if contentID == R.views.lobby.battle_pass.tooltips.BattleTypesTooltipView():
-                return BattleTypesTooltipView()
-            return super(BattlePassProgressionsView, self).createToolTipContent(event, contentID)
+        if contentID == R.views.lobby.battle_pass.tooltips.BuyStagesFooterTooltipView():
+            return BuyStagesFooterTooltipView(event.getArgument('isActive'))
+        if contentID == R.views.lobby.battle_pass.tooltips.BattleTypesTooltipView():
+            return BattleTypesTooltipView()
+        return super(BattlePassProgressionsView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
         if tooltipId is None:
             return
         else:
-            if not self.isFocused:
-                return
             tooltipData = self.__tooltipItems.get(tooltipId)
             if tooltipData is not None:
                 return tooltipData

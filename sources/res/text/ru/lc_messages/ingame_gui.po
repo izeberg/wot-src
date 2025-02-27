@@ -1030,6 +1030,9 @@ msgstr "Пирометр недоступен: прибор на перезар�
 msgid "player_errors/thermalVision/disabled"
 msgstr "Пирометр недоступен."
 
+msgid "player_errors/thermalVision/overturned"
+msgstr "Пирометр недоступен: танк перевёрнут."
+
 msgid "player_messages/ALLY_HIT"
 msgstr "Попадание в союзника %(entity)s!"
 

@@ -7,15 +7,15 @@ from cache import cached_property
 from gui.Scaleform.daapi.view.battle.shared.indicator_items.thermal_indicator_proxy import ThermalVisionIndicatorProxy
 from gui.battle_control.avatar_getter import getInputHandler
 from helpers import dependency
-from constants import THERMAL_VISION_STATE
-from helpers.thermal_vision.constants import SOUND_EVENT_ACTIVATION, SOUND_EVENT_RELOADING, SOUND_SWITCH_ACTIVATION, SOUND_EVENT_NPC_DETECTED, RELOADING_DURATION, SOUND_EVENT_ENEMY_IN_SECTOR
+from constants import THERMAL_VISION_STATE, OVERTURN_WARNING_LEVEL
+from helpers.thermal_vision.constants import SOUND_EVENT_ACTIVATION, SOUND_EVENT_RELOADING, SOUND_SWITCH_ACTIVATION, SOUND_EVENT_NPC_DETECTED, RELOADING_DURATION, SOUND_EVENT_ENEMY_IN_SECTOR, DISABLED_ERROR_MSG_KEY
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.battle_session import IBattleSessionProvider
 from wotdecorators import noexcept
 if typing.TYPE_CHECKING:
     from items.components.shared_components import ThermalVisionParams
 _logger = logging.getLogger(__name__)
-_ERROR_MESSAGES = {THERMAL_VISION_STATE.ACTIVE: 'thermalVisionAlreadyActivated', 
+_STATE_ERROR_MESSAGES = {THERMAL_VISION_STATE.ACTIVE: 'thermalVisionAlreadyActivated', 
    THERMAL_VISION_STATE.RELOADING: 'thermalVisionCooldown', 
    THERMAL_VISION_STATE.DISABLED: 'thermalVisionDisabled'}
 
@@ -25,13 +25,13 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
 
     def __init__(self):
         super(ThermalVisionController, self).__init__()
-        self.__indicatorProxy = ThermalVisionIndicatorProxy(self.entity)
+        self.__indicatorProxy = ThermalVisionIndicatorProxy()
         self.__observedEntityIds = set()
         g_playerEvents.onAvatarReady += self.__onAvatarReady
+        getInputHandler().onCameraChanged += self.__onCameraChanged
         self.__settingsCore.onSettingsChanged += self.__onSettingsChanged
         self.__indicatorProxy.init()
         self.__initUI()
-        getInputHandler().onCameraChanged += self.__onCameraChanged
 
     def onDestroy(self):
         self.cleanup()
@@ -52,7 +52,7 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
 
     @property
     def params(self):
-        return self.entity.typeDescriptor.turret.thermalVision
+        return self.typeDescriptor.turret.thermalVision
 
     @property
     def state(self):
@@ -71,20 +71,18 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
         return self.stateStatus.startTime
 
     @property
-    def attachedVehId(self):
+    def isObserver(self):
         avatar = BigWorld.player()
-        if avatar and avatar.vehicle:
-            return avatar.vehicle.id
-        else:
-            return
+        return avatar is None or avatar.playerVehicleID != self.entity.id
+
+    @property
+    def isOverturned(self):
+        avatar = BigWorld.player()
+        return avatar is None or avatar.vehicleOverturnLevel >= OVERTURN_WARNING_LEVEL.DANGER
 
     @cached_property
-    def playerVehId(self):
-        avatar = BigWorld.player()
-        if avatar and avatar.playerVehicleID:
-            return avatar.playerVehicleID
-        else:
-            return
+    def typeDescriptor(self):
+        return self.entity.getDescr(None)
 
     @cached_property
     def stateHandlers(self):
@@ -136,10 +134,13 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
             return
         else:
             currentState = self.state
-            if currentState == THERMAL_VISION_STATE.IDLE:
-                self.cell.tryActivate()
-            else:
-                self.__showErrorMessage(currentState)
+            if currentState != THERMAL_VISION_STATE.IDLE:
+                self.__showStateErrorMessage(currentState)
+                return
+            if self.isOverturned:
+                self.__guiSessionProvider.shared.messages.showVehicleError(DISABLED_ERROR_MSG_KEY)
+                return
+            self.cell.tryActivate()
             return
 
     def onEnemyInSector(self):
@@ -150,15 +151,23 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
         SOUND_EVENT_ENEMY_IN_SECTOR.stop()
         self.__indicatorProxy.setEntityInSector(False)
 
+    def updateUseCount(self, useCount):
+        self.__indicatorProxy.setUseCount(useCount)
+
     def __initUI(self):
-        self.__indicatorProxy.setState(self.stateStatus)
-        self.__stopAllSounds()
-        self.__updateSectorSettings()
-        params = self.params
-        BigWorld.PyrometerSector.setParams(params.distance, params.hSectorAngle, params.vSectorAngle)
-        if self.stateStatus is not None:
-            self.__updateState()
-        return
+        if not self.typeDescriptor.hasThermalVision:
+            _logger.error('init requested for vehicle without thermal vision config')
+            return
+        else:
+            params = self.params
+            self.__indicatorProxy.setParams(params)
+            self.__indicatorProxy.setState(self.stateStatus)
+            self.__stopAllSounds()
+            self.__updateSectorSettings()
+            BigWorld.PyrometerSector.setParams(params.distance, params.hSectorAngle, params.vSectorAngle)
+            if self.stateStatus is not None:
+                self.__updateState()
+            return
 
     def __updateState(self):
         state = self.state
@@ -200,14 +209,14 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
             SOUND_EVENT_RELOADING.play(reloadTime)
 
     def __setSectorState(self, state):
-        if self.playerVehId != self.attachedVehId:
+        if self.isObserver:
             return
         if not self.__settingsCore.getSetting(GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP):
             state = THERMAL_VISION_STATE.DISABLED
         self.__guiSessionProvider.shared.feedback.updateThermalSectorState(self.entity.id, state)
 
     def __updateSectorSettings(self):
-        if self.playerVehId == self.attachedVehId:
+        if not self.isObserver:
             self.__guiSessionProvider.shared.feedback.updateThermalSectorSettings(self.entity.id, self.params)
 
     def __onAvatarReady(self):
@@ -222,10 +231,10 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
         return
 
     def __toggleShader(self, isVisible):
-        if self.playerVehId != self.attachedVehId:
+        if self.isObserver:
             self.__setIsPyrometer(False)
             return
-        isVisible = isVisible and self.__settingsCore.getSetting(GAME.DISABLE_THERMAL_VISION_EFFECT)
+        isVisible = isVisible and self.__settingsCore.getSetting(GAME.ENABLE_THERMAL_VISION_EFFECT)
         self.__setIsPyrometer(isVisible)
 
     def __setIsPyrometer(self, isVisible):
@@ -235,8 +244,8 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
         return
 
     def __toggleTerrainSector(self, isVisible):
-        isVisible = isVisible and self.__settingsCore.getSetting(GAME.DISABLE_THERMAL_VISION_SECTOR_EFFECT)
-        if not isVisible or self.playerVehId != self.attachedVehId:
+        isVisible = isVisible and self.__settingsCore.getSetting(GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT)
+        if not isVisible or self.isObserver:
             BigWorld.PyrometerSector.detachFromCompound()
             return
         if getInputHandler().ctrlModeName == CTRL_MODE_NAME.SNIPER:
@@ -246,15 +255,18 @@ class ThermalVisionController(BigWorld.DynamicScriptComponent):
             _logger.error('Failed to show sector on terrain for %s', self.entity.id)
 
     def __onSettingsChanged(self, diff):
-        isActive = self.stateStatus is not None and self.state == THERMAL_VISION_STATE.ACTIVE
-        if GAME.DISABLE_THERMAL_VISION_EFFECT in diff:
-            self.__setIsPyrometer(isActive and diff[GAME.DISABLE_THERMAL_VISION_EFFECT])
-        if GAME.DISABLE_THERMAL_VISION_SECTOR_EFFECT in diff:
-            self.__toggleTerrainSector(isActive and diff[GAME.DISABLE_THERMAL_VISION_SECTOR_EFFECT])
-        if GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP in diff:
-            self.__setSectorState(self.state)
-        return
+        if self.stateStatus is None:
+            return
+        else:
+            isActive = self.stateStatus is not None and self.state == THERMAL_VISION_STATE.ACTIVE
+            if GAME.ENABLE_THERMAL_VISION_EFFECT in diff:
+                self.__setIsPyrometer(isActive and diff[GAME.ENABLE_THERMAL_VISION_EFFECT])
+            if GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT in diff:
+                self.__toggleTerrainSector(isActive and diff[GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT])
+            if GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP in diff:
+                self.__setSectorState(self.state)
+            return
 
-    def __showErrorMessage(self, state):
-        errorMessageName = _ERROR_MESSAGES[state]
+    def __showStateErrorMessage(self, state):
+        errorMessageName = _STATE_ERROR_MESSAGES[state]
         self.__guiSessionProvider.shared.messages.showVehicleError(errorMessageName)

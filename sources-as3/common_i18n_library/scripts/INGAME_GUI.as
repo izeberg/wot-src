@@ -2082,6 +2082,8 @@ package
       public static const PLAYER_ERRORS_THERMALVISION_COOLDOWN:String = "#ingame_gui:player_errors/thermalVision/cooldown";
       
       public static const PLAYER_ERRORS_THERMALVISION_ALREADYACTIVATED:String = "#ingame_gui:player_errors/thermalVision/alreadyActivated";
+      
+      public static const PLAYER_ERRORS_THERMALVISION_OVERTURNED:String = "#ingame_gui:player_errors/thermalVision/overturned";
        
       
       public function INGAME_GUI()

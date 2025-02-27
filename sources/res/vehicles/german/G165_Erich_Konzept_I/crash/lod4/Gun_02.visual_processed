@@ -18,22 +18,18 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
+					<identifier>tank_guns</identifier>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G165_Erich_Konzept_I/Erich_Konzept_I_proxy_GMM.dds</Texture>
@@ -54,24 +50,15 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.002561 0.045869 1.950233</groupOrigin>
+				<groupOrigin>0.000261 0.069540 1.737943</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.481651 -0.780865 -1.171443</min>
-		<max>1.486773 0.872602 5.071908</max>
+		<min>-1.483951 -0.757194 -1.383733</min>
+		<max>1.484473 0.896273 4.859618</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
 	<geometrySize>5684</geometrySize>
 	<minUVDensity>0.002908</minUVDensity>
 </root>

@@ -374,5 +374,13 @@
 				<item>yellow</item>
 			</value>
 		</message>
+		<message>
+			<name>thermalVisionOverturned</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/thermalVision/overturned)</item>
+				<item>yellow</item>
+			</value>
+		</message>
 	</messages>
 </root>

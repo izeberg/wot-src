@@ -11,8 +11,6 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
    public class ThermalVisionMinimapEntry extends BattleUIComponent
    {
       
-      private static const DISTANCE_SCALE_KOEF:Number = 0.34;
-      
       private static const LINE_STYLE_THICKNESS:Number = 0.5;
       
       private static const SECTOR_COLOR:uint = 8378677;
@@ -37,7 +35,7 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
       
       private static const DIVISIONS_PER_RADIAN:uint = 8;
       
-      private static const DEFAULT_MAP_SIZE:int = 620;
+      private static const DEFAULT_MAP_SIZE:int = 210;
        
       
       private var _isEnabled:Boolean = false;
@@ -131,7 +129,7 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
          super.draw();
          if(isInvalid(InvalidationType.DATA) || isInvalid(InvalidationType.STATE))
          {
-            _loc1_ = this._distance * DISTANCE_SCALE_KOEF * this._mapSizeKoef | 0;
+            _loc1_ = this._distance * this._mapSizeKoef | 0;
             _loc2_ = this._fov * 0.5;
             _loc3_ = !!this._isEnabled ? uint(SECTOR_COLOR) : uint(SECTOR_COLOR_DISABLED);
             _loc4_ = !!this._isEnabled ? Number(SECTOR_FILL_ALPHA) : Number(SECTOR_FILL_ALPHA_DISABLED);

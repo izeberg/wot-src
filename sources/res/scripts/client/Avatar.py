@@ -156,6 +156,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
     deviceStates = property(lambda self: self.__deviceStates)
     vehicles = property(lambda self: self.__vehicles)
     consistentMatrices = property(lambda self: self.__consistentMatrices)
+    vehicleOverturnLevel = property(lambda self: self.__vehicleOverturnLevel)
     isVehicleOverturned = property(lambda self: self.__isVehicleOverturned)
     isVehicleDrowning = property(lambda self: self.__isVehicleDrowning)
     isOwnBarrelUnderWater = property(lambda self: self.__isOwnBarrelUnderWater())
@@ -234,6 +235,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.__ownVehicleTurretMProv = self.__consistentMatrices.ownVehicleTurretMProv
         self.__isVehicleOverturned = False
         self.__isVehicleDrowning = False
+        self.__vehicleOverturnLevel = constants.OVERTURN_WARNING_LEVEL.SAFE
         self.__battleResults = None
         self.__gunDamagedShootSound = None
         if BattleReplay.g_replayCtrl.isPlaying:
@@ -1385,6 +1387,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         else:
             g_playerEvents.onOverturnLevelUpdated(vehicleID, level)
             self.__isVehicleOverturned = constants.OVERTURN_WARNING_LEVEL.isOverturned(level)
+            self.__vehicleOverturnLevel = level
             self.updateVehicleDestroyTimer(VEHICLE_MISC_STATUS.VEHICLE_IS_OVERTURNED, times, level)
             ctrl = self.guiSessionProvider.dynamic.progression
             if ctrl is not None:
@@ -1452,15 +1455,15 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.guiSessionProvider.invalidateVehicleState(state, value)
         return
 
-    def updateThermalWarningTimer(self, startTime, duration):
+    def updateThermalWarningTimer(self, startTime, duration, forceUpdate=False):
         newTime = startTime + duration
         prevTime = sum(self._thermalWarningTime)
-        if isclose(prevTime, newTime):
+        if not forceUpdate and isclose(prevTime, newTime):
             return
         value = (startTime, duration)
         self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.THERMAL_VISION_WARNING, value)
         if startTime > 0:
-            RTPC_EVENT_WARNING.play(duration)
+            RTPC_EVENT_WARNING.play(duration, startTime)
         else:
             RTPC_EVENT_WARNING.stop()
 
@@ -1750,7 +1753,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         if isObserved:
             self.updateThermalWarningTimer(0, 0)
         else:
-            self.updateThermalWarningTimer(*self._thermalWarningTime)
+            self.updateThermalWarningTimer(forceUpdate=True, *self._thermalWarningTime)
         self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.OBSERVED_BY_ENEMY, isObserved)
 
     def battleEventsSummary(self, summary):
