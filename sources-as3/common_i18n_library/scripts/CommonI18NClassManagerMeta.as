@@ -21,8 +21,6 @@ package
       
       public static const COMMON:Class = COMMON;
       
-      public static const COMP7:Class = COMP7;
-      
       public static const CONTROLS:Class = CONTROLS;
       
       public static const CREW_BOOKS:Class = CREW_BOOKS;

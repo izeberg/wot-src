@@ -174,8 +174,8 @@
 		<fn_effect_bin>particles/Environment/env_housesmoke_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke_transparent.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_small.eff</fn_effect_bin>
@@ -263,9 +263,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</deferred>
@@ -418,8 +416,8 @@
 		<fn_effect_bin>particles/Environment/env_housesmoke_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke_transparent.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_small.eff</fn_effect_bin>
@@ -505,9 +503,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>

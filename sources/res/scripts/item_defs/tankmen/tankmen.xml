@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<roles>
-		<commander>
-			<userString>#item_types:tankman/roles/commander</userString>
-			<description/>
-			<icon>commander.png</icon>
-		</commander>
-		<radioman>
-			<userString>#item_types:tankman/roles/radioman</userString>
-			<description/>
-			<icon>radioman.png</icon>
-		</radioman>
-		<driver>
-			<userString>#item_types:tankman/roles/driver</userString>
-			<description/>
-			<icon>driver.png</icon>
-		</driver>
-		<gunner>
-			<userString>#item_types:tankman/roles/gunner</userString>
-			<description/>
-			<icon>gunner.png</icon>
-		</gunner>
-		<loader>
-			<userString>#item_types:tankman/roles/loader</userString>
-			<description/>
-			<icon>loader.png</icon>
-		</loader>
+		<commander/>
+		<radioman/>
+		<driver/>
+		<gunner/>
+		<loader/>
 	</roles>
 	<skills>
 		<repair>
@@ -315,7 +295,7 @@
 						<paramName>equipmentPreparationTime</paramName>
 						<measureType>percents</measureType>
 						<value>
-							-0.001
+							-0.0015
 							<!--BW_String-->
 						</value>
 					</arg>
@@ -324,7 +304,7 @@
 					<mul>
 						<name>equipmentPreparationTime</name>
 						<value>
-							0.9
+							0.85
 							<!--BW_String-->
 						</value>
 					</mul>
@@ -598,7 +578,7 @@
 						<paramName>vehicleHEShellDamageResistance</paramName>
 						<measureType>percents</measureType>
 						<value>
-							-0.0010
+							-0.0015
 							<!--BW_String-->
 						</value>
 					</arg>
@@ -617,7 +597,7 @@
 					<mul>
 						<name>vehicleHEShellDamageResistance</name>
 						<value>
-							0.9
+							0.85
 							<!--BW_String-->
 						</value>
 					</mul>

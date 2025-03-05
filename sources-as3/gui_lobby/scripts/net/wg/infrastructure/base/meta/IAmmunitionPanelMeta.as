@@ -14,7 +14,11 @@ package net.wg.infrastructure.base.meta
       
       function showChangeNationS() : void;
       
-      function as_setWarningState(param1:Boolean) : void;
+      function showEasyTankEquipS() : void;
+      
+      function as_setMaintenanceWarningState(param1:Boolean) : void;
+      
+      function as_highlightEasyTankEquip(param1:Boolean) : void;
       
       function as_updateVehicleStatus(param1:Object) : void;
       

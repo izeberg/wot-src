@@ -18819,9 +18819,9 @@
 				<!--BW_String-->
 			</aimingTime>
 			<weight>2590</weight>
-			<maxHealth>210</maxHealth>
-			<maxRegenHealth>105</maxRegenHealth>
-			<repairCost>8</repairCost>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>110</maxRegenHealth>
+			<repairCost>10</repairCost>
 			<invisibilityFactorAtShot>
 				0.18
 				<!--BW_String-->
@@ -18857,7 +18857,7 @@
 						0.9
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1080</speed>
+					<speed>950</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -18870,7 +18870,7 @@
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>890</speed>
+					<speed>830</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -18883,7 +18883,7 @@
 						0.1
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>890</speed>
+					<speed>830</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->

@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-10 22:04+0200\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "comp7/deserter/cancel"
+msgstr "Cancel"
+
+msgid "comp7/deserter/message"
+msgstr ""
+"This battle is not over yet. If you leave the battle before it ends, you will be letting down your team.\n"
+"{brown_open}You will be charged a disciplinary penalty.{brown_close}\n"
+"Are you sure you want to leave the battle?"
+
+msgid "comp7/deserter/msgTitle"
+msgstr "You will lose your Rating Points!"
+
+msgid "comp7/deserter/submit"
+msgstr "Desert"
+
+msgid "comp7/deserter/title"
+msgstr "Desertion From Battlefield"
+
+msgid "punishmentWindow/message/ban/comp7"
+msgstr ""
+"You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
+"{whiteSpanish_Open}%(penalty)s{whiteSpanish_Close} Rating Points have been deducted and you have temporarily been blocked from battles in the {whiteSpanish_Open}Onslaught{whiteSpanish_Close} mode."
+
+msgid "punishmentWindow/message/ban/comp7/qualification"
+msgstr ""
+"You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
+"You have temporarily been blocked from battles in the {whiteSpanish_Open}Onslaught{whiteSpanish_Close} mode and your Rating has been reduced."

@@ -10,6 +10,7 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_pass.battle_pass_awards_view_model import BattlePassAwardsViewModel, RewardReason
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
+from gui.server_events.events_dispatcher import showMissionsBattlePass
 from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
 from gui.sounds.filters import switchHangarOverlaySoundFilter
 from helpers import dependency
@@ -70,7 +71,9 @@ class BattlePassAwardsView(ViewImpl):
          (
           self.viewModel.onBuyClick, self.__onBuyClick),
          (
-          self.viewModel.onClose, self.__close))
+          self.viewModel.onClose, self.__close),
+         (
+          self.viewModel.onShowPostProgression, self.__showPostProgression))
 
     def _onLoading(self, bonuses, packageBonuses, data, needNotifyClosing, *args, **kwargs):
         super(BattlePassAwardsView, self)._onLoading(*args, **kwargs)
@@ -99,6 +102,7 @@ class BattlePassAwardsView(ViewImpl):
             tx.setSeasonStopped(self.__battlePass.isPaused())
             tx.setIsBaseStyleLevel(styleLevel == 1)
             tx.setIsExtra(self.__battlePass.isExtraChapter(chapterID))
+            tx.setIsPostProgressionUnlocked(self.__battlePass.isPostProgressionActive())
         if packageBonuses is not None and packageBonuses:
             self.__setPackageRewards(packageBonuses)
         self.__setAwards(bonuses, isFinalReward)
@@ -183,6 +187,11 @@ class BattlePassAwardsView(ViewImpl):
         if self.viewStatus not in (ViewStatus.DESTROYING, ViewStatus.DESTROYED):
             self.destroyWindow()
         return
+
+    def __showPostProgression(self):
+        showMissionsBattlePass(R.views.lobby.battle_pass.PostProgressionView())
+        if self.viewStatus not in (ViewStatus.DESTROYING, ViewStatus.DESTROYED):
+            self.destroyWindow()
 
 
 class BattlePassAwardWindow(LobbyNotificationWindow):

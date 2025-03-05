@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A171_IMT/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.600610 -0.000022 -2.950974</min>
+		<max>1.600610 1.056844 2.860392</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A171_IMT/normal/lod1/Chassis</nodefullVisual>
+</root>

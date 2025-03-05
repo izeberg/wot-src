@@ -101,6 +101,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.RANKEDBATTLES_ALIASES;
    import net.wg.data.constants.generated.RANKEDBATTLES_CONSTS;
    import net.wg.data.constants.generated.RESEARCH_ALIASES;
+   import net.wg.data.constants.generated.SERVERSIDEREPLAY_ALIASES;
    import net.wg.data.constants.generated.SESSION_STATS_CONSTANTS;
    import net.wg.data.constants.generated.SHOP_ALIASES;
    import net.wg.data.constants.generated.SKILLS_CONSTANTS;
@@ -409,6 +410,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.windows.SimpleWindow;
    import net.wg.gui.components.windows.vo.SimpleWindowBtnVo;
    import net.wg.gui.crewOperations.CrewOperationEvent;
+   import net.wg.gui.crewOperations.CrewOperationIRToggleBlock;
    import net.wg.gui.crewOperations.CrewOperationInfoVO;
    import net.wg.gui.crewOperations.CrewOperationWarningVO;
    import net.wg.gui.crewOperations.CrewOperationsIRFooter;
@@ -1118,6 +1120,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.ammunitionPanel.AmmunitionPanel;
    import net.wg.gui.lobby.hangar.ammunitionPanel.EquipmentSlot;
    import net.wg.gui.lobby.hangar.ammunitionPanel.IAmmunitionPanel;
+   import net.wg.gui.lobby.hangar.ammunitionPanel.data.AmmunitionPanelBtnVO;
    import net.wg.gui.lobby.hangar.ammunitionPanel.data.AmmunitionPanelVO;
    import net.wg.gui.lobby.hangar.ammunitionPanelInject.AmmunitionPanelInject;
    import net.wg.gui.lobby.hangar.ammunitionPanelInject.data.HelpLayoutDataVO;
@@ -2659,7 +2662,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.window.BattlePassBadgesDemoWindow;
    import net.wg.gui.lobby.window.BoosterInfo;
    import net.wg.gui.lobby.window.BrowserWindow;
-   import net.wg.gui.lobby.window.Comp7PrimeTime;
    import net.wg.gui.lobby.window.ConfirmExchangeBlock;
    import net.wg.gui.lobby.window.ConfirmExchangeBlockNotification;
    import net.wg.gui.lobby.window.ConfirmExchangeDialog;
@@ -3112,6 +3114,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_RANKEDBATTLES_CONSTS:Class = RANKEDBATTLES_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_RESEARCH_ALIASES:Class = RESEARCH_ALIASES;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_SERVERSIDEREPLAY_ALIASES:Class = SERVERSIDEREPLAY_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_SESSION_STATS_CONSTANTS:Class = SESSION_STATS_CONSTANTS;
       
@@ -3786,6 +3790,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_CREWOPERATIONS_CREWOPERATIONEVENT:Class = CrewOperationEvent;
       
       public static const NET_WG_GUI_CREWOPERATIONS_CREWOPERATIONINFOVO:Class = CrewOperationInfoVO;
+      
+      public static const NET_WG_GUI_CREWOPERATIONS_CREWOPERATIONIRTOGGLEBLOCK:Class = CrewOperationIRToggleBlock;
       
       public static const NET_WG_GUI_CREWOPERATIONS_CREWOPERATIONSINITVO:Class = CrewOperationsInitVO;
       
@@ -5202,6 +5208,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_AMMUNITIONPANEL_EQUIPMENTSLOT:Class = EquipmentSlot;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_AMMUNITIONPANEL_IAMMUNITIONPANEL:Class = IAmmunitionPanel;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_AMMUNITIONPANEL_DATA_AMMUNITIONPANELBTNVO:Class = AmmunitionPanelBtnVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_AMMUNITIONPANEL_DATA_AMMUNITIONPANELVO:Class = AmmunitionPanelVO;
       
@@ -8284,8 +8292,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_WINDOW_BOOSTERINFO:Class = BoosterInfo;
       
       public static const NET_WG_GUI_LOBBY_WINDOW_BROWSERWINDOW:Class = BrowserWindow;
-      
-      public static const NET_WG_GUI_LOBBY_WINDOW_COMP7PRIMETIME:Class = Comp7PrimeTime;
       
       public static const NET_WG_GUI_LOBBY_WINDOW_CONFIRMEXCHANGEBLOCK:Class = ConfirmExchangeBlock;
       

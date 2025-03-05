@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-07-06 18:34+0200\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "player_errors/equipment/fastRecharge/vehicleIsNotRecharged"
+msgstr "Unavailable: This vehicle's gun is not reloading."
+
+msgid "player_errors/equipment/fastRecharge/vehicleIsOnFastRecharge"
+msgstr "Unavailable: The reload time has already been reduced."
+
+msgid "player_errors/equipment/hunter/noDamagedEnemyVehicles"
+msgstr "Unavailable: No enemy vehicles have been damaged by a shot."
+
+msgid "player_errors/equipment/hunter/vehicleIsNotDamaged"
+msgstr "Unavailable: You do not need to restore hit points."
+
+msgid "player_errors/equipment/roleSkill/alreadyActivated"
+msgstr "The %(name)s Role Skill is already active."
+
+msgid "player_errors/equipment/roleSkill/cooldown"
+msgstr "The %(name)s Role Skill is unavailable: on cooldown."
+
+msgid "player_errors/equipment/roleSkill/unavailable"
+msgstr "The %(name)s Role Skill is unavailable: no charge."
+
+msgid "player_messages/equipment/roleSkill/applied"
+msgstr "The %(name)s Role Skill has been activated!"
+
+msgid "player_messages/equipment/roleSkill/promoted"
+msgstr "The charge level of the %(name)s Role Skill has been increased!"
+
+msgid "player_messages/equipment/roleSkill/ready"
+msgstr "The %(equipment)s Role Skill is ready for activation."

@@ -206,8 +206,8 @@
 		<fn_effect_bin>particles/Environment/interior/01_karelia_flies_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_drops_wet.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_water_displacement.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_foam.eff</fn_effect_bin>
@@ -335,8 +335,6 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
@@ -583,8 +581,8 @@
 		<fn_effect_bin>particles/Environment/interior/01_karelia_flies_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_drops_wet.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_water_displacement.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/60_asia_miao_waterfall_foam.eff</fn_effect_bin>
@@ -712,8 +710,6 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.048816 -2.564176</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.101134 1.500000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.751116 0.660170</row1>
+					<row2>0.000000 -0.660170 0.751116</row2>
+					<row3>-1.380092 -0.010502 3.138507</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.707015 -0.707198</row1>
+					<row2>-0.000000 -0.707198 -0.707015</row2>
+					<row3>-1.380092 0.063713 -3.214581</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.616884 0.787054</row1>
+					<row2>0.000000 -0.787054 0.616884</row2>
+					<row3>1.380087 0.038528 3.159591</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.775028 -0.631926</row1>
+					<row2>-0.000000 -0.631926 -0.775028</row2>
+					<row3>1.380087 0.071668 -3.200705</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.254811 -0.966991</row1>
+					<row2>0.000000 0.966991 -0.254811</row2>
+					<row3>-0.838407 0.367454 -1.888455</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.161237 -0.986916</row1>
+					<row2>0.000000 0.986916 -0.161237</row2>
+					<row3>0.840819 0.371004 -1.970460</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.349374 0.073362</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<property>
+						selfIllumination
+						<Float>0.000000</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/poland/Pl34_Cs53_56_Woitek/Cs53_56_Woitek_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/poland/Pl34_Cs53_56_Woitek/Cs53_56_Woitek_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/poland/Pl34_Cs53_56_Woitek/Cs53_56_Woitek_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/poland/Pl34_Cs53_56_Woitek/Cs53_56_Woitek_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.009534 -0.053258 -0.110356</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.736826 -0.552992 -3.693802</min>
+		<max>1.755895 0.446477 3.473089</max>
+	</boundingBox>
+	<geometrySize>60202</geometrySize>
+	<minUVDensity>0.002142</minUVDensity>
+</root>

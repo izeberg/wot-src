@@ -73,6 +73,9 @@ class IMarkersManager(object):
     def setMarkerRenderInfo(self, markerID, minScale, offset, innerOffset, cullDistance, boundsMinScale):
         raise NotImplementedError
 
+    def setMarkerCullPlanarEnabled(self, markerID, enabled):
+        raise NotImplementedError
+
     def destroyMarker(self, markerID):
         raise NotImplementedError
 
@@ -130,6 +133,9 @@ class MarkerPlugin(IPlugin):
 
     def _setMarkerRenderInfo(self, markerID, minScale, offset, innerOffset, cullDistance, boundsMinScale):
         self._parentObj.setMarkerRenderInfo(markerID, minScale, offset, innerOffset, cullDistance, boundsMinScale)
+
+    def _setMarkerPlanarCullEnabled(self, markerID, enabled):
+        self._parentObj.setMarkerCullPlanarEnabled(markerID, enabled)
 
     def _setMarkerLocationOffset(self, markerID, minYOffset, maxYOffset, distanceForMinYOffset, maxBoost, boostStart):
         self._parentObj.setMarkerLocationOffset(markerID, minYOffset, maxYOffset, distanceForMinYOffset, maxBoost, boostStart)

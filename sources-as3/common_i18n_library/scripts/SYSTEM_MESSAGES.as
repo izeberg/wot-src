@@ -751,6 +751,8 @@ package
       
       public static const RETURN_CREW_FORBIDDEN:String = "#system_messages:return_crew/FORBIDDEN";
       
+      public static const RETURN_CREW_RETURN_UNAVAILABLE:String = "#system_messages:return_crew/return_unavailable";
+      
       public static const RETRAINING_TANKMAN_SUCCESS:String = "#system_messages:retraining_tankman/success";
       
       public static const RETRAINING_TANKMAN_FINANCIAL_SUCCESS_CREDITS:String = "#system_messages:retraining_tankman/financial_success_credits";
@@ -1050,6 +1052,8 @@ package
       public static const VEHICLE_TMENXP_ACCELERATOR_VEHICLE_LOCKED:String = "#system_messages:vehicle_tmenxp_accelerator/vehicle_locked";
       
       public static const VEHICLE_TMENXP_ACCELERATOR_SERVER_ERROR:String = "#system_messages:vehicle_tmenxp_accelerator/server_error";
+      
+      public static const VEHICLE_AUTO_RETURN_SERVER_ERROR:String = "#system_messages:vehicle_auto_return/server_error";
       
       public static const VEHICLE_REPAIR_SUCCESS:String = "#system_messages:vehicle_repair/success";
       
@@ -1408,6 +1412,12 @@ package
       public static const BATTLEBOOSTERS_APPLY_WALLET_NOT_AVAILABLE:String = "#system_messages:battleBoosters_apply/wallet_not_available";
       
       public static const BATTLEABILITIES_APPLY_ERROR:String = "#system_messages:battleAbilities_apply/error";
+      
+      public static const EASYTANKEQUIP_APPLY_ERROR:String = "#system_messages:easyTankEquip_apply/error";
+      
+      public static const EASYTANKEQUIP_APPLY_NOT_ENOUGH_MONEY:String = "#system_messages:easyTankEquip_apply/not_enough_money";
+      
+      public static const EASYTANKEQUIP_APPLY_WALLET_NOT_AVAILABLE:String = "#system_messages:easyTankEquip_apply/wallet_not_available";
       
       public static const REQUEST_ISINCOOLDOWN:String = "#system_messages:request/isInCoolDown";
       
@@ -2786,6 +2796,14 @@ package
       public static const SKILLSCREWBOOSTERSCONVERSION_TEXT:String = "#system_messages:skillsCrewBoostersConversion/text";
       
       public static const SKILLSCREWBOOSTERSCONVERSION_ITEM:String = "#system_messages:skillsCrewBoostersConversion/item";
+      
+      public static const TANKMAN_TANKMANTOREMOVE:String = "#system_messages:tankman/tankmanToRemove";
+      
+      public static const TRANSFERXP_SERVER_ERROR:String = "#system_messages:transferXP/server_error";
+      
+      public static const EASYTANKEQUIP_SWITCH_PAUSE_ON_BODY:String = "#system_messages:easyTankEquip/switch_pause_on/body";
+      
+      public static const EASYTANKEQUIP_SWITCH_PAUSE_OFF_BODY:String = "#system_messages:easyTankEquip/switch_pause_off/body";
        
       
       public function SYSTEM_MESSAGES()

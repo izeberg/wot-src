@@ -10,11 +10,9 @@ from gui.prb_control.settings import UNIT_RESTRICTION
 from gui.shared.formatters import text_styles, icons
 from helpers import i18n
 from shared_utils import BoundMethodWeakref
-from helpers import dependency
-from skeletons.gui.game_control import IComp7Controller
+_EXT_INVALID_UNIT_MESSAGE_GETTERS = []
 
 class ActionButtonStateVO(dict):
-    __comp7Ctrl = dependency.descriptor(IComp7Controller)
     __NOT_CRITICAL_STATES = (
      UNIT_RESTRICTION.UNDEFINED,
      UNIT_RESTRICTION.IS_IN_IDLE,
@@ -129,12 +127,11 @@ class ActionButtonStateVO(dict):
                                                '', {}), 
            UNIT_RESTRICTION.BAN_IS_SET: (
                                        '', {}), 
-           UNIT_RESTRICTION.RANK_RESTRICTION: (
-                                             backport.text(R.strings.comp7.unit.message.rankRangeRestriction()), {}), 
-           UNIT_RESTRICTION.MODE_OFFLINE: (
-                                         backport.text(R.strings.comp7.unit.message.modeOffline()), {}), 
            UNIT_RESTRICTION.PLAY_LIMITS_IS_ACTIVE: (
                                                   backport.text(R.strings.cyberSport.window.unit.message.play_limits_is_active()), {})}
+        for getter in _EXT_INVALID_UNIT_MESSAGE_GETTERS:
+            self.__INVALID_UNIT_MESSAGES.update(getter())
+
         self.__WARNING_UNIT_MESSAGES = {UNIT_RESTRICTION.XP_PENALTY_VEHICLE_LEVELS: (
                                                       PLATOON.MEMBERS_FOOTER_VEHICLES_DIFFERENTLEVELS, {})}
         self.__NEUTRAL_UNIT_MESSAGES = {UNIT_RESTRICTION.UNIT_WILL_SEARCH_PLAYERS: (

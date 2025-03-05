@@ -775,15 +775,13 @@ BATTLE_RESULTS = [
   'finalVehInfo', dict, {}, None, 'skip', ENTRY_TYPE.SERVER)]
 BATTLE_PASS_RESULTS = [
  (
-  'bpChapter', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
+  'bpChaptersInfo', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
   'bpTopPoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
   'bpBonusPoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
   'bpNonChapterPointsDiff', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
- (
-  'sumPoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
   'hasBattlePass', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (

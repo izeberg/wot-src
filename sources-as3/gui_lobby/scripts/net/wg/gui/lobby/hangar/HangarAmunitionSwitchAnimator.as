@@ -18,7 +18,7 @@ package net.wg.gui.lobby.hangar
       
       private static const CAROUSEL_CONTAINER_OFFSET:int = -82;
       
-      public static const MAKE_HANGAR_VISIBILE:String = "makeHangarVisibile";
+      public static const MAKE_HANGAR_VISIBLE:String = "makeHangarVisible";
       
       public static const PLAY_ANIM_SHOW_HANGAR:String = "showHangar";
       
@@ -47,7 +47,7 @@ package net.wg.gui.lobby.hangar
       
       private var _percents:Number = 0;
       
-      private var _isShow:Boolean = false;
+      private var _isHangarShown:Boolean = false;
       
       private var _animProps:Object;
       
@@ -76,13 +76,21 @@ package net.wg.gui.lobby.hangar
          this.updateDefaultPositions();
       }
       
+      public function addAlphaItem(param1:DisplayObject) : void
+      {
+         if(this._alphaAnimatedParts.indexOf(param1) == -1)
+         {
+            this._alphaAnimatedParts.push(param1);
+         }
+      }
+      
       public final function dispose() : void
       {
          this._disposed = true;
          App.utils.scheduler.cancelTask(this.stageMouseChildrenSetEnabled);
          this.stageMouseChildrenSetEnabled();
          this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_SHOW_ANIM_START,this.onAmmunitionViewLoadedHandler);
-         this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.MAKE_HANGAR_VISIBILE,this.onMakeHangarVisible);
+         this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.MAKE_HANGAR_VISIBLE,this.onMakeHangarVisible);
          this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.PLAY_ANIM_SHOW_HANGAR,this.onShowHangarHandler);
          this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_SHOW_ANIM_COMPLETE,this.onAmmunitionSetupViewAnimComplete);
          removeEventListener(Event.COMPLETE,this.onHangarPreparationToSwitchComplete);
@@ -101,18 +109,43 @@ package net.wg.gui.lobby.hangar
          this._appStage = null;
       }
       
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       public function playHideAnimation() : void
       {
          App.graphicsOptimizationMgr.unregister(this._hangar.carousel);
          this.percents = 0;
          this._tween.reset();
          this._tween.paused = false;
-         this._isShow = false;
+         this._isHangarShown = false;
          addEventListener(Event.COMPLETE,this.onHangarPreparationToSwitchComplete);
          this._hangar.mouseEnabled = false;
          this._hangar.ammunitionPanelInject.onHangarSwitchAnimCompleteS(false);
          App.utils.scheduler.scheduleTask(this.stageMouseChildrenSetEnabled,STAGE_MOUSE_ENABLED_TIMEOUT);
          this._appStage.mouseChildren = false;
+      }
+      
+      public function removeAlphaItem(param1:DisplayObject) : void
+      {
+         var _loc2_:int = this._alphaAnimatedParts.indexOf(param1);
+         if(_loc2_ != -1)
+         {
+            this._alphaAnimatedParts.splice(_loc2_,1);
+         }
+      }
+      
+      public function runShowAnimation() : void
+      {
+         removeEventListener(Event.COMPLETE,this.onHangarPreparationToSwitchComplete);
+         addEventListener(Event.COMPLETE,this.onAnimSwitchFromAmmunitionComplete);
+         this.playShowAnimation();
+         if(this._hangar.carouselContainer)
+         {
+            this._hangar.carouselContainer.alpha = 1;
+         }
       }
       
       public function updateStage(param1:Number, param2:Number) : void
@@ -141,8 +174,10 @@ package net.wg.gui.lobby.hangar
       
       private function playShowAnimation() : void
       {
+         this._hideCarouselContainerTween.reset();
+         this._hideCarouselContainerTween.paused = true;
          this.percents = 0;
-         this._isShow = true;
+         this._isHangarShown = true;
          this.updatePosition();
          this._tween.reset();
          this._tween.paused = false;
@@ -151,7 +186,7 @@ package net.wg.gui.lobby.hangar
       
       private function onAnimationComplete() : void
       {
-         if(this._isShow)
+         if(this._isHangarShown)
          {
             this._hangar.mouseChildren = true;
             this._hangar.ammunitionPanelInject.onHangarSwitchAnimCompleteS(true);
@@ -201,7 +236,7 @@ package net.wg.gui.lobby.hangar
       {
          var _loc2_:DisplayObject = null;
          var _loc1_:Number = 0;
-         if(this._isShow)
+         if(this._isHangarShown)
          {
             _loc1_ = this.percents;
          }
@@ -226,7 +261,7 @@ package net.wg.gui.lobby.hangar
          for each(_loc3_ in this._moveDownAnimatedParts)
          {
             _loc2_ = AnimPositionProps(this._animProps[_loc3_.name]);
-            if(this._isShow)
+            if(this._isHangarShown)
             {
                _loc1_ = _loc2_.topY + (1 - this._percents) * (_loc2_.bottomY - _loc2_.topY);
             }
@@ -250,6 +285,11 @@ package net.wg.gui.lobby.hangar
          this.updatePosition();
       }
       
+      public function get isHangarShown() : Boolean
+      {
+         return this._isHangarShown;
+      }
+      
       private function onMakeHangarVisible(param1:Event) : void
       {
          this._hangar.setAnimatorVisibility(true);
@@ -260,7 +300,7 @@ package net.wg.gui.lobby.hangar
       {
          this.hideBottomItemsBeforDestroy();
          this._appStage.addEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_SHOW_ANIM_START,this.onAmmunitionViewLoadedHandler);
-         this._appStage.addEventListener(HangarAmunitionSwitchAnimator.MAKE_HANGAR_VISIBILE,this.onMakeHangarVisible);
+         this._appStage.addEventListener(HangarAmunitionSwitchAnimator.MAKE_HANGAR_VISIBLE,this.onMakeHangarVisible);
          this._appStage.addEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_SHOW_ANIM_COMPLETE,this.onAmmunitionSetupViewAnimComplete);
          this._appStage.addEventListener(HangarAmunitionSwitchAnimator.PLAY_ANIM_SHOW_HANGAR,this.onShowHangarHandler);
       }
@@ -279,13 +319,7 @@ package net.wg.gui.lobby.hangar
       
       private function onShowHangarHandler(param1:Event) : void
       {
-         removeEventListener(Event.COMPLETE,this.onHangarPreparationToSwitchComplete);
-         addEventListener(Event.COMPLETE,this.onAnimSwitchFromAmmunitionComplete);
-         this.playShowAnimation();
-         if(this._hangar.carouselContainer)
-         {
-            this._hangar.carouselContainer.alpha = 1;
-         }
+         this.runShowAnimation();
       }
       
       private function onAnimSwitchFromAmmunitionComplete(param1:Event) : void
@@ -293,11 +327,6 @@ package net.wg.gui.lobby.hangar
          removeEventListener(Event.COMPLETE,this.onAnimSwitchFromAmmunitionComplete);
          App.graphicsOptimizationMgr.register(this._hangar.carousel);
          this._appStage.dispatchEvent(new Event(AMMUNITION_VIEW_HIDE_ANIM_COMPLETE));
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

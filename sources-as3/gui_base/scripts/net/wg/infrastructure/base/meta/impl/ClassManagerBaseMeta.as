@@ -358,6 +358,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.controls.events.ScrollPaneEvent;
    import net.wg.gui.components.controls.events.SlotsPanelEvent;
    import net.wg.gui.components.controls.events.SortableScrollingListEvent;
+   import net.wg.gui.components.controls.events.UniversalBtnShineEvent;
    import net.wg.gui.components.controls.events.UserInfoTextEvent;
    import net.wg.gui.components.controls.helpers.ComponentStatesHelper;
    import net.wg.gui.components.controls.helpers.IconTextHelper;
@@ -388,6 +389,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.controls.scroller.data.ScrollConfig;
    import net.wg.gui.components.controls.scroller.data.ScrollerItemRendererSize;
    import net.wg.gui.components.controls.universalBtn.UniversalBtn;
+   import net.wg.gui.components.controls.universalBtn.UniversalBtnShineAnim;
    import net.wg.gui.components.controls.universalBtn.UniversalBtnToggleIndicator;
    import net.wg.gui.components.crosshairPanel.CrosshairArcade;
    import net.wg.gui.components.crosshairPanel.CrosshairAverageDamageContainer;
@@ -1568,6 +1570,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_EVENTS_SORTABLESCROLLINGLISTEVENT:Class = SortableScrollingListEvent;
       
+      public static const NET_WG_GUI_COMPONENTS_CONTROLS_EVENTS_UNIVERSALBTNSHINEEVENT:Class = UniversalBtnShineEvent;
+      
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_EVENTS_USERINFOTEXTEVENT:Class = UserInfoTextEvent;
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_HELPERS_COMPONENTSTATESHELPER:Class = ComponentStatesHelper;
@@ -1627,6 +1631,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_SCROLLER_DATA_SCROLLERITEMRENDERERSIZE:Class = ScrollerItemRendererSize;
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_UNIVERSALBTN_UNIVERSALBTN:Class = UniversalBtn;
+      
+      public static const NET_WG_GUI_COMPONENTS_CONTROLS_UNIVERSALBTN_UNIVERSALBTNSHINEANIM:Class = UniversalBtnShineAnim;
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_UNIVERSALBTN_UNIVERSALBTNTOGGLEINDICATOR:Class = UniversalBtnToggleIndicator;
       

@@ -1,0 +1,205 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: <plural forms>\n"
+
+msgid "autoOpenView/boxCount"
+msgid_plural "plural/autoOpenView/boxCount"
+msgstr[0] "%(count) remaining chest"
+msgstr[1] "%(count) remaining chests"
+msgstr[2] "%(count) remaining chests"
+
+msgid "awardViews/footer/backButton/"
+msgstr "Back to Chests"
+
+msgid "awardViews/footer/purchaseButtonText/"
+msgstr "GET CHESTS"
+
+msgid "awardViews/footer/purchaseButtonTextCn/"
+msgstr "GET CHESTS"
+
+msgid "awardViews/guaranteedTitle/nextBox/"
+msgstr "Guaranteed Reward in the next chest!"
+
+msgid "awardViews/guaranteedTitle/text"
+msgstr "Maximum chests before a Guaranteed Reward: %(count)"
+
+msgid "awardViews/quantityTitle/boxesAvailable"
+msgstr "Chests available: %(boxesCount)"
+
+msgid "awardViews/quantityTitle/noBoxes"
+msgstr "No chests available"
+
+msgid "common/boxCategory/lowerCase/stPatrick"
+msgstr "Emerald Chest"
+
+msgid "common/boxCategory/upperCase/stPatrick"
+msgstr "EMERALD CHEST"
+
+msgid "common/loader"
+msgstr "Chest opening..."
+
+msgid "common/statistics/emptyHeader"
+msgstr "Open chests to view statistics."
+
+msgid "common/statistics/header"
+msgstr "Chests opened: %(count)"
+
+msgid "common/statistics/tooltip/body"
+msgstr ""
+"Here you can view the items you received from chests during the event. You "
+"can manually reset these statistics at any time."
+
+msgid "confirmResetLootBoxStatistics/description"
+msgstr "All information on opened chests will be deleted."
+
+msgid "entryPoint/boxes"
+msgstr "TO CHESTS"
+
+msgid "entryPoint/tooltip/description"
+msgstr ""
+"These are special chests containing new and unique items, including Premium "
+"vehicles, Free XP, 3D attachments, and more."
+
+msgid "entryPoint/tooltip/title"
+msgstr "Emerald Chests and How to Receive Them"
+
+msgid "entryPoint/tooltip/warningDescription"
+msgstr ""
+"Chests cannot currently be opened or purchased due to technical reasons. We "
+"apologize for the temporary inconvenience."
+
+msgid "entryPoint/tooltip/warningTitle"
+msgstr "Chests Temporarily Unavailable"
+
+msgid "eventName/lowerCase"
+msgstr "Paint It GREEN!"
+
+msgid "eventName/upperCase"
+msgstr "PAINT IT GREEN!"
+
+msgid "hasBoxesView/purchaseButtonText"
+msgstr "GET CHESTS"
+
+msgid "hasBoxesView/purchaseButtonTextCn"
+msgstr "GET CHESTS"
+
+msgid "hasBoxesView/quantityTitle/boxesAvailable"
+msgstr "Chests available: %(boxesCount)"
+
+msgid "hasBoxesView/quantityTitle/noBoxes"
+msgstr "No boxes available"
+
+msgid "infoPage/footer/description/autoOpen"
+msgstr ""
+"If you do not open chests before end of event, they will be opened "
+"automatically."
+
+msgid "infoPage/footer/description/compensation"
+msgstr ""
+"If you already own all vehicles from the list of possible chest contents, "
+"then all subsequent vehicles you receive from chests will be compensated in "
+"gold equal to their full value."
+
+msgid "infoPage/footer/description/guaranteed"
+msgstr ""
+"Every %(guaranteed0)s chests are guaranteed to contain a Tier VIII–IX "
+"vehicle. If you open them without one dropping such a vehicle, then a Tier "
+"VIII–IX vehicle you do not already own will drop when you open the "
+"%(guaranteed0)sth chest. When it does, the counter is reset."
+
+msgid "infoPage/header/description"
+msgstr ""
+"Open the chest for the chance to receive valuable in-game items! See more "
+"details below."
+
+msgid "infoPage/header/shopButton"
+msgstr "Get Chests"
+
+msgid "infoPage/header/shopButtonCn"
+msgstr "Get Chests"
+
+msgid "multipleRewardView/header/subTitle/"
+msgstr "From the %(name) (%(boxesCount) chests opened)"
+
+msgid "noBoxesView/buyBoxesButtonText/"
+msgstr "Get Chests"
+
+msgid "noBoxesView/buyBoxesButtonTextCn/"
+msgstr "Get Chests"
+
+msgid "noBoxesView/description/"
+msgstr ""
+"You do not have any chests. You can purchase them\n"
+"in the in-game Store or the Premium Shop."
+
+msgid "noBoxesView/descriptionCn/"
+msgstr ""
+"You do not have any chests.\n"
+"You can get them in the Premium Shop."
+
+msgid "preview/backLabel"
+msgstr "TO CHESTS"
+
+msgid "serviceChannelMessages/finish/text"
+msgstr ""
+"All remaining chests will be opened. Their contents will be added to your "
+"account."
+
+msgid "serviceChannelMessages/lootBoxDefault"
+msgstr "Emerald Chest"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Chests opened: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Remaining Chests Opened"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"At the end of the event, we opened all of your chests and added their "
+"contents to your account."
+
+msgid "serviceChannelMessages/lootBoxesDisabled/header"
+msgstr "Chest Opening Suspended"
+
+msgid "serviceChannelMessages/lootBoxesDisabled/text"
+msgstr ""
+"Operations with chests are temporarily unavailable due to maintenance."
+
+msgid "serviceChannelMessages/lootBoxesEnabled/header"
+msgstr "Chest Opening Available"
+
+msgid "serviceChannelMessages/lootBoxesEnabled/text"
+msgstr "Operations with chests are available again. Open them!"
+
+msgid "serviceChannelMessages/multipleOpen"
+msgstr "Chests opened!"
+
+msgid "serviceChannelMessages/server_error"
+msgstr "Chest Not Opened"
+
+msgid "singleRewardView/tooltip/description/"
+msgstr ""
+"If you already own all vehicles from the list of possible chest contents, "
+"then all subsequent vehicles you receive from chests will be compensated in "
+"gold."
+
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount) chest"
+msgstr[1] "%(remainingCount) chests"
+msgstr[2] "%(remainingCount) chests"
+
+msgid "singleRewardView/tooltip/subtitle/"
+msgstr ""
+"The Guaranteed Reward is a vehicle from the list of possible chest contents.\n"
+"If you open %(remainingCount) without one dropping such a vehicle, it will drop when you open the %(count) chest. When it does, the counter is reset."

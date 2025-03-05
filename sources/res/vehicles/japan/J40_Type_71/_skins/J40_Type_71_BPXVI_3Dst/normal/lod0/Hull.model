@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.231879 -0.689346 -5.244797</min>
+		<max>2.123558 0.951431 3.440829</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

@@ -371,7 +371,7 @@ def _formatTankmanNationInfo(crewItem):
 
 def _formatTankmanIcons(crewItem):
     return {'person': crewItem.icon, 
-       'role': crewItem.iconRole, 
+       'role': crewItem.role, 
        'rank': crewItem.iconRank}
 
 

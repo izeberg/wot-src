@@ -19,24 +19,6 @@ msgstr "Click to cancel the search for Platoon members."
 msgid "buttons/createPlatoon/caption"
 msgstr "New Platoon"
 
-msgid "buttons/createPlatoon/comp7/forSeven/caption"
-msgstr "7 players"
-
-msgid "buttons/createPlatoon/comp7/forSeven/description"
-msgstr "Creating a Super Platoon of 7 players."
-
-msgid "buttons/createPlatoon/comp7/forSeven/text"
-msgstr "7 players"
-
-msgid "buttons/createPlatoon/comp7/forTwo/caption"
-msgstr "2 players"
-
-msgid "buttons/createPlatoon/comp7/forTwo/description"
-msgstr "Creating a Platoon of 2 players."
-
-msgid "buttons/createPlatoon/comp7/forTwo/text"
-msgstr "2 players"
-
 msgid "buttons/createPlatoon/description"
 msgstr "Create a Platoon to invite friends to play together."
 
@@ -291,9 +273,6 @@ msgstr "The Platoon has reached the maximum number of wheeled vehicles"
 msgid "members/header/battle_royal"
 msgstr ": Steel Hunter"
 
-msgid "members/header/comp7"
-msgstr ": Onslaught"
-
 msgid "members/header/epic"
 msgstr ": Frontline"
 
@@ -311,14 +290,6 @@ msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
 msgid "members/header/squad"
 msgstr ": Random Battle"
-
-msgid "members/header/tooltip/comp7/dropdown"
-msgstr "Only the Platoon Commander can change the player limit."
-
-msgid "members/header/tooltip/comp7/dropdown/item"
-msgstr ""
-"Unable to change. The player limit cannot be lower than the current number "
-"of players."
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""
@@ -339,6 +310,9 @@ msgstr "The Platoon should comprise vehicles of the same tier."
 
 msgid "members/header/tooltip/standard/header"
 msgstr "Rules for Platoon Creation"
+
+msgid "membersWindow/memberCountDropdown/description"
+msgstr "Players in the Platoon"
 
 msgid "searching/estimated/caption"
 msgstr "Estimated Time"

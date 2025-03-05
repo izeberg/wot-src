@@ -706,7 +706,7 @@ msgid "advanced/improvedVentilation"
 msgstr "Improves crew perks that affect the vehicle's characteristics."
 
 msgid "advanced/info"
-msgstr "additional information"
+msgstr "Additional information"
 
 msgid "advanced/instructions"
 msgstr ""
@@ -998,6 +998,14 @@ msgstr "Awarded in Battle Pass"
 
 msgid "awardItem/bpcoin/header"
 msgstr "Tokens"
+
+msgid "awardItem/bptaler/body"
+msgstr ""
+"Advance through the Progression to earn Chips to spend in the Battle Pass "
+"Vault section of the Store"
+
+msgid "awardItem/bptaler/header"
+msgstr "Chips"
 
 msgid "awardItem/brcoin/body"
 msgstr ""
@@ -1395,10 +1403,7 @@ msgid "awardItem/oneof/rankedSeason/previewStyle/body"
 msgstr "Click to view the style"
 
 msgid "awardItem/optional_devices_assistant/body"
-msgstr ""
-"This exclusive WoT Plus feature provides a report on the most commonly used "
-"loadouts for a vehicle, helping you understand current game trends and "
-"common practices among your fellow tankers."
+msgstr "Report on vehicle loadout trends."
 
 msgid "awardItem/optional_devices_assistant/header"
 msgstr "Equipment Assistant"
@@ -1508,6 +1513,14 @@ msgstr ""
 
 msgid "awardItem/steelHunterPoint/header"
 msgstr "Steel Hunter Points"
+
+msgid "awardItem/stpcoin/body"
+msgstr ""
+"Currency that can be earned in Steel Hunter battles. Seals can be exchanged for unique rewards in the Shamrock Shop.\n"
+"When playing in a Platoon, Seals are divided equally among Platoon members. The specified amount is your part of the total earnings."
+
+msgid "awardItem/stpcoin/header"
+msgstr "Lucky Seals"
 
 msgid "awardItem/tankman/body"
 msgstr "A crew member for whom the nation and qualification can be selected."
@@ -2331,6 +2344,12 @@ msgstr ""
 
 msgid "battle_royale/hangar/vehicle/leftTime"
 msgstr "Available through: %(leftTime)s"
+
+msgid "battle_royale/hangar/vehicle/shamrock"
+msgstr ""
+"%(shamrock)s Bonus to Lucky Seals for being among the top 10 players in Solo"
+" battles or among the top 7 in Platoon battles. The bonus can be activated "
+"once a day for each event vehicle."
 
 msgid "battle_royale/hangar/vehicle/status"
 msgstr "One of the Steel Hunters"
@@ -5403,6 +5422,28 @@ msgstr "Szarik"
 msgid "hangar/crew/specialty_skills"
 msgstr "Perks:"
 
+msgid "hangar/easyTankEquip/body"
+msgstr "Click to quickly service the vehicle."
+
+msgid "hangar/easyTankEquip/disabled/default/body"
+msgstr "Quick Service is unavailable for the selected vehicle."
+
+msgid "hangar/easyTankEquip/disabled/default/header"
+msgstr "Unavailable"
+
+msgid "hangar/easyTankEquip/disabled/inappropriateVehicle/body"
+msgstr ""
+"Quick Service is only available for vehicles of tier %(tier)s and higher."
+
+msgid "hangar/easyTankEquip/disabled/switch/body"
+msgstr "Quick Service is temporarily unavailable. Try again later."
+
+msgid "hangar/easyTankEquip/disabled/switch/header"
+msgstr "Technical Issues"
+
+msgid "hangar/easyTankEquip/header"
+msgstr "Quick Service"
+
 msgid "hangar/elen/bottom/allperiphery/body"
 msgstr ""
 "Grand Battles are not counted. Only the following types of Random Battles "
@@ -6255,6 +6296,12 @@ msgstr "View statistics and awards received."
 msgid "header/buttons/profile/header"
 msgstr "Service Record"
 
+msgid "header/buttons/replays/body"
+msgstr "See both client and server replays!"
+
+msgid "header/buttons/replays/header"
+msgstr "Replays"
+
 msgid "header/buttons/shop/body"
 msgstr ""
 "Here you can purchase everything that you may need to play: gold, Premium "
@@ -6795,6 +6842,29 @@ msgstr "Player has not selected a suitable vehicle."
 
 msgid "medalion/noVehicle/header"
 msgstr "Vehicle is not selected"
+
+msgid "mentorAssignment/advanced/description"
+msgstr ""
+"Transfer all Crew XP from one crew member to another of the same nation."
+
+msgid "mentorAssignment/advanced/header"
+msgstr "Mentoring Course"
+
+msgid "mentorAssignment/description"
+msgstr ""
+"%(crewName)s will receive all Crew XP from another crew member of the same "
+"nation."
+
+msgid "mentorAssignment/title"
+msgstr "Mentoring Course"
+
+msgid "mentorAssignment/warning/crewRemove"
+msgstr ""
+"This crew member will be removed with no possibility of recovery after "
+"confirmation."
+
+msgid "mentorAssignment/warning/freeSkills"
+msgstr "Zero perk XP is not transferred to the other crew member"
 
 msgid "minimapAlpha/body"
 msgstr ""
@@ -7530,6 +7600,17 @@ msgstr ""
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
 msgstr "Team Clash 2021"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/desc"
+msgstr ""
+"As a boy, Emrah was fascinated by the connections between shadows and the world around him. Driven by his thirst for knowledge and a budding talent for alchemy, he left his family in Turkey to explore the unknown. Along the way, he joined a group of nomadic magicians and sorcerers—and witnessed dark, otherworldly threats.\n"
+"Through rigorous training and experimentation, he mastered the art of combining alchemy with the power of metals, before joining a specialized army to fight enemies from other worlds. Now, as a commander, he protects his world from the encroaching darkness."
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/boosteroid_foxwood/desc"
 msgstr ""
@@ -9482,6 +9563,74 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp15_9/label"
 msgstr "Battle Pass: Vikings"
 
+msgid "notrecruitedtankman/tankmen_bp16_1/desc"
+msgstr ""
+"A seasoned commander who never leaves a job half-done, Tomasz has two "
+"passions: armored vehicles, and, paradoxical though it may seem, the natural"
+" world. When not busy motivating his crew to outshine the competition, he "
+"can be found with a notebook in hand, documenting the rare flora and fauna "
+"of his surroundings. Good-natured, confident, and endlessly inquisitive, "
+"Tomasz's boundless curiosity led him to seize the opportunity to take his "
+"tanking expertise to the jungles of central Africa, where he balances his "
+"love for machinery and nature to impressive effect."
+
+msgid "notrecruitedtankman/tankmen_bp16_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_1/label"
+msgstr "Battle Pass Season XVI"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/desc"
+msgstr ""
+"With his air of quiet confidence and iron discipline, Wataru doesn't give "
+"the impression of a man who likes to create chaos just for fun. Yet, as a "
+"keen motorcycle racer in his youth, he developed a deep love for machines "
+"and a mean competitive streak—as well as a defiant disregard for rules and "
+"regulations. Though his wild days racing through the neon-lit streets of "
+"Tokyo are behind him, his passion for high-octane competition endures—but "
+"what drives Wataru most of all is the pursuit of becoming better than the "
+"man he once was."
+
+msgid "notrecruitedtankman/tankmen_bp16_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/label"
+msgstr "Battle Pass Season XVI"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/desc"
+msgstr ""
+"Hailing from a secluded village in the lush mountain forests of southwest "
+"Germany, Konrad dreamed of writing a great novel about his native "
+"land—because surely there couldn't be anywhere more perfect than his beloved"
+" Schwarzwald? Fate, however, had other plans; a rugged, and resourceful "
+"military man, he was selected for a key role in groundbreaking tank trials "
+"halfway across the world. While he misses the crisp mountain air of his "
+"home, the demands of his new surroundings have awakened fresh stories within"
+" him—and inspired him to write even more."
+
+msgid "notrecruitedtankman/tankmen_bp16_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/label"
+msgstr "Battle Pass Season XVI"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/desc"
+msgstr ""
+"A gifted linguist, polyglot, and expert negotiator, Angélique always lands "
+"on her feet—no matter the mission or the company she keeps. Armed with the "
+"ability to effortlessly adapt to new teams, environments, and challenges, "
+"she is a resourceful problem-solver who thrives under pressure. While rumors"
+" of her past involvement in covert espionage operations only add to her "
+"mystique, Angélique neither confirms nor denies such claims, deflecting "
+"awkward questions with her charm, intellect, and relentless focus on the "
+"task at hand."
+
+msgid "notrecruitedtankman/tankmen_bp16_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/label"
+msgstr "Battle Pass Season XVI"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "People are always asking if I know Jack Reed. Before I answer, I usually "
@@ -10328,8 +10477,8 @@ msgstr "Search Battles With Tier X Vehicles Only"
 msgid "parameter/categories"
 msgstr "Category: "
 
-msgid "periodicReward/comp7/body"
-msgstr "A special daily reward given to players on the Leaderboard."
+msgid "periodicReward/body"
+msgstr "?empty?"
 
 msgid "periodicReward/header"
 msgstr "Daily Reward"
@@ -11434,29 +11583,32 @@ msgstr ""
 "{cream_Open}%(tankman)s{cream_Close} has reached the perk limit. All XP over"
 " the limit will be lost."
 
+msgid "quickTraining/FullTrainedTankman"
+msgstr "{cream_Open}%(tankman)s{cream_Close} has reached the perk limit."
+
 msgid "quickTraining/LowPECrew"
 msgstr ""
-"The crew does not meet the requirements for training: some crew members have"
-" low Perks Efficiency.{newLine}Train them via their "
+"The crew does not meet the requirements for training: some crew members are "
+"low Perks Efficiency. Train them via their "
 "{cream_Open}Profiles{cream_Close}."
 
 msgid "quickTraining/LowPENotFullCrew"
 msgstr ""
 "The crew does not meet the requirements for training: some crew members have"
-" low perk efficiency, and the crew is incomplete.{newLine}Train them via "
-"their {cream_Open}Profiles{cream_Close}."
+" low perk efficiency, and the crew is incomplete. Train them via their "
+"{cream_Open}Profiles{cream_Close}."
 
 msgid "quickTraining/LowPENotTrainedCrew"
 msgstr ""
 "The crew does not meet the requirements for training: some crew members are "
-"not trained for this vehicle, and some have low perk "
-"efficiency.{newLine}Train them via their {cream_Open}Profiles{cream_Close}."
+"not trained for this vehicle, and some have low perk efficiency. Train them "
+"via their {cream_Open}Profiles{cream_Close}."
 
 msgid "quickTraining/LowPENotTrainedNotFullCrew"
 msgstr ""
 "The crew does not meet the requirements for training: some crew members are "
 "not trained for this vehicle, some have low perk efficiency, and the crew is"
-" incomplete.{newLine}Train them via their {cream_Open}Profiles{cream_Close}."
+" incomplete. Train them via their {cream_Open}Profiles{cream_Close}."
 
 msgid "quickTraining/LowPEtipsPersonal"
 msgstr ""
@@ -11479,11 +11631,6 @@ msgstr ""
 "After studying this Crew Book, {cream_Open}%(tankman)s{cream_Close} will "
 "reach the perk limit and all XP over the limit will be lost."
 
-msgid "quickTraining/chooseAnyCrewMember"
-msgstr ""
-"You can select a crew member to accelerate their perk training using Free XP"
-" or Crew Books."
-
 msgid "quickTraining/lostXpTooltip/body"
 msgstr ""
 "Some crew members have reached the perk limit. All XP over the limit will be"
@@ -11495,25 +11642,37 @@ msgstr "Extra XP will be lost"
 msgid "quickTraining/notFullAndNotTrainedCrew"
 msgstr ""
 "The crew does not meet the requirements for training: some crew members are "
-"not trained for this vehicle, and the crew is incomplete.{newLine}Train them"
-" via their {cream_Open}Profiles{cream_Close}."
+"not trained for this vehicle, and the crew is incomplete. Train them via "
+"their {cream_Open}Profiles{cream_Close}."
 
 msgid "quickTraining/notFullCrew"
 msgstr ""
-"The crew does not meet the requirements for the Crew Books to be applied to the whole crew:\n"
-"Incomplete crew."
+"The crew does not meet the requirements for the Crew Books to be applied to "
+"the whole crew: Incomplete crew."
 
 msgid "quickTraining/notTrainedThisVehicle"
 msgstr ""
 "The crew does not meet the requirements for training: some crew members are "
-"not trained for this vehicle.{newLine}Train them via their "
+"not trained for this vehicle. Train them via their "
 "{cream_Open}Profiles{cream_Close}."
 
-msgid "quickTraining/unavailableTooltip/body"
+msgid "quickTraining/unavailable/body/allFullyTrained"
 msgstr "All crew members have trained all perks."
 
-msgid "quickTraining/unavailableTooltip/header"
+msgid "quickTraining/unavailable/body/lowEfficiency"
+msgstr "This crew member has low perk efficiency in this vehicle."
+
+msgid "quickTraining/unavailable/body/perkLimit"
+msgstr "This crew member has reached the perk limit."
+
+msgid "quickTraining/unavailable/header/allTrained"
 msgstr "Accelerate Training Is Unavailable"
+
+msgid "quickTraining/unavailable/header/book"
+msgstr "Crew Book unavailable"
+
+msgid "quickTraining/unavailable/header/freeXp"
+msgstr "Free XP unavailable"
 
 msgid "quickTraining/xpEnoughforPostProgression"
 msgstr ""
@@ -12504,13 +12663,21 @@ msgstr ""
 msgid "soundQualityOn/header"
 msgstr "LQ Sound"
 
-msgid "squadBonus/comp7/description"
-msgstr ""
-"When playing in a Platoon, you can receive additional credits and "
-"experience."
+msgid "specializationWotPlus/content/header"
+msgstr "Crew members in Premium vehicles are trained 50% faster:"
 
-msgid "squadBonus/comp7/noExpDescription"
-msgstr "You can receive additional credits by playing in a Platoon."
+msgid "specializationWotPlus/content/transfer"
+msgstr "Free crew transfer from vehicles of any type and tier without penalty"
+
+msgid "specializationWotPlus/description"
+msgstr "This vehicle is exclusive to the WoT Plus subscription."
+
+msgid "specializationWotPlus/header"
+msgstr "Specialization"
+
+msgid "specializationWotPlus/vehicle"
+msgstr ""
+"%(level)s {par_Open}%(type)s{par_Close} {gold_Open}%(name)s{gold_Close}"
 
 msgid "squadBonus/complex/body"
 msgstr ""

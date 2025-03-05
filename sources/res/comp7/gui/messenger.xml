@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplates>
+		<Comp7ShopItemsAvailableForRankSysMessage>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#comp7.comp7_ext:system_messages/shop/offer/button)</label>
+					<action>openComp7Shop</action>
+					<width>120</width>
+				</button>
+			</buttonsLayout>
+		</Comp7ShopItemsAvailableForRankSysMessage>
+		<comp7SeasonBattleVictoryResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgBattleResultIconVictory</bgIcon>
+			<bgIconHeight>100</bgIconHeight>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/victory)!&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(ratingPointsStr)s&lt;font color=&apos;#8C8C7E&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</comp7SeasonBattleVictoryResult>
+		<comp7SeasonBattleDrawGameResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>
+				BgBattleResultIconDraw
+				<FORT_BATTLE>frtClanBtlBgBattleResult_UR_Draw</FORT_BATTLE>
+			</bgIcon>
+			<bgIconHeight>100</bgIconHeight>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/drawGame)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(ratingPointsStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</comp7SeasonBattleDrawGameResult>
+		<comp7SeasonBattleDefeatResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>
+				BgBattleResultIconDefeat
+				<FORT_BATTLE>frtClanBtlBgBattleResult_UR_Defeat</FORT_BATTLE>
+			</bgIcon>
+			<bgIconHeight>100</bgIconHeight>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/defeat)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(ratingPointsStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</comp7SeasonBattleDefeatResult>
+		<comp7QualificationBattleVictoryResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgBattleResultIconVictory</bgIcon>
+			<bgIconHeight>100</bgIconHeight>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/victory)!&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s&lt;font color=&apos;#8C8C7E&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</comp7QualificationBattleVictoryResult>
+		<comp7QualificationBattleDrawGameResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>
+				BgBattleResultIconDraw
+				<FORT_BATTLE>frtClanBtlBgBattleResult_UR_Draw</FORT_BATTLE>
+			</bgIcon>
+			<bgIconHeight>100</bgIconHeight>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/drawGame)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</comp7QualificationBattleDrawGameResult>
+		<comp7QualificationBattleDefeatResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>
+				BgBattleResultIconDefeat
+				<FORT_BATTLE>frtClanBtlBgBattleResult_UR_Defeat</FORT_BATTLE>
+			</bgIcon>
+			<bgIconHeight>100</bgIconHeight>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/defeat)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</comp7QualificationBattleDefeatResult>
+		<comp7PeriodicRewardMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>CrystalIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(body)s&lt;/font&gt;</message>
+		</comp7PeriodicRewardMessage>
+		<comp7RegularRewardMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(body)s&lt;/font&gt;</message>
+		</comp7RegularRewardMessage>
+		<comp7QualificationRewardMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<bgIcon>BgComp7Notification</bgIcon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(body)s&lt;/font&gt;</message>
+		</comp7QualificationRewardMessage>
+	</htmlTemplates>
+</root>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>25.900002</duration>
+	<duration>30.900002</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -613,22 +613,22 @@
 			<frame>
 				<startTime>21.500002</startTime>
 				<value>-1.669518 -48.743023 21.163504</value>
-				<inTangent>-0.632592 0.799268 12.237648</inTangent>
-				<outTangent>-0.632592 0.799268 12.237648</outTangent>
+				<inTangent>-0.638130 0.776553 12.237211</inTangent>
+				<outTangent>-0.638130 0.776553 12.237211</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>23.343317</startTime>
+				<startTime>23.333334</startTime>
 				<value>-5.419025 -64.121582 20.867863</value>
-				<inTangent>-1.403284 -3.143725 -13.541350</inTangent>
-				<outTangent>-1.403284 -3.143725 -13.541350</outTangent>
+				<inTangent>-1.406508 -3.172596 -13.461157</inTangent>
+				<outTangent>-1.406508 -3.172596 -13.461157</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>25.000002</startTime>
 				<value>-6.698741 -60.716381 -23.733931</value>
-				<inTangent>-0.772456 2.055431 -26.922316</inTangent>
-				<outTangent>-0.772456 2.055431 -26.922316</outTangent>
+				<inTangent>-0.767829 2.043119 -26.761055</inTangent>
+				<outTangent>-0.767829 2.043119 -26.761055</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -1058,22 +1058,22 @@
 			<frame>
 				<startTime>20.700001</startTime>
 				<value>-1.877096 -65.100784 -36.638565</value>
-				<inTangent>1.911381 4.027043 4.441371</inTangent>
-				<outTangent>1.911381 4.027043 4.441371</outTangent>
+				<inTangent>1.903236 4.014328 4.423393</inTangent>
+				<outTangent>1.903236 4.014328 4.423393</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>22.651886</startTime>
+				<startTime>22.666668</startTime>
 				<value>2.353419 -58.497059 -27.300833</value>
-				<inTangent>1.807523 2.432270 5.198935</inTangent>
-				<outTangent>1.807523 2.432270 5.198935</outTangent>
+				<inTangent>1.807403 2.427767 5.212075</inTangent>
+				<outTangent>1.807403 2.427767 5.212075</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>24.000002</startTime>
 				<value>4.305015 -56.500114 -19.732628</value>
-				<inTangent>1.447647 1.481285 5.613913</inTangent>
-				<outTangent>1.447647 1.481285 5.613913</outTangent>
+				<inTangent>1.463696 1.497708 5.676151</inTangent>
+				<outTangent>1.463696 1.497708 5.676151</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -1508,7 +1508,7 @@
 			<name>sequence</name>
 			<type>sequence</type>
 			<frame>
-				<startTime>0.000000</startTime>
+				<startTime>5.000000</startTime>
 				<duration>25.900002</duration>
 				<value>particles/eff_sequence/Onboarding/108_normandy_bombardment_scenario_01.seq</value>
 				<speed>1.000000</speed>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.970639 -0.371099 -1.731379</min>
+		<max>0.631267 0.509915 5.776523</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

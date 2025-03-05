@@ -379,7 +379,7 @@ class IStatsRequester(IRequester):
         raise NotImplementedError
 
     @property
-    def comp7(self):
+    def isSsrPlayEnabled(self):
         raise NotImplementedError
 
     @property
@@ -417,6 +417,9 @@ class IStatsRequester(IRequester):
         raise NotImplementedError
 
     def getABGroup(self, feature):
+        raise NotImplementedError
+
+    def getCacheValue(self, key, defaultValue):
         raise NotImplementedError
 
 
@@ -646,6 +649,10 @@ class IShopCommonStats(object):
     def recertificationForms(self):
         raise NotImplementedError
 
+    @property
+    def mentoringLicenses(self):
+        raise NotImplementedError
+
     def getPremiumPacketCost(self, days):
         raise NotImplementedError
 
@@ -833,6 +840,10 @@ class IBattleRoyaleRequester(IRequester):
 
     @property
     def topCount(self):
+        raise NotImplementedError
+
+    @property
+    def brMultipliedSTPCoinsVehs(self):
         raise NotImplementedError
 
     def getStats(self, arenaBonusType, playerDatabaseID=None):

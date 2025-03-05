@@ -109,12 +109,9 @@
 		<weight>19305</weight>
 		<maxHealth>1440</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>210</maxHealth>
-			<maxRegenHealth>140</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>173</maxRegenHealth>
+			<repairCost>9</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/russian/R219_Object_265T/normal/lod0/Hull.model</undamaged>
@@ -2375,7 +2372,7 @@
 			</groundNodes>
 			<camouflage/>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_R219_Object_265T>
@@ -2424,21 +2421,15 @@
 			<maxHealth>360</maxHealth>
 			<rotationSpeed>25</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>160</maxHealth>
-				<maxRegenHealth>80</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>170</maxHealth>
+				<maxRegenHealth>85</maxRegenHealth>
+				<repairCost>9</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<repairCost>2</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<_122mm_M62_TS2>
@@ -2478,7 +2469,7 @@
 					</aimingTime>
 					<clip>
 						<count>3</count>
-						<rate>24</rate>
+						<rate>20</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>17 14 11</reloadTime>

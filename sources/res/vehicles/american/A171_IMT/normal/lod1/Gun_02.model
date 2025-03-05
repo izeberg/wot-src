@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A171_IMT/normal/lod1/Gun_02</nodefullVisual>
+	<parent>vehicles/american/A171_IMT/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.584370 -0.246718 -0.037332</min>
+		<max>0.584082 0.371820 4.457262</max>
+	</visibilityBox>
+</root>

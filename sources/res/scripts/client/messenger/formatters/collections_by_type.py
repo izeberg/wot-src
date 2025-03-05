@@ -26,7 +26,6 @@ registerTokenQuestsSubFormatters((
  token_quest_subformatters.WotPlusAttendanceRewardsFormatter(),
  token_quest_subformatters.WotPlusAttendanceRewardsFormatterTestSMViewer(),
  token_quest_subformatters.BattleMattersAwardsFormatter(),
- token_quest_subformatters.Comp7RewardsFormatter(),
  token_quest_subformatters.WinbackRewardFormatter(),
  token_quest_subformatters.CrewPerksFormatter(),
  token_quest_subformatters.SteamCompletionFormatter(),
@@ -95,6 +94,8 @@ def initRegistrationFormatters():
     registerMessengerServerFormatter(_SM_TYPE.battlePassStyleRecieved.index(), _sc.BattlePassStyleReceivedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.battlePassSeasonEnd.index(), _sc.BattlePassSeasonEndFormatter())
     registerMessengerServerFormatter(_SM_TYPE.battlePassUseNonChapterPoints.index(), _sc.BattlePassFreePointsUsedFormatter())
+    registerMessengerServerFormatter(_SM_TYPE.battlePassPostProgressionActivated.index(), _sc.BattlePassPostProgressionActivatedFormatter())
+    registerMessengerServerFormatter(_SM_TYPE.battlePassPostProgressionPaused.index(), _sc.BattlePassPostProgressionPausedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.collectibleVehiclesUnlocked.index(), _sc.CollectibleVehiclesUnlockedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.customizationProgress.index(), _sc.CustomizationProgressFormatter())
     registerMessengerServerFormatter(_SM_TYPE.dogTagsUnlockComponent.index(), _sc.DogTagComponentUnlockFormatter())
@@ -164,3 +165,5 @@ def initRegistrationFormatters():
     registerMessengerServerFormatter(_SM_TYPE.postProgressionCompleted.index(), _sc.PostProgressionCompletedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.externalVehicleRentStarted.index(), _sc.ExternalVehicleRentFormatter(isStarted=True))
     registerMessengerServerFormatter(_SM_TYPE.externalVehicleRentExpired.index(), _sc.ExternalVehicleRentFormatter(isStarted=False))
+    registerMessengerClientFormatter(SCH_CLIENT_MSG_TYPE.MENTORING_LICENSE, _sc.MentoringLicenseFormatter())
+    registerMessengerServerFormatter(_SM_TYPE.mentorAssignmentUsed.index(), _sc.MentorAssignmentUsedFormatter())

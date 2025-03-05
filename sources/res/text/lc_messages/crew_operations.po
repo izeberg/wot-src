@@ -107,13 +107,23 @@ msgid "return/error/alreadyOnPlaces"
 msgstr "Crew is already in vehicle"
 
 msgid "return/error/noPrevious"
-msgstr "Fight at least one battle in this vehicle"
+msgstr ""
+"Fight at least one battle\n"
+"in this vehicle"
 
 msgid "return/error/vehicleInBattle"
 msgstr "This vehicle is in battle"
 
 msgid "return/title"
 msgstr "Return Crew to Vehicle"
+
+msgid "return/toggle/description"
+msgstr ""
+"Automatically return the crew that fought the previous battle to this "
+"vehicle."
+
+msgid "return/toggle/label"
+msgstr "Auto Return"
 
 msgid "return/warning/memberDemobilized/tooltip/body"
 msgstr ""

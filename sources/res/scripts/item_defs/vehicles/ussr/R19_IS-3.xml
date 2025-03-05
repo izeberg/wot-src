@@ -1822,6 +1822,54 @@
 				<clipAngle>0.833433</clipAngle>
 				<anchorShift>0.119009</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.61 0.279 -0.762418
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999995 0.999995 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.61 0.279 -0.762418
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					-0.000002 0.014 -3.46
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -1.570796 1.298525
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999986 0.999985 0.999987</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -5460,6 +5508,18 @@
 							<anchorShift>0.992296</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.269 0.368
+								<!--BW_String-->
+							</position>
+							<rotation>-0 -0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -5762,6 +5822,18 @@
 							<showOn>4352</showOn>
 							<clipAngle>0.752353</clipAngle>
 							<anchorShift>0.992296</anchorShift>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.269 0.368
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -6075,6 +6147,18 @@
 							<anchorShift>0.992296</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.269 0.368
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -6373,6 +6457,18 @@
 							<showOn>4352</showOn>
 							<clipAngle>0.752353</clipAngle>
 							<anchorShift>0.992296</anchorShift>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.269 0.368
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -7789,6 +7885,18 @@
 					<showOn>256</showOn>
 					<anchorShift>0.073893</anchorShift>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0 0.937 -0.617173
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -8096,6 +8204,18 @@
 							<anchorShift>0.967191</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.251 0.403
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -8381,6 +8501,18 @@
 							<anchorShift>0.977182</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.251 0.403
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -8660,6 +8792,18 @@
 							<anchorShift>0.977182</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.251 0.403
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -8936,6 +9080,18 @@
 							<showOn>4352</showOn>
 							<clipAngle>0.726602</clipAngle>
 							<anchorShift>0.977182</anchorShift>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000003 0.251 0.403
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -10336,6 +10492,18 @@
 					<showOn>256</showOn>
 					<clipAngle>0.254527</clipAngle>
 					<anchorShift>0.086661</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						-0.492 0.96 -0.677
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

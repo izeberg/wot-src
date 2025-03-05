@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.676543 -0.000291 -3.228891</min>
+		<max>-1.119956 1.073077 3.294168</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl29_NC_Wz_70T/_skins/Pl29_NC_Wz_70T_BPXVI_3Dst/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/poland/Pl29_NC_Wz_70T/_skins/Pl29_NC_Wz_70T_BPXVI_3Dst/crash/lod0/Chassis</nodefullVisual>
+</root>

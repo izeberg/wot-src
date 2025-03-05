@@ -1754,6 +1754,48 @@
 				<clipAngle>0.747001</clipAngle>
 				<anchorShift>0.585262</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>0.245641 0.468611 -3.909778</position>
+				<rotation>
+					-0 -1.569051 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999996 0.999996 0.999996</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>-1.677702 0.231427 -0.776244</position>
+				<rotation>
+					0 0 1.445333
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					1.678 0.231427 -0.776244
+					<!--BW_String-->
+				</position>
+				<rotation>0.000175 3.139847 1.445133</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -3704,14 +3746,17 @@
 						0.18
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>14</reloadTime>
+					<reloadTime>
+						12.9
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionRadius>
 						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.15
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -3720,6 +3765,10 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<aimingTime>
+						2.8
+						<!--BW_String-->
+					</aimingTime>
 					<models>
 						<undamaged>vehicles/french/F115_Lorraine_50t/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/french/F115_Lorraine_50t/crash/lod0/Gun_01.model</destroyed>
@@ -4954,6 +5003,30 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>0.209689</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0.62055 1.271 -2.31436
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						0.859 1.256 -0.069
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

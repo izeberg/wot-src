@@ -11,6 +11,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var invokeOperation:Function;
       
+      public var onToggleClick:Function;
+      
       private var _crewOperationsInitVO:CrewOperationsInitVO;
       
       public function CrewOperationsPopOverMeta()
@@ -32,6 +34,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.invokeOperation,"invokeOperation" + Errors.CANT_NULL);
          this.invokeOperation(param1);
+      }
+      
+      public function onToggleClickS(param1:String) : void
+      {
+         App.utils.asserter.assertNotNull(this.onToggleClick,"onToggleClick" + Errors.CANT_NULL);
+         this.onToggleClick(param1);
       }
       
       public final function as_update(param1:Object) : void

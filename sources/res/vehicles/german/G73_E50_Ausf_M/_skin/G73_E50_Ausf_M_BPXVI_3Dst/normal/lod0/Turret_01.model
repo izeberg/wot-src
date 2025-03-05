@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.499531 0.035001 -2.206586</min>
+		<max>1.475865 2.058690 1.177752</max>
+	</visibilityBox>
+	<parent>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

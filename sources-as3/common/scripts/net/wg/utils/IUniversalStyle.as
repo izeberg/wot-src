@@ -27,5 +27,9 @@ package net.wg.utils
       function get tfColor() : uint;
       
       function get tfShadowFilter() : DropShadowFilter;
+      
+      function get shineLinkage() : String;
+      
+      function get shineWidth() : uint;
    }
 }

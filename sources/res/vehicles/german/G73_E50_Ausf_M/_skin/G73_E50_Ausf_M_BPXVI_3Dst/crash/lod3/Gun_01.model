@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.297045 -0.352521 -1.434205</min>
+		<max>0.313827 0.482200 4.699589</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/crash/lod3/Gun_01</nodelessVisual>
+	<tank>true</tank>
+</root>

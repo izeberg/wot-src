@@ -2094,6 +2094,14 @@ package
       public static const BOT_ELITE:String = "#ingame_gui:bot/elite";
       
       public static const BOT_BOSS:String = "#ingame_gui:bot/boss";
+      
+      public static const STEAMUNLOCKAWARDS_TITLE:String = "#ingame_gui:steamUnlockAwards/title";
+      
+      public static const STEAMUNLOCKAWARDS_UNDERTITLE:String = "#ingame_gui:steamUnlockAwards/underTitle";
+      
+      public static const STEAMUNLOCKAWARDS_BUTTON_REDIRECT:String = "#ingame_gui:steamUnlockAwards/button/redirect";
+      
+      public static const STEAMUNLOCKAWARDS_BUTTON_SUBMIT:String = "#ingame_gui:steamUnlockAwards/button/submit";
        
       
       public function INGAME_GUI()
