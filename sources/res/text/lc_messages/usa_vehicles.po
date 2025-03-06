@@ -985,27 +985,31 @@ msgstr "MBT-B"
 
 msgid "A150_MBT_B_descr"
 msgstr ""
-"In July 1964, General Motors introduced a project of a main battle tank "
-"(MBT) that would combine all the promising trends of tank-building from the "
-"early 1960s. Composite armor should have increased protection from HEAT "
-"shells. It was planned to arm it with a 120 mm gun or a 120 mm gun/launching"
-" device, and the decision to mount TV cameras on the rear of the turret for "
-"additional view and for moving in reverse was even ahead of its time. Also, "
-"much attention was given to mitigating radiation impact. The project stopped"
-" at the full-scale prototype, and all developments were used as a base for a"
-" promising 1970s American tank: the MBT-70."
+"In July 1964, General Motors Corporation presented a project for a main "
+"battle tank (MBT). It combined cutting-edge tank-building trends of the "
+"early 1960s: a lowered silhouette, high mobility, hydropneumatic suspension "
+"ensuring smooth movement without the ability to change clearance, as well as"
+" combined armor for HEAT shell protection. The designers planned to arm the "
+"tank with a 120 mm gun or a 120 mm gun/launching device, and their decision "
+"to mount TV cameras on the rear of the turret to boost the view range and "
+"ease reversing was even ahead of its time. They also paid great attention to"
+" mitigating radiation impact. The project stopped at the full-scale "
+"prototype stage, but all the developments formed the basis for a promising "
+"1970s American tank: the MBT-70."
 
 msgid "A150_MBT_B_long_special"
 msgstr ""
-"An American heavy tank with unusual armoring: The smart armor plates "
-"placement provides good protection, which, combined with a great gun, allows"
-" both to spearhead an attack and fight the enemy off."
+"The MBT-B has a unique autoloader system. Since the shells are divided into "
+"containers, the tank can do a lot of damage in a short amount of time. The "
+"total damage from the magazine is also huge. Excellent dynamics allow the "
+"tank to stay in the thick of the action throughout the battle. However, it "
+"lacks reliable armor."
 
 msgid "A150_MBT_B_short"
 msgstr "MBT-B"
 
 msgid "A150_MBT_B_short_special"
-msgstr "Reliable armor and a versatile gun"
+msgstr "Autoloader with containers, good mobility"
 
 msgid "A151_TS_60"
 msgstr "TS-60"
@@ -1305,6 +1309,32 @@ msgstr "ARMT"
 msgid "A161_ARMT_short_special"
 msgstr "Magazine loading and good mobility"
 
+msgid "A167_TS_6"
+msgstr "TS-6"
+
+msgid "A167_TS_6_descr"
+msgstr ""
+"In the early 1950s, the U.S. military authorized a range of research and "
+"development projects for a new generation of tanks. The outcome of this was "
+"the Questionmark series of conferences. The TS-6 project was presented at "
+"one of these in June 1954. The key idea was to develop a vehicle that would "
+"be lighter than the Heavy Tank T43 (M103) and T110 but with similar "
+"technical characteristics. The project went no further than blueprints."
+
+msgid "A167_TS_6_long_special"
+msgstr ""
+"The TS-6 is a Tier IX American heavy tank. It is distinguished by excellent "
+"frontal armor of the turret and hull. Also, the 120 mm gun has high alpha "
+"damage. In the TS-6, the player must perform the classic tasks of an armored"
+" heavy tank in battle, including occupying key positions and breakthrough "
+"routes."
+
+msgid "A167_TS_6_short"
+msgstr "TS-6"
+
+msgid "A167_TS_6_short_special"
+msgstr "Excellent frontal armor, high alpha damage"
+
 msgid "A168_XM_57"
 msgstr "XM57"
 
@@ -1355,6 +1385,28 @@ msgstr "Patton Tank"
 
 msgid "A169_PattonIII_120_short_special"
 msgstr "A powerful gun with good elevation/depression angles"
+
+msgid "A171_IMT"
+msgstr "IMT"
+
+msgid "A171_IMT_descr"
+msgstr ""
+"After World War II, U.S. Army decision-makers outlined requirements for a new medium tank to replace the Sherman. The Improved Medium Tank (IMT) had fairly thick sloped armor, while its low profile provided additional defense. The vehicle's weight was not supposed to exceed 45 tons, and a power-to-weight ratio of 20 h.p./t was planned. A 105 mm gun and six machineguns were considered for the tank's armament. The gun was supposed to be stabilized in the horizontal and vertical planes. In addition, the tank was to be equipped with an optical rangefinder and radar.\n"
+"The project was deemed to have no prospects before a prototype was built. However, many of the technical solutions were used in later American tanks."
+
+msgid "A171_IMT_long_special"
+msgstr ""
+"The IMT is a Tier VIII American medium tank. Its main feature is a 105 mm "
+"gun with high alpha damage. It has weak armor, but the mobility allows you "
+"to move around the map comfortably. In general, the tank should play the "
+"role of a support tank in battle, working together with allies or using the "
+"terrain."
+
+msgid "A171_IMT_short"
+msgstr "IMT"
+
+msgid "A171_IMT_short_special"
+msgstr "High alpha damage, good gun depression/elevation"
 
 msgid "A172_M4A3E8_Sherman_BPXIV"
 msgstr "M4A3(76)W Sherman"
@@ -1670,6 +1722,9 @@ msgstr "AN/VRC-7"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
+msgid "AN_GRC_7"
+msgstr "AN/GRC-7"
+
 msgid "AN_GRC_7A"
 msgstr "AN/GRC-7A"
 
@@ -1700,6 +1755,9 @@ msgstr "AN/VRC-24"
 msgid "AN_VRC-3"
 msgstr "AN/VRC-3"
 
+msgid "AN_VRC-3I"
+msgstr "AN/VRC-3I"
+
 msgid "AN_VRC-3_Rush_Ep1"
 msgstr "AN/VRC-3S"
 
@@ -1708,6 +1766,9 @@ msgstr "AN/VRC-12"
 
 msgid "AN_VRC_12A"
 msgstr "AN/VRC-12"
+
+msgid "AN_VRC_3B"
+msgstr "AN/VRC-3B"
 
 msgid "AN_VRC_3_XM"
 msgstr "AN/VRC-3XM"
@@ -1935,11 +1996,17 @@ msgstr "M24 Chaffee No. 594"
 msgid "Chassis_A161_ARMT"
 msgstr "ARMT"
 
+msgid "Chassis_A167_TS_6"
+msgstr "TS-6"
+
 msgid "Chassis_A168_XM_57"
 msgstr "XM57"
 
 msgid "Chassis_A169_PattonIII_120"
 msgstr "Patton the Tank"
+
+msgid "Chassis_A171_IMT"
+msgstr "IMT"
 
 msgid "Chassis_A173_Sherman_Crab"
 msgstr "Sherman Crab"
@@ -2461,8 +2528,8 @@ msgstr ""
 "Continental\n"
 "AV-1790-7M"
 
-msgid "Continental_AVCR"
-msgstr "Continental AVCR"
+msgid "Continental_AVCR_1100_3"
+msgstr "Continental AVCR-1100-3"
 
 msgid "Continental_AVDS-1790-2"
 msgstr "Continental AVDS-1790-2"
@@ -2487,6 +2554,17 @@ msgid "Continental_AVI-1790-8_short"
 msgstr ""
 "Continental\n"
 "AVI-1790-8"
+
+msgid "Continental_AVI_1790I"
+msgstr "Continental AVI-1790I"
+
+msgid "Continental_AVI_1790I_short"
+msgstr ""
+"Continental\n"
+"AVI-1790I"
+
+msgid "Continental_AVI_1790_8"
+msgstr "Continental AVI-1790-8"
 
 msgid "Continental_AVI_1790_8C"
 msgstr "Continental AVI-1790-8C"
@@ -2519,6 +2597,11 @@ msgid "Continental_AVI_1790_8XM_short"
 msgstr ""
 "Continental\n"
 "AVI-1790-8XM"
+
+msgid "Continental_AVI_1790_8_short"
+msgstr ""
+"Continental\n"
+"AVI-1790-8"
 
 msgid "Continental_AV_1790_5A"
 msgstr "Continental AV-1790-5A"
@@ -4231,11 +4314,17 @@ msgstr "M24 Chaffee No. 594"
 msgid "Turret_1_A161_ARMT"
 msgstr "ARMT"
 
+msgid "Turret_1_A167_TS_6"
+msgstr "TS-6"
+
 msgid "Turret_1_A168_XM_57"
 msgstr "XM57"
 
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "Patton the Tank"
+
+msgid "Turret_1_A171_IMT"
+msgstr "IMT"
 
 msgid "Turret_1_A173_Sherman_Crab"
 msgstr "Sherman Crab"
@@ -4700,6 +4789,9 @@ msgstr "T29E3M2E"
 msgid "_105mm_APCR_T29E3M2E5"
 msgstr "T29E3M2E5"
 
+msgid "_105mm_APCR_T29E3M2E8"
+msgstr "T29E3M2E8"
+
 msgid "_105mm_APCR_T29E3_M"
 msgstr "APCR T29E3 M"
 
@@ -4717,6 +4809,9 @@ msgstr "T32M2E"
 
 msgid "_105mm_AP_T32M2E5"
 msgstr "T32M2E5"
+
+msgid "_105mm_AP_T32M2E8"
+msgstr "T32M2E8"
 
 msgid "_105mm_AP_T32_M"
 msgstr "AP T32M"
@@ -4787,6 +4882,9 @@ msgstr "105 mm Gun T5E1/45"
 msgid "_105mm_Gun_T5E1_M"
 msgstr "105 mm Gun T5E1M"
 
+msgid "_105mm_Gun_T8"
+msgstr "105 mm Gun T8"
+
 msgid "_105mm_HEAT-T_T384E4"
 msgstr "HEAT-T T384E4"
 
@@ -4822,6 +4920,9 @@ msgstr "M11A2E"
 
 msgid "_105mm_HE_M11A2E5"
 msgstr "M11A2E5"
+
+msgid "_105mm_HE_M11A2E8"
+msgstr "M11A2E8"
 
 msgid "_105mm_HE_M11_M"
 msgstr "HE M11 M"
@@ -4922,6 +5023,9 @@ msgstr "APBC M358"
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
+msgid "_120mm_APCR_T70"
+msgstr "APCR T70"
+
 msgid "_120mm_APCR_XM66F"
 msgstr "M469/66"
 
@@ -4940,8 +5044,14 @@ msgstr "AP T42"
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
 
+msgid "_120mm_AP_T_M358E1_TS6"
+msgstr "AP-T M358E1"
+
 msgid "_120mm_AP_T_M358R"
 msgstr "AP-T M358R"
+
+msgid "_120mm_AP_T_M360"
+msgstr "AP-T M360"
 
 msgid "_120mm_AT_Gun_M58"
 msgstr "120 mm AT Gun M58"
@@ -5012,11 +5122,17 @@ msgstr "HEAT M835"
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
 
+msgid "_120mm_HEAT_T_M469E1_TS6"
+msgstr "HEAT-T M469E1"
+
 msgid "_120mm_HE_M356"
 msgstr "HE M356"
 
 msgid "_120mm_HE_M358"
 msgstr "HE M358"
+
+msgid "_120mm_HE_M400"
+msgstr "HE M400"
 
 msgid "_120mm_HE_Shot"
 msgstr "HE Shell"
@@ -5027,23 +5143,20 @@ msgstr "HE Shell C"
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
 
+msgid "_120mm_HE_T_M356E1_TS6"
+msgstr "HE-T M356E1"
+
 msgid "_120mm_HE_XM66F"
 msgstr "M357/66"
 
-msgid "_120mm_M820"
-msgstr "M820 AP-T"
-
-msgid "_120mm_M820_HEAT"
-msgstr "M820 HEAT"
-
-msgid "_120mm_RHD"
-msgstr "120 mm RHD"
-
-msgid "_120mm_SDRN1"
-msgstr "SDRN1 HE"
+msgid "_120mm_MPP_Gun_RHD"
+msgstr "120 mm MPP Gun RHD"
 
 msgid "_120mm_T123E2_SPG"
 msgstr "120 mm T123E2 SPG"
+
+msgid "_120mm_T123E7"
+msgstr "120 mm Gun T123E7"
 
 msgid "_120mm_T124"
 msgstr "120 mm T124"

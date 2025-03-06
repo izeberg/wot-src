@@ -3,6 +3,8 @@ from PlayerEvents import g_playerEvents
 from ReplayEvents import g_replayEvents
 from helpers import dependency
 from skeletons.connection_mgr import IConnectionManager
+from external_strings_utils import unicode_from_utf8
+import os
 _logger = logging.getLogger(__name__)
 
 class State(enum.IntEnum):
@@ -44,7 +46,9 @@ class ReplayAccount(BigWorld.Entity):
     def __start(self):
         self.state = State.STARTED_PLAYBACK
         g_playerEvents.onServerReplayEntering()
-        if not BattleReplay.g_replayCtrl.play(self.filename):
+        prefsFilePath = unicode_from_utf8(BigWorld.wg_getPreferencesFilePath())[1]
+        filename = os.path.join(os.path.dirname(prefsFilePath), self.filename)
+        if not BattleReplay.g_replayCtrl.play(filename):
             self.__stop()
 
     def __stop(self):

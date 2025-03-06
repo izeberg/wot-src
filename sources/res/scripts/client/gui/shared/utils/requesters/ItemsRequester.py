@@ -337,7 +337,7 @@ class REQ_CRITERIA(object):
         VEHICLE_NATIVE_TYPES = staticmethod(lambda vehicleNativeTypes: RequestCriteria(PredicateCondition(lambda item: item.vehicleNativeType in vehicleNativeTypes)))
         VEHICLE_NATIVE_LEVELS = staticmethod(lambda levels: RequestCriteria(PredicateCondition(lambda item: item.vehicleNativeDescr.level in levels)))
         NATION = staticmethod(lambda nationNames: RequestCriteria(PredicateCondition(lambda item: nations.NAMES[item.nationID] in nationNames)))
-        IS_LOCK_CREW = staticmethod(lambda isLockCrew=False: RequestCriteria(PredicateCondition(lambda item: item.isLockedByVehicle() in isLockCrew)))
+        IS_LOCK_CREW = staticmethod(lambda isLocked=False: RequestCriteria(PredicateCondition(lambda item: item.isLockedByVehicle() is isLocked)))
         IS_POST_PROGRESSION_AVAILABLE = RequestCriteria(PredicateCondition(lambda item: item.descriptor.isMaxSkillXp()))
         IS_LOW_EFFICIENCY = RequestCriteria(PredicateCondition(lambda item: not item.isMaxSkillEfficiency))
         DISMISSED = RequestCriteria(PredicateCondition(lambda item: item.isDismissed))
@@ -400,8 +400,13 @@ Parse error at or near `None' instruction at offset -1
         IS_ENABLED = RequestCriteria(PredicateCondition(lambda item: item.enabled))
         IN_ACCOUNT = RequestCriteria(InventoryPredicateCondition(lambda item: item.count > 0))
 
+    class MENTORING_LICENSE(object):
+        IS_ENABLED = RequestCriteria(PredicateCondition(lambda item: item.enabled))
+        IN_ACCOUNT = RequestCriteria(InventoryPredicateCondition(lambda item: item.count > 0))
+
     class EQUIPMENT(object):
         BUILTIN = staticmethod(RequestCriteria(PredicateCondition(lambda item: item.isBuiltIn)))
+        TAGS = staticmethod(lambda included, excluded=None: RequestCriteria(PredicateCondition(lambda item: item.tags.issuperset(included) and (not excluded or item.tags.isdisjoint(excluded)))))
 
     class BATTLE_BOOSTER(object):
         ALL = RequestCriteria(PredicateCondition(lambda item: item.itemTypeID == GUI_ITEM_TYPE.BATTLE_BOOSTER))
@@ -421,6 +426,8 @@ Parse error at or near `None' instruction at offset -1
         MODERNIZED = RequestCriteria(PredicateCondition(lambda item: item.isModernized))
         HAS_ANY_FROM_CATEGORIES = staticmethod(lambda categories: RequestCriteria(PredicateCondition(lambda item: not item.descriptor.categories.isdisjoint(categories))))
         HAS_ANY_FROM_TAGS = staticmethod(lambda tags: RequestCriteria(PredicateCondition(lambda item: not item.descriptor.tags.isdisjoint(tags))))
+        HAS_ANY_BY_ARCHETYPE = staticmethod(lambda archetype: RequestCriteria(PredicateCondition(lambda item: item.descriptor.archetype == archetype)))
+        IS_COMPATIBLE_WITH_VEHICLE = staticmethod(lambda vehicle: RequestCriteria(PredicateCondition(lambda item: vehicle is not None and item.descriptor.checkCompatibilityWithVehicle(vehicle.descriptor)[0] is not False)))
 
     class BADGE(object):
         SELECTED = RequestCriteria(PredicateCondition(lambda item: item.isSelected))
@@ -654,7 +661,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1086         0  LOAD_FAST             0  'self'
+ L.1105         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not

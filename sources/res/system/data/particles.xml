@@ -12,10 +12,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
@@ -252,17 +248,19 @@
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitar.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitarBlue.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_04_Brutal_Machine_Gun/shot.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_main.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_large.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main_start.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main_end.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/fep_ny_shot_main.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/shots/fep_ny_shot_large.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_start.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_end.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/shots/fep_ny_shot_main.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Null.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/cus_32_gold_coin.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_trigger.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_hit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_jumpgold_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_sparks_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_trigger.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_jumpgold_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_sparks_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -274,6 +272,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/instant_explosion_quality_set_0.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Storymode/08_ruinberg_antitank_mine_explosion_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Storymode/ability_battleship_strike_groundHit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Null.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/armorHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/armorHit_AP_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/armorHit_AP_3.vfx</fn_effect_bin>
@@ -667,8 +666,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_6.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirthit_ap_cr_2_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirthit_ap_cr_2_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_small.vfx</fn_effect_bin>
@@ -2990,18 +2989,19 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_20_Rock_Guitar/FlamethrowingGuitarBlue.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_04_Brutal_Machine_Gun/shot.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_04_Brutal_Machine_Gun/shot_ForceField.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_main.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_large.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main_start.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main_end.eff</fn_effect_bin>
-		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fep_ny_shot_main.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fep_ny_shot_large.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_start.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_end.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/fep_ny_shot_main.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_medium_ForceField.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_ForceField.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/cus_32_gold_coin.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_trigger.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_hit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_jumpgold_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_sparks_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_31_SP_Horseshoe/cus_31_horseshoe_trigger.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_jumpgold_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_sparks_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -4368,6 +4368,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_large_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_medium_ForceField.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_medium_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_medium_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_MTSL.vfx</fn_effect_bin>

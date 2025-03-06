@@ -349,7 +349,7 @@ package net.wg.gui.lobby.hangar
             case HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT:
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
             case HANGAR_ALIASES.COMP7_WIDGET:
-               return new Comp7Widget();
+               return App.instance.utils.classFactory.getComponent(Linkages.COMP7_WIDGET_UI,Comp7Widget);
             case HANGAR_ALIASES.EPIC_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.EPIC_WIDGET,EpicBattlesWidget);
             case FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET:

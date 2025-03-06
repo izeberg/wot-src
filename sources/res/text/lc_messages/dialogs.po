@@ -574,24 +574,6 @@ msgstr "Close"
 msgid "common/submit"
 msgstr "Continue"
 
-msgid "comp7/deserter/cancel"
-msgstr "Cancel"
-
-msgid "comp7/deserter/message"
-msgstr ""
-"This battle is not over yet. If you leave the battle before it ends, you will be letting down your team.\n"
-"{brown_open}You will be charged a disciplinary penalty.{brown_close}\n"
-"Are you sure you want to leave the battle?"
-
-msgid "comp7/deserter/msgTitle"
-msgstr "You will lose your Rating Points!"
-
-msgid "comp7/deserter/submit"
-msgstr "Desert"
-
-msgid "comp7/deserter/title"
-msgstr "Desertion From Battlefield"
-
 msgid "confirmBattleBoosterBuyAndInstall/cancel"
 msgstr "Cancel"
 
@@ -2189,16 +2171,6 @@ msgstr ""
 "You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
 "You have temporarily been blocked from battles in the {whiteSpanish_Open}%(mode)s{whiteSpanish_Close} mode."
 
-msgid "punishmentWindow/message/ban/comp7"
-msgstr ""
-"You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
-"{whiteSpanish_Open}%(penalty)s{whiteSpanish_Close} Rating Points have been deducted and you have temporarily been blocked from battles in the {whiteSpanish_Open}Onslaught{whiteSpanish_Close} mode."
-
-msgid "punishmentWindow/message/ban/comp7/qualification"
-msgstr ""
-"You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
-"You have temporarily been blocked from battles in the {whiteSpanish_Open}Onslaught{whiteSpanish_Close} mode and your Rating has been reduced."
-
 msgid "punishmentWindow/message/penalty"
 msgstr ""
 "You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
@@ -2489,6 +2461,11 @@ msgid "recruit/warning/premiumVehicle"
 msgstr ""
 "You do not need to recruit crew members for Premium vehicles. You can "
 "transfer crew to a Premium vehicle of the same type without penalty."
+
+msgid "recruit/warning/slotChanged"
+msgstr ""
+"This crew member cannot be recruited for the selected vehicle and will be "
+"sent to the Barracks."
 
 msgid "recruitConversionConfirm/warning"
 msgstr ""
@@ -2800,11 +2777,6 @@ msgid "retrain/warning/irrelevantPerkAndPrem"
 msgstr ""
 "Crew can be moved to a Premium vehicle of the same type without training or "
 "penalties, but unsuitable perks must be reset manually."
-
-msgid "retrain/warning/premiumVehicle"
-msgstr ""
-"Crew members can be transferred to a Premium vehicle of the same type "
-"without retraining or penalties."
 
 msgid "rudyInfo/message"
 msgstr ""

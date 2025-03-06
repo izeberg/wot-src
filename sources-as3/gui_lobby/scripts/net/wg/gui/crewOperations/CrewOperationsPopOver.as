@@ -9,6 +9,8 @@ package net.wg.gui.crewOperations
    
    public class CrewOperationsPopOver extends CrewOperationsPopOverMeta implements ICrewOperationsPopOverMeta, ITutorialCustomComponent
    {
+      
+      private static const SIDE_PADDING:uint = 20;
        
       
       public var list:CrewOperationsScrollingList;
@@ -23,12 +25,14 @@ package net.wg.gui.crewOperations
          super.configUI();
          this.list.addEventListener(Event.RESIZE,this.onListResizeHandler,false,0,true);
          this.list.addEventListener(CrewOperationEvent.OPERATION_CHANGED,this.onCrewOperationChangedHandler,false,0,true);
+         this.list.addEventListener(CrewOperationEvent.TOGGLE_CLICK,this.onCrewOperationToggleClickHandler,false,0,true);
       }
       
       override protected function onDispose() : void
       {
          this.list.removeEventListener(Event.RESIZE,this.onListResizeHandler);
          this.list.removeEventListener(CrewOperationEvent.OPERATION_CHANGED,this.onCrewOperationChangedHandler);
+         this.list.removeEventListener(CrewOperationEvent.TOGGLE_CLICK,this.onCrewOperationToggleClickHandler);
          this.list.disposeRenderers();
          this.list.dispose();
          this.list = null;
@@ -40,7 +44,7 @@ package net.wg.gui.crewOperations
          this.list.dataProvider = param1.castedOperations;
          this.list.invalidateData();
          this.list.validateNow();
-         setSize(this.list.width,this.list.height);
+         setSize(this.list.width + SIDE_PADDING,this.list.height);
       }
       
       override public function set wrapper(param1:IWrapper) : void
@@ -54,6 +58,12 @@ package net.wg.gui.crewOperations
          param1.stopImmediatePropagation();
          invokeOperationS(param1.operationName);
          App.popoverMgr.hide();
+      }
+      
+      private function onCrewOperationToggleClickHandler(param1:CrewOperationEvent) : void
+      {
+         param1.stopImmediatePropagation();
+         onToggleClickS(param1.operationName);
       }
       
       private function onListResizeHandler(param1:Event) : void

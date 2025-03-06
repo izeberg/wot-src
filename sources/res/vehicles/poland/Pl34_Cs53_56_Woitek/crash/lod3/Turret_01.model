@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl34_Cs53_56_Woitek/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.417386 -0.018644 -2.396599</min>
+		<max>1.451012 2.037329 1.528228</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl34_Cs53_56_Woitek/crash/lod3/Turret_01</nodefullVisual>
+</root>

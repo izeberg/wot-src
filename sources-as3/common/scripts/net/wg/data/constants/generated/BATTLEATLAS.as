@@ -311,6 +311,10 @@ package net.wg.data.constants.generated
       
       public static const BADGE_175:String = "badge_175";
       
+      public static const BADGE_176:String = "badge_176";
+      
+      public static const BADGE_177:String = "badge_177";
+      
       public static const BADGE_18:String = "badge_18";
       
       public static const BADGE_19:String = "badge_19";
@@ -730,6 +734,8 @@ package net.wg.data.constants.generated
       public static const CHINA_CH53_T_26_CHINA:String = "china-Ch53_T_26_China";
       
       public static const CHINA_CH54_BZ_72_1:String = "china-Ch54_BZ_72_1";
+      
+      public static const CHINA_CH56_BZ_74_1:String = "china-Ch56_BZ_74_1";
       
       public static const CHINA_CH58_111_VZ51:String = "china-Ch58_111_Vz51";
       
@@ -1682,6 +1688,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G25_PZ_II_LUCHS:String = "germany-G25_PzII_Luchs";
       
       public static const GERMANY_G25_PZ_II_LUCHS_SHXXI_B:String = "germany-G25_PzII_Luchs_SHXXI_B";
+      
+      public static const GERMANY_G25_PZ_II_LUCHS_SHXXI_L:String = "germany-G25_PzII_Luchs_SHXXI_L";
       
       public static const GERMANY_G26_VK1602:String = "germany-G26_VK1602";
       
@@ -2643,6 +2651,8 @@ package net.wg.data.constants.generated
       
       public static const POLAND_PL33_SDP_WZ_40:String = "poland-Pl33_SDP_Wz_40";
       
+      public static const POLAND_PL34_CS53_56_WOITEK:String = "poland-Pl34_Cs53_56_Woitek";
+      
       public static const POSTMORTEM_BG:String = "postmortem_bg";
       
       public static const POSTMORTEM_DEAD_REASON_BG:String = "postmortem_dead_reason_bg";
@@ -3134,6 +3144,10 @@ package net.wg.data.constants.generated
       public static const ROLE_SPG_32X32:String = "role_SPG_32x32";
       
       public static const SCENARIO_MARKER_ICON:String = "scenarioMarkerIcon";
+      
+      public static const SHAMROCK_LOOT:String = "shamrock_loot";
+      
+      public static const SHAMROCK_LOOT_SMALL:String = "shamrock_loot_small";
       
       public static const SHIELD:String = "shield";
       
@@ -3885,11 +3899,15 @@ package net.wg.data.constants.generated
       
       public static const USA_A161_ARMT:String = "usa-A161_ARMT";
       
+      public static const USA_A167_TS_6:String = "usa-A167_TS_6";
+      
       public static const USA_A168_XM_57:String = "usa-A168_XM_57";
       
       public static const USA_A169_PATTON_III_120:String = "usa-A169_PattonIII_120";
       
       public static const USA_A17_M37:String = "usa-A17_M37";
+      
+      public static const USA_A171_IMT:String = "usa-A171_IMT";
       
       public static const USA_A172_M4_A3_E8_SHERMAN_BPXIV:String = "usa-A172_M4A3E8_Sherman_BPXIV";
       

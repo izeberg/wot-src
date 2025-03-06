@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<comp7>
+		<voiceChat>
+			<fullStatsStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#cbac77&apos;&gt;%(message)s&lt;/font&gt;</fullStatsStyle>
+			<playersPanelStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#ffdd99&apos;&gt;%(message)s&lt;/font&gt;</playersPanelStyle>
+		</voiceChat>
+		<tooltips>
+			<roleSkill>
+				<colorTagOpen>&lt;font color=&apos;#CBAC77&apos;&gt;</colorTagOpen>
+				<colorTagClose>&lt;/font&gt;</colorTagClose>
+			</roleSkill>
+		</tooltips>
+	</comp7>
+</root>

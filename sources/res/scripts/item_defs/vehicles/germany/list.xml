@@ -1021,6 +1021,16 @@
 		<tags>heavyTank role_HT_assault private HD secret premiumIGR improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals role_HT_assault</tags>
 		<level>10</level>
 	</G42_Maus_IGR>
+	<G25_PzII_Luchs_SHXXI_L>
+		<id>167</id>
+		<userString>#germany_vehicles:G25_PzII_Luchs_SHXXI_L</userString>
+		<shortUserString>#germany_vehicles:G25_PzII_Luchs_SHXXI_L_short</shortUserString>
+		<price>1</price>
+		<notInShop>true</notInShop>
+		<cannotBeBought>true</cannotBeBought>
+		<tags>lightTank private event_battles secret HD battle_royale unobservable bot_hunter cannot_be_sold</tags>
+		<level>1</level>
+	</G25_PzII_Luchs_SHXXI_L>
 	<G89_Leopard1_bob>
 		<id>168</id>
 		<userString>#germany_vehicles:Leopard1_bob</userString>
@@ -1435,7 +1445,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_sniper HD inGame mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</G114_Rheinmetall_Skorpian>
 	<G32_PzV_PzIV_CN>
@@ -1970,7 +1980,7 @@
 			5300
 			<gold/>
 		</price>
-		<tags>AT-SPG role_ATSPG_sniper HD inGame mediumAT-SPG AT-SPG1 tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 		<level>7</level>
 	</G109_Steyr_WT>
 	<G112_KanonenJagdPanzer>
@@ -2015,7 +2025,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_sniper HD inGame mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</G114_Skorpian>
 	<G115_Typ_205_4_Jun>

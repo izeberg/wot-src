@@ -101,7 +101,7 @@ def getBattlePassCoinProductsUrl():
     return _getUrl('bpcoinProducts')
 
 
-def getBattlePassPointsProductsUrl():
+def getBattlePassTalerProductsUrl():
     return _getUrl('bpProducts')
 
 
@@ -136,10 +136,6 @@ def getWotPlusShopUrl():
 
 def getIntegratedAuctionUrl():
     return _getUrl('integratedAuction')
-
-
-def getLootBoxSystemShopUrl():
-    return _getUrl('lootBoxSystem')
 
 
 def getShowcaseUrl():

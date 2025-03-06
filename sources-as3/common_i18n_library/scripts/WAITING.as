@@ -333,7 +333,7 @@ package
       
       public static const DOWNLOAD_ACHIEVEMENTS20:String = "#waiting:download/achievements20";
       
-      public static const WOTSHOPPRODUCTPURCHASE:String = "#waiting:wotShopProductPurchase";
+      public static const EASYTANKEQUIPAPPLY:String = "#waiting:easyTankEquipApply";
        
       
       public function WAITING()

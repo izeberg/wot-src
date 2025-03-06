@@ -1131,6 +1131,30 @@ msgstr "BZ-72-1"
 msgid "Ch54_BZ_72_1_short_special"
 msgstr "A powerful gun and reliable armor"
 
+msgid "Ch56_BZ_74_1"
+msgstr "BZ-74-1"
+
+msgid "Ch56_BZ_74_1_descr"
+msgstr ""
+"This vehicle's development was influenced by the M48A3 tank received from "
+"Vietnam. The model has a conventional configuration with a cast hull built "
+"from welded parts, as well as a welded turret made of rolled plates. Many "
+"solutions in the chassis and hull were adopted from the American vehicle."
+
+msgid "Ch56_BZ_74_1_long_special"
+msgstr ""
+"The BZ-74-1 is a Tier VIII Chinese heavy tank. It has moderate armor, but a "
+"good top forward speed and good mobility for a heavy tank. It is equipped "
+"with a comfortable 122 mm gun with high alpha damage. This vehicle demands "
+"active play in battle, including quick occupation of key positions and "
+"timely movement across the map."
+
+msgid "Ch56_BZ_74_1_short"
+msgstr "BZ-74-1"
+
+msgid "Ch56_BZ_74_1_short_special"
+msgstr "Good dynamics, good gun depression/elevation"
+
 msgid "Ch58_111_Vz51"
 msgstr "WZ-111 model 6"
 
@@ -1563,6 +1587,9 @@ msgstr "T-26"
 msgid "Chassis_Ch54_BZ_72_1"
 msgstr "BZ-72-1"
 
+msgid "Chassis_Ch56_BZ_74_1"
+msgstr "BZ-74-1"
+
 msgid "Chassis_Ch58_111_Vz51"
 msgstr "WZ-111 model 6"
 
@@ -1828,6 +1855,9 @@ msgstr "T-26"
 
 msgid "Turret_1_Ch54_BZ_72_1"
 msgstr "BZ-72-1"
+
+msgid "Turret_1_Ch56_BZ_74_1"
+msgstr "BZ-74-1"
 
 msgid "Turret_1_Ch58_111_Vz51"
 msgstr "WZ-111 model 6"
@@ -2225,6 +2255,9 @@ msgstr "122 mm 60-122TC"
 msgid "_122mm_CB-472"
 msgstr "Chuan bei-472"
 
+msgid "_122mm_CB-472T"
+msgstr "Chuan bei-472T"
+
 msgid "_122mm_CB-57I"
 msgstr "Chuan bei-57I"
 
@@ -2240,6 +2273,9 @@ msgstr "GM 40HE"
 msgid "_122mm_PO-122"
 msgstr "Po-122"
 
+msgid "_122mm_PO-122T"
+msgstr "Po-122T"
+
 msgid "_122mm_PO-57I"
 msgstr "Po-57I"
 
@@ -2248,6 +2284,9 @@ msgstr "Po Type 59-2"
 
 msgid "_122mm_SB-472"
 msgstr "Sha bao-472"
+
+msgid "_122mm_SB-472T"
+msgstr "Sha bao-472T"
 
 msgid "_122mm_SB-57I"
 msgstr "Sha bao-57I"
@@ -2261,6 +2300,9 @@ msgstr "Chuan bei-471"
 msgid "_122mm_Type_57_CJ"
 msgstr "Chuan bei-411CJ"
 
+msgid "_122mm_Type_61"
+msgstr "122 mm Type-61"
+
 msgid "_122mm_Type_64"
 msgstr "Po-471"
 
@@ -2269,6 +2311,9 @@ msgstr "Po-411RH"
 
 msgid "_122mm_Type_68"
 msgstr "Sha bao-471"
+
+msgid "_12V150_1"
+msgstr "12V150-1"
 
 msgid "_130_mm_62-130T"
 msgstr "130 mm 62-130T"
@@ -2625,6 +2670,9 @@ msgstr "UOF-354"
 
 msgid "_76mm_ZiS_3"
 msgstr "76 mm ZiS-3"
+
+msgid "_789T"
+msgstr "789T"
 
 msgid "_85mm_367"
 msgstr "Chuan chao-367"

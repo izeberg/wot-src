@@ -13,6 +13,12 @@ package net.wg.gui.lobby.hangar.tcarousel
          super();
       }
       
+      override protected function configUI() : void
+      {
+         super.configUI();
+         hoverBg.mouseEnabled = false;
+      }
+      
       override public function get adaptiveSize() : String
       {
          return ScrollerItemRendererSize.SMALL_SIZE;

@@ -26,7 +26,7 @@ package net.wg.gui.lobby.battleResults.controller
          columnWidth[ColumnConstants.PLAYER] = !!param1.isShowSquad ? ColumnConstants.COMP7_PLAYER_COLUMN_WIDTH : ColumnConstants.COMP7_PLAYER_COLUMN_WIDTH + ColumnConstants.FIRST_COLUMN_WIDTH;
          columnWidth[ColumnConstants.PRESTIGE_POINTS] = ColumnConstants.PRESTIGE_POINTS_COLUMN_WIDTH;
          sortingKey[ColumnConstants.PRESTIGE_POINTS] = [ColumnConstants.PRESTIGE_POINTS];
-         columnTooltip[ColumnConstants.PRESTIGE_POINTS] = COMP7.BATTLERESULT_TEAM_PRESTIGEPOINTS;
+         columnTooltip[ColumnConstants.PRESTIGE_POINTS] = BATTLE_RESULTS.BATTLERESULT_TEAM_PRESTIGEPOINTS;
       }
       
       override protected function getColumnIds(param1:CommonStatsVO) : Vector.<String>

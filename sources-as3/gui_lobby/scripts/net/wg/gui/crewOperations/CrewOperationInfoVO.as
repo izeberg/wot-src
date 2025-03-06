@@ -16,11 +16,21 @@ package net.wg.gui.crewOperations
       
       public var error:String = "";
       
+      public var btnLabel:String = "";
+      
       public var warning:Object;
       
       private var _warningVO:CrewOperationWarningVO;
       
-      public var btnLabel:String = "";
+      public var hasToggleBlock:Boolean = false;
+      
+      public var isToggleSelected:Boolean = false;
+      
+      public var toggleBlockDescription:String = "";
+      
+      public var toggleBlockError:String = "";
+      
+      public var toggleBlockToggleLabel:String = "";
       
       public var btnNotificationEnabled:Boolean;
       

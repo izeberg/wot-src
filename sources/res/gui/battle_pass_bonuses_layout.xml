@@ -27,6 +27,10 @@
 				<bigIcon>Standard</bigIcon>
 			</override>
 		</tokens>
+		<lootBox>
+			<priority>93</priority>
+			<bigIcon>Standard</bigIcon>
+		</lootBox>
 		<randomQuestToken>
 			<priority>110</priority>
 			<bigIcon>Standard</bigIcon>
@@ -89,6 +93,12 @@
 			</inscription>
 			<bigIcon>Standard</bigIcon>
 		</customizations>
+		<currencies>
+			<bptaler>
+				<priority>88</priority>
+				<bigIcon>Standard</bigIcon>
+			</bptaler>
+		</currencies>
 		<blueprints>
 			<override>
 				<id>65523</id>

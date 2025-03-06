@@ -1049,6 +1049,9 @@ msgstr "Vehicle blueprint fragments:"
 msgid "bonusName/bpcoin"
 msgstr "Tokens"
 
+msgid "bonusName/bptaler"
+msgstr "Chips"
+
 msgid "bonusName/brcoin"
 msgstr "Steel Seals"
 
@@ -1253,6 +1256,9 @@ msgstr "Daily Bonus Battle."
 msgid "bonusName/slots"
 msgstr "Garage slots"
 
+msgid "bonusName/stpcoin"
+msgstr "Lucky Seals"
+
 msgid "bonusName/style"
 msgstr "Style"
 
@@ -1285,6 +1291,9 @@ msgstr "Personal Reserve: %(name)s (x%(count)s)"
 
 msgid "bonuses/bpcoin/description"
 msgstr "%(value)s Tokens"
+
+msgid "bonuses/bptaler/description"
+msgstr "Chips: %(value)s"
 
 msgid "bonuses/compensation/body"
 msgstr "This reward compensates for the game assets you already have."
@@ -1450,18 +1459,6 @@ msgstr "Expires in %H h %M min"
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Expires in %MM:%SS"
-
-msgid "dailyQuests/comp7/nextTasks"
-msgstr "5 new missions in:"
-
-msgid "dailyQuests/comp7/progressCounter"
-msgstr "%(current)d%(separator)s%(total)d"
-
-msgid "dailyQuests/comp7/questsCounter"
-msgstr "%(current)d / %(total)d"
-
-msgid "dailyQuests/comp7/reward"
-msgstr "Claim your reward!"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "Play a battle"

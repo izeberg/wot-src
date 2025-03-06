@@ -1,7 +1,8 @@
-import math, logging, Event, BigWorld, Math, SimulatedVehicle, math_utils, AreaDestructibles
+import math, logging, Event, BigWorld, Math, SimulatedVehicle, math_utils, CGF, AreaDestructibles
 from collections import namedtuple
 from avatar_components.avatar_postmortem_component import SimulatedVehicleType
 from battleground.kill_cam_visuals import EffectsController
+from cgf_components.sequence_components import SequencePauseComponent, SequenceSnapshotComponent
 from constants import SHELL_TYPES
 from gui.shared.gui_items.Vehicle import VEHICLE_CLASS_NAME
 from helpers import dependency
@@ -43,6 +44,7 @@ class SimulatedScene(object):
         self.__simulatedKillerID = None
         self.__simulatedVictimID = None
         self.__effectsController = EffectsController()
+        self.__deathSceneObject = None
         self.onAllVehiclesLoaded = Event.Event()
         self.onSimulatedSceneHasEnded = Event.Event()
         self.onAnimationsCompleted = Event.Event()
@@ -60,17 +62,26 @@ class SimulatedScene(object):
 
     def create(self):
         self.__movementTracker.create()
+        self.__deathSceneObject = CGF.GameObject(BigWorld.player().spaceID)
+        self.__deathSceneObject.activate()
 
     def destroy(self):
         self.__movementTracker.destroy()
         self.__movementTracker = None
-        return
+        if self.__deathSceneObject is None:
+            _logger.error('SimulatedScene.destroy: No CGF scene object!')
+            return
+        else:
+            CGF.removeGameObject(self.__deathSceneObject)
+            self.__deathSceneObject = None
+            return
 
     def enableScene(self, rawSimulationData, trajectoryPoints, killerIsSpotted):
         self.__enabled = True
         self.__rawSimulationData = rawSimulationData
         self.__trajectoryPoints = trajectoryPoints
         self.__killerIsSpotted = killerIsSpotted
+        self.__pauseSequences(True)
         self.__postFx.enablePostEffects()
         self.__hideGameplayEntities()
         BigWorld.PyGroundEffectManager().stopAll()
@@ -147,6 +158,7 @@ class SimulatedScene(object):
             self.__allSimulatedVehicles.clear()
             self.__allAppearanceReadyVehicles.clear()
             self.__showGameplayEntities()
+            self.__pauseSequences(False)
             self.__rawSimulationData = None
             self.__trajectoryPoints = None
             self.__killerIsSpotted = None
@@ -194,6 +206,13 @@ class SimulatedScene(object):
 
     def saveKillSnapshot(self):
         self.__movementTracker.saveSnapshot(isKill=True)
+        if self.__deathSceneObject is None:
+            _logger.error('SimulatedScene.saveKillSnapshot: No CGF scene object!')
+            return
+        else:
+            self.__deathSceneObject.removeComponentByType(SequenceSnapshotComponent)
+            self.__deathSceneObject.createComponent(SequenceSnapshotComponent)
+            return
 
     def setPendingShotID(self, shotID):
         self.__movementTracker.setPendingShotID(shotID)
@@ -314,6 +333,18 @@ class SimulatedScene(object):
                 self.__onSimulatedSceneEnded()
             else:
                 playerVehicle.onAppearanceReady += self.__onSimulatedSceneEnded
+
+    def __pauseSequences(self, isPaused):
+        if self.__deathSceneObject is None:
+            _logger.error('SimulatedScene.__pauseSequences: No CGF scene object! (isPaused: %s)', isPaused)
+            return
+        else:
+            if isPaused:
+                self.__deathSceneObject.createComponent(SequencePauseComponent)
+            else:
+                self.__deathSceneObject.removeComponentByType(SequencePauseComponent)
+                self.__deathSceneObject.removeComponentByType(SequenceSnapshotComponent)
+            return
 
     def __createSimulatedVehicles(self):
         self.__simulatedVictimID = self.__createSimulatedVehicle(self.__rawSimulationData.get('player', None), True)

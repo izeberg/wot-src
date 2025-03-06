@@ -16,9 +16,11 @@ package net.wg.gui.components.controls.universalBtn
    import net.wg.gui.components.controls.BitmapFill;
    import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.SoundButtonEx;
+   import net.wg.gui.components.controls.events.UniversalBtnShineEvent;
    import net.wg.gui.interfaces.ISoundButtonEx;
    import net.wg.infrastructure.events.UniversalBtnEvent;
    import net.wg.infrastructure.interfaces.IUniversalBtn;
+   import net.wg.infrastructure.interfaces.IUniversalBtnShineAnim;
    import net.wg.infrastructure.interfaces.IUniversalBtnToggleIndicator;
    import net.wg.utils.IUniversalBtnStyledDisplayObjects;
    import org.idmedia.as3commons.util.StringUtils;
@@ -96,6 +98,16 @@ package net.wg.gui.components.controls.universalBtn
       private var _alertIndicator:MovieClip = null;
       
       private var _alertIndicatorVisible:Boolean;
+      
+      private var _shineAnim:IUniversalBtnShineAnim = null;
+      
+      private var _shineLinkage:String = "";
+      
+      private var _shineFullWidth:int = 0;
+      
+      private var _shineWidth:uint = 0;
+      
+      private var _btnDefWidth:uint = 0;
       
       public function UniversalBtn()
       {
@@ -219,6 +231,7 @@ package net.wg.gui.components.controls.universalBtn
       
       override protected function onDispose() : void
       {
+         this.clearShine();
          this.image.removeEventListener(Event.CHANGE,this.onIconChangeHandler);
          this.image.dispose();
          this.image = null;
@@ -229,32 +242,35 @@ package net.wg.gui.components.controls.universalBtn
          super.onDispose();
       }
       
-      public function setStyle(param1:String, param2:IUniversalBtnStyledDisplayObjects, param3:uint, param4:uint, param5:Dictionary, param6:String, param7:DropShadowFilter) : void
+      public function setStyle(param1:String, param2:IUniversalBtnStyledDisplayObjects, param3:uint, param4:uint, param5:Dictionary, param6:String, param7:DropShadowFilter, param8:String, param9:uint) : void
       {
          textField.filters = null;
          textField.filters = new Array(param7);
          this._styleInitComplete = false;
          this.clearStyledDisplayObjects();
-         var _loc8_:int = this.getChildIndex(disableMc);
+         var _loc10_:int = this.getChildIndex(disableMc);
          this._styleID = param1;
          this._styledDisplayObjects = param2;
          this._states = param2.states;
          this._textFieldAlphaMap = param5;
          this._toggleGlow = param2.toggleGlow;
          this._toggleIndicator = param2.toggleIndicator;
+         this._btnDefWidth = this._states.width;
+         this._shineLinkage = param8;
+         this._shineWidth = param9;
          this.height = this._states.height;
          this.updateTextFieldStyle(param3,param4);
          this.rescaleDynamicItems();
-         addChildAt(this._states,_loc8_);
+         addChildAt(this._states,_loc10_);
          _labelHash = UIComponent.generateLabelHash(this._states);
          this._toggleGlow.visible = false;
          this._toggleGlow.x = this._toggleGlow.y = FILTERS_GLOW_OFFSET;
-         _loc8_ += DISPLAY_LIST_CHILD_INDEX_SHIFT;
-         addChildAt(this._toggleGlow,_loc8_);
+         _loc10_ += DISPLAY_LIST_CHILD_INDEX_SHIFT;
+         addChildAt(this._toggleGlow,_loc10_);
          this._toggleIndicator.mouseEnabled = this._toggleIndicator.mouseChildren = false;
          this._toggleIndicator.visible = toggle;
-         _loc8_++;
-         this.addChildAt(DisplayObject(this._toggleIndicator),_loc8_);
+         _loc10_++;
+         this.addChildAt(DisplayObject(this._toggleIndicator),_loc10_);
          disableMc.source = param6;
          this._styleInitComplete = true;
          if(_state)
@@ -262,6 +278,28 @@ package net.wg.gui.components.controls.universalBtn
             setState(_state);
          }
          invalidate(InvalidationType.LAYOUT);
+      }
+      
+      public function shine(param1:int = 1, param2:int = 0) : void
+      {
+         if(!this.stage)
+         {
+            return;
+         }
+         if(!this._shineAnim && StringUtils.isNotEmpty(this._shineLinkage))
+         {
+            this._shineAnim = App.utils.classFactory.getComponent(this._shineLinkage,IUniversalBtnShineAnim);
+            this._shineAnim.addEventListener(UniversalBtnShineEvent.ON_ANIM_COMPLETED,this.onShineCompletedHandler);
+            this._shineFullWidth = this._shineAnim.width;
+            this.updateShinePos();
+            this.parent.addChildAt(DisplayObject(this._shineAnim),this.parent.getChildIndex(this) + 1);
+         }
+         this._shineAnim.shine(param1,param2);
+      }
+      
+      public function stopShine() : void
+      {
+         this.clearShine();
       }
       
       public function switchAlertIndicatorVisible(param1:Boolean) : void
@@ -452,6 +490,40 @@ package net.wg.gui.components.controls.universalBtn
          this.image.alpha = _loc1_;
       }
       
+      private function clearShine() : void
+      {
+         if(this._shineAnim)
+         {
+            this._shineAnim.removeEventListener(UniversalBtnShineEvent.ON_ANIM_COMPLETED,this.onShineCompletedHandler);
+            this._shineAnim.dispose();
+            this.parent.removeChild(DisplayObject(this._shineAnim));
+            this._shineAnim = null;
+         }
+      }
+      
+      private function updateShinePos() : void
+      {
+         if(!this._shineAnim)
+         {
+            return;
+         }
+         this._shineAnim.width = this._shineFullWidth - this._shineWidth + this.width;
+         this._shineAnim.x = this.x + (this.width >> 1);
+         this._shineAnim.y = this.y + (this.height >> 1);
+      }
+      
+      override public function set x(param1:Number) : void
+      {
+         super.x = param1;
+         this.updateShinePos();
+      }
+      
+      override public function set y(param1:Number) : void
+      {
+         super.y = param1;
+         this.updateShinePos();
+      }
+      
       override public function set selected(param1:Boolean) : void
       {
          if(selected != param1)
@@ -561,6 +633,11 @@ package net.wg.gui.components.controls.universalBtn
       private function onIconChangeHandler(param1:Event) : void
       {
          invalidate(InvalidationType.LAYOUT);
+      }
+      
+      private function onShineCompletedHandler(param1:UniversalBtnShineEvent) : void
+      {
+         this.clearShine();
       }
    }
 }

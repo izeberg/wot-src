@@ -391,12 +391,15 @@
 									</property>
 									<property>
 										<name>start</name>
-										<value>6</value>
+										<value>
+											1.3
+											<!--BW_String-->
+										</value>
 									</property>
 									<property>
 										<name>end</name>
 										<value>
-											31.3
+											16.3
 											<!--BW_String-->
 										</value>
 									</property>
@@ -414,12 +417,15 @@
 									</property>
 									<property>
 										<name>start</name>
-										<value>6</value>
+										<value>
+											1.3
+											<!--BW_String-->
+										</value>
 									</property>
 									<property>
 										<name>end</name>
 										<value>
-											31.3
+											16.3
 											<!--BW_String-->
 										</value>
 									</property>
@@ -833,6 +839,20 @@
 			<type>RandomEventZoneUINotification</type>
 			<version>1</version>
 			<component>
+				<UUID>409845a0-5437-3d25-ace7-413a579d506e</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>trigger</name>
+						<link>409845a0-5437-3d25-ace7-413a579d506e</link>
+					</property>
+					<property>
+						<name>zoneType</name>
+						<value>dangerZone</value>
+					</property>
+				</config>
+			</component>
+			<component>
 				<UUID>5b768659-c5f6-3bdd-8236-023f5ff62d50</UUID>
 				<flags>3</flags>
 				<config>
@@ -843,34 +863,6 @@
 					<property>
 						<name>zoneType</name>
 						<value>warningZone</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>237c92ad-a69a-3756-8bae-bd712cfb3d1a</UUID>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>trigger</name>
-						<link>409845a0-5437-3d25-ace7-413a579d506e</link>
-					</property>
-					<property>
-						<name>zoneType</name>
-						<value>mapDeathZone</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>3ecfecc9-9286-47c3-81f1-0ba51084be07</UUID>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>trigger</name>
-						<link>409845a0-5437-3d25-ace7-413a579d506e</link>
-					</property>
-					<property>
-						<name>zoneType</name>
-						<value>dangerZone</value>
 					</property>
 				</config>
 			</component>

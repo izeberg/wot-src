@@ -4,9 +4,7 @@ from functools import partial
 from typing import Optional
 import BigWorld, Event, SoundGroups
 from AvatarInputHandler.AimingSystems import getShotTargetInfo
-from PlayerEvents import g_playerEvents
 from aih_constants import CTRL_MODE_NAME
-from comp7_common import ROLE_EQUIPMENT_TAG
 from constants import VEHICLE_SETTING, EQUIPMENT_STAGES, ARENA_BONUS_TYPE
 from gui.impl import backport
 from gui.impl.gen import R
@@ -26,7 +24,6 @@ from shared_utils import findFirst, forEach, CONST_CONTAINER
 from skeletons.gui.battle_session import IBattleSessionProvider
 from soft_exception import SoftException
 _ActivationError = namedtuple('_ActivationError', 'key ctx')
-_ROLE_EQUIPMENT_ANIMATION_TYPE = ANIMATION_TYPES.MOVE_ORANGE_BAR_UP | ANIMATION_TYPES.SHOW_COUNTER_ORANGE
 _logger = logging.getLogger(__name__)
 
 class NotApplyingError(_ActivationError):
@@ -63,33 +60,6 @@ class PoiUnavailableError(_ActivationError):
 
     def __init__(self, name):
         super(PoiUnavailableError, self).__init__('equipmentPoiUnavailable', {'name': self._getPoiName(name)})
-
-
-class Comp7RoleSkillUnavailable(_ActivationError):
-
-    def __new__(cls, name):
-        return super(Comp7RoleSkillUnavailable, cls).__new__(cls, 'comp7RoleSkillUnavailable', {'name': name})
-
-    def __init__(self, name):
-        super(Comp7RoleSkillUnavailable, self).__init__('comp7RoleSkillUnavailable', {'name': name})
-
-
-class Comp7RoleSkillAlreadyActivated(_ActivationError):
-
-    def __new__(cls, name):
-        return super(Comp7RoleSkillAlreadyActivated, cls).__new__(cls, 'comp7RoleSkillAlreadyActivated', {'name': name})
-
-    def __init__(self, name):
-        super(Comp7RoleSkillAlreadyActivated, self).__init__('comp7RoleSkillAlreadyActivated', {'name': name})
-
-
-class Comp7RoleSkillCooldown(_ActivationError):
-
-    def __new__(cls, name):
-        return super(Comp7RoleSkillCooldown, cls).__new__(cls, 'comp7RoleSkillCooldown', {'name': name})
-
-    def __init__(self, name):
-        super(Comp7RoleSkillCooldown, self).__init__('comp7RoleSkillCooldown', {'name': name})
 
 
 class NeedEntitySelection(_ActivationError):
@@ -1042,86 +1012,6 @@ class _PoiArtilleryItem(_ArtilleryItem):
         return super(_PoiArtilleryItem, self).canActivate(entityName, avatar)
 
 
-class _RoleSkillVSItem(_VisualScriptItem):
-    __FORBIDDEN_STAGES_TO_ACTIVATE = (
-     EQUIPMENT_STAGES.COOLDOWN, EQUIPMENT_STAGES.ACTIVE,
-     EQUIPMENT_STAGES.UNAVAILABLE, EQUIPMENT_STAGES.STARTUP_COOLDOWN)
-
-    def update(self, quantity, stage, timeRemaining, totalTime):
-        prevQuantity = self._prevQuantity
-        super(_RoleSkillVSItem, self).update(quantity, stage, timeRemaining, totalTime)
-        self._prevQuantity = prevQuantity
-        self._quantity = self.getQuantity()
-
-    def _getErrorMsg(self):
-        if self._stage == EQUIPMENT_STAGES.UNAVAILABLE:
-            return Comp7RoleSkillUnavailable(self._descriptor.userString)
-        if self._stage == EQUIPMENT_STAGES.ACTIVE:
-            return Comp7RoleSkillAlreadyActivated(self._descriptor.userString)
-        if self._stage in (EQUIPMENT_STAGES.COOLDOWN, EQUIPMENT_STAGES.STARTUP_COOLDOWN):
-            return Comp7RoleSkillCooldown(self._descriptor.userString)
-        return super(_RoleSkillVSItem, self)._getErrorMsg()
-
-    def getQuantity(self):
-        component = self._getComponent()
-        if component is None:
-            return 0
-        else:
-            available, _ = self.canActivate()
-            return int(available)
-
-    def canActivate(self, entityName=None, avatar=None):
-        if self._stage in self.__FORBIDDEN_STAGES_TO_ACTIVATE:
-            return (False, self._getErrorMsg())
-        return super(_RoleSkillVSItem, self).canActivate(entityName, avatar)
-
-
-class _DeferredRoleSkillVSItem(_RoleSkillVSItem):
-    _ACTIVATION_COOLDOWN = 0.2
-    _lastActivationTime = 0
-
-    def __init__(self, *args):
-        super(_DeferredRoleSkillVSItem, self).__init__(*args)
-        g_playerEvents.onRoundFinished += self.__onRoundFinished
-
-    def clear(self):
-        super(_DeferredRoleSkillVSItem, self).clear()
-        g_playerEvents.onRoundFinished -= self.__onRoundFinished
-
-    def canActivate(self, entityName=None, avatar=None):
-        result, error = super(_DeferredRoleSkillVSItem, self).canActivate(entityName, avatar)
-        if result and avatar:
-            currentTime = BigWorld.time()
-            if currentTime - self._lastActivationTime < self._ACTIVATION_COOLDOWN:
-                return (False, None)
-            self._lastActivationTime = currentTime
-        return (result, error)
-
-    def __onRoundFinished(self, *_):
-        from AvatarInputHandler import MapCaseMode
-        MapCaseMode.turnOffMapCase(self.getEquipmentID(), self._getAimingControlMode())
-
-
-class _RoleSkillReconVSItem(_DeferredRoleSkillVSItem):
-
-    def _getAimingControlMode(self):
-        from AvatarInputHandler.MapCaseMode import MapCaseControlMode
-        return MapCaseControlMode
-
-
-class _RoleSkillArtyVSItem(_DeferredRoleSkillVSItem):
-
-    def _getAimingControlMode(self):
-        from AvatarInputHandler.MapCaseMode import MapCaseControlMode
-        return MapCaseControlMode
-
-    def getMarker(self):
-        return 'artillery_fort_ally'
-
-    def getMarkerColor(self):
-        return BATTLE_MARKERS_CONSTS.COLOR_GREEN
-
-
 class _GameplayConsumableItem(_TriggerItem):
 
     def getTags(self):
@@ -1182,16 +1072,6 @@ def _triggerItemFactory(descriptor, quantity, stage, timeRemaining, totalTime, t
     return _TriggerItem(descriptor, quantity, stage, timeRemaining, totalTime, tags)
 
 
-def _comp7ItemFactory(descriptor, quantity, stage, timeRemaining, totalTime, tag=None):
-    if descriptor.name.startswith('comp7_recon'):
-        itemClass = _RoleSkillReconVSItem
-    elif descriptor.name.startswith('comp7_redline'):
-        itemClass = _RoleSkillArtyVSItem
-    else:
-        itemClass = _RoleSkillVSItem
-    return itemClass(descriptor, quantity, stage, timeRemaining, totalTime, tag)
-
-
 def _poiItemFactory(descriptor, quantity, stage, timeRemaining, totalTime, tag=None):
     if descriptor.name.startswith('poi_artillery_aoe'):
         itemClass = _PoiArtilleryItem
@@ -1224,7 +1104,6 @@ _EQUIPMENT_TAG_TO_ITEM = {('fuel',): _AutoItem,
    ('medkit', 'repairkit'): _RepairCrewAndModules, 
    ('dynComponentsGroup',): DynComponentsGroupItem, 
    ('dynComponentsGroup', 'passive'): DynComponentsGroupPassiveItem, 
-   (ROLE_EQUIPMENT_TAG,): _comp7ItemFactory, 
    (POI_EQUIPMENT_TAG,): _poiItemFactory}
 
 class _DAMAGE_PANEL_EQUIPMENT(CONST_CONTAINER):
@@ -1867,36 +1746,6 @@ class _ReplayPoiArtilleryItem(_ReplayItem, _PoiArtilleryItem):
         return _PoiArtilleryItem.canActivate(entityName, avatar)
 
 
-class _ReplayRoleSkillVSItem(_ReplayItem, _RoleSkillVSItem):
-
-    def getAnimationType(self):
-        return _RoleSkillVSItem.getAnimationType(self)
-
-    def update(self, quantity, stage, timeRemaining, totalTime):
-        _ReplayItem.update(self, quantity, stage, timeRemaining, totalTime)
-        _RoleSkillVSItem.update(self, quantity, stage, timeRemaining, totalTime)
-
-    def canActivate(self, entityName=None, avatar=None):
-        return _RoleSkillVSItem.canActivate(self, entityName, avatar)
-
-    def _getErrorMsg(self):
-        return _RoleSkillVSItem._getErrorMsg(self)
-
-
-class _ReplayRoleSkillArtyVSItem(_ReplayRoleSkillVSItem):
-
-    def getMarker(self):
-        return 'artillery_fort_ally'
-
-
-def _replayComp7ItemFactory(descriptor, quantity, stage, timeRemaining, totalTime, tag=None):
-    if descriptor.name.startswith('comp7_redline'):
-        itemClass = _ReplayRoleSkillArtyVSItem
-    else:
-        itemClass = _ReplayRoleSkillVSItem
-    return itemClass(descriptor, quantity, stage, timeRemaining, totalTime, tag)
-
-
 def _replayPoiItemFactory(descriptor, quantity, stage, timeRemaining, totalTime, tag=None):
     if descriptor.name.startswith('poi_artillery_aoe'):
         itemClass = _ReplayPoiArtilleryItem
@@ -1950,7 +1799,6 @@ _REPLAY_EQUIPMENT_TAG_TO_ITEM = {('fuel',): _ReplayItem,
    ('medkit', 'repairkit'): _replayTriggerItemFactory, 
    ('dynComponentsGroup',): DynComponentsGroupReplayItem, 
    ('dynComponentsGroup', 'passive'): DynComponentsGroupPassiveReplayItem, 
-   (ROLE_EQUIPMENT_TAG,): _replayComp7ItemFactory, 
    (POI_EQUIPMENT_TAG,): _replayPoiItemFactory}
 
 class EquipmentsReplayPlayer(EquipmentsController):
@@ -1968,17 +1816,16 @@ class EquipmentsReplayPlayer(EquipmentsController):
         return
 
     def clear(self, leave=True):
-        if leave:
-            if self.__callbackID is not None:
-                BigWorld.cancelCallback(self.__callbackID)
-                self.__callbackID = None
-            if self.__callbackTimeID is not None:
-                BigWorld.cancelCallback(self.__callbackTimeID)
-                self.__callbackTimeID = None
-            self.__percents.clear()
-            self.__percentGetters.clear()
-            self.__times.clear()
-            self.__timeGetters.clear()
+        if self.__callbackID is not None:
+            BigWorld.cancelCallback(self.__callbackID)
+            self.__callbackID = None
+        if self.__callbackTimeID is not None:
+            BigWorld.cancelCallback(self.__callbackTimeID)
+            self.__callbackTimeID = None
+        self.__percents.clear()
+        self.__percentGetters.clear()
+        self.__times.clear()
+        self.__timeGetters.clear()
         super(EquipmentsReplayPlayer, self).clear(leave)
         return
 

@@ -34,14 +34,14 @@ if IS_DEVELOPMENT:
                     break
             else:
                 self.__contextAll.append(weakref.ref(context))
-                LOG_DEBUG_DEV('VSContext %s was registered' % type(context).__name__)
+                LOG_DEBUG_DEV('VSContext ', type(context).__name__, ' was registered')
 
         def unregContext(self, context):
             for ctx in self.__contextAll[:]:
                 if ctx() == context:
                     self.__contextDestroyed(context)
                     self.__contextAll.remove(ctx)
-                    LOG_DEBUG_DEV('VSContext %s was unregistered' % type(context).__name__)
+                    LOG_DEBUG_DEV('VSContext ', type(context).__name__, ' was unregistered')
                     break
 
         def startPlan(self, planName, contextName, aspect, params={}):

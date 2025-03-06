@@ -497,9 +497,13 @@ class KillCamMode(KillModeBase):
             if availability is not SimulationAvailability.AVAILABLE:
                 return (availability, None)
             if avatar.arenaExtraData.get('isRandomEventsAllowed', False):
-                _logger.info('Skip DeathCam scene because Random Events are not supported')
-                return (
-                 SimulationAvailability.NOT_SUPPORTED_MODE, None)
+                postmortemSettings = avatar.arenaExtraData.get('postmortemSettings', {})
+                killcamConfig = postmortemSettings.get('config', {}).get('killcam', {})
+                isAllowedForRandomEvents = killcamConfig.get('isAllowedForRandomEvents', False)
+                if not isAllowedForRandomEvents:
+                    _logger.info('Skip DeathCam scene because Random Events are not supported')
+                    return (
+                     SimulationAvailability.NOT_SUPPORTED_MODE, None)
             if not self.killCamCtrl:
                 _logger.warning("DeathCam is enabled but can't find killCamCtrl")
                 return (

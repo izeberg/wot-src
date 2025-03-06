@@ -130,6 +130,20 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleRoyale.views.playersPanel.PlayerDataVO;
    import net.wg.gui.battle.battleRoyale.views.playersPanel.PlayersPanelItemRenderer;
    import net.wg.gui.battle.battleRoyale.views.playersPanel.RespawnIconEvent;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.ShamrockController;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockCollect;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockCollectAnimation;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockReceiveAnimation;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockSideBar;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockTotalAmount;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.TextFieldWrapper;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.AbstractShamrockLabel;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.BonusShamrockLabel;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.ShamrockLabelWithIcon;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.WinnerShamrockAnimation;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.data.ShamrockTransactionVO;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.events.ShamrockAnimationEvent;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.interfaces.IShamrockListener;
    import net.wg.gui.battle.battleloading.BaseBattleLoading;
    import net.wg.gui.battle.battleloading.BaseLoadingForm;
    import net.wg.gui.battle.battleloading.BattleLoading;
@@ -155,61 +169,13 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleloading.vo.VehicleDataVO;
    import net.wg.gui.battle.battleloading.vo.VehicleInfoVO;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
-   import net.wg.gui.battle.comp7.Comp7BattlePage;
-   import net.wg.gui.battle.comp7.Comp7HelpCtrl;
    import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO;
-   import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleStatsVO;
-   import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehiclesDataVO;
-   import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehiclesStatsVO;
-   import net.wg.gui.battle.comp7.VO.daapi.Comp7InterestPointVO;
-   import net.wg.gui.battle.comp7.battleloading.Comp7BattleLoading;
-   import net.wg.gui.battle.comp7.battleloading.Comp7BattleLoadingForm;
-   import net.wg.gui.battle.comp7.battleloading.renderers.Comp7RendererContainer;
-   import net.wg.gui.battle.comp7.battleloading.renderers.Comp7TipPlayerItemRenderer;
-   import net.wg.gui.battle.comp7.infrastructure.Comp7StatisticsDataController;
-   import net.wg.gui.battle.comp7.infrastructure.interfaces.IFullStatsPoiHolder;
-   import net.wg.gui.battle.comp7.infrastructure.interfaces.IPoiContainer;
-   import net.wg.gui.battle.comp7.stats.PoiContainer;
-   import net.wg.gui.battle.comp7.stats.components.RoleSkillLevel;
-   import net.wg.gui.battle.comp7.stats.components.VoiceChatActivation;
-   import net.wg.gui.battle.comp7.stats.components.data.VoiceChatActivationVO;
-   import net.wg.gui.battle.comp7.stats.components.events.VoiceChatActivationEvent;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.Comp7PlayersPanel;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.interfaces.IComp7PlayersPanelList;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.interfaces.IComp7PlayersPanelListItem;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.interfaces.IComp7PlayersPanelListLeft;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.list.Comp7PlayersPanelList;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.list.Comp7PlayersPanelListItem;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.list.Comp7PlayersPanelListItemHolder;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.list.Comp7PlayersPanelListLeft;
-   import net.wg.gui.battle.comp7.stats.components.playersPanel.list.Comp7PlayersPanelListRight;
-   import net.wg.gui.battle.comp7.stats.fullStats.FullStats;
-   import net.wg.gui.battle.comp7.stats.fullStats.FullStatsTable;
-   import net.wg.gui.battle.comp7.stats.fullStats.FullStatsTableCtrl;
-   import net.wg.gui.battle.comp7.stats.fullStats.tableItem.AnonymizerCtrl;
-   import net.wg.gui.battle.comp7.stats.fullStats.tableItem.StatsTableItem;
-   import net.wg.gui.battle.comp7.stats.fullStats.tableItem.StatsTableItemHolder;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.BattleCarouselEnvironment;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.BattleTankCarousel;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.BattleTankCarouselFilters;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.data.BattleVehicleCarouselVO;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.renderers.BaseBattleTankIcon;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.renderers.SmallBattleTankCarouselItemRenderer;
-   import net.wg.gui.battle.comp7.views.battleTankCarousel.renderers.SmallBattleTankIcon;
-   import net.wg.gui.battle.comp7.views.comp7ReconFlight.Comp7ReconFlight;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButton;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButtonGlow;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7Counter;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ProgressBar;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ProgressContainer;
    import net.wg.gui.battle.comp7.views.consumablesPanel.events.ConsumablesPanelEvent;
-   import net.wg.gui.battle.comp7.views.prebattleTimer.Comp7PrebattleInfoContainer;
-   import net.wg.gui.battle.comp7.views.prebattleTimer.Comp7PrebattleInfoView;
-   import net.wg.gui.battle.comp7.views.prebattleTimer.Comp7PrebattleInfoViewVO;
-   import net.wg.gui.battle.comp7.views.prebattleTimer.Comp7PrebattleTimer;
-   import net.wg.gui.battle.comp7.views.prebattleTimer.events.Comp7PrebattleInfoViewEvent;
-   import net.wg.gui.battle.comp7.views.teamBasesPanel.Comp7TeamBasesPanel;
    import net.wg.gui.battle.components.BaseProgressCircle;
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.components.BattleDAAPIComponent;
@@ -764,7 +730,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.minimap.components.entries.battleRoyale.DeathZoneMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.battleRoyale.DiscoveredItemMarker;
    import net.wg.gui.battle.views.minimap.components.entries.battleRoyale.RadarAnimation;
-   import net.wg.gui.battle.views.minimap.components.entries.comp7.Comp7PointReconMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.constants.AbsorptionFlagEntryConst;
    import net.wg.gui.battle.views.minimap.components.entries.constants.EpicMinimapEntryConst;
    import net.wg.gui.battle.views.minimap.components.entries.constants.FlagMinimapEntryConst;
@@ -1368,81 +1333,33 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_PLAYERSTATS_BATTLEROYALEPLAYERSTATVO:Class = BattleRoyalePlayerStatVO;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_COMP7BATTLEPAGE:Class = Comp7BattlePage;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_SHAMROCKCONTROLLER:Class = ShamrockController;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_COMP7HELPCTRL:Class = Comp7HelpCtrl;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKCOLLECT:Class = ShamrockCollect;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_BATTLELOADING_COMP7BATTLELOADING:Class = Comp7BattleLoading;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKCOLLECTANIMATION:Class = ShamrockCollectAnimation;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_BATTLELOADING_COMP7BATTLELOADINGFORM:Class = Comp7BattleLoadingForm;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKRECEIVEANIMATION:Class = ShamrockReceiveAnimation;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_BATTLELOADING_RENDERERS_COMP7RENDERERCONTAINER:Class = Comp7RendererContainer;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKSIDEBAR:Class = ShamrockSideBar;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_BATTLELOADING_RENDERERS_COMP7TIPPLAYERITEMRENDERER:Class = Comp7TipPlayerItemRenderer;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKTOTALAMOUNT:Class = ShamrockTotalAmount;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_INFRASTRUCTURE_COMP7STATISTICSDATACONTROLLER:Class = Comp7StatisticsDataController;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_TEXTFIELDWRAPPER:Class = TextFieldWrapper;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_INFRASTRUCTURE_INTERFACES_IFULLSTATSPOIHOLDER:Class = IFullStatsPoiHolder;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_ABSTRACTSHAMROCKLABEL:Class = AbstractShamrockLabel;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_INFRASTRUCTURE_INTERFACES_IPOICONTAINER:Class = IPoiContainer;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_BONUSSHAMROCKLABEL:Class = BonusShamrockLabel;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_POICONTAINER:Class = PoiContainer;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_SHAMROCKLABELWITHICON:Class = ShamrockLabelWithIcon;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_ROLESKILLLEVEL:Class = RoleSkillLevel;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_WINNERSHAMROCKANIMATION:Class = WinnerShamrockAnimation;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_VOICECHATACTIVATION:Class = VoiceChatActivation;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_DATA_SHAMROCKTRANSACTIONVO:Class = ShamrockTransactionVO;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_DATA_VOICECHATACTIVATIONVO:Class = VoiceChatActivationVO;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_EVENTS_SHAMROCKANIMATIONEVENT:Class = ShamrockAnimationEvent;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_EVENTS_VOICECHATACTIVATIONEVENT:Class = VoiceChatActivationEvent;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_COMP7PLAYERSPANEL:Class = Comp7PlayersPanel;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_INTERFACES_ICOMP7PLAYERSPANELLIST:Class = IComp7PlayersPanelList;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_INTERFACES_ICOMP7PLAYERSPANELLISTITEM:Class = IComp7PlayersPanelListItem;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_INTERFACES_ICOMP7PLAYERSPANELLISTLEFT:Class = IComp7PlayersPanelListLeft;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_LIST_COMP7PLAYERSPANELLIST:Class = Comp7PlayersPanelList;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_LIST_COMP7PLAYERSPANELLISTITEM:Class = Comp7PlayersPanelListItem;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_LIST_COMP7PLAYERSPANELLISTITEMHOLDER:Class = Comp7PlayersPanelListItemHolder;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_LIST_COMP7PLAYERSPANELLISTLEFT:Class = Comp7PlayersPanelListLeft;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_COMPONENTS_PLAYERSPANEL_LIST_COMP7PLAYERSPANELLISTRIGHT:Class = Comp7PlayersPanelListRight;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_FULLSTATS_FULLSTATS:Class = FullStats;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_FULLSTATS_FULLSTATSTABLE:Class = FullStatsTable;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_FULLSTATS_FULLSTATSTABLECTRL:Class = FullStatsTableCtrl;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_FULLSTATS_TABLEITEM_ANONYMIZERCTRL:Class = AnonymizerCtrl;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_FULLSTATS_TABLEITEM_STATSTABLEITEM:Class = StatsTableItem;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_STATS_FULLSTATS_TABLEITEM_STATSTABLEITEMHOLDER:Class = StatsTableItemHolder;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_BATTLECAROUSELENVIRONMENT:Class = BattleCarouselEnvironment;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_BATTLETANKCAROUSEL:Class = BattleTankCarousel;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_BATTLETANKCAROUSELFILTERS:Class = BattleTankCarouselFilters;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_DATA_BATTLEVEHICLECAROUSELVO:Class = BattleVehicleCarouselVO;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BASEBATTLETANKICON:Class = BaseBattleTankIcon;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BATTLETANKCAROUSELITEMRENDERER:Class = BattleTankCarouselItemRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_RENDERERS_SMALLBATTLETANKCAROUSELITEMRENDERER:Class = SmallBattleTankCarouselItemRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_BATTLETANKCAROUSEL_RENDERERS_SMALLBATTLETANKICON:Class = SmallBattleTankIcon;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_COMP7RECONFLIGHT_COMP7RECONFLIGHT:Class = Comp7ReconFlight;
+      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_INTERFACES_ISHAMROCKLISTENER:Class = IShamrockListener;
       
       public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_CONSUMABLESPANEL_COMP7CONSUMABLEBUTTON:Class = Comp7ConsumableButton;
       
@@ -1456,27 +1373,7 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_CONSUMABLESPANEL_EVENTS_CONSUMABLESPANELEVENT:Class = ConsumablesPanelEvent;
       
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_PREBATTLETIMER_COMP7PREBATTLEINFOCONTAINER:Class = Comp7PrebattleInfoContainer;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_PREBATTLETIMER_COMP7PREBATTLEINFOVIEW:Class = Comp7PrebattleInfoView;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_PREBATTLETIMER_COMP7PREBATTLEINFOVIEWVO:Class = Comp7PrebattleInfoViewVO;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_PREBATTLETIMER_COMP7PREBATTLETIMER:Class = Comp7PrebattleTimer;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_PREBATTLETIMER_EVENTS_COMP7PREBATTLEINFOVIEWEVENT:Class = Comp7PrebattleInfoViewEvent;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_TEAMBASESPANEL_COMP7TEAMBASESPANEL:Class = Comp7TeamBasesPanel;
-      
       public static const NET_WG_GUI_BATTLE_COMP7_VO_DAAPI_COMP7DAAPIVEHICLEINFOVO:Class = Comp7DAAPIVehicleInfoVO;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VO_DAAPI_COMP7DAAPIVEHICLESDATAVO:Class = Comp7DAAPIVehiclesDataVO;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VO_DAAPI_COMP7DAAPIVEHICLESSTATSVO:Class = Comp7DAAPIVehiclesStatsVO;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VO_DAAPI_COMP7DAAPIVEHICLESTATSVO:Class = Comp7DAAPIVehicleStatsVO;
-      
-      public static const NET_WG_GUI_BATTLE_COMP7_VO_DAAPI_COMP7INTERESTPOINTVO:Class = Comp7InterestPointVO;
       
       public static const NET_WG_GUI_BATTLE_COMPONENTS_BASEPROGRESSCIRCLE:Class = BaseProgressCircle;
       
@@ -2585,8 +2482,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_BATTLEROYALE_DISCOVEREDITEMMARKER:Class = DiscoveredItemMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_BATTLEROYALE_RADARANIMATION:Class = RadarAnimation;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_COMP7_COMP7POINTRECONMINIMAPENTRY:Class = Comp7PointReconMinimapEntry;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_CONSTANTS_ABSORPTIONFLAGENTRYCONST:Class = AbsorptionFlagEntryConst;
       

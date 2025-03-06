@@ -13,7 +13,7 @@ package net.wg.gui.battle.views.destroyTimers
          super();
       }
       
-      override protected function initTimers(param1:String = "destroyTimerUI", param2:String = "secondaryTimerUI") : void
+      override protected function initTimers(param1:String, param2:String) : void
       {
          super.initTimers(BATTLE_NOTIFICATIONS_TIMER_LINKAGES.POI_MAIN_TIMER_UI,BATTLE_NOTIFICATIONS_TIMER_LINKAGES.POI_SECONDARY_TIMER_UI);
          if(destroyTimer)

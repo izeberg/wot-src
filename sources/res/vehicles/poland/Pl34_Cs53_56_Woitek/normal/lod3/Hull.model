@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl34_Cs53_56_Woitek/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl34_Cs53_56_Woitek/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.736826 -0.552992 -3.693802</min>
+		<max>1.755895 0.446477 3.473089</max>
+	</visibilityBox>
+</root>

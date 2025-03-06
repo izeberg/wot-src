@@ -19,7 +19,11 @@ package
       
       public static const MAPS_ICONS_BATTLEMATTERS_ENTRYPOINT_BG:String = "../maps/icons/battleMatters/entryPoint/bg.png";
       
-      public static const MAPS_ICONS_BATTLEPASS_POST_PROGRESSION_BG:String = "../maps/icons/battlePass/post_progression/bg.png";
+      public static const MAPS_ICONS_BATTLEPASS_HOLIDAY_FINAL_SCREEN_BG:String = "../maps/icons/battlePass/holiday_final_screen/bg.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_POST_PROGRESSION_FOOTER_EXTRACHAPTER_BG:String = "../maps/icons/battlePass/post_progression/footer/extraChapter/bg.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_POST_PROGRESSION_FOOTER_PURCHASEIP_BG:String = "../maps/icons/battlePass/post_progression/footer/purchaseIP/bg.png";
       
       public static const MAPS_ICONS_BATTLEPASS_PROGRESSION_BG:String = "../maps/icons/battlePass/progression/bg.png";
       

@@ -3054,6 +3054,20 @@
 			</value>
 		</item>
 		<item>
+			<name>CrewBooksMentoringLicenseBtn</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>view</name>
+					<value>R.views.lobby.crew.QuickTrainingView</value>
+				</item>
+				<item>
+					<name>path</name>
+					<value>div[id=crew_books_mentoring_license_btn]</value>
+				</item>
+			</value>
+		</item>
+		<item>
 			<name>C11nVehicleListSidebarBtn</name>
 			<type>dict</type>
 			<value>

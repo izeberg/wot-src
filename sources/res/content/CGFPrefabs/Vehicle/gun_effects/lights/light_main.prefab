@@ -96,7 +96,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -567,7 +567,10 @@
 							</property>
 							<property>
 								<name>color</name>
-								<value>1 1 1 1</value>
+								<value>
+									1 0.592157 0.258824 1
+									<!--BW_String-->
+								</value>
 							</property>
 							<property>
 								<name>colorTemperature</name>
@@ -575,11 +578,14 @@
 							</property>
 							<property>
 								<name>innerRadius</name>
-								<value>1</value>
+								<value>
+									1.5
+									<!--BW_String-->
+								</value>
 							</property>
 							<property>
 								<name>outerRadius</name>
-								<value>5</value>
+								<value>6</value>
 							</property>
 							<property>
 								<name>lodShift</name>
@@ -588,6 +594,17 @@
 							<property>
 								<name>multiplier</name>
 								<value>40</value>
+							</property>
+							<property>
+								<name>Is Volumetric</name>
+								<value>0</value>
+							</property>
+							<property>
+								<name>Volumetric Intensity</name>
+								<value>
+									0.3
+									<!--BW_String-->
+								</value>
 							</property>
 							<property>
 								<name>castShadows</name>

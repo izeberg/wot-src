@@ -7285,7 +7285,7 @@
 			<userString>#france_vehicles:Canon_de_105_mm_modele_F1_M</userString>
 			<tags/>
 			<level>10</level>
-			<price>290000</price>
+			<price>200000</price>
 			<notInShop>true</notInShop>
 			<impulse>
 				0.46
@@ -7312,29 +7312,23 @@
 				</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
-			<rotationSpeed>
-				21.875
-				<!--BW_String-->
-			</rotationSpeed>
-			<reloadTime>
-				10.28571428571430
-				<!--BW_String-->
-			</reloadTime>
+			<rotationSpeed>20</rotationSpeed>
+			<reloadTime>35</reloadTime>
 			<maxAmmo>50</maxAmmo>
 			<aimingTime>
-				2.28571428571429
+				2.7
 				<!--BW_String-->
 			</aimingTime>
 			<weight>3000</weight>
-			<maxHealth>208</maxHealth>
-			<maxRegenHealth>104</maxRegenHealth>
-			<repairCost>8</repairCost>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>9</repairCost>
 			<invisibilityFactorAtShot>
-				0.1
+				0.198
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				0.342857142857143
+				0.35
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -7343,7 +7337,7 @@
 					<!--BW_String-->
 				</turretRotation>
 				<afterShot>
-					3.0
+					3.5
 					<!--BW_String-->
 				</afterShot>
 				<whileGunDamaged>
@@ -7959,9 +7953,9 @@
 			<maxAmmo>32</maxAmmo>
 			<aimingTime>3</aimingTime>
 			<weight>925</weight>
-			<maxHealth>190</maxHealth>
-			<maxRegenHealth>95</maxRegenHealth>
-			<repairCost>8</repairCost>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>9</repairCost>
 			<invisibilityFactorAtShot>
 				0.198
 				<!--BW_String-->

@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
 
 msgid "abilities/actions/toInfoPage"
 msgstr "MORE DETAILS"
@@ -177,11 +181,20 @@ msgstr "Purchase"
 msgid "dealPanel/fromStorage"
 msgstr "From the Depot:"
 
+msgid "dealPanel/fromVehicle"
+msgstr "Mounted:"
+
 msgid "dealPanel/repair"
 msgstr "Repairs required"
 
 msgid "dealPanel/toBePaid"
 msgstr "Total:"
+
+msgid "dealPanel/tooltip/fromStorage"
+msgstr "In Depot"
+
+msgid "dealPanel/tooltip/fromVehicle"
+msgstr "Mounted on vehicle"
 
 msgid "dealPanel/tooltip/notEnough"
 msgstr "Insufficient funds to make the purchase"
@@ -521,6 +534,9 @@ msgstr "Exchange"
 msgid "dialogs/goldExchange/default/status"
 msgstr "Exchange rate: %(gold)s = %(credits)s"
 
+msgid "dialogs/goldExchange/easyTankEquip/title"
+msgstr "%(credits)s more required for Quick Service"
+
 msgid "dialogs/goldExchange/item/battleBooster"
 msgstr "directive"
 
@@ -637,6 +653,95 @@ msgstr ""
 
 msgid "dialogs/sell/text"
 msgstr "Sale price for 1 item:"
+
+msgid "easyTankEquipView/alert/demountNotPossible"
+msgstr "Not enough resources for demounting."
+
+msgid "easyTankEquipView/alert/loadCapacityNotEnough"
+msgstr "This equipment requires suspension with higher load capacity."
+
+msgid "easyTankEquipView/alert/notFormed"
+msgstr "Recommendations unavailable for this vehicle"
+
+msgid "easyTankEquipView/alert/unableToMount"
+msgstr "Unable to mount."
+
+msgid "easyTankEquipView/consumables/presetNames/advanced"
+msgstr "Advanced"
+
+msgid "easyTankEquipView/consumables/presetNames/improved"
+msgstr "Improved"
+
+msgid "easyTankEquipView/consumables/presetNames/standard"
+msgstr "Standard"
+
+msgid "easyTankEquipView/consumables/title"
+msgstr "CONSUMABLES"
+
+msgid "easyTankEquipView/crew/bunksAlert"
+msgstr ""
+"Not enough bunks for transfer and crew changes. Add more bunks to the "
+"Barracks."
+
+msgid "easyTankEquipView/crew/multiplier"
+msgstr "x%(count)s"
+
+msgid "easyTankEquipView/crew/presetNames/experienced"
+msgstr "Experienced crew"
+
+msgid "easyTankEquipView/crew/presetNames/newCrew"
+msgstr "New crew"
+
+msgid "easyTankEquipView/crew/recruit"
+msgid_plural "plural/easyTankEquipView/crew/recruit"
+msgstr[0] ""
+"%(count)s\n"
+"New crew member will be recruited"
+msgstr[1] ""
+"%(count)s\n"
+"New crew members will be recruited"
+msgstr[2] ""
+"%(count)s\n"
+"New crew members will be recruited"
+
+msgid "easyTankEquipView/crew/title"
+msgstr "CREW"
+
+msgid "easyTankEquipView/discount"
+msgstr "-%(value)s%"
+
+msgid "easyTankEquipView/installed"
+msgstr "Ready"
+
+msgid "easyTankEquipView/optDevices/presetNames/advanced"
+msgstr "Advanced"
+
+msgid "easyTankEquipView/optDevices/presetNames/standard"
+msgstr "Standard"
+
+msgid "easyTankEquipView/optDevices/title"
+msgstr "EQUIPMENT"
+
+msgid "easyTankEquipView/shells/presetNames/advanced"
+msgstr "Advanced"
+
+msgid "easyTankEquipView/shells/presetNames/standard"
+msgstr "Standard"
+
+msgid "easyTankEquipView/shells/title"
+msgstr "AMMUNITION"
+
+msgid "easyTankEquipView/styles/builtInStyle"
+msgstr "You already have a style applied"
+
+msgid "easyTankEquipView/styles/rent"
+msgstr "%(battlesCount)s battles for %(price)s"
+
+msgid "easyTankEquipView/styles/title"
+msgstr "PRESET STYLES"
+
+msgid "easyTankEquipView/title"
+msgstr "QUICK SERVICE"
 
 msgid "effects/name"
 msgstr "Effect"
@@ -1878,46 +1983,72 @@ msgstr "km/h"
 msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "s"
 
+msgid "popularLoadouts/common"
+msgstr "Popular"
+
+msgid "popularLoadouts/legendary"
+msgstr "Legendary"
+
 msgid "popularLoadouts/noData"
-msgstr "Data unavailable"
+msgstr "No data available"
 
-msgid "popularLoadouts/place/first"
-msgstr "1st"
+msgid "popularLoadouts/noDataLegendary"
+msgstr "No data available"
 
-msgid "popularLoadouts/place/second"
-msgstr "2nd"
+msgid "popularLoadouts/tooltip/commonlyUsed"
+msgstr ""
+"%(whiteSpanish_Open)sPopular.%(whiteSpanish_Close)s Based on current "
+"equipment trends among all World of Tanks players"
 
-msgid "popularLoadouts/place/third"
-msgstr "3rd"
+msgid "popularLoadouts/tooltip/conditions"
+msgstr "Data Collection"
 
-msgid "popularLoadouts/title"
-msgstr "Commonly Used Loadouts"
+msgid "popularLoadouts/tooltip/dataForOnslaught"
+msgstr ""
+"If current Onslaught season data is not yet available, data from the "
+"previous season is used"
 
-msgid "popularLoadouts/tooltip/genericEquipment"
-msgstr "Standard, Bounty, and improved equipment is aggregated"
+msgid "popularLoadouts/tooltip/dataTaken"
+msgstr ""
+"Assistant is available for %(whiteSpanish_Open)sRandom "
+"Battles%(whiteSpanish_Close)s and "
+"%(whiteSpanish_Open)sOnslaught%(whiteSpanish_Close)s"
+
+msgid "popularLoadouts/tooltip/genericItems"
+msgstr "Data from all equipment types is aggregated"
+
+msgid "popularLoadouts/tooltip/header"
+msgstr "WoT Plus Benefit"
 
 msgid "popularLoadouts/tooltip/headerDescription"
 msgstr ""
-"This exclusive WoT Plus feature provides a report on the most commonly used "
-"loadouts for a vehicle, helping you understand current game trends and "
-"common practices among your fellow tankers."
+"Receive accurate equipment data based on millions of games and get the most "
+"out of every battle."
 
 msgid "popularLoadouts/tooltip/headerTitle"
-msgstr "Commonly Used Loadouts"
+msgstr "Equipment Assistant"
 
-msgid "popularLoadouts/tooltip/notEnoughData/alternative"
-msgstr "Data taken from:"
+msgid "popularLoadouts/tooltip/legendary"
+msgstr ""
+"%(whiteSpanish_Open)sLegendary.%(whiteSpanish_Close)s Based on equipment "
+"currently favored by players at the Legend WTR level"
+
+msgid "popularLoadouts/tooltip/loadoutTypes"
+msgstr "Types of loadouts"
+
+msgid "popularLoadouts/tooltip/notEnoughData/combinedDescription"
+msgstr ""
+"The proposed loadouts are based on loadouts that are popular for vehicles "
+"with a similar playstyle"
 
 msgid "popularLoadouts/tooltip/notEnoughData/headerDescription"
-msgstr ""
-"Loadout data is not available for the selected vehicle. Data for the below "
-"vehicle with a similar playstyle is displayed."
+msgstr "Data for the below vehicle with a similar playstyle is displayed:"
 
 msgid "popularLoadouts/tooltip/notEnoughData/headerTitle"
-msgstr "Data Unavailable"
+msgstr "Loadout data is not available"
 
-msgid "popularLoadouts/tooltip/randomBattleCalculation"
-msgstr "Data is based on Random Battles"
+msgid "popularLoadouts/vehicleNotAvailable"
+msgstr "The selected vehicle is unavailable for this game mode"
 
 msgid "section/battleAbilities"
 msgstr "COMBAT RESERVES"

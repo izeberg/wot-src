@@ -1,0 +1,2106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "alertMessage/afterSeason/first"
+msgstr "Season of the Azure Manticore has ended"
+
+msgid "alertMessage/afterSeason/second"
+msgstr "Season of the Crimson Manticore has ended"
+
+msgid "alertMessage/afterSeason/third"
+msgstr "Season of the Jade Manticore has ended"
+
+msgid "alertMessage/allNotAvailable"
+msgstr "Battles on servers will be available in %(primeDelta)s"
+
+msgid "alertMessage/allNotAvailableEnd/first"
+msgstr "Season of the Azure Manticore has ended"
+
+msgid "alertMessage/allNotAvailableEnd/second"
+msgstr "Season of the Crimson Manticore has ended"
+
+msgid "alertMessage/allNotAvailableEnd/third"
+msgstr "Season of the Jade Manticore has ended"
+
+msgid "alertMessage/allNotSet"
+msgstr "This mode is unavailable on all servers"
+
+msgid "alertMessage/betweenSeasons/first"
+msgstr "Season of the Azure Manticore has ended"
+
+msgid "alertMessage/betweenSeasons/second"
+msgstr "Season of the Crimson Manticore has ended"
+
+msgid "alertMessage/betweenSeasons/third"
+msgstr "Season of the Jade Manticore has ended"
+
+msgid "alertMessage/button/changeServer"
+msgstr "Select Another Server"
+
+msgid "alertMessage/button/moreInfo"
+msgstr "Details"
+
+msgid "alertMessage/modeOffline"
+msgstr "Database error. Game mode unavailable."
+
+msgid "alertMessage/notAvailable"
+msgstr "Battles are not available on the %(serverName)s server"
+
+msgid "alertMessage/notAvailableEnd"
+msgstr "Battles are not available on the %(serverName)s server"
+
+msgid "alertMessage/notSet"
+msgstr "This mode is not available on the %(serverName)s server"
+
+msgid "alertMessage/preannounce/first"
+msgstr "Season of the Azure Manticore starts: %(date)s"
+
+msgid "alertMessage/preannounce/second"
+msgstr "Season of the Crimson Manticore starts: %(date)s"
+
+msgid "alertMessage/preannounce/third"
+msgstr "Season of the Jade Manticore starts: %(date)s"
+
+msgid "alertMessage/standaloneNotAvailable"
+msgstr "Battles on this server will be available in %(primeDelta)s"
+
+msgid "alertMessage/standaloneNotAvailableEnd/first"
+msgstr "Season of the Azure Manticore has ended"
+
+msgid "alertMessage/standaloneNotAvailableEnd/second"
+msgstr "Season of the Crimson Manticore has ended"
+
+msgid "alertMessage/standaloneNotAvailableEnd/third"
+msgstr "Season of the Jade Manticore has ended"
+
+msgid "alertMessage/standaloneNotSet"
+msgstr "This mode is not available on the %(serverName)s server"
+
+msgid "alertMessage/temporaryBan"
+msgstr ""
+"You cannot play in this mode. You will be unblocked in: %(expiryTime)s"
+
+msgid "alertMessage/timeLeft/days"
+msgstr "%(day)s d"
+
+msgid "alertMessage/timeLeft/hours"
+msgstr "%(hour)s h %(min)s min"
+
+msgid "alertMessage/timeLeft/lessMin"
+msgstr "1 min"
+
+msgid "alertMessage/timeLeft/min"
+msgstr "%(min)s min"
+
+msgid "alertMessage/undefined"
+msgstr "?empty?"
+
+msgid "alertMessage/unsuitableVehicles"
+msgstr "No suitable Tier %(levels)s vehicles in the Garage"
+
+msgid "awardsWidget/description/award"
+msgstr "Click to select and claim your rewards."
+
+msgid "awardsWidget/description/awardDisabled"
+msgstr ""
+"FinalRewards are temporarily unavailable. We apologize for the "
+"inconvenience."
+
+msgid "awardsWidget/title"
+msgid_plural "plural/awardsWidget/title"
+msgstr[0] ""
+"CLAIM\n"
+"REWARD"
+msgstr[1] ""
+"CLAIM\n"
+"REWARDS"
+msgstr[2] ""
+"CLAIM\n"
+"REWARDS"
+
+msgid "banner/info/seasonEnd/first"
+msgstr "The Season of the Azure Manticore has ended"
+
+msgid "banner/info/seasonEnd/second"
+msgstr "The Season of the Crimson Manticore has ended"
+
+msgid "banner/info/seasonEnd/third"
+msgstr "The Season of the Jade Manticore has ended"
+
+msgid "banner/infoSmall/disabled"
+msgstr "Ceasefire"
+
+msgid "banner/season/first"
+msgstr "Azure Manticore"
+
+msgid "banner/season/second"
+msgstr "Crimson Manticore"
+
+msgid "banner/season/third"
+msgstr "Jade Manticore"
+
+msgid "banner/seasonDate/seasonLasts"
+msgstr "Until %(month)s %(day)s"
+
+msgid "banner/seasonDate/seasonNotStarted"
+msgstr "Starts %(month)s %(day)s at %(hour)s:%(min)s"
+
+msgid "banner/seasonDateSmall/seasonNotStarted"
+msgstr "%(month)s %(day)s at %(hour)s:%(min)s"
+
+msgid "banner/title"
+msgstr "ONSLAUGHT"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"A competitive mode featuring 7v7 battles in Tier X vehicles. Rise through "
+"the ranks to earn unique customization elements, vehicles, bonds, and other "
+"valuable rewards."
+
+msgid "bannerTooltip/end"
+msgstr "Season ended"
+
+msgid "bannerTooltip/notAvailable"
+msgstr "Ceasefire"
+
+msgid "bannerTooltip/notStarted"
+msgstr "Starts %(month)s %(day)s at %(hour)s:%(min)s"
+
+msgid "bannerTooltip/range"
+msgstr "%(startDate)s–%(endDate)s"
+
+msgid "bannerTooltip/title"
+msgstr "ONSLAUGHT"
+
+msgid "battleCarousel/filterButtonTooltip/body"
+msgstr "Configure the vehicle display by type, role, and nation."
+
+msgid "battleCarousel/filterButtonTooltip/header"
+msgstr "Filter by Parameters"
+
+msgid "battleCarousel/filterPopover/desc"
+msgstr "Only vehicles that can be used in the mode are displayed here."
+
+msgid "battleCarousel/noFilteredVehiclesMessage"
+msgstr "No vehicles matching the selected parameters"
+
+msgid "battleMessages/enableVOIP"
+msgstr ""
+"Team assembled. Select your vehicle and let's battle!\n"
+"Join the voice chat (%(keyName)s)"
+
+msgid "battleMessages/specifyVOIP"
+msgstr ""
+"Team assembled. Select your vehicle and let's battle!\n"
+"Assign a hotkey to quickly join the voice chat."
+
+msgid "battleMessages/withoutVOIP"
+msgstr ""
+"Team assembled. Select your vehicle and let's battle!\n"
+"To join the voice chat, enable the function in your game settings."
+
+msgid "battlePage/rulesButtonLabel"
+msgstr "Mode Details (F1)"
+
+msgid "battlePage/statusNotificationTimers/aggressiveDetection"
+msgstr "Vehicle view range increased"
+
+msgid "battlePage/statusNotificationTimers/allySupport"
+msgstr "Crew characteristics improved"
+
+msgid "battlePage/statusNotificationTimers/aoeHeal/healed"
+msgstr "Restoring hit points"
+
+msgid "battlePage/statusNotificationTimers/aoeHeal/healing"
+msgstr "Restoring hit points"
+
+msgid "battlePage/statusNotificationTimers/aoeInspire/inspired"
+msgstr "Crew characteristics improved"
+
+msgid "battlePage/statusNotificationTimers/aoeInspire/inspiring"
+msgstr "Crew characteristics improved"
+
+msgid "battlePage/statusNotificationTimers/berserk"
+msgstr "Gun reload speed increased"
+
+msgid "battlePage/statusNotificationTimers/concentration"
+msgstr "Vehicle characteristics improved"
+
+msgid "battlePage/statusNotificationTimers/hunter"
+msgstr "Restoring hit points"
+
+msgid "battlePage/statusNotificationTimers/juggernaut"
+msgstr "Vehicle characteristics improved"
+
+msgid "battlePage/statusNotificationTimers/march"
+msgstr "Vehicle characteristics improved"
+
+msgid "battlePage/statusNotificationTimers/riskyAttack/buff"
+msgstr "Mobility improved"
+
+msgid "battlePage/statusNotificationTimers/riskyAttack/heal"
+msgstr "Restoring hit points"
+
+msgid "battlePage/statusNotificationTimers/sniper"
+msgstr "Gun dispersion decreased"
+
+msgid "battlePage/statusNotificationTimers/sureShot"
+msgstr "Vehicle characteristics improved"
+
+msgid "battleResult/header/deserter"
+msgstr "You have received a disciplinary penalty: Penalty to Rating Points"
+
+msgid "battleResult/header/deserterQualification"
+msgstr ""
+"You have received a disciplinary penalty: After completing Qualification, "
+"your rating will be reduced"
+
+msgid "battleResult/label/deserter"
+msgstr "Desertion"
+
+msgid "battleResult/message/deserter"
+msgstr ""
+"You have received a disciplinary penalty.\n"
+"Rating Points lost: %(penalty)s"
+
+msgid "battleResult/message/deserterQualification"
+msgstr ""
+"You have deserted the battlefield and received a disciplinary penalty.\n"
+"After completing Qualification, your rating will be reduced."
+
+msgid "battleResult/message/header/deserter"
+msgstr "Disciplinary Penalty"
+
+msgid "battleResult/personal/label"
+msgstr "Rating Points"
+
+msgid "battleResult/personal/tooltip/descr"
+msgstr ""
+"Reflects a player's current progress in the Ranked System. Rating Points can"
+" be earned or lost depending on your success in the mode."
+
+msgid "battleResult/personal/tooltip/loseDescr"
+msgstr ""
+"• Defeats/draws in mode battles\n"
+"• Receiving a disciplinary penalty\n"
+"• Rank inactivity."
+
+msgid "battleResult/personal/tooltip/loseTitle"
+msgstr "Rating Points are removed for:"
+
+msgid "battleResult/personal/tooltip/title"
+msgstr "Rating Points"
+
+msgid "battleResult/qualification/descr/main"
+msgstr "Qualification battle"
+
+msgid "battleResult/qualification/descr/stats"
+msgstr "%(battleNumber)s — %(battleResult)s"
+
+msgid "battleResult/qualification/title"
+msgstr "Qualification"
+
+msgid "battleResult/subTask/descr/getEliteRating"
+msgstr ""
+"Rating Points received. To defend your Legend rank, stay in the top "
+"%(topPercentage)d%% of players on the Leaderboard."
+
+msgid "battleResult/subTask/descr/getMasterRating"
+msgstr ""
+"Rating Points received. To achieve the Legend rank, be among the top "
+"%(topPercentage)d%% of players on the Leaderboard."
+
+msgid "battleResult/subTask/descr/getRating"
+msgstr "Rating Points received"
+
+msgid "battleResult/subTask/descr/loseEliteRating"
+msgstr ""
+"Rating Points lost. To defend your Legend rank, stay in the top "
+"%(topPercentage)d%% of players on the Leaderboard."
+
+msgid "battleResult/subTask/descr/loseMasterRating"
+msgstr ""
+"Rating Points lost. To achieve the Legend rank, be among the top "
+"%(topPercentage)d%% of players on the Leaderboard."
+
+msgid "battleResult/subTask/descr/loseRating"
+msgstr "Rating Points lost"
+
+msgid "battleResult/subTask/rating"
+msgstr "Rating Points: %(rating)d"
+
+msgid "battleResult/subTask/title/decrease"
+msgstr "You have been demoted to %(division)s. %(rank)s"
+
+msgid "battleResult/subTask/title/noRaise"
+msgstr "%(rank)s. %(division)s"
+
+msgid "battleResult/subTask/title/raise"
+msgstr "You have been promoted to %(division)s. %(rank)s!"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s–%(end)s"
+
+msgid "calendarDay/timeLeft/first"
+msgid_plural "plural/calendarDay/timeLeft/first"
+msgstr[0] "Season of the Azure Manticore will last for %(days)d day"
+msgstr[1] "Season of the Azure Manticore will last for %(days)d days"
+msgstr[2] "Season of the Azure Manticore will last for %(days)d days"
+
+msgid "calendarDay/timeLeft/second"
+msgid_plural "plural/calendarDay/timeLeft/second"
+msgstr[0] "Season of the Crimson Manticore will last for %(days)d day"
+msgstr[1] "Season of the Crimson Manticore will last for %(days)d days"
+msgstr[2] "Season of the Crimson Manticore will last for %(days)d days"
+
+msgid "calendarDay/timeLeft/third"
+msgid_plural "plural/calendarDay/timeLeft/third"
+msgstr[0] "Season of the Jade Manticore will last for %(days)d day"
+msgstr[1] "Season of the Jade Manticore will last for %(days)d days"
+msgstr[2] "Season of the Jade Manticore will last for %(days)d days"
+
+msgid "calendarDay/title"
+msgstr "Schedule"
+
+msgid "claimRewards/button"
+msgstr "Claim Reward"
+
+msgid "claimRewards/rewardsUnavailable"
+msgstr ""
+"This operation is temporarily unavailable for technical reasons. We are "
+"working on fixing the issue."
+
+msgid "closeButtonLabel"
+msgstr "CLOSE"
+
+msgid "controls/compare"
+msgstr "Add to Comparison"
+
+msgid "controls/preview"
+msgstr "Preview"
+
+msgid "countDown/text"
+msgstr ""
+"Event starts in:\n"
+"%(timeLeft)s"
+
+msgid "countdown/lastMinute"
+msgstr "<1 min"
+
+msgid "crewMembersTooltip/description"
+msgstr ""
+"This special crew comprises tankers from around the world, united under the "
+"leadership of their Commander. All of them have Brothers in Arms as a zero "
+"perk and enough Crew XP to train two more perks, allowing them to improve "
+"the vehicle's performance—as well as bring their own personal flair to the "
+"battlefield."
+
+msgid "crewMembersTooltip/perks"
+msgstr "Perks"
+
+msgid "crewMembersTooltip/subHeading"
+msgstr "Onslaught. Year of the Manticore"
+
+msgid "crewMembersTooltip/zeroPerks"
+msgstr "Zero perks"
+
+msgid "dash"
+msgstr "—"
+
+msgid "dataError/description"
+msgstr ""
+"We apologize for the temporary inconvenience. Please try to update the page "
+"later."
+
+msgid "dataError/title"
+msgstr "Error Loading Data"
+
+msgid "division/A"
+msgstr "A"
+
+msgid "division/B"
+msgstr "B"
+
+msgid "division/C"
+msgstr "C"
+
+msgid "division/D"
+msgstr "D"
+
+msgid "division/E"
+msgstr "E"
+
+msgid "division/note"
+msgstr "Division"
+
+msgid "division/text"
+msgstr "Division %(division)s"
+
+msgid "divisionTooltip/description"
+msgstr ""
+"This Division is for the players with "
+"{whiteSpanish_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){whiteSpanish_Close}&nbsp;Rating"
+" Points."
+
+msgid "divisionTooltip/heading"
+msgstr "Division %(divisionName)s"
+
+msgid "featureName"
+msgstr "ONSLAUGHT"
+
+msgid "featureNameCapitalized"
+msgstr "ONSLAUGHT"
+
+msgid "fifthRankTooltip/description"
+msgstr ""
+"The {whiteSpanish_Open}Champion{whiteSpanish_Close} rank is awarded to "
+"players who have earned at least "
+"{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} Rating Points."
+
+msgid "forVehicle"
+msgstr "For: %(vehicleName)s"
+
+msgid "generalRankTooltip/body/first"
+msgstr ""
+"The {whiteSpanish_Open}Iron{whiteSpanish_Close} rank is awarded to players "
+"who have earned {whiteSpanish_Open}%(fromScore) to "
+"%(toScore){whiteSpanish_Close} Rating Points."
+
+msgid "generalRankTooltip/body/fourth"
+msgstr ""
+"The {whiteSpanish_Open}Gold{whiteSpanish_Close} rank is awarded to players "
+"who have earned {whiteSpanish_Open}%(fromScore) to "
+"%(toScore){whiteSpanish_Close} Rating Points."
+
+msgid "generalRankTooltip/body/second"
+msgstr ""
+"The {whiteSpanish_Open}Bronze{whiteSpanish_Close} rank is awarded to players"
+" who have earned {whiteSpanish_Open}%(fromScore) to "
+"%(toScore){whiteSpanish_Close} Rating Points."
+
+msgid "generalRankTooltip/body/third"
+msgstr ""
+"The {whiteSpanish_Open}Silver{whiteSpanish_Close} rank is awarded to players"
+" who have earned {whiteSpanish_Open}%(fromScore) to "
+"%(toScore){whiteSpanish_Close} Rating Points."
+
+msgid "generalRankTooltip/subheading"
+msgstr "Includes Divisions: %(divisions)s"
+
+msgid "grandTournamentWidget/countdown"
+msgstr "%(timer)Tournament starts in %(countdown)s"
+
+msgid "grandTournamentWidget/countdownShort"
+msgstr "%(timer)Starts in %(countdown)s"
+
+msgid "grandTournamentWidget/counter/days"
+msgstr "%(days)s d %(hours)s h"
+
+msgid "grandTournamentWidget/counter/hours"
+msgstr "%(hours)s h %(minutes)s m"
+
+msgid "grandTournamentWidget/counter/lastMinute"
+msgstr "<1 min"
+
+msgid "grandTournamentWidget/counter/minutes"
+msgstr "%(minutes)s m"
+
+msgid "grandTournamentWidget/dayIsOver"
+msgstr "%(timer)More matches in %(countdown)s"
+
+msgid "grandTournamentWidget/finished"
+msgstr "Champion is decided!"
+
+msgid "grandTournamentWidget/live"
+msgstr "Watch LIVE now!"
+
+msgid "infoPageButtonLabel"
+msgstr "ABOUT THE EVENT"
+
+msgid "intro/confirmButton"
+msgstr "Affirmative!"
+
+msgid "intro/description/onslaughtModifiers"
+msgstr ""
+"The mode has modifiers that change certain parameters of the vehicle, such "
+"as vehicle durability, consumable cooldown time, time remaining visible, and"
+" more."
+
+msgid "intro/description/pointsOfInterest"
+msgstr ""
+"Once you capture certain areas of the map, you will be able to use Tactical "
+"Skills. There are two types of Points of Interest: the Artillery "
+"Headquarters will allow you to direct an artillery strike on a certain "
+"position, and the Comms Center will spot all enemy vehicles. Depending on "
+"the map, the presence and location of these Points of Interest can change."
+
+msgid "intro/description/qualification"
+msgid_plural "plural/intro/description/qualification"
+msgstr[0] ""
+"Fight %(count)s Qualification battle to determine your skill level and rank. Upon completion, you will receive rewards for the rank you achieved and all previous ranks.\n"
+"\n"
+"Desertion or a draw in Qualification will be considered as a defeat."
+msgstr[1] ""
+"Fight %(count)s Qualification battles to determine your skill level and rank. Upon completion, you will receive rewards for the rank you achieved and all previous ranks.\n"
+"\n"
+"Desertion or a draw in Qualification will be considered as a defeat."
+msgstr[2] ""
+"Fight %(count)s Qualification battles to determine your skill level and rank. Upon completion, you will receive rewards for the rank you achieved and all previous ranks.\n"
+"\n"
+"Desertion or a draw in Qualification will be considered as a defeat."
+
+msgid "intro/description/ranks"
+msgstr ""
+"A system that reflects the player's skill. Progress through the ranks from "
+"Iron to Legend and earn valuable prizes. Fight throughout the Year of the "
+"Manticore to receive unique Annual Rewards."
+
+msgid "intro/description/roleSkills"
+msgstr ""
+"Depending on the role, each vehicle has a special skill with three charge levels. The higher the charge level when the skill is activated, the stronger the effect will be. The charge level will depend on the number of Prestige Points that can be earned for impressive performance in battle, capturing Points of Interest, using Tactical Skills, etc.\n"
+"\n"
+"Check out the event regulations to learn more about the different ways you can earn Prestige Points."
+
+msgid "intro/description/vehiclesOnMap"
+msgstr ""
+"You can enter battle in Tier X researchable vehicles (excluding SPGs), as "
+"well as Collectors' and some special vehicles. Prepare your vehicles in the "
+"Garage, then choose the best one based on the features of the given map once"
+" you get into battle. When selecting your vehicle, also consider which "
+"vehicles your allies have chosen."
+
+msgid "intro/title/onslaughtModifiers"
+msgstr "ONSLAUGHT MODIFIERS"
+
+msgid "intro/title/pointsOfInterest"
+msgstr "POINTS OF INTEREST"
+
+msgid "intro/title/qualification"
+msgstr "QUALIFICATION"
+
+msgid "intro/title/ranks"
+msgstr "RANKED SYSTEM"
+
+msgid "intro/title/roleSkills"
+msgstr "ROLE SKILLS"
+
+msgid "intro/title/vehiclesOnMap"
+msgstr "CHOOSE A VEHICLE FOR A SPECIFIC MAP"
+
+msgid "lastUpdateNote/info"
+msgstr "Updated: %(date)s"
+
+msgid "lastUpdateNote/lastBestUserPoints/description"
+msgstr ""
+"The Rating Points of the bottom player in the Legend rank\n"
+"are updated every %(count)s min."
+
+msgid "lastUpdateNote/lastBestUserPoints/update"
+msgstr "Updating data..."
+
+msgid "lastUpdateNote/ratingPositions/description"
+msgstr ""
+"The Leaderboard\n"
+"is updated every %(count)s minutes."
+
+msgid "lastUpdateNote/tooltip/info"
+msgstr "Last updated: %(date)s"
+
+msgid "leaderboard/currentPosition/body"
+msgstr "My position"
+
+msgid "leaderboard/currentPosition/none"
+msgstr "Achieve the Champion or Legend rank to enter the Leaderboard."
+
+msgid "leaderboard/error/buttonText"
+msgstr "Update"
+
+msgid "leaderboard/error/description"
+msgstr ""
+"We apologize for the temporary inconvenience. Please try to update the page "
+"later."
+
+msgid "leaderboard/error/title"
+msgstr "Error Loading Data"
+
+msgid "leaderboard/noRecords/subtitle"
+msgstr ""
+"Players in the Champion and Legend ranks will be featured on the "
+"Leaderboard. Earn {whiteSpanish_Open}%(pointsCount)s{whiteSpanish_Close} "
+"Rating Points and reach the top of the board!"
+
+msgid "leaderboard/noRecords/title"
+msgstr "There are no players on the Leaderboard for the current Season"
+
+msgid "leaderboard/table/header/battlesCount"
+msgstr "Battles"
+
+msgid "leaderboard/table/header/order"
+msgstr "#"
+
+msgid "leaderboard/table/header/player"
+msgstr "Player's Name"
+
+msgid "leaderboard/table/header/score"
+msgstr "Rating Points"
+
+msgid "leaderboard/table/tooltip/battlesCount/body"
+msgstr ""
+"The number of battles fought by the player in Onslaught mode during the "
+"current Season."
+
+msgid "leaderboard/table/tooltip/battlesCount/header"
+msgstr "Battles"
+
+msgid "leaderboard/table/tooltip/order/body"
+msgstr "The player's position in the ratings."
+
+msgid "leaderboard/table/tooltip/order/header"
+msgstr "Position"
+
+msgid "leaderboard/table/tooltip/player/body"
+msgstr "The name of the player holding a position in the ratings."
+
+msgid "leaderboard/table/tooltip/player/header"
+msgstr "Player's Name"
+
+msgid "leaderboard/table/tooltip/score/body"
+msgstr "The number of Rating Points earned in the current Season."
+
+msgid "leaderboard/table/tooltip/score/header"
+msgstr "Rating Points"
+
+msgid "listSeparator"
+msgstr ", "
+
+msgid "mainWidget/ratingCalculation"
+msgstr ""
+"Waiting for Qualification results\n"
+"to receive your rank %(timer)s"
+
+msgid "mainWidget/status"
+msgstr "%(score)s/%(scoreToNextDivision)s"
+
+msgid "mainWidget/tooltip/inactive/body"
+msgstr "If you do not play in the mode, you will lose Rating Points."
+
+msgid "mainWidget/tooltip/inactive/header"
+msgstr "Rank Inactivity"
+
+msgid "mainWidget/tooltip/inactive/note"
+msgstr "Days before ratings drop: %(days)s"
+
+msgid "mainWidget/warning"
+msgstr "If you do not fight in battles, your rating will drop."
+
+msgid "mainWidgetTooltip/battlesCounter"
+msgstr ""
+"%(battleIcon)s{cream_Open}%(battlesCount)s{cream_Close} / "
+"%(maxBattlesCount)s"
+
+msgid "mainWidgetTooltip/division"
+msgstr "Division: %(divisionName)s"
+
+msgid "mainWidgetTooltip/divisionDescription"
+msgstr ""
+"This Division is for the players with {whiteSpanish_Open}%(fromScore) to "
+"%(toScore){whiteSpanish_Close} Rating Points."
+
+msgid "mainWidgetTooltip/info/fifth"
+msgstr ""
+"To reach the Legend rank, be among the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard."
+
+msgid "mainWidgetTooltip/info/sixth"
+msgstr ""
+"The Legend rank is awarded to the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard."
+
+msgid "mainWidgetTooltip/qualification/condition"
+msgid_plural "plural/mainWidgetTooltip/qualification/condition"
+msgstr[0] ""
+"Fight %(maxBattlesCount)s battle in the mode to determine your skill level "
+"and rank."
+msgstr[1] ""
+"Fight %(maxBattlesCount)s battles in the mode to determine your skill level "
+"and rank."
+msgstr[2] ""
+"Fight %(maxBattlesCount)s battles in the mode to determine your skill level "
+"and rank."
+
+msgid "mainWidgetTooltip/qualificationName"
+msgstr "Qualification"
+
+msgid "mainWidgetTooltip/ratingScore"
+msgstr "Rating Points"
+
+msgid "membersWindow/memberCountDropdown/description"
+msgstr "Players in the Platoon"
+
+msgid "noVehicles/howTo/premium"
+msgstr "Use WoT Premium Account"
+
+msgid "noVehicles/howTo/reserves"
+msgstr "Activate Personal Reserves"
+
+msgid "noVehicles/howTo/tasks"
+msgstr "Complete Missions"
+
+msgid "noVehicles/howTo/title"
+msgstr "What is the fastest way to get Tier %(levels)s vehicles?"
+
+msgid "noVehicles/text/vehicleAvailableForBuy"
+msgstr ""
+"To participate in Onslaught, you need to have at least one Tier %(levels)s vehicle in the Garage that is suitable for the mode.\n"
+"You have a researched Tier %(levels)s vehicle that has not been obtained."
+
+msgid "noVehicles/text/vehicleAvailableForRestore"
+msgstr ""
+"To participate in Onslaught, you need to have at least one Tier %(levels)s vehicle in the Garage that is suitable for the mode.\n"
+"You have a Tier %(levels)s vehicle available for recovery."
+
+msgid "noVehicles/text/vehicleUnavailable"
+msgstr ""
+"To participate in Onslaught, you need to have at least one Tier %(levels)s "
+"vehicle in the Garage that is suitable for the mode."
+
+msgid "page/heading/leaderboard"
+msgstr "LEADERBOARD"
+
+msgid "page/heading/progression"
+msgstr "RANKED SYSTEM"
+
+msgid "page/heading/qualification"
+msgstr "QUALIFICATION"
+
+msgid "page/heading/rankRewards"
+msgstr "REWARDS FOR RANKS"
+
+msgid "page/heading/shop"
+msgstr "ONSLAUGHT SHOP"
+
+msgid "page/heading/weeklyQuests"
+msgstr "WEEKLY MISSIONS"
+
+msgid "page/heading/yearlyRewards"
+msgstr "ANNUAL REWARDS"
+
+msgid "page/heading/yearlyStatistics"
+msgstr "ANNUAL STATISTICS"
+
+msgid "pagination/dots"
+msgstr "…"
+
+msgid "pagination/next"
+msgstr "Forward"
+
+msgid "pagination/prev"
+msgstr "Back"
+
+msgid "percentage"
+msgstr "%(percentageValue)s%"
+
+msgid "prebattleTimer/info/readyBtn/label"
+msgstr "Confirm Selection"
+
+msgid "prebattleTimer/info/readyBtn/tooltip/body"
+msgstr "After confirming, you will not be able to select another vehicle."
+
+msgid "prebattleTimer/wait/additionalInfo"
+msgstr "Select the best vehicle for the current map and your team."
+
+msgid "prebattleTimer/wait/header"
+msgstr "Awaiting players..."
+
+msgid "prebattleTimer/wait/selectVehicle"
+msgstr "Select a vehicle"
+
+msgid "primeTimeView/endOfCycle"
+msgstr "The Stage on the %(server)s server has finished"
+
+msgid "primeTimeView/server"
+msgstr "Available server: %(server)s."
+
+msgid "primeTimeView/serverTooltip"
+msgstr ""
+"%(server)s server\n"
+"Battles will be available for another %(time)s"
+
+msgid "primeTimeView/serverUnavailableTooltip"
+msgstr ""
+"%(server)s server\n"
+"Battles will be available in %(time)s"
+
+msgid "primeTimeView/servers"
+msgstr "Available servers:"
+
+msgid "primeTimeView/status/allServersDisabled"
+msgstr "Battles are unavailable on all servers"
+
+msgid "primeTimeView/status/disableFirst"
+msgstr "This mode is unavailable on the %(server)s server"
+
+msgid "primeTimeView/status/primeIsAvailable"
+msgstr ""
+"Battles on the %(server)s server will be available for another %(time)s"
+
+msgid "primeTimeView/status/primeWillBeAvailable"
+msgstr "Battles will start on the %(server)s server in %(time)s"
+
+msgid "primeTimeView/status/seasonDisabled/first"
+msgstr "Season of the Azure Manticore has ended on the %(server)s server."
+
+msgid "primeTimeView/status/seasonDisabled/second"
+msgstr "Season of the Crimson Manticore has ended on the %(server)s server."
+
+msgid "primeTimeView/status/seasonDisabled/third"
+msgstr "Season of the Jade Manticore has ended on the %(server)s server."
+
+msgid "primeTimeView/status/untill"
+msgstr ""
+"Battles will not be available until %(startTime)s on the %(server)s server"
+
+msgid "primeTimeView/title"
+msgstr "ONSLAUGHT"
+
+msgid "products/actions/buy"
+msgstr "Purchase"
+
+msgid "products/actions/restore"
+msgstr "To Depot"
+
+msgid "products/actions/toCustomization"
+msgstr "To Style"
+
+msgid "products/actions/toHangar"
+msgstr "View in Garage"
+
+msgid "products/customizationUnavailable/body"
+msgstr ""
+"Unable to go to style. This may be because: you do not yet own this vehicle,"
+" vehicle is in formation, vehicle is in battle, or repairs are required."
+
+msgid "products/customizationUnavailable/title"
+msgstr "Unavailable"
+
+msgid "products/discount"
+msgstr "-%(discountPercentage)s%"
+
+msgid "products/discountDescription"
+msgstr ""
+"Until the start of the next Season, you will have access to items and a "
+"discount depending on your {fff_Open}highest{fff_Close} "
+"{fff_Open}achieved{fff_Close} {fff_Open}rank{fff_Close}."
+
+msgid "products/discountSectionName"
+msgstr "ACCESS CONDITIONS AND DISCOUNTS"
+
+msgid "products/inProgress"
+msgstr "Please wait, your purchase is being processed..."
+
+msgid "products/limitedQuantitySeason"
+msgstr "Available for purchase per Season: %(count)s"
+
+msgid "products/message/notEnough"
+msgstr "Insufficient funds for purchase."
+
+msgid "products/message/rankAccess"
+msgstr ""
+"Purchase requirement\n"
+"%(rank)s"
+
+msgid "products/newLabel"
+msgstr "NEW"
+
+msgid "products/priceSectionName"
+msgstr "PRICE"
+
+msgid "products/productAccess"
+msgstr ""
+"Access\n"
+"Rank"
+
+msgid "products/purchased"
+msgstr "Purchased"
+
+msgid "products/rankAccess"
+msgstr "Access Rank %(rank)s"
+
+msgid "products/readyToRestore"
+msgstr "Recovery available"
+
+msgid "products/readyToRestoreDescription"
+msgstr "Available for recovery in the Depot"
+
+msgid "products/style3d"
+msgstr "%(name)s 3D Style"
+
+msgid "purchase/affirmative"
+msgstr "Affirmative!"
+
+msgid "purchase/cancelButton"
+msgstr "Back"
+
+msgid "purchase/confirmButton"
+msgstr "Purchase"
+
+msgid "purchase/error/description"
+msgstr "Unable to complete the purchase. Please try again later."
+
+msgid "purchase/error/title"
+msgstr "Error"
+
+msgid "purchase/noSuitableVehicle"
+msgstr ""
+"%(alertIcon)sYou do not have a suitable vehicle for this style in the Garage"
+
+msgid "purchase/price"
+msgstr "Purchase price:"
+
+msgid "purchase/success/heading"
+msgstr "Thank you for your purchase!"
+
+msgid "purchase/success/receiving"
+msgstr ""
+"%(icon)sThe purchase will be credited to your game account in the near "
+"future"
+
+msgid "purchase/success/style3d"
+msgstr "%(name)s 3D style for %(vehicleName)s"
+
+msgid "purchase/title/style3d"
+msgstr "Purchase %(name)s 3D style?"
+
+msgid "purchase/title/vehicle"
+msgstr "Purchase %(name)s?"
+
+msgid "qualification/battlesCounter"
+msgstr ""
+"%(battleIcon)s{cream_Open}%(battlesCount)s{cream_Close} / "
+"%(maxBattlesCount)s"
+
+msgid "qualification/condition"
+msgid_plural "plural/qualification/condition"
+msgstr[0] ""
+"Fight {white_Open}%(maxBattlesCount)s battle{white_Close} in the mode to "
+"determine your skill level and rank."
+msgstr[1] ""
+"Fight {white_Open}%(maxBattlesCount)s battles{white_Close} in the mode to "
+"determine your skill level and rank."
+msgstr[2] ""
+"Fight {white_Open}%(maxBattlesCount)s battles{white_Close} in the mode to "
+"determine your skill level and rank."
+
+msgid "qualification/conditionTooltip/body"
+msgid_plural "plural/qualification/conditionTooltip/body"
+msgstr[0] ""
+"To complete Qualification, fight %(maxBattlesCount)s battle and wait for the rating to be calculated. Your battle performance during Qualification affects the final rank you will receive.\n"
+"Desertion in Qualification will lead to a worse result than even the heaviest defeat."
+msgstr[1] ""
+"To complete Qualification, fight %(maxBattlesCount)s battles and wait for the rating to be calculated. Your battle performance during Qualification affects the final rank you will receive.\n"
+"Desertion in Qualification will lead to a worse result than even the heaviest defeat."
+msgstr[2] ""
+"To complete Qualification, fight %(maxBattlesCount)s battles and wait for the rating to be calculated. Your battle performance during Qualification affects the final rank you will receive.\n"
+"Desertion in Qualification will lead to a worse result than even the heaviest defeat."
+
+msgid "qualification/conditionTooltip/header"
+msgstr "Qualification Rules"
+
+msgid "qualification/counter"
+msgstr "%(battlesCount)s / %(maxBattlesCount)s"
+
+msgid "qualification/counterWithDescription"
+msgstr ""
+"%(counter)s\n"
+"Battles fought"
+
+msgid "qualification/ratingCalculationDescription"
+msgstr "Waiting for Qualification results to receive your rank %(timerIcon)s"
+
+msgid "qualification/ratingCalculationTooltip"
+msgstr ""
+"It may take up to five minutes to calculate your rating based on the "
+"Qualification results. After that, you will receive a rank and can continue "
+"to play in Onslaught."
+
+msgid "qualification/rewardsButton"
+msgstr "To Rewards"
+
+msgid "qualification/rewardsDescription"
+msgstr ""
+"Upon completing Qualification, you will receive rewards for the rank you "
+"achieved and all previous ranks."
+
+msgid "quotesWrapper"
+msgstr "%(name)s"
+
+msgid "rank/achieved"
+msgstr "Achieved"
+
+msgid "rank/current"
+msgstr "Current"
+
+msgid "rank/fifth"
+msgstr "Champion"
+
+msgid "rank/first"
+msgstr "Iron"
+
+msgid "rank/fourth"
+msgstr "Gold"
+
+msgid "rank/qualification"
+msgstr "Qualification"
+
+msgid "rank/second"
+msgstr "Bronze"
+
+msgid "rank/sixth"
+msgstr "Legend"
+
+msgid "rank/text"
+msgstr "%(rank)s Rank"
+
+msgid "rank/third"
+msgstr "Silver"
+
+msgid "rankCompatibilityTable/playersRank"
+msgstr "Player rank"
+
+msgid "rankCompatibilityTable/teammatesRank"
+msgstr "Platoon mate(s) rank"
+
+msgid "rankCompatibilityTooltip/description"
+msgstr "Platoons can only consist of players of similar ranks."
+
+msgid "rankCompatibilityTooltip/heading"
+msgstr "Rank restrictions for %(count)s-player Platoons"
+
+msgid "rankInactivityTooltip/description"
+msgstr "If you do not play in the mode, you will lose Rating Points."
+
+msgid "rankInactivityTooltip/heading"
+msgstr "Rank Inactivity"
+
+msgid "rankInactivityTooltip/timeLeft"
+msgstr "Days before your rating drops: %(count)s"
+
+msgid "rankInfo/current/fifth"
+msgstr ""
+"The Champion rank is awarded to players who earned at least "
+"{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} Rating Points."
+
+msgid "rankInfo/current/sixth"
+msgstr ""
+"The Legend rank is awarded to the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard."
+
+msgid "rankItemStatus/current/description/fifth"
+msgstr ""
+"To reach the Legend rank, be among the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard by "
+"Rating Points."
+
+msgid "rankItemStatus/current/description/sixth"
+msgstr ""
+"To defend your Legend rank, stay in the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard by "
+"Rating Points."
+
+msgid "rankItemStatus/current/extendedDescription/fifth"
+msgstr ""
+"To reach the Legend rank, be among the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard by "
+"Rating Points. Rating Points earned by the bottom player in "
+"the&nbsp;Legend&nbsp;rank: "
+"{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+
+msgid "rankItemStatus/current/extendedDescription/sixth"
+msgstr ""
+"To defend your Legend rank, stay in the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard by "
+"Rating Points. Rating Points earned by the bottom player in "
+"the&nbsp;Legend&nbsp;rank: "
+"{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+
+msgid "rankItemStatus/future/description/fifth"
+msgstr ""
+"The Champion rank is awarded to players who have earned at "
+"least&nbsp;{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} Rating "
+"Points."
+
+msgid "rankItemStatus/future/description/first"
+msgstr ""
+"The Iron rank is awarded to players who have earned "
+"{whiteSpanish_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){whiteSpanish_Close} "
+"Rating Points."
+
+msgid "rankItemStatus/future/description/fourth"
+msgstr ""
+"The Gold rank is awarded to players who have earned "
+"{whiteSpanish_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){whiteSpanish_Close} "
+"Rating Points."
+
+msgid "rankItemStatus/future/description/second"
+msgstr ""
+"The Bronze rank is awarded to players who have earned "
+"{whiteSpanish_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){whiteSpanish_Close} "
+"Rating Points."
+
+msgid "rankItemStatus/future/description/sixth"
+msgstr ""
+"To reach the Legend rank, be among the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard by "
+"Rating Points."
+
+msgid "rankItemStatus/future/description/third"
+msgstr ""
+"The Silver rank is awarded to players who have earned "
+"{whiteSpanish_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){whiteSpanish_Close} "
+"Rating Points."
+
+msgid "rankItemStatus/future/extendedDescription/sixth"
+msgstr ""
+"To reach the Legend rank, be among the {whiteSpanish_Open}top "
+"%(topPercentage)%{whiteSpanish_Close} of players on the Leaderboard by "
+"Rating Points. Rating Points earned by the bottom player in "
+"the&nbsp;Legend&nbsp;rank: "
+"{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+
+msgid "rankItemStatus/previous/description/fifth"
+msgstr ""
+"The Champion rank is awarded to players who have earned at "
+"least&nbsp;{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} Rating "
+"Points."
+
+msgid "rankUpper/fifth"
+msgstr "CHAMPION"
+
+msgid "rankUpper/first"
+msgstr "IRON"
+
+msgid "rankUpper/fourth"
+msgstr "GOLD"
+
+msgid "rankUpper/second"
+msgstr "BRONZE"
+
+msgid "rankUpper/sixth"
+msgstr "LEGEND"
+
+msgid "rankUpper/third"
+msgstr "SILVER"
+
+msgid "ratingScore/title"
+msgstr "Rating Points"
+
+msgid "rewards/bonus/deluxe_gift"
+msgstr "Improved equipment"
+
+msgid "rewards/bonus/style_progress"
+msgstr "%(name)s camouflage"
+
+msgid "rewards/preview"
+msgstr "Preview"
+
+msgid "rewards/status/achieved"
+msgstr "Reward Received"
+
+msgid "rewards/subtitle/customizations"
+msgstr ""
+"{whiteSpanish_Open}For Tier %(vehicleLevel)s vehicles{whiteSpanish_Close}"
+
+msgid "rewards/subtitle/styleProgress"
+msgstr ""
+"{whiteSpanish_Open}For the Hybrid Beast (Crimson) style{whiteSpanish_Close}"
+
+msgid "rewards/subtitle/vehicles_rent"
+msgstr "Tier %(vehicleLevel)s"
+
+msgid "rewardsScreen/additionalRewards"
+msgstr "You also received:"
+
+msgid "rewardsScreen/button"
+msgstr "Affirmative!"
+
+msgid "rewardsScreen/buttonToOtherRewards"
+msgstr "To Other Rewards"
+
+msgid "rewardsScreen/buttonToRewards"
+msgstr "To Rewards"
+
+msgid "rewardsScreen/buttonToSelectedRewards"
+msgstr "Select Reward"
+
+msgid "rewardsScreen/buttonToShop"
+msgstr "Go to Purchase"
+
+msgid "rewardsScreen/description/qualificationEnded"
+msgstr "ONSLAUGHT. QUALIFICATION COMPLETED"
+
+msgid "rewardsScreen/description/season/first"
+msgstr "ONSLAUGHT SEASON OF THE AZURE MANTICORE"
+
+msgid "rewardsScreen/description/season/second"
+msgstr "ONSLAUGHT SEASON OF THE CRIMSON MANTICORE"
+
+msgid "rewardsScreen/description/season/third"
+msgstr "ONSLAUGHT SEASON OF THE JADE MANTICORE"
+
+msgid "rewardsScreen/description/year"
+msgstr "ONSLAUGHT. YEAR OF THE MANTICORE"
+
+msgid "rewardsScreen/noSeasonResult"
+msgstr "No rank"
+
+msgid "rewardsScreen/notice/subTitle"
+msgstr ""
+"After achieving this rank, you can lose Rating Points if you stop playing "
+"Onslaught mode."
+
+msgid "rewardsScreen/notice/title"
+msgstr "Rank Inactivity"
+
+msgid "rewardsScreen/seasonPointsAmount"
+msgstr ""
+"Total Onslaught\n"
+"Colors"
+
+msgid "rewardsScreen/shopInfo/header/discount"
+msgstr "New discounts available in the Onslaught Shop!"
+
+msgid "rewardsScreen/shopInfo/header/open"
+msgstr "New items available in the Onslaught Shop!"
+
+msgid "rewardsScreen/shopInfo/text/discount"
+msgstr ""
+"Until the start of the next Season, you will have access to items and a "
+"discount depending on your highest achieved rank."
+
+msgid "rewardsScreen/shopInfo/text/open"
+msgstr ""
+"Until the start of the next Season, you will have access to items and a "
+"discount depending on your highest achieved rank."
+
+msgid "rewardsScreen/subtitle/division"
+msgstr "{cream_Open}%(rank)s Rank{cream_Close}"
+
+msgid "rewardsScreen/subtitle/qualificationRewards"
+msgstr ""
+"Based on the Qualification results, you have received rewards for the "
+"following ranks: {cream_Open}%(ranks)s{cream_Close}"
+
+msgid "rewardsScreen/subtitle/qualificationRewardsSeparator"
+msgstr ", "
+
+msgid "rewardsScreen/subtitle/rankRewards"
+msgstr ""
+"You have received rewards for your promotion to the "
+"{cream_Open}%(rank)s{cream_Close} rank"
+
+msgid "rewardsScreen/subtitle/tokensRewards"
+msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
+msgstr[0] ""
+"Reward for completing {cream_Open}%(tokensCount)s{cream_Close} weekly "
+"mission"
+msgstr[1] ""
+"Reward for completing {cream_Open}%(tokensCount)s{cream_Close} weekly "
+"missions"
+msgstr[2] ""
+"Reward for completing {cream_Open}%(tokensCount)s{cream_Close} weekly "
+"missions"
+
+msgid "rewardsScreen/title/division"
+msgstr "DIVISION %(division)s REACHED"
+
+msgid "rewardsScreen/title/qualificationRank"
+msgstr "{cream_Open}%(rankUpperName)s{cream_Close} RANK REACHED"
+
+msgid "rewardsScreen/title/qualificationRewards"
+msgstr "REWARD FOR ACHIEVED RANKS"
+
+msgid "rewardsScreen/title/rank"
+msgstr "{cream_Open}%(rankUpperName)s{cream_Close} RANK REACHED"
+
+msgid "rewardsScreen/title/rankRewards"
+msgstr "REWARD FOR YOUR NEW RANK"
+
+msgid "rewardsScreen/title/selectedRewards"
+msgid_plural "plural/rewardsScreen/title/selectedRewards"
+msgstr[0] "REWARD RECEIVED"
+msgstr[1] "REWARDS RECEIVED"
+msgstr[2] "REWARDS RECEIVED"
+
+msgid "rewardsScreen/title/tokensRewards"
+msgstr "WEEKLY MISSION REWARDS"
+
+msgid "rewardsScreen/title/yearlyRewards"
+msgstr "ANNUAL REWARDS"
+
+msgid "rewardsScreen/yearlyVehicleCrew"
+msgstr "With unique crew members:"
+
+msgid "rewardsSelectionScreen/description"
+msgstr "ONSLAUGHT"
+
+msgid "rewardsSelectionScreen/title"
+msgid_plural "plural/rewardsSelectionScreen/title"
+msgstr[0] "CHOOSE REWARD"
+msgstr[1] "CHOOSE REWARDS"
+msgstr[2] "CHOOSE REWARDS"
+
+msgid "scoreTooltip/body"
+msgstr ""
+"The Rating Points you earn will determine your rank and Division in "
+"Onslaught mode. Win battles to become the best!"
+
+msgid "scoreTooltip/header"
+msgstr "Rating Points"
+
+msgid "season/daysLeft"
+msgstr "Ends in %(totalDays)s d"
+
+msgid "season/hoursLeft"
+msgstr "Ends in %(hours)s h"
+
+msgid "season/minutesLeft"
+msgstr "Ends in %(minutes)s min"
+
+msgid "season/over"
+msgstr "%(seasonName)s has finished"
+
+msgid "season/range"
+msgstr "%(startDate)s–%(endDate)s"
+
+msgid "season/secondsLeft"
+msgstr "Ends in %(seconds)s s"
+
+msgid "seasonModifier/title"
+msgstr "Onslaught Modifiers"
+
+msgid "seasonName/first"
+msgstr "Season of the Azure Manticore"
+
+msgid "seasonName/second"
+msgstr "Season of the Crimson Manticore"
+
+msgid "seasonName/third"
+msgstr "Season of the Jade Manticore"
+
+msgid "seasonPointTooltip/header"
+msgstr "Onslaught Colors"
+
+msgid "seasonPointTooltip/status/achieved"
+msgstr "Received"
+
+msgid "seasonPointTooltip/status/notAchieved"
+msgstr "Not received"
+
+msgid "seasonPointTooltip/status/possible"
+msgstr "You are a contender to receive Onslaught Colors"
+
+msgid "seasonPointTooltip/text/compensate"
+msgstr ""
+"Unused Onslaught Colors are converted to bonds at this rate: {bond_Open}1 "
+"Onslaught Colors{bond_Close} to "
+"{bond_Open}%(seasonPointExchangeRate)s%(bondsIcon)s{bond_Close}"
+
+msgid "seasonPointTooltip/text/season"
+msgstr ""
+"At the end of each Season, you will receive Onslaught Colors according to "
+"your achieved rank."
+
+msgid "seasonPointTooltip/text/year"
+msgstr ""
+"Every 3 Onslaught Colors will improve the quality of the reward you receive "
+"at the end of the year."
+
+msgid "seasonStatistics/button/fifth"
+msgstr "Where is my trophy?!"
+
+msgid "seasonStatistics/button/first"
+msgstr "This is Fine"
+
+msgid "seasonStatistics/button/fourth"
+msgstr "My Precious!"
+
+msgid "seasonStatistics/button/second"
+msgstr "Affirmative!"
+
+msgid "seasonStatistics/button/sixth"
+msgstr "Legendary!"
+
+msgid "seasonStatistics/button/third"
+msgstr "I'll Be Back"
+
+msgid "seasonStatistics/description/finalScore"
+msgstr "Final season rating"
+
+msgid "seasonStatistics/description/leaderboardPosition"
+msgstr "Position on Leaderboard: %(position)s"
+
+msgid "seasonStatistics/description/season"
+msgstr "ONSLAUGHT. %(seasonNameUpper)s"
+
+msgid "seasonStatistics/description/seasonPoint"
+msgid_plural "plural/seasonStatistics/description/seasonPoint"
+msgstr[0] "Received %(points)s Onslaught Colors"
+msgstr[1] "Received %(points)s Onslaught Colors"
+msgstr[2] "Received %(points)s Onslaught Colors"
+
+msgid "seasonStatistics/seasonNameUpper/first"
+msgstr "SEASON I: AZURE MANTICORE"
+
+msgid "seasonStatistics/seasonNameUpper/second"
+msgstr "SEASON II: CRIMSON MANTICORE"
+
+msgid "seasonStatistics/seasonNameUpper/third"
+msgstr "SEASON III: JADE MANTICORE"
+
+msgid "seasonStatistics/section/statistics/battles/additional"
+msgstr "Victories: %(additional)s"
+
+msgid "seasonStatistics/section/statistics/battles/main"
+msgstr ""
+"Battles\n"
+"fought"
+
+msgid "seasonStatistics/section/statistics/damage/additional"
+msgstr "Average: %(additional)s"
+
+msgid "seasonStatistics/section/statistics/damage/main"
+msgstr ""
+"Damage\n"
+"record"
+
+msgid "seasonStatistics/section/statistics/maxFrags/additional"
+msgstr "Destruction Ratio: %(additional)s"
+
+msgid "seasonStatistics/section/statistics/maxFrags/main"
+msgstr ""
+"Most vehicles destroyed\n"
+"in a battle"
+
+msgid "seasonStatistics/section/statistics/maxPrestigePoints/additional"
+msgstr "Average: %(additional)s"
+
+msgid "seasonStatistics/section/statistics/maxPrestigePoints/main"
+msgstr ""
+"Prestige Points\n"
+"record"
+
+msgid "seasonStatistics/section/statistics/title"
+msgstr "SEASON STATISTICS"
+
+msgid "seasonStatistics/section/statistics/winSeries/additional"
+msgstr "In a Super Platoon: %(additional)s"
+
+msgid "seasonStatistics/section/statistics/winSeries/main"
+msgstr ""
+"Win streak\n"
+"(solo/Platoon)"
+
+msgid "seasonStatistics/section/vehicles/battles"
+msgstr "Battles"
+
+msgid "seasonStatistics/section/vehicles/noData"
+msgstr "—"
+
+msgid "seasonStatistics/section/vehicles/noVehicles"
+msgstr "No Vehicles"
+
+msgid "seasonStatistics/section/vehicles/title"
+msgstr "PRIMARY VEHICLES"
+
+msgid "seasonStatistics/section/vehicles/wins"
+msgstr "Victories"
+
+msgid "seasonStatistics/title"
+msgstr "%(name)s SEASON STATISTICS"
+
+msgid "seasonalBattleSelector/tillEnd"
+msgstr "Season ends in:"
+
+msgid "seasonalBattleSelector/timeTable/empty"
+msgstr "—"
+
+msgid "seasonalBattleSelector/timeTable/interval"
+msgstr "%(start)s–%(end)s"
+
+msgid "seasonalBattleSelector/timeTable/title"
+msgstr "Match Schedule"
+
+msgid "seasonalBattleSelector/timeTable/today"
+msgstr "Today"
+
+msgid "seasonalBattleSelector/timeTable/tomorrow"
+msgstr "Tomorrow"
+
+msgid "selectorTooltip/desc"
+msgstr "Competitive mode. 7v7 | Tier X"
+
+msgid "selectorTooltip/title"
+msgstr "Onslaught"
+
+msgid "selectorTooltip/unavailable/finished"
+msgstr ""
+"Follow the latest news on the game portal to stay up-to-date on the start of"
+" the new Season."
+
+msgid "selectorTooltip/unavailable/frozen"
+msgstr "This mode is temporarily unavailable for technical reasons."
+
+msgid "selectorTooltip/unavailable/nextSeason"
+msgstr "This mode will become available on %(time)s"
+
+msgid "shortSeasonName/first"
+msgstr "Azure Manticore"
+
+msgid "shortSeasonName/second"
+msgstr "Crimson Manticore"
+
+msgid "shortSeasonName/third"
+msgstr "Jade Manticore"
+
+msgid "sidebar/tabs/tooltip/body/leaderboard"
+msgstr ""
+"This section contains information about the best players in the current "
+"Season of Onslaught mode."
+
+msgid "sidebar/tabs/tooltip/body/progression"
+msgstr ""
+"This section contains information about Qualification, as well as your rank,"
+" Division, and Rating Points after its completion."
+
+msgid "sidebar/tabs/tooltip/body/rankRewards"
+msgstr ""
+"This section contains information about the available rewards for achieving "
+"higher ranks in Onslaught mode."
+
+msgid "sidebar/tabs/tooltip/body/shop"
+msgstr ""
+"This section contains information on items available in the Onslaught Shop"
+
+msgid "sidebar/tabs/tooltip/body/weeklyQuests"
+msgstr ""
+"This section contains information about weekly missions in Onslaught mode."
+
+msgid "sidebar/tabs/tooltip/body/yearlyRewards"
+msgstr ""
+"This section contains details on the Annual Rewards you can receive by "
+"earning Onslaught Colors."
+
+msgid "sidebar/tabs/tooltip/body/yearlyStatistics"
+msgstr ""
+"This section contains information about your achievements in each of the "
+"Seasons of the current Onslaught year."
+
+msgid "sidebar/tabs/tooltip/header/leaderboard"
+msgstr "Leaderboard"
+
+msgid "sidebar/tabs/tooltip/header/progression"
+msgstr "Ranked System"
+
+msgid "sidebar/tabs/tooltip/header/rankRewards"
+msgstr "Rewards for Ranks"
+
+msgid "sidebar/tabs/tooltip/header/shop"
+msgstr "Onslaught Shop"
+
+msgid "sidebar/tabs/tooltip/header/weeklyQuests"
+msgstr "Weekly Missions"
+
+msgid "sidebar/tabs/tooltip/header/yearlyRewards"
+msgstr "Annual Rewards"
+
+msgid "sidebar/tabs/tooltip/header/yearlyStatistics"
+msgstr "Annual Statistics"
+
+msgid "sixthRankTooltip/description"
+msgstr ""
+"The {whiteSpanish_Open}Legend{whiteSpanish_Close} rank is awarded to "
+"{whiteSpanish_Open}the top %(topPercentage)%{whiteSpanish_Close} of players "
+"on the Leaderboard by Rating Points."
+
+msgid "style3dTooltip/954"
+msgstr "Silver Spikes"
+
+msgid "style3dTooltip/955"
+msgstr "Golden Claws"
+
+msgid "style3dTooltip/956"
+msgstr "Champion's Wings"
+
+msgid "style3dTooltip/957"
+msgstr "Legendary Creature"
+
+msgid "style3dTooltip/description"
+msgstr ""
+"Strong as a lion, fierce as a dragon, and deadly as a scorpion, this beast "
+"is the incarnation in metal of a creature feared since ancient times."
+
+msgid "style3dTooltip/howToReceive"
+msgstr "How to Receive"
+
+msgid "style3dTooltip/secondaryDescription/954"
+msgstr ""
+"Awarded for collecting at least 9 Onslaught Colors in the Year of the "
+"Manticore in Onslaught mode."
+
+msgid "style3dTooltip/secondaryDescription/955"
+msgstr ""
+"Awarded for collecting at least 12 Onslaught Colors in the Year of the "
+"Manticore in Onslaught mode. Replaces the previous style."
+
+msgid "style3dTooltip/secondaryDescription/956"
+msgstr ""
+"Awarded for collecting at least 15 Onslaught Colors in the Year of the "
+"Manticore in Onslaught mode. Replaces the previous style."
+
+msgid "style3dTooltip/secondaryDescription/957"
+msgstr ""
+"Awarded for collecting at least 18 Onslaught Colors in the Year of the "
+"Manticore in Onslaught mode. Replaces the previous style."
+
+msgid "style3dTooltip/suitableVehicles"
+msgstr "Suitable for Vehicles"
+
+msgid "system_messages/periodicReward/body"
+msgstr ""
+"You have received your daily reward for maintaining the %(rank)s rank.\n"
+"%(rewards)s"
+
+msgid "system_messages/periodicReward/title"
+msgstr "Daily Reward"
+
+msgid "system_messages/primeTime/end/body"
+msgstr "Ceasefire in effect. Onslaught battles are temporarily unavailable."
+
+msgid "system_messages/primeTime/end/title"
+msgstr "Ceasefire"
+
+msgid "system_messages/primeTime/start/body"
+msgstr "Ceasefire over. Onslaught battles are available again."
+
+msgid "system_messages/primeTime/start/title"
+msgstr "Ceasefire"
+
+msgid "system_messages/qualificationReward/body"
+msgstr ""
+"Congratulations! You have reached the %(maxRank)s rank.\n"
+"You have received rewards for the following ranks: %(ranks)s:\n"
+"%(rewards)s"
+
+msgid "system_messages/qualificationReward/title"
+msgstr "Qualification Completed"
+
+msgid "system_messages/regularReward/body"
+msgstr ""
+"Date: %(at)s\n"
+"%(rewards)s"
+
+msgid "system_messages/regularReward/title"
+msgstr "Receipt"
+
+msgid "system_messages/shop/offer/button"
+msgstr "Go to Shop"
+
+msgid "system_messages/shop/offer/newDiscounts/body"
+msgstr "New discounts available in the Onslaught Shop!"
+
+msgid "system_messages/shop/offer/newDiscounts/title"
+msgstr "Discounts increased"
+
+msgid "system_messages/shop/offer/newItems/body"
+msgstr "New items now available in the Onslaught Shop!"
+
+msgid "system_messages/shop/offer/newItems/title"
+msgstr "New items available"
+
+msgid "system_messages/shop/purchase/error"
+msgstr "Payment error. Please try again later."
+
+msgid "system_messages/tokenWeeklyReward/body"
+msgstr ""
+"Date: %(at)s\n"
+"%(rewards)s"
+
+msgid "system_messages/tokenWeeklyReward/title"
+msgstr "Rewards for completing weekly missions"
+
+msgid "system_messages/weeklyReward/body"
+msgstr ""
+"Date: %(at)s\n"
+"%(rewards)s"
+
+msgid "system_messages/weeklyReward/title"
+msgstr "Reward for Weekly Mission"
+
+msgid "tournament/battleResult/personal/tooltip/descr"
+msgstr "Rating Points cannot be earned or lost in a Tournament."
+
+msgid "tournamentsWidget/heading"
+msgstr "Onslaught Tournaments"
+
+msgid "tournamentsWidget/text/active"
+msgstr "Don't miss the action!"
+
+msgid "tournamentsWidget/text/registration"
+msgstr "Registration is now open!"
+
+msgid "training/battleResult/personal/tooltip/descr"
+msgstr "Rating Points cannot be earned in Onslaught Training."
+
+msgid "unit/message/modeOffline"
+msgstr "Unable to join the battle: Database error."
+
+msgid "unit/message/rankRangeRestriction"
+msgstr "Rank difference restrictions exceeded"
+
+msgid "voiceChat/active"
+msgstr "Leave voice chat"
+
+msgid "voiceChat/inactive"
+msgstr "Join voice chat"
+
+msgid "waitingSpinner/message"
+msgstr "Loading content..."
+
+msgid "weeklyQuestTooltip/additionalRewards"
+msgstr ""
+"You will receive an additional reward for completing "
+"{cream_Open}%(questsList)s{cream_Close} missions"
+
+msgid "weeklyQuestTooltip/countdownStatus"
+msgid_plural "plural/weeklyQuestTooltip/countdownStatus"
+msgstr[0] ""
+"%(value)s new mission in:\n"
+"%(countdown)s"
+msgstr[1] ""
+"%(value)s new missions in:\n"
+"%(countdown)s"
+msgstr[2] ""
+"%(value)s new missions in:\n"
+"%(countdown)s"
+
+msgid "weeklyQuestTooltip/counterQuests"
+msgstr "Missions completed: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuestTooltip/questsProgres"
+msgstr "{yellow_Open}%(current)s{yellow_Close} / %(total)s"
+
+msgid "weeklyQuestTooltip/takeRewards/header"
+msgstr "Well done!"
+
+msgid "weeklyQuestTooltip/takeRewards/text"
+msgstr ""
+"You have completed all weekly missions.\n"
+"Don't forget to claim your reward and see you in the next season!"
+
+msgid "weeklyQuests/CountdownStatus/active"
+msgid_plural "plural/weeklyQuests/CountdownStatus/active"
+msgstr[0] "%(value)s NEW MISSION IN %(countdown)s"
+msgstr[1] "%(value)s NEW MISSIONS IN %(countdown)s"
+msgstr[2] "%(value)s NEW MISSIONS IN %(countdown)s"
+
+msgid "weeklyQuests/CountdownStatus/done"
+msgstr "NEW MISSIONS NEXT SEASON!"
+
+msgid "weeklyQuests/TokenProgress/header"
+msgstr "Missions completed: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+
+msgid "weeklyQuests/TokenProgress/subheader"
+msgid_plural "plural/weeklyQuests/TokenProgress/subheader"
+msgstr[0] ""
+"You will receive %(value)s new mission every week. Each completed mission "
+"counts toward your reward!"
+msgstr[1] ""
+"You will receive %(value)s new missions every week. Each completed mission "
+"counts toward your reward!"
+msgstr[2] ""
+"You will receive %(value)s new missions every week. Each completed mission "
+"counts toward your reward!"
+
+msgid "weeklyQuests/card/progress/counter"
+msgstr "%(current)s / %(total)s"
+
+msgid "weeklyQuests/card/status/active"
+msgstr "In Progress"
+
+msgid "weeklyQuests/card/status/completed"
+msgstr "Completed"
+
+msgid "weeklyQuests/card/status/locked"
+msgstr "Unavailable"
+
+msgid "weeklyQuests/card/statusLockedTooltip/body/lockedByInactiveSeason"
+msgstr "Unavailable for completion: The mode is not active."
+
+msgid "weeklyQuests/card/statusLockedTooltip/body/lockedByNoXVehicles"
+msgstr "To unlock, research and purchase a Tier X vehicle."
+
+msgid "weeklyQuests/card/statusLockedTooltip/body/lockedByPreviousQuest"
+msgstr "Complete the previous mission to unlock this one."
+
+msgid "weeklyQuests/card/statusLockedTooltip/header"
+msgstr "Mission Unavailable"
+
+msgid "whatsNewButtonLabel"
+msgstr "SEASON UPDATES"
+
+msgid "whatsNewView/banner/title/large"
+msgstr "SEASON OF THE CRIMSON MANTICORE"
+
+msgid "whatsNewView/banner/title/small"
+msgstr "ONSLAUGHT. WHAT'S NEW?"
+
+msgid "whatsNewView/button/ok"
+msgstr "Let's Do It!"
+
+msgid "whatsNewView/intro/description"
+msgstr ""
+"Missions no longer expire and remain available for completion throughout the"
+" entire season, and you can track active mission progress via a widget in "
+"the Garage. Increased Shell Resistance has been replaced with an improved "
+"equipment token, allowing you to select any improved equipment as a reward."
+
+msgid "whatsNewView/intro/heading"
+msgstr "Weekly Missions %(tag)"
+
+msgid "whatsNewView/mapChanges/heading"
+msgstr "Maps"
+
+msgid "whatsNewView/roleSkills/description"
+msgstr ""
+"The majority of Role Skills have received balance changes. Detailed "
+"information can be found in the season article."
+
+msgid "whatsNewView/roleSkills/heading"
+msgstr "Role Skill Rebalance"
+
+msgid "whatsNewView/sectionDescription/bondShop"
+msgstr ""
+"Onslaught Shop items can now be easily accessed from the Items for Bonds "
+"screen."
+
+msgid "whatsNewView/sectionDescription/enemy"
+msgstr "You can now see enemies' nicknames and ranks at the start of battle."
+
+msgid "whatsNewView/sectionDescription/legendRank"
+msgstr ""
+"The {whiteSpanish_Open}top %(topPercentage)s%{whiteSpanish_Close} of players"
+" on the Leaderboard will now have the Legend rank, with positions updated "
+"every {whiteSpanish_Open}%(count)s&nbsp;minutes{whiteSpanish_Close}."
+
+msgid "whatsNewView/sectionDescription/platoons_2"
+msgstr ""
+"The rank difference between the lowest- and highest-ranked players cannot "
+"exceed one rank."
+
+msgid "whatsNewView/sectionDescription/platoons_7"
+msgstr ""
+"The rank difference between the lowest- and highest-ranked players cannot "
+"exceed two ranks."
+
+msgid "whatsNewView/sectionHeading/bondShop"
+msgstr "Shop Integration"
+
+msgid "whatsNewView/sectionHeading/enemy"
+msgstr "Know Your Enemy"
+
+msgid "whatsNewView/sectionHeading/legendRank"
+msgstr "Legend Rank Expansion"
+
+msgid "whatsNewView/sectionHeading/platoons"
+msgstr "New Platoon Limitations: From Rating to Rank"
+
+msgid "whatsNewView/sectionSubtitle/platoons"
+msgstr "%(count)s-player Platoons"
+
+msgid "whatsNewView/stamp/removed"
+msgstr "EXCLUDED"
+
+msgid "whatsNewView/stamp/underDevelopment"
+msgstr "UNDER REDEVELOPMENT"
+
+msgid "whatsNewView/tag/changed"
+msgstr "Changed"
+
+msgid "whatsNewView/tag/new"
+msgstr "New"
+
+msgid "whatsNewView/tag/returned"
+msgstr "Returned"
+
+msgid "whatsNewView/tag/revamped"
+msgstr "Revamped"
+
+msgid "whatsNewView/tag/seasonUpdate"
+msgstr "Seasonal Update"
+
+msgid "whatsNewView/vehiclesForRent/heading"
+msgstr "Rental Vehicles"
+
+msgid "whatsNewView/watchVideo"
+msgstr "Watch Video"
+
+msgid "yearRewards/tooltip/selectableReward/list"
+msgstr ""
+"You can select one piece of Improved Equipment from the list below:\n"
+"\n"
+"• Stealth Exhaust Unit\n"
+"• Innovative Targeting\n"
+"• Improved Final Drive\n"
+"• Improved Compressor\n"
+"• Increased Shell Resistance\n"
+"• Improved Configuration\n"
+"• Experimental Optics\n"
+"• Innovative Loading System\n"
+"• Venting System\n"
+"• Wear-Resistant Gun Laying Drive\n"
+"• Stabilizing Equipment System"
+
+msgid "yearRewards/tooltip/selectableReward/title"
+msgstr "Improved Equipment"
+
+msgid "yearlyRewards/banner/default"
+msgstr "Rewards are delivered at the end of the third season."
+
+msgid "yearlyRewards/banner/notAccruedRewards"
+msgstr "Rewards will be delivered soon. Please stand by."
+
+msgid "yearlyRewards/banner/rewardsReceived"
+msgstr "Annual Reward received. See you next year!"
+
+msgid "yearlyRewards/banner/rewardsSelectionAvailable"
+msgstr "You have rewards to select from"
+
+msgid "yearlyRewards/banner/selectButtonLabel"
+msgstr "Choose Reward"
+
+msgid "yearlyRewards/description/achieved"
+msgstr ""
+"You received 1%(seasonPointIcon)s for each rank at the end of the Season."
+
+msgid "yearlyRewards/description/current"
+msgstr ""
+"You will receive 1%(seasonPointIcon)s for each rank at the end of the "
+"Season."
+
+msgid "yearlyRewards/mainYearlyRewardTitle"
+msgstr ""
+"%(vehicle)s\n"
+"With unique 3D styles"
+
+msgid "yearlyRewards/preview/backButton"
+msgstr "TO ANNUAL REWARDS"
+
+msgid "yearlyRewards/preview/style2d"
+msgstr "Preview 2D style"
+
+msgid "yearlyRewards/preview/style3d"
+msgstr "Preview 3D style"
+
+msgid "yearlyRewards/rank/achieved"
+msgstr "Rank achieved: %(rank)s"
+
+msgid "yearlyRewards/rank/current"
+msgstr "Current rank: %(rank)s"
+
+msgid "yearlyRewards/rewards/crew"
+msgstr "Four Unique Crew Members"
+
+msgid "yearlyRewards/rewardsState/claimed"
+msgstr "Reward received"
+
+msgid "yearlyRewards/rewardsState/guaranteed"
+msgstr "Reward guaranteed"
+
+msgid "yearlyRewards/rewardsState/notAvailable"
+msgstr "Earn a total %(count)s Colors to receive stage rewards"
+
+msgid "yearlyRewards/rewardsState/possible"
+msgstr "Potential reward"
+
+msgid "yearlyRewards/rewardsState/tooltip/guaranteed"
+msgstr "You are guaranteed to receive this reward at the end of the year."
+
+msgid "yearlyRewards/rewardsState/tooltip/notAvailable"
+msgstr ""
+"Earn the required number of Onslaught Colors to receive your reward at the "
+"end of the year."
+
+msgid "yearlyRewards/rewardsState/tooltip/possible"
+msgstr ""
+"You will receive this reward at the end of the year if you maintain your "
+"current rank or increase it before the end of the Season."
+
+msgid "yearlyRewards/stageDescription/active"
+msgstr "Active stage"
+
+msgid "yearlyStatistics/battles"
+msgstr "Battles (Solo/Platoon)"
+
+msgid "yearlyStatistics/generationOfStatistics"
+msgstr "Calculating Season statistics..."
+
+msgid "yearlyStatistics/goToSeasonStatistics"
+msgstr "%(icon)sTo Season Statistics"
+
+msgid "yearlyStatistics/rankStatus/notReceived"
+msgstr "No rank"
+
+msgid "yearlyStatistics/rankStatus/received"
+msgstr "%(rank)s Rank"
+
+msgid "yearlyStatistics/rating"
+msgstr "Rating Points"
+
+msgid "yearlyStatistics/seasonDate/0"
+msgstr "Fall 2024"
+
+msgid "yearlyStatistics/seasonDate/1"
+msgstr "Winter 2025"
+
+msgid "yearlyStatistics/seasonDate/2"
+msgstr "Spring 2025"
+
+msgid "yearlyStatistics/seasonDateInterval"
+msgstr "%(start)s–%(end)s"
+
+msgid "yearlyStatistics/seasonName/0"
+msgstr "Season I. Azure Manticore"
+
+msgid "yearlyStatistics/seasonName/1"
+msgstr "Season II. Crimson Manticore"
+
+msgid "yearlyStatistics/seasonName/2"
+msgstr "Season III. Jade Manticore"
+
+msgid "yearlyStatistics/seasonStatus/active"
+msgstr "Current"
+
+msgid "yearlyStatistics/seasonStatus/end"
+msgstr "Finished"
+
+msgid "yearlyStatistics/superPlatoonBattles"
+msgstr "Battles (Super Platoon)"
+
+msgid "yearlyStatistics/wins"
+msgstr "Victory Rate"

@@ -162,11 +162,20 @@ msgstr "{expTagOpen}+%(exp)s{expTagClose} experience to each crew member."
 msgid "items/universalGuide/Name"
 msgstr "Universal Guide"
 
+msgid "page/mentoringLicense/hint"
+msgstr "GO TO MENTORING COURSE"
+
+msgid "page/mentoringLicense/title"
+msgstr "MENTORING COURSE"
+
 msgid "page/title"
 msgstr "QUICK TRAINING"
 
 msgid "tooltip/buyManual"
 msgstr "Purchase Training Manual"
+
+msgid "tooltip/mouseWheel"
+msgstr "Scroll {mouseIcon} to increase / decrease the number Crew Books."
 
 msgid "tooltip/outOfStock"
 msgstr "No Crew Books left"

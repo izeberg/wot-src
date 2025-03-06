@@ -3,6 +3,7 @@ package net.wg.gui.battle.views.destroyTimers
    import fl.motion.easing.Linear;
    import flash.display.Sprite;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.BATTLE_NOTIFICATIONS_TIMER_LINKAGES;
    import net.wg.gui.battle.components.BattleUIComponent;
    import net.wg.gui.battle.components.interfaces.IStatusNotification;
    import net.wg.gui.battle.components.interfaces.IStatusNotificationCallback;
@@ -144,7 +145,7 @@ package net.wg.gui.battle.views.destroyTimers
       {
          if(!this.destroyTimer)
          {
-            this.initTimers();
+            this.initTimers(BATTLE_NOTIFICATIONS_TIMER_LINKAGES.DESTROY_TIMER_UI,BATTLE_NOTIFICATIONS_TIMER_LINKAGES.SECONDARY_TIMER_UI);
          }
          this.destroyTimer.setSettings(param1);
          this.secondaryTimer.setSettings(param1);
@@ -189,7 +190,7 @@ package net.wg.gui.battle.views.destroyTimers
          this.secondaryTimer.updateData(param1);
       }
       
-      protected function initTimers(param1:String = "destroyTimerUI", param2:String = "secondaryTimerUI") : void
+      protected function initTimers(param1:String, param2:String) : void
       {
          this.destroyTimer = App.utils.classFactory.getComponent(param1,IStatusNotification);
          this._destroyTimerContainer.addChild(this.destroyTimer);
