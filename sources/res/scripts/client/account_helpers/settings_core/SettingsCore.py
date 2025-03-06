@@ -190,10 +190,10 @@ class SettingsCore(ISettingsCore):
           options.StorageAccountSetting(GAME.ENABLE_BATTLE_NOTIFIER, storage=EXTENDED_GAME_SETTINGS_STORAGE)),
          (
           GAME.ENABLE_THERMAL_VISION_EFFECT,
-          options.AccountDumpSetting(GAME.ENABLE_THERMAL_VISION_EFFECT, GAME.ENABLE_THERMAL_VISION_EFFECT)),
+          options.StorageAccountSetting(GAME.ENABLE_THERMAL_VISION_EFFECT, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
           GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT,
-          options.AccountDumpSetting(GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT, GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT)),
+          options.StorageAccountSetting(GAME.ENABLE_THERMAL_VISION_SECTOR_EFFECT, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
           GAME.SNIPER_MODE_STABILIZATION,
           options.SniperModeStabilization(GAME.SNIPER_MODE_STABILIZATION, storage=GAME_SETTINGS_STORAGE)),
@@ -285,7 +285,7 @@ class SettingsCore(ISettingsCore):
           options.MinimapArtyHitSetting(GAME.SHOW_ARTY_HIT_ON_MAP, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
           GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP,
-          options.AccountDumpSetting(GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP, GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP)),
+          options.StorageAccountSetting(GAME.SHOW_THERMAL_VISION_SECTOR_ON_MAP, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
           GAME.MINIMAP_VIEW_RANGE,
           options.StorageAccountSetting(GAME.MINIMAP_VIEW_RANGE, storage=EXTENDED_GAME_SETTINGS_STORAGE)),

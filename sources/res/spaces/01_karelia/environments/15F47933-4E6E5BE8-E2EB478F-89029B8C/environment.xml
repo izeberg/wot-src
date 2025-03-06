@@ -9,11 +9,11 @@
 		<deferred>
 			<useEdgeFog>false</useEdgeFog>
 			<color>0.521569 0.513726 0.639216 2.000000</color>
-			<density>0.005100</density>
+			<density>0.003200</density>
 			<height>-3.720000</height>
 			<heightFalloff>0.032000</heightFalloff>
 			<startDistance>70.000000</startDistance>
-			<scatterStart>173.259995</scatterStart>
+			<scatterStart>350.000000</scatterStart>
 			<scatterExponent>16.809999</scatterExponent>
 			<scatterColor>0.898039 0.509804 0.329412 2.000000</scatterColor>
 			<skyLow>0.270000</skyLow>
