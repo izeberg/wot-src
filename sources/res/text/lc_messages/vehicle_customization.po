@@ -142,6 +142,30 @@ msgstr "Naval Binoculars"
 msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
 msgstr "Stockless Anchor"
 
+msgid "attachment/st_patricks_day_2025"
+msgstr "Paint It GREEN!"
+
+msgid "attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe"
+msgstr "Lucky Horseshoe"
+
+msgid "attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe/description"
+msgstr ""
+"Said to have been enchanted with a fairy's blessing, this horseshoe is "
+"believed to bring good luck to its bearer. It can ward off evil spirits, but"
+" can it protect against arty strikes?"
+
+msgid "attachment/st_patricks_day_2025/Cus_32_SP_GoldPot"
+msgstr "Pot o' Gold"
+
+msgid "attachment/st_patricks_day_2025/Cus_33_SP_Barrel"
+msgstr "Brewer's Barrel"
+
+msgid "attachment/st_patricks_day_2025/Cus_34_SP_TreasureChest"
+msgstr "Treasure Chest"
+
+msgid "attachment/st_patricks_day_2025/Cus_35_SP_CamoNet"
+msgstr "Camouflage Net"
+
 msgid "attachment/test"
 msgstr "Test Subjects"
 
@@ -1020,6 +1044,12 @@ msgstr "?empty?"
 msgid "camouflage/G72_JagdPz_E100_BPXII_3DSt/label"
 msgstr "Dunkel"
 
+msgid "camouflage/G73_E50_Ausf_M_BPXVI_3Dst/description"
+msgstr "?empty?"
+
+msgid "camouflage/G73_E50_Ausf_M_BPXVI_3Dst/label"
+msgstr "Altbewährt"
+
 msgid "camouflage/G89_Leopard1_BVII_3DSt/description"
 msgstr "?empty?"
 
@@ -1186,6 +1216,12 @@ msgstr "?empty?"
 
 msgid "camouflage/J20_Type_2605_BXI_3DSt/label"
 msgstr "Hanmā"
+
+msgid "camouflage/J40_Type_71_BPXVI_3Dst/description"
+msgstr "?empty?"
+
+msgid "camouflage/J40_Type_71_BPXVI_3Dst/label"
+msgstr "Genseirin"
 
 msgid "camouflage/Klingfleet/description"
 msgstr ""
@@ -1491,6 +1527,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Pl21_CS_63_3Dst_BV/label"
 msgstr "Błyskawica"
+
+msgid "camouflage/Pl29_NC_Wz_70T_BPXVI_3Dst/description"
+msgstr "?empty?"
+
+msgid "camouflage/Pl29_NC_Wz_70T_BPXVI_3Dst/label"
+msgstr "Upał"
 
 msgid "camouflage/R145_Object_705_A_progression/description"
 msgstr "?empty?"
@@ -1842,6 +1884,12 @@ msgstr "?empty?"
 
 msgid "camouflage/april_fools_day_2024/label"
 msgstr "Fool's Gold"
+
+msgid "camouflage/april_fools_day_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/april_fools_day_2025/label"
+msgstr "Blushing Steel"
 
 msgid "camouflage/argentina/description"
 msgstr "?empty?"
@@ -2573,6 +2621,30 @@ msgstr "?empty?"
 msgid "camouflage/bp2023_4/label"
 msgstr "Ngamia"
 
+msgid "camouflage/bp2025_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_1/label"
+msgstr "Into the Wild"
+
+msgid "camouflage/bp2025_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_2/label"
+msgstr "Jungle Palette"
+
+msgid "camouflage/bp2025_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_3/label"
+msgstr "Danger Close"
+
+msgid "camouflage/bp2025_4/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_4/label"
+msgstr "Catch Me"
+
 msgid "camouflage/bp2025_holiday_1/description"
 msgstr "?empty?"
 
@@ -3104,6 +3176,12 @@ msgstr "?empty?"
 
 msgid "camouflage/clan_rivals/label"
 msgstr "Clan Rivals"
+
+msgid "camouflage/clan_showdown/description"
+msgstr "?empty?"
+
+msgid "camouflage/clan_showdown/label"
+msgstr "Cast in Unity"
 
 msgid "camouflage/clan_urban/description"
 msgstr "?empty?"
@@ -5354,6 +5432,18 @@ msgstr "Champion"
 msgid "camouflage/onslaught_season_2023-2024_6/label"
 msgstr "Legend"
 
+msgid "camouflage/onslaught_spring_gold/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_spring_gold/label"
+msgstr "Boundless Mind"
+
+msgid "camouflage/onslaught_spring_silver/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_spring_silver/label"
+msgstr "Dauntless Soul"
+
 msgid "camouflage/onslaught_tournaments/description"
 msgstr "?empty?"
 
@@ -5818,6 +5908,12 @@ msgstr "Dyed River"
 
 msgid "camouflage/st_patricks_day_2024_3/label"
 msgstr "Emerald Hunter"
+
+msgid "camouflage/st_patricks_day_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/st_patricks_day_2025/label"
+msgstr "Fortune's Forge"
 
 msgid "camouflage/stayhome/description"
 msgstr "?empty?"
@@ -7130,11 +7226,23 @@ msgstr "?empty?"
 msgid "camouflage/withoutmercy/label"
 msgstr "Without Mercy"
 
+msgid "camouflage/womens_day_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/womens_day_2025/label"
+msgstr "Kintsugi Armor"
+
 msgid "camouflage/wormrider/description"
 msgstr "?empty?"
 
 msgid "camouflage/wormrider/label"
 msgstr "Wormrider"
+
+msgid "camouflage/wot_birthday_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/wot_birthday_2025/label"
+msgstr "Forged in Fire"
 
 msgid "camouflage/wot_birthday_cn/description"
 msgstr "An all-season camouflage for the Anniversary Celebration style."
@@ -12087,6 +12195,9 @@ msgstr "OLS Winter'25"
 msgid "emblem/special/sticker_859"
 msgstr "Boosteroid"
 
+msgid "emblem/special/sticker_860"
+msgstr "OLS Spring'25"
+
 msgid "emblem/special/sticker_861"
 msgstr "Vortex"
 
@@ -14792,6 +14903,12 @@ msgstr "Nothing Is Over!"
 msgid "inscription/special/special_786"
 msgstr "They Drew First Blood"
 
+msgid "inscription/special/special_787"
+msgstr "Plus Ultra!"
+
+msgid "inscription/special/special_788"
+msgstr "OLS Spring 2025"
+
 msgid "inscription/special/special_796"
 msgstr "Snake's Fortune"
 
@@ -15898,6 +16015,20 @@ msgstr ""
 "shame. Charge into battle decisive and unrelenting! And when you face your "
 "enemy, forget mercy, for a true Kaiju feels no sorrow, forgives no mistakes,"
 " and shows no weakness."
+
+msgid "main_style/J40_Type_71_BPXVI_3Dst"
+msgstr "Genseirin"
+
+msgid "main_style/J40_Type_71_BPXVI_3Dst_desc/long"
+msgstr ""
+"\"I'm a thrill seeker. Always have been. It started with the motorcycles "
+"back home, when I was young and looking for trouble. Then it was tanks. "
+"That's what brought me here—if I wanted thrills, then trials in the jungle "
+"seemed a pretty good place to find them. But I had no idea we'd be testing "
+"something like this. Cutting-edge tech, the very best of Japanese design—it "
+"gives me the same thrill I got when I used to fire up my bike all those "
+"years ago. There's no stopping me in this thing—just call me king of the "
+"jungle!\""
 
 msgid "main_style/Pl15_60TP_LewandowskiegoB9BS_3DSt"
 msgstr "Bernard"
@@ -21165,6 +21296,36 @@ msgstr ""
 msgid "projection_decals/special/projection_decal_82"
 msgstr "Good Deeds Change the World"
 
+msgid "projection_decals/special/projection_decal_820"
+msgstr "Thumbs Up"
+
+msgid "projection_decals/special/projection_decal_821"
+msgstr "Face With Symbols Over Mouth"
+
+msgid "projection_decals/special/projection_decal_822"
+msgstr "Neutral Face"
+
+msgid "projection_decals/special/projection_decal_823"
+msgstr "Pill"
+
+msgid "projection_decals/special/projection_decal_824"
+msgstr "Ghost"
+
+msgid "projection_decals/special/projection_decal_825"
+msgstr "Exploding Head"
+
+msgid "projection_decals/special/projection_decal_826"
+msgstr "Handshake"
+
+msgid "projection_decals/special/projection_decal_827"
+msgstr "Goat"
+
+msgid "projection_decals/special/projection_decal_828"
+msgstr "Chicken"
+
+msgid "projection_decals/special/projection_decal_829"
+msgstr "See-No-Evil Monkey"
+
 msgid "projection_decals/special/projection_decal_83"
 msgstr "Komarin (Reproduction)"
 
@@ -21195,6 +21356,12 @@ msgstr "Rambo III Poster"
 msgid "projection_decals/special/projection_decal_843"
 msgstr "Neon Tank"
 
+msgid "projection_decals/special/projection_decal_844"
+msgstr "Dauntless Soul"
+
+msgid "projection_decals/special/projection_decal_845"
+msgstr "Boundless Mind"
+
 msgid "projection_decals/special/projection_decal_85"
 msgstr "She-elf"
 
@@ -21202,6 +21369,12 @@ msgid "projection_decals/special/projection_decal_85/description"
 msgstr ""
 "Now you can easily imagine what a female crew member would look like if "
 "Wargaming used several design concepts from the initial game project."
+
+msgid "projection_decals/special/projection_decal_852"
+msgstr "White Sakura"
+
+msgid "projection_decals/special/projection_decal_853"
+msgstr "Pink Bow"
 
 msgid "projection_decals/special/projection_decal_854"
 msgstr "Menshen"
@@ -21226,6 +21399,15 @@ msgstr ""
 "This thing is vitally important once you enter battles in inflammable "
 "vehicles."
 
+msgid "projection_decals/special/projection_decal_867"
+msgstr "Tribal Lizard"
+
+msgid "projection_decals/special/projection_decal_868"
+msgstr "Tribal Toucan"
+
+msgid "projection_decals/special/projection_decal_869"
+msgstr "Tribal Fish"
+
 msgid "projection_decals/special/projection_decal_87"
 msgstr "Dog's Home!"
 
@@ -21234,6 +21416,9 @@ msgstr ""
 "We appreciate your opinion. As requested, your favorite dog is back! Now you"
 " can always bring your buddy with you into battle and fight together side by"
 " side."
+
+msgid "projection_decals/special/projection_decal_876"
+msgstr "Rabbit in Hat"
 
 msgid "projection_decals/special/projection_decal_88"
 msgstr "Christmas Tree"
@@ -25055,6 +25240,21 @@ msgstr ""
 "Sadly, so far there are more questions than answers, but, to be fair, that really creates extra scientific interest. Why were civilians evacuated in such a hurry? What kind of substance is Mirium? Did they tell us everything?..\n"
 "Hope gave me a poster as a gift, and I hung it in the tank. I want to believe that we really are looking for the key to a brighter future. Of course, I understand that it might be extremely dangerous, but the chance to be a pioneer comes once in a lifetime. I'm ready to take that risk."
 
+msgid "special_style/G73_E50_Ausf_M_BPXVI_3Dst"
+msgstr "Altbewährt"
+
+msgid "special_style/G73_E50_Ausf_M_BPXVI_3Dst_desc/long"
+msgstr ""
+"\"You know what they say—if something isn't broken, don't fix it. But even "
+"if it is broken, that doesn't mean it's the end. Wataru told me the other "
+"day about a Japanese art form called kintsugi, where they patch up broken "
+"pottery with gold and silver. It's a beautiful concept, no? Nothing lasts "
+"forever, but there is beauty in imperfect things, if only you train yourself"
+" to see it. There will come a day when this tank is obsolete, overtaken by "
+"modern machines. That day isn't so far away. But, thanks to some quality "
+"German engineering and a touch of Japanese philosophy, it's not here just "
+"yet.\""
+
 msgid "special_style/G89_Leopard1_BVII_3DSt"
 msgstr "Reiter"
 
@@ -25651,6 +25851,20 @@ msgstr ""
 "combat companion, ready to reach the ends of the earth and strike down "
 "anyone who stands in its way."
 
+msgid "special_style/Pl29_NC_Wz_70T_BPXVI_3Dst"
+msgstr "Upał"
+
+msgid "special_style/Pl29_NC_Wz_70T_BPXVI_3Dst_desc/long"
+msgstr ""
+"\"The jungle is an unforgiving place. Every day is a new challenge, every "
+"trial throws up new difficulties. It's a punishing environment, and it's too"
+" much for some. Fatigue, dehydration, and heatstroke are no joke—and neither"
+" are the tropical diseases and venomous beasts we risk a close encounter "
+"with every time we head out into the jungle depths. We're lucky we have the "
+"Błyskawica—that deep-rifled gun has saved our skin more times than I can "
+"count. And yet, despite all the danger, the exhaustion, the threat of the "
+"unknown...I've never felt so alive.\""
+
 msgid "special_style/R07_T-34-85_3Dst"
 msgstr "Kantemirovets"
 
@@ -26131,6 +26345,21 @@ msgstr ""
 "use that to your advantage, and embrace the art of stealth. And when you're "
 "back, we'll share the spoils. The humans won't know what just hit them—but "
 "us, we'll be kings among raccoons!\""
+
+msgid "special_style/april_fools_day_2025"
+msgstr "Blushing Steel"
+
+msgid "special_style/april_fools_day_2025_desc"
+msgstr "An all-season style dedicated to the power of pink."
+
+msgid "special_style/april_fools_day_2025_desc/long"
+msgstr ""
+"Pink is the new black! Real toughness doesn’t shy away from pink— and "
+"Blushing Steel is the 2D style that proves it. Cover your tank in this "
+"striking shade and show the battlefield that power and personality go hand "
+"in hand. Whether you're leading the charge or holding the line, this bold "
+"camo lets everyone know that true warriors are confident in every color—even"
+" pink."
 
 msgid "special_style/aquino"
 msgstr "Aquino"
@@ -27263,6 +27492,75 @@ msgstr ""
 "those ships of the desert saved their lives when the group's vehicles got "
 "buried in the sands forever."
 
+msgid "special_style/bp2025_1"
+msgstr "Into the Wild"
+
+msgid "special_style/bp2025_1_desc"
+msgstr ""
+"An all-season style to help remain hidden in lush jungle environments."
+
+msgid "special_style/bp2025_1_desc/long"
+msgstr ""
+"The jungle, as it turned out, was full of surprises for wildlife enthusiast "
+"Tomasz, whose animated reactions to creatures he had never seen in the flesh"
+" before greatly amused his crewmates. One morning, as he clambered absent-"
+"mindedly onto his tank's commander's hatch, he let out a startled shout at "
+"the sight of an unusually large lizard sunning itself on the roof. The "
+"lizard quickly scrambled away, but Tomasz's cry of \"Jaszczurka! Jakie "
+"bydlę!\" remained a favorite in-joke of his crew for months thereafter."
+
+msgid "special_style/bp2025_2"
+msgstr "Jungle Palette"
+
+msgid "special_style/bp2025_2_desc"
+msgstr ""
+"An all-season style designed to blend with the rich green hues of the "
+"tropical rainforest."
+
+msgid "special_style/bp2025_2_desc/long"
+msgstr ""
+"An avid reader from a literary family, Konrad had only experienced jungles "
+"through the pages of classic novels, where they were often portrayed as dark"
+" and foreboding—an image that was shattered the moment he first rolled "
+"through their rich canopy of colors. He still dreams of writing a great work"
+" about the vast mountain forests of his home, but his second book, he "
+"insists, will honor the bright, primordial beauty of the jungle."
+
+msgid "special_style/bp2025_3"
+msgstr "Danger Close"
+
+msgid "special_style/bp2025_3_desc"
+msgstr ""
+"An all-season style for camouflage among the dense thickets of the jungle."
+
+msgid "special_style/bp2025_3_desc/long"
+msgstr ""
+"There was little Wataru enjoyed more than keeping his teammates on their "
+"toes through practical jokes. During one expedition far from base, an "
+"unusually panicked-sounding Wataru radioed in a warning: an enraged "
+"elephant, he said, was charging in his teammates' direction. As they "
+"anxiously scanned the trees, bracing to face the rampaging beast, they were "
+"bombarded with a rain of bananas hurled from the underbrush—where Wataru was"
+" in fits of laughter at the crew who had fallen for his false alarm."
+
+msgid "special_style/bp2025_4"
+msgstr "Catch Me"
+
+msgid "special_style/bp2025_4_desc"
+msgstr ""
+"An all-season style that pays tribute to the extreme testing conditions of "
+"the jungle."
+
+msgid "special_style/bp2025_4_desc/long"
+msgstr ""
+"A seasoned communications expert and skilled negotiator, Angélique had faced"
+" intense missions before—but the jungle presented an entirely new challenge."
+" The trials had been framed as a competition for the best international "
+"tankers, but she knew the real stakes—and that, in the sweltering heat and "
+"oppressive humidity, tensions could boil over at any moment. All it would "
+"take was one spark to ignite chaos—and she had to draw on all her expertise "
+"to make sure that didn't happen."
+
 msgid "special_style/bp2025_holiday_1"
 msgstr "Rambo: First Blood"
 
@@ -27824,6 +28122,23 @@ msgid "special_style/clan_rivals_silver_desc"
 msgstr ""
 "An all-season style awarded to the participants of the final stage of the "
 "special clan event."
+
+msgid "special_style/clan_showdown"
+msgstr "Cast in Unity"
+
+msgid "special_style/clan_showdown_desc"
+msgstr "An all-season style that celebrates team camaraderie."
+
+msgid "special_style/clan_showdown_desc/long"
+msgstr ""
+"Your team is about belonging. It's about unity, resilience, and having no "
+"fear. Because when you're with your people, there's nothing to fear. You "
+"play to each other's strengths and bring out the best in each other. You're "
+"free to express yourself—because you know your teammates will always have "
+"your back, no matter what. You've been through a lot—good times and bad. But"
+" all the hours spent training together, honing strategies through victory "
+"and defeat—they were worth it. Because they've made you unbreakable—and "
+"ready for anything."
 
 msgid "special_style/clan_style_01"
 msgstr "Clan universal"
@@ -30546,6 +30861,12 @@ msgstr ""
 "Only Bellerophon was able to tame this winged horse. Together they fought powerful creatures, rushed through storm clouds, and accomplished many great feats, until one day the fearless hero decided to ride Pegasus over Olympus itself.\n"
 "Zeus, astounded by such audacity, did not hide his anger and cast both of them to the ground, but later returned the flying horse to the sacred mountain and entrusted him to be his assistant: to carry thunder and lightning. Eventually, Pegasus turned into a constellation, receiving two bright stars, Enif and Markab, for his courage and devotion."
 
+msgid "special_style/onslaught_spring"
+msgstr "Dauntless Soul"
+
+msgid "special_style/onslaught_spring_desc"
+msgstr "An all-season style awarded for supporting OLS Spring'25."
+
 msgid "special_style/onslaught_tournaments"
 msgstr "Among the First"
 
@@ -31276,6 +31597,12 @@ msgid "special_style/st_patricks_day_2024_3_desc"
 msgstr ""
 "An all-season style to capture the spirit of the Emerald Isle as you "
 "celebrate Shamrock Showdown."
+
+msgid "special_style/st_patricks_day_2025"
+msgstr "Fortune's Forge"
+
+msgid "special_style/st_patricks_vehicles_2024"
+msgstr "Green Machine"
 
 msgid "special_style/stayhome"
 msgstr "Home Sweet Home"
@@ -32216,6 +32543,21 @@ msgstr ""
 "\n"
 "Freki and Geri (meaning \"ravenous\" and \"greedy\") are two wolves accompanying the god Odin. They appear in the Old Norse works of literature written in the 13th century such as the Poetic Edda and Prose Edda, as well as the poetry of skalds."
 
+msgid "special_style/womens_day_2025"
+msgstr "Kintsugi Armor"
+
+msgid "special_style/womens_day_2025_desc"
+msgstr "An all-season style inspired by the Japanese art of kintsugi."
+
+msgid "special_style/womens_day_2025_desc/long"
+msgstr ""
+"Kintsugi is the Japanese art of repairing broken pottery with a special "
+"urushi lacquer coated in gold, silver, or platinum. Rather than hiding "
+"cracks, kintsugi highlights and celebrates them as part of a unique story "
+"that adds value. Embracing adversity and turning it into something beautiful"
+" reminds us that our scars and imperfections only make us stronger—be it on "
+"the battlefield or in the challenges of daily life."
+
 msgid "special_style/wormrider"
 msgstr "Wormrider"
 
@@ -32223,6 +32565,24 @@ msgid "special_style/wormrider_desc"
 msgstr ""
 "An all-season style in honor of the Distant Futures event.\n"
 "Ambush unsuspecting enemies just like the sandworms of Arrakis, known by the Fremen as Shai-Hulud."
+
+msgid "special_style/wot_birthday_2025"
+msgstr "Forged in Fire"
+
+msgid "special_style/wot_birthday_2025_desc"
+msgstr ""
+"An all-season style that celebrates resilience and a never-say-die attitude."
+
+msgid "special_style/wot_birthday_2025_desc/long"
+msgstr ""
+"Celebrate the unbreakable spirit of a vehicle—and Commander—that’s seen it "
+"all. The scars that adorn it are what make it uniquely yours—a visual "
+"reminder of the persistence and determination you've shown to rise through "
+"the ranks. Every critical hit and ricochet, every long-range snipe-off and "
+"close-quarters encounter, every hard-earned victory and bitter defeat—you "
+"wouldn't be the tanker you are today without all of them. The deeper the "
+"marks etched into your armor, the deeper you carve your legacy into the "
+"battlefield."
 
 msgid "special_style/wot_classic"
 msgstr "such camo, much wow"

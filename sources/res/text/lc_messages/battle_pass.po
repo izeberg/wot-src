@@ -34,20 +34,13 @@ msgstr ""
 msgid "awardsWidget/description/commander"
 msgstr "Click to see all event crew members."
 
-msgid "awardsWidget/description/point"
-msgstr "Click to view items from the previous Seasons for Battle Pass Points."
-
-msgid "awardsWidget/description/pointLocked"
+msgid "awardsWidget/description/taler"
 msgstr ""
-"Click to view items from the previous Seasons for Battle Pass Points. Items "
-"will be available for purchase after completing all Chapters of the current "
-"Season."
+"Click to view items from previous Battle Pass Seasons, available for Chips "
+"or gold."
 
-msgid "awardsWidget/description/pointLockedExceptExtra"
-msgstr ""
-"Click to view items from the previous Seasons for Battle Pass Points. Items "
-"will be available for purchase after completing all Chapters of the current "
-"Season, except the additional Chapter."
+msgid "awardsWidget/description/ticket"
+msgstr "Click to scratch Vouchers and receive rewards."
 
 msgid "awardsWidget/title/awardMultiple"
 msgstr ""
@@ -68,8 +61,13 @@ msgstr "COLLECTION"
 msgid "awardsWidget/title/commander"
 msgstr "CREW MEMBERS"
 
-msgid "awardsWidget/title/point"
-msgstr "ITEMS FOR POINTS"
+msgid "awardsWidget/title/taler"
+msgstr "BATTLE PASS VAULT"
+
+msgid "awardsWidget/title/ticket"
+msgstr ""
+"SCRATCH\n"
+"VOUCHERS"
 
 msgid "battleBonusX5"
 msgstr "Mission for x5 to experience"
@@ -129,6 +127,12 @@ msgstr "IMPROVED PASS"
 
 msgid "battlePassAwardsView/footer/getRewardsButton"
 msgstr "Claim Rewards"
+
+msgid "battlePassAwardsView/footer/postProgressionButton"
+msgstr "To Elite Circuit"
+
+msgid "battlePassAwardsView/footer/postProgressionText"
+msgstr "You can now access the Elite Circuit"
 
 msgid "battlePassAwardsView/header/bpAllChapters"
 msgstr "All Chapters"
@@ -417,60 +421,38 @@ msgstr "Battle Pass"
 msgid "chapter/fullName/10021"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/10041"
-msgstr "Rambo"
-
 msgid "chapter/fullName/1114"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/151"
-msgstr "Dark Horizon"
+msgid "chapter/fullName/161"
+msgstr "Field Notes"
 
-msgid "chapter/fullName/152"
-msgstr "Unknowable Power"
+msgid "chapter/fullName/162"
+msgstr "Dare to Do"
 
-msgid "chapter/fullName/153"
-msgstr "Ephemeral Hope"
+msgid "chapter/fullName/163"
+msgstr "Far From Heimat"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/10041"
-msgstr "RAMBO"
-
 msgid "chapter/fullNameUppercased/1114"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/151"
-msgstr "DARK HORIZON"
+msgid "chapter/fullNameUppercased/161"
+msgstr "FIELD NOTES"
 
-msgid "chapter/fullNameUppercased/152"
-msgstr "UNKNOWABLE POWER"
+msgid "chapter/fullNameUppercased/162"
+msgstr "DARE TO DO"
 
-msgid "chapter/fullNameUppercased/153"
-msgstr "EPHEMERAL HOPE"
+msgid "chapter/fullNameUppercased/163"
+msgstr "FAR FROM HEIMAT"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
 
 msgid "chapterChoice/activeTitle"
 msgstr "SEASON CHAPTERS"
-
-msgid "chapterChoice/allChaptersCompleted/description"
-msgstr ""
-"Now you can spend Battle Pass Points in a special section of the in-game Store.\n"
-"Hurry to earn Points while Battle Pass is available."
-
-msgid "chapterChoice/allChaptersCompleted/title"
-msgstr "ALL CHAPTERS COMPLETED"
-
-msgid "chapterChoice/buy"
-msgstr "Purchase Chapter"
-
-msgid "chapterChoice/chapterBought/tooltip"
-msgstr ""
-"You have already purchased this Chapter. All rewards of the Improved Pass "
-"are available to you."
 
 msgid "chapterChoice/chapterCompleted"
 msgstr "Chapter completed"
@@ -492,6 +474,14 @@ msgstr "You can switch to other Chapters at any time."
 
 msgid "chapterChoice/confirmation/description/switch"
 msgstr "You have already activated the %(chName)s Chapter. It will be paused."
+
+msgid "chapterChoice/confirmation/extraChapterDescription/highlightText"
+msgstr "will be unavailable"
+
+msgid "chapterChoice/confirmation/extraChapterDescription/text"
+msgstr ""
+"%(icon)Once the Special Chapter is activated, the Elite Circuit "
+"%(highlightText) until the Chapter is over or you complete its Progression."
 
 msgid "chapterChoice/confirmation/title/select"
 msgstr "Activate the %(chName)s Chapter?"
@@ -517,11 +507,16 @@ msgstr ""
 msgid "chapterChoice/freePoints/tooltip/title"
 msgstr "Unspent Battle Pass Points"
 
+msgid "chapterChoice/postProgression/button/text"
+msgstr "ELITE CIRCUIT"
+
+msgid "chapterChoice/postProgression/text"
+msgstr ""
+"Available after all Chapters are completed. Chapters completed: "
+"%(completedChaptersCount)/%(chaptersCount)"
+
 msgid "chapterChoice/premiumVehicle/reward"
 msgstr "Premium Vehicle"
-
-msgid "chapterChoice/style/description"
-msgstr "All 3D styles are related to certain Chapters."
 
 msgid "chapterChoice/stylePreview/backLabel"
 msgstr "TO CHAPTERS"
@@ -580,21 +575,6 @@ msgstr "x%(multiplier)s"
 msgid "commonProgression/body/ended"
 msgstr "Battle Pass Season has finished"
 
-msgid "dailyQuests/button"
-msgstr "Affirmative!"
-
-msgid "dailyQuests/description"
-msgstr ""
-"During Battle Pass, completing each daily mission, including Bonus and final"
-" missions (for a chain of %(questNumber)s missions), will provide additional"
-" Battle Pass Points."
-
-msgid "dailyQuests/descriptionAccent"
-msgstr "Battle Pass Points"
-
-msgid "dailyQuests/title"
-msgstr "Battle Pass Points for Daily Missions"
-
 msgid "equipCoinBonus"
 msgstr "Components: %(count)s"
 
@@ -644,6 +624,49 @@ msgstr "Loader"
 
 msgid "finalReward/tankman/roles/radioman"
 msgstr "Radio Operator"
+
+msgid "holidayFinalScreen/buyState/buyButton"
+msgstr "Purchase Improved Pass"
+
+msgid "holidayFinalScreen/buyState/description"
+msgstr ""
+"By purchasing the Improved Pass, you will immediately receive a Premium "
+"vehicle with a unique 3D style and all Improved Pass Rewards."
+
+msgid "holidayFinalScreen/buyState/moreRewards"
+msgstr "Other Rewards: %(count)s"
+
+msgid "holidayFinalScreen/buyState/title"
+msgstr "Get Improved Pass Rewards"
+
+msgid "holidayFinalScreen/chapter"
+msgstr "%(chapterName)s"
+
+msgid "holidayFinalScreen/completed"
+msgstr "CHAPTER COMPLETED"
+
+msgid "holidayFinalScreen/finalState/button"
+msgstr "View in Garage"
+
+msgid "holidayFinalScreen/finalState/label"
+msgstr "All event rewards received"
+
+msgid "holidayFinalScreen/selectableRewardsState/button"
+msgstr "Claim Rewards"
+
+msgid "holidayFinalScreen/selectableRewardsState/label"
+msgstr "You still have rewards to choose from."
+
+msgid "holidayFinalScreen/tankmenState/description"
+msgstr ""
+"During this event, bundles containing unique crew members are available in "
+"the Store."
+
+msgid "holidayFinalScreen/tankmenState/tankmenButton"
+msgstr "Listen to Voiceovers"
+
+msgid "holidayFinalScreen/tankmenState/title"
+msgstr "Collect All Crew Members!"
 
 msgid "howToEarnPoints/battleTypeTitle/1"
 msgstr "Random Battle"
@@ -791,17 +814,48 @@ msgstr "ABOUT BATTLE PASS"
 msgid "intro/button"
 msgstr "Affirmative!"
 
+msgid "intro/postProgression/text"
+msgstr ""
+"Complete all main Chapters to unlock the Elite Circuit, where you can earn "
+"bonds and Vouchers as a reward. The Progression is cyclical, meaning you can"
+" complete it as many times as you want until the end of the Battle Pass "
+"Season."
+
+msgid "intro/postProgression/title"
+msgstr "ELITE CIRCUIT"
+
 msgid "intro/seasonDescription/text"
 msgstr ""
-"This is a special Battle Pass event in collaboration with a legendary movie "
-"series. A short but explosive adventure, it offers exclusive rewards "
-"inspired by the iconic Rambo universe. Are you ready to fight for survival?"
+"In Battle Pass Season XVI, you will have the chance to receive exclusive 3D "
+"styles for the Season's Core Vehicles: the&nbsp;NC&nbsp;70&nbsp;Błyskawica, "
+"Type&nbsp;71, and E&nbsp;50&nbsp;Ausf.&nbsp;M."
 
 msgid "intro/seasonDescription/title"
-msgstr "COLLABORATION WITH THE RAMBO SERIES"
+msgstr "NEW THEMED 3D STYLES"
+
+msgid "intro/talers/text"
+msgstr ""
+"Advance through the Battle Pass Progression to earn Chips, a new currency "
+"that can be spent in the Battle Pass Vault section of the in-game Store. "
+"There, you can purchase customization elements and crew members from "
+"previous Battle Pass Seasons, economic resources, and more."
+
+msgid "intro/talers/title"
+msgstr "CHIPS"
+
+msgid "intro/tickets/text"
+msgstr ""
+"Discover the new Battle Pass reward—Vouchers! Earn them in the Elite Circuit"
+" and scratch them to receive rewards."
+
+msgid "intro/tickets/title"
+msgstr "VOUCHERS"
 
 msgid "intro/title"
-msgstr "RAMBO"
+msgstr "SEASON XVI: WHO DARES WINS"
+
+msgid "lootBoxBonus"
+msgstr "%(boxName)s: %(count)s"
 
 msgid "points/top"
 msgstr "%(vehicle): %(bonus) for %(top) by XP."
@@ -809,49 +863,61 @@ msgstr "%(vehicle): %(bonus) for %(top) by XP."
 msgid "points/topCount"
 msgstr "top %(top)s"
 
-msgid "postProgression/buyState/buyButton"
-msgstr "Purchase Improved Pass"
+msgid "postProgressionView/footer/button/text"
+msgstr "To Chapters"
 
-msgid "postProgression/buyState/description"
+msgid "postProgressionView/footer/description/text"
 msgstr ""
-"By purchasing the Improved Pass, you will immediately receive "
-"the&nbsp;Rambo&nbsp;Tier IX Premium American heavy tank with a unique look "
-"inspired by the movies and all Improved Pass Rewards."
+"Available after all Chapters are completed. Chapters completed: "
+"%(completedChapters)/%(chaptersAmount)"
 
-msgid "postProgression/buyState/moreRewards"
-msgstr "Other Rewards: %(count)s"
+msgid "postProgressionView/footer/extraChapter/description/text"
+msgstr "Dive into it for exclusive rewards and unique customization elements."
 
-msgid "postProgression/buyState/title"
-msgstr "Get Improved Pass Rewards"
+msgid "postProgressionView/footer/extraChapter/title/text"
+msgstr "The Special Chapter is here!"
 
-msgid "postProgression/chapter"
-msgstr "%(chapterName)s"
+msgid "postProgressionView/footer/purchaseIP/banner/text"
+msgstr "Purchase the Improved Pass and get more rewards!"
 
-msgid "postProgression/completed"
-msgstr "CHAPTER COMPLETED"
+msgid "postProgressionView/footer/purchaseIP/button/text"
+msgstr "Purchase"
 
-msgid "postProgression/finalState/button"
-msgstr "View in Garage"
+msgid "postProgressionView/header/description/active"
+msgstr "Earn Points in battle and receive bonds and Vouchers as a reward"
 
-msgid "postProgression/finalState/label"
-msgstr "All event rewards received"
+msgid "postProgressionView/header/description/onPause/highlight"
+msgstr "PAUSED."
 
-msgid "postProgression/selectableRewardsState/button"
-msgstr "Claim Rewards"
+msgid "postProgressionView/header/description/onPause/regular"
+msgstr "Will be available after you complete the Special Chapter Progression."
 
-msgid "postProgression/selectableRewardsState/label"
-msgstr "You still have rewards to choose from."
+msgid "postProgressionView/header/headline/deadline"
+msgstr "Will last until %(endDate)s"
 
-msgid "postProgression/tankmenState/description"
-msgstr ""
-"During this event, bundles containing unique crew members are available in "
-"the Store."
+msgid "postProgressionView/header/headline/unlocked"
+msgstr "All Chapters completed"
 
-msgid "postProgression/tankmenState/tankmenButton"
-msgstr "Listen to Voiceovers"
+msgid "postProgressionView/header/title"
+msgstr "ELITE CIRCUIT"
 
-msgid "postProgression/tankmenState/title"
-msgstr "Collect All Crew Members!"
+msgid "postProgressionView/progression/currentStep"
+msgstr "Current Stage"
+
+msgid "postProgressionView/progression/cyclesCompleted"
+msgstr "Cycles completed:"
+
+msgid "postProgressionView/progression/cyclicalProgression"
+msgstr "Cyclical Progression"
+
+msgid "postProgressionView/toolbar/aboutBattlePass"
+msgstr "ABOUT BATTLE PASS"
+
+msgid "postProgressionView/toolbar/allChapters"
+msgstr "ALL CHAPTERS"
+
+msgid "postProgressionView/toolbar/howToEarnPoints"
+msgstr "HOW TO EARN POINTS"
 
 msgid "prestige/top"
 msgstr ""
@@ -895,7 +961,9 @@ msgid "progression/battlePassBuyBtn"
 msgstr "Purchase Improved Pass"
 
 msgid "progression/battlePassBuyDescr"
-msgstr "The Improved Pass unlocks the Improved Rewards Track."
+msgstr ""
+"The Improved Pass unlocks the Improved Rewards Track for the current "
+"Chapter."
 
 msgid "progression/battlePassNextChapterBuyDescr"
 msgstr ""
@@ -1066,8 +1134,7 @@ msgid "progression/progressionChapterGoTo"
 msgstr "GO TO"
 
 msgid "progression/season/end/normal"
-msgstr ""
-"Season %(seasonNum)s: %(seasonName)s will last until %(endDay)s %(endMonth)s"
+msgstr "Season %(seasonNum)s: %(seasonName)s will last until %(endDate)s"
 
 msgid "progression/season/end/special"
 msgstr "Will last until: %(endTime)s"
@@ -1158,6 +1225,9 @@ msgstr "Stage %(level)d of the %(chapter)s Chapter"
 msgid "reward/postBattle/title/free"
 msgstr "Battle Pass: Earning Free Points"
 
+msgid "reward/postBattle/title/postProgression"
+msgstr "Stage %(level)d of the Elite Circuit"
+
 msgid "rewardChoice/crewBook/rewardDescription"
 msgstr "experience to each crew member of the selected %(nation)s vehicle"
 
@@ -1176,20 +1246,14 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 msgid "season/fullName/1002"
 msgstr "Carmen de Bisonte"
 
-msgid "season/fullName/1004"
-msgstr "Rambo"
-
-msgid "season/fullName/15"
-msgstr "A Legacy's Beginnings"
+msgid "season/fullName/16"
+msgstr "Who Dares Wins"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "CARMEN DE BISONTE"
 
-msgid "season/fullNameUppercased/1004"
-msgstr "RAMBO"
-
-msgid "season/fullNameUppercased/15"
-msgstr "A LEGACY'S BEGINNINGS"
+msgid "season/fullNameUppercased/16"
+msgstr "WHO DARES WINS"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Equipment directives to select from"
@@ -1358,6 +1422,17 @@ msgstr ""
 msgid "tooltips/battlePassQuestsChain/title"
 msgstr "Access to a Series of Missions"
 
+msgid "tooltips/battlePassTaler/secondaryText"
+msgstr "Earn Chips by advancing through the Battle Pass Progression"
+
+msgid "tooltips/battlePassTaler/text"
+msgstr ""
+"Chips can be used to purchase customization elements and crew members from "
+"previous Seasons, economic resources, and more in the Battle Pass Vault."
+
+msgid "tooltips/battlePassTaler/title"
+msgstr "Chips"
+
 msgid "tooltips/claimRewards/0"
 msgstr "Base Rewards received"
 
@@ -1444,7 +1519,7 @@ msgstr "Complete the previous Chapter to purchase Stages in this Chapter."
 msgid "tooltips/footerBuyBtn/episode/descr"
 msgstr ""
 "By purchasing Stages, you will instantly receive their Base and Improved "
-"Rewards."
+"Rewards. Stages are purchased separately for each Chapter."
 
 msgid "tooltips/goldMission/description"
 msgstr "%(highlight)s You will not receive gold for the days you miss."
@@ -1466,15 +1541,16 @@ msgstr "Daily Gold"
 msgid "tooltips/iconLock/descr1"
 msgstr ""
 "You can increase the list of Stage rewards by purchasing the Improved Pass. "
-"With the Improved Pass, you will receive both Base and Improved Rewards for "
-"completing each subsequent Stage."
+"It is purchased separately for each Chapter and works within the "
+"corresponding Chapter. With the Improved Pass, you will receive both Base "
+"and Improved Rewards for reaching each subsequent Stage."
 
 msgid "tooltips/iconLock/descr2"
 msgstr ""
-"You can purchase the Improved Pass at any time. It will instantly grant you "
-"all Improved Rewards for already completed Stages. You can improve your "
-"rewards on the Battle Pass main screen by clicking the Purchase Improved "
-"Pass button."
+"You can purchase the Improved Pass at any time. It will instantly grant all "
+"Improved Rewards for the completed Stages of the Chapter for which you have "
+"purchased it. You can improve your rewards on the Battle Pass main screen by"
+" clicking the Purchase Improved Pass button."
 
 msgid "tooltips/iconLock/title"
 msgstr "Improved Reward of Battle Pass"
@@ -1523,6 +1599,9 @@ msgstr ""
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "Rules for earning Points in Tier X vehicles in Ranked Battles."
 
+msgid "tooltips/inProgress/postProgression/header"
+msgstr "Elite Circuit"
+
 msgid "tooltips/inProgress/timeLeft"
 msgstr "Left:"
 
@@ -1542,26 +1621,6 @@ msgstr "Battle Pass"
 
 msgid "tooltips/notStarted/date"
 msgstr "%(month)s %(day)s"
-
-msgid "tooltips/notStarted/descr"
-msgstr ""
-"Battle Pass Season starts on {date} and will have a limited duration. To "
-"participate, fight in any Tier VI–X vehicle in Random Battles and earn "
-"Progression Points."
-
-msgid "tooltips/notStarted/noDate/descr"
-msgstr ""
-"The current Season has finished. Follow the latest news on the game portal "
-"for updates about future plans."
-
-msgid "tooltips/notStarted/noDate/subTitle"
-msgstr "Season {seasonNum} has finished"
-
-msgid "tooltips/notStarted/subTitle"
-msgstr "Season Starts on {date}"
-
-msgid "tooltips/notStarted/title"
-msgstr "Battle Pass"
 
 msgid "tooltips/points/footer"
 msgstr ""
@@ -1706,6 +1765,9 @@ msgstr "One of Two 3D Styles"
 
 msgid "tooltips/unlockBattlePass"
 msgstr "Purchase the Improved Pass to unlock the Improved Rewards Track."
+
+msgid "tooltips/unlockBattlePassForPostProgression"
+msgstr "Purchase the Improved Pass for each Chapter and get more rewards."
 
 msgid "tooltips/vehiclePoints/award"
 msgstr "Reward for Reaching the Point Limit"

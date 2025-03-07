@@ -31,9 +31,11 @@ class CacheStates(object):
      INITIALIZED, SYNCING, SYNCED)
 
 
-def generateKey(url):
+def generateKey(url, appName=None):
     md = hashlib.md5()
     md.update(url)
+    if appName == 'server_replays':
+        return md.hexdigest() + '.wotsrvreplay'
     return md.hexdigest()
 
 
@@ -93,8 +95,8 @@ class WebExternalCache(IWebExternalCache):
         loaded = self._storage.load()
         self._cache.update(loaded)
 
-    def get(self, url):
-        key = generateKey(url)
+    def get(self, url, appName=None):
+        key = generateKey(url, appName=appName)
         if key in self._cache:
             res = self._cache[key]
             if self._storage.isFileExist(res):
@@ -104,8 +106,8 @@ class WebExternalCache(IWebExternalCache):
         _logger.debug('Resource %s not found in cache and will be loaded from Web.', url)
         return
 
-    def getRelativePath(self, url):
-        return self.getRelativeFromAbsolute(self.get(url))
+    def getRelativePath(self, url, appName=None):
+        return self.getRelativeFromAbsolute(self.get(url, appName=appName))
 
     def getRelativeFromAbsolute(self, absolute):
         if absolute:
@@ -119,7 +121,7 @@ class WebExternalCache(IWebExternalCache):
     def loadCustomUrls(self, urls, appName):
         filesToDownload = {}
         for url in urls:
-            key = generateKey(url)
+            key = generateKey(url, appName=appName)
             if key not in self._cache or not self._storage.isAppFileExist(appName, key):
                 _logger.debug('Resource not found in cache. Download from web: %s', url)
                 filesToDownload[url] = appName
@@ -217,7 +219,7 @@ class WebExternalCache(IWebExternalCache):
 
     def _onResourceLoaded(self, appName, url, data):
         if data is not None:
-            key = generateKey(url)
+            key = generateKey(url, appName=appName)
             _logger.debug('Resource downloaded: %s size: %r', url, len(data))
             self._storage.addAppFile(appName, key, data, partial(self._onResourceStored, url, key))
             self._downloadedCnt += 1

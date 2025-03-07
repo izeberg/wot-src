@@ -70,7 +70,7 @@
 			<arg>
 				<argId>equipmentPreparationTime</argId>
 				<value>
-					-0.001
+					-0.0015
 					<!--BW_String-->
 				</value>
 			</arg>
@@ -211,7 +211,7 @@
 			<arg>
 				<argId>antifragmentationLining</argId>
 				<value>
-					0.0010
+					0.0015
 					<!--BW_String-->
 				</value>
 			</arg>

@@ -20,8 +20,6 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>108</materialKind>
-					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_EU_234_StoreHouse/hd_bld_EU_234_StoreHouse_BAM.dds</Texture>
@@ -34,6 +32,8 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_EU_234_StoreHouse/hd_bld_EU_234_StoreHouse_BANM.dds</Texture>
 					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>108</materialKind>
 					<property>
 						doubleSided
 						<Bool>true</Bool>

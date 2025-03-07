@@ -1,0 +1,73 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "mode/comp7/battlePassTooltip/body"
+msgstr ""
+"While fighting in Tier X vehicles in "
+"{whiteSpanish_open}Onslaught{whiteSpanish_close}, you will earn Points that "
+"allow you to advance through the Battle Pass Progression."
+
+msgid "mode/comp7/battlePassTooltip/header"
+msgstr "Battle Pass Points"
+
+msgid "mode/comp7/calendarTooltip"
+msgstr "The event will end on %(date)s"
+
+msgid "mode/comp7/description"
+msgstr ""
+"Competitive mode: 7v7 %(parSecondary_open)sI%(parSecondary_close)s "
+"Tier&nbsp;X"
+
+msgid "mode/comp7/seasonEnd/first"
+msgstr "Season of the Azure Manticore has ended"
+
+msgid "mode/comp7/seasonEnd/second"
+msgstr "Season of the Crimson Manticore has ended"
+
+msgid "mode/comp7/seasonEnd/third"
+msgstr "Season of the Jade Manticore has ended"
+
+msgid "mode/comp7/seasonStart/first"
+msgstr "Season of the Azure Manticore will start on %(date)s"
+
+msgid "mode/comp7/seasonStart/second"
+msgstr "Season of the Crimson Manticore will start on %(date)s"
+
+msgid "mode/comp7/seasonStart/third"
+msgstr "Season of the Jade Manticore will start on %(date)s"
+
+msgid "mode/comp7/warning"
+msgstr "Rank Inactivity"
+
+msgid "mode/comp7/widgetDescription/qualification"
+msgid_plural "plural/calendarDay/timeLeft"
+msgstr[0] ""
+"Fight %(maxBattlesCount)s battle\n"
+"to complete Qualification."
+msgstr[1] ""
+"Fight %(maxBattlesCount)s battles\n"
+"to complete Qualification."
+msgstr[2] ""
+"Fight %(maxBattlesCount)s battles\n"
+"to complete Qualification."
+
+msgid "mode/comp7/widgetDescription/status"
+msgstr ""
+"%(rank)s\n"
+"%(division)s"
+
+msgid "mode/comp7/yearEnd"
+msgstr "Year of the Manticore has ended"

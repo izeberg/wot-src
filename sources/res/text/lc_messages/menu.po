@@ -990,7 +990,7 @@ msgid "contextMenu/cancelBuy"
 msgstr "Cancel purchase"
 
 msgid "contextMenu/clanInfo"
-msgstr "Player clan profile"
+msgstr "Player's clan profile"
 
 msgid "contextMenu/compare"
 msgstr "Add to Comparison"
@@ -1108,6 +1108,9 @@ msgstr "Leave Platoon"
 
 msgid "contextMenu/lockSlot"
 msgstr "Lock the slot"
+
+msgid "contextMenu/mentorAssignment"
+msgstr "Mentoring Course"
 
 msgid "contextMenu/messenger/closeAllExceptCurrent"
 msgstr "Close all except current"
@@ -2423,6 +2426,9 @@ msgstr "One-Time Offer in Premium Shop"
 msgid "goldFish/windowHeader"
 msgstr "Bulletin"
 
+msgid "hangar/ammunitionPanel/easyTankEquipBtn"
+msgstr "Quick Service"
+
 msgid "hangar/ammunitionPanel/maitenanceBtn"
 msgstr "Repairs"
 
@@ -2879,26 +2885,6 @@ msgstr "Hunter Platoon"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Create a Platoon of 2 players"
-
-msgid "headerButtons/battle/types/comp7"
-msgstr "Onslaught"
-
-msgid "headerButtons/battle/types/comp7/descr"
-msgstr "?empty?"
-
-msgid "headerButtons/battle/types/comp7/extra/endsIn"
-msgstr "Season ends in %(timeLeft)s"
-
-msgid "headerButtons/battle/types/comp7/extra/finished"
-msgstr ""
-"Follow the latest news on the game portal to stay up-to-date on the start of"
-" the new Season."
-
-msgid "headerButtons/battle/types/comp7/extra/frozen"
-msgstr "This mode is temporarily unavailable for technical reasons."
-
-msgid "headerButtons/battle/types/comp7/extra/startsAt"
-msgstr "From %(time)s"
 
 msgid "headerButtons/battle/types/comp7Squad"
 msgstr "Create Onslaught Platoon"
@@ -3933,6 +3919,9 @@ msgstr " "
 
 msgid "loading/battleTypes/desc/9"
 msgstr " "
+
+msgid "loading/battleTypes/subTitle/23"
+msgstr "Shamrock Showdown"
 
 msgid "loading/helpTip"
 msgstr "For help in battle, press F1."
@@ -6818,10 +6807,10 @@ msgid "training/info/timeout/label"
 msgstr "Battle time:"
 
 msgid "training/info/timeout/value"
-msgstr "%d minutes"
+msgstr "%(roundLength)s minutes"
 
 msgid "training/info/title"
-msgstr "Training Room (%s)"
+msgstr "Training Room (%(arenaName)s)"
 
 msgid "training/info/useCommonVoiceChat"
 msgstr "General"

@@ -192,6 +192,11 @@
 			<UUID>2158110f-1faf-365e-abff-cd6dbf2692b8</UUID>
 			<flags>2</flags>
 		</GameObject>
+		<GameObject>
+			<name>hd_env_UNI_162_ConstructionDebris_03_02</name>
+			<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
+			<flags>2</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -564,6 +569,16 @@
 					<property>
 						<name>Parent</name>
 						<link>10d24619-6e4f-48a5-b666-ca251683f43c</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ff71ccef-000b-4838-bc00-39a75e600dec</link>
 					</property>
 				</config>
 			</component>
@@ -1537,6 +1552,30 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.297112 1.09395 -2.7644
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>0.850242 0.734762 0.999999</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.398993 3.07796 0.277463
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>NetworkComponent</type>
@@ -1913,6 +1952,39 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Environment/hd_env_UNI_162_ConstructionDebris/normal/lod0/hd_env_UNI_162_ConstructionDebris_03.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>StaticObstacle</type>
@@ -2045,6 +2117,20 @@
 			</component>
 			<component>
 				<UUID>cd55cd46-8a63-3262-9026-4e651cbbe3a2</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>spawnResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
 				<flags>34</flags>
 				<config>
 					<property>
@@ -2376,6 +2462,21 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Environment/hd_env_UNI_162_ConstructionDebris/normal/lod0/hd_env_UNI_162_ConstructionDebris_03.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Sound3D</type>
@@ -2689,6 +2790,20 @@
 					<property>
 						<name>colliders</name>
 						<link>cd55cd46-8a63-3262-9026-4e651cbbe3a2</link>
+					</property>
+					<property>
+						<name>receiver</name>
+						<link>445a43f1-a7cb-47a5-a595-b100412e92b7</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>00cdee36-b804-4883-afcc-c837d7d18c77</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>colliders</name>
+						<link>00cdee36-b804-4883-afcc-c837d7d18c77</link>
 					</property>
 					<property>
 						<name>receiver</name>

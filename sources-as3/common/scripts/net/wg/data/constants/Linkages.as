@@ -631,6 +631,8 @@ package net.wg.data.constants
       
       public static const BATTLE_ROYALE_TOURNAMENT_WIDGET_UI:String = "BattleRoyaleTournamentWidgetUI";
       
+      public static const COMP7_WIDGET_UI:String = "Comp7WidgetInjectUI";
+      
       public static const DIP_LOADER_DAMAGED:String = "DipLoaderDamagedUI";
       
       public static const ATLAS_CLASS_NAME:String = "net.wg.gui.components.containers.Atlas";

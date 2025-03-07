@@ -53,6 +53,10 @@ class _ShopTankman(object):
         return self.__tankman.role
 
     @property
+    def role(self):
+        return self.__tankman.role
+
+    @property
     def gender(self):
         if self.isFemale:
             return TManGender.FEMALE
@@ -133,6 +137,10 @@ class _ShopRecruit(_ShopTankman):
 
     @property
     def iconRole(self):
+        return _EMPTY_STR
+
+    @property
+    def role(self):
         return _EMPTY_STR
 
     def __getNewbieStr(self):

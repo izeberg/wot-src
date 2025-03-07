@@ -12,6 +12,11 @@
 		<lootBox>
 			<priority>400</priority>
 			<rarity>epic</rarity>
+			<override>
+				<id>battlePass_commonTicket</id>
+				<priority>317</priority>
+				<rarity>common</rarity>
+			</override>
 		</lootBox>
 		<vehicles>
 			<locked3DStyle>
@@ -51,6 +56,9 @@
 			<paint>
 				<priority>190</priority>
 			</paint>
+			<attachment>
+				<priority>360</priority>
+			</attachment>
 		</customizations>
 		<gold>
 			<priority>350</priority>
@@ -209,6 +217,14 @@
 		<slots>
 			<priority>525</priority>
 		</slots>
+		<currencies>
+			<bptaler>
+				<priority>312</priority>
+			</bptaler>
+		</currencies>
+		<bpcoin>
+			<priority>315</priority>
+		</bpcoin>
 	</core>
 	<anniversaryCN>
 		<vehicles>

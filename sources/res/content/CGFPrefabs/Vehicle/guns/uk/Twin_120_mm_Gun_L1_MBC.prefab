@@ -43,16 +43,6 @@
 			<flags>8</flags>
 		</GameObject>
 		<GameObject>
-			<name>light_main.prefab</name>
-			<UUID>77fdef98-5bef-413a-8381-c959f1592373</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
-			<name>light_main.prefab</name>
-			<UUID>06bddc3b-4abd-4181-9a1f-0e08d0399c22</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
 			<name>HP_gunFire</name>
 			<UUID>cf4d4681-cab9-4b30-b215-563d065cbf73</UUID>
 			<flags>0</flags>
@@ -75,6 +65,16 @@
 		<GameObject>
 			<name>sound_large_dg.prefab</name>
 			<UUID>63188428-4bc3-4a5b-9cf4-4fc6c10739ad</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>light_large.prefab</name>
+			<UUID>64e227b0-ec6f-4f26-8263-94c780408388</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>light_large.prefab</name>
+			<UUID>03239e01-1fca-447d-b548-474f33c6e921</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -153,26 +153,6 @@
 				</config>
 			</component>
 			<component>
-				<UUID>77fdef98-5bef-413a-8381-c959f1592373</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>2feac2e9-ab51-4954-88ff-00934c1a1329</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>06bddc3b-4abd-4181-9a1f-0e08d0399c22</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>f3eab2c0-dab0-4aad-b404-f3242993d173</link>
-					</property>
-				</config>
-			</component>
-			<component>
 				<UUID>cf4d4681-cab9-4b30-b215-563d065cbf73</UUID>
 				<flags>35</flags>
 				<config>
@@ -222,6 +202,26 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>64e227b0-ec6f-4f26-8263-94c780408388</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>2feac2e9-ab51-4954-88ff-00934c1a1329</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>03239e01-1fca-447d-b548-474f33c6e921</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>f3eab2c0-dab0-4aad-b404-f3242993d173</link>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
@@ -250,7 +250,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							-0.219891 0 2.31728
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -258,7 +261,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>-0 0 -0</value>
 					</property>
 				</config>
 			</component>
@@ -374,48 +377,6 @@
 				</config>
 			</component>
 			<component>
-				<UUID>77fdef98-5bef-413a-8381-c959f1592373</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 0 -1.5708
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>06bddc3b-4abd-4181-9a1f-0e08d0399c22</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 0 1.5708
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
 				<UUID>cf4d4681-cab9-4b30-b215-563d065cbf73</UUID>
 				<flags>35</flags>
 				<config>
@@ -514,34 +475,46 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>64e227b0-ec6f-4f26-8263-94c780408388</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>03239e01-1fca-447d-b548-474f33c6e921</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Prefab</type>
 			<version>2</version>
-			<component>
-				<UUID>77fdef98-5bef-413a-8381-c959f1592373</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>content</name>
-						<section>
-							<resource>content/CGFPrefabs/Vehicle/gun_effects/lights/light_main.prefab</resource>
-						</section>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>06bddc3b-4abd-4181-9a1f-0e08d0399c22</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>content</name>
-						<section>
-							<resource>content/CGFPrefabs/Vehicle/gun_effects/lights/light_main.prefab</resource>
-						</section>
-					</property>
-				</config>
-			</component>
 			<component>
 				<UUID>d7989b31-377f-441e-acc6-3e4a22beb417</UUID>
 				<flags>35</flags>
@@ -586,6 +559,30 @@
 						<name>content</name>
 						<section>
 							<resource>content/CGFPrefabs/Vehicle/gun_effects/sounds/sound_large_dg.prefab</resource>
+						</section>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>64e227b0-ec6f-4f26-8263-94c780408388</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>content</name>
+						<section>
+							<resource>content/CGFPrefabs/Vehicle/gun_effects/lights/light_large.prefab</resource>
+						</section>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>03239e01-1fca-447d-b548-474f33c6e921</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>content</name>
+						<section>
+							<resource>content/CGFPrefabs/Vehicle/gun_effects/lights/light_large.prefab</resource>
 						</section>
 					</property>
 				</config>

@@ -6,7 +6,7 @@ import typing
 from Event import Event, EventManager
 from PlayerEvents import g_playerEvents
 from adisp import adisp_process
-from battle_pass_common import BATTLE_PASS_CHOICE_REWARD_OFFER_GIFT_TOKENS, BATTLE_PASS_CONFIG_NAME, BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_PDATA_KEY, BATTLE_PASS_SELECT_BONUS_NAME, BATTLE_PASS_STYLE_PROGRESS_BONUS_NAME, BP_TANKMAN_QUEST_CHAIN_TOKEN_POSTFIX, BP_TANKMEN_ENTITLEMENT_TAG_PREFIX, BattlePassConfig, BattlePassConsts, BattlePassState, getBattlePassPassTokenName, getMaxAvalable3DStyleProgressInChapter
+from battle_pass_common import BATTLE_PASS_CHOICE_REWARD_OFFER_GIFT_TOKENS, BATTLE_PASS_CONFIG_NAME, BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_PDATA_KEY, BATTLE_PASS_SELECT_BONUS_NAME, BATTLE_PASS_STYLE_PROGRESS_BONUS_NAME, BP_TANKMAN_QUEST_CHAIN_TOKEN_POSTFIX, BP_TANKMEN_ENTITLEMENT_TAG_PREFIX, BattlePassConfig, BattlePassConsts, BattlePassState, getBattlePassPassTokenName, getMaxAvalable3DStyleProgressInChapter, isPostProgressionChapter, NON_CHAPTER_ID
 from constants import ARENA_BONUS_TYPE, OFFERS_ENABLED_KEY, QUEUE_TYPE
 from gui.battle_pass.battle_pass_award import BattlePassAwardsManager, awardsFactory
 from gui.battle_pass.battle_pass_constants import ChapterState
@@ -163,9 +163,7 @@ class BattlePassController(IBattlePassController, EventsHandler):
     def getSupportedArenaBonusTypes(self):
         return [ arenaBonusType for arenaBonusType in self.__getConfig().points ]
 
-    def getMaxLevelInChapter(self, chapterId=None):
-        if chapterId is None:
-            chapterId = first(self.getChapterIDs())
+    def getMaxLevelInChapter(self, chapterId):
         return self.__getConfig().getMaxChapterLevel(chapterId)
 
     def hasExtra(self):
@@ -173,11 +171,14 @@ class BattlePassController(IBattlePassController, EventsHandler):
 
     def isRegularProgressionCompleted(self):
         chapterIDs = []
-        for chapterID in self.__getConfig().getChapterIDs():
+        for chapterID in self.__getConfig().getMainChapterIds():
             if not self.isExtraChapter(chapterID):
                 chapterIDs.append(chapterID)
 
         return all(self.getChapterState(chID) == ChapterState.COMPLETED for chID in chapterIDs)
+
+    def isPostProgressionActive(self):
+        return isPostProgressionChapter(self.getCurrentChapterID())
 
     def getExtraChapterID(self):
         return findFirst(self.isExtraChapter, self.getChapterIDs(), 0)
@@ -204,6 +205,10 @@ class BattlePassController(IBattlePassController, EventsHandler):
         chapters.sort()
         return [ chapterID for chapterID in chapters if isActive(chapterID) ]
 
+    def getMainChapterIDs(self):
+        return [ chapterID for chapterID in self.getChapterIDs() if chapterID in self.__getConfig().getMainChapterIds()
+               ]
+
     def isExtraChapter(self, chapterID):
         return self.__getConfig().isExtraChapter(chapterID)
 
@@ -212,6 +217,9 @@ class BattlePassController(IBattlePassController, EventsHandler):
 
     def getHolidayChapterID(self):
         return self.__getConfig().getChapterIDs()[0]
+
+    def isAllMainChaptersBought(self):
+        return all(self.isBought(chapterID) for chapterID in self.getMainChapterIDs())
 
     def getBattlePassCost(self, chapterID):
         return deepcopy(self.__getConfig().getBattlePassCost(chapterID))
@@ -352,8 +360,15 @@ class BattlePassController(IBattlePassController, EventsHandler):
     def getCurrentChapterID(self):
         activeChapter = self.__itemsCache.items.battlePass.getActiveChapterID()
         if activeChapter not in self.getChapterIDs():
-            activeChapter = 0
+            allChaptersCompleted = all(self.getLevelInChapter(chapterID) >= self.getMaxLevelInChapter(chapterID) for chapterID in self.getMainChapterIDs())
+            if not allChaptersCompleted or self.isHoliday():
+                activeChapter = NON_CHAPTER_ID
+            else:
+                activeChapter = self.getPostProgressionChapterID()
         return activeChapter
+
+    def getPostProgressionChapterID(self):
+        return self.__getConfig().postProgressionChapterID
 
     def hasActiveChapter(self):
         return bool(self.getCurrentChapterID())
@@ -372,6 +387,8 @@ class BattlePassController(IBattlePassController, EventsHandler):
         levelsConfig = self.getLevelsConfig(chapterID)
         if level <= 0:
             return levelsConfig[0]
+        if isPostProgressionChapter(chapterID):
+            level = level % len(levelsConfig)
         return levelsConfig[level] - levelsConfig[(level - 1)]
 
     def getChapterState(self, chapterID):
@@ -406,6 +423,8 @@ class BattlePassController(IBattlePassController, EventsHandler):
         return self.getProgressionByPoints(chapterID, points, level)
 
     def getLevelByPoints(self, chapterID, points):
+        if isPostProgressionChapter(chapterID):
+            points = points % self.getLevelsConfig(chapterID)[(-1)]
         if points >= self.getLevelsConfig(chapterID)[(-1)]:
             return self.getMaxLevelInChapter(chapterID)
         return bisect.bisect_right(self.getLevelsConfig(chapterID), points)
@@ -416,6 +435,9 @@ class BattlePassController(IBattlePassController, EventsHandler):
             points = levelsConfig[(-1)] - levelsConfig[(-2)]
             return (
              points, points)
+        if isPostProgressionChapter(chapterID):
+            points = points % levelsConfig[(-1)]
+            level = level % len(levelsConfig)
         if level <= 0:
             basePoints = 0
             limitPoints = levelsConfig[0]
@@ -425,6 +447,11 @@ class BattlePassController(IBattlePassController, EventsHandler):
         levelPoints = points - basePoints
         return (
          levelPoints, limitPoints)
+
+    def getCompletedCyclesCount(self, chapterID):
+        if not isPostProgressionChapter(chapterID):
+            return 0
+        return self.getPointsInChapter(chapterID) / self.getLevelsConfig(chapterID)[(-1)]
 
     def getPerBattlePoints(self, gameMode=ARENA_BONUS_TYPE.REGULAR, vehCompDesc=None):
         winList = self.__getPackedBonusPointsList(vehTypeCompDescr=vehCompDesc, gameMode=gameMode)
@@ -611,7 +638,7 @@ class BattlePassController(IBattlePassController, EventsHandler):
         tokens = diff.get('tokens', {})
         if not tokens:
             return
-        allChapters = self.getChapterIDs()
+        allChapters = self.getMainChapterIDs()
         allChapters.append(0)
         for chapter in allChapters:
             if getBattlePassPassTokenName(self.getSeasonID(), chapter) in tokens:

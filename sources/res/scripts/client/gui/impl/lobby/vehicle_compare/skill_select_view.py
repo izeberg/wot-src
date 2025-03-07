@@ -25,8 +25,8 @@ from PlayerEvents import g_playerEvents
 if typing.TYPE_CHECKING:
     from gui.Scaleform.daapi.view.lobby.vehicle_compare.cmp_configurator_view import VehicleCompareConfiguratorMain
     from gui.shared.gui_items.Vehicle import Vehicle
-    from gui.shared.gui_items.Tankman import TankmanSkill
-    from typing import List
+    from gui.shared.gui_items.tankman_skill import TankmanSkill
+    from typing import List, Optional
 
 def _fillRowModel(vm, role, maxCount, currentCount, tankmanIdx):
     vm.setRole(role)
@@ -35,11 +35,12 @@ def _fillRowModel(vm, role, maxCount, currentCount, tankmanIdx):
     vm.setTankmanIdx(tankmanIdx)
 
 
-def _fillSkills(skillsList, skillsVL, selectedSkills, isMaxSelected):
+def _fillSkills(skillsList, skillsVL, selectedSkills, skillRole, isMaxSelected):
     for skill in skillsList:
         skillVM = SkillSelectItemModel()
         skillName = skill.name
         skillVM.setName(skillName)
+        skillVM.setRoleName(skillRole)
         defaultState = SkillState.DISABLED if isMaxSelected else SkillState.DEFAULT
         skillVM.setState(SkillState.SELECTED if skillName in selectedSkills else defaultState)
         skillsVL.addViewModel(skillVM)
@@ -116,8 +117,9 @@ class SkillSelectView(ViewImpl):
             tooltipId = event.getArgument('tooltipId')
             if tooltipId == TooltipConstants.SKILL:
                 skillName = str(event.getArgument('skillName'))
+                roleName = str(event.getArgument('roleName'))
                 level = round(crewMemberRealSkillLevel(self.__skillsManager.getVehicle(), skillName), 2)
-                args = [skillName, None, level]
+                args = [skillName, roleName, None, level]
                 self.__toolTipMgr.onCreateWulfTooltip(TOOLTIPS_CONSTANTS.CREW_PERK_GF, args, event.mouse.positionX, event.mouse.positionY, parent=self.getParentWindow())
                 return TOOLTIPS_CONSTANTS.CREW_PERK_GF
         return super(SkillSelectView, self).createToolTip(event)
@@ -157,8 +159,8 @@ class SkillSelectView(ViewImpl):
                 commonSkillsVL = majorSkillsVM.getCommonSkills()
                 skillsVL.clear()
                 commonSkillsVL.clear()
-                _fillSkills(skills, skillsVL, selectedSkills, isMaxSelected)
-                _fillSkills(commonSkills, commonSkillsVL, selectedSkills, isMaxSelected)
+                _fillSkills(skills, skillsVL, selectedSkills, mainRole, isMaxSelected)
+                _fillSkills(commonSkills, commonSkillsVL, selectedSkills, mainRole, isMaxSelected)
                 for bonusRole in bonusRoles:
                     selectedCount, isMaxSelected = _getSkillsCountByRole(bonusRole, selectedSkills, SkillType.BONUS.value)
                     bonusSkillsVM = SkillSelectRowModel()
@@ -166,7 +168,7 @@ class SkillSelectView(ViewImpl):
                     bonusSkills = possibleSkills.get(bonusRole, [])
                     bonusSkillsVL = bonusSkillsVM.getSkills()
                     bonusSkillsVL.clear()
-                    _fillSkills(bonusSkills, bonusSkillsVL, selectedSkills, isMaxSelected)
+                    _fillSkills(bonusSkills, bonusSkillsVL, selectedSkills, bonusRole, isMaxSelected)
                     bonusRows.addViewModel(bonusSkillsVM)
 
                 majorRows.addViewModel(majorSkillsVM)

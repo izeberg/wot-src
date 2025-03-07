@@ -74,6 +74,15 @@ msgstr "Boxes available: %(boxesCount)"
 msgid "awardViews/quantityTitle/noBoxes"
 msgstr "No boxes available"
 
+msgid "bonuses/customization/rarity/epic"
+msgstr "Epic"
+
+msgid "bonuses/customization/rarity/legendary"
+msgstr "Legendary"
+
+msgid "bonuses/customization/rarity/rare"
+msgstr "Rare"
+
 msgid "bonuses/description/battle_booster"
 msgstr "Directive"
 
@@ -97,6 +106,9 @@ msgstr "Blueprint Fragment (%(nation)s)"
 
 msgid "bonuses/label/blueprints/universalFragment"
 msgstr "Universal Blueprint Fragment"
+
+msgid "bonuses/label/bpcoin"
+msgstr "Battle Pass Token"
 
 msgid "boxTooltip/description/text/default"
 msgstr ""
@@ -231,6 +243,9 @@ msgstr "No boxes available"
 
 msgid "helpers/doubleBreakLine"
 msgstr "<br/><br/>"
+
+msgid "helpers/lootBoxBonus"
+msgstr "%(boxName)s: %(count)s"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr ""
@@ -461,6 +476,9 @@ msgstr[0] "%(count) pc."
 msgstr[1] "%(count) pcs."
 msgstr[2] "%(count) pcs."
 
+msgid "statisticsRewards/label/attachment"
+msgstr "3D Attachments"
+
 msgid "statisticsRewards/label/battle_bonus_x5"
 msgstr "Missions for x5 XP per battle"
 
@@ -500,9 +518,6 @@ msgstr "Free XP"
 msgid "statisticsRewards/label/gold"
 msgstr "Gold"
 
-msgid "statisticsRewards/label/lootBox_default"
-msgstr "Tactical Box"
-
 msgid "statisticsRewards/label/new_device_mi_gift"
 msgstr "Standard Equipment"
 
@@ -538,6 +553,9 @@ msgstr "Reset Stats"
 
 msgid "statisticsRewards/resetButton/tooltipText"
 msgstr "Click to reset all statistics."
+
+msgid "statisticsRewards/tooltips/category/attachment"
+msgstr "%(num). %(label) %(count) %(rarity)"
 
 msgid "statisticsRewards/tooltips/category/compensationCount"
 msgid_plural "plural/statisticsRewards/tooltips/category/compensationCount"

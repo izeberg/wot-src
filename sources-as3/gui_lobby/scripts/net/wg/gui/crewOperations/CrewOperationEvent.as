@@ -6,6 +6,8 @@ package net.wg.gui.crewOperations
    {
       
       public static const OPERATION_CHANGED:String = "crewOperChanged";
+      
+      public static const TOGGLE_CLICK:String = "toggleClick";
        
       
       public var operationName:String;

@@ -1,3 +1,4 @@
+from battle_royale.gui.impl.lobby.tooltips.shop_tooltip_view import ShopTooltipView
 from CurrentVehicle import g_currentVehicle
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.Scaleform.daapi.view.common.battle_royale import br_helpers
@@ -8,6 +9,10 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.battle_royale.tech_parameters_cmp_view_model import TechParametersCmpViewModel
 from gui.impl.pub import ViewImpl
 from gui.shared import event_dispatcher
+from gui.shared.event_dispatcher import showShop
+from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getSteelHunterProductsUrl
+from helpers import dependency
+from skeletons.gui.game_control import IBattleRoyaleController
 
 class TechParametersComponent(BattleRoyaleTechParametersComponent, InjectComponentAdaptor):
 
@@ -20,6 +25,7 @@ class TechParametersComponent(BattleRoyaleTechParametersComponent, InjectCompone
 
 class TechParametersView(ViewImpl):
     __slots__ = ('updateHeight', )
+    __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
 
     def __init__(self, viewKey, updateHeight, viewModelClazz=TechParametersCmpViewModel):
         self.updateHeight = updateHeight
@@ -32,24 +38,27 @@ class TechParametersView(ViewImpl):
     def viewModel(self):
         return super(TechParametersView, self).getViewModel()
 
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.battle_royale.lobby.tooltips.ShopTooltipView():
+            return ShopTooltipView()
+        return super(TechParametersView, self).createToolTipContent(event, contentID)
+
     def _onLoading(self, *args, **kwargs):
         super(TechParametersView, self)._onLoading(args, kwargs)
-        self.__addListeners()
         self.__updateModel()
 
-    def _finalize(self):
-        self.__removeListeners()
-        super(TechParametersView, self)._finalize()
-
-    def __addListeners(self):
-        g_currentVehicle.onChanged += self.__onCurrentVehicleChanged
-        self.viewModel.onClick += self.__onClick
-        self.viewModel.onResized += self.__onResized
-
-    def __removeListeners(self):
-        g_currentVehicle.onChanged -= self.__onCurrentVehicleChanged
-        self.viewModel.onClick -= self.__onClick
-        self.viewModel.onResized -= self.__onResized
+    def _getEvents(self):
+        return (
+         (
+          g_currentVehicle.onChanged, self.__onCurrentVehicleChanged),
+         (
+          self.viewModel.onClick, self.__onClick),
+         (
+          self.viewModel.onResized, self.__onResized),
+         (
+          self.viewModel.onOpenShop, self.__onGotoShopBtnClicked),
+         (
+          self.__battleRoyaleController.onBalanceUpdated, self.__updateModel))
 
     def __onClick(self):
         event_dispatcher.showHangarVehicleConfigurator()
@@ -60,10 +69,14 @@ class TechParametersView(ViewImpl):
     def __onCurrentVehicleChanged(self):
         self.__updateModel()
 
+    def __onGotoShopBtnClicked(self):
+        showShop(getSteelHunterProductsUrl())
+
     def __updateModel(self):
         vehicle = g_currentVehicle.item
         if br_helpers.isIncorrectVehicle(vehicle):
             return
+        stpCoin = self.__battleRoyaleController.getSTPCoinBalance(0)
         nationName = vehicle.nationName
         params = getVehicleProperties(nationName)
         with self.viewModel.transaction() as (tx):
@@ -72,3 +85,4 @@ class TechParametersView(ViewImpl):
             tx.setSurvivability(params.survivability)
             tx.setMobility(params.mobility)
             tx.setDamage(params.damage)
+            tx.setBalance(stpCoin)

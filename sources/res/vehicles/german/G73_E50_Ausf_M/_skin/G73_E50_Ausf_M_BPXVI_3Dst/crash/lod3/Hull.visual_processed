@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.109744 -1.827819</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.519865 0.109744 1.635434</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.637910 0.082520</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_equipment</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_equipment_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.045996 -0.315781 3.221227</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000816 0.032901 -0.334915</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_chassis_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/E50_Ausf_M_BPXVI_3Dst_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.001059 -0.493762 -0.133164</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.942562 -1.118581 -4.032592</min>
+		<max>1.944193 0.768329 3.551670</max>
+	</boundingBox>
+	<geometrySize>142560</geometrySize>
+	<minUVDensity>0.001265</minUVDensity>
+</root>

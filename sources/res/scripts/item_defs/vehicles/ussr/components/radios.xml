@@ -471,9 +471,12 @@
 			<notInShop>true</notInShop>
 			<weight>80</weight>
 			<distance>730</distance>
-			<maxHealth>200</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
-			<repairCost>3</repairCost>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>115</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
 		</R113T>
 		<R113_R200_KV_4_Turchaninov>
 			<userString>#ussr_vehicles:R113_R200_KV_4_Turchaninov</userString>

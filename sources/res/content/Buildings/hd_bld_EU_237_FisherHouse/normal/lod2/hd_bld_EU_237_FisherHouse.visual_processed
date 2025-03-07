@@ -79,78 +79,6 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>s_wall0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s_wall1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-			<node>
-				<identifier>lod2</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>d0_1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d0_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d0_3</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d0_4</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d1_1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
 					<identifier>d1_2</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -170,6 +98,78 @@
 				</node>
 				<node>
 					<identifier>d1_4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d2_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d2_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d2_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d2_4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d3_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d3_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d3_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d3_4</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -206,6 +206,42 @@
 				</node>
 				<node>
 					<identifier>d4_4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d5_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d5_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d5_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d5_4</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -286,6 +322,42 @@
 					</transform>
 				</node>
 				<node>
+					<identifier>n2_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
 					<identifier>n2_5</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -296,6 +368,42 @@
 				</node>
 				<node>
 					<identifier>n2_6</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_4</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -420,6 +528,24 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_wall1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -434,8 +560,26 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>s_wall_1</identifier>
+					<collisionFlags>144</collisionFlags>
+					<materialKind>108</materialKind>
+				</material>
+				<groupOrigin>-0.072273 1.865138 1.397791</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>108</materialKind>
+				</material>
+				<groupOrigin>-0.072273 5.377887 -0.044062</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
 					<identifier>d_wood4_4</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>90</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -466,10 +610,10 @@
 				<groupOrigin>4.532184 10.953637 -0.041155</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				3
 				<material>
 					<identifier>d_wood4_3</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>89</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -500,10 +644,10 @@
 				<groupOrigin>-4.830712 10.923120 0.002908</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				4
 				<material>
 					<identifier>d_wood4_2</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>88</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -534,10 +678,10 @@
 				<groupOrigin>-0.611331 8.719838 4.063289</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				5
 				<material>
 					<identifier>d_wood4_1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -568,10 +712,10 @@
 				<groupOrigin>4.860692 7.100249 3.858483</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				6
 				<material>
 					<identifier>d_metal1_4</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>90</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -650,10 +794,10 @@
 				<groupOrigin>3.074414 8.988991 -2.058182</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				5
+				7
 				<material>
 					<identifier>d_metal1_3</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>89</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -732,10 +876,10 @@
 				<groupOrigin>-3.407089 7.373940 -2.050245</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				6
+				8
 				<material>
 					<identifier>d_metal1_2</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>88</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -814,10 +958,10 @@
 				<groupOrigin>-3.400658 9.116734 1.960564</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				7
+				9
 				<material>
 					<identifier>d_metal1_1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -896,7 +1040,7 @@
 				<groupOrigin>3.088959 8.885442 2.051196</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				8
+				10
 				<material>
 					<identifier>d_wood0_4</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -944,15 +1088,15 @@
 					</property>
 					<property>
 						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_AM.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_MAO.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile2
@@ -970,11 +1114,15 @@
 						colorTex
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.678431 0.541176 0.305882 1.000000</Vector4>
+					</property>
 				</material>
 				<groupOrigin>2.978055 7.281989 -1.803236</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				9
+				11
 				<material>
 					<identifier>d_wood0_3</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -1022,15 +1170,15 @@
 					</property>
 					<property>
 						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_AM.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_MAO.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile2
@@ -1048,11 +1196,15 @@
 						colorTex
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.678431 0.541176 0.305882 1.000000</Vector4>
+					</property>
 				</material>
 				<groupOrigin>-4.417844 7.416734 -1.832751</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				10
+				12
 				<material>
 					<identifier>d_wood0_2</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -1100,15 +1252,15 @@
 					</property>
 					<property>
 						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_AM.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_MAO.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile2
@@ -1126,11 +1278,15 @@
 						colorTex
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.678431 0.541176 0.305882 1.000000</Vector4>
+					</property>
 				</material>
 				<groupOrigin>-2.267218 8.867966 1.779403</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				11
+				13
 				<material>
 					<identifier>d_wood0_1</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -1178,15 +1334,15 @@
 					</property>
 					<property>
 						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_AM.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_04_Internal_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Wood_07_planks_WhitePainted_512_MAO.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile2
@@ -1204,11 +1360,15 @@
 						colorTex
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.678431 0.541176 0.305882 1.000000</Vector4>
+					</property>
 				</material>
 				<groupOrigin>2.988567 7.339661 1.749637</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				12
+				14
 				<material>
 					<identifier>n_wood4_6</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -1242,7 +1402,7 @@
 				<groupOrigin>-2.608428 3.507408 4.329333</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				13
+				15
 				<material>
 					<identifier>n_wood4_5</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -1276,10 +1436,10 @@
 				<groupOrigin>3.599247 3.495687 4.982543</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				14
+				16
 				<material>
 					<identifier>n_wood4_4</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>76</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -1310,10 +1470,10 @@
 				<groupOrigin>4.568949 10.976597 -0.065942</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				15
+				17
 				<material>
 					<identifier>n_wood4_3</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>75</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -1344,10 +1504,10 @@
 				<groupOrigin>-4.892486 10.934820 -0.003104</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				16
+				18
 				<material>
 					<identifier>n_wood4_2</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>74</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -1378,10 +1538,10 @@
 				<groupOrigin>-1.481989 8.693118 4.084706</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				17
+				19
 				<material>
 					<identifier>n_wood4_1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>73</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -1412,12 +1572,12 @@
 				<groupOrigin>3.027472 6.302985 3.893824</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				18
+				20
 				<material>
 					<identifier>n_wood2_6</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>78</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_237_FisherHouse/hd_bld_EU_237_FisherHouse_atlas_blend.png</Texture>
@@ -1490,12 +1650,12 @@
 				<groupOrigin>-2.650801 2.908636 3.790575</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				19
+				21
 				<material>
 					<identifier>n_wood2_5</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>77</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_237_FisherHouse/hd_bld_EU_237_FisherHouse_atlas_blend.png</Texture>
@@ -1568,10 +1728,10 @@
 				<groupOrigin>3.493731 2.908636 4.539195</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				20
+				22
 				<material>
 					<identifier>n_metal1_4</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>76</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -1650,10 +1810,10 @@
 				<groupOrigin>2.729605 9.083532 -1.670424</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				21
+				23
 				<material>
 					<identifier>n_metal1_3</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>75</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -1732,10 +1892,10 @@
 				<groupOrigin>-2.967955 9.071194 -1.479460</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				22
+				24
 				<material>
 					<identifier>n_metal1_2</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>74</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -1814,10 +1974,10 @@
 				<groupOrigin>-2.759844 9.121929 2.025911</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				23
+				25
 				<material>
 					<identifier>n_metal1_1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>73</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -1896,7 +2056,7 @@
 				<groupOrigin>3.068950 8.902148 2.022932</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				24
+				26
 				<material>
 					<identifier>n_wood0_4</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -1978,7 +2138,7 @@
 				<groupOrigin>2.978083 7.351585 -1.797090</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				25
+				27
 				<material>
 					<identifier>n_wood0_3</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -2060,7 +2220,7 @@
 				<groupOrigin>-4.376755 7.399492 -1.797166</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				26
+				28
 				<material>
 					<identifier>n_wood0_2</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -2142,7 +2302,7 @@
 				<groupOrigin>-1.489066 8.799118 1.776124</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				27
+				29
 				<material>
 					<identifier>n_wood0_1</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -2224,10 +2384,10 @@
 				<groupOrigin>2.978083 7.357738 1.742579</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				28
+				30
 				<material>
 					<identifier>s_nd6</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -2302,10 +2462,10 @@
 				<groupOrigin>0.026064 5.625967 0.011122</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				29
+				31
 				<material>
 					<identifier>s_nd5</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -2372,10 +2532,10 @@
 				<groupOrigin>-1.369333 9.071605 0.656707</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				30
+				32
 				<material>
 					<identifier>s_nd4</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -2442,10 +2602,10 @@
 				<groupOrigin>-1.369333 8.706176 0.656710</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				31
+				33
 				<material>
 					<identifier>s_nd3</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -2476,10 +2636,10 @@
 				<groupOrigin>-0.024431 7.494012 0.160095</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				32
+				34
 				<material>
 					<identifier>s_nd2</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -2546,10 +2706,10 @@
 				<groupOrigin>-0.040631 7.631065 -0.053863</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				33
+				35
 				<material>
 					<identifier>s_nd1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -2628,7 +2788,7 @@
 				<groupOrigin>-0.363073 5.331175 -0.021537</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				34
+				36
 				<material>
 					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -2709,24 +2869,6 @@
 				</material>
 				<groupOrigin>-0.281692 7.351585 -0.020758</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				35
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>108</materialKind>
-				</material>
-				<groupOrigin>-0.072273 5.377887 -0.044062</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				36
-				<material>
-					<identifier>s_wall_1</identifier>
-					<collisionFlags>144</collisionFlags>
-					<materialKind>108</materialKind>
-				</material>
-				<groupOrigin>-0.072273 1.865138 1.397791</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -2734,6 +2876,6 @@
 		<max>6.234428 11.443421 6.457397</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>169116</geometrySize>
+	<geometrySize>169028</geometrySize>
 	<minUVDensity>0.001434</minUVDensity>
 </root>

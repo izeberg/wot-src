@@ -13,6 +13,15 @@ msgstr ""
 msgid "buyVehicleWindow/buyBtn"
 msgstr "Purchase"
 
+msgid "buyVehicleWindow/consumablesTooltip/body"
+msgstr "The following consumables will be loaded: %(consumables)s."
+
+msgid "buyVehicleWindow/consumablesTooltip/header"
+msgstr "Purchase Consumables"
+
+msgid "buyVehicleWindow/consumablesTooltip/listSeparator"
+msgstr ", "
+
 msgid "buyVehicleWindow/countCrewLbl"
 msgstr "%(count)s crew members"
 
@@ -36,6 +45,9 @@ msgstr ""
 
 msgid "buyVehicleWindow/equipment/ammo"
 msgstr "Load ammunition"
+
+msgid "buyVehicleWindow/equipment/consumables"
+msgstr "Load consumables"
 
 msgid "buyVehicleWindow/equipment/slot"
 msgstr "Garage slot"

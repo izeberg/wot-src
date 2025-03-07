@@ -124,14 +124,11 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22215</weight>
-		<maxHealth>1000</maxHealth>
+		<maxHealth>920</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>200</maxHealth>
-			<maxRegenHealth>135</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>143</maxRegenHealth>
+			<repairCost>7</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/british/GB23_Centurion/normal/lod0/Hull.model</undamaged>
@@ -2360,7 +2357,7 @@
 			<userString>#gb_vehicles:Chassis_GB149_Centurion_MkI_A</userString>
 			<tags/>
 			<level>7</level>
-			<price>20200</price>
+			<price>20000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<leftTrack>20</leftTrack>
@@ -2389,12 +2386,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>160</maxHealth>
-			<maxRegenHealth>120</maxRegenHealth>
-			<repairCost>
-				5.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>135</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/british/GB23_Centurion/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/british/GB23_Centurion/crash/lod0/Chassis.model</destroyed>
@@ -4929,7 +4923,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB149_Centurion_MkI_A>
@@ -4975,24 +4969,18 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8400</weight>
-			<maxHealth>250</maxHealth>
+			<maxHealth>230</maxHealth>
 			<rotationSpeed>38</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
 				<maxRegenHealth>70</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<repairCost>7</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>90</maxHealth>
+				<maxRegenHealth>45</maxRegenHealth>
+				<repairCost>2</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<OQF_17pdr_Gun_Mk_VII_B>
@@ -5032,7 +5020,7 @@
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
-						<gun>30</gun>
+						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
 						0.36

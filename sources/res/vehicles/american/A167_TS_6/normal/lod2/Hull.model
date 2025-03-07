@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A167_TS_6/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/american/A167_TS_6/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.662402 -0.455784 -3.826340</min>
+		<max>1.669117 1.114181 3.580383</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

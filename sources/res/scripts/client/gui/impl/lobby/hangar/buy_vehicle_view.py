@@ -1,8 +1,11 @@
 import logging
 from collections import namedtuple
 from functools import partial
-from typing import TYPE_CHECKING
-import BigWorld, Settings, adisp, constants
+from typing import TYPE_CHECKING, List, NamedTuple
+import BigWorld
+from account_helpers import AccountSettings
+from account_helpers.AccountSettings import EasyTankEquip
+import Settings, adisp, constants
 from CurrentVehicle import g_currentPreviewVehicle
 from PlayerEvents import g_playerEvents
 from constants import QUEUE_TYPE
@@ -42,19 +45,21 @@ from gui.shared.gui_items.processors.vehicle import VehicleBuyer, VehicleSlotBuy
 from gui.shared.money import Currency, Money, ZERO_MONEY
 from gui.shared.utils import decorators
 from gui.shared.utils.vehicle_collector_helper import getCollectibleVehiclesInInventory
+from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.shop import showBuyGoldForVehicleWebOverlay, showTradeOffOverlay
 from helpers import dependency
 from items import UNDEFINED_ITEM_CD
 from rent_common import parseRentID
-from shared_utils import CONST_CONTAINER
+from shared_utils import CONST_CONTAINER, first
 from skeletons.gui.game_control import IRentalsController, ITradeInController, IRestoreController, IWalletController, ISoundEventChecker
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
 from uilogging.shop.loggers import ShopBuyVehicleMetricsLogger
 from uilogging.shop.logging_constants import ShopLogItemStates
 if TYPE_CHECKING:
-    from typing import Optional, List
+    from typing import Optional
     from gui.shared.money import CURRENCY_TYPE
+    from gui.shared.gui_items.artefacts import Equipment
     from gui.impl.gen.view_models.views.lobby.hangar.buy_vehicle_price_model import BuyVehiclePriceModel
 _logger = logging.getLogger(__name__)
 
@@ -78,9 +83,10 @@ class VehicleOptions(CONST_CONTAINER):
     AMMO = 'ammo'
     SLOT = 'slot'
     CREW = 'crew'
+    CONSUMABLES = 'consumables'
+    ORDER = (AMMO, CONSUMABLES, SLOT, CREW)
     __FOR_SAVE = (
-     CREW,)
-    __ORDER = (AMMO, SLOT, CREW)
+     CREW, CONSUMABLES)
     __SECTION_KEY = Settings.KEY_BUY_VEHICLE_VIEW_PREFERENCES
 
     def __init__(self, defaultKeys=()):
@@ -94,12 +100,13 @@ class VehicleOptions(CONST_CONTAINER):
     def __getitem__(self, idx):
         return getattr(self, self.ALL()[idx])
 
-    def write(self, key, value):
-        setattr(self, self._prepareValue(key), value)
-        self.save()
+    def write(self, key, value, needToSave=True):
+        setattr(self, self._validateValue(key), value)
+        if needToSave:
+            self.save()
 
     def toggle(self, value):
-        value = self._prepareValue(value)
+        value = self._validateValue(value)
         setattr(self, value, not getattr(self, value))
         self.save()
 
@@ -117,12 +124,8 @@ class VehicleOptions(CONST_CONTAINER):
     def getDataSection(self):
         return Settings.g_instance.userPrefs[self.__SECTION_KEY]
 
-    def _prepareValue(self, value):
-        if isinstance(value, int):
-            value = self.__ORDER[value]
-        elif not isinstance(value, str):
-            raise SoftException('Value must be int or str')
-        elif value not in self.ALL():
+    def _validateValue(self, value):
+        if value not in self.ALL():
             raise SoftException(('Value must be in {}').format(self.ALL()))
         return value
 
@@ -136,6 +139,11 @@ _TooltipExtraData = namedtuple('_TooltipExtraData', 'key, itemType')
 _RentPopoverData = namedtuple('_RentPopoverData', ('vehicleIntCD', 'selectedRentTerm'))
 _TradeInPopoverData = namedtuple('_TradeInPopoverData', (
  'confirmGoldPrice', 'tradeOffVehicleIntCD'))
+_ConsumableTagsInfo = NamedTuple('_ConsumableTagsInfo', [
+ (
+  'includedTags', List[str]),
+ (
+  'excludedTags', List[str])])
 _VP_SHOW_PREVIOUS_SCREEN_ON_SUCCESS_ALIASES = (
  VIEW_ALIAS.VEHICLE_PREVIEW,
  VIEW_ALIAS.TRADE_IN_VEHICLE_PREVIEW,
@@ -150,6 +158,11 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
     __restore = dependency.descriptor(IRestoreController)
     __soundEventChecker = dependency.descriptor(ISoundEventChecker)
     __CREW_NOT_SELECTED_IDX = -1
+    __REPAIR_KIT_CONFIG_INDEX = 1
+    __consumablesConfig = [
+     _ConsumableTagsInfo(includedTags=['medkit'], excludedTags=['premium_equipment']),
+     _ConsumableTagsInfo(includedTags=['repairkit'], excludedTags=['premium_equipment']),
+     _ConsumableTagsInfo(includedTags=['extinguisher'], excludedTags=['premium_equipment'])]
     __slots__ = ('__moneyBalanceWidget', '__shop', '__stats', '__nationID', '__inNationID',
                  '__previousAlias', '__actionType', '__returnAlias', '__returnCallback',
                  '__selectedCardIdx', '__vehicle', '__uiMetricsLogger', '__tradeInVehicleToSell',
@@ -191,10 +204,11 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
         self.__purchaseInProgress = False
         self.__usePreviousAlias = False
         self.__tradeInProgress = False
-        self.__selectedOptions = VehicleOptions(defaultKeys=(VehicleOptions.CREW,))
+        self.__selectedOptions = VehicleOptions(defaultKeys=(VehicleOptions.CREW, VehicleOptions.CONSUMABLES))
         self.__crewPrice = ITEM_PRICE_ZERO
         self.__moneyBalanceWidget = MoneyBalance(layoutID=R.views.dialogs.widgets.MoneyBalance())
         self.__tooltipPriceData = {}
+        self.__consumables = []
 
     @property
     def viewModel(self):
@@ -209,8 +223,23 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
         return VehicleOptions.AMMO in self.__selectedOptions
 
     @property
+    def isWithConsumables(self):
+        return VehicleOptions.CONSUMABLES in self.__selectedOptions
+
+    @property
     def isWithCrew(self):
         return VehicleOptions.CREW in self.__selectedOptions
+
+    @property
+    def consumablesPrice(self):
+        return sum([ consumable.getBuyPrice() for consumable in self.__consumables ], ITEM_PRICE_ZERO)
+
+    @property
+    def consumablesToBuy(self):
+        if self.isWithConsumables:
+            return self.__consumables
+        else:
+            return
 
     def createToolTip(self, event):
         if event.contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
@@ -452,7 +481,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
         if isTradeIn:
             self.__purchaseInProgress = False
             vehicle = self.__tradeInVehicleToSell
-            processor = VehicleTradeInProcessor(self.__vehicle, self.__tradeInVehicleToSell, self.isWithSlot, self.isWithAmmo, crewType)
+            processor = VehicleTradeInProcessor(self.__vehicle, self.__tradeInVehicleToSell, self.isWithSlot, self.isWithAmmo, crewType, consumables=self.consumablesToBuy)
         if processor or vehicle:
             confirmationType, ctx = self.__getTradeInCTX(vehicle)
             self.__tradeInInProgress = True
@@ -486,7 +515,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
                 else:
                     result = yield self.__getObtainVehicleProcessor(crewType).request()
             else:
-                result = yield VehicleRenter(self.__vehicle, self.__selectedRentID, self.isWithAmmo, crewType).request()
+                result = yield VehicleRenter(self.__vehicle, self.__selectedRentID, self.isWithAmmo, crewType, consumables=self.consumablesToBuy).request()
             showVehicleReceivedResultMessages(result)
             self.__purchaseInProgress = False
         if result and result.success and not self.isDisposed():
@@ -646,6 +675,9 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
         if self.isWithAmmo:
             totals += self.__getAmmoItemPrice()
             self.__uiMetricsLogger.addItemState(ShopLogItemStates.WITH_AMMO.value)
+        if self.isWithConsumables:
+            totals += self.consumablesPrice
+            self.__uiMetricsLogger.addItemState(ShopLogItemStates.WITH_EQUIPMENT.value)
         return totals
 
     def __getVehiclePrice(self):
@@ -665,10 +697,10 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
          price, defPrice)
 
     def __getObtainVehicleProcessor(self, crewType):
-        return VehicleBuyer(self.__vehicle, self.isWithSlot, self.isWithAmmo, crewType)
+        return VehicleBuyer(self.__vehicle, self.isWithSlot, self.isWithAmmo, crewType, consumables=self.consumablesToBuy)
 
     def __getRestoreVehicleProcessor(self, crewType):
-        return VehicleRestoreProcessor(self.__vehicle, self.isWithSlot, self.isWithAmmo, crewType)
+        return VehicleRestoreProcessor(self.__vehicle, self.isWithSlot, self.isWithAmmo, crewType, consumables=self.consumablesToBuy)
 
     def __getBackportTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
@@ -760,31 +792,57 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             with self.viewModel.transaction():
                 self.__fillOptions()
 
-    @args2params(int)
-    def __onOptionClick(self, index):
-        self.__selectedOptions.toggle(index)
+    @args2params(str)
+    def __onOptionClick(self, name):
+        self.__selectedOptions.toggle(name)
         with self.viewModel.transaction():
             self.__fillOptions()
             self.__fillTotalPrice()
 
     def __fillInfo(self):
         self.__fillTradeInInfo()
+        self.__setConsumables()
         self.__fillOptions()
         self.__fillTotalPrice()
         self.__fillRentInfo()
         self.__fillTitle()
 
+    def __canBuyConsumables(self):
+        return self.__vehicle.consumables.layout and not self.__vehicle.getBuiltInEquipmentIDs()
+
+    def __setConsumables(self):
+        order = AccountSettings.getSettings(EasyTankEquip.EASY_TANK_EQUIP_SETTINGS).get(EasyTankEquip.CONSUMABLES_CARD_PRESET_SLOTS_ORDER)
+        layoutLength = len(self.__vehicle.consumables.layout)
+        self.__consumables = []
+        if self.__canBuyConsumables():
+            if layoutLength == 1:
+                self.__consumables.append(self.__getConsumable(self.__consumablesConfig[self.__REPAIR_KIT_CONFIG_INDEX]))
+            else:
+                self.__consumables.extend(self.__getConsumable(self.__consumablesConfig[configIndex]) for configIndex in order if configIndex < layoutLength)
+
+    def __getConsumable(self, tags):
+        return first(self.__itemsCache.items.getItems(GUI_ITEM_TYPE.EQUIPMENT, REQ_CRITERIA.EQUIPMENT.TAGS(tags.includedTags, tags.excludedTags), nationID=self.__vehicle.nationID).values())
+
     def __fillOptions(self):
         options = self.viewModel.getOptions()
         options.clear()
         options.invalidate()
-        options.addViewModel(self.__createAmmoOptionModel())
-        options.addViewModel(self.__createSlotOptionModel())
-        forceCrewSelected = self.__hasFreePremiumCrew and not self.__vehicle.hasCrew
-        if forceCrewSelected:
-            self.__selectedOptions.write(VehicleOptions.CREW, True)
-        else:
-            options.addViewModel(self.__createCrewOptionModel())
+        for option in VehicleOptions.ORDER:
+            if option == VehicleOptions.AMMO:
+                options.addViewModel(self.__createAmmoOptionModel())
+            if option == VehicleOptions.SLOT:
+                options.addViewModel(self.__createSlotOptionModel())
+            if option == VehicleOptions.CONSUMABLES:
+                if self.__canBuyConsumables():
+                    options.addViewModel(self.__createConsumablesOptionModel())
+                else:
+                    self.__selectedOptions.write(VehicleOptions.CONSUMABLES, False, needToSave=False)
+            if option == VehicleOptions.CREW:
+                forceCrewSelected = self.__hasFreePremiumCrew and not self.__vehicle.hasCrew
+                if forceCrewSelected:
+                    self.__selectedOptions.write(VehicleOptions.CREW, True)
+                else:
+                    options.addViewModel(self.__createCrewOptionModel())
 
     def __createAmmoOptionModel(self):
         ammoPrice = self.__getAmmoItemPrice()
@@ -795,6 +853,19 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             if self.__vehicle.isAmmoFull:
                 tooltipBody = backport.text(R.strings.dialogs.buyVehicleWindow.fullAmmo())
         return self.__createOptionModel(VehicleOptions.AMMO, ammoPrice, R.images.gui.maps.icons.hangar.buyVehicle.ammo(), backport.text(R.strings.hangar.buyVehicleWindow.equipment.ammo()), customState=None if isAvailable else OptionState.DISABLED, tooltipBody=tooltipBody)
+
+    def __createConsumablesOptionModel(self):
+        if not self.__consumables:
+            self.__setConsumables()
+        consumablesPrice = self.consumablesPrice
+        kwargs = {'customState': None}
+        if self.__isAvailablePrice(consumablesPrice.price):
+            kwargs['tooltipHeader'] = backport.text(R.strings.hangar.buyVehicleWindow.consumablesTooltip.header())
+            separator = backport.text(R.strings.hangar.buyVehicleWindow.consumablesTooltip.listSeparator())
+            kwargs['tooltipBody'] = backport.text(R.strings.hangar.buyVehicleWindow.consumablesTooltip.body(), consumables=separator.join([ consumable.userName for consumable in self.__consumables ]))
+        else:
+            kwargs['customState'] = OptionState.DISABLED
+        return self.__createOptionModel(VehicleOptions.CONSUMABLES, consumablesPrice, R.images.gui.maps.icons.hangar.buyVehicle.consumables(), backport.text(R.strings.hangar.buyVehicleWindow.equipment.consumables()), needToSave=False, **kwargs)
 
     def __createSlotOptionModel(self):
         slotItemPrice = self.__shop.getVehicleSlotsItemPrice(self.__stats.vehicleSlots)
@@ -819,9 +890,10 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             tooltipBody = backport.text(R.strings.hangar.buyVehicleWindow.crewInVehicle())
         return self.__createOptionModel(VehicleOptions.CREW, self.__crewPrice, R.images.gui.maps.icons.hangar.buyVehicle.crew(), backport.text(R.strings.hangar.buyVehicleWindow.recruitCrewLbl(), count=crewSize), customState=None if self.__getCrewIsAvailable() else OptionState.DISABLED, tooltipBody=tooltipBody, tooltipHeader=tooltipHeader)
 
-    def __createOptionModel(self, index, itemPrice, icon, title, customState=None, tooltipHeader=None, tooltipBody=None, isPriceVisible=True):
-        isSelected = index in self.__selectedOptions
+    def __createOptionModel(self, optionName, itemPrice, icon, title, customState=None, tooltipHeader=None, tooltipBody=None, isPriceVisible=True, needToSave=True):
+        isSelected = optionName in self.__selectedOptions
         option = BuyVehicleOptionModel()
+        option.setName(optionName)
         option.setIcon(icon)
         option.setTitle(title)
         option.setIsPriceVisible(isPriceVisible)
@@ -829,13 +901,13 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             option.tooltip.setHeader(tooltipHeader)
         if tooltipBody:
             option.tooltip.setBody(tooltipBody)
-        self.__fillPriceModel(option.price, itemPrice, str(index))
+        self.__fillPriceModel(option.price, itemPrice, optionName)
         if customState:
             option.setOptionState(customState)
         else:
             option.setOptionState(OptionState.SELECTED if isSelected else OptionState.DEFAULT)
         if customState == OptionState.DISABLED and isSelected:
-            self.__selectedOptions.write(index, False)
+            self.__selectedOptions.write(optionName, False, needToSave)
         return option
 
     def __fillPriceModel(self, priceModel, itemPrice, tooltipKey):

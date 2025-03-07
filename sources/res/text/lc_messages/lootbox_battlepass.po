@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: <plural forms>\n"
+
+msgid "autoOpenView/boxCount"
+msgid_plural "plural/autoOpenView/boxCount"
+msgstr[0] "%(count) remaining Voucher"
+msgstr[1] "%(count) remaining Vouchers"
+msgstr[2] "%(count) remaining Vouchers"
+
+msgid "autoOpenView/subTitle"
+msgstr "We scratched %(boxCount) for you"
+
+msgid "awardViews/footer/backButton/"
+msgstr "Back to Vouchers"
+
+msgid "awardViews/footer/checkbox/"
+msgstr "Scratch Animation"
+
+msgid "awardViews/quantityTitle/boxesAvailable"
+msgstr "Available: %(boxesCount)"
+
+msgid "awardViews/quantityTitle/noBoxes"
+msgstr "No Vouchers available"
+
+msgid "boxTooltip/description/text/commonTicket"
+msgstr ""
+"Scratch Vouchers to receive rewards! You can earn them in the Elite Circuit."
+
+msgid "boxTooltip/howGet/text/commonTicket"
+msgstr "You can earn Vouchers in the Elite Circuit."
+
+msgid "common/boxCategory/lowerCase/commonTicket"
+msgstr "Voucher"
+
+msgid "common/boxCategory/upperCase/commonTicket"
+msgstr "VOUCHER"
+
+msgid "common/loader"
+msgstr "Scratching Voucher..."
+
+msgid "eventName/lowerCase"
+msgstr "Vouchers"
+
+msgid "eventName/upperCase"
+msgstr "VOUCHERS"
+
+msgid "hasBoxesView/openButtonText"
+msgstr "Scratch Voucher"
+
+msgid "hasBoxesView/quantityTitle/boxesAvailable"
+msgstr "Available: %(boxesCount)"
+
+msgid "hasBoxesView/quantityTitle/noBoxes"
+msgstr "No Vouchers available"
+
+msgid "infoPage/footer/description/autoOpen"
+msgstr "Vouchers can be received as a reward in the Elite Circuit."
+
+msgid "infoPage/footer/description/compensation"
+msgstr ""
+"If there are any Vouchers left on your account at the end of the Battle Pass"
+" Season, they will be scratched automatically."
+
+msgid "infoPage/footer/title/autoOpen"
+msgstr "Get Vouchers"
+
+msgid "infoPage/footer/title/compensation"
+msgstr "Auto Scratch"
+
+msgid "infoPage/header/description"
+msgstr ""
+"Scratch a Voucher for a reward from the list below. You have the chance to "
+"receive credits, Free&nbsp;XP, and components for Experimental Equipment!"
+
+msgid "noBoxesView/description/"
+msgstr ""
+"You do not have any Vouchers. You can earn them\n"
+"in the Elite Circuit."
+
+msgid "noBoxesView/descriptionCn/"
+msgstr ""
+"You do not have any Vouchers. You can earn them\n"
+"in the Elite Circuit."
+
+msgid "preview/backLabel"
+msgstr "TO VOUCHERS"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Vouchers scratched: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Remaining Vouchers Scratched"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"At the end of the Battle Pass Season, we scratched all of your Vouchers and "
+"added the rewards to your account."
+
+msgid "serviceChannelMessages/lootBoxesDisabled/header"
+msgstr "Voucher Scratching Suspended"
+
+msgid "serviceChannelMessages/lootBoxesDisabled/text"
+msgstr ""
+"Operations with Vouchers are temporarily unavailable due to maintenance."
+
+msgid "serviceChannelMessages/lootBoxesEnabled/header"
+msgstr "Voucher Scratching Available"
+
+msgid "serviceChannelMessages/lootBoxesEnabled/text"
+msgstr "Operations with Vouchers are available again. Scratch them!"
+
+msgid "serviceChannelMessages/open"
+msgstr "%(boxName)s Scratched!"
+
+msgid "serviceChannelMessages/server_error"
+msgstr "Voucher Not Scratched"
+
+msgid "serviceChannelMessages/server_error/FAILURE"
+msgstr "Scratching Error"
+
+msgid "singleRewardView/footer/openNextButton/"
+msgstr "Scratch Next"

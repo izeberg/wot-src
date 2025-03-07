@@ -5,19 +5,12 @@ package net.wg.gui.lobby.vehicleCustomization.progressionStyles
    
    public class StageSwitcher extends StageSwitcherMeta implements IStageSwitcherMeta
    {
-      
-      private static const OFFSET:int = 1;
-      
-      private static const WIDTH:uint = 390 + 2 * OFFSET;
-      
-      private static const HEIGHT:uint = 151 + 2 * OFFSET;
        
       
       public function StageSwitcher()
       {
          super();
-         setManageSize(true);
-         setSize(WIDTH,HEIGHT);
+         setManageSize(false);
       }
    }
 }

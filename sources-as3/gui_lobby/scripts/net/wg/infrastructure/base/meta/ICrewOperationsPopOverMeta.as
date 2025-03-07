@@ -8,6 +8,8 @@ package net.wg.infrastructure.base.meta
       
       function invokeOperationS(param1:String) : void;
       
+      function onToggleClickS(param1:String) : void;
+      
       function as_update(param1:Object) : void;
    }
 }

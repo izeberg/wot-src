@@ -1268,6 +1268,9 @@ msgstr "Component added"
 msgid "platformCurrencyMsg/debited/bpbit"
 msgstr "Battle Pass Points removed"
 
+msgid "platformCurrencyMsg/debited/bptaler"
+msgstr "Chips removed"
+
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "Steel Seals removed"
 
@@ -1283,6 +1286,9 @@ msgstr "Personal Fame Points removed"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Free Experience deducted"
 
+msgid "platformCurrencyMsg/debited/stpcoin"
+msgstr "Lucky Seals removed"
+
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "Points of Duty removed"
 
@@ -1291,6 +1297,9 @@ msgstr "Tokens for years of service removed"
 
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Battle Pass Points added"
+
+msgid "platformCurrencyMsg/received/bptaler"
+msgstr "Chips added"
 
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "Steel Seals added"
@@ -1306,6 +1315,9 @@ msgstr "Personal Fame Points added"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Free Experience received"
+
+msgid "platformCurrencyMsg/received/stpcoin"
+msgstr "Lucky Seals received"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "Points of Duty added"
@@ -1563,6 +1575,9 @@ msgstr "Battle Pass Points received: %(pointsDiff)s"
 msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
 msgstr "Steel Seals received: %(value)s"
 
+msgid "serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin"
+msgstr "Lucky Seals received: %(value)s"
+
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "Vehicle destroyed"
 
@@ -1794,11 +1809,20 @@ msgstr "Academy Token"
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "Unspent Points used"
 
+msgid "serviceChannelMessages/battlePass/freePointsUsed/postProgression/text"
+msgstr "Unspent Points used upon Elite Circuit activation: %(points)s."
+
 msgid "serviceChannelMessages/battlePass/freePointsUsed/text"
 msgstr "Unspent Points used: %(points)s for the %(chapter)s Chapter."
 
 msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Standard Equipment to Select From"
+
+msgid "serviceChannelMessages/battlePass/postProgressionActivated/text"
+msgstr "Elite Circuit activated"
+
+msgid "serviceChannelMessages/battlePass/postProgressionPaused/text"
+msgstr "The Elite Circuit is paused."
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
 msgstr "Point Limit reached"
@@ -1868,7 +1892,7 @@ msgstr "Continue fighting and earning Points!"
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"You completed all Battle Pass Season %(season)s Chapters.\n"
+"You completed all main Battle Pass %(season)s Chapters.\n"
 "Reward received:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"
@@ -1932,6 +1956,16 @@ msgstr "Congratulations!"
 
 msgid "serviceChannelMessages/battlePassReward/header/voted"
 msgstr "Reward Granted"
+
+msgid "serviceChannelMessages/battlePassReward/postProgression/newLevel/text"
+msgstr ""
+"Elite Circuit Stage completed.\n"
+"Reward received:"
+
+msgid "serviceChannelMessages/battlePassReward/postProgression/newLevels/text"
+msgstr ""
+"Elite Circuit Stages completed: %(amount)s\n"
+"Reward received:"
 
 msgid "serviceChannelMessages/battlePassReward/tman"
 msgstr "Crew member:"
@@ -2380,7 +2414,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "Financial Transaction"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "Jason's Special Offers"
+msgstr "Auction"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Tokens received"

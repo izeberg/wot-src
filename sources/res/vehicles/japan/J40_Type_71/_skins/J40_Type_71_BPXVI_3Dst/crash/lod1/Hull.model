@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.781381 -0.974634 -5.244851</min>
+		<max>1.772840 0.925189 3.384956</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

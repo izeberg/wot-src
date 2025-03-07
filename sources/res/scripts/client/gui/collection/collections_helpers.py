@@ -1,3 +1,4 @@
+from functools import partial
 import typing, SoundGroups, nations
 from CurrentVehicle import g_currentVehicle
 from collections_common import UNUSABLE_COLLECTION_ENTITIES, USABLE_COLLECTION_ENTITIES
@@ -9,7 +10,7 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.collection.collection_item_preview_model import ItemType
 from gui.server_events.bonuses import getNonQuestBonuses, mergeBonuses, splitBonuses
 from gui.server_events.events_dispatcher import showMissionsBattlePass
-from gui.shared.event_dispatcher import showHangar, showStylePreview, showStyleProgressionPreview
+from gui.shared.event_dispatcher import showHangar, showStylePreview, showStyleProgressionPreview, showCollectionWindow
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.sounds.filters import switchHangarFilteredFilter
@@ -17,7 +18,7 @@ from helpers import dependency
 from helpers.dependency import replace_none_kwargs
 from items.tankmen import getNationConfig, getNationGroups
 from shared_utils import findFirst, first
-from skeletons.gui.game_control import ICollectionsSystemController
+from skeletons.gui.game_control import ICollectionsSystemController, IBattlePassController
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from typing import List, Dict, Optional, Tuple, Union
@@ -67,6 +68,13 @@ def loadHangarFromCollections():
 def loadBattlePassFromCollections(layoutID=None, chapterID=0):
     showMissionsBattlePass(layoutID, chapterID)
     SoundGroups.g_instance.setState(Sounds.STATE_PLACE.value, Sounds.STATE_PLACE_TASKS.value)
+
+
+@replace_none_kwargs(battlePass=IBattlePassController)
+def loadCollectionsFromBattlePass(backLayoutID, chapterID=0, battlePass=None):
+    backText = backport.text(getCollectionRes(battlePass.getCurrentCollectionId()).featureName())
+    backCallback = partial(loadBattlePassFromCollections, backLayoutID, chapterID)
+    showCollectionWindow(collectionId=battlePass.getCurrentCollectionId(), backCallback=backCallback, backBtnText=backText)
 
 
 @replace_none_kwargs(collections=ICollectionsSystemController)

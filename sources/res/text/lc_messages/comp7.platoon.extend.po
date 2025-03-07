@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "buttons/createPlatoon/comp7/forSeven/caption"
+msgstr "7 players"
+
+msgid "buttons/createPlatoon/comp7/forSeven/description"
+msgstr "Creating a Super Platoon of 7 players."
+
+msgid "buttons/createPlatoon/comp7/forSeven/text"
+msgstr "7 players"
+
+msgid "buttons/createPlatoon/comp7/forTwo/caption"
+msgstr "2 players"
+
+msgid "buttons/createPlatoon/comp7/forTwo/description"
+msgstr "Creating a Platoon of 2 players."
+
+msgid "buttons/createPlatoon/comp7/forTwo/text"
+msgstr "2 players"
+
+msgid "members/header/comp7"
+msgstr ": Onslaught"
+
+msgid "members/header/tooltip/comp7/dropdown"
+msgstr "Only the Platoon Commander can change the player limit."
+
+msgid "members/header/tooltip/comp7/dropdown/item"
+msgstr ""
+"Unable to change. The player limit cannot be lower than the current number "
+"of players."

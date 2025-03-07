@@ -17,6 +17,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var showChangeNation:Function;
       
+      public var showEasyTankEquip:Function;
+      
       private var _vehicleStatusVO:VehicleStatusVO;
       
       public function AmmunitionPanelMeta()
@@ -56,6 +58,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.showChangeNation,"showChangeNation" + Errors.CANT_NULL);
          this.showChangeNation();
+      }
+      
+      public function showEasyTankEquipS() : void
+      {
+         App.utils.asserter.assertNotNull(this.showEasyTankEquip,"showEasyTankEquip" + Errors.CANT_NULL);
+         this.showEasyTankEquip();
       }
       
       public final function as_updateVehicleStatus(param1:Object) : void

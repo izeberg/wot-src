@@ -31,7 +31,6 @@ class HelpPagePriority(object):
     BURNOUT = 10
     SIEGE_MODE = 11
     ROLE_TYPE = 12
-    COMP7 = 13
     TWIN_GUN = 14
 
 
@@ -403,27 +402,6 @@ class RoleTypePagesBuilder(DetailedHelpPagesBuilder):
         return
 
 
-class Comp7PagesBuilder(DetailedHelpPagesBuilder):
-    _SUITABLE_CTX_KEYS = ('isComp7', )
-
-    @classmethod
-    def priority(cls):
-        return HelpPagePriority.COMP7
-
-    @classmethod
-    def buildPages(cls, ctx):
-        pages = []
-        comp7Header = backport.text(R.strings.comp7.detailsHelp.mainTitle())
-        for pageName in ('seasonModifiers', 'poi', 'roleSkills', 'rules'):
-            addPage(datailedList=pages, headerTitle=comp7Header, title=backport.text(R.strings.comp7.detailsHelp.dyn(pageName).title()), descr=text_styles.mainBig(backport.text(R.strings.comp7.detailsHelp.dyn(pageName)())), vKeys=[], buttons=[], image=backport.image(R.images.gui.maps.icons.comp7.battleHelp.dyn(pageName)()))
-
-        return pages
-
-    @classmethod
-    def _collectHelpCtx(cls, ctx, arenaVisitor, vehicle):
-        ctx['isComp7'] = arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.COMP7_RANGE
-
-
 class MapboxPagesBuilder(DetailedHelpPagesBuilder):
     _SUITABLE_CTX_KEYS = ('isMapbox', )
     _STR_PATH = R.strings.ingame_help.detailsHelp.mapbox
@@ -470,5 +448,5 @@ class DevMapsPagesBuilder(DetailedHelpPagesBuilder):
 registerIngameHelpPagesBuilders((
  SiegeModePagesBuilder, BurnOutPagesBuilder, WheeledPagesBuilder, TrackWithinTrackPagesBuilder,
  DualGunPagesBuilder, BattleRoyalePagesBuilder, TurboshaftEnginePagesBuilder, RoleTypePagesBuilder,
- RocketAccelerationPagesBuilder, Comp7PagesBuilder, MapboxPagesBuilder, AutoShootGunPagesBuilder,
+ RocketAccelerationPagesBuilder, MapboxPagesBuilder, AutoShootGunPagesBuilder,
  DualAccuracyPagesBuilder, TwinGunPagesBuilder, DevMapsPagesBuilder))

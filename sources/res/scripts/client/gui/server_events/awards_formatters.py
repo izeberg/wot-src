@@ -4,6 +4,7 @@ from math import ceil
 from typing import TYPE_CHECKING
 from constants import LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, RESOURCE_TOKEN_PREFIX
 from exchange.personal_discounts_constants import EXCHANGE_RATE_FREE_XP_NAME, EXCHANGE_RATE_GOLD_NAME
+from goodies.goodie_constants import MENTORING_LICENSE_GOODIE_ID
 from gui.Scaleform.genConsts.SLOT_HIGHLIGHT_TYPES import SLOT_HIGHLIGHT_TYPES
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.locale.QUESTS import QUESTS
@@ -18,13 +19,13 @@ from gui.server_events.formatters import parseComplexToken, TOKEN_SIZES
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.formatters import text_styles
 from gui.shared.gui_items import GUI_ITEM_TYPE, getItemIconName
-from gui.shared.gui_items.Tankman import getRoleUserName
 from gui.shared.gui_items.badge import Badge
 from gui.shared.gui_items.crew_skin import localizedFullName, Rarity
 from gui.shared.gui_items.customization import CustomizationTooltipContext
 from gui.shared.money import Currency
 from gui.shared.utils.functions import makeTooltip
 from gui.shared.utils.requesters import REQ_CRITERIA
+from gui.shared.utils.role_presenter_helper import getRoleUserName
 from helpers import time_utils, i18n, dependency
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 from personal_missions import PM_BRANCH
@@ -114,6 +115,12 @@ def getRecertificationFormImages():
     return result
 
 
+def getMentoringLicenseImages():
+    result = {AWARDS_SIZES.SMALL: backport.image(R.images.gui.maps.icons.mentoring_license.common_48x48()), 
+       AWARDS_SIZES.BIG: backport.image(R.images.gui.maps.icons.mentoring_license.common_80x80())}
+    return result
+
+
 def _getMultiplierFormatter(formatter):
 
     def wrapper(text):
@@ -128,6 +135,7 @@ TEXT_FORMATTERS = {Currency.CREDITS: text_styles.credits,
    Currency.EVENT_COIN: text_styles.eventCoin, 
    Currency.BPCOIN: text_styles.bpcoin, 
    Currency.EQUIP_COIN: text_styles.equipCoin, 
+   Currency.STPCOIN: text_styles.stpcoin, 
    'creditsFactor': _getMultiplierFormatter(text_styles.credits), 
    'freeXP': text_styles.expText, 
    'freeXPFactor': _getMultiplierFormatter(text_styles.expText), 
@@ -840,7 +848,7 @@ class TokenBonusFormatter(SimpleBonusFormatter):
         return lootBox.getUserName()
 
     def _getLootboxIcon(self, lootBox, size):
-        return RES_ICONS.getLootBoxBonusIcon(size, lootBox.getType())
+        return RES_ICONS.getLootBoxBonusIcon(size, lootBox.getType()) or RES_ICONS.getLootBoxBonusIcon(size, lootBox.getCategory())
 
     def _formatBonusToken(self, name, token, bonus):
         if token.count <= 0:
@@ -1447,7 +1455,9 @@ class GoodiesEpicBattleBonusFormatter(SimpleBonusFormatter):
         return formatCountLabel(list(bonus.getValue().values())[0]['count'])
 
     @classmethod
-    def _getImages(cls, _):
+    def _getImages(cls, bonus):
+        if bonus.getValue().keys()[0] == MENTORING_LICENSE_GOODIE_ID:
+            return getMentoringLicenseImages()
         return getRecertificationFormImages()
 
 
@@ -1473,11 +1483,20 @@ class GoodiesBonusFormatter(SimpleBonusFormatter):
                 result.append(PreformattedBonus(bonusName=bonus.getName(), label=self._formatBonusLabel(count), userName=form.userName, labelFormatter=self._getLabelFormatter(bonus), images=self._getImagesRecertificationForm(form), align=LABEL_ALIGN.RIGHT, isCompensation=self._isCompensation(bonus), isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.EPIC_BATTLE_RECERTIFICATION_FORM_TOOLTIP, specialArgs=[
                  form.goodieID]))
 
+        for mentorLicense, count in bonus.getMentoringLicenses().iteritems():
+            if mentorLicense is not None:
+                result.append(PreformattedBonus(bonusName=bonus.getName(), label=self._formatBonusLabel(count), userName=mentorLicense.userName, labelFormatter=self._getLabelFormatter(bonus), images=self._getMentoringLicenses(mentorLicense), align=LABEL_ALIGN.RIGHT, isCompensation=self._isCompensation(bonus), specialArgs=[
+                 mentorLicense.goodieID], tooltip=TOOLTIPS_CONSTANTS.MENTOR_LICENSE, isWulfTooltip=True))
+
         return result
 
     @classmethod
     def _getImagesRecertificationForm(cls, _):
         return getRecertificationFormImages()
+
+    @classmethod
+    def _getMentoringLicenses(cls, _):
+        return getMentoringLicenseImages()
 
     @classmethod
     def _getImages(cls, booster):
@@ -1871,6 +1890,10 @@ class BattlePassEpicBonusFormatter(BattlePassBonusFormatter):
 
 
 class CurrenciesBonusFormatter(SimpleBonusFormatter):
+
+    @classmethod
+    def _getLabelFormatter(cls, bonus):
+        return TEXT_FORMATTERS.get(bonus.getCode(), text_styles.stats)
 
     @classmethod
     def _getUserName(cls, bonus):

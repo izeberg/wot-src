@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/german/G73_E50_Ausf_M/_skin/G73_E50_Ausf_M_BPXVI_3Dst/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.942562 -1.032917 -4.030119</min>
+		<max>1.944208 0.790372 3.544908</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

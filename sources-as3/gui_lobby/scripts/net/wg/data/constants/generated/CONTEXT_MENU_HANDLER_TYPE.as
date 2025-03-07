@@ -79,6 +79,8 @@ package net.wg.data.constants.generated
       
       public static const STORAGE_RECERTIFICATION_FORM_ITEM:String = "storageRecertificationFormItem";
       
+      public static const STORAGE_MENTORING_LICENSE_ITEM:String = "storageMentoringLicenseItem";
+      
       public static const TANK_SETUP_OPTIONAL_DEVICE_ITEM:String = "tankSetupOptionalDeviceItem";
       
       public static const TANK_SETUP_MODULE_ITEM:String = "tankSetupModuleItem";
@@ -116,6 +118,8 @@ package net.wg.data.constants.generated
       public static const BR_BATTLE_RESULT_CONTEXT_MENU:String = "brBattleResultContextMenu";
       
       public static const CREW_MEMBER:String = "crewMember";
+      
+      public static const QT_CREW_MEMBER:String = "quickTrainingCrewMember";
       
       public static const CREW_TANKMAN:String = "crewTankman";
        

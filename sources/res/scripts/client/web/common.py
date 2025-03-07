@@ -31,4 +31,4 @@ def formatBattlePassInfo(battlePass=None):
     return {'isActive': not battlePass.isPaused() and battlePass.isVisible(), 
        'season': {'num': battlePass.getSeasonNum(), 
                   'leftTime': battlePass.getFinalOfferTime()}, 
-       'chapters': {chapterID:{'isBought': battlePass.isBought(chapterID=chapterID), 'state': _BATTLE_PASS_CHAPTER_STATE_NAME[battlePass.getChapterState(chapterID)]} for chapterID in battlePass.getChapterIDs() if not battlePass.isExtraChapter(chapterID)}}
+       'chapters': {chapterID:{'isBought': battlePass.isBought(chapterID=chapterID), 'state': _BATTLE_PASS_CHAPTER_STATE_NAME[battlePass.getChapterState(chapterID)]} for chapterID in battlePass.getMainChapterIDs() if not battlePass.isExtraChapter(chapterID)}}

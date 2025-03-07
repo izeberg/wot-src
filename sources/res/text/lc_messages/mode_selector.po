@@ -59,68 +59,10 @@ msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "Battle Pass Points"
 
 msgid "mode/battleRoyaleQueue/description"
-msgstr "Battle Royale"
+msgstr "Shamrock Showdown"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "Steel Hunter"
-
-msgid "mode/comp7/battlePassTooltip/body"
-msgstr ""
-"While fighting in Tier X vehicles in "
-"{whiteSpanish_open}Onslaught{whiteSpanish_close}, you will earn Points that "
-"allow you to advance through the Battle Pass Progression."
-
-msgid "mode/comp7/battlePassTooltip/header"
-msgstr "Battle Pass Points"
-
-msgid "mode/comp7/calendarTooltip"
-msgstr "The event will end on %(date)s"
-
-msgid "mode/comp7/description"
-msgstr ""
-"Competitive mode: 7v7 %(parSecondary_open)sI%(parSecondary_close)s "
-"Tier&nbsp;X"
-
-msgid "mode/comp7/seasonEnd/first"
-msgstr "Season of the Azure Manticore has ended"
-
-msgid "mode/comp7/seasonEnd/second"
-msgstr "Season of the Crimson Manticore has ended"
-
-msgid "mode/comp7/seasonEnd/third"
-msgstr "Season of the Jade Manticore has ended"
-
-msgid "mode/comp7/seasonStart/first"
-msgstr "Season of the Azure Manticore will start on %(date)s"
-
-msgid "mode/comp7/seasonStart/second"
-msgstr "Season of the Crimson Manticore will start on %(date)s"
-
-msgid "mode/comp7/seasonStart/third"
-msgstr "Season of the Jade Manticore will start on %(date)s"
-
-msgid "mode/comp7/warning"
-msgstr "Rank Inactivity"
-
-msgid "mode/comp7/widgetDescription/qualification"
-msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] ""
-"Fight %(maxBattlesCount)s battle\n"
-"to complete Qualification."
-msgstr[1] ""
-"Fight %(maxBattlesCount)s battles\n"
-"to complete Qualification."
-msgstr[2] ""
-"Fight %(maxBattlesCount)s battles\n"
-"to complete Qualification."
-
-msgid "mode/comp7/widgetDescription/status"
-msgstr ""
-"%(rank)s\n"
-"%(division)s"
-
-msgid "mode/comp7/yearEnd"
-msgstr "Year of the Manticore has ended"
 
 msgid "mode/epicBattle/condition"
 msgstr "30v30 &nbsp;{par_open}I{par_close}&nbsp;Tiers&nbsp;%(levels)s"
@@ -284,68 +226,68 @@ msgstr ""
 "Battles in Qualification: %(current) %(par_open)s/ %(max)%(par_close)s"
 
 msgid "reward/bones/description"
-msgstr "The reward is determined according to your battle performance"
+msgstr "The reward is determined according to your battle performance."
 
 msgid "reward/bones/name"
 msgstr "Bonds"
 
 msgid "reward/bountyEquipment/description"
-msgstr "You can receive the %(name)s for playing the mode"
+msgstr "You can receive the %(name)s for playing the mode."
 
 msgid "reward/bountyEquipment/name"
 msgstr "Special Equipment"
 
 msgid "reward/credits/description"
-msgstr "The reward is determined according to your battle performance"
+msgstr "The reward is determined according to your battle performance."
 
 msgid "reward/credits/name"
 msgstr "Credits"
 
 msgid "reward/crew/description"
-msgstr "You can receive unique crew members for playing the mode"
+msgstr "You can receive unique crew members for playing the mode."
 
 msgid "reward/crew/name"
 msgstr "Crew Members"
 
 msgid "reward/experience/description"
-msgstr "The reward is determined according to your battle performance"
+msgstr "The reward is determined according to your battle performance."
 
 msgid "reward/experience/name"
 msgstr "Experience"
 
 msgid "reward/improvedEquipment/description"
-msgstr "You can receive the %(name)s for playing the mode"
+msgstr "You can receive the %(name)s for playing the mode."
 
 msgid "reward/improvedEquipment/name"
 msgstr "Special Equipment"
 
 msgid "reward/other/description"
-msgstr "You can receive many useful rewards for playing the mode"
+msgstr "You can receive many useful rewards for playing the mode."
 
 msgid "reward/other/name"
 msgstr "Special Reward"
 
 msgid "reward/progressionStyle/description"
-msgstr "You can receive a special progressive style for playing in this mode"
+msgstr "You can receive a special progressive style for playing in this mode."
 
 msgid "reward/progressionStyle/name"
 msgstr "Progressive Style"
 
 msgid "reward/random/description"
-msgstr "You can receive many useful rewards for playing the mode"
+msgstr "You can receive many useful rewards for playing the mode."
 
 msgid "reward/random/name"
 msgstr "Random Reward"
 
 msgid "reward/style/description"
 msgstr ""
-"You can receive a special 3D style for the %(name)s for playing in the mode"
+"You can receive a special 3D style for the %(name)s for playing in the mode."
 
 msgid "reward/style/name"
 msgstr "3D Style"
 
 msgid "reward/vehicle/description"
-msgstr "You can receive the %(name)s for playing the mode"
+msgstr "You can receive the %(name)s for playing the mode."
 
 msgid "reward/vehicle/name"
 msgstr "Reward Vehicles"

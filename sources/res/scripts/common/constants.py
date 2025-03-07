@@ -186,18 +186,15 @@ class ARENA_GUI_TYPE:
     RTS = 26
     RTS_TRAINING = 27
     RTS_BOOTCAMP = 28
-    COMP7 = 30
     WINBACK = 31
-    TOURNAMENT_COMP7 = 33
-    TRAINING_COMP7 = 34
     STORY_MODE_ONBOARDING = 100
     STORY_MODE_REGULAR = 104
     RANGE = (
      UNKNOWN, RANDOM, TRAINING, CYBERSPORT, FALLOUT, EVENT_BATTLES, FALLOUT_CLASSIC,
      FALLOUT_MULTITEAM, SORTIE_2, FORT_BATTLE_2, RANKED,
      EPIC_RANDOM, EPIC_RANDOM_TRAINING, EPIC_BATTLE, EPIC_TRAINING, BATTLE_ROYALE, MAPBOX,
-     MAPS_TRAINING, RTS, RTS_TRAINING, RTS_BOOTCAMP, COMP7, WINBACK, TOURNAMENT_COMP7,
-     TRAINING_COMP7, STORY_MODE_ONBOARDING, STORY_MODE_REGULAR)
+     MAPS_TRAINING, RTS, RTS_TRAINING, RTS_BOOTCAMP, WINBACK,
+     STORY_MODE_ONBOARDING, STORY_MODE_REGULAR)
     RANDOM_RANGE = (
      RANDOM, EPIC_RANDOM)
     FALLOUT_RANGE = (
@@ -206,11 +203,9 @@ class ARENA_GUI_TYPE:
      EPIC_BATTLE, EPIC_TRAINING)
     STRONGHOLD_RANGE = (
      SORTIE_2, FORT_BATTLE_2)
-    COMP7_RANGE = (
-     COMP7, TOURNAMENT_COMP7, TRAINING_COMP7)
     VOIP_SUPPORTED = RANDOM_RANGE + EPIC_RANGE
     BATTLE_CHAT_SETTING_SUPPORTED = (
-     RANDOM, RANKED, EPIC_RANDOM, EPIC_BATTLE, MAPBOX, COMP7)
+     RANDOM, RANKED, EPIC_RANDOM, EPIC_BATTLE, MAPBOX)
 
 
 class ARENA_GUI_TYPE_LABEL:
@@ -231,9 +226,6 @@ class ARENA_GUI_TYPE_LABEL:
        ARENA_GUI_TYPE.BATTLE_ROYALE: 'battle_royale', 
        ARENA_GUI_TYPE.MAPBOX: 'mapbox', 
        ARENA_GUI_TYPE.MAPS_TRAINING: 'maps_training', 
-       ARENA_GUI_TYPE.COMP7: 'comp7', 
-       ARENA_GUI_TYPE.TOURNAMENT_COMP7: 'tournament_comp7', 
-       ARENA_GUI_TYPE.TRAINING_COMP7: 'training_comp7', 
        ARENA_GUI_TYPE.WINBACK: 'winback'}
 
 
@@ -466,36 +458,34 @@ class PREBATTLE_TYPE:
     RTS = 21
     RTS_TRAINING = 22
     FUN_RANDOM = 23
-    COMP7 = 24
-    TRAINING_COMP7 = 26
     STORY_MODE = 100
     RANGE = (
      SQUAD, TRAINING, COMPANY, TOURNAMENT, CLAN, UNIT,
      CLUBS, FALLOUT, EVENT, STRONGHOLD, E_SPORT_COMMON,
      EPIC, EPIC_TRAINING, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT,
-     MAPBOX, MAPS_TRAINING, RTS, RTS_TRAINING, FUN_RANDOM, COMP7, TRAINING_COMP7,
+     MAPBOX, MAPS_TRAINING, RTS, RTS_TRAINING, FUN_RANDOM,
      STORY_MODE)
     LEGACY_PREBATTLES = (
      TRAINING, TOURNAMENT, CLAN, EPIC_TRAINING, RTS_TRAINING)
     SQUAD_PREBATTLES = (
-     SQUAD, FALLOUT, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM, COMP7)
+     SQUAD, FALLOUT, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, FUN_RANDOM)
     UNIT_MGR_PREBATTLES = (
      UNIT, SQUAD, CLAN, FALLOUT, EVENT, STRONGHOLD,
-     E_SPORT_COMMON, EPIC, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7)
+     E_SPORT_COMMON, EPIC, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM)
     CREATE_FROM_CLIENT = (
-     NONE, UNIT, SQUAD, EPIC, FALLOUT, EVENT, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7)
+     NONE, UNIT, SQUAD, EPIC, FALLOUT, EVENT, BATTLE_ROYALE, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM)
     CREATE_FROM_WEB = (
      UNIT, SQUAD, STRONGHOLD)
     TRAININGS = (
-     TRAINING, EPIC_TRAINING, RTS_TRAINING, TRAINING_COMP7)
+     TRAINING, EPIC_TRAINING, RTS_TRAINING)
     EXTERNAL_PREBATTLES = (
      STRONGHOLD, TOURNAMENT)
     CREATE_EX_FROM_SERVER = (
-     SQUAD, CLAN, EPIC, BATTLE_ROYALE, EVENT, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM, COMP7)
+     SQUAD, CLAN, EPIC, BATTLE_ROYALE, EVENT, BATTLE_ROYALE_TOURNAMENT, MAPBOX, FUN_RANDOM)
     CREATE_EX_FROM_WEB = (
      SQUAD, CLAN)
     JOIN_EX = (
-     SQUAD, EPIC, EVENT, MAPBOX, FUN_RANDOM, COMP7)
+     SQUAD, EPIC, EVENT, MAPBOX, FUN_RANDOM)
     EPIC_PREBATTLES = (
      EPIC, EPIC_TRAINING)
     RTS_PREBATTLES = (
@@ -577,6 +567,7 @@ class PREBATTLE_ERRORS:
     OBSERVERS_LIMIT = 'OBSERVERS_LIMIT'
     PLAYERS_LIMIT = 'PLAYERS_LIMIT'
     INSUFFICIENT_ROLE = 'INSUFFICIENT_ROLE'
+    PROHIBITED_ARENA_TYPE = 'PROHIBITED_ARENA_TYPE'
 
 
 class PREBATTLE_UPDATE:
@@ -812,9 +803,6 @@ class Configs(enum.Enum):
     UI_LOGGING = 'ui_logging_config'
     BATTLE_MATTERS_CONFIG = 'battle_matters_config'
     PERIPHERY_ROUTING_CONFIG = 'periphery_routing_config'
-    COMP7_CONFIG = 'comp7_config'
-    COMP7_RANKS_CONFIG = 'comp7_ranks_config'
-    COMP7_REWARDS_CONFIG = 'comp7_rewards_config'
     PERSONAL_RESERVES_CONFIG = 'personal_reserves_config'
     PLAY_LIMITS_CONFIG = 'play_limits_config'
     PRE_MODERATION_CONFIG = 'pre_moderation_config'
@@ -837,6 +825,7 @@ class Configs(enum.Enum):
     ADVANCED_ACHIEVEMENTS_CONFIG = 'advanced_achievements_config'
     LOOTBOXES_TOOLTIP_CONFIG = 'lootboxes_tooltip_config'
     UNIT_ASSEMBLER_CONFIG = 'unit_assembler_config'
+    EASY_TANK_EQUIP_CONFIG = 'easy_tank_equip_config'
     PLAYER_SATISFACTION_CONFIG = 'player_satisfaction_config'
 
 
@@ -846,8 +835,6 @@ INBATTLE_CONFIGS = [
  'battle_royale_config',
  'epic_config',
  'vehicle_post_progression_config',
- Configs.COMP7_CONFIG.value,
- Configs.COMP7_RANKS_CONFIG.value,
  Configs.PLAYER_SATISFACTION_CONFIG.value]
 
 class RESTRICTION_TYPE:
@@ -1594,7 +1581,6 @@ ARENA_BONUS_TYPE_TO_QUEUE_TYPE = {ARENA_BONUS_TYPE.UNKNOWN: QUEUE_TYPE.UNKNOWN,
    ARENA_BONUS_TYPE.RTS: QUEUE_TYPE.RTS, 
    ARENA_BONUS_TYPE.RTS_1x1: QUEUE_TYPE.RTS_1x1, 
    ARENA_BONUS_TYPE.RTS_BOOTCAMP: QUEUE_TYPE.RTS_BOOTCAMP, 
-   ARENA_BONUS_TYPE.COMP7: QUEUE_TYPE.COMP7, 
    ARENA_BONUS_TYPE.TRAINING_COMP7: QUEUE_TYPE.COMP7, 
    ARENA_BONUS_TYPE.WINBACK: QUEUE_TYPE.WINBACK, 
    ARENA_BONUS_TYPE.RANDOM_NP2: QUEUE_TYPE.RANDOM_NP2}
@@ -1678,15 +1664,13 @@ class GameSeasonType(object):
     BATTLE_ROYALE = 3
     MAPBOX = 4
     EVENT_BATTLES = 5
-    COMP7 = 7
 
 
 SEASON_TYPE_BY_NAME = {'ranked': GameSeasonType.RANKED, 
    'epic': GameSeasonType.EPIC, 
    'battle_royale': GameSeasonType.BATTLE_ROYALE, 
    'mapbox': GameSeasonType.MAPBOX, 
-   'event_battles': GameSeasonType.EVENT_BATTLES, 
-   'comp7': GameSeasonType.COMP7}
+   'event_battles': GameSeasonType.EVENT_BATTLES}
 SEASON_NAME_BY_TYPE = {val:key for key, val in SEASON_TYPE_BY_NAME.iteritems()}
 CHANNEL_SEARCH_RESULTS_LIMIT = 50
 USER_SEARCH_RESULTS_LIMIT = 50
@@ -1822,6 +1806,7 @@ class REQUEST_COOLDOWN:
     CMD_FREE_XP_CONV = 1.0
     RESET_ALL_TANKMEN_SKILLS = 60.0
     FILL_ALL_TANKMEN_SKILLS = 60.0
+    CMD_EASY_TANK_EQUIP_APPLY = 1.0
 
 
 IS_SHOW_INGAME_HELP_FIRST_TIME = False
@@ -2359,9 +2344,8 @@ class INVITATION_TYPE:
     EVENT = PREBATTLE_TYPE.EVENT
     BATTLE_ROYALE = PREBATTLE_TYPE.BATTLE_ROYALE
     MAPBOX = PREBATTLE_TYPE.MAPBOX
-    COMP7 = PREBATTLE_TYPE.COMP7
     RANGE = (
-     SQUAD, EVENT, EPIC, BATTLE_ROYALE, MAPBOX, COMP7)
+     SQUAD, EVENT, EPIC, BATTLE_ROYALE, MAPBOX)
     TYPES_WITH_EXTRA_DATA = ()
     INVITATION_TYPE_FROM_ARENA_BONUS_TYPE_MAPPING = {ARENA_BONUS_TYPE.REGULAR: SQUAD, 
        ARENA_BONUS_TYPE.EPIC_RANDOM: SQUAD, 
@@ -3200,9 +3184,10 @@ class CrewContextArgs(namedtuple('CrewContextArgs', ['skillData'])):
 
 class SkillProcessorArgs(object):
     __slots__ = ('level', 'levelIncrease', 'skillsEfficiency', 'isActive', 'isFire',
-                 'skillConfig', 'hasActiveTankmanForBooster', 'tankmenSkillConfig')
+                 'skillConfig', 'hasActiveTankmanForBooster', 'tankmenSkillConfig',
+                 'isBoostedSkill')
 
-    def __init__(self, level, levelIncrease, skillsEfficiency, isActive, isFire, skillConfig, hasActiveTankmanForBooster):
+    def __init__(self, level, levelIncrease, skillsEfficiency, isActive, isFire, skillConfig, hasActiveTankmanForBooster, isBoostedSkill=False):
         self.level = level
         self.levelIncrease = levelIncrease
         self.skillsEfficiency = skillsEfficiency
@@ -3211,12 +3196,16 @@ class SkillProcessorArgs(object):
         self.skillConfig = skillConfig
         self.tankmenSkillConfig = self.skillConfig
         self.hasActiveTankmanForBooster = hasActiveTankmanForBooster
+        self.isBoostedSkill = isBoostedSkill
 
     def isSkillActive(self):
-        return self.isActive and not self.isFire
+        return self.isActive and not self.isFire and self._isZeroLevelActive()
 
     def isBoosterApplicable(self):
         return (self.isActive or self.hasActiveTankmanForBooster) and not self.isFire
+
+    def _isZeroLevelActive(self):
+        return self.level or self.isBoostedSkill
 
 
 class GroupSkillProcessorArgs(object):
@@ -3294,7 +3283,6 @@ BATTLE_MODE_VEHICLE_TAGS = {
 BATTLE_MODE_VEH_TAGS_EXCEPT_EVENT = BATTLE_MODE_VEHICLE_TAGS - {'event_battles'}
 BATTLE_MODE_VEH_TAGS_EXCEPT_EPIC = BATTLE_MODE_VEHICLE_TAGS - {'epic_battles'}
 BATTLE_MODE_VEH_TAGS_EXCEPT_CLAN = BATTLE_MODE_VEHICLE_TAGS - {'clanWarsBattles'}
-BATTLE_MODE_VEH_TAGS_EXCEPT_COMP7 = BATTLE_MODE_VEHICLE_TAGS - {'comp7'}
 
 @enum.unique
 class EventPhase(enum.Enum):
