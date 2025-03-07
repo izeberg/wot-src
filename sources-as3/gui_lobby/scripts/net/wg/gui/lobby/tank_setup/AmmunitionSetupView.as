@@ -150,7 +150,7 @@ package net.wg.gui.lobby.tank_setup
       public function as_showCloseAnim() : void
       {
          this.clearTween();
-         this._appStage.dispatchEvent(new Event(HangarAmunitionSwitchAnimator.MAKE_HANGAR_VISIBILE));
+         this._appStage.dispatchEvent(new Event(HangarAmunitionSwitchAnimator.MAKE_HANGAR_VISIBLE));
          this.onHideAnimComplete();
       }
       

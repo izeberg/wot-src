@@ -165,6 +165,8 @@ package net.wg.data.constants.generated
       
       public static const CHINA_CH54_BZ_72_1:String = "china-Ch54_BZ_72_1";
       
+      public static const CHINA_CH56_BZ_74_1:String = "china-Ch56_BZ_74_1";
+      
       public static const CHINA_CH58_111_VZ51:String = "china-Ch58_111_Vz51";
       
       public static const CHINA_CH59_BZ58_2:String = "china-Ch59_BZ58_2";
@@ -693,6 +695,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G25_PZ_II_LUCHS_SHXXI_B:String = "germany-G25_PzII_Luchs_SHXXI_B";
       
+      public static const GERMANY_G25_PZ_II_LUCHS_SHXXI_L:String = "germany-G25_PzII_Luchs_SHXXI_L";
+      
       public static const GERMANY_G26_VK1602:String = "germany-G26_VK1602";
       
       public static const GERMANY_G27_VK3001_P:String = "germany-G27_VK3001P";
@@ -1202,6 +1206,8 @@ package net.wg.data.constants.generated
       public static const POLAND_PL32_SDP_WZ_44:String = "poland-Pl32_SDP_Wz_44";
       
       public static const POLAND_PL33_SDP_WZ_40:String = "poland-Pl33_SDP_Wz_40";
+      
+      public static const POLAND_PL34_CS53_56_WOITEK:String = "poland-Pl34_Cs53_56_Woitek";
       
       public static const PURPLE_AT_SPG:String = "purple_AT-SPG";
       
@@ -2057,11 +2063,15 @@ package net.wg.data.constants.generated
       
       public static const USA_A161_ARMT:String = "usa-A161_ARMT";
       
+      public static const USA_A167_TS_6:String = "usa-A167_TS_6";
+      
       public static const USA_A168_XM_57:String = "usa-A168_XM_57";
       
       public static const USA_A169_PATTON_III_120:String = "usa-A169_PattonIII_120";
       
       public static const USA_A17_M37:String = "usa-A17_M37";
+      
+      public static const USA_A171_IMT:String = "usa-A171_IMT";
       
       public static const USA_A172_M4_A3_E8_SHERMAN_BPXIV:String = "usa-A172_M4A3E8_Sherman_BPXIV";
       

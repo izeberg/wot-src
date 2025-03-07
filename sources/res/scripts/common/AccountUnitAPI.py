@@ -1,8 +1,7 @@
 import json
 from typing import Optional as TOptional
-import constants
+from constants import PREBATTLE_TYPE, IS_DEVELOPMENT
 from UnitBase import UNIT_SLOT, CLIENT_UNIT_CMD, INV_ID_CLEAR_VEHICLE
-from constants import PREBATTLE_TYPE
 from debug_utils import *
 from unit_roster_config import UnitRosterSlot
 
@@ -93,11 +92,8 @@ class UnitClientAPI(object):
         unitExtrasInitStr = json.dumps({'funEventID': subModeID})
         return self._doCreate(PREBATTLE_TYPE.FUN_RANDOM, unitExtrasInitStr=unitExtrasInitStr)
 
-    def createComp7Squad(self, squadSize):
-        return self._doCreate(PREBATTLE_TYPE.COMP7, modeExtrasStr=json.dumps({'squadSize': squadSize}))
-
-    def createSquadByPrbType(self, prbType):
-        return self._doCreate(prbType)
+    def createSquadByPrbType(self, prbType, queueType=0, unitExtrasInitStr='', modeExtrasStr=''):
+        return self._doCreate(prbType, queueType, unitExtrasInitStr, modeExtrasStr)
 
     def createSquadByQueueType(self, queueType, unitExtrasInitStr='', modeExtrasStr=''):
         return self._doCreate(0, queueType=queueType, unitExtrasInitStr=unitExtrasInitStr, modeExtrasStr=modeExtrasStr)
@@ -160,7 +156,7 @@ class UnitClientAPI(object):
         return self._doUnitCmd(CLIENT_UNIT_CMD.OPEN_UNIT, int(isOpen))
 
     def setDevMode(self, isDevMode=True):
-        if constants.IS_DEVELOPMENT:
+        if IS_DEVELOPMENT:
             return self._doUnitCmd(CLIENT_UNIT_CMD.SET_UNIT_DEV_MODE, int(isDevMode))
 
     def startBattle(self, vehInvID=0, gameplaysMask=None, arenaTypeID=0, randomFlags=None, stopAutoSearch=False, startBattleUnitCmd=CLIENT_UNIT_CMD.START_UNIT_BATTLE, extraModeData=''):
@@ -193,14 +189,11 @@ class UnitClientAPI(object):
     def setRandomFlags(self, randomFlags):
         return self._doUnitCmd(CLIENT_UNIT_CMD.SET_RANDOM_FLAGS, randomFlags)
 
-    def setSquadSize(self, squadSize):
-        return self._doUnitCmd(CLIENT_UNIT_CMD.SET_SQUAD_SIZE, squadSize)
-
     def setArenaType(self, arenaTypeID):
         return self._doUnitCmd(CLIENT_UNIT_CMD.SET_ARENA_TYPE, arenaTypeID)
 
     def setVehicleList(self, vehicleList):
         return self._doUnitCmd(CLIENT_UNIT_CMD.SET_VEHICLE_LIST, 0, 0, (',').join(map(str, vehicleList)))
 
-    def doUnitCmd(self, clientUnitCmdID, argInt64, argInt32, argStr):
+    def doUnitCmd(self, clientUnitCmdID, argInt64=0, argInt32=0, argStr=''):
         return self._doUnitCmd(clientUnitCmdID, argInt64, argInt32, argStr)

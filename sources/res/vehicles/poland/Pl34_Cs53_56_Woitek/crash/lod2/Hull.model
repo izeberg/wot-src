@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl34_Cs53_56_Woitek/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.735815 -0.927847 -3.374241</min>
+		<max>1.742236 0.390642 3.117576</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl34_Cs53_56_Woitek/crash/lod2/Hull</nodefullVisual>
+</root>

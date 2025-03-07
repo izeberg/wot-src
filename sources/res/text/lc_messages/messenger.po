@@ -1214,6 +1214,9 @@ msgstr "模块已增加"
 msgid "platformCurrencyMsg/debited/bpbit"
 msgstr "已移除战斗通行证点数"
 
+msgid "platformCurrencyMsg/debited/bptaler"
+msgstr "已移除硬币"
+
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "已移除钢铁印章"
 
@@ -1229,6 +1232,9 @@ msgstr "已移除个人声望点数"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "扣除全局经验"
 
+msgid "platformCurrencyMsg/debited/stpcoin"
+msgstr "已移除幸运印章"
+
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "已移除军旅积分"
 
@@ -1237,6 +1243,9 @@ msgstr "已移除服役资历令牌"
 
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "已添加战斗通行证点数"
+
+msgid "platformCurrencyMsg/received/bptaler"
+msgstr "已添加硬币"
 
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "已添加钢铁印章"
@@ -1252,6 +1261,9 @@ msgstr "已添加个人声望点数"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "收到全局经验"
+
+msgid "platformCurrencyMsg/received/stpcoin"
+msgstr "已获得幸运印章"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "已添加军旅积分"
@@ -1502,6 +1514,9 @@ msgstr "获得战斗通行证点数: %(pointsDiff)s"
 msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
 msgstr "已获得钢铁印章：%(value)s"
 
+msgid "serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin"
+msgstr "已获得幸运印章: %(value)s"
+
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "坦克被击毁"
 
@@ -1703,11 +1718,20 @@ msgstr "新兵令牌"
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "已使用未分配的点数"
 
+msgid "serviceChannelMessages/battlePass/freePointsUsed/postProgression/text"
+msgstr "激活精英征程后已使用的未分配点数: %(points)s。"
+
 msgid "serviceChannelMessages/battlePass/freePointsUsed/text"
 msgstr "已使用未分配的点数: 将%(points)s点添加至\"%(chapter)s\"章节。"
 
 msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "可选择的标准配件"
+
+msgid "serviceChannelMessages/battlePass/postProgressionActivated/text"
+msgstr "已激活精英征程"
+
+msgid "serviceChannelMessages/battlePass/postProgressionPaused/text"
+msgstr "精英征程已暂停。"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
 msgstr "已达到点数上限"
@@ -1774,8 +1798,8 @@ msgstr "继续战斗并获得点数！"
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"您已完成战斗通行证赛季%(season)s的全部章节。\n"
-"获得奖励:"
+"您已完成战斗通行证赛季%(season)s的所有主要章节。\n"
+"已获得奖励:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"
 msgstr ""
@@ -1836,6 +1860,16 @@ msgstr "祝贺您！"
 
 msgid "serviceChannelMessages/battlePassReward/header/voted"
 msgstr "已发放奖励"
+
+msgid "serviceChannelMessages/battlePassReward/postProgression/newLevel/text"
+msgstr ""
+"已完成精英征程阶段。\n"
+"已获得奖励:"
+
+msgid "serviceChannelMessages/battlePassReward/postProgression/newLevels/text"
+msgstr ""
+"已完成精英征程阶段: %(amount)s\n"
+"已获得奖励:"
 
 msgid "serviceChannelMessages/battlePassReward/tman"
 msgstr "乘员:"
@@ -1978,7 +2012,7 @@ msgid "serviceChannelMessages/battleResults/quests/battlePassPoints"
 msgstr "获得战斗通行证点数: %(value)s"
 
 msgid "serviceChannelMessages/battleResults/quests/berths"
-msgstr "添加床位到兵营"
+msgstr "床位已添加至兵营"
 
 msgid "serviceChannelMessages/battleResults/quests/bpcoin"
 msgstr "已添加令牌"
@@ -2276,7 +2310,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "交易"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "杰森的特别竞拍"
+msgstr "竞拍"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "已获得令牌"
@@ -2627,7 +2661,7 @@ msgid "serviceChannelMessages/integratedAuction/stageStart/title"
 msgstr "新拍品的出价已开始！"
 
 msgid "serviceChannelMessages/invoiceReceived/berthsAccrued"
-msgstr "添加床位到兵营"
+msgstr "床位已添加至兵营"
 
 msgid "serviceChannelMessages/invoiceReceived/berthsDebited"
 msgstr "从兵营中移除床位"

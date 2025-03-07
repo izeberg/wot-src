@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.503596 -0.001526 -4.570056</min>
+		<max>1.536064 2.117367 1.520941</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

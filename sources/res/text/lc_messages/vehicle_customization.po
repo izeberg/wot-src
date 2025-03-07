@@ -133,6 +133,27 @@ msgstr "海军望远镜"
 msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
 msgstr "无杆锚"
 
+msgid "attachment/st_patricks_day_2025"
+msgstr "绿色奇迹！"
+
+msgid "attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe"
+msgstr "幸运马蹄铁"
+
+msgid "attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe/description"
+msgstr "据说这只马蹄铁收到了仙灵的祝福，能给携带者带来好运。虽然能驱邪避凶，但它能抵御自行火炮的攻击吗？"
+
+msgid "attachment/st_patricks_day_2025/Cus_32_SP_GoldPot"
+msgstr "黄金罐"
+
+msgid "attachment/st_patricks_day_2025/Cus_33_SP_Barrel"
+msgstr "酿酒桶"
+
+msgid "attachment/st_patricks_day_2025/Cus_34_SP_TreasureChest"
+msgstr "百宝箱"
+
+msgid "attachment/st_patricks_day_2025/Cus_35_SP_CamoNet"
+msgstr "伪装网"
+
 msgid "attachment/test"
 msgstr "测试对象"
 
@@ -182,7 +203,7 @@ msgid "bonus/condition/season"
 msgstr "应用涂装到坦克外部车体时将获得隐蔽加成"
 
 msgid "bonus/condition/style"
-msgstr "隐藏奖励基于所有类型地图上的坦克类型。"
+msgstr "具体隐蔽系数加成取决于坦克类型，适用于所有地图。"
 
 msgid "bonus/name/camouflage"
 msgstr "坦克隐蔽性增加:"
@@ -945,6 +966,12 @@ msgstr "?empty?"
 msgid "camouflage/G72_JagdPz_E100_BPXII_3DSt/label"
 msgstr "晦暗"
 
+msgid "camouflage/G73_E50_Ausf_M_BPXVI_3Dst/description"
+msgstr "?empty?"
+
+msgid "camouflage/G73_E50_Ausf_M_BPXVI_3Dst/label"
+msgstr "久经考验"
+
 msgid "camouflage/G89_Leopard1_BVII_3DSt/description"
 msgstr "?empty?"
 
@@ -1100,6 +1127,12 @@ msgstr "?empty?"
 
 msgid "camouflage/J20_Type_2605_BXI_3DSt/label"
 msgstr "重锤"
+
+msgid "camouflage/J40_Type_71_BPXVI_3Dst/description"
+msgstr "?empty?"
+
+msgid "camouflage/J40_Type_71_BPXVI_3Dst/label"
+msgstr "原始森林"
 
 msgid "camouflage/Klingfleet/description"
 msgstr ""
@@ -1342,6 +1375,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Pl21_CS_63_3Dst_BV/label"
 msgstr "闪电"
+
+msgid "camouflage/Pl29_NC_Wz_70T_BPXVI_3Dst/description"
+msgstr "?empty?"
+
+msgid "camouflage/Pl29_NC_Wz_70T_BPXVI_3Dst/label"
+msgstr "盛夏酷暑"
 
 msgid "camouflage/R145_Object_705_A_progression/description"
 msgstr "?empty?"
@@ -1655,6 +1694,12 @@ msgstr "?empty?"
 
 msgid "camouflage/april_fools_day_2024/label"
 msgstr "愚者赏金"
+
+msgid "camouflage/april_fools_day_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/april_fools_day_2025/label"
+msgstr "粉红钢铁"
 
 msgid "camouflage/argentina/description"
 msgstr "?empty?"
@@ -2379,6 +2424,30 @@ msgstr "?empty?"
 msgid "camouflage/bp2023_4/label"
 msgstr "三头骆驼"
 
+msgid "camouflage/bp2025_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_1/label"
+msgstr "深入荒野"
+
+msgid "camouflage/bp2025_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_2/label"
+msgstr "丛林色彩"
+
+msgid "camouflage/bp2025_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_3/label"
+msgstr "危险临近"
+
+msgid "camouflage/bp2025_4/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp2025_4/label"
+msgstr "追击目标"
+
 msgid "camouflage/bp2025_holiday_1/description"
 msgstr "?empty?"
 
@@ -2886,6 +2955,12 @@ msgstr "?empty?"
 
 msgid "camouflage/clan_rivals/label"
 msgstr "军团之敌"
+
+msgid "camouflage/clan_showdown/description"
+msgstr "?empty?"
+
+msgid "camouflage/clan_showdown/label"
+msgstr "铸就团结"
 
 msgid "camouflage/clan_urban/description"
 msgstr "?empty?"
@@ -4940,6 +5015,18 @@ msgstr "勇士"
 msgid "camouflage/onslaught_season_2023-2024_6/label"
 msgstr "传说"
 
+msgid "camouflage/onslaught_spring_gold/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_spring_gold/label"
+msgstr "志存高远"
+
+msgid "camouflage/onslaught_spring_silver/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_spring_silver/label"
+msgstr "无畏之魂"
+
 msgid "camouflage/onslaught_tournaments/description"
 msgstr "?empty?"
 
@@ -5380,6 +5467,12 @@ msgstr "绿染之河"
 
 msgid "camouflage/st_patricks_day_2024_3/label"
 msgstr "翡翠猎手"
+
+msgid "camouflage/st_patricks_day_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/st_patricks_day_2025/label"
+msgstr "熔炼好运"
 
 msgid "camouflage/stayhome/description"
 msgstr "?empty?"
@@ -6617,11 +6710,23 @@ msgstr "?empty?"
 msgid "camouflage/withoutmercy/label"
 msgstr "斩草除根"
 
+msgid "camouflage/womens_day_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/womens_day_2025/label"
+msgstr "天阙花园"
+
 msgid "camouflage/wormrider/description"
 msgstr "?empty?"
 
 msgid "camouflage/wormrider/label"
 msgstr "沙虫骑士"
+
+msgid "camouflage/wot_birthday_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/wot_birthday_2025/label"
+msgstr "战火铸就"
 
 msgid "camouflage/wot_birthday_cn/description"
 msgstr "周年庆风格的全地形涂装。"
@@ -8453,7 +8558,7 @@ msgid "elementAwardTooltip/description/camouflage"
 msgstr "将涂装应用于坦克车体时，依据坦克类型提供隐蔽加成。"
 
 msgid "elementAwardTooltip/description/style"
-msgstr "隐藏奖励基于所有类型地图上的坦克类型。"
+msgstr "具体隐蔽系数加成取决于坦克类型，适用于所有地图。"
 
 msgid "elementBonus/desc/attachment"
 msgstr "\"%(value)s\"3D附件"
@@ -11350,10 +11455,13 @@ msgid "emblem/special/sticker_842"
 msgstr "劈波斩浪"
 
 msgid "emblem/special/sticker_843"
-msgstr "2025冬季OLS"
+msgstr "2025天梯赛事"
 
 msgid "emblem/special/sticker_859"
 msgstr "Boosteroid"
+
+msgid "emblem/special/sticker_860"
+msgstr "2025春季OLS"
 
 msgid "emblem/special/sticker_861"
 msgstr "涡旋"
@@ -13988,7 +14096,7 @@ msgid "inscription/special/special_768"
 msgstr "明日之星"
 
 msgid "inscription/special/special_769"
-msgstr "2025冬季OLS"
+msgstr "2025WCL"
 
 msgid "inscription/special/special_770"
 msgstr "祝您好运！"
@@ -14040,6 +14148,12 @@ msgstr "什么都没结束！"
 
 msgid "inscription/special/special_786"
 msgstr "是他们先动手的"
+
+msgid "inscription/special/special_787"
+msgstr "精益求精！"
+
+msgid "inscription/special/special_788"
+msgstr "2025春季OLS"
 
 msgid "inscription/special/special_796"
 msgstr "灵蛇献吉祥"
@@ -15038,6 +15152,13 @@ msgstr "怪兽"
 msgid "main_style/J20_Type_2605_3Dst_desc/long"
 msgstr ""
 "勇敢的战士啊！人生中最重要的一天即将来到。明天战斗就会开始，而我们的名字会永远铭刻在历史长河中。今天，我们会决定谁的名字要永远留在后代的记忆中。我们的祖先在注视着我们，我们又岂敢用耻辱玷污人民的荣誉呢？坚决果断地冲向战场吧！面对敌人时不要手软，因为一个真正的怪兽感受不到悲伤，它不会容忍任何错误，也绝对不会表现软弱。"
+
+msgid "main_style/J40_Type_71_BPXVI_3Dst"
+msgstr "原始森林"
+
+msgid "main_style/J40_Type_71_BPXVI_3Dst_desc/long"
+msgstr ""
+"\"我是一个寻求刺激的人。自始至终都是。开始是在家乡骑摩托车，那时我还年轻，总是惹麻烦。然后是坦克。这就是我来到这里的原因。如果我想要刺激，那么在丛林里完成测试似乎是个不错的选择。但我没想到我们会测试这样的东西。最先进的技术、最顶尖的设计，它给我带来的刺激，与多年前骑摩托车时的感觉如出一辙。相信没有人能战胜我，直接叫我丛林之王吧！\""
 
 msgid "main_style/Pl15_60TP_LewandowskiegoB9BS_3DSt"
 msgstr "伯纳德"
@@ -19871,6 +19992,36 @@ msgstr ""
 msgid "projection_decals/special/projection_decal_82"
 msgstr "善行改变世界"
 
+msgid "projection_decals/special/projection_decal_820"
+msgstr "赞"
+
+msgid "projection_decals/special/projection_decal_821"
+msgstr "怒不可遏"
+
+msgid "projection_decals/special/projection_decal_822"
+msgstr "毫无表情"
+
+msgid "projection_decals/special/projection_decal_823"
+msgstr "胶囊"
+
+msgid "projection_decals/special/projection_decal_824"
+msgstr "魅影"
+
+msgid "projection_decals/special/projection_decal_825"
+msgstr "脑壳炸裂"
+
+msgid "projection_decals/special/projection_decal_826"
+msgstr "握手"
+
+msgid "projection_decals/special/projection_decal_827"
+msgstr "山羊"
+
+msgid "projection_decals/special/projection_decal_828"
+msgstr "小鸡"
+
+msgid "projection_decals/special/projection_decal_829"
+msgstr "无法直视"
+
 msgid "projection_decals/special/projection_decal_83"
 msgstr "重温科马林"
 
@@ -19899,11 +20050,23 @@ msgstr "第一滴血3海报"
 msgid "projection_decals/special/projection_decal_843"
 msgstr "霓虹坦克"
 
+msgid "projection_decals/special/projection_decal_844"
+msgstr "无畏之魂"
+
+msgid "projection_decals/special/projection_decal_845"
+msgstr "志存高远"
+
 msgid "projection_decals/special/projection_decal_85"
 msgstr "女精灵"
 
 msgid "projection_decals/special/projection_decal_85/description"
 msgstr "现在您肯定能想象，如果WG使用最初的那几个设计概念，女性乘员会是什么样。"
+
+msgid "projection_decals/special/projection_decal_852"
+msgstr "白色樱花"
+
+msgid "projection_decals/special/projection_decal_853"
+msgstr "粉色蝴蝶结"
 
 msgid "projection_decals/special/projection_decal_854"
 msgstr "门神"
@@ -19926,11 +20089,23 @@ msgstr "红色警告！"
 msgid "projection_decals/special/projection_decal_86/description"
 msgstr "这个东西对于进入战斗的易燃战车来说非常重要。"
 
+msgid "projection_decals/special/projection_decal_867"
+msgstr "部落蜥蜴"
+
+msgid "projection_decals/special/projection_decal_868"
+msgstr "部落巨嘴鸟"
+
+msgid "projection_decals/special/projection_decal_869"
+msgstr "部落鱼"
+
 msgid "projection_decals/special/projection_decal_87"
 msgstr "内有恶犬！"
 
 msgid "projection_decals/special/projection_decal_87/description"
 msgstr "我们很感谢您的意见。按您的要求，您的爱犬回来了！现在您可以带着您的伙伴并肩作战。"
+
+msgid "projection_decals/special/projection_decal_876"
+msgstr "帽中白兔"
 
 msgid "projection_decals/special/projection_decal_88"
 msgstr "圣诞树"
@@ -23140,6 +23315,13 @@ msgstr ""
 "遗憾的是，到目前为止，问题比答案多，但说句公道话，这确实能激发出更多的科学探索兴趣。为什么人们如此匆忙地撤离？銤元素是什么物质？他们把一切都告诉我们了吗？…\n"
 "霍普送了我一张海报作为礼物，我把它挂在坦克里。我愿意相信，我们真的是在寻找通往光明未来的钥匙。当然，我知道这会非常危险，但成为先驱的机会一生可能只有一次，我愿意冒这个险。"
 
+msgid "special_style/G73_E50_Ausf_M_BPXVI_3Dst"
+msgstr "久经考验"
+
+msgid "special_style/G73_E50_Ausf_M_BPXVI_3Dst_desc/long"
+msgstr ""
+"\"人们常说，如果东西没坏，就不要去修它。但该修理的时候就不用犹豫了。毕竟没有什么是永恒的，但不完美的东西也有存在的价值。总有一天，这辆坦克会被淘汰，被现代战斗机器取代。这一天并不遥远。但是，由于一些高质量D系工程技术的影响，这一天暂时还不会到来。\""
+
 msgid "special_style/G89_Leopard1_BVII_3DSt"
 msgstr "骑兵"
 
@@ -23551,6 +23733,14 @@ msgid "special_style/Pl21_CS_63_OSP3_3DSt_desc/long"
 msgstr ""
 "这辆B系中型坦克是天马的化身——长着巨大翅膀的神奇雪白战马。这一次，无论是贝勒罗芬还是宙斯都无法驯服它，只有那些能征善战的勇士才能将其纳入麾下。准备好驾驶它征战四方，痛击来犯之敌。"
 
+msgid "special_style/Pl29_NC_Wz_70T_BPXVI_3Dst"
+msgstr "盛夏酷暑"
+
+msgid "special_style/Pl29_NC_Wz_70T_BPXVI_3Dst_desc/long"
+msgstr ""
+"\"丛林是一个无情的地方。每一天都是新的挑战，每一次考验都会带来新的困难。这是一个容错率极低的环境，对有些人来说太过艰难。疲劳、脱水和中暑都不是闹着玩的，而热带疾病和有毒野兽也不可轻忽，每次进入丛林深处，我们都有可能中招。很幸运，我们拥有NC"
+" 70 B，它那门深膛线火炮救了我们，我都数不清有多少次了。然而，尽管危险重重、疲惫不堪、充满不明威胁...我却从未感到如此生龙活虎。\""
+
 msgid "special_style/R07_T-34-85_3Dst"
 msgstr "坎特米洛夫"
 
@@ -23868,6 +24058,16 @@ msgstr "一款全地形风格，让所有人知道您不好糊弄。"
 msgid "special_style/april_fools_day_2024_desc/long"
 msgstr ""
 "\"不是所有发光的东西都是金子。明白吗？在人类世界里，你必须时刻保持警惕。我们已经经历过这些了——不要每次看到发光的东西就分心。要警惕愚者赏金，眼睛要盯着真正的奖赏。还有，记住，那些人类不喜欢我们这样的。他们不信任我们。你眼睛周围的斑纹是天然的面具——所以要充分发挥我们的潜行天赋。回来以后我们再瓜分战利品。那些人类不会知道是谁干的，而我们，我们将成为浣熊中的王者！\""
+
+msgid "special_style/april_fools_day_2025"
+msgstr "粉红钢铁"
+
+msgid "special_style/april_fools_day_2025_desc"
+msgstr "一款全地形风格，专为粉红色的力量而设计。"
+
+msgid "special_style/april_fools_day_2025_desc/long"
+msgstr ""
+"粉红色是新的黑色！真正的硬汉不会对粉红色退避三舍。\"粉红钢铁\"2D风格就是最好的证明。用这种醒目的色调装点您的坦克，在战场上展示力量与个性的完美结合。无论您是冲锋陷阵还是坚守阵地，这款大胆的风格都能让所有人知道，真正的勇士对任何颜色都充满自信，粉色也不例外。"
 
 msgid "special_style/aquino"
 msgstr "阿奎诺"
@@ -24738,6 +24938,47 @@ msgid "special_style/bp2023_4_desc/long"
 msgstr ""
 "一款全地形风格，描绘了桑德罗·曼奇尼在寻找水源后所带回来的三头驯养的骆驼。丽贝卡和埃米尔始终没有弄明白，这名冒险家究竟是如何得到这些动物的，但是当这群人的坦克被永远埋进沙子时，这些沙漠之舟便成了他们的救命恩人。"
 
+msgid "special_style/bp2025_1"
+msgstr "深入荒野"
+
+msgid "special_style/bp2025_1_desc"
+msgstr "一款全地形风格，有助于在茂密的丛林环境中保持隐蔽。"
+
+msgid "special_style/bp2025_1_desc/long"
+msgstr ""
+"丛林充满了惊喜，尤其是对热衷于野生动物的托马斯来说更是如此。他那夸张的反应常常让车组乘员们忍俊不禁，毕竟许多生物他都是第一次在现实中见到。一天清晨，他心不在焉地爬上坦克车长塔，却突然惊叫起来——原来，一只异常巨大的蜥蜴正懒洋洋地趴在车顶晒太阳。蜥蜴很快逃之夭夭，但托马斯那句惊呼:"
+" \"蜥蜴！好大一只！\"，却成了车组乘员们数月之久的笑谈。"
+
+msgid "special_style/bp2025_2"
+msgstr "丛林色彩"
+
+msgid "special_style/bp2025_2_desc"
+msgstr "一款全地形风格，与热带雨林的浓郁绿色相得益彰。"
+
+msgid "special_style/bp2025_2_desc/long"
+msgstr ""
+"康拉德出身于诗书世家，热爱阅读。他只在古典小说中体验过丛林，而小说中的丛林往往被描绘得阴森恐怖。当他第一次穿越色彩丰富的树冠时，这种印象就被打破了。他仍然梦想着写一部关于家乡广袤山林的伟大作品，但他坚持认为，他的第二本书将向丛林中绚烂的原始之美致敬。"
+
+msgid "special_style/bp2025_3"
+msgstr "危险临近"
+
+msgid "special_style/bp2025_3_desc"
+msgstr "一款全地形风格，适合在茂密的丛林中伪装。"
+
+msgid "special_style/bp2025_3_desc/long"
+msgstr ""
+"对W.来说，最有趣的莫过于通过恶作剧让盟友们提心吊胆了。在一次远离基地的探险中，W.用一种异常慌乱的声音，通过无线电发出警告。他告诉盟友，一头愤怒的大象正冲向他们的方向。当盟友紧张地扫视树木，准备迎接这头暴怒的猛兽时，却被灌木丛中扔出来的一阵香蕉雨砸中，而W.则在一旁捧腹大笑，享受着自己设下假警报，让队员们上当的乐趣。"
+
+msgid "special_style/bp2025_4"
+msgstr "追击目标"
+
+msgid "special_style/bp2025_4_desc"
+msgstr "一款全地形风格，向丛林行动的艰苦条件致敬。"
+
+msgid "special_style/bp2025_4_desc/long"
+msgstr ""
+"安热莉克是一名经验丰富的通信专家兼谈判高手，曾面对过各种艰难任务，但丛林带来的挑战却是前所未有的。表面上，这场考验被包装成国际顶级坦克手之间的竞赛，但她深知其中真正的利害关系。在闷热难耐、湿气逼人的环境下，紧张局势随时可能失控。一着不慎，全盘皆输。而她必须倾尽所有的专业技能，确保这一切不会发生。"
+
 msgid "special_style/bp2025_holiday_1"
 msgstr "第一滴血"
 
@@ -25130,6 +25371,16 @@ msgstr "军团锦标赛参与者"
 
 msgid "special_style/clan_rivals_silver_desc"
 msgstr "特别军团活动的最终阶段胜利者可以获得的全地形风格。"
+
+msgid "special_style/clan_showdown"
+msgstr "铸就团结"
+
+msgid "special_style/clan_showdown_desc"
+msgstr "一款全地形风格，彰显团队情谊。"
+
+msgid "special_style/clan_showdown_desc/long"
+msgstr ""
+"团队就是归属，一切都与团结、韧性和勇气有关。兄弟齐心，其利断金。盟友之间互相取长补短，将每个人的优势都发挥得淋漓尽致。您可以畅所欲言，因为您知道，无论发生什么，盟友永远是自己的坚强后盾。无论是美好时光还是艰难时刻，一路走来，每个人都收获满满。那些共同训练的时光、在胜利与失败中磨砺战略的日子，每一份付出都是值得的。因为正是这些经历，让您变得坚不可摧，随时准备迎接任何挑战。"
 
 msgid "special_style/clan_style_01"
 msgstr "军团通用"
@@ -27054,6 +27305,12 @@ msgstr ""
 "只有柏勒罗丰能够驯服这匹双翼天马。他们一起对战强大的敌人，冲破暴风乌云，完成了许多伟大的壮举。但一切都止于这位无畏的英雄决定骑着珀伽索斯飞越奥林匹斯山的那一天。 \n"
 "这种大胆的行为惹怒了宙斯，他大发雷霆，将天马和柏勒罗丰都贬到了凡间。不过，他后来又将天马召回神山，并委以重任: 运送雷电。最终，因为其勇气和奉献精神，珀伽索斯变成了一个星座，获得了两颗明亮的星星——危宿三和室宿一。"
 
+msgid "special_style/onslaught_spring"
+msgstr "无畏之魂"
+
+msgid "special_style/onslaught_spring_desc"
+msgstr "一款全地形风格，奖励给2025春季OLS的支持者。"
+
 msgid "special_style/onslaught_tournaments"
 msgstr "敢为人先"
 
@@ -27569,6 +27826,12 @@ msgstr "翡翠猎手"
 msgid "special_style/st_patricks_day_2024_3_desc"
 msgstr "一款全地形风格，让您在参加幸运草对决的同时感受翡翠岛的精神。"
 
+msgid "special_style/st_patricks_day_2025"
+msgstr "熔炼好运"
+
+msgid "special_style/st_patricks_vehicles_2024"
+msgstr "绿色利器"
+
 msgid "special_style/stayhome"
 msgstr "待出乐趣"
 
@@ -27757,7 +28020,7 @@ msgid "special_style/tournaments_2024"
 msgstr "勇者之心"
 
 msgid "special_style/tournaments_2024_desc"
-msgstr "一款全地形风格，奖励给2025冬季OLS的支持者。"
+msgstr "一款全地形风格，奖励给2025天梯赛事的参与者。"
 
 msgid "special_style/toys_world"
 msgstr "玩具世界"
@@ -28242,6 +28505,16 @@ msgstr ""
 "\n"
 "弗雷基和杰里(意为“饥饿”和“贪婪”)是陪伴奥丁神的两只狼。它们出现在13世纪的北欧古典文学作品中，例如诗歌埃达和散文埃达，以及斯卡尔德的诗歌中。"
 
+msgid "special_style/womens_day_2025"
+msgstr "天阙花园"
+
+msgid "special_style/womens_day_2025_desc"
+msgstr "一款全地形风格，彰显对比之美。"
+
+msgid "special_style/womens_day_2025_desc/long"
+msgstr ""
+"置身于彰显宁静与美丽色彩的仙境。这款风格将您的坦克包裹在柔和的粉色与青色交织的光辉之中，并以金光点缀，宛如阳光洒落静谧花园。和谐源自对比，因此，当您怀揣沉静的决心、坚定的意志前进时，记得在力量和优雅之间取得平衡。"
+
 msgid "special_style/wormrider"
 msgstr "沙虫骑士"
 
@@ -28249,6 +28522,16 @@ msgid "special_style/wormrider_desc"
 msgstr ""
 "为了纪念遥远未来活动而设计的全地形风格。\n"
 "像厄拉科斯的沙虫一样出其不意地袭击敌人，弗雷曼人将这些沙虫称之为沙漠之主。"
+
+msgid "special_style/wot_birthday_2025"
+msgstr "战火铸就"
+
+msgid "special_style/wot_birthday_2025_desc"
+msgstr "一款全地形风格，彰显坚韧不拔的精神和永不言败的态度。"
+
+msgid "special_style/wot_birthday_2025_desc/long"
+msgstr ""
+"弘扬坦克和指挥官的不屈精神，这种精神见证了一切。车身上的伤痕，使其成为您独一无二的座驾，直观地提醒着您晋升过程中表现出的毅力和决心。每一次关键一击和跳弹、每一次远程狙击和近距离缠斗、每一次来之不易的胜利和惨痛的失败，如果没有这些，您就不会成为今天的坦克手。装甲上留下的痕迹越深，您在战场上留下的印记就越会被铭记。"
 
 msgid "special_style/wot_classic"
 msgstr "这样的涂装，太棒了"

@@ -56,10 +56,11 @@ package net.wg.gui.lobby.vehicleCompare
       
       override protected function updateLayout() : void
       {
+         var _loc1_:int = 0;
          super.updateLayout();
          this.tree.x = width - this.tree.width >> 1;
          this.tree.y = height >> 1;
-         var _loc1_:int = App.appHeight >= HEIGHT_SD ? int(SEPARATOR_OFFSET_HD) : int(SEPARATOR_OFFSET_SD);
+         _loc1_ = App.appHeight >= HEIGHT_SD ? int(SEPARATOR_OFFSET_HD) : int(SEPARATOR_OFFSET_SD);
          bottomPanel.x = width - bottomPanel.width >> 1;
          bottomPanel.y = (height >> 1) + _loc1_;
          titleTf.visible = App.appHeight >= HEIGHT_SD;

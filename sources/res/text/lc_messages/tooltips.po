@@ -839,6 +839,12 @@ msgstr "在战斗通行证中授予"
 msgid "awardItem/bpcoin/header"
 msgstr "令牌"
 
+msgid "awardItem/bptaler/body"
+msgstr "推进进度，获取硬币。硬币可用于在军械库内的战斗通行证装备库中兑换好物"
+
+msgid "awardItem/bptaler/header"
+msgstr "硬币"
+
 msgid "awardItem/brcoin/body"
 msgstr "良好的战斗表现、单人和小队战斗结果中获得较高的排名以及完成游戏模式任务可获得钢铁印章。"
 
@@ -1187,7 +1193,7 @@ msgid "awardItem/oneof/rankedSeason/previewStyle/body"
 msgstr "点击查看样式"
 
 msgid "awardItem/optional_devices_assistant/body"
-msgstr "这是坦克世界Plus专属功能，可为您展示特定坦克使用率最高的配件配置情报，帮助您了解游戏中当前的主流战术，以及其他坦克手惯用的配置。"
+msgstr "主流坦克武装报告。"
 
 msgid "awardItem/optional_devices_assistant/header"
 msgstr "配件助手"
@@ -1284,6 +1290,14 @@ msgstr "可以助您在钢铁猎手模式中升级并收获奖励。"
 
 msgid "awardItem/steelHunterPoint/header"
 msgstr "钢铁猎手积分"
+
+msgid "awardItem/stpcoin/body"
+msgstr ""
+"可在钢铁猎手战斗中获取的货币。印章可用来在幸运草商店中兑换独特奖励。\n"
+"组队战斗时，所获幸运印章将在小队成员之间平均分配。所示数量为属于您的奖励。"
+
+msgid "awardItem/stpcoin/header"
+msgstr "幸运印章"
 
 msgid "awardItem/tankman/body"
 msgstr "可选择系别和专业的乘员。"
@@ -1975,12 +1989,11 @@ msgid "battle_royale/hangar/tankSetupPanel/ability/cooldownTime"
 msgstr "{whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close}秒冷却时间"
 
 msgid "battle_royale/hangar/vehicle/description/china"
-msgstr ""
-"这辆C系坦克背后的专业团队运用了最先进的坦克制造工艺。能够在钢铁猎手这样的极端条件下测试硬件性能，对设计它的工程师而言无疑是千载难逢的好机会。"
+msgstr "这辆C系坦克的设计团队运用了最先进的坦克制造工艺。能够在钢铁猎手这样的极端条件下测试硬件性能，对设计它的工程师而言无疑是千载难逢的好机会。"
 
 msgid "battle_royale/hangar/vehicle/description/france"
 msgstr ""
-"F系坦克的三大特色就是轻量化，流线型和优雅的设计。这台坦克完全没有参考任何通过工业间谍盗取的设计和技术。这台坦克呈现的设计思路和结局方案完全原创且相当有效。"
+"F系坦克的三大特色就是轻量化，流线型和优雅的设计。这台坦克没有参考任何通过工业间谍盗取的设计和技术。这台坦克呈现的设计思路和结局方案完全原创且相当有效。"
 
 msgid "battle_royale/hangar/vehicle/description/germany"
 msgstr ""
@@ -2007,6 +2020,9 @@ msgstr "该坦克由各种坦克制造工厂的报废零部件组装而成，对
 
 msgid "battle_royale/hangar/vehicle/leftTime"
 msgstr "至: %(leftTime)s"
+
+msgid "battle_royale/hangar/vehicle/shamrock"
+msgstr "%(shamrock)s幸运印章加成: 在单人战斗中排名前10，或在组队战斗中排名前7即可获得。每辆活动坦克每天可激活该加成1次。"
 
 msgid "battle_royale/hangar/vehicle/status"
 msgstr "钢铁猎手之一"
@@ -4798,6 +4814,27 @@ msgstr "萨里克"
 msgid "hangar/crew/specialty_skills"
 msgstr "特长:"
 
+msgid "hangar/easyTankEquip/body"
+msgstr "点击即可快速将坦克全副武装。"
+
+msgid "hangar/easyTankEquip/disabled/default/body"
+msgstr "所选坦克无法使用快速备战。"
+
+msgid "hangar/easyTankEquip/disabled/default/header"
+msgstr "不可用"
+
+msgid "hangar/easyTankEquip/disabled/inappropriateVehicle/body"
+msgstr "快速备战仅适用于%(tier)s级及以上等级的坦克。"
+
+msgid "hangar/easyTankEquip/disabled/switch/body"
+msgstr "快速备战暂时无法使用。请稍后再试。"
+
+msgid "hangar/easyTankEquip/disabled/switch/header"
+msgstr "技术问题"
+
+msgid "hangar/easyTankEquip/header"
+msgstr "快速备战"
+
 msgid "hangar/elen/bottom/allperiphery/body"
 msgstr "战役模式不算在内。只有下列类型的标准模式战斗才会计数:随机战、攻防战以及夺旗战。"
 
@@ -5563,6 +5600,12 @@ msgstr "查看战斗数据与所获的勋章。"
 msgid "header/buttons/profile/header"
 msgstr "账号"
 
+msgid "header/buttons/replays/body"
+msgstr "查看客户端和服务器录像！"
+
+msgid "header/buttons/replays/header"
+msgstr "录像"
+
 msgid "header/buttons/shop/body"
 msgstr "您能在此处购买进行游戏所需的所有道具: 金币、金币坦克、战争债券兑换的道具等等。"
 
@@ -6062,6 +6105,24 @@ msgstr "玩家没有选择要求车辆。"
 
 msgid "medalion/noVehicle/header"
 msgstr "未选择车辆"
+
+msgid "mentorAssignment/advanced/description"
+msgstr "将一名乘员的所有乘员经验转移至同系别的另一名乘员。"
+
+msgid "mentorAssignment/advanced/header"
+msgstr "授业课程"
+
+msgid "mentorAssignment/description"
+msgstr "%(crewName)s将从同系别的另一名乘员那里获得其所有乘员经验。"
+
+msgid "mentorAssignment/title"
+msgstr "授业课程"
+
+msgid "mentorAssignment/warning/crewRemove"
+msgstr "该乘员将被移除，确认后将无法恢复。"
+
+msgid "mentorAssignment/warning/freeSkills"
+msgstr "零历练特长经验不会转移至另一名乘员"
 
 msgid "minimapAlpha/body"
 msgstr ""
@@ -6650,6 +6711,17 @@ msgstr ""
 "团队冲突2021活动期间的奖励。该指挥官拥有一项\"零历练\"自选特长，以及足以将附加特长训练至100%的经验。经验数量取决于玩家所在团队在活动结束时的排名。"
 
 msgid "notrecruitedtankman/bob21_commander_ru4_Nearyou/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/desc"
+msgstr ""
+"小时候，埃姆拉对影子与周围世界之间的联系深感着迷。在求知欲和炼金天赋的驱使下，他背井离乡，踏上探索未知的旅程。途中，他加入了一群游牧魔法师和术士，并亲眼目睹了黑暗的异界威胁。\n"
+"经过严苛的训练和无数次实验，他掌握了将炼金术与金属之力结合的技艺，随后加入了一支特种军队，专门对抗异界敌人。如今，作为一名指挥官，他誓要守护自己的世界，抵御不断侵袭的暗黑力量。"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_extraordinaire/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/boosteroid_foxwood/desc"
@@ -8029,6 +8101,47 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp15_9/label"
 msgstr "战斗通行证: 维京传奇"
 
+msgid "notrecruitedtankman/tankmen_bp16_1/desc"
+msgstr ""
+"托马斯是一名经验丰富的指挥官，工作上有始有终。他有两个看似矛盾的爱好: "
+"坦克和大自然。他无时无刻不在激励车组精益求精，但闲暇之余，他也会拿着笔记本，记录周围的珍稀动植物。性格爽朗、自信满满且充满求知欲的托马斯，凭借无尽的好奇心，抓住机会将自己的坦克战斗技巧带到了丛林地区。在那里，他将对机械与自然的热爱完美融合，取得了令人惊叹的非凡成就。"
+
+msgid "notrecruitedtankman/tankmen_bp16_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_1/label"
+msgstr "战斗通行证赛季XVI"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/desc"
+msgstr ""
+"W.沉稳自信，纪律严明，乍看之下绝非一个爱玩之人。然而，年轻时的他曾是狂热的摩托车赛车手，不仅对机械充满热爱，更磨砺出强烈的胜负心——以及对规则的不羁态度。尽管飞驰在霓虹街头的岁月已成过去，他对竞技的热情依然不减。但对W.而言，最重要的驱动力，始终是超越曾经的自己。"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_2/label"
+msgstr "战斗通行证赛季XVI"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/desc"
+msgstr ""
+"康拉德来自D系西南部茂盛山林中的一个偏僻村庄，他梦想着创作一部伟大小说，讲述家乡的故事，因为他相信，可爱的施瓦茨瓦尔德是世界上最完美的地方。然而，命运另有安排；作为一名粗犷而又狡黠的军人，他被选中担任重要职务，远赴他乡参与开创性的坦克试验。虽然他怀念家乡山上的清新空气，但所处的新环境唤醒了其内心的鲜活故事，激发了他更多的创作灵感。"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_3/label"
+msgstr "战斗通行证赛季XVI"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/desc"
+msgstr ""
+"安热莉克是一名天赋异禀的语言学家，通晓多种语言，精通谈判。无论任务如何，亦或身处何种环境，她总能安然无恙、游刃有余。她拥有迅速适应新团队、新环境和新挑战的非凡能力。她足智多谋，临危不乱，任何问题在她手里都会迎刃而解。传言她曾涉足秘密特工行动，但这更是为她增添了一抹神秘色彩。然而，安热莉克对这些传言不置可否，总是以其魅力、智慧和对手头工作的不懈专注巧妙化解尴尬问题。"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_4/label"
+msgstr "战斗通行证赛季XVI"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "很多人都问我认不认识杰克·里德。在回答之前，我常常会闭上眼睛，深呼吸，因为当他的指挥官可一点都不轻松。里德是个叛逆的家伙，他总能以自己的方式完成命令，还能不违反军队规定。虽然在现实中他困在一个闷热的坦克里。但在内心世界中，他正骑着摩托，沿着高速公路前行，享受着清风吹拂脸颊的感觉。"
@@ -8635,8 +8748,8 @@ msgstr "搜索仅包含X级坦克的战斗"
 msgid "parameter/categories"
 msgstr "类别: "
 
-msgid "periodicReward/comp7/body"
-msgstr "排行榜上的玩家可获得特殊的每日奖励。"
+msgid "periodicReward/body"
+msgstr "?empty?"
 
 msgid "periodicReward/header"
 msgstr "每日奖励"
@@ -9612,23 +9725,24 @@ msgstr "部分乘员已达到特长上限。超出上限的所有经验都将丢
 msgid "quickTraining/FullTrainedPersonal"
 msgstr "{cream_Open}%(tankman)s{cream_Close}已达到特长上限。超出上限的所有经验都将丢失。"
 
+msgid "quickTraining/FullTrainedTankman"
+msgstr "{cream_Open}%(tankman)s{cream_Close}已达到特长上限。"
+
 msgid "quickTraining/LowPECrew"
-msgstr ""
-"乘员不满足训练要求: 部分乘员的特长效率较低。{newLine}乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
+msgstr "乘员不满足训练要求: 部分乘员的特长效率较低。乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
 
 msgid "quickTraining/LowPENotFullCrew"
-msgstr ""
-"乘员不满足训练要求: 部分乘员的特长效率较低，且乘员不足。{newLine}乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
+msgstr "乘员不满足训练要求: 部分乘员的特长效率较低，且乘员不足。乘员训练可以在其{cream_Open}档案{cream_Close}中进行。"
 
 msgid "quickTraining/LowPENotTrainedCrew"
 msgstr ""
 "乘员不满足训练要求: "
-"部分乘员不具备该坦克的专精，还有部分乘员的特长效率较低。{newLine}乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
+"部分乘员不具备该坦克的专精，还有部分乘员的特长效率较低。乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
 
 msgid "quickTraining/LowPENotTrainedNotFullCrew"
 msgstr ""
 "乘员不满足训练要求: "
-"部分乘员不具备该坦克的专精，还有部分乘员的特长效率较低，而且乘员不足。{newLine}可以在乘员{cream_Open}档案{cream_Close}中训练他们。"
+"部分乘员不具备该坦克的专精，还有部分乘员的特长效率较低，而且乘员不足。乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
 
 msgid "quickTraining/LowPEtipsPersonal"
 msgstr ""
@@ -9643,9 +9757,6 @@ msgstr "学习该乘员手册后，部分乘员将达到其特长上限，超出
 msgid "quickTraining/WillFullTrainedPersonal"
 msgstr "学习该乘员手册后，{cream_Open}%(tankman)s{cream_Close}将超出特长上限，超出上限的所有经验都将丢失。"
 
-msgid "quickTraining/chooseAnyCrewMember"
-msgstr "您可以选择一名乘员，使用全局经验或乘员手册来加速其特长训练。"
-
 msgid "quickTraining/lostXpTooltip/body"
 msgstr "部分乘员已达到特长上限。他们学习该乘员手册后，超出上限的所有经验都将丢失。"
 
@@ -9653,24 +9764,31 @@ msgid "quickTraining/lostXpTooltip/header"
 msgstr "额外经验将丢失"
 
 msgid "quickTraining/notFullAndNotTrainedCrew"
-msgstr ""
-"乘员不满足训练要求: "
-"部分乘员不具备该坦克的专精，且乘员不足。{newLine}乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
+msgstr "乘员不满足训练要求: 部分乘员不具备该坦克的专精，且乘员不足。乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
 
 msgid "quickTraining/notFullCrew"
-msgstr ""
-"无法为全体乘员应用乘员手册，乘员条件不符: \n"
-"乘员不足。"
+msgstr "无法为全体乘员应用乘员手册，条件不符: 乘员不足。"
 
 msgid "quickTraining/notTrainedThisVehicle"
-msgstr ""
-"乘员不满足训练要求: 部分乘员不具备该坦克的专精。{newLine}乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
+msgstr "乘员不满足训练要求: 部分乘员不具备该坦克的专精。乘员训练可在其{cream_Open}档案{cream_Close}中进行。"
 
-msgid "quickTraining/unavailableTooltip/body"
+msgid "quickTraining/unavailable/body/allFullyTrained"
 msgstr "全部乘员已达到特长上限。"
 
-msgid "quickTraining/unavailableTooltip/header"
+msgid "quickTraining/unavailable/body/lowEfficiency"
+msgstr "该乘员在这辆坦克上服役时特长效率较低。"
+
+msgid "quickTraining/unavailable/body/perkLimit"
+msgstr "该乘员已达到特长数量上限。"
+
+msgid "quickTraining/unavailable/header/allTrained"
 msgstr "快速训练不可用"
+
+msgid "quickTraining/unavailable/header/book"
+msgstr "乘员手册不可用"
+
+msgid "quickTraining/unavailable/header/freeXp"
+msgstr "全局经验不可用"
 
 msgid "quickTraining/xpEnoughforPostProgression"
 msgstr ""
@@ -10548,11 +10666,21 @@ msgstr "在低端计算机上降低声音质量可以提高整体的游戏性能
 msgid "soundQualityOn/header"
 msgstr "低品质声音"
 
-msgid "squadBonus/comp7/description"
-msgstr "组队战斗时，您可获得额外银币和经验。"
+msgid "specializationWotPlus/content/header"
+msgstr "金币坦克上的乘员训练速度提高50%:"
 
-msgid "squadBonus/comp7/noExpDescription"
-msgstr "组队战斗时，您可获得额外银币。"
+msgid "specializationWotPlus/content/transfer"
+msgstr "从任意类型、等级的坦克免费转移乘员，无处罚"
+
+msgid "specializationWotPlus/description"
+msgstr "该坦克为坦克世界Plus订阅专属。"
+
+msgid "specializationWotPlus/header"
+msgstr "专精"
+
+msgid "specializationWotPlus/vehicle"
+msgstr ""
+"%(level)s{par_Open}%(type)s{par_Close} {gold_Open}%(name)s{gold_Close}"
 
 msgid "squadBonus/complex/body"
 msgstr ""

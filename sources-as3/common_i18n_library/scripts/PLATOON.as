@@ -75,18 +75,6 @@ package
       
       public static const BUTTONS_CREATEPLATOON_DESCRIPTION:String = "#platoon:buttons/createPlatoon/description";
       
-      public static const BUTTONS_CREATEPLATOON_COMP7_FORTWO_TEXT:String = "#platoon:buttons/createPlatoon/comp7/forTwo/text";
-      
-      public static const BUTTONS_CREATEPLATOON_COMP7_FORTWO_CAPTION:String = "#platoon:buttons/createPlatoon/comp7/forTwo/caption";
-      
-      public static const BUTTONS_CREATEPLATOON_COMP7_FORTWO_DESCRIPTION:String = "#platoon:buttons/createPlatoon/comp7/forTwo/description";
-      
-      public static const BUTTONS_CREATEPLATOON_COMP7_FORSEVEN_TEXT:String = "#platoon:buttons/createPlatoon/comp7/forSeven/text";
-      
-      public static const BUTTONS_CREATEPLATOON_COMP7_FORSEVEN_CAPTION:String = "#platoon:buttons/createPlatoon/comp7/forSeven/caption";
-      
-      public static const BUTTONS_CREATEPLATOON_COMP7_FORSEVEN_DESCRIPTION:String = "#platoon:buttons/createPlatoon/comp7/forSeven/description";
-      
       public static const BUTTONS_INVITE_PLAYERS_CAPTION:String = "#platoon:buttons/invite/players/caption";
       
       public static const BUTTONS_INVITE_PLAYERS_DESCRIPTION:String = "#platoon:buttons/invite/players/description";
@@ -153,8 +141,6 @@ package
       
       public static const MEMBERS_HEADER_MAPBOX:String = "#platoon:members/header/mapbox";
       
-      public static const MEMBERS_HEADER_COMP7:String = "#platoon:members/header/comp7";
-      
       public static const MEMBERS_HEADER_TOOLTIP_STANDARD_HEADER:String = "#platoon:members/header/tooltip/standard/header";
       
       public static const MEMBERS_HEADER_TOOLTIP_STANDARD_BODY:String = "#platoon:members/header/tooltip/standard/body";
@@ -170,10 +156,6 @@ package
       public static const MEMBERS_HEADER_NOBONUSPLACEHOLDER_TOOLTIP_HEADER:String = "#platoon:members/header/noBonusPlaceholder/tooltip/header";
       
       public static const MEMBERS_HEADER_NOBONUSPLACEHOLDER_TOOLTIP_BODY:String = "#platoon:members/header/noBonusPlaceholder/tooltip/body";
-      
-      public static const MEMBERS_HEADER_TOOLTIP_COMP7_DROPDOWN:String = "#platoon:members/header/tooltip/comp7/dropdown";
-      
-      public static const MEMBERS_HEADER_TOOLTIP_COMP7_DROPDOWN_ITEM:String = "#platoon:members/header/tooltip/comp7/dropdown/item";
       
       public static const MEMBERS_CARD_DISABLED:String = "#platoon:members/card/disabled";
       
@@ -230,6 +212,8 @@ package
       public static const SETTINGS_TIERS:String = "#platoon:settings/tiers";
       
       public static const SETTINGS_VOICE:String = "#platoon:settings/voice";
+      
+      public static const MEMBERSWINDOW_MEMBERCOUNTDROPDOWN_DESCRIPTION:String = "#platoon:membersWindow/memberCountDropdown/description";
        
       
       public function PLATOON()

@@ -1070,6 +1070,9 @@ msgstr "退出组队"
 msgid "contextMenu/lockSlot"
 msgstr "锁定车位"
 
+msgid "contextMenu/mentorAssignment"
+msgstr "授业课程"
+
 msgid "contextMenu/messenger/closeAllExceptCurrent"
 msgstr "除当前界面关闭所有"
 
@@ -2280,6 +2283,9 @@ msgstr "特惠商城中的一次性优惠"
 msgid "goldFish/windowHeader"
 msgstr "公告"
 
+msgid "hangar/ammunitionPanel/easyTankEquipBtn"
+msgstr "快速备战"
+
 msgid "hangar/ammunitionPanel/maitenanceBtn"
 msgstr "维修"
 
@@ -2732,24 +2738,6 @@ msgstr "钢铁猎手小队"
 
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "创建一个2人小队"
-
-msgid "headerButtons/battle/types/comp7"
-msgstr "天梯战"
-
-msgid "headerButtons/battle/types/comp7/descr"
-msgstr "?empty?"
-
-msgid "headerButtons/battle/types/comp7/extra/endsIn"
-msgstr "距赛季结束还有%(timeLeft)s"
-
-msgid "headerButtons/battle/types/comp7/extra/finished"
-msgstr "查看游戏官网的最新消息，关注全新赛季开始的最新进展。"
-
-msgid "headerButtons/battle/types/comp7/extra/frozen"
-msgstr "此模式由于技术性问题暂不开放。"
-
-msgid "headerButtons/battle/types/comp7/extra/startsAt"
-msgstr "%(time)s开始"
 
 msgid "headerButtons/battle/types/comp7Squad"
 msgstr "创建天梯战小队"
@@ -3777,6 +3765,9 @@ msgstr " "
 
 msgid "loading/battleTypes/desc/9"
 msgstr " "
+
+msgid "loading/battleTypes/subTitle/23"
+msgstr "幸运草对决"
 
 msgid "loading/helpTip"
 msgstr "车库和战场内按F1可查看帮助。"
@@ -6584,10 +6575,10 @@ msgid "training/info/timeout/label"
 msgstr "战斗时间:"
 
 msgid "training/info/timeout/value"
-msgstr "%d 分"
+msgstr "%(roundLength)s分钟"
 
 msgid "training/info/title"
-msgstr "训练房间(%s)"
+msgstr "训练房间(%(arenaName)s)"
 
 msgid "training/info/useCommonVoiceChat"
 msgstr "公共聊天"

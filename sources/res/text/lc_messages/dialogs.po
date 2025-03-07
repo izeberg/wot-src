@@ -537,24 +537,6 @@ msgstr "关闭"
 msgid "common/submit"
 msgstr "继续"
 
-msgid "comp7/deserter/cancel"
-msgstr "取消"
-
-msgid "comp7/deserter/message"
-msgstr ""
-"本场战斗尚未结束。如果中途离场，您将令队友失望。\n"
-"{brown_open}您将因违规受到处罚。{brown_close}\n"
-"您确定要离开战斗？"
-
-msgid "comp7/deserter/msgTitle"
-msgstr "您将失去您的评级点数！"
-
-msgid "comp7/deserter/submit"
-msgstr "确认"
-
-msgid "comp7/deserter/title"
-msgstr "中途离场"
-
 msgid "confirmBattleBoosterBuyAndInstall/cancel"
 msgstr "取消"
 
@@ -2039,16 +2021,6 @@ msgstr ""
 "您于{whiteSpanish_Open}%(time)s{whiteSpanish_Close}在{whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close}地图上违反了游戏规则。\n"
 "您已被暂时封禁，无法参加{whiteSpanish_Open}%(mode)s{whiteSpanish_Close}中的战斗。"
 
-msgid "punishmentWindow/message/ban/comp7"
-msgstr ""
-"您于{whiteSpanish_Open}%(time)s{whiteSpanish_Close}在{whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close}地图上违反了游戏规则。\n"
-"因此，评级点数{whiteSpanish_Open}%(penalty)s{whiteSpanish_Close}，同时，您已被暂时封禁，无法参加{whiteSpanish_Open}天梯战{whiteSpanish_Close}模式战斗。"
-
-msgid "punishmentWindow/message/ban/comp7/qualification"
-msgstr ""
-"您于{whiteSpanish_Open}%(time)s{whiteSpanish_Close}在{whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close}地图上违反了游戏规则。\n"
-"您已被暂时封禁，无法参加{whiteSpanish_Open}天梯战{whiteSpanish_Close}模式中的战斗，同时，您的评级已降低。"
-
 msgid "punishmentWindow/message/penalty"
 msgstr ""
 "您于{whiteSpanish_Open}%(time)s{whiteSpanish_Close}在{whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close}地图上违反了游戏规则。\n"
@@ -2319,6 +2291,9 @@ msgstr "只有被指派为车长专业的乘员才能播放专属语音。"
 
 msgid "recruit/warning/premiumVehicle"
 msgstr "金币坦克无需招募乘员。您可以将乘员转移到相同类型的金币坦克上，没有处罚。"
+
+msgid "recruit/warning/slotChanged"
+msgstr "所选坦克无法招募该乘员，该乘员将被调回兵营。"
 
 msgid "recruitConversionConfirm/warning"
 msgstr "该乘员拥有过时的特长，这些特长将被自动重置，不会损失经验。"
@@ -2609,9 +2584,6 @@ msgstr "专业不符的特长将失效。请手动重置。"
 
 msgid "retrain/warning/irrelevantPerkAndPrem"
 msgstr "乘员可转移到同类型的金币坦克上，无需培训，也没有惩罚，但玩家必须手动重置不匹配的特长。"
-
-msgid "retrain/warning/premiumVehicle"
-msgstr "乘员可转移到同类型的金币坦克上，无需培训，也没有惩罚。"
 
 msgid "rudyInfo/message"
 msgstr ""

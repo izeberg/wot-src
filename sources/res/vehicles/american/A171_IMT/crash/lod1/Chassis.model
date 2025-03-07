@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A171_IMT/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/american/A171_IMT/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.600794 -0.000020 -3.671351</min>
+		<max>1.600634 1.059609 3.011831</max>
+	</visibilityBox>
+</root>

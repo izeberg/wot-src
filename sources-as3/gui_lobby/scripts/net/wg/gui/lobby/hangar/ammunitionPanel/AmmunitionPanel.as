@@ -3,12 +3,16 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
    import flash.display.InteractiveObject;
    import flash.events.Event;
    import flash.events.MouseEvent;
+   import flash.utils.Dictionary;
    import net.wg.data.constants.UniversalBtnStylesConst;
+   import net.wg.data.constants.Values;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.components.controls.universalBtn.UniversalBtn;
    import net.wg.gui.components.vehicleStatus.VehicleStatus;
    import net.wg.gui.components.vehicleStatus.data.VehicleStatusVO;
    import net.wg.gui.components.vehicleStatus.events.VehicleStatusEvent;
+   import net.wg.gui.lobby.hangar.ammunitionPanel.data.AmmunitionPanelBtnVO;
+   import net.wg.gui.lobby.hangar.ammunitionPanel.data.AmmunitionPanelVO;
    import net.wg.infrastructure.base.meta.impl.AmmunitionPanelMeta;
    import net.wg.infrastructure.events.ChildVisibilityEvent;
    import net.wg.infrastructure.events.FocusRequestEvent;
@@ -26,13 +30,11 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
    public class AmmunitionPanel extends AmmunitionPanelMeta implements IAmmunitionPanel
    {
       
-      private static const DEFAULT_BUTTON_WIDTH:int = 131;
+      private static const DEFAULT_BUTTON_WIDTH:int = 132;
       
       private static const REDUCED_BUTTON_WIDTH:int = 35;
       
       public static const SLOTS_HEIGHT_AND_OFFSET:int = 30;
-      
-      private static const INV_BUTTONS_ENABLED:String = "InvButtonsEnabled";
       
       private static const VEHICLE_STATUS_INVALID:String = "vehicleStatusInvalid";
       
@@ -40,11 +42,13 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       
       private static const INV_MAINTENANCE_STATE:String = "InvMaintenanceState";
       
-      private static const INV_TUNING_BUTTON_STATE:String = "InvTuningState";
+      private static const INV_HIGHLIGHT_ETE:String = "InvHighlightETE";
       
-      private static const INV_NATION_CHANGE_BUTTON_STATE:String = "invNationChangeState";
+      private static const INV_BUTTONS:String = "invButtons";
       
-      private static const INV_NATION_CHANGE_BUTTON_RESIZE:String = "invNationChangeResize";
+      private static const INV_BUTTONS_LAYOUT:String = "invButtonsLayout";
+      
+      private static const INV_SIZE:String = "invSize";
       
       private static const OFFSET_BTN_TO_RENT:int = 3;
       
@@ -58,36 +62,32 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       
       private static const SOUND_MAINTENANCE_BTN:String = "maitenanceBtn";
       
-      private static const SOUND_TUNING_BTN:String = "tuningBtn";
+      private static const SOUND_TUNING_BTN:String = "customizationBtn";
       
       private static const SOUND_BTN_TYPE:String = "iconTextButton";
       
       private static const BTN_TEXT_FIELD_PADDING:int = 10;
+      
+      private static const SHINE_REPEAT_COUNT:int = 4;
+      
+      private static const SHINE_DELAY:int = 1000;
        
       
       public var vehicleStatus:VehicleStatus = null;
       
       public var maintenanceBtn:UniversalBtn = null;
       
-      public var tuningBtn:UniversalBtn = null;
+      public var easyTankEquipBtn:UniversalBtn = null;
+      
+      public var customizationBtn:UniversalBtn = null;
       
       public var changeNationBtn:UniversalBtn = null;
       
       public var toRent:SoundButtonEx = null;
       
-      private var _maintenanceBtnEnabled:Boolean = true;
-      
-      private var _maintenanceBtnVisible:Boolean = true;
-      
-      private var _maintenanceTooltip:String = "";
-      
-      private var _tuningBtnEnabled:Boolean = true;
-      
-      private var _tuningBtnVisible:Boolean = true;
-      
-      private var _tuningTooltip:String = "";
-      
       private var _maintenanceStateWarning:Boolean = false;
+      
+      private var _isEasyTankEquipHighlight:Boolean = false;
       
       private var _toolTipMgr:ITooltipMgr;
       
@@ -99,31 +99,34 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       
       private var _counterManager:ICounterManager;
       
-      private var _changeNationBtnEnabled:Boolean;
+      private var _buttonWidth:int = 132;
       
-      private var _changeNationTooltip:String;
+      private var _buttonsOrder:Vector.<IUniversalBtn>;
       
-      private var _changeNationBtnVisible:Boolean;
+      private var _buttonsData:AmmunitionPanelVO = null;
       
-      private var _changeNationIsNew:Boolean;
+      private var _disableAllBtns:Boolean = false;
       
-      private var _buttonWidth:int = 131;
-      
-      private var _buttonsList:Vector.<IUniversalBtn>;
+      private var _btnToID:Dictionary = null;
       
       public function AmmunitionPanel()
       {
          this._toolTipMgr = App.toolTipMgr;
          this._utils = App.utils;
          super();
-         this._buttonsList = new <IUniversalBtn>[this.maintenanceBtn,this.tuningBtn,this.changeNationBtn];
+         this._btnToID = new Dictionary();
+         this._btnToID[this.maintenanceBtn] = AmmunitionPanelVO.MAINTENANCE;
+         this._btnToID[this.customizationBtn] = AmmunitionPanelVO.CUSTOMIZATION;
+         this._btnToID[this.changeNationBtn] = AmmunitionPanelVO.CHANGE_NATION;
+         this._btnToID[this.easyTankEquipBtn] = AmmunitionPanelVO.EASY_TANK_EQUIP;
+         this._buttonsOrder = new <IUniversalBtn>[this.easyTankEquipBtn,this.customizationBtn,this.changeNationBtn,this.maintenanceBtn];
          this._counterManager = App.utils.counterManager;
       }
       
       override protected function initialize() : void
       {
          super.initialize();
-         this.tuningBtn.enabled = false;
+         this.customizationBtn.enabled = false;
          App.waiting.addEventListener(ChildVisibilityEvent.CHILD_SHOWN,this.onChildShownHandler);
          App.waiting.addEventListener(ChildVisibilityEvent.CHILD_HIDDEN,this.onChildHiddenHandler);
       }
@@ -131,15 +134,13 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       override protected function onBeforeDispose() : void
       {
          var _loc1_:IUniversalBtn = null;
-         for each(_loc1_ in this._buttonsList)
+         for each(_loc1_ in this._buttonsOrder)
          {
             _loc1_.removeEventListener(MouseEvent.ROLL_OVER,this.onBtnRollOverHandler);
             _loc1_.removeEventListener(MouseEvent.ROLL_OUT,this.onBtnRollOutHandler);
             _loc1_.removeEventListener(Event.RESIZE,this.onResizeHandler);
+            _loc1_.removeEventListener(ButtonEvent.CLICK,this.onBtnClickHandler);
          }
-         this.maintenanceBtn.removeEventListener(ButtonEvent.CLICK,this.onMaintenanceBtnClickHandler);
-         this.tuningBtn.removeEventListener(ButtonEvent.CLICK,this.onTuningBtnClickHandler);
-         this.changeNationBtn.removeEventListener(ButtonEvent.CLICK,this.onChangeNationBtnClickHandler);
          App.waiting.removeEventListener(ChildVisibilityEvent.CHILD_SHOWN,this.onChildShownHandler);
          App.waiting.removeEventListener(ChildVisibilityEvent.CHILD_HIDDEN,this.onChildHiddenHandler);
          this.vehicleStatus.removeEventListener(VehicleStatusEvent.RESIZE,this.onVehicleStatusResizeHandler);
@@ -151,31 +152,40 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       
       override protected function onDispose() : void
       {
-         this._counterManager.removeCounter(this.tuningBtn);
-         this._counterManager.removeCounter(this.changeNationBtn);
+         var _loc2_:* = null;
+         var _loc1_:UniversalBtn = null;
+         for(_loc2_ in this._btnToID)
+         {
+            _loc1_ = UniversalBtn(_loc2_);
+            this._counterManager.removeCounter(_loc1_);
+            _loc1_.dispose();
+         }
+         _loc1_ = null;
+         App.instance.utils.data.cleanupDynamicObject(this._btnToID);
+         this._btnToID = null;
          this._counterManager = null;
-         this.maintenanceBtn.dispose();
          this.maintenanceBtn = null;
-         this.tuningBtn.dispose();
-         this.tuningBtn = null;
-         this.changeNationBtn.dispose();
+         this.easyTankEquipBtn = null;
+         this.customizationBtn = null;
          this.changeNationBtn = null;
          this.vehicleStatus.dispose();
          this.vehicleStatus = null;
          this.toRent.dispose();
          this.toRent = null;
+         this._buttonsData = null;
          this._statusVo = null;
          this._toolTipMgr = null;
          this._utils = null;
-         this._buttonsList.splice(0,this._buttonsList.length);
-         this._buttonsList = null;
+         this._buttonsOrder.splice(0,this._buttonsOrder.length);
+         this._buttonsOrder = null;
          super.onDispose();
       }
       
       override protected function draw() : void
       {
-         super.draw();
          var _loc1_:Boolean = false;
+         var _loc2_:AmmunitionPanelBtnVO = null;
+         super.draw();
          if(this._statusVo != null && isInvalid(VEHICLE_STATUS_INVALID))
          {
             this.setVehicleStatus();
@@ -184,57 +194,46 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          {
             this.maintenanceBtn.switchAlertIndicatorVisible(this._maintenanceStateWarning);
          }
-         if(isInvalid(INV_TUNING_BUTTON_STATE))
+         if(isInvalid(INV_HIGHLIGHT_ETE))
          {
-            if(App.waiting)
+            _loc1_ = false;
+            if(this._buttonsData)
             {
-               this.tuningBtn.enabled = this._tuningBtnEnabled && !App.waiting.isOnStage;
+               _loc2_ = this._buttonsData.getBtnData(AmmunitionPanelVO.EASY_TANK_EQUIP);
+               _loc1_ = _loc2_ && _loc2_.visible && _loc2_.enabled;
+            }
+            if(_loc1_ && this._isEasyTankEquipHighlight)
+            {
+               this.easyTankEquipBtn.shine(SHINE_REPEAT_COUNT,SHINE_DELAY);
             }
             else
             {
-               this.tuningBtn.enabled = this._tuningBtnEnabled;
-            }
-            _loc1_ = _loc1_ || this._tuningBtnVisible != this.tuningBtn.visible;
-            this.tuningBtn.visible = this._tuningBtnVisible;
-         }
-         if(isInvalid(INV_NATION_CHANGE_BUTTON_STATE))
-         {
-            _loc1_ = _loc1_ || this._changeNationBtnVisible != this.changeNationBtn.visible;
-            this.changeNationBtn.visible = this._changeNationBtnVisible;
-            if(this._changeNationIsNew && this._changeNationBtnVisible)
-            {
-               this._counterManager.setCounter(this.changeNationBtn,CounterManager.EXCLAMATION_COUNTER_VALUE,null,COUNTER_PROPS);
-            }
-            else
-            {
-               this._counterManager.removeCounter(this.changeNationBtn);
-            }
-            if(App.waiting)
-            {
-               this.changeNationBtn.enabled = this._changeNationBtnEnabled && !App.waiting.isOnStage;
-            }
-            else
-            {
-               this.changeNationBtn.enabled = this._changeNationBtnEnabled;
+               this.easyTankEquipBtn.stopShine();
             }
          }
-         if(isInvalid(INV_BUTTONS_ENABLED))
+         if(this._buttonsData && isInvalid(INV_BUTTONS))
          {
-            _loc1_ = _loc1_ || this._maintenanceBtnVisible != this.maintenanceBtn.visible;
-            this.updateButtonsEnabled();
+            this.doUpdateButtons();
+            invalidate(INV_SIZE);
          }
-         if(_loc1_)
+         if(isInvalid(INV_SIZE))
          {
-            this.centerPanel();
+            this.resizeBtn(this.changeNationBtn);
+            invalidate(INV_BUTTONS_LAYOUT);
+         }
+         if(isInvalid(INV_BUTTONS_LAYOUT))
+         {
+            this.layoutItems();
          }
       }
       
       override protected function configUI() : void
       {
          super.configUI();
-         this.configButton(this.maintenanceBtn,MENU.HANGAR_AMMUNITIONPANEL_MAITENANCEBTN,this.onMaintenanceBtnClickHandler,SOUND_MAINTENANCE_BTN);
-         this.configButton(this.tuningBtn,MENU.HANGAR_AMMUNITIONPANEL_TUNINGBTN,this.onTuningBtnClickHandler,SOUND_TUNING_BTN);
-         this.configButton(this.changeNationBtn,MENU.HANGAR_AMMUNITIONPANEL_NATIONCHANGEBTN,this.onChangeNationBtnClickHandler,SOUND_TUNING_BTN,true);
+         this.configureButton(this.maintenanceBtn,MENU.HANGAR_AMMUNITIONPANEL_MAITENANCEBTN,SOUND_MAINTENANCE_BTN);
+         this.configureButton(this.easyTankEquipBtn,MENU.HANGAR_AMMUNITIONPANEL_EASYTANKEQUIPBTN,SOUND_TUNING_BTN);
+         this.configureButton(this.customizationBtn,MENU.HANGAR_AMMUNITIONPANEL_TUNINGBTN,SOUND_TUNING_BTN);
+         this.configureButton(this.changeNationBtn,MENU.HANGAR_AMMUNITIONPANEL_NATIONCHANGEBTN,SOUND_TUNING_BTN,true);
          this.toRent.addEventListener(MouseEvent.ROLL_OVER,this.onBtnRollOverHandler);
          this.toRent.addEventListener(MouseEvent.ROLL_OUT,this.onBtnRollOutHandler);
          this.toRent.addEventListener(ButtonEvent.CLICK,this.onToRentClickHandler);
@@ -249,22 +248,34 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          invalidate(VEHICLE_STATUS_INVALID);
       }
       
+      public function as_highlightEasyTankEquip(param1:Boolean) : void
+      {
+         if(this._isEasyTankEquipHighlight != param1)
+         {
+            this._isEasyTankEquipHighlight = param1;
+            invalidate(INV_HIGHLIGHT_ETE);
+         }
+      }
+      
       public function as_setCustomizationBtnCounter(param1:int) : void
       {
          if(param1 > 0)
          {
-            this._counterManager.setCounter(this.tuningBtn,param1.toString());
+            this._counterManager.setCounter(this.customizationBtn,param1.toString());
          }
          else
          {
-            this._counterManager.removeCounter(this.tuningBtn);
+            this._counterManager.removeCounter(this.customizationBtn);
          }
       }
       
-      public function as_setWarningState(param1:Boolean) : void
+      public function as_setMaintenanceWarningState(param1:Boolean) : void
       {
-         this._maintenanceStateWarning = param1;
-         invalidate(INV_MAINTENANCE_STATE);
+         if(this._maintenanceStateWarning != param1)
+         {
+            this._maintenanceStateWarning = param1;
+            invalidate(INV_MAINTENANCE_STATE);
+         }
       }
       
       public function getComponentForFocus() : InteractiveObject
@@ -277,119 +288,49 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          return new <HelpLayoutVO>[this.vehicleStatus.createHelpLayoutData()];
       }
       
-      public function updateMaintenanceButton(param1:Boolean, param2:Boolean, param3:String) : void
+      public function updateButtons(param1:AmmunitionPanelVO) : void
       {
-         this._maintenanceBtnEnabled = param2;
-         this._maintenanceBtnVisible = param1;
-         this._maintenanceTooltip = param3;
-         invalidate(INV_BUTTONS_ENABLED);
-      }
-      
-      public function updateChangeNationButton(param1:Boolean, param2:Boolean, param3:String, param4:Boolean) : void
-      {
-         this._changeNationBtnVisible = param1;
-         this._changeNationBtnEnabled = param2;
-         this._changeNationIsNew = param4;
-         this._changeNationTooltip = param3;
-         invalidate(INV_NATION_CHANGE_BUTTON_STATE);
+         this._buttonsData = param1;
+         invalidate(INV_BUTTONS);
       }
       
       public function updateStage(param1:Number, param2:Number) : void
       {
-         this._screenWidth = param1;
-         this.resizeChangeNationButton(this.changeNationBtn);
-         this.centerPanel();
-      }
-      
-      public function updateTuningButton(param1:Boolean, param2:Boolean, param3:String) : void
-      {
-         this._tuningBtnVisible = param1;
-         this._tuningBtnEnabled = param2;
-         this._tuningTooltip = param3;
-         invalidate(INV_TUNING_BUTTON_STATE);
-      }
-      
-      private function updateButtonsEnabled() : void
-      {
-         this.maintenanceBtn.visible = this._maintenanceBtnVisible;
-         this.maintenanceBtn.enabled = this._maintenanceBtnEnabled;
-         this.tuningBtn.enabled = this._tuningBtnEnabled;
-      }
-      
-      private function centerPanel() : void
-      {
-         this.x = this._screenWidth - this.width >> 1;
-         var _loc1_:int = this._buttonWidth + INDENT_BETWEEN_BUTTONS;
-         var _loc2_:int = 0;
-         if(this._maintenanceBtnVisible)
+         if(this._screenWidth != param1)
          {
-            this.maintenanceBtn.x = _loc2_;
-            _loc2_ += _loc1_;
+            this._screenWidth = param1;
+            invalidate(INV_SIZE);
          }
-         if(this._tuningBtnVisible)
-         {
-            this.tuningBtn.x = _loc2_;
-            _loc2_ += _loc1_;
-         }
-         if(this._changeNationBtnVisible)
-         {
-            this.changeNationBtn.x = _loc2_;
-         }
-         this.placeVehicleStatus();
-         dispatchEvent(new Event(Event.RESIZE));
       }
       
       private function placeVehicleStatus() : void
       {
-         var _loc1_:Boolean = false;
          this.vehicleStatus.x = this.width >> 1;
-         _loc1_ = this._maintenanceBtnVisible || this._tuningBtnVisible || this._changeNationBtnVisible;
-         var _loc2_:int = !!_loc1_ ? int(VEHICLE_STATUS_TO_BUTTONS_OFFSET_Y) : int(this.maintenanceBtn.height + VEHICLE_STATUS_TO_SLOTS_OFFSET_Y);
-         this.vehicleStatus.y = this.maintenanceBtn.y - this.vehicleStatus.height + _loc2_ | 0;
+         var _loc1_:int = Boolean(this._buttonsData) && this._buttonsData.isAnyButtonVisible ? int(VEHICLE_STATUS_TO_BUTTONS_OFFSET_Y) : int(this.maintenanceBtn.height + VEHICLE_STATUS_TO_SLOTS_OFFSET_Y);
+         this.vehicleStatus.y = this.maintenanceBtn.y - this.vehicleStatus.height + _loc1_ | 0;
       }
       
-      private function configButton(param1:UniversalBtn, param2:String, param3:Function, param4:String, param5:Boolean = false) : void
+      private function configureButton(param1:UniversalBtn, param2:String, param3:String, param4:Boolean = false) : void
       {
          param1.mouseEnabledOnDisabled = true;
          param1.soundType = SOUND_BTN_TYPE;
-         param1.soundId = param4;
+         param1.soundId = param3;
          param1.changeSizeOnlyUpwards = true;
          param1.paddingHorizontal = BTN_TEXT_FIELD_PADDING;
-         if(param5)
+         if(param4)
          {
-            this.resizeChangeNationButton(param1,param2);
+            this.resizeBtn(param1,param2);
          }
          else
          {
             param1.width = this._buttonWidth;
             param1.label = param2;
          }
-         param1.addEventListener(ButtonEvent.CLICK,param3);
+         param1.addEventListener(ButtonEvent.CLICK,this.onBtnClickHandler);
          param1.addEventListener(MouseEvent.ROLL_OVER,this.onBtnRollOverHandler);
          param1.addEventListener(MouseEvent.ROLL_OUT,this.onBtnRollOutHandler);
          param1.addEventListener(Event.RESIZE,this.onResizeHandler);
          App.utils.universalBtnStyles.setStyle(param1,UniversalBtnStylesConst.STYLE_SLIM_GREEN);
-      }
-      
-      private function resizeChangeNationButton(param1:UniversalBtn, param2:String = "#menu:hangar/ammunitionPanel/nationChangeBtn") : void
-      {
-         var _loc3_:int = param1.width;
-         if(this._screenWidth < StageSizeBoundaries.WIDTH_1366)
-         {
-            param1.width = REDUCED_BUTTON_WIDTH;
-            param1.iconSource = RES_ICONS.MAPS_ICONS_BUTTONS_NC_ICON_19X22;
-            param1.label = "";
-         }
-         else
-         {
-            param1.width = this._buttonWidth;
-            param1.iconSource = "";
-            param1.label = param2;
-         }
-         if(_loc3_ != param1.width)
-         {
-            invalidate(INV_NATION_CHANGE_BUTTON_RESIZE);
-         }
       }
       
       private function setVehicleStatus() : void
@@ -399,6 +340,97 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          {
             dispatchEvent(new FocusRequestEvent(FocusRequestEvent.REQUEST_FOCUS,this));
          }
+      }
+      
+      private function doUpdateButtons() : void
+      {
+         var _loc2_:* = null;
+         var _loc1_:UniversalBtn = null;
+         for(_loc2_ in this._btnToID)
+         {
+            _loc1_ = UniversalBtn(_loc2_);
+            this.updateBtn(_loc1_,this._buttonsData.getBtnData(this._btnToID[_loc1_]));
+         }
+      }
+      
+      private function updateBtn(param1:UniversalBtn, param2:AmmunitionPanelBtnVO) : void
+      {
+         if(param2 == null)
+         {
+            return;
+         }
+         if(param2.visible)
+         {
+            param1.enabled = param2.enabled && !this._disableAllBtns;
+            param1.tooltip = param2.tooltip;
+            if(param2.isNew)
+            {
+               this._counterManager.setCounter(param1,CounterManager.EXCLAMATION_COUNTER_VALUE,null,COUNTER_PROPS);
+            }
+         }
+         if(!param2.isNew || !param2.visible)
+         {
+            this._counterManager.removeCounter(param1);
+         }
+         param1.visible = param2.visible;
+      }
+      
+      private function layoutItems() : void
+      {
+         var _loc2_:IUniversalBtn = null;
+         var _loc1_:int = 0;
+         for each(_loc2_ in this._buttonsOrder)
+         {
+            if(_loc2_.visible)
+            {
+               _loc2_.x = _loc1_;
+               _loc1_ += _loc2_.width + INDENT_BETWEEN_BUTTONS;
+            }
+            else
+            {
+               _loc2_.x = 0;
+            }
+         }
+         this.placeVehicleStatus();
+         dispatchEvent(new Event(Event.RESIZE));
+      }
+      
+      private function resizeBtn(param1:UniversalBtn, param2:String = "#menu:hangar/ammunitionPanel/nationChangeBtn") : void
+      {
+         if(this._screenWidth < StageSizeBoundaries.WIDTH_1366)
+         {
+            param1.width = REDUCED_BUTTON_WIDTH;
+            param1.iconSource = RES_ICONS.MAPS_ICONS_BUTTONS_NC_ICON_19X22;
+            param1.label = Values.EMPTY_STR;
+         }
+         else
+         {
+            param1.width = this._buttonWidth;
+            param1.iconSource = Values.EMPTY_STR;
+            param1.label = param2;
+         }
+      }
+      
+      override public function get width() : Number
+      {
+         var _loc4_:* = null;
+         if(this._buttonsData == null)
+         {
+            return Values.ZERO;
+         }
+         var _loc1_:int = -INDENT_BETWEEN_BUTTONS;
+         var _loc2_:AmmunitionPanelBtnVO = null;
+         var _loc3_:UniversalBtn = null;
+         for(_loc4_ in this._btnToID)
+         {
+            _loc3_ = UniversalBtn(_loc4_);
+            _loc2_ = this._buttonsData.getBtnData(this._btnToID[_loc3_]);
+            if(_loc2_ && _loc2_.visible)
+            {
+               _loc1_ += _loc3_.width + INDENT_BETWEEN_BUTTONS;
+            }
+         }
+         return _loc1_ > Values.ZERO ? Number(_loc1_) : Number(Values.ZERO);
       }
       
       private function onVehicleStatusResizeHandler(param1:VehicleStatusEvent) : void
@@ -412,42 +444,41 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          }
       }
       
-      private function onMaintenanceBtnClickHandler(param1:ButtonEvent) : void
+      private function onBtnClickHandler(param1:ButtonEvent) : void
       {
-         showRepairDialogS();
-      }
-      
-      private function onTuningBtnClickHandler(param1:ButtonEvent) : void
-      {
-         showCustomizationS();
-      }
-      
-      private function onChangeNationBtnClickHandler(param1:ButtonEvent) : void
-      {
-         showChangeNationS();
+         if(param1.target == this.easyTankEquipBtn)
+         {
+            showEasyTankEquipS();
+         }
+         else if(param1.target == this.customizationBtn)
+         {
+            showCustomizationS();
+         }
+         else if(param1.target == this.changeNationBtn)
+         {
+            showChangeNationS();
+         }
+         else if(param1.target == this.maintenanceBtn)
+         {
+            showRepairDialogS();
+         }
       }
       
       private function onBtnRollOverHandler(param1:MouseEvent) : void
       {
          var _loc2_:String = null;
          var _loc3_:ITooltipFormatter = null;
+         var _loc4_:AmmunitionPanelBtnVO = null;
          if(param1.target == this.toRent)
          {
             _loc3_ = this._toolTipMgr.getNewFormatter();
             _loc3_.addBody(TOOLTIPS.HANGAR_STATUS_TORENT,true);
             _loc2_ = _loc3_.make();
          }
-         else if(param1.target == this.maintenanceBtn)
+         else if(param1.target in this._btnToID && this._buttonsData)
          {
-            _loc2_ = this._maintenanceTooltip;
-         }
-         else if(param1.target == this.tuningBtn)
-         {
-            _loc2_ = this._tuningTooltip;
-         }
-         else if(param1.target == this.changeNationBtn)
-         {
-            _loc2_ = this._changeNationTooltip;
+            _loc4_ = this._buttonsData.getBtnData(this._btnToID[param1.target]);
+            _loc2_ = Boolean(_loc4_) ? _loc4_.tooltip : Values.EMPTY_STR;
          }
          this._toolTipMgr.showComplex(_loc2_);
       }
@@ -467,54 +498,41 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       
       private function onChildShownHandler(param1:ChildVisibilityEvent) : void
       {
-         if(this.tuningBtn)
-         {
-            this.tuningBtn.enabled = false;
-         }
+         this._disableAllBtns = true;
+         invalidate(INV_BUTTONS,INV_HIGHLIGHT_ETE);
       }
       
       private function onChildHiddenHandler(param1:ChildVisibilityEvent) : void
       {
-         this.updateTuningButton(this._tuningBtnVisible,this._tuningBtnEnabled,this._tuningTooltip);
-         this.updateChangeNationButton(this._changeNationBtnVisible,this._changeNationBtnEnabled,this._changeNationTooltip,this._changeNationIsNew);
+         this._disableAllBtns = false;
+         invalidate(INV_BUTTONS);
       }
       
       private function onResizeHandler(param1:Event) : void
       {
+         var _loc3_:int = 0;
          var _loc4_:int = 0;
          var _loc5_:IUniversalBtn = null;
-         var _loc2_:int = this._buttonsList.length;
-         var _loc3_:int = param1.currentTarget.width;
-         if(_loc3_ > this._buttonWidth)
+         var _loc2_:int = param1.currentTarget.width;
+         if(_loc2_ > this._buttonWidth)
          {
+            _loc3_ = this._buttonsOrder.length;
+            this._buttonWidth = _loc2_;
             _loc4_ = 0;
-            while(_loc4_ < _loc2_)
+            while(_loc4_ < _loc3_)
             {
-               _loc5_ = this._buttonsList[_loc4_];
-               this._buttonWidth = _loc3_;
+               _loc5_ = this._buttonsOrder[_loc4_];
                if(!(this._screenWidth < StageSizeBoundaries.WIDTH_1366 && _loc5_ == this.changeNationBtn))
                {
-                  if(_loc5_.width != _loc3_)
+                  if(_loc5_.width != _loc2_)
                   {
-                     _loc5_.setSize(_loc3_,_loc5_.height);
+                     _loc5_.width = _loc2_;
                   }
                }
                _loc4_++;
             }
          }
-         this.centerPanel();
-      }
-      
-      override public function get width() : Number
-      {
-         var _loc2_:int = 0;
-         var _loc1_:int = 2 * this._buttonWidth + INDENT_BETWEEN_BUTTONS;
-         if(this._changeNationBtnVisible)
-         {
-            _loc2_ = this._screenWidth < StageSizeBoundaries.WIDTH_1366 ? int(REDUCED_BUTTON_WIDTH) : int(this._buttonWidth);
-            _loc1_ += _loc2_ + INDENT_BETWEEN_BUTTONS;
-         }
-         return _loc1_;
+         invalidate(INV_SIZE);
       }
    }
 }

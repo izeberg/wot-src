@@ -2,6 +2,7 @@
 <root>
 	<FeatureName>server_side_replay</FeatureName>
 	<IsEnabled>true</IsEnabled>
+	<Personality>ServerSideReplayPersonality</Personality>
 	<Components>
 		<StaticComponents>
 			<ServerReplayArenaComponent/>

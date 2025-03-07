@@ -145,6 +145,8 @@ package
       
       public static const BONUSES_EQUIPCOIN_DESCRIPTION:String = "#quests:bonuses/equipCoin/description";
       
+      public static const BONUSES_BPTALER_DESCRIPTION:String = "#quests:bonuses/bptaler/description";
+      
       public static const BONUSES_PREMIUM_PLUS_DESCRIPTION:String = "#quests:bonuses/premium_plus/description";
       
       public static const BONUSES_TANKMEN_DESCRIPTION:String = "#quests:bonuses/tankmen/description";
@@ -2551,6 +2553,8 @@ package
       
       public static const BONUSNAME_BRCOIN:String = "#quests:bonusName/brcoin";
       
+      public static const BONUSNAME_STPCOIN:String = "#quests:bonusName/stpcoin";
+      
       public static const BONUSNAME_GOLD_BANK:String = "#quests:bonusName/gold_bank";
       
       public static const BONUSNAME_IDLE_CREW_XP:String = "#quests:bonusName/idle_crew_xp";
@@ -2566,6 +2570,8 @@ package
       public static const BONUSNAME_TOURCOIN:String = "#quests:bonusName/tourcoin";
       
       public static const BONUSNAME_INDUSTRIALRESOURCE:String = "#quests:bonusName/industrialResource";
+      
+      public static const BONUSNAME_BPTALER:String = "#quests:bonusName/bptaler";
       
       public static const BONUSNAME_BATTLE_BONUSES:String = "#quests:bonusName/battle_bonuses";
       
@@ -3454,14 +3460,6 @@ package
       public static const DETAILS_CONDITIONS_CUMULATIVE_DAMAGEDHP:String = "#quests:details/conditions/cumulative/damagedHp";
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_COMP7PRESTIGEPOINTS:String = "#quests:details/conditions/cumulative/comp7PrestigePoints";
-      
-      public static const DAILYQUESTS_COMP7_REWARD:String = "#quests:dailyQuests/comp7/reward";
-      
-      public static const DAILYQUESTS_COMP7_NEXTTASKS:String = "#quests:dailyQuests/comp7/nextTasks";
-      
-      public static const DAILYQUESTS_COMP7_QUESTSCOUNTER:String = "#quests:dailyQuests/comp7/questsCounter";
-      
-      public static const DAILYQUESTS_COMP7_PROGRESSCOUNTER:String = "#quests:dailyQuests/comp7/progressCounter";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

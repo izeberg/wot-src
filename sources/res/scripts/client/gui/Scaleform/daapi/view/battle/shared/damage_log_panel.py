@@ -1,8 +1,9 @@
 from collections import defaultdict
+import BattleReplay
 from BattleFeedbackCommon import BATTLE_EVENT_TYPE as _BET
 from account_helpers.settings_core.options import DamageLogDetailsSetting as _VIEW_MODE, DamageLogEventPositionsSetting as _EVENT_POSITIONS, DamageLogEventTypesSetting as _DISPLAYED_EVENT_TYPES
 from account_helpers.settings_core.settings_constants import DAMAGE_LOG, GRAPHICS
-from constants import BATTLE_LOG_SHELL_TYPES, BOT_DISPLAY_CLASS_NAMES, VEHICLE_BUNKER_TURRET_TAG
+from constants import BATTLE_LOG_SHELL_TYPES, BOT_DISPLAY_CLASS_NAMES, VEHICLE_BUNKER_TURRET_TAG, ARENA_BONUS_TYPE
 from gui.Scaleform.daapi.view.meta.BattleDamageLogPanelMeta import BattleDamageLogPanelMeta
 from gui.Scaleform.genConsts.BATTLEDAMAGELOG_IMAGES import BATTLEDAMAGELOG_IMAGES as _IMAGES
 from gui.Scaleform.genConsts.DAMAGE_LOG_SHELL_BG_TYPES import DAMAGE_LOG_SHELL_BG_TYPES
@@ -623,7 +624,7 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
             self.as_summaryStatsS(*args)
 
     def _onTotalEfficiencyUpdated(self, diff):
-        if self.isSwitchToVehicle():
+        if self.isSwitchToVehicle() or BattleReplay.isServerSideReplay():
             for e, updateMethod in self._totalEvents:
                 if e in diff:
                     isUpdated, value = self._setTotalValue(e, diff[e])
@@ -631,12 +632,12 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
                         updateMethod(value)
 
     def _onPersonalEfficiencyLogSynced(self):
-        if self.isSwitchToVehicle():
+        if self.isSwitchToVehicle() or BattleReplay.isServerSideReplay():
             self._topLog.invalidate()
             self._bottomLog.invalidate()
 
     def _onEfficiencyReceived(self, events):
-        if self.isSwitchToVehicle():
+        if self.isSwitchToVehicle() or BattleReplay.isServerSideReplay():
             self._topLog.addToLog(events)
             self._bottomLog.addToLog(events)
 
@@ -739,7 +740,6 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
         result = self.settingsCore.getSetting(settingName)
         if settingName == DAMAGE_LOG.ASSIST_STUN and result:
             isSPG = self.__arenaDP.getVehicleInfo(self.__vehStateCtrl.getControllingVehicleID()).isSPG()
-            arenaVisitor = self.sessionProvider.arenaVisitor
-            isComp7Battle = arenaVisitor.gui.isComp7Battle()
+            isComp7Battle = self.sessionProvider.arenaVisitor.getArenaBonusType() == ARENA_BONUS_TYPE.COMP7
             result = (isSPG or isComp7Battle) and self.lobbyContext.getServerSettings().spgRedesignFeatures.isStunEnabled()
         return result

@@ -923,6 +923,9 @@ msgstr "坦克蓝图碎片："
 msgid "bonusName/bpcoin"
 msgstr "令牌"
 
+msgid "bonusName/bptaler"
+msgstr "硬币"
+
 msgid "bonusName/brcoin"
 msgstr "钢铁印章"
 
@@ -1127,6 +1130,9 @@ msgstr "每日奖励战斗。"
 msgid "bonusName/slots"
 msgstr "车位"
 
+msgid "bonusName/stpcoin"
+msgstr "幸运印章"
+
 msgid "bonusName/style"
 msgstr "风格"
 
@@ -1159,6 +1165,9 @@ msgstr "个人储备: %(name)s(x%(count)s)"
 
 msgid "bonuses/bpcoin/description"
 msgstr "%(value)s 令牌"
+
+msgid "bonuses/bptaler/description"
+msgstr "硬币: %(value)s"
 
 msgid "bonuses/compensation/body"
 msgstr "此奖励用来补偿您已经拥有的游戏资产。"
@@ -1324,18 +1333,6 @@ msgstr "%H时%M分后过期"
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "在%MM:%SS后过期"
-
-msgid "dailyQuests/comp7/nextTasks"
-msgstr "距5个新任务开放还有:"
-
-msgid "dailyQuests/comp7/progressCounter"
-msgstr "%(current)d%(separator)s%(total)d"
-
-msgid "dailyQuests/comp7/questsCounter"
-msgstr "%(current)d/%(total)d"
-
-msgid "dailyQuests/comp7/reward"
-msgstr "领取您的奖励！"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "进行一场战斗"

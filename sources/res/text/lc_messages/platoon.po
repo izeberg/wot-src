@@ -19,24 +19,6 @@ msgstr "点击取消搜索小队成员。"
 msgid "buttons/createPlatoon/caption"
 msgstr "创建新小队"
 
-msgid "buttons/createPlatoon/comp7/forSeven/caption"
-msgstr "7名玩家"
-
-msgid "buttons/createPlatoon/comp7/forSeven/description"
-msgstr "创建一个7人超级小队。"
-
-msgid "buttons/createPlatoon/comp7/forSeven/text"
-msgstr "7名玩家"
-
-msgid "buttons/createPlatoon/comp7/forTwo/caption"
-msgstr "2名玩家"
-
-msgid "buttons/createPlatoon/comp7/forTwo/description"
-msgstr "创建一个2人小队。"
-
-msgid "buttons/createPlatoon/comp7/forTwo/text"
-msgstr "2名玩家"
-
 msgid "buttons/createPlatoon/description"
 msgstr "创建一个小队，邀请好友一同战斗。"
 
@@ -283,9 +265,6 @@ msgstr "小队中的轮式战车数量已达到上限"
 msgid "members/header/battle_royal"
 msgstr ": 钢铁猎手"
 
-msgid "members/header/comp7"
-msgstr ":天梯战"
-
 msgid "members/header/epic"
 msgstr ": 前线模式"
 
@@ -303,12 +282,6 @@ msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
 msgid "members/header/squad"
 msgstr ": 标准模式"
-
-msgid "members/header/tooltip/comp7/dropdown"
-msgstr "只有小队指挥官才能更改成员数量上限。"
-
-msgid "members/header/tooltip/comp7/dropdown/item"
-msgstr "无法更改。成员数量上限不可低于当前成员数量。"
 
 msgid "members/header/tooltip/epic/body"
 msgstr ""
@@ -329,6 +302,9 @@ msgstr "组队时坦克等级必须相同。"
 
 msgid "members/header/tooltip/standard/header"
 msgstr "小队创建规则"
+
+msgid "membersWindow/memberCountDropdown/description"
+msgstr "组队玩家"
 
 msgid "searching/estimated/caption"
 msgstr "预估剩余时间"

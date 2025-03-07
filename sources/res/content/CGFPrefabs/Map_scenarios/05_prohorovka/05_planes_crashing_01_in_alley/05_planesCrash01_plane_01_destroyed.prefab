@@ -9183,6 +9183,122 @@
 								<object>
 									<property>
 										<name>object</name>
+										<link>63bcaae6-d5fc-420a-862f-d71134a630b2</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>8</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>8</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
 										<link>b4367740-2f3c-4caf-9137-e1636abd837b</link>
 									</property>
 									<property>
@@ -12867,36 +12983,28 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>AIDataPatch</type>
+			<type>AIZonesPatch</type>
 			<version>2</version>
 			<component>
-				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
-				<flags>2</flags>
+				<UUID>36d90e88-64da-49bd-8c8e-956e5ad91c11</UUID>
+				<flags>32</flags>
 				<config>
 					<property>
-						<name>patchName</name>
+						<name>patchTag</name>
 						<value>05_planesCrash01_ai</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>AIDynamicEvent</type>
-			<version>1</version>
+			<type>NavmeshPatch</type>
+			<version>2</version>
 			<component>
-				<UUID>36d90e88-64da-49bd-8c8e-956e5ad91c11</UUID>
-				<flags>32</flags>
+				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>navmeshPatchTag</name>
-						<value>05_planesCrash01_ai</value>
-					</property>
-					<property>
-						<name>zonePatchTag</name>
-						<value>05_planesCrash01_ai</value>
-					</property>
-					<property>
-						<name>coverPatchTag</name>
+						<name>patchName</name>
 						<value>05_planesCrash01_ai</value>
 					</property>
 				</config>

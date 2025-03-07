@@ -13,6 +13,15 @@ msgstr ""
 msgid "buyVehicleWindow/buyBtn"
 msgstr "购买"
 
+msgid "buyVehicleWindow/consumablesTooltip/body"
+msgstr "将安装以下给养: %(consumables)s。"
+
+msgid "buyVehicleWindow/consumablesTooltip/header"
+msgstr "购买给养"
+
+msgid "buyVehicleWindow/consumablesTooltip/listSeparator"
+msgstr "、"
+
 msgid "buyVehicleWindow/countCrewLbl"
 msgstr "%(count)s名乘员"
 
@@ -33,6 +42,9 @@ msgstr "Wargaming使用T-34的字母数字组合来表示现实中的坦克，�
 
 msgid "buyVehicleWindow/equipment/ammo"
 msgstr "补给弹药"
+
+msgid "buyVehicleWindow/equipment/consumables"
+msgstr "安装给养"
 
 msgid "buyVehicleWindow/equipment/slot"
 msgstr "车位"

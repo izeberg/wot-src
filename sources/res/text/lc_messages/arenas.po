@@ -16,25 +16,12 @@ msgstr "两条进攻路径被地图中央的沼泽分隔开来。东边是进行
 msgid "01_karelia/name"
 msgstr "卡累利阿"
 
-msgid "01_karelia_fp/description"
-msgstr "两条进攻路径被地图中央的沼泽分隔开来。东边是进行堑壕战的理想位置，西边的地形则有利于强攻。从沼泽进攻风险较大，但可能会有出其不意的效果。"
-
-msgid "01_karelia_fp/name"
-msgstr "卡累利阿(冬季)"
-
 msgid "02_malinovka/description"
 msgstr ""
 "双方队伍的出生点被一片平坦开阔的地域相隔，非常适合自行火炮射击，也是进行防御的理想地形。掩体包括树林、山丘和农舍等，合理利用它们能够对战斗结果产生决定性影响。进攻方最好采用侧袭战术，但也可以在队友的配合下，利用高机动在开阔地带发动突击，这有可能会取得胜利，但也有可能遭受惨败。"
 
 msgid "02_malinovka/name"
 msgstr "马利诺夫卡"
-
-msgid "02_malinovka_fp/description"
-msgstr ""
-"双方队伍的出生点被一片平坦开阔的地域相隔，非常适合自行火炮射击，也是进行防御的理想地形。掩体包括树林、山丘和农舍等，合理利用它们能够对战斗结果产生决定性影响。进攻方最好采用侧袭战术，但也可以在队友的配合下，利用高机动在开阔地带发动突击，这有可能会取得胜利，但也有可能遭受惨败。"
-
-msgid "02_malinovka_fp/name"
-msgstr "马利诺夫卡(冬季)"
 
 msgid "03_campania_big/description"
 msgstr ""
@@ -56,13 +43,6 @@ msgstr ""
 
 msgid "05_prohorovka/name"
 msgstr "普罗霍洛夫卡"
-
-msgid "05_prohorovka_fp/description"
-msgstr ""
-"这张地图总体上地形开阔，拥有一座大型山丘以及铁路路基。星罗棋布的树丛是自行反坦克炮最好的掩护。进攻方最好从侧翼发动突击，但要注意保护己方侧翼。可供自行火炮利用的作战区域较多，但容易受到轻型坦克的突袭。"
-
-msgid "05_prohorovka_fp/name"
-msgstr "普罗霍洛夫卡(冬季)"
 
 msgid "06_ensk/description"
 msgstr ""
@@ -428,17 +408,6 @@ msgstr "任务目标:攻占一个敌方基地或击毁所有敌方坦克。"
 
 msgid "type/assault2/name"
 msgstr "攻防战"
-
-msgid "type/comp7/description"
-msgstr ""
-"任务: 占领基地或击毁所有敌方坦克。\n"
-"占领焦点位置以使用战术能力。"
-
-msgid "type/comp7/name"
-msgstr "天梯战"
-
-msgid "type/comp7/short_description"
-msgstr "任务目标:占领地图中无人基地或击毁敌方所有坦克。"
 
 msgid "type/ctf/description"
 msgstr "任务目标:攻占敌方基地或击毁敌方所有坦克。"

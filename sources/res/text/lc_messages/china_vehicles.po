@@ -762,6 +762,22 @@ msgstr "BZ-72-1"
 msgid "Ch54_BZ_72_1_short_special"
 msgstr "强大的火炮，可靠的装甲"
 
+msgid "Ch56_BZ_74_1"
+msgstr "BZ-74-1"
+
+msgid "Ch56_BZ_74_1_descr"
+msgstr "该坦克的研发受到了M48A3的影响，采用传统布局，车体由铸造件焊接而成，炮塔则由轧制板焊接而成。底盘和车体的诸多设计都借鉴了M系坦克。"
+
+msgid "Ch56_BZ_74_1_long_special"
+msgstr ""
+"BZ-74-1是一辆C系VIII级重型坦克。它的装甲适中，但具有相对于重型坦克来说良好的最大前进速度和机动性。它配备一门手感良好的122毫米火炮，具有较高的平均单发损伤。该坦克适合较为主动的玩法，如快速占据关键点位、及时转场。"
+
+msgid "Ch56_BZ_74_1_short"
+msgstr "BZ-74-1"
+
+msgid "Ch56_BZ_74_1_short_special"
+msgstr "良好的机动性和火炮俯仰角"
+
 msgid "Ch58_111_Vz51"
 msgstr "111 VI"
 
@@ -1135,6 +1151,9 @@ msgstr "T-26"
 msgid "Chassis_Ch54_BZ_72_1"
 msgstr "BZ-72-1"
 
+msgid "Chassis_Ch56_BZ_74_1"
+msgstr "BZ-74-1"
+
 msgid "Chassis_Ch58_111_Vz51"
 msgstr "111 VI"
 
@@ -1400,6 +1419,9 @@ msgstr "T-26"
 
 msgid "Turret_1_Ch54_BZ_72_1"
 msgstr "BZ-72-1"
+
+msgid "Turret_1_Ch56_BZ_74_1"
+msgstr "BZ-74-1"
 
 msgid "Turret_1_Ch58_111_Vz51"
 msgstr "111 VI"
@@ -1801,6 +1823,9 @@ msgstr "122mm 60-122TC炮"
 msgid "_122mm_CB-472"
 msgstr "穿被-472"
 
+msgid "_122mm_CB-472T"
+msgstr "穿被-472T"
+
 msgid "_122mm_CB-57I"
 msgstr "穿被-57I"
 
@@ -1816,6 +1841,9 @@ msgstr "GM 40HE"
 msgid "_122mm_PO-122"
 msgstr "破-122"
 
+msgid "_122mm_PO-122T"
+msgstr "破-122T"
+
 msgid "_122mm_PO-57I"
 msgstr "破-57I"
 
@@ -1824,6 +1852,9 @@ msgstr "破59-2式"
 
 msgid "_122mm_SB-472"
 msgstr "高爆-472"
+
+msgid "_122mm_SB-472T"
+msgstr "高爆-472T"
 
 msgid "_122mm_SB-57I"
 msgstr "高爆-57I"
@@ -1837,6 +1868,9 @@ msgstr "穿被-471"
 msgid "_122mm_Type_57_CJ"
 msgstr "穿被-411CJ"
 
+msgid "_122mm_Type_61"
+msgstr "122毫米 61式炮"
+
 msgid "_122mm_Type_64"
 msgstr "破-471"
 
@@ -1845,6 +1879,9 @@ msgstr "破-411RH"
 
 msgid "_122mm_Type_68"
 msgstr "高爆-471"
+
+msgid "_12V150_1"
+msgstr "12V150-1"
 
 msgid "_130_mm_62-130T"
 msgstr "130mm 62-130T炮"
@@ -2203,6 +2240,9 @@ msgstr "UOF-354"
 
 msgid "_76mm_ZiS_3"
 msgstr "76mm ZiS-3炮"
+
+msgid "_789T"
+msgstr "789T"
 
 msgid "_85mm_367"
 msgstr "穿超-367"

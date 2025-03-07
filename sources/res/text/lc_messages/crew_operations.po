@@ -105,13 +105,21 @@ msgid "return/error/alreadyOnPlaces"
 msgstr "乘员已在坦克上"
 
 msgid "return/error/noPrevious"
-msgstr "使用该坦克至少战斗一次"
+msgstr ""
+"使用该坦克完成\n"
+"至少1场战斗"
 
 msgid "return/error/vehicleInBattle"
 msgstr "此坦克处于战斗中"
 
 msgid "return/title"
 msgstr "调回坦克乘员"
+
+msgid "return/toggle/description"
+msgstr "自动调回此坦克上一场战斗的乘员。"
+
+msgid "return/toggle/label"
+msgstr "自动调回"
 
 msgid "return/warning/memberDemobilized/tooltip/body"
 msgstr "之前车组的部分乘员已被解雇，无法调回坦克。倒计时结束前，您可在兵营中恢复这些乘员。否则，他们将会从您的账号中完全移除。"

@@ -1062,7 +1062,6 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_R6_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>W_R6_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
@@ -1123,7 +1122,7 @@
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>1.172104 0.036148 -0.483115</groupOrigin>
+				<groupOrigin>1.361334 0.620498 0.107641</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

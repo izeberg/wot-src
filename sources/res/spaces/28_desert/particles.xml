@@ -137,13 +137,13 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAF_module_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor_EE.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_sand_floor_ee.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor_EE.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AS_005_WoodDryer_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env018_Trough.eff</fn_effect_bin>
@@ -226,8 +226,6 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
@@ -395,13 +393,13 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAF_module_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor_EE.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_sand_floor_ee.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_sand_floor_EE.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/28_desert_sand_single_spot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_AS_005_WoodDryer_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env018_Trough.eff</fn_effect_bin>
@@ -484,8 +482,6 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</deferred>

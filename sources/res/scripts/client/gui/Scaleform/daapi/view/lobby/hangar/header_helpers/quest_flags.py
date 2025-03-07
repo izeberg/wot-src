@@ -1,4 +1,4 @@
-import logging, constants
+import logging
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.limited_ui.lui_rules_storage import LUI_RULES
@@ -18,7 +18,7 @@ from helpers import dependency
 from helpers.i18n import makeString
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.event_boards_controllers import IEventBoardController
-from skeletons.gui.game_control import IComp7Controller, IFestivityController, ILimitedUIController, IMapboxController, IMarathonEventsController, IQuestsController, IRankedBattlesController
+from skeletons.gui.game_control import IFestivityController, ILimitedUIController, IMapboxController, IMarathonEventsController, IQuestsController, IRankedBattlesController
 _logger = logging.getLogger(__name__)
 
 class BaseQuestFlag(IQuestsFlag):
@@ -72,16 +72,6 @@ class BattleQuestsFlag(BaseQuestFlag):
     @classmethod
     def _getQuests(cls, vehicle):
         return cls._questController.getCurrentModeQuestsForVehicle(vehicle)
-
-
-class Comp7QuestsFlag(BattleQuestsFlag):
-    __slots__ = ()
-    __comp7Controller = dependency.descriptor(IComp7Controller)
-
-    @classmethod
-    def _getQuests(cls, vehicle):
-        quests = super(cls, Comp7QuestsFlag)._getQuests(vehicle)
-        return [ quest for quest in quests if quest.hasBonusType(constants.ARENA_BONUS_TYPE.COMP7) ]
 
 
 class MapboxQuestsFlag(BaseQuestFlag):

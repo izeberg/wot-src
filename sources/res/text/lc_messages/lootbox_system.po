@@ -74,6 +74,15 @@ msgstr "可用的补给品: %(boxesCount)"
 msgid "awardViews/quantityTitle/noBoxes"
 msgstr "没有可用的补给品"
 
+msgid "bonuses/customization/rarity/epic"
+msgstr "史诗"
+
+msgid "bonuses/customization/rarity/legendary"
+msgstr "传说"
+
+msgid "bonuses/customization/rarity/rare"
+msgstr "稀有"
+
 msgid "bonuses/description/battle_booster"
 msgstr "指令"
 
@@ -97,6 +106,9 @@ msgstr "蓝图碎片(%(nation)s)"
 
 msgid "bonuses/label/blueprints/universalFragment"
 msgstr "通用蓝图碎片"
+
+msgid "bonuses/label/bpcoin"
+msgstr "战斗通行证令牌"
 
 msgid "boxTooltip/description/text/default"
 msgstr "开启后，您将有机会从这些补给品中获得VIII–IX级金币坦克、个性化元素、配件、金币、战争债券、乘员手册，以及其他珍贵奖励。"
@@ -222,6 +234,9 @@ msgstr "没有可用的补给品"
 
 msgid "helpers/doubleBreakLine"
 msgstr "<br/><br/>"
+
+msgid "helpers/lootBoxBonus"
+msgstr "%(boxName)s: %(count)s"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr "如果您在活动结束前没有开启全部补给品，那么系统稍后会自动开启这些补给品。"
@@ -437,6 +452,9 @@ msgstr[0] "%(count)个"
 msgstr[1] "%(count)个"
 msgstr[2] "%(count)个"
 
+msgid "statisticsRewards/label/attachment"
+msgstr "3D附件"
+
 msgid "statisticsRewards/label/battle_bonus_x5"
 msgstr "5倍胜场经验任务"
 
@@ -476,9 +494,6 @@ msgstr "全局经验"
 msgid "statisticsRewards/label/gold"
 msgstr "金币"
 
-msgid "statisticsRewards/label/lootBox_default"
-msgstr "默认补给品"
-
 msgid "statisticsRewards/label/new_device_mi_gift"
 msgstr "标准配件"
 
@@ -514,6 +529,9 @@ msgstr "重置统计数据"
 
 msgid "statisticsRewards/resetButton/tooltipText"
 msgstr "点击即可重置统计数据。"
+
+msgid "statisticsRewards/tooltips/category/attachment"
+msgstr "%(num). %(rarity)%(label)x%(count)"
 
 msgid "statisticsRewards/tooltips/category/compensationCount"
 msgid_plural "plural/statisticsRewards/tooltips/category/compensationCount"

@@ -10,8 +10,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "battlePassPostProgression"
+msgstr "精英征程"
+
 msgid "battlePassSeasonDescription"
-msgstr "与《第一滴血》系列的联动"
+msgstr "全新主题3D风格"
+
+msgid "battlePassTalers"
+msgstr "硬币"
+
+msgid "battlePassTickets"
+msgstr "凭证"
 
 msgid "battleRoyale0"
 msgstr ""
@@ -35,7 +44,7 @@ msgstr "观察范围机制"
 
 msgid "battleRoyale3"
 msgstr ""
-"搜索用烟雾标记的物资。绿色烟雾内含炮弹和第2个能力的1次充能次数。黄色烟雾内含第1、3、4个能力的充能次数。蓝色烟雾内含生命值恢复、模块修复及全部能力的充能次数。在战斗中按下Tab键，即可查看各种物资的详情。"
+"收集用颜色标记的物资即可获得幸运印章。绿色烟雾内含炮弹、经验，以及按特定几率出现的某个战斗能力的一次充能次数。蓝色烟雾内含1次重生充能次数和全部4种战斗能力的充能次数。红色烟雾内含从被击毁坦克中获得的战利品。"
 
 msgid "battleRoyale3Status"
 msgstr "搜索物资"
@@ -738,9 +747,21 @@ msgstr "轻型轮式战车具有最高的机动性，使它们能够率先采取
 msgid "tip186"
 msgstr "此种战车安装了两门可用火炮，可以同时发射也能单独发射。射击控制按键可在设置中变更。"
 
+msgid "tip187"
+msgstr ""
+"完成所有主要章节即可解锁精英征程，您将有机会从中获得战争债券和凭证奖励。精英征程采用循环进度系统，这意味着您可以无限次完成，直至战斗通行证赛季结束。"
+
+msgid "tip188"
+msgstr "探索全新战斗通行证奖励——凭证！您可在精英征程中获取凭证，刮开凭证即可获得奖励。"
+
 msgid "tip189"
 msgstr ""
-"本次战斗通行证是与传奇电影系列联动的特殊活动。这将是一场短暂但惊险刺激的旅程，其中主题奖励的设计灵感源于经典的《第一滴血》宇宙。您准备好为生存而战了吗？"
+"推进战斗通行证进度，获取硬币。硬币是一种全新游戏内货币，可用于在军械库内的战斗通行证装备库版块中兑换好物。您可在此兑换往期战斗通行证赛季的个性化元素和乘员、经济资源等。"
+
+msgid "tip190"
+msgstr ""
+"在战斗通行证赛季XVI中，您将有机会获得专属3D风格，分别适用于本赛季的核心坦克:\n"
+"NC 70 B、试验型重战车、E-50M。"
 
 msgid "tip191"
 msgstr "您可以根据坦克等级选择要安装的配件等级。"

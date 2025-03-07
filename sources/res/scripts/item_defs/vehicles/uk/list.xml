@@ -514,7 +514,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD inGame improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</GB87_Chieftain_T95_turret>
 	<GB91_Super_Conqueror>
@@ -943,7 +943,7 @@
 			6500
 			<gold/>
 		</price>
-		<tags>mediumTank role_MT_universal HD inGame mediumTank3 improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank role_MT_universal HD mediumTank3 improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 		<level>8</level>
 	</GB70_N_FV4202_105>
 	<GB85_Cromwell_Berlin>
@@ -1435,11 +1435,11 @@
 		<shortDescriptionSpecial>#gb_vehicles:GB149_Centurion_MkI_A_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#gb_vehicles:GB149_Centurion_MkI_A_long_special</longDescriptionSpecial>
 		<price>
-			100
+			5550
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class2_user extraHealthReserve_class3_user antifragmentationLining_medium_user secret testTank</tags>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class2_user extraHealthReserve_class3_user antifragmentationLining_medium_user</tags>
 		<level>7</level>
 	</GB149_Centurion_MkI_A>
 	<GB145_Crusher_ASE_4>

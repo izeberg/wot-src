@@ -148,16 +148,16 @@
 		<fn_effect_bin>particles/Environment/interior/105_germany_fire_large_simple.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_grassborder_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_grassborder_fire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_dark.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_fillhole.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokefire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokewall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/105_germany_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smokefire.eff</fn_effect_bin>
@@ -279,7 +279,6 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
@@ -440,16 +439,16 @@
 		<fn_effect_bin>particles/Environment/interior/105_germany_fire_large_simple.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_grassborder_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_grassborder_fire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/105_germany_ground_white_smokethin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_dark.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_fillhole.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/105_germany_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokefire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_smokewall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/105_germany_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/105_germany_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/105_germany_window_smokefire.eff</fn_effect_bin>
@@ -571,9 +570,7 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>

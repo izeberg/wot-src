@@ -2545,7 +2545,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/bpbit_category)
+				$PARAMS(/bptaler_category)
 				<name>bpProducts</name>
 				<type>url</type>
 			</item>
@@ -2587,11 +2587,6 @@
 			<item>
 				$PARAMS(/sh_category/sh_category)
 				<name>shProducts</name>
-				<type>url</type>
-			</item>
-			<item>
-				$PARAMS(/showcase/styles_2d)
-				<name>showcase</name>
 				<type>url</type>
 			</item>
 			<item>
@@ -2690,7 +2685,7 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/bp-special-chapter-4/
+				/$LANGUAGE_CODE/promocontent/16BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
@@ -2700,7 +2695,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/bp-special-chapter-4-Video/
+				/$LANGUAGE_CODE/promocontent/16BPIntroVideo/
 				<name>introVideo</name>
 				<type>url</type>
 			</item>
@@ -2726,7 +2721,7 @@
 					<item>
 						<name>hasSpecialTankmenScreen</name>
 						<type>bool</type>
-						<value>True</value>
+						<value>False</value>
 					</item>
 				</value>
 			</item>
@@ -2739,9 +2734,19 @@
 						<type>dict</type>
 						<value>
 							<item>
-								<name>10041</name>
+								<name>161</name>
 								<type>bool</type>
-								<value>True</value>
+								<value>False</value>
+							</item>
+							<item>
+								<name>162</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>163</name>
+								<type>bool</type>
+								<value>False</value>
 							</item>
 						</value>
 					</item>
@@ -2759,6 +2764,18 @@
 				<value>
 					<item>
 						<type>string</type>
+						<value>postProgression</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>tickets</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>talers</value>
+					</item>
+					<item>
+						<type>string</type>
 						<value>seasonDescription</value>
 					</item>
 				</value>
@@ -2768,6 +2785,52 @@
 	<lootboxSystem>
 		<type>dict</type>
 		<value>
+			<item>
+				<name>isStartFinishNotificationsVisible</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>default</name>
+						<type>bool</type>
+						<value>True</value>
+					</item>
+					<item>
+						<name>battlePass</name>
+						<type>bool</type>
+						<value>False</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>openingOptions</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>default</name>
+						<type>list</type>
+						<value>
+							<item>
+								<type>int</type>
+								<value>1</value>
+							</item>
+							<item>
+								<type>int</type>
+								<value>5</value>
+							</item>
+						</value>
+					</item>
+					<item>
+						<name>battlePass</name>
+						<type>list</type>
+						<value>
+							<item>
+								<type>int</type>
+								<value>1</value>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
 			<item>
 				<name>intro</name>
 				<type>dict</type>
@@ -2787,6 +2850,11 @@
 						<name>lunar</name>
 						<type>url</type>
 					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
+						<name>stPatrick</name>
+						<type>url</type>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -2802,6 +2870,49 @@
 								<type>bool</type>
 								<value>True</value>
 							</item>
+							<item>
+								<name>battlePass</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>shop</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>overlayUrl</name>
+						<type>dict</type>
+						<value>
+							<item>
+								$PARAMS(/lootboxes-overlay)
+								<name>default</name>
+								<type>url</type>
+							</item>
+							<item>
+								$PARAMS(/battlepass-tickets-overlay)
+								<name>battlePass</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+					<item>
+						<name>openExternalForCN</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>default</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								<name>battlePass</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
 						</value>
 					</item>
 					<item>
@@ -2812,6 +2923,11 @@
 								<name>default</name>
 								<type>bool</type>
 								<value>True</value>
+							</item>
+							<item>
+								<name>battlePass</name>
+								<type>bool</type>
+								<value>False</value>
 							</item>
 						</value>
 					</item>
@@ -2824,45 +2940,12 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/serpentine-boxes-2025/
+				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/emerald-chests-2025/
 				<name>default</name>
 				<type>url</type>
 			</item>
 		</value>
 	</lootBoxesListURL>
-	<crew>
-		<type>dict</type>
-		<value>
-			<item>
-				<name>welcomeScreens</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>crewNpsWelcome</name>
-						<type>list</type>
-						<value>
-							<item>
-								<type>int</type>
-								<value>3</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>3</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>3</value>
-							</item>
-							<item>
-								<type>int</type>
-								<value>3</value>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-		</value>
-	</crew>
 	<dogTagsInfoPage>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -3296,32 +3379,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2024/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-september-2024/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-september-2024/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-september-2024/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2024/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2024/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
 				<name>default</name>
 				<type>url</type>
 			</item>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>content/3D_Customization/Cus_35_SP_CamoNet/normal/lod1/Cus_35_SP_CamoNet_01</nodelessVisual>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.795993 0.001217 -1.238405</min>
+		<max>0.211066 0.694432 1.346788</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_35_SP_CamoNet/normal/lod2/Cus_35_SP_CamoNet_01</parent>
+</root>

@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
 
 msgid "abilities/actions/toInfoPage"
 msgstr "更多详情"
@@ -155,11 +159,20 @@ msgstr "购买"
 msgid "dealPanel/fromStorage"
 msgstr "仓库中:"
 
+msgid "dealPanel/fromVehicle"
+msgstr "已安装:"
+
 msgid "dealPanel/repair"
 msgstr "需要修理"
 
 msgid "dealPanel/toBePaid"
 msgstr "总计:"
+
+msgid "dealPanel/tooltip/fromStorage"
+msgstr "仓库中"
+
+msgid "dealPanel/tooltip/fromVehicle"
+msgstr "已安装在坦克上"
 
 msgid "dealPanel/tooltip/notEnough"
 msgstr "资金不足，无法购买。"
@@ -481,6 +494,9 @@ msgstr "兑换"
 msgid "dialogs/goldExchange/default/status"
 msgstr "兑换比率: %(gold)s = %(credits)s"
 
+msgid "dialogs/goldExchange/easyTankEquip/title"
+msgstr "还需要%(credits)s才能使用快速备战"
+
 msgid "dialogs/goldExchange/item/battleBooster"
 msgstr "指令"
 
@@ -593,6 +609,93 @@ msgstr ""
 
 msgid "dialogs/sell/text"
 msgstr "出售单价:"
+
+msgid "easyTankEquipView/alert/demountNotPossible"
+msgstr "资源不足，无法拆卸。"
+
+msgid "easyTankEquipView/alert/loadCapacityNotEnough"
+msgstr "此配件需要承载能力更高的悬挂装置。"
+
+msgid "easyTankEquipView/alert/notFormed"
+msgstr "没有适用于该坦克的建议"
+
+msgid "easyTankEquipView/alert/unableToMount"
+msgstr "无法安装。"
+
+msgid "easyTankEquipView/consumables/presetNames/advanced"
+msgstr "高级"
+
+msgid "easyTankEquipView/consumables/presetNames/improved"
+msgstr "进阶"
+
+msgid "easyTankEquipView/consumables/presetNames/standard"
+msgstr "标准"
+
+msgid "easyTankEquipView/consumables/title"
+msgstr "给养"
+
+msgid "easyTankEquipView/crew/bunksAlert"
+msgstr "床位不足，无法进行乘员转移和替换。请为兵营添加床位。"
+
+msgid "easyTankEquipView/crew/multiplier"
+msgstr "x%(count)s"
+
+msgid "easyTankEquipView/crew/presetNames/experienced"
+msgstr "经验丰富的乘员"
+
+msgid "easyTankEquipView/crew/presetNames/newCrew"
+msgstr "新乘员"
+
+msgid "easyTankEquipView/crew/recruit"
+msgid_plural "plural/easyTankEquipView/crew/recruit"
+msgstr[0] ""
+"%(count)s\n"
+"将招募的新乘员"
+msgstr[1] ""
+"%(count)s\n"
+"将招募的新乘员"
+msgstr[2] ""
+"%(count)s\n"
+"将招募的新乘员"
+
+msgid "easyTankEquipView/crew/title"
+msgstr "乘员"
+
+msgid "easyTankEquipView/discount"
+msgstr "-%(value)s%"
+
+msgid "easyTankEquipView/installed"
+msgstr "准备就绪"
+
+msgid "easyTankEquipView/optDevices/presetNames/advanced"
+msgstr "高级"
+
+msgid "easyTankEquipView/optDevices/presetNames/standard"
+msgstr "标准"
+
+msgid "easyTankEquipView/optDevices/title"
+msgstr "配件"
+
+msgid "easyTankEquipView/shells/presetNames/advanced"
+msgstr "高级"
+
+msgid "easyTankEquipView/shells/presetNames/standard"
+msgstr "标准"
+
+msgid "easyTankEquipView/shells/title"
+msgstr "弹药"
+
+msgid "easyTankEquipView/styles/builtInStyle"
+msgstr "您已应用风格"
+
+msgid "easyTankEquipView/styles/rent"
+msgstr "%(battlesCount)s场战斗%(price)s"
+
+msgid "easyTankEquipView/styles/title"
+msgstr "预设风格"
+
+msgid "easyTankEquipView/title"
+msgstr "快速备战"
 
 msgid "effects/name"
 msgstr "效果"
@@ -1772,41 +1875,61 @@ msgstr "千米/小时"
 msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "秒"
 
+msgid "popularLoadouts/common"
+msgstr "热门"
+
+msgid "popularLoadouts/legendary"
+msgstr "传奇"
+
 msgid "popularLoadouts/noData"
-msgstr "数据不可用"
+msgstr "暂无数据"
 
-msgid "popularLoadouts/place/first"
-msgstr "第1"
+msgid "popularLoadouts/noDataLegendary"
+msgstr "暂无数据"
 
-msgid "popularLoadouts/place/second"
-msgstr "第2"
+msgid "popularLoadouts/tooltip/commonlyUsed"
+msgstr "%(whiteSpanish_Open)s热门。%(whiteSpanish_Close)s基于当前所有《坦克世界》玩家的主流配件配置"
 
-msgid "popularLoadouts/place/third"
-msgstr "第3"
+msgid "popularLoadouts/tooltip/conditions"
+msgstr "数据收集"
 
-msgid "popularLoadouts/title"
-msgstr "常用武装"
+msgid "popularLoadouts/tooltip/dataForOnslaught"
+msgstr "如果暂时没有当前天梯战赛季的数据，则使用上一赛季的数据"
 
-msgid "popularLoadouts/tooltip/genericEquipment"
-msgstr "汇总了标准配件、赏金配件和改进型配件的数据"
+msgid "popularLoadouts/tooltip/dataTaken"
+msgstr ""
+"助手适用于%(whiteSpanish_Open)s标准模式%(whiteSpanish_Close)s和%(whiteSpanish_Open)s天梯战%(whiteSpanish_Close)s"
+
+msgid "popularLoadouts/tooltip/genericItems"
+msgstr "汇总了所有类别配件的数据。"
+
+msgid "popularLoadouts/tooltip/header"
+msgstr "坦克世界Plus福利"
 
 msgid "popularLoadouts/tooltip/headerDescription"
-msgstr "这是坦克世界Plus专属功能，可为您展示特定坦克使用率最高的配件配置情报，帮助您了解游戏中当前的主流战术，以及其他坦克手惯用的配置。"
+msgstr "获取基于数百万场战斗的精确配件数据，充分发挥每场战斗的潜力。"
 
 msgid "popularLoadouts/tooltip/headerTitle"
-msgstr "常用武装"
+msgstr "配件助手"
 
-msgid "popularLoadouts/tooltip/notEnoughData/alternative"
-msgstr "数据取自:"
+msgid "popularLoadouts/tooltip/legendary"
+msgstr ""
+"%(whiteSpanish_Open)s传奇。%(whiteSpanish_Close)s基于当前WTR评级为传奇等级的玩家所青睐的配件配置"
+
+msgid "popularLoadouts/tooltip/loadoutTypes"
+msgstr "武装类型"
+
+msgid "popularLoadouts/tooltip/notEnoughData/combinedDescription"
+msgstr "所建议的武装是基于玩法风格类似的坦克的主流武装"
 
 msgid "popularLoadouts/tooltip/notEnoughData/headerDescription"
-msgstr "所选坦克的武装数据不可用。显示下方玩法类似的坦克的数据。"
+msgstr "当前数据基于玩法类似的坦克:"
 
 msgid "popularLoadouts/tooltip/notEnoughData/headerTitle"
-msgstr "数据不可用"
+msgstr "武装数据不可用"
 
-msgid "popularLoadouts/tooltip/randomBattleCalculation"
-msgstr "数据基于标准模式"
+msgid "popularLoadouts/vehicleNotAvailable"
+msgstr "所选坦克不适用于该游戏模式"
 
 msgid "section/battleAbilities"
 msgstr "战斗储备"

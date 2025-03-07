@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "dailyQuests/comp7/nextTasks"
+msgstr "距5个新任务开放还有: %(countdown)s"
+
+msgid "dailyQuests/comp7/progressCounter"
+msgstr "%(current)d%(separator)s%(total)d"
+
+msgid "dailyQuests/comp7/questsCounter"
+msgstr "%(current)d/%(total)d"
+
+msgid "dailyQuests/comp7/reward"
+msgstr "领取您的奖励！"

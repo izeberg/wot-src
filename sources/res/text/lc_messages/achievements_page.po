@@ -365,7 +365,7 @@ msgid "tooltips/KPI/assistanceBottomTitle"
 msgstr "协助损伤纪录: %(count)s"
 
 msgid "tooltips/KPI/assistanceTopDescriptionBase"
-msgstr "由您协助对敌方坦克造成的总损伤与总战斗场次的比率。计入贡献:"
+msgstr "由您协助对敌方坦克造成的总损伤除以战斗场次的结果。计入贡献:"
 
 msgid "tooltips/KPI/assistanceTopDescriptionStats"
 msgstr ""
@@ -376,7 +376,7 @@ msgid "tooltips/KPI/assistanceTopTitle"
 msgstr "平均协助损伤: %(count)s"
 
 msgid "tooltips/KPI/battles/description/bottom"
-msgstr "胜场和战斗场次的比率。"
+msgstr "胜场/战斗场次。"
 
 msgid "tooltips/KPI/battles/description/top/base"
 msgstr "包括:"
@@ -403,7 +403,7 @@ msgid "tooltips/KPI/blockedBottomTitle"
 msgstr "最大抵挡损伤: %(count)s"
 
 msgid "tooltips/KPI/blockedTopDescription"
-msgstr "装甲抵挡的未击穿炮弹及弹开的AP、HEAT、APCR炮弹的总损伤与战斗场次的比率。"
+msgstr "装甲抵挡的未击穿炮弹及弹开的AP、HEAT、APCR炮弹的总损伤除以战斗场次的结果。"
 
 msgid "tooltips/KPI/blockedTopTitle"
 msgstr "平均抵挡损伤: %(count)s"
@@ -418,7 +418,7 @@ msgid "tooltips/KPI/damageBottomTitle"
 msgstr "损伤纪录: %(count)s"
 
 msgid "tooltips/KPI/damageTopDescription"
-msgstr "造成的总损伤与战斗场次的比率。"
+msgstr "造成的总损伤/战斗场次。"
 
 msgid "tooltips/KPI/damageTopTitle"
 msgstr "平均损伤: %(count)s"
@@ -448,7 +448,7 @@ msgid "tooltips/KPI/experienceBottomTitle"
 msgstr "经验纪录: %(count)s"
 
 msgid "tooltips/KPI/experienceTopDescription"
-msgstr "获得的总经验与战斗场次的比率。"
+msgstr "获得的总经验/战斗场次。"
 
 msgid "tooltips/KPI/experienceTopTitle"
 msgstr "平均经验: %(count)s"

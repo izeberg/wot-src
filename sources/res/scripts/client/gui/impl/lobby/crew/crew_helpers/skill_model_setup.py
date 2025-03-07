@@ -7,12 +7,13 @@ from gui.shared.gui_items.Tankman import Tankman, getBattleBooster, isSkillLearn
 if typing.TYPE_CHECKING:
     from gui.impl.gen.view_models.views.lobby.crew.common.skill.skill_simple_model import SkillSimpleModel
     from gui.shared.gui_items.Vehicle import Vehicle
-    from gui.shared.gui_items.Tankman import TankmanSkill
+    from gui.shared.gui_items.tankman_skill import TankmanSkill
     from gui.shared.items_cache import ItemsCache
 
 class ModelProps(CONST_CONTAINER):
     NAME = 'name'
     LEVEL = 'level'
+    ROLE_NAME = 'roleName'
     ICON_NAME = 'iconName'
     IS_ZERO = 'isZero'
     IS_IRRELEVANT = 'isIrrelevant'
@@ -40,6 +41,13 @@ def getSkillIconName(skill, iconName=None, **__):
         return skill.extensionLessIconName
 
 
+def getRoleName(skill, roleName=None, **__):
+    if roleName is not None:
+        return roleName
+    else:
+        return skill.skillRole
+
+
 def skillSimpleModelSetup(model, customGetters=None, **kwargs):
     if customGetters is None:
         customGetters = {}
@@ -51,6 +59,9 @@ def skillSimpleModelSetup(model, customGetters=None, **kwargs):
     levelGetter = getters.get(ModelProps.LEVEL, None)
     if levelGetter:
         model.setLevel(levelGetter(**kwargs))
+    roleNameGetter = getters.get(ModelProps.ROLE_NAME, None)
+    if roleNameGetter:
+        model.setRoleName(roleNameGetter(**kwargs))
     iconGetter = getters.get(ModelProps.ICON_NAME, None)
     if iconGetter:
         model.setIconName(iconGetter(**kwargs))
@@ -67,8 +78,8 @@ def getIsZero(skill, tankman, role, isZero=None, **__):
         return skill.isZero
 
 
-def getIsIrrelevant(skill, role, **__):
-    return not skill.isRelevantForRole(role)
+def getIsIrrelevant(skill, **__):
+    return not skill.isRelevant
 
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
@@ -85,14 +96,15 @@ def getModelBattleBooster(skill, tankman, itemsCache=None, **__):
         return BattleBooster.LEARNED
 
 
-def skillModelSetup(model, customGetters=None, **kwargs):
+def skillModelSetup(model, customGetters=None, checkIrrelevant=True, **kwargs):
     getters = skillSimpleModelSetup(model, customGetters, **kwargs)
     isZeroGetter = getters.get(ModelProps.IS_ZERO, None)
     if isZeroGetter:
         model.setIsZero(isZeroGetter(**kwargs))
-    isIrrelevantGetter = getters.get(ModelProps.IS_IRRELEVANT, None)
-    if isIrrelevantGetter:
-        model.setIsIrrelevant(isIrrelevantGetter(**kwargs))
+    if checkIrrelevant:
+        isIrrelevantGetter = getters.get(ModelProps.IS_IRRELEVANT, None)
+        if isIrrelevantGetter:
+            model.setIsIrrelevant(isIrrelevantGetter(**kwargs))
     battleBoosterGetter = getters.get(ModelProps.BATTLE_BOOSTER, None)
     if battleBoosterGetter:
         model.setBattleBooster(battleBoosterGetter(**kwargs))
@@ -101,6 +113,7 @@ def skillModelSetup(model, customGetters=None, **kwargs):
 
 defaultPropsGetters = {ModelProps.NAME: getSkillName, 
    ModelProps.LEVEL: getSkillLevel, 
+   ModelProps.ROLE_NAME: getRoleName, 
    ModelProps.ICON_NAME: getSkillIconName, 
    ModelProps.IS_ZERO: getIsZero, 
    ModelProps.IS_IRRELEVANT: getIsIrrelevant, 

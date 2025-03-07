@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-03 10:00+0300\n"
+"PO-Revision-Date: 2024-09-03 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MentoringLicenseAwards/button/primary"
+msgstr "前往快速训练"
+
+msgid "MentoringLicenseAwards/button/secondary"
+msgstr "收到！"
+
+msgid "MentoringLicenseAwards/title"
+msgstr "授业许可"
+
+msgid "MentoringLicenseAwards/underTitle"
+msgstr ""
+"该物品已添加至您的账号，它可让您将一名乘员的乘员经验转移至同系别的另一名乘员。\n"
+"您可在快速训练界面使用该物品。"
+
+msgid "assignmentDialog/confirm"
+msgstr "输入所选乘员要转移的经验值后点击确认。"
+
+msgid "assignmentDialog/price"
+msgstr "花费:"
+
+msgid "assignmentDialog/subtitle"
+msgstr "在乘员之间转移所有乘员经验"
+
+msgid "assignmentDialog/title"
+msgstr "确认授业课程"
+
+msgid "assignmentDialog/warning/oneWay"
+msgstr ""
+"该乘员将从您的账号中\n"
+"移除，且无法恢复。"
+
+msgid "assignmentDialog/warning/xpLose"
+msgstr "额外{xpLose}点经验将丢失。"
+
+msgid "dialogue/description"
+msgstr "一种消耗品，可让您在同系别的乘员之间转移所有乘员经验。"
+
+msgid "mentorAssigment/card/lostXP"
+msgstr "{orange_Open}额外经验将丢失: {orange_Close}%(amount)s"
+
+msgid "mentorAssigment/card/select"
+msgstr "选择"
+
+msgid "mentorAssigment/card/totalXP"
+msgstr "总经验: %(amount)s"
+
+msgid "mentorAssigment/licensesAmount"
+msgstr "{yellow_Open}授业许可: {yellow_Close}%(amount)s"
+
+msgid "mentorAssigment/noSuitableTankman"
+msgstr "没有合适的乘员"
+
+msgid "mentorAssigment/tips/info"
+msgstr "选择乘员，此乘员的经验将转移至{cream_Open}%(name)s{cream_Close}，且从您的账号中移除。"
+
+msgid "mentorAssigment/tips/lostXP"
+msgstr "转移乘员经验后，{cream_Open}%(name)s{cream_Close}将达到特长上限，超出上限的所有经验都将丢失。"
+
+msgid "mentorAssigment/title"
+msgstr "选择授业恩师"
+
+msgid "mentorAssigment/tooltip/fullyTrainedMentor"
+msgstr "{bond_Open}%(name)s{bond_Close}已达到特长上限，不能被选中用于经验转移。"
+
+msgid "multipleUserName"
+msgstr "授业许可"
+
+msgid "serviceChannelMessages/TransferUsed/body"
+msgstr "已使用授业许可: %(amount)s"
+
+msgid "serviceChannelMessages/TransferXP/body"
+msgstr "已转移乘员经验:"
+
+msgid "serviceChannelMessages/TransferXP/header"
+msgstr "授业课程"
+
+msgid "serviceChannelMessages/TransferXP/lost"
+msgstr ""
+"<font color='#8C8C7E'>丢失的额外乘员经验: <font color='#E9E2BF'>%(xpLost)s</font><br>"
+
+msgid "serviceChannelMessages/adding/header"
+msgstr "授业许可"
+
+msgid "serviceChannelMessages/adding/text"
+msgstr ""
+"您拥有适用于授业课程的许可。\n"
+"前往<font color='#E9E2BF'>快速训练</font>应用许可。"
+
+msgid "storage/description"
+msgstr ""
+"可让您在同系别的乘员之间\n"
+"转移乘员经验。"
+
+msgid "storage/userName"
+msgstr "授业许可"
+
+msgid "userName"
+msgstr "授业许可"

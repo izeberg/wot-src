@@ -426,7 +426,9 @@ msgid "battlePass/switchChapter/reminder"
 msgstr "选择一个章节。您随时可以切换至另一个章节。"
 
 msgid "battlePass/switchChapter/success"
-msgstr "您已切换至另一章节。现在已激活\"%(chapter)s\"章节。"
+msgstr ""
+"您已切换至另一章节。\n"
+"现在已激活\"%(chapter)s\"章节。"
 
 msgid "battlePass/switch_disable/battle_royale/body"
 msgstr "由于系统维护，战斗通行证功能暂时无法在钢铁猎手中使用。我们对给您造成的不便深表歉意。"
@@ -480,9 +482,9 @@ msgstr "战斗通行证现已重新开放。我们对造成的不便深表歉意
 
 msgid "battlePassH/switch_started/body"
 msgstr ""
-"指挥官！本次战斗通行证特殊章节将联动战火纷飞的《第一滴血》宇宙。\n"
+"各位指挥官！准备体验战斗通行证特殊章节。\n"
 "\n"
-"随着您推进活动进度，您将有机会将威尔·蒂斯尔警长和兰博纳入麾下(这些乘员均具有专属语音)，您还可以获取主题个性化元素等好物！"
+"完成进度后，您将获得一辆带有独特3D风格的金币坦克、个性化元素等好物！"
 
 msgid "battlePassH/switch_started/title"
 msgstr "战斗通行证: %(seasonName)s"
@@ -1378,6 +1380,21 @@ msgstr "已获得%(value)s项战利品！"
 
 msgid "earning/trophy/single"
 msgstr "已获得\"%(value)s\"战利品！"
+
+msgid "easyTankEquip/switch_pause_off/body"
+msgstr "快速备战已恢复。我们为造成的不便深感歉意。"
+
+msgid "easyTankEquip/switch_pause_on/body"
+msgstr "由于系统维护，快速备战暂不可用。"
+
+msgid "easyTankEquip_apply/error"
+msgstr "应用快速备战配置时出错。请稍后再试。"
+
+msgid "easyTankEquip_apply/not_enough_money"
+msgstr "应用快速备战配置时出错。余额不足，无法购买。"
+
+msgid "easyTankEquip_apply/wallet_not_available"
+msgstr "快速备战操作失败。您的金币将在战游钱包恢复后再次可用。"
 
 msgid "epicBattles/levelUp/awards"
 msgstr "已获得奖励:"
@@ -3107,6 +3124,9 @@ msgstr "乘员调回失败，坦克错误。"
 msgid "return_crew/not_enough_space"
 msgstr "车组乘员调回兵营失败，兵营没有足够的床位。"
 
+msgid "return_crew/return_unavailable"
+msgstr "部分乘员无法调回该坦克。"
+
 msgid "return_crew/server_error"
 msgstr "乘员调回失败，请稍后再试。"
 
@@ -3364,6 +3384,9 @@ msgstr "无法下载录像"
 msgid "steam_login_not_allowed"
 msgstr "无法使用此应用进入游戏:您的Steam账号已经与一个360账号进行了关联。联系客服中心了解详情。"
 
+msgid "tankman/tankmanToRemove"
+msgstr "已解雇乘员。"
+
 msgid "techtree/action/expireTime"
 msgstr "%(days)s天"
 
@@ -3526,6 +3549,9 @@ msgstr "训练房间。队伍的最大玩家人数：%(numPlayers)s。"
 
 msgid "training/error/swapTeams"
 msgstr "服务器交换队伍时发生错误。请稍后再试。"
+
+msgid "transferXP/server_error"
+msgstr "操作不可用。请稍后再试。"
 
 msgid "unit/error/wgshEvent/AccountDoesNotHavePermissions"
 msgstr "操作失败。权限不足。"
@@ -4062,6 +4088,9 @@ msgstr "战地升级"
 msgid ""
 "vehiclePostProgression/vehiclesUnlockPostProgression/welcomeUnlock/body"
 msgstr "坦克改装路线现已解锁。您可以根据战斗角色配置您的坦克，并使用各种改装改变坦克参数。"
+
+msgid "vehicle_auto_return/server_error"
+msgstr "操作不可用。请稍后再试。"
 
 msgid "vehicle_buy/invalid_vehicle"
 msgstr "坦克'%(vehName)s'不能购买。坦克错误。"

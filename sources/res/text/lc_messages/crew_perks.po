@@ -12,9 +12,7 @@ msgstr ""
 
 msgid "brotherhood/alt/description"
 msgstr ""
-"乘员效率加成提高乘员的战斗力，增强他们所训练的全部特长的效果，该特长除外。\n"
-"\n"
-"该参数可通过安装拥有类似效果的配件或给养，或使用净化通风指令来进一步提高。车长的紧急应对特长、通信兵的并肩作战和通信专家特长也都能提高该参数。"
+"乘员效率加成提高乘员的战斗力，增强他们所训练的全部特长的效果，该特长除外。该参数可通过安装拥有类似效果的配件或给养，或使用净化通风指令来进一步提高。车长的紧急应对特长、通信兵的并肩作战和通信专家特长也都能提高该参数。"
 
 msgid "brotherhood/alt/info"
 msgstr "团体特长将以全体乘员的平均训练水平为准，训练到至少1%时生效。其效果会随着熟练度的提高而增强。"
@@ -32,18 +30,6 @@ msgstr "兄弟连"
 
 msgid "brotherhood/shortDescription"
 msgstr "提升乘员的总体表现。"
-
-msgid "brotherhood_offspring/name"
-msgstr "兄弟连"
-
-msgid "brotherhood_sabaton/name"
-msgstr "兄弟连"
-
-msgid "brotherhood_witches/name"
-msgstr "共鸣集会"
-
-msgid "brotherhood_yha/name"
-msgstr "兔子联萌"
 
 msgid "camouflage/alt/description"
 msgstr ""
@@ -118,11 +104,7 @@ msgstr "提高观察范围，特别是当观察设备受损时。"
 
 msgid "commander_emergency/alt/description"
 msgstr ""
-"当重复受到敌方造成的损伤时，效果不会叠加。\n"
-"\n"
-"乘员效率加成提高乘员的战斗力。\n"
-"\n"
-"该参数可通过安装拥有类似效果的配件或给养，或者使用净化通风指令来进一步提高。兄弟连团体特长、通信兵的并肩作战和通信专家特长也都能提高该参数。"
+"当重复受到敌方造成的损伤时，效果不会叠加。乘员效率加成提高乘员的战斗力。该参数可通过安装拥有类似效果的配件或给养，或者使用净化通风指令来进一步提高。兄弟连团体特长、通信兵的并肩作战和通信专家特长也都能提高该参数。"
 
 msgid "commander_emergency/alt/info"
 msgstr "拥有触发式效果的特长在训练到至少1%时生效。其效果会随着熟练度的提高而增强。当在战斗中满足特定条件时，触发式效果便会激活。"
@@ -255,7 +237,9 @@ msgid "commander_universalist/shortDescription"
 msgstr "使车长能够代替受伤乘员。"
 
 msgid "driver_badRoadsKing/alt/description"
-msgstr "降低坦克在中度松软地形上行驶时的操控性和加速能力惩罚。显著降低坦克在松软地形上行驶时的这些惩罚，使其与中度松软地形一致。"
+msgstr ""
+"降低坦克在中度松软地形上行驶时的操控性和加速能力惩罚。显著降低坦克在松软地形上行驶时的这些惩罚，使其与中度松软地形一致。\n"
+"在中度松软和松软地形上的操控性不会超过在坚硬地形上的操控性。"
 
 msgid "driver_badRoadsKing/alt/info"
 msgstr "特长在训练到至少1%时生效。其效果会随着熟练度的提高而增强。"
@@ -496,11 +480,8 @@ msgstr "瞄准速度已提高。"
 msgid "gunner_rancorous/alt/description"
 msgstr ""
 "炮手能够在观察区域内识别目标坦克上严重受损的模块，第三人称和狙击射击模式下均有效。\n"
-"\n"
 "炮手观察区域是指坦克火炮前方左右10度(共20度)，且在观察范围内的扇形区域。\n"
-"\n"
 "如果2名炮手均拥有该特长，那么将应用其训练水平的平均值。\n"
-"\n"
 "该特长可通过使用专注目标指令来进一步强化。使用改进型无线电台可进一步延长目标敌方坦克可见时长。"
 
 msgid "gunner_rancorous/alt/info"
@@ -722,6 +703,9 @@ msgstr "%s%%"
 msgid "measureType/seconds"
 msgstr "%s秒"
 
+msgid "offspring_brotherhood/name"
+msgstr "兄弟连"
+
 msgid "perkRole/commander"
 msgstr "车长"
 
@@ -742,11 +726,7 @@ msgstr "通信兵"
 
 msgid "radioman_expert/alt/description"
 msgstr ""
-"乘员效率加成提高乘员的战斗力。\n"
-"\n"
-"如果2名通信兵均拥有该特长，那么将应用其训练水平的平均值。\n"
-"\n"
-"该参数可通过安装拥有类似效果的配件或给养，或者使用净化通风指令来进一步提高。兄弟连团体特长、车长的紧急应对特长、通信兵的并肩作战特长也都能提高该参数。"
+"乘员效率加成提高乘员的战斗力。如果2名通信兵均拥有该特长，那么将应用其训练水平的平均值。该参数可通过安装拥有类似效果的配件或给养，或使用净化通风指令来进一步提高。兄弟连团体特长、车长的紧急应对特长、通信兵的并肩作战特长也都能提高该参数。"
 
 msgid "radioman_expert/alt/info"
 msgstr "拥有触发式效果的特长在训练到至少1%时生效。其效果会随着熟练度的提高而增强。当在战斗中满足特定条件时，触发式效果便会激活。"
@@ -842,11 +822,7 @@ msgstr "在坦克被击毁的短时间内持续报告敌方位置。"
 
 msgid "radioman_sideBySide/alt/description"
 msgstr ""
-"乘员效率加成提高乘员的战斗力。\n"
-"\n"
-"如果2名通信兵均拥有该特长，那么将应用其训练水平的平均值。\n"
-"\n"
-"该参数可通过安装拥有类似效果的配件或给养，或者使用净化通风指令来进一步提高。兄弟连团体特长、车长的紧急应对特长、通信兵的通信专家特长也都能提高该参数。"
+"乘员效率加成提高乘员的战斗力。如果2名通信兵均拥有该特长，那么将应用其训练水平的平均值。该参数可通过安装拥有类似效果的配件或给养，或使用净化通风指令来进一步提高。兄弟连团体特长、车长的紧急应对特长、通信兵的通信专家特长也都能提高该参数。"
 
 msgid "radioman_sideBySide/alt/info"
 msgstr "拥有触发式效果的特长在训练到至少1%时生效。其效果会随着熟练度的提高而增强。当在战斗中满足特定条件时，触发式效果便会激活。"
@@ -911,8 +887,17 @@ msgstr "修复"
 msgid "repair/shortDescription"
 msgstr "提高受损模块的维修速度。"
 
+msgid "sabaton_brotherhood/name"
+msgstr "兄弟连"
+
 msgid "sign/minus"
 msgstr "-"
 
 msgid "sign/plus"
 msgstr "+"
+
+msgid "witches_brotherhood/name"
+msgstr "共鸣集会"
+
+msgid "yha_brotherhood/name"
+msgstr "兔子联萌"

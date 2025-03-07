@@ -1,4 +1,4 @@
-import time, constants
+import time, typing, constants
 from adisp import adisp_process
 from gui import GUI_SETTINGS
 from gui.Scaleform.daapi import LobbySubView
@@ -27,9 +27,10 @@ def _emptyFmt(*_):
     return ''
 
 
-def _makeServerString(serverInfo, isServerNameShort=False):
+def makeServerString(serverInfo, isServerNameShort=False, customTextId=None):
+    textId = customTextId if customTextId else R.strings.menu.primeTime.server
     server = text_styles.neutral(text_styles.concatStylesToSingleLine(serverInfo.getShortName() if isServerNameShort else serverInfo.getName(), ' (', text_styles.neutral(serverInfo.getPingValue()), makePingStatusIcon(serverInfo.getPingStatus()), ')'))
-    return backport.text(R.strings.menu.primeTime.server(), server=server)
+    return backport.text(textId(), server=server)
 
 
 class ServerListItemPresenter(object):
@@ -231,7 +232,7 @@ class PrimeTimeViewBase(LobbySubView, PrimeTimeMeta, Notifiable, IPreQueueListen
 
     def _getServerText(self, serverList, serverInfo, isServerNameShort=False):
         if len(serverList) == 1:
-            return _makeServerString(serverInfo, isServerNameShort)
+            return makeServerString(serverInfo, isServerNameShort)
         return backport.text(R.strings.menu.primeTime.servers())
 
     def _getStatusText(self):

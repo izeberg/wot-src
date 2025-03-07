@@ -160,11 +160,20 @@ msgstr "每名乘员获得{expTagOpen}%(exp)s{expTagClose}点经验。"
 msgid "items/universalGuide/Name"
 msgstr "通用指南"
 
+msgid "page/mentoringLicense/hint"
+msgstr "前往授业课程"
+
+msgid "page/mentoringLicense/title"
+msgstr "授业课程"
+
 msgid "page/title"
 msgstr "快速训练"
 
 msgid "tooltip/buyManual"
 msgstr "购买训练手册"
+
+msgid "tooltip/mouseWheel"
+msgstr "滚动{mouseIcon}即可增加/减少乘员手册数量。"
 
 msgid "tooltip/outOfStock"
 msgstr "没有可用的乘员手册"

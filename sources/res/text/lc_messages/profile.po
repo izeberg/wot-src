@@ -90,8 +90,8 @@ msgstr "奖励"
 
 msgid "profile/params/tooltip/armorUsing/body"
 msgstr ""
-"装甲特性是指来自非穿透、AP或HEAT的溅射损伤与此类炮弹的APCR损伤的比率。\n"
-"• 该炮弹击中造成的损伤被装甲阻挡后的平均值:%(value_0)s"
+"装甲抵挡的未击穿炮弹及弹开的AP、HEAT、APCR炮弹的损伤除以所受到损伤的结果。不计入HE与HESH炮弹的潜在损伤。\n"
+"• 装甲抵挡此类炮弹的平均损伤: %(value_0)s"
 
 msgid "profile/params/tooltip/armorUsing/header"
 msgstr "装甲特性"
@@ -158,25 +158,25 @@ msgid "profile/params/tooltip/avgAssistedStunDamage/comp7/shortSelf/header"
 msgstr "对由您造成弹震的敌方坦克造成的损伤"
 
 msgid "profile/params/tooltip/avgAssistedStunDamage/shortOther/body"
-msgstr "对受到弹震影响的敌方坦克造成的总损伤与战斗场次的比率"
+msgstr "盟友对由您造成弹震的敌方坦克造成的总损伤除以战斗场次的结果"
 
 msgid "profile/params/tooltip/avgAssistedStunDamage/shortOther/header"
 msgstr "对由玩家造成弹震的敌方坦克造成的损伤"
 
 msgid "profile/params/tooltip/avgAssistedStunDamage/shortSelf/body"
-msgstr "对受到弹震影响的敌方坦克造成的总损伤与战斗场次的比率"
+msgstr "盟友对由您造成弹震的敌方坦克造成的总损伤除以战斗场次的结果"
 
 msgid "profile/params/tooltip/avgAssistedStunDamage/shortSelf/header"
 msgstr "对由您造成弹震的敌方坦克造成的损伤"
 
 msgid "profile/params/tooltip/avgDamage/body"
-msgstr "战斗场次/造成的总损伤"
+msgstr "造成的总损伤/战斗场次"
 
 msgid "profile/params/tooltip/avgDamage/header"
 msgstr "每场战斗造成的损伤"
 
 msgid "profile/params/tooltip/avgDestroyedVehicles/body"
-msgstr "击毁敌方坦克次数与战斗场次的比率"
+msgstr "击毁敌方坦克总数/战斗场次"
 
 msgid "profile/params/tooltip/avgDestroyedVehicles/comp7/body"
 msgstr "击毁的敌方坦克总数(包括在能力帮助下击毁的坦克)与战斗场次的比率"
@@ -188,7 +188,7 @@ msgid "profile/params/tooltip/avgDestroyedVehicles/header"
 msgstr "击毁敌方坦克"
 
 msgid "profile/params/tooltip/avgDetectedEnemies/body"
-msgstr "点亮敌方坦克的总次数与战斗场次的比率"
+msgstr "点亮敌方坦克总数/战斗场次"
 
 msgid "profile/params/tooltip/avgDetectedEnemies/comp7/body"
 msgstr "点亮的敌方坦克总数(包括在能力帮助下点亮的坦克)与战斗场次的比率"
@@ -200,19 +200,19 @@ msgid "profile/params/tooltip/avgDetectedEnemies/header"
 msgstr "点亮敌方坦克"
 
 msgid "profile/params/tooltip/avgDmg/short/body"
-msgstr "战斗场次/造成的总损伤"
+msgstr "造成的总损伤/战斗场次"
 
 msgid "profile/params/tooltip/avgDmg/short/header"
 msgstr "造成损伤"
 
 msgid "profile/params/tooltip/avgEx/short/body"
-msgstr "战斗场次/获得的总经验"
+msgstr "获得的总经验/战斗场次"
 
 msgid "profile/params/tooltip/avgEx/short/header"
 msgstr "经验"
 
 msgid "profile/params/tooltip/avgExp/body"
-msgstr "战斗场次/获得的总经验"
+msgstr "获得的总经验/战斗场次"
 
 msgid "profile/params/tooltip/avgExp/header"
 msgstr "平均每场战斗获得经验"
@@ -236,7 +236,7 @@ msgid "profile/params/tooltip/avgPrestigePoints/header"
 msgstr "每场战斗获得的平均声望点数"
 
 msgid "profile/params/tooltip/avgReceivedDamage/body"
-msgstr "受到的损伤总值与战斗场次的比率"
+msgstr "受到的总损伤/战斗场次"
 
 msgid "profile/params/tooltip/avgReceivedDamage/header"
 msgstr "受到损伤"
@@ -248,7 +248,7 @@ msgid "profile/params/tooltip/avgRoleSkillUsed/header"
 msgstr "使用角色能力"
 
 msgid "profile/params/tooltip/avgStunNumber/body"
-msgstr "对敌方乘员造成弹震的总次数与战斗场次的比率"
+msgstr "对敌方乘员造成弹震的总次数/战斗场次"
 
 msgid "profile/params/tooltip/avgStunNumber/comp7/body"
 msgstr "对敌方乘员造成弹震的总次数(包括使用能力造成的弹震)与战斗场次的比率"
@@ -288,7 +288,7 @@ msgid "profile/params/tooltip/brAverageRank/header"
 msgstr "平均排名"
 
 msgid "profile/params/tooltip/brAvgDamage/body"
-msgstr "造成的总损伤与战斗场次的比率。"
+msgstr "造成的总损伤/战斗场次"
 
 msgid "profile/params/tooltip/brAvgDamage/header"
 msgstr "造成损伤"
@@ -337,7 +337,7 @@ msgstr "占领基地点数"
 
 msgid "profile/params/tooltip/clan/summaryDamageCoefficient/body"
 msgstr ""
-"在所有等级战斗中\"造成损伤\"和\"受到损伤\"的比率，包含: \n"
+"在所有等级战斗中\"造成损伤\"/\"受到损伤\"，计入: \n"
 "• 造成损伤: %(value_0)s\n"
 "• 受到损伤: %(value_1)s"
 
@@ -346,7 +346,7 @@ msgstr "平均损伤率"
 
 msgid "profile/params/tooltip/damageCoeff/body"
 msgstr ""
-"\"造成损伤\"和\"受到损伤\"的比率，包含: \n"
+"\"造成损伤\"/\"受到损伤\"，计入: \n"
 "• 造成损伤: %(value_0)s\n"
 "• 受到损伤: %(value_1)s"
 
@@ -355,53 +355,53 @@ msgstr "损伤率"
 
 msgid "profile/params/tooltip/destroyCoeff/body"
 msgstr ""
-"战损比，包含:\n"
-"• 击毁敌方坦克:%(value_0)s\n"
-"• 坦克被击毁:%(value_1)s"
+"击毁敌方坦克数除以自身坦克被击毁数的结果，计入:\n"
+"• 击毁敌方坦克数: %(value_0)s\n"
+"• 自身坦克被击毁数: %(value_1)s"
 
 msgid "profile/params/tooltip/destroyCoeff/header"
 msgstr "战损比"
 
 msgid "profile/params/tooltip/dif/fallout/armorUsing/body"
 msgstr ""
-"装甲特性，来自AP、HEAT与APCR炮弹未击穿或跳弹。战斗储备损伤、HE与HESH损伤不包含在内。\n"
-"• 从这些类型炮弹受到的平均损伤:%(value_0)s"
+"装甲抵挡的未击穿炮弹及弹开的AP、HEAT、APCR炮弹的损伤除以所受到损伤的结果。不计入战斗储备损伤、HE与HESH损伤。\n"
+"• 装甲抵挡此类炮弹的平均损伤: %(value_0)s"
 
 msgid "profile/params/tooltip/dif/fallout/armorUsing/header"
 msgstr "装甲特性"
 
 msgid "profile/params/tooltip/dif/fallout/avgDamage/body"
-msgstr "总损伤(包含战斗储备损伤)与战斗场次的比率。"
+msgstr "造成的总损伤(计入战斗储备损伤)/战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/avgDamage/header"
 msgstr "每场战斗造成的损伤"
 
 msgid "profile/params/tooltip/dif/fallout/avgDestroyedVehicles/body"
-msgstr "击毁敌方坦克总次数(包含战斗储备击毁)与战斗场次的比率。"
+msgstr "击毁敌方坦克总数(计入战斗储备击毁)/战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/avgDestroyedVehicles/header"
 msgstr "击毁敌方坦克"
 
 msgid "profile/params/tooltip/dif/fallout/avgDestroyedVehicles/vehicle/body"
-msgstr "击毁敌方坦克总次数(不包含战斗储备击毁)与战斗场次的比率。"
+msgstr "击毁敌方坦克总数(不计入战斗储备击毁)/战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/avgDestroyedVehicles/vehicle/header"
 msgstr "击毁敌方坦克"
 
 msgid "profile/params/tooltip/dif/fallout/avgDmg/short/body"
-msgstr "总造成损伤(包含战斗储备损伤)与战斗场次的比率"
+msgstr "造成的总损伤(计入战斗储备损伤)/战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/avgDmg/short/header"
 msgstr "造成损伤"
 
 msgid "profile/params/tooltip/dif/fallout/avgDmg/short/vehicle/body"
-msgstr "总造成损伤(不包含战斗储备损伤)与战斗场次的比率"
+msgstr "造成的总损伤(不计入战斗储备损伤)/战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/avgDmg/short/vehicle/header"
 msgstr "造成损伤"
 
 msgid "profile/params/tooltip/dif/fallout/avgReceivedDamage/body"
-msgstr "总受到损伤(包含战斗储备损伤)与战斗场次的比率"
+msgstr "受到的总损伤(计入战斗储备损伤)/战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/avgReceivedDamage/header"
 msgstr "受到损伤"
@@ -416,38 +416,38 @@ msgstr "战斗场次"
 
 msgid "profile/params/tooltip/dif/fallout/damageCoeff/body"
 msgstr ""
-"造成损伤/受到损伤(包含战斗储备)，包含:\n"
-"• 由您的坦克造成的损伤:%(value_0)s\n"
-"• 由战斗储备造成的损伤:%(value_1)s\n"
-"• 由敌方坦克与战斗储备造成的损伤:%(value_2)s"
+"造成损伤除以受到损伤(计入战斗储备损伤)的结果，计入:\n"
+"• 由您的坦克造成的损伤: %(value_0)s\n"
+"• 通过战斗储备造成的损伤: %(value_1)s\n"
+"• 受到敌方坦克与战斗储备所造成的损伤: %(value_2)s"
 
 msgid "profile/params/tooltip/dif/fallout/damageCoeff/header"
 msgstr "损伤率"
 
 msgid "profile/params/tooltip/dif/fallout/damageCoeff/vehicle/body"
 msgstr ""
-"造成损伤/受到损伤(不包含战斗储备)，包含:\n"
-"• 造成的损伤:%(value_0)s\n"
-"• 受到的损伤:%(value_1)s"
+"造成损伤除以受到损伤(不计入战斗储备损伤)的结果，计入:\n"
+"• 造成损伤: %(value_0)s\n"
+"• 受到损伤: %(value_1)s"
 
 msgid "profile/params/tooltip/dif/fallout/damageCoeff/vehicle/header"
 msgstr "损伤率"
 
 msgid "profile/params/tooltip/dif/fallout/destroyCoeff/body"
 msgstr ""
-"击毁敌方坦克次数/坦克被击毁次数的比率(包含战斗储备击毁)，包含:\n"
-"• 被我方坦克击毁的敌方坦克:%(value_0)s\n"
-"• 被战斗储备击毁的敌方坦克:%(value_1)s\n"
-"• 被敌方坦克与战斗储备击毁的我方坦克:%(value_2)s"
+"击毁敌方坦克数除以自身坦克被击毁数(计入战斗储备击毁)的结果，计入:\n"
+"• 由您的坦克击毁的敌方坦克: %(value_0)s\n"
+"• 通过战斗储备击毁的敌方坦克: %(value_1)s\n"
+"• 被敌方坦克与战斗储备击毁的自身坦克: %(value_2)s"
 
 msgid "profile/params/tooltip/dif/fallout/destroyCoeff/header"
 msgstr "战损比"
 
 msgid "profile/params/tooltip/dif/fallout/destroyCoeff/vehicle/body"
 msgstr ""
-"击毁敌方坦克次数/坦克被击毁次数的比率(不包含战斗储备击毁)，包含:\n"
-"• 击毁敌方坦克:%(value_0)s\n"
-"• 击毁玩家坦克:%(value_1)s"
+"击毁敌方坦克数除以自身坦克被击毁数(不计入战斗储备击毁)的结果，计入:\n"
+"• 击毁敌方坦克数: %(value_0)s\n"
+"• 自身坦克被击毁数: %(value_1)s"
 
 msgid "profile/params/tooltip/dif/fallout/destroyCoeff/vehicle/header"
 msgstr "战损比"
@@ -529,7 +529,7 @@ msgid "profile/params/tooltip/fort/looting/header"
 msgstr "征收"
 
 msgid "profile/params/tooltip/fort/resource/body"
-msgstr "冲突战战斗场次/获得的总工业资源"
+msgstr "获得的总工业资源/冲突战战斗场次"
 
 msgid "profile/params/tooltip/fort/resource/header"
 msgstr "平均每场冲突战征收"
@@ -579,7 +579,7 @@ msgid "profile/params/tooltip/fortSortieWins/header"
 msgstr "冲突战胜率"
 
 msgid "profile/params/tooltip/fortSorties/avgResources/body"
-msgstr "冲突战战斗场次/获得的总工业资源"
+msgstr "获得的总工业资源/冲突战战斗场次"
 
 msgid "profile/params/tooltip/fortSorties/avgResources/header"
 msgstr "平均每场冲突战征收数"
@@ -598,10 +598,10 @@ msgstr "命中率"
 
 msgid "profile/params/tooltip/kdr/body"
 msgstr ""
-"击毁敌方坦克次数/坦克被击毁次数的比率(包含战斗储备击毁)，包含:\n"
-"• 被我方坦克击毁的敌方坦克:%(value_0)s\n"
-"• 被战斗储备击毁的敌方坦克:%(value_1)s\n"
-"• 被敌方坦克与战斗储备击毁的我方坦克:%(value_2)s"
+"击毁敌方坦克数除以自身坦克被击毁数(计入战斗储备击毁)的结果，计入:\n"
+"• 由您的坦克击毁的敌方坦克: %(value_0)s\n"
+"• 通过战斗储备击毁的敌方坦克: %(value_1)s\n"
+"• 被敌方坦克与战斗储备击毁的自身坦克: %(value_2)s"
 
 msgid "profile/params/tooltip/kdr/header"
 msgstr "战损比"

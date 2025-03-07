@@ -1,0 +1,320 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "closeButtonLabel"
+msgstr "关闭"
+
+msgid "featureName"
+msgstr "录像"
+
+msgid "filter/apply"
+msgstr "应用筛选"
+
+msgid "filter/group/nation/title"
+msgstr "系别"
+
+msgid "filter/group/vehicleTier/longTitle"
+msgstr "等级"
+
+msgid "filter/group/vehicleTier/shortTitle"
+msgstr "等级"
+
+msgid "filter/group/vehicleType/barracks/title"
+msgstr "专精"
+
+msgid "filter/group/vehicleType/tankChange/title"
+msgstr "坦克类型"
+
+msgid "filter/reset"
+msgstr "重置筛选"
+
+msgid "filter/tooltip/nation/crewMember/body"
+msgstr "显示/隐藏此系别的乘员。"
+
+msgid "filter/tooltip/nation/skins/body"
+msgstr "显示/隐藏此系别的皮肤。"
+
+msgid "filter/tooltip/nation/vehicles/body"
+msgstr "显示/隐藏此系别的坦克。"
+
+msgid "filter/tooltip/vehicleType/body"
+msgstr "显示/隐藏该类型的坦克。"
+
+msgid "filter/tooltip/vehicleType/header/AT-SPG"
+msgstr "自行反坦克炮"
+
+msgid "filter/tooltip/vehicleType/header/SPG"
+msgstr "自行火炮"
+
+msgid "filter/tooltip/vehicleType/header/heavyTank"
+msgstr "重型坦克"
+
+msgid "filter/tooltip/vehicleType/header/lightTank"
+msgstr "轻型坦克"
+
+msgid "filter/tooltip/vehicleType/header/mediumTank"
+msgstr "中型坦克"
+
+msgid "filter/vehicles/noVehicles"
+msgstr ""
+"没有找到满足\n"
+"搜索条件的坦克"
+
+msgid "filter/vehicles/tooltip/name/body"
+msgstr "按坦克名称排序。"
+
+msgid "filter/vehicles/tooltip/name/header"
+msgstr "名称"
+
+msgid "filter/vehicles/tooltip/tier/body"
+msgstr "按坦克等级排序。"
+
+msgid "filter/vehicles/tooltip/tier/header"
+msgstr "等级"
+
+msgid "filter/vehicles/tooltip/type/body"
+msgstr "按坦克类型排序。"
+
+msgid "filter/vehicles/tooltip/type/header"
+msgstr "类型"
+
+msgid "filter/vehicles/vehicleName"
+msgstr "名称"
+
+msgid "filterPanel/counter/apply/body"
+msgstr "点击应用筛选条件。"
+
+msgid "filterPanel/counter/apply/header"
+msgstr "应用所选筛选条件"
+
+msgid "filterPanel/counter/reset/body"
+msgstr "点击重置筛选条件。"
+
+msgid "filterPanel/counter/reset/header"
+msgstr "重置所有筛选条件"
+
+msgid "filterPopover/checkboxes/primeTime"
+msgstr "仅显示黄金时间录像"
+
+msgid "filterPopover/lastDays"
+msgid_plural "plural/filterPopover/lastDays"
+msgstr[0] "前%(count)s天"
+msgstr[1] "前%(count)s天"
+msgstr[2] "前%(count)s天"
+
+msgid "filterPopover/title"
+msgstr "录像筛选"
+
+msgid "filterPopover/tooltip/body"
+msgstr "按坦克类型、等级、系别等条件设置录像筛选。"
+
+msgid "filterPopover/tooltip/header"
+msgstr "按参数筛选"
+
+msgid "findReplay/buttonText/find"
+msgstr "搜索录像"
+
+msgid "findReplay/buttonText/refresh"
+msgstr "清除输入信息"
+
+msgid "findReplay/buttonText/watch"
+msgstr "观看录像！"
+
+msgid "findReplay/errorMessage"
+msgstr "未找到。请更改搜索条件"
+
+msgid "findReplay/inputPlaceholder"
+msgstr "请在此输入ARENA_ID..."
+
+msgid "findReplay/successMessage"
+msgstr "AI搜索到了您感兴趣的录像！敬请观看"
+
+msgid "page/heading/bestReplays"
+msgstr "最佳录像"
+
+msgid "page/heading/findReplay"
+msgstr "搜索录像(供开发团队使用)"
+
+msgid "page/heading/myReplays"
+msgstr "我的录像"
+
+msgid "sidebar/tabs/tooltip/body/bestReplays"
+msgstr "该版块包含所有《坦克世界》玩家的最佳录像信息"
+
+msgid "sidebar/tabs/tooltip/body/findReplay"
+msgstr "该版块用于通过特定参数搜索录像"
+
+msgid "sidebar/tabs/tooltip/body/myReplays"
+msgstr "该版块包含您的最佳录像信息"
+
+msgid "sidebar/tabs/tooltip/header/bestReplays"
+msgstr "最佳录像"
+
+msgid "sidebar/tabs/tooltip/header/findReplay"
+msgstr "搜索录像"
+
+msgid "sidebar/tabs/tooltip/header/myReplays"
+msgstr "我的录像"
+
+msgid "statsParam/damageAssisted"
+msgstr "协助击毁排名第一"
+
+msgid "statsParam/damageBlockedByArmor"
+msgstr "抵挡损伤排名第一"
+
+msgid "statsParam/damageDealt"
+msgstr "造成损伤排名第一"
+
+msgid "statsParam/earnedXp"
+msgstr "所获经验排名第一"
+
+msgid "statsParam/kills"
+msgstr "击毁坦克数量排名第一"
+
+msgid "table/error/buttonText"
+msgstr "更新"
+
+msgid "table/error/description"
+msgstr "我们对暂时的不便表示歉意。请稍后尝试更新该页面。"
+
+msgid "table/error/title"
+msgstr "加载数据时出错"
+
+msgid "table/header/damageAssisted"
+msgstr "协助损伤"
+
+msgid "table/header/damageBlockedByArmor"
+msgstr "抵挡损伤"
+
+msgid "table/header/damageDealt"
+msgstr "造成损伤"
+
+msgid "table/header/date"
+msgstr "日期"
+
+msgid "table/header/earnedXp"
+msgstr "所获经验"
+
+msgid "table/header/kills"
+msgstr "击毁坦克数量"
+
+msgid "table/header/map"
+msgstr "地图"
+
+msgid "table/header/marksOfMastery"
+msgstr "战斗嘉奖"
+
+msgid "table/header/player"
+msgstr "玩家昵称"
+
+msgid "table/header/vehicle"
+msgstr "坦克"
+
+msgid "table/noRecords/buttonText"
+msgstr "重置筛选"
+
+msgid "table/noRecords/title"
+msgstr "未找到。请更改条件或重置筛选条件"
+
+msgid "table/noRecords/tooltip/body"
+msgstr "点击重置筛选条件。"
+
+msgid "table/noRecords/tooltip/header"
+msgstr "重置所有筛选条件"
+
+msgid "table/tooltip/damageAssisted/body"
+msgstr "该录像中玩家的协助损伤量"
+
+msgid "table/tooltip/damageAssisted/header"
+msgstr "协助损伤"
+
+msgid "table/tooltip/damageBlockedByArmor/body"
+msgstr "该录像中玩家的抵挡损伤量"
+
+msgid "table/tooltip/damageBlockedByArmor/header"
+msgstr "装甲抵挡的损伤"
+
+msgid "table/tooltip/damageDealt/body"
+msgstr "该录像中玩家造成的损伤量"
+
+msgid "table/tooltip/damageDealt/header"
+msgstr "造成损伤"
+
+msgid "table/tooltip/date/body"
+msgstr "录像录制日期。"
+
+msgid "table/tooltip/date/header"
+msgstr "录像日期"
+
+msgid "table/tooltip/earnedXp/body"
+msgstr "该录像中玩家获得的经验值"
+
+msgid "table/tooltip/earnedXp/header"
+msgstr "所获经验"
+
+msgid "table/tooltip/epicMedals/body"
+msgstr "该录像中玩家获得的史诗级勋章"
+
+msgid "table/tooltip/epicMedals/header"
+msgstr "史诗级勋章"
+
+msgid "table/tooltip/favorite/body"
+msgstr "点击将该录像添加至录像收藏。"
+
+msgid "table/tooltip/favorite/header"
+msgstr "收藏"
+
+msgid "table/tooltip/favoriteActive/body"
+msgstr "点击将该录像从录像收藏中移除。"
+
+msgid "table/tooltip/kills/body"
+msgstr "该录像中玩家击毁的坦克数量"
+
+msgid "table/tooltip/kills/header"
+msgstr "击毁数量"
+
+msgid "table/tooltip/map/body"
+msgstr "该录像所使用的地图。"
+
+msgid "table/tooltip/map/header"
+msgstr "地图"
+
+msgid "table/tooltip/marksOfMastery/body"
+msgstr "该录像中玩家获得的战斗嘉奖"
+
+msgid "table/tooltip/marksOfMastery/header"
+msgstr "战斗嘉奖"
+
+msgid "table/tooltip/player/body"
+msgstr "该录像中玩家的昵称。"
+
+msgid "table/tooltip/player/header"
+msgstr "玩家昵称"
+
+msgid "table/tooltip/vehicle/body"
+msgstr "该录像中玩家使用的坦克。"
+
+msgid "table/tooltip/vehicle/header"
+msgstr "坦克"
+
+msgid "tableInfo/amount"
+msgstr "显示录像: %(amount)s"
+
+msgid "tableInfo/filter"
+msgstr "筛选"
+
+msgid "waitingSpinner/message"
+msgstr "正在加载内容..."

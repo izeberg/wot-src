@@ -57,64 +57,10 @@ msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "战斗通行证点数"
 
 msgid "mode/battleRoyaleQueue/description"
-msgstr "军事演习模式"
+msgstr "幸运草对决"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "钢铁猎手"
-
-msgid "mode/comp7/battlePassTooltip/body"
-msgstr ""
-"在{whiteSpanish_open}天梯战{whiteSpanish_close}中驾驶X级坦克进行战斗时，您可以获取推进战斗通行证进度所需的点数。"
-
-msgid "mode/comp7/battlePassTooltip/header"
-msgstr "战斗通行证点数"
-
-msgid "mode/comp7/calendarTooltip"
-msgstr "活动将于%(date)s结束"
-
-msgid "mode/comp7/description"
-msgstr "竞技性模式:&nbsp;7对7%(parSecondary_open)sI%(parSecondary_close)sX级"
-
-msgid "mode/comp7/seasonEnd/first"
-msgstr "苍蓝蝎狮赛季已结束"
-
-msgid "mode/comp7/seasonEnd/second"
-msgstr "绯红蝎狮赛季已结束"
-
-msgid "mode/comp7/seasonEnd/third"
-msgstr "翡翠蝎狮赛季已结束"
-
-msgid "mode/comp7/seasonStart/first"
-msgstr "苍蓝蝎狮赛季将于%(date)s开启"
-
-msgid "mode/comp7/seasonStart/second"
-msgstr "绯红蝎狮赛季将于%(date)s开启"
-
-msgid "mode/comp7/seasonStart/third"
-msgstr "翡翠蝎狮赛季将于%(date)s开启"
-
-msgid "mode/comp7/warning"
-msgstr "评级不活跃"
-
-msgid "mode/comp7/widgetDescription/qualification"
-msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] ""
-"参加%(maxBattlesCount)s场战斗\n"
-"以完成资格赛。"
-msgstr[1] ""
-"参加%(maxBattlesCount)s场战斗\n"
-"以完成资格赛。"
-msgstr[2] ""
-"参加%(maxBattlesCount)s场战斗\n"
-"以完成资格赛。"
-
-msgid "mode/comp7/widgetDescription/status"
-msgstr ""
-"%(rank)s\n"
-"%(division)s"
-
-msgid "mode/comp7/yearEnd"
-msgstr "蝎狮赛年已结束"
 
 msgid "mode/epicBattle/condition"
 msgstr "30对30 &nbsp;{par_open}I{par_close}&nbsp;&nbsp;%(levels)s级"
@@ -262,67 +208,67 @@ msgid "ranked/widget/qualBattles"
 msgstr "资格赛战斗：%(current)%(par_open)s/%(max)%(par_close)s"
 
 msgid "reward/bones/description"
-msgstr "奖励取决于您的战斗表现"
+msgstr "奖励取决于您的战斗表现。"
 
 msgid "reward/bones/name"
 msgstr "战争债券"
 
 msgid "reward/bountyEquipment/description"
-msgstr "您可以通过游玩此模式获得%(name)s"
+msgstr "您可以通过游玩此模式获得%(name)s。"
 
 msgid "reward/bountyEquipment/name"
 msgstr "特殊配件"
 
 msgid "reward/credits/description"
-msgstr "奖励取决于您的战斗表现"
+msgstr "奖励取决于您的战斗表现。"
 
 msgid "reward/credits/name"
 msgstr "银币"
 
 msgid "reward/crew/description"
-msgstr "您可以通过游玩此模式获得独特乘员"
+msgstr "您可以通过游玩此模式获得独特乘员。"
 
 msgid "reward/crew/name"
 msgstr "乘员"
 
 msgid "reward/experience/description"
-msgstr "奖励取决于您的战斗表现"
+msgstr "奖励取决于您的战斗表现。"
 
 msgid "reward/experience/name"
 msgstr "经验"
 
 msgid "reward/improvedEquipment/description"
-msgstr "您可以通过游玩此模式获得%(name)s"
+msgstr "您可以通过游玩此模式获得%(name)s。"
 
 msgid "reward/improvedEquipment/name"
 msgstr "特殊配件"
 
 msgid "reward/other/description"
-msgstr "您可以通过游玩此模式获得众多实用奖励"
+msgstr "您可以通过游玩此模式获得众多实用奖励。"
 
 msgid "reward/other/name"
 msgstr "特殊奖励"
 
 msgid "reward/progressionStyle/description"
-msgstr "参加此模式的战斗可获得一款特殊的渐变风格"
+msgstr "参加此模式的战斗可获得一款特殊的渐变风格。"
 
 msgid "reward/progressionStyle/name"
 msgstr "渐变风格"
 
 msgid "reward/random/description"
-msgstr "您可以通过游玩此模式获得丰厚实用奖励"
+msgstr "您可以通过游玩此模式获得丰厚实用奖励。"
 
 msgid "reward/random/name"
 msgstr "随机奖励"
 
 msgid "reward/style/description"
-msgstr "您可以通过游玩此模式获得%(name)s特殊3D风格"
+msgstr "您可以通过游玩此模式获得%(name)s特殊3D风格。"
 
 msgid "reward/style/name"
 msgstr "3D风格"
 
 msgid "reward/vehicle/description"
-msgstr "您可以通过游玩此模式获得%(name)s"
+msgstr "您可以通过游玩此模式获得%(name)s。"
 
 msgid "reward/vehicle/name"
 msgstr "奖励坦克"
