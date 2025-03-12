@@ -1151,8 +1151,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_CUSTOMIZATION:String = "#messenger:serviceChannelMessages/sysMsg/titles/customization";
       
-      public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_BOBBATTLESAVAILABLE:String = "#messenger:serviceChannelMessages/sysMsg/titles/bobBattlesAvailable";
-      
       public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_PAYMENTMETHODLINK:String = "#messenger:serviceChannelMessages/sysMsg/titles/paymentMethodLink";
       
       public static const SERVICECHANNELMESSAGES_SYSMSG_TITLES_PAYMENTMETHODUNLINK:String = "#messenger:serviceChannelMessages/sysMsg/titles/paymentMethodUnlink";
@@ -1988,6 +1986,10 @@ package
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAP_HEADER:String = "#messenger:serviceChannelMessages/battlePass/reachedCap/header";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAP_TEXT:String = "#messenger:serviceChannelMessages/battlePass/reachedCap/text";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_CAPRESET_HEADER:String = "#messenger:serviceChannelMessages/battlePass/capReset/header";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_CAPRESET_TEXT:String = "#messenger:serviceChannelMessages/battlePass/capReset/text";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_TROPHYSELECTTOKEN:String = "#messenger:serviceChannelMessages/battlePass/trophySelectToken";
       

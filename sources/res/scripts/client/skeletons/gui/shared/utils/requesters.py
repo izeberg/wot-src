@@ -1148,6 +1148,9 @@ class IOffersRequester(IRequester):
 
 class IBattlePassRequester(IRequester):
 
+    def getSumPoints(self):
+        raise NotImplementedError
+
     def getSeasonID(self):
         raise NotImplementedError
 
@@ -1157,7 +1160,7 @@ class IBattlePassRequester(IRequester):
     def getActiveChapterID(self):
         raise NotImplementedError
 
-    def getPointsForVehicle(self, vehicleID, default=0):
+    def getVehiclePoints(self, vehicleID):
         raise NotImplementedError
 
     def getChapterStats(self):

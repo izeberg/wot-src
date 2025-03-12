@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst_Lamp/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst_Lamp/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.539319 -0.525510 -3.403621</min>
+		<max>1.430569 0.484535 3.071639</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

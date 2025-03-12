@@ -97,6 +97,18 @@
 						normalMap
 						<Texture>vehicles/german/G165_Erich_Konzept_I/Erich_Konzept_I_guns_ANM.dds</Texture>
 					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000001 1.594205 -1.733836</groupOrigin>
 			</primitiveGroup>
@@ -122,6 +134,22 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R00_Badges/Paragon_2024/Paragon_2024_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>1.750000 1.750000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.001617 -0.007762 0.000000</groupOrigin>

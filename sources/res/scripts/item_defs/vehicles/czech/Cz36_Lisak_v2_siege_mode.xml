@@ -3124,9 +3124,12 @@
 				<slot>
 					<slotType>player</slotType>
 					<slotId>33000</slotId>
-					<rayStart>-0.826629 0.538303 1.312507</rayStart>
-					<rayEnd>-0.707494 0.457771 1.173506</rayEnd>
-					<rayUp>0.221213 0.914048 -0.339972</rayUp>
+					<rayStart>
+						-1.331446 0.518621 0.73218
+						<!--BW_String-->
+					</rayStart>
+					<rayEnd>-1.169025 0.402805 0.717836</rayEnd>
+					<rayUp>0.569249 0.813261 -0.120673</rayUp>
 					<size>
 						0.32
 						<!--BW_String-->
@@ -3137,15 +3140,9 @@
 					<slotType>player</slotType>
 					<slotId>33001</slotId>
 					<isMirrored>true</isMirrored>
-					<rayStart>
-						0.845659 0.538303 1.31251
-						<!--BW_String-->
-					</rayStart>
-					<rayEnd>
-						0.726524 0.457771 1.17351
-						<!--BW_String-->
-					</rayEnd>
-					<rayUp>-0.221213 0.914048 -0.339972</rayUp>
+					<rayStart>1.336974 0.508991 0.730987</rayStart>
+					<rayEnd>1.174553 0.393175 0.716643</rayEnd>
+					<rayUp>-0.569248 0.813262 -0.120673</rayUp>
 					<size>
 						0.32
 						<!--BW_String-->

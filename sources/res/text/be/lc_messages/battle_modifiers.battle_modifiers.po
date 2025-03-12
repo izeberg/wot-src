@@ -31,18 +31,10 @@ msgstr ""
 msgid "domain/battleParams/name"
 msgstr "Параметры бою"
 
-msgid "domain/bobSeasonModifiers/description"
-msgstr ""
-"Змены закрануць наступныя параметры: роскід гарматы, роскід "
-"бронепрабівальнасці, трываласць, пашкоджанні ад спецыяльных снарадаў."
-
-msgid "domain/bobSeasonModifiers/name"
-msgstr "Мадыфікатар падзеі"
-
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
-"Мадыфікатар, які павялічвае трываласць усёй тэхнікі ў рэжыме, паскарае "
-"падрыхтоўку рыштунку і зніжае агляд."
+"На ўсю тэхніку ў баях Націску дзейнічае асаблівы мадыфікатар, які змяняе яе "
+"параметры."
 
 msgid "domain/comp7SeasonModifiers/name"
 msgstr "Мадыфікатар Націску"
@@ -77,6 +69,15 @@ msgstr ""
 
 msgid "domain/randomization/name"
 msgstr "Выпадковыя велічыні"
+
+msgid "domain/stepRepairPoint/description"
+msgstr ""
+"Дазваляе аднаўляць ачкі трываласці машыны, адрамантаваць пашкоджаныя модулі "
+"і вярнуць у строй членаў экіпажа, а таксама папоўніць боекамплект непасрэдна"
+" ў баі."
+
+msgid "domain/stepRepairPoint/name"
+msgstr "Рамонтная зона"
 
 msgid "domain/sustaining/description"
 msgstr ""
@@ -127,10 +128,6 @@ msgstr "Роскід пашкоджанняў"
 msgid "modifier/name/deviceDamage"
 msgstr "Пашкоджанні модуляў"
 
-msgid "modifier/name/dirtBoost"
-msgstr ""
-"Счапленне з грунтамі было павялічана, каб выключыць частыя заносы тэхнікі."
-
 msgid "modifier/name/dispFactorAfterShot"
 msgstr "Роскід пасля стрэлу"
 
@@ -164,8 +161,59 @@ msgstr "Пашкоджанні экіпажа пры падзенні"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перазарадка рыштунку"
 
-msgid "modifier/name/fakeImprovedShellDamage"
-msgstr "Пашкоджанні ад спецыяльнага снарада"
+msgid "modifier/name/fakeEngineModifier"
+msgstr "Магутнасць рухавіка (усе, акрамя ЛТ і СТ)"
+
+msgid "modifier/name/fakeEngineModifierLT"
+msgstr "Магутнасць рухавіка (ЛТ)"
+
+msgid "modifier/name/fakeEngineModifierMT"
+msgstr "Магутнасць рухавіка (СТ)"
+
+msgid "modifier/name/fakeModifierRepairCooldown"
+msgstr "Мінімальны час перанабівання зоны рамонту пасля выкарыстання."
+
+msgid "modifier/name/fakeModifierRepairSpeed"
+msgstr "Хуткасць аднаўлення ачкоў трываласці машыны."
+
+msgid "modifier/name/fakePiercingModifierLTSPGA"
+msgstr "Бронепрабівальнасць, 100 м (ЛТ, САУ штурмавыя)"
+
+msgid "modifier/name/fakePiercingModifierMTHTATSPG"
+msgstr "Бронепрабівальнасць, 100 м (СТ, ЦТ, СТ-САУ)"
+
+msgid "modifier/name/fakeRadioModifier"
+msgstr "Радыус дзеяння радыёстанцыі (ЛТ, СТ. ЦТ, СТ-САУ, САУ штурмавыя)"
+
+msgid "modifier/name/fakeRadioModifierSPG"
+msgstr "Радыус дзеяння радыёстанцыі (САУ падтрымкі)"
+
+msgid "modifier/name/fakeReloadModifierATSPG"
+msgstr "Час перанабівання (СТ-САУ)"
+
+msgid "modifier/name/fakeReloadModifierHT"
+msgstr "Час перанабівання (ЦТ)"
+
+msgid "modifier/name/fakeReloadModifierLT"
+msgstr "Час перанабівання (ЛТ)"
+
+msgid "modifier/name/fakeReloadModifierMTSPGA"
+msgstr "Час перанабівання (СТ, САУ штурмавыя)"
+
+msgid "modifier/name/fakeReloadModifierSPGS"
+msgstr "Час перанабівання (САУ падтрымкі)"
+
+msgid "modifier/name/fakeVisionModifierATSPGSPGA"
+msgstr "Радыус агляду (СТ-САУ, САУ штурмавыя)"
+
+msgid "modifier/name/fakeVisionModifierLT"
+msgstr "Радыус агляду (ЛТ)"
+
+msgid "modifier/name/fakeVisionModifierMTHT"
+msgstr "Радыус агляду (СТ, ЦТ)"
+
+msgid "modifier/name/fakeVisionModifierSPGS"
+msgstr "Радыус агляду (САУ падтрымкі)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"
@@ -219,20 +267,8 @@ msgstr "Хуткасць снарадаў"
 msgid "modifier/name/shotDispersionRadius"
 msgstr "Роскід на 100 метраў"
 
-msgid "modifier/name/speedBoostATSPG"
-msgstr "Максімальная хуткасць уперад і назад (СТ-САУ)"
-
-msgid "modifier/name/speedBoostHT"
-msgstr "Максімальная хуткасць уперад і назад (ЦТ)"
-
-msgid "modifier/name/speedBoostLT"
-msgstr "Максімальная хуткасць уперад і назад (ЛТ)"
-
-msgid "modifier/name/speedBoostMT"
-msgstr "Максімальная хуткасць уперад і назад (СТ)"
-
-msgid "modifier/name/speedBoostSPG"
-msgstr "Максімальная хуткасць уперад і назад (САУ)"
+msgid "modifier/name/thermalVisionDistance"
+msgstr "Агляд з пірометрам"
 
 msgid "modifier/name/turretPressureDamage"
 msgstr "Пашкоджанні ад ціску сарванай вежы"
@@ -278,6 +314,9 @@ msgstr "(але {min}, {max})"
 
 msgid "modifiersDomainTooltip/subtitle/plural"
 msgstr "Мадыфікатар уплывае на параметры:"
+
+msgid "modifiersDomainTooltip/subtitle/short"
+msgstr "Параметры:"
 
 msgid "modifiersDomainTooltip/subtitle/single"
 msgstr "Мадыфікатар уплывае на параметр:"

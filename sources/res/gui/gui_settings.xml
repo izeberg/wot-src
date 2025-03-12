@@ -365,6 +365,7 @@
 			<item>poland</item>
 			<item>sweden</item>
 			<item>italy</item>
+			<item>intunion</item>
 		</value>
 	</setting>
 	<setting>
@@ -1128,7 +1129,7 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://wotrp-ru-cdn.lesta.ru
+						https://mtrp-ru-cdn.tanki.su
 						<name>baseUrl</name>
 						<type>url</type>
 					</item>
@@ -1149,7 +1150,7 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://wotrp-rtst-static.tanki.su
+						https://mtrp-rtst-static.tanki.su
 						<name>baseUrl</name>
 						<type>url</type>
 					</item>
@@ -1323,7 +1324,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/featured/featured/items/platform_bp2024_15ep)
+				$PARAMS(/featured/featured/items/platform_bp2025_16ep)
 				<name>buyBattlePass</name>
 				<type>url</type>
 			</item>
@@ -1378,7 +1379,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/cosm2024_category/cosm2024_category)
+				$PARAMS(/cosmic_category/cosmic_category)
 				<name>cosm24Shop</name>
 				<type>url</type>
 			</item>
@@ -1431,7 +1432,7 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/15BPContentPage/
+				/$LANGUAGE_CODE/promocontent/16BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
@@ -1486,7 +1487,15 @@
 				<value>
 					<item>
 						<type>string</type>
-						<value>seasonDescription</value>
+						<value>vehicles</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>limit</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>bonus</value>
 					</item>
 				</value>
 			</item>
@@ -1778,12 +1787,17 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
+								<value>rules</value>
+							</item>
+							<item>
+								<name>page</name>
+								<type>string</type>
 								<value>types</value>
 							</item>
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>rules</value>
+								<value>shop</value>
 							</item>
 							<item>
 								<name>page</name>
@@ -1793,12 +1807,12 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>seasonModifiers</value>
+								<value>roleSkills</value>
 							</item>
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>roleSkills</value>
+								<value>rework</value>
 							</item>
 						</value>
 					</item>
@@ -1812,7 +1826,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/onslaught-ice-bear/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/onslaught-mt/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -1850,7 +1864,23 @@
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>newTypes</value>
+										<value>shop</value>
+									</item>
+									<item>
+										<name>type</name>
+										<type>string</type>
+										<value>page</value>
+									</item>
+								</value>
+							</item>
+							<item>
+								<name>newTypes</name>
+								<type>list</type>
+								<value>
+									<item>
+										<name>name</name>
+										<type>string</type>
+										<value>rework</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -1911,29 +1941,13 @@
 								</value>
 							</item>
 							<item>
-								<name>pointsOfInterest</name>
+								<name>shop</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>pointsOfInterest</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>roleSkills</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>roleSkills</value>
+										<value>shopIntro</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -1959,13 +1973,29 @@
 								</value>
 							</item>
 							<item>
-								<name>shop</name>
+								<name>pointsOfInterest</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>shop</value>
+										<value>pointsOfInterest</value>
+									</item>
+									<item>
+										<name>type</name>
+										<type>string</type>
+										<value>page</value>
+									</item>
+								</value>
+							</item>
+							<item>
+								<name>roleSkills</name>
+								<type>list</type>
+								<value>
+									<item>
+										<name>name</name>
+										<type>string</type>
+										<value>roleSkills</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2117,7 +2147,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/Cosm24/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/Cosm25/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -2138,27 +2168,6 @@
 						<type>url</type>
 					</item>
 				</value>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>bobEvent</name>
-		<type>dict</type>
-		<value>
-			<item>
-				$PARAMS(skills/)
-				<name>skillsUrl</name>
-				<type>url</type>
-			</item>
-			<item>
-				$PARAMS(info/)
-				<name>info</name>
-				<type>url</type>
-			</item>
-			<item>
-				$PARAMS(registration/)
-				<name>registration</name>
-				<type>url</type>
 			</item>
 		</value>
 	</setting>

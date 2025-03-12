@@ -12,17 +12,16 @@ _PROGRESS_BACKWARD = 1
 
 class ThermalVisionIndicator(ThermalVisionIndicatorMeta, CallbackDelayer):
 
-    def __init__(self):
-        super(ThermalVisionIndicator, self).__init__('thermalVisionController')
-
     def setState(self, state):
         if state in _STATES_MAPPING:
             self.as_setStateS(_STATES_MAPPING[state])
 
     def isValidVehicle(self, vehicle):
-        player = BigWorld.player()
-        isAvatarVehicle = player and player.vehicle and player.playerVehicleID == player.vehicle.id
-        return vehicle.isAlive() and vehicle.typeDescriptor.hasThermalVision and isAvatarVehicle
+        return vehicle and vehicle.isAlive() and vehicle.typeDescriptor.hasThermalVision
+
+    @staticmethod
+    def componentName():
+        return 'thermalVisionIndicator'
 
     def startReloadAnimation(self, startTime, duration):
         self.delayCallback(0, self.__indicatorTimerCallback, startTime, duration, _PROGRESS_FORWARD)

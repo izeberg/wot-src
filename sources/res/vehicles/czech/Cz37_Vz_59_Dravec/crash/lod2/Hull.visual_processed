@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 0.502494 -1.075240</row3>
+					<row3>-0.000000 0.493598 -1.075240</row3>
 				</transform>
 			</node>
 		</node>
@@ -94,18 +94,11 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							4 4 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -124,8 +117,8 @@
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_hull_01_AO.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.033022 0.011116 -0.042112</groupOrigin>
@@ -139,38 +132,31 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							4 4 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						metallicGlossMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_hull_01_GMM.dds</Texture>
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_hull_01_ANM.dds</Texture>
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_hull_01_AM.dds</Texture>
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_hull_01_AO.dds</Texture>
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000492 -0.393703 0.035301</groupOrigin>

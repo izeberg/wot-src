@@ -95,4 +95,18 @@
 	<enableClusteredShading>false</enableClusteredShading>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<spaceVisibilityFlags>
+		<type>
+			<tag>ctf</tag>
+			<bitIndex>0</bitIndex>
+		</type>
+		<type>
+			<tag>domination3</tag>
+			<bitIndex>11</bitIndex>
+		</type>
+		<type>
+			<tag>bootcamp</tag>
+			<bitIndex>14</bitIndex>
+		</type>
+	</spaceVisibilityFlags>
 </root>

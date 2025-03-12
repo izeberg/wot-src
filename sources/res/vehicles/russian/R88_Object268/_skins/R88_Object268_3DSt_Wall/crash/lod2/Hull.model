@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/crash/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.816507 -0.842095 -3.600751</min>
+		<max>1.781559 2.049700 3.527288</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+</root>

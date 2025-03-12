@@ -1188,6 +1188,14 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un02_Merkava_LP/Merkava_LP_chassis_01_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.326730 0.673708 0.005354</groupOrigin>
 			</primitiveGroup>
@@ -1272,6 +1280,14 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un02_Merkava_LP/Merkava_LP_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.326330 0.670173 0.005354</groupOrigin>

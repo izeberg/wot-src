@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 -0.000000 -0.000000</row3>
+					<row3>-0.000000 -0.000000 0.000000</row3>
 				</transform>
 			</node>
 		</node>
@@ -36,17 +36,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
+					<identifier>tank_turret_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 				</material>
-				<groupOrigin>0.001839 -0.025784 0.211667</groupOrigin>
+				<groupOrigin>-0.000461 -0.002113 -0.000623</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.155557 -0.118336 -0.022202</min>
-		<max>0.159235 0.066769 0.445537</max>
+		<min>-0.157857 -0.094665 -0.234492</min>
+		<max>0.156935 0.090440 0.233247</max>
 	</boundingBox>
 	<geometrySize>102</geometrySize>
 	<minUVDensity>0.003779</minUVDensity>

@@ -165,6 +165,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It33_Orso/Orso_hull_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.000000 0.095801 0.111292</groupOrigin>
 			</primitiveGroup>

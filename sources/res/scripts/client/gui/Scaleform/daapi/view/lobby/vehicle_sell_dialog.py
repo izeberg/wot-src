@@ -81,8 +81,7 @@ class VehicleSellDialog(VehicleSellDialogMeta):
 
     def onSelectionChanged(self, itemID, toInventory, currency):
         item = self.__items[itemID]
-        if item.itemType == FITTING_TYPES.OPTIONAL_DEVICE:
-            self.__updateItemData(item, toInventory, currency)
+        self.__updateItemData(item, toInventory, currency)
         self.__updateTotalCost()
         self.__updateSubmitButton()
 
@@ -92,6 +91,9 @@ class VehicleSellDialog(VehicleSellDialogMeta):
             self.__sendControlQuestion()
             self.as_visibleControlBlockS(True)
             self.setUserInput('')
+        elif not self.__isEnoughBerthsForCrew and not self.__isCrewDismissal:
+            self.as_visibleControlBlockS(True)
+            self.__updateSubmitButton()
         else:
             self.as_visibleControlBlockS(False)
             self.setUserInput(self.__controlNumber)
@@ -393,20 +395,16 @@ class VehicleSellDialog(VehicleSellDialogMeta):
         shortage = expenses.getShortage(self.__accountMoney)
         shortage[Currency.GOLD] = 0
         shortage[_WP_CURRENCY] = 0
-        nationGroupVehs = self.__vehicle.getAllNationGroupVehs(self.__itemsCache.items)
-        barracksBerthsNeeded = getCrewCount(nationGroupVehs)
-        crewValid = True
-        if not self.__isCrewDismissal:
-            crewValid = plugins.BarracksSlotsValidator(barracksBerthsNeeded).validate().success
         isInLimit = True
         if not (self.__vehicle.isRented and self.__vehicle.rentalIsOver):
             isInLimit = plugins.VehicleSellsLeftValidator(self.__vehicle).validate().success
         tooltip = ''
         acceptButtonTooltip = R.strings.tooltips.vehicleSellDialog.acceptButtonTooltip
         formattedItems = []
+        isEnoughBerths = self.__isCrewDismissal or self.__isEnoughBerthsForCrew
         if not shortage.isEmpty():
             formattedItems.append(backport.text(acceptButtonTooltip.notEnoughCurrency.body()))
-        if not crewValid:
+        if not isEnoughBerths:
             formattedItems.append(backport.text(acceptButtonTooltip.notEnoughTankmenBerths.body()))
         if not isInLimit:
             formattedItems.append(backport.text(acceptButtonTooltip.vehicleSellLimit.body()))
@@ -418,8 +416,8 @@ class VehicleSellDialog(VehicleSellDialogMeta):
             header = backport.text(acceptButtonTooltip.controlNumberValid.header())
             body = backport.text(acceptButtonTooltip.controlNumberValid.body())
             tooltip = makeTooltip(header, body)
-        self.as_enableButtonS(controlNumberValid and shortage.isEmpty() and crewValid and isInLimit, tooltip)
-        self.as_setSellEnabledS(shortage.isEmpty() and crewValid and isInLimit, str(warningMessage))
+        self.as_enableButtonS(controlNumberValid and shortage.isEmpty() and isEnoughBerths and isInLimit, tooltip)
+        self.as_setSellEnabledS(shortage.isEmpty() and isEnoughBerths and isInLimit, str(warningMessage))
 
     def __getControlQuestion(self, usingGold=False):
         if usingGold:
@@ -438,8 +436,9 @@ class VehicleSellDialog(VehicleSellDialogMeta):
     def __updateItemData(self, item, toInventory, currency):
         item.toInventory = toInventory
         item.removeCurrency = currency
-        item.setAlertIconTooltip(toInventory=toInventory)
-        self.as_updateDeviceS(item.toFlashVO())
+        if item.itemType == FITTING_TYPES.OPTIONAL_DEVICE:
+            item.setAlertIconTooltip(toInventory=toInventory)
+            self.as_updateDeviceS(item.toFlashVO())
 
     def __updateTotalCost(self):
         optionalDevices = _VSDMoney()
@@ -501,6 +500,12 @@ class VehicleSellDialog(VehicleSellDialogMeta):
                     return True
 
         return False
+
+    @property
+    def __isEnoughBerthsForCrew(self):
+        nationGroupVehs = self.__vehicle.getAllNationGroupVehs(self.__itemsCache.items)
+        barracksBerthsNeeded = getCrewCount(nationGroupVehs)
+        return plugins.BarracksSlotsValidator(barracksBerthsNeeded).validate().success
 
     @decorators.adisp_process('sellVehicle')
     def __doSellVehicle(self, vehicle, shells, eqs, optDevicesToSell, inventory, customizationItems, isDismissCrew, itemsForDemountKit, itemsForFreeDemount, boosters):

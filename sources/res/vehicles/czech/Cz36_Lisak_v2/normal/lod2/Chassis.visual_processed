@@ -1265,6 +1265,14 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.279725 0.647389 0.017166</groupOrigin>
 			</primitiveGroup>
@@ -1356,6 +1364,14 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.287556 0.645999 0.013843</groupOrigin>

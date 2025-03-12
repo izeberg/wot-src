@@ -7,78 +7,16 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Light 0</name>
-		<type>light</type>
-		<lightType>omnilight</lightType>
-		<track>
-			<name>outerRadius</name>
-			<type>float</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>30.000000</value>
-				<inTangent>0.000000</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>multiplier</name>
-			<type>float</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000</value>
-				<inTangent>636.619751</inTangent>
-				<outTangent>636.619751</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>2.500000</startTime>
-				<value>1591.549316</value>
-				<inTangent>0.000000</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>5.000000</startTime>
-				<value>0.000000</value>
-				<inTangent>-636.619751</inTangent>
-				<outTangent>-636.619751</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>color</name>
-			<type>vector4</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000 0.580392 1.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>lodShift</name>
-			<type>float</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>500.000000</value>
-				<inTangent>0.000000</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Model 0_copied</name>
+		<name>Model</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/cosm_event/3d_ability_icons/abilitiy_overcharge_3d_icon.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.000000 3.247590 0.000000</value>
+				<value>0.000000 3.500000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
@@ -115,15 +53,25 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Model 0</name>
+		<name>Ray</name>
 		<type>model</type>
-		<resource>particles/content_deferred/GFX_models/cosm_event/ability_cylinder_02.model</resource>
+		<resource>particles/content_deferred/GFX_models/environment/280_cosmic_event/cosm_rays_sniper_mode.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>5.000000</duration>
+				<value>dron|root</value>
+			</frame>
+		</track>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.000000 1.554610 0.000000</value>
+				<value>0.000000 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
@@ -134,18 +82,121 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>8.000000 2.000000 8.000000</value>
+				<value>4.000000 4.000000 4.000000</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dron</name>
+		<type>model</type>
+		<resource>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_07.model</resource>
 		<track>
-			<name>visibility</name>
-			<type>bool</type>
+			<name>position</name>
+			<type>vector3</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>false</value>
+				<value>0.000000 15.200000 -0.900000</value>
+				<inTangent>0.021429 0.068950 0.042857</inTangent>
+				<outTangent>0.021429 0.068950 0.042857</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.566667</startTime>
+				<value>0.050000 15.500000 -0.600000</value>
+				<inTangent>-0.000534 -0.003202 -0.003202</inTangent>
+				<outTangent>-0.000534 -0.003202 -0.003202</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000 15.200000 -0.900000</value>
+				<inTangent>-0.004772 0.003064 -0.033248</inTangent>
+				<outTangent>-0.004772 0.003064 -0.033248</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 -0.068090 0.000000</inTangent>
+				<outTangent>0.000000 -0.068090 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>0.000000 6.000000 4.000000</value>
+				<inTangent>0.454545 -0.067567 0.712531</inTangent>
+				<outTangent>0.454545 -0.067567 0.712531</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.433333</startTime>
+				<value>2.000000 -5.000000 0.000000</value>
+				<inTangent>-0.183752 -0.904256 -0.909091</inTangent>
+				<outTangent>-0.183752 -0.904256 -0.909091</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.107341 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.107341 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>5.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 14.933308 -1.000496</value>
+				<inTangent>0.000000 0.166223 0.183725</inTangent>
+				<outTangent>0.000000 0.166223 0.183725</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000 15.348866 -0.541183</value>
+				<inTangent>0.000000 0.000000 -0.000001</inTangent>
+				<outTangent>0.000000 0.000000 -0.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000 14.933310 -1.000500</value>
+				<inTangent>-0.000000 -0.166223 -0.183727</inTangent>
+				<outTangent>-0.000000 -0.166223 -0.183727</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>5.000000</duration>
+				<sequenceSound>ev_cosmic_ability_drone_loop</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

@@ -148,7 +148,7 @@ msgid "chat_example/negative"
 msgstr "Не!"
 
 msgid "chat_example/overheat_cant_shoot"
-msgstr "Гармата перагрэта! Не магу страляць яшчэ <Час астывання> с."
+msgstr "Гармата перагрэлася! Не магу страляць яшчэ <Час астывання> с."
 
 msgid "chat_example/positive"
 msgstr "Так!"
@@ -956,7 +956,7 @@ msgid "player_errors/cant_shoot/gun_locked"
 msgstr "Страляць немагчыма"
 
 msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "Страляць немагчыма: гармата перагрэтая"
+msgstr "Страляць немагчыма: гармата перагрэлася"
 
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Гармата перанабіваецца"
@@ -1017,6 +1017,18 @@ msgstr "Усе прылады ў добрым стане і не патрабу�
 
 msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s] у добрым стане і не патрабуе рамонту."
+
+msgid "player_errors/thermalVision/alreadyActivated"
+msgstr "Пірометр ужо актываваны"
+
+msgid "player_errors/thermalVision/cooldown"
+msgstr "Пірометр недаступны: прыбор на перазарадцы."
+
+msgid "player_errors/thermalVision/disabled"
+msgstr "Пірометр недаступны."
+
+msgid "player_errors/thermalVision/overturned"
+msgstr "Пірометр недаступны: танк перакулены."
 
 msgid "player_messages/ALLY_HIT"
 msgstr "Траплянне ў хаўрусніка %(entity)s!"

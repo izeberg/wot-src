@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.795720 -0.822669 -3.688404</min>
+		<max>1.790019 0.849188 3.683171</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_3Dst_Ram/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_3Dst_Ram/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -123,6 +123,10 @@
 						normalMap
 						<Texture>vehicles/russian/R00_Badges/Paragon_2024/Paragon_2024_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.001617 -0.007762 0.000000</groupOrigin>
 			</primitiveGroup>

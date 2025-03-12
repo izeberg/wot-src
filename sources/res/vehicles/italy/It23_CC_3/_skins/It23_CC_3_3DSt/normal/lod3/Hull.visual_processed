@@ -97,6 +97,24 @@
 					<row3>-0.000008 0.476463 1.130305</row3>
 				</transform>
 			</node>
+			<node>
+				<identifier>HP_hullAnim</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Drill_anim</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.615328 -0.788271</row1>
+					<row2>-0.000000 0.788271 0.615328</row2>
+					<row3>-0.001410 0.739700 -3.871100</row3>
+				</transform>
+			</node>
 		</node>
 	</node>
 	<renderSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.028849 -0.029205 -0.034832</min>
+		<max>0.014174 0.041048 0.034832</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R88_Object268/_skins/R88_Object268_3DSt_Wall/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

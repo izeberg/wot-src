@@ -142,14 +142,6 @@ msgstr ""
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
 msgstr "Звяз"
 
-msgid "headerButton/tooltips/bobSquad/body"
-msgstr ""
-"Стварэнне фармавання з 2-3 гульцоў для сумеснай гульні ў баях падзеі «Бітва "
-"блогераў 2025»."
-
-msgid "headerButton/tooltips/bobSquad/header"
-msgstr "Звяз"
-
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
 msgstr ""
 "Да завяршэння кваліфікацыі вы не можаце ствараць звязы або далучацца да іх.\n"
@@ -165,6 +157,14 @@ msgstr ""
 
 msgid "headerButton/tooltips/comp7Squad/header"
 msgstr "Звяз"
+
+msgid "headerButton/tooltips/cosmicSquad/body"
+msgstr ""
+"Баі ў рэжыме «На Марс: хаос» вядуцца ў свабодным фармаце. Стварэнне звязаў "
+"немагчымае."
+
+msgid "headerButton/tooltips/cosmicSquad/header"
+msgstr "Звязы недаступныя"
 
 msgid "headerButton/tooltips/dominationSquad/body"
 msgstr ""
@@ -295,9 +295,6 @@ msgstr "Штраф да досведу з-за памылковага склад
 
 msgid "members/header/battle_royal"
 msgstr ": Сталёвы паляўнічы"
-
-msgid "members/header/bob"
-msgstr ": Бітва блогераў"
 
 msgid "members/header/comp7"
 msgstr ": «Націск»"

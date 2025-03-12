@@ -405,13 +405,6 @@ class BattleMattersSoundEnv(SoundEnv):
          SoundFilters.HANGAR_PLACE_TASKS_BATTLE_MATTERS,))
 
 
-class BobPageSoundEnv(SoundEnv):
-
-    def __init__(self, soundsCtrl):
-        super(BobPageSoundEnv, self).__init__(soundsCtrl, 'bob', filters=(
-         SoundFilters.BOB_FILTER,))
-
-
 class GuiAmbientsCtrl(object):
     _spaces = {GuiGlobalSpaceID.LOGIN: LoginSpaceEnv, 
        GuiGlobalSpaceID.LOBBY: LobbySpaceEnv, 

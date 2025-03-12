@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl209_ULAN/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/poland/Pl209_ULAN/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.801097 -0.001288 -4.277223</min>
+		<max>1.801097 1.093978 4.232329</max>
+	</visibilityBox>
+</root>

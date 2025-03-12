@@ -33,8 +33,8 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
       
       override protected function onHiddenStateShowed() : void
       {
-         super.onHiddenStateShowed();
          this.glowContainer.setAnimated(false);
+         super.onHiddenStateShowed();
       }
    }
 }

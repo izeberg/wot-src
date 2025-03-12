@@ -93,6 +93,10 @@
 						normalMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.375937 0.547428 0.172447</groupOrigin>
 			</primitiveGroup>
@@ -127,6 +131,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.376173 0.587497 -0.122210</groupOrigin>

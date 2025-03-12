@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un03_Degem_Yud/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.525072 -0.669200 -3.790696</min>
+		<max>1.517500 0.882280 2.688740</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un03_Degem_Yud/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+</root>

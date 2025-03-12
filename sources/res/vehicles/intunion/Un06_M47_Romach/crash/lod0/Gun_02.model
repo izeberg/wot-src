@@ -8,5 +8,5 @@
 	<parent>vehicles/intunion/Un06_M47_Romach/crash/lod1/Gun_02</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
-	<nodelessVisual>vehicles/intunion/Un06_M47_Romach/crash/lod0/Gun_02</nodelessVisual>
+	<nodefullVisual>vehicles/intunion/Un06_M47_Romach/crash/lod0/Gun_02</nodefullVisual>
 </root>

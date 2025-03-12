@@ -764,7 +764,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				<crew_bonus_x3>&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/bonus_x3.png&apos; width=&apos;46&apos; height=&apos;18&apos; vspace=&apos;-4&apos; /&gt;&lt;font color=&apos;#95907F&apos;&gt;(x%(value)s) &lt;/font&gt;</crew_bonus_x3>
 				<earlyAccessToken>_(#quests:bonuses/item/earlyAccessToken): %(count)d &lt;img src=&apos;img://gui/maps/icons/quests/bonuses/small/earlyAccessToken.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos;/&gt;</earlyAccessToken>
 				<versusAIProgressionsToken>&lt;img src=&apos;img://gui/maps/icons/missions/tokens/16x16/token_%(progressionName)s.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-4&apos;/&gt;&lt;font color=&apos;#95907F&apos;&gt; %(valueName)s (x%(count)s)&lt;/font&gt;</versusAIProgressionsToken>
-				<bobTokens>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/quests/bonuses/small/bob_points.png&apos; width=&apos;16&apos; height=&apos;16&apos; vSpace=&apos;-10&apos; /&gt;</bobTokens>
 				<entitlement>%(value)s)</entitlement>
 				<paragonsUnlocks>_(#quests:bonusName/paragonsUnlocks)%(value)s</paragonsUnlocks>
 				<tmanToken>_(#quests:bonusName/tmanToken) %(value)s</tmanToken>
@@ -1353,10 +1352,4 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			</roleSkill>
 		</tooltips>
 	</comp7>
-	<bob>
-		<voiceChat>
-			<fullStatsStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#cbac77&apos;&gt;%(message)s&lt;/font&gt;</fullStatsStyle>
-			<playersPanelStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#ffdd99&apos;&gt;%(message)s&lt;/font&gt;</playersPanelStyle>
-		</voiceChat>
-	</bob>
 </root>

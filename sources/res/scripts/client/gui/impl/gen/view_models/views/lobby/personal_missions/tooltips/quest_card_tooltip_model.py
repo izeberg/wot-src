@@ -12,6 +12,8 @@ class QuestState(Enum):
     DONE = 'done'
     DONEBASIC = 'doneBasic'
     DONEHONOR = 'doneHonor'
+    DONEPAUSE = 'donePause'
+    PAUSE = 'pause'
 
 
 class DescriptionQuestStatus(Enum):

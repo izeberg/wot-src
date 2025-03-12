@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl209_ULAN/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl209_ULAN/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.646606 -0.087311 -2.655651</min>
+		<max>1.644463 1.584698 1.778466</max>
+	</visibilityBox>
+</root>

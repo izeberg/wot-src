@@ -48,6 +48,22 @@
 				</team2>
 			</teamBasePositions>
 		</ctf>
+		<domination3>
+			<boundingBox>
+				<bottomLeft>-400.000000 -250.000000</bottomLeft>
+				<upperRight>200.000000 350.000000</upperRight>
+			</boundingBox>
+			<teamSpawnPoints>
+				<team1>
+					<position>15.818098 -217.596268</position>
+				</team1>
+				<team2>
+					<position>-23.204121 245.049652</position>
+				</team2>
+			</teamSpawnPoints>
+			<minimap>spaces/36_fishing_bay/mmap_domination3.dds</minimap>
+			<controlPoint>-45.256409 15.924417</controlPoint>
+		</domination3>
 	</gameplayTypes>
 	<mapActivities>
 		<warplane>

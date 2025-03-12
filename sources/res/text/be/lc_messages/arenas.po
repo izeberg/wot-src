@@ -615,6 +615,12 @@ msgstr "?empty?"
 msgid "h00_armory_yard/name"
 msgstr "?empty?"
 
+msgid "h08_mt_hangar/description"
+msgstr "?empty?"
+
+msgid "h08_mt_hangar/name"
+msgstr "?empty?"
+
 msgid "qa_content_01/description"
 msgstr "QA_Content. Мапа для праверкі LODs і іншых праверак"
 
@@ -641,12 +647,6 @@ msgstr ""
 
 msgid "type/assault2/name"
 msgstr "Атака/Абарона"
-
-msgid "type/bob/description"
-msgstr "Баявая задача: захапіць базу або знішчыць усю тэхніку супраціўніка."
-
-msgid "type/bob/name"
-msgstr "Бітва блогераў"
 
 msgid "type/bootcamp/description0"
 msgstr "Каб завяршыць заданне, кіруйцеся падказкамі"
@@ -738,6 +738,12 @@ msgstr "Баявая задача: захапіць базу або знішчы
 
 msgid "type/domination/name"
 msgstr "Сустрэчны бой"
+
+msgid "type/domination3/description"
+msgstr "Баявая задача: захапіць базу або знішчыць усю тэхніку супраціўніка."
+
+msgid "type/domination3/name"
+msgstr "Сутыкненне"
 
 msgid "type/domination30x30/description"
 msgstr "Баявая задача: захапіць базу або знішчыць усю тэхніку супраціўніка."

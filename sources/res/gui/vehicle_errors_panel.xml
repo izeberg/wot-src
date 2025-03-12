@@ -350,5 +350,37 @@
 				<item>yellow</item>
 			</value>
 		</message>
+		<message>
+			<name>thermalVisionAlreadyActivated</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/thermalVision/alreadyActivated)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>thermalVisionCooldown</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/thermalVision/cooldown)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>thermalVisionDisabled</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/thermalVision/disabled)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>thermalVisionOverturned</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/thermalVision/overturned)</item>
+				<item>yellow</item>
+			</value>
+		</message>
 	</messages>
 </root>

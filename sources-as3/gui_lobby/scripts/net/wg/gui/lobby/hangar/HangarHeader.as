@@ -16,7 +16,6 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.BobHangarWidget;
    import net.wg.gui.lobby.hangar.quests.Comp7Widget;
    import net.wg.gui.lobby.hangar.quests.FunRandomHangarWidget;
    import net.wg.gui.lobby.hangar.quests.HeaderQuestsEvent;
@@ -79,8 +78,6 @@ package net.wg.gui.lobby.hangar
       
       private var _secondaryPointX:int = 0;
       
-      private var _bobWidget:BobHangarWidget = null;
-      
       public function HangarHeader()
       {
          this._scheduler = App.utils.scheduler;
@@ -128,7 +125,6 @@ package net.wg.gui.lobby.hangar
          this._widget = null;
          this.mcBackground = null;
          this._data = null;
-         this._bobWidget = null;
          super.onDispose();
       }
       
@@ -414,8 +410,6 @@ package net.wg.gui.lobby.hangar
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
             case HANGAR_ALIASES.COMP7_WIDGET:
                return new Comp7Widget();
-            case HANGAR_ALIASES.BOB_HANGAR_WIDGET:
-               return new BobHangarWidget();
             case HANGAR_ALIASES.EPIC_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.EPIC_WIDGET,EpicBattlesWidget);
             case FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET:

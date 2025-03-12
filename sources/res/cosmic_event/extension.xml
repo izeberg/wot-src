@@ -18,6 +18,9 @@
 			<ArenaCosmicLootComponent/>
 			<ArtifactScanningComponent/>
 			<VehicleOverrideShotComponent/>
+			<EquipVehicleCtrlComponent/>
+			<VehicleStunShotComponent/>
+			<SpringboardEffectComponent/>
 		</DynamicComponents>
 	</Components>
 	<Entities>
@@ -25,6 +28,8 @@
 			<CosmicLoot/>
 			<CosmicPlacement/>
 			<ClientSelectableArtifactMachine/>
+			<DronPortal/>
+			<GeyserSplash/>
 		</ClientServerEntities>
 		<ServerOnlyEntities>
 			<CosmicEventBattlesMgr/>
@@ -40,6 +45,8 @@
 	<cgf>
 		<script>
 			<module>client.cgf_mechanics</module>
+			<module>common.cosmic_event_common_cgf.cosmic_event_components</module>
+			<module>common.cosmic_event_common_cgf.cosmic_event_managers</module>
 		</script>
 	</cgf>
 </root>

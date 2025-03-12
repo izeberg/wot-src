@@ -80,7 +80,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -96,7 +96,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>1.753425 0.438356 0.000000 0.000000</Vector4>
+						<Vector4>3.506000 0.876000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -136,7 +136,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -152,7 +152,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>1.753425 0.438356 0.000000 0.000000</Vector4>
+						<Vector4>3.506000 0.876000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic

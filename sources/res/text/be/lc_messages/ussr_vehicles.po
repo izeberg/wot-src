@@ -290,6 +290,9 @@ msgstr "СУ-122А"
 msgid "Chassis_R100_SU122A_2"
 msgstr "СУ-122А ўзмоцненае"
 
+msgid "Chassis_R1013_IS_3_T"
+msgstr "ІС-3М"
+
 msgid "Chassis_R101_MT25"
 msgstr "МТ-25"
 
@@ -670,6 +673,12 @@ msgstr "Т-V Пантэра"
 
 msgid "Chassis_R219_Waffentrager_E100_G"
 msgstr "Ш/Е-100"
+
+msgid "Chassis_R223_T_54B_1958"
+msgstr "Т-54"
+
+msgid "Chassis_R230_Maus"
+msgstr "Ш-Мыш"
 
 msgid "Chassis_R45_IS-7_02"
 msgstr "ІС-7"
@@ -1372,6 +1381,9 @@ msgstr ""
 msgid "M500"
 msgstr "М500"
 
+msgid "MB517"
+msgstr "МБ-517"
+
 msgid "MG_31F"
 msgstr "МГ-31Ф"
 
@@ -1535,7 +1547,7 @@ msgid "Object_261"
 msgstr "Аб'ект 261"
 
 msgid "Object_261_4"
-msgstr "Аб. 261-4"
+msgstr "Аб'ект 261 Варыянт 4 Тэст"
 
 msgid "Object_261_4_descr"
 msgstr ""
@@ -1552,7 +1564,7 @@ msgid "Object_261_4_long_special"
 msgstr "?empty?"
 
 msgid "Object_261_4_short"
-msgstr "Аб. 261/4"
+msgstr "Аб. 261/4 (Т)"
 
 msgid "Object_261_4_short_special"
 msgstr "?empty?"
@@ -1637,6 +1649,24 @@ msgstr "QF 20 pounder"
 
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6-pdr Mk. V"
+
+msgid "R1013_IS_3_T"
+msgstr "ІС-3Т"
+
+msgid "R1013_IS_3_T_descr"
+msgstr ""
+"Серыйная вытворчасць пачалася ў маі 1945 года. 7 верасня машыны гэтага тыпу ўзялі ўдзел у парадзе краін-удзельніц антыгітлераўскай кааліцыі ў Берліне. Да спынення серыйнага выпуску ў сярэдзіне 1946 года было выпушчана 1170 танкаў. З 1948 г. да канца 50-х г. машыны праходзілі мадэрнізацыю.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "R1013_IS_3_T_long_special"
+msgstr "?empty?"
+
+msgid "R1013_IS_3_T_short"
+msgstr "ІС-3Т"
+
+msgid "R1013_IS_3_T_short_special"
+msgstr "?empty?"
 
 msgid "R104_Object_430_II"
 msgstr "Аб'ект 430 варыянт II"
@@ -1842,6 +1872,9 @@ msgstr "Р-113М"
 msgid "R113M_DR"
 msgstr "Р-113Д"
 
+msgid "R113_B"
+msgstr "R-113"
+
 msgid "R113_Object_730"
 msgstr "ІС-5 (Аб'ект 730)"
 
@@ -1871,6 +1904,9 @@ msgstr "Р-113Т"
 
 msgid "R113_SH"
 msgstr "Р-113-УКВ"
+
+msgid "R113_T"
+msgstr "Р-113"
 
 msgid "R114_Object_244"
 msgstr "Аб'ект 244"
@@ -3954,6 +3990,23 @@ msgid "R20_T-44_FL_short_special"
 msgstr "Выдатная дынаміка, дакладная гармата"
 
 msgid "R210_ISU_2SH"
+msgstr "ІСУ-2Ш Тэст"
+
+msgid "R210_ISU_2SH_II"
+msgstr "ІСУ-2Ш"
+
+msgid "R210_ISU_2SH_II_descr"
+msgstr ""
+"У лютым-сакавіку 1944 года адбыліся першыя баі з удзелам цяжкіх танкаў ІС, "
+"падчас якіх высветлілася, што бранявой аховы машыны недастаткова. У сакавіку"
+" 1944 года пачаліся першыя распрацоўкі мадэрнізацыі гэтых танкаў. Паводле "
+"аднаго з варыянтаў вядучага інжынера М. Ф. Шамшурына, меркавалася перанесці "
+"баявое аддзяленне ў кармавую частку корпуса і дапрацаваць шасі. Гэты варыянт"
+" праекта пражыў зусім нядоўга: увесну 1944 года Шамшурына скіравалі ў "
+"Ленінград для аднаўлення Кіраўскага завода. З гэтай прычыны працы над "
+"праектам застопарыліся."
+
+msgid "R210_ISU_2SH_II_short"
 msgstr "ІСУ-2Ш"
 
 msgid "R210_ISU_2SH_descr"
@@ -3971,10 +4024,27 @@ msgid "R210_ISU_2SH_long_special"
 msgstr "?empty?"
 
 msgid "R210_ISU_2SH_short"
-msgstr "ІСУ-2Ш"
+msgstr "ІСУ-2Ш (Т)"
 
 msgid "R210_ISU_2SH_short_special"
 msgstr "?empty?"
+
+msgid "R211_Object_261_4_II"
+msgstr "Аб'ект 261 Варыянт 4"
+
+msgid "R211_Object_261_4_II_descr"
+msgstr ""
+"У 1945 годзе з'явіўся праект цяжкага танка ІС-7. На яго базе пачалі "
+"распрацоўваць перспектыўныя САУ. У 1946 годзе быў распрацаваны праект "
+"«Аб'ект 261», які меў чатыры варыянты рэалізацыі. У адным з варыянтаў "
+"меркавалася максімальна выкарыстаць гатовае шасі базавага танка. Замест вежы"
+" мантавалі рубку, у якой усталёўвалася або 152-мм гармата М-31, або гаўбіца "
+"203-мм. Разглядалася магчымасць выкарыстання электрамеханічнай трансмісіі. У"
+" канцы 1947 года камандаванне выставіла новыя патрабаванні да САУ і гэты "
+"праект далейшага развіцця не атрымаў."
+
+msgid "R211_Object_261_4_II_short"
+msgstr "Аб. 261/4"
 
 msgid "R212_Object_265T"
 msgstr "Аб'ект 265Т"
@@ -4047,6 +4117,45 @@ msgstr "Збраяносец"
 
 msgid "R219_Waffentrager_E100_Gold_short_special"
 msgstr "Унікальны стыль, выдатная гармата і агнявы патэнцыял."
+
+msgid "R223_T_54B_1958"
+msgstr "Т-54Б вып. 1958 г."
+
+msgid "R223_T_54B_1958_descr"
+msgstr ""
+"Танк Т-54Б быў прыняты на ўзбраенне Савецкай арміі загадам Міністра абароны СССР № 00152 ад 11 верасня 1956 года. Ён серыйна вырабляўся з ліпеня 1957 па сакавік 1959 г. на заводах у Ніжнім Тагіле, Харкаве і Омску. Усяго было выпушчана 1628 танкаў. Першыя Т-54Б уяўлялі сабой Т-54А з усталяваннем новага двухплоскаснага стабілізатара ўзбраення СТВ-2 «Цыклон». Падчас вытворчасці ў канструкцыю машыны быў унесены шэраг змен. Танк аснашчаўся камплектам прыбораў назірання, прыцэлам начнога бачання і штатным камплектам АПВТ. Кожная чацвёртая машына адаптавалася пад усталяванне супрацьміннага трала ПТ-54/-54М. Падчас эксплуатацыі на Т-54Б маглі ўсталёўвацца каткі двух розных тыпаў: раннія — з літымі дыскамі з перагародкамі (т.зв. «павук»), і познія — з літымі дыскамі каробчатага тыпу (т. зв. «марская зорка»), прычым яны маглі стаяць у любым парадку, у тым ліку несіметрычна адносна бартоў.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "R223_T_54B_1958_long_special"
+msgstr ""
+"Універсальны савецкі сярэдні танк. Сярод аналагаў вылучаецца выдатнай "
+"манеўранасцю і камфортнай гарматай. Выдатна праяўляе свае асаблівасці ў "
+"бітвах сярод сярэдніх танкаў праціўніка і як танк падтрымкі ў складзе групы."
+
+msgid "R223_T_54B_1958_short"
+msgstr "Т-54Б"
+
+msgid "R223_T_54B_1958_short_special"
+msgstr "Камфортная гармата, добрая манеўранасць"
+
+msgid "R230_Maus"
+msgstr "Трафейная «Мыш»"
+
+msgid "R230_Maus_descr"
+msgstr ""
+"Распрацоўваўся з чэрвеня 1942 па ліпень 1944 года. Было выраблена два прататыпы, з якіх толькі адзін атрымаў вежу з узбраеннем.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "R230_Maus_long_special"
+msgstr "?empty?"
+
+msgid "R230_Maus_short"
+msgstr "Мыш"
+
+msgid "R230_Maus_short_special"
+msgstr "?empty?"
 
 msgid "R34_BT-SV_long_special"
 msgstr ""
@@ -5175,6 +5284,9 @@ msgstr "Аб'ект 907A"
 msgid "Turret_1_R100_SU122A"
 msgstr "СУ-122А"
 
+msgid "Turret_1_R1013_IS_3_T"
+msgstr "ІС-3"
+
 msgid "Turret_1_R101_MT25"
 msgstr "МТ-25"
 
@@ -5502,6 +5614,12 @@ msgstr "Т-V Пантэра"
 msgid "Turret_1_R219_Waffentrager_E100_G"
 msgstr "Б/Е-100"
 
+msgid "Turret_1_R223_T_54B_1958"
+msgstr "Т-54"
+
+msgid "Turret_1_R230_Maus"
+msgstr "Б-Мыш"
+
 msgid "Turret_1_R45_IS-7_02"
 msgstr "ІС-7"
 
@@ -5716,7 +5834,7 @@ msgid "UTD_50M1"
 msgstr "УТД-50М1"
 
 msgid "Un02_Merkava_LP"
-msgstr "Merkava LP"
+msgstr "Merkava LP Test"
 
 msgid "Un02_Merkava_LP_descr"
 msgstr ""
@@ -5728,13 +5846,13 @@ msgid "Un02_Merkava_LP_long_special"
 msgstr "?empty?"
 
 msgid "Un02_Merkava_LP_short"
-msgstr "Merkava LP"
+msgstr "Merkava LP (T)"
 
 msgid "Un02_Merkava_LP_short_special"
 msgstr "?empty?"
 
 msgid "Un04_Vickers_MBT_EXP"
-msgstr "Vickers MBT EXP"
+msgstr "Vickers MBT EXP Test"
 
 msgid "Un04_Vickers_MBT_EXP_descr"
 msgstr ""
@@ -5746,17 +5864,17 @@ msgid "Un04_Vickers_MBT_EXP_long_special"
 msgstr "?empty?"
 
 msgid "Un04_Vickers_MBT_EXP_short"
-msgstr "Vickers MBT"
+msgstr "Vickers MBT (T)"
 
 msgid "Un04_Vickers_MBT_EXP_short_special"
 msgstr "?empty?"
 
 msgid "Un06_M47_Romach"
-msgstr "M47 «Romach»"
+msgstr "M47 Romach Test"
 
 msgid "Un06_M47_Romach_descr"
 msgstr ""
-"Падчас чарады лакальных канфліктаў Армія Абароны Ізраіля (ААІ) з зайздроснай сталасцю папаўняла свой арсенал трафейнай тэхнікай. Адным з такіх трафеяў былі амерыканскія танкі M47, захопленыя ў войска Іарданіі. Іх не выкарыстоўвалі ў ААІ, але ізраільскія вайскоўцы разглядалі розныя варыянты іх мадэрнізацыі. Адзін з такіх варыянтаў мадэрнізацыі, які атрымаў абазначэнне «Romach» («Дзіда»), уключаў у сябе дэмантаж курсавога кулямёта, усталяванне палепшаных элементаў шасі і прыладаў назірання, а таксама ўніфікацыю шэрага вузлоў і агрэгатаў з танкам M48 «Magach», які стаяў на ўзбраенні ААІ. У выніку танк М47 «Romach» не быў рэалізаваны ў метале і застаўся на паперы. Прычынай таму паслужыла малая колькасць захопленых машын, а таксама наяўнасць у ААІ больш дасканалых танкаў M48 «Magach».\n"
+"Падчас чарады лакальных канфліктаў Армія Абароны Ізраіля (ААІ) з зайздроснай сталасцю папаўняла свой арсенал трафейнай тэхнікай. Адным з такіх трафеяў былі амерыканскія танкі M47, захопленыя ў войска Іарданіі. Іх не выкарыстоўвалі ў ААІ, але ізраільскія вайскоўцы разглядалі розныя варыянты іх мадэрнізацыі. Адзін з такіх варыянтаў мадэрнізацыі, які атрымаў абазначэнне «Romach» («Дзіда»), уключаў у сябе дэмантаж курсавога кулямёта, усталяванне палепшаных элементаў шасі і прыбораў назірання, а таксама ўніфікацыю шэрага вузлоў і агрэгатаў з танкам M48 «Magach», які стаяў на ўзбраенні ААІ. У выніку танк М47 «Romach» не быў рэалізаваны ў метале і застаўся на паперы. Прычынай таму паслужыла малая колькасць захопленых машын, а таксама наяўнасць у ААІ больш дасканалых танкаў M48 «Magach».\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -5764,13 +5882,13 @@ msgid "Un06_M47_Romach_long_special"
 msgstr "?empty?"
 
 msgid "Un06_M47_Romach_short"
-msgstr "M47 Romach"
+msgstr "M47 Romach (T)"
 
 msgid "Un06_M47_Romach_short_special"
 msgstr "?empty?"
 
 msgid "Un14_T54D"
-msgstr "T-54D"
+msgstr "T-54D Test"
 
 msgid "Un14_T54D_descr"
 msgstr ""
@@ -5782,7 +5900,7 @@ msgid "Un14_T54D_long_special"
 msgstr "?empty?"
 
 msgid "Un14_T54D_short"
-msgstr "T-54D"
+msgstr "T-54D (T)"
 
 msgid "Un14_T54D_short_special"
 msgstr "?empty?"
@@ -6045,6 +6163,9 @@ msgstr "В-2-34А"
 msgid "V_2_34E"
 msgstr "В-2-34Э"
 
+msgid "V_2_54_T"
+msgstr "В-2-54ІС"
+
 msgid "V_2_IS_520_Roz"
 msgstr "В-2-ІС ТИТТ"
 
@@ -6062,6 +6183,9 @@ msgstr "В-4-2"
 
 msgid "V_54B"
 msgstr "V-54B"
+
+msgid "V_54BB"
+msgstr "В-54Б"
 
 msgid "V_54K_IS"
 msgstr "В-54К-ІС"
@@ -6181,6 +6305,9 @@ msgstr "УБР-412А"
 msgid "_100mm_BR-412D"
 msgstr "УБР-412Д"
 
+msgid "_100mm_BR_412B"
+msgstr "БР-412Б"
+
 msgid "_100mm_BR_412DM"
 msgstr "БР-412Д"
 
@@ -6195,6 +6322,9 @@ msgstr "100-мм Д-10С узору 1944 г."
 
 msgid "_100mm_D10T"
 msgstr "100-мм Д-10Т"
+
+msgid "_100mm_D10T2S_B"
+msgstr "100-мм Д-10Т2С"
 
 msgid "_100mm_D10TB"
 msgstr "100 мм Д-10ТБ"
@@ -6267,6 +6397,9 @@ msgstr "100-мм М-63"
 
 msgid "_100mm_NT_12"
 msgstr "100 мм НТ-12"
+
+msgid "_100mm_OF_412"
+msgstr "ОФ-412"
 
 msgid "_100mm_S34"
 msgstr "100-мм С-34"
@@ -6369,6 +6502,9 @@ msgstr "УОФ-412М"
 
 msgid "_100mm_ZBK17M"
 msgstr "ЗБК17М"
+
+msgid "_100mm_ZBM8"
+msgstr "3БМ8"
 
 msgid "_100mm_ZUBK_81"
 msgstr "ЗУБК-81"
@@ -6535,6 +6671,9 @@ msgstr "10Р-Ш"
 msgid "_10R_U18"
 msgstr "10Р-Ш"
 
+msgid "_10WSc"
+msgstr "10ВСц"
+
 msgid "_12.7mm_AP_B32"
 msgstr "Б-32"
 
@@ -6590,6 +6729,9 @@ msgid "_122-mm_D-49"
 msgstr "122-мм Д-49"
 
 msgid "_122_mm_D_25TM_IS_3"
+msgstr "122 мм Д-25ТМ"
+
+msgid "_122_mm_D_25TM_T"
 msgstr "122 мм Д-25ТМ"
 
 msgid "_122_mm_D_49"
@@ -6886,6 +7028,12 @@ msgstr "БР-471ДС"
 msgid "_122mm_UBR-472PBM_SH"
 msgstr "УБР-472ПБМ"
 
+msgid "_122mm_UBR_471P_T"
+msgstr "БР-471Д"
+
+msgid "_122mm_UBR_471_T"
+msgstr "УБР-471"
+
 msgid "_122mm_UBR_472PM_SH"
 msgstr "УБР-472ПМ"
 
@@ -6913,6 +7061,9 @@ msgstr "УОФ-472УР"
 msgid "_122mm_UOF_471M"
 msgstr "УОФ-471М"
 
+msgid "_122mm_UOF_471_T"
+msgstr "УОФ-471"
+
 msgid "_122mm_UOF_472U"
 msgstr "УОФ-472У"
 
@@ -6937,11 +7088,23 @@ msgstr "122-мм гаўбіца ўзору 1910/30 г."
 msgid "_122mm_howitzer_A-19"
 msgstr "122-мм гаўбіца А-19"
 
+msgid "_128mm_KwK44_L55"
+msgstr "128-мм КВК-44/55"
+
+msgid "_128mm_PzGr39"
+msgstr "БР-128(Г)"
+
 msgid "_128mm_PzGr39_GW_R"
 msgstr "БР-128(Г)"
 
+msgid "_128mm_PzGr40"
+msgstr "БК-128(Г)"
+
 msgid "_128mm_PzGr40_GW_R"
 msgstr "БК-128(Г)"
+
+msgid "_128mm_SprG18"
+msgstr "УОФ-128(Г)"
 
 msgid "_128mm_SprG18_GW_R"
 msgstr "УОФ-128(Г)"
@@ -7235,7 +7398,7 @@ msgid "_152mm_UBR551P"
 msgstr "УБР-551П"
 
 msgid "_152mm_ZIK-20"
-msgstr "152mm ЗИК-20"
+msgstr "152 мм ЗИК-20"
 
 msgid "_152mm_howitzer_D-1"
 msgstr "152-мм гаўбіца Д-1"
@@ -7289,7 +7452,7 @@ msgid "_203mm_G-620"
 msgstr "Г-620"
 
 msgid "_203mm_U_3BM"
-msgstr "203mm У-3БМ"
+msgstr "203 мм У-3БМ"
 
 msgid "_203mm_U_3BM_715"
 msgstr "203 мм У-3БМ"
@@ -7887,6 +8050,9 @@ msgstr "9РК"
 
 msgid "_9RM"
 msgstr "9РМ"
+
+msgid "_9RM_D15"
+msgstr "9РМ-Д"
 
 msgid "_9RM_MapsTraining_Player_MT_1"
 msgstr "9РМ"

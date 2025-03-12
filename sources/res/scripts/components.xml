@@ -7,7 +7,6 @@
 		<VehicleInBattleSwitch/>
 		<TeamInfoInBattleVehicleSwitch/>
 		<ArenaTriggerSystemComponent/>
-		<ArenaBobComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -35,6 +34,7 @@
 		<VisualScriptPlan/>
 		<VehicleCircle/>
 		<VehicleRadarDetection/>
+		<VehicleProximityDetection/>
 		<VehicleBuff/>
 		<GunReloadBoost/>
 		<NextClipsReloader/>

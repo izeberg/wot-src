@@ -656,7 +656,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.inblocks.data.AtlasIconTextBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.BlockDataItemVO;
    import net.wg.gui.components.tooltips.inblocks.data.BlocksVO;
-   import net.wg.gui.components.tooltips.inblocks.data.BobTeamProgressBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.BuildUpBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.CounterTextBlockVO;
    import net.wg.gui.components.tooltips.inblocks.data.ImageBlockVO;
@@ -2216,8 +2215,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BLOCKDATAITEMVO:Class = BlockDataItemVO;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BLOCKSVO:Class = BlocksVO;
-      
-      public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BOBTEAMPROGRESSBLOCKVO:Class = BobTeamProgressBlockVO;
       
       public static const NET_WG_GUI_COMPONENTS_TOOLTIPS_INBLOCKS_DATA_BUILDUPBLOCKVO:Class = BuildUpBlockVO;
       

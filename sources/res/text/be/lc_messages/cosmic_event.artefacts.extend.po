@@ -10,8 +10,8 @@ msgstr ""
 
 msgid "acceleration/descr"
 msgstr ""
-"Павялічвае хуткасць машыны. Можна выкарыстоўваць для тарана або для хуткага "
-"выйсця з небяспечных сітуацый."
+"Рэзкае павелічэнне хуткасці машыны. Эфектыўна для тарана або пры "
+"неабходнасці хутка змяніць пазіцыю."
 
 msgid "acceleration/name"
 msgstr "Паскарэнне"
@@ -24,6 +24,45 @@ msgstr ""
 msgid "black_hole/name"
 msgstr "Чорная дзірка"
 
+msgid "cosmic/ability/tooltip/acceleration/descr"
+msgstr ""
+"Паскарае вашу машыну на %(time)s секунды, што дазваляе мацней тараніць "
+"марсаходы і выходзіць са складаных сітуацый."
+
+msgid "cosmic/ability/tooltip/acceleration/name"
+msgstr "ПАСКАРЭННЕ"
+
+msgid "cosmic/ability/tooltip/shell/descr"
+msgstr ""
+"Снарад, які выбухае пры траплянні ў марсаход, адкідваючы яго ўдарнай хваляй."
+
+msgid "cosmic/ability/tooltip/shell/name"
+msgstr "ІМПУЛЬС"
+
+msgid "cosmic/ability/tooltip/shield/descr"
+msgstr ""
+"На наступныя %(time)s секунды фіксуе вашу машыну на месцы, абараняючы яе ад "
+"тарана і ўздзеяння імпульсаў."
+
+msgid "cosmic/ability/tooltip/shield/name"
+msgstr "ЯКАРНЫ ШЧЫТ"
+
+msgid "cosmic/ability/tooltip/stun_shot/descr"
+msgstr ""
+"Пры траплянні ў марсаход зніжае яго баявыя характарыстыкі на %(time)s "
+"секундаў."
+
+msgid "cosmic/ability/tooltip/stun_shot/name"
+msgstr "АГЛУШЭННЕ"
+
+msgid "cosmic/ability/tooltip/wave/descr"
+msgstr ""
+"Адкідвае ў бакі марсаходы, якія знаходзяцца побач з вашай машынай. Дзейнічае"
+" адзін раз."
+
+msgid "cosmic/ability/tooltip/wave/name"
+msgstr "ХВАЛЯ"
+
 msgid "overcharge/descr"
 msgstr ""
 "Стварае магутнае энергетычнае поле, якое абараняе ваш марсаход і "
@@ -34,30 +73,43 @@ msgstr "Бар'ер"
 
 msgid "power_shot/descr"
 msgstr ""
-"Страляе звышмагутным снарадам. Асабліва эфектыўны пры траплянні не ў сам "
-"марсаход, а побач з ім."
+"Страляе звышмагутным снарадам. Асабліва эфектыўны пры траплянні ў скопішча "
+"машын."
 
 msgid "power_shot/name"
 msgstr "Плазменны прамень"
 
 msgid "rapid_shelling/descr"
 msgstr ""
-"Выконвае некалькі магутных стрэлаў запар. Выдатна надаецца для спіхвання "
-"марсаходаў у азёры або за межы Зоны даследавання."
+"Робіць некалькі магутных стрэлаў запар. Выдатна надаецца для скідвання "
+"марсаходаў у азёры або за межы Зоны сутыкнення."
 
 msgid "rapid_shelling/name"
 msgstr "Залп"
 
 msgid "shell/descr"
 msgstr ""
-"Выконвае стрэл снарадам, які выбухае пры траплянні, адкідваючы праціўніка."
+"Снарад, які выбухае пры траплянні ў марсаход, адкідваючы яго ўдарнай хваляй."
 
 msgid "shell/name"
 msgstr "Імпульс"
 
 msgid "shield/descr"
 msgstr ""
-"Фіксуе ваш марсаход на месцы, абараняючы яго ад атак і тарана праціўніка."
+"Фіксуе ваш марсаход на месцы, абараняючы яго ад тарана або трапляння "
+"імпульсам."
 
 msgid "shield/name"
 msgstr "Якарны шчыт"
+
+msgid "stun_shot/descr"
+msgstr "Пры траплянні ў марсаход часова зніжае яго баявыя хахакратыстыкі."
+
+msgid "stun_shot/name"
+msgstr "Аглушэнне"
+
+msgid "wave/descr"
+msgstr "Адкідвае ў бакі марсаходы, якія знаходзяцца побач з вашай машынай."
+
+msgid "wave/name"
+msgstr "Хваля"

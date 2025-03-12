@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.655504 -0.000001 -3.608364</min>
+		<max>1.655504 1.359574 3.654311</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un05_Shot_Kal_Alef/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un05_Shot_Kal_Alef/normal/lod0/Chassis</nodefullVisual>
+</root>

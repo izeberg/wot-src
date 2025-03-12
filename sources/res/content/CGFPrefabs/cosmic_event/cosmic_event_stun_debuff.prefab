@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>cosmic_event_stun_debuff</name>
+			<UUID>09482164-62e4-44bd-b36f-300a49b6a7b5</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Shells_Eff/cosm_stun_debuff.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>ev_cosmic_ability_stun_debuff</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ev_cosmic_ability_stun_debuff</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

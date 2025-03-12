@@ -1405,10 +1405,6 @@ package
       
       public static const HEADER_PREMSHOP_BODY:String = "#tooltips:header/premShop/body";
       
-      public static const HEADER_BOBSQUAD_HEADER:String = "#tooltips:header/bobSquad/header";
-      
-      public static const HEADER_BOBSQUAD_BODY:String = "#tooltips:header/bobSquad/body";
-      
       public static const HEADER_BATTLETYPE_HEADER:String = "#tooltips:header/battleType/header";
       
       public static const HEADER_BATTLETYPE_BODY:String = "#tooltips:header/battleType/body";
@@ -2378,8 +2374,6 @@ package
       public static const VEHICLE_TRADE:String = "#tooltips:vehicle/trade";
       
       public static const VEHICLE_DEAL_EPIC_MAIN:String = "#tooltips:vehicle/deal/epic/main";
-      
-      public static const VEHICLE_DEAL_BOB_MAIN:String = "#tooltips:vehicle/deal/bob/main";
       
       public static const ANONYMIZER_TEAMSTATS_HEADER:String = "#tooltips:anonymizer/teamStats/header";
       
@@ -4909,8 +4903,6 @@ package
       
       public static const QUESTS_UNAVAILABLE_TOKEN:String = "#tooltips:quests/unavailable/token";
       
-      public static const QUESTS_UNAVAILABLE_BOBREGISTRATION:String = "#tooltips:quests/unavailable/bobRegistration";
-      
       public static const QUESTS_UNAVAILABLE_BOTTOM:String = "#tooltips:quests/unavailable/bottom";
       
       public static const QUESTS_UNAVAILABLE_TIME_STATUSTOOLTIP:String = "#tooltips:quests/unavailable/time/statusTooltip";
@@ -5073,6 +5065,8 @@ package
       
       public static const ADVANCED_VEHICLETURRET:String = "#tooltips:advanced/vehicleTurret";
       
+      public static const ADVANCED_VEHICLETHERMALVISION:String = "#tooltips:advanced/vehicleThermalVision";
+      
       public static const ADVANCED_COMMANDER:String = "#tooltips:advanced/commander";
       
       public static const ADVANCED_DRIVER:String = "#tooltips:advanced/driver";
@@ -5162,6 +5156,10 @@ package
       public static const ADVANCED_IMPROVEDCONFIGURATION:String = "#tooltips:advanced/improvedConfiguration";
       
       public static const ADVANCED_TURBOCHARGER:String = "#tooltips:advanced/turbocharger";
+      
+      public static const ADVANCED_MODERNIZEDDAMAGEVENTILATION:String = "#tooltips:advanced/modernizedDamageVentilation";
+      
+      public static const ADVANCED_MODERNIZEDTANKRAMMERSIGHTS:String = "#tooltips:advanced/modernizedTankRammerSights";
       
       public static const CREW_ROLE_COMMANDER:String = "#tooltips:crew/role/commander";
       
@@ -7846,6 +7844,34 @@ package
       public static const NOTRECRUITEDTANKMAN_NY25_SHARIK_LABEL:String = "#tooltips:notrecruitedtankman/ny25_sharik/label";
       
       public static const NOTRECRUITEDTANKMAN_NY25_SHARIK_DESC:String = "#tooltips:notrecruitedtankman/ny25_sharik/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_COSM25_1_DESC:String = "#tooltips:notrecruitedtankman/cosm25_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_COSM25_1_LABEL:String = "#tooltips:notrecruitedtankman/cosm25_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_COSM25_2_DESC:String = "#tooltips:notrecruitedtankman/cosm25_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_COSM25_2_LABEL:String = "#tooltips:notrecruitedtankman/cosm25_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP16_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP16_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP16_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP16_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP16_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP16_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP16_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP16_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP16_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP16_5/label";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

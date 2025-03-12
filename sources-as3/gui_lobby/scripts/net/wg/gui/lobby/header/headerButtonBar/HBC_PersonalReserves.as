@@ -86,6 +86,7 @@ package net.wg.gui.lobby.header.headerButtonBar
             bounds.width = _loc1_;
             this.personalReservesWidgetInject.setSize(_loc1_,bounds.height);
          }
+         this.updateSize();
          super.updateData();
       }
       

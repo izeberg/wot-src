@@ -11,15 +11,21 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
    public class ThermalVisionMinimapEntry extends BattleUIComponent
    {
       
-      private static const DISTANCE_SCALE_KOEF:Number = 0.34;
-      
       private static const LINE_STYLE_THICKNESS:Number = 0.5;
       
       private static const SECTOR_COLOR:uint = 8378677;
       
       private static const SECTOR_COLOR_DISABLED:uint = 9013641;
       
-      private static const SECTOR_FILL_ALPHA:Number = 0.5;
+      private static const SECTOR_FILL_ALPHA:Number = 0.25;
+      
+      private static const SECTOR_FILL_ALPHA_DISABLED:Number = 0.4;
+      
+      private static const SECTOR_FILL_ALPHA_GRADIENT:Number = 0.1;
+      
+      private static const SECTOR_EDGE_ALPHA:Number = 0.2;
+      
+      private static const SECTOR_EDGE_ALPHA_DISABLED:Number = 0.3;
       
       private static const DEGREE_360:int = 360;
       
@@ -29,7 +35,7 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
       
       private static const DIVISIONS_PER_RADIAN:uint = 8;
       
-      private static const DEFAULT_MAP_SIZE:int = 620;
+      private static const DEFAULT_MAP_SIZE:int = 210;
        
       
       private var _isEnabled:Boolean = false;
@@ -57,7 +63,7 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
          var _loc6_:String = GradientType.RADIAL;
          var _loc7_:String = SpreadMethod.PAD;
          var _loc8_:Array = [param4,param4,param4];
-         var _loc9_:Array = [param5,param5,0];
+         var _loc9_:Array = [param5,param5,Math.max(param5 - SECTOR_FILL_ALPHA_GRADIENT,0)];
          var _loc10_:Array = [0,220,255];
          var _loc11_:Matrix = new Matrix();
          var _loc12_:int = param2 * 2;
@@ -79,17 +85,17 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
          param1.endFill();
       }
       
-      private static function drawSectorEdge(param1:Graphics, param2:Number, param3:Number, param4:uint) : void
+      private static function drawSectorEdge(param1:Graphics, param2:Number, param3:Number, param4:uint, param5:Number) : void
       {
-         var _loc5_:String = GradientType.LINEAR;
-         var _loc6_:String = SpreadMethod.PAD;
-         var _loc7_:Array = [param4,param4,param4];
-         var _loc8_:Array = [1,1,0];
-         var _loc9_:Array = [0,140,255];
-         var _loc10_:Matrix = new Matrix();
-         _loc10_.createGradientBox(param2,param3,0,0,0);
+         var _loc6_:String = GradientType.LINEAR;
+         var _loc7_:String = SpreadMethod.PAD;
+         var _loc8_:Array = [param4,param4,param4];
+         var _loc9_:Array = [1,1,param5];
+         var _loc10_:Array = [0,140,255];
+         var _loc11_:Matrix = new Matrix();
+         _loc11_.createGradientBox(param2,param3,0,0,0);
          param1.clear();
-         param1.beginGradientFill(_loc5_,_loc7_,_loc8_,_loc9_,_loc10_,_loc6_);
+         param1.beginGradientFill(_loc6_,_loc8_,_loc9_,_loc10_,_loc11_,_loc7_);
          param1.drawRect(0,0,param2,param3);
          param1.endFill();
       }
@@ -118,21 +124,25 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
          var _loc1_:int = 0;
          var _loc2_:Number = NaN;
          var _loc3_:uint = 0;
+         var _loc4_:Number = NaN;
+         var _loc5_:Number = NaN;
          super.draw();
          if(isInvalid(InvalidationType.DATA) || isInvalid(InvalidationType.STATE))
          {
-            _loc1_ = this._distance * DISTANCE_SCALE_KOEF * this._mapSizeKoef | 0;
+            _loc1_ = this._distance * this._mapSizeKoef | 0;
             _loc2_ = this._fov * 0.5;
             _loc3_ = !!this._isEnabled ? uint(SECTOR_COLOR) : uint(SECTOR_COLOR_DISABLED);
-            drawSectorFill(this._fill.graphics,_loc1_,this._fov,_loc3_,SECTOR_FILL_ALPHA);
+            _loc4_ = !!this._isEnabled ? Number(SECTOR_FILL_ALPHA) : Number(SECTOR_FILL_ALPHA_DISABLED);
+            drawSectorFill(this._fill.graphics,_loc1_,this._fov,_loc3_,_loc4_);
             this._fill.rotation = -_loc2_;
             this._leftEdge.graphics.clear();
             this._rightEdge.graphics.clear();
             if(Math.abs(this._fov) < DEGREE_360)
             {
-               drawSectorEdge(this._leftEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc3_);
+               _loc5_ = !!this._isEnabled ? Number(SECTOR_EDGE_ALPHA) : Number(SECTOR_EDGE_ALPHA_DISABLED);
+               drawSectorEdge(this._leftEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc3_,_loc5_);
                this._leftEdge.rotation = -_loc2_ - ROTATION_90;
-               drawSectorEdge(this._rightEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc3_);
+               drawSectorEdge(this._rightEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc3_,_loc5_);
                this._rightEdge.rotation = _loc2_ - ROTATION_90;
             }
          }

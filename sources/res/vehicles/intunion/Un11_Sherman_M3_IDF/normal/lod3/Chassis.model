@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un11_Sherman_M3_IDF/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.280927 0.024298 -3.121459</min>
+		<max>1.280927 1.121453 2.879246</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un11_Sherman_M3_IDF/normal/lod3/Chassis</nodefullVisual>
+</root>

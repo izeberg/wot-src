@@ -148,7 +148,7 @@ msgid "chat_example/negative"
 msgstr "Никак нет!"
 
 msgid "chat_example/overheat_cant_shoot"
-msgstr "Орудие перегрето! Не могу стрелять еще <Время остывания> с."
+msgstr "Орудие перегрето! Не могу стрелять еще <Время охлаждения> с."
 
 msgid "chat_example/positive"
 msgstr "Так точно!"
@@ -1020,6 +1020,18 @@ msgstr "Все устройства в отличном состоянии, ре
 
 msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s] в отличном состоянии, ремонт не требуется."
+
+msgid "player_errors/thermalVision/alreadyActivated"
+msgstr "Пирометр уже активирован."
+
+msgid "player_errors/thermalVision/cooldown"
+msgstr "Пирометр недоступен: прибор на перезарядке."
+
+msgid "player_errors/thermalVision/disabled"
+msgstr "Пирометр недоступен."
+
+msgid "player_errors/thermalVision/overturned"
+msgstr "Пирометр недоступен: танк перевёрнут."
 
 msgid "player_messages/ALLY_HIT"
 msgstr "Попадание в союзника %(entity)s!"

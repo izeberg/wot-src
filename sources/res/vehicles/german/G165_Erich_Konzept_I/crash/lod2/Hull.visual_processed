@@ -74,18 +74,6 @@
 				<material>
 					<identifier>tank_mat_inside</identifier>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
@@ -111,6 +99,10 @@
 					<property>
 						g_useNormalPackDXT1
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000187 0.108646 -0.092424</groupOrigin>
@@ -145,14 +137,6 @@
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000208 0.087694 -0.097125</groupOrigin>
@@ -195,10 +179,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000364 -0.365994 -0.022574</groupOrigin>

@@ -42,6 +42,10 @@
 						normalMap
 						<Texture>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst/VNII_100LT_guns_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/R132_VNII_100LT/VNII_100LT_guns_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.133316 0.033540 0.692165</groupOrigin>
 			</primitiveGroup>

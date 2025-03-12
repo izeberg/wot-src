@@ -383,13 +383,19 @@ msgid "battlePassVehicleAwardView/button"
 msgstr "Так!"
 
 msgid "battlePassVehicleAwardView/content/description"
-msgstr "ДАСЯГНУТЫ ЛІМІТ АЧКОЎ"
+msgstr "УЗНАГАРОДА ЗА ДАСЯГНЕННЕ ЛІМІТУ АЧКОЎ"
+
+msgid "battlePassVehicleAwardView/content/pointsSeparator"
+msgstr "%(currentPoints)s / %(maxPoints)s"
 
 msgid "battlePassVehicleAwardView/content/postTitle"
 msgstr "БАЯВЫ ПРОПУСК. ЭЛІТНАЯ ЧАСТКА"
 
 msgid "battlePassVehicleAwardView/content/subTitle"
-msgstr "У якасці ўзнагароды вы атрымалі:"
+msgstr "Атрыманы бонусныя ачкі"
+
+msgid "battlePassVehicleAwardView/content/timer"
+msgstr "Ліміт будзе абнулены, а назапашванне пачнецца нанова праз: %(timer)s"
 
 msgid "battlePassVehicleAwardView/content/title"
 msgstr "БАЯВЫ ПРОПУСК"
@@ -397,8 +403,20 @@ msgstr "БАЯВЫ ПРОПУСК"
 msgid "battlepassTab"
 msgstr "Баявы пропуск"
 
+msgid "button/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "chapter/activateChapter"
+msgstr "Актываваць раздзел"
+
+msgid "chapter/currentStep/active"
+msgstr "Бягучы этап"
+
+msgid "chapter/currentStep/colon"
+msgstr "Бягучы этап:"
+
 msgid "chapter/fullName/1"
-msgstr "Зноў у туман"
+msgstr "Сіла духу"
 
 msgid "chapter/fullName/145"
 msgstr "Чырвоная Фурыя"
@@ -415,14 +433,26 @@ msgstr "Сілавое поле"
 msgid "chapter/fullName/154"
 msgstr "Сумленная праца"
 
+msgid "chapter/fullName/161"
+msgstr "Сіла духу"
+
+msgid "chapter/fullName/162"
+msgstr "Усходні вецер"
+
+msgid "chapter/fullName/163"
+msgstr "Узвіся, сцяг!"
+
+msgid "chapter/fullName/164"
+msgstr "Пераможны марш"
+
 msgid "chapter/fullName/2"
-msgstr "Праца для герояў"
+msgstr "Усходні вецер"
 
 msgid "chapter/fullName/3"
-msgstr "Палярнае світанне"
+msgstr "Узвіся, сцяг!"
 
 msgid "chapter/fullName/4"
-msgstr "Новы раздзел"
+msgstr "Пераможны марш"
 
 msgid "chapter/fullName/quoted/145"
 msgstr "Чырвоная Фурыя"
@@ -439,6 +469,18 @@ msgstr "Сілавое поле"
 msgid "chapter/fullName/quoted/154"
 msgstr "Сумленная праца"
 
+msgid "chapter/fullName/quoted/161"
+msgstr "Сіла духу"
+
+msgid "chapter/fullName/quoted/162"
+msgstr "Усходні вецер"
+
+msgid "chapter/fullName/quoted/163"
+msgstr "Узвіся, сцяг!"
+
+msgid "chapter/fullName/quoted/164"
+msgstr "Пераможны марш"
+
 msgid "chapter/fullNameUppercased/145"
 msgstr "ЧЫРВОНАЯ ФУРЫЯ"
 
@@ -454,6 +496,18 @@ msgstr "СІЛАВОЕ ПОЛЕ"
 msgid "chapter/fullNameUppercased/154"
 msgstr "СУМЛЕННАЯ ПРАЦА"
 
+msgid "chapter/fullNameUppercased/161"
+msgstr "СІЛА ДУХУ"
+
+msgid "chapter/fullNameUppercased/162"
+msgstr "УСХОДНІ ВЕЦЕР"
+
+msgid "chapter/fullNameUppercased/163"
+msgstr "УЗВІСЯ, СЦЯГ!"
+
+msgid "chapter/fullNameUppercased/164"
+msgstr "ПЕРАМОЖНЫ МАРШ"
+
 msgid "chapter/fullNameUppercased/quoted/145"
 msgstr "ЧЫРВОНАЯ ФУРЫЯ"
 
@@ -468,6 +522,18 @@ msgstr "СІЛАВОЕ ПОЛЕ"
 
 msgid "chapter/fullNameUppercased/quoted/154"
 msgstr "СУМЛЕННАЯ ПРАЦА"
+
+msgid "chapter/fullNameUppercased/quoted/161"
+msgstr "СІЛА ДУХУ"
+
+msgid "chapter/fullNameUppercased/quoted/162"
+msgstr "УСХОДНІ ВЕЦЕР"
+
+msgid "chapter/fullNameUppercased/quoted/163"
+msgstr "УЗВІСЯ, СЦЯГ!"
+
+msgid "chapter/fullNameUppercased/quoted/164"
+msgstr "ПЕРАМОЖНЫ МАРШ"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -494,30 +560,36 @@ msgstr ""
 msgid "chapterChoice/chapterCompleted"
 msgstr "Раздзел пройдзены"
 
+msgid "chapterChoice/chapterDisabled"
+msgstr "Раздзел недаступны"
+
+msgid "chapterChoice/chapterInactive"
+msgstr "Раздзел неактыўны"
+
+msgid "chapterChoice/chapterPaused"
+msgstr "Раздзел на паўзе"
+
 msgid "chapterChoice/completed"
 msgstr "Пройдзена"
 
 msgid "chapterChoice/confirmation/button/cancel"
 msgstr "Скасаваць"
 
-msgid "chapterChoice/confirmation/button/submit"
-msgstr "Актываваць"
-
 msgid "chapterChoice/confirmation/button/switch"
 msgstr "Пераключыцца"
-
-msgid "chapterChoice/confirmation/description/select"
-msgstr "Пераключыцца на іншыя раздзелы можна будзе ў любы момант."
 
 msgid "chapterChoice/confirmation/description/switch"
 msgstr ""
 "У вас ужо актываваны раздзел «%(chName)s», ён будзе пастаўлены на паўзу."
 
-msgid "chapterChoice/confirmation/title/select"
-msgstr "Актываваць раздзел «%(chName)s»?"
-
 msgid "chapterChoice/confirmation/title/switch"
 msgstr "Пераключыцца на раздзел «%(chName)s»?"
+
+msgid "chapterChoice/description/hasActive"
+msgstr "Адначасова можа быць актыўны адзін раздзел"
+
+msgid "chapterChoice/description/noActiveHasMarathon"
+msgstr "Выберыце і актывуйце раздзел для прасоўвання па прагрэсіі"
 
 msgid "chapterChoice/description/style"
 msgstr "Усе 3D-стылі прывязаны да пэўных раздзелаў."
@@ -529,7 +601,7 @@ msgid "chapterChoice/extraChapter/reward"
 msgstr "Прэміум тэхніка"
 
 msgid "chapterChoice/freePoints/description"
-msgstr "Неразмеркаваныя ачкі Баявога пропуска: "
+msgstr "Назапашана неразмеркаваных ачкоў Баявога пропуска: "
 
 msgid "chapterChoice/freePoints/tooltip/description"
 msgstr ""
@@ -558,8 +630,11 @@ msgstr "Перадпрагляд"
 msgid "chapterChoice/stylePreview/name"
 msgstr "Стыль «%(styleName)s»"
 
+msgid "chapterChoice/tankman/title"
+msgstr "Член экіпажа"
+
 msgid "chapterChoice/title"
-msgstr "ВЫБЕРЫЦЕ РАЗДЗЕЛ"
+msgstr "АКТЫВУЙЦЕ РАЗДЗЕЛ"
 
 msgid "chapterChoice/tooltip/disabledChapter/body"
 msgstr ""
@@ -568,6 +643,12 @@ msgstr ""
 
 msgid "chapterChoice/tooltip/disabledChapter/header"
 msgstr "Раздзел недаступны"
+
+msgid "chapterChoice/triggerHint/noActiveHasMarathon"
+msgstr ""
+"АКТЫВУЙЦЕ РАЗДЗЕЛ\n"
+"І АТРЫМАЙЦЕ ЎЗНАГАРОДУ\n"
+"ЗА ПРОЙДЗЕНЫЯ ЭТАПЫ"
 
 msgid "chosenBonuses/bonus/blueprint_gift"
 msgstr "Нацыянальныя фрагменты чарцяжоў на выбар"
@@ -601,21 +682,6 @@ msgstr "x%(multiplier)s"
 
 msgid "commonProgression/body/ended"
 msgstr "Сезон Баявога пропуска скончаны"
-
-msgid "dailyQuests/button"
-msgstr "Так!"
-
-msgid "dailyQuests/description"
-msgstr ""
-"Падчас дзеяння Баявога пропуска ва ўзнагароды за выкананне кожнай штодзённай"
-" задачы, у тым ліку бонуснай і фінальнай (за ланцужок з 45 задач), будуць "
-"дададзены ачкі Баявога пропуска."
-
-msgid "dailyQuests/descriptionAccent"
-msgstr "Ачкі Баявога пропуска"
-
-msgid "dailyQuests/title"
-msgstr "Ачкі Баявога пропуска за штодзённыя задачы"
 
 msgid "extraIntroView/confirmLabel"
 msgstr "Так!"
@@ -666,6 +732,12 @@ msgstr "радыст"
 msgid "howToEarnPoints/battleTypeTitle/1"
 msgstr "Выпадковы бой"
 
+msgid "howToEarnPoints/battleTypeTitle/20"
+msgstr "Умацаваны раён. Вылазкі"
+
+msgid "howToEarnPoints/battleTypeTitle/21"
+msgstr "Умацаваны раён. Наступленні"
+
 msgid "howToEarnPoints/battleTypeTitle/22"
 msgstr "Рангавы бой"
 
@@ -677,6 +749,9 @@ msgstr "Сталёвы паляўнічы"
 
 msgid "howToEarnPoints/battleTypeTitle/43"
 msgstr "Націск"
+
+msgid "howToEarnPoints/battleTypeTitle/50"
+msgstr "Палігон"
 
 msgid "howToEarnPoints/bonus"
 msgstr "+%(bonus)s"
@@ -718,14 +793,16 @@ msgstr "Узнагарода за ўзроўні фронту"
 
 msgid "howToEarnPoints/card/limitPoints/text"
 msgstr ""
-"Пасля дасягнення ліміту ачкоў на машыне вы аднаразова атрымаеце ва "
+"Пасля дасягнення ліміту ачкоў на тэхніцы вы будзеце атрымліваць ва "
 "ўзнагароду дадатковыя ачкі."
 
 msgid "howToEarnPoints/card/limitPoints/title"
 msgstr "Узнагарода за ліміт ачкоў"
 
 msgid "howToEarnPoints/card/specialVehicle/text"
-msgstr "На ключавой тэхніцы сезона вы здабываеце дадатковыя ачкі."
+msgstr ""
+"Пры штотыднёвым дасягненні ліміту ачкоў на ключавой тэхніцы вы будзеце "
+"атрымліваць больш бонусных ачкоў: %(textBind)s"
 
 msgid "howToEarnPoints/card/specialVehicle/title"
 msgstr "Ключавая тэхніка сезона"
@@ -735,24 +812,39 @@ msgstr ""
 "Ачкі Баявога пропуска патрэбны для паслядоўнага праходжання этапаў. Іх можна"
 " заслужыць у Выпадковых баях і большасці іншых рэжымаў, якія актыўныя падчас"
 " Баявога пропуска, за выкананне баявых і штодзённых задач, а таксама "
-"аднаразова за дасягненне ліміту ачкоў на канкрэтнай машыне."
+"аднаразова за дасягненне штотыднёвага ліміту ачкоў на канкрэтнай машыне."
 
 msgid "howToEarnPoints/lose/1"
-msgstr "Паражэнне/нічыя"
+msgstr "Паражэнне / нічыя"
+
+msgid "howToEarnPoints/lose/20"
+msgstr "Паражэнне"
+
+msgid "howToEarnPoints/lose/21"
+msgstr "Паражэнне / нічыя"
 
 msgid "howToEarnPoints/lose/22"
-msgstr "Паражэнне/нічыя"
+msgstr "Паражэнне / нічыя"
 
 msgid "howToEarnPoints/lose/27"
 msgstr "Паражэнне"
 
 msgid "howToEarnPoints/lose/43"
+msgstr "Паражэнне / нічыя"
+
+msgid "howToEarnPoints/lose/50"
 msgstr "Паражэнне"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Месца %(startLevel)d–%(endLevel)d"
 
 msgid "howToEarnPoints/rating/1"
+msgstr "Топ-%(level)d паводле досведу"
+
+msgid "howToEarnPoints/rating/20"
+msgstr "Топ-%(level)d паводле досведу"
+
+msgid "howToEarnPoints/rating/21"
 msgstr "Топ-%(level)d паводле досведу"
 
 msgid "howToEarnPoints/rating/22"
@@ -767,6 +859,9 @@ msgstr "Топ-%(level)d паводле досведу"
 msgid "howToEarnPoints/rating/43"
 msgstr "Топ-%(level)d паводле ачкоў прэстыжу"
 
+msgid "howToEarnPoints/rating/50"
+msgstr "Топ-%(level)d паводле досведу"
+
 msgid "howToEarnPoints/singleLevel/29"
 msgstr "Месца %(level)d"
 
@@ -778,6 +873,12 @@ msgstr "Гульня звязам"
 
 msgid "howToEarnPoints/text/1"
 msgstr "Гуляйце на тэхніцы %(startLevel)s–%(endLevel)s узроўняў"
+
+msgid "howToEarnPoints/text/20"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
+
+msgid "howToEarnPoints/text/21"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
 msgid "howToEarnPoints/text/22"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)"
@@ -791,10 +892,19 @@ msgstr "Гуляйце на адмысловай тэхніцы рэжыму"
 msgid "howToEarnPoints/text/43"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
+msgid "howToEarnPoints/text/50"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
+
 msgid "howToEarnPoints/title"
 msgstr "ЯК ЗДАБЫЦЬ АЧКІ"
 
 msgid "howToEarnPoints/win/1"
+msgstr "Перамога"
+
+msgid "howToEarnPoints/win/20"
+msgstr "Перамога"
+
+msgid "howToEarnPoints/win/21"
 msgstr "Перамога"
 
 msgid "howToEarnPoints/win/22"
@@ -806,32 +916,50 @@ msgstr "Перамога"
 msgid "howToEarnPoints/win/43"
 msgstr "Перамога"
 
+msgid "howToEarnPoints/win/50"
+msgstr "Перамога"
+
 msgid "intro/aboutButton"
 msgstr "ПРА БАЯВЫ ПРОПУСК"
+
+msgid "intro/bonus/text"
+msgstr ""
+"Пры дасягненні ліміту ачкоў на тэхніцы вам будуць налічаны ва ўзнагароду "
+"бонусныя ачкі. Узнагарода будзе даступная кожны тыдзень пасля абнаўлення "
+"ліміту. Больш інфармацыі можна знайсці ва ўкладцы «Як здабыць ачкі»."
+
+msgid "intro/bonus/title"
+msgstr "Бонус за дасягненне ліміту"
 
 msgid "intro/button"
 msgstr "Так!"
 
-msgid "intro/seasonDescription/text"
+msgid "intro/limit/text"
 msgstr ""
-"Вітаем у НПК «Вулкан»! Тут сышліся самыя перадавыя тэхналогіі, прафесійны "
-"штат супрацоўнікаў і цяжкая заслона таямніцы, якая хавае да пары да часу "
-"істотную частку распрацовак. Хто ведае, можа быць цяперашняя прадукцыя НВК —"
-" частка чагосьці большага? Час пакажа... І чакаць давядзецца зусім нядоўга."
+"На ўсёй тэхніцы VI-XI узроўняў усталёўваюцца аднолькавыя ліміты ачкоў "
+"Баявога пропуску. Ліміт абнаўляецца штотыдзень. Пры дасягненні ўсталяванага "
+"ліміту на наступным тыдні будзе ўсталяваны больш высокі ліміт."
 
-msgid "intro/seasonDescription/title"
-msgstr "ТЭМАТЫЧНЫ СЕЗОН"
+msgid "intro/limit/title"
+msgstr "Штотыднёвыя ліміты ачкоў"
 
-msgid "intro/styles/text"
+msgid "intro/subTitle"
 msgstr ""
-"У гэтым сезоне Баявога пропуска прадстаўлены тры стылі для ключавой тэхнікі:"
-" Pz.Kpfw. VII, Type 71 і Аб'ект 430У"
-
-msgid "intro/styles/title"
-msgstr "НОВЫЯ СТЫЛІ"
+"Сезон прысвечаны 80-годдзю Перамогі ў Вялікай Айчыннай вайне. Вас чакаюць "
+"тэматычныя члены экіпажа, стылі і памятныя ўзнагароды, прымеркаваныя да "
+"гэтай знамянальнай падзеі."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: ПАД НАПРУЖАННЕМ"
+msgstr "БАЯВЫ ПРОПУСК: ШЛЯХ ДА ПЕРАМОГІ"
+
+msgid "intro/vehicles/text"
+msgstr ""
+"У гэтым сезоне прадстаўлена новая ключавая тэхніка:т ІС-7, Аб. 268, Т-100 "
+"ЛТ. Гуляючы на гэтай тэхніцы вы зможаце здабыць больш бонусных ачкоў за "
+"дасягненне штодзённага ліміту ачкоў."
+
+msgid "intro/vehicles/title"
+msgstr "Новая ключавая тэхніка"
 
 msgid "offSeason/alertTooltip"
 msgstr "Вынікі галасавання часова недаступныя. Паспрабуйце зайсці пазней."
@@ -842,12 +970,12 @@ msgstr "ЗАВЕРШАНЫ"
 msgid "offSeason/footerLose"
 msgstr ""
 "Пасля заканчэння бягучага сезона Баявога пропуска вам налічана шматразовая баявая задача на\n"
-"падвоены досвед экіпажа для тэхнікі IV–X узроўняў."
+"падвоены досвед экіпажа для тэхнікі IV–XІ узроўняў."
 
 msgid "offSeason/footerWin"
 msgstr ""
 "Пасля заканчэння бягучага сезона Баявога пропуска вам налічана шматразовая баявая задача на\n"
-"падвоены баявы досвед для тэхнікі IV–X узроўняў."
+"падвоены баявы досвед для тэхнікі IV–XІ узроўняў."
 
 msgid "offSeason/levelReached"
 msgstr ""
@@ -926,8 +1054,7 @@ msgstr ""
 "раздзела."
 
 msgid "progression/battlePassDisabled"
-msgstr ""
-"Прайдзіце тры асноўныя раздзелы, каб адкрыць доступ да бягучага раздзела."
+msgstr "Прайдзіце тры асноўныя раздзелы, каб адкрыць доступ да дадатковага."
 
 msgid "progression/battlePassNextChapterBuyDescr"
 msgstr ""
@@ -965,6 +1092,16 @@ msgid "progression/btnRewardsUnavailable"
 msgstr ""
 "Часова недаступна з тэхнічных прычын. Мы ўжо займаемся вырашэннем праблемы."
 
+msgid "progression/btnTasks"
+msgstr "Да задач"
+
+msgid "progression/btnTasksTooltip/body"
+msgstr ""
+"Вы можаце здабыць ачкі Баявога пропуска за выкананне штодзённых задач."
+
+msgid "progression/btnTasksTooltip/header"
+msgstr "Перайсці да штодзённым задах"
+
 msgid "progression/btnTokensStore"
 msgstr ""
 "ТАВАРЫ\n"
@@ -986,6 +1123,19 @@ msgstr "ПАЛЕПШАНАЯ ЎЗНАГАРОДА"
 
 msgid "progression/episodeBuyBtn"
 msgstr "Дакупіць этапы"
+
+msgid "progression/episodeBuyBtnTooltipActive"
+msgstr ""
+"Дакупіўшы этапы, вы імкгненна атрымаеце за іх базавыя і палепшаныя ўзнагароды гэтага раздзела. Этапы купляюцца асобна для кожнага раздзела.\n"
+"Кошт аднаго этапу: 250 %(goldIcon)"
+
+msgid "progression/episodeBuyBtnTooltipDisabled"
+msgstr "Для куплі дадатковых этапаў неабходна актываваць бягучы раздзел."
+
+msgid "progression/episodeBuyBtnTooltipInactive"
+msgstr ""
+"Вы зможаце дакупіць этапы і атрымаць узнагароды за іх толькі пры наяўнасці Палепшанага пропуска для бягучага раздзела.\n"
+"Кошт аднаго этапу: 250 %(goldIcon)"
 
 msgid "progression/episodeBuyDescr"
 msgstr "Вы атрымаеце ўзнагароды за кожны куплены этап."
@@ -1043,11 +1193,47 @@ msgstr "Раздзел «%(chapterName)s»"
 msgid "progression/header/disabled"
 msgstr "недаступны"
 
+msgid "progression/header/endDays"
+msgstr "Да заканчэння:"
+
+msgid "progression/header/hiddenBattleTypes"
+msgstr "..."
+
 msgid "progression/header/inactive"
 msgstr "неактыўны"
 
 msgid "progression/header/paused"
 msgstr "на паўзе"
+
+msgid "progression/header/title/active"
+msgstr "РАЗДЗЕЛ АКТЫЎНЫ"
+
+msgid "progression/header/title/completed"
+msgstr "РАЗДЗЕЛ ПРОЙДЗЕНЫ"
+
+msgid "progression/header/title/disabled"
+msgstr "РАЗДЗЕЛ НЕДАСТУПНЫ"
+
+msgid "progression/header/title/notStarted"
+msgstr "РАЗДЗЕЛ НЕАКТЫЎНЫ"
+
+msgid "progression/header/title/paused"
+msgstr "РАЗДЗЕЛ НА ПАЎЗЕ"
+
+msgid "progression/header/tooltip/btnTasks/description"
+msgstr ""
+"Вы можаце здабыць ачкі Баявога пропуска за выкананне штодзённых задач."
+
+msgid "progression/header/tooltip/btnTasks/title"
+msgstr "Перайсці да штодзённым задах"
+
+msgid "progression/header/tooltip/tasksMode/description"
+msgstr ""
+"Заробак ачкоў Баявога пропуска даступны на тэхніцы %(vehicleLevelFrom) - "
+"%(vehicleLevelTo) узроўню ў рэжымах:"
+
+msgid "progression/header/tooltip/tasksMode/title"
+msgstr "Умовы атрымання ачкоў"
 
 msgid "progression/pausedStep"
 msgstr "Этап"
@@ -1206,16 +1392,16 @@ msgid "selectBonus/trophy_gift"
 msgstr "Трафейнае абсталяванне на выбар"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s сут."
 
 msgid "status/timeLeft/hours"
-msgstr "%(hour)s гадз"
+msgstr "%(hour)s гадз."
 
 msgid "status/timeLeft/lessMin"
-msgstr "1 хв"
+msgstr "1 хв."
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s хв."
 
 msgid "styleProgressBonus"
 msgstr "Паляпшэнне стылю «%(styleName)s» да %(level)s-га ўзроўню"
@@ -1448,15 +1634,20 @@ msgstr "Правілы налічэння ачкоў у рэжыме «Наці�
 
 msgid "tooltips/inProgress/playGame/mapbox"
 msgstr ""
-"Правілы налічэння ачкоў у рэжыме «Разведка боем» на тэхніцы VIII–Х узроўню."
+"Правілы налічэння ачкоў у рэжыме «Разведка боем» на тэхніцы VIII–ХІ узроўню."
 
 msgid "tooltips/inProgress/playGame/randoms"
 msgstr ""
 "Правілы налічэння ачкоў у Выпадковых баях (за выключэннем Генеральнай бітвы)"
-" на тэхніцы VI–X узроўняў."
+" на тэхніцы VI–XІ узроўняў."
 
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "У Рангавых баях даступны заробак ачкоў за выкананне штодзённых задач."
+
+msgid "tooltips/inProgress/playGame/stronghold_units"
+msgstr ""
+"Правілы налічэння ачкоў у Вылазках і Наступленнях на тэхніцы VI, VII і X "
+"узроўняў."
 
 msgid "tooltips/inProgress/timeLeft"
 msgstr "Засталося:"
@@ -1467,13 +1658,13 @@ msgstr "Адкрыты доступ да раздзела «%(chapterName)»"
 msgid "tooltips/notChosen/description"
 msgstr ""
 "Каб прасоўвацца па прагрэсіі і атрымліваць каштоўныя ўзнагароды, неабходна "
-"выбраць раздзел."
+"актываваць раздзел."
 
 msgid "tooltips/notChosen/points"
 msgstr "Неразмеркавых ачкоў Баявога пропуска: %(points)"
 
 msgid "tooltips/notChosen/subTitle"
-msgstr "ВЫБЕРЫЦЕ РАЗДЗЕЛ"
+msgstr "АКТЫВУЙЦЕ РАЗДЗЕЛ"
 
 msgid "tooltips/notChosen/title"
 msgstr "Баявы пропуск"
@@ -1484,7 +1675,7 @@ msgstr "%(day)s %(month)s"
 msgid "tooltips/notStarted/descr"
 msgstr ""
 "{date} стартуе сезон Баявога пропуска, які працягнецца абмежаваны час. Каб "
-"прыняць удзел, дастаткова гуляць у Выпадковых баях на любой тэхніцы VI-X "
+"узяць удзел, дастаткова гуляць у Выпадковых баях на любой тэхніцы VI-XІ "
 "узроўняў і здабываць ачкі прагрэсіі."
 
 msgid "tooltips/notStarted/noDate/descr"
@@ -1515,9 +1706,9 @@ msgstr "Ключавая тэхніка бягучага сезона зараб
 msgid "tooltips/points/subtitle"
 msgstr ""
 "З дапамогай ачкоў Баявога пропуска адбываецца ваша прасоўванне па прагрэсіі."
-" Ачкі можна здабыць, гуляючы на тэхніцы VI-X узроўняў у Выпадковых баях (за "
-"выключэннем Генеральнай бітвы) і іншых гульнявых рэжымах, за выкананне "
-"адмысловых задач, а таксама аднаразова за дасягненне ліміту ачкоў на "
+" Ачкі можна здабыць, гуляючы на тэхніцы VI-XІ узроўняў у Выпадковых баях (за"
+" выключэннем Генеральнай бітвы) і іншых гульнявых рэжымах, за выкананне "
+"адмысловых задач, а таксама штотыднёва за дасягненне ліміту ачкоў на "
 "канкрэтнай машыне."
 
 msgid "tooltips/points/title"
@@ -1673,6 +1864,19 @@ msgstr ""
 "ачкі за выніковыя дзеянні, прасоўвайцеся па этапах прагрэсіі Баявога "
 "пропуска і атрымлівайце ўзнагароды."
 
+msgid "tooltips/vehiclePoints/limitDescription"
+msgstr ""
+"Назбірайце дастатковую колькасць ачкоў, каб атрымаць\n"
+"узнагароду за дасягненне штотыднёвага ліміту ачкоў."
+
+msgid "tooltips/vehiclePoints/limitDescriptionCompleted"
+msgstr ""
+"Назапашванне ачкоў і ўзнагарода да дасягненне ліміту зноў\n"
+"стануць даступнымі пасля яго абнулення."
+
+msgid "tooltips/vehiclePoints/limitRefreshTime"
+msgstr "Ліміт абнуліцца праз: %(limitRefreshTime)s"
+
 msgid "tooltips/vehiclePoints/mapbox"
 msgstr ""
 "Гуляйце ў рэжыме «Разведка боем», здабывайце ачкі за выніковыя дзеянні, "
@@ -1692,8 +1896,30 @@ msgstr ""
 "Гуляючы на ключавой тэхніцы гэтага сезона, вы будзеце здабываць больш ачкоў "
 "прагрэсіі."
 
+msgid "tooltips/vehiclePoints/stronghold_units"
+msgstr ""
+"Гуляйце ў Вылазках і Наступленнях, здабывайце ачкі за выніковыя дзеянні, "
+"прасоўвайцеся па этапах прагрэсіі Баявога пропуска і атрымлівайце "
+"ўзнагароды."
+
 msgid "tooltips/vehiclePoints/title"
 msgstr "Ачкі Баявога пропуска"
+
+msgid "tooltips/vehiclePoints/weeklyLimit"
+msgstr "Штотыднёвы ліміт ачкоў"
+
+msgid "tooltips/vehiclePoints/weeklyLimitCompleted"
+msgstr "Штотыднёвы ліміт ачкоў дасягнуты"
+
+msgid "tooltips/vehiclePoints/weeklyLimitSpecial"
+msgstr ""
+"Штотыднёвы ліміт ачкоў\n"
+"на ключавой тэхніцы"
+
+msgid "tooltips/vehiclePoints/weeklyLimitSpecialCompleted"
+msgstr ""
+"Штотыднёвы ліміт ачкоў на ключавой\n"
+"тэхніцы дасягнуты"
 
 msgid "trophyDeviceUpgradeConfim/cancel"
 msgstr "Скасаваць"

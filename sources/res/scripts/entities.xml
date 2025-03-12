@@ -39,6 +39,7 @@
 		<StaticDeathZone/>
 		<BasicMine/>
 		<ApplicationPoint/>
+		<ApplicationPointWithProximity/>
 		<NetworkEntity/>
 	</ClientServerEntities>
 </root>

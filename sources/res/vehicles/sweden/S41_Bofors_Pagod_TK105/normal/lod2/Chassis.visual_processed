@@ -83,15 +83,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523337 2.399889</row3>
+							<row3>-1.357611 -0.523337 2.399889</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L0</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
+								<row0>1.000000 -0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L0</identifier>
@@ -136,7 +136,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 0.468614 -2.413178</row3>
+								<row3>1.357611 0.468614 -2.413178</row3>
 							</transform>
 						</node>
 					</node>
@@ -146,15 +146,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523338 1.736154</row3>
+							<row3>-1.357611 -0.523338 1.736154</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L1</identifier>
 							<transform>
-								<row0>1.000000 0.000000 -0.000000</row0>
+								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L1</identifier>
@@ -199,7 +199,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 0.203951 -1.804494</row3>
+								<row3>1.357611 0.203951 -1.804494</row3>
 							</transform>
 						</node>
 					</node>
@@ -209,7 +209,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523338 1.073154</row3>
+							<row3>-1.357611 -0.523338 1.073154</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L2</identifier>
@@ -217,7 +217,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L2</identifier>
@@ -262,7 +262,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 -0.060419 -1.196483</row3>
+								<row3>1.357611 -0.060419 -1.196483</row3>
 							</transform>
 						</node>
 					</node>
@@ -272,7 +272,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523338 0.409579</row3>
+							<row3>-1.357611 -0.523338 0.409579</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L3</identifier>
@@ -280,7 +280,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L3</identifier>
@@ -325,7 +325,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 -0.325020 -0.587944</row3>
+								<row3>1.357611 -0.325020 -0.587944</row3>
 							</transform>
 						</node>
 					</node>
@@ -335,7 +335,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523337 -0.253483</row3>
+							<row3>-1.357611 -0.523337 -0.253483</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L4</identifier>
@@ -343,7 +343,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L4</identifier>
@@ -388,7 +388,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 -0.589415 0.020123</row3>
+								<row3>1.357611 -0.589415 0.020123</row3>
 							</transform>
 						</node>
 					</node>
@@ -398,7 +398,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523337 -0.917018</row3>
+							<row3>-1.357611 -0.523337 -0.917018</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L5</identifier>
@@ -406,7 +406,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L5</identifier>
@@ -451,7 +451,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 -0.853999 0.628625</row3>
+								<row3>1.357611 -0.853999 0.628625</row3>
 							</transform>
 						</node>
 					</node>
@@ -461,15 +461,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>-1.238586 -0.523338 -1.575464</row3>
+							<row3>-1.357611 -0.523338 -1.575464</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_L6</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
+								<row0>1.000000 -0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>-0.119025 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_L6</identifier>
@@ -523,7 +523,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>1.238586 -1.116554 1.232459</row3>
+								<row3>1.357611 -1.116554 1.232459</row3>
 							</transform>
 						</node>
 					</node>
@@ -533,15 +533,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523337 2.399889</row3>
+							<row3>1.357611 -0.523337 2.399889</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R0</identifier>
 							<transform>
 								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>0.000000 0.917060 0.398749</row1>
-								<row2>-0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row1>-0.000000 0.917060 0.398749</row1>
+								<row2>0.000000 -0.398749 0.917060</row2>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R0</identifier>
@@ -595,7 +595,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 0.468614 -2.413178</row3>
+								<row3>-1.357611 0.468614 -2.413178</row3>
 							</transform>
 						</node>
 					</node>
@@ -605,15 +605,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523338 1.736154</row3>
+							<row3>1.357611 -0.523338 1.736154</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R1</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000000</row0>
-								<row1>0.000000 0.917060 0.398749</row1>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>-0.000000 0.917060 0.398749</row1>
 								<row2>-0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R1</identifier>
@@ -667,7 +667,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 0.203951 -1.804494</row3>
+								<row3>-1.357611 0.203951 -1.804494</row3>
 							</transform>
 						</node>
 					</node>
@@ -677,7 +677,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523338 1.073154</row3>
+							<row3>1.357611 -0.523338 1.073154</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R2</identifier>
@@ -685,7 +685,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R2</identifier>
@@ -739,7 +739,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 -0.060419 -1.196483</row3>
+								<row3>-1.357611 -0.060419 -1.196483</row3>
 							</transform>
 						</node>
 					</node>
@@ -749,15 +749,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523338 0.409579</row3>
+							<row3>1.357611 -0.523338 0.409579</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R3</identifier>
 							<transform>
-								<row0>1.000000 0.000000 -0.000000</row0>
+								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R3</identifier>
@@ -811,7 +811,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 -0.325020 -0.587944</row3>
+								<row3>-1.357611 -0.325020 -0.587944</row3>
 							</transform>
 						</node>
 					</node>
@@ -821,7 +821,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523337 -0.253483</row3>
+							<row3>1.357611 -0.523337 -0.253483</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R4</identifier>
@@ -829,7 +829,7 @@
 								<row0>1.000000 0.000000 -0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R4</identifier>
@@ -883,7 +883,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 -0.589415 0.020123</row3>
+								<row3>-1.357611 -0.589415 0.020123</row3>
 							</transform>
 						</node>
 					</node>
@@ -893,7 +893,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523337 -0.917018</row3>
+							<row3>1.357611 -0.523337 -0.917018</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R5</identifier>
@@ -901,7 +901,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R5</identifier>
@@ -955,7 +955,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 -0.853999 0.628625</row3>
+								<row3>-1.357611 -0.853999 0.628625</row3>
 							</transform>
 						</node>
 					</node>
@@ -965,15 +965,15 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 0.917060 -0.398749</row1>
 							<row2>0.000000 0.398749 0.917060</row2>
-							<row3>1.140854 -0.523338 -1.575464</row3>
+							<row3>1.357611 -0.523338 -1.575464</row3>
 						</transform>
 						<node>
 							<identifier>Lever_Joint_R6</identifier>
 							<transform>
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
-								<row2>-0.000000 -0.398749 0.917060</row2>
-								<row3>0.216757 -0.000542 -0.440039</row3>
+								<row2>0.000000 -0.398749 0.917060</row2>
+								<row3>0.000000 -0.000542 -0.440039</row3>
 							</transform>
 							<node>
 								<identifier>Track_R6</identifier>
@@ -1027,7 +1027,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 0.917060 0.398749</row1>
 								<row2>0.000000 0.398749 -0.917060</row2>
-								<row3>-1.140854 -1.116554 1.232459</row3>
+								<row3>-1.357611 -1.116554 1.232459</row3>
 							</transform>
 						</node>
 					</node>
@@ -1393,6 +1393,7 @@
 		<node>Track_VT_L3_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
+			<stream>track_L_Shape.uv2</stream>
 			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -1454,6 +1455,7 @@
 		<node>Track_VT_R3_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
+			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -1581,16 +1583,16 @@
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.330406 0.646318 -0.129342</groupOrigin>
@@ -1679,16 +1681,16 @@
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.330435 0.650366 -0.129342</groupOrigin>
@@ -1697,9 +1699,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.657650 -0.000003 -2.903097</min>
+		<min>-1.657650 -0.000002 -2.903097</min>
 		<max>1.657650 1.242943 3.214786</max>
 	</boundingBox>
-	<geometrySize>287532</geometrySize>
+	<geometrySize>303724</geometrySize>
 	<minUVDensity>0.020391</minUVDensity>
 </root>

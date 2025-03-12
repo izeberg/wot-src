@@ -987,6 +987,8 @@ package net.wg.data.constants
       
       public static const STICKY_MARKER_UI:String = "StickyMarkerUI";
       
+      public static const VEHICLE_SPECIAL_ABILITY_MARKER_UI:String = "VehicleSpecialAbilityMarkerUI";
+      
       public static const SESSION_BATTLE_EFFICIENCY_STATS_RENDERER_UI:String = "SessionBattleEfficiencyStatsRendererUI";
       
       public static const SESSION_TOTAL_STATS_RENDERER_UI:String = "SessionTotalStatsRendererUI";

@@ -121,9 +121,9 @@ msgstr "Графіка"
 
 msgid "RENDER_PIPELINE/description"
 msgstr ""
-"Палепшаная: забяспечвае найбольшую якасць відарыса.\n"
+"Палепшаная: дазваляе дабіцца максімальнай якасці выявы. Опцыя даступная толькі з DirectX 11 і навейшай.\n"
 "\n"
-"Звычайная: забяспечвае найбольшую хуткадзейнасць, спрашчаючы або адключаючы некаторыя візуальныя эфекты."
+"Звычайная: дазваляе дабіцца максімальнай хуткадзейнасці, спрашчаючы або адключаючы некаторыя візуальныя эфекты."
 
 msgid "RENDER_PIPELINE/label"
 msgstr "Графіка:"
@@ -1186,6 +1186,12 @@ msgstr "Гістарычныя"
 msgid "game/customizationDisplayType/notHistorical"
 msgstr "Гістарычныя і негістарычныя"
 
+msgid "game/disableThermalVisionEffect"
+msgstr "Паказваць эфект пірометра ў снайперскім прыцэле"
+
+msgid "game/disableThermalVisionSectorEffect"
+msgstr "Паказваць сектар пірометра ў аркадным прыцэле"
+
 msgid "game/displayPlatoonMembers"
 msgstr "Паказваць тэхніку ўдзельнікаў звязу ў Гаражы"
 
@@ -1353,6 +1359,9 @@ msgstr "Паказваць адметныя адзнакі"
 
 msgid "game/showSectorOnMap"
 msgstr "Паказваць сектар абстрэлу САУ"
+
+msgid "game/showThermalVisionSectorOnMap"
+msgstr "Паказваць сектар дзеяння пірометра"
 
 msgid "game/showVectorOnMap"
 msgstr "Паказваць прамень кірунку камеры"
@@ -1751,7 +1760,7 @@ msgid "keyboard/keysBlocks/command/alternate_mode"
 msgstr "Змяніць рэжым прыцэльвання"
 
 msgid "keyboard/keysBlocks/command/auto_rotation"
-msgstr "Знерухоміць корпус / пераключыць рэжым"
+msgstr "Фіксацыя корпуса / актывацыя механікі"
 
 msgid "keyboard/keysBlocks/command/backward"
 msgstr "Назад"

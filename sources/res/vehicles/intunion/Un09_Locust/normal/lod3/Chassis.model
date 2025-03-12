@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.077996 -0.000000 -1.652578</min>
+		<max>1.077996 0.853702 2.030843</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un09_Locust/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/intunion/Un09_Locust/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

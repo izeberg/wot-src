@@ -274,7 +274,10 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self.removeComponent(go)
             go.deactivate()
 
-        fashions = VehiclePartsTuple(BigWorld.WGVehicleFashion(), None, None, None)
+        fashions = VehiclePartsTuple(BigWorld.WGVehicleFashion(), BigWorld.WGBaseFashion(), BigWorld.WGBaseFashion(), BigWorld.WGBaseFashion())
+        for f in fashions:
+            f.addMaterialHandler(BigWorld.PyDeadTankHandler())
+
         self._setFashions(fashions, isTurretDetached)
         model_assembler.setupTracksFashion(self.typeDescriptor, self.fashion)
         self.showStickers(False)
@@ -700,7 +703,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         self.__updateInsigniaSticker()
 
     def __updateClanSticker(self):
-        if self.vehicleStickers is not None:
+        if self.vehicleStickers is not None and (not self.outfit.style or not self.outfit.style.isClanHidden):
             clanID = self._vehicleInfo.get('clanDBID', 0)
             self.vehicleStickers.setClanID(clanID)
         return

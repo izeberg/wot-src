@@ -20,8 +20,6 @@ package net.wg.gui.lobby.components.data
       
       public var showAlertBG:Boolean = false;
       
-      public var background:String = "";
-      
       public function PrimeTimeVO(param1:Object)
       {
          super(param1);

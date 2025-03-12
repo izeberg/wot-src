@@ -78,10 +78,6 @@
 					<collisionFlags>0</collisionFlags>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
@@ -120,10 +116,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>

@@ -21,6 +21,9 @@
 		</onThermalDisappear>
 		<onEnemyInSector/>
 		<onSectorEmpty/>
+		<updateUseCount>
+			<Arg>INT32</Arg>
+		</updateUseCount>
 	</ClientMethods>
 	<DefaultKeyName>thermalVisionController</DefaultKeyName>
 </root>

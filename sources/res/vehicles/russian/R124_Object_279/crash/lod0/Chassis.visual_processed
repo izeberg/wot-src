@@ -79,14 +79,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>255</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/russian/tracks/Object_279_track_AM.dds</Texture>
 					</property>
@@ -113,6 +105,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/tracks/Object_279_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.396313 0.465665 -0.140533</groupOrigin>
@@ -135,14 +135,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>255</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/russian/tracks/Object_279_track_AM.dds</Texture>
 					</property>
@@ -169,6 +161,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/tracks/Object_279_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.396313 0.465218 -0.140450</groupOrigin>
@@ -191,14 +191,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>255</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/russian/tracks/Object_279_track_AM.dds</Texture>
 					</property>
@@ -225,6 +217,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/tracks/Object_279_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.535400 0.443051 -0.226868</groupOrigin>
@@ -247,14 +247,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>255</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/russian/tracks/Object_279_track_AM.dds</Texture>
 					</property>
@@ -281,6 +273,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/tracks/Object_279_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.535399 0.466210 -0.108051</groupOrigin>

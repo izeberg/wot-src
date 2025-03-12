@@ -19,9 +19,9 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>n_metal0</identifier>
+					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>73</materialKind>
+					<materialKind>112</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
@@ -36,15 +36,15 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0097_TramPost_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.597007 3.574545 -0.014232</groupOrigin>
+				<groupOrigin>1.605837 3.574545 -0.014232</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.694277 -0.101876 -0.500000</min>
-		<max>0.500262 7.250967 0.500000</max>
+		<min>-0.591275 -0.101876 -0.648700</min>
+		<max>3.694277 7.250967 0.648700</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>75984</geometrySize>
-	<minUVDensity>0.086955</minUVDensity>
+	<geometrySize>40416</geometrySize>
+	<minUVDensity>0.069890</minUVDensity>
 </root>

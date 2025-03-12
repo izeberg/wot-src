@@ -48,6 +48,10 @@ class OfferEventData(object):
         return self._data.get('showBanner')
 
     @property
+    def requiredToken(self):
+        return self._data.get('requiredToken')
+
+    @property
     def priority(self):
         return self._data.get('priority')
 
@@ -155,11 +159,14 @@ class OfferEventData(object):
 
     @property
     def expiration(self):
-        return min(self._tokensCache.getTokenExpiryTime(self.token), self._tokensCache.getTokenExpiryTime(self.giftToken), self.getFinishTime())
+        expireTime = min(self._tokensCache.getTokenExpiryTime(self.giftToken), self.getFinishTime())
+        if not self.requiredToken:
+            return expireTime
+        return min(self._tokensCache.getTokenExpiryTime(self.token), expireTime)
 
     @property
     def isOfferAvailable(self):
-        return self._tokensCache.isTokenAvailable(self.token) and self._tokensCache.isTokenAvailable(self.giftToken) and not self.isOutOfDate and bool(self.availableGiftsCount)
+        return (not self.requiredToken or self._tokensCache.isTokenAvailable(self.token)) and self._tokensCache.isTokenAvailable(self.giftToken) and not self.isOutOfDate and bool(self.availableGiftsCount)
 
     @property
     def isOutOfDate(self):

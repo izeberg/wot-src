@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.350786 -0.031095 -2.503524</min>
+		<max>1.350786 4.200415 1.268914</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un05_Shot_Kal_Alef/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un05_Shot_Kal_Alef/normal/lod1/Turret_01</nodefullVisual>
+</root>

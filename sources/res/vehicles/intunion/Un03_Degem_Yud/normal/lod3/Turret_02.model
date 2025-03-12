@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un03_Degem_Yud/normal/lod3/Turret_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.157816 -0.000466 -1.906139</min>
+		<max>1.157816 3.837512 1.007988</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un03_Degem_Yud/normal/lod4/Turret_02</parent>
+	<extent>192.000000</extent>
+</root>

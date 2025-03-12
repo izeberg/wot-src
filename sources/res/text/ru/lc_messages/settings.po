@@ -122,7 +122,7 @@ msgstr "Графика"
 
 msgid "RENDER_PIPELINE/description"
 msgstr ""
-"Улучшенная: позволяет добиться максимального качества изображения.\n"
+"Улучшенная: позволяет добиться максимального качества изображения. Опция доступна только с DirectX 11 и новее.\n"
 "\n"
 "Стандартная: позволяет добиться максимального быстродействия, упрощая или отключая некоторые визуальные эффекты."
 
@@ -1187,6 +1187,12 @@ msgstr "Историчные"
 msgid "game/customizationDisplayType/notHistorical"
 msgstr "Историчные и неисторичные"
 
+msgid "game/disableThermalVisionEffect"
+msgstr "Показывать эффект пирометра в снайперском прицеле"
+
+msgid "game/disableThermalVisionSectorEffect"
+msgstr "Показывать сектор пирометра в аркадном прицеле"
+
 msgid "game/displayPlatoonMembers"
 msgstr "Показывать технику совзводных в Ангаре"
 
@@ -1354,6 +1360,9 @@ msgstr "Отображать отличительные отметки"
 
 msgid "game/showSectorOnMap"
 msgstr "Показывать сектор обстрела САУ"
+
+msgid "game/showThermalVisionSectorOnMap"
+msgstr "Показывать сектор действия пирометра"
 
 msgid "game/showVectorOnMap"
 msgstr "Показывать луч направления камеры"
@@ -1752,7 +1761,7 @@ msgid "keyboard/keysBlocks/command/alternate_mode"
 msgstr "Сменить режим прицела"
 
 msgid "keyboard/keysBlocks/command/auto_rotation"
-msgstr "Фиксация корпуса / смена режима"
+msgstr "Фиксация корпуса / активация механики"
 
 msgid "keyboard/keysBlocks/command/backward"
 msgstr "Назад"

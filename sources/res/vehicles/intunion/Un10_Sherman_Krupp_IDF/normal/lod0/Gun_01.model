@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un10_Sherman_Krupp_IDF/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.516341 -0.227352 0.021814</min>
+		<max>0.517430 0.329812 1.549571</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un10_Sherman_Krupp_IDF/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

@@ -3254,9 +3254,6 @@ msgstr "Адваяваных Генеральных бітваў"
 msgid "details/dossier/27/battlesCount"
 msgstr "Праведзеных баёў у рэжыме «Лінія фронту»"
 
-msgid "details/dossier/32/battlesCount"
-msgstr "Праведзеных баёў у рэжыме Бітва блогераў»"
-
 msgid "details/dossier/37/battlesCount"
 msgstr "Праведзеных баёў у рэжыме «Разведка боем»"
 
@@ -4712,7 +4709,7 @@ msgid "item/timer/tillFinish/onlyHours"
 msgstr "%(hours)s гадз"
 
 msgid "item/timer/tillFinish/shortFormat"
-msgstr "%(min)s хв"
+msgstr "%(min)s хв."
 
 msgid "item/timer/tillFinish/shortFullFormat"
 msgstr "Да сканчэння менш за гадзіну"
@@ -5053,12 +5050,6 @@ msgstr ""
 msgid "missions/tab/battle_pass/header"
 msgstr "Баявы пропуск"
 
-msgid "missions/tab/bob/body"
-msgstr "Гульнявая падзея Бітва блогераў 2025»"
-
-msgid "missions/tab/bob/header"
-msgstr "Бітва блогераў 2025"
-
 msgid "missions/tab/categories/body"
 msgstr "Баявыя задачы, якія можна выканаць адзін або некалькі разоў."
 
@@ -5100,9 +5091,6 @@ msgstr "Штодзённыя баявыя задачы, прымеркаваны
 
 msgid "missions/tab/kursk/header"
 msgstr "Курская бітва"
-
-msgid "missions/tab/label/bob"
-msgstr "Бітва блогераў"
 
 msgid "missions/tab/label/categories"
 msgstr "Баявыя задачы"
@@ -5660,6 +5648,9 @@ msgstr "«Германія»"
 
 msgid "token/default/heavyTank"
 msgstr "«Цяжкі танк»"
+
+msgid "token/default/intunion"
+msgstr "«Зборная дзяржаў»"
 
 msgid "token/default/italy"
 msgstr "«Італія»"

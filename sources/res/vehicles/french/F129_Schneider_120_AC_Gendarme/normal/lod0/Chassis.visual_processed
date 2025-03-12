@@ -291,7 +291,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>-1.368071 -0.479973 -2.220207</row3>
+						<row3>-1.368071 -0.483489 -2.220207</row3>
 					</transform>
 					<node>
 						<identifier>WD_L1</identifier>
@@ -299,7 +299,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 -0.000000 1.000000</row2>
-							<row3>0.000000 0.383253 -0.000000</row3>
+							<row3>0.000000 0.380778 -0.000000</row3>
 						</transform>
 						<node>
 							<identifier>WD_L1_BlendBone</identifier>
@@ -307,7 +307,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>1.368071 -0.403280 2.220207</row3>
+								<row3>1.368071 -0.397289 2.220207</row3>
 							</transform>
 						</node>
 					</node>
@@ -317,7 +317,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>1.368071 -0.020027 2.220207</row3>
+							<row3>1.368071 -0.016511 2.220207</row3>
 						</transform>
 					</node>
 				</node>
@@ -543,15 +543,15 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>1.368071 -0.479986 -2.130143</row3>
+						<row3>1.368071 -0.483489 -2.130143</row3>
 					</transform>
 					<node>
 						<identifier>WD_R1</identifier>
 						<transform>
 							<row0>1.000000 -0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 0.000000 1.000000</row2>
-							<row3>-0.000000 0.383266 0.000000</row3>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.000000 0.380791 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>WD_R1_BlendBone</identifier>
@@ -559,7 +559,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.368071 -0.403280 2.130143</row3>
+								<row3>-1.368071 -0.397302 2.130143</row3>
 							</transform>
 						</node>
 					</node>
@@ -569,7 +569,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>-1.368071 -0.020014 2.130143</row3>
+							<row3>-1.368071 -0.016511 2.130143</row3>
 						</transform>
 					</node>
 				</node>
@@ -1231,7 +1231,7 @@
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-1.347811 0.509769 -0.330844</groupOrigin>
+				<groupOrigin>-1.347811 0.508222 -0.330844</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1332,20 +1332,12 @@
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>1.347816 0.508742 -0.373636</groupOrigin>
+				<groupOrigin>1.347816 0.506999 -0.373636</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_L0_BlendBone</node>
-		<node>W_L5_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>WD_L1_BlendBone</node>
-		<node>W_L4_BlendBone</node>
-		<node>W_L2_BlendBone</node>
-		<node>W_L0_BlendBone</node>
-		<node>W_L1_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_L5_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
@@ -1354,9 +1346,17 @@
 		<node>Track_L0_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L6_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>W_L5_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1430,20 +1430,12 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.287522 0.534301 -0.360616</groupOrigin>
+				<groupOrigin>-1.287522 0.531305 -0.360616</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_R0_BlendBone</node>
-		<node>W_R5_BlendBone</node>
-		<node>W_R3_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
-		<node>W_R4_BlendBone</node>
-		<node>W_R2_BlendBone</node>
-		<node>W_R0_BlendBone</node>
-		<node>W_R1_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
@@ -1452,9 +1444,17 @@
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
+		<node>W_R4_BlendBone</node>
+		<node>W_R5_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1528,7 +1528,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.287522 0.534301 -0.405648</groupOrigin>
+				<groupOrigin>1.287522 0.531312 -0.405648</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1537,6 +1537,6 @@
 		<min>-1.597738 -0.000077 -2.632223</min>
 		<max>1.597743 1.019616 3.293911</max>
 	</boundingBox>
-	<geometrySize>591888</geometrySize>
+	<geometrySize>592080</geometrySize>
 	<minUVDensity>0.080184</minUVDensity>
 </root>

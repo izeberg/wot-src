@@ -62,13 +62,14 @@ package net.wg.gui.battle.views.vehicleMarkers.statusMarkers
             this.waveContainer.updateColorSettings(color);
          }
          this.arrowContainer.updateColorSettings(arrowColorFrame);
+         glowContainer.updateColorSettings(color);
          TextField(this.counterMc.labelTf).textColor = param1;
       }
       
       override protected function onHiddenStateShowed() : void
       {
-         super.onHiddenStateShowed();
          this.arrowContainer.setAnimated(false);
+         super.onHiddenStateShowed();
       }
       
       public function setSecondString(param1:String) : void

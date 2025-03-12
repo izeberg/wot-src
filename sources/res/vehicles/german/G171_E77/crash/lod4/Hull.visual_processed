@@ -82,6 +82,10 @@
 						normalMap
 						<Texture>vehicles/german/G171_E77/E77_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
 				</material>
 				<groupOrigin>-0.005481 0.008992 0.070148</groupOrigin>
 			</primitiveGroup>

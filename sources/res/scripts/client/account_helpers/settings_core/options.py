@@ -298,8 +298,12 @@ class SoundSetting(SettingAbstract):
 
     def _set(self, value):
         if self.group == 'master':
-            return SoundGroups.g_instance.setMasterVolume(self.__toSysVolume(value))
-        return SoundGroups.g_instance.setVolume(self.group, self.__toSysVolume(value))
+            volumeResult = SoundGroups.g_instance.setMasterVolume(self.__toSysVolume(value))
+        else:
+            volumeResult = SoundGroups.g_instance.setVolume(self.group, self.__toSysVolume(value))
+        if self.group in SoundGroups.USER_SETTINGS_CATEGORY_NAMES:
+            SoundGroups.g_instance.updateVideoVolume()
+        return volumeResult
 
 
 class SoundEnableSetting(SettingAbstract):

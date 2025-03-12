@@ -6,12 +6,9 @@
 			<Flags>ALL_CLIENTS</Flags>
 		</state>
 		<temperatureProgress>
-			<Type>FLOAT</Type>
+			<Type>UINT32</Type>
 			<Flags>ALL_CLIENTS</Flags>
-			<Default>
-				0.0
-				<!--BW_String-->
-			</Default>
+			<Default>0</Default>
 			<DetailLevel>MY_VEHICLE</DetailLevel>
 		</temperatureProgress>
 		<isOverheated>

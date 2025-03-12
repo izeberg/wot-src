@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un01_Cromwell_VII/normal/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.340000 -0.242876 0.162538</min>
+		<max>0.219999 0.257125 2.304563</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un01_Cromwell_VII/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

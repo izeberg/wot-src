@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<timeDebufFinish>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</timeDebufFinish>
+		<targetID>
+			<Type>OBJECT_ID</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</targetID>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>stunShotComponent</DefaultKeyName>
+</root>

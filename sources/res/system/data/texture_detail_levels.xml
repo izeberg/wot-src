@@ -207,6 +207,7 @@
 				<rule>
 					<lodMode>0</lodMode>
 					<format>DXT3</format>
+					<category>tanks</category>
 					<pattern>.*(decal|sticker|font_maps).*</pattern>
 				</rule>
 			</directory>

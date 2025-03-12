@@ -46,6 +46,7 @@ from gui.shared.formatters import text_styles, time_formatters
 from gui.shared.money import Currency
 from gui.shared.notifications import NotificationPriorityLevel
 from gui.shared.system_factory import collectAllNotificationsListeners, registerNotificationsListeners
+from gui.shared.tutorial_helper import getTutorialGlobalStorage
 from gui.shared.utils import showInvitationInWindowsBar
 from gui.shared.utils.scheduled_notifications import SimpleNotifier
 from gui.shared.view_helpers.UsersInfoHelper import UsersInfoHelper
@@ -76,6 +77,7 @@ from skeletons.gui.platform.wgnp_controllers import IWGNPSteamAccRequestControll
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.system_messages import ISystemMessages
+from tutorial.control.context import GLOBAL_FLAG
 from tutorial.control.game_vars import getVehicleByIntCD
 from wg_async import wg_async, wg_await
 if TYPE_CHECKING:
@@ -2574,6 +2576,7 @@ class PersonalMissionsListener(_NotificationListener):
         super(PersonalMissionsListener, self).__init__()
         self.__disabledPMOperations = {}
         self.__disabledPersonalMissions = {}
+        self.__hintsStorage = getTutorialGlobalStorage()
 
     def start(self, model):
         result = super(PersonalMissionsListener, self).start(model)
@@ -2591,11 +2594,14 @@ class PersonalMissionsListener(_NotificationListener):
         serverSettings = self.__lobbyContext.getServerSettings()
         self.__disabledPMOperations = copy.copy(serverSettings.getDisabledPMOperations())
         self.__disabledPersonalMissions = copy.copy(serverSettings.getDisabledPersonalMissions())
+        isPM3Enabled = serverSettings.isPersonalMissionsEnabled(PM_BRANCH.PERSONAL_MISSION_3)
+        self.__hintsStorage.setValue(GLOBAL_FLAG.IS_PM3_ENABLED, isPM3Enabled, showImmediately=True)
 
     def __onSettingsChanged(self, diff):
         for switchKey in (self.__SWITCH_KEY_PM1, self.__SWITCH_KEY_PM2, self.__SWITCH_KEY_PM3):
             if switchKey in diff:
                 self.__pushCampaignMessage(switchKey, diff[switchKey])
+                self.__hintsStorage.setValue(GLOBAL_FLAG.IS_PM3_ENABLED, diff[switchKey], showImmediately=True)
 
         if 'disabledPMOperations' in diff:
             disabledOPs = set(diff['disabledPMOperations'].keys())

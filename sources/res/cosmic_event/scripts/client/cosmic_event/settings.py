@@ -3,12 +3,13 @@ from cosmic_event.gui.impl.gen.view_models.views.battle.cosmic_hud.cosmic_hud_vi
 from cosmic_sound import CosmicBattleSounds
 
 class CosmicEventConfig(namedtuple('CosmicEventConfig', ('isEnabled', 'isBattleEnabled', 'peripheryIDs', 'primeTimes',
-                                 'seasons', 'cycleTimes', 'scoreSystem', 'eventVehicleCD',
-                                 'rewardSettings', 'vehicleRentQuestID', 'progressionFinishedToken'))):
+                                 'seasons', 'cycleTimes', 'scoreSystem', 'eventVehicles',
+                                 'rewardSettings', 'vehicleRentQuestID', 'progressionFinishedToken',
+                                 'effects', 'achievementIDs'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(isEnabled=False, isBattleEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, cycleTimes={}, scoreSystem={}, eventVehicleCD=None, rewardSettings={}, vehicleRentQuestID='', progressionFinishedToken='')
+        defaults = dict(isEnabled=False, isBattleEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, cycleTimes={}, scoreSystem={}, eventVehicles={}, rewardSettings={}, vehicleRentQuestID='', progressionFinishedToken='', effects={}, achievementIDs=[])
         defaults.update(kwargs)
         return super(CosmicEventConfig, cls).__new__(cls, **defaults)
 

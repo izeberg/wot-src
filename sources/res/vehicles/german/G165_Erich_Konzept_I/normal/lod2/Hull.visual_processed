@@ -110,14 +110,6 @@
 				<material>
 					<identifier>tank_hull_01</identifier>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
@@ -143,14 +135,6 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000393 0.087732 -0.092999</groupOrigin>

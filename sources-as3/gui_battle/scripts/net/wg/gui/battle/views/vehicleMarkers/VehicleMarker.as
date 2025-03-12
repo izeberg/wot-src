@@ -333,6 +333,11 @@ package net.wg.gui.battle.views.vehicleMarkers
       {
          this.vehicleMarkerHoverMC.visible = param1;
          this.updateMarkerSettings();
+         this.updateVehicleMarkerHoverColor();
+      }
+      
+      private function updateVehicleMarkerHoverColor() : void
+      {
          if(this._entityType == VehicleMarkersConstants.ENTITY_TYPE_ENEMY)
          {
             if(this.vmManager.isColorBlind)
@@ -359,10 +364,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          this._objectiveActionMarker = param1 != Values.EMPTY_STR ? param1 + ALTERNATIVE : param1;
       }
       
-      public function hideAbilityPyrometer() : void
-      {
-      }
-      
       public function hideArtyMarker() : void
       {
       }
@@ -374,7 +375,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function hideSeparateMarker(param1:int, param2:Boolean = false) : void
       {
-         this.statusContainer.hideAbilityMarker(param1,param2);
+         this.statusContainer.hideSeparateMarker(param1,param2);
          this.updateMarkerSettings();
       }
       
@@ -533,6 +534,7 @@ package net.wg.gui.battle.views.vehicleMarkers
             _loc17_ = 1;
          }
          this._maxHealthMult = MAX_HEALTH_PERCENT / _loc17_;
+         this.statusContainer.setSecondString(this.model.locSecString);
          if(this.model.entityName != Values.EMPTY_STR)
          {
             this._entityName = this.model.entityName;
@@ -561,10 +563,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.hitLabel.imitation = this.getIsPartVisible(DAMAGE_PANEL);
       }
       
-      public function showAbilityPyrometer() : void
-      {
-      }
-      
       public function showActionMarker(param1:String) : void
       {
          this.actionMarker.showAction(param1);
@@ -588,7 +586,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function showSeparateMarker(param1:int, param2:Boolean, param3:Number, param4:Boolean = true, param5:Boolean = true) : void
       {
-         this.statusContainer.showAbilityMarker(param1,param2,param3,param4,param5);
+         this.statusContainer.showSeparateMarker(param1,param2,param3,param4,param5);
          this.updateMarkerSettings();
       }
       
@@ -1199,6 +1197,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private function onUpdateColorsHandler(param1:VehicleMarkersManagerEvent) : void
       {
+         this.updateVehicleMarkerHoverColor();
          this.updateMarkerColor();
          this.setupSquadIcon();
          this.updateMarkerSettings();
@@ -1214,10 +1213,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private function onStatusAnimationHiddenCompleteHandler(param1:Event) : void
       {
-         if(this.actionMarker.isVisible() || this.statusContainer.isVisible())
-         {
-            this.updateMarkerSettings();
-         }
+         this.updateMarkerSettings();
       }
    }
 }

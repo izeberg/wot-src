@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_3Dst_Ram/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.751318 -0.005753 -3.603961</min>
+		<max>1.782033 1.063294 3.654507</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_3Dst_Ram/normal/lod2/Chassis</nodefullVisual>
+</root>

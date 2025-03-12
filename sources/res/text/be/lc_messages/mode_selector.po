@@ -53,12 +53,6 @@ msgstr "Кожны сам за сябе!"
 msgid "mode/battleRoyaleQueue/title"
 msgstr "Сталёвы паляўнічы"
 
-msgid "mode/bob/condition"
-msgstr "7x7 %(parSecondary_open)sI%(parSecondary_close)s X&nbsp;узровень"
-
-msgid "mode/bob/description"
-msgstr "Баі паміж камандамі вядомых блогераў."
-
 msgid "mode/bootcamp/call/1"
 msgstr "Прайдзіце і атрымайце ўзнагароду"
 
@@ -93,10 +87,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Падзея «Ледзяны мядзведзь» завершана"
+msgstr "Падзея «Навальнічны мядзведзь» завершана"
 
 msgid "mode/comp7/seasonStart"
-msgstr "Падзея «Ледзяны мядзведзь» пачнецца %(date)s"
+msgstr "Падзея «Навальнічны мядзведзь» пачнецца %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Рангавая неактыўнасць"
@@ -217,6 +211,16 @@ msgstr ""
 
 msgid "mode/specBattlesList/description"
 msgstr "Глабальная карта і турніры."
+
+msgid "mode/strongholdsBattlesList/battlePassTooltip/body"
+msgstr ""
+"Беручы ўдзел у {whiteSpanish_open}Вылазках{whiteSpanish_close} і "
+"{whiteSpanish_open}Наступленнях{whiteSpanish_close} ва Умацаваным раёне, вы "
+"будзеце здабываць ачкі. Яны патрэбны для прасоўвання па прагрэсіі Баявога "
+"пропуска."
+
+msgid "mode/strongholdsBattlesList/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
 
 msgid "mode/strongholdsBattlesList/call/1"
 msgstr "Ідзіце на бой як легіянер"

@@ -2,17 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.68327 0.00392663 -3.42427
-			<!--BW_String-->
-		</min>
-		<max>
-			1.68327 1.06971 3.32412
-			<!--BW_String-->
-		</max>
+		<min>-1.683267 0.003927 -3.424273</min>
+		<max>1.683267 1.069706 3.324124</max>
 	</visibilityBox>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/russian/R88_Object268/normal/lod2/Chassis</nodefullVisual>
 	<parent>vehicles/russian/R88_Object268/normal/lod3/Chassis</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R88_Object268/normal/lod2/Chassis</nodefullVisual>
 </root>

@@ -18,10 +18,16 @@ from skeletons.gui.shared import IItemsCache
 if TYPE_CHECKING:
     from typing import Optional
 _logger = logging.getLogger(__name__)
-_IMG_NATION_FLAG_PATH = 'img://gui//maps/shop/nations/flag-{}.png'
 
 def _removeStringColorTags(string):
     return re.sub('{colorTagOpen}|{colorTagClose}', '', string)
+
+
+def _getNationFlagIcon(item):
+    itemNationID = getItemNationID(item)
+    if itemNationID != nations.NONE_INDEX:
+        return nations.NAMES[itemNationID]
+    return ''
 
 
 class ArmoryOptDeviceBonusesDescriptionBuilder(OptDeviceBonusesDescriptionBuilder):
@@ -389,10 +395,7 @@ class ItemPacker(ShopBaseUIPacker):
 
     @property
     def nationFlagIcon(self):
-        itemNationID = getItemNationID(self.__item)
-        if itemNationID != nations.NONE_INDEX:
-            return _IMG_NATION_FLAG_PATH.format(nations.NAMES[itemNationID])
-        return ''
+        return _getNationFlagIcon(self.__item)
 
     @property
     def effect(self):
@@ -492,10 +495,7 @@ class VehiclePacker(ShopBaseUIPacker):
 
     @property
     def nationFlagIcon(self):
-        itemNationID = getItemNationID(self.__item)
-        if itemNationID != nations.NONE_INDEX:
-            return _IMG_NATION_FLAG_PATH.format(nations.NAMES[itemNationID])
-        return ''
+        return _getNationFlagIcon(self.__item)
 
     @property
     def itemType(self):

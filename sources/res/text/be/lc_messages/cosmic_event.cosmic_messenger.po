@@ -9,55 +9,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "serviceChannelMessages/cosmicAchievement"
-msgstr "дасягненне «%(achievement)s»"
+msgstr "Дасягненне «%(achievement)s»"
 
 msgid "serviceChannelMessages/cosmicAchievementsMessage/body"
 msgstr ""
-"За выкананне асаблівых даручэнняў вы атрымліваеце:\n"
+"За выкананне асабістых заданняў вы заслужылі:\n"
 "%(achievements)s"
 
 msgid "serviceChannelMessages/cosmicAchievementsMessage/header"
 msgstr "Віншуем!"
 
+msgid "serviceChannelMessages/cosmicBattleResults/modeName"
+msgstr "Рэжым: «На Марс: хаос»"
+
 msgid "serviceChannelMessages/cosmicBattleResults/points"
-msgstr "Ачкі Марса"
+msgstr "Ачкі падзеі"
 
 msgid "serviceChannelMessages/cosmicBattleResults/totalScore"
 msgstr "Атрымана ачкоў"
 
 msgid "serviceChannelMessages/cosmicDailyMessage/body"
 msgstr ""
-"Атрыманы ўзнагароды:\n"
+"Вашы ўзнагароды:\n"
 "%(rewards)s"
 
 msgid "serviceChannelMessages/cosmicDailyMessage/header"
-msgstr "Штодзённая задача выканана"
+msgstr "Асабістае заданне выканана"
 
 msgid "serviceChannelMessages/cosmicEventEndedMessage/body"
-msgstr "Экспедыцыя «На Марс!» завершана."
+msgstr "Экспедыцыя «На Марс: хаос» завершана."
 
 msgid "serviceChannelMessages/cosmicEventResumedMessage/body"
-msgstr "Экспедыцыя «На Марс!» зноў даступная."
+msgstr "Экспедыцыя «На Марс: хаос» зноў даступная."
 
 msgid "serviceChannelMessages/cosmicEventStartedMessage/body"
-msgstr "Экспедыцыя «На Марс!» стартавала. Чакаем вас!"
+msgstr "Экспедыцыя «На Марс: хаос» стартавала. Вас чакаюць!"
 
 msgid "serviceChannelMessages/cosmicEventStartedMessage/button"
 msgstr "Да падзеі"
 
 msgid "serviceChannelMessages/cosmicEventSuspendedMessage/body"
-msgstr "Экспедыцыя «На Марс!» недаступная з тэхнічных прычын."
+msgstr "Экспедыцыя «На Марс: хаос» недаступная з тэхнічных прычын."
 
 msgid "serviceChannelMessages/cosmicProgressionMessage/body"
 msgstr ""
-"Вы прайшлі яшчэ адзін этап прагрэсіі. Цяпер вы на этапе %(stage)s! Атрыманыя ўзнагароды: \n"
+"Вы перайшлі на наступны этап прагрэсіі!\n"
+"Атрыманыя ўзнагароды: \n"
 "%(rewards)s."
 
 msgid "serviceChannelMessages/cosmicProgressionMessage/button"
-msgstr "Да Аб'екта"
+msgstr "Да прагрэсіі"
 
 msgid "serviceChannelMessages/cosmicProgressionMessage/header"
 msgstr "Віншуем!"
 
+msgid "serviceChannelMessages/cosmicTankmanBonus"
+msgstr "Дададены член экіпажа"
+
 msgid "serviceChannelMessages/eventName"
-msgstr "На Марс!"
+msgstr "На Марс: хаос"

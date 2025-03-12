@@ -1,6 +1,5 @@
-import logging
+import Event, logging, re, time, typing
 from collections import OrderedDict
-import typing, re, Event
 from PlayerEvents import g_playerEvents
 from cosmic_event.skeletons.battle_controller import ICosmicEventBattleController
 from cosmic_event.skeletons.progression_controller import ICosmicEventProgressionController
@@ -122,7 +121,8 @@ class CosmicProgressionController(ICosmicEventProgressionController):
         if not tokens:
             return
         tokenID = self.cosmicBattleController.getTokenProgressionID()
-        if tokenID in tokens:
+        finishedToken = self.cosmicBattleController.getProgressionFinishedToken()
+        if tokenID in tokens or finishedToken in tokens:
             self.onProgressPointsUpdated()
 
     def _filterFunc(self, quest):
@@ -140,6 +140,14 @@ class CosmicProgressionController(ICosmicEventProgressionController):
         quests = self.getDailyQuests()
         return OrderedDict(sorted(quests.items(), key=lambda key_value: key_value[0]))
 
+    def collectSortedRelevantDailyQuests(self):
+
+        def isRelevantQuest(quest):
+            return quest.getStartTime() <= time.time() <= quest.getFinishTime()
+
+        quests = {k:q for k, q in self.getDailyQuests().items() if isRelevantQuest(q)}
+        return OrderedDict(sorted(quests.items(), key=lambda key_value: key_value[0]))
+
     def isCosmicProgressionQuest(self, questID):
         questionPrefix = self.cosmicBattleController.getProgressionQuestPrefix()
         return questID.startswith(questionPrefix)
@@ -153,6 +161,14 @@ class CosmicProgressionController(ICosmicEventProgressionController):
                 result.append((pointsCondition, bonuses))
 
         return result
+
+    def getBonusesForCurrentStage(self):
+        currentPoints = self.getCurrentPoints()
+        for pointsLimit, bonuses in self.getBonuses():
+            if currentPoints < pointsLimit:
+                return bonuses
+
+        return []
 
     def getCurrentStage(self):
         stageIdx = 0

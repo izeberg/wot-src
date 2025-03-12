@@ -4,12 +4,9 @@
 	<materialNames/>
 	<visibilityBox>
 		<min>-0.176459 -0.198277 -0.256459</min>
-		<max>
-			0.799453 0.223047 2.76932
-			<!--BW_String-->
-		</max>
+		<max>0.799453 0.223047 2.769320</max>
 	</visibilityBox>
 	<parent>vehicles/russian/R132_VNII_100LT/normal/lod3/Gun_01</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 	<nodefullVisual>vehicles/russian/R132_VNII_100LT/normal/lod2/Gun_01</nodefullVisual>
 </root>

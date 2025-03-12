@@ -71,14 +71,6 @@
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>-0.000001 0.039197 1.735900</groupOrigin>
 			</primitiveGroup>

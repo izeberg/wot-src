@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod0/Gun_08</nodefullVisual>
 	<parent>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod1/Gun_08</parent>
 	<extent>32.000000</extent>
 	<visibilityBox>
 		<min>-0.874795 -0.341515 -0.115536</min>
 		<max>0.724551 0.318582 4.743262</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un04_Vickers_MBT_EXP/normal/lod0/Gun_08</nodefullVisual>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch52_WZ_122_6_F3/_skins/Ch52_WZ_122_6_F3_3Dst/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch52_WZ_122_6_F3/_skins/Ch52_WZ_122_6_F3_3Dst/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.701085 -0.002962 -2.508409</min>
+		<max>1.666364 2.841890 1.910232</max>
+	</visibilityBox>
+</root>

@@ -395,7 +395,7 @@
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.125
+			0.0625
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
@@ -437,7 +437,7 @@
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.125
+			0.0625
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 		<secondaryAttackReason>autoshoot</secondaryAttackReason>
@@ -2906,11 +2906,11 @@
 			<ignoreModules>true</ignoreModules>
 		</distanceDamage>
 		<hitDeviceChanceMultiplier>
-			0.5
+			0.3
 			<!--BW_String-->
 		</hitDeviceChanceMultiplier>
 		<hitCrewChanceMultiplier>
-			0.5
+			0.3
 			<!--BW_String-->
 		</hitCrewChanceMultiplier>
 	</_120mm_M820_HEAT_MBT>

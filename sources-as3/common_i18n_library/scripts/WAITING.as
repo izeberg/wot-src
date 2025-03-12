@@ -217,10 +217,6 @@ package
       
       public static const DOWNLOAD_REFPROGRAM:String = "#waiting:download/refProgram";
       
-      public static const DOWNLOAD_BOB:String = "#waiting:download/bob";
-      
-      public static const BOB_CLAIMREWARD:String = "#waiting:bob/claimReward";
-      
       public static const UPDATINGSKILLWINDOW:String = "#waiting:updatingSkillWindow";
       
       public static const PREBATTLE_CREATE:String = "#waiting:prebattle/create";

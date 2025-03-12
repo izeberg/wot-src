@@ -67,7 +67,7 @@ package net.wg.data.constants.generated
       
       public static const ABILITY_STATE:int = 31;
       
-      public static const PYROMETER_STATE:int = 32;
+      public static const THERMAL_VISION_STATE:int = 32;
        
       
       public function BATTLE_MARKER_STATES()

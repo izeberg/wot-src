@@ -171,8 +171,6 @@ package
       
       public static const PREBATTLE_VEHICLEINVALID_WILLBEUNLOCKEDINBATTLE:String = "#system_messages:prebattle/vehicleInvalid/willBeUnlockedInBattle";
       
-      public static const PREBATTLE_VEHICLEINVALID_BOBONLY:String = "#system_messages:prebattle/vehicleInvalid/bobOnly";
-      
       public static const PREBATTLE_VEHICLEINVALID_NOTSETREADYSTATUS:String = "#system_messages:prebattle/vehicleInvalid/notSetReadyStatus";
       
       public static const PREBATTLE_VEHICLEINVALID_FALLOUTONLY:String = "#system_messages:prebattle/vehicleInvalid/falloutOnly";
@@ -382,6 +380,8 @@ package
       public static const MEMORY_CRITICAL_TEX_WAS_LOWERED_TO_LOW:String = "#system_messages:memory_critical/tex_was_lowered_to_low";
       
       public static const MEMORY_CRITICAL_TEX_WAS_LOWERED_TO_MIN:String = "#system_messages:memory_critical/tex_was_lowered_to_min";
+      
+      public static const DX10_NODEFERRED_WARNING:String = "#system_messages:dx10_nodeferred_warning";
       
       public static const TRADINGERROR_TOO_MANY_OUT_OFFERS:String = "#system_messages:tradingError/TOO_MANY_OUT_OFFERS";
       
@@ -2724,10 +2724,6 @@ package
       public static const DEBUTBOXES_DISABLED_BODY:String = "#system_messages:debutBoxes/disabled/body";
       
       public static const COMP7_OPEN_SHOP:String = "#system_messages:comp7/open_shop";
-      
-      public static const BOB_CLAIMEREWARD_SERVER_ERROR_COOLDOWN:String = "#system_messages:bob/claimeReward/server_error/COOLDOWN";
-      
-      public static const BOB_CLAIMEREWARD_SERVER_ERROR:String = "#system_messages:bob/claimeReward/server_error";
       
       public static const PARAGONS_PROJECTAVAILABLE_TITLE:String = "#system_messages:paragons/projectAvailable/title";
       

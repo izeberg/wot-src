@@ -27,8 +27,6 @@ package net.wg.data.constants.generated
       
       public static const COMP7_MODIFIERS:String = "comp7Modifiers";
       
-      public static const BOB_MODIFIERS:String = "bobModifiers";
-      
       public static const MINI_CLIENT:String = "miniClient";
       
       public static const BR_PANELS:String = "battleRoyalePanels";

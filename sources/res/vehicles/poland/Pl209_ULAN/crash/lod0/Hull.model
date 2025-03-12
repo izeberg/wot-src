@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl209_ULAN/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl209_ULAN/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.992018 -0.863602 -4.489250</min>
+		<max>1.884064 0.834332 4.513851</max>
+	</visibilityBox>
+</root>

@@ -2,9 +2,10 @@ import cPickle, functools, locale, sys, zlib, Account, AreaDestructibles, BigWor
 from MemoryCriticalController import g_critMemHandler
 from bootcamp.Bootcamp import g_bootcamp
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_DEBUG, LOG_ERROR, LOG_NOTE
-from gui import onRepeatKeyEvent, g_keyEventHandlers, g_mouseEventHandlers, InputHandler
+from gui import onRepeatKeyEvent, g_keyEventHandlers, g_mouseEventHandlers, InputHandler, SystemMessages
 from gui.shared import personality as gui_personality
 from gui.game_loading import loading as gameLoading
+from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from helpers import RSSDownloader, OfflineMode, LightingGenerationMode
 from helpers import dependency, log
 from messenger import MessengerEntry
@@ -59,7 +60,7 @@ def init(scriptConfig, engineConfig, userPreferences):
         gameLoading.startSound()
         import BattleReplay
         g_replayCtrl = BattleReplay.g_replayCtrl = BattleReplay.BattleReplay()
-        g_replayCtrl.registerWotReplayFileExtension()
+        g_replayCtrl.registerReplayFileExtension()
         g_bootcamp.replayCallbackSubscribe()
         import nation_change
         nation_change.init()
@@ -116,7 +117,7 @@ def init(scriptConfig, engineConfig, userPreferences):
         BigWorld.pauseDRRAutoscaling(True)
         if constants.HAS_DEV_RESOURCES:
             import development
-            development.init(isReplay=g_replayCtrl.isLoading)
+            development.init()
         gameLoading.step()
     except Exception:
         LOG_CURRENT_EXCEPTION()
@@ -193,6 +194,8 @@ def start():
         BigWorld.loginEntered()
         if not g_replayCtrl.isPlaying:
             WebBrowser.initExternalCache()
+        if BigWorld.dx10DeferredReset():
+            SystemMessages.pushI18nMessage(SYSTEM_MESSAGES.DX10_NODEFERRED_WARNING, type=SystemMessages.SM_TYPE.Warning)
         return
 
 

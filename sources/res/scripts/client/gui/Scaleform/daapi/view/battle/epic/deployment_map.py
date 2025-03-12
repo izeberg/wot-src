@@ -1,5 +1,6 @@
 import GUI
-from gui.Scaleform.daapi.view.battle.epic.minimap import _FRONT_LINE_DEV_VISUALIZATION_SUPPORTED, DevelopmentRespawnEntriesPlugin, EpicGlobalSettingsPlugin, HeadquartersStatusEntriesPlugin, MINIMAP_SCALE_TYPES, ProtectionZoneEntriesPlugin, RespawningPersonalEntriesPlugin, RecoveringVehiclesPlugin, SectorBaseEntriesPlugin, SectorOverlayEntriesPlugin, SectorStatusEntriesPlugin, StepRepairPointEntriesPlugin, EpicMinimapPingPlugin
+from gui.Scaleform.daapi.view.battle.epic.minimap import _FRONT_LINE_DEV_VISUALIZATION_SUPPORTED, DevelopmentRespawnEntriesPlugin, EpicGlobalSettingsPlugin, HeadquartersStatusEntriesPlugin, MINIMAP_SCALE_TYPES, METERS_IN_1X_ZOOM, ProtectionZoneEntriesPlugin, RespawningPersonalEntriesPlugin, RecoveringVehiclesPlugin, SectorBaseEntriesPlugin, SectorOverlayEntriesPlugin, SectorStatusEntriesPlugin, EpicMinimapPingPlugin
+from gui.Scaleform.daapi.view.battle.shared.minimap.plugin_items.step_repair_point_entries import StepRepairPointEntriesPlugin
 from gui.Scaleform.daapi.view.battle.shared.minimap import settings
 from gui.Scaleform.daapi.view.battle.shared.minimap.component import _IMAGE_PATH_FORMATTER
 from gui.Scaleform.daapi.view.meta.EpicDeploymentMapMeta import EpicDeploymentMapMeta
@@ -17,6 +18,10 @@ class EpicDeploymentMapComponent(EpicDeploymentMapMeta):
         self._bounds = None
         self._hitAreaSize = minimap_utils.EPIC_MINIMAP_HIT_AREA
         return
+
+    def _populate(self):
+        super(EpicDeploymentMapComponent, self)._populate()
+        self._updateThermalSectorSize(METERS_IN_1X_ZOOM, MINIMAP_SCALE_TYPES.REAL_SCALE)
 
     def getVisualBounds(self):
         if not self._bounds:

@@ -1,6 +1,5 @@
 from gui.Scaleform.daapi.view.battle.shared.minimap.common import EntriesPlugin
 from gui.Scaleform.daapi.view.battle.shared.minimap.settings import THERMAL_VISION_SECTOR_AS3_DESCR, ENTRY_SYMBOL_NAME, CONTAINER_NAME
-from gui.battle_control import avatar_getter
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 from wotdecorators import noexcept
@@ -16,8 +15,6 @@ class BaseSectorPlugin(EntriesPlugin):
 
     def __init__(self, parent, clazz=None):
         super(BaseSectorPlugin, self).__init__(parent, clazz)
-        self.__fov = None
-        self.__distance = None
         self.__id = None
         return
 
@@ -40,13 +37,13 @@ class BaseSectorPlugin(EntriesPlugin):
         super(BaseSectorPlugin, self).start()
         ctrl = self._sessionProvider.shared.feedback
         if ctrl is not None:
-            ctrl.onMinimapFeedbackReceived += self.__onMinimapFeedbackReceived
+            ctrl.onMinimapFeedbackReceived += self._onMinimapFeedbackReceived
         return
 
     def stop(self):
         ctrl = self._sessionProvider.shared.feedback
         if ctrl is not None:
-            ctrl.onMinimapFeedbackReceived -= self.__onMinimapFeedbackReceived
+            ctrl.onMinimapFeedbackReceived -= self._onMinimapFeedbackReceived
         super(BaseSectorPlugin, self).stop()
         return
 
@@ -57,18 +54,29 @@ class BaseSectorPlugin(EntriesPlugin):
         self._toggleVisibility(False)
 
     def setSectorSettings(self, fov, distance):
-        if self.__fov == fov and self.__distance == distance:
-            return
-        self.__fov = fov
-        self.__distance = distance
         self.show()
         self._invoke(self.__id, THERMAL_VISION_SECTOR_AS3_DESCR.AS_SET_SETTINGS, fov, distance)
+
+    def updateScaleType(self, doClip, scaleType):
+        if self.__id is None:
+            return
+        else:
+            self._parentObj.setEntryParameters(self.__id, doClip=doClip, scaleType=scaleType)
+            return
+
+    def updateMapSize(self, value):
+        if self.__id is None:
+            return
+        else:
+            self._invoke(self.__id, THERMAL_VISION_SECTOR_AS3_DESCR.AS_INIT_MAP_SIZE, value)
+            return
 
     def _toggleVisibility(self, state):
         if self.__id is None:
             return
         else:
             self._invoke(self.__id, THERMAL_VISION_SECTOR_AS3_DESCR.AS_UPDATE_VISIBILITY, state)
+            self._setActive(self.__id, state)
             return
 
     def _toggleActive(self, state):
@@ -88,11 +96,6 @@ class BaseSectorPlugin(EntriesPlugin):
             self.__id = self._addEntry(ENTRY_SYMBOL_NAME.THERMAL_VISION_ENTRY, CONTAINER_NAME.PERSONAL, matrix=matrix, active=self.isEnabled)
             self._invoke(self.__id, THERMAL_VISION_SECTOR_AS3_DESCR.AS_INIT_MAP_SIZE, mapMaxSize)
             return
-
-    def __onMinimapFeedbackReceived(self, eventID, entityID, value):
-        if avatar_getter.getVehicleIDAttached() != entityID:
-            return
-        self._onMinimapFeedbackReceived(eventID, entityID, value)
 
     @noexcept
     def __preWarm(self):

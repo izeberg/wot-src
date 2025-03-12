@@ -1749,6 +1749,14 @@ msgstr "ТАНКОВАЯ АКАДЕМИЯ"
 msgid "serviceChannelMessages/battleMatters/token"
 msgstr "Жетон академии"
 
+msgid "serviceChannelMessages/battlePass/capReset/header"
+msgstr "Обновлён еженедельный лимит очков Боевого пропуска"
+
+msgid "serviceChannelMessages/battlePass/capReset/text"
+msgstr ""
+"Накопление очков Боевого пропуска на всей технике VI-XI уровня началось заново.\n"
+"Лимит очков обновляется еженедельно. Успейте достигнуть лимита очков, чтобы получить награду."
+
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "Использованы нераспределённые очки"
 
@@ -1761,13 +1769,13 @@ msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатное оборудование на выбор"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
-msgstr "Достигнут лимит очков"
+msgstr "Достигнут еженедельный лимит очков Боевого пропуска"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/text"
 msgstr ""
-"Заработано максимальное количество очков на %(vehName)s.\n"
-"Награда за достижение лимита: %(bonusPoints)s.\n"
-"Чтобы продолжить зарабатывать очки, смените машину."
+"На %(vehNameHighlight)s заработано максимальное количество очков, доступное в неделю.\n"
+"Получено очков в награду: %(bonusPoints)s\n"
+"Лимит очков и награда обновляются еженедельно. Возвращайтесь позже, чтобы продолжить зарабатывать очки на %(vehName)s."
 
 msgid "serviceChannelMessages/battlePass/styleChosen/header"
 msgstr "Поздравляем!"
@@ -3618,9 +3626,6 @@ msgid "serviceChannelMessages/sysMsg/removeCustomizations"
 msgstr ""
 "Из-за смены модулей следующие элементы внешнего вида были сняты с "
 "%(vehicle)s."
-
-msgid "serviceChannelMessages/sysMsg/titles/bobBattlesAvailable"
-msgstr "Бои Битвы блогеров доступны"
 
 msgid "serviceChannelMessages/sysMsg/titles/customization"
 msgstr "Изменение внешнего вида:"

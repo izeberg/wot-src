@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/intunion/Un14_T54D/crash/lod4/Chassis</nodefullVisual>
 	<visibilityBox>
 		<min>-1.611429 0.012308 -2.939164</min>
 		<max>1.611429 1.057300 2.894842</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/crash/lod4/Chassis</nodefullVisual>
 </root>

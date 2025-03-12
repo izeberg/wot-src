@@ -3,8 +3,8 @@
 	<parent>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod4/Hull</parent>
 	<extent>192.000000</extent>
 	<visibilityBox>
-		<min>-1.753315 0.038415 -3.489230</min>
-		<max>1.759462 1.927953 3.307766</max>
+		<min>-1.753315 -1.017427 -3.489230</min>
+		<max>1.759462 0.872110 3.307766</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod3/Hull</nodefullVisual>

@@ -208,9 +208,15 @@ msgstr "Вентыляцыя"
 msgid "archetype/modernizedAimDrivesAimingStabilizer/name/noTemplate"
 msgstr "Сістэма кіравання агнём"
 
+msgid "archetype/modernizedDamageVentilation/name/noTemplate"
+msgstr "Расточка каморы"
+
 msgid ""
 "archetype/modernizedExtraHealthReserveAntifragmentationLining/name/noTemplate"
 msgstr "Комплекс паляпшэння выжывальнасці"
+
+msgid "archetype/modernizedTankRammerSights/name/noTemplate"
+msgstr "Шматзубая карэтка дасыльніка"
 
 msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
 msgstr "Сістэма павышэння мабільнасці"
@@ -728,10 +734,11 @@ msgstr "Марш-кідок"
 msgid "comp7_recon/descr/active"
 msgstr ""
 "Праз {colorTagOpen}%(delay)d с{colorTagClose} над выбранай вамі зонай "
-"праляціць самалёт-выведнік. Заўважаная ў радыусе "
-"{colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d м{colorTagClose} "
-"тэхніка праціўніка будзе заставацца выяўленай на працягу "
-"{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}."
+"радыусам {colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d "
+"м{colorTagClose} праляліць самалёт-выведнік. Тэхніка праціўніка, заўважаная "
+"ў гэтай зоне, застанецца выяўленай на працягу "
+"{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}"
+" або пакуль не пакіне яе."
 
 msgid "comp7_recon/name"
 msgstr "Самалёт-выведнік"
@@ -771,11 +778,11 @@ msgstr "Трапны цалок"
 
 msgid "comp7_sure_shot/descr/active"
 msgstr ""
-"На наступныя {colorTagOpen}%(duration)d с{colorTagClose} памяншае роскід гарматы падчас руху, паваротаў шасі, павароту вежы і пасля стрэлу на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
+"На наступныя {colorTagOpen}%(duration)d с{colorTagClose} памяншае роскід гарматы падчас руху, пры паваротах шасі і вежы на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
 "\n"
-"Прычыненне пашкоджанняў стрэлам падчас дзеяння звычкі скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} ад адсотка, на які зменшылася трываласць машыны супраціўніка.\n"
+"Прычыненне пашкоджанняў стрэлам падчас дзеяння навыку скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} ад працэнта, на які паменшылася трываласць машыны праціўніка.\n"
 "\n"
-"Знішчэнне супраціўніка стрэлам скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose}."
+"Знішчэнне тэхнікі праціўніка стрэлам скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose}."
 
 msgid "comp7_sure_shot/name"
 msgstr "Надзейны стрэл"
@@ -1712,6 +1719,36 @@ msgstr "Сістэма кіравання агнём T3"
 msgid "modernizedAimDrivesAimingStabilizer3/short_special"
 msgstr "Сістэма кіравання агнём T3"
 
+msgid "modernizedDamageVentilation"
+msgstr "Расточка каморы"
+
+msgid "modernizedDamageVentilation1/long_special"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation1/name"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation1/short_special"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation2/long_special"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation2/name"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation2/short_special"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation3/long_special"
+msgstr "Расточка каморы Т3"
+
+msgid "modernizedDamageVentilation3/name"
+msgstr "Расточка каморы Т3"
+
+msgid "modernizedDamageVentilation3/short_special"
+msgstr "Расточка каморы Т3"
+
 msgid "modernizedExtraHealthReserveAntifragmentationLining1/long_special"
 msgstr "Комплекс паляпшэння выжывальнасці T1"
 
@@ -1738,6 +1775,36 @@ msgstr "Комплекс паляпшэння выжывальнасці T3"
 
 msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
 msgstr "Комплекс паляпшэння выжывальнасці T3"
+
+msgid "modernizedTankRammerSights"
+msgstr "Шматзубая карэтка дасыльніка"
+
+msgid "modernizedTankRammerSights1/long_special"
+msgstr "Шматзубая карэтка дасыльніка Т1"
+
+msgid "modernizedTankRammerSights1/name"
+msgstr "Шматзубая карэтка дасыльніка Т1"
+
+msgid "modernizedTankRammerSights1/short_special"
+msgstr "Шматзубая карэтка дасыльніка Т1"
+
+msgid "modernizedTankRammerSights2/long_special"
+msgstr "Шматзубая карэтка дасыльніка Т2"
+
+msgid "modernizedTankRammerSights2/name"
+msgstr "Шматзубая карэтка дасыльніка Т2"
+
+msgid "modernizedTankRammerSights2/short_special"
+msgstr "Шматзубая карэтка дасыльніка Т2"
+
+msgid "modernizedTankRammerSights3/long_special"
+msgstr "Шматзубая карэтка дасыльніка Т3"
+
+msgid "modernizedTankRammerSights3/name"
+msgstr "Шматзубая карэтка дасыльніка Т3"
+
+msgid "modernizedTankRammerSights3/short_special"
+msgstr "Шматзубая карэтка дасыльніка Т3"
 
 msgid "modernizedTurbochargerRotationMechanism1/long_special"
 msgstr "Сістэма павышэння рухомасці T1"
@@ -1914,9 +1981,9 @@ msgstr ""
 
 msgid "rammerBattleBooster/descr"
 msgstr ""
-"%s ад часу набівання гарматы пры ўстаноўленым абсталяванні «Дасыльнік» "
-"(любога тыпу гарматы і калібру), «Эксперыментальная сістэма набівання» або "
-"«Трафейны дасыльнік»."
+"%s ад часу набівання гарматы пры пастаўленым абсталяванні «Дасыльнік» "
+"(любога тыпу гарматы і калібру), «Эксперыментальная сістэма набівання», "
+"«Трафейны дасыльнік» або «Шматзубая карэтка дасыльніка»."
 
 msgid "rammerBattleBooster/gain/deluxe"
 msgstr "-2,5%"
@@ -2024,6 +2091,29 @@ msgstr "Толькі для тэхнікі Чэхаславакіі."
 
 msgid "ration_czech/short_special"
 msgstr "Павялічвае эфектыўнасць чэхаславацкіх экіпажаў"
+
+msgid "ration_intunion/always"
+msgstr "%(crewLevel)s да ўсіх навыкаў экіпажа. Расходуецца за адзін бой."
+
+msgid "ration_intunion/descr"
+msgstr "{colorTagOpen}+10%{colorTagClose} да ўсіх навыкаў экіпажа."
+
+msgid "ration_intunion/long_special"
+msgstr ""
+"Аўтаматычна актывуецца пасля пачатку бою і дзейнічае на працягу ўсяго бою. "
+"Толькі для тэхнікі Зборнай дзяржаў."
+
+msgid "ration_intunion/name"
+msgstr "Кава з галетамі"
+
+msgid "ration_intunion/onUse"
+msgstr "?empty?"
+
+msgid "ration_intunion/restriction"
+msgstr "Толькі для тэхнікі Зборнай дзяржаў"
+
+msgid "ration_intunion/short_special"
+msgstr "Павышае эфектыўнасць экіпажаў Зборнай дзяржаў"
 
 msgid "ration_italy/always"
 msgstr "%(crewLevel)s да ўсіх навыкаў экіпажа. Расходуецца за адзін бой."

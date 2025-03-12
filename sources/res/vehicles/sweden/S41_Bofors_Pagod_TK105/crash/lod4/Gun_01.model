@@ -2,4 +2,8 @@
 <root>
 	<tank>true</tank>
 	<nodelessVisual>vehicles/sweden/S41_Bofors_Pagod_TK105/crash/lod4/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.273984 -0.167286 0.258252</min>
+		<max>0.271829 0.179768 7.421037</max>
+	</visibilityBox>
 </root>

@@ -219,6 +219,14 @@ package
       
       public static const DETAILSHELP_TANKWITHABILITY_MODIFICATIONS:String = "#ingame_help:detailsHelp/tankWithAbility/modifications";
       
+      public static const DETAILSHELP_THERMALVISION_PAGE1_TITLE:String = "#ingame_help:detailsHelp/thermalVision/page1/title";
+      
+      public static const DETAILSHELP_THERMALVISION_PAGE1:String = "#ingame_help:detailsHelp/thermalVision/page1";
+      
+      public static const DETAILSHELP_THERMALVISION_PAGE2_TITLE:String = "#ingame_help:detailsHelp/thermalVision/page2/title";
+      
+      public static const DETAILSHELP_THERMALVISION_PAGE2:String = "#ingame_help:detailsHelp/thermalVision/page2";
+      
       public static const DETAILSHELP_BATTLEROYALE_RADAR_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/radar/title";
       
       public static const DETAILSHELP_BATTLEROYALE_RADAR_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/radar/description";

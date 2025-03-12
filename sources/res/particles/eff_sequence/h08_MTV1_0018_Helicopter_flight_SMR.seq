@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>60.000004</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>57.450073 -1.027187 -27.072693</value>
+				<inTangent>40.888554 0.994120 -1.364223</inTangent>
+				<outTangent>40.888554 0.994120 -1.364223</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>2510.763672 58.620029 -108.926086</value>
+				<inTangent>40.888554 0.994120 -1.364223</inTangent>
+				<outTangent>40.888554 0.994120 -1.364223</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>60.000000</duration>
+				<value>particles/eff_sequence/h08_MTV1_0018_Helicopter_SMR.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_h08_helicopter_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>60.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>60.000000</duration>
+				<sequenceSound>hangar_h08_helicopter</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

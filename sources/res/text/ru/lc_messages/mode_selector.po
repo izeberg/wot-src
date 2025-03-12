@@ -42,7 +42,7 @@ msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
 msgstr ""
 "Играя в режиме {whiteSpanish_open}«Стальной охотник»{whiteSpanish_close}, вы"
 " будете зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
-"проуска."
+"пропуска."
 
 msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "Очки Боевого пропуска"
@@ -52,12 +52,6 @@ msgstr "Каждый сам за себя!"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "Стальной охотник"
-
-msgid "mode/bob/condition"
-msgstr "7x7 %(parSecondary_open)sI%(parSecondary_close)s X&nbsp;уровень"
-
-msgid "mode/bob/description"
-msgstr "Бои между командами известных блогеров."
 
 msgid "mode/bootcamp/call/1"
 msgstr "Пройдите и получите награду"
@@ -92,10 +86,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Событие «Ледяной медведь» завершено"
+msgstr "Событие «Грозовой медведь» завершено"
 
 msgid "mode/comp7/seasonStart"
-msgstr "Событие «Ледяной медведь» начнётся %(date)s"
+msgstr "Событие «Грозовой медведь» начнётся %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Ранговая неактивность"
@@ -215,6 +209,16 @@ msgstr ""
 
 msgid "mode/specBattlesList/description"
 msgstr "Глобальная карта и турниры."
+
+msgid "mode/strongholdsBattlesList/battlePassTooltip/body"
+msgstr ""
+"Участвуя в {whiteSpanish_open}Вылазках{whiteSpanish_close} и "
+"{whiteSpanish_open}Наступлениях{whiteSpanish_close} в Укрепрайоне, вы будете"
+" зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
+"пропуска."
+
+msgid "mode/strongholdsBattlesList/battlePassTooltip/header"
+msgstr "Очки Боевого пропуска"
 
 msgid "mode/strongholdsBattlesList/call/1"
 msgstr "Сражайтесь легионером"

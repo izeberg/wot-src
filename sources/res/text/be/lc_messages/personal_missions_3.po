@@ -127,6 +127,9 @@ msgstr "Прагрэс: %(from)s / %(to)s"
 msgid "QuestView/conditionProgress/short"
 msgstr "%(from)s / %(to)s"
 
+msgid "QuestView/content/btn/chooseReward"
+msgstr "Выбраць узнагароду"
+
 msgid "QuestView/infoText/default"
 msgstr "Задача выконваецца на тэхніцы %(value)s узроўню"
 
@@ -138,6 +141,18 @@ msgstr "Распачаць выкананне"
 
 msgid "QuestView/orQuest"
 msgstr "АБО"
+
+msgid "QuestView/pauseButton/name/pause"
+msgstr "Паўза"
+
+msgid "QuestView/pauseButton/name/resume"
+msgstr "Аднавіць"
+
+msgid "QuestView/pauseButton/tooltip/body/pause"
+msgstr "Націсніце, каб паставіць прагрэс выканання задачы на паўзу."
+
+msgid "QuestView/pauseButton/tooltip/body/resume"
+msgstr "Націсніце, каб працягваць выкананне задачы."
 
 msgid "QuestView/questTitle/available"
 msgstr "Асноўная ўмова"
@@ -189,10 +204,10 @@ msgstr "Няўдача"
 
 msgid "QuestView/repeatTitle/tooltip/biathlon"
 msgstr ""
-"За ўказаную колькасці спробаў неабходна правесці пэўную колькасць баёў, у "
-"якіх будзе выканана пастаўленая ўмова. Калі колькасць спроб, якая "
-"застанецца, будзе меншай за неабходную колькасць выкананых умоваў, то "
-"прагрэс будзе аўтаматычна скінуты, а выкананне задачы пачнецца нанова."
+"За ўказаную колькасці спроб неабходна правесці пэўную колькасць баёў, у якіх"
+" будзе выканана пастаўленая ўмова. Калі колькасць спроб, якая застанецца, "
+"будзе меншай за неабходную колькасць выкананых умоў, то прагрэс будзе "
+"аўтаматычна скінуты, а выкананне задачы пачнецца нанова."
 
 msgid "QuestView/repeatTitle/tooltip/counter"
 msgstr "Прагрэс залічваецца, калі ў межах бою былі выкананы ўсе ўмовы."
@@ -201,6 +216,15 @@ msgid "QuestView/repeatTitle/tooltip/series"
 msgstr ""
 "Умовы трэба выконваць у кожным баі серыі запар. Няўдача ў адным баі "
 "перапыніць серыю, і трэба будзе пачынаць нанова."
+
+msgid "QuestView/resetButton/name"
+msgstr "Скінуць"
+
+msgid "QuestView/resetButton/tooltip/body/disabled"
+msgstr "Нельга скінуць задачу з адсутным прагрэсам яе выканання."
+
+msgid "QuestView/resetButton/tooltip/body/enabled"
+msgstr "Націсніце, каб скінуць увесь ход выканання задачы."
 
 msgid "QuestView/subtitle/available"
 msgstr "Задача выконваецца на тэхніцы %(value)s узроўню"
@@ -222,6 +246,9 @@ msgstr "Асноўная ўмова выканана: задача выконв�
 
 msgid "QuestView/subtitle/no_tech"
 msgstr "Недаступна: няма прыдатнай тэхнікі %(value)s узроўню"
+
+msgid "QuestView/subtitle/pause"
+msgstr "Задача пастаўлена на паўзу."
 
 msgid "QuestView/subtitle/previous_progress"
 msgstr "Недаступна: завяршыце аперацыю «%(value)s»"
@@ -304,7 +331,7 @@ msgstr ""
 "узроўню"
 
 msgid "QuestsView/header/title/text"
-msgstr "ОПЕРАЦИЯ «%(operationName)»"
+msgstr "АПЕРАЦЫЯ «%(operationName)»"
 
 msgid "QuestsView/lockProgress/text"
 msgstr "%(current)s / %(total)s"
@@ -322,7 +349,7 @@ msgid "ResetView/cancelButton"
 msgstr "Скасаваць"
 
 msgid "ResetView/closeButton"
-msgstr "Закрыць"
+msgstr "ЗАКРЫЦЬ"
 
 msgid "ResetView/subtitle"
 msgstr "Увесь прагрэс задачы «%(id)s» будзе скінуты."
@@ -349,7 +376,7 @@ msgid "RewardsView/content/questCount/divider"
 msgstr "/"
 
 msgid "RewardsView/content/questCount/text"
-msgstr "Выканана задач з адзнакай для атрымання ўзнагароды «Атэстацыя»"
+msgstr "Выканана задач з адзнакай для атрымання ўзнагароды этапу «Атэстацыя»"
 
 msgid "RewardsView/footer/allFlagTasksComplete"
 msgstr ""
@@ -573,10 +600,10 @@ msgstr "Выбар часова недаступны"
 msgid "selectBonus/etc"
 msgstr "...і іншае абсталяванне."
 
-msgid "selectBonus/expequipments"
+msgid "selectBonus/expequipments_gift"
 msgstr "Эксперыментальнае абсталяванне на выбар"
 
-msgid "selectBonus/new_device_pm3"
+msgid "selectBonus/new_device_pm3_gift"
 msgstr "Абсталяванне на выбар"
 
 msgid "selectBonus/point"
@@ -587,8 +614,8 @@ msgstr "Націсніце, каб прапусціць відэа."
 
 msgid "tooltips/OperationsView/lastOperation/active/body"
 msgstr ""
-"Для получения техники необходимо выполнить с отличием все пятые (замыкающие)"
-" задачи кампании «Новые горизонты»."
+"Для атрымання тэхнікі неабходна выканаць з адзнакай усе пятыя (замыкальныя) "
+"задачы кампаніі «Новыя гарызонты»."
 
 msgid "tooltips/OperationsView/lastOperation/active/completedText"
 msgstr "Выканана пятых задач з адзнакай:"
@@ -1083,6 +1110,9 @@ msgstr ""
 msgid "tooltips/questCard/footer/additional/notAvailablePrevQuestNotCompleted"
 msgstr "Завяршыце аперацыю «%(operationName)»"
 
+msgid "tooltips/questCard/footer/additional/pause"
+msgstr "Даступная для выканання"
+
 msgid "tooltips/questCard/footer/additional/previousProgress"
 msgstr "Завяршыце аперацыю «%(prevOperationName)s»"
 
@@ -1104,11 +1134,17 @@ msgstr "Выканана з адзнакай"
 msgid "tooltips/questCard/footer/inProgress"
 msgstr "Выконваецца"
 
+msgid "tooltips/questCard/footer/inProgressHonor"
+msgstr "Выконваецца з адзнакай"
+
 msgid "tooltips/questCard/footer/lock"
 msgstr "Недаступная"
 
 msgid "tooltips/questCard/footer/noTech"
 msgstr "Недаступная"
+
+msgid "tooltips/questCard/footer/pause"
+msgstr "Задача прыпынена"
 
 msgid "tooltips/questCard/footer/previousProgress"
 msgstr "Недаступная"
@@ -1126,4 +1162,4 @@ msgid "tooltips/questCard/header/mainCondition"
 msgstr "Асноўная ўмова:"
 
 msgid "tooltips/questCard/header/switch"
-msgstr "%(id)s %(questName)s"
+msgstr "%(questName)s"

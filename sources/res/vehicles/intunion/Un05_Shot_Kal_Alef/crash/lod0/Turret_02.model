@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un05_Shot_Kal_Alef/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.590407 -0.020423 -2.223264</min>
+		<max>1.533585 1.686429 1.288334</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un05_Shot_Kal_Alef/crash/lod0/Turret_02</nodefullVisual>
+</root>

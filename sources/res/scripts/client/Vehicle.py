@@ -1026,6 +1026,8 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             self.__onVehicleDeath(True)
         if self.stunInfo.stunFinishTime > 0.0:
             self.updateStunInfo()
+        if self.thermalVisionFinishTime > 0.0:
+            self.set_thermalVisionFinishTime()
 
     def refreshNationalVoice(self):
         player = BigWorld.player()
@@ -1304,9 +1306,17 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             self.set_remoteCamera()
         if hasattr(self, 'ownVehicle'):
             self.ownVehicle.initialUpdate(True)
+        self.set_thermalVisionFinishTime()
 
     def set_remoteCamera(self, _=None):
         self.ownVehicle.update_remoteCamera(self.remoteCamera)
+
+    def set_thermalVisionFinishTime(self, _=None):
+        if not self.isPlayerVehicle:
+            ctrl = self.guiSessionProvider.shared.feedback
+            if ctrl is not None:
+                ctrl.invalidateThermalVisionFinishTime(self.id, self.thermalVisionFinishTime)
+        return
 
     def getVseContextInstance(self, contextName):
         from visual_script.contexts.cgf_context import CGFGameObjectContext

@@ -372,7 +372,7 @@ msgid "mttv/CameraView/cameraCheckboxOverrideArrows"
 msgstr "Перехват стрелок (для поворота камеры в аркадном режиме)"
 
 msgid "mttv/CameraView/cameraCheckboxShaker"
-msgstr "Пошатывание камены в движении"
+msgstr "Пошатывание камеры в движении"
 
 msgid "mttv/CameraView/cameraCheckboxVerticalFixation"
 msgstr "Закрепить высоту камеры"
@@ -428,6 +428,9 @@ msgstr "Коэффициент поворота в инертном режиме
 msgid "mttv/CameraView/cameraLabelVerticalFov"
 msgstr "Вертикальный FOV (в градусах)"
 
+msgid "mttv/CameraView/cameraLockRollCheckbox"
+msgstr "Лок крена свободной камеры"
+
 msgid "mttv/CameraView/cameraView"
 msgstr "Камера"
 
@@ -467,9 +470,6 @@ msgstr "Конфигурация"
 msgid "mttv/FrameEditView/addFrame"
 msgstr "Add Frame"
 
-msgid "mttv/FrameEditView/addInfo"
-msgstr "Add Info"
-
 msgid "mttv/FrameEditView/apply"
 msgstr "Apply"
 
@@ -487,6 +487,9 @@ msgstr "FOV"
 
 msgid "mttv/FrameEditView/frameEdit"
 msgstr "Frame Edit"
+
+msgid "mttv/FrameEditView/groupDeletion"
+msgstr "Delete group"
 
 msgid "mttv/FrameEditView/play"
 msgstr "Play"
@@ -706,6 +709,9 @@ msgstr "Настройки"
 
 msgid "mttv/OptionsView/timeWarpShift"
 msgstr "Перемотка при нажатом Shift (сек.)"
+
+msgid "mttv/RecordsView/InterpolationStep"
+msgstr "шаг выборки интерполяции(кол-во фреймов в 1 с)"
 
 msgid "mttv/RecordsView/bezierControlTension"
 msgstr "Жёсткость контрольных точек:"

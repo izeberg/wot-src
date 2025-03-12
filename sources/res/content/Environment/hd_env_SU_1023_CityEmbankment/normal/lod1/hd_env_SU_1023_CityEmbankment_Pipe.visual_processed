@@ -83,6 +83,10 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Metal_02_Rusted_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.005275 9.208517 -0.030817</groupOrigin>
 			</primitiveGroup>

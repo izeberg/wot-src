@@ -30,7 +30,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 3.000000</row3>
+						<row3>0.000000 0.000000 3.016137</row3>
 					</transform>
 					<node>
 						<identifier>HP_gunFire</identifier>
@@ -47,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>0.000000 0.000000 -3.016137</row3>
 						</transform>
 					</node>
 				</node>
@@ -205,6 +205,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst/VNII_100LT_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.322706 0.009775 -1.300336</groupOrigin>

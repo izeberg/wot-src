@@ -5128,6 +5128,10 @@ def _writeGun(item, section, sharedSections, materialData, *args, **kwargs):
     _xml.rewriteVector3(section, 'shotOffset', item.shotOffset, (0, 0, 0))
     _xml.rewriteVector2(section, 'turretYawLimits', item.editorTurretYawLimits)
     _writeGunEffectName(item, section)
+    for shootItem in item.editorData.shootEffects:
+        shootItem.saveChangedEffects()
+
+    item.editorShells.saveShells()
     _writeCamouflageSettings(section, 'camouflage', item.camouflage)
     _writeArmor(item.materials, section, materialData.get(item.name + kwargs['parentName'], None) if materialData is not None else None)
     slots = item.emblemSlots + item.slotsAnchors
@@ -5155,11 +5159,11 @@ def _writeGunEffectName(item, section):
     else:
         effectName = getEffectNameByEffect(effects)
     if item.dualGun and item.dualGun is not component_constants.DEFAULT_GUN_DUALGUN:
-        _xml.rewriteString(section, 'multiGunEffects', effectName)
+        _xml.rewriteString(section.getPrioritySection(), 'multiGunEffects', effectName)
     elif len(effectName.split(' ')) > 1:
-        _xml.rewriteString(section, 'multiGunEffects', effectName)
+        _xml.rewriteString(section.getPrioritySection(), 'multiGunEffects', effectName)
     else:
-        _xml.rewriteString(section, 'effects', effectName)
+        _xml.rewriteString(section.getPrioritySection(), 'effects', effectName)
     return
 
 
@@ -6305,6 +6309,14 @@ def __checkIncorrectVehicleType(vehicleCD, vehicleName, xmlCtx):
         _xml.raiseWrongXml(xmlCtx, '', ('{0} does not satisfy condition: vehicle should not be premium, special or collector').format(vehicleName))
 
 
+def createShotEffectFromExisting(newIndex, oldDescr, oldSection):
+    descr = {'index': newIndex}
+    descr.update(_readShotEffects((None, oldSection.name), oldSection))
+    if IS_CLIENT or IS_UE_EDITOR:
+        descr['prereqs'] = oldDescr['prereqs']
+    return descr
+
+
 def _readShotEffects(xmlCtx, section):
     res = {}
     res['targetStickers'] = {}
@@ -7321,9 +7333,7 @@ def _readTemperatureMechanics(xmlCtx, section, paramName):
         thermalStateHysteresis = _xml.readPositiveInt(subXmlCtx, section, 'thermalStateHysteresis')
         if thermalStateHysteresis > MAX_SUPPORTED_THERMAL_HYSTERESIS:
             _xml.raiseWrongXml(subXmlCtx, '', 'Not supported thermal hysteresis value')
-        temperatureSegmentSize = _xml.readNonNegativeFloat(subXmlCtx, section, 'temperatureSegmentSize')
-        defaultValues = (
-         heatingPerShot, heatingPerSec, coolingPerSec, coolingDelay, coolingOverheatPerSec)
+        defaultValues = (heatingPerShot, heatingPerSec, coolingPerSec, coolingDelay, coolingOverheatPerSec)
         states = []
         for tag, subsection in section['thermalStates'].items():
             if tag == 'state':
@@ -7359,7 +7369,7 @@ def _readTemperatureMechanics(xmlCtx, section, paramName):
                 _xml.raiseWrongXml(subXmlCtx, '', 'states have too small temperature range')
             temperatureThresholds.append((minThreshold - thermalStateHysteresis, maxThreshold + thermalStateHysteresis))
 
-        return gun_components.TemperatureGunParams(states=states, temperatureThresholds=temperatureThresholds, temperatureSegmentSize=temperatureSegmentSize)
+        return gun_components.TemperatureGunParams(states=states, temperatureThresholds=temperatureThresholds)
 
 
 def __validateTemperatureModifiers(xmlCtx, modifiers):

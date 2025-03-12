@@ -1104,6 +1104,9 @@ msgstr "от скорости сведения"
 msgid "kpi/bonus/negative/vehicleGunAndGunClipCooldown"
 msgstr "от скорости перезарядки"
 
+msgid "kpi/bonus/negative/vehicleGunDamage"
+msgstr "от среднего урона"
+
 msgid "kpi/bonus/negative/vehicleGunKillReloadTime"
 msgstr "от перезарядки орудия"
 
@@ -1286,13 +1289,13 @@ msgstr "к негативному эффекту оглушения"
 msgid "kpi/bonus/positive/temperatureCoolingDelay"
 msgstr "Задержка охлаждения"
 
-msgid "kpi/bonus/positive/temperatureCoolingPerSec"
+msgid "kpi/bonus/positive/temperatureCoolingTime"
 msgstr "Время охлаждения"
 
 msgid "kpi/bonus/positive/temperatureDamageFactor"
 msgstr "Модификатор среднего урона"
 
-msgid "kpi/bonus/positive/temperatureHeatingPerSec"
+msgid "kpi/bonus/positive/temperatureHeatingTime"
 msgstr "Время нагревания"
 
 msgid "kpi/bonus/positive/temperatureStatesCount"
@@ -1368,6 +1371,9 @@ msgstr "к скорости сведения"
 
 msgid "kpi/bonus/positive/vehicleGunAndGunClipCooldown"
 msgstr "от скорости перезарядки"
+
+msgid "kpi/bonus/positive/vehicleGunDamage"
+msgstr "к среднему урону"
 
 msgid "kpi/bonus/positive/vehicleGunKillReloadTime"
 msgstr "к перезарядке орудия"
@@ -1869,13 +1875,13 @@ msgstr "Количество учитываемых попаданий (по к�
 msgid "kpi/title/temperatureCoolingDelay"
 msgstr "Задержка охлаждения (с)"
 
-msgid "kpi/title/temperatureCoolingPerSec"
+msgid "kpi/title/temperatureCoolingTime"
 msgstr "Время охлаждения (с)"
 
 msgid "kpi/title/temperatureDamageFactor"
 msgstr "Модификатор среднего урона"
 
-msgid "kpi/title/temperatureHeatingPerSec"
+msgid "kpi/title/temperatureHeatingTime"
 msgstr "Время нагревания (с)"
 
 msgid "kpi/title/temperatureStatesCount"

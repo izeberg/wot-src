@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.340816 -0.293974 -1.018072</min>
+		<max>0.915818 0.511479 6.197693</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch52_WZ_122_6_F3/_skins/Ch52_WZ_122_6_F3_3Dst/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch52_WZ_122_6_F3/_skins/Ch52_WZ_122_6_F3_3Dst/crash/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+</root>

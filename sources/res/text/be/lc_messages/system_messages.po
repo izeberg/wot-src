@@ -595,12 +595,6 @@ msgstr ""
 msgid "blueprints/switch_on"
 msgstr "Чарцяжы тэхнікі зноў даступныя."
 
-msgid "bob/claimeReward/server_error"
-msgstr "Памылка сервера"
-
-msgid "bob/claimeReward/server_error/COOLDOWN"
-msgstr "Дзеянне недаступнае. Дачакайце заканчэння бягучай аперацыі."
-
 msgid "bonuses/booster/value"
 msgstr "%(name)s (×%(count)d)"
 
@@ -1467,6 +1461,11 @@ msgstr "Дынамічная разрознасць паменшаная да %(
 
 msgid "drr_scale/step_up"
 msgstr "Дынамічная разрознасць павялічаная да %(scale)d%%."
+
+msgid "dx10_nodeferred_warning"
+msgstr ""
+"Ваша відэакарта не падтрымлівае опцыю «Палепшаная графіка». Налада зменена "
+"на опцыю «Стандартная графіка»."
 
 msgid "epicBattles/levelUp/awards"
 msgstr "Атрымана ўзнагарода:"
@@ -2918,9 +2917,6 @@ msgstr "Выбраная машына не можа браць удзел у г�
 
 msgid "prebattle/teamInvalid/observers"
 msgstr "Каманда не можа складацца толькі з назіральнікаў."
-
-msgid "prebattle/vehicleInvalid/bobOnly"
-msgstr "Выбраная машына прыдатная толькі для рэжыму «Бітва блогераў»."
 
 msgid "prebattle/vehicleInvalid/epicOnly"
 msgstr "Выбраная машына прыдатная толькі для рэжыму «Лінія фронту»."

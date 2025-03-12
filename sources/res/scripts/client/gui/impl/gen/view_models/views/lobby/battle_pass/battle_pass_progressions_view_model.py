@@ -34,9 +34,9 @@ class BattlePassProgressionsViewModel(CommonViewModel):
     __slots__ = ('onClose', 'onActionClick', 'onTakeClick', 'onTakeAllClick', 'onOpenShopClick',
                  'onAboutClick', 'onPointsInfoClick', 'onBpbitClick', 'onBpcoinClick',
                  'onTakeRewardsClick', 'onFinishedAnimation', 'onLevelsAnimationFinished',
-                 'onChapterChoice', 'onViewLoaded')
+                 'onChapterChoice', 'onViewLoaded', 'onTasksClick', 'onBuyBP', 'onBuyStages')
 
-    def __init__(self, properties=45, commands=15):
+    def __init__(self, properties=48, commands=18):
         super(BattlePassProgressionsViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -291,11 +291,33 @@ class BattlePassProgressionsViewModel(CommonViewModel):
     def setAvailableChapterTypes(self, value):
         self._setArray(43, value)
 
+    def getAvailableBattleTypes(self):
+        return self._getArray(44)
+
+    def setAvailableBattleTypes(self, value):
+        self._setArray(44, value)
+
+    @staticmethod
+    def getAvailableBattleTypesType():
+        return int
+
     def getExpireTime(self):
-        return self._getNumber(44)
+        return self._getNumber(45)
 
     def setExpireTime(self, value):
-        self._setNumber(44, value)
+        self._setNumber(45, value)
+
+    def getHasActiveChapter(self):
+        return self._getBool(46)
+
+    def setHasActiveChapter(self, value):
+        self._setBool(46, value)
+
+    def getShowHint(self):
+        return self._getBool(47)
+
+    def setShowHint(self, value):
+        self._setBool(47, value)
 
     def _initialize(self):
         super(BattlePassProgressionsViewModel, self)._initialize()
@@ -339,7 +361,10 @@ class BattlePassProgressionsViewModel(CommonViewModel):
         self._addBoolProperty('isSeasonEndingSoon', False)
         self._addStringProperty('chapterType')
         self._addArrayProperty('availableChapterTypes', Array())
+        self._addArrayProperty('availableBattleTypes', Array())
         self._addNumberProperty('expireTime', 0)
+        self._addBoolProperty('hasActiveChapter', False)
+        self._addBoolProperty('showHint', False)
         self.onClose = self._addCommand('onClose')
         self.onActionClick = self._addCommand('onActionClick')
         self.onTakeClick = self._addCommand('onTakeClick')
@@ -354,3 +379,6 @@ class BattlePassProgressionsViewModel(CommonViewModel):
         self.onLevelsAnimationFinished = self._addCommand('onLevelsAnimationFinished')
         self.onChapterChoice = self._addCommand('onChapterChoice')
         self.onViewLoaded = self._addCommand('onViewLoaded')
+        self.onTasksClick = self._addCommand('onTasksClick')
+        self.onBuyBP = self._addCommand('onBuyBP')
+        self.onBuyStages = self._addCommand('onBuyStages')

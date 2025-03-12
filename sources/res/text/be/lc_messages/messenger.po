@@ -1739,6 +1739,14 @@ msgstr "ТАНКАВАЯ АКАДЭМІЯ"
 msgid "serviceChannelMessages/battleMatters/token"
 msgstr "Жэтон акадэміі"
 
+msgid "serviceChannelMessages/battlePass/capReset/header"
+msgstr "Абноўлены штотыднёвы ліміт ачкоў Баявога пропуска"
+
+msgid "serviceChannelMessages/battlePass/capReset/text"
+msgstr ""
+"Назапашванне ачкоў Баявога пропуска на ўсёй тэхніцы VI-XI узроўню пачалося нанова.\n"
+"Ліміт ачкоў абнаўляецца штотыднёва. Паспейце дасягнуць ліміту ачкоў, каб атрымаць узнагароду."
+
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "Выкарыстаны неразмеркаваныя ачкі"
 
@@ -1751,13 +1759,13 @@ msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатнае абсталяванне на выбар"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
-msgstr "Дасягнуты ліміт ачкоў"
+msgstr "Дасягнуты штотыднёвы ліміт ачкоў Баявога пропуска"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/text"
 msgstr ""
-"Здабыта максімальная колькасць ачкоў на %(vehName)s.\n"
-"Узнагарода за дасягненне ліміту: %(bonusPoints)s.\n"
-"Каб далей здабываць ачкі, змяніце машыну."
+"На %(vehNameHighlight)s здабыта максімальная колькасць ачкоў, даступная на тыдзень.\n"
+"Атрымана ачкоў ва ўзнагароду: %(bonusPoints)s\n"
+"Ліміт ачкоў і ўзнагароду абнаўляюцца штотыднёва. Вяртайцеся пазней, каб працягваць здабываць ачкі на %(vehName)s."
 
 msgid "serviceChannelMessages/battlePass/styleChosen/header"
 msgstr "Віншуем!"
@@ -3616,9 +3624,6 @@ msgid "serviceChannelMessages/sysMsg/removeCustomizations"
 msgstr ""
 "З-за змены модуляў наступныя элементы выгляду машыны былі зняты з "
 "%(vehicle)s."
-
-msgid "serviceChannelMessages/sysMsg/titles/bobBattlesAvailable"
-msgstr "Баі Бітвы блогераў даступныя"
 
 msgid "serviceChannelMessages/sysMsg/titles/customization"
 msgstr "Змяненне выгляду машыны:"

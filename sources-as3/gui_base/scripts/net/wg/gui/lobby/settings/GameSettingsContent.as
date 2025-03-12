@@ -138,6 +138,12 @@ package net.wg.gui.lobby.settings
       
       public var showArtyHitOnMapCheckbox:CheckBox = null;
       
+      public var showThermalVisionSectorOnMapCheckbox:CheckBox = null;
+      
+      public var disableThermalVisionEffectCheckbox:CheckBox = null;
+      
+      public var disableThermalVisionSectorEffectCheckbox:CheckBox = null;
+      
       public var showVehicleHPinPlayersPanelLabel:LabelControl = null;
       
       public var showVehicleHPinPlayersPanelDropDown:DropdownMenu = null;
@@ -349,6 +355,9 @@ package net.wg.gui.lobby.settings
          this.showArtyHitOnMapCheckbox.label = SETTINGS.GAME_SHOWARTYHITONMAP;
          this.showArtyHitOnMapCheckbox.toolTip = TOOLTIPS.SHOWARTYHITONMAP;
          this.showArtyHitOnMapCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
+         this.showThermalVisionSectorOnMapCheckbox.label = SETTINGS.GAME_SHOWTHERMALVISIONSECTORONMAP;
+         this.disableThermalVisionEffectCheckbox.label = SETTINGS.GAME_DISABLETHERMALVISIONEFFECT;
+         this.disableThermalVisionSectorEffectCheckbox.label = SETTINGS.GAME_DISABLETHERMALVISIONSECTOREFFECT;
          this.showVehicleHPinPlayersPanelLabel.text = SETTINGS.GAME_SHOWVEHICLEHPINPLAYERSPANEL;
          this.showVehicleHPinMinimapLabel.text = SETTINGS.GAME_SHOWVEHICLEHPINMINIMAP;
          this.carouselTypeFieldSet.label = SETTINGS.GAME_CAROUSELTYPE;
@@ -504,6 +513,12 @@ package net.wg.gui.lobby.settings
          this.showVehModelsOnMapDropDown = null;
          this.showArtyHitOnMapCheckbox.dispose();
          this.showArtyHitOnMapCheckbox = null;
+         this.showThermalVisionSectorOnMapCheckbox.dispose();
+         this.showThermalVisionSectorOnMapCheckbox = null;
+         this.disableThermalVisionEffectCheckbox.dispose();
+         this.disableThermalVisionEffectCheckbox = null;
+         this.disableThermalVisionSectorEffectCheckbox.dispose();
+         this.disableThermalVisionSectorEffectCheckbox = null;
          this.showVehicleHPinPlayersPanelDropDown.dispose();
          this.showVehicleHPinPlayersPanelDropDown = null;
          this.minimapAlphaEnabledCheckbox.removeEventListener(Event.SELECT,this.onGuiGraphicsOptimizationCheckboxSelectHandler);

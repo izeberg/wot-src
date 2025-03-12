@@ -3,10 +3,6 @@
 	<forward>
 		<name>default</name>
 		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/lightning_02.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -42,15 +38,11 @@
 			<shader>\data\shaders\ps_foam.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/inf_light_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_butterfly_red.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_cloud.vfx</fn_effect_bin>
@@ -59,10 +51,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_fog_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_leaves_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_leaves_around.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_lightning_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_lightning_clouds.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_rain_sheets.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_rain_sheets_vista.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_s_leaves.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_water_mist.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_waterfall_01.vfx</fn_effect_bin>
@@ -120,7 +108,6 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/inf_lightning_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_cloud.eff</fn_effect_bin>
@@ -129,10 +116,6 @@
 		<fn_effect_bin>particles/environment/interior/01_karelia_fog_area.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_around.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_lightning_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_lightning_clouds.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_rain_sheets.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_rain_sheets_vista.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_water_mist.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_waterfall_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/10_hills_water_foam.eff</fn_effect_bin>
@@ -197,10 +180,6 @@
 	<deferred>
 		<name>default</name>
 		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/lightning_02.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -252,15 +231,11 @@
 			<shader>\data\shaders\ps_shimmer.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/inf_light_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_butterfly_red.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_cloud.vfx</fn_effect_bin>
@@ -269,11 +244,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_fog_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_leaves_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_leaves_around.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_lightning_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_lightning_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_lightning_clouds.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_rain_sheets.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_rain_sheets_vista.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_s_leaves.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_water_mist.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/01_karelia_waterfall_01.vfx</fn_effect_bin>
@@ -334,7 +304,6 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/inf_lightning_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_cloud.eff</fn_effect_bin>
@@ -343,10 +312,6 @@
 		<fn_effect_bin>particles/environment/interior/01_karelia_fog_area.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_around.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_lightning_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_lightning_clouds.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_rain_sheets.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/01_karelia_rain_sheets_vista.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_water_mist.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_waterfall_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/10_hills_water_foam.eff</fn_effect_bin>

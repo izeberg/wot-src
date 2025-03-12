@@ -67,7 +67,6 @@ from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import ICollectionsSystemController, IWotPlusController
 from skeletons.gui.game_control import IWinbackController
-from skeletons.gui.game_control import IBobController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.offers import IOffersDataProvider
@@ -266,6 +265,12 @@ class FloatBonus(SimpleBonus):
             return backport.getNiceNumberFormat(self._value)
         else:
             return
+
+
+class GroupsBonus(SimpleBonus):
+
+    def formatValue(self):
+        return
 
 
 class CountableIntegralBonus(IntegralBonus):
@@ -1164,22 +1169,6 @@ class SelectableBonus(TokensBonus):
          self.getType(),)
 
 
-class BobTokensBonus(TokensBonus):
-    __bobController = dependency.descriptor(IBobController)
-
-    def __init__(self, value, isCompensation=False, ctx=None):
-        super(BobTokensBonus, self).__init__('bobTokens', value, isCompensation, ctx)
-
-    def isShowInGUI(self):
-        return True
-
-    def formatValue(self):
-        if self._value:
-            return str(self._value.get(self.__bobController.pointsToken, {}).get('count'))
-        else:
-            return
-
-
 class EntitlementBonus(SimpleBonus):
     _ENTITLEMENT_RECORD = namedtuple('_ENTITLEMENT_RECORD', ['id', 'amount'])
     _FORMATTED_AMOUNT = ['ranked_202203_access']
@@ -1423,8 +1412,7 @@ def createBonusFromTokens(result, prefix, bonusId, value):
         result.append(bonus[0])
 
 
-@dependency.replace_none_kwargs(bobCtrl=IBobController)
-def tokensFactory(name, value, isCompensation=False, ctx=None, bobCtrl=None):
+def tokensFactory(name, value, isCompensation=False, ctx=None):
     result = []
     for tID, tValue in value.iteritems():
         if tID.startswith(LOOTBOX_TOKEN_PREFIX):
@@ -1467,8 +1455,6 @@ def tokensFactory(name, value, isCompensation=False, ctx=None, bobCtrl=None):
             result.append(CollectionTokenBonus(COLLECTION_ITEM_BONUS_NAME, {tID: tValue}, isCompensation, ctx))
         elif tID.startswith(VERSUS_AI_PROGRESSION_TOKEN_PREFIX):
             result.append(VersusAIProgressionsTokenBonus(name, {tID: tValue}, isCompensation, ctx))
-        elif bobCtrl.isEnabled() and bobCtrl.isBobPointsToken(tID):
-            result.append(BobTokensBonus({tID: tValue}, isCompensation, ctx))
         else:
             result.append(BattleTokensBonus(name, {tID: tValue}, isCompensation, ctx))
 
@@ -3181,7 +3167,7 @@ _BONUSES = {Currency.CREDITS: CreditsBonus,
    Currency.BPCOIN: BpcoinBonus, 
    Currency.EQUIP_COIN: EquipCoinBonus, 
    'strBonus': SimpleBonus, 
-   'groups': SimpleBonus, 
+   'groups': GroupsBonus, 
    'xp': IntegralBonus, 
    'freeXP': FreeXpBonus, 
    'tankmenXP': IntegralBonus, 

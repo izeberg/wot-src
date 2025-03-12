@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.177719 -0.199961 -0.021710</min>
+		<max>0.201314 0.133183 0.847684</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un07_Renault_R35/normal/lod0/Gun_02</nodefullVisual>
+	<parent>vehicles/intunion/Un07_Renault_R35/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

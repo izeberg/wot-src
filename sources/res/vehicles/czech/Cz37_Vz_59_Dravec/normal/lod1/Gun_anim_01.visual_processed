@@ -65,6 +65,10 @@
 						normalMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000000 0.293582 1.414136</groupOrigin>
 			</primitiveGroup>

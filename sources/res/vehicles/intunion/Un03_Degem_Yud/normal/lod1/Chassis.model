@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un03_Degem_Yud/normal/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.415427 -0.000748 -2.904933</min>
+		<max>1.415427 1.199917 2.753234</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un03_Degem_Yud/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+</root>

@@ -3166,9 +3166,6 @@ msgstr "Проведённых Генеральных сражений"
 msgid "details/dossier/27/battlesCount"
 msgstr "Проведённых боёв в режиме «Линия Фронта»"
 
-msgid "details/dossier/32/battlesCount"
-msgstr "Проведённых боёв в режиме «Битва блогеров»"
-
 msgid "details/dossier/37/battlesCount"
 msgstr "Проведённых боёв в режиме «Разведка боем»"
 
@@ -4972,12 +4969,6 @@ msgstr ""
 msgid "missions/tab/battle_pass/header"
 msgstr "Боевой пропуск"
 
-msgid "missions/tab/bob/body"
-msgstr "Игровое событие «Битва блогеров 2025»"
-
-msgid "missions/tab/bob/header"
-msgstr "Битва блогеров 2025"
-
 msgid "missions/tab/categories/body"
 msgstr "Различные боевые задачи разового или многоразового выполнения."
 
@@ -5019,9 +5010,6 @@ msgstr "Ежедневные боевые задачи, приуроченные
 
 msgid "missions/tab/kursk/header"
 msgstr "Курская битва"
-
-msgid "missions/tab/label/bob"
-msgstr "Битва блогеров"
 
 msgid "missions/tab/label/categories"
 msgstr "Боевые задачи"
@@ -5583,6 +5571,9 @@ msgstr "«Германия»"
 
 msgid "token/default/heavyTank"
 msgstr "«Тяжёлый танк»"
+
+msgid "token/default/intunion"
+msgstr "«Сборная наций»"
 
 msgid "token/default/italy"
 msgstr "«Италия»"

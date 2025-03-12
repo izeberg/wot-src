@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un08_Hotchkiss_H_39_IDF/crash/lod2/Turret_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.628725 0.000003 -1.127200</min>
+		<max>0.648902 0.643566 0.807369</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un08_Hotchkiss_H_39_IDF/crash/lod1/Turret_02</nodefullVisual>
+</root>

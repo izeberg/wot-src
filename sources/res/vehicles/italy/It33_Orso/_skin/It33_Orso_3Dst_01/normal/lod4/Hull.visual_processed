@@ -140,6 +140,10 @@
 						normalMap
 						<Texture>vehicles/italy/It33_Orso/_skin/It33_Orso_3Dst_01/Orso_3dst_01_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.006034 0.054873 0.111267</groupOrigin>
 			</primitiveGroup>

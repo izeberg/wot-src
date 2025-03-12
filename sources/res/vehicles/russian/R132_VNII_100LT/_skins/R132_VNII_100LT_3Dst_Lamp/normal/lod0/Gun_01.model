@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.178111 -0.206876 -0.258996</min>
+		<max>0.797868 0.213899 2.765564</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst_Lamp/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R132_VNII_100LT/_skins/R132_VNII_100LT_3Dst_Lamp/normal/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+</root>

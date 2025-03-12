@@ -9,7 +9,6 @@ package net.wg.app.impl
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
    import net.wg.data.constants.generated.ATLAS_CONSTANTS;
    import net.wg.data.constants.generated.LAYER_NAMES;
-   import net.wg.gui.battle.bob.data.BobDAAPIVehicleInfoVO;
    import net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO;
    import net.wg.gui.battle.epicRandom.VO.daapi.EpicRandomDAAPIVehicleInfoVO;
    import net.wg.gui.battle.ranked.VO.daapi.RankedDAAPIVehicleInfoVO;
@@ -144,7 +143,6 @@ package net.wg.app.impl
          registerClassAlias("net.wg.gui.battle.views.questProgress.data.metrics.QPMetricsVehicleRangeVO",QPMetricsVehicleRangeVO);
          registerClassAlias("net.wg.gui.components.controls.VO.BadgeVisualVO",BadgeVisualVO);
          registerClassAlias("net.wg.gui.battle.comp7.VO.daapi.Comp7DAAPIVehicleInfoVO",Comp7DAAPIVehicleInfoVO);
-         registerClassAlias("net.wg.gui.battle.bob.data.BobDAAPIVehicleInfoVO",BobDAAPIVehicleInfoVO);
       }
       
       override protected function onPopUpManagerInit() : void

@@ -4280,6 +4280,9 @@ class BattlePassRewardFormatter(WaitItemsSyncFormatter):
         callback([resultMessage, collectionResultMessage, messageResource])
         return
 
+    def canBeEmpty(self):
+        return True
+
     def __makeAfterBattle(self, ctx):
         newLevel = ctx.get(b'newLevel')
         priorityLevel = None
@@ -4381,16 +4384,15 @@ class BattlePassBoughtFormatter(WaitItemsSyncFormatter):
     @adisp_process
     def format(self, message, callback=None):
         isSynced = yield self._waitForSyncItems()
-        resultMessage = MessageData(None, None)
+        resultMessage = []
         if message.data and isSynced and message.data.get(b'chapter') == 0:
             template = b'BattlePassBuyMultipleMessage'
             header = backport.text(R.strings.messenger.serviceChannelMessages.battlePassReward.buyMultiple.text())
             formatted = g_settings.msgTemplates.format(template, ctx={b'header': header})
             settings = self._getGuiSettings(message, template)
             settings.showAt = BigWorld.time()
-            resultMessage = MessageData(formatted, settings)
-        callback([resultMessage])
-        return
+            resultMessage.append(MessageData(formatted, settings))
+        callback(resultMessage)
 
 
 class BattlePassGiftByOfferFormatter(WaitItemsSyncFormatter):
@@ -4431,7 +4433,8 @@ class BattlePassReachedCapFormatter(WaitItemsSyncFormatter):
             limitPoints = data.get(b'vehiclePoints')
             bonusPoints = data.get(b'bonusPoints')
             if vehCD and limitPoints and bonusPoints:
-                text = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCap.text(), vehName=self.__itemsCache.items.getItemByCD(vehCD).userName, bonusPoints=text_styles.neutral(bonusPoints))
+                vehName = self.__itemsCache.items.getItemByCD(vehCD).userName
+                text = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCap.text(), vehNameHighlight=text_styles.credits(vehName), vehName=vehName, bonusPoints=text_styles.neutral(bonusPoints))
                 formatted = g_settings.msgTemplates.format(self.__template, {b'text': text})
                 resultMessage = MessageData(formatted, self._getGuiSettings(message, self.__template))
         callback([resultMessage])

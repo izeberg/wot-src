@@ -204,7 +204,7 @@
 				2
 				<material>
 					<identifier>tank_guns_wings_skinned</identifier>
-					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -220,8 +220,8 @@
 						<Texture>vehicles/chinese/Ch25_121_mod_1971B/_skins/Ch25_121_mod_1971B_MC_3DSt/121_mod_1971B_MC_3DSt_guns_AM.dds</Texture>
 					</property>
 					<property>
-						g_enableTransmission
-						<Bool>true</Bool>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch25_121_mod_1971B/_skins/Ch25_121_mod_1971B_MC_3DSt/121_mod_1971B_MC_3DSt_guns_AO.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap

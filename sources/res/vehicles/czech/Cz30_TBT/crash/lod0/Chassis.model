@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.691196 -0.000412 -3.611636</min>
+		<max>1.694884 1.142924 3.743663</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz30_TBT/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz30_TBT/crash/lod0/Chassis</nodefullVisual>
+</root>

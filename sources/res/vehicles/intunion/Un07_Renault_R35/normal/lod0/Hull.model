@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.960208 -0.557548 -1.899592</min>
+		<max>0.960208 0.559380 2.014531</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un07_Renault_R35/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/intunion/Un07_Renault_R35/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

@@ -53,6 +53,7 @@ from gui.wgnc import g_wgncProvider
 from gun_rotation_shared import decodeGunAngles
 from helpers import bound_effects, dependency, uniprof
 from items import ITEM_TYPE_INDICES, getTypeOfCompactDescr, vehicles
+from items.utils import isclose
 from material_kinds import EFFECT_MATERIALS
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter
@@ -155,6 +156,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
     deviceStates = property(lambda self: self.__deviceStates)
     vehicles = property(lambda self: self.__vehicles)
     consistentMatrices = property(lambda self: self.__consistentMatrices)
+    vehicleOverturnLevel = property(lambda self: self.__vehicleOverturnLevel)
     isVehicleOverturned = property(lambda self: self.__isVehicleOverturned)
     isVehicleDrowning = property(lambda self: self.__isVehicleDrowning)
     isOwnBarrelUnderWater = property(lambda self: self.__isOwnBarrelUnderWater())
@@ -233,6 +235,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.__ownVehicleTurretMProv = self.__consistentMatrices.ownVehicleTurretMProv
         self.__isVehicleOverturned = False
         self.__isVehicleDrowning = False
+        self.__vehicleOverturnLevel = constants.OVERTURN_WARNING_LEVEL.SAFE
         self.__battleResults = None
         self.__gunDamagedShootSound = None
         if BattleReplay.g_replayCtrl.isPlaying:
@@ -641,9 +644,11 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
                         return True
                     if key == Keys.KEY_1:
                         self.base.setDevelopmentFeature(0, 'heal', 0, '')
+                        self.base.setDevelopmentFeature(0, 'thermalVisionController/reset_use_count', 0, '')
                         return True
                     if key == Keys.KEY_2:
                         self.base.setDevelopmentFeature(0, 'reload_gun', 0, '')
+                        self.base.setDevelopmentFeature(0, 'thermalVisionController/finish_reload', 0, '')
                         return True
                     if key == Keys.KEY_3:
                         self.base.setDevelopmentFeature(0, 'start_fire', 0, '')
@@ -837,8 +842,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
                             gui_event_dispatcher.choiceConsumable(key)
                             return True
                     isComp7 = ARENA_BONUS_TYPE_CAPS.checkAny(self.arenaBonusType, ARENA_BONUS_TYPE_CAPS.COMP7)
-                    isBob = ARENA_BONUS_TYPE_CAPS.checkAny(self.arenaBonusType, ARENA_BONUS_TYPE_CAPS.BOB)
-                    if not isComp7 and not isBob and cmdMap.isFired(CommandMapping.CMD_VOICECHAT_ENABLE, key) and not isDown:
+                    if not isComp7 and cmdMap.isFired(CommandMapping.CMD_VOICECHAT_ENABLE, key) and not isDown:
                         if self.__isPlayerInSquad() and not BattleReplay.isPlaying():
                             if VOIP.getVOIPManager().isVoiceSupported():
                                 gui_event_dispatcher.toggleVoipChannelEnabled(self.arenaBonusType)
@@ -1383,18 +1387,17 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         else:
             g_playerEvents.onOverturnLevelUpdated(vehicleID, level)
             self.__isVehicleOverturned = constants.OVERTURN_WARNING_LEVEL.isOverturned(level)
+            self.__vehicleOverturnLevel = level
             self.updateVehicleDestroyTimer(VEHICLE_MISC_STATUS.VEHICLE_IS_OVERTURNED, times, level)
             ctrl = self.guiSessionProvider.dynamic.progression
             if ctrl is not None:
                 ctrl.onVehicleStatusChanged()
             return
 
-    def updateInThermalSectorStatus(self, startTime, duration):
-        vehicle = self.getVehicleAttached()
-        if vehicle is not None and not vehicle.sixthSenseState:
+    def updateInThermalSectorStatus(self, startTime, duration, isObserved):
+        if isclose(startTime, 0) or not isObserved:
             self.updateThermalWarningTimer(startTime, duration)
         self._thermalWarningTime = (startTime, duration)
-        return
 
     def setVehicleOverturned(self, isOverturned):
         self.__isVehicleOverturned = isOverturned
@@ -1452,12 +1455,15 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.guiSessionProvider.invalidateVehicleState(state, value)
         return
 
-    def updateThermalWarningTimer(self, startTime, duration):
-        state = VEHICLE_VIEW_STATE.THERMAL_VISION_WARNING
+    def updateThermalWarningTimer(self, startTime, duration, forceUpdate=False):
+        newTime = startTime + duration
+        prevTime = sum(self._thermalWarningTime)
+        if not forceUpdate and isclose(prevTime, newTime):
+            return
         value = (startTime, duration)
-        self.guiSessionProvider.invalidateVehicleState(state, value)
+        self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.THERMAL_VISION_WARNING, value)
         if startTime > 0:
-            RTPC_EVENT_WARNING.play(duration)
+            RTPC_EVENT_WARNING.play(duration, startTime)
         else:
             RTPC_EVENT_WARNING.stop()
 
@@ -1747,7 +1753,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         if isObserved:
             self.updateThermalWarningTimer(0, 0)
         else:
-            self.updateThermalWarningTimer(*self._thermalWarningTime)
+            self.updateThermalWarningTimer(forceUpdate=True, *self._thermalWarningTime)
         self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.OBSERVED_BY_ENEMY, isObserved)
 
     def battleEventsSummary(self, summary):

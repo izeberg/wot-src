@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.230019 -0.144202 -0.575767</min>
+		<max>0.248750 0.198805 1.565720</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un08_Hotchkiss_H_39_IDF/crash/lod1/Gun_05</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un08_Hotchkiss_H_39_IDF/crash/lod0/Gun_05</nodefullVisual>
+</root>

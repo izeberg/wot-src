@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.437573 -0.000015 -2.997832</min>
+		<max>1.437573 1.112622 3.000019</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un01_Cromwell_VII/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un01_Cromwell_VII/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -177,7 +177,7 @@
 		</vehicleFilter>
 		<tags>rammer deluxe firepower</tags>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			StaticOptionalDevice
@@ -734,7 +734,7 @@
 		</vehicleFilter>
 		<tags>rammer firepower trophyBasic</tags>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			UpgradableStaticDevice
@@ -784,7 +784,7 @@
 		</vehicleFilter>
 		<tags>rammer firepower trophyUpgraded</tags>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			UpgradedStaticDevice
@@ -3535,7 +3535,7 @@
 			</include>
 		</vehicleFilter>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			StaticOptionalDevice
@@ -3583,7 +3583,7 @@
 			</include>
 		</vehicleFilter>
 		<incompatibleTags>
-			<installed>rammer</installed>
+			<installed>rammer avgDamage</installed>
 		</incompatibleTags>
 		<script>
 			StaticOptionalDevice
@@ -6057,4 +6057,422 @@
 		</kpi>
 		<archetype>modernizedExtraHealthReserveAntifragmentationLining</archetype>
 	</modernizedExtraHealthReserveAntifragmentationLining3>
+	<modernizedDamageVentilation1>
+		<id>159</id>
+		<userString>#artefacts:modernizedDamageVentilation1/name</userString>
+		<shortDescriptionSpecial>#artefacts:modernizedDamageVentilation1/short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#artefacts:modernizedDamageVentilation1/long_special</longDescriptionSpecial>
+		<icon>modernizedDamageVentilation</icon>
+		<groupName>modernizedDamageVentilation</groupName>
+		<price>
+			100
+			<equipCoin/>
+		</price>
+		<tags>armor firepower camouflage reconnaissance mobility modernized_1 avgDamage</tags>
+		<notInShop>true</notInShop>
+		<incompatibleTags>
+			<installed>avgDamage rammer</installed>
+		</incompatibleTags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>5</minLevel>
+					<maxLevel>11</maxLevel>
+					<tags>tankRammer_class1_user tankRammer_class2_user</tags>
+				</vehicle>
+			</include>
+		</vehicleFilter>
+		<script>
+			UpgradableStaticDevice
+			<factors>
+				<factor>
+					<attribute>miscAttrs/damageFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						1.04
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+				<factor>
+					<attribute>miscAttrs/crewLevelIncrease</attribute>
+					<type>add</type>
+					<valueByLevel>
+						3.0
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+			</factors>
+			<upgradeInfo>
+				<upgradedDevice>modernizedDamageVentilation2</upgradedDevice>
+				<price>
+					400
+					<equipCoin/>
+				</price>
+			</upgradeInfo>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunDamage</name>
+				<value>
+					1.04
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>crewLevel</name>
+				<value>
+					1.03
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+		<tooltipSection>equipment crew_mastery</tooltipSection>
+		<archetype>modernizedDamageVentilation</archetype>
+	</modernizedDamageVentilation1>
+	<modernizedDamageVentilation2>
+		<id>160</id>
+		<userString>#artefacts:modernizedDamageVentilation2/name</userString>
+		<shortDescriptionSpecial>#artefacts:modernizedDamageVentilation2/short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#artefacts:modernizedDamageVentilation2/long_special</longDescriptionSpecial>
+		<icon>modernizedDamageVentilation</icon>
+		<groupName>modernizedDamageVentilation</groupName>
+		<price>
+			400
+			<equipCoin/>
+		</price>
+		<tags>armor firepower camouflage reconnaissance mobility modernized_2 avgDamage</tags>
+		<notInShop>true</notInShop>
+		<incompatibleTags>
+			<installed>avgDamage rammer</installed>
+		</incompatibleTags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>5</minLevel>
+					<maxLevel>11</maxLevel>
+					<tags>tankRammer_class1_user tankRammer_class2_user</tags>
+				</vehicle>
+			</include>
+		</vehicleFilter>
+		<script>
+			UpgradableStaticDevice
+			<factors>
+				<factor>
+					<attribute>miscAttrs/damageFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						1.05
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+				<factor>
+					<attribute>miscAttrs/crewLevelIncrease</attribute>
+					<type>add</type>
+					<valueByLevel>
+						3.5
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+			</factors>
+			<upgradeInfo>
+				<upgradedDevice>modernizedDamageVentilation3</upgradedDevice>
+				<price>
+					2000
+					<equipCoin/>
+				</price>
+			</upgradeInfo>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunDamage</name>
+				<value>
+					1.05
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>crewLevel</name>
+				<value>
+					1.035
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+		<tooltipSection>equipment crew_mastery</tooltipSection>
+		<archetype>modernizedDamageVentilation</archetype>
+	</modernizedDamageVentilation2>
+	<modernizedDamageVentilation3>
+		<id>161</id>
+		<userString>#artefacts:modernizedDamageVentilation3/name</userString>
+		<shortDescriptionSpecial>#artefacts:modernizedDamageVentilation3/short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#artefacts:modernizedDamageVentilation3/long_special</longDescriptionSpecial>
+		<icon>modernizedDamageVentilation</icon>
+		<groupName>modernizedDamageVentilation</groupName>
+		<price>
+			1600
+			<equipCoin/>
+		</price>
+		<tags>armor firepower camouflage reconnaissance mobility modernized_3 avgDamage</tags>
+		<notInShop>true</notInShop>
+		<incompatibleTags>
+			<installed>avgDamage rammer</installed>
+		</incompatibleTags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>5</minLevel>
+					<maxLevel>11</maxLevel>
+					<tags>tankRammer_class1_user tankRammer_class2_user</tags>
+				</vehicle>
+			</include>
+		</vehicleFilter>
+		<script>
+			UpgradedStaticDevice
+			<factors>
+				<factor>
+					<attribute>miscAttrs/damageFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						1.06
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+				<factor>
+					<attribute>miscAttrs/crewLevelIncrease</attribute>
+					<type>add</type>
+					<valueByLevel>
+						4.0
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+			</factors>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunDamage</name>
+				<value>
+					1.06
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>crewLevel</name>
+				<value>
+					1.04
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+		<tooltipSection>equipment crew_mastery</tooltipSection>
+		<archetype>modernizedDamageVentilation</archetype>
+	</modernizedDamageVentilation3>
+	<modernizedTankRammerSights1>
+		<id>162</id>
+		<userString>#artefacts:modernizedTankRammerSights1/name</userString>
+		<shortDescriptionSpecial>#artefacts:modernizedTankRammerSights1/short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#artefacts:modernizedTankRammerSights1/long_special</longDescriptionSpecial>
+		<icon>modernizedTankRammerSights</icon>
+		<groupName>modernizedTankRammerSights</groupName>
+		<price>
+			100
+			<equipCoin/>
+		</price>
+		<tags>rammer firepower modernized_1</tags>
+		<notInShop>true</notInShop>
+		<incompatibleTags>
+			<installed>rammer avgDamage</installed>
+		</incompatibleTags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>5</minLevel>
+					<maxLevel>11</maxLevel>
+					<tags>tankRammer_class1_user tankRammer_class2_user</tags>
+				</vehicle>
+			</include>
+		</vehicleFilter>
+		<script>
+			UpgradableStaticDevice
+			<factors>
+				<factor>
+					<attribute>miscAttrs/gunReloadTimeFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						0.92
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+				<factor>
+					<attribute>miscAttrs/multShotDispersionFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						0.97
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+			</factors>
+			<upgradeInfo>
+				<upgradedDevice>modernizedTankRammerSights2</upgradedDevice>
+				<price>
+					400
+					<equipCoin/>
+				</price>
+			</upgradeInfo>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunReloadTime</name>
+				<value>
+					0.92
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotFullDispersion</name>
+				<value>
+					0.97
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+		<tooltipSection>equipment</tooltipSection>
+		<archetype>modernizedTankRammerSights</archetype>
+	</modernizedTankRammerSights1>
+	<modernizedTankRammerSights2>
+		<id>163</id>
+		<userString>#artefacts:modernizedTankRammerSights2/name</userString>
+		<shortDescriptionSpecial>#artefacts:modernizedTankRammerSights2/short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#artefacts:modernizedTankRammerSights2/long_special</longDescriptionSpecial>
+		<icon>modernizedTankRammerSights</icon>
+		<groupName>modernizedTankRammerSights</groupName>
+		<price>
+			400
+			<equipCoin/>
+		</price>
+		<tags>rammer firepower modernized_2</tags>
+		<notInShop>true</notInShop>
+		<incompatibleTags>
+			<installed>rammer avgDamage</installed>
+		</incompatibleTags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>5</minLevel>
+					<maxLevel>11</maxLevel>
+					<tags>tankRammer_class1_user tankRammer_class2_user</tags>
+				</vehicle>
+			</include>
+		</vehicleFilter>
+		<script>
+			UpgradableStaticDevice
+			<factors>
+				<factor>
+					<attribute>miscAttrs/gunReloadTimeFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						0.91
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+				<factor>
+					<attribute>miscAttrs/multShotDispersionFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						0.96
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+			</factors>
+			<upgradeInfo>
+				<upgradedDevice>modernizedTankRammerSights3</upgradedDevice>
+				<price>
+					2000
+					<equipCoin/>
+				</price>
+			</upgradeInfo>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunReloadTime</name>
+				<value>
+					0.91
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotFullDispersion</name>
+				<value>
+					0.96
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+		<tooltipSection>equipment</tooltipSection>
+		<archetype>modernizedTankRammerSights</archetype>
+	</modernizedTankRammerSights2>
+	<modernizedTankRammerSights3>
+		<id>164</id>
+		<userString>#artefacts:modernizedTankRammerSights3/name</userString>
+		<shortDescriptionSpecial>#artefacts:modernizedTankRammerSights3/short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#artefacts:modernizedTankRammerSights3/long_special</longDescriptionSpecial>
+		<icon>modernizedTankRammerSights</icon>
+		<groupName>modernizedTankRammerSights</groupName>
+		<price>
+			1600
+			<equipCoin/>
+		</price>
+		<tags>rammer firepower modernized_3 avgDamage</tags>
+		<notInShop>true</notInShop>
+		<incompatibleTags>
+			<installed>rammer avgDamage</installed>
+		</incompatibleTags>
+		<vehicleFilter>
+			<include>
+				<vehicle>
+					<minLevel>5</minLevel>
+					<maxLevel>11</maxLevel>
+					<tags>tankRammer_class1_user tankRammer_class2_user</tags>
+				</vehicle>
+			</include>
+		</vehicleFilter>
+		<script>
+			UpgradedStaticDevice
+			<factors>
+				<factor>
+					<attribute>miscAttrs/gunReloadTimeFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						0.9
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+				<factor>
+					<attribute>miscAttrs/multShotDispersionFactor</attribute>
+					<type>mul</type>
+					<valueByLevel>
+						0.95
+						<!--BW_String-->
+					</valueByLevel>
+				</factor>
+			</factors>
+		</script>
+		<kpi>
+			<mul>
+				<name>vehicleGunReloadTime</name>
+				<value>
+					0.9
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotFullDispersion</name>
+				<value>
+					0.95
+					<!--BW_String-->
+				</value>
+			</mul>
+		</kpi>
+		<tooltipSection>equipment</tooltipSection>
+		<archetype>modernizedTankRammerSights</archetype>
+	</modernizedTankRammerSights3>
 </root>

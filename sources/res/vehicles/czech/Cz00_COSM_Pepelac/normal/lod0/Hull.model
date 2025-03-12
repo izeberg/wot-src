@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Pepelac/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.392023 -0.684598 -2.385515</min>
+		<max>1.392023 1.064702 2.385040</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz00_COSM_Pepelac/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

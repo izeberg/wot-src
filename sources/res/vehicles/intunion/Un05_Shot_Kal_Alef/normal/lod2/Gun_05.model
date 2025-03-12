@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un05_Shot_Kal_Alef/normal/lod3/Gun_05</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un05_Shot_Kal_Alef/normal/lod2/Gun_05</nodefullVisual>
+	<visibilityBox>
+		<min>-0.763334 -0.348977 -1.063245</min>
+		<max>0.752782 1.170448 4.258987</max>
+	</visibilityBox>
+</root>

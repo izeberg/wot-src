@@ -155,11 +155,6 @@ msgstr ""
 "После принятия приглашения вы будете автоматически исключены из состава "
 "формирования и перемещены на сервер %(host)s."
 
-msgid "invites/note/change_and_leave/PREBATTLE_BOB"
-msgstr ""
-"Приняв приглашение, вы будете автоматически исключены из состава "
-"формирования и перемещены на сервер %(host)s."
-
 msgid "invites/note/change_and_leave/PREBATTLE_CLAN"
 msgstr ""
 "Приняв приглашение, вы будете автоматически исключены из списка участников "
@@ -255,11 +250,6 @@ msgstr ""
 "Приняв приглашение, вы покинете режим «Большая охота» и будете перемещены на"
 " сервер %(host)s."
 
-msgid "invites/note/change_and_leave/QUEUE_BOB"
-msgstr ""
-"Приняв приглашение, вы покинете режим «Битва блогеров» и будете перемещены "
-"на сервер %(host)s."
-
 msgid "invites/note/change_and_leave/QUEUE_COMP7"
 msgstr ""
 "Приняв приглашение, вы покинете режим «Натиск» и будете перемещены на сервер"
@@ -313,11 +303,6 @@ msgstr ""
 msgid "invites/note/leave/PREBATTLE_BATTLE_ROYALE_TOURNAMENT"
 msgstr ""
 "После принятия приглашения вы будете автоматически исключены из состава "
-"формирования."
-
-msgid "invites/note/leave/PREBATTLE_BOB"
-msgstr ""
-"Приняв приглашение, вы будете автоматически исключены из состава "
 "формирования."
 
 msgid "invites/note/leave/PREBATTLE_CLAN"
@@ -396,9 +381,6 @@ msgstr "Приняв приглашение, вы покинете режим «
 
 msgid "invites/note/leave/QUEUE_BATTLE_ROYALE_TOURNAMENT"
 msgstr "Приняв приглашение, вы покинете режим «Большая охота»."
-
-msgid "invites/note/leave/QUEUE_BOB"
-msgstr "Приняв приглашение, вы покинете режим «Битва блогеров»."
 
 msgid "invites/note/leave/QUEUE_COMP7"
 msgstr "Приняв приглашение, вы покинете режим «Натиск»."
@@ -492,9 +474,6 @@ msgstr "Приглашение отозвано."
 
 msgid "invites/text/BATTLE_ROYALE"
 msgstr "Приглашение войти в состав взвода Стальных охотников"
-
-msgid "invites/text/BOB"
-msgstr "Приглашение войти в состав взвода для Битвы блогеров"
 
 msgid "invites/text/COMP7"
 msgstr "Приглашение войти в состав взвода режима «Натиск»"

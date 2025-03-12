@@ -319,7 +319,7 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
         installedArchetypes = set()
         for bnsType, bnsId, pInfo in bonusExtractor.getBonusInfo():
             diff = pInfo.getParamDiff()
-            tooltipSection, archetype = self._getTooltipGroupingForBonus(bnsType, bnsId)
+            tooltipSections, archetype = self._getTooltipGroupingForBonus(bnsType, bnsId)
             if archetype is not None and bnsType != constants.BonusTypes.BATTLE_MODIFIERS:
                 installedArchetypes.add(archetype)
             formattedBnsID = _getBonusID(bnsType, bnsId)
@@ -341,7 +341,8 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
                 levelIcon = self.__getLevelIcon(bnsId, bnsType, vehPostProgressionBonusLevels)
                 itemModel.setIcon(param_formatter.getBonusIconRes(formattedBnsID, bnsType, archetype) if levelIcon is None else levelIcon)
                 appliedOptDeviceBonuses.append(bnsId)
-                result[tooltipSection].append(itemModel)
+                for tooltipSection in tooltipSections:
+                    result[tooltipSection].append(itemModel)
 
         for bnsId, bnsType in sorted(self._extendedData.possibleBonuses, cmp=_bonusCmp):
             if bnsType == constants.BonusTypes.PERK and not self._hasPerksBonuses:
@@ -361,7 +362,7 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
                         continue
                     elif _isUpgradedInstanceOfInstalled(appliedOptDeviceBonuses, device) or _isDowngradedInstanceOfInstalled(appliedOptDeviceBonuses, device):
                         continue
-            tooltipSection, archetype = self._getTooltipGroupingForBonus(bnsType, bnsId)
+            tooltipSections, archetype = self._getTooltipGroupingForBonus(bnsType, bnsId)
             if bnsType != constants.BonusTypes.BATTLE_MODIFIERS:
                 if archetype is not None and archetype in installedArchetypes:
                     continue
@@ -378,7 +379,9 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
             itemModel.setTitle(_getBonusName(bnsType, formattedBnsID, enabled=isEnabled, archetype=bnsArchetype))
             levelIcon = self.__getLevelIcon(bnsId, bnsType, vehPostProgressionBonusLevels)
             itemModel.setIcon(levelIcon if levelIcon else param_formatter.getBonusIconRes(formattedBnsID, bnsType, bnsArchetype))
-            result[tooltipSection].append(itemModel)
+            for tooltipSection in tooltipSections:
+                result[tooltipSection].append(itemModel)
+
             if archetype is not None:
                 installedArchetypes.add(archetype)
 
@@ -450,10 +453,10 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
 
     def _getTooltipGroupingForBonus(self, bonusType, bonusName):
         if bonusType == constants.BonusTypes.EXTRA:
-            return (constants.TTC_TOOLTIP_SECTIONS.EQUIPMENT, None)
+            return ([constants.TTC_TOOLTIP_SECTIONS.EQUIPMENT], None)
         else:
             if bonusType == constants.BonusTypes.BATTLE_MODIFIERS:
-                return (constants.TTC_TOOLTIP_SECTIONS.BATTLE_MODIFIERS, self._context.getBattleModifiersType())
+                return ([constants.TTC_TOOLTIP_SECTIONS.BATTLE_MODIFIERS], self._context.getBattleModifiersType())
             if bonusType == constants.BonusTypes.OPTIONAL_DEVICE:
                 artifact = vehicles.g_cache.getOptionalDeviceByName(bonusName)
             elif bonusType == constants.BonusTypes.SKILL:

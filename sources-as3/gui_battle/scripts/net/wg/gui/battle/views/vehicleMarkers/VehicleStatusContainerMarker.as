@@ -4,6 +4,8 @@ package net.wg.gui.battle.views.vehicleMarkers
    import flash.display.DisplayObject;
    import flash.events.Event;
    import flash.utils.Dictionary;
+   import flash.utils.getDefinitionByName;
+   import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.BATTLE_MARKER_STATES;
    import net.wg.gui.battle.components.BattleUIComponent;
@@ -31,7 +33,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private static const MARKER_TWEEN_DURATION:int = 200;
       
-      private static const MARKER_TWEEN_DELAY:int = 100;
+      private static const FIELD_NAME_TO_SORT:String = "key";
        
       
       public var stealthMarker:VehicleFLBasicMarker = null;
@@ -62,25 +64,28 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public var statusMarker:VehicleStatusMarker = null;
       
-      public var abilityMarker:VehicleSpecialAbilityMarker = null;
-      
-      private var _markerTween:Tween = null;
-      
-      private var _abilityTween:Tween = null;
+      private var _markerTweens:Vector.<Tween> = null;
       
       private var _statusEffectMarkers:Dictionary = null;
       
       private var _activeEffectID:int = -1;
       
-      private var _activeAbilityID:int = -1;
-      
       private var _oneShotStatusID:int = -1;
       
       private var _oneShotStatusPriority:int = -1;
       
+      private var _separateMarkers:Dictionary = null;
+      
+      private var _currentSecondTxt:String = "";
+      
+      private var _currentColorName:String = "";
+      
+      private var _currentColorValue:uint = 0;
+      
       public function VehicleStatusContainerMarker()
       {
          super();
+         this._markerTweens = new Vector.<Tween>();
          this._statusEffectMarkers = new Dictionary();
          this.setupMarker(BATTLE_MARKER_STATES.STUN_STATE,this.stunMarker);
          this.setupMarker(BATTLE_MARKER_STATES.DEBUFF_STATE,this.stunMarker);
@@ -113,6 +118,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.setupMarker(BATTLE_MARKER_STATES.COMP7_AGGRESSIVE_DETECTION_STATE,this.statusMarker);
          this.setupMarker(BATTLE_MARKER_STATES.COMP7_POINT_RECON_STATE,this.statusMarker);
          this.setupMarker(BATTLE_MARKER_STATES.CONFIRMED_STATE,this.statusMarker);
+         this._separateMarkers = new Dictionary();
       }
       
       override protected function configUI() : void
@@ -132,7 +138,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.shotPassionMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.adaptationHealthRestoreMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.statusMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
-         this.abilityMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onAbilityAnimationEventHiddenHandler);
          this.stunMarker.setupFrameEvents();
          this.baseEngineerMarker.setupFrameEvents();
          this.inspireMarker.setupFrameEvents();
@@ -147,13 +152,12 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.shotPassionMarker.setupFrameEvents();
          this.adaptationHealthRestoreMarker.setupFrameEvents();
          this.statusMarker.setupFrameEvents();
-         this.abilityMarker.setupFrameEvents();
       }
       
       override protected function onDispose() : void
       {
          var _loc1_:* = undefined;
-         this.clearTweens();
+         var _loc2_:VehicleSpecialAbilityMarker = null;
          this.stunMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.baseEngineerMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
@@ -168,7 +172,8 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.shotPassionMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.adaptationHealthRestoreMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.statusMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
-         this.abilityMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onAbilityAnimationEventHiddenHandler);
+         this.clearTweens();
+         this._markerTweens = null;
          this.baseEngineerMarker.dispose();
          this.baseEngineerMarker = null;
          this.inspireMarker.dispose();
@@ -197,13 +202,19 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.adaptationHealthRestoreMarker = null;
          this.statusMarker.dispose();
          this.statusMarker = null;
-         this.abilityMarker.dispose();
-         this.abilityMarker = null;
          for(_loc1_ in this._statusEffectMarkers)
          {
             delete this._statusEffectMarkers[_loc1_];
          }
          this._statusEffectMarkers = null;
+         for(_loc1_ in this._separateMarkers)
+         {
+            _loc2_ = this.getSeparateMarker(_loc1_);
+            _loc2_.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onAbilityAnimationEventHiddenHandler);
+            _loc2_.dispose();
+            delete this._separateMarkers[_loc1_];
+         }
+         this._separateMarkers = null;
          super.onDispose();
       }
       
@@ -213,10 +224,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          var _loc6_:VehicleAnimatedStatusBaseMarker = null;
          var _loc7_:VehicleStatusMarker = null;
          var _loc8_:VehicleAnimatedStatusBaseMarker = null;
-         if(this._activeAbilityID != Values.DEFAULT_INT)
-         {
-            this.moveAbilityToCenter();
-         }
          this._activeEffectID = param2;
          if(param1 > Values.DEFAULT_INT)
          {
@@ -257,14 +264,13 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      public function hideAbilityMarker(param1:int, param2:Boolean) : void
+      public function hideSeparateMarker(param1:int, param2:Boolean) : void
       {
-         this.abilityMarker.hideEffectTimer(param2);
-         if(this._activeEffectID != Values.DEFAULT_INT)
+         var _loc3_:VehicleSpecialAbilityMarker = this.getSeparateMarker(param1);
+         if(_loc3_)
          {
-            this.moveMarkerToCenter();
+            _loc3_.hideEffectTimer(param2);
          }
-         this._activeAbilityID = Values.DEFAULT_INT;
       }
       
       public function updateEffectTimer(param1:int, param2:Number, param3:Boolean = false) : void
@@ -274,19 +280,31 @@ package net.wg.gui.battle.views.vehicleMarkers
          {
             _loc4_.updateEffectTimer(param2,this._activeEffectID == param1,param3);
          }
-         else if(param1 == BATTLE_MARKER_STATES.ABILITY_STATE)
+         var _loc5_:VehicleSpecialAbilityMarker = this.getSeparateMarker(param1);
+         if(_loc5_)
          {
-            this.abilityMarker.updateEffectTimer(param2,this._activeAbilityID == param1,param3);
+            _loc5_.updateEffectTimer(param2,true,param3);
          }
       }
       
       public function isVisible() : Boolean
       {
-         return (this._activeEffectID == Values.DEFAULT_INT ? Boolean(false) : Boolean(this.getMarker(this._activeEffectID).isVisible())) || (this._activeAbilityID == Values.DEFAULT_INT ? Boolean(false) : Boolean(this.abilityMarker.isVisible()));
+         var _loc2_:* = undefined;
+         var _loc1_:Boolean = false;
+         var _loc3_:int = 0;
+         var _loc4_:* = this._separateMarkers;
+         for(_loc2_ in _loc4_)
+         {
+            _loc1_ = true;
+         }
+         return (this._activeEffectID == Values.DEFAULT_INT ? Boolean(false) : Boolean(this.getMarker(this._activeEffectID).isVisible())) || _loc1_;
       }
       
       public function setEffectColor(param1:String, param2:uint) : void
       {
+         var _loc3_:* = undefined;
+         this._currentColorName = param1;
+         this._currentColorValue = param2;
          this.stunMarker.setEffectColor(param1,param2);
          this.baseEngineerMarker.setEffectColor(param1,param2);
          this.inspireMarker.setEffectColor(param1,param2);
@@ -301,16 +319,24 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.shotPassionMarker.setEffectColor(param1,param2);
          this.adaptationHealthRestoreMarker.setEffectColor(param1,param2);
          this.statusMarker.setEffectColor(param1,param2);
-         this.abilityMarker.setEffectColor(param1,param2);
+         for(_loc3_ in this._separateMarkers)
+         {
+            this.getSeparateMarker(_loc3_).setEffectColor(param1,param2);
+         }
       }
       
       public function setSecondString(param1:String) : void
       {
+         var _loc2_:* = undefined;
+         this._currentSecondTxt = param1;
          this.stunMarker.setSecondString(param1);
          this.inspireMarker.setSecondString(param1);
          this.healMarker.setSecondString(param1);
          this.statusMarker.setSecondString(param1);
-         this.abilityMarker.setSecondString(param1);
+         for(_loc2_ in this._separateMarkers)
+         {
+            this.getSeparateMarker(_loc2_).setSecondString(param1);
+         }
       }
       
       public function showMarker(param1:int, param2:int, param3:Boolean, param4:Number, param5:int, param6:int, param7:Boolean = true, param8:Boolean = true) : void
@@ -358,21 +384,67 @@ package net.wg.gui.battle.views.vehicleMarkers
             _loc9_.showEffectTimer(param4,param3,_loc10_,param7,param8);
          }
          this._activeEffectID = param5;
-         if(this._activeAbilityID != Values.DEFAULT_INT)
+         this.updateMarkersPositions(_loc9_);
+      }
+      
+      public function showSeparateMarker(param1:int, param2:Boolean, param3:Number, param4:Boolean = true, param5:Boolean = true) : void
+      {
+         var _loc6_:VehicleSpecialAbilityMarker = this.getSeparateMarker(param1);
+         if(_loc6_)
          {
-            this.moveAbilityToLeft();
+            this.disposeSeparateMarker(param1);
+         }
+         var _loc7_:Class = getDefinitionByName(Linkages.VEHICLE_SPECIAL_ABILITY_MARKER_UI) as Class;
+         _loc6_ = new _loc7_();
+         if(_loc6_)
+         {
+            this.setupSeparateMarker(param1,_loc6_);
+            _loc6_.setEffectColor(this._currentColorName,this._currentColorValue);
+            _loc6_.setSecondString(this._currentSecondTxt);
+            _loc6_.updateAssets();
+            _loc6_.showEffectTimer(param3,param2,false,param4,param5);
+            _loc6_.setupFrameEvents();
+            _loc6_.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onAbilityAnimationEventHiddenHandler);
+            addChild(_loc6_);
+            this.updateMarkersPositions(_loc6_);
          }
       }
       
-      public function showAbilityMarker(param1:int, param2:Boolean, param3:Number, param4:Boolean = true, param5:Boolean = true) : void
+      private function updateMarkersPositions(param1:DisplayObject = null) : void
       {
-         this._activeAbilityID = param1;
-         this.abilityMarker.setStatusID(this._activeAbilityID);
-         this.abilityMarker.updateAssets();
-         this.abilityMarker.showEffectTimer(param3,param2,false,param4,param5);
-         if(this._activeEffectID != Values.DEFAULT_INT)
+         var _loc2_:* = undefined;
+         var _loc5_:VehicleAnimatedStatusBaseMarker = null;
+         var _loc8_:int = 0;
+         this.clearTweens();
+         var _loc3_:Array = [];
+         var _loc4_:VehicleAnimatedStatusBaseMarker = null;
+         for(_loc2_ in this._separateMarkers)
          {
-            this.moveMarkerToRight();
+            _loc4_ = this.getSeparateMarker(_loc2_);
+            _loc4_[FIELD_NAME_TO_SORT] = _loc2_;
+            _loc3_.push(_loc4_);
+         }
+         _loc3_.sortOn(FIELD_NAME_TO_SORT,Array.NUMERIC | Array.DESCENDING);
+         _loc5_ = this.getMarker(this._activeEffectID);
+         if(_loc5_)
+         {
+            _loc3_.push(_loc5_);
+         }
+         var _loc6_:int = 0;
+         var _loc7_:int = _loc3_.length;
+         while(_loc6_ < _loc7_)
+         {
+            _loc4_ = _loc3_[_loc6_];
+            _loc8_ = MARKER_HORIZONTAL_OFFSET * 2 * _loc6_ + MARKER_HORIZONTAL_OFFSET - MARKER_HORIZONTAL_OFFSET * _loc7_;
+            if(param1 == _loc4_)
+            {
+               _loc4_.x = _loc8_;
+            }
+            else
+            {
+               this._markerTweens.push(new Tween(MARKER_TWEEN_DURATION,_loc4_,{"x":_loc8_},{"ease":Linear.easeOut}));
+            }
+            _loc6_++;
          }
       }
       
@@ -385,6 +457,17 @@ package net.wg.gui.battle.views.vehicleMarkers
       private function getMarker(param1:int) : VehicleAnimatedStatusBaseMarker
       {
          return this._statusEffectMarkers[param1];
+      }
+      
+      private function setupSeparateMarker(param1:int, param2:VehicleSpecialAbilityMarker) : void
+      {
+         this._separateMarkers[param1] = param2;
+         param2.setStatusID(param1);
+      }
+      
+      private function getSeparateMarker(param1:int) : VehicleSpecialAbilityMarker
+      {
+         return this._separateMarkers[param1];
       }
       
       override public function get height() : Number
@@ -408,87 +491,48 @@ package net.wg.gui.battle.views.vehicleMarkers
                _loc2_.setVisibility(true);
             }
          }
+         else
+         {
+            DisplayObject(param1.currentTarget).x = MARKER_DEFAULT_X_POS;
+         }
+         this.updateMarkersPositions();
          dispatchEvent(new Event(Event.COMPLETE));
       }
       
       private function onAbilityAnimationEventHiddenHandler(param1:StatusAnimationEvent) : void
       {
-         var _loc2_:VehicleAnimatedStatusBaseMarker = null;
-         if(this._activeEffectID > Values.DEFAULT_INT)
-         {
-            _loc2_ = this.getMarker(this._activeEffectID);
-            if(_loc2_)
-            {
-               _loc2_.x = MARKER_DEFAULT_X_POS;
-            }
-            this.abilityMarker.x = MARKER_DEFAULT_X_POS;
-         }
-         else
-         {
-            dispatchEvent(new Event(Event.COMPLETE));
-         }
+         this.disposeSeparateMarker(param1.statusID);
       }
       
-      private function onMarkerOutTweenCompleteHandler(param1:Tween) : void
+      private function disposeSeparateMarker(param1:int) : void
       {
-         var _loc2_:DisplayObject = null;
-         if(param1.target is DisplayObject)
+         var _loc2_:VehicleSpecialAbilityMarker = this.getSeparateMarker(param1);
+         if(_loc2_)
          {
-            _loc2_ = DisplayObject(param1.target);
-            _loc2_.x = MARKER_DEFAULT_X_POS;
+            _loc2_.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onAbilityAnimationEventHiddenHandler);
+            removeChild(_loc2_);
+            _loc2_.dispose();
+            delete this._separateMarkers[param1];
          }
+         this.updateMarkersPositions();
+         dispatchEvent(new Event(Event.COMPLETE));
       }
       
       private function clearTweens() : void
       {
-         if(this._markerTween != null)
+         var _loc1_:int = 0;
+         var _loc2_:int = 0;
+         if(this._markerTweens)
          {
-            this._markerTween.paused = true;
-            this._markerTween.dispose();
-            this._markerTween = null;
+            _loc1_ = 0;
+            _loc2_ = this._markerTweens.length;
+            while(_loc1_ < _loc2_)
+            {
+               this._markerTweens[_loc1_].dispose();
+               _loc1_++;
+            }
+            this._markerTweens.splice(0,_loc2_);
          }
-         if(this._abilityTween != null)
-         {
-            this._abilityTween.paused = true;
-            this._abilityTween.dispose();
-            this._abilityTween = null;
-         }
-      }
-      
-      private function moveMarkerToRight() : void
-      {
-         this.clearTweens();
-         this._markerTween = new Tween(MARKER_TWEEN_DURATION,this.getMarker(this._activeEffectID),{"x":MARKER_HORIZONTAL_OFFSET},{"ease":Linear.easeOut});
-         this.abilityMarker.x = -MARKER_HORIZONTAL_OFFSET;
-      }
-      
-      private function moveAbilityToLeft() : void
-      {
-         this.clearTweens();
-         this.getMarker(this._activeEffectID).x = MARKER_HORIZONTAL_OFFSET;
-         this._abilityTween = new Tween(MARKER_TWEEN_DURATION,this.abilityMarker,{"x":-MARKER_HORIZONTAL_OFFSET},{"ease":Linear.easeOut});
-      }
-      
-      private function moveMarkerToCenter() : void
-      {
-         this.clearTweens();
-         this._markerTween = new Tween(MARKER_TWEEN_DURATION,this.getMarker(this._activeEffectID),{"x":MARKER_DEFAULT_X_POS},{"delay":MARKER_TWEEN_DELAY});
-         this._abilityTween = new Tween(MARKER_TWEEN_DURATION,this.abilityMarker,{},{
-            "delay":MARKER_TWEEN_DELAY,
-            "ease":Linear.easeOut,
-            "onComplete":this.onMarkerOutTweenCompleteHandler
-         });
-      }
-      
-      private function moveAbilityToCenter() : void
-      {
-         this.clearTweens();
-         this._markerTween = new Tween(MARKER_TWEEN_DURATION,this.getMarker(this._activeEffectID),{},{
-            "delay":MARKER_TWEEN_DELAY,
-            "ease":Linear.easeOut,
-            "onComplete":this.onMarkerOutTweenCompleteHandler
-         });
-         this._abilityTween = new Tween(MARKER_TWEEN_DURATION,this.abilityMarker,{"x":MARKER_DEFAULT_X_POS},{"delay":MARKER_TWEEN_DELAY});
       }
    }
 }

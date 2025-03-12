@@ -146,7 +146,7 @@
 		<medium>25000.000000</medium>
 		<low>600.000000</low>
 	</farPlane>
-	<flora>spaces/280_cosmic/flora.xml</flora>
+	<flora>system/data/noflora.xml</flora>
 	<shadowBaker>
 		<blurFilterExtent>27</blurFilterExtent>
 		<blurFilterFalloff>0.000100</blurFilterFalloff>

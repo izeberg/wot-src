@@ -136,10 +136,6 @@ package net.wg.gui.components.tooltips.inblocks.blocks
          {
             this.image.source = _loc1_.icon;
             this.image.addEventListener(Event.CHANGE,this.onImageChangeHandler);
-            if(_loc1_.iconZIndex >= 0)
-            {
-               setChildIndex(this.image,_loc1_.iconZIndex);
-            }
          }
          this._isDataApplied = true;
       }

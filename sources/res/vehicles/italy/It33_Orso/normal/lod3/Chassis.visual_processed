@@ -1396,6 +1396,18 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It33_Orso/Orso_chassis_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.255430 0.558264 -0.096630</groupOrigin>
 			</primitiveGroup>
@@ -1484,6 +1496,18 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/italy/It33_Orso/Orso_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.251745 0.537669 -0.091191</groupOrigin>

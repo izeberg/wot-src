@@ -8,6 +8,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "abilities/title"
+msgstr "СПОСОБНОСТИ"
+
+msgid "abilities/tooltip/activationEffect"
+msgstr "Эффект при активации:"
+
+msgid "abilities/tooltip/description"
+msgstr "Описание:"
+
+msgid "abilities/tooltip/subTitle"
+msgstr "Снаряд для стрельбы из марсохода"
+
 msgid "aboutEvent"
 msgstr "О СОБЫТИИ"
 
@@ -16,16 +28,34 @@ msgstr ""
 "Время ожидания боя истекло, попробуйте сменить сервер или зайти позже."
 
 msgid "artefact/actionList/abilityHit"
-msgstr "Реализация усиления"
+msgstr "Применение усиления"
+
+msgid "artefact/actionList/assist"
+msgstr "Содействие"
+
+msgid "artefact/actionList/boostMe"
+msgstr "Прыжок с трамплина"
+
+msgid "artefact/actionList/firstBlood"
+msgstr "Первое устранение"
 
 msgid "artefact/actionList/kill"
 msgstr "Устранение"
 
+msgid "artefact/actionList/killStreak"
+msgstr "Серия устранений"
+
 msgid "artefact/actionList/pickup"
 msgstr "Подбор усиления"
 
+msgid "artefact/actionList/pickupMaster"
+msgstr "Мастер усилений"
+
 msgid "artefact/actionList/ram"
 msgstr "Таран"
+
+msgid "artefact/actionList/revenge"
+msgstr "Реванш"
 
 msgid "artefact/actionList/scan"
 msgstr "Сканирование"
@@ -36,6 +66,11 @@ msgstr "Попадание импульсом"
 msgid "artefact/actionsTitle"
 msgstr "Полезные действия"
 
+msgid "artefact/descShort"
+msgstr ""
+"Исследуйте Объект, продвигаясь по прогрессии, и помогайте участникам миссии "
+"достигнуть поставленной цели."
+
 msgid "artefact/description"
 msgstr ""
 "Неизвестное науке небесное тело, названное нашими учёными «Объект». "
@@ -44,46 +79,78 @@ msgstr ""
 "произведено, тем больше данных мы получим для расшифровки послания с Марса!"
 
 msgid "artefact/doneProgression"
-msgstr "Поздравляем! Экспедиция «На Марс!» завершена успешно."
+msgstr "Экспедиция завершена успешно!"
+
+msgid "artefact/medalsTitle"
+msgstr "Памятные награды"
 
 msgid "artefact/points"
 msgstr "{points} / {pointsLimit}"
 
+msgid "artefact/progressionTitle"
+msgstr "ПРОГРЕСС ЭКСПЕДИЦИИ"
+
 msgid "artefact/title"
 msgstr "ОБЪЕКТ"
 
+msgid "artefact/titleTooltip"
+msgstr "Цель экспедиции"
+
+msgid "artefact/tooltip/currentRewards"
+msgstr "Награды этапа"
+
+msgid "artefact/tooltip/currentStep"
+msgstr "Текущий этап"
+
+msgid "artefact/tooltip/investigationDesc"
+msgstr ""
+"Космическая миссия по изучению Ядра Объекта вернулась на Землю. Но вы можете"
+" продолжить выполнять личные задания и получать награды."
+
+msgid "artefact/tooltip/investigationDone"
+msgstr "ЭКСПЕДИЦИЯ ЗАВЕРШЕНА"
+
+msgid "artefact/tooltip/newProgressionLevel"
+msgstr "Что внутри Объекта? Мы должны узнать..."
+
+msgid "artefact/tooltip/timeTillEnd"
+msgstr "До завершения экспедиции: %(time)s"
+
+msgid "artefact/tooltip/title"
+msgstr "На Марс: хаос"
+
 msgid "banner/info/disabled"
-msgstr "Вот-вот начнётся."
+msgstr "Вот-вот стартует."
 
 msgid "banner/infoSmall/disabled"
-msgstr "Вот-вот начнётся."
+msgstr "Вот-вот стартует."
 
 msgid "banner/title"
-msgstr "НА МАРС!"
+msgstr "НА МАРС: ХАОС"
 
 msgid "battle/abilityHint/overcharge"
-msgstr "Усиление «Барьер» активировано на %(seconds) с"
+msgstr "Усиление «Барьер» активировано на %(seconds) секунд"
 
 msgid "battle/abilityHint/rapid_shelling"
-msgstr "Усиление «Залп» активировано на %(seconds) с"
+msgstr "Усиление «Залп» активировано на %(seconds) секунд"
 
 msgid "battle/announcement/awaiting_players/title"
-msgstr "ОЖИДАНИЕ ИГРОКОВ..."
+msgstr "ОЖИДАНИЕ ОПЕРАТОРОВ..."
 
 msgid "battle/announcement/infoPlate/command"
 msgstr "F1"
 
 msgid "battle/announcement/infoPlate/title"
-msgstr "Нажмите %(command), чтобы узнать правила участия в экспедиции."
+msgstr "Нажмите %(command), чтобы узнать правила заезда."
 
 msgid "battle/announcement/mission_completed/title"
-msgstr "ЗАДАНИЕ ОКОНЧЕНО"
+msgstr "ЗАЕЗД ЗАВЕРШЁН"
 
 msgid "battle/announcement/pickups/title"
-msgstr "АКТИВНОСТЬ ОБЪЕКТА УВЕЛИЧИЛАСЬ! УСИЛЕНИЯ ПОЯВЯТСЯ ЧЕРЕЗ:"
+msgstr "ДО ПОЯВЛЕНИЯ УСИЛЕНИЙ ОСТАЛОСЬ:"
 
 msgid "battle/announcement/pre_battle/title"
-msgstr "ДО НАЧАЛА:"
+msgstr "ЗАЕЗД СТАРТУЕТ ЧЕРЕЗ:"
 
 msgid "battle/announcement/prepare_to_scan/title"
 msgstr "ЗОНА СКАНИРОВАНИЯ ПОЯВИТСЯ ЧЕРЕЗ:"
@@ -92,7 +159,7 @@ msgid "battle/announcement/prepare_to_scan_final/title"
 msgstr "ФИНАЛЬНАЯ ЗОНА СКАНИРОВАНИЯ ПОЯВИТСЯ ЧЕРЕЗ:"
 
 msgid "battle/announcement/respawn/title"
-msgstr "ДО ВОЗРОЖДЕНИЯ ОСТАЛОСЬ:"
+msgstr "ПРОДОЛЖЕНИЕ ЗАЕЗДА ЧЕРЕЗ:"
 
 msgid "battle/announcement/scanning/players_scanning"
 msgstr "Игроков сканирует: "
@@ -101,18 +168,18 @@ msgid "battle/announcement/scanning/time_left"
 msgstr "До конца сканирования: "
 
 msgid "battle/announcement/start_battle/subtitle"
-msgstr "СБРАСЫВАЙТЕ МАРСОХОДЫ И СКАНИРУЙТЕ ОБЪЕКТ"
+msgstr "УСТРАНЯЙТЕ МАРСОХОДЫ И СКАНИРУЙТЕ ОБЪЕКТ"
 
 msgid "battle/announcement/start_battle/title"
-msgstr "ЗАРАБАТЫВАЙТЕ ОЧКИ, ЧТОБЫ СТАТЬ ЛИДЕРОМ!"
+msgstr "ЧЕМ БОЛЬШЕ ОЧКОВ – ТЕМ БЛИЖЕ НАГРАДЫ"
 
 msgid "battle/battleHelp/ramEnemies"
-msgstr "ТАРАНЬТЕ МАРСОХОДЫ"
+msgstr "АТАКУЙТЕ ПРОТИВНИКА"
 
 msgid "battle/battleHelp/ramEnemiesDescription"
 msgstr ""
-"Выталкивайте других игроков за пределы Зоны столкновения или сбрасывайте их "
-"в кислотные озера."
+"Получайте очки за устранение марсоходов и содействие в этом, серию "
+"устранений и устранение тех, кто уничтожил вашу машину."
 
 msgid "battle/battleHelp/scanObject"
 msgstr "СКАНИРУЙТЕ ОБЪЕКТ"
@@ -123,21 +190,26 @@ msgstr ""
 "очков получит каждый из них."
 
 msgid "battle/battleHelp/shootThem"
-msgstr "СТРЕЛЯЙТЕ ПО НИМ!"
+msgstr "ИСПОЛЬЗУЙТЕ ТРАМПЛИНЫ"
 
 msgid "battle/battleHelp/shootThemDescription"
 msgstr ""
-"При контакте с поверхностью импульс взрывается и может столкнуть марсоход со"
-" скалы, даже если вы попали не в него, а рядом."
+"Трамплины подбрасывают ваш марсоход, позволяя ему преодолевать значительные "
+"расстояния."
 
 msgid "battle/battleHelp/title"
-msgstr "ЧТО ДЕЛАТЬ, ЧТОБЫ ПОЛУЧАТЬ ОЧКИ?"
+msgstr "ЗАРАБАТЫВАЙТЕ ОЧКИ И ПРОДВИГАЙТЕСЬ ПО ПРОГРЕССИИ"
 
 msgid "battle/battleHelp/useAbilities"
-msgstr "ИСПОЛЬЗУЙТЕ УСИЛЕНИЯ"
+msgstr "АКТИВИРУЙТЕ УСИЛЕНИЯ"
 
 msgid "battle/battleHelp/useAbilitiesDescription"
-msgstr "Подбирайте усиления и применяй их, исходя из игровой ситуации."
+msgstr ""
+"Подбирайте усиления и применяйте их, исходя из игровой ситуации. За подбор 3"
+" усилений вы получите дополнительные очки."
+
+msgid "battle/crosshair/killStreak"
+msgstr "УСТРАНЕНИЙ ПОДРЯД: %(count)d"
 
 msgid "battle/distanceUnit"
 msgstr "м"
@@ -149,28 +221,25 @@ msgid "battle/hint"
 msgstr "Нажмите %(key), чтобы воспользоваться ручным тормозом."
 
 msgid "battle/loadingScreen/tip1"
-msgstr "Приветствуем вас, отважные участники экспедиции «На Марс!»"
+msgstr "Приветствуем вас, операторы экспедиции «На Марс: хаос»!"
 
 msgid "battle/loadingScreen/tip2"
-msgstr ""
-"Дерзко рассекайте пески красной планеты и получайте очки за свою активность."
+msgstr "?empty?"
 
 msgid "battle/loadingScreen/tip3"
 msgstr ""
-"Стреляйте, тараньте и используйте усиления, чтобы получить очки и приблизить"
-" завершение миссии."
+"Стреляйте, тараньте, используйте способности и усиления и совершайте "
+"полезные действия — всё это принесёт очки. Сканируйте Ядро Объекта в "
+"специальных зонах — это поможет приблизить успешное завершение миссии."
 
 msgid "battle/loadingScreen/tip4"
-msgstr ""
-"Сканируйте Объект — это поможет нашим учёным быстрее расшифровать послание."
+msgstr "?empty?"
 
 msgid "battle/loadingScreen/tip5"
-msgstr ""
-"Не щадите свой марсоход — вы получите новую машину столько раз, сколько "
-"нужно."
+msgstr "?empty?"
 
 msgid "cosmicEventName"
-msgstr "НА МАРС!"
+msgstr "НА МАРС: ХАОС"
 
 msgid "countUp/timer_hrs"
 msgstr "%H ч %M мин"
@@ -182,18 +251,16 @@ msgid "exitMode"
 msgstr "ПОКИНУТЬ РЕЖИМ"
 
 msgid "fightButton/tooltip/vehicleInBattle/body"
-msgstr ""
-"Ваша машина всё ещё выполняет задание в Зоне исследования. Дождитесь её "
-"возвращения на базу."
+msgstr "Марсоход станет доступен после завершения заезда."
 
 msgid "fightButton/tooltip/vehicleInBattle/header"
-msgstr "Марсоход на задании"
+msgstr "Машина в бою"
 
 msgid "fightButton/vehicleInBattle"
 msgstr "В бою"
 
 msgid "headerButtons/battle/types/cosmicEvent"
-msgstr "На Марс!"
+msgstr "На Марс: хаос"
 
 msgid "main/description"
 msgstr ""
@@ -232,10 +299,10 @@ msgid "navigation/main"
 msgstr "ГЛАВНОЕ"
 
 msgid "navigation/pickups"
-msgstr "УСИЛЕНИЯ"
+msgstr "Усиления"
 
-msgid "navigation/vehicle"
-msgstr "МАРСОХОД"
+msgid "navigation/rules"
+msgstr "Карта"
 
 msgid "pickups/black_hole/description"
 msgstr ""
@@ -273,7 +340,7 @@ msgstr "БАРЬЕР"
 msgid "pickups/power_shot/description"
 msgstr ""
 "Стреляет сверхмощным снарядом. Особенно эффективен при попадании не в сам "
-"марсоход, но рядом с ним."
+"марсоход, а рядом с ним."
 
 msgid "pickups/power_shot/label"
 msgstr "ПЛАЗМЕННЫЙ ЛУЧ"
@@ -284,7 +351,7 @@ msgstr "ПЛАЗМЕННЫЙ ЛУЧ"
 msgid "pickups/rapid_shelling/description"
 msgstr ""
 "Производит несколько мощных выстрелов подряд. Отлично подходит для "
-"сталкивания марсоходов в озёра или за пределы Зоны исследования."
+"сталкивания марсоходов в озёра или за пределы Зоны сканирования."
 
 msgid "pickups/rapid_shelling/label"
 msgstr "ЗАЛП"
@@ -299,25 +366,43 @@ msgid "postBattleScreen/arenaScore/activeActions"
 msgstr "Полезные действия"
 
 msgid "postBattleScreen/arenaScore/player/abilityHit"
-msgstr "Реализация усилений"
+msgstr "Применение усиления"
 
 msgid "postBattleScreen/arenaScore/player/abilityPickups"
-msgstr "Подбор усилений"
+msgstr "Подбор усиления"
 
 msgid "postBattleScreen/arenaScore/player/artefactScanning"
 msgstr "Сканирование"
 
+msgid "postBattleScreen/arenaScore/player/assist"
+msgstr "Содействие"
+
+msgid "postBattleScreen/arenaScore/player/boosterJump"
+msgstr "Прыжок с трамплина"
+
 msgid "postBattleScreen/arenaScore/player/enemyKills"
-msgstr "Устранения"
+msgstr "Устранение"
+
+msgid "postBattleScreen/arenaScore/player/firstBlood"
+msgstr "Первое устранение"
+
+msgid "postBattleScreen/arenaScore/player/killStreak"
+msgstr "Серия устранений"
+
+msgid "postBattleScreen/arenaScore/player/pickupMaster"
+msgstr "Мастер усилений"
 
 msgid "postBattleScreen/arenaScore/player/players"
-msgstr "Участники экспедиции"
+msgstr "Участники заезда"
 
 msgid "postBattleScreen/arenaScore/player/pointsGained"
 msgstr "Получено очков"
 
 msgid "postBattleScreen/arenaScore/player/ramming"
 msgstr "Таран"
+
+msgid "postBattleScreen/arenaScore/player/revenge"
+msgstr "Реванш"
 
 msgid "postBattleScreen/arenaScore/player/shots"
 msgstr "Попадание импульсом"
@@ -340,24 +425,25 @@ msgid "postBattleScreen/battleResults/info/"
 msgstr "Закрыть"
 
 msgid "postBattleScreen/battleResults/info/battleOver"
-msgstr "Бой окончен: %(date)"
+msgstr "Заезд окончен: %(date)"
 
 msgid "postBattleScreen/battleResults/info/heading"
-msgstr "НА МАРС! • ЗОНА СТОЛКНОВЕНИЯ"
+msgstr "НА МАРС: ХАОС • ЗОНА СТОЛКНОВЕНИЯ"
 
 msgid "postBattleScreen/battleResults/missionsCompleted"
-msgstr "Все задачи выполнены. К новым вы сможете приступить завтра."
+msgstr "Все личные задания выполнены. К новым можно будет приступить завтра."
 
 msgid "postBattleScreen/battleResults/noQuestProgression"
-msgstr ""
-"Вы не выполнили ни одно из условий специальных задач. Как насчёт попробовать"
-" ещё раз?"
+msgstr "Вы не выполнили ни одного личного задания. Попробуем ещё раз?"
 
 msgid "postBattleScreen/battleResults/player/abilityPickups"
 msgstr "Усиления"
 
 msgid "postBattleScreen/battleResults/player/enemyKills"
 msgstr "Устранения"
+
+msgid "postBattleScreen/battleResults/player/killStreak"
+msgstr "Серия устранений"
 
 msgid "postBattleScreen/battleResults/player/marsPoints"
 msgstr "Очки"
@@ -366,7 +452,7 @@ msgid "postBattleScreen/battleResults/playersPlace"
 msgstr "МЕСТО: %(place)"
 
 msgid "postBattleScreen/dailyMission/heading"
-msgstr "Специальная задача"
+msgstr "Личное задание"
 
 msgid "postBattleScreen/dailyMission/status/active"
 msgstr "Выполняется"
@@ -383,80 +469,190 @@ msgstr "Таблица лидеров"
 msgid "postBattleScreen/tabs/battleResults"
 msgstr "Личный результат"
 
+msgid "queue/cosmicEventName"
+msgstr "На Марс: хаос"
+
 msgid "queue/description"
 msgstr " "
 
 msgid "queue/leaveBattleButton"
 msgstr "Выйти"
 
+msgid "queue/newRoverName"
+msgstr "Метеор"
+
+msgid "queue/oldRoverName"
+msgstr "Спутник"
+
 msgid "queue/playersInQueue"
-msgstr "Участников экспедиции в очереди:"
+msgstr "Участников заезда в очереди:"
 
 msgid "queue/vehicle"
-msgstr "Машина:"
+msgstr "Марсоход:"
 
-msgid "queue/vehicleName"
-msgstr "Марсоход"
+msgid "queue/vehicleName/new"
+msgstr "Метеор"
+
+msgid "queue/vehicleName/old"
+msgstr "Спутник"
 
 msgid "queue/waitingTime"
 msgstr "Время ожидания:"
 
 msgid "rewardsView/allDailyCompleted"
-msgstr "ВСЕ СПЕЦИАЛЬНЫЕ ЗАДАЧИ НА СЕГОДНЯ ЗАВЕРШЕНЫ"
+msgstr "ВСЕ ЛИЧНЫЕ ЗАДАНИЯ ЭТОГО ДНЯ ВЫПОЛНЕНЫ"
 
 msgid "rewardsView/close"
 msgstr "ЗАКРЫТЬ"
 
 msgid "rewardsView/conditionsFulfilledTitle"
-msgstr "ВСЕ УСЛОВИЯ ВЫПОЛНЕНЫ"
+msgstr "НАГРАДА ПОЛУЧЕНА"
 
 msgid "rewardsView/confirm"
 msgstr "Так точно!"
 
 msgid "rewardsView/progressionComplete/text"
-msgstr ""
-"Смелые первопроходцы! Вам начислены награды за успешное завершение "
-"экспедиции «На Марс!»."
+msgstr " "
 
 msgid "rewardsView/progressionComplete/title"
-msgstr "ПРОГРЕССИЯ СОБЫТИЯ «НА МАРС!» ЗАВЕРШЕНА"
+msgstr "ПРОГРЕССИЯ СОБЫТИЯ «НА МАРС: ХАОС» ПРОЙДЕНА"
 
 msgid "rewardsView/rewardReceived/text"
-msgstr ""
-"Отважные космонавты! Вам начислены награды за успешное выполнение всех "
-"специальных задач на сегодня в экспедиции «На Марс!»."
+msgstr " "
 
 msgid "rewardsView/rewardReceived/title"
 msgstr "НАГРАДА ПОЛУЧЕНА"
 
 msgid "rewardsView/rewardsReceived/text"
-msgstr ""
-"Космические герои! Вам выданы награды за выполнение всех необходимых условий"
-" в ходе экспедиции «На Марс!»."
+msgstr " "
 
 msgid "rewardsView/rewardsReceived/title"
-msgstr "ПОЛУЧЕННЫЕ НАГРАДЫ"
+msgstr "ВЫ ВЫПОЛНИЛИ ВСЕ НЕОБХОДИМЫЕ УСЛОВИЯ СОБЫТИЯ «НА МАРС: ХАОС»"
 
 msgid "rewardsView/stepCompleted"
 msgstr "ЭТАП %(stepNumber)s ЗАВЕРШЁН!"
 
 msgid "rewardsView/viewTitle"
-msgstr "НА МАРС!"
+msgstr " "
+
+msgid "rules/artefact/description"
+msgstr ""
+"На карте будут активироваться 3 малых и 1 финальная Зоны сканирования. "
+"Продержитесь в них как можно дольше."
+
+msgid "rules/artefact/title"
+msgstr "ЗОНА СКАНИРОВАНИЯ"
+
+msgid "rules/geysers/description"
+msgstr ""
+"При заезде на гейзер ваш марсоход подбросит вверх. Куда он приземлится — "
+"тайна. Так что это рискованный аттракцион!"
+
+msgid "rules/geysers/title"
+msgstr "ГЕЙЗЕРЫ"
+
+msgid "rules/jampers/description"
+msgstr ""
+"Трамплин перенесёт ваш марсоход на значительное расстояние. Главное — "
+"правильно рассчитать направление прыжка."
+
+msgid "rules/jampers/title"
+msgstr "ТРАМПЛИНЫ"
+
+msgid "rules/powerups/description"
+msgstr ""
+"Усиления появляются несколько раз за заезд. Каждое наделит вас особой "
+"способностью, которую вы сможете реализовать однократно."
+
+msgid "rules/powerups/title"
+msgstr "УСИЛЕНИЯ"
+
+msgid "rulesEntrypoint/tooltip/description"
+msgstr ""
+"Здесь хранятся основные сведения о проведении научно-исследовательских "
+"заездов в рамках миссии «На Марс: хаос»."
+
+msgid "rulesEntrypoint/tooltip/footerDesc"
+msgstr ""
+"Гений компьютерных технологий. Характер стойкий. Умна, самодостаточна, "
+"решительна. Всегда знает, что говорит. Так что лучше её слушаться."
+
+msgid "rulesEntrypoint/tooltip/personDesc"
+msgstr "Координатор новой экспедиции"
+
+msgid "rulesEntrypoint/tooltip/personTitle"
+msgstr "Елена Васильева"
+
+msgid "rulesEntrypoint/tooltip/title"
+msgstr "Главное об экспедиции"
 
 msgid "shopEntry/title"
 msgstr "ТОВАРЫ С МАРСА"
 
+msgid "specifications/acceleration/desc"
+msgstr ""
+"Показатель того, как быстро марсоход может набрать скорость после начала "
+"движения."
+
+msgid "specifications/acceleration/title"
+msgstr "РАЗГОН"
+
+msgid "specifications/acceleration/tooltipTitle"
+msgstr "Разгон"
+
+msgid "specifications/fireRate/desc"
+msgstr "Количество выстрелов, которые марсоход может произвести в минуту."
+
+msgid "specifications/fireRate/title"
+msgstr "СКОРОСТРЕЛЬНОСТЬ"
+
+msgid "specifications/fireRate/tooltipTitle"
+msgstr "Скорострельность"
+
+msgid "specifications/maxSpeed/desc"
+msgstr "Верхний передел скорости, которую может набрать марсоход."
+
+msgid "specifications/maxSpeed/title"
+msgstr "МАКС. СКОРОСТЬ"
+
+msgid "specifications/maxSpeed/tooltipTitle"
+msgstr "Макс. скорость"
+
+msgid "specifications/shotPower/desc"
+msgstr "Сила, с которой марсоходы будут отброшены при воздействии импульса."
+
+msgid "specifications/shotPower/title"
+msgstr "МОЩНОСТЬ ВЫСТРЕЛА"
+
+msgid "specifications/shotPower/tooltipTitle"
+msgstr "Мощность выстрела"
+
+msgid "specifications/stability/desc"
+msgstr ""
+"Способность марсохода сопротивляться воздействию импульсов. Чем ниже "
+"параметр, тем дальше отбросит машину при попадании."
+
+msgid "specifications/stability/title"
+msgstr "УСТОЙЧИВОСТЬ"
+
+msgid "specifications/stability/tooltipTitle"
+msgstr "Устойчивость"
+
+msgid "specifications/title"
+msgstr "ХАРАКТЕРИСТИКИ"
+
 msgid "tooltip/marsPoints/description"
 msgstr ""
-"Выполняйте специальные задачи и совершайте полезные действия в ходе научно-"
-"исследовательских боёв, чтобы заработать очки."
+"Выполняйте личные задания и совершайте полезные действия в ходе заездов, "
+"чтобы получать очки события и продвигаться по прогрессии."
 
 msgid "tooltip/marsPoints/header"
 msgstr "Очки события"
 
 msgid "tooltip/shopEntry/description"
 msgstr ""
-"Нажмите, чтобы посмотреть специальные предложения экспедиции «На Марс!»."
+"Нажмите, чтобы перейти к специальным предложениям экспедиции «На Марс: "
+"хаос»."
 
 msgid "vehicle/aspectList/aspect1/description"
 msgstr ""
@@ -491,5 +687,32 @@ msgstr ""
 msgid "vehicle/inBattle"
 msgstr "В бою"
 
-msgid "vehicle/title"
-msgstr "МАРСОХОД"
+msgid "vehicle/title/new"
+msgstr "МЕТЕОР"
+
+msgid "vehicle/title/old"
+msgstr "СПУТНИК"
+
+msgid "vehicle/tooltip/newVehicle/longDesc"
+msgstr ""
+"Революционная модель, спроектированная на основе марсохода «Спутник». "
+"Отличается более высокой скоростью и манёвренностью. «Метеоры» оборудованы "
+"передовыми приборами и рассчитаны на экстремальные условия эксплуатации."
+
+msgid "vehicle/tooltip/newVehicle/shortDesc"
+msgstr "Новая модель марсохода"
+
+msgid "vehicle/tooltip/newVehicle/title"
+msgstr "Метеор"
+
+msgid "vehicle/tooltip/oldVehicle/longDesc"
+msgstr ""
+"Экспериментальная разработка. Предназначена для выполнения как "
+"исследовательских, так и боевых задач на Марсе. По сравнению с машинами "
+"модели «Метеор» более устойчивы и стреляют более мощными импульсами."
+
+msgid "vehicle/tooltip/oldVehicle/shortDesc"
+msgstr "Марсоход прошлой экспедиции"
+
+msgid "vehicle/tooltip/oldVehicle/title"
+msgstr "Спутник"

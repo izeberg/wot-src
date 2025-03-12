@@ -23,7 +23,6 @@ class VEHICLE_PREVIEW(object):
     HEADER_BACKBTN_DESCRLABEL_BATTLEMATTERS = '#vehicle_preview:header/backBtn/descrLabel/battleMatters'
     HEADER_BACKBTN_DESCRLABEL_BATTLEMATTERSMAINREWARD = '#vehicle_preview:header/backBtn/descrLabel/battleMattersMainReward'
     HEADER_BACKBTN_DESCRLABEL_COLLECTIONS = '#vehicle_preview:header/backBtn/descrLabel/collections'
-    HEADER_BACKBTN_DESCRLABEL_BOB = '#vehicle_preview:header/backBtn/descrLabel/bob'
     HEADER_TITLE = '#vehicle_preview:header/title'
     HEADER_CLOSEBTN_LABEL = '#vehicle_preview:header/closeBtn/label'
     HERO_HEADER_TITLE = '#vehicle_preview:hero/header/title'
@@ -152,8 +151,7 @@ class VEHICLE_PREVIEW(object):
      HEADER_BACKBTN_DESCRLABEL_RESOURCEWELL,
      HEADER_BACKBTN_DESCRLABEL_BATTLEMATTERS,
      HEADER_BACKBTN_DESCRLABEL_BATTLEMATTERSMAINREWARD,
-     HEADER_BACKBTN_DESCRLABEL_COLLECTIONS,
-     HEADER_BACKBTN_DESCRLABEL_BOB)
+     HEADER_BACKBTN_DESCRLABEL_COLLECTIONS)
     BUYINGPANEL_OFFER_RENT_NAME_ENUM = (
      BUYINGPANEL_OFFER_RENT_NAME_CYCLE,
      BUYINGPANEL_OFFER_RENT_NAME_CYCLES,

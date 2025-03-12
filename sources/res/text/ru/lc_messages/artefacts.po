@@ -208,9 +208,15 @@ msgstr "Вентиляция"
 msgid "archetype/modernizedAimDrivesAimingStabilizer/name/noTemplate"
 msgstr "Система управления огнём"
 
+msgid "archetype/modernizedDamageVentilation/name/noTemplate"
+msgstr "Расточка каморы"
+
 msgid ""
 "archetype/modernizedExtraHealthReserveAntifragmentationLining/name/noTemplate"
 msgstr "Комплекс улучшения выживаемости"
+
+msgid "archetype/modernizedTankRammerSights/name/noTemplate"
+msgstr "Многозубая каретка досылателя"
 
 msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
 msgstr "Система повышения мобильности"
@@ -732,11 +738,12 @@ msgstr "Марш-бросок"
 
 msgid "comp7_recon/descr/active"
 msgstr ""
-"Через {colorTagOpen}%(delay)d с{colorTagClose} над выбранной вами областью "
-"пролетит самолёт-разведчик. Замеченная в радиусе "
-"{colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d м{colorTagClose} "
-"техника противника будет оставаться обнаруженной в течение "
-"{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}."
+"Через {colorTagOpen}%(delay)d с{colorTagClose} над выбранной вами зоной "
+"радиусом {colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d "
+"м{colorTagClose} пролетит самолёт-разведчик. Техника противника, замеченная "
+"в этой зоне, останется обнаруженной в течение "
+"{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}"
+" или до тех пор, пока не покинет её."
 
 msgid "comp7_recon/name"
 msgstr "Самолёт-разведчик"
@@ -776,7 +783,7 @@ msgstr "Точно в цель"
 
 msgid "comp7_sure_shot/descr/active"
 msgstr ""
-"На следующие {colorTagOpen}%(duration)d с{colorTagClose} уменьшает разброс орудия при движении, поворотах ходовой, вращении башни и после выстрела на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
+"На следующие {colorTagOpen}%(duration)d с{colorTagClose} уменьшает разброс орудия при движении, поворотах ходовой и вращении башни на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
 "\n"
 "Нанесение урона выстрелом в течение действия навыка сокращает время перезарядки на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} от процента, на который уменьшилась прочность машины противника.\n"
 "\n"
@@ -1735,6 +1742,36 @@ msgstr "Система управления огнём Т3"
 msgid "modernizedAimDrivesAimingStabilizer3/short_special"
 msgstr "Система управления огнём Т3"
 
+msgid "modernizedDamageVentilation"
+msgstr "Расточка каморы"
+
+msgid "modernizedDamageVentilation1/long_special"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation1/name"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation1/short_special"
+msgstr "Расточка каморы Т1"
+
+msgid "modernizedDamageVentilation2/long_special"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation2/name"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation2/short_special"
+msgstr "Расточка каморы Т2"
+
+msgid "modernizedDamageVentilation3/long_special"
+msgstr "Расточка каморы Т3"
+
+msgid "modernizedDamageVentilation3/name"
+msgstr "Расточка каморы Т3"
+
+msgid "modernizedDamageVentilation3/short_special"
+msgstr "Расточка каморы Т3"
+
 msgid "modernizedExtraHealthReserveAntifragmentationLining1/long_special"
 msgstr "Комплекс улучшения выживаемости Т1"
 
@@ -1761,6 +1798,36 @@ msgstr "Комплекс улучшения выживаемости Т3"
 
 msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
 msgstr "Комплекс улучшения выживаемости Т3"
+
+msgid "modernizedTankRammerSights"
+msgstr "Многозубая каретка досылателя"
+
+msgid "modernizedTankRammerSights1/long_special"
+msgstr "Многозубая каретка досылателя Т1"
+
+msgid "modernizedTankRammerSights1/name"
+msgstr "Многозубая каретка досылателя Т1"
+
+msgid "modernizedTankRammerSights1/short_special"
+msgstr "Многозубая каретка досылателя Т1"
+
+msgid "modernizedTankRammerSights2/long_special"
+msgstr "Многозубая каретка досылателя Т2"
+
+msgid "modernizedTankRammerSights2/name"
+msgstr "Многозубая каретка досылателя Т2"
+
+msgid "modernizedTankRammerSights2/short_special"
+msgstr "Многозубая каретка досылателя Т2"
+
+msgid "modernizedTankRammerSights3/long_special"
+msgstr "Многозубая каретка досылателя Т3"
+
+msgid "modernizedTankRammerSights3/name"
+msgstr "Многозубая каретка досылателя Т3"
+
+msgid "modernizedTankRammerSights3/short_special"
+msgstr "Многозубая каретка досылателя Т3"
 
 msgid "modernizedTurbochargerRotationMechanism1/long_special"
 msgstr "Система повышения мобильности Т1"
@@ -1939,8 +2006,8 @@ msgstr ""
 msgid "rammerBattleBooster/descr"
 msgstr ""
 "%s от времени заряжания орудия при установленном оборудовании «Досылатель» "
-"(любого типа орудия и калибра), «Экспериментальная система заряжания» или "
-"«Трофейный досылатель»."
+"(любого типа орудия и калибра), «Экспериментальная система заряжания», "
+"«Трофейный досылатель» или «Многозубая каретка досылателя»."
 
 msgid "rammerBattleBooster/gain/deluxe"
 msgstr "-2,5%"
@@ -2048,6 +2115,29 @@ msgstr "Только для техники Чехословакии."
 
 msgid "ration_czech/short_special"
 msgstr "Повышает эффективность чехословацких экипажей"
+
+msgid "ration_intunion/always"
+msgstr "%(crewLevel)s ко всем навыкам экипажа. Расходуется за один бой."
+
+msgid "ration_intunion/descr"
+msgstr "{colorTagOpen}+10%{colorTagClose} ко всем навыкам экипажа."
+
+msgid "ration_intunion/long_special"
+msgstr ""
+"Автоматически активируется после начала боя и действует на всём его "
+"протяжении. Подходит только для техники Сборной наций."
+
+msgid "ration_intunion/name"
+msgstr "Кофе с галетами"
+
+msgid "ration_intunion/onUse"
+msgstr "?empty?"
+
+msgid "ration_intunion/restriction"
+msgstr "Только для техники Сборной наций."
+
+msgid "ration_intunion/short_special"
+msgstr "Повышает эффективность экипажей Сборной наций."
 
 msgid "ration_italy/always"
 msgstr "%(crewLevel)s ко всем навыкам экипажа. Расходуется за один бой."
