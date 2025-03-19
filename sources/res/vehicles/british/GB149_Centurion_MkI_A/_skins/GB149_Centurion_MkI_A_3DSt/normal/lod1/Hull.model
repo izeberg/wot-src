@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB149_Centurion_MkI_A/_skins/GB149_Centurion_MkI_A_3DSt/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB149_Centurion_MkI_A/_skins/GB149_Centurion_MkI_A_3DSt/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.684113 -0.838725 -3.935927</min>
+		<max>1.688037 0.690752 3.626864</max>
+	</visibilityBox>
+</root>

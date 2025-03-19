@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB149_Centurion_MkI_A/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB149_Centurion_MkI_A/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.614255 0.004255 -3.599211</min>
+		<max>1.614255 1.430605 3.657753</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB149_Centurion_MkI_A/_skins/GB149_Centurion_MkI_A_3DSt/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB149_Centurion_MkI_A/_skins/GB149_Centurion_MkI_A_3DSt/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.533479 0.006340 -4.436084</min>
+		<max>1.528576 1.425781 4.217896</max>
+	</visibilityBox>
+</root>

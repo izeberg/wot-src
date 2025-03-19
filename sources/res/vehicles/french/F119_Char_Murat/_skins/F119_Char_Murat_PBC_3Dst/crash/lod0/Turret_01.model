@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.584856 -0.018461 -2.311200</min>
+		<max>1.587514 1.444113 1.548058</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Turret_01</nodefullVisual>
+</root>

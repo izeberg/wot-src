@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB150_Churchill_VII_A/normal/lod1/Gun_01</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>-0.267607 -0.282715 -0.152787</min>
+		<max>0.267603 0.282717 1.986412</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/_skins/GB150_Churchill_VII_A_3DSt/normal/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.884999 -0.045457 -1.650768</min>
+		<max>0.922464 1.878339 1.010159</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB150_Churchill_VII_A/_skins/GB150_Churchill_VII_A_3DSt/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+</root>
