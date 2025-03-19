@@ -108,6 +108,13 @@
 			<undamaged>vehicles/french/F119_Char_Murat/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/french/F119_Char_Murat/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/french/F119_Char_Murat/crash/lod0/Hull.model</exploded>
+			<sets>
+				<F119_Char_Murat_PBC_3Dst>
+					<undamaged>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Hull.model</exploded>
+				</F119_Char_Murat_PBC_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -139,18 +146,9 @@
 			<slot>
 				<slotType>clan</slotType>
 				<slotId>10000</slotId>
-				<rayStart>
-					1.07402 0.64681 2.041401
-					<!--BW_String-->
-				</rayStart>
-				<rayEnd>
-					1.07402 0.451936 1.996411
-					<!--BW_String-->
-				</rayEnd>
-				<rayUp>
-					-0.000125 0.224953 -0.97437
-					<!--BW_String-->
-				</rayUp>
+				<rayStart>1.039041 0.646842 2.041262</rayStart>
+				<rayEnd>1.039041 0.451902 1.996558</rayEnd>
+				<rayUp>-0.000125 0.223523 -0.974699</rayUp>
 				<size>
 					0.3
 					<!--BW_String-->
@@ -1047,6 +1045,14 @@
 				<applyType>universal</applyType>
 				<size>medium</size>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+				<scale>1 1 1</scale>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1101,6 +1107,13 @@
 				<undamaged>vehicles/french/F119_Char_Murat/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/french/F119_Char_Murat/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/french/F119_Char_Murat/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<F119_Char_Murat_PBC_3Dst>
+						<undamaged>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Chassis.model</exploded>
+					</F119_Char_Murat_PBC_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1125,14 +1138,22 @@
 						<isLeft>true</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>-0.041192</renderModelOffset>
+							<renderModelOffset>
+								-0.01119
+								<!--BW_String-->
+							</renderModelOffset>
+							<interpolationsCount>1</interpolationsCount>
 							<lengthwiseSpringLength>
-								0.14278
+								0.14578
 								<!--BW_String-->
 							</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.501616</widthwiseSpringLength>
-							<hingeJointStiffness>1990.541748</hingeJointStiffness>
-							<torsionStiffnessStep>8</torsionStiffnessStep>
+							<widthwiseSpringLength>
+								0.40062
+								<!--BW_String-->
+							</widthwiseSpringLength>
+							<hingeJointStiffness>1500</hingeJointStiffness>
+							<torsionStiffness>10000</torsionStiffness>
+							<torsionStiffnessStep>7</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_L0</wheelName>
@@ -1148,7 +1169,10 @@
 								</wheelGroup>
 								<wheelGroup>
 									<wheelName>WD_L5</wheelName>
-									<groupRadius>0.269759</groupRadius>
+									<groupRadius>
+										0.26876
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										0.385
 										<!--BW_String-->
@@ -1164,7 +1188,7 @@
 									<wheelName>W_L3</wheelName>
 									<wheelName>W_L2</wheelName>
 									<groupRadius>
-										0.31992
+										0.33092
 										<!--BW_String-->
 									</groupRadius>
 									<groupInnerOffset>
@@ -1203,7 +1227,10 @@
 								</wheelGroup>
 								<wheelGroup>
 									<wheelName>W_L1</wheelName>
-									<groupRadius>0.312634</groupRadius>
+									<groupRadius>
+										0.33092
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										0.385
 										<!--BW_String-->
@@ -1228,7 +1255,7 @@
 								<wheelGroup>
 									<wheelName>W_L0</wheelName>
 									<groupRadius>
-										0.31992
+										0.33092
 										<!--BW_String-->
 									</groupRadius>
 									<groupInnerOffset>
@@ -1283,6 +1310,45 @@
 									<row1>-0.000000 0.298748 0.027383</row1>
 									<row2>-0.000000 -0.027383 0.298748</row2>
 									<row3>0.003000 0.899692 0.924072</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>F119_Char_Murat_PBC_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.136050 -0.000000 0.000000</row0>
+									<row1>0.000000 1.374230 -0.000000</row1>
+									<row2>-0.000000 0.000000 7.025000</row2>
+									<row3>-0.000000 1.055000 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.919100 0.000000 0.000000</row0>
+									<row1>0.000000 0.525288 0.000000</row1>
+									<row2>0.000000 0.000000 7.025000</row2>
+									<row3>-0.000000 1.556968 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.668000 0.000000</row1>
+									<row2>-0.000000 0.000000 6.742549</row2>
+									<row3>-1.775000 1.241428 -0.009146</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.897645 -0.000000 -0.000001</row0>
+									<row1>0.000000 1.232099 0.126392</row1>
+									<row2>0.000000 -0.030614 0.298434</row2>
+									<row3>-0.000000 1.038200 -3.578119</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.865581 0.000001 -0.000000</row0>
+									<row1>-0.000000 0.213196 -0.480079</row1>
+									<row2>-0.000000 0.274180 0.121759</row2>
+									<row3>0.000000 1.353727 3.369424</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.907804 0.000001 -0.000000</row0>
+									<row1>-0.000000 0.250349 -0.165305</row1>
+									<row2>-0.000000 0.498556 0.755048</row2>
+									<row3>0.003000 1.290247 1.484864</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1451,6 +1517,45 @@
 									<row3>-0.003000 0.899692 0.924072</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>F119_Char_Murat_PBC_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.136050 0.000000 0.000000</row0>
+									<row1>0.000000 1.374230 0.000000</row1>
+									<row2>0.000000 0.000000 7.025000</row2>
+									<row3>0.000000 1.055000 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.919100 0.000000 0.000000</row0>
+									<row1>0.000000 0.525288 0.000000</row1>
+									<row2>0.000000 0.000000 7.025000</row2>
+									<row3>0.000000 1.556968 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.668000 0.000000</row1>
+									<row2>0.000000 0.000000 6.742549</row2>
+									<row3>1.775000 1.241428 -0.009146</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.897645 0.000000 0.000000</row0>
+									<row1>0.000000 1.232099 0.126391</row1>
+									<row2>0.000000 -0.030614 0.298434</row2>
+									<row3>0.000000 1.038200 -3.578119</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.865581 -0.000001 0.000002</row0>
+									<row1>0.000000 0.213196 -0.480079</row1>
+									<row2>0.000000 0.274180 0.121759</row2>
+									<row3>-0.000000 1.353727 3.369424</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.907804 -0.000001 0.000001</row0>
+									<row1>0.000000 0.250349 -0.165305</row1>
+									<row2>-0.000000 0.498556 0.755048</row2>
+									<row3>-0.003000 1.290247 1.484864</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 				</trackPair>
@@ -1471,9 +1576,12 @@
 								<!--BW_String-->
 							</renderModelOffset>
 							<interpolationsCount>1</interpolationsCount>
-							<lengthwiseSpringLength>0.138135</lengthwiseSpringLength>
+							<lengthwiseSpringLength>
+								0.14814
+								<!--BW_String-->
+							</lengthwiseSpringLength>
 							<widthwiseSpringLength>0.486579</widthwiseSpringLength>
-							<hingeJointStiffness>500</hingeJointStiffness>
+							<hingeJointStiffness>1500</hingeJointStiffness>
 							<torsionStiffnessStep>4</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
@@ -1620,6 +1728,45 @@
 									<row3>0.036000 0.766000 2.484000</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>F119_Char_Murat_PBC_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.136050 -0.000000 0.000000</row0>
+									<row1>0.000000 1.374230 -0.000000</row1>
+									<row2>-0.000000 0.000000 7.025000</row2>
+									<row3>-0.000000 1.055000 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.919100 0.000000 0.000000</row0>
+									<row1>0.000000 0.525288 0.000000</row1>
+									<row2>0.000000 0.000000 7.025000</row2>
+									<row3>-0.000000 1.556968 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.668000 0.000000</row1>
+									<row2>-0.000000 0.000000 6.742549</row2>
+									<row3>-1.775000 1.241428 -0.009146</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.897645 -0.000000 -0.000001</row0>
+									<row1>0.000000 1.232099 0.126392</row1>
+									<row2>0.000000 -0.030614 0.298434</row2>
+									<row3>-0.000000 1.038200 -3.578119</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.865581 0.000001 -0.000000</row0>
+									<row1>-0.000000 0.213196 -0.480079</row1>
+									<row2>-0.000000 0.274180 0.121759</row2>
+									<row3>0.000000 1.353727 3.369424</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.907804 0.000001 -0.000000</row0>
+									<row1>-0.000000 0.250349 -0.165305</row1>
+									<row2>-0.000000 0.498556 0.755048</row2>
+									<row3>0.003000 1.290247 1.484864</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1628,7 +1775,10 @@
 						<physicalParams>
 							<renderModelOffset>-0.036599</renderModelOffset>
 							<interpolationsCount>1</interpolationsCount>
-							<lengthwiseSpringLength>0.138157</lengthwiseSpringLength>
+							<lengthwiseSpringLength>
+								0.14816
+								<!--BW_String-->
+							</lengthwiseSpringLength>
 							<widthwiseSpringLength>0.486802</widthwiseSpringLength>
 							<hingeJointStiffness>500</hingeJointStiffness>
 							<torsionStiffnessStep>4</torsionStiffnessStep>
@@ -1778,6 +1928,45 @@
 									<row1>-0.000000 0.247608 -0.169383</row1>
 									<row2>0.000000 0.169383 0.247607</row2>
 									<row3>-0.036000 0.766000 2.484000</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>F119_Char_Murat_PBC_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.136050 0.000000 -0.000000</row0>
+									<row1>-0.000000 1.374230 -0.000000</row1>
+									<row2>0.000000 0.000000 7.025000</row2>
+									<row3>0.000000 1.055000 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.919100 0.000000 0.000000</row0>
+									<row1>0.000000 0.525288 0.000000</row1>
+									<row2>-0.000000 0.000000 7.025000</row2>
+									<row3>0.000000 1.556968 -0.034000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 -0.000000</row0>
+									<row1>0.000000 0.668000 0.000000</row1>
+									<row2>0.000000 0.000000 6.742549</row2>
+									<row3>1.775000 1.241428 -0.009146</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.897645 0.000000 0.000001</row0>
+									<row1>-0.000000 1.232099 0.126392</row1>
+									<row2>-0.000000 -0.030614 0.298434</row2>
+									<row3>0.000000 1.038200 -3.578119</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.865581 -0.000001 0.000000</row0>
+									<row1>0.000000 0.213196 -0.480079</row1>
+									<row2>0.000000 0.274180 0.121759</row2>
+									<row3>-0.000000 1.353727 3.369424</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.907804 -0.000001 0.000000</row0>
+									<row1>0.000000 0.250349 -0.165305</row1>
+									<row2>0.000000 0.498556 0.755048</row2>
+									<row3>-0.003000 1.290247 1.484864</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -2218,6 +2407,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<F119_Char_Murat_PBC_3Dst>
+							<segmentModelLeft>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</segmentModelLeft>
+							<segmentModelRight>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</segmentModelRight>
+						</F119_Char_Murat_PBC_3Dst>
+					</modelSets>
 				</trackPair>
 				<trackPair>
 					<trackPairIdx>1</trackPairIdx>
@@ -2237,6 +2432,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<F119_Char_Murat_PBC_3Dst>
+							<segmentModelLeft>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</segmentModelLeft>
+							<segmentModelRight>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</segmentModelRight>
+						</F119_Char_Murat_PBC_3Dst>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -2254,6 +2455,11 @@
 						<model>vehicles/french/F119_Char_Murat/track/segment_01.model</model>
 						<length>0.146752</length>
 					</mainSegment>
+					<modelSets>
+						<F119_Char_Murat_PBC_3Dst>
+							<mainSegmentModel>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</mainSegmentModel>
+						</F119_Char_Murat_PBC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>
@@ -2548,6 +2754,11 @@
 						<model>vehicles/french/F119_Char_Murat/track/segment_01.model</model>
 						<length>0.150012</length>
 					</mainSegment>
+					<modelSets>
+						<F119_Char_Murat_PBC_3Dst>
+							<mainSegmentModel>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</mainSegmentModel>
+						</F119_Char_Murat_PBC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.143666</back>
@@ -2827,6 +3038,11 @@
 						<model>vehicles/french/F119_Char_Murat/track/segment_01.model</model>
 						<length>0.146753</length>
 					</mainSegment>
+					<modelSets>
+						<F119_Char_Murat_PBC_3Dst>
+							<mainSegmentModel>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</mainSegmentModel>
+						</F119_Char_Murat_PBC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>
@@ -3133,6 +3349,11 @@
 						<model>vehicles/french/F119_Char_Murat/track/segment_01.model</model>
 						<length>0.150076</length>
 					</mainSegment>
+					<modelSets>
+						<F119_Char_Murat_PBC_3Dst>
+							<mainSegmentModel>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/track/segment_01.model</mainSegmentModel>
+						</F119_Char_Murat_PBC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.143666</back>
@@ -3573,6 +3794,13 @@
 						<undamaged>vehicles/french/F119_Char_Murat/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/french/F119_Char_Murat/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/french/F119_Char_Murat/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<F119_Char_Murat_PBC_3Dst>
+								<undamaged>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Gun_01.model</exploded>
+							</F119_Char_Murat_PBC_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/french/F119_Char_Murat/collision/Gun_01.model</collisionModelServer>
@@ -3617,6 +3845,13 @@
 				<undamaged>vehicles/french/F119_Char_Murat/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/french/F119_Char_Murat/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/french/F119_Char_Murat/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<F119_Char_Murat_PBC_3Dst>
+						<undamaged>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Turret_01.model</exploded>
+					</F119_Char_Murat_PBC_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/french/F119_Char_Murat/collision/Turret_01.model</collisionModelServer>

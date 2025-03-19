@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.953793 -0.994844 -3.615762</min>
+		<max>1.952116 0.692399 3.969426</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod0/Hull</nodefullVisual>
+</root>

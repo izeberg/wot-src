@@ -93,7 +93,7 @@
 				0
 				<material>
 					<identifier>tank_proxy_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>

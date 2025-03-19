@@ -325,13 +325,16 @@ msgstr ""
 "Mk.II"
 
 msgid "Chassis_GB149_Centurion_MkI_A"
-msgstr "百夫长 Mk.IA"
+msgstr "百夫长 St.G"
 
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
 
 msgid "Chassis_GB14_M2_2"
 msgstr "M2A4"
+
+msgid "Chassis_GB150_Churchill_VII_G"
+msgstr "\"丘吉尔\" St.G"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "\"斯图亚特\"I型"
@@ -1341,19 +1344,20 @@ msgid "GB148_FV227_Conceiver_short"
 msgstr "FV227 构想者"
 
 msgid "GB149_Centurion_MkI_A"
-msgstr "百夫长 Mk.IA"
+msgstr "百夫长 St.G"
 
 msgid "GB149_Centurion_MkI_A_descr"
 msgstr ""
-"百夫长坦克的研发始于1943年。该坦克作为\"通用坦克\"设计，以取代现有的步兵坦克和巡洋坦克。百夫长是Y系第一种采用倾斜装甲的坦克，于1947年开始服役。在1945年至1946年间，该系列的坦克总计生产了100辆。"
+"这辆坦克是百夫长 Mk.I的原型车，由年轻且天赋异禀的Alice Shimada指挥。Alice出身于战车道名门世家，并在率领大学选拔队时，成为剧中主角的宿敌。尽管平时文静腼腆，可一旦投入战车道比赛，她就判若两人，展现出极强的战术素养和领导能力。\n"
+"该坦克沿用了大学选拔队时期的深灰绿色涂装，未作改动。唯一的变化是坦克上的徽章——原本的圆形标志被移除，炮塔两侧改为圣葛罗莉安娜女学院的校徽。"
 
 msgid "GB149_Centurion_MkI_A_long_special"
 msgstr ""
 "百夫长 "
-"Mk.IA机动中等，防护一般，但火炮的射击手感、平均穿透力、平均每分钟损伤、精度和俯仰角都可圈可点。虽然在必要时也能与对手互相消耗，但其最佳战略定位仍是支援型坦克，建议与盟友共同行动，或者与对手保持一定的距离。"
+"St.G机动性不俗，装甲适中，但火炮的射击手感、平均穿透力、平均每分钟损伤、精度和俯仰角都可圈可点。虽然在必要时也能与对手互相消耗，但其最佳战略定位仍是支援型坦克，建议与盟友共同行动，或者与对手保持一定的距离。"
 
 msgid "GB149_Centurion_MkI_A_short"
-msgstr "百夫长 Mk.IA"
+msgstr "百夫长 St.G"
 
 msgid "GB149_Centurion_MkI_A_short_special"
 msgstr "较高的平均穿透力，良好的火炮手感"
@@ -1366,6 +1370,23 @@ msgstr "?empty?"
 
 msgid "GB14_M2_short"
 msgstr "M2"
+
+msgid "GB150_Churchill_VII_A"
+msgstr "\"丘吉尔\" St.G"
+
+msgid "GB150_Churchill_VII_A_descr"
+msgstr ""
+"这辆坦克由Darjeeling担任指挥官，她是圣葛罗莉安娜女学院战车道队伍的领队。车组驾驶Y系坦克作战，并以秉承传统为荣。这些少女们举止优雅，热爱英式料理，执着追求下午茶文化。她们甚至使用知名红茶品种作为自己的化名，以此向这种芳香饮品致敬。坦克采用深橄榄色涂装，这在该学院并不常见。其徽章为天蓝色盾牌，上面绘有白云、花朵、茶壶和茶杯，顶部则饰有印着学院名称首字母的绯红色丝带。"
+
+msgid "GB150_Churchill_VII_A_long_special"
+msgstr ""
+"该坦克拥有出色的全方位装甲，可抵挡同等级和较低等级对手的大部分攻击。凭借具有高额平均每分钟损伤的火炮，该坦克在坚守阵地、突破敌军防线时表现出色。不过，由于机动性略有不足，很难做到快速转场，因此，选择正确的侧翼对该坦克来说至关重要。"
+
+msgid "GB150_Churchill_VII_A_short"
+msgstr "\"丘吉尔\" St.G"
+
+msgid "GB150_Churchill_VII_A_short_special"
+msgstr "高额的平均每分钟损伤，良好的装甲"
 
 msgid "GB15_Stuart_I"
 msgstr "\"斯图亚特\" I-IV"
@@ -2224,6 +2245,9 @@ msgstr "WS No.19 Mk.III"
 msgid "N19Mk3_BPXIV"
 msgstr "WS No.19 Mk.III"
 
+msgid "N19Mk3_G"
+msgstr "WS No.19 Mk.III G"
+
 msgid "N19_1"
 msgstr "N19"
 
@@ -2650,10 +2674,13 @@ msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 构想者"
 
 msgid "Turret_1_GB149_Centurion_MkI_A"
-msgstr "百夫长 Mk.IA"
+msgstr "百夫长 St.G"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
+
+msgid "Turret_1_GB150_Churchill_VII_G"
+msgstr "\"丘吉尔\" St.G"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "\"斯图亚特\" I"
@@ -3007,6 +3034,9 @@ msgstr "贝德福德双六缸"
 msgid "Vauxhall_Bedford_Twin_Six_BPXIV"
 msgstr "贝德福德双六缸"
 
+msgid "Vauxhall_Bedford_Twin_Six_G"
+msgstr "贝德福德双六缸 G"
+
 msgid "Vickers-Armstrong"
 msgstr "阿姆斯特朗 西德利 V8"
 
@@ -3340,6 +3370,15 @@ msgstr "AP W Mk.1"
 
 msgid "_15mm_Machine_gun_BESA"
 msgstr "15mm BESA重机枪"
+
+msgid "_17_Pr_APCBC_Mk_9T_IA"
+msgstr "APCBC 17磅Mk.9T(IA)"
+
+msgid "_17_Pr_APDS_Mk_1T_IA"
+msgstr "APDS 17磅Mk.1T(IA)"
+
+msgid "_17_Pr_HE_Mk_2T_IA"
+msgstr "HE 17磅Mk.2T(IA)"
 
 msgid "_17pdr_APCBC_Mk8T"
 msgstr "APCBC 17磅Mk.8T"
@@ -3866,6 +3905,9 @@ msgstr "Mk.3 APCR"
 msgid "_75mm_APCR_Mk_3_C"
 msgstr "APCR Mk.3 C"
 
+msgid "_75mm_APCR_Mk_3_G"
+msgstr "APCR Mk.3 G"
+
 msgid "_75mm_AP_HV_Mk1"
 msgstr "AP HV Mk.1"
 
@@ -3880,6 +3922,9 @@ msgstr "Mk.1 AP"
 
 msgid "_75mm_AP_Mk_1_C"
 msgstr "AP Mk.1 C"
+
+msgid "_75mm_AP_Mk_1_G"
+msgstr "AP Mk.1 G"
 
 msgid "_75mm_AT_Gun_M3_L37_usa"
 msgstr "75mm M3 AT炮"
@@ -3905,6 +3950,9 @@ msgstr "75mm炮 Mk.5"
 msgid "_75mm_Gun_Mk_V_BPXIV"
 msgstr "75mm Mk.V C炮"
 
+msgid "_75mm_Gun_Mk_V_G"
+msgstr "75mm炮 Mk.V G"
+
 msgid "_75mm_Gun_Mk_V_LT"
 msgstr "75mm LT炮 Mk.V"
 
@@ -3928,6 +3976,9 @@ msgstr "Mk.2 HE"
 
 msgid "_75mm_HE_Mk_2_C"
 msgstr "HE Mk.2 C"
+
+msgid "_75mm_HE_Mk_2_G"
+msgstr "HE Mk.2 G"
 
 msgid "_75mm_HV_L40"
 msgstr "75mm L/40 HV炮"
