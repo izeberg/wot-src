@@ -89,10 +89,11 @@ package net.wg.gui.components.tooltips
       
       protected function updatePositions() : void
       {
+         var _loc1_:Number = NaN;
          var _loc2_:Number = NaN;
          var _loc3_:TextField = null;
          var _loc4_:Number = NaN;
-         var _loc1_:Number = bgShadowMargin.left + contentMargin.left;
+         _loc1_ = bgShadowMargin.left + contentMargin.left;
          this.headerTF.x = _loc1_;
          this.headerTF.y = topPosition;
          if(this._columns)

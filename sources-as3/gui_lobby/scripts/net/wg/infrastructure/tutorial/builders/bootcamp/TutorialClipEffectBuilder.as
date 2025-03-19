@@ -65,8 +65,7 @@ package net.wg.infrastructure.tutorial.builders.bootcamp
       
       protected function layoutHint() : void
       {
-         var _loc1_:Rectangle = null;
-         _loc1_ = component.getRect(DisplayObject(view));
+         var _loc1_:Rectangle = component.getRect(DisplayObject(view));
          this._clip.x = _loc1_.x + (_loc1_.width >> 1) + this._model.offsetX | 0;
          this._clip.y = _loc1_.y + (_loc1_.height >> 1) + this._model.offsetY | 0;
       }

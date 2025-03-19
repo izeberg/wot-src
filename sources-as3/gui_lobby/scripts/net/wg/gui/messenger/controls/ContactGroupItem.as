@@ -26,8 +26,9 @@ package net.wg.gui.messenger.controls
       
       override protected function applyHtmlTextChanges() : void
       {
+         var _loc2_:int = 0;
          var _loc1_:Number = slideCheckBox.textField.textWidth;
-         var _loc2_:int = Math.round(slideCheckBox.textField.x + _loc1_ + (_loc1_ > 0 ? TEXT_PADDING : 0));
+         _loc2_ = Math.round(slideCheckBox.textField.x + _loc1_ + (_loc1_ > 0 ? TEXT_PADDING : 0));
          htmlTF.x = _loc2_;
          htmlTF.width = _width - _loc2_;
          htmlTF.htmlText = _htmlLabel;
