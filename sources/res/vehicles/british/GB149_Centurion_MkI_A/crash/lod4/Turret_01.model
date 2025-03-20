@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.209905 -0.000492 -1.939665</min>
+		<max>1.205952 1.230389 1.218065</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB149_Centurion_MkI_A/crash/lod4/Turret_01</nodefullVisual>
+</root>

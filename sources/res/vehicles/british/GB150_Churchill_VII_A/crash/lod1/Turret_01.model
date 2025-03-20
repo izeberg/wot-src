@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB150_Churchill_VII_A/crash/lod2/Turret_01</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-0.890262 -0.054597 -1.136691</min>
+		<max>
+			0.926486 1.087337 1.02047
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

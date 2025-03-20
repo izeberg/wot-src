@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/normal/lod4/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>
+			-1.38147 -0.003134 -3.243244
+			<!--BW_String-->
+		</min>
+		<max>1.400725 1.465227 3.565309</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

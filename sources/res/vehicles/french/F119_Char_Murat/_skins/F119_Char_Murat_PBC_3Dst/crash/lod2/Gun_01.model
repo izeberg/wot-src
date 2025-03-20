@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F119_Char_Murat/_skins/F119_Char_Murat_PBC_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.914742 -0.314837 -2.358075</min>
+		<max>0.914894 0.351351 5.547225</max>
+	</visibilityBox>
+</root>

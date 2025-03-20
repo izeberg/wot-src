@@ -1735,6 +1735,8 @@ package net.wg.data.constants.generated
       
       public static const UK_GB15_STUART_I:String = "uk-GB15_Stuart_I";
       
+      public static const UK_GB150_CHURCHILL_VII_A:String = "uk-GB150_Churchill_VII_A";
+      
       public static const UK_GB17_GRANT_I:String = "uk-GB17_Grant_I";
       
       public static const UK_GB19_SHERMAN_FIREFLY:String = "uk-GB19_Sherman_Firefly";

@@ -328,13 +328,16 @@ msgstr ""
 "Mk. II"
 
 msgid "Chassis_GB149_Centurion_MkI_A"
-msgstr "Centurion Mk. IA"
+msgstr "Centurion St. Gloriana"
 
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
 
 msgid "Chassis_GB14_M2_2"
 msgstr "M2A4"
+
+msgid "Chassis_GB150_Churchill_VII_G"
+msgstr "Churchill St. Gloriana"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -1642,26 +1645,23 @@ msgid "GB148_FV227_Conceiver_short"
 msgstr "Conceiver"
 
 msgid "GB149_Centurion_MkI_A"
-msgstr "Centurion Mk. IA"
+msgstr "Centurion St. Gloriana"
 
 msgid "GB149_Centurion_MkI_A_descr"
 msgstr ""
-"Development of the Centurion started in 1943. The vehicle was designed as a "
-"\"universal tank\" to replace existing infantry and cruiser tanks. The "
-"Centurion was the first British vehicle that featured sloped armor plates. "
-"The tank entered service in 1947. A total of 100 vehicles of this series "
-"were manufactured from 1945 through 1946."
+"A prototype of the Centurion Mk. I, commanded by the young and extraordinarily gifted Alice Shimada. Alice comes from an esteemed family of Sensha-dō masters and became the nemesis of the show's main protagonist when she led the Hand-Picked University Team. This dainty and very shy girl transforms completely in Sensha-dō, becoming a dynamic and strategic Commander.\n"
+"The tank's dark gray-green camouflage has remained unchanged since it appeared in the Hand-Picked University Team. Only the emblems are new: instead of round cockades, the turret now bears the symbol of St. Gloriana Girls' College on each side."
 
 msgid "GB149_Centurion_MkI_A_long_special"
 msgstr ""
-"The Centurion Mk. IA has decent mobility and average armor, but its gun "
-"characteristics—handling, penetration, DPM, accuracy, and "
+"The Centurion St. Gloriana has decent mobility and average armor, but its "
+"gun characteristics—handling, penetration, DPM, accuracy, and "
 "depression/elevation angles—are quite comfortable. While able to trade HP "
 "when needed, it is best positioned strategically as a support vehicle, "
 "either close to teammates or at a distance from opponents."
 
 msgid "GB149_Centurion_MkI_A_short"
-msgstr "Centurion IA"
+msgstr "Cent Gloriana"
 
 msgid "GB149_Centurion_MkI_A_short_special"
 msgstr "High penetration power, good gun handling"
@@ -1677,6 +1677,34 @@ msgstr ""
 
 msgid "GB14_M2_short"
 msgstr "M2"
+
+msgid "GB150_Churchill_VII_A"
+msgstr "Churchill St. Gloriana"
+
+msgid "GB150_Churchill_VII_A_descr"
+msgstr ""
+"This tank's Commander is Darjeeling, leader of the St. Gloriana Girl's "
+"College Sensha-dō team. The crew compete in British vehicles and take pride "
+"in upholding the tradition. They exude refined manners, devotion to British "
+"cuisine, and a passion for afternoon tea. The girls even go under pseudonyms"
+" honoring some of the better known varieties of the aromatic beverage. The "
+"tank has vert olive camouflage, which is unusual for the college. Its emblem"
+" is a celeste shield with a cloud, flowers, a teapot, and a cup, topped by a"
+" crimson ribbon with the initials of the college's name."
+
+msgid "GB150_Churchill_VII_A_long_special"
+msgstr ""
+"The vehicle boasts excellent all-around armor, making it resilient against "
+"most hits from same-tier and lower-tier opponents. Its gun offers impressive"
+" DPM, allowing it to excel in holding positions and breaking through enemy "
+"lines. However, choosing the right flank is crucial, as its limited mobility"
+" makes repositioning challenging."
+
+msgid "GB150_Churchill_VII_A_short"
+msgstr "Chur Gloriana"
+
+msgid "GB150_Churchill_VII_A_short_special"
+msgstr "High DPM, good armor"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -2891,6 +2919,9 @@ msgstr "WS No. 19 Mk. III"
 msgid "N19Mk3_BPXIV"
 msgstr "WS No. 19 Mk. III"
 
+msgid "N19Mk3_G"
+msgstr "WS No. 19 Mk. III G"
+
 msgid "N19_1"
 msgstr "N19"
 
@@ -3309,10 +3340,13 @@ msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
 msgid "Turret_1_GB149_Centurion_MkI_A"
-msgstr "Centurion Mk. IA"
+msgstr "Centurion St. Gloriana"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
+
+msgid "Turret_1_GB150_Churchill_VII_G"
+msgstr "Churchill St. Gloriana"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -3666,6 +3700,9 @@ msgstr "Bedford Twin-Six"
 msgid "Vauxhall_Bedford_Twin_Six_BPXIV"
 msgstr "Bedford Twin-Six"
 
+msgid "Vauxhall_Bedford_Twin_Six_G"
+msgstr "Bedford Twin-Six G"
+
 msgid "Vickers-Armstrong"
 msgstr "Armstrong Siddeley V8"
 
@@ -3999,6 +4036,15 @@ msgstr "AP W Mk. 1"
 
 msgid "_15mm_Machine_gun_BESA"
 msgstr "15 mm Machine Gun BESA"
+
+msgid "_17_Pr_APCBC_Mk_9T_IA"
+msgstr "APCBC 17-Pr. Mk. 9T (IA)"
+
+msgid "_17_Pr_APDS_Mk_1T_IA"
+msgstr "APDS 17-Pr. Mk. 1T (IA)"
+
+msgid "_17_Pr_HE_Mk_2T_IA"
+msgstr "HE 17-Pr. Mk. 2T (IA)"
 
 msgid "_17pdr_APCBC_Mk8T"
 msgstr "APCBC 17-Pr. Mk. 8T"
@@ -4525,6 +4571,9 @@ msgstr "Mk. 3 APCR"
 msgid "_75mm_APCR_Mk_3_C"
 msgstr "APCR Mk. 3 C"
 
+msgid "_75mm_APCR_Mk_3_G"
+msgstr "APCR Mk. 3 G"
+
 msgid "_75mm_AP_HV_Mk1"
 msgstr "AP HV Mk. 1"
 
@@ -4539,6 +4588,9 @@ msgstr "Mk. 1 AP"
 
 msgid "_75mm_AP_Mk_1_C"
 msgstr "AP Mk. 1 C"
+
+msgid "_75mm_AP_Mk_1_G"
+msgstr "AP Mk. 1 G"
 
 msgid "_75mm_AT_Gun_M3_L37_usa"
 msgstr "75 mm AT Gun M3"
@@ -4564,6 +4616,9 @@ msgstr "75 mm Gun Mk. 5"
 msgid "_75mm_Gun_Mk_V_BPXIV"
 msgstr "75 mm Gun Mk. V C"
 
+msgid "_75mm_Gun_Mk_V_G"
+msgstr "75 mm Gun Mk. V G"
+
 msgid "_75mm_Gun_Mk_V_LT"
 msgstr "75 mm LT Gun Mk.V"
 
@@ -4587,6 +4642,9 @@ msgstr "Mk. 2 HE"
 
 msgid "_75mm_HE_Mk_2_C"
 msgstr "HE Mk. 2 C"
+
+msgid "_75mm_HE_Mk_2_G"
+msgstr "HE Mk. 2 G"
 
 msgid "_75mm_HV_L40"
 msgstr "75 mm HV L40"
