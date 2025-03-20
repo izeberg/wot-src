@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/_skins/GB150_Churchill_VII_A_3DSt/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.744719 -0.964933 -3.603482</min>
+		<max>1.737174 0.460217 3.780703</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB150_Churchill_VII_A/_skins/GB150_Churchill_VII_A_3DSt/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+</root>

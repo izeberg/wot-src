@@ -8097,6 +8097,36 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_4/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_5/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_6_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_6/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_6/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_6/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_7_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_7/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_7_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_7/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_7_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_7/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_8_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_8/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_8_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_8/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_8_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_8/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_9_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_9/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_9/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_9/howToGetInfo";
+      
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       
       public static const ELEN_SUMMARY_PARAM_ALL_ALL_HEADER_ENUM:Array = [ELEN_SUMMARY_PARAM_MAX_ORIGINALXP_HEADER,ELEN_SUMMARY_PARAM_MAX_XP_HEADER,ELEN_SUMMARY_PARAM_MAX_DAMAGEDEALT_HEADER,ELEN_SUMMARY_PARAM_MAX_DAMAGEASSISTED_HEADER,ELEN_SUMMARY_PARAM_SUMALL_ORIGINALXP_HEADER,ELEN_SUMMARY_PARAM_SUMALL_XP_HEADER,ELEN_SUMMARY_PARAM_SUMALL_DAMAGEDEALT_HEADER,ELEN_SUMMARY_PARAM_SUMALL_DAMAGEASSISTED_HEADER];

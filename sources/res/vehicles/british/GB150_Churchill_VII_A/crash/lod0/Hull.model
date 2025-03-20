@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/british/GB150_Churchill_VII_A/crash/lod1/Hull</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>-1.744719 -1.238755 -3.603343</min>
+		<max>
+			1.737175 0.444434 3.57445
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

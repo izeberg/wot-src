@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB149_Centurion_MkI_A/crash/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB149_Centurion_MkI_A/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.596163 -0.360295 -0.969873</min>
+		<max>0.585616 0.297086 3.768237</max>
+	</visibilityBox>
+</root>

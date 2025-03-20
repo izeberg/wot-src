@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Hit</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Idle</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/F119_Char_Murat_PBC_3Dst/F119_Char_Murat_PBC_3Dst_hull_idle.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Transition_idle_to_hit</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Hit</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-102.500000 -194.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Hit</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/F119_Char_Murat_PBC_3Dst/F119_Char_Murat_PBC_3Dst_hull_hit.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Transition_hit_to_idle</to>
+			<blendDuration>2.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-102.500000 120.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Transition_idle_to_hit</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>Hit</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-261.500000 -35.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Transition_hit_to_idle</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>Idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>49.000000 -35.000000 0.000000</uiPosition>
+	</node>
+</root>
