@@ -85,8 +85,6 @@ package net.wg.gui.components.carousels.data
       
       public var xpImgSource:String = "";
       
-      public var hasShamrockFactor:Boolean = false;
-      
       public var tankType:String = "";
       
       public var rentLeft:String = "";

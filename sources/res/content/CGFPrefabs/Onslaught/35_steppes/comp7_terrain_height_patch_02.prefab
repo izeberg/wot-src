@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>comp7_terrain_height_patch_02</name>
+			<UUID>ea06a2b6-04c3-4686-9735-c93a02f31d03</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Zone_02</name>
+			<UUID>0406bec4-6b4f-4942-8d13-489d710a75f2</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>0406bec4-6b4f-4942-8d13-489d710a75f2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ea06a2b6-04c3-4686-9735-c93a02f31d03</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>ea06a2b6-04c3-4686-9735-c93a02f31d03</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0406bec4-6b4f-4942-8d13-489d710a75f2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>HeightmapPatchComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>0406bec4-6b4f-4942-8d13-489d710a75f2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>zoneId</name>
+						<value>587699221</value>
+					</property>
+					<property>
+						<name>collisionResolveType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>cameraName</name>
+						<value/>
+					</property>
+					<property>
+						<name>penetrationLapse</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

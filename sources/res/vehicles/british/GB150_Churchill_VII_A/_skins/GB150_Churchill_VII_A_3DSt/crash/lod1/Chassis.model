@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.377149 0.008581 -3.311704</min>
+		<max>1.377149 1.495403 3.724176</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/_skins/GB150_Churchill_VII_A_3DSt/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB150_Churchill_VII_A/_skins/GB150_Churchill_VII_A_3DSt/crash/lod2/Chassis</parent>
+	<extent>64</extent>
+</root>

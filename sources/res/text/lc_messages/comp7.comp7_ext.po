@@ -1026,9 +1026,7 @@ msgid "qualification/counter"
 msgstr "%(battlesCount)s / %(maxBattlesCount)s"
 
 msgid "qualification/counterWithDescription"
-msgstr ""
-"%(counter)s\n"
-"Боёв проведено"
+msgstr "Боёв проведено"
 
 msgid "qualification/ratingCalculationDescription"
 msgstr "Ожидание результатов квалификации для присвоения ранга %(timerIcon)s"
@@ -1205,14 +1203,39 @@ msgstr "БРОНЗА"
 msgid "rankUpper/sixth"
 msgstr "ЛЕГЕНДА"
 
+msgid "rankUpper/text"
+msgstr "РАНГ %(rank)s"
+
 msgid "rankUpper/third"
 msgstr "СЕРЕБРО"
 
 msgid "ratingScore/title"
 msgstr "Очки рейтинга"
 
-msgid "rewards/bonus/deluxe_gift"
-msgstr "Усовершенствованное оборудование"
+msgid "rewardSelection/tooltip/selectableRewardList/deluxe"
+msgstr ""
+"Вы можете выбрать одну единицу усовершенствованного оборудования из списка:\n"
+"\n"
+"• Скрытая выхлопная система\n"
+"• Экспериментальный прицел\n"
+"• Усовершенствованная бортовая передача\n"
+"• Улучшенный компрессор\n"
+"• Повышенная снарядостойкость\n"
+"• Усовершенствованная компоновка\n"
+"• Юстированная оптика\n"
+"• Экспериментальная система заряжания\n"
+"• Система отвода пороховых газов\n"
+"• Износостойкие приводы наводки\n"
+"• Комплекс стабилизационного оборудования"
+
+msgid "rewardSelection/tooltip/selectableRewardList/modernized_devices_t3"
+msgstr ""
+"Вы можете выбрать одну единицу экспериментального оборудования из списка:\n"
+"\n"
+"• Система управления огнём Т3\n"
+"• Комплекс улучшения выживаемости Т3\n"
+"• Система повышения мобильности Т3\n"
+"• Система повышения точности Т3"
 
 msgid "rewards/bonus/style_progress"
 msgstr "Камуфляж «%(name)s»"
@@ -1229,7 +1252,8 @@ msgstr ""
 
 msgid "rewards/subtitle/styleProgress"
 msgstr ""
-"{whiteSpanish_Open}Для стиля «Мифический зверь (алый){whiteSpanish_Close}"
+"{whiteSpanish_Open}Для стиля «Мифический зверь "
+"(нефритовый)»{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -1239,9 +1263,6 @@ msgstr "Также получено:"
 
 msgid "rewardsScreen/button"
 msgstr "Так точно!"
-
-msgid "rewardsScreen/buttonToOtherRewards"
-msgstr "К другим наградам"
 
 msgid "rewardsScreen/buttonToRewards"
 msgstr "К наградам"
@@ -1267,6 +1288,9 @@ msgstr "НАТИСК. СЕЗОН НЕФРИТОВОЙ МАНТИКОРЫ"
 msgid "rewardsScreen/description/year"
 msgstr "НАТИСК. ГОД МАНТИКОРЫ"
 
+msgid "rewardsScreen/goToVehicle"
+msgstr "Где мой «Стингер»?!"
+
 msgid "rewardsScreen/noSeasonResult"
 msgstr "Нет ранга"
 
@@ -1282,6 +1306,12 @@ msgid "rewardsScreen/seasonPointsAmount"
 msgstr ""
 "Всего знамён\n"
 "«Натиска»"
+
+msgid "rewardsScreen/selectEquipment"
+msgstr "Выбрать оборудование"
+
+msgid "rewardsScreen/selectRewards"
+msgstr "Выбрать награды"
 
 msgid "rewardsScreen/shopInfo/header/discount"
 msgstr "В магазине «Натиска» доступны новые скидки!"
@@ -1355,7 +1385,7 @@ msgid "rewardsScreen/title/yearlyRewards"
 msgstr "ГОДОВЫЕ НАГРАДЫ"
 
 msgid "rewardsScreen/yearlyVehicleCrew"
-msgstr "С уникальными членами экипажа:"
+msgstr "С машиной идёт:"
 
 msgid "rewardsSelectionScreen/description"
 msgstr "НАТИСК"
@@ -1466,13 +1496,13 @@ msgstr[1] "Получено %(points)s знамени «Натиска»"
 msgstr[2] "Получено %(points)s знамён «Натиска»"
 
 msgid "seasonStatistics/seasonNameUpper/first"
-msgstr "СЕЗОН I: ЛАЗУРНАЯ МАНТИКОРА"
+msgstr "СЕЗОН I. ЛАЗУРНАЯ МАНТИКОРА"
 
 msgid "seasonStatistics/seasonNameUpper/second"
-msgstr "СЕЗОН II: АЛАЯ МАНТИКОРА"
+msgstr "СЕЗОН II. АЛАЯ МАНТИКОРА"
 
 msgid "seasonStatistics/seasonNameUpper/third"
-msgstr "СЕЗОН III: НЕФРИТОВАЯ МАНТИКОРА"
+msgstr "СЕЗОН III. НЕФРИТОВАЯ МАНТИКОРА"
 
 msgid "seasonStatistics/section/statistics/battles/additional"
 msgstr "Побед: %(additional)s"
@@ -1863,24 +1893,24 @@ msgid "whatsNewButtonLabel"
 msgstr "СЕЗОННЫЕ ОБНОВЛЕНИЯ"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "СЕЗОН АЛОЙ МАНТИКОРЫ"
+msgstr "СЕЗОН НЕФРИТОВОЙ МАНТИКОРЫ"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "НАТИСК. ЧТО НОВОГО?"
 
 msgid "whatsNewView/button/ok"
-msgstr "За дело!"
+msgstr "Шоу начинается!"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Все задачи теперь не имеют срока действия, и их можно выполнять в течение "
-"всего сезона. Вы можете следить за выполнением задач с помощью специального "
-"виджета в Ангаре. Вместо оборудования «Повышенная снарядостойкость» вы "
-"получите специальный жетон, который можно обменять на усовершенствованное "
-"оборудование в качестве награды."
+"Не упустите последний шанс получить ценные награды в этом сезоне, включая "
+"специальный тяжёлый танк X уровня Stinger. Вместе с машиной вы получите все "
+"заработанные для неё 3D-стили, бесстрашный экипаж, а также экспериментальное"
+" оборудование на выбор, эффектный 2D-стиль и многое другое. Удачи на поле "
+"боя!"
 
 msgid "whatsNewView/intro/heading"
-msgstr "Еженедельные задачи %(tag)"
+msgstr "Насладитесь последними моментами года Мантикоры!"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Карты"
@@ -1892,46 +1922,6 @@ msgstr ""
 
 msgid "whatsNewView/roleSkills/heading"
 msgstr "Ребаланс ролевых навыков"
-
-msgid "whatsNewView/sectionDescription/bondShop"
-msgstr ""
-"К предметам магазина «Натиска» теперь можно быстро перейти из раздела "
-"«Товары за боны»."
-
-msgid "whatsNewView/sectionDescription/enemy"
-msgstr "Теперь вы можете видеть имена и ранги соперников в начале боя."
-
-msgid "whatsNewView/sectionDescription/legendRank"
-msgstr ""
-"Ранг «Легенда» присваивается игрокам, попавшим в "
-"{whiteSpanish_Open}топ-%(topPercentage)s%{whiteSpanish_Close} таблицы "
-"лидеров. Таблица обновляется каждые "
-"{whiteSpanish_Open}%(count)s&nbsp;минут{whiteSpanish_Close}."
-
-msgid "whatsNewView/sectionDescription/platoons_2"
-msgstr ""
-"Разница между самым низкоранговым и самым высокоранговым игроком взвода не "
-"может превышать один ранг."
-
-msgid "whatsNewView/sectionDescription/platoons_7"
-msgstr ""
-"Разница между самым низкоранговым и самым высокоранговым игроком взвода не "
-"может превышать два ранга."
-
-msgid "whatsNewView/sectionHeading/bondShop"
-msgstr "Интеграция с Магазином"
-
-msgid "whatsNewView/sectionHeading/enemy"
-msgstr "Знай своего врага"
-
-msgid "whatsNewView/sectionHeading/legendRank"
-msgstr "Расширение ранга «Легенда»"
-
-msgid "whatsNewView/sectionHeading/platoons"
-msgstr "Новые ограничения по взводам — от рейтинга к рангам"
-
-msgid "whatsNewView/sectionSubtitle/platoons"
-msgstr "Взводы из %(count)s игроков"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "УДАЛЕНО"
@@ -1960,25 +1950,6 @@ msgstr "Арендная техника"
 msgid "whatsNewView/watchVideo"
 msgstr "Смотреть видео"
 
-msgid "yearRewards/tooltip/selectableReward/list"
-msgstr ""
-"Вы можете выбрать одно усовершенствованное оборудование из списка:\n"
-"\n"
-"• Скрытая выхлопная система\n"
-"• Экспериментальный прицел\n"
-"• Усовершенствованная бортовая передача\n"
-"• Улучшенный компрессор\n"
-"• Повышенная снарядостойкость\n"
-"• Усовершенствованная компоновка\n"
-"• Юстированная оптика\n"
-"• Экспериментальная система заряжания\n"
-"• Система отвода пороховых газов\n"
-"• Износостойкие приводы наводки\n"
-"• Комплекс стабилизационного оборудования"
-
-msgid "yearRewards/tooltip/selectableReward/title"
-msgstr "Усовершенствованное оборудование"
-
 msgid "yearlyRewards/banner/default"
 msgstr "Награды начисляются в конце третьего сезона."
 
@@ -1989,10 +1960,13 @@ msgid "yearlyRewards/banner/rewardsReceived"
 msgstr "Получена годовая награда. Увидимся в следующем году!"
 
 msgid "yearlyRewards/banner/rewardsSelectionAvailable"
-msgstr "У вас ещё есть награды на выбор"
+msgstr "Выберите оборудование"
 
-msgid "yearlyRewards/banner/selectButtonLabel"
-msgstr "Выбрать награды"
+msgid "yearlyRewards/claim"
+msgstr "Забрать"
+
+msgid "yearlyRewards/claimReward"
+msgstr "Получить награду"
 
 msgid "yearlyRewards/description/achieved"
 msgstr ""

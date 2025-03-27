@@ -18,7 +18,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -420,6 +420,10 @@
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2.2 2.2 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
 				<france:F18_Bat_Chatillon25t_IGR>
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
@@ -1641,6 +1645,10 @@
 					2.6 2.6 0.12 0.000000
 					<!--BW_String-->
 				</uk:GB09_Churchill_VII>
+				<uk:GB150_Churchill_VII_A>
+					2.6 2.6 0.12 0.000000
+					<!--BW_String-->
+				</uk:GB150_Churchill_VII_A>
 				<uk:GB136_Churchill_BPXIV>
 					2.6 2.6 0.12 0.000000
 					<!--BW_String-->
@@ -2285,6 +2293,10 @@
 					5 5 0.000000 0.000000
 					<!--BW_String-->
 				</usa:A34_M24_Chaffee>
+				<usa:A34_M24_Chaffee_CFE_V>
+					5 5 0.000000 0.000000
+					<!--BW_String-->
+				</usa:A34_M24_Chaffee_CFE_V>
 				<usa:A35_Pershing>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -3113,6 +3125,10 @@
 					4.8 4.8 0.000000 0.000000
 					<!--BW_String-->
 				</ussr:R88_Object268>
+				<ussr:R88_Object268_7x7>
+					4.8 4.8 0.000000 0.000000
+					<!--BW_String-->
+				</ussr:R88_Object268_7x7>
 				<ussr:R89_SU122_44>
 					2.1 2.1 0.000000 0.000000
 					<!--BW_String-->
@@ -3187,7 +3203,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -3549,6 +3565,10 @@
 					1.39189 1.39189 0.000000 1.67922
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					1.39189 1.39189 0.000000 1.67922
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
 				<france:F19_Lorraine40t>
 					3.19189 3.19189 1 5.48571
 					<!--BW_String-->
@@ -4750,6 +4770,10 @@
 					1.48649 1.48649 2.17792 3.24805
 					<!--BW_String-->
 				</uk:GB09_Churchill_VII>
+				<uk:GB150_Churchill_VII_A>
+					1.48649 1.48649 2.17792 3.24805
+					<!--BW_String-->
+				</uk:GB150_Churchill_VII_A>
 				<uk:GB136_Churchill_BPXIV>
 					1.48649 1.48649 2.17792 3.24805
 					<!--BW_String-->
@@ -5346,6 +5370,10 @@
 					3.27297 3.27297 3.25714 0.000000
 					<!--BW_String-->
 				</usa:A34_M24_Chaffee>
+				<usa:A34_M24_Chaffee_CFE_V>
+					3.27297 3.27297 3.25714 0.000000
+					<!--BW_String-->
+				</usa:A34_M24_Chaffee_CFE_V>
 				<usa:A35_Pershing>
 					2.84865 2.84865 0.000000 0.000000
 					<!--BW_String-->
@@ -6170,6 +6198,10 @@
 					2.94865 2.94865 4.96494 0.000000
 					<!--BW_String-->
 				</ussr:R88_Object268>
+				<ussr:R88_Object268_7x7>
+					2.94865 2.94865 4.96494 0.000000
+					<!--BW_String-->
+				</ussr:R88_Object268_7x7>
 				<ussr:R89_SU122_44>
 					1.26216 1.26216 4.06883 0.64
 					<!--BW_String-->
@@ -6252,7 +6284,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6304,6 +6336,10 @@
 					1.39189 1.39189 0.01 1.69922
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					1.39189 1.39189 0.01 1.69922
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
 				<france:F37_AMX50_Foch>
 					1.96703 1.96703 -0.45 -0.26
 					<!--BW_String-->
@@ -6477,7 +6513,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6509,6 +6545,10 @@
 					2.28 2.28 10.451 14.8798
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2.28 2.28 10.451 14.8798
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
 				<germany:G121_Grille_15_L63>
 					9.64293 9.64293 10.78 14.58
 					<!--BW_String-->
@@ -6586,7 +6626,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6626,6 +6666,10 @@
 					2 2 9.86 14.9
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_7x7>
+					2 2 9.86 14.9
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_7x7>
 				<france:F84_Somua_SM>
 					2.6 2.6 10.02 14.91
 					<!--BW_String-->
@@ -6756,7 +6800,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6797,7 +6841,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6838,7 +6882,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6879,7 +6923,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6926,7 +6970,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -6969,7 +7013,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -7013,7 +7057,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -7111,7 +7155,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10482,7 +10526,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10529,7 +10573,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10572,7 +10616,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10628,7 +10672,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10672,7 +10716,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10729,7 +10773,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10900,7 +10944,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -10947,7 +10991,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11000,7 +11044,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11077,7 +11121,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11133,7 +11177,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11180,7 +11224,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11590,7 +11634,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11631,7 +11675,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11675,7 +11719,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11722,7 +11766,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11794,7 +11838,7 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11836,7 +11880,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -11979,7 +12023,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -12026,7 +12070,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -12082,7 +12126,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -12129,7 +12173,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -12207,7 +12251,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -12249,7 +12293,7 @@
 		<priceGroup>camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -12379,5 +12423,52 @@
 			</tilingSettings>
 		</camouflage>
 		<priceGroup>camouflages 50g notInShop</priceGroup>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>16024</id>
+			<texture>vehicles/russian/Camouflage/boosteroidstyle_03.dds</texture>
+			<description>#vehicle_customization:camouflage/Boosteroid_03/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/Boosteroid_03/label</userString>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.312239</HULL>
+				<TURRET>0.312239</TURRET>
+				<GUN>0.312239</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					3.3 3.3
+					<!--BW_String-->
+				</factor>
+				<offset>
+					1.03 0.22
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
 	</itemGroup>
 </root>

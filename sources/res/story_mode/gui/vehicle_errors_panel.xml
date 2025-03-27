@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<messages>
+		<message>
+			<name>ability_on_cooldown</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_errors/ability/on_cooldown)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>ability_unable_to_move</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_errors/ability/unable_move)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>ability_unable_to_fire</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_errors/ability/unable_fire)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>ability_unable_other_ability</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_errors/ability/other_ability)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+	</messages>
+</root>

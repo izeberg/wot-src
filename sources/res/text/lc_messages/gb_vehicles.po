@@ -61,6 +61,9 @@ msgstr "SR C42"
 msgid "C42_B47"
 msgstr "C42/B47 AFV stations complete"
 
+msgid "C42_B47_G"
+msgstr "C42/B47"
+
 msgid "C42_B47_SH"
 msgstr "C42/B47 AFV SC"
 
@@ -278,6 +281,9 @@ msgstr "Crusher"
 msgid "Chassis_GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
 
+msgid "Chassis_GB134_Gryphon"
+msgstr "Gryphon"
+
 msgid "Chassis_GB136_Churchill_BPXIV"
 msgstr "Churchill VII"
 
@@ -328,13 +334,16 @@ msgstr ""
 "Mk. II"
 
 msgid "Chassis_GB149_Centurion_MkI_A"
-msgstr "Centurion Mk. IA"
+msgstr "Centurion St. Gloriana"
 
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
 
 msgid "Chassis_GB14_M2_2"
 msgstr "M2A4"
+
+msgid "Chassis_GB150_Churchill_VII_G"
+msgstr "Churchill St. Gloriana"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -1435,6 +1444,36 @@ msgstr "Nomad"
 msgid "GB133_Charioteer_MkVII_short_special"
 msgstr "Комфортное орудие, высокое бронепробитие"
 
+msgid "GB134_Gryphon"
+msgstr "Gryphon"
+
+msgid "GB134_Gryphon_descr"
+msgstr ""
+"По мере развития работ над танком Chieftain встал вопрос об организации "
+"производства машины схожего класса за пределами Великобритании. На основе "
+"ходовой части первого прототипа был разработан проект с американской башней "
+"перспективного танка Concept 1B. Машина получила рабочее название «Грифон». "
+"Помимо башни предполагалось использовать ряд других американских "
+"комплектующих, при этом внутреннее оборудование должно было остаться "
+"британским. Изначально в проекте была заложена возможность установки как "
+"британского, так и американского орудия, в зависимости от страны, где "
+"предполагалось начать производство. Проект закрыли в пользу более "
+"перспективных видов техники."
+
+msgid "GB134_Gryphon_long_special"
+msgstr ""
+"Gryphon — британский тяжёлый танк X уровня с механизмом обратной дозарядки "
+"на два снаряда, благодаря которой у вас практически гарантированно в "
+"сражении будет один дополнительный снаряд. У танка хорошая подвижность, "
+"прочная башня и отличные УВН, что компенсируется довольно скромным "
+"бронированием корпуса."
+
+msgid "GB134_Gryphon_short"
+msgstr "Gryphon"
+
+msgid "GB134_Gryphon_short_special"
+msgstr "Механизм обратной дозарядки, прочная башня"
+
 msgid "GB136_Churchill_BPXIV"
 msgstr "Churchill Crocodile"
 
@@ -1644,26 +1683,24 @@ msgid "GB148_FV227_Conceiver_short"
 msgstr "Conceiver"
 
 msgid "GB149_Centurion_MkI_A"
-msgstr "Centurion Mk. IA"
+msgstr "Centurion St. Gloriana"
 
 msgid "GB149_Centurion_MkI_A_descr"
 msgstr ""
-"Разрабатывался с 1943 года в рамках концепции «универсального танка» для "
-"замены существующих крейсерских и пехотных танков. Первый британский танк с "
-"рациональными углами наклона броневых листов. Принят на вооружение в 1947 "
-"году. В 1945–1946 годах выпущено 100 машин модификации Mk.I."
+"Прототип танка Centurion Mk. I, которым командует молодая и невероятно одарённая Арису Симада, происходящая из уважаемой семьи мастеров сенся-до. В сериале она стала врагом главного протагониста, возглавив университетскую сборную. Во время танкового сражения эта изящная и скромная девушка преображается до неузнаваемости, становясь расчётливым и хладнокровным командиром.\n"
+"Серо-зелёный камуфляж танка остаётся неизменным с момента его появления в составе университетской сборной. Сменились только эмблемы: вместо круглых кокард на бортах башни теперь красуется символ школы св. Глорианы."
 
 msgid "GB149_Centurion_MkI_A_long_special"
 msgstr ""
-"Centurion Mk. IA обладает неплохой мобильностью и средним бронированием, а "
-"характеристики его орудия — бронепробитие, урон в минуту, разброс и углы "
-"вертикального наведения — довольно неплохи. При необходимости танк может "
-"разменивать очки прочности, однако лучший способ его применения — роль "
-"машины поддержки, при выполнении которой стоит держаться поближе к союзникам"
-" и как можно дальше от соперников."
+"Centurion St. Gloriana обладает достойной мобильностью и средним "
+"бронированием, а характеристики его орудия — бронепробитие, урон в минуту, "
+"разброс и углы вертикального наведения — довольно неплохи. При необходимости"
+" танк может разменивать очки прочности, однако эффективнее всего он проявит "
+"себя в роли машины поддержки. При этом важно держаться поближе к союзникам и"
+" как можно дальше от соперников."
 
 msgid "GB149_Centurion_MkI_A_short"
-msgstr "Centurion IA"
+msgstr "Cent Gloriana"
 
 msgid "GB149_Centurion_MkI_A_short_special"
 msgstr "Хорошее бронепробитие, комфортное орудие"
@@ -1679,6 +1716,28 @@ msgstr ""
 
 msgid "GB14_M2_short"
 msgstr "M2"
+
+msgid "GB150_Churchill_VII_A"
+msgstr "Churchill St. Gloriana"
+
+msgid "GB150_Churchill_VII_A_descr"
+msgstr ""
+"Этим танком командует Дарджилинг, лидер клуба сенся-до школы св. Глорианы. Экипаж выступает на британской технике и неизменно придерживается соответствующих традиций. Все девушки-танкисты отличаются безупречными манерами, любят британскую кухню, в особенности послеобеденный чай. Они даже взяли себе имена в честь самых известных сортов этого напитка.\n"
+"На танк нанесён оливково-зелёный камуфляж, что нетипично для этой школы, а в качестве эмблемы используется небесно-голубой щит с изображением облака, цветов, заварочного чайника и чашки. Щит венчает красная лента с инициалами школы."
+
+msgid "GB150_Churchill_VII_A_long_special"
+msgstr ""
+"У машины отличная круговая броня, которая надёжно защищает от снарядов "
+"соперников того же уровня и ниже. Орудие обладает высоким уроном в минуту, "
+"что позволяет эффективно удерживать ключевые позиции или прорывать оборону "
+"противника. Однако при выборе направления следует учитывать невысокую "
+"мобильность — быстро сменить позицию не получится."
+
+msgid "GB150_Churchill_VII_A_short"
+msgstr "Chur Gloriana"
+
+msgid "GB150_Churchill_VII_A_short_special"
+msgstr "Высокий урон в минуту, хорошее бронирование"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -2827,6 +2886,9 @@ msgstr "Leyland L60 No. 4 Mk. 13A"
 msgid "Leyland_L60_No_4_Mk_1A"
 msgstr "Leyland L60 No. 4, Mk. 1A"
 
+msgid "Leyland_L60_No_4_Mk_1A_G"
+msgstr "Leyland L60 No. 4, Mk. 1A"
+
 msgid "Leyland_L60_No_4_Mk_2"
 msgstr "Leyland L60 No. 4, Mk. 2"
 
@@ -2905,6 +2967,9 @@ msgstr "WS No. 19 Mk. III"
 
 msgid "N19Mk3_BPXIV"
 msgstr "WS No. 19 Mk. III"
+
+msgid "N19Mk3_G"
+msgstr "WS No. 19 Mk. III G"
 
 msgid "N19_1"
 msgstr "N19"
@@ -3296,6 +3361,9 @@ msgstr "Crusher"
 msgid "Turret_1_GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
 
+msgid "Turret_1_GB134_Gryphon"
+msgstr "Gryphon"
+
 msgid "Turret_1_GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
 
@@ -3324,10 +3392,13 @@ msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
 msgid "Turret_1_GB149_Centurion_MkI_A"
-msgstr "Centurion Mk. IA"
+msgstr "Centurion St. Gloriana"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
+
+msgid "Turret_1_GB150_Churchill_VII_G"
+msgstr "Churchill St. Gloriana"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -3681,6 +3752,9 @@ msgstr "Bedford Twin-Six"
 msgid "Vauxhall_Bedford_Twin_Six_BPXIV"
 msgstr "Bedford Twin-Six"
 
+msgid "Vauxhall_Bedford_Twin_Six_G"
+msgstr "Bedford Twin-Six G"
+
 msgid "Vickers-Armstrong"
 msgstr "Armstrong Siddeley V8"
 
@@ -3892,6 +3966,9 @@ msgstr "AP M2"
 msgid "_12.7mm_MG_HB_M2"
 msgstr "Browning MG caliber .50 HB, M2"
 
+msgid "_120mm_AP-T_L11B"
+msgstr "AP-T L11B"
+
 msgid "_120mm_AP-T_L1A1"
 msgstr "AP-T L1"
 
@@ -3900,6 +3977,9 @@ msgstr "APDS L15"
 
 msgid "_120mm_APDS_L15A1"
 msgstr "APDS L15A1"
+
+msgid "_120mm_APDS_L15A2"
+msgstr "APDS L15A2"
 
 msgid "_120mm_APDS_L15A4"
 msgstr "APDS L15A4"
@@ -3940,6 +4020,9 @@ msgstr "120 mm Tank Gun L11"
 msgid "_120mm_Gun_L11A1"
 msgstr "120 mm Tank Gun L11A1"
 
+msgid "_120mm_Gun_L11B"
+msgstr "120 mm Tank Gun L11B"
+
 msgid "_120mm_Gun_L11PA"
 msgstr "120 mm Tank Gun L11PA"
 
@@ -3975,6 +4058,9 @@ msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1_MBC"
 msgstr "HE L1 MBC"
+
+msgid "_120mm_HE_L31A2"
+msgstr "HE L31A2"
 
 msgid "_120mm_QF_1_gun"
 msgstr "QF 120 mm Gonsalo"
@@ -4014,6 +4100,15 @@ msgstr "AP W Mk. 1"
 
 msgid "_15mm_Machine_gun_BESA"
 msgstr "15 mm Machine Gun BESA"
+
+msgid "_17_Pr_APCBC_Mk_9T_IA"
+msgstr "APCBC 17-Pr. Mk. 9T (IA)"
+
+msgid "_17_Pr_APDS_Mk_1T_IA"
+msgstr "APDS 17-Pr. Mk. 1T (IA)"
+
+msgid "_17_Pr_HE_Mk_2T_IA"
+msgstr "HE 17-Pr. Mk. 2T (IA)"
 
 msgid "_17pdr_APCBC_Mk8T"
 msgstr "APCBC 17-Pr. Mk. 8T"
@@ -4540,6 +4635,9 @@ msgstr "Mk. 3 APCR"
 msgid "_75mm_APCR_Mk_3_C"
 msgstr "APCR Mk. 3 C"
 
+msgid "_75mm_APCR_Mk_3_G"
+msgstr "APCR Mk. 3 G"
+
 msgid "_75mm_AP_HV_Mk1"
 msgstr "AP HV Mk. 1"
 
@@ -4554,6 +4652,9 @@ msgstr "Mk. 1 AP"
 
 msgid "_75mm_AP_Mk_1_C"
 msgstr "AP Mk. 1 C"
+
+msgid "_75mm_AP_Mk_1_G"
+msgstr "AP Mk. 1 G"
 
 msgid "_75mm_AT_Gun_M3_L37_usa"
 msgstr "75 mm AT Gun M3"
@@ -4579,6 +4680,9 @@ msgstr "75 mm Gun Mk. 5"
 msgid "_75mm_Gun_Mk_V_BPXIV"
 msgstr "75 mm Gun Mk. V C"
 
+msgid "_75mm_Gun_Mk_V_G"
+msgstr "75 mm Gun Mk. V G"
+
 msgid "_75mm_Gun_Mk_V_LT"
 msgstr "75 mm LT Gun Mk.V"
 
@@ -4602,6 +4706,9 @@ msgstr "Mk. 2 HE"
 
 msgid "_75mm_HE_Mk_2_C"
 msgstr "HE Mk. 2 C"
+
+msgid "_75mm_HE_Mk_2_G"
+msgstr "HE Mk. 2 G"
 
 msgid "_75mm_HV_L40"
 msgstr "75 mm HV L40"

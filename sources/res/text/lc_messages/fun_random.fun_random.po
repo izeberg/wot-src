@@ -167,13 +167,14 @@ msgstr ""
 "ЗАДАЧИ ПРОЙДЕНЫ"
 
 msgid "metaProgressionTooltip/reward/header/common"
-msgstr "Награда"
+msgstr ""
+"Необходимо очков для открытия наград следующего этапа: %(stagePoints)s"
 
 msgid "metaProgressionTooltip/reward/header/infinite"
 msgstr "Ближайшая награда этапа"
 
 msgid "metaProgressionTooltip/timer/untilFinish"
-msgstr "%(time)s до окончания события"
+msgstr "%(time)s до окончания активной фазы"
 
 msgid "metaProgressionTooltip/timer/untilRelaunch"
 msgstr "%(time)s до следующего запуска"
@@ -229,6 +230,18 @@ msgstr "?empty?"
 msgid "modes/development/detailedUserName"
 msgstr "?empty?"
 
+msgid "modes/development/entryPoint/performance/tooltip/highRisk/body"
+msgstr "Dev High risks description."
+
+msgid "modes/development/entryPoint/performance/tooltip/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr "Dev Medium risks description."
+
+msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
 msgid "modes/development/lootbox/fep_epic"
 msgstr "?empty?"
 
@@ -261,6 +274,24 @@ msgstr "?empty?"
 
 msgid "modes/development/mode_selector/description"
 msgstr "?empty?"
+
+msgid "modes/development/mode_selector/performance/highRisk/description"
+msgstr "Dev High risks description."
+
+msgid "modes/development/mode_selector/performance/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "modes/development/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Dev Low Performance"
+
+msgid "modes/development/mode_selector/performance/mediumRisk/description"
+msgstr "Dev Medium risks description."
+
+msgid "modes/development/mode_selector/performance/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
+msgid "modes/development/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Dev Reduced Performance"
 
 msgid "modes/development/mode_selector/progression/resettable"
 msgstr "?empty?"
@@ -350,11 +381,201 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fall_tanks/capsUserName"
+msgstr "СИЯНИЕ НЕОНА"
+
+msgid "modes/fall_tanks/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/body"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/lootbox/fep_epic"
+msgstr "Случайная эпичная награда"
+
+msgid "modes/fall_tanks/lootbox/fep_legendary"
+msgstr "Случайная легендарная награда"
+
+msgid "modes/fall_tanks/lootbox/fep_ordinary"
+msgstr "Случайная обычная награда"
+
+msgid "modes/fall_tanks/lootbox/fep_rare"
+msgstr "Случайная редкая награда"
+
+msgid "modes/fall_tanks/lootbox/fep_unusual"
+msgstr "Случайная необычная награда"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача режима «Сияние неона». Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
+msgstr "Задача режима «Сияние неона»"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/timer"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/battleCondition"
+msgstr "Гонка против всех"
+
+msgid "modes/fall_tanks/mode_selector/description"
+msgstr "Экспериментальные бои по нестандартным правилам"
+
+msgid "modes/fall_tanks/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s уровни"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/progression/resettable"
+msgstr "До новой задачи режима «Сияние неона»"
+
+msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
+msgstr "Режим %(subModeName)s завершён. Прогрессия сброшена."
+
+msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
+msgstr "Режим %(subModeName)s завершён."
+
+msgid "modes/fall_tanks/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и режим %(subModeName)s."
+
+msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый режим: %(subModeName)s."
+
+msgid "modes/fall_tanks/notification/switchOffSubModes"
+msgstr "Режим %(subModeName)s недоступен: ведутся технические работы."
+
+msgid "modes/fall_tanks/notification/switchOnSubModes"
+msgstr "Режим %(subModeName)s снова доступен."
+
+msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
+msgstr "Список наград"
+
+msgid "modes/fall_tanks/progression/complete/congratulations"
+msgstr "Поздравляем!"
+
+msgid "modes/fall_tanks/progression/complete/title"
+msgstr "Вы завершили основную прогрессию"
+
+msgid "modes/fall_tanks/progression/infinite/congratulations"
+msgstr "Поздравляем!"
+
+msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgstr "Повторяемый этап"
+
+msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgstr "Вы завершили основную прогрессию"
+
+msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgstr ""
+"Получите столько наград, сколько сможете: %(currentPoints) / "
+"%(infinitySign)s"
+
+msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
+msgstr "Заработано очков: %(progressionSteps)s"
+
+msgid ""
+"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "Заработано очков:"
+
+msgid "modes/fall_tanks/progression/title"
+msgstr "ЗАДАЧА РЕЖИМА «СИЯНИЕ НЕОНА»"
+
+msgid "modes/fall_tanks/rewardsView/header"
+msgstr "ПОЛУЧЕНА ЛЕГЕНДАРНАЯ НАГРАДА"
+
+msgid "modes/fall_tanks/scheduler/notification/available"
+msgstr "Бои режима %(subModeName)s снова доступны."
+
+msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgstr "Бои режима %(subModeName)s завершены"
+
+msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fall_tanks/scheduler/notification/primeTime"
+msgstr ""
+"Бои события %(subModeName)s недоступны до окончания режима прекращения огня."
+
+msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fall_tanks/tierList/description"
+msgstr ""
+"Каждая случайная награда — это один предмет из списка ниже, который вы "
+"можете получить с определённой вероятностью."
+
+msgid "modes/fall_tanks/tierList/title"
+msgstr "Что внутри?"
+
+msgid "modes/fall_tanks/tooltip/filter/body"
+msgstr ""
+"Включить/отключить отображение подходящей техники для режима «Сияние неона»."
+
+msgid "modes/fall_tanks/tooltip/filter/header"
+msgstr "Техника режима «Сияние неона»"
+
+msgid "modes/fall_tanks/userName"
+msgstr "Сияние неона"
+
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
 msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s: %(subModeName)s"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/body"
+msgstr ""
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
+
+msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/header"
+msgstr "Рекомендуется использовать высокие настройки"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr ""
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
+
+msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "Рекомендуется использовать высокие настройки"
 
 msgid "modes/undefined/lootbox/fep_epic"
 msgstr "Случайная особая награда"
@@ -394,6 +615,32 @@ msgstr "Экспериментальные бои по нестандартны�
 
 msgid "modes/undefined/mode_selector/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/description"
+msgstr ""
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
+
+msgid "modes/undefined/mode_selector/performance/highRisk/header"
+msgstr "Рекомендуется использовать высокие настройки"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/header"
+msgstr "Рекомендуется использовать высокие настройки"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
 
 msgid "modes/undefined/mode_selector/progression/resettable"
 msgstr "До новой задачи Аркады"
@@ -704,7 +951,7 @@ msgid "progression/questsList/quest/progressTitle"
 msgstr "Выполнено: %(currentPoints) / %(totalPoints)s"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "До конца события: %(time)s"
+msgstr "До конца активной фазы: %(time)s"
 
 msgid "progression/questsList/questsRenewTimerTitle"
 msgstr "До следующего запуска: %(time)s"
@@ -717,6 +964,9 @@ msgstr "{yellow_Open}%(done)s{yellow_Close} / %(total)s"
 
 msgid "progression/stepsNoProgress"
 msgstr "{bond_Open}%(done)s{bond_Close} / %(total)s"
+
+msgid "quests/limitedProgression/awards/nearest/header"
+msgstr "Необходимо очков для открытия наград следующего этапа: %(count)d"
 
 msgid "rewardsView/additionalRewards/title"
 msgstr "Также получено:"
@@ -766,6 +1016,24 @@ msgstr "?empty?"
 msgid "sub_modes/development/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s уровни"
 
+msgid "sub_modes/development/subModeCard/performance/highRisk/description"
+msgstr "Dev High risks description."
+
+msgid "sub_modes/development/subModeCard/performance/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "sub_modes/development/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Dev Low Performance"
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/description"
+msgstr "Dev Medium risks description."
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Dev Reduced Performance"
+
 msgid "sub_modes/development/subModeCard/title"
 msgstr "?empty?"
 
@@ -780,6 +1048,62 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/capsUserName"
+msgstr "СИЯНИЕ НЕОНА"
+
+msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
+msgstr ""
+"Вперёд к финишной черте, и пусть соперники останутся далеко позади! "
+"Используйте способности «Рывок» и «Щит», чтобы сеять хаос на поле боя."
+
+msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
+msgstr "Осторожно: подвижные платформы"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/fall_tanks/detailsHelpTitle"
+msgstr "Сияние неона"
+
+msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
+msgstr "Гонка против всех"
+
+msgid "sub_modes/fall_tanks/subModeCard/description"
+msgstr "Экспериментальные бои по нестандартным правилам"
+
+msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s уровни"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/title"
+msgstr "Сияние неона"
+
+msgid "sub_modes/fall_tanks/userName"
+msgstr "Сияние неона"
+
+msgid "sub_modes/fall_tanks/userName/quoted"
+msgstr "«Сияние неона»"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"
@@ -807,6 +1131,32 @@ msgstr "Unknown subModeCard description"
 
 msgid "sub_modes/undefined/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s уровни"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/description"
+msgstr ""
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/header"
+msgstr "Рекомендуется использовать высокие настройки"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/header"
+msgstr "Рекомендуется использовать высокие настройки"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
 
 msgid "sub_modes/undefined/subModeCard/title"
 msgstr "Unknown subModeCard title"

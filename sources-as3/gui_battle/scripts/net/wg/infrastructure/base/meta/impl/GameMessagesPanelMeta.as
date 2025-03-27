@@ -2,7 +2,7 @@ package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
    import net.wg.gui.battle.components.BattleDisplayable;
-   import net.wg.gui.battle.views.gameMessagesPanel.data.GameMessageVO;
+   import net.wg.gui.battle.interfaces.IGameMessageVO;
    import net.wg.infrastructure.exceptions.AbstractException;
    
    public class GameMessagesPanelMeta extends BattleDisplayable
@@ -17,7 +17,7 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onMessageHiding:Function;
       
-      private var _gameMessageVO:GameMessageVO;
+      private var _iGameMessageVO:IGameMessageVO;
       
       public function GameMessagesPanelMeta()
       {
@@ -26,10 +26,10 @@ package net.wg.infrastructure.base.meta.impl
       
       override protected function onDispose() : void
       {
-         if(this._gameMessageVO)
+         if(this._iGameMessageVO)
          {
-            this._gameMessageVO.dispose();
-            this._gameMessageVO = null;
+            this._iGameMessageVO.dispose();
+            this._iGameMessageVO = null;
          }
          super.onDispose();
       }
@@ -60,16 +60,23 @@ package net.wg.infrastructure.base.meta.impl
       
       public final function as_addMessage(param1:Object) : void
       {
-         var _loc2_:GameMessageVO = this._gameMessageVO;
-         this._gameMessageVO = new GameMessageVO(param1);
-         this.addMessage(this._gameMessageVO);
+         var _loc2_:IGameMessageVO = this._iGameMessageVO;
+         this._iGameMessageVO = this.getIGameMessageVOForMessageVO(param1);
+         this.addMessage(this._iGameMessageVO);
          if(_loc2_)
          {
             _loc2_.dispose();
          }
       }
       
-      protected function addMessage(param1:GameMessageVO) : void
+      protected function getIGameMessageVOForMessageVO(param1:Object) : IGameMessageVO
+      {
+         var _loc2_:String = "getIGameMessageVOForMessageVO" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc2_);
+         throw new AbstractException(_loc2_);
+      }
+      
+      protected function addMessage(param1:IGameMessageVO) : void
       {
          var _loc2_:String = "as_addMessage" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);

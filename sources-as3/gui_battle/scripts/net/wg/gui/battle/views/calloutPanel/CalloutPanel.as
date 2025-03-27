@@ -16,9 +16,15 @@ package net.wg.gui.battle.views.calloutPanel
       
       private static const TRIGGERED_FADEOUT_STATE_NAME:String = "fadeTriggered";
       
+      private static const TRIGGERED_COMMENDATION_FADEOUT_STATE_NAME:String = "fadeTriggeredCommendation";
+      
       private static const FADEOUT_ANIMATION_ENDFRAME:int = 83;
       
       private static const TRIGGERED_FADEOUT_ANIMATION_ENDFRAME:int = 67;
+      
+      private static const TRIGGERED_COMMENDATION_FADEOUT_ANIMATION_ENDFRAME:int = 127;
+      
+      private static const COMMENDATION_ACTION_NAME:String = "COMMENDATION";
        
       
       public var triggeredCalloutActionOverlay:MovieClip = null;
@@ -39,11 +45,14 @@ package net.wg.gui.battle.views.calloutPanel
       
       private var _wasAnswered:Boolean = false;
       
+      private var _action:String = "";
+      
       public function CalloutPanel()
       {
          super();
          addFrameScript(FADEOUT_ANIMATION_ENDFRAME,this.onFadeOutAnimationCompleted);
          addFrameScript(TRIGGERED_FADEOUT_ANIMATION_ENDFRAME,this.onFadeOutAnimationCompleted);
+         addFrameScript(TRIGGERED_COMMENDATION_FADEOUT_ANIMATION_ENDFRAME,this.onFadeOutAnimationCompleted);
          this.setCompVisible(false);
       }
       
@@ -62,6 +71,7 @@ package net.wg.gui.battle.views.calloutPanel
          stop();
          addFrameScript(FADEOUT_ANIMATION_ENDFRAME,null);
          addFrameScript(TRIGGERED_FADEOUT_ANIMATION_ENDFRAME,null);
+         addFrameScript(TRIGGERED_COMMENDATION_FADEOUT_ANIMATION_ENDFRAME,null);
          this.triggeredCalloutActionOverlay = null;
          this.triggeredCalloutAction = null;
          this.calloutActionOverlay = null;
@@ -75,6 +85,7 @@ package net.wg.gui.battle.views.calloutPanel
       
       override public function setCompVisible(param1:Boolean) : void
       {
+         var _loc2_:String = null;
          if(param1 == _isCompVisible)
          {
             return;
@@ -91,7 +102,12 @@ package net.wg.gui.battle.views.calloutPanel
                onHideStartS();
                if(this._wasAnswered)
                {
-                  gotoAndPlay(TRIGGERED_FADEOUT_STATE_NAME);
+                  _loc2_ = TRIGGERED_FADEOUT_STATE_NAME;
+                  if(this._action == COMMENDATION_ACTION_NAME)
+                  {
+                     _loc2_ = TRIGGERED_COMMENDATION_FADEOUT_STATE_NAME;
+                  }
+                  gotoAndPlay(_loc2_);
                }
                else
                {
@@ -123,6 +139,7 @@ package net.wg.gui.battle.views.calloutPanel
       
       public function as_setData(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String) : void
       {
+         this._action = param1;
          this.calloutActionOverlay.gotoAndStop(param1);
          this.calloutAction.gotoAndStop(param1);
          this.tankText.setVehicleData(param2,param3);
@@ -142,7 +159,7 @@ package net.wg.gui.battle.views.calloutPanel
          this._hasShowData = false;
          this._hasHideData = false;
          this._wasAnswered = false;
-         stop();
+         gotoAndStop(1);
          onHideCompletedS();
       }
    }

@@ -38,21 +38,15 @@ package net.wg.gui.lobby.battleRoyale
          }
       }
       
-      override protected function showContextMenu() : void
-      {
-         App.contextMenuMgr.show(CONTEXT_MENU_HANDLER_TYPE.BATTLE_ROYALE_VEHICLE,this,{"inventoryId":dataVO.id});
-      }
-      
-      override protected function configUI() : void
-      {
-         super.configUI();
-         hoverBg.mouseEnabled = false;
-      }
-      
       override public function set tooltipDecorator(param1:ITooltipMgr) : void
       {
          super.tooltipDecorator = param1;
          this._toolTipMgr = param1;
+      }
+      
+      override protected function showContextMenu() : void
+      {
+         App.contextMenuMgr.show(CONTEXT_MENU_HANDLER_TYPE.BATTLE_ROYALE_VEHICLE,this,{"inventoryId":dataVO.id});
       }
    }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<radius>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</radius>
+		<startTime>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</startTime>
+		<captureTime>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</captureTime>
+	</Properties>
+</root>

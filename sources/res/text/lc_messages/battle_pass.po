@@ -479,8 +479,8 @@ msgstr "будет недоступна"
 
 msgid "chapterChoice/confirmation/extraChapterDescription/text"
 msgstr ""
-"%(icon)После активации специальной главы Тропа престижа %(highlightText) "
-"станет недоступна до завершения или прохождения этой главы."
+"%(icon)После активации специальной главы Тропа престижа %(highlightText) до "
+"завершения или прохождения этой главы."
 
 msgid "chapterChoice/confirmation/title/select"
 msgstr "Активировать главу «%(chName)s»?"
@@ -855,7 +855,7 @@ msgid "intro/tickets/title"
 msgstr "ВАУЧЕРЫ"
 
 msgid "intro/title"
-msgstr "XVI СЕЗОН БОЕВОГО ПРОПУСКА: УДАЧА БЛАГОВОЛИТ ХРАБРЫМ"
+msgstr "XVI СЕЗОН: УДАЧА БЛАГОВОЛИТ ХРАБРЫМ"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"

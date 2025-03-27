@@ -22,7 +22,7 @@ package net.wg.gui.battle.views.consumablesPanel
    public class BattleEquipmentButton extends BattleToolTipButton implements IConsumablesButton, ICoolDownCompleteHandler
    {
       
-      private static const KEY_VALIDATION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
+      protected static const KEY_VALIDATION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
       private static const COOLDOWN_COUNTER_BG_RED:String = "red";
       
@@ -111,6 +111,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _isFillPartially:Boolean = false;
       
+      private var _noBack:Boolean = false;
+      
       public function BattleEquipmentButton()
       {
          this._scheduler = App.utils.scheduler;
@@ -165,6 +167,11 @@ package net.wg.gui.battle.views.consumablesPanel
       override protected function getFrameLabel(param1:String) : String
       {
          return !!this._isReloading ? BATTLE_ITEM_STATES.COOLDOWN : param1;
+      }
+      
+      public function get coolDownTimer() : CoolDownTimer
+      {
+         return this._coolDownTimer;
       }
       
       public function clearColorTransform() : void
@@ -260,7 +267,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function setCoolDownTime(param1:Number, param2:Number, param3:Number, param4:int = 1) : void
       {
-         var _loc5_:int = 0;
+         var _loc5_:Boolean = false;
+         var _loc6_:int = 0;
          this.isActivated = false;
          this._isPermanent = false;
          this._baseTime = param2;
@@ -311,7 +319,8 @@ package net.wg.gui.battle.views.consumablesPanel
             }
             this._currentIntervalTime = param2 - param3;
             this._useBigTimer = (param4 & ANIMATION_TYPES.CENTER_COUNTER) > 0;
-            this.cooldownTimerTf.visible = this.counterBg.visible = !this._useBigTimer;
+            _loc5_ = (param4 & ANIMATION_TYPES.TIMER_INVISIBLE) > 0;
+            this.cooldownTimerTf.visible = this.counterBg.visible = !this._useBigTimer && !_loc5_;
             if(this._useBigTimer)
             {
                this.bigCooldownTimerTf.visible = true;
@@ -354,10 +363,10 @@ package net.wg.gui.battle.views.consumablesPanel
             this.intervalRun(this._useBigTimer);
             if(!this._isReplay)
             {
-               _loc5_ = !!this._useBigTimer ? int(SMALL_INTERVAL_SIZE) : int(INTERVAL_SIZE);
+               _loc6_ = !!this._useBigTimer ? int(SMALL_INTERVAL_SIZE) : int(INTERVAL_SIZE);
                this.startCooldownTimer(param1,this._currReloadingInPercent,this._curAnimReversed,this._isFillPartially);
                this.disableMouse();
-               this._scheduler.scheduleRepeatableTask(this.intervalRun,_loc5_,param2,this._useBigTimer);
+               this._scheduler.scheduleRepeatableTask(this.intervalRun,_loc6_,param2,this._useBigTimer);
             }
          }
          else
@@ -420,11 +429,6 @@ package net.wg.gui.battle.views.consumablesPanel
                }
             }
          }
-      }
-      
-      public function setIdleEnabledGlow(param1:Boolean) : void
-      {
-         this.glow.setIdleEnabledGlow(param1);
       }
       
       public function showGlow(param1:int) : void
@@ -506,7 +510,7 @@ package net.wg.gui.battle.views.consumablesPanel
          this._coolDownTimer.start(param1,this,Math.round(COOLDOWN_FRAME_COUNT * param2),DEFAULT_TIME_COEF,param3,param4);
       }
       
-      private function clearCoolDownText() : void
+      protected function clearCoolDownText() : void
       {
          this.cooldownTimerTf.text = Values.EMPTY_STR;
          this.counterBg.gotoAndStop(COOLDOWN_COUNTER_BG_HIDE);
@@ -520,13 +524,25 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      public function set noBack(param1:Boolean) : void
+      {
+         this._noBack = param1;
+      }
+      
       public function set activated(param1:Boolean) : void
       {
          if(!param1)
          {
             return;
          }
-         this.state = BATTLE_ITEM_STATES.RELOADED;
+         if(!this._noBack)
+         {
+            this.state = BATTLE_ITEM_STATES.RELOADED;
+         }
+         else
+         {
+            this.state = BATTLE_ITEM_STATES.RELOADED_NOBACK;
+         }
          this.isActivated = true;
       }
       

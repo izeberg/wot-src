@@ -4,6 +4,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.vo.PopUpNotificationInfoVO;
    import net.wg.infrastructure.base.BaseDAAPIComponent;
    import net.wg.infrastructure.exceptions.AbstractException;
+   import net.wg.infrastructure.interfaces.IDAAPIModule;
    
    public class NotificationPopUpViewerMeta extends BaseDAAPIComponent
    {
@@ -16,6 +17,8 @@ package net.wg.infrastructure.base.meta.impl
       public var onClickAction:Function;
       
       public var getMessageActualTime:Function;
+      
+      public var registerGFNotification:Function;
       
       public function NotificationPopUpViewerMeta()
       {
@@ -49,6 +52,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.getMessageActualTime,"getMessageActualTime" + Errors.CANT_NULL);
          return this.getMessageActualTime(param1);
+      }
+      
+      public function registerGFNotificationS(param1:IDAAPIModule, param2:String, param3:String, param4:Boolean, param5:Object) : void
+      {
+         App.utils.asserter.assertNotNull(this.registerGFNotification,"registerGFNotification" + Errors.CANT_NULL);
+         this.registerGFNotification(param1,param2,param3,param4,param5);
       }
       
       public final function as_appendMessage(param1:Object) : void

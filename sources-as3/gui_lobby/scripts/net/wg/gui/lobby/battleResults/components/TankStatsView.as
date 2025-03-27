@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.battleResults.components
 {
    import flash.display.BlendMode;
+   import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
    import flash.text.TextField;
@@ -31,6 +32,8 @@ package net.wg.gui.lobby.battleResults.components
       
       private static const PLAYER_TANK_NAME_PADDING:uint = 20;
       
+      private static const COMMENDATION_PADDING:uint = 15;
+      
       private static const ALPHA:Number = 0.8;
        
       
@@ -45,6 +48,8 @@ package net.wg.gui.lobby.battleResults.components
       public var tankNameDashLbl:TextField = null;
       
       public var imageSwitcher:BattleResultImageSwitcherView = null;
+      
+      public var commendationMC:MovieClip = null;
       
       public var dropDown:DropdownMenu = null;
       
@@ -67,6 +72,11 @@ package net.wg.gui.lobby.battleResults.components
          this.imageSwitcher.mask = this._tankMaskObj;
       }
       
+      private static function onCommedationRollOutHandler(param1:MouseEvent) : void
+      {
+         App.toolTipMgr.hide();
+      }
+      
       private static function onVehicleStateLblRollOutHandler(param1:MouseEvent) : void
       {
          App.toolTipMgr.hide();
@@ -76,6 +86,8 @@ package net.wg.gui.lobby.battleResults.components
       {
          super.configUI();
          this.dropDown.addEventListener(ListEvent.INDEX_CHANGE,this.onDropDownIndexChangeHandler);
+         this.commendationMC.addEventListener(MouseEvent.ROLL_OVER,this.onCommedationRollOverHandler);
+         this.commendationMC.addEventListener(MouseEvent.ROLL_OUT,onCommedationRollOutHandler);
          this.playerNameLbl.alpha = ALPHA;
          this.playerNameLbl.blendMode = BlendMode.ADD;
          this.arenaCreateDateLbl.alpha = ALPHA;
@@ -86,6 +98,7 @@ package net.wg.gui.lobby.battleResults.components
          this.tankNameLbl.blendMode = BlendMode.ADD;
          this.tankNameDashLbl.alpha = ALPHA;
          this.tankNameDashLbl.blendMode = BlendMode.ADD;
+         this.commendationMC.commendationTF.defaultTextFormat.bold = true;
       }
       
       override protected function draw() : void
@@ -93,6 +106,7 @@ package net.wg.gui.lobby.battleResults.components
          var _loc1_:CommonStatsVO = null;
          var _loc2_:UserVO = null;
          var _loc3_:Boolean = false;
+         var _loc4_:Boolean = false;
          super.draw();
          if(this._data && isInvalid(InvalidationType.DATA))
          {
@@ -113,6 +127,7 @@ package net.wg.gui.lobby.battleResults.components
                this.tankNameLbl.htmlText = _loc1_.playerVehicleNames[0];
             }
             this.tankNameDashLbl.htmlText = BATTLE_RESULTS.FINISH_PLAYERTANK_SEPARATOR;
+            this.commendationMC.commendationTF.text = this._data.receivedCommendations.toString();
             App.utils.commons.updateTextFieldSize(this.tankNameLbl);
             App.utils.commons.updateTextFieldSize(this.tankNameDashLbl);
             if(_loc3_)
@@ -120,7 +135,8 @@ package net.wg.gui.lobby.battleResults.components
                this.setVehicleStateLbl();
             }
             this.arenaCreateDateLbl.text = _loc1_.arenaCreateTimeStr;
-            this.customizeByCountVehicles(_loc3_);
+            _loc4_ = this._data.receivedCommendations > 0;
+            this.customizeByCountVehicles(_loc3_,_loc4_);
          }
       }
       
@@ -132,9 +148,12 @@ package net.wg.gui.lobby.battleResults.components
          this.playerNameLbl = null;
          this.arenaCreateDateLbl = null;
          this.tankNameLbl = null;
+         this.commendationMC = null;
          this.tankNameDashLbl = null;
          this.vehicleStateLbl.removeEventListener(MouseEvent.ROLL_OVER,this.onVehicleStateLblRollOverHandler);
          this.vehicleStateLbl.removeEventListener(MouseEvent.ROLL_OUT,onVehicleStateLblRollOutHandler);
+         this.commendationMC.removeEventListener(MouseEvent.ROLL_OVER,this.onCommedationRollOverHandler);
+         this.commendationMC.removeEventListener(MouseEvent.ROLL_OUT,onCommedationRollOutHandler);
          this.vehicleStateLbl = null;
          this.imageSwitcher.mask = null;
          this.imageSwitcher.dispose();
@@ -202,20 +221,24 @@ package net.wg.gui.lobby.battleResults.components
          }
       }
       
-      private function customizeByCountVehicles(param1:Boolean) : void
+      private function customizeByCountVehicles(param1:Boolean, param2:Boolean) : void
       {
          this.vehicleStateLbl.visible = param1;
          this.tankNameLbl.visible = param1;
          this.dropDown.visible = !param1;
+         this.commendationMC.visible = param2;
+         var _loc3_:* = !!param2 ? this.commendationMC.x : DEFAULT_COMPONENT_WIDTH;
+         var _loc4_:* = !!param2 ? COMMENDATION_PADDING : PLAYER_TANK_NAME_PADDING;
+         this.vehicleStateLbl.x = _loc3_ - this.vehicleStateLbl.width - _loc4_;
          if(param1)
          {
-            this.tankNameLbl.x = DEFAULT_COMPONENT_WIDTH - this.tankNameLbl.width - PLAYER_TANK_NAME_PADDING;
+            this.tankNameLbl.x = _loc3_ - this.tankNameLbl.width - _loc4_;
             this.tankNameDashLbl.x = this.tankNameLbl.x - this.tankNameDashLbl.width;
             this.playerNameLbl.x = this.tankNameDashLbl.x - this.playerNameLbl.width;
          }
          else
          {
-            this.dropDown.x = DEFAULT_COMPONENT_WIDTH - this.dropDown.width - PLAYER_TANK_NAME_PADDING;
+            this.dropDown.x = _loc3_ - this.dropDown.width - _loc4_;
             this.tankNameDashLbl.x = this.dropDown.x - this.tankNameDashLbl.width;
             this.playerNameLbl.x = this.tankNameDashLbl.x - this.playerNameLbl.width;
          }
@@ -237,6 +260,11 @@ package net.wg.gui.lobby.battleResults.components
          this._toolTip = param1;
          this.vehicleStateLbl.addEventListener(MouseEvent.ROLL_OVER,this.onVehicleStateLblRollOverHandler);
          this.vehicleStateLbl.addEventListener(MouseEvent.ROLL_OUT,onVehicleStateLblRollOutHandler);
+      }
+      
+      private function onCommedationRollOverHandler(param1:MouseEvent) : void
+      {
+         App.toolTipMgr.show(BATTLE_RESULTS.COMMS_LIKES_PBS_TEXT_01);
       }
       
       private function onVehicleStateLblRollOverHandler(param1:MouseEvent) : void

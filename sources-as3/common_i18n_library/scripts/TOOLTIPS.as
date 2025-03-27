@@ -169,6 +169,8 @@ package
       
       public static const SHOWBASEMARKERS:String = "#tooltips:showBaseMarkers";
       
+      public static const ENABLECOMMENDATIONS:String = "#tooltips:enableCommendations";
+      
       public static const ENABLETIERGROUPING:String = "#tooltips:enableTierGrouping";
       
       public static const POSTMORTEMMODE:String = "#tooltips:postmortemMode";
@@ -686,6 +688,10 @@ package
       public static const SHOWBASEMARKERS_HEADER:String = "#tooltips:showBaseMarkers/header";
       
       public static const SHOWBASEMARKERS_BODY:String = "#tooltips:showBaseMarkers/body";
+      
+      public static const ENABLECOMMENDATIONS_HEADER:String = "#tooltips:enableCommendations/header";
+      
+      public static const ENABLECOMMENDATIONS_BODY:String = "#tooltips:enableCommendations/body";
       
       public static const ENABLETIERGROUPING_HEADER:String = "#tooltips:enableTierGrouping/header";
       
@@ -3753,10 +3759,6 @@ package
       
       public static const AWARDITEM_BPTALER_BODY:String = "#tooltips:awardItem/bptaler/body";
       
-      public static const AWARDITEM_STPCOIN_HEADER:String = "#tooltips:awardItem/stpcoin/header";
-      
-      public static const AWARDITEM_STPCOIN_BODY:String = "#tooltips:awardItem/stpcoin/body";
-      
       public static const AWARDITEM_EQUIPCOIN_HEADER:String = "#tooltips:awardItem/equipCoin/header";
       
       public static const AWARDITEM_EQUIPCOIN_BODY:String = "#tooltips:awardItem/equipCoin/body";
@@ -6599,8 +6601,6 @@ package
       
       public static const BATTLE_ROYALE_HANGAR_VEHICLE_DESCRIPTION_SWEDEN:String = "#tooltips:battle_royale/hangar/vehicle/description/sweden";
       
-      public static const BATTLE_ROYALE_HANGAR_VEHICLE_SHAMROCK:String = "#tooltips:battle_royale/hangar/vehicle/shamrock";
-      
       public static const BATTLE_ROYALE_ARTEFACT_LIMIT:String = "#tooltips:battle_royale/artefact/limit";
       
       public static const BATTLE_ROYALE_ARTEFACT_SOURCE:String = "#tooltips:battle_royale/artefact/source";
@@ -8096,6 +8096,126 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_4/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_4/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_5/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_6_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_6/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_6/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_6/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_7_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_7/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_7_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_7/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_7_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_7/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_8_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_8/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_8_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_8/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_8_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_8/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_9_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp16_9/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp16_9/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP16_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp16_9/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_1_LABEL:String = "#tooltips:notrecruitedtankman/onslaught_p4_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_1_DESC:String = "#tooltips:notrecruitedtankman/onslaught_p4_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/onslaught_p4_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_2_LABEL:String = "#tooltips:notrecruitedtankman/onslaught_p4_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_2_DESC:String = "#tooltips:notrecruitedtankman/onslaught_p4_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/onslaught_p4_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_3_LABEL:String = "#tooltips:notrecruitedtankman/onslaught_p4_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_3_DESC:String = "#tooltips:notrecruitedtankman/onslaught_p4_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/onslaught_p4_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_4_LABEL:String = "#tooltips:notrecruitedtankman/onslaught_p4_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_4_DESC:String = "#tooltips:notrecruitedtankman/onslaught_p4_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_ONSLAUGHT_P4_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/onslaught_p4_4/howToGetInfo";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_H_01:String = "#tooltips:commendations/comms_likes_sct_txt_h_01";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_T_01:String = "#tooltips:commendations/comms_likes_sct_txt_t_01";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_H_02:String = "#tooltips:commendations/comms_likes_sct_txt_h_02";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_T_02:String = "#tooltips:commendations/comms_likes_sct_txt_t_02";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_H_03:String = "#tooltips:commendations/comms_likes_sct_txt_h_03";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_T_03:String = "#tooltips:commendations/comms_likes_sct_txt_t_03";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_H_04:String = "#tooltips:commendations/comms_likes_sct_txt_h_04";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_T_04:String = "#tooltips:commendations/comms_likes_sct_txt_t_04";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_H_05:String = "#tooltips:commendations/comms_likes_sct_txt_h_05";
+      
+      public static const COMMENDATIONS_COMMS_LIKES_SCT_TXT_T_05:String = "#tooltips:commendations/comms_likes_sct_txt_t_05";
+      
+      public static const LIVETAGS_BODY_ALLY_DAMAGE:String = "#tooltips:liveTags/body/ally/damage";
+      
+      public static const LIVETAGS_BODY_ALLY_ASSIST:String = "#tooltips:liveTags/body/ally/assist";
+      
+      public static const LIVETAGS_BODY_ALLY_DAMAGE_BLOCK:String = "#tooltips:liveTags/body/ally/damage/block";
+      
+      public static const LIVETAGS_BODY_ALLY_DAMAGE_ASSIST:String = "#tooltips:liveTags/body/ally/damage/assist";
+      
+      public static const LIVETAGS_BODY_ALLY_BLOCK_ASSIST:String = "#tooltips:liveTags/body/ally/block/assist";
+      
+      public static const LIVETAGS_BODY_ALLY_DAMAGE_BLOCK_ASSIST:String = "#tooltips:liveTags/body/ally/damage/block/assist";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_DAMAGE:String = "#tooltips:liveTags/body/currentPlayer/damage";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_BLOCK:String = "#tooltips:liveTags/body/currentPlayer/block";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_ASSIST:String = "#tooltips:liveTags/body/currentPlayer/assist";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_DAMAGE_BLOCK:String = "#tooltips:liveTags/body/currentPlayer/damage/block";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_DAMAGE_ASSIST:String = "#tooltips:liveTags/body/currentPlayer/damage/assist";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_BLOCK_ASSIST:String = "#tooltips:liveTags/body/currentPlayer/block/assist";
+      
+      public static const LIVETAGS_BODY_CURRENTPLAYER_DAMAGE_BLOCK_ASSIST:String = "#tooltips:liveTags/body/currentPlayer/damage/block/assist";
+      
+      public static const LIVETAGS_TITLE_DAMAGE:String = "#tooltips:liveTags/title/damage";
+      
+      public static const LIVETAGS_TITLE_ASSIST:String = "#tooltips:liveTags/title/assist";
+      
+      public static const LIVETAGS_TITLE_BLOCK:String = "#tooltips:liveTags/title/block";
+      
+      public static const LIVETAGS_TITLE_DAMAGE_ASSIST:String = "#tooltips:liveTags/title/damage/assist";
+      
+      public static const LIVETAGS_TITLE_DAMAGE_BLOCK:String = "#tooltips:liveTags/title/damage/block";
+      
+      public static const LIVETAGS_TITLE_BLOCK_ASSIST:String = "#tooltips:liveTags/title/block/assist";
+      
+      public static const LIVETAGS_TITLE_DAMAGE_BLOCK_ASSIST:String = "#tooltips:liveTags/title/damage/block/assist";
+      
+      public static const NOTRECRUITEDTANKMAN_BOOSTEROID_FENCER_LABEL:String = "#tooltips:notrecruitedtankman/boosteroid_fencer/label";
+      
+      public static const NOTRECRUITEDTANKMAN_BOOSTEROID_FENCER_DESC:String = "#tooltips:notrecruitedtankman/boosteroid_fencer/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_BOOSTEROID_FENCER_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/boosteroid_fencer/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

@@ -371,6 +371,8 @@ class VehicleDescrCrew(object):
         self._process_perk(a, 'increaseCircularVisionRadius', 'circularVisionRadiusB')
 
     def _process_radioman_finder(self, a):
+        if IS_CLIENT:
+            return
         self._process_perk(a, 'vehicleCircularVisionRadius', 'circularVisionRadiusB')
 
     def _process_perk(self, a, argName, factorName):
@@ -619,7 +621,7 @@ class VehicleDescrCrew(object):
        'loader_perfectCharge': None, 
        'loader_melee': None, 
        'loader_ammunitionImprove': None, 
-       'radioman_finder': None, 
+       'radioman_finder': _process_radioman_finder, 
        'radioman_expert': None, 
        'radioman_sideBySide': None, 
        'fireFighting': None, 

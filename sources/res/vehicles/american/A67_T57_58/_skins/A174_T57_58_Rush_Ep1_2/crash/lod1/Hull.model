@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.875798 -1.136178 -3.663422</min>
+		<max>2.029502 0.474033 3.530158</max>
+	</visibilityBox>
+	<parent>vehicles/american/A67_T57_58/_skins/A174_T57_58_Rush_Ep1_2/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/american/A67_T57_58/_skins/A174_T57_58_Rush_Ep1_2/crash/lod1/Hull</nodefullVisual>
+</root>

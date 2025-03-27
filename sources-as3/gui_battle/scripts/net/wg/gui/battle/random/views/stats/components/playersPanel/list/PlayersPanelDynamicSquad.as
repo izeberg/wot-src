@@ -72,6 +72,11 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.list
          invalidateState();
       }
       
+      public function get state() : int
+      {
+         return this._state;
+      }
+      
       public function setIsInviteShown(param1:Boolean) : void
       {
          if(this._isInviteShown == param1)
@@ -221,6 +226,16 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.list
          }
       }
       
+      public function get isMouseOver() : Boolean
+      {
+         return this._isMouseOver;
+      }
+      
+      public function get isPersonal() : Boolean
+      {
+         return this._isPersonal;
+      }
+      
       public function onButtonClick(param1:Object) : void
       {
          if(param1.name == this.squadAcceptBt.name)
@@ -262,7 +277,7 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.list
          }
       }
       
-      private function updateTooltip() : void
+      protected function updateTooltip() : void
       {
          if(this._isInteractive && this._isMouseOver && this._state != DynamicSquadState.NONE)
          {

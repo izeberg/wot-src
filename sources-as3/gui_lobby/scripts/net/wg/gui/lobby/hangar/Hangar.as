@@ -285,7 +285,7 @@ package net.wg.gui.lobby.hangar
             this._hangarViewSwitchAnimator.addAlphaItem(this._eventsEntryContainer);
          }
          this._carouselEventEntryContainer = new Sprite();
-         addChild(this._carouselEventEntryContainer);
+         addChildAt(this._carouselEventEntryContainer,getChildIndex(this.carouselContainer) + 1);
          this._carouselEventEntryContainer.name = CAROUSEL_EVENT_ENTRY_NAME;
          this._header = this._utils.classFactory.getComponent(Linkages.HANGAR_HEADER,HangarHeader);
          this._header.name = HANGAR_ALIASES.HEADER;
@@ -858,11 +858,12 @@ package net.wg.gui.lobby.hangar
             addChildAt(this._battleRoyaleComponents,_loc1_);
             this._battleRoyaleComponents.addEventListener(BattleTypeSelectorEvent.BATTLE_TYPE_SELECTOR_VISIBILITY_CHANGED,this.onBattleTypeSelectorVisibilityChangedHandler);
          }
-         if(!isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
+         if(!isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
          {
             registerFlashComponentS(this._battleRoyaleComponents.commander,BATTLEROYALE_ALIASES.COMMANDER_COMPONENT);
             registerFlashComponentS(this._battleRoyaleComponents.techParameters,BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT);
             registerFlashComponentS(this._battleRoyaleComponents.bottomPanel,BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT);
+            registerFlashComponentS(this._battleRoyaleComponents.proxyCurrencyPanel,BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT);
             registerFlashComponentS(this._battleRoyaleComponents.battleTypeSelector,BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR);
          }
          this.updateBRComponentsPos();
@@ -916,6 +917,7 @@ package net.wg.gui.lobby.hangar
          {
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT);
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT);
+            this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT);
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT);
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR);
          }
@@ -956,7 +958,7 @@ package net.wg.gui.lobby.hangar
       public function tryRemoveBattleRoyaleContainer() : void
       {
          this.removeBattleRoyaleComponents();
-         if(!_baseDisposed && this._battleRoyaleComponents != null && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
+         if(!_baseDisposed && this._battleRoyaleComponents != null && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
          {
             removeChild(this._battleRoyaleComponents);
             this._battleRoyaleComponents.removeEventListener(BattleTypeSelectorEvent.BATTLE_TYPE_SELECTOR_VISIBILITY_CHANGED,this.onBattleTypeSelectorVisibilityChangedHandler);

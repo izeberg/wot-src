@@ -30,6 +30,7 @@ from gui.impl.lobby.crew.crew_header_tooltip_view import CrewHeaderTooltipView
 from gui.impl.lobby.crew.crew_helpers.model_setters import setTmanSkillsModel, setTmanMajorSkillsModel, setTmanBonusSkillsModel
 from gui.impl.lobby.crew.crew_helpers.skill_formatters import SkillLvlFormatter
 from gui.impl.lobby.crew.crew_helpers.skill_helpers import getTmanNewSkillCount, getSkillsLevelsForXp
+from gui.impl.lobby.crew.crew_hints import findTankmanInCrewForWotPlusAssistCandidate
 from gui.impl.lobby.crew.tooltips.empty_skill_tooltip import EmptySkillTooltip
 from gui.impl.pub import ViewImpl
 from gui.prb_control.entities.listener import IGlobalListener
@@ -89,6 +90,7 @@ class CrewWidget(ViewImpl, IGlobalListener):
         self.__currentViewID = currentViewID
         self.__previousViewID = previousViewID
         self.__isButtonBarVisible = isButtonBarVisible
+        self.__wotPCandidateInvID = 0
         self.__currentTankman = None
         self.__currentVehicle = None
         self.__currentSlotIdx = slotIdx
@@ -433,6 +435,7 @@ class CrewWidget(ViewImpl, IGlobalListener):
         if RENEWABLE_SUBSCRIPTION_CONFIG in diff:
             with self.viewModel.transaction() as (vm):
                 self.__updateWotPlusButtonModel(vm.buttonsBar.wotPlus)
+                self.__updateWidgetModel()
 
     def __onAccountSettingsChanging(self, key, _):
         if key == CREW_BOOKS_VIEWED:
@@ -464,6 +467,7 @@ class CrewWidget(ViewImpl, IGlobalListener):
     def __fillSlotsList(self, vmSlotsList, lessMastered):
         vehicle = self.__currentVehicle
         vmSlotsList.clear()
+        self.__wotPCandidateInvID = findTankmanInCrewForWotPlusAssistCandidate()
         for slotIdx, tman in vehicle.crew:
             tmanInvID = NO_TANKMAN if tman is None else tman.invID
             vmSlot = CrewWidgetSlotModel()
@@ -498,6 +502,7 @@ class CrewWidget(ViewImpl, IGlobalListener):
             vmTankman.setLastSkillLevel(self._getLastSkillLevelFormat(lastSkillLevel))
             vmTankman.setLastSkillLevelFull(lastSkillLevel.realSkillLvl)
             vmTankman.setHasPostProgression(tman.descriptor.isMaxSkillXp())
+            vmTankman.setWotPlusAssistHintCandidate(tman.invID == self.__wotPCandidateInvID)
             vmTankmanRolesList = vmTankman.getRoles()
             for role in tman.roles():
                 vmTankmanRolesList.addString(role)

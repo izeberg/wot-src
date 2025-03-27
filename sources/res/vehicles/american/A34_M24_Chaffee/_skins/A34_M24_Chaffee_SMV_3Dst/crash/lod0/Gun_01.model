@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/crash/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.482626 -0.222997 -1.424280</min>
+		<max>0.398569 0.360569 2.130192</max>
+	</visibilityBox>
+</root>

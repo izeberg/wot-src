@@ -713,3 +713,10 @@ class PersonalAccountDBID(base.StatsItem):
 
     def _convert(self, value, reusable):
         return reusable.personal.avatar.accountDBID
+
+
+class CommendationsReceived(base.StatsItem):
+    __slots__ = ()
+
+    def _convert(self, record, reusable):
+        return reusable.personal.avatar.commendationsReceived

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB149_Centurion_MkI_A/_skins/GB149_Centurion_MkI_A_3DSt/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/british/GB149_Centurion_MkI_A/_skins/GB149_Centurion_MkI_A_3DSt/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.645224 -1.116392 -3.938248</min>
+		<max>1.656065 0.690465 3.616287</max>
+	</visibilityBox>
+</root>

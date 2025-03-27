@@ -84,3 +84,7 @@ class BattleStatisticDataControllerMeta(BaseDAAPIComponent):
     def as_updateTriggeredChatCommandsS(self, data):
         if self._isDAAPIInited():
             return self.flashObject.as_updateTriggeredChatCommands(data)
+
+    def as_updatePriorityChatCommandS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updatePriorityChatCommand(data)

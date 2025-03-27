@@ -42,8 +42,6 @@ package net.wg.gui.battle.views.postmortemPanel
       protected static const GAP_USER_NAME_DEAD_REASON:int = 5;
       
       protected static const USER_NAME_FIELD_NAME:String = "userNameField";
-      
-      private static const EMPTY_STR:String = "";
        
       
       public var playerInfoTF:TextField = null;

@@ -139,6 +139,9 @@ msgstr "56TP"
 msgid "Chassis_Pl25_CS_52_C"
 msgstr "CS-53 II"
 
+msgid "Chassis_Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 Pancernik"
+
 msgid "Chassis_Pl27_SDP_Wz_66T"
 msgstr "SDP 66 Grom"
 
@@ -811,6 +814,33 @@ msgstr "CS-52 C"
 msgid "Pl25_CS_52_C_short_special"
 msgstr "Универсальность, газотурбинный двигатель"
 
+msgid "Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 Pancernik"
+
+msgid "Pl26_Czolg_P_Wz_46_descr"
+msgstr ""
+"В проекте CC-46 Pancernik отказались от классической монообводной ходовой "
+"части в пользу двухобводной с подводом мощности ко всем гусеничным обводам. "
+"Данная схема обладала массой преимуществ, однако была сложнее в реализации. "
+"Обводы могли работать в различных режимах: по отдельности в тяговом или "
+"свободном режиме, а также совместно. Благодаря их зеркальной симметричности "
+"направление движения можно было быстро менять на противоположное. Работы "
+"были прекращены на стадии эскизов."
+
+msgid "Pl26_Czolg_P_Wz_46_long_special"
+msgstr ""
+"CC-46 Pancernik — польский тяжёлый танк IX уровня. Классический штурмовой "
+"«тяж» с неплохой мобильностью и хорошей выживаемостью, которую обеспечивает "
+"прочная лобовая и бортовая броня. Танк вооружён 155-мм орудием с высоким "
+"разовым уроном. Учитывая высокую «альфу», другие характеристики, такие как "
+"скорость сведения и перезарядки, тоже ощущаются неплохо."
+
+msgid "Pl26_Czolg_P_Wz_46_short"
+msgstr "Pancernik"
+
+msgid "Pl26_Czolg_P_Wz_46_short_special"
+msgstr "Огромный разовый урон, хорошее лобовое и бортовое бронирование"
+
 msgid "Pl27_SDP_Wz_66T"
 msgstr "SDP wz 66 Grom"
 
@@ -951,16 +981,20 @@ msgstr ""
 " устанавливалась на шасси среднего танка CS-53. Машина получилась сложная, "
 "малотехнологичная и дорогостоящая. В итоге польские военные решили "
 "сосредоточиться на организации крупносерийного выпуска советского Т-54, а "
-"новый тяжёлый танк так и не вышел за рамки бумажного проекта."
+"новый танк так и не вышел за рамки бумажного проекта."
 
 msgid "Pl34_Cs53_56_Woitek_long_special"
-msgstr "?empty?"
+msgstr ""
+"Корпус CS-53/56 Wojtek слабо бронирован, но броня в его тяжёлой башне "
+"достаточно надёжна. Танк вооружён 122-мм орудием с высоким разовым уроном. "
+"Кроме того, несмотря на массу в 52 тонны, этот средний танк обладает "
+"неплохой максимальной скоростью и высокой удельной мощностью."
 
 msgid "Pl34_Cs53_56_Woitek_short"
 msgstr "Wojtek"
 
 msgid "Pl34_Cs53_56_Woitek_short_special"
-msgstr "?empty?"
+msgstr "Высокий разовый урон, надёжное бронирование башни"
 
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
@@ -1130,6 +1164,9 @@ msgstr "56TP"
 msgid "Turret_1_Pl25_CS_52_C"
 msgstr "CS 63 P"
 
+msgid "Turret_1_Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 Pancernik"
+
 msgid "Turret_1_Pl27_SDP_Wz_66T"
 msgstr "SDP 66 Grom"
 
@@ -1199,8 +1236,8 @@ msgstr "CS-53 MH"
 msgid "V-2-34_B"
 msgstr "V-2-34"
 
-msgid "W-53M2"
-msgstr "W-53M2"
+msgid "V_16_x2"
+msgstr "V-16 x2"
 
 msgid "W_12_5"
 msgstr "W12-5"
@@ -1237,6 +1274,9 @@ msgstr "W-48"
 
 msgid "W_48M"
 msgstr "W-48M"
+
+msgid "W_53M2"
+msgstr "W-53M2"
 
 msgid "_100mm_DAP"
 msgstr "100 mm DAP"
@@ -1376,6 +1416,9 @@ msgstr "105 mm wz.22/24"
 msgid "_105mm_wz_52"
 msgstr "105 mm armata wz. 52"
 
+msgid "_10RT_C46"
+msgstr "10RT-C46"
+
 msgid "_122_mm_wz_43_50"
 msgstr "122 mm wz.43/50"
 
@@ -1418,6 +1461,15 @@ msgstr "WOF-471P"
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
 
+msgid "_122mm_WBR_471BP_W"
+msgstr "WBR-471BP (W)"
+
+msgid "_122mm_WBR_471B_W"
+msgstr "WBR-471B (W)"
+
+msgid "_122mm_WOF_471P_W"
+msgstr "WOF-471P (W)"
+
 msgid "_122mm_armata_wz_53_56"
 msgstr "122 mm armata wz. 53/56"
 
@@ -1448,15 +1500,6 @@ msgstr "122 mm armata wz.43/50"
 msgid "_122mm_wz_53"
 msgstr "122 mm wz. 53"
 
-msgid "_122mm_wz_53_56_DM"
-msgstr "BR-471D"
-
-msgid "_122mm_wz_53_56_M"
-msgstr "BR-471B"
-
-msgid "_122mm_wz_53_56_OF"
-msgstr "OF-471"
-
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1480,6 +1523,18 @@ msgstr "Pocisk przeciwpancerny"
 
 msgid "_152mm_pocisk_wybuchowy"
 msgstr "Pocisk wybuchowy"
+
+msgid "_155_mm_PK_40"
+msgstr "PK-40"
+
+msgid "_155_mm_PP_40"
+msgstr "PP-40"
+
+msgid "_155_mm_PW_40"
+msgstr "PW-40"
+
+msgid "_155mm_armata_wz_40_46"
+msgstr "155 mm armata wz. 40-46"
 
 msgid "_20mm_n_k_m_20_A"
 msgstr "n.k.m. 20 mm wz. 38 FK-A"

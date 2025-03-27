@@ -13,11 +13,17 @@ msgstr ""
 msgid "medal/accrued"
 msgstr "Получено:"
 
+msgid "medal/badgeAndMedal"
+msgstr "%(badge)s, %(medal)s."
+
+msgid "medal/badgeName"
+msgstr "Нашивка «%(badge_name)s»"
+
 msgid "medal/date"
 msgstr "Дата: %(at)s"
 
 msgid "medal/medalName"
-msgstr "Медаль: %(medal_name)s"
+msgstr "Медаль «%(medal_name)s»"
 
 msgid "medal/title"
 msgstr "Квитанция"
@@ -51,6 +57,9 @@ msgstr "Дней Танкового премиум аккаунта:"
 
 msgid "result/reward"
 msgstr "Задачи выполнены! Добавлены награды:"
+
+msgid "result/slots"
+msgstr "Слоты в Ангаре"
 
 msgid "result/vehicle"
 msgstr "Машина"

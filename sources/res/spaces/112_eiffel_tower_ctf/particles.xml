@@ -38,6 +38,14 @@
 			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/wood_board_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
@@ -100,14 +108,12 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_112_20_FochStatue.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_112_21_BridgeStatue_arab_warrior.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_114_18_ConcreteSlab_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_114_18_ConcreteSlab_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_UNI_622_FieldJunk_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_005_sign_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_005_sign_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_024_HandCar02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_028_Stairs_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_032_ConcreteRings_01_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_032_ConcreteRings_02_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_064_BlocksBrick_01_02.vfx</fn_effect_bin>
@@ -121,14 +127,12 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env608_Sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_envAF_006_BarellFuel2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_rw004_Carriage3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafAM_006_ConcreteFence_tile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafBR_002_FieldFence1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafSU_92_03_IronFence_big_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafSU_92_03_IronFence_big_tile.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/dryTree_01_fall.vfx</fn_effect_bin>
@@ -178,7 +182,9 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_balloons.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_newspapers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_poppy_petals.eff</fn_effect_bin>
@@ -217,14 +223,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_112_20_FochStatue.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_112_21_BridgeStatue_arab_warrior.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_114_18_ConcreteSlab_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env_114_18_ConcreteSlab_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_622_FieldJunk_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_005_sign_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_005_sign_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_024_HandCar02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_envAM_028_Stairs_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_032_ConcreteRings_01_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_032_ConcreteRings_02_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_064_BlocksBrick_01_02.eff</fn_effect_bin>
@@ -238,14 +242,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env608_Sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_envAF_006_BarellFuel2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_fuel_rw004_Carriage3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAM_006_ConcreteFence_tile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafBR_002_FieldFence1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafSU_92_03_IronFence_big_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafSU_92_03_IronFence_big_tile.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/scenarios/plane_engine_sc_all.eff</fn_effect_bin>
@@ -358,6 +360,14 @@
 			<shader>\data\shaders\ps_shimmer.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/wood_board_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
@@ -420,14 +430,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_112_20_FochStatue.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_112_21_BridgeStatue_arab_warrior.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_114_18_ConcreteSlab_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_114_18_ConcreteSlab_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_UNI_622_FieldJunk_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_005_sign_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_005_sign_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_024_HandCar02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_028_Stairs_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_032_ConcreteRings_01_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_032_ConcreteRings_02_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_064_BlocksBrick_01_02.vfx</fn_effect_bin>
@@ -441,14 +449,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env608_Sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_envAF_006_BarellFuel2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_rw004_Carriage3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_112_04_BridgeFence_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafAM_006_ConcreteFence_tile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafBR_002_FieldFence1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafSU_92_03_IronFence_big_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafSU_92_03_IronFence_big_tile.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/dryTree_01_fall.vfx</fn_effect_bin>
@@ -498,7 +504,9 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_balloons.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_newspapers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_poppy_petals.eff</fn_effect_bin>
@@ -537,14 +545,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_112_20_FochStatue.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_112_21_BridgeStatue_arab_warrior.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_114_18_ConcreteSlab_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env_114_18_ConcreteSlab_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_622_FieldJunk_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_005_sign_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_005_sign_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_024_HandCar02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_envAM_028_Stairs_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_032_ConcreteRings_01_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_032_ConcreteRings_02_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_064_BlocksBrick_01_02.eff</fn_effect_bin>
@@ -558,14 +564,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env608_Sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_envAF_006_BarellFuel2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_fuel_rw004_Carriage3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_112_04_BridgeFence_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafAM_006_ConcreteFence_tile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafBR_002_FieldFence1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafSU_92_03_IronFence_big_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafSU_92_03_IronFence_big_tile.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_town_bench_des.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/scenarios/plane_engine_sc_all.eff</fn_effect_bin>

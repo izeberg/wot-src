@@ -43,6 +43,8 @@ package
       
       public static const BATTLECONTROLS_TOGGLEPLAYERPANELMODES:String = "#ingame_help:battleControls/togglePlayerPanelModes";
       
+      public static const BATTLECONTROLS_TOGGLEPLAYERPANELMODES_EXT:String = "#ingame_help:battleControls/togglePlayerPanelModes/ext";
+      
       public static const BATTLECONTROLS_SHOWEXPLAYERINFO:String = "#ingame_help:battleControls/showExPlayerInfo";
       
       public static const BATTLECONTROLS_MAKESCREENSHORT:String = "#ingame_help:battleControls/makeScreenshort";

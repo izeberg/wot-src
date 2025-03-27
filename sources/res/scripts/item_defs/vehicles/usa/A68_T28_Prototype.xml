@@ -12,8 +12,8 @@
 	<postProgressionTree>role_ATSPG_universal</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>28</forward>
-		<backward>10</backward>
+		<forward>32</forward>
+		<backward>12</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -127,7 +127,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>44050</weight>
-		<maxHealth>920</maxHealth>
+		<maxHealth>1040</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -2017,14 +2017,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_T28_Prototype>
-			<userString>#usa_vehicles:Chassis_T28_Prototype</userString>
+		<Chassis_A68_T28_Prototype>
+			<userString>#usa_vehicles:Chassis_A68_T28_Prototype</userString>
 			<tags/>
 			<level>7</level>
 			<price>16000</price>
 			<unlocks>
 				<chassis>
-					Chassis_T28_Prototype_2
+					Chassis_A68_T28_Prototype_2
 					<cost>15900</cost>
 				</chassis>
 			</unlocks>
@@ -2040,14 +2040,14 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>18</rotationSpeed>
+			<rotationSpeed>22</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.23
+					0.22
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.23
+					0.22
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4707,12 +4707,12 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T28_Prototype>
-		<Chassis_T28_Prototype_2>
-			<userString>#usa_vehicles:Chassis_T28_Prototype_2</userString>
+		</Chassis_A68_T28_Prototype>
+		<Chassis_A68_T28_Prototype_2>
+			<userString>#usa_vehicles:Chassis_A68_T28_Prototype_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>35000</price>
@@ -4728,7 +4728,7 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>24</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -4743,8 +4743,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>200</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>165</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -7395,14 +7395,14 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T28_Prototype_2>
+		</Chassis_A68_T28_Prototype_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_T28_Prototype>
-			<userString>#usa_vehicles:Turret_1_T28_Prototype</userString>
+		<Turret_1_A68_T28_Prototype>
+			<userString>#usa_vehicles:Turret_1_A68_T28_Prototype</userString>
 			<tags/>
 			<level>8</level>
 			<price>32000</price>
@@ -7450,8 +7450,8 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>6570</weight>
-			<maxHealth>230</maxHealth>
-			<rotationSpeed>18</rotationSpeed>
+			<maxHealth>260</maxHealth>
+			<rotationSpeed>22</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
 				<maxRegenHealth>70</maxRegenHealth>
@@ -7470,210 +7470,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_90mm_AT_Gun_T15E2>
-					shared
-					<maxAmmo>72</maxAmmo>
-					<unlocks>
-						<gun>
-							_105mm_AT_Gun_T5E1
-							<cost>18100</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							203.2
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							203.2
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							76.2
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							203.2
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<gun>35</gun>
-					</armor>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.2
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<pitchLimits>
-						<minPitch>0 -15 1 -15</minPitch>
-						<maxPitch>
-							0 10 0.386111 10 0.391667 6 0.608333 6 0.613889 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.36
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						7.5
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.225
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-143 143</turretYawLimits>
-					<models>
-						<undamaged>vehicles/american/A68_T28_Prototype/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/american/A68_T28_Prototype/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/american/A68_T28_Prototype/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A68_T28_Prototype/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A68_T28_Prototype/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_main_mb</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0 -0.010201 2.33917
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.36226 0.36226
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0 -0.010201 2.33917
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								0.000008 1.76255 1.75019
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.837674 -0.000042 3.14153
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								2.92378 2 2.92374
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.200513</clipAngle>
-							<anchorShift>0.992114</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								0.000005 1.68358 1.82131
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.837674 -0.000042 3.14153
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								2.77418 1.89767 2.77414
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.343525</clipAngle>
-							<anchorShift>0.992112</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0 -0.020401 2.43511
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0 -0.020401 3.03511
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.1 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.6
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.5 0.25 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							99.0207 102.097
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_90mm_AT_Gun_T15E2>
-				<_105mm_AT_Gun_T5E1>
+				<_105mm_AT_Gun_T5E1_28P>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<gun>
-							_120mm_AT_Gun_T53
+							_120mm_AT_Gun_T53_28P
 							<cost>51000</cost>
 						</gun>
 					</unlocks>
@@ -7705,7 +7507,7 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<pitchLimits>
@@ -7716,7 +7518,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						8.3
+						9.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -7728,6 +7530,20 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-143 143</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.12
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A68_T28_Prototype/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/american/A68_T28_Prototype/crash/lod0/Gun_02.model</destroyed>
@@ -7851,8 +7667,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_105mm_AT_Gun_T5E1>
-				<_120mm_AT_Gun_T53>
+				</_105mm_AT_Gun_T5E1_28P>
+				<_120mm_AT_Gun_T53_28P>
 					shared
 					<maxAmmo>40</maxAmmo>
 					<unlocks>
@@ -7894,7 +7710,7 @@
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7914,7 +7730,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						10.1
+						9.8
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -8049,7 +7865,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_120mm_AT_Gun_T53>
+				</_120mm_AT_Gun_T53_28P>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A68_T28_Prototype/normal/lod0/Turret_01.model</undamaged>
@@ -9049,49 +8865,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_T28_Prototype>
+		</Turret_1_A68_T28_Prototype>
 	</turrets0>
 	<engines>
-		<Ford_GAF>
+		<Ford_GAF_28P>
 			shared
 			<unlocks>
 				<engine>
-					Ford_GAFM2
+					Ford_GAFM2_28P
 					<cost>5250</cost>
 				</engine>
 			</unlocks>
-		</Ford_GAF>
-		<Ford_GAFM2>shared</Ford_GAFM2>
+		</Ford_GAF_28P>
+		<Ford_GAFM2_28P>shared</Ford_GAFM2_28P>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_528
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_528>shared</SCR_528>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Ford_GAF>
-					<smplEnginePower>670</smplEnginePower>
-					<smplFwMaxSpeed>28</smplFwMaxSpeed>
-				</Ford_GAF>
-				<Ford_GAFM2>
-					<smplEnginePower>780</smplEnginePower>
-					<smplFwMaxSpeed>28</smplFwMaxSpeed>
-				</Ford_GAFM2>
+				<Ford_GAF_28P>
+					<smplEnginePower>760</smplEnginePower>
+					<smplFwMaxSpeed>32</smplFwMaxSpeed>
+				</Ford_GAF_28P>
+				<Ford_GAFM2_28P>
+					<smplEnginePower>830</smplEnginePower>
+					<smplFwMaxSpeed>32</smplFwMaxSpeed>
+				</Ford_GAFM2_28P>
 			</engines>
 			<chassis>
-				<Chassis_T28_Prototype>
+				<Chassis_A68_T28_Prototype>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9113,8 +8920,8 @@
 						</firm>
 					</grounds>
 					<axleCount>5</axleCount>
-				</Chassis_T28_Prototype>
-				<Chassis_T28_Prototype_2>
+				</Chassis_A68_T28_Prototype>
+				<Chassis_A68_T28_Prototype_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9136,7 +8943,7 @@
 						</firm>
 					</grounds>
 					<axleCount>5</axleCount>
-				</Chassis_T28_Prototype_2>
+				</Chassis_A68_T28_Prototype_2>
 			</chassis>
 		</detailed>
 	</physics>

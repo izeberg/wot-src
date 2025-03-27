@@ -984,6 +984,12 @@ msgstr "Отменить покупку"
 msgid "contextMenu/clanInfo"
 msgstr "Профиль клана игрока"
 
+msgid "contextMenu/commendBack"
+msgstr "Поблагодарить в ответ!"
+
+msgid "contextMenu/commendFirst"
+msgstr "Поблагодарить!"
+
 msgid "contextMenu/compare"
 msgstr "Добавить к сравнению"
 
@@ -1119,11 +1125,17 @@ msgstr "Информация"
 msgid "contextMenu/moneyTransfer"
 msgstr "Перевод золота..."
 
+msgid "contextMenu/mutualCommendation"
+msgstr "Поблагодарили друг друга"
+
 msgid "contextMenu/nationChange"
 msgstr "Сменить нацию"
 
 msgid "contextMenu/notFairPlay"
 msgstr "Неспортивное поведение"
+
+msgid "contextMenu/outgoingCommendation"
+msgstr "Поблагодарили"
 
 msgid "contextMenu/personalCase/statsBlockTitle"
 msgstr "НА ПРЕМИУМ МАШИНЕ"
@@ -3928,9 +3940,6 @@ msgstr " "
 
 msgid "loading/battleTypes/desc/9"
 msgstr " "
-
-msgid "loading/battleTypes/subTitle/23"
-msgstr "Битва за трилистник"
 
 msgid "loading/helpTip"
 msgstr "Для вызова экрана помощи в бою нажмите клавишу F1."

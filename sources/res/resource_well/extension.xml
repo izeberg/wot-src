@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>resource_well</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>resource_well_personality</Personality>
+	<Components>
+		<StaticComponents>
+			<ResourceWellAccountComponent/>
+		</StaticComponents>
+		<DynamicComponents/>
+	</Components>
+</root>

@@ -876,6 +876,8 @@ package
       public static const TEAM_STATS_PARAMETER_MILEAGE:String = "#battle_results:team/stats/parameter/mileage";
       
       public static const TOOLTIPS_STATS_FOOTER_TEXT:String = "#battle_results:tooltips/stats/footer/text";
+      
+      public static const COMMS_LIKES_PBS_TEXT_01:String = "#battle_results:comms/likes/pbs/text/01";
        
       
       public function BATTLE_RESULTS()

@@ -91,7 +91,7 @@
 		</fakeTurrets>
 		<armor>
 			<armor_1>250</armor_1>
-			<armor_2>150</armor_2>
+			<armor_2>165</armor_2>
 			<armor_3>80</armor_3>
 			<armor_4>80</armor_4>
 			<armor_5>40</armor_5>
@@ -106,6 +106,12 @@
 			<armor_14>25</armor_14>
 			<armor_15>270</armor_15>
 			<armor_16>100</armor_16>
+			<armor_17>160</armor_17>
+			<armor_18>120</armor_18>
+			<armor_19>180</armor_19>
+			<armor_20>65</armor_20>
+			<armor_21>90</armor_21>
+			<armor_22>120</armor_22>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>47420</weight>
@@ -3291,6 +3297,57 @@
 				</clipAngle>
 				<anchorShift>-0.001691</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>-0.000001 0.017909 -4.083289</position>
+				<rotation>
+					-0 -1.569051 1.44234
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999999 0.999998 0.999999</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>-1.862712 -0.013873 -0.973742</position>
+				<rotation>
+					-0 0 1.516517
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999998 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>1.841239 -0.013873 -0.973742</position>
+				<rotation>-0.000524 3.139847 1.516517</rotation>
+				<scale>
+					0.999999 0.999998 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>
+					0.000024 1.832 -1.26832
+					<!--BW_String-->
+				</position>
+				<rotation>-0 -0 0</rotation>
+				<scale>1 1 1</scale>
+				<applyType>turret</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -3311,15 +3368,15 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<JagdTiger_Standardketten>
-			<userString>#germany_vehicles:JagdTiger_Standardketten</userString>
-			<shortUserString>#germany_vehicles:JagdTiger_Standardketten_short</shortUserString>
+		<Chassis_G44_JagdTiger>
+			<userString>#germany_vehicles:Chassis_G44_JagdTiger</userString>
+			<shortUserString>#germany_vehicles:Chassis_G44_JagdTiger_short</shortUserString>
 			<tags/>
 			<level>8</level>
 			<price>28100</price>
 			<unlocks>
 				<chassis>
-					JagdTiger_Vetstaerktketten
+					Chassis_G44_JagdTiger_2
 					<cost>21300</cost>
 				</chassis>
 			</unlocks>
@@ -3335,7 +3392,7 @@
 			</terrainResistance>
 			<brakeForce>67000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -4063,7 +4120,6 @@
 						<length>0.143033</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -4600,7 +4656,6 @@
 						<length>0.143262</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -5134,13 +5189,13 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</JagdTiger_Standardketten>
-		<JagdTiger_Vetstaerktketten>
-			<userString>#germany_vehicles:JagdTiger_Vetstaerktketten</userString>
-			<shortUserString>#germany_vehicles:JagdTiger_Vetstaerktketten_short</shortUserString>
+		</Chassis_G44_JagdTiger>
+		<Chassis_G44_JagdTiger_2>
+			<userString>#germany_vehicles:Chassis_G44_JagdTiger_2</userString>
+			<shortUserString>#germany_vehicles:Chassis_G44_JagdTiger_2_short</shortUserString>
 			<tags/>
 			<level>9</level>
 			<price>62000</price>
@@ -5156,7 +5211,7 @@
 			</terrainResistance>
 			<brakeForce>75000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>26</rotationSpeed>
+			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -5171,8 +5226,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>190</maxRegenHealth>
+			<maxHealth>240</maxHealth>
+			<maxRegenHealth>180</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -5884,7 +5939,6 @@
 						<length>0.143033</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -6421,7 +6475,6 @@
 						<length>0.143262</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -6955,14 +7008,14 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</JagdTiger_Vetstaerktketten>
+		</Chassis_G44_JagdTiger_2>
 	</chassis>
 	<turrets0>
-		<JagdTiger_turm>
-			<userString>#germany_vehicles:JagdTiger_turm</userString>
+		<Turret_1_G44_JagdTiger>
+			<userString>#germany_vehicles:Turret_1_G44_JagdTiger</userString>
 			<tags>cannotDetach</tags>
 			<level>9</level>
 			<price>100</price>
@@ -6991,7 +7044,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_128mm_PaK44_L55>
+				<_12_8_cm_Pak_44_L_55_JT>
 					shared
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
@@ -7002,7 +7055,7 @@
 					</pitchLimits>
 					<maxAmmo>40</maxAmmo>
 					<reloadTime>
-						10.9
+						10.5
 						<!--BW_String-->
 					</reloadTime>
 					<unlocks>
@@ -7013,7 +7066,7 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							250
+							260
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -7035,11 +7088,11 @@
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.35
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7099,6 +7152,18 @@
 							<applyTo>4096</applyTo>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000019 0.243 0.74681
+								<!--BW_String-->
+							</position>
+							<rotation>-0 -0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -7132,7 +7197,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_128mm_PaK44_L55>
+				</_12_8_cm_Pak_44_L_55_JT>
 				<_128mm_PaK44_2_L61>
 					shared
 					<pitchLimits>
@@ -7159,7 +7224,7 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							250
+							260
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -7235,6 +7300,18 @@
 							<applyTo>4096</applyTo>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000019 0.243 0.74681
+								<!--BW_String-->
+							</position>
+							<rotation>-0 -0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -7295,64 +7372,40 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</JagdTiger_turm>
+		</Turret_1_G44_JagdTiger>
 	</turrets0>
 	<engines>
-		<Maybach_HL_210_TRM_P30>
+		<Maybach_HL_210_TRM_P30_JT>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_230_TRM_P30
+					Maybach_HL_230_TRM_P30_JT
 					<cost>15800</cost>
 				</engine>
 			</unlocks>
-		</Maybach_HL_210_TRM_P30>
-		<Maybach_HL_230_TRM_P30>shared</Maybach_HL_230_TRM_P30>
+		</Maybach_HL_210_TRM_P30_JT>
+		<Maybach_HL_230_TRM_P30_JT>shared</Maybach_HL_230_TRM_P30_JT>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_210_TRM_P30>
-					<smplEnginePower>
-						687.2327
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_210_TRM_P30_JT>
+					<smplEnginePower>770</smplEnginePower>
 					<smplFwMaxSpeed>38</smplFwMaxSpeed>
-				</Maybach_HL_210_TRM_P30>
-				<Maybach_HL_230_TRM_P30>
-					<smplEnginePower>
-						740.0968
-						<!--BW_String-->
-					</smplEnginePower>
+				</Maybach_HL_210_TRM_P30_JT>
+				<Maybach_HL_230_TRM_P30_JT>
+					<smplEnginePower>830</smplEnginePower>
 					<smplFwMaxSpeed>38</smplFwMaxSpeed>
-				</Maybach_HL_230_TRM_P30>
+				</Maybach_HL_230_TRM_P30_JT>
 			</engines>
 			<chassis>
-				<JagdTiger_Standardketten>
+				<Chassis_G44_JagdTiger>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7373,8 +7426,9 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</JagdTiger_Standardketten>
-				<JagdTiger_Vetstaerktketten>
+					<axleCount>5</axleCount>
+				</Chassis_G44_JagdTiger>
+				<Chassis_G44_JagdTiger_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7395,7 +7449,8 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</JagdTiger_Vetstaerktketten>
+					<axleCount>5</axleCount>
+				</Chassis_G44_JagdTiger_2>
 			</chassis>
 		</detailed>
 	</physics>

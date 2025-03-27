@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F127_AMX_ELC_901/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F127_AMX_ELC_901/normal/lod4/Gun_01</parent>
+	<extent>192</extent>
+	<visibilityBox>
+		<min>-0.363074 -0.140557 -1.352578</min>
+		<max>0.207002 0.228102 2.570038</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

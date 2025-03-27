@@ -1,6 +1,4 @@
-import functools, logging, math
-from functools import partial
-import BigWorld, Keys, Math, ResMgr
+import functools, logging, math, BigWorld, Keys, Math, ResMgr
 from AvatarInputHandler.AimingSystems import disableShotPointCache
 from AvatarInputHandler.vehicles_selection_mode import VehiclesSelectionControlMode
 from AvatarInputHandler.commands.fl_random_reserves import FLRandomReserves
@@ -82,6 +80,19 @@ _CTRLS_DESC_MAP = {_CTRL_MODE.ARCADE: (
                              kill_cam_modes.LookAtKillerMode, 'killCamMode', _CTRL_TYPE.USUAL), 
    _CTRL_MODE.VEHICLES_SELECTION: (
                                  VehiclesSelectionControlMode, 'vehiclesSelection', _CTRL_TYPE.USUAL)}
+
+def addEmptyIfNotExits(name):
+    if name not in _CTRLS_DESC_MAP:
+        _CTRLS_DESC_MAP[name] = (
+         control_modes.EmptyControlMode, None, _CTRL_TYPE.OPTIONAL)
+    return
+
+
+DISABLE_CTRL_SWITCH_CAPS_MAP = {_CTRL_MODE.STRATEGIC: ARENA_BONUS_TYPE_CAPS.DISABLE_ARTY_AIMING_MODE, 
+   _CTRL_MODE.ARTY: ARENA_BONUS_TYPE_CAPS.DISABLE_ARTY_AIMING_MODE, 
+   _CTRL_MODE.SNIPER: ARENA_BONUS_TYPE_CAPS.DISABLE_SNIPER_AIMING_MODE, 
+   _CTRL_MODE.DUAL_GUN: ARENA_BONUS_TYPE_CAPS.DISABLE_SNIPER_AIMING_MODE, 
+   _CTRL_MODE.TWIN_GUN: ARENA_BONUS_TYPE_CAPS.DISABLE_SNIPER_AIMING_MODE}
 OVERWRITE_CTRLS_DESC_MAP = {}
 for royaleBonusCap in constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_RANGE:
     OVERWRITE_CTRLS_DESC_MAP[royaleBonusCap] = {_CTRL_MODE.POSTMORTEM: (
@@ -590,96 +601,95 @@ class AvatarInputHandler(CallbackDelayer, ScriptGameObject):
     @disableShotPointCache
     def onControlModeChanged(self, eMode, **kwargs):
         _logger.debug('onControlModeChanged %s', eMode)
-        if not self.__isArenaStarted and not self.__isModeSwitchInPrebattlePossible(eMode):
+        if not self.__isArenaStarted and not self.__isModeSwitchInPrebattlePossible(eMode) or not self.isToControlModeSwitchEnabled(eMode):
             return
-        else:
-            player = BigWorld.player()
-            isObserverMode = 'observer' in player.vehicleTypeDescriptor.type.tags if player is not None else True
-            self.__pendingModeSwitch = None
-            if not isObserverMode and self.__isDualGun:
-                gui_event_dispatcher.controlModeChange(eMode)
-            if not player.observerSeesAll():
-                if isObserverMode and eMode == _CTRL_MODE.POSTMORTEM:
-                    if self.__observerVehicle is not None:
-                        player.positionControl.followCamera(False)
-                        player.positionControl.bindToVehicle(True, self.__observerVehicle)
-                        if player.playerVehicleID == player.getVehicleAttached().id:
-                            self.__pendingModeSwitch = (
-                             eMode, kwargs)
-                            return
-            if isObserverMode and self.__ctrlModeName == _CTRL_MODE.POSTMORTEM:
-                if player.observedVehicleID and player.observedVehicleID != player.playerVehicleID:
+        player = BigWorld.player()
+        isObserverMode = 'observer' in player.vehicleTypeDescriptor.type.tags if player is not None else True
+        self.__pendingModeSwitch = None
+        if not isObserverMode and self.__isDualGun:
+            gui_event_dispatcher.controlModeChange(eMode)
+        if not player.observerSeesAll():
+            if isObserverMode and eMode == _CTRL_MODE.POSTMORTEM:
+                if self.__observerVehicle is not None:
+                    player.positionControl.followCamera(False)
+                    player.positionControl.bindToVehicle(True, self.__observerVehicle)
+                    if player.playerVehicleID == player.getVehicleAttached().id:
+                        self.__pendingModeSwitch = (
+                         eMode, kwargs)
+                        return
+        if isObserverMode and self.__ctrlModeName == _CTRL_MODE.POSTMORTEM:
+            if player.observedVehicleID and player.observedVehicleID != player.playerVehicleID:
+                self.__observerVehicle = player.observedVehicleID
+            else:
+                self.__observerVehicle = None
+        replayCtrl = BattleReplay.g_replayCtrl
+        if replayCtrl.isRecording:
+            replayCtrl.setControlMode(eMode)
+        self.__curCtrl.disable()
+        prevCtrl = self.__curCtrl
+        prevCtrlModeName = self.__ctrlModeName
+        self.__curCtrl = self.__ctrls[eMode]
+        self.__ctrlModeName = eMode
+        TriggersManager.g_manager.activateTrigger(TRIGGER_TYPE.CTRL_MODE_CHANGE, currentMode=self.__ctrlModeName, previousMode=prevCtrlModeName)
+        if player is not None:
+            if player.observerSeesAll():
+                if prevCtrlModeName == _CTRL_MODE.VIDEO:
+                    player.positionControl.followCamera(False)
+                    player.positionControl.bindToVehicle(True, self.__observerVehicle)
+                if eMode == _CTRL_MODE.VIDEO:
                     self.__observerVehicle = player.observedVehicleID
+                    player.positionControl.bindToVehicle(True)
+            elif not prevCtrl.isManualBind() and self.__curCtrl.isManualBind():
+                if replayCtrl.isServerSideReplay:
+                    pass
+                elif isObserverMode:
+                    player.positionControl.bindToVehicle(False, -1)
                 else:
-                    self.__observerVehicle = None
-            replayCtrl = BattleReplay.g_replayCtrl
-            if replayCtrl.isRecording:
-                replayCtrl.setControlMode(eMode)
-            self.__curCtrl.disable()
-            prevCtrl = self.__curCtrl
-            prevCtrlModeName = self.__ctrlModeName
-            self.__curCtrl = self.__ctrls[eMode]
-            self.__ctrlModeName = eMode
-            TriggersManager.g_manager.activateTrigger(TRIGGER_TYPE.CTRL_MODE_CHANGE, currentMode=self.__ctrlModeName, previousMode=prevCtrlModeName)
-            if player is not None:
-                if player.observerSeesAll():
-                    if prevCtrlModeName == _CTRL_MODE.VIDEO:
-                        player.positionControl.followCamera(False)
-                        player.positionControl.bindToVehicle(True, self.__observerVehicle)
-                    if eMode == _CTRL_MODE.VIDEO:
-                        self.__observerVehicle = player.observedVehicleID
-                        player.positionControl.bindToVehicle(True)
-                elif not prevCtrl.isManualBind() and self.__curCtrl.isManualBind():
-                    if replayCtrl.isServerSideReplay:
-                        pass
-                    elif isObserverMode:
-                        player.positionControl.bindToVehicle(False, -1)
-                    else:
-                        player.positionControl.bindToVehicle(False)
-                elif prevCtrl.isManualBind() and not self.__curCtrl.isManualBind():
-                    if replayCtrl.isServerSideReplay:
-                        pass
-                    elif isObserverMode:
-                        player.positionControl.followCamera(False)
-                        player.positionControl.bindToVehicle(True, self.__observerVehicle)
-                    else:
-                        player.positionControl.bindToVehicle(True)
-                newAutoRotationMode = self.__curCtrl.getPreferredAutorotationMode()
-                if newAutoRotationMode is not None:
-                    if prevCtrl.getPreferredAutorotationMode() is None:
-                        self.__prevModeAutorotation = self.__isAutorotation
-                    if self.__isAutorotation != newAutoRotationMode:
-                        self.__isAutorotation = newAutoRotationMode
-                        BigWorld.player().enableOwnVehicleAutorotation(self.__isAutorotation)
-                elif prevCtrl.getPreferredAutorotationMode() is not None:
-                    if self.__prevModeAutorotation is None:
-                        self.__prevModeAutorotation = True
-                    if self.__isAutorotation != self.__prevModeAutorotation:
-                        self.__isAutorotation = self.__prevModeAutorotation
-                        BigWorld.player().enableOwnVehicleAutorotation(self.__isAutorotation)
-                    self.__prevModeAutorotation = None
-                if not isObserverMode and self.__ctrlModeName in (_CTRL_MODE.ARCADE, _CTRL_MODE.SNIPER):
-                    lockEnabled = prevCtrl.getAimingMode(AIMING_MODE.TARGET_LOCK)
-                    self.__curCtrl.setAimingMode(lockEnabled, AIMING_MODE.TARGET_LOCK)
-            self.__targeting.onRecreateDevice()
-            self.__curCtrl.setGUIVisible(self.__isGUIVisible)
-            if isObserverMode:
-                kwargs.update(vehicleID=self.__observerVehicle)
-            if eMode in _CTRL_MODE.KILL_CAM_MODES and hasattr(prevCtrl, 'camera'):
-                kwargs.update(previousCam=prevCtrl.camera)
-            self.__curCtrl.enable(**kwargs)
-            isReplayPlaying = replayCtrl.isPlaying
-            self.notifyCameraChanged()
-            vehicle = player.getVehicleAttached()
-            if not isReplayPlaying and vehicle is not None and not vehicle.isUpgrading:
-                self.__curCtrl.handleMouseEvent(0.0, 0.0, 0.0)
-            if vehicle is not None and vehicle.appearance is not None:
-                vehicle.appearance.removeComponentByType(GenericComponents.ControlModeStatus)
-                vehicle.appearance.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(eMode))
-            player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
-            player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
-            BigWorld.setEdgeDrawerRenderMode(1 if eMode in aih_constants.MAP_CASE_MODES else 0)
-            return
+                    player.positionControl.bindToVehicle(False)
+            elif prevCtrl.isManualBind() and not self.__curCtrl.isManualBind():
+                if replayCtrl.isServerSideReplay:
+                    pass
+                elif isObserverMode:
+                    player.positionControl.followCamera(False)
+                    player.positionControl.bindToVehicle(True, self.__observerVehicle)
+                else:
+                    player.positionControl.bindToVehicle(True)
+            newAutoRotationMode = self.__curCtrl.getPreferredAutorotationMode()
+            if newAutoRotationMode is not None:
+                if prevCtrl.getPreferredAutorotationMode() is None:
+                    self.__prevModeAutorotation = self.__isAutorotation
+                if self.__isAutorotation != newAutoRotationMode:
+                    self.__isAutorotation = newAutoRotationMode
+                    BigWorld.player().enableOwnVehicleAutorotation(self.__isAutorotation)
+            elif prevCtrl.getPreferredAutorotationMode() is not None:
+                if self.__prevModeAutorotation is None:
+                    self.__prevModeAutorotation = True
+                if self.__isAutorotation != self.__prevModeAutorotation:
+                    self.__isAutorotation = self.__prevModeAutorotation
+                    BigWorld.player().enableOwnVehicleAutorotation(self.__isAutorotation)
+                self.__prevModeAutorotation = None
+            if not isObserverMode and self.__ctrlModeName in (_CTRL_MODE.ARCADE, _CTRL_MODE.SNIPER):
+                lockEnabled = prevCtrl.getAimingMode(AIMING_MODE.TARGET_LOCK)
+                self.__curCtrl.setAimingMode(lockEnabled, AIMING_MODE.TARGET_LOCK)
+        self.__targeting.onRecreateDevice()
+        self.__curCtrl.setGUIVisible(self.__isGUIVisible)
+        if isObserverMode:
+            kwargs.update(vehicleID=self.__observerVehicle)
+        if eMode in _CTRL_MODE.KILL_CAM_MODES and hasattr(prevCtrl, 'camera'):
+            kwargs.update(previousCam=prevCtrl.camera)
+        self.__curCtrl.enable(**kwargs)
+        isReplayPlaying = replayCtrl.isPlaying
+        self.notifyCameraChanged()
+        vehicle = player.getVehicleAttached()
+        if not isReplayPlaying and vehicle is not None and not vehicle.isUpgrading:
+            self.__curCtrl.handleMouseEvent(0.0, 0.0, 0.0)
+        if vehicle is not None and vehicle.appearance is not None:
+            vehicle.appearance.removeComponentByType(GenericComponents.ControlModeStatus)
+            vehicle.appearance.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(eMode))
+        player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
+        player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
+        BigWorld.setEdgeDrawerRenderMode(1 if eMode in aih_constants.MAP_CASE_MODES else 0)
+        return
 
     def onObserverControlModeChanged(self, eMode):
         _logger.debug('onObserverControlModeChanged: %s %s ', eMode, self.isObserverFPV)
@@ -977,6 +987,11 @@ class AvatarInputHandler(CallbackDelayer, ScriptGameObject):
         if self.__ctrlModeName == _CTRL_MODE.VEHICLES_SELECTION and eMode == _CTRL_MODE.ARCADE:
             return True
         return False
+
+    @staticmethod
+    def isToControlModeSwitchEnabled(eMode):
+        disableCaps = DISABLE_CTRL_SWITCH_CAPS_MAP.get(eMode)
+        return disableCaps is None or not BigWorld.player().hasBonusCap(disableCaps)
 
 
 class _Targeting(object):

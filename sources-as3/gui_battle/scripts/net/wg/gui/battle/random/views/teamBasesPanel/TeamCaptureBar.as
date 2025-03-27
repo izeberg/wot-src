@@ -85,7 +85,7 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          super();
       }
       
-      public final function dispose() : void
+      public function dispose() : void
       {
          this._disposed = true;
          stop();
@@ -202,6 +202,11 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          this.progressBarReset.show(_loc3_,_loc4_);
       }
       
+      protected function getEaseArray(param1:Number) : Array
+      {
+         return this._prevDeltaPoints != param1 ? TWEEN_EASE_IN_OUT : TWEEN_EASE_NONE;
+      }
+      
       private function animateProgress(param1:Number, param2:Number, param3:Boolean, param4:Number) : void
       {
          this._scheduler.cancelTask(this.animationStepHandler);
@@ -211,14 +216,7 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          }
          else
          {
-            if(this._prevDeltaPoints != param2)
-            {
-               this._currentEaseArray = TWEEN_EASE_IN_OUT;
-            }
-            else
-            {
-               this._currentEaseArray = TWEEN_EASE_NONE;
-            }
+            this._currentEaseArray = this.getEaseArray(param2);
             this._startAnimateScale = this.progressBar.scaleX;
             this._easeParam = param1 * POINTS_2_BAR_RATIO - this._startAnimateScale;
             this._currentEaseLen = this._currentEaseArray.length;

@@ -277,8 +277,6 @@ package net.wg.data.constants
       
       public static const MAPS_TRAINING_SHELL_BUTTON:String = "MapsTrainingShellButtonUI";
       
-      public static const EPIC_BATTLE_CONSUMABLE_BUTTON:String = "EpicBattleConsumableButtonUI";
-      
       public static const COMP7_CONSUMABLE_BUTTON:String = "Comp7ConsumableButtonUI";
       
       public static const EVENT_SHELL_BUTTON_BATTLE:String = "EventShellButtonBattleUI";
@@ -852,48 +850,6 @@ package net.wg.data.constants
       public static const COLOR_SETTINGS_BUTTON_RENDER:String = "ColorSettingsButtonRendererUI";
       
       public static const LIMITED_UI_SETTING_BLOCK:String = "LimitedUISettingBlockUI";
-      
-      public static const TIME_REMAINING_POSITIVE_UI_LINKAGE:String = "msgTimeRemainingPositiveUI";
-      
-      public static const TIME_REMAINING_UI_LINKAGE:String = "msgTimeRemainingUI";
-      
-      public static const OVER_TIME_UI_LINKAGE:String = "msgOTTimerUI";
-      
-      public static const BASE_CAPTURED_POSITIVE_UI_LINKAGE:String = "msgBaseCapturedPositiveUI";
-      
-      public static const BASE_CAPTURED_UI_LINKAGE:String = "msgBaseCapturedUI";
-      
-      public static const BASE_CONTESTED_POSITIVE_UI_LINKAGE:String = "msgBaseContestedPositiveUI";
-      
-      public static const BASE_CONTESTED_UI_LINKAGE:String = "msgBaseContestedUI";
-      
-      public static const RANK_UP_UI_LINKAGE:String = "msgRankUpUI";
-      
-      public static const OBJECTIVE_DESTROYED_POSITIVE_UI_LINKAGE:String = "msgHQDestroyedPositiveUI";
-      
-      public static const OBJECTIVE_DESTROYED_UI_LINKAGE:String = "msgHQDestroyedUI";
-      
-      public static const OBJECTIVE_UNDER_ATTACK_POSITIVE_UI_LINKAGE:String = "msgHQAttackedPositiveUI";
-      
-      public static const OBJECTIVE_UNDER_ATTACK_UI_LINKAGE:String = "msgHQAttackedUI";
-      
-      public static const FIRST_GENERAL_RANK_REACHED_UI_LINKAGE:String = "msgFirstGeneralUI";
-      
-      public static const RETREAT_UI_LINKAGE:String = "msgRetreatUI";
-      
-      public static const UNLOCK_TANK_LEVEL_UI_LINKAGE:String = "msgTankLevelUnlockUI";
-      
-      public static const PLAYER_PLATOON_INVITE_UI:String = "PlatoonInviteRendererUI";
-      
-      public static const PLATOON_MEMBER_LIST_ITEM_UI:String = "PlatoonMemberListItemUI";
-      
-      public static const EPIC_BATTLES_SKILL_VIEW_SKILL_TILE_UI:String = "EpicBattlesSkillViewSkillTileUI";
-      
-      public static const DELTA_STATUS_INDICATOR_UI:String = "EpicSkillViewDeltaParameterUI";
-      
-      public static const TEXT_PARAMETER_BLOCK_UI:String = "EpicSkillViewTextParameterBlockUI";
-      
-      public static const ABILITY_BATTLE_RANK_ITEM:String = "AbilityBattleRankItemUI";
       
       public static const RENTAL_TERM_SLOT_BUTTON_UI:String = "RentalTermSlotButtonUI";
       

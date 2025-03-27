@@ -37,12 +37,6 @@ msgstr "Другое"
 msgid "autoOpenView/rewardGroups/vehicles"
 msgstr "Техника"
 
-msgid "autoOpenView/rewards/premiumDay"
-msgid_plural "plural/autoOpenView/rewards/premiumDay"
-msgstr[0] "день"
-msgstr[1] "дня"
-msgstr[2] "дней"
-
 msgid "autoOpenView/subTitle"
 msgstr "Мы открыли %(boxCount) за вас"
 
@@ -54,27 +48,6 @@ msgstr "ПОЛУЧЕНЫ НАГРАДЫ"
 
 msgid "awardViews/footer/backButton/"
 msgstr "Назад к коробкам"
-
-msgid "awardViews/footer/checkbox/"
-msgstr "Анимация открытия"
-
-msgid "awardViews/footer/purchaseButtonText/"
-msgstr "ПОЛУЧИТЬ КОРОБКИ"
-
-msgid "awardViews/footer/purchaseButtonTextCn/"
-msgstr "ПОЛУЧИТЬ КОРОБКИ"
-
-msgid "awardViews/guaranteedTitle/nextBox/"
-msgstr "Гарантированная награда в следующей коробке!"
-
-msgid "awardViews/guaranteedTitle/text"
-msgstr "Максимум коробок до гарантированной награды: %(count)"
-
-msgid "awardViews/quantityTitle/boxesAvailable"
-msgstr "Коробок в наличии: %(boxesCount)"
-
-msgid "awardViews/quantityTitle/noBoxes"
-msgstr "Коробки закончились"
 
 msgid "bonuses/customization/rarity/epic"
 msgstr "Эпический"
@@ -141,14 +114,35 @@ msgstr "ТАКТИЧЕСКАЯ КОРОБКА"
 msgid "common/closeButton"
 msgstr "ЗАКРЫТЬ"
 
+msgid "common/footer/checkbox"
+msgstr "Анимация открытия"
+
+msgid "common/getButton/lowerCase"
+msgstr "Получить коробки"
+
+msgid "common/getButton/upperCase"
+msgstr "ПОЛУЧИТЬ КОРОБКИ"
+
 msgid "common/infoButton"
 msgstr "ЧТО ВНУТРИ?"
 
 msgid "common/loader"
 msgstr "Открытие коробки..."
 
+msgid "common/rewards/count"
+msgid_plural "plural/common/rewards/count"
+msgstr[0] "%(count) шт."
+msgstr[1] "%(count) шт."
+msgstr[2] "%(count) шт."
+
 msgid "common/rewards/multiplier"
 msgstr "×{count}"
+
+msgid "common/rewards/premiumDay"
+msgid_plural "plural/common/rewards/premiumDay"
+msgstr[0] "день"
+msgstr[1] "дня"
+msgstr[2] "дней"
 
 msgid "common/statistics/emptyHeader"
 msgstr "Открывайте коробки, чтобы просмотреть статистику."
@@ -216,32 +210,20 @@ msgstr "Полевое снабжение"
 msgid "eventName/upperCase"
 msgstr "ПОЛЕВОЕ СНАБЖЕНИЕ"
 
+msgid "guaranteedTitle/nextBox"
+msgstr "Гарантированная награда в следующей коробке!"
+
+msgid "guaranteedTitle/text"
+msgstr "Максимум коробок до гарантированной награды: %(count)"
+
 msgid "hasBoxesView/guaranteedTitle/tabText"
 msgid_plural "plural/hasBoxesView/guaranteedTitle/tabText"
 msgstr[0] "Осталось %(count) открытие до гарантированной награды"
 msgstr[1] "Осталось %(count) открытия до гарантированной награды"
 msgstr[2] "Осталось %(count) открытий до гарантированной награды"
 
-msgid "hasBoxesView/numberOfBoxesToOpen"
-msgid_plural "plural/hasBoxesView/numberOfBoxesToOpen"
-msgstr[0] "%(count) шт."
-msgstr[1] "%(count) шт."
-msgstr[2] "%(count) шт."
-
 msgid "hasBoxesView/openButtonText"
 msgstr "Открыть"
-
-msgid "hasBoxesView/purchaseButtonText"
-msgstr "ПОЛУЧИТЬ КОРОБКИ"
-
-msgid "hasBoxesView/purchaseButtonTextCn"
-msgstr "ПОЛУЧИТЬ КОРОБКИ"
-
-msgid "hasBoxesView/quantityTitle/boxesAvailable"
-msgstr "Коробок в наличии: %(boxesCount)"
-
-msgid "hasBoxesView/quantityTitle/noBoxes"
-msgstr "Коробки закончились"
 
 msgid "helpers/doubleBreakLine"
 msgstr "<br/><br/>"
@@ -285,12 +267,6 @@ msgstr ""
 msgid "infoPage/header/lootListLink"
 msgstr "Смотреть список предметов на игровом портале"
 
-msgid "infoPage/header/shopButton"
-msgstr "Получить коробки"
-
-msgid "infoPage/header/shopButtonCn"
-msgstr "Получить коробки"
-
 msgid "infoPage/header/subtitle"
 msgstr "С %(from) по %(to)"
 
@@ -303,12 +279,6 @@ msgstr "|"
 msgid "infoPage/rewards/percent"
 msgstr "%"
 
-msgid "infoPage/rewards/premiumDay"
-msgid_plural "plural/infoPage/rewards/premiumDay"
-msgstr[0] "день"
-msgstr[1] "дня"
-msgstr[2] "дней"
-
 msgid "multipleRewardView/footer/openNextButton/"
 msgstr "Открыть ещё %(count)"
 
@@ -318,24 +288,19 @@ msgstr "Из %(name) (открыто %(boxesCount) коробок)"
 msgid "multipleRewardView/header/title/"
 msgstr "ПОЛУЧЕНЫ НАГРАДЫ"
 
-msgid "noBoxesView/buyBoxesButtonText/"
-msgstr "Получить коробки"
-
-msgid "noBoxesView/buyBoxesButtonTextCn/"
-msgstr "Получить коробки"
-
 msgid "noBoxesView/description/"
 msgstr ""
 "У вас нет коробок. Вы можете приобрести их\n"
 "во внутриигровом или Премиум магазине."
 
-msgid "noBoxesView/descriptionCn/"
-msgstr ""
-"У вас нет коробок.\n"
-"Вы можете получить их в Премиум магазине."
-
 msgid "preview/backLabel"
 msgstr "К КОРОБКАМ"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "Коробок в наличии: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "Коробки закончились"
 
 msgid "rareRewardOverlay/rewardDescription/button/text"
 msgstr "Продолжить"
@@ -357,17 +322,19 @@ msgstr ""
 "Все оставшиеся коробки будут открыты. Содержимое будет начислено на ваш "
 "аккаунт."
 
-msgid "serviceChannelMessages/lootBoxDefault"
-msgstr "Тактическая коробка"
-
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "К наградам"
 
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Открыто коробок: %(boxes)s"
+
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Получены награды"
+msgstr "Оставшиеся коробки открыты"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr "Мы начислили награды, которые вы не получили во время события."
+msgstr ""
+"После завершения события мы открыли за вас коробки и начислили их "
+"содержимое."
 
 msgid "serviceChannelMessages/lootBoxesDisabled/header"
 msgstr "Открытие коробок приостановлено"
@@ -467,18 +434,6 @@ msgstr "Уникальный член экипажа"
 msgid "statisticsRewards/count/currency"
 msgstr "%(currency)"
 
-msgid "statisticsRewards/count/days"
-msgid_plural "plural/statisticsRewards/count/days"
-msgstr[0] "%(count) день"
-msgstr[1] "%(count) дня"
-msgstr[2] "%(count)дней"
-
-msgid "statisticsRewards/count/default"
-msgid_plural "plural/statisticsRewards/count/default"
-msgstr[0] "%(count) шт."
-msgstr[1] "%(count) шт."
-msgstr[2] "%(count) шт."
-
 msgid "statisticsRewards/label/attachment"
 msgstr "3D-объекты"
 
@@ -560,12 +515,6 @@ msgstr "Нажмите, чтобы сбросить статистику."
 msgid "statisticsRewards/tooltips/category/attachment"
 msgstr "%(num). %(label) %(count) %(rarity)"
 
-msgid "statisticsRewards/tooltips/category/compensationCount"
-msgid_plural "plural/statisticsRewards/tooltips/category/compensationCount"
-msgstr[0] "%(count) шт."
-msgstr[1] "%(count) шт."
-msgstr[2] "%(count) шт."
-
 msgid "statisticsRewards/tooltips/category/hiddenRewardsCount"
 msgid_plural "plural/statisticsRewards/tooltips/category/hiddenRewardsCount"
 msgstr[0] "И ещё %(count) награда."
@@ -595,3 +544,6 @@ msgstr "%(num). %(vehicle)"
 
 msgid "statisticsRewards/tooltips/category/vehicleCompensation"
 msgstr "Компенсировано машин: %(count)"
+
+msgid "tooltip/compensation/notification"
+msgstr "Компенсация за машину, которая уже есть в Ангаре."

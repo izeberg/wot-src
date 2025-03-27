@@ -48,6 +48,30 @@ msgstr "Старинный сундук"
 msgid "attachment/antique_oddities/Cus_30_Mystic_Telescope"
 msgstr "Зачарованный телескоп"
 
+msgid "attachment/beyond_pandora"
+msgstr "За пределами Пандоры"
+
+msgid "attachment/beyond_pandora/Cus_36_FGM_Machinegun"
+msgstr "Тяжёлый пулемёт"
+
+msgid "attachment/beyond_pandora/Cus_36_FGM_Machinegun/description"
+msgstr ""
+"Пулемётов много не бывает. Даже если они не пробьют броню противника, "
+"плотный огонь точно заставит его подумать над своим поведением. Кроме того, "
+"горячий ствол отлично подходит для сушки белья."
+
+msgid "attachment/beyond_pandora/Cus_37_FGM_Projector"
+msgstr "Прожектор с решёткой"
+
+msgid "attachment/beyond_pandora/Cus_38_FGM_Luggage"
+msgstr "Набор ликвидатора аномалий"
+
+msgid "attachment/beyond_pandora/Cus_39_FGM_Filterunit"
+msgstr "Фильтровентиляционная установка"
+
+msgid "attachment/beyond_pandora/Cus_40_FGM_Winch"
+msgstr "Лебёдка"
+
 msgid "attachment/dragon_vanguard"
 msgstr "Драконий авангард"
 
@@ -140,6 +164,30 @@ msgstr "Морской бинокль"
 
 msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
 msgstr "Морской якорь"
+
+msgid "attachment/st_patricks_day_2025"
+msgstr "Больше зелёного!"
+
+msgid "attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe"
+msgstr "Счастливая подкова"
+
+msgid "attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe/description"
+msgstr ""
+"Эта подкова, по слухам, была зачарована феями и приносит удачу тому, кто её "
+"носит. Она также отгоняет злых духов, но сможет ли защитить от ударов "
+"«арты»?.."
+
+msgid "attachment/st_patricks_day_2025/Cus_32_SP_GoldPot"
+msgstr "Горшочек с золотом"
+
+msgid "attachment/st_patricks_day_2025/Cus_33_SP_Barrel"
+msgstr "Бочка пивовара"
+
+msgid "attachment/st_patricks_day_2025/Cus_34_SP_TreasureChest"
+msgstr "Сундук с сокровищами"
+
+msgid "attachment/st_patricks_day_2025/Cus_35_SP_CamoNet"
+msgstr "Камуфляжная сеть"
 
 msgid "attachment/test"
 msgstr "Тестовые"
@@ -758,6 +806,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Boosteroid_02/label"
 msgstr "Здесь обитают драконы"
+
+msgid "camouflage/Boosteroid_03/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_03/label"
+msgstr "Неприметный"
 
 msgid "camouflage/Borduit/description"
 msgstr ""
@@ -3570,6 +3624,12 @@ msgstr ""
 msgid "camouflage/czech/bicolor/grassy_green/label"
 msgstr "Двухцветный простой"
 
+msgid "camouflage/d_day/description"
+msgstr "?empty?"
+
+msgid "camouflage/d_day/label"
+msgstr "Волна за волной"
+
 msgid "camouflage/day_of_the_dead/description"
 msgstr "?empty?"
 
@@ -3731,6 +3791,12 @@ msgstr "Революционер"
 
 msgid "camouflage/event/name"
 msgstr "WG Fest"
+
+msgid "camouflage/fall_tanks/description"
+msgstr "?empty?"
+
+msgid "camouflage/fall_tanks/label"
+msgstr "Неоновый демон"
 
 msgid "camouflage/feer/label"
 msgstr "Фейерверк"
@@ -4985,6 +5051,18 @@ msgstr ""
 msgid "camouflage/marathon_september/label"
 msgstr "Королевский охотник"
 
+msgid "camouflage/march_marathon_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/march_marathon_2025/label"
+msgstr "Сделано в Бирмингеме"
+
+msgid "camouflage/march_marathon_2_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/march_marathon_2_2025/label"
+msgstr "Уважаемая компания"
+
 msgid "camouflage/maslenitsa/description"
 msgstr "?empty?"
 
@@ -5563,6 +5641,12 @@ msgstr "Зимний камуфляж постоянного стиля."
 
 msgid "camouflage/prem_camouflage_winter/label"
 msgstr "\"Чёрная вдова\" зимний"
+
+msgid "camouflage/pub_liveops/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_liveops/label"
+msgstr "Белая акула"
 
 msgid "camouflage/quicky_baby/description"
 msgstr "?empty?"
@@ -8400,8 +8484,7 @@ msgstr "Неисторичные элементы на машине"
 
 msgid "customization/tooltip/getattachment"
 msgstr ""
-"Зарабатывайте 3D-объекты в различных событиях или приобретайте их в "
-"Магазине."
+"Зарабатывайте 3D-объекты в игровых событиях или приобретайте их в Магазине."
 
 msgid "customization/tooltip/inventory/available"
 msgstr "На Складе"
@@ -8437,6 +8520,11 @@ msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "Ячейка недоступна: снимите уже нанесённую декаль из другой ячейки."
 
 msgid "customization/tooltip/quests/blitzkrieg_1026/condition"
+msgstr ""
+"Сражаясь в режиме «Натиск», победить в бою, уничтожив всю технику противника"
+" менее чем за 150 секунд."
+
+msgid "customization/tooltip/quests/blitzkrieg_1044/condition"
 msgstr ""
 "Сражаясь в режиме «Натиск», победить в бою, уничтожив всю технику противника"
 " менее чем за 150 секунд."
@@ -8626,6 +8714,27 @@ msgstr "Достичь ранга «Бронза» в сезоне Алой ма
 msgid "customization/tooltip/quests/comp7_4_2_ranks_65/condition"
 msgstr "Достичь ранга «Железо» в сезоне Алой мантикоры режима «Натиск»."
 
+msgid "customization/tooltip/quests/comp7_4_3_ranks_11/condition"
+msgstr ""
+"Достичь ранга «Легенда» в сезоне Нефритовой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_21/condition"
+msgstr ""
+"Достичь ранга «Чемпион» в сезоне Нефритовой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_35/condition"
+msgstr "Достичь ранга «Золото» в сезоне Нефритовой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_45/condition"
+msgstr ""
+"Достичь ранга «Серебро» в сезоне Нефритовой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_55/condition"
+msgstr "Достичь ранга «Бронза» в сезоне Нефритовой мантикоры режима «Натиск»."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_65/condition"
+msgstr "Достичь ранга «Железо» в сезоне Нефритовой мантикоры режима «Натиск»."
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "Достичь ранга «Золото» в сезоне Грифона режима «Натиск»."
 
@@ -8651,6 +8760,15 @@ msgid "customization/tooltip/quests/crushing_damage_1026_2/condition"
 msgstr "Нанести 225 000 ед. урона в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/crushing_damage_1026_3/condition"
+msgstr "Нанести 550 000 ед. урона в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/crushing_damage_1044_1/condition"
+msgstr "Нанести 25 000 ед. урона в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/crushing_damage_1044_2/condition"
+msgstr "Нанести 225 000 ед. урона в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/crushing_damage_1044_3/condition"
 msgstr "Нанести 550 000 ед. урона в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
@@ -8724,6 +8842,24 @@ msgid ""
 msgstr ""
 "Провести 50 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
 "(алый)»."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_1/condition"
+msgstr ""
+"Провести 10 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
+"(нефритовый)»."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_2/condition"
+msgstr ""
+"Провести 25 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
+"(нефритовый)»."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_3/condition"
+msgstr ""
+"Провести 50 боёв в режиме «Натиск» на машине со стилем «Мифический зверь "
+"(нефритовый)»."
 
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr ""
@@ -8821,6 +8957,15 @@ msgstr "Уничтожить 150 машин противника в режиме
 msgid "customization/tooltip/quests/destroyed_vehicles_1026_3/condition"
 msgstr "Уничтожить 350 машин противника в режиме «Натиск»."
 
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_1/condition"
+msgstr "Уничтожить 15 машин противника в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_2/condition"
+msgstr "Уничтожить 150 машин противника в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_3/condition"
+msgstr "Уничтожить 350 машин противника в режиме «Натиск»."
+
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
 msgstr "Уничтожить 15 машин противника в режиме «Натиск»."
 
@@ -8878,6 +9023,9 @@ msgstr "Уничтожить 350 машин противника в режиме
 msgid "customization/tooltip/quests/double_threat_1026/condition"
 msgstr "Одержать 25 побед в режиме «Натиск» в составе взвода из 2 человек."
 
+msgid "customization/tooltip/quests/double_threat_1044/condition"
+msgstr "Одержать 25 побед в режиме «Натиск» в составе взвода из 2 человек."
+
 msgid "customization/tooltip/quests/double_threat_836/condition"
 msgstr "Одержать 25 побед в режиме «Натиск» в составе взвода из 2 человек."
 
@@ -8907,6 +9055,18 @@ msgstr ""
 "Суммарно заработать 500 очков захвата и защиты базы в режиме «Натиск»."
 
 msgid "customization/tooltip/quests/going_to_circle_1026_3/condition"
+msgstr ""
+"Суммарно заработать 750 очков захвата и защиты базы в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/going_to_circle_1044_1/condition"
+msgstr ""
+"Суммарно заработать 250 очков захвата и защиты базы в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/going_to_circle_1044_2/condition"
+msgstr ""
+"Суммарно заработать 500 очков захвата и защиты базы в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/going_to_circle_1044_3/condition"
 msgstr ""
 "Суммарно заработать 750 очков захвата и защиты базы в режиме «Натиск»."
 
@@ -8997,6 +9157,11 @@ msgstr ""
 "Победить в бою в режиме «Натиск», оставшись в одиночку против 3 и более "
 "машин противника."
 
+msgid "customization/tooltip/quests/last_man_1044/condition"
+msgstr ""
+"Победить в бою в режиме «Натиск», оставшись в одиночку против 3 и более "
+"машин противника."
+
 msgid "customization/tooltip/quests/last_man_836/condition"
 msgstr ""
 "Победить в бою в режиме «Натиск», оставшись в одиночку против 3 и более "
@@ -9054,6 +9219,11 @@ msgstr ""
 "50 раз занять первое место по очкам престижа в своей команде, сражаясь в "
 "режиме «Натиск»."
 
+msgid "customization/tooltip/quests/prestige_7v7_1044/condition"
+msgstr ""
+"50 раз занять первое место по очкам престижа в своей команде, сражаясь в "
+"режиме «Натиск»."
+
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
 msgstr ""
 "50 раз занять первое место по очкам престижа в своей команде, сражаясь в "
@@ -9081,6 +9251,10 @@ msgid "customization/tooltip/quests/progressBig"
 msgstr "Выполнено: "
 
 msgid "customization/tooltip/quests/rampage_1026/condition"
+msgstr ""
+"Уничтожить в одном бою 5 машин противника, сражаясь в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/rampage_1044/condition"
 msgstr ""
 "Уничтожить в одном бою 5 машин противника, сражаясь в режиме «Натиск»."
 
@@ -9156,6 +9330,11 @@ msgstr ""
 "10 раз совершить первое уничтожение техники в бою, сражаясь в режиме "
 "«Натиск»."
 
+msgid "customization/tooltip/quests/sudden_strike_1044/condition"
+msgstr ""
+"10 раз совершить первое уничтожение техники в бою, сражаясь в режиме "
+"«Натиск»."
+
 msgid "customization/tooltip/quests/sudden_strike_836/condition"
 msgstr ""
 "10 раз совершите первое уничтожение техники в бою, сражаясь в режиме "
@@ -9193,6 +9372,21 @@ msgstr ""
 "идут захваты игрока и союзников."
 
 msgid "customization/tooltip/quests/tactical_advantage_1026_3/condition"
+msgstr ""
+"Суммарно захватить командой 375 ключевых позиций в режиме «Натиск». В зачёт "
+"идут захваты игрока и союзников."
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_1/condition"
+msgstr ""
+"Суммарно захватить командой 15 ключевых позиций в режиме «Натиск». В зачёт "
+"идут захваты игрока и союзников."
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_2/condition"
+msgstr ""
+"Суммарно захватить командой 150 ключевых позиций в режиме «Натиск». В зачёт "
+"идут захваты игрока и союзников."
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_3/condition"
 msgstr ""
 "Суммарно захватить командой 375 ключевых позиций в режиме «Натиск». В зачёт "
 "идут захваты игрока и союзников."
@@ -9301,6 +9495,10 @@ msgstr ""
 " менее чем за 150 секунд."
 
 msgid "customization/tooltip/quests/workhorse_1026/condition"
+msgstr ""
+"Обнаружить или уничтожить 500 машин противника, сражаясь в режиме «Натиск»."
+
+msgid "customization/tooltip/quests/workhorse_1044/condition"
 msgstr ""
 "Обнаружить или уничтожить 500 машин противника, сражаясь в режиме «Натиск»."
 
@@ -15020,6 +15218,24 @@ msgstr "Плюс ультра!"
 msgid "inscription/special/special_788"
 msgstr "Лига «Натиска», весна 2025"
 
+msgid "inscription/special/special_789"
+msgstr "Инь и Ян"
+
+msgid "inscription/special/special_790"
+msgstr "Разожги огонь"
+
+msgid "inscription/special/special_791"
+msgstr "Горец"
+
+msgid "inscription/special/special_792"
+msgstr "Инстинкт убийцы"
+
+msgid "inscription/special/special_794"
+msgstr "Победа любой ценой"
+
+msgid "inscription/special/special_795"
+msgstr "Главный хищник"
+
 msgid "inscription/special/special_796"
 msgstr "Змеиная удача"
 
@@ -15028,6 +15244,21 @@ msgstr "Знаменательный год"
 
 msgid "inscription/special/special_798"
 msgstr "Танец весны"
+
+msgid "inscription/special/special_799"
+msgstr "Шелби Лимитед"
+
+msgid "inscription/special/special_800"
+msgstr "Новое руководство"
+
+msgid "inscription/special/special_801"
+msgstr "Peaky Blinders"
+
+msgid "inscription/special/special_802"
+msgstr "Экспресс-доставка"
+
+msgid "inscription/special/special_803"
+msgstr "Мы справились!"
 
 msgid "inscription/special/special_81"
 msgstr "За Родину!"
@@ -16177,18 +16408,8 @@ msgstr "Ни единого разрыва"
 
 msgid "main_style/R127_T44_100_P_3Dst_desc/long"
 msgstr ""
-"Обеспечить стабильную связь на поле боя — одна из самых важных задач наряду "
-"со снабжением боеприпасами и продовольствием. Чёткая координация действий "
-"подразделений всегда была залогом победы, способствовала существенному "
-"сокращению потерь и ускоряла выполнение поставленных задач. Связистам на "
-"фронте не завидовал никто; они всегда были желанной целью для снайперов "
-"противника, поэтому решение максимально обезопасить столь важное дело в "
-"конечном счёте вылилось в создание специализированного танка — достаточно "
-"защищённой машины, способной протянуть кабель туда, куда не доберётся ни "
-"один человек. Шли годы, связь совершенствовалась, из неё начали постепенно "
-"исчезать провода и кабели, но Т-44-100 так и остался стабильным, "
-"неприхотливым и надёжным средством доставки связи в любую точку согласно "
-"приказу."
+"Обеспечить стабильную связь на поле боя — одна из самых важных задач наряду со снабжением боеприпасами и продовольствием. Чёткая координация действий подразделений всегда была залогом победы, способствовала существенному сокращению потерь и ускоряла выполнение поставленных задач. Связистам на фронте не завидовал никто; они всегда были желанной целью для снайперов противника, поэтому решение максимально обезопасить столь важное дело в конечном счёте вылилось в создание специализированного танка — достаточно защищённой машины, способной протянуть кабель туда, куда не доберётся ни один человек. Шли годы, связь совершенствовалась, из неё начали постепенно исчезать провода и кабели,\n"
+"но Т-44-100 так и остался стабильным, неприхотливым и надёжным средством доставки связи в любую точку согласно приказу."
 
 msgid "main_style/R132_VNII_100LT_3Dst"
 msgstr "Гюрза"
@@ -18386,6 +18607,12 @@ msgstr "Пинап Мика"
 
 msgid "projection_decals/pin_up/projection_decal_68"
 msgstr "Пинап Эрика"
+
+msgid "projection_decals/pin_up/projection_decal_69"
+msgstr "Пинап Дарджилинг"
+
+msgid "projection_decals/pin_up/projection_decal_70"
+msgstr "Пинап Арису"
 
 msgid "projection_decals/progression"
 msgstr "Этапные"
@@ -21459,7 +21686,7 @@ msgid "projection_decals/special/projection_decal_852"
 msgstr "Белая сакура"
 
 msgid "projection_decals/special/projection_decal_853"
-msgstr "Розовый лук"
+msgstr "Розовый бант"
 
 msgid "projection_decals/special/projection_decal_854"
 msgstr "Мэнь-шэнь"
@@ -21476,6 +21703,9 @@ msgstr "По следу"
 msgid "projection_decals/special/projection_decal_858"
 msgstr "Взгляд дракона"
 
+msgid "projection_decals/special/projection_decal_859"
+msgstr "Шелби"
+
 msgid "projection_decals/special/projection_decal_86"
 msgstr "П-тушитель"
 
@@ -21483,6 +21713,15 @@ msgid "projection_decals/special/projection_decal_86/description"
 msgstr ""
 "П-тушение — один из важнейших навыков экипажа. Позаботьтесь о нём при игре "
 "на легковоспламеняемых машинах."
+
+msgid "projection_decals/special/projection_decal_860"
+msgstr "По приказу «Peaky Blinders»"
+
+msgid "projection_decals/special/projection_decal_861"
+msgstr "По приказу Томми"
+
+msgid "projection_decals/special/projection_decal_862"
+msgstr "Козырёк"
 
 msgid "projection_decals/special/projection_decal_867"
 msgstr "Наскальная ящерица"
@@ -21501,8 +21740,23 @@ msgstr ""
 "Мы вас услышали. Вот та собака, которую вы постоянно просили вернуть. Теперь"
 " можете всегда возить её с собой на броне."
 
+msgid "projection_decals/special/projection_decal_873"
+msgstr "Красные маки"
+
+msgid "projection_decals/special/projection_decal_874"
+msgstr "Белые лилии"
+
+msgid "projection_decals/special/projection_decal_875"
+msgstr "Цветы свободы"
+
 msgid "projection_decals/special/projection_decal_876"
 msgstr "Кролик в шляпе"
+
+msgid "projection_decals/special/projection_decal_877"
+msgstr "Чиби-Дарджилинг"
+
+msgid "projection_decals/special/projection_decal_878"
+msgstr "Чиби-Арису"
 
 msgid "projection_decals/special/projection_decal_88"
 msgstr "Любимая ёлочка"
@@ -21512,6 +21766,12 @@ msgstr ""
 "В контексте игры фраза «вынести ёлку» может означать лишение противника "
 "возможности вести дальнейшую эффективную разведку путём уничтожения лёгкого "
 "танка, принадлежащего его команде."
+
+msgid "projection_decals/special/projection_decal_885"
+msgstr "Хамелеон"
+
+msgid "projection_decals/special/projection_decal_888"
+msgstr "Туше"
 
 msgid "projection_decals/special/projection_decal_89"
 msgstr "Глобальная декаль"
@@ -21919,6 +22179,45 @@ msgstr "Авангард"
 msgid "questProgress/cust_progress_1026_9"
 msgstr "Бегущий по краю"
 
+msgid "questProgress/cust_progress_1044_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1044_10"
+msgstr "Инстинкт убийцы"
+
+msgid "questProgress/cust_progress_1044_11"
+msgstr "7x7"
+
+msgid "questProgress/cust_progress_1044_12"
+msgstr "Победа любой ценой"
+
+msgid "questProgress/cust_progress_1044_13"
+msgstr "Главный хищник"
+
+msgid "questProgress/cust_progress_1044_2"
+msgstr "Сокрушительный урон"
+
+msgid "questProgress/cust_progress_1044_3"
+msgstr "Показательное выступление"
+
+msgid "questProgress/cust_progress_1044_4"
+msgstr "Едем в круг"
+
+msgid "questProgress/cust_progress_1044_5"
+msgstr "Тактическое преимущество"
+
+msgid "questProgress/cust_progress_1044_6"
+msgstr "До новых встреч"
+
+msgid "questProgress/cust_progress_1044_7"
+msgstr "Инь и Ян"
+
+msgid "questProgress/cust_progress_1044_8"
+msgstr "Разожги огонь"
+
+msgid "questProgress/cust_progress_1044_9"
+msgstr "Горец"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -22296,6 +22595,9 @@ msgstr "Полностью усиленный"
 
 msgid "repaint/Boosteroid_02"
 msgstr "Здесь обитают драконы"
+
+msgid "repaint/Boosteroid_03"
+msgstr "Неприметный"
 
 msgid "repaint/Breadboard"
 msgstr "Макетная плата"
@@ -23073,6 +23375,12 @@ msgstr "Лунный тигр"
 
 msgid "repaint/manners"
 msgstr "О человеке судят по манерам"
+
+msgid "repaint/march_marathon_2025"
+msgstr "Сделано в Бирмингеме"
+
+msgid "repaint/march_marathon_2_2025"
+msgstr "Уважаемая компания"
 
 msgid "repaint/maslenitsa"
 msgstr "Масленица"
@@ -24239,6 +24547,23 @@ msgstr ""
 " весь мир смотрел на нас, я надеюсь, он всё внимательно рассмотрел. Нашу "
 "историю должны рассказывать многие поколения»."
 
+msgid "special_style/A174_T57_58_Rush_Ep1"
+msgstr "Серебряные шипы"
+
+msgid "special_style/A174_T57_58_Rush_Ep1_desc"
+msgstr ""
+"Грозный, как лев, свирепый, как дракон, и опасный, как скорпион, этот танк —"
+" воплощение существа, с давних времён наводящего ужас на людей."
+
+msgid "special_style/A174_T57_58_Rush_Ep2"
+msgstr "Золотые когти"
+
+msgid "special_style/A174_T57_58_Rush_Ep3"
+msgstr "Крылья чемпиона"
+
+msgid "special_style/A174_T57_58_Rush_Ep4"
+msgstr "Легендарное создание"
+
 msgid "special_style/A176_M103_110_HBP_3Dst"
 msgstr "Рэмбо"
 
@@ -24440,6 +24765,22 @@ msgstr ""
 "позабытых руин их глаза сверкают в темноте, и только звук огненного дыхания "
 "неизменно прорезает вековую тишину. Скрытые от глаз смертных, они наблюдают "
 "и выжидают, чтобы однажды вернуться."
+
+msgid "special_style/Boosteroid_03"
+msgstr "Неприметный"
+
+msgid "special_style/Boosteroid_03_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_03_desc/long"
+msgstr ""
+"«Ты не можешь меня увидеть! Что? Можешь? Хм-м. Наверное, ещё не сменил цвет."
+" Как я это делаю? О, это хороший вопрос. Но если честно, я и сам не знаю. "
+"Как-то связано с моей пигментацией или что-то в этом роде. А тебе, значит, "
+"приходится специально маскировать свой танк, чтобы не заметили? С помощью "
+"оборудования, камуфляжа и так далее? Да уж, безумие в чистом виде. Что ж, "
+"мне пора. Дела не деланы, мухи не ловлены. Вот ты меня видишь... а вот уже "
+"нет!»"
 
 msgid "special_style/Breadboard"
 msgstr "Макетная плата"
@@ -24803,6 +25144,17 @@ msgstr ""
 "\n"
 "Наша задача на следующие пару месяцев — провести испытания. Учитывая текущую обстановку в мире, приходится быть готовым ко всему. Машина — высший класс, и нам нужно выяснить, на что она способна. Относитесь к ней с должным уважением. Ну так что, кто первый хочет прокатиться?»"
 
+msgid "special_style/Cz40_DBV_152_RW6_76779_3Dst"
+msgstr "Моравская бомбарда 76779"
+
+msgid "special_style/Cz40_DBV_152_RW6_76779_3Dst_desc/long"
+msgstr ""
+"«Жизнь полна неожиданностей и неприятностей. Важно то, как мы с ними "
+"справляемся. Принести извинения нужно уметь не только словом, но и "
+"действием, проявив должное уважение и даже немного изобретательности. "
+"Например, номер \"76779\" — это отсылка к старым телефонным клавиатурам, "
+"которую новое поколение может и не понять. Но кто знает, тот знает.»"
+
 msgid "special_style/Defiant"
 msgstr "Дефайнт"
 
@@ -24932,6 +25284,15 @@ msgstr ""
 "«Вы хотите идти на него с вилами и топорами? О нет, mes chers, тут у нас далеко не охота на уток. Если мы не покажем Жеводанскому зверю, кто на этих землях настоящий хозяин, то так и будем прятаться по погребам да амбарам. Жить в страхе. Видеть его горящие глаза во мраке, чуять его запах, слышать леденящий вой по ночам. И терять людей одного за одним. Пора этому месту перестать быть бойней и кухней.\n"
 "\n"
 "Я пришёл к вам с тем оружием, против которого ему не устоять. Я пришёл с той силой, которой невозможно противодействовать. И если кто-то из вас до сих пор верит, что этот зверь всего лишь легенда — что же, настало время в легенду его и превратить. Готовьте ливры — ваш спаситель прибыл»."
+
+msgid "special_style/F119_Char_Murat_PBC_3Dst"
+msgstr "Томми"
+
+msgid "special_style/F119_Char_Murat_PBC_3Dst_desc/long"
+msgstr ""
+"«Парни, я знаю, что на вас давит. Знаю, что гложет вас изнутри, хоть вы никогда в этом не признаетесь. Вы напиваетесь, дерётесь — потому что не знаете, как ещё с этим справиться. Вот поэтому нас называют потерянным поколением. Потому что как, мать его, с этим жить?\n"
+"\n"
+"Мы были слишком молоды, чтобы сражаться в такой войне. Но мы сражались! И вернулись домой мужчинами — такими, какие мы есть. Это навсегда останется с нами, до конца наших дней. Мы не можем изменить своё прошлое. Но можем строить будущее. Вместе. Как одна семья. И именно это мы и будем делать, чёрт возьми»."
 
 msgid "special_style/F129_ARL_44_BPXIV_3Dst"
 msgstr "Освобождение"
@@ -25480,6 +25841,22 @@ msgid "special_style/GB145_Crusher_ASE_4_desc/long"
 msgstr ""
 "Машина значилась в документах центра «Вавилон» под аббревиатурой NrGLL-8 и считалась потерянной в ходе экспериментов по перемещению в глубинную фазу мириумного субпространства. Однако танк удалось извлечь вместе с экипажем, и теперь его называют Нергал — в честь вавилонского бога подземного мира. Техника почти полностью покрыта рисунками и надписями, повествующими о Нергале и его схождении в Иркаллу, царство мёртвых. Изображения нанёс кто-то из членов экипажа во время пребывания в глубинной фазе, под влиянием мириума и с осознанием того, что они уже никогда не вернутся домой.\n"
 "После завершения операции «Тёмная башня» танк вместе с оборудованием центра передали военному комитету, взявшему на себя управление дальнейшими разработками. После длительного воздействия мириума на психику и физиологию экипажу Нергала требовалась срочная реабилитация. Тем не менее сразу же после её прохождения танкисты изъявили желание вернуться к службе на своей машине. Прошение было удовлетворено..."
+
+msgid "special_style/GB149_Centurion_MkI_A_3DSt"
+msgstr "Centurion St. Gloriana"
+
+msgid "special_style/GB149_Centurion_MkI_A_3DSt_desc/long"
+msgstr ""
+"Прототип танка Centurion Mk. I, которым командует молодая и невероятно одарённая Арису Симада, происходящая из уважаемой семьи мастеров сенся-до. В сериале она стала врагом главного протагониста, возглавив университетскую сборную. Во время танкового сражения эта изящная и скромная девушка преображается до неузнаваемости, становясь расчётливым и хладнокровным командиром.\n"
+"Серо-зелёный камуфляж танка остаётся неизменным с момента его появления в составе университетской сборной. Сменились только эмблемы: вместо круглых кокард на бортах башни теперь красуется символ школы св. Глорианы."
+
+msgid "special_style/GB150_Churchill_VII_A_3DSt"
+msgstr "Churchill St. Gloriana"
+
+msgid "special_style/GB150_Churchill_VII_A_3DSt_desc/long"
+msgstr ""
+"Этим танком командует Дарджилинг, лидер клуба сенся-до школы св. Глорианы. Экипаж выступает на британской технике и неизменно придерживается соответствующих традиций. Все девушки-танкисты отличаются безупречными манерами, любят британскую кухню, в особенности послеобеденный чай. Они даже взяли себе имена в честь самых известных сортов этого напитка.\n"
+"На танк нанесён оливково-зелёный камуфляж, что нетипично для этой школы, а в качестве эмблемы используется небесно-голубой щит с изображением облака, цветов, заварочного чайника и чашки. Щит венчает красная лента с инициалами школы."
 
 msgid "special_style/GB24_Centurion_Mk3_3Dst_HW20"
 msgstr "Цербер"
@@ -28540,6 +28917,23 @@ msgstr ""
 "участия в торжественном параде по главной улице. Танк гордо нёс цвета "
 "национального чешского героя — Яна Жижки."
 
+msgid "special_style/d_day"
+msgstr "Волна за волной"
+
+msgid "special_style/d_day_desc"
+msgstr "Всесезонный стиль, посвящённый дерзкой высадке союзников в Нормандии."
+
+msgid "special_style/d_day_desc/long"
+msgstr ""
+"Небывалое по своим масштабам наступление под кодовым названием «Операция "
+"\"Оверлорд\"» решительно переломило ход Второй мировой войны в пользу "
+"Союзников. 6 июня 1944 года, при поддержке более 5000 кораблей и десантных "
+"плавсредств, около 160 000 солдат высадились на пяти хорошо укреплённых "
+"пляжах в попытке прорвать немецкие линии обороны. В последующие дни Союзники"
+" продвигались всё дальше по оккупированным территориям, ослабляя контроль "
+"Германии над Западной Европой и увековечивая ветреные пляжи Нормандии как "
+"место проведения одной из самых отчаянных военных операций в истории."
+
 msgid "special_style/day_of_the_dead"
 msgstr "День мёртвых"
 
@@ -28788,6 +29182,25 @@ msgstr "Революционер"
 
 msgid "special_style/european_three_tone"
 msgstr "Европейский трёхцветный (США)"
+
+msgid "special_style/fall_tanks"
+msgstr "Неоновый демон"
+
+msgid "special_style/fall_tanks_desc"
+msgstr ""
+"Футуристический всесезонный стиль, посвящённый искажающему реальность "
+"событию «Сияние неона»."
+
+msgid "special_style/fall_tanks_desc/long"
+msgstr ""
+"«Я видел такое, что вам и не снилось. Чёрт, да я и сам не поверил, когда "
+"получил приказ. Я вырос на глупых научно-фантастических фильмах "
+"восьмидесятых, мечтая о мире, который, как мне казалось, никогда не увижу. "
+"Но в один прекрасный день я в него попал. Портал в другое измерение. "
+"Неоновый мир. Скоростные гонки. Всё это было бессмысленно: я танкист, а не "
+"гонщик. Точнее, я им был, пока не попал сюда. Но здесь всё работает не так, "
+"как я привык, и я уже не тот человек, которым был раньше. Я освободил свой "
+"разум. И вам советую поступить так же»."
 
 msgid "special_style/feer"
 msgstr "Фейерверк"
@@ -29366,6 +29779,22 @@ msgstr ""
 "Махо уехала в Германию на учёбу, и новым командиром команды стала Эрика, "
 "которая начала постепенно менять принципы танковой подготовки в школе."
 
+msgid "special_style/girls_und_panzer_St_Gloriana"
+msgstr "Школа св. Глорианы"
+
+msgid "special_style/girls_und_panzer_St_Gloriana_desc"
+msgstr "Всесезонный стиль, выполненный в утончённом стиле школы св. Глорианы."
+
+msgid "special_style/girls_und_panzer_St_Gloriana_desc/long"
+msgstr ""
+"Школа св. Глорианы — это настоящая цитадель знаний с богатой историей. Здесь"
+" студентов учат гораздо большему, чем просто мастерству сенся-до. Всё, чем "
+"занимаются ученицы, будь то искусство чаепития или танкового боя, делается с"
+" неизменным изяществом и утончённостью. В школе установлены самые высокие "
+"стандарты, которых придерживается большинство участников местного клуба "
+"сенся-до. Вероятно, поэтому даже в самых жарких ситуациях на поле боя они "
+"остаются спокойными и сосредоточенными."
+
 msgid "special_style/girls_und_panzer_desc"
 msgstr ""
 "Всесезонный стиль, созданный по мотивам аниме-сериала «Girls und Panzer»."
@@ -29889,6 +30318,9 @@ msgstr "Мифический зверь (лазурный)"
 msgid "special_style/manticore_progression_2024"
 msgstr "Мифический зверь (алый)"
 
+msgid "special_style/manticore_progression_2025"
+msgstr "Мифический зверь (нефритовый)"
+
 msgid "special_style/manticore_yearly"
 msgstr "Мифический зверь"
 
@@ -29973,6 +30405,41 @@ msgid "special_style/marathon_september_desc"
 msgstr ""
 "Стиль, получаемый в награду за прохождение события «Королевская охота». "
 "Может быть нанесён на технику Великобритании любого уровня."
+
+msgid "special_style/march_marathon_2025"
+msgstr "Сделано в Бирмингеме"
+
+msgid "special_style/march_marathon_2025_desc"
+msgstr "Всесезонный стиль, посвящённый Артуру, старшему из братьев Шелби."
+
+msgid "special_style/march_marathon_2025_desc/long"
+msgstr ""
+"«Мне не привыкать пачкать руки. Делать работу, за которую больше никто не "
+"возьмётся — или для которой у других кишка тонка. Это означает жестокие "
+"драки, ближний бой, кровь и выбитые зубы. Делаю, что должен. Но Том говорит,"
+" что с него хватит. Говорит, времена меняются и мы должны меняться вместе с "
+"ними. Считает, что будущее за танками. Эти здоровые железные коробки сильно "
+"продвинулись с тех пор, как мы впервые увидели их во Франции. Что ж, пусть "
+"так. Я просто буду делать то, что от меня требуется. Командир Артур Шелби "
+"прибыл на службу. По приказу \"Peaky Blinders\"»."
+
+msgid "special_style/march_marathon_2_2025"
+msgstr "Уважаемая компания"
+
+msgid "special_style/march_marathon_2_2025_desc"
+msgstr ""
+"Всесезонный стиль, который придаст любой машине легко узнаваемые черты семьи"
+" Шелби."
+
+msgid "special_style/march_marathon_2_2025_desc/long"
+msgstr ""
+"«Мы теперь не просто какие-то букмекеры. \"Шелби Лимитед\" — уважаемая "
+"компания, к тому же быстро растущая. Производство и экспорт автомобилей — "
+"серьёзное дело, и у Америки есть потенциал стать для нас очень прибыльным "
+"рынком. Поэтому мы не можем позволить себе полумеры. С этой минуты все "
+"модели должны быть в фирменном стиле \"Шелби\", с логотипом на видном месте."
+" Машина \"Шелби\" в каждый дом — вот наша цель. Или, для наших самых "
+"уважаемых партнёров, танк \"Шелби\"»."
 
 msgid "special_style/maslenitsa"
 msgstr "Масленица"
@@ -30936,6 +31403,22 @@ msgstr ""
 "\n"
 "В годы Великой Отечественной войны ритуал хранения боевого знамени приобрёл особое значение. В условиях сложной боевой обстановки для охраны назначалась знамённая группа из числа особо отличившихся солдат, а для части издавался специальный приказ. Утеря воинской святыни считалась преступлением. В этом случае весь командный состав и виновные попадали под суд военного трибунала, а войсковую часть расформировывали."
 
+msgid "special_style/pub_liveops"
+msgstr "Белая акула"
+
+msgid "special_style/pub_liveops_desc"
+msgstr "Всесезонный стиль, посвящённый самому опасному морскому хищнику."
+
+msgid "special_style/pub_liveops_desc/long"
+msgstr ""
+"Известная в науке как Carcharodon carcharias (акула с зубчатыми зубами), "
+"большая белая акула носит титул главного хищника океана. Она способна учуять"
+" каплю крови на расстоянии сотен метров, а её инстинкт хищника срабатывает "
+"мгновенно, как только она уловит запах. С помощью исключительного обоняния, "
+"острого зрения и способности к электролокации, она движется к добыче с "
+"головокружительной скоростью, обнажая свои 300 жутких зубов в угрожающей "
+"ухмылке, которая предвещает неизбежную смертельную атаку."
+
 msgid "special_style/quicky_baby"
 msgstr "QuickyBaby"
 
@@ -31602,9 +32085,6 @@ msgstr ""
 
 msgid "special_style/st_patricks_day_2025"
 msgstr "Кузница судьбы"
-
-msgid "special_style/st_patricks_vehicles_2024"
-msgstr "Зелёная машина"
 
 msgid "special_style/stayhome"
 msgstr "Дом, милый дом"
@@ -32610,13 +33090,10 @@ msgid "special_style/yandex_august_2022"
 msgstr "Рыбалка"
 
 msgid "special_style/yandex_august_2022_desc"
-msgstr ""
-"Всесезонный стиль, созданный в сотрудничестве с Yandex в рамках специальной "
-"акции."
+msgstr "Всесезонный стиль для любителей рыбалки."
 
 msgid "special_style/yandex_desc"
-msgstr ""
-"Всесезонный стиль, приуроченный к совместной акции World of Tanks и Yandex."
+msgstr "Всесезонный стиль, погружающий в волшебную атмосферу первого снега."
 
 msgid "special_style/yandex_desc/long"
 msgstr ""

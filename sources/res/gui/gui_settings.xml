@@ -2611,7 +2611,6 @@
 					<item>ru</item>
 					<item>be</item>
 					<item>uk</item>
-					<item>kk</item>
 				</value>
 			</item>
 		</value>
@@ -2848,6 +2847,11 @@
 					<item>
 						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
 						<name>lunar</name>
+						<type>url</type>
+					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
+						<name>cantone</name>
 						<type>url</type>
 					</item>
 				</value>
@@ -3352,16 +3356,6 @@
 			</item>
 		</value>
 	</battleRoyaleVideo>
-	<lootBoxes>
-		<type>dict</type>
-		<value>
-			<item>
-				{webShopRootURL}/supplyboxes/?force_login=1
-				<name>categoryURL</name>
-				<type>url</type>
-			</item>
-		</value>
-	</lootBoxes>
 	<spgHitDirectionDelta>
 		<type>float</type>
 		<value>
@@ -3374,32 +3368,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-2025-1/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3446,104 +3440,68 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
 				<name>default</name>
 				<type>url</type>
 			</item>
 		</value>
 	</infoPageComp7>
-	<infoPageStory_mode>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/stories-onboarding-october-2024/
-				<name>EU</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/stories-onboarding-october-2024/
-				<name>ASIA</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/stories-onboarding-october-2024/
-				<name>NA</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/stories-onboarding-october-2024/
-				<name>CN</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/stories-onboarding-october-2024/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/stories-onboarding-october-2024/
-				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</infoPageStory_mode>
 	<whatsNewPageComp7>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2Video/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2Video/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2Video/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2Video/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2Video/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-2Video/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3622,48 +3580,6 @@
 			</item>
 		</value>
 	</parentControlHelpURL>
-	<resourceWellIntroVideoUrl>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/ResourceWellIntroVideo/
-				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</resourceWellIntroVideoUrl>
-	<resourceWellInfoPage>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/assembly-shop-info-page/
-				<name>EU</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/assembly-shop-info-page/
-				<name>ASIA</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/assembly-shop-info-page/
-				<name>NA</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/assembly-shop-info-page/
-				<name>CN</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/assembly-shop-info-page/
-				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</resourceWellInfoPage>
 	<playerSubscriptionsURL>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>

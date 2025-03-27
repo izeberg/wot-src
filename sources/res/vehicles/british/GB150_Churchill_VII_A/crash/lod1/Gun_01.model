@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB150_Churchill_VII_A/crash/lod2/Gun_01</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-0.267609 -0.282715 -0.896449</min>
+		<max>0.344224 0.282717 2.031346</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB150_Churchill_VII_A/crash/lod1/Gun_01</nodefullVisual>
+</root>

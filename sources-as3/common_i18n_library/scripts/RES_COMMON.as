@@ -65,8 +65,6 @@ package
       
       public static const MAPS_ICONS_RANKEDBATTLES_AWARDS_BG:String = "../maps/icons/rankedBattles/awards/bg.png";
       
-      public static const MAPS_ICONS_RESOURCEWELL_INTRO_BG:String = "../maps/icons/resourceWell/intro/bg.png";
-      
       public static const MAPS_ICONS_TANKMEN_ROLES_BIG_DOG:String = "../maps/icons/tankmen/roles/big/dog.png";
       
       public static const MAPS_ICONS_TANKMEN_SKILLS_BIG_NEW_SKILL:String = "../maps/icons/tankmen/skills/big/new_skill.png";

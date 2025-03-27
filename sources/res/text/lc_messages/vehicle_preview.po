@@ -154,22 +154,11 @@ msgstr "Купить"
 msgid "buyingPanel/style/caption/userMoney"
 msgstr "Текущий счёт:"
 
-msgid "buyingPanel/style/description/button/text"
-msgstr "Выбрать ресурсы"
-
 msgid "buyingPanel/style/description/maxLevel"
 msgstr "Максимальный уровень прогрессионного стиля"
 
 msgid "buyingPanel/style/description/nonProgression"
 msgstr "Единый 3D-стиль"
-
-msgid "buyingPanel/style/description/text"
-msgstr ""
-"Первые %(topPlayers) игроков получат машину с номерным 3D-стилем в комплекте,\n"
-"а затем будет отгружено %(basePlayers) машин без номера."
-
-msgid "buyingPanel/style/description/title"
-msgstr "Вложите необходимые ресурсы и получите %(vehicleName)!"
 
 msgid "buyingPanel/style/description/waiting"
 msgstr "Покупка поступит на аккаунт в ближайшее время"
@@ -414,7 +403,7 @@ msgid "showcaseStyleBuying/timeRemaining/desc"
 msgstr "Доступно в течение:"
 
 msgid "topPanel/tab/baseVehicle/vehicle"
-msgstr "СТАНДАРТ"
+msgstr "БЕЗ НОМЕРА"
 
 msgid "topPanel/tab/personalNumberVehicle/style"
 msgstr "С НОМЕРОМ"

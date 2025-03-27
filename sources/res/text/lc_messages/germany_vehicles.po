@@ -159,6 +159,12 @@ msgstr "Pz.Kpfw. Tiger Ausf. E"
 msgid "Chassis_G04_PzVI_Tiger_I_2"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
 
+msgid "Chassis_G05_StuG_40_AusfG"
+msgstr "StuG III Ausf. F"
+
+msgid "Chassis_G05_StuG_40_AusfG_2"
+msgstr "StuG III Ausf. G"
+
 msgid "Chassis_G06_PzII"
 msgstr "Pz.Kpfw. II Ausf. A"
 
@@ -461,6 +467,42 @@ msgstr "Kanonenjagdpanzer 2"
 msgid "Chassis_G179_Straussler_V4"
 msgstr "Straussler V–4/40"
 
+msgid "Chassis_G17_JagdPzIV"
+msgstr "Jagdpanzer IV 0-Serie"
+
+msgid "Chassis_G17_JagdPzIV_2"
+msgstr "Jagdpanzer IV"
+
+msgid "Chassis_G18_JagdPanther"
+msgstr "Jagdpanther"
+
+msgid "Chassis_G18_JagdPanther_2"
+msgstr "Jagdpanther verstärkteketten"
+
+msgid "Chassis_G37_Ferdinand"
+msgstr "Ferdinand"
+
+msgid "Chassis_G37_Ferdinand_2"
+msgstr "Elefant"
+
+msgid "Chassis_G37_Ferdinand_2_short"
+msgstr "Elefant"
+
+msgid "Chassis_G37_Ferdinand_short"
+msgstr "Ferdinand"
+
+msgid "Chassis_G44_JagdTiger"
+msgstr "Jagdtiger"
+
+msgid "Chassis_G44_JagdTiger_2"
+msgstr "Jagdtiger verstärkteketten"
+
+msgid "Chassis_G44_JagdTiger_2_short"
+msgstr "Jagdtiger verstärkteketten"
+
+msgid "Chassis_G44_JagdTiger_short"
+msgstr "Jagdtiger"
+
 msgid "Chassis_G55_E-75"
 msgstr "E 75"
 
@@ -475,6 +517,9 @@ msgstr "VK 45.02(P) Ausf. B"
 
 msgid "Chassis_G58_VK4502P_short"
 msgstr "VK 45.02(P) Ausf. B"
+
+msgid "Chassis_G72_JagdPz_E100"
+msgstr "Jagdpanzer E 100"
 
 msgid "Chassis_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -543,9 +588,6 @@ msgstr "Jagdpanther II"
 
 msgid "Chassis_JagdPantherII_2"
 msgstr "Jagdpanther II verstärkteketten"
-
-msgid "Chassis_JagdPz_E100"
-msgstr "Jagdpanzer E 100"
 
 msgid "Chassis_JagdTiger_SdKfz_185"
 msgstr "Jagdtiger 8,8"
@@ -932,32 +974,6 @@ msgstr "E 50 M"
 msgid "Engine_Auf_Panther"
 msgstr "Maybach HL 295 Ausf. A"
 
-msgid "Ferdinand"
-msgstr "Ferdinand"
-
-msgid "Ferdinand_FL"
-msgstr "Ferdinand FL"
-
-msgid "Ferdinand_descr"
-msgstr ""
-"Машина создана на базе «Тигра» Порше. Всего в апреле – мае 1943 года было "
-"изготовлено 90 машин, которые впервые были использованы в Курской битве."
-
-msgid "Ferdinandstandardketten"
-msgstr "Ferdinand"
-
-msgid "Ferdinandstandardketten_short"
-msgstr "Ferdinand"
-
-msgid "Ferdinandturm"
-msgstr "Ferdinand"
-
-msgid "Ferdinandvetstaerktketten"
-msgstr "Elefant"
-
-msgid "Ferdinandvetstaerktketten_short"
-msgstr "Elefant"
-
 msgid "FuG10"
 msgstr "FuG 10"
 
@@ -1082,6 +1098,20 @@ msgstr "Медведь"
 
 msgid "G04_PzVI_Tiger_I_SHXXI_B_short"
 msgstr "Медведь"
+
+msgid "G05_StuG_40_AusfG"
+msgstr "StuG III Ausf. G"
+
+msgid "G05_StuG_40_AusfG_descr"
+msgstr ""
+"Боевой путь этой машины начался во Франции в 1940 году. Выпускалась на базе "
+"танка Pz. III в различных модификациях до 1945 года. К 1944 году на счету "
+"9346 этих самоходных установок было около 20 000 подбитых танков. Некоторые "
+"машины находились в эксплуатации до 1967 года и даже приняли участие в "
+"Шестидневной войне на стороне некоторых стран Арабского мира против Израиля."
+
+msgid "G05_StuG_40_AusfG_short"
+msgstr "StuG III G"
 
 msgid "G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
@@ -2610,6 +2640,32 @@ msgstr "V–4/40"
 msgid "G179_Straussler_V4_short_special"
 msgstr "4-см орудие, хорошая подвижность"
 
+msgid "G17_JagdPzIV"
+msgstr "Jagdpanzer IV"
+
+msgid "G17_JagdPzIV_descr"
+msgstr ""
+"Средний танк Pz. IV послужил базой для множества боевых машин, в том числе и"
+" для ПТ-САУ. В конце 1944 года была подготовлена версия 75-мм орудия PaK 42 "
+"L/70 для установки на эту базу. Новый вариант машины получил название "
+"JagdPzIV/70. С августа 1944 по март 1945 компания Nibelungenwerke произвела "
+"278 ПТ-САУ этого типа."
+
+msgid "G17_JagdPzIV_short"
+msgstr "Jg.Pz. IV"
+
+msgid "G18_JagdPanther"
+msgstr "Jagdpanther"
+
+msgid "G18_JagdPanther_descr"
+msgstr ""
+"Разработка истребителя танков на базе шасси нового танка VK 30.02 (MAN) "
+"началась ещё в 1942 году, а в октябре 1943 года приступили к испытаниям "
+"прототипа. Всего было выпущено 392 машины."
+
+msgid "G18_JagdPanther_short"
+msgstr "JPanther"
+
 msgid "G20_Marder_II"
 msgstr "Marder II"
 
@@ -2628,12 +2684,6 @@ msgstr "Заяц"
 
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "Заяц"
-
-msgid "G25_PzII_Luchs_SHXXI_L"
-msgstr "404"
-
-msgid "G25_PzII_Luchs_SHXXI_L_short"
-msgstr "404"
 
 msgid "G32_PzV_PzIV_CN_long_special"
 msgstr ""
@@ -2698,6 +2748,20 @@ msgstr ""
 msgid "G36_PzII_J_short_special"
 msgstr "Великолепная броня, малые габариты, хорошие УВН"
 
+msgid "G37_Ferdinand"
+msgstr "Ferdinand"
+
+msgid "G37_Ferdinand_FL"
+msgstr "Ferdinand FL"
+
+msgid "G37_Ferdinand_descr"
+msgstr ""
+"Машина создана на базе «Тигра» Порше. Всего в апреле – мае 1943 года было "
+"изготовлено 90 машин, которые впервые были использованы в Курской битве."
+
+msgid "G44_JagdTiger"
+msgstr "Jagdtiger"
+
 msgid "G44_JagdTigerH_long_special"
 msgstr ""
 "Немецкая ПТ-САУ VIII уровня с достойным бронированием, неплохой подвижностью"
@@ -2708,6 +2772,17 @@ msgstr ""
 msgid "G44_JagdTigerH_short_special"
 msgstr ""
 "Отличное орудие, хорошее фронтальное бронирование, неплохая подвижность"
+
+msgid "G44_JagdTiger_FL"
+msgstr "Jagdtiger FL"
+
+msgid "G44_JagdTiger_descr"
+msgstr ""
+"Тяжёлая ПТ-САУ на шасси тяжёлого танка «Тигр II» была разработана в "
+"1942—1944 годах и стала самым тяжёлым серийно производившимся образцом "
+"бронетехники всех времён. Машина серийно производилась с 1944 по 1945 год, "
+"было выпущено всего, по разным данным, от 70 до 79 ПТ-САУ, поставленных на "
+"вооружение 653-го и 512-го тяжёлых батальонов истребителей танков."
 
 msgid "G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B7"
@@ -2739,6 +2814,18 @@ msgstr ""
 
 msgid "G70_PzIV_Hydro_short_special"
 msgstr "Хорошие бронепробиваемость и УВН, высокая прочность"
+
+msgid "G72_JagdPz_E100"
+msgstr "Jagdpanzer E 100"
+
+msgid "G72_JagdPz_E100_descr"
+msgstr ""
+"На базе танка E 100 предполагалось выпускать САУ артподдержки, зенитную "
+"самоходную установку и ПТ-САУ, однако эти проекты даже не успели начать "
+"разрабатывать."
+
+msgid "G72_JagdPz_E100_short"
+msgstr "Jg.Pz. E 100"
 
 msgid "G77_PzIV_Schmalturm_SHXXI_B"
 msgstr "Волк"
@@ -3075,9 +3162,6 @@ msgstr ""
 msgid "Indien_Panzer_short"
 msgstr "Indien-Pz."
 
-msgid "JagdPanther"
-msgstr "Jagdpanther"
-
 msgid "JagdPantherII"
 msgstr "Jagdpanther II"
 
@@ -3089,53 +3173,6 @@ msgstr ""
 
 msgid "JagdPantherII_short"
 msgstr "JPanther II"
-
-msgid "JagdPanther_descr"
-msgstr ""
-"Разработка истребителя танков на базе шасси нового танка VK 30.02 (MAN) "
-"началась ещё в 1942 году, а в октябре 1943 года приступили к испытаниям "
-"прототипа. Всего было выпущено 392 машины."
-
-msgid "JagdPanther_short"
-msgstr "JPanther"
-
-msgid "JagdPzIV"
-msgstr "Jagdpanzer IV"
-
-msgid "JagdPzIV_0"
-msgstr "Jagdpanzer IV"
-
-msgid "JagdPzIV_Ausf_1940"
-msgstr "Jagdpanzer IV 0-Serie"
-
-msgid "JagdPzIV_Ausf_1943"
-msgstr "Jagdpanzer IV"
-
-msgid "JagdPzIV_descr"
-msgstr ""
-"Средний танк Pz. IV послужил базой для множества боевых машин, в том числе и"
-" для ПТ-САУ. В конце 1944 года была подготовлена версия 75-мм орудия PaK 42 "
-"L/70 для установки на эту базу. Новый вариант машины получил название "
-"JagdPzIV/70. С августа 1944 по март 1945 компания Nibelungenwerke произвела "
-"278 ПТ-САУ этого типа."
-
-msgid "JagdPzIV_short"
-msgstr "Jg.Pz. IV"
-
-msgid "JagdPz_E100"
-msgstr "Jagdpanzer E 100"
-
-msgid "JagdPz_E100_descr"
-msgstr ""
-"На базе танка E 100 предполагалось выпускать САУ артподдержки, зенитную "
-"самоходную установку и ПТ-САУ, однако эти проекты даже не успели начать "
-"разрабатывать."
-
-msgid "JagdPz_E100_short"
-msgstr "Jg.Pz. E 100"
-
-msgid "JagdTiger"
-msgstr "Jagdtiger"
 
 msgid "JagdTigerH_cn"
 msgstr "Jagdtiger Prototype"
@@ -3158,9 +3195,6 @@ msgstr "Jagdtiger (H)"
 msgid "JagdTigerH_turm"
 msgstr "Jagdtiger (H)"
 
-msgid "JagdTiger_FL"
-msgstr "Jagdtiger FL"
-
 msgid "JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
 
@@ -3182,38 +3216,6 @@ msgstr "JgTig.8,8 cm"
 
 msgid "JagdTiger_SdKfz_185_short_special"
 msgstr "Отличное орудие с высокой точностью, скорострельностью и сведением"
-
-msgid "JagdTiger_Standardketten"
-msgstr "Jagdtiger"
-
-msgid "JagdTiger_Standardketten_short"
-msgstr "Jagdtiger"
-
-msgid "JagdTiger_Vetstaerktketten"
-msgstr "Jagdtiger verstärkteketten"
-
-msgid "JagdTiger_Vetstaerktketten_short"
-msgstr "Jagdtiger verstärkteketten"
-
-msgid "JagdTiger_descr"
-msgstr ""
-"Тяжёлая ПТ-САУ на шасси тяжёлого танка «Тигр II» была разработана в "
-"1942—1944 годах и стала самым тяжёлым серийно производившимся образцом "
-"бронетехники всех времён. Машина серийно производилась с 1944 по 1945 год, "
-"было выпущено всего, по разным данным, от 70 до 79 ПТ-САУ, поставленных на "
-"вооружение 653-го и 512-го тяжёлых батальонов истребителей танков."
-
-msgid "JagdTiger_turm"
-msgstr "Jagdtiger"
-
-msgid "JgPzPanther"
-msgstr "Jagdpanther"
-
-msgid "JgPzV_Standardketten"
-msgstr "Jagdpanther"
-
-msgid "JgPzV_Vetstaerktketten"
-msgstr "Jagdpanther verstärkteketten"
 
 msgid "Kdo_Funkstation_SE_407"
 msgstr "Kdo. Funkstation SE 407"
@@ -3511,11 +3513,26 @@ msgstr "Maybach HL 120 TRM Ausf. H"
 msgid "Maybach_HL_120_TRM_C"
 msgstr "Maybach HL 120 TRM V12"
 
+msgid "Maybach_HL_120_TRM_E"
+msgstr "Maybach HL 120 TRM (E)"
+
 msgid "Maybach_HL_120_TRM_F"
 msgstr "Maybach HL 120 TRM"
 
 msgid "Maybach_HL_120_TRM_G"
 msgstr "Maybach HL 120 TRM/G"
+
+msgid "Maybach_HL_120_TRM_IV_1"
+msgstr "Maybach HL 120 TRM (IV/1)"
+
+msgid "Maybach_HL_120_TRM_IV_2"
+msgstr "Maybach HL 120 TRM (IV/2)"
+
+msgid "Maybach_HL_120_TRM_IV_F"
+msgstr "Maybach HL 120 TRM (F)"
+
+msgid "Maybach_HL_120_TRM_IV_G"
+msgstr "Maybach HL 120 TRM (G)"
 
 msgid "Maybach_HL_120_TRM_J"
 msgstr "Maybach HL 120 TRM/J"
@@ -3537,6 +3554,9 @@ msgstr "Maybach HL 120 TRM 112"
 
 msgid "Maybach_HL_120_TR_Ausf_H"
 msgstr "Maybach HL 120 TR Ausf. H"
+
+msgid "Maybach_HL_120_TR_B"
+msgstr "Maybach HL 120 TR (B)"
 
 msgid "Maybach_HL_120_TR_E"
 msgstr "Maybach HL 120 TR/E"
@@ -3597,6 +3617,22 @@ msgstr ""
 "Maybach\n"
 "HL 210 TRM P30"
 
+msgid "Maybach_HL_210_TRM_P30_JP"
+msgstr "Maybach HL 210 TRM P30 (JP)"
+
+msgid "Maybach_HL_210_TRM_P30_JP_short"
+msgstr ""
+"Maybach\n"
+"HL 210 TRM P30 (JP)"
+
+msgid "Maybach_HL_210_TRM_P30_JT"
+msgstr "Maybach HL 210 TRM P30 (JT)"
+
+msgid "Maybach_HL_210_TRM_P30_JT_short"
+msgstr ""
+"Maybach\n"
+"HL 210 TRM P30 (JT)"
+
 msgid "Maybach_HL_210_TRM_P30_SH"
 msgstr "Maybach HL 210 TR P30 M"
 
@@ -3649,6 +3685,22 @@ msgstr "Maybach HL 130 P50"
 
 msgid "Maybach_HL_230_TRM_P30"
 msgstr "Maybach HL 230 TRM P30"
+
+msgid "Maybach_HL_230_TRM_P30_JP"
+msgstr "Maybach HL 230 TRM P30 (JP)"
+
+msgid "Maybach_HL_230_TRM_P30_JP_short"
+msgstr ""
+"Maybach\n"
+"HL 230 TRM P30 (JP)"
+
+msgid "Maybach_HL_230_TRM_P30_JT"
+msgstr "Maybach HL 230 TRM P30 (JT)"
+
+msgid "Maybach_HL_230_TRM_P30_JT_short"
+msgstr ""
+"Maybach\n"
+"HL 230 TRM P30 (JT)"
 
 msgid "Maybach_HL_230_TRM_P30_SH"
 msgstr "Maybach H 230 TR P50"
@@ -3775,6 +3827,12 @@ msgstr "Maybach HL 98"
 
 msgid "Maybach_NL38TR"
 msgstr "Maybach HL 38 TR"
+
+msgid "Maybach_Neues_Projekt_J"
+msgstr "Maybach Neues Projekt (J)"
+
+msgid "Maybach_Neues_Projekt_J_short"
+msgstr "Maybach Neues Projekt (J)"
 
 msgid "Meadows_ESTL"
 msgstr "Meadows E.S.T.L."
@@ -4642,29 +4700,6 @@ msgstr "Somua S40"
 msgid "Somuaturm"
 msgstr "Pz.Kpfw. S35 739 (f)"
 
-msgid "StuGIII_0"
-msgstr "StuG III Ausf. G"
-
-msgid "StuGIII_Ausf_1940"
-msgstr "StuG III Ausf. F"
-
-msgid "StuGIII_Ausf_1943"
-msgstr "StuG III Ausf. G"
-
-msgid "StuG_40_AusfG"
-msgstr "StuG III Ausf. G"
-
-msgid "StuG_40_AusfG_descr"
-msgstr ""
-"Боевой путь этой машины начался во Франции в 1940 году. Выпускалась на базе "
-"танка Pz. III в различных модификациях до 1945 года. К 1944 году на счету "
-"9346 этих самоходных установок было около 20 000 подбитых танков. Некоторые "
-"машины находились в эксплуатации до 1967 года и даже приняли участие в "
-"Шестидневной войне на стороне некоторых стран Арабского мира против Израиля."
-
-msgid "StuG_40_AusfG_short"
-msgstr "StuG III G"
-
 msgid "Sturer_Emil"
 msgstr "Sturer Emil"
 
@@ -4804,6 +4839,9 @@ msgid "Turret_1_G04_PzVI_Tiger_IA_short"
 msgstr ""
 "Pz.Kpfw. Tiger\n"
 "Ausf. E"
+
+msgid "Turret_1_G05_StuG_40_AusfG"
+msgstr "StuG III Ausf. G"
 
 msgid "Turret_1_G06_PzII"
 msgstr "Pz.Kpfw. II Ausf. b"
@@ -5041,6 +5079,18 @@ msgstr "Kanonenjagdpanzer 2"
 msgid "Turret_1_G179_Straussler_V4"
 msgstr "Straussler V–4/40"
 
+msgid "Turret_1_G17_JagdPzIV"
+msgstr "Jagdpanzer IV"
+
+msgid "Turret_1_G18_JagdPanther"
+msgstr "Jagdpanther"
+
+msgid "Turret_1_G37_Ferdinand"
+msgstr "Ferdinand"
+
+msgid "Turret_1_G44_JagdTiger"
+msgstr "Jagdtiger"
+
 msgid "Turret_1_G55_E-75"
 msgstr "E 75 Ausf. A"
 
@@ -5049,6 +5099,9 @@ msgstr "VK 45.02 (P) Ausf. B"
 
 msgid "Turret_1_G58_VK4502P_short"
 msgstr "VK 45.02 (P) Ausf. B"
+
+msgid "Turret_1_G72_JagdPz_E100"
+msgstr "Jagdpanzer E 100"
 
 msgid "Turret_1_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -5082,9 +5135,6 @@ msgstr "G.W. Tiger"
 
 msgid "Turret_1_JagdPantherII"
 msgstr "Jagdpanther II"
-
-msgid "Turret_1_JagdPz_E100"
-msgstr "Jagdpanzer E 100"
 
 msgid "Turret_1_JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
@@ -5754,6 +5804,12 @@ msgstr "Gr 19"
 msgid "_105mm_Gr_39H1H_SH"
 msgstr "Gr 39H1H"
 
+msgid "_105mm_Gr_39_H1_A_A"
+msgstr "Gr. 39 H1/A (A)"
+
+msgid "_105mm_Gr_39_H1_A_B"
+msgstr "Gr. 39 H1/A (B)"
+
 msgid "_105mm_HE_DM11"
 msgstr "DM11"
 
@@ -5857,17 +5913,26 @@ msgstr "Pzgr ver. 40"
 msgid "_105mm_Pzgr.41L1_SH"
 msgstr "Pzgr 41 L1"
 
+msgid "_105mm_Pzgr_39L_JP"
+msgstr "Pzgr. 39L (JP)"
+
 msgid "_105mm_Pzgr_39_45"
 msgstr "Pzgr. 39/45"
 
 msgid "_105mm_Pzgr_39_E"
 msgstr "Pzgr. 39 E"
 
+msgid "_105mm_Pzgr_39_K_B"
+msgstr "Pzgr. 39 K (B)"
+
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr. 40/45"
 
 msgid "_105mm_Pzgr_40_E"
 msgstr "Pzgr. 40 E"
+
+msgid "_105mm_Pzgr_40_JP"
+msgstr "Pzgr. 40 (JP)"
 
 msgid "_105mm_RH_Gun"
 msgstr "10,5 cm RH GUN"
@@ -5899,6 +5964,12 @@ msgstr "Sprgr. 45"
 msgid "_105mm_Sprgr_E"
 msgstr "Sprgr. E"
 
+msgid "_105mm_Sprgr_K_B"
+msgstr "Sprgr. K (B)"
+
+msgid "_105mm_Sprgr_L_JP"
+msgstr "Sprgr. L (JP)"
+
 msgid "_105mm_StuH42_L28"
 msgstr "10,5 cm Stu.H. 42 L/28"
 
@@ -5925,6 +5996,12 @@ msgstr "10WSc P"
 
 msgid "_10WSc_WT"
 msgstr "10WSc A"
+
+msgid "_10_5_cm_Pak_L_52_JP"
+msgstr "10,5 cm Pak L/52 (JP)"
+
+msgid "_10_5_cm_Stu_H_42_L_28_B"
+msgstr "10,5 cm Stu.H. 42 L/28 (B)"
 
 msgid "_110mm_MGK"
 msgstr "11 cm Mittelgeschw.-Kanone"
@@ -5962,13 +6039,16 @@ msgstr "DM14"
 msgid "_120mm_Delta_1965"
 msgstr "120mm Delta 1965"
 
+msgid "_120mm_HEATK"
+msgstr "HEATK"
+
 msgid "_120mm_HEAT_DM12_MZ"
 msgstr "DM12 MZ"
 
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
 
-msgid "_120mm_Kan_L60"
+msgid "_120mm_Kan_L_60"
 msgstr "12 cm Kan L/60"
 
 msgid "_120mm_M820"
@@ -5979,9 +6059,6 @@ msgstr "M820K"
 
 msgid "_120mm_M820_HEAT"
 msgstr "M820 HEAT"
-
-msgid "_120mm_M820_HEATK"
-msgstr "HEATK"
 
 msgid "_120mm_M827"
 msgstr "M827"
@@ -6142,11 +6219,29 @@ msgstr "Pzgr 43P"
 msgid "_128mm_PzGr44M_SH"
 msgstr "Pzgr 44M"
 
+msgid "_128mm_Pzgr_39L_JT"
+msgstr "Pzgr. 39L (JT)"
+
 msgid "_128mm_Pzgr_39_E"
 msgstr "Pzgr. 39 E"
 
+msgid "_128mm_Pzgr_39_F"
+msgstr "Pzgr. 39 (F)"
+
+msgid "_128mm_Pzgr_39_JT"
+msgstr "Pzgr. 39 (JT)"
+
 msgid "_128mm_Pzgr_40_E"
 msgstr "Pzgr. 40 E"
+
+msgid "_128mm_Pzgr_40_F"
+msgstr "Pzgr. 40 (F)"
+
+msgid "_128mm_Pzgr_40_JT"
+msgstr "Pzgr. 40 (JT)"
+
+msgid "_128mm_Pzgr_43_JT"
+msgstr "Pzgr. 43 (JT)"
 
 msgid "_128mm_Pzgr_N4"
 msgstr "Pzgr. Nr. 4"
@@ -6181,8 +6276,23 @@ msgstr "Sprgr 19P"
 msgid "_128mm_Sprgr_18_E"
 msgstr "Sprgr. 18 E"
 
+msgid "_128mm_Sprgr_18_F"
+msgstr "Sprgr. 18 (F)"
+
+msgid "_128mm_Sprgr_18_JT"
+msgstr "Sprgr. 18 (JT)"
+
+msgid "_128mm_Sprgr_19_JT"
+msgstr "Sprgr. 19 (JT)"
+
 msgid "_128mm_Sprgr_N9"
 msgstr "Sprgr. Nr. 9"
+
+msgid "_12_8_cm_Pak_44_L_55_F"
+msgstr "12,8 cm Pak 44 L/55 (F)"
+
+msgid "_12_8_cm_Pak_44_L_55_JT"
+msgstr "12,8 cm Pak 44 L/55 (JT)"
 
 msgid "_150mmGr_39H1A"
 msgstr "Gr 39 H1A"
@@ -6357,6 +6467,12 @@ msgstr "Gr. 18"
 
 msgid "_2x_Hanomag_Boxer"
 msgstr "2x Hanomag Boxer"
+
+msgid "_2x_Porsche_Typ_100_1_F"
+msgstr "2x Porsche Typ 100/1 (F)"
+
+msgid "_2x_Porsche_Typ_100_3_F"
+msgstr "2x Porsche Typ 100/3 (F)"
 
 msgid "_30mm_M"
 msgstr "Spgr. Patr. 103 M"
@@ -6709,8 +6825,23 @@ msgstr "Pzgr 39 L"
 msgid "_75mm_Pzgr39_KW_Ir"
 msgstr "Pzgr.Patr 39"
 
+msgid "_75mm_Pzgr_39L_G"
+msgstr "Pzgr. 39L (G)"
+
+msgid "_75mm_Pzgr_39L_IV"
+msgstr "Pzgr. 39L (IV)"
+
 msgid "_75mm_Pzgr_39_Ausf_H"
 msgstr "Pzgr. 39 Ausf. H"
+
+msgid "_75mm_Pzgr_39_B"
+msgstr "Pzgr. 39 (B)"
+
+msgid "_75mm_Pzgr_39_E"
+msgstr "Pzgr. 39 (E)"
+
+msgid "_75mm_Pzgr_39_G"
+msgstr "Pzgr. 39 (G)"
 
 msgid "_75mm_Pzgr_39_T_3001"
 msgstr "Pzgr. 39 T 3001"
@@ -6718,8 +6849,23 @@ msgstr "Pzgr. 39 T 3001"
 msgid "_75mm_Pzgr_39_Typ_100"
 msgstr "Pzgr. 39 Typ 100"
 
+msgid "_75mm_Pzgr_40L_G"
+msgstr "Pzgr. 40L (G)"
+
+msgid "_75mm_Pzgr_40L_IV"
+msgstr "Pzgr. 40L (IV)"
+
 msgid "_75mm_Pzgr_40_Ausf_H"
 msgstr "Pzgr. 40 Ausf. H"
+
+msgid "_75mm_Pzgr_40_B"
+msgstr "Pzgr. 40 (B)"
+
+msgid "_75mm_Pzgr_40_E"
+msgstr "Pzgr. 40 (E)"
+
+msgid "_75mm_Pzgr_40_G"
+msgstr "Pzgr. 40 (G)"
 
 msgid "_75mm_Pzgr_40_T_3001"
 msgstr "Pzgr. 40 T 3001"
@@ -6742,8 +6888,23 @@ msgstr "Sprgr 18 L"
 msgid "_75mm_Sprg.18_KW_Ir"
 msgstr "Sprgr.Patr 18"
 
+msgid "_75mm_Sprg_18_B"
+msgstr "Sprgr. 18 (B)"
+
+msgid "_75mm_Sprgr_18L_G"
+msgstr "Sprgr. 18L (G)"
+
+msgid "_75mm_Sprgr_18L_IV"
+msgstr "Sprgr. 18L (IV)"
+
 msgid "_75mm_Sprgr_18_Ausf_H"
 msgstr "Sprgr. 18 Ausf. H"
+
+msgid "_75mm_Sprgr_18_E"
+msgstr "Sprgr. 18 (E)"
+
+msgid "_75mm_Sprgr_18_G"
+msgstr "Sprgr. 18 (G)"
 
 msgid "_75mm_Sprgr_18_T_3001"
 msgstr "Sprgr. 18 T 3001"
@@ -6780,6 +6941,31 @@ msgstr "Pzgr 39 (r)"
 
 msgid "_76mm_Sprg.18r"
 msgstr "Sprgr 18 (r)"
+
+msgid "_7_5_cm_Pak_39_L_48_B"
+msgstr "7,5 cm Pak 39 L/48 (B)"
+
+msgid "_7_5_cm_Pak_39_L_48_G"
+msgstr "7,5 cm Pak 39 L/48 (G)"
+
+msgid "_7_5_cm_Pak_39_L_48_G_short"
+msgstr ""
+"7,5 cm Pak 39\n"
+"L/48 (G)"
+
+msgid "_7_5_cm_Pak_42_L_70_G"
+msgstr "7,5 cm Pak 42 L/70 (G)"
+
+msgid "_7_5_cm_Pak_42_L_70_G_short"
+msgstr ""
+"7,5 cm Pak 42\n"
+"L/70 (G)"
+
+msgid "_7_5_cm_Pak_42_L_70_IV"
+msgstr "7,5 cm Pak 42 L/70 (IV)"
+
+msgid "_7_5_cm_Stu_K_40_L_43_B"
+msgstr "7,5 cm Stu.K. 40 L/43 (B)"
 
 msgid "_88mm_Flak_37_L56"
 msgstr "8,8 cm Flak 37 L/56"
@@ -6886,11 +7072,20 @@ msgstr "Pzgr 40/43K"
 msgid "_88mm_Pzgr_39_43A"
 msgstr "Pzgr 39/43A"
 
+msgid "_88mm_Pzgr_39_43_F"
+msgstr "Pzgr. 39/43 (F)"
+
+msgid "_88mm_Pzgr_39_43_JP"
+msgstr "Pzgr. 39/43 (JP)"
+
 msgid "_88mm_Pzgr_39_43_Typ_101"
 msgstr "Pzgr. 39/43 Typ 101"
 
 msgid "_88mm_Pzgr_39_Ausf_E"
 msgstr "Pzgr. 39 Ausf. E"
+
+msgid "_88mm_Pzgr_39_IV"
+msgstr "Pzgr. 39 (IV)"
 
 msgid "_88mm_Pzgr_39_Typ_100"
 msgstr "Pzgr. 39 Typ 100"
@@ -6898,11 +7093,20 @@ msgstr "Pzgr. 39 Typ 100"
 msgid "_88mm_Pzgr_39_Typ_101"
 msgstr "Pzgr. 39 Typ 101"
 
+msgid "_88mm_Pzgr_40_43_F"
+msgstr "Pzgr. 40/43 (F)"
+
+msgid "_88mm_Pzgr_40_43_JP"
+msgstr "Pzgr. 40/43 (JP)"
+
 msgid "_88mm_Pzgr_40_43_Typ_101"
 msgstr "Pzgr. 40/43 Typ 101"
 
 msgid "_88mm_Pzgr_40_Ausf_E"
 msgstr "Pzgr. 40 Ausf. E"
+
+msgid "_88mm_Pzgr_40_IV"
+msgstr "Pzgr. 40 (IV)"
 
 msgid "_88mm_Pzgr_40_Typ_100"
 msgstr "Pzgr. 40 Typ 100"
@@ -6934,14 +7138,32 @@ msgstr "Sprgr. Flak 41"
 msgid "_88mm_Sprgr_18_Ausf_E"
 msgstr "Sprgr. 18 Ausf. E"
 
+msgid "_88mm_Sprgr_18_IV"
+msgstr "Sprgr. 18 (IV)"
+
 msgid "_88mm_Sprgr_18_Typ_100"
 msgstr "Sprgr. 18 Typ 100"
 
 msgid "_88mm_Sprgr_18_Typ_101"
 msgstr "Sprgr. 18 Typ 101"
 
+msgid "_88mm_Sprgr_43_F"
+msgstr "Sprgr. 43 (F)"
+
+msgid "_88mm_Sprgr_43_JP"
+msgstr "Sprgr. 43 (JP)"
+
 msgid "_88mm_Sprgr_43_Typ_101"
 msgstr "Sprgr. 43 Typ 101"
+
+msgid "_8_8_cm_Pak_43_L_71_F"
+msgstr "8,8 cm Pak 43 L/71 (F)"
+
+msgid "_8_8_cm_Pak_43_L_71_JP"
+msgstr "8,8 cm Pak 43 L/71 (JP)"
+
+msgid "_8_8_cm_Pak_L_56_IV"
+msgstr "8,8 cm Pak L/56 (IV)"
 
 msgid "_90_76mm_US_Kanone_M_32"
 msgstr "90/76 mm US-Kanone M 32"

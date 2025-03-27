@@ -21,11 +21,11 @@ package net.wg.gui.battle.random.views.teamBasesPanel
       public static const BITMAP_SRC_CAPTURE_LINE:String = "CaptureBaseLine_";
        
       
-      private var _colorType:String = "";
+      protected var _colorType:String = "";
       
-      private var _bitmapSrcPrefix:String = "";
+      protected var _bitmapSrcPrefix:String = "";
       
-      private var _fillTarget:Sprite = null;
+      protected var _fillTarget:Sprite = null;
       
       private var _disposed:Boolean = false;
       
@@ -71,7 +71,7 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          this._fillTarget.graphics.clear();
       }
       
-      private function drawGraphic() : void
+      protected function drawGraphic() : void
       {
          if(this._bitmapSrcPrefix == Values.EMPTY_STR || this._colorType == Values.EMPTY_STR)
          {

@@ -1,3 +1,4 @@
+from functools import partial
 import typing
 from account_helpers.settings_core.settings_constants import SOUND
 import BigWorld, SoundGroups, WWISE
@@ -11,7 +12,8 @@ _UPDATE_PERIOD = 0.1
 
 class VoiceoverManager(IVoiceoverManager):
     __slots__ = ('onSubtitleShow', 'onSubtitleHide', '_currentSound', '_currentSubtitle',
-                 '_callbackId', '_currentCtx', 'onStarted', 'onStopped')
+                 '_callbackId', '_currentCtx', '_delay', '_onEndCallbackId', 'onStarted',
+                 'onStopped')
 
     def __init__(self):
         super(VoiceoverManager, self).__init__()
@@ -23,6 +25,8 @@ class VoiceoverManager(IVoiceoverManager):
         self._currentSubtitle = ''
         self._callbackId = None
         self._currentCtx = None
+        self._delay = None
+        self._onEndCallbackId = None
         return
 
     def init(self):
@@ -56,9 +60,16 @@ class VoiceoverManager(IVoiceoverManager):
         if self._callbackId is not None:
             BigWorld.cancelCallback(self._callbackId)
             self._callbackId = None
+        if self._onEndCallbackId is not None:
+            BigWorld.cancelCallback(self._onEndCallbackId)
+            self._onEndCallbackId = None
         return
 
-    def playVoiceover(self, voiceoverId, ctx=None):
+    def playVoiceover(self, voiceoverId, ctx=None, delay=None):
+        self._delay = delay
+        if self._onEndCallbackId is not None:
+            BigWorld.cancelCallback(self._onEndCallbackId)
+            self._onEndCallbackId = None
         if self.isPlaying:
             self.stopVoiceover()
         self._currentSound = SoundGroups.g_instance.getSound2D(voiceoverId) if voiceoverId else None
@@ -93,9 +104,18 @@ class VoiceoverManager(IVoiceoverManager):
             self._callbackId = None
             onEnd = self._currentCtx.get('onEnd') if self._currentCtx else None
             self.stopVoiceover()
-            if callable(onEnd):
-                onEnd()
+            if self._delay is not None:
+                self._onEndCallbackId = BigWorld.callback(self._delay, partial(self._onEndEvent, onEnd))
+            else:
+                self._onEndEvent(onEnd)
             return
+
+    def _onEndEvent(self, onEnd):
+        self._delay = None
+        self._onEndCallbackId = None
+        if callable(onEnd):
+            onEnd()
+        return
 
     def _soundMarkerHandler(self, marker):
         if not AccountSettings.getSettings(SOUND.SUBTITLES):

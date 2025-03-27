@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.691546 -0.004320 -3.608650</min>
+		<max>1.691548 1.189181 3.752475</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F130_Sentinelle/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/french/F130_Sentinelle/crash/lod2/Chassis</nodefullVisual>
+</root>

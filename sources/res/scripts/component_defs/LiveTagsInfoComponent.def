@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<liveTags>
+			<Type>
+				ARRAY
+				<of>LIVE_TAG_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</liveTags>
+	</Properties>
+	<ofEntity>
+		<TeamInfo/>
+	</ofEntity>
+	<DefaultKeyName>liveTagsInfoComponent</DefaultKeyName>
+</root>

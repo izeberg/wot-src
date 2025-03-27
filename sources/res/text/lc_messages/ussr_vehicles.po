@@ -243,9 +243,6 @@ msgstr "ЛТП"
 msgid "Chassis_Object263B"
 msgstr "Объект 263Б"
 
-msgid "Chassis_Object268"
-msgstr "Объект 268"
-
 msgid "Chassis_Object416"
 msgstr "Объект 416 обр. 1952 г."
 
@@ -267,17 +264,23 @@ msgstr "Объект 261"
 msgid "Chassis_Object_430B"
 msgstr "Объект 430Б"
 
-msgid "Chassis_Object_704"
-msgstr "Объект 704"
-
-msgid "Chassis_Object_704_2"
-msgstr "Объект 704М"
-
 msgid "Chassis_Object_907"
 msgstr "Объект 907"
 
 msgid "Chassis_Object_907A"
 msgstr "Объект 907A"
+
+msgid "Chassis_R02_SU-85"
+msgstr "СУ-85-II"
+
+msgid "Chassis_R02_SU-85_2"
+msgstr "СУ-85"
+
+msgid "Chassis_R02_SU-85_2_short"
+msgstr "СУ-85"
+
+msgid "Chassis_R02_SU-85_short"
+msgstr "СУ-85-II"
 
 msgid "Chassis_R100_SU122A"
 msgstr "СУ-122А"
@@ -543,6 +546,12 @@ msgstr "ИСУ-152К"
 msgid "Chassis_R178_Object_780"
 msgstr "Объект 780"
 
+msgid "Chassis_R17_SU-100"
+msgstr "СУ-100"
+
+msgid "Chassis_R17_SU-100_2"
+msgstr "СУ-100-60"
+
 msgid "Chassis_R180_Object_274_A"
 msgstr "Объект 274а"
 
@@ -566,6 +575,12 @@ msgstr "Объект 259A"
 
 msgid "Chassis_R188_Object_259A_CN"
 msgstr "Ударный"
+
+msgid "Chassis_R18_SU-152"
+msgstr "СУ-152"
+
+msgid "Chassis_R18_SU-152_2"
+msgstr "СУ-152М"
 
 msgid "Chassis_R191_Object_283"
 msgstr "Об. 283"
@@ -624,8 +639,44 @@ msgstr "Объект 265Т"
 msgid "Chassis_R225_SU_100i"
 msgstr "СУ-100И"
 
+msgid "Chassis_R24_SU-76"
+msgstr "СУ-76"
+
+msgid "Chassis_R24_SU-76_2"
+msgstr "СУ-76М"
+
+msgid "Chassis_R42_T-60"
+msgstr "Т-60"
+
+msgid "Chassis_R42_T-60_2"
+msgstr "Т-60 усиленная"
+
+msgid "Chassis_R43_T-70"
+msgstr "Т-70"
+
+msgid "Chassis_R43_T-70_2"
+msgstr "Т-70 усиленная"
+
+msgid "Chassis_R47_ISU-152"
+msgstr "ИСУ-152"
+
+msgid "Chassis_R47_ISU-152_2"
+msgstr "ИСУ-152М"
+
+msgid "Chassis_R53_Object_704"
+msgstr "Объект 704"
+
+msgid "Chassis_R53_Object_704_2"
+msgstr "Объект 704М"
+
 msgid "Chassis_R71_IS_2B"
 msgstr "ИС-2М"
+
+msgid "Chassis_R88_Object268"
+msgstr "Объект 268"
+
+msgid "Chassis_R88_Object268_7x7"
+msgstr "Объект 268"
 
 msgid "Chassis_R93_Object263"
 msgstr "Объект 263"
@@ -695,18 +746,6 @@ msgstr "Т-54 обр. 1946 г."
 
 msgid "Chassis_T-54_3"
 msgstr "Т-54 обр. 1949 г."
-
-msgid "Chassis_T-60"
-msgstr "Т-60"
-
-msgid "Chassis_T-60_2"
-msgstr "Т-60 усиленная"
-
-msgid "Chassis_T-70"
-msgstr "Т-70"
-
-msgid "Chassis_T-70_2"
-msgstr "Т-70 усиленная"
 
 msgid "Chassis_T150"
 msgstr "Т-150"
@@ -816,6 +855,12 @@ msgstr ""
 
 msgid "GAZ-M1"
 msgstr "ГАЗ-М1"
+
+msgid "GAZ_203_SU_76"
+msgstr "ГАЗ-203 (СУ-76)"
+
+msgid "GAZ_203_T_70"
+msgstr "ГАЗ-203 (Т-70)"
 
 msgid "GAZ_O"
 msgstr "ГАЗ-О"
@@ -967,21 +1012,6 @@ msgstr ""
 "Разработка танка началась в 1949 году. Был принят на вооружение в 1953 году "
 "под обозначением Т-10. Позже был разработан ряд вариантов танка, самым "
 "массовым из которых являлся Т-10М. Всего было выпущено не менее 2500 машин."
-
-msgid "ISU-152"
-msgstr "ИСУ-152"
-
-msgid "ISU-152_01"
-msgstr "ИСУ-152"
-
-msgid "ISU-152_descr"
-msgstr ""
-"Разработана на базе танка ИС. Создавалась для замены СУ-152 в связи с "
-"прекращением производства КВ-1с. С ноября 1943 по июнь 1945 года было "
-"изготовлено 4635 машин."
-
-msgid "ISU-152_mod_1945"
-msgstr "ИСУ-152М"
 
 msgid "IS_descr"
 msgstr ""
@@ -1302,6 +1332,12 @@ msgstr "М-50ТИ"
 msgid "M_50TS"
 msgstr "М-50ТС"
 
+msgid "M_80_SU_76"
+msgstr "М-80 (СУ-76)"
+
+msgid "M_80_T_70"
+msgstr "М-80 (Т-70)"
+
 msgid "M_850"
 msgstr "М-850"
 
@@ -1356,17 +1392,6 @@ msgstr ""
 
 msgid "Object263B_short"
 msgstr "Об. 263Б"
-
-msgid "Object268"
-msgstr "Объект 268"
-
-msgid "Object268_descr"
-msgstr ""
-"Работы над машиной были начаты летом 1952 года. Установка разрабатывалась на шасси тяжёлого танка \n"
-"Т-10. Работы проводились ОКБТ ЛКЗ под руководством Ж. Я. Котина. Опытный образец был изготовлен в 1956 году. Машина прошла испытания, но серийно не выпускалась."
-
-msgid "Object268_short"
-msgstr "Об. 268"
 
 msgid "Object416"
 msgstr "Объект 416"
@@ -1473,6 +1498,16 @@ msgstr "Машина Наблюдателя"
 
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6-pdr Mk. V"
+
+msgid "R02_SU-85"
+msgstr "СУ-85"
+
+msgid "R02_SU-85_descr"
+msgstr ""
+"Разработана на базе среднего танка Т-34 и штурмового орудия СУ-122. "
+"Выпускалась с августа 1943 по июль 1944 года. 85-мм пушка Д-5С позволяла "
+"СУ-85 эффективно поражать средние танки противника на дистанциях более "
+"километра, а на меньших дистанциях пробивать лобовую броню тяжёлых танков."
 
 msgid "R104_Object_430_II"
 msgstr "Объект 430 Вариант II"
@@ -3034,6 +3069,16 @@ msgstr "Об. 780"
 msgid "R178_Object_780_short_special"
 msgstr "Универсальность, привычный игровой процесс"
 
+msgid "R17_SU-100"
+msgstr "СУ-100"
+
+msgid "R17_SU-100_descr"
+msgstr ""
+"ПТ-САУ на базе Т-34-85 и СУ-85. Всего с сентября 1944 по июнь 1945 было "
+"выпущено 2495 машин. С принятием на вооружение данной самоходки РККА "
+"получила высокоэффективное противотанковое средство с исключительно мощным "
+"вооружением, способное противостоять любым образцам немецкой бронетехники."
+
 msgid "R180_Object_274_A"
 msgstr "Объект 274а"
 
@@ -3241,6 +3286,19 @@ msgstr "Об. 259A"
 
 msgid "R188_Object_259A_short_special"
 msgstr "Мощное орудие, рациональное бронирование"
+
+msgid "R18_SU-152"
+msgstr "СУ-152"
+
+msgid "R18_SU-152_descr"
+msgstr ""
+"Разработка ПТ-САУ на базе тяжёлого танка КВ-1С началась 4 января 1943 года. "
+"Машина получила обозначение КВ-14 (Объект 236). В начале февраля 1943 года "
+"опытный образец проходил полигонные испытания и был принят на вооружение 14 "
+"февраля 1943 года. В апреле КВ-14 был переименован в СУ-152. До декабря 1943"
+" года было выпущено 670 машин данного типа. Благодаря способности успешно "
+"противостоять немецким танкам Tiger I и Panther, СУ-152 получила "
+"неофициальное название «Зверобой»."
 
 msgid "R191_Object_283"
 msgstr "Объект 283"
@@ -3754,6 +3812,15 @@ msgstr "СУ-100И"
 msgid "R225_SU_100i_short_special"
 msgstr "Отличная бронепробиваемость, достойный разовый урон"
 
+msgid "R24_SU-76"
+msgstr "СУ-76М"
+
+msgid "R24_SU-76_descr"
+msgstr ""
+"Лёгкая боевая машина с 76-мм пушкой, самая массовая советская САУ. Несмотря "
+"на слабую бронезащиту и слабое вооружение, использовалась для сопровождения "
+"пехоты и кавалерии."
+
 msgid "R34_BT-SV_long_special"
 msgstr ""
 "Советский лёгкий танк III уровня с необычной формой корпуса. Бронелисты "
@@ -3772,6 +3839,35 @@ msgstr ""
 
 msgid "R38_KV-220_beta_short_special"
 msgstr "Отличное бронирование, хорошие УВН, большой запас прочности"
+
+msgid "R42_T-60"
+msgstr "Т-60"
+
+msgid "R42_T-60_descr"
+msgstr ""
+"Разработан в августе 1941 года КБ завода №37 под руководством Н.А. Астрова. "
+"В сентябре того же года был принят на вооружение. За время серийного выпуска"
+" построено 5920 танков. Серийное производство продолжалось до февраля 1943 "
+"года, однако танк состоял на вооружении до конца войны."
+
+msgid "R43_T-70"
+msgstr "Т-70"
+
+msgid "R43_T-70_descr"
+msgstr ""
+"Разработан в октябре — ноябре 1941 года в КБ Горьковского автомобильного "
+"завода под руководством Н. А. Астрова. Принят на вооружение в январе 1942 "
+"года. Серийное производство было прекращено в октябре 1943 года. Всего был "
+"выпущен 8231 танк. Применялся до конца войны."
+
+msgid "R47_ISU-152"
+msgstr "ИСУ-152"
+
+msgid "R47_ISU-152_descr"
+msgstr ""
+"Разработана на базе танка ИС. Создавалась для замены СУ-152 в связи с "
+"прекращением производства КВ-1с. С ноября 1943 по июнь 1945 года было "
+"изготовлено 4635 машин."
 
 msgid "R50_SU76I_long_special"
 msgstr ""
@@ -3865,6 +3961,28 @@ msgstr ""
 
 msgid "R86_LTP_short_special"
 msgstr "Хорошая манёвренность, неплохой обзор, скорострельное орудие"
+
+msgid "R88_Object268"
+msgstr "Объект 268"
+
+msgid "R88_Object268_7x7"
+msgstr "Объект 268 7x7"
+
+msgid "R88_Object268_7x7_descr"
+msgstr ""
+"Работы над машиной были начаты летом 1952 года. Установка разрабатывалась на шасси тяжёлого танка \n"
+"Т-10. Работы проводились ОКБТ ЛКЗ под руководством Ж. Я. Котина. Опытный образец был изготовлен в 1956 году. Машина прошла испытания, но серийно не выпускалась."
+
+msgid "R88_Object268_7x7_short"
+msgstr "Об. 268 7x7"
+
+msgid "R88_Object268_descr"
+msgstr ""
+"Работы над машиной были начаты летом 1952 года. Установка разрабатывалась на шасси тяжёлого танка \n"
+"Т-10. Работы проводились ОКБТ ЛКЗ под руководством Ж. Я. Котина. Опытный образец был изготовлен в 1956 году. Машина прошла испытания, но серийно не выпускалась."
+
+msgid "R88_Object268_short"
+msgstr "Об. 268"
 
 msgid "R93_Object263"
 msgstr "Объект 263"
@@ -3987,22 +4105,6 @@ msgstr ""
 "конструкцией трансмиссии и ходовой части. Башня танка была разработана с "
 "нуля. Существовал только в эскизах."
 
-msgid "SU-100"
-msgstr "СУ-100"
-
-msgid "SU-100_descr"
-msgstr ""
-"ПТ-САУ на базе Т-34-85 и СУ-85. Всего с сентября 1944 по июнь 1945 было "
-"выпущено 2495 машин. С принятием на вооружение данной самоходки РККА "
-"получила высокоэффективное противотанковое средство с исключительно мощным "
-"вооружением, способное противостоять любым образцам немецкой бронетехники."
-
-msgid "SU-100_mod_1944"
-msgstr "СУ-100"
-
-msgid "SU-100_mod_1945"
-msgstr "СУ-100-60"
-
 msgid "SU-101"
 msgstr "СУ-101"
 
@@ -4030,28 +4132,6 @@ msgid "SU-14_descr"
 msgstr ""
 "САУ «триплекса ТАОН». Разрабатывалась с 1932 по 1937 год. Серийно не "
 "выпускалась. Два прототипа были модернизированы в 1940 году."
-
-msgid "SU-152"
-msgstr "СУ-152"
-
-msgid "SU-152_01"
-msgstr "СУ-152"
-
-msgid "SU-152_descr"
-msgstr ""
-"Разработка ПТ-САУ на базе тяжёлого танка КВ-1С началась 4 января 1943 года. "
-"Машина получила обозначение КВ-14 (Объект 236). В начале февраля 1943 года "
-"опытный образец проходил полигонные испытания и был принят на вооружение 14 "
-"февраля 1943 года. В апреле КВ-14 был переименован в СУ-152. До декабря 1943"
-" года было выпущено 670 машин данного типа. Благодаря способности успешно "
-"противостоять немецким танкам Tiger I и Panther, СУ-152 получила "
-"неофициальное название «Зверобой»."
-
-msgid "SU-152_mod_1943"
-msgstr "СУ-152"
-
-msgid "SU-152_mod_1944"
-msgstr "СУ-152М"
 
 msgid "SU-18"
 msgstr "СУ-18"
@@ -4093,54 +4173,14 @@ msgstr ""
 msgid "SU-5bis"
 msgstr "СУ-5 Бис"
 
-msgid "SU-76"
-msgstr "СУ-76М"
-
-msgid "SU-76_1"
-msgstr "СУ-76"
-
-msgid "SU-76_descr"
-msgstr ""
-"Лёгкая боевая машина с 76-мм пушкой, самая массовая советская САУ. Несмотря "
-"на слабую бронезащиту и слабое вооружение, использовалась для сопровождения "
-"пехоты и кавалерии."
-
-msgid "SU-76bis"
-msgstr "СУ-76М"
-
 msgid "SU-8"
 msgstr "СУ-8"
-
-msgid "SU-85"
-msgstr "СУ-85"
 
 msgid "SU-85A"
 msgstr "СУ-85Б"
 
 msgid "SU-85A1"
 msgstr "СУ-85А"
-
-msgid "SU-85_01"
-msgstr "СУ-85"
-
-msgid "SU-85_descr"
-msgstr ""
-"Разработана на базе среднего танка Т-34 и штурмового орудия СУ-122. "
-"Выпускалась с августа 1943 по июль 1944 года. 85-мм пушка Д-5С позволяла "
-"СУ-85 эффективно поражать средние танки противника на дистанциях более "
-"километра, а на меньших дистанциях пробивать лобовую броню тяжёлых танков."
-
-msgid "SU-85_mod_1942"
-msgstr "СУ-85-II"
-
-msgid "SU-85_mod_1942_short"
-msgstr "СУ-85-II"
-
-msgid "SU-85_mod_1943"
-msgstr "СУ-85"
-
-msgid "SU-85_mod_1943_short"
-msgstr "СУ-85"
 
 msgid "SU-8Bis"
 msgstr "СУ-8 Бис"
@@ -4529,26 +4569,6 @@ msgstr ""
 "производства было решено отказаться. В 1949 году был начат выпуск новой "
 "модели."
 
-msgid "T-60"
-msgstr "Т-60"
-
-msgid "T-60_descr"
-msgstr ""
-"Разработан в августе 1941 года КБ завода №37 под руководством Н.А. Астрова. "
-"В сентябре того же года был принят на вооружение. За время серийного выпуска"
-" построено 5920 танков. Серийное производство продолжалось до февраля 1943 "
-"года, однако танк состоял на вооружении до конца войны."
-
-msgid "T-70"
-msgstr "Т-70"
-
-msgid "T-70_descr"
-msgstr ""
-"Разработан в октябре — ноябре 1941 года в КБ Горьковского автомобильного "
-"завода под руководством Н. А. Астрова. Принят на вооружение в январе 1942 "
-"года. Серийное производство было прекращено в октябре 1943 года. Всего был "
-"выпущен 8231 танк. Применялся до конца войны."
-
 msgid "T150"
 msgstr "Т-150"
 
@@ -4723,9 +4743,6 @@ msgstr "ЛТП"
 msgid "Turret_1_Object263B"
 msgstr "Объект 263Б"
 
-msgid "Turret_1_Object268"
-msgstr "Объект 268"
-
 msgid "Turret_1_Object416"
 msgstr "Объект 416 обр. 1952 г."
 
@@ -4741,14 +4758,14 @@ msgstr "Объект 261"
 msgid "Turret_1_Object_430B"
 msgstr "Объект 430Б"
 
-msgid "Turret_1_Object_704"
-msgstr "Объект 704"
-
 msgid "Turret_1_Object_907"
 msgstr "Объект 907"
 
 msgid "Turret_1_Object_907A"
 msgstr "Объект 907A"
+
+msgid "Turret_1_R02_SU-85"
+msgstr "СУ-85"
 
 msgid "Turret_1_R100_SU122A"
 msgstr "СУ-122А"
@@ -4972,6 +4989,9 @@ msgstr "ИСУ-152К"
 msgid "Turret_1_R178_Object_780"
 msgstr "Объект 780"
 
+msgid "Turret_1_R17_SU-100"
+msgstr "СУ-100"
+
 msgid "Turret_1_R180_Object_274_A"
 msgstr "Объект 274а"
 
@@ -4995,6 +5015,9 @@ msgstr "Объект 259A"
 
 msgid "Turret_1_R188_Object_259A_CN"
 msgstr "Ударный"
+
+msgid "Turret_1_R18_SU-152"
+msgstr "СУ-152"
 
 msgid "Turret_1_R191_Object_283"
 msgstr "Об. 283"
@@ -5053,8 +5076,29 @@ msgstr "Объект 265Т"
 msgid "Turret_1_R225_SU_100i"
 msgstr "СУ-100И"
 
+msgid "Turret_1_R24_SU-76"
+msgstr "СУ-76М"
+
+msgid "Turret_1_R42_T-60"
+msgstr "Т-40"
+
+msgid "Turret_1_R43_T-70"
+msgstr "Т-70"
+
+msgid "Turret_1_R47_ISU-152"
+msgstr "ИСУ-152"
+
+msgid "Turret_1_R53_Object_704"
+msgstr "Объект 704"
+
 msgid "Turret_1_R71_IS_2B"
 msgstr "ИС-122"
+
+msgid "Turret_1_R88_Object268"
+msgstr "Объект 268"
+
+msgid "Turret_1_R88_Object268_7x7"
+msgstr "Объект 268"
 
 msgid "Turret_1_R93_Object263"
 msgstr "Объект 263"
@@ -5097,12 +5141,6 @@ msgstr "Т-50"
 
 msgid "Turret_1_T-54_2"
 msgstr "Т-54 обр. 1946 г."
-
-msgid "Turret_1_T-60"
-msgstr "Т-40"
-
-msgid "Turret_1_T-70"
-msgstr "Т-70"
 
 msgid "Turret_1_T150"
 msgstr "Т-150-КВ"
@@ -5203,17 +5241,17 @@ msgstr "ИС-3-II поздняя"
 msgid "Turret_2_R174_BT-5"
 msgstr "БТ-7 экранированная"
 
+msgid "Turret_2_R42_T-60"
+msgstr "Т-60"
+
+msgid "Turret_2_R43_T-70"
+msgstr "Т-70М"
+
 msgid "Turret_2_ST_I"
 msgstr "СТ-I"
 
 msgid "Turret_2_T-54_2"
 msgstr "Т-54 обр. 1949 г."
-
-msgid "Turret_2_T-60"
-msgstr "Т-60"
-
-msgid "Turret_2_T-70"
-msgstr "Т-70М"
 
 msgid "Turret_2_T150"
 msgstr "Т-150-220"
@@ -5311,6 +5349,9 @@ msgstr "В-16"
 msgid "V-16FN"
 msgstr "В-16ФН"
 
+msgid "V-16FN_7x7"
+msgstr "В-16ФН"
+
 msgid "V-16M"
 msgstr "В-16М"
 
@@ -5346,6 +5387,9 @@ msgstr "В-2-54"
 
 msgid "V-2-54IS"
 msgstr "В-2-54ИС"
+
+msgid "V-2-54IS_704"
+msgstr "В-2-54ИС (704)"
 
 msgid "V-2-54M_SH"
 msgstr "В-2-54 М2"
@@ -5437,6 +5481,9 @@ msgstr "В-7"
 msgid "V-7C"
 msgstr "В-7С"
 
+msgid "V_11_704"
+msgstr "В-11 (704)"
+
 msgid "V_11_Kirovets_1"
 msgstr "В-11-Кировец-1"
 
@@ -5461,11 +5508,20 @@ msgstr "В-12-6В1"
 msgid "V_12_7"
 msgstr "В-12-7"
 
+msgid "V_2IS_ISU"
+msgstr "В-2ИС (ИСУ)"
+
+msgid "V_2IS_SU"
+msgstr "В-2ИС (СУ)"
+
 msgid "V_2K"
 msgstr "В-2К"
 
 msgid "V_2K_P"
 msgstr "В-2К (р)"
+
+msgid "V_2K_SU"
+msgstr "В-2К (СУ)"
 
 msgid "V_2_10M"
 msgstr "В-2-10М"
@@ -5476,11 +5532,26 @@ msgstr "В-2-34А"
 msgid "V_2_34E"
 msgstr "В-2-34Э"
 
+msgid "V_2_34M_SU_100"
+msgstr "В-2-34М (СУ-100)"
+
 msgid "V_2_34_43"
 msgstr "V-2-34-43"
 
+msgid "V_2_34_SU_100"
+msgstr "В-2-34 (СУ-100)"
+
+msgid "V_2_34_SU_85"
+msgstr "В-2-34 (СУ-85)"
+
+msgid "V_2_54IS_ISU"
+msgstr "В-2-54ИС (ИСУ)"
+
 msgid "V_2_IS_520_Roz"
 msgstr "В-2-ИС ТИТТ"
+
+msgid "V_2_SU_85"
+msgstr "В-2 (СУ-85)"
 
 msgid "V_3BT"
 msgstr "В-3БТ"
@@ -5733,6 +5804,12 @@ msgstr "УБР-412ПИ"
 msgid "_100mm_UBR-412U"
 msgstr "УБР-412У"
 
+msgid "_100mm_UBR_412P_SU_100"
+msgstr "УБР-412П (СУ-100)"
+
+msgid "_100mm_UBR_412_SU_100"
+msgstr "УБР-412 (СУ-100)"
+
 msgid "_100mm_UBR_LM"
 msgstr "УБР (ЛМ)"
 
@@ -5759,6 +5836,9 @@ msgstr "УОФ-412БМ"
 
 msgid "_100mm_UOF_412M"
 msgstr "УОФ-412М"
+
+msgid "_100mm_UOF_412_SU_100"
+msgstr "УОФ-412 (СУ-100)"
 
 msgid "_100mm_ZBK17M"
 msgstr "ЗБК17М"
@@ -6072,6 +6152,15 @@ msgstr "53-БР-2ЕА"
 msgid "_122mm_BR-471D_P"
 msgstr "БР-471ДП"
 
+msgid "_122mm_BR_471DS_SU"
+msgstr "БР-471ДС (СУ)"
+
+msgid "_122mm_BR_471D_SU"
+msgstr "БР-471Д (СУ)"
+
+msgid "_122mm_BR_471D_SU_100"
+msgstr "БР-471Д (СУ-100)"
+
 msgid "_122mm_BR_471M"
 msgstr "БР-471М"
 
@@ -6222,6 +6311,15 @@ msgstr "БР-471ДС"
 msgid "_122mm_UBR-472PBM_SH"
 msgstr "УБР-472ПБМ"
 
+msgid "_122mm_UBR_471S_SU"
+msgstr "УБР-471С (СУ)"
+
+msgid "_122mm_UBR_471_SU"
+msgstr "УБР-471 (СУ)"
+
+msgid "_122mm_UBR_471_SU_100"
+msgstr "УБР-471 (СУ-100)"
+
 msgid "_122mm_UBR_472PM_SH"
 msgstr "УБР-472ПМ"
 
@@ -6248,6 +6346,15 @@ msgstr "УОФ-472"
 
 msgid "_122mm_UOF_471M"
 msgstr "УОФ-471М"
+
+msgid "_122mm_UOF_471S_SU"
+msgstr "УОФ-471С (СУ)"
+
+msgid "_122mm_UOF_471_SU"
+msgstr "УОФ-471 (СУ)"
+
+msgid "_122mm_UOF_471_SU_100"
+msgstr "УОФ-471 (СУ-100)"
 
 msgid "_122mm_UOF_472T"
 msgstr "УОФ-472Т"
@@ -6477,8 +6584,35 @@ msgstr "53-ОФ-500"
 msgid "_152mm_53OF521"
 msgstr "53-ОФ-521"
 
+msgid "_152mm_53_BP_530_ISU"
+msgstr "53-БП-530 (ИСУ)"
+
+msgid "_152mm_53_BP_530_SU"
+msgstr "53-БП-530 (СУ)"
+
+msgid "_152mm_53_BP_540_ISU"
+msgstr "53-БП-540 (ИСУ)"
+
+msgid "_152mm_53_OF_530_ISU"
+msgstr "53-ОФ-530 (ИСУ)"
+
+msgid "_152mm_53_OF_530_SU"
+msgstr "53-ОФ-530 (СУ)"
+
+msgid "_152mm_53_OF_551D_704"
+msgstr "53-ОФ-551Д (704)"
+
+msgid "_152mm_53_OF_551M_268"
+msgstr "53-ХЕ-551М (268)"
+
 msgid "_152mm_53_OF_551O"
 msgstr "53-ОФ-551O"
+
+msgid "_152mm_53_OF_551_704"
+msgstr "53-ОФ-551 (704)"
+
+msgid "_152mm_53_OF_551_ISU"
+msgstr "53-ОФ-551 (ИСУ)"
 
 msgid "_152mm_BL-10"
 msgstr "152 мм БЛ-10"
@@ -6492,6 +6626,9 @@ msgstr "152 мм БР-2"
 msgid "_152mm_D_4S"
 msgstr "152 мм Д-4С"
 
+msgid "_152mm_D_4S_704"
+msgstr "152 мм Д-4С (704)"
+
 msgid "_152mm_M-10"
 msgstr "152 мм М-10"
 
@@ -6499,6 +6636,9 @@ msgid "_152mm_M-10_W"
 msgstr "152 мм М-10"
 
 msgid "_152mm_M64"
+msgstr "152 мм М-64"
+
+msgid "_152mm_M64_7x7"
 msgstr "152 мм М-64"
 
 msgid "_152mm_ML-20C"
@@ -6540,6 +6680,9 @@ msgstr "УБК551МК"
 msgid "_152mm_UBK551O"
 msgstr "УБК551O"
 
+msgid "_152mm_UBK_551M_268"
+msgstr "УБК-551М (268)"
+
 msgid "_152mm_UBR551"
 msgstr "УБР-551"
 
@@ -6554,6 +6697,27 @@ msgstr "УБР551O"
 
 msgid "_152mm_UBR551P"
 msgstr "УБР-551П"
+
+msgid "_152mm_UBR_551D_704"
+msgstr "УБР-551Д (704)"
+
+msgid "_152mm_UBR_551M_268"
+msgstr "УБР-551М (268)"
+
+msgid "_152mm_UBR_551PD_704"
+msgstr "УБР-551ПД (704)"
+
+msgid "_152mm_UBR_551P_704"
+msgstr "УБР-551П (704)"
+
+msgid "_152mm_UBR_551P_ISU"
+msgstr "УБР-551П (ИСУ)"
+
+msgid "_152mm_UBR_551_704"
+msgstr "УБР-551 (704)"
+
+msgid "_152mm_UBR_551_ISU"
+msgstr "УБР-551 (ИСУ)"
 
 msgid "_152mm_howitzer_D-1"
 msgstr "152 мм гаубица Д-1"
@@ -6591,11 +6755,20 @@ msgstr "Г-620"
 msgid "_20mm_BC-20"
 msgstr "БЦ-20"
 
+msgid "_20mm_BC_20_T_60"
+msgstr "БЦ-20 (Т-60)"
+
 msgid "_20mm_TNSH"
 msgstr "20 мм ТНШ"
 
+msgid "_20mm_TNSH_T_60"
+msgstr "20 мм ТНШ (Т-60)"
+
 msgid "_20mm_UBR-20"
 msgstr "УБР-20"
+
+msgid "_20mm_UBR_20_T_60"
+msgstr "УБР-20 (Т-60)"
 
 msgid "_23mm_BC-23"
 msgstr "БЦ-23"
@@ -6666,6 +6839,12 @@ msgstr "УБР-160 бис"
 msgid "_37mm_UBRT1"
 msgstr "УБРТ1"
 
+msgid "_37mm_UBR_160PA_T_60"
+msgstr "УБР-160ПА (Т-60)"
+
+msgid "_37mm_UBR_160_bis_T_60"
+msgstr "УБР-160 бис (Т-60)"
+
 msgid "_37mm_UO160A"
 msgstr "УО-160А"
 
@@ -6675,11 +6854,17 @@ msgstr "УОФ-160"
 msgid "_37mm_UOT1"
 msgstr "УОТ1"
 
+msgid "_37mm_UO_160A_T_60"
+msgstr "УО-160А (Т-60)"
+
 msgid "_37mm_ZiS-19"
 msgstr "37 мм ЗиС-19"
 
 msgid "_37mm_ZiS-19_S"
 msgstr "37 мм ЗиС-19С"
+
+msgid "_37mm_ZiS_19_T_60"
+msgstr "37 мм ЗиС-19 (Т-60)"
 
 msgid "_37mm_automatic_OKB2"
 msgstr "37 мм автомат. ОКБ-2"
@@ -6698,6 +6883,9 @@ msgstr "45 мм 20КМ"
 
 msgid "_45mm_20K_S"
 msgstr "45 мм 20КС"
+
+msgid "_45mm_20K_T_70"
+msgstr "45 мм 20К (Т-70)"
 
 msgid "_45mm_21KMT"
 msgstr "45 мм 21-КМТ"
@@ -6726,6 +6914,18 @@ msgstr "УБР-243СПАУ"
 msgid "_45mm_UBR-243SPU"
 msgstr "УБР-243СПУ"
 
+msgid "_45mm_UBR_240A_T_70"
+msgstr "УБР-240А (Т-70)"
+
+msgid "_45mm_UBR_240PA_T_70"
+msgstr "УБР-240ПА (Т-70)"
+
+msgid "_45mm_UBR_243SPA_T_70"
+msgstr "УБР-243СПА (Т-70)"
+
+msgid "_45mm_UBR_243SP_T_70"
+msgstr "УБР-243СП (Т-70)"
+
 msgid "_45mm_UO-243"
 msgstr "УО-243"
 
@@ -6738,6 +6938,12 @@ msgstr "УОФ-243"
 msgid "_45mm_UOF-243U"
 msgstr "УОФ-243У"
 
+msgid "_45mm_UOF_240A_T_70"
+msgstr "УОФ-240А (Т-70)"
+
+msgid "_45mm_UOF_243_T_70"
+msgstr "УОФ-243 (Т-70)"
+
 msgid "_45mm_VT-42"
 msgstr "45 мм ВТ-42"
 
@@ -6746,6 +6952,9 @@ msgstr "45 мм ВТ-43"
 
 msgid "_45mm_VT-43M"
 msgstr "45 мм ВТ-43М"
+
+msgid "_45mm_VT_42_T_70"
+msgstr "45 мм ВТ-42 (Т-70)"
 
 msgid "_45mm_mod_1932"
 msgstr "45 мм обр. 1932 г."
@@ -6783,11 +6992,20 @@ msgstr "УБР-271Н"
 msgid "_57mm_UBR-271NO"
 msgstr "УБР-271НО"
 
+msgid "_57mm_UBR_271K_SU_76"
+msgstr "УБР-271К (СУ-76)"
+
+msgid "_57mm_UBR_271N_SU_76"
+msgstr "УБР-271Н (СУ-76)"
+
 msgid "_57mm_UO-271U"
 msgstr "УО-271У"
 
 msgid "_57mm_UO-271UO"
 msgstr "УО-271УО"
+
+msgid "_57mm_UO_271U_SU_76"
+msgstr "УО-271У (СУ-76)"
 
 msgid "_57mm_ZiS-2"
 msgstr "57 мм ЗиС-2"
@@ -6803,6 +7021,9 @@ msgstr "57 мм ЗиС-8"
 
 msgid "_57mm_ZiS-8_S"
 msgstr "57 мм ЗиС-8С"
+
+msgid "_57mm_ZiS_2_SU_76"
+msgstr "57 мм ЗиС-2 (СУ-76)"
 
 msgid "_57mm_ZiS_4T"
 msgstr "57 мм ЗиС-4Т"
@@ -6969,6 +7190,12 @@ msgstr "УБР-354МП"
 msgid "_76mm_UBR_350P"
 msgstr "УБР-350П"
 
+msgid "_76mm_UBR_354A_SU_76"
+msgstr "УБР-354А (СУ-76)"
+
+msgid "_76mm_UBR_354MP_SU_76"
+msgstr "УБР-354МП (СУ-76)"
+
 msgid "_76mm_UBR_354P"
 msgstr "УБР-354П"
 
@@ -6987,6 +7214,9 @@ msgstr "УОФ-354КА"
 msgid "_76mm_UOF-354M"
 msgstr "УОФ-354М"
 
+msgid "_76mm_UOF_354_SU_76"
+msgstr "УОФ-354 (СУ-76)"
+
 msgid "_76mm_ZiS-3_mod_42"
 msgstr "76 мм ЗиС-3"
 
@@ -6995,6 +7225,9 @@ msgstr "76 мм ЗиС-5"
 
 msgid "_76mm_ZiS-96"
 msgstr "76 мм Ф-96"
+
+msgid "_76mm_ZiS_3_SU_76"
+msgstr "76 мм ЗиС-3 (СУ-76)"
 
 msgid "_76mm_ZiS_5_MZ"
 msgstr "76 мм ЗиС-5 с МЗ"
@@ -7104,6 +7337,18 @@ msgstr "УБР-367"
 msgid "_85mm_UBR-367P"
 msgstr "УБР-367П"
 
+msgid "_85mm_UBR_365KBM_SU_85"
+msgstr "УБР-365КБМ (СУ-85)"
+
+msgid "_85mm_UBR_365K_SU_85"
+msgstr "УБР-365К (СУ-85)"
+
+msgid "_85mm_UBR_365PBM_SU_85"
+msgstr "УБР-365ПБМ (СУ-85)"
+
+msgid "_85mm_UBR_365P_SU_85"
+msgstr "УБР-365П (СУ-85)"
+
 msgid "_85mm_UBR_372P_432"
 msgstr "УБР-372П-432"
 
@@ -7124,6 +7369,12 @@ msgstr "УОФ-365К"
 
 msgid "_85mm_UOF-412-DG"
 msgstr "УОФ-412Д"
+
+msgid "_85mm_UOF_365BM_SU_85"
+msgstr "УОФ-365БМ (СУ-85)"
+
+msgid "_85mm_UOF_365K_SU_85"
+msgstr "УОФ-365К (СУ-85)"
 
 msgid "_85mm_UOF_372_432"
 msgstr "УОФ-372-432"

@@ -7,7 +7,7 @@ from items import vehicles
 from items.components import shared_components
 from soft_exception import SoftException
 from items.components.c11n_constants import ApplyArea, SeasonType, Options, ItemTags, CustomizationType, MAX_CAMOUFLAGE_PATTERN_SIZE, DecalType, HIDDEN_CAMOUFLAGE_ID, PROJECTION_DECALS_SCALE_ID_VALUES, MAX_USERS_PROJECTION_DECALS, CustomizationTypeNames, DecalTypeNames, ProjectionDecalFormTags, DEFAULT_SCALE_FACTOR_ID, CUSTOMIZATION_SLOTS_VEHICLE_PARTS, CamouflageTilingType, SLOT_TYPE_NAMES, EMPTY_ITEM_ID, SLOT_DEFAULT_ALLOWED_MODEL, EDITING_STYLE_REASONS, CustomizationDisplayType, AttachmentSize, AttachmentTags
-from typing import List, Dict, Type, Tuple, Optional, TypeVar, FrozenSet, Iterable, Callable, TYPE_CHECKING
+from typing import TYPE_CHECKING, Union
 from string import lower, upper
 from copy import deepcopy
 from bisect import bisect
@@ -17,9 +17,9 @@ from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 if IS_EDITOR:
     from editor_copy import edCopy
 if TYPE_CHECKING:
+    from typing import List, Dict, Type, Tuple, Optional, FrozenSet, Iterable, Callable, Iterator
     from account_helpers import Tokens
-    from serializable_types.customizations import CustomizationOutfit
-Item = TypeVar('TypeVar')
+    from serializable_types.customizations import CustomizationOutfit, CamouflageComponent
 
 class BaseCustomizationItem(object):
     __metaclass__ = ReflectionMetaclass
@@ -180,7 +180,7 @@ class PaintItem(BaseCustomizationItem):
         return result
 
 
-class EmissionParams():
+class EmissionParams:
 
     def __init__(self):
         self.emissionTexture = ''
@@ -510,6 +510,17 @@ class StyleItem(BaseCustomizationItem):
     def removePartrsFromOutfit(self, season, outfitComponent, vehicleCD, intCDs=None):
         return self._opPartsOutfit(type(outfitComponent).getDiff, season, outfitComponent, vehicleCD, intCDs)
 
+    def changePartsOutfitExceptGunInsignia(self, season, outfitComponent, *intCDs):
+        if not self.hasContaineOutfitPart:
+            return outfitComponent
+        for partOutfitComponent in self._iteratePartsOutfit(season, intCDs, True):
+            outfitGunInsignias = set(outfitComponent.getGunInsignias())
+            gunInsigniasInBoth = (insignia for insignia in partOutfitComponent.getGunInsignias() if insignia in outfitGunInsignias)
+            outfitComponent = outfitComponent.getDiff(partOutfitComponent)
+            outfitComponent.insignias.extend(gunInsigniasInBoth)
+
+        return outfitComponent
+
 
 class InsigniaItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
@@ -837,7 +848,7 @@ class CustomizationCache(object):
                  'itemTypes', 'priceGroupTags', '__victimStyles', 'personal_numbers',
                  'fonts', 'sequences', 'attachments', 'customizationWithProgression',
                  'itemToQuestProgressionStyle', '__questStyles', 'itemGroupByProgressionBonusType',
-                 '__vehicleCanMayIncludeCustomization', 'topVehiclesByNation')
+                 'topVehiclesByNation')
 
     def __init__(self):
         self.priceGroupTags = {}
@@ -863,7 +874,6 @@ class CustomizationCache(object):
         self.itemToQuestProgressionStyle = {}
         self.__questStyles = None
         self.itemGroupByProgressionBonusType = {arenaTypeID:list() for arenaTypeID in ARENA_BONUS_TYPE_NAMES.values() if ARENA_BONUS_TYPE_CAPS.checkAny(arenaTypeID, ARENA_BONUS_TYPE_CAPS.CUSTOMIZATION_PROGRESSION) if ARENA_BONUS_TYPE_CAPS.checkAny(arenaTypeID, ARENA_BONUS_TYPE_CAPS.CUSTOMIZATION_PROGRESSION)}
-        self.__vehicleCanMayIncludeCustomization = {}
         self.topVehiclesByNation = {}
         self.itemTypes = {CustomizationType.MODIFICATION: self.modifications, 
            CustomizationType.STYLE: self.styles, 
@@ -882,19 +892,6 @@ class CustomizationCache(object):
         if self.__questStyles is None:
             self.__questStyles = {id:style for id, style in self.styles.iteritems() if style.isQuestsProgression if style.isQuestsProgression}
         return self.__questStyles
-
-    def getVehiclesCanMayInclude(self, item):
-        vehsCanUseItem = self.__vehicleCanMayIncludeCustomization.get(item.compactDescr)
-        if vehsCanUseItem is None:
-            vehsCanUseItem = []
-            for nationID in nations.INDICES.itervalues():
-                for descr in iv.g_list.getList(nationID).itervalues():
-                    vehCD = descr.compactDescr
-                    if item.matchVehicleType(iv.getVehicleType(vehCD)):
-                        vehsCanUseItem.append(vehCD)
-
-            self.__vehicleCanMayIncludeCustomization[item.compactDescr] = vehsCanUseItem
-        return vehsCanUseItem
 
     def isVehicleBound(self, itemId):
         if isinstance(itemId, int):

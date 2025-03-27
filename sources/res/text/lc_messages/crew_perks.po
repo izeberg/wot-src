@@ -950,6 +950,15 @@ msgstr "Заряжающий"
 msgid "perkRole/radioman"
 msgstr "Радист"
 
+msgid "popularity/tooltip/common"
+msgstr "всех игроков"
+
+msgid "popularity/tooltip/header"
+msgstr "Для этой машины, предпочитают:"
+
+msgid "popularity/tooltip/legendary"
+msgstr "игроков в ранге «Легенда»"
+
 msgid "radioman_expert/alt/description"
 msgstr ""
 "Бонус к эффективности экипажа повышает результативность танкистов в бою. "
@@ -1174,6 +1183,57 @@ msgstr "-"
 
 msgid "sign/plus"
 msgstr "+"
+
+msgid "sorting/common"
+msgstr "Популярные"
+
+msgid "sorting/fallback"
+msgstr "Базовые"
+
+msgid "sorting/legendary"
+msgstr "Легендарные"
+
+msgid "sorting/title"
+msgstr "Сортировать:"
+
+msgid "sorting/tooltip/common"
+msgstr ""
+"%(whiteSpanish_Open)sПопулярные.%(whiteSpanish_Close)s Подобраны на основе "
+"текущих предпочтений в навыках среди всех игроков World of Tanks."
+
+msgid "sorting/tooltip/header"
+msgstr "Бонус подписки WoT Plus"
+
+msgid "sorting/tooltip/headerDescription"
+msgstr ""
+"Получайте точную информацию о навыках, основанную на миллионах проведённых "
+"сражений, и выкладывайтесь на полную в каждом бою."
+
+msgid "sorting/tooltip/legendary"
+msgstr ""
+"%(whiteSpanish_Open)sЛегендарные.%(whiteSpanish_Close)s Подобраны на основе "
+"текущих предпочтений в навыках среди игроков, достигших уровня «Легенда» в "
+"рейтинге WTR."
+
+msgid "sorting/tooltip/sortingDisabled"
+msgstr "Сортировка навыков отключена"
+
+msgid "sorting/tooltip/sortingDisabledText"
+msgstr "Нет данных"
+
+msgid "sorting/tooltip/title"
+msgstr "Знаток экипажа"
+
+msgid "sorting/tooltip/types"
+msgstr "Варианты сортировки навыков"
+
+msgid "sorting/tooltip/warning"
+msgstr "Сортировка навыков недоступна"
+
+msgid "sorting/tooltip/warningText"
+msgstr ""
+"Полная информация по навыкам недоступна для данной машины, поэтому выбрана "
+"сортировка по базовым навыкам."
 
 msgid "witches_brotherhood/name"
 msgstr "Шабаш"

@@ -50,7 +50,7 @@ msgid "banner/seasonDate/seasonLasts"
 msgstr "До %(day)s %(month)s"
 
 msgid "banner/subtitle"
-msgstr "Битва за трилистник"
+msgstr "Королевская битва с ценными наградами"
 
 msgid "banner/timeLeft/hour"
 msgstr "%(hour)s ч"
@@ -120,15 +120,6 @@ msgstr "Не вступайте в бой."
 
 msgid "battle/respawnMessagePanel/squad/stayInCover/title"
 msgstr "Возрождение союзника"
-
-msgid "battle/winnerCongratulationsView/bonusActivated"
-msgstr "Бонус активирован!"
-
-msgid "battle/winnerCongratulationsView/bonusForFirstPlace"
-msgstr "Награда за первое место"
-
-msgid "battle/winnerCongratulationsView/colected"
-msgstr "Собрано за бой"
 
 msgid "battle/winnerCongratulationsView/title"
 msgstr "ПОБЕДА"
@@ -398,13 +389,8 @@ msgstr ""
 
 msgid "fullStats/icons/extendedLoot/description"
 msgstr ""
-"Снаряжение: опыт, восстановление прочности, ремонт модулей, шанс получить "
-"заряды боевых умений, снаряды."
-
-msgid "fullStats/icons/shamrocks/description"
-msgstr ""
-"Печати удачи есть во всех типах добычи. После боя их можно обменять на "
-"награды в Лавке трилистника."
+"Снаряжение: опыт, восстановление прочности, ремонт модулей, заряд "
+"«Восстановления», снаряды."
 
 msgid "fullStats/subTitle"
 msgstr "Битва за ценные ресурсы по правилам «один против всех»."
@@ -460,7 +446,7 @@ msgstr ""
 " выбрать улучшение одного из модулей."
 
 msgid "intro/aboutButton"
-msgstr "О СОБЫТИИ"
+msgstr "О РЕЖИМЕ"
 
 msgid "intro/button"
 msgstr "Так точно!"
@@ -653,9 +639,7 @@ msgstr ""
 "печати"
 
 msgid "proxyPanel/store"
-msgstr ""
-"ЛАВКА\n"
-"ТРИЛИСТНИКА"
+msgstr "МАГАЗИН"
 
 msgid "questsTooltip/lessThanDay"
 msgstr "менее 1 д"
@@ -714,7 +698,7 @@ msgstr ""
 msgid "rewardCurrencyTooltip/brcoin/header"
 msgstr "Стальные печати"
 
-msgid "rewardCurrencyTooltip/brcoin/premium"
+msgid "rewardCurrencyTooltip/brcoin/premFactor"
 msgstr "Танковый премиум аккаунт увеличивает заработок этой валюты на 50%."
 
 msgid "rewardCurrencyTooltip/credits/body"
@@ -724,7 +708,7 @@ msgstr ""
 msgid "rewardCurrencyTooltip/credits/header"
 msgstr "Кредиты"
 
-msgid "rewardCurrencyTooltip/credits/premium"
+msgid "rewardCurrencyTooltip/credits/premFactor"
 msgstr "Танковый премиум аккаунт увеличивает заработок этой валюты на 50%."
 
 msgid "rewardCurrencyTooltip/crystal/body"
@@ -735,20 +719,6 @@ msgstr ""
 msgid "rewardCurrencyTooltip/crystal/header"
 msgstr "Боны"
 
-msgid "rewardCurrencyTooltip/stpcoin/body"
-msgstr ""
-"Валюта, зарабатываемая в сражениях режима «Стальной охотник». Печати можно "
-"обменять на уникальные награды в Лавке трилистника. При игре во взводе "
-"печати делятся поровну между совзводными. Указанная сумма — ваша часть "
-"общего банка."
-
-msgid "rewardCurrencyTooltip/stpcoin/bonus"
-msgstr ""
-"Бонус применён! Количество печатей, полученных в бою, увеличено в 2 раза."
-
-msgid "rewardCurrencyTooltip/stpcoin/header"
-msgstr "Печати удачи"
-
 msgid "rewardCurrencyTooltip/xp/body"
 msgstr ""
 "Накопленный на специальной технике опыт вы можете перевести в свободный."
@@ -756,7 +726,7 @@ msgstr ""
 msgid "rewardCurrencyTooltip/xp/header"
 msgstr "Боевой опыт"
 
-msgid "rewardCurrencyTooltip/xp/premium"
+msgid "rewardCurrencyTooltip/xp/premFactor"
 msgstr "Танковый премиум аккаунт увеличивает заработок боевого опыта на 50%."
 
 msgid "season/202206/name"
@@ -830,7 +800,7 @@ msgid "statusNotificationTimers/inspire/inspired"
 msgstr "Улучшены ТТХ"
 
 msgid "statusNotificationTimers/loot/advanced"
-msgstr "Снаряжение"
+msgstr "Снаряды и Восстановление"
 
 msgid "statusNotificationTimers/loot/airdrop"
 msgstr "Воздушный груз"
@@ -1102,42 +1072,6 @@ msgstr "Однократное использование"
 
 msgid "tooltips/respawn/title"
 msgstr "Возрождение"
-
-msgid "tooltips/shop/description"
-msgstr ""
-"Магазин, в котором вы можете обменять печати удачи, зарабатываемые в режиме "
-"«Стальной охотник», на особые ценные награды."
-
-msgid "tooltips/shop/subdescription"
-msgstr ""
-"Специальная валюта, которую можно заработать, участвуя в режиме «Стальной "
-"охотник» во время события «Сигнал зелёный». Получайте печати удачи за подбор"
-" добычи в бою, прохождение этапов прогрессии и за первые места в королевской"
-" битве."
-
-msgid "tooltips/shop/subtitle"
-msgstr "Печати удачи"
-
-msgid "tooltips/shop/title"
-msgstr "Лавка трилистника"
-
-msgid "tooltips/stpCoin/earn/description"
-msgstr ""
-"Получайте печати удачи из добычи в сражениях, за прохождение этапов "
-"прогрессии и за первые места в боях режима «Стальной охотник»."
-
-msgid "tooltips/stpCoin/earn/title"
-msgstr "Как заработать"
-
-msgid "tooltips/stpCoin/spend/description"
-msgstr ""
-"Обменивайте заработанные печати на ценные награды в Лавке трилистника."
-
-msgid "tooltips/stpCoin/spend/title"
-msgstr "На что потратить "
-
-msgid "tooltips/stpCoin/title"
-msgstr "Печати удачи"
 
 msgid "tooltips/vehicle/description"
 msgstr "Машина режима «Стальной охотник»"

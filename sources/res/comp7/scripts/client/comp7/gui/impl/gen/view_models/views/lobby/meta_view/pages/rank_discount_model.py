@@ -1,4 +1,4 @@
-from comp7.gui.impl.gen.view_models.views.lobby.meta_view.progression_item_base_model import ProgressionItemBaseModel
+from comp7.gui.impl.gen.view_models.views.lobby.progression_item_base_model import ProgressionItemBaseModel
 
 class RankDiscountModel(ProgressionItemBaseModel):
     __slots__ = ()

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.460610 -0.436734 -1.105799</min>
+		<max>0.538357 0.319789 7.558684</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F130_Sentinelle/crash/lod2/Gun_02</nodefullVisual>
+	<parent>vehicles/french/F130_Sentinelle/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+</root>

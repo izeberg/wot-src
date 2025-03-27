@@ -79,6 +79,10 @@ package net.wg.data.constants.generated
       
       public static const CM_ARROW_DD:String = "cm_arrowDD";
       
+      public static const CM_COMMEND_BACK:String = "cm_commendBack";
+      
+      public static const CM_COMMEND_FIRST:String = "cm_commendFirst";
+      
       public static const CM_DISABLE_COMMUNICATIONS:String = "cm_disableCommunications";
       
       public static const CM_DISABLE_VOICE:String = "cm_disableVoice";
@@ -101,7 +105,11 @@ package net.wg.data.constants.generated
       
       public static const CM_MENU_BACK:String = "cm_menu_back";
       
+      public static const CM_MUTUAL_COMMENDATION:String = "cm_mutualCommendation";
+      
       public static const CM_OK_ICON:String = "cm_okIcon";
+      
+      public static const CM_OUTGOING_COMMENDATION:String = "cm_outgoingCommendation";
       
       public static const CM_REJECT_INVITATION:String = "cm_rejectInvitation";
       

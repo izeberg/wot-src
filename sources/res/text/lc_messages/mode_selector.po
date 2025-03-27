@@ -62,7 +62,7 @@ msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "Очки Боевого пропуска"
 
 msgid "mode/battleRoyaleQueue/description"
-msgstr "Битва за трилистник"
+msgstr "Королевская битва"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "Стальной охотник"
@@ -228,6 +228,12 @@ msgstr "Подрежимы боя"
 msgid "ranked/widget/qualBattles"
 msgstr "Боёв в квалификации: %(current) %(par_open)s/ %(max)%(par_close)s"
 
+msgid "reward/attachment/description"
+msgstr "Играя в режиме, вы можете получить уникальные 3D-объекты."
+
+msgid "reward/attachment/name"
+msgstr "3D-объекты"
+
 msgid "reward/bones/description"
 msgstr "Награда определяется по показателю вашей эффективности в бою."
 
@@ -263,6 +269,12 @@ msgstr "Играя в режиме, вы можете получить %(name)s.
 
 msgid "reward/improvedEquipment/name"
 msgstr "Специальное оборудование"
+
+msgid "reward/lootBoxes/description"
+msgstr "Играя в режиме, вы можете получить коробки."
+
+msgid "reward/lootBoxes/name"
+msgstr "Специальные коробки"
 
 msgid "reward/other/description"
 msgstr "Играя в режиме, вы можете получить множество полезных наград."

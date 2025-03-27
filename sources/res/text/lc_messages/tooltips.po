@@ -1393,7 +1393,7 @@ msgid "awardItem/optional_devices_assistant/body"
 msgstr "Информация о популярных вариантах оснащения."
 
 msgid "awardItem/optional_devices_assistant/header"
-msgstr "Знаток оборудования"
+msgstr "Знаток"
 
 msgid "awardItem/premium/body"
 msgstr ""
@@ -1497,14 +1497,6 @@ msgstr ""
 
 msgid "awardItem/steelHunterPoint/header"
 msgstr "Очки охоты"
-
-msgid "awardItem/stpcoin/body"
-msgstr ""
-"Валюта, зарабатываемая в сражениях режима «Стальной охотник». Печати можно обменять на уникальные награды в Лавке трилистника.\n"
-"При игре во взводе печати делятся поровну между совзводными. Указанная сумма — ваша часть общего банка."
-
-msgid "awardItem/stpcoin/header"
-msgstr "Печати удачи"
 
 msgid "awardItem/tankman/body"
 msgstr ""
@@ -2330,12 +2322,6 @@ msgstr ""
 msgid "battle_royale/hangar/vehicle/leftTime"
 msgstr "Доступен до: %(leftTime)s"
 
-msgid "battle_royale/hangar/vehicle/shamrock"
-msgstr ""
-"%(shamrock)s Бонус к печатям удачи за попадание в топ-10 в одиночном бою или"
-" в топ-7 во взводном. Бонус может быть активирован раз в сутки на каждой "
-"машине режима."
-
 msgid "battle_royale/hangar/vehicle/status"
 msgstr "Один из Стальных охотников"
 
@@ -3000,6 +2986,38 @@ msgstr ""
 
 msgid "commanderBonus/name"
 msgstr "Бонус командира"
+
+msgid "commendations/comms_likes_sct_txt_h_01"
+msgstr "Система благодарности недоступна"
+
+msgid "commendations/comms_likes_sct_txt_h_02"
+msgstr "Поблагодарить!"
+
+msgid "commendations/comms_likes_sct_txt_h_03"
+msgstr "Поблагодарить в ответ!"
+
+msgid "commendations/comms_likes_sct_txt_h_04"
+msgstr "Вы уже поблагодарили игрока"
+
+msgid "commendations/comms_likes_sct_txt_h_05"
+msgstr "Поблагодарили друг друга"
+
+msgid "commendations/comms_likes_sct_txt_t_01"
+msgstr "Невозможно поблагодарить этого игрока."
+
+msgid "commendations/comms_likes_sct_txt_t_02"
+msgstr "Нажмите, чтобы поблагодарить этого игрока."
+
+msgid "commendations/comms_likes_sct_txt_t_03"
+msgstr "Этот игрок уже поблагодарил вас."
+
+msgid "commendations/comms_likes_sct_txt_t_04"
+msgstr "Невозможно ещё раз поблагодарить этого игрока в текущем бою."
+
+msgid "commendations/comms_likes_sct_txt_t_05"
+msgstr ""
+"Отличный бой! К сожалению, вы не можете ещё раз поблагодарить этого игрока в"
+" текущем сражении."
 
 msgid "common/notEnough"
 msgstr "На покупку не хватает:"
@@ -4800,6 +4818,15 @@ msgstr ""
 msgid "eliteXP/header"
 msgstr "Опыт"
 
+msgid "enableCommendations/body"
+msgstr ""
+"При отключении уведомления о благодарности не отображаются в бою, но вы "
+"можете отправлять и получать благодарности в списке игроков в бою или по "
+"нажатию клавиши Tab."
+
+msgid "enableCommendations/header"
+msgstr "Получать благодарности в бою"
+
 msgid "enableTierGrouping/body"
 msgstr ""
 "Настройка работает при условии, что иконки техники отображаются. В режимах, "
@@ -6554,6 +6581,86 @@ msgstr "Вы можете просмотреть результаты событ
 msgid "liveOps/entryPointTooltip/title"
 msgstr "Новое событие"
 
+msgid "liveTags/body/ally/assist"
+msgstr ""
+"Урон с вашей помощью включает в себя передачу разведданных, обездвиживание и"
+" оглушение противника. Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/ally/block/assist"
+msgstr ""
+"Урон с вашей помощью включает в себя передачу разведданных, обездвиживание и"
+" оглушение противника. Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/ally/damage"
+msgstr "Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/ally/damage/assist"
+msgstr ""
+"Урон с вашей помощью включает в себя передачу разведданных, обездвиживание и"
+" оглушение противника. Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/ally/damage/block"
+msgstr "Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/ally/damage/block/assist"
+msgstr ""
+"Урон с вашей помощью включает в себя передачу разведданных, обездвиживание и"
+" оглушение противника. Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/currentPlayer/assist"
+msgstr ""
+"Вы на высоте! Урон с вашей помощью включает в себя передачу разведданных, "
+"обездвиживание и оглушение противника. Урон по необнаруженному противнику не"
+" учитывается."
+
+msgid "liveTags/body/currentPlayer/block"
+msgstr "Вы на высоте!"
+
+msgid "liveTags/body/currentPlayer/block/assist"
+msgstr ""
+"Вы на высоте! Урон с вашей помощью включает в себя передачу разведданных, "
+"обездвиживание и оглушение противника. Урон по необнаруженному противнику не"
+" учитывается."
+
+msgid "liveTags/body/currentPlayer/damage"
+msgstr "Вы на высоте! Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/currentPlayer/damage/assist"
+msgstr ""
+"Вы на высоте! Урон с вашей помощью включает в себя передачу разведданных, "
+"обездвиживание и оглушение противника. Урон по необнаруженному противнику не"
+" учитывается."
+
+msgid "liveTags/body/currentPlayer/damage/block"
+msgstr "Вы на высоте! Урон по необнаруженному противнику не учитывается."
+
+msgid "liveTags/body/currentPlayer/damage/block/assist"
+msgstr ""
+"Вы на высоте! Урон с вашей помощью включает в себя передачу разведданных, "
+"обездвиживание и оглушение противника. Урон по необнаруженному противнику не"
+" учитывается."
+
+msgid "liveTags/title/assist"
+msgstr "Лучшая поддержка"
+
+msgid "liveTags/title/block"
+msgstr "Лучшее блокирование"
+
+msgid "liveTags/title/block/assist"
+msgstr "Лучшие поддержка и блокирование"
+
+msgid "liveTags/title/damage"
+msgstr "Лучший урон"
+
+msgid "liveTags/title/damage/assist"
+msgstr "Лучшие урон и поддержка"
+
+msgid "liveTags/title/damage/block"
+msgstr "Лучшие урон и блокирование"
+
+msgid "liveTags/title/damage/block/assist"
+msgstr "Лучшие урон, поддержка и блокирование"
+
 msgid "lobby/header/buyPremiumAccount/disabled/body"
 msgstr ""
 "Продлить премиум аккаунт станет возможно, когда до истечения срока его "
@@ -7575,6 +7682,22 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/boosteroid_extraordinaire/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/boosteroid_fencer/desc"
+msgstr ""
+"Не дайте её грации и элегантности обмануть вас: Аделаис — закалённая в боях "
+"чемпионка по фехтованию с тысячами дуэлей за плечами. Уверенная в себе, "
+"сосредоточенная и утончённая на дорожке, она вооружена отменной реакцией и "
+"ответным выпадом на любой случай. Когда она не упражняется с рапирой, то "
+"командует войсками на полях сражений, где демонстрирует такую же "
+"смертоносную точность. Можете считать, что вы быстры, но Аделаис быстрее. А "
+"теперь... К оружию!"
+
+msgid "notrecruitedtankman/boosteroid_fencer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_fencer/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/boosteroid_foxwood/desc"
 msgstr ""
 "Неразлучный со своим верным псом Уинстоном, Уильям посвятил жизнь охоте. Всё"
@@ -8587,6 +8710,63 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/onslaught_p3_4/label"
 msgstr "Натиск. Год Пегаса"
 
+msgid "notrecruitedtankman/onslaught_p4_1/desc"
+msgstr ""
+"Родом из луизианских топей, капитан Элайджа Брукс заработал прозвище "
+"«Аллигатор» благодаря умению выживать и преуспевать в самых сложных "
+"условиях. Он рос рядом с коварными болотами, к которым многие даже подходить"
+" боятся, и научился адаптироваться к любой местности, используя окружение в "
+"свою пользу. Эти умения позволили ему стать отличным боевым стратегом."
+
+msgid "notrecruitedtankman/onslaught_p4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_1/label"
+msgstr "Натиск. Год Мантикоры"
+
+msgid "notrecruitedtankman/onslaught_p4_2/desc"
+msgstr ""
+"Франц Кёлер по прозвищу «Наковальня» родился в славном городе Дортмунд. Даже"
+" находясь под шквальным огнём, он никогда не теряет самообладание. Раньше он"
+" работал на фабрике с тяжёлыми металлами. Там же научился аккуратности и "
+"обрёл недюжинную силу. К противнику он относится как к бездушной машине, "
+"которую нужно разобрать. Каждое его действие выверено до мелочей, а каждый "
+"выстрел — как удар молотом по наковальне."
+
+msgid "notrecruitedtankman/onslaught_p4_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_2/label"
+msgstr "Натиск. Год Мантикоры"
+
+msgid "notrecruitedtankman/onslaught_p4_3/desc"
+msgstr ""
+"В детстве Чжан Вей подрабатывал курьером в провинции Гуандун, поэтому ему "
+"частенько приходилось бывать в самых удалённых уголках этого региона. На "
+"своём надёжном велосипеде он пересекал широкие равнины и пробирался по "
+"загруженным городским улицам. В этих путешествиях он научился быть на "
+"несколько шагов впереди опасности — умение, которое пригодится в любом бою."
+
+msgid "notrecruitedtankman/onslaught_p4_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_3/label"
+msgstr "Натиск. Год Мантикоры"
+
+msgid "notrecruitedtankman/onslaught_p4_4/desc"
+msgstr ""
+"Детали о его прошлом неизвестны. Согласно отчётам, ранее проходил службу в "
+"[ЗАСЕКРЕЧЕНО]. Его прозвали «призраком» за невероятную скорость и ловкость, "
+"а с оружием он обращается так, будто всю жизнь только этим и занимался. Он "
+"всегда носит балаклаву, за которой прячет не только лицо, но и все свои "
+"тайны, которые никто не решается раскрыть."
+
+msgid "notrecruitedtankman/onslaught_p4_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_4/label"
+msgstr "Натиск. Год Мантикоры"
+
 msgid "notrecruitedtankman/oow21_strategist_commander/desc"
 msgstr ""
 "Офицер «старой школы» — взвешенный и рассудительный. Решения принимает "
@@ -9591,6 +9771,88 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp16_4/label"
 msgstr "Боевой пропуск, XVI сезон"
+
+msgid "notrecruitedtankman/tankmen_bp16_5/desc"
+msgstr ""
+"Основатель компании «Шелби Лимитед», глава семьи Шелби и идейный "
+"вдохновитель преступной империи «Peaky Blinders», Томас Майкл Шелби, по его "
+"собственному определению, — выдающийся пример того, чего может добиться "
+"человек из рабочего класса. Пребывание в окопах на севере Франции не прошло "
+"для него бесследно, поэтому Томми иногда может казаться отстранённым и "
+"безразличным к насилию, но он твёрдо намерен защищать будущее своей семьи. "
+"Он расчётлив, амбициозен и, когда нужно, совершенно безжалостен. Это "
+"гениальный стратег, который всегда на шаг впереди тех, кто пытается ему "
+"противостоять — в Смолл-Хите, Лондоне и не только."
+
+msgid "notrecruitedtankman/tankmen_bp16_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_5/label"
+msgstr "Боевой пропуск: Peaky Blinders"
+
+msgid "notrecruitedtankman/tankmen_bp16_6/desc"
+msgstr ""
+"Доброе сердце, израненная душа и руки, что служат дьяволу, — таков Артур, "
+"человек, который выполняет «грязную работу» в семье Шелби. Но он не просто "
+"громила. Артур отличается непоколебимой верностью семье и яростным желанием "
+"защищать младших братьев и сестру. После пережитых ужасов Первой мировой "
+"внутренние демоны не дают ему покоя, как и давление преступного образа "
+"жизни. Артур вспыльчив, но при этом уязвим: он ищет утешения, понимания и, в"
+" конце концов, прощения."
+
+msgid "notrecruitedtankman/tankmen_bp16_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_6/label"
+msgstr "Боевой пропуск: Peaky Blinders"
+
+msgid "notrecruitedtankman/tankmen_bp16_7/desc"
+msgstr ""
+"Джон носит на себе шрамы, оставленные войной в чужой стране. Как и его "
+"старшие братья, он высоко ценит верность, честь и отвагу. Вынужденный "
+"повзрослеть слишком рано, этот молодой человек постоянно ощущает на себе "
+"груз прошлого — особенно теперь, когда ему нужно содержать собственную "
+"семью. И хотя порой Джон рубит сгоряча, у него доброе сердце, а его "
+"решимость во что бы то ни стало защитить близких означает, что он никогда не"
+" станет бежать от драки."
+
+msgid "notrecruitedtankman/tankmen_bp16_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_7/label"
+msgstr "Боевой пропуск: Peaky Blinders"
+
+msgid "notrecruitedtankman/tankmen_bp16_8/desc"
+msgstr ""
+"Единственная сестра братьев Шелби, Эйда поначалу стремилась к яркой и "
+"гламурной жизни вдали от суровой реальности Смолл-Хита и преступного мира. "
+"Однако глубокая преданность семье снова затягивает её в тёмные дела Шелби. "
+"Эйда бесстрашно и бескомпромиссно покоряет мужской мир, и у неё нет времени "
+"на идиотские разборки или ссоры её непредсказуемых братьев. Эта девушка "
+"отличается острым умом и таким же острым языком, поэтому с ней приходится "
+"считаться как членам семьи, так и всему остальному миру."
+
+msgid "notrecruitedtankman/tankmen_bp16_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_8/label"
+msgstr "Боевой пропуск: Peaky Blinders"
+
+msgid "notrecruitedtankman/tankmen_bp16_9/desc"
+msgstr ""
+"Настоящий Шелби, пусть и с другой фамилией, Майкл всегда хотел большего, чем"
+" ему могла дать родная деревня. Он вдумчивый, старательный, восхищается "
+"бандой «Peaky Blinders» и интригами преступного мира Бирмингема и готов "
+"вносить вклад в растущее предприятие своих двоюродных братьев. После "
+"однообразной деревенской жизни Майкл точно знает, что его место в городе, "
+"даже если это означает, что придётся запачкать руки. Но как далеко он готов "
+"зайти ради своей семьи?"
+
+msgid "notrecruitedtankman/tankmen_bp16_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp16_9/label"
+msgstr "Боевой пропуск: Peaky Blinders"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""

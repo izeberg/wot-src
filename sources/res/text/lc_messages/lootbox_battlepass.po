@@ -23,15 +23,6 @@ msgstr "Мы обменяли за вас %(boxCount)."
 msgid "awardViews/footer/backButton/"
 msgstr "Назад к ваучерам"
 
-msgid "awardViews/footer/checkbox/"
-msgstr "Показывать анимацию"
-
-msgid "awardViews/quantityTitle/boxesAvailable"
-msgstr "Доступно: %(boxesCount)"
-
-msgid "awardViews/quantityTitle/noBoxes"
-msgstr "Ваучеры закончились"
-
 msgid "boxTooltip/description/text/commonTicket"
 msgstr ""
 "Обменивайте ваучеры на награды! Вы можете их заработать на Тропе престижа."
@@ -45,6 +36,9 @@ msgstr "Ваучер"
 msgid "common/boxCategory/upperCase/commonTicket"
 msgstr "ВАУЧЕР"
 
+msgid "common/footer/checkbox"
+msgstr "Показывать анимацию"
+
 msgid "common/loader"
 msgstr "Стираем защитный слой..."
 
@@ -56,12 +50,6 @@ msgstr "ВАУЧЕРЫ"
 
 msgid "hasBoxesView/openButtonText"
 msgstr "Обменять ваучер"
-
-msgid "hasBoxesView/quantityTitle/boxesAvailable"
-msgstr "Доступно: %(boxesCount)"
-
-msgid "hasBoxesView/quantityTitle/noBoxes"
-msgstr "Ваучеры закончились"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr "Ваучеры могут быть получены в качестве награды на Тропе престижа."
@@ -87,13 +75,14 @@ msgstr ""
 "У вас нет ваучеров. Их можно заработать\n"
 "на Тропе престижа."
 
-msgid "noBoxesView/descriptionCn/"
-msgstr ""
-"У вас нет ваучеров. Их можно заработать\n"
-"на Тропе престижа."
-
 msgid "preview/backLabel"
 msgstr "К ВАУЧЕРАМ"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "Доступно: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "Ваучеры закончились"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
 msgstr "Ваучеров обменяно: %(boxes)s"

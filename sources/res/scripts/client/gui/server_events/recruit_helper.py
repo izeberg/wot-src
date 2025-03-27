@@ -536,3 +536,16 @@ def removeRecruitForVisit(recruitID):
         else:
             recruitsVisited.pop(recruitID)
         AccountSettings.setNotifications(RECRUITS_NOTIFICATIONS, recruitsVisited)
+
+
+def updateNegative():
+    seenRecruits = AccountSettings.getNotifications(RECRUITS_NOTIFICATIONS)
+    recruitIDs = getRecruitIDs()
+    for recruitID, count in recruitIDs.iteritems():
+        seenRecruitCount = seenRecruits.get(recruitID)
+        if seenRecruitCount:
+            needToSeeCount = count - seenRecruitCount
+            if needToSeeCount < 0:
+                seenRecruits[recruitID] = seenRecruitCount + needToSeeCount
+
+    AccountSettings.setNotifications(RECRUITS_NOTIFICATIONS, seenRecruits)

@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "serviceChannelMessages/resourceWell/enabled/text"
+msgstr "Конструкторское бюро снова открыто!"
+
+msgid "serviceChannelMessages/resourceWell/end/text"
+msgstr ""
+"Приступаем к работе над следующим проектом. Мы сообщим, когда появятся "
+"наработки. До встречи!"
+
+msgid "serviceChannelMessages/resourceWell/end/title"
+msgstr "Конструкторское бюро закрывается"
+
+msgid "serviceChannelMessages/resourceWell/noSerialVehicles/text"
+msgstr ""
+"Отгрузка техники с номерами завершена. Приступаем к сборке %(vehicle)s в "
+"стандартной комплектации. Поторопитесь — количество машин ограничено."
+
+msgid "serviceChannelMessages/resourceWell/noVehicles/text"
+msgstr "Сборка машин завершена. Все экземпляры доставлены своим владельцам."
+
+msgid "serviceChannelMessages/resourceWell/noVehicles/title"
+msgstr "Отчёт Конструкторского бюро"
+
+msgid ""
+"serviceChannelMessages/resourceWell/noVehicles/twoParallelProducts/text"
+msgstr ""
+"Отгрузка машины %(soldOutVehicle)s завершена. У вас также есть возможность "
+"приобрести машину %(availableVehicle)s. Если вы потратили ресурсы, но не "
+"совершили покупку вовремя, ресурсы будут возвращены на ваш аккаунт. "
+"Поспешите — количество техники ограничено!"
+
+msgid "serviceChannelMessages/resourceWell/noVehiclesWithReturn/text"
+msgstr ""
+"Сборка машин завершена. Все экземпляры доставлены своим владельцам. "
+"Вложенные ресурсы скоро будут возвращены на ваш аккаунт."
+
+msgid "serviceChannelMessages/resourceWell/oneVehicleStart/text"
+msgstr ""
+"Командир, у вас есть возможность стать обладателем %(vehicle)s с номерным "
+"3D-стилем. Количество экземпляров ограничено!"
+
+msgid "serviceChannelMessages/resourceWell/pause/text"
+msgstr "Конструкторское бюро временно недоступно. Идут технические работы."
+
+msgid ""
+"serviceChannelMessages/resourceWell/reward/serialVehicle/additionalText"
+msgstr "Номер стиля: %(serialNumber)s"
+
+msgid "serviceChannelMessages/resourceWell/reward/serialVehicle/text"
+msgstr "От Конструкторского бюро получен уникальный экземпляр %(vehicle)s."
+
+msgid "serviceChannelMessages/resourceWell/reward/title"
+msgstr "%(vehicle)s получен!"
+
+msgid "serviceChannelMessages/resourceWell/reward/vehicle/text"
+msgstr "От Конструкторского бюро получена машина %(vehicle)s."
+
+msgid "serviceChannelMessages/resourceWell/start/title"
+msgstr "Конструкторское бюро открывается"
+
+msgid "serviceChannelMessages/resourceWell/twoVehiclesStart/text"
+msgstr ""
+"Командиры, не упустите шанс добавить в свою коллекцию машины "
+"%(firstVehicle)s и %(secondVehicle)s! Поспешите — количество техники "
+"ограничено!"

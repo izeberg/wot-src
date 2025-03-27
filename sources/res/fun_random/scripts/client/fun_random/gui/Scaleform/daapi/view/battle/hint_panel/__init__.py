@@ -1,1 +1,2 @@
-pass
+from fun_random.gui.Scaleform.daapi.view.battle.hint_panel.component import FunRandomBattleHintPanel
+__all__ = ('FunRandomBattleHintPanel', )

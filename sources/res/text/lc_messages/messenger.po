@@ -167,6 +167,15 @@ msgstr ""
 "Голосовая связь отключена. Чтобы общаться с союзниками, включите голосовой "
 "чат (%(keyName)s)."
 
+msgid "client/commendations/comms_mutual"
+msgstr "Вы и игрок %(player)s поблагодарили друг друга."
+
+msgid "client/commendations/comms_received"
+msgstr "Игрок %(player)s поблагодарил вас."
+
+msgid "client/commendations/comms_sent"
+msgstr "Вы поблагодарили игрока %(player)s."
+
 msgid "client/dynSquad/created/allies"
 msgstr "Cоюзники сформировали взвод %(squadNum)s."
 
@@ -1289,9 +1298,6 @@ msgstr "Списано личных очков славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Списано свободного опыта"
 
-msgid "platformCurrencyMsg/debited/stpcoin"
-msgstr "Списано печатей удачи"
-
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "Списано очков похода"
 
@@ -1318,9 +1324,6 @@ msgstr "Начислено личных очков славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Получено свободного опыта"
-
-msgid "platformCurrencyMsg/received/stpcoin"
-msgstr "Получено печатей удачи"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "Начислено очков похода"
@@ -1575,9 +1578,6 @@ msgstr "Получено очков Боевого пропуска: %(pointsDif
 
 msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
 msgstr "Получено стальных печатей: %(value)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin"
-msgstr "Получено печатей удачи: %(value)s"
 
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "Машина уничтожена"
@@ -2366,11 +2366,29 @@ msgstr "Закрыть"
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "Вы вышли или были исключены из клана:"
 
+msgid "serviceChannelMessages/commendations/liveTags/disable"
+msgstr "Специальные метки недоступны"
+
+msgid "serviceChannelMessages/commendations/liveTags/enable"
+msgstr "Специальные метки доступны в бою"
+
+msgid "serviceChannelMessages/commendations/messages/disable"
+msgstr "Система благодарности временно недоступна"
+
+msgid "serviceChannelMessages/commendations/messages/enable"
+msgstr "Система благодарности доступна в бою"
+
 msgid "serviceChannelMessages/creditsAndGoldReceivedAsGift"
 msgstr "От администрации получено золота: %(gold)s, кредитов: %(credits)s."
 
 msgid "serviceChannelMessages/creditsReceivedAsGift"
 msgstr "От администрации получено кредитов: %(credits)s."
+
+msgid "serviceChannelMessages/crewAssistant/available/title"
+msgstr "Механика «Знаток экипажа» доступна"
+
+msgid "serviceChannelMessages/crewAssistant/unavailable/title"
+msgstr "Механика «Знаток экипажа» недоступна"
 
 msgid "serviceChannelMessages/crewBooksCount"
 msgstr "%(label)s x%(count)s"
@@ -3466,16 +3484,8 @@ msgstr "Кредитов: %(count)s"
 msgid "serviceChannelMessages/resourceWell/crystal"
 msgstr "Бон: %(count)s"
 
-msgid "serviceChannelMessages/resourceWell/enabled/text"
-msgstr "Конструкторское бюро снова открыто!"
-
-msgid "serviceChannelMessages/resourceWell/end/text"
-msgstr ""
-"Приступаем к работе над следующим проектом. Мы сообщим, когда появятся "
-"наработки. До встречи!"
-
-msgid "serviceChannelMessages/resourceWell/end/title"
-msgstr "Конструкторское бюро закрывается"
+msgid "serviceChannelMessages/resourceWell/details/button"
+msgstr "Подробнее"
 
 msgid "serviceChannelMessages/resourceWell/freeXP"
 msgstr "Свободного опыта: %(count)s"
@@ -3486,28 +3496,6 @@ msgstr "Золота: %(count)s"
 msgid "serviceChannelMessages/resourceWell/intelligence"
 msgstr "универсальных"
 
-msgid "serviceChannelMessages/resourceWell/noSerialVehicles/button"
-msgstr "Вложить ресурсы"
-
-msgid "serviceChannelMessages/resourceWell/noSerialVehicles/text"
-msgstr ""
-"Отгрузка танков с номерами завершена. Приступаем к сборке %(vehicle)s в "
-"стандартной комплектации. Поторопитесь, количество машин ограничено."
-
-msgid "serviceChannelMessages/resourceWell/noVehicles/text"
-msgstr "Сборка машин завершена, все экземпляры доставлены своим владельцам."
-
-msgid "serviceChannelMessages/resourceWell/noVehicles/title"
-msgstr "Отчёт Конструкторского бюро"
-
-msgid "serviceChannelMessages/resourceWell/noVehiclesWithReturn/text"
-msgstr ""
-"Сборка машин завершена, все экземпляры доставлены своим владельцам. "
-"Вложенные ресурсы скоро будут возвращены на ваш аккаунт."
-
-msgid "serviceChannelMessages/resourceWell/pause/text"
-msgstr "Конструкторское бюро временно недоступно. Идут технические работы."
-
 msgid "serviceChannelMessages/resourceWell/progress"
 msgstr "Текущий прогресс: %(progress)d"
 
@@ -3517,37 +3505,14 @@ msgstr "Вложены ресурсы в проект Конструкторск
 msgid "serviceChannelMessages/resourceWell/put/title"
 msgstr "Ресурсы вложены"
 
-msgid "serviceChannelMessages/resourceWell/regularReward/text"
-msgstr "От Конструкторского бюро получена машина %(vehicle)s."
-
-msgid "serviceChannelMessages/resourceWell/regularReward/title"
-msgstr "%(vehicle)s получен!"
-
-msgid "serviceChannelMessages/resourceWell/start/button"
-msgstr "Подробнее"
-
-msgid "serviceChannelMessages/resourceWell/start/text"
-msgstr ""
-"Командир, у вас есть возможность стать обладателем %(vehicle)s с номерным "
-"3D-стилем. Количество экземпляров ограничено!"
-
-msgid "serviceChannelMessages/resourceWell/start/title"
-msgstr "Конструкторское бюро открывается"
+msgid "serviceChannelMessages/resourceWell/spendResources/button"
+msgstr "Вложить ресурсы"
 
 msgid "serviceChannelMessages/resourceWell/take/text"
 msgstr "Ресурсы возвращены Конструкторским бюро:"
 
 msgid "serviceChannelMessages/resourceWell/take/title"
 msgstr "Возврат ресурсов"
-
-msgid "serviceChannelMessages/resourceWell/topReward/additionalText"
-msgstr "Номер стиля: %(serialNumber)s"
-
-msgid "serviceChannelMessages/resourceWell/topReward/text"
-msgstr "От Конструкторского бюро получен уникальный экземпляр %(vehicle)s."
-
-msgid "serviceChannelMessages/resourceWell/topReward/title"
-msgstr "%(vehicle)s получен!"
 
 msgid "serviceChannelMessages/selectableCrewbook/brochure"
 msgstr "Учебная брошюра на выбор"

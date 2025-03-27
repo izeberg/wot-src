@@ -24,7 +24,7 @@ package net.wg.gui.battle.views.consumablesPanel
    public class ConsumablesPanel extends ConsumablesPanelMeta implements IConsumablesPanel, IStageSizeDependComponent
    {
       
-      private static const CONSUMABLES_PANEL_Y_OFFSET:int = 58;
+      protected static const CONSUMABLES_PANEL_Y_OFFSET:int = 58;
       
       private static const ITEM_WIDTH_PADDING:int = 57;
       
@@ -39,10 +39,6 @@ package net.wg.gui.battle.views.consumablesPanel
       private static const BATTLE_ROYALE_GROUP_GAP:int = 13;
       
       private static const BATTLE_ROYALE_GROUP_INDEXES:Vector.<uint> = new <uint>[2,6];
-      
-      private static const EPIC_BATTLE_GROUP_GAP:int = 10;
-      
-      private static const EPIC_BATTLE_GROUP_INDEXES:Vector.<uint> = new <uint>[6,9];
       
       private static const SHOW_TWEEN_DURATION:int = 300;
       
@@ -79,7 +75,7 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _customIndexGap:Vector.<uint>;
       
-      private var _settingsId:int = -1;
+      protected var _settingsId:int = -1;
       
       private var _equipmentButtonLinkage:String = "";
       
@@ -98,17 +94,26 @@ package net.wg.gui.battle.views.consumablesPanel
          this._customIndexGap = new Vector.<uint>(0);
          this._classFactory = App.utils.classFactory;
          super();
+      }
+      
+      protected static function getItemWidthPadding(param1:int) : int
+      {
+         return param1 < StageSizeBoundaries.WIDTH_1280 ? int(ITEM_WIDTH_SHORT_PADDING) : int(ITEM_WIDTH_PADDING);
+      }
+      
+      override protected function preInitialize() : void
+      {
+         super.preInitialize();
          App.stageSizeMgr.register(this);
          var _loc1_:int = getItemWidthPadding(App.appWidth);
          this.settings[CONSUMABLES_PANEL_SETTINGS.DEFAULT_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,_loc1_,Linkages.EQUIPMENT_BUTTON,Linkages.SHELL_BUTTON_BATTLE,0,null);
          this.settings[CONSUMABLES_PANEL_SETTINGS.BATTLE_ROYALE_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,ITEM_WIDTH_PADDING,Linkages.BATTLE_ROYALE_CONSUMABLE_BUTTON,Linkages.SHELL_BUTTON_BATTLE,BATTLE_ROYALE_GROUP_GAP,BATTLE_ROYALE_GROUP_INDEXES);
          this.settings[CONSUMABLES_PANEL_SETTINGS.MAPS_TRAINING_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,_loc1_,Linkages.EQUIPMENT_BUTTON,Linkages.MAPS_TRAINING_SHELL_BUTTON,0,null);
-         this.settings[CONSUMABLES_PANEL_SETTINGS.EPIC_BATTLE_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,_loc1_,Linkages.EPIC_BATTLE_CONSUMABLE_BUTTON,Linkages.SHELL_BUTTON_BATTLE,EPIC_BATTLE_GROUP_GAP,EPIC_BATTLE_GROUP_INDEXES);
       }
       
-      private static function getItemWidthPadding(param1:int) : int
+      protected function set equipmentButtonLinkage(param1:String) : void
       {
-         return param1 < StageSizeBoundaries.WIDTH_1280 ? int(ITEM_WIDTH_SHORT_PADDING) : int(ITEM_WIDTH_PADDING);
+         this._equipmentButtonLinkage = param1;
       }
       
       override protected function onDispose() : void
@@ -396,21 +401,13 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function as_setEquipmentActivated(param1:int, param2:Boolean) : void
+      public function as_setEquipmentActivated(param1:int, param2:Boolean, param3:Boolean) : void
       {
-         var _loc3_:IConsumablesButton = this.getRendererBySlotIdx(param1);
-         if(_loc3_)
+         var _loc4_:IConsumablesButton = this.getRendererBySlotIdx(param1);
+         if(_loc4_)
          {
-            _loc3_.activated = param2;
-         }
-      }
-      
-      public function as_setIdleEnabledGlow(param1:int, param2:Boolean) : void
-      {
-         var _loc3_:IConsumablesButton = this.getRendererBySlotIdx(param1);
-         if(_loc3_)
-         {
-            _loc3_.setIdleEnabledGlow(param2);
+            _loc4_.activated = param2;
+            _loc4_.noBack = param3;
          }
       }
       
@@ -759,58 +756,5 @@ package net.wg.gui.battle.views.consumablesPanel
       {
          this._basePanelWidth = param1;
       }
-   }
-}
-
-import net.wg.infrastructure.interfaces.entity.IDisposable;
-
-class ConsumablesPanelSettings implements IDisposable
-{
-    
-   
-   public var bottomPadding:int = 0;
-   
-   public var itemPadding:int = 0;
-   
-   public var groupGap:int = 0;
-   
-   public var customIndexGap:Vector.<uint>;
-   
-   public var equipmentButtonLinkage:String = "";
-   
-   public var shellButtonLinkage:String = "";
-   
-   private var _disposed:Boolean = false;
-   
-   function ConsumablesPanelSettings(param1:int, param2:int, param3:String, param4:String, param5:int = 0, param6:Vector.<uint> = null)
-   {
-      this.customIndexGap = new Vector.<uint>(0);
-      super();
-      this.bottomPadding = param1;
-      this.itemPadding = param2;
-      this.groupGap = param5;
-      if(param6 != null)
-      {
-         this.customIndexGap = param6;
-      }
-      this.equipmentButtonLinkage = param3;
-      this.shellButtonLinkage = param4;
-   }
-   
-   public final function dispose() : void
-   {
-      this._disposed = true;
-      this.onDispose();
-   }
-   
-   public function isDisposed() : Boolean
-   {
-      return this._disposed;
-   }
-   
-   protected function onDispose() : void
-   {
-      this.customIndexGap.splice(0,this.customIndexGap.length);
-      this.customIndexGap = null;
    }
 }

@@ -460,6 +460,34 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
+			<id>117</id>
+			<name>A174_T57_58_Rush_Ep1_1</name>
+			<modelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_1.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_1.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>118</id>
+			<name>A174_T57_58_Rush_Ep1_2</name>
+			<modelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_2.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_2.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>119</id>
+			<name>A174_T57_58_Rush_Ep1_3</name>
+			<modelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_3.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_3.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>120</id>
+			<name>A174_T57_58_Rush_Ep1_4</name>
+			<modelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_4.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/A174_T57_58_Rush_Ep1/A174_T57_58_Rush_Ep1_4.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
 			<id>123</id>
 			<name>GB32_Tortoise_NY25_3DSt</name>
 			<modelName>particles/Tank/customization/GB32_Tortoise_NY25_3DSt/GB32_Tortoise_NY25_3DSt.prefab</modelName>
@@ -558,6 +586,25 @@
 			<name>G73_E50_Ausf_M_BPXVI_3Dst</name>
 			<modelName>particles/Tank/customization/G73_E50_Ausf_M_BPXVI_3Dst/G73_E50_Ausf_M_BPXVI_3Dst.prefab</modelName>
 			<hangarModelName>particles/Tank/customization/G73_E50_Ausf_M_BPXVI_3Dst/G73_E50_Ausf_M_BPXVI_3Dst.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>140</id>
+			<name>F119_Char_Murat_PBC_3Dst</name>
+			<modelName>particles/Tank/customization/F119_Char_Murat_PBC_3Dst/F119_Char_Murat_PBC_3Dst.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/F119_Char_Murat_PBC_3Dst/F119_Char_Murat_PBC_3Dst_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>142</id>
+			<name>Cz40_ABM_122_RW6_3Dst_Lamp</name>
+			<modelName>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/lamp_76779.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>143</id>
+			<name>Cz40_ABM_122_RW6_3Dst_Gun</name>
+			<modelName>vehicles/czech/Cz40_DBV_152/_skins/Cz40_DBV_152_RW6_3Dst/gun_number_76779.prefab</modelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 	</itemGroup>
@@ -991,6 +1038,153 @@
 			<rarity>rare</rarity>
 			<priceGroup>attachments 500g notInShop</priceGroup>
 			<userString>#vehicle_customization:attachment/antique_oddities/Cus_27_Mystic_Mystical_Things</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Saint Patrick 2025</name>
+		<userString>#vehicle_customization:attachment/st_patricks_day_2025</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<attachment>
+			<id>1030</id>
+			<name>Cus_31_SP_Horseshoe</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Horseshoe_02.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_31_SP_Horseshoe/Cus_31_SP_Horseshoe_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 1505g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe</userString>
+			<description>#vehicle_customization:attachment/st_patricks_day_2025/Cus_31_SP_Horseshoe/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1031</id>
+			<name>Cus_32_SP_GoldPot</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_32_SP_GoldPot/Cus_32_SP_GoldPot.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_32_SP_GoldPot/Cus_32_SP_GoldPot_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 700g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/st_patricks_day_2025/Cus_32_SP_GoldPot</userString>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1032</id>
+			<name>Cus_33_SP_Barrel</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_33_SP_Barrel/Cus_33_SP_Barrel.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_33_SP_Barrel/Cus_33_SP_Barrel.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 350g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/st_patricks_day_2025/Cus_33_SP_Barrel</userString>
+		</attachment>
+		<attachment>
+			<id>1033</id>
+			<name>Cus_34_SP_TreasureChest</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_34_SP_TreasureChest/Cus_34_SP_TreasureChest.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_34_SP_TreasureChest/Cus_34_SP_TreasureChest.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 350g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/st_patricks_day_2025/Cus_34_SP_TreasureChest</userString>
+		</attachment>
+		<attachment>
+			<id>1034</id>
+			<name>Cus_35_SP_CamoNet</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_35_SP_CamoNet/Cus_35_SP_CamoNet.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_35_SP_CamoNet/Cus_35_SP_CamoNet.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 350g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/st_patricks_day_2025/Cus_35_SP_CamoNet</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Beyond Pandora</name>
+		<userString>#vehicle_customization:attachment/beyond_pandora</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<attachment>
+			<id>1038</id>
+			<name>Cus_36_FGM_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_36_FGM_Machinegun/Cus_36_FGM_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_36_FGM_Machinegun/Cus_36_FGM_Machinegun_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/beyond_pandora/Cus_36_FGM_Machinegun</userString>
+			<description>#vehicle_customization:attachment/beyond_pandora/Cus_36_FGM_Machinegun/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1039</id>
+			<name>Cus_37_FGM_Projector</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_37_FGM_Projector/Cus_37_FGM_Projector.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_37_FGM_Projector/Cus_37_FGM_Projector.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 800g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/beyond_pandora/Cus_37_FGM_Projector</userString>
+		</attachment>
+		<attachment>
+			<id>1045</id>
+			<name>Cus_38_FGM_Luggage</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_38_FGM_Luggage/Cus_38_FGM_Luggage.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_38_FGM_Luggage/Cus_38_FGM_Luggage.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 450g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/beyond_pandora/Cus_38_FGM_Luggage</userString>
+		</attachment>
+		<attachment>
+			<id>1046</id>
+			<name>Cus_39_FGM_Filterunit</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_39_FGM_Filterunit/Cus_39_FGM_Filterunit.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_39_FGM_Filterunit/Cus_39_FGM_Filterunit.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 400g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/beyond_pandora/Cus_39_FGM_Filterunit</userString>
+		</attachment>
+		<attachment>
+			<id>1047</id>
+			<name>Cus_40_FGM_Winch</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_40_FGM_Winch/Cus_40_FGM_Winch.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_40_FGM_Winch/Cus_40_FGM_Winch.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/beyond_pandora/Cus_40_FGM_Winch</userString>
 		</attachment>
 	</itemGroup>
 	<itemGroup>

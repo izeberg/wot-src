@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>fall_tanks</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>FallTanksPersonality</Personality>
+	<EditorPersonality/>
+	<Components>
+		<StaticComponents/>
+		<DynamicComponents>
+			<FallTanksController/>
+			<FallTanksArenaInfo/>
+		</DynamicComponents>
+	</Components>
+	<Entities/>
+	<ExternalComponents/>
+</root>

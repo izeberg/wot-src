@@ -9,6 +9,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "battleResult/battleDuration"
 msgstr "%(date)s, продолжительность боя: %(duration)s"
@@ -56,11 +62,14 @@ msgstr "БОЙ ЗАВЕРШЁН"
 msgid "battleResult/missionName/1"
 msgstr "ОХОТНИК НА ТИГРОВ: Операция «Стальная лавина»"
 
-msgid "battleResult/missionName/1000"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgid "battleResult/missionName/1002"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
-msgid "battleResult/missionName/1001"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgid "battleResult/missionName/1003"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+
+msgid "battleResult/missionName/1004"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "battleResult/missionName/2"
 msgstr "ОХОТНИК НА ТИГРОВ: Операция «Зверолов»"
@@ -73,6 +82,9 @@ msgstr "ОХОТНИК НА «ТИГРОВ»: Операция «Кот в мы�
 
 msgid "battleResult/missionName/5"
 msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+
+msgid "battleResult/missionName/6"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "battleResult/noTasksToComplete"
 msgstr ""
@@ -156,30 +168,26 @@ msgid "entryPoint/timer/dates"
 msgstr "%(startDate)s – %(endDate)"
 
 msgid "entryPoint/title/newMission"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "entryPoint/title/newMode"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "eventWelcomeScreen/column/subtitle/1"
 msgstr ""
-"Эта история приурочена к 80-летию со дня высадки союзников в Нормандии, "
-"также известной как операция «Оверлорд». Отдайте дань уважения героям, "
-"которые заплатили высокую цену, чтобы освободить Европу и положить конец "
-"Второй мировой войне."
+"Эта история приурочена к 80-й годовщине окончания войны в Европе. Доставьте "
+"союзникам приказ о прекращении огня, чтобы остановить кровопролитие."
 
 msgid "eventWelcomeScreen/column/subtitle/2"
 msgstr ""
-"В рамках этой эпичной истории вам предстоит в одиночку сразиться с "
-"соперниками под управлением ИИ. Встречайте и вербуйте танкистов из XIV "
-"сезона Боевого пропуска, задействуйте всю мощь ВМС США и ВВС Великобритании,"
-" избегайте минных полей и уничтожайте бетонные бункеры!"
+"Проходите эту увлекательную одиночную историю, в которой вам нужно незаметно"
+" пробраться мимо противника под управлением ИИ. Избегайте вражеских "
+"патрулей, дезинформируйте их и используйте тактические способности."
 
 msgid "eventWelcomeScreen/column/subtitle/3"
 msgstr ""
-"Выполните все задачи и получите памятную медаль, камуфляжные схемы, "
-"созданные в честь подвига союзных солдат во время высадки в Нормандии в 1944"
-" г., и другие ценные награды."
+"Выполните все задачи, чтобы получить памятную нашивку, премиум машину с "
+"3D-стилем в комплекте и другие награды."
 
 msgid "eventWelcomeScreen/column/title/1"
 msgstr "Исторические события"
@@ -191,7 +199,7 @@ msgid "eventWelcomeScreen/column/title/3"
 msgstr "Награды"
 
 msgid "eventWelcomeScreen/header"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "eventWelcomeScreen/subheader"
 msgstr "%(startDate)s – %(endDate)"
@@ -203,10 +211,17 @@ msgid "missionSelection/about"
 msgstr "ОБ ИСТОРИЯХ"
 
 msgid "missionSelection/difficulty/hard"
-msgstr "Продвинутые"
+msgstr ""
+"Продвинутое\n"
+"секретное задание"
 
 msgid "missionSelection/difficulty/normal"
 msgstr "Простые"
+
+msgid "missionSelection/difficulty/very_hard"
+msgstr ""
+"Продвинутое задание:\n"
+"минное поле"
 
 msgid "missionSelection/exitButton"
 msgstr "ПОКИНУТЬ РЕЖИМ"
@@ -236,23 +251,46 @@ msgstr ""
 "ОПЕРАЦИЯ\n"
 "«ОВЕРЛОРД»"
 
+msgid "missionSelection/lockedMissionName/6"
+msgstr ""
+"ОПЕРАЦИЯ\n"
+"«ПОЧТАЛЬОН»"
+
 msgid "missionSelection/missionDescription/1"
 msgstr ""
 "Брукс: «Ну, как? Пришёл в себя? Медикам потом покажешься. Сейчас каждое орудие на счету. Штурм уже начался. Из-за того, что мы опоздали, всё внимание противника сосредоточено на другом фланге. Это наш шанс. Атакуем сходу. Врываемся в город и зажимаем противника с двух сторон.\n"
 "Едь за нами и не попадись на «зубы дракона». Этих бетонных «клыков» там всё поле в несколько рядов. Ничего. Прорвёмся. Главное, слушай меня и выполняй приказы быстро и чётко. Мы с МакЛаудом тебя прикроем.\n"
 "И да, не обращай внимания на его шутки. У каждого свой способ справляться со стрессом. Вперёд!»"
 
-msgid "missionSelection/missionDescription/1000"
+msgid "missionSelection/missionDescription/1002"
 msgstr ""
-"Капитан Джон Маккормик: «Итак, парни, этот день наступил. Пора заканчивать войну. И мы это сделаем. Все мы: американцы, англичане, французы, канадцы, австралийцы, бельгийцы, чехословаки, греки, голландцы, новозеландцы, норвежцы, поляки. Мы все объединились, чтобы положить конец этому злу.\n"
-"Мы прорвём Атлантический вал и установим плацдарм.\n"
-"Приготовиться к высадке!»"
+"Капитан Смит: «Всё просто. Несколько часов назад Германия подписала капитуляцию. Завтра война закончится.\n"
+"\n"
+"Но мы потеряли радиосвязь с нашими парнями в горах, и они не знают, что мы уже победили. У них приказ атаковать эту чёртову крепость на рассвете. Немецкий гарнизон ещё не получил приказа сложить оружие. Это будет бессмысленная бойня.\n"
+"\n"
+"Мы единственные, кто может это остановить. Наша задача: пройти через вражеские позиции и доставить приказ об отмене штурма. Это самоубийственная миссия, но каждая спасённая жизнь того стоит. С нами будет пленённый немецкий радист, он знает местность и хочет остановить эту мясорубку так же, как и мы.\n"
+"\n"
+"Выдвигаемся»."
 
-msgid "missionSelection/missionDescription/1001"
+msgid "missionSelection/missionDescription/1003"
 msgstr ""
-"Капитан Джон Маккормик: «Итак, парни, этот день наступил. Пора заканчивать войну. И мы это сделаем. Все мы: американцы, англичане, французы, канадцы, австралийцы, бельгийцы, чехословаки, греки, голландцы, новозеландцы, норвежцы, поляки. Мы все объединились, чтобы положить конец этому злу.\n"
-"Мы прорвём Атлантический вал и установим плацдарм.\n"
-"Приготовиться к высадке!»"
+"Капитан Смит: «Всё просто. Несколько часов назад Германия подписала капитуляцию. Завтра война закончится.\n"
+"\n"
+"Но мы потеряли радиосвязь с нашими парнями в горах, и они не знают, что мы уже победили. У них приказ атаковать эту чёртову крепость на рассвете. Немецкий гарнизон ещё не получил приказа сложить оружие. Это будет бессмысленная бойня.\n"
+"\n"
+"Мы единственные, кто может это остановить. Наша задача: пройти через вражеские позиции и доставить приказ об отмене штурма. Это самоубийственная миссия, но каждая спасённая жизнь того стоит. С нами будет пленённый немецкий радист, он знает местность и хочет остановить эту мясорубку так же, как и мы.\n"
+"\n"
+"Выдвигаемся»."
+
+msgid "missionSelection/missionDescription/1004"
+msgstr ""
+"Капитан Смит: «Всё просто. Несколько часов назад Германия подписала капитуляцию. Завтра война закончится.\n"
+"\n"
+"Но мы потеряли радиосвязь с нашими парнями в горах, и они не знают, что мы уже победили. У них приказ атаковать эту чёртову крепость на рассвете. Немецкий гарнизон ещё не получил приказа сложить оружие. Это будет бессмысленная бойня.\n"
+"\n"
+"Мы единственные, кто может это остановить. Наша задача: пройти через вражеские позиции и доставить приказ об отмене штурма. Это самоубийственная миссия, но каждая спасённая жизнь того стоит. С нами будет пленённый немецкий радист, он знает местность и хочет остановить эту мясорубку так же, как и мы.\n"
+"\n"
+"Выдвигаемся»."
 
 msgid "missionSelection/missionDescription/2"
 msgstr ""
@@ -286,14 +324,27 @@ msgstr ""
 "\n"
 "Приготовиться к высадке!»"
 
+msgid "missionSelection/missionDescription/6"
+msgstr ""
+"Капитан Смит: «Всё просто. Несколько часов назад Германия подписала капитуляцию. Завтра война закончится.\n"
+"\n"
+"Но мы потеряли радиосвязь с нашими парнями в горах, и они не знают, что мы уже победили. У них приказ атаковать эту чёртову крепость на рассвете. Немецкий гарнизон ещё не получил приказа сложить оружие. Это будет бессмысленная бойня.\n"
+"\n"
+"Мы единственные, кто может это остановить. Наша задача: пройти через вражеские позиции и доставить приказ об отмене штурма. Это самоубийственная миссия, но каждая спасённая жизнь того стоит. С нами будет пленённый немецкий радист, он знает местность и хочет остановить эту мясорубку так же, как и мы.\n"
+"\n"
+"Выдвигаемся»."
+
 msgid "missionSelection/missionName/1"
 msgstr "ОПЕРАЦИЯ «СТАЛЬНАЯ ЛАВИНА»"
 
-msgid "missionSelection/missionName/1000"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgid "missionSelection/missionName/1002"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
-msgid "missionSelection/missionName/1001"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgid "missionSelection/missionName/1003"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+
+msgid "missionSelection/missionName/1004"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "missionSelection/missionName/2"
 msgstr "ОПЕРАЦИЯ «ЗВЕРОЛОВ»"
@@ -307,11 +358,14 @@ msgstr "ОПЕРАЦИЯ «КОТ В МЫШЕЛОВКЕ»"
 msgid "missionSelection/missionName/5"
 msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
 
+msgid "missionSelection/missionName/6"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+
 msgid "missionSelection/specialVehicle"
 msgstr "Специальная техника"
 
 msgid "missionSelection/tab/event"
-msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "missionSelection/tab/newbies"
 msgstr "ОБУЧАЮЩИЕ ИСТОРИИ"
@@ -319,23 +373,35 @@ msgstr "ОБУЧАЮЩИЕ ИСТОРИИ"
 msgid "missionSelection/taskDescription/1/1"
 msgstr "Атакуйте город и уничтожьте машины противника."
 
-msgid "missionSelection/taskDescription/1000/1"
-msgstr "Прорвите оборону, уничтожьте береговые пушки и захватите плацдарм."
+msgid "missionSelection/taskDescription/1002/1"
+msgstr "Доставьте союзникам приказ о прекращении огня."
 
-msgid "missionSelection/taskDescription/1000/2"
-msgstr "Достигните основных целей задачи менее чем за 16 минут."
+msgid "missionSelection/taskDescription/1002/2"
+msgstr "?empty?"
 
-msgid "missionSelection/taskDescription/1000/3"
+msgid "missionSelection/taskDescription/1002/3"
+msgstr "?empty?"
+
+msgid "missionSelection/taskDescription/1003/1"
+msgstr ""
+"Обследуйте лагеря противника и соберите все фрагменты карты минного поля."
+
+msgid "missionSelection/taskDescription/1003/2"
+msgstr "Достигните основных целей задачи, не уничтожая технику противника."
+
+msgid "missionSelection/taskDescription/1003/3"
 msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
 
-msgid "missionSelection/taskDescription/1001/1"
-msgstr "Прорвите оборону, уничтожьте береговые пушки и захватите плацдарм."
+msgid "missionSelection/taskDescription/1004/1"
+msgstr "Пройдите минное поле и доставьте союзникам приказ о прекращении огня."
 
-msgid "missionSelection/taskDescription/1001/2"
-msgstr "Достигните основных целей задачи менее чем за 16 минут."
+msgid "missionSelection/taskDescription/1004/2"
+msgstr "Достигните основных целей задачи менее чем за %(win_timer)s."
 
-msgid "missionSelection/taskDescription/1001/3"
-msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
+msgid "missionSelection/taskDescription/1004/3"
+msgstr ""
+"Достигните основных целей задачи, не получив урона от мин и артиллерии "
+"противника."
 
 msgid "missionSelection/taskDescription/2/1"
 msgstr "Атакуйте город и уничтожьте машины противника."
@@ -353,24 +419,48 @@ msgid "missionSelection/taskDescription/4/1"
 msgstr "Атакуйте город и захватите «Вундерваффе» противника"
 
 msgid "missionSelection/taskDescription/4/2"
-msgstr "Достигните основных целей задачи менее чем за 18 минут."
+msgstr "Достигните основных целей задачи менее чем за %(win_timer)s."
 
 msgid "missionSelection/taskDescription/4/3"
 msgstr ""
-"Достигните основных целей задачи и уничтожьте не менее 6 машин противника с "
+"Достигните основных целей задачи и уничтожьте не менее %(kill_enemies)s с "
 "помощью авианалёта."
 
 msgid "missionSelection/taskDescription/5/1"
 msgstr "Прорвите оборону, уничтожьте береговые пушки и захватите плацдарм."
 
 msgid "missionSelection/taskDescription/5/2"
-msgstr "Достигните основных целей задачи менее чем за 18 минут."
+msgstr "Достигните основных целей задачи менее чем за %(win_timer)s."
 
 msgid "missionSelection/taskDescription/5/3"
 msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
 
+msgid "missionSelection/taskDescription/6/1"
+msgstr "Доставьте союзникам приказ о прекращении огня."
+
+msgid "missionSelection/taskDescription/6/2"
+msgstr "Достигните основных целей задачи, уничтожив менее %(kill_enemies)s."
+
+msgid "missionSelection/taskDescription/6/3"
+msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
+
+msgid "missionSelection/taskDescription/kill_enemies"
+msgid_plural "plural/missionSelection/taskDescription/kill_enemies"
+msgstr[0] "%(value)s машины противника"
+msgstr[1] "%(value)s машин противника"
+msgstr[2] "%(value)s машин противника"
+
 msgid "missionSelection/taskDescription/locked"
 msgstr "Задача недоступна: %(timer)s"
+
+msgid "missionSelection/taskDescription/win_timer"
+msgid_plural "plural/missionSelection/taskDescription/win_timer"
+msgstr[0] "%(value)s минуту"
+msgstr[1] "%(value)s минуты"
+msgstr[2] "%(value)s минут"
+
+msgid "missionSelection/taskRewards"
+msgstr "Награда: "
 
 msgid "missionSelection/tooltipDescription"
 msgstr "Эта машина доступна только в режиме «Истории»."
@@ -387,7 +477,7 @@ msgid "mode/story_mode/description"
 msgstr "Выполните сюжетные операции против машин под управлением ИИ."
 
 msgid "mode/story_mode_event/callToAction"
-msgstr "Доступна операция «Оверлорд»"
+msgstr "Доступна операция «Почтальон»"
 
 msgid "newbieAdvertisingScreen/column/subtitle/1"
 msgstr ""
@@ -504,33 +594,55 @@ msgstr "Выполненные задачи"
 
 msgid "tooltips/battleResultStat/missions/info"
 msgstr ""
-"Количество выполненных задач\n"
-"и всех задач, доступных на данный момент.\n"
-"Задачи, выполняемые на продвинутом\n"
-"уровне сложности, автоматически\n"
-"выполняются и на простом."
+"Количество выполненных задач и\n"
+"все текущие доступные задачи."
 
 msgid "tooltips/difficulty/available"
 msgstr "Доступно"
 
 msgid "tooltips/difficulty/hard/description"
 msgstr ""
-"Противник быстрее реагирует, точнее стреляет и энергичнее нападает на вас. Взамен выполненные задачи принесут больше наград.\n"
-"Задачи, выполняемые на продвинутом уровне сложности, автоматически выполняются и на простом."
+"Более сложный вариант этапа «Секретное задание» с нелинейной структурой, большим количеством техники противника и дополнительными фрагменты карты.\n"
+"Награда за выполнение увеличена."
+
+msgid "tooltips/difficulty/hard/info/body"
+msgstr ""
+"Выполняя задачу на {whiteSpanish_Open}продвинутой{whiteSpanish_Close} "
+"сложности, вы автоматически выполняете их на "
+"{whiteSpanish_Open}простой{whiteSpanish_Close}. Вы также получите награды за"
+" оба уровня сложности."
+
+msgid "tooltips/difficulty/hard/info/title"
+msgstr "Дополнительное условие"
 
 msgid "tooltips/difficulty/hard/title"
-msgstr "Продвинутые"
+msgstr "Секретное задание, продвинутый"
+
+msgid "tooltips/difficulty/locked/body"
+msgstr "Чтобы открыть продвинутый уровень, завершите эту операцию на простом."
+
+msgid "tooltips/difficulty/locked/title"
+msgstr "Недоступно"
 
 msgid "tooltips/difficulty/normal/description"
 msgstr ""
-"Соперники медленнее и не такие меткие, а за выполненные задачи вы получите "
-"стандартные награды."
+"Меньше противников и линейная структура операции, чтобы познакомиться с правилами и целями режима.\n"
+"Включает вступительный этап, а также этапы «Секретное задание» и «Минное поле».\n"
+"За выполнение полагаются стандартные награды."
 
 msgid "tooltips/difficulty/normal/title"
 msgstr "Простые"
 
 msgid "tooltips/difficulty/selected"
 msgstr "Выбрано"
+
+msgid "tooltips/difficulty/very_hard/description"
+msgstr ""
+"Более сложный вариант этапа «Минное поле» в этой операции. Кто осмелится войти в этот смертельный лабиринт?\n"
+"Награда за выполнение увеличена."
+
+msgid "tooltips/difficulty/very_hard/title"
+msgstr "Минное поле, продвинутый"
 
 msgid "tooltips/task/active"
 msgstr "Выполняется"

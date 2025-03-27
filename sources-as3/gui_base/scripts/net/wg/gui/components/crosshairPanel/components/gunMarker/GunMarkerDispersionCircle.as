@@ -61,6 +61,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.mixingType0.visible = this.mixingType1.visible = this.mixingType2.visible = this.mixingType3.visible = this.mixingType4.visible = this.mixingType5.visible = false;
       }
       
+      protected function get mixings() : Object
+      {
+         return this._mixings;
+      }
+      
       override protected function draw() : void
       {
          super.draw();

@@ -10,6 +10,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "badgeTooltip/title"
+msgstr "Нашивка %(badge_name)s"
+
 msgid "button/close"
 msgstr "ЗАКРЫТЬ"
 
@@ -36,3 +39,15 @@ msgstr "ИСТОРИЯ «ОХОТНИК НА ТИГРОВ»"
 
 msgid "congratulationsWindow/onboardingMedal/title"
 msgstr "ВСЕ ОПЕРАЦИИ ЗАВЕРШЕНЫ!"
+
+msgid "congratulationsWindow/vDayHero/badgeName"
+msgstr "Нашивка «Экспресс-доставка»"
+
+msgid "congratulationsWindow/vDayHero/medalName"
+msgstr "Медаль «Экспресс-доставка»"
+
+msgid "congratulationsWindow/vDayHero/subTitle"
+msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+
+msgid "congratulationsWindow/vDayHero/title"
+msgstr "ДОПОЛНИТЕЛЬНОЕ ИСПЫТАНИЕ ПРОЙДЕНО"

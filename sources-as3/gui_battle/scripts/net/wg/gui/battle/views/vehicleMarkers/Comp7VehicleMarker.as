@@ -110,10 +110,11 @@ package net.wg.gui.battle.views.vehicleMarkers
          super.onDispose();
       }
       
-      override protected function prepareOffsets() : void
+      override protected function prepareOffsets() : Array
       {
-         super.prepareOffsets();
-         offsets.unshift(0);
+         var _loc1_:Array = super.prepareOffsets();
+         _loc1_.unshift(0);
+         return _loc1_;
       }
       
       override protected function initialDrawParts() : void
@@ -168,7 +169,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       override protected function updatePartsVisibility() : Vector.<Boolean>
       {
-         var _loc1_:Vector.<Boolean> = super.updatePartsVisibility();
+         var _loc1_:Vector.<Boolean> = null;
+         _loc1_ = super.updatePartsVisibility();
          var _loc2_:Boolean = this.getRoleSkillVisible();
          _loc1_.unshift(_loc2_);
          this.roleSkillLevel.visible = _loc2_;

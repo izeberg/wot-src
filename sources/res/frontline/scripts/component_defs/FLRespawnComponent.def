@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<onUpdateVehicleInfo>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>PYTHON</Arg>
+		</onUpdateVehicleInfo>
+	</CellMethods>
+	<BaseMethods>
+		<arenaFinish>
+			<Arg>UINT8</Arg>
+		</arenaFinish>
+	</BaseMethods>
+	<ofEntity>
+		<Arena/>
+	</ofEntity>
+	<DefaultKeyName>FLRespawnComponent</DefaultKeyName>
+</root>
