@@ -507,17 +507,23 @@ def getNewRecruitsCounter():
 
 def getNewRecruits():
     previous = AccountSettings.getNotifications(RECRUITS_NOTIFICATIONS)
+    recruitIDs = getRecruitIDs()
     newRecruitsList = {}
-    for recruitID, count in getRecruitIDs().iteritems():
-        seenRecruitCount = previous.get(recruitID)
-        if seenRecruitCount:
-            needToSeeCount = count - seenRecruitCount
-            if not needToSeeCount:
-                continue
+    updatedPrevious = {}
+    for recruitID, count in recruitIDs.iteritems():
+        seenRecruitCount = previous.get(recruitID, 0)
+        if count < seenRecruitCount:
+            seenRecruitCount = count
+            updatedPrevious[recruitID] = seenRecruitCount
+        needToSeeCount = count - seenRecruitCount
+        if needToSeeCount > 0:
             newRecruitsList[recruitID] = needToSeeCount
-        else:
-            newRecruitsList[recruitID] = count
 
+    if updatedPrevious:
+        for recruitID, count in updatedPrevious.iteritems():
+            previous[recruitID] = count
+
+        AccountSettings.setNotifications(RECRUITS_NOTIFICATIONS, previous)
     return newRecruitsList
 
 

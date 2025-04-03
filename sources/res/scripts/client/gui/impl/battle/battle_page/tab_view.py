@@ -193,8 +193,9 @@ class TabView(ViewImpl):
         self._resetChatActions()
         self._updateLiveTags()
 
-    def _fillPlayerList(self, playerList, playerInfo):
+    def _fillPlayerListModel(self, playerList, playerInfo):
         playerList.clear()
+        playerList.reserve(len(playerInfo))
         for index, player in enumerate(playerInfo):
             playerList.addViewModel(player)
             self.__playerIndexes[player.getVehicleId()] = index
@@ -228,15 +229,20 @@ class TabView(ViewImpl):
 
     def _invalidateVehiclesInfo(self, *args):
         self.__playerIndexes.clear()
+        allies = []
+        enemies = []
+        for vehicleId, vehicleInfo in self._visitor.getArenaVehicles().iteritems():
+            player = self._fillPlayerModel(vehicleId, vehicleInfo)
+            if self._isAlly(vehicleInfo):
+                allies.append(player)
+            else:
+                enemies.append(player)
+
         with self.viewModel.transaction() as (model):
-            allies = []
-            enemies = []
-            for vehicleId, vehicleInfo in self._visitor.getArenaVehicles().iteritems():
-                player = self._fillPlayerModel(vehicleId, vehicleInfo)
-                if self._isAlly(vehicleInfo):
-                    allies.append(player)
-                else:
-                    enemies.append(player)
+            self._fillSortedPlayerListModel(model.playerList.getAllies(), allies)
+            self._fillSortedPlayerListModel(model.playerList.getEnemies(), enemies)
+
+    def _fillSortedPlayerListModel(self, playersList, battlePlayers):
 
         def getPlayerSortingCondition(player):
             return (
@@ -247,8 +253,23 @@ class TabView(ViewImpl):
              player.getHiddenUserName() if player.getIsFakeNameVisible() else player.getUserName(),
              player.getVehicleId())
 
-        self._fillPlayerList(model.playerList.getAllies(), sorted(allies, key=getPlayerSortingCondition))
-        self._fillPlayerList(model.playerList.getEnemies(), sorted(enemies, key=getPlayerSortingCondition))
+        self._fillPlayerListModel(playersList, sorted(battlePlayers, key=getPlayerSortingCondition))
+
+    def _onVehicleUpdated(self, vehicleId):
+        with self.viewModel.transaction():
+            self._updateStatus(vehicleId)
+            self._resortPlayerList(self._getPlayerList(self._getVehicleInfo(vehicleId)))
+
+    def _onVehicleAdded(self, vehicleId):
+        with self.viewModel.transaction():
+            vehicleInfo = self._getVehicleInfo(vehicleId)
+            player = self._fillPlayerModel(vehicleId, vehicleInfo)
+            playerList = self._getPlayerList(vehicleInfo)
+            self._resortPlayerList(playerList, [player])
+
+    def _resortPlayerList(self, playerList, playersToAdd=None):
+        players = [ battlePlayer for battlePlayer in playerList ]
+        self._fillSortedPlayerListModel(playerList, players + playersToAdd if playersToAdd else players)
 
     def _fillPlayerModel(self, vehicleId, vehicleInfo):
         playerVehicleID = avatar_getter.getPlayerVehicleID()
@@ -281,7 +302,7 @@ class TabView(ViewImpl):
             return
         playerVehicleInfo = arenaDP.getVehicleInfo(playerVehicleID)
         player.setPlatoon(arenaDP.getVehicleInfo(vehicleId).squadIndex)
-        player.setIsMyPlatoon(playerVehicleInfo.squadIndex != 0 and playerVehicleInfo.squadIndex == arenaDP.getVehicleInfo(vehicleId).squadIndex)
+        player.setIsMyPlatoon(playerVehicleInfo.prebattleID != 0 and playerVehicleInfo.prebattleID == arenaDP.getVehicleInfo(vehicleId).prebattleID)
         player.setIsPlatoonInvitationDisabled(not self._isPlatoonInvitationEnabled(vehicleId))
 
     def _isPlatoonInvitationEnabled(self, vehicleId):
@@ -423,7 +444,7 @@ class TabView(ViewImpl):
         updatedVehicles = {update[1].vehicleID for update in updated}
         for vehicleId in updatedVehicles:
             if vehicleId not in self.__playerIndexes:
-                self._invalidateVehiclesInfo()
+                self._onVehicleAdded(vehicleId)
                 return
             self._updateStats(vehicleId)
 
@@ -618,9 +639,9 @@ class TabView(ViewImpl):
              (
               self.arena.onNewVehicleListReceived, self._invalidateGameInfo),
              (
-              self.arena.onVehicleAdded, self._invalidateGameInfo),
+              self.arena.onVehicleAdded, self._onVehicleAdded),
              (
-              self.arena.onVehicleUpdated, self._invalidateGameInfo),
+              self.arena.onVehicleUpdated, self._onVehicleUpdated),
              (
               self.arena.onVehicleKilled, self._updateStatus),
              (
@@ -647,6 +668,9 @@ class TabView(ViewImpl):
             events.append((self.prbInvites.onInvitesListInited, self._updateInvites))
         if self.battleField is not None:
             events.append((self.battleField.onSpottedStatusChanged, self._onSpottedStatusChanged))
+        dynSquads = self.sessionProvider.dynamic.dynSquads
+        if dynSquads is not None:
+            events.append((dynSquads.onDynSquadCreatedOrJoined, self._updateInvites))
         return events
 
     def handleTabChange(self, tabAlias):

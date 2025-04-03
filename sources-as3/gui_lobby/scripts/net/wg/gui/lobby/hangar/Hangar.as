@@ -109,7 +109,9 @@ package net.wg.gui.lobby.hangar
       
       private static const VEH_RESEARCH_PANEL_OFFSET:int = 37;
       
-      private static const DQ_WIDGET_NORMAL_HEIGHT:int = 265;
+      private static const DQ_WIDGET_NORMAL_HEIGHT:int = 184;
+      
+      private static const COPM7_DQ_WIDGET_NORMAL_HEIGHT:int = 265;
       
       private static const DQ_WIDGET_MINI_HEIGHT:int = 60;
       
@@ -1036,8 +1038,10 @@ package net.wg.gui.lobby.hangar
       private function setupWidgetSizes() : void
       {
          this._widgetSizes = new Dictionary();
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [365,266];
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [270,65];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [340,186];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [190,65];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_NORMAL] = [365,266];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_MINI] = [270,65];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO] = [155,55];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_SINGLE] = [340,62];
       }
@@ -1129,9 +1133,13 @@ package net.wg.gui.lobby.hangar
       {
          switch(this._currentWidgetLayout)
          {
+            case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_NORMAL:
+               this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - COPM7_DQ_WIDGET_NORMAL_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET;
+               break;
             case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL:
                this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_NORMAL_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET;
                break;
+            case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_MINI:
             case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI:
                this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_MINI_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET_MINI;
                break;
@@ -1152,11 +1160,11 @@ package net.wg.gui.lobby.hangar
          var _loc1_:int = !!this._isComp7SpaceLoaded ? int(COMP7_DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD) : int(DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD);
          if(App.appWidth >= DQ_WIDGET_WIDTH_THRESHOLD && this._carousel.y >= _loc1_)
          {
-            return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL;
+            return !!this._isComp7SpaceLoaded ? int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_NORMAL) : int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL);
          }
          if(App.appWidth > DQ_WIDGET_WIDTH_THRESHOLD)
          {
-            return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI;
+            return !!this._isComp7SpaceLoaded ? int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_MINI) : int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI);
          }
          return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO;
       }

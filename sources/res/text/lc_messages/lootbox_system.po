@@ -325,16 +325,11 @@ msgstr ""
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "К наградам"
 
-msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
-msgstr "Открыто коробок: %(boxes)s"
-
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
-msgstr "Оставшиеся коробки открыты"
+msgstr "Получены награды"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
-msgstr ""
-"После завершения события мы открыли за вас коробки и начислили их "
-"содержимое."
+msgstr "Мы начислили награды, которые вы не получили во время события."
 
 msgid "serviceChannelMessages/lootBoxesDisabled/header"
 msgstr "Открытие коробок приостановлено"

@@ -58,14 +58,7 @@ class WotPlusAssistant(object):
         self._crewAssistant.heatCache()
         self._optDeviceAssistant.heatCache()
 
-    def stop(self):
-        if self._isStarted:
-            self._crewAssistant.stop()
-            self._optDeviceAssistant.stop()
-            self._isStarted = False
-
     def clear(self):
-        self.stop()
         self._loadoutsObtained = False
 
     def clearWithCacheDelete(self):
@@ -105,9 +98,7 @@ class WotPlusAssistant(object):
         return
 
     def destroy(self):
+        self._isStarted = False
         self._optDeviceAssistant.destroy()
-        self._optDeviceAssistant = None
         self._crewAssistant.destroy()
-        self._crewAssistant = None
         self.clear()
-        return

@@ -156,18 +156,16 @@ package net.wg.gui.battle.random.views.stats.components.tabScreen
       
       protected function updateCurrentTab() : void
       {
+         var _loc1_:* = undefined;
          var _loc3_:Boolean = false;
-         var _loc1_:* = this.getTabDataAlias(this.tabs.selectedIndex);
+         _loc1_ = this.getTabDataAlias(this.tabs.selectedIndex);
          var _loc2_:Boolean = _loc1_ == STATS_TAB_ALIAS;
-         if(visible)
-         {
-            onStatsTableVisibiltyToggledS(_loc2_);
-         }
          _loc3_ = _loc1_ == QUEST_TAB_ALIAS;
          var _loc4_:Boolean = _loc3_ && this._hasQuestToPerform;
+         var _loc5_:Boolean = !_loc3_ && visible;
          if(this.tabContent)
          {
-            this.tabContent.visible = !_loc3_;
+            this.tabContent.visible = _loc5_;
          }
          if(this.tabQuest)
          {
@@ -179,6 +177,7 @@ package net.wg.gui.battle.random.views.stats.components.tabScreen
             this.setTitle();
          }
          this.noQuestTitleTF.visible = this.noQuestDescrTF.visible = !this._hasQuestToPerform && _loc3_;
+         onStatsTableVisibiltyToggledS(_loc2_ && visible);
       }
       
       override public function set visible(param1:Boolean) : void
@@ -192,15 +191,7 @@ package net.wg.gui.battle.random.views.stats.components.tabScreen
          {
             return;
          }
-         var _loc2_:Boolean = this.getTabDataAlias(this.tabs.selectedIndex) == STATS_TAB_ALIAS;
-         if(visible)
-         {
-            onStatsTableVisibiltyToggledS(_loc2_);
-         }
-         else
-         {
-            onStatsTableVisibiltyToggledS(false);
-         }
+         this.updateCurrentTab();
       }
       
       private function getTabDataAlias(param1:int) : String

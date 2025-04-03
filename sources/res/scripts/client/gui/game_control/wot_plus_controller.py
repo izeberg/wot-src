@@ -112,7 +112,6 @@ class WotPlusController(IWotPlusController, CallbackDelayer):
 
     def onAccountBecomeNonPlayer(self):
         self._lobbyContext.getServerSettings().onServerSettingsChange -= self._onServerSettingsChange
-        self._assistant.stop()
         self._account = None
         self._cancelScheduledInvalidation()
         return

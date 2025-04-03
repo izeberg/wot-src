@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/french/F127_AMX_ELC_901/crash/lod3/Hull</nodefullVisual>
 	<parent>vehicles/french/F127_AMX_ELC_901/crash/lod4/Hull</parent>
 	<extent>192.000000</extent>
 	<visibilityBox>
@@ -8,4 +7,5 @@
 		<max>1.153813 0.358864 1.869524</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F127_AMX_ELC_901/crash/lod3/Hull</nodefullVisual>
 </root>

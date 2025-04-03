@@ -211,7 +211,6 @@ class _RemoteDataProvider(_IOptDeviceAssistDataProvider):
         super(_RemoteDataProvider, self).__init__()
         self._initiated = False
         self._cache = EquipmentForSubscribersCache()
-        self._clientCacheUpdatedAt = 0
 
     def start(self):
         self._cache.onRead += self._onCacheRead
@@ -232,7 +231,7 @@ class _RemoteDataProvider(_IOptDeviceAssistDataProvider):
 
     @property
     def clientCacheUpdatedAt(self):
-        return self._clientCacheUpdatedAt
+        return self._cache.getUpdatedAtTimestamp()
 
     @property
     def initiated(self):
@@ -271,7 +270,6 @@ class _RemoteDataProvider(_IOptDeviceAssistDataProvider):
         if self._cache.isCacheEmpty():
             return
         self._initiated = True
-        self._clientCacheUpdatedAt = self._cache.getUpdatedAtTimestamp()
 
 
 class OptionalDevicesAssistantCtrl(object):
@@ -315,9 +313,7 @@ class OptionalDevicesAssistantCtrl(object):
 
     def destroy(self):
         self._localDataProvider.destroy()
-        self._localDataProvider = None
         self._remoteDataProvider.destroy()
-        return
 
     def deleteClientCacheFile(self):
         self._remoteDataProvider.deleteCacheFile()

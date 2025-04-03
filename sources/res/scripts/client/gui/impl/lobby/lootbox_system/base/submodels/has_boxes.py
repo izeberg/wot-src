@@ -180,17 +180,14 @@ class HasBoxes(SubViewImpl):
         count = int(ctx.get('count'))
 
         def processResult(bonuses):
-            model.setIsAwaitingResponse(False)
             self.parentView.switchToSubView(isBackground=True, eventName=self.__eventName)
             self.parentView.switchToSubView(SubViewID.MULTIPLE_BOXES_REWARDS if count > 1 else SubViewID.SINGLE_BOX_REWARDS, category=self.boxCategory, count=count, bonuses=bonuses, eventName=self.__eventName, backCallback=self.__backCallback)
 
         model.setIsError(False)
-        model.setIsAwaitingResponse(True)
         openBoxes(self.__eventName, self.boxCategory, count, processResult)
 
     @replaceNoneKwargsModel
     def __onErrorBack(self, _, model=None):
-        model.setIsAwaitingResponse(False)
         model.setIsError(True)
 
     def __buyBoxes(self):

@@ -216,13 +216,13 @@ class YearlyRewardsPage(PageSubModelPresenter):
         self.__setSeasonData(model)
         self.__setLegendData(model)
 
-    def __areLastSeasonPointsReceived(self):
-        lastSeason = self.__comp7Controller.getActualSeasonNumber()
-        if lastSeason is None:
+    def __areActualSeasonPointsReceived(self):
+        actualSeason = self.__comp7Controller.getActualSeasonNumber()
+        if actualSeason is None:
             return False
         else:
-            lastSeasonPointsEntitlement = seasonPointsCodeBySeasonNumber(lastSeason)
-            return self.__comp7Controller.getReceivedSeasonPoints().get(lastSeasonPointsEntitlement, 0) > 0
+            actualSeasonPointsEntitlement = seasonPointsCodeBySeasonNumber(actualSeason)
+            return self.__comp7Controller.getReceivedSeasonPoints().get(actualSeasonPointsEntitlement, 0) > 0
 
     def __setSeasonData(self, model):
         actualSeason = self.__comp7Controller.getActualSeasonNumber()
@@ -270,7 +270,7 @@ class YearlyRewardsPage(PageSubModelPresenter):
         self.__tooltips = []
         self.__bonusData = {}
         prevRewardsCost = 0
-        seasonPointsGenerator = _SeasonPointsGenerator()
+        seasonPointsGenerator = _SeasonPointsGenerator(self.__areActualSeasonPointsReceived())
         sortedRewards = sorted(self.__comp7Controller.getYearlyRewards().main, key=lambda data: data['cost'])
         for idx, rewardsData in enumerate(sortedRewards):
             cardSeasonPoints = seasonPointsGenerator.getNext(rewardsData['cost'] - prevRewardsCost)
@@ -340,8 +340,8 @@ class YearlyRewardsPage(PageSubModelPresenter):
 class _SeasonPointsGenerator(object):
     __comp7Controller = dependency.descriptor(IComp7Controller)
 
-    def __init__(self):
-        self.__allPointsStates = self.__composePointsStates()
+    def __init__(self, areActualSeasonPointsReceived):
+        self.__allPointsStates = self.__composePointsStates(areActualSeasonPointsReceived)
 
     def getNext(self, rewardsCount):
         result, self.__allPointsStates = self.__allPointsStates[:rewardsCount], self.__allPointsStates[rewardsCount:]
@@ -349,7 +349,7 @@ class _SeasonPointsGenerator(object):
             result += [(SeasonPointState.NOTACHIEVED, None)] * (rewardsCount - len(result))
         return result
 
-    def __composePointsStates(self):
+    def __composePointsStates(self, areActualSeasonPointsReceived):
         result = []
         achievedPoints = self.__getAchievedPoints()
         for seasonName, count in achievedPoints:
@@ -358,7 +358,7 @@ class _SeasonPointsGenerator(object):
         if self.__comp7Controller.getActualSeasonNumber() is None:
             return result
         else:
-            if not self.__comp7Controller.isQualificationActive():
+            if not self.__comp7Controller.isQualificationActive() and not areActualSeasonPointsReceived:
                 possiblePointsCount = getPlayerDivision().seasonPoints
                 result += [(SeasonPointState.POSSIBLE, getSeasonNameEnum())] * possiblePointsCount
             return result

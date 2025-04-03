@@ -46,6 +46,8 @@ class VehicleDescrCrew(object):
         self._useCachedLevelIncrease = False
         self.lastUsedLevels = {}
         self._extendedSkills = {}
+        self._disabledProcessorsBySkillName = {
+         'radioman_finder'}
         return
 
     def boostSkillBy(self, equipment):
@@ -68,7 +70,7 @@ class VehicleDescrCrew(object):
     def callSkillProcessor(self, skillName, *args):
         try:
             skillProcessor = self._skillProcessors.get(skillName)
-            if skillProcessor is None:
+            if skillProcessor is None or skillName in self._disabledProcessorsBySkillName:
                 return
             equipment = self._boostedSkills.get(skillName)
             if equipment is not None:
@@ -183,6 +185,9 @@ class VehicleDescrCrew(object):
             crewData.append((idx, float(descr.roleLevel)))
 
         return crewData
+
+    def modifySkillProcessors(self):
+        self._disabledProcessorsBySkillName.remove('radioman_finder')
 
     def _calcLeverIncreaseForNonCommander(self, commonLevelIncrease):
         if not self._activityFlags[self._commanderIdx]:
@@ -371,8 +376,6 @@ class VehicleDescrCrew(object):
         self._process_perk(a, 'increaseCircularVisionRadius', 'circularVisionRadiusB')
 
     def _process_radioman_finder(self, a):
-        if IS_CLIENT:
-            return
         self._process_perk(a, 'vehicleCircularVisionRadius', 'circularVisionRadiusB')
 
     def _process_perk(self, a, argName, factorName):

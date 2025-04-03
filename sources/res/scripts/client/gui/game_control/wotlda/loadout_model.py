@@ -6,10 +6,14 @@ from renewable_subscription_common.optional_devices_usage_config import VehicleL
 if TYPE_CHECKING:
     from dict2model.fields import Number
     _OptDevicePreset = Tuple[(OptDeviceAssistType, int, List[VehicleLoadout])]
-_MODERNIZED_ARCHETYPES_TO_SIMPLE_DEVICES = {'modernizedAimDrivesAimingStabilizer': 'aimingStabilizer', 
+_MODERNIZED_ARCHETYPES_TO_SIMPLE_DEVICES = {'modernizedAimDrivesAimingStabilizer': 'enhancedAimDrives', 
    'modernizedTurbochargerRotationMechanism': 'turbocharger', 
    'modernizedExtraHealthReserveAntifragmentationLining': 'extraHealthReserve', 
    'modernizedImprovedSightsEnhancedAimDrives': 'improvedSights'}
+_SIMPLE_DEVICES_TO_MODERNIZED_ARCHETYPES = {'enhancedAimDrives': 'modernizedAimDrivesAimingStabilizer', 
+   'turbocharger': 'modernizedTurbochargerRotationMechanism', 
+   'extraHealthReserve': 'modernizedExtraHealthReserveAntifragmentationLining', 
+   'improvedSights': 'modernizedImprovedSightsEnhancedAimDrives'}
 
 class VehicleIdField(fields.Integer):
 
@@ -85,12 +89,15 @@ class BaseOptDeviceLoadoutModel(models.Model):
         self.equipmentArchetype3 = equipment_archetype_id_3
         self.usagePercentage = usage_percentage
 
-    def getDevices(self, convertModernized=False):
+    def getDevices(self, getModernized=False):
         devices = [ device for device in (self.equipmentArchetype1, self.equipmentArchetype2, self.equipmentArchetype3) if device
                   ]
-        if convertModernized:
+        if not getModernized:
             return [ _MODERNIZED_ARCHETYPES_TO_SIMPLE_DEVICES.get(device, device) for device in devices ]
-        return devices
+        return [ self._getDeviceTierArchetype(device) for device in devices ]
+
+    def _getDeviceTierArchetype(self, device):
+        return _SIMPLE_DEVICES_TO_MODERNIZED_ARCHETYPES.get(device, device)
 
 
 class BaseOptDeviceLoadoutSchema(Schema[BaseOptDeviceLoadoutModel]):

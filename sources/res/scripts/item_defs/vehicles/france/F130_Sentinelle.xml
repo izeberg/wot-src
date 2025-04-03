@@ -2292,6 +2292,7 @@
 					<name>WD_L0</name>
 					<radius>0.302505</radius>
 					<isLeading>true</isLeading>
+					<syncAngle>30</syncAngle>
 				</wheel>
 				<group>
 					<isLeft>true</isLeft>
@@ -2305,6 +2306,7 @@
 					<name>WD_L5</name>
 					<radius>0.336191</radius>
 					<isLeading>true</isLeading>
+					<syncAngle>30</syncAngle>
 				</wheel>
 				<group>
 					<isLeft>true</isLeft>
@@ -2318,6 +2320,7 @@
 					<name>WD_R0</name>
 					<radius>0.302505</radius>
 					<isLeading>true</isLeading>
+					<syncAngle>30</syncAngle>
 				</wheel>
 				<group>
 					<isLeft>false</isLeft>
@@ -2331,6 +2334,7 @@
 					<name>WD_R5</name>
 					<radius>0.336191</radius>
 					<isLeading>true</isLeading>
+					<syncAngle>30</syncAngle>
 				</wheel>
 				<group>
 					<isLeft>false</isLeft>
@@ -2622,14 +2626,14 @@
 						<wheel>
 							<name>WD_L5</name>
 							<radius>
-								0.3
+								0.31
 								<!--BW_String-->
 							</radius>
 						</wheel>
 						<wheel>
 							<name>WD_L0</name>
 							<radius>
-								0.31
+								0.32
 								<!--BW_String-->
 							</radius>
 						</wheel>
@@ -2643,12 +2647,12 @@
 								-2.97489
 								<!--BW_String-->
 							</startAngle>
-							<teethCount>6</teethCount>
+							<teethCount>12</teethCount>
 						</sync>
 						<sync>
 							<name>WD_L0</name>
 							<startAngle>0.039872</startAngle>
-							<teethCount>6</teethCount>
+							<teethCount>12</teethCount>
 						</sync>
 					</teethSyncs>
 					<collisionHull>
@@ -3147,14 +3151,14 @@
 						<wheel>
 							<name>WD_R5</name>
 							<radius>
-								0.3
+								0.31
 								<!--BW_String-->
 							</radius>
 						</wheel>
 						<wheel>
 							<name>WD_R0</name>
 							<radius>
-								0.31
+								0.32
 								<!--BW_String-->
 							</radius>
 						</wheel>
@@ -3165,12 +3169,12 @@
 						<sync>
 							<name>WD_R5</name>
 							<startAngle>-2.974896</startAngle>
-							<teethCount>6</teethCount>
+							<teethCount>12</teethCount>
 						</sync>
 						<sync>
 							<name>WD_R0</name>
 							<startAngle>0.039872</startAngle>
-							<teethCount>6</teethCount>
+							<teethCount>12</teethCount>
 						</sync>
 					</teethSyncs>
 					<collisionHull>

@@ -39,6 +39,7 @@ class CrewAssistantCtrl(object):
 
     def destroy(self):
         self._lobbyContext.getServerSettings().onServerSettingsChange -= self._onServerSettingsChange
+        self._cache.clear()
 
     def fillLoadouts(self, loadouts):
         if not loadouts:
@@ -53,10 +54,6 @@ class CrewAssistantCtrl(object):
     def start(self):
         self._lobbyContext.getServerSettings().onServerSettingsChange += self._onServerSettingsChange
         self.__isEnabled = self._lobbyContext.getServerSettings().isCrewAssistantEnabled()
-
-    def stop(self):
-        self._lobbyContext.getServerSettings().onServerSettingsChange -= self._onServerSettingsChange
-        self._cache.clearCache()
 
     def isEnabled(self):
         return self.__isEnabled

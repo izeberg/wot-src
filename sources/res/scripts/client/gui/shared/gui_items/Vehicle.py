@@ -1868,7 +1868,7 @@ class Vehicle(FittingItem):
                 continue
             tmanDescr = tman.descriptor
             skills = tmanDescr.skills[:]
-            if tmanDescr.skillLevel(skillName) < tankmen.MAX_SKILL_LEVEL:
+            if skillName in skills and tmanDescr.skillLevel(skillName) < tankmen.MAX_SKILL_LEVEL:
                 lastSkillLevel = tankmen.MAX_SKILL_LEVEL
             else:
                 lastSkillLevel = tmanDescr.lastSkillLevel

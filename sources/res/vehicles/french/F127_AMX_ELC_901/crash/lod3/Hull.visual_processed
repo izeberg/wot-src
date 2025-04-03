@@ -54,36 +54,40 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat_inside</identifier>
+					<identifier>tank_hull_01</identifier>
 					<property>
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
+						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
+						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
+						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
+						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_AO.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>true</Bool>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001505 -0.073335 -0.103112</groupOrigin>
+				<groupOrigin>-0.009787 -0.061905 -0.111717</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -125,52 +129,48 @@
 						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.008332 -0.285856 -0.071772</groupOrigin>
+				<groupOrigin>-0.000173 -0.285856 -0.071586</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>tank_hull_01</identifier>
+					<identifier>tank_mat_inside</identifier>
 					<property>
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_GMM.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_ANM.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_AM.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/french/F127_AMX_ELC_901/AMX_ELC_901_hull_01_AO.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.009787 -0.061905 -0.111717</groupOrigin>
+				<groupOrigin>-0.001505 -0.073335 -0.103112</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.143628 -0.672380 -2.092958</min>
-		<max>1.153813 0.358864 1.869524</max>
+		<max>1.124054 0.358864 1.869524</max>
 	</boundingBox>
-	<geometrySize>232544</geometrySize>
+	<geometrySize>232352</geometrySize>
 	<minUVDensity>0.010733</minUVDensity>
 </root>

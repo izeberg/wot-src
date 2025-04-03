@@ -142,7 +142,7 @@ class OptDevicesDataProvider(BaseDataProvider):
 
     def isCurrentPresetDisableReasonChanged(self):
         presets = self.__getPresetsInfo()
-        if self.presets[self.currentPresetIndex].disableReason != presets[self.currentPresetIndex].disableReason:
+        if presets and self.presets[self.currentPresetIndex].disableReason != presets[self.currentPresetIndex].disableReason:
             self.presets = presets
             return True
         return False
@@ -187,10 +187,13 @@ class OptDevicesDataProvider(BaseDataProvider):
         if not loadout:
             _logger.warning('No easy tank loadouts were found for vehicle %d.', self.vehicle.intCD)
             return
-        standardLoadoutDevices = loadout.getDevices(convertModernized=True)
-        loadoutDevices = loadout.getDevices()
+        standardLoadoutDevices = loadout.getDevices()
+        modernizedLoadoutDevices = loadout.getDevices(getModernized=True)
         standardOptDevices = self.__getStandardOptDevices(standardLoadoutDevices)
-        advancedOptDevices = self.__getAdvancedOptDevices(loadoutDevices, standardOptDevices)
+        upgradedOptDevices = self.__getAdvancedOptDevices(standardLoadoutDevices, standardOptDevices)
+        modernizedOptDevices = self.__getAdvancedOptDevices(modernizedLoadoutDevices, standardOptDevices)
+        advancedOptDevices = [ device1 if self.__getOptDeviceIndex(device1) < self.__getOptDeviceIndex(device2) else device2 for device1, device2 in zip(modernizedOptDevices, upgradedOptDevices)
+                             ]
         if self.__isStandardPresetNeeded(standardOptDevices):
             self.__optDevicesPresets[OptDevicesPresetType.STANDARD] = standardOptDevices
             self.__optDevicesForDemount[OptDevicesPresetType.STANDARD] = self.__getOptDevicesForDemount(standardOptDevices)
