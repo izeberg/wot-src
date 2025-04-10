@@ -24823,6 +24823,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_DRIVER_SMOOTHDRIVING:String = "../maps/icons/quests/bonuses/s600x450/driver_smoothDriving.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_DRIVER_VIRTUOSO:String = "../maps/icons/quests/bonuses/s600x450/driver_virtuoso.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_EMBLEM:String = "../maps/icons/quests/bonuses/s600x450/emblem.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_ENHANCEDAIMDRIVES:String = "../maps/icons/quests/bonuses/s600x450/enhancedAimDrives.png";
