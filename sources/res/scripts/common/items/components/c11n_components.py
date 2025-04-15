@@ -180,7 +180,7 @@ class PaintItem(BaseCustomizationItem):
         return result
 
 
-class EmissionParams():
+class EmissionParams:
 
     def __init__(self):
         self.emissionTexture = ''
@@ -848,7 +848,7 @@ class CustomizationCache(object):
                  'itemTypes', 'priceGroupTags', '__victimStyles', 'personal_numbers',
                  'fonts', 'sequences', 'attachments', 'customizationWithProgression',
                  'itemToQuestProgressionStyle', '__questStyles', 'itemGroupByProgressionBonusType',
-                 '__vehicleCanMayIncludeCustomization', 'topVehiclesByNation')
+                 'topVehiclesByNation')
 
     def __init__(self):
         self.priceGroupTags = {}
@@ -874,7 +874,6 @@ class CustomizationCache(object):
         self.itemToQuestProgressionStyle = {}
         self.__questStyles = None
         self.itemGroupByProgressionBonusType = {arenaTypeID:list() for arenaTypeID in ARENA_BONUS_TYPE_NAMES.values() if ARENA_BONUS_TYPE_CAPS.checkAny(arenaTypeID, ARENA_BONUS_TYPE_CAPS.CUSTOMIZATION_PROGRESSION) if ARENA_BONUS_TYPE_CAPS.checkAny(arenaTypeID, ARENA_BONUS_TYPE_CAPS.CUSTOMIZATION_PROGRESSION)}
-        self.__vehicleCanMayIncludeCustomization = {}
         self.topVehiclesByNation = {}
         self.itemTypes = {CustomizationType.MODIFICATION: self.modifications, 
            CustomizationType.STYLE: self.styles, 
@@ -893,19 +892,6 @@ class CustomizationCache(object):
         if self.__questStyles is None:
             self.__questStyles = {id:style for id, style in self.styles.iteritems() if style.isQuestsProgression if style.isQuestsProgression}
         return self.__questStyles
-
-    def getVehiclesCanMayInclude(self, item):
-        vehsCanUseItem = self.__vehicleCanMayIncludeCustomization.get(item.compactDescr)
-        if vehsCanUseItem is None:
-            vehsCanUseItem = []
-            for nationID in nations.INDICES.itervalues():
-                for descr in iv.g_list.getList(nationID).itervalues():
-                    vehCD = descr.compactDescr
-                    if item.matchVehicleType(iv.getVehicleType(vehCD)):
-                        vehsCanUseItem.append(vehCD)
-
-            self.__vehicleCanMayIncludeCustomization[item.compactDescr] = vehsCanUseItem
-        return vehsCanUseItem
 
     def isVehicleBound(self, itemId):
         if isinstance(itemId, int):

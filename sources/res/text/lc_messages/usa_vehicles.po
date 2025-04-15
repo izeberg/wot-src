@@ -650,6 +650,15 @@ msgstr "AMBT"
 msgid "A149_AMBT_short_special"
 msgstr "自动装填系统，坦克用途广泛"
 
+msgid "A14_T30"
+msgstr "T30"
+
+msgid "A14_T30_FL"
+msgstr "T30 FL"
+
+msgid "A14_T30_descr"
+msgstr "?empty?"
+
 msgid "A150_MBT_B"
 msgstr "MBT-B"
 
@@ -1035,6 +1044,32 @@ msgstr "一辆M系III级轻型坦克。虽然没有出众的装甲，但机动�
 msgid "A33_MTLS-1G14_short_special"
 msgstr "优秀的火炮，出色的机动，良好的火炮俯仰角"
 
+msgid "A34_M24_Chaffee_CFE_V"
+msgstr "\"霞飞\" CFE"
+
+msgid "A34_M24_Chaffee_CFE_V_descr"
+msgstr "一款真实的历史风格，展示战事后期盟军在西线使用的M系坦克的标准改装。得益于伪装网和涂装图案，该坦克非常适合进行侦察突袭和伏击。"
+
+msgid "A34_M24_Chaffee_CFE_V_long_special"
+msgstr ""
+"\"霞飞\" "
+"CFE是一辆性能全面的V级轻型坦克。凭借出色的机动性、较小的尺寸和良好的观察范围，它可以扮演侦察兵的角色。同时，其火炮在必要时也能高效输出。"
+
+msgid "A34_M24_Chaffee_CFE_V_short"
+msgstr "\"霞飞\" CFE"
+
+msgid "A34_M24_Chaffee_CFE_V_short_special"
+msgstr "良好的单位功率和火炮手感"
+
+msgid "A41_M18_Hellcat"
+msgstr "M18 \"地狱猫\""
+
+msgid "A41_M18_Hellcat_descr"
+msgstr "?empty?"
+
+msgid "A41_M18_Hellcat_short"
+msgstr "M18 \"地狱猫\""
+
 msgid "A46_T3"
 msgstr "T3 HMC"
 
@@ -1062,11 +1097,29 @@ msgstr "M46 \"猛虎\""
 msgid "A63_M46_Patton_KR_short_special"
 msgstr "良好的火炮俯角和观察范围"
 
+msgid "A68_T28_Prototype"
+msgstr "T28 原型车"
+
+msgid "A68_T28_Prototype_descr"
+msgstr "?empty?"
+
+msgid "A68_T28_Prototype_short"
+msgstr "T28 原型车"
+
 msgid "A69_T110E5_7x7"
 msgstr "T110E5 7v7"
 
 msgid "A69_T110E5_7x7_short"
 msgstr "T110E5 7v7"
+
+msgid "A72_T25_2"
+msgstr "T25/2"
+
+msgid "A72_T25_2_descr"
+msgstr "?empty?"
+
+msgid "A72_T25_2_short"
+msgstr "T25/2"
 
 msgid "A74_T1_E6_long_special"
 msgstr "一辆M系II级轻型坦克，拥有不错的机动性，以及弹夹装填式的高射速火炮。尽管装甲薄弱，但由于穿透力和精度欠佳，最适合它的依然是中近距离作战。"
@@ -1105,6 +1158,16 @@ msgstr "M4改进型"
 
 msgid "A78_M4_Improved_short_special"
 msgstr "拥有良好俯仰角、性能均衡的火炮，优异的观察范围"
+
+msgid "A83_T110E4"
+msgstr "T110E4"
+
+msgid "A83_T110E4_descr"
+msgstr ""
+"1954年，汽车城举办了一场关于重型坦克研发前景的研讨会。除开其它的先进项目，克莱斯勒公司还以TS-31为基础提出了一种新型坦克设计，主要目的是确保其尺寸能够通过特定隧道。该计划下包含多种方案，但最终被取消。"
+
+msgid "A83_T110E4_short"
+msgstr "T110E4"
 
 msgid "A93_T7_Combat_Car_long_special"
 msgstr ""
@@ -1218,6 +1281,14 @@ msgstr ""
 
 msgid "AOI_1195D"
 msgstr "AOI-1195D"
+
+msgid "AOI_1490E4"
+msgstr "大陆 AOI-1490E4"
+
+msgid "AOI_1490E4_short"
+msgstr ""
+"大陆\n"
+"AOI-1490E4"
 
 msgid "AOI_695"
 msgstr "AOI-695"
@@ -1395,6 +1466,12 @@ msgstr "T3"
 msgid "Chassis_A149_AMBT"
 msgstr "AMBT"
 
+msgid "Chassis_A14_T30"
+msgstr "T30"
+
+msgid "Chassis_A14_T30_2"
+msgstr "T30E1"
+
 msgid "Chassis_A150_MBT_B"
 msgstr "MBT-B"
 
@@ -1461,14 +1538,38 @@ msgstr "T82原型1号车"
 msgid "Chassis_A27_T82_2"
 msgstr "T82原型2号车"
 
+msgid "Chassis_A34_M24_Chaffee_CFE_V"
+msgstr "\"霞飞\" CFE"
+
+msgid "Chassis_A41_M18_Hellcat"
+msgstr "T70"
+
+msgid "Chassis_A41_M18_Hellcat_2"
+msgstr "M18"
+
 msgid "Chassis_A46_T3"
 msgstr "T3 HMC"
 
 msgid "Chassis_A46_T3_2"
 msgstr "T3 HMC 改进型"
 
+msgid "Chassis_A68_T28_Prototype"
+msgstr "T28 原型车"
+
+msgid "Chassis_A68_T28_Prototype_2"
+msgstr "T28E1原型车"
+
+msgid "Chassis_A72_T25_2"
+msgstr "T25/2"
+
+msgid "Chassis_A72_T25_2_2"
+msgstr "T25E1/2"
+
 msgid "Chassis_A76_M3_A3"
 msgstr "M3A3 \"斯图亚特\""
+
+msgid "Chassis_A83_T110E4"
+msgstr "T110E4"
 
 msgid "Chassis_A99_T92_LT"
 msgstr "T92 LT"
@@ -1490,12 +1591,6 @@ msgstr "M12T48"
 
 msgid "Chassis_M12_2"
 msgstr "M12T51"
-
-msgid "Chassis_M18_Hellcat"
-msgstr "M18 T67"
-
-msgid "Chassis_M18_Hellcat_2"
-msgstr "M18 T69"
 
 msgid "Chassis_M22_Locust"
 msgstr "VVST78"
@@ -1575,9 +1670,6 @@ msgstr "T110E27"
 msgid "Chassis_T110E3"
 msgstr "T110E3"
 
-msgid "Chassis_T110E4"
-msgstr "T110E4"
-
 msgid "Chassis_T18"
 msgstr "T18E1"
 
@@ -1592,12 +1684,6 @@ msgstr "VVSS T48M1A1"
 
 msgid "Chassis_T21_2"
 msgstr "VVSS T48M1A2"
-
-msgid "Chassis_T25_2"
-msgstr "T25/2T1"
-
-msgid "Chassis_T25_2_2"
-msgstr "T25/2T4"
 
 msgid "Chassis_T25_2_SH"
 msgstr "T25/2M"
@@ -1619,12 +1705,6 @@ msgstr "T28VVSS T46"
 
 msgid "Chassis_T28_2"
 msgstr "T28VVSS T56"
-
-msgid "Chassis_T28_Prototype"
-msgstr "T28P E2"
-
-msgid "Chassis_T28_Prototype_2"
-msgstr "T28P E4"
 
 msgid "Chassis_T37"
 msgstr "T37"
@@ -2038,6 +2118,22 @@ msgstr ""
 "大陆\n"
 "AVI-1790-8"
 
+msgid "Continental_AV_1790_1_2"
+msgstr "大陆 AV-1790-1/2"
+
+msgid "Continental_AV_1790_1_2_short"
+msgstr ""
+"大陆\n"
+"AV-1790-1/2"
+
+msgid "Continental_AV_1790_3_30"
+msgstr "大陆 AV-1790-3/30"
+
+msgid "Continental_AV_1790_3_30_short"
+msgstr ""
+"大陆\n"
+"AV-1790-3/30"
+
 msgid "Continental_AV_1790_5A"
 msgstr "大陆 AV-1790-5A"
 
@@ -2217,8 +2313,14 @@ msgstr "福特 GAF"
 msgid "Ford_GAFM2"
 msgstr "福特 GAFM2A1"
 
+msgid "Ford_GAFM2_28P"
+msgstr "福特 GAFM2/28P"
+
 msgid "Ford_GAFM4"
 msgstr "福特 GAFM2A2"
+
+msgid "Ford_GAF_28P"
+msgstr "福特 GAF/28P"
 
 msgid "Ford_GAF_500"
 msgstr "福特 GAF(500马力)"
@@ -2234,6 +2336,9 @@ msgstr "福特GAF V16 A"
 
 msgid "Ford_GAN"
 msgstr "福特 GAN"
+
+msgid "Ford_GAN_2"
+msgstr "福特 GAN/2"
 
 msgid "Ford_GAN_A"
 msgstr "福特 GAN A"
@@ -2351,15 +2456,6 @@ msgstr "M12"
 
 msgid "M12_descr"
 msgstr "?empty?"
-
-msgid "M18_Hellcat"
-msgstr "M18 \"地狱猫\""
-
-msgid "M18_Hellcat_descr"
-msgstr "?empty?"
-
-msgid "M18_Hellcat_short"
-msgstr "M18 \"地狱猫\""
 
 msgid "M22_Locust"
 msgstr "M22 \"蝉\"式"
@@ -2740,6 +2836,9 @@ msgstr "SCR 528AM"
 msgid "SCR_528R1"
 msgstr "SCR 528A"
 
+msgid "SCR_528V"
+msgstr "SCR 528V"
+
 msgid "SCR_528_M"
 msgstr "SCR 528M"
 
@@ -2785,9 +2884,6 @@ msgstr "?empty?"
 msgid "T110E3_short"
 msgstr "T110E3"
 
-msgid "T110E4"
-msgstr "T110E4"
-
 msgid "T110E4_7x7"
 msgstr "T110E4 7v7"
 
@@ -2797,12 +2893,6 @@ msgstr ""
 
 msgid "T110E4_7x7_short"
 msgstr "T110E4 7v7"
-
-msgid "T110E4_descr"
-msgstr "?empty?"
-
-msgid "T110E4_short"
-msgstr "T110E4"
 
 msgid "T110_cl"
 msgstr "T110E5 CL"
@@ -2922,9 +3012,6 @@ msgstr "T23T80"
 msgid "T23_descr"
 msgstr "?empty?"
 
-msgid "T25_2"
-msgstr "T25/2"
-
 msgid "T25_2_SH"
 msgstr "渡鸦"
 
@@ -2934,12 +3021,6 @@ msgstr ""
 
 msgid "T25_2_SH_short"
 msgstr "渡鸦"
-
-msgid "T25_2_descr"
-msgstr "?empty?"
-
-msgid "T25_2_short"
-msgstr "T25/2"
 
 msgid "T25_AT"
 msgstr "T25 AT"
@@ -2974,15 +3055,6 @@ msgstr "精准的火炮，强大的正面装甲"
 
 msgid "T28"
 msgstr "T28"
-
-msgid "T28_Prototype"
-msgstr "T28 原型车"
-
-msgid "T28_Prototype_descr"
-msgstr "?empty?"
-
-msgid "T28_Prototype_short"
-msgstr "T28 原型车"
 
 msgid "T28_descr"
 msgstr "?empty?"
@@ -3034,18 +3106,6 @@ msgstr "?empty?"
 
 msgid "T2_med_short"
 msgstr "T2 中型坦克"
-
-msgid "T30"
-msgstr "T30"
-
-msgid "T30D1"
-msgstr "T30D1"
-
-msgid "T30_FL"
-msgstr "T30 FL"
-
-msgid "T30_descr"
-msgstr "?empty?"
 
 msgid "T32"
 msgstr "T32"
@@ -3190,9 +3250,6 @@ msgstr "T7战斗车"
 msgid "T80E3"
 msgstr "T80E3"
 
-msgid "T80E3A"
-msgstr "T80E3A"
-
 msgid "T80E3_BF"
 msgstr "T80E3"
 
@@ -3204,9 +3261,6 @@ msgstr "T84E1A"
 
 msgid "T84E3"
 msgstr "T84E3"
-
-msgid "T84E38"
-msgstr "T84E38"
 
 msgid "T84E3A"
 msgstr "T84E3A"
@@ -3382,6 +3436,9 @@ msgstr "T3"
 msgid "Turret_1_A149_AMBT"
 msgstr "AMBT"
 
+msgid "Turret_1_A14_T30"
+msgstr "T30"
+
 msgid "Turret_1_A150_MBT_B"
 msgstr "MBT-B"
 
@@ -3445,11 +3502,23 @@ msgstr "兰博"
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
 
+msgid "Turret_1_A41_M18_Hellcat"
+msgstr "M18 \"地狱猫\""
+
 msgid "Turret_1_A46_T3"
 msgstr "T3 HMC"
 
+msgid "Turret_1_A68_T28_Prototype"
+msgstr "T28 原型车"
+
+msgid "Turret_1_A72_T25_2"
+msgstr "T25/2"
+
 msgid "Turret_1_A76_M3_A3"
 msgstr "M3A3 \"斯图亚特\""
+
+msgid "Turret_1_A83_T110E4"
+msgstr "T110E4"
 
 msgid "Turret_1_A99_T92_LT"
 msgstr "T92 lt"
@@ -3462,9 +3531,6 @@ msgstr "M10T72"
 
 msgid "Turret_1_M12"
 msgstr "M12M4"
-
-msgid "Turret_1_M18_Hellcat"
-msgstr "M18 M34A1"
 
 msgid "Turret_1_M22_Locust"
 msgstr "M22D1"
@@ -3517,17 +3583,11 @@ msgstr "M4A2E2T110"
 msgid "Turret_1_T110E3"
 msgstr "T110E3"
 
-msgid "Turret_1_T110E4"
-msgstr "T110E4"
-
 msgid "Turret_1_T1_E6"
 msgstr "T1"
 
 msgid "Turret_1_T20D1_SH"
 msgstr "T20D1"
-
-msgid "Turret_1_T25_2"
-msgstr "T25/2T3"
 
 msgid "Turret_1_T25_AT"
 msgstr "T25M1"
@@ -3537,9 +3597,6 @@ msgstr "T26E4"
 
 msgid "Turret_1_T28"
 msgstr "T28"
-
-msgid "Turret_1_T28_Prototype"
-msgstr "T28P D1"
 
 msgid "Turret_1_T37"
 msgstr "T37"
@@ -3601,17 +3658,23 @@ msgstr "M-II-Y B型"
 msgid "Turret_2_A27_T82"
 msgstr "T82 HMC"
 
+msgid "Turret_2_A34_M24_Chaffee_CFE_V"
+msgstr "\"霞飞\" CFE"
+
+msgid "Turret_2_A41_M18_Hellcat"
+msgstr "M18/M36"
+
 msgid "Turret_2_A46_T3"
 msgstr "T3 HMC"
+
+msgid "Turret_2_A72_T25_2"
+msgstr "T25E1/2"
 
 msgid "Turret_2_M103"
 msgstr "T140"
 
 msgid "Turret_2_M10_Wolverine"
 msgstr "M10T72M1"
-
-msgid "Turret_2_M18_Hellcat"
-msgstr "M18 M1"
 
 msgid "Turret_2_M24_Chaffee"
 msgstr "T37"
@@ -3645,9 +3708,6 @@ msgstr "T53"
 
 msgid "Turret_2_T21"
 msgstr "T21"
-
-msgid "Turret_2_T25_2"
-msgstr "T25/2T7"
 
 msgid "Turret_2_T37"
 msgstr "T41原型1号车"
@@ -3777,6 +3837,12 @@ msgstr "莱特-大陆 R-975C4"
 msgid "Wright_Continental_R-975C4L"
 msgstr "莱特-大陆 R-975C4L"
 
+msgid "Wright_Continental_R-975C4LV"
+msgstr "莱特-大陆 R-975C4LV"
+
+msgid "Wright_Continental_R-975C4LV_short"
+msgstr "莱特-大陆 R-975C4LV"
+
 msgid "Wright_Continental_R-975C4L_short"
 msgstr "莱特-大陆 R-975C4L"
 
@@ -3804,11 +3870,23 @@ msgstr "莱特-大陆 R-975EC2L"
 msgid "Wright_Continental_R-975EC2_short"
 msgstr "莱特-大陆 R-975EC2"
 
+msgid "Wright_Continental_R_975C1_18"
+msgstr "莱特-大陆 R-975C1/18"
+
+msgid "Wright_Continental_R_975C1_18_short"
+msgstr "莱特-大陆 R-975C1/18"
+
 msgid "Wright_Continental_R_975C1_N"
 msgstr "莱特-大陆 R-975C1N"
 
 msgid "Wright_Continental_R_975C1_N_short"
 msgstr "莱特-大陆 R-975C4N"
+
+msgid "Wright_Continental_R_975C4_18"
+msgstr "莱特-大陆 R-975C4/18"
+
+msgid "Wright_Continental_R_975C4_18_short"
+msgstr "莱特-大陆 R-975C4/18"
 
 msgid "Wright_Continental_R_975EC2A1"
 msgstr "莱特-大陆 R-975EC2A1"
@@ -3896,6 +3974,9 @@ msgstr "T29E3M2E5"
 msgid "_105mm_APCR_T29E3M2E8"
 msgstr "T29E3M2E8"
 
+msgid "_105mm_APCR_T29E3_28P"
+msgstr "APCR T29E3/28P"
+
 msgid "_105mm_APCR_T29E3_M"
 msgstr "APCR T29E3 M"
 
@@ -3917,6 +3998,9 @@ msgstr "T32M2E5"
 msgid "_105mm_AP_T32M2E8"
 msgstr "T32M2E8"
 
+msgid "_105mm_AP_T32_28P"
+msgstr "AP T32/28P"
+
 msgid "_105mm_AP_T32_M"
 msgstr "AP T32M"
 
@@ -3925,6 +4009,9 @@ msgstr "105mm T5炮"
 
 msgid "_105mm_AT_Gun_T5E1"
 msgstr "105mm T5E1 AT炮"
+
+msgid "_105mm_AT_Gun_T5E1_28P"
+msgstr "105mm T5E1/28P AT炮"
 
 msgid "_105mm_AT_Howitzer_M3"
 msgstr "105mm M3 AT炮"
@@ -4028,6 +4115,9 @@ msgstr "M11A2E5"
 msgid "_105mm_HE_M11A2E8"
 msgstr "M11A2E8"
 
+msgid "_105mm_HE_M11_28P"
+msgstr "HE M11/28P"
+
 msgid "_105mm_HE_M11_M"
 msgstr "HE M11 M"
 
@@ -4129,6 +4219,12 @@ msgstr "APBC M358"
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
+msgid "_120mm_APCR_T62_28P"
+msgstr "APCR T62/28P"
+
+msgid "_120mm_APCR_T62_30"
+msgstr "APCR T62/30"
+
 msgid "_120mm_APCR_T70"
 msgstr "APCR T70"
 
@@ -4147,6 +4243,12 @@ msgstr "AP"
 msgid "_120mm_AP_T42"
 msgstr "AP T42"
 
+msgid "_120mm_AP_T42_28P"
+msgstr "AP T42/28P"
+
+msgid "_120mm_AP_T42_30"
+msgstr "AP T42/30"
+
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
 
@@ -4164,6 +4266,12 @@ msgstr "120mm M58 AT炮"
 
 msgid "_120mm_AT_Gun_T53"
 msgstr "120mm T53 AT炮"
+
+msgid "_120mm_AT_Gun_T53_28P"
+msgstr "120mm T53/28P AT炮"
+
+msgid "_120mm_AT_Gun_T53_30"
+msgstr "120mm T53/30 AT炮"
 
 msgid "_120mm_American_British_Gun"
 msgstr "120mm US-GBR炮"
@@ -4246,6 +4354,12 @@ msgstr "HE"
 msgid "_120mm_HE_Shot_C"
 msgstr "HE C型"
 
+msgid "_120mm_HE_T67_28P"
+msgstr "HE T67/28P"
+
+msgid "_120mm_HE_T67_30"
+msgstr "HE T67/30"
+
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
 
@@ -4294,6 +4408,12 @@ msgstr "AP M111"
 msgid "_155mm_AP_M111E1"
 msgstr "AP M111E1"
 
+msgid "_155mm_AP_M111E4"
+msgstr "AP M111E4"
+
+msgid "_155mm_AP_M111_30"
+msgstr "AP M111/30"
+
 msgid "_155mm_AP_M111_SPG"
 msgstr "AP M111"
 
@@ -4306,6 +4426,12 @@ msgstr "AP M112"
 msgid "_155mm_AP_M112E1"
 msgstr "APCR M112E1"
 
+msgid "_155mm_AP_M112E4"
+msgstr "APCR M112E4"
+
+msgid "_155mm_AP_M112_30"
+msgstr "AP M112/30"
+
 msgid "_155mm_AP_M112_SPG"
 msgstr "AP M112"
 
@@ -4317,6 +4443,12 @@ msgstr "155mm T7 AT炮"
 
 msgid "_155mm_AT_Gun_T7E2"
 msgstr "155mm T7E2 AT炮"
+
+msgid "_155mm_AT_Gun_T7E4"
+msgstr "155mm T7E4 AT炮"
+
+msgid "_155mm_AT_Gun_T7_30"
+msgstr "155mm T7/30 AT炮"
 
 msgid "_155mm_Gun_M1918M1"
 msgstr "155mm M1918M1炮"
@@ -4342,6 +4474,9 @@ msgstr "HE M101A1"
 msgid "_155mm_HE_M101E1"
 msgstr "HE M101E1"
 
+msgid "_155mm_HE_M101E4"
+msgstr "HE M101E4"
+
 msgid "_155mm_HE_M101M2"
 msgstr "HE M101M2"
 
@@ -4350,6 +4485,9 @@ msgstr "HE M101M4"
 
 msgid "_155mm_HE_M101M6"
 msgstr "HE M101M6"
+
+msgid "_155mm_HE_M101_30"
+msgstr "HE M101/30"
 
 msgid "_155mm_HE_M101_XM57"
 msgstr "HE M101 XM57"
@@ -4580,6 +4718,9 @@ msgstr "75mm M3炮"
 msgid "_75mm_Gun_M6"
 msgstr "75mm M6炮"
 
+msgid "_75mm_Gun_M6V"
+msgstr "75mm M6V炮"
+
 msgid "_75mm_Gun_M7_L50"
 msgstr "3英寸M7炮"
 
@@ -4607,14 +4748,23 @@ msgstr "7.5cm KwK L/70炮"
 msgid "_75mm_M48"
 msgstr "M48"
 
+msgid "_75mm_M48V"
+msgstr "M48V"
+
 msgid "_75mm_M61"
 msgstr "M61"
+
+msgid "_75mm_M61V"
+msgstr "M61V"
 
 msgid "_75mm_M61_MapsTraining_Player_HT_1"
 msgstr "M61"
 
 msgid "_75mm_M72"
 msgstr "T45"
+
+msgid "_75mm_M72V"
+msgstr "T45V"
 
 msgid "_75mm_Pack_Howitzer_M1"
 msgstr "75mm M1山炮"
@@ -4649,6 +4799,9 @@ msgstr "AP M62E20"
 msgid "_76mm_AP_M79_149"
 msgstr "AP M79"
 
+msgid "_76mm_AP_M79_18"
+msgstr "AP M62/18"
+
 msgid "_76mm_AP_M80"
 msgstr "AP-T M80"
 
@@ -4660,6 +4813,9 @@ msgstr "76mm M1A1炮"
 
 msgid "_76mm_AT_Gun_M1A2"
 msgstr "76mm M1A2 AT炮"
+
+msgid "_76mm_AT_Gun_M1A2_18"
+msgstr "76mm M1A2/18 AT炮"
 
 msgid "_76mm_Gun_M1918"
 msgstr "3英寸M1918 AT炮"
@@ -4762,6 +4918,9 @@ msgstr "HE M42A1"
 msgid "_76mm_HE_M42A1E20"
 msgstr "HE M42A1E20"
 
+msgid "_76mm_HE_M42A1_18"
+msgstr "HE M42A1/18"
+
 msgid "_76mm_HE_M42B1"
 msgstr "HE M42B1"
 
@@ -4776,6 +4935,9 @@ msgstr "HVAP M93"
 
 msgid "_76mm_HVAP_M93E20"
 msgstr "HVAP M93E20"
+
+msgid "_76mm_HVAP_M93_18"
+msgstr "HVAP M93/18"
 
 msgid "_76mm_HVAP_M94"
 msgstr "HVAP M94"
@@ -4840,6 +5002,15 @@ msgstr "AP M77"
 msgid "_90mm_AP_M77E2M2"
 msgstr "AP M77E2M2"
 
+msgid "_90mm_AP_M77E2_2"
+msgstr "AP M77E2/2"
+
+msgid "_90mm_AP_M77_18"
+msgstr "AP M77/18"
+
+msgid "_90mm_AP_M77_2"
+msgstr "AP M77/2"
+
 msgid "_90mm_AP_M77_ID"
 msgstr "AP M77"
 
@@ -4861,8 +5032,17 @@ msgstr "90mm M3 AT炮"
 msgid "_90mm_AT_Gun_M3T"
 msgstr "90mm M3T AT炮"
 
+msgid "_90mm_AT_Gun_M3_18"
+msgstr "90mm M3/18 AT炮"
+
+msgid "_90mm_AT_Gun_M3_2"
+msgstr "90mm M3/2 AT炮"
+
 msgid "_90mm_AT_Gun_T15E2"
 msgstr "90mm T15E2 AT炮"
+
+msgid "_90mm_AT_Gun_T15E2_2"
+msgstr "90mm T15E2/2 AT炮"
 
 msgid "_90mm_AT_Gun_T15E2_SH"
 msgstr "90mm T15E2 AT炮"
@@ -4960,6 +5140,15 @@ msgstr "HE M71"
 msgid "_90mm_HE_M71E2M2"
 msgstr "HE M71E2M2"
 
+msgid "_90mm_HE_M71E2_2"
+msgstr "HE M71E2/2"
+
+msgid "_90mm_HE_M71_18"
+msgstr "HE M71/18"
+
+msgid "_90mm_HE_M71_2"
+msgstr "HE M71/2"
+
 msgid "_90mm_HE_M71_ID"
 msgstr "HE M71"
 
@@ -4977,6 +5166,15 @@ msgstr "HVAP M304"
 
 msgid "_90mm_HVAP_M304E2M2"
 msgstr "HVAP M304E2M2"
+
+msgid "_90mm_HVAP_M304E2_2"
+msgstr "HVAP M304E2/2"
+
+msgid "_90mm_HVAP_M304_18"
+msgstr "HVAP M304/18"
+
+msgid "_90mm_HVAP_M304_2"
+msgstr "HVAP M304/2"
 
 msgid "_90mm_HVAP_M304_ID"
 msgstr "HVAP M304"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Shot</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>idle</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/empty_sequence.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>shot</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Shot</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-376.000000 -51.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>shot</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/A174_T57_58_Rush_Ep1/a174_gun_flame.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>2.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-418.000000 -309.000000 0.000000</uiPosition>
+	</node>
+</root>

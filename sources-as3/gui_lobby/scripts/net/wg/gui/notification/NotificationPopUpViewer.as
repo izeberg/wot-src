@@ -10,6 +10,7 @@ package net.wg.gui.notification
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.LAYER_NAMES;
    import net.wg.gui.notification.events.NotificationLayoutEvent;
+   import net.wg.gui.notification.events.NotificationRegisteringEvent;
    import net.wg.gui.notification.events.ServiceMessageEvent;
    import net.wg.gui.notification.vo.PopUpNotificationInfoVO;
    import net.wg.gui.utils.ExcludeTweenManager;
@@ -25,15 +26,17 @@ package net.wg.gui.notification
       
       private static const TWEEN_DURATION:uint = 500;
       
-      private static const DELAY:Number = 50;
+      private static const DELAY:int = 50;
       
       private static const DEFAULT_PADDING:Point = new Point(5,40);
       
       private static const LAYERS_DEF_PADDING:Vector.<String> = new <String>[LAYER_NAMES.FULLSCREEN_WINDOWS,LAYER_NAMES.OVERLAY,LAYER_NAMES.TOP_SUB_VIEW];
       
-      private static const EARNING_OFFSET_X:Number = 500;
+      private static const EARNING_OFFSET_X:int = 500;
       
-      private static const EARNING_OFFSET_Y:Number = 0;
+      private static const EARNING_OFFSET_Y:int = 0;
+      
+      private static const EARNING_VIEW_NAME:String = "EarningView";
       
       private static const EXCLUDED_VIEW_ALIASES:Vector.<String> = new <String>[Aliases.LOBBY_HANGAR,"customization","ammunitionSetupView"];
        
@@ -43,8 +46,6 @@ package net.wg.gui.notification
       private var _displayingNowPopUps:Vector.<ServiceMessagePopUp>;
       
       private var _animationManager:ExcludeTweenManager;
-      
-      private var _smContainer:DisplayObjectContainer = null;
       
       private var _stageDimensions:Point = null;
       
@@ -58,11 +59,13 @@ package net.wg.gui.notification
       
       private var _maxAvailableMessagesCount:uint = 5;
       
-      private var _padding:Point = null;
+      private var _padding:Point;
       
       private var _externalPadding:Point = null;
       
-      private var _containerMgr:IContainerManager = null;
+      private var _smContainer:DisplayObjectContainer;
+      
+      private var _containerMgr:IContainerManager;
       
       private var _countOverlayViews:int = 0;
       
@@ -79,10 +82,10 @@ package net.wg.gui.notification
          this._pendingForDisplay = new Vector.<PopUpNotificationInfoVO>();
          this._displayingNowPopUps = new Vector.<ServiceMessagePopUp>();
          this._animationManager = new ExcludeTweenManager();
-         super();
          this._padding = DEFAULT_PADDING;
          this._smContainer = App.systemMessages;
          this._containerMgr = App.instance.containerMgr;
+         super();
          this._popupClass = param1;
       }
       
@@ -92,6 +95,8 @@ package net.wg.gui.notification
          this._smContainer.addEventListener(MouseEvent.MOUSE_OVER,this.onSMContainerMouseOverHandler);
          this._smContainer.addEventListener(MouseEvent.MOUSE_OUT,this.onSMContainerMouseOutHandler);
          this._smContainer.addEventListener(NotificationLayoutEvent.UPDATE_LAYOUT,this.onSmContainerUpdateLayoutHandler);
+         this._smContainer.addEventListener(NotificationRegisteringEvent.REGISTER_POP_UP,this.onRegisterComponentHandler,false,0,true);
+         App.stage.addEventListener(NotificationRegisteringEvent.UNREGISTER_POP_UP,this.onUnregisterComponentHandler,false,0,true);
          this._containerMgr.addEventListener(ContainerManagerEvent.VIEW_ADDED,this.onContainerMgrViewLoadingHandler);
          this._containerMgr.addEventListener(ContainerManagerEvent.VIEW_REMOVED,this.onContainerMgrViewLoadingHandler);
       }
@@ -100,7 +105,7 @@ package net.wg.gui.notification
       {
          super.onPopulate();
          this._earningView = new AdvancedAchievementEarningView();
-         this._earningView.name = "EarningView";
+         this._earningView.name = EARNING_VIEW_NAME;
          this._earningViewDisplayObject = DisplayObject(this._earningView);
          this._smContainer.addChild(DisplayObject(this._earningView));
          registerFlashComponentS(this._earningView,Aliases.ADVANCED_ACHIEVEMENTS_EARNING_VIEW);
@@ -232,6 +237,8 @@ package net.wg.gui.notification
          this._smContainer.removeEventListener(MouseEvent.MOUSE_OVER,this.onSMContainerMouseOverHandler);
          this._smContainer.removeEventListener(MouseEvent.MOUSE_OUT,this.onSMContainerMouseOutHandler);
          this._smContainer.removeEventListener(NotificationLayoutEvent.UPDATE_LAYOUT,this.onSmContainerUpdateLayoutHandler);
+         this._smContainer.removeEventListener(NotificationRegisteringEvent.REGISTER_POP_UP,this.onRegisterComponentHandler);
+         App.stage.removeEventListener(NotificationRegisteringEvent.UNREGISTER_POP_UP,this.onUnregisterComponentHandler);
          this._smContainer = null;
          this._containerMgr.removeEventListener(ContainerManagerEvent.VIEW_ADDED,this.onContainerMgrViewLoadingHandler);
          this._containerMgr.removeEventListener(ContainerManagerEvent.VIEW_REMOVED,this.onContainerMgrViewLoadingHandler);
@@ -476,6 +483,21 @@ package net.wg.gui.notification
       {
          param1.stopImmediatePropagation();
          App.utils.scheduler.scheduleTask(this.postponedPopupRemoving,DELAY,param1.typeID,param1.entityID,false,true);
+      }
+      
+      private function onRegisterComponentHandler(param1:NotificationRegisteringEvent) : void
+      {
+         param1.stopImmediatePropagation();
+         registerGFNotificationS(param1.injectInstance,param1.alias,param1.gfViewName,true,param1.linkageData);
+      }
+      
+      private function onUnregisterComponentHandler(param1:NotificationRegisteringEvent) : void
+      {
+         param1.stopImmediatePropagation();
+         if(isFlashComponentRegisteredS(param1.alias))
+         {
+            unregisterFlashComponentS(param1.alias);
+         }
       }
       
       private function onPopUpMessageButtonClickedHandler(param1:ServiceMessageEvent) : void

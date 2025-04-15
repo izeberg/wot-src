@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F132_Vercingetorix/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F132_Vercingetorix/normal/lod3/Hull</parent>
+	<extent>96</extent>
+	<visibilityBox>
+		<min>-1.735247 -0.548615 -4.002738</min>
+		<max>1.729321 0.692739 4.017889</max>
+	</visibilityBox>
+</root>

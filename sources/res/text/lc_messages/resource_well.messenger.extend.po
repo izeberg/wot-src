@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "serviceChannelMessages/resourceWell/enabled/text"
+msgstr "组装车间再次开放！"
+
+msgid "serviceChannelMessages/resourceWell/end/text"
+msgstr "我们正着手下一个项目。开发完成后将通知您。下次见！"
+
+msgid "serviceChannelMessages/resourceWell/end/title"
+msgstr "组装车间即将关闭"
+
+msgid "serviceChannelMessages/resourceWell/noSerialVehicles/text"
+msgstr "附带编号的坦克已交付完毕。我们即将开始组装标准配置的%(vehicle)s。抓紧时间——坦克数量有限！"
+
+msgid "serviceChannelMessages/resourceWell/noVehicles/text"
+msgstr "坦克组装完毕。全部坦克已交付给玩家。"
+
+msgid "serviceChannelMessages/resourceWell/noVehicles/title"
+msgstr "组装车间报告"
+
+msgid ""
+"serviceChannelMessages/resourceWell/noVehicles/twoParallelProducts/text"
+msgstr ""
+"%(soldOutVehicle)s辆坦克已交付完毕。您仍有机会完成%(availableVehicle)s的组装。如果您已花费资源但未及时完成组装，这些资源很快就会返还至您的账号。抓紧时间——坦克数量有限！"
+
+msgid "serviceChannelMessages/resourceWell/noVehiclesWithReturn/text"
+msgstr "坦克组装完毕。全部坦克已交付给玩家。所花费的全部资源将很快返还到您的账号。"
+
+msgid "serviceChannelMessages/resourceWell/oneVehicleStart/text"
+msgstr "指挥官，您有机会拥有附带编号3D风格的%(vehicle)s。坦克数量有限！"
+
+msgid "serviceChannelMessages/resourceWell/pause/text"
+msgstr "组装车间由于维护暂不开放。"
+
+msgid ""
+"serviceChannelMessages/resourceWell/reward/serialVehicle/additionalText"
+msgstr "风格编号: %(serialNumber)s"
+
+msgid "serviceChannelMessages/resourceWell/reward/serialVehicle/text"
+msgstr "已从组装车间获得拥有专属编号的%(vehicle)s。"
+
+msgid "serviceChannelMessages/resourceWell/reward/title"
+msgstr "已获得%(vehicle)s！"
+
+msgid "serviceChannelMessages/resourceWell/reward/vehicle/text"
+msgstr "已从组装车间获得%(vehicle)s。"
+
+msgid "serviceChannelMessages/resourceWell/start/title"
+msgstr "组装车间即将开放"
+
+msgid "serviceChannelMessages/resourceWell/twoVehiclesStart/text"
+msgstr "指挥官，利用这次大好机会，将%(firstVehicle)s与%(secondVehicle)s收入车库！数量有限，赶快行动！"

@@ -163,13 +163,13 @@ msgstr ""
 "所有阶段"
 
 msgid "metaProgressionTooltip/reward/header/common"
-msgstr "奖励"
+msgstr "下个阶段的奖励——获得%(stagePoints)s点数解锁"
 
 msgid "metaProgressionTooltip/reward/header/infinite"
 msgstr "下个阶段奖励"
 
 msgid "metaProgressionTooltip/timer/untilFinish"
-msgstr "距结束还有%(time)s"
+msgstr "距激活的阶段结束还有%(time)s"
 
 msgid "metaProgressionTooltip/timer/untilRelaunch"
 msgstr "距下次开启还有%(time)s"
@@ -225,6 +225,18 @@ msgstr "?empty?"
 msgid "modes/development/detailedUserName"
 msgstr "?empty?"
 
+msgid "modes/development/entryPoint/performance/tooltip/highRisk/body"
+msgstr "Dev High risks description."
+
+msgid "modes/development/entryPoint/performance/tooltip/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr "Dev Medium risks description."
+
+msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
 msgid "modes/development/lootbox/fep_epic"
 msgstr "?empty?"
 
@@ -257,6 +269,24 @@ msgstr "?empty?"
 
 msgid "modes/development/mode_selector/description"
 msgstr "?empty?"
+
+msgid "modes/development/mode_selector/performance/highRisk/description"
+msgstr "Dev High risks description."
+
+msgid "modes/development/mode_selector/performance/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "modes/development/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Dev Low Performance"
+
+msgid "modes/development/mode_selector/performance/mediumRisk/description"
+msgstr "Dev Medium risks description."
+
+msgid "modes/development/mode_selector/performance/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
+msgid "modes/development/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Dev Reduced Performance"
 
 msgid "modes/development/mode_selector/progression/resettable"
 msgstr "?empty?"
@@ -346,11 +376,188 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fall_tanks/capsUserName"
+msgstr "霓虹竞速"
+
+msgid "modes/fall_tanks/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/body"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/lootbox/fep_epic"
+msgstr "随机史诗奖励"
+
+msgid "modes/fall_tanks/lootbox/fep_legendary"
+msgstr "随机传说奖励"
+
+msgid "modes/fall_tanks/lootbox/fep_ordinary"
+msgstr "随机普通奖励"
+
+msgid "modes/fall_tanks/lootbox/fep_rare"
+msgstr "随机稀有奖励"
+
+msgid "modes/fall_tanks/lootbox/fep_unusual"
+msgstr "随机罕见奖励"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
+msgstr "霓虹竞速任务 – 阶段: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
+msgstr "霓虹竞速任务"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/timer"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/battleCondition"
+msgstr "自由竞赛"
+
+msgid "modes/fall_tanks/mode_selector/description"
+msgstr "具有非常规规则的试验性战斗"
+
+msgid "modes/fall_tanks/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/progression/resettable"
+msgstr "距新的霓虹竞速任务开放还有:"
+
+msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
+msgstr "%(subModeName)s模式已结束。进度已重置。"
+
+msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
+msgstr "%(subModeName)s模式已结束。"
+
+msgid "modes/fall_tanks/notification/newSubModes/withProgression"
+msgstr "新的奖励和%(subModeName)s模式已开放。"
+
+msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
+msgstr "全新模式已开放: %(subModeName)s。"
+
+msgid "modes/fall_tanks/notification/switchOffSubModes"
+msgstr "由于系统维护，%(subModeName)s模式暂不开放。"
+
+msgid "modes/fall_tanks/notification/switchOnSubModes"
+msgstr "%(subModeName)s模式已再次开放。"
+
+msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
+msgstr "奖励列表"
+
+msgid "modes/fall_tanks/progression/complete/congratulations"
+msgstr "恭喜！"
+
+msgid "modes/fall_tanks/progression/complete/title"
+msgstr "您已完成主要进度"
+
+msgid "modes/fall_tanks/progression/infinite/congratulations"
+msgstr "恭喜！"
+
+msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgstr "可重复完成的阶段"
+
+msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgstr "您已完成主要进度"
+
+msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgstr "尽可能获取更多奖励: %(currentPoints)/%(infinitySign)s"
+
+msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
+msgstr "获得点数: %(progressionSteps)s"
+
+msgid ""
+"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "获得点数:"
+
+msgid "modes/fall_tanks/progression/title"
+msgstr "霓虹竞速任务"
+
+msgid "modes/fall_tanks/rewardsView/header"
+msgstr "已获得传说奖励"
+
+msgid "modes/fall_tanks/scheduler/notification/available"
+msgstr "%(subModeName)s战斗已再次开放。"
+
+msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgstr "休战"
+
+msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgstr "%(subModeName)s战斗已结束"
+
+msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgstr "休战"
+
+msgid "modes/fall_tanks/scheduler/notification/primeTime"
+msgstr "目前处于休战期。%(subModeName)s战斗暂不开放。"
+
+msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgstr "休战"
+
+msgid "modes/fall_tanks/tierList/description"
+msgstr "下方列表展示了您有机会获得的随机奖励，每个物品都具有特定的掉落率。"
+
+msgid "modes/fall_tanks/tierList/title"
+msgstr "奖励列表"
+
+msgid "modes/fall_tanks/tooltip/filter/body"
+msgstr "显示/隐藏符合霓虹竞速模式条件的坦克。"
+
+msgid "modes/fall_tanks/tooltip/filter/header"
+msgstr "霓虹竞速坦克"
+
+msgid "modes/fall_tanks/userName"
+msgstr "霓虹竞速"
+
 msgid "modes/undefined/capsUserName"
 msgstr "街机模式"
 
 msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s:%(subModeName)s"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/body"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "建议选择最高的图形质量设置"
 
 msgid "modes/undefined/lootbox/fep_epic"
 msgstr "随机史诗奖励"
@@ -390,6 +597,26 @@ msgstr "具有非常规规则的试验性战斗。"
 
 msgid "modes/undefined/mode_selector/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s级"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
 
 msgid "modes/undefined/mode_selector/progression/resettable"
 msgstr "距新的街机模式任务开放:"
@@ -681,7 +908,7 @@ msgid "progression/questsList/quest/progressTitle"
 msgstr "已完成: %(currentPoints)/%(totalPoints)s"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "距活动结束还有: %(time)s"
+msgstr "距激活的阶段结束还有: %(time)s"
 
 msgid "progression/questsList/questsRenewTimerTitle"
 msgstr "距下次发布还有: %(time)s"
@@ -694,6 +921,9 @@ msgstr "{yellow_Open}%(done)s{yellow_Close}/%(total)s"
 
 msgid "progression/stepsNoProgress"
 msgstr "{bond_Open}%(done)s{bond_Close}/%(total)s"
+
+msgid "quests/limitedProgression/awards/nearest/header"
+msgstr "下个阶段的奖励——获得%(count)d点数解锁"
 
 msgid "rewardsView/additionalRewards/title"
 msgstr "您同时获得:"
@@ -743,6 +973,24 @@ msgstr "?empty?"
 msgid "sub_modes/development/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
 
+msgid "sub_modes/development/subModeCard/performance/highRisk/description"
+msgstr "Dev High risks description."
+
+msgid "sub_modes/development/subModeCard/performance/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "sub_modes/development/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Dev Low Performance"
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/description"
+msgstr "Dev Medium risks description."
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Dev Reduced Performance"
+
 msgid "sub_modes/development/subModeCard/title"
 msgstr "?empty?"
 
@@ -757,6 +1005,60 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/capsUserName"
+msgstr "霓虹竞速"
+
+msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
+msgstr "争分夺秒，冲向终点，同时阻止他人抵达终点！使用氮气加速和护盾能力来制造更多混乱！"
+
+msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
+msgstr "小心: 移动平台"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgstr "即可查看模式特点"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/press"
+msgstr "按下"
+
+msgid "sub_modes/fall_tanks/detailsHelpTitle"
+msgstr "霓虹竞速"
+
+msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
+msgstr "自由竞赛"
+
+msgid "sub_modes/fall_tanks/subModeCard/description"
+msgstr "具有非常规规则的试验性战斗"
+
+msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/title"
+msgstr "霓虹竞速"
+
+msgid "sub_modes/fall_tanks/userName"
+msgstr "霓虹竞速"
+
+msgid "sub_modes/fall_tanks/userName/quoted"
+msgstr "\"霓虹竞速\""
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"
@@ -784,6 +1086,26 @@ msgstr "Unknown subModeCard description"
 
 msgid "sub_modes/undefined/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
 
 msgid "sub_modes/undefined/subModeCard/title"
 msgstr "Unknown subModeCard title"

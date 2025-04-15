@@ -10,6 +10,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "badgeTooltip/title"
+msgstr "奖章: %(badge_name)s"
+
 msgid "button/close"
 msgstr "关闭"
 
@@ -36,3 +39,15 @@ msgstr "虎式猎手故事"
 
 msgid "congratulationsWindow/onboardingMedal/title"
 msgstr "所有行动已完成！"
+
+msgid "congratulationsWindow/vDayHero/badgeName"
+msgstr "奖章: 使命必达"
+
+msgid "congratulationsWindow/vDayHero/medalName"
+msgstr "勋章: 使命必达"
+
+msgid "congratulationsWindow/vDayHero/subTitle"
+msgstr "邮差行动"
+
+msgid "congratulationsWindow/vDayHero/title"
+msgstr "已完成额外挑战！"

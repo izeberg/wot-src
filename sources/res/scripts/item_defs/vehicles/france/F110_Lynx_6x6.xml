@@ -2000,7 +2000,6 @@
 					<!--BW_String-->
 				</rotation>
 				<scale>0.348641 0.332402 0.348638</scale>
-				<doubleSided>false</doubleSided>
 				<showOn>16</showOn>
 				<clipAngle>0.773745</clipAngle>
 				<anchorShift>
@@ -2018,17 +2017,61 @@
 					<!--BW_String-->
 				</position>
 				<rotation>
-					2.95235 -0.000055 -0.000169039
+					2.95235 -0.000055 -0.000169
 					<!--BW_String-->
 				</rotation>
-				<scale>
-					0.292167 0.0755436 0.292168
-					<!--BW_String-->
-				</scale>
-				<doubleSided>false</doubleSided>
+				<scale>0.292167 0.075544 0.292168</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.688059</clipAngle>
 				<anchorShift>0.068424</anchorShift>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-0.645 0.006 -2.608
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -1.570796 1.500983
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999987 0.999987 0.999992</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					-1.246815 0.098177 -0.71419
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					1.249699 0.098177 -0.71419
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.139847 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
 			</slot>
 		</customizationSlots>
 		<customization>
@@ -3401,6 +3444,18 @@
 							<anchorShift>0.802142</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								0.042 0.157 0.315385
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -3576,6 +3631,18 @@
 							<anchorShift>0.802142</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								0.042 0.157 0.315385
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -3739,6 +3806,18 @@
 							<showOn>4368</showOn>
 							<clipAngle>0.005046</clipAngle>
 							<anchorShift>0.802142</anchorShift>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								0.042 0.157 0.315385
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -4487,7 +4566,7 @@
 					<tags>formfactor_square</tags>
 					<compatibleModels>F110_Lynx_6x6_3Dst_HW23</compatibleModels>
 					<position>
-						-0.772272 1.74281 -0.0747128
+						-0.772272 1.74281 -0.074713
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -4495,7 +4574,6 @@
 						<!--BW_String-->
 					</rotation>
 					<scale>0.255025 0.188064 0.255026</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
 					<clipAngle>
 						1.22826
@@ -4509,7 +4587,7 @@
 					<tags>formfactor_square</tags>
 					<compatibleModels>F110_Lynx_6x6_3Dst_HW23</compatibleModels>
 					<position>
-						0.742275 1.7348 -0.0522723
+						0.742275 1.7348 -0.052272
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -4520,7 +4598,6 @@
 						0.249026 0.18364 0.249027
 						<!--BW_String-->
 					</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
 					<clipAngle>
 						1.22826
@@ -4534,18 +4611,14 @@
 					<tags>formfactor_square</tags>
 					<compatibleModels>F110_Lynx_6x6_3Dst_HW23</compatibleModels>
 					<position>
-						0.391899 2.1086 -0.0560386
+						0.391899 2.1086 -0.056039
 						<!--BW_String-->
 					</position>
 					<rotation>
-						-0.00953087 -0.000019 3.14156
+						-0.009531 -0.000019 3.14156
 						<!--BW_String-->
 					</rotation>
-					<scale>
-						0.284407 0.0700409 0.284412
-						<!--BW_String-->
-					</scale>
-					<doubleSided>false</doubleSided>
+					<scale>0.284407 0.070041 0.284412</scale>
 					<showOn>256</showOn>
 					<clipAngle>
 						1.19191
@@ -4559,7 +4632,7 @@
 					<tags>formfactor_square</tags>
 					<compatibleModels>F110_Lynx_6x6_3Dst_HW23</compatibleModels>
 					<position>
-						0.0020002 2.15032 -0.569295
+						0.002 2.15032 -0.569295
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -4567,10 +4640,21 @@
 						<!--BW_String-->
 					</rotation>
 					<scale>0.278746 0.068647 0.278751</scale>
-					<doubleSided>false</doubleSided>
 					<showOn>256</showOn>
 					<verticalMirror>true</verticalMirror>
 					<anchorShift>0.041258</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0 0.658001 -0.514524
+						<!--BW_String-->
+					</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
 
 msgid "battleResult/battleDuration"
 msgstr "%(date)s，战斗持续时间: %(duration)s"
@@ -56,11 +60,14 @@ msgstr "战斗已结束"
 msgid "battleResult/missionName/1"
 msgstr "虎式猎手: 破甲行动"
 
-msgid "battleResult/missionName/1000"
-msgstr "诺曼底行动"
+msgid "battleResult/missionName/1002"
+msgstr "邮差行动"
 
-msgid "battleResult/missionName/1001"
-msgstr "诺曼底行动"
+msgid "battleResult/missionName/1003"
+msgstr "邮差行动"
+
+msgid "battleResult/missionName/1004"
+msgstr "邮差行动"
 
 msgid "battleResult/missionName/2"
 msgstr "虎式猎手: 诱捕行动"
@@ -73,6 +80,9 @@ msgstr "虎式猎手: 罗网行动"
 
 msgid "battleResult/missionName/5"
 msgstr "诺曼底行动"
+
+msgid "battleResult/missionName/6"
+msgstr "邮差行动"
 
 msgid "battleResult/noTasksToComplete"
 msgstr ""
@@ -156,20 +166,19 @@ msgid "entryPoint/timer/dates"
 msgstr "%(startDate)s–%(endDate)"
 
 msgid "entryPoint/title/newMission"
-msgstr "诺曼底行动"
+msgstr "邮差行动"
 
 msgid "entryPoint/title/newMode"
-msgstr "诺曼底行动"
+msgstr "邮差行动"
 
 msgid "eventWelcomeScreen/column/subtitle/1"
-msgstr "本故事旨在纪念诺曼底登陆(又称霸王行动)80周年。缅怀为解放事业和结束战事而献出一切的英雄们。"
+msgstr "本故事献给战事结束80周年。向盟军部队传达停火命令，阻止冲突。"
 
 msgid "eventWelcomeScreen/column/subtitle/2"
-msgstr ""
-"在这个史诗般的故事中，您可以进行单人战斗，对抗AI敌人。认识并营救战斗通行证赛季XIV中的坦克手，利用M系海军和Y系皇家空军的力量，避开雷区，摧毁混凝土地堡！"
+msgstr "在这个史诗般的潜行故事中，您可以进行单人作战，悄悄绕过AI敌人。避开敌人的巡逻队，给他们下达虚假命令，释放您的战术能力。"
 
 msgid "eventWelcomeScreen/column/subtitle/3"
-msgstr "完成所有任务后，您将获得1枚纪念勋章、多款2D涂装(纪念参加1944年诺曼底登陆的盟军战士)，以及其他珍贵奖励。"
+msgstr "完成所有任务即可获得纪念奖章、一辆附带3D风格的金币坦克，以及其他珍贵奖励。"
 
 msgid "eventWelcomeScreen/column/title/1"
 msgstr "历史事件"
@@ -181,7 +190,7 @@ msgid "eventWelcomeScreen/column/title/3"
 msgstr "奖励"
 
 msgid "eventWelcomeScreen/header"
-msgstr "诺曼底行动"
+msgstr "邮差行动"
 
 msgid "eventWelcomeScreen/subheader"
 msgstr "%(startDate)s–%(endDate)"
@@ -193,10 +202,17 @@ msgid "missionSelection/about"
 msgstr "关于故事"
 
 msgid "missionSelection/difficulty/hard"
-msgstr "严酷"
+msgstr ""
+"严酷\n"
+"秘密行动"
 
 msgid "missionSelection/difficulty/normal"
 msgstr "普通"
+
+msgid "missionSelection/difficulty/very_hard"
+msgstr ""
+"严酷\n"
+"雷区"
 
 msgid "missionSelection/exitButton"
 msgstr "退出模式"
@@ -226,23 +242,46 @@ msgstr ""
 "诺曼底\n"
 "行动"
 
+msgid "missionSelection/lockedMissionName/6"
+msgstr ""
+"邮差\n"
+"行动"
+
 msgid "missionSelection/missionDescription/1"
 msgstr ""
 "布鲁克斯: \"你感觉怎样？没事吧？待会儿让医护兵给你看看，现在人员短缺。行动已经开始了。由于我们没能按时抵达目的地，所以另一个侧翼吸引了敌方的全部注意力。 这为我们创造了机会，现在立刻进攻，我们就能突入城镇，前后夹击敌人。\n"
 "跟着我们，避开\"龙牙\"。虽然田野里布满了那些混凝土反坦克锥，但它们不足为惧。只要你认真听从我的指示并准确无误地执行，我们就能顺利通过。麦克劳德和我会掩护你。\n"
 "不要在意他的玩笑。每个人都有属于自己的应对方法…前进！\""
 
-msgid "missionSelection/missionDescription/1000"
+msgid "missionSelection/missionDescription/1002"
 msgstr ""
-"约翰·麦科米克上尉: \"好了，伙计们，这一天终于到了。是时候终结战局了，让我们亲手为这场战役拉下帷幕。所有人荣辱与共，齐心协力，一举消灭这个邪恶势力。\n"
-"我们势必突破敌人的防线，拿下滩头。\n"
-"做好登陆准备！\""
+"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
+"\n"
+"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
+"\n"
+"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
+"\n"
+"出发。\""
 
-msgid "missionSelection/missionDescription/1001"
+msgid "missionSelection/missionDescription/1003"
 msgstr ""
-"约翰·麦科米克上尉: \"好了，伙计们，这一天终于到了。是时候终结战局了，让我们亲手为这场战役拉下帷幕。所有人荣辱与共，齐心协力，一举消灭这个邪恶势力。\n"
-"我们势必突破敌人的防线，拿下滩头。\n"
-"做好登陆准备！\""
+"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
+"\n"
+"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
+"\n"
+"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
+"\n"
+"出发。\""
+
+msgid "missionSelection/missionDescription/1004"
+msgstr ""
+"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
+"\n"
+"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
+"\n"
+"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
+"\n"
+"出发。\""
 
 msgid "missionSelection/missionDescription/2"
 msgstr ""
@@ -272,14 +311,27 @@ msgstr ""
 "\n"
 "做好登陆准备！\""
 
+msgid "missionSelection/missionDescription/6"
+msgstr ""
+"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
+"\n"
+"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
+"\n"
+"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
+"\n"
+"出发。\""
+
 msgid "missionSelection/missionName/1"
 msgstr "破甲行动"
 
-msgid "missionSelection/missionName/1000"
-msgstr "诺曼底行动"
+msgid "missionSelection/missionName/1002"
+msgstr "邮差行动"
 
-msgid "missionSelection/missionName/1001"
-msgstr "诺曼底行动"
+msgid "missionSelection/missionName/1003"
+msgstr "邮差行动"
+
+msgid "missionSelection/missionName/1004"
+msgstr "邮差行动"
 
 msgid "missionSelection/missionName/2"
 msgstr "诱捕行动"
@@ -293,11 +345,14 @@ msgstr "罗网行动"
 msgid "missionSelection/missionName/5"
 msgstr "诺曼底行动"
 
+msgid "missionSelection/missionName/6"
+msgstr "邮差行动"
+
 msgid "missionSelection/specialVehicle"
 msgstr "特殊坦克"
 
 msgid "missionSelection/tab/event"
-msgstr "诺曼底行动"
+msgstr "邮差行动"
 
 msgid "missionSelection/tab/newbies"
 msgstr "教学故事"
@@ -305,23 +360,32 @@ msgstr "教学故事"
 msgid "missionSelection/taskDescription/1/1"
 msgstr "攻击城镇并击毁敌方坦克。"
 
-msgid "missionSelection/taskDescription/1000/1"
-msgstr "突破防线，摧毁岸防炮，占领滩头。"
+msgid "missionSelection/taskDescription/1002/1"
+msgstr "将停火命令传达给盟军部队。"
 
-msgid "missionSelection/taskDescription/1000/2"
-msgstr "在16分钟内完成主要任务目标。"
+msgid "missionSelection/taskDescription/1002/2"
+msgstr "?empty?"
 
-msgid "missionSelection/taskDescription/1000/3"
-msgstr "在不损失任何自身坦克的情况下完成主要任务目标。"
+msgid "missionSelection/taskDescription/1002/3"
+msgstr "?empty?"
 
-msgid "missionSelection/taskDescription/1001/1"
-msgstr "突破防线，摧毁岸防炮，占领滩头。"
+msgid "missionSelection/taskDescription/1003/1"
+msgstr "检查敌方营地，收集所有雷区地图碎片。"
 
-msgid "missionSelection/taskDescription/1001/2"
-msgstr "在16分钟内完成主要任务目标。"
+msgid "missionSelection/taskDescription/1003/2"
+msgstr "在不击毁敌方坦克的情况下完成主要任务目标。"
 
-msgid "missionSelection/taskDescription/1001/3"
-msgstr "在不损失任何自身坦克的情况下完成主要任务目标。"
+msgid "missionSelection/taskDescription/1003/3"
+msgstr "在不损失任何坦克的情况下完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/1004/1"
+msgstr "穿过雷区，将停火命令传达给盟军部队。"
+
+msgid "missionSelection/taskDescription/1004/2"
+msgstr "在%(win_timer)s内完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/1004/3"
+msgstr "在不受到敌方地雷和炮击损伤的情况下完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/2/1"
 msgstr "攻击城镇并击毁敌方坦克。"
@@ -330,31 +394,55 @@ msgid "missionSelection/taskDescription/3/1"
 msgstr "攻击城镇并击毁敌方坦克。"
 
 msgid "missionSelection/taskDescription/3/2"
-msgstr "在不受到敌方地雷损伤的情况下完成主要任务目标。"
+msgstr "在不受到敌方地雷损伤的情况下，完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/3/3"
-msgstr "在不损失任何自身坦克的情况下完成主要任务目标。"
+msgstr "在不损失任何自身坦克的情况下，完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/4/1"
 msgstr "攻击城镇，缴获敌方神秘武器。"
 
 msgid "missionSelection/taskDescription/4/2"
-msgstr "在18分钟内完成主要任务目标。"
+msgstr "在%(win_timer)s内完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/4/3"
-msgstr "在轰炸机的帮助下，完成主要任务目标，并击毁至少6辆敌方坦克。"
+msgstr "在轰炸机的帮助下，完成主要任务目标，并击毁至少%(kill_enemies)s辆敌方坦克。"
 
 msgid "missionSelection/taskDescription/5/1"
 msgstr "突破防线，摧毁岸防炮，占领滩头。"
 
 msgid "missionSelection/taskDescription/5/2"
-msgstr "在18分钟内完成主要任务目标。"
+msgstr "在%(win_timer)s内完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/5/3"
-msgstr "在不损失任何自身坦克的情况下完成主要任务目标。"
+msgstr "在不损失任何自身坦克的情况下，完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/6/1"
+msgstr "将停火命令传达给盟军部队。"
+
+msgid "missionSelection/taskDescription/6/2"
+msgstr "完成主要任务目标，并击毁%(kill_enemies)s辆或更少的敌方坦克。"
+
+msgid "missionSelection/taskDescription/6/3"
+msgstr "在不损失任何坦克的情况下完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/kill_enemies"
+msgid_plural "plural/missionSelection/taskDescription/kill_enemies"
+msgstr[0] "%(value)s辆敌方坦克"
+msgstr[1] "%(value)s辆敌方坦克"
+msgstr[2] "%(value)s辆敌方坦克"
 
 msgid "missionSelection/taskDescription/locked"
 msgstr "距任务解锁还有%(timer)s"
+
+msgid "missionSelection/taskDescription/win_timer"
+msgid_plural "plural/missionSelection/taskDescription/win_timer"
+msgstr[0] "%(value)s分钟"
+msgstr[1] "%(value)s分钟"
+msgstr[2] "%(value)s分钟"
+
+msgid "missionSelection/taskRewards"
+msgstr "奖励:"
 
 msgid "missionSelection/tooltipDescription"
 msgstr "该坦克仅适用于故事模式。"
@@ -371,7 +459,7 @@ msgid "mode/story_mode/description"
 msgstr "与AI控制的坦克对抗，完成带有剧情的行动"
 
 msgid "mode/story_mode_event/callToAction"
-msgstr "诺曼底行动已开放"
+msgstr "邮差行动已开放"
 
 msgid "newbieAdvertisingScreen/column/subtitle/1"
 msgstr ""
@@ -477,31 +565,52 @@ msgstr "已完成任务"
 
 msgid "tooltips/battleResultStat/missions/info"
 msgstr ""
-"已完成任务和所有当前\n"
-"开放任务的数量。完成\n"
-"严酷难度的任务后，您\n"
-"也将自动完成普通难度\n"
-"的任务。"
+"已完成任务和\n"
+"所有当前开放任务的数量。"
 
 msgid "tooltips/difficulty/available"
 msgstr "已开放"
 
 msgid "tooltips/difficulty/hard/description"
 msgstr ""
-"敌人的反应速度和射击精度均有所提高，它们会对您展开更猛烈的攻击。作为回报，您将在完成任务后获得额外奖励。\n"
-"完成严酷难度的任务后，您也将自动获得普通难度的奖励。"
+"邮差行动秘密行动阶段的另一个版本，更具挑战性——采用非线性结构，更多敌人，并需收集额外的地图碎片。\n"
+"完成后可获得更丰厚的战斗奖励。"
+
+msgid "tooltips/difficulty/hard/info/body"
+msgstr ""
+"完成{whiteSpanish_Open}严酷{whiteSpanish_Close}难度的任务后，您也将自动完成{whiteSpanish_Open}普通{whiteSpanish_Close}难度的任务。您将同时获得2个难度等级的奖励。"
+
+msgid "tooltips/difficulty/hard/info/title"
+msgstr "附加条件"
 
 msgid "tooltips/difficulty/hard/title"
-msgstr "严酷"
+msgstr "严酷，秘密行动"
+
+msgid "tooltips/difficulty/locked/body"
+msgstr "在普通难度下完成该行动，展示您在该游戏模式中的作战技巧，即可解锁严酷难度。"
+
+msgid "tooltips/difficulty/locked/title"
+msgstr "未解锁"
 
 msgid "tooltips/difficulty/normal/description"
-msgstr "对手速度较慢，且射击精度不高，完成任务后可获得标准奖励。"
+msgstr ""
+"更少的敌人、线性行动结构，让您了解模式规则和目标。\n"
+"包含介绍、秘密行动和雷区阶段。\n"
+"完成后可获得常规战斗奖励。"
 
 msgid "tooltips/difficulty/normal/title"
 msgstr "普通"
 
 msgid "tooltips/difficulty/selected"
 msgstr "已选择"
+
+msgid "tooltips/difficulty/very_hard/description"
+msgstr ""
+"邮差行动雷区阶段的另一个版本，更具挑战性——您敢进入这座危险迷宫吗？\n"
+"完成后可获得更丰厚的战斗奖励。"
+
+msgid "tooltips/difficulty/very_hard/title"
+msgstr "严酷，雷区"
 
 msgid "tooltips/task/active"
 msgstr "已开放"

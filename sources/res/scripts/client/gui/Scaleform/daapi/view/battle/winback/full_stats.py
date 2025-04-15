@@ -1,6 +1,6 @@
-from gui.Scaleform.daapi.view.battle.classic.full_stats import FullStatsComponent
+from gui.Scaleform.daapi.view.battle.classic.tab_screen import TabScreenComponent
 
-class WinbackFullStatsComponent(FullStatsComponent):
+class WinbackFullStatsComponent(TabScreenComponent):
 
     @staticmethod
     def _buildTabs(builder):

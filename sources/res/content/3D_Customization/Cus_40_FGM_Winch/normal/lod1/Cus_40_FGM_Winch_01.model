@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_40_FGM_Winch/normal/lod2/Cus_40_FGM_Winch_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.515625 -0.000041 -0.511855</min>
+		<max>0.198057 0.701970 0.511855</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_40_FGM_Winch/normal/lod1/Cus_40_FGM_Winch_01</nodefullVisual>
+</root>

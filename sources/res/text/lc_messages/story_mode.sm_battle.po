@@ -343,14 +343,23 @@ msgstr "跳过介绍"
 msgid "introVideo/loading"
 msgstr "正在加载…"
 
+msgid "lootCapturing/equipment"
+msgstr "正在缴获: 雷区地图"
+
+msgid "lootCapturing/plan"
+msgstr "正在缴获: 地图碎片"
+
 msgid "prebattle/mission/stage/1"
 msgstr "行动1"
 
-msgid "prebattle/mission/stage/1000"
+msgid "prebattle/mission/stage/1002"
 msgstr "普通"
 
-msgid "prebattle/mission/stage/1001"
-msgstr "严酷"
+msgid "prebattle/mission/stage/1003"
+msgstr "严酷秘密行动"
+
+msgid "prebattle/mission/stage/1004"
+msgstr "严酷雷区"
 
 msgid "prebattle/mission/stage/2"
 msgstr "行动2"
@@ -364,14 +373,20 @@ msgstr "行动4"
 msgid "prebattle/mission/stage/5"
 msgstr "行动5"
 
+msgid "prebattle/mission/stage/6"
+msgstr "行动6"
+
 msgid "prebattle/mission/task/1"
 msgstr "{whiteSpanish_Start}任务: {whiteSpanish_End}攻击城镇并击毁所有敌方坦克。"
 
-msgid "prebattle/mission/task/1000"
-msgstr "{whiteSpanish_Start}突破防线，摧毁岸防炮，占领滩头。{whiteSpanish_End}"
+msgid "prebattle/mission/task/1002"
+msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
 
-msgid "prebattle/mission/task/1001"
-msgstr "{whiteSpanish_Start}突破防线，摧毁岸防炮，占领滩头。{whiteSpanish_End}"
+msgid "prebattle/mission/task/1003"
+msgstr "{whiteSpanish_Start}检查敌方营地，收集雷区地图碎片。{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1004"
+msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
 
 msgid "prebattle/mission/task/2"
 msgstr "{whiteSpanish_Start}任务: {whiteSpanish_End}攻击城镇并击毁所有敌方坦克。"
@@ -385,6 +400,9 @@ msgstr "{whiteSpanish_Start}找到并击毁敌方神秘武器。{whiteSpanish_En
 msgid "prebattle/mission/task/5"
 msgstr "{whiteSpanish_Start}突破防线，摧毁岸防炮，占领滩头。{whiteSpanish_End}"
 
+msgid "prebattle/mission/task/6"
+msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
+
 msgid "prebattle/mission/text/1"
 msgstr ""
 "布鲁克斯: \"你感觉怎样？没事吧？待会儿再让医护兵给你看看，现在人员短缺。行动已经开始了。由于我们没能按时抵达目的地，所以另一个侧翼吸引了敌方的全部注意力。 这为我们创造了机会，现在立刻进攻，我们就能突入城镇，前后夹击敌人。\n"
@@ -393,21 +411,33 @@ msgstr ""
 "\n"
 "不要在意他的玩笑。每个人都有属于自己的应对方法…前进！\""
 
-msgid "prebattle/mission/text/1000"
+msgid "prebattle/mission/text/1002"
 msgstr ""
-"约翰·麦科米克上尉: \"好了，伙计们，这一天终于到了。是时候终结战局了，让我们亲手为这场战役拉下帷幕。所有人荣辱与共，齐心协力，一举消灭这个邪恶势力。\n"
+"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
 "\n"
-"我们势必突破敌人的防线，拿下滩头。\n"
+"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
 "\n"
-"做好登陆准备！\""
+"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
+"\n"
+"出发。\""
 
-msgid "prebattle/mission/text/1001"
+msgid "prebattle/mission/text/1003"
 msgstr ""
-"约翰·麦科米克上尉: \"好了，伙计们，这一天终于到了。是时候终结战局了，让我们亲手为这场战役拉下帷幕。所有人荣辱与共，齐心协力，一举消灭这个邪恶势力。\n"
+"杜布瓦上尉: \"整个前线都布满了地雷。我们根本无法与友方部队会合。\"\n"
 "\n"
-"我们势必突破敌人的防线，拿下滩头。\n"
+"三等兵凯勒: \"这些标记还标出了指挥所。这些指挥所都有通行地图的碎片。全都是为我们的…D系侦察员准备的。我们应该去看看。\"\n"
 "\n"
-"做好登陆准备！\""
+"史密斯上尉: \"看样子我们必须收集地图碎片了。出发。\""
+
+msgid "prebattle/mission/text/1004"
+msgstr ""
+"墨菲上尉: \"天哪，真是个迷宫！我想把它叫作‘超牛地雷迷宫’！哈哈，听得懂吗？不懂？不是吧，这可是金句啊！\"\n"
+"\n"
+"杜布瓦上尉: \"悄悄穿过雷区吧，这样我就终于能清静点了。\"\n"
+"\n"
+"墨菲: \"杜布瓦，装炮弹装腻了吗？\"\n"
+"\n"
+"杜布瓦: \"也有这方面的原因。\""
 
 msgid "prebattle/mission/text/2"
 msgstr ""
@@ -441,14 +471,27 @@ msgstr ""
 "\n"
 "做好登陆准备！\""
 
+msgid "prebattle/mission/text/6"
+msgstr ""
+"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
+"\n"
+"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
+"\n"
+"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
+"\n"
+"出发。\""
+
 msgid "prebattle/mission/title/1"
 msgstr "破甲"
 
-msgid "prebattle/mission/title/1000"
-msgstr "诺曼底行动"
+msgid "prebattle/mission/title/1002"
+msgstr "邮差行动"
 
-msgid "prebattle/mission/title/1001"
-msgstr "诺曼底行动"
+msgid "prebattle/mission/title/1003"
+msgstr "邮差行动"
+
+msgid "prebattle/mission/title/1004"
+msgstr "邮差行动"
 
 msgid "prebattle/mission/title/2"
 msgstr "诱捕"
@@ -461,6 +504,9 @@ msgstr "罗网行动"
 
 msgid "prebattle/mission/title/5"
 msgstr "诺曼底行动"
+
+msgid "prebattle/mission/title/6"
+msgstr "邮差行动"
 
 msgid "ruinberg/hint01"
 msgstr "寻找迂回路线，从侧翼攻击敌人"
@@ -530,3 +576,111 @@ msgstr "完成虎式猎手故事以解锁这些设置。"
 
 msgid "timersPanel/overturned"
 msgstr "正在恢复您的坦克…"
+
+msgid "vday/hint01"
+msgstr "迅速移动到拐角后面"
+
+msgid "vday/hint02"
+msgstr "悄悄抵近"
+
+msgid "vday/hint03"
+msgstr "派遣杜布瓦上尉侦察四周"
+
+msgid "vday/hint04"
+msgstr "使用缴获的无线电向\"虎\"式下达虚假命令"
+
+msgid "vday/hint05"
+msgstr "检查D系指挥所"
+
+msgid "vday/hint06"
+msgstr "侦察四周和虚假命令能力是您成功的关键"
+
+msgid "vday/hint07"
+msgstr "使用侦察四周和虚假命令能力潜行"
+
+msgid "vday/hint08"
+msgstr "快走！要么全速前进，要么直接进棺材！"
+
+msgid "vday/hint09"
+msgstr "敌方指挥官的坦克不会被虚假命令干扰"
+
+msgid "vday/hint10"
+msgstr "按照史密斯上尉的指示，小心前进"
+
+msgid "vday/hint11"
+msgstr "返回任务！"
+
+msgid "vday/objective01/header"
+msgstr "出击！"
+
+msgid "vday/objective01/subheader"
+msgstr "将停火命令传达给盟军部队"
+
+msgid "vday/objective02/header"
+msgstr "抵达D系指挥所"
+
+msgid "vday/objective02/subheader"
+msgstr "听从史密斯上尉的指示"
+
+msgid "vday/objective02/success"
+msgstr "已缴获雷区地图"
+
+msgid "vday/objective03/header"
+msgstr "寻找通道地图的碎片"
+
+msgid "vday/objective03/subheader"
+msgid_plural "plural/dday/objective08/subheader"
+msgstr[0] "已收集%d张地图碎片"
+msgstr[1] "已收集%d张地图碎片"
+msgstr[2] "已收集%d张地图碎片"
+
+msgid "vday/objective03/success"
+msgstr "已拼接通道地图"
+
+msgid "vday/objective04/header"
+msgstr "将停火命令传达给盟军部队"
+
+msgid "vday/objective04/subheader"
+msgstr "穿过雷区"
+
+msgid "vday/objective04/success"
+msgstr "已传达停火命令！"
+
+msgid "vday/objective05/header"
+msgstr "抵达雷区"
+
+msgid "vday/objective05/subheader"
+msgstr "悄悄穿越敌方防线"
+
+msgid "vday/objective05/success"
+msgstr "已抵达雷区"
+
+msgid "vday/prebattle/header"
+msgstr "悄悄穿越敌方防线"
+
+msgid "vday/prebattle/start"
+msgstr "继续"
+
+msgid "vday/prebattle/subheader"
+msgstr "?empty?"
+
+msgid "vday/prebattleVeryHard/header"
+msgstr "穿过雷区"
+
+msgid "vday/prebattleVeryHard/start"
+msgstr "移动"
+
+msgid "vday/prebattleVeryHard/subheader"
+msgstr "?empty?"
+
+msgid "vday/respawn/header"
+msgstr "士兵，待命"
+
+msgid "vday/respawn/subheader"
+msgstr "增援即将抵达"
+
+msgid "vday/respawn_over/header"
+msgstr "结束了"
+
+msgid "vday/respawn_over/subheader"
+msgstr "全部坦克都已被击毁"

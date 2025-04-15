@@ -48,6 +48,27 @@ msgstr "老旧行李箱"
 msgid "attachment/antique_oddities/Cus_30_Mystic_Telescope"
 msgstr "附魔望远镜"
 
+msgid "attachment/beyond_pandora"
+msgstr "异域潘多拉"
+
+msgid "attachment/beyond_pandora/Cus_36_FGM_Machinegun"
+msgstr "重机枪"
+
+msgid "attachment/beyond_pandora/Cus_36_FGM_Machinegun/description"
+msgstr "机枪永远不嫌多。即使它们无法击穿敌方坦克的装甲，也可以用来震慑敌人。此外，高温枪管很适合用来烘干衣物。"
+
+msgid "attachment/beyond_pandora/Cus_37_FGM_Projector"
+msgstr "搜救探照灯"
+
+msgid "attachment/beyond_pandora/Cus_38_FGM_Luggage"
+msgstr "异象清理装备"
+
+msgid "attachment/beyond_pandora/Cus_39_FGM_Filterunit"
+msgstr "过滤单元"
+
+msgid "attachment/beyond_pandora/Cus_40_FGM_Winch"
+msgstr "绞盘"
+
 msgid "attachment/dragon_vanguard"
 msgstr "神龙先锋"
 
@@ -747,6 +768,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Boosteroid_02/label"
 msgstr "小心恶龙"
+
+msgid "camouflage/Boosteroid_03/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_03/label"
+msgstr "融为一体"
 
 msgid "camouflage/Borduit/description"
 msgstr "应用这些个性化进入战斗，给阻挡您前进的所有敌人注入恐惧。博格人擅长出其不意，而且总能带来毁灭性的力量。抵抗是徒劳的！"
@@ -3322,6 +3349,12 @@ msgstr "1943年在J系装甲部队使用。"
 msgid "camouflage/czech/bicolor/grassy_green/label"
 msgstr "双色平原"
 
+msgid "camouflage/d_day/description"
+msgstr "?empty?"
+
+msgid "camouflage/d_day/label"
+msgstr "扭转战局"
+
 msgid "camouflage/day_of_the_dead/description"
 msgstr "?empty?"
 
@@ -3480,6 +3513,12 @@ msgstr "脱离统治"
 
 msgid "camouflage/event/name"
 msgstr "钢铁熔岩"
+
+msgid "camouflage/fall_tanks/description"
+msgstr "?empty?"
+
+msgid "camouflage/fall_tanks/label"
+msgstr "霓虹猛兽"
 
 msgid "camouflage/feer/label"
 msgstr "烟花"
@@ -5155,6 +5194,12 @@ msgstr "雪地涂装的永久风格。"
 
 msgid "camouflage/prem_camouflage_winter/label"
 msgstr "黑寡妇雪地"
+
+msgid "camouflage/pub_liveops/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_liveops/label"
+msgstr "大白鲨"
 
 msgid "camouflage/quicky_baby/description"
 msgstr "?empty?"
@@ -7775,7 +7820,7 @@ msgid "customization/tooltip/description/nonHistoric/title"
 msgstr "坦克上的非历史元素"
 
 msgid "customization/tooltip/getattachment"
-msgstr "3D附件可在各种活动中获取，也可在军械库中购买。"
+msgstr "3D附件可在各种游戏内活动中获取，也可在军械库中购买。"
 
 msgid "customization/tooltip/inventory/available"
 msgstr "仓库中"
@@ -7811,6 +7856,9 @@ msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "空位不可用: 从另一个空位中移除任意已应用的贴花。"
 
 msgid "customization/tooltip/quests/blitzkrieg_1026/condition"
+msgstr "在150秒内，通过击毁所有敌方坦克赢得1场天梯战。"
+
+msgid "customization/tooltip/quests/blitzkrieg_1044/condition"
 msgstr "在150秒内，通过击毁所有敌方坦克赢得1场天梯战。"
 
 msgid "customization/tooltip/quests/blitzkrieg_836/condition"
@@ -7966,6 +8014,24 @@ msgstr "在天梯战模式绯红蝎狮赛季中达到青铜段位。"
 msgid "customization/tooltip/quests/comp7_4_2_ranks_65/condition"
 msgstr "在天梯战模式绯红蝎狮赛季中达到黑铁段位。"
 
+msgid "customization/tooltip/quests/comp7_4_3_ranks_11/condition"
+msgstr "在天梯战模式翡翠蝎狮赛季中达到传说段位"
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_21/condition"
+msgstr "在天梯战模式翡翠蝎狮赛季中达到勇士段位。"
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_35/condition"
+msgstr "在天梯战模式翡翠蝎狮赛季中达到黄金段位。"
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_45/condition"
+msgstr "在天梯战模式翡翠蝎狮赛季中达到白银段位。"
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_55/condition"
+msgstr "在天梯战模式翡翠蝎狮赛季中达到青铜段位。"
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_65/condition"
+msgstr "在天梯战模式翡翠蝎狮赛季中达到黑铁段位。"
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "在天梯战模式狮鹫赛季达到黄金段位。"
 
@@ -7991,6 +8057,15 @@ msgid "customization/tooltip/quests/crushing_damage_1026_2/condition"
 msgstr "在天梯战中，累计造成225000点损伤。"
 
 msgid "customization/tooltip/quests/crushing_damage_1026_3/condition"
+msgstr "在天梯战中，累计造成550000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1044_1/condition"
+msgstr "在天梯战中，累计造成25000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1044_2/condition"
+msgstr "在天梯战中，累计造成225000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1044_3/condition"
 msgstr "在天梯战中，累计造成550000点损伤。"
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
@@ -8059,6 +8134,18 @@ msgid ""
 "customization/tooltip/quests/demonstration_performance_1026_3/condition"
 msgstr "驾驶应用了\"融合兽(绯红)\"风格的坦克完成50场天梯战战斗。"
 
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_1/condition"
+msgstr "驾驶应用了\"融合兽(翡翠)\"风格的坦克完成10场天梯战战斗。"
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_2/condition"
+msgstr "驾驶应用了\"融合兽(翡翠)\"风格的坦克完成25场天梯战战斗。"
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_3/condition"
+msgstr "驾驶应用了\"融合兽(翡翠)\"风格的坦克完成50场天梯战战斗。"
+
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr "驾驶应用了羽翼和利爪风格的坦克参加10场天梯战战斗。"
 
@@ -8122,6 +8209,15 @@ msgstr "在天梯战中，累计击毁150辆敌方坦克。"
 msgid "customization/tooltip/quests/destroyed_vehicles_1026_3/condition"
 msgstr "在天梯战中，累计击毁350辆敌方坦克。"
 
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_1/condition"
+msgstr "在天梯战中，累计击毁15辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_2/condition"
+msgstr "在天梯战中，累计击毁150辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_3/condition"
+msgstr "在天梯战中，累计击毁350辆敌方坦克。"
+
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
 msgstr "在天梯战中，累计击毁15辆敌方坦克。"
 
@@ -8179,6 +8275,9 @@ msgstr "在天梯战中，累计击毁350辆敌方坦克。"
 msgid "customization/tooltip/quests/double_threat_1026/condition"
 msgstr "在天梯战的2人小队中获胜25次。"
 
+msgid "customization/tooltip/quests/double_threat_1044/condition"
+msgstr "在天梯战的2人小队中获胜25次。"
+
 msgid "customization/tooltip/quests/double_threat_836/condition"
 msgstr "在天梯战的2人小队中获胜25次。"
 
@@ -8204,6 +8303,15 @@ msgid "customization/tooltip/quests/going_to_circle_1026_2/condition"
 msgstr "在天梯战中，累计获得500点基地占领/防御点数。"
 
 msgid "customization/tooltip/quests/going_to_circle_1026_3/condition"
+msgstr "在天梯战中，累计获得750点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1044_1/condition"
+msgstr "在天梯战中，累计获得250点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1044_2/condition"
+msgstr "在天梯战中，累计获得500点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1044_3/condition"
 msgstr "在天梯战中，累计获得750点基地占领/防御点数。"
 
 msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
@@ -8269,6 +8377,9 @@ msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10�
 msgid "customization/tooltip/quests/last_man_1026/condition"
 msgstr "在天梯战中，独自对抗至少3辆敌方坦克，并取得战斗胜利。"
 
+msgid "customization/tooltip/quests/last_man_1044/condition"
+msgstr "在天梯战中，独自对抗至少3辆敌方坦克，并取得战斗胜利。"
+
 msgid "customization/tooltip/quests/last_man_836/condition"
 msgstr "在天梯战中，在至少3辆敌方坦克的围攻下独自获得胜利。"
 
@@ -8308,6 +8419,9 @@ msgstr "在天梯战中，获得的声望点数排名本队第1名，完成50次
 msgid "customization/tooltip/quests/prestige_7v7_1026/condition"
 msgstr "在天梯战中，获得的声望点数排名本队第1，完成50次。"
 
+msgid "customization/tooltip/quests/prestige_7v7_1044/condition"
+msgstr "在天梯战中，获得的声望点数排名本队第1，完成50次。"
+
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
 msgstr "在天梯战中，获得的声望点数排名本队第1名，完成50次。"
 
@@ -8327,6 +8441,9 @@ msgid "customization/tooltip/quests/progressBig"
 msgstr "已完成: "
 
 msgid "customization/tooltip/quests/rampage_1026/condition"
+msgstr "在1场天梯战中击毁5辆敌方坦克。"
+
+msgid "customization/tooltip/quests/rampage_1044/condition"
 msgstr "在1场天梯战中击毁5辆敌方坦克。"
 
 msgid "customization/tooltip/quests/rampage_836/condition"
@@ -8389,6 +8506,9 @@ msgstr "不可用"
 msgid "customization/tooltip/quests/sudden_strike_1026/condition"
 msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
 
+msgid "customization/tooltip/quests/sudden_strike_1044/condition"
+msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
+
 msgid "customization/tooltip/quests/sudden_strike_836/condition"
 msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
 
@@ -8414,6 +8534,15 @@ msgid "customization/tooltip/quests/tactical_advantage_1026_2/condition"
 msgstr "在天梯战中，配合团队累计占领150个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
 
 msgid "customization/tooltip/quests/tactical_advantage_1026_3/condition"
+msgstr "在天梯战中，配合团队累计占领375个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_1/condition"
+msgstr "在天梯战中，配合团队累计占领15个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_2/condition"
+msgstr "在天梯战中，配合团队累计占领150个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_3/condition"
 msgstr "在天梯战中，配合团队累计占领375个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
 
 msgid "customization/tooltip/quests/tactical_advantage_648_1/condition"
@@ -8480,6 +8609,9 @@ msgid "customization/tooltip/quests/veni_vidi_vici_775/condition"
 msgstr "通过在150秒内击毁所有敌方坦克赢得1场天梯战。"
 
 msgid "customization/tooltip/quests/workhorse_1026/condition"
+msgstr "在天梯战中，累计点亮或击毁500辆敌方坦克。"
+
+msgid "customization/tooltip/quests/workhorse_1044/condition"
 msgstr "在天梯战中，累计点亮或击毁500辆敌方坦克。"
 
 msgid "customization/tooltip/quests/workhorse_836/condition"
@@ -14167,6 +14299,24 @@ msgstr "精益求精！"
 msgid "inscription/special/special_788"
 msgstr "2025春季OLS"
 
+msgid "inscription/special/special_789"
+msgstr "阴阳之道"
+
+msgid "inscription/special/special_790"
+msgstr "敢为人先"
+
+msgid "inscription/special/special_791"
+msgstr "山高人为峰"
+
+msgid "inscription/special/special_792"
+msgstr "猎手本色"
+
+msgid "inscription/special/special_794"
+msgstr "不成功便成仁"
+
+msgid "inscription/special/special_795"
+msgstr "傲视群雄"
+
 msgid "inscription/special/special_796"
 msgstr "灵蛇献吉祥"
 
@@ -14184,6 +14334,12 @@ msgstr "全新管理模式"
 
 msgid "inscription/special/special_801"
 msgstr "Peaky Blinders"
+
+msgid "inscription/special/special_802"
+msgstr "使命必达"
+
+msgid "inscription/special/special_803"
+msgstr "我们做到了！"
 
 msgid "inscription/special/special_81"
 msgstr "为了祖国！"
@@ -20143,6 +20299,15 @@ msgstr "内有恶犬！"
 msgid "projection_decals/special/projection_decal_87/description"
 msgstr "我们很感谢您的意见。按您的要求，您的爱犬回来了！现在您可以带着您的伙伴并肩作战。"
 
+msgid "projection_decals/special/projection_decal_873"
+msgstr "艳丽红花"
+
+msgid "projection_decals/special/projection_decal_874"
+msgstr "白百合花"
+
+msgid "projection_decals/special/projection_decal_875"
+msgstr "自由之花"
+
 msgid "projection_decals/special/projection_decal_876"
 msgstr "帽中白兔"
 
@@ -20157,6 +20322,12 @@ msgstr "圣诞树"
 
 msgid "projection_decals/special/projection_decal_88/description"
 msgstr "这个贴花温柔地提醒您，假日行动结束很久了，您完全没有时间概念。"
+
+msgid "projection_decals/special/projection_decal_885"
+msgstr "变色龙"
+
+msgid "projection_decals/special/projection_decal_888"
+msgstr "击中有效"
 
 msgid "projection_decals/special/projection_decal_89"
 msgstr "全球贴花"
@@ -20540,6 +20711,45 @@ msgstr "先锋"
 msgid "questProgress/cust_progress_1026_9"
 msgstr "剑走偏锋"
 
+msgid "questProgress/cust_progress_1044_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1044_10"
+msgstr "猎手本色"
+
+msgid "questProgress/cust_progress_1044_11"
+msgstr "7对7"
+
+msgid "questProgress/cust_progress_1044_12"
+msgstr "不成功便成仁"
+
+msgid "questProgress/cust_progress_1044_13"
+msgstr "傲视群雄"
+
+msgid "questProgress/cust_progress_1044_2"
+msgstr "毁灭性损伤"
+
+msgid "questProgress/cust_progress_1044_3"
+msgstr "展示技艺"
+
+msgid "questProgress/cust_progress_1044_4"
+msgstr "冲进占领圈"
+
+msgid "questProgress/cust_progress_1044_5"
+msgstr "战术优势"
+
+msgid "questProgress/cust_progress_1044_6"
+msgstr "我们下次见"
+
+msgid "questProgress/cust_progress_1044_7"
+msgstr "阴阳之道"
+
+msgid "questProgress/cust_progress_1044_8"
+msgstr "敢为人先"
+
+msgid "questProgress/cust_progress_1044_9"
+msgstr "山高人为峰"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -20917,6 +21127,9 @@ msgstr "全面提升"
 
 msgid "repaint/Boosteroid_02"
 msgstr "小心恶龙"
+
+msgid "repaint/Boosteroid_03"
+msgstr "融为一体"
 
 msgid "repaint/Breadboard"
 msgstr "集成电路"
@@ -22694,6 +22907,21 @@ msgid "special_style/A172_M4A3E8_Sherman_BPXIV_3Dst_desc/long"
 msgstr ""
 "\"'全世界的目光都聚焦在你们身上，'他们会说。这下压力来了。只要阻止邪恶势力扩张，确保这个热爱自由的世界拥有光明未来就行了。没问题，各位，午饭前就能搞定。好在我抗压能力比较强。压力能帮我集中精力、果断行事。诺曼底行动的时候就是这样。没有时间思考——精神高度紧张。最终，我们打了一个漂亮仗。所以，如果全世界的目光都聚焦在我们身上，我希望他们已经大饱眼福了。我们的故事值得世代相传。\""
 
+msgid "special_style/A174_T57_58_Rush_Ep1"
+msgstr "白银尖刺"
+
+msgid "special_style/A174_T57_58_Rush_Ep1_desc"
+msgstr "状如狮，猛如龙，毒如蝎。自古以来，人们就对这种生物心存畏惧，而这头猛兽正是其钢铁化身。"
+
+msgid "special_style/A174_T57_58_Rush_Ep2"
+msgstr "黄金利爪"
+
+msgid "special_style/A174_T57_58_Rush_Ep3"
+msgstr "勇士之翼"
+
+msgid "special_style/A174_T57_58_Rush_Ep4"
+msgstr "传奇生物"
+
 msgid "special_style/A176_M103_110_HBP_3Dst"
 msgstr "兰博"
 
@@ -22833,6 +23061,18 @@ msgstr "?empty?"
 msgid "special_style/Boosteroid_02_desc/long"
 msgstr ""
 "古时候，地图绘制者会在已知世界的边缘标上\"小心恶龙\"的字样和可怕的神兽形象，以警示未知区域潜藏的危险。然而，他们并未意识到，龙不仅栖息在遥远的地球边缘，它们其实近在咫尺，深藏在古老的山脉和被遗忘的废墟中。它们熔岩般的双眼在黑暗中闪烁，伴有火焰的呼吸在寂静中回响——它们藏匿于凡人视线之外，静静等待，准备再次现身。"
+
+msgid "special_style/Boosteroid_03"
+msgstr "融为一体"
+
+msgid "special_style/Boosteroid_03_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_03_desc/long"
+msgstr ""
+"你看不见我！哦，等等，你能看见？嗯，肯定是还没变色。我是如何做到的？哦，经常有人问我这个问题。老实说，我自己也不太清楚，可能和我的色素之类的东西有关吧。"
+" "
+"等等，你是说你得特意把坦克隐蔽起来，才能不被别人看到？还要用什么特殊配件、涂装之类的？哇，太离谱了…总之，我得走了，还有人等着我，还有苍蝇要抓呢。刚才还能看见我，现在又看不到了！"
 
 msgid "special_style/Breadboard"
 msgstr "集成电路"
@@ -25717,6 +25957,16 @@ msgid "special_style/czech_veteran_desc/long"
 msgstr ""
 "经历过多次战斗的老兵坦克。在另一个城市解放后，指挥官命令全体人员准备好车辆，以便在主要街道上举行纪念游行。坦克光荣地用英雄扬伊兹卡的颜色装饰。"
 
+msgid "special_style/d_day"
+msgstr "扭转战局"
+
+msgid "special_style/d_day_desc"
+msgstr "一款全地形风格，用于纪念盟军在诺曼底行动中的大胆登陆。"
+
+msgid "special_style/d_day_desc/long"
+msgstr ""
+"诺曼底行动规模空前，决定性地扭转了战事局势，使战局向盟军倾斜。在超过5000艘舰船和登陆艇的支援下，盟军于1944年6月6日大胆发动进攻，近16万士兵在五处戒备森严的海滩上登陆，力图突破D系防线。随后几天，盟军不断向D系占领区纵深推进，削弱了D系对西线的控制权，也让诺曼底那片风吹沙扬的海滩载入史册，成为人类历史上最大胆的军事行动之一的见证地。"
+
 msgid "special_style/day_of_the_dead"
 msgstr "亡灵节"
 
@@ -25882,6 +26132,16 @@ msgstr "脱离统治"
 
 msgid "special_style/european_three_tone"
 msgstr "三色欧陆(M系)"
+
+msgid "special_style/fall_tanks"
+msgstr "霓虹猛兽"
+
+msgid "special_style/fall_tanks_desc"
+msgstr "一款未来派全地形风格，为扭曲现实的霓虹竞速世界而设计。"
+
+msgid "special_style/fall_tanks_desc/long"
+msgstr ""
+"\"我见过你们根本无法相信的景象。说实话，当他们下达命令时，我自己都不敢相信。我是看那些八十年代傻乎乎的科幻电影长大的，幻想着一个我见所未见的世界。然后，我真的进去了。通往另一个维度的传送门。霓虹闪耀的世界。冲向终点的竞速。所有的一切都无法用常理解释。我是个坦克手，不是赛车手——至少，在来到这里之前是这样。但这里的规则和外面的世界不同，而我，也不再是从前的自己。我已打破思维的束缚，建议你也这么做。\""
 
 msgid "special_style/feer"
 msgstr "烟花"
@@ -26668,6 +26928,9 @@ msgstr "融合兽(苍蓝)"
 
 msgid "special_style/manticore_progression_2024"
 msgstr "融合兽(绯红)"
+
+msgid "special_style/manticore_progression_2025"
+msgstr "融合兽(翡翠)"
 
 msgid "special_style/manticore_yearly"
 msgstr "融合兽"
@@ -27468,6 +27731,16 @@ msgstr "?empty?"
 msgid "special_style/popular_and_new_vh_desc/long"
 msgstr "?empty?"
 
+msgid "special_style/pub_liveops"
+msgstr "大白鲨"
+
+msgid "special_style/pub_liveops_desc"
+msgstr "一款全地形风格，专为海洋顶级捕食者设计。"
+
+msgid "special_style/pub_liveops_desc/long"
+msgstr ""
+"大白鲨，学名噬人鲨，鼠鲨科噬人鲨属动物，是海洋中的终极猎手。它能够在数百米外嗅到一滴血的气味，一旦捕捉到气息，捕猎本能便立即启动。凭借卓越的嗅觉、敏锐的视觉以及电感应能力，它能以惊人的速度锁定猎物，然后露出夺魄\"微笑\"，利用其多达300颗的利齿向目标发起猛攻。"
+
 msgid "special_style/quicky_baby"
 msgstr "QuickyBaby"
 
@@ -27941,9 +28214,6 @@ msgstr "一款全地形风格，让您在参加幸运草对决的同时感受翡
 
 msgid "special_style/st_patricks_day_2025"
 msgstr "熔炼好运"
-
-msgid "special_style/st_patricks_vehicles_2024"
-msgstr "绿色利器"
 
 msgid "special_style/stayhome"
 msgstr "待出乐趣"
@@ -28669,10 +28939,10 @@ msgid "special_style/yandex_august_2022"
 msgstr "垂钓"
 
 msgid "special_style/yandex_august_2022_desc"
-msgstr "为纪念与Yandex在一个特殊活动中的合作而设计的全地形风格。"
+msgstr "一款全地形风格，彰显钓鱼艺术。"
 
 msgid "special_style/yandex_desc"
-msgstr "为纪念《坦克世界》和Yandex合作而设计的全地形风格。"
+msgstr "一款全地形风格，尽显初冬第一场雪的魅力。"
 
 msgid "special_style/yandex_desc/long"
 msgstr ""

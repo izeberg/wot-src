@@ -139,6 +139,9 @@ msgstr "56TP"
 msgid "Chassis_Pl25_CS_52_C"
 msgstr "CS-53 II"
 
+msgid "Chassis_Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 P"
+
 msgid "Chassis_Pl27_SDP_Wz_66T"
 msgstr "SDP 66 G"
 
@@ -650,6 +653,26 @@ msgstr "CS-52 C"
 msgid "Pl25_CS_52_C_short_special"
 msgstr "一辆搭载了燃气轮机的多功能坦克"
 
+msgid "Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 P"
+
+msgid "Pl26_Czolg_P_Wz_46_descr"
+msgstr ""
+"在CC-46 "
+"P计划中，设计师未采用经典的双履带底盘，而是选择了四履带底盘，并为每对履带提供动力。这种布局虽然具有诸多优势，但实现起来更加复杂。各条履带能以不同模式运行:"
+" 牵引/自由模式下独立运行，或者同步运行。得益于其镜像对称结构，坦克可以快速切换行驶方向。该计划在蓝图阶段被叫停。"
+
+msgid "Pl26_Czolg_P_Wz_46_long_special"
+msgstr ""
+"CC-46 "
+"P是一辆B系IX级重型坦克。作为典型的突击型重坦，它兼具不俗的机动性和良好的生存能力，正面与侧面装甲均相当坚固。该坦克配备一门155毫米火炮，能造成高额的平均单发损伤。考虑到此优势，瞄准时间和装填速度等其他参数均称得上可圈可点。"
+
+msgid "Pl26_Czolg_P_Wz_46_short"
+msgstr "CC-46 P"
+
+msgid "Pl26_Czolg_P_Wz_46_short_special"
+msgstr "高额的平均单发损伤，坚固的正面和侧面装甲"
+
 msgid "Pl27_SDP_Wz_66T"
 msgstr "SDP wz 66 G"
 
@@ -746,16 +769,18 @@ msgstr "CS-53/56 W"
 
 msgid "Pl34_Cs53_56_Woitek_descr"
 msgstr ""
-"华沙军事技术大学的一个项目，将一辆56吨重坦克的炮塔安装在CS-53中型坦克的底盘上。该坦克最终被证明结构复杂、技术落后且成本高昂。因此，B系军方决定专注于大规模生产S系T-54坦克，最终，这辆新型重型坦克仅停留在了蓝图阶段。"
+"华沙军事技术大学的一个项目。在该项目将一辆56吨重坦克的炮塔安装在CS-53中型坦克的底盘上。该坦克最终被证明结构复杂、技术落后且成本高昂。因此，B系军方决定专注于大规模生产S系T-54坦克，最终，这辆新型坦克仅停留在了蓝图阶段。"
 
 msgid "Pl34_Cs53_56_Woitek_long_special"
-msgstr "?empty?"
+msgstr ""
+"CS-53/56 "
+"W的车体装甲较为薄弱，但炮塔装甲相当可靠。同时，重型炮塔上还配备一门122毫米火炮，可造成高额的平均单发损伤。此外，尽管重达52吨左右，但这辆中型坦克仍具有良好的最大前进速度和单位功率。"
 
 msgid "Pl34_Cs53_56_Woitek_short"
 msgstr "CS-53/56 W"
 
 msgid "Pl34_Cs53_56_Woitek_short_special"
-msgstr "?empty?"
+msgstr "高额的平均单发损伤，可靠的炮塔装甲"
 
 msgid "Polski_FIAT_122BC"
 msgstr "波尔斯基菲亚特 122BC"
@@ -925,6 +950,9 @@ msgstr "56TP"
 msgid "Turret_1_Pl25_CS_52_C"
 msgstr "CS 63 P"
 
+msgid "Turret_1_Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 P"
+
 msgid "Turret_1_Pl27_SDP_Wz_66T"
 msgstr "SDP 66 G"
 
@@ -994,8 +1022,8 @@ msgstr "CS-53 MH"
 msgid "V-2-34_B"
 msgstr "V-2-34"
 
-msgid "W-53M2"
-msgstr "W-53M2"
+msgid "V_16_x2"
+msgstr "V-16 x2"
 
 msgid "W_12_5"
 msgstr "W12-5"
@@ -1032,6 +1060,9 @@ msgstr "W-48"
 
 msgid "W_48M"
 msgstr "W-48M"
+
+msgid "W_53M2"
+msgstr "W-53M2"
 
 msgid "_100mm_DAP"
 msgstr "100mm DAP炮"
@@ -1171,6 +1202,9 @@ msgstr "105mm wz.22/24炮"
 msgid "_105mm_wz_52"
 msgstr "105mm wz.52炮"
 
+msgid "_10RT_C46"
+msgstr "10RT-C46"
+
 msgid "_122_mm_wz_43_50"
 msgstr "122mm wz.43/50炮"
 
@@ -1213,6 +1247,15 @@ msgstr "WOF-471P"
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
 
+msgid "_122mm_WBR_471BP_W"
+msgstr "WBR-471BP (W)"
+
+msgid "_122mm_WBR_471B_W"
+msgstr "WBR-471B (W)"
+
+msgid "_122mm_WOF_471P_W"
+msgstr "WOF-471P (W)"
+
 msgid "_122mm_armata_wz_53_56"
 msgstr "122mm wz.53/56炮"
 
@@ -1243,15 +1286,6 @@ msgstr "122mm wz.43/50炮"
 msgid "_122mm_wz_53"
 msgstr "122mm wz.53炮"
 
-msgid "_122mm_wz_53_56_DM"
-msgstr "BR-471D"
-
-msgid "_122mm_wz_53_56_M"
-msgstr "BR-471B"
-
-msgid "_122mm_wz_53_56_OF"
-msgstr "OF-471"
-
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1275,6 +1309,18 @@ msgstr "AP"
 
 msgid "_152mm_pocisk_wybuchowy"
 msgstr "HE"
+
+msgid "_155_mm_PK_40"
+msgstr "PK-40"
+
+msgid "_155_mm_PP_40"
+msgstr "PP-40"
+
+msgid "_155_mm_PW_40"
+msgstr "PW-40"
+
+msgid "_155mm_armata_wz_40_46"
+msgstr "155mm wz.40-46炮"
 
 msgid "_20mm_n_k_m_20_A"
 msgstr "n.k.m.20mm wz.38 FK-A炮"

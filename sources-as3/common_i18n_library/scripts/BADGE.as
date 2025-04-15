@@ -800,6 +800,24 @@ package
       public static const BADGE_177:String = "#badge:badge_177";
       
       public static const BADGE_177_DESCR:String = "#badge:badge_177_descr";
+      
+      public static const BADGE_178:String = "#badge:badge_178";
+      
+      public static const BADGE_178_DESCR:String = "#badge:badge_178_descr";
+      
+      public static const BADGE_179:String = "#badge:badge_179";
+      
+      public static const BADGE_179_DESCR:String = "#badge:badge_179_descr";
+      
+      public static const BADGE_180:String = "#badge:badge_180";
+      
+      public static const BADGE_180_DESCR:String = "#badge:badge_180_descr";
+      
+      public static const SUFFIX_BADGE_180:String = "#badge:suffix/badge_180";
+      
+      public static const BADGE_181:String = "#badge:badge_181";
+      
+      public static const BADGE_181_DESCR:String = "#badge:badge_181_descr";
        
       
       public function BADGE()

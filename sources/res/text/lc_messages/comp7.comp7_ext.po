@@ -947,9 +947,7 @@ msgid "qualification/counter"
 msgstr "%(battlesCount)s/%(maxBattlesCount)s"
 
 msgid "qualification/counterWithDescription"
-msgstr ""
-"%(counter)s\n"
-"已参加战斗场次"
+msgstr "参战场次"
 
 msgid "qualification/ratingCalculationDescription"
 msgstr "正在等待资格赛结果以确定您的段位%(timerIcon)s"
@@ -1091,14 +1089,39 @@ msgstr "青铜"
 msgid "rankUpper/sixth"
 msgstr "传说"
 
+msgid "rankUpper/text"
+msgstr "%(rank)s段位"
+
 msgid "rankUpper/third"
 msgstr "白银"
 
 msgid "ratingScore/title"
 msgstr "评级点数"
 
-msgid "rewards/bonus/deluxe_gift"
-msgstr "改进型配件"
+msgid "rewardSelection/tooltip/selectableRewardList/deluxe"
+msgstr ""
+"您可从下方列表中的改进型配件中选择其一:\n"
+"\n"
+"• 隐蔽排气装置\n"
+"• 强化型瞄具\n"
+"• 改进型旋转驱动\n"
+"• 改进型压缩机\n"
+"• 炮弹抗性加强\n"
+"• 结构改进\n"
+"• 试验型观察镜\n"
+"• 改进型装填系统\n"
+"• 通风系统\n"
+"• 耐磨型炮控系统\n"
+"• 稳定设备系统"
+
+msgid "rewardSelection/tooltip/selectableRewardList/modernized_devices_t3"
+msgstr ""
+"您可从下方列表中的试验型配件中选择其一:\n"
+"\n"
+"• 火控系统等级3\n"
+"• 防护增强套件等级3\n"
+"• 机动强化系统等级3\n"
+"• 精度强化系统等级3"
 
 msgid "rewards/bonus/style_progress"
 msgstr "%(name)s涂装"
@@ -1113,7 +1136,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "适用于{whiteSpanish_Open}%(vehicleLevel)s级坦克{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}适用于\"融合兽(绯红)\"风格{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}适用于\"融合兽(翡翠)\"风格{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s级"
@@ -1123,9 +1146,6 @@ msgstr "您同时获得:"
 
 msgid "rewardsScreen/button"
 msgstr "收到！"
-
-msgid "rewardsScreen/buttonToOtherRewards"
-msgstr "前往其他奖励"
 
 msgid "rewardsScreen/buttonToRewards"
 msgstr "前往奖励"
@@ -1151,6 +1171,9 @@ msgstr "天梯战翡翠蝎狮赛季"
 msgid "rewardsScreen/description/year"
 msgstr "天梯战蝎狮赛年"
 
+msgid "rewardsScreen/goToVehicle"
+msgstr "我的毒刺在哪里？！"
+
 msgid "rewardsScreen/noSeasonResult"
 msgstr "无段位"
 
@@ -1164,6 +1187,12 @@ msgid "rewardsScreen/seasonPointsAmount"
 msgstr ""
 "天梯彩旗\n"
 "总数"
+
+msgid "rewardsScreen/selectEquipment"
+msgstr "选择配件"
+
+msgid "rewardsScreen/selectRewards"
+msgstr "选择奖励"
 
 msgid "rewardsScreen/shopInfo/header/discount"
 msgstr "天梯战商店中现已开放新折扣！"
@@ -1223,7 +1252,7 @@ msgid "rewardsScreen/title/yearlyRewards"
 msgstr "年度奖励"
 
 msgid "rewardsScreen/yearlyVehicleCrew"
-msgstr "附带独特乘员:"
+msgstr "附带:"
 
 msgid "rewardsSelectionScreen/description"
 msgstr "天梯战"
@@ -1693,20 +1722,20 @@ msgid "whatsNewButtonLabel"
 msgstr "赛季更新"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "绯红蝎狮赛季"
+msgstr "翡翠蝎狮赛季"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "天梯战有什么新内容？"
 
 msgid "whatsNewView/button/ok"
-msgstr "我们开始吧！"
+msgstr "开始行动！"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"任务不再失效，整个赛季期间均可完成，您可通过车库中的小部件追踪当前任务的进度。炮弹抗性加强配件已替换为改进型配件令牌，让您可选择任意改进型配件作为奖励。"
+"这个赛季是您获取珍贵奖励的最后机会，奖励包括专属的X级重型坦克毒刺(附带您为其赢得的所有独特3D风格、英勇无畏的乘员)，以及自选改进型和试验型配件，还有引人注目的2D风格等好物。精彩不容错过——胜利在战场上等待着您！"
 
 msgid "whatsNewView/intro/heading"
-msgstr "每周任务%(tag)"
+msgstr "抓住蝎狮赛年的最后时刻！"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "地图"
@@ -1716,37 +1745,6 @@ msgstr "大部分角色能力已获得平衡性改动。欲知更多详情，请
 
 msgid "whatsNewView/roleSkills/heading"
 msgstr "角色能力平衡性改动"
-
-msgid "whatsNewView/sectionDescription/bondShop"
-msgstr "现在可从战争债券物品界面轻松访问天梯战商店。"
-
-msgid "whatsNewView/sectionDescription/enemy"
-msgstr "现在您可在战斗开始时查看对手的昵称和段位。"
-
-msgid "whatsNewView/sectionDescription/legendRank"
-msgstr ""
-"现在名列排行榜{whiteSpanish_Open}前%(topPercentage)s%{whiteSpanish_Close}的玩家将拥有传说段位，排名每{whiteSpanish_Open}%(count)s分钟{whiteSpanish_Close}更新一次。"
-
-msgid "whatsNewView/sectionDescription/platoons_2"
-msgstr "最低段位和最高段位玩家之间的段位差距不得大于1个段位。"
-
-msgid "whatsNewView/sectionDescription/platoons_7"
-msgstr "最低段位和最高段位玩家之间的段位差距不得大于2个段位。"
-
-msgid "whatsNewView/sectionHeading/bondShop"
-msgstr "商店整合"
-
-msgid "whatsNewView/sectionHeading/enemy"
-msgstr "知己知彼"
-
-msgid "whatsNewView/sectionHeading/legendRank"
-msgstr "传说段位扩充"
-
-msgid "whatsNewView/sectionHeading/platoons"
-msgstr "全新小队限制标准: 评级点数改为段位"
-
-msgid "whatsNewView/sectionSubtitle/platoons"
-msgstr "%(count)s人小队"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "已排除"
@@ -1775,25 +1773,6 @@ msgstr "租用坦克"
 msgid "whatsNewView/watchVideo"
 msgstr "观看视频"
 
-msgid "yearRewards/tooltip/selectableReward/list"
-msgstr ""
-"您可从下方列表中的改进型配件中选择其一:\n"
-"\n"
-"• 隐蔽排气装置\n"
-"• 强化型瞄具\n"
-"• 改进型旋转驱动\n"
-"• 改进型压缩机\n"
-"• 炮弹抗性加强\n"
-"• 结构改进\n"
-"• 试验型观察镜\n"
-"• 改进型装填系统\n"
-"• 通风系统\n"
-"• 耐磨型炮控系统\n"
-"• 稳定设备系统"
-
-msgid "yearRewards/tooltip/selectableReward/title"
-msgstr "改进型配件"
-
 msgid "yearlyRewards/banner/default"
 msgstr "奖励在第3赛季结束时发放。"
 
@@ -1804,10 +1783,13 @@ msgid "yearlyRewards/banner/rewardsReceived"
 msgstr "已获得年度奖励。下个赛年见！"
 
 msgid "yearlyRewards/banner/rewardsSelectionAvailable"
-msgstr "请选择您的奖励"
+msgstr "请选择您的配件"
 
-msgid "yearlyRewards/banner/selectButtonLabel"
-msgstr "选择奖励"
+msgid "yearlyRewards/claim"
+msgstr "领取"
+
+msgid "yearlyRewards/claimReward"
+msgstr "领取奖励"
 
 msgid "yearlyRewards/description/achieved"
 msgstr "赛季结束时，每晋升一个段位获得了1面%(seasonPointIcon)s。"

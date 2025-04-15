@@ -78,6 +78,14 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/140_fall_tanks_eff.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/140_fall_tanks_eff.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -208,6 +216,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Ch62_BZ_75_M/Ch62_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/Ch62_BZ_75_M/Ch62_turret_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/A174_T57_58_Rush_Ep1/a174_flame.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/A174_T57_58_Rush_Ep1/a174_flame.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/It35_Felice_RL_3DSt/It35_Felice_RL_3DSt_brazier.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/It35_Felice_RL_3DSt/It35_Felice_RL_3DSt_brazier.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/start_fire_jade.eff</fn_effect_bin>
@@ -261,6 +271,18 @@
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_jumpgold_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_sparks_idle.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/customization/shell.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/customization/link_bmg.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_death.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_main.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_med.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -2807,6 +2829,14 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/140_fall_tanks_eff.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/140_fall_tanks_eff.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -2948,6 +2978,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch62_BZ_75_M/Ch62_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/Ch62_BZ_75_M/Ch62_turret_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/A174_T57_58_Rush_Ep1/a174_flame.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A174_T57_58_Rush_Ep1/a174_flame.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/It35_Felice_RL_3DSt/It35_Felice_RL_3DSt_brazier.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/It35_Felice_RL_3DSt/It35_Felice_RL_3DSt_brazier.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/start_fire_jade.eff</fn_effect_bin>
@@ -3002,6 +3034,18 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_jumpgold_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_32_SP_GoldPot/cus_32_goldpot_sparks_idle.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/customization/shell.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/customization/link_bmg.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_death.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_main.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_med.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

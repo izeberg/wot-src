@@ -3,7 +3,7 @@ package net.wg.gui.battle.views.gameMessagesPanel.components
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
    import net.wg.gui.battle.components.BattleUIComponent;
-   import net.wg.gui.battle.views.gameMessagesPanel.data.GameMessageVO;
+   import net.wg.gui.battle.interfaces.IGameMessageVO;
    import net.wg.gui.battle.views.gameMessagesPanel.events.GameMessagesPanelEvent;
    import net.wg.gui.utils.FrameHelper;
    
@@ -15,7 +15,7 @@ package net.wg.gui.battle.views.gameMessagesPanel.components
       private static const OUTRO_LABEL:String = "outro";
        
       
-      protected var messageData:GameMessageVO = null;
+      protected var messageData:IGameMessageVO = null;
       
       private var _frameHelper:FrameHelper = null;
       
@@ -60,7 +60,7 @@ package net.wg.gui.battle.views.gameMessagesPanel.components
          return this.messageData.messageType;
       }
       
-      public function setData(param1:GameMessageVO) : void
+      public function setData(param1:IGameMessageVO) : void
       {
          this.messageData = param1;
       }

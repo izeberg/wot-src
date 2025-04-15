@@ -1,7 +1,6 @@
 from gui.battle_results.pbs_helpers.common import getArenaNameStr, getRegularFinishResultResource
 from gui.battle_results.presenters.packers.interfaces import IBattleResultsPacker
 from gui.battle_results.settings import BATTLE_RESULTS_RECORD as _RECORD
-from gui.impl.gen.view_models.views.lobby.battle_results.battle_info_model import WinStatus
 
 class BattleInfo(IBattleResultsPacker):
     __slots__ = ()
@@ -13,6 +12,13 @@ class BattleInfo(IBattleResultsPacker):
         common = results[_RECORD.COMMON]
         model.setBattleStartTime(common['arenaCreateTime'])
         model.setBattleDuration(common['duration'])
-        teamResult = reusable.getPersonalTeamResult()
-        model.setWinStatus(WinStatus(teamResult))
-        model.setFinishReason(getRegularFinishResultResource(reusable.common.finishReason, teamResult))
+        model.setWinStatus(cls._getWinStatus(reusable, results))
+        model.setFinishReason(cls._getFinishReasonResource(reusable, results))
+
+    @classmethod
+    def _getFinishReasonResource(cls, reusable, results):
+        return getRegularFinishResultResource(reusable.common.finishReason, reusable.getPersonalTeamResult())
+
+    @classmethod
+    def _getWinStatus(cls, reusable, results):
+        return reusable.getPersonalTeamResult()

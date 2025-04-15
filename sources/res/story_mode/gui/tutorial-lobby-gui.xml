@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<gui-items>
+		<item>
+			<name>VDayDifficulty</name>
+			<type>dict</type>
+			<value>
+				<item>
+					<name>view</name>
+					<value>R.views.story_mode.lobby.MissionSelectionView</value>
+				</item>
+				<item>
+					<name>path</name>
+					<value>div[id=mission-selection-trigger-hint-id]</value>
+				</item>
+				<item>
+					<name>padding</name>
+					<type>dict</type>
+					<value>
+						<item>
+							<name>left</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>top</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>right</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+						<item>
+							<name>bottom</name>
+							<type>float</type>
+							<value>0</value>
+						</item>
+					</value>
+				</item>
+			</value>
+		</item>
+	</gui-items>
+</root>

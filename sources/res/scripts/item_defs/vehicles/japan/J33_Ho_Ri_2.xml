@@ -14,7 +14,7 @@
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
 		<forward>30</forward>
-		<backward>15</backward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -90,7 +90,7 @@
 			<armor_2>50</armor_2>
 			<armor_3>50</armor_3>
 			<armor_4>50</armor_4>
-			<armor_5>30</armor_5>
+			<armor_5>20</armor_5>
 			<armor_6>20</armor_6>
 			<armor_7>110</armor_7>
 			<armor_8>0</armor_8>
@@ -100,21 +100,26 @@
 			<armor_12>250</armor_12>
 			<armor_13>230</armor_13>
 			<armor_14>50</armor_14>
-			<armor_15>50</armor_15>
-			<armor_16>40</armor_16>
+			<armor_15>20</armor_15>
+			<armor_16>20</armor_16>
 			<armor_17>165</armor_17>
 			<armor_18>160</armor_18>
 			<armor_19>30</armor_19>
-			<armor_20>40</armor_20>
+			<armor_20>50</armor_20>
 			<armor_21>40</armor_21>
 			<armor_22>50</armor_22>
-			<armor_23>50</armor_23>
+			<armor_23>20</armor_23>
 			<armor_24>100</armor_24>
 			<armor_25>50</armor_25>
 			<armor_26>35</armor_26>
 			<armor_27>35</armor_27>
 			<armor_29>45</armor_29>
 			<armor_30>165</armor_30>
+			<armor_31>250</armor_31>
+			<armor_32>
+				50
+				<vehicleDamageFactor>0</vehicleDamageFactor>
+			</armor_32>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>16000</weight>
@@ -2382,6 +2387,66 @@
 				<clipAngle>0.346099</clipAngle>
 				<anchorShift>0.962672</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-0.609808 0.281979 -3.722
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 -1.570796 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999994 0.999994 0.999998</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					-1.27598 0.865415 -1.186215
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.221731
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					1.283217 0.865 -1.18621
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.22173
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999998 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>0.000029 2.024455 -0.797548</position>
+				<rotation>-0 -0 0</rotation>
+				<scale>1 1 1</scale>
+				<applyType>turret</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -2412,8 +2477,8 @@
 				</chassis>
 			</unlocks>
 			<armor>
-				<leftTrack>25</leftTrack>
-				<rightTrack>25</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10500</weight>
 			<maxLoad>42500</maxLoad>
@@ -2438,8 +2503,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>190</maxHealth>
-			<maxRegenHealth>145</maxRegenHealth>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>135</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -3791,7 +3856,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_J33_Ho_Ri_2>
@@ -3801,8 +3866,8 @@
 			<level>8</level>
 			<price>34200</price>
 			<armor>
-				<leftTrack>25</leftTrack>
-				<rightTrack>25</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10500</weight>
 			<maxLoad>44500</maxLoad>
@@ -3827,8 +3892,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>210</maxHealth>
-			<maxRegenHealth>160</maxRegenHealth>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>165</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -5183,7 +5248,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_J33_Ho_Ri_2_2>
@@ -5212,7 +5277,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>360</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -5240,7 +5305,7 @@
 						<!--BW_String-->
 					</aimingTime>
 					<reloadTime>
-						8.9
+						9.4
 						<!--BW_String-->
 					</reloadTime>
 					<armor>
@@ -5249,7 +5314,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							210
+							180
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -5272,6 +5337,10 @@
 							170
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_9>
+						<armor_10>
+							220
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_10>
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
@@ -5283,6 +5352,20 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-11 11</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.12
+							<!--BW_String-->
+						</turretRotation>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+					</shotDispersionFactors>
 					<customizationSlots>
 						<slot>
 							<slotType>paint</slotType>
@@ -5313,6 +5396,18 @@
 							</anchorPosition>
 							<anchorDirection>-0 1 -0</anchorDirection>
 							<applyTo>4096</applyTo>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000022 0.289 0.401
+								<!--BW_String-->
+							</position>
+							<rotation>-0 -0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -5377,7 +5472,10 @@
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 8 1 8</maxPitch>
 					</pitchLimits>
-					<reloadTime>11</reloadTime>
+					<reloadTime>
+						10.3
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
 						2.3
 						<!--BW_String-->
@@ -5410,6 +5508,20 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-11 11</turretYawLimits>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.1
+							<!--BW_String-->
+						</turretRotation>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+					</shotDispersionFactors>
 					<customizationSlots>
 						<slot>
 							<slotType>paint</slotType>
@@ -5440,6 +5552,18 @@
 							</anchorPosition>
 							<anchorDirection>-0 1 0</anchorDirection>
 							<applyTo>4096</applyTo>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0.000022 0.289 0.322824
+								<!--BW_String-->
+							</position>
+							<rotation>-0 -0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>medium</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -5556,15 +5680,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<_Type3_Otsu>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Ko
-					<cost>9300</cost>
-				</radio>
-			</unlocks>
-		</_Type3_Otsu>
 		<_Type3_Ko>shared</_Type3_Ko>
 	</radios>
 	<clientAdjustmentFactors/>

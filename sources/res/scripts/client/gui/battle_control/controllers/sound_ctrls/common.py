@@ -29,9 +29,10 @@ class SoundPlayersBattleController(IBattleController):
 
     def __init__(self):
         self.__soundPlayers = self._initializeSoundPlayers()
+        self.__wasStarted = False
 
     def startControl(self, *args):
-        self.__startPlayers()
+        self._startPlayers()
 
     def stopControl(self):
         self.__destroyPlayers()
@@ -42,9 +43,13 @@ class SoundPlayersBattleController(IBattleController):
     def _initializeSoundPlayers(self):
         raise NotImplementedError
 
-    def __startPlayers(self):
+    def _startPlayers(self):
+        if self.__wasStarted:
+            return
         for player in self.__soundPlayers:
             player.init()
+
+        self.__wasStarted = True
 
     def __destroyPlayers(self):
         for player in self.__soundPlayers:
@@ -77,7 +82,7 @@ class SoundPlayer(object):
                 vehicle = BigWorld.player().getVehicleAttached()
                 if vehicle is not None and not vehicle.isAlive():
                     return
-            SoundGroups.g_instance.playSound2D(event)
+            SoundGroups.g_instance.playSafeSound2D(event)
             return
 
 

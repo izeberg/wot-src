@@ -51,6 +51,13 @@ msgstr ""
 msgid "06_ensk/name"
 msgstr "安斯克"
 
+msgid "06_ensk_big/description"
+msgstr ""
+"在工业重镇安斯克，重型坦克可在城市街区进行激烈的巷战。穿过铁路，可前往侧翼的郊区林地。中型坦克可在侧翼争夺突破机会，而山顶上的废弃建筑则为中型和轻型坦克提供了关键点位"
+
+msgid "06_ensk_big/name"
+msgstr "安斯克地区"
+
 msgid "07_lakeville/description"
 msgstr ""
 "地图的一侧是一片独立的山谷，另一侧则是一片城市街区，能够让您与敌人短兵相接。地图中央一个大型的湖泊为狙击手们展示极限距离上的准头提供了机会。"
@@ -166,6 +173,12 @@ msgstr ""
 msgid "13_erlenberg/name"
 msgstr "埃勒斯堡"
 
+msgid "140_fall_tanks/description"
+msgstr "在摇摇欲坠的平台、危险的深渊间展开自由竞赛，抢先抵达检查点是通往胜利的关键。"
+
+msgid "140_fall_tanks/name"
+msgstr "坦克竞赛"
+
 msgid "14_siegfried_line/description"
 msgstr "地图由开阔的地域和城市街区组成。蜿蜒的街道能够为您迂回到敌人后方发动奇袭提供机会，大量的堡垒也能为您提供掩护。"
 
@@ -177,6 +190,9 @@ msgstr "准备好捅破另一条敌方防线——敌人可不会放松警惕！
 
 msgid "14_siegfried_line_nom/name"
 msgstr "西部防线"
+
+msgid "14_siegfried_line_wt/name"
+msgstr "齐格菲防线"
 
 msgid "17_munchen/description"
 msgstr "这张地图展现了一座饱经战火的工业城市。铁道路基将地图一分为二，使得您有机会集中力量发动攻击或进行反击。"
@@ -223,6 +239,13 @@ msgstr ""
 "两座巨大的山脉环绕着这片宁静的山谷，城堡的废墟俯瞰着这片区域，掌控着周边的湖泊与森林。广袤的原野可用于隐秘而快速地向敌军侧翼发起攻击，而小型的村落则提供了与敌人正面对决的机会。"
 
 msgid "212_epic_random_valley/name"
+msgstr "尼德堡"
+
+msgid "212_epic_random_valley_sm25/description"
+msgstr ""
+"高山之巅矗立着一座孤零零的要塞，由D系驻军把守。深更夜半，D系投降的消息尚未传至此地，疲惫不堪的士兵们正加固防御工事，迎接逼近的盟军。他们浑然不知这场抵抗已无意义，依旧做着迎接最后一战的准备——一场注定没有胜者的战斗。"
+
+msgid "212_epic_random_valley_sm25/name"
 msgstr "尼德堡"
 
 msgid "217_er_alaska/description"
@@ -281,7 +304,7 @@ msgstr "埃里-哈罗夫"
 
 msgid "31_airfield/description"
 msgstr ""
-"这张地图上有丰富的伏击点位，也提供了大量的机动和突破的机会。地图上部的大型机场和中部高耸的岩地是双方必争之地。谁占领了高地，谁就能俯瞰周边地形，控制通向敌方基地的道路。"
+"这张地图提供了绝佳的伏击点位，以及进行机动和突破的机会。地图上部的大型机场提供了各种战略机会，而中部的洞穴则创造了一个独特的战场。机动性良好的坦克可利用沙丘和海岸线进行侧翼攻击和快速推进。"
 
 msgid "31_airfield/name"
 msgstr "阿拉曼机场"
@@ -300,11 +323,17 @@ msgstr ""
 msgid "34_redshire/name"
 msgstr "斯特拉特福"
 
+msgid "34_redshire_wt/name"
+msgstr "斯特拉特福"
+
 msgid "35_steppes/description"
 msgstr ""
 "总的来说这张地图较为开阔，可以从多个方向发动攻击，但不要分兵过多。沿地图中央的道路可以直达敌方基地，但会困难重重。地图的边缘的道路是发起进攻和佯攻更好的选择。"
 
 msgid "35_steppes/name"
+msgstr "荒蛮之地"
+
+msgid "35_steppes_wt/name"
 msgstr "荒蛮之地"
 
 msgid "36_fishing_bay/description"

@@ -40,7 +40,7 @@ package net.wg.gui.components.crosshairPanel
       
       private static const VALUE_100:int = 100;
       
-      private static const CROSSHAIRS_LINAKGES:Vector.<String> = new <String>[Linkages.CROSSHAIR_ARCADE_UI,Linkages.CROSSHAIR_SNIPER_UI,Linkages.CROSSHAIR_STRATEGIC_UI,Linkages.CROSSHAIR_POSTMORTEM_UI];
+      protected static const CROSSHAIRS_LINAKGES:Vector.<String> = new <String>[Linkages.CROSSHAIR_ARCADE_UI,Linkages.CROSSHAIR_SNIPER_UI,Linkages.CROSSHAIR_STRATEGIC_UI,Linkages.CROSSHAIR_POSTMORTEM_UI];
       
       private static const FADE_TWEEN_DURATION:uint = 500;
       
@@ -49,7 +49,7 @@ package net.wg.gui.components.crosshairPanel
       private static const FADE_OUT_ALPHA:Number = 0.4;
        
       
-      private var _gunMarkersContainer:GunMarkersManager;
+      protected var _gunMarkersContainer:GunMarkersManager;
       
       private var _currentCrosshair:ICrosshair = null;
       
@@ -175,10 +175,30 @@ package net.wg.gui.components.crosshairPanel
          this._sniperCameraTransitionFx = new CrosshairPanelSniperCameraTransitionFx();
       }
       
-      private static function createComponent(param1:String) : DisplayObject
+      protected static function createComponent(param1:String) : DisplayObject
       {
          var _loc2_:Class = Class(getDefinitionByName(param1));
          return new _loc2_();
+      }
+      
+      protected function get currentCrosshair() : ICrosshair
+      {
+         return this._currentCrosshair;
+      }
+      
+      protected function set currentCrosshair(param1:ICrosshair) : void
+      {
+         this._currentCrosshair = param1;
+      }
+      
+      protected function set crosshairs(param1:Vector.<ICrosshair>) : void
+      {
+         this._crosshairs = param1;
+      }
+      
+      protected function get crosshairs() : Vector.<ICrosshair>
+      {
+         return this._crosshairs;
       }
       
       override protected function configUI() : void
@@ -896,10 +916,17 @@ package net.wg.gui.components.crosshairPanel
       
       public function init() : void
       {
-         var _loc1_:ICrosshair = null;
-         var _loc2_:String = null;
          stage.scaleMode = StageScaleMode.NO_SCALE;
          stage.align = StageAlign.TOP_LEFT;
+         this.initCrosshairs();
+         this._gunMarkersContainer = new GunMarkersManager(this);
+         this.hideAll();
+      }
+      
+      protected function initCrosshairs() : void
+      {
+         var _loc1_:ICrosshair = null;
+         var _loc2_:String = null;
          this._crosshairs = new Vector.<ICrosshair>(0);
          for each(_loc2_ in CROSSHAIRS_LINAKGES)
          {
@@ -907,9 +934,7 @@ package net.wg.gui.components.crosshairPanel
             this._crosshairs.push(_loc1_);
             addChild(DisplayObject(_loc1_));
          }
-         this._gunMarkersContainer = new GunMarkersManager(this);
          this._currentCrosshair = this._crosshairs[0];
-         this.hideAll();
       }
       
       private function clearTweens() : void
@@ -1104,7 +1129,7 @@ package net.wg.gui.components.crosshairPanel
          this._reloadingInterval = this.clearTimer(this._reloadingInterval);
       }
       
-      private function hideAll() : void
+      protected function hideAll() : void
       {
          var _loc1_:ICrosshair = null;
          for each(_loc1_ in this._crosshairs)

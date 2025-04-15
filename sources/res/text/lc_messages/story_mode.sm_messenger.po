@@ -13,11 +13,17 @@ msgstr ""
 msgid "medal/accrued"
 msgstr "已收到:"
 
+msgid "medal/badgeAndMedal"
+msgstr "%(badge)s、%(medal)s。"
+
+msgid "medal/badgeName"
+msgstr "%(badge_name)s奖章"
+
 msgid "medal/date"
 msgstr "日期: %(at)s"
 
 msgid "medal/medalName"
-msgstr "勋章: %(medal_name)s"
+msgstr "%(medal_name)s勋章"
 
 msgid "medal/title"
 msgstr "收到"
@@ -51,6 +57,9 @@ msgstr "《坦克世界》高级账号天数:"
 
 msgid "result/reward"
 msgstr "已完成任务！添加奖励:"
+
+msgid "result/slots"
+msgstr "车位"
 
 msgid "result/vehicle"
 msgstr "坦克"

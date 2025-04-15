@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_39_FGM_Filterunit/normal/lod2/Cus_39_FGM_Filterunit_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.428377 -0.385783 -0.867949</min>
+		<max>0.154523 0.456316 0.908876</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_39_FGM_Filterunit/normal/lod1/Cus_39_FGM_Filterunit_01</nodefullVisual>
+</root>

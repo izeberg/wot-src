@@ -1,11 +1,13 @@
+from frameworks.wulf import Array
 from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.common.vehicle_info_model import VehicleInfoModel
 from gui.impl.gen.view_models.views.lobby.crew.skills_list_model import SkillsListModel
+from gui.impl.gen.view_models.views.lobby.crew.sort_dropdown_item_model import SortDropdownItemModel
 
 class SkillsTrainingViewModel(ViewModel):
-    __slots__ = ('onClose', )
+    __slots__ = ('onClose', 'onSortingSelectionChange')
 
-    def __init__(self, properties=12, commands=1):
+    def __init__(self, properties=14, commands=2):
         super(SkillsTrainingViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -84,6 +86,22 @@ class SkillsTrainingViewModel(ViewModel):
     def setIsTankmanInVehicle(self, value):
         self._setBool(11, value)
 
+    def getSortingDropDownItems(self):
+        return self._getArray(12)
+
+    def setSortingDropDownItems(self, value):
+        self._setArray(12, value)
+
+    @staticmethod
+    def getSortingDropDownItemsType():
+        return SortDropdownItemModel
+
+    def getShowSortingSelectionWarning(self):
+        return self._getBool(13)
+
+    def setShowSortingSelectionWarning(self, value):
+        self._setBool(13, value)
+
     def _initialize(self):
         super(SkillsTrainingViewModel, self)._initialize()
         self._addViewModelProperty('vehicleInfo', VehicleInfoModel())
@@ -98,4 +116,7 @@ class SkillsTrainingViewModel(ViewModel):
         self._addRealProperty('skillsEfficiency', 0.0)
         self._addBoolProperty('isAnySkillSelected', False)
         self._addBoolProperty('isTankmanInVehicle', False)
+        self._addArrayProperty('sortingDropDownItems', Array())
+        self._addBoolProperty('showSortingSelectionWarning', False)
         self.onClose = self._addCommand('onClose')
+        self.onSortingSelectionChange = self._addCommand('onSortingSelectionChange')

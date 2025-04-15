@@ -1,1 +1,4 @@
-pass
+from fun_random_common.fun_constants import ARENA_GUI_TYPE
+from fun_random.gui.shared.fun_system_factory import registerBattleResultsMessageSubFormatter
+from fun_random.messenger.formatters.battle_results_formatters import FunRandomBattleResultsSubFormatter
+registerBattleResultsMessageSubFormatter(ARENA_GUI_TYPE.FUN_RANDOM, FunRandomBattleResultsSubFormatter)

@@ -26,6 +26,7 @@ from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from skeletons.gui.game_control import IVehiclePostProgressionController
 from skeletons.gui.shared import IItemsCache, IItemsRequester
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
+from gui.shared.system_factory import collectGuiItemsCacheInvalidators, GuiItemsCacheInvalidatorParams
 if TYPE_CHECKING:
     from typing import Optional, Dict, List
     import skeletons.gui.shared.utils.requesters as requesters
@@ -346,7 +347,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 604         0  LOAD_FAST             0  'item'
+ L. 605         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -470,7 +471,7 @@ class ItemsRequester(IItemsRequester):
     _AccountItem = namedtuple('_AccountItem', ['dossier', 'clanInfo', 'seasons', 'ranked',
      'dogTag', 'battleRoyaleStats', 'wtr', 'layout', 'layoutState'])
 
-    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None):
+    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, achievements20Requester=None):
         self.__inventory = inventory
         self.__stats = stats
         self.__dossiers = dossiers
@@ -490,7 +491,6 @@ class ItemsRequester(IItemsRequester):
         self.__battlePass = battlePassRequester
         self.__giftSystem = giftSystemRequester
         self.__gameRestrictions = gameRestrictionsRequester
-        self.__resourceWell = resourceWellRequester
         self.__achievements20 = achievements20Requester
         self.__itemsCache = defaultdict(dict)
         self.__brokenSyncAlreadyLoggedTypes = set()
@@ -578,10 +578,6 @@ class ItemsRequester(IItemsRequester):
         return self.__gameRestrictions
 
     @property
-    def resourceWell(self):
-        return self.__resourceWell
-
-    @property
     def achievements20(self):
         return self.__achievements20
 
@@ -650,9 +646,6 @@ class ItemsRequester(IItemsRequester):
         Waiting.show('download/gameRestrictions')
         yield self.__gameRestrictions.request()
         Waiting.hide('download/gameRestrictions')
-        Waiting.show('download/resourceWell')
-        yield self.__resourceWell.request()
-        Waiting.hide('download/resourceWell')
         Waiting.show('download/achievements20')
         yield self.__achievements20.request()
         Waiting.hide('download/achievements20')
@@ -661,7 +654,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1105         0  LOAD_FAST             0  'self'
+ L.1095         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -831,6 +824,9 @@ Parse error at or near `None' instruction at offset -1
 
             self.inventory.initC11nItemsNoveltyData()
         else:
+            for invalidator in collectGuiItemsCacheInvalidators():
+                invalidator(GuiItemsCacheInvalidatorParams(self.__inventory, invalidate, diff))
+
             for statName, data in diff.get('stats', {}).iteritems():
                 if statName in ('unlocks', ('unlocks', '_r')):
                     self._invalidateUnlocks(data, invalidate)

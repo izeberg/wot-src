@@ -5,6 +5,7 @@ class MissionsDifficulty(Enum):
     UNDEFINED = ''
     NORMAL = 'normal'
     HARD = 'hard'
+    VERY_HARD = 'very_hard'
 
 
 class MissionModel(ViewModel):

@@ -8,7 +8,7 @@ from gui.impl.gen.view_models.views.loot_box_compensation_tooltip_types import L
 from gui.impl.gen.view_models.views.loot_box_vehicle_compensation_tooltip_model import LootBoxVehicleCompensationTooltipModel
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_coin_tooltip_view import BattlePassCoinTooltipView
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_taler_tooltip import BattlePassTalerTooltip
-from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip
+from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip, BoxCompensationTooltip
 from gui.impl.lobby.lootbox_system.base.tooltips.guaranteed_reward_info_tooltip import GuaranteedRewardInfoTooltip
 from gui.impl.lobby.lootbox_system.base.tooltips.random_national_bonus_tooltip_view import RandomNationalBonusTooltipView
 from gui.impl.lobby.lootbox_system.base.tooltips.statistics_category_tooltip import StatisticsCategoryTooltipView
@@ -52,6 +52,10 @@ def createTooltipContentDecorator():
                         return VehicleCompensationTooltipContent(settings)
                     if contentID == R.views.lobby.lootbox_system.tooltips.RandomNationalBonusTooltipView():
                         return RandomNationalBonusTooltipView(*tooltipData.specialArgs)
+                if contentID == R.views.lobby.lootbox_system.tooltips.BoxCompensationTooltip():
+                    if tooltipData is None:
+                        return
+                    return BoxCompensationTooltip(*tooltipData.specialArgs)
                 return func(self, event, contentID)
 
         return wrapper

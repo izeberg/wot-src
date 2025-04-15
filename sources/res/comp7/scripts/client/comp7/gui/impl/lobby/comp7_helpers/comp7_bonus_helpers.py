@@ -9,6 +9,7 @@ from gui.shared.money import Currency
 from shared_utils import first
 from gui.selectable_reward.constants import SELECTABLE_BONUS_NAME
 if typing.TYPE_CHECKING:
+    from typing import Any
     from gui.server_events.bonuses import SimpleBonus, ItemsBonus, CustomizationsBonus, GoodiesBonus, CrewBooksBonus, PlusPremiumDaysBonus, CreditsBonus, CrystalBonus, DogTagComponentBonus, VehiclesBonus, TokensBonus
 
 class BonusTypes(enum.IntEnum):
@@ -35,6 +36,7 @@ class BonusTypes(enum.IntEnum):
     CREW = 20
     TOKEN = 21
     EQUIP_COIN = 22
+    STYLE_3D = 23
 
 
 def getBonusType(bonus):
@@ -76,11 +78,23 @@ class _ItemsBonusHelper(_BaseBonusHelper):
         return BonusTypes.NONE
 
 
-class _CustomizationsBonusHelper(_BaseBonusHelper):
+class CustomizationsBonusHelper(_BaseBonusHelper):
 
     @staticmethod
     def getBonusType(bonus):
+        c11nItem = CustomizationsBonusHelper.getBonusC11Item(bonus)
+        if c11nItem and c11nItem.itemTypeName == 'style' and c11nItem.is3D:
+            return BonusTypes.STYLE_3D
         return BonusTypes.STYLE
+
+    @staticmethod
+    def getBonusC11Item(bonus):
+        customizations = bonus.getCustomizations()
+        itemData = first(customizations)
+        if not itemData:
+            return None
+        else:
+            return bonus.getC11nItem(itemData)
 
 
 class _GoodiesBonusHelper(_BaseBonusHelper):
@@ -209,7 +223,7 @@ class _TokenBonusHelper(_BaseBonusHelper):
 
 
 _BONUS_HELPERS_MAP = {'items': _ItemsBonusHelper, 
-   'customizations': _CustomizationsBonusHelper, 
+   'customizations': CustomizationsBonusHelper, 
    'goodies': _GoodiesBonusHelper, 
    'crewBooks': _CrewBooksBonusHelper, 
    'vehicles': _VehiclesBonusHelper, 

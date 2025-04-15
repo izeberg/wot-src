@@ -26,5 +26,21 @@
 				<item>self</item>
 			</value>
 		</message>
+		<message>
+			<name>COMBAT_EQUIPMENT_READY_RECON_ABILITY</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_messages/RECON_ABILITY)</item>
+				<item>self</item>
+			</value>
+		</message>
+		<message>
+			<name>COMBAT_EQUIPMENT_READY_DISTRACTION_ABILITY</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_messages/DISTRACTION_ABILITY)</item>
+				<item>self</item>
+			</value>
+		</message>
 	</messages>
 </root>

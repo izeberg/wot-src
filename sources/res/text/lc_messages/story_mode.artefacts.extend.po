@@ -15,3 +15,15 @@ msgstr "烟雾信号"
 
 msgid "battleship/shortDescr"
 msgstr "一种为战舰火炮齐射标记目标区域的烟雾信号，齐射能够对区域内的敌方装备和工事造成损伤。"
+
+msgid "distraction_ability/name"
+msgstr "虚假命令"
+
+msgid "distraction_ability/shortDescr"
+msgstr "让三等兵凯勒使用缴获的D系无线电发送虚假命令，指示敌人调查指定位置。"
+
+msgid "recon_ability/name"
+msgstr "侦察四周"
+
+msgid "recon_ability/shortDescr"
+msgstr "派遣杜布瓦上尉前往指定位置侦察。侦察时，坦克停止并保持静止不动。该能力会持续生效，直至取消。"

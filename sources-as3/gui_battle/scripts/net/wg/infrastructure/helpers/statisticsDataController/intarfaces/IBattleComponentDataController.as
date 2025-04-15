@@ -2,7 +2,7 @@ package net.wg.infrastructure.helpers.statisticsDataController.intarfaces
 {
    import net.wg.infrastructure.interfaces.IDAAPIDataClass;
    
-   public interface IBattleComponentDataController
+   public interface IBattleComponentDataController extends IBattleTabDataController
    {
        
       
@@ -24,10 +24,6 @@ package net.wg.infrastructure.helpers.statisticsDataController.intarfaces
       
       function updatePlayerStatus(param1:IDAAPIDataClass) : void;
       
-      function setArenaInfo(param1:IDAAPIDataClass) : void;
-      
-      function setQuestStatus(param1:IDAAPIDataClass) : void;
-      
       function setUserTags(param1:IDAAPIDataClass) : void;
       
       function updateUserTags(param1:IDAAPIDataClass) : void;
@@ -37,5 +33,7 @@ package net.wg.infrastructure.helpers.statisticsDataController.intarfaces
       function updateInvitationsStatuses(param1:IDAAPIDataClass) : void;
       
       function updateTriggeredChatCommands(param1:IDAAPIDataClass) : void;
+      
+      function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void;
    }
 }

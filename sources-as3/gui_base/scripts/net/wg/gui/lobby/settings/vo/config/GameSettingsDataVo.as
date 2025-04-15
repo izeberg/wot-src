@@ -148,6 +148,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var showMarkers:SettingsControlProp = null;
       
+      public var enableCommendations:SettingsControlProp = null;
+      
       public var switchEquipment:SettingsControlProp = null;
       
       public function GameSettingsDataVo()
@@ -223,6 +225,7 @@ package net.wg.gui.lobby.settings.vo.config
             "showCalloutMessages":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "showLocationMarkers":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "showMarkers":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "enableCommendations":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "switchEquipment":createControl(ControlsFactory.TYPE_CHECKBOX).build()
          });
       }
@@ -367,6 +370,8 @@ package net.wg.gui.lobby.settings.vo.config
          this.showLocationMarkers = null;
          this.showMarkers.dispose();
          this.showMarkers = null;
+         this.enableCommendations.dispose();
+         this.enableCommendations = null;
          this.showVehicleHPinMinimap.dispose();
          this.showVehicleHPinMinimap = null;
          this.switchEquipment.dispose();

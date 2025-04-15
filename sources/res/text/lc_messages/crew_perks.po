@@ -724,6 +724,15 @@ msgstr "装填手"
 msgid "perkRole/radioman"
 msgstr "通信兵"
 
+msgid "popularity/tooltip/common"
+msgstr "的全部玩家使用"
+
+msgid "popularity/tooltip/header"
+msgstr "在该坦克上，有"
+
+msgid "popularity/tooltip/legendary"
+msgstr "的WTR传奇评级玩家使用"
+
 msgid "radioman_expert/alt/description"
 msgstr ""
 "乘员效率加成提高乘员的战斗力。如果2名通信兵均拥有该特长，那么将应用其训练水平的平均值。该参数可通过安装拥有类似效果的配件或给养，或使用净化通风指令来进一步提高。兄弟连团体特长、车长的紧急应对特长、通信兵的并肩作战特长也都能提高该参数。"
@@ -895,6 +904,49 @@ msgstr "-"
 
 msgid "sign/plus"
 msgstr "+"
+
+msgid "sorting/common"
+msgstr "热门"
+
+msgid "sorting/fallback"
+msgstr "默认"
+
+msgid "sorting/legendary"
+msgstr "传奇"
+
+msgid "sorting/title"
+msgstr "排序方式:"
+
+msgid "sorting/tooltip/common"
+msgstr "%(whiteSpanish_Open)s热门。%(whiteSpanish_Close)s基于当前所有《坦克世界》玩家的主流特长选择"
+
+msgid "sorting/tooltip/header"
+msgstr "坦克世界Plus福利"
+
+msgid "sorting/tooltip/headerDescription"
+msgstr "获取基于数百万场战斗的精确乘员特长数据，充分发挥每场战斗的潜力。"
+
+msgid "sorting/tooltip/legendary"
+msgstr ""
+"%(whiteSpanish_Open)s传奇。%(whiteSpanish_Close)s基于当前WTR评级为传奇等级的玩家所青睐的特长选择"
+
+msgid "sorting/tooltip/sortingDisabled"
+msgstr "已关闭特长排序"
+
+msgid "sorting/tooltip/sortingDisabledText"
+msgstr "暂无数据"
+
+msgid "sorting/tooltip/title"
+msgstr "乘员助手"
+
+msgid "sorting/tooltip/types"
+msgstr "特长排序类型"
+
+msgid "sorting/tooltip/warning"
+msgstr "特长排序不可用"
+
+msgid "sorting/tooltip/warningText"
+msgstr "该坦克的完整特长数据不可用，因此已应用默认特长排序。"
 
 msgid "witches_brotherhood/name"
 msgstr "共鸣集会"

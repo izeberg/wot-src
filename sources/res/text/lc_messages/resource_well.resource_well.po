@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "awardView/completedProgressionView/received"
+msgstr "已获得坦克"
+
+msgid "awardView/end"
+msgstr "活动已结束"
+
+msgid "awardView/info"
+msgstr "风格编号"
+
+msgid "awardView/toHangar"
+msgstr "前往车库查看"
+
+msgid "awardView/vehicleNumberTitle"
+msgstr "附带编号风格的%(vehicleInfo)"
+
+msgid "awardView/vehicleNumberedTitle"
+msgstr "已获得坦克"
+
+msgid "awardView/vehicleTitle"
+msgstr "已获得坦克"
+
+msgid "commonTexts/aboutButton"
+msgstr "活动详情"
+
+msgid "commonTexts/closeBtn"
+msgstr "关闭"
+
+msgid "commonTexts/eventTitle"
+msgstr "组装车间"
+
+msgid "confirm/NoSerialVehicles/buttonCancel/title"
+msgstr "取消"
+
+msgid "confirm/NoSerialVehicles/buttonConfirm/title"
+msgstr "花费"
+
+msgid "confirm/NoSerialVehicles/description"
+msgstr ""
+"带有编号风格的坦克已经没有了。您将获得无编号的%(vehicleName)s。\n"
+"您确定要花费资源吗？"
+
+msgid "confirm/NoSerialVehicles/title"
+msgstr "您将获得无编号的%(vehicleName)s"
+
+msgid "confirm/NoVehicles/buttonCancel/title"
+msgstr "返回车库"
+
+msgid "confirm/NoVehicles/description"
+msgstr "所花费的全部资源将很快返还到您的账号。"
+
+msgid "confirm/NoVehicles/title"
+msgstr "没有剩余的坦克了"
+
+msgid "confirm/buttonCancel/title"
+msgstr "取消"
+
+msgid "confirm/resourcesContribute/buttonConfirm/title"
+msgstr "花费"
+
+msgid "confirm/resourcesContribute/description/text"
+msgstr "花费后的进度: %(percent)"
+
+msgid "confirm/resourcesContribute/title"
+msgstr "花费资源？"
+
+msgid "confirm/resourcesReturn/buttonConfirm/title"
+msgstr "返还资源"
+
+msgid "confirm/resourcesReturn/description/text"
+msgstr "所花费的全部资源将返还到您的账号，您的组装进度将重置。活动开放期间，您将能够再次花费资源尝试获得坦克。"
+
+msgid "confirm/resourcesReturn/title"
+msgstr "返还所花费的全部资源？"
+
+msgid "confirm/resourcesReturnOnSwitch/description/text"
+msgstr "所花费的全部资源将返还到您的账号，您的组装进度将重置。%(vehicleName)将被选中，您可花费资源来获取这辆坦克。"
+
+msgid "confirm/resourcesReturnOnSwitch/title"
+msgstr "返还所花费的全部资源并选择%(vehicleName)？"
+
+msgid "counterStates/activeState/selectVehicleButton"
+msgstr "选择坦克"
+
+msgid "eventInfo/description/inParallelEventMode"
+msgstr "您可在活动期间组装2辆坦克。"
+
+msgid "eventInfo/description/oneSerialEventMode"
+msgstr "活动期间，您有机会获取附带编号3D风格的坦克。"
+
+msgid "eventInfo/description/sequentialEventMode"
+msgstr ""
+"前%(styleTanksCount)名玩家可获得附带编号3D风格的坦克，\n"
+"之后将交付%(withoutStyleTanksCount)辆不附带编号3D风格的坦克。"
+
+msgid "eventInfo/header/subTitle/eventOver"
+msgstr "活动已结束"
+
+msgid "eventInfo/header/title/allVehiclesReceived"
+msgstr "已获得坦克"
+
+msgid "eventInfo/header/title/vehicleReceived"
+msgstr "已获得坦克"
+
+msgid "eventInfo/inParallelEventMode/tanksLeftText"
+msgstr "剩余坦克"
+
+msgid "eventInfo/tanksAlreadyInGarage"
+msgstr "该坦克已在您的车库中"
+
+msgid "eventInfo/tanksAlreadyReceived"
+msgstr "已获得坦克"
+
+msgid "eventInfo/tanksOver"
+msgstr "全部组装完毕"
+
+msgid "eventInfo/top/styleText"
+msgstr "附带编号"
+
+msgid "eventInfo/top/tanksLeftText"
+msgstr "剩余编号坦克"
+
+msgid "eventInfo/withoutStyle/blocked/textInfo"
+msgstr ""
+"附带编号的坦克全部交付完成后，\n"
+"将开始交付%(regularRewardVehiclesCount)辆标准配置的坦克。"
+
+msgid "eventInfo/withoutStyle/styleText"
+msgstr "标准配置"
+
+msgid "eventInfo/withoutStyle/tanksLeftText"
+msgstr "剩余坦克"
+
+msgid "mainView/affirmative/button"
+msgstr "收到！"
+
+msgid "mainView/footer/activeState/buttonReturn/text"
+msgstr "前往资源返还"
+
+msgid "mainView/footer/activeState/progression/title"
+msgstr "已收集资源:"
+
+msgid "mainView/footer/activeState/progressionFor/title"
+msgstr "收集的资源用于:"
+
+msgid "mainView/footer/backToHangar/button/text"
+msgstr "返回车库"
+
+msgid "mainView/footer/buttonChoose/text"
+msgstr "选择资源"
+
+msgid "mainView/footer/description/text"
+msgstr "如果没有剩余的坦克了，所花费的全部资源将返还。"
+
+msgid "mainView/footer/forbidden/subTitle"
+msgstr "您的账号类型无法参加此次活动。"
+
+msgid "mainView/footer/forbidden/title"
+msgstr "您无法参加"
+
+msgid "mainView/footer/noProgress/selectVehicle/description"
+msgstr "您一共可组装2辆坦克，但一次只能花费资源组装其中一辆。"
+
+msgid "mainView/footer/noProgress/selectVehicle/title"
+msgstr "选择一辆坦克，花费所需资源进行组装——赶快行动！"
+
+msgid "mainView/footer/noProgress/title"
+msgstr "抓紧时间，花费资源组装并获得%(vehicleName)！"
+
+msgid "mainView/footer/noVehicles/subTitle"
+msgstr "所花费的资源将返还到您的账号。"
+
+msgid "mainView/footer/noVehicles/title"
+msgstr "没有剩余的坦克了"
+
+msgid "mainView/preview/label"
+msgstr "预览"
+
+msgid "mainView/timer/lastUntil"
+msgstr "至"
+
+msgid "mainView/timer/leftTime"
+msgstr "剩余时间:"
+
+msgid "resourcesLoadingView/buttons/close"
+msgstr "关闭"
+
+msgid "resourcesLoadingView/buttons/load"
+msgstr "花费资源"
+
+msgid "resourcesLoadingView/counter/current"
+msgstr "%(current)d%"
+
+msgid "resourcesLoadingView/counter/currentWithDelta"
+msgstr "%(current)d%(delta)d"
+
+msgid "resourcesLoadingView/counter/delta"
+msgstr "+%(delta)d%"
+
+msgid "resourcesLoadingView/footer/noVehicles/subTitle"
+msgstr "所花费的全部资源将很快返还到您的账号。"
+
+msgid "resourcesLoadingView/noVehicleData"
+msgstr "数据暂不可用%(icon)s"
+
+msgid "resourcesLoadingView/noVehiclesRemains"
+msgstr "没有剩余的坦克了"
+
+msgid "resourcesLoadingView/remainTopVehicles"
+msgstr "剩余编号坦克: %(counter)d"
+
+msgid "resourcesLoadingView/remainVehicles"
+msgstr "剩余坦克: %(counter)d"
+
+msgid "resourcesLoadingView/resourceCard/intelligenceBlueprints"
+msgstr "通用"
+
+msgid "resourcesLoadingView/resourceRate/maxReachedText"
+msgstr "资源上限%(iconMax)"
+
+msgid "resourcesLoadingView/resourceRate/maxText"
+msgstr "上限%(maxValue)d%(iconInfo)"
+
+msgid "resourcesLoadingView/resourceRate/minValue"
+msgstr "%(minValue)d%"
+
+msgid "resourcesLoadingView/resourceRate/resourceLoadedText"
+msgstr "已集齐资源%(iconLoaded)"
+
+msgid "resourcesLoadingView/resourceRate/text"
+msgstr "%(icon)%(rate)d%(equals)%(minValue)"
+
+msgid "resourcesLoadingView/resourcesHeader/blueprints"
+msgstr "蓝图碎片"
+
+msgid "resourcesLoadingView/resourcesHeader/currency"
+msgstr "货币"
+
+msgid "resourcesLoadingView/subtitle"
+msgstr "收集资源"
+
+msgid "tankPreview/button"
+msgstr "选择资源"
+
+msgid "tankPreview/description/oneSerialProduct"
+msgstr "活动期间，您有机会获取附带编号3D风格的坦克。"
+
+msgid "tankPreview/description/sequentialProduct"
+msgstr ""
+"前%(topPlayers)名玩家可获得附带编号3D风格的坦克，\n"
+"之后将交付%(basePlayers)辆不附带编号3D风格的坦克。"
+
+msgid "tankPreview/description/twoParallelProducts"
+msgstr "您可在活动期间组装2辆坦克。"
+
+msgid "tankPreview/title"
+msgstr "收集并花费100%的所需资源，获取%(vehicleName)！"
+
+msgid "tooltips/button/returnResources/description/text"
+msgstr ""
+"您可随时查看所花费的资源。如有需要，可点击\"返还资源\"按钮将其返还到您的账号。\n"
+"您的组装进度将重置，但您可以再次花费这些资源或其他资源来尝试获得坦克。"
+
+msgid "tooltips/button/returnResources/header/text"
+msgstr "资源返还"
+
+msgid "tooltips/counter/error/text"
+msgstr ""
+"数据暂不可用。\n"
+"我们正在努力解决这个问题。"
+
+msgid "tooltips/counter/warning/text"
+msgstr "显示的数字存在延迟，实际坦克数量可能不同。"
+
+msgid "tooltips/entryPoint/forbidden/text"
+msgstr "此账号类型无法参加此次活动。"
+
+msgid "tooltips/entryPoint/mainTitle/text"
+msgstr "组装车间"
+
+msgid "tooltips/entryPoint/notStartedEvent/parallelRewards/text"
+msgstr "参加活动，花费资源，获取%(rewardName1)与%(rewardName2)。坦克数量有限。"
+
+msgid "tooltips/entryPoint/notStartedEvent/text"
+msgstr "参加活动，花费资源，获取%(uniqVehicleText)%(vehicleName)。坦克数量有限。"
+
+msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
+msgstr "附带编号3D风格的"
+
+msgid "tooltips/entryPoint/paused/text"
+msgstr "活动暂不开放"
+
+msgid "tooltips/entryPoint/regularAvailable/text"
+msgstr "剩余坦克"
+
+msgid "tooltips/entryPoint/regularReceived/text"
+msgstr "已获得坦克！"
+
+msgid "tooltips/entryPoint/rewardAvailableCount/text"
+msgstr "剩余坦克:"
+
+msgid "tooltips/entryPoint/rewardInGarage/text"
+msgstr "该坦克已在您的车库中"
+
+msgid "tooltips/entryPoint/rewardReceived/text"
+msgstr "已获得坦克"
+
+msgid "tooltips/entryPoint/rewardSoldOut/text"
+msgstr "没有剩余的坦克了"
+
+msgid "tooltips/entryPoint/rewardsReceived/text"
+msgstr "已获得2辆坦克"
+
+msgid "tooltips/entryPoint/rewardsSoldOut/accentText/text"
+msgstr "全部组装完毕"
+
+msgid "tooltips/entryPoint/rewardsSoldOut/text"
+msgstr "所有坦克%(accentText)s"
+
+msgid "tooltips/entryPoint/timer/lastUntil"
+msgstr "持续至:"
+
+msgid "tooltips/entryPoint/timer/leftTime"
+msgstr "剩余时间:"
+
+msgid "tooltips/entryPoint/timer/timeToStart"
+msgstr "活动开始于"
+
+msgid "tooltips/entryPoint/topAvailable/text"
+msgstr "剩余编号坦克"
+
+msgid "tooltips/entryPoint/topReceived/text"
+msgstr "已获得编号坦克！"
+
+msgid "tooltips/mainView/selectVehicle/button"
+msgstr ""
+"选择一辆您要花费资源进行组装的坦克。\n"
+"如果您已花费资源组装另一辆坦克，那么这些资源将返还到您的账号。"
+
+msgid "tooltips/mainView/timer/leftTime"
+msgstr "剩余时间: %(leftTime)s"
+
+msgid "tooltips/progressbar/description"
+msgstr "您需要花费100%所需的资源才能将坦克组装完毕。不同类型资源的比例可以改变。"
+
+msgid "tooltips/progressbar/moreInfo"
+msgstr "如果没有剩余的坦克了，所花费的全部资源将返还。"
+
+msgid "tooltips/progressbar/resourcesChosen/label"
+msgstr "已选择"
+
+msgid "tooltips/progressbar/resourcesLoaded/label"
+msgstr "已花费"
+
+msgid "tooltips/progressbar/title"
+msgstr "收集资源"
+
+msgid "tooltips/resourcesLoadingView/buttonDisabled/body"
+msgstr "暂时无法花费资源。请稍后再试。"
+
+msgid "tooltips/resourcesLoadingView/header/blueprints_description"
+msgstr "通用与系别碎片。"
+
+msgid "tooltips/resourcesLoadingView/header/blueprints_title"
+msgstr "蓝图碎片"
+
+msgid "tooltips/resourcesLoadingView/header/currency_description"
+msgstr "因在战斗中积极行动而获得。部分货币可使用人民币购买。"
+
+msgid "tooltips/resourcesLoadingView/header/currency_title"
+msgstr "货币"
+
+msgid "tooltips/resourcesLoadingView/limitCounter/amount"
+msgstr "%(icon)s%(amount)d/%(maxAmount)d"
+
+msgid "tooltips/resourcesLoadingView/limitCounter/body"
+msgstr "已花费:"
+
+msgid "tooltips/resourcesLoadingView/limitCounter/header"
+msgstr "此类型资源的花费上限: %(maxAmount)d。"
+
+msgid "tooltips/resourcesLoadingView/resourcesLoaded/body"
+msgstr "您已集齐组装坦克所需的资源数量。您可移除一种资源，然后再选择另一种。"
+
+msgid "tooltips/resourcesLoadingView/resourcesLoaded/header"
+msgstr "已集齐资源"
+
+msgid "tooltips/uniq_style/description/firstPart"
+msgstr "这辆独特坦克拥有专属编号和特殊外观改装。"
+
+msgid "tooltips/uniq_style/description/secondPart"
+msgstr "编号将显示在火炮两侧及车体后部。同款坦克的编号不会重复且数量有限。"
+
+msgid "tooltips/uniq_style/moreInfo"
+msgstr "您可隐藏坦克上的显著特征。在个性化界面中可以移除其编号3D风格。"
+
+msgid "tooltips/uniq_style/title"
+msgstr "附带编号的坦克"

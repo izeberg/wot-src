@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/crash/lod0/Turret_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.985617 -0.360154 -1.644994</min>
+		<max>0.989698 1.366531 0.933185</max>
+	</visibilityBox>
+</root>

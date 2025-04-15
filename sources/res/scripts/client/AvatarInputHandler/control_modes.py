@@ -131,6 +131,12 @@ class IControlMode(object):
         pass
 
 
+class EmptyControlMode(IControlMode):
+
+    def __init__(self, *args):
+        super(EmptyControlMode, self).__init__()
+
+
 class _GunControlMode(IControlMode):
     isEnabled = property(lambda self: self._isEnabled)
     aimingMode = property(lambda self: self._aimingMode)
@@ -549,7 +555,6 @@ class ArcadeControlMode(_GunControlMode):
         if ownVehicle is not None and ownVehicle.isStarted and avatar_getter.isVehicleBarrelUnderWater() or BigWorld.player().isGunLocked or BigWorld.player().isObserver():
             return
         if self._aih.isSPG and not bByScroll:
-            self._cam.update(0, 0, 0, False, False)
             equipmentID = None
             if BattleReplay.isPlaying():
                 mode = BattleReplay.g_replayCtrl.getControlMode()
@@ -572,27 +577,28 @@ class ArcadeControlMode(_GunControlMode):
                         hitPoint, _ = getShotTargetInfo(vehicle, pos, BigWorld.player().gunRotator)
                         if vehicle.position.distTo(hitPoint) < vehicle.position.distTo(pos):
                             pos = hitPoint
-            self._aih.onControlModeChanged(mode, preferredPos=pos, aimingMode=self._aimingMode, saveDist=True, equipmentID=equipmentID)
-            return
-        else:
-            if not self._aih.isSPG:
-                self._cam.update(0, 0, 0, False, False)
-                if BattleReplay.isPlaying() and BigWorld.player().isGunLocked:
-                    mode = BattleReplay.g_replayCtrl.getControlMode()
-                    desiredShotPoint = BattleReplay.g_replayCtrl.getGunMarkerPos()
-                    equipmentID = BattleReplay.g_replayCtrl.getEquipmentId()
-                else:
-                    if self._aih.isDualGun:
-                        mode = CTRL_MODE_NAME.DUAL_GUN
-                    elif self._aih.isTwinGun:
-                        mode = CTRL_MODE_NAME.TWIN_GUN
-                    else:
-                        mode = CTRL_MODE_NAME.SNIPER
-                    equipmentID = None
-                    desiredShotPoint = self.camera.aimingSystem.getDesiredShotPoint()
-                self._aih.onControlModeChanged(mode, preferredPos=desiredShotPoint, aimingMode=self._aimingMode, saveZoom=not bByScroll, equipmentID=equipmentID)
+                if self._aih.isToControlModeSwitchEnabled(mode):
+                    self._cam.update(0, 0, 0, False, False)
+                    self._aih.onControlModeChanged(mode, preferredPos=pos, aimingMode=self._aimingMode, saveDist=True, equipmentID=equipmentID)
                 return
+            if self._aih.isSPG or BattleReplay.isPlaying() and BigWorld.player().isGunLocked:
+                mode = BattleReplay.g_replayCtrl.getControlMode()
+                desiredShotPoint = BattleReplay.g_replayCtrl.getGunMarkerPos()
+                equipmentID = BattleReplay.g_replayCtrl.getEquipmentId()
+            else:
+                if self._aih.isDualGun:
+                    mode = CTRL_MODE_NAME.DUAL_GUN
+                elif self._aih.isTwinGun:
+                    mode = CTRL_MODE_NAME.TWIN_GUN
+                else:
+                    mode = CTRL_MODE_NAME.SNIPER
+                equipmentID = None
+                desiredShotPoint = self.camera.aimingSystem.getDesiredShotPoint()
+            if self._aih.isToControlModeSwitchEnabled(mode):
+                self._cam.update(0, 0, 0, False, False)
+                self._aih.onControlModeChanged(mode, preferredPos=desiredShotPoint, aimingMode=self._aimingMode, saveZoom=not bByScroll, equipmentID=equipmentID)
             return
+        return
 
     def __getSpgAlternativeMode(self):
         value = self.__settingsCore.getSetting(SPGAim.AIM_ENTRANCE_MODE)
@@ -759,7 +765,7 @@ class _TrajectoryControlMode(_GunControlMode):
         self._cam.isAimOffsetEnabled = True
 
     def __switchToNextControlMode(self, switchToPos=None, switchToPlace=None):
-        if GUI_SETTINGS.spgAlternativeAimingCameraEnabled:
+        if GUI_SETTINGS.spgAlternativeAimingCameraEnabled and self._aih.isToControlModeSwitchEnabled(self._nextControlMode):
             soundName = self._SWITCH_SOUND.get(self._nextControlMode)
             if soundName:
                 SoundGroups.g_instance.playSound2D(soundName)

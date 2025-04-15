@@ -35,7 +35,7 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>lod3</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
@@ -43,7 +43,7 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>d1_1_2</identifier>
+					<identifier>d3_2</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -52,7 +52,16 @@
 					</transform>
 				</node>
 				<node>
-					<identifier>d1_2</identifier>
+					<identifier>d4_1_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d4_2</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -79,7 +88,70 @@
 					</transform>
 				</node>
 				<node>
+					<identifier>n2_1_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n4_1_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n4_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
 					<identifier>s0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_ramp0</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -101,6 +173,15 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>s_ramp_0</identifier>
+					<materialKind>111</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>0.007841 0.244307 0.035102</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
 					<identifier>d_stone1_2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>88</materialKind>
@@ -121,7 +202,7 @@
 				<groupOrigin>0.491238 3.380496 -0.005218</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				2
 				<material>
 					<identifier>d_stone1_1_2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -140,10 +221,10 @@
 						<Texture>content/Buildings/hd_bld_AF_002_VHouse/hd_bld_AF_002_VHouse_01_BANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.140354 0.301549 0.032693</groupOrigin>
+				<groupOrigin>-0.009520 0.301549 0.033494</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				3
 				<material>
 					<identifier>n_stone1_2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -165,7 +246,7 @@
 				<groupOrigin>0.482706 4.727063 0.000917</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				4
 				<material>
 					<identifier>n_stone1_1_2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -187,7 +268,7 @@
 				<groupOrigin>-0.009520 1.577153 0.033494</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				5
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -208,22 +289,13 @@
 				</material>
 				<groupOrigin>0.000288 -0.309093 0.048567</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				5
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<materialKind>111</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.243082 0.244307 0.015589</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.366729 -0.780611 -4.054554</min>
-		<max>4.054836 6.402062 4.119939</max>
+		<min>-3.371362 -0.780611 -3.412651</min>
+		<max>4.054836 6.402062 3.482855</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>27958</geometrySize>
+	<geometrySize>25144</geometrySize>
 	<minUVDensity>0.000208</minUVDensity>
 </root>

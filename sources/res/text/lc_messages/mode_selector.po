@@ -57,7 +57,7 @@ msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "战斗通行证点数"
 
 msgid "mode/battleRoyaleQueue/description"
-msgstr "幸运草对决"
+msgstr "军事演习模式"
 
 msgid "mode/battleRoyaleQueue/title"
 msgstr "钢铁猎手"
@@ -207,6 +207,12 @@ msgstr "战斗模式"
 msgid "ranked/widget/qualBattles"
 msgstr "资格赛战斗：%(current)%(par_open)s/%(max)%(par_close)s"
 
+msgid "reward/attachment/description"
+msgstr "游玩此模式有机会获得独特的3D附件。"
+
+msgid "reward/attachment/name"
+msgstr "3D附件"
+
 msgid "reward/bones/description"
 msgstr "奖励取决于您的战斗表现。"
 
@@ -242,6 +248,12 @@ msgstr "您可以通过游玩此模式获得%(name)s。"
 
 msgid "reward/improvedEquipment/name"
 msgstr "特殊配件"
+
+msgid "reward/lootBoxes/description"
+msgstr "游玩此模式有机会获得补给品。"
+
+msgid "reward/lootBoxes/name"
+msgstr "特殊补给品"
 
 msgid "reward/other/description"
 msgstr "您可以通过游玩此模式获得众多实用奖励。"

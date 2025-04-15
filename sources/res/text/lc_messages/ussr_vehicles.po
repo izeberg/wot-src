@@ -193,9 +193,6 @@ msgstr "LTP"
 msgid "Chassis_Object263B"
 msgstr "263工程B"
 
-msgid "Chassis_Object268"
-msgstr "268工程"
-
 msgid "Chassis_Object416"
 msgstr "416工程(52型)"
 
@@ -217,17 +214,23 @@ msgstr "261工程"
 msgid "Chassis_Object_430B"
 msgstr "430工程B"
 
-msgid "Chassis_Object_704"
-msgstr "704工程"
-
-msgid "Chassis_Object_704_2"
-msgstr "704工程M"
-
 msgid "Chassis_Object_907"
 msgstr "907工程"
 
 msgid "Chassis_Object_907A"
 msgstr "907工程A"
+
+msgid "Chassis_R02_SU-85"
+msgstr "SU-85-II"
+
+msgid "Chassis_R02_SU-85_2"
+msgstr "SU-85"
+
+msgid "Chassis_R02_SU-85_2_short"
+msgstr "SU-85"
+
+msgid "Chassis_R02_SU-85_short"
+msgstr "SU-85-II"
 
 msgid "Chassis_R100_SU122A"
 msgstr "SU-122A"
@@ -493,6 +496,12 @@ msgstr "ISU-152K"
 msgid "Chassis_R178_Object_780"
 msgstr "780工程"
 
+msgid "Chassis_R17_SU-100"
+msgstr "SU-100"
+
+msgid "Chassis_R17_SU-100_2"
+msgstr "SU-100-60"
+
 msgid "Chassis_R180_Object_274_A"
 msgstr "274工程A"
 
@@ -516,6 +525,12 @@ msgstr "259工程A"
 
 msgid "Chassis_R188_Object_259A_CN"
 msgstr "乌达尼"
+
+msgid "Chassis_R18_SU-152"
+msgstr "SU-152"
+
+msgid "Chassis_R18_SU-152_2"
+msgstr "SU-152M"
 
 msgid "Chassis_R191_Object_283"
 msgstr "283工程"
@@ -574,8 +589,44 @@ msgstr "265工程T"
 msgid "Chassis_R225_SU_100i"
 msgstr "SU-100I"
 
+msgid "Chassis_R24_SU-76"
+msgstr "SU-76"
+
+msgid "Chassis_R24_SU-76_2"
+msgstr "SU-76M"
+
+msgid "Chassis_R42_T-60"
+msgstr "T-60"
+
+msgid "Chassis_R42_T-60_2"
+msgstr "T-60加强型"
+
+msgid "Chassis_R43_T-70"
+msgstr "T-70"
+
+msgid "Chassis_R43_T-70_2"
+msgstr "T-70加强型"
+
+msgid "Chassis_R47_ISU-152"
+msgstr "ISU-152"
+
+msgid "Chassis_R47_ISU-152_2"
+msgstr "ISU-152M"
+
+msgid "Chassis_R53_Object_704"
+msgstr "704工程"
+
+msgid "Chassis_R53_Object_704_2"
+msgstr "704工程M"
+
 msgid "Chassis_R71_IS_2B"
 msgstr "IS-2M"
+
+msgid "Chassis_R88_Object268"
+msgstr "268工程"
+
+msgid "Chassis_R88_Object268_7x7"
+msgstr "268工程"
 
 msgid "Chassis_R93_Object263"
 msgstr "263工程"
@@ -645,18 +696,6 @@ msgstr "T-54(46型）"
 
 msgid "Chassis_T-54_3"
 msgstr "T-54(49型）"
-
-msgid "Chassis_T-60"
-msgstr "T-60"
-
-msgid "Chassis_T-60_2"
-msgstr "T-60加强型"
-
-msgid "Chassis_T-70"
-msgstr "T-70"
-
-msgid "Chassis_T-70_2"
-msgstr "T-70加强型"
 
 msgid "Chassis_T150"
 msgstr "T-150"
@@ -756,6 +795,12 @@ msgstr "?empty?"
 
 msgid "GAZ-M1"
 msgstr "GAZ-M1"
+
+msgid "GAZ_203_SU_76"
+msgstr "GAZ-203 (SU-76)"
+
+msgid "GAZ_203_T_70"
+msgstr "GAZ-203 (T-70)"
 
 msgid "GAZ_O"
 msgstr "GAZ-O"
@@ -866,18 +911,6 @@ msgstr "T-10"
 
 msgid "IS8_descr"
 msgstr "?empty?"
-
-msgid "ISU-152"
-msgstr "ISU-152"
-
-msgid "ISU-152_01"
-msgstr "ISU-152"
-
-msgid "ISU-152_descr"
-msgstr "?empty?"
-
-msgid "ISU-152_mod_1945"
-msgstr "ISU-152M"
 
 msgid "IS_descr"
 msgstr "?empty?"
@@ -1121,6 +1154,12 @@ msgstr "M-50TI"
 msgid "M_50TS"
 msgstr "M-50TS"
 
+msgid "M_80_SU_76"
+msgstr "M-80 (SU-76)"
+
+msgid "M_80_T_70"
+msgstr "M-80 (T-70)"
+
 msgid "M_850"
 msgstr "M-850"
 
@@ -1165,15 +1204,6 @@ msgstr "?empty?"
 
 msgid "Object263B_short"
 msgstr "263工程B"
-
-msgid "Object268"
-msgstr "268工程"
-
-msgid "Object268_descr"
-msgstr "?empty?"
-
-msgid "Object268_short"
-msgstr "268工程"
 
 msgid "Object416"
 msgstr "416工程"
@@ -1246,6 +1276,12 @@ msgstr "观察者"
 
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6磅炮 Mk III"
+
+msgid "R02_SU-85"
+msgstr "SU-85"
+
+msgid "R02_SU-85_descr"
+msgstr "?empty?"
 
 msgid "R104_Object_430_II"
 msgstr "430工程II型"
@@ -2262,6 +2298,12 @@ msgstr "780工程"
 msgid "R178_Object_780_short_special"
 msgstr "战场多面手，易于上手"
 
+msgid "R17_SU-100"
+msgstr "SU-100"
+
+msgid "R17_SU-100_descr"
+msgstr "?empty?"
+
 msgid "R180_Object_274_A"
 msgstr "274工程A"
 
@@ -2395,6 +2437,12 @@ msgstr "259工程A"
 
 msgid "R188_Object_259A_short_special"
 msgstr "威力强大的火炮与倾斜装甲"
+
+msgid "R18_SU-152"
+msgstr "SU-152"
+
+msgid "R18_SU-152_descr"
+msgstr "?empty?"
 
 msgid "R191_Object_283"
 msgstr "283工程"
@@ -2720,6 +2768,12 @@ msgstr "SU-100I"
 msgid "R225_SU_100i_short_special"
 msgstr "出色的平均穿透力，良好的平均单发损伤"
 
+msgid "R24_SU-76"
+msgstr "SU-76M"
+
+msgid "R24_SU-76_descr"
+msgstr "?empty?"
+
 msgid "R34_BT-SV_long_special"
 msgstr ""
 "一辆全能型S系III级轻型坦克，拥有怪异的车体外形。它的倾斜装甲板能够弹开敌方炮弹，优秀的机动性和火炮的高射速能够在很多战斗场景中发挥大作用。"
@@ -2732,6 +2786,24 @@ msgstr "一辆S系V级突破型重型坦克，拥有可靠的装甲，充沛的�
 
 msgid "R38_KV-220_beta_short_special"
 msgstr "可靠的装甲，良好的火炮俯仰角，充足的生命值"
+
+msgid "R42_T-60"
+msgstr "T-60"
+
+msgid "R42_T-60_descr"
+msgstr "?empty?"
+
+msgid "R43_T-70"
+msgstr "T-70"
+
+msgid "R43_T-70_descr"
+msgstr "?empty?"
+
+msgid "R47_ISU-152"
+msgstr "ISU-152"
+
+msgid "R47_ISU-152_descr"
+msgstr "?empty?"
 
 msgid "R50_SU76I_long_special"
 msgstr "一辆S系III级自行反坦克炮，正、侧面拥有可靠的防护，火力输出能力出色。不过，它的机动性一般，观察范围也较低。"
@@ -2793,6 +2865,24 @@ msgstr ""
 
 msgid "R86_LTP_short_special"
 msgstr "优秀的隐蔽值和观察范围，较高的射速"
+
+msgid "R88_Object268"
+msgstr "268工程"
+
+msgid "R88_Object268_7x7"
+msgstr "268工程 7v7"
+
+msgid "R88_Object268_7x7_descr"
+msgstr "?empty?"
+
+msgid "R88_Object268_7x7_short"
+msgstr "268工程 7v7"
+
+msgid "R88_Object268_descr"
+msgstr "?empty?"
+
+msgid "R88_Object268_short"
+msgstr "268工程"
 
 msgid "R93_Object263"
 msgstr "263工程"
@@ -2880,18 +2970,6 @@ msgstr "ST-I"
 msgid "ST_I_descr"
 msgstr "?empty?"
 
-msgid "SU-100"
-msgstr "SU-100"
-
-msgid "SU-100_descr"
-msgstr "?empty?"
-
-msgid "SU-100_mod_1944"
-msgstr "SU-100"
-
-msgid "SU-100_mod_1945"
-msgstr "SU-100-60"
-
 msgid "SU-101"
 msgstr "SU-101"
 
@@ -2912,21 +2990,6 @@ msgstr "SU-14-2"
 
 msgid "SU-14_descr"
 msgstr "?empty?"
-
-msgid "SU-152"
-msgstr "SU-152"
-
-msgid "SU-152_01"
-msgstr "SU-152"
-
-msgid "SU-152_descr"
-msgstr "?empty?"
-
-msgid "SU-152_mod_1943"
-msgstr "SU-152"
-
-msgid "SU-152_mod_1944"
-msgstr "SU-152M"
 
 msgid "SU-18"
 msgstr "SU-18"
@@ -2952,47 +3015,14 @@ msgstr "?empty?"
 msgid "SU-5bis"
 msgstr "SU-5"
 
-msgid "SU-76"
-msgstr "SU-76M"
-
-msgid "SU-76_1"
-msgstr "SU-76"
-
-msgid "SU-76_descr"
-msgstr "?empty?"
-
-msgid "SU-76bis"
-msgstr "SU-76M"
-
 msgid "SU-8"
 msgstr "SU-8"
-
-msgid "SU-85"
-msgstr "SU-85"
 
 msgid "SU-85A"
 msgstr "SU-85B"
 
 msgid "SU-85A1"
 msgstr "SU-85A"
-
-msgid "SU-85_01"
-msgstr "SU-85"
-
-msgid "SU-85_descr"
-msgstr "?empty?"
-
-msgid "SU-85_mod_1942"
-msgstr "SU-85-II"
-
-msgid "SU-85_mod_1942_short"
-msgstr "SU-85-II"
-
-msgid "SU-85_mod_1943"
-msgstr "SU-85"
-
-msgid "SU-85_mod_1943_short"
-msgstr "SU-85"
 
 msgid "SU-8Bis"
 msgstr "SU-8"
@@ -3281,18 +3311,6 @@ msgstr "T-54 FL"
 msgid "T-54_descr"
 msgstr "?empty?"
 
-msgid "T-60"
-msgstr "T-60"
-
-msgid "T-60_descr"
-msgstr "?empty?"
-
-msgid "T-70"
-msgstr "T-70"
-
-msgid "T-70_descr"
-msgstr "?empty?"
-
 msgid "T150"
 msgstr "T-150"
 
@@ -3417,9 +3435,6 @@ msgstr "LTP"
 msgid "Turret_1_Object263B"
 msgstr "263工程B"
 
-msgid "Turret_1_Object268"
-msgstr "268工程"
-
 msgid "Turret_1_Object416"
 msgstr "416工程(52型)"
 
@@ -3435,14 +3450,14 @@ msgstr "261工程"
 msgid "Turret_1_Object_430B"
 msgstr "430工程B"
 
-msgid "Turret_1_Object_704"
-msgstr "704工程"
-
 msgid "Turret_1_Object_907"
 msgstr "907工程"
 
 msgid "Turret_1_Object_907A"
 msgstr "907工程A"
+
+msgid "Turret_1_R02_SU-85"
+msgstr "SU-85"
 
 msgid "Turret_1_R100_SU122A"
 msgstr "SU-122A"
@@ -3666,6 +3681,9 @@ msgstr "ISU-152K"
 msgid "Turret_1_R178_Object_780"
 msgstr "780工程"
 
+msgid "Turret_1_R17_SU-100"
+msgstr "SU-100"
+
 msgid "Turret_1_R180_Object_274_A"
 msgstr "274工程A"
 
@@ -3689,6 +3707,9 @@ msgstr "259工程A"
 
 msgid "Turret_1_R188_Object_259A_CN"
 msgstr "乌达尼"
+
+msgid "Turret_1_R18_SU-152"
+msgstr "SU-152"
 
 msgid "Turret_1_R191_Object_283"
 msgstr "283工程"
@@ -3747,8 +3768,29 @@ msgstr "265工程T"
 msgid "Turret_1_R225_SU_100i"
 msgstr "SU-100I"
 
+msgid "Turret_1_R24_SU-76"
+msgstr "SU-76M"
+
+msgid "Turret_1_R42_T-60"
+msgstr "T-40"
+
+msgid "Turret_1_R43_T-70"
+msgstr "T-70"
+
+msgid "Turret_1_R47_ISU-152"
+msgstr "ISU-152"
+
+msgid "Turret_1_R53_Object_704"
+msgstr "704工程"
+
 msgid "Turret_1_R71_IS_2B"
 msgstr "IS-122"
+
+msgid "Turret_1_R88_Object268"
+msgstr "268工程"
+
+msgid "Turret_1_R88_Object268_7x7"
+msgstr "268工程"
 
 msgid "Turret_1_R93_Object263"
 msgstr "263工程"
@@ -3791,12 +3833,6 @@ msgstr "T-50"
 
 msgid "Turret_1_T-54_2"
 msgstr "T-54(46型）"
-
-msgid "Turret_1_T-60"
-msgstr "T-40"
-
-msgid "Turret_1_T-70"
-msgstr "T-70"
 
 msgid "Turret_1_T150"
 msgstr "T-150-KV"
@@ -3897,17 +3933,17 @@ msgstr "IS-3-II 后期型"
 msgid "Turret_2_R174_BT-5"
 msgstr "BT-7加强型"
 
+msgid "Turret_2_R42_T-60"
+msgstr "T-60"
+
+msgid "Turret_2_R43_T-70"
+msgstr "T-70M"
+
 msgid "Turret_2_ST_I"
 msgstr "ST-I"
 
 msgid "Turret_2_T-54_2"
 msgstr "T-54(49型）"
-
-msgid "Turret_2_T-60"
-msgstr "T-60"
-
-msgid "Turret_2_T-70"
-msgstr "T-70M"
 
 msgid "Turret_2_T150"
 msgstr "T-150-220"
@@ -4005,6 +4041,9 @@ msgstr "V-16"
 msgid "V-16FN"
 msgstr "V-16FN"
 
+msgid "V-16FN_7x7"
+msgstr "V-16FN"
+
 msgid "V-16M"
 msgstr "V-16M"
 
@@ -4040,6 +4079,9 @@ msgstr "V-2-54A"
 
 msgid "V-2-54IS"
 msgstr "V-2-54IS"
+
+msgid "V-2-54IS_704"
+msgstr "V-2-54IS (704)"
 
 msgid "V-2-54M_SH"
 msgstr "V-2-54 M2"
@@ -4131,6 +4173,9 @@ msgstr "V-7"
 msgid "V-7C"
 msgstr "V-7C"
 
+msgid "V_11_704"
+msgstr "V-11 (704)"
+
 msgid "V_11_Kirovets_1"
 msgstr "V-11-KRT-1"
 
@@ -4155,11 +4200,20 @@ msgstr "V-12-6V1"
 msgid "V_12_7"
 msgstr "V-12-7"
 
+msgid "V_2IS_ISU"
+msgstr "V-2IS (ISU)"
+
+msgid "V_2IS_SU"
+msgstr "V-2IS (SU)"
+
 msgid "V_2K"
 msgstr "V-2K"
 
 msgid "V_2K_P"
 msgstr "V-2K (r)"
+
+msgid "V_2K_SU"
+msgstr "V-2K (SU)"
 
 msgid "V_2_10M"
 msgstr "V-2-10M"
@@ -4170,11 +4224,26 @@ msgstr "V-2-34A"
 msgid "V_2_34E"
 msgstr "V-2-34E"
 
+msgid "V_2_34M_SU_100"
+msgstr "V-2-34M (SU-100)"
+
 msgid "V_2_34_43"
 msgstr "V-2-34-43"
 
+msgid "V_2_34_SU_100"
+msgstr "V-2-34 (SU-100)"
+
+msgid "V_2_34_SU_85"
+msgstr "V-2-34 (SU-85)"
+
+msgid "V_2_54IS_ISU"
+msgstr "V-2-54IS (ISU)"
+
 msgid "V_2_IS_520_Roz"
 msgstr "V-2-IS TITT"
+
+msgid "V_2_SU_85"
+msgstr "V-2 (SU-85)"
 
 msgid "V_3BT"
 msgstr "V-3BT"
@@ -4288,7 +4357,7 @@ msgid "_100mm_D-10T2S"
 msgstr "100mm D-10T2S炮"
 
 msgid "_100mm_D10S"
-msgstr "100mm D10S炮"
+msgstr "100mm D-10S炮"
 
 msgid "_100mm_D10S_obr_44"
 msgstr "100mm D10S炮(44型)"
@@ -4422,6 +4491,12 @@ msgstr "UBR-412PI"
 msgid "_100mm_UBR-412U"
 msgstr "UBR-412U"
 
+msgid "_100mm_UBR_412P_SU_100"
+msgstr "UBR-412P (SU-100)"
+
+msgid "_100mm_UBR_412_SU_100"
+msgstr "UBR-412 (SU-100)"
+
 msgid "_100mm_UBR_LM"
 msgstr "UBR(LM)"
 
@@ -4448,6 +4523,9 @@ msgstr "UOF-412BM"
 
 msgid "_100mm_UOF_412M"
 msgstr "UOF-412M"
+
+msgid "_100mm_UOF_412_SU_100"
+msgstr "UOF-412 (SU-100)"
 
 msgid "_100mm_ZBK17M"
 msgstr "ZBK17M"
@@ -4761,6 +4839,15 @@ msgstr "53-BR-2EA"
 msgid "_122mm_BR-471D_P"
 msgstr "BR-471DP"
 
+msgid "_122mm_BR_471DS_SU"
+msgstr "BR-471DS (SU)"
+
+msgid "_122mm_BR_471D_SU"
+msgstr "BR-471D (SU)"
+
+msgid "_122mm_BR_471D_SU_100"
+msgstr "BR-471D (SU-100)"
+
 msgid "_122mm_BR_471M"
 msgstr "BR-471M"
 
@@ -4911,6 +4998,15 @@ msgstr "BR-471DS"
 msgid "_122mm_UBR-472PBM_SH"
 msgstr "UBR-472PBM"
 
+msgid "_122mm_UBR_471S_SU"
+msgstr "UBR-471S (SU)"
+
+msgid "_122mm_UBR_471_SU"
+msgstr "UBR-471 (SU)"
+
+msgid "_122mm_UBR_471_SU_100"
+msgstr "UBR-471 (SU-100)"
+
 msgid "_122mm_UBR_472PM_SH"
 msgstr "UBR-472PM"
 
@@ -4937,6 +5033,15 @@ msgstr "UOF-472"
 
 msgid "_122mm_UOF_471M"
 msgstr "UOF-471M"
+
+msgid "_122mm_UOF_471S_SU"
+msgstr "UOF-471S (SU)"
+
+msgid "_122mm_UOF_471_SU"
+msgstr "UOF-471 (SU)"
+
+msgid "_122mm_UOF_471_SU_100"
+msgstr "UOF-471 (SU-100)"
 
 msgid "_122mm_UOF_472T"
 msgstr "UOF-472T"
@@ -5166,8 +5271,35 @@ msgstr "53-OF500"
 msgid "_152mm_53OF521"
 msgstr "53-OF-521"
 
+msgid "_152mm_53_BP_530_ISU"
+msgstr "53-BP-530 (ISU)"
+
+msgid "_152mm_53_BP_530_SU"
+msgstr "53-BP-530 (SU)"
+
+msgid "_152mm_53_BP_540_ISU"
+msgstr "53-BP-540 (ISU)"
+
+msgid "_152mm_53_OF_530_ISU"
+msgstr "53-OF-530 (ISU)"
+
+msgid "_152mm_53_OF_530_SU"
+msgstr "53-OF-530 (SU)"
+
+msgid "_152mm_53_OF_551D_704"
+msgstr "53-OF-551D (704)"
+
+msgid "_152mm_53_OF_551M_268"
+msgstr "53-HE-551M (268)"
+
 msgid "_152mm_53_OF_551O"
 msgstr "53-OF-551O"
+
+msgid "_152mm_53_OF_551_704"
+msgstr "53-OF-551 (704)"
+
+msgid "_152mm_53_OF_551_ISU"
+msgstr "53-OF-551 (ISU)"
 
 msgid "_152mm_BL-10"
 msgstr "152mm BL-10炮"
@@ -5181,6 +5313,9 @@ msgstr "152mm BR-2炮"
 msgid "_152mm_D_4S"
 msgstr "152mm D-4S炮"
 
+msgid "_152mm_D_4S_704"
+msgstr "152mm D-4S (704)炮"
+
 msgid "_152mm_M-10"
 msgstr "152mm M-10炮"
 
@@ -5188,6 +5323,9 @@ msgid "_152mm_M-10_W"
 msgstr "152mm M-10炮"
 
 msgid "_152mm_M64"
+msgstr "152mm M-64炮"
+
+msgid "_152mm_M64_7x7"
 msgstr "152mm M-64炮"
 
 msgid "_152mm_ML-20C"
@@ -5229,6 +5367,9 @@ msgstr "UBK551MK"
 msgid "_152mm_UBK551O"
 msgstr "UBK551O"
 
+msgid "_152mm_UBK_551M_268"
+msgstr "UBK-551M (268)"
+
 msgid "_152mm_UBR551"
 msgstr "UBR-551"
 
@@ -5243,6 +5384,27 @@ msgstr "UBR551O"
 
 msgid "_152mm_UBR551P"
 msgstr "UBR-551P"
+
+msgid "_152mm_UBR_551D_704"
+msgstr "UBR-551D (704)"
+
+msgid "_152mm_UBR_551M_268"
+msgstr "UBR-551M (268)"
+
+msgid "_152mm_UBR_551PD_704"
+msgstr "UBR-551PD (704)"
+
+msgid "_152mm_UBR_551P_704"
+msgstr "UBR-551P (704)"
+
+msgid "_152mm_UBR_551P_ISU"
+msgstr "UBR-551P (ISU)"
+
+msgid "_152mm_UBR_551_704"
+msgstr "UBR-551 (704)"
+
+msgid "_152mm_UBR_551_ISU"
+msgstr "UBR-551 (ISU)"
 
 msgid "_152mm_howitzer_D-1"
 msgstr "152mm D-1榴弹炮"
@@ -5280,11 +5442,20 @@ msgstr "G-620"
 msgid "_20mm_BC-20"
 msgstr "BC-20"
 
+msgid "_20mm_BC_20_T_60"
+msgstr "BC-20 (T-60)"
+
 msgid "_20mm_TNSH"
 msgstr "20mm TNSh炮"
 
+msgid "_20mm_TNSH_T_60"
+msgstr "20mm TNSh (T-60)炮"
+
 msgid "_20mm_UBR-20"
 msgstr "UBR-20"
+
+msgid "_20mm_UBR_20_T_60"
+msgstr "UBR-20 (T-60)"
 
 msgid "_23mm_BC-23"
 msgstr "BC-23"
@@ -5355,6 +5526,12 @@ msgstr "UBR-160改进型"
 msgid "_37mm_UBRT1"
 msgstr "UBRT1"
 
+msgid "_37mm_UBR_160PA_T_60"
+msgstr "UBR-160PA (T-60)"
+
+msgid "_37mm_UBR_160_bis_T_60"
+msgstr "UBR-160改进型 (T-60)"
+
 msgid "_37mm_UO160A"
 msgstr "UO-160A"
 
@@ -5364,11 +5541,17 @@ msgstr "UOF-160"
 msgid "_37mm_UOT1"
 msgstr "UOT1"
 
+msgid "_37mm_UO_160A_T_60"
+msgstr "UO-160A (T-60)"
+
 msgid "_37mm_ZiS-19"
 msgstr "37mm ZiS-19炮"
 
 msgid "_37mm_ZiS-19_S"
 msgstr "37mm ZiS-19 S炮"
+
+msgid "_37mm_ZiS_19_T_60"
+msgstr "37mm ZiS-19 (T-60)炮"
 
 msgid "_37mm_automatic_OKB2"
 msgstr "OKB-2 37mm自动炮"
@@ -5387,6 +5570,9 @@ msgstr "45mm 20KM炮"
 
 msgid "_45mm_20K_S"
 msgstr "45mm 20KS炮"
+
+msgid "_45mm_20K_T_70"
+msgstr "45mm 20K (T-70)炮"
 
 msgid "_45mm_21KMT"
 msgstr "45mm 21-KMT炮"
@@ -5415,6 +5601,18 @@ msgstr "UBR-243SPAU"
 msgid "_45mm_UBR-243SPU"
 msgstr "UBR-243SPU"
 
+msgid "_45mm_UBR_240A_T_70"
+msgstr "UBR-240A (T-70)"
+
+msgid "_45mm_UBR_240PA_T_70"
+msgstr "UBR-240PA (T-70)"
+
+msgid "_45mm_UBR_243SPA_T_70"
+msgstr "UBR-243SPA (T-70)"
+
+msgid "_45mm_UBR_243SP_T_70"
+msgstr "UBR-243SP (T-70)"
+
 msgid "_45mm_UO-243"
 msgstr "UO-243"
 
@@ -5427,6 +5625,12 @@ msgstr "UOF-243"
 msgid "_45mm_UOF-243U"
 msgstr "UOF-243U"
 
+msgid "_45mm_UOF_240A_T_70"
+msgstr "UOF-240A (T-70)"
+
+msgid "_45mm_UOF_243_T_70"
+msgstr "UOF-243 (T-70)"
+
 msgid "_45mm_VT-42"
 msgstr "45mm VT-42炮"
 
@@ -5435,6 +5639,9 @@ msgstr "45mm VT-43炮"
 
 msgid "_45mm_VT-43M"
 msgstr "45mm VT-43M炮"
+
+msgid "_45mm_VT_42_T_70"
+msgstr "45mm VT-42 (T-70)炮"
 
 msgid "_45mm_mod_1932"
 msgstr "45mm炮(32型)"
@@ -5472,11 +5679,20 @@ msgstr "UBR-271N"
 msgid "_57mm_UBR-271NO"
 msgstr "UBR-271NO"
 
+msgid "_57mm_UBR_271K_SU_76"
+msgstr "UBR-271K (SU-76)"
+
+msgid "_57mm_UBR_271N_SU_76"
+msgstr "UBR-271N (SU-76)"
+
 msgid "_57mm_UO-271U"
 msgstr "UO-271U"
 
 msgid "_57mm_UO-271UO"
 msgstr "UO-271UO"
+
+msgid "_57mm_UO_271U_SU_76"
+msgstr "UO-271U (SU-76)"
 
 msgid "_57mm_ZiS-2"
 msgstr "57mm ZiS-2炮"
@@ -5492,6 +5708,9 @@ msgstr "57mm ZiS-8炮"
 
 msgid "_57mm_ZiS-8_S"
 msgstr "57mm ZiS-8S炮"
+
+msgid "_57mm_ZiS_2_SU_76"
+msgstr "57mm ZiS-2 (SU-76)炮"
 
 msgid "_57mm_ZiS_4T"
 msgstr "57mm ZiS-4T炮"
@@ -5658,6 +5877,12 @@ msgstr "UBR-354MP"
 msgid "_76mm_UBR_350P"
 msgstr "UBR-350P"
 
+msgid "_76mm_UBR_354A_SU_76"
+msgstr "UBR-354A (SU-76)"
+
+msgid "_76mm_UBR_354MP_SU_76"
+msgstr "UBR-354MP (SU-76)"
+
 msgid "_76mm_UBR_354P"
 msgstr "UBR-354P"
 
@@ -5676,6 +5901,9 @@ msgstr "UOF-354KA"
 msgid "_76mm_UOF-354M"
 msgstr "UOF-354M"
 
+msgid "_76mm_UOF_354_SU_76"
+msgstr "UOF-354 (SU-76)"
+
 msgid "_76mm_ZiS-3_mod_42"
 msgstr "76mm ZiS-3炮"
 
@@ -5684,6 +5912,9 @@ msgstr "76mm ZiS-5炮"
 
 msgid "_76mm_ZiS-96"
 msgstr "76mm F-96炮"
+
+msgid "_76mm_ZiS_3_SU_76"
+msgstr "76mm ZiS-3 (SU-76)炮"
 
 msgid "_76mm_ZiS_5_MZ"
 msgstr "76mm ZiS-5A炮"
@@ -5719,7 +5950,7 @@ msgid "_85mm_D10_85"
 msgstr "85mm D-10-85炮"
 
 msgid "_85mm_D5S-85BM"
-msgstr "85mm D5S-85BM炮"
+msgstr "85mm D-5S-85BM炮"
 
 msgid "_85mm_D5T-85BM"
 msgstr "85mm D5T-85BM炮"
@@ -5793,6 +6024,18 @@ msgstr "UBR-367"
 msgid "_85mm_UBR-367P"
 msgstr "UBR-367P"
 
+msgid "_85mm_UBR_365KBM_SU_85"
+msgstr "UBR-365KBM (SU-85)"
+
+msgid "_85mm_UBR_365K_SU_85"
+msgstr "UBR-365K (SU-85)"
+
+msgid "_85mm_UBR_365PBM_SU_85"
+msgstr "UBR-365PBM (SU-85)"
+
+msgid "_85mm_UBR_365P_SU_85"
+msgstr "UBR-365P (SU-85)"
+
 msgid "_85mm_UBR_372P_432"
 msgstr "UBR-372P-432"
 
@@ -5813,6 +6056,12 @@ msgstr "UOF-365K"
 
 msgid "_85mm_UOF-412-DG"
 msgstr "UOF-412D"
+
+msgid "_85mm_UOF_365BM_SU_85"
+msgstr "UOF-365BM (SU-85)"
+
+msgid "_85mm_UOF_365K_SU_85"
+msgstr "UOF-365K (SU-85)"
 
 msgid "_85mm_UOF_372_432"
 msgstr "UOF-372-432"

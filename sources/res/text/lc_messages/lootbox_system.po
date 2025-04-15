@@ -35,12 +35,6 @@ msgstr "其他"
 msgid "autoOpenView/rewardGroups/vehicles"
 msgstr "坦克"
 
-msgid "autoOpenView/rewards/premiumDay"
-msgid_plural "plural/autoOpenView/rewards/premiumDay"
-msgstr[0] "天"
-msgstr[1] "天"
-msgstr[2] "天"
-
 msgid "autoOpenView/subTitle"
 msgstr "我们为您开启了%(boxCount)个补给品"
 
@@ -52,27 +46,6 @@ msgstr "您已获得"
 
 msgid "awardViews/footer/backButton/"
 msgstr "返回补给品"
-
-msgid "awardViews/footer/checkbox/"
-msgstr "显示开启动画"
-
-msgid "awardViews/footer/purchaseButtonText/"
-msgstr "购买补给品礼包"
-
-msgid "awardViews/footer/purchaseButtonTextCn/"
-msgstr "购买补给品礼包"
-
-msgid "awardViews/guaranteedTitle/nextBox/"
-msgstr "下个补给品将掉落保底奖励！"
-
-msgid "awardViews/guaranteedTitle/text"
-msgstr "保底奖励掉落前还需开启的最大补给品数量: %(count)"
-
-msgid "awardViews/quantityTitle/boxesAvailable"
-msgstr "可用的补给品: %(boxesCount)"
-
-msgid "awardViews/quantityTitle/noBoxes"
-msgstr "没有可用的补给品"
 
 msgid "bonuses/customization/rarity/epic"
 msgstr "史诗"
@@ -134,14 +107,35 @@ msgstr "战术补给品"
 msgid "common/closeButton"
 msgstr "关闭"
 
+msgid "common/footer/checkbox"
+msgstr "显示开启动画"
+
+msgid "common/getButton/lowerCase"
+msgstr "购买补给品礼包"
+
+msgid "common/getButton/upperCase"
+msgstr "购买补给品礼包"
+
 msgid "common/infoButton"
 msgstr "内含什么奖励？"
 
 msgid "common/loader"
 msgstr "正在开启补给品..."
 
+msgid "common/rewards/count"
+msgid_plural "plural/common/rewards/count"
+msgstr[0] "%(count)个"
+msgstr[1] "%(count)个"
+msgstr[2] "%(count)个"
+
 msgid "common/rewards/multiplier"
 msgstr "x{count}"
+
+msgid "common/rewards/premiumDay"
+msgid_plural "plural/common/rewards/premiumDay"
+msgstr[0] "天"
+msgstr[1] "天"
+msgstr[2] "天"
 
 msgid "common/statistics/emptyHeader"
 msgstr "开启补给品即可查看统计数据。"
@@ -205,32 +199,20 @@ msgstr "战场物资"
 msgid "eventName/upperCase"
 msgstr "战场物资"
 
+msgid "guaranteedTitle/nextBox"
+msgstr "下个补给品将掉落保底奖励！"
+
+msgid "guaranteedTitle/text"
+msgstr "保底奖励掉落前还需开启的最大补给品数量: %(count)"
+
 msgid "hasBoxesView/guaranteedTitle/tabText"
 msgid_plural "plural/hasBoxesView/guaranteedTitle/tabText"
 msgstr[0] "再开启%(count)个补给品即可获得保底奖励"
 msgstr[1] "再开启%(count)个补给品即可获得保底奖励"
 msgstr[2] "再开启%(count)个补给品即可获得保底奖励"
 
-msgid "hasBoxesView/numberOfBoxesToOpen"
-msgid_plural "plural/hasBoxesView/numberOfBoxesToOpen"
-msgstr[0] "%(count)个"
-msgstr[1] "%(count)个"
-msgstr[2] "%(count)个"
-
 msgid "hasBoxesView/openButtonText"
 msgstr "开启"
-
-msgid "hasBoxesView/purchaseButtonText"
-msgstr "购买补给品礼包"
-
-msgid "hasBoxesView/purchaseButtonTextCn"
-msgstr "购买补给品礼包"
-
-msgid "hasBoxesView/quantityTitle/boxesAvailable"
-msgstr "可用的补给品: %(boxesCount)"
-
-msgid "hasBoxesView/quantityTitle/noBoxes"
-msgstr "没有可用的补给品"
 
 msgid "helpers/doubleBreakLine"
 msgstr "<br/><br/>"
@@ -263,12 +245,6 @@ msgstr "开启补给品就有机会获得珍贵的游戏内物品！详情见下
 msgid "infoPage/header/lootListLink"
 msgstr "在官网上查看物品列表"
 
-msgid "infoPage/header/shopButton"
-msgstr "购买补给品礼包"
-
-msgid "infoPage/header/shopButtonCn"
-msgstr "购买补给品礼包"
-
 msgid "infoPage/header/subtitle"
 msgstr "%(from)至%(to)"
 
@@ -281,12 +257,6 @@ msgstr "|"
 msgid "infoPage/rewards/percent"
 msgstr "%"
 
-msgid "infoPage/rewards/premiumDay"
-msgid_plural "plural/infoPage/rewards/premiumDay"
-msgstr[0] "天"
-msgstr[1] "天"
-msgstr[2] "天"
-
 msgid "multipleRewardView/footer/openNextButton/"
 msgstr "再开启%(count)个"
 
@@ -296,24 +266,19 @@ msgstr "从%(name)中获得的奖励(已开启%(boxesCount)个补给品)"
 msgid "multipleRewardView/header/title/"
 msgstr "您已获得"
 
-msgid "noBoxesView/buyBoxesButtonText/"
-msgstr "购买补给品礼包"
-
-msgid "noBoxesView/buyBoxesButtonTextCn/"
-msgstr "购买补给品礼包"
-
 msgid "noBoxesView/description/"
 msgstr ""
 "您没有任何补给品。您可在军械库或特惠商城中\n"
 "购买补给品礼包。"
 
-msgid "noBoxesView/descriptionCn/"
-msgstr ""
-"您没有任何补给品。\n"
-"您可在特惠商城中购买补给品礼包。"
-
 msgid "preview/backLabel"
 msgstr "前往补给品"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "可用的补给品: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "没有可用的补给品"
 
 msgid "rareRewardOverlay/rewardDescription/button/text"
 msgstr "继续"
@@ -332,9 +297,6 @@ msgstr "%(eventName)s活动已结束"
 
 msgid "serviceChannelMessages/finish/text"
 msgstr "系统将开启所有剩余的补给品。补给品内的物品将添加至您的账号。"
-
-msgid "serviceChannelMessages/lootBoxDefault"
-msgstr "战术补给品"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "查看奖励"
@@ -440,18 +402,6 @@ msgstr "独特乘员"
 msgid "statisticsRewards/count/currency"
 msgstr "%(currency)"
 
-msgid "statisticsRewards/count/days"
-msgid_plural "plural/statisticsRewards/count/days"
-msgstr[0] "%(count)天"
-msgstr[1] "%(count)天"
-msgstr[2] "%(count)天"
-
-msgid "statisticsRewards/count/default"
-msgid_plural "plural/statisticsRewards/count/default"
-msgstr[0] "%(count)个"
-msgstr[1] "%(count)个"
-msgstr[2] "%(count)个"
-
 msgid "statisticsRewards/label/attachment"
 msgstr "3D附件"
 
@@ -533,12 +483,6 @@ msgstr "点击即可重置统计数据。"
 msgid "statisticsRewards/tooltips/category/attachment"
 msgstr "%(num). %(rarity)%(label)x%(count)"
 
-msgid "statisticsRewards/tooltips/category/compensationCount"
-msgid_plural "plural/statisticsRewards/tooltips/category/compensationCount"
-msgstr[0] "%(count)个"
-msgstr[1] "%(count)个"
-msgstr[2] "%(count)个"
-
 msgid "statisticsRewards/tooltips/category/hiddenRewardsCount"
 msgid_plural "plural/statisticsRewards/tooltips/category/hiddenRewardsCount"
 msgstr[0] "以及其他%(count)个奖励。"
@@ -568,3 +512,6 @@ msgstr "%(num). %(vehicle)"
 
 msgid "statisticsRewards/tooltips/category/vehicleCompensation"
 msgstr "获得补偿的坦克数量: %(count)"
+
+msgid "tooltip/compensation/notification"
+msgstr "您车库中已拥有坦克的补偿。"

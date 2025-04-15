@@ -4,8 +4,6 @@ from gui.Scaleform.daapi.view.battle.shared.component_marker.markers import Area
 from gui.Scaleform.daapi.view.battle.shared.component_marker.markers_components import ComponentBitMask as FLAG
 BITMASK = 'bitMask'
 CLASS = 'clazz'
-CONTAINER = 'container'
-DEATH_ZONES_CONTAINER = 'stretchableDeathZone'
 
 class StoryModeAreaMarker(AreaMarker):
     fullScreenVariations = {}
@@ -21,7 +19,6 @@ class StoryModeAreaMarker(AreaMarker):
                 else:
                     newClass = type(newClassName, (oldClazz,), {'maskType': FLAG.FULLSCREEN_MAP_MARKER})
                     componentConfig[CLASS] = StoryModeAreaMarker.fullScreenVariations[newClassName] = newClass
-                componentConfig[CONTAINER] = DEATH_ZONES_CONTAINER
 
             if BITMASK in config:
                 config[BITMASK] = config[BITMASK] | FLAG.FULLSCREEN_MAP_MARKER

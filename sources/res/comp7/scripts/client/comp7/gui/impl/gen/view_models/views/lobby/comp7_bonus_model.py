@@ -9,7 +9,7 @@ class DogTagType(IntEnum):
 class Comp7BonusModel(IconBonusModel):
     __slots__ = ()
 
-    def __init__(self, properties=14, commands=0):
+    def __init__(self, properties=15, commands=0):
         super(Comp7BonusModel, self).__init__(properties=properties, commands=commands)
 
     def getDogTagType(self):
@@ -42,6 +42,12 @@ class Comp7BonusModel(IconBonusModel):
     def setGroupName(self, value):
         self._setString(13, value)
 
+    def getClaimed(self):
+        return self._getBool(14)
+
+    def setClaimed(self, value):
+        self._setBool(14, value)
+
     def _initialize(self):
         super(Comp7BonusModel, self)._initialize()
         self._addNumberProperty('dogTagType')
@@ -49,3 +55,4 @@ class Comp7BonusModel(IconBonusModel):
         self._addStringProperty('overlayType', '')
         self._addStringProperty('item', '')
         self._addStringProperty('groupName', '')
+        self._addBoolProperty('claimed', False)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.435982 0.005306 -2.391339</min>
+		<max>1.430057 1.136198 2.321841</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

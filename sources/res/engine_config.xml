@@ -162,7 +162,6 @@
 			<distance>312</distance>
 			<frames>6</frames>
 		</lod>
-		<dynamicShadows>false</dynamicShadows>
 	</animation>
 	<screenShot>
 		<extension>jpg</extension>
@@ -407,6 +406,7 @@
 		<dumpTimeout>600000</dumpTimeout>
 		<reportArchiveSizeThresholdKb>1</reportArchiveSizeThresholdKb>
 		<createSessionFiles>false</createSessionFiles>
+		<freezeTime>0</freezeTime>
 	</cat_config>
 	<debug>
 		<framesCount>0</framesCount>
@@ -686,9 +686,6 @@
 				</bank>
 				<bank>
 					<name>cn_wot_plus.bnk</name>
-				</bank>
-				<bank>
-					<name>resources_well.bnk</name>
 				</bank>
 				<bank>
 					<name>account_dashboard.bnk</name>

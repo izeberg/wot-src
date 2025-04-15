@@ -23,15 +23,6 @@ msgstr "我们为您刮开了%(boxCount)张凭证"
 msgid "awardViews/footer/backButton/"
 msgstr "返回凭证"
 
-msgid "awardViews/footer/checkbox/"
-msgstr "刮开凭证动画"
-
-msgid "awardViews/quantityTitle/boxesAvailable"
-msgstr "可用: %(boxesCount)"
-
-msgid "awardViews/quantityTitle/noBoxes"
-msgstr "没有可用的凭证"
-
 msgid "boxTooltip/description/text/commonTicket"
 msgstr "刮开凭证即可获得奖励！您可在精英征程中获取凭证。"
 
@@ -44,6 +35,9 @@ msgstr "凭证"
 msgid "common/boxCategory/upperCase/commonTicket"
 msgstr "凭证"
 
+msgid "common/footer/checkbox"
+msgstr "刮开凭证动画"
+
 msgid "common/loader"
 msgstr "正在刮开凭证..."
 
@@ -55,12 +49,6 @@ msgstr "凭证"
 
 msgid "hasBoxesView/openButtonText"
 msgstr "刮开凭证"
-
-msgid "hasBoxesView/quantityTitle/boxesAvailable"
-msgstr "可用: %(boxesCount)"
-
-msgid "hasBoxesView/quantityTitle/noBoxes"
-msgstr "没有可用的凭证"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr "玩家可在精英征程中获取凭证奖励。"
@@ -82,13 +70,14 @@ msgstr ""
 "您没有任何凭证。您可在精英征程中\n"
 "获取凭证奖励。"
 
-msgid "noBoxesView/descriptionCn/"
-msgstr ""
-"您没有任何凭证。您可在精英征程中\n"
-"获取凭证奖励。"
-
 msgid "preview/backLabel"
 msgstr "凭证"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "可用: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "没有可用的凭证"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
 msgstr "已刮开凭证: %(boxes)s"

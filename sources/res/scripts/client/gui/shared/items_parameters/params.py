@@ -587,16 +587,13 @@ class VehicleParams(_ParameterBase):
         baseCircularVisionRadius = items_utils.getCircularVisionRadius(self._itemDescr, self.__factors)
         skillName = 'radioman_finder'
         argName = 'vehicleCircularVisionRadius'
-        factor = self.__getFactorValueFromSkill(skillName, argName)
-        baseCircularVisionRadius *= factor
-        if _DO_TTC_LOG:
-            LOG_DEBUG('TTC of circularVisionRadius: round(baseCircularVisionRadius:%f * radioman_finderFactor:%f)' % (
-             baseCircularVisionRadius, factor))
+        additionalFactor = self.__getFactorValueFromSkill(skillName, argName)
+        baseCircularVisionRadius *= additionalFactor
         result = round(baseCircularVisionRadius)
         if self.__hasUnsupportedSwitchMode():
             visRadiusSiegeVal = items_utils.getCircularVisionRadius(self._itemDescr.siegeVehicleDescr, self.__factors)
             return (
-             result, round(visRadiusSiegeVal * factor))
+             result, round(visRadiusSiegeVal * additionalFactor))
         return (
          result,)
 
@@ -1141,14 +1138,14 @@ class VehicleParams(_ParameterBase):
         for _, tankman in vehicle.crew:
             if tankman is None:
                 continue
-            for skill in tankman.skills:
-                if skill.isSkillActive:
-                    result.append((skill.name, 'skill'))
-
             for bonusSkills in tankman.bonusSkills.itervalues():
                 for bonusSkill in bonusSkills:
                     if bonusSkill and bonusSkill.isSkillActive:
                         result.append((bonusSkill.name, 'skill'))
+
+            for skill in tankman.skills:
+                if skill.isSkillActive:
+                    result.append((skill.name, 'skill'))
 
         perksSet = set()
         for perksScope in BigWorld.player().inventory.abilities.abilitiesManager.getPerksByVehicle(vehicle.invID):

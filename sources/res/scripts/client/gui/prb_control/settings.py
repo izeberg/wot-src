@@ -2,6 +2,7 @@ from UnitBase import UNIT_ERROR, UNIT_BROWSER_ERROR, LEADER_SLOT
 from constants import PREBATTLE_TYPE, PREBATTLE_INVITE_STATE, QUEUE_TYPE
 from prebattle_shared import SETTING_DEFAULTS, PrebattleSettings
 from shared_utils import CONST_CONTAINER, BitmaskHelper
+from gui.shared.system_factory import registerIgnoredModeForAutoSelectVehicle
 VEHICLE_MIN_LEVEL = 1
 VEHICLE_MAX_LEVEL = 10
 VEHICLE_DEF_LEVEL_RANGE = (VEHICLE_MIN_LEVEL, VEHICLE_MAX_LEVEL)
@@ -52,7 +53,7 @@ class FUNCTIONAL_FLAG(BitmaskHelper):
     BATTLE_ROYALE = 33554432
     MAPBOX = 67108864
     MAPS_TRAINING = 134217728
-    DEFAULT = 8589934592
+    DEFAULT = 34359738368
     LEGACY_BITMASK = LEGACY_INTRO | LEGACY
     UNIT_BITMASK = UNIT_INTRO | UNIT_BROWSER | UNIT
     PRE_QUEUE_BITMASK = PRE_QUEUE_INTRO | PRE_QUEUE
@@ -69,6 +70,7 @@ class FUNCTIONAL_FLAG(BitmaskHelper):
      EPIC_TRAINING, TOURNAMENT, EPIC, BATTLE_ROYALE, MAPBOX, MAPS_TRAINING)
 
 
+registerIgnoredModeForAutoSelectVehicle([FUNCTIONAL_FLAG.EVENT, FUNCTIONAL_FLAG.BATTLE_ROYALE])
 _FUNCTIONAL_FLAG_NAMES = dict([ (k, v) for k, v in FUNCTIONAL_FLAG.__dict__.iteritems() if v in FUNCTIONAL_FLAG.RANGE ])
 
 def convertFlagsToNames(flags):

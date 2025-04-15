@@ -9,7 +9,7 @@ package net.wg.gui.lobby.hangar.quests
       
       private static const WIDTH:int = 602;
       
-      private static const HEIGHT:int = 148;
+      private static const HEIGHT:int = 175;
        
       
       public function FunRandomHangarWidget()

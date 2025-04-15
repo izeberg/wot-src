@@ -206,6 +206,8 @@ class ARENA_GUI_TYPE:
     VOIP_SUPPORTED = RANDOM_RANGE + EPIC_RANGE
     BATTLE_CHAT_SETTING_SUPPORTED = (
      RANDOM, RANKED, EPIC_RANDOM, EPIC_BATTLE, MAPBOX)
+    NON_DESERTION_ARENAS = (
+     TRAINING, MAPS_TRAINING, EPIC_RANDOM_TRAINING)
 
 
 class ARENA_GUI_TYPE_LABEL:
@@ -797,7 +799,6 @@ class Configs(enum.Enum):
     EPIC_CONFIG = 'epic_config'
     MAPBOX_CONFIG = 'mapbox_config'
     GIFTS_CONFIG = 'gifts_config'
-    RESOURCE_WELL = 'resource_well_config'
     CRYSTAL_REWARDS_CONFIG = 'crystal_rewards_config'
     CUSTOMIZATION_QUESTS = 'customizationQuests'
     UI_LOGGING = 'ui_logging_config'
@@ -827,6 +828,7 @@ class Configs(enum.Enum):
     UNIT_ASSEMBLER_CONFIG = 'unit_assembler_config'
     EASY_TANK_EQUIP_CONFIG = 'easy_tank_equip_config'
     PLAYER_SATISFACTION_CONFIG = 'player_satisfaction_config'
+    COMMENDATIONS_CONFIG = 'commendations_config'
 
 
 INBATTLE_CONFIGS = [
@@ -835,7 +837,8 @@ INBATTLE_CONFIGS = [
  'battle_royale_config',
  'epic_config',
  'vehicle_post_progression_config',
- Configs.PLAYER_SATISFACTION_CONFIG.value]
+ Configs.PLAYER_SATISFACTION_CONFIG.value,
+ Configs.COMMENDATIONS_CONFIG.value]
 
 class RESTRICTION_TYPE:
     NONE = 0
@@ -1073,6 +1076,7 @@ class EQUIPMENT_STAGES:
     SHARED_COOLDOWN = 7
     STARTUP_COOLDOWN = 8
     WAIT_FOR_CHOICE = 9
+    INTERRUPTED = 10
     EXHAUSTED = 255
     ALL = (
      NOT_RUNNING,
@@ -1084,6 +1088,7 @@ class EQUIPMENT_STAGES:
      COOLDOWN,
      SHARED_COOLDOWN,
      STARTUP_COOLDOWN,
+     INTERRUPTED,
      EXHAUSTED)
 
     @classmethod
@@ -1096,6 +1101,7 @@ class EQUIPMENT_STAGES:
            cls.ACTIVE: 'active', 
            cls.COOLDOWN: 'cooldown', 
            cls.STARTUP_COOLDOWN: 'startupCooldown', 
+           cls.INTERRUPTED: 'interrupted', 
            cls.EXHAUSTED: 'exhausted'}.get(value)
 
 
@@ -1197,6 +1203,7 @@ class ATTACK_REASON(object):
     BATTLESHIP = 'battleship'
     DESTROYER = 'destroyer'
     DAMAGE_ZONE = 'damage_zone'
+    ULTIMATE = 'ultimate'
     NONE = 'none'
 
     @classmethod
@@ -1221,7 +1228,8 @@ ATTACK_REASONS = [
  ATTACK_REASON.CLING_BRANDER_RAM, ATTACK_REASON.BRANDER_RAM,
  ATTACK_REASON.FORT_ARTILLERY_EQ, ATTACK_REASON.STATIC_DEATH_ZONE,
  ATTACK_REASON.CGF_WORLD, ATTACK_REASON.VEHICLE_EXPLOSION, ATTACK_REASON.BUNKER_DESTROYED,
- ATTACK_REASON.MINEFIELD_ZONE, ATTACK_REASON.BATTLESHIP, ATTACK_REASON.DESTROYER, ATTACK_REASON.DAMAGE_ZONE]
+ ATTACK_REASON.MINEFIELD_ZONE, ATTACK_REASON.BATTLESHIP, ATTACK_REASON.DESTROYER, ATTACK_REASON.DAMAGE_ZONE,
+ ATTACK_REASON.ULTIMATE]
 ATTACK_REASON_INDICES = {value:index for index, value in enumerate(ATTACK_REASONS)}
 BOT_RAM_REASONS = (
  ATTACK_REASON.BRANDER_RAM, ATTACK_REASON.CLING_BRANDER_RAM)
@@ -1453,7 +1461,6 @@ LOOTBOX_TOKEN_PREFIX = 'lootBox:'
 TWITCH_TOKEN_PREFIX = 'token:twitch'
 CUSTOMIZATION_PROGRESS_PREFIX = 'cust_progress_'
 STYLE_3D_PROGRESS_PREFIX = 'style_3D_progress'
-MODERNIZED_DEVICES_TOKEN_PREFIX = 'modernized_devices_'
 EMAIL_CONFIRMATION_QUEST_ID = 'email_confirmation'
 EMAIL_CONFIRMATION_TOKEN_NAME = 'acc_completion:email_confirm'
 DEMO_ACCOUNT_ATTR = 'isDemoAccount'
@@ -1793,7 +1800,6 @@ class REQUEST_COOLDOWN:
     POST_PROGRESSION_CELL = 0.5
     SYNC_GIFTS = 0.5
     WATCH_REPLAY = 5.0
-    RESOURCE_WELL_PUT = 1.0
     VEHICLE_IN_BATTLE_SWITCH = 2.0
     SET_VIVOX_PRESENCE = 0.5
     UNIT_UPDATE_EXTRAS = 2.0
@@ -2014,7 +2020,7 @@ class USER_SERVER_SETTINGS:
     _ALL = (
      GAME, HIDE_MARKS_ON_GUN, EULA_VERSION, GAME_EXTENDED, BATTLE_MATTERS_QUESTS, SESSION_STATS, DOG_TAGS,
      GAME_EXTENDED_2, BATTLE_HUD, CONTOUR, UI_STORAGE_2, BATTLE_EVENTS, SENIORITY_AWARDS,
-     ADVANCED_ACHIEVEMENTS_STORAGE)
+     ADVANCED_ACHIEVEMENTS_STORAGE, BATTLE_COMM)
 
     @classmethod
     def isBattleInvitesForbidden(cls, settings):
@@ -3378,7 +3384,6 @@ class IMPACT_TYPES:
     NON_PENETRATION_DAMAGE = 3
 
 
-RESOURCE_WELL_FORBIDDEN_TOKEN = 'rws{}_forbidden'
 QUESTS_SUPPORTED_EXCLUDE_TAGS = {
  'collectorVehicle', 'special', 'secret', 'testTank', 'premium', 'event_battles'}
 VEHICLE_HEALTH_DECIMALS = 1
@@ -3621,3 +3626,45 @@ class PlayerSatisfactionRating(IntEnum):
     USUAL = 0
     BETTER = 1
     WORSE = -1
+
+
+class SPAWN_POINT_MODE:
+    SPAWN = 0
+    RESPAWN = 1
+    SPAWN_AND_RESPAWN = 2
+
+
+class CommendationsState(IntEnum):
+    UNSENT = 0
+    SENT = 1
+    RECEIVED = 2
+    MUTUAL = 3
+
+    @property
+    def isSent(self):
+        return self in {CommendationsState.SENT, CommendationsState.MUTUAL}
+
+    @property
+    def isReceived(self):
+        return self in {CommendationsState.RECEIVED, CommendationsState.MUTUAL}
+
+    def canSend(self):
+        return not self.isSent
+
+    def transition(self, isSender):
+        if isSender:
+            return self._transitionStateOnSend()
+        else:
+            return self._transitionStateOnReceive()
+
+    def _transitionStateOnSend(self):
+        if self.value == CommendationsState.UNSENT:
+            return CommendationsState.SENT
+        if self.value == CommendationsState.RECEIVED:
+            return CommendationsState.MUTUAL
+
+    def _transitionStateOnReceive(self):
+        if self.value == CommendationsState.UNSENT:
+            return CommendationsState.RECEIVED
+        if self.value == CommendationsState.SENT:
+            return CommendationsState.MUTUAL

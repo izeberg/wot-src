@@ -2,31 +2,25 @@ package net.wg.gui.battle.views.gameMessagesPanel.data
 {
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
    import net.wg.data.daapi.base.DAAPIDataClass;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.FirstGeneralRankReachedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.HeadquarterAttackedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.HeadquarterDestroyedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.OverTimeMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.RankUpMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.SectorBaseContestedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.SectorBaseMessageVO;
+   import net.wg.gui.battle.interfaces.IGameMessageVO;
    
-   public class GameMessageVO extends DAAPIDataClass
+   public class GameMessageVO extends DAAPIDataClass implements IGameMessageVO
    {
       
-      private static const SECONDS_TO_MILISECONDS:Number = 1000;
+      private static const SECONDS_TO_MILLISECONDS:Number = 1000;
       
       private static const MSG_DATA:String = "msgData";
        
       
-      public var messageType:String = "";
+      protected var _messageType:String = "";
       
-      public var priority:int = -1;
+      protected var _priority:int = -1;
       
-      public var length:Number = -1;
+      protected var _length:Number = -1;
       
-      public var msgData:BaseGameMessageVO = null;
+      protected var _msgData:BaseGameMessageVO = null;
       
-      private var _cachedMsgData:Object = null;
+      protected var _cachedMsgData:Object = null;
       
       public function GameMessageVO(param1:Object)
       {
@@ -60,7 +54,7 @@ package net.wg.gui.battle.views.gameMessagesPanel.data
          super.onDispose();
       }
       
-      private function convertMsgData() : void
+      protected function convertMsgData() : void
       {
          switch(this.messageType)
          {
@@ -73,31 +67,6 @@ package net.wg.gui.battle.views.gameMessagesPanel.data
             case GAME_MESSAGES_CONSTS.TIME_REMAINING:
                this.msgData = new BaseGameMessageVO(this._cachedMsgData);
                break;
-            case GAME_MESSAGES_CONSTS.OVERTIME:
-               this.msgData = new OverTimeMessageVO(this._cachedMsgData);
-               break;
-            case GAME_MESSAGES_CONSTS.BASE_CAPTURED:
-            case GAME_MESSAGES_CONSTS.BASE_CAPTURED_POSITIVE:
-               this.msgData = new SectorBaseMessageVO(this._cachedMsgData);
-               break;
-            case GAME_MESSAGES_CONSTS.BASE_CONTESTED:
-            case GAME_MESSAGES_CONSTS.BASE_CONTESTED_POSITIVE:
-               this.msgData = new SectorBaseContestedMessageVO(this._cachedMsgData);
-               break;
-            case GAME_MESSAGES_CONSTS.RANK_UP:
-               this.msgData = new RankUpMessageVO(this._cachedMsgData);
-               break;
-            case GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED_POSITIVE:
-            case GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED:
-               this.msgData = new HeadquarterDestroyedMessageVO(this._cachedMsgData);
-               break;
-            case GAME_MESSAGES_CONSTS.OBJECTIVE_UNDER_ATTACK_POSITIVE:
-            case GAME_MESSAGES_CONSTS.OBJECTIVE_UNDER_ATTACK:
-               this.msgData = new HeadquarterAttackedMessageVO(this._cachedMsgData);
-               break;
-            case GAME_MESSAGES_CONSTS.GENERAL_RANK_REACHED:
-               this.msgData = new FirstGeneralRankReachedMessageVO(this._cachedMsgData);
-               break;
             default:
                this.msgData = new BaseGameMessageVO(this._cachedMsgData);
          }
@@ -106,7 +75,47 @@ package net.wg.gui.battle.views.gameMessagesPanel.data
       
       public function get duration() : int
       {
-         return this.length * SECONDS_TO_MILISECONDS;
+         return this.length * SECONDS_TO_MILLISECONDS;
+      }
+      
+      public function get messageType() : String
+      {
+         return this._messageType;
+      }
+      
+      public function set messageType(param1:String) : void
+      {
+         this._messageType = param1;
+      }
+      
+      public function get length() : Number
+      {
+         return this._length;
+      }
+      
+      public function set length(param1:Number) : void
+      {
+         this._length = param1;
+      }
+      
+      public function get priority() : int
+      {
+         return this._priority;
+      }
+      
+      public function set priority(param1:int) : void
+      {
+         this._priority = param1;
+      }
+      
+      public function get msgData() : BaseGameMessageVO
+      {
+         return this._msgData;
+      }
+      
+      public function set msgData(param1:BaseGameMessageVO) : void
+      {
+         this._msgData = param1;
       }
    }
 }

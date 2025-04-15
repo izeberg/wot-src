@@ -2553,8 +2553,6 @@ package
       
       public static const BONUSNAME_BRCOIN:String = "#quests:bonusName/brcoin";
       
-      public static const BONUSNAME_STPCOIN:String = "#quests:bonusName/stpcoin";
-      
       public static const BONUSNAME_GOLD_BANK:String = "#quests:bonusName/gold_bank";
       
       public static const BONUSNAME_IDLE_CREW_XP:String = "#quests:bonusName/idle_crew_xp";

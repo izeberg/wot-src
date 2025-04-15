@@ -134,22 +134,22 @@ msgid "Chassis_J31_Type_5_KaRi"
 msgstr "五式坦歼"
 
 msgid "Chassis_J32_Chi_To_SPG"
-msgstr "四式炮车量产型"
+msgstr "四式炮车"
 
 msgid "Chassis_J32_Chi_To_SPG_2"
-msgstr "四式炮车改进型"
+msgstr "四式炮车改"
 
 msgid "Chassis_J33_Ho_Ri_2"
-msgstr "五式炮战车一号案"
+msgstr "五式2型炮战车"
 
 msgid "Chassis_J33_Ho_Ri_2_2"
-msgstr "五式炮战车二号案"
+msgstr "五式2型炮战车改"
 
 msgid "Chassis_J34_Ho_Ri_1"
-msgstr "五式炮战车一号案"
+msgstr "五式1型炮战车"
 
 msgid "Chassis_J34_Ho_Ri_1_2"
-msgstr "五式炮战车二号案"
+msgstr "五式1型炮战车改"
 
 msgid "Chassis_J35_Ho_Ri_3"
 msgstr "五式3型炮战车"
@@ -158,16 +158,16 @@ msgid "Chassis_J36_Type_63_HT"
 msgstr "六三式"
 
 msgid "Chassis_J37_Type_3_Ho_Ni_III"
-msgstr "H式一型"
+msgstr "三式炮战车"
 
 msgid "Chassis_J37_Type_3_Ho_Ni_III_2"
-msgstr "H式二型"
+msgstr "三式炮战车改"
 
 msgid "Chassis_J38_Type_95_Ji_Ro"
 msgstr "试验型重炮战车"
 
 msgid "Chassis_J38_Type_95_Ji_Ro_2"
-msgstr "试验型重炮战车2型"
+msgstr "试验型重炮战车改"
 
 msgid "Chassis_J39_Type_57"
 msgstr "SHA-1"
@@ -176,6 +176,9 @@ msgid "Chassis_J39_Type_57_2"
 msgstr "SHA-1-2"
 
 msgid "Chassis_J40_Type_71"
+msgstr "SHB-2"
+
+msgid "Chassis_J40_Type_71_7x7"
 msgstr "SHB-2"
 
 msgid "Chassis_J41_Type_68"
@@ -594,6 +597,16 @@ msgstr "五七式"
 msgid "J40_Type_71"
 msgstr "试验型重战车"
 
+msgid "J40_Type_71_7x7"
+msgstr "试验型重战车 7v7"
+
+msgid "J40_Type_71_7x7_descr"
+msgstr ""
+"20世纪60年代末的主战坦克方案，计划由STB-1放大而来。在开发过程中引入了液气悬挂装置，使坦克能够调整离地间隙、并改善火炮的俯仰角，这一点在城镇地带的作战中尤为关键。该坦克的装甲得到了加强，并装备大口径的火炮。"
+
+msgid "J40_Type_71_7x7_short"
+msgstr "试验型重战车 7v7"
+
 msgid "J40_Type_71_descr"
 msgstr ""
 "20世纪60年代末的主战坦克方案，计划由STB-1放大而来。在开发过程中引入了液气悬挂装置，使坦克能够调整离地间隙、并改善火炮的俯仰角，这一点在城镇地带的作战中尤为关键。该坦克的装甲得到了加强，并装备大口径的火炮。"
@@ -737,6 +750,9 @@ msgid "Mitsubishi_12_ZT"
 msgstr "三菱 12ZT"
 
 msgid "Mitsubishi_MT_1100"
+msgstr "三菱 MT 1100"
+
+msgid "Mitsubishi_MT_1100_7x7"
 msgstr "三菱 MT 1100"
 
 msgid "NC27"
@@ -893,10 +909,16 @@ msgstr "六三式"
 msgid "Turret_1_J37_Type_3_Ho_Ni_III"
 msgstr "三式炮战车"
 
+msgid "Turret_1_J38_Type_95_Ji_Ro"
+msgstr "试验型重炮战车"
+
 msgid "Turret_1_J39_Type_57"
 msgstr "SHA-1"
 
 msgid "Turret_1_J40_Type_71"
+msgstr "SHB-2"
+
+msgid "Turret_1_J40_Type_71_7x7"
 msgstr "SHB-2"
 
 msgid "Turret_1_J41_Type_68"
@@ -992,9 +1014,6 @@ msgstr "STA-3"
 msgid "Turret_2_Type_61"
 msgstr "六一式"
 
-msgid "Turret_J38_Type_95_Ji_Ro"
-msgstr "试验型重炮战车"
-
 msgid "Type_61"
 msgstr "六一式"
 
@@ -1049,6 +1068,12 @@ msgstr "九二式 AP"
 msgid "_105mm_AP_Type_95"
 msgstr "APHE 九五式A型"
 
+msgid "_105mm_AP_Type_95_SP"
+msgstr "APHE 九五式 SP"
+
+msgid "_105mm_AP_Type_95_SP_Toku_Kou"
+msgstr "APHE 九五式 SP特 甲型"
+
 msgid "_105mm_AP_Type_95_Toku_Kou"
 msgstr "APHE 九五式A型特(甲)"
 
@@ -1056,10 +1081,13 @@ msgid "_105mm_Cannon_Type92"
 msgstr "10cm 九二式炮"
 
 msgid "_105mm_Cannon_Type92_A"
-msgstr "10cm 九二式加农炮"
+msgstr "10cm 九二式A型炮"
 
 msgid "_105mm_Cannon_Type_14"
 msgstr "10cm 一四式炮"
+
+msgid "_105mm_Cannon_Type_92_SP"
+msgstr "10cm 九二式 SP炮"
 
 msgid "_105mm_Experimental_Tank_Gun"
 msgstr "试制10cm坦克炮"
@@ -1111,6 +1139,9 @@ msgstr "HE 九二式A型"
 
 msgid "_105mm_HE_Type_92B"
 msgstr "九二式 HE"
+
+msgid "_105mm_HE_Type_92_SP"
+msgstr "HE 九二式 SP"
 
 msgid "_105mm_JSW_105_60"
 msgstr "105mm JSW 105/60炮"
@@ -1232,6 +1263,9 @@ msgstr "120mm 六零式炮"
 msgid "_120mm_Type_71_Gun"
 msgstr "120mm 试验型重战车炮"
 
+msgid "_120mm_Type_71_Gun_7x7"
+msgstr "120mm 试验型重战车炮"
+
 msgid "_127mm_50_3rd_Year_Type"
 msgstr "12.7cm /50 三年式炮"
 
@@ -1305,7 +1339,7 @@ msgid "_149mm_Gun_Type_96"
 msgstr "14.9cm 九六式炮"
 
 msgid "_149mm_Gun_Type_97"
-msgstr "14.9cm 97加农炮"
+msgstr "14.9cm 九六式炮改"
 
 msgid "_149mm_HE_Type_1"
 msgstr "HE 九六式通常弹"

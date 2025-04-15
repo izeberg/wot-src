@@ -667,6 +667,9 @@ class SettingsCore(ISettingsCore):
           BATTLE_COMM.SHOW_LOCATION_MARKERS,
           options.SettingTrueByDefault(BATTLE_COMM.SHOW_LOCATION_MARKERS, storage=BATTLE_COMM_SETTINGS_STORAGE)),
          (
+          BATTLE_COMM.ENABLE_COMMENDATIONS_FEEDBACK,
+          options.CommendationsSettings(BATTLE_COMM.ENABLE_COMMENDATIONS_FEEDBACK, storage=BATTLE_COMM_SETTINGS_STORAGE)),
+         (
           SCORE_PANEL.SHOW_HP_VALUES,
           options.SettingFalseByDefault(SCORE_PANEL.SHOW_HP_VALUES, storage=BATTLE_HUD_SETTINGS_STORAGE)),
          (

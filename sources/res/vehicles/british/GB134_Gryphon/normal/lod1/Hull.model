@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB134_Gryphon/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.775127 -0.667727 -3.894149</min>
+		<max>1.768217 0.724999 3.619702</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB134_Gryphon/normal/lod1/Hull</nodefullVisual>
+</root>

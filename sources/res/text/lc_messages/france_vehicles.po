@@ -201,11 +201,17 @@ msgstr "?empty?"
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM 47"
 
+msgid "AM_VRC_7_141"
+msgstr "AM/VRC 7 141"
+
 msgid "AN_VRC-18V"
 msgstr "AN/VRC-18V"
 
 msgid "AN_VRC_18"
 msgstr "AN/VRC 18"
+
+msgid "AN_VRC_18S"
+msgstr "AN/VRC 18S"
 
 msgid "AN_VRC_7"
 msgstr "AN/VRC-7"
@@ -544,6 +550,9 @@ msgstr "查狄伦155 56"
 msgid "Chassis_Bat_Chatillon25t_2"
 msgstr "查狄伦 25t"
 
+msgid "Chassis_Bat_Chatillon25t_2_7x7"
+msgstr "查狄伦 25t"
+
 msgid "Chassis_Bat_Chatillon25t_2_SH"
 msgstr "查狄伦 25t"
 
@@ -632,7 +641,7 @@ msgid "Chassis_F119_Char_Murat"
 msgstr "\"缪拉\""
 
 msgid "Chassis_F122_VCS_6x6_TS90"
-msgstr "VCS 6X6 TS 90"
+msgstr "VCS 6x6 TS 90"
 
 msgid "Chassis_F123_ERAC_105_Proto"
 msgstr "ERAC 105原型车"
@@ -640,11 +649,23 @@ msgstr "ERAC 105原型车"
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 2A型"
 
+msgid "Chassis_F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
 msgid "Chassis_F128_SFAC_105"
 msgstr "SFAC 105"
 
 msgid "Chassis_F129_ARL_44_BPXIV"
 msgstr "ARL 44 II型"
+
+msgid "Chassis_F130_Sentinelle"
+msgstr "守望者"
+
+msgid "Chassis_F131_Brennos"
+msgstr "布雷努斯"
+
+msgid "Chassis_F132_Vercingetorix"
+msgstr "\"维钦托利\""
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "洛林 40t"
@@ -1154,20 +1175,20 @@ msgid "F119_Char_Murat_short_special"
 msgstr "弹夹装填系统，出色的操控性和机动性"
 
 msgid "F122_VCS_6x6_TS90"
-msgstr "VCS 6X6 TS 90"
+msgstr "VCS 6x6 TS 90"
 
 msgid "F122_VCS_6x6_TS90_descr"
 msgstr ""
-"VCS 6X6 TS "
-"90作为出口型的侦察车辆研发，并具备与坦克对抗的实力。设计上尽可能与雷诺VAB装甲运兵车通用。该坦克于1976年6月向媒体公开，但从未进入量产阶段。该项目促成了VBC-90的研发。"
+"VCS 6x6 TS "
+"90是一辆为出口而研发的侦察坦克，并具备与坦克对抗的实力。设计上尽可能与雷诺VAB装甲运兵车通用。该坦克于1976年6月向媒体公开，但从未进入量产阶段。该项目促成了VBC-90的研发。"
 
 msgid "F122_VCS_6x6_TS90_long_special"
 msgstr ""
-"VCS 6X6 TS "
+"VCS 6x6 TS "
 "90是一辆F系IX级轮式轻型坦克，拥有出色的机动性，最大前进速度和最大倒车速度俱佳。该坦克仅有一种驾驶模式，因此无需来回切换。它配备一门稳定性较高的90毫米2连发弹夹炮，短装填时间仅为1.5秒，而且瞄准时间也可圈可点。"
 
 msgid "F122_VCS_6x6_TS90_short"
-msgstr "VCS 6X6"
+msgstr "VCS 6x6"
 
 msgid "F122_VCS_6x6_TS90_short_special"
 msgstr "轮式坦克，2连发弹夹炮"
@@ -1212,6 +1233,25 @@ msgstr "AMX 13 FL11"
 msgid "F124_AMX_13FL11_short_special"
 msgstr "良好的隐蔽性和出色的机动性"
 
+msgid "F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
+msgid "F127_AMX_ELC_901_descr"
+msgstr ""
+"ELC AMX 901是在轻型战斗车辆计划下设计的第一辆原型车。1955年进行的测试暴露了许多设计缺陷。坦克的改进型AMX ELC 90 "
+"bis进行了全面重新设计，并经过了必要的改动。它与原型车差别很大，实质上是一辆全新坦克。"
+
+msgid "F127_AMX_ELC_901_long_special"
+msgstr ""
+"AMX ELC 901是一辆F系VI级轻型坦克，实质上是可研发坦克AMX ELC bis的变体。它具有相同的优势: "
+"极低矮的外形、出色的隐蔽系数、优异的机动性。该坦克配备一门90毫米火炮，但由于尺寸较小，其炮塔旋转角度仅有30度。"
+
+msgid "F127_AMX_ELC_901_short"
+msgstr "AMX ELC 901"
+
+msgid "F127_AMX_ELC_901_short_special"
+msgstr "高额的平均单发损伤，出色的隐蔽系数"
+
 msgid "F128_SFAC_105"
 msgstr "SFAC 105"
 
@@ -1247,6 +1287,68 @@ msgstr "CDT"
 
 msgid "F129_ARL_44_BPXIV_short_special"
 msgstr "强劲的火炮，良好的正面装甲"
+
+msgid "F130_Sentinelle"
+msgstr "守望者"
+
+msgid "F130_Sentinelle_descr"
+msgstr ""
+"一项I系和F系军方的联合计划，被命名为守望者。该坦克以AP "
+"58重型坦克为基础，炮塔和武器系统由I系设计，而观瞄光学设备和通信系统则由F系提供。该坦克设计时拥有较低矮的外形和强大的武器系统。然而，由于同盟推行弹药标准化，该坦克失去了必要性，计划在原型车建造前便被叫停。"
+
+msgid "F130_Sentinelle_long_special"
+msgstr ""
+"守望者是一辆F系IX级重型坦克，但其机动性、尺寸和装甲更接近中型坦克——仅炮塔正面拥有较好的装甲防护。其主要特点是一门装填迅速的2连发弹夹炮，具有良好的手感，可造成390点的平均单发损伤。凭借较小的尺寸、良好的机动性、不俗的火炮俯角，它能在中坦点位高效作战。"
+
+msgid "F130_Sentinelle_short"
+msgstr "守望者"
+
+msgid "F130_Sentinelle_short_special"
+msgstr "装填迅速的弹夹炮，良好的机动性"
+
+msgid "F131_Brennos"
+msgstr "布雷努斯"
+
+msgid "F131_Brennos_descr"
+msgstr ""
+"战事结束后，F系决定根据所累积的经验研发一辆重型坦克，同时也综合考量了战前和战时的所有F系重型坦克计划。因为F系掌握了大量关于\"黑豹\"和\"虎王\"的技术信息，所以该设计在多个部件上都明显受到了D系的影响。此外，F系甚至考虑借鉴S系的设计，尝试在新坦克上复制IS-3著名的\"箭簇型\"车首。尽管其炮塔与\"虎王\"相似，但F系计划采用铸造炮塔，并在此基础上加入自身技术特色——为车长塔配备两门20毫米自动炮。然而，在具体研发过程中发现，这个坦克的概念已过时，即使投入量产，也难以适应未来战场需求。最终该计划仅停留在蓝图阶段。"
+
+msgid "F131_Brennos_long_special"
+msgstr ""
+"布雷努斯装备一门相对于VIII级重型坦克来说手感非常舒适的火炮，该火炮具有出色的稳定性、平均穿透力和瞄准时间。得益于强劲的发动机，它能轻松加速，并进行短距离冲刺。不过，这辆坦克的车体装甲较为平庸，炮塔上也存在较大的弱点部位。"
+
+msgid "F131_Brennos_short"
+msgstr "布雷努斯"
+
+msgid "F131_Brennos_short_special"
+msgstr "出色的稳定性，良好的平均穿透力"
+
+msgid "F132_Vercingetorix"
+msgstr "\"维钦托利\""
+
+msgid "F132_Vercingetorix_descr"
+msgstr ""
+"此计划研发于20世纪50年代中期，用于替代AMX 50计划。坦克车体设计得尽可能低矮，同时许多技术解决方案也已包含了未来AMX "
+"30原型车的元素。然而，初步评估表明，为了配备可靠的装甲，并安装现代化武器，坦克的重量将增加至60吨级，远超军方需求标准。该坦克从未投入生产。"
+
+msgid "F132_Vercingetorix_long_special"
+msgstr ""
+"\"维钦托利\"是一辆F系IX级中型坦克，但其装甲、武器和机动性更接近重型坦克。它拥有可靠的炮塔装甲，装备一门适合近战的120毫米火炮。其核心特色是可启动快速模式的燃气轮机，使其具备真正的中型坦克机动性，便于快速转场。"
+
+msgid "F132_Vercingetorix_short"
+msgstr "\"维钦托利\""
+
+msgid "F132_Vercingetorix_short_special"
+msgstr "燃气轮机，可靠的炮塔装甲"
+
+msgid "F18_Bat_Chatillon25t_7x7"
+msgstr "查狄伦 25t 7v7"
+
+msgid "F18_Bat_Chatillon25t_7x7_descr"
+msgstr "?empty?"
+
+msgid "F18_Bat_Chatillon25t_7x7_short"
+msgstr "查狄伦 25t 7v7"
 
 msgid "F19_Lorraine40t"
 msgstr "洛林 40t"
@@ -1659,7 +1761,13 @@ msgstr "FuG Spr.D"
 msgid "General_Motors_6046_Series_71"
 msgstr "通用汽车 6046 71系列"
 
+msgid "HS_110_2"
+msgstr "HS-110-2"
+
 msgid "Hispano-Suiza_HS110"
+msgstr "希斯帕诺-絮扎 HS-110"
+
+msgid "Hispano-Suiza_HS110_7x7"
 msgstr "希斯帕诺-絮扎 HS-110"
 
 msgid "Hispano-Suiza_HS110_A"
@@ -1815,6 +1923,9 @@ msgstr "迈巴赫 HL235 (850马力)"
 
 msgid "Maybach_HL_295"
 msgstr "迈巴赫 HL 295"
+
+msgid "Maybach_HL_295S"
+msgstr "迈巴赫 HL 295S"
 
 msgid "Maybach_HL_295_003_Somua"
 msgstr "迈巴赫HL 295.003 “索玛”"
@@ -2031,6 +2142,9 @@ msgstr "SCR 508"
 msgid "SCR_528"
 msgstr "SCR 528F"
 
+msgid "SCR_528_7x7"
+msgstr "SCR 528F"
+
 msgid "SCR_528_BPXIV"
 msgstr "SCR 528F"
 
@@ -2051,6 +2165,12 @@ msgstr "SCR 610"
 
 msgid "SCR_619"
 msgstr "SCR 619"
+
+msgid "SCR_619B"
+msgstr "SCR 619B"
+
+msgid "SCR_619V"
+msgstr "SCR 619V"
 
 msgid "SCR_619_F155"
 msgstr "SCR 619F"
@@ -2084,6 +2204,9 @@ msgstr "SOFAM 8Gxb"
 
 msgid "SOFAM_G_s_c_4"
 msgstr "SOFAM G s c 4"
+
+msgid "SOFAM_Type_4_GSr"
+msgstr "SOFAM 4 GSr型"
 
 msgid "S_35CA"
 msgstr "S-35 CA"
@@ -2162,6 +2285,9 @@ msgstr "TRVP-13-A1"
 
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
+
+msgid "Turmo_III_V"
+msgstr "透默 III-V"
 
 msgid "Turret_1_105_leFH18B2"
 msgstr "105 leFH18B2"
@@ -2253,6 +2379,14 @@ msgstr "查狄伦 155 mle.55"
 msgid "Turret_1_Bat_Chatillon25t"
 msgstr "查狄伦 25t"
 
+msgid "Turret_1_Bat_Chatillon25t_7x7"
+msgstr "查狄伦 25t"
+
+msgid "Turret_1_Bat_Chatillon25t_7x7_short"
+msgstr ""
+"查狄伦\n"
+"25t"
+
 msgid "Turret_1_Bat_Chatillon25t_short"
 msgstr ""
 "查狄伦\n"
@@ -2324,7 +2458,7 @@ msgid "Turret_1_F119_Char_Murat"
 msgstr "\"缪拉\""
 
 msgid "Turret_1_F122_VCS_6x6_TS90"
-msgstr "VCS 6X6 TS 90"
+msgstr "VCS 6x6 TS 90"
 
 msgid "Turret_1_F123_ERAC_105_Proto"
 msgstr "ERAC 105原型车"
@@ -2332,8 +2466,20 @@ msgstr "ERAC 105原型车"
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
+msgid "Turret_1_F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
 msgid "Turret_1_F128_SFAC_105"
 msgstr "SFAC 105"
+
+msgid "Turret_1_F130_Sentinelle"
+msgstr "守望者"
+
+msgid "Turret_1_F131_Brennos"
+msgstr "布雷努斯"
+
+msgid "Turret_1_F132_Vercingetorix"
+msgstr "\"维钦托利\""
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "洛林 40t"
@@ -2594,8 +2740,14 @@ msgstr "105mm CN 105炮"
 msgid "_105mm_CN_105_57"
 msgstr "105mm CN 105/57炮"
 
+msgid "_105mm_CN_105_57_7x7"
+msgstr "105mm CN 105/57炮"
+
 msgid "_105mm_CN_105_57_SH"
 msgstr "105mm CN 105/57炮"
+
+msgid "_105mm_Canon_76S"
+msgstr "105mm 76S炮"
 
 msgid "_105mm_D1504"
 msgstr "105mm D.1504炮"
@@ -2678,6 +2830,9 @@ msgstr "OE-105-mle.60 D.1504(EXP)"
 msgid "_105mm_OE_105_Mle_60_ERAC"
 msgstr "OE-105-Mle.60 ERAC"
 
+msgid "_105mm_OE_M393S"
+msgstr "105mm OE M393S"
+
 msgid "_105mm_OE_mle_1920"
 msgstr "OE mle.20"
 
@@ -2714,11 +2869,29 @@ msgstr "OFL 105 F1M"
 msgid "_105mm_OFL_105_F1_ERAC"
 msgstr "OFL-105-F1 ERAC"
 
+msgid "_105mm_OFL_M181S"
+msgstr "105mm OFL M181S"
+
+msgid "_105mm_OFL_M279S"
+msgstr "105mm OFL M279S"
+
 msgid "_105mm_Prf1940"
 msgstr "Prf. mle.40"
 
 msgid "_105mm_PzGr39K"
 msgstr "Pzgr 39K"
+
+msgid "_105mm_SK_FP_70"
+msgstr "SK FP 70"
+
+msgid "_105mm_SK_L_70"
+msgstr "105mm SK L/70炮"
+
+msgid "_105mm_SK_OE_70"
+msgstr "SK OE 70"
+
+msgid "_105mm_SK_P_70"
+msgstr "SK P 70"
 
 msgid "_105mm_Sprg_K"
 msgstr "Sprgr K"
@@ -2731,6 +2904,9 @@ msgstr "10.5cm L/28 leFH18炮"
 
 msgid "_105mm_mle_F1"
 msgstr "105mm F1炮"
+
+msgid "_120mm_DEFA_120_F"
+msgstr "120mm DEFA 120 F炮"
 
 msgid "_120mm_D_1203"
 msgstr "120mm D.1203炮"
@@ -2753,6 +2929,9 @@ msgstr "Frt.Prf. mle.45R"
 msgid "_120mm_FrtPrf1951"
 msgstr "Frt.Prf. mle.51"
 
+msgid "_120mm_Frt_Prf_mle_1952"
+msgstr "Frt.Prf. mle.52"
+
 msgid "_120mm_OE_mle_1930"
 msgstr "OE mle.30"
 
@@ -2762,6 +2941,9 @@ msgstr "OE mle.30R"
 msgid "_120mm_OE_mle_1951"
 msgstr "OE mle.51"
 
+msgid "_120mm_OE_mle_1952"
+msgstr "OE mle.52"
+
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle.43"
 
@@ -2770,6 +2952,9 @@ msgstr "Prf. mle.43R"
 
 msgid "_120mm_Prf1951"
 msgstr "Prf. mle.51"
+
+msgid "_120mm_Prf_mle_1952"
+msgstr "Prf. mle.52"
 
 msgid "_120mm_SA_46"
 msgstr "120mm SA46炮"
@@ -3209,6 +3394,9 @@ msgstr "90mm CN 90 F3炮"
 msgid "_90mm_D914"
 msgstr "90mm D.915炮"
 
+msgid "_90mm_D_914"
+msgstr "90mm D.914炮"
+
 msgid "_90mm_D_919"
 msgstr "90mm D.919炮"
 
@@ -3245,17 +3433,23 @@ msgstr "US-HE"
 msgid "_90mm_OCC_90"
 msgstr "OCC"
 
+msgid "_90mm_OCC_90_D_914"
+msgstr "OCC-90 D.914"
+
 msgid "_90mm_OCC_90_SH"
 msgstr "Prf. 90"
 
 msgid "_90mm_OE_90"
 msgstr "OE"
 
+msgid "_90mm_OE_90_D_914"
+msgstr "OE-90 D.914"
+
 msgid "_90mm_OE_90_D_919"
 msgstr "OE-90 D.919"
 
-msgid "_90mm_OE_F2"
-msgstr "OE 90 F2"
+msgid "_90mm_OE_F2_VCS"
+msgstr "OE F2 (VCS)"
 
 msgid "_90mm_OE_mle_1924"
 msgstr "OE mle.24"
@@ -3269,14 +3463,17 @@ msgstr "OFL"
 msgid "_90mm_OFL_90_DS2_SH"
 msgstr "OLF-90-DS2"
 
+msgid "_90mm_OFL_90_D_914"
+msgstr "OFL-90 D.914"
+
 msgid "_90mm_OFL_90_D_919"
 msgstr "OFL-90 D.919"
 
-msgid "_90mm_OFL_F1"
-msgstr "OFL 90 F1"
+msgid "_90mm_OFL_F1_VCS"
+msgstr "OFL F1 (VCS)"
 
-msgid "_90mm_OFL_F3"
-msgstr "OFL 90 F3"
+msgid "_90mm_OFL_F3_VCS"
+msgstr "OFL F3 (VCS)"
 
 msgid "_90mm_POT_90_D_919"
 msgstr "POT-90 D.919"

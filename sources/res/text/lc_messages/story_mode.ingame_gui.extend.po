@@ -10,11 +10,35 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "abilities/recon/startVehicle"
+msgstr "正在返回坦克…"
+
+msgid "abilities/recon/stopVehicle"
+msgstr "正在离开坦克…"
+
+msgid "player_errors/ability/on_cooldown"
+msgstr "不可用。[%(name)s]正在冷却中。"
+
+msgid "player_errors/ability/other_ability"
+msgstr "无法使用: [%(name)s]正在使用中"
+
+msgid "player_errors/ability/unable_fire"
+msgstr "无法开火: [%(name)s]正在使用中。"
+
+msgid "player_errors/ability/unable_move"
+msgstr "无法移动: [%(name)s]正在使用中。"
+
 msgid "player_messages/BUNKER_DESTROYED"
 msgstr "地堡已被摧毁。"
 
 msgid "player_messages/COMBAT_EQUIPMENT_READY_BATTLESHIP"
 msgstr "战舰已做好射击准备。"
+
+msgid "player_messages/DISTRACTION_ABILITY"
+msgstr "虚假命令已准备就绪。"
+
+msgid "player_messages/RECON_ABILITY"
+msgstr "侦察四周已准备就绪。"
 
 msgid "postmortem_messages/DEATH_FROM_BOT"
 msgstr "坦克被敌方火力击毁。"

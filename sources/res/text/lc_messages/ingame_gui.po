@@ -1821,13 +1821,13 @@ msgid "postmortem_messages/DEATH_FROM_THUNDER_STRIKE"
 msgstr "坦克被脉冲电场击毁。"
 
 msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_ALLY_SELF"
-msgstr "坦克因盟友而坠毁"
+msgstr "坦克已被盟友撞毁"
 
 msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_SELF"
-msgstr "坦克因敌方而坠毁"
+msgstr "坦克已被敌方撞毁"
 
 msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_SELF_SUICIDE"
-msgstr "坦克坠毁"
+msgstr "坦克已撞毁"
 
 msgid "postmortem_messages/DEATH_UNKNOWN"
 msgstr "您的坦克被击毁"
@@ -2008,6 +2008,9 @@ msgstr "按下"
 
 msgid "quickReply/hint/toAcknowledge"
 msgstr "确认"
+
+msgid "quickReply/hint/toCommend"
+msgstr "回赞"
 
 msgid "quickReply/hint/toHelp"
 msgstr "协助"
@@ -2922,18 +2925,6 @@ msgid "statusNotificationTimers/staticDeathZone"
 msgstr ""
 "立刻离开\n"
 "崩坏区域！"
-
-msgid "steamUnlockAwards/button/redirect"
-msgstr "车库中查看"
-
-msgid "steamUnlockAwards/button/submit"
-msgstr "收到！"
-
-msgid "steamUnlockAwards/title"
-msgstr "已获得坦克"
-
-msgid "steamUnlockAwards/underTitle"
-msgstr "和2D风格作为完成一往无前任务的奖励"
 
 msgid "stun/indicator"
 msgstr "乘员受到弹震影响"

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>flashing</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/vdsm25/ability_false_target_02.model</resource>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.500000 1.000000 0.500000</value>
+				<inTangent>14.314286 0.000000 14.314286</inTangent>
+				<outTangent>14.314286 0.000000 14.314286</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>50.599998 1.000000 50.599998</value>
+				<inTangent>14.314286 -0.000000 14.314286</inTangent>
+				<outTangent>14.314286 -0.000000 14.314286</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 0.015686 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.064015</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.064015</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.000000 0.168627 1.000000 0.100000</value>
+				<inTangent>-0.000000 1.529410 -0.000000 1.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.050562</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.566667</startTime>
+				<value>0.000000 0.168627 1.000000 0.250000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.012315</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.765391</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.933334</startTime>
+				<value>0.000000 0.015686 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.183530 -0.000000 -0.253992</inTangent>
+				<outTangent>-0.000000 -0.183530 -0.000000 -0.253992</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ability_false_target_03_1</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/vdsm25/ability_false_target_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.217235 -0.144249 -0.530882</inTangent>
+				<outTangent>-0.217235 -0.144249 -0.530882</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>40.000000 1.000000 40.000000</value>
+				<inTangent>-0.175461 -0.560789 -0.766462</inTangent>
+				<outTangent>-0.175461 -0.560789 -0.766462</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.750000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.750000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000 0.141176 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.707384</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.666667</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.096740</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.096740</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ability_false_target_03_2</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/vdsm25/ability_false_target_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000 25.000000 0.000000</value>
+				<inTangent>0.000000 -14.285713 0.000000</inTangent>
+				<outTangent>0.000000 -14.285713 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000 0.100000 0.000000</value>
+				<inTangent>-0.217235 -0.144249 -0.530882</inTangent>
+				<outTangent>-0.217235 -0.144249 -0.530882</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
+				<value>32.000000 1.000000 32.000000</value>
+				<inTangent>-0.175461 -0.560789 -0.766462</inTangent>
+				<outTangent>-0.175461 -0.560789 -0.766462</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.600000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.600000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>0.000000 0.141176 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.600000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.463283</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.933333</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.073520</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.073520</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ability_false_target_03_3</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/vdsm25/ability_false_target_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 0.100000 0.000000</value>
+				<inTangent>-0.217235 -0.144249 -0.530882</inTangent>
+				<outTangent>-0.217235 -0.144249 -0.530882</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.400000</startTime>
+				<value>25.000000 1.000000 25.000000</value>
+				<inTangent>-0.175461 -0.560789 -0.766462</inTangent>
+				<outTangent>-0.175461 -0.560789 -0.766462</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.588235</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.588235</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000 0.141176 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.588235</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.359464</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.933333</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.112836</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.112836</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ability_false_target_03_5</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/vdsm25/ability_false_target_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>0.000000 -15.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>0.000000 0.100000 0.000000</value>
+				<inTangent>-0.217235 -0.144249 -0.530882</inTangent>
+				<outTangent>-0.217235 -0.144249 -0.530882</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.766667</startTime>
+				<value>20.000000 1.040443 20.000000</value>
+				<inTangent>0.402161 -0.060911 0.055609</inTangent>
+				<outTangent>0.402161 -0.060911 0.055609</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.600000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.600000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000 0.141176 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.600000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.897098</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>0.000000 0.141176 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.070057</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.070057</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

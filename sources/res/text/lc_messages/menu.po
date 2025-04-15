@@ -953,6 +953,12 @@ msgstr "取消购买"
 msgid "contextMenu/clanInfo"
 msgstr "玩家军团信息"
 
+msgid "contextMenu/commendBack"
+msgstr "回赞！"
+
+msgid "contextMenu/commendFirst"
+msgstr "点赞！"
+
 msgid "contextMenu/compare"
 msgstr "加入对比"
 
@@ -1088,11 +1094,17 @@ msgstr "特性"
 msgid "contextMenu/moneyTransfer"
 msgstr "转移金币"
 
+msgid "contextMenu/mutualCommendation"
+msgstr "互赞"
+
 msgid "contextMenu/nationChange"
 msgstr "修改系别"
 
 msgid "contextMenu/notFairPlay"
 msgstr "消极战斗"
+
+msgid "contextMenu/outgoingCommendation"
+msgstr "已点赞"
 
 msgid "contextMenu/personalCase/statsBlockTitle"
 msgstr "金币坦克"
@@ -3766,9 +3778,6 @@ msgstr " "
 msgid "loading/battleTypes/desc/9"
 msgstr " "
 
-msgid "loading/battleTypes/subTitle/23"
-msgstr "幸运草对决"
-
 msgid "loading/helpTip"
 msgstr "车库和战场内按F1可查看帮助。"
 
@@ -4433,7 +4442,7 @@ msgid "moduleInfo/params/reloadCooldownSeconds"
 msgstr "冷却时间"
 
 msgid "moduleInfo/params/reloadMagazineTime"
-msgstr "装填完成时间"
+msgstr "完整装填时间"
 
 msgid "moduleInfo/params/reloadTime"
 msgstr "射速"
@@ -4454,7 +4463,7 @@ msgid "moduleInfo/params/rotationSpeed"
 msgstr "旋转速度"
 
 msgid "moduleInfo/params/shellReloadingTime"
-msgstr "两次射击之间的装填时间"
+msgstr "短装填时间"
 
 msgid "moduleInfo/params/shellsCount"
 msgstr "弹夹中的炮弹"

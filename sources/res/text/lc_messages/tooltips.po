@@ -1196,7 +1196,7 @@ msgid "awardItem/optional_devices_assistant/body"
 msgstr "主流坦克武装报告。"
 
 msgid "awardItem/optional_devices_assistant/header"
-msgstr "配件助手"
+msgstr "助手"
 
 msgid "awardItem/premium/body"
 msgstr "高级账号每场战斗多获得50%的经验与银币。"
@@ -1290,14 +1290,6 @@ msgstr "可以助您在钢铁猎手模式中升级并收获奖励。"
 
 msgid "awardItem/steelHunterPoint/header"
 msgstr "钢铁猎手积分"
-
-msgid "awardItem/stpcoin/body"
-msgstr ""
-"可在钢铁猎手战斗中获取的货币。印章可用来在幸运草商店中兑换独特奖励。\n"
-"组队战斗时，所获幸运印章将在小队成员之间平均分配。所示数量为属于您的奖励。"
-
-msgid "awardItem/stpcoin/header"
-msgstr "幸运印章"
 
 msgid "awardItem/tankman/body"
 msgstr "可选择系别和专业的乘员。"
@@ -2021,9 +2013,6 @@ msgstr "该坦克由各种坦克制造工厂的报废零部件组装而成，对
 msgid "battle_royale/hangar/vehicle/leftTime"
 msgstr "至: %(leftTime)s"
 
-msgid "battle_royale/hangar/vehicle/shamrock"
-msgstr "%(shamrock)s幸运印章加成: 在单人战斗中排名前10，或在组队战斗中排名前7即可获得。每辆活动坦克每天可激活该加成1次。"
-
 msgid "battle_royale/hangar/vehicle/status"
 msgstr "钢铁猎手之一"
 
@@ -2618,6 +2607,36 @@ msgstr "其他所有乘员的乘员效率加成{greenBright_Start}+%(commBonus)s
 
 msgid "commanderBonus/name"
 msgstr "车长加成"
+
+msgid "commendations/comms_likes_sct_txt_h_01"
+msgstr "点赞功能不可用"
+
+msgid "commendations/comms_likes_sct_txt_h_02"
+msgstr "点赞！"
+
+msgid "commendations/comms_likes_sct_txt_h_03"
+msgstr "回赞！"
+
+msgid "commendations/comms_likes_sct_txt_h_04"
+msgstr "已为该玩家点赞"
+
+msgid "commendations/comms_likes_sct_txt_h_05"
+msgstr "互赞"
+
+msgid "commendations/comms_likes_sct_txt_t_01"
+msgstr "很遗憾，您无法为该玩家点赞。"
+
+msgid "commendations/comms_likes_sct_txt_t_02"
+msgstr "点击即可表达您对该玩家的赞赏。"
+
+msgid "commendations/comms_likes_sct_txt_t_03"
+msgstr "该玩家已为您点赞。"
+
+msgid "commendations/comms_likes_sct_txt_t_04"
+msgstr "这场战斗您无法再次为该玩家点赞。"
+
+msgid "commendations/comms_likes_sct_txt_t_05"
+msgstr "太精彩了！很遗憾，这场战斗您无法再次为该玩家点赞。"
 
 msgid "common/notEnough"
 msgstr "若想购买，还需获取:"
@@ -4307,6 +4326,12 @@ msgstr "它可以兑换为全局经验。"
 msgid "eliteXP/header"
 msgstr "战斗经验"
 
+msgid "enableCommendations/body"
+msgstr "关闭后，您在战斗时将不会受到点赞通知的干扰。您仍可在团队列表和Tab界面中发送和获得点赞。"
+
+msgid "enableCommendations/header"
+msgstr "在战斗中获得点赞"
+
 msgid "enableTierGrouping/body"
 msgstr "只有在坦克图标显示时，根据等级显示坦克图标的功能才会生效。在不显示坦克图标的模式中，此功能不生效，如战役模式。"
 
@@ -5881,6 +5906,66 @@ msgstr "您可查看活动结果，并领取奖励。"
 msgid "liveOps/entryPointTooltip/title"
 msgstr "新活动"
 
+msgid "liveTags/body/ally/assist"
+msgstr "协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/ally/block/assist"
+msgstr "协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/ally/damage"
+msgstr "未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/ally/damage/assist"
+msgstr "协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/ally/damage/block"
+msgstr "未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/ally/damage/block/assist"
+msgstr "协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/currentPlayer/assist"
+msgstr "您名列前茅！协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/currentPlayer/block"
+msgstr "您名列前茅！"
+
+msgid "liveTags/body/currentPlayer/block/assist"
+msgstr "您名列前茅！协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/currentPlayer/damage"
+msgstr "您名列前茅！未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/currentPlayer/damage/assist"
+msgstr "您名列前茅！协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/currentPlayer/damage/block"
+msgstr "您名列前茅！未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/body/currentPlayer/damage/block/assist"
+msgstr "您名列前茅！协助包括点亮、使敌方无法移动、造成弹震。未点亮情况下的损伤不包括在内。"
+
+msgid "liveTags/title/assist"
+msgstr "最高协助损伤"
+
+msgid "liveTags/title/block"
+msgstr "最高抵挡损伤"
+
+msgid "liveTags/title/block/assist"
+msgstr "最高协助损伤和抵挡损伤"
+
+msgid "liveTags/title/damage"
+msgstr "最高损伤"
+
+msgid "liveTags/title/damage/assist"
+msgstr "最高损伤和协助损伤"
+
+msgid "liveTags/title/damage/block"
+msgstr "最高损伤和抵挡损伤"
+
+msgid "liveTags/title/damage/block/assist"
+msgstr "最高损伤、协助损伤和抵挡损伤"
+
 msgid "lobby/header/buyPremiumAccount/disabled/body"
 msgstr "当高级账号剩余%(number)s天或已过期时，您可以延期高级账号。"
 
@@ -6724,6 +6809,17 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/boosteroid_extraordinaire/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/boosteroid_fencer/desc"
+msgstr ""
+"不要被她的沉着和优雅所迷惑: "
+"阿德莱丝是一位久经沙场的击剑勇士，拥有数千场决斗的经验。她自信、专注且优雅，反应快如闪电，在任何情况下都能反败为胜。当她不把对手置于剑下时，就会在战场上指挥若定，同样精准、威胁力十足。您可能认为自己很快，但阿德莱丝更快。现在…准备战斗！"
+
+msgid "notrecruitedtankman/boosteroid_fencer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_fencer/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/boosteroid_foxwood/desc"
 msgstr ""
 "威廉整日与忠实的猎犬温斯顿相伴，毕生都献给了狩猎艺术。童年时，他便跟随父亲外出狩猎，并被森林中的奇景深深吸引，从此以后，无论刮风下雨，他每天都会头戴斜纹软呢帽，身着猎装夹克。平日里，威廉和蔼可亲，宛如长辈一般；但在追踪猎物时，他便展现出一位老练神射手的冷静与精准。他猎人的本能在坦克战中发挥得淋漓尽致，一旦瞄准目标，如鹰般锐利的目光可确保他百发百中。"
@@ -7458,6 +7554,46 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/onslaught_p3_4/label"
 msgstr "天梯战天马赛年"
+
+msgid "notrecruitedtankman/onslaught_p4_1/desc"
+msgstr ""
+"\"短吻鳄\"以利亚·布鲁克斯上尉来自沼泽地区，因在极端艰难条件下生存成长的能力而赢得了这个绰号。他在很少有人敢涉足的危险沼泽地区长大，因此学会了适应各种地形，能将环境转化为自身优势——这使其成为战场战略的大师。"
+
+msgid "notrecruitedtankman/onslaught_p4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_1/label"
+msgstr "天梯战蝎狮赛年"
+
+msgid "notrecruitedtankman/onslaught_p4_2/desc"
+msgstr ""
+"\"锻炉\"弗朗茨·科勒来自西部，他因在敌方火力下依然保持坚定冷静而闻名。这名曾整日与重型金属打交道的工人，兼具惊人的力量与精准度。他对待目标如同拆解机器，每一步都经过严谨计算，而他的射击就像锤击铁砧，沉稳而有力。"
+
+msgid "notrecruitedtankman/onslaught_p4_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_2/label"
+msgstr "天梯战蝎狮赛年"
+
+msgid "notrecruitedtankman/onslaught_p4_3/desc"
+msgstr ""
+"\"快递员\"张韦来自南方，是一名年轻送货员，经常被派去偏远城镇执行长途任务。他骑着那辆可靠的摩托车，驶过广阔的平原，穿梭于繁忙的城市街道，培养了敏锐的空间意识和闪电般的快速反应能力。这些技巧现在派上了用场，帮助他在战场上每一次转弯时巧妙避开危险。"
+
+msgid "notrecruitedtankman/onslaught_p4_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_3/label"
+msgstr "天梯战蝎狮赛年"
+
+msgid "notrecruitedtankman/onslaught_p4_4/desc"
+msgstr ""
+"\"魅影\"的背景资料寥寥无几。报告显示，他曾服役于[机密]部门，以无与伦比的速度和机敏著称，操控武器极其自然精准。他那始终佩戴的头巾，遮挡的不仅仅是一张脸，更掩藏着无人敢触及的秘密。"
+
+msgid "notrecruitedtankman/onslaught_p4_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_4/label"
+msgstr "天梯战蝎狮赛年"
 
 msgid "notrecruitedtankman/oow21_strategist_commander/desc"
 msgstr "一名\"老派\"军官。无情且谨慎，决策果断不鲁莽。他深知\"一招不慎满盘皆输\"。"

@@ -175,7 +175,8 @@ VEHICLE_MISC_ATTRIBUTE_FACTOR_NAMES = (
  'isSetChassisMaxHealthAfterHysteresis',
  'centerRotationFwdSpeedFactor',
  'hullMaxHealth',
- 'turretMaxHealth')
+ 'turretMaxHealth',
+ 'discreteDamageFactor')
 VEHICLE_MISC_ATTRIBUTE_FACTOR_INDICES = {value:index for index, value in enumerate(VEHICLE_MISC_ATTRIBUTE_FACTOR_NAMES)}
 
 class EnhancementItem(object):
@@ -266,7 +267,8 @@ def vehicleAttributeFactors():
        'chassis/sideFrictionFactor': 1.0, 
        'chassis/dirtReleaseRateFactor': 1.0, 
        'chassis/maxDirtFactor': 1.0, 
-       'mutualHidingTimeFactor': 1.0}
+       'mutualHidingTimeFactor': 1.0, 
+       'discreteDamageFactor': 1.0}
     return factors
 
 
@@ -1613,7 +1615,8 @@ class VehicleDescriptor(object):
            'ammoBayReduceFineFactor': 1.0, 
            'engineReduceFineFactor': 1.0, 
            'hullMaxHealth': 0, 
-           'turretMaxHealth': 0}
+           'turretMaxHealth': 0, 
+           'discreteDamageFactor': 1.0}
         if IS_CELLAPP or IS_CLIENT or IS_UE_EDITOR or IS_WEB or IS_BOT or onAnyApp:
             trackCenterOffset = chassis.topRightCarryingPoint[0]
             self.physics = {'weight': weight, 
@@ -1897,7 +1900,7 @@ class VehicleType(object):
      'nationChangeGroupId', 'isCollectorVehicle', 'isPremium', 'hasTurboshaftEngine', 'hasHydraulicChassis',
      'hasSpeedometer', 'supplySlots', 'optDevsOverrides', 'postProgressionTree', 'postProgressionPricesOverrides',
      'customRoleSlotOptions', 'hasRocketAcceleration', 'rocketAccelerationParams', 'classTag', 'armorMaxHealth',
-     '__weakref__')
+     'visualScript', '__weakref__')
 
     def __init__(self, nationID, basicInfo, xmlPath, vehMode=VEHICLE_MODE.DEFAULT):
         self.name = basicInfo.name
@@ -2104,6 +2107,9 @@ class VehicleType(object):
             _provideMultipleExtras(self)
         if IS_CLIENT or IS_UE_EDITOR:
             self.__checkMatchingTags()
+        if IS_CELLAPP or IS_CLIENT and section.has_key('visualScript'):
+            from visual_script.misc import ASPECT, readVisualScriptSection
+            self.visualScript = readVisualScriptSection(section, [ASPECT.CLIENT, ASPECT.SERVER])
         VehicleType.currentReadingVeh = None
         section = None
         ResMgr.purge(xmlPath, True)
@@ -2569,6 +2575,10 @@ class Cache(object):
         else:
             return
 
+    @property
+    def exhaustEffects(self):
+        return self.__customEffects.get('exhaust', {})
+
     def customization20(self, createNew=True):
         if self.__customization20 is None and createNew:
             from items.components.c11n_components import CustomizationCache
@@ -3024,6 +3034,11 @@ def isVehicleTypeCompactDescr(vehDescr):
     if cdType is int or cdType is long:
         return True
     return False
+
+
+def getEquipmentByName(name):
+    eqID = g_cache.equipmentIDs()[name]
+    return g_cache.equipments()[eqID]
 
 
 def getVehicleType(compactDescr):

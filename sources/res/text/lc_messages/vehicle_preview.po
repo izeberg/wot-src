@@ -146,22 +146,11 @@ msgstr "购买"
 msgid "buyingPanel/style/caption/userMoney"
 msgstr "可用点数:"
 
-msgid "buyingPanel/style/description/button/text"
-msgstr "选择资源"
-
 msgid "buyingPanel/style/description/maxLevel"
 msgstr "渐变风格最大等级"
 
 msgid "buyingPanel/style/description/nonProgression"
 msgstr "普通3D风格"
-
-msgid "buyingPanel/style/description/text"
-msgstr ""
-"前%(topPlayers)名玩家可获得附带编号3D风格的坦克，\n"
-"之后将交付%(basePlayers)辆不附带编号的坦克。"
-
-msgid "buyingPanel/style/description/title"
-msgstr "花费所需资源，获得%(vehicleName)！"
 
 msgid "buyingPanel/style/description/waiting"
 msgstr "购买的物品会尽快发送至您的账号"
@@ -397,7 +386,7 @@ msgid "showcaseStyleBuying/timeRemaining/desc"
 msgstr "上架时间:"
 
 msgid "topPanel/tab/baseVehicle/vehicle"
-msgstr "标准"
+msgstr "无编号"
 
 msgid "topPanel/tab/personalNumberVehicle/style"
 msgstr "附带编号"

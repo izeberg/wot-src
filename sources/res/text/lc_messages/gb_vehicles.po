@@ -61,6 +61,9 @@ msgstr "SR C42"
 msgid "C42_B47"
 msgstr "C42/B47 AFV SC"
 
+msgid "C42_B47_G"
+msgstr "C42/B47"
+
 msgid "C42_B47_SH"
 msgstr "C42/B47 AFV SC"
 
@@ -274,6 +277,9 @@ msgstr "克鲁瑟"
 
 msgid "Chassis_GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
+
+msgid "Chassis_GB134_Gryphon"
+msgstr "格里芬"
 
 msgid "Chassis_GB136_Churchill_BPXIV"
 msgstr "\"丘吉尔\" VII"
@@ -1198,6 +1204,23 @@ msgstr "流浪者"
 
 msgid "GB133_Charioteer_MkVII_short_special"
 msgstr "穿透力强的良好火炮"
+
+msgid "GB134_Gryphon"
+msgstr "格里芬"
+
+msgid "GB134_Gryphon_descr"
+msgstr ""
+"随着酋长坦克研发推进，Y系着手在海外部署同类型坦克的生产。该计划以首辆原型车底盘为基础，采用具有前景的M系1B概念车的炮塔。坦克命名为格里芬。除炮塔外，还计划采用其他多种M系部件，而内部设备则按Y系标准生产。最初的设计预留了火炮兼容性，可依据生产地的需求选装Y系或M系火炮。最终，该计划被终止，以支持更有潜力的坦克类型。"
+
+msgid "GB134_Gryphon_long_special"
+msgstr ""
+"格里芬是一辆Y系X级重型坦克，配备一门2连发逆向自动装填炮。该系统能确保几乎随时都有一发备用炮弹，战斗开始时可额外进行一次射击。该坦克具有良好的机动性、非常坚固的炮塔、出色的火炮俯角，但车体装甲较为平庸。"
+
+msgid "GB134_Gryphon_short"
+msgstr "格里芬"
+
+msgid "GB134_Gryphon_short_special"
+msgstr "逆向自动装填炮，可靠的炮塔装甲"
 
 msgid "GB136_Churchill_BPXIV"
 msgstr "丘吉尔 \"鳄鱼\""
@@ -2166,6 +2189,9 @@ msgstr "利兰 L60 NO.4 Mk.13A"
 msgid "Leyland_L60_No_4_Mk_1A"
 msgstr "利兰 L60 No.4 Mk.1A"
 
+msgid "Leyland_L60_No_4_Mk_1A_G"
+msgstr "利兰 L60 No.4 Mk.1A"
+
 msgid "Leyland_L60_No_4_Mk_2"
 msgstr "利兰 L60 No.4 Mk.2"
 
@@ -2645,6 +2671,9 @@ msgstr "克鲁瑟"
 
 msgid "Turret_1_GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
+
+msgid "Turret_1_GB134_Gryphon"
+msgstr "格里芬"
 
 msgid "Turret_1_GB139_FV226_Contradictious"
 msgstr "FV226 反制者"
@@ -3248,6 +3277,9 @@ msgstr "AP M2"
 msgid "_12.7mm_MG_HB_M2"
 msgstr "勃朗宁M2 .50口径重机枪"
 
+msgid "_120mm_AP-T_L11B"
+msgstr "AP-T L11B"
+
 msgid "_120mm_AP-T_L1A1"
 msgstr "AP-T L1"
 
@@ -3256,6 +3288,9 @@ msgstr "APDS L15"
 
 msgid "_120mm_APDS_L15A1"
 msgstr "APDS L15A1"
+
+msgid "_120mm_APDS_L15A2"
+msgstr "APDS L15A2"
 
 msgid "_120mm_APDS_L15A4"
 msgstr "APDS L15A4"
@@ -3296,6 +3331,9 @@ msgstr "120mm L11炮"
 msgid "_120mm_Gun_L11A1"
 msgstr "120mm L11A1炮"
 
+msgid "_120mm_Gun_L11B"
+msgstr "120mm L11B炮"
+
 msgid "_120mm_Gun_L11PA"
 msgstr "120mm L11PA炮"
 
@@ -3331,6 +3369,9 @@ msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1_MBC"
 msgstr "HE L1 MBC"
+
+msgid "_120mm_HE_L31A2"
+msgstr "HE L31A2"
 
 msgid "_120mm_QF_1_gun"
 msgstr "冈萨洛 QF 120mm炮"

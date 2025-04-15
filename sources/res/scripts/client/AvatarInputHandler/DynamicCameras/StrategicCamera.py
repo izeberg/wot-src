@@ -64,6 +64,9 @@ class StrategicCamera(CameraWithSettings, CallbackDelayer):
         self.__saveDist = False
         return
 
+    def getCurSense(self):
+        return self.__curSense
+
     @staticmethod
     def _getConfigsKey():
         return StrategicCamera.__name__

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_AF_003_VHouse/normal/lod2/hd_bld_AF_003_VHouse_Ruins_01</parent>
-	<extent>150</extent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-9.196408 -0.707427 -4.114586</min>
+		<max>7.637459 2.785874 3.830070</max>
+	</visibilityBox>
 	<nodefullVisual>content/Buildings/hd_bld_AF_003_VHouse/normal/lod1/hd_bld_AF_003_VHouse_Ruins_01</nodefullVisual>
 </root>

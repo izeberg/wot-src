@@ -6,6 +6,7 @@ package net.wg.gui.battle.views.destroyTimers
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Time;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.BATTLE_NOTIFICATIONS_TIMER_COLORS;
    import net.wg.data.constants.generated.BATTLE_NOTIFICATIONS_TIMER_TYPES;
    import net.wg.gui.battle.components.FrameAnimationTimer;
    import net.wg.gui.battle.components.interfaces.IStatusNotification;
@@ -84,6 +85,8 @@ package net.wg.gui.battle.views.destroyTimers
       
       public var desc:TextFieldContainer = null;
       
+      protected var currentColor:String = "orange";
+      
       private var _timerViewTypeID:String = "";
       
       private var _scheduler:IScheduler = null;
@@ -103,8 +106,6 @@ package net.wg.gui.battle.views.destroyTimers
       private var _isShowing:Boolean = false;
       
       private var _typeId:String = null;
-      
-      private var _currentColor:String = "orange";
       
       private var _fontSize:int = -1;
       
@@ -272,7 +273,7 @@ package net.wg.gui.battle.views.destroyTimers
          var _loc2_:String = param1.color;
          if(StringUtils.isNotEmpty(_loc2_))
          {
-            this._currentColor = _loc2_;
+            this.currentColor = _loc2_;
             this.updateColor();
          }
          this._fontSize = param1.descriptionFontSize;
@@ -308,9 +309,9 @@ package net.wg.gui.battle.views.destroyTimers
       public function updateData(param1:StatusNotificationVO) : void
       {
          var _loc2_:String = param1.color;
-         if(StringUtils.isNotEmpty(_loc2_) && this._currentColor != _loc2_)
+         if(StringUtils.isNotEmpty(_loc2_) && this.currentColor != _loc2_)
          {
-            this._currentColor = _loc2_;
+            this.currentColor = _loc2_;
             this.updateColor();
          }
          if(StringUtils.isNotEmpty(param1.iconName) && currentIconName != param1.iconName)
@@ -394,10 +395,14 @@ package net.wg.gui.battle.views.destroyTimers
       
       private function updateColor() : void
       {
-         this.graphicsSpr.setColor(this._currentColor);
+         if(this.currentColor == BATTLE_NOTIFICATIONS_TIMER_COLORS.CUSTOM)
+         {
+            return;
+         }
+         this.graphicsSpr.setColor(this.currentColor);
          iconSpr = this.graphicsSpr.iconSpr;
-         this.desc.textColor = DESC_TEXT_COLORS[this._currentColor];
-         this.desc.textFilters = DESC_TEXT_FILTERS[this._currentColor];
+         this.desc.textColor = DESC_TEXT_COLORS[this.currentColor];
+         this.desc.textFilters = DESC_TEXT_FILTERS[this.currentColor];
       }
       
       private function clearTweenX() : void

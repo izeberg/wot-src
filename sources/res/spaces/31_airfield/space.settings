@@ -9,9 +9,9 @@
 		<maxY>6</maxY>
 	</bounds>
 	<farPlane>
-		<max>16000.000000</max>
-		<high>16000.000000</high>
-		<medium>4954.569824</medium>
+		<max>25000.000000</max>
+		<high>25000.000000</high>
+		<medium>25000.000000</medium>
 		<low>600.000000</low>
 	</farPlane>
 	<DecalsInfo>
@@ -28,8 +28,8 @@
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>DXT5</format>
 					</constrains>
 				</atlas>
@@ -40,8 +40,8 @@
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>DXT5</format>
 					</constrains>
 				</atlas>
@@ -52,8 +52,8 @@
 					<constrains>
 						<minWidth>256</minWidth>
 						<minHeight>256</minHeight>
-						<maxWidth>1024</maxWidth>
-						<maxHeight>1024</maxHeight>
+						<maxWidth>2048</maxWidth>
+						<maxHeight>2048</maxHeight>
 						<format>DXT5</format>
 					</constrains>
 				</atlas>
@@ -74,6 +74,47 @@
 				</atlas>
 			</type>
 		</scene>
+		<road>
+			<type>
+				<name>GBufferDecals</name>
+				<atlas>
+					<width>1024</width>
+					<height>1024</height>
+					<format>DXT5</format>
+					<constrains>
+						<minWidth>64</minWidth>
+						<minHeight>64</minHeight>
+						<maxWidth>1024</maxWidth>
+						<maxHeight>1024</maxHeight>
+						<format>DXT5</format>
+					</constrains>
+				</atlas>
+				<atlas>
+					<width>1024</width>
+					<height>1024</height>
+					<format>DXT5</format>
+					<constrains>
+						<minWidth>64</minWidth>
+						<minHeight>64</minHeight>
+						<maxWidth>1024</maxWidth>
+						<maxHeight>1024</maxHeight>
+						<format>DXT5</format>
+					</constrains>
+				</atlas>
+				<atlas>
+					<width>1024</width>
+					<height>1024</height>
+					<format>DXT5</format>
+					<constrains>
+						<minWidth>64</minWidth>
+						<minHeight>64</minHeight>
+						<maxWidth>1024</maxWidth>
+						<maxHeight>1024</maxHeight>
+						<format>DXT5</format>
+					</constrains>
+				</atlas>
+			</type>
+		</road>
 	</DecalsInfo>
 	<shadowBaker>
 		<blurFilterExtent>27</blurFilterExtent>
@@ -85,7 +126,8 @@
 	<chunkSize>100.000000</chunkSize>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
-	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
+	<borderMask>borderMask.dds</borderMask>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
 	<spaceVisibilityFlags>
 		<type>
@@ -97,4 +139,5 @@
 			<bitIndex>1</bitIndex>
 		</type>
 	</spaceVisibilityFlags>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
 </root>
