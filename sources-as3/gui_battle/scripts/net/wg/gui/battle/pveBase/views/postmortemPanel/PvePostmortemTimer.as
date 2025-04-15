@@ -3,6 +3,7 @@ package net.wg.gui.battle.pveBase.views.postmortemPanel
    import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.gui.battle.components.FrameAnimationTimer;
+   import net.wg.gui.battle.pveBase.views.postmortemPanel.events.PvePostmortemPanelEvent;
    
    public class PvePostmortemTimer extends FrameAnimationTimer
    {
@@ -49,6 +50,12 @@ package net.wg.gui.battle.pveBase.views.postmortemPanel
       override protected function getTimerTF() : TextField
       {
          return this.graphicsSpr.textField;
+      }
+      
+      override protected function setTTFText(param1:String) : void
+      {
+         dispatchEvent(new PvePostmortemPanelEvent(PvePostmortemPanelEvent.UPDATE_TIME,param1));
+         super.setTTFText(param1);
       }
       
       override protected function onIntervalHideUpdateHandler() : void

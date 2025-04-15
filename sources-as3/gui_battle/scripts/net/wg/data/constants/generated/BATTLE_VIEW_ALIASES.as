@@ -85,33 +85,7 @@ package net.wg.data.constants.generated
       
       public static const GAME_MESSAGES_PANEL:String = "gameMessagesPanel";
       
-      public static const EPIC_RESPAWN_VIEW:String = "epicRespawnView";
-      
-      public static const EPIC_SCORE_PANEL:String = "epicScorePanel";
-      
-      public static const EPIC_TIMER:String = "epicTimer";
-      
-      public static const EPIC_DEPLOYMENT_MAP:String = "epicDeploymentMap";
-      
-      public static const EPIC_OVERVIEW_MAP_SCREEN:String = "epicOverviewMapScreen";
-      
-      public static const EPIC_MISSIONS_PANEL:String = "epicMissionsPanel";
-      
       public static const SPECTATOR_VIEW:String = "spectatorView";
-      
-      public static const EPIC_REINFORCEMENT_PANEL:String = "epicReinforcementPanel";
-      
-      public static const EPIC_MODIFICATION_PANEL:String = "epicModificationPanel";
-      
-      public static const RECOVERY_PANEL:String = "recoveryPanel";
-      
-      public static const EPIC_INGAME_RANK:String = "epicInGameRank";
-      
-      public static const SUPER_PLATOON_PANEL:String = "superPlatoonPanel";
-      
-      public static const BATTLE_TANK_CAROUSEL:String = "battleTankCarousel";
-      
-      public static const EPIC_CAROUSEL_FILTER_POPOVER:String = "epicCarouselFilterPopoverView";
       
       public static const QUEST_PROGRESS_TOP_VIEW:String = "questProgressTopView";
       
@@ -147,6 +121,8 @@ package net.wg.data.constants.generated
       
       public static const PERSONAL_RESERVES_TAB:String = "personalReservesTab";
       
+      public static const TAB_CONTENT:String = "tabContent";
+      
       public static const POSTMORTEM_INFO_PAGE:String = "postmortemInfoPage";
       
       public static const EVENT_POSTMORTEM_PANEL:String = "eventPostmortemPanel";
@@ -167,12 +143,6 @@ package net.wg.data.constants.generated
       
       public static const BR_RESPAWN_MESSAGE_PANEL:String = "BRRespawnMessagePanel";
       
-      public static const BR_SHAMROCK_CONTROLLER:String = "BRShamrockController";
-      
-      public static const BR_SHAMROCK_SIDEBAR:String = "ShamrockSideBar";
-      
-      public static const BR_SHAMROCK_COLLECT:String = "ShamrockCollect";
-      
       public static const FRAG_PANEL:String = "fragPanel";
       
       public static const BR_PLAYER_STATS_IN_BATTLE:String = "brPlayerStatsInBattle";
@@ -182,8 +152,6 @@ package net.wg.data.constants.generated
       public static const ROLE_DESCRIPTION:String = "roleDescription";
       
       public static const PREBATTLE_AMMUNITION_PANEL:String = "prebattleAmmunitionPanel";
-      
-      public static const EPIC_RESPAWN_AMMUNITION_PANEL:String = "epicRespawnAmmunitionPanel";
       
       public static const BATTLE_ROYALE_WINNER_CONGRATS:String = "battleRoyaleWinnerCongrats";
       

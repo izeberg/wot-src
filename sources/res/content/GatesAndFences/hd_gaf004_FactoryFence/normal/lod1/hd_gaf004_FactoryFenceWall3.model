@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/GatesAndFences/hd_gaf004_FactoryFence/normal/lod1/hd_gaf004_FactoryFenceWall3</nodefullVisual>
+	<parent>content/GatesAndFences/hd_gaf004_FactoryFence/normal/lod2/hd_gaf004_FactoryFenceWall3</parent>
+	<extent>100</extent>
+	<materialNames/>
+	<visibilityBox>
+		<min>
+			-0.845048 -0.500229 -40.2197
+			<!--BW_String-->
+		</min>
+		<max>
+			0.225173 3.64127 40.2339
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

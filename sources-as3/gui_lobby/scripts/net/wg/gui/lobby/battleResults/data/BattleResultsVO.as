@@ -59,6 +59,8 @@ package net.wg.gui.lobby.battleResults.data
       
       public var isFreeForAll:Boolean;
       
+      public var receivedCommendations:Number = -1;
+      
       public var selectedTeamMemberId:Number = -1;
       
       public var closingTeamMemberStatsEnabled:Boolean = true;

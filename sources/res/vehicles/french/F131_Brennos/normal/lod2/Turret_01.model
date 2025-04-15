@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Brennos/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F131_Brennos/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.523047 0.035380 -2.852067</min>
+		<max>1.519466 2.942216 1.191301</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

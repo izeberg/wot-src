@@ -47,7 +47,6 @@ from gui.prestige.prestige_helpers import getCurrentGrade, hasVehiclePrestige, m
 from gui.ranked_battles.constants import YEAR_AWARD_SELECTABLE_OPT_DEVICE_PREFIX, YEAR_POINTS_TOKEN
 from gui.ranked_battles.ranked_helpers import getBonusBattlesIncome, getQualificationBattlesCountFromID, isQualificationQuestID
 from gui.ranked_battles.ranked_models import PostBattleRankInfo, RankChangeStates
-from gui.resource_well.resource_well_constants import ResourceType
 from gui.server_events.awards_formatters import BATTLE_BONUS_X5_TOKEN, CREW_BONUS_X3_TOKEN, CompletionTokensBonusFormatter
 from gui.server_events.bonuses import EntitlementBonus, MetaBonus, SelectableBonus, getMergedBonusesFromDicts
 from gui.server_events.finders import PERSONAL_MISSION_TOKEN
@@ -83,7 +82,7 @@ from messenger.formatters.service_channel_helpers import EOL, MessageData, extra
 from messenger.proto.bw.wrappers import ServiceChannelMessage
 from nations import NAMES
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, ICollectionsSystemController, IEpicBattleMetaGameController, IFunRandomController, ILootBoxSystemController, IMapboxController, IRankedBattlesController, IResourceWellController, IWinbackController
+from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, ICollectionsSystemController, IEpicBattleMetaGameController, IFunRandomController, ILootBoxSystemController, IMapboxController, IRankedBattlesController, IWinbackController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.offers import IOffersDataProvider
@@ -660,6 +659,9 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
 
         return messages
 
+    def _getBattleResultsKey(self, battleResults):
+        return battleResults.get(b'isWinner', 0)
+
     def _getFairplayData(self, message):
         arenaTypeID = message.data.get(b'arenaTypeID', 0)
         if arenaTypeID > 0 and arenaTypeID in ArenaType.g_cache:
@@ -705,7 +707,7 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
         bonusCapsOverrides = battleResults.get(b'bonusCapsOverrides')
         if xp or BONUS_CAPS.checkAny(bonusType, BONUS_CAPS.XP, specificOverrides=bonusCapsOverrides):
             ctx[b'xp'] = b'<br/>' + backport.text(R.strings.messenger.serviceChannelMessages.battleResults.experience(), text_styles.expText(backport.getIntegralFormat(xp)))
-        battleResKey = battleResults.get(b'isWinner', 0)
+        battleResKey = self._getBattleResultsKey(battleResults)
         ctx[b'xpEx'] = self.__makeXpExString(xp, battleResKey, battleResults.get(b'xpPenalty', 0), battleResults)
         ctx[Currency.GOLD] = self.__makeGoldString(battleResults.get(Currency.GOLD, 0))
         accCredits = battleResults.get(Currency.CREDITS) - battleResults.get(b'creditsToDraw', 0)
@@ -753,7 +755,6 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
                     battleResKey = 1 if winnerIfDraw == team else -1
         if guiType == ARENA_GUI_TYPE.BATTLE_ROYALE:
             ctx[b'brcoin'] = self.__makeBRCoinString(battleResults)
-            ctx[b'stpcoin'] = self.__makeSTPCoinString(battleResults)
             ctx[b'brAwardTokens'] = self.__makeBRProgressionTokenString(battleResults)
             battleResultKeys = self.__BRResultKeys
         elif guiType == ARENA_GUI_TYPE.MAPS_TRAINING:
@@ -969,20 +970,13 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
         return g_settings.htmlTemplates.format(b'piggyBank', ctx={b'credits': self.__makeCurrencyString(Currency.CREDITS, credits_)})
 
     def __makeBRCoinString(self, battleResults):
-        value = battleResults.get(b'brcoin', 0) + self.__getCoinsQuestBonus(battleResults, b'brcoin')
+        value = battleResults.get(b'brcoin', 0) + self.__getBrCoinsQuestBonus(battleResults)
         if value:
             text = backport.text(R.strings.messenger.serviceChannelMessages.BRbattleResults.battleRoyaleBrCoin(), value=text_styles.neutral(value))
             return g_settings.htmlTemplates.format(b'battleResultBrcoin', ctx={b'brcoin': text})
         return b''
 
-    def __makeSTPCoinString(self, battleResults):
-        value = battleResults.get(b'stpcoin', 0) + self.__getCoinsQuestBonus(battleResults, b'stpcoin')
-        if value:
-            text = backport.text(R.strings.messenger.serviceChannelMessages.BRbattleResults.battleRoyaleStpCoin(), value=text_styles.stPatrick(value))
-            return g_settings.htmlTemplates.format(b'battleResultStpcoin', ctx={b'stpcoin': text})
-        return b''
-
-    def __getCoinsQuestBonus(self, battleResults, currencyCode=b'brcoin'):
+    def __getBrCoinsQuestBonus(self, battleResults):
         questBonus = 0
         allQuests = self.__eventsCache.getAllQuests()
         for qID in battleResults.get(b'completedQuestIDs', []):
@@ -990,7 +984,7 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
             if quest is None:
                 continue
             for bonus in quest.getBonuses(b'currencies'):
-                if bonus.getCode() == currencyCode:
+                if bonus.getCode() == b'brcoin':
                     questBonus += bonus.getCount()
 
         return questBonus
@@ -1143,6 +1137,7 @@ class AutoMaintenanceFormatter(WaitItemsSyncFormatter):
 
 
 class AchievementFormatter(ServiceChannelFormatter):
+    _HIDDEN_ACHIEVES = set()
 
     def isNotify(self):
         return True
@@ -1165,7 +1160,7 @@ class AchievementFormatter(ServiceChannelFormatter):
                     continue
                 if block == BADGES_BLOCK:
                     badgesList.append(backport.text(R.strings.badge.dyn((b'badge_{}').format(name))()))
-                else:
+                elif name not in self._HIDDEN_ACHIEVES:
                     achieve = getAchievementFactory((block, name)).create(value)
                     if achieve is not None:
                         achievesList.append(achieve.getUserName())
@@ -1488,7 +1483,7 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
                     tankman = tmanData
                 else:
                     tankman = Tankman(tmanData)
-                tmanUserStrings.append((b'{0:s} {1:s} ({2:s}, {3:s})').format(tankman.rankUserName, tankman.lastUserName, tankman.roleUserName, getUserName(tankman.vehicleNativeDescr.type)))
+                tmanUserStrings.append((b'{0:s} {1:s} ({2:s}, {3:s})').format(tankman.rankUserName, tankman.lastUserName or tankman.firstUserName, tankman.roleUserName, getUserName(tankman.vehicleNativeDescr.type)))
             except Exception:
                 _logger.error(b'Wrong tankman data: %s', tmanData)
                 _logger.exception(b'getTankmenString catch exception')
@@ -2952,9 +2947,10 @@ class QuestAchievesFormatter(object):
     @classmethod
     def _processLootBoxToken(cls, tokenID, count):
         lootBox = cls._itemsCache.items.tokens.getLootBoxByTokenID(tokenID)
-        if lootBox.getType() in cls.__lootboxSystem.getActiveEvents():
+        if lootBox is not None and lootBox.getType() in cls.__lootboxSystem.getActiveEvents():
             return backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=lootBox.getUserName(), count=count)
-        return b''
+        else:
+            return b''
 
     @classmethod
     def _processDogTags(cls, dogTags):
@@ -3343,10 +3339,8 @@ class LootBoxSystemAchievesFormatter(QuestAchievesFormatter):
     @classmethod
     def __getLootBoxString(cls, token, tokenData):
         lootBox = cls.__itemsCache.items.tokens.getLootBoxByTokenID(token)
-        defaultName = backport.text(R.strings.lootbox_system.serviceChannelMessages.lootBoxDefault())
         if lootBox is not None:
-            boxName = lootBox.getUserName()
-            name = boxName if boxName else defaultName
+            name = lootBox.getUserName()
             count = tokenData.get(b'count', 0)
             return g_settings.htmlTemplates.format(b'systemBoxesReceived', {b'text': name, b'count': count})
         else:
@@ -5401,161 +5395,6 @@ class RecertificationFinancialFormatter(ServiceChannelFormatter):
              MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))]
 
 
-class ResourceWellOperationFormatter(ServiceChannelFormatter):
-    __TEMPLATE = b'ResourceWellOperationMessage'
-    __RESOURCE_WELL_MESSAGES = R.strings.messenger.serviceChannelMessages.resourceWell
-    __BULLET = b'• '
-    __NONE_NATION_NAME = b'intelligence'
-    __NO_NATION_INDEX = 0
-    __NATIONS_ORDER = {name:idx for idx, name in enumerate(GUI_NATIONS, 1)}
-    __NATIONS_ORDER[__NONE_NATION_NAME] = __NO_NATION_INDEX
-    __CURRENCY_ORDER = {name:idx for idx, name in enumerate(Currency.GUI_ALL + (CURRENCIES_CONSTANTS.FREE_XP,))}
-    __FULL_PROGRESS = 100.0
-    __resourceWell = dependency.descriptor(IResourceWellController)
-
-    def format(self, message, *args):
-        data = message.data
-        if b'type' not in data or b'data' not in data:
-            return [MessageData(None, None)]
-        else:
-            operationType = data[b'type']
-            title = backport.text(self.__RESOURCE_WELL_MESSAGES.dyn(operationType).title())
-            text = backport.text(self.__RESOURCE_WELL_MESSAGES.dyn(operationType).text())
-            resources = self.__formatResources(data[b'data'])
-            if not resources:
-                return [MessageData(None, None)]
-            additionalText = b''
-            points = data.get(b'points')
-            if points is not None and operationType == b'put':
-                progress = self.__FULL_PROGRESS / (self.__resourceWell.getMaxPoints() or self.__FULL_PROGRESS) * points
-                additionalText = backport.text(self.__RESOURCE_WELL_MESSAGES.progress(), progress=progress) + backport.text(R.strings.common.common.percent())
-            ctx = {b'resources': self.__BULLET + resources, 
-               b'title': title, 
-               b'text': text, 
-               b'additionalText': additionalText}
-            formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx=ctx)
-            return [
-             MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))]
-
-    def __formatResources(self, resources):
-        resourceStrings = []
-        if ResourceType.CURRENCY.value in resources:
-            resourceStrings.extend(self.__formatCurrencies(resources[ResourceType.CURRENCY.value]))
-        if ResourceType.BLUEPRINTS.value in resources:
-            resourceStrings.append(self.__formatBlueprints(resources[ResourceType.BLUEPRINTS.value]))
-        return (backport.text(self.__RESOURCE_WELL_MESSAGES.breakLine()) + self.__BULLET).join(resourceStrings)
-
-    def __formatBlueprints(self, blueprintResources):
-        blueprints = []
-        for fragmentCD, count in blueprintResources.iteritems():
-            fragmentType = getFragmentType(fragmentCD)
-            if fragmentType == BlueprintTypes.INTELLIGENCE_DATA:
-                blueprints.append((self.__NONE_NATION_NAME, count))
-            elif fragmentType == BlueprintTypes.NATIONAL:
-                blueprints.append((nations.MAP.get(getFragmentNationID(fragmentCD), nations.NONE_INDEX), count))
-
-        blueprints.sort(cmp=lambda a, b: cmp(self.__NATIONS_ORDER.get(a), self.__NATIONS_ORDER.get(b)), key=lambda x: x[0])
-        blueprintStrings = []
-        for nation, count in blueprints:
-            nationStr = backport.text(R.strings.blueprints.nations.dyn(nation, self.__RESOURCE_WELL_MESSAGES.intelligence)())
-            blueprintStrings.append(nationStr + self.__formatBlueprintCount(count))
-
-        return backport.text(self.__RESOURCE_WELL_MESSAGES.blueprints()) + (b', ').join(blueprintStrings)
-
-    def __formatCurrencies(self, currencyResources):
-        currencies = sorted(currencyResources.items(), key=lambda x: x[0], cmp=lambda a, b: cmp(self.__CURRENCY_ORDER.get(a), self.__CURRENCY_ORDER.get(b)))
-        return [ backport.text(self.__RESOURCE_WELL_MESSAGES.dyn(name)(), count=self.__formatCurrencyCount(name, count)) for name, count in currencies
-               ]
-
-    def __formatCurrencyCount(self, currencyName, count):
-        style = getStyle(currencyName) if currencyName in Currency.ALL else text_styles.crystal
-        return style(backport.getIntegralFormat(abs(count)))
-
-    def __formatBlueprintCount(self, count):
-        countStr = backport.getIntegralFormat(abs(count))
-        return text_styles.crystal(backport.text(self.__RESOURCE_WELL_MESSAGES.blueprintCount(), count=countStr))
-
-
-class ResourceWellRewardFormatter(WaitItemsSyncFormatter):
-    __TEMPLATE = b'ResourceWellRewardReceivedMessage'
-    __RESOURCE_WELL_MESSAGES = R.strings.messenger.serviceChannelMessages.resourceWell
-    __resourceWell = dependency.descriptor(IResourceWellController)
-
-    @adisp_async
-    @adisp_process
-    def format(self, message, callback):
-        isSynced = yield self._waitForSyncItems()
-        if isSynced:
-            reward = message.data.get(b'reward')
-            if reward is None:
-                callback([MessageData(None, None)])
-            callback([self.__getMainMessage(message), self.__getAdditionalMessage(message)])
-        else:
-            callback([MessageData(None, None)])
-        return
-
-    def __getMainMessage(self, message):
-        from tutorial.control.game_vars import getVehicleByIntCD
-        serialNumber = message.data.get(b'serialNumber')
-        vehicle = getVehicleByIntCD(self.__resourceWell.getRewardVehicle()).userName
-        additionalText = b''
-        if serialNumber:
-            title = backport.text(self.__RESOURCE_WELL_MESSAGES.topReward.title(), vehicle=vehicle)
-            text = backport.text(self.__RESOURCE_WELL_MESSAGES.topReward.text(), vehicle=text_styles.crystal(vehicle))
-            additionalText = backport.text(self.__RESOURCE_WELL_MESSAGES.breakLine()) + backport.text(self.__RESOURCE_WELL_MESSAGES.topReward.additionalText(), serialNumber=serialNumber)
-        else:
-            title = backport.text(self.__RESOURCE_WELL_MESSAGES.regularReward.title(), vehicle=vehicle)
-            text = backport.text(self.__RESOURCE_WELL_MESSAGES.regularReward.text(), vehicle=text_styles.crystal(vehicle))
-        formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx={b'title': title, b'text': text, b'additionalText': additionalText})
-        return MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))
-
-    def __getAdditionalMessage(self, message):
-        rewards = self.__resourceWell.getRewards()
-        reward = rewards.get(message.data[b'reward'])
-        if reward is None:
-            return MessageData(None, None)
-        else:
-            slots = reward.bonus.get(b'slots')
-            if not slots:
-                return MessageData(None, None)
-            text = g_settings.htmlTemplates.format(b'slotsAccruedInvoiceReceived', {b'amount': backport.getIntegralFormat(slots)})
-            at = TimeFormatter.getLongDatetimeFormat(time_utils.makeLocalServerTime(message.sentTime))
-            formatted = g_settings.msgTemplates.format(b'resourceWellInvoiceReceived', ctx={b'at': at, b'text': text})
-            return MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))
-
-
-class ResourceWellNoVehiclesFormatter(WaitItemsSyncFormatter):
-    __TEMPLATE = b'ResourceWellNoVehiclesMessage'
-    __RETURN_TEMPLATE = b'ResourceWellNoVehiclesWithReturnMessage'
-    __RESOURCE_WELL_MESSAGES = R.strings.messenger.serviceChannelMessages.resourceWell
-    __itemsCache = dependency.descriptor(IItemsCache)
-    __resourceWell = dependency.descriptor(IResourceWellController)
-
-    @adisp_async
-    @adisp_process
-    def format(self, message, callback):
-        isSynced = yield self._waitForSyncItems()
-        if isSynced:
-            from tutorial.control.game_vars import getVehicleByIntCD
-            isSerial = message.data.get(b'isSerial')
-            balance = self.__itemsCache.items.resourceWell.getBalance()
-            title = backport.text(self.__RESOURCE_WELL_MESSAGES.noVehicles.title())
-            template = self.__TEMPLATE
-            if isSerial:
-                template = self.__RETURN_TEMPLATE
-                vehicle = getVehicleByIntCD(self.__resourceWell.getRewardVehicle()).userName
-                text = backport.text(self.__RESOURCE_WELL_MESSAGES.noSerialVehicles.text(), vehicle=vehicle)
-            elif balance:
-                text = backport.text(self.__RESOURCE_WELL_MESSAGES.noVehiclesWithReturn.text())
-            else:
-                text = backport.text(self.__RESOURCE_WELL_MESSAGES.noVehicles.text())
-            formatted = g_settings.msgTemplates.format(template, ctx={b'title': title, b'text': text})
-            callback([MessageData(formatted, self._getGuiSettings(message, template))])
-        else:
-            callback([MessageData(None, None)])
-        return
-
-
 class Customization2DProgressionChangedFormatter(WaitItemsSyncFormatter):
     __itemsCache = dependency.descriptor(IItemsCache)
     REQUIRED_KEYS = {b'custType', b'id', b'2dProgression'}
@@ -5950,3 +5789,90 @@ class MentoringLicenseFormatter(ClientSysMessageFormatter):
     def __makeMessageData(self, message, priorityLevel):
         formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx={b'header': backport.text(self.__MESSAGES_TEXT.header()), b'text': backport.text(self.__MESSAGES_TEXT.text())})
         return MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE, priorityLevel=priorityLevel))
+
+
+class GFSMFormatter(ClientSysMessageFormatter):
+
+    def format(self, message, *args):
+        data = message.get(b'data')
+        template = message.get(b'template')
+        notificationGuiSettings = message.get(b'notificationGuiSettings', {})
+        formatted = g_settings.msgTemplates.format(template, data={b'linkageData': data})
+        guiSettings = self._getGuiSettings(message, template, priorityLevel=data.get(b'priority'))
+        for key, value in notificationGuiSettings.items():
+            setattr(guiSettings, key, value)
+
+        return [MessageData(formatted, guiSettings)]
+
+
+class ResourceWellOperationFormatter(ServiceChannelFormatter):
+    __TEMPLATE = b'ResourceWellOperationMessage'
+    __RESOURCE_WELL_MESSAGES = R.strings.messenger.serviceChannelMessages.resourceWell
+    __BULLET = b'• '
+    __NONE_NATION_NAME = b'intelligence'
+    __NO_NATION_INDEX = 0
+    __NATIONS_ORDER = {name:idx for idx, name in enumerate(GUI_NATIONS, 1)}
+    __NATIONS_ORDER[__NONE_NATION_NAME] = __NO_NATION_INDEX
+    __CURRENCY_ORDER = {name:idx for idx, name in enumerate(Currency.GUI_ALL + (CURRENCIES_CONSTANTS.FREE_XP,))}
+    __FULL_PROGRESS = 100.0
+
+    def format(self, message, *args):
+        data = message.data
+        if b'type' not in data or b'data' not in data:
+            return [MessageData(None, None)]
+        else:
+            operationType = data[b'type']
+            title = backport.text(self.__RESOURCE_WELL_MESSAGES.dyn(operationType).title())
+            text = backport.text(self.__RESOURCE_WELL_MESSAGES.dyn(operationType).text())
+            resources = self.__formatResources(data[b'data'])
+            if not resources:
+                return [MessageData(None, None)]
+            additionalText = b''
+            progress = data.get(b'progress')
+            if progress is not None and operationType == b'put':
+                additionalText = backport.text(self.__RESOURCE_WELL_MESSAGES.progress(), progress=progress) + backport.text(R.strings.common.common.percent())
+            ctx = {b'resources': self.__BULLET + resources, 
+               b'title': title, 
+               b'text': text, 
+               b'additionalText': additionalText}
+            formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx=ctx)
+            return [
+             MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))]
+
+    def __formatResources(self, resources):
+        resourceStrings = []
+        if b'currency' in resources:
+            resourceStrings.extend(self.__formatCurrencies(resources[b'currency']))
+        if b'blueprints' in resources:
+            resourceStrings.append(self.__formatBlueprints(resources[b'blueprints']))
+        return (backport.text(self.__RESOURCE_WELL_MESSAGES.breakLine()) + self.__BULLET).join(resourceStrings)
+
+    def __formatBlueprints(self, blueprintResources):
+        blueprints = []
+        for fragmentCD, count in blueprintResources.iteritems():
+            fragmentType = getFragmentType(fragmentCD)
+            if fragmentType == BlueprintTypes.INTELLIGENCE_DATA:
+                blueprints.append((self.__NONE_NATION_NAME, count))
+            elif fragmentType == BlueprintTypes.NATIONAL:
+                blueprints.append((nations.MAP.get(getFragmentNationID(fragmentCD), nations.NONE_INDEX), count))
+
+        blueprints.sort(cmp=lambda a, b: cmp(self.__NATIONS_ORDER.get(a), self.__NATIONS_ORDER.get(b)), key=lambda x: x[0])
+        blueprintStrings = []
+        for nation, count in blueprints:
+            nationStr = backport.text(R.strings.blueprints.nations.dyn(nation, self.__RESOURCE_WELL_MESSAGES.intelligence)())
+            blueprintStrings.append(nationStr + self.__formatBlueprintCount(count))
+
+        return backport.text(self.__RESOURCE_WELL_MESSAGES.blueprints()) + (b', ').join(blueprintStrings)
+
+    def __formatCurrencies(self, currencyResources):
+        currencies = sorted(currencyResources.items(), key=lambda x: x[0], cmp=lambda a, b: cmp(self.__CURRENCY_ORDER.get(a), self.__CURRENCY_ORDER.get(b)))
+        return [ backport.text(self.__RESOURCE_WELL_MESSAGES.dyn(name)(), count=self.__formatCurrencyCount(name, count)) for name, count in currencies
+               ]
+
+    def __formatCurrencyCount(self, currencyName, count):
+        style = getStyle(currencyName) if currencyName in Currency.ALL else text_styles.crystal
+        return style(backport.getIntegralFormat(abs(count)))
+
+    def __formatBlueprintCount(self, count):
+        countStr = backport.getIntegralFormat(abs(count))
+        return text_styles.crystal(backport.text(self.__RESOURCE_WELL_MESSAGES.blueprintCount(), count=countStr))

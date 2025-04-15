@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A67_T57_58/_skins/A174_T57_58_Rush_Ep1_3/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A67_T57_58/_skins/A174_T57_58_Rush_Ep1_3/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.684915 -0.559311 -2.720506</min>
+		<max>1.694610 2.082542 7.695352</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

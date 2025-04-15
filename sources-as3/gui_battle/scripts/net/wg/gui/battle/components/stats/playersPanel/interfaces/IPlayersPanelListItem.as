@@ -43,6 +43,8 @@ package net.wg.gui.battle.components.stats.playersPanel.interfaces
       
       function setChatCommand(param1:String, param2:uint) : void;
       
+      function setPriorityChatCommand(param1:String, param2:uint, param3:uint) : void;
+      
       function triggerChatCommand(param1:String) : void;
       
       function setIsCurrentPlayer(param1:Boolean) : void;

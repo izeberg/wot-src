@@ -287,6 +287,13 @@ package net.wg.gui.battle.components.stats.playersPanel.list
             this.disableCommunication.visible = false;
             this.disableCommunication.imageName = BATTLEATLAS.ICON_TOXIC_CHAT_OFF;
          }
+         this.setupBackgrounds();
+         this.bg.mouseEnabled = this.bg.mouseChildren = false;
+         this._originalTFAlpha = this.vehicleTF.alpha;
+      }
+      
+      protected function setupBackgrounds() : void
+      {
          this.bg.imageName = BATTLEATLAS.PLAYERS_PANEL_BG;
          this.normAltBg.visible = false;
          this.normAltBg.imageName = BATTLEATLAS.PLAYERS_PANEL_NORM_ALT_BG;
@@ -298,8 +305,6 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          this.deadBg.imageName = BATTLEATLAS.PLAYERS_PANEL_DEAD_BG;
          this.selfBg.mouseEnabled = this.selfBg.mouseChildren = false;
          this.deadBg.mouseEnabled = this.deadBg.mouseChildren = false;
-         this.bg.mouseEnabled = this.bg.mouseChildren = false;
-         this._originalTFAlpha = this.vehicleTF.alpha;
       }
       
       override protected function draw() : void
@@ -348,11 +353,7 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          }
          if(isInvalid(PlayersPanelInvalidationType.ALIVE))
          {
-            this.bg.visible = this.isAlive && !this._isHpBarsVisible;
-            this.deadBg.visible = !this.isAlive && !this._isHpBarsVisible;
-            this.normAltBg.visible = this.isAlive && this._isHpBarsVisible;
-            this.deadAltBg.visible = !this.isAlive && this._isHpBarsVisible;
-            this.playerNameFullTF.alpha = this.fragsTF.alpha = this.playerNameCutTF.alpha = this.vehicleTF.alpha = !!this.deadAltBg.visible ? Number(DEAD_ALT_TEXT_ALPHA) : Number(this._originalTFAlpha);
+            this.updateBgState();
          }
          if(isInvalid(PlayersPanelInvalidationType.PLAYER_SCHEME))
          {
@@ -375,6 +376,15 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          {
             this.hpBarPlayersPanelListItem.visible = this._isHpBarsVisible && this.isAlive;
          }
+      }
+      
+      protected function updateBgState() : void
+      {
+         this.bg.visible = this.isAlive && !this._isHpBarsVisible;
+         this.deadBg.visible = !this.isAlive && !this._isHpBarsVisible;
+         this.normAltBg.visible = this.isAlive && this._isHpBarsVisible;
+         this.deadAltBg.visible = !this.isAlive && this._isHpBarsVisible;
+         this.playerNameFullTF.alpha = this.fragsTF.alpha = this.playerNameCutTF.alpha = this.vehicleTF.alpha = !!this.deadAltBg.visible ? Number(DEAD_ALT_TEXT_ALPHA) : Number(this._originalTFAlpha);
       }
       
       public function getDynamicSquad() : PlayersPanelDynamicSquad
@@ -420,6 +430,11 @@ package net.wg.gui.battle.components.stats.playersPanel.list
       public function setChatCommand(param1:String, param2:uint) : void
       {
          this.chatCommandState.setActiveChatCommand(param1,param2);
+      }
+      
+      public function setPriorityChatCommand(param1:String, param2:uint, param3:uint) : void
+      {
+         this.chatCommandState.setActivePriorityCommand(param1,param2,param3);
       }
       
       public function setChatCommandVisibility(param1:Boolean) : void
@@ -660,6 +675,16 @@ package net.wg.gui.battle.components.stats.playersPanel.list
       protected function getState() : uint
       {
          return this._state;
+      }
+      
+      protected function get isRightAligned() : Boolean
+      {
+         return this._isRightAligned;
+      }
+      
+      protected function getIsCurrentPlayer() : Boolean
+      {
+         return this._isCurrentPlayer;
       }
       
       protected function updateDogTag() : void

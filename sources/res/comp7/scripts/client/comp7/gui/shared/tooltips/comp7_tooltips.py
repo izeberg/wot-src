@@ -2,6 +2,7 @@ import logging
 from copy import copy
 import typing
 from comp7.gui.shared.tooltips import TOOLTIP_TYPE
+from comp7_common_const import offerRewardGiftToken
 from constants import ROLE_TYPE_TO_LABEL
 from gui import g_htmlTemplates
 from gui.Scaleform.genConsts.BLOCKS_TOOLTIP_TYPES import BLOCKS_TOOLTIP_TYPES
@@ -14,8 +15,10 @@ from gui.shared.tooltips.common import BlocksTooltipData
 from gui.shared.tooltips.module import ModuleTooltipBlockConstructor
 from gui.shared.utils.functions import stripColorTagDescrTags
 from helpers import dependency
+from helpers_common import castNumberToPrettyStr, getPercentFromFloat
 from items import tankmen
 from skeletons.gui.game_control import IComp7Controller
+from skeletons.gui.offers import IOffersDataProvider
 if typing.TYPE_CHECKING:
     from typing import Optional, Tuple
     from comp7.gui.game_control.comp7_controller import Comp7Controller
@@ -149,10 +152,10 @@ def getRoleSkillDescription(equipment, roleName, startLevel, comp7Controller=Non
         if isinstance(v, tuple):
             for level, levelValue in enumerate(v):
                 levelKey = ('_').join((k, str(level + 1)))
-                params[levelKey] = levelValue
+                params[levelKey] = castNumberToPrettyStr(levelValue)
 
         else:
-            params[k] = v
+            params[k] = castNumberToPrettyStr(v)
 
     if startLevel is not None:
         params['startLevel'] = startLevel
@@ -244,6 +247,7 @@ class BattleResultsTrainingRatingPointsTooltip(BlocksTooltipData):
 
 
 class Comp7SelectableRewardTooltip(BlocksTooltipData):
+    __offersProvider = dependency.descriptor(IOffersDataProvider)
 
     def __init__(self, context):
         super(Comp7SelectableRewardTooltip, self).__init__(context, TOOLTIP_TYPE.COMP7_SELECTABLE_REWARD)
@@ -251,22 +255,25 @@ class Comp7SelectableRewardTooltip(BlocksTooltipData):
         self._setMargins(10, 15)
         self._setWidth(370)
 
-    def _packBlocks(self, *args, **kwargs):
-        self._items = super(Comp7SelectableRewardTooltip, self)._packBlocks(*args, **kwargs)
-        self._items.append(self.__packImageBlock())
-        self._items.append(self.__packRewardsBlock())
+    def _packBlocks(self, token, **kwargs):
+        self._items = super(Comp7SelectableRewardTooltip, self)._packBlocks(token, **kwargs)
+        _, _, tokenCategory = token.split(':')
+        giftTokenCategory = offerRewardGiftToken(tokenCategory)
+        self._items.append(self.__packImageBlock(giftTokenCategory))
+        self._items.append(self.__packRewardsBlock(tokenCategory))
         return self._items
 
     @staticmethod
-    def __packImageBlock():
-        return formatters.packImageBlockData(img=backport.image(R.images.comp7.gui.maps.icons.icons.deluxe_gift()), align=BLOCKS_TOOLTIP_TYPES.ALIGN_CENTER)
+    def __packImageBlock(giftTokenCategory):
+        return formatters.packImageBlockData(img=backport.image(R.images.comp7.gui.maps.icons.icons.dyn(giftTokenCategory)()), align=BLOCKS_TOOLTIP_TYPES.ALIGN_CENTER)
 
     @staticmethod
-    def __packRewardsBlock():
-        texts = R.strings.comp7_ext.yearRewards.tooltip.selectableReward
+    def __packRewardsBlock(tokenCategory):
         blocks = [
-         formatters.packTextBlockData(text=text_styles.highTitle(backport.text(texts.title())), padding={'bottom': 10}),
-         formatters.packTextBlockData(text=text_styles.main(backport.text(texts.list())))]
+         formatters.packTextBlockData(text=text_styles.highTitle(backport.text(R.strings.selectable_reward.tabs.items.dyn(tokenCategory)())), padding={'bottom': 10})]
+        selectableRewardList = R.strings.comp7_ext.rewardSelection.tooltip.selectableRewardList.dyn(tokenCategory)()
+        if selectableRewardList:
+            blocks.append(formatters.packTextBlockData(text=text_styles.main(backport.text(selectableRewardList))))
         return formatters.packBuildUpBlockData(blocks, linkage=BLOCKS_TOOLTIP_TYPES.TOOLTIP_BUILDUP_BLOCK_WHITE_BG_LINKAGE)
 
 
@@ -316,7 +323,7 @@ class Comp7ConcentrationTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['shotDispersionFactorsBuff'] = tuple((1.0 - b) * 100 for b in params['shotDispersionFactors'])
+        params['shotDispersionFactorsBuff'] = tuple(getPercentFromFloat(1.0 - b, 1) for b in params['shotDispersionFactors'])
         return params
 
 
@@ -324,8 +331,8 @@ class Comp7BerserkTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['gunReloadTimeBuff'] = tuple((1.0 - b) * 100 for b in params['gunReloadTimeBuff'])
-        params['shotDispersionFactorsBuff'] = tuple((1.0 - b) * 100 for b in params['shotDispersionFactors'])
+        params['gunReloadTimeBuff'] = tuple(getPercentFromFloat(1.0 - b, 1) for b in params['gunReloadTimeBuff'])
+        params['shotDispersionFactorsBuff'] = tuple(getPercentFromFloat(1.0 - b, 1) for b in params['shotDispersionFactors'])
         return params
 
 
@@ -333,7 +340,7 @@ class Comp7FastRechargeTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['gunReloadTimeBuff'] = tuple((1.0 - b) * 100 for b in params['gunReloadTimeBuff'])
+        params['gunReloadTimeBuff'] = tuple(getPercentFromFloat(1.0 - b, 1) for b in params['gunReloadTimeBuff'])
         return params
 
 
@@ -341,9 +348,9 @@ class Comp7JuggernautTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['enginePowerBuff'] = (params['enginePowerFactor'] - 1.0) * 100
-        params['dmgAbsorbBuff'] = tuple((1.0 - b) * 100 for b in params['dmgAbsorb'])
-        params['rammingDamageBuff'] = (params['rammingDamageBonus'] - 1.0) * 100
+        params['enginePowerBuff'] = getPercentFromFloat(params['enginePowerFactor'] - 1.0, 1)
+        params['dmgAbsorbBuff'] = tuple(getPercentFromFloat(1.0 - b, 1) for b in params['dmgAbsorb'])
+        params['rammingDamageBuff'] = getPercentFromFloat(params['rammingDamageBonus'] - 1.0, 1)
         return params
 
 
@@ -351,7 +358,7 @@ class Comp7SureShotTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['shotDispersionFactorsBuff'] = tuple((1.0 - b) * 100 for b in params['shotDispersionFactors'])
+        params['shotDispersionFactorsBuff'] = tuple(getPercentFromFloat(1.0 - b, 1) for b in params['shotDispersionFactors'])
         params['gunReloadBuffDamage'] = tuple(b * 100 for b in params['slvl'])
         params['gunReloadBuffDestroy'] = tuple(b * 100 for b in params['sdlvl'])
         return params
@@ -361,7 +368,7 @@ class Comp7SniperTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['damageFactors'] = tuple(int(round((f - 1) * 100)) for f in params['damageFactors'])
+        params['damageFactors'] = tuple(getPercentFromFloat(b - 1.0, 1) for b in params['damageFactors'])
         return params
 
 
@@ -385,7 +392,7 @@ class Comp7AggressiveDetectionTooltipPreprocessor(TooltipPreprocessor):
 
     @staticmethod
     def processParams(params):
-        params['visionBuff'] = tuple((b - 1.0) * 100 for b in params['visionFactor'])
+        params['visionBuff'] = tuple(getPercentFromFloat(b - 1.0, 1) for b in params['visionFactor'])
         return params
 
 
@@ -394,7 +401,7 @@ class Comp7MarchTooltipPreprocessor(TooltipPreprocessor):
     @staticmethod
     def processParams(params):
         params['enginePowerBuff'] = params['enginePowerBuff'] * 100
-        params['invisibilityFactor'] = (params['invisibilityFactor'] - 1.0) * 100
+        params['invisibilityFactor'] = getPercentFromFloat(params['invisibilityFactor'] - 1.0, 1)
         return params
 
 

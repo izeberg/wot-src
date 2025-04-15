@@ -226,6 +226,10 @@ class IDynamicControllersLocator(object):
         raise NotImplementedError
 
     @property
+    def commendationsMessagesController(self):
+        raise NotImplementedError
+
+    @property
     def shotsResultSound(self):
         raise NotImplementedError
 
@@ -376,6 +380,12 @@ class IClientArenaVisitor(object):
         raise NotImplementedError
 
     def hasPointsOfInterest(self):
+        raise NotImplementedError
+
+    def hasCommendationsMessages(self):
+        raise NotImplementedError
+
+    def hasLiveTags(self):
         raise NotImplementedError
 
     def isEnableExternalRespawn(self):
@@ -545,6 +555,9 @@ class IArenaDataProvider(object):
         raise NotImplementedError
 
     def getReservesModifier(self):
+        raise NotImplementedError
+
+    def getWinStatus(self, team):
         raise NotImplementedError
 
 

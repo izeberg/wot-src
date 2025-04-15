@@ -1554,6 +1554,48 @@
 				<compatibleModels>It35_Felice_RL_3DSt</compatibleModels>
 				<hiddenForUser>true</hiddenForUser>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>0.000005 0.353009 -3.834076</position>
+				<rotation>-0.000442 -1.572488 1.316556</rotation>
+				<scale>
+					1 1 0.999999
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>-1.567179 0.202583 -1.243716</position>
+				<rotation>
+					-0 0 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>
+					1.567 0.202583 -1.24372
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.139847 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 1 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -3662,7 +3704,6 @@
 						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49001</slotId>
-							<compatibleModels>It35_Felice_RL_3DSt</compatibleModels>
 							<rayStart>
 								0 0 1.89
 								<!--BW_String-->
@@ -3675,6 +3716,7 @@
 								0.14 0 0
 								<!--BW_String-->
 							</rayUp>
+							<compatibleModels>It35_Felice_RL_3DSt</compatibleModels>
 							<size>
 								0.6
 								<!--BW_String-->
@@ -4496,6 +4538,24 @@
 						0.21501
 						<!--BW_String-->
 					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>-0.553868 1.135234 0.462641</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>0.000014 1.143005 -1.599497</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

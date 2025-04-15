@@ -292,11 +292,17 @@ msgstr ""
 msgid "AMX_Ob_Am105_short"
 msgstr "AMX 105 AM"
 
+msgid "AM_VRC_7_141"
+msgstr "AM/VRC 7 141"
+
 msgid "AN_VRC-18V"
 msgstr "AN/VRC-18V"
 
 msgid "AN_VRC_18"
 msgstr "AN/VRC 18"
+
+msgid "AN_VRC_18S"
+msgstr "AN/VRC 18S"
 
 msgid "AN_VRC_7"
 msgstr "AN/VRC-7"
@@ -662,6 +668,9 @@ msgstr "Batignolles-Châtillon 155 mle. 56"
 msgid "Chassis_Bat_Chatillon25t_2"
 msgstr "Batignolles-Châtillon 25 t"
 
+msgid "Chassis_Bat_Chatillon25t_2_7x7"
+msgstr "Batignolles-Châtillon 25 t"
+
 msgid "Chassis_Bat_Chatillon25t_2_SH"
 msgstr "Bat.-Châtillon 25 t"
 
@@ -750,7 +759,7 @@ msgid "Chassis_F119_Char_Murat"
 msgstr "Char Murat"
 
 msgid "Chassis_F122_VCS_6x6_TS90"
-msgstr "VCS 6X6 TS 90"
+msgstr "VCS 6x6 TS 90"
 
 msgid "Chassis_F123_ERAC_105_Proto"
 msgstr "ERAC 105 Prototype"
@@ -758,11 +767,23 @@ msgstr "ERAC 105 Prototype"
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 Type 2A"
 
+msgid "Chassis_F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
 msgid "Chassis_F128_SFAC_105"
 msgstr "SFAC 105"
 
 msgid "Chassis_F129_ARL_44_BPXIV"
 msgstr "ARL 44 bis"
+
+msgid "Chassis_F130_Sentinelle"
+msgstr "Sentinelle"
+
+msgid "Chassis_F131_Brennos"
+msgstr "Brennos"
+
+msgid "Chassis_F132_Vercingetorix"
+msgstr "Vercingétorix"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -1401,11 +1422,11 @@ msgid "F119_Char_Murat_short_special"
 msgstr "Magazine loading system, high dynamics and mobility"
 
 msgid "F122_VCS_6x6_TS90"
-msgstr "VCS 6X6 TS 90"
+msgstr "VCS 6x6 TS 90"
 
 msgid "F122_VCS_6x6_TS90_descr"
 msgstr ""
-"The VCS 6X6 TS 90 was developed for export as a recon vehicle that could "
+"The VCS 6x6 TS 90 was developed for export as a recon vehicle that could "
 "engage in combat with tanks. The design was harmonized as much as possible "
 "with the Renault VAB armored personnel carrier. The vehicle was presented to"
 " the press in June 1976; however, it never entered mass production. The "
@@ -1413,14 +1434,14 @@ msgstr ""
 
 msgid "F122_VCS_6x6_TS90_long_special"
 msgstr ""
-"The VCS 6X6 TS 90 is a Tier IX French wheeled light tank that has excellent "
+"The VCS 6x6 TS 90 is a Tier IX French wheeled light tank that has excellent "
 "mobility with high top forward and reverse speeds. The tank lacks dual "
 "driving modes and the need to switch between them. It is armed with a 90 mm "
 "stabilized gun with good aiming time and a 2-shell magazine with an "
 "incredibly fast intra-clip reload of 1.5 seconds."
 
 msgid "F122_VCS_6x6_TS90_short"
-msgstr "VCS 6X6"
+msgstr "VCS 6x6"
 
 msgid "F122_VCS_6x6_TS90_short_special"
 msgstr "Wheeled vehicle, 2-shell magazine"
@@ -1483,6 +1504,30 @@ msgstr "AMX 13 FL 11"
 msgid "F124_AMX_13FL11_short_special"
 msgstr "Good concealment and excellent mobility"
 
+msgid "F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
+msgid "F127_AMX_ELC_901_descr"
+msgstr ""
+"The ELC AMX 901 was the first prototype of a tank being designed under the "
+"Engin Léger de Combat (light combat vehicle) program. Tests done in 1955 "
+"revealed many design flaws. An improved version of the tank—the AMX ELC 90 "
+"bis—was thoroughly reworked and given all necessary alterations. It differed"
+" greatly from the prototype and was essentially a brand-new vehicle."
+
+msgid "F127_AMX_ELC_901_long_special"
+msgstr ""
+"The AMX ELC 901 is a Tier VI French light tank, essentially a variant of the"
+" researchable AMX ELC bis. It shares the same advantages: an extremely low "
+"silhouette, excellent concealment, and great mobility. Equipped with a 90 mm"
+" gun, its turret rotation is limited to 30° due to its small size."
+
+msgid "F127_AMX_ELC_901_short"
+msgstr "AMX ELC 901"
+
+msgid "F127_AMX_ELC_901_short_special"
+msgstr "Big alpha damage, excellent concealment"
+
 msgid "F128_SFAC_105"
 msgstr "SFAC 105"
 
@@ -1538,6 +1583,102 @@ msgstr "CDT"
 
 msgid "F129_ARL_44_BPXIV_short_special"
 msgstr "Powerful gun, good frontal armor"
+
+msgid "F130_Sentinelle"
+msgstr "Sentinelle"
+
+msgid "F130_Sentinelle_descr"
+msgstr ""
+"A joint project of the Italian and French defense ministries that was given "
+"the name Sentinelle. The Char Lourd AP 58 was used as the basis for the "
+"vehicle and the turret and armament were Italian, while the optics and comms"
+" equipment were French. The tank was intended to have a fairly low "
+"silhouette and powerful armament. However, due to ammo standardization under"
+" NATO, the vehicle was no longer needed. The project was terminated before a"
+" prototype was built."
+
+msgid "F130_Sentinelle_long_special"
+msgstr ""
+"The Sentinelle is a Tier IX French heavy tank, but its mobility, size, and "
+"armor resemble those of a medium tank—only the turret front is well-armored."
+" Its main feature is a fast two-shell magazine with good handling and 390 HP"
+" of damage per shot. Its small size, good mobility, and decent gun "
+"depression make it effective from medium tank positions."
+
+msgid "F130_Sentinelle_short"
+msgstr "Sentinelle"
+
+msgid "F130_Sentinelle_short_special"
+msgstr "Fast autoloader, good mobility"
+
+msgid "F131_Brennos"
+msgstr "Brennos"
+
+msgid "F131_Brennos_descr"
+msgstr ""
+"After World War II, the French decided to create a heavy tank taking into "
+"account their accumulated experience. All pre-war and wartime French heavy "
+"tank projects were taken into consideration. A clear German influence could "
+"be sensed in many parts and components, since France had abundant "
+"information on the Panther and the King Tiger. The French even considered "
+"borrowing ideas from the U.S.S.R., attempting to reproduce the famous pike "
+"nose of the IS-3 on the new vehicle. Although the turret was reminiscent of "
+"the King Tiger's, a cast one was planned with additional French know-how in "
+"the form of a commander's cupola with two 20 mm cannons. In the course of "
+"detailed development it became clear that the concept of the tank was "
+"outdated and that, should it enter mass production, it would no longer be "
+"relevant. The project went no further than blueprints."
+
+msgid "F131_Brennos_long_special"
+msgstr ""
+"The Brennos has a comfortable gun for a Tier VIII heavy, with great "
+"stabilization, penetration power, and aiming time. Its powerful engine "
+"enables quick acceleration and short sprints. However, the tank has mediocre"
+" hull armor and large turret weak spots."
+
+msgid "F131_Brennos_short"
+msgstr "Brennos"
+
+msgid "F131_Brennos_short_special"
+msgstr "Great stabilization, good penetration power"
+
+msgid "F132_Vercingetorix"
+msgstr "Vercingétorix"
+
+msgid "F132_Vercingetorix_descr"
+msgstr ""
+"A project developed in the mid-1950s as an alternative to the AMX 50 "
+"program. The hull was designed to be as low as possible, and many of the "
+"technical solutions already contained elements of the future AMX 30. "
+"However, provisional estimates showed that ensuring reliable armor and "
+"installing modern weaponry would take the tank up to 60 tons, which "
+"significantly exceed the requirements of the military clients. The tank was "
+"never built."
+
+msgid "F132_Vercingetorix_long_special"
+msgstr ""
+"The Vercingétorix is a Tier IX French medium tank with armor, armament, and "
+"mobility closer to a heavy. It has reliable turret armor and a 120 mm gun "
+"suitable for close combat. Its key feature is a gas-turbine engine enabling "
+"Rapid mode, turning it into a true medium tank for fast repositioning."
+
+msgid "F132_Vercingetorix_short"
+msgstr "Vercingétorix"
+
+msgid "F132_Vercingetorix_short_special"
+msgstr "Gas-turbine engine, reliable turret armor"
+
+msgid "F18_Bat_Chatillon25t_7x7"
+msgstr "Bat.-Châtillon 25 t 7x7"
+
+msgid "F18_Bat_Chatillon25t_7x7_descr"
+msgstr ""
+"A medium tank with an oscillating turret and a 90 mm gun. Developed by "
+"Batignolles-Châtillon in the mid-1950s. Two prototypes were manufactured. "
+"The vehicle never entered mass production."
+
+msgid "F18_Bat_Chatillon25t_7x7_short"
+msgstr "B-C 25 t 7x7"
 
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -2128,7 +2269,13 @@ msgstr "Fu.Spr.Ger. \"d\""
 msgid "General_Motors_6046_Series_71"
 msgstr "General Motors 6046 Series 71"
 
+msgid "HS_110_2"
+msgstr "HS-110-2"
+
 msgid "Hispano-Suiza_HS110"
+msgstr "Hispano-Suiza HS 110"
+
+msgid "Hispano-Suiza_HS110_7x7"
 msgstr "Hispano-Suiza HS 110"
 
 msgid "Hispano-Suiza_HS110_A"
@@ -2300,6 +2447,9 @@ msgstr "Maybach HL 235 (850)"
 
 msgid "Maybach_HL_295"
 msgstr "Maybach HL 295"
+
+msgid "Maybach_HL_295S"
+msgstr "Maybach HL 295S"
 
 msgid "Maybach_HL_295_003_Somua"
 msgstr "Maybach HL 295.003 \"Somua\""
@@ -2549,6 +2699,9 @@ msgstr "SCR 508"
 msgid "SCR_528"
 msgstr "SCR 528F"
 
+msgid "SCR_528_7x7"
+msgstr "SCR 528F"
+
 msgid "SCR_528_BPXIV"
 msgstr "SCR 528F"
 
@@ -2569,6 +2722,12 @@ msgstr "SCR 610"
 
 msgid "SCR_619"
 msgstr "SCR 619"
+
+msgid "SCR_619B"
+msgstr "SCR 619B"
+
+msgid "SCR_619V"
+msgstr "SCR 619V"
 
 msgid "SCR_619_F155"
 msgstr "SCR 619F"
@@ -2602,6 +2761,9 @@ msgstr "SOFAM 8Gxb"
 
 msgid "SOFAM_G_s_c_4"
 msgstr "SOFAM G s c 4"
+
+msgid "SOFAM_Type_4_GSr"
+msgstr "SOFAM Type 4 GSr"
 
 msgid "S_35CA"
 msgstr "S35 CA"
@@ -2701,6 +2863,9 @@ msgstr "TRVP-13-A1"
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
+msgid "Turmo_III_V"
+msgstr "Turmo III-V"
+
 msgid "Turret_1_105_leFH18B2"
 msgstr "105leFH18B2"
 
@@ -2791,6 +2956,14 @@ msgstr "Batignolles-Châtillon 155 mle. 55"
 msgid "Turret_1_Bat_Chatillon25t"
 msgstr "Batignolles-Châtillon 25 t"
 
+msgid "Turret_1_Bat_Chatillon25t_7x7"
+msgstr "Batignolles-Châtillon 25 t"
+
+msgid "Turret_1_Bat_Chatillon25t_7x7_short"
+msgstr ""
+"Batignolles-Châtillon\n"
+"25 t"
+
 msgid "Turret_1_Bat_Chatillon25t_short"
 msgstr ""
 "Batignolles-Châtillon\n"
@@ -2862,7 +3035,7 @@ msgid "Turret_1_F119_Char_Murat"
 msgstr "Char Murat"
 
 msgid "Turret_1_F122_VCS_6x6_TS90"
-msgstr "VCS 6X6 TS 90"
+msgstr "VCS 6x6 TS 90"
 
 msgid "Turret_1_F123_ERAC_105_Proto"
 msgstr "ERAC 105 Prototype"
@@ -2870,8 +3043,20 @@ msgstr "ERAC 105 Prototype"
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
+msgid "Turret_1_F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
 msgid "Turret_1_F128_SFAC_105"
 msgstr "SFAC 105"
+
+msgid "Turret_1_F130_Sentinelle"
+msgstr "Sentinelle"
+
+msgid "Turret_1_F131_Brennos"
+msgstr "Brennos"
+
+msgid "Turret_1_F132_Vercingetorix"
+msgstr "Vercingétorix"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -3138,8 +3323,14 @@ msgstr "105 mm CN 105"
 msgid "_105mm_CN_105_57"
 msgstr "105 mm mle. 57 (D. 1504)"
 
+msgid "_105mm_CN_105_57_7x7"
+msgstr "105 mm mle. 57 (D. 1504)"
+
 msgid "_105mm_CN_105_57_SH"
 msgstr "105 mm mle. 57 (D. 1504)"
+
+msgid "_105mm_Canon_76S"
+msgstr "105 mm Canon 76S"
 
 msgid "_105mm_D1504"
 msgstr "105 mm D. 1504"
@@ -3222,6 +3413,9 @@ msgstr "OE-105-Mle. 60 D. 1504 (EXP)"
 msgid "_105mm_OE_105_Mle_60_ERAC"
 msgstr "OE-105-Mle. 60 ERAC"
 
+msgid "_105mm_OE_M393S"
+msgstr "105 mm OE M393S"
+
 msgid "_105mm_OE_mle_1920"
 msgstr "OE mle. 1920"
 
@@ -3258,11 +3452,29 @@ msgstr "OFL 105 F1M"
 msgid "_105mm_OFL_105_F1_ERAC"
 msgstr "OFL-105-F1 ERAC"
 
+msgid "_105mm_OFL_M181S"
+msgstr "105 mm OFL M181S"
+
+msgid "_105mm_OFL_M279S"
+msgstr "105 mm OFL M279S"
+
 msgid "_105mm_Prf1940"
 msgstr "Prf. mle. 1940"
 
 msgid "_105mm_PzGr39K"
 msgstr "Pzgr. 39K"
+
+msgid "_105mm_SK_FP_70"
+msgstr "SK FP 70"
+
+msgid "_105mm_SK_L_70"
+msgstr "105 mm SK L/70"
+
+msgid "_105mm_SK_OE_70"
+msgstr "SK OE 70"
+
+msgid "_105mm_SK_P_70"
+msgstr "SK P 70"
 
 msgid "_105mm_Sprg_K"
 msgstr "Sprgr. K"
@@ -3275,6 +3487,9 @@ msgstr "10,5 cm le.F.H. 18 L/28"
 
 msgid "_105mm_mle_F1"
 msgstr "105 mm mle. F1"
+
+msgid "_120mm_DEFA_120_F"
+msgstr "120 mm DEFA 120 F"
 
 msgid "_120mm_D_1203"
 msgstr "120 mm D. 1203"
@@ -3297,6 +3512,9 @@ msgstr "Frt.Prf. mle. 1945 R"
 msgid "_120mm_FrtPrf1951"
 msgstr "Frt.Prf. mle. 1951"
 
+msgid "_120mm_Frt_Prf_mle_1952"
+msgstr "Frt.Prf. mle. 1952"
+
 msgid "_120mm_OE_mle_1930"
 msgstr "OE mle. 1930"
 
@@ -3306,6 +3524,9 @@ msgstr "OE mle. 1930 R"
 msgid "_120mm_OE_mle_1951"
 msgstr "OE mle. 1951"
 
+msgid "_120mm_OE_mle_1952"
+msgstr "OE mle. 1952"
+
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle. 1943"
 
@@ -3314,6 +3535,9 @@ msgstr "Prf. mle. 1943 R"
 
 msgid "_120mm_Prf1951"
 msgstr "Prf. mle. 1951"
+
+msgid "_120mm_Prf_mle_1952"
+msgstr "Prf. mle. 1952"
 
 msgid "_120mm_SA_46"
 msgstr "120 mm SA46"
@@ -3753,6 +3977,9 @@ msgstr "90 mm CN 90 F3"
 msgid "_90mm_D914"
 msgstr "90 mm D. 915"
 
+msgid "_90mm_D_914"
+msgstr "90 mm D. 914"
+
 msgid "_90mm_D_919"
 msgstr "90 mm D. 919"
 
@@ -3789,17 +4016,23 @@ msgstr "HE américain"
 msgid "_90mm_OCC_90"
 msgstr "OCC"
 
+msgid "_90mm_OCC_90_D_914"
+msgstr "OCC-90 D. 914"
+
 msgid "_90mm_OCC_90_SH"
 msgstr "Prf. 90"
 
 msgid "_90mm_OE_90"
 msgstr "OE"
 
+msgid "_90mm_OE_90_D_914"
+msgstr "OE-90 D. 914"
+
 msgid "_90mm_OE_90_D_919"
 msgstr "OE-90 D. 919"
 
-msgid "_90mm_OE_F2"
-msgstr "OE 90 F2"
+msgid "_90mm_OE_F2_VCS"
+msgstr "OE F2 (VCS)"
 
 msgid "_90mm_OE_mle_1924"
 msgstr "OE mle. 1924"
@@ -3813,14 +4046,17 @@ msgstr "OFL"
 msgid "_90mm_OFL_90_DS2_SH"
 msgstr "OLF-90-DS2"
 
+msgid "_90mm_OFL_90_D_914"
+msgstr "OFL-90 D. 914"
+
 msgid "_90mm_OFL_90_D_919"
 msgstr "OFL-90 D. 919"
 
-msgid "_90mm_OFL_F1"
-msgstr "OFL 90 F1"
+msgid "_90mm_OFL_F1_VCS"
+msgstr "OFL F1 (VCS)"
 
-msgid "_90mm_OFL_F3"
-msgstr "OFL 90 F3"
+msgid "_90mm_OFL_F3_VCS"
+msgstr "OFL F3 (VCS)"
 
 msgid "_90mm_POT_90_D_919"
 msgstr "POT-90 D. 919"

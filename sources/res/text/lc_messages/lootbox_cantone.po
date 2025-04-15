@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "common/boxCategory/lowerCase/cantone"
+msgstr "Warm Spring Supply Box"
+
+msgid "common/boxCategory/upperCase/cantone"
+msgstr "WARM SPRING SUPPLY BOX"
+
+msgid "entryPoint/tooltip/description"
+msgstr ""
+"These are special boxes containing new and unique items, including Premium "
+"vehicles, 2D styles, credits, and more."
+
+msgid "entryPoint/tooltip/title"
+msgstr "Warm Spring Supply Boxes and How to Receive Them"
+
+msgid "entryPoint/tooltip/warningTitle"
+msgstr "Warm Spring Supply Boxes Temporarily Unavailable"
+
+msgid "eventName/lowerCase"
+msgstr "Warm Spring Supply Box"
+
+msgid "eventName/upperCase"
+msgstr "WARM SPRING SUPPLY BOX"
+
+msgid "infoPage/footer/description/guaranteed"
+msgstr ""
+"Every %(guaranteed0)s Warm Spring Supply Boxes is guaranteed to contain a "
+"Tier VIII–IX vehicle. If you open them without one dropping such a vehicle, "
+"then a Tier VIII–IX vehicle you do not already own will drop when you open "
+"the %(guaranteed0)sth box (depending on the box type). When it does, the "
+"counter is reset."
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Boxes opened: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Remaining Boxes Opened"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"At the end of the event, we opened all of your boxes and added their "
+"contents to your account."

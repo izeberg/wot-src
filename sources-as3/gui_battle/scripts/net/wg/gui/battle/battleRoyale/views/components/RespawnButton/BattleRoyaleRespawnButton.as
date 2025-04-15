@@ -122,10 +122,6 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
       {
       }
       
-      public function setIdleEnabledGlow(param1:Boolean) : void
-      {
-      }
-      
       public function showGlow(param1:int) : void
       {
          this._glowId = param1;
@@ -163,6 +159,10 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
          }
          this._quantity = param1;
          invalidateData();
+      }
+      
+      public function set noBack(param1:Boolean) : void
+      {
       }
       
       public function set activated(param1:Boolean) : void

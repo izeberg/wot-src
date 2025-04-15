@@ -18,6 +18,9 @@
 				<rarity>common</rarity>
 			</override>
 		</lootBox>
+		<lootboxCompensation>
+			<priority>450</priority>
+		</lootboxCompensation>
 		<vehicles>
 			<locked3DStyle>
 				<priority>500</priority>

@@ -8,16 +8,19 @@
 			<FLAccountPrebattleComponent/>
 			<FLAccountBattleResultComponent/>
 			<FLArenaBattleResultComponent/>
+			<FLRespawnComponent/>
 		</StaticComponents>
 		<DynamicComponents>
-			<FLReservesComponent/>
 			<FLAvatarComponent/>
+			<FLReservesComponent/>
 			<FLAvatarReservesComponent/>
 			<FLBattleUpgradeReserves/>
+			<FLVehicleComponent/>
 			<FLArenaMinefieldComponent/>
 			<FLVehicleRegenerationKitComponent/>
 			<FLStealthRadarComponent/>
 			<FLArenaBattleModifiersComponent/>
+			<FLVehicleRespawnComponent/>
 		</DynamicComponents>
 	</Components>
 	<IsEnabled>True</IsEnabled>

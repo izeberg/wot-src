@@ -1,7 +1,7 @@
 package net.wg.gui.battle.views.gameMessagesPanel.components
 {
+   import net.wg.gui.battle.interfaces.IGameMessageVO;
    import net.wg.gui.battle.views.gameMessagesPanel.data.EndGameMessageVO;
-   import net.wg.gui.battle.views.gameMessagesPanel.data.GameMessageVO;
    
    public class EndGameMessage extends MessageContainerBase
    {
@@ -33,7 +33,7 @@ package net.wg.gui.battle.views.gameMessagesPanel.components
          return this.textfields.height;
       }
       
-      override public function setData(param1:GameMessageVO) : void
+      override public function setData(param1:IGameMessageVO) : void
       {
          messageData = param1;
          var _loc2_:EndGameMessageVO = param1.msgData as EndGameMessageVO;

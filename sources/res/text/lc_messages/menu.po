@@ -992,6 +992,12 @@ msgstr "Cancel purchase"
 msgid "contextMenu/clanInfo"
 msgstr "Player's clan profile"
 
+msgid "contextMenu/commendBack"
+msgstr "Commend back!"
+
+msgid "contextMenu/commendFirst"
+msgstr "Commend!"
+
 msgid "contextMenu/compare"
 msgstr "Add to Comparison"
 
@@ -1127,11 +1133,17 @@ msgstr "Characteristics"
 msgid "contextMenu/moneyTransfer"
 msgstr "Transfer gold"
 
+msgid "contextMenu/mutualCommendation"
+msgstr "Commended both ways"
+
 msgid "contextMenu/nationChange"
 msgstr "Change Nation"
 
 msgid "contextMenu/notFairPlay"
 msgstr "Unsportsmanlike conduct"
+
+msgid "contextMenu/outgoingCommendation"
+msgstr "Commended"
 
 msgid "contextMenu/personalCase/statsBlockTitle"
 msgstr "IN PREMIUM VEHICLE"
@@ -3919,9 +3931,6 @@ msgstr " "
 
 msgid "loading/battleTypes/desc/9"
 msgstr " "
-
-msgid "loading/battleTypes/subTitle/23"
-msgstr "Shamrock Showdown"
 
 msgid "loading/helpTip"
 msgstr "For help in battle, press F1."

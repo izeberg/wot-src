@@ -134,40 +134,40 @@ msgid "Chassis_J31_Type_5_KaRi"
 msgstr "Type 5 Ka-Ri"
 
 msgid "Chassis_J32_Chi_To_SPG"
-msgstr "Chi-To SP production"
+msgstr "Chi-To SP"
 
 msgid "Chassis_J32_Chi_To_SPG_2"
-msgstr "Chi-To SP improved"
+msgstr "Chi-To SP Kai"
 
 msgid "Chassis_J33_Ho_Ri_2"
-msgstr "Type 5 Ho-Ri Plan 1"
+msgstr "Ho-Ri 2"
 
 msgid "Chassis_J33_Ho_Ri_2_2"
-msgstr "Type 5 Ho-Ri Plan 2"
+msgstr "Ho-Ri 2 Kai"
 
 msgid "Chassis_J34_Ho_Ri_1"
-msgstr "Type 5 Ho-Ri Plan 1"
+msgstr "Ho-Ri 1"
 
 msgid "Chassis_J34_Ho_Ri_1_2"
-msgstr "Type 5 Ho-Ri Plan 2"
+msgstr "Ho-Ri 1 Kai"
 
 msgid "Chassis_J35_Ho_Ri_3"
-msgstr "Type Ho-Ri 3"
+msgstr "Ho-Ri 3"
 
 msgid "Chassis_J36_Type_63_HT"
 msgstr "Type 63"
 
 msgid "Chassis_J37_Type_3_Ho_Ni_III"
-msgstr "Type Hara 1"
+msgstr "Type 3 Ho-Ni III"
 
 msgid "Chassis_J37_Type_3_Ho_Ni_III_2"
-msgstr "Type Hara 2"
+msgstr "Type 3 Ho-Ni III Kai"
 
 msgid "Chassis_J38_Type_95_Ji_Ro"
 msgstr "Type 95 Ji-Ro"
 
 msgid "Chassis_J38_Type_95_Ji_Ro_2"
-msgstr "Type 95 Ji-Ro 2"
+msgstr "Type 95 Ji-Ro Kai"
 
 msgid "Chassis_J39_Type_57"
 msgstr "SHA-1"
@@ -176,6 +176,9 @@ msgid "Chassis_J39_Type_57_2"
 msgstr "SHA-1-2"
 
 msgid "Chassis_J40_Type_71"
+msgstr "SHB-2"
+
+msgid "Chassis_J40_Type_71_7x7"
 msgstr "SHB-2"
 
 msgid "Chassis_J41_Type_68"
@@ -758,6 +761,21 @@ msgstr "Type 57"
 msgid "J40_Type_71"
 msgstr "Type 71"
 
+msgid "J40_Type_71_7x7"
+msgstr "Type 71 7x7"
+
+msgid "J40_Type_71_7x7_descr"
+msgstr ""
+"A battle tank project of the late 1960s. The vehicle was planned to be a "
+"scaled-up counterpart of the STB-1. It was developed with hydropneumatic "
+"suspension in mind that would allow to change ground clearance and increase "
+"the gun's elevation and depression angles. This was especially important in "
+"urban environments. The tank was also supposed to receive improved armor and"
+" a large caliber gun."
+
+msgid "J40_Type_71_7x7_short"
+msgstr "Type 71 7x7"
+
 msgid "J40_Type_71_descr"
 msgstr ""
 "A battle tank project of the late 1960s. The vehicle was planned to be a "
@@ -954,6 +972,9 @@ msgstr "Mitsubishi 12ZT"
 msgid "Mitsubishi_MT_1100"
 msgstr "Mitsubishi MT 1100"
 
+msgid "Mitsubishi_MT_1100_7x7"
+msgstr "Mitsubishi MT 1100"
+
 msgid "NC27"
 msgstr "Renault Otsu"
 
@@ -1128,18 +1149,24 @@ msgid "Turret_1_J34_Ho_Ri_1"
 msgstr "Ho-Ri 1"
 
 msgid "Turret_1_J35_Ho_Ri_3"
-msgstr "Type Ho-Ri 3"
+msgstr "Ho-Ri 3"
 
 msgid "Turret_1_J36_Type_63_HT"
 msgstr "Type 63"
 
 msgid "Turret_1_J37_Type_3_Ho_Ni_III"
-msgstr "Ho-Ni III"
+msgstr "Type 3 Ho-Ni III"
+
+msgid "Turret_1_J38_Type_95_Ji_Ro"
+msgstr "Type 95 Ji-Ro"
 
 msgid "Turret_1_J39_Type_57"
 msgstr "SHA-1"
 
 msgid "Turret_1_J40_Type_71"
+msgstr "SHB-2"
+
+msgid "Turret_1_J40_Type_71_7x7"
 msgstr "SHB-2"
 
 msgid "Turret_1_J41_Type_68"
@@ -1235,9 +1262,6 @@ msgstr "STA-3"
 msgid "Turret_2_Type_61"
 msgstr "Type 61"
 
-msgid "Turret_J38_Type_95_Ji_Ro"
-msgstr "Type 95 Ji-Ro"
-
 msgid "Type_61"
 msgstr "Type 61"
 
@@ -1297,6 +1321,12 @@ msgstr "Type 92 AP"
 msgid "_105mm_AP_Type_95"
 msgstr "APHE Type 95A"
 
+msgid "_105mm_AP_Type_95_SP"
+msgstr "APHE Type 95 SP"
+
+msgid "_105mm_AP_Type_95_SP_Toku_Kou"
+msgstr "APHE Type 95 SP Toku Kou"
+
 msgid "_105mm_AP_Type_95_Toku_Kou"
 msgstr "APHE Type 95A Toku Kou"
 
@@ -1304,10 +1334,13 @@ msgid "_105mm_Cannon_Type92"
 msgstr "10 cm Cannon Type 92"
 
 msgid "_105mm_Cannon_Type92_A"
-msgstr "10 cm cannon Type 92"
+msgstr "10 cm Cannon Type 92A"
 
 msgid "_105mm_Cannon_Type_14"
 msgstr "10 cm Cannon Type 14"
+
+msgid "_105mm_Cannon_Type_92_SP"
+msgstr "10 cm Cannon Type 92 SP"
 
 msgid "_105mm_Experimental_Tank_Gun"
 msgstr "10 cm Experimental Tank Gun"
@@ -1359,6 +1392,9 @@ msgstr "HE Type 92A"
 
 msgid "_105mm_HE_Type_92B"
 msgstr "Type 92 HE"
+
+msgid "_105mm_HE_Type_92_SP"
+msgstr "HE Type 92 SP"
 
 msgid "_105mm_JSW_105_60"
 msgstr "105 mm JSW 105/60"
@@ -1480,6 +1516,9 @@ msgstr "120 mm Gun Type 60"
 msgid "_120mm_Type_71_Gun"
 msgstr "120 mm Gun Type 71"
 
+msgid "_120mm_Type_71_Gun_7x7"
+msgstr "120 mm Gun Type 71"
+
 msgid "_127mm_50_3rd_Year_Type"
 msgstr "12.7 cm/50 3rd Year Type"
 
@@ -1553,7 +1592,7 @@ msgid "_149mm_Gun_Type_96"
 msgstr "14.9 cm Gun Type 96"
 
 msgid "_149mm_Gun_Type_97"
-msgstr "14.9 cm Type 97 Cannon"
+msgstr "14.9 cm Gun Type 96 Kai"
 
 msgid "_149mm_HE_Type_1"
 msgstr "HE Common Type 96"

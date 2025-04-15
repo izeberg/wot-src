@@ -13,11 +13,17 @@ msgstr ""
 msgid "medal/accrued"
 msgstr "Received:"
 
+msgid "medal/badgeAndMedal"
+msgstr "%(badge)s, %(medal)s."
+
+msgid "medal/badgeName"
+msgstr "%(badge_name)s badge"
+
 msgid "medal/date"
 msgstr "Date: %(at)s"
 
 msgid "medal/medalName"
-msgstr "Medal: %(medal_name)s"
+msgstr "%(medal_name)s medal"
 
 msgid "medal/title"
 msgstr "Receipt"
@@ -51,6 +57,9 @@ msgstr "Days of WoT Premium Account:"
 
 msgid "result/reward"
 msgstr "Missions completed! Reward(s) added:"
+
+msgid "result/slots"
+msgstr "Garage slots"
 
 msgid "result/vehicle"
 msgstr "Vehicle"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Brennos/crash/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F131_Brennos/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.858544 -1.081188 -4.537625</min>
+		<max>1.913351 0.764544 4.466328</max>
+	</visibilityBox>
+</root>

@@ -43,42 +43,6 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>d1_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d2_1_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d2_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d3_1_2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
 					<identifier>d3_2</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -213,7 +177,7 @@
 					<collisionFlags>131</collisionFlags>
 					<materialKind>111</materialKind>
 				</material>
-				<groupOrigin>-0.243082 0.244307 0.015589</groupOrigin>
+				<groupOrigin>0.007841 0.244307 0.035102</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -483,7 +447,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.459314 0.372900 0.031890</groupOrigin>
+				<groupOrigin>0.164434 0.445861 0.220274</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				6
@@ -553,7 +517,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.270318 0.312367 0.013474</groupOrigin>
+				<groupOrigin>-0.005030 0.321071 0.122735</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				7
@@ -623,7 +587,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.275712 0.309494 0.009713</groupOrigin>
+				<groupOrigin>0.111143 0.309494 -0.065475</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				8
@@ -1248,10 +1212,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.366729 -0.780611 -4.061002</min>
-		<max>4.054836 6.402062 4.124782</max>
+		<min>-3.371362 -0.780611 -3.412651</min>
+		<max>4.054836 6.402062 3.482855</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1117652</geometrySize>
+	<geometrySize>1079558</geometrySize>
 	<minUVDensity>0.001576</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.485428 -0.888188 -2.547225</min>
+		<max>1.494210 0.672857 2.456010</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

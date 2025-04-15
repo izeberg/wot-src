@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/american/A34_M24_Chaffee/_skins/A34_M24_Chaffee_SMV_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.550324 -0.547854 -2.549337</min>
+		<max>1.602857 0.725454 2.451559</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

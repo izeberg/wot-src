@@ -1,7 +1,8 @@
-import BattleModifiersPersonalityCommon
+import BattleModifiersPersonalityCommon, battle_modifiers
 
 def preInit():
     BattleModifiersPersonalityCommon.preInit()
+    battle_modifiers.preInit()
 
 
 def init():

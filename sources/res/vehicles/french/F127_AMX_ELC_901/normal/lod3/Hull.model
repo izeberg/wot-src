@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F127_AMX_ELC_901/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/french/F127_AMX_ELC_901/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.136573 -0.472675 -2.068320</min>
+		<max>1.136463 0.369069 1.882268</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -11,7 +11,7 @@
 	<postProgressionTree>role_ATSPG_universal</postProgressionTree>
 	<speedLimits>
 		<forward>40</forward>
-		<backward>12</backward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2867,14 +2867,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<JagdPzIV_Ausf_1940>
-			<userString>#germany_vehicles:JagdPzIV_Ausf_1940</userString>
+		<Chassis_G17_JagdPzIV>
+			<userString>#germany_vehicles:Chassis_G17_JagdPzIV</userString>
 			<tags/>
 			<level>5</level>
 			<price>9610</price>
 			<unlocks>
 				<chassis>
-					JagdPzIV_Ausf_1943
+					Chassis_G17_JagdPzIV_2
 					<cost>4110</cost>
 				</chassis>
 			</unlocks>
@@ -2883,14 +2883,14 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7800</weight>
-			<maxLoad>24200</maxLoad>
+			<maxLoad>24500</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>32</rotationSpeed>
+			<rotationSpeed>48</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -2905,12 +2905,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>110</maxHealth>
-			<maxRegenHealth>85</maxRegenHealth>
-			<repairCost>
-				0.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>115</maxHealth>
+			<maxRegenHealth>86</maxRegenHealth>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/german/G17_JagdPzIV/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/german/G17_JagdPzIV/crash/lod0/Chassis.model</destroyed>
@@ -4969,12 +4966,12 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.72463751
 				<!--BW_String-->
 			</repairTime>
-		</JagdPzIV_Ausf_1940>
-		<JagdPzIV_Ausf_1943>
-			<userString>#germany_vehicles:JagdPzIV_Ausf_1943</userString>
+		</Chassis_G17_JagdPzIV>
+		<Chassis_G17_JagdPzIV_2>
+			<userString>#germany_vehicles:Chassis_G17_JagdPzIV_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>12860</price>
@@ -4990,7 +4987,7 @@
 			</terrainResistance>
 			<brakeForce>36000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>35</rotationSpeed>
+			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -5005,12 +5002,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>120</maxHealth>
-			<maxRegenHealth>90</maxRegenHealth>
-			<repairCost>
-				0.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>145</maxHealth>
+			<maxRegenHealth>109</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/german/G17_JagdPzIV/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/german/G17_JagdPzIV/crash/lod0/Chassis.model</destroyed>
@@ -7069,14 +7063,14 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.62068987
 				<!--BW_String-->
 			</repairTime>
-		</JagdPzIV_Ausf_1943>
+		</Chassis_G17_JagdPzIV_2>
 	</chassis>
 	<turrets0>
-		<JagdPzIV_0>
-			<userString>#germany_vehicles:JagdPzIV_0</userString>
+		<Turret_1_G17_JagdPzIV>
+			<userString>#germany_vehicles:Turret_1_G17_JagdPzIV</userString>
 			<tags>cannotDetach</tags>
 			<level>6</level>
 			<price>100</price>
@@ -7105,149 +7099,16 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_PaK_39_L48>
+				<_7_5_cm_Pak_42_L_70_IV>
 					shared
 					<unlocks>
 						<gun>
-							_75mm_StuK42_L70
-							<cost>4600</cost>
-						</gun>
-					</unlocks>
-					<reloadTime>
-						3.2
-						<!--BW_String-->
-					</reloadTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<armor>
-						<armor_1>
-							80
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>20</gun>
-					</armor>
-					<maxAmmo>120</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -15 1 -15</minPitch>
-						<maxPitch>0 8 1 8</maxPitch>
-					</pitchLimits>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<turretYawLimits>-12 15</turretYawLimits>
-					<models>
-						<undamaged>vehicles/german/G17_JagdPzIV/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/german/G17_JagdPzIV/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/german/G17_JagdPzIV/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/german/G17_JagdPzIV/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/german/G17_JagdPzIV/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium_mb</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000013 -0.003731 1.72486
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.271151 0.652134
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								-0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000013 -0.003731 1.72486
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0 -0.007462 2.17901
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0 -0.007462 2.46901
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.064 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.29
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.445 0.445 0.07 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							101.738 103.976
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_PaK_39_L48>
-				<_75mm_StuK42_L70>
-					shared
-					<unlocks>
-						<gun>
-							_88mm_PaK_36_L56
+							_8_8_cm_Pak_L_56_IV
 							<cost>9500</cost>
 						</gun>
-						<vehicle>
-							G18_JagdPanther
-							<cost>60500</cost>
-						</vehicle>
 					</unlocks>
 					<reloadTime>
-						3.8
+						4.1
 						<!--BW_String-->
 					</reloadTime>
 					<armor>
@@ -7370,9 +7231,15 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_StuK42_L70>
-				<_88mm_PaK_36_L56>
+				</_7_5_cm_Pak_42_L_70_IV>
+				<_8_8_cm_Pak_L_56_IV>
 					shared
+					<unlocks>
+						<vehicle>
+							G18_JagdPanther
+							<cost>60500</cost>
+						</vehicle>
+					</unlocks>
 					<reloadTime>
 						5.4
 						<!--BW_String-->
@@ -7497,7 +7364,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_88mm_PaK_36_L56>
+				</_8_8_cm_Pak_L_56_IV>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G17_JagdPzIV/normal/lod0/turret_01.model</undamaged>
@@ -7520,71 +7387,40 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</JagdPzIV_0>
+		</Turret_1_G17_JagdPzIV>
 	</turrets0>
 	<engines>
-		<Maybach_HL_108TR>
+		<Maybach_HL_120_TRM_IV_1>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_120_TR
+					Maybach_HL_120_TRM_IV_2
 					<cost>710</cost>
 				</engine>
 			</unlocks>
-		</Maybach_HL_108TR>
-		<Maybach_HL_120_TR>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_120_TRM
-					<cost>1500</cost>
-				</engine>
-			</unlocks>
-		</Maybach_HL_120_TR>
-		<Maybach_HL_120_TRM>shared</Maybach_HL_120_TRM>
+		</Maybach_HL_120_TRM_IV_1>
+		<Maybach_HL_120_TRM_IV_2>shared</Maybach_HL_120_TRM_IV_2>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
 		<FuG7>shared</FuG7>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_108TR>
-					<smplEnginePower>
-						338.33
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_120_TRM_IV_1>
+					<smplEnginePower>420</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</Maybach_HL_108TR>
-				<Maybach_HL_120_TR>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
+				</Maybach_HL_120_TRM_IV_1>
+				<Maybach_HL_120_TRM_IV_2>
+					<smplEnginePower>480</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</Maybach_HL_120_TR>
-				<Maybach_HL_120_TRM>
-					<smplEnginePower>
-						465.2037
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</Maybach_HL_120_TRM>
+				</Maybach_HL_120_TRM_IV_2>
 			</engines>
 			<chassis>
-				<JagdPzIV_Ausf_1940>
+				<Chassis_G17_JagdPzIV>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7605,8 +7441,9 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</JagdPzIV_Ausf_1940>
-				<JagdPzIV_Ausf_1943>
+					<axleCount>5</axleCount>
+				</Chassis_G17_JagdPzIV>
+				<Chassis_G17_JagdPzIV_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7627,7 +7464,8 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</JagdPzIV_Ausf_1943>
+					<axleCount>5</axleCount>
+				</Chassis_G17_JagdPzIV_2>
 			</chassis>
 		</detailed>
 	</physics>

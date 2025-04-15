@@ -83,6 +83,8 @@ package net.wg.gui.battle.windows
       
       public var togglePlayerPanelModes:TextField = null;
       
+      public var togglePlayerPanelModesExt:TextField = null;
+      
       public var showExPlayerInfo:TextField = null;
       
       public var hideInterface:TextField = null;
@@ -311,6 +313,7 @@ package net.wg.gui.battle.windows
          this.toggleSniperMode = null;
          this.toggleSniperModeExt = null;
          this.togglePlayerPanelModes = null;
+         this.togglePlayerPanelModesExt = null;
          this.showExPlayerInfo = null;
          this.hideInterface = null;
          this.showCursor = null;
@@ -426,6 +429,7 @@ package net.wg.gui.battle.windows
          this.toggleSniperMode.text = INGAME_HELP.BATTLECONTROLS_TOGGLESNIPERMODE;
          this.toggleSniperModeExt.text = INGAME_HELP.BATTLECONTROLS_TOGGLESNIPERMODE_EXT;
          this.togglePlayerPanelModes.text = INGAME_HELP.BATTLECONTROLS_TOGGLEPLAYERPANELMODES;
+         this.togglePlayerPanelModesExt.text = INGAME_HELP.BATTLECONTROLS_TOGGLEPLAYERPANELMODES_EXT;
          this.showExPlayerInfo.text = INGAME_HELP.BATTLECONTROLS_SHOWEXPLAYERINFO;
          this.hideInterface.text = INGAME_HELP.BATTLECONTROLS_HIDEINTERFACE;
          this.showCursor.text = INGAME_HELP.BATTLECONTROLS_SHOWCURSOR;

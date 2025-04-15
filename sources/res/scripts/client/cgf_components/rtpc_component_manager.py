@@ -29,6 +29,10 @@ class RTPCComponentManager(CGF.ComponentManager):
         self.__eventHandlers = {}
         self.__rtpcGameObjectToVehicleGameObject = {}
 
+    def deactivate(self):
+        self.__eventHandlers.clear()
+        self.__rtpcGameObjectToVehicleGameObject.clear()
+
     def getVehicleComponentForRTPC(self, rtpcGameObject):
         vehicleGameObject = self.__rtpcGameObjectToVehicleGameObject.get(rtpcGameObject.id)
         if vehicleGameObject is not None:

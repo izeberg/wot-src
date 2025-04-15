@@ -1,4 +1,5 @@
 import typing
+from commendations_schema import commendationsConfigSchema
 from player_satisfaction_schema import playerSatisfactionSchema
 from schema_manager import getSchemaManager
 import hints_common.prebattle.newbie.schemas, hints_common.prebattle.schemas, hints_common.battle.schemas.newbie
@@ -15,3 +16,4 @@ def _registerSchemas(schemaManager):
     schemaManager.registerClientServerSchema(hints_common.prebattle.schemas.configSchema)
     schemaManager.registerClientServerSchema(hints_common.battle.schemas.newbie.configSchema)
     schemaManager.registerClientServerSchema(playerSatisfactionSchema)
+    schemaManager.registerClientServerSchema(commendationsConfigSchema)

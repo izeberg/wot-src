@@ -48,6 +48,30 @@ msgstr "Old Trunk"
 msgid "attachment/antique_oddities/Cus_30_Mystic_Telescope"
 msgstr "Enchanted Telescope"
 
+msgid "attachment/beyond_pandora"
+msgstr "Beyond Pandora"
+
+msgid "attachment/beyond_pandora/Cus_36_FGM_Machinegun"
+msgstr "Heavy Machine Gun"
+
+msgid "attachment/beyond_pandora/Cus_36_FGM_Machinegun/description"
+msgstr ""
+"You can never have too many machine guns. Even if they can’t pierce the "
+"enemy vehicle's armor, sustained fire will make those inside think twice. "
+"Plus, a heated barrel is perfect for drying laundry."
+
+msgid "attachment/beyond_pandora/Cus_37_FGM_Projector"
+msgstr "Grid Searchlight"
+
+msgid "attachment/beyond_pandora/Cus_38_FGM_Luggage"
+msgstr "Anomaly Liquidator Kit"
+
+msgid "attachment/beyond_pandora/Cus_39_FGM_Filterunit"
+msgstr "Filtration Unit"
+
+msgid "attachment/beyond_pandora/Cus_40_FGM_Winch"
+msgstr "Winch"
+
 msgid "attachment/dragon_vanguard"
 msgstr "Dragon Vanguard"
 
@@ -783,6 +807,12 @@ msgstr "?empty?"
 
 msgid "camouflage/Boosteroid_02/label"
 msgstr "Here Be Dragons"
+
+msgid "camouflage/Boosteroid_03/description"
+msgstr "?empty?"
+
+msgid "camouflage/Boosteroid_03/label"
+msgstr "Blend In"
 
 msgid "camouflage/Borduit/description"
 msgstr ""
@@ -3583,6 +3613,12 @@ msgstr ""
 msgid "camouflage/czech/bicolor/grassy_green/label"
 msgstr "Two-tone plain"
 
+msgid "camouflage/d_day/description"
+msgstr "?empty?"
+
+msgid "camouflage/d_day/label"
+msgstr "Turning the Tide"
+
 msgid "camouflage/day_of_the_dead/description"
 msgstr "?empty?"
 
@@ -3745,6 +3781,12 @@ msgstr "Revolutionary"
 
 msgid "camouflage/event/name"
 msgstr "WG Fest"
+
+msgid "camouflage/fall_tanks/description"
+msgstr "?empty?"
+
+msgid "camouflage/fall_tanks/label"
+msgstr "Neon Demon"
 
 msgid "camouflage/feer/label"
 msgstr "Fireworks"
@@ -5586,6 +5628,12 @@ msgstr "Winter camouflage of a permanent style."
 
 msgid "camouflage/prem_camouflage_winter/label"
 msgstr "Black Widow winter"
+
+msgid "camouflage/pub_liveops/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_liveops/label"
+msgstr "Great White"
 
 msgid "camouflage/quicky_baby/description"
 msgstr "?empty?"
@@ -8352,7 +8400,7 @@ msgid "customization/tooltip/description/nonHistoric/title"
 msgstr "Non-Historical Elements on Vehicles"
 
 msgid "customization/tooltip/getattachment"
-msgstr "Earn 3D attachments in assorted events or purchase them in the Store."
+msgstr "Earn 3D attachments in in-game events or purchase them in the Store."
 
 msgid "customization/tooltip/inventory/available"
 msgstr "In Depot"
@@ -8388,6 +8436,11 @@ msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "Slot unavailable: remove any applied decal from another slot."
 
 msgid "customization/tooltip/quests/blitzkrieg_1026/condition"
+msgstr ""
+"Win an Onslaught battle by destroying all enemy vehicles in under 150 "
+"seconds."
+
+msgid "customization/tooltip/quests/blitzkrieg_1044/condition"
 msgstr ""
 "Win an Onslaught battle by destroying all enemy vehicles in under 150 "
 "seconds."
@@ -8600,6 +8653,30 @@ msgid "customization/tooltip/quests/comp7_4_2_ranks_65/condition"
 msgstr ""
 "Achieve the Iron rank in Season of the Crimson Manticore in Onslaught mode."
 
+msgid "customization/tooltip/quests/comp7_4_3_ranks_11/condition"
+msgstr ""
+"Achieve the Legend rank in Season of the Jade Manticore in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_21/condition"
+msgstr ""
+"Achieve the Champion rank in Season of the Jade Manticore in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_35/condition"
+msgstr ""
+"Achieve the Gold rank in Season of the Jade Manticore in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_45/condition"
+msgstr ""
+"Achieve the Silver rank in Season of the Jade Manticore in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_55/condition"
+msgstr ""
+"Achieve the Bronze rank in Season of the Jade Manticore in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_4_3_ranks_65/condition"
+msgstr ""
+"Achieve the Iron rank in Season of the Jade Manticore in Onslaught mode."
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "Achieve the Gold rank in Season of the Griffin in Onslaught mode."
 
@@ -8625,6 +8702,15 @@ msgid "customization/tooltip/quests/crushing_damage_1026_2/condition"
 msgstr "Cause 225,000 HP of damage in Onslaught."
 
 msgid "customization/tooltip/quests/crushing_damage_1026_3/condition"
+msgstr "Cause 550,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_1044_1/condition"
+msgstr "Cause 25,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_1044_2/condition"
+msgstr "Cause 225,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/crushing_damage_1044_3/condition"
 msgstr "Cause 550,000 HP of damage in Onslaught."
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
@@ -8698,6 +8784,21 @@ msgid ""
 msgstr ""
 "Fight 50 Onslaught battles in a vehicle with the Hybrid Beast (Crimson) "
 "style."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_1/condition"
+msgstr ""
+"Fight 10 Onslaught battles in a vehicle with the Hybrid Beast (Jade) style."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_2/condition"
+msgstr ""
+"Fight 25 Onslaught battles in a vehicle with the Hybrid Beast (Jade) style."
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1044_3/condition"
+msgstr ""
+"Fight 50 Onslaught battles in a vehicle with the Hybrid Beast (Jade) style."
 
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr "Fight 10 Onslaught battles in a vehicle with the Wing and Claw style."
@@ -8789,6 +8890,15 @@ msgstr "Destroy 150 enemy vehicles in Onslaught."
 msgid "customization/tooltip/quests/destroyed_vehicles_1026_3/condition"
 msgstr "Destroy 350 enemy vehicles in Onslaught."
 
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_1/condition"
+msgstr "Destroy 15 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_2/condition"
+msgstr "Destroy 150 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1044_3/condition"
+msgstr "Destroy 350 enemy vehicles in Onslaught."
+
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
 msgstr "Destroy 15 enemy vehicles in Onslaught."
 
@@ -8846,6 +8956,9 @@ msgstr "Destroy 350 enemy vehicles in Onslaught."
 msgid "customization/tooltip/quests/double_threat_1026/condition"
 msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 
+msgid "customization/tooltip/quests/double_threat_1044/condition"
+msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
+
 msgid "customization/tooltip/quests/double_threat_836/condition"
 msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 
@@ -8871,6 +8984,15 @@ msgid "customization/tooltip/quests/going_to_circle_1026_2/condition"
 msgstr "Earn a total of 500 base capture/defense points in Onslaught."
 
 msgid "customization/tooltip/quests/going_to_circle_1026_3/condition"
+msgstr "Earn a total of 750 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_1044_1/condition"
+msgstr "Earn a total of 250 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_1044_2/condition"
+msgstr "Earn a total of 500 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/going_to_circle_1044_3/condition"
 msgstr "Earn a total of 750 base capture/defense points in Onslaught."
 
 msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
@@ -8936,6 +9058,9 @@ msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 msgid "customization/tooltip/quests/last_man_1026/condition"
 msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
+msgid "customization/tooltip/quests/last_man_1044/condition"
+msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
+
 msgid "customization/tooltip/quests/last_man_836/condition"
 msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
@@ -8985,6 +9110,11 @@ msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
 "times."
 
+msgid "customization/tooltip/quests/prestige_7v7_1044/condition"
+msgstr ""
+"Be the top player on your team by Prestige Points earned in Onslaught 50 "
+"times."
+
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
 msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
@@ -9012,6 +9142,9 @@ msgid "customization/tooltip/quests/progressBig"
 msgstr "Completed: "
 
 msgid "customization/tooltip/quests/rampage_1026/condition"
+msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
+
+msgid "customization/tooltip/quests/rampage_1044/condition"
 msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 
 msgid "customization/tooltip/quests/rampage_836/condition"
@@ -9074,6 +9207,9 @@ msgstr "Unavailable"
 msgid "customization/tooltip/quests/sudden_strike_1026/condition"
 msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 
+msgid "customization/tooltip/quests/sudden_strike_1044/condition"
+msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
+
 msgid "customization/tooltip/quests/sudden_strike_836/condition"
 msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 
@@ -9103,6 +9239,21 @@ msgstr ""
 "includes captures by both the player and their teammates."
 
 msgid "customization/tooltip/quests/tactical_advantage_1026_3/condition"
+msgstr ""
+"Capture a total of 375 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_1/condition"
+msgstr ""
+"Capture a total of 15 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_2/condition"
+msgstr ""
+"Capture a total of 150 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1044_3/condition"
 msgstr ""
 "Capture a total of 375 Points of Interest as a team in Onslaught. This "
 "includes captures by both the player and their teammates."
@@ -9211,6 +9362,9 @@ msgstr ""
 "seconds."
 
 msgid "customization/tooltip/quests/workhorse_1026/condition"
+msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/workhorse_1044/condition"
 msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
 
 msgid "customization/tooltip/quests/workhorse_836/condition"
@@ -14921,6 +15075,24 @@ msgstr "Plus Ultra!"
 msgid "inscription/special/special_788"
 msgstr "OLS Spring 2025"
 
+msgid "inscription/special/special_789"
+msgstr "Yin and Yang"
+
+msgid "inscription/special/special_790"
+msgstr "Firestarter"
+
+msgid "inscription/special/special_791"
+msgstr "Highlander"
+
+msgid "inscription/special/special_792"
+msgstr "Killer Instinct"
+
+msgid "inscription/special/special_794"
+msgstr "Succeed or Die"
+
+msgid "inscription/special/special_795"
+msgstr "Apex Predator"
+
 msgid "inscription/special/special_796"
 msgstr "Snake's Fortune"
 
@@ -14938,6 +15110,12 @@ msgstr "Under New Management"
 
 msgid "inscription/special/special_801"
 msgstr "Peaky Blinders"
+
+msgid "inscription/special/special_802"
+msgstr "Express Delivery"
+
+msgid "inscription/special/special_803"
+msgstr "We Did It!"
 
 msgid "inscription/special/special_81"
 msgstr "For the Motherland!"
@@ -21456,6 +21634,15 @@ msgstr ""
 " can always bring your buddy with you into battle and fight together side by"
 " side."
 
+msgid "projection_decals/special/projection_decal_873"
+msgstr "Red Poppies"
+
+msgid "projection_decals/special/projection_decal_874"
+msgstr "White Lilies"
+
+msgid "projection_decals/special/projection_decal_875"
+msgstr "Flowers of Freedom"
+
 msgid "projection_decals/special/projection_decal_876"
 msgstr "Rabbit in Hat"
 
@@ -21472,6 +21659,12 @@ msgid "projection_decals/special/projection_decal_88/description"
 msgstr ""
 "This decal gently reminds you that you lost track of time considering that "
 "the Holiday Ops event ended a long ago."
+
+msgid "projection_decals/special/projection_decal_885"
+msgstr "Chameleon"
+
+msgid "projection_decals/special/projection_decal_888"
+msgstr "Touché"
 
 msgid "projection_decals/special/projection_decal_89"
 msgstr "Global Decal"
@@ -21882,6 +22075,45 @@ msgstr "Vanguard"
 msgid "questProgress/cust_progress_1026_9"
 msgstr "Edgerunner"
 
+msgid "questProgress/cust_progress_1044_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1044_10"
+msgstr "Killer Instinct"
+
+msgid "questProgress/cust_progress_1044_11"
+msgstr "7v7"
+
+msgid "questProgress/cust_progress_1044_12"
+msgstr "Succeed or Die"
+
+msgid "questProgress/cust_progress_1044_13"
+msgstr "Apex Predator"
+
+msgid "questProgress/cust_progress_1044_2"
+msgstr "Devastating Damage"
+
+msgid "questProgress/cust_progress_1044_3"
+msgstr "Exhibition Performance"
+
+msgid "questProgress/cust_progress_1044_4"
+msgstr "Into the Cap Circle"
+
+msgid "questProgress/cust_progress_1044_5"
+msgstr "Tactical Advantage"
+
+msgid "questProgress/cust_progress_1044_6"
+msgstr "Till We Meet Again"
+
+msgid "questProgress/cust_progress_1044_7"
+msgstr "Yin and Yang"
+
+msgid "questProgress/cust_progress_1044_8"
+msgstr "Firestarter"
+
+msgid "questProgress/cust_progress_1044_9"
+msgstr "Highlander"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -22259,6 +22491,9 @@ msgstr "Fully Boosted"
 
 msgid "repaint/Boosteroid_02"
 msgstr "Here Be Dragons"
+
+msgid "repaint/Boosteroid_03"
+msgstr "Blend In"
 
 msgid "repaint/Breadboard"
 msgstr "Breadboard"
@@ -24207,6 +24442,23 @@ msgstr ""
 " got a good view. Our story is one that should be told for generations to "
 "come.\""
 
+msgid "special_style/A174_T57_58_Rush_Ep1"
+msgstr "Silver Spikes"
+
+msgid "special_style/A174_T57_58_Rush_Ep1_desc"
+msgstr ""
+"Strong as a lion, fierce as a dragon, and deadly as a scorpion, this beast "
+"is the incarnation in metal of a creature feared since ancient times."
+
+msgid "special_style/A174_T57_58_Rush_Ep2"
+msgstr "Golden Claws"
+
+msgid "special_style/A174_T57_58_Rush_Ep3"
+msgstr "Champion's Wings"
+
+msgid "special_style/A174_T57_58_Rush_Ep4"
+msgstr "Legendary Creature"
+
 msgid "special_style/A176_M103_110_HBP_3Dst"
 msgstr "Rambo"
 
@@ -24405,6 +24657,22 @@ msgstr ""
 "forgotten ruins, their molten eyes glint in the blackness, the pulse of "
 "their fiery breath punctuating the silence—hidden from the gaze of mortals, "
 "they bide their time, waiting to emerge once more."
+
+msgid "special_style/Boosteroid_03"
+msgstr "Blend In"
+
+msgid "special_style/Boosteroid_03_desc"
+msgstr "?empty?"
+
+msgid "special_style/Boosteroid_03_desc/long"
+msgstr ""
+"You can't see me! Oh, wait, you can? Huh. Must not have changed color yet. "
+"How do I do it? Oh, I get asked that all the time. Honestly, I don't even "
+"know. It's something to do with my pigment, or something. And you're telling"
+" me you have to specifically conceal your tank so people don't see you? "
+"Like, using special equipment and camouflages and stuff? Wow. That's "
+"crazy...anyway, I'd best get going. I've got people to meet and flies to "
+"catch. Now you see me, now you don't!"
 
 msgid "special_style/Breadboard"
 msgstr "Breadboard"
@@ -28610,6 +28878,25 @@ msgstr ""
 "commemorative parade along the main street. The tank was honorably decorated"
 " in the colors of the Czechoslovakian national hero—Jan Žižka."
 
+msgid "special_style/d_day"
+msgstr "Turning the Tide"
+
+msgid "special_style/d_day_desc"
+msgstr ""
+"An all-season style dedicated to the daring Allied landings of Operation "
+"Overlord."
+
+msgid "special_style/d_day_desc/long"
+msgstr ""
+"Unprecedented in its scale, Operation Overlord turned the tide of World War "
+"II decisively in the Allies' favor. Supported by over 5,000 ships and "
+"landing craft to bolster their audacious assault, almost 160,000 Allied "
+"troops landed on five heavily defended beaches on June 6, 1944, in a bold "
+"effort to breach German lines. Over the following days, the Allies pushed "
+"deeper into occupied territory, weakening Germany's grip on Western Europe "
+"and enshrining the windswept beaches of Normandy in history as the site of "
+"one of the most daring military operations ever seen."
+
 msgid "special_style/day_of_the_dead"
 msgstr "Day of the Dead"
 
@@ -28864,6 +29151,24 @@ msgstr "Revolutionary"
 
 msgid "special_style/european_three_tone"
 msgstr "European three-tone (USA)"
+
+msgid "special_style/fall_tanks"
+msgstr "Neon Demon"
+
+msgid "special_style/fall_tanks_desc"
+msgstr ""
+"A futuristic all-season style dedicated to the reality-warping world of Neon"
+" Dash."
+
+msgid "special_style/fall_tanks_desc/long"
+msgstr ""
+"\"I've seen things you people wouldn't believe. Hell, I didn't believe it "
+"myself when they gave the order. I grew up watching those goofy '80s sci-fi "
+"movies, dreaming of a world I'd never see. And then I got in. Portal to "
+"another dimension. Neon world. Race to the finish. None of it made sense. "
+"I'm a tanker, not a racing driver—or I was, before I came here. But things "
+"in here don't work like they do out there, and I'm not the same person I was"
+" before. I've freed my mind. And I suggest you do too.\""
 
 msgid "special_style/feer"
 msgstr "Fireworks"
@@ -29987,6 +30292,9 @@ msgstr "Hybrid Beast (Azure)"
 msgid "special_style/manticore_progression_2024"
 msgstr "Hybrid Beast (Crimson)"
 
+msgid "special_style/manticore_progression_2025"
+msgstr "Hybrid Beast (Jade)"
+
 msgid "special_style/manticore_yearly"
 msgstr "Hybrid Beast"
 
@@ -31081,6 +31389,22 @@ msgstr ""
 "\n"
 "During World War II, the ritual of keeping the military colors gained special significance. In harsh battle conditions, a special color unit was created from distinguished soldiers to guard the colors, and the military unit received a special order. Losing the military colors was considered a crime. In this case, all commanders and those directly responsible were court-martialed, and the military unit was disbanded."
 
+msgid "special_style/pub_liveops"
+msgstr "Great White"
+
+msgid "special_style/pub_liveops_desc"
+msgstr "An all-season style dedicated to the apex predator of the sea."
+
+msgid "special_style/pub_liveops_desc/long"
+msgstr ""
+"Known scientifically as Carcharodon carcharias—\"the shark with the jagged "
+"teeth\"—the great white is the ocean's ultimate hunter. Capable of detecting"
+" even a drop of blood from hundreds of meters away, the great white's "
+"predatory instinct kicks in the second it picks up the scent. Using its "
+"exceptional sense of smell, sharp vision, and powers of electroreception, it"
+" moves at breakneck speed as it zeroes in on its prey—before bearing its 300"
+" deadly teeth in a menacing smile to signal its imminent, lethal strike."
+
 msgid "special_style/quicky_baby"
 msgstr "QuickyBaby"
 
@@ -31747,9 +32071,6 @@ msgstr ""
 
 msgid "special_style/st_patricks_day_2025"
 msgstr "Fortune's Forge"
-
-msgid "special_style/st_patricks_vehicles_2024"
-msgstr "Green Machine"
 
 msgid "special_style/stayhome"
 msgstr "Home Sweet Home"
@@ -32760,14 +33081,10 @@ msgid "special_style/yandex_august_2022"
 msgstr "Fishing"
 
 msgid "special_style/yandex_august_2022_desc"
-msgstr ""
-"An all-season style developed in collaboration with Yandex within a certain "
-"special."
+msgstr "An all-season style that celebrates the art of fishing."
 
 msgid "special_style/yandex_desc"
-msgstr ""
-"An all-season style developed to commemorate the collaboration of World of "
-"Tanks and Yandex."
+msgstr "An all-season style that captures the magic of the first winter snow."
 
 msgid "special_style/yandex_desc/long"
 msgstr ""

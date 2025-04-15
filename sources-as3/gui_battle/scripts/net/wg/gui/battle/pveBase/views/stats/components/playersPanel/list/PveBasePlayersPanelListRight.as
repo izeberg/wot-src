@@ -150,5 +150,9 @@ package net.wg.gui.battle.pveBase.views.stats.components.playersPanel.list
       public function setSpottedStatus(param1:Number, param2:uint) : void
       {
       }
+      
+      public function setPriorityCommand(param1:Number, param2:String, param3:uint, param4:uint) : void
+      {
+      }
    }
 }

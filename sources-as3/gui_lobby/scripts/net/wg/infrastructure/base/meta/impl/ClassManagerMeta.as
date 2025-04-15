@@ -955,7 +955,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.epicBattles.data.EpicBattlesWidgetEvent;
    import net.wg.gui.lobby.epicBattles.data.EpicBattlesWidgetVO;
    import net.wg.gui.lobby.epicBattles.events.AfterBattleFameBarEvent;
-   import net.wg.gui.lobby.epicBattles.utils.EpicHelper;
    import net.wg.gui.lobby.epicBattles.views.EpicBattlesAfterBattleView;
    import net.wg.gui.lobby.eventBoards.EventBoardsDetailsContainerView;
    import net.wg.gui.lobby.eventBoards.EventBoardsTableView;
@@ -2808,13 +2807,17 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.ProgressiveStyleMessageContent;
    import net.wg.gui.notification.ServiceMessageBase;
    import net.wg.gui.notification.ServiceMessageContent;
+   import net.wg.gui.notification.ServiceMessageContentBase;
    import net.wg.gui.notification.ServiceMessageItemRenderer;
    import net.wg.gui.notification.ServiceMessagePopUp;
    import net.wg.gui.notification.SystemMessageDialog;
+   import net.wg.gui.notification.caches.GFNotificationCache;
    import net.wg.gui.notification.constants.ButtonState;
    import net.wg.gui.notification.constants.ButtonType;
    import net.wg.gui.notification.constants.MessageMetrics;
    import net.wg.gui.notification.custom.ExchangeRatePersonalDiscount;
+   import net.wg.gui.notification.custom.GFNotification;
+   import net.wg.gui.notification.custom.GFNotificationInject;
    import net.wg.gui.notification.custom.NotificationAchievements;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntry;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntryWithoutWTR;
@@ -2845,7 +2848,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.events.NewsWidgetEvent;
    import net.wg.gui.notification.events.NotificationLayoutEvent;
    import net.wg.gui.notification.events.NotificationListEvent;
+   import net.wg.gui.notification.events.NotificationRegisteringEvent;
    import net.wg.gui.notification.events.ServiceMessageEvent;
+   import net.wg.gui.notification.interfaces.IGFNotificationCache;
    import net.wg.gui.notification.interfaces.IServiceMessage;
    import net.wg.gui.notification.vo.ButtonVO;
    import net.wg.gui.notification.vo.MessageInfoVO;
@@ -4878,8 +4883,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_DATA_EPICBATTLESWIDGETVO:Class = EpicBattlesWidgetVO;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_EVENTS_AFTERBATTLEFAMEBAREVENT:Class = AfterBattleFameBarEvent;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_UTILS_EPICHELPER:Class = EpicHelper;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_VIEWS_EPICBATTLESAFTERBATTLEVIEW:Class = EpicBattlesAfterBattleView;
       
@@ -8585,11 +8588,15 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGECONTENT:Class = ServiceMessageContent;
       
+      public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGECONTENTBASE:Class = ServiceMessageContentBase;
+      
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGEITEMRENDERER:Class = ServiceMessageItemRenderer;
       
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGEPOPUP:Class = ServiceMessagePopUp;
       
       public static const NET_WG_GUI_NOTIFICATION_SYSTEMMESSAGEDIALOG:Class = SystemMessageDialog;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CACHES_GFNOTIFICATIONCACHE:Class = GFNotificationCache;
       
       public static const NET_WG_GUI_NOTIFICATION_CONSTANTS_BUTTONSTATE:Class = ButtonState;
       
@@ -8598,6 +8605,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CONSTANTS_MESSAGEMETRICS:Class = MessageMetrics;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_EXCHANGERATEPERSONALDISCOUNT:Class = ExchangeRatePersonalDiscount;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_GFNOTIFICATION:Class = GFNotification;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_GFNOTIFICATIONINJECT:Class = GFNotificationInject;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONACHIEVEMENTS:Class = NotificationAchievements;
       
@@ -8659,7 +8670,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONLISTEVENT:Class = NotificationListEvent;
       
+      public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONREGISTERINGEVENT:Class = NotificationRegisteringEvent;
+      
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_SERVICEMESSAGEEVENT:Class = ServiceMessageEvent;
+      
+      public static const NET_WG_GUI_NOTIFICATION_INTERFACES_IGFNOTIFICATIONCACHE:Class = IGFNotificationCache;
       
       public static const NET_WG_GUI_NOTIFICATION_INTERFACES_ISERVICEMESSAGE:Class = IServiceMessage;
       

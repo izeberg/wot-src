@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.768996 -0.928690 -4.252096</min>
+		<max>1.772899 0.694701 3.825924</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F130_Sentinelle/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/french/F130_Sentinelle/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>

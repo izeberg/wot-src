@@ -1836,13 +1836,13 @@ msgid "postmortem_messages/DEATH_FROM_THUNDER_STRIKE"
 msgstr "Vehicle destroyed by Electric Discharge."
 
 msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_ALLY_SELF"
-msgstr "Vehicle crushed by ally"
+msgstr "Vehicle crashed by ally"
 
 msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_ENEMY_SELF"
-msgstr "Vehicle crushed by enemy"
+msgstr "Vehicle crashed by enemy"
 
 msgid "postmortem_messages/DEATH_FROM_WORLD_COLLISION_SELF_SUICIDE"
-msgstr "Vehicle crushed"
+msgstr "Vehicle crashed"
 
 msgid "postmortem_messages/DEATH_UNKNOWN"
 msgstr "Your vehicle was destroyed"
@@ -2025,6 +2025,9 @@ msgstr "Press"
 
 msgid "quickReply/hint/toAcknowledge"
 msgstr "to confirm"
+
+msgid "quickReply/hint/toCommend"
+msgstr "to commend back"
 
 msgid "quickReply/hint/toHelp"
 msgstr "to assist"
@@ -3017,18 +3020,6 @@ msgid "statusNotificationTimers/staticDeathZone"
 msgstr ""
 "Leave the\n"
 "destruction zone!"
-
-msgid "steamUnlockAwards/button/redirect"
-msgstr "View in Garage"
-
-msgid "steamUnlockAwards/button/submit"
-msgstr "Affirmative!"
-
-msgid "steamUnlockAwards/title"
-msgstr "VEHICLE RECEIVED"
-
-msgid "steamUnlockAwards/underTitle"
-msgstr "and 2D style for completing the Full Steam Ahead mission"
 
 msgid "stun/indicator"
 msgstr "Crew stunned"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F132_Vercingetorix/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F132_Vercingetorix/normal/lod3/Turret_01</parent>
+	<extent>96</extent>
+	<visibilityBox>
+		<min>-1.502625 -0.000833 -2.630962</min>
+		<max>1.502625 2.353488 1.577452</max>
+	</visibilityBox>
+</root>

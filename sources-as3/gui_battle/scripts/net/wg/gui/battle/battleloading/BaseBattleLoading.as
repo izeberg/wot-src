@@ -136,5 +136,9 @@ package net.wg.gui.battle.battleloading
          DebugUtils.LOG_ERROR(MSG_MUST_BE_OVERRIDEN);
          throw new AbstractException(MSG_MUST_BE_OVERRIDEN);
       }
+      
+      public function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void
+      {
+      }
    }
 }

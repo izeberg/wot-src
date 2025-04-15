@@ -26,6 +26,8 @@ package net.wg.data.constants.generated
       public static const FILL_PARTIALLY:int = 512;
       
       public static const DARK_COLOR_TRANSFORM:int = 1024;
+      
+      public static const TIMER_INVISIBLE:int = 2048;
        
       
       public function ANIMATION_TYPES()

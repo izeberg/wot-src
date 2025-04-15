@@ -6,13 +6,15 @@ from helpers.time_utils import getTimestampFromUTC
 from story_mode.account_settings import setWelcomeScreenSeen
 from story_mode.gui.impl.gen.view_models.views.lobby.event_welcome_view_model import EventWelcomeViewModel
 from story_mode_common.configs.story_mode_settings import settingsSchema
+from story_mode.uilogging.story_mode.loggers import EventWelcomeViewLogger
 
 class EventWelcomeView(ViewImpl):
-    __slots__ = ()
+    __slots__ = ('_uiLogger', )
     layoutID = R.views.story_mode.lobby.EventWelcomeView()
 
     def __init__(self, layoutID=None):
         settings = ViewSettings(layoutID or self.layoutID, ViewFlags.VIEW, EventWelcomeViewModel())
+        self._uiLogger = EventWelcomeViewLogger()
         super(EventWelcomeView, self).__init__(settings)
 
     @property
@@ -33,6 +35,10 @@ class EventWelcomeView(ViewImpl):
         super(EventWelcomeView, self)._onLoading(*args, **kwargs)
         self.__fillViewModel()
 
+    def _onLoaded(self, *args, **kwargs):
+        super(EventWelcomeView, self)._onLoaded(*args, **kwargs)
+        self._uiLogger.logOpen()
+
     def __fillViewModel(self):
         settings = settingsSchema.getModel()
         if settings:
@@ -40,6 +46,7 @@ class EventWelcomeView(ViewImpl):
             self.viewModel.setEndDate(getTimestampFromUTC(settings.entryPoint.eventEndAt.timetuple()))
 
     def __onClose(self):
+        self._uiLogger.logClose()
         setWelcomeScreenSeen()
         self.destroyWindow()
 

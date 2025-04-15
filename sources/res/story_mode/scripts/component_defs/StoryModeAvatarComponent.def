@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<Properties>
+		<wrongApplicationPoint>
+			<Type>VECTOR3</Type>
+			<Flags>OWN_CLIENT</Flags>
+		</wrongApplicationPoint>
+		<isPositionValid>
+			<Type>BOOL</Type>
+			<Flags>OWN_CLIENT</Flags>
+		</isPositionValid>
+	</Properties>
 	<BaseMethods>
 		<setDevelopmentFeature>
 			<Exposed/>
@@ -8,6 +18,16 @@
 			<Arg>STRING</Arg>
 		</setDevelopmentFeature>
 	</BaseMethods>
+	<CellMethods>
+		<setNavMeshGirth>
+			<Exposed>OWN_CLIENT</Exposed>
+			<Arg>STRING</Arg>
+		</setNavMeshGirth>
+		<checkPosition>
+			<Exposed>OWN_CLIENT</Exposed>
+			<Arg>VECTOR3</Arg>
+		</checkPosition>
+	</CellMethods>
 	<ofEntity>
 		<Avatar/>
 	</ofEntity>

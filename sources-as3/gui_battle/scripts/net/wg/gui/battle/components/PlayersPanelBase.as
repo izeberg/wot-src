@@ -7,6 +7,7 @@ package net.wg.gui.battle.components
    import net.wg.data.VO.daapi.DAAPIPlayerStatusVO;
    import net.wg.data.VO.daapi.DAAPITriggeredCommandVO;
    import net.wg.data.VO.daapi.DAAPITriggeredCommandsVO;
+   import net.wg.data.VO.daapi.DAAPITriggeredPriorityCommandVO;
    import net.wg.data.VO.daapi.DAAPIVehicleStatsVO;
    import net.wg.data.VO.daapi.DAAPIVehicleStatusVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
@@ -292,6 +293,12 @@ package net.wg.gui.battle.components
          {
             this.listLeft.triggerChatCommand(_loc4_.vehicleID,_loc4_.chatCommandName);
          }
+      }
+      
+      public function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void
+      {
+         var _loc2_:DAAPITriggeredPriorityCommandVO = DAAPITriggeredPriorityCommandVO(param1);
+         this.listLeft.setPriorityCommand(_loc2_.vehicleID,_loc2_.chatCommand,_loc2_.chatCommandFlags,_loc2_.chatCommandDurationMS);
       }
       
       public function updateUserTags(param1:IDAAPIDataClass) : void

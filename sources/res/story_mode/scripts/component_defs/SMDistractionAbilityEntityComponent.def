@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<spottedVehiclesIDs>
+			<Type>
+				ARRAY
+				<of>UINT64</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</spottedVehiclesIDs>
+	</Properties>
+	<DefaultKeyName>SMDistractionAbilityEntityComponent</DefaultKeyName>
+</root>

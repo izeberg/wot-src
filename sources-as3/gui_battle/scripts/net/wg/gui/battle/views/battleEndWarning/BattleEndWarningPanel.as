@@ -49,7 +49,6 @@ package net.wg.gui.battle.views.battleEndWarning
       override protected function configUI() : void
       {
          super.configUI();
-         this.innerVisible = false;
          this._hideCompletedFrameScript = totalFrames - 1;
          addFrameScript(this._hideCompletedFrameScript,this.onHideComplete);
          App.utils.commons.addEmptyHitArea(this.background);

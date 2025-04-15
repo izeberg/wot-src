@@ -250,5 +250,10 @@ package net.wg.gui.components.crosshairPanel
             _loc2_.setSettings(param1.gunTagType,param1.mixingType,param1.gunTagAlpha,param1.mixingAlpha);
          }
       }
+      
+      public function get markerSettings() : CrosshairSettingsVO
+      {
+         return this._markerSettings;
+      }
    }
 }

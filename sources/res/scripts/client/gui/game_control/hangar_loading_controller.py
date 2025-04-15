@@ -1,7 +1,4 @@
 import Event
-from account_helpers.settings_core.settings_constants import GuiSettingsBehavior
-from gui.shared.account_settings_helper import AccountSettingsHelper
-from gui.shared.event_dispatcher import showMentoringLicenseAwards
 from helpers import dependency
 from skeletons.gui.game_control import IHangarLoadingController
 from skeletons.gui.goodies import IGoodiesCache
@@ -44,16 +41,8 @@ class HangarLoadingController(IHangarLoadingController):
             else:
                 self.__hangarSpace.onSpaceCreate += self.__hangarLoadedAfterLoginNotify
 
-    def __processMentoringLicenseScreen(self):
-        if AccountSettingsHelper.isWelcomeScreenShown(GuiSettingsBehavior.CREW_MENTORING_LICENSE_AWARDS_SHOWN):
-            return
-        totalLicenses = self.__goodiesCache.getMentoringLicense(currency='gold').inventoryCount
-        if totalLicenses > 0:
-            showMentoringLicenseAwards(totalLicenses)
-
     def __hangarLoadedAfterLoginNotify(self):
         self.__hangarSpace.onSpaceCreate -= self.__hangarLoadedAfterLoginNotify
-        self.__processMentoringLicenseScreen()
         self.onHangarLoadedAfterLogin()
 
     def isHangarLoadedAfterLogin(self):

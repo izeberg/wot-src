@@ -963,6 +963,15 @@ msgstr "Loader"
 msgid "perkRole/radioman"
 msgstr "Radio Operator"
 
+msgid "popularity/tooltip/common"
+msgstr "of all players"
+
+msgid "popularity/tooltip/header"
+msgstr "For this vehicle, preferred by"
+
+msgid "popularity/tooltip/legendary"
+msgstr "of WTR Legend players"
+
 msgid "radioman_expert/alt/description"
 msgstr ""
 "The crew efficiency bonus improves the crew member's effectiveness in "
@@ -1192,6 +1201,56 @@ msgstr "-"
 
 msgid "sign/plus"
 msgstr "+"
+
+msgid "sorting/common"
+msgstr "Popular"
+
+msgid "sorting/fallback"
+msgstr "Default"
+
+msgid "sorting/legendary"
+msgstr "Legendary"
+
+msgid "sorting/title"
+msgstr "Sorted by:"
+
+msgid "sorting/tooltip/common"
+msgstr ""
+"%(whiteSpanish_Open)sPopular.%(whiteSpanish_Close)s Based on current perk "
+"trends among all World of Tanks players"
+
+msgid "sorting/tooltip/header"
+msgstr "WoT Plus Benefit"
+
+msgid "sorting/tooltip/headerDescription"
+msgstr ""
+"Receive accurate crew perk data based on millions of games and get the most "
+"out of every battle."
+
+msgid "sorting/tooltip/legendary"
+msgstr ""
+"%(whiteSpanish_Open)sLegendary.%(whiteSpanish_Close)s Based on perks "
+"currently favored by players at the Legend WTR level"
+
+msgid "sorting/tooltip/sortingDisabled"
+msgstr "Perk sorting disabled"
+
+msgid "sorting/tooltip/sortingDisabledText"
+msgstr "No data available"
+
+msgid "sorting/tooltip/title"
+msgstr "Crew Assistant"
+
+msgid "sorting/tooltip/types"
+msgstr "Types of perk sorting"
+
+msgid "sorting/tooltip/warning"
+msgstr "Perk sorting not available"
+
+msgid "sorting/tooltip/warningText"
+msgstr ""
+"Complete perk data is unavailable for this vehicle, so Default perk sorting "
+"has been applied."
 
 msgid "witches_brotherhood/name"
 msgstr "Coven"

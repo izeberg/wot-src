@@ -3955,6 +3955,10 @@ package
       
       public static const CAMOUFLAGE_BATTLE_OF_BULGE_DESCRIPTION:String = "#vehicle_customization:camouflage/battle_of_bulge/description";
       
+      public static const CAMOUFLAGE_FALL_TANKS_LABEL:String = "#vehicle_customization:camouflage/fall_tanks/label";
+      
+      public static const CAMOUFLAGE_FALL_TANKS_DESCRIPTION:String = "#vehicle_customization:camouflage/fall_tanks/description";
+      
       public static const CAMOUFLAGE_BEAST_4_LABEL:String = "#vehicle_customization:camouflage/beast_4/label";
       
       public static const CAMOUFLAGE_BEAST_4_DESCRIPTION:String = "#vehicle_customization:camouflage/beast_4/description";
@@ -4047,6 +4051,10 @@ package
       
       public static const CAMOUFLAGE_CLAN_SHOWDOWN_DESCRIPTION:String = "#vehicle_customization:camouflage/clan_showdown/description";
       
+      public static const CAMOUFLAGE_D_DAY_LABEL:String = "#vehicle_customization:camouflage/d_day/label";
+      
+      public static const CAMOUFLAGE_D_DAY_DESCRIPTION:String = "#vehicle_customization:camouflage/d_day/description";
+      
       public static const CAMOUFLAGE_BP2025_1_LABEL:String = "#vehicle_customization:camouflage/bp2025_1/label";
       
       public static const CAMOUFLAGE_BP2025_1_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_1/description";
@@ -4082,6 +4090,10 @@ package
       public static const CAMOUFLAGE_J40_TYPE_71_BPXVI_3DST_LABEL:String = "#vehicle_customization:camouflage/J40_Type_71_BPXVI_3Dst/label";
       
       public static const CAMOUFLAGE_J40_TYPE_71_BPXVI_3DST_DESCRIPTION:String = "#vehicle_customization:camouflage/J40_Type_71_BPXVI_3Dst/description";
+      
+      public static const CAMOUFLAGE_PUB_LIVEOPS_LABEL:String = "#vehicle_customization:camouflage/pub_liveops/label";
+      
+      public static const CAMOUFLAGE_PUB_LIVEOPS_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_liveops/description";
       
       public static const EMBLEM:String = "#vehicle_customization:emblem";
       
@@ -8141,11 +8153,27 @@ package
       
       public static const INSCRIPTION_SPECIAL_SPECIAL_788:String = "#vehicle_customization:inscription/special/special_788";
       
+      public static const INSCRIPTION_SPECIAL_SPECIAL_789:String = "#vehicle_customization:inscription/special/special_789";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_790:String = "#vehicle_customization:inscription/special/special_790";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_791:String = "#vehicle_customization:inscription/special/special_791";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_792:String = "#vehicle_customization:inscription/special/special_792";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_794:String = "#vehicle_customization:inscription/special/special_794";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_795:String = "#vehicle_customization:inscription/special/special_795";
+      
       public static const INSCRIPTION_SPECIAL_SPECIAL_799:String = "#vehicle_customization:inscription/special/special_799";
       
       public static const INSCRIPTION_SPECIAL_SPECIAL_800:String = "#vehicle_customization:inscription/special/special_800";
       
       public static const INSCRIPTION_SPECIAL_SPECIAL_801:String = "#vehicle_customization:inscription/special/special_801";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_802:String = "#vehicle_customization:inscription/special/special_802";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_803:String = "#vehicle_customization:inscription/special/special_803";
       
       public static const ITEM_EMBLEM1:String = "#vehicle_customization:item/emblem1";
       
@@ -13637,8 +13665,6 @@ package
       
       public static const SPECIAL_STYLE_ST_PATRICKS_DAY_2024_3_DESC:String = "#vehicle_customization:special_style/st_patricks_day_2024_3_desc";
       
-      public static const SPECIAL_STYLE_ST_PATRICKS_VEHICLES_2024:String = "#vehicle_customization:special_style/st_patricks_vehicles_2024";
-      
       public static const SPECIAL_STYLE_DRAGONBOAT_2024:String = "#vehicle_customization:special_style/dragonboat_2024";
       
       public static const SPECIAL_STYLE_DRAGONBOAT_2024_DESC:String = "#vehicle_customization:special_style/dragonboat_2024_desc";
@@ -13831,6 +13857,16 @@ package
       
       public static const SPECIAL_STYLE_MAPBOX_INTERACTIVE_DESC_LONG:String = "#vehicle_customization:special_style/mapbox_interactive_desc/long";
       
+      public static const SPECIAL_STYLE_A174_T57_58_RUSH_EP1:String = "#vehicle_customization:special_style/A174_T57_58_Rush_Ep1";
+      
+      public static const SPECIAL_STYLE_A174_T57_58_RUSH_EP2:String = "#vehicle_customization:special_style/A174_T57_58_Rush_Ep2";
+      
+      public static const SPECIAL_STYLE_A174_T57_58_RUSH_EP3:String = "#vehicle_customization:special_style/A174_T57_58_Rush_Ep3";
+      
+      public static const SPECIAL_STYLE_A174_T57_58_RUSH_EP4:String = "#vehicle_customization:special_style/A174_T57_58_Rush_Ep4";
+      
+      public static const SPECIAL_STYLE_A174_T57_58_RUSH_EP1_DESC:String = "#vehicle_customization:special_style/A174_T57_58_Rush_Ep1_desc";
+      
       public static const SPECIAL_STYLE_POLISH_INDEPENDENCE_DAY:String = "#vehicle_customization:special_style/polish_independence_day";
       
       public static const SPECIAL_STYLE_POLISH_INDEPENDENCE_DAY_DESC:String = "#vehicle_customization:special_style/polish_independence_day_desc";
@@ -13973,6 +14009,12 @@ package
       
       public static const SPECIAL_STYLE_MANTICORE_PROGRESSION_2024:String = "#vehicle_customization:special_style/manticore_progression_2024";
       
+      public static const SPECIAL_STYLE_FALL_TANKS:String = "#vehicle_customization:special_style/fall_tanks";
+      
+      public static const SPECIAL_STYLE_FALL_TANKS_DESC:String = "#vehicle_customization:special_style/fall_tanks_desc";
+      
+      public static const SPECIAL_STYLE_FALL_TANKS_DESC_LONG:String = "#vehicle_customization:special_style/fall_tanks_desc/long";
+      
       public static const CAMOUFLAGE_BOOSTEROID_01_LABEL:String = "#vehicle_customization:camouflage/Boosteroid_01/label";
       
       public static const CAMOUFLAGE_BOOSTEROID_01_DESCRIPTION:String = "#vehicle_customization:camouflage/Boosteroid_01/description";
@@ -13993,6 +14035,16 @@ package
       
       public static const SPECIAL_STYLE_BOOSTEROID_02_DESC_LONG:String = "#vehicle_customization:special_style/Boosteroid_02_desc/long";
       
+      public static const CAMOUFLAGE_BOOSTEROID_03_LABEL:String = "#vehicle_customization:camouflage/Boosteroid_03/label";
+      
+      public static const CAMOUFLAGE_BOOSTEROID_03_DESCRIPTION:String = "#vehicle_customization:camouflage/Boosteroid_03/description";
+      
+      public static const SPECIAL_STYLE_BOOSTEROID_03:String = "#vehicle_customization:special_style/Boosteroid_03";
+      
+      public static const SPECIAL_STYLE_BOOSTEROID_03_DESC:String = "#vehicle_customization:special_style/Boosteroid_03_desc";
+      
+      public static const SPECIAL_STYLE_BOOSTEROID_03_DESC_LONG:String = "#vehicle_customization:special_style/Boosteroid_03_desc/long";
+      
       public static const SPECIAL_STYLE_BEAST_4:String = "#vehicle_customization:special_style/beast_4";
       
       public static const SPECIAL_STYLE_BEAST_4_DESC:String = "#vehicle_customization:special_style/beast_4_desc";
@@ -14003,7 +14055,11 @@ package
       
       public static const REPAINT_BOOSTEROID_02:String = "#vehicle_customization:repaint/Boosteroid_02";
       
+      public static const REPAINT_BOOSTEROID_03:String = "#vehicle_customization:repaint/Boosteroid_03";
+      
       public static const EMBLEM_SPECIAL_STICKER_859:String = "#vehicle_customization:emblem/special/sticker_859";
+      
+      public static const SPECIAL_STYLE_MANTICORE_PROGRESSION_2025:String = "#vehicle_customization:special_style/manticore_progression_2025";
       
       public static const SPECIAL_STYLE_A176_M103_110_HBP_3DST:String = "#vehicle_customization:special_style/A176_M103_110_HBP_3Dst";
       
@@ -14165,6 +14221,12 @@ package
       
       public static const SPECIAL_STYLE_CLAN_SHOWDOWN_DESC_LONG:String = "#vehicle_customization:special_style/clan_showdown_desc/long";
       
+      public static const SPECIAL_STYLE_D_DAY:String = "#vehicle_customization:special_style/d_day";
+      
+      public static const SPECIAL_STYLE_D_DAY_DESC:String = "#vehicle_customization:special_style/d_day_desc";
+      
+      public static const SPECIAL_STYLE_D_DAY_DESC_LONG:String = "#vehicle_customization:special_style/d_day_desc/long";
+      
       public static const SPECIAL_STYLE_GB150_CHURCHILL_VII_A_3DST:String = "#vehicle_customization:special_style/GB150_Churchill_VII_A_3DSt";
       
       public static const SPECIAL_STYLE_GB150_CHURCHILL_VII_A_3DST_DESC_LONG:String = "#vehicle_customization:special_style/GB150_Churchill_VII_A_3DSt_desc/long";
@@ -14196,6 +14258,12 @@ package
       public static const SPECIAL_STYLE_BP2025_4_DESC:String = "#vehicle_customization:special_style/bp2025_4_desc";
       
       public static const SPECIAL_STYLE_BP2025_4_DESC_LONG:String = "#vehicle_customization:special_style/bp2025_4_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_LIVEOPS:String = "#vehicle_customization:special_style/pub_liveops";
+      
+      public static const SPECIAL_STYLE_PUB_LIVEOPS_DESC:String = "#vehicle_customization:special_style/pub_liveops_desc";
+      
+      public static const SPECIAL_STYLE_PUB_LIVEOPS_DESC_LONG:String = "#vehicle_customization:special_style/pub_liveops_desc/long";
       
       public static const CUSTOMIZATION_POPOVER_STYLE_SUMMER:String = "#vehicle_customization:customization/popover/style/summer";
       
@@ -17227,6 +17295,16 @@ package
       
       public static const PROJECTION_DECALS_PIN_UP_PROJECTION_DECAL_70:String = "#vehicle_customization:projection_decals/pin_up/projection_decal_70";
       
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_885:String = "#vehicle_customization:projection_decals/special/projection_decal_885";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_888:String = "#vehicle_customization:projection_decals/special/projection_decal_888";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_873:String = "#vehicle_customization:projection_decals/special/projection_decal_873";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_874:String = "#vehicle_customization:projection_decals/special/projection_decal_874";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_875:String = "#vehicle_customization:projection_decals/special/projection_decal_875";
+      
       public static const ATTACHMENT_GENERAL:String = "#vehicle_customization:attachment/general";
       
       public static const ATTACHMENT_TEST:String = "#vehicle_customization:attachment/test";
@@ -17336,6 +17414,20 @@ package
       public static const ATTACHMENT_ST_PATRICKS_DAY_2025_CUS_34_SP_TREASURECHEST:String = "#vehicle_customization:attachment/st_patricks_day_2025/Cus_34_SP_TreasureChest";
       
       public static const ATTACHMENT_ST_PATRICKS_DAY_2025_CUS_35_SP_CAMONET:String = "#vehicle_customization:attachment/st_patricks_day_2025/Cus_35_SP_CamoNet";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA:String = "#vehicle_customization:attachment/beyond_pandora";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA_CUS_36_FGM_MACHINEGUN:String = "#vehicle_customization:attachment/beyond_pandora/Cus_36_FGM_Machinegun";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA_CUS_36_FGM_MACHINEGUN_DESCRIPTION:String = "#vehicle_customization:attachment/beyond_pandora/Cus_36_FGM_Machinegun/description";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA_CUS_37_FGM_PROJECTOR:String = "#vehicle_customization:attachment/beyond_pandora/Cus_37_FGM_Projector";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA_CUS_38_FGM_LUGGAGE:String = "#vehicle_customization:attachment/beyond_pandora/Cus_38_FGM_Luggage";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA_CUS_39_FGM_FILTERUNIT:String = "#vehicle_customization:attachment/beyond_pandora/Cus_39_FGM_Filterunit";
+      
+      public static const ATTACHMENT_BEYOND_PANDORA_CUS_40_FGM_WINCH:String = "#vehicle_customization:attachment/beyond_pandora/Cus_40_FGM_Winch";
       
       public static const PROJECTION_DECALS_HOLIDAY_PROJECTION_DECAL_654:String = "#vehicle_customization:projection_decals/holiday/projection_decal_654";
       
@@ -18350,6 +18442,88 @@ package
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_DESTROYED_VEHICLES_1026_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/destroyed_vehicles_1026_2/condition";
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_DESTROYED_VEHICLES_1026_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/destroyed_vehicles_1026_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_65_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_65/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_55_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_55/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_45_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_45/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_35_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_35/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_21_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_21/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_11_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_11/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DOUBLE_THREAT_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/double_threat_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_SUDDEN_STRIKE_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/sudden_strike_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_LAST_MAN_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/last_man_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_WORKHORSE_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/workhorse_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_PRESTIGE_7V7_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/prestige_7v7_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_RAMPAGE_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/rampage_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_BLITZKRIEG_1044_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/blitzkrieg_1044/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CRUSHING_DAMAGE_1044_1_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/crushing_damage_1044_1/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CRUSHING_DAMAGE_1044_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/crushing_damage_1044_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CRUSHING_DAMAGE_1044_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/crushing_damage_1044_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DEMONSTRATION_PERFORMANCE_1044_1_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/demonstration_performance_1044_1/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DEMONSTRATION_PERFORMANCE_1044_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/demonstration_performance_1044_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DEMONSTRATION_PERFORMANCE_1044_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/demonstration_performance_1044_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_GOING_TO_CIRCLE_1044_1_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/going_to_circle_1044_1/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_GOING_TO_CIRCLE_1044_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/going_to_circle_1044_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_GOING_TO_CIRCLE_1044_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/going_to_circle_1044_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_TACTICAL_ADVANTAGE_1044_1_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/tactical_advantage_1044_1/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_TACTICAL_ADVANTAGE_1044_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/tactical_advantage_1044_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_TACTICAL_ADVANTAGE_1044_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/tactical_advantage_1044_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DESTROYED_VEHICLES_1044_1_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/destroyed_vehicles_1044_1/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DESTROYED_VEHICLES_1044_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/destroyed_vehicles_1044_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_DESTROYED_VEHICLES_1044_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/destroyed_vehicles_1044_3/condition";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_1:String = "#vehicle_customization:questProgress/cust_progress_1044_1";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_2:String = "#vehicle_customization:questProgress/cust_progress_1044_2";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_3:String = "#vehicle_customization:questProgress/cust_progress_1044_3";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_4:String = "#vehicle_customization:questProgress/cust_progress_1044_4";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_5:String = "#vehicle_customization:questProgress/cust_progress_1044_5";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_6:String = "#vehicle_customization:questProgress/cust_progress_1044_6";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_7:String = "#vehicle_customization:questProgress/cust_progress_1044_7";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_8:String = "#vehicle_customization:questProgress/cust_progress_1044_8";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_9:String = "#vehicle_customization:questProgress/cust_progress_1044_9";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_10:String = "#vehicle_customization:questProgress/cust_progress_1044_10";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_11:String = "#vehicle_customization:questProgress/cust_progress_1044_11";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_12:String = "#vehicle_customization:questProgress/cust_progress_1044_12";
+      
+      public static const QUESTPROGRESS_CUST_PROGRESS_1044_13:String = "#vehicle_customization:questProgress/cust_progress_1044_13";
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_BR_SUMMER_STYLE_900_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/br_summer_style_900_2/condition";
       

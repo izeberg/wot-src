@@ -1,10 +1,9 @@
 import logging
 from constants import Configs
 from frameworks.wulf import ViewFlags, ViewSettings
+from gui.impl.auxiliary.tooltips.simple_tooltip import createSimpleIconTooltip
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.mapbox.mapbox_entry_point_view_model import MapboxEntryPointViewModel, State
-from gui.impl.gen.view_models.views.lobby.common.tooltips.simple_icon_tooltip_model import HeaderType
-from gui.impl.lobby.common.tooltips.simple_icon_tooltip_view import SimpleIconTooltipView
 from gui.impl.pub import ViewImpl
 from gui.periodic_battles.models import PeriodType
 from gui.shared.utils.graphics import isRendererPipelineDeferred
@@ -41,7 +40,7 @@ class MapBoxEntryPointView(ViewImpl):
 
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.lobby.common.tooltips.SimpleIconTooltip():
-            return SimpleIconTooltipView(event.getArgument('header', ''), event.getArgument('body', ''), event.getArgument('icon', ''), event.getArgument('headerType', HeaderType.NORMAL))
+            return createSimpleIconTooltip(event)
         return super(MapBoxEntryPointView, self).createToolTipContent(event, contentID)
 
     def _getEvents(self):

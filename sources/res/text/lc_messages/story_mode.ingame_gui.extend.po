@@ -10,11 +10,35 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "abilities/recon/startVehicle"
+msgstr "Returning to the vehicle..."
+
+msgid "abilities/recon/stopVehicle"
+msgstr "Leaving the vehicle..."
+
+msgid "player_errors/ability/on_cooldown"
+msgstr "Unavailable. [%(name)s] is on cooldown."
+
+msgid "player_errors/ability/other_ability"
+msgstr "Unable to use: [%(name)s] is in use."
+
+msgid "player_errors/ability/unable_fire"
+msgstr "Unable to fire: [%(name)s] is in use."
+
+msgid "player_errors/ability/unable_move"
+msgstr "Unable to move: [%(name)s] is in use."
+
 msgid "player_messages/BUNKER_DESTROYED"
 msgstr "Coastal Bunker destroyed."
 
 msgid "player_messages/COMBAT_EQUIPMENT_READY_BATTLESHIP"
 msgstr "Battleship is ready to fire."
+
+msgid "player_messages/DISTRACTION_ABILITY"
+msgstr "False Order is ready to use."
+
+msgid "player_messages/RECON_ABILITY"
+msgstr "Scout Around is ready to use."
 
 msgid "postmortem_messages/DEATH_FROM_BOT"
 msgstr "Vehicle destroyed by enemy fire."

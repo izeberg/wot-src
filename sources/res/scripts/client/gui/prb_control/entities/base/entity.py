@@ -190,6 +190,9 @@ class BasePrbEntity(IActionsValidator, PrbFunctionalFlags):
         if self._cooldown:
             self._cooldown.reset(requestType)
 
+    def canDoActionWithoutVehicle(self):
+        return False
+
     def _createActionsValidator(self):
         return BaseActionsValidator(self)
 

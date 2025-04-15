@@ -845,6 +845,8 @@ package
       
       public static const BATTLECOMM_SHOWMARKERS:String = "#settings:battlecomm/showMarkers";
       
+      public static const BATTLECOMM_ENABLECOMMENDATIONS:String = "#settings:battlecomm/enableCommendations";
+      
       public static const CURSOR_ARCADETITLE:String = "#settings:cursor/ArcadeTitle";
       
       public static const CURSOR_SNIPPERTITLE:String = "#settings:cursor/SnipperTitle";

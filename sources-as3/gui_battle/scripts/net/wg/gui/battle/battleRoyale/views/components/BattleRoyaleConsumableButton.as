@@ -362,10 +362,6 @@ package net.wg.gui.battle.battleRoyale.views.components
          }
       }
       
-      public function setIdleEnabledGlow(param1:Boolean) : void
-      {
-      }
-      
       public function showGlow(param1:int) : void
       {
          this._glowId = param1;
@@ -451,6 +447,10 @@ package net.wg.gui.battle.battleRoyale.views.components
       {
          this._isReplay = param1;
          enabled = !this._isReplay;
+      }
+      
+      public function set noBack(param1:Boolean) : void
+      {
       }
       
       public function set activated(param1:Boolean) : void

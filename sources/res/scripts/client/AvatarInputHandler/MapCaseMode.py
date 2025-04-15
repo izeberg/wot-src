@@ -285,6 +285,9 @@ class _AreaStrikeSelector(_DefaultStrikeSelector):
         if replayCtrl.isRecording:
             replayCtrl.setConsumablesPosition(self.area.position, self.direction)
 
+    def _enableWaterCollision(self, value):
+        self.area.enableWaterCollision(value)
+
 
 class _ArenaBoundsAreaStrikeSelector(_AreaStrikeSelector):
 
@@ -306,7 +309,7 @@ class _ArenaBoundsAreaStrikeSelector(_AreaStrikeSelector):
         self.__outFromBoundsAimArea = CombatSelectedArea()
         self.__outFromBoundsAimArea.setup(position, direction, size, visualPath, color, marker=None)
         self.__outFromBoundsAimArea.setGUIVisible(False)
-        self.__updatePositionsAndVisibility(position)
+        self._updatePositionsAndVisibility(position)
         return
 
     def destroy(self):
@@ -324,25 +327,36 @@ class _ArenaBoundsAreaStrikeSelector(_AreaStrikeSelector):
 
     def processHover(self, position, force=False):
         super(_ArenaBoundsAreaStrikeSelector, self).processHover(position, force)
-        self.__updatePositionsAndVisibility(position)
+        self._updatePositionsAndVisibility(position)
 
     def processSelection(self, position, reset=False):
         if self.__wasInsideArenaBounds or reset:
             return super(_ArenaBoundsAreaStrikeSelector, self).processSelection(position, reset)
         return False
 
-    def __updatePositionsAndVisibility(self, position):
+    def _validatePosition(self, position):
+        return self.__arena.isPointInsideArenaBB(position)
+
+    def _updatePositionsAndVisibility(self, position):
         checkPosition = position
         radius = self.__insetRadius
         if radius > 0:
             checkPosition = Math.Vector3(position.x + (radius if position.x > 0 else -radius), position.y, position.z + (radius if position.z > 0 else -radius))
-        isInside = self.__arena.isPointInsideArenaBB(checkPosition)
+        isInside = self._validatePosition(checkPosition)
         if isInside != self.__wasInsideArenaBounds:
             self.__wasInsideArenaBounds = isInside
             if self.__outFromBoundsAimArea:
                 self.area.setGUIVisible(self.__wasInsideArenaBounds)
                 self.__outFromBoundsAimArea.setGUIVisible(not self.__wasInsideArenaBounds)
         if self.__outFromBoundsAimArea and not self.__wasInsideArenaBounds:
+            self.__outFromBoundsAimArea.relocate(position, self.direction)
+
+    def _enableWaterCollision(self, value):
+        super(_ArenaBoundsAreaStrikeSelector, self)._enableWaterCollision(value)
+        self.__outFromBoundsAimArea.enableWaterCollision(value)
+
+    def _updateOutFromBoundsPosition(self, position):
+        if self.__outFromBoundsAimArea:
             self.__outFromBoundsAimArea.relocate(position, self.direction)
 
 
@@ -663,7 +677,7 @@ class MapCaseControlModeBase(IControlMode, CallbackDelayer):
             replayCtrl = BattleReplay.g_replayCtrl
             if replayCtrl.isPlaying:
                 return True
-            shouldClose = self.__activeSelector.processSelection(self.__getDesiredShotPoint())
+            shouldClose = self._processSelection()
             if shouldClose:
                 self.turnOff(sendStopEquipment=False)
             return True
@@ -671,7 +685,7 @@ class MapCaseControlModeBase(IControlMode, CallbackDelayer):
             replayCtrl = BattleReplay.g_replayCtrl
             if replayCtrl.isPlaying:
                 return True
-            shouldClose = self.__activeSelector.processSelection(self.__getDesiredShotPoint(), True)
+            shouldClose = self._processSelection(True)
             if shouldClose:
                 self.turnOff()
             return True
@@ -730,7 +744,9 @@ class MapCaseControlModeBase(IControlMode, CallbackDelayer):
         return True
 
     def onMinimapClicked(self, worldPos):
-        self.__cam.teleport(worldPos)
+        teleport = getattr(self.__cam, 'teleport', None)
+        if teleport is not None:
+            teleport(worldPos)
         self.__activeSelector.processHover(worldPos, True)
         return True
 
@@ -783,7 +799,7 @@ class MapCaseControlModeBase(IControlMode, CallbackDelayer):
             if dynamicObjects is None:
                 _logger.warning('[MapCase] Can not set aiming circle visible, no visual registered.')
                 return
-            aimingCircleSettings = dynamicObjects.getAimingCircleRestrictionEffect().get('ally')
+            aimingCircleSettings = dynamicObjects.getAimingCircleRestrictionEffect(equipment).get('ally')
             if aimingCircleSettings is None:
                 _logger.warning('[MapCase] Can not set aiming circle visible, visual without <ally> section.')
                 return
@@ -817,6 +833,9 @@ class MapCaseControlModeBase(IControlMode, CallbackDelayer):
             _, _, hitPosition, _ = replayCtrl.getGunMarkerParams(defaultPoint, Math.Vector3(0.0, 0.0, 1.0))
             return hitPosition
         return defaultPoint
+
+    def _processSelection(self, reset=False):
+        return self.__activeSelector.processSelection(self.__getDesiredShotPoint(), reset)
 
     def onRecreateDevice(self):
         self.__activeSelector.onRecreateDevice()

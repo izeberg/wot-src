@@ -142,5 +142,9 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
          this._enemyTeamFragsStr = param2.toString();
          invalidate(INVALID_FRAGS);
       }
+      
+      public function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void
+      {
+      }
    }
 }

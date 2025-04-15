@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<name>showHintAfterRespawn</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>CLIENT</senderAspects>
+	<receiverAspects>CLIENT</receiverAspects>
+	<param>
+		<name>hint</name>
+		<typecode>StringT</typecode>
+	</param>
+</root>

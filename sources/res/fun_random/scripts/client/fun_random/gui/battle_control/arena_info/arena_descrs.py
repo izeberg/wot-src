@@ -1,14 +1,9 @@
-import BattleReplay
+from gui.battle_control.arena_info.arena_descrs import ArenaDescriptionWithInvitation
+from gui.impl import backport
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasBattleSubMode
-from gui.battle_control.arena_info.arena_descrs import ArenaWithLabelDescription
-from gui.impl import backport
 
-class FunRandomArenaDescription(ArenaWithLabelDescription, FunAssetPacksMixin, FunSubModesWatcher):
-
-    def isInvitationEnabled(self):
-        replayCtrl = BattleReplay.g_replayCtrl
-        return not replayCtrl.isPlaying
+class FunRandomArenaDescription(ArenaDescriptionWithInvitation, FunAssetPacksMixin, FunSubModesWatcher):
 
     def getBattleTypeIconPath(self, sizeFolder='c_136x136'):
         iconRes = self.getModeIconsResRoot().battle_type.dyn(sizeFolder).dyn(self.getFrameLabel())

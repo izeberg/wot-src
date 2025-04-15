@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.691546 -0.004326 -3.608649</min>
+		<max>1.691545 1.194601 3.753899</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F130_Sentinelle/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/french/F130_Sentinelle/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

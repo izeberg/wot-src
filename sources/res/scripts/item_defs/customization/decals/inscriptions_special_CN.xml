@@ -16,7 +16,11 @@
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>inscriptions 50g IGR notInShop</priceGroup>
-		<vehicleFilter/>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<type>INSCRIPTION</type>
 		<tags>premiumIGR</tags>
 		<decal>
@@ -80,7 +84,11 @@
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
-		<vehicleFilter/>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<type>INSCRIPTION</type>
 		<decal>
 			<id>14428</id>
@@ -131,7 +139,11 @@
 		<season>ALL</season>
 		<historical>0</historical>
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
-		<vehicleFilter/>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<type>INSCRIPTION</type>
 		<decal>
 			<id>14435</id>
@@ -189,6 +201,11 @@
 			<userString>#vehicle_customization_cn:inscription/special/special_178</userString>
 			<mirror>false</mirror>
 		</decal>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<name>China New Year 2018</name>
@@ -228,6 +245,11 @@
 			<mirror>false</mirror>
 			<priceGroup>inscriptions 50g notInShop</priceGroup>
 		</decal>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -243,6 +265,11 @@
 		</decal>
 		<name>10 Years Tanker Day CN Style</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -263,6 +290,11 @@
 		</decal>
 		<name>10 Years Tanker Day CN Standalone</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -313,6 +345,11 @@
 		</decal>
 		<name>Seniority Awards 2020 CN</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -352,5 +389,10 @@
 		</decal>
 		<name>NY 2021 CN</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 </root>

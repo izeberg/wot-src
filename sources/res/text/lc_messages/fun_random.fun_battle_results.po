@@ -55,11 +55,17 @@ msgstr "Damage"
 msgid "efficiency/droppedCapturePoints"
 msgstr "Base Defense"
 
+msgid "efficiency/empty"
+msgstr "—"
+
 msgid "efficiency/kills"
 msgstr "Destroyed"
 
 msgid "efficiency/spotted"
 msgstr "Spotting"
+
+msgid "efficiency/timeFormat"
+msgstr "{minutes}:{seconds}.{milliseconds}"
 
 msgid "efficiencyTooltip/header/capturePoints"
 msgstr "Base Capture"
@@ -86,13 +92,7 @@ msgid "efficiencyTooltip/header/spotted"
 msgstr "Spotting"
 
 msgid "finish"
-msgstr "Battle ended"
-
-msgid "navigation/battleResults"
-msgstr "Personal Score"
-
-msgid "navigation/teamEfficiency"
-msgstr "Team Score"
+msgstr "Battle ended:"
 
 msgid "premiumBonus/DeprecatedResults"
 msgstr "Must be applied to the most recent battle in the same vehicle."
@@ -141,3 +141,114 @@ msgstr "Bonus renewal in:"
 
 msgid "ribbon/usesLeft"
 msgstr "Available applications: %(count)s"
+
+msgid "sub_modes/development/navigation/battleResults"
+msgstr "Dev Personal Score"
+
+msgid "sub_modes/development/navigation/teamEfficiency"
+msgstr "Dev Team Score"
+
+msgid "sub_modes/development/team/singleTeam"
+msgstr "Players"
+
+msgid "sub_modes/fall_tanks/efficiency/checkpointsPassed"
+msgstr "Checkpoints"
+
+msgid "sub_modes/fall_tanks/efficiency/deathCount"
+msgstr "Respawns"
+
+msgid "sub_modes/fall_tanks/efficiency/empty/finishPosition"
+msgstr "—"
+
+msgid "sub_modes/fall_tanks/efficiency/empty/finishTime"
+msgstr "—"
+
+msgid "sub_modes/fall_tanks/efficiency/finishPosition"
+msgstr "Place"
+
+msgid "sub_modes/fall_tanks/efficiency/finishTime"
+msgstr "Time"
+
+msgid "sub_modes/fall_tanks/efficiency/format/finishTime"
+msgstr "{minutes}:{seconds}.{milliseconds}"
+
+msgid "sub_modes/fall_tanks/efficiency/kills"
+msgstr "Disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/checkpointsPassed"
+msgstr "The number of checkpoints you passed"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
+msgstr "Times you respawned after your vehicle was disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
+msgstr "The number of enemy vehicles you disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
+msgstr "Your final position in the race standings"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishTime"
+msgstr "The time it took you to reach the finish line"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/checkpointsPassed"
+msgstr "Checkpoints"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/deathCount"
+msgstr "Respawns"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/destroyed"
+msgstr "Disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishPosition"
+msgstr "Place"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishTime"
+msgstr "Time"
+
+msgid "sub_modes/fall_tanks/navigation/battleResults"
+msgstr "Personal Score"
+
+msgid "sub_modes/fall_tanks/navigation/teamEfficiency"
+msgstr "Participants' results"
+
+msgid "sub_modes/fall_tanks/team/empty/finishTime"
+msgstr "-- : -- . --"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/body"
+msgstr "Sort by place"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/header"
+msgstr "Place"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/body"
+msgstr "Sort by time"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/header"
+msgstr "Time"
+
+msgid "sub_modes/fall_tanks/team/format/finishTime"
+msgstr "{minutes}:{seconds}.{milliseconds}"
+
+msgid "sub_modes/fall_tanks/team/singleTeam"
+msgstr "Players"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/body"
+msgstr "Sort by vehicle"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/header"
+msgstr "Vehicles"
+
+msgid "sub_modes/undefined/navigation/battleResults"
+msgstr "Personal Score"
+
+msgid "sub_modes/undefined/navigation/teamEfficiency"
+msgstr "Team Score"
+
+msgid "sub_modes/undefined/team/empty/finishTime"
+msgstr "-- : -- . --"
+
+msgid "sub_modes/undefined/team/format/finishTime"
+msgstr "{minutes}:{seconds}.{milliseconds}"
+
+msgid "sub_modes/undefined/team/singleTeam"
+msgstr "Players"

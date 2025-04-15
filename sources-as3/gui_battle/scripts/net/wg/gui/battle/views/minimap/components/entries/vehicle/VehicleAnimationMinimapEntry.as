@@ -26,9 +26,9 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          super.onDispose();
       }
       
-      public function drawEntry(param1:String) : void
+      public function drawEntry(param1:String, param2:Boolean = false) : void
       {
-         this._atlasManager.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,param1,this.atlasContainer.graphics,"",true);
+         this._atlasManager.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,param1,this.atlasContainer.graphics,"",true,false,param2);
       }
    }
 }

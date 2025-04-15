@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F132_Vercingetorix/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F132_Vercingetorix/crash/lod1/Chassis</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>-1.690445 -0.000176 -4.213881</min>
+		<max>1.690445 1.182506 4.087810</max>
+	</visibilityBox>
+</root>
