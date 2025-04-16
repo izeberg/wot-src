@@ -11,6 +11,7 @@
 		<ArenaFairplayComponent/>
 		<ArenaFairplayKafkaLoggingComponent/>
 		<AccountFairplayComponent/>
+		<ArenaCommendationsMasterComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -37,6 +38,9 @@
 		<VisualScriptOverrides/>
 		<VisualScriptEquipmentPublic/>
 		<VisualScriptPlan/>
+		<LiveTagsInfoComponent/>
+		<ArenaCommendationsMessageController/>
+		<AvatarCommendations/>
 		<VehicleCircle/>
 		<VehicleRadarDetection/>
 		<VehicleBuff/>

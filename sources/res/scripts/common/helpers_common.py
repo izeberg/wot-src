@@ -1,5 +1,5 @@
 import math
-from typing import TYPE_CHECKING, Sequence, Optional, Tuple, List
+from typing import TYPE_CHECKING, Sequence, Optional, Tuple, List, Union
 from soft_exception import SoftException
 from battle_modifiers_common import BattleModifiers
 if TYPE_CHECKING:
@@ -147,3 +147,15 @@ def packChunkObstacles(obstacles):
 
 def unpackChunkObstacles(obstacles):
     return [ (int(code >> 16), int(code >> 8 & 255), int(code & 255)) for code in obstacles ]
+
+
+def castNumberToPrettyStr(value):
+    if isinstance(value, float):
+        return str(value).rstrip('0').rstrip('.')
+    if isinstance(value, int):
+        return str(value)
+    return value
+
+
+def getPercentFromFloat(value, accuracy=2):
+    return round(value * 100, accuracy)

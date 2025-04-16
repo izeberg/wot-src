@@ -344,14 +344,23 @@ msgstr "Skip Intro"
 msgid "introVideo/loading"
 msgstr "Loading..."
 
+msgid "lootCapturing/equipment"
+msgstr "Capturing: Minefield Map"
+
+msgid "lootCapturing/plan"
+msgstr "Capturing: Map Piece"
+
 msgid "prebattle/mission/stage/1"
 msgstr "Operation 1"
 
-msgid "prebattle/mission/stage/1000"
+msgid "prebattle/mission/stage/1002"
 msgstr "Regular"
 
-msgid "prebattle/mission/stage/1001"
-msgstr "Rigorous"
+msgid "prebattle/mission/stage/1003"
+msgstr "Rigorous Covert Op"
+
+msgid "prebattle/mission/stage/1004"
+msgstr "Rigorous Minefield"
 
 msgid "prebattle/mission/stage/2"
 msgstr "Operation 2"
@@ -365,20 +374,28 @@ msgstr "Operation 4"
 msgid "prebattle/mission/stage/5"
 msgstr "Operation 5"
 
+msgid "prebattle/mission/stage/6"
+msgstr "Operation 6"
+
 msgid "prebattle/mission/task/1"
 msgstr ""
 "{whiteSpanish_Start}Mission:{whiteSpanish_End} Attack the town and destroy "
 "all enemy vehicles."
 
-msgid "prebattle/mission/task/1000"
+msgid "prebattle/mission/task/1002"
 msgstr ""
-"{whiteSpanish_Start}Break through, destroy the coastal guns, and capture the"
-" bridgehead.{whiteSpanish_End}"
+"{whiteSpanish_Start}Deliver the ceasefire order to your "
+"allies.{whiteSpanish_End}"
 
-msgid "prebattle/mission/task/1001"
+msgid "prebattle/mission/task/1003"
 msgstr ""
-"{whiteSpanish_Start}Break through, destroy the coastal guns, and capture the"
-" bridgehead.{whiteSpanish_End}"
+"{whiteSpanish_Start}Check the enemy camps and collect minefield map "
+"pieces.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1004"
+msgstr ""
+"{whiteSpanish_Start}Deliver the ceasefire order to your "
+"allies.{whiteSpanish_End}"
 
 msgid "prebattle/mission/task/2"
 msgstr ""
@@ -400,6 +417,11 @@ msgstr ""
 "{whiteSpanish_Start}Break through, destroy the coastal guns, and capture the"
 " bridgehead.{whiteSpanish_End}"
 
+msgid "prebattle/mission/task/6"
+msgstr ""
+"{whiteSpanish_Start}Deliver the ceasefire order to your "
+"allies.{whiteSpanish_End}"
+
 msgid "prebattle/mission/text/1"
 msgstr ""
 "Brooks: \"So how are you? Have you come 'round? You'll see the medics later. Every gun counts now. The assault has already begun. And because we were late, the enemy's focused all their attention on another flank. This is our chance. We attack pronto. Break into town and squeeze them from both sides.\n"
@@ -408,21 +430,33 @@ msgstr ""
 "\n"
 "And don't pay his jokes any mind. Everyone has their own unique coping mechanisms… Forward!\""
 
-msgid "prebattle/mission/text/1000"
+msgid "prebattle/mission/text/1002"
 msgstr ""
-"Captain John McCormick: \"Alright, fellas, the day has come. It's time to put an end to this war, and that's exactly what we're gonna do. All of us, together–Americans, Brits, French, Canadians, Australians, Belgians, Czechoslovaks, Greeks, Dutch, Kiwis, Norwegians, Poles. We're united to put an end to this evil once and for all.\n"
+"Captain Smith: \"Listen up. Germany signed the surrender papers hours ago. The war ends tomorrow. But our boys in the mountains lost radio contact—they don't know it's over. They're set to attack this bloody fortress at dawn, and the Germans inside don't know about the surrender either. It'll be a pointless slaughter. \n"
 "\n"
-"We're gonna break through the Atlantic Wall and establish our foothold.\n"
+"We're the only ones who can stop it. Our mission: Sneak through enemy lines and deliver the ceasefire order. It's a suicide run, but every life we save is worth it. \n"
 "\n"
-"Get ready for the landing!\""
+"We've got a captured German radioman with us—he knows the terrain and he's got as much reason as we do to stop this bloodshed. \n"
+"\n"
+"Roll out.\""
 
-msgid "prebattle/mission/text/1001"
+msgid "prebattle/mission/text/1003"
 msgstr ""
-"Captain John McCormick: \"Alright, fellas, the day has come. It's time to put an end to this war, and that's exactly what we're gonna do. All of us, together–Americans, Brits, French, Canadians, Australians, Belgians, Czechoslovaks, Greeks, Dutch, Kiwis, Norwegians, Poles. We're united to put an end to this evil once and for all.\n"
+"Captain Dubois: \"The entire frontline is mined. We can't get through to our forces.\"\n"
 "\n"
-"We're gonna break through the Atlantic Wall and establish our foothold.\n"
+"Gefreiter Keller: \"These marks also show command posts. They have fragments of the passage map. For our...German scouts. We should look there.\"\n"
 "\n"
-"Get ready for the landing!\""
+"Captain Smith: \"So we're collecting map pieces. Let's move.\""
+
+msgid "prebattle/mission/text/1004"
+msgstr ""
+"Captain Murphy: \"Man, what a maze! I would call it the MINE-otaur's labyrinth! Haha. Get it? No? Come on, that was gold!\"\n"
+"\n"
+"Captain Dubois: \"Just sneak through the minefield and I can finally get some...peace and quiet.\"\n"
+"\n"
+"Murphy: \"Tired of loading shells, Dubois?\"\n"
+"\n"
+"Dubois: \"That too.\""
 
 msgid "prebattle/mission/text/2"
 msgstr ""
@@ -460,14 +494,27 @@ msgstr ""
 "\n"
 "Get ready for the landing!\""
 
+msgid "prebattle/mission/text/6"
+msgstr ""
+"Captain Smith: \"Listen up. Germany signed the surrender papers hours ago. The war ends tomorrow. But our boys in the mountains lost radio contact—they don't know it's over. They're set to attack this bloody fortress at dawn, and the Germans inside don't know about the surrender either. It'll be a pointless slaughter. \n"
+"\n"
+"We're the only ones who can stop it. Our mission: Sneak through enemy lines and deliver the ceasefire order. It's a suicide run, but every life we save is worth it. \n"
+"\n"
+"We've got a captured German radioman with us—he knows the terrain and he's got as much reason as we do to stop this bloodshed. \n"
+"\n"
+"Roll out.\""
+
 msgid "prebattle/mission/title/1"
 msgstr "Steel Avalanche"
 
-msgid "prebattle/mission/title/1000"
-msgstr "Operation Overlord"
+msgid "prebattle/mission/title/1002"
+msgstr "Operation Postman"
 
-msgid "prebattle/mission/title/1001"
-msgstr "Operation Overlord"
+msgid "prebattle/mission/title/1003"
+msgstr "Operation Postman"
+
+msgid "prebattle/mission/title/1004"
+msgstr "Operation Postman"
 
 msgid "prebattle/mission/title/2"
 msgstr "Trapper"
@@ -480,6 +527,9 @@ msgstr "Cat in the Mousetrap"
 
 msgid "prebattle/mission/title/5"
 msgstr "Operation Overlord"
+
+msgid "prebattle/mission/title/6"
+msgstr "Operation Postman"
 
 msgid "ruinberg/hint01"
 msgstr "Find a detour and flank the enemy"
@@ -549,3 +599,111 @@ msgstr "Complete the Tiger Hunter story to unlock these settings."
 
 msgid "timersPanel/overturned"
 msgstr "Recovering your vehicle..."
+
+msgid "vday/hint01"
+msgstr "Move quickly behind the corner"
+
+msgid "vday/hint02"
+msgstr "Sneak closer"
+
+msgid "vday/hint03"
+msgstr "Send Capt. Dubois to scout around"
+
+msgid "vday/hint04"
+msgstr "Use the captured radio to give a false order to the Tiger"
+
+msgid "vday/hint05"
+msgstr "Check the German command post"
+
+msgid "vday/hint06"
+msgstr "The Scout Around and False Order abilities are your key to success"
+
+msgid "vday/hint07"
+msgstr "Use the Scout Around and False Order abilities to move unseen"
+
+msgid "vday/hint08"
+msgstr "Move! It's full throttle or full coffin!"
+
+msgid "vday/hint09"
+msgstr "Elite tanks cannot be distracted by False Order"
+
+msgid "vday/hint10"
+msgstr "Follow Capt. Smith's instructions and move carefully"
+
+msgid "vday/hint11"
+msgstr "Return to the mission!"
+
+msgid "vday/objective01/header"
+msgstr "Roll Out!"
+
+msgid "vday/objective01/subheader"
+msgstr "Deliver the ceasefire order to Allied forces"
+
+msgid "vday/objective02/header"
+msgstr "Reach the German command post"
+
+msgid "vday/objective02/subheader"
+msgstr "Follow Capt. Smith's instructions"
+
+msgid "vday/objective02/success"
+msgstr "Minefield maps captured"
+
+msgid "vday/objective03/header"
+msgstr "Find pieces of the passage map"
+
+msgid "vday/objective03/subheader"
+msgid_plural "plural/dday/objective08/subheader"
+msgstr[0] "%d map piece collected"
+msgstr[1] "%d map pieces collected"
+msgstr[2] "%d map pieces collected"
+
+msgid "vday/objective03/success"
+msgstr "Passage map assembled"
+
+msgid "vday/objective04/header"
+msgstr "Deliver the ceasefire order to Allied forces"
+
+msgid "vday/objective04/subheader"
+msgstr "Move through the minefields"
+
+msgid "vday/objective04/success"
+msgstr "Ceasefire order delivered!"
+
+msgid "vday/objective05/header"
+msgstr "Reach the minefields"
+
+msgid "vday/objective05/subheader"
+msgstr "Sneak though enemy lines"
+
+msgid "vday/objective05/success"
+msgstr "Minefields reached"
+
+msgid "vday/prebattle/header"
+msgstr "Sneak though enemy lines"
+
+msgid "vday/prebattle/start"
+msgstr "Proceed"
+
+msgid "vday/prebattle/subheader"
+msgstr "?empty?"
+
+msgid "vday/prebattleVeryHard/header"
+msgstr "Move through the minefield"
+
+msgid "vday/prebattleVeryHard/start"
+msgstr "Move"
+
+msgid "vday/prebattleVeryHard/subheader"
+msgstr "?empty?"
+
+msgid "vday/respawn/header"
+msgstr "Stand by, soldier"
+
+msgid "vday/respawn/subheader"
+msgstr "Reinforcement is arriving"
+
+msgid "vday/respawn_over/header"
+msgstr "It's over"
+
+msgid "vday/respawn_over/subheader"
+msgstr "All available vehicles have been destroyed"

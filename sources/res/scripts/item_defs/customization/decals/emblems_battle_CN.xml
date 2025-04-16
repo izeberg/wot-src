@@ -155,6 +155,11 @@
 		</decal>
 		<name>Battle</name>
 		<type>EMBLEM</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/battle</userString>
@@ -169,5 +174,10 @@
 		</decal>
 		<name>Italy Battle</name>
 		<type>EMBLEM</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 </root>

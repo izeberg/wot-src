@@ -2109,6 +2109,57 @@
 					<!--BW_String-->
 				</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>-0.000001 -0.209219 -3.478509</position>
+				<rotation>
+					-0 -1.569051 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					1 1 0.999999
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					-1.738917 0.16107 -0.588304
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0 -0 1.487438
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					1.739 0.16107 -0.588304
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.139847 1.487544
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -2785,7 +2836,6 @@
 						</Progetto_C45_mod_71_3DSt_WHAC_2021>
 					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -3608,7 +3658,6 @@
 						</Progetto_C45_mod_71_3DSt_WHAC_2021>
 					</modelSets>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -5755,6 +5804,27 @@
 					<scale>0.535581 0.109853 0.535583</scale>
 					<showOn>256</showOn>
 					<anchorShift>0.053434</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>-0.569667 0.967207 0.190668</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						0 0.973992 -1.12677
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

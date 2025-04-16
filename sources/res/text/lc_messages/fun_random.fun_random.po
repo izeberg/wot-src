@@ -170,13 +170,13 @@ msgstr ""
 "MISSION COMPLETED"
 
 msgid "metaProgressionTooltip/reward/header/common"
-msgstr "Reward"
+msgstr "Next Stage Rewards—Unlock at %(stagePoints)s Points"
 
 msgid "metaProgressionTooltip/reward/header/infinite"
 msgstr "Next Stage Reward"
 
 msgid "metaProgressionTooltip/timer/untilFinish"
-msgstr "%(time)s until the event ends"
+msgstr "%(time)s until the active phase ends"
 
 msgid "metaProgressionTooltip/timer/untilRelaunch"
 msgstr "%(time)s until next launch"
@@ -232,6 +232,18 @@ msgstr "?empty?"
 msgid "modes/development/detailedUserName"
 msgstr "?empty?"
 
+msgid "modes/development/entryPoint/performance/tooltip/highRisk/body"
+msgstr "Dev High risks description."
+
+msgid "modes/development/entryPoint/performance/tooltip/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr "Dev Medium risks description."
+
+msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
 msgid "modes/development/lootbox/fep_epic"
 msgstr "?empty?"
 
@@ -264,6 +276,24 @@ msgstr "?empty?"
 
 msgid "modes/development/mode_selector/description"
 msgstr "?empty?"
+
+msgid "modes/development/mode_selector/performance/highRisk/description"
+msgstr "Dev High risks description."
+
+msgid "modes/development/mode_selector/performance/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "modes/development/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Dev Low Performance"
+
+msgid "modes/development/mode_selector/performance/mediumRisk/description"
+msgstr "Dev Medium risks description."
+
+msgid "modes/development/mode_selector/performance/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
+msgid "modes/development/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Dev Reduced Performance"
 
 msgid "modes/development/mode_selector/progression/resettable"
 msgstr "?empty?"
@@ -353,11 +383,200 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fall_tanks/capsUserName"
+msgstr "NEON DASH"
+
+msgid "modes/fall_tanks/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/body"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/lootbox/fep_epic"
+msgstr "Epic random reward"
+
+msgid "modes/fall_tanks/lootbox/fep_legendary"
+msgstr "Legendary random reward"
+
+msgid "modes/fall_tanks/lootbox/fep_ordinary"
+msgstr "Common random reward"
+
+msgid "modes/fall_tanks/lootbox/fep_rare"
+msgstr "Rare random reward"
+
+msgid "modes/fall_tanks/lootbox/fep_unusual"
+msgstr "Uncommon random reward"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
+msgstr "Neon Dash Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
+msgstr "Neon Dash Mission"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/timer"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/battleCondition"
+msgstr "Race against everyone"
+
+msgid "modes/fall_tanks/mode_selector/description"
+msgstr "Experimental battles with non-standard rules"
+
+msgid "modes/fall_tanks/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "modes/fall_tanks/mode_selector/progression/resettable"
+msgstr "A new Neon Dash mission is available in:"
+
+msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
+msgstr "The %(subModeName)s mode has ended. Progression reset."
+
+msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
+msgstr "The %(subModeName)s mode has ended."
+
+msgid "modes/fall_tanks/notification/newSubModes/withProgression"
+msgstr "New rewards and the %(subModeName)s mode are available."
+
+msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
+msgstr "A new mode is available: %(subModeName)s."
+
+msgid "modes/fall_tanks/notification/switchOffSubModes"
+msgstr "The %(subModeName)s mode is unavailable due to maintenance."
+
+msgid "modes/fall_tanks/notification/switchOnSubModes"
+msgstr "The %(subModeName)s mode is available again."
+
+msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
+msgstr "Reward List"
+
+msgid "modes/fall_tanks/progression/complete/congratulations"
+msgstr "Congratulations!"
+
+msgid "modes/fall_tanks/progression/complete/title"
+msgstr "You completed the Main Progression"
+
+msgid "modes/fall_tanks/progression/infinite/congratulations"
+msgstr "Congratulations!"
+
+msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgstr "Repeatable Stage"
+
+msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgstr "You completed the Main Progression"
+
+msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgstr "Get as many rewards as you can: %(currentPoints) / %(infinitySign)s"
+
+msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
+msgstr "Points earned: %(progressionSteps)s"
+
+msgid ""
+"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "Points earned:"
+
+msgid "modes/fall_tanks/progression/title"
+msgstr "NEON DASH MISSIONS"
+
+msgid "modes/fall_tanks/rewardsView/header"
+msgstr "LEGENDARY REWARD RECEIVED"
+
+msgid "modes/fall_tanks/scheduler/notification/available"
+msgstr "The %(subModeName)s battles are available again."
+
+msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgstr "Ceasefire"
+
+msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgstr "The %(subModeName)s battles have ended"
+
+msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgstr "Ceasefire"
+
+msgid "modes/fall_tanks/scheduler/notification/primeTime"
+msgstr ""
+"Ceasefire is in effect. The %(subModeName)s battles are temporarily "
+"unavailable."
+
+msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgstr "Ceasefire"
+
+msgid "modes/fall_tanks/tierList/description"
+msgstr ""
+"Each random reward is an item from the list below that you can receive with "
+"a certain probability."
+
+msgid "modes/fall_tanks/tierList/title"
+msgstr "What's Inside?"
+
+msgid "modes/fall_tanks/tooltip/filter/body"
+msgstr "Show/hide suitable vehicles for Neon Dash mode."
+
+msgid "modes/fall_tanks/tooltip/filter/header"
+msgstr "Neon Dash Vehicles"
+
+msgid "modes/fall_tanks/userName"
+msgstr "Neon Dash"
+
 msgid "modes/undefined/capsUserName"
 msgstr "ARCADE CABINET"
 
 msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s: %(subModeName)s"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/body"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/body"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/header"
+msgstr "Highest graphics settings recommended"
 
 msgid "modes/undefined/lootbox/fep_epic"
 msgstr "Epic random reward"
@@ -398,6 +617,34 @@ msgstr "Experimental battles with non-standard rules."
 
 msgid "modes/undefined/mode_selector/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "modes/undefined/mode_selector/performance/highRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "modes/undefined/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "modes/undefined/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
 
 msgid "modes/undefined/mode_selector/progression/resettable"
 msgstr "A new Arcade Cabinet mission is available in:"
@@ -712,7 +959,7 @@ msgid "progression/questsList/quest/progressTitle"
 msgstr "Completed: %(currentPoints) / %(totalPoints)s"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "The event ends in: %(time)s"
+msgstr "The active phase ends in: %(time)s"
 
 msgid "progression/questsList/questsRenewTimerTitle"
 msgstr "Next launch in: %(time)s"
@@ -725,6 +972,9 @@ msgstr "{yellow_Open}%(done)s{yellow_Close} / %(total)s"
 
 msgid "progression/stepsNoProgress"
 msgstr "{bond_Open}%(done)s{bond_Close} / %(total)s"
+
+msgid "quests/limitedProgression/awards/nearest/header"
+msgstr "Next Stage Rewards—Unlock at %(count)d Points"
 
 msgid "rewardsView/additionalRewards/title"
 msgstr "You also received:"
@@ -774,6 +1024,24 @@ msgstr "?empty?"
 msgid "sub_modes/development/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
 
+msgid "sub_modes/development/subModeCard/performance/highRisk/description"
+msgstr "Dev High risks description."
+
+msgid "sub_modes/development/subModeCard/performance/highRisk/header"
+msgstr "Dev Low Performance"
+
+msgid "sub_modes/development/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Dev Low Performance"
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/description"
+msgstr "Dev Medium risks description."
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/header"
+msgstr "Dev Reduced Performance"
+
+msgid "sub_modes/development/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Dev Reduced Performance"
+
 msgid "sub_modes/development/subModeCard/title"
 msgstr "?empty?"
 
@@ -788,6 +1056,62 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/capsUserName"
+msgstr "NEON DASH"
+
+msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
+msgstr ""
+"Race to the finish line and stop others from reaching it. Use the Dash and "
+"Shield abilities to cause extra mayhem!"
+
+msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
+msgstr "Caution: Moving Platforms"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgstr "to view the mode features"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/press"
+msgstr "Press"
+
+msgid "sub_modes/fall_tanks/detailsHelpTitle"
+msgstr "Neon Dash"
+
+msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
+msgstr "Race against everyone"
+
+msgid "sub_modes/fall_tanks/subModeCard/description"
+msgstr "Experimental battles with non-standard rules"
+
+msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "?empty?"
+
+msgid "sub_modes/fall_tanks/subModeCard/title"
+msgstr "Neon Dash"
+
+msgid "sub_modes/fall_tanks/userName"
+msgstr "Neon Dash"
+
+msgid "sub_modes/fall_tanks/userName/quoted"
+msgstr "\"Neon Dash\""
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"
@@ -815,6 +1139,34 @@ msgstr "Unknown subModeCard description"
 
 msgid "sub_modes/undefined/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "sub_modes/undefined/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "sub_modes/undefined/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
 
 msgid "sub_modes/undefined/subModeCard/title"
 msgstr "Unknown subModeCard title"

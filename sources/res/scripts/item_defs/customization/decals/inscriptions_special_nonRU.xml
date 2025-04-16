@@ -23,6 +23,11 @@
 		</decal>
 		<name>BRW Winners nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -37,6 +42,11 @@
 		</decal>
 		<name>Halloween 2018 nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -51,6 +61,11 @@
 		</decal>
 		<name>WGFest nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -65,6 +80,11 @@
 		</decal>
 		<name>WGFest 2018 nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -79,6 +99,11 @@
 		</decal>
 		<name>Referal Programm nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -93,6 +118,11 @@
 		</decal>
 		<name>WOT Classic nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -107,6 +137,11 @@
 		</decal>
 		<name>Cosmonautics Day nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -121,6 +156,11 @@
 		</decal>
 		<name>BattlePass 2019</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<name>Master of Orion nonRU</name>
@@ -135,6 +175,11 @@
 			<userString>#vehicle_customization:inscription/special/special_304</userString>
 			<mirror>false</mirror>
 		</decal>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -155,6 +200,11 @@
 		</decal>
 		<name>BattlePass 2020 nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -169,6 +219,11 @@
 		</decal>
 		<name>Stay Home nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -183,6 +238,11 @@
 		</decal>
 		<name>10 Years Countdown nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -198,6 +258,11 @@
 		</decal>
 		<name>Twitch January 2021</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -213,6 +278,11 @@
 		</decal>
 		<name>Twitch November 2020</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
@@ -233,5 +303,10 @@
 		</decal>
 		<name>Gagarin nonRU</name>
 		<type>INSCRIPTION</type>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 </root>

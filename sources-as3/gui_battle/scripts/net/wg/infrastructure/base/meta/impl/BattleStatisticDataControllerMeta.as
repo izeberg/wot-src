@@ -4,6 +4,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.VO.daapi.DAAPIPlayerStatusVO;
    import net.wg.data.VO.daapi.DAAPIQuestStatusVO;
    import net.wg.data.VO.daapi.DAAPITriggeredCommandsVO;
+   import net.wg.data.VO.daapi.DAAPITriggeredPriorityCommandVO;
    import net.wg.data.VO.daapi.DAAPIVehicleStatusVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
    import net.wg.data.VO.daapi.DAAPIVehiclesDataVO;
@@ -211,6 +212,12 @@ package net.wg.infrastructure.base.meta.impl
          this.updateTriggeredChatCommands(_loc2_);
       }
       
+      public final function as_updatePriorityChatCommand(param1:Object) : void
+      {
+         var _loc2_:DAAPITriggeredPriorityCommandVO = new DAAPITriggeredPriorityCommandVO(param1);
+         this.updatePriorityChatCommand(_loc2_);
+      }
+      
       protected function getDAAPIVehiclesDataVOForVehData(param1:Object) : DAAPIVehiclesDataVO
       {
          var _loc2_:String = "getDAAPIVehiclesDataVOForVehData" + Errors.ABSTRACT_INVOKE;
@@ -333,6 +340,13 @@ package net.wg.infrastructure.base.meta.impl
       protected function updateTriggeredChatCommands(param1:DAAPITriggeredCommandsVO) : void
       {
          var _loc2_:String = "as_updateTriggeredChatCommands" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc2_);
+         throw new AbstractException(_loc2_);
+      }
+      
+      protected function updatePriorityChatCommand(param1:DAAPITriggeredPriorityCommandVO) : void
+      {
+         var _loc2_:String = "as_updatePriorityChatCommand" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);
          throw new AbstractException(_loc2_);
       }

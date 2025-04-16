@@ -154,6 +154,10 @@ class IBattleCommunicationsSettings(object):
     def showBaseMarkers(self):
         raise NotImplementedError
 
+    @property
+    def showCommendationsFeedbackOnReceive(self):
+        raise NotImplementedError
+
     def init(self):
         raise NotImplementedError
 

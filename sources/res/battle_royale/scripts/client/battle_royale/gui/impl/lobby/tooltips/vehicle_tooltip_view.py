@@ -3,11 +3,8 @@ from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from gui.shared.tooltips.vehicle import StatusBlockConstructor
-from helpers import dependency
-from skeletons.gui.game_control import IBattleRoyaleController
 
 class VehicleTooltipView(ViewImpl):
-    __brController = dependency.descriptor(IBattleRoyaleController)
 
     def __init__(self, intCD, context):
         settings = ViewSettings(R.views.battle_royale.lobby.tooltips.VehicleTooltipView())
@@ -31,12 +28,9 @@ class VehicleTooltipView(ViewImpl):
         model.setVehicleName(title)
         model.setVehicleNation(nationName)
         self.__fillStatus(self.__vehicle, model)
-        model.setHasSTPDailyFactor(self.__brController.hasSTPDailyFactor(self.__vehicle))
 
     def __fillStatus(self, vehicle, model):
         statusConfig = self.__context.getStatusConfiguration(vehicle)
         _, __, status = StatusBlockConstructor(vehicle, statusConfig).construct()
-        if status is not None:
-            model.setStatusText(status['header'])
-            model.setStatusLevel(status['level'])
-        return
+        model.setStatusText(status['header'])
+        model.setStatusLevel(status['level'])

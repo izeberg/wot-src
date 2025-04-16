@@ -5,6 +5,7 @@ package net.wg.gui.battle.views.gameMessagesPanel
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
+   import net.wg.gui.battle.interfaces.IGameMessageVO;
    import net.wg.gui.battle.views.gameMessagesPanel.components.EndGameMessage;
    import net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase;
    import net.wg.gui.battle.views.gameMessagesPanel.data.GameMessageVO;
@@ -29,7 +30,7 @@ package net.wg.gui.battle.views.gameMessagesPanel
       
       protected var msgClassTypeDict:Dictionary = null;
       
-      private var _messagesStack:Vector.<GameMessageVO> = null;
+      private var _messagesStack:Vector.<IGameMessageVO> = null;
       
       private var _activeMessages:Vector.<MessageContainerBase> = null;
       
@@ -43,7 +44,7 @@ package net.wg.gui.battle.views.gameMessagesPanel
       {
          this._scheduler = App.utils.scheduler;
          super();
-         this._messagesStack = new Vector.<GameMessageVO>(0);
+         this._messagesStack = new Vector.<IGameMessageVO>(0);
          this._activeMessages = new Vector.<MessageContainerBase>(0);
          this.initMappingDict();
       }
@@ -75,9 +76,14 @@ package net.wg.gui.battle.views.gameMessagesPanel
          super.onDispose();
       }
       
-      override protected function addMessage(param1:GameMessageVO) : void
+      override protected function getIGameMessageVOForMessageVO(param1:Object) : IGameMessageVO
       {
-         var _loc2_:GameMessageVO = new GameMessageVO(param1.toHash());
+         return new GameMessageVO(param1);
+      }
+      
+      override protected function addMessage(param1:IGameMessageVO) : void
+      {
+         var _loc2_:IGameMessageVO = this.getIGameMessageVOForMessageVO(param1.toHash());
          if(!this._isPlayingMessages && this._enablePlaying)
          {
             this._messagesStack.push(_loc2_);
@@ -134,7 +140,7 @@ package net.wg.gui.battle.views.gameMessagesPanel
       
       private function removeStackMessages() : void
       {
-         var _loc1_:GameMessageVO = null;
+         var _loc1_:IGameMessageVO = null;
          for each(_loc1_ in this._messagesStack)
          {
             _loc1_.dispose();
@@ -210,7 +216,7 @@ package net.wg.gui.battle.views.gameMessagesPanel
       private function playFromStack() : void
       {
          var _loc2_:MessageContainerBase = null;
-         var _loc1_:GameMessageVO = this._messagesStack.pop();
+         var _loc1_:IGameMessageVO = this._messagesStack.pop();
          if(_loc1_)
          {
             _loc2_ = App.utils.classFactory.getComponent(this.msgLinkageTypeDict[_loc1_.messageType],this.msgClassTypeDict[_loc1_.messageType]);

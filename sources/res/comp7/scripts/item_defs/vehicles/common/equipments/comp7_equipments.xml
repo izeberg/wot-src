@@ -105,7 +105,7 @@
 				<exports>vse tooltip</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				3
+				4
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -313,7 +313,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<gunReloadTimeBuff>
-				0.7 0.575 0.45
+				0.7 0.6 0.50
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
@@ -344,7 +344,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<dmgAbsorb>
-				0.85 0.775 0.70
+				0.85 0.80 0.75
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</dmgAbsorb>
@@ -390,11 +390,11 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				5
+				1
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				15
+				20
 				<exports>vse tooltip</exports>
 			</duration>
 			<shotDispersionFactors>
@@ -488,7 +488,7 @@
 				<exports>vse tooltip</exports>
 			</baseHeal>
 			<extraHealFactor>
-				0.35 0.55 0.75
+				0.35 0.50 0.70
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</extraHealFactor>

@@ -130,7 +130,8 @@ package net.wg.gui.lobby.settings
          var _loc18_:DevMapsVO = null;
          var _loc19_:SimpleExtraVO = null;
          var _loc20_:SimpleExtraVO = null;
-         var _loc21_:String = null;
+         var _loc21_:SimpleExtraVO = null;
+         var _loc22_:String = null;
          var _loc2_:Vector.<String> = param1.keys;
          var _loc3_:Vector.<Object> = param1.values;
          var _loc4_:int = _loc2_.length;
@@ -209,6 +210,11 @@ package net.wg.gui.lobby.settings
                            this._restartNewbieBattleHints.enabled = _loc20_.enabled;
                         }
                      }
+                     else if(_loc5_ == SettingsConfigHelper.ENABLE_COMMENDATIONS_FEEDBACK)
+                     {
+                        _loc21_ = new SimpleExtraVO(_loc6_.extraData);
+                        _loc9_.enabled = _loc21_.enabled;
+                     }
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
                      this.setupDropDown(_loc7_[_loc8_],_loc6_,_loc10_);
@@ -224,8 +230,8 @@ package net.wg.gui.lobby.settings
                      this.setupButtonBar(ButtonBarEx(_loc7_[_loc8_]),_loc6_,_loc10_);
                      if(_loc5_ == SettingsConfigHelper.CAROUSEL_TYPE)
                      {
-                        _loc21_ = SettingsConfigHelper.CAROUSEL_TYPE_ID[_loc6_.current];
-                        _loc7_.doubleCarouselTypeDropDown.enabled = _loc21_ == SettingsConfigHelper.CAROUSEL_DOUBLE;
+                        _loc22_ = SettingsConfigHelper.CAROUSEL_TYPE_ID[_loc6_.current];
+                        _loc7_.doubleCarouselTypeDropDown.enabled = _loc22_ == SettingsConfigHelper.CAROUSEL_DOUBLE;
                      }
                }
             }

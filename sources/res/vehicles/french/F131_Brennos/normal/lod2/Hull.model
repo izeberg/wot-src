@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Brennos/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/french/F131_Brennos/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.821942 -0.740421 -4.562943</min>
+		<max>1.820322 0.756936 4.356995</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

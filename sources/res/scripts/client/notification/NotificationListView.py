@@ -15,6 +15,7 @@ from messenger.formatters import TimeFormatter
 from notification import NotificationMVC
 from notification.BaseNotificationView import BaseNotificationView
 from notification.settings import LIST_SCROLL_STEP_FACTOR, NOTIFICATION_STATE
+from notification.utils import dynamicNotificationRegister
 from skeletons.gui.game_control import IPromoController, IWinbackController
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
@@ -47,6 +48,9 @@ class NotificationListView(NotificationsListMeta, BaseNotificationView):
     def onCheckNewsClick(self):
         self.__openPromoScreen()
         self.destroy()
+
+    def registerGFNotification(self, component, alias, gfViewName, isPopUp, linkageData):
+        dynamicNotificationRegister(self, component, alias, gfViewName, isPopUp, linkageData, self._onRegisterFlashComponent)
 
     def _populate(self):
         super(NotificationListView, self)._populate()

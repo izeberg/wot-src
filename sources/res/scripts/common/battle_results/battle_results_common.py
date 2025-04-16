@@ -772,7 +772,11 @@ BATTLE_RESULTS = [
  (
   'prestigeResults', dict, {}, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'finalVehInfo', dict, {}, None, 'skip', ENTRY_TYPE.SERVER)]
+  'finalVehInfo', dict, {}, None, 'skip', ENTRY_TYPE.SERVER),
+ (
+  'commendationsReceived', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'commendationsSent', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF)]
 BATTLE_PASS_RESULTS = [
  (
   'bpChaptersInfo', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

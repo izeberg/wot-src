@@ -1,5 +1,6 @@
 from enum import Enum
 import SoundGroups
+from shared_utils import CONST_CONTAINER
 from comp7.gui.impl.gen.view_models.views.lobby.enums import MetaRootViews
 from sound_gui_manager import CommonSoundSpaceSettings
 
@@ -15,6 +16,13 @@ class MetaViewSounds(Enum):
 class FlybySounds(Enum):
     START = 'comp_7_shop_purchase_anim_start'
     STOP = 'comp_7_shop_purchase_anim_stop'
+
+
+class VehicleVideoSounds(CONST_CONTAINER):
+    START = 'comp_7_video_reward_style_start'
+    PAUSE = 'comp_7_video_reward_style_pause'
+    RESUME = 'comp_7_video_reward_style_resume'
+    END = 'comp_7_video_reward_style_stop'
 
 
 def getComp7MetaSoundSpace():

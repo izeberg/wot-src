@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F127_AMX_ELC_901/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.137150 0.000444 -1.952256</min>
+		<max>1.153813 0.844411 1.759063</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F127_AMX_ELC_901/normal/lod3/Chassis</nodefullVisual>
+</root>

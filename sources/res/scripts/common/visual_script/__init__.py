@@ -2,7 +2,7 @@ from visual_script.misc import ASPECT
 from visual_script.registrar import VSBlockRegistrar
 from visual_script.contexts.perks_context import PerkContext, CrewContext, PerkNotifyState
 from visual_script.contexts.cgf_context import CGFGameObjectContext
-import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, bitmask_blocks_common, dictionary_blocks, debug_manager_blocks, cgf_blocks
+import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, bitmask_blocks_common, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common
 g_blockRegistrar = VSBlockRegistrar(ASPECT.CLIENT, ASPECT.SERVER)
 g_blockRegistrar.regBlocksFromModule(example)
 g_blockRegistrar.regTypesFromModule(example)
@@ -30,3 +30,4 @@ g_blockRegistrar.regBlocksFromModule(dictionary_blocks)
 g_blockRegistrar.regTypesFromModule(dictionary_blocks)
 g_blockRegistrar.regBlocksFromModule(debug_manager_blocks)
 g_blockRegistrar.regBlocksFromModule(cgf_blocks)
+g_blockRegistrar.regTypesFromModule(commendations_common)

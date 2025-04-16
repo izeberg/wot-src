@@ -70,7 +70,6 @@ class ParamTypes(object):
 BR_QUEST_ID_PREFIX = 'token:br:title'
 BATTLE_ROYALE_VEHICLES_INVOICE = 'battle_royale_vehicles_invoice'
 BR_COIN = 'brcoin'
-STP_COIN = 'stpcoin'
 SUB_MODE_ID_KEY = 'SubModeId'
 
 class BattleRoyaleSubMode(object):
@@ -79,6 +78,3 @@ class BattleRoyaleSubMode(object):
     SQUAD_MODE_ID = 3
     ALL_RANGE = (
      SOLO_MODE_ID, SOLO_DYNAMIC_MODE_ID, SQUAD_MODE_ID)
-
-
-STP_COIN = 'stpcoin'

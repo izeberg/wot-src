@@ -6,6 +6,7 @@ package net.wg.infrastructure.helpers.statisticsDataController
    import net.wg.data.VO.daapi.DAAPIPlayerStatusVO;
    import net.wg.data.VO.daapi.DAAPIQuestStatusVO;
    import net.wg.data.VO.daapi.DAAPITriggeredCommandsVO;
+   import net.wg.data.VO.daapi.DAAPITriggeredPriorityCommandVO;
    import net.wg.data.VO.daapi.DAAPIVehicleStatusVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
    import net.wg.data.VO.daapi.DAAPIVehiclesDataVO;
@@ -21,6 +22,7 @@ package net.wg.infrastructure.helpers.statisticsDataController
    import net.wg.infrastructure.base.meta.impl.BattleStatisticDataControllerMeta;
    import net.wg.infrastructure.events.LifeCycleEvent;
    import net.wg.infrastructure.helpers.statisticsDataController.intarfaces.IBattleComponentDataController;
+   import net.wg.infrastructure.helpers.statisticsDataController.intarfaces.IBattleTabDataController;
    import net.wg.infrastructure.interfaces.IDAAPIModule;
    
    public class BattleStatisticDataController extends BattleStatisticDataControllerMeta implements IBattleStatisticDataControllerMeta, IDAAPIModule, IQuestProgressDataHub
@@ -28,6 +30,8 @@ package net.wg.infrastructure.helpers.statisticsDataController
        
       
       protected var _componentControllers:Vector.<IBattleComponentDataController>;
+      
+      protected var _tabControllers:Vector.<IBattleTabDataController>;
       
       private var _questProgressViews:Vector.<IQuestProgressViewUpdatable>;
       
@@ -42,6 +46,7 @@ package net.wg.infrastructure.helpers.statisticsDataController
       public function BattleStatisticDataController(param1:DisplayObjectContainer = null)
       {
          this._componentControllers = new Vector.<IBattleComponentDataController>();
+         this._tabControllers = new Vector.<IBattleTabDataController>();
          this._questProgressViews = new Vector.<IQuestProgressViewUpdatable>(0);
          super();
          this._container = param1;
@@ -113,18 +118,28 @@ package net.wg.infrastructure.helpers.statisticsDataController
       override protected function setArenaInfo(param1:DAAPIArenaInfoVO) : void
       {
          var _loc2_:IBattleComponentDataController = null;
+         var _loc3_:IBattleTabDataController = null;
          for each(_loc2_ in this._componentControllers)
          {
             _loc2_.setArenaInfo(param1);
+         }
+         for each(_loc3_ in this._tabControllers)
+         {
+            _loc3_.setArenaInfo(param1);
          }
       }
       
       override protected function setQuestStatus(param1:DAAPIQuestStatusVO) : void
       {
          var _loc2_:IBattleComponentDataController = null;
+         var _loc3_:IBattleTabDataController = null;
          for each(_loc2_ in this._componentControllers)
          {
             _loc2_.setQuestStatus(param1);
+         }
+         for each(_loc3_ in this._tabControllers)
+         {
+            _loc3_.setQuestStatus(param1);
          }
       }
       
@@ -184,6 +199,9 @@ package net.wg.infrastructure.helpers.statisticsDataController
          this._componentControllers.fixed = false;
          this._componentControllers.splice(0,this._componentControllers.length);
          this._componentControllers = null;
+         this._tabControllers.fixed = false;
+         this._tabControllers.splice(0,this._tabControllers.length);
+         this._tabControllers = null;
          this._questProgressViews.fixed = false;
          this._questProgressViews.splice(0,this._questProgressViews.length);
          this._questProgressViews = null;
@@ -236,6 +254,15 @@ package net.wg.infrastructure.helpers.statisticsDataController
          for each(_loc2_ in this._componentControllers)
          {
             _loc2_.updateTriggeredChatCommands(param1);
+         }
+      }
+      
+      override protected function updatePriorityChatCommand(param1:DAAPITriggeredPriorityCommandVO) : void
+      {
+         var _loc2_:IBattleComponentDataController = null;
+         for each(_loc2_ in this._componentControllers)
+         {
+            _loc2_.updateTriggeredPriorityCommand(param1);
          }
       }
       
@@ -309,6 +336,11 @@ package net.wg.infrastructure.helpers.statisticsDataController
          this._componentControllers.push(param1);
       }
       
+      public function registerTabController(param1:IBattleTabDataController) : void
+      {
+         this._tabControllers.push(param1);
+      }
+      
       public function registerQuestProgressView(param1:IQuestProgressViewUpdatable) : void
       {
          this._questProgressViews.push(param1);
@@ -325,6 +357,15 @@ package net.wg.infrastructure.helpers.statisticsDataController
          if(_loc2_ != -1)
          {
             this._componentControllers.splice(_loc2_,1);
+         }
+      }
+      
+      public function unregisterTabController(param1:IBattleTabDataController) : void
+      {
+         var _loc2_:int = this._tabControllers.indexOf(param1);
+         if(_loc2_ != -1)
+         {
+            this._tabControllers.splice(_loc2_,1);
          }
       }
       

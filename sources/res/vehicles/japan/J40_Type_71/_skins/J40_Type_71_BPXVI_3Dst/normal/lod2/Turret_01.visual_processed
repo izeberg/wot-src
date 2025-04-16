@@ -208,7 +208,7 @@
 						<Texture>vehicles/japan/J40_Type_71/_skins/J40_Type_71_BPXVI_3Dst/Type_71_BPXVI_3Dst_turret_01_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.014718 1.057921 -1.295997</groupOrigin>
+				<groupOrigin>0.014718 1.057921 -1.306179</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -216,6 +216,6 @@
 		<min>-1.503596 -0.001526 -4.570056</min>
 		<max>1.536064 2.117367 1.520941</max>
 	</boundingBox>
-	<geometrySize>131274</geometrySize>
+	<geometrySize>131306</geometrySize>
 	<minUVDensity>0.003674</minUVDensity>
 </root>

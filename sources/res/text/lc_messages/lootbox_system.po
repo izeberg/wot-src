@@ -35,12 +35,6 @@ msgstr "Other"
 msgid "autoOpenView/rewardGroups/vehicles"
 msgstr "Vehicles"
 
-msgid "autoOpenView/rewards/premiumDay"
-msgid_plural "plural/autoOpenView/rewards/premiumDay"
-msgstr[0] "day"
-msgstr[1] "days"
-msgstr[2] "days"
-
 msgid "autoOpenView/subTitle"
 msgstr "We opened %(boxCount) for you"
 
@@ -52,27 +46,6 @@ msgstr "YOU HAVE RECEIVED"
 
 msgid "awardViews/footer/backButton/"
 msgstr "Back to Boxes"
-
-msgid "awardViews/footer/checkbox/"
-msgstr "Opening Animation"
-
-msgid "awardViews/footer/purchaseButtonText/"
-msgstr "GET BOXES"
-
-msgid "awardViews/footer/purchaseButtonTextCn/"
-msgstr "GET BOXES"
-
-msgid "awardViews/guaranteedTitle/nextBox/"
-msgstr "Guaranteed Reward in the next box!"
-
-msgid "awardViews/guaranteedTitle/text"
-msgstr "Maximum boxes before a Guaranteed Reward: %(count)"
-
-msgid "awardViews/quantityTitle/boxesAvailable"
-msgstr "Boxes available: %(boxesCount)"
-
-msgid "awardViews/quantityTitle/noBoxes"
-msgstr "No boxes available"
 
 msgid "bonuses/customization/rarity/epic"
 msgstr "Epic"
@@ -139,14 +112,35 @@ msgstr "TACTICAL BOX"
 msgid "common/closeButton"
 msgstr "CLOSE"
 
+msgid "common/footer/checkbox"
+msgstr "Opening Animation"
+
+msgid "common/getButton/lowerCase"
+msgstr "Get Boxes"
+
+msgid "common/getButton/upperCase"
+msgstr "GET BOXES"
+
 msgid "common/infoButton"
 msgstr "WHAT'S INSIDE?"
 
 msgid "common/loader"
 msgstr "Box opening..."
 
+msgid "common/rewards/count"
+msgid_plural "plural/common/rewards/count"
+msgstr[0] "%(count) pc."
+msgstr[1] "%(count) pcs."
+msgstr[2] "%(count) pcs."
+
 msgid "common/rewards/multiplier"
 msgstr "x{count}"
+
+msgid "common/rewards/premiumDay"
+msgid_plural "plural/common/rewards/premiumDay"
+msgstr[0] "day"
+msgstr[1] "days"
+msgstr[2] "days"
 
 msgid "common/statistics/emptyHeader"
 msgstr "Open boxes to view statistics."
@@ -214,32 +208,20 @@ msgstr "Battlefield Supplies"
 msgid "eventName/upperCase"
 msgstr "BATTLEFIELD SUPPLIES"
 
+msgid "guaranteedTitle/nextBox"
+msgstr "Guaranteed Reward in the next box!"
+
+msgid "guaranteedTitle/text"
+msgstr "Maximum boxes before a Guaranteed Reward: %(count)"
+
 msgid "hasBoxesView/guaranteedTitle/tabText"
 msgid_plural "plural/hasBoxesView/guaranteedTitle/tabText"
 msgstr[0] "%(count) opening left until Guaranteed Reward"
 msgstr[1] "%(count) openings left until Guaranteed Reward"
 msgstr[2] "%(count) openings left until Guaranteed Reward"
 
-msgid "hasBoxesView/numberOfBoxesToOpen"
-msgid_plural "plural/hasBoxesView/numberOfBoxesToOpen"
-msgstr[0] "%(count) pc."
-msgstr[1] "%(count) pcs."
-msgstr[2] "%(count) pcs."
-
 msgid "hasBoxesView/openButtonText"
 msgstr "Open"
-
-msgid "hasBoxesView/purchaseButtonText"
-msgstr "GET BOXES"
-
-msgid "hasBoxesView/purchaseButtonTextCn"
-msgstr "GET BOXES"
-
-msgid "hasBoxesView/quantityTitle/boxesAvailable"
-msgstr "Boxes available: %(boxesCount)"
-
-msgid "hasBoxesView/quantityTitle/noBoxes"
-msgstr "No boxes available"
 
 msgid "helpers/doubleBreakLine"
 msgstr "<br/><br/>"
@@ -282,12 +264,6 @@ msgstr ""
 msgid "infoPage/header/lootListLink"
 msgstr "View list of items on the game portal"
 
-msgid "infoPage/header/shopButton"
-msgstr "Get Boxes"
-
-msgid "infoPage/header/shopButtonCn"
-msgstr "Get Boxes"
-
 msgid "infoPage/header/subtitle"
 msgstr "From %(from) through %(to)"
 
@@ -300,12 +276,6 @@ msgstr "|"
 msgid "infoPage/rewards/percent"
 msgstr "%"
 
-msgid "infoPage/rewards/premiumDay"
-msgid_plural "plural/infoPage/rewards/premiumDay"
-msgstr[0] "day"
-msgstr[1] "days"
-msgstr[2] "days"
-
 msgid "multipleRewardView/footer/openNextButton/"
 msgstr "Open %(count) More"
 
@@ -315,24 +285,19 @@ msgstr "From the %(name) (%(boxesCount) boxes opened)"
 msgid "multipleRewardView/header/title/"
 msgstr "YOU HAVE RECEIVED"
 
-msgid "noBoxesView/buyBoxesButtonText/"
-msgstr "Get Boxes"
-
-msgid "noBoxesView/buyBoxesButtonTextCn/"
-msgstr "Get Boxes"
-
 msgid "noBoxesView/description/"
 msgstr ""
-"You do not have any boxes. You can purchase them\n"
+"You do not have any boxes. You can get them\n"
 "in the in-game Store or the Premium Shop."
-
-msgid "noBoxesView/descriptionCn/"
-msgstr ""
-"You do not have any boxes.\n"
-"You can get them in the Premium Shop."
 
 msgid "preview/backLabel"
 msgstr "TO BOXES"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "Boxes available: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "No boxes available"
 
 msgid "rareRewardOverlay/rewardDescription/button/text"
 msgstr "Continue"
@@ -353,9 +318,6 @@ msgid "serviceChannelMessages/finish/text"
 msgstr ""
 "All remaining boxes will be opened. Their contents will be added to your "
 "account."
-
-msgid "serviceChannelMessages/lootBoxDefault"
-msgstr "Tactical Box"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "View Rewards"
@@ -464,18 +426,6 @@ msgstr "Unique crew member"
 msgid "statisticsRewards/count/currency"
 msgstr "%(currency)"
 
-msgid "statisticsRewards/count/days"
-msgid_plural "plural/statisticsRewards/count/days"
-msgstr[0] "%(count) day"
-msgstr[1] "%(count) days"
-msgstr[2] "%(count) days"
-
-msgid "statisticsRewards/count/default"
-msgid_plural "plural/statisticsRewards/count/default"
-msgstr[0] "%(count) pc."
-msgstr[1] "%(count) pcs."
-msgstr[2] "%(count) pcs."
-
 msgid "statisticsRewards/label/attachment"
 msgstr "3D Attachments"
 
@@ -557,12 +507,6 @@ msgstr "Click to reset all statistics."
 msgid "statisticsRewards/tooltips/category/attachment"
 msgstr "%(num). %(label) %(count) %(rarity)"
 
-msgid "statisticsRewards/tooltips/category/compensationCount"
-msgid_plural "plural/statisticsRewards/tooltips/category/compensationCount"
-msgstr[0] "%(count) pc."
-msgstr[1] "%(count) pcs."
-msgstr[2] "%(count) pcs."
-
 msgid "statisticsRewards/tooltips/category/hiddenRewardsCount"
 msgid_plural "plural/statisticsRewards/tooltips/category/hiddenRewardsCount"
 msgstr[0] "And %(count) more reward."
@@ -592,3 +536,6 @@ msgstr "%(num). %(vehicle)"
 
 msgid "statisticsRewards/tooltips/category/vehicleCompensation"
 msgstr "Compensated vehicles: %(count)"
+
+msgid "tooltip/compensation/notification"
+msgstr "Compensation for a vehicle that is already in your Garage."

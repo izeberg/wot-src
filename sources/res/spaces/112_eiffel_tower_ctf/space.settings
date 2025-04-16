@@ -86,5 +86,11 @@
 		<blurFilterExtent>27</blurFilterExtent>
 		<blurFilterFalloff>0.000100</blurFilterFalloff>
 	</shadowBaker>
+	<borderMask>borderMask.dds</borderMask>
 	<NonChunkUDO>true</NonChunkUDO>
+	<navmeshGenerator>navgen</navmeshGenerator>
+	<enableClusteredShading>false</enableClusteredShading>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
 </root>

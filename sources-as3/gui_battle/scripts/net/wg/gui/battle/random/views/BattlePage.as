@@ -13,6 +13,7 @@ package net.wg.gui.battle.random.views
    import net.wg.gui.battle.components.TimersPanel;
    import net.wg.gui.battle.interfaces.IFullStats;
    import net.wg.gui.battle.interfaces.IReservesStats;
+   import net.wg.gui.battle.interfaces.ITabScreen;
    import net.wg.gui.battle.random.views.fragCorrelationBar.FragCorrelationBar;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.PlayersPanel;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.events.PlayersPanelEvent;
@@ -95,6 +96,8 @@ package net.wg.gui.battle.random.views
       
       public var fullStats:IFullStats = null;
       
+      public var tabScreen:ITabScreen = null;
+      
       public var playersPanel:PlayersPanel = null;
       
       public var radialMenu:RadialMenu = null;
@@ -151,6 +154,10 @@ package net.wg.gui.battle.random.views
          if(this.fullStats)
          {
             this.fullStats.updateStageSize(param1,param2);
+         }
+         if(this.tabScreen)
+         {
+            this.tabScreen.updateStageSize(param1,param2);
          }
          if(this.playersPanel)
          {
@@ -225,6 +232,10 @@ package net.wg.gui.battle.random.views
          {
             param1.registerComponentController(this.fullStats);
          }
+         if(this.tabScreen)
+         {
+            param1.registerTabController(this.tabScreen);
+         }
          if(this.playersPanel)
          {
             param1.registerComponentController(this.playersPanel);
@@ -251,6 +262,7 @@ package net.wg.gui.battle.random.views
       override protected function onPopulate() : void
       {
          var _loc2_:IDAAPIModule = null;
+         var _loc3_:IDAAPIModule = null;
          registerComponent(this.teamBasesPanelUI,BATTLE_VIEW_ALIASES.TEAM_BASES_PANEL);
          registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
          registerComponent(this.damageInfoPanel,BATTLE_VIEW_ALIASES.DAMAGE_INFO_PANEL);
@@ -258,6 +270,15 @@ package net.wg.gui.battle.random.views
          if(this.fullStats)
          {
             registerComponent(this.fullStats,BATTLE_VIEW_ALIASES.FULL_STATS);
+         }
+         else if(this.tabScreen)
+         {
+            registerComponent(this.tabScreen,BATTLE_VIEW_ALIASES.FULL_STATS);
+            _loc2_ = this.tabScreen.getTabContentView();
+            if(_loc2_)
+            {
+               registerComponent(_loc2_,BATTLE_VIEW_ALIASES.TAB_CONTENT);
+            }
          }
          registerComponent(this.debugPanel,BATTLE_VIEW_ALIASES.DEBUG_PANEL);
          if(this.playersPanel)
@@ -303,10 +324,10 @@ package net.wg.gui.battle.random.views
          var _loc1_:IReservesStats = this.fullStats as IReservesStats;
          if(_loc1_)
          {
-            _loc2_ = _loc1_.getReservesView();
-            if(_loc2_)
+            _loc3_ = _loc1_.getReservesView();
+            if(_loc3_)
             {
-               registerComponent(_loc2_,BATTLE_VIEW_ALIASES.PERSONAL_RESERVES_TAB);
+               registerComponent(_loc3_,BATTLE_VIEW_ALIASES.PERSONAL_RESERVES_TAB);
             }
          }
          super.onPopulate();
@@ -350,6 +371,7 @@ package net.wg.gui.battle.random.views
          this.damageInfoPanel = null;
          this.fragCorrelationBar = null;
          this.fullStats = null;
+         this.tabScreen = null;
          this.playersPanel = null;
          this.consumablesPanel = null;
          this.destroyTimersPanel = null;
@@ -435,6 +457,10 @@ package net.wg.gui.battle.random.views
          if(this.fullStats)
          {
             return this.fullStats.getStatsProgressView();
+         }
+         if(this.tabScreen)
+         {
+            return this.tabScreen.getStatsProgressView();
          }
          return null;
       }
@@ -596,7 +622,7 @@ package net.wg.gui.battle.random.views
          }
       }
       
-      private function updateTeamBasesPanelPosition(param1:Boolean = false) : void
+      protected function updateTeamBasesPanelPosition(param1:Boolean = false) : void
       {
          var _loc2_:int = 0;
          this._teamBasesPanelY = this.fragCorrelationBar != null && this.fragCorrelationBar.isCompVisible() ? int(this._teamBasesPanelDefaultY) : int(TEAM_BASES_PANEL_OFFSET);

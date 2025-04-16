@@ -72,6 +72,17 @@ msgstr ""
 msgid "06_ensk/name"
 msgstr "Ensk"
 
+msgid "06_ensk_big/description"
+msgstr ""
+"The industrial town of Ensk offers intense urban combat for heavies within "
+"its city blocks, with the railroad providing a route to switch flanks to the"
+" wooded outskirts. Mediums clash to seize breakthrough opportunities on the "
+"flanks, while a hilltop with abandoned buildings grants key positions for "
+"both mediums and lights."
+
+msgid "06_ensk_big/name"
+msgstr "Ensk Region"
+
 msgid "07_lakeville/description"
 msgstr ""
 "An isolated mountain valley on one flank and city blocks on the other allow "
@@ -252,6 +263,14 @@ msgstr ""
 msgid "13_erlenberg/name"
 msgstr "Erlenberg"
 
+msgid "140_fall_tanks/description"
+msgstr ""
+"A chaotic race across crumbling platforms and treacherous drops, where "
+"reaching checkpoints first is the key to victory."
+
+msgid "140_fall_tanks/name"
+msgstr "Tank race"
+
 msgid "14_siegfried_line/description"
 msgstr ""
 "The map is a combination of open spaces and city blocks. Meandering lanes "
@@ -269,6 +288,9 @@ msgstr ""
 
 msgid "14_siegfried_line_nom/name"
 msgstr "Westwall"
+
+msgid "14_siegfried_line_wt/name"
+msgstr "Siegfried Line"
 
 msgid "17_munchen/description"
 msgstr ""
@@ -339,6 +361,17 @@ msgstr ""
 "small village offers a more direct path into battle."
 
 msgid "212_epic_random_valley/name"
+msgstr "Nebelburg"
+
+msgid "212_epic_random_valley_sm25/description"
+msgstr ""
+"High in the mountains stands a solitary fortress manned by a German "
+"garrison. In the dead of night, far from news of their country's "
+"capitulation, the weary German soldiers fortify their position as Allied "
+"forces approach. Unaware of the futility of their stand, they brace for a "
+"final battle—one that will leave no winners."
+
+msgid "212_epic_random_valley_sm25/name"
 msgstr "Nebelburg"
 
 msgid "217_er_alaska/description"
@@ -413,11 +446,11 @@ msgstr "El Halluf"
 
 msgid "31_airfield/description"
 msgstr ""
-"This map offers many great ambush spots, as well as possibilities for "
+"This map offers excellent ambush positions, along with opportunities for "
 "maneuvers and breakthroughs. A large airfield in the upper part of the map "
-"and a rocky highland in the center offer a major tactical challenge. Occupy "
-"the highland to get a perfect view of the surrounding terrain and dominate "
-"routes to the enemy base."
+"provides strategic opportunities, while the central cave creates a unique "
+"battleground. Maneuverable vehicles can exploit the sand dunes and coastline"
+" for flanking attacks and rapid advances."
 
 msgid "31_airfield/name"
 msgstr "Airfield"
@@ -440,6 +473,9 @@ msgstr ""
 msgid "34_redshire/name"
 msgstr "Redshire"
 
+msgid "34_redshire_wt/name"
+msgstr "Redshire"
+
 msgid "35_steppes/description"
 msgstr ""
 "Generally open, this map allows you to strike in multiple directions, but "
@@ -448,6 +484,9 @@ msgstr ""
 " of the map may offer better avenues for attacks and feints."
 
 msgid "35_steppes/name"
+msgstr "Steppes"
+
+msgid "35_steppes_wt/name"
 msgstr "Steppes"
 
 msgid "36_fishing_bay/description"

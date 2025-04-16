@@ -4,6 +4,7 @@
 		<forward>
 			<angle>32.860001</angle>
 			<angleZ>132.320007</angleZ>
+			<angleShadow>32.860001</angleShadow>
 		</forward>
 		<deferred>
 			<angle>28.440001</angle>
@@ -186,7 +187,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.500000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
+		<flakesUvScale>0.800000</flakesUvScale>
+		<flakesGloss>0.890000</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 	</PBS>
 	<Weather>
 		<wind>
@@ -211,6 +216,7 @@
 	<overlayMaterial>
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
+		<colorTintMap/>
 	</overlayMaterial>
 	<dirt>
 		<normal>vehicles/russian/Tank_detail/Dirt3NM.dds</normal>
@@ -232,4 +238,30 @@
 		<waveMaskSpeed>0.240000</waveMaskSpeed>
 	</Wetness>
 	<name>DEFAULT</name>
+	<VolumetricFog>
+		<enabled>false</enabled>
+		<sampleShadows>true</sampleShadows>
+		<temporalReprojection>true</temporalReprojection>
+		<fogDistance>500.000000</fogDistance>
+		<fogStart>0.000000</fogStart>
+		<hdrScale>1.000000</hdrScale>
+		<sunLightScatterCoef>0.100000</sunLightScatterCoef>
+		<shadowCoef>0.400000</shadowCoef>
+		<numOfLightMarchSteps>5</numOfLightMarchSteps>
+		<shadowDensity>1.650000</shadowDensity>
+		<shadowStepLength>0.350000</shadowStepLength>
+		<useLightMarching>false</useLightMarching>
+		<curveCConst>4.400000</curveCConst>
+		<curvePConst>26.000000</curvePConst>
+		<enableLocalLights>false</enableLocalLights>
+		<densityFix>1.000000</densityFix>
+	</VolumetricFog>
+	<DOF>
+		<enable>false</enable>
+		<nearStart>2.000000</nearStart>
+		<nearDist>3.000000</nearDist>
+		<farStart>50.000000</farStart>
+		<farDist>20.000000</farDist>
+		<blurRadius>0.006000</blurRadius>
+	</DOF>
 </root>

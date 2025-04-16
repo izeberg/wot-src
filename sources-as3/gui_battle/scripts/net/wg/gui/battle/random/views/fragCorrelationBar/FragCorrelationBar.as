@@ -375,5 +375,9 @@ package net.wg.gui.battle.random.views.fragCorrelationBar
          this._enemyVehicleMarkersList.color = this._loseColorScheme.aliasColor;
          invalidate(INVALID_COLOR_SCHEME);
       }
+      
+      public function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void
+      {
+      }
    }
 }

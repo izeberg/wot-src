@@ -1026,9 +1026,7 @@ msgid "qualification/counter"
 msgstr "%(battlesCount)s / %(maxBattlesCount)s"
 
 msgid "qualification/counterWithDescription"
-msgstr ""
-"%(counter)s\n"
-"Battles fought"
+msgstr "Battles fought"
 
 msgid "qualification/ratingCalculationDescription"
 msgstr "Waiting for Qualification results to receive your rank %(timerIcon)s"
@@ -1204,14 +1202,39 @@ msgstr "BRONZE"
 msgid "rankUpper/sixth"
 msgstr "LEGEND"
 
+msgid "rankUpper/text"
+msgstr "%(rank)s RANK"
+
 msgid "rankUpper/third"
 msgstr "SILVER"
 
 msgid "ratingScore/title"
 msgstr "Rating Points"
 
-msgid "rewards/bonus/deluxe_gift"
-msgstr "Improved equipment"
+msgid "rewardSelection/tooltip/selectableRewardList/deluxe"
+msgstr ""
+"You can select one piece of Improved Equipment from the list below:\n"
+"\n"
+"• Stealth Exhaust Unit\n"
+"• Innovative Targeting\n"
+"• Improved Final Drive\n"
+"• Improved Compressor\n"
+"• Increased Shell Resistance\n"
+"• Improved Configuration\n"
+"• Experimental Optics\n"
+"• Innovative Loading System\n"
+"• Venting System\n"
+"• Wear-Resistant Gun Laying Drive\n"
+"• Stabilizing Equipment System"
+
+msgid "rewardSelection/tooltip/selectableRewardList/modernized_devices_t3"
+msgstr ""
+"You can select one piece of Experimental Equipment from the list below:\n"
+"\n"
+"• Fire-Control System T3\n"
+"• Survival Improvement System T3\n"
+"• Mobility Improvement System T3\n"
+"• Accuracy Improvement System T3"
 
 msgid "rewards/bonus/style_progress"
 msgstr "%(name)s camouflage"
@@ -1228,7 +1251,7 @@ msgstr ""
 
 msgid "rewards/subtitle/styleProgress"
 msgstr ""
-"{whiteSpanish_Open}For the Hybrid Beast (Crimson) style{whiteSpanish_Close}"
+"{whiteSpanish_Open}For the Hybrid Beast (Jade) style{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "Tier %(vehicleLevel)s"
@@ -1238,9 +1261,6 @@ msgstr "You also received:"
 
 msgid "rewardsScreen/button"
 msgstr "Affirmative!"
-
-msgid "rewardsScreen/buttonToOtherRewards"
-msgstr "To Other Rewards"
 
 msgid "rewardsScreen/buttonToRewards"
 msgstr "To Rewards"
@@ -1266,6 +1286,9 @@ msgstr "ONSLAUGHT SEASON OF THE JADE MANTICORE"
 msgid "rewardsScreen/description/year"
 msgstr "ONSLAUGHT. YEAR OF THE MANTICORE"
 
+msgid "rewardsScreen/goToVehicle"
+msgstr "Where's My Stinger?!"
+
 msgid "rewardsScreen/noSeasonResult"
 msgstr "No rank"
 
@@ -1281,6 +1304,12 @@ msgid "rewardsScreen/seasonPointsAmount"
 msgstr ""
 "Total Onslaught\n"
 "Colors"
+
+msgid "rewardsScreen/selectEquipment"
+msgstr "Select Equipment"
+
+msgid "rewardsScreen/selectRewards"
+msgstr "Select rewards"
 
 msgid "rewardsScreen/shopInfo/header/discount"
 msgstr "New discounts available in the Onslaught Shop!"
@@ -1354,7 +1383,7 @@ msgid "rewardsScreen/title/yearlyRewards"
 msgstr "ANNUAL REWARDS"
 
 msgid "rewardsScreen/yearlyVehicleCrew"
-msgstr "With unique crew members:"
+msgstr "Comes with:"
 
 msgid "rewardsSelectionScreen/description"
 msgstr "ONSLAUGHT"
@@ -1465,13 +1494,13 @@ msgstr[1] "Received %(points)s Onslaught Colors"
 msgstr[2] "Received %(points)s Onslaught Colors"
 
 msgid "seasonStatistics/seasonNameUpper/first"
-msgstr "SEASON I: AZURE MANTICORE"
+msgstr "SEASON I. AZURE MANTICORE"
 
 msgid "seasonStatistics/seasonNameUpper/second"
-msgstr "SEASON II: CRIMSON MANTICORE"
+msgstr "SEASON II. CRIMSON MANTICORE"
 
 msgid "seasonStatistics/seasonNameUpper/third"
-msgstr "SEASON III: JADE MANTICORE"
+msgstr "SEASON III. JADE MANTICORE"
 
 msgid "seasonStatistics/section/statistics/battles/additional"
 msgstr "Victories: %(additional)s"
@@ -1865,23 +1894,24 @@ msgid "whatsNewButtonLabel"
 msgstr "SEASON UPDATES"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "SEASON OF THE CRIMSON MANTICORE"
+msgstr "SEASON OF THE JADE MANTICORE"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "ONSLAUGHT. WHAT'S NEW?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Let's Do It!"
+msgstr "Showtime!"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Missions no longer expire and remain available for completion throughout the"
-" entire season, and you can track active mission progress via a widget in "
-"the Garage. Increased Shell Resistance has been replaced with an improved "
-"equipment token, allowing you to select any improved equipment as a reward."
+"This season marks your last chance to claim valuable rewards, including the "
+"exclusive Stinger Tier X heavy tank with all the unique 3D styles you've "
+"earned for it and a fearless crew, plus improved and Experimental Equipment "
+"to select from, an eye-catching 2D style, and more. Don't miss out—your "
+"victory awaits on the battlefield!"
 
 msgid "whatsNewView/intro/heading"
-msgstr "Weekly Missions %(tag)"
+msgstr "Seize the final moments of the Year of the Manticore!"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Maps"
@@ -1893,45 +1923,6 @@ msgstr ""
 
 msgid "whatsNewView/roleSkills/heading"
 msgstr "Role Skill Rebalance"
-
-msgid "whatsNewView/sectionDescription/bondShop"
-msgstr ""
-"Onslaught Shop items can now be easily accessed from the Items for Bonds "
-"screen."
-
-msgid "whatsNewView/sectionDescription/enemy"
-msgstr "You can now see enemies' nicknames and ranks at the start of battle."
-
-msgid "whatsNewView/sectionDescription/legendRank"
-msgstr ""
-"The {whiteSpanish_Open}top %(topPercentage)s%{whiteSpanish_Close} of players"
-" on the Leaderboard will now have the Legend rank, with positions updated "
-"every {whiteSpanish_Open}%(count)s&nbsp;minutes{whiteSpanish_Close}."
-
-msgid "whatsNewView/sectionDescription/platoons_2"
-msgstr ""
-"The rank difference between the lowest- and highest-ranked players cannot "
-"exceed one rank."
-
-msgid "whatsNewView/sectionDescription/platoons_7"
-msgstr ""
-"The rank difference between the lowest- and highest-ranked players cannot "
-"exceed two ranks."
-
-msgid "whatsNewView/sectionHeading/bondShop"
-msgstr "Shop Integration"
-
-msgid "whatsNewView/sectionHeading/enemy"
-msgstr "Know Your Enemy"
-
-msgid "whatsNewView/sectionHeading/legendRank"
-msgstr "Legend Rank Expansion"
-
-msgid "whatsNewView/sectionHeading/platoons"
-msgstr "New Platoon Limitations: From Rating to Rank"
-
-msgid "whatsNewView/sectionSubtitle/platoons"
-msgstr "%(count)s-player Platoons"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "EXCLUDED"
@@ -1960,25 +1951,6 @@ msgstr "Rental Vehicles"
 msgid "whatsNewView/watchVideo"
 msgstr "Watch Video"
 
-msgid "yearRewards/tooltip/selectableReward/list"
-msgstr ""
-"You can select one piece of Improved Equipment from the list below:\n"
-"\n"
-"• Stealth Exhaust Unit\n"
-"• Innovative Targeting\n"
-"• Improved Final Drive\n"
-"• Improved Compressor\n"
-"• Increased Shell Resistance\n"
-"• Improved Configuration\n"
-"• Experimental Optics\n"
-"• Innovative Loading System\n"
-"• Venting System\n"
-"• Wear-Resistant Gun Laying Drive\n"
-"• Stabilizing Equipment System"
-
-msgid "yearRewards/tooltip/selectableReward/title"
-msgstr "Improved Equipment"
-
 msgid "yearlyRewards/banner/default"
 msgstr "Rewards are delivered at the end of the third season."
 
@@ -1989,10 +1961,13 @@ msgid "yearlyRewards/banner/rewardsReceived"
 msgstr "Annual Reward received. See you next year!"
 
 msgid "yearlyRewards/banner/rewardsSelectionAvailable"
-msgstr "You have rewards to select from"
+msgstr "You have equipment to select from"
 
-msgid "yearlyRewards/banner/selectButtonLabel"
-msgstr "Choose Reward"
+msgid "yearlyRewards/claim"
+msgstr "Claim"
+
+msgid "yearlyRewards/claimReward"
+msgstr "Claim Reward"
 
 msgid "yearlyRewards/description/achieved"
 msgstr ""

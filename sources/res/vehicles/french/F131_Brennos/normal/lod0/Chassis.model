@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F131_Brennos/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.750193 -0.000096 -4.190838</min>
+		<max>1.750190 1.376262 4.225060</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F131_Brennos/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -2,6 +2,7 @@ from gui.Scaleform.daapi.view.battle.pve_base.page import PveBaseBattlePage
 from gui.Scaleform.daapi.view.battle.shared.page import ComponentsConfig
 from gui.Scaleform.daapi.view.battle.shared.start_countdown_sound_player import StartCountdownSoundPlayer
 from gui.Scaleform.genConsts.BATTLE_VIEW_ALIASES import BATTLE_VIEW_ALIASES
+from story_mode.gui.scaleform.genConsts.STORY_MODE_BATTLE_VIEW_ALIASES import STORY_MODE_BATTLE_VIEW_ALIASES
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from shared_utils import CONST_CONTAINER
 from story_mode.gui.scaleform.daapi.view.battle.page_base import STORY_MODE_EXTERNAL_COMPONENTS, StoryModeBattlePageBase
@@ -34,7 +35,8 @@ STORY_MODE_CONFIG = ComponentsConfig((
  (
   BATTLE_CTRL_ID.BATTLE_HINTS,
   (
-   BATTLE_VIEW_ALIASES.BATTLE_HINT, BATTLE_VIEW_ALIASES.NEWBIE_HINT)),
+   BATTLE_VIEW_ALIASES.BATTLE_HINT, BATTLE_VIEW_ALIASES.NEWBIE_HINT,
+   STORY_MODE_BATTLE_VIEW_ALIASES.TOP_BATTLE_HINT)),
  (
   BATTLE_CTRL_ID.PREBATTLE_SETUPS_CTRL,
   (

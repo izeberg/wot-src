@@ -19,6 +19,8 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.interfaces
       
       function setChatCommand(param1:String, param2:uint) : void;
       
+      function setPriorityCommand(param1:String, param2:uint, param3:uint) : void;
+      
       function get vehicleID() : Number;
       
       function get accountDBID() : Number;

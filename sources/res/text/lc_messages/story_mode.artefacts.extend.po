@@ -17,3 +17,20 @@ msgid "battleship/shortDescr"
 msgstr ""
 "A smoke signal that marks an area for a battleship artillery salvo, causing "
 "damage to enemy equipment and objects located there."
+
+msgid "distraction_ability/name"
+msgstr "False Order"
+
+msgid "distraction_ability/shortDescr"
+msgstr ""
+"Have Gefr. Keller use the captured German radio to transmit a false order, "
+"directing enemies to investigate a specified location."
+
+msgid "recon_ability/name"
+msgstr "Scout Around"
+
+msgid "recon_ability/shortDescr"
+msgstr ""
+"Send Capt. Dubois on reconnaissance to a specified location. While he is "
+"away, his vehicle remains stationary. The ability continues to operate until"
+" canceled."

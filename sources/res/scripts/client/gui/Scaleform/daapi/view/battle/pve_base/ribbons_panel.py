@@ -18,4 +18,5 @@ class PveRibbonsPanel(BattleRibbonsPanel):
 
     def _onPostMortemSwitched(self, *_):
         if not self.sessionProvider.getCtx().isPlayerObserver():
+            self._ribbonsAggregator.clearRibbonsData()
             self.as_resetS()

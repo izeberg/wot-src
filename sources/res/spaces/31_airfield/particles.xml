@@ -53,15 +53,10 @@
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/bld_19_04_Ampitheratre_ColumnRuin_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/bld_19_04_Ampitheratre_ColumnRuin_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AF_001_VHouse_Ruins_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AF_004_VHouse_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AF_005_Barracks_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AF_006_VHouse_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_19_04_Ampitheratre_WallRuin_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_19_04_Ampitheratre_WallRuin_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_19_04_Ampitheratre_WallRuin_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
@@ -72,6 +67,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_mle002_KPP_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_dust_devil.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_dust_devil_P.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_shore_foam2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_shore_waves.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_shore_wavesmall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_AM_055_DryRoots_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env021_pier_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env021_pier_3.vfx</fn_effect_bin>
@@ -119,7 +118,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mil005_KDP.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle013_WatchTower.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
@@ -137,6 +135,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Olive_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Olive_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Olive_03_fall.vfx</fn_effect_bin>
@@ -155,15 +155,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Conifers/tree_PheonixPalm_Small01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Conifers/tree_PheonixPalm_Small01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/bld_19_04_Ampitheratre_ColumnRuin_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/bld_19_04_Ampitheratre_ColumnRuin_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_001_VHouse_Ruins_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_004_VHouse_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_005_Barracks_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_006_VHouse_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_19_04_Ampitheratre_WallRuin_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_19_04_Ampitheratre_WallRuin_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_19_04_Ampitheratre_WallRuin_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
@@ -172,15 +167,20 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAF_module_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/10_hills_water_up_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_dust_devil.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_lightning_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_rif_foam.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_rif_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_roof_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_sand_fall_ee.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_sand_floor_ee.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/31_airfield_sea_tornado_sequence.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_foam2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_waves.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wavesmall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_water_small_dusturb.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env021_pier_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env021_pier_3.eff</fn_effect_bin>
@@ -228,7 +228,6 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mil005_KDP.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mle013_WatchTower.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
@@ -246,6 +245,8 @@
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Olive_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Olive_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Olive_03_fall.eff</fn_effect_bin>
@@ -273,9 +274,11 @@
 		<preloadVisual>particles/mesh_particles/tree_palm_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_palm_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
@@ -293,6 +296,18 @@
 		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_foam.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
@@ -357,15 +372,10 @@
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/bld_19_04_Ampitheratre_ColumnRuin_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/bld_19_04_Ampitheratre_ColumnRuin_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AF_001_VHouse_Ruins_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AF_004_VHouse_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AF_005_Barracks_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AF_006_VHouse_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_19_04_Ampitheratre_WallRuin_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_19_04_Ampitheratre_WallRuin_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_19_04_Ampitheratre_WallRuin_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
@@ -374,21 +384,29 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldAF_module_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_mle002_KPP_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_mle002_KPP_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/10_hills_water_up_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_dust_devil.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_dust_devil_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_lightning_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_lightning_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_rif_foam.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_rif_wave.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_rif_wave_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_roof_sand.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_sand_fall_ee.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_sand_fall_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_sand_floor_EE.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_sand_floor_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_sea_tornado_sequence.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_foam2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_foam2_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wave_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wave_splash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wave_splash_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_waves.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_waves_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wavesmall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wavesmall_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_water_small_dusturb.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_AM_055_DryRoots_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env021_pier_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env021_pier_3.vfx</fn_effect_bin>
@@ -436,7 +454,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mil005_KDP.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle013_WatchTower.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle020_GerMotocycle.vfx</fn_effect_bin>
@@ -454,6 +471,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Olive_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Olive_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Olive_03_fall.vfx</fn_effect_bin>
@@ -472,15 +491,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Conifers/tree_PheonixPalm_Small01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Conifers/tree_PheonixPalm_Small01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/bld_19_04_Ampitheratre_ColumnRuin_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/bld_19_04_Ampitheratre_ColumnRuin_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_001_VHouse_Ruins_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_004_VHouse_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_005_Barracks_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_006_VHouse_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_19_04_Ampitheratre_WallRuin_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_19_04_Ampitheratre_WallRuin_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_19_04_Ampitheratre_WallRuin_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
@@ -489,15 +503,20 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAF_module_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_mle002_KPP_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/10_hills_water_up_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_dust_devil.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_lightning_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_rif_foam.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/31_airfield_rif_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_roof_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_sand_fall_ee.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_sand_floor_ee.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/31_airfield_sea_tornado_sequence.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_foam2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_waves.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wavesmall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_water_small_dusturb.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_env_AM_055_DryRoots_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env021_pier_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env021_pier_3.eff</fn_effect_bin>
@@ -545,7 +564,6 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mil005_KDP.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mle013_WatchTower.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle020_GerMotocycle.eff</fn_effect_bin>
@@ -563,6 +581,8 @@
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Olive_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Olive_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Olive_03_fall.eff</fn_effect_bin>
@@ -581,7 +601,6 @@
 		<fn_effect_bin>particles/Environment/trees/Conifers/tree_PheonixPalm_Small01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Conifers/tree_PheonixPalm_Small01_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/stone_brick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_brick_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_02.visual</preloadVisual>
@@ -591,9 +610,11 @@
 		<preloadVisual>particles/mesh_particles/tree_palm_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_palm_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</deferred>

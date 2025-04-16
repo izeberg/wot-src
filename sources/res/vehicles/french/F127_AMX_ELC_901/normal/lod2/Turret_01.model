@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F127_AMX_ELC_901/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F127_AMX_ELC_901/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.054431 -0.025884 -1.200509</min>
+		<max>1.069345 2.370154 0.821337</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

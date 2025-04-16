@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/GatesAndFences/hd_gaf_UNI_006_GerWoodFence/normal/lod0/hd_gaf_UNI_006_GerWoodFence_Corner_02</nodefullVisual>
+	<materialNames/>
+	<visibilityBox>
+		<min>
+			-2.22732 -0.500046 -2.38085
+			<!--BW_String-->
+		</min>
+		<max>
+			0.434438 2.57194 0.267842
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/GatesAndFences/hd_gaf_UNI_006_GerWoodFence/normal/lod1/hd_gaf_UNI_006_GerWoodFence_Corner_02</parent>
+	<extent>
+		50.0
+		<!--BW_String-->
+	</extent>
+</root>

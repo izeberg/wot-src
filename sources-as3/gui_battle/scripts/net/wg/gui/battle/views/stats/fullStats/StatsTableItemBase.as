@@ -478,5 +478,10 @@ package net.wg.gui.battle.views.stats.fullStats
       {
          return NUM_ROWS;
       }
+      
+      protected function get vehicleTypeIcon() : BattleAtlasSprite
+      {
+         return this._vehicleTypeIcon;
+      }
    }
 }

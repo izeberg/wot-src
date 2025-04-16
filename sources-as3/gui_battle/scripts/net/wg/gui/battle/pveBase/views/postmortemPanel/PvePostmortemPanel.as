@@ -7,6 +7,7 @@ package net.wg.gui.battle.pveBase.views.postmortemPanel
    import net.wg.data.VO.UserVO;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.components.BattleAtlasSprite;
+   import net.wg.gui.battle.pveBase.views.postmortemPanel.events.PvePostmortemPanelEvent;
    import net.wg.gui.battle.views.postmortemPanel.BasePostmortemPanel;
    import net.wg.infrastructure.base.meta.IPvePostmortemPanelMeta;
    import net.wg.infrastructure.base.meta.impl.PvePostmortemPanelMeta;
@@ -99,6 +100,7 @@ package net.wg.gui.battle.pveBase.views.postmortemPanel
       {
          super.configUI();
          this.observerModeTitleTF.blendMode = this.exitToHangarTitleTF.blendMode = BlendMode.SCREEN;
+         this.timer.addEventListener(PvePostmortemPanelEvent.UPDATE_TIME,this.onPvePostmortemPanelUpdateTimeHandler);
       }
       
       override protected function createPostmortemPanelElements() : void
@@ -112,6 +114,7 @@ package net.wg.gui.battle.pveBase.views.postmortemPanel
       
       override protected function onDispose() : void
       {
+         this.timer.removeEventListener(PvePostmortemPanelEvent.UPDATE_TIME,this.onPvePostmortemPanelUpdateTimeHandler);
          this.timer.dispose();
          this.timer = null;
          this.hintTitleTF = null;
@@ -304,6 +307,11 @@ package net.wg.gui.battle.pveBase.views.postmortemPanel
             deadReasonBG.visible = false;
          }
          super.setCompVisible(param1);
+      }
+      
+      private function onPvePostmortemPanelUpdateTimeHandler(param1:PvePostmortemPanelEvent) : void
+      {
+         updateTimeS(param1.strTime);
       }
    }
 }

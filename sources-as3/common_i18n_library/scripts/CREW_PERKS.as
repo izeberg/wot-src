@@ -491,6 +491,40 @@ package
       
       public static const PERKROLE_LOADER:String = "#crew_perks:perkRole/loader";
       
+      public static const SORTING_TITLE:String = "#crew_perks:sorting/title";
+      
+      public static const SORTING_FALLBACK:String = "#crew_perks:sorting/fallback";
+      
+      public static const SORTING_COMMON:String = "#crew_perks:sorting/common";
+      
+      public static const SORTING_LEGENDARY:String = "#crew_perks:sorting/legendary";
+      
+      public static const SORTING_TOOLTIP_HEADER:String = "#crew_perks:sorting/tooltip/header";
+      
+      public static const SORTING_TOOLTIP_TITLE:String = "#crew_perks:sorting/tooltip/title";
+      
+      public static const SORTING_TOOLTIP_HEADERDESCRIPTION:String = "#crew_perks:sorting/tooltip/headerDescription";
+      
+      public static const SORTING_TOOLTIP_TYPES:String = "#crew_perks:sorting/tooltip/types";
+      
+      public static const SORTING_TOOLTIP_COMMON:String = "#crew_perks:sorting/tooltip/common";
+      
+      public static const SORTING_TOOLTIP_LEGENDARY:String = "#crew_perks:sorting/tooltip/legendary";
+      
+      public static const SORTING_TOOLTIP_WARNING:String = "#crew_perks:sorting/tooltip/warning";
+      
+      public static const SORTING_TOOLTIP_WARNINGTEXT:String = "#crew_perks:sorting/tooltip/warningText";
+      
+      public static const SORTING_TOOLTIP_SORTINGDISABLED:String = "#crew_perks:sorting/tooltip/sortingDisabled";
+      
+      public static const SORTING_TOOLTIP_SORTINGDISABLEDTEXT:String = "#crew_perks:sorting/tooltip/sortingDisabledText";
+      
+      public static const POPULARITY_TOOLTIP_HEADER:String = "#crew_perks:popularity/tooltip/header";
+      
+      public static const POPULARITY_TOOLTIP_COMMON:String = "#crew_perks:popularity/tooltip/common";
+      
+      public static const POPULARITY_TOOLTIP_LEGENDARY:String = "#crew_perks:popularity/tooltip/legendary";
+      
       public static const ALL_NAME_ENUM:Array = [COMMANDER_SIXTHSENSE_NAME,COMMANDER_EMERGENCY_NAME,BROTHERHOOD_NAME,SABATON_BROTHERHOOD_NAME,OFFSPRING_BROTHERHOOD_NAME,YHA_BROTHERHOOD_NAME,WITCHES_BROTHERHOOD_NAME,REPAIR_NAME,CAMOUFLAGE_NAME,COMMANDER_EAGLEEYE_NAME,COMMANDER_UNIVERSALIST_NAME,COMMANDER_TUTOR_NAME,COMMANDER_COORDINATION_NAME,COMMANDER_ENEMYSHOTPREDICTOR_NAME,COMMANDER_PRACTICAL_NAME,GUNNER_SMOOTHTURRET_NAME,GUNNER_SNIPER_NAME,GUNNER_RANCOROUS_NAME,GUNNER_FOCUS_NAME,GUNNER_ARMORER_NAME,GUNNER_QUICKAIMING_NAME,DRIVER_VIRTUOSO_NAME,DRIVER_SMOOTHDRIVING_NAME,DRIVER_BADROADSKING_NAME,DRIVER_RELIABLEPLACEMENT_NAME,DRIVER_TIDYPERSON_NAME,DRIVER_RAMMINGMASTER_NAME,DRIVER_MOTOREXPERT_NAME,LOADER_DESPERADO_NAME,LOADER_PEDANT_NAME,LOADER_INTUITION_NAME,LOADER_PERFECTCHARGE_NAME,LOADER_MELEE_NAME,LOADER_AMMUNITIONIMPROVE_NAME,RADIOMAN_FINDER_NAME,RADIOMAN_SIDEBYSIDE_NAME,RADIOMAN_INTERFERENCE_NAME,RADIOMAN_LASTEFFORT_NAME,RADIOMAN_EXPERT_NAME,RADIOMAN_SIGNALINTERCEPTION_NAME,FIREFIGHTING_NAME];
       
       public static const ALL_HUDDESCRIPTION_ENUM:Array = [COMMANDER_EMERGENCY_HUDDESCRIPTION,COMMANDER_EAGLEEYE_HUDDESCRIPTION,COMMANDER_UNIVERSALIST_HUDDESCRIPTION,COMMANDER_TUTOR_HUDDESCRIPTION,COMMANDER_COORDINATION_HUDDESCRIPTION,GUNNER_FOCUS_HUDDESCRIPTION,DRIVER_MOTOREXPERT_HUDDESCRIPTION,LOADER_DESPERADO_HUDDESCRIPTION,LOADER_INTUITION_HUDDESCRIPTION,LOADER_MELEE_HUDDESCRIPTION,RADIOMAN_SIDEBYSIDE_HUDDESCRIPTION,RADIOMAN_LASTEFFORT_HUDDESCRIPTION,RADIOMAN_EXPERT_HUDDESCRIPTION];

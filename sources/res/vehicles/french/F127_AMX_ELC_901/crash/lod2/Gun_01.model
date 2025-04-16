@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/french/F127_AMX_ELC_901/crash/lod2/Gun_01</nodelessVisual>
+	<parent>vehicles/french/F127_AMX_ELC_901/crash/lod3/Gun_01</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.359850 -0.202725 -1.364980</min>
+		<max>0.205149 0.245939 2.566329</max>
+	</visibilityBox>
+</root>

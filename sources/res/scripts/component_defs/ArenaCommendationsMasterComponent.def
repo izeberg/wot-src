@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+		<clearMessageState/>
+	</CellMethods>
+	<BaseMethods>
+		<receiveBattleStatistics>
+			<Arg>COMMENDATIONS_BATTLE_STATISTICS_LIST</Arg>
+		</receiveBattleStatistics>
+	</BaseMethods>
+	<ofEntity>
+		<Arena/>
+	</ofEntity>
+	<DefaultKeyName>commendationsComponent</DefaultKeyName>
+</root>

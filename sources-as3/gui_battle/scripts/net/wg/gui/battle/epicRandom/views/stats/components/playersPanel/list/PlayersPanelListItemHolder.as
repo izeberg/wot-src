@@ -138,6 +138,11 @@ package net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list
          this._listItem.setCharCommand(param1,param2);
       }
       
+      public function setPriorityCommand(param1:String, param2:uint, param3:uint) : void
+      {
+         this._listItem.setPriorityCommand(param1,param2,param3);
+      }
+      
       public function triggerChatCommand(param1:String) : void
       {
          this._listItem.triggerChatCommand(param1);

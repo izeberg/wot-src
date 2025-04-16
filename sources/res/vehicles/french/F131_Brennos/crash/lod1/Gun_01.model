@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Brennos/crash/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F131_Brennos/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.591795 -0.390032 -1.329273</min>
+		<max>0.561798 0.380075 6.907746</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

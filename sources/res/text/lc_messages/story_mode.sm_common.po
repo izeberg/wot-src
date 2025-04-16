@@ -10,6 +10,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "badgeTooltip/title"
+msgstr "Badge: %(badge_name)s"
+
 msgid "button/close"
 msgstr "CLOSE"
 
@@ -36,3 +39,15 @@ msgstr "TIGER HUNTER STORY"
 
 msgid "congratulationsWindow/onboardingMedal/title"
 msgstr "ALL OPERATIONS COMPLETED!"
+
+msgid "congratulationsWindow/vDayHero/badgeName"
+msgstr "Badge: Express Delivery"
+
+msgid "congratulationsWindow/vDayHero/medalName"
+msgstr "Medal: Express Delivery"
+
+msgid "congratulationsWindow/vDayHero/subTitle"
+msgstr "OPERATION POSTMAN"
+
+msgid "congratulationsWindow/vDayHero/title"
+msgstr "EXTRA CHALLENGE COMPLETED!"

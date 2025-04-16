@@ -6,6 +6,7 @@ from gui.impl.gen import R
 from gui.Scaleform import getNecessaryArenaFrameName
 from gui.Scaleform.locale.MENU import MENU
 from gui.battle_control.arena_info import settings
+from gui.battle_control.battle_constants import WinStatus
 from gui.prb_control.formatters import getPrebattleFullDescription
 from gui.shared.utils import toUpper, functions
 from helpers import i18n, dependency
@@ -52,6 +53,9 @@ class IArenaGuiDescription(object):
         raise NotImplementedError
 
     def getTeamName(self, team):
+        raise NotImplementedError
+
+    def getTeamWinStatus(self, team, isAlly):
         raise NotImplementedError
 
     def getSmallIcon(self):
@@ -145,6 +149,9 @@ class DefaultArenaGuiDescription(IArenaGuiDescription):
             teamName = opponents.get('%s' % team, {}).get('name', teamName)
         return teamName
 
+    def getTeamWinStatus(self, team, isAlly):
+        return WinStatus.fromWinnerTeam(team, isAlly)
+
     def getSmallIcon(self):
         return self._visitor.getArenaIcon('battleLoading')
 
@@ -209,6 +216,13 @@ class ArenaWithLabelDescription(DefaultArenaGuiDescription):
         return self.getFrameLabel()
 
 
+class ArenaDescriptionWithInvitation(ArenaWithLabelDescription):
+    __slots__ = ()
+
+    def isInvitationEnabled(self):
+        return self._visitor.hasDynSquads() and not BattleReplay.g_replayCtrl.isPlaying
+
+
 class ArenaWithL10nDescription(IArenaGuiDescription):
     __slots__ = ('_l10nDescription', '_decorated')
 
@@ -250,6 +264,9 @@ class ArenaWithL10nDescription(IArenaGuiDescription):
     def getTeamName(self, team):
         return self._decorated.getTeamName(team)
 
+    def getTeamWinStatus(self, team, isAlly):
+        return self._decorated.getTeamWinStatus(team, isAlly)
+
     def getSmallIcon(self):
         return self._decorated.getSmallIcon()
 
@@ -285,16 +302,12 @@ class BattleRoyaleDescription(ArenaWithLabelDescription):
         return backport.text(R.strings.arenas.c_250_br_battle_city2_1.description())
 
 
-class EpicBattlesDescription(ArenaWithLabelDescription):
+class EpicBattlesDescription(ArenaDescriptionWithInvitation):
     __slots__ = ()
     __lobbyContext = dependency.descriptor(ILobbyContext)
 
     def getWinString(self, isInBattle=True):
         return FLBattleTypeDescription.getDescription(self.getReservesModifier())
-
-    def isInvitationEnabled(self):
-        replayCtrl = BattleReplay.g_replayCtrl
-        return not replayCtrl.isPlaying
 
     def getBattleTypeIconPath(self, sizeFolder='c_136x136'):
         return FLBattleTypeDescription.getBattleTypeIconPath(self.getReservesModifier(), sizeFolder)
@@ -314,22 +327,14 @@ class EpicBattlesDescription(ArenaWithLabelDescription):
         return data.get('reservesModifier')
 
 
-class MapboxArenaDescription(ArenaWithLabelDescription):
-
-    def isInvitationEnabled(self):
-        replayCtrl = BattleReplay.g_replayCtrl
-        return not replayCtrl.isPlaying
-
-
 registerArenaDescrs(ARENA_GUI_TYPE.RANDOM, ArenaWithBasesDescription)
 registerArenaDescrs(ARENA_GUI_TYPE.EPIC_RANDOM, ArenaWithBasesDescription)
 registerArenaDescrs(ARENA_GUI_TYPE.TRAINING, ArenaWithBasesDescription)
 registerArenaDescrs(ARENA_GUI_TYPE.EPIC_RANDOM_TRAINING, ArenaWithBasesDescription)
+registerArenaDescrs(ARENA_GUI_TYPE.BATTLE_ROYALE, BattleRoyaleDescription)
+registerArenaDescrs(ARENA_GUI_TYPE.MAPBOX, ArenaDescriptionWithInvitation)
 for guiType in ARENA_GUI_TYPE.EPIC_RANGE:
     registerArenaDescrs(guiType, EpicBattlesDescription)
-
-registerArenaDescrs(ARENA_GUI_TYPE.BATTLE_ROYALE, BattleRoyaleDescription)
-registerArenaDescrs(ARENA_GUI_TYPE.MAPBOX, MapboxArenaDescription)
 
 def createDescription(arenaVisitor):
     guiVisitor = arenaVisitor.gui

@@ -6,6 +6,8 @@ package net.wg.infrastructure.base.meta
    {
        
       
+      function updateTimeS(param1:String) : void;
+      
       function as_setHintTitle(param1:String) : void;
       
       function as_setHintDescr(param1:String) : void;

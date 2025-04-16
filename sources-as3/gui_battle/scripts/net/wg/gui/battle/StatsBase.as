@@ -319,5 +319,9 @@ package net.wg.gui.battle
       {
          this.tableCtrl.updateColorBlind();
       }
+      
+      public function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void
+      {
+      }
    }
 }

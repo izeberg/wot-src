@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A67_T57_58/_skins/A174_T57_58_Rush_Ep1_4/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A67_T57_58/_skins/A174_T57_58_Rush_Ep1_4/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.827967 -0.000003 -3.326961</min>
+		<max>1.827967 1.494734 3.461822</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

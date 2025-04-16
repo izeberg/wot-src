@@ -515,6 +515,12 @@ package
       
       public static const CLIENT_DYNSQUAD_CREATED_ENEMIES:String = "#messenger:client/dynSquad/created/enemies";
       
+      public static const CLIENT_COMMENDATIONS_COMMS_SENT:String = "#messenger:client/commendations/comms_sent";
+      
+      public static const CLIENT_COMMENDATIONS_COMMS_RECEIVED:String = "#messenger:client/commendations/comms_received";
+      
+      public static const CLIENT_COMMENDATIONS_COMMS_MUTUAL:String = "#messenger:client/commendations/comms_mutual";
+      
       public static const COMMAND_FINDUSER:String = "#messenger:command/findUser";
       
       public static const COMMAND_FINDCHATCHANNELS:String = "#messenger:command/findChatChannels";
@@ -750,8 +756,6 @@ package
       public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BATTLEPASS:String = "#messenger:serviceChannelMessages/BRbattleResults/battlePass";
       
       public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BATTLEROYALEBRCOIN:String = "#messenger:serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin";
-      
-      public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BATTLEROYALESTPCOIN:String = "#messenger:serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin";
       
       public static const SERVICECHANNELMESSAGES_BRBATTLERESULTS_BRPROGRESSIONTITLE:String = "#messenger:serviceChannelMessages/BRbattleResults/BRProgressionTitle";
       
@@ -2229,6 +2233,10 @@ package
       
       public static const SERVICECHANNELMESSAGES_OPTIONALDEVICESASSISTANT_UNAVAILABLE_TITLE:String = "#messenger:serviceChannelMessages/optionalDevicesAssistant/unavailable/title";
       
+      public static const SERVICECHANNELMESSAGES_CREWASSISTANT_AVAILABLE_TITLE:String = "#messenger:serviceChannelMessages/crewAssistant/available/title";
+      
+      public static const SERVICECHANNELMESSAGES_CREWASSISTANT_UNAVAILABLE_TITLE:String = "#messenger:serviceChannelMessages/crewAssistant/unavailable/title";
+      
       public static const SERVICECHANNELMESSAGES_VEHICLEPOSTPROGRESSION_DISCARDALLPAIRSMODIFICATION_BODY:String = "#messenger:serviceChannelMessages/vehiclePostProgression/discardAllPairsModification/body";
       
       public static const SERVICECHANNELMESSAGES_VEHICLEPOSTPROGRESSION_DISCARDALLPAIRSMODIFICATION_TITLE:String = "#messenger:serviceChannelMessages/vehiclePostProgression/discardAllPairsModification/title";
@@ -2287,10 +2295,6 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_BRCOIN:String = "#messenger:platformCurrencyMsg/debited/brcoin";
       
-      public static const PLATFORMCURRENCYMSG_RECEIVED_STPCOIN:String = "#messenger:platformCurrencyMsg/received/stpcoin";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_STPCOIN:String = "#messenger:platformCurrencyMsg/debited/stpcoin";
-      
       public static const PLATFORMCURRENCYMSG_RECEIVED_EQUIP_COIN:String = "#messenger:platformCurrencyMsg/received/equip_coin";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_EQUIP_COIN:String = "#messenger:platformCurrencyMsg/debited/equip_coin";
@@ -2341,39 +2345,9 @@ package
       
       public static const SERVICECHANNELMESSAGES_RESOURCEWELL_PROGRESS:String = "#messenger:serviceChannelMessages/resourceWell/progress";
       
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_TOPREWARD_TITLE:String = "#messenger:serviceChannelMessages/resourceWell/topReward/title";
+      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_DETAILS_BUTTON:String = "#messenger:serviceChannelMessages/resourceWell/details/button";
       
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_TOPREWARD_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/topReward/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_TOPREWARD_ADDITIONALTEXT:String = "#messenger:serviceChannelMessages/resourceWell/topReward/additionalText";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_REGULARREWARD_TITLE:String = "#messenger:serviceChannelMessages/resourceWell/regularReward/title";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_REGULARREWARD_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/regularReward/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_START_BUTTON:String = "#messenger:serviceChannelMessages/resourceWell/start/button";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_START_TITLE:String = "#messenger:serviceChannelMessages/resourceWell/start/title";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_START_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/start/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_END_TITLE:String = "#messenger:serviceChannelMessages/resourceWell/end/title";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_END_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/end/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_PAUSE_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/pause/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_ENABLED_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/enabled/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_NOVEHICLES_TITLE:String = "#messenger:serviceChannelMessages/resourceWell/noVehicles/title";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_NOVEHICLES_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/noVehicles/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_NOSERIALVEHICLES_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/noSerialVehicles/text";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_NOSERIALVEHICLES_BUTTON:String = "#messenger:serviceChannelMessages/resourceWell/noSerialVehicles/button";
-      
-      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_NOVEHICLESWITHRETURN_TEXT:String = "#messenger:serviceChannelMessages/resourceWell/noVehiclesWithReturn/text";
+      public static const SERVICECHANNELMESSAGES_RESOURCEWELL_SPENDRESOURCES_BUTTON:String = "#messenger:serviceChannelMessages/resourceWell/spendResources/button";
       
       public static const SERVICECHANNELMESSAGES_PROGRESSION2D_CAMOUFLAGE:String = "#messenger:serviceChannelMessages/progression2d/camouflage";
       
@@ -2524,6 +2498,14 @@ package
       public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_DESCRIPTION:String = "#messenger:serviceChannelMessages/adventCalendar/reward/description";
       
       public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_BUTTON:String = "#messenger:serviceChannelMessages/adventCalendar/reward/button";
+      
+      public static const SERVICECHANNELMESSAGES_COMMENDATIONS_MESSAGES_ENABLE:String = "#messenger:serviceChannelMessages/commendations/messages/enable";
+      
+      public static const SERVICECHANNELMESSAGES_COMMENDATIONS_MESSAGES_DISABLE:String = "#messenger:serviceChannelMessages/commendations/messages/disable";
+      
+      public static const SERVICECHANNELMESSAGES_COMMENDATIONS_LIVETAGS_ENABLE:String = "#messenger:serviceChannelMessages/commendations/liveTags/enable";
+      
+      public static const SERVICECHANNELMESSAGES_COMMENDATIONS_LIVETAGS_DISABLE:String = "#messenger:serviceChannelMessages/commendations/liveTags/disable";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

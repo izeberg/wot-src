@@ -292,6 +292,15 @@ package net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list
          }
       }
       
+      public function setPriorityCommand(param1:Number, param2:String, param3:uint, param4:uint) : void
+      {
+         var _loc5_:IPlayersPanelListItemHolder = this.getHolderByVehicleID(param1);
+         if(_loc5_)
+         {
+            _loc5_.setPriorityCommand(param2,param3,param4);
+         }
+      }
+      
       public function setChatCommandVisibility(param1:Boolean) : void
       {
          var _loc2_:PlayersPanelListItem = null;
