@@ -10,7 +10,7 @@
 	<supplySlots>1 1 1 6 6 6 8 8 8</supplySlots>
 	<speedLimits>
 		<forward>40</forward>
-		<backward>10</backward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2395,11 +2395,11 @@
 			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.25
+					0.22
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.25
+					0.22
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -2407,12 +2407,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>90</maxHealth>
-			<maxRegenHealth>70</maxRegenHealth>
-			<repairCost>
-				0.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>75</maxHealth>
+			<maxRegenHealth>56</maxRegenHealth>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/german/G101_StuG_III/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/german/G101_StuG_III/crash/lod0/Chassis.model</destroyed>
@@ -4783,7 +4780,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.75555563
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_G101_StuG_III>
@@ -4807,11 +4804,11 @@
 			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.23
+					0.2
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.23
+					0.2
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4819,12 +4816,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>100</maxHealth>
-			<maxRegenHealth>75</maxRegenHealth>
-			<repairCost>
-				0.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>95</maxHealth>
+			<maxRegenHealth>71</maxRegenHealth>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/german/G101_StuG_III/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/german/G101_StuG_III/crash/lod0/Chassis.model</destroyed>
@@ -7157,7 +7151,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.73684216
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_G101_StuG_III_2>
@@ -7193,134 +7187,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_StuK_37_L24>
-					shared
-					<unlocks>
-						<gun>
-							_75mm_StuK_40_L43
-							<cost>2140</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							30
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							10
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>20</gun>
-					</armor>
-					<maxAmmo>65</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-12 12</turretYawLimits>
-					<shotDispersionRadius>
-						0.55
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.9
-						<!--BW_String-->
-					</reloadTime>
-					<models>
-						<undamaged>vehicles/german/G101_StuG_III/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/german/G101_StuG_III/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/german/G101_StuG_III/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/german/G101_StuG_III/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/german/G101_StuG_III/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.005219 -0.001022 1.03283
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.000001 0.166222 0.148679</anchorPosition>
-							<anchorDirection>
-								-0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.005219 -0.000975 1.03282
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								0.136371 1.69404 1.29979
-								<!--BW_String-->
-							</position>
-							<rotation>
-								-0 0.00001 3.14158
-								<!--BW_String-->
-							</rotation>
-							<scale>0.431053 0.089852 0.431054</scale>
-							<showOn>4096</showOn>
-							<clipAngle>0.792262</clipAngle>
-							<anchorShift>0.062578</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.6 0.6 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							105.308 106.708
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_StuK_37_L24>
-				<_75mm_StuK_40_L43>
+				<_7_5_cm_Stu_K_40_L_43_B>
 					shared
 					<reloadTime>
 						3.9
@@ -7328,15 +7195,11 @@
 					</reloadTime>
 					<unlocks>
 						<gun>
-							_75mm_PaK_39_L48
+							_7_5_cm_Pak_39_L_48_B
 							<cost>3400</cost>
 						</gun>
-						<vehicle>
-							G05_StuG_40_AusfG
-							<cost>12640</cost>
-						</vehicle>
 						<gun>
-							_105mm_StuH42_L28
+							_10_5_cm_Stu_H_42_L_28_B
 							<cost>3800</cost>
 						</gun>
 					</unlocks>
@@ -7373,6 +7236,24 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-10 10</turretYawLimits>
+					<shotDispersionRadius>
+						0.36
+						<!--BW_String-->
+					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+						<turretRotation>
+							0.08
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/german/G101_StuG_III/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/german/G101_StuG_III/crash/lod0/Gun_02.model</destroyed>
@@ -7453,13 +7334,19 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_StuK_40_L43>
-				<_75mm_PaK_39_L48>
+				</_7_5_cm_Stu_K_40_L_43_B>
+				<_7_5_cm_Pak_39_L_48_B>
 					shared
 					<reloadTime>
 						3.9
 						<!--BW_String-->
 					</reloadTime>
+					<unlocks>
+						<vehicle>
+							G05_StuG_40_AusfG
+							<cost>12640</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							50
@@ -7494,9 +7381,23 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.36
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+						<turretRotation>
+							0.08
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/german/G101_StuG_III/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/german/G101_StuG_III/crash/lod0/Gun_03.model</destroyed>
@@ -7577,8 +7478,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_PaK_39_L48>
-				<_105mm_StuH42_L28>
+				</_7_5_cm_Pak_39_L_48_B>
+				<_10_5_cm_Stu_H_42_L_28_B>
 					shared
 					<unlocks>
 						<vehicle>
@@ -7712,7 +7613,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_105mm_StuH42_L28>
+				</_10_5_cm_Stu_H_42_L_28_B>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G101_StuG_III/normal/lod0/Turret_01.model</undamaged>
@@ -7738,25 +7639,16 @@
 		</Turret_1_G101_StuG_III>
 	</turrets0>
 	<engines>
-		<Maybach_HL_108TR>
+		<Maybach_HL_120_TR_B>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_120_TR
-					<cost>710</cost>
-				</engine>
-			</unlocks>
-		</Maybach_HL_108TR>
-		<Maybach_HL_120_TR>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_120_TRM
+					Maybach_HL_120_TRM_E
 					<cost>1500</cost>
 				</engine>
 			</unlocks>
-		</Maybach_HL_120_TR>
-		<Maybach_HL_120_TRM>shared</Maybach_HL_120_TRM>
+		</Maybach_HL_120_TR_B>
+		<Maybach_HL_120_TRM_E>shared</Maybach_HL_120_TRM_E>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
@@ -7776,27 +7668,14 @@
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_108TR>
-					<smplEnginePower>
-						338.33
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_120_TR_B>
+					<smplEnginePower>420</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</Maybach_HL_108TR>
-				<Maybach_HL_120_TR>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
+				</Maybach_HL_120_TR_B>
+				<Maybach_HL_120_TRM_E>
+					<smplEnginePower>480</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</Maybach_HL_120_TR>
-				<Maybach_HL_120_TRM>
-					<smplEnginePower>
-						465.2037
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</Maybach_HL_120_TRM>
+				</Maybach_HL_120_TRM_E>
 			</engines>
 			<chassis>
 				<Chassis_G101_StuG_III>
@@ -7820,6 +7699,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
+					<axleCount>5</axleCount>
 				</Chassis_G101_StuG_III>
 				<Chassis_G101_StuG_III_2>
 					<grounds>
@@ -7842,6 +7722,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
+					<axleCount>5</axleCount>
 				</Chassis_G101_StuG_III_2>
 			</chassis>
 		</detailed>

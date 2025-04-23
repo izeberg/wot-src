@@ -27,12 +27,13 @@ _MAX_ATTENTION_TO_CHAT_COMMANDS_WITHIN_TIMEFRAME = 3
 _TIMEFRAME_FOR_ATTENTION_TO_STORAGE = 5
 _MAX_ATTENTION_TO_PER_TEAM = 3
 
-def messageArgs(int32Arg1=0, int64Arg1=0, floatArg1=0, strArg1='', strArg2=''):
+def messageArgs(int32Arg1=0, int64Arg1=0, floatArg1=0, strArg1='', strArg2='', int8Arg1=0):
     return {'int32Arg1': int32Arg1, 
        'int64Arg1': int64Arg1, 
        'floatArg1': floatArg1, 
        'strArg1': strArg1, 
-       'strArg2': strArg2}
+       'strArg2': strArg2, 
+       'int8Arg1': int8Arg1}
 
 
 EMPTY_ARGS = messageArgs()
@@ -208,7 +209,7 @@ BattleChatCommand = namedtuple('BattleChatCommand', (
  'msgOnMarker',
  'soundNotificationReply'))
 BattleChatCommand.__new__.__defaults__ = (
- 0, None, 0, None, None, None, None)
+ 0, None, 0, None, None, None, None, None, None)
 UnitChatCommand = namedtuple('UnitChatCommand', (
  'id',
  'name',
@@ -279,7 +280,8 @@ BATTLE_CHAT_COMMANDS = (
  BattleChatCommand(id=_makeID(), name=BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, cooldownPeriod=_SAME_BATTLE_CHAT_CMD_COOLDOWN_DURATION, msgText=None, vehMarker=None, senderVehMarker=None, soundNotification='mt_navi_marker', soundNotificationReply=None),
  BattleChatCommand(id=_makeID(), name=BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT, cooldownPeriod=_SAME_BATTLE_CHAT_CMD_COOLDOWN_DURATION, msgText=None, vehMarker=None, senderVehMarker=None, soundNotification=None, soundNotificationReply=None),
  BattleChatCommand(id=_makeID(), name=BATTLE_CHAT_COMMAND_NAMES.MOVE_TO_TARGET_POINT, cooldownPeriod=_SAME_TARGET_PERSONAL_BATTLE_CHAT_CMD_COOLDOWN_DURATION, msgText='move_to_target', vehMarker='attackObjective', senderVehMarker=None, soundNotification='ibc_ping_request', soundNotificationReply='ibc_ping_reply'),
- BattleChatCommand(id=_makeID(), name=BATTLE_CHAT_COMMAND_NAMES.MOVING_TO_TARGET_POINT, cooldownPeriod=_SAME_TARGET_PERSONAL_BATTLE_CHAT_CMD_COOLDOWN_DURATION, msgText='move_to_target_autocommit', vehMarker='attackingObjective', senderVehMarker=None, soundNotification='ibc_ping_action', soundNotificationReply='ibc_ping_reply'))
+ BattleChatCommand(id=_makeID(), name=BATTLE_CHAT_COMMAND_NAMES.MOVING_TO_TARGET_POINT, cooldownPeriod=_SAME_TARGET_PERSONAL_BATTLE_CHAT_CMD_COOLDOWN_DURATION, msgText='move_to_target_autocommit', vehMarker='attackingObjective', senderVehMarker=None, soundNotification='ibc_ping_action', soundNotificationReply='ibc_ping_reply'),
+ BattleChatCommand(id=_makeID(), name=BATTLE_CHAT_COMMAND_NAMES.COMMENDATION, cooldownPeriod=0.5 + _COOLDOWN_OFFSET, soundNotification='ibc_ping_request', soundNotificationReply='ibc_ping_reply'))
 BATTLE_CHAT_COMMANDS_BY_NAMES = {v.name:v for v in BATTLE_CHAT_COMMANDS}
 
 class MUC_SERVICE_TYPE(object):

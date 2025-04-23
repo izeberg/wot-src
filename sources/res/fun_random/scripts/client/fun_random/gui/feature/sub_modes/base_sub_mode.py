@@ -6,6 +6,7 @@ from fun_random_common.fun_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_FUN
 from fun_random.gui.feature.fun_constants import FunTimersShifts
 from fun_random.gui.feature.models.common import FunRandomAlertData, FunRandomSeason, FunPeriodInfo
 from fun_random.gui.shared.event_dispatcher import showFunRandomInfoPage, showFunRandomPrimeTimeWindow
+from fun_random.gui.feature.sub_systems.fun_performance_alert_info import PerformanceAlertInfo
 from fun_random.gui.shared.events import FunEventType
 from fun_random.helpers.server_settings import FunSubModeConfig
 from gui.game_control.season_provider import SeasonProvider
@@ -24,6 +25,7 @@ if typing.TYPE_CHECKING:
     from gui.periodic_battles.models import AlertData
     from gui.shared.utils.requesters import RequestCriteria
     from fun_random.gui.vehicle_view_states import FunRandomVehicleViewState
+    from fun_random.gui.feature.sub_systems.fun_performance_analyzers import PerformanceGroup
     from fun_random.helpers.server_settings import FunSubModeSeasonalityConfig
 
 class IFunSubMode(ISeasonProvider, Notifiable):
@@ -59,6 +61,9 @@ class IFunSubMode(ISeasonProvider, Notifiable):
     def getAlertBlock(self):
         raise NotImplementedError
 
+    def getAmmoSetupViewAlias(self):
+        raise NotImplementedError
+
     def getAssetsPointer(self):
         raise NotImplementedError
 
@@ -72,6 +77,9 @@ class IFunSubMode(ISeasonProvider, Notifiable):
         raise NotImplementedError
 
     def getModifiersDataProvider(self):
+        raise NotImplementedError
+
+    def getPerformanceAlertGroup(self):
         raise NotImplementedError
 
     def getEfficiencyParameters(self):
@@ -100,7 +108,7 @@ class IFunSubMode(ISeasonProvider, Notifiable):
 
 
 class FunBaseSubMode(IFunSubMode, SeasonProvider):
-    __slots__ = ('_em', '_settings', '_modifiersDataProvider')
+    __slots__ = ('_em', '_settings', '_modifiersDataProvider', '_performanceAlertInfo')
     _ALERT_DATA_CLASS = FunRandomAlertData
     _PERIOD_INFO_CLASS = FunPeriodInfo
     __itemsCache = dependency.descriptor(IItemsCache)
@@ -111,6 +119,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         self.onSubModeEvent = Event(self._em)
         self._settings = subModeSettings
         self._modifiersDataProvider = ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
+        self._performanceAlertInfo = PerformanceAlertInfo(subModeSettings.client.performanceAnalyzerType)
         self.addNotificator(SimpleNotifier(self.getTimer, self._subModeStatusUpdate))
         self.addNotificator(TimerNotifier(self.getTimer, self._subModeStatusTick))
 
@@ -121,6 +130,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         self.clearNotification()
         self._settings = FunSubModeConfig(eventID=self.getSubModeID())
         self._modifiersDataProvider = ModifiersDataProvider()
+        self._performanceAlertInfo = PerformanceAlertInfo()
         self._em.clear()
 
     def isAvailable(self, now=None):
@@ -188,6 +198,9 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         return (
          alertData is not None, alertData, self._ALERT_DATA_CLASS.packCallbacks(buttonCallback))
 
+    def getAmmoSetupViewAlias(self):
+        return ''
+
     def getAssetsPointer(self):
         return self._settings.client.assetsPointer
 
@@ -214,6 +227,9 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def getModifiersDataProvider(self):
         return self._modifiersDataProvider
+
+    def getPerformanceAlertGroup(self):
+        return self._performanceAlertInfo.performanceGroup
 
     def getEfficiencyParameters(self):
         return self._settings.client.postbattle.get('postbattleEfficiency', {})
@@ -255,6 +271,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
     def _updateSettings(self, subModeSettings):
         self._settings = subModeSettings
         self._modifiersDataProvider = ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
+        self._performanceAlertInfo = PerformanceAlertInfo(subModeSettings.client.performanceAnalyzerType)
         return True
 
     def _subModeStatusTick(self):

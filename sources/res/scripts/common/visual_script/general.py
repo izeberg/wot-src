@@ -1,5 +1,5 @@
 from block import Block, makeResEditorData, InitParam
-from slot_types import SLOT_TYPE
+from slot_types import SLOT_TYPE, arrayOf
 from uuid_utils import genUUID
 
 class ResourceSelector(Block):

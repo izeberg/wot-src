@@ -133,6 +133,9 @@ class _FunSubModesInfo(IFunRandomController.IFunSubModesInfo):
     def getSubModesStatus(self, subModesIDs=None):
         return _FUN_STATUS_STUB
 
+    def getPerformanceAlertGroup(self, subModesIDs=None):
+        return 0
+
 
 class FunRandomController(IFunRandomController):
 

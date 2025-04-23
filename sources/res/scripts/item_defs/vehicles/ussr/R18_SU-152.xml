@@ -12,7 +12,7 @@
 	<postProgressionTree>role_ATSPG_support</postProgressionTree>
 	<speedLimits>
 		<forward>43</forward>
-		<backward>11</backward>
+		<backward>12</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2716,14 +2716,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<SU-152_mod_1943>
-			<userString>#ussr_vehicles:SU-152_mod_1943</userString>
+		<Chassis_R18_SU-152>
+			<userString>#ussr_vehicles:Chassis_R18_SU-152</userString>
 			<tags/>
-			<level>7</level>
+			<level>6</level>
 			<price>20090</price>
 			<unlocks>
 				<chassis>
-					SU-152_mod_1944
+					Chassis_R18_SU-152_2
 					<cost>14765</cost>
 				</chassis>
 			</unlocks>
@@ -2739,7 +2739,7 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>28</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.23
@@ -2754,8 +2754,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>170</maxHealth>
-			<maxRegenHealth>130</maxRegenHealth>
+			<maxHealth>145</maxHealth>
+			<maxRegenHealth>109</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -4407,14 +4407,14 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.62068987
 				<!--BW_String-->
 			</repairTime>
-		</SU-152_mod_1943>
-		<SU-152_mod_1944>
-			<userString>#ussr_vehicles:SU-152_mod_1944</userString>
+		</Chassis_R18_SU-152>
+		<Chassis_R18_SU-152_2>
+			<userString>#ussr_vehicles:Chassis_R18_SU-152_2</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>32710</price>
 			<armor>
 				<leftTrack>20</leftTrack>
@@ -4428,7 +4428,7 @@
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>23</rotationSpeed>
+			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.21
@@ -6096,14 +6096,14 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</SU-152_mod_1944>
+		</Chassis_R18_SU-152_2>
 	</chassis>
 	<turrets0>
-		<SU-152_01>
-			<userString>#ussr_vehicles:SU-152_01</userString>
+		<Turret_1_R18_SU-152>
+			<userString>#ussr_vehicles:Turret_1_R18_SU-152</userString>
 			<tags>cannotDetach</tags>
 			<level>7</level>
 			<price>1200</price>
@@ -6132,160 +6132,6 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_152mm_ML-20_mod_1937>
-					shared
-					<maxAmmo>26</maxAmmo>
-					<unlocks>
-						<gun>
-							_122mm_A-19
-							<cost>18600</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							65
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							45
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							30
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>70</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.5
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						17.7
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						3.4
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.143
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-8 8</turretYawLimits>
-					<pitchLimits>
-						<minPitch>0 -18 1 -18</minPitch>
-						<maxPitch>0 6 1 6</maxPitch>
-					</pitchLimits>
-					<models>
-						<undamaged>vehicles/russian/R18_SU-152/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/russian/R18_SU-152/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/russian/R18_SU-152/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/russian/R18_SU-152/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/russian/R18_SU-152/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_huge_mb</effects>
-					<reloadEffect>reload115_152</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.168706 0.085363 1.57324
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0.16802 0.257732 0.328565
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.168706 0.085363 1.57324
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								0.168823 2.08753 2.63138
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.787225 -0.000179 3.14134
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								0.825612 0.1913 0.825618
-								<!--BW_String-->
-							</scale>
-							<showOn>4096</showOn>
-							<clipAngle>
-								1.30157
-								<!--BW_String-->
-							</clipAngle>
-							<anchorShift>0.119146</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.166994 0.053494 1.58504
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.166994 0.053494 2.28504
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.12 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.7
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>0.167178 0.053376 0.000000</shotOffset>
-					<camouflage>
-						<tiling>
-							0.61 0.61 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							97.7361 96.1918
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_152mm_ML-20_mod_1937>
 				<_122mm_A-19>
 					shared
 					<maxAmmo>28</maxAmmo>
@@ -6315,10 +6161,13 @@
 						<gun>50</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.43
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>9</reloadTime>
+					<reloadTime>
+						8.4
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
 						2.9
 						<!--BW_String-->
@@ -6437,6 +6286,16 @@
 				<_122mm_D-25C_mod1944>
 					shared
 					<maxAmmo>32</maxAmmo>
+					<unlocks>
+						<vehicle>
+							R47_ISU-152
+							<cost>75000</cost>
+						</vehicle>
+						<gun>
+							_152mm_ML-20_mod_1937
+							<cost>18600</cost>
+						</gun>
+					</unlocks>
 					<armor>
 						<armor_1>
 							65
@@ -6595,6 +6454,154 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_122mm_D-25C_mod1944>
+				<_152mm_ML-20_mod_1937>
+					shared
+					<maxAmmo>26</maxAmmo>
+					<armor>
+						<armor_1>
+							65
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_1>
+						<armor_2>
+							45
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_2>
+						<armor_3>
+							30
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_3>
+						<armor_4>
+							0
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_4>
+						<gun>70</gun>
+					</armor>
+					<shotDispersionRadius>
+						0.48
+						<!--BW_String-->
+					</shotDispersionRadius>
+					<reloadTime>
+						17.7
+						<!--BW_String-->
+					</reloadTime>
+					<aimingTime>
+						3.2
+						<!--BW_String-->
+					</aimingTime>
+					<invisibilityFactorAtShot>
+						0.143
+						<!--BW_String-->
+					</invisibilityFactorAtShot>
+					<turretYawLimits>-8 8</turretYawLimits>
+					<pitchLimits>
+						<minPitch>0 -18 1 -18</minPitch>
+						<maxPitch>0 6 1 6</maxPitch>
+					</pitchLimits>
+					<models>
+						<undamaged>vehicles/russian/R18_SU-152/normal/lod0/Gun_01.model</undamaged>
+						<destroyed>vehicles/russian/R18_SU-152/crash/lod0/Gun_01.model</destroyed>
+						<exploded>vehicles/russian/R18_SU-152/crash/lod0/Gun_01.model</exploded>
+					</models>
+					<hitTester>
+						<collisionModelServer>vehicles/russian/R18_SU-152/collision/Gun_01.model</collisionModelServer>
+						<collisionModelClient>vehicles/russian/R18_SU-152/collision_client/Gun_01.model</collisionModelClient>
+					</hitTester>
+					<effects>shot_huge_mb</effects>
+					<reloadEffect>reload115_152</reloadEffect>
+					<customizationSlots>
+						<slot>
+							<slotType>paint</slotType>
+							<slotId>41000</slotId>
+							<anchorPosition>
+								0.168706 0.085363 1.57324
+								<!--BW_String-->
+							</anchorPosition>
+							<anchorDirection>-0 0 1</anchorDirection>
+							<applyTo>4096</applyTo>
+						</slot>
+						<slot>
+							<slotType>paint</slotType>
+							<slotId>41001</slotId>
+							<anchorPosition>
+								0.16802 0.257732 0.328565
+								<!--BW_String-->
+							</anchorPosition>
+							<anchorDirection>-0 0 1</anchorDirection>
+							<applyTo>16384</applyTo>
+						</slot>
+						<slot>
+							<slotType>camouflage</slotType>
+							<slotId>42000</slotId>
+							<anchorPosition>
+								0.168706 0.085363 1.57324
+								<!--BW_String-->
+							</anchorPosition>
+							<anchorDirection>-0 0 1</anchorDirection>
+							<applyTo>4096</applyTo>
+						</slot>
+						<slot>
+							<slotType>projectionDecal</slotType>
+							<slotId>45000</slotId>
+							<tags>formfactor_rect1x3</tags>
+							<position>
+								0.168823 2.08753 2.63138
+								<!--BW_String-->
+							</position>
+							<rotation>
+								0.787225 -0.000179 3.14134
+								<!--BW_String-->
+							</rotation>
+							<scale>
+								0.825612 0.1913 0.825618
+								<!--BW_String-->
+							</scale>
+							<showOn>4096</showOn>
+							<clipAngle>
+								1.30157
+								<!--BW_String-->
+							</clipAngle>
+							<anchorShift>0.119146</anchorShift>
+						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49000</slotId>
+							<rayStart>
+								0.166994 0.053494 1.58504
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0.166994 0.053494 2.28504
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.12 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.7
+								<!--BW_String-->
+							</size>
+						</slot>
+					</customizationSlots>
+					<customization>
+						<customizableVehicleAreas>
+							<paint>GUN GUN_2</paint>
+							<camouflage>GUN</camouflage>
+						</customizableVehicleAreas>
+					</customization>
+					<shotOffset>0.167178 0.053376 0.000000</shotOffset>
+					<camouflage>
+						<tiling>
+							0.61 0.61 0.000000 0.000000
+							<!--BW_String-->
+						</tiling>
+						<density>
+							97.7361 96.1918
+							<!--BW_String-->
+						</density>
+						<aoTextureSize>512 512</aoTextureSize>
+					</camouflage>
+				</_152mm_ML-20_mod_1937>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R18_SU-152/normal/lod0/Turret_01.model</undamaged>
@@ -6617,72 +6624,40 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</SU-152_01>
+		</Turret_1_R18_SU-152>
 	</turrets0>
 	<engines>
-		<V-2K>
+		<V_2K_SU>
 			shared
 			<unlocks>
 				<engine>
-					V-2IS
+					V_2IS_SU
 					<cost>11000</cost>
 				</engine>
 			</unlocks>
-		</V-2K>
-		<V-2IS>
-			shared
-			<unlocks>
-				<vehicle>
-					R47_ISU-152
-					<cost>75000</cost>
-				</vehicle>
-			</unlocks>
-		</V-2IS>
+		</V_2K_SU>
+		<V_2IS_SU>shared</V_2IS_SU>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<_10R>
-			shared
-			<unlocks>
-				<radio>
-					_10RK
-					<cost>3100</cost>
-				</radio>
-			</unlocks>
-		</_10R>
-		<_10RK>
-			shared
-			<unlocks>
-				<radio>
-					_12RT
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_10RK>
 		<_12RT>shared</_12RT>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<V-2K>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+				<V_2K_SU>
+					<smplEnginePower>620</smplEnginePower>
 					<smplFwMaxSpeed>43</smplFwMaxSpeed>
-				</V-2K>
-				<V-2IS>
-					<smplEnginePower>
-						634.3687
-						<!--BW_String-->
-					</smplEnginePower>
+				</V_2K_SU>
+				<V_2IS_SU>
+					<smplEnginePower>670</smplEnginePower>
 					<smplFwMaxSpeed>43</smplFwMaxSpeed>
-				</V-2IS>
+				</V_2IS_SU>
 			</engines>
 			<chassis>
-				<SU-152_mod_1943>
+				<Chassis_R18_SU-152>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6703,8 +6678,9 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</SU-152_mod_1943>
-				<SU-152_mod_1944>
+					<axleCount>5</axleCount>
+				</Chassis_R18_SU-152>
+				<Chassis_R18_SU-152_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6725,7 +6701,8 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</SU-152_mod_1944>
+					<axleCount>5</axleCount>
+				</Chassis_R18_SU-152_2>
 			</chassis>
 		</detailed>
 	</physics>

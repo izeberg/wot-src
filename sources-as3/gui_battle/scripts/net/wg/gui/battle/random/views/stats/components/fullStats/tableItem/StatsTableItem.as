@@ -68,6 +68,16 @@ package net.wg.gui.battle.random.views.stats.components.fullStats.tableItem
          this._vehicleLevelIcon.isCentralizeByX = true;
       }
       
+      protected function get playerStatus() : PlayerStatusView
+      {
+         return this._playerStatus;
+      }
+      
+      protected function get vehicleIcon() : BattleAtlasSprite
+      {
+         return this._vehicleIcon;
+      }
+      
       override public function reset() : void
       {
          this._vehicleLevel = 0;

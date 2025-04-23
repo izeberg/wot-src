@@ -1,5 +1,7 @@
 from fun_random.gui.battle_control import registerFunRandomBattle
+from fun_random.gui.feature.sub_modes import registerFunRandomSubModes
 from fun_random.gui.game_control import registerFunRandomAwardControllers
+from fun_random.gui.hangar_presets import registerHangarPresetConfig
 from fun_random.gui.prb_control import registerFunRandomOthersPrbParams
 from fun_random.gui.Scaleform import registerFunRandomScaleform
 from fun_random.gui.server_events import registerFunRandomQuests
@@ -7,6 +9,7 @@ from fun_random.gui.fun_gui_constants import initFunRandomLimitedUIIds, PREBATTL
 from fun_random.gui import fun_gui_constants
 from fun_random_common import injectConsts, injectSquadConsts
 from fun_random_common.fun_battle_mode import FunRandomBattleMode
+from chat_shared import SYS_MESSAGE_TYPE as _SM_TYPE
 from gui.prb_control.prb_utils import initGuiTypes, initRequestType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.genConsts.FUNRANDOM_ALIASES import FUNRANDOM_ALIASES
@@ -124,6 +127,11 @@ class ClientFunRandomBattleMode(FunRandomBattleMode):
          SelectFunRandomMode, ShowFunRandomProgression)
 
     @property
+    def _client_messengerServerFormatters(self):
+        from fun_random.messenger.formatters.battle_results_formatters import FunBattleResultsFormatter
+        return {_SM_TYPE.funRandomBattleResults.index(): FunBattleResultsFormatter()}
+
+    @property
     def _client_messengerClientFormatters(self):
         from fun_random.messenger.formatters.service_channel import FunRandomNotificationsFormatter
         from fun_random.messenger.formatters.token_quest_subformatters import FunProgressionRewardsSyncFormatter
@@ -172,6 +180,10 @@ def preInit():
     battleMode.registerBannerEntryPointLUIRule()
     battleMode.registerProviderBattleQueue()
     battleMode.registerBattleResultsConfig()
+    battleMode.registerSystemMessagesTypes()
+    battleMode.registerBattleResultSysMsgType()
+    battleMode.registerMessengerServerFormatters()
+    battleMode.registerNonReplayMode()
     battleMode.registerSquadTypes()
     battleMode.registerClientPlatoon()
     battleMode.registerClientSquadSelector()
@@ -188,6 +200,8 @@ def preInit():
     registerFunRandomScaleform()
     registerFunRandomBattle()
     registerFunRandomQuests()
+    registerHangarPresetConfig()
+    registerFunRandomSubModes()
 
 
 def init():

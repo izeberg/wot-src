@@ -1,4 +1,8 @@
-
+import typing
+if typing.TYPE_CHECKING:
+    from typing import Optional
+    from chat_commands_consts import MarkerType
+    from messenger.proto.bw_chat2.battle_chat_cmd import _OutCmdDecorator
 
 class IProtoPlugin(object):
     __slots__ = ('__weakref__', )

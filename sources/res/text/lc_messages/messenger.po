@@ -168,6 +168,15 @@ msgstr ""
 "Voice chat disabled. To communicate with your Platoon members, enable voice "
 "chat (%(keyName)s)."
 
+msgid "client/commendations/comms_mutual"
+msgstr "You and %(player)s commended each other."
+
+msgid "client/commendations/comms_received"
+msgstr "%(player)s commended you."
+
+msgid "client/commendations/comms_sent"
+msgstr "%(player)s has been commended."
+
 msgid "client/dynSquad/created/allies"
 msgstr "Your allies created Platoon %(squadNum)s."
 
@@ -1286,9 +1295,6 @@ msgstr "Personal Fame Points removed"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Free Experience deducted"
 
-msgid "platformCurrencyMsg/debited/stpcoin"
-msgstr "Lucky Seals removed"
-
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "Points of Duty removed"
 
@@ -1315,9 +1321,6 @@ msgstr "Personal Fame Points added"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Free Experience received"
-
-msgid "platformCurrencyMsg/received/stpcoin"
-msgstr "Lucky Seals received"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "Points of Duty added"
@@ -1574,9 +1577,6 @@ msgstr "Battle Pass Points received: %(pointsDiff)s"
 
 msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
 msgstr "Steel Seals received: %(value)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin"
-msgstr "Lucky Seals received: %(value)s"
 
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "Vehicle destroyed"
@@ -2365,11 +2365,29 @@ msgstr "Close"
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "You left or were excluded from the clan:"
 
+msgid "serviceChannelMessages/commendations/liveTags/disable"
+msgstr "Live Tags are currently unavailable"
+
+msgid "serviceChannelMessages/commendations/liveTags/enable"
+msgstr "Live Tags are available in battle"
+
+msgid "serviceChannelMessages/commendations/messages/disable"
+msgstr "Commendations are currently unavailable"
+
+msgid "serviceChannelMessages/commendations/messages/enable"
+msgstr "Commendations are available in battle"
+
 msgid "serviceChannelMessages/creditsAndGoldReceivedAsGift"
 msgstr "You have been granted %(gold)s gold, %(credits)s credits."
 
 msgid "serviceChannelMessages/creditsReceivedAsGift"
 msgstr "You have been granted %(credits)s credits."
+
+msgid "serviceChannelMessages/crewAssistant/available/title"
+msgstr "Crew Assistant is available"
+
+msgid "serviceChannelMessages/crewAssistant/unavailable/title"
+msgstr "Crew Assistant is unavailable"
 
 msgid "serviceChannelMessages/crewBooksCount"
 msgstr "%(label)s x%(count)s"
@@ -3460,16 +3478,8 @@ msgstr "Credits: %(count)s"
 msgid "serviceChannelMessages/resourceWell/crystal"
 msgstr "Bonds: %(count)s"
 
-msgid "serviceChannelMessages/resourceWell/enabled/text"
-msgstr "The Assembly Shop is open again!"
-
-msgid "serviceChannelMessages/resourceWell/end/text"
-msgstr ""
-"We are starting to work on the next project. We will let you know when we "
-"finish development. See you soon!"
-
-msgid "serviceChannelMessages/resourceWell/end/title"
-msgstr "The Assembly Shop is closing"
+msgid "serviceChannelMessages/resourceWell/details/button"
+msgstr "Details"
 
 msgid "serviceChannelMessages/resourceWell/freeXP"
 msgstr "Free XP: %(count)s"
@@ -3480,30 +3490,6 @@ msgstr "Gold: %(count)s"
 msgid "serviceChannelMessages/resourceWell/intelligence"
 msgstr "universal fragments"
 
-msgid "serviceChannelMessages/resourceWell/noSerialVehicles/button"
-msgstr "Spend Resources"
-
-msgid "serviceChannelMessages/resourceWell/noSerialVehicles/text"
-msgstr ""
-"Delivery of vehicles with numbers complete. We are starting to assemble the "
-"%(vehicle)s in a standard configuration. Hurry—the number of vehicles is "
-"limited! "
-
-msgid "serviceChannelMessages/resourceWell/noVehicles/text"
-msgstr ""
-"Assembly of vehicles complete. All vehicles delivered to their owners."
-
-msgid "serviceChannelMessages/resourceWell/noVehicles/title"
-msgstr "Assembly Shop Report"
-
-msgid "serviceChannelMessages/resourceWell/noVehiclesWithReturn/text"
-msgstr ""
-"Assembly of vehicles complete. All vehicles delivered to their owners. All "
-"spent resources will be returned to your account soon."
-
-msgid "serviceChannelMessages/resourceWell/pause/text"
-msgstr "The Assembly Shop is temporarily unavailable due to maintenance."
-
 msgid "serviceChannelMessages/resourceWell/progress"
 msgstr "Current progress: %(progress)d"
 
@@ -3513,37 +3499,14 @@ msgstr "Resources spent on the Assembly Shop project:"
 msgid "serviceChannelMessages/resourceWell/put/title"
 msgstr "Resources spent"
 
-msgid "serviceChannelMessages/resourceWell/regularReward/text"
-msgstr "The %(vehicle)s received from the Assembly Shop."
-
-msgid "serviceChannelMessages/resourceWell/regularReward/title"
-msgstr "%(vehicle)s received!"
-
-msgid "serviceChannelMessages/resourceWell/start/button"
-msgstr "Details"
-
-msgid "serviceChannelMessages/resourceWell/start/text"
-msgstr ""
-"Commander, you have a chance to become the owner of the %(vehicle)s with a "
-"numbered 3D style. The number of vehicles is limited!"
-
-msgid "serviceChannelMessages/resourceWell/start/title"
-msgstr "The Assembly Shop Is Opening"
+msgid "serviceChannelMessages/resourceWell/spendResources/button"
+msgstr "Spend Resources"
 
 msgid "serviceChannelMessages/resourceWell/take/text"
 msgstr "Resources returned by the Assembly Shop:"
 
 msgid "serviceChannelMessages/resourceWell/take/title"
 msgstr "Resources Returning"
-
-msgid "serviceChannelMessages/resourceWell/topReward/additionalText"
-msgstr "Style number: %(serialNumber)s"
-
-msgid "serviceChannelMessages/resourceWell/topReward/text"
-msgstr "The unique %(vehicle)s received from the Assembly Shop."
-
-msgid "serviceChannelMessages/resourceWell/topReward/title"
-msgstr "%(vehicle)s received!"
 
 msgid "serviceChannelMessages/selectableCrewbook/brochure"
 msgstr "Training Booklets to Select From"

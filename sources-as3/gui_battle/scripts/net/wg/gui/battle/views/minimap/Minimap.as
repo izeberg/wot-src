@@ -72,13 +72,13 @@ package net.wg.gui.battle.views.minimap
          this._clickAreaSpr = new Sprite();
          super();
          this._foregrounds = new <Sprite>[this.foreground0,this.foreground1,this.foreground2,this.foreground3,this.foreground4,this.foreground5];
+         this.foreground0.visible = this.foreground1.visible = this.foreground2.visible = this.foreground3.visible = this.foreground4.visible = this.foreground5.visible = false;
          this.foreground0.imageName = BATTLEATLAS.MINIMAP_B1;
          this.foreground1.imageName = BATTLEATLAS.MINIMAP_B2;
          this.foreground2.imageName = BATTLEATLAS.MINIMAP_B3;
          this.foreground3.imageName = BATTLEATLAS.MINIMAP_B4;
          this.foreground4.imageName = BATTLEATLAS.MINIMAP_B5;
          this.foreground5.imageName = BATTLEATLAS.MINIMAP_B6;
-         this.foreground0.visible = this.foreground1.visible = this.foreground2.visible = this.foreground3.visible = this.foreground4.visible = this.foreground5.visible = false;
          this._currForeground = this.foreground0;
          this.entriesContainer.mask = this.entriesContainerMask;
          this._clickAreaSpr.name = NAME_CLICK_AREA;

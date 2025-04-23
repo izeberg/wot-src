@@ -154,22 +154,11 @@ msgstr "Purchase"
 msgid "buyingPanel/style/caption/userMoney"
 msgstr "Points available:"
 
-msgid "buyingPanel/style/description/button/text"
-msgstr "Select Resources"
-
 msgid "buyingPanel/style/description/maxLevel"
 msgstr "Maximum progressive style Level"
 
 msgid "buyingPanel/style/description/nonProgression"
 msgstr "Standard 3D style"
-
-msgid "buyingPanel/style/description/text"
-msgstr ""
-"The first %(topPlayers) players will receive a vehicle with a numbered 3D style,\n"
-"then %(basePlayers) vehicles will be delivered without the number."
-
-msgid "buyingPanel/style/description/title"
-msgstr "Spend the required resources and get the %(vehicleName)!"
 
 msgid "buyingPanel/style/description/waiting"
 msgstr "The purchase will be credited to your account in the near future"
@@ -267,7 +256,7 @@ msgid "header/backBtn/descrLabel/researchTree"
 msgstr "TO TECH TREE"
 
 msgid "header/backBtn/descrLabel/resourceWell"
-msgstr "TO THE ASSEMBLY SHOP"
+msgstr "TO ASSEMBLY SHOP"
 
 msgid "header/backBtn/descrLabel/shop"
 msgstr "TO STORE"
@@ -416,10 +405,10 @@ msgid "showcaseStyleBuying/timeRemaining/desc"
 msgstr "Available during:"
 
 msgid "topPanel/tab/baseVehicle/vehicle"
-msgstr "STANDARD"
+msgstr "WITHOUT NUMBER"
 
 msgid "topPanel/tab/personalNumberVehicle/style"
-msgstr "WITH A NUMBER"
+msgstr "WITH NUMBER"
 
 msgid "topPanel/tab/style"
 msgstr "STYLE"

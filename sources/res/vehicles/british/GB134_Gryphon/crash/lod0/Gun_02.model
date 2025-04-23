@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/british/GB134_Gryphon/crash/lod0/Gun_02</nodelessVisual>
+	<parent>vehicles/british/GB134_Gryphon/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.380000 -0.256073 -1.325642</min>
+		<max>0.380001 0.271593 4.982923</max>
+	</visibilityBox>
+</root>

@@ -7,16 +7,14 @@ from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.managers.containers import POP_UP_CRITERIA
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.impl import backport
-from gui.impl.auxiliary.tooltips.simple_tooltip import createSimpleTooltip
+from gui.impl.auxiliary.tooltips.simple_tooltip import createSimpleTooltip, createSimpleIconTooltip
 from gui.impl.backport.backport_tooltip import createAndLoadBackportTooltipWindow
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_model import ModeSelectorModel
-from gui.impl.gen.view_models.views.lobby.common.tooltips.simple_icon_tooltip_model import HeaderType
 from gui.impl.gen.view_models.views.lobby.mode_selector.tooltips.mode_selector_tooltips_constants import ModeSelectorTooltipsConstants
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_completed_tooltip_view import BattlePassCompletedTooltipView
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_in_progress_tooltip_view import BattlePassInProgressTooltipView
 from gui.impl.lobby.common.view_mixins import LobbyHeaderVisibility
-from gui.impl.lobby.common.tooltips.simple_icon_tooltip_view import SimpleIconTooltipView
 from gui.impl.lobby.mode_selector.battle_session_view import BattleSessionView
 from gui.impl.lobby.mode_selector.items import saveBattlePassStateForItems
 from gui.impl.lobby.mode_selector.mode_selector_data_provider import ModeSelectorDataProvider
@@ -132,21 +130,21 @@ class ModeSelectorView(ViewImpl, LobbyHeaderVisibility):
     def createToolTipContent(self, event, contentID):
         if contentID == _R_SIMPLE_TOOLTIP():
             return SimpleTooltipContent(contentID, event.getArgument('header', ''), event.getArgument('body', ''), event.getArgument('note', ''), event.getArgument('alert', ''))
+        if contentID == R.views.lobby.mode_selector.tooltips.SimplyFormatTooltip():
+            modeName = event.getArgument('modeName', '')
+            if modeName is None:
+                return
+            tooltipLocal = R.strings.mode_selector.mode.dyn(modeName)
+            if not tooltipLocal:
+                return
+            header = backport.text(tooltipLocal.battlePassTooltip.header())
+            body = backport.text(tooltipLocal.battlePassTooltip.body())
+            if not header:
+                return
+            return SimplyFormatTooltipView(header, body)
         else:
-            if contentID == R.views.lobby.mode_selector.tooltips.SimplyFormatTooltip():
-                modeName = event.getArgument('modeName', '')
-                if modeName is None:
-                    return
-                tooltipLocal = R.strings.mode_selector.mode.dyn(modeName)
-                if not tooltipLocal:
-                    return
-                header = backport.text(tooltipLocal.battlePassTooltip.header())
-                body = backport.text(tooltipLocal.battlePassTooltip.body())
-                if not header:
-                    return
-                return SimplyFormatTooltipView(header, body)
             if contentID == R.views.lobby.common.tooltips.SimpleIconTooltip():
-                return SimpleIconTooltipView(event.getArgument('header', ''), event.getArgument('body', ''), event.getArgument('icon', ''), event.getArgument('headerType', HeaderType.NORMAL))
+                return createSimpleIconTooltip(event)
             tooltipClass = self.__tooltipConstants.get(_CONTENT_TOOLTIPS_KEY, {}).get(contentID)
             if tooltipClass:
                 return tooltipClass()

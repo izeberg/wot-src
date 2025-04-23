@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<name>PoIAppearing</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>SERVER</senderAspects>
+	<receiverAspects>CLIENT</receiverAspects>
+	<param>
+		<name>name</name>
+		<typecode>StringT</typecode>
+	</param>
+	<param>
+		<name>position</name>
+		<typecode>Vector3T</typecode>
+	</param>
+</root>

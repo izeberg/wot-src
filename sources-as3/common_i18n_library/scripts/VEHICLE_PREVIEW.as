@@ -243,12 +243,6 @@ package
       
       public static const TOPPANEL_TAB_PERSONALNUMBERVEHICLE_STYLE:String = "#vehicle_preview:topPanel/tab/personalNumberVehicle/style";
       
-      public static const BUYINGPANEL_STYLE_DESCRIPTION_TITLE:String = "#vehicle_preview:buyingPanel/style/description/title";
-      
-      public static const BUYINGPANEL_STYLE_DESCRIPTION_TEXT:String = "#vehicle_preview:buyingPanel/style/description/text";
-      
-      public static const BUYINGPANEL_STYLE_DESCRIPTION_BUTTON_TEXT:String = "#vehicle_preview:buyingPanel/style/description/button/text";
-      
       public static const SHOWCASESTYLEBUYING_ACTIONBTN_LABEL_BUY:String = "#vehicle_preview:showcaseStyleBuying/actionBtn/label/buy";
       
       public static const SHOWCASESTYLEBUYING_TIMEREMAINING_DESC:String = "#vehicle_preview:showcaseStyleBuying/timeRemaining/desc";

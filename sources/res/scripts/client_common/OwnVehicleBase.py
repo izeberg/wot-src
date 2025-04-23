@@ -35,13 +35,12 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
         self.__dict__.clear()
         return
 
-    @property
     def __inRespawn(self):
         return self.entity.enableExternalRespawn and self.entity.VehicleRespawnComponent.respawnState == RespawnState.RESPAWNING
 
     @noexcept
     def update_vehicleAmmoList(self, ammoList):
-        if self.__inRespawn:
+        if self.__inRespawn():
             return
         else:
             avatar = self._avatar()
@@ -224,7 +223,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
 
     @noexcept
     def update_vehicleHealthInfo(self, data):
-        if self.__inRespawn:
+        if self.__inRespawn():
             return
         avatar = self._avatar()
         if not avatar:
@@ -324,7 +323,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
         return
 
     def setNested_vehicleAmmoList(self, path, prev):
-        if self.__inRespawn:
+        if self.__inRespawn():
             return
         avatar = self._avatar()
         if not avatar:
@@ -435,7 +434,7 @@ class OwnVehicleBase(BigWorld.DynamicScriptComponent):
                         attrFunc = partial(self.__setSlice, func, parts[1])
                     self.__dict__[item] = attrFunc
                     return attrFunc
-        raise AttributeError(('OwnVehicle does not have attrubure {}').format(item))
+        raise AttributeError(('OwnVehicle does not have attribute {}').format(item))
         return
 
     def __set(self, func, propname, oldValue=None):

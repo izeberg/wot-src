@@ -763,7 +763,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				<battle_bonus_x5>&lt;img src=&apos;img://gui/maps/icons/library/bonus_x5.png&apos; width=&apos;46&apos; height=&apos;18&apos; vspace=&apos;-4&apos; /&gt;&lt;font color=&apos;#95907F&apos;&gt;(x%(value)s) &lt;/font&gt;</battle_bonus_x5>
 				<crew_bonus_x3>&lt;img src=&apos;img://gui/maps/icons/library/bonus_x3.png&apos; width=&apos;46&apos; height=&apos;18&apos; vspace=&apos;-4&apos; /&gt;&lt;font color=&apos;#95907F&apos;&gt;(x%(value)s) &lt;/font&gt;</crew_bonus_x3>
 				<personalExchangeRate>&lt;font color=&apos;#CED9D9&apos;&gt;%(discount)s&lt;/font&gt;</personalExchangeRate>
-				<stpcoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/StpcoinIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</stpcoin>
 			</bonuses>
 			<carouselBonuses>
 				<credits>&lt;font face=&apos;$FieldFont&apos; size=&apos;22&apos; color=&apos;#CED9D9&apos;&gt;&lt;b&gt;%(value)s &lt;/b&gt;&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/CreditsIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; /&gt;</credits>
@@ -1162,7 +1161,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			<creamTitle>&lt;font face=&apos;$TitleFont&apos; size=&apos;15&apos; color=&apos;#FFDD99&apos;&gt;%(message)s&lt;/font&gt;</creamTitle>
 			<lightGray>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#F2F2F7&apos;&gt;%(message)s&lt;/font&gt;</lightGray>
 			<lightBlue>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#BDD4FF&apos;&gt;%(message)s&lt;/font&gt;</lightBlue>
-			<stPatrickText>&lt;font face=&apos;$FieldFont&apos; size=&apos;14&apos; color=&apos;#02BE64&apos;&gt;%(message)s&lt;/font&gt;</stPatrickText>
 		</textStyle>
 		<profileStatistics>
 			<marksOfMasteryText>%(marksOfMastery)s&lt;font size=&apos;14&apos; color=&apos;#939188&apos;&gt;/%(totalVehicles)s&lt;/font&gt;</marksOfMasteryText>

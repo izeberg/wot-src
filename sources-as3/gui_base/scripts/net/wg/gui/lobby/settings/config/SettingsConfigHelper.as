@@ -247,6 +247,8 @@ package net.wg.gui.lobby.settings.config
       
       public static const NEWBIE_BATTLE_HINTS:String = "newbieBattleHints";
       
+      public static const ENABLE_COMMENDATIONS_FEEDBACK:String = "enableCommendations";
+      
       public static const RESTART_NEWBIE_BATTLE_HINTS_BUTTON:String = "restartNewbieBattleHints";
       
       public static const CAROUSEL_TYPE:String = "carouselType";

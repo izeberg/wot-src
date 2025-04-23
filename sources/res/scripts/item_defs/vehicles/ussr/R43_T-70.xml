@@ -112,7 +112,7 @@
 		</ammoBayHealth>
 		<variants>
 			<hull2>
-				<turret0>Turret_2_T-70</turret0>
+				<turret0>Turret_2_R43_T-70</turret0>
 				<turretPositions>
 					<turret>-0.259156 0.542994 -0.184204</turret>
 				</turretPositions>
@@ -1879,14 +1879,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_T-70>
-			<userString>#ussr_vehicles:Chassis_T-70</userString>
+		<Chassis_R43_T-70>
+			<userString>#ussr_vehicles:Chassis_R43_T-70</userString>
 			<tags/>
 			<level>2</level>
 			<price>600</price>
 			<unlocks>
 				<chassis>
-					Chassis_T-70_2
+					Chassis_R43_T-70_2
 					<cost>320</cost>
 				</chassis>
 			</unlocks>
@@ -1902,7 +1902,7 @@
 			</terrainResistance>
 			<brakeForce>9500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>48</rotationSpeed>
+			<rotationSpeed>60</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.28
@@ -1919,10 +1919,7 @@
 			</bulkHealthFactor>
 			<maxHealth>60</maxHealth>
 			<maxRegenHealth>45</maxRegenHealth>
-			<repairCost>
-				2.5
-				<!--BW_String-->
-			</repairCost>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/russian/R43_T70/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/russian/R43_T70/crash/lod0/Chassis.model</destroyed>
@@ -3460,21 +3457,15 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T-70>
-		<Chassis_T-70_2>
-			<userString>#ussr_vehicles:Chassis_T-70_2</userString>
+		</Chassis_R43_T-70>
+		<Chassis_R43_T-70_2>
+			<userString>#ussr_vehicles:Chassis_R43_T-70_2</userString>
 			<tags/>
 			<level>3</level>
 			<price>1730</price>
-			<unlocks>
-				<vehicle>
-					R24_SU-76
-					<cost>3900</cost>
-				</vehicle>
-			</unlocks>
 			<armor>
 				<leftTrack>10</leftTrack>
 				<rightTrack>10</rightTrack>
@@ -3487,7 +3478,7 @@
 			</terrainResistance>
 			<brakeForce>11000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>52</rotationSpeed>
+			<rotationSpeed>65</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.26
@@ -3502,12 +3493,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>70</maxHealth>
-			<maxRegenHealth>55</maxRegenHealth>
-			<repairCost>
-				2.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>75</maxHealth>
+			<maxRegenHealth>56</maxRegenHealth>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/russian/R43_T70/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/russian/R43_T70/crash/lod0/Chassis.model</destroyed>
@@ -5045,20 +5033,20 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				5.71428585
+				6.75555563
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T-70_2>
+		</Chassis_R43_T-70_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_T-70>
-			<userString>#ussr_vehicles:Turret_1_T-70</userString>
+		<Turret_1_R43_T-70>
+			<userString>#ussr_vehicles:Turret_1_R43_T-70</userString>
 			<tags/>
 			<level>2</level>
 			<price>920</price>
 			<unlocks>
 				<turret>
-					Turret_2_T-70
+					Turret_2_R43_T-70
 					<cost>330</cost>
 				</turret>
 			</unlocks>
@@ -5095,19 +5083,13 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_45mm_20K>
+				<_45mm_20K_T_70>
 					shared
 					<pitchLimits>
 						<minPitch>0 -25 1 -25</minPitch>
 						<maxPitch>0 6 1 6</maxPitch>
 					</pitchLimits>
 					<maxAmmo>180</maxAmmo>
-					<unlocks>
-						<gun>
-							_37mm_ZiS-19
-							<cost>160</cost>
-						</gun>
-					</unlocks>
 					<armor>
 						<armor_1>
 							50
@@ -5124,7 +5106,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -5132,7 +5114,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5237,144 +5219,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_45mm_20K>
-				<_37mm_ZiS-19>
-					shared
-					<pitchLimits>
-						<minPitch>0 -25 1 -25</minPitch>
-						<maxPitch>0 6 1 6</maxPitch>
-					</pitchLimits>
-					<maxAmmo>300</maxAmmo>
-					<armor>
-						<armor_1>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							16
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.39
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						2.4
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.3
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/russian/R43_T70/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/russian/R43_T70/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/russian/R43_T70/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/russian/R43_T70/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/russian/R43_T70/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_small</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.170805 0.032008 1.08224
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.320358 0.174739 0.164618</anchorPosition>
-							<anchorDirection>0.000073 0.707107 0.707107</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.170805 0.032008 1.08224
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.302827 1.76572 0.669572
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.03173 -0.001754 3.14157
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								0.780732 0.393448 0.78073
-								<!--BW_String-->
-							</scale>
-							<showOn>4096</showOn>
-							<clipAngle>0.949469</clipAngle>
-							<anchorShift>0.070711</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								-0.302752 1.83168 0.627138
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.835495 -0.001748 3.14158
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								0.780732 0.393448 0.78073
-								<!--BW_String-->
-							</scale>
-							<showOn>4096</showOn>
-							<clipAngle>0.949469</clipAngle>
-							<anchorShift>0.060711</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>-0.171777 0.034375 0.000000</shotOffset>
-					<camouflage>
-						<tiling>
-							0.9 0.9 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							98.4295 113.201
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>256 256</aoTextureSize>
-					</camouflage>
-				</_37mm_ZiS-19>
+				</_45mm_20K_T_70>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R43_T70/normal/lod0/Turret_01.model</undamaged>
@@ -6298,15 +6143,15 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</Turret_1_T-70>
-		<Turret_2_T-70>
-			<userString>#ussr_vehicles:Turret_2_T-70</userString>
+		</Turret_1_R43_T-70>
+		<Turret_2_R43_T-70>
+			<userString>#ussr_vehicles:Turret_2_R43_T-70</userString>
 			<tags/>
 			<level>3</level>
 			<price>1750</price>
 			<unlocks>
 				<gun>
-					_45mm_VT-42
+					_45mm_VT_42_T_70
 					<cost>850</cost>
 				</gun>
 			</unlocks>
@@ -6346,7 +6191,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_45mm_20K>
+				<_45mm_20K_T_70>
 					shared
 					<pitchLimits>
 						<minPitch>0 -25 1 -25</minPitch>
@@ -6369,7 +6214,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6473,140 +6318,15 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_45mm_20K>
-				<_37mm_ZiS-19>
+				</_45mm_20K_T_70>
+				<_45mm_VT_42_T_70>
 					shared
-					<pitchLimits>
-						<minPitch>0 -25 1 -25</minPitch>
-						<maxPitch>0 6 1 6</maxPitch>
-					</pitchLimits>
-					<maxAmmo>300</maxAmmo>
-					<armor>
-						<armor_1>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							50
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							16
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.39
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						2.3
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						2.1
-						<!--BW_String-->
-					</aimingTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<invisibilityFactorAtShot>
-						0.3
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/russian/R43_T70/normal/lod0/Gun_04.model</undamaged>
-						<destroyed>vehicles/russian/R43_T70/crash/lod0/Gun_04.model</destroyed>
-						<exploded>vehicles/russian/R43_T70/crash/lod0/Gun_04.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/russian/R43_T70/collision/Gun_04.model</collisionModelServer>
-						<collisionModelClient>vehicles/russian/R43_T70/collision_client/Gun_04.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_small</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.32712 0.013607 0.935733
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.317954 0.174332 0.174265</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.164177 0.013572 0.935732</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.263634 1.71305 0.797197
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.31912 -0.002362 3.14094
-								<!--BW_String-->
-							</rotation>
-							<scale>0.812234 0.409323 0.812236</scale>
-							<showOn>4096</showOn>
-							<clipAngle>0.621325</clipAngle>
-							<anchorShift>
-								0.17583
-								<!--BW_String-->
-							</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>-0.328361 0.027111 0.000000</shotOffset>
-					<camouflage>
-						<tiling>
-							0.9 0.9 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							98.4295 113.201
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>256 256</aoTextureSize>
-					</camouflage>
-				</_37mm_ZiS-19>
-				<_45mm_VT-42>
-					shared
+					<unlocks>
+						<vehicle>
+							R24_SU-76
+							<cost>3900</cost>
+						</vehicle>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -19 1 -19</minPitch>
 						<maxPitch>0 4 1 4</maxPitch>
@@ -6738,7 +6458,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_45mm_VT-42>
+				</_45mm_VT_42_T_70>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R43_T70/normal/lod0/Turret_02.model</undamaged>
@@ -7808,19 +7528,19 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</Turret_2_T-70>
+		</Turret_2_R43_T-70>
 	</turrets0>
 	<engines>
-		<GAZ-203>
+		<GAZ_203_T_70>
 			shared
 			<unlocks>
 				<engine>
-					M-80
+					M_80_T_70
 					<cost>240</cost>
 				</engine>
 			</unlocks>
-		</GAZ-203>
-		<M-80>shared</M-80>
+		</GAZ_203_T_70>
+		<M_80_T_70>shared</M_80_T_70>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
@@ -7840,23 +7560,17 @@
 	<physics>
 		<detailed>
 			<engines>
-				<GAZ-203>
-					<smplEnginePower>
-						148.0194
-						<!--BW_String-->
-					</smplEnginePower>
+				<GAZ_203_T_70>
+					<smplEnginePower>160</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
-				</GAZ-203>
-				<M-80>
-					<smplEnginePower>
-						179.7378
-						<!--BW_String-->
-					</smplEnginePower>
+				</GAZ_203_T_70>
+				<M_80_T_70>
+					<smplEnginePower>185</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
-				</M-80>
+				</M_80_T_70>
 			</engines>
 			<chassis>
-				<Chassis_T-70>
+				<Chassis_R43_T-70>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7877,8 +7591,9 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_T-70>
-				<Chassis_T-70_2>
+					<axleCount>5</axleCount>
+				</Chassis_R43_T-70>
+				<Chassis_R43_T-70_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7899,7 +7614,8 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_T-70_2>
+					<axleCount>5</axleCount>
+				</Chassis_R43_T-70_2>
 			</chassis>
 		</detailed>
 	</physics>

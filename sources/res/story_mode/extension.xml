@@ -16,6 +16,13 @@
 			<StoryModeDamageResistsComponent/>
 			<StoryModeAccuracyOverrideComponent/>
 			<StoryModeModulesImmunityComponent/>
+			<StoryModeLootableComponent/>
+			<SMReconAbilityEntityComponent/>
+			<SMReconAbilityVehicleComponent/>
+			<SMDistractionAbilityEntityComponent/>
+			<SMDistractionAbilityArenaInfoComponent/>
+			<SMDetectionDelayObserverComponent/>
+			<SMDetectionDelayObservableComponent/>
 		</DynamicComponents>
 	</Components>
 	<Entities>

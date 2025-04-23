@@ -6,6 +6,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.vo.NotificationViewInitVO;
    import net.wg.infrastructure.base.SmartPopOverView;
    import net.wg.infrastructure.exceptions.AbstractException;
+   import net.wg.infrastructure.interfaces.IDAAPIModule;
    
    public class NotificationsListMeta extends SmartPopOverView
    {
@@ -18,6 +19,8 @@ package net.wg.infrastructure.base.meta.impl
       public var onGroupChange:Function;
       
       public var onCheckNewsClick:Function;
+      
+      public var registerGFNotification:Function;
       
       private var _notificationViewInitVO:NotificationViewInitVO;
       
@@ -72,6 +75,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.onCheckNewsClick,"onCheckNewsClick" + Errors.CANT_NULL);
          this.onCheckNewsClick();
+      }
+      
+      public function registerGFNotificationS(param1:IDAAPIModule, param2:String, param3:String, param4:Boolean, param5:Object) : void
+      {
+         App.utils.asserter.assertNotNull(this.registerGFNotification,"registerGFNotification" + Errors.CANT_NULL);
+         this.registerGFNotification(param1,param2,param3,param4,param5);
       }
       
       public final function as_setInitData(param1:Object) : void

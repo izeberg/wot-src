@@ -210,5 +210,9 @@ package net.wg.gui.battle.pveBase.views.stats.components.playersPanel.list
       public function setTeamColor(param1:String) : void
       {
       }
+      
+      public function setPriorityChatCommand(param1:String, param2:uint, param3:uint) : void
+      {
+      }
    }
 }

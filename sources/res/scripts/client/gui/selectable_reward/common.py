@@ -123,7 +123,7 @@ class SelectableRewardManager(object):
     @classmethod
     def getRemainedChoicesForFeature(cls):
         result = 0
-        for token in cls.__getFeatureTokens():
+        for token in cls._getFeatureTokens():
             offer = cls.__offersDataProvider.getOfferByToken(token)
             if offer is not None:
                 result += offer.availableTokens
@@ -153,7 +153,7 @@ class SelectableRewardManager(object):
         return cls.__itemsCache.items.tokens.getTokens().iteritems()
 
     @classmethod
-    def __getFeatureTokens(cls):
+    def _getFeatureTokens(cls):
         return {tokenID:token for tokenID, token in cls._iterAvailableTokens() if cls.isFeatureReward(tokenID)}
 
 

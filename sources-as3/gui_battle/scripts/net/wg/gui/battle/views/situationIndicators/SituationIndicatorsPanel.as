@@ -296,7 +296,8 @@ package net.wg.gui.battle.views.situationIndicators
       
       private function addWeather(param1:String, param2:int, param3:String) : void
       {
-         var _loc4_:WeatherItem = this._classFactory.getComponent(WEATHER_ITEM_UI_LINKAGE,WeatherItem);
+         var _loc4_:WeatherItem = null;
+         _loc4_ = this._classFactory.getComponent(WEATHER_ITEM_UI_LINKAGE,WeatherItem);
          _loc4_.weatherName = param1;
          _loc4_.state = param2;
          _loc4_.toolTip = param3;

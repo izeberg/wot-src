@@ -109,7 +109,9 @@ package net.wg.gui.lobby.hangar
       
       private static const VEH_RESEARCH_PANEL_OFFSET:int = 37;
       
-      private static const DQ_WIDGET_NORMAL_HEIGHT:int = 265;
+      private static const DQ_WIDGET_NORMAL_HEIGHT:int = 184;
+      
+      private static const COPM7_DQ_WIDGET_NORMAL_HEIGHT:int = 265;
       
       private static const DQ_WIDGET_MINI_HEIGHT:int = 60;
       
@@ -285,7 +287,7 @@ package net.wg.gui.lobby.hangar
             this._hangarViewSwitchAnimator.addAlphaItem(this._eventsEntryContainer);
          }
          this._carouselEventEntryContainer = new Sprite();
-         addChild(this._carouselEventEntryContainer);
+         addChildAt(this._carouselEventEntryContainer,getChildIndex(this.carouselContainer) + 1);
          this._carouselEventEntryContainer.name = CAROUSEL_EVENT_ENTRY_NAME;
          this._header = this._utils.classFactory.getComponent(Linkages.HANGAR_HEADER,HangarHeader);
          this._header.name = HANGAR_ALIASES.HEADER;
@@ -858,11 +860,12 @@ package net.wg.gui.lobby.hangar
             addChildAt(this._battleRoyaleComponents,_loc1_);
             this._battleRoyaleComponents.addEventListener(BattleTypeSelectorEvent.BATTLE_TYPE_SELECTOR_VISIBILITY_CHANGED,this.onBattleTypeSelectorVisibilityChangedHandler);
          }
-         if(!isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
+         if(!isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
          {
             registerFlashComponentS(this._battleRoyaleComponents.commander,BATTLEROYALE_ALIASES.COMMANDER_COMPONENT);
             registerFlashComponentS(this._battleRoyaleComponents.techParameters,BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT);
             registerFlashComponentS(this._battleRoyaleComponents.bottomPanel,BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT);
+            registerFlashComponentS(this._battleRoyaleComponents.proxyCurrencyPanel,BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT);
             registerFlashComponentS(this._battleRoyaleComponents.battleTypeSelector,BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR);
          }
          this.updateBRComponentsPos();
@@ -916,6 +919,7 @@ package net.wg.gui.lobby.hangar
          {
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT);
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT);
+            this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT);
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT);
             this.removeBattleRoyaleComponent(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR);
          }
@@ -956,7 +960,7 @@ package net.wg.gui.lobby.hangar
       public function tryRemoveBattleRoyaleContainer() : void
       {
          this.removeBattleRoyaleComponents();
-         if(!_baseDisposed && this._battleRoyaleComponents != null && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
+         if(!_baseDisposed && this._battleRoyaleComponents != null && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.COMMANDER_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.TECH_PARAMETERS_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.PROXY_CURRENCY_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BOTTOM_PANEL_COMPONENT) && !isFlashComponentRegisteredS(BATTLEROYALE_ALIASES.BATTLE_TYPE_SELECTOR))
          {
             removeChild(this._battleRoyaleComponents);
             this._battleRoyaleComponents.removeEventListener(BattleTypeSelectorEvent.BATTLE_TYPE_SELECTOR_VISIBILITY_CHANGED,this.onBattleTypeSelectorVisibilityChangedHandler);
@@ -1034,8 +1038,10 @@ package net.wg.gui.lobby.hangar
       private function setupWidgetSizes() : void
       {
          this._widgetSizes = new Dictionary();
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [365,266];
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [270,65];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [340,186];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [190,65];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_NORMAL] = [365,266];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_MINI] = [270,65];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO] = [155,55];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_SINGLE] = [340,62];
       }
@@ -1127,9 +1133,13 @@ package net.wg.gui.lobby.hangar
       {
          switch(this._currentWidgetLayout)
          {
+            case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_NORMAL:
+               this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - COPM7_DQ_WIDGET_NORMAL_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET;
+               break;
             case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL:
                this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_NORMAL_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET;
                break;
+            case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_MINI:
             case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI:
                this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_MINI_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET_MINI;
                break;
@@ -1150,11 +1160,11 @@ package net.wg.gui.lobby.hangar
          var _loc1_:int = !!this._isComp7SpaceLoaded ? int(COMP7_DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD) : int(DQ_WIDGET_NORMAL_LAYOUT_CAROUSEL_THRESHOLD);
          if(App.appWidth >= DQ_WIDGET_WIDTH_THRESHOLD && this._carousel.y >= _loc1_)
          {
-            return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL;
+            return !!this._isComp7SpaceLoaded ? int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_NORMAL) : int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL);
          }
          if(App.appWidth > DQ_WIDGET_WIDTH_THRESHOLD)
          {
-            return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI;
+            return !!this._isComp7SpaceLoaded ? int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_COMP7_MINI) : int(DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI);
          }
          return DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO;
       }

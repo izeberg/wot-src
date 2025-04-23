@@ -50,7 +50,7 @@ msgid "banner/seasonDate/seasonLasts"
 msgstr "Until %(month)s %(day)s"
 
 msgid "banner/subtitle"
-msgstr "Shamrock Showdown"
+msgstr "Battle royale with valuable rewards"
 
 msgid "banner/timeLeft/hour"
 msgstr "%(hour)s h"
@@ -120,15 +120,6 @@ msgstr "Stay out of combat!"
 
 msgid "battle/respawnMessagePanel/squad/stayInCover/title"
 msgstr "Respawning Ally"
-
-msgid "battle/winnerCongratulationsView/bonusActivated"
-msgstr "Bonus activated!"
-
-msgid "battle/winnerCongratulationsView/bonusForFirstPlace"
-msgstr "Reward for first place"
-
-msgid "battle/winnerCongratulationsView/colected"
-msgstr "Collected in battle"
 
 msgid "battle/winnerCongratulationsView/title"
 msgstr "VICTORY"
@@ -397,13 +388,7 @@ msgstr "Supplies: XP, possible Combat Ability charge, ammo."
 
 msgid "fullStats/icons/extendedLoot/description"
 msgstr ""
-"Consumables: XP, HP recovery, module repairs, chance to get charges for "
-"Combat Abilities, ammo."
-
-msgid "fullStats/icons/shamrocks/description"
-msgstr ""
-"Lucky Seals are contained in all types of Spoils of War. They can be "
-"exchanged for rewards after battle in the Shamrock Shop."
+"Consumables: XP, HP recovery, module repairs, charge for Recovery, ammo."
 
 msgid "fullStats/subTitle"
 msgstr "Battle for valuable resources under \"free-for-all\" rules."
@@ -460,7 +445,7 @@ msgstr ""
 "the modules."
 
 msgid "intro/aboutButton"
-msgstr "ABOUT THE EVENT"
+msgstr "ABOUT MODE"
 
 msgid "intro/button"
 msgstr "Affirmative!"
@@ -654,9 +639,7 @@ msgstr ""
 "Seals"
 
 msgid "proxyPanel/store"
-msgstr ""
-"SHAMROCK\n"
-"SHOP"
+msgstr "STORE"
 
 msgid "questsTooltip/lessThanDay"
 msgstr "less than 1 d"
@@ -715,7 +698,7 @@ msgstr ""
 msgid "rewardCurrencyTooltip/brcoin/header"
 msgstr "Steel Seals"
 
-msgid "rewardCurrencyTooltip/brcoin/premium"
+msgid "rewardCurrencyTooltip/brcoin/premFactor"
 msgstr ""
 "WoT Premium Account increases the amount of this currency earned by 50%."
 
@@ -725,7 +708,7 @@ msgstr "The main in-game currency. Earned in battles or purchased with gold."
 msgid "rewardCurrencyTooltip/credits/header"
 msgstr "Credits"
 
-msgid "rewardCurrencyTooltip/credits/premium"
+msgid "rewardCurrencyTooltip/credits/premFactor"
 msgstr ""
 "WoT Premium Account increases the amount of this currency earned by 50%."
 
@@ -737,21 +720,6 @@ msgstr ""
 msgid "rewardCurrencyTooltip/crystal/header"
 msgstr "Bonds"
 
-msgid "rewardCurrencyTooltip/stpcoin/body"
-msgstr ""
-"Currency that can be earned in Steel Hunter battles. Seals can be exchanged "
-"for unique rewards in the Shamrock Shop. When playing in a Platoon, Seals "
-"are divided equally among Platoon members. The specified amount is your part"
-" of the total earnings."
-
-msgid "rewardCurrencyTooltip/stpcoin/bonus"
-msgstr ""
-"Bonus applied! The number of Seals received in battle is increased by 2 "
-"times."
-
-msgid "rewardCurrencyTooltip/stpcoin/header"
-msgstr "Lucky Seals"
-
 msgid "rewardCurrencyTooltip/xp/body"
 msgstr ""
 "The experience earned in special vehicles can be converted to Free "
@@ -760,7 +728,7 @@ msgstr ""
 msgid "rewardCurrencyTooltip/xp/header"
 msgstr "Combat Experience"
 
-msgid "rewardCurrencyTooltip/xp/premium"
+msgid "rewardCurrencyTooltip/xp/premFactor"
 msgstr ""
 "WoT Premium Account increases the amount of Combat Experience earned by 50%."
 
@@ -835,7 +803,7 @@ msgid "statusNotificationTimers/inspire/inspired"
 msgstr "Technical characteristics improved"
 
 msgid "statusNotificationTimers/loot/advanced"
-msgstr "Consumables"
+msgstr "Shells and Recovery"
 
 msgid "statusNotificationTimers/loot/airdrop"
 msgstr "Airdrop"
@@ -971,10 +939,10 @@ msgid "tooltip/battleTypeSelector/tab/title/platoon"
 msgstr "Platoon with a friend"
 
 msgid "tooltip/battleTypeSelector/tab/title/randomPlatoon"
-msgstr "Random platoon"
+msgstr "Random Platoon"
 
 msgid "tooltip/battleTypeSelector/tab/title/solo"
-msgstr "Solo battle"
+msgstr "Solo Battle"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/29"
 msgstr "Solo"
@@ -1104,42 +1072,6 @@ msgstr "Single-time use"
 
 msgid "tooltips/respawn/title"
 msgstr "Respawn"
-
-msgid "tooltips/shop/description"
-msgstr ""
-"A store where you can exchange Lucky Seals earned in the Steel Hunter mode "
-"for special valuable rewards."
-
-msgid "tooltips/shop/subdescription"
-msgstr ""
-"A special currency that can be earned in the Steel Hunter mode during the "
-"Paint It GREEN event. Receive Lucky Seals for picking up Spoils of War in "
-"battle, completing Progression Stages, and taking the top positions in the "
-"battle royale."
-
-msgid "tooltips/shop/subtitle"
-msgstr "Lucky Seals"
-
-msgid "tooltips/shop/title"
-msgstr "Shamrock Shop"
-
-msgid "tooltips/stpCoin/earn/description"
-msgstr ""
-"Receive Lucky Seals for picking up Spoils of War in battle, completing "
-"Progression Stages, and taking the top positions in Steel Hunter."
-
-msgid "tooltips/stpCoin/earn/title"
-msgstr "How to Earn Seals"
-
-msgid "tooltips/stpCoin/spend/description"
-msgstr ""
-"Exchange your earned Lucky Seals for valuable rewards in the Shamrock Shop."
-
-msgid "tooltips/stpCoin/spend/title"
-msgstr "What to Spend Seals On "
-
-msgid "tooltips/stpCoin/title"
-msgstr "Lucky Seals"
 
 msgid "tooltips/vehicle/description"
 msgstr "Vehicle for Steel Hunter mode"

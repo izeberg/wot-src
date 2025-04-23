@@ -9,7 +9,6 @@ package net.wg.gui.battle.views.siegeModePanel
    import net.wg.data.constants.Values;
    import net.wg.data.constants.VehicleModules;
    import net.wg.data.constants.generated.ATLAS_CONSTANTS;
-   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_ITEM_STATES;
    import net.wg.gui.battle.components.BattleUIComponent;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
@@ -54,8 +53,6 @@ package net.wg.gui.battle.views.siegeModePanel
       
       private static const CRITICAL_COMPLETE_FRAME:int = 39;
       
-      private static const DMG_CONTAINER_FIRST_FRAME:int = 1;
-      
       private static const MIN_TIME_VALUE:Number = 0.0001;
        
       
@@ -66,8 +63,6 @@ package net.wg.gui.battle.views.siegeModePanel
       public var switchIndicatorContainer:MovieClip = null;
       
       public var deviceIconContainer:MovieClip = null;
-      
-      public var damagedContainer:MovieClip = null;
       
       protected var states:Vector.<String>;
       
@@ -121,14 +116,10 @@ package net.wg.gui.battle.views.siegeModePanel
       {
          super.configUI();
          this.deviceIconContainer.stop();
-         this.damagedContainer.stop();
          gotoAndStop(STATE_INVISIBLE_TIMER);
          this.deviceIconContainer.visible = false;
-         this.atlasManager.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,BATTLEATLAS.SWITCH_SIEGE_DAMAGED,this.damagedContainer.damagedIcon.graphics,Values.EMPTY_STR,false,false,true);
-         this.damagedContainer.visible = false;
          this.deviceIconContainer.addFrameScript(CRITICAL_COMPLETE_FRAME,this.onLoopAnimation);
          this.deviceIconContainer.addFrameScript(this.deviceIconContainer.totalFrames - 1,this.onLoopAnimation);
-         this.damagedContainer.addFrameScript(this.damagedContainer.totalFrames - 1,this.onDamagedAnimationComplete);
       }
       
       override protected function onDispose() : void
@@ -137,7 +128,6 @@ package net.wg.gui.battle.views.siegeModePanel
          this.stop();
          this.deviceIconContainer.addFrameScript(CRITICAL_COMPLETE_FRAME,null);
          this.deviceIconContainer.addFrameScript(this.deviceIconContainer.totalFrames - 1,null);
-         this.damagedContainer.addFrameScript(this.damagedContainer.totalFrames - 1,null);
          this.changeTimeContainer = null;
          this.statusSiegeIcon.stop();
          this.statusSiegeIcon = null;
@@ -145,8 +135,6 @@ package net.wg.gui.battle.views.siegeModePanel
          this.switchIndicatorContainer = null;
          this.deviceIconContainer.stop();
          this.deviceIconContainer = null;
-         this.damagedContainer.stop();
-         this.damagedContainer = null;
          this._changeTimeTF.filters = null;
          this._changeTimeTF = null;
          this._deviceStatusIcon = null;
@@ -222,7 +210,6 @@ package net.wg.gui.battle.views.siegeModePanel
          else
          {
             this._isSwitchPlay = false;
-            this.onDamagedAnimationComplete();
          }
       }
       
@@ -245,11 +232,6 @@ package net.wg.gui.battle.views.siegeModePanel
                this.deviceIconContainer.gotoAndPlay(this._deviceState);
                this._deviceIntervalId = setInterval(this.onAnimationComplete,this._deviceState == BATTLE_ITEM_STATES.CRITICAL ? Number(CRITICAL_TIME) : Number(DESTROYED_TIME));
                this._isDevicePlay = true;
-               this.damagedContainer.visible = this._isSwitchPlay && param1 == this.primaryModuleName;
-               if(this.damagedContainer.visible)
-               {
-                  this.damagedContainer.gotoAndPlay(DMG_CONTAINER_FIRST_FRAME);
-               }
             }
          }
       }
@@ -328,21 +310,6 @@ package net.wg.gui.battle.views.siegeModePanel
          }
       }
       
-      protected function get switchIndicator() : MovieClip
-      {
-         return this.switchIndicatorContainer.switchIndicator;
-      }
-      
-      protected function get primaryModuleName() : String
-      {
-         return VehicleModules.ENGINE;
-      }
-      
-      protected function get showTimeLeft() : Boolean
-      {
-         return this.moduleState != BATTLE_ITEM_STATES.DESTROYED;
-      }
-      
       private function tryToStartSiegeTicking(param1:Boolean = true) : void
       {
          if(this.moduleState != BATTLE_ITEM_STATES.DESTROYED)
@@ -415,14 +382,24 @@ package net.wg.gui.battle.views.siegeModePanel
          this.deviceIconContainer.gotoAndPlay(this._deviceState);
       }
       
-      private function onDamagedAnimationComplete() : void
-      {
-         this.damagedContainer.visible = false;
-      }
-      
       private function checkTotalTime(param1:Number, param2:Number) : Number
       {
          return Math.max(MIN_TIME_VALUE,Math.max(param1,param2));
+      }
+      
+      protected function get switchIndicator() : MovieClip
+      {
+         return this.switchIndicatorContainer.switchIndicator;
+      }
+      
+      protected function get primaryModuleName() : String
+      {
+         return VehicleModules.ENGINE;
+      }
+      
+      protected function get showTimeLeft() : Boolean
+      {
+         return this.moduleState != BATTLE_ITEM_STATES.DESTROYED;
       }
    }
 }

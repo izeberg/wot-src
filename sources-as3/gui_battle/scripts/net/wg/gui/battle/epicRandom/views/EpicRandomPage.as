@@ -10,9 +10,8 @@ package net.wg.gui.battle.epicRandom.views
    import net.wg.data.constants.generated.PLAYERS_PANEL_STATE;
    import net.wg.gui.battle.components.TimersPanel;
    import net.wg.gui.battle.epicRandom.infrastructure.EpicRandomStatisticsDataController;
-   import net.wg.gui.battle.epicRandom.views.stats.components.fullStats.EpicRandomFullStats;
    import net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.PlayersPanel;
-   import net.wg.gui.battle.interfaces.IReservesStats;
+   import net.wg.gui.battle.interfaces.ITabScreen;
    import net.wg.gui.battle.random.views.fragCorrelationBar.FragCorrelationBar;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.events.PlayersPanelEvent;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.events.PlayersPanelSwitchEvent;
@@ -80,7 +79,7 @@ package net.wg.gui.battle.epicRandom.views
       
       public var fragCorrelationBar:FragCorrelationBar = null;
       
-      public var fullStats:EpicRandomFullStats = null;
+      public var tabScreen:ITabScreen = null;
       
       public var epicRandomPlayersPanel:PlayersPanel = null;
       
@@ -123,7 +122,7 @@ package net.wg.gui.battle.epicRandom.views
          this.battleNotifier.updateStage(param1,param2);
          this.setChildIndex(this.battleNotifier,this.numChildren - 1);
          this.destroyTimersPanel.updateStage(param1,param2);
-         this.fullStats.updateStageSize(param1,param2);
+         this.tabScreen.updateStageSize(param1,param2);
          this.epicRandomPlayersPanel.updateStageSize(param1,param2);
          this.consumablesPanel.updateStage(param1,param2);
          this.battleDamageLogPanel.x = BATTLE_DAMAGE_LOG_X_POSITION;
@@ -142,7 +141,7 @@ package net.wg.gui.battle.epicRandom.views
       override protected function initializeStatisticsController(param1:BattleStatisticDataController) : void
       {
          param1.registerComponentController(battleLoading);
-         param1.registerComponentController(this.fullStats);
+         param1.registerTabController(this.tabScreen);
          param1.registerComponentController(this.epicRandomPlayersPanel);
          param1.registerComponentController(this.fragCorrelationBar);
          super.initializeStatisticsController(param1);
@@ -164,12 +163,11 @@ package net.wg.gui.battle.epicRandom.views
       
       override protected function onPopulate() : void
       {
-         var _loc2_:IDAAPIModule = null;
          registerComponent(this.teamBasesPanelUI,BATTLE_VIEW_ALIASES.TEAM_BASES_PANEL);
          registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
          registerComponent(this.damageInfoPanel,BATTLE_VIEW_ALIASES.DAMAGE_INFO_PANEL);
          registerComponent(this.battleDamageLogPanel,BATTLE_VIEW_ALIASES.BATTLE_DAMAGE_LOG_PANEL);
-         registerComponent(this.fullStats,BATTLE_VIEW_ALIASES.FULL_STATS);
+         registerComponent(this.tabScreen,BATTLE_VIEW_ALIASES.FULL_STATS);
          registerComponent(this.debugPanel,BATTLE_VIEW_ALIASES.DEBUG_PANEL);
          registerComponent(this.battleMessenger,BATTLE_VIEW_ALIASES.BATTLE_MESSENGER);
          registerComponent(this.fragCorrelationBar,BATTLE_VIEW_ALIASES.FRAG_CORRELATION_BAR);
@@ -181,14 +179,10 @@ package net.wg.gui.battle.epicRandom.views
          registerComponent(this.siegeModePanel,BATTLE_VIEW_ALIASES.SIEGE_MODE_INDICATOR);
          registerComponent(this.hintPanel,BATTLE_VIEW_ALIASES.HINT_PANEL);
          registerComponent(this.battleNotifier,BATTLE_VIEW_ALIASES.BATTLE_NOTIFIER);
-         var _loc1_:IReservesStats = this.fullStats as IReservesStats;
+         var _loc1_:IDAAPIModule = this.tabScreen.getTabContentView();
          if(_loc1_)
          {
-            _loc2_ = _loc1_.getReservesView();
-            if(_loc2_)
-            {
-               registerComponent(_loc2_,BATTLE_VIEW_ALIASES.PERSONAL_RESERVES_TAB);
-            }
+            registerComponent(_loc1_,BATTLE_VIEW_ALIASES.TAB_CONTENT);
          }
          super.onPopulate();
       }
@@ -216,7 +210,7 @@ package net.wg.gui.battle.epicRandom.views
          this.sixthSense = null;
          this.damageInfoPanel = null;
          this.fragCorrelationBar = null;
-         this.fullStats = null;
+         this.tabScreen = null;
          this.epicRandomPlayersPanel = null;
          this.consumablesPanel = null;
          this.destroyTimersPanel = null;
@@ -285,7 +279,7 @@ package net.wg.gui.battle.epicRandom.views
       
       override protected function getFullStatsTabQuestProgress() : IQuestProgressView
       {
-         return this.fullStats.getStatsProgressView();
+         return this.tabScreen.getStatsProgressView();
       }
       
       override protected function onPrebattleAmmunitionPanelShown() : void

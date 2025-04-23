@@ -400,5 +400,9 @@ package net.wg.gui.battle.battleRoyale.views
             _loc4_.setVoiceState(BATTLE_ROYAL_CONSTS.VOICE_DEFAULT);
          }
       }
+      
+      public function updateTriggeredPriorityCommand(param1:IDAAPIDataClass) : void
+      {
+      }
    }
 }

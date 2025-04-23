@@ -44,6 +44,15 @@
 		</music>
 	</mission>
 	<mission>
+		<id>6</id>
+		<vo>vo_sm_char13_m06_stg94_01</vo>
+		<battleMusic>sm_gp_vday_music_01_stealth</battleMusic>
+		<music>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby</state>
+		</music>
+	</mission>
+	<mission>
 		<id>1000</id>
 		<vo>vo_sm_char06_m05_stg70_01</vo>
 		<battleMusic>sm_gp_dday_music_01_intro</battleMusic>
@@ -63,6 +72,33 @@
 			<stop>sm_lobby_dday_exit</stop>
 			<group>STATE_sm_dday_music</group>
 			<state>STATE_sm_dday_music_00_lobby_hard</state>
+		</music>
+	</mission>
+	<mission>
+		<id>1002</id>
+		<vo>vo_sm_char13_m06_stg94_01</vo>
+		<battleMusic>sm_gp_vday_music_01_stealth</battleMusic>
+		<music>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby</state>
+		</music>
+	</mission>
+	<mission>
+		<id>1003</id>
+		<vo>vo_sm_char13_m06_stg94_02</vo>
+		<battleMusic>sm_gp_vday_music_01_stealth</battleMusic>
+		<music>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby</state>
+		</music>
+	</mission>
+	<mission>
+		<id>1004</id>
+		<vo>vo_sm_char13_m06_stg94_03</vo>
+		<battleMusic>sm_gp_vday_music_01_stealth</battleMusic>
+		<music>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby</state>
 		</music>
 	</mission>
 	<epilogue>

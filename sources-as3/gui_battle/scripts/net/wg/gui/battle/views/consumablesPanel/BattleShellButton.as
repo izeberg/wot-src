@@ -337,10 +337,6 @@ package net.wg.gui.battle.views.consumablesPanel
       {
       }
       
-      public function setIdleEnabledGlow(param1:Boolean) : void
-      {
-      }
-      
       public function showGlow(param1:int) : void
       {
          this.glow.showGlow(param1);
@@ -373,6 +369,10 @@ package net.wg.gui.battle.views.consumablesPanel
          {
             super.state = param1;
          }
+      }
+      
+      public function set noBack(param1:Boolean) : void
+      {
       }
       
       public function set activated(param1:Boolean) : void

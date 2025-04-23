@@ -51,6 +51,11 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          this._listItem.setChatCommand(param1,param2);
       }
       
+      public function setPriorityCommand(param1:String, param2:uint, param3:uint) : void
+      {
+         this._listItem.setPriorityChatCommand(param1,param2,param3);
+      }
+      
       public function setDogTag(param1:DogTagVO) : void
       {
          this._dogTag = param1;
@@ -183,7 +188,7 @@ package net.wg.gui.battle.components.stats.playersPanel.list
       {
       }
       
-      private function applyVehicleData() : void
+      protected function applyVehicleData() : void
       {
          this._listItem.setIsIGR(this.vehicleData.isIGR);
          this._listItem.setVehicleLevel(this.vehicleData.vehicleLevel);

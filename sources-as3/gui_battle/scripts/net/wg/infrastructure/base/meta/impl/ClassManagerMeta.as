@@ -9,6 +9,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.VO.daapi.DAAPITotalStatsVO;
    import net.wg.data.VO.daapi.DAAPITriggeredCommandVO;
    import net.wg.data.VO.daapi.DAAPITriggeredCommandsVO;
+   import net.wg.data.VO.daapi.DAAPITriggeredPriorityCommandVO;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleStatsVO;
    import net.wg.data.VO.daapi.DAAPIVehicleStatusVO;
@@ -130,20 +131,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleRoyale.views.playersPanel.PlayerDataVO;
    import net.wg.gui.battle.battleRoyale.views.playersPanel.PlayersPanelItemRenderer;
    import net.wg.gui.battle.battleRoyale.views.playersPanel.RespawnIconEvent;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.ShamrockController;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockCollect;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockCollectAnimation;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockReceiveAnimation;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockSideBar;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockTotalAmount;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.TextFieldWrapper;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.AbstractShamrockLabel;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.BonusShamrockLabel;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.ShamrockLabelWithIcon;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.WinnerShamrockAnimation;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.data.ShamrockTransactionVO;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.events.ShamrockAnimationEvent;
-   import net.wg.gui.battle.battleRoyale.views.shamrock.interfaces.IShamrockListener;
    import net.wg.gui.battle.battleloading.BaseBattleLoading;
    import net.wg.gui.battle.battleloading.BaseLoadingForm;
    import net.wg.gui.battle.battleloading.BattleLoading;
@@ -244,47 +231,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicPlayerStatsVO;
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicVehicleStatsVO;
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicVehiclesStatsVO;
-   import net.wg.gui.battle.epicBattle.battleloading.EpicBattleLoading;
-   import net.wg.gui.battle.epicBattle.battleloading.EpicBattleLoadingForm;
-   import net.wg.gui.battle.epicBattle.battleloading.components.EpicBattleLoadingTankBalance;
-   import net.wg.gui.battle.epicBattle.battleloading.components.EpicBattleLoadingTankTypeComponent;
-   import net.wg.gui.battle.epicBattle.battleloading.components.EpicBattleScrollingList;
-   import net.wg.gui.battle.epicBattle.battleloading.components.EpicBattleStatsTable;
-   import net.wg.gui.battle.epicBattle.battleloading.components.EpicBattleStatsTableCtrl;
-   import net.wg.gui.battle.epicBattle.battleloading.events.EpicBattleLoadingEvent;
-   import net.wg.gui.battle.epicBattle.battleloading.renderers.EpicBattleLoadingPlayerItemRenderer;
-   import net.wg.gui.battle.epicBattle.views.EpicBattlePage;
-   import net.wg.gui.battle.epicBattle.views.EpicCarouselFilterPopoverView;
-   import net.wg.gui.battle.epicBattle.views.consumablesPanel.EpicBattleConsumableButton;
-   import net.wg.gui.battle.epicBattle.views.consumablesPanel.EpicBattleConsumablesPanel;
-   import net.wg.gui.battle.epicBattle.views.consumablesPanel.components.EpicBattleEquipmentButtonGlow;
-   import net.wg.gui.battle.epicBattle.views.consumablesPanel.interfaces.IEpicBattleConsumableButton;
-   import net.wg.gui.battle.epicBattle.views.data.EpicStatsDataProviderBaseCtrl;
-   import net.wg.gui.battle.epicBattle.views.data.EpicVehicleDataProvider;
-   import net.wg.gui.battle.epicBattle.views.modificationPanel.EpicModificationPanel;
-   import net.wg.gui.battle.epicBattle.views.modificationPanel.components.EpicModificationIcon;
-   import net.wg.gui.battle.epicBattle.views.modificationPanel.components.EpicModificationInfo;
-   import net.wg.gui.battle.epicBattle.views.modificationPanel.data.EpicModificationPanelVO;
-   import net.wg.gui.battle.epicBattle.views.stats.EpicFullStats;
-   import net.wg.gui.battle.epicBattle.views.stats.components.EpicFullStatsTable;
-   import net.wg.gui.battle.epicBattle.views.stats.components.EpicFullStatsTableCtrl;
-   import net.wg.gui.battle.epicBattle.views.stats.components.EpicStatsGeneralBonus;
-   import net.wg.gui.battle.epicBattle.views.stats.components.EpicStatsHeader;
-   import net.wg.gui.battle.epicBattle.views.stats.components.EpicStatsTableFilterGroup;
-   import net.wg.gui.battle.epicBattle.views.stats.components.EpicStatsTableTabButton;
-   import net.wg.gui.battle.epicBattle.views.stats.components.PlayerScrollingList;
-   import net.wg.gui.battle.epicBattle.views.stats.events.EpicFullStatsEvent;
-   import net.wg.gui.battle.epicBattle.views.stats.events.EpicFullStatsRendererEvent;
-   import net.wg.gui.battle.epicBattle.views.stats.renderers.EpicStatsPlayerRenderer;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.EpicBattleUpgradePanel;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.EpicChoiceInfoPanel;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.EpicConfiguratorRenderer;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.EpicModuleInfo;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.IEpicConfiguratorRenderer;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.data.EpicChoiceInfoPanelVO;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.data.EpicConfiguratorModuleVO;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.data.EpicModuleInfoVO;
-   import net.wg.gui.battle.epicBattle.views.upgradePanel.data.EpicUpgradePanelVO;
    import net.wg.gui.battle.epicRandom.VO.daapi.EpicRandomDAAPIVehicleInfoVO;
    import net.wg.gui.battle.epicRandom.VO.daapi.EpicRandomDAAPIVehiclesDataVO;
    import net.wg.gui.battle.epicRandom.battleloading.EpicRandomBattleLoading;
@@ -297,10 +243,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.epicRandom.battleloading.renderers.TipEpicRandomPlayerItemRenderer;
    import net.wg.gui.battle.epicRandom.infrastructure.EpicRandomStatisticsDataController;
    import net.wg.gui.battle.epicRandom.views.EpicRandomPage;
-   import net.wg.gui.battle.epicRandom.views.stats.components.fullStats.EpicRandomFullStats;
-   import net.wg.gui.battle.epicRandom.views.stats.components.fullStats.EpicRandomFullStatsListItemRenderer;
-   import net.wg.gui.battle.epicRandom.views.stats.components.fullStats.EpicRandomFullStatsTable;
-   import net.wg.gui.battle.epicRandom.views.stats.components.fullStats.EpicRandomFullStatsTableCtrl;
    import net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.PlayersPanel;
    import net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.events.PlayersPanelItemEvent;
    import net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.ListRowBackgroundContainer;
@@ -364,10 +306,12 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.events.RepairAnimEvent;
    import net.wg.gui.battle.interfaces.IBattleInfo;
    import net.wg.gui.battle.interfaces.IFullStats;
+   import net.wg.gui.battle.interfaces.IGameMessageVO;
    import net.wg.gui.battle.interfaces.IPrebattleTimerBase;
    import net.wg.gui.battle.interfaces.IQuestProgressStats;
    import net.wg.gui.battle.interfaces.IReservesStats;
    import net.wg.gui.battle.interfaces.IStatsTableController;
+   import net.wg.gui.battle.interfaces.ITabScreen;
    import net.wg.gui.battle.interfaces.ITabbedFullStatsTableController;
    import net.wg.gui.battle.mapsTraining.views.MapsTrainingBattleLoading;
    import net.wg.gui.battle.mapsTraining.views.MapsTrainingBattlePage;
@@ -394,6 +338,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.pveBase.views.minimap.PveMinimapEntriesContainer;
    import net.wg.gui.battle.pveBase.views.minimap.PveMinimapShortcutLabel;
    import net.wg.gui.battle.pveBase.views.minimap.entries.PveArrowEntry;
+   import net.wg.gui.battle.pveBase.views.minimap.entries.PveBitmapEntry;
    import net.wg.gui.battle.pveBase.views.minimap.entries.PveCenterBottomAlignedIcon;
    import net.wg.gui.battle.pveBase.views.minimap.entries.PveFlagAnimationEntry;
    import net.wg.gui.battle.pveBase.views.minimap.entries.PveScalableEntry;
@@ -410,6 +355,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemTimer;
    import net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemTimerContainer;
    import net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemVehiclePanel;
+   import net.wg.gui.battle.pveBase.views.postmortemPanel.events.PvePostmortemPanelEvent;
    import net.wg.gui.battle.pveBase.views.primaryObjective.PvePrimaryObjective;
    import net.wg.gui.battle.pveBase.views.primaryObjective.controls.PrimaryObjectiveMessage;
    import net.wg.gui.battle.pveBase.views.primaryObjective.controls.PrimaryObjectiveMovie;
@@ -478,6 +424,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelListRight;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitch;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitchButton;
+   import net.wg.gui.battle.random.views.stats.components.tabScreen.TabScreen;
    import net.wg.gui.battle.random.views.stats.constants.VehicleActions;
    import net.wg.gui.battle.random.views.stats.events.DynamicSquadEvent;
    import net.wg.gui.battle.random.views.teamBasesPanel.TeamBasesPanel;
@@ -513,7 +460,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.actionMarkers.RepliedMarker;
    import net.wg.gui.battle.views.actionMarkers.RepliedMarkerIcon;
    import net.wg.gui.battle.views.actionMarkers.StickyMarker;
-   import net.wg.gui.battle.views.ammunitionPanel.EpicRespawnAmmunitionPanelView;
    import net.wg.gui.battle.views.ammunitionPanel.PrbAmmunitionPanelEvent;
    import net.wg.gui.battle.views.ammunitionPanel.PrebattleAmmunitionPanelView;
    import net.wg.gui.battle.views.battleEndWarning.BattleEndWarningPanel;
@@ -544,16 +490,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.battleMessenger.actionPanel.BattleMessengerActionContainer;
    import net.wg.gui.battle.views.battleMessenger.interfaces.IBattleMessenger;
    import net.wg.gui.battle.views.battleNotifier.BattleNotifier;
-   import net.wg.gui.battle.views.battleTankCarousel.BattleCarouselEnvironment;
-   import net.wg.gui.battle.views.battleTankCarousel.BattleTankCarousel;
-   import net.wg.gui.battle.views.battleTankCarousel.BattleTankCarouselFilters;
-   import net.wg.gui.battle.views.battleTankCarousel.data.BattleVehicleCarouselVO;
-   import net.wg.gui.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon;
-   import net.wg.gui.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer;
    import net.wg.gui.battle.views.battleTimer.BattleAnimationTimer;
    import net.wg.gui.battle.views.battleTimer.BattleTimer;
-   import net.wg.gui.battle.views.battleTimer.EpicBattleTimer;
-   import net.wg.gui.battle.views.battleTimer.TimerDisplay;
    import net.wg.gui.battle.views.calloutPanel.CalloutPanel;
    import net.wg.gui.battle.views.calloutPanel.components.InteractionDynamicTextLabel;
    import net.wg.gui.battle.views.calloutPanel.components.VehicleInfoLabel;
@@ -562,6 +500,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.consumablesPanel.BattleOptionalDeviceButton;
    import net.wg.gui.battle.views.consumablesPanel.BattleShellButton;
    import net.wg.gui.battle.views.consumablesPanel.ConsumablesPanel;
+   import net.wg.gui.battle.views.consumablesPanel.ConsumablesPanelSettings;
    import net.wg.gui.battle.views.consumablesPanel.VO.ConsumablesVO;
    import net.wg.gui.battle.views.consumablesPanel.constants.COLOR_STATES;
    import net.wg.gui.battle.views.consumablesPanel.events.ConsumablesButtonEvent;
@@ -609,7 +548,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.deathCamHud.DeathCamHud;
    import net.wg.gui.battle.views.debugPanel.DebugPanel;
    import net.wg.gui.battle.views.destroyTimers.DestroyTimer;
-   import net.wg.gui.battle.views.destroyTimers.EpicDestroyTimersPanel;
    import net.wg.gui.battle.views.destroyTimers.EventDestroyTimersPanel;
    import net.wg.gui.battle.views.destroyTimers.PoiMainTimer;
    import net.wg.gui.battle.views.destroyTimers.PoiSecondaryTimer;
@@ -644,58 +582,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.dualGunPanel.DualGunPanelGunIndicator;
    import net.wg.gui.battle.views.dualGunPanel.DualGunPanelState;
    import net.wg.gui.battle.views.dualGunPanel.DualGunPanelTimer;
-   import net.wg.gui.battle.views.epicDamagePanel.EpicDamagePanel;
-   import net.wg.gui.battle.views.epicDamagePanel.components.GeneralBonus;
-   import net.wg.gui.battle.views.epicDeploymentMap.EpicDeploymentMap;
-   import net.wg.gui.battle.views.epicDeploymentMap.components.EpicDeploymentMapEntriesContainer;
-   import net.wg.gui.battle.views.epicDeploymentMap.components.EpicMapContainer;
-   import net.wg.gui.battle.views.epicDeploymentMap.constants.DeploymentMapConstants;
-   import net.wg.gui.battle.views.epicDeploymentMap.events.EpicDeploymentMapEvent;
-   import net.wg.gui.battle.views.epicInGameRank.EpicInGameRankAnimatedProgress;
-   import net.wg.gui.battle.views.epicInGameRank.EpicInGameRankIcon;
-   import net.wg.gui.battle.views.epicInGameRank.EpicInGameRankPanel;
-   import net.wg.gui.battle.views.epicInGameRank.data.EpicInGameRankVO;
-   import net.wg.gui.battle.views.epicInGameRank.events.EpicInGameRankEvent;
-   import net.wg.gui.battle.views.epicMessagesPanel.EpicMessagesPanel;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.BaseCaptureMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.BaseContestedMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.FirstGeneralRankReachedMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.HeadquarterAttackedMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.HeadquarterDestroyedMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.MessageBaseMarker;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.MessageHQMarker;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.OverTimeMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.RankUpMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.RankUpSubElement;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.RetreatMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.TimeRemainingMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.UnlockTankLevelMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.FirstGeneralRankReachedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.HeadquarterAttackedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.HeadquarterDestroyedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.MissionChangeMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.OverTimeMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.RankUpMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.SectorBaseContestedMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.SectorBaseMessageVO;
-   import net.wg.gui.battle.views.epicMissionsPanel.EpicMissionsPanel;
-   import net.wg.gui.battle.views.epicMissionsPanel.components.EpicMissionsAnimatedMarker;
-   import net.wg.gui.battle.views.epicMissionsPanel.data.EpicMissionVO;
-   import net.wg.gui.battle.views.epicOverviewMapScreen.EpicOverviewMapScreen;
-   import net.wg.gui.battle.views.epicOverviewMapScreen.data.EpicOverviewMapScreenVO;
-   import net.wg.gui.battle.views.epicReinforcementPanel.EpicReinforcementPanel;
-   import net.wg.gui.battle.views.epicRespawnView.EpicRespawnView;
-   import net.wg.gui.battle.views.epicRespawnView.components.EpicRespawnDeployButtonGroup;
-   import net.wg.gui.battle.views.epicRespawnView.components.EpicRespawnMapEntriesContainer;
-   import net.wg.gui.battle.views.epicRespawnView.components.EpicRespawnPoint;
-   import net.wg.gui.battle.views.epicRespawnView.data.RespawnPointVO;
-   import net.wg.gui.battle.views.epicRespawnView.events.EpicRespawnEvent;
-   import net.wg.gui.battle.views.epicScorePanel.EpicScorePanel;
-   import net.wg.gui.battle.views.epicScorePanel.components.HeadquarterEntryAnimated;
-   import net.wg.gui.battle.views.epicScorePanel.components.HeadquarterScoreEntry;
-   import net.wg.gui.battle.views.epicScorePanel.components.SectorBaseEntryAnimated;
-   import net.wg.gui.battle.views.epicScorePanel.components.SectorBaseScoreEntry;
-   import net.wg.gui.battle.views.epicScorePanel.events.EpicScorePanelEvent;
    import net.wg.gui.battle.views.gameMessagesPanel.GameMessagesPanel;
    import net.wg.gui.battle.views.gameMessagesPanel.components.EndGameMessage;
    import net.wg.gui.battle.views.gameMessagesPanel.components.EndGameMessageTextfields;
@@ -857,8 +743,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.radialMenu.components.Icons;
    import net.wg.gui.battle.views.radialMenu.components.SectorHoveredWrapper;
    import net.wg.gui.battle.views.radialMenu.components.SectorWrapper;
-   import net.wg.gui.battle.views.recoveryPanel.RecoveryHint;
-   import net.wg.gui.battle.views.recoveryPanel.RecoveryPanel;
    import net.wg.gui.battle.views.ribbonsPanel.AnimationSet;
    import net.wg.gui.battle.views.ribbonsPanel.EfficiencyBonusAnimation;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonCtrl;
@@ -932,14 +816,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.stats.fullStats.interfaces.IStatsTableItemHandler;
    import net.wg.gui.battle.views.stats.fullStats.interfaces.IStatsTableItemHolderBase;
    import net.wg.gui.battle.views.statsHint.StatsHint;
-   import net.wg.gui.battle.views.superPlatoonPanel.SuperPlatoonPanel;
-   import net.wg.gui.battle.views.superPlatoonPanel.components.PlatoonInvitePanel;
-   import net.wg.gui.battle.views.superPlatoonPanel.components.PlatoonMembersPanel;
-   import net.wg.gui.battle.views.superPlatoonPanel.list.PlatoonMemberListItemHolder;
-   import net.wg.gui.battle.views.superPlatoonPanel.list.PlatoonPanelList;
-   import net.wg.gui.battle.views.superPlatoonPanel.renderers.PlatoonInviteRenderer;
-   import net.wg.gui.battle.views.superPlatoonPanel.renderers.PlatoonMemberListItemRenderer;
-   import net.wg.gui.battle.views.superPlatoonPanel.renderers.PlayerInfoContainer;
+   import net.wg.gui.battle.views.tabContent.TabContent;
    import net.wg.gui.battle.views.upgradePanel.BattleUpgradePanel;
    import net.wg.gui.battle.views.upgradePanel.NotificationBorderAnimation;
    import net.wg.gui.battle.views.upgradePanel.NotificationBorderContainer;
@@ -1016,8 +893,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.inblocks.data.TextParameterWithIconVO;
    import net.wg.infrastructure.base.BaseBattleDAAPIComponent;
    import net.wg.infrastructure.helpers.statisticsDataController.BattleStatisticDataController;
-   import net.wg.infrastructure.helpers.statisticsDataController.EpicBattleStatisticDataController;
    import net.wg.infrastructure.helpers.statisticsDataController.intarfaces.IBattleComponentDataController;
+   import net.wg.infrastructure.helpers.statisticsDataController.intarfaces.IBattleTabDataController;
    import net.wg.infrastructure.helpers.statisticsDataController.intarfaces.IEpicBattleStatisticDataController;
    
    public class ClassManagerMeta
@@ -1122,6 +999,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_VO_DAAPI_DAAPITRIGGEREDCOMMANDSVO:Class = DAAPITriggeredCommandsVO;
       
       public static const NET_WG_DATA_VO_DAAPI_DAAPITRIGGEREDCOMMANDVO:Class = DAAPITriggeredCommandVO;
+      
+      public static const NET_WG_DATA_VO_DAAPI_DAAPITRIGGEREDPRIORITYCOMMANDVO:Class = DAAPITriggeredPriorityCommandVO;
       
       public static const NET_WG_DATA_VO_DAAPI_DAAPIVEHICLEINFOVO:Class = DAAPIVehicleInfoVO;
       
@@ -1333,34 +1212,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_PLAYERSTATS_BATTLEROYALEPLAYERSTATVO:Class = BattleRoyalePlayerStatVO;
       
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_SHAMROCKCONTROLLER:Class = ShamrockController;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKCOLLECT:Class = ShamrockCollect;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKCOLLECTANIMATION:Class = ShamrockCollectAnimation;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKRECEIVEANIMATION:Class = ShamrockReceiveAnimation;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKSIDEBAR:Class = ShamrockSideBar;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_SHAMROCKTOTALAMOUNT:Class = ShamrockTotalAmount;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_TEXTFIELDWRAPPER:Class = TextFieldWrapper;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_ABSTRACTSHAMROCKLABEL:Class = AbstractShamrockLabel;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_BONUSSHAMROCKLABEL:Class = BonusShamrockLabel;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_SHAMROCKLABELWITHICON:Class = ShamrockLabelWithIcon;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_COMPONENTS_RESULTS_WINNERSHAMROCKANIMATION:Class = WinnerShamrockAnimation;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_DATA_SHAMROCKTRANSACTIONVO:Class = ShamrockTransactionVO;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_EVENTS_SHAMROCKANIMATIONEVENT:Class = ShamrockAnimationEvent;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLEROYALE_VIEWS_SHAMROCK_INTERFACES_ISHAMROCKLISTENER:Class = IShamrockListener;
-      
       public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_CONSUMABLESPANEL_COMP7CONSUMABLEBUTTON:Class = Comp7ConsumableButton;
       
       public static const NET_WG_GUI_BATTLE_COMP7_VIEWS_CONSUMABLESPANEL_COMP7CONSUMABLEBUTTONGLOW:Class = Comp7ConsumableButtonGlow;
@@ -1505,88 +1356,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_COMPONENTS_STATS_PLAYERSPANEL_LIST_HPBARPLAYERSPANELLISTITEM:Class = HPBarPlayersPanelListItem;
       
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_EPICBATTLELOADING:Class = EpicBattleLoading;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_EPICBATTLELOADINGFORM:Class = EpicBattleLoadingForm;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_COMPONENTS_EPICBATTLELOADINGTANKBALANCE:Class = EpicBattleLoadingTankBalance;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_COMPONENTS_EPICBATTLELOADINGTANKTYPECOMPONENT:Class = EpicBattleLoadingTankTypeComponent;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_COMPONENTS_EPICBATTLESCROLLINGLIST:Class = EpicBattleScrollingList;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_COMPONENTS_EPICBATTLESTATSTABLE:Class = EpicBattleStatsTable;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_COMPONENTS_EPICBATTLESTATSTABLECTRL:Class = EpicBattleStatsTableCtrl;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_EVENTS_EPICBATTLELOADINGEVENT:Class = EpicBattleLoadingEvent;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_BATTLELOADING_RENDERERS_EPICBATTLELOADINGPLAYERITEMRENDERER:Class = EpicBattleLoadingPlayerItemRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_EPICBATTLEPAGE:Class = EpicBattlePage;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_EPICCAROUSELFILTERPOPOVERVIEW:Class = EpicCarouselFilterPopoverView;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_CONSUMABLESPANEL_EPICBATTLECONSUMABLEBUTTON:Class = EpicBattleConsumableButton;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_CONSUMABLESPANEL_EPICBATTLECONSUMABLESPANEL:Class = EpicBattleConsumablesPanel;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_CONSUMABLESPANEL_COMPONENTS_EPICBATTLEEQUIPMENTBUTTONGLOW:Class = EpicBattleEquipmentButtonGlow;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_CONSUMABLESPANEL_INTERFACES_IEPICBATTLECONSUMABLEBUTTON:Class = IEpicBattleConsumableButton;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_DATA_EPICSTATSDATAPROVIDERBASECTRL:Class = EpicStatsDataProviderBaseCtrl;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_DATA_EPICVEHICLEDATAPROVIDER:Class = EpicVehicleDataProvider;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_MODIFICATIONPANEL_EPICMODIFICATIONPANEL:Class = EpicModificationPanel;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_MODIFICATIONPANEL_COMPONENTS_EPICMODIFICATIONICON:Class = EpicModificationIcon;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_MODIFICATIONPANEL_COMPONENTS_EPICMODIFICATIONINFO:Class = EpicModificationInfo;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_MODIFICATIONPANEL_DATA_EPICMODIFICATIONPANELVO:Class = EpicModificationPanelVO;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_EPICFULLSTATS:Class = EpicFullStats;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_EPICFULLSTATSTABLE:Class = EpicFullStatsTable;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_EPICFULLSTATSTABLECTRL:Class = EpicFullStatsTableCtrl;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_EPICSTATSGENERALBONUS:Class = EpicStatsGeneralBonus;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_EPICSTATSHEADER:Class = EpicStatsHeader;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_EPICSTATSTABLEFILTERGROUP:Class = EpicStatsTableFilterGroup;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_EPICSTATSTABLETABBUTTON:Class = EpicStatsTableTabButton;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_COMPONENTS_PLAYERSCROLLINGLIST:Class = PlayerScrollingList;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_EVENTS_EPICFULLSTATSEVENT:Class = EpicFullStatsEvent;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_EVENTS_EPICFULLSTATSRENDEREREVENT:Class = EpicFullStatsRendererEvent;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_STATS_RENDERERS_EPICSTATSPLAYERRENDERER:Class = EpicStatsPlayerRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_EPICBATTLEUPGRADEPANEL:Class = EpicBattleUpgradePanel;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_EPICCHOICEINFOPANEL:Class = EpicChoiceInfoPanel;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_EPICCONFIGURATORRENDERER:Class = EpicConfiguratorRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_EPICMODULEINFO:Class = EpicModuleInfo;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_IEPICCONFIGURATORRENDERER:Class = IEpicConfiguratorRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_DATA_EPICCHOICEINFOPANELVO:Class = EpicChoiceInfoPanelVO;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_DATA_EPICCONFIGURATORMODULEVO:Class = EpicConfiguratorModuleVO;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_DATA_EPICMODULEINFOVO:Class = EpicModuleInfoVO;
-      
-      public static const NET_WG_GUI_BATTLE_EPICBATTLE_VIEWS_UPGRADEPANEL_DATA_EPICUPGRADEPANELVO:Class = EpicUpgradePanelVO;
-      
       public static const NET_WG_GUI_BATTLE_EPICBATTLE_VO_DAAPI_EPICPLAYERSTATSVO:Class = EpicPlayerStatsVO;
       
       public static const NET_WG_GUI_BATTLE_EPICBATTLE_VO_DAAPI_EPICVEHICLESSTATSVO:Class = EpicVehiclesStatsVO;
@@ -1612,14 +1381,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_EPICRANDOM_INFRASTRUCTURE_EPICRANDOMSTATISTICSDATACONTROLLER:Class = EpicRandomStatisticsDataController;
       
       public static const NET_WG_GUI_BATTLE_EPICRANDOM_VIEWS_EPICRANDOMPAGE:Class = EpicRandomPage;
-      
-      public static const NET_WG_GUI_BATTLE_EPICRANDOM_VIEWS_STATS_COMPONENTS_FULLSTATS_EPICRANDOMFULLSTATS:Class = EpicRandomFullStats;
-      
-      public static const NET_WG_GUI_BATTLE_EPICRANDOM_VIEWS_STATS_COMPONENTS_FULLSTATS_EPICRANDOMFULLSTATSLISTITEMRENDERER:Class = EpicRandomFullStatsListItemRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_EPICRANDOM_VIEWS_STATS_COMPONENTS_FULLSTATS_EPICRANDOMFULLSTATSTABLE:Class = EpicRandomFullStatsTable;
-      
-      public static const NET_WG_GUI_BATTLE_EPICRANDOM_VIEWS_STATS_COMPONENTS_FULLSTATS_EPICRANDOMFULLSTATSTABLECTRL:Class = EpicRandomFullStatsTableCtrl;
       
       public static const NET_WG_GUI_BATTLE_EPICRANDOM_VIEWS_STATS_COMPONENTS_PLAYERSPANEL_PLAYERSPANEL:Class = PlayersPanel;
       
@@ -1751,6 +1512,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_INTERFACES_IFULLSTATS:Class = IFullStats;
       
+      public static const NET_WG_GUI_BATTLE_INTERFACES_IGAMEMESSAGEVO:Class = IGameMessageVO;
+      
       public static const NET_WG_GUI_BATTLE_INTERFACES_IPREBATTLETIMERBASE:Class = IPrebattleTimerBase;
       
       public static const NET_WG_GUI_BATTLE_INTERFACES_IQUESTPROGRESSSTATS:Class = IQuestProgressStats;
@@ -1760,6 +1523,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_INTERFACES_ISTATSTABLECONTROLLER:Class = IStatsTableController;
       
       public static const NET_WG_GUI_BATTLE_INTERFACES_ITABBEDFULLSTATSTABLECONTROLLER:Class = ITabbedFullStatsTableController;
+      
+      public static const NET_WG_GUI_BATTLE_INTERFACES_ITABSCREEN:Class = ITabScreen;
       
       public static const NET_WG_GUI_BATTLE_MAPSTRAINING_VIEWS_MAPSTRAININGBATTLELOADING:Class = MapsTrainingBattleLoading;
       
@@ -1811,6 +1576,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_MINIMAP_ENTRIES_PVEARROWENTRY:Class = PveArrowEntry;
       
+      public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_MINIMAP_ENTRIES_PVEBITMAPENTRY:Class = PveBitmapEntry;
+      
       public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_MINIMAP_ENTRIES_PVECENTERBOTTOMALIGNEDICON:Class = PveCenterBottomAlignedIcon;
       
       public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_MINIMAP_ENTRIES_PVEFLAGANIMATIONENTRY:Class = PveFlagAnimationEntry;
@@ -1842,6 +1609,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_POSTMORTEMPANEL_PVEPOSTMORTEMTIMERCONTAINER:Class = PvePostmortemTimerContainer;
       
       public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_POSTMORTEMPANEL_PVEPOSTMORTEMVEHICLEPANEL:Class = PvePostmortemVehiclePanel;
+      
+      public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_POSTMORTEMPANEL_EVENTS_PVEPOSTMORTEMPANELEVENT:Class = PvePostmortemPanelEvent;
       
       public static const NET_WG_GUI_BATTLE_PVEBASE_VIEWS_PRIMARYOBJECTIVE_PVEPRIMARYOBJECTIVE:Class = PvePrimaryObjective;
       
@@ -1979,6 +1748,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_RANDOM_VIEWS_STATS_COMPONENTS_PLAYERSPANEL_VO_PLAYERSPANELCONTEXTMENUSENTDATA:Class = PlayersPanelContextMenuSentData;
       
+      public static const NET_WG_GUI_BATTLE_RANDOM_VIEWS_STATS_COMPONENTS_TABSCREEN_TABSCREEN:Class = TabScreen;
+      
       public static const NET_WG_GUI_BATTLE_RANDOM_VIEWS_STATS_CONSTANTS_VEHICLEACTIONS:Class = VehicleActions;
       
       public static const NET_WG_GUI_BATTLE_RANDOM_VIEWS_STATS_EVENTS_DYNAMICSQUADEVENT:Class = DynamicSquadEvent;
@@ -2049,8 +1820,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_ACTIONMARKERS_STICKYMARKER:Class = StickyMarker;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_AMMUNITIONPANEL_EPICRESPAWNAMMUNITIONPANELVIEW:Class = EpicRespawnAmmunitionPanelView;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_AMMUNITIONPANEL_PRBAMMUNITIONPANELEVENT:Class = PrbAmmunitionPanelEvent;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_AMMUNITIONPANEL_PREBATTLEAMMUNITIONPANELVIEW:Class = PrebattleAmmunitionPanelView;
@@ -2111,25 +1880,9 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLENOTIFIER_BATTLENOTIFIER:Class = BattleNotifier;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_BATTLECAROUSELENVIRONMENT:Class = BattleCarouselEnvironment;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_BATTLETANKCAROUSEL:Class = BattleTankCarousel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_BATTLETANKCAROUSELFILTERS:Class = BattleTankCarouselFilters;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_DATA_BATTLEVEHICLECAROUSELVO:Class = BattleVehicleCarouselVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BASEBATTLETANKICON:Class = BaseBattleTankIcon;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BATTLETANKCAROUSELITEMRENDERER:Class = BattleTankCarouselItemRenderer;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BATTLEANIMATIONTIMER:Class = BattleAnimationTimer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_BATTLETIMER:Class = BattleTimer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_EPICBATTLETIMER:Class = EpicBattleTimer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_BATTLETIMER_TIMERDISPLAY:Class = TimerDisplay;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_CALLOUTPANEL_CALLOUTPANEL:Class = CalloutPanel;
       
@@ -2146,6 +1899,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_BATTLESHELLBUTTON:Class = BattleShellButton;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_CONSUMABLESPANEL:Class = ConsumablesPanel;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_CONSUMABLESPANELSETTINGS:Class = ConsumablesPanelSettings;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_CONSTANTS_COLOR_STATES:Class = COLOR_STATES;
       
@@ -2241,8 +1996,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DESTROYTIMERS_DESTROYTIMER:Class = DestroyTimer;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_DESTROYTIMERS_EPICDESTROYTIMERSPANEL:Class = EpicDestroyTimersPanel;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_DESTROYTIMERS_EVENTDESTROYTIMERSPANEL:Class = EventDestroyTimersPanel;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DESTROYTIMERS_POIMAINTIMER:Class = PoiMainTimer;
@@ -2310,110 +2063,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_DUALGUNPANEL_DUALGUNPANELSTATE:Class = DualGunPanelState;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DUALGUNPANEL_DUALGUNPANELTIMER:Class = DualGunPanelTimer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDAMAGEPANEL_EPICDAMAGEPANEL:Class = EpicDamagePanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDAMAGEPANEL_COMPONENTS_GENERALBONUS:Class = GeneralBonus;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDEPLOYMENTMAP_EPICDEPLOYMENTMAP:Class = EpicDeploymentMap;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDEPLOYMENTMAP_COMPONENTS_EPICDEPLOYMENTMAPENTRIESCONTAINER:Class = EpicDeploymentMapEntriesContainer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDEPLOYMENTMAP_COMPONENTS_EPICMAPCONTAINER:Class = EpicMapContainer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDEPLOYMENTMAP_CONSTANTS_DEPLOYMENTMAPCONSTANTS:Class = DeploymentMapConstants;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICDEPLOYMENTMAP_EVENTS_EPICDEPLOYMENTMAPEVENT:Class = EpicDeploymentMapEvent;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICINGAMERANK_EPICINGAMERANKANIMATEDPROGRESS:Class = EpicInGameRankAnimatedProgress;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICINGAMERANK_EPICINGAMERANKICON:Class = EpicInGameRankIcon;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICINGAMERANK_EPICINGAMERANKPANEL:Class = EpicInGameRankPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICINGAMERANK_DATA_EPICINGAMERANKVO:Class = EpicInGameRankVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICINGAMERANK_EVENTS_EPICINGAMERANKEVENT:Class = EpicInGameRankEvent;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_EPICMESSAGESPANEL:Class = EpicMessagesPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_BASECAPTUREMESSAGE:Class = BaseCaptureMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_BASECONTESTEDMESSAGE:Class = BaseContestedMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_FIRSTGENERALRANKREACHEDMESSAGE:Class = FirstGeneralRankReachedMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_HEADQUARTERATTACKEDMESSAGE:Class = HeadquarterAttackedMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_HEADQUARTERDESTROYEDMESSAGE:Class = HeadquarterDestroyedMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_MESSAGEBASEMARKER:Class = MessageBaseMarker;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_MESSAGEHQMARKER:Class = MessageHQMarker;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_OVERTIMEMESSAGE:Class = OverTimeMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_RANKUPMESSAGE:Class = RankUpMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_RANKUPSUBELEMENT:Class = RankUpSubElement;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_RETREATMESSAGE:Class = RetreatMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_TIMEREMAININGMESSAGE:Class = TimeRemainingMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_COMPONENTS_UNLOCKTANKLEVELMESSAGE:Class = UnlockTankLevelMessage;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_FIRSTGENERALRANKREACHEDMESSAGEVO:Class = FirstGeneralRankReachedMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_HEADQUARTERATTACKEDMESSAGEVO:Class = HeadquarterAttackedMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_HEADQUARTERDESTROYEDMESSAGEVO:Class = HeadquarterDestroyedMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_MISSIONCHANGEMESSAGEVO:Class = MissionChangeMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_OVERTIMEMESSAGEVO:Class = OverTimeMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_RANKUPMESSAGEVO:Class = RankUpMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_SECTORBASECONTESTEDMESSAGEVO:Class = SectorBaseContestedMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMESSAGESPANEL_DATA_SECTORBASEMESSAGEVO:Class = SectorBaseMessageVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMISSIONSPANEL_EPICMISSIONSPANEL:Class = EpicMissionsPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMISSIONSPANEL_COMPONENTS_EPICMISSIONSANIMATEDMARKER:Class = EpicMissionsAnimatedMarker;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICMISSIONSPANEL_DATA_EPICMISSIONVO:Class = EpicMissionVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICOVERVIEWMAPSCREEN_EPICOVERVIEWMAPSCREEN:Class = EpicOverviewMapScreen;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICOVERVIEWMAPSCREEN_DATA_EPICOVERVIEWMAPSCREENVO:Class = EpicOverviewMapScreenVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICREINFORCEMENTPANEL_EPICREINFORCEMENTPANEL:Class = EpicReinforcementPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICRESPAWNVIEW_EPICRESPAWNVIEW:Class = EpicRespawnView;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICRESPAWNVIEW_COMPONENTS_EPICRESPAWNDEPLOYBUTTONGROUP:Class = EpicRespawnDeployButtonGroup;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICRESPAWNVIEW_COMPONENTS_EPICRESPAWNMAPENTRIESCONTAINER:Class = EpicRespawnMapEntriesContainer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICRESPAWNVIEW_COMPONENTS_EPICRESPAWNPOINT:Class = EpicRespawnPoint;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICRESPAWNVIEW_DATA_RESPAWNPOINTVO:Class = RespawnPointVO;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICRESPAWNVIEW_EVENTS_EPICRESPAWNEVENT:Class = EpicRespawnEvent;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICSCOREPANEL_EPICSCOREPANEL:Class = EpicScorePanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICSCOREPANEL_COMPONENTS_HEADQUARTERENTRYANIMATED:Class = HeadquarterEntryAnimated;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICSCOREPANEL_COMPONENTS_HEADQUARTERSCOREENTRY:Class = HeadquarterScoreEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICSCOREPANEL_COMPONENTS_SECTORBASEENTRYANIMATED:Class = SectorBaseEntryAnimated;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICSCOREPANEL_COMPONENTS_SECTORBASESCOREENTRY:Class = SectorBaseScoreEntry;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_EPICSCOREPANEL_EVENTS_EPICSCOREPANELEVENT:Class = EpicScorePanelEvent;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_GAMEMESSAGESPANEL_GAMEMESSAGESPANEL:Class = GameMessagesPanel;
       
@@ -2737,10 +2386,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RADIALMENU_COMPONENTS_SECTORWRAPPER:Class = SectorWrapper;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_RECOVERYPANEL_RECOVERYHINT:Class = RecoveryHint;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_RECOVERYPANEL_RECOVERYPANEL:Class = RecoveryPanel;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_ANIMATIONSET:Class = AnimationSet;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_EFFICIENCYBONUSANIMATION:Class = EfficiencyBonusAnimation;
@@ -2887,21 +2532,7 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_STATSHINT_STATSHINT:Class = StatsHint;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_SUPERPLATOONPANEL:Class = SuperPlatoonPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_COMPONENTS_PLATOONINVITEPANEL:Class = PlatoonInvitePanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_COMPONENTS_PLATOONMEMBERSPANEL:Class = PlatoonMembersPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_LIST_PLATOONMEMBERLISTITEMHOLDER:Class = PlatoonMemberListItemHolder;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_LIST_PLATOONPANELLIST:Class = PlatoonPanelList;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_RENDERERS_PLATOONINVITERENDERER:Class = PlatoonInviteRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_RENDERERS_PLATOONMEMBERLISTITEMRENDERER:Class = PlatoonMemberListItemRenderer;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_SUPERPLATOONPANEL_RENDERERS_PLAYERINFOCONTAINER:Class = PlayerInfoContainer;
+      public static const NET_WG_GUI_BATTLE_VIEWS_TABCONTENT_TABCONTENT:Class = TabContent;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_UPGRADEPANEL_BATTLEUPGRADEPANEL:Class = BattleUpgradePanel;
       
@@ -3055,9 +2686,9 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_INFRASTRUCTURE_HELPERS_STATISTICSDATACONTROLLER_BATTLESTATISTICDATACONTROLLER:Class = BattleStatisticDataController;
       
-      public static const NET_WG_INFRASTRUCTURE_HELPERS_STATISTICSDATACONTROLLER_EPICBATTLESTATISTICDATACONTROLLER:Class = EpicBattleStatisticDataController;
-      
       public static const NET_WG_INFRASTRUCTURE_HELPERS_STATISTICSDATACONTROLLER_INTARFACES_IBATTLECOMPONENTDATACONTROLLER:Class = IBattleComponentDataController;
+      
+      public static const NET_WG_INFRASTRUCTURE_HELPERS_STATISTICSDATACONTROLLER_INTARFACES_IBATTLETABDATACONTROLLER:Class = IBattleTabDataController;
       
       public static const NET_WG_INFRASTRUCTURE_HELPERS_STATISTICSDATACONTROLLER_INTARFACES_IEPICBATTLESTATISTICDATACONTROLLER:Class = IEpicBattleStatisticDataController;
        

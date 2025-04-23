@@ -1,4 +1,4 @@
-import copy, logging
+import copy, logging, typing
 from shared_utils import makeTupleByDict
 from Event import Event
 from Event import EventManager
@@ -7,6 +7,8 @@ from comp7_ranks_common import Comp7Division
 from helpers import dependency
 from helpers.server_settings import settingsBlock
 from skeletons.gui.lobby_context import ILobbyContext
+if typing.TYPE_CHECKING:
+    from typing import Dict, List, Tuple
 _logger = logging.getLogger(__name__)
 
 class _Comp7QualificationConfig(settingsBlock('_Comp7QualificationConfig', ('battlesNumber', ))):
@@ -70,6 +72,9 @@ class Comp7RewardsConfig(settingsBlock('Comp7RewardsConfig', ('main', 'extra')))
     @classmethod
     def defaults(cls):
         return {'main': [], 'extra': []}
+
+    def getCosts(self):
+        return sorted([ bonusInfo['cost'] for bonusInfo in self[0] ])
 
 
 class Comp7ServerSettings(object):

@@ -1406,7 +1406,7 @@ msgid "awardItem/optional_devices_assistant/body"
 msgstr "Report on vehicle loadout trends."
 
 msgid "awardItem/optional_devices_assistant/header"
-msgstr "Equipment Assistant"
+msgstr "Assistant"
 
 msgid "awardItem/premium/body"
 msgstr ""
@@ -1513,14 +1513,6 @@ msgstr ""
 
 msgid "awardItem/steelHunterPoint/header"
 msgstr "Steel Hunter Points"
-
-msgid "awardItem/stpcoin/body"
-msgstr ""
-"Currency that can be earned in Steel Hunter battles. Seals can be exchanged for unique rewards in the Shamrock Shop.\n"
-"When playing in a Platoon, Seals are divided equally among Platoon members. The specified amount is your part of the total earnings."
-
-msgid "awardItem/stpcoin/header"
-msgstr "Lucky Seals"
 
 msgid "awardItem/tankman/body"
 msgstr "A crew member for whom the nation and qualification can be selected."
@@ -2345,12 +2337,6 @@ msgstr ""
 msgid "battle_royale/hangar/vehicle/leftTime"
 msgstr "Available through: %(leftTime)s"
 
-msgid "battle_royale/hangar/vehicle/shamrock"
-msgstr ""
-"%(shamrock)s Bonus to Lucky Seals for being among the top 10 players in Solo"
-" battles or among the top 7 in Platoon battles. The bonus can be activated "
-"once a day for each event vehicle."
-
 msgid "battle_royale/hangar/vehicle/status"
 msgstr "One of the Steel Hunters"
 
@@ -3022,6 +3008,38 @@ msgstr ""
 
 msgid "commanderBonus/name"
 msgstr "Commander's Bonus"
+
+msgid "commendations/comms_likes_sct_txt_h_01"
+msgstr "Commendations unavailable"
+
+msgid "commendations/comms_likes_sct_txt_h_02"
+msgstr "Commend!"
+
+msgid "commendations/comms_likes_sct_txt_h_03"
+msgstr "Commend back!"
+
+msgid "commendations/comms_likes_sct_txt_h_04"
+msgstr "Player already commended"
+
+msgid "commendations/comms_likes_sct_txt_h_05"
+msgstr "Commended both ways"
+
+msgid "commendations/comms_likes_sct_txt_t_01"
+msgstr "Unfortunately, you cannot commend this player."
+
+msgid "commendations/comms_likes_sct_txt_t_02"
+msgstr "Click to show your appreciation for this player."
+
+msgid "commendations/comms_likes_sct_txt_t_03"
+msgstr "This player has already commended you."
+
+msgid "commendations/comms_likes_sct_txt_t_04"
+msgstr "You cannot commend this player again this battle."
+
+msgid "commendations/comms_likes_sct_txt_t_05"
+msgstr ""
+"What a great match! Unfortunately, you cannot commend this player again this"
+" battle."
 
 msgid "common/notEnough"
 msgstr "Amount required for purchase:"
@@ -4855,6 +4873,15 @@ msgstr ""
 msgid "eliteXP/header"
 msgstr "Experience"
 
+msgid "enableCommendations/body"
+msgstr ""
+"When disabled, your battle will not be disturbed by commendation "
+"notifications. You can still send and receive commendations in the team list"
+" and in Tab view."
+
+msgid "enableCommendations/header"
+msgstr "Receive commendations in battle"
+
 msgid "enableTierGrouping/body"
 msgstr ""
 "Displaying vehicle icons by tier will only work if vehicle icons are "
@@ -6595,6 +6622,82 @@ msgstr "You can view the event results and claim your rewards."
 msgid "liveOps/entryPointTooltip/title"
 msgstr "New Event"
 
+msgid "liveTags/body/ally/assist"
+msgstr ""
+"Assisting includes spotting, immobilizing, and stunning. Unspotted damage "
+"not included."
+
+msgid "liveTags/body/ally/block/assist"
+msgstr ""
+"Assisting includes spotting, immobilizing, and stunning. Unspotted damage "
+"not included."
+
+msgid "liveTags/body/ally/damage"
+msgstr "Unspotted damage not included."
+
+msgid "liveTags/body/ally/damage/assist"
+msgstr ""
+"Assisting includes spotting, immobilizing, and stunning. Unspotted damage "
+"not included."
+
+msgid "liveTags/body/ally/damage/block"
+msgstr "Unspotted damage not included."
+
+msgid "liveTags/body/ally/damage/block/assist"
+msgstr ""
+"Assisting includes spotting, immobilizing, and stunning. Unspotted damage "
+"not included."
+
+msgid "liveTags/body/currentPlayer/assist"
+msgstr ""
+"You’re on top! Assisting includes spotting, immobilizing, and stunning. "
+"Unspotted damage not included."
+
+msgid "liveTags/body/currentPlayer/block"
+msgstr "You’re on top!"
+
+msgid "liveTags/body/currentPlayer/block/assist"
+msgstr ""
+"You’re on top! Assisting includes spotting, immobilizing, and stunning. "
+"Unspotted damage not included. "
+
+msgid "liveTags/body/currentPlayer/damage"
+msgstr "You’re on top! Unspotted damage not included."
+
+msgid "liveTags/body/currentPlayer/damage/assist"
+msgstr ""
+"You’re on top! Assisting includes spotting, immobilizing, and stunning. "
+"Unspotted damage not included."
+
+msgid "liveTags/body/currentPlayer/damage/block"
+msgstr "You’re on top! Unspotted damage not included."
+
+msgid "liveTags/body/currentPlayer/damage/block/assist"
+msgstr ""
+"You’re on top! Assisting includes spotting, immobilizing, and stunning. "
+"Unspotted damage not included."
+
+msgid "liveTags/title/assist"
+msgstr "Top Assist"
+
+msgid "liveTags/title/block"
+msgstr "Top Blocking"
+
+msgid "liveTags/title/block/assist"
+msgstr "Top Assist and Blocking"
+
+msgid "liveTags/title/damage"
+msgstr "Top Damage"
+
+msgid "liveTags/title/damage/assist"
+msgstr "Top Damage and Assist"
+
+msgid "liveTags/title/damage/block"
+msgstr "Top Damage and Blocking"
+
+msgid "liveTags/title/damage/block/assist"
+msgstr "Top Damage, Assist, and Blocking"
+
 msgid "lobby/header/buyPremiumAccount/disabled/body"
 msgstr ""
 "You will be able to extend Premium Account when %(number)s days are left "
@@ -7612,6 +7715,22 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/boosteroid_extraordinaire/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/boosteroid_fencer/desc"
+msgstr ""
+"Don't let her poise and elegance fool you: Adelais is a battle-hardened "
+"fencing champion with thousands of duels to her name. Confident, focused, "
+"and graceful on the piste, she's armed with lightning-fast reflexes and a "
+"riposte for any situation. Yet when she's not putting opponents to the "
+"sword, she can be found commanding the battlefield—where she brings the same"
+" deadly precision. You might think you're quick, but Adelais is quicker. "
+"Now...en garde!"
+
+msgid "notrecruitedtankman/boosteroid_fencer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/boosteroid_fencer/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/boosteroid_foxwood/desc"
 msgstr ""
 "Never seen without his trusty hound Winston by his side, William has "
@@ -8616,6 +8735,62 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/onslaught_p3_4/label"
 msgstr "Onslaught. Year of the Pegasus"
+
+msgid "notrecruitedtankman/onslaught_p4_1/desc"
+msgstr ""
+"Hailing from the bayous of Louisiana, Captain Elijah \"Gator\" Brooks earned"
+" his nickname for his ability to survive and thrive in the toughest of "
+"conditions. Growing up near treacherous swamps where few dared to tread, he "
+"learned to adapt to any terrain and turn the environment to his "
+"advantage—making him a master of battlefield strategy."
+
+msgid "notrecruitedtankman/onslaught_p4_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_1/label"
+msgstr "Onslaught. Year of the Manticore"
+
+msgid "notrecruitedtankman/onslaught_p4_2/desc"
+msgstr ""
+"A Dortmund native, Franz \"Forge\" Köhler is known for his unshakable focus "
+"under fire. A former factory worker used to handling heavy metal, he boasts "
+"uncanny strength and precision. He approaches targets like machines to "
+"dismantle—calculating every move with methodical accuracy—while his shots "
+"strike like a hammer on an anvil."
+
+msgid "notrecruitedtankman/onslaught_p4_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_2/label"
+msgstr "Onslaught. Year of the Manticore"
+
+msgid "notrecruitedtankman/onslaught_p4_3/desc"
+msgstr ""
+"As a young delivery boy in the riverlands of Guangdong, Zhang \"Courier\" "
+"Wei often found himself sent on long-distance errands to far-off towns. "
+"Racing his trusty bicycle across vast plains and weaving through bustling "
+"city streets, he developed sharp spatial awareness and lightning-fast "
+"reactions—skills he now uses to outwit danger with every turn on the "
+"battlefield."
+
+msgid "notrecruitedtankman/onslaught_p4_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_3/label"
+msgstr "Onslaught. Year of the Manticore"
+
+msgid "notrecruitedtankman/onslaught_p4_4/desc"
+msgstr ""
+"Background details remain sparse. Reports suggest previous service in "
+"[CLASSIFIED]. Known for unmatched speed and dexterity, \"Phantom\" handles "
+"ammunition like a second heartbeat. The ever-present bandana obscures more "
+"than a face—it shields secrets no one dares uncover."
+
+msgid "notrecruitedtankman/onslaught_p4_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p4_4/label"
+msgstr "Onslaught. Year of the Manticore"
 
 msgid "notrecruitedtankman/oow21_strategist_commander/desc"
 msgstr ""

@@ -139,6 +139,9 @@ msgstr "56TP"
 msgid "Chassis_Pl25_CS_52_C"
 msgstr "CS-53 II"
 
+msgid "Chassis_Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 Pancernik"
+
 msgid "Chassis_Pl27_SDP_Wz_66T"
 msgstr "SDP 66 Grom"
 
@@ -805,6 +808,33 @@ msgstr "CS-52 C"
 msgid "Pl25_CS_52_C_short_special"
 msgstr "A versatile vehicle with a gas-turbine engine"
 
+msgid "Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 Pancernik"
+
+msgid "Pl26_Czolg_P_Wz_46_descr"
+msgstr ""
+"In the CC-46 Pancernik project, instead of a classic single-loop chassis, "
+"the designers opted for a dual-loop one with power supply to the whole track"
+" loop. This layout had a lot of advantages but was harder to implement. The "
+"loops could operate in different modes: separately in traction or free mode,"
+" or together. Their mirror symmetry meant the driving direction could "
+"quickly be switched the opposite way. The work was terminated at the "
+"blueprint phase."
+
+msgid "Pl26_Czolg_P_Wz_46_long_special"
+msgstr ""
+"The CC-46 Pancernik is a Tier IX Polish heavy tank. A classic assault heavy,"
+" it has decent mobility balanced by good survivability with strong frontal "
+"and side armor. The tank is equipped with a 155 mm gun that causes huge "
+"damage per shot. Considering its high alpha, other stats like aiming and "
+"reload time are quite comfortable."
+
+msgid "Pl26_Czolg_P_Wz_46_short"
+msgstr "Pancernik"
+
+msgid "Pl26_Czolg_P_Wz_46_short_special"
+msgstr "Massive alpha damage, strong frontal and side armor"
+
 msgid "Pl27_SDP_Wz_66T"
 msgstr "SDP wz 66 Grom"
 
@@ -940,16 +970,20 @@ msgstr ""
 "turret of a 56-ton tank was mounted on the chassis of the CS-53 medium tank."
 " The vehicle turned out to be complex, low-tech, and expensive. As a result,"
 " the Polish military decided to focus on organizing large-scale production "
-"of the Soviet T-54, and the new heavy tank went no further than blueprints."
+"of the Soviet T-54, and the new tank went no further than blueprints."
 
 msgid "Pl34_Cs53_56_Woitek_long_special"
-msgstr "?empty?"
+msgstr ""
+"The CS-53/56 Wojtek has weak hull armor but reliable turret armor. At the "
+"same time, the heavy turret is equipped with a 122 mm gun featuring high "
+"damage per shot. Also, despite weighing around 52 tons, this medium tank has"
+" good forward speed and a good power-to-weight ratio."
 
 msgid "Pl34_Cs53_56_Woitek_short"
 msgstr "Wojtek"
 
 msgid "Pl34_Cs53_56_Woitek_short_special"
-msgstr "?empty?"
+msgstr "High alpha damage, reliable turret armor"
 
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
@@ -1119,6 +1153,9 @@ msgstr "56TP"
 msgid "Turret_1_Pl25_CS_52_C"
 msgstr "CS 63 P"
 
+msgid "Turret_1_Pl26_Czolg_P_Wz_46"
+msgstr "CC-46 Pancernik"
+
 msgid "Turret_1_Pl27_SDP_Wz_66T"
 msgstr "SDP 66 Grom"
 
@@ -1188,8 +1225,8 @@ msgstr "CS-53 MH"
 msgid "V-2-34_B"
 msgstr "V-2-34"
 
-msgid "W-53M2"
-msgstr "W-53M2"
+msgid "V_16_x2"
+msgstr "V-16 x2"
 
 msgid "W_12_5"
 msgstr "W12-5"
@@ -1226,6 +1263,9 @@ msgstr "W-48"
 
 msgid "W_48M"
 msgstr "W-48M"
+
+msgid "W_53M2"
+msgstr "W-53M2"
 
 msgid "_100mm_DAP"
 msgstr "100 mm DAP"
@@ -1365,6 +1405,9 @@ msgstr "105 mm wz.22/24"
 msgid "_105mm_wz_52"
 msgstr "105 mm armata wz. 52"
 
+msgid "_10RT_C46"
+msgstr "10RT-C46"
+
 msgid "_122_mm_wz_43_50"
 msgstr "122 mm wz.43/50"
 
@@ -1407,6 +1450,15 @@ msgstr "WOF-471P"
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
 
+msgid "_122mm_WBR_471BP_W"
+msgstr "WBR-471BP (W)"
+
+msgid "_122mm_WBR_471B_W"
+msgstr "WBR-471B (W)"
+
+msgid "_122mm_WOF_471P_W"
+msgstr "WOF-471P (W)"
+
 msgid "_122mm_armata_wz_53_56"
 msgstr "122 mm armata wz. 53/56"
 
@@ -1437,15 +1489,6 @@ msgstr "122 mm armata wz.43/50"
 msgid "_122mm_wz_53"
 msgstr "122 mm wz. 53"
 
-msgid "_122mm_wz_53_56_DM"
-msgstr "BR-471D"
-
-msgid "_122mm_wz_53_56_M"
-msgstr "BR-471B"
-
-msgid "_122mm_wz_53_56_OF"
-msgstr "OF-471"
-
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1469,6 +1512,18 @@ msgstr "Pocisk przeciwpancerny"
 
 msgid "_152mm_pocisk_wybuchowy"
 msgstr "Pocisk wybuchowy"
+
+msgid "_155_mm_PK_40"
+msgstr "PK-40"
+
+msgid "_155_mm_PP_40"
+msgstr "PP-40"
+
+msgid "_155_mm_PW_40"
+msgstr "PW-40"
+
+msgid "_155mm_armata_wz_40_46"
+msgstr "155 mm armata wz. 40-46"
 
 msgid "_20mm_n_k_m_20_A"
 msgstr "n.k.m. 20 mm wz. 38 FK-A"

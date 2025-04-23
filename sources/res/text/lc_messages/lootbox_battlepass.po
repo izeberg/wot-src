@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: <plural forms>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "autoOpenView/boxCount"
 msgid_plural "plural/autoOpenView/boxCount"
@@ -22,15 +22,6 @@ msgstr "We scratched %(boxCount) for you"
 
 msgid "awardViews/footer/backButton/"
 msgstr "Back to Vouchers"
-
-msgid "awardViews/footer/checkbox/"
-msgstr "Scratch Animation"
-
-msgid "awardViews/quantityTitle/boxesAvailable"
-msgstr "Available: %(boxesCount)"
-
-msgid "awardViews/quantityTitle/noBoxes"
-msgstr "No Vouchers available"
 
 msgid "boxTooltip/description/text/commonTicket"
 msgstr ""
@@ -45,6 +36,9 @@ msgstr "Voucher"
 msgid "common/boxCategory/upperCase/commonTicket"
 msgstr "VOUCHER"
 
+msgid "common/footer/checkbox"
+msgstr "Scratch Animation"
+
 msgid "common/loader"
 msgstr "Scratching Voucher..."
 
@@ -56,12 +50,6 @@ msgstr "VOUCHERS"
 
 msgid "hasBoxesView/openButtonText"
 msgstr "Scratch Voucher"
-
-msgid "hasBoxesView/quantityTitle/boxesAvailable"
-msgstr "Available: %(boxesCount)"
-
-msgid "hasBoxesView/quantityTitle/noBoxes"
-msgstr "No Vouchers available"
 
 msgid "infoPage/footer/description/autoOpen"
 msgstr "Vouchers can be received as a reward in the Elite Circuit."
@@ -87,13 +75,14 @@ msgstr ""
 "You do not have any Vouchers. You can earn them\n"
 "in the Elite Circuit."
 
-msgid "noBoxesView/descriptionCn/"
-msgstr ""
-"You do not have any Vouchers. You can earn them\n"
-"in the Elite Circuit."
-
 msgid "preview/backLabel"
 msgstr "TO VOUCHERS"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "Available: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "No Vouchers available"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
 msgstr "Vouchers scratched: %(boxes)s"

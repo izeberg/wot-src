@@ -478,9 +478,7 @@ msgid "badge_152"
 msgstr "Onslaught Tournament Enjoyer"
 
 msgid "badge_152_descr"
-msgstr ""
-"Awarded to the winners of Minor Onslaught Tournaments. This reward will be "
-"removed at the start of the next Onslaught Season."
+msgstr "Awarded to the winners of Minor Onslaught Tournaments."
 
 msgid "badge_153"
 msgstr "OLS Autumn '24 Supporter"
@@ -653,8 +651,7 @@ msgstr "Keystone Predator"
 msgid "badge_173_descr"
 msgstr ""
 "Awarded for achieving the Champion rank in Season of the Crimson Manticore "
-"in Onslaught mode. This reward will be removed at the start of the next "
-"Season."
+"in Onslaught mode."
 
 msgid "badge_174"
 msgstr "Lionheart"
@@ -662,7 +659,7 @@ msgstr "Lionheart"
 msgid "badge_174_descr"
 msgstr ""
 "Awarded for achieving the Legend rank in Season of the Crimson Manticore in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_175"
 msgstr "Facing Pride"
@@ -670,7 +667,7 @@ msgstr "Facing Pride"
 msgid "badge_175_descr"
 msgstr ""
 "Awarded for achieving the Legend rank in Season of the Crimson Manticore in "
-"Onslaught mode. This reward will be removed at the start of the next Season."
+"Onslaught mode."
 
 msgid "badge_176"
 msgstr "OLS Spring'25 Supporter"
@@ -688,6 +685,22 @@ msgstr ""
 "Awarded to fans that predicted the winning team of OLS Spring'25. Your "
 "foresight is legendary!"
 
+msgid "badge_178"
+msgstr "Warden of Claws"
+
+msgid "badge_178_descr"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Jade Manticore in "
+"Onslaught mode. This reward will be removed at the start of the next Season."
+
+msgid "badge_179"
+msgstr "Predator's Grace"
+
+msgid "badge_179_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Jade Manticore in "
+"Onslaught mode. This reward will be removed at the start of the next Season."
+
 msgid "badge_17_descr"
 msgstr ""
 "Can be received for completing all missions in operation Object 260 with "
@@ -698,6 +711,22 @@ msgstr "Object 260, Class I"
 
 msgid "badge_18"
 msgstr "Campaign I Champion"
+
+msgid "badge_180"
+msgstr "Legacy of the Hunt"
+
+msgid "badge_180_descr"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Jade Manticore in "
+"Onslaught mode. This reward will be removed at the start of the next Season."
+
+msgid "badge_181"
+msgstr "Express Delivery"
+
+msgid "badge_181_descr"
+msgstr ""
+"Awarded for completing all Covert Op missions during the Operation Postman "
+"event."
 
 msgid "badge_18_descr"
 msgstr ""
@@ -1394,6 +1423,9 @@ msgstr "Legend of the Manticore"
 
 msgid "suffix/badge_175"
 msgstr "Facing Pride"
+
+msgid "suffix/badge_180"
+msgstr "Legacy of the Hunt"
 
 msgid "suffix/badge_56"
 msgstr "Alpha Tester"

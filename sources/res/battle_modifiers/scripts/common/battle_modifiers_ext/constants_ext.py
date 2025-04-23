@@ -259,8 +259,10 @@ class ModifiersWithRemapping(object):
     GUN_MAIN_PREFAB = 'gunMainPrefab'
     SHOT_EFFECTS = 'shotEffects'
     SOUND_NOTIFICATIONS = 'soundNotifications'
+    EXHAUST_EFFECTS = 'exhaustEffects'
+    CHASSIS_DECALS = 'chassisDecals'
     ALL = {
-     GUN_EFFECTS, GUN_MAIN_PREFAB, SHOT_EFFECTS, SOUND_NOTIFICATIONS}
+     GUN_EFFECTS, GUN_MAIN_PREFAB, SHOT_EFFECTS, SOUND_NOTIFICATIONS, EXHAUST_EFFECTS, CHASSIS_DECALS}
 
 
 class RemappingConditionNames(object):
@@ -278,4 +280,5 @@ class RemappingConditionNames(object):
 
 class RemappingNames(object):
     TEST = 'test'
-    ALL = set(() + ((TEST,) if IS_DEVELOPMENT else ()))
+    FEP_FALL_TANKS = 'fep_fall_tanks'
+    ALL = set((FEP_FALL_TANKS,) + ((TEST,) if IS_DEVELOPMENT else ()))

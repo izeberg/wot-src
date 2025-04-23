@@ -12,6 +12,10 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
@@ -129,6 +133,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/17_munchen_firesmoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/83_kharkiv_fire_gasoline_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_101_RoadPoles_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_101_RoadPoles_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle011_GroupBoxes_02.vfx</fn_effect_bin>
@@ -257,6 +262,7 @@
 		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/83_kharkiv_fire_gasoline_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle011_GroupBoxes_02.eff</fn_effect_bin>
@@ -542,6 +548,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/17_munchen_firesmoke_thin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/83_kharkiv_fire_gasoline_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_101_RoadPoles_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_101_RoadPoles_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle011_GroupBoxes_02.vfx</fn_effect_bin>
@@ -670,6 +677,7 @@
 		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/83_kharkiv_fire_gasoline_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_mle011_GroupBoxes_02.eff</fn_effect_bin>

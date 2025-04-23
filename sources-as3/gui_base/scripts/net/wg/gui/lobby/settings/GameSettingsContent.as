@@ -91,6 +91,8 @@ package net.wg.gui.lobby.settings
       
       public var showMarkersCheckbox:CheckBox = null;
       
+      public var enableCommendationsCheckbox:CheckBox = null;
+      
       public var minimapAlphaSlider:Slider = null;
       
       public var enableOpticalSnpEffectCheckbox:CheckBox = null;
@@ -278,6 +280,9 @@ package net.wg.gui.lobby.settings
          this.showMarkersCheckbox.label = SETTINGS.BATTLECOMM_SHOWMARKERS;
          this.showMarkersCheckbox.toolTip = TOOLTIPS.SHOWBASEMARKERS;
          this.showMarkersCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
+         this.enableCommendationsCheckbox.label = SETTINGS.BATTLECOMM_ENABLECOMMENDATIONS;
+         this.enableCommendationsCheckbox.toolTip = TOOLTIPS.ENABLECOMMENDATIONS;
+         this.enableCommendationsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.ppShowLevelsCheckbox.label = SETTINGS.GAME_PPSHOWLEVELS;
          this.gameplay_ctfCheckbox.label = SETTINGS.GAMEPLAY_CTF;
          this.gameplay_dominationCheckbox.label = SETTINGS.GAMEPLAY_DOMINATION;
@@ -447,6 +452,8 @@ package net.wg.gui.lobby.settings
          this.showLocationMarkersCheckbox = null;
          this.showMarkersCheckbox.dispose();
          this.showMarkersCheckbox = null;
+         this.enableCommendationsCheckbox.dispose();
+         this.enableCommendationsCheckbox = null;
          this.gameplay_ctfCheckbox.dispose();
          this.gameplay_ctfCheckbox = null;
          this.gameplay_dominationCheckbox.dispose();

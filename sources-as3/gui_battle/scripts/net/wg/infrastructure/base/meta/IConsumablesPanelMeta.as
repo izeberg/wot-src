@@ -40,13 +40,11 @@ package net.wg.infrastructure.base.meta
       
       function as_setOptionalDeviceUsed(param1:int, param2:Boolean) : void;
       
-      function as_setIdleEnabledGlow(param1:int, param2:Boolean) : void;
-      
       function as_setGlow(param1:int, param2:int) : void;
       
       function as_hideGlow(param1:int) : void;
       
-      function as_setEquipmentActivated(param1:int, param2:Boolean) : void;
+      function as_setEquipmentActivated(param1:int, param2:Boolean, param3:Boolean) : void;
       
       function as_handleAsReplay() : void;
       

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ReconAimingCircleVisual>
+		<ally>
+			<visual>content/Interface/TargetPoint/inspire_enemy.model</visual>
+			<color>0xff00ff00</color>
+			<enableAccurateCollision>False</enableAccurateCollision>
+			<maxUpdateInterval>
+				0.04
+				<!--BW_String-->
+			</maxUpdateInterval>
+			<overTerrainHeight>
+				0.5
+				<!--BW_String-->
+			</overTerrainHeight>
+		</ally>
+	</ReconAimingCircleVisual>
+	<DistractionAimingCircleVisual>
+		<ally>
+			<visual>content/Interface/TargetPoint/inspire_enemy.model</visual>
+			<color>0xff13bfff</color>
+			<enableAccurateCollision>True</enableAccurateCollision>
+			<maxUpdateInterval>
+				0.04
+				<!--BW_String-->
+			</maxUpdateInterval>
+			<overTerrainHeight>
+				0.5
+				<!--BW_String-->
+			</overTerrainHeight>
+		</ally>
+	</DistractionAimingCircleVisual>
+</root>

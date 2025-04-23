@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F132_Vercingetorix/normal/lod3/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F132_Vercingetorix/normal/lod4/Gun_02</parent>
+	<extent>192</extent>
+	<visibilityBox>
+		<min>-0.563748 -0.319183 -0.371807</min>
+		<max>0.566091 0.704271 7.020212</max>
+	</visibilityBox>
+</root>

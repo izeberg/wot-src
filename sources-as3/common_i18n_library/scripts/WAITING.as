@@ -213,8 +213,6 @@ package
       
       public static const DOWNLOAD_GAMERESTRICTIONS:String = "#waiting:download/gameRestrictions";
       
-      public static const DOWNLOAD_RESOURCEWELL:String = "#waiting:download/resourceWell";
-      
       public static const UPDATINGSKILLWINDOW:String = "#waiting:updatingSkillWindow";
       
       public static const PREBATTLE_CREATE:String = "#waiting:prebattle/create";

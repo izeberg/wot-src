@@ -1,6 +1,9 @@
 package net.wg.gui.battle.components.stats.playersPanel
 {
    import flash.display.MovieClip;
+   import flash.events.TimerEvent;
+   import flash.utils.Timer;
+   import net.wg.data.constants.Values;
    import net.wg.gui.battle.components.stats.playersPanel.events.ChatCommandItemEvent;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
@@ -27,6 +30,8 @@ package net.wg.gui.battle.components.stats.playersPanel
       
       private static const PURPLE_STATE:String = "purple";
       
+      private static const GOLD_STATE:String = "gold";
+      
       private static const EMPTY_FRAME_STATE:String = "";
       
       private static const ATTACK_BASE_PURPLE_STATE:String = "attackBasePurple";
@@ -38,6 +43,8 @@ package net.wg.gui.battle.components.stats.playersPanel
       private static const GREEN_COLOR_ANIMATION_LIST:Array = ["goingTo","thanks","help_me_ex","help_me","supportingAlly","defendBase","defendingBase","defendObjective","defendingObjective"];
       
       private static const RED_COLOR_ANIMATION_LIST:Array = ["attackBase","attack","attackingBase","attackObjective","attackingObjective"];
+      
+      private static const GOLD_COLOR_ANIMATION_LIST:Array = ["gotCommendation","sendCommendation","mutualCommendation"];
       
       private static const ATTACK_BASE_COMMANDS:Array = ["attackBase","attackingBase"];
       
@@ -63,12 +70,19 @@ package net.wg.gui.battle.components.stats.playersPanel
          "defendingObjective":12,
          "attackObjective":13,
          "attackingObjective":13,
-         "attackObjectivePurple":14
+         "attackObjectivePurple":14,
+         "gotCommendation":15,
+         "sendCommendation":16,
+         "mutualCommendation":17
       };
       
       private static const TARGET_CHAT_CMD_FLAGS:uint = 1;
       
       private static const PLAYER_IS_CHAT_CMD_TARGET_FLAG:uint = 2;
+      
+      private static const DEFAULT_ANIMATION_START:int = 1;
+      
+      private static const LONG_ANIMATION_START:int = 26;
        
       
       public var activeChatCommand:MovieClip = null;
@@ -87,13 +101,24 @@ package net.wg.gui.battle.components.stats.playersPanel
       
       private var _disposed:Boolean = false;
       
-      private var _isChatCommandAnimationVisible:Boolean = false;
+      private var _wasCommandInterruped:Boolean = false;
+      
+      private var _priorityCommandTimer:Timer;
+      
+      private var _queuedCommand:String = "";
+      
+      private var _queuedChatCommandFlags:uint = 0;
       
       public function ChatCommandItemComponent()
       {
+         this._priorityCommandTimer = new Timer(0,1);
          super();
          this._isColorBlind = App.colorSchemeMgr.getIsColorBlindS();
          this.chatCommandAnimation.visible = false;
+         if(this._priorityCommandTimer != null)
+         {
+            this._priorityCommandTimer.addEventListener(TimerEvent.TIMER,this.onTimerComplete);
+         }
       }
       
       public final function dispose() : void
@@ -102,6 +127,12 @@ package net.wg.gui.battle.components.stats.playersPanel
          this.chatCommandAnimation.stop();
          this.chatCommandAnimation = null;
          this.activeChatCommand = null;
+         if(this._priorityCommandTimer != null)
+         {
+            this._priorityCommandTimer.removeEventListener(TimerEvent.TIMER,this.onTimerComplete);
+            this._priorityCommandTimer.stop();
+            this._priorityCommandTimer = null;
+         }
       }
       
       public function iconOffset(param1:int) : void
@@ -117,20 +148,13 @@ package net.wg.gui.battle.components.stats.playersPanel
       
       public function playCommandAnimation(param1:String) : void
       {
-         if(!this._isChatCommandAnimationVisible)
-         {
-            if(this.chatCommandAnimation.visible)
-            {
-               this.chatCommandAnimation.visible = false;
-            }
-            return;
-         }
          if(!this.chatCommandAnimation.visible)
          {
             this.chatCommandAnimation.visible = true;
          }
          this.chatCommandAnimation.scaleX = this._animationWidth / SOURCE_ANIMATION_WIDTH;
          var _loc2_:String = ORANGE_STATE;
+         var _loc3_:int = DEFAULT_ANIMATION_START;
          if(GREEN_COLOR_ANIMATION_LIST.indexOf(param1) != INVALID_INDEX)
          {
             _loc2_ = GREEN_STATE;
@@ -139,16 +163,54 @@ package net.wg.gui.battle.components.stats.playersPanel
          {
             _loc2_ = !!this._isColorBlind ? PURPLE_STATE : RED_STATE;
          }
+         else if(GOLD_COLOR_ANIMATION_LIST.indexOf(param1) != INVALID_INDEX)
+         {
+            _loc2_ = GOLD_STATE;
+            _loc3_ = LONG_ANIMATION_START;
+         }
          this.chatCommandAnimation.gotoAndStop(_loc2_);
-         this.chatCommandAnimation.animationMC.gotoAndPlay(1);
+         this.chatCommandAnimation.animationMC.gotoAndPlay(_loc3_);
       }
       
       public function setActiveChatCommand(param1:String, param2:uint) : void
+      {
+         if(this._priorityCommandTimer.running)
+         {
+            this._queuedCommand = param1;
+            this._queuedChatCommandFlags = param2;
+            this._wasCommandInterruped = false;
+            return;
+         }
+         if(this._activeChatCommand == param1 && param2 == this._chatCommandFlags)
+         {
+            return;
+         }
+         this._activeChatCommand = param1;
+         this._chatCommandFlags = param2;
+         if(param1 != EMPTY_FRAME_STATE && !this._wasCommandInterruped)
+         {
+            this.playCommandAnimation(param1);
+         }
+         this.setChatCommandState(param1,param2);
+      }
+      
+      public function setActivePriorityCommand(param1:String, param2:uint, param3:uint) : void
       {
          if(this._activeChatCommand == param1 && param2 == this._chatCommandFlags)
          {
             return;
          }
+         if(!this._priorityCommandTimer.running && this._activeChatCommand != EMPTY_FRAME_STATE)
+         {
+            this._queuedCommand = this._activeChatCommand;
+            this._queuedChatCommandFlags = this._chatCommandFlags;
+            this._wasCommandInterruped = true;
+         }
+         if(this._priorityCommandTimer.running)
+         {
+            this._priorityCommandTimer.reset();
+         }
+         this._priorityCommandTimer.delay = param3;
          this._activeChatCommand = param1;
          this._chatCommandFlags = param2;
          if(param1 != EMPTY_FRAME_STATE)
@@ -156,11 +218,15 @@ package net.wg.gui.battle.components.stats.playersPanel
             this.playCommandAnimation(param1);
          }
          this.setChatCommandState(param1,param2);
+         this._priorityCommandTimer.start();
       }
       
-      public function setAnimationVisibility(param1:Boolean) : void
+      private function onTimerComplete(param1:TimerEvent) : void
       {
-         this._isChatCommandAnimationVisible = param1;
+         this._priorityCommandTimer.reset();
+         this.setActiveChatCommand(this._queuedCommand,this._queuedChatCommandFlags);
+         this._queuedCommand = Values.EMPTY_STR;
+         this._queuedChatCommandFlags = 0;
       }
       
       public function setChatCommandVisibility(param1:Boolean) : void

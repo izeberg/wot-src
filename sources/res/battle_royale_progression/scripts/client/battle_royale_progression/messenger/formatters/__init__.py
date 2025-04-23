@@ -1,8 +1,8 @@
-from battle_royale_progression.gui import gui_constants
+from chat_shared import SYS_MESSAGE_TYPE
+from gui.shared.system_factory import registerMessengerServerFormatter
 from battle_royale_progression.messenger.formatters.service_channel import BRProgressionSystemMessageFormatter
-from gui.shared.system_factory import registerMessengerClientFormatter
-clientFormatters = {gui_constants.SCH_CLIENT_MSG_TYPE.BR_PROGRESSION_NOTIFICATIONS: BRProgressionSystemMessageFormatter()}
+serverFormatters = {SYS_MESSAGE_TYPE.BRProgressionNotification.index(): BRProgressionSystemMessageFormatter()}
 
-def registerMessengerClientFormatters():
-    for sysMsgType, formatter in clientFormatters.iteritems():
-        registerMessengerClientFormatter(sysMsgType, formatter)
+def registerMessengerServerFormatters():
+    for sysMsgType, formatter in serverFormatters.iteritems():
+        registerMessengerServerFormatter(sysMsgType, formatter)

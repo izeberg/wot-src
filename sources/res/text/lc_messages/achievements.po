@@ -1978,6 +1978,14 @@ msgstr ""
 "Awarded for completing a series of missions in Season of the Crimson "
 "Manticore in Onslaught mode."
 
+msgid "comp7_4_3"
+msgstr "Feral Sigil"
+
+msgid "comp7_4_3_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Jade Manticore "
+"in Onslaught mode."
+
 msgid "comp7_4_yearly_bronze"
 msgstr "Bronze Manticore"
 
@@ -4859,7 +4867,7 @@ msgstr ""
 "\n"
 "• ISU-122S, ISU-122-2, ISU-130, ISU-152, ISU-152K\n"
 "\n"
-"• Object&nbsp;252U, Defender, Object&nbsp;260, Object&nbsp;261, Object&nbsp;257, Object&nbsp;263, Object&nbsp;268, Object&nbsp;268&nbsp;Version&nbsp;4, Object&nbsp;268&nbsp;Version&nbsp;5, Object&nbsp;701, Object&nbsp;704\n"
+"• Object&nbsp;252U, Defender, Udarniy, Object&nbsp;260, Object&nbsp;261, Object&nbsp;257, Object&nbsp;263, Object&nbsp;268, Object&nbsp;268&nbsp;Version&nbsp;4, Object&nbsp;268&nbsp;Version&nbsp;5, Object&nbsp;701, Object&nbsp;704\n"
 "\n"
 "• Only Soviet vehicles are included.\n"
 "• The total results for all vehicles are calculated.\n"
@@ -5368,6 +5376,17 @@ msgstr ""
 
 msgid "unreachable_descr"
 msgstr "Earn more victory points than any other player in the battle."
+
+msgid "vDayHero"
+msgstr "Express Delivery"
+
+msgid "vDayHero_condition"
+msgstr ""
+"Awarded for completing all Covert Op missions during the Operation Postman "
+"event."
+
+msgid "vDayHero_descr"
+msgstr "Complete the Operation Postman story."
 
 msgid "victoryMarch"
 msgstr "Victory March"

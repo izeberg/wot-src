@@ -120,7 +120,7 @@ class FakeClientParamData(ClientParamData):
     @classmethod
     def __getUseTypes(cls, physicalType):
         if physicalType == PhysicalType.UNDEFINED:
-            return UseType.NON_DIMENSIONAL_TYPES
+            return UseType.ALL_WITH_UNDEFINED - {UseType.ADD}
         return UseType.ALL_WITH_UNDEFINED
 
     def __makeDescr(self):
