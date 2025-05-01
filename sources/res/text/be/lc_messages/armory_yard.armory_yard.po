@@ -48,19 +48,19 @@ msgid "bundles/buyTokenTooltip"
 msgstr "Перайсці да куплі любой колькасці жэтонаў будаўніцтва"
 
 msgid "bundles/countdown/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "bundles/countdown/daysWithHours"
 msgstr "%(day)s сут %(hour)s гадз"
 
 msgid "bundles/countdown/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "bundles/countdown/hoursWithMinutes"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "bundles/countdown/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "bundles/countdown/sec"
 msgstr "< 1 хв"
@@ -896,7 +896,7 @@ msgid "widget/countdown/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "widget/countdown/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "widget/countdown/sec"
 msgstr "< 1 хв"

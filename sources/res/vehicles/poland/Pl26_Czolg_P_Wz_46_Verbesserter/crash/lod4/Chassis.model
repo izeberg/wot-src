@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/crash/lod4/Chassis</nodefullVisual>
 	<visibilityBox>
-		<min>-1.728817 -0.011022 -3.519974</min>
-		<max>1.732077 1.001348 3.505662</max>
+		<min>-1.714556 -0.017426 -3.535593</min>
+		<max>1.714622 1.012624 3.535593</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/crash/lod4/Chassis</nodefullVisual>
 </root>

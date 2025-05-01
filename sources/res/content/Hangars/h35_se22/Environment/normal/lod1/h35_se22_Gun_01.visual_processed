@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h35_se22/Environment/h35_se22_Gun_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.400000 0.100000 0.250000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.200000 0.200000 3.000000 3.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h35_se22/Environment/h35_se22_Gun_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h35_se22/Environment/h35_se22_Gun_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.192628 0.322791 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.890499 -0.000113 -0.309791</min>
+		<max>0.505243 0.648644 0.309790</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>78834</geometrySize>
+	<minUVDensity>0.026740</minUVDensity>
+</root>

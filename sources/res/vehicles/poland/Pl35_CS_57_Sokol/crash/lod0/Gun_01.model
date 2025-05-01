@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.410615 -0.272070 -1.417024</min>
+		<max>0.369636 0.305303 6.908230</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl35_CS_57_Sokol/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl35_CS_57_Sokol/crash/lod0/Gun_01</nodefullVisual>
+</root>

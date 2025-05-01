@@ -38,6 +38,7 @@ class HelpPagePriority(object):
     TANK_WITH_ABILITY = 11
     AUTOSHOOT_FLAMETHROWER = 11
     THERMAL_VISION = 11
+    HB = 12
 
 
 def addPage(datailedList, headerTitle, title, descr, vKeys, buttons, image, roleImage=None, roleActions=None, hintCtx=None):
@@ -471,7 +472,7 @@ class Comp7PagesBuilder(DetailedHelpPagesBuilder):
 
     @classmethod
     def _collectHelpCtx(cls, ctx, arenaVisitor, vehicle):
-        ctx['isComp7'] = arenaVisitor.getArenaGuiType() == ARENA_GUI_TYPE.COMP7
+        ctx['isComp7'] = arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.COMP7_RANGE
 
 
 class MapboxPagesBuilder(DetailedHelpPagesBuilder):
@@ -539,6 +540,35 @@ class MultiTrackPagesBuilder(DetailedHelpPagesBuilder):
         return
 
 
+class HBPagesBuilder(DetailedHelpPagesBuilder):
+    _SUITABLE_CTX_KEYS = ('isHB', )
+    _IMG_PATH = R.images.historical_battles.gui.maps.icons.hintBackground.inBattleHelp
+
+    @classmethod
+    def priority(cls):
+        return HelpPagePriority.HB
+
+    @classmethod
+    def _collectHelpCtx(cls, ctx, arenaVisitor, vehicle):
+        isHB = arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.HB_RANGE
+        ctx['isHB'] = isHB
+        ctx['hasUniqueVehicleHelpScreen'] = ctx.get('hasUniqueVehicleHelpScreen') or isHB
+
+    @classmethod
+    def buildPages(cls, ctx):
+        from historical_battles.gui.Scaleform.daapi.view.battle.slides import LoadingScreenSlidesCfg
+        from gui.battle_control import avatar_getter
+        arena = avatar_getter.getArena()
+        hintList = LoadingScreenSlidesCfg.instance().getLoadingScreen(arena.arenaType.geometryName).slides
+        pages = []
+        header = backport.text(R.strings.hb_battle.helpScreen.missionTitle.num(arena.guiType)())
+        for hintData in hintList:
+            battleData = hintData.getBattleData()
+            addPage(datailedList=pages, headerTitle=header, title=battleData.get('title', ''), descr=text_styles.mainBig(battleData.get('description', '')), vKeys=[], buttons=[], image=backport.image(HBPagesBuilder._IMG_PATH.dyn(battleData.get('background', ''))()))
+
+        return pages
+
+
 class ThermalVisionPagesBuilder(DetailedHelpPagesBuilder):
     _SUITABLE_CTX_KEYS = ('hasThermalVision', )
 
@@ -566,4 +596,5 @@ registerIngameHelpPagesBuilders((
  DualGunPagesBuilder, BattleRoyalePagesBuilder, TurboshaftEnginePagesBuilder, RoleTypePagesBuilder,
  RocketAccelerationPagesBuilder, Comp7PagesBuilder, MapboxPagesBuilder,
  DualAccuracyPagesBuilder, DevMapsPagesBuilder, FlameTankPagesBuilder, AssaultTankPagesBuilder,
- MultiTrackPagesBuilder, TankWithAbilityPagesBuilder, AutoshootFlameTankPagesBuilder, ThermalVisionPagesBuilder))
+ MultiTrackPagesBuilder, TankWithAbilityPagesBuilder, AutoshootFlameTankPagesBuilder, ThermalVisionPagesBuilder,
+ HBPagesBuilder))

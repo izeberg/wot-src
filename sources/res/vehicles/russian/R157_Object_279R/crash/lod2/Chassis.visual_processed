@@ -68,17 +68,40 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_L_Shape.vertices</vertices>
-			<stream>track_L_Shape.uv2</stream>
-			<primitive>track_L_Shape.indices</primitive>
+			<vertices>track_L1_Shape.vertices</vertices>
+			<stream>track_L1_Shape.uv2</stream>
+			<primitive>track_L1_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
-					<mfm>materials/template_mfms/lightonly_skinned.mfm</mfm>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<identifier>track_mat_L1_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/tracks/Object_726_track_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/tracks/Object_726_track_GMM.dds</Texture>
@@ -87,28 +110,8 @@
 						normalMap
 						<Texture>vehicles/russian/tracks/Object_726_track_ANM.dds</Texture>
 					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/russian/tracks/Object_726_track_AM.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.898707 0.398990 -0.047299</groupOrigin>
+				<groupOrigin>-1.388566 0.390491 -0.054976</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -117,16 +120,40 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
-			<primitive>track_R_Shape.indices</primitive>
+			<vertices>track_R1_Shape.vertices</vertices>
+			<stream>track_R1_Shape.uv2</stream>
+			<primitive>track_R1_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
+					<identifier>track_mat_R1_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/tracks/Object_726_track_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/tracks/Object_726_track_GMM.dds</Texture>
@@ -135,28 +162,112 @@
 						normalMap
 						<Texture>vehicles/russian/tracks/Object_726_track_ANM.dds</Texture>
 					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/russian/tracks/Object_726_track_AM.dds</Texture>
-					</property>
+				</material>
+				<groupOrigin>1.388566 0.406434 0.005262</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
+		<geometry>
+			<vertices>track_L0_Shape.vertices</vertices>
+			<stream>track_L0_Shape.uv2</stream>
+			<primitive>track_L0_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>track_mat_L0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
+						diffuseMap
+						<Texture>vehicles/russian/tracks/Object_726_track_AM.dds</Texture>
+					</property>
+					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						g_detailUVTiling
+						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/tracks/Object_726_track_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/tracks/Object_726_track_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.898706 0.406434 -0.002926</groupOrigin>
+				<groupOrigin>-0.408847 0.398990 0.007312</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
+		<geometry>
+			<vertices>track_R0_Shape.vertices</vertices>
+			<stream>track_R0_Shape.uv2</stream>
+			<primitive>track_R0_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>track_mat_R0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/tracks/Object_726_track_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 0.876713 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/tracks/Object_726_track_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/tracks/Object_726_track_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.408847 0.401051 -0.006740</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

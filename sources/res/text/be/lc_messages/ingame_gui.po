@@ -148,7 +148,7 @@ msgid "chat_example/negative"
 msgstr "Не!"
 
 msgid "chat_example/overheat_cant_shoot"
-msgstr "Орудие перегрето! Не могу стрелять еще <Время охлаждения> с."
+msgstr "Гармата перагрэлася! Не магу страляць яшчэ <Час астывання> с."
 
 msgid "chat_example/positive"
 msgstr "Так!"
@@ -277,6 +277,12 @@ msgstr "Рухаюся на пазіцыю!"
 
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Рухаюся ў %(gridId)s"
+
+msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
+msgstr "Выклікаю агонь на сябе!"
+
+msgid "chat_shortcuts/hb_ability/last_stand"
+msgstr "Б'емся да канца!"
 
 msgid "chat_shortcuts/help_me"
 msgstr "Патрэбна дапамога!"
@@ -673,6 +679,9 @@ msgstr "Пашкоджанні артылерыйскім абстрэлам"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Пашкоджанні гарматай"
 
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Пашкоджанні ад забароненай зоны"
+
 msgid "efficiencyRibbons/armor"
 msgstr "Блакіраванне пашкоджанняў"
 
@@ -741,6 +750,9 @@ msgstr "Цэль абаронена"
 
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захоплена"
+
+msgid "efficiencyRibbons/eventDeathOnPhaseChange"
+msgstr "Машына знішчана"
 
 msgid "efficiencyRibbons/kill"
 msgstr "Знішчыў"
@@ -863,7 +875,7 @@ msgid "flags/timer"
 msgstr "%(time)s з..."
 
 msgid "fortConsumables/timer/postfix"
-msgstr "з..."
+msgstr "c"
 
 msgid "helpScreen/hint/description"
 msgstr ", каб азнаёміцца з асаблівасцямі машыны"
@@ -953,13 +965,13 @@ msgid "player_errors/cant_shoot/gun_damaged"
 msgstr "Страляць немагчыма: гармата пашкоджана."
 
 msgid "player_errors/cant_shoot/gun_locked"
-msgstr "Стрельба невозможна"
+msgstr "Страляць немагчыма"
 
 msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "Стрельба невозможна: орудие перегрето"
+msgstr "Страляць немагчыма: гармата перагрэлася"
 
 msgid "player_errors/cant_shoot/gun_reload"
-msgstr "Орудие перезаряжается"
+msgstr "Гармата перанабіваецца"
 
 msgid "player_errors/cant_shoot/no_ammo"
 msgstr "Страляць немагчыма: няма снарадаў."
@@ -971,7 +983,7 @@ msgid "player_errors/cant_shoot/vehicle_destroyed"
 msgstr "Страляць немагчыма: машына знішчана."
 
 msgid "player_errors/cant_switch/assault_spg/camera_can_not_spawn"
-msgstr "Невозможно перейти в прицел в данной точке"
+msgstr "Немагчыма перайсці ў прыцэл у гэтым пункце"
 
 msgid "player_errors/cant_switch/change_shell/gun_overheated"
 msgstr "Гармата перагрэтая! Змена снарадаў немагчымая."
@@ -1019,16 +1031,16 @@ msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s] у добрым стане і не патрабуе рамонту."
 
 msgid "player_errors/thermalVision/alreadyActivated"
-msgstr "Пирометр уже активирован."
+msgstr "Пірометр ужо актываваны"
 
 msgid "player_errors/thermalVision/cooldown"
-msgstr "Пирометр недоступен: прибор на перезарядке."
+msgstr "Пірометр недаступны: прыбор на перазарадцы."
 
 msgid "player_errors/thermalVision/disabled"
-msgstr "Пирометр недоступен."
+msgstr "Пірометр недаступны."
 
 msgid "player_errors/thermalVision/overturned"
-msgstr "Пирометр недоступен: танк перевернут."
+msgstr "Пірометр недаступны: танк перакулены."
 
 msgid "player_messages/ALLY_HIT"
 msgstr "Траплянне ў хаўрусніка %(entity)s!"
@@ -1686,6 +1698,11 @@ msgid "postmortem/tips/exitHangar/text"
 msgstr ""
 "Esc > Вярнуцца ў Гараж.\n"
 "Уступіце ў новы бой на іншай машыне."
+
+msgid "postmortem/tips/exitHangar/text_hb"
+msgstr ""
+"Esc > Выйсці ў Гараж.\n"
+"Паспрабуйце свае сілы ў новым баі!"
 
 msgid "postmortem/tips/observerMode/label"
 msgstr "Рэжым назіральніка"
@@ -2999,7 +3016,7 @@ msgid "stun/indicator"
 msgstr "Аглушэнне экіпажу"
 
 msgid "stun/seconds"
-msgstr "с"
+msgstr "c"
 
 msgid "stunFlame/indicator"
 msgstr "Эфектыўнасць зніжана"

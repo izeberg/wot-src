@@ -1,7 +1,8 @@
 import math
 from collections import namedtuple
 import BigWorld
-from shared_utils import CONST_CONTAINER
+from account_helpers.settings_core.settings_constants import GRAPHICS
+from shared_utils import CONST_CONTAINER, findFirst
 MIN_SCREEN_WIDTH = 1024
 MIN_SCREEN_HEIGHT = 768
 MIN_COLOR_DEPTH = 23
@@ -99,6 +100,21 @@ def getGraphicsSetting(settingName):
         return
     else:
         return GraphicSetting(*setting)
+
+
+def getGraphicPresetSettingsByName(presetName):
+    presets = getGraphicsSetting(GRAPHICS.PRESETS).options
+    return findFirst(lambda preset: preset['key'] == presetName, presets, {})
+
+
+def getGraphicPresetSettingsByIndex(presetIndex):
+    presets = getGraphicsSetting(GRAPHICS.PRESETS).options
+    return findFirst(lambda preset: preset['index'] == presetIndex, presets, {})
+
+
+def getCurrentGraphicPresetName():
+    presets = getGraphicsSetting(GRAPHICS.PRESETS)
+    return presets.options[presets.value]['key']
 
 
 def getGraphicsPresets(presetIdx=None):

@@ -623,7 +623,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.250316 -0.726277 3.117294</row3>
+							<row3>1.250316 -0.736909 3.127926</row3>
 						</transform>
 						<node>
 							<identifier>Track_VD_R0_BlendBone</identifier>
@@ -631,7 +631,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.250316 -0.247509 -3.117294</row3>
+								<row3>-1.250316 -0.236877 -3.127926</row3>
 							</transform>
 						</node>
 					</node>
@@ -641,7 +641,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.274993 -0.766793 -2.954141</row3>
+							<row3>1.274993 -0.776515 -2.963863</row3>
 						</transform>
 						<node>
 							<identifier>Track_VD_R1_BlendBone</identifier>
@@ -649,7 +649,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.274993 -0.206993 2.954141</row3>
+								<row3>-1.274993 -0.197271 2.963863</row3>
 							</transform>
 						</node>
 					</node>
@@ -1211,7 +1211,6 @@
 		<node>Track_R4_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -1268,11 +1267,6 @@
 		<node>Track_VD_L0_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_VD_L1_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
-		<node>Track_L2_BlendBone</node>
-		<node>Track_L3_BlendBone</node>
-		<node>Track_L4_BlendBone</node>
-		<node>Track_L5_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
 			<stream>track_L_Shape.uv2</stream>
@@ -1414,16 +1408,16 @@
 						<Texture>vehicles/italy/It33_Orso/Orso_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.246587 0.599629 -0.063217</groupOrigin>
@@ -1519,16 +1513,16 @@
 						<Texture>vehicles/italy/It33_Orso/Orso_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.246587 0.597723 -0.063217</groupOrigin>
@@ -1540,6 +1534,6 @@
 		<min>-1.598149 -0.000002 -3.567763</min>
 		<max>1.598149 1.145631 3.757420</max>
 	</boundingBox>
-	<geometrySize>299272</geometrySize>
+	<geometrySize>281604</geometrySize>
 	<minUVDensity>0.019305</minUVDensity>
 </root>

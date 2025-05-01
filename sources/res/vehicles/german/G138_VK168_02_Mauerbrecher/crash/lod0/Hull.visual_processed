@@ -56,10 +56,6 @@
 				<material>
 					<identifier>tank_mat_inside</identifier>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
@@ -99,14 +95,7 @@
 					<identifier>tank_hull_01</identifier>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							4 4 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -139,10 +128,6 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>0.012206 0.149273 0.092613</groupOrigin>
 			</primitiveGroup>
@@ -152,14 +137,7 @@
 					<identifier>tank_chassis_01</identifier>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							2 2 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -191,10 +169,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -0.438035 -0.018168</groupOrigin>

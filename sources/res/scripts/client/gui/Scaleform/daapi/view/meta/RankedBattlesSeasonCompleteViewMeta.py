@@ -2,9 +2,6 @@ from gui.Scaleform.daapi.view.meta.WrapperViewMeta import WrapperViewMeta
 
 class RankedBattlesSeasonCompleteViewMeta(WrapperViewMeta):
 
-    def showRating(self):
-        self._printOverrideError('showRating')
-
     def closeView(self):
         self._printOverrideError('closeView')
 

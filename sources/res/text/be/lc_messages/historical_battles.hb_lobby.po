@@ -1,0 +1,1694 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "abilityTooltip/action"
+msgstr "Дзеянне:"
+
+msgid "abilityTooltip/battle"
+msgstr "Уменне камандзіра"
+
+msgid "abilityTooltip/role"
+msgstr "Уменне камандзіра"
+
+msgid "banner/banText"
+msgstr "Вы адхілены да: %(date)s"
+
+msgid "banner/banTextSmall"
+msgstr "Да %(date)s"
+
+msgid "banner/countdown/end"
+msgstr "Да %(day)s %(month)s"
+
+msgid "banner/countdown/lastDay"
+msgstr "Да завяршэння:"
+
+msgid "banner/countdown/start"
+msgstr "Пачнецца праз:"
+
+msgid "banner/desc"
+msgstr "ЧАС ГЕРОЯЎ"
+
+msgid "battleResults/applyBoosterButton"
+msgstr "Прымяніць загад"
+
+msgid "battleResults/battleInfo/dateAndDuration"
+msgstr "%(date)s, працягласць бою: %(duration)s"
+
+msgid "battleResults/boosterPromo/lostPoints/afk"
+msgstr "За бяздзейнасць вы пазбавіліся ачкоў"
+
+msgid "battleResults/boosterPromo/lostPoints/deserter"
+msgstr "За дэзерцірства вы пазбавіліся ачкоў"
+
+msgid "battleResults/boosterPromo/withBooster"
+msgstr "Без загаду %(booster)s было б: %(currency)s"
+
+msgid "battleResults/boosterPromo/withMultiplyer"
+msgstr "х2 %(coins)s ачкоў перамогі за бой на гэтай машыне"
+
+msgid "battleResults/boosterPromo/withoutBooster"
+msgstr "З загадам %(booster)s было б: %(currency)s"
+
+msgid "battleResults/earnedText"
+msgstr "Атрымана:"
+
+msgid "battleResults/getWithBooster"
+msgstr "Атрымана з дапамогай загада %(booster)s"
+
+msgid "battleResults/leftBoostersText"
+msgstr "Засталося %(left)s шт. загадаў %(icon)s"
+
+msgid "battleResults/missionProgress/allTasksLabel"
+msgstr ""
+"Усе задачы\n"
+"выкананы"
+
+msgid "battleResults/missionProgress/tasksLabel"
+msgstr ""
+"Бягучая\n"
+"задача"
+
+msgid "battleResults/missionProgress/wavesLabel"
+msgstr ""
+"Адбіта\n"
+"атак"
+
+msgid "battleResults/mode/defence"
+msgstr "ЧАС ГЕРОЯЎ: АБАРОНА"
+
+msgid "battleResults/mode/offence"
+msgstr "ЧАС ГЕРОЯЎ: ПРАРЫЎ"
+
+msgid "battleResults/noBoosters"
+msgstr "Няма наяўных загадаў, якія можна прымяніць"
+
+msgid "battleResults/playerInfo/alive"
+msgstr "Ацалеў"
+
+msgid "battleResults/playerInfo/nicknameInfo"
+msgstr "%(nickname)s • %(info)s"
+
+msgid "battleResults/playerInfo/reason/death_zone"
+msgstr "Машына знішчана забароненай зонай."
+
+msgid "battleResults/playerInfo/reason/division_vehicles_exterminated"
+msgstr "Падраздзяленне знішчана."
+
+msgid "battleResults/playerInfo/reason/drowning"
+msgstr "Машына затоплена."
+
+msgid "battleResults/playerInfo/reason/overturn"
+msgstr "Машына знішчана пры перакульванні."
+
+msgid "battleResults/playerInfo/reason/personal_death_zone"
+msgstr "Машына знішчана залпам артбатарэі."
+
+msgid "battleResults/playerInfo/reason/premature_leave"
+msgstr "Выйшаў да завярэння бою."
+
+msgid "battleResults/playerInfo/reason/shot"
+msgstr "Знішчаны стрэлам %(vehicleName)s"
+
+msgid "battleResults/playerInfo/roleAndVehicle"
+msgstr "%(role)s, %(vehicleName)s"
+
+msgid "battleResults/playerInfo/vehicle"
+msgstr "%(vehicleName)s"
+
+msgid "battleResults/possibleEarnedText"
+msgstr "Пасля прымянення загаду %(booster)s будзе:"
+
+msgid "battleResults/stats/assist"
+msgstr ""
+"Падмога\n"
+"ў знішчэнні"
+
+msgid "battleResults/stats/blocked"
+msgstr ""
+"Выкарыстанне\n"
+"брані"
+
+msgid "battleResults/stats/damage"
+msgstr ""
+"Прычынена\n"
+"пашкоджанняў"
+
+msgid "battleResults/stats/kills"
+msgstr ""
+"Знішчана\n"
+"машын"
+
+msgid "battleResults/subTitle/abandonedGame"
+msgstr "Усе хаўруснік пакінулі бой"
+
+msgid "battleResults/subTitle/allArtilleryKilled"
+msgstr "Уся хаўрусная артбатарэя знішчана"
+
+msgid "battleResults/subTitle/allEnemiesKilled"
+msgstr "Уся тэхніка праціўніка знішчана"
+
+msgid "battleResults/subTitle/allTasksCompleted"
+msgstr "Усе задачы выкананы."
+
+msgid "battleResults/subTitle/allTeamKilled"
+msgstr "Войскі разгромлены"
+
+msgid "battleResults/subTitle/techFailure"
+msgstr "БОЙ СПЫНЕНЫ: ТЭХНІЧНЫ ЗБОЙ"
+
+msgid "battleResults/subTitle/timeEnded"
+msgstr "Вы не выканалі задачу за адведзены час"
+
+msgid "battleResults/tab/personalResult"
+msgstr "Асабісты вынік"
+
+msgid "battleResults/tab/teamResult"
+msgstr "Камандны вынік"
+
+msgid "battleResults/title/draw"
+msgstr "БОЙ СКОНЧАНЫ"
+
+msgid "battleResults/title/lose"
+msgstr "АПЕРАЦЫЯ ПРАВАЛІЛАСЯ"
+
+msgid "battleResults/title/victory"
+msgstr "ПЕРАМОГА!"
+
+msgid "battleResults/tooltip/description/counterattack"
+msgstr ""
+"Задача лічыцца пройдзенай, калі ўсе цэлі этапу былі выкананы за адведзены "
+"час."
+
+msgid "battleResults/tooltip/description/defence"
+msgstr ""
+"Задача лічыцца пройдзенай, калі ўсе цэлі этапу былі выкананы за адведзены "
+"час."
+
+msgid "battleResults/tooltip/description/offence"
+msgstr ""
+"Задача лічыцца пройдзенай, калі ўсе цэлі этапу былі выкананы за адведзены "
+"час."
+
+msgid "battleResults/tooltip/title/counterattack"
+msgstr "Выкананне задач"
+
+msgid "battleResults/tooltip/title/defence"
+msgstr "Выкананне задач"
+
+msgid "battleResults/tooltip/title/offence"
+msgstr "Выкананне задач"
+
+msgid "buyBundleConfirmationDialog/composition"
+msgstr "Склад набору"
+
+msgid "buyBundleConfirmationDialog/cost"
+msgstr "Кошт куплі:"
+
+msgid "buyBundleConfirmationDialog/present"
+msgstr "Падарунак"
+
+msgid "buyBundleConfirmationDialog/title/master"
+msgstr "Купіць «Набор майстра»?"
+
+msgid "buyBundleConfirmationDialog/title/newbie"
+msgstr "Купіць загады «Больш ачкоў» x10 (%(number)s шт.)?"
+
+msgid "buyBundleConfirmationDialog/title/specialist"
+msgstr "Купіць «Набор адмыслоўца»?"
+
+msgid "coinExchangeWidget/exchangeBtn"
+msgstr "Абмяняць"
+
+msgid "divisionConfirmUpgrade/buyButton"
+msgstr "Купіць"
+
+msgid "divisionConfirmUpgrade/cancelButton"
+msgstr "Скасаваць"
+
+msgid "divisionConfirmUpgrade/description"
+msgstr ""
+"Гэта маёмасць дапаможа палепшыць падраздзяленне «%(subDivisionName)s» да %(firstHighlightText)s, атрымаць\n"
+"%(secondHighlightText)s і хутчэй %(thirdHighlightText)s."
+
+msgid "divisionConfirmUpgrade/errorText"
+msgstr "Купля часова недаступная"
+
+msgid "divisionConfirmUpgrade/firstHighlightText"
+msgstr "максімальнага ўзроўню"
+
+msgid "divisionConfirmUpgrade/mainText"
+msgstr "Павысіць узровень падраздзялення да ІІІ узроўню?"
+
+msgid "divisionConfirmUpgrade/price"
+msgstr "Кошт куплі:"
+
+msgid "divisionConfirmUpgrade/rewardsText"
+msgstr "У падарунак"
+
+msgid "divisionConfirmUpgrade/secondHighlightText"
+msgstr "дадатковыя ўзнагароды"
+
+msgid "divisionConfirmUpgrade/thirdHighlightText"
+msgstr "заслужыць ачкі прагрэсіі рэжыму"
+
+msgid "divisionPanel/navigate"
+msgstr "ПЕРАЙСЦІ ДА ПАДРАЗДЗЯЛЕННЯЎ"
+
+msgid "divisionUpgradeRewards/buttonText"
+msgstr "Так!"
+
+msgid "divisionUpgradeRewards/subtitleLeft"
+msgstr "ПАДЗЕЯ «ЧАС ГЕРОЯЎ»"
+
+msgid "divisionUpgradeRewards/subtitleRight"
+msgstr "РЭЖЫМ «%(frontName)s»"
+
+msgid "divisionUpgradeRewards/title"
+msgstr "УЗРОВЕНЬ ПАДРАЗДЗЯЛЕННЯ %(level)s"
+
+msgid "divisionUpgradeRewards/unlockText"
+msgstr "Доступ разблакаваны"
+
+msgid "divisionUpgradeRewards/vehiclesUnlock"
+msgstr ""
+"Новая тэхніка\n"
+"ў падраздзяленні"
+
+msgid "division_1/name"
+msgstr "Рота цяжкіх танкаў"
+
+msgid "division_1/subdivisionTooltip/description"
+msgstr ""
+"Цяжкія танкі — асноўны ўдарны кулак войска, неабходны для праломлівання "
+"напрамкаў або для зацяжных пазіцыйных баёў. Выдатнае браніраванне і годная "
+"агнявая моц дазваляюць праявіць сябе на блізкай дыстанцыі."
+
+msgid "division_2/name"
+msgstr "Рота сярэдніх танкаў"
+
+msgid "division_2/subdivisionTooltip/description"
+msgstr ""
+"Сярэднія танка — мабільныя, умерана браніраваныя машыны, якія выдатна "
+"надаюцца для манеўранага бою і фланговых абыходаў. Эфектыўна праяўляюць сябе"
+" ў групе або ў ролі падтрымкі больш моцных саюзнікаў."
+
+msgid "division_3/name"
+msgstr "Рота самаходчыкаў"
+
+msgid "division_3/subdivisionTooltip/description"
+msgstr ""
+"Самаходкі — дальнабойныя машыны з нізкім профілем, здольныя ўтрымліваць "
+"праціўніка на дастатковай адлегласці дзякуючы выдатнаму агнявому патэнцыялу."
+" Эфектыўныя на другой лініі ў сувязі з адносна нізка абароненасцю."
+
+msgid "division_4/name"
+msgstr "Рота цяжкіх танкаў"
+
+msgid "division_4/subdivisionTooltip/description"
+msgstr ""
+"Цяжкія танкі — асноўны ўдарны кулак войска, неабходны для праломлівання "
+"напрамкаў або для зацяжных пазіцыйных баёў. Выдатнае браніраванне і годная "
+"агнявая моц дазваляюць праявіць сябе на блізкай дыстанцыі."
+
+msgid "division_5/name"
+msgstr "Рота сярэдніх танкаў"
+
+msgid "division_5/subdivisionTooltip/description"
+msgstr ""
+"Сярэднія танка — мабільныя, умерана браніраваныя машыны, якія выдатна "
+"надаюцца для манеўранага бою і фланговых абыходаў. Эфектыўна праяўляюць сябе"
+" ў групе або ў ролі падтрымкі больш моцных саюзнікаў."
+
+msgid "division_6/name"
+msgstr "Рота самаходчыкаў"
+
+msgid "division_6/subdivisionTooltip/description"
+msgstr ""
+"Самаходкі — дальнабойныя машыны з нізкім профілем, здольныя ўтрымліваць "
+"праціўніка на дастатковай адлегласці дзякуючы выдатнаму агнявому патэнцыялу."
+" Эфектыўныя на другой лініі ў сувязі з адносна нізка абароненасцю."
+
+msgid "division_capitalAll_1/name"
+msgstr "РОТА ЦЯЖКІХ ТАНКАЎ"
+
+msgid "division_capitalAll_2/name"
+msgstr "РОТА СЯРЭДНІХ ТАНКАЎ"
+
+msgid "division_capitalAll_3/name"
+msgstr "РОТА САМАХОДЧЫКАЎ"
+
+msgid "division_capitalAll_4/name"
+msgstr "РОТА ЦЯЖКІХ ТАНКАЎ"
+
+msgid "division_capitalAll_5/name"
+msgstr "РОТА СЯРЭДНІХ ТАНКАЎ"
+
+msgid "division_capitalAll_6/name"
+msgstr "РОТА САМАХОДЧЫКАЎ"
+
+msgid "division_capital_1/name"
+msgstr "Рота цяжкіх танкаў"
+
+msgid "division_capital_2/name"
+msgstr "Рота сярэдніх танкаў"
+
+msgid "division_capital_3/name"
+msgstr "Рота самаходчыкаў"
+
+msgid "division_capital_4/name"
+msgstr "Рота цяжкіх танкаў"
+
+msgid "division_capital_5/name"
+msgstr "Рота сярэдніх танкаў"
+
+msgid "division_capital_6/name"
+msgstr "Рота самаходчыкаў"
+
+msgid "entryPointTooltip/defence/description"
+msgstr "Абараняйце хаўрусную артылерыю, не падпускаючы да яе сілы праціўніка."
+
+msgid "entryPointTooltip/defence/title"
+msgstr "Абарона"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"Падзея, якая складаецца з двух гульнявых рэжымаў, якія адкрываюцца па чарзе "
+"з тыднёвым інтэрвалам. У рэжыме каманда гульцоў змагаецца з праціўнікам пад "
+"кіраваннем штучнага інтэлекту. Кожная перамога ў рэжыме набліжае атрыманне "
+"фінальнай узнагароды."
+
+msgid "entryPointTooltip/length"
+msgstr ""
+"Падзея працягнецца: {brown_Open}з %(startDate)s па %(endDate)s{brown_Close}."
+
+msgid "entryPointTooltip/offence/description"
+msgstr ""
+"Прасоўвайцеся па мапе, выбіваючы праціўніка з захопленай ім тэрыторыі."
+
+msgid "entryPointTooltip/offence/title"
+msgstr "Прарыў"
+
+msgid "entryPointTooltip/performance/description/highRisk"
+msgstr ""
+"Прадукцыйнасці вашага камп'ютара недастаткова для гэтага рэжыму. Будуць "
+"назірацца праблемы з графікай і перамяшчэннем тэхнікі, магчымае таксама "
+"аварыйнае закрыццё кліента гульні."
+
+msgid "entryPointTooltip/performance/description/mediumRisk"
+msgstr ""
+"Рэжым патрабавальны да камп'ютара.\n"
+"Мапа можа доўга загружацца, магчымыя праблемы з графікай і перамяшчэннем тэхнікі ў баі. У выпадку недастатковай прадукцыйнасці паспрабуйце знізіць налады графікі."
+
+msgid "fairPlayWarningWindow/hb_afk/body"
+msgstr ""
+"Паважаны гулец, вашы дзеянні шкодзяць поспеху ўсёй аперацыі ў рэжыме {whiteSpanish_open}«Час герояў»{whiteSpanish_close}.\n"
+"Гэта абсалютна недапушчальна. Пры паўторным парушэнні вам абмяжуюць доступ да ўдзелу ў гэтай падзеі."
+
+msgid "fairPlayWarningWindow/hb_afk/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWarningWindow/hb_afk/header"
+msgstr "Недапушчальныя падзіны"
+
+msgid "fairPlayWarningWindow/hb_afk/reason"
+msgstr ""
+"%(icon)s{red_Open}Папярэджанне! Прычыны: бяздзейнасць у баі.{red_Close}"
+
+msgid "fairPlayWarningWindow/hb_deserter/body"
+msgstr ""
+"Паважаны гулец, вашы дзеянні шкодзяць поспеху ўсёй аперацыі ў рэжыме {whiteSpanish_Open}«Час герояў»{whiteSpanish_Close}.\n"
+"Гэта абсалютна недапушчальна. Пры паўторным парушэнні вам абмяжуюць доступ да ўдзелу ў гэтай падзеі."
+
+msgid "fairPlayWarningWindow/hb_deserter/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWarningWindow/hb_deserter/header"
+msgstr "Недапушчальныя падзіны"
+
+msgid "fairPlayWarningWindow/hb_deserter/reason"
+msgstr "%(icon)s{red_Open}Папярэджанне! Прычына: дэзерцірства.{red_Close}"
+
+msgid "fairPlayWindow/ban/hb_afk/body"
+msgstr ""
+"Паважаны гулец, за сістэматычны сабатаж у рэжыме {whiteSpanish_open}«Час "
+"герояў»{whiteSpanish_close} вам забаронена ўдзельнічаць у баях падзеі да "
+"{brown_Open}%(date)s{brown_Close}. Блакіроўка будзе знята аўтаматычна."
+
+msgid "fairPlayWindow/ban/hb_afk/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWindow/ban/hb_afk/header"
+msgstr "Адхіленне"
+
+msgid "fairPlayWindow/ban/hb_afk/reason"
+msgstr "%(icon)s{red_Open}Прычына: бяздзейнасць у баі.{red_Close}"
+
+msgid "fairPlayWindow/ban/hb_deserter/body"
+msgstr ""
+"Паважаны гулец, за сістэматычны сабатаж у рэжыме {whiteSpanish_open}«Час "
+"герояў»{whiteSpanish_close} вам забаронена ўдзельнічаць у баях падзеі да "
+"{brown_Open}%(date)s{brown_Close}. Блакіроўка будзе знята аўтаматычна."
+
+msgid "fairPlayWindow/ban/hb_deserter/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWindow/ban/hb_deserter/header"
+msgstr "Адхіленне"
+
+msgid "fairPlayWindow/ban/hb_deserter/reason"
+msgstr "%(icon)s{red_Open}Прычына: дэзерцірства{red_Close}"
+
+msgid "fairPlayWindow/unban/body"
+msgstr ""
+"Паважаны гулец, ваша часавае блакаванне знята. Вы можаце працягнуць удзел у "
+"рэжыме {whiteSpanish_open}«Час герояў».{whiteSpanish_close} Памятайце аб "
+"недапушчальных паводзінах і пакаранні за парушэнні."
+
+msgid "fairPlayWindow/unban/button"
+msgstr "Азнаёміўся"
+
+msgid "fairPlayWindow/unban/header"
+msgstr "Блакіроўка знята"
+
+msgid "front/name/capital/defence"
+msgstr "Абарона"
+
+msgid "front/name/capital/offence"
+msgstr "Прарыў"
+
+msgid "front/name/capitalAll/defence"
+msgstr "АБАРОНА"
+
+msgid "front/name/capitalAll/offence"
+msgstr "ПРАРЫЎ"
+
+msgid "frontPanel/countDown"
+msgstr "Пачнецца праз: %(icon)s%(time)s"
+
+msgid "generalHbCoinTooltip/description"
+msgstr ""
+"Ачкі перамогі вы атрымліваеце ў баях падзеі {whiteSpanish_Open}«Час герояў»{whiteSpanish_Close}.\n"
+"Яны патрэбны для праходжання этапаў прагрэсіі падзеі."
+
+msgid "generalHbCoinTooltip/header"
+msgstr "Ачкі перамогі"
+
+msgid "generalHbCoinTooltip/info"
+msgstr "?empty?"
+
+msgid "generalHbCoinTooltip/subheader"
+msgstr "Як атрымаць больш ачкоў"
+
+msgid "hangar/buyOrders"
+msgstr "Купіць"
+
+msgid "hangar/closeBtn/name"
+msgstr "ПАКІНУЦЬ РЭЖЫМ"
+
+msgid "hangar/getOrders"
+msgstr "Атрымаць"
+
+msgid "hangar/infoBtn/body"
+msgstr "Падрабязная інфармацыя пра падзею «Час герояў»."
+
+msgid "hangar/infoBtn/name"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "hangar/itemCount"
+msgstr "%(count)s шт."
+
+msgid "hangar/leaveMode"
+msgstr "ВЫЙСЦІ З РЭЖЫМУ"
+
+msgid "hangar/orderPending"
+msgstr "Менш за %(time)s"
+
+msgid "hangar/ordersLabel"
+msgstr "Загады «Больш ачкоў» у наяўнасці"
+
+msgid "hangar/startBtn/banned/body"
+msgstr "Вы не можаце ўдзельнічаць у баях падзеі «Час герояў» да %(time)s."
+
+msgid "hangar/startBtn/banned/header"
+msgstr "Вы адхілены"
+
+msgid "hangar/startBtn/disabled/body"
+msgstr "Уступіць у бой часова немагчыма з тэхнічных прычын."
+
+msgid "hangar/startBtn/divisionNotReady/body"
+msgstr ""
+"Каб уступіць у бой, дачакайцеся, пакуль камандзір вернецца з папярэдняга "
+"бою."
+
+msgid "hangar/startBtn/notReady/body"
+msgstr "Каб уступіць у бой, дачакайцеся даступнасці выбранага рэжыму."
+
+msgid "hangar/startBtn/notReady/header"
+msgstr "Недаступна"
+
+msgid "hangar/startBtn/queueNotReady/body"
+msgstr "Вы ў чарзе на ўваход да бою."
+
+msgid "hangar/startBtn/squadNotReady/tooltipBody"
+msgstr "Каб уступіць у бой, выберыце падраздзяленне і пацвердзіце гатоўнасць."
+
+msgid "hangar/startBtn/vehicleNotInInventory/body"
+msgstr "Каб уступіць у бой на гэтай машыне, дайдзіце да 5-га этапу прагрэсіі."
+
+msgid "hangar/startBtn/vehicleNotInInventory/header"
+msgstr "Недаступна"
+
+msgid "hbCoinExchangeTooltip/description"
+msgstr "?empty?"
+
+msgid "hbCoinExchangeTooltip/header"
+msgstr "?empty?"
+
+msgid "hbCoinExchangeTooltip/info"
+msgstr "?empty?"
+
+msgid "hbCoinTooltip/defence/score"
+msgstr "Ачкоў абароны ў наяўнасці"
+
+msgid "hbCoinTooltip/defence/title"
+msgstr "Ачкі перамогі рэжыму «Абарона»"
+
+msgid "hbCoinTooltip/description"
+msgstr ""
+"Ачкі перамогі, якія вы атрымліваеце ў баях падзеі {whiteSpanish_Open}«Час "
+"герояў»{whiteSpanish_Close}."
+
+msgid "hbCoinTooltip/offence/score"
+msgstr "Ачкоў прарыву ў наяўнасці"
+
+msgid "hbCoinTooltip/offence/title"
+msgstr "Ачкі перамогі рэжыму «Прарыў»"
+
+msgid "hbCoinTooltip/orders/text"
+msgstr ""
+"%(orderIcon) {whiteSpanish_Open}Загады «Больш ачкоў»{whiteSpanish_Close}, "
+"даступныя ў падзеі «Час герояў», дазваляюць атрымліваць павялічаную "
+"колькасць %(coinIcon) ачкоў перамогі за бой у "
+"{whiteSpanish_Open}5{whiteSpanish_Close}, "
+"{whiteSpanish_Open}10{whiteSpanish_Close} і "
+"{whiteSpanish_Open}15{whiteSpanish_Close} разоў."
+
+msgid "hbCoinTooltip/orders/title"
+msgstr "Як атрымаць больш ачкоў:"
+
+msgid "hbCoinTooltip/subtitle"
+msgstr "Час герояў"
+
+msgid "hbCoinTooltip/suggestions/actions"
+msgstr ""
+"{whiteSpanish_Open}•   Падраздзяленні{whiteSpanish_Close}. Ачкі перамогі "
+"дапамагаюць хутчэй паляпшаць падраздзяленне, за якое вы гулялі. Чым вышэйшы "
+"ўзровень падраздзялення, тым больш ачкоў перамогі вы будзеце атрымліваць ва "
+"ўзнагароду."
+
+msgid "hbCoinTooltip/suggestions/defence/text"
+msgstr ""
+"{whiteSpanish_Open}•   Прагрэсія рэжыму{whiteSpanish_Close}. Гуляйце ў рэжым"
+" «Абарона» і выконвайце карысныя дзеянні для атрымання ачкоў гэтага рэжыму."
+
+msgid "hbCoinTooltip/suggestions/offence/text"
+msgstr ""
+"{whiteSpanish_Open}•   Прагрэсія рэжыму{whiteSpanish_Close}. Гуляйце ў рэжым"
+" «Прарыў» і выконвайце карысныя дзеянні для атрымання ачкоў гэтага рэжыму."
+
+msgid "hbCoinTooltip/suggestions/title"
+msgstr "Для чаго патрэбны ачкі перамогі:"
+
+msgid "hbMainDiscountTooltip/discount"
+msgstr "Ваша дзейная зніжка: %(value)s"
+
+msgid "hbMainDiscountTooltip/discountText/long"
+msgstr "сумаваць зніжку"
+
+msgid "hbMainDiscountTooltip/discountText/short"
+msgstr "зніжкай"
+
+msgid "hbMainDiscountTooltip/freeText"
+msgstr "бясплатна"
+
+msgid "hbMainDiscountTooltip/fullDiscount"
+msgstr "Узнагарода атрымана"
+
+msgid "hbMainDiscountTooltip/noDiscount"
+msgstr "Персанальная зніжка на танк адсутнічае"
+
+msgid "hbMainDiscountTooltip/percents"
+msgstr "%(value)s%"
+
+msgid "hbMainDiscountTooltip/progressText"
+msgstr ""
+"Не паспявайце прайсці прагрэсію і атрымаць усе купоны на зніжку? Машыну "
+"можна таксама набыць ў Краме. купіўшы яе з ужо наяўнай у вас %(discount)s."
+
+msgid "hbMainDiscountTooltip/tankLevel"
+msgstr "VII"
+
+msgid "hbMainDiscountTooltip/tankName"
+msgstr "ІС-3 Парадны"
+
+msgid "hbMainDiscountTooltip/tankText"
+msgstr ""
+"Бярыце ўдзел у падзеі «Час герояў» і здабывайце ачкі прагрэсіі абароны і "
+"прарыву, каб сумаваць зніжку і бясплатна атрымаць савецкі цяжкі танк "
+"%(level)s узроўню %(name)s."
+
+msgid "hbMainDiscountTooltip/title"
+msgstr "Зніжка на машыну"
+
+msgid "hbMetaView/division/button"
+msgstr "ПЕРАЙСЦІ"
+
+msgid "hbMetaView/division/details/abilities"
+msgstr "УМЕННІ ПАДРАЗДЗЯЛЕННЯ"
+
+msgid "hbMetaView/division/details/button"
+msgstr "КУПІЦЬ ІІІ УЗРОВЕНЬ"
+
+msgid "hbMetaView/division/details/experience"
+msgstr ""
+"Бягучы досвед падраздзялення: %(whiteReal_Open)s%(exp)s%(whiteReal_Close)s "
+"%(par_Open)s/ %(toExp)s%(par_Close)s%(icon)s"
+
+msgid "hbMetaView/division/details/experience_max"
+msgstr "%(icon)s Максімальны досвед падраздзялення"
+
+msgid "hbMetaView/division/details/experience_not_enough"
+msgstr "Для дасягнення %(level)s-га ўзроўню вам не стае яшчэ %(exp)s ачкоў"
+
+msgid "hbMetaView/division/details/level/tooltip/body/defence"
+msgstr ""
+"Каб павысіць узровень, гуляйце ў рэжыме «Абарона» за гэтае падраздзяленне "
+"або дакупіце ўзровень."
+
+msgid "hbMetaView/division/details/level/tooltip/body/offence"
+msgstr ""
+"Каб дакупіць узровень, гуляйце ў рэжыме «Прарыў» за гэта падраздзяленне або "
+"дакупіце ўзровень."
+
+msgid "hbMetaView/division/details/level/tooltip/header"
+msgstr "Узровень падраздзялення не дасягнуты"
+
+msgid "hbMetaView/division/details/vehicles"
+msgstr "ТЭХНІКА ПАДРАЗДЗЯЛЕННЯ"
+
+msgid "hbMetaView/division/division_1/descr"
+msgstr "Добрая браня і агнявая моц. Прыдатныя для праціскання напрамкаў."
+
+msgid "hbMetaView/division/division_1/full_descr"
+msgstr ""
+"Цяжкія танкі — асноўны ўдарны кулак войска, неабходны для праломлівання "
+"напрамкаў або для зацяжных пазіцыйных баёў. Выдатнае браніраванне і годная "
+"агнявая моц дазваляюць праявіць сябе на блізкай дыстанцыі."
+
+msgid "hbMetaView/division/division_2/descr"
+msgstr ""
+"Добрыя дынамічныя ТТХ. Прыдатныя для фланговых абыходаў і ўдараў у тыл."
+
+msgid "hbMetaView/division/division_2/full_descr"
+msgstr ""
+"Сярэднія танка — мабільныя, умерана браніраваныя машыны, якія выдатна "
+"надаюцца для манеўранага бою і фланговых абыходаў. Эфектыўна праяўляюць сябе"
+" ў групе або ў ролі падтрымкі больш моцных саюзнікаў."
+
+msgid "hbMetaView/division/division_3/descr"
+msgstr ""
+"Машыны з грознымі дальнабойнымі гарматамі. Прыдатныя для падтрымкі "
+"наступлення."
+
+msgid "hbMetaView/division/division_3/full_descr"
+msgstr ""
+"Самаходкі — дальнабойныя машыны з нізкім профілем, здольныя ўтрымліваць "
+"праціўніка на дастатковай адлегласці дзякуючы выдатнаму агнявому патэнцыялу."
+" Эфектыўныя на другой лініі ў сувязі з адносна нізка абароненасцю."
+
+msgid "hbMetaView/division/division_4/descr"
+msgstr "Добрая браня і агнявая моц. Прыдатныя для праціскання напрамкаў."
+
+msgid "hbMetaView/division/division_4/full_descr"
+msgstr ""
+"Цяжкія танкі — асноўны ўдарны кулак войска, неабходны для праломлівання "
+"напрамкаў або для зацяжных пазіцыйных баёў. Выдатнае браніраванне і годная "
+"агнявая моц дазваляюць праявіць сябе на блізкай дыстанцыі."
+
+msgid "hbMetaView/division/division_5/descr"
+msgstr ""
+"Добрыя дынамічныя ТТХ. Прыдатныя для фланговых абыходаў і ўдараў у тыл."
+
+msgid "hbMetaView/division/division_5/full_descr"
+msgstr ""
+"Сярэднія танка — мабільныя, умерана браніраваныя машыны, якія выдатна "
+"надаюцца для манеўранага бою і фланговых абыходаў. Эфектыўна праяўляюць сябе"
+" ў групе або ў ролі падтрымкі больш моцных саюзнікаў."
+
+msgid "hbMetaView/division/division_6/descr"
+msgstr ""
+"Машыны з грознымі дальнабойнымі гарматамі. Прыдатныя для падтрымкі "
+"наступлення."
+
+msgid "hbMetaView/division/division_6/full_descr"
+msgstr ""
+"Самаходкі — дальнабойныя машыны з нізкім профілем, здольныя ўтрымліваць "
+"праціўніка на дастатковай адлегласці дзякуючы выдатнаму агнявому патэнцыялу."
+" Эфектыўныя на другой лініі ў сувязі з адносна нізка абароненасцю."
+
+msgid "hbMetaView/division/footer"
+msgstr ""
+"Чым %(whiteSpanish_Open)sвышэйшы ўзровень "
+"падраздзяленняў%(whiteSpanish_Close)s, тым больш магутныя "
+"%(whiteSpanish_Open)sмашыны%(whiteSpanish_Close)s і "
+"%(whiteSpanish_Open)sздольнасці%(whiteSpanish_Close)s вам становяцца "
+"даступнымі. Здабываць %(icon)s "
+"%(whiteSpanish_Open)sдосвед%(whiteSpanish_Close)s можна, гуляючы на "
+"канкрэтным падраздзяленні ў рэжыме «Час герояў»."
+
+msgid "hbMetaView/division/title"
+msgstr "ПАДРАЗДЗЯЛЕННІ"
+
+msgid "hbMetaView/division/tooltip/body"
+msgstr ""
+"Злучэнні тэхнікі, даступныя для ўступлення ў бой рэжыму «%(frontName)s» "
+"падзеі «Час герояў»."
+
+msgid "hbMetaView/division/tooltip/title"
+msgstr "Падраздзяленні"
+
+msgid "hbMetaView/label/division"
+msgstr "Падраздзяленні"
+
+msgid "hbMetaView/label/order"
+msgstr "Загады"
+
+msgid "hbMetaView/label/progress"
+msgstr "Прагрэсія"
+
+msgid "hbMetaView/order/tooltip/body"
+msgstr ""
+"Асаблівыя загады падзеі «Час герояў», неабходныя для павялічанай колькасці "
+"ачкоў за бой."
+
+msgid "hbMetaView/order/tooltip/title"
+msgstr "Загады"
+
+msgid "hbMetaView/progress/tooltip/body"
+msgstr "Прагрэсія рэжыму «%(frontName)s» у падзеі «Час герояў»."
+
+msgid "hbMetaView/progress/tooltip/title"
+msgstr "Прагрэсія"
+
+msgid "interactiveObject/counter/1"
+msgstr "1 з 12"
+
+msgid "interactiveObject/counter/10"
+msgstr "10 з 12"
+
+msgid "interactiveObject/counter/11"
+msgstr "11 з 12"
+
+msgid "interactiveObject/counter/12"
+msgstr "12 з 12"
+
+msgid "interactiveObject/counter/13"
+msgstr "1 з 4"
+
+msgid "interactiveObject/counter/14"
+msgstr "2 з 4"
+
+msgid "interactiveObject/counter/15"
+msgstr "3 з 4"
+
+msgid "interactiveObject/counter/16"
+msgstr "4 з 4"
+
+msgid "interactiveObject/counter/2"
+msgstr "2 з 12"
+
+msgid "interactiveObject/counter/3"
+msgstr "3 з 12"
+
+msgid "interactiveObject/counter/4"
+msgstr "4 з 12"
+
+msgid "interactiveObject/counter/5"
+msgstr "5 з 12"
+
+msgid "interactiveObject/counter/6"
+msgstr "6 з 12"
+
+msgid "interactiveObject/counter/7"
+msgstr "7 з 12"
+
+msgid "interactiveObject/counter/8"
+msgstr "8 з 12"
+
+msgid "interactiveObject/counter/9"
+msgstr "9 з 12"
+
+msgid "interactiveObject/description/1"
+msgstr ""
+"«Толькі ўзяў баец трохрадку,\n"
+"Бачна з ходу — гарманіст.\n"
+"Для пачатку, для парадку\n"
+"Кінуў пальцы зверху ўніз...»\n"
+"\n"
+"Ваенны карэспандэнт Твардоўскі не з чутак ведаў, што значыць для франтавіка гэты сапраўды народны інструмент. У кожнай стралковай роце або артылерыйскай батарэі, у кожным авіяпалку, экіпажы танкістаў і самаходчыкаў, маракоў і падводнікаў быў свой «Цёркін»-гарманіст. У хвілі зацішша ён забаўляў аднапалчан і заліхвацкімі прыпеўкамі, і лірычнымі песнямі пра родны куток. У сведкаў Перамогі ёсць агульны ўспамін — пералівы гармоніка. У той дзень спявала і скакала пад рускі гармонік уся краіна, уся армія, уся Еўропа.\n"
+"\n"
+"У гады Вялікай Айчыннай вайны гармонікі спецыяльна дасылаліся на фронт з мэтай узняцця баявога духу байцоў. Толькі ў канцы лета 1941 года на фронт было адпраўлена 12 000 гэтых музычных інструментаў. Увосень таго ж года — ужо больш за 60 000. У 1942 годзе на хадайніцтва Палітупраўлення Савецкай Арміі наркамат мясцовай прамысловасці РСФСР абавязаў Шуйскую і Тульскую фабрыкі перабудаваць вытворчасць на выпуск гармонікаў і баянаў."
+
+msgid "interactiveObject/description/10"
+msgstr ""
+"Другая сусветная — апошняя вайна кавалерыі. Савецкія конныя часткі паспяхова"
+" ўдзельнічалі ва ўсіх вялікіх наступах 1942–1944 гадоў. Частку кавалерыстаў "
+"складалі байцы з Дона і Кубані — самае сапраўднае савецкае казацтва. Два "
+"гвардзейскія кавалерыйскія карпусы ў гады Вялікай Айчыннай вайны афіцыйна "
+"называліся «казачымі». У 1945 годзе 5-ы гвардзейскі Данскі казачы корпус з "
+"баямі дайшоў да Вены, а 4-ы гвардзейскі Кубанскі казачы корпус вызваляў "
+"Прагу. Коні ўдзельнічалі ў Вялікай Айчыннай вайне не толькі ў кавалерыі — да"
+" 22 чэрвеня 1941 года колькасць коней у РСЧА складала 526 тысяч, але ўжо да "
+"1 верасня ў арміі было больш за 1 300 000 гэтых чатырохногіх капытных. У "
+"немцаў вайсковых коней было яшчэ больш. Усяго ж за гады вайны немцы "
+"эксплуатавалі на Усходнім фронце больш за 3 мільёны гэтых жывёл. І ў "
+"Савецкай Арміі, і ў вермахце коней выкарыстоўвалі і як транспартную сілу."
+
+msgid "interactiveObject/description/11"
+msgstr ""
+"Гарады ваеннага часу... Вуліцы перагароджаны барыкадамі, зрытыя траншэямі. Дамы расфарбаваны плямамі, каб з паветра іх можна было прыняць за дрэвы. У парках стаяць зенітныя гарматы, нацэленыя ў неба. Вітрыны забіты дошкамі і засыпаны пяском. Вокны заклеены белымі крыжамі папяровых палос. Цямнейшыя і даўжэйшыя ночы, неба абсыпана мірыядамі зорак, непраглядную цемру восеньскай халоднай ночы час ад часу расцінае доўгі нож пражэктара, які шукае самалёты праціўніка.\n"
+"\n"
+"Накрыж заклееныя палоскамі паперы вокны будынкаў – перасцярога, якая ахоўвае ад разлёту аскепкаў шкла. Такія вокны сталі адным з сімвалаў вайны. Характэрна, што такая няхітрая тэхніка бяспекі дагэтуль ва ўжытку: у аўта- і мотаспорце, асабліва ў ралійным, крыжамі заляпляюць фары транспартных сродкаў з той жа прычыне — засцерагчы гледачоў ад разлёту аскепкаў пры магчымай аварыі."
+
+msgid "interactiveObject/description/12"
+msgstr ""
+"Савецкі 7,62-мм пісталет-кулямёт узору 1941 года сістэмы Шпагіна (ППШ, "
+"«Папаша») быў прыняты на ўзбраенне 21 снежня 1940 года, нароўні з ППС-43 быў"
+" асноўным пісталетам-кулямётам Чырвонай Арміі ў Вялікай Айчыннай вайне і "
+"своеасаблівым сімвалам савецкага салдата таго часу. Сакрэт поспеху ППШ-41 — "
+"прастата, высокая хуткастрэльнасць, шчыльнасць агню і дакладнасць. "
+"Канструктару Георгію Шпагіну ўдалося стварыць максімальна спрошчаную і "
+"танную схему: для ППШ патрабавалася ўсяго 87 дэталяў, большасць якіх "
+"штампавалася, а на зборку патрабавалася ўсяго 5,6 станка-гадзіны. Акрамя "
+"таго, для ППШ не патрабавалася ствараць асобны патрон. Дыскавы магазін "
+"змяшчаў 71 патрон калібру 7,62х25 мм ад пісталета ТТ. Ражковы магазін "
+"змяшчаў удвая менш — 35 патронаў, але яго было прасцей рыхтаваць. "
+"Хуткастрэльнасць ППШ — 900 стрэлаў за хвіліну, а яго нямецкі канкурэнт MP-40"
+" выконваў каля 500 стрэлаў за хвіліну. Немцы не цураліся выкарыстоўваць "
+"трафейныя ППШ і нават перараблялі іх пад свой пісталетны патрон 9х19 мм "
+"«Парабелум». У іх зброя лічылася пад індэксам Maschinenpistole 717(r)."
+
+msgid "interactiveObject/description/13"
+msgstr ""
+"Самы масавы самалёт Другой сусветнай вайны. Для свайго часу Іл-2 валодаў "
+"вельмі салідным узбраеннем, якое дазваляла знішчаць практычна ўсе тыпы "
+"цэляў. За высокія баявыя якасці немцы празвалі яго «чорнай смерцю», «чумой»,"
+" «лятаючым танкам» і «бетонным самалётам». Іл-2 паклаў пачатак новаму роду "
+"франтавой авіяцыі, стаўшы дасягненнем авіяцыйнай навукі свайго часу, "
+"прадэманстраваў высокую эфектыўнасць у барацьбе з наземнымі і надводнымі "
+"аб'ектамі. Асноўнымі цэлямі Іл-2 станавіліся транспартныя сродкі, масты і "
+"пераправы праціўніка, марская артылерыя і караблі, а таксама, вядома, "
+"бранятэхніка. Налёты эскадрылляў Іл-2 сталі сур'ёзнай пагрозай мабільным "
+"бранятанкавым падраздзяленням вермахта. Вялікае значэнне меў маральны фактар"
+" — са з'яўленнем звёнаў Іл-2 над галавой пехацінцы Чырвонай Арміі адчувалі "
+"надзейную падтрымку авіяцыі, што станоўча адбівалася на баявым духу."
+
+msgid "interactiveObject/description/14"
+msgstr ""
+"Messerschmitt Bf 109 (або Me-109) — аднаматорны поршневы знішчальнік, які "
+"стаяў на ўзбраенні Люфтвафэ і ВПС розных краін амаль 30 гадоў. Мадыфікацыя Е"
+" («Эміль») стала першай сапраўды масавай версіяй Bf 109. На моманту свайго "
+"з'яўлення ў войсках ён, безумоўна, быў адным з найлепшых знішчальнікаў у "
+"свеце. Гэты самалёт мог нароўні змагацца з брытанскім «Спітфайрам» першай "
+"мадыфікацыі, які англічане пазіцыянавалі як самалёт без канкурэнтаў у "
+"паветры. Ва ўмовах вайны, калі ваенная тэхніка (у тым ліку і самалёты) "
+"пачала развівацца імклівымі тэмпамі, перавагі Bf 109E былі дастаткова хутка "
+"страчаны. На ўзбраенне нямецкай арміі пачаў паступаць Bf 109F («Фрыдрых»). "
+"Да пачатку Вялікай Айчыннай вайны Bf 109E ужо пакрысе здымалі з узбраення, "
+"замяняючы на ​​больш сучасную мадыфікацыю F, аднак у 1941 году «Эмілі» ўсё ж"
+" ваявалі, у тым ліку і ў небе Савецкага Саюза."
+
+msgid "interactiveObject/description/15"
+msgstr ""
+"Нямецкі танк Pz.Kpfw. IV знаходзіўся ў працэсе няспыннай мадыфікацыі. У СССР танк быў вядомы пад назвай Т-4, пад якім і лічыўся ва ўсіх дакументах — усё праз адсутнасць лацінскіх знакаў на друкаваных машынках і, як вынік, — немагчымасць выкарыстоўваць заводскае найменне танка.\n"
+"\n"
+"Тут прадстаўлена мадыфікацыя Ausf.D, якая зрабіла гэты танк цалкам баявым, у адрозненне ад папярэдніх мадыфікацый A/B/C, якія былі вучэбна-баявыя. Версія Ausf.D з'явілася ў войсках у канцы 1939 года. Гэты танк паспеў паваяваць амаль на ўсіх франтах — у Афрыцы, у Грэцыі, на Усходнім фронце. Усяго было выпушчана 229 машын гэтай мадыфікацыі, якая серыйна выпускалася да мая 1940 года і знаходзілася ў эксплуатацыі да 1944 года. У асноўным танкі гэтай мадыфікацыі выкарыстоўваліся ў Францыі, у Паўночнай Афрыцы, на Балканах і ў СССР. "
+
+msgid "interactiveObject/description/16"
+msgstr ""
+"Нямецкі сярэдні праектны танк пачатку 1940-х гадоў. Ідэя праекта новага "
+"танка кампаніі Поршэ нарадзілася яшчэ ў 1939 годзе, калі была распрацавана "
+"сама новая канцэпцыя. Пасля шматлікіх узгадненняў 5 сакавіка 1941 года яна "
+"стала чарцяжом, а ў ліпені 1941 года быў выраблены корпус з мяккай сталі. "
+"Корпус і шасі прайшлі хадавыя выпрабаванні, у тым ліку з навясным "
+"абсталяваннем для рыцця траншэй. Быў зроблены толькі адзін драўляны макет "
+"вежы і драўляны макет корпуса без даху. У 1942 году праект закрылі, "
+"пераключыўшыся на VK 45.01 (P) – прататып будучыні «Tiger Porsche»."
+
+msgid "interactiveObject/description/2"
+msgstr ""
+"Медсанбат — апошняе і, напэўна, самае галоўнае звяно першаснай медыцынскай "
+"базы Чырвонай арміі. Медсанбаты не выпадкова называлі «галоўнай "
+"хірургічнай»: менавіта тут параненыя атрымлівалі кваліфікаваную хірургічную "
+"дапамогу. Паводле пасляваенных абагульненых звестак на дывізіённых "
+"медпунктах аперавалі амаль тры чвэрці ўсіх параненых. Але медсанбат не быў і"
+" не мог быць сапраўдным шпіталем: у яго задачы не ўваходзіла лячэнне "
+"параненых — толькі кваліфікаваная дапамога ім і наступнае сартаванне, ад "
+"якога залежала, у якім шпіталі байцы ўрэшце апынуцца."
+
+msgid "interactiveObject/description/3"
+msgstr ""
+"Да пачатку Вялікай Айчыннай вайны лыжны спорт у краіне быў надзвычай "
+"папулярны. Ён уваходзіў у сістэму дапрызыўнай падрыхтоўкі моладзі. У рамках "
+"фізкультурна-абароннай працы лыжны спорт паводле значнасці знаходзіўся на "
+"адным узроўні з аўтамотападрыхтоўкай, штыкавым боем, гімнастыкай і "
+"гранатамятанне. Тыповы для 1930-х — 1940-х лыжны рыштунак уяўляў сабой "
+"простыя драўляныя лыжы, пакрытыя лакам, слізготная паверхня якіх смалілася "
+"для зніжэння гіграскапічнасці. Таксама былі раменныя мацаванні з пятачным "
+"рэменем, бамбукавыя лыжныя палкі, аснашчаныя драўлянымі кольцамі са "
+"скуранымі або брызентавымі дыяганальнымі перапляценнямі. Мацаванні савецкіх "
+"вайсковых лыж былі паўжорсткім. Яны складаліся з насковай клямкі, вырабленай"
+" з ацынкаванай сталі, і брызентавых насковага і пятачнага рамянёў з замком."
+
+msgid "interactiveObject/description/4"
+msgstr ""
+"Сабакі змагаліся поплеч з чалавекам, вывозілі параненых, кідаліся пад танкі і падрывалі цягнікі праціўніка. Яны галадалі, мерзлі і моклі ў акопах разам з нашымі воінамі, дапамагаючы ім захоўваць душэўныя сілы і здаровы розум у тыя жорсткія дні выпрабаванняў. Усяго на франтах Вялікай Айчыннай вайны ў 168 атрадах ваявала за перамогу каля 68 000 сабак.\n"
+"\n"
+"Санітар Мухтар, як і іншыя сабакі лекарскай вайсковай службы, абавязаны быў падносіць да параненых сумкі з перавязачнымі пакетамі, але праславіўся тым, што вынес з палёў бітвы больш за 400 траўмаваных салдат. Сярод іх апынуўся і праваднік Мухтара — яфрэйтар Зорын, які падчас бою атрымаў кантузію ад бомбы, што разарвалася побач.\n"
+"\n"
+"Сабака вынес на сабе параненага гаспадара і гэтак выратаваў яму жыццё."
+
+msgid "interactiveObject/description/5"
+msgstr ""
+"Адной з разнавіднасцяў ездавых сабак былі сабакі санітарнай службы, якіх салдаты заслужана клікалі махнатымі анёламі. Санітарны сабака Мухтар, як і іншыя сабакі лекарскай вайсковай службы, абавязаны быў падносіць да параненых сумкі з перавязачнымі пакетамі, але праславіўся тым, што вынес з палёў бітвы больш за 400 траўмаваных салдат. Сярод іх апынуўся і праваднік Мухтара — яфрэйтар Зорын, які падчас бою атрымаў кантузію ад бомбы, што разарвалася побач.\n"
+"\n"
+"Сабака вынес на сабе параненага гаспадара і гэтак выратаваў яму жыццё."
+
+msgid "interactiveObject/description/6"
+msgstr ""
+"Напэўна, слова «вайна» — самае страшнае і разбуральнае слова на свеце. А кошка, магчыма, самая ласкавая і ўтульная жывёла ў свеце. Але гісторыя паказала, як часта, на жаль, гэтыя два словы апынаюцца побач. Калі бяда прыходзіць у свет людзей, яна воляй-няволяй тычыцца і катоў. І аказваецца, гэтыя гадаванцы не толькі не з'яўляюцца цяжарам у часіну страшных выпрабаванняў, але і могуць дапамагаць людзям. Псіхатэрапеўтычны эфект прысутнасці кошкі заўважалі ў шматлікіх арміях свету. Добрую службу можа саслужыць і звышадчувальнасць гэтых жывёл, якая дазваляе прадказваць авіяналёт нашмат раней, чым гэта магчыма з дапамогай СПА. Падчас блакады Ленінграда кошкі прыносілі сваю здабычу гаспадарам, сагравалі сваімі маленькімі цельцамі дзяцей, абаранялі харчовыя склады ад пацукоў.\n"
+"\n"
+"Вядома ж, кошкі ў Вялікую Айчынную вайну не бралі такога актыўнага ўдзелу, як сабакі. Але і яны таксама, несумненна, зрабілі свой унёсак у справу Перамогі. Хаця б тым, што дапамагалі людзям у яе верыць."
+
+msgid "interactiveObject/description/7"
+msgstr ""
+"Універсальныя кантэйнеры розных формаў і памераў, у якіх на фронт прыходзіла ўвогуле ўсё, што заўгодна: боепрыпасы, харчаванне, рыштунак і нават пошта. Немалую каштоўнасць (акрамя змесціва) уяўляла і сама тара. Акрамя выкарыстання па прамым прызначэнні, скрыні разбіралі. Струганыя дошкі маглі пайсці на шырокі спектр мэт — ад будаўніцтва ўмацаванняў і рамонту драўляных канструкцый да паліва для печак і вогнішчаў.\n"
+"\n"
+"У падобных скрынях на фронт ішлі грузы ў межах праграмы ленд-лізу. Стралковае ўзбраенне пастаўлялася слаба, некаторыя ўзоры былі перададзены ў СССР у адзінкавым экзэмпляры (напрыклад, вінтоўка M1 Garand) для вывучэння мясцовымі канструктарскімі бюро, аднак былі і буйныя пастаўкі: так Чырвоная Армія атрымала амаль 138 тысяч пісталетаў-кулямётаў «Томпсан» і 13 тысяч пісталетаў «Кольт М1911», 3 тысячы гранатамётаў «Базука» і г.д. Таксама жаданым грузам на перадавой былі амерыканскія кансервы і медыкаменты. "
+
+msgid "interactiveObject/description/8"
+msgstr ""
+"Створаны ў 1883 годзе ў Брытаніі кулямёт «Максім» —адзін з самых папулярных і масавых у свеце. Без яго не абыходзілася ні адно буйнае ўзброенае сутыкненне. Шмат у чым з'яўленне «Максіма» вызначыла і змена тактыкі вайны – яна ператварылася ў пазіцыйную. Кулямёты канструкцыі Хайрэма Максіма ўжываліся падчас Першай сусветнай і Грамадзянскай войнаў, іх выкарыстоўвалі ў якасці станковых кулямётаў, усталёўвалі на бронеаўтамабілі і бронецягнікі. Кулямёт дажыў і да Другой сусветнай вайны. Канструкцыя «Максіма» маральна састарэла ўжо да канца 1930-х гадоў, але кулямёт працягваў выпускацца аж да 1945, і да завяршэння вытворчасці ён заставаўся асноўным станковым кулямётам РСЧА. Чаргой з «Максіма» сустрэлі праціўніка абаронцы Брэсцкай крэпасці, а затым яго выкарыстоўвалі пры шматлікіх абарончых аперацыях – з яго стралялі абаронцы і Масквы, і Сталінграда.\n"
+"\n"
+"Апошні факт выкарыстання кулямёта Савецкай арміяй зафіксаваны ў 1969 годзе."
+
+msgid "interactiveObject/description/9"
+msgstr ""
+"Чорны рупар-рэпрадуктар — адзін з сімвалаў Вялікай Айчыннай вайны. У ваенныя гады рэпрадуктары станавілася сродкам масавай інфармацыі: каля іх збіраліся людзі, каб даведацца апошнія весткі з фронту. Нярэдка рэпрадуктар станавіўся адзіным акенцам у свет: радыё прыносіла людзям весткі пра трагедыі і поспехі. На фатаграфіях тых гадоў бачна трывога на тварах людзей, якія збіраюцца ў гучнагаварыцеляў, калі праціўнік наступаў, і сапраўднае шчасце, калі Юрый Левітан абвяшчаў пра франтавыя перамогі і вызваленне чарговага горада.\n"
+"\n"
+" У ваенныя гады правадное вяшчанне стала паўсюдным. Рэпрадуктары былі адчувальнымі, крышку бразгаталі, але ў цэлым гэта была вельмі ўдалая рэч. Корпус рупара вырабляўся з гнутай фанеры, унутр змяшчаўся дынамік РД-10 або РД-100, падобныя паводле канструкцыі, але розныя паводле памераў."
+
+msgid "interactiveObject/header/1"
+msgstr "Гармонік"
+
+msgid "interactiveObject/header/10"
+msgstr "Коні"
+
+msgid "interactiveObject/header/11"
+msgstr "Заклееныя вокны"
+
+msgid "interactiveObject/header/12"
+msgstr "ППШ"
+
+msgid "interactiveObject/header/13"
+msgstr "ІЛ-2"
+
+msgid "interactiveObject/header/14"
+msgstr "BF 109E"
+
+msgid "interactiveObject/header/15"
+msgstr "Pz.IV D"
+
+msgid "interactiveObject/header/16"
+msgstr "VK 30.01 (P)"
+
+msgid "interactiveObject/header/2"
+msgstr "Медсанбат"
+
+msgid "interactiveObject/header/3"
+msgstr "Лыжы"
+
+msgid "interactiveObject/header/4"
+msgstr "Сабакі на фронце"
+
+msgid "interactiveObject/header/5"
+msgstr "Санітарныя сабакі"
+
+msgid "interactiveObject/header/6"
+msgstr "Кошкі"
+
+msgid "interactiveObject/header/7"
+msgstr "Скрынкі"
+
+msgid "interactiveObject/header/8"
+msgstr "Кулямёт"
+
+msgid "interactiveObject/header/9"
+msgstr "Рупар"
+
+msgid "mainReward/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "mainReward/header"
+msgstr "ГАЛОЎНАЯ ЎЗНАГАРОДА АТРЫМАНА!"
+
+msgid "mainReward/watchInHangar"
+msgstr "Паказаць у Гаражы"
+
+msgid "mainRewardTooltip/body"
+msgstr "?empty?"
+
+msgid "mainRewardTooltip/disc"
+msgstr "?empty?"
+
+msgid "mainRewardTooltip/footer"
+msgstr ""
+"%(infoIcon)падзея працягнецца: {brown_Open}з %(dateStart)s па "
+"%(dateEnd)s{brown_Close}."
+
+msgid "mainRewardTooltip/header"
+msgstr "Галоўная ўзнагарода падзеі «Час герояў»"
+
+msgid "mainRewardWidget/rewardInfo"
+msgstr "Узнагарода за абедзве прагрэсіі"
+
+msgid "mainRewardWidget/rewards/currentStage/title"
+msgstr "Бягучы этап:"
+
+msgid "mainRewardWidget/rewards/currentStage/value"
+msgstr ""
+"%(whiteSpanish_Open)s%(current_level)s%(whiteSpanish_Close)s %(par_Open)s/ "
+"%(max_level)s%(par_Close)s"
+
+msgid "mainRewardWidget/rewards/defence/title"
+msgstr "АБАРОНА"
+
+msgid "mainRewardWidget/rewards/notAvailable"
+msgstr "Пачнецца праз:"
+
+msgid "mainRewardWidget/rewards/offence/title"
+msgstr "ПРАРЫЎ"
+
+msgid "mainRewardWidget/rewards/stageCompleted"
+msgstr "Прагрэсія завершана"
+
+msgid "mainRewardWidget/stagesCompleted"
+msgstr "%(checkIcon)s Узнагарода атрымана"
+
+msgid "mainRewardWidget/title"
+msgstr "Георгій Жукаў"
+
+msgid "memberWindow/btnReady/footerMsg/frontDisable"
+msgstr "Рэжым недаступны"
+
+msgid "memberWindow/header/event"
+msgstr ": «Час Герояў»"
+
+msgid "memberWindow/header/tooltip/event/body"
+msgstr ""
+"Звяз складаецца з 2–5 гульцоў, кожны з якіх павінен выбраць падраздзяленне і"
+" пацвердзіць гатоўнасць."
+
+msgid "memberWindow/header/tooltip/event/header"
+msgstr "Правілы фармавання звязу"
+
+msgid "orderInfo/description"
+msgstr ""
+"{whiteSpanish_Open}Загады «Больш ачкоў»{whiteSpanish_Close} павялічваюць "
+"колькасць атрымоўваных {icon}{whiteSpanish_Open}ачкоў "
+"перамогі{whiteSpanish_Close} у {whiteSpanish_Open}х5{whiteSpanish_Close}, "
+"{whiteSpanish_Open}х10{whiteSpanish_Close} або "
+"{whiteSpanish_Open}х15{whiteSpanish_Close} разоў. Чым большы множнік загада,"
+" тым большая ўзнагарода за бой, а таксама хуткасць праходжання прагрэсіі і "
+"паляпшэння падраздзяленняў."
+
+msgid "orderInfo/okButton"
+msgstr "Так!"
+
+msgid "orderInfo/subtitle"
+msgstr "Атрымлівайце ў 5, 10 і 15 разоў больш ачкоў перамогі за бой!"
+
+msgid "orderInfo/title"
+msgstr "ЗАГАДЫ «БОЛЬШ АЧКОЎ»"
+
+msgid "orderInfo/x10/description"
+msgstr ""
+"Даступны для пакупкі паштучна за крэдыты, а таксама ў спецыяльных наборах на"
+" экране загадаў."
+
+msgid "orderInfo/x10/label"
+msgstr "Загад х10"
+
+msgid "orderInfo/x15/description"
+msgstr ""
+"Выдаецца на старце рэжымаў, ва ўзнагароду за праходжанне прагрэсій абароны і"
+" прарыву, а таксама ў наборах нутрагульнявага Крамы."
+
+msgid "orderInfo/x15/label"
+msgstr "Загад х15"
+
+msgid "orderInfo/x5/description"
+msgstr "Выдаюцца раз на суткі бясплатна, калі наяўны загад быў выкарыстаны."
+
+msgid "orderInfo/x5/label"
+msgstr "Загад х5"
+
+msgid "orderTooltip/available"
+msgstr "Маецца"
+
+msgid "orderTooltip/content"
+msgstr ""
+"Асаблівыя загады падзеі %(whiteSpanish_Open)s«Час "
+"герояў»%(whiteSpanish_Close)s, неабходныя для атрымання павялічанай "
+"колькасці %(icon)s %(whiteSpanish_Open)sачкоў перамогі%(whiteSpanish_Close)s"
+" за бой."
+
+msgid "orderTooltip/count"
+msgstr "{whiteSpanish_Open}%(amount){whiteSpanish_Close} %(icon) У наяўнасці"
+
+msgid "orderTooltip/description/x10"
+msgstr ""
+"%(orderIcon)s{whiteSpanish_Open}Загады на x10{whiteSpanish_Close} ачкоў "
+"можна купіць у адмысловых наборах на экране загадаў."
+
+msgid "orderTooltip/description/x15"
+msgstr ""
+"%(orderIcon)s{whiteSpanish_Open}Загады на х15{whiteSpanish_Close} ачкоў "
+"выдаюцца на старце рэжымаў, ва ўзнагароду па меры праходжання прагрэсіі "
+"рэжымаў абароны і прарыву, а таксама ў наборах нутрагульнявага Крамы."
+
+msgid "orderTooltip/description/x5"
+msgstr ""
+"%(orderIcon)s{whiteSpanish_Open}Загады на x5{whiteSpanish_Close} ачкоў "
+"выдаюцца раз на суткі бясплатна, калі наяўны загад быў выкарыстаны."
+
+msgid "orderTooltip/header"
+msgstr "Загад «Больш ачкоў» %(orderType)s"
+
+msgid "orderTooltip/info"
+msgstr ""
+"Пасля бою выкарыстоўваецца загад з найвялікшым\n"
+"бонусам з наяўных."
+
+msgid "orderTooltip/notAvailable"
+msgstr "Няма ў наяўнасці"
+
+msgid "orderTooltip/subheader"
+msgstr "Спосаб атрымаць"
+
+msgid "orderWidget/order/title/x10"
+msgstr "Загады x10"
+
+msgid "orderWidget/order/title/x15"
+msgstr "Загады x15"
+
+msgid "orderWidget/order/title/x5"
+msgstr "Загады x5"
+
+msgid "orderWidget/title"
+msgstr ""
+"НАБОРЫ\n"
+"ЗАГАДАЎ Х10"
+
+msgid "orderWidgetTooltip/description"
+msgstr ""
+"Загады – гэта адмысловы множнік досведу, атрыманага ў баі, якія "
+"выкарыстоўваецца для праходжання прагрэсіі і паляпшэння падраздзяленняў."
+
+msgid "orderWidgetTooltip/inStock/count"
+msgstr "%(amount) %(icon)"
+
+msgid "orderWidgetTooltip/inStock/title"
+msgstr "У наяўнасці:"
+
+msgid "orderWidgetTooltip/infoText"
+msgstr ""
+"Загад можна будзе выкарыстаць толькі пасля бою і толькі самы вялікі з тых, "
+"што ёсць у наяўнасці."
+
+msgid "orderWidgetTooltip/title"
+msgstr "Купля набораў з загадамі х10"
+
+msgid "platoon/headerButton/tooltips/disabled/body"
+msgstr ""
+"Стварэнне звязу для падзеі «Час герояў» часова недаступнае з тэхнічных "
+"прычын."
+
+msgid "platoon/headerButton/tooltips/disabled/header"
+msgstr "Недаступна"
+
+msgid "platoon/headerButton/tooltips/squad/body"
+msgstr ""
+"Стварэнне фармавання з 2-5 гульцоў для супольнай гульні ў рэжыме «Час "
+"герояў»."
+
+msgid "platoon/headerButton/tooltips/squad/header"
+msgstr "Звяз"
+
+msgid "preBattle/exitButton"
+msgstr "Выйсці з бою"
+
+msgid "preBattle/orders/applyOrderHint"
+msgstr "Пасля заканчэння бою можна выкарыстаць самы вялікі загад з наяўных"
+
+msgid "preBattle/orders/itemCount"
+msgstr "%(count)s шт."
+
+msgid "preBattle/orders/orderWarning"
+msgstr ""
+"У вас няма загаду «Больш ачкоў», вы не зможаце павялічыць колькасць ачкоў "
+"пасля бою."
+
+msgid "preBattle/orders/x10"
+msgstr ""
+"У наборах\n"
+"на экране загадаў"
+
+msgid "preBattle/orders/x15"
+msgstr ""
+"Ва ўзнагароду\n"
+"ўа праходжанне прагрэсій"
+
+msgid "preBattle/orders/x5"
+msgstr ""
+"Бясплатна\n"
+"раз на суткі"
+
+msgid "preBattle/timer"
+msgstr "Час чакання: %(time)s"
+
+msgid "progressionWidgetTooltip/completed/text"
+msgstr ""
+"Выдатная праца, камандзір! Вы цалкам прайшлі шлях героя ў гэтым рэжыме."
+
+msgid "progressionWidgetTooltip/completed/title"
+msgstr "%(checkIcon)s ПРАГРЭСІЯ ПРОЙДЗЕНА"
+
+msgid "progressionWidgetTooltip/currentStage"
+msgstr "Бягучы ўзровень"
+
+msgid "progressionWidgetTooltip/defence/title"
+msgstr "Прагрэсія рэжыму «Абарона»"
+
+msgid "progressionWidgetTooltip/offence/title"
+msgstr "Прагрэсія рэжыму «Прарыў»"
+
+msgid "progressionWidgetTooltip/rewards/title"
+msgstr "Узнагароды этапу"
+
+msgid "progressionWidgetTooltip/subtitle"
+msgstr "Час герояў"
+
+msgid "progressionWidgetTooltip/suggestions/actions"
+msgstr ""
+"{whiteSpanish_Open}•   Карысныя дзеянні ў баі.{whiteSpanish_Close} Большая "
+"колькасці ачкоў даецца за знішчэнне праціўніка, прычыненне пашкоджанняў, "
+"падмогу ў знішчэнні, блакаванне пашкоджанняў."
+
+msgid "progressionWidgetTooltip/suggestions/defence/text"
+msgstr ""
+"{whiteSpanish_Open}•   Гуляйце ў рэжым «Абарона».{whiteSpanish_Close} Баі ў "
+"гэтым рэжыме дазваляюць прасоўвацца па адпаведнай прагрэсіі."
+
+msgid "progressionWidgetTooltip/suggestions/offence/text"
+msgstr ""
+"{whiteSpanish_Open}•   Гуляйце ў рэжым «Прарыў».{whiteSpanish_Close} Баі ў "
+"гэтым рэжыме дазваляюць прасоўвацца па адпаведнай прагрэсіі."
+
+msgid "progressionWidgetTooltip/suggestions/title"
+msgstr "Як заслужыць ачкі перамогі:"
+
+msgid "role/artillery"
+msgstr "АРТЫЛЕРЫСТ"
+
+msgid "role/aviation"
+msgstr "ВЫВЕДНІК"
+
+msgid "role/engineer"
+msgstr "ІНЖЫНЕР"
+
+msgid "role/none"
+msgstr "—"
+
+msgid "role/skill"
+msgstr "Уменне камандзіра"
+
+msgid "role/skillDescription"
+msgstr ""
+"Асаблівае ўменне камандзіра, якое становіцца даступным, калі прычыніць у баі"
+" 1000 адз. пашкоджанняў."
+
+msgid "roleRegular/artillery"
+msgstr "Артылерыст"
+
+msgid "roleRegular/aviation"
+msgstr "Выведнік"
+
+msgid "roleRegular/engineer"
+msgstr "Інжынер"
+
+msgid "roleRegular/none"
+msgstr "—"
+
+msgid "serviceChannelMessages/HBStartedMessage/button"
+msgstr "Да падзеі"
+
+msgid "shop/backBtn"
+msgstr "НАЗАД"
+
+msgid "shop/backTo"
+msgstr "У ГАРАЖ"
+
+msgid "shop/bought"
+msgstr "Куплена"
+
+msgid "shop/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "shop/discount"
+msgstr "{discount}%"
+
+msgid "shop/equipments/descr"
+msgstr ""
+"Паляпшае характарыстыкі машыны. Эфект большы, чым у штатнага абсталявання."
+
+msgid "shop/equipments/name"
+msgstr "Удасканаленае абсталяванне"
+
+msgid "shop/forSale"
+msgstr "Можна купіць разоў: %(count)"
+
+msgid "shop/free"
+msgstr "Бясплатна"
+
+msgid "shop/getFree"
+msgstr "Атрымайце бясплатна"
+
+msgid "shop/hardDisable"
+msgstr "Функцыянальнасць часова недаступная. Паспрабуйце пазней."
+
+msgid "shop/inHangar"
+msgstr "У Гаражы"
+
+msgid "shop/info"
+msgstr "?empty?"
+
+msgid "shop/menu/best"
+msgstr "Найлепшае"
+
+msgid "shop/menu/crewbook"
+msgstr "Вучэбныя матэрыялы"
+
+msgid "shop/menu/equipment"
+msgstr "Рыштунак"
+
+msgid "shop/menu/instruction"
+msgstr "Настаўленні"
+
+msgid "shop/menu/reserves"
+msgstr "Асабістыя рэзервы"
+
+msgid "shop/optionalDevices/backBtn"
+msgstr "НАЗАД"
+
+msgid "shop/optionalDevices/backTo"
+msgstr "ДА СПЕЦПРАПАНОЎ"
+
+msgid "shop/optionalDevices/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "shop/optionalDevices/header"
+msgstr "УДАСКАНАЛЕНАЕ АБСТАЛЯВАННЕ"
+
+msgid "shop/optionalDevices/warning"
+msgstr "Можна купіць адзін від абсталявання на выбар"
+
+msgid "shop/or"
+msgstr "або"
+
+msgid "shop/sold"
+msgstr "Машына прададзена, можна аднавіць"
+
+msgid "shop/tankDescription"
+msgstr "Добрая забойнасць стрэлу, выдатнае кругавое браніраванне"
+
+msgid "shop/window"
+msgstr "СПЕЦПРАПАНОВЫ"
+
+msgid "shopPrize/back"
+msgstr "НАЗАД"
+
+msgid "shopPrize/backLabel"
+msgstr "ДА СПЕЦПРАПАНОЎ"
+
+msgid "shopPrize/buttonBuyForGold"
+msgstr "Купіць за золата"
+
+msgid "shopPrize/buttonGetFree"
+msgstr "Атрымаць бясплатна"
+
+msgid "shopPrize/buttonGetVehicle"
+msgstr "Атрымаць тэхніку"
+
+msgid "shopPrize/buttonRestore"
+msgstr "Аднавіць"
+
+msgid "shopPrize/buttonShowInHangar"
+msgstr "Паказаць у Гаражы"
+
+msgid "shopPrize/buyFreeCount"
+msgstr "%(currCount)s / %(maxCount)s частак"
+
+msgid "shopPrize/buyTitle"
+msgstr "?empty?"
+
+msgid "shopPrize/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "shopPrize/labelDoneDiscount"
+msgstr "Атрымана зніжка 20%"
+
+msgid "shopPrize/labelVehicleReceived"
+msgstr "Машына атрымана!"
+
+msgid "shopPrize/messageBuy"
+msgstr "?empty?"
+
+msgid "shopPrize/messageVehicleSold"
+msgstr "Машына прададзена, можна бестэрмінова аднавіць"
+
+msgid "shopPrize/orText"
+msgstr "або"
+
+msgid "shopPrize/preview"
+msgstr "Перадпрагляд"
+
+msgid "shopPrize/subTitle"
+msgstr "Цяжкі танк прарыву"
+
+msgid "shopPrize/title"
+msgstr "%(level)s %(type)s %(name)s"
+
+msgid "shopPrize/tooltipBody/counterattack"
+msgstr "?empty?"
+
+msgid "shopPrize/tooltipBody/defence"
+msgstr "?empty?"
+
+msgid "shopPrize/tooltipBody/offence"
+msgstr "?empty?"
+
+msgid "shopPrize/tooltipBody/text"
+msgstr "Кампанент, які дае зніжку 20% на куплю Т-34М-54"
+
+msgid "shopPrize/tooltipHeaderChassis"
+msgstr "Шасі К-2"
+
+msgid "shopPrize/tooltipHeaderEngine"
+msgstr "Рухавік К-2"
+
+msgid "shopPrize/tooltipHeaderGun"
+msgstr "Гармата К-2"
+
+msgid "shopPrize/tooltipHeaderRadio"
+msgstr "Корпус К-2"
+
+msgid "shopPrize/tooltipHeaderTurret"
+msgstr "Вежа К-2"
+
+msgid "shopWidget/title"
+msgstr ""
+"КРАМА\n"
+"ПАДЗЕІ"
+
+msgid "shopWidget/tooltip/body"
+msgstr ""
+"Націсніце, каб перайсці ў краму падзеі і азнаёміцца з тэматычнымі "
+"прапановамі."
+
+msgid "shopWidget/tooltip/header"
+msgstr "Крама падзеі"
+
+msgid "status/inBattle"
+msgstr "У баі"
+
+msgid "status/inPlatoon"
+msgstr "У фармаванні"
+
+msgid "statusMessage/ban/extraSmall"
+msgstr ""
+"Уваход ў бой заблакаваны\n"
+"да %(date)s %(icon)"
+
+msgid "statusMessage/ban/regular"
+msgstr "Уваход у бой заблакаваны да %(date)s %(icon)"
+
+msgid "statusMessage/noActiveHint/extraSmall"
+msgstr ""
+"Без загада «Больш ачкоў»\n"
+"вы будзеце атрымліваць базавую колькасць ачкоў."
+
+msgid "statusMessage/noActiveHint/regular"
+msgstr ""
+"Без загада «Больш ачкоў» вы будзеце атрымліваць базавую колькасць ачкоў."
+
+msgid "subdivisionTooltip/currentExperience"
+msgstr ""
+"Бягучы досвед: %(whiteOrange_Open)s%(exp)s%(whiteOrange_Close)s / "
+"%(toExp)s%(icon)s"
+
+msgid "subdivisionTooltip/currentLevel"
+msgstr ""
+"%(whiteSpanish_Open)s%(level)s%(whiteSpanish_Close)s узровень падраздзялення"
+
+msgid "subdivisionTooltip/isMaxLevel"
+msgstr "Максімальны ўзровень"
+
+msgid "subdivisionTooltip/vehicles"
+msgstr "Тэхніка:"
+
+msgid "sysMessageFairPlayMsg/arenaBan/button"
+msgstr "Падрабязней"
+
+msgid "sysMessageFairPlayMsg/arenaBanStart/body"
+msgstr "Доступ да баёў рэжыму «Час герояў» часова закрыты."
+
+msgid "sysMessageFairPlayMsg/arenaBanStart/header"
+msgstr "Блакіроўка"
+
+msgid "sysMessageFairPlayMsg/arenaBanStop/body"
+msgstr ""
+"Тэрмін блакіроўкі скончыўся.\n"
+"Доступ да баёў рэжыму «Час герояў» вернуты."
+
+msgid "sysMessageFairPlayMsg/arenaBanStop/header"
+msgstr "Допуск да рэжыму"
+
+msgid "sysMessageFairPlayMsg/arenaWarning/body"
+msgstr ""
+"Вы атрымалі папярэджанне за бяздзейнасць або ўцёкі з поля бою ў рэжыме «Час "
+"герояў»."
+
+msgid "sysMessageFairPlayMsg/arenaWarning/button"
+msgstr "Падрабязней"
+
+msgid "sysMessageFairPlayMsg/arenaWarning/header"
+msgstr "Папярэджанне"
+
+msgid "system_messages/battleResults/badge"
+msgstr "Атрымана: <font color='#FFFFFF'>Нашыўка «%(text)s»</font>."
+
+msgid "system_messages/battleResults/coins/defence"
+msgstr "Атрымана ачкоў падзеі: <font color='#FFDD99'>%(amount)s</font>."
+
+msgid "system_messages/battleResults/coins/offence"
+msgstr "Атрымана ачкоў падзеі: <font color='#FFDD99'>%(amount)s</font>."
+
+msgid "system_messages/battleResults/division"
+msgstr "Звяз: %(name)s"
+
+msgid "system_messages/battleResults/event"
+msgstr "Падзея: «Час герояў»."
+
+msgid "system_messages/battleResults/roleAbility"
+msgstr "Атрымана: <font color='#FFFFFF'>Ролевае ўменне «%(text)s»</font>."
+
+msgid "system_messages/hb_all_progressions_finished/body"
+msgstr "Вы завяршылі абедзве прагрэсіі падзеі «Час герояў»."
+
+msgid "system_messages/hb_event_ended/body"
+msgstr "Падзея «Час герояў» завершана."
+
+msgid "system_messages/roleQuestComplete/body"
+msgstr "Камандзір %(frontman)s атрымаў ролевае ўменне «%(ability)s»"
+
+msgid "system_messages/roleQuestComplete/header"
+msgstr "Баявая задача выканана!"
+
+msgid "system_messages/second_front_opened/body"
+msgstr ""
+"Адкрыўся рэжым «Прарыў» у падзеі «Час герояў». Выбірайце падраздзяленне — і "
+"да бою!"
+
+msgid "system_messages/switched_off_battles/body"
+msgstr ""
+"Уваход у бой падзеі «Час герояў» часова недаступны.\n"
+"Паспрабуйце пазней."
+
+msgid "system_messages/switched_off_event/body"
+msgstr "Зараз гэта падзея недаступная. Сачыце за навінамі на сайце гульні."
+
+msgid "system_messages/switched_on_battles/body"
+msgstr ""
+"Баі падзеі «Час герояў» зноў даступныя. Выбірайце падраздзяленне — і да бою!"
+
+msgid "system_messages/switched_on_event/body"
+msgstr ""
+"Падзея «Час герояў» пачалася. Не дайце праціўніку зламаць абарону. Выбірайце"
+" падраздзяленне — і да бою!"
+
+msgid "teamList/teammates"
+msgstr "Хаўруснікі"
+
+msgid "vehiclePreviewPanel/acceptBtn/label/buy"
+msgstr "Купіць"
+
+msgid "vehiclePreviewPanel/acceptBtn/label/buyVehicle"
+msgstr "Купіць машыну"
+
+msgid "vehiclePreviewPanel/acceptBtn/label/getVehicle"
+msgstr "Атрымаць тэхніку"
+
+msgid "vehiclePreviewPanel/secondaryBtn/label/restore"
+msgstr "Аднавіць"
+
+msgid "vehiclePreviewPanel/secondaryBtn/label/showEvent"
+msgstr "Да гульнявой падзеі"
+
+msgid "vehiclePreviewPanel/secondaryBtn/label/showEventShop"
+msgstr "Павялічыць зніжку"
+
+msgid "vehiclePreviewPanel/title/eventFinished"
+msgstr "Гульнявая падзея «Час герояў» завяршылася."
+
+msgid "vehiclePreviewPanel/title/eventInProgress"
+msgstr ""
+"Бярыце ўдзел у падзеі «Час герояў», каб бясплатна атрымаць машыну або "
+"павялічыць зніжку на яе набыццё."

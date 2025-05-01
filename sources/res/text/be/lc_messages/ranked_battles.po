@@ -43,16 +43,16 @@ msgid "alertMessage/standaloneNotSet"
 msgstr "Рэжым недаступны на серверы %(serverName)s"
 
 msgid "alertMessage/timeLeft/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "alertMessage/timeLeft/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "alertMessage/timeLeft/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "alertMessage/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "alertMessage/undefined"
 msgstr "?empty?"
@@ -445,32 +445,32 @@ msgstr "Рэжым часова недаступны. Зайдзіце пазн�
 
 msgid "introPage/blocks/block1/description"
 msgstr ""
-"Ваша задача — прайсці 3 дывізіёны, у кожным з якіх неабходна атрымаць 5 "
-"рангаў."
+"Баі праходзяць толькі на тэхніцы VI узроўню і паводле правіл Звычайнага бою."
+" Фармат — 10х10 гульцоў, працягласць бою — 10 хвілін."
 
 msgid "introPage/blocks/block1/title"
-msgstr "Рангавая кар'ера"
+msgstr "Асноўныя правілы"
 
 msgid "introPage/blocks/block2/description"
 msgstr ""
-"Баі праходзяць толькі на тэхніцы V узроўню і паводле правіл Звычайнага бою. "
-"Фармат — 10х10 гульцоў. Працягласць бою — 10 хвілін."
+"Ваша задача — прайсці 3 дывізіёны, у кожным з якіх неабходна атрымаць 5 "
+"рангаў. За кожны новы ранг вам належыць годная ўзнагарода."
 
 msgid "introPage/blocks/block2/title"
-msgstr "Тэхніка V узроўню"
+msgstr "Рангавая кар'ера."
 
 msgid "introPage/blocks/block3/description"
 msgstr ""
-"За кожны новы ранг вам належыць годная ўзнагарода. Пасля здабыцця ўсіх "
-"рангаў вы будзеце ўзнагароджаны ўдасканаленым абсталяваннем на выбар."
+"У Рангавых баях вы будзеце здабываць ачкі Баявога пропуска, прасоўваючыся па"
+" раздзелах падзеі і атрымліваючы за гэта ўнікальныя ўзнагароды."
 
 msgid "introPage/blocks/block3/title"
-msgstr "Унікальныя ўзнагароды"
+msgstr "Ачкі Баявога пропуска"
 
 msgid "introPage/blocks/yearRewardDisabled"
 msgstr ""
-"За кожны новы ранг вам належыць годная ўзнагарода. Пасля здабыцця ўсіх "
-"рангаў вы будзеце ўзнагароджаны ўдасканаленым абсталяваннем на выбар."
+"У Рангавых баях вы будзеце здабываць ачкі Баявога пропуска, прасоўваючыся па"
+" раздзелах падзеі і атрымліваючы за гэта ўнікальныя ўзнагароды."
 
 msgid "introPage/btns/accept"
 msgstr "Так!"
@@ -483,7 +483,8 @@ msgstr "У Гараж"
 
 msgid "introPage/description"
 msgstr ""
-"Баі 10х10, V узровень тэхнікі, 3 дывізіёны на шляху да фінальнай узнагароды."
+"Баі 10×10, VІ узровень тэхнікі, 3 дывізіёны на шляху да фінальнай "
+"узнагароды."
 
 msgid "introPage/timeLeft/days"
 msgstr "%(day)s сут %(hour)s гадз"
@@ -492,10 +493,10 @@ msgid "introPage/timeLeft/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "introPage/timeLeft/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "introPage/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "notification/rankEarned"
 msgstr "ранг атрыманы"
@@ -562,16 +563,16 @@ msgstr ""
 "%(leftSeasonName)s сезон завяршыўся."
 
 msgid "primeTimes/serverTooltip/timeLeft/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "primeTimes/serverTooltip/timeLeft/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "primeTimes/serverTooltip/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "primeTimes/serverTooltip/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "primeTimes/serverTooltip/undefined"
 msgstr "?empty?"
@@ -717,16 +718,16 @@ msgid "questsTooltip/available"
 msgstr "Да канца сезона %(timeDelta)s"
 
 msgid "questsTooltip/available/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "questsTooltip/available/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "questsTooltip/available/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "questsTooltip/available/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "questsTooltip/bottom"
 msgstr "Яшчэ задач: %(number)d"
@@ -865,7 +866,8 @@ msgstr " "
 
 msgid "rankedBattleMainView/infoPage/header"
 msgstr ""
-"Баі 10х10, V узровень тэхнікі, 3 дывізіёны на шляху да фінальнай узнагароды."
+"Баі 10х10, VІ узровень тэхнікі, 3 дывізіёны на шляху да фінальнай "
+"узнагароды."
 
 msgid "rankedBattleMainView/leaguesView/descr"
 msgstr "Вы можаце надалей гуляць у рэжыме."
@@ -889,7 +891,7 @@ msgid "rankedBattleMainView/leaguesView/unavailableDescr"
 msgstr "Вы можаце надалей гуляць у рэжыме."
 
 msgid "rankedBattleMainView/leaguesView/unavailableTitle"
-msgstr "Усе дывізіёны пройдзены. Усе ўзнагароды атрыманы."
+msgstr "Усе дывізіёны паспяхова пройдзены. Узнагароды атрыманы."
 
 msgid "rankedBattleMainView/leaguesView/yearLeaderboardDisabled"
 msgstr "Вы можаце надалей гуляць у рэжыме."
@@ -994,7 +996,7 @@ msgid "rankedBattleMainView/seasonGap/waitingLeague/title"
 msgstr "Ідзе падлік вынікаў"
 
 msgid "rankedBattleMainView/specialSeason"
-msgstr "V"
+msgstr "VІ"
 
 msgid "rankedBattleMainView/stats/battlesInLeague"
 msgstr "Баёў у лігах"
@@ -1279,7 +1281,7 @@ msgstr "Рэжым недаступны"
 msgid "rankedBattlesUnreachableView/vehicleAvailableForBuy"
 msgstr ""
 "Для Рангавых баёў трэба мець у Гаражы прыдатную тэхніку %(levels)s узроўню.\n"
-"У вас ёсць даследаваная, але не купленая тэхніка %(levels)s узроўню."
+"У вас ёсць тэхніка %(levels)s узроўню, якую можна купіць."
 
 msgid "rankedBattlesUnreachableView/vehicleAvailableForRestore"
 msgstr ""
@@ -1361,7 +1363,7 @@ msgid "rankedSeasonCompleted/header/description"
 msgstr "Вы можаце працягваць гуляць у рэжыме"
 
 msgid "rankedSeasonCompleted/header/text"
-msgstr "Усе дывізіёны паспяхова пройдзены. Усе ўзнагароды атрыманы."
+msgstr "Усе дывізіёны паспяхова пройдзены. Узнагароды атрыманы."
 
 msgid "rankedSeasonCompleted/headerReward/description"
 msgstr "Забярыце сваю заслужаную ўзнагароду!"
@@ -1374,6 +1376,18 @@ msgstr "ДА ФІНАЛЬНАЙ СТАТЫСТЫКІ"
 
 msgid "rankedSeasonCompleted/toRewards"
 msgstr "Вярнуцца да ўзнагарод"
+
+msgid "rankedSelectedRewardView/additionalRewards/button"
+msgstr "Так!"
+
+msgid "rankedSelectedRewardView/additionalRewards/remainText"
+msgstr "Яшчэ %(remainingAwardsCount)s"
+
+msgid "rankedSelectedRewardView/subtitle"
+msgstr "УЗНАГАРОДА АТРЫМАНА"
+
+msgid "rankedSelectedRewardView/title"
+msgstr "РАНГАВЫЯ БАІ"
 
 msgid "rewardsView/common/currentReward"
 msgstr "Прэтэндуеце на ўзнагароду"
@@ -1508,8 +1522,8 @@ msgstr "Удасканаленае абсталяванне на выбар"
 
 msgid "selectorTooltip/desc"
 msgstr ""
-"Баі на V узроўню паводле правіл Звычайнага бою. Фармат — 10х10 гульцоў. "
-"Працягласць бою — 10 хвілін."
+"Баі на тэхніцы VІ узроўню паводле правіл Звычайнага бою. Фармат — 10×10 "
+"гульцоў. Працягласць бою — 10 хвілін."
 
 msgid "selectorTooltip/tillEnd"
 msgstr "Да канца баёў:"
@@ -1539,16 +1553,16 @@ msgid "statistic/vehicleRank"
 msgstr "Рангавыя жэтоны здабыты"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "status/timeLeft/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "status/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "tooltip/closeButton/body"
 msgstr "Узнагарода будзе налічана аўтаматычна."

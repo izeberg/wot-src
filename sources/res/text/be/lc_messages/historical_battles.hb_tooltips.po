@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "awardScreen/specialVehiclesTooltip/base"
+msgstr "Вы адкрылі доступ да асаблівай элітнай тэхнікі, баі на якой прынясуць"
+
+msgid "awardScreen/specialVehiclesTooltip/end"
+msgstr "у падзеі «Час герояў»."
+
+msgid "calendarTooltip/date"
+msgstr "%(day)s %(month)s, %(time)s"
+
+msgid "calendarTooltip/duration"
+msgstr ""
+"Падзея працягнецца\n"
+"%(period)s."
+
+msgid "calendarTooltip/period"
+msgstr "з %(start)s па %(end)s"
+
+msgid "calendarTooltip/title"
+msgstr "Расклад"
+
+msgid "newVehiclesAvailableTooltip/body"
+msgstr ""
+"З павышэннем узроўню падраздзялення вам стала даступнай новая тэхніка ў "
+"дадатак да ўжо наяўнай."
+
+msgid "newVehiclesAvailableTooltip/header"
+msgstr "Новая даступная тэхніка"
+
+msgid "quest/award"
+msgstr "Загад «Больш ачкоў» %(bonusName)s (%(count)d шт.)"
+
+msgid "quest/tooltip/body/maintenance"
+msgstr "Выкананне задач недаступнае з тэхнічных прычын"
+
+msgid "quest/tooltip/body/unavailable"
+msgstr ""
+"Выбрана машына занадта нізкага ўзроўню. Для доступу да задач падзеі «Час "
+"герояў» выберыце машыну V-X узроўню."
+
+msgid "quest/tooltip/header/cooldown/hours"
+msgstr "Новыя задачы з'явяцца праз %(hours)s ч."
+
+msgid "quest/tooltip/header/endsIn"
+msgstr "Да канца падзеі: %(hours)s ч."
+
+msgid "quest/tooltip/header/in_progress"
+msgstr "Выконваецца"
+
+msgid "quest/tooltip/header/label"
+msgstr "Задачы падзеі «Час герояў»:"
+
+msgid "quest/tooltip/header/maintenance"
+msgstr "Задачы недаступныя"
+
+msgid "quest/tooltip/header/unavailable"
+msgstr "Няма даступных задач"
+
+msgid "specialVehiclesTooltip/bodyLocked"
+msgstr ""
+"Выканаўшы ўмовы 5 этапу прагрэсіі, вы атрымаеце доступ да асаблівай элітнай тэхнікі, баі на якой прынясуць\n"
+"%(multiplier) %(coin_icon) %(hbCoins) у падзеі «Час герояў»."
+
+msgid "specialVehiclesTooltip/bodyUnlocked"
+msgstr ""
+"Вы адкрылі доступ да асаблівай элітнай тэхнікі, баі на якой прынясуць "
+"%(multiplier) %(coin_icon) %(hbCoins) у падзеі «Час герояў»."
+
+msgid "specialVehiclesTooltip/footerLocked"
+msgstr "Тэхніка, якая стане даступнай: %(value)s"
+
+msgid "specialVehiclesTooltip/footerUnlocked"
+msgstr "Тэхніка, якая стала даступнай: %(value)s"
+
+msgid "specialVehiclesTooltip/hbCoins"
+msgstr "ачкоў перамогі"
+
+msgid "specialVehiclesTooltip/header"
+msgstr "Доступ да элітнай тэхнікі"
+
+msgid "specialVehiclesTooltip/multiplier"
+msgstr "х2"
+
+msgid "teamList/assist/body"
+msgstr "Сартаваць паводле пашкоджанняў, прычыненых з вашай дапамогай."
+
+msgid "teamList/assist/header"
+msgstr "Падмога"
+
+msgid "teamList/blocked/body"
+msgstr "Сартаваць паводле пашкоджанняў, заблакаваных бранёй."
+
+msgid "teamList/blocked/header"
+msgstr "Пашкоджанні, заблакаваныя бранёй"
+
+msgid "teamList/body/banned"
+msgstr ""
+"За сістэматычную бяздзейнасць або дэзерцірства гульцу забаронена "
+"ўдзельнічаць у падзеі «Час герояў»."
+
+msgid "teamList/body/warned"
+msgstr ""
+"Гульца выкрылі на бяздзейнасці або дэзерцірстве. Рэцыдыў вядзе да пакарання."
+
+msgid "teamList/damage/body"
+msgstr ""
+"Сартаваць паводле прычыненых пашкоджанняў,\n"
+"у тым ліку ад баявых здольнасцяў."
+
+msgid "teamList/damage/header"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "teamList/header/banned"
+msgstr "Гулец адхілены"
+
+msgid "teamList/header/warned"
+msgstr "Папярэджанне"
+
+msgid "teamList/kills/body"
+msgstr "Сартаваць паводле колькасці знішчаных машын праціўніка."
+
+msgid "teamList/kills/header"
+msgstr "Знішчаная тэхніка праціўніка"
+
+msgid "teamList/role/body"
+msgstr "Сартаваць паводле займанай ролі ў баі."
+
+msgid "teamList/role/header"
+msgstr "Роля"
+
+msgid "teamList/vehicle/body"
+msgstr "Сартаваць паводле назвы тэхнікі."
+
+msgid "teamList/vehicle/header"
+msgstr "Тэхніка"
+
+msgid "vehicleInfoTooltip/AT-SPG"
+msgstr "Універсальная СТ-САУ"
+
+msgid "vehicleInfoTooltip/SPG"
+msgstr "Універсальная САУ"
+
+msgid "vehicleInfoTooltip/heavyTank"
+msgstr "Універсальны цяжкі танк"
+
+msgid "vehicleInfoTooltip/lightTank"
+msgstr "Лёгкі танк"
+
+msgid "vehicleInfoTooltip/mediumTank"
+msgstr "Універсальны сярэдні танк"

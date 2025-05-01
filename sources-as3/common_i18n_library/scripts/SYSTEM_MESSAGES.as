@@ -353,6 +353,8 @@ package
       
       public static const SQUAD_NOTVALIDMAXSPGDELETED:String = "#system_messages:squad/notValidMaxSpgDeleted";
       
+      public static const SQUAD_NOTVALIDMAXFLAMETHROWERDELETED:String = "#system_messages:squad/notValidMaxFlamethrowerDeleted";
+      
       public static const SQUAD_NOTVALIDMAXSCOUTDELETED:String = "#system_messages:squad/notValidMaxScoutDeleted";
       
       public static const SQUAD_NOTVALIDENQUEUEDATA:String = "#system_messages:squad/notValidEnqueueData";
@@ -1753,6 +1755,8 @@ package
       
       public static const UNIT_ERRORS_JOIN_CTX_LOCK:String = "#system_messages:unit/errors/JOIN_CTX_LOCK";
       
+      public static const UNIT_ERRORS_HB_BANNED:String = "#system_messages:unit/errors/HB_BANNED";
+      
       public static const UNIT_ERRORS_CANT_INVITE:String = "#system_messages:unit/errors/CANT_INVITE";
       
       public static const UNIT_ERRORS_NOT_READY:String = "#system_messages:unit/errors/NOT_READY";
@@ -2445,15 +2449,45 @@ package
       
       public static const DAILY_QUESTS_SWITCH_ON_BODY:String = "#system_messages:daily_quests/switch_on/body";
       
-      public static const DAILY_QUESTS_REROLL_SUCCESS:String = "#system_messages:daily_quests/reroll/success";
+      public static const DAILY_QUESTS_SIMPLE_REROLL_SUCCESS:String = "#system_messages:daily_quests/simple/reroll/success";
       
-      public static const DAILY_QUESTS_REROLL_REROLL_DISABLED:String = "#system_messages:daily_quests/reroll/reroll_disabled";
+      public static const DAILY_QUESTS_PREMIUM_REROLL_SUCCESS:String = "#system_messages:daily_quests/premium/reroll/success";
       
-      public static const DAILY_QUESTS_REROLL_REROLL_IN_COOLDOWN:String = "#system_messages:daily_quests/reroll/reroll_in_cooldown";
+      public static const DAILY_QUESTS_SIMPLE_REROLL_QUEST_IS_ALREADY_COMPLETED:String = "#system_messages:daily_quests/simple/reroll/quest_is_already_completed";
       
-      public static const DAILY_QUESTS_REROLL_QUEST_IS_ALREADY_COMPLETED:String = "#system_messages:daily_quests/reroll/quest_is_already_completed";
+      public static const DAILY_QUESTS_SIMPLE_REROLL_UNKNOWN_ERROR:String = "#system_messages:daily_quests/simple/reroll/unknown_error";
       
-      public static const DAILY_QUESTS_REROLL_UNKNOWN_ERROR:String = "#system_messages:daily_quests/reroll/unknown_error";
+      public static const DAILY_QUESTS_PREMIUM_REROLL_QUEST_IS_ALREADY_COMPLETED:String = "#system_messages:daily_quests/premium/reroll/quest_is_already_completed";
+      
+      public static const DAILY_QUESTS_PREMIUM_REROLL_UNKNOWN_ERROR:String = "#system_messages:daily_quests/premium/reroll/unknown_error";
+      
+      public static const DAILY_QUESTS_EPIC_QUEST_OFF_TITLE:String = "#system_messages:daily_quests/epic_quest_off/title";
+      
+      public static const DAILY_QUESTS_EPIC_QUEST_OFF_BODY:String = "#system_messages:daily_quests/epic_quest_off/body";
+      
+      public static const DAILY_QUESTS_EPIC_QUEST_ON_TITLE:String = "#system_messages:daily_quests/epic_quest_on/title";
+      
+      public static const DAILY_QUESTS_EPIC_QUEST_ON_BODY:String = "#system_messages:daily_quests/epic_quest_on/body";
+      
+      public static const DAILY_QUESTS_REROLL_OFF_TITLE:String = "#system_messages:daily_quests/reroll_off/title";
+      
+      public static const DAILY_QUESTS_REROLL_OFF_BODY:String = "#system_messages:daily_quests/reroll_off/body";
+      
+      public static const DAILY_QUESTS_REROLL_ON_TITLE:String = "#system_messages:daily_quests/reroll_on/title";
+      
+      public static const DAILY_QUESTS_REROLL_ON_BODY:String = "#system_messages:daily_quests/reroll_on/body";
+      
+      public static const DAILY_QUESTS_PREMIUM_ACTIVE:String = "#system_messages:daily_quests/premium/active";
+      
+      public static const DAILY_QUESTS_BONUS_QUEST_AVAILABLE_TITLE:String = "#system_messages:daily_quests/bonus_quest_available/title";
+      
+      public static const DAILY_QUESTS_BONUS_QUEST_AVAILABLE_BODY:String = "#system_messages:daily_quests/bonus_quest_available/body";
+      
+      public static const DAILY_QUESTS_NOTIFICATION_EPIC_QUEST_HEADER:String = "#system_messages:daily_quests/notification/epic_quest/header";
+      
+      public static const DAILY_QUESTS_NOTIFICATION_EPIC_QUEST_BODY:String = "#system_messages:daily_quests/notification/epic_quest/body";
+      
+      public static const DAILY_QUESTS_NOTIFICATION_EPIC_QUEST_COMPENSATION:String = "#system_messages:daily_quests/notification/epic_quest/compensation";
       
       public static const BATTLEPASS_BUY_SERVER_ERROR:String = "#system_messages:battlePass_buy/server_error";
       

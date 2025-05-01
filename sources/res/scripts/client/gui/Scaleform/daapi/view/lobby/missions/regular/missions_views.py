@@ -380,8 +380,6 @@ class MissionsCategoriesView(_GroupedMissionsView):
         return RES_ICONS.MAPS_ICONS_MISSIONS_BACKGROUNDS_CATEGORIES
 
     def _getViewQuestFilter(self):
-        if self.__showDQInMissionsTab:
-            return self.getViewQuestFilterIncludingDailyQuests()
         return self.getViewQuestFilter()
 
     def __onServerSettingsChange(self, diff):

@@ -2,17 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/german/G138_VK168_02_Mauerbrecher/crash/lod2/Hull</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.92797 -1.01423 -4.43553
-			<!--BW_String-->
-		</min>
-		<max>
-			1.97388 1.00448 4.62076
-			<!--BW_String-->
-		</max>
+		<min>-1.927970 -1.014230 -4.435530</min>
+		<max>1.973880 1.004480 4.620760</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/german/G138_VK168_02_Mauerbrecher/crash/lod1/Hull</nodefullVisual>
 </root>

@@ -1028,7 +1028,7 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -1096,7 +1096,7 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>17</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -1224,6 +1224,14 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.483751 0.671554 0.009888</groupOrigin>
 			</primitiveGroup>
@@ -1318,6 +1326,14 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.483751 0.671554 0.009888</groupOrigin>

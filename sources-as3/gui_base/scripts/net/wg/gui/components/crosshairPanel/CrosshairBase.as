@@ -187,11 +187,11 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setFlameDistanceVisibility(param1:Boolean) : void
+      public function setFlameDistanceVisibility(param1:Boolean, param2:String) : void
       {
          if(this._overheatBar)
          {
-            this._overheatBar.isDistanceVisible = param1;
+            this._overheatBar.updateDistance(param1,param2);
          }
       }
       
@@ -320,6 +320,22 @@ package net.wg.gui.components.crosshairPanel
             {
                this._overheatBar.updateInfo(param1,param2,param4);
             }
+         }
+      }
+      
+      public function setOverheatState(param1:Number) : void
+      {
+         if(this._overheatBar)
+         {
+            this._overheatBar.state = param1;
+         }
+      }
+      
+      public function setOverheatStatus(param1:Boolean) : void
+      {
+         if(this._overheatBar)
+         {
+            this._overheatBar.isOverheated = param1;
          }
       }
       

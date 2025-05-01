@@ -429,32 +429,32 @@ msgstr "Режим временно недоступен. Зайдите поз�
 
 msgid "introPage/blocks/block1/description"
 msgstr ""
-"Ваша задача — пройти 3 дивизиона, в каждом из которых необходимо получить 5 "
-"рангов."
+"Бои проходят только на технике VI уровня и по правилам Стандартного боя. "
+"Формат — 10х10 игроков, продолжительность боя — 10 минут."
 
 msgid "introPage/blocks/block1/title"
-msgstr "Ранговая карьера"
+msgstr "Основные правила"
 
 msgid "introPage/blocks/block2/description"
 msgstr ""
-"Бои проходят только на технике V уровня и по правилам Стандартного боя. "
-"Формат — 10х10 игроков. Продолжительность боя — 10 минут."
+"Ваша задача — пройти 3 дивизиона, в каждом из которых необходимо получить 5 "
+"рангов. За каждый новый ранг вам полагается достойная награда."
 
 msgid "introPage/blocks/block2/title"
-msgstr "Техника V уровня"
+msgstr "Ранговая карьера"
 
 msgid "introPage/blocks/block3/description"
 msgstr ""
-"За каждый новый ранг вам полагается достойная награда. Получив все ранги, вы"
-" будете вознаграждены усовершенствованным оборудованием на выбор."
+"Участвуя в Ранговых боях, вы будете зарабатывать очки Боевого пропуска, "
+"продвигаясь по главам события и получая за это уникальные награды."
 
 msgid "introPage/blocks/block3/title"
-msgstr "Уникальные награды"
+msgstr "Очки Боевого пропуска"
 
 msgid "introPage/blocks/yearRewardDisabled"
 msgstr ""
-"За каждый новый ранг вам полагается достойная награда. Получив все ранги, вы"
-" будете вознаграждены усовершенствованным оборудованием на выбор."
+"Участвуя в Ранговых боях, вы будете зарабатывать очки Боевого пропуска, "
+"продвигаясь по главам события и получая за это уникальные награды."
 
 msgid "introPage/btns/accept"
 msgstr "Так точно!"
@@ -467,7 +467,7 @@ msgstr "В Ангар"
 
 msgid "introPage/description"
 msgstr ""
-"Бои 10х10, V уровень техники, 3 дивизиона на пути к финальной награде."
+"Бои 10×10, VI уровень техники, 3 дивизиона на пути к финальной награде."
 
 msgid "introPage/timeLeft/days"
 msgstr "%(day)s д %(hour)s ч"
@@ -850,7 +850,7 @@ msgstr " "
 
 msgid "rankedBattleMainView/infoPage/header"
 msgstr ""
-"Бои 10х10, V уровень техники, 3 дивизиона на пути к финальной награде."
+"Бои 10х10, VI уровень техники, 3 дивизиона на пути к финальной награде."
 
 msgid "rankedBattleMainView/leaguesView/descr"
 msgstr "Вы можете продолжать играть в режиме."
@@ -874,7 +874,7 @@ msgid "rankedBattleMainView/leaguesView/unavailableDescr"
 msgstr "Вы можете продолжать играть в режиме."
 
 msgid "rankedBattleMainView/leaguesView/unavailableTitle"
-msgstr "Все дивизионы успешно пройдены. Все награды получены."
+msgstr "Дивизионы успешно пройдены. Награды получены."
 
 msgid "rankedBattleMainView/leaguesView/yearLeaderboardDisabled"
 msgstr "Вы можете продолжать играть в режиме."
@@ -979,7 +979,7 @@ msgid "rankedBattleMainView/seasonGap/waitingLeague/title"
 msgstr "Идёт подсчёт результатов"
 
 msgid "rankedBattleMainView/specialSeason"
-msgstr "V"
+msgstr "VI"
 
 msgid "rankedBattleMainView/stats/battlesInLeague"
 msgstr "Боёв в лигах"
@@ -1264,7 +1264,7 @@ msgstr "Режим недоступен"
 msgid "rankedBattlesUnreachableView/vehicleAvailableForBuy"
 msgstr ""
 "Для Ранговых боёв необходимо наличие в Ангаре подходящей техники %(levels)s уровня.\n"
-"У вас есть исследованная, но не купленная техника %(levels)s уровня."
+"У вас есть техника %(levels)s уровня, доступная для покупки."
 
 msgid "rankedBattlesUnreachableView/vehicleAvailableForRestore"
 msgstr ""
@@ -1347,7 +1347,7 @@ msgid "rankedSeasonCompleted/header/description"
 msgstr "Вы можете продолжать играть в режиме"
 
 msgid "rankedSeasonCompleted/header/text"
-msgstr "Все дивизионы успешно пройдены. Все награды получены"
+msgstr "Дивизионы успешно пройдены. Награды получены."
 
 msgid "rankedSeasonCompleted/headerReward/description"
 msgstr "Заберите свою заслуженную награду!"
@@ -1360,6 +1360,18 @@ msgstr "К ФИНАЛЬНОЙ СТАТИСТИКЕ"
 
 msgid "rankedSeasonCompleted/toRewards"
 msgstr "Вернуться к наградам"
+
+msgid "rankedSelectedRewardView/additionalRewards/button"
+msgstr "Так точно!"
+
+msgid "rankedSelectedRewardView/additionalRewards/remainText"
+msgstr "Ещё %(remainingAwardsCount)s"
+
+msgid "rankedSelectedRewardView/subtitle"
+msgstr "НАГРАДА ПОЛУЧЕНА"
+
+msgid "rankedSelectedRewardView/title"
+msgstr "РАНГОВЫЕ БОИ"
 
 msgid "rewardsView/common/currentReward"
 msgstr "Претендуете на награду"
@@ -1495,7 +1507,7 @@ msgstr "Усовершенствованное оборудование на в�
 
 msgid "selectorTooltip/desc"
 msgstr ""
-"Бои на технике V уровня по правилам Стандартного боя. Формат — 10х10 "
+"Бои на технике VI уровня по правилам Стандартного боя. Формат — 10×10 "
 "игроков. Продолжительность боя — 10 минут."
 
 msgid "selectorTooltip/tillEnd"

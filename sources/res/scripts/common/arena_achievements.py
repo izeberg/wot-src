@@ -15,7 +15,7 @@ ACHIEVEMENTS = ('warrior', 'invader', 'sniper', 'sniper2', 'mainGun', 'defender'
                 'markIRepairer', 'occupyingForce', 'ironShield', 'generalOfTheArmy',
                 'supremeGun', 'smallArmy', 'frontlineMedal', 'se12019Medal', 'bootcampMedal',
                 'se2020Medal', 'hw2019Medal', 'hw2019Medal1', 'hw2019Medal2', 'hw2019Medal3',
-                'hb24Medal')
+                'hb24Medal', 'hb25MedalOffence', 'hb25MedalDefence')
 ACHIEVEMENTS_WITH_REWARD = set([ RECORD_DB_IDS[('achievements', name)] for name in ('warrior',
                                                                                     'invader',
                                                                                     'sniper',

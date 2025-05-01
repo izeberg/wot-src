@@ -1218,14 +1218,17 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_R6_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
+		<node>Track_R2_BlendBone</node>
+		<node>Track_R3_BlendBone</node>
+		<node>Track_R4_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -1371,7 +1374,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208220 2.104110 0.000000 0.000000</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1476,7 +1479,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208220 2.104110 0.000000 0.000000</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1549,6 +1552,6 @@
 		<min>-1.598149 -0.000002 -3.567763</min>
 		<max>1.598149 1.145631 3.757420</max>
 	</boundingBox>
-	<geometrySize>269788</geometrySize>
+	<geometrySize>281604</geometrySize>
 	<minUVDensity>0.019305</minUVDensity>
 </root>

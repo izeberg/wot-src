@@ -5,10 +5,7 @@
 	<materialNames/>
 	<visibilityBox>
 		<min>-0.491278 -0.590493 0.322692</min>
-		<max>
-			0.641306 0.525537 4.24284
-			<!--BW_String-->
-		</max>
+		<max>0.641306 0.525537 4.242838</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G138_VK168_02/normal/lod1/Gun_02</nodefullVisual>

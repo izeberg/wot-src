@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>vehicles/german/G138_VK168_02/normal/lod2/Hull</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.93637 -0.745664 -4.56989
-			<!--BW_String-->
-		</min>
-		<max>
-			1.93868 1.03472 4.62073
-			<!--BW_String-->
-		</max>
+		<min>-1.936374 -0.715878 -4.569895</min>
+		<max>1.938676 1.064508 4.620731</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G138_VK168_02/normal/lod1/Hull</nodefullVisual>

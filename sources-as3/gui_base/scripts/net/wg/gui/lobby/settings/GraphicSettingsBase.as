@@ -73,8 +73,6 @@ package net.wg.gui.lobby.settings
       
       public var isColorBlindCheckbox:CheckBox = null;
       
-      public var uiEffectsCheckbox:CheckBox = null;
-      
       public var colorFilterLabel:LabelControl = null;
       
       public var colorFilterNameLabel:LabelControl = null;
@@ -88,6 +86,8 @@ package net.wg.gui.lobby.settings
       public var fovRangeSlider:RangeSlider = null;
       
       public var dynamicFovCheckbox:CheckBox = null;
+      
+      public var UI_EFFECTSCheckbox:CheckBox = null;
       
       public var RENDER_PIPELINELabel:LabelControl = null;
       
@@ -249,7 +249,6 @@ package net.wg.gui.lobby.settings
          this.gammaLabel = null;
          this.gammaSettingButton = null;
          this.isColorBlindCheckbox = null;
-         this.uiEffectsCheckbox = null;
          this.colorFilterLabel = null;
          this.colorFilterNameLabel = null;
          this.colorFilterImage = null;
@@ -263,6 +262,7 @@ package net.wg.gui.lobby.settings
          this.MSAA_QUALITYLabel = null;
          this.MSAA_QUALITYValue = null;
          this.MSAA_QUALITYStepSlider = null;
+         this.UI_EFFECTSCheckbox = null;
          this.RENDER_PIPELINELabel = null;
          this.RENDER_PIPELINEButtonBar = null;
          this.TEXTURE_QUALITYLabel = null;
@@ -425,7 +425,6 @@ package net.wg.gui.lobby.settings
          this.gammaLabel = this.screenForm.gammaLabel;
          this.gammaSettingButton = this.screenForm.gammaSettingButton;
          this.isColorBlindCheckbox = this.screenForm.isColorBlindCheckbox;
-         this.uiEffectsCheckbox = this.screenForm.uiEffectsCheckbox;
          this.colorFilterLabel = this.screenForm.colorFilterLabel;
          this.colorFilterNameLabel = this.screenForm.colorFilterNameLabel;
          this.colorFilterImage = this.screenForm.colorFilterImage;
@@ -492,6 +491,7 @@ package net.wg.gui.lobby.settings
          this.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox = _loc1_.SEMITRANSPARENT_LEAVES_ENABLEDCheckbox;
          this.TERRAIN_TESSELLATION_ENABLEDCheckbox = _loc1_.TERRAIN_TESSELLATION_ENABLEDCheckbox;
          this.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox = _loc1_.SNIPER_MODE_TERRAIN_TESSELLATION_ENABLEDCheckbox;
+         this.UI_EFFECTSCheckbox = this.screenForm.UI_EFFECTSCheckbox;
       }
    }
 }

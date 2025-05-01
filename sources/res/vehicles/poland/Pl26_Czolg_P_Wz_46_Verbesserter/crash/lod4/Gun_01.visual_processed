@@ -48,7 +48,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.008905 0.145438 3.027875</groupOrigin>
@@ -60,5 +60,5 @@
 		<max>0.460791 0.574732 6.052126</max>
 	</boundingBox>
 	<geometrySize>1276</geometrySize>
-	<minUVDensity>0.003534</minUVDensity>
+	<minUVDensity>0.005242</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R224_IS_3_1945/normal/lod3/Shaft_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.024898 -0.001192 -0.084780</min>
+		<max>0.012205 2.395082 0.045953</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/russian/R224_IS_3_1945/normal/lod2/Shaft_01</nodelessVisual>
+</root>

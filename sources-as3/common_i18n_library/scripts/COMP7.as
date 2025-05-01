@@ -807,6 +807,8 @@ package
       
       public static const BATTLERESULT_PERSONAL_TOOLTIP_DESCR:String = "#comp7:battleResult/personal/tooltip/descr";
       
+      public static const TOURNAMENT_BATTLERESULT_PERSONAL_TOOLTIP_DESCR:String = "#comp7:tournament/battleResult/personal/tooltip/descr";
+      
       public static const BATTLERESULT_PERSONAL_TOOLTIP_LOSETITLE:String = "#comp7:battleResult/personal/tooltip/loseTitle";
       
       public static const BATTLERESULT_PERSONAL_TOOLTIP_LOSEDESCR:String = "#comp7:battleResult/personal/tooltip/loseDescr";

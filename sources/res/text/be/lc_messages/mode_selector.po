@@ -26,6 +26,9 @@ msgstr "Баявы пропуск, сезон %(seasonNum)s"
 msgid "event/finished"
 msgstr "Рангавыя баі завершаны"
 
+msgid "event/notStarted"
+msgstr "Рангавыя баі пачнуцца %(date)s"
+
 msgid "event/paused"
 msgstr "Рангавыя баі часова недаступныя"
 
@@ -40,9 +43,9 @@ msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"
 
 msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
 msgstr ""
-"Играя в режиме {whiteSpanish_open}«Стальной охотник»{whiteSpanish_close}, вы"
-" будете зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
-"пропуска."
+"Гуляючы ў рэжыме {whiteSpanish_open}«Сталёвы паляўнічы»{whiteSpanish_close},"
+" вы будзеце здабываць ачкі. Яны патрэбны для прасоўвання па прагрэсіі "
+"Баявога пропуска."
 
 msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
 msgstr "Ачкі Баявога пропуска"
@@ -87,10 +90,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Событие «Грозовой медведь» завершено"
+msgstr "Падзея «Навальнічны мядзведзь» завершана"
 
 msgid "mode/comp7/seasonStart"
-msgstr "Событие «Грозовой медведь» начнётся %(date)s"
+msgstr "Падзея «Навальнічны мядзведзь» пачнецца %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Рангавая неактыўнасць"
@@ -194,7 +197,7 @@ msgid "mode/ranked/battlePassTooltip/header"
 msgstr "Ачкі Баявога пропуска"
 
 msgid "mode/ranked/condition"
-msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s V&nbsp;узровень"
+msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s VI&nbsp;узровень"
 
 msgid "mode/ranked/description"
 msgstr "Рэжым з прагрэсіяй і ўзнагародамі."
@@ -214,9 +217,9 @@ msgstr "Глабальная карта і турніры."
 
 msgid "mode/strongholdsBattlesList/battlePassTooltip/body"
 msgstr ""
-"Участвуя в {whiteSpanish_open}Вылазках{whiteSpanish_close} и "
-"{whiteSpanish_open}Наступлениях{whiteSpanish_close} в Укрепрайоне, вы будете"
-" зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
+"Беручы ўдзел у {whiteSpanish_open}Вылазках{whiteSpanish_close} і "
+"{whiteSpanish_open}Наступленнях{whiteSpanish_close} ва Умацаваным раёне, вы "
+"будзеце здабываць ачкі. Яны патрэбны для прасоўвання па прагрэсіі Баявога "
 "пропуска."
 
 msgid "mode/strongholdsBattlesList/battlePassTooltip/header"

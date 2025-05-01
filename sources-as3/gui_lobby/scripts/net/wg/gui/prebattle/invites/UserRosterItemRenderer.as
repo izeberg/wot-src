@@ -138,7 +138,6 @@ package net.wg.gui.prebattle.invites
       
       private function afterSetData() : void
       {
-         var _loc2_:Array = null;
          if(this.status == null)
          {
             return;
@@ -149,7 +148,7 @@ package net.wg.gui.prebattle.invites
             return;
          }
          var _loc1_:String = this._model.fullName;
-         _loc2_ = this._model.tags;
+         var _loc2_:Array = this._model.tags;
          this.label = _loc1_;
          if(UserTags.isIgnored(_loc2_) || UserTags.isMuted(_loc2_))
          {

@@ -113,22 +113,37 @@ msgstr "Сёння апошні дзень падзеі, і вы ўжо дася
 msgid "footer/tooltip/restriction/left/title"
 msgstr "Купля недаступная"
 
-msgid "guaranteedReward/boxesLeft"
+msgid "guaranteedReward/boxesLeft/bonus"
+msgstr "Яшчэ кантэйнераў да гарантаванай узнагароды, калі не выпадзе раней:"
+
+msgid "guaranteedReward/boxesLeft/vehicle"
 msgstr ""
 "Яшчэ кантэйнераў да гарантаванай машыны %(level)s узроўню, калі не выпадзе "
 "раней: "
 
-msgid "guaranteedReward/next"
+msgid "guaranteedReward/next/bonus"
+msgstr "Гарантаваная ўзнагарода ў наступным кантэйнеры!"
+
+msgid "guaranteedReward/next/vehicle"
 msgstr "Гарантаваная машына %(level)s узроўню ў наступным кантэйнеры!"
 
-msgid "guaranteedRewardTooltip/block1/text"
+msgid "guaranteedRewardTooltip/block1/bonus/text"
+msgstr ""
+"Гарантаваная ўзнагарода — найбольш каштоўная гульнявая маёмасць са спіса "
+"магчымага змесціва кантэйнераў. Узнагарода гарантавана выпадае не пазней за "
+"%(boxNumber)s-ы кантэйнер. Калі такая выпадзе раней — адлік пачнецца нанова."
+
+msgid "guaranteedRewardTooltip/block1/bonus/title"
+msgstr "Механіка гарантаванай узнагароды"
+
+msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
 "Гарантаваны танк — прэміум машына %(level)s узроўню са спіса магчымага "
 "змесціва кантэйнераў. Танк гарантавана выпадзе не пазней за %(boxNumber)s-ы "
 "кантэйнер. Калі атрымаеце машыну раней, адлік пачнецца нанова."
 
-msgid "guaranteedRewardTooltip/block1/title"
-msgstr "Механіка гарантаванага танка:"
+msgid "guaranteedRewardTooltip/block1/vehicle/title"
+msgstr "Механіка гарантаванага танка"
 
 msgid "guaranteedRewardTooltip/block2/text"
 msgstr "Лічыльнік гарантаванай узнагароды агульны для наступных кантэйнераў:"
@@ -138,11 +153,23 @@ msgstr "Агульны лічыльнік узнагарод:"
 
 msgid "guaranteedRewardTooltip/block3/text"
 msgstr ""
+"Маёмасць змешчана ў тры паслядоўныя спісы/этапы. Каб перайсці да наступнага "
+"спіса, трэба атрымаць усю маёмасць з «Асноўных узнагарод» бягучага спіса."
+
+msgid "guaranteedRewardTooltip/block3/title"
+msgstr "Гарантаваная ўзнагарода з этапаў"
+
+msgid "guaranteedRewardTooltip/block4/bonus/text"
+msgstr ""
+"Узнагароду з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
+
+msgid "guaranteedRewardTooltip/block4/vehicle/text"
+msgstr ""
 "Калі вы ўжо маеце ўсю тэхніку са спіса магчымага змесціва кантэйнераў, то "
 "паводле механікі выпадання гарантаванага танка ўсе наступныя машыны, "
 "атрыманыя з кантэйнераў, будуць кампенсаваны адпаведнай валютай."
 
-msgid "guaranteedRewardTooltip/block3/title"
+msgid "guaranteedRewardTooltip/block4/vehicle/title"
 msgstr "Калі ўся тэхніка ўжо атрымана:"
 
 msgid "keyWelcomeScreen/content/first/description"
@@ -175,7 +202,7 @@ msgid "keyWelcomeScreen/header/titleMain"
 msgstr "Кантэйнер «Дзень нараджэння 2024»"
 
 msgid "lootBox/slot/description"
-msgstr "%(idx)s. Вероятность выпадения одной из наград: "
+msgstr "%(idx)s. Імавернасць выпадзення адной з узнагарод: "
 
 msgid "lootboxRotationTooltip/caption"
 msgstr "Вы можаце атрымаць адну з узнагарод бягучага этапу"
@@ -197,8 +224,8 @@ msgstr "Этап"
 msgid "lootboxRotationTooltip/title"
 msgstr "Спісы змесціва"
 
-msgid "lootboxesWithKeys/about"
-msgstr "Пра кантэйнеры з ключамі"
+msgid "lootboxesWithKeys/about/default"
+msgstr "Пра кантэйнер"
 
 msgid "lootboxesWithKeys/availableLockpicks"
 msgstr "Даступна адмычак для кантэйнераў: %(icon) %(count)"
@@ -234,6 +261,9 @@ msgstr "Адкрыць яшчэ 1"
 msgid "notification/lootBoxInvoiceReceived"
 msgstr "Налічана"
 
+msgid "openBoxScreen/about"
+msgstr "Пра кантэйнеры з этапамі"
+
 msgid "openBoxScreen/backBtn/0"
 msgstr "У ГАРАЖ"
 
@@ -255,18 +285,22 @@ msgstr "У Гараж"
 msgid "openBoxScreen/count/mult"
 msgstr "×%(count)s"
 
+msgid "openBoxScreen/noCurrentLootboxesMain"
+msgstr "У вас няма выбранага кантэйнера"
+
 msgid "openBoxScreen/noLootboxesMain"
 msgstr "У вас няма кантэйнераў"
 
 msgid "openBoxScreen/noLootboxesSecondary"
 msgstr ""
-"Каб атрымаць кантэйнеры, бярыце ўдзел у пэўных падзеях і выконвайце звязаныя"
-" з імі баявыя задачы."
+"Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
+"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы."
 
 msgid "openBoxScreen/noLootboxesShopSecondary"
 msgstr ""
-"Кантэйнеры можна атрымаць за выкананне пэўных задач, а таксама купіць ва "
-"ўнутрыгульнявой або Прэміум краме."
+"Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
+"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы. Пэўныя кантэйнеры можна"
+" дакупіць у&nbsp;гульнявой Краме."
 
 msgid "optional/buy"
 msgstr "Дакупіць"
@@ -358,6 +392,17 @@ msgstr "Этап %(stage)"
 msgid "probabilitiesOverlay/tabTooltip"
 msgstr "Узнагароды са %(stage)s спіса маёмасці."
 
+msgid "probabilityGuaranteedRewardTooltip/text1"
+msgstr "Шанц выпадання прадмета з указанай групы."
+
+msgid "probabilityGuaranteedRewardTooltip/text2"
+msgstr ""
+"Узнагарода з гэтага спіса гарантавана выпадзе не пазней за %(boxNumber)s-ы "
+"кантэйнер. Калі атрымаеце ўзнагароду з групы раней, адлік пачнецца нанова."
+
+msgid "probabilityGuaranteedRewardTooltip/title"
+msgstr "Імавернасць і гарантаваныя ўзнагароды"
+
 msgid "rewards/controls/close"
 msgstr "ЗАКРЫЦЬ"
 
@@ -417,7 +462,7 @@ msgid "time/minutes"
 msgstr "хв"
 
 msgid "time/seconds"
-msgstr "с"
+msgstr "c"
 
 msgid "tooltips/bonusGroup/headerDescription"
 msgstr "Вы атрымаеце адну з узнагарод спіса"
@@ -533,14 +578,30 @@ msgstr ""
 msgid "tooltips/probabilityButton/title"
 msgstr "Імавернасць выпадання"
 
+msgid "tooltips/probabilityStageButtons/description1"
+msgstr ""
+"Маёмасць змешчана ў тры паслядоўныя спісы, названыя этапамі. Каб перайсці да"
+" наступнага спіса, трэба атрымаць усю маёмасць з катэгорыі «Асноўныя "
+"ўзнагароды» бягучага этапу."
+
+msgid "tooltips/probabilityStageButtons/description2"
+msgstr ""
+"Узнагароду з трэцяга спіса можна атрымаць неабмежаваную колькасць разоў."
+
+msgid "tooltips/probabilityStageButtons/title"
+msgstr "Спісы змесціва"
+
 msgid "triggerHint/title"
 msgstr "Наяўныя ключы і адмычкі ад кантэйнераў «Дзень нараджэння 2024»."
 
 msgid "videoreward/button/title"
 msgstr "Працягнуць"
 
-msgid "videoreward/description/text"
-msgstr "Прыбыў гарантаваны танк"
+msgid "videoreward/description/commonText"
+msgstr "Гарантаваная ўзнагарода!"
+
+msgid "videoreward/description/vehicleText"
+msgstr "Прыбыў гарантаваны танк!"
 
 msgid "videoreward/header/title"
 msgstr "Гарантаваная ўзнагарода!"

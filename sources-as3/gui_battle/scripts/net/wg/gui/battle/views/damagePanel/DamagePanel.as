@@ -192,10 +192,9 @@ package net.wg.gui.battle.views.damagePanel
       
       override protected function configUI() : void
       {
-         var _loc1_:BattleAtlasSprite = null;
          var _loc2_:int = 0;
          super.configUI();
-         _loc1_ = null;
+         var _loc1_:BattleAtlasSprite = null;
          _loc2_ = getChildIndex(this.healthBar);
          var _loc3_:int = 0;
          while(_loc3_ < CRUISE_STATE_COUNT)

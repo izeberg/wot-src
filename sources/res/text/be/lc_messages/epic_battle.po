@@ -147,7 +147,7 @@ msgid "abilityInfo/units/meter"
 msgstr "м"
 
 msgid "abilityInfo/units/seconds"
-msgstr "с"
+msgstr "c"
 
 msgid "advance_message_txt"
 msgstr "Рухайцеся на перадавую"
@@ -219,6 +219,9 @@ msgstr "Увага на пазіцыю!"
 msgid "command_shortcut/title"
 msgstr "Загады"
 
+msgid "deploymentMap/flamethrowerLimitReached"
+msgstr "Напрамак заблакаваны — дасягнуты максімум агнямётных танкаў"
+
 msgid "deploymentMap/lanePlayerLimitReached"
 msgstr "Напрамак заблакіраваны — дасягнуты максімум гульцоў"
 
@@ -226,7 +229,7 @@ msgid "deploymentMap/respawnWarning"
 msgstr "Павышаная рызыка"
 
 msgid "deploymentMap/spgLimitReached"
-msgstr "Напрамак заблакіраваны — дасягнуты максімум па тыпах тэхнікі"
+msgstr "Напрамак заблакаваны — дасягнуты максімум САУ"
 
 msgid "dialogs/quotedName"
 msgstr "«%(name)s»"

@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -0.001767 -2.452671</row3>
+					<row3>0.000000 -0.002632 -2.452671</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,79 +31,79 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -0.001767 2.004580</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_TrackUp_LFront__track_left_1</identifier>
-				<transform>
-					<row0>1.000000 -0.000000 -0.000000</row0>
-					<row1>0.000000 0.766045 0.642788</row1>
-					<row2>-0.000000 -0.642788 0.766045</row2>
-					<row3>-1.339084 0.020001 3.397802</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_TrackUp_LRear__track_left_0</identifier>
-				<transform>
-					<row0>-0.999998 -0.000000 -0.000000</row0>
-					<row1>0.000000 0.918308 -0.395866</row1>
-					<row2>0.000000 -0.395866 -0.918306</row2>
-					<row3>-1.339083 0.170000 -3.073559</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_TrackUp_RFront__track_right_1</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.766045 0.642788</row1>
-					<row2>0.000000 -0.642788 0.766045</row2>
-					<row3>1.345043 0.020000 3.397802</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_TrackUp_RRear__track_right_0</identifier>
-				<transform>
-					<row0>-1.000000 -0.000000 -0.000000</row0>
-					<row1>0.000000 0.918279 -0.395933</row1>
-					<row2>0.000000 -0.395933 -0.918279</row2>
-					<row3>1.345044 0.170000 -3.073861</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_TrackUp_LRear__track_left_1</identifier>
-				<transform>
-					<row0>-0.999999 0.000000 -0.000000</row0>
-					<row1>0.000000 0.894778 -0.446511</row1>
-					<row2>0.000000 -0.446510 -0.894776</row2>
-					<row3>-1.339083 0.150000 1.820986</row3>
+					<row3>0.000000 -0.002632 2.004580</row3>
 				</transform>
 			</node>
 			<node>
 				<identifier>HP_TrackUp_LFront__track_left_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.830207 0.557455</row1>
-					<row2>0.000000 -0.557455 0.830207</row2>
-					<row3>-1.337130 0.150000 0.834040</row3>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>-1.337349 0.178747 0.826387</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RRear__track_right_1</identifier>
+				<identifier>HP_TrackUp_LFront__track_left_1</identifier>
 				<transform>
-					<row0>-0.999999 0.000000 -0.000000</row0>
-					<row1>0.000000 0.894803 -0.446461</row1>
-					<row2>0.000000 -0.446461 -0.894802</row2>
-					<row3>1.345044 0.150000 1.824553</row3>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>-1.338534 0.172367 3.226475</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear__track_left_0</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>-1.337349 0.171729 -3.126897</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear__track_left_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>-1.338534 -0.227337 1.380329</row3>
 				</transform>
 			</node>
 			<node>
 				<identifier>HP_TrackUp_RFront__track_right_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.830231 0.557419</row1>
-					<row2>0.000000 -0.557419 0.830231</row2>
-					<row3>1.345044 0.150000 0.833340</row3>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>1.337349 0.178747 0.826387</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront__track_right_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>1.338534 0.172367 3.226474</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear__track_right_0</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>1.337349 0.171729 -3.126897</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear__track_right_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>1.338534 -0.227337 1.380329</row3>
 				</transform>
 			</node>
 			<node>
@@ -112,7 +112,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 -0.991637 -0.129058</row1>
 					<row2>0.000000 0.129058 -0.991637</row2>
-					<row3>-1.119680 0.434861 -3.506446</row3>
+					<row3>-1.119680 0.433997 -3.506446</row3>
 				</transform>
 			</node>
 			<node>
@@ -121,7 +121,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 -0.991637 -0.129058</row1>
 					<row2>0.000000 0.129058 -0.991637</row2>
-					<row3>1.119679 0.434861 -3.506446</row3>
+					<row3>1.119679 0.433997 -3.506446</row3>
 				</transform>
 			</node>
 			<node>
@@ -130,7 +130,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000666 0.662687 0.140119</row3>
+					<row3>0.000666 0.661822 0.140119</row3>
 				</transform>
 			</node>
 		</node>
@@ -145,13 +145,42 @@
 				0
 				<material>
 					<identifier>tank_hull_01</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/french/F119_Projet_Murat/Projet_Murat_hull_01_GMM.dds</Texture>
@@ -173,13 +202,13 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.009469 -0.001767 -0.004912</groupOrigin>
+				<groupOrigin>-0.009469 -0.002632 -0.004912</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.723344 -0.712306 -3.568980</min>
-		<max>1.704405 0.708771 3.559156</max>
+		<min>-1.723344 -0.713170 -3.568980</min>
+		<max>1.704405 0.707906 3.559156</max>
 	</boundingBox>
 	<geometrySize>211856</geometrySize>
 	<minUVDensity>0.002592</minUVDensity>

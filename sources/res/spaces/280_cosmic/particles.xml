@@ -11,27 +11,7 @@
 			<texture>particles/content_forward/PFX_textures/280_cosmic_shot.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_forward/PFX_textures/280_cosmic.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/280_cosmic.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_under_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
 			<texture>particles/content_forward/PFX_textures/280_cosmic.dds</texture>
 		</preload>
 		<preload>
@@ -40,10 +20,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/280_cosmic.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_under_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/280_cosmic.dds</texture>
 		</preload>
 		<preload>
@@ -239,6 +215,14 @@
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_smoke.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/105_germany_smoke.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks_8ka.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/environment/interior/280_cosmic_geyser.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosmic_geyser.vfx</fn_effect_bin>

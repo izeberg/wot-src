@@ -76,14 +76,10 @@
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -119,14 +115,10 @@
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned_crash.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						diffuseMap

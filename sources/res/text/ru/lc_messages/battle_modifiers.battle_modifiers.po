@@ -154,59 +154,11 @@ msgstr "Урон экипажу от падения"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перезарядка снаряжения"
 
-msgid "modifier/name/fakeEngineModifier"
-msgstr "Мощность двигателя (все, кроме ЛТ и СТ)"
-
-msgid "modifier/name/fakeEngineModifierLT"
-msgstr "Мощность двигателя (ЛТ)"
-
-msgid "modifier/name/fakeEngineModifierMT"
-msgstr "Мощность двигателя (СТ)"
-
 msgid "modifier/name/fakeModifierRepairCooldown"
 msgstr "Минимальное время перезарядки зоны ремонта после использования."
 
 msgid "modifier/name/fakeModifierRepairSpeed"
 msgstr "Скорость восстановления очков прочности машины."
-
-msgid "modifier/name/fakePiercingModifierLTSPGA"
-msgstr "Бронепробитие, 100 м (ЛТ, САУ штурмовые)"
-
-msgid "modifier/name/fakePiercingModifierMTHTATSPG"
-msgstr "Бронепробитие, 100 м (СТ, ТТ, ПТ-САУ)"
-
-msgid "modifier/name/fakeRadioModifier"
-msgstr "Радиус действия радиостанции (ЛТ, СТ, ТТ, ПТ-САУ, САУ штурмовые)"
-
-msgid "modifier/name/fakeRadioModifierSPG"
-msgstr "Радиус действия радиостанции (САУ поддержки)"
-
-msgid "modifier/name/fakeReloadModifierATSPG"
-msgstr "Время перезарядки (ПТ-САУ)"
-
-msgid "modifier/name/fakeReloadModifierHT"
-msgstr "Время перезарядки (ТТ)"
-
-msgid "modifier/name/fakeReloadModifierLT"
-msgstr "Время перезарядки (ЛТ)"
-
-msgid "modifier/name/fakeReloadModifierMTSPGA"
-msgstr "Время перезарядки (СТ, САУ штурмовые)"
-
-msgid "modifier/name/fakeReloadModifierSPGS"
-msgstr "Время перезарядки (САУ поддержки)"
-
-msgid "modifier/name/fakeVisionModifierATSPGSPGA"
-msgstr "Радиус обзора (ПТ-САУ, САУ штурмовые)"
-
-msgid "modifier/name/fakeVisionModifierLT"
-msgstr "Радиус обзора (ЛТ)"
-
-msgid "modifier/name/fakeVisionModifierMTHT"
-msgstr "Радиус обзора (СТ, ТТ)"
-
-msgid "modifier/name/fakeVisionModifierSPGS"
-msgstr "Радиус обзора (САУ поддержки)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максимальная скорость движения вперёд"

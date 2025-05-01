@@ -8,6 +8,7 @@ class MissionStatus(Enum):
     ACTIVE = 'active'
     COMPLETED = 'completed'
     COMPLETEDPERFECT = 'completedPerfect'
+    DISABLED = 'disabled'
 
 
 class PersonalMissionsNewCampaignTooltipViewModel(ViewModel):

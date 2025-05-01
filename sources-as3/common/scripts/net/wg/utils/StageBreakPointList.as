@@ -11,7 +11,7 @@ package net.wg.utils
       
       public static const LARGE:StageBreakPoint = new StageBreakPoint("Large",1920,1080);
       
-      public static const EXTRA_LARGE:StageBreakPoint = new StageBreakPoint("Extra Large",2200,1200);
+      public static const EXTRA_LARGE:StageBreakPoint = new StageBreakPoint("Extra Large",2560,1440);
       
       private static const _list:Vector.<StageBreakPoint> = new <StageBreakPoint>[StageBreakPointList.EXTRA_SMALL,StageBreakPointList.SMALL,StageBreakPointList.MEDIUM,StageBreakPointList.LARGE,StageBreakPointList.EXTRA_LARGE];
        

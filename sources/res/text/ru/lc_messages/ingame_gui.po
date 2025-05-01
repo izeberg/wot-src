@@ -280,6 +280,12 @@ msgstr "Двигаюсь на позицию!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Двигаюсь в %(gridId)s"
 
+msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
+msgstr "Вызываю огонь на себя!"
+
+msgid "chat_shortcuts/hb_ability/last_stand"
+msgstr "Бьёмся до конца!"
+
 msgid "chat_shortcuts/help_me"
 msgstr "Нужна помощь!"
 
@@ -675,6 +681,9 @@ msgstr "Урон артобстрелом"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Урон орудием"
 
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Урон от запретной зоны"
+
 msgid "efficiencyRibbons/armor"
 msgstr "Удар сдержан"
 
@@ -743,6 +752,9 @@ msgstr "Цель защищена"
 
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захвачена"
+
+msgid "efficiencyRibbons/eventDeathOnPhaseChange"
+msgstr "Машина уничтожена"
 
 msgid "efficiencyRibbons/kill"
 msgstr "Уничтожил"
@@ -865,7 +877,7 @@ msgid "flags/timer"
 msgstr "%(time)s с..."
 
 msgid "fortConsumables/timer/postfix"
-msgstr "с..."
+msgstr "с"
 
 msgid "helpScreen/hint/description"
 msgstr "для знакомства с особенностями машины"
@@ -1688,6 +1700,11 @@ msgid "postmortem/tips/exitHangar/text"
 msgstr ""
 "Esc > Выйти в Ангар.\n"
 "Начните бой на другой машине."
+
+msgid "postmortem/tips/exitHangar/text_hb"
+msgstr ""
+"Esc > Выйти в Ангар.\n"
+"Попробуйте свои силы в новом бою!"
 
 msgid "postmortem/tips/observerMode/label"
 msgstr "Режим Наблюдателя"

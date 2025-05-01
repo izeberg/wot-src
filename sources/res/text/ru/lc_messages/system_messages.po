@@ -1344,34 +1344,95 @@ msgstr ""
 msgid "customization/vehicle_locked"
 msgstr "Изменение внешнего вида невозможно. Машина заблокирована."
 
-msgid "daily_quests/reroll/quest_is_already_completed"
-msgstr "Замена стандартной задачи недоступна: задача уже выполнена."
+msgid "daily_quests/bonus_quest_available/body"
+msgstr ""
+"Разблокирован доступ к бонусной задаче после выполнения всех стандартных "
+"задач."
 
-msgid "daily_quests/reroll/reroll_disabled"
-msgstr "Замена стандартной задачи недоступна: операция заблокирована."
+msgid "daily_quests/bonus_quest_available/title"
+msgstr "Бонусная ежедневная задача стала доступна"
 
-msgid "daily_quests/reroll/reroll_in_cooldown"
-msgstr "Замена стандартной задачи недоступна: операция заморожена."
+msgid "daily_quests/epic_quest_off/body"
+msgstr ""
+"По техническим причинам данная функциональность временно недоступна. "
+"Приносим извинения за неудобства."
 
-msgid "daily_quests/reroll/success"
-msgstr "Замена стандартной задачи выполнена успешно."
+msgid "daily_quests/epic_quest_off/title"
+msgstr "Еженедельная задача временно недоступна"
 
-msgid "daily_quests/reroll/unknown_error"
-msgstr "Замена стандартной задачи недоступна. Повторите попытку позже."
+msgid "daily_quests/epic_quest_on/body"
+msgstr "Технические проблемы решены. Приносим извинения за неудобства."
+
+msgid "daily_quests/epic_quest_on/title"
+msgstr "Еженедельная задача снова доступна"
+
+msgid "daily_quests/notification/epic_quest/body"
+msgstr ""
+"Ежедневные задачи были обновлены, весь накопленный ранее прогресс сброшен. "
+"Начислена компенсация за потерю прогресса по цепочке ежедневных задач."
+
+msgid "daily_quests/notification/epic_quest/compensation"
+msgstr "Компенсация:"
+
+msgid "daily_quests/notification/epic_quest/header"
+msgstr "Компенсация за сброс прогресса по ежедневным задачам"
+
+msgid "daily_quests/premium/active"
+msgstr "Ежедневные премиум задачи стали доступны для выполнения."
+
+msgid "daily_quests/premium/reroll/quest_is_already_completed"
+msgstr ""
+"Условия ежедневных премиум задач не были заменены: вы не можете заменить "
+"условия в текущих задачах."
+
+msgid "daily_quests/premium/reroll/success"
+msgstr "Условия ежедневных премиум задач успешно заменены."
+
+msgid "daily_quests/premium/reroll/unknown_error"
+msgstr ""
+"Условия ежедневных премиум задач не были заменены по техническим причинам. "
+"Повторите попытку позже. "
+
+msgid "daily_quests/reroll_off/body"
+msgstr ""
+"По техническим причинам данная функциональность временно недоступна. "
+"Приносим извинения за неудобства."
+
+msgid "daily_quests/reroll_off/title"
+msgstr "Замена ежедневных задач временно недоступна"
+
+msgid "daily_quests/reroll_on/body"
+msgstr "Технические проблемы решены. Приносим извинения за неудобства."
+
+msgid "daily_quests/reroll_on/title"
+msgstr "Замена ежедневных задач снова доступна"
+
+msgid "daily_quests/simple/reroll/quest_is_already_completed"
+msgstr ""
+"Условия стандартных ежедневных задач не были заменены: вы не можете заменить"
+" условия в текущих задачах."
+
+msgid "daily_quests/simple/reroll/success"
+msgstr "Условия стандартных ежедневных задач успешно заменены."
+
+msgid "daily_quests/simple/reroll/unknown_error"
+msgstr ""
+"Условия стандартных ежедневных задач не были заменены по техническим "
+"причинам. Повторите попытку позже."
 
 msgid "daily_quests/switch_off/body"
 msgstr ""
-"По техническим причинам данная функциональность временно недоступна.\n"
-"Приносим свои извинения."
+"По техническим причинам данная функциональность временно недоступна. "
+"Приносим извинения за неудобства."
 
 msgid "daily_quests/switch_off/title"
-msgstr "Стандартные задачи временно недоступны"
+msgstr "Ежедневные задачи временно недоступны"
 
 msgid "daily_quests/switch_on/body"
 msgstr "Технические проблемы решены. Приносим извинения за неудобства."
 
 msgid "daily_quests/switch_on/title"
-msgstr "Стандартные задачи снова доступны"
+msgstr "Ежедневные задачи снова доступны"
 
 msgid "daily_xp_bonus/switch_off/body"
 msgstr ""
@@ -2771,9 +2832,7 @@ msgstr ""
 "Выбор задачи временно невозможен. Дождитесь возвращения из боя группы машин."
 
 msgid "personalMissions/select/success"
-msgstr ""
-"Выбор боевых задач выполнен успешно. Текущие выбранные задачи: "
-"%(questNames)s."
+msgstr "Выбор выполнен успешно. Текущие выбранные задачи: %(questNames)s."
 
 msgid "personalMissions/switch/campaign/disabled"
 msgstr "Кампания временно недоступна для выполнения."
@@ -3070,17 +3129,17 @@ msgstr "Действие недоступно. Дождитесь заверше
 
 msgid "premium_quests/switch_off/body"
 msgstr ""
-"По техническим причинам данная функциональность временно недоступна.\n"
-"Приносим свои извинения."
+"По техническим причинам данная функциональность временно недоступна. "
+"Приносим извинения за неудобства."
 
 msgid "premium_quests/switch_off/title"
-msgstr "Премиум задачи временно недоступны"
+msgstr "Ежедневные премиум задачи временно недоступны"
 
 msgid "premium_quests/switch_on/body"
 msgstr "Технические проблемы решены. Приносим извинения за неудобства."
 
 msgid "premium_quests/switch_on/title"
-msgstr "Премиум задачи снова доступны"
+msgstr "Ежедневные премиум задачи снова доступны"
 
 msgid "progressiveReward/error"
 msgstr "В данный момент операция невозможна. Попробуйте позже."
@@ -3738,6 +3797,11 @@ msgstr ""
 "можете в него вступить из-за некорректно выбранной машины. Выберите другую "
 "машину."
 
+msgid "squad/notValidMaxFlamethrowerDeleted"
+msgstr ""
+"Машина %(vehName)s исключена из состава взвода из-за ограничения по "
+"количеству огнемётных танков во взводе. Выберите другую машину."
+
 msgid "squad/notValidMaxScoutDeleted"
 msgstr ""
 "Машина %(vehName)s исключена из состава взвода из-за ограничения на "
@@ -4016,6 +4080,9 @@ msgstr "Невозможно установить машину в слот."
 
 msgid "unit/errors/HAS_IN_ARENA_MEMBERS"
 msgstr "Действие недоступно. Часть отряда ещё в бою."
+
+msgid "unit/errors/HB_BANNED"
+msgstr "Вы временно отстранены от боёв в данном режиме."
 
 msgid "unit/errors/INSUFFICIENT_ROLE"
 msgstr "У вас нет прав на выполнение операции."

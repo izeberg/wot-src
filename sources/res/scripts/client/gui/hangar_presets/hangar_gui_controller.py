@@ -42,6 +42,9 @@ class HangarGuiController(IHangarGuiController, IPrbListener):
         else:
             return
 
+    def getPresetGetter(self):
+        return self.__getCurrentPresetGetter()
+
     def getAmmoInjectViewAlias(self):
         presetGetter = self.__getCurrentPresetGetter()
         if presetGetter is not None:
@@ -101,7 +104,9 @@ class HangarGuiController(IHangarGuiController, IPrbListener):
         return [ k for k, v in preset.visibleComponents.items() if v.isChangeable ]
 
     def __getCurrentPresetGetter(self):
-        if self.prbEntity is None:
+        prbEntity = self.prbEntity
+        if prbEntity is None:
             return
         else:
-            return self.__presetsGetters.get(self.prbEntity.getQueueType(), self.__presetsGetters[QUEUE_TYPE.RANDOMS])
+            presetsGetter = self.__presetsGetters.get(self.prbEntity.getQueueType(), self.__presetsGetters[QUEUE_TYPE.RANDOMS])
+            return presetsGetter.createByPrbEntity(prbEntity)

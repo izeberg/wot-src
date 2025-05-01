@@ -11,6 +11,7 @@
 	<xmlns:sweden>sweden</xmlns:sweden>
 	<xmlns:poland>poland</xmlns:poland>
 	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>desert</season>
@@ -388,6 +389,10 @@
 					2.2 2.2 2.05 0.000000
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.2 2.2 2.05 0.000000
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -808,6 +813,10 @@
 					3 3 7.09 2.51
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					3 3 7.09 2.51
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -1232,6 +1241,10 @@
 					2.4 2.4 1.11 0.29
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.4 2.4 1.11 0.29
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -1648,6 +1661,10 @@
 					1.6 1.6 0.97 0.17
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.6 1.6 0.97 0.17
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2 2 0.000000 0.000000
 					<!--BW_String-->
@@ -2084,6 +2101,10 @@
 					2 2 0.02 0.37
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2 2 0.02 0.37
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2 2 0.000000 0.000000
 					<!--BW_String-->
@@ -2512,6 +2533,10 @@
 					2.1 2.1 0.71 0.000000
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.1 2.1 0.71 0.000000
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					3 3 0.000000 0.000000
 					<!--BW_String-->
@@ -2936,6 +2961,10 @@
 					2.4 2.4 1.57 3.71
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.4 2.4 1.57 3.71
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					3.89 3.89 1.23 0.82
 					<!--BW_String-->
@@ -3364,6 +3393,10 @@
 					3.8 3.8 0.36 1.91
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					3.8 3.8 0.36 1.91
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.94 2.94 0.000000 0.000000
 					<!--BW_String-->
@@ -3792,6 +3825,10 @@
 					2.8 2.8 1.13 0.64
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.8 2.8 1.13 0.64
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.41 2.41 0.59 0.35
 					<!--BW_String-->
@@ -4220,6 +4257,10 @@
 					1.94 1.94 0.7 0.23
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.94 1.94 0.7 0.23
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.94 1.94 0.7 0.23
 					<!--BW_String-->
@@ -4660,6 +4701,10 @@
 					1.6 1.6 4.39 2.24
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.6 1.6 4.39 2.24
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.8 1.8 1.91 2.51
 					<!--BW_String-->
@@ -8775,6 +8820,10 @@
 					2.29 2.29 0.47 0.41
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.29 2.29 0.47 0.41
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.29 2.29 0.47 0.41
 					<!--BW_String-->
@@ -9610,6 +9659,10 @@
 					2.06 2.06 0.59 0.29
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.06 2.06 0.59 0.29
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.33 2.33 0.59 0.29
 					<!--BW_String-->
@@ -10027,6 +10080,10 @@
 					1.47 1.47 0.41 0.12
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.47 1.47 0.41 0.12
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.67 1.67 0.41 0.12
 					<!--BW_String-->
@@ -10436,6 +10493,10 @@
 					2.52 2.52 0.35 1.47
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.52 2.52 0.35 1.47
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.2 1.2 0.35 1.47
 					<!--BW_String-->
@@ -10849,6 +10910,10 @@
 					1.93 1.93 0.000000 0.000000
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.93 1.93 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.93 1.93 0.000000 0.000000
 					<!--BW_String-->
@@ -12500,6 +12565,10 @@
 					2.58 2.58 0.23 0.000000
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.58 2.58 0.23 0.000000
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.58 2.58 0.23 0.000000
 					<!--BW_String-->
@@ -13798,6 +13867,10 @@
 					2.23 2.23 0.35 0.47
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.23 2.23 0.35 0.47
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.6 1.6 0.35 0.47
 					<!--BW_String-->
@@ -14555,6 +14628,10 @@
 					1.53 1.53 0.82 0.000000
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.53 1.53 0.82 0.000000
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.53 1.53 0.82 0.000000
 					<!--BW_String-->
@@ -14956,6 +15033,10 @@
 					1.06 1.06 0.59 1.64
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.06 1.06 0.59 1.64
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.06 1.06 0.59 1.64
 					<!--BW_String-->
@@ -16074,6 +16155,10 @@
 					2.23 2.23 0.000000 0.000000
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.23 2.23 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.23 2.23 0.000000 0.000000
 					<!--BW_String-->
@@ -16941,6 +17026,10 @@
 					1.69 1.69 0.02 0.37
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.69 1.69 0.02 0.37
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.97 1.97 0.000000 0.000000
 					<!--BW_String-->
@@ -17379,6 +17468,10 @@
 					1.69 1.69 0.42 0.37
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.69 1.69 0.42 0.37
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.97 1.97 0.4 0.000000
 					<!--BW_String-->
@@ -17821,6 +17914,10 @@
 					2.25 2.25 0.02 0.37
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.25 2.25 0.02 0.37
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					2.62 2.62 0.000000 0.000000
 					<!--BW_String-->

@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/american/A40_T95/_skins/A40_T95_SC_3DSt/crash/lod4/Gun_01</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.529119 -0.571564 0.051400</min>
+		<max>0.526298 0.549490 5.336401</max>
+	</visibilityBox>
 </root>

@@ -60,7 +60,8 @@ BACKWARD_QUALITY_PARAMS = frozenset([
  KPI.Name.TEMPERATURE_COOLING_TIME,
  KPI.Name.TEMPERATURE_COOLING_DELAY,
  THERMAL_VISION_OBSERVE_TIME,
- THERMAL_VISION_RELOAD_TIME])
+ THERMAL_VISION_RELOAD_TIME,
+ 'vehicleWeight'])
 PARAMS_WITH_BATTLE_MODIFIERS = {'maxHealth': {
                'vehicleHealth'}}
 NEGATIVE_PARAMS = [
@@ -87,9 +88,7 @@ def normalizeChassisRepairTime(value):
 
 PARAMS_NORMALIZATION_MAP = {SHOT_DISPERSION_ANGLE: normalizeShotDispersionValue, 
    CHASSIS_REPAIR_TIME: normalizeChassisRepairTime}
-_CUSTOM_QUALITY_PARAMS = {'vehicleWeight': (
-                   True, False), 
-   'clipFireRate': (
+_CUSTOM_QUALITY_PARAMS = {'clipFireRate': (
                   True, True, False), 
    BURST_FIRE_RATE: (
                    True, False, False), 

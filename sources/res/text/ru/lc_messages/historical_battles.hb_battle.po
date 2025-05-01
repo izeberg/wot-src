@@ -1,0 +1,551 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleLoading/hintAll_1/description"
+msgstr ""
+"После уничтожения вы сможете вернуться в бой на доступной машине "
+"подразделения."
+
+msgid "battleLoading/hintAll_1/title"
+msgstr "Система возрождения"
+
+msgid "battleLoading/hintAll_2/description"
+msgstr ""
+"Каждое подразделение имеет уникальные боевые способности, которые становятся"
+" мощнее с повышением уровня подразделения. Улучшайте подразделения и "
+"расширяйте потенциал своей машины."
+
+msgid "battleLoading/hintAll_2/title"
+msgstr "Используйте способности"
+
+msgid "battleLoading/hintAtt_1/description"
+msgstr ""
+"Наступайте на противника и уничтожьте его технику, обороняющую ключевые "
+"позиции."
+
+msgid "battleLoading/hintAtt_1/title"
+msgstr "Атакуйте!"
+
+msgid "battleLoading/hintAtt_2/description"
+msgstr ""
+"Противник будет организовывать контратаки. Готовьтесь сдерживать его натиск."
+
+msgid "battleLoading/hintAtt_2/title"
+msgstr "Отбивайте контратаки"
+
+msgid "battleLoading/hintAtt_3/description"
+msgstr ""
+"Держитесь единой группой и поддерживайте союзников. Чтобы победить, "
+"сосредоточьтесь на уничтожении командирских машин противника, пока они не "
+"вызвали подкрепление."
+
+msgid "battleLoading/hintAtt_3/title"
+msgstr "Командиры противника"
+
+msgid "battleLoading/hintDef_1/description"
+msgstr ""
+"Защищайте союзную артиллерию — это ваша основная задача. Как минимум одна "
+"артустановка должна остаться в живых."
+
+msgid "battleLoading/hintDef_1/title"
+msgstr "Защищайте артиллерию"
+
+msgid "battleLoading/hintDef_2/description"
+msgstr ""
+"Сохраните свои силы, чтобы перейти в контрнаступление и выполнить "
+"дополнительную задачу. За это вы получите больше очков победы."
+
+msgid "battleLoading/hintDef_2/title"
+msgstr "Контратака"
+
+msgid "battleTimer/defend"
+msgstr "ВРЕМЯ ГЕРОЕВ"
+
+msgid "battleTimer/waiting"
+msgstr "Ожидание игроков..."
+
+msgid "confirmQuit/cancel"
+msgstr "Отменить"
+
+msgid "confirmQuit/confirm"
+msgstr "В Ангар"
+
+msgid "confirmQuit/leaver/confirm"
+msgstr "Покинуть"
+
+msgid "confirmQuit/leaver/descriptionAlive"
+msgstr ""
+"Вы нужны команде! Выход из боя до уничтожения собственной машины "
+"расценивается как дезертирство и может повлечь применение дисциплинарного "
+"взыскания."
+
+msgid "confirmQuit/leaver/descriptionDead"
+msgstr ""
+"Вы нужны команде! Даже если ваша машина уничтожена, {E9E2BF_Open}вы "
+"вернётесь в бой{E9E2BF_Close}, если команда перейдёт в другую фазу. Бегство "
+"с поля боя расценивается как дезертирство и может повлечь применение "
+"дисциплинарного взыскания."
+
+msgid "confirmQuit/leaver/title"
+msgstr "Бежать с поля боя?"
+
+msgid "confirmQuit/title"
+msgstr "Покинуть бой?"
+
+msgid "dynamicSquad/receivedFromSquad"
+msgstr "Нажмите, чтобы принять приглашение и присоединиться ко взводу."
+
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Урон от запретной зоны"
+
+msgid "efficiencyRibbons/TotalVehiclesHealApplied"
+msgstr "Полевой ремонт союзников"
+
+msgid "efficiencyRibbons/artillery"
+msgstr "Урон от артобстрела"
+
+msgid "efficiencyRibbons/artilleryMortar"
+msgstr "Урон от миномётного обстрела"
+
+msgid "efficiencyRibbons/artilleryOnYourself"
+msgstr "Урон от способности «Огонь на себя»"
+
+msgid "efficiencyRibbons/artilleryRocket"
+msgstr "Урон от залпа «Катюш»"
+
+msgid "efficiencyRibbons/bombercas"
+msgstr "Урон от налёта штурмовика"
+
+msgid "efficiencyRibbons/bombers"
+msgstr "Урон от авиаудара"
+
+msgid "efficiencyRibbons/damageByHBMinefield"
+msgstr "Урон от минного поля"
+
+msgid "efficiencyRibbons/healSelfVehicleApplied"
+msgstr "Машина отремонтирована"
+
+msgid "efficiencyRibbons/healVehicleApplied"
+msgstr "Машина отремонтирована союзником"
+
+msgid "efficiencyRibbons/receivedBombersDamage"
+msgstr "Урон от артудара"
+
+msgid "eventStats/missionTask/defence"
+msgstr "Задача: защищайте союзную артиллерию, отбивая атаки противника."
+
+msgid "eventStats/missionTask/offence"
+msgstr ""
+"Задача: наступайте на ключевые позиции, отбивайте контратаки и уничтожайте "
+"командиров противника."
+
+msgid "eventStats/missionTitle/defence"
+msgstr "ВРЕМЯ ГЕРОЕВ: ОБОРОНА"
+
+msgid "eventStats/missionTitle/offence"
+msgstr "ВРЕМЯ ГЕРОЕВ: ПРОРЫВ"
+
+msgid "eventStats/tableCaption"
+msgstr "Состав команды"
+
+msgid "finalStatistic/commonStats/resultlabel/lose"
+msgstr "ОПЕРАЦИЯ ПРОВАЛИЛАСЬ"
+
+msgid "finalStatistic/commonStats/resultlabel/tie"
+msgstr "БОЙ ОКОНЧЕН"
+
+msgid "finalStatistic/commonStats/resultlabel/win"
+msgstr "ПОБЕДА!"
+
+msgid "finalStatistic/commonStats/win"
+msgstr "с"
+
+msgid "finish/lose/reason/1"
+msgstr "Войска разгромлены"
+
+msgid "finish/lose/reason/13"
+msgstr "Вся союзная артбатарея уничтожена"
+
+msgid "finish/lose/reason/3"
+msgstr "Вы не выполнили задачу за отведённое время"
+
+msgid "finish/lose/reason/5"
+msgstr "Бой прекращен: технический сбой"
+
+msgid "finish/tie/reason/1"
+msgstr "Вы выполнили основную задачу, но вся союзная техника уничтожена"
+
+msgid "finish/tie/reason/3"
+msgstr "Вы выполнили основную задачу, но не выполнили дополнительную"
+
+msgid "finish/win/reason/12"
+msgstr "Все задачи выполнены, враг полностью разгромлен!"
+
+msgid "goals/description/ATT_goal_counter_attack"
+msgstr "Уничтожить %(left)s ед. техники противника."
+
+msgid "goals/description/ATT_goal_final_few_boss"
+msgstr "Уничтожьте %(left)s ед. командирских машин противника."
+
+msgid "goals/description/ATT_goal_final_one_boss"
+msgstr "Уничтожить командующего обороной противника."
+
+msgid "goals/description/ATT_goal_main"
+msgstr "Уничтожьте %(left)s ед. техники противника."
+
+msgid "goals/lose/ATT_goal_counter_attack/team_killed"
+msgstr "Противник уничтожил всю нашу технику."
+
+msgid "goals/lose/ATT_goal_counter_attack/time_ended"
+msgstr "Вы не выполнили задачу за отведённое время."
+
+msgid "goals/lose/ATT_goal_final_few_boss/team_killed"
+msgstr "Противник уничтожил всю нашу технику."
+
+msgid "goals/lose/ATT_goal_final_few_boss/time_ended"
+msgstr "Вы не выполнили задачу за отведённое время."
+
+msgid "goals/lose/ATT_goal_final_one_boss/team_killed"
+msgstr "Противник уничтожил всю нашу технику."
+
+msgid "goals/lose/ATT_goal_final_one_boss/time_ended"
+msgstr "Вы не выполнили задачу за отведённое время."
+
+msgid "goals/lose/ATT_goal_main/team_killed"
+msgstr "Противник уничтожил всю нашу технику."
+
+msgid "goals/lose/ATT_goal_main/time_ended"
+msgstr "Вы не выполнили задачу за отведённое время."
+
+msgid "goals/lose/SPG_def/team_killed"
+msgstr "Операция провалилась"
+
+msgid "goals/lose/def_counter_attack/team_killed"
+msgstr ""
+"Контратака не удалась,\n"
+"но вы спасли артбатарею!"
+
+msgid "goals/lose/def_counter_attack/time_ended"
+msgstr "Артбатарея защищена, но враг ускользнул!"
+
+msgid "goals/progress/ATT_goal_counter_attack"
+msgstr "Осталось %(left)s ед. техники противника."
+
+msgid "goals/progress/ATT_goal_final_few_boss"
+msgstr "Уничтожьте всех командующих!"
+
+msgid "goals/progress/ATT_goal_final_one_boss"
+msgstr "Уничтожьте командующего!"
+
+msgid "goals/progress/ATT_goal_main"
+msgstr "Осталось %(left)s ед. техники противника."
+
+msgid "goals/progress/SPG_def"
+msgstr "Осталось продержаться"
+
+msgid "goals/progress/SPG_def/new_wave"
+msgstr "Осталось продержаться"
+
+msgid "goals/progress/def_counter_attack"
+msgstr "Уничтожьте всю технику противника!"
+
+msgid "goals/title/ATT_goal_counter_attack"
+msgstr "Отбейте контратаку противника"
+
+msgid "goals/title/ATT_goal_final_few_boss"
+msgstr "А вот и наша цель!"
+
+msgid "goals/title/ATT_goal_final_one_boss"
+msgstr "А вот и наша цель!"
+
+msgid "goals/title/ATT_goal_main"
+msgstr "Сломите оборону противника"
+
+msgid "goals/title/SPG_def"
+msgstr "Враг наступает!"
+
+msgid "goals/title/SPG_def/new_wave"
+msgstr "Враг вызвал подкрепление!"
+
+msgid "goals/title/def_counter_attack"
+msgstr "Уничтожьте всю технику противника!"
+
+msgid "goals/win/ATT_goal_counter_attack"
+msgstr "Контратака противника отбита!"
+
+msgid "goals/win/ATT_goal_final_few_boss"
+msgstr "Все командиры противника уничтожены!"
+
+msgid "goals/win/ATT_goal_final_one_boss"
+msgstr "Командующий обороной противника уничтожен!"
+
+msgid "goals/win/ATT_goal_main"
+msgstr "Оборона противника сломлена!"
+
+msgid "goals/win/def_counter_attack"
+msgstr "Все задачи выполнены, враг полностью разгромлен!"
+
+msgid "helpScreen/hint/description"
+msgstr "для просмотра особенностей режима"
+
+msgid "helpScreen/missionTitle/101"
+msgstr "ВРЕМЯ ГЕРОЕВ: ПРОРЫВ"
+
+msgid "helpScreen/missionTitle/102"
+msgstr "ВРЕМЯ ГЕРОЕВ: ОБОРОНА"
+
+msgid "helpScreen/missionTitle/103"
+msgstr "ВРЕМЯ ГЕРОЕВ"
+
+msgid "inbattle_markers/distance_str"
+msgstr " м"
+
+msgid "inbattle_markers/going_there"
+msgstr "Двигаюсь в "
+
+msgid "notification/SPGDefended"
+msgstr "Артбатарея защищена!"
+
+msgid "notification/SPGKilled"
+msgstr "Артбатарея уничтожена!"
+
+msgid "notification/SPGUnderAttack"
+msgstr "Артбатарея серьёзно повреждена!"
+
+msgid "notification/SPGUnderAttack/description"
+msgstr "Защитите артбатарею!"
+
+msgid "notification/afkWarning"
+msgstr ""
+"Боец, бездействие приравнивается к дезертирству и безжалостно карается! Для "
+"победы нужны совместные усилия!"
+
+msgid "notification/aimerSpawned"
+msgstr "Уничтожьте вражеских артнаводчиков!"
+
+msgid "notification/aimerSpawned/description"
+msgstr "Это остановит артудары!"
+
+msgid "notification/defenseArtillery"
+msgstr "Защитите артбатарею!"
+
+msgid "notification/oneSPGKilled"
+msgstr "Союзная артбатарея уничтожена!"
+
+msgid "notification/oneSPGKilled/description"
+msgstr "Защитите артбатарею!"
+
+msgid "notification/operationFailed"
+msgstr "Операция провалилась"
+
+msgid "notification/runnerSpawned"
+msgstr "Уничтожьте вражеские танки прорыва!"
+
+msgid "phaseIndicator/phase"
+msgstr "ЭТАП %(current)d ИЗ %(total)d: %(state)s"
+
+msgid "phaseIndicator/state/boss"
+msgstr "КОМАНДИР"
+
+msgid "phaseIndicator/state/defence"
+msgstr "ЗАЩИТА"
+
+msgid "phaseIndicator/state/offence"
+msgstr "КОНТРАТАКА"
+
+msgid "phaseIndicator/wave"
+msgstr "Волна %(current)d из %(total)d"
+
+msgid "player_messages/ARTILLERY_EQ_ALLY_ENEMY"
+msgstr "Артобстрел %(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/ARTILLERY_MORTAR_ALLY_ENEMY"
+msgstr "Миномёты %(attacker)s уничтожили %(target)s."
+
+msgid "player_messages/ARTILLERY_ON_YOURSELF_ALLY_ENEMY"
+msgstr "Способность «Огонь на себя» %(attacker)s уничтожила %(target)s."
+
+msgid "player_messages/ARTILLERY_ROCKET_ALLY_ENEMY"
+msgstr "Залп «Катюш» %(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/BOMBER_EQ_ALLY_ENEMY"
+msgstr "Авиаудар %(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_AFTERBURNING_HB"
+msgstr "Полный газ активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_MORTAR_HB"
+msgstr "Миномётный обстрел активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_ON_YOURSELF_HB"
+msgstr "Огонь на себя вызван."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_ROCKET_HB"
+msgstr "Залп «Катюш» активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_STRIKE_HB"
+msgstr "Артобстрел активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ATTACK_PLANE_HB"
+msgstr "Налёт штурмовика активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_BOMBER_HB"
+msgstr "Авиаудар активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_HEAL_POINT_HB"
+msgstr "Полевой ремонт активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_INCENDIARY_SHOT_HB"
+msgstr "Зажигательный снаряд активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_LARGE_REPAIR_KIT_HB"
+msgstr "Большой ремкомплект активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_MINEFIELD_HB"
+msgstr "Минное поле активировано."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_RECON_PLANE_HB"
+msgstr "Самолёт-разведчик вылетел."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_STUN_SHOT_HB"
+msgstr "Усиленный заряд активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_SUPER_SHOT"
+msgstr "Усиленный заряд активирован."
+
+msgid "player_messages/COMBAT_EQUIPMENT_NOT_READY"
+msgstr ""
+"%(equipmentName)s недоступен: не выполнены условия для разблокировки умения."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_AFTERBURNING_HB"
+msgstr "Полный газ готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_MORTAR_HB"
+msgstr "Миномётный обстрел готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_ON_YOURSELF_HB"
+msgstr "Огонь на себя готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_ROCKET_HB"
+msgstr "Залп «Катюш» готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_STRIKE_HB"
+msgstr "Артобстрел готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ATTACK_PLANE_HB"
+msgstr "Налёт штурмовика готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_BOMBER_HB"
+msgstr "Авиаудар готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_HEAL_POINT_HB"
+msgstr "Полевой ремонт готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_INCENDIARY_SHOT_HB"
+msgstr "Зажигательный снаряд готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_LARGE_REPAIR_KIT_HB"
+msgstr "Большой ремкомплект готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_HB"
+msgstr "Минное поле готово к развёртыванию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_RECON_PLANE_HB"
+msgstr "Самолёт-разведчик готов к вылету."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_STUN_SHOT_HB"
+msgstr "Усиленный заряд готов к использованию."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SUPER_SHOT"
+msgstr "Усиленный заряд готов к использованию."
+
+msgid "player_messages/DEATH_FROM_BOMBER_CAS_ALLY_ENEMY"
+msgstr "Штурмовик %(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/EVENT_DEATH_ALLY_ENEMY"
+msgstr "%(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/EVENT_DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE"
+msgstr "%(target)s уничтожен запретной зоной."
+
+msgid "player_messages/EVENT_DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
+msgstr "%(target)s уничтожен залпом артбатареи."
+
+msgid "player_messages/EVENT_DEATH_SELF_ENEMY"
+msgstr "Противник %(target)s уничтожен."
+
+msgid "player_messages/MINEFIELD_EQ_ALLY_ENEMY"
+msgstr "На минном поле %(attacker)s уничтожен %(target)s."
+
+msgid "playersPanel/postmortem/select"
+msgstr "Нажмите, чтобы выбрать данную машину для наблюдения за боем."
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ARTILLERY"
+msgstr "Машина уничтожена при артобстреле"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEATH_ZONE_ALLY_SELF"
+msgstr "Машина уничтожена союзником в запретной зоне"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "Машина уничтожена %(entity)s в запретной зоне"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
+msgstr "Машина уничтожена запретной зоной"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "Устройство [%(device)s] взорвано выстрелом противника"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_FIRE"
+msgstr "Машина уничтожена пожаром"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_SHOT"
+msgstr "Машина уничтожена выстрелом противника"
+
+msgid "postmortem_panel/no_respawns_message_descr"
+msgstr "Для вас бой окончен"
+
+msgid "postmortem_panel/no_respawns_message_title"
+msgstr "Доступной техники в подразделении больше нет"
+
+msgid "postmortem_panel/respawn_timer_title"
+msgstr "Ждите выбора новой машины"
+
+msgid "respawn/card/dead"
+msgstr "Подбит"
+
+msgid "respawn/card/pick"
+msgstr "Подтвердить выбор"
+
+msgid "respawn/division"
+msgstr "ПОДРАЗДЕЛЕНИЕ"
+
+msgid "respawn/goalTimer"
+msgstr "До конца этапа: %(time)s"
+
+msgid "respawn/timer/label/battleStart"
+msgstr "?empty?"
+
+msgid "respawn/timer/label/chooseVehicle"
+msgstr "Выберите технику, на которой пойдёте в бой"
+
+msgid "respawn/timer/title/battleStart"
+msgstr "Бой начинается!"
+
+msgid "respawn/timer/title/chooseVehicle"
+msgstr "ВЫБОР ТЕХНИКИ"
+
+msgid "spgPanel/title"
+msgstr "Защитите артбатарею!"
+
+msgid "timersPanel/artilleryOnYourself"
+msgstr "Время до начала обстрела!"
+
+msgid "timersPanel/deathZoneWarning"
+msgstr "Покиньте опасную зону!"

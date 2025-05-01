@@ -2,14 +2,8 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-2.13024 0.0103776 -3.44345
-			<!--BW_String-->
-		</min>
-		<max>
-			2.13024 1.15943 3.5633
-			<!--BW_String-->
-		</max>
+		<min>-2.130240 0.010378 -3.443450</min>
+		<max>2.130240 1.159430 3.563300</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/american/A40_T95/normal/lod4/Chassis</nodefullVisual>

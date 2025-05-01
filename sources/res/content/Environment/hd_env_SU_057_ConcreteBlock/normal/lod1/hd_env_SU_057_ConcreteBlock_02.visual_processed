@@ -39,14 +39,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_detailMap
 						<Texture>content/Detail_tex/Detail_tile_universal.dds</Texture>
 					</property>

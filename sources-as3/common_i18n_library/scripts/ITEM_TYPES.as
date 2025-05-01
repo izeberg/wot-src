@@ -47,6 +47,8 @@ package
       
       public static const FLAMEGUN_NAME:String = "#item_types:flameGun/name";
       
+      public static const AUTOSHOOTFLAMEGUN_NAME:String = "#item_types:autoShootFlameGun/name";
+      
       public static const GUN_DESC:String = "#item_types:gun/desc";
       
       public static const GUN_TAGS:String = "#item_types:gun/tags";

@@ -1,6 +1,6 @@
 from gui.Scaleform.daapi.view.meta.MissionsPremiumViewMeta import MissionsPremiumViewMeta
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
-from gui.impl.lobby.missions.daily_quests_view import DailyQuestsView
+from gui.impl.lobby.daily.daily_quests_view import DailyQuestsView
 
 class DailyQuestsInjectorView(InjectComponentAdaptor, MissionsPremiumViewMeta):
     __slots__ = ()
@@ -16,10 +16,7 @@ class DailyQuestsInjectorView(InjectComponentAdaptor, MissionsPremiumViewMeta):
         return
 
     def markVisited(self):
-        if self._injectView is not None:
-            self._injectView.markVisited()
-            self._injectView.resetInfoPageVisibility()
-        return
+        pass
 
     def setProxy(self, proxy):
         if self._injectView is not None:

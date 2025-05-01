@@ -121,7 +121,6 @@ package net.wg.gui.lobby.settings
          this._graphicsQualityDataProv = {};
          var _loc2_:Object = param1.data;
          this._qualityOrderIdList = _loc2_.qualityOrder.concat();
-         this._qualityOrderIdList.push("uiEffects");
          if(this._qualityOrderIdList is Vector.<String>)
          {
             _loc3_ = this._qualityOrderIdList.length;
@@ -1559,7 +1558,7 @@ package net.wg.gui.lobby.settings
          {
             this.updateDependedControl(_loc3_);
          }
-         if(_loc2_ == uiEffectsCheckbox && !this._isCustomPreset)
+         if(_loc2_ == UI_EFFECTSCheckbox && !this._isCustomPreset)
          {
             this.tryFindPreset();
          }

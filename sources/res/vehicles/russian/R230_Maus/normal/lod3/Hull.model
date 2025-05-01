@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R230_Maus/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.869340 -0.800990 -4.434835</min>
+		<max>1.871434 1.198491 4.595536</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R230_Maus/normal/lod3/Hull</nodefullVisual>
+</root>

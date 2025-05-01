@@ -75,7 +75,11 @@ package net.wg.gui.components.crosshairPanel
       
       function setOverheatProgress(param1:Number, param2:Number, param3:Boolean = false, param4:Boolean = false) : void;
       
-      function setFlameDistanceVisibility(param1:Boolean) : void;
+      function setFlameDistanceVisibility(param1:Boolean, param2:String) : void;
+      
+      function setOverheatState(param1:Number) : void;
+      
+      function setOverheatStatus(param1:Boolean) : void;
       
       function get autoloaderBoostParams() : BoostIndicatorStateParamsVO;
       

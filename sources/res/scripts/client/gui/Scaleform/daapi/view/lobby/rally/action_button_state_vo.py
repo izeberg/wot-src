@@ -85,6 +85,8 @@ class ActionButtonStateVO(dict):
                                              self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_SPGFORBIDDEN), {}), 
            UNIT_RESTRICTION.SPG_IS_FULL: (
                                         self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_SPGFULL), {}), 
+           UNIT_RESTRICTION.FLAMETHROWER_IS_FULL: (
+                                                 self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_FLAMETHROWERFULL), {}), 
            UNIT_RESTRICTION.SCOUT_IS_FORBIDDEN: (
                                                self.__getNotAvailableIcon() + i18n.makeString(PLATOON.MEMBERS_FOOTER_SCOUTFORBIDDEN), {}), 
            UNIT_RESTRICTION.SCOUT_IS_FULL: (

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>vehicles/german/G138_VK168_02/normal/lod2/Chassis</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.72829 -0.000000 -4.24693
-			<!--BW_String-->
-		</min>
-		<max>
-			1.72953 1.21496 4.26502
-			<!--BW_String-->
-		</max>
+		<min>-1.728285 -0.029786 -4.246935</min>
+		<max>1.729526 1.185174 4.265018</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G138_VK168_02/normal/lod1/Chassis</nodefullVisual>

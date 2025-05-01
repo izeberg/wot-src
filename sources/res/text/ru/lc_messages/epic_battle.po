@@ -218,6 +218,9 @@ msgstr "Внимание на позицию!"
 msgid "command_shortcut/title"
 msgstr "Команды"
 
+msgid "deploymentMap/flamethrowerLimitReached"
+msgstr "Направление заблокировано — достигнут максимум огнемётных танков"
+
 msgid "deploymentMap/lanePlayerLimitReached"
 msgstr "Направление заблокировано — достигнут максимум игроков"
 
@@ -225,7 +228,7 @@ msgid "deploymentMap/respawnWarning"
 msgstr "Повышенный риск"
 
 msgid "deploymentMap/spgLimitReached"
-msgstr "Направление заблокировано — достигнут максимум по типам техники"
+msgstr "Направление заблокировано — достигнут максимум САУ"
 
 msgid "dialogs/quotedName"
 msgstr "«%(name)s»"

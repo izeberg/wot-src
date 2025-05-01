@@ -7,15 +7,12 @@
 		</param>
 	</params>
 	<node>
-		<name>idle</name>
-		<type>sequence</type>
-		<resource>particles/Tank/customization/Cz04_T50_51_Waf_3DSt/empty.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>-1</loop>
+		<name>Sleep Node0</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
 		<transition>
 			<to>Sleep Node</to>
 			<blendDuration>0.000000</blendDuration>
-			<allowRootMotion>false</allowRootMotion>
 			<conditions>
 				<condition>
 					<type>trigger</type>
@@ -23,15 +20,7 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-392.000000 148.000000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>Antenna_On</name>
-		<type>sequence</type>
-		<resource>particles/Tank/customization/Cz04_T50_51_Waf_3DSt/empty.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>-1</loop>
-		<uiPosition>-272.000000 -254.000000 0.000000</uiPosition>
+		<uiPosition>-215.500000 202.000000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>Sleep Node</name>
@@ -40,7 +29,6 @@
 		<transition>
 			<to>Antenna_open_seq</to>
 			<blendDuration>1.000000</blendDuration>
-			<allowRootMotion>false</allowRootMotion>
 			<conditions>
 				<condition>
 					<type>exit_time</type>
@@ -48,7 +36,7 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-253.000000 23.000000 0.000000</uiPosition>
+		<uiPosition>-221.000000 105.000000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>Antenna_open_seq</name>
@@ -57,9 +45,8 @@
 		<isLoop>false</isLoop>
 		<loop>1</loop>
 		<transition>
-			<to>Antenna_On</to>
+			<to>Sleep Node1</to>
 			<blendDuration>4.000000</blendDuration>
-			<allowRootMotion>false</allowRootMotion>
 			<conditions>
 				<condition>
 					<type>exit_time</type>
@@ -67,6 +54,12 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-24.000000 -107.000000 0.000000</uiPosition>
+		<uiPosition>-214.500000 15.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Sleep Node1</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<uiPosition>-222.500000 -83.500000 0.000000</uiPosition>
 	</node>
 </root>

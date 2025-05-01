@@ -1,7 +1,7 @@
 import BigWorld, CGF
 from debug_utils import LOG_CURRENT_EXCEPTION
 try:
-    import BallisticsDebug
+    from BigWorld import TrajectoryDrawer as BWTrajectoryDrawer
     isDebugDrawInited = True
 except ImportError:
     isDebugDrawInited = False
@@ -70,7 +70,7 @@ class _TrajectoryDrawerImpl(object):
             if self.__gameObject is None:
                 self.__gameObject = CGF.GameObject(self.__spaceID, 'TrajectoryDrawer')
             if self.__drawer is None:
-                self.__drawer = self.__gameObject.createComponent(BallisticsDebug.TrajectoryDrawer)
+                self.__drawer = self.__gameObject.createComponent(BWTrajectoryDrawer)
             self.__gameObject.activate()
         else:
             self.__gameObject.deactivate()

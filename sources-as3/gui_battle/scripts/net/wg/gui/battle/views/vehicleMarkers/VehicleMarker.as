@@ -324,8 +324,11 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
          this.offsets.splice(0,this.offsets.length);
          this.offsets = null;
-         this.vehicleDist.dispose();
-         this.vehicleDist = null;
+         if(this.vehicleDist)
+         {
+            this.vehicleDist.dispose();
+            this.vehicleDist = null;
+         }
          super.onDispose();
       }
       
@@ -422,7 +425,10 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function setDistance(param1:String) : void
       {
-         this.vehicleDist.label = param1;
+         if(this.vehicleDist)
+         {
+            this.vehicleDist.label = param1;
+         }
       }
       
       public function setDistanceVisibility(param1:Boolean) : void
@@ -723,7 +729,10 @@ package net.wg.gui.battle.views.vehicleMarkers
          var _loc6_:Boolean = this.getIsPartVisible(HEALTH_LBL);
          var _loc7_:Boolean = this.getIsPartVisible(DAMAGE_PANEL);
          var _loc8_:Boolean = !this.vehicleDestroyed && this._isVehicleDistVisible && this.getIsPartVisible(VEHICLE_DIST);
-         this.vehicleDist.visible = _loc8_;
+         if(this.vehicleDist)
+         {
+            this.vehicleDist.visible = _loc8_;
+         }
          if(_loc3_ && this._lastPlayerName != this.model.pName)
          {
             this._lastPlayerName = this.model.pName;
@@ -826,7 +835,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.hitLabel.playShowTween();
       }
       
-      private function layoutParts(param1:Vector.<Boolean>) : void
+      protected function layoutParts(param1:Vector.<Boolean>) : void
       {
          var _loc4_:VehicleMarkerPart = null;
          var _loc6_:int = 0;
@@ -930,7 +939,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      private function prepareLayout() : void
+      protected function prepareLayout() : void
       {
          var _loc1_:Array = null;
          var _loc3_:VehicleMarkerPart = null;
@@ -1020,9 +1029,8 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      private function setVehicleType() : void
+      protected function setVehicleType() : void
       {
-         var _loc1_:String = null;
          if(this.isObserver)
          {
             this.marker.vehicleTypeIcon.transform.colorTransform = this.vmManager.getTransform(this._markerSchemeName);
@@ -1031,15 +1039,17 @@ package net.wg.gui.battle.views.vehicleMarkers
          {
             return;
          }
+         var _loc1_:String = this.getVehicleImageId();
+         this.vmManager.drawWithCenterAlign(_loc1_,this.marker.vehicleTypeIcon.graphics,true,false,0,V_TYPE_ICON_Y);
+      }
+      
+      protected function getVehicleImageId() : String
+      {
          if(this.model.speaking && !this.vehicleDestroyed)
          {
-            _loc1_ = VMAtlasItemName.SPEAKING_ICON;
+            return VMAtlasItemName.SPEAKING_ICON;
          }
-         else
-         {
-            _loc1_ = VMAtlasItemName.getVehicleTypeIconName(this._markerColor,this.model.vClass,this.model.hunt);
-         }
-         this.vmManager.drawWithCenterAlign(_loc1_,this.marker.vehicleTypeIcon.graphics,true,false,0,V_TYPE_ICON_Y);
+         return VMAtlasItemName.getVehicleTypeIconName(this._markerColor,this.model.vClass,this.model.hunt);
       }
       
       private function updateIconColor() : void
@@ -1181,6 +1191,11 @@ package net.wg.gui.battle.views.vehicleMarkers
       private function get isObserver() : Boolean
       {
          return this._markerSchemeName.indexOf(OBSERVER_SCHEME_NAME) != -1;
+      }
+      
+      public function get markerColor() : String
+      {
+         return this._markerColor;
       }
       
       private function onShowExInfoHandler(param1:VehicleMarkersManagerEvent) : void

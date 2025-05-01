@@ -216,7 +216,7 @@ msgid ""
 msgstr "Комплекс паляпшэння выжывальнасці"
 
 msgid "archetype/modernizedTankRammerSights/name/noTemplate"
-msgstr "Многозубая каретка досылателя"
+msgstr "Шматзубая карэтка дасыльніка"
 
 msgid "archetype/modernizedTurbochargerRotationMechanism/name/noTemplate"
 msgstr "Сістэма павышэння мабільнасці"
@@ -733,12 +733,12 @@ msgstr "Марш-кідок"
 
 msgid "comp7_recon/descr/active"
 msgstr ""
-"Через {colorTagOpen}%(delay)d с{colorTagClose} над выбранной вами зоной "
-"радиусом {colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d "
-"м{colorTagClose} пролетит самолёт-разведчик. Техника противника, замеченная "
-"в этой зоне, останется обнаруженной в течение "
+"Праз {colorTagOpen}%(delay)d с{colorTagClose} над выбранай вамі зонай "
+"радыусам {colorTagOpen}%(radius_1)d/%(radius_2)d/%(radius_3)d "
+"м{colorTagClose} праляліць самалёт-выведнік. Тэхніка праціўніка, заўважаная "
+"ў гэтай зоне, застанецца выяўленай на працягу "
 "{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d&nbsp;с{colorTagClose}"
-" или до тех пор, пока не покинет её."
+" або пакуль не пакіне яе."
 
 msgid "comp7_recon/name"
 msgstr "Самалёт-выведнік"
@@ -778,11 +778,11 @@ msgstr "Трапны цалок"
 
 msgid "comp7_sure_shot/descr/active"
 msgstr ""
-"На следующие {colorTagOpen}%(duration)d с{colorTagClose} уменьшает разброс орудия при движении, поворотах ходовой и вращении башни на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
+"На наступныя {colorTagOpen}%(duration)d с{colorTagClose} памяншае роскід гарматы падчас руху, пры паваротах шасі і вежы на {colorTagOpen}%(shotDispersionFactorsBuff_1).0f/%(shotDispersionFactorsBuff_2).0f/%(shotDispersionFactorsBuff_3).0f%%{colorTagClose}.\n"
 "\n"
-"Нанесение урона выстрелом в течение действия навыка сокращает время перезарядки на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} от процента, на который уменьшилась прочность машины противника.\n"
+"Прычыненне пашкоджанняў стрэлам падчас дзеяння навыку скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose} ад працэнта, на які паменшылася трываласць машыны праціўніка.\n"
 "\n"
-"Уничтожение техники противника выстрелом сокращает время перезарядки на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose}."
+"Знішчэнне тэхнікі праціўніка стрэлам скарачае час перанабівання на {colorTagOpen}%(gunReloadBuff_1).0f/%(gunReloadBuff_2).0f/%(gunReloadBuff_3).0f%%{colorTagClose}."
 
 msgid "comp7_sure_shot/name"
 msgstr "Надзейны стрэл"
@@ -1558,9 +1558,9 @@ msgstr "Дадае бонус да асноўных спецыяльнасцяў
 
 msgid "juggernaut/descr"
 msgstr ""
-"Пры актывацыі павялічваецца магутнасць рухавіка і хуткасць рамонту модуляў, "
-"зніжаецца час аглушэння. Паскарае перанабіванне гарматы, калі падчас дзеяння"
-" ўмення вам прычынены пашкоджанні."
+"Пры актывацыі павялічвае магутнасць рухавіка і хуткасць рамонту модуляў, "
+"зніжае час аглушэння. Паскарае перанабіванне гарматы, калі падчас дзеяння "
+"ўмення ваша машына атрымлівае траплянне з пашкоджаннямі або без іх."
 
 msgid "juggernaut/name"
 msgstr "Цэнтрабежны нагнятальнік"
@@ -1777,34 +1777,34 @@ msgid "modernizedExtraHealthReserveAntifragmentationLining3/short_special"
 msgstr "Комплекс паляпшэння выжывальнасці T3"
 
 msgid "modernizedTankRammerSights"
-msgstr "Многозубая каретка досылателя"
+msgstr "Шматзубая карэтка дасыльніка"
 
 msgid "modernizedTankRammerSights1/long_special"
-msgstr "Многозубая каретка досылателя Т1"
+msgstr "Шматзубая карэтка дасыльніка Т1"
 
 msgid "modernizedTankRammerSights1/name"
-msgstr "Многозубая каретка досылателя Т1"
+msgstr "Шматзубая карэтка дасыльніка Т1"
 
 msgid "modernizedTankRammerSights1/short_special"
-msgstr "Многозубая каретка досылателя Т1"
+msgstr "Шматзубая карэтка дасыльніка Т1"
 
 msgid "modernizedTankRammerSights2/long_special"
-msgstr "Многозубая каретка досылателя Т2"
+msgstr "Шматзубая карэтка дасыльніка Т2"
 
 msgid "modernizedTankRammerSights2/name"
-msgstr "Многозубая каретка досылателя Т2"
+msgstr "Шматзубая карэтка дасыльніка Т2"
 
 msgid "modernizedTankRammerSights2/short_special"
-msgstr "Многозубая каретка досылателя Т2"
+msgstr "Шматзубая карэтка дасыльніка Т2"
 
 msgid "modernizedTankRammerSights3/long_special"
-msgstr "Многозубая каретка досылателя Т3"
+msgstr "Шматзубая карэтка дасыльніка Т3"
 
 msgid "modernizedTankRammerSights3/name"
-msgstr "Многозубая каретка досылателя Т3"
+msgstr "Шматзубая карэтка дасыльніка Т3"
 
 msgid "modernizedTankRammerSights3/short_special"
-msgstr "Многозубая каретка досылателя Т3"
+msgstr "Шматзубая карэтка дасыльніка Т3"
 
 msgid "modernizedTurbochargerRotationMechanism1/long_special"
 msgstr "Сістэма павышэння рухомасці T1"
@@ -1981,9 +1981,9 @@ msgstr ""
 
 msgid "rammerBattleBooster/descr"
 msgstr ""
-"%s от времени заряжания орудия при установленном оборудовании «Досылатель» "
-"(любого типа орудия и калибра), «Экспериментальная система заряжания», "
-"«Трофейный досылатель» или «Многозубая каретка досылателя»."
+"%s ад часу набівання гарматы пры пастаўленым абсталяванні «Дасыльнік» "
+"(любога тыпу гарматы і калібру), «Эксперыментальная сістэма набівання», "
+"«Трафейны дасыльнік» або «Шматзубая карэтка дасыльніка»."
 
 msgid "rammerBattleBooster/gain/deluxe"
 msgstr "-2,5%"
@@ -1993,14 +1993,10 @@ msgstr "-2,5%"
 
 msgid "rammerBattleBooster/long_special"
 msgstr ""
-"Расходуется за 1 бой. Усиливает эффект оборудования «Досылатель» (любого "
-"типа орудия и калибра), «Трофейный досылатель» или «Экспериментальная "
-"система заряжания». При установке инструкции данное оборудование должно быть"
-" на технике, иначе инструкция работать не будет.Расходуется за 1 бой. "
-"Усиливает эффект оборудования «Досылатель» (любого типа орудия и калибра), "
-"«Трофейный досылатель», «Экспериментальная система заряжания» или "
-"«Многозубая каретка досылателя». При установке инструкции данное "
-"оборудование должно быть на технике, иначе инструкция работать не будет."
+"Расходуецца за 1 бой. Узмацняе эфект абсталявання «Дасыльнік» (любога тыпу "
+"гарматы і калібру), «Трафейны дасыльнік» або «Эксперыментальная сістэма "
+"набівання». Настаўленне будзе працаваць толькі пры наяўнасці на тэхніцы "
+"гэтага абсталявання."
 
 msgid "rammerBattleBooster/name"
 msgstr "Рацыянальная боеўкладка"
@@ -2104,20 +2100,20 @@ msgstr "{colorTagOpen}+10%{colorTagClose} да ўсіх навыкаў экіп�
 
 msgid "ration_intunion/long_special"
 msgstr ""
-"Автоматически активируется после начала боя и действует на всём его "
-"протяжении. Подходит только для техники Сборной наций."
+"Аўтаматычна актывуецца пасля пачатку бою і дзейнічае на працягу ўсяго бою. "
+"Толькі для тэхнікі Зборнай дзяржаў."
 
 msgid "ration_intunion/name"
-msgstr "Кофе с галетами"
+msgstr "Кава з галетамі"
 
 msgid "ration_intunion/onUse"
 msgstr "?empty?"
 
 msgid "ration_intunion/restriction"
-msgstr "Только для техники Сборной наций."
+msgstr "Толькі для тэхнікі Зборнай дзяржаў"
 
 msgid "ration_intunion/short_special"
-msgstr "Повышает эффективность экипажей Сборной наций."
+msgstr "Павышае эфектыўнасць экіпажаў Зборнай дзяржаў"
 
 msgid "ration_italy/always"
 msgstr "%(crewLevel)s да ўсіх навыкаў экіпажа. Расходуецца за адзін бой."

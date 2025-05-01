@@ -503,13 +503,13 @@ package
       
       public static const ISCOLORBLIND_DESCRIPTION:String = "#settings:isColorBlind/description";
       
-      public static const UIEFFECTS:String = "#settings:uiEffects";
+      public static const UI_EFFECTS:String = "#settings:UI_EFFECTS";
       
-      public static const UIEFFECTS_HEADER:String = "#settings:uiEffects/header";
+      public static const UI_EFFECTS_HEADER:String = "#settings:UI_EFFECTS/header";
       
-      public static const UIEFFECTS_BODY:String = "#settings:uiEffects/body";
+      public static const UI_EFFECTS_BODY:String = "#settings:UI_EFFECTS/body";
       
-      public static const UIEFFECTS_ATTENTION:String = "#settings:uiEffects/attention";
+      public static const UI_EFFECTS_ATTENTION:String = "#settings:UI_EFFECTS/attention";
       
       public static const VERTSYNC:String = "#settings:vertSync";
       

@@ -291,7 +291,7 @@ package net.wg.gui.lobby.personalMissions.components
          this._isMainContentHidden = false;
          this.backBtn.visible = !this._initData.isFirstEntry;
          this.acceptBtn.visible = this._initData.isFirstEntry;
-         this.playVideoBtn.visible = true;
+         this.playVideoBtn.visible = this._initData.playVideoBtnVisible;
          this.shadow.visible = true;
          this.titleTFContainer.visible = true;
          this.content.visible = true;

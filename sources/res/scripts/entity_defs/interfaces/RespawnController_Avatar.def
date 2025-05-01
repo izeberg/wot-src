@@ -37,6 +37,7 @@
 				ARRAY
 				<of>RESPAWN_LIMITED_VEHICLES</of>
 			</Arg>
+			<AllowUnsafeData>true</AllowUnsafeData>
 		</respawnController_updateVehicleLimits>
 		<respawnController_onTeamLivesRestored>
 			<Arg>
@@ -87,6 +88,7 @@
 				ARRAY
 				<of>RESPAWN_LIMITED_VEHICLES</of>
 			</Arg>
+			<AllowUnsafeData>true</AllowUnsafeData>
 		</updateVehicleLimits>
 		<updatePlayerLives>
 			<Arg>UINT8</Arg>

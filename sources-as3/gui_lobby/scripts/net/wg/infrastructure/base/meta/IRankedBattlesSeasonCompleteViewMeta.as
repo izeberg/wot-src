@@ -6,8 +6,6 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function showRatingS() : void;
-      
       function closeViewS() : void;
       
       function onSoundTriggerS(param1:String) : void;

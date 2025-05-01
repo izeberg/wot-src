@@ -53,10 +53,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
@@ -69,10 +65,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							8.41644 4.20822 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>8.416440 4.208220 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -101,12 +94,12 @@
 						<Texture>vehicles/german/G138_VK168_02_Mauerbrecher/VK168_02_Mauerbrecher_turret_01_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						alphaReference
+						<Int>180</Int>
 					</property>
 					<property>
-						alphaReference
-						<Int>64</Int>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.015536 1.443269 -0.163430</groupOrigin>

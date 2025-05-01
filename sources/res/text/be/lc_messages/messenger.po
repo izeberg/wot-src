@@ -1740,12 +1740,12 @@ msgid "serviceChannelMessages/battleMatters/token"
 msgstr "Жэтон акадэміі"
 
 msgid "serviceChannelMessages/battlePass/capReset/header"
-msgstr "Обновлён еженедельный лимит очков Боевого пропуска"
+msgstr "Абноўлены штотыднёвы ліміт ачкоў Баявога пропуска"
 
 msgid "serviceChannelMessages/battlePass/capReset/text"
 msgstr ""
-"Накопление очков Боевого пропуска на всей технике VI-XI уровня началось заново.\n"
-"Лимит очков обновляется еженедельно. Успейте достигнуть лимита очков, чтобы получить награду."
+"Назапашванне ачкоў Баявога пропуска на ўсёй тэхніцы VI-XI узроўню пачалося нанова.\n"
+"Ліміт ачкоў абнаўляецца штотыднёва. Паспейце дасягнуць ліміту ачкоў, каб атрымаць узнагароду."
 
 msgid "serviceChannelMessages/battlePass/freePointsUsed/header"
 msgstr "Выкарыстаны неразмеркаваныя ачкі"
@@ -1759,13 +1759,13 @@ msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатнае абсталяванне на выбар"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/header"
-msgstr "Достигнут еженедельный лимит очков Боевого пропуска"
+msgstr "Дасягнуты штотыднёвы ліміт ачкоў Баявога пропуска"
 
 msgid "serviceChannelMessages/battlePass/reachedCap/text"
 msgstr ""
-"На %(vehNameHighlight)s заработано максимальное количество очков, доступное в неделю.\n"
-"Получено очков в награду: %(bonusPoints)s\n"
-"Лимит очков и награда обновляются еженедельно. Возвращайтесь позже, чтобы продолжить зарабатывать очки на %(vehName)s."
+"На %(vehNameHighlight)s здабыта максімальная колькасць ачкоў, даступная на тыдзень.\n"
+"Атрымана ачкоў ва ўзнагароду: %(bonusPoints)s\n"
+"Ліміт ачкоў і ўзнагароду абнаўляюцца штотыднёва. Вяртайцеся пазней, каб працягваць здабываць ачкі на %(vehName)s."
 
 msgid "serviceChannelMessages/battlePass/styleChosen/header"
 msgstr "Віншуем!"
@@ -2781,6 +2781,12 @@ msgstr "Налічана юбілейных манет"
 msgid "serviceChannelMessages/invoiceReceived/eventCoinDebited"
 msgstr "Спісана юбілейных манет"
 
+msgid "serviceChannelMessages/invoiceReceived/format/items/crewBook"
+msgstr "%(name)s (x%(count)s)."
+
+msgid "serviceChannelMessages/invoiceReceived/format/items/default"
+msgstr "%(type)s «%(name)s» (%(count)s %(pieces)s)."
+
 msgid "serviceChannelMessages/invoiceReceived/freeAwardListsAccrued"
 msgstr "Налічана бланкаў загаду"
 
@@ -3061,6 +3067,54 @@ msgstr "Назапашванне крэдытаў у сховішчы прыпы
 
 msgid "serviceChannelMessages/piggyBank/title"
 msgstr "Рэзервовае сховішча адчынена!"
+
+msgid "serviceChannelMessages/playStreakAvailable/body"
+msgstr "Задачы Ланцуга перамог зноў даступныя для выканання."
+
+msgid "serviceChannelMessages/playStreakCongrats/header"
+msgstr "Ланцуг перамог"
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/periodic/body"
+msgstr "Атрымана ўзнагарода:"
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/equipment"
+msgstr "Налічана выпадковае абсталяванне."
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/goodie"
+msgstr "Налічаны выпадковыя рэзервы."
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/prefix"
+msgstr "Дададзена: "
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/regular/body"
+msgstr "Рэгулярнае налічэнне:"
+
+msgid "serviceChannelMessages/playStreakCongratsWithoutRewards/body"
+msgstr "Задача %(savedData)s выканана."
+
+msgid "serviceChannelMessages/playStreakDropProgress/body"
+msgstr "Прагрэс падзеі «Ланцуг перамог» абнулены."
+
+msgid "serviceChannelMessages/playStreakFreezes/body"
+msgstr ""
+"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выконваць "
+"баявую задачу падзеі «Ланцуг перамог» %(savedData)s дзён запар."
+
+msgid "serviceChannelMessages/playStreakFreezesEnd/body"
+msgstr "Ланцуг перамог адноўлены."
+
+msgid "serviceChannelMessages/playStreakFreezesInProgress/body"
+msgstr ""
+"Задача выканана.\n"
+"Для аднаўлення лічыльніка засталося выканаць: %(savedData)s"
+
+msgid "serviceChannelMessages/playStreakPauseUsed/body"
+msgstr "Вы выкарысталі паўзу."
+
+msgid "serviceChannelMessages/playStreakUnavailable/body"
+msgstr ""
+"Выкананне задач Ланцуга перамог часова недаступнае.\n"
+"Паспрабуйце пазней."
 
 msgid "serviceChannelMessages/prebattle/battleType/clan"
 msgstr "Кланавы бой"

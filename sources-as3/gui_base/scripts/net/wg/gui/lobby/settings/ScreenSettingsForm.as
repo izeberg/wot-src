@@ -46,7 +46,7 @@ package net.wg.gui.lobby.settings
       
       public var isColorBlindCheckbox:CheckBox = null;
       
-      public var uiEffectsCheckbox:CheckBox = null;
+      public var UI_EFFECTSCheckbox:CheckBox = null;
       
       public var fovLabel:LabelControl = null;
       
@@ -101,7 +101,7 @@ package net.wg.gui.lobby.settings
          this.gammaLabel.dispose();
          this.gammaSettingButton.dispose();
          this.isColorBlindCheckbox.dispose();
-         this.uiEffectsCheckbox.dispose();
+         this.UI_EFFECTSCheckbox.dispose();
          this.colorFilterLabel.dispose();
          this.colorFilterNameLabel.dispose();
          this.colorFilterImage.dispose();
@@ -125,7 +125,7 @@ package net.wg.gui.lobby.settings
          this.gammaLabel = null;
          this.gammaSettingButton = null;
          this.isColorBlindCheckbox = null;
-         this.uiEffectsCheckbox = null;
+         this.UI_EFFECTSCheckbox = null;
          this.colorFilterLabel = null;
          this.colorFilterNameLabel = null;
          this.colorFilterImage = null;
@@ -146,9 +146,9 @@ package net.wg.gui.lobby.settings
          this.interfaceScaleLabel.text = SETTINGS.INTERFACESCALE;
          this.interfaceScaleLabel.infoIcoType = InfoIcon.TYPE_INFO;
          this.isColorBlindCheckbox.label = SETTINGS.ISCOLORBLIND;
-         this.uiEffectsCheckbox.label = SETTINGS.UIEFFECTS;
-         this.uiEffectsCheckbox.toolTip = SETTINGS.UIEFFECTS;
-         this.uiEffectsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
+         this.UI_EFFECTSCheckbox.label = SETTINGS.UI_EFFECTS;
+         this.UI_EFFECTSCheckbox.toolTip = SETTINGS.UI_EFFECTS;
+         this.UI_EFFECTSCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.refreshRateLabel.text = SETTINGS.REFRESHRATE;
          this.fovLabel.text = SETTINGS.FOV;
          this.dynamicFovCheckbox.label = SETTINGS.DYNAMICFOV;

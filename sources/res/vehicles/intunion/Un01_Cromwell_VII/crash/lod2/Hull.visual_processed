@@ -151,12 +151,12 @@
 						<Texture>vehicles/intunion/Un01_Cromwell_VII/Cromwell_VII_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -0.371390 -0.018233</groupOrigin>

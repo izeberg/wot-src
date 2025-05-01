@@ -35,56 +35,92 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LFront</identifier>
+				<identifier>HP_TrackUp_LFront__track_left_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>-1.159202 0.122638 4.015018</row3>
+					<row3>-0.893178 0.088597 4.015018</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_LRear</identifier>
-				<transform>
-					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.990268 -0.139173</row1>
-					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>-1.159202 0.086774 -3.996935</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_TrackUp_RFront</identifier>
+				<identifier>HP_TrackUp_LFront__track_left_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.978148 0.207912</row1>
 					<row2>0.000000 -0.207912 0.978148</row2>
-					<row3>1.159202 0.122638 4.015018</row3>
+					<row3>-1.425226 0.088597 4.015018</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_TrackUp_RRear</identifier>
+				<identifier>HP_TrackUp_LRear__track_left_0</identifier>
 				<transform>
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.990268 -0.139173</row1>
 					<row2>-0.000000 -0.139173 -0.990268</row2>
-					<row3>1.159202 0.086774 -3.996935</row3>
+					<row3>-0.893178 0.052732 -3.996935</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear__track_left_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>-1.425226 0.052732 -3.996935</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront__track_right_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>0.893178 0.088597 4.015018</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront__track_right_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>1.425226 0.088597 4.015018</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear__track_right_0</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>0.893178 0.052732 -3.996935</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear__track_right_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>1.425226 0.052732 -3.996935</row3>
 				</transform>
 			</node>
 			<node>
 				<identifier>HP_Track_Exhaus_1</identifier>
 				<transform>
-					<row0>0.000000 0.000000 1.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>-1.000000 0.000000 0.000000</row2>
+					<row0>-0.068032 0.997681 0.002114</row0>
+					<row1>-0.018177 0.000879 -0.999834</row1>
+					<row2>-0.997518 -0.068059 0.018075</row2>
 					<row3>-1.771602 0.938989 -2.162993</row3>
 				</transform>
 			</node>
 			<node>
 				<identifier>HP_Track_Exhaus_2</identifier>
 				<transform>
-					<row0>0.000000 0.000000 -1.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>1.000000 0.000000 0.000000</row2>
+					<row0>0.029808 0.999556 -0.000055</row0>
+					<row1>0.003113 -0.000038 0.999995</row1>
+					<row2>0.999551 -0.029808 -0.003113</row2>
 					<row3>1.773903 0.940304 -2.162993</row3>
 				</transform>
 			</node>
@@ -283,6 +319,6 @@
 		<min>-1.936374 -0.715878 -4.569895</min>
 		<max>1.938676 1.064508 4.620731</max>
 	</boundingBox>
-	<geometrySize>284428</geometrySize>
+	<geometrySize>284556</geometrySize>
 	<minUVDensity>0.001407</minUVDensity>
 </root>

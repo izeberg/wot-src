@@ -78,6 +78,10 @@
 						normalMap
 						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.000000 0.063736 1.241837</groupOrigin>
 			</primitiveGroup>
@@ -112,10 +116,6 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un01_Cromwell_VII/Cromwell_VII_hull_01_AO.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>-0.001002 0.141075 -0.100631</groupOrigin>
 			</primitiveGroup>
@@ -149,14 +149,6 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un01_Cromwell_VII/Cromwell_VII_chassis_01_AO.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -0.414138 -0.007380</groupOrigin>

@@ -121,9 +121,9 @@ msgstr "Графіка"
 
 msgid "RENDER_PIPELINE/description"
 msgstr ""
-"Улучшенная: позволяет добиться максимального качества изображения. Опция доступна только с DirectX 11 и новее.\n"
+"Палепшаная: дазваляе дабіцца максімальнай якасці выявы. Опцыя даступная толькі з DirectX 11 і навейшай.\n"
 "\n"
-"Стандартная: позволяет добиться максимального быстродействия, упрощая или отключая некоторые визуальные эффекты."
+"Звычайная: дазваляе дабіцца максімальнай хуткадзейнасці, спрашчаючы або адключаючы некаторыя візуальныя эфекты."
 
 msgid "RENDER_PIPELINE/label"
 msgstr "Графіка:"
@@ -239,6 +239,23 @@ msgstr ""
 "\n"
 "Памяншэнне значэння / адключэнне параметру можа павысіць хуткадзейнасць гульні."
 
+msgid "UI_EFFECTS"
+msgstr "Эфекты інтэрфейсу"
+
+msgid "UI_EFFECTS/attention"
+msgstr ""
+"Уключэнне гэтай налады можа\n"
+"прывесці да зніжэння прадукцыйнасці."
+
+msgid "UI_EFFECTS/body"
+msgstr ""
+"Гэтая налада выключае або адключае\n"
+"дадатковыя візуальныя эфекты\n"
+"інтэрфейсу."
+
+msgid "UI_EFFECTS/header"
+msgstr "Эфекты інтэрфейсу"
+
 msgid "VEHICLE_DUST_ENABLED"
 msgstr "Эфекты з-пад тракаў і колаў"
 
@@ -253,9 +270,9 @@ msgstr "Сляды тракаў і колаў"
 
 msgid "VEHICLE_TRACES_ENABLED/description"
 msgstr ""
-"Паказвае сляды тракаў і колаў на зямлі.\n"
+"Паказ слядоў гусеніц і колаў на паверхні.\n"
 "\n"
-"Недаступна пры стандартных перадвызначаных наладах графікі і нізкім значэнні якасці дэколей."
+"Недаступна пры стандартных наладах графікі."
 
 msgid "WATER_QUALITY"
 msgstr "Якасць вады"
@@ -1187,10 +1204,10 @@ msgid "game/customizationDisplayType/notHistorical"
 msgstr "Гістарычныя і негістарычныя"
 
 msgid "game/disableThermalVisionEffect"
-msgstr "Показывать эффект пирометра в снайперском прицеле"
+msgstr "Паказваць эфект пірометра ў снайперскім прыцэле"
 
 msgid "game/disableThermalVisionSectorEffect"
-msgstr "Показывать сектор пирометра в аркадном прицеле"
+msgstr "Паказваць сектар пірометра ў аркадным прыцэле"
 
 msgid "game/displayPlatoonMembers"
 msgstr "Паказваць тэхніку ўдзельнікаў звязу ў Гаражы"
@@ -1361,7 +1378,7 @@ msgid "game/showSectorOnMap"
 msgstr "Паказваць сектар абстрэлу САУ"
 
 msgid "game/showThermalVisionSectorOnMap"
-msgstr "Показывать сектор действия пирометра"
+msgstr "Паказваць сектар дзеяння пірометра"
 
 msgid "game/showVectorOnMap"
 msgstr "Паказваць прамень кірунку камеры"
@@ -1760,7 +1777,7 @@ msgid "keyboard/keysBlocks/command/alternate_mode"
 msgstr "Змяніць рэжым прыцэльвання"
 
 msgid "keyboard/keysBlocks/command/auto_rotation"
-msgstr "Фиксация корпуса / активация механики"
+msgstr "Фіксацыя корпуса / актывацыя механікі"
 
 msgid "keyboard/keysBlocks/command/backward"
 msgstr "Назад"
@@ -2477,23 +2494,6 @@ msgid "tripleBuffered/description"
 msgstr ""
 "Змякчае рэзкія скачкі відарыса падчас змены кадраў (толькі пры ўключаным "
 "параметры «Вертыкальная сінхранізацыя»)."
-
-msgid "uiEffects"
-msgstr "Эфекты інтэрфейсу"
-
-msgid "uiEffects/attention"
-msgstr ""
-"Уключэнне гэтай налады можа\n"
-"прывесці да зніжэння прадукцыйнасці."
-
-msgid "uiEffects/body"
-msgstr ""
-"Гэтая налада выключае або адключае\n"
-"дадатковыя візуальныя эфекты\n"
-"інтэрфейсу."
-
-msgid "uiEffects/header"
-msgstr "Эфекты інтэрфейсу"
 
 msgid "vertSync"
 msgstr "Вертыкальная сінхранізацыя"

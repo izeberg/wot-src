@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.254196 0.000000 2.874594</row3>
+					<row3>-1.254016 -0.000003 2.874393</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.873896 0.000000 2.874594</row3>
+					<row3>-1.864466 -0.000003 2.874594</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,7 +40,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.254196 0.000000 -2.874590</row3>
+					<row3>-1.254016 -0.000003 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -49,7 +49,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.873896 0.000000 -2.874590</row3>
+					<row3>-1.864466 -0.000003 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -58,7 +58,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.254196 0.000000 2.874594</row3>
+					<row3>1.252923 -0.001933 2.874594</row3>
 				</transform>
 			</node>
 			<node>
@@ -67,7 +67,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.864466 0.000000 2.874594</row3>
+					<row3>1.864466 -0.000003 2.874594</row3>
 				</transform>
 			</node>
 			<node>
@@ -76,7 +76,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.254196 0.000000 -2.874590</row3>
+					<row3>1.252923 -0.001933 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -85,7 +85,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.864466 0.000000 -2.874590</row3>
+					<row3>1.864466 -0.000003 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -1505,7 +1505,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.254196 -0.243114 -3.450605</row3>
+							<row3>1.254196 -0.243000 -3.450605</row3>
 						</transform>
 						<node>
 							<identifier>WD_R1_BlendBone</identifier>
@@ -1513,7 +1513,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.254196 -0.773010 3.450605</row3>
+								<row3>-1.254196 -0.773124 3.450605</row3>
 							</transform>
 						</node>
 					</node>
@@ -1601,10 +1601,6 @@
 						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
@@ -1615,6 +1611,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.560227 0.502081 -0.061565</groupOrigin>
@@ -1647,10 +1647,6 @@
 						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
@@ -1661,6 +1657,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.560227 0.502081 -0.061565</groupOrigin>

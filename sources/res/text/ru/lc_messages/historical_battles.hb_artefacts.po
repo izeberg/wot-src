@@ -1,0 +1,254 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "afterburning/hangar/descr"
+msgstr "Улучшает динамику разгона машины."
+
+msgid "afterburning_hb/descr"
+msgstr "Улучшает динамику разгона машины."
+
+msgid "afterburning_hb/name"
+msgstr "Полный газ"
+
+msgid "ambush_fire_hb/descr"
+msgstr ""
+"У машины в неподвижном состоянии ускоряется перезарядка и сведение, а также "
+"улучшается точность."
+
+msgid "ambush_fire_hb/longDescr"
+msgstr "?empty?"
+
+msgid "ambush_fire_hb/name"
+msgstr "Засадный огонь"
+
+msgid "ambush_fire_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "artillery_on_yourself_hb/descr"
+msgstr ""
+"Отмечает зону обстрела на месте вашей машины. Наносит урон и машине, "
+"применившему умение, и технике противника. Союзникам урон не наносится."
+
+msgid "artillery_on_yourself_hb/longDescr"
+msgstr "?empty?"
+
+msgid "artillery_on_yourself_hb/name"
+msgstr "Огонь на себя"
+
+msgid "artillery_on_yourself_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "artillerymortar_hb/descr"
+msgstr ""
+"Миномётная батарея наносит удар по выбранной области, нанося урон "
+"находящейся там технике."
+
+msgid "artillerymortar_hb/longDescr"
+msgstr "?empty?"
+
+msgid "artillerymortar_hb/name"
+msgstr "Миномётный обстрел"
+
+msgid "artillerymortar_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "artilleryrocket_hb/descr"
+msgstr ""
+"Батарея РСЗО производит удар по выбранной области, нанося урон и поджигая "
+"технику противника."
+
+msgid "artilleryrocket_hb/name"
+msgstr "Залп «Катюш»"
+
+msgid "artillerystrike_defence_hb/descr"
+msgstr ""
+"Залп артбатареи накрывает выбранную область, нанося урон находящейся там "
+"технике."
+
+msgid "artillerystrike_defence_hb/longDescr"
+msgstr "?empty?"
+
+msgid "artillerystrike_defence_hb/name"
+msgstr "Артобстрел"
+
+msgid "artillerystrike_defence_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "artillerystrike_offence_hb/descr"
+msgstr ""
+"Залп артбатареи накрывает выбранную область, нанося урон находящейся там "
+"технике."
+
+msgid "artillerystrike_offence_hb/longDescr"
+msgstr "?empty?"
+
+msgid "artillerystrike_offence_hb/name"
+msgstr "Артобстрел"
+
+msgid "artillerystrike_offence_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "attack_plane_hb/descr"
+msgstr ""
+"Cамолёт-штурмовик выполняет штурмовой удар по указанной линии атаки. Наносит"
+" урон противнику и всегда сбивает гусеницы."
+
+msgid "attack_plane_hb/name"
+msgstr "Налёт штурмовика"
+
+msgid "berserk_hb/descr"
+msgstr ""
+"При прочности машины ниже 50% время перезарядки и сведения орудия "
+"сокращаются."
+
+msgid "berserk_hb/longDescr"
+msgstr "?empty?"
+
+msgid "berserk_hb/name"
+msgstr "Отчаянный"
+
+msgid "berserk_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "bomber_hb/descr"
+msgstr ""
+"Пикирующий бомбардировщик сбрасывает бомбу в выбранную область, нанося урон "
+"находящейся там технике."
+
+msgid "bomber_hb/longDescr"
+msgstr "?empty?"
+
+msgid "bomber_hb/name"
+msgstr "Авиаудар"
+
+msgid "bomber_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "durationTime"
+msgstr "Время действия эффекта: %(time)s с."
+
+msgid "healpoint_hb/descr"
+msgstr ""
+"Создаёт ремонтную зону вокруг машины, которая восстанавливает прочность всей"
+" технике в этой области."
+
+msgid "healpoint_hb/name"
+msgstr "Полевой ремонт"
+
+msgid "incendiaryshot_hb/descr"
+msgstr ""
+"Следующий снаряд гарантированно поджигает машину противника, если пробивает "
+"броню в любом месте."
+
+msgid "incendiaryshot_hb/name"
+msgstr "Зажигательный снаряд"
+
+msgid "last_stand_hb/descr"
+msgstr ""
+"Позволяет машине с нулём прочности ещё какое-то время стрелять по "
+"противнику. Доступна только стрельба, передвижение невозможно."
+
+msgid "last_stand_hb/longDescr"
+msgstr "?empty?"
+
+msgid "last_stand_hb/name"
+msgstr "Зов долга"
+
+msgid "last_stand_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "minefield_hb/descr"
+msgstr ""
+"На указанной площади после задержки разворачивается минное поле. При "
+"попадании на него противник получает урон и теряет гусеницы. Союзная техника"
+" урона от мин не получает."
+
+msgid "minefield_hb/longDescr"
+msgstr "?empty?"
+
+msgid "minefield_hb/name"
+msgstr "Минное поле"
+
+msgid "minefield_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "recon_hb/descr"
+msgstr ""
+"Вызов самолёта-разведчика, который обнаруживает технику противника в "
+"указанном квадрате и держит её видимой определённое время."
+
+msgid "recon_hb/longDescr"
+msgstr "?empty?"
+
+msgid "recon_hb/name"
+msgstr "Самолёт-разведчик"
+
+msgid "recon_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "resurrect/name"
+msgstr "Зов долга"
+
+msgid "resurrect_black/descr"
+msgstr "Последний боевой выезд! Больше подкрепления не будет."
+
+msgid "resurrect_green/descr"
+msgstr ""
+"Позволяет машине с нулём прочности ещё какое-то время стрелять по "
+"противнику. Доступна только стрельба, передвижение невозможно."
+
+msgid "resurrect_yellow/descr"
+msgstr ""
+"После уничтожения машина вернётся в бой,\n"
+"если ваша команда выполнит текущую задачу."
+
+msgid "role/locked"
+msgstr ""
+"Умение заблокировано. Чтобы разблокировать умение, нанесите 1000 ед. урона "
+"технике противника."
+
+msgid "role/unlocked"
+msgstr "Разблокировано умение командира."
+
+msgid "stunshot_defence_hb/descr"
+msgstr ""
+"Следующий снаряд гарантированно оглушит технику противника в радиусе от "
+"точки попадания и собьёт ей гусеницы."
+
+msgid "stunshot_defence_hb/longDescr"
+msgstr "?empty?"
+
+msgid "stunshot_defence_hb/name"
+msgstr "Усиленный заряд"
+
+msgid "stunshot_defence_hb/shortDescr"
+msgstr "?empty?"
+
+msgid "stunshot_hb/descr"
+msgstr ""
+"Следующий снаряд гарантированно оглушит технику противника в радиусе от "
+"точки попадания и собьёт ей гусеницы."
+
+msgid "stunshot_hb/name"
+msgstr "Усиленный заряд"
+
+msgid "stunshot_offence_hb/descr"
+msgstr ""
+"Следующий снаряд гарантированно оглушит технику противника в радиусе от "
+"точки попадания и собьёт ей гусеницы."
+
+msgid "stunshot_offence_hb/longDescr"
+msgstr "?empty?"
+
+msgid "stunshot_offence_hb/name"
+msgstr "Усиленный заряд"
+
+msgid "stunshot_offence_hb/shortDescr"
+msgstr "?empty?"

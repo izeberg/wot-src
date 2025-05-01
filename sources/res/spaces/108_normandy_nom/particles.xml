@@ -221,13 +221,18 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_aerial_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_aerial_explosion_SE.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_bomb_explosion_tracers.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_fire_explosion_subemitter.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_ground_trails_fat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_fire_window.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_firesmoke_house.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_smoke_fillhole_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_smoke_fillhole_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_smoke_firegrass_slow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_window_smoke_light.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_smoke_subemitter.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_smoke_thin_light.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/105_air_smoke_trail_dense.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/121_lost_paradise_antiaircraft_attack_big_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/121_lost_paradise_antiaircraft_attack_big_area_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_apple_flowers_fall_med.vfx</fn_effect_bin>
@@ -335,7 +340,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_84house_facade_desctruction.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_84house_facade_desctruction_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_aerial_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_anti_aircraft_shells.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_bomb_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_fire_after_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_firesmoke_house.eff</fn_effect_bin>
@@ -345,7 +355,10 @@
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_smoke_firegrass_slow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_window_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_window_smoke_light.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_plane_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_smoke_thin_light.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_water_sprays.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/onboarding/108_normandy_waterhit_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/105_germany_airplane_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/105_germany_airplane_fire_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/121_lost_paradise_antiaircraft_attack_big_area.eff</fn_effect_bin>
@@ -589,13 +602,17 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_aerial_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_aerial_explosion_SE.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_bomb_explosion_tracers.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_fire_explosion_subemitter.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_fire_window.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_firesmoke_house.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_smoke_fillhole_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_smoke_fillhole_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_smoke_firegrass_slow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_window_smoke_light.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_smoke_subemitter.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_smoke_thin_light.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/105_air_smoke_trail_dense.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_apple_flowers_fall_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
@@ -701,7 +718,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_84house_facade_desctruction.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_84house_facade_desctruction_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_aerial_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_anti_aircraft_shells.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_bomb_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_fire_after_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_firesmoke_house.eff</fn_effect_bin>
@@ -711,7 +733,10 @@
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_smoke_firegrass_slow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_window_smoke_light.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_window_smoke_light.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_plane_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_smoke_thin_light.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/108_normandy_water_sprays.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/onboarding/108_normandy_waterhit_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/105_germany_airplane_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/105_germany_airplane_fire_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/121_lost_paradise_antiaircraft_attack_big_area.eff</fn_effect_bin>

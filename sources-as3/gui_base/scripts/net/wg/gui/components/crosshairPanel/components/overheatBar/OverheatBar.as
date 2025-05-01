@@ -21,6 +21,14 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       
       public static const Y_OFFSET:int = -104;
       
+      private static const RANGEFINDER_ACTIVE_LABEL:String = "active";
+      
+      private static const RANGEFINDER_PASSIVE_LABEL:String = "passive";
+      
+      private static const RANGEFINDER_ACTIVE_COLOR:uint = 9173049;
+      
+      private static const RANGEFINDER_PASSIVE_COLOR:uint = 13421772;
+      
       private static const FULL_PROGRESS:Number = 1;
       
       private static const ANIM_START_FRAME:uint = 1;
@@ -32,8 +40,6 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       private static const MAX_STATE_VALUE:Number = 1;
       
       private static const MARKER_FADE_TWEEN_DURATION:uint = 300;
-      
-      private static const DISTANCE_FADE_TWEEN_DURATION:uint = 200;
       
       private static const PROGRESS_TWEEN_DURATION:uint = 500;
       
@@ -90,6 +96,8 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       
       private var _rangefinder:MovieClip = null;
       
+      private var _rangefinderTF:TextField = null;
+      
       private var _timerContainer:MovieClip = null;
       
       private var _timerTF:TextField = null;
@@ -99,8 +107,6 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       private var _progressTweenProps:OverheatBarTweenProps = null;
       
       private var _progressTween:Tween = null;
-      
-      private var _distanceTween:Tween = null;
       
       private var _curProgress:Number = 0;
       
@@ -124,6 +130,8 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       
       private var _state:int = -1;
       
+      private var _isOverheated:Boolean = false;
+      
       private var _curStateMin:Number = 0;
       
       private var _curStateMax:Number = 0;
@@ -131,6 +139,8 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       private var _isForcedStateChange:Boolean = false;
       
       private var _isDistanceVisible:Boolean = false;
+      
+      private var _actualDistance:String = "";
       
       public function OverheatBar()
       {
@@ -152,10 +162,10 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
          this._outerMarkersContainer = this.bar.outerMarkers;
          this._anim = this.bar.anim;
          this._rangefinder = this.bar.rangefinder;
+         this._rangefinderTF = this._rangefinder.distanceTF;
          this._timerContainer = this.bar.timer;
          this._timerTF = this._timerContainer.timerText.timerTF;
          this._timerContainer.visible = this._overheatProgress.visible = false;
-         this._rangefinder.alpha = 0;
          this._progressFrames = this._progress.totalFrames;
          this._anim.gotoAndStop(this._anim.totalFrames - 1);
       }
@@ -166,7 +176,6 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
          this._progressTweenProps = null;
          this._progressTween.dispose();
          this._progressTween = null;
-         this.clearDistanceTween();
          this.stopOverheatInterval();
          this.clearMarkerTweens();
          this._markerTweens = null;
@@ -186,6 +195,7 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
          this._overheatStates = null;
          this._anim = null;
          this._rangefinder = null;
+         this._rangefinderTF = null;
          this._timerTF = null;
          this._timerContainer = null;
       }
@@ -220,17 +230,12 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
          }
          this._overheatTimeLeft = param2 * Time.MILLISECOND_IN_SECOND;
          this._curProgress = param1;
-         if(this._curStateMin >= param1 || param1 > this._curStateMax || this.isOverheated)
-         {
-            this.updateState();
-         }
          if(this._curProgress == FULL_PROGRESS)
          {
             this._anim.gotoAndPlay(ANIM_START_FRAME);
          }
          this.updateDistanceVisibility();
          this._progress.visible = !this.isOverheated;
-         this._timerContainer.visible = this._overheatProgress.visible = this.isOverheated;
          var _loc4_:int = int(param1 * this._progressFrames) + 1;
          if(this.isOverheated)
          {
@@ -275,6 +280,27 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
          }
       }
       
+      public function updateProgressAnimation(param1:MovieClip, param2:int) : void
+      {
+         this._progressTweenProps.update(param1,param2);
+         this._progressTween.reset();
+         this._progressTween.paused = false;
+      }
+      
+      public function updateDistance(param1:Boolean, param2:String) : void
+      {
+         if(this._isDistanceVisible != param1)
+         {
+            this._isDistanceVisible = param1;
+            this.updateDistanceVisibility();
+         }
+         if(this._actualDistance != param2)
+         {
+            this._actualDistance = param2;
+            this._rangefinderTF.text = this._actualDistance;
+         }
+      }
+      
       private function overheatTicking() : void
       {
          var _loc1_:int = getTimer() - this._overheatStartTime;
@@ -296,13 +322,6 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
             clearInterval(this._overheatIntervalId);
             this._isOverheatIntervalPlaying = false;
          }
-      }
-      
-      public function updateProgressAnimation(param1:MovieClip, param2:int) : void
-      {
-         this._progressTweenProps.update(param1,param2);
-         this._progressTween.reset();
-         this._progressTween.paused = false;
       }
       
       private function onProgressTweenChange() : void
@@ -448,76 +467,24 @@ package net.wg.gui.components.crosshairPanel.components.overheatBar
       
       private function updateDistanceVisibility() : void
       {
-         this.clearDistanceTween();
-         this._distanceTween = new Tween(DISTANCE_FADE_TWEEN_DURATION,this._rangefinder,{"alpha":(!this.isOverheated && this.isDistanceVisible ? 1 : 0)},{"ease":Quartic.easeOut});
-      }
-      
-      private function clearDistanceTween() : void
-      {
-         if(this._distanceTween)
-         {
-            this._distanceTween.dispose();
-            this._distanceTween = null;
-         }
-      }
-      
-      private function updateState() : void
-      {
-         var _loc1_:Number = NaN;
-         var _loc2_:Number = NaN;
-         var _loc3_:uint = 0;
-         var _loc4_:int = 0;
-         if(this.isOverheated)
-         {
-            this.state = STATE_HIDDEN;
-         }
-         else if(this._curProgress == MiN_STATE_VALUE)
-         {
-            this.state = STATE_HIDDEN;
-            this._curStateMax = MiN_STATE_VALUE;
-         }
-         else
-         {
-            _loc1_ = MiN_STATE_VALUE;
-            _loc4_ = this._overheatStates.length;
-            _loc3_ = 0;
-            while(_loc3_ < _loc4_)
-            {
-               if(_loc3_ != 0)
-               {
-                  _loc1_ = this._overheatStates[_loc3_ - 1];
-               }
-               _loc2_ = this._overheatStates[_loc3_];
-               if(_loc1_ < this._curProgress && this._curProgress < _loc2_)
-               {
-                  this._curStateMin = _loc1_;
-                  this._curStateMax = _loc2_;
-                  this.state = _loc3_;
-                  break;
-               }
-               _loc3_++;
-            }
-         }
+         var _loc1_:Boolean = !this.isOverheated && this._isDistanceVisible;
+         this._rangefinder.gotoAndStop(!!_loc1_ ? RANGEFINDER_ACTIVE_LABEL : RANGEFINDER_PASSIVE_LABEL);
+         this._rangefinderTF.textColor = !!_loc1_ ? uint(RANGEFINDER_ACTIVE_COLOR) : uint(RANGEFINDER_PASSIVE_COLOR);
       }
       
       public function get isOverheated() : Boolean
       {
-         return this._overheatTimeLeft > 0;
+         return this._isOverheated;
       }
       
-      public function get isDistanceVisible() : Boolean
+      public function set isOverheated(param1:Boolean) : void
       {
-         return this._isDistanceVisible;
-      }
-      
-      public function set isDistanceVisible(param1:Boolean) : void
-      {
-         if(this._isDistanceVisible == param1)
+         if(this._isOverheated == param1)
          {
             return;
          }
-         this._isDistanceVisible = param1;
-         this.updateDistanceVisibility();
+         this._isOverheated = param1;
+         this._timerContainer.visible = this._overheatProgress.visible = this.isOverheated;
       }
       
       public function get state() : int

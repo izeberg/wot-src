@@ -79,14 +79,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_AM.dds</Texture>
 					</property>
@@ -96,7 +88,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -113,6 +105,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.338534 0.637107 -2.304517</groupOrigin>
@@ -135,14 +135,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_AM.dds</Texture>
 					</property>
@@ -152,7 +144,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -169,6 +161,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.337941 0.636408 1.387263</groupOrigin>
@@ -191,14 +191,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_AM.dds</Texture>
 					</property>
@@ -208,7 +200,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -225,6 +217,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.337349 0.635504 1.379539</groupOrigin>
@@ -247,14 +247,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_AM.dds</Texture>
 					</property>
@@ -264,7 +256,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -281,6 +273,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.337494 0.523603 -2.276925</groupOrigin>
@@ -293,14 +293,6 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_AM.dds</Texture>
 					</property>
@@ -310,7 +302,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -327,6 +319,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/french/tracks/Projet_Murat_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.337941 0.635892 -2.250452</groupOrigin>

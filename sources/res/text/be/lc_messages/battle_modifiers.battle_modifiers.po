@@ -33,7 +33,7 @@ msgstr "Параметры бою"
 
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
-"На всю технику в боях Натиска действует особый модификатор, изменяющий её "
+"На ўсю тэхніку ў баях Націску дзейнічае асаблівы мадыфікатар, які змяняе яе "
 "параметры."
 
 msgid "domain/comp7SeasonModifiers/name"
@@ -72,12 +72,12 @@ msgstr "Выпадковыя велічыні"
 
 msgid "domain/stepRepairPoint/description"
 msgstr ""
-"Позволяет восстановить очки прочности машины, отремонтировать повреждённые "
-"модули и вернуть в строй членов экипажа, а также пополнить боекомплект прямо"
-" в бою."
+"Дазваляе аднаўляць ачкі трываласці машыны, адрамантаваць пашкоджаныя модулі "
+"і вярнуць у строй членаў экіпажа, а таксама папоўніць боекамплект непасрэдна"
+" ў баі."
 
 msgid "domain/stepRepairPoint/name"
-msgstr "Ремонтная зона"
+msgstr "Рамонтная зона"
 
 msgid "domain/sustaining/description"
 msgstr ""
@@ -161,59 +161,11 @@ msgstr "Пашкоджанні экіпажа пры падзенні"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перазарадка рыштунку"
 
-msgid "modifier/name/fakeEngineModifier"
-msgstr "Мощность двигателя (все, кроме ЛТ и СТ)"
-
-msgid "modifier/name/fakeEngineModifierLT"
-msgstr "Мощность двигателя (ЛТ)"
-
-msgid "modifier/name/fakeEngineModifierMT"
-msgstr "Мощность двигателя (СТ)"
-
 msgid "modifier/name/fakeModifierRepairCooldown"
-msgstr "Минимальное время перезарядки зоны ремонта после использования."
+msgstr "Мінімальны час перанабівання зоны рамонту пасля выкарыстання."
 
 msgid "modifier/name/fakeModifierRepairSpeed"
-msgstr "Скорость восстановления очков прочности машины."
-
-msgid "modifier/name/fakePiercingModifierLTSPGA"
-msgstr "Бронепробитие, 100 м (ЛТ, САУ штурмовые)"
-
-msgid "modifier/name/fakePiercingModifierMTHTATSPG"
-msgstr "Бронепробитие, 100 м (СТ, ТТ, ПТ-САУ)"
-
-msgid "modifier/name/fakeRadioModifier"
-msgstr "Радиус действия радиостанции (ЛТ, СТ, ТТ, ПТ-САУ, САУ штурмовые)"
-
-msgid "modifier/name/fakeRadioModifierSPG"
-msgstr "Радиус действия радиостанции (САУ поддержки)"
-
-msgid "modifier/name/fakeReloadModifierATSPG"
-msgstr "Время перезарядки (ПТ-САУ)"
-
-msgid "modifier/name/fakeReloadModifierHT"
-msgstr "Время перезарядки (ТТ)"
-
-msgid "modifier/name/fakeReloadModifierLT"
-msgstr "Время перезарядки (ЛТ)"
-
-msgid "modifier/name/fakeReloadModifierMTSPGA"
-msgstr "Время перезарядки (СТ, САУ штурмовые)"
-
-msgid "modifier/name/fakeReloadModifierSPGS"
-msgstr "Время перезарядки (САУ поддержки)"
-
-msgid "modifier/name/fakeVisionModifierATSPGSPGA"
-msgstr "Радиус обзора (ПТ-САУ, САУ штурмовые)"
-
-msgid "modifier/name/fakeVisionModifierLT"
-msgstr "Радиус обзора (ЛТ)"
-
-msgid "modifier/name/fakeVisionModifierMTHT"
-msgstr "Радиус обзора (СТ, ТТ)"
-
-msgid "modifier/name/fakeVisionModifierSPGS"
-msgstr "Радиус обзора (САУ поддержки)"
+msgstr "Хуткасць аднаўлення ачкоў трываласці машыны."
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"
@@ -268,7 +220,7 @@ msgid "modifier/name/shotDispersionRadius"
 msgstr "Роскід на 100 метраў"
 
 msgid "modifier/name/thermalVisionDistance"
-msgstr "Обзор с пирометром"
+msgstr "Агляд з пірометрам"
 
 msgid "modifier/name/turretPressureDamage"
 msgstr "Пашкоджанні ад ціску сарванай вежы"

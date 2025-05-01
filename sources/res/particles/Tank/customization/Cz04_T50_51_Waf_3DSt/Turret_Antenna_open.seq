@@ -5,6 +5,7 @@
 		<name>Root</name>
 		<type>model</type>
 		<resource/>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>animation</name>
 			<type>animation</type>
@@ -27,6 +28,15 @@
 	<sequenceObject>
 		<name>sound_seq_style_cust_Cz04_T50_51_Waf_turret_antenna_open</name>
 		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.833333</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
 		<track>
 			<name>Sound</name>
 			<type>sound</type>

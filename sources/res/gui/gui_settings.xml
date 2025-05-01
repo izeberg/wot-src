@@ -38,7 +38,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/personal/password_reset/new/?utm_source=login-screen&amp;utm_medium=link&amp;utm_campaign=wot-client
+				https://lesta.ru/personal/password_reset/new/?utm_source=mt-client&amp;utm_medium=link&amp;utm_campaign=login-screen
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -54,7 +54,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/shop/wot/gold/?utm_source=garage&amp;utm_medium=button&amp;utm_content=get-gold&amp;utm_campaign=wot-client)
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/shop/wot/gold/?utm_source=mt-client&amp;utm_medium=button&amp;utm_content=get-gold&amp;utm_campaign=garage)
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -66,7 +66,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/personal/?utm_source=notify&amp;utm_medium=link&amp;utm_campaign=wot-client)
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/personal/?utm_source=mt-client&amp;utm_medium=link&amp;utm_campaign=notify)
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -78,7 +78,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/support/?utm_source=garage&amp;utm_medium=link&amp;utm_campaign=wot-client
+				https://lesta.ru/support/?utm_source=mt-client&amp;utm_medium=link&amp;utm_campaign=garage
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -90,7 +90,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://tanki.su/clanwars/strongholds/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=strongholds
+				https://tanki.su/clanwars/strongholds/?utm_campaign=strongholds&amp;utm_medium=link&amp;utm_source=mt-client
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -102,7 +102,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/clans/recruitstation/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=strongholds)
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/clans/recruitstation/?utm_campaign=strongholds&amp;utm_medium=link&amp;utm_source=mt-client)
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -114,7 +114,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/clans/create/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=strongholds)
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/clans/create/?utm_campaign=strongholds&amp;utm_medium=link&amp;utm_source=mt-client)
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -132,23 +132,6 @@
 			<item>
 				https://legal.lesta.ru/game-rules/
 				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>clubSettings</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/league/team/edit/?language=$LANGUAGE_CODE&amp;game=wot)
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://apex.lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=https://apex.lesta.ru/league/team/edit/?language=$LANGUAGE_CODE&amp;game=wot
-				<name>CT</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -205,7 +188,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=https://lesta.ru/globalmap/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=clan-summary
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=https://lesta.ru/globalmap/?utm_campaign=clan-summary&amp;utm_medium=link&amp;utm_source=mt-client
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -217,7 +200,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=http://tanki.su/clanwars/globalmap/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=clan-summary
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=http://tanki.su/clanwars/globalmap/?utm_campaign=clan-summary&amp;utm_medium=link&amp;utm_source=mt-client
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -229,7 +212,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=https://lesta.ru/globalmap/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=clan-cap
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=https://lesta.ru/globalmap/?utm_campaign=clan-cap&amp;utm_medium=link&amp;utm_source=mt-client
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -241,7 +224,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=http://tanki.su/clanwars/globalmap/?utm_campaign=wot-client&amp;utm_medium=link&amp;utm_source=clan-cap
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=http://tanki.su/clanwars/globalmap/?utm_campaign=clan-cap&amp;utm_medium=link&amp;utm_source=mt-client
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -253,7 +236,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/shop/wot/main/?utm_campaign=wot-client&amp;utm_medium=button&amp;utm_source=garage&amp;utm_content=premshop-main)
+				https://lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=$TARGET_URL(https://lesta.ru/shop/wot/main/?utm_campaign=garage&amp;utm_medium=button&amp;utm_source=mt-client&amp;utm_content=premshop-main)
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -345,6 +328,23 @@
 			</item>
 			<item>
 				https://apex.lesta.ru/id/signin/token/?account_id=$DB_ID&amp;token=$WGNI_TOKEN&amp;continue_on_failure=1&amp;next=https://apex.lesta.ru/shop/wotrpt/main/subscription_mt?language=$LANGUAGE_CODE
+				<name>CT</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>infoPagePlayStreak</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/play_streak/
+				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/play_streak/
 				<name>CT</name>
 				<type>url</type>
 			</item>
@@ -474,12 +474,12 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://wgcg-ru.tanki.su/web_cache/v1/get_static_lists/
+				https://clientgw-ru.tanki.su/web_cache/v1/get_static_lists/
 				<name>default</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://wgcg-rpt.tanki.su/web_cache/v1/get_static_lists/
+				https://clientgw-rpt.tanki.su/web_cache/v1/get_static_lists/
 				<name>CT</name>
 				<type>url</type>
 			</item>
@@ -513,7 +513,7 @@
 				</value>
 			</item>
 			<item>
-				http://tanki.su/user_agreement/?utm_source=eula&amp;utm_medium=link&amp;utm_campaign=wot-client
+				http://tanki.su/user_agreement/?utm_source=mt-client&amp;utm_medium=link&amp;utm_campaign=eula
 				<name>url</name>
 				<type>url</type>
 			</item>
@@ -684,11 +684,6 @@
 					</item>
 					<item>
 						<name>google</name>
-						<type>bool</type>
-						<value>True</value>
-					</item>
-					<item>
-						<name>wgni</name>
 						<type>bool</type>
 						<value>True</value>
 					</item>
@@ -1384,7 +1379,12 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/comp7_category/comp7_category)
+				$PARAMS(/HB_category)
+				<name>HB24Category</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/comp7_category)
 				<name>comp7Products</name>
 				<type>url</type>
 			</item>
@@ -1421,7 +1421,7 @@
 		<type>dict</type>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/wot_premium/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/premium/
 				<name>baseURL</name>
 				<type>url</type>
 			</item>
@@ -1437,7 +1437,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/15BPContentPage/#bp15extrachapter
+				/$LANGUAGE_CODE/promocontent/16BPContentPage/
 				<name>extraInfoPage</name>
 				<type>url</type>
 			</item>
@@ -1496,6 +1496,23 @@
 					<item>
 						<type>string</type>
 						<value>bonus</value>
+					</item>
+				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>battlePassMarathonIntroSlides</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>list</type>
+				<value>
+					<item>
+						<type>string</type>
+						<value>chapter</value>
 					</item>
 				</value>
 			</item>
@@ -1662,12 +1679,12 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/RankedBattles2024/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/RankedBattlesNew/
 				<name>default</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/RankedBattles2024/
+				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/RankedBattlesNew/
 				<name>CT</name>
 				<type>url</type>
 			</item>
@@ -2063,6 +2080,18 @@
 		</value>
 	</setting>
 	<setting>
+		<name>infoPageHistoricalBattles</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/PVEventMay25/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
 		<name>accountCompletionSupportURL</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -2178,6 +2207,18 @@
 		<value>
 			<item>
 				https://webbrg.tanki.su/ru/promocontent/orbita-project/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>dailyReworkInfoPageURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/ru/promocontent/daily_quests/
 				<name>default</name>
 				<type>url</type>
 			</item>

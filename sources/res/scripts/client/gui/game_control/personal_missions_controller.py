@@ -70,6 +70,9 @@ class PersonalMissionsController(IPersonalMissionsController):
         AccountSettings.setPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS, settings)
 
     def getAllQuests(self):
+        return self.__eventsCache.getPersonalMissions().getAllQuests()
+
+    def getAllQuestsPM3(self):
         quests = {}
         quests.update(self.__eventsCache.getPersonalMissions().getQuestsForBranch(PM_BRANCH.PERSONAL_MISSION_3))
         return quests

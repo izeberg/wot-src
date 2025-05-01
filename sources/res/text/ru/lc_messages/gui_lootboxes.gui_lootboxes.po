@@ -113,23 +113,39 @@ msgstr "Сегодня последний день события, и вы уж�
 msgid "footer/tooltip/restriction/left/title"
 msgstr "Покупка недоступна"
 
-msgid "guaranteedReward/boxesLeft"
+msgid "guaranteedReward/boxesLeft/bonus"
+msgstr "Ещё контейнеров до гарантированной награды, если не выпадет ранее: "
+
+msgid "guaranteedReward/boxesLeft/vehicle"
 msgstr ""
 "Ещё контейнеров до гарантированной машины %(level)s уровня, если не выпадет "
 "ранее: "
 
-msgid "guaranteedReward/next"
+msgid "guaranteedReward/next/bonus"
+msgstr "Гарантированная награда в следующем контейнере!"
+
+msgid "guaranteedReward/next/vehicle"
 msgstr "Гарантированная машина %(level)s уровня в следующем контейнере!"
 
-msgid "guaranteedRewardTooltip/block1/text"
+msgid "guaranteedRewardTooltip/block1/bonus/text"
+msgstr ""
+"Гарантированная награда — наиболее ценное игровое имущество из списка "
+"возможного содержимого контейнеров. Награда гарантированно выпадет не "
+"позднее %(boxNumber)s-го контейнера. Если таковая выпадет ранее — отсчёт "
+"начнётся заново."
+
+msgid "guaranteedRewardTooltip/block1/bonus/title"
+msgstr "Механика гарантированной награды"
+
+msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
 "Гарантированный танк — машина %(level)s уровня из списка возможного "
 "содержимого контейнеров. Танк гарантированно выпадет не позднее "
 "%(boxNumber)s-го контейнера. Если получите машину ранее — отсчёт начнётся "
 "заново."
 
-msgid "guaranteedRewardTooltip/block1/title"
-msgstr "Механика гарантированного танка:"
+msgid "guaranteedRewardTooltip/block1/vehicle/title"
+msgstr "Механика гарантированного танка"
 
 msgid "guaranteedRewardTooltip/block2/text"
 msgstr "Счётчик гарантированной награды общий для следующих контейнеров:"
@@ -139,12 +155,25 @@ msgstr "Общий счётчик наград:"
 
 msgid "guaranteedRewardTooltip/block3/text"
 msgstr ""
+"Имущество помещено в три последовательных списка/этапа. Чтобы перейти к "
+"следующему списку, нужно получить всё имущество из «Основных наград» "
+"текущего списка."
+
+msgid "guaranteedRewardTooltip/block3/title"
+msgstr "Гарантированная награда из этапов"
+
+msgid "guaranteedRewardTooltip/block4/bonus/text"
+msgstr ""
+"Награду из третьего списка можно получать неограниченное количество раз."
+
+msgid "guaranteedRewardTooltip/block4/vehicle/text"
+msgstr ""
 "Если у вас уже есть вся техника из списка возможного содержимого "
 "контейнеров, то по механике выпадения гарантированного танка все последующие"
 " машины, полученные из контейнеров, будут компенсированы соответствующей "
 "валютой."
 
-msgid "guaranteedRewardTooltip/block3/title"
+msgid "guaranteedRewardTooltip/block4/vehicle/title"
 msgstr "Когда вся техника уже получена:"
 
 msgid "keyWelcomeScreen/content/first/description"
@@ -200,8 +229,8 @@ msgstr "Этап"
 msgid "lootboxRotationTooltip/title"
 msgstr "Списки содержимого"
 
-msgid "lootboxesWithKeys/about"
-msgstr "О контейнерах с ключами"
+msgid "lootboxesWithKeys/about/default"
+msgstr "О контейнере"
 
 msgid "lootboxesWithKeys/availableLockpicks"
 msgstr "Доступно отмычек для контейнеров: %(icon) %(count)"
@@ -237,6 +266,9 @@ msgstr "Открыть ещё 1"
 msgid "notification/lootBoxInvoiceReceived"
 msgstr "Начислено"
 
+msgid "openBoxScreen/about"
+msgstr "О контейнерах с этапами"
+
 msgid "openBoxScreen/backBtn/0"
 msgstr "В АНГАР"
 
@@ -258,18 +290,22 @@ msgstr "В Ангар"
 msgid "openBoxScreen/count/mult"
 msgstr "×%(count)s"
 
+msgid "openBoxScreen/noCurrentLootboxesMain"
+msgstr "У вас нет выбранного контейнера"
+
 msgid "openBoxScreen/noLootboxesMain"
 msgstr "У вас нет контейнеров"
 
 msgid "openBoxScreen/noLootboxesSecondary"
 msgstr ""
-"Чтобы получить контейнеры, участвуйте в определённых событиях и выполняйте "
-"связанные с ними боевые задачи."
+"Чтобы получить контейнеры, участвуйте в&nbsp;определённых событиях "
+"и&nbsp;выполняйте связанные с&nbsp;ними боевые задачи."
 
 msgid "openBoxScreen/noLootboxesShopSecondary"
 msgstr ""
-"Контейнеры можно получить за выполнение определённых задач, а также купить "
-"во внутриигровом или Премиум магазине."
+"Чтобы получить контейнеры, участвуйте в&nbsp;определённых событиях "
+"и&nbsp;выполняйте связанные с&nbsp;ними боевые задачи. Некоторые контейнеры "
+"можно докупить в&nbsp;игровом Магазине."
 
 msgid "optional/buy"
 msgstr "Докупить"
@@ -361,6 +397,17 @@ msgstr "Этап %(stage)"
 
 msgid "probabilitiesOverlay/tabTooltip"
 msgstr "Награды из %(stage)s списка имущества."
+
+msgid "probabilityGuaranteedRewardTooltip/text1"
+msgstr "Шанс выпадения предмета из указанной группы."
+
+msgid "probabilityGuaranteedRewardTooltip/text2"
+msgstr ""
+"Награда из этого списка гарантированно выпадет не позднее %(boxNumber)s-го "
+"контейнера. Если получите награду из группы ранее, отсчёт начнётся заново."
+
+msgid "probabilityGuaranteedRewardTooltip/title"
+msgstr "Вероятность и гарантированные награды"
 
 msgid "rewards/controls/close"
 msgstr "ЗАКРЫТЬ"
@@ -537,14 +584,30 @@ msgstr ""
 msgid "tooltips/probabilityButton/title"
 msgstr "Вероятность выпадения"
 
+msgid "tooltips/probabilityStageButtons/description1"
+msgstr ""
+"Имущество помещено в три последовательных списка, названных этапами. Чтобы "
+"перейти к следующему списку, нужно получить всё имущество из категории "
+"«Основные награды» текущего этапа."
+
+msgid "tooltips/probabilityStageButtons/description2"
+msgstr ""
+"Награду из третьего списка можно получить неограниченное количество раз."
+
+msgid "tooltips/probabilityStageButtons/title"
+msgstr "Списки содержимого"
+
 msgid "triggerHint/title"
 msgstr "Имеющиеся ключи и отмычки от контейнеров «День рождения 2024»"
 
 msgid "videoreward/button/title"
 msgstr "Продолжить"
 
-msgid "videoreward/description/text"
-msgstr "Прибыл гарантированный танк"
+msgid "videoreward/description/commonText"
+msgstr "Гарантированная награда!"
+
+msgid "videoreward/description/vehicleText"
+msgstr "Прибыл гарантированный танк!"
 
 msgid "videoreward/header/title"
 msgstr "Гарантированная награда!"

@@ -14,11 +14,11 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/h08_walking_man.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/environment/hangar/h08_welding.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h08_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_walking_man.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h08_walking_man.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h08_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_welding.eff</fn_effect_bin>
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -38,12 +38,12 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/environment/hangar/h08_welding.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_walking_man.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_walking_man.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_spring_wind.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_spring_wind_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_welding.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_welding.eff</fn_effect_bin>
 	</deferred>
 </root>

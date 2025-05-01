@@ -8,7 +8,6 @@ from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.shared.utils import getPlayerName
-from gui.Scaleform.genConsts.RANKEDBATTLES_CONSTS import RANKEDBATTLES_CONSTS
 from skeletons.gui.game_control import IRankedBattlesController
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.lobby_context import ILobbyContext
@@ -41,12 +40,10 @@ class YearLeaderboardView(ViewImpl):
 
     def _initialize(self, _, __, *args, **kwargs):
         super(YearLeaderboardView, self)._initialize(*args, **kwargs)
-        self.viewModel.onLeaderboardBtnClick += self.__onLeaderboardBtnClick
         self.__rankedController.getSoundManager().setOverlayStateOn()
 
     def _finalize(self):
         self.__rankedController.getSoundManager().setOverlayStateOff()
-        self.viewModel.onLeaderboardBtnClick -= self.__onLeaderboardBtnClick
         super(YearLeaderboardView, self)._finalize()
 
     def _onLoading(self, playerPosition, rewardsData, *args, **kwargs):
@@ -67,10 +64,6 @@ class YearLeaderboardView(ViewImpl):
             return backport.text(R.strings.ranked_battles.yearLeaderboard.rewardView.clanDescr(), clan=clanAbbrev)
         else:
             return ''
-
-    def __onLeaderboardBtnClick(self):
-        self.__rankedController.showRankedBattlePage(ctx={'selectedItemID': RANKEDBATTLES_CONSTS.RANKED_BATTLES_YEAR_RATING_ID})
-        self.destroyWindow()
 
 
 class YearLeaderboardAwardWindow(LobbyNotificationWindow):

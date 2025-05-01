@@ -10,6 +10,7 @@
 		<name>turret_lightinings</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/tank_customization/R97_Object_140_3Dst_TLXXL/Gun_idle.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>

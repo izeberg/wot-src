@@ -4,6 +4,10 @@ BATTLE_RESULTS = [
  (
   'cosmicTotalScore', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
+  'respawns', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'deaths', list, [], None, 'extend', ENTRY_TYPE.VEHICLE_ALL),
+ (
   'cosmicScore/SHOT', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
   'cosmicScore/RAMMING', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
@@ -61,6 +65,14 @@ BATTLE_RESULTS = [
   'cosmicEquipment/2458619', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
   'cosmicEquipment/2459899', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'cosmicEquipment/cosmic_event_shield', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'cosmicEquipment/cosmic_event_rocket_booster', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'cosmicEquipment/cosmic_event_wave', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'cosmicEquipment/cosmic_event_stun_shot', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
   'cosmicAbilitiesImpacts/BLACK_HOLE', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (

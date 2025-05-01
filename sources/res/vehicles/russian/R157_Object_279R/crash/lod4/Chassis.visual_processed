@@ -74,7 +74,6 @@
 				0
 				<material>
 					<identifier>tank_chassis_02_skinned</identifier>
-					<mfm>materials/template_mfms/lightonly_skinned.mfm</mfm>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -97,14 +96,6 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.906367 0.366575 -0.067068</groupOrigin>
@@ -122,7 +113,6 @@
 				0
 				<material>
 					<identifier>tank_chassis_02_skinned</identifier>
-					<mfm>materials/template_mfms/lightonly_skinned.mfm</mfm>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
@@ -145,14 +135,6 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.900704 0.383066 -0.004901</groupOrigin>

@@ -2,20 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-2.22082 -0.048172 -2.15768
-			<!--BW_String-->
-		</min>
-		<max>
-			1.97459 2.06697 2.41403
-			<!--BW_String-->
-		</max>
+		<min>-2.220820 -0.048172 -2.157680</min>
+		<max>1.974590 2.066970 2.414030</max>
 	</visibilityBox>
 	<parent>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/normal/lod1/hd_mle_UNI_009_BoxCamouflage</parent>
-	<extent>
-		35.0
-		<!--BW_String-->
-	</extent>
+	<extent>35.000000</extent>
 	<havok>
 		<damagedState>false</damagedState>
 	</havok>

@@ -1,0 +1,550 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleLoading/hintAll_1/description"
+msgstr ""
+"Пасля знішчэння вы зможаце вярнуцца да бою на даступнай машыне "
+"падраздзялення."
+
+msgid "battleLoading/hintAll_1/title"
+msgstr "Сістэма адраджэння"
+
+msgid "battleLoading/hintAll_2/description"
+msgstr ""
+"Кожнае падраздзяленне мае ўнікальныя баявыя здольнасці, якія становяцца "
+"мацнейшымі з павышэннем узроўню падраздзялення. Паляпшайце падраздзяленні і "
+"пашырайце патэнцыял сваёй машыны."
+
+msgid "battleLoading/hintAll_2/title"
+msgstr "Выкарыстоўвайце здольнасці"
+
+msgid "battleLoading/hintAtt_1/description"
+msgstr ""
+"Наступайце на праціўніка і знішчыце яго тэхніку, якая абараняе ключавыя "
+"пазіцыі."
+
+msgid "battleLoading/hintAtt_1/title"
+msgstr "Атакуйце!"
+
+msgid "battleLoading/hintAtt_2/description"
+msgstr ""
+"Праціўнік будзе арганізоўваць контратакі. Рыхтуйцеся стрымліваць яго націск."
+
+msgid "battleLoading/hintAtt_2/title"
+msgstr "Адбівайце контратакі"
+
+msgid "battleLoading/hintAtt_3/description"
+msgstr ""
+"Трымайцеся адзінай групай і падтрымлівайце хаўруснікаў. Каб перамагчы, "
+"засяродзьцеся на знішчэнні камандзірскіх машын праціўніка, пакуль яны не "
+"выклікалі падмацаванне."
+
+msgid "battleLoading/hintAtt_3/title"
+msgstr "Камандзіры праціўніка"
+
+msgid "battleLoading/hintDef_1/description"
+msgstr ""
+"Абараняйце хаўрусную артылерыю — гэта ваша асноўная задача. Як мінімум адна "
+"артылерыйская ўстаноўка павіцца ацалець."
+
+msgid "battleLoading/hintDef_1/title"
+msgstr "Абараняйце артылерыю"
+
+msgid "battleLoading/hintDef_2/description"
+msgstr ""
+"Захавайце свае сілы, каб перайсці ў контрнаступ і выканаць дадатковую "
+"задачу. За гэта вы атрымаеце больш ачкоў перамогі."
+
+msgid "battleLoading/hintDef_2/title"
+msgstr "Контратака"
+
+msgid "battleTimer/defend"
+msgstr "ЧАС ГЕРОЯЎ"
+
+msgid "battleTimer/waiting"
+msgstr "Чаканне гульцоў..."
+
+msgid "confirmQuit/cancel"
+msgstr "Скасаваць"
+
+msgid "confirmQuit/confirm"
+msgstr "У Гараж"
+
+msgid "confirmQuit/leaver/confirm"
+msgstr "Пакінуць"
+
+msgid "confirmQuit/leaver/descriptionAlive"
+msgstr ""
+"Вы патрэбны камандзе! Выхад з бою да знішчэння ўласнай машыны расцэньваецца "
+"як дэзерцірства і можа прывесці да дысцыплінарнага спагнання."
+
+msgid "confirmQuit/leaver/descriptionDead"
+msgstr ""
+"Вы патрэбны камандзе! Нават калі ваша машына знішчана, {E9E2BF_Open}вы "
+"вернецеся да бою{E9E2BF_Close}, калі каманда пяройдзе ў іншую фазу. Уцёкі з "
+"поля бою расцэньваюцца як дэзерцірства і могуць пацягнуць дысцыплінарнае "
+"спагнанне."
+
+msgid "confirmQuit/leaver/title"
+msgstr "Уцячы з поля бою?"
+
+msgid "confirmQuit/title"
+msgstr "Пакінуць бой?"
+
+msgid "dynamicSquad/receivedFromSquad"
+msgstr "Націсніце, каб прыняць запрашэнне і далучыцца да звязу."
+
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Пашкоджанні ад забароненай зоны"
+
+msgid "efficiencyRibbons/TotalVehiclesHealApplied"
+msgstr "Палявы рамонт хаўруснікаў"
+
+msgid "efficiencyRibbons/artillery"
+msgstr "Пашкоджанні ад артабстрэлу"
+
+msgid "efficiencyRibbons/artilleryMortar"
+msgstr "Пашкоджанні ад мінамётнага абстрэлу"
+
+msgid "efficiencyRibbons/artilleryOnYourself"
+msgstr "Пашкоджанні ад здольнасці «Агонь на сябе»"
+
+msgid "efficiencyRibbons/artilleryRocket"
+msgstr "Пашкоджанні ад залпу «Кацюш»"
+
+msgid "efficiencyRibbons/bombercas"
+msgstr "Пашкоджанні ад налёту штурмавіка"
+
+msgid "efficiencyRibbons/bombers"
+msgstr "Пашкоджанні ад авіяўдару"
+
+msgid "efficiencyRibbons/damageByHBMinefield"
+msgstr "Пашкоджанні ад міннага поля"
+
+msgid "efficiencyRibbons/healSelfVehicleApplied"
+msgstr "Машына адрамантавана"
+
+msgid "efficiencyRibbons/healVehicleApplied"
+msgstr "Машына адрамантавана хаўруснікам"
+
+msgid "efficiencyRibbons/receivedBombersDamage"
+msgstr "Пашкоджанні ад артудару"
+
+msgid "eventStats/missionTask/defence"
+msgstr "Задача: абараняйце хаўрусную артылерыю, адбіваючы атакі праціўніка."
+
+msgid "eventStats/missionTask/offence"
+msgstr ""
+"Задача: наступайце на ключавыя пазіцыі, адбівайце контратакі і знішчайце "
+"камандзіраў праціўніка."
+
+msgid "eventStats/missionTitle/defence"
+msgstr "ЧАС ГЕРОЯЎ: АБАРОНА"
+
+msgid "eventStats/missionTitle/offence"
+msgstr "ЧАС ГЕРОЯЎ: ПРАРЫЎ"
+
+msgid "eventStats/tableCaption"
+msgstr "Склад каманды"
+
+msgid "finalStatistic/commonStats/resultlabel/lose"
+msgstr "АПЕРАЦЫЯ ПРАВАЛІЛАСЯ"
+
+msgid "finalStatistic/commonStats/resultlabel/tie"
+msgstr "БОЙ СКОНЧАНЫ"
+
+msgid "finalStatistic/commonStats/resultlabel/win"
+msgstr "ПЕРАМОГА!"
+
+msgid "finalStatistic/commonStats/win"
+msgstr "c"
+
+msgid "finish/lose/reason/1"
+msgstr "Войскі разгромлены"
+
+msgid "finish/lose/reason/13"
+msgstr "Уся хаўрусная артбатарэя знішчана"
+
+msgid "finish/lose/reason/3"
+msgstr "Вы не выканалі задачу за адведзены час"
+
+msgid "finish/lose/reason/5"
+msgstr "Бой спынены: тэхнічны збой"
+
+msgid "finish/tie/reason/1"
+msgstr "Вы выканалі асноўную задачу, але ўся хаўрусная тэхніка знішчана"
+
+msgid "finish/tie/reason/3"
+msgstr "Вы выканалі асноўную задач, але не выканалі дадатковую"
+
+msgid "finish/win/reason/12"
+msgstr "Усе задачы выкананы, вораг дашчэнту разгромлены!"
+
+msgid "goals/description/ATT_goal_counter_attack"
+msgstr "Знішчыць %(left)s адз. тэхнікі праціўніка."
+
+msgid "goals/description/ATT_goal_final_few_boss"
+msgstr "Знішчыце %(left)s адз. камандзірскіх машын праціўніка."
+
+msgid "goals/description/ATT_goal_final_one_boss"
+msgstr "Знішчыць камандуючага абаронай праціўніка."
+
+msgid "goals/description/ATT_goal_main"
+msgstr "Знішчыце %(left)s адз. тэхнікі праціўніка."
+
+msgid "goals/lose/ATT_goal_counter_attack/team_killed"
+msgstr "Праціўнік знішчыў усю нашу тэхніку."
+
+msgid "goals/lose/ATT_goal_counter_attack/time_ended"
+msgstr "Вы не выканалі задачу за адведзены час."
+
+msgid "goals/lose/ATT_goal_final_few_boss/team_killed"
+msgstr "Праціўнік знішчыў усю нашу тэхніку."
+
+msgid "goals/lose/ATT_goal_final_few_boss/time_ended"
+msgstr "Вы не выканалі задачу за адведзены час."
+
+msgid "goals/lose/ATT_goal_final_one_boss/team_killed"
+msgstr "Праціўнік знішчыў усю нашу тэхніку."
+
+msgid "goals/lose/ATT_goal_final_one_boss/time_ended"
+msgstr "Вы не выканалі задачу за адведзены час."
+
+msgid "goals/lose/ATT_goal_main/team_killed"
+msgstr "Праціўнік знішчыў усю нашу тэхніку."
+
+msgid "goals/lose/ATT_goal_main/time_ended"
+msgstr "Вы не выканалі задачу за адведзены час."
+
+msgid "goals/lose/SPG_def/team_killed"
+msgstr "Аперацыя правалілася"
+
+msgid "goals/lose/def_counter_attack/team_killed"
+msgstr ""
+"Контратака не ўдалася,\n"
+"але вы ўратавалі артбатарэю!"
+
+msgid "goals/lose/def_counter_attack/time_ended"
+msgstr "Артбатарэя абаронена, але вораг уцёк!"
+
+msgid "goals/progress/ATT_goal_counter_attack"
+msgstr "Засталося %(left)s адз. тэхнікі праціўніка."
+
+msgid "goals/progress/ATT_goal_final_few_boss"
+msgstr "Знішчыце ўсіх камандуючых!"
+
+msgid "goals/progress/ATT_goal_final_one_boss"
+msgstr "Знішчыце камандуючага!"
+
+msgid "goals/progress/ATT_goal_main"
+msgstr "Засталося %(left)s адз. тэхнікі праціўніка."
+
+msgid "goals/progress/SPG_def"
+msgstr "Засталося пратрымацца"
+
+msgid "goals/progress/SPG_def/new_wave"
+msgstr "Засталося пратрымацца"
+
+msgid "goals/progress/def_counter_attack"
+msgstr "Знішчыце ўсю тэхніку праціўніка!"
+
+msgid "goals/title/ATT_goal_counter_attack"
+msgstr "Адбіце контратаку праціўніка"
+
+msgid "goals/title/ATT_goal_final_few_boss"
+msgstr "А вось і наша цэль!"
+
+msgid "goals/title/ATT_goal_final_one_boss"
+msgstr "А вось і наша цэль!"
+
+msgid "goals/title/ATT_goal_main"
+msgstr "Зламіце абарону праціўніка"
+
+msgid "goals/title/SPG_def"
+msgstr "Вораг наступае!"
+
+msgid "goals/title/SPG_def/new_wave"
+msgstr "Вораг выклікаў падмацаванне!"
+
+msgid "goals/title/def_counter_attack"
+msgstr "Знішчыце ўсю тэхніку праціўніка!"
+
+msgid "goals/win/ATT_goal_counter_attack"
+msgstr "Контратака праціўніка адбіта!"
+
+msgid "goals/win/ATT_goal_final_few_boss"
+msgstr "Усе камандзіры праціўніка знішчаны!"
+
+msgid "goals/win/ATT_goal_final_one_boss"
+msgstr "Камандуючы абаронай праціўніка знішчаны!"
+
+msgid "goals/win/ATT_goal_main"
+msgstr "Абарона праціўніка зламана!"
+
+msgid "goals/win/def_counter_attack"
+msgstr "Усе задачы выкананы, вораг дашчэнту разгромлены!"
+
+msgid "helpScreen/hint/description"
+msgstr "для прагляду асаблівасцяў рэжыму"
+
+msgid "helpScreen/missionTitle/101"
+msgstr "ЧАС ГЕРОЯЎ: ПРАРЫЎ"
+
+msgid "helpScreen/missionTitle/102"
+msgstr "ЧАС ГЕРОЯЎ: АБАРОНА"
+
+msgid "helpScreen/missionTitle/103"
+msgstr "ЧАС ГЕРОЯЎ"
+
+msgid "inbattle_markers/distance_str"
+msgstr " м"
+
+msgid "inbattle_markers/going_there"
+msgstr "Рухаюся ў "
+
+msgid "notification/SPGDefended"
+msgstr "Артбатарэя зачышчана!"
+
+msgid "notification/SPGKilled"
+msgstr "Артбатарэя знішчана!"
+
+msgid "notification/SPGUnderAttack"
+msgstr "Артбатарэя сур'ёзна пашкоджана!"
+
+msgid "notification/SPGUnderAttack/description"
+msgstr "Абараніце артбатарэю!"
+
+msgid "notification/afkWarning"
+msgstr ""
+"Баец, бяздзейнасць прыраўноўваецца да дэзерцірства і бязлітасна караецца! "
+"Для перамогі патрэбны супольны высілак!"
+
+msgid "notification/aimerSpawned"
+msgstr "Знішчыце варожых артнаводчыкаў!"
+
+msgid "notification/aimerSpawned/description"
+msgstr "Гэта спыніць артудары!"
+
+msgid "notification/defenseArtillery"
+msgstr "Абараніце артбатарэю!"
+
+msgid "notification/oneSPGKilled"
+msgstr "Хаўрусная артбатарэя знішчана!"
+
+msgid "notification/oneSPGKilled/description"
+msgstr "Абараніце артбатарэю!"
+
+msgid "notification/operationFailed"
+msgstr "Аперацыя правалілася"
+
+msgid "notification/runnerSpawned"
+msgstr "Знішчыце варожыя танкі прарыву!"
+
+msgid "phaseIndicator/phase"
+msgstr "ЭТАП %(current)d З %(total)d: %(state)s"
+
+msgid "phaseIndicator/state/boss"
+msgstr "КАМАНДЗІР"
+
+msgid "phaseIndicator/state/defence"
+msgstr "АБАРОНА"
+
+msgid "phaseIndicator/state/offence"
+msgstr "КОНТРАТАКА"
+
+msgid "phaseIndicator/wave"
+msgstr "Хваля %(current)d з %(total)d"
+
+msgid "player_messages/ARTILLERY_EQ_ALLY_ENEMY"
+msgstr "Артабстрэл %(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/ARTILLERY_MORTAR_ALLY_ENEMY"
+msgstr "Мінамёты %(attacker)s знішчылі %(target)s."
+
+msgid "player_messages/ARTILLERY_ON_YOURSELF_ALLY_ENEMY"
+msgstr "Здольнасць «Агонь на сябе» %(attacker)s знішчыла %(target)s."
+
+msgid "player_messages/ARTILLERY_ROCKET_ALLY_ENEMY"
+msgstr "Залп «Кацюш» %(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/BOMBER_EQ_ALLY_ENEMY"
+msgstr "Авіяўдар %(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_AFTERBURNING_HB"
+msgstr "Поўны газ актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_MORTAR_HB"
+msgstr "Мінамётны абстрэл актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_ON_YOURSELF_HB"
+msgstr "Агонь на сябе выкліканы."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_ROCKET_HB"
+msgstr "Залп «Кацюш» актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ARTILLERY_STRIKE_HB"
+msgstr "Артабстрэл актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_ATTACK_PLANE_HB"
+msgstr "Налёт штурмавіка актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_BOMBER_HB"
+msgstr "Авіяўдар актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_HEAL_POINT_HB"
+msgstr "Палявы рамонт актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_INCENDIARY_SHOT_HB"
+msgstr "Запальны снарад актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_LARGE_REPAIR_KIT_HB"
+msgstr "Вялікі рамонтны камплект актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_MINEFIELD_HB"
+msgstr "Міннае поле актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_RECON_PLANE_HB"
+msgstr "Самалёт-выведнік вылецеў."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_STUN_SHOT_HB"
+msgstr "Узмоцнены зарад актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_SUPER_SHOT"
+msgstr "Узмоцнены зарад актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_NOT_READY"
+msgstr ""
+"%(equipmentName)s недаступны: не выкананы ўмовы для разблакавання ўмення."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_AFTERBURNING_HB"
+msgstr "Поўны газ гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_MORTAR_HB"
+msgstr "Мінамётны абстрэл гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_ON_YOURSELF_HB"
+msgstr "Агонь на сябе гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_ROCKET_HB"
+msgstr "Залп «Кацюш» гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ARTILLERY_STRIKE_HB"
+msgstr "Артабстрэл гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_ATTACK_PLANE_HB"
+msgstr "Налёт штурмавіка гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_BOMBER_HB"
+msgstr "Авіяўдар гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_HEAL_POINT_HB"
+msgstr "Палявы рамонт гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_INCENDIARY_SHOT_HB"
+msgstr "Запальны снарад гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_LARGE_REPAIR_KIT_HB"
+msgstr "Вялікі рамонтны камплект гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_HB"
+msgstr "Міннае поле гатовае да разгортвання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_RECON_PLANE_HB"
+msgstr "Самалёт-выведнік гатовы да вылету."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_STUN_SHOT_HB"
+msgstr "Узмоцнены зарад гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SUPER_SHOT"
+msgstr "Узмоцнены зарад гатовы да выкарыстання."
+
+msgid "player_messages/DEATH_FROM_BOMBER_CAS_ALLY_ENEMY"
+msgstr "Штурмавік %(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/EVENT_DEATH_ALLY_ENEMY"
+msgstr "%(attacker)s знішчыў %(target)s."
+
+msgid "player_messages/EVENT_DEATH_FROM_DEATH_ZONE_ALLY_SUICIDE"
+msgstr "%(target)s знішчаны забароненай зонай."
+
+msgid "player_messages/EVENT_DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
+msgstr "%(target)s знішчаны залпам артбатарэі."
+
+msgid "player_messages/EVENT_DEATH_SELF_ENEMY"
+msgstr "Праціўнік %(target)s знішчаны."
+
+msgid "player_messages/MINEFIELD_EQ_ALLY_ENEMY"
+msgstr "На мінным полі %(attacker)s знішчаны %(target)s."
+
+msgid "playersPanel/postmortem/select"
+msgstr "Націсніце, каб выбраць гэту машыну для назірання за боем."
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ARTILLERY"
+msgstr "Машына знішчана пры артабстрэле"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEATH_ZONE_ALLY_SELF"
+msgstr "Машына знішчана хаўруснікам у забароненай зоне"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "Машына знішчана %(entity)s у забароненай зоне"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
+msgstr "Машына знішчана забароненай зонай"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "Прылада [%(device)s] падарвана стрэлам праціўніка"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_FIRE"
+msgstr "Машына знішчана пажарам"
+
+msgid "postmortem_messages/EVENT_DEATH_FROM_SHOT"
+msgstr "Машына знішчана стрэлам праціўніка"
+
+msgid "postmortem_panel/no_respawns_message_descr"
+msgstr "Для вас бой скончаны"
+
+msgid "postmortem_panel/no_respawns_message_title"
+msgstr "Даступнай тэхнікі ў падраздзяленні больш няма"
+
+msgid "postmortem_panel/respawn_timer_title"
+msgstr "Чакайце выбару новай мышыны"
+
+msgid "respawn/card/dead"
+msgstr "Падбіты"
+
+msgid "respawn/card/pick"
+msgstr "Пацвердзіць выбар"
+
+msgid "respawn/division"
+msgstr "ПАДРАЗДЗЯЛЕННЕ"
+
+msgid "respawn/goalTimer"
+msgstr "Да канца этапу: %(time)s"
+
+msgid "respawn/timer/label/battleStart"
+msgstr "?empty?"
+
+msgid "respawn/timer/label/chooseVehicle"
+msgstr "Выберыце тэхніку, на якой пойдзеце да бою"
+
+msgid "respawn/timer/title/battleStart"
+msgstr "Бой пачынаецца!"
+
+msgid "respawn/timer/title/chooseVehicle"
+msgstr "ВЫБАР ТЭХНІКІ"
+
+msgid "spgPanel/title"
+msgstr "Абараніце артбатарэю!"
+
+msgid "timersPanel/artilleryOnYourself"
+msgstr "Час да пачатку абстрэлу!"
+
+msgid "timersPanel/deathZoneWarning"
+msgstr "Пакіньце небяспечную зону!"

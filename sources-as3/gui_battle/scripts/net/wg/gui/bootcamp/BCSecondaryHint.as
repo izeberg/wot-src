@@ -107,6 +107,7 @@ package net.wg.gui.bootcamp
       public function as_showHint(param1:String) : void
       {
          var _loc2_:int = 0;
+         var _loc3_:Boolean = false;
          this.textsAnim.visible = true;
          this.iconsAnim.visible = true;
          this.iconsAnim.gotoAndPlay(RibbonCtrl.SHOW_ANIM);
@@ -117,7 +118,7 @@ package net.wg.gui.bootcamp
          this.iconsAnim.y = _loc2_;
          this.textsAnim.y = _loc2_;
          this.iconsAnim.x = this.textsAnim.x = CENTER_OFFSET - (this._textField.textWidth >> 1);
-         var _loc3_:Boolean = this._textField.textHeight < SINGLE_LINE_HEIGHT;
+         _loc3_ = this._textField.textHeight < SINGLE_LINE_HEIGHT;
          this._background.height = !!_loc3_ ? Number(BACKGROUND_HEIGHT) : Number(BACKGROUND_HEIGHT_MAX);
          this._background.x = BACKGROUND_X_OFFSET;
          this._background.y = !!_loc3_ ? Number(0) : Number(BACKGROUND_Y_MAX);

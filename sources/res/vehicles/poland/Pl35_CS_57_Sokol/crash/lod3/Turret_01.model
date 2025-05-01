@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl35_CS_57_Sokol/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl35_CS_57_Sokol/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.263695 -0.000001 -2.355782</min>
+		<max>1.246370 1.056957 1.725082</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

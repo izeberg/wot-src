@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.491978 0.424237 -0.079625</min>
+		<max>1.421704 0.620668 0.889056</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R223_T_54B_1958/normal/lod1/Curtain_anim_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R223_T_54B_1958/normal/lod0/Curtain_anim_01</nodefullVisual>
+</root>

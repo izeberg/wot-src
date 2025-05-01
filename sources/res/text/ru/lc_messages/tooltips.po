@@ -544,6 +544,14 @@ msgstr ""
 "сравнению со снарядами других типов, хотя само значение урона может быть "
 "невысоким. Может пробить тонкие экраны и некоторые разрушаемые препятствия."
 
+msgid "advanced/FLAME_STUN"
+msgstr ""
+"Может нанести урон, а также повредить внутренние модули и членов экипажа "
+"даже без пробития брони. Имеет более высокую вероятность нанесения урона по "
+"сравнению со снарядами других типов, хотя само значение урона может быть "
+"невысоким. Может пробить тонкие экраны и некоторые разрушаемые препятствия. "
+"При попадании в цель дезориентирует экипаж противника."
+
 msgid "advanced/HIGH_EXPLOSIVE"
 msgstr ""
 "Наносит урон даже без пробития брони. Имеет более высокую вероятность "
@@ -558,6 +566,13 @@ msgstr ""
 " быть невысоким. Может пробивать тонкие экраны и некоторые разрушаемые "
 "препятствия, теряя при этом часть бронепробития. В случае непробития "
 "взрывается."
+
+msgid "advanced/HIGH_EXPLOSIVE_STUN"
+msgstr ""
+"Наносит урон даже без пробития брони. Имеет более высокую вероятность "
+"нанесения урона, хотя само значение урона может быть небольшим. При "
+"попадании в любое препятствие или броню взрывается. Не рикошетит. Может "
+"дезориентировать экипаж противника."
 
 msgid "advanced/HOLLOW_CHARGE"
 msgstr ""
@@ -881,7 +896,10 @@ msgstr ""
 "ответного огня."
 
 msgid "advanced/vehicleAutoShootFlameGun"
-msgstr "?empty?"
+msgstr ""
+"Урон на различных стадиях нагрева и количество стадий нагрева на разных "
+"орудиях могут различаться. Урон, наносимый танком на конкретной стадии "
+"нагрева, указан в ТТХ орудия."
 
 msgid "advanced/vehicleChassis"
 msgstr ""
@@ -6489,6 +6507,22 @@ msgstr "Информационные листки доступны в полно
 msgid "lobbyMenu/versionInfoButton/miniclient/header"
 msgstr "Внимание!"
 
+msgid "loby_messenger/btnReferralDisabled/body"
+msgstr ""
+"Недоступно в выбранном режиме. Для получения доступа к функциональности "
+"перейдите в режим «Случайный бой»."
+
+msgid "loby_messenger/btnReferralDisabled/header"
+msgstr "Реферальная программа"
+
+msgid "loby_messenger/btnVehicleCartDisabled/body"
+msgstr ""
+"Недоступно в выбранном режиме. Для получения доступа к функциональности "
+"перейдите в режим «Случайный бой»."
+
+msgid "loby_messenger/btnVehicleCartDisabled/header"
+msgstr "Сравнение техники"
+
 msgid "loby_messenger/channel_button/inRoaming"
 msgstr "Каналы недоступны из-за смены региона"
 
@@ -8680,6 +8714,19 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_BP16_5/label"
 msgstr "Боевой пропуск, «Путь к Победе»"
 
+msgid "notrecruitedtankman/tankmen_BP16_M/desc"
+msgstr ""
+"Собирательный образ танкисток, с честью и доблестью прошедших Великую "
+"Отечественную войну. Из тех женщин, что и коня на скаку остановят, и не то, "
+"что в горящую избу — в горящий танк, за боевым товарищем, войдут, не "
+"дрогнув. Не оглядываясь на то, что они — «слабый пол» и могли бы остаться в "
+"тылу. Эти — не могли. И медали, теснящиеся на их груди, — тому порукой. "
+"Поистине героические женщины, показавшие всему миру, что сила духа и "
+"преданность делу не знают границ."
+
+msgid "notrecruitedtankman/tankmen_BP16_M/label"
+msgstr "Боевой пропуск «Путь к Победе», специальная глава «Мышиная охота»"
+
 msgid "notrecruitedtankman/tankmen_Inzhener_2/desc"
 msgstr ""
 "Механик танковой роты, «отец солдатам». Чувствует огромную ответственность "
@@ -8771,6 +8818,42 @@ msgstr ""
 
 msgid "notrecruitedtankman/tankmen_MF_8_Bi/label"
 msgstr "Совместная акция с «Мосфильм»"
+
+msgid "notrecruitedtankman/tankmen_May25_1/desc"
+msgstr ""
+"Выдающийся советский военачальник, Маршал Советского Союза, четырежды Герой "
+"Советского Союза. За долгую службу в Красной армии командовал частями и "
+"формированиями от полка до военного округа и фронта. Прошёл всю Великую "
+"Отечественную войну на различных высших командных должностях. Являлся "
+"заместителем Верховного Главнокомандующего. В мае 1945-го года принимал "
+"капитуляцию Германии, командовал первым парадом Победы 24 июня 1945-го. "
+"Остался в исторической памяти потомков как «маршал Победы»."
+
+msgid "notrecruitedtankman/tankmen_May25_1/label"
+msgstr "Событие «Время героев»"
+
+msgid "notrecruitedtankman/tankmen_May25_2/desc"
+msgstr ""
+"Советский военный деятель, Герой Советского Союза. В годы Великой "
+"Отечественной войны командовал различными соединениями от полка до корпуса; "
+"участвовал в ряде ключевых сражений, в том числе Курской битве и штурме "
+"Берлина. После Победы возглавлял Военную академии бронетанковых войск, а в "
+"1969-м году был назначен на должность начальника бронетанковых войск СССР, с"
+" 1975-го — главный маршал бронетанковых войск."
+
+msgid "notrecruitedtankman/tankmen_May25_2/label"
+msgstr "Событие «Время героев»"
+
+msgid "notrecruitedtankman/tankmen_May25_3/desc"
+msgstr ""
+"Советский полководец, Герой Советского Союза. Прошёл путь от красноармейца в"
+" пору Гражданской войны до генерала армии в годы Великой Отечественной. "
+"Опытный штабист и военачальник, в 1941-1944 годах возглавлял войска "
+"нескольких фронтов Красной Армии. 29 февраля 1944 года был тяжело ранен, "
+"попав в засаду, и умер от ран 15 апреля того же года."
+
+msgid "notrecruitedtankman/tankmen_May25_3/label"
+msgstr "Событие «Время героев»"
 
 msgid "notrecruitedtankman/tankmen_Razvedchik_3/desc"
 msgstr ""
@@ -9501,42 +9584,6 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp9_3/label"
 msgstr "Боевой пропуск, девятый сезон"
-
-msgid "notrecruitedtankman/tankmen_bph_1/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_1/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_1/label"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_2/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_2/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_2/label"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_3/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_3/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_3/label"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_4/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_4/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bph_4/label"
-msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_hw_BabaYaga/desc"
 msgstr ""
@@ -10346,6 +10393,25 @@ msgstr "Техника, на которую будет производитьс�
 
 msgid "personal_case/training/tank/header"
 msgstr "Машина"
+
+msgid "playStreak/randomEquipment/desc"
+msgstr ""
+"Каждый раз при начислении ежемесячной награды вы получите один случайный предмет из списка:\n"
+"• Расточка каморы Т1\n"
+"• Многозубая каретка досылателя Т1"
+
+msgid "playStreak/randomEquipment/label"
+msgstr "Случайное экспериментальное оборудование"
+
+msgid "playStreak/randomGoodie/desc"
+msgstr ""
+"Каждый раз при начислении еженедельной награды вы получите один случайный предмет из списка:\n"
+"• Личные резервы — бонус 100% к боевому опыту на 1 ч.\n"
+"• Личные резервы — бонус 50% к кредитам на 1 ч.\n"
+"• Личные резервы — бонус 300% к комбинированному опыту на 1 ч."
+
+msgid "playStreak/randomGoodie/label"
+msgstr "Случайные личные резервы"
 
 msgid "prebattle/downButton/active"
 msgstr "Переместить игрока из состава команды в очередь"

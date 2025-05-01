@@ -23,8 +23,9 @@ from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.game_control import IServerStatsController
 from gui.Scaleform.locale.MENU import MENU
-from gui.Scaleform.daapi.view.battle.shared.premature_leave import showLeaverAliveWindow, showExitWindow, showLeaverReplayWindow, showComp7LeaverAliveWindow
+from gui.Scaleform.daapi.view.battle.shared.premature_leave import showLeaverAliveWindow, showExitWindow, showHbExitWindow, showLeaverReplayWindow, showComp7LeaverAliveWindow, showHbLeaverAliveWindow
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
+from historical_battles_common.hb_constants_extension import ARENA_GUI_TYPE
 
 class IngameMenu(IngameMenuMeta, BattleGUIKeyHandler):
     serverStats = dependency.descriptor(IServerStatsController)
@@ -96,7 +97,7 @@ class IngameMenu(IngameMenuMeta, BattleGUIKeyHandler):
         self.as_setServerSettingS(serverName, tooltipFullData, state)
 
     def _setServerStats(self):
-        if constants.IS_SHOW_SERVER_STATS:
+        if constants.IS_SHOW_SERVER_STATS and BigWorld.player().arenaGuiType not in ARENA_GUI_TYPE.HB_RANGE:
             self.as_setServerStatsS(*self.serverStats.getFormattedStats())
 
     def _setMenuButtonsLabels(self):
@@ -132,7 +133,11 @@ class IngameMenu(IngameMenuMeta, BattleGUIKeyHandler):
         elif BattleReplay.isPlaying():
             result = yield wg_await(showLeaverReplayWindow())
         else:
-            result = yield wg_await(showExitWindow())
+            arenaBonusType = BigWorld.player().arenaBonusType
+            if ARENA_BONUS_TYPE_CAPS.checkAny(arenaBonusType, ARENA_BONUS_TYPE_CAPS.HISTORICAL_BATTLES):
+                result = yield wg_await(showHbExitWindow())
+            else:
+                result = yield wg_await(showExitWindow())
         if result:
             self.__doExit()
         else:
@@ -150,6 +155,8 @@ class IngameMenu(IngameMenuMeta, BattleGUIKeyHandler):
         arenaBonusType = BigWorld.player().arenaBonusType
         if ARENA_BONUS_TYPE_CAPS.checkAny(arenaBonusType, ARENA_BONUS_TYPE_CAPS.COMP7):
             return showComp7LeaverAliveWindow()
+        if ARENA_BONUS_TYPE_CAPS.checkAny(arenaBonusType, ARENA_BONUS_TYPE_CAPS.HISTORICAL_BATTLES):
+            return showHbLeaverAliveWindow()
         return showLeaverAliveWindow(isPlayerIGR)
 
     @staticmethod

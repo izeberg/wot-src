@@ -2,17 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/german/G138_VK168_02_Mauerbrecher/normal/lod3/Chassis</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.75508 -0.0297861 -4.24693
-			<!--BW_String-->
-		</min>
-		<max>
-			1.75232 1.18517 4.26502
-			<!--BW_String-->
-		</max>
+		<min>-1.755080 -0.029786 -4.246930</min>
+		<max>1.752320 1.185170 4.265020</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/german/G138_VK168_02_Mauerbrecher/normal/lod2/Chassis</nodefullVisual>
 </root>

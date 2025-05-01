@@ -63,6 +63,10 @@
 			<lodMode>4</lodMode>
 			<pattern>.*_BGMM\.dds</pattern>
 		</rule>
+		<rule>
+			<allowSplit>false</allowSplit>
+			<pattern>.*_LM\.dds</pattern>
+		</rule>
 		<directory>
 			<path>Buildings</path>
 			<directory>

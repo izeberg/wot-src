@@ -97,6 +97,7 @@ _GROUP_PRIORITIES = [
 class ClientLootBoxTags(Enum):
     HIDDEN_COUNT = 'hiddenCount'
     HIDDEN = 'hidden'
+    ALWAYS_SHOW = 'alwaysShow'
     EXTENDED_TOOLTIP = 'extendedTooltip'
 
 
@@ -109,7 +110,8 @@ class LootBox(GUIItem):
                  '__slotBonuses', '__guaranteedFrequencyName', '__tier', '__isEnabled',
                  '__userNameKey', '__iconName', '__description', '__videoKey', '__weight',
                  '__bonusGroups', '__autoOpenTime', '__rotationLists', '__config',
-                 '__rotationStage', '__tags', '__unlockKeys')
+                 '__rotationStage', '__tags', '__unlockKeys', '__manualMaxOpenCount',
+                 '__lootBoxInfoPageURL')
 
     def __init__(self, lootBoxID, lootBoxConfig, invCount):
         super(LootBox, self).__init__()
@@ -132,8 +134,14 @@ class LootBox(GUIItem):
     def isActiveHiddenCount(self):
         return self.isHiddenCount() and self.__getTimeToAutoOpen() > 0
 
+    def isActiveAlwaysShow(self):
+        return self.isAlwaysShow() and self.__getTimeToAutoOpen() > 0
+
     def isHiddenCount(self):
         return ClientLootBoxTags.HIDDEN_COUNT.value in self.__tags
+
+    def isAlwaysShow(self):
+        return ClientLootBoxTags.ALWAYS_SHOW.value in self.__tags
 
     def isExtendedTooltip(self):
         return ClientLootBoxTags.EXTENDED_TOOLTIP.value in self.__tags
@@ -142,7 +150,7 @@ class LootBox(GUIItem):
         return ClientLootBoxTags.HIDDEN.value not in self.__tags
 
     def isVisibleInStorage(self):
-        return self.isVisible() and (self.getInventoryCount() > 0 or self.isActiveHiddenCount())
+        return self.isVisible() and (self.getInventoryCount() > 0 or self.isActiveHiddenCount() or self.isActiveAlwaysShow())
 
     def openedWithKey(self, keyID=None):
         if keyID:
@@ -202,6 +210,16 @@ class LootBox(GUIItem):
             return self.__autoOpenTime
         return 0
 
+    def getManualMaxOpenCount(self):
+        if self.__manualMaxOpenCount:
+            return self.__manualMaxOpenCount
+        return 0
+
+    def getLootBoxInfoPageURL(self):
+        if self.__lootBoxInfoPageURL:
+            return self.__lootBoxInfoPageURL
+        return ''
+
     def getCategory(self):
         return self.__category
 
@@ -259,6 +277,18 @@ class LootBox(GUIItem):
     def getRotationStage(self):
         return self.__rotationStage
 
+    def isMultipleStage(self):
+        return len(self.__rotationLists) > 1
+
+    def isVehicleGuaranteedOnly(self):
+        for slot in self.__iterateAllSlots():
+            guaranteedRewards = slot['limitIDsMap'].get(self.getGuaranteedFrequencyName(), [])
+            for reward in guaranteedRewards:
+                if reward.getName() not in ('vehicles', 'battleToken'):
+                    return False
+
+        return True
+
     def __getTimeToAutoOpen(self):
         if self.__autoOpenTime:
             return max(self.__autoOpenTime - time_utils.getServerUTCTime(), 0)
@@ -287,7 +317,9 @@ class LootBox(GUIItem):
         self.__description = assetsConfig.get('description', self.__type)
         self.__videoKey = assetsConfig.get('video', '')
         self.__tags = assetsConfig.get('tags', set())
+        self.__lootBoxInfoPageURL = assetsConfig.get('lootBoxInfoPageURL', '')
         self.__unlockKeys = lootBoxConfig.get('unlockKeys', set())
+        self.__manualMaxOpenCount = lootBoxConfig.get('manualMaxOpenCount')
         return
 
     def __iterateAllSlots(self):

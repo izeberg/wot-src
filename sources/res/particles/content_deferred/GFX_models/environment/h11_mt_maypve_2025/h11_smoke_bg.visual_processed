@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/h29_se20_smoke_03_01.dds</Texture>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.745098 0.745098 0.745098 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>0.500000 0.321500 1.021000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.658824 0.698039 0.741176 0.600000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.000001 0.117913 -0.089654</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-7.415268 -2.573541 -0.196417</min>
+		<max>7.415266 2.809367 0.017109</max>
+	</boundingBox>
+	<geometrySize>124</geometrySize>
+	<minUVDensity>0.008950</minUVDensity>
+</root>

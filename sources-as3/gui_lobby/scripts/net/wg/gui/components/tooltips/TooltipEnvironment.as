@@ -52,10 +52,9 @@ package net.wg.gui.components.tooltips
       
       override protected function redraw() : void
       {
-         var _loc1_:int = 0;
          var _loc2_:Boolean = false;
          var _loc3_:int = 0;
-         _loc1_ = contentMargin.left + bgShadowMargin.left;
+         var _loc1_:int = contentMargin.left + bgShadowMargin.left;
          topPosition = bgShadowMargin.top + contentMargin.top;
          App.utils.commons.updateTextFieldSize(this.titleTF,true,true);
          this.titleTF.y = topPosition | 0;

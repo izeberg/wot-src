@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R230_Maus/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.533780 -0.002663 -2.377485</min>
+		<max>1.533780 1.529202 2.154280</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R230_Maus/normal/lod1/Turret_01</nodefullVisual>
+</root>

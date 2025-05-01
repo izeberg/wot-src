@@ -24,7 +24,6 @@ package net.wg.gui.lobby.rankedBattles19.view
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.controls.Button;
-   import scaleform.clik.events.ButtonEvent;
    
    public class RankedBattlesSeasonGapView extends RankedBattlesSeasonGapViewMeta implements IRankedBattlesSeasonGapViewMeta, IStageSizeDependComponent
    {
@@ -143,7 +142,6 @@ package net.wg.gui.lobby.rankedBattles19.view
          this.leagueMc.visible = false;
          this.divisionImage.visible = false;
          this.divisionImage.addEventListener(Event.CHANGE,this.onMainImageChangeHandler);
-         this.ratingBtn.addEventListener(ButtonEvent.CLICK,this.onRatingBtnClickHandler);
          this.sprinterImage.addEventListener(MouseEvent.ROLL_OVER,this.onSprinterImageRollOverHandler);
          this.sprinterImage.addEventListener(MouseEvent.ROLL_OUT,this.onSprinterImageRollOutHandler);
          this.sprinterImage.visible = false;
@@ -182,7 +180,6 @@ package net.wg.gui.lobby.rankedBattles19.view
          this.divisionImage.removeEventListener(Event.CHANGE,this.onMainImageChangeHandler);
          this.divisionImage.dispose();
          this.divisionImage = null;
-         this.ratingBtn.removeEventListener(ButtonEvent.CLICK,this.onRatingBtnClickHandler);
          this.ratingBtn.dispose();
          this.ratingBtn = null;
          this.sprinterImage.removeEventListener(MouseEvent.ROLL_OVER,this.onSprinterImageRollOverHandler);
@@ -373,11 +370,6 @@ package net.wg.gui.lobby.rankedBattles19.view
       private function onMainImageChangeHandler(param1:Event) : void
       {
          invalidateLayout();
-      }
-      
-      private function onRatingBtnClickHandler(param1:Event) : void
-      {
-         onBtnClickS();
       }
       
       private function onSprinterImageRollOverHandler(param1:Event) : void

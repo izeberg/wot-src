@@ -48,7 +48,6 @@ package net.wg.gui.lobby.rankedBattles19.view.seasonComplete
       override protected function configUI() : void
       {
          super.configUI();
-         this.container.addEventListener(SeasonCompleteEvent.NEXT_BTN_CLICK,this.onContainerNextBtnClickHandler);
          this.container.addEventListener(SeasonCompleteEvent.CLOSE_BTN_CLICK,this.onContainerCloseBtnClickHandler);
          this.container.addEventListener(SeasonCompleteEvent.START_INIT_DATA,this.onContainerStartInitDataHandler);
          this.container.addEventListener(SoundEvent.TRIGGER_SOUND,this.onContainerTriggerSoundHandler);
@@ -71,7 +70,6 @@ package net.wg.gui.lobby.rankedBattles19.view.seasonComplete
             this._showTween.dispose();
             this._showTween = null;
          }
-         this.container.removeEventListener(SeasonCompleteEvent.NEXT_BTN_CLICK,this.onContainerNextBtnClickHandler);
          this.container.removeEventListener(SeasonCompleteEvent.CLOSE_BTN_CLICK,this.onContainerCloseBtnClickHandler);
          this.container.removeEventListener(SeasonCompleteEvent.START_INIT_DATA,this.onContainerStartInitDataHandler);
          this.container.removeEventListener(SoundEvent.TRIGGER_SOUND,this.onContainerTriggerSoundHandler);
@@ -99,11 +97,6 @@ package net.wg.gui.lobby.rankedBattles19.view.seasonComplete
       {
          visible = true;
          this._showTween = new Tween(FADE_IN_TIME,this,{"alpha":1},{"paused":false});
-      }
-      
-      protected function tryToCloseView() : void
-      {
-         showRatingS();
       }
       
       protected function doClose() : void
@@ -149,11 +142,6 @@ package net.wg.gui.lobby.rankedBattles19.view.seasonComplete
       private function onContainerStartInitDataHandler(param1:Event) : void
       {
          this.beforeInitData();
-      }
-      
-      private function onContainerNextBtnClickHandler(param1:Event) : void
-      {
-         this.tryToCloseView();
       }
       
       private function onContainerCloseBtnClickHandler(param1:Event) : void

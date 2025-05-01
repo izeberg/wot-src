@@ -74,9 +74,42 @@
 				0
 				<material>
 					<identifier>tank_guns_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G168_KJpz_T_III/KJpz_T_III_guns_GMM.dds</Texture>
@@ -107,6 +140,6 @@
 		<min>-1.307892 -0.430744 -1.619159</min>
 		<max>1.302329 3.989930 7.268153</max>
 	</boundingBox>
-	<geometrySize>52138</geometrySize>
+	<geometrySize>52310</geometrySize>
 	<minUVDensity>0.010608</minUVDensity>
 </root>

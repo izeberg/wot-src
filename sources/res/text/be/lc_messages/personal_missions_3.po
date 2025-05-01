@@ -119,7 +119,7 @@ msgid "QuestView/backButton/to"
 msgstr "ДА АПЕРАЦЫІ"
 
 msgid "QuestView/conditionProgress/avg"
-msgstr "Осталось боёв: %(value)s"
+msgstr "Засталося баёў: %(value)s"
 
 msgid "QuestView/conditionProgress/full"
 msgstr "Прагрэс: %(from)s / %(to)s"
@@ -143,16 +143,16 @@ msgid "QuestView/orQuest"
 msgstr "АБО"
 
 msgid "QuestView/pauseButton/name/pause"
-msgstr "Пауза"
+msgstr "Паўза"
 
 msgid "QuestView/pauseButton/name/resume"
-msgstr "Возобновить"
+msgstr "Аднавіць"
 
 msgid "QuestView/pauseButton/tooltip/body/pause"
-msgstr "Нажмите, чтобы поставить прогресс выполнения задачи на паузу."
+msgstr "Націсніце, каб паставіць прагрэс выканання задачы на паўзу."
 
 msgid "QuestView/pauseButton/tooltip/body/resume"
-msgstr "Нажмите, чтобы продолжить выполнение задачи."
+msgstr "Націсніце, каб працягваць выкананне задачы."
 
 msgid "QuestView/questTitle/available"
 msgstr "Асноўная ўмова"
@@ -204,11 +204,10 @@ msgstr "Няўдача"
 
 msgid "QuestView/repeatTitle/tooltip/biathlon"
 msgstr ""
-"За указанное количество попыток необходимо провести определённое количество "
-"боёв, в которых будет выполнено поставленное условие. Если количество "
-"оставшихся попыток будет меньше необходимого количества выполненных условий,"
-" то прогресс будет автоматически сброшен, а выполнение задачи начнётся "
-"заново."
+"За ўказаную колькасці спроб неабходна правесці пэўную колькасць баёў, у якіх"
+" будзе выканана пастаўленая ўмова. Калі колькасць спроб, якая застанецца, "
+"будзе меншай за неабходную колькасць выкананых умоў, то прагрэс будзе "
+"аўтаматычна скінуты, а выкананне задачы пачнецца нанова."
 
 msgid "QuestView/repeatTitle/tooltip/counter"
 msgstr "Прагрэс залічваецца, калі ў межах бою былі выкананы ўсе ўмовы."
@@ -219,13 +218,13 @@ msgstr ""
 "перапыніць серыю, і трэба будзе пачынаць нанова."
 
 msgid "QuestView/resetButton/name"
-msgstr "Сбросить"
+msgstr "Скінуць"
 
 msgid "QuestView/resetButton/tooltip/body/disabled"
-msgstr "Нельзя сбросить задачу с отсутствующим прогрессом её выполнения."
+msgstr "Нельга скінуць задачу з адсутным прагрэсам яе выканання."
 
 msgid "QuestView/resetButton/tooltip/body/enabled"
-msgstr "Нажмите, чтобы сбросить весь текущий прогресс по задаче."
+msgstr "Націсніце, каб скінуць увесь ход выканання задачы."
 
 msgid "QuestView/subtitle/available"
 msgstr "Задача выконваецца на тэхніцы %(value)s узроўню"
@@ -249,7 +248,7 @@ msgid "QuestView/subtitle/no_tech"
 msgstr "Недаступна: няма прыдатнай тэхнікі %(value)s узроўню"
 
 msgid "QuestView/subtitle/pause"
-msgstr "Задача поставлена на паузу"
+msgstr "Задача пастаўлена на паўзу."
 
 msgid "QuestView/subtitle/previous_progress"
 msgstr "Недаступна: завяршыце аперацыю «%(value)s»"
@@ -286,7 +285,7 @@ msgstr ""
 "падладзіўшыся пад карціну бою."
 
 msgid "QuestsLine/tooltip/title/assist"
-msgstr "Фланг скрытого присутствия"
+msgstr "Фланг схаванай прысутнасці"
 
 msgid "QuestsLine/tooltip/title/battle"
 msgstr "Фланг выведкі"
@@ -332,7 +331,7 @@ msgstr ""
 "узроўню"
 
 msgid "QuestsView/header/title/text"
-msgstr "ОПЕРАЦИЯ «%(operationName)»"
+msgstr "АПЕРАЦЫЯ «%(operationName)»"
 
 msgid "QuestsView/lockProgress/text"
 msgstr "%(current)s / %(total)s"
@@ -350,7 +349,7 @@ msgid "ResetView/cancelButton"
 msgstr "Скасаваць"
 
 msgid "ResetView/closeButton"
-msgstr "ЗАКРЫТЬ"
+msgstr "ЗАКРЫЦЬ"
 
 msgid "ResetView/subtitle"
 msgstr "Увесь прагрэс задачы «%(id)s» будзе скінуты."
@@ -377,7 +376,7 @@ msgid "RewardsView/content/questCount/divider"
 msgstr "/"
 
 msgid "RewardsView/content/questCount/text"
-msgstr "Выполнено задач с отличием для получения награды этапа «Аттестация»"
+msgstr "Выканана задач з адзнакай для атрымання ўзнагароды этапу «Атэстацыя»"
 
 msgid "RewardsView/footer/allFlagTasksComplete"
 msgstr ""
@@ -481,12 +480,11 @@ msgstr ""
 
 msgid "VehicleView/description/A173_TF_2_CLARK"
 msgstr ""
-"Машина прекрасно защищена, что способствует агрессивной тактике игры на "
-"первой линии. Мобильность довольно скромная, поэтому лучше заранее "
-"планировать направление для атаки, а также возможные пути отступления в "
-"случае смены картины боя. Огнемётное орудие способно противостоять любой "
-"цели на небольшой дистанции, но дальний бой (из-за особенностей стрельбы) "
-"неэффективен."
+"Машына выдатна абаронена, што спрыяе агрэсіўнай тактыцы гульні на першай "
+"лініі. Мабільнасць даволі сціплая, таму лепш загадзя планаваць кірунак для "
+"атакі, а таксама магчымыя шляхі адступлення ў выпадку змены карціны бою. "
+"Агнямётная гармата здольная супрацьстаяць любой цэлі на невялікай дыстанцыі,"
+" але далёкі бой (праз асаблівасці стральбы) малаэфектыўны."
 
 msgid "VehicleView/description/F119_Projet_Murat"
 msgstr ""
@@ -579,7 +577,7 @@ msgid "introView/infoCard/first"
 msgstr "Тры паслядоўныя аперацыі з новымі задачамі."
 
 msgid "introView/infoCard/second"
-msgstr "Новые танки VII-X уровня: ARMT, TF-2 CLARK и Projet Murat."
+msgstr "Новыя танкі VII-X узроўню: ARMT, TF-2 CLARK і Projet Murat."
 
 msgid "introView/infoCard/third"
 msgstr ""
@@ -616,8 +614,8 @@ msgstr "Націсніце, каб прапусціць відэа."
 
 msgid "tooltips/OperationsView/lastOperation/active/body"
 msgstr ""
-"Для получения техники необходимо выполнить с отличием все пятые (замыкающие)"
-" задачи кампании «Новые горизонты»."
+"Для атрымання тэхнікі неабходна выканаць з адзнакай усе пятыя (замыкальныя) "
+"задачы кампаніі «Новыя гарызонты»."
 
 msgid "tooltips/OperationsView/lastOperation/active/completedText"
 msgstr "Выканана пятых задач з адзнакай:"
@@ -1146,7 +1144,7 @@ msgid "tooltips/questCard/footer/noTech"
 msgstr "Недаступная"
 
 msgid "tooltips/questCard/footer/pause"
-msgstr "Задача на паузе"
+msgstr "Задача прыпынена"
 
 msgid "tooltips/questCard/footer/previousProgress"
 msgstr "Недаступная"

@@ -56,8 +56,8 @@
 				<material>
 					<identifier>tank_proxy</identifier>
 					<property>
-						selfIllumination
-						<Float>0.000000</Float>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -77,6 +77,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un09_Locust/Un09_Locust_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						colorIdMap

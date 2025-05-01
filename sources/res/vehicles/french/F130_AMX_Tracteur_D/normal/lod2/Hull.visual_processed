@@ -17,6 +17,15 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
+				<identifier>HP_Chain</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
 				<identifier>HP_Fire_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
@@ -174,6 +183,6 @@
 		<min>-1.826780 -1.164759 -5.232852</min>
 		<max>1.825585 2.847383 4.886791</max>
 	</boundingBox>
-	<geometrySize>216674</geometrySize>
+	<geometrySize>193910</geometrySize>
 	<minUVDensity>0.000656</minUVDensity>
 </root>

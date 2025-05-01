@@ -95,7 +95,15 @@ class IItemsRequester(requesters.IRequester):
         raise NotImplementedError
 
     @property
+    def playStreak(self):
+        raise NotImplementedError
+
+    @property
     def armoryYard(self):
+        raise NotImplementedError
+
+    @property
+    def historicalBattles(self):
         raise NotImplementedError
 
     def requestUserDossier(self, databaseID, callback):

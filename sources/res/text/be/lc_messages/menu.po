@@ -25,16 +25,16 @@ msgid "PromoPremiumIgrWindow/windowTitle"
 msgstr "Адмысловая тэхніка ў IGR"
 
 msgid "Time/timeLeftShort/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "Time/timeLeftShort/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "Time/timeLeftShort/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "Time/timeLeftShort/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "Time/timeValue/days"
 msgstr "%(day)s сут %(hour)s гадз %(min)s хв"
@@ -46,7 +46,7 @@ msgid "Time/timeValue/lessMin"
 msgstr "хвіліну"
 
 msgid "Time/timeValue/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "Time/timeValueShort/days"
 msgstr "%(day)s сут %(hour)s гадз"
@@ -58,7 +58,7 @@ msgid "Time/timeValueShort/lessMin"
 msgstr "01 хв"
 
 msgid "Time/timeValueShort/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "Time/timeValueShort/noLeadingZeroes/days"
 msgstr "%(day)s сут %(hour)s гадз"
@@ -67,10 +67,10 @@ msgid "Time/timeValueShort/noLeadingZeroes/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "Time/timeValueShort/noLeadingZeroes/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "Time/timeValueShort/noLeadingZeroes/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "Time/timeValueWithSecs/days"
 msgstr "%(day)s сут %(hour)s гадз"
@@ -686,7 +686,7 @@ msgid "bonusType/29"
 msgstr "«Сталёвы паляўнічы»"
 
 msgid "bonusType/32"
-msgstr "«Битва блогеров»"
+msgstr "«Бітва блогераў»"
 
 msgid "bonusType/37"
 msgstr "«Выведка боем»"
@@ -883,10 +883,10 @@ msgid "boosters/timeLeft/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "boosters/timeLeft/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "boosters/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "boostersWindow/activeBoosters"
 msgstr "Зараз актыўныя: %(activeNo)s/%(allNo)s"
@@ -909,6 +909,9 @@ msgstr "Купіць"
 
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перайсці да задачы"
+
+msgid "boostersWindow/boostersTableRenderer/header"
+msgstr "%(boosterName)s %(quality)s"
 
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Каб атрымаць асабісты рэзерв, выканайце «%(questName)s»"
@@ -1010,7 +1013,7 @@ msgid "classes/short/AT-SPG"
 msgstr "СТ-САУ"
 
 msgid "classes/short/Alliance-France"
-msgstr "Коалиции (Франция, Швеция, Чехословакия, Италия, Сборная наций)"
+msgstr "Кааліцыі (Францыя, Швецыя, Чэхаславакія, Італія, Зборная дзяржаў)"
 
 msgid "classes/short/Alliance-Germany"
 msgstr "Блока (Германія, Японія)"
@@ -1101,6 +1104,9 @@ msgstr "Стварыць нататку"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
+
+msgid "contextMenu/createHistoricalBattleSquad"
+msgstr "Звяз падзеі «Час герояў»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
@@ -2233,7 +2239,7 @@ msgid "extraParams/name/temperatureCoolingDelay"
 msgstr "Час паміж спыненнем стральбы і пачаткам ахаладжэння гарматы."
 
 msgid "extraParams/name/temperatureCoolingTime"
-msgstr "Время, за которое орудие охладится на каждой стадии."
+msgstr "Час, за якія гармата ахалодзіцца на кожнай стадыі."
 
 msgid "extraParams/name/temperatureDamageFactor"
 msgstr ""
@@ -2782,7 +2788,7 @@ msgid "header/level/5"
 msgstr "V"
 
 msgid "header/level/6"
-msgstr "VI"
+msgstr "VІ"
 
 msgid "header/level/7"
 msgstr "VII"
@@ -2803,7 +2809,7 @@ msgid "header/vehicleType/AT-SPG"
 msgstr "СТ-САУ"
 
 msgid "header/vehicleType/Alliance-France"
-msgstr "Франция, Швеция, Чехословакия, Италия, Сборная наций"
+msgstr "Францыя, Швецыя, Чэхаславакія, Італія, Зборная дзяржаў"
 
 msgid "header/vehicleType/Alliance-Germany"
 msgstr "Германія, Японія"
@@ -2845,7 +2851,7 @@ msgid "header/wotPlusExclusiveVehicleType/AT-SPG"
 msgstr "СТ-САУ"
 
 msgid "header/wotPlusExclusiveVehicleType/Alliance-France"
-msgstr "Франция, Швеция, Чехословакия, Италия, Сборная наций"
+msgstr "Францыя, Швецыя, Чэхаславакія, Італія, Зборная дзяржаў"
 
 msgid "header/wotPlusExclusiveVehicleType/Alliance-Germany"
 msgstr "Германія, Японія"
@@ -3007,6 +3013,9 @@ msgstr "Супольныя вучэнні"
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
 
+msgid "headerButtons/battle/types/eventBattle"
+msgstr "Час герояў"
+
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
 
@@ -3047,10 +3056,10 @@ msgid "headerButtons/battle/types/mapbox"
 msgstr "Разведка боем"
 
 msgid "headerButtons/battle/types/mapbox/availability/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "headerButtons/battle/types/mapbox/availability/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "headerButtons/battle/types/mapbox/availability/lessThanHour"
 msgstr "менш за 1 гадз"
@@ -3080,7 +3089,7 @@ msgid "headerButtons/battle/types/ranked/availability"
 msgstr "Доступ да рэжыму: "
 
 msgid "headerButtons/battle/types/ranked/availability/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "headerButtons/battle/types/ranked/availability/ended"
 msgstr "Сезон закончыўся"
@@ -3089,13 +3098,13 @@ msgid "headerButtons/battle/types/ranked/availability/frozen"
 msgstr "Рэжым часова адключаны"
 
 msgid "headerButtons/battle/types/ranked/availability/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "headerButtons/battle/types/ranked/availability/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "headerButtons/battle/types/ranked/availability/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "headerButtons/battle/types/ranked/availability/notSet"
 msgstr "Баі недаступныя"
@@ -3913,8 +3922,17 @@ msgstr "Размінка"
 msgid "loading/battleTypes/31000"
 msgstr "Палігон"
 
+msgid "loading/battleTypes/33"
+msgstr "Націск"
+
+msgid "loading/battleTypes/37"
+msgstr " "
+
 msgid "loading/battleTypes/4"
 msgstr "Баявое навучанне"
+
+msgid "loading/battleTypes/43"
+msgstr " "
 
 msgid "loading/battleTypes/5"
 msgstr "Камандны бой"
@@ -4008,7 +4026,16 @@ msgstr " "
 msgid "loading/battleTypes/desc/31000"
 msgstr " "
 
+msgid "loading/battleTypes/desc/33"
+msgstr " "
+
+msgid "loading/battleTypes/desc/37"
+msgstr " "
+
 msgid "loading/battleTypes/desc/4"
+msgstr " "
+
+msgid "loading/battleTypes/desc/43"
 msgstr " "
 
 msgid "loading/battleTypes/desc/5"
@@ -4361,16 +4388,16 @@ msgid "login/version"
 msgstr "«Свет танкаў»"
 
 msgid "mapBlackList/timeLeftShort/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "mapBlackList/timeLeftShort/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "mapBlackList/timeLeftShort/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "mapBlackList/timeLeftShort/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "moduleFits/already_installed"
 msgstr "?empty?"
@@ -4452,7 +4479,7 @@ msgstr ""
 "Дазваляе зменшыць базавы час данабівання снарадаў."
 
 msgid "moduleInfo/autoShootFlameGunLabel"
-msgstr "Безмагазінная сістэма"
+msgstr "Агнямётная безмагазінная сістэма"
 
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазінная сістэма набівання"
@@ -4491,7 +4518,7 @@ msgid "moduleInfo/dualGunLabel"
 msgstr "Спараная гарматная ўстаноўка"
 
 msgid "moduleInfo/flameGunLabel"
-msgstr "Аўтаматычны агнямёт"
+msgstr "Агнямётная магазінная сістэма"
 
 msgid "moduleInfo/hydraulicAutoSiegeChassisLabel"
 msgstr "Гідрапнеўматычная падвеска: дазваляе змяняць вугал нахілу корпуса"
@@ -4822,7 +4849,7 @@ msgid "nation_tree/blueprint_title/germany"
 msgstr "Чарцяжы тэхнікі Германіі"
 
 msgid "nation_tree/blueprint_title/intunion"
-msgstr "Чертежи техники Сборной наций"
+msgstr "Чарцяжы тэхнікі Зборнай дзяржаў"
 
 msgid "nation_tree/blueprint_title/italy"
 msgstr "Чарцяжы тэхнікі Італіі"
@@ -4858,7 +4885,7 @@ msgid "nation_tree/title/germany"
 msgstr "Тэхніка Германіі"
 
 msgid "nation_tree/title/intunion"
-msgstr "Техника Сборной наций"
+msgstr "Тэхніка Зборнай дзяржаў"
 
 msgid "nation_tree/title/italy"
 msgstr "Тэхніка Італіі"
@@ -4897,7 +4924,7 @@ msgid "nations/germany"
 msgstr "Германія"
 
 msgid "nations/intunion"
-msgstr "Сборная наций"
+msgstr "Зборная дзяржаў"
 
 msgid "nations/italy"
 msgstr "Італія"
@@ -6455,7 +6482,7 @@ msgid "tank_params/distanceDamage"
 msgstr "Пашкоджанні снарада"
 
 msgid "tank_params/dualAccuracyCoolingDelay"
-msgstr "Время охлаждения орудия"
+msgstr "Час ахаладжэння гарматы"
 
 msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
 msgstr "Час ахаладжэння гарматы пасля стрэлу"
@@ -6878,7 +6905,7 @@ msgid "timeLeft/full/hour"
 msgstr "{hour} гадз {min} хв"
 
 msgid "timeLeft/full/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "timeLeft/full/min"
 msgstr "{min} хв"
@@ -6890,7 +6917,7 @@ msgid "timeLeft/short/hour"
 msgstr "{hour} гадз"
 
 msgid "timeLeft/short/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "timeLeft/short/min"
 msgstr "{min} хв"
@@ -7428,19 +7455,19 @@ msgid "vehiclePreview/timeLeft/hours"
 msgstr "%(hour)s гадз %(min)s хв"
 
 msgid "vehiclePreview/timeLeft/lessMin"
-msgstr "1 мин."
+msgstr "1 хв."
 
 msgid "vehiclePreview/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "vehiclePreview/timeLeftShort/hours"
-msgstr "%(hour)s ч."
+msgstr "%(hour)s гадз."
 
 msgid "vehiclePreview/timeLeftShort/lessMin"
 msgstr "01 хв"
 
 msgid "vehiclePreview/timeLeftShort/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "vehicleRestore/timeLeftShort/days"
 msgstr "%(day)s сут"
@@ -7515,10 +7542,10 @@ msgid "viewHeader/backBtn/descrLabel/techtree/germany/blueprints"
 msgstr "ДА ЧАРЦЯЖОЎ ГЕРМАНІІ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/intunion"
-msgstr "К ТЕХНИКЕ CБОРНОЙ НАЦИЙ"
+msgstr "ДА ТЭХНІКІ ЗБОРНАЙ ДЗЯРЖАЎ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/intunion/blueprints"
-msgstr "К ЧЕРТЕЖАМ CБОРНОЙ НАЦИЙ"
+msgstr "ДА ЧАРЦЯЖОЎ ЗБОРНАЙ ДЗЯРЖАЎ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/italy"
 msgstr "ДА ТЭХНІКІ ІТАЛІІ"

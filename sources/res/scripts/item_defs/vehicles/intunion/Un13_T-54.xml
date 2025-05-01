@@ -2,10 +2,10 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
-		<commander/>
+		<commander>radioman</commander>
 		<gunner/>
 		<driver/>
-		<loader>radioman</loader>
+		<loader/>
 	</crew>
 	<supplySlots>2 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_MT_universal</postProgressionTree>

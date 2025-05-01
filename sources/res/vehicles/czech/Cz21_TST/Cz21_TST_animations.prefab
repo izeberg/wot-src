@@ -13,11 +13,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>EditorTurret</name>
-			<UUID>998be9f4-4604-41c9-96c7-b1711bd9eb13</UUID>
-			<flags>0</flags>
-		</GameObject>
-		<GameObject>
 			<name>AnimationBeforeSpawn</name>
 			<UUID>3e4d3177-4f44-49d9-b0ca-03b4b8549680</UUID>
 			<flags>0</flags>
@@ -69,16 +64,6 @@
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>8fb0a9ef-e6aa-480f-9b22-8d6cf58923b3</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -150,30 +135,12 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
 						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -197,7 +164,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>5</objectIndex>
+				<objectIndex>4</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -211,6 +178,172 @@
 					<property>
 						<name>Rotation</name>
 						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Animator</type>
+			<version>2</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>vehicles/czech/Cz21_TST/normal/lod0/hatch_anim.fbx</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>Eject_run</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vehicles/czech/Cz21_TST/normal/lod0/hatch_anim.fbx</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>EdgeDrawerComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>triggerSource</name>
+						<link>8fb0a9ef-e6aa-480f-9b22-8d6cf58923b3</link>
+					</property>
+					<property>
+						<name>isAnimated</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -307,97 +440,10 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ComponentsVisibilityController</type>
-			<version>1</version>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>EdgeDrawerComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>triggerSource</name>
-						<link>8fb0a9ef-e6aa-480f-9b22-8d6cf58923b3</link>
-					</property>
-					<property>
-						<name>isAnimated</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>2</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/czech/Cz21_TST/normal/lod0/Turret_01.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -416,7 +462,7 @@
 			<type>NodeFollower</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -424,13 +470,17 @@
 						<value>HP_TurretAnim</value>
 					</property>
 					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<objectIndex>4</objectIndex>
+				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -438,102 +488,12 @@
 						<value>HP_DebrisSpawner</value>
 					</property>
 					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>Animator</type>
-			<version>2</version>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>vehicles/czech/Cz21_TST/normal/lod0/hatch_anim.fbx</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>Eject_run</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/czech/Cz21_TST/normal/lod0/hatch_anim.fbx</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
 					</property>
 				</config>
 			</component>
@@ -552,6 +512,36 @@
 					</property>
 					<property>
 						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CustomizableModelAttachmentComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>tankPart</name>
+						<value>turret</value>
+					</property>
+					<property>
+						<name>enablePaint</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableCamouflage</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDecals</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableDirt</name>
 						<value>1</value>
 					</property>
 				</config>

@@ -1,4 +1,5 @@
 from account_helpers import gameplay_ctx
+from constants import UNIT_COMMENT_MAX_LENGTH
 from external_strings_utils import truncate_utf8
 from UnitBase import UNIT_SLOT
 from gui.prb_control import settings, prb_getters
@@ -153,7 +154,7 @@ class ChangeCommentUnitCtx(UnitRequestCtx):
 
     def __init__(self, comment, waitingID=''):
         super(ChangeCommentUnitCtx, self).__init__(waitingID=waitingID)
-        self.__comment = truncate_utf8(comment, settings.UNIT_COMMENT_MAX_LENGTH)
+        self.__comment = truncate_utf8(comment, UNIT_COMMENT_MAX_LENGTH)
 
     def getRequestType(self):
         return _REQUEST_TYPE.CHANGE_COMMENT

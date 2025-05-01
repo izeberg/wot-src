@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.254196 0.000000 2.874594</row3>
+					<row3>-1.254016 -0.000003 2.874393</row3>
 				</transform>
 			</node>
 			<node>
@@ -31,7 +31,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.873896 0.000000 2.874594</row3>
+					<row3>-1.864466 -0.000003 2.874594</row3>
 				</transform>
 			</node>
 			<node>
@@ -40,7 +40,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.254196 0.000000 -2.874590</row3>
+					<row3>-1.254016 -0.000003 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -49,7 +49,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.873896 0.000000 -2.874590</row3>
+					<row3>-1.864466 -0.000003 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -58,7 +58,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.254196 0.000000 2.874594</row3>
+					<row3>1.252923 -0.001933 2.874594</row3>
 				</transform>
 			</node>
 			<node>
@@ -67,7 +67,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.864466 0.000000 2.874594</row3>
+					<row3>1.864466 -0.000003 2.874594</row3>
 				</transform>
 			</node>
 			<node>
@@ -76,7 +76,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.254196 0.000000 -2.874590</row3>
+					<row3>1.252923 -0.001933 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -85,7 +85,7 @@
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.864466 0.000000 -2.874590</row3>
+					<row3>1.864466 -0.000003 -2.874590</row3>
 				</transform>
 			</node>
 			<node>
@@ -1505,7 +1505,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>1.254196 -0.243114 -3.450605</row3>
+							<row3>1.254196 -0.243000 -3.450605</row3>
 						</transform>
 						<node>
 							<identifier>WD_R1_BlendBone</identifier>
@@ -1513,7 +1513,7 @@
 								<row0>1.000000 0.000000 0.000000</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>0.000000 0.000000 -1.000000</row2>
-								<row3>-1.254196 -0.773010 3.450605</row3>
+								<row3>-1.254196 -0.773124 3.450605</row3>
 							</transform>
 						</node>
 					</node>
@@ -1879,8 +1879,8 @@
 		<node>W_L15_BlendBone</node>
 		<node>WD_L0_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
-		<node>WD_L3_BlendBone</node>
 		<node>WD_L2_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
 		<geometry>
 			<vertices>chassis_LShape.vertices</vertices>
 			<primitive>chassis_LShape.indices</primitive>
@@ -1944,6 +1944,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_chassis_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.568446 0.604610 -0.065924</groupOrigin>
 			</primitiveGroup>
@@ -1961,7 +1965,6 @@
 		<node>Track_R5_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
 		<node>Track_R7_BlendBone</node>
-		<node>W_R7_BlendBone</node>
 		<node>Track_R9_BlendBone</node>
 		<node>Track_R8_BlendBone</node>
 		<node>Track_VD_R2_BlendBone</node>
@@ -1977,6 +1980,7 @@
 		<node>W_R4_BlendBone</node>
 		<node>W_R5_BlendBone</node>
 		<node>W_R6_BlendBone</node>
+		<node>W_R7_BlendBone</node>
 		<node>W_R8_BlendBone</node>
 		<node>W_R9_BlendBone</node>
 		<node>W_R10_BlendBone</node>
@@ -1987,8 +1991,8 @@
 		<node>W_R15_BlendBone</node>
 		<node>WD_R0_BlendBone</node>
 		<node>WD_R1_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
 		<node>WD_R2_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
 		<geometry>
 			<vertices>chassis_RShape.vertices</vertices>
 			<primitive>chassis_RShape.indices</primitive>
@@ -2052,8 +2056,12 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_chassis_01_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>1.568187 0.603643 -0.065924</groupOrigin>
+				<groupOrigin>1.568187 0.603700 -0.065924</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

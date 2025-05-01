@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl35_CS_57_Sokol/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/poland/Pl35_CS_57_Sokol/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.226487 -0.238832 -0.012910</min>
+		<max>0.338562 0.319585 6.908517</max>
+	</visibilityBox>
+</root>

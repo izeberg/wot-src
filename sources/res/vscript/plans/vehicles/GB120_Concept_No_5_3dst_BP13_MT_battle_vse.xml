@@ -109,43 +109,6 @@
 			</block>
 			<block>
 				<class>Variable</class>
-				<id>Variable_4</id>
-				<params>
-					<param>
-						speed_limit
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						1.000000
-						<name>Initial Value</name>
-						<type>FloatT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>default</name>
-						<const>\1.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Variable</class>
 				<id>Variable_3</id>
 				<params>
 					<param>
@@ -172,6 +135,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_4</id>
 				<buddy>Variable_5</buddy>
@@ -195,6 +164,12 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_4</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -262,14 +237,20 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
-				<params/>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_2</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -349,11 +330,28 @@
 				<slots/>
 			</block>
 			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Sequence</class>
 				<id>Sequence_4</id>
 				<params>
 					<param>
-						2
+						3
 						<name>Output Count</name>
 						<type>IntT</type>
 					</param>
@@ -370,23 +368,6 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
-				<params>
-					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						getSelf
-						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -445,6 +426,18 @@
 				</slots>
 			</block>
 			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>If</class>
 				<id>If_2</id>
 				<params/>
@@ -472,7 +465,12 @@
 				<class>CompareFloats</class>
 				<id>CompareFloats_1</id>
 				<params/>
-				<slots/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\1.000000\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVehicleAppearanceGameObject</class>
@@ -481,29 +479,15 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_3</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ArenaPeriod</class>
-				<id>ArenaPeriod_2</id>
-				<params>
-					<param>
-						Battle
-						<name>Period</name>
-						<type>EArenaPeriodT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>LogicGate</class>
+				<id>LogicGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>FrameEvent</class>
@@ -532,6 +516,18 @@
 						<const>\4.000000\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_2</id>
+				<params>
+					<param>
+						Afterbattle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>Timer</class>
@@ -659,6 +655,18 @@
 				<slots/>
 			</block>
 			<block>
+				<class>GetComponentProperty</class>
+				<id>GetComponentProperty_1</id>
+				<params>
+					<param>
+						Detailed Engine State.starting
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Sequence</class>
 				<id>Sequence_2</id>
 				<params>
@@ -693,18 +701,6 @@
 						<const>\0.500000\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>GetComponentProperty</class>
-				<id>GetComponentProperty_1</id>
-				<params>
-					<param>
-						Detailed Engine State.starting
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -743,17 +739,23 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Not</class>
-				<id>Not_4</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>ArenaPeriod</class>
 				<id>ArenaPeriod_1</id>
 				<params>
 					<param>
-						Battle
+						Prebattle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_3</id>
+				<params>
+					<param>
+						Prebattle
 						<name>Period</name>
 						<type>EArenaPeriodT</type>
 					</param>
@@ -797,6 +799,18 @@
 				<input>value</input>
 				<to>SetVariable_5</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_5</from>
+				<input>input</input>
+				<to>If_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_2</from>
+				<input>value</input>
+				<to>If_4</to>
+				<output>isActive</output>
 			</connection>
 			<connection>
 				<from>GetVehicleGameObject_1</from>
@@ -967,22 +981,34 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>GetVariable_3</from>
-				<input>b</input>
-				<to>CompareFloats_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>GetVehicleAppearanceGameObject_1</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ArenaPeriod_2</from>
+				<from>ArenaPeriodStartEvent_1</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>If_4</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_2</from>
+				<input>false</input>
+				<to>LogicGate_1</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>LogicGate_1</from>
 				<input>active</input>
 				<to>FrameEvent_1</to>
-				<output>isActive</output>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>Timer_1</from>
@@ -1069,10 +1095,10 @@
 				<output>o2</output>
 			</connection>
 			<connection>
-				<from>Not_4</from>
+				<from>ArenaPeriod_1</from>
 				<input>value</input>
 				<to>If_1</to>
-				<output>res</output>
+				<output>isActive</output>
 			</connection>
 			<connection>
 				<from>GetComponentProperty_1</from>
@@ -1087,6 +1113,18 @@
 				<output>starting</output>
 			</connection>
 			<connection>
+				<from>Repeat_1</from>
+				<input>in</input>
+				<to>GetComponentProperty_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVehicleAppearanceGameObject_3</from>
+				<input>gameObject</input>
+				<to>GetComponentProperty_1</to>
+				<output>appearanceObject</output>
+			</connection>
+			<connection>
 				<from>If_3</from>
 				<input>input</input>
 				<to>Sequence_2</to>
@@ -1099,22 +1137,16 @@
 				<output>true</output>
 			</connection>
 			<connection>
+				<from>ArenaPeriodStartEvent_3</from>
+				<input>start</input>
+				<to>Repeat_1</to>
+				<output>start</output>
+			</connection>
+			<connection>
 				<from>Sequence_2</from>
 				<input>stop</input>
 				<to>Repeat_1</to>
 				<output>o1</output>
-			</connection>
-			<connection>
-				<from>Repeat_1</from>
-				<input>in</input>
-				<to>GetComponentProperty_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVehicleAppearanceGameObject_3</from>
-				<input>gameObject</input>
-				<to>GetComponentProperty_1</to>
-				<output>appearanceObject</output>
 			</connection>
 			<connection>
 				<from>Sequence_2</from>
@@ -1139,12 +1171,6 @@
 				<input>gameObject</input>
 				<to>GetVehicleAppearanceGameObject_3</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>ArenaPeriod_1</from>
-				<input>a</input>
-				<to>Not_4</to>
-				<output>isActive</output>
 			</connection>
 		</connections>
 		<macros/>

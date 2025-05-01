@@ -1076,6 +1076,14 @@ package
       public static const PROGRESSION_STATS_TOTALBATTLES:String = "#ranked_battles:progression/stats/totalBattles";
       
       public static const PROGRESSION_STATS_TOTALSTAGES:String = "#ranked_battles:progression/stats/totalStages";
+      
+      public static const RANKEDSELECTEDREWARDVIEW_ADDITIONALREWARDS_BUTTON:String = "#ranked_battles:rankedSelectedRewardView/additionalRewards/button";
+      
+      public static const RANKEDSELECTEDREWARDVIEW_ADDITIONALREWARDS_REMAINTEXT:String = "#ranked_battles:rankedSelectedRewardView/additionalRewards/remainText";
+      
+      public static const RANKEDSELECTEDREWARDVIEW_TITLE:String = "#ranked_battles:rankedSelectedRewardView/title";
+      
+      public static const RANKEDSELECTEDREWARDVIEW_SUBTITLE:String = "#ranked_battles:rankedSelectedRewardView/subtitle";
        
       
       public function RANKED_BATTLES()

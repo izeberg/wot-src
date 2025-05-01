@@ -197,7 +197,8 @@ package net.wg.gui.battle.views.epicRespawnView
       
       private function updateLayout() : void
       {
-         var _loc1_:int = this._originalWidth >> 1;
+         var _loc1_:int = 0;
+         _loc1_ = this._originalWidth >> 1;
          this.topBarBG.x = -_loc1_;
          this.topBarBG.y = 0;
          this.topBarBG.width = this._originalWidth;
@@ -225,7 +226,8 @@ package net.wg.gui.battle.views.epicRespawnView
       
       private function updateCarouselElementsPositions() : void
       {
-         var _loc1_:int = this._originalHeight - this.carousel.getBottom() ^ 0;
+         var _loc1_:int = 0;
+         _loc1_ = this._originalHeight - this.carousel.getBottom() ^ 0;
          this.carousel.y = _loc1_;
          var _loc2_:int = this._originalWidth <= StageSizeBoundaries.WIDTH_1366 && this._isVehPostProgressionEnabled ? int(DEPLOY_BUTTON_GROUP_CAROUSEL_OFFSET_Y_SMALL) : int(DEPLOY_BUTTON_GROUP_CAROUSEL_OFFSET_Y_BIG);
          this.deployButtonGroup.y = _loc1_ - _loc2_;

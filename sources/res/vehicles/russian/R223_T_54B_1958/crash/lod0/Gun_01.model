@@ -8,5 +8,5 @@
 	<tank>true</tank>
 	<parent>vehicles/russian/R223_T_54B_1958/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
-	<nodelessVisual>vehicles/russian/R223_T_54B_1958/crash/lod0/Gun_01</nodelessVisual>
+	<nodefullVisual>vehicles/russian/R223_T_54B_1958/crash/lod0/Gun_01</nodefullVisual>
 </root>

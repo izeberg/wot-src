@@ -219,6 +219,8 @@ package
       
       public static const MEMBERS_FOOTER_SCOUTFULL:String = "#platoon:members/footer/scoutFull";
       
+      public static const MEMBERS_FOOTER_FLAMETHROWERFULL:String = "#platoon:members/footer/flamethrowerFull";
+      
       public static const MEMBERS_FOOTER_SPGFORBIDDEN:String = "#platoon:members/footer/spgForbidden";
       
       public static const MEMBERS_FOOTER_SPGFULL:String = "#platoon:members/footer/spgFull";

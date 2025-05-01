@@ -403,6 +403,8 @@ package
       
       public static const DEPLOYMENTMAP_SPGLIMITREACHED:String = "#epic_battle:deploymentMap/spgLimitReached";
       
+      public static const DEPLOYMENTMAP_FLAMETHROWERLIMITREACHED:String = "#epic_battle:deploymentMap/flamethrowerLimitReached";
+      
       public static const DEPLOYMENTMAP_LANEPLAYERLIMITREACHED:String = "#epic_battle:deploymentMap/lanePlayerLimitReached";
       
       public static const DEPLOYMENTMAP_RESPAWNWARNING:String = "#epic_battle:deploymentMap/respawnWarning";
