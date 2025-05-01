@@ -176,11 +176,17 @@ msgstr "Wz.40 B"
 msgid "Chassis_Pl34_CS_63_02"
 msgstr "CS 63"
 
+msgid "Chassis_Pl35_CS_57_Sokol"
+msgstr "CS-57"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
 msgid "GTD"
 msgstr "GTD"
+
+msgid "GTD_2T4"
+msgstr "GTD-2T4"
 
 msgid "GTD_2T4x2"
 msgstr "2x GTD-2T4"
@@ -1002,6 +1008,24 @@ msgstr "Wilk"
 msgid "Pl34_CS_63_02_short_special"
 msgstr "Отличная мобильность, комфортное орудие"
 
+msgid "Pl35_CS_57_Sokol"
+msgstr "CS-57 Sokol"
+
+msgid "Pl35_CS_57_Sokol_descr"
+msgstr ""
+"Проект этого танка разрабатывался в середине 1950-х годов под установку длинноствольных орудий типа P-DAP. Конструкция сочетала в себе проверенные советские решения, полученные с лицензионной документацией на Т-54А, с перспективными разработками: крупными отливками носовой части корпуса и газотурбинными двигателями на основе вертолётных ГТД-350. Машина предполагалась достаточно лёгкой, подвижной и манёвренной, при этом хорошо защищённой и с выраженными противотанковыми возможностями. Для самообороны от танкоопасной живой силы её планировалось вооружить мощным пулемётом. Зенитная установка могла бы бороться не только с вертолётами, но и с лёгкой наземной бронетехникой. В силу ограниченных возможностей экономики ПНР до постройки танка в металле дело не дошло.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Pl35_CS_57_Sokol_long_special"
+msgstr "?empty?"
+
+msgid "Pl35_CS_57_Sokol_short"
+msgstr "Sokol"
+
+msgid "Pl35_CS_57_Sokol_short_special"
+msgstr "?empty?"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -1039,6 +1063,9 @@ msgid "R_113"
 msgstr "R-113"
 
 msgid "R_113_P"
+msgstr "R-113P"
+
+msgid "R_113_P_S"
 msgstr "R-113P"
 
 msgid "R_113_P_SH"
@@ -1190,6 +1217,9 @@ msgstr "Wz.40"
 
 msgid "Turret_1_Pl34_CS_63_02"
 msgstr "CS 63"
+
+msgid "Turret_1_Pl35_CS_57_Sokol"
+msgstr "CS-57"
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
@@ -1737,7 +1767,19 @@ msgstr "85 mm PW-365"
 msgid "_85_175mm_armata_wz_65"
 msgstr "85 mm wz.65"
 
+msgid "_85mm_PK_7"
+msgstr "85 mm PK-7"
+
+msgid "_85mm_PPP_372BS"
+msgstr "85 mm PPp-372BS"
+
+msgid "_85mm_PW_372"
+msgstr "85 mm PW-372"
+
 msgid "_85mm_P_DAP"
+msgstr "85 mm P-DAP"
+
+msgid "_85mm_P_DAP_S"
 msgstr "85 mm P-DAP"
 
 msgid "_85mm_P_DAP_Wz_57D"

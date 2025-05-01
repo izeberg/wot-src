@@ -1314,34 +1314,95 @@ msgstr "Нельга змяніць выгляд машыны, бо машын�
 msgid "customization/vehicle_locked"
 msgstr "Нельга змяніць выгляд машыны, бо машына заблакіравана."
 
-msgid "daily_quests/reroll/quest_is_already_completed"
-msgstr "Замена стандартнай задачы недаступная: задача ўжо выканана."
+msgid "daily_quests/bonus_quest_available/body"
+msgstr ""
+"Разблакаваны доступ да бонуснай задачы пасля выканання ўсіх стандартных "
+"задач."
 
-msgid "daily_quests/reroll/reroll_disabled"
-msgstr "Замена стандартнай задачы недаступная: аперацыя заблакаваная."
+msgid "daily_quests/bonus_quest_available/title"
+msgstr "Бонусная штодзённая задача стала даступнай"
 
-msgid "daily_quests/reroll/reroll_in_cooldown"
-msgstr "Замена стандартнай задачы недаступная: аперацыя замарожаная."
+msgid "daily_quests/epic_quest_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальная магчымасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
 
-msgid "daily_quests/reroll/success"
-msgstr "Замена стандартнай задачы выканана."
+msgid "daily_quests/epic_quest_off/title"
+msgstr "Штотыднёвая задача часова недаступная"
 
-msgid "daily_quests/reroll/unknown_error"
-msgstr "Замена стандартнай задачы недаступная. Спрабуйце пазней."
+msgid "daily_quests/epic_quest_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "daily_quests/epic_quest_on/title"
+msgstr "Штотыднёвая задача зноў даступная"
+
+msgid "daily_quests/notification/epic_quest/body"
+msgstr ""
+"Штодзённыя задачы былі абноўлены, увесь назапашаны раней прагрэс скінуты. "
+"Налічана кампенсацыя за страту прагрэсу ў ланцужку штодзённых задач."
+
+msgid "daily_quests/notification/epic_quest/compensation"
+msgstr "Кампенсацыя:"
+
+msgid "daily_quests/notification/epic_quest/header"
+msgstr "Кампенсацыя за скідванне прагрэсу ў штодзённых задач"
+
+msgid "daily_quests/premium/active"
+msgstr "Штодзённыя задачы сталі даступнымі для выканання"
+
+msgid "daily_quests/premium/reroll/quest_is_already_completed"
+msgstr ""
+"Умовы штодзённых прэміум задач не былі заменены: вы не можаце замяніць умовы"
+" ў бягучых задачах."
+
+msgid "daily_quests/premium/reroll/success"
+msgstr "Умовы штодзённых прэміум задач заменены."
+
+msgid "daily_quests/premium/reroll/unknown_error"
+msgstr ""
+"Умовы штодзённых прэміум задач не былі заменены з тэхнічных прычын. "
+"Паўтарыце спробу пазней. "
+
+msgid "daily_quests/reroll_off/body"
+msgstr ""
+"З тэхнічных прычын гэтая функцыянальная магчымасць часова недаступная.\n"
+"Выбачайце за нязручнасці."
+
+msgid "daily_quests/reroll_off/title"
+msgstr "Замена штодзённых задач часова недаступная"
+
+msgid "daily_quests/reroll_on/body"
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
+
+msgid "daily_quests/reroll_on/title"
+msgstr "Замена часовых задач зноў даступная"
+
+msgid "daily_quests/simple/reroll/quest_is_already_completed"
+msgstr ""
+"Умовы стандартных штодзённых задач не былі заменены: вы не можаце замяніць "
+"умовы ў бягучых задачах."
+
+msgid "daily_quests/simple/reroll/success"
+msgstr "Умовы стандартных штодзённых прэміум задач заменены."
+
+msgid "daily_quests/simple/reroll/unknown_error"
+msgstr ""
+"Умовы стандартных штодзённых задач не былі заменены з тэхнічных прычын. "
+"Паўтарыце спробу пазней. "
 
 msgid "daily_quests/switch_off/body"
 msgstr ""
-"З тэхнічных прычын гэты функцыянал часова недаступны.\n"
+"З тэхнічных прычын гэтая функцыянальная магчымасць часова недаступная.\n"
 "Выбачайце за нязручнасці."
 
 msgid "daily_quests/switch_off/title"
-msgstr "Стандартныя задачы часова недаступныя"
+msgstr "Штодзённыя задачы часова недаступныя"
 
 msgid "daily_quests/switch_on/body"
 msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
 
 msgid "daily_quests/switch_on/title"
-msgstr "Стандартныя задачы зноў даступныя"
+msgstr "Штодзённыя задачы зноў даступныя"
 
 msgid "daily_xp_bonus/switch_off/body"
 msgstr ""
@@ -2730,7 +2791,7 @@ msgid "personalMissions/select/server_error/fallout/LOCKED_BY_VEHICLE_QUEST"
 msgstr "Зараз выбраць задачу немагчыма. Чакайце вяртання групы машын з бою."
 
 msgid "personalMissions/select/success"
-msgstr "Выбар баявых задач выкананы. Выбраныя баявыя задачы: %(questNames)s."
+msgstr "Выбар зроблены. Бягучыя выбраныя задачы: %(questNames)s."
 
 msgid "personalMissions/switch/campaign/disabled"
 msgstr "Кампанія часова недаступная для выканання."
@@ -2787,7 +2848,7 @@ msgid "player_subscriptions/switch_off/title"
 msgstr "Падпіскі больш недаступныя."
 
 msgid "player_subscriptions/switch_on/body"
-msgstr "Тэхнічныя праблемы вырашаныя. Выбачайце за нязручнасці."
+msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
 
 msgid "player_subscriptions/switch_on/title"
 msgstr "Цяпер падпіскі даступныя"
@@ -3023,17 +3084,17 @@ msgstr "Дзеянне недаступнае. Дачакайце заканчэ
 
 msgid "premium_quests/switch_off/body"
 msgstr ""
-"З тэхнічных прычын гэтая функцыянальнасць часова недаступная.\n"
+"З тэхнічных прычын гэтая функцыянальная магчымасць часова недаступная.\n"
 "Выбачайце за нязручнасці."
 
 msgid "premium_quests/switch_off/title"
-msgstr "Прэміум задачы часова недаступныя"
+msgstr "Штодзённыя прэміум задачы часова недаступныя"
 
 msgid "premium_quests/switch_on/body"
 msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
 
 msgid "premium_quests/switch_on/title"
-msgstr "Прэміум задачы зноў даступныя"
+msgstr "Штодзённыя прэміум задачы зноў даступныя"
 
 msgid "progressiveReward/error"
 msgstr "Зараз аперацыя немагчымая. Паспрабуйце пазней."
@@ -3683,6 +3744,11 @@ msgstr ""
 "Вы выключаны са звязу праз змену патрабаванняў камандзіра або не можаце "
 "ўступіць у яго з прычыны некарэктна выбранай машыны. Выберыце іншую машыну."
 
+msgid "squad/notValidMaxFlamethrowerDeleted"
+msgstr ""
+"Машына %(vehName)s выключана са складу звязу праз абмежаванні колькасці "
+"агнямётных танкаў у звязе. Выберыце іншую машыну."
+
 msgid "squad/notValidMaxScoutDeleted"
 msgstr ""
 "Машына %(vehName)s выключана са звязу з-за абмежавання на колькасць лёгкіх "
@@ -3959,6 +4025,9 @@ msgstr "Нельга змясціць машыну ў слот."
 
 msgid "unit/errors/HAS_IN_ARENA_MEMBERS"
 msgstr "Дзеянне недаступнае. Частка атрада яшчэ ў баі."
+
+msgid "unit/errors/HB_BANNED"
+msgstr "Вы часова адхілены ад баёў у гэтым рэжыме."
 
 msgid "unit/errors/INSUFFICIENT_ROLE"
 msgstr "Вы не маеце правоў, каб выканаць гэту аперацыю."

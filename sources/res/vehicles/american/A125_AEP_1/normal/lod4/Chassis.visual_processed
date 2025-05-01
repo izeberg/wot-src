@@ -17,39 +17,75 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_Track_LFront</identifier>
+				<identifier>HP_Track_LFront__track_left_0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.480424 0.000000 2.266644</row3>
+					<row3>-1.480424 0.000000 -0.390740</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_Track_LRear</identifier>
-				<transform>
-					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.994751 0.102324</row1>
-					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.480424 0.000000 -2.173816</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_RFront</identifier>
+				<identifier>HP_Track_LFront__track_left_1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.993847 -0.110758</row1>
 					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.480424 0.000000 2.181173</row3>
+					<row3>-1.480424 0.000000 2.267287</row3>
 				</transform>
 			</node>
 			<node>
-				<identifier>HP_Track_RRear</identifier>
+				<identifier>HP_Track_LRear__track_left_0</identifier>
 				<transform>
 					<row0>-1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.994751 0.102324</row1>
 					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.480424 0.000000 -2.266645</row3>
+					<row3>-1.480424 0.000000 -2.177437</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_LRear__track_left_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.480424 0.000000 0.491448</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_RFront__track_right_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>1.480424 0.000000 -0.480597</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_RFront__track_right_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>1.480424 0.000000 2.177554</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_RRear__track_right_0</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.480424 0.000000 -2.267293</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_RRear__track_right_1</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.480424 0.000000 0.399431</row3>
 				</transform>
 			</node>
 			<node>
@@ -58,7 +94,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
-					<row3>0.000000 4.691679 0.000000</row3>
+					<row3>0.000000 3.958713 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -879,15 +915,6 @@
 						</transform>
 					</node>
 				</node>
-				<node>
-					<identifier>Tank_BlendBone</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 -0.500000 0.000000</row3>
-					</transform>
-				</node>
 			</node>
 		</node>
 	</node>
@@ -901,9 +928,38 @@
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A125_AEP_1/AEP_1_proxy_GMM.dds</Texture>
@@ -921,16 +977,16 @@
 						<Texture>vehicles/american/A125_AEP_1/AEP_1_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.477556 0.660308 0.014846</groupOrigin>
@@ -947,9 +1003,38 @@
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A125_AEP_1/AEP_1_proxy_GMM.dds</Texture>
@@ -967,16 +1052,16 @@
 						<Texture>vehicles/american/A125_AEP_1/AEP_1_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.439924 0.642281 0.025568</groupOrigin>

@@ -35,6 +35,9 @@ msgstr "Выполнено с отличием"
 msgid "newTooltip/completedPerfect/footerDescription"
 msgstr "Все задачи кампании выполнены с отличием, награды получены."
 
+msgid "newTooltip/disabled/subtitle"
+msgstr "Кампания временно недоступна по техническим причинаям."
+
 msgid "newTooltip/divider"
 msgstr "/"
 
@@ -73,6 +76,9 @@ msgstr "Все задачи кампании выполнены с отличи�
 
 msgid "oldTooltip/completedPerfect/header"
 msgstr "Выполнено с отличием"
+
+msgid "oldTooltip/disabled/subtitle"
+msgstr "Кампании временно недоступны по техническим причинаям."
 
 msgid "oldTooltip/divider"
 msgstr "/"

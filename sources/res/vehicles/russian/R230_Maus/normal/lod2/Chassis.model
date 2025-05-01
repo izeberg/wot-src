@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R230_Maus/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R230_Maus/normal/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.748113 0.000000 -4.214236</min>
+		<max>1.748113 1.414294 4.400600</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -92,10 +92,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 1.05205 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 1.052050 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -117,10 +114,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -148,10 +142,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.159202 0.639088 0.289357</groupOrigin>
@@ -187,10 +177,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 1.05205 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 1.052050 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -212,10 +199,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -243,10 +227,6 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.159202 0.640533 -0.077721</groupOrigin>

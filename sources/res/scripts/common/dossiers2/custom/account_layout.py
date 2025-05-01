@@ -360,7 +360,10 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'comp7_4_1_legend', 'BattlePassCommonPr_15', '14YearsOfService', 'comp7_4_2',
  'comp7_4_2_champion', 'comp7_4_2_legend', 'NY25_AtmsphrLevel', 'personalMissionsThird',
  'ParagonsFirstElevenVehicle', 'ParagonsFirstSeason', 'comp7_4_3', 'comp7_4_3_champion',
- 'comp7_4_3_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16']
+ 'comp7_4_3_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16',
+ 'bob2025Lebwa', 'bob2025Yusha', 'bob2025NearYou', 'bob2025Jove',
+ 'BattlePassCommonPr_16_Marathon',
+ 'hb25MedalOffence', 'hb25MedalDefence']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -423,7 +426,10 @@ _singleAchievementsPopUps = [
  'comp7_4_1_legend', 'BattlePassCommonPr_15', '14YearsOfService', 'comp7_4_2',
  'comp7_4_2_champion', 'comp7_4_2_legend', 'NY25_AtmsphrLevel', 'personalMissionsThird',
  'ParagonsFirstElevenVehicle', 'ParagonsFirstSeason', 'comp7_4_2', 'comp7_4_2_champion',
- 'comp7_4_2_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16']
+ 'comp7_4_2_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16',
+ 'bob2025Lebwa', 'bob2025Yusha', 'bob2025NearYou', 'bob2025Jove',
+ 'BattlePassCommonPr_16_Marathon',
+ 'hb25MedalOffence', 'hb25MedalDefence']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

@@ -51,15 +51,14 @@
 						<Texture>content/Environment/hd_env_SU_064_SignboardsMinsk/hd_env_SU_064_SignboardsMinsk_GMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000018 0.603039 2.133535</groupOrigin>
+				<groupOrigin>0.000018 0.603039 2.171617</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-15.986530 -0.282261 -0.102775</min>
-		<max>15.967368 1.580181 4.369846</max>
+		<min>-15.942769 -0.213932 -0.102775</min>
+		<max>15.942805 1.420010 4.446009</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
 	<geometrySize>70746</geometrySize>
-	<minUVDensity>0.008770</minUVDensity>
+	<minUVDensity>0.003556</minUVDensity>
 </root>

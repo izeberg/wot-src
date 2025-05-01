@@ -8,6 +8,7 @@ from gui.impl.lobby.pm_announce.tooltips import getRewardStatusForOperation
 from gui.impl.pub import ViewImpl
 from helpers import dependency
 from personal_missions import PM_BRANCH
+from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 LAST_REWARD = (
  backport.text(R.strings.pm_announce.newTooltip.vehicles.last()),
@@ -17,6 +18,7 @@ LAST_REWARD = (
 class PersonalMissionsNewCampaignTooltipView(ViewImpl):
     __slots__ = ()
     __eventsCache = dependency.descriptor(IEventsCache)
+    __lobbyContext = dependency.descriptor(ILobbyContext)
 
     def __init__(self, layoutID):
         settings = ViewSettings(layoutID)
@@ -63,7 +65,10 @@ class PersonalMissionsNewCampaignTooltipView(ViewImpl):
             rewardModel.setStatus(status)
             rewardsArray.addViewModel(rewardModel)
         array.invalidate()
-        if isCompleted and isFullCompleted:
+        if not self.__lobbyContext.getServerSettings().isPersonalMissionsEnabled(PM_BRANCH.PERSONAL_MISSION_3):
+            model.setMissionStatus(MissionStatus.DISABLED)
+            rewardsArray.clear()
+        elif isCompleted and isFullCompleted:
             model.setMissionStatus(MissionStatus.COMPLETEDPERFECT)
             rewardsArray.clear()
         elif isCompleted:

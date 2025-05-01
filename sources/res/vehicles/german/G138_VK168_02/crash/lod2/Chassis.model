@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>vehicles/german/G138_VK168_02/crash/lod3/Chassis</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.67127 -0.000902369 -4.87945
-			<!--BW_String-->
-		</min>
-		<max>
-			1.67044 1.27908 4.43466
-			<!--BW_String-->
-		</max>
+		<min>-1.671273 -0.000902 -4.879448</min>
+		<max>1.670436 1.279079 4.434659</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G138_VK168_02/crash/lod2/Chassis</nodefullVisual>

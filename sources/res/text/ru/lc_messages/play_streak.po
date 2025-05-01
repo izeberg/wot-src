@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "widget/content/quest"
+msgstr "Победить в бою или получить 350 ед. «чистого» опыта"
+
+msgid "widget/content/tooltip/blocked/body"
+msgstr ""
+"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
+"%(redemptionMaxDayCount)s дней подряд."
+
+msgid "widget/content/tooltip/blocked/head"
+msgstr "Цепь побед прервана"
+
+msgid "widget/content/tooltip/body"
+msgstr ""
+"Выполняйте задачи каждый день и не давайте счётчику обнулиться. Чем длиннее "
+"цепь ваших побед, тем больше наград вас ждёт."
+
+msgid "widget/content/tooltip/head"
+msgstr "Цепь побед"
+
+msgid "window/playStreakPreview/backBtnLabel"
+msgstr "В ЦЕПЬ ПОБЕД"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/monthly/body"
+msgstr ""
+"Продлив свою цепь побед до ячейки в анимированной рамке с желтым свечением, "
+"вы ежемесячно будете получать специальную награду."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/monthly/head"
+msgstr "Ежемесячные регулярные награды"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/multi/head"
+msgstr "Награды"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/periodic/body"
+msgstr ""
+"Награды будут находиться в вашем распоряжении, пока не будет прервана цепь "
+"побед."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/periodic/head"
+msgstr "Временное пользование"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/weekly/body"
+msgstr ""
+"Продлив свою цепь побед до ячейки в анимированной рамке, вы еженедельно "
+"будете получать специальную награду. Эти награды суммируются: по достижении "
+"следующей ячейки в рамке вы будете получать две награды. И так далее, пока "
+"цепь побед не будет нарушена."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/weekly/head"
+msgstr "Еженедельные регулярные награды"
+
+msgid "window/playStreakRewards/disabledMessage/title/body"
+msgstr "Попробуйте позже."
+
+msgid "window/playStreakRewards/disabledMessage/title/head"
+msgstr "Выполнение задач события «Цепь побед» временно недоступно."
+
+msgid "window/playStreakRewards/periodicRewards/empty"
+msgstr "Ваша цепь побед не достигла нужной длины."
+
+msgid "window/playStreakRewards/periodicRewards/head"
+msgstr "РЕГУЛЯРНЫЕ НАГРАДЫ"
+
+msgid "window/playStreakRewards/periodicRewards/tooltip/blocked/body"
+msgstr "Восстановите цепь побед."
+
+msgid "window/playStreakRewards/periodicRewards/tooltip/blocked/head"
+msgstr "Награды пока недоступны"
+
+msgid "window/playStreakRewards/periodicRewards/tooltip/body"
+msgstr ""
+"Продлив свою цепь побед до ячейки, отмеченной в списке ежемесячных "
+"начислений, вы еженедельно будете получать специальную награду. Эти награды "
+"суммируются: по достижении следующей ячейки в рамке вы будете получать две "
+"награды. И так далее, пока цепь побед не будет нарушена."
+
+msgid "window/playStreakRewards/periodicRewards/tooltip/head"
+msgstr "Регулярные награды"
+
+msgid "window/playStreakRewards/postProgression/bestRewards/head"
+msgstr "Лучшие награды"
+
+msgid "window/playStreakRewards/postProgression/bestRewards/preview"
+msgstr "Посмотреть в Ангаре"
+
+msgid "window/playStreakRewards/postProgression/content/blocked/body"
+msgstr ""
+"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
+"%(redemptionMaxDayCount)s дней подряд."
+
+msgid "window/playStreakRewards/postProgression/content/blocked/head"
+msgstr "Цепь побед будет восстановлена через"
+
+msgid "window/playStreakRewards/postProgression/content/blocked/tooltip/body"
+msgstr ""
+"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
+"%(redemptionMaxDayCount)s дней подряд."
+
+msgid "window/playStreakRewards/postProgression/content/blocked/tooltip/head"
+msgstr "Цепь побед прервана"
+
+msgid "window/playStreakRewards/postProgression/content/body"
+msgstr ""
+"Продолжайте выполнять боевую задачу «Цепь побед», чтобы не потерять прогресс"
+" и получать дополнительные награды."
+
+msgid "window/playStreakRewards/postProgression/content/head"
+msgstr "Все награды получены!"
+
+msgid "window/playStreakRewards/progressionLimit/body"
+msgstr " / %(maxDay)s"
+
+msgid "window/playStreakRewards/recoveryMessage/head/complete"
+msgstr "Цепь побед восстановлена"
+
+msgid "window/playStreakRewards/recoveryMessage/head/days"
+msgstr "%(day)s д."
+
+msgid "window/playStreakRewards/recoveryMessage/head/disable"
+msgstr "Цепь побед будет восстановлена через"
+
+msgid "window/playStreakRewards/recoveryMessage/tooltip/body"
+msgstr ""
+"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
+"%(redemptionMaxDayCount)s дней подряд."
+
+msgid "window/playStreakRewards/recoveryMessage/tooltip/head"
+msgstr "Цепь побед прервана."
+
+msgid "window/playStreakRewards/rewardProgression/body"
+msgstr "Так держать! Продолжайте выполнять боевые задачи и получать награды."
+
+msgid "window/playStreakRewards/rewardProgression/hangar"
+msgstr "Посмотреть в Ангаре"
+
+msgid "window/playStreakRewards/rewardProgression/head"
+msgstr "Ключевых наград получено: "
+
+msgid "window/playStreakRewards/rewardProgression/preview"
+msgstr "Предпросмотр"
+
+msgid "window/playStreakRewards/tab/content/complete"
+msgstr "Боевая задача выполнена.%(br)sВозвращайтесь завтра."
+
+msgid "window/playStreakRewards/tab/content/disable"
+msgstr ""
+"Выполнение задач события «Цепь побед» временно недоступно. Попробуйте позже."
+
+msgid "window/playStreakRewards/tab/content/pause"
+msgstr "Осталось пауз: %(skipDayCount)s"
+
+msgid "window/playStreakRewards/tab/content/quest"
+msgstr "Победить в бою или получить 350 ед. «чистого» опыта."
+
+msgid "window/playStreakRewards/tab/head"
+msgstr "Цепь побед"
+
+msgid "window/playStreakRewards/tab/help/blocked/body"
+msgstr ""
+"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
+"%(redemptionMaxDayCount)s дней подряд."
+
+msgid "window/playStreakRewards/tab/help/blocked/head"
+msgstr "Цепь побед прервана."
+
+msgid "window/playStreakRewards/tab/help/body"
+msgstr ""
+"Пауза позволяет пропустить выполнение боевой задачи, не нарушая при этом "
+"вашу цепь побед. Паузы списываются автоматически."
+
+msgid "window/playStreakRewards/tab/help/head"
+msgstr "Пауза"
+
+msgid "window/playStreakRewards/tab/help/number"
+msgstr ""
+"Боевая задача: %(streakLength)s %(br)sТекущее количество побед: "
+"%(streakLengthWin)s"
+
+msgid "window/playStreakRewards/tab/redemptionMaxDayCount/body"
+msgstr " / %(redemptionMaxDayCount)s"
+
+msgid "window/playStreakRewards/tab/tooltip/body"
+msgstr "Нажмите, чтобы подробнее узнать о событии «Цепь побед»."
+
+msgid "window/playStreakRewards/tab/tooltip/head"
+msgstr "О Цепи побед"

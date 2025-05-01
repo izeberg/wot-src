@@ -35,10 +35,6 @@
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
 		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/90_minsk_fire_1.dds</texture>
 		</preload>
@@ -59,11 +55,7 @@
 			<texture>particles/content_forward/PFX_textures/90_minsk_fire_1.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_env_UNI_039_EngineerBridge.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_leaves_around.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/01_karelia_s_leaves.vfx</fn_effect_bin>
@@ -173,11 +165,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_sml.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_UNI_039_EngineerBridge.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/90_minsk_fire.eff</fn_effect_bin>
@@ -402,11 +390,7 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/90_minsk_fire_1.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/City_NewsPaper_trash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/City_NewsPaper_trash_P.vfx</fn_effect_bin>
@@ -524,11 +508,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Sparks/sparks_env_sml.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_env_UNI_039_EngineerBridge.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_UNI_039_EngineerBridge.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_leaves_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/90_minsk_fire.eff</fn_effect_bin>

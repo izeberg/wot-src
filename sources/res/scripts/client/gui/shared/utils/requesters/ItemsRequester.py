@@ -440,7 +440,7 @@ class ItemsRequester(IItemsRequester):
     _AccountItem = namedtuple('_AccountItem', ['dossier', 'clanInfo', 'seasons', 'ranked',
      'dogTag', 'battleRoyaleStats', 'wtr', 'layout', 'layoutState'])
 
-    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, armoryYard, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None, refProgramRequester=None):
+    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, armoryYard, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None, refProgramRequester=None, playStreakRequester=None, historicalBattles=None):
         self.__inventory = inventory
         self.__stats = stats
         self.__dossiers = dossiers
@@ -455,6 +455,7 @@ class ItemsRequester(IItemsRequester):
         self.__blueprints = blueprints
         self.__festivity = festivityRequester
         self.__armoryYard = armoryYard
+        self.__historicalBattles = historicalBattles
         self.__tokens = tokens
         self.__sessionStats = sessionStatsRequester
         self.__anonymizer = anonymizerRequester
@@ -464,6 +465,7 @@ class ItemsRequester(IItemsRequester):
         self.__resourceWell = resourceWellRequester
         self.__achievements20 = achievements20Requester
         self.__refProgram = refProgramRequester
+        self.__playStreak = playStreakRequester
         self.__itemsCache = defaultdict(dict)
         self.__brokenSyncAlreadyLoggedTypes = set()
         self.__fittingItemRequesters = {
@@ -527,6 +529,10 @@ class ItemsRequester(IItemsRequester):
         return self.__armoryYard
 
     @property
+    def historicalBattles(self):
+        return self.__historicalBattles
+
+    @property
     def tokens(self):
         return self.__tokens
 
@@ -562,6 +568,10 @@ class ItemsRequester(IItemsRequester):
     def refProgram(self):
         return self.__refProgram
 
+    @property
+    def playStreak(self):
+        return self.__playStreak
+
     def __onCompletedCallback(self, waitingToClose=None, milestone=None):
         from gui.Scaleform.Waiting import Waiting
         if waitingToClose:
@@ -578,6 +588,7 @@ class ItemsRequester(IItemsRequester):
         yield self.__shop.request()
         Waiting.hide('download/shop')
         g_playerEvents.onLoadingMilestoneReached(Milestones.INVENTORY)
+        Waiting.show('download/playStreak')
         Waiting.show('download/refProgram')
         Waiting.show('download/achievements20')
         Waiting.show('download/resourceWell')
@@ -613,18 +624,20 @@ class ItemsRequester(IItemsRequester):
          callerWrapper(self.__battlePass.request(), onCompleted=partial(self.__onCompletedCallback, 'download/battlePass', None)),
          self.__festivity.request(),
          callerWrapper(self.__armoryYard.request(), onCompleted=partial(self.__onCompletedCallback, 'download/festivity', None)),
+         callerWrapper(self.__historicalBattles.request(), onCompleted=partial(self.__onCompletedCallback, 'download/historicalBattles', None)),
          callerWrapper(self.__giftSystem.request(), onCompleted=partial(self.__onCompletedCallback, 'download/giftSystem', None)),
          callerWrapper(self.__gameRestrictions.request(), onCompleted=partial(self.__onCompletedCallback, 'download/gameRestrictions', None)),
          callerWrapper(self.__resourceWell.request(), onCompleted=partial(self.__onCompletedCallback, 'download/resourceWell', None)),
          callerWrapper(self.__achievements20.request(), onCompleted=partial(self.__onCompletedCallback, 'download/achievements20', None)),
-         callerWrapper(self.__refProgram.request(), onCompleted=partial(self.__onCompletedCallback, 'download/refProgram', None)))
+         callerWrapper(self.__refProgram.request(), onCompleted=partial(self.__onCompletedCallback, 'download/refProgram', None)),
+         callerWrapper(self.__playStreak.request(), onCompleted=partial(self.__onCompletedCallback, 'download/playStreak', None)))
         self.__brokenSyncAlreadyLoggedTypes.clear()
         callback(self)
         return
 
     def isSynced--- This code section failed: ---
 
- L.1051         0  LOAD_FAST             0  'self'
+ L.1072         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not

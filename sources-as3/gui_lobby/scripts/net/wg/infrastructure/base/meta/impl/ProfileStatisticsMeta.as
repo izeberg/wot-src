@@ -11,8 +11,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public var setSeason:Function;
       
-      public var showPlayersStats:Function;
-      
       public function ProfileStatisticsMeta()
       {
          super();
@@ -28,12 +26,6 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.setSeason,"setSeason" + Errors.CANT_NULL);
          this.setSeason(param1);
-      }
-      
-      public function showPlayersStatsS() : void
-      {
-         App.utils.asserter.assertNotNull(this.showPlayersStats,"showPlayersStats" + Errors.CANT_NULL);
-         this.showPlayersStats();
       }
    }
 }

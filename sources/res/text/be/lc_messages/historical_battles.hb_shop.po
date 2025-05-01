@@ -1,0 +1,260 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "booster/bonus/booster_credits"
+msgstr "%(effectValue)s да крэдытаў на %(effectTime)s"
+
+msgid "booster/bonus/booster_crew_xp"
+msgstr "%(effectValue)s да досведу экіпажа на %(effectTime)s"
+
+msgid "booster/bonus/booster_free_xp"
+msgstr "%(effectValue)s да вольнага досведу на %(effectTime)s"
+
+msgid "booster/bonus/booster_xp"
+msgstr "%(effectValue)s да баявога досведу на %(effectTime)s"
+
+msgid "booster_buy_dialog/composition"
+msgstr "Склад набору"
+
+msgid "booster_buy_dialog/cost"
+msgstr "Кошт куплі:"
+
+msgid "booster_buy_dialog/present"
+msgstr "Падарунак"
+
+msgid "booster_buy_dialog/title/master"
+msgstr "Купіць «Набор майстра»?"
+
+msgid "booster_buy_dialog/title/newbie"
+msgstr "Купіць загады «Больш ачкоў» %(orderType)s (%(number)s шт.)?"
+
+msgid "booster_buy_dialog/title/specialist"
+msgstr "Купіць «Набор адмыслоўца» (%(number)s шт.)?"
+
+msgid "boosters_shop/bundle/buyCount"
+msgstr "Можна купіць разоў: %(value)s"
+
+msgid "boosters_shop/footer"
+msgstr ""
+"{whiteSpanish_Open}Загады «Больш ачкоў»{whiteSpanish_Close} павялічваюць "
+"колькасць атрымоўваных {icon}{whiteSpanish_Open}ачкоў "
+"перамогі{whiteSpanish_Close} у {whiteSpanish_Open}х5{whiteSpanish_Close}, "
+"{whiteSpanish_Open}х10{whiteSpanish_Close} або "
+"{whiteSpanish_Open}х15{whiteSpanish_Close} разоў. Чым большы множнік загада,"
+" тым большая ўзнагарода за бой, а таксама хуткасць праходжання прагрэсіі і "
+"паляпшэння падраздзяленняў."
+
+msgid "boosters_shop/subtitle"
+msgstr "Выберыце набор з загадамі:"
+
+msgid "boosters_shop/title"
+msgstr "ЗАГАДЫ «БОЛЬШ АЧКОЎ»"
+
+msgid "bundles/hb25FrontCouponsBundle1/systemMessage/purchased"
+msgstr "«Набор навабранца» набыты."
+
+msgid "bundles/hb25FrontCouponsBundle1/title"
+msgstr "Набор навабранца"
+
+msgid "bundles/hb25FrontCouponsBundle2/systemMessage/purchased"
+msgstr "«Набор адмыслоўца» набыты."
+
+msgid "bundles/hb25FrontCouponsBundle2/title"
+msgstr "Набор адмыслоўца"
+
+msgid "bundles/hb25FrontCouponsBundle3/systemMessage/purchased"
+msgstr "«Набор майстра» набыты."
+
+msgid "bundles/hb25FrontCouponsBundle3/title"
+msgstr "Набор майстра"
+
+msgid "coins_exchange/cost"
+msgstr "Кошт абмену:"
+
+msgid "coins_exchange/inStock"
+msgstr "У наяўнасці:"
+
+msgid "coins_exchange/subTitle"
+msgstr "?empty?"
+
+msgid "coins_exchange/systemMessage/creditsSpent"
+msgstr "Патрачана крэдытаў: %(amount)s."
+
+msgid "coins_exchange/systemMessage/exchangeComplete"
+msgstr "?empty?"
+
+msgid "coins_exchange/title"
+msgstr "?empty?"
+
+msgid "coins_exchange/tooltip/noCoins/body"
+msgstr "?empty?"
+
+msgid "coins_exchange/tooltip/noCoins/header"
+msgstr "?empty?"
+
+msgid "coins_exchange/tooltip/noFront/body"
+msgstr "?empty?"
+
+msgid "coins_exchange/tooltip/turnedOff/body"
+msgstr "?empty?"
+
+msgid "common/button/back/caption"
+msgstr "НАЗАД"
+
+msgid "common/button/back/goto"
+msgstr "У ГАРАЖ"
+
+msgid "common/button/buy"
+msgstr "Купіць"
+
+msgid "common/button/get"
+msgstr "Атрымаць"
+
+msgid "common/pieces"
+msgstr "%(number)s шт."
+
+msgid "common/priceFrom"
+msgstr "ад %(price)"
+
+msgid "common/pricePerOne"
+msgstr "Кошт: 1 шт."
+
+msgid "common/timeLeft/hours"
+msgstr "%(hour)s гадз"
+
+msgid "effects/name"
+msgstr "Эфект:"
+
+msgid "errors/serverCooldownError"
+msgstr "Не ўдалося выканаць аперацыю. Паспрабуйце пазней."
+
+msgid "errors/serverError"
+msgstr ""
+"Не ўдалося выканаць аперацыю.\n"
+"Замала сродкаў, або адбыўся тэхнічны збой."
+
+msgid "mainPrize/hb22BundleMainPrizeModuleChassis/confirm_dialog_title"
+msgstr "Атрымаць шасі"
+
+msgid "mainPrize/hb22BundleMainPrizeModuleEngine/confirm_dialog_title"
+msgstr "Атрымаць рухавік"
+
+msgid "mainPrize/hb22BundleMainPrizeModuleGun/confirm_dialog_title"
+msgstr "Атрымаць гармату"
+
+msgid "mainPrize/hb22BundleMainPrizeModuleRadio/confirm_dialog_title"
+msgstr "Атрымаць корпус"
+
+msgid "mainPrize/hb22BundleMainPrizeModuleTurret/confirm_dialog_title"
+msgstr "Атрымаць вежу"
+
+msgid "mainPrize/partsCount/confirm_dialog_title/1"
+msgstr ", першую з пяці частак машыны «%(vehName)s»?"
+
+msgid "mainPrize/partsCount/confirm_dialog_title/2"
+msgstr ", другую з пяці частак машыны «%(vehName)s»?"
+
+msgid "mainPrize/partsCount/confirm_dialog_title/3"
+msgstr ", трэцюю з пяці частак машыны «%(vehName)s»?"
+
+msgid "mainPrize/partsCount/confirm_dialog_title/4"
+msgstr ", чацвёртую з пяці частак машыны «%(vehName)s»?"
+
+msgid "mainPrize/partsCount/confirm_dialog_title/5"
+msgstr ", пятую з пяці частак машыны «%(vehName)s»?"
+
+msgid "opt_device_buy_dialog/cost"
+msgstr "На аплату:"
+
+msgid "opt_device_buy_dialog/title"
+msgstr ""
+"Атрымаць абсталяванне\n"
+"«%(name)s»?"
+
+msgid "shop/hb22ShowcaseBundle1/confirm_dialog_title"
+msgstr "Атрымаць набор дэколяў (10 шт.)?"
+
+msgid "shop/hb22ShowcaseBundle1/descr"
+msgstr "Яскравыя стылі для аздаблення вашых улюбёных машын"
+
+msgid "shop/hb22ShowcaseBundle1/name"
+msgstr "Набор дэколяў (10 шт.)"
+
+msgid "shop/hb22ShowcaseBundle2/confirm_dialog_title"
+msgstr ""
+"Атрымаць вучэбны матэрыял\n"
+"«Універсальны вучэбны дапаможнік»?"
+
+msgid "shop/hb22ShowcaseBundle2/descr"
+msgstr ""
+"{whiteSpanish_Open}+250 000{whiteSpanish_Close} досведу кожнаму члену "
+"экіпажа"
+
+msgid "shop/hb22ShowcaseBundle2/name"
+msgstr "Універсальны вучэбны дапаможнік"
+
+msgid "shopLabel"
+msgstr "ВАЕНГАНДАЛЬ"
+
+msgid "showcase_confirm_dialog/crewbook/title"
+msgstr ""
+"Атрымаць вучэбны матэрыял\n"
+"«%(name)s»?"
+
+msgid "showcase_confirm_dialog/equipment/title"
+msgstr ""
+"Атрымаць рыштунак\n"
+"«%(name)s»?"
+
+msgid "showcase_confirm_dialog/instruction/title"
+msgstr ""
+"Атрымаць настаўленне\n"
+"«%(name)s»?"
+
+msgid "showcase_confirm_dialog/reserves/title"
+msgstr ""
+"Атрымаць асабісты рэзерв\n"
+"«%(name)s»?"
+
+msgid "systemMessage/bundleOrders/gift"
+msgstr "Падарунак: <b>Загад «Больш ачкоў» %(orderType)s (%(count)s шт.)</b>."
+
+msgid "systemMessage/bundleOrders/purchase"
+msgstr "Налічана: <b>Загад «Больш ачкоў» %(orderType)s (%(count)s шт.)</b>."
+
+msgid "systemMessage/mainPrize/giftVehicle"
+msgstr "Дададзена тэхніка: <b>%(vehName)s (экіпаж 100%%)</b>."
+
+msgid "systemMessage/mainPrize/medal"
+msgstr "Дасягненне: <font color='#FFFFFF'>«%(medalName)s»</font>."
+
+msgid "systemMessage/mainPrize/slot"
+msgstr "Дададзены слоты ў гаражы: <font color='#E9E2BF'>1</font>."
+
+msgid "systemMessage/mainPrize/vehicle"
+msgstr "Машына «%(vehName)s» набыта."
+
+msgid "systemMessage/moneySpent"
+msgstr "Патрачана %(text)s."
+
+msgid "systemMessage/moneySpent/credits"
+msgstr "крэдытаў: %(amount)s"
+
+msgid "systemMessage/moneySpent/gold"
+msgstr "золата: %(amount)s"
+
+msgid "systemMessage/moneySpent/hb_coin_counterattack"
+msgstr "?empty?"
+
+msgid "systemMessage/moneySpent/hb_coin_defence"
+msgstr "?empty?"
+
+msgid "systemMessage/moneySpent/hb_coin_offence"
+msgstr "?empty?"

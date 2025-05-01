@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/russian/R157_Object_279R/normal/lod4/Hull</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-1.701368 -0.539027 -3.664954</min>
 		<max>1.685455 0.938149 3.128716</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R157_Object_279R/normal/lod4/Hull</nodefullVisual>
 </root>

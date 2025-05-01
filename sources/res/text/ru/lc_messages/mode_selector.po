@@ -26,6 +26,9 @@ msgstr "Боевой пропуск, сезон %(seasonNum)s"
 msgid "event/finished"
 msgstr "Ранговые бои завершены"
 
+msgid "event/notStarted"
+msgstr "Ранговые бои начнутся %(date)s"
+
 msgid "event/paused"
 msgstr "Ранговые бои временно недоступны"
 
@@ -192,7 +195,7 @@ msgid "mode/ranked/battlePassTooltip/header"
 msgstr "Очки Боевого пропуска"
 
 msgid "mode/ranked/condition"
-msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s V&nbsp;уровень"
+msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s VI&nbsp;уровень"
 
 msgid "mode/ranked/description"
 msgstr "Режим с прогрессией и наградами."

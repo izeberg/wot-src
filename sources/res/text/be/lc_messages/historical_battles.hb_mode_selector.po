@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "headerButtons/historicalBattles/availability/days"
+msgstr "%(day)s сут"
+
+msgid "headerButtons/historicalBattles/availability/hours"
+msgstr "%(hour)s гадз"
+
+msgid "headerButtons/historicalBattles/availability/lessThanHour"
+msgstr "менш за 1 гадз"
+
+msgid "headerButtons/historicalBattles/endsIn"
+msgstr "Да канца падзеі: %(timeLeft)s"
+
+msgid "mode/historicalBattles/description"
+msgstr "Асобны рэжым з баямі супраць ШІ, прысвечаны Дню Перамогі."
+
+msgid "mode/historicalBattles/name"
+msgstr "Час герояў"
+
+msgid "mode/historicalBattles/performance/description/highRisk"
+msgstr ""
+"Прадукцыйнасці вашага камп'ютара недастаткова для гэтага рэжыму.\n"
+"Будуць назірацца праблемы з графікай і перамяшчэннем тэхнікі, магчыма таксама аварыйнае закрыццё кліента гульні."
+
+msgid "mode/historicalBattles/performance/description/mediumRisk"
+msgstr ""
+"Рэжым патрабавальны да камп'ютара.\n"
+"Мапа можа доўга загружацца, магчымыя праблемы з графікай і перамяшчэннем тэхнікі ў баі. У выпадку недастатковай прадукцыйнасці паспрабуйце знізіць налады графікі."
+
+msgid "mode/historicalBattles/performance/highRisk"
+msgstr "Нізкая прадукцыйнасць"
+
+msgid "mode/historicalBattles/performance/mediumRisk"
+msgstr "Зніжэнне прадукцыйнасці"
+
+msgid "mode/historicalBattles/squadName"
+msgstr "Звяз «Час герояў»"

@@ -1210,10 +1210,6 @@
 						alphaReference
 						<Int>128</Int>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.127625 0.531577 0.007360</groupOrigin>
 			</primitiveGroup>
@@ -1300,10 +1296,6 @@
 					<property>
 						alphaReference
 						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.127625 0.531591 0.013957</groupOrigin>

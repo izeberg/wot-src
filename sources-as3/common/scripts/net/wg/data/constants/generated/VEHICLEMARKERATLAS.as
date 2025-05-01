@@ -3,6 +3,18 @@ package net.wg.data.constants.generated
    public class VEHICLEMARKERATLAS
    {
       
+      public static const BLACK_AT_SPG_ELITE:String = "black_AT-SPG_elite";
+      
+      public static const BLACK_BOSS:String = "black_boss";
+      
+      public static const BLACK_HEAVY_TANK_ELITE:String = "black_heavyTank_elite";
+      
+      public static const BLACK_LIGHT_TANK_ELITE:String = "black_lightTank_elite";
+      
+      public static const BLACK_MEDIUM_TANK_ELITE:String = "black_mediumTank_elite";
+      
+      public static const BLACK_SPG_ELITE:String = "black_SPG_elite";
+      
       public static const BLUE_AT_SPG:String = "blue_AT-SPG";
       
       public static const BLUE_EXPLOSION:String = "blue_explosion";
@@ -1219,9 +1231,17 @@ package net.wg.data.constants.generated
       
       public static const POLAND_PL34_CS_63_02:String = "poland-Pl34_CS_63_02";
       
+      public static const POLAND_PL35_CS_57_SOKOL:String = "poland-Pl35_CS_57_Sokol";
+      
+      public static const PURPLE_AIMER:String = "purple_aimer";
+      
       public static const PURPLE_AT_SPG:String = "purple_AT-SPG";
       
+      public static const PURPLE_AT_SPG_ELITE:String = "purple_AT-SPG_elite";
+      
       public static const PURPLE_AT_SPG_HUNTED:String = "purple_AT-SPG_hunted";
+      
+      public static const PURPLE_BOSS:String = "purple_boss";
       
       public static const PURPLE_EXPLOSION:String = "purple_explosion";
       
@@ -1237,9 +1257,13 @@ package net.wg.data.constants.generated
       
       public static const PURPLE_HEAVY_TANK:String = "purple_heavyTank";
       
+      public static const PURPLE_HEAVY_TANK_ELITE:String = "purple_heavyTank_elite";
+      
       public static const PURPLE_HEAVY_TANK_HUNTED:String = "purple_heavyTank_hunted";
       
       public static const PURPLE_LIGHT_TANK:String = "purple_lightTank";
+      
+      public static const PURPLE_LIGHT_TANK_ELITE:String = "purple_lightTank_elite";
       
       public static const PURPLE_LIGHT_TANK_HUNTED:String = "purple_lightTank_hunted";
       
@@ -1253,15 +1277,27 @@ package net.wg.data.constants.generated
       
       public static const PURPLE_MEDIUM_TANK:String = "purple_mediumTank";
       
+      public static const PURPLE_MEDIUM_TANK_ELITE:String = "purple_mediumTank_elite";
+      
       public static const PURPLE_MEDIUM_TANK_HUNTED:String = "purple_mediumTank_hunted";
+      
+      public static const PURPLE_RUNNER:String = "purple_runner";
       
       public static const PURPLE_SPG:String = "purple_SPG";
       
+      public static const PURPLE_SPG_ELITE:String = "purple_SPG_elite";
+      
       public static const PURPLE_SPG_HUNTED:String = "purple_SPG_hunted";
+      
+      public static const RED_AIMER:String = "red_aimer";
       
       public static const RED_AT_SPG:String = "red_AT-SPG";
       
+      public static const RED_AT_SPG_ELITE:String = "red_AT-SPG_elite";
+      
       public static const RED_AT_SPG_HUNTED:String = "red_AT-SPG_hunted";
+      
+      public static const RED_BOSS:String = "red_boss";
       
       public static const RED_EXPLOSION:String = "red_explosion";
       
@@ -1277,9 +1313,13 @@ package net.wg.data.constants.generated
       
       public static const RED_HEAVY_TANK:String = "red_heavyTank";
       
+      public static const RED_HEAVY_TANK_ELITE:String = "red_heavyTank_elite";
+      
       public static const RED_HEAVY_TANK_HUNTED:String = "red_heavyTank_hunted";
       
       public static const RED_LIGHT_TANK:String = "red_lightTank";
+      
+      public static const RED_LIGHT_TANK_ELITE:String = "red_lightTank_elite";
       
       public static const RED_LIGHT_TANK_HUNTED:String = "red_lightTank_hunted";
       
@@ -1293,9 +1333,15 @@ package net.wg.data.constants.generated
       
       public static const RED_MEDIUM_TANK:String = "red_mediumTank";
       
+      public static const RED_MEDIUM_TANK_ELITE:String = "red_mediumTank_elite";
+      
       public static const RED_MEDIUM_TANK_HUNTED:String = "red_mediumTank_hunted";
       
+      public static const RED_RUNNER:String = "red_runner";
+      
       public static const RED_SPG:String = "red_SPG";
+      
+      public static const RED_SPG_ELITE:String = "red_SPG_elite";
       
       public static const RED_SPG_HUNTED:String = "red_SPG_hunted";
       
@@ -1346,6 +1392,10 @@ package net.wg.data.constants.generated
       public static const SHADOW_1:String = "shadow_1";
       
       public static const SHADOW_2:String = "shadow_2";
+      
+      public static const SHIELD:String = "shield";
+      
+      public static const SHIELD_DEAD:String = "shield_dead";
       
       public static const SM_ABILITY_GREEN:String = "sm_ability_green";
       
@@ -1660,6 +1710,8 @@ package net.wg.data.constants.generated
       public static const UK_GB101_FV1066_SENLAC:String = "uk-GB101_FV1066_Senlac";
       
       public static const UK_GB102_LHMTV:String = "uk-GB102_LHMTV";
+      
+      public static const UK_GB102_LHMTV_FL:String = "uk-GB102_LHMTV_FL";
       
       public static const UK_GB103_GSOR3301_AVR_FS:String = "uk-GB103_GSOR3301_AVR_FS";
       
@@ -2343,6 +2395,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R133_KV_122:String = "ussr-R133_KV_122";
       
+      public static const USSR_R133_KV_122_HB2:String = "ussr-R133_KV_122_hb2";
+      
       public static const USSR_R134_OBJECT_252_K:String = "ussr-R134_Object_252K";
       
       public static const USSR_R134_OBJECT_252_U:String = "ussr-R134_Object_252U";
@@ -2532,6 +2586,8 @@ package net.wg.data.constants.generated
       public static const USSR_R22_T_46:String = "ussr-R22_T-46";
       
       public static const USSR_R223_T_54_B_1958:String = "ussr-R223_T_54B_1958";
+      
+      public static const USSR_R224_IS_3_1945:String = "ussr-R224_IS_3_1945";
       
       public static const USSR_R23_T_43:String = "ussr-R23_T-43";
       
@@ -2769,9 +2825,9 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_BAR_ENUM:Array = [DAMAGE_BAR_GOLD,DAMAGE_BAR_GREEN,DAMAGE_BAR_PURPLE,DAMAGE_BAR_RED,DAMAGE_BAR_YELLOW];
       
-      public static const PURPLE_ENUM:Array = [PURPLE_AT_SPG,PURPLE_AT_SPG_HUNTED,PURPLE_EXPLOSION,PURPLE_FIRE,PURPLE_HEAVY_AT_SPG,PURPLE_HEAVY_AT_SPG_HUNTED,PURPLE_HEAVY_SPG,PURPLE_HEAVY_SPG_HUNTED,PURPLE_HEAVY_TANK,PURPLE_HEAVY_TANK_HUNTED,PURPLE_LIGHT_TANK,PURPLE_LIGHT_TANK_HUNTED,PURPLE_MEDIUM_AT_SPG,PURPLE_MEDIUM_AT_SPG_HUNTED,PURPLE_MEDIUM_SPG,PURPLE_MEDIUM_SPG_HUNTED,PURPLE_MEDIUM_TANK,PURPLE_MEDIUM_TANK_HUNTED,PURPLE_SPG,PURPLE_SPG_HUNTED];
+      public static const PURPLE_ENUM:Array = [PURPLE_AIMER,PURPLE_AT_SPG,PURPLE_AT_SPG_ELITE,PURPLE_AT_SPG_HUNTED,PURPLE_BOSS,PURPLE_EXPLOSION,PURPLE_FIRE,PURPLE_HEAVY_AT_SPG,PURPLE_HEAVY_AT_SPG_HUNTED,PURPLE_HEAVY_SPG,PURPLE_HEAVY_SPG_HUNTED,PURPLE_HEAVY_TANK,PURPLE_HEAVY_TANK_ELITE,PURPLE_HEAVY_TANK_HUNTED,PURPLE_LIGHT_TANK,PURPLE_LIGHT_TANK_ELITE,PURPLE_LIGHT_TANK_HUNTED,PURPLE_MEDIUM_AT_SPG,PURPLE_MEDIUM_AT_SPG_HUNTED,PURPLE_MEDIUM_SPG,PURPLE_MEDIUM_SPG_HUNTED,PURPLE_MEDIUM_TANK,PURPLE_MEDIUM_TANK_ELITE,PURPLE_MEDIUM_TANK_HUNTED,PURPLE_RUNNER,PURPLE_SPG,PURPLE_SPG_ELITE,PURPLE_SPG_HUNTED];
       
-      public static const RED_ENUM:Array = [RED_AT_SPG,RED_AT_SPG_HUNTED,RED_EXPLOSION,RED_FIRE,RED_HEAVY_AT_SPG,RED_HEAVY_AT_SPG_HUNTED,RED_HEAVY_SPG,RED_HEAVY_SPG_HUNTED,RED_HEAVY_TANK,RED_HEAVY_TANK_HUNTED,RED_LIGHT_TANK,RED_LIGHT_TANK_HUNTED,RED_MEDIUM_AT_SPG,RED_MEDIUM_AT_SPG_HUNTED,RED_MEDIUM_SPG,RED_MEDIUM_SPG_HUNTED,RED_MEDIUM_TANK,RED_MEDIUM_TANK_HUNTED,RED_SPG,RED_SPG_HUNTED];
+      public static const RED_ENUM:Array = [RED_AIMER,RED_AT_SPG,RED_AT_SPG_ELITE,RED_AT_SPG_HUNTED,RED_BOSS,RED_EXPLOSION,RED_FIRE,RED_HEAVY_AT_SPG,RED_HEAVY_AT_SPG_HUNTED,RED_HEAVY_SPG,RED_HEAVY_SPG_HUNTED,RED_HEAVY_TANK,RED_HEAVY_TANK_ELITE,RED_HEAVY_TANK_HUNTED,RED_LIGHT_TANK,RED_LIGHT_TANK_ELITE,RED_LIGHT_TANK_HUNTED,RED_MEDIUM_AT_SPG,RED_MEDIUM_AT_SPG_HUNTED,RED_MEDIUM_SPG,RED_MEDIUM_SPG_HUNTED,RED_MEDIUM_TANK,RED_MEDIUM_TANK_ELITE,RED_MEDIUM_TANK_HUNTED,RED_RUNNER,RED_SPG,RED_SPG_ELITE,RED_SPG_HUNTED];
       
       public static const SQUAD_ICON_ALL_ENUM:Array = [SQUAD_ICON_GOLD1,SQUAD_ICON_GOLD2,SQUAD_ICON_GOLD3,SQUAD_ICON_GOLD4,SQUAD_ICON_GREEN1,SQUAD_ICON_GREEN2,SQUAD_ICON_GREEN3,SQUAD_ICON_GREEN4,SQUAD_ICON_PURPLE1,SQUAD_ICON_PURPLE2,SQUAD_ICON_PURPLE3,SQUAD_ICON_PURPLE4,SQUAD_ICON_RED1,SQUAD_ICON_RED2,SQUAD_ICON_RED3,SQUAD_ICON_RED4,SQUAD_ICON_YELLOW1,SQUAD_ICON_YELLOW2,SQUAD_ICON_YELLOW3,SQUAD_ICON_YELLOW4];
        

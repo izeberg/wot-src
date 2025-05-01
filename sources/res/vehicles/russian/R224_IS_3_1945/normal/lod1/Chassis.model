@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R224_IS_3_1945/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.604638 -0.000000 -3.293961</min>
+		<max>1.604638 1.097350 3.201239</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R224_IS_3_1945/normal/lod1/Chassis</nodefullVisual>
+</root>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>60.033337</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dowe_fligt_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_birds/dowe_light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>2.033334</startTime>
+				<duration>16.966669</duration>
+				<resourceID>content/Environment/env_birds/dowe.fbx</resourceID>
+				<clipName/>
+				<speed>1.200000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>3.300000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.321732 0.069542 -1.596802</value>
+				<inTangent>1.610433 1.173925 10.611877</inTangent>
+				<outTangent>1.610433 1.173925 10.611877</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.766667</startTime>
+				<value>6.387695 4.491325 38.374603</value>
+				<inTangent>-0.056405 0.653703 16.345554</inTangent>
+				<outTangent>-0.056405 0.653703 16.345554</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.633334</startTime>
+				<value>-0.275513 5.007456 123.747650</value>
+				<inTangent>-2.771851 1.456766 15.549246</inTangent>
+				<outTangent>-2.771851 1.456766 15.549246</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.000002</startTime>
+				<value>-36.060486 31.047255 208.228043</value>
+				<inTangent>-3.820459 2.780049 9.019258</inTangent>
+				<outTangent>-3.820459 2.780049 9.019258</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 13.339942</value>
+				<inTangent>1.311803 0.000000 1.278411</inTangent>
+				<outTangent>1.311803 0.000000 1.278411</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.466667</startTime>
+				<value>12.418404 0.000000 25.442238</value>
+				<inTangent>2.188002 4.861913 -64.169250</inTangent>
+				<outTangent>2.188002 4.861913 -64.169250</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.000002</startTime>
+				<value>44.319481 10.148233 -8.593087</value>
+				<inTangent>4.234656 1.347110 -4.517963</inTangent>
+				<outTangent>4.234656 1.347110 -4.517963</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.400000 0.400000 0.400000</inTangent>
+				<outTangent>0.400000 0.400000 0.400000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>0.200000 0.200000 0.200000</inTangent>
+				<outTangent>0.200000 0.200000 0.200000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>17.833334</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>-0.171428 -0.171428 -0.171428</inTangent>
+				<outTangent>-0.171428 -0.171428 -0.171428</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.342857 -0.342857 -0.342857</inTangent>
+				<outTangent>-0.342857 -0.342857 -0.342857</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dowe_fligt_02</name>
+		<type>model</type>
+		<resource>content/Environment/env_birds/dowe_light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>1.066667</startTime>
+				<duration>18.933334</duration>
+				<resourceID>content/Environment/env_birds/dowe.fbx</resourceID>
+				<clipName/>
+				<speed>1.200000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>3.300000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>0.321732 0.069542 -1.596802</value>
+				<inTangent>0.640733 0.299717 9.277743</inTangent>
+				<outTangent>0.640733 0.299717 9.277743</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.766667</startTime>
+				<value>3.333176 1.478212 42.008591</value>
+				<inTangent>0.774661 0.642423 13.912928</inTangent>
+				<outTangent>0.774661 0.642423 13.912928</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.533334</startTime>
+				<value>7.664116 6.173998 130.421265</value>
+				<inTangent>-1.863264 2.048089 13.398090</inTangent>
+				<outTangent>-1.863264 2.048089 13.398090</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>-36.060486 35.521545 208.228043</value>
+				<inTangent>-4.635117 3.111048 8.248069</inTangent>
+				<outTangent>-4.635117 3.111048 8.248069</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>0.000000 0.000000 13.339942</value>
+				<inTangent>1.194077 0.000000 1.163682</inTangent>
+				<outTangent>1.194077 0.000000 1.163682</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.466667</startTime>
+				<value>12.418404 0.000000 25.442238</value>
+				<inTangent>2.188002 4.861913 -64.169250</inTangent>
+				<outTangent>2.188002 4.861913 -64.169250</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>44.319481 10.148233 -8.593087</value>
+				<inTangent>3.753068 1.193910 -4.004156</inTangent>
+				<outTangent>3.753068 1.193910 -4.004156</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.400000 0.400000 0.400000</inTangent>
+				<outTangent>0.400000 0.400000 0.400000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.066667</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>0.200000 0.200000 0.200000</inTangent>
+				<outTangent>0.200000 0.200000 0.200000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.800001</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>-0.171429 -0.171429 -0.171429</inTangent>
+				<outTangent>-0.171429 -0.171429 -0.171429</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.342857 -0.342857 -0.342857</inTangent>
+				<outTangent>-0.342857 -0.342857 -0.342857</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dowe_fligt_03</name>
+		<type>model</type>
+		<resource>content/Environment/env_birds/dowe_light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>2.433333</startTime>
+				<duration>17.566669</duration>
+				<resourceID>content/Environment/env_birds/dowe.fbx</resourceID>
+				<clipName/>
+				<speed>1.200000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>3.300000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>0.321732 0.069542 -1.596802</value>
+				<inTangent>1.860731 0.422601 11.942715</inTangent>
+				<outTangent>1.860731 0.422601 11.942715</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.766667</startTime>
+				<value>6.524170 1.478212 38.212250</value>
+				<inTangent>1.509454 1.273560 16.029873</inTangent>
+				<outTangent>1.509454 1.273560 16.029873</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.533334</startTime>
+				<value>12.044815 11.605083 134.103424</value>
+				<inTangent>-1.970661 2.554644 13.987382</inTangent>
+				<outTangent>-1.970661 2.554644 13.987382</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>-36.060471 39.761414 208.228058</value>
+				<inTangent>-5.099500 2.984770 7.857735</inTangent>
+				<outTangent>-5.099500 2.984770 7.857735</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>0.000000 0.000000 13.339942</value>
+				<inTangent>1.374731 0.000000 1.339737</inTangent>
+				<outTangent>1.374731 0.000000 1.339737</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.466667</startTime>
+				<value>12.418404 0.000000 25.442238</value>
+				<inTangent>2.188002 4.861913 -64.169250</inTangent>
+				<outTangent>2.188002 4.861913 -64.169250</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>44.319481 10.148233 -8.593087</value>
+				<inTangent>3.753068 1.193910 -4.004156</inTangent>
+				<outTangent>3.753068 1.193910 -4.004156</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.400000 0.400000 0.400000</inTangent>
+				<outTangent>0.400000 0.400000 0.400000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.433333</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>0.200000 0.200000 0.200000</inTangent>
+				<outTangent>0.200000 0.200000 0.200000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.800001</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>-0.171429 -0.171429 -0.171429</inTangent>
+				<outTangent>-0.171429 -0.171429 -0.171429</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.342857 -0.342857 -0.342857</inTangent>
+				<outTangent>-0.342857 -0.342857 -0.342857</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dowe_fligt_04</name>
+		<type>model</type>
+		<resource>content/Environment/env_birds/dowe_light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>2.433333</startTime>
+				<duration>17.566669</duration>
+				<resourceID>content/Environment/env_birds/dowe.fbx</resourceID>
+				<clipName/>
+				<speed>1.200000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>3.300000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.321732 0.069542 -1.596802</value>
+				<inTangent>1.453700 -0.918459 9.330250</inTangent>
+				<outTangent>1.453700 -0.918459 9.330250</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.300000</startTime>
+				<value>6.524185 -3.849218 38.212265</value>
+				<inTangent>1.094893 0.884190 11.057871</inTangent>
+				<outTangent>1.094893 0.884190 11.057871</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.800000</startTime>
+				<value>12.044823 16.302082 134.103455</value>
+				<inTangent>-2.577179 2.779706 10.930987</inTangent>
+				<outTangent>-2.577179 2.779706 10.930987</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>-36.060471 39.761414 208.228058</value>
+				<inTangent>-2.945222 1.436285 4.538241</inTangent>
+				<outTangent>-2.945222 1.436285 4.538241</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.033337</startTime>
+				<value>-36.060471 39.761414 208.228058</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.000000 0.000000 13.339942</value>
+				<inTangent>1.374731 0.000000 1.339737</inTangent>
+				<outTangent>1.374731 0.000000 1.339737</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.066668</startTime>
+				<value>12.418404 0.000000 25.442238</value>
+				<inTangent>2.188002 4.861913 -64.169250</inTangent>
+				<outTangent>2.188002 4.861913 -64.169250</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>44.319481 10.148233 -8.593087</value>
+				<inTangent>2.926704 0.931031 -3.122507</inTangent>
+				<outTangent>2.926704 0.931031 -3.122507</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.400000 0.400000 0.400000</inTangent>
+				<outTangent>0.400000 0.400000 0.400000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.033333</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>0.200000 0.200000 0.200000</inTangent>
+				<outTangent>0.200000 0.200000 0.200000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>16.400002</startTime>
+				<value>1.400000 1.400000 1.400000</value>
+				<inTangent>-0.056075 -0.056075 -0.056075</inTangent>
+				<outTangent>-0.056075 -0.056075 -0.056075</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.966667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.112150 -0.112150 -0.112150</inTangent>
+				<outTangent>-0.112150 -0.112150 -0.112150</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

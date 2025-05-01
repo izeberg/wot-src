@@ -1,0 +1,165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleQuestAwards/button"
+msgstr "Так!"
+
+msgid "battleQuestAwards/goToShop"
+msgstr "У краму падзеі"
+
+msgid "battleQuestAwards/header/subTitle/left"
+msgstr "ПАДЗЕЯ «ЧАС ГЕРОЯЎ»"
+
+msgid "battleQuestAwards/header/subTitle/right/defence"
+msgstr "РЭЖЫМ «АБАРОНА»"
+
+msgid "battleQuestAwards/header/subTitle/right/offence"
+msgstr "РЭЖЫМ «ПРАРЫЎ»"
+
+msgid "battleQuestAwards/header/title/regular"
+msgstr "УЗНАГАРОДА ЗА ПРАХОДЖАННЕ %(level)s ЭТАПУ"
+
+msgid "battleQuestAwards/header/title/special"
+msgstr "УЗНАГАРОДА ЗА ПРАХОДЖАННЕ ПАДЗЕІ"
+
+msgid "battleQuestAwards/mainRewardDescription"
+msgstr "Цалкам прайсці Шлях да перамогі ў падзеі «Час герояў»."
+
+msgid "battleQuestAwards/mainRewardTitle"
+msgstr "Нашыўка «Пераможца»."
+
+msgid "battleQuestAwards/showInHangar"
+msgstr "Паказаць у Гаражы"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "СТАЛЁВЫ ПАЛЯЎНІЧЫ"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "ФІНАЛЬНЫ ЭТАП ПРОЙДЗЕНЫ!"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "ЭТАП %(level)s ПРОЙДЗЕНЫ!"
+
+msgid "header/coinValue/maxAmount"
+msgstr " / %(value)"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s або %(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "progressionView/battleQuests/questsTotal/text"
+msgstr "Выкананых задач:"
+
+msgid "progressionView/battleQuests/timer/completed/text"
+msgstr "Задачы з'явяцца праз"
+
+msgid "progressionView/battleQuests/timer/inProgress/text"
+msgstr "Задачы абновяцца праз"
+
+msgid "progressionView/battleQuests/timer/title"
+msgstr "Усе штодзённыя задачы выкананы. Вяртайцеся заўтра."
+
+msgid "progressionView/card/points"
+msgstr ""
+"%(whiteSpanish_Open)s%(current)s/%(whiteSpanish_Close)s%(par_Open)s%(total)s%(par_Close)s"
+
+msgid "progressionView/discountFull"
+msgstr "(нават да 100%)"
+
+msgid "progressionView/discountPercent"
+msgstr "25%"
+
+msgid "progressionView/rewardBuy"
+msgstr "Купіць"
+
+msgid "progressionView/rewardBuyDesc"
+msgstr ""
+"Бярыце ўдзел у падзеі «Час герояў» і здабывайце ачкі перамогі, каб у выніку "
+"атрымаць савецкі сярэдні прэміум танк %(vehicleLevel)s узроўню "
+"%(vehicleName)s %(free)s."
+
+msgid "progressionView/rewardBuyLabel"
+msgstr "Атрыманне танка"
+
+msgid "progressionView/rewardDiscount"
+msgstr "Зніжка %(percent)s% на %(vehicleLvl)s %(roleIcon)s %(vehicleName)s"
+
+msgid "progressionView/rewardForFree"
+msgstr "бясплатна"
+
+msgid "progressionView/rewardLevel"
+msgstr "VII"
+
+msgid "progressionView/rewardNoPersonalDiscount"
+msgstr "%(icon)s Персанальная зніжка на танк адсутнічае"
+
+msgid "progressionView/rewardNoPersonalDiscountExist"
+msgstr "%(icon)s Ваша дзейная зніжка: %(discount)s"
+
+msgid "progressionView/rewardPersonalDiscountInfo"
+msgstr ""
+"Не паспяваеце прайсці прагрэсію? Машыну таксама можна купіць %(discount)s, "
+"якая павялічваецца на %(discountPercent)s за кожныя 2 пройдзеныя этапы "
+"%(discountFull)s."
+
+msgid "progressionView/rewardReceived"
+msgstr "Узнагарода атрымана!"
+
+msgid "progressionView/rewardWithDiscount"
+msgstr "са зніжкай"
+
+msgid "progressionView/subTitle/completed"
+msgstr "Здабывайце сталёвыя пячаткі і набывайце стылі Сталёвага паляўнічага"
+
+msgid "progressionView/subTitle/inProgress"
+msgstr "Выконваючы баявыя задачы, вы атрымліваеце ачкі прагрэсіі"
+
+msgid "progressionView/title/completed"
+msgstr "ПРАГРЭСІЯ ПРОЙДЗЕНА!"
+
+msgid "progressionView/title/inProgress"
+msgstr "ПРАГРЭСІЯ"
+
+msgid "serviceChannelMessages/awards"
+msgstr "Атрымана ўзнагарода:"
+
+msgid "serviceChannelMessages/body"
+msgstr ""
+"Вы завяршылі %(stage)s-ы этап прагрэсіі %(modeName)s падзеі "
+"«%(progressionName)s»."
+
+msgid "serviceChannelMessages/discountAward"
+msgstr "Ваша зніжка на %(vehicle)s павысілася"
+
+msgid "serviceChannelMessages/discountAwardPercentage"
+msgstr " да %(discount)d%%"
+
+msgid "serviceChannelMessages/header"
+msgstr "Віншуем!"
+
+msgid "serviceChannelMessages/modeName/defence"
+msgstr "Абарона"
+
+msgid "serviceChannelMessages/modeName/offence"
+msgstr "Прарыў"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "Падрабязней"
+
+msgid "serviceChannelMessages/progressionName"
+msgstr "Час герояў"
+
+msgid "serviceChannelMessages/tankmanAward"
+msgstr "Дададзены член экіпажа «%(name)s»"
+
+msgid "serviceChannelMessages/unlockedVehiclesAward"
+msgstr "Разблакаваны доступ да палепшанай тэхнікі падзеі: %(vehicles)s"

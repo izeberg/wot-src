@@ -60,6 +60,10 @@ package net.wg.gui.battle.views.sixthSense
       
       private var _stageH:int = 0;
       
+      private var _visibilityInBattlePage:Boolean = true;
+      
+      private var _isActive:Boolean = false;
+      
       public function SixthSense()
       {
          super();
@@ -69,6 +73,12 @@ package net.wg.gui.battle.views.sixthSense
          this._alphaWrapper = new AlphaPropertyWrapper(this);
          this._frameHelper = new FrameHelper(this);
          this._frameHelper.addScriptToFrame(this.totalFrames - 1,this.onIndicatorHiddenHandler);
+      }
+      
+      override public function setCompVisible(param1:Boolean) : void
+      {
+         this._visibilityInBattlePage = param1;
+         super.setCompVisible(param1);
       }
       
       override protected function onDispose() : void
@@ -88,6 +98,7 @@ package net.wg.gui.battle.views.sixthSense
       
       public function as_hide(param1:Boolean) : void
       {
+         this._isActive = false;
          if(!visible)
          {
             return;
@@ -121,6 +132,7 @@ package net.wg.gui.battle.views.sixthSense
       
       public function as_show(param1:Boolean) : void
       {
+         this._isActive = true;
          this.visible = true;
          if(param1)
          {
@@ -135,6 +147,7 @@ package net.wg.gui.battle.views.sixthSense
       
       public function as_showIndicator() : void
       {
+         this._isActive = true;
          this.visible = true;
          gotoAndPlay(LABEL_SHOW_INDICATOR);
          this.validate();
@@ -210,7 +223,7 @@ package net.wg.gui.battle.views.sixthSense
       {
          if(super.visible != param1)
          {
-            super.visible = param1;
+            super.visible = param1 && this._visibilityInBattlePage && this._isActive;
             dispatchEvent(new Event(EVENT_CHANGE_VISIBILITY));
          }
       }

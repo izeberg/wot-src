@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R223_T_54B_1958/normal/lod1/Curtain_02</nodelessVisual>
+	<parent>vehicles/russian/R223_T_54B_1958/normal/lod2/Curtain_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.222974 0.345333 -0.075262</min>
+		<max>1.147295 0.441775 0.771640</max>
+	</visibilityBox>
+</root>

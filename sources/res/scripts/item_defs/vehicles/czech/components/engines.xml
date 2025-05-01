@@ -199,8 +199,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>484</rpm_min>
-			<rpm_max>2250</rpm_max>
+			<rpm_min>479</rpm_min>
+			<rpm_max>2266</rpm_max>
 		</Praga_NR>
 		<Praga_V_8_H_Sv>
 			<userString>#czech_vehicles:Praga_V_8_H_Sv</userString>
@@ -218,8 +218,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>474</rpm_min>
-			<rpm_max>2280</rpm_max>
+			<rpm_min>466</rpm_min>
+			<rpm_max>2307</rpm_max>
 		</Praga_V_8_H_Sv>
 		<Praga_V_8_H>
 			<userString>#czech_vehicles:Praga_V_8_H</userString>
@@ -237,8 +237,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>462</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>449</rpm_min>
+			<rpm_max>2360</rpm_max>
 		</Praga_V_8_H>
 		<Tatra_T-78>
 			<userString>#czech_vehicles:Tatra_T-78</userString>
@@ -257,8 +257,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>462</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>449</rpm_min>
+			<rpm_max>2360</rpm_max>
 		</Tatra_T-78>
 		<Skoda_V12_16_2_liter>
 			<userString>#czech_vehicles:Skoda_V12_16_2_liter</userString>
@@ -276,8 +276,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>387</rpm_min>
-			<rpm_max>2560</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2681</rpm_max>
 		</Skoda_V12_16_2_liter>
 		<Skoda_V12_19_8_liter_450>
 			<userString>#czech_vehicles:Skoda_V12_19_8_liter_450</userString>
@@ -295,16 +295,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>343</rpm_min>
-			<rpm_max>2701</rpm_max>
+			<rpm_min>290</rpm_min>
+			<rpm_max>2868</rpm_max>
 		</Skoda_V12_19_8_liter_450>
 		<Skoda_V12_19_8_liter_500>
 			<userString>#czech_vehicles:Skoda_V12_19_8_liter_500</userString>
 			<tags>gasoline</tags>
 			<level>6</level>
 			<price>25400</price>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>700</weight>
 			<maxHealth>145</maxHealth>
@@ -314,16 +314,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>312</rpm_min>
-			<rpm_max>2801</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Skoda_V12_19_8_liter_500>
 		<V_2_34>
 			<userString>#czech_vehicles:V_2_34</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>27860</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>750</weight>
 			<maxHealth>145</maxHealth>
@@ -333,16 +333,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2101</rpm_max>
 		</V_2_34>
 		<V_2_34M>
 			<userString>#czech_vehicles:V_2_34M</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>29500</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>520</power>
 			<weight>750</weight>
 			<maxHealth>190</maxHealth>
@@ -352,16 +352,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>381</rpm_min>
-			<rpm_max>2056</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
 		</V_2_34M>
 		<Skoda_16_ADH_140_P>
 			<userString>#czech_vehicles:Skoda_16_ADH_140_P</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>27500</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>750</weight>
 			<maxHealth>145</maxHealth>
@@ -371,8 +371,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2101</rpm_max>
 		</Skoda_16_ADH_140_P>
 		<Skoda_V16_diesel_600>
 			<userString>#czech_vehicles:Skoda_V16_diesel_600</userString>
@@ -390,8 +390,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</Skoda_V16_diesel_600>
 		<Skoda_V16_diesel_600_a>
 			<userString>#czech_vehicles:Skoda_V16_diesel_600_a</userString>
@@ -409,8 +409,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</Skoda_V16_diesel_600_a>
 		<Skoda_V16_diesel_660>
 			<userString>#czech_vehicles:Skoda_V16_diesel_660</userString>
@@ -428,8 +428,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>344</rpm_min>
-			<rpm_max>2168</rpm_max>
+			<rpm_min>339</rpm_min>
+			<rpm_max>2180</rpm_max>
 		</Skoda_V16_diesel_660>
 		<Skoda_V16_diesel_660_a>
 			<userString>#czech_vehicles:Skoda_V16_diesel_660_a</userString>
@@ -447,8 +447,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>338</rpm_min>
-			<rpm_max>2184</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2241</rpm_max>
 		</Skoda_V16_diesel_660_a>
 		<Skoda_16_ADH_134>
 			<userString>#czech_vehicles:Skoda_16_ADH_134</userString>
@@ -467,8 +467,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>344</rpm_min>
-			<rpm_max>2168</rpm_max>
+			<rpm_min>339</rpm_min>
+			<rpm_max>2180</rpm_max>
 		</Skoda_16_ADH_134>
 		<Skoda_16_ADH_140_A>
 			<userString>#czech_vehicles:Skoda_16_ADH_140_A</userString>
@@ -486,8 +486,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</Skoda_16_ADH_140_A>
 		<Skoda_16_ADH_140>
 			<userString>#czech_vehicles:Skoda_16_ADH_140</userString>
@@ -506,8 +506,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</Skoda_16_ADH_140>
 		<Skoda_16_ADH_140_F>
 			<userString>#czech_vehicles:Skoda_16_ADH_140_F</userString>
@@ -526,8 +526,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</Skoda_16_ADH_140_F>
 		<CKD_AXK_proto>
 			<userString>#czech_vehicles:CKD_AXK_proto</userString>
@@ -545,8 +545,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>338</rpm_min>
-			<rpm_max>2184</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2241</rpm_max>
 		</CKD_AXK_proto>
 		<CKD_AXK>
 			<userString>#czech_vehicles:CKD_AXK</userString>
@@ -565,8 +565,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>346</rpm_min>
-			<rpm_max>2160</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</CKD_AXK>
 		<CKD_AXK2>
 			<userString>#czech_vehicles:CKD_AXK2</userString>
@@ -584,8 +584,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</CKD_AXK2>
 		<Skoda_AHK_TST>
 			<userString>#czech_vehicles:Skoda_AHK_TST</userString>
@@ -593,8 +593,8 @@
 			<level>8</level>
 			<price>51700</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>800</power>
 			<weight>1000</weight>
 			<maxHealth>255</maxHealth>
@@ -604,8 +604,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>306</rpm_min>
-			<rpm_max>2280</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</Skoda_AHK_TST>
 		<V_55>
 			<userString>#czech_vehicles:V_55</userString>
@@ -613,8 +613,8 @@
 			<level>8</level>
 			<price>50000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1050</power>
 			<weight>940</weight>
 			<maxHealth>255</maxHealth>
@@ -624,8 +624,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>240</rpm_min>
-			<rpm_max>2480</rpm_max>
+			<rpm_min>375</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</V_55>
 		<DTN_10>
 			<userString>#czech_vehicles:DTN_10</userString>
@@ -633,8 +633,8 @@
 			<level>9</level>
 			<price>80000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>900</power>
 			<weight>1000</weight>
 			<maxHealth>255</maxHealth>
@@ -644,8 +644,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>280</rpm_min>
-			<rpm_max>2360</rpm_max>
+			<rpm_min>450</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</DTN_10>
 		<Skoda_16_AH_145>
 			<userString>#czech_vehicles:Skoda_16_AH_145</userString>
@@ -663,8 +663,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</Skoda_16_AH_145>
 		<Skoda_V16_AHK_2>
 			<userString>#czech_vehicles:Skoda_V16_AHK_2</userString>
@@ -682,16 +682,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</Skoda_V16_AHK_2>
 		<Skoda_AHK>
 			<userString>#czech_vehicles:Skoda_AHK</userString>
 			<tags>diesel</tags>
 			<level>10</level>
 			<price>110000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1000</power>
 			<weight>1700</weight>
 			<maxHealth>360</maxHealth>
@@ -701,8 +701,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</Skoda_AHK>
 		<Skoda_AHK_FL>
 			<userString>#czech_vehicles:Skoda_AHK</userString>
@@ -710,8 +710,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1000</power>
 			<weight>1700</weight>
 			<maxHealth>360</maxHealth>
@@ -721,8 +721,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</Skoda_AHK_FL>
 		<Praga_AXK>
 			<userString>#czech_vehicles:Praga_AXK</userString>
@@ -730,8 +730,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1000</power>
 			<weight>1700</weight>
 			<maxHealth>360</maxHealth>
@@ -741,8 +741,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</Praga_AXK>
 		<Praga_AXK_X16>
 			<userString>#czech_vehicles:Praga_AXK_X16</userString>
@@ -750,8 +750,8 @@
 			<level>9</level>
 			<price>90000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>800</power>
 			<weight>1700</weight>
 			<maxHealth>255</maxHealth>
@@ -761,8 +761,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</Praga_AXK_X16>
 		<CKD_AXL>
 			<userString>#czech_vehicles:CKD_AXL</userString>
@@ -770,8 +770,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>850</power>
 			<weight>1770</weight>
 			<maxHealth>360</maxHealth>
@@ -781,8 +781,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>293</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>475</rpm_min>
+			<rpm_max>1950</rpm_max>
 		</CKD_AXL>
 		<CKD_AXL_CN>
 			<userString>#czech_vehicles:CKD_AXL_CN</userString>
@@ -790,8 +790,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>850</power>
 			<weight>1770</weight>
 			<maxHealth>360</maxHealth>
@@ -801,8 +801,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>293</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>475</rpm_min>
+			<rpm_max>1950</rpm_max>
 		</CKD_AXL_CN>
 		<Skoda_16_AH_145_A>
 			<userString>#czech_vehicles:Skoda_16_AH_145_A</userString>
@@ -810,8 +810,8 @@
 			<level>8</level>
 			<price>70000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>900</power>
 			<weight>1400</weight>
 			<maxHealth>320</maxHealth>
@@ -821,8 +821,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>280</rpm_min>
-			<rpm_max>2360</rpm_max>
+			<rpm_min>450</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</Skoda_16_AH_145_A>
 		<V_12_6>
 			<userString>#czech_vehicles:V_12_6</userString>
@@ -841,8 +841,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>344</rpm_min>
-			<rpm_max>2168</rpm_max>
+			<rpm_min>339</rpm_min>
+			<rpm_max>2180</rpm_max>
 		</V_12_6>
 		<V_12_F>
 			<userString>#czech_vehicles:V_12_F</userString>
@@ -850,8 +850,8 @@
 			<level>9</level>
 			<price>80000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>690</power>
 			<weight>1000</weight>
 			<maxHealth>255</maxHealth>
@@ -861,8 +861,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>296</rpm_min>
-			<rpm_max>2312</rpm_max>
+			<rpm_min>480</rpm_min>
+			<rpm_max>1940</rpm_max>
 		</V_12_F>
 		<GravEngine>
 			<userString>#czech_vehicles:GravEngine</userString>
@@ -870,8 +870,8 @@
 			<level>1</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>2000</power>
 			<weight>1000</weight>
 			<maxHealth>30000</maxHealth>
@@ -881,8 +881,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>200</rpm_min>
-			<rpm_max>2600</rpm_max>
+			<rpm_min>300</rpm_min>
+			<rpm_max>2300</rpm_max>
 		</GravEngine>
 		<PepelacEngine>
 			<userString>#czech_vehicles:PepelacEngine</userString>
@@ -890,8 +890,8 @@
 			<level>1</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>2200</power>
 			<weight>1000</weight>
 			<maxHealth>30000</maxHealth>
@@ -901,8 +901,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>200</rpm_min>
-			<rpm_max>2600</rpm_max>
+			<rpm_min>300</rpm_min>
+			<rpm_max>2300</rpm_max>
 		</PepelacEngine>
 		<Development_Engine>
 			<userString>Development Engine</userString>
@@ -910,8 +910,8 @@
 			<level>5</level>
 			<notInShop>true</notInShop>
 			<price>1</price>
-			<wwsoundPC>eng_cadillac_series_42_pc</wwsoundPC>
-			<wwsoundNPC>eng_cadillac_series_42_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>2200</power>
 			<weight>1000</weight>
 			<maxHealth>9000</maxHealth>
@@ -921,8 +921,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>3000</rpm_max>
+			<rpm_min>300</rpm_min>
+			<rpm_max>2300</rpm_max>
 		</Development_Engine>
 	</shared>
 </root>

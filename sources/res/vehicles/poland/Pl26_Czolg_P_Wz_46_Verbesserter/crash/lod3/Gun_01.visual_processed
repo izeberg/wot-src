@@ -51,14 +51,14 @@
 						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000201 -0.001380 2.371188</groupOrigin>
+				<groupOrigin>-0.000199 -0.008220 2.390125</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.423298 -0.292945 -1.252443</min>
-		<max>0.422895 0.290185 5.994818</max>
+		<min>-0.423295 -0.299785 -1.233506</min>
+		<max>0.422897 0.283344 6.013755</max>
 	</boundingBox>
-	<geometrySize>48600</geometrySize>
+	<geometrySize>48408</geometrySize>
 	<minUVDensity>0.001838</minUVDensity>
 </root>

@@ -202,6 +202,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_firesmoke_long.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/14_siegfried_line_smoke_thin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/83_kharkiv_fire_gasoline_02_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_bld_AM_035_SmallShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
@@ -312,16 +313,28 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_bomb_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_bomb_explosion_tracers.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_fire_explosion_subemitter.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_fire_window.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_fire_window_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_fire_window_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_fire_window_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_smoke_firegrass_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_nom_smoke_firegrass_slow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/108_normandy_smoke_subemitter.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_bc_airplane_hit_building.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_bc_bunker150mm_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_bc_planecrash_plane_attack.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_bc_wall_debris_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_bc_wall_debris_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_line_nom_firesmoke_long_lite.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_line_nom_machinegun_hit_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_line_nom_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_line_nom_smoke_long.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_line_smoke_trail_dense.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_nom_planecrash_firetrail.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Onboarding/14_siegfried_nom_planecrash_plane_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/se20_attack_airplane_bf109g.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/se20_attack_airplane_yak3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_birch_fall_big.vfx</fn_effect_bin>
@@ -360,8 +373,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_EU_227_VHouse_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/07_lakeville_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/99_poland_smoke_FireGrass_01.eff</fn_effect_bin>
@@ -474,19 +487,28 @@
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_town_bench_des.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_fire_window_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_nom_fire_window_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_smoke_firegrass_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_smoke_firegrass_slow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_firesmoke_long_lite.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_bc_planecrash_plane_attack.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_bc_wall_debris_dust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_bc_wall_debris_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/14_siegfried_line_nom_firesmoke_long_lite.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_firesmoke_long_lite.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_line_nom_machinegun_hit_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_planecrash_groundfire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/14_siegfried_line_nom_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_smoke_long.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_line_smoke_trail_dense.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_nom_planecrash_firetrail.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_nom_planecrash_plane_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_planecrash_groundfire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/scenarios/se20_attack_airplane_bf109g.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/scenarios/se20_attack_airplane_yak3.eff</fn_effect_bin>
@@ -740,6 +762,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_firesmoke_long.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/14_siegfried_line_smoke_thin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/83_kharkiv_fire_gasoline_02_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/99_poland_smoke_FireGrass_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_bld_AM_035_SmallShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
@@ -850,16 +873,29 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_bomb_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_bomb_explosion_tracers.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_fire_explosion_subemitter.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_ground_trails_fat.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_fire_window.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_fire_window_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_fire_window_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_fire_window_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_smoke_firegrass_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_nom_smoke_firegrass_slow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/108_normandy_smoke_subemitter.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_bc_airplane_hit_building.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_bc_bunker150mm_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_bc_planecrash_plane_attack.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_bc_wall_debris_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_bc_wall_debris_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_line_nom_firesmoke_long_lite.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_line_nom_machinegun_hit_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_line_nom_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_line_nom_smoke_long.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_line_smoke_trail_dense.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_nom_planecrash_firetrail.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Onboarding/14_siegfried_nom_planecrash_plane_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/se20_attack_airplane_bf109g.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/se20_attack_airplane_yak3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_birch_fall_big.vfx</fn_effect_bin>
@@ -898,8 +934,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_EU_227_VHouse_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/07_lakeville_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/14_siegfried_line_smoke_thin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/99_poland_smoke_FireGrass_01.eff</fn_effect_bin>
@@ -1012,19 +1048,30 @@
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_town_bench_des.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_bomb_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_nom_fire_window.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_fire_window_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_fire_window_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/108_normandy_nom_fire_window_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/108_normandy_nom_smoke_firegrass_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/108_normandy_nom_smoke_firegrass_slow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_firesmoke_long_lite.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/onboarding/14_siegfried_bc_airplane_hit_building.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/onboarding/14_siegfried_bc_bunker150mm_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_bc_planecrash_plane_attack.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_bc_wall_debris_dust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_bc_wall_debris_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/14_siegfried_line_nom_firesmoke_long_lite.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_firesmoke_long_lite.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_line_nom_machinegun_hit_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_planecrash_groundfire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/onboarding/14_siegfried_line_nom_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_line_nom_smoke_long.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_line_smoke_trail_dense.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_nom_planecrash_firetrail.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Onboarding/14_siegfried_nom_planecrash_plane_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/Onboarding/14_siegfried_planecrash_groundfire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/scenarios/se20_attack_airplane_bf109g.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/scenarios/se20_attack_airplane_yak3.eff</fn_effect_bin>

@@ -3247,6 +3247,10 @@ package
       
       public static const PREMIUMQUESTS_HEADER_DEFAULT:String = "#quests:premiumQuests/header/default";
       
+      public static const WEEKLYQUEST_HEADER_DEFAULT:String = "#quests:weeklyQuest/header/default";
+      
+      public static const WEEKLYQUEST_DESCRIPTION_DEFAULT:String = "#quests:weeklyQuest/description/default";
+      
       public static const DAILYQUESTS_HEADER_WINBACK:String = "#quests:dailyQuests/header/winback";
       
       public static const PREMIUMQUESTS_HEADER_WINBACK:String = "#quests:premiumQuests/header/winback";
@@ -3254,6 +3258,28 @@ package
       public static const DAILYQUESTS_TAB_LABEL:String = "#quests:dailyQuests/tab/label";
       
       public static const PREMIUMQUESTS_TAB_LABEL:String = "#quests:premiumQuests/tab/label";
+      
+      public static const DAILYQUESTS_TAB_DISABLED_TITLE:String = "#quests:dailyQuests/tab/disabled/title";
+      
+      public static const PREMIUMQUESTS_TAB_DISABLED_TITLE:String = "#quests:premiumQuests/tab/disabled/title";
+      
+      public static const DAILYQUESTS_TAB_DISABLED_REASON:String = "#quests:dailyQuests/tab/disabled/reason";
+      
+      public static const PREMIUMQUESTS_TAB_DISABLED_NOPREM:String = "#quests:premiumQuests/tab/disabled/noPrem";
+      
+      public static const DAILYQUESTS_TAB_COMPLETED:String = "#quests:dailyQuests/tab/completed";
+      
+      public static const DAILYQUESTS_TAB_PROGRESS:String = "#quests:dailyQuests/tab/progress";
+      
+      public static const DAILYQUESTS_TAB_BULL:String = "#quests:dailyQuests/tab/bull";
+      
+      public static const DAILYQUESTS_TAB_HIDDENBATTLETYPES:String = "#quests:dailyQuests/tab/hiddenBattleTypes";
+      
+      public static const DAILYQUESTS_TAB_CATHEGORY_TOOLTIP_DAILY_HEADER:String = "#quests:dailyQuests/tab/cathegory/tooltip/daily/header";
+      
+      public static const DAILYQUESTS_TAB_CATHEGORY_TOOLTIP_DAILY_BODY:String = "#quests:dailyQuests/tab/cathegory/tooltip/daily/body";
+      
+      public static const PLAYSTREAK_TAB_LABEL:String = "#quests:playStreak/tab/label";
       
       public static const DAILYQUESTS_BODY_REROLL:String = "#quests:dailyQuests/body/reroll";
       
@@ -3277,6 +3303,8 @@ package
       
       public static const PREMIUMQUESTS_NOTPREMIUMACCOUNT_PARAGRAPH:String = "#quests:premiumQuests/notPremiumAccount/paragraph";
       
+      public static const PREMIUMQUESTS_NOTPREMIUMACCOUNT_PARAGRAPHSMALL:String = "#quests:premiumQuests/notPremiumAccount/paragraphSmall";
+      
       public static const PREMIUMQUESTS_NOTPREMIUMACCOUNT_BUTTON:String = "#quests:premiumQuests/notPremiumAccount/button";
       
       public static const PREMIUMQUESTS_COUNTDOWN_TITLE:String = "#quests:premiumQuests/countDown/title";
@@ -3284,6 +3312,12 @@ package
       public static const PREMIUMQUESTS_COUNTDOWN_REMAININGTEXT:String = "#quests:premiumQuests/countDown/remainingText";
       
       public static const DAILYQUESTS_COUNTDOWN_TITLE:String = "#quests:dailyQuests/countDown/title";
+      
+      public static const DAILYQUESTS_LOCKED_TITLE:String = "#quests:dailyQuests/locked/title";
+      
+      public static const DAILYQUESTS_COMPLETED_TITLE:String = "#quests:dailyQuests/completed/title";
+      
+      public static const EPICQUEST_COUNTDOWN_REMAININGTEXT:String = "#quests:epicQuest/countDown/remainingText";
       
       public static const DAILYQUESTS_COUNTDOWN_REMAININGTEXT:String = "#quests:dailyQuests/countDown/remainingText";
       
@@ -3312,6 +3346,14 @@ package
       public static const DAILYQUESTS_POSTBATTLE_GENERICTITLE_BONUS:String = "#quests:dailyQuests/postBattle/genericTitle_bonus";
       
       public static const DAILYQUESTS_POSTBATTLE_GENERICTITLE_EPIC:String = "#quests:dailyQuests/postBattle/genericTitle_epic";
+      
+      public static const DAILYQUESTS_POSTBATTLE_EPIC_CONDITION_PROGRESS:String = "#quests:dailyQuests/postBattle/epic_condition_progress";
+      
+      public static const DAILYQUESTS_POSTBATTLE_GENERICTITLE_EASY_PREMIUM:String = "#quests:dailyQuests/postBattle/genericTitle_easy_premium";
+      
+      public static const DAILYQUESTS_POSTBATTLE_GENERICTITLE_MEDIUM_PREMIUM:String = "#quests:dailyQuests/postBattle/genericTitle_medium_premium";
+      
+      public static const DAILYQUESTS_POSTBATTLE_GENERICTITLE_HARD_PREMIUM:String = "#quests:dailyQuests/postBattle/genericTitle_hard_premium";
       
       public static const DAILYQUESTS_BONUSQUEST_BONUSMISSIONTITLE:String = "#quests:dailyQuests/bonusQuest/bonusMissionTitle";
       
@@ -3356,6 +3398,22 @@ package
       public static const DAILYQUESTS_TAKEREWARDSBUTTON_TOOLTIP:String = "#quests:dailyQuests/takeRewardsButton/tooltip";
       
       public static const DAILYQUESTS_TAKEREWARDSBUTTON_TOOLTIPDISABLE:String = "#quests:dailyQuests/takeRewardsButton/tooltipDisable";
+      
+      public static const WEEKLYQUEST_COUNTDOWN_TOOLTIP_HEADER:String = "#quests:weeklyQuest/countDown/tooltip/header";
+      
+      public static const WEEKLYQUEST_COUNTDOWN_TOOLTIP_BODY:String = "#quests:weeklyQuest/countDown/tooltip/body";
+      
+      public static const DAILYQUESTS_COUNTDOWN_TOOLTIP_HEADER:String = "#quests:dailyQuests/countDown/tooltip/header";
+      
+      public static const DAILYQUESTS_COUNTDOWN_TOOLTIP_BODY:String = "#quests:dailyQuests/countDown/tooltip/body";
+      
+      public static const DAILYQUESTS_PREMIUM_LOCKED_TOOLTIP_HEADER:String = "#quests:dailyQuests/premium/locked/tooltip/header";
+      
+      public static const DAILYQUESTS_PREMIUM_LOCKED_TOOLTIP_BODY:String = "#quests:dailyQuests/premium/locked/tooltip/body";
+      
+      public static const DAILYQUESTS_BONUS_LOCKED_TOOLTIP_HEADER:String = "#quests:dailyQuests/bonus/locked/tooltip/header";
+      
+      public static const DAILYQUESTS_BONUS_LOCKED_TOOLTIP_BODY:String = "#quests:dailyQuests/bonus/locked/tooltip/body";
       
       public static const INFOPAGE_HEADER_DEFAULT:String = "#quests:infoPage/header/default";
       
@@ -3467,6 +3525,8 @@ package
       
       public static const DAILYQUESTS_CONDITION_DESTROYVEH_PLURAL_ACCUM:String = "#quests:dailyQuests/condition/destroyVeh_plural_accum";
       
+      public static const DAILYQUESTS_CONDITION_SPOTVEH_FEW_ACCUM:String = "#quests:dailyQuests/condition/spotVeh_few_accum";
+      
       public static const DETAILS_CONDITIONS_CUMULATIVE_DAMAGEDHP:String = "#quests:details/conditions/cumulative/damagedHp";
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_COMP7PRESTIGEPOINTS:String = "#quests:details/conditions/cumulative/comp7PrestigePoints";
@@ -3480,6 +3540,114 @@ package
       public static const DEBUTBOXES_MISSIONS_HEADER_DISABLED:String = "#quests:debutBoxes/missions/header/disabled";
       
       public static const DEBUTBOXES_MISSIONS_HEADER_INFO:String = "#quests:debutBoxes/missions/header/info";
+      
+      public static const WEEKLYQUEST_REWARDSCREEN_HEADER:String = "#quests:weeklyQuest/rewardScreen/header";
+      
+      public static const WEEKLYQUEST_REWARDSCREEN_SUBHEADER:String = "#quests:weeklyQuest/rewardScreen/subheader";
+      
+      public static const WEEKLYQUEST_REWARDSCREEN_CLOSE:String = "#quests:weeklyQuest/rewardScreen/close";
+      
+      public static const WEEKLYQUEST_REWARDSCREEN_CONFIRM:String = "#quests:weeklyQuest/rewardScreen/confirm";
+      
+      public static const DAILYWIDGET_PROGRESS:String = "#quests:dailyWidget/progress";
+      
+      public static const DAILYWIDGET_TOOLTIP_HEADER_DAILY:String = "#quests:dailyWidget/tooltip/header/daily";
+      
+      public static const DAILYWIDGET_TOOLTIP_HEADER_PREMIUM:String = "#quests:dailyWidget/tooltip/header/premium";
+      
+      public static const DAILYWIDGET_TOOLTIP_HEADER_BONUS:String = "#quests:dailyWidget/tooltip/header/bonus";
+      
+      public static const DAILYWIDGET_TOOLTIP_HEADER_EPIC:String = "#quests:dailyWidget/tooltip/header/epic";
+      
+      public static const DAILYWIDGET_TOOLTIP_TIMER:String = "#quests:dailyWidget/tooltip/timer";
+      
+      public static const DAILYWIDGET_TOOLTIP_HIDEQUESTS:String = "#quests:dailyWidget/tooltip/hideQuests";
+      
+      public static const DAILYWIDGET_TOOLTIP_COMPLETED:String = "#quests:dailyWidget/tooltip/completed";
+      
+      public static const DAILYWIDGET_TOOLTIP_NOTAVAILABLE_HEADER:String = "#quests:dailyWidget/tooltip/notAvailable/header";
+      
+      public static const DAILYWIDGET_TOOLTIP_NOTAVAILABLE_DESCRIPTION:String = "#quests:dailyWidget/tooltip/notAvailable/description";
+      
+      public static const DAILYWIDGET_TOOLTIP_HIDDENREWARDS:String = "#quests:dailyWidget/tooltip/hiddenRewards";
+      
+      public static const INTROSCREEN_TITLE:String = "#quests:introScreen/title";
+      
+      public static const INTROSCREEN_SUBTITLE:String = "#quests:introScreen/subtitle";
+      
+      public static const INTROSCREEN_SUBTITLEDAILYQUESTSONLY:String = "#quests:introScreen/subtitleDailyQuestsOnly";
+      
+      public static const INTROSCREEN_INPUTSERIES_HEADER:String = "#quests:introScreen/inputSeries/header";
+      
+      public static const INTROSCREEN_INPUTSERIES_DESCRIPTION:String = "#quests:introScreen/inputSeries/description";
+      
+      public static const INTROSCREEN_DAILYQUESTS_HEADER:String = "#quests:introScreen/dailyQuests/header";
+      
+      public static const INTROSCREEN_DAILYQUESTS_DESCRIPTION:String = "#quests:introScreen/dailyQuests/description";
+      
+      public static const INTROSCREEN_CONFIRM:String = "#quests:introScreen/confirm";
+      
+      public static const INTROSCREEN_CLOSE:String = "#quests:introScreen/close";
+      
+      public static const DAILYREROLL_TITLE:String = "#quests:dailyReroll/title";
+      
+      public static const DAILYREROLL_SUBTITLE:String = "#quests:dailyReroll/subtitle";
+      
+      public static const DAILYREROLL_SUBTITLEPREMIUM:String = "#quests:dailyReroll/subtitlePremium";
+      
+      public static const DAILYREROLL_SUBTITLE_ALERT:String = "#quests:dailyReroll/subtitle_alert";
+      
+      public static const DAILYREROLL_CONDITION:String = "#quests:dailyReroll/condition";
+      
+      public static const DAILYREROLL_REPLACE:String = "#quests:dailyReroll/replace";
+      
+      public static const DAILYREROLL_CANCEL:String = "#quests:dailyReroll/cancel";
+      
+      public static const DAILYREROLL_CLOSE:String = "#quests:dailyReroll/close";
+      
+      public static const DAILYREROLL_TOOLTIP_USUAL:String = "#quests:dailyReroll/tooltip/usual";
+      
+      public static const DAILYREROLL_TOOLTIP_PREMIUM:String = "#quests:dailyReroll/tooltip/premium";
+      
+      public static const DAILYREROLL_TOOLTIP_HEADER_TITLE:String = "#quests:dailyReroll/tooltip/header/title";
+      
+      public static const DAILYREROLL_TOOLTIP_HEADER_NOACCESS:String = "#quests:dailyReroll/tooltip/header/noAccess";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_AVAILABLE:String = "#quests:dailyReroll/tooltip/body/available";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_TIMEUPDATE:String = "#quests:dailyReroll/tooltip/body/timeUpdate";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_TIMETEXT:String = "#quests:dailyReroll/tooltip/body/timeText";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_CANTREROLL:String = "#quests:dailyReroll/tooltip/body/cantReroll";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_AFTERUPDATE:String = "#quests:dailyReroll/tooltip/body/afterUpdate";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_AFTERUPDATEPREMIUM:String = "#quests:dailyReroll/tooltip/body/afterUpdatePremium";
+      
+      public static const REWARD_TOOLTIP_ADDITIONREWARD:String = "#quests:reward/tooltip/additionReward";
+      
+      public static const REWARD_TOOLTIP_NOADDITIONREWARD:String = "#quests:reward/tooltip/noAdditionReward";
+      
+      public static const REWARD_TOOLTIP_SIMPLEBODY:String = "#quests:reward/tooltip/simpleBody";
+      
+      public static const REWARD_TOOLTIP_TITLE:String = "#quests:reward/tooltip/title";
+      
+      public static const REWARD_TOOLTIP_CUSTOMBODY:String = "#quests:reward/tooltip/customBody";
+      
+      public static const DAILYREROLL_TOOLTIP_BODY_ISENABLEDREROLL:String = "#quests:dailyReroll/tooltip/body/isEnabledReroll";
+      
+      public static const MODESELECTOR_TOOLTIP_TITLE:String = "#quests:modeSelector/tooltip/title";
+      
+      public static const MODESELECTOR_TOOLTIP_TEXT:String = "#quests:modeSelector/tooltip/text";
+      
+      public static const SWITCH_ISDAILYPREMENABLED:String = "#quests:switch/isDailyPremEnabled";
+      
+      public static const SWITCH_ISDAILYREGULARENABLED:String = "#quests:switch/isDailyRegularEnabled";
+      
+      public static const SWITCH_ISWEEKLYENABLED:String = "#quests:switch/isWeeklyEnabled";
+      
+      public static const SWITCH_ISWEEKLYENABLEDTITLE:String = "#quests:switch/isWeeklyEnabledTitle";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

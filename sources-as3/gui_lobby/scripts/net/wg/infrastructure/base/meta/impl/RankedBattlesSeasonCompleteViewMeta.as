@@ -10,8 +10,6 @@ package net.wg.infrastructure.base.meta.impl
    {
        
       
-      public var showRating:Function;
-      
       public var closeView:Function;
       
       public var onSoundTrigger:Function;
@@ -38,12 +36,6 @@ package net.wg.infrastructure.base.meta.impl
             this._ribbonAwardsVO = null;
          }
          super.onDispose();
-      }
-      
-      public function showRatingS() : void
-      {
-         App.utils.asserter.assertNotNull(this.showRating,"showRating" + Errors.CANT_NULL);
-         this.showRating();
       }
       
       public function closeViewS() : void

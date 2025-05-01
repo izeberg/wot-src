@@ -278,6 +278,12 @@ msgstr "Рухаюся на пазіцыю!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Рухаюся ў %(gridId)s"
 
+msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
+msgstr "Выклікаю агонь на сябе!"
+
+msgid "chat_shortcuts/hb_ability/last_stand"
+msgstr "Б'емся да канца!"
+
 msgid "chat_shortcuts/help_me"
 msgstr "Патрэбна дапамога!"
 
@@ -673,6 +679,9 @@ msgstr "Пашкоджанні артылерыйскім абстрэлам"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Пашкоджанні гарматай"
 
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Пашкоджанні ад забароненай зоны"
+
 msgid "efficiencyRibbons/armor"
 msgstr "Блакіраванне пашкоджанняў"
 
@@ -741,6 +750,9 @@ msgstr "Цэль абаронена"
 
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захоплена"
+
+msgid "efficiencyRibbons/eventDeathOnPhaseChange"
+msgstr "Машына знішчана"
 
 msgid "efficiencyRibbons/kill"
 msgstr "Знішчыў"
@@ -863,7 +875,7 @@ msgid "flags/timer"
 msgstr "%(time)s з..."
 
 msgid "fortConsumables/timer/postfix"
-msgstr "з..."
+msgstr "c"
 
 msgid "helpScreen/hint/description"
 msgstr ", каб азнаёміцца з асаблівасцямі машыны"
@@ -1686,6 +1698,11 @@ msgid "postmortem/tips/exitHangar/text"
 msgstr ""
 "Esc > Вярнуцца ў Гараж.\n"
 "Уступіце ў новы бой на іншай машыне."
+
+msgid "postmortem/tips/exitHangar/text_hb"
+msgstr ""
+"Esc > Выйсці ў Гараж.\n"
+"Паспрабуйце свае сілы ў новым баі!"
 
 msgid "postmortem/tips/observerMode/label"
 msgstr "Рэжым назіральніка"
@@ -2999,7 +3016,7 @@ msgid "stun/indicator"
 msgstr "Аглушэнне экіпажу"
 
 msgid "stun/seconds"
-msgstr "с"
+msgstr "c"
 
 msgid "stunFlame/indicator"
 msgstr "Эфектыўнасць зніжана"

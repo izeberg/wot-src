@@ -40,51 +40,6 @@ def getBonusBattlesIncome(resRoot, stepsCount, efficiencyCount, isStepsDaily):
     return ''
 
 
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def getRankedBattlesSeasonRatingUrl(lobbyContext=None, spaID=None):
-    url = lobbyContext.getServerSettings().rankedBattles.seasonRatingPageUrl
-    params = SEASON_RATING_PARAM.format(spaID)
-    if spaID is not None:
-        return url + params
-    else:
-        return url
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def getRankedBattlesInfoPageUrl(lobbyContext=None):
-    return lobbyContext.getServerSettings().rankedBattles.infoPageUrl
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def getRankedBattlesIntroPageUrl(lobbyContext=None):
-    return lobbyContext.getServerSettings().rankedBattles.introPageUrl
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def getRankedBattlesSeasonGapUrl(lobbyContext=None):
-    return lobbyContext.getServerSettings().rankedBattles.seasonGapPageUrl
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def getRankedBattlesYearRatingUrl(lobbyContext=None, isLobbySub=False):
-    url = lobbyContext.getServerSettings().rankedBattles.yearRatingPageUrl
-    params = LOBBY_SUB_LANDING_PARAM + str(isLobbySub).lower()
-    if url is not None:
-        return url + params
-    else:
-        return
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def getRankedBattlesShopUrl(lobbyContext=None, isLobbySub=False):
-    url = lobbyContext.getServerSettings().rankedBattles.shopPageUrl
-    params = LOBBY_SUB_LANDING_PARAM + str(isLobbySub).lower()
-    if url is not None:
-        return url + params
-    else:
-        return
-
-
 def isSeasonTokenQuest(questID):
     return questID.split('_')[(-1)] in (RankedTokenQuestPostfix.SPRINTER, RankedTokenQuestPostfix.COMMON)
 

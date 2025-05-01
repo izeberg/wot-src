@@ -2,17 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-2.1754 -0.00613521 -3.58505
-			<!--BW_String-->
-		</min>
-		<max>
-			2.1739 1.23662 3.62179
-			<!--BW_String-->
-		</max>
+		<min>-2.175400 -0.006135 -3.585050</min>
+		<max>2.173900 1.236620 3.621790</max>
 	</visibilityBox>
 	<parent>vehicles/american/A40_T95/_skins/A40_T95_SC_3DSt/crash/lod1/Chassis</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/american/A40_T95/_skins/A40_T95_SC_3DSt/crash/lod0/Chassis</nodefullVisual>
 </root>

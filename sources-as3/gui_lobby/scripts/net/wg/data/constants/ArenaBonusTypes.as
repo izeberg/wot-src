@@ -34,6 +34,8 @@ package net.wg.data.constants
       public static const EPIC_BATTLE:int = 27;
       
       public static const COMP7:int = 43;
+      
+      public static const TOURNAMENT_COMP7:int = 47;
        
       
       public function ArenaBonusTypes()

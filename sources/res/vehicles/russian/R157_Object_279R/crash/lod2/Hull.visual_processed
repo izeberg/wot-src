@@ -73,18 +73,6 @@
 				0
 				<material>
 					<identifier>tank_mat_inside</identifier>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
@@ -115,13 +103,9 @@
 				1
 				<material>
 					<identifier>tank_hull_01</identifier>
-					<mfm>materials/template_mfms/lightonly.mfm</mfm>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							4 4 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -152,15 +136,11 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.001473 0.184365 -0.116438</groupOrigin>
@@ -169,13 +149,9 @@
 				2
 				<material>
 					<identifier>tank_chassis_02</identifier>
-					<mfm>materials/template_mfms/lightonly.mfm</mfm>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							2 2 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -206,15 +182,11 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.004710 -0.262131 -0.021569</groupOrigin>

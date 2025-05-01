@@ -4,4 +4,8 @@
 		<damagedState>false</damagedState>
 	</havok>
 	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/normal/lod4/hd_mle_UNI_009_BoxCamouflage</nodefullVisual>
+	<visibilityBox>
+		<min>-2.266205 -0.013854 -2.157786</min>
+		<max>1.799834 2.076922 2.414658</max>
+	</visibilityBox>
 </root>

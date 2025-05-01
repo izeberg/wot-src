@@ -97,7 +97,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_crash_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.306488 8.177176 1.516335</groupOrigin>
+				<groupOrigin>-1.306489 8.177176 1.516336</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -225,7 +225,7 @@
 						<Texture>content/Buildings/00_Decals/Decals_Edge_02_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.732091 8.276423 1.509807</groupOrigin>
+				<groupOrigin>-1.732090 8.276423 1.509809</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				5
@@ -385,7 +385,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.702627 15.448624 1.494398</groupOrigin>
+				<groupOrigin>-1.702627 15.448626 1.494401</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				7
@@ -476,10 +476,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-11.743330 -0.661351 -27.574081</min>
-		<max>8.518136 17.983236 30.521545</max>
+		<min>-11.743330 -0.657292 -27.574081</min>
+		<max>8.518136 17.983236 30.521547</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>2382992</geometrySize>
+	<geometrySize>2388272</geometrySize>
 	<minUVDensity>0.002252</minUVDensity>
 </root>

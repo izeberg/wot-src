@@ -83,9 +83,27 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVehicleAppearanceGameObject</class>
-				<id>GetVehicleAppearanceGameObject_1</id>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
 				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -93,6 +111,40 @@
 				<id>If_1</id>
 				<params/>
 				<slots/>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_1</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FrameEvent</class>
+				<id>FrameEvent_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>cooldown</name>
+						<const>\0.500000\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetComponentProperty</class>
@@ -105,17 +157,6 @@
 					</param>
 				</params>
 				<slots/>
-			</block>
-			<block>
-				<class>FrameEvent</class>
-				<id>FrameEvent_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>cooldown</name>
-						<const>\0.500000\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -171,11 +212,17 @@
 				</slots>
 			</block>
 			<block>
-				<class>ArenaPeriod</class>
-				<id>ArenaPeriod_1</id>
+				<class>GetVehicleAppearanceGameObject</class>
+				<id>GetVehicleAppearanceGameObject_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_2</id>
 				<params>
 					<param>
-						Battle
+						Afterbattle
 						<name>Period</name>
 						<type>EArenaPeriodT</type>
 					</param>
@@ -208,10 +255,16 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleAppearanceGameObject_1</to>
-				<output>value</output>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_1</from>
+				<input>value</input>
+				<to>If_2</to>
+				<output>isActive</output>
 			</connection>
 			<connection>
 				<from>GetComponentProperty_1</from>
@@ -226,6 +279,30 @@
 				<output>greater</output>
 			</connection>
 			<connection>
+				<from>If_2</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_1</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_2</from>
+				<input>false</input>
+				<to>LogicGate_1</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>LogicGate_1</from>
+				<input>active</input>
+				<to>FrameEvent_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>FrameEvent_1</from>
 				<input>in</input>
 				<to>GetComponentProperty_1</to>
@@ -236,12 +313,6 @@
 				<input>gameObject</input>
 				<to>GetComponentProperty_1</to>
 				<output>appearanceObject</output>
-			</connection>
-			<connection>
-				<from>ArenaPeriod_1</from>
-				<input>active</input>
-				<to>FrameEvent_1</to>
-				<output>isActive</output>
 			</connection>
 			<connection>
 				<from>If_1</from>
@@ -272,6 +343,12 @@
 				<input>gameObject</input>
 				<to>FindFirstNode_1</to>
 				<output>parent</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleAppearanceGameObject_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>

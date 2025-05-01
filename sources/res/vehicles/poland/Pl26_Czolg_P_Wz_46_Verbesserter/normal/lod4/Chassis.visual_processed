@@ -1296,10 +1296,6 @@
 						<Int>64</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
@@ -1348,10 +1344,6 @@
 					<property>
 						alphaReference
 						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						colorIdMap

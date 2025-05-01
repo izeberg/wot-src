@@ -10,8 +10,6 @@ package net.wg.infrastructure.base.meta
       
       function setSeasonS(param1:String) : void;
       
-      function showPlayersStatsS() : void;
-      
       function as_updatePlayerStatsBtn(param1:Boolean) : void;
    }
 }

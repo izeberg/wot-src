@@ -1,17 +1,17 @@
-import logging, BigWorld, AccountCommands, wg_async
-from helpers import dependency, time_utils
-from skeletons.gui.server_events import IEventsCache
-from gui.shared.utils.requesters import REQ_CRITERIA
-from gui.shared.gui_items.processors.plugins import SyncValidator, makeSuccess, makeError
-from gui.shared.gui_items.processors.plugins import AwaitConfirmator
-from gui.shared.gui_items.processors import Processor, makeI18nError, makeI18nSuccess
-from gui.server_events.events_helpers import isRerollEnabled, getRerollTimeout
-from gui.impl import backport
-from gui.impl.dialogs import dialogs
+import logging
+from functools import partial
+import BigWorld, AccountCommands
+from gui.Scaleform.Waiting import Waiting
 from gui.impl.gen import R
-from gui.impl.dialogs.builders import WarningDialogBuilder, ResSimpleDialogBuilder
-from gui.impl.wrappers.user_format_string_arg_model import UserFormatStringArgModel as FmtArgs
+from gui.server_events.events_helpers import isPremiumPlusAccount
+from gui.server_events.events_helpers import isRerollEnabled
+from gui.shared.event_dispatcher import showDailyQuestsConfirmDialog
+from gui.shared.gui_items.processors import Processor, makeSimpleTextSuccess, makeSimpleTextError
+from gui.shared.gui_items.processors.plugins import SyncValidator, makeSuccess, makeError, MessageConfirmator
+from helpers import dependency
+from skeletons.gui.server_events import IEventsCache
 _logger = logging.getLogger(__name__)
+_SYS_MESSAGE_DQ_R = R.strings.system_messages.daily_quests
 
 class DQRerollEnabledValidator(SyncValidator):
 
@@ -25,80 +25,87 @@ class DQRerollCooldown(SyncValidator):
     eventsCache = dependency.descriptor(IEventsCache)
 
     def _validate(self):
-        naxtRerollAvailableTimestamp = self.eventsCache.dailyQuests.getNextAvailableRerollTimestamp()
-        if naxtRerollAvailableTimestamp > time_utils.getCurrentLocalServerTimestamp():
+        if self.eventsCache.dailyQuests.isRerollInCooldown():
             return makeError('reroll_in_cooldown')
         return makeSuccess()
 
 
-class DQNotCompletedValidator(SyncValidator):
-
-    def __init__(self, quest, isEnabled=True):
-        super(DQNotCompletedValidator, self).__init__(isEnabled)
-        self.__quest = quest
+class DQRerollCooldownPrem(SyncValidator):
+    eventsCache = dependency.descriptor(IEventsCache)
 
     def _validate(self):
-        if self.__quest.isCompleted():
+        if self.eventsCache.dailyQuests.isRerollInCooldownPrem():
+            return makeError('reroll_in_cooldown')
+        return makeSuccess()
+
+
+class DQPremiumAccount(SyncValidator):
+    eventsCache = dependency.descriptor(IEventsCache)
+
+    def _validate(self):
+        if not isPremiumPlusAccount():
+            return makeError()
+        return makeSuccess()
+
+
+class DQNotCompletedValidator(SyncValidator):
+    eventsCache = dependency.descriptor(IEventsCache)
+
+    def __init__(self, levels, isEnabled=True):
+        super(DQNotCompletedValidator, self).__init__(isEnabled)
+        self.__levels = levels
+
+    def _validate(self):
+        if all(quest.isCompleted() for quest in self.eventsCache.getDailyQuests(filterLevels=self.__levels).itervalues()):
             return makeError('quest_is_already_completed')
         return makeSuccess()
 
 
-class DQRerollConfirmator(AwaitConfirmator):
+class DQRerollConfirmator(MessageConfirmator):
 
-    @wg_async.wg_async
-    def _confirm(self, callback):
-        criteria = REQ_CRITERIA.IN_OWNERSHIP | REQ_CRITERIA.VEHICLE.IS_IN_BATTLE
-        numTanksInBattle = len(self.itemsCache.items.getVehicles(criteria=criteria))
-        rerollTimeoutHours = int(getRerollTimeout() / time_utils.ONE_MINUTE / time_utils.MINUTES_IN_HOUR)
-        rerollTimeoutMins = int(getRerollTimeout() % (time_utils.ONE_MINUTE * time_utils.MINUTES_IN_HOUR) / time_utils.ONE_MINUTE)
-        if rerollTimeoutHours > 0:
-            if rerollTimeoutMins > 0:
-                timeLimitMsg = backport.text(R.strings.dialogs.dailyQuests.dialogConfirmReroll.timeLimitMsgHoursMins(), hours=str(rerollTimeoutHours), mins=str(rerollTimeoutMins))
-            else:
-                timeLimitMsg = backport.text(R.strings.dialogs.dailyQuests.dialogConfirmReroll.timeLimitMsgHours(), hours=str(rerollTimeoutHours))
-        else:
-            timeLimitMsg = backport.text(R.strings.dialogs.dailyQuests.dialogConfirmReroll.timeLimitMsgMins(), mins=str(rerollTimeoutMins))
-        if numTanksInBattle > 0:
-            dialogParams = R.strings.dialogs.dailyQuests.dialogWarningConfirmReroll
-            warningString = backport.text(R.strings.dialogs.dailyQuests.dialogWarningConfirmReroll.warning())
-            builder = WarningDialogBuilder()
-            builder.setMessagesAndButtons(dialogParams)
-            builder.setMessageArgs(fmtArgs=[
-             FmtArgs(warningString, 'warning', R.styles.NeutralTextBigStyle()),
-             FmtArgs(timeLimitMsg, 'timeLimitMsg', R.styles.NeutralTextBigStyle())])
-        else:
-            dialogParams = R.strings.dialogs.dailyQuests.dialogInfoConfirmReroll
-            builder = ResSimpleDialogBuilder()
-            builder.setMessagesAndButtons(dialogParams)
-            builder.setMessageArgs(fmtArgs=[
-             FmtArgs(timeLimitMsg, 'timeLimitMsg', R.styles.NeutralTextBigStyle())])
-        result = yield wg_async.wg_await(dialogs.showSimple(builder.build()))
-        callback(makeSuccess() if result else makeError())
+    def __init__(self, rerollPremium):
+        super(DQRerollConfirmator, self).__init__(None)
+        self.__rerollPremium = rerollPremium
+        return
+
+    def _gfMakeMeta(self):
+        return partial(showDailyQuestsConfirmDialog, self.__rerollPremium)
 
 
 class DailyQuestReroll(Processor):
     eventsCache = dependency.descriptor(IEventsCache)
+    __WAITING_TEXT = 'dailyQuests/waitReroll'
 
-    def __init__(self, quest):
+    def __init__(self, levels, rerollPremium):
         super(DailyQuestReroll, self).__init__(plugins=(
+         DQRerollCooldown(isEnabled=not rerollPremium),
+         DQRerollCooldownPrem(isEnabled=rerollPremium),
+         DQPremiumAccount(isEnabled=rerollPremium),
+         DQNotCompletedValidator(levels),
          DQRerollEnabledValidator(),
-         DQRerollCooldown(),
-         DQNotCompletedValidator(quest),
-         DQRerollConfirmator()))
-        self._quest = quest
+         DQRerollConfirmator(rerollPremium)))
+        self._questsLevel = levels
         self._callback = None
+        self._rerollPremium = rerollPremium
         return
 
     def _errorHandler(self, code, errStr='', ctx=None):
-        return makeI18nError('daily_quests/reroll/%s' % errStr, defaultSysMsgKey='daily_quests/reroll/unknown_error')
+        Waiting.hide(self.__WAITING_TEXT)
+        if self._rerollPremium:
+            return makeSimpleTextError(_SYS_MESSAGE_DQ_R.premium.reroll.dyn(errStr), defTextRes=_SYS_MESSAGE_DQ_R.premium.reroll.unknown_error)
+        return makeSimpleTextError(_SYS_MESSAGE_DQ_R.simple.reroll.dyn(errStr), defTextRes=_SYS_MESSAGE_DQ_R.simple.reroll.unknown_error)
 
     def _successHandler(self, code, ctx=None):
-        return makeI18nSuccess('daily_quests/reroll/success')
+        Waiting.hide(self.__WAITING_TEXT)
+        if self._rerollPremium:
+            return makeSimpleTextSuccess(_SYS_MESSAGE_DQ_R.premium.reroll.success)
+        return makeSimpleTextSuccess(_SYS_MESSAGE_DQ_R.simple.reroll.success)
 
     def _request(self, callback):
-        _logger.debug('Make server request to reroll quest: %s', self._quest)
+        Waiting.show(self.__WAITING_TEXT)
+        _logger.debug('Make server request to reroll quest: %s', self._questsLevel)
         self._startListeningForResponse(callback)
-        BigWorld.player().stats.rerollDailyQuest(self._quest.getID(), self._onRerolCmdResponseReceived)
+        BigWorld.player().stats.rerollDailyQuest(self._questsLevel, self._onRerolCmdResponseReceived)
 
     def _onRerolCmdResponseReceived(self, resID):
         if not AccountCommands.isCodeValid(resID):
@@ -114,8 +121,7 @@ class DailyQuestReroll(Processor):
         return
 
     def _onEventsSyncCompleted(self):
-        if self._quest.getID() not in self.eventsCache.getDailyQuests():
-            self.__response(AccountCommands.RES_SUCCESS)
+        self.__response(AccountCommands.RES_SUCCESS)
 
     def __response(self, resID):
         self._response(resID, self._callback or (lambda *args: None), errStr=self.__resID2ErrStr(resID))

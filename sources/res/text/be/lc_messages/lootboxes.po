@@ -407,6 +407,11 @@ msgstr "x{count}"
 msgid "multiOpenView/title"
 msgstr "Віншуем!"
 
+msgid "noBoxes/default"
+msgstr ""
+"Каб атрымаць кантэйнеры, бярыце ўдзел у пэўных падзеях і выконвайце звязаныя"
+" з імі баявыя задачы. Пэўныя кантэйнеры можна дакупіць у гульнявой Краме."
+
 msgid "notification/eventFinish/text"
 msgstr ""
 "Усе атрыманыя скрынкі будуць адкрыты. Змесціва будзе налічана на ваш акаўнт."
@@ -441,7 +446,7 @@ msgid "notification/lootBoxesAutoOpen/text"
 msgstr "Мы адкрылі за вас кантэйнеры і налічылі ўзнагароды"
 
 msgid "notification/lootBoxesAutoOpen/title"
-msgstr "Марсіянскі кантэйнер"
+msgstr "Адкрыццё кантэйнераў"
 
 msgid "notification/lootBoxesBuy/resume/body"
 msgstr "Продаж кантэйнераў адноўлены на ўсіх пляцоўках."
@@ -456,7 +461,7 @@ msgid "notification/lootBoxesIsDisabled/text"
 msgstr "Аперацыі са скрынкамі часова недаступныя: вядуцца тэхнічныя працы."
 
 msgid "notification/lootBoxesIsDisabled/title"
-msgstr "Марсіянскі кантэйнер"
+msgstr "Адкрыццё кантэйнераў"
 
 msgid "notification/lootBoxesIsEnabled/button"
 msgstr "Адкрыць"
@@ -465,7 +470,7 @@ msgid "notification/lootBoxesIsEnabled/text"
 msgstr "Аперацыі са скрынкамі зноў даступныя."
 
 msgid "notification/lootBoxesIsEnabled/title"
-msgstr "Марсіянскі кантэйнер"
+msgstr "Адкрыццё кантэйнераў"
 
 msgid "notification/lootBoxesReceived/invoice"
 msgstr "Налічана"
@@ -577,7 +582,7 @@ msgid "tooltip/restrictedMode"
 msgstr "Аперацыя часова недаступная. Паспрабуйце пазней."
 
 msgid "type/event_premium"
-msgstr "Марсіянскі кантэйнер"
+msgstr "Кантэйнер"
 
 msgid "userName/big_referral"
 msgstr "Вялікая каробка з забеспячэннем"

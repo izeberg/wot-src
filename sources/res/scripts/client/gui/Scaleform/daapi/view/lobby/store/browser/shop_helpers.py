@@ -157,3 +157,7 @@ def getCosmic2024ShopUrl():
 
 def getComp7ProductsUrl():
     return _getUrl('comp7Products')
+
+
+def getHB24CategoryUrl():
+    return _getUrl(urlName='HB24Category')

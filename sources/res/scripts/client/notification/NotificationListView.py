@@ -1,11 +1,14 @@
 import typing
 from debug_utils import LOG_ERROR
+from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.view.meta.NotificationsListMeta import NotificationsListMeta
 from gui.Scaleform.genConsts.NOTIFICATIONS_CONSTANTS import NOTIFICATIONS_CONSTANTS
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
 from gui.impl.gen import R
+from gui.impl.lobby.gf_notifications import GFNotificationInject
+from gui.shared import g_eventBus, EVENT_BUS_SCOPE, events
 from gui.shared.formatters import icons
 from gui.shared.notifications import NotificationGroup
 from helpers import dependency
@@ -39,6 +42,16 @@ class NotificationListView(NotificationsListMeta, BaseNotificationView):
         self.__currentGroup = NotificationGroup.ALL[groupIdx]
         self.__setNotificationList()
         self.__updateCounters()
+
+    def registerGFNotification(self, component, alias, gfViewName, isPopUp, linkageData):
+        from gui.Scaleform.framework import g_entitiesFactories
+        idx = WindowLayer.UNDEFINED
+        componentPy = g_entitiesFactories.initialize(GFNotificationInject(gfViewName, isPopUp, linkageData), component, idx)
+        self.components[alias] = componentPy
+        componentPy.setEnvironment(self.app)
+        componentPy.create()
+        g_eventBus.handleEvent(events.ComponentEvent(events.ComponentEvent.COMPONENT_REGISTERED, self, componentPy, alias), EVENT_BUS_SCOPE.GLOBAL)
+        self._onRegisterFlashComponent(componentPy, alias)
 
     def getMessageActualTime(self, msTime):
         return TimeFormatter.getActualMsgTimeStr(msTime)

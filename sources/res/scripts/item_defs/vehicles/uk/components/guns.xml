@@ -125,6 +125,7 @@
 		<_75mm_Gun_Mk_VB>125</_75mm_Gun_Mk_VB>
 		<QF_6_pounder_Mk_VM>126</QF_6_pounder_Mk_VM>
 		<_123mm_OQF_Mk_1_7x7>502</_123mm_OQF_Mk_1_7x7>
+		<_85mm_HV_L40_FL>503</_85mm_HV_L40_FL>
 		<_20pdr_Gun_Type_A_IGR>60001</_20pdr_Gun_Type_A_IGR>
 		<_20pdr_Gun_Type_B_IGR>60002</_20pdr_Gun_Type_B_IGR>
 		<_75mm_Gun_Vickers_HV_IGR>60003</_75mm_Gun_Vickers_HV_IGR>
@@ -7744,6 +7745,118 @@
 				</_L40_HE_Mk3>
 			</shots>
 		</_85mm_HV_L40>
+		<_85mm_HV_L40_FL>
+			<userString>#gb_vehicles:_85mm_HV_L40</userString>
+			<tags/>
+			<level>8</level>
+			<price>120000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.48
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.2
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_main</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 12.5 1.0 12.5
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				40.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				3.25714285714286
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>60</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>842</weight>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>6</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.12
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.5
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_L40_AP_Mk1>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1020</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>226 211</piercingPower>
+				</_L40_AP_Mk1>
+				<_L40_APC_Mk2>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1275</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>258 248</piercingPower>
+				</_L40_APC_Mk2>
+				<_L40_HE_Mk3>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1020</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>42 42</piercingPower>
+				</_L40_HE_Mk3>
+			</shots>
+		</_85mm_HV_L40_FL>
 		<_25pdr_AT_Field_Gun>
 			<userString>#gb_vehicles:_25pdr_AT_Field_Gun</userString>
 			<tags/>

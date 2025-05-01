@@ -2781,6 +2781,12 @@ msgstr "Налічана юбілейных манет"
 msgid "serviceChannelMessages/invoiceReceived/eventCoinDebited"
 msgstr "Спісана юбілейных манет"
 
+msgid "serviceChannelMessages/invoiceReceived/format/items/crewBook"
+msgstr "%(name)s (x%(count)s)."
+
+msgid "serviceChannelMessages/invoiceReceived/format/items/default"
+msgstr "%(type)s «%(name)s» (%(count)s %(pieces)s)."
+
 msgid "serviceChannelMessages/invoiceReceived/freeAwardListsAccrued"
 msgstr "Налічана бланкаў загаду"
 
@@ -3061,6 +3067,54 @@ msgstr "Назапашванне крэдытаў у сховішчы прыпы
 
 msgid "serviceChannelMessages/piggyBank/title"
 msgstr "Рэзервовае сховішча адчынена!"
+
+msgid "serviceChannelMessages/playStreakAvailable/body"
+msgstr "Задачы Ланцуга перамог зноў даступныя для выканання."
+
+msgid "serviceChannelMessages/playStreakCongrats/header"
+msgstr "Ланцуг перамог"
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/periodic/body"
+msgstr "Атрымана ўзнагарода:"
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/equipment"
+msgstr "Налічана выпадковае абсталяванне."
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/goodie"
+msgstr "Налічаны выпадковыя рэзервы."
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/prefix"
+msgstr "Дададзена: "
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/regular/body"
+msgstr "Рэгулярнае налічэнне:"
+
+msgid "serviceChannelMessages/playStreakCongratsWithoutRewards/body"
+msgstr "Задача %(savedData)s выканана."
+
+msgid "serviceChannelMessages/playStreakDropProgress/body"
+msgstr "Прагрэс падзеі «Ланцуг перамог» абнулены."
+
+msgid "serviceChannelMessages/playStreakFreezes/body"
+msgstr ""
+"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выконваць "
+"баявую задачу падзеі «Ланцуг перамог» %(savedData)s дзён запар."
+
+msgid "serviceChannelMessages/playStreakFreezesEnd/body"
+msgstr "Ланцуг перамог адноўлены."
+
+msgid "serviceChannelMessages/playStreakFreezesInProgress/body"
+msgstr ""
+"Задача выканана.\n"
+"Для аднаўлення лічыльніка засталося выканаць: %(savedData)s"
+
+msgid "serviceChannelMessages/playStreakPauseUsed/body"
+msgstr "Вы выкарысталі паўзу."
+
+msgid "serviceChannelMessages/playStreakUnavailable/body"
+msgstr ""
+"Выкананне задач Ланцуга перамог часова недаступнае.\n"
+"Паспрабуйце пазней."
 
 msgid "serviceChannelMessages/prebattle/battleType/clan"
 msgstr "Кланавы бой"

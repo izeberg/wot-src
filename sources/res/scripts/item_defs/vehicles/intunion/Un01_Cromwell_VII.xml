@@ -1910,7 +1910,7 @@
 					<damping>2</damping>
 					<enable>true</enable>
 					<linkBones>true</linkBones>
-					<elasticity>1000</elasticity>
+					<elasticity>1400</elasticity>
 					<node>
 						<isLeft>true</isLeft>
 						<name>Track_VD_L0</name>
@@ -2552,7 +2552,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</backwardMovement>
@@ -2570,7 +2570,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</forwardMovement>
@@ -3302,7 +3302,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</backwardMovement>
@@ -3320,7 +3320,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</forwardMovement>
@@ -4428,13 +4428,10 @@
 						<isLeft>true</isLeft>
 						<name>Track_VD_L0</name>
 						<forwardElastK>
-							0.7
+							0.9
 							<!--BW_String-->
 						</forwardElastK>
-						<backwardElastK>
-							1.5
-							<!--BW_String-->
-						</backwardElastK>
+						<backwardElastK>2</backwardElastK>
 						<offset>
 							-0.12
 							<!--BW_String-->
@@ -4450,7 +4447,7 @@
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
-							0.65
+							0.85
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
@@ -4465,13 +4462,14 @@
 						<isLeft>false</isLeft>
 						<name>Track_VD_R0</name>
 						<forwardElastK>
-							0.7
+							0.9
 							<!--BW_String-->
 						</forwardElastK>
-						<backwardElastK>
-							1.5
+						<backwardElastK>2</backwardElastK>
+						<offset>
+							-0.12
 							<!--BW_String-->
-						</backwardElastK>
+						</offset>
 						<trackPairIdx>0</trackPairIdx>
 						<rightSibling>Track_VD_R1</rightSibling>
 					</node>
@@ -4483,9 +4481,13 @@
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
-							0.65
+							0.85
 							<!--BW_String-->
 						</backwardElastK>
+						<offset>
+							-0.1
+							<!--BW_String-->
+						</offset>
 						<trackPairIdx>0</trackPairIdx>
 						<leftSibling>Track_VD_R0</leftSibling>
 						<rightSibling>Track_VD_R2</rightSibling>
@@ -5063,7 +5065,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</backwardMovement>
@@ -5081,7 +5083,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</forwardMovement>
@@ -5813,7 +5815,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</backwardMovement>
@@ -5831,7 +5833,7 @@
 								<!--BW_String-->
 							</front>
 							<bottom>
-								0.1
+								0.08
 								<!--BW_String-->
 							</bottom>
 						</forwardMovement>

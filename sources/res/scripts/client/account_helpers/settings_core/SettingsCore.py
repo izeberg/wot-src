@@ -387,8 +387,6 @@ class SettingsCore(ISettingsCore):
          (
           GRAPHICS.COLOR_BLIND, options.AccountDumpSetting(GRAPHICS.COLOR_BLIND, GRAPHICS.COLOR_BLIND)),
          (
-          GRAPHICS.UI_EFFECTS, options.AccountDumpSetting(GRAPHICS.UI_EFFECTS, GRAPHICS.UI_EFFECTS)),
-         (
           GRAPHICS.TESSELLATION_SUPPORTED, options.ReadOnlySetting(BigWorld.isTesselationSupported)),
          (
           GRAPHICS.IS_SD_QUALITY, options.GraphicsQuality()),

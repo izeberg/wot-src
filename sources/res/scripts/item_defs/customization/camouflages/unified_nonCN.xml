@@ -11,6 +11,7 @@
 	<xmlns:sweden>sweden</xmlns:sweden>
 	<xmlns:poland>poland</xmlns:poland>
 	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
@@ -1677,6 +1678,10 @@
 					2.4 2.4 2.58 3.88
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					2.4 2.4 2.58 3.88
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.41 1.41 0.94 0.000000
 					<!--BW_String-->
@@ -4798,6 +4803,10 @@
 					1.76 1.76 1.29 1.11
 					<!--BW_String-->
 				</uk:GB102_LHMTV>
+				<uk:GB102_LHMTV_FL>
+					1.76 1.76 1.29 1.11
+					<!--BW_String-->
+				</uk:GB102_LHMTV_FL>
 				<uk:GB103_GSOR3301_AVR_FS>
 					1.76 1.76 1.29 1.11
 					<!--BW_String-->

@@ -115,8 +115,8 @@
 			<level>8</level>
 			<notInShop>true</notInShop>
 			<price>79290</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>520</power>
 			<weight>750</weight>
 			<maxHealth>190</maxHealth>
@@ -126,8 +126,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>381</rpm_min>
-			<rpm_max>2056</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
 		</NORINCO_12150L7>
 		<NORINCO_12150L_59>
 			<userString>#china_vehicles:NORINCO_12150L_59</userString>
@@ -146,8 +146,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>346</rpm_min>
-			<rpm_max>2160</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</NORINCO_12150L_59>
 		<NORINCO_12150LP>
 			<userString>#china_vehicles:NORINCO_12150LP</userString>
@@ -166,8 +166,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>354</rpm_min>
-			<rpm_max>2136</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</NORINCO_12150LP>
 		<MTU_8V_331>
 			<userString>#china_vehicles:MTU_8V_331</userString>
@@ -186,8 +186,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</MTU_8V_331>
 		<_12150L-3_V-12>
 			<userString>#china_vehicles:_12150L-3_V-12</userString>
@@ -195,8 +195,8 @@
 			<level>5</level>
 			<notInShop>true</notInShop>
 			<price>17000</price>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>430</power>
 			<weight>700</weight>
 			<maxHealth>105</maxHealth>
@@ -206,8 +206,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>208</rpm_min>
-			<rpm_max>2283</rpm_max>
+			<rpm_min>469</rpm_min>
+			<rpm_max>1960</rpm_max>
 		</_12150L-3_V-12>
 		<_12150LZ>
 			<userString>#china_vehicles:_12150LZ</userString>
@@ -226,8 +226,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</_12150LZ>
 		<_12150LZ_A>
 			<userString>#china_vehicles:_12150LZ_A</userString>
@@ -246,8 +246,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>352</rpm_min>
-			<rpm_max>2144</rpm_max>
+			<rpm_min>369</rpm_min>
+			<rpm_max>2090</rpm_max>
 		</_12150LZ_A>
 		<_12150LZM>
 			<userString>#china_vehicles:_12150LZM</userString>
@@ -266,16 +266,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>354</rpm_min>
-			<rpm_max>2136</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</_12150LZM>
 		<_12150L>
 			<userString>#china_vehicles:_12150L</userString>
 			<tags>diesel</tags>
 			<level>8</level>
 			<price>48000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>520</power>
 			<weight>750</weight>
 			<maxHealth>190</maxHealth>
@@ -285,8 +285,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>381</rpm_min>
-			<rpm_max>2056</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
 		</_12150L>
 		<_12150LG>
 			<userString>#china_vehicles:_12150LG</userString>
@@ -294,8 +294,8 @@
 			<level>9</level>
 			<price>70000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>520</power>
 			<weight>750</weight>
 			<maxHealth>360</maxHealth>
@@ -305,16 +305,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>381</rpm_min>
-			<rpm_max>2056</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
 		</_12150LG>
 		<_12150L2>
 			<userString>#china_vehicles:_12150L2</userString>
 			<tags>diesel</tags>
 			<level>7</level>
 			<price>49100</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>550</power>
 			<weight>750</weight>
 			<maxHealth>190</maxHealth>
@@ -324,16 +324,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>373</rpm_min>
-			<rpm_max>2080</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2201</rpm_max>
 		</_12150L2>
 		<_12150L3>
 			<userString>#china_vehicles:_12150L3</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>17000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>450</power>
 			<weight>700</weight>
 			<maxHealth>190</maxHealth>
@@ -343,7 +343,7 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>400</rpm_min>
+			<rpm_min>449</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</_12150L3>
 		<_12150L3G>
@@ -362,16 +362,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>266</rpm_min>
-			<rpm_max>2167</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</_12150L3G>
 		<_12150L3G2>
 			<userString>#china_vehicles:_12150L3G2</userString>
 			<tags>diesel</tags>
 			<level>5</level>
 			<price>20300</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>450</power>
 			<weight>700</weight>
 			<maxHealth>145</maxHealth>
@@ -381,7 +381,7 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>400</rpm_min>
+			<rpm_min>449</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</_12150L3G2>
 		<_12150L4>
@@ -389,8 +389,8 @@
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>25000</price>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>430</power>
 			<weight>700</weight>
 			<maxHealth>145</maxHealth>
@@ -400,8 +400,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>208</rpm_min>
-			<rpm_max>2283</rpm_max>
+			<rpm_min>469</rpm_min>
+			<rpm_max>1960</rpm_max>
 		</_12150L4>
 		<_12150L1>
 			<userString>#china_vehicles:_12150L1</userString>
@@ -419,8 +419,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>244</rpm_min>
-			<rpm_max>2211</rpm_max>
+			<rpm_min>224</rpm_min>
+			<rpm_max>2250</rpm_max>
 		</_12150L1>
 		<_12150L1G>
 			<userString>#china_vehicles:_12150L1G</userString>
@@ -438,16 +438,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>266</rpm_min>
-			<rpm_max>2167</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</_12150L1G>
 		<_Type_102S>
 			<userString>#china_vehicles:_Type_102S</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>15000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>480</power>
 			<weight>750</weight>
 			<maxHealth>145</maxHealth>
@@ -457,16 +457,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>392</rpm_min>
-			<rpm_max>2024</rpm_max>
+			<rpm_min>419</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</_Type_102S>
 		<_Type_102SG>
 			<userString>#china_vehicles:_Type_102SG</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>26000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>450</power>
 			<weight>750</weight>
 			<maxHealth>145</maxHealth>
@@ -476,7 +476,7 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>400</rpm_min>
+			<rpm_min>449</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</_Type_102SG>
 		<_Type_102S1>
@@ -484,8 +484,8 @@
 			<tags>diesel</tags>
 			<level>7</level>
 			<price>38000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>750</weight>
 			<maxHealth>190</maxHealth>
@@ -495,8 +495,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2101</rpm_max>
 		</_Type_102S1>
 		<_12150LS>
 			<userString>#china_vehicles:_12150LS</userString>
@@ -514,16 +514,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>338</rpm_min>
-			<rpm_max>2184</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2241</rpm_max>
 		</_12150LS>
 		<_12150LSG>
 			<userString>#china_vehicles:_12150LSG</userString>
 			<tags>diesel</tags>
 			<level>8</level>
 			<price>51000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>550</power>
 			<weight>750</weight>
 			<maxHealth>260</maxHealth>
@@ -533,8 +533,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>373</rpm_min>
-			<rpm_max>2080</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2201</rpm_max>
 		</_12150LSG>
 		<_12150LT57>
 			<userString>#china_vehicles:_12150LT57</userString>
@@ -553,8 +553,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</_12150LT57>
 		<_12150LT>
 			<userString>#china_vehicles:_12150LT</userString>
@@ -572,8 +572,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_12150LT>
 		<_12150LT_FL>
 			<userString>#china_vehicles:_12150LT</userString>
@@ -592,8 +592,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_12150LT_FL>
 		<_12150LTG>
 			<userString>#china_vehicles:_12150LTG</userString>
@@ -611,8 +611,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_12150LTG>
 		<_12150LT2>
 			<userString>#china_vehicles:_12150LT2</userString>
@@ -630,8 +630,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>314</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>229</rpm_min>
+			<rpm_max>2512</rpm_max>
 		</_12150LT2>
 		<_Renault_NC>
 			<userString>#china_vehicles:_Renault_NC</userString>
@@ -786,8 +786,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>449</rpm_min>
-			<rpm_max>2360</rpm_max>
+			<rpm_min>433</rpm_min>
+			<rpm_max>2414</rpm_max>
 		</Continental_W670_9A>
 		<_MT_50_T>
 			<userString>#china_vehicles:_MT_50_T</userString>
@@ -806,8 +806,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>346</rpm_min>
-			<rpm_max>2160</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</_MT_50_T>
 		<Twin_Cadillac_42series>
 			<userString>#china_vehicles:Twin_Cadillac_42series</userString>
@@ -825,8 +825,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>439</rpm_min>
-			<rpm_max>2392</rpm_max>
+			<rpm_min>419</rpm_min>
+			<rpm_max>2456</rpm_max>
 		</Twin_Cadillac_42series>
 		<Twin_Cadillac_42Gseries>
 			<userString>#china_vehicles:Twin_Cadillac_42Gseries</userString>
@@ -844,8 +844,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>431</rpm_min>
-			<rpm_max>2420</rpm_max>
+			<rpm_min>408</rpm_min>
+			<rpm_max>2494</rpm_max>
 		</Twin_Cadillac_42Gseries>
 		<Continental_R-975-C1>
 			<userString>#china_vehicles:Continental_R-975-C1</userString>
@@ -863,8 +863,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>374</rpm_min>
-			<rpm_max>2601</rpm_max>
+			<rpm_min>332</rpm_min>
+			<rpm_max>2735</rpm_max>
 		</Continental_R-975-C1>
 		<_2x_GAZ_203>
 			<userString>#china_vehicles:_2x_GAZ_203</userString>
@@ -882,8 +882,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>456</rpm_min>
-			<rpm_max>2340</rpm_max>
+			<rpm_min>441</rpm_min>
+			<rpm_max>2387</rpm_max>
 		</_2x_GAZ_203>
 		<_Type97>
 			<userString>#china_vehicles:_Type97</userString>
@@ -901,8 +901,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>324</rpm_min>
-			<rpm_max>2051</rpm_max>
+			<rpm_min>314</rpm_min>
+			<rpm_max>2070</rpm_max>
 		</_Type97>
 		<_Type100_W>
 			<userString>#china_vehicles:_Type100_W</userString>
@@ -920,8 +920,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>310</rpm_min>
-			<rpm_max>2078</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</_Type100_W>
 		<_Type100_A>
 			<userString>#china_vehicles:_Type100_A</userString>
@@ -939,16 +939,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>293</rpm_min>
-			<rpm_max>2113</rpm_max>
+			<rpm_min>279</rpm_min>
+			<rpm_max>2140</rpm_max>
 		</_Type100_A>
 		<V-2>
 			<userString>#china_vehicles:V-2</userString>
 			<tags>diesel</tags>
 			<level>5</level>
 			<price>18750</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>480</power>
 			<weight>750</weight>
 			<maxHealth>105</maxHealth>
@@ -958,16 +958,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>392</rpm_min>
-			<rpm_max>2024</rpm_max>
+			<rpm_min>419</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</V-2>
 		<V-2-34>
 			<userString>#china_vehicles:V-2-34</userString>
 			<tags>diesel</tags>
 			<level>6</level>
 			<price>27860</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>750</weight>
 			<maxHealth>145</maxHealth>
@@ -977,8 +977,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2101</rpm_max>
 		</V-2-34>
 		<_V-2-54SC>
 			<userString>#china_vehicles:_V-2-54SC</userString>
@@ -986,8 +986,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>25000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>820</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -997,8 +997,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>301</rpm_min>
-			<rpm_max>2296</rpm_max>
+			<rpm_min>490</rpm_min>
+			<rpm_max>1920</rpm_max>
 		</_V-2-54SC>
 		<_V-2-54SC_bob>
 			<userString>#china_vehicles:_V-2-54SC</userString>
@@ -1006,8 +1006,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>25000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>820</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1017,8 +1017,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>301</rpm_min>
-			<rpm_max>2296</rpm_max>
+			<rpm_min>490</rpm_min>
+			<rpm_max>1920</rpm_max>
 		</_V-2-54SC_bob>
 		<_V-2-54SC_7x7>
 			<userString>#china_vehicles:_V-2-54SC</userString>
@@ -1026,8 +1026,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>25000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>820</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1037,8 +1037,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>301</rpm_min>
-			<rpm_max>2296</rpm_max>
+			<rpm_min>490</rpm_min>
+			<rpm_max>1920</rpm_max>
 		</_V-2-54SC_7x7>
 		<_V-2-54SC_MT>
 			<userString>#china_vehicles:_V-2-54SC</userString>
@@ -1057,8 +1057,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</_V-2-54SC_MT>
 		<_V-2-54SC_TEST>
 			<userString>#china_vehicles:_V-2-54SC</userString>
@@ -1077,8 +1077,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</_V-2-54SC_TEST>
 		<_V-2-54SCP>
 			<userString>#china_vehicles:_V-2-54SCP</userString>
@@ -1097,8 +1097,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</_V-2-54SCP>
 		<_V-2-54SCP_Premium>
 			<userString>#china_vehicles:_V-2-54SCP</userString>
@@ -1117,8 +1117,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</_V-2-54SCP_Premium>
 		<_V-2-54SCP_T>
 			<userString>#china_vehicles:_V-2-54SCP_T</userString>
@@ -1137,8 +1137,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</_V-2-54SCP_T>
 		<V_2_54SCG>
 			<userString>#china_vehicles:V_2_54SCG</userString>
@@ -1146,8 +1146,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>120000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>830</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1157,8 +1157,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>298</rpm_min>
-			<rpm_max>2304</rpm_max>
+			<rpm_min>485</rpm_min>
+			<rpm_max>1930</rpm_max>
 		</V_2_54SCG>
 		<V_2_54SCG_7x7>
 			<userString>#china_vehicles:V_2_54SCG</userString>
@@ -1166,8 +1166,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>120000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>830</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1177,8 +1177,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>298</rpm_min>
-			<rpm_max>2304</rpm_max>
+			<rpm_min>485</rpm_min>
+			<rpm_max>1930</rpm_max>
 		</V_2_54SCG_7x7>
 		<V_2_54SC_113>
 			<userString>#china_vehicles:_V-2-54SC</userString>
@@ -1197,8 +1197,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</V_2_54SC_113>
 		<V_2_54SC_QL>
 			<userString>#china_vehicles:V_2_54SC_QL</userString>
@@ -1206,8 +1206,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>25000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>820</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1217,8 +1217,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>301</rpm_min>
-			<rpm_max>2296</rpm_max>
+			<rpm_min>490</rpm_min>
+			<rpm_max>1920</rpm_max>
 		</V_2_54SC_QL>
 		<Type_165>
 			<userString>#china_vehicles:Type_165</userString>
@@ -1226,8 +1226,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>25000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>840</power>
 			<weight>1700</weight>
 			<maxHealth>360</maxHealth>
@@ -1237,16 +1237,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>296</rpm_min>
-			<rpm_max>2312</rpm_max>
+			<rpm_min>480</rpm_min>
+			<rpm_max>1940</rpm_max>
 		</Type_165>
 		<_V-2IS>
 			<userString>#china_vehicles:_V-2IS</userString>
 			<tags>diesel</tags>
 			<level>7</level>
 			<price>36000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>520</power>
 			<weight>750</weight>
 			<maxHealth>190</maxHealth>
@@ -1256,16 +1256,16 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>381</rpm_min>
-			<rpm_max>2056</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
 		</_V-2IS>
 		<_Type_102>
 			<userString>#china_vehicles:_Type_102</userString>
 			<tags>diesel</tags>
 			<level>5</level>
 			<price>10000</price>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>400</power>
 			<weight>700</weight>
 			<maxHealth>145</maxHealth>
@@ -1275,8 +1275,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>221</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</_Type_102>
 		<_12150L7>
 			<userString>#china_vehicles:_12150L7</userString>
@@ -1295,8 +1295,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>346</rpm_min>
-			<rpm_max>2160</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</_12150L7>
 		<_12150L7_7x7>
 			<userString>#china_vehicles:_12150L7</userString>
@@ -1315,8 +1315,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>346</rpm_min>
-			<rpm_max>2160</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</_12150L7_7x7>
 		<_12150L7B>
 			<userString>#china_vehicles:_12150L7B</userString>
@@ -1335,8 +1335,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_12150L7B>
 		<_12150L7B_MK>
 			<userString>#china_vehicles:_12150L7B_MK</userString>
@@ -1355,8 +1355,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_12150L7B_MK>
 		<_12150L_7BW>
 			<userString>#china_vehicles:_12150L_7BW</userString>
@@ -1364,8 +1364,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>100000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>540</power>
 			<weight>930</weight>
 			<maxHealth>360</maxHealth>
@@ -1375,8 +1375,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>376</rpm_min>
-			<rpm_max>2072</rpm_max>
+			<rpm_min>359</rpm_min>
+			<rpm_max>2181</rpm_max>
 		</_12150L_7BW>
 		<_12150L7G>
 			<userString>#china_vehicles:_12150L7G</userString>
@@ -1384,8 +1384,8 @@
 			<level>8</level>
 			<price>50000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>935</weight>
 			<maxHealth>360</maxHealth>
@@ -1395,8 +1395,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>365</rpm_min>
-			<rpm_max>2104</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
 		</_12150L7G>
 		<_12150L8>
 			<userString>#china_vehicles:_12150L8</userString>
@@ -1404,8 +1404,8 @@
 			<level>10</level>
 			<price>132000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1080</power>
 			<weight>935</weight>
 			<maxHealth>360</maxHealth>
@@ -1415,8 +1415,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>232</rpm_min>
-			<rpm_max>2504</rpm_max>
+			<rpm_min>360</rpm_min>
+			<rpm_max>2180</rpm_max>
 		</_12150L8>
 		<_8V135>
 			<userString>#china_vehicles:_8V135</userString>
@@ -1434,8 +1434,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_8V135>
 		<_8V135_FL>
 			<userString>#china_vehicles:_8V135</userString>
@@ -1454,8 +1454,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_8V135_FL>
 		<_Type_102S_T>
 			<userString>#china_vehicles:_Type_102S</userString>
@@ -1463,8 +1463,8 @@
 			<level>6</level>
 			<price>15000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>480</power>
 			<weight>750</weight>
 			<maxHealth>145</maxHealth>
@@ -1474,8 +1474,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>392</rpm_min>
-			<rpm_max>2024</rpm_max>
+			<rpm_min>419</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</_Type_102S_T>
 		<_12150LS_1>
 			<userString>#china_vehicles:_12150LS</userString>
@@ -1483,8 +1483,8 @@
 			<level>9</level>
 			<price>99500</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>1068</weight>
 			<maxHealth>260</maxHealth>
@@ -1494,8 +1494,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>365</rpm_min>
-			<rpm_max>2104</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
 		</_12150LS_1>
 		<Continental_AOSI_895_5_Prem>
 			<userString>#usa_vehicles:Continental_AOSI-895-5</userString>
@@ -1504,8 +1504,8 @@
 			<level>6</level>
 			<price>25000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>862</weight>
 			<maxHealth>234</maxHealth>
@@ -1515,16 +1515,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>312</rpm_min>
-			<rpm_max>2801</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Continental_AOSI_895_5_Prem>
 		<V_54>
 			<userString>#china_vehicles:V_54</userString>
 			<tags>diesel</tags>
 			<level>7</level>
 			<price>36300</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>520</power>
 			<weight>895</weight>
 			<maxHealth>190</maxHealth>
@@ -1534,8 +1534,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>381</rpm_min>
-			<rpm_max>2056</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
 		</V_54>
 		<Detroit_Diesel_8V71T>
 			<userString>#china_vehicles:Detroit_Diesel_8V71T</userString>
@@ -1554,8 +1554,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>312</rpm_min>
-			<rpm_max>2264</rpm_max>
+			<rpm_min>219</rpm_min>
+			<rpm_max>2542</rpm_max>
 		</Detroit_Diesel_8V71T>
 		<_12150L7BW>
 			<userString>#china_vehicles:_12150L7BW</userString>
@@ -1563,8 +1563,8 @@
 			<level>8</level>
 			<notInShop>true</notInShop>
 			<price>50000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>935</weight>
 			<maxHealth>360</maxHealth>
@@ -1574,8 +1574,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>365</rpm_min>
-			<rpm_max>2104</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
 		</_12150L7BW>
 		<V_2_54SCP>
 			<userString>#china_vehicles:V_2_54SCP</userString>
@@ -1583,8 +1583,8 @@
 			<level>10</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>980</power>
 			<weight>1024</weight>
 			<maxHealth>370</maxHealth>
@@ -1594,8 +1594,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>258</rpm_min>
-			<rpm_max>2424</rpm_max>
+			<rpm_min>410</rpm_min>
+			<rpm_max>2080</rpm_max>
 		</V_2_54SCP>
 		<V_2_54SC>
 			<userString>#china_vehicles:V_2_54SC</userString>
@@ -1603,8 +1603,8 @@
 			<level>10</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>850</power>
 			<weight>1024</weight>
 			<maxHealth>370</maxHealth>
@@ -1614,8 +1614,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>293</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>475</rpm_min>
+			<rpm_max>1950</rpm_max>
 		</V_2_54SC>
 		<HS_110F>
 			<userString>#china_vehicles:HS_110F</userString>
@@ -1623,8 +1623,8 @@
 			<level>10</level>
 			<price>120000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>800</power>
 			<weight>1050</weight>
 			<maxHealth>360</maxHealth>
@@ -1634,8 +1634,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>306</rpm_min>
-			<rpm_max>2280</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</HS_110F>
 		<HS_110F_P>
 			<userString>#china_vehicles:HS_110F_P</userString>
@@ -1643,8 +1643,8 @@
 			<level>10</level>
 			<price>120000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>850</power>
 			<weight>1050</weight>
 			<maxHealth>360</maxHealth>
@@ -1654,8 +1654,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>293</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>475</rpm_min>
+			<rpm_max>1950</rpm_max>
 		</HS_110F_P>
 		<HS_110F_P_T>
 			<userString>#china_vehicles:HS_110F_P</userString>
@@ -1663,8 +1663,8 @@
 			<level>10</level>
 			<price>120000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>800</power>
 			<weight>1050</weight>
 			<maxHealth>360</maxHealth>
@@ -1674,8 +1674,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>306</rpm_min>
-			<rpm_max>2280</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</HS_110F_P_T>
 		<HS_110F_7x7>
 			<userString>#china_vehicles:HS_110F</userString>
@@ -1683,8 +1683,8 @@
 			<level>10</level>
 			<price>120000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>800</power>
 			<weight>1050</weight>
 			<maxHealth>360</maxHealth>
@@ -1694,8 +1694,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>306</rpm_min>
-			<rpm_max>2280</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</HS_110F_7x7>
 		<_2x_V-12>
 			<userString>#china_vehicles:_2x_V-12</userString>
@@ -1703,8 +1703,8 @@
 			<level>10</level>
 			<price>120000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1100</power>
 			<weight>1950</weight>
 			<maxHealth>400</maxHealth>
@@ -1714,8 +1714,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>226</rpm_min>
-			<rpm_max>2520</rpm_max>
+			<rpm_min>350</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</_2x_V-12>
 		<_2x_V-12_70>
 			<userString>#china_vehicles:_2x_V-12_70</userString>
@@ -1723,8 +1723,8 @@
 			<level>11</level>
 			<price>220000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1000</power>
 			<weight>1950</weight>
 			<maxHealth>400</maxHealth>
@@ -1734,8 +1734,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</_2x_V-12_70>
 		<V_2_54SCM>
 			<userString>#china_vehicles:V_2_54SCM</userString>
@@ -1753,8 +1753,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>314</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>229</rpm_min>
+			<rpm_max>2512</rpm_max>
 		</V_2_54SCM>
 		<V_2_54SCM_P>
 			<userString>#china_vehicles:V_2_54SCM_P</userString>
@@ -1772,8 +1772,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</V_2_54SCM_P>
 		<V_2_54SCM_P_T>
 			<userString>#china_vehicles:V_2_54SCM_P</userString>
@@ -1792,8 +1792,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>314</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>229</rpm_min>
+			<rpm_max>2512</rpm_max>
 		</V_2_54SCM_P_T>
 		<V_2_54SCH>
 			<userString>#china_vehicles:V_2_54SCH</userString>
@@ -1811,8 +1811,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>314</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>229</rpm_min>
+			<rpm_max>2512</rpm_max>
 		</V_2_54SCH>
 		<V_2_54SCH_P>
 			<userString>#china_vehicles:V_2_54SCH_P</userString>
@@ -1830,8 +1830,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>314</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>229</rpm_min>
+			<rpm_max>2512</rpm_max>
 		</V_2_54SCH_P>
 		<_12150LTM>
 			<userString>#china_vehicles:_12150LTM</userString>
@@ -1849,8 +1849,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</_12150LTM>
 		<_12150LTM_P>
 			<userString>#china_vehicles:_12150LTM_P</userString>
@@ -1868,8 +1868,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>338</rpm_min>
-			<rpm_max>2184</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2241</rpm_max>
 		</_12150LTM_P>
 		<V_2_54SCG_2>
 			<userString>#china_vehicles:V_2_54SCG_2</userString>
@@ -1887,16 +1887,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>346</rpm_min>
-			<rpm_max>2160</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
 		</V_2_54SCG_2>
 		<V_2_54SCG_2_P>
 			<userString>#china_vehicles:V_2_54SCG_2_P</userString>
 			<tags>diesel</tags>
 			<level>7</level>
 			<price>44000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1906,16 +1906,16 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>365</rpm_min>
-			<rpm_max>2104</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
 		</V_2_54SCG_2_P>
 		<V_2_54SCR>
 			<userString>#china_vehicles:V_2_54SCR</userString>
 			<tags>diesel</tags>
 			<level>8</level>
 			<price>52000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>550</power>
 			<weight>1045</weight>
 			<maxHealth>360</maxHealth>
@@ -1925,8 +1925,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>373</rpm_min>
-			<rpm_max>2080</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2201</rpm_max>
 		</V_2_54SCR>
 		<V_2_54SCR_P>
 			<userString>#china_vehicles:V_2_54SCR_P</userString>
@@ -1944,8 +1944,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</V_2_54SCR_P>
 		<NORINCO_12150LM>
 			<userString>#china_vehicles:NORINCO_12150LM</userString>
@@ -1963,8 +1963,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>360</rpm_min>
-			<rpm_max>2120</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</NORINCO_12150LM>
 		<_8V135_M>
 			<userString>#china_vehicles:_8V135_M</userString>
@@ -1982,8 +1982,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_8V135_M>
 		<_8V135_M_P>
 			<userString>#china_vehicles:_8V135_M_P</userString>
@@ -2001,8 +2001,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_8V135_M_P>
 		<_12V150_1>
 			<userString>#china_vehicles:_12V150_1</userString>
@@ -2010,8 +2010,8 @@
 			<level>10</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>900</power>
 			<weight>935</weight>
 			<maxHealth>360</maxHealth>
@@ -2021,8 +2021,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>280</rpm_min>
-			<rpm_max>2360</rpm_max>
+			<rpm_min>450</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</_12V150_1>
 		<_8V135_IGR>
 			<userString>#igr_vehicles:_8V135_IGR</userString>
@@ -2041,8 +2041,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
 		</_8V135_IGR>
 		<_12150LS_IGR>
 			<userString>#igr_vehicles:_12150LS_IGR</userString>
@@ -2050,8 +2050,8 @@
 			<level>9</level>
 			<price>99500</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>750</weight>
 			<maxHealth>260</maxHealth>
@@ -2061,8 +2061,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>365</rpm_min>
-			<rpm_max>2104</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
 		</_12150LS_IGR>
 		<_12150L7_IGR>
 			<userString>#igr_vehicles:_12150L7_IGR</userString>
@@ -2070,8 +2070,8 @@
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>25000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>935</weight>
 			<maxHealth>360</maxHealth>
@@ -2081,8 +2081,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>365</rpm_min>
-			<rpm_max>2104</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
 		</_12150L7_IGR>
 		<Development_Engine>
 			<userString>Development Engine</userString>
@@ -2090,8 +2090,8 @@
 			<level>5</level>
 			<notInShop>true</notInShop>
 			<price>1</price>
-			<wwsoundPC>eng_cadillac_series_42_pc</wwsoundPC>
-			<wwsoundNPC>eng_cadillac_series_42_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>540</power>
 			<weight>750</weight>
 			<maxHealth>105</maxHealth>
@@ -2101,8 +2101,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>3000</rpm_max>
+			<rpm_min>359</rpm_min>
+			<rpm_max>2181</rpm_max>
 		</Development_Engine>
 		<Continental_AOSI_895_5_Prem_SH>
 			<userString>#usa_vehicles:Continental_AOSI_895_5_Prem_SH-895-5</userString>
@@ -2110,8 +2110,8 @@
 			<level>1</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>690</power>
 			<weight>1000</weight>
 			<maxHealth>103</maxHealth>
@@ -2121,8 +2121,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>578</rpm_min>
-			<rpm_max>2477</rpm_max>
+			<rpm_min>309</rpm_min>
+			<rpm_max>2868</rpm_max>
 		</Continental_AOSI_895_5_Prem_SH>
 		<_12150L-3_V-12_SH>
 			<userString>#china_vehicles:_12150L-3_V-12_SH</userString>
@@ -2130,8 +2130,8 @@
 			<level>3</level>
 			<notInShop>true</notInShop>
 			<price>0</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1045</power>
 			<weight>1000</weight>
 			<maxHealth>103</maxHealth>
@@ -2141,8 +2141,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>241</rpm_min>
-			<rpm_max>2476</rpm_max>
+			<rpm_min>377</rpm_min>
+			<rpm_max>2145</rpm_max>
 		</_12150L-3_V-12_SH>
 		<_12150L1_SH>
 			<userString>#china_vehicles:_12150L1_SH</userString>
@@ -2150,8 +2150,8 @@
 			<level>3</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1390</power>
 			<weight>1000</weight>
 			<maxHealth>103</maxHealth>
@@ -2161,8 +2161,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>200</rpm_min>
-			<rpm_max>2600</rpm_max>
+			<rpm_min>300</rpm_min>
+			<rpm_max>2300</rpm_max>
 		</_12150L1_SH>
 		<Ch00_ClingeBot_SH_Engine>
 			<userString>#china_vehicles:Ch00_ClingeBot_SH_Engine</userString>
@@ -2181,8 +2181,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>266</rpm_min>
-			<rpm_max>2167</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Ch00_ClingeBot_SH_Engine>
 	</shared>
 </root>

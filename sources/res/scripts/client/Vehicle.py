@@ -1,6 +1,8 @@
 import logging, math, random, weakref
 from collections import namedtuple
-import typing, BigWorld, Math, Health, WoT, AreaDestructibles, BattleReplay, DestructiblesCache, TriggersManager, constants, physics_shared
+import typing, BigWorld, Math
+from Health import StunComponent
+import WoT, AreaDestructibles, BattleReplay, DestructiblesCache, TriggersManager, constants, physics_shared
 from PlayerEvents import g_playerEvents
 from account_helpers.settings_core.settings_constants import GAME
 from TriggersManager import TRIGGER_TYPE
@@ -21,6 +23,7 @@ from gun_rotation_shared import decodeGunAngles
 from helpers import dependency
 from helpers.EffectMaterialCalculation import calcSurfaceMaterialNearPoint
 from helpers.EffectsList import SoundStartParam
+from helpers.buffs import BuffContainer
 from items import vehicles
 from material_kinds import EFFECT_MATERIAL_INDEXES_BY_NAMES, EFFECT_MATERIALS
 from skeletons.account_helpers.settings_core import ISettingsCore
@@ -40,6 +43,7 @@ import GenericComponents, Projectiles, CGF
 from helpers.styles_perf_toolset import g_stylesOverrider
 if typing.TYPE_CHECKING:
     import OwnVehicle
+    from items.vehicles import VehicleDescriptor
 _logger = logging.getLogger(__name__)
 LOW_ENERGY_COLLISION_D = 0.3
 HIGH_ENERGY_COLLISION_D = 0.6
@@ -77,9 +81,10 @@ SegmentCollisionResultExt = namedtuple('SegmentCollisionResultExt', ('dist', 'hi
 StunInfo = namedtuple('StunInfo', ('startTime', 'endTime', 'duration', 'totalTime', 'stunType'))
 DebuffInfo = namedtuple('DebuffInfo', ('duration', 'animated'))
 VEHICLE_COMPONENTS = {
- BattleAbilitiesComponent}
+ BattleAbilitiesComponent,
+ BuffContainer}
 
-class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesComponent):
+class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesComponent, BuffContainer):
     isEnteringWorld = property(lambda self: self.__isEnteringWorld)
     isTurretDetached = property(lambda self: constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health) and self.__turretDetachmentConfirmed)
     isTurretMarkedForDetachment = property(lambda self: constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health))
@@ -92,6 +97,25 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
     __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
     __settingsCore = dependency.descriptor(ISettingsCore)
     activeGunIndex = property(lambda self: self.__activeGunIndex)
+
+    @property
+    def canBeDamaged(self):
+        return self.__canBeDamaged
+
+    @canBeDamaged.setter
+    def canBeDamaged(self, value):
+        if value is self.__canBeDamaged:
+            return
+        else:
+            self.__canBeDamaged = value
+            self.onCanBeDamagedChanged(value)
+            attachedVehicle = BigWorld.player().getVehicleAttached()
+            if attachedVehicle is None:
+                return
+            isAttachedVehicle = self.id == attachedVehicle.id
+            if isAttachedVehicle:
+                self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.CAN_BE_DAMAGED, self.__canBeDamaged)
+            return
 
     @property
     def speedInfo(self):
@@ -176,7 +200,8 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
     def getMasterVehID(self):
         return self.masterVehID
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
+        super(Vehicle, self).__init__(*args, **kwargs)
         for comp in VEHICLE_COMPONENTS:
             comp.__init__(self)
 
@@ -189,6 +214,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         self.onUnderWaterSwitch = Event()
         self.isPlayerVehicle = False
         self.isStarted = False
+        self.__canBeDamaged = True
         self.__isEnteringWorld = False
         self.__turretDetachmentConfirmed = False
         self.__speedInfo = _VehicleSpeedProvider()
@@ -210,6 +236,8 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         self.onEngineStateChange = Event()
         self.__cameraTargetMatrix = Math.WGAdaptiveMatrixProvider()
         self.set_postmortemViewPointName()
+        self.onCanBeDamagedChanged = Event()
+        self.compoundInvalidated = False
         return
 
     def reload(self):
@@ -242,7 +270,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         result = g_stylesOverrider.overrideStyleForVehicle(self.typeDescriptor.name)
         if result is not None:
             outfitDescr = result
-        if 'battle_royale' in self.typeDescriptor.type.tags:
+        if 'battle_royale' in self.typeDescriptor.type.tags or self.respawnCompactDescr:
             from InBattleUpgrades import onBattleRoyalePrerequisites
             forceReloading = onBattleRoyalePrerequisites(self, oldTypeDescriptor, forceReloading)
             if isDelayedRespawn:
@@ -681,7 +709,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
     def set_setupsIndexes(self, _=None):
         setupsIndexes = self.setupsIndexes
         ctrl = self.guiSessionProvider.shared.prebattleSetups
-        if ctrl is not None and setupsIndexes is not None:
+        if ctrl is not None and setupsIndexes:
             ctrl.setSetupsIndexes(self.id, setupsIndexes.copy())
         return
 
@@ -777,10 +805,10 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
 
     def set_stunInfo(self, prev=None):
         _logger.debug('Set stun info(curr,~ prev): %s, %s', self.stunInfo, prev)
-        if self.stunInfo.stunFinishTime > 0.0 and self.appearance.findComponentByType(Health.StunComponent) is None:
-            self.appearance.createComponent(Health.StunComponent)
+        if self.stunInfo.stunFinishTime > 0.0 and self.appearance.findComponentByType(StunComponent) is None:
+            self.appearance.createComponent(StunComponent)
         if self.stunInfo.stunFinishTime < 0.01:
-            self.appearance.removeComponentByType(Health.StunComponent)
+            self.appearance.removeComponentByType(StunComponent)
         self.updateStunInfo()
         return
 
@@ -999,10 +1027,13 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
                 TriggersManager.g_manager.fireTrigger(TriggersManager.TRIGGER_TYPE.VEHICLE_VISUAL_VISIBILITY_CHANGED, vehicleId=self.id, isVisible=True)
             self.startGUIVisual()
             self.refreshBuffEffects()
+            self.set_buffs()
             if self.isSpeedCapturing:
                 self.set_isSpeedCapturing()
             if self.isBlockingCapture:
                 self.set_isBlockingCapture()
+            if not self.isAlive():
+                self.__onVehicleDeath(True)
             if self.isTurretMarkedForDetachment:
                 self.confirmTurretDetachment()
             self.__startWGPhysics()
@@ -1040,6 +1071,8 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         _logger.debug('Vehicle.stopVisual(%d)', self.id)
         if not self.isStarted:
             raise SoftException('Vehicle is already stopped')
+        self.compoundInvalidated = True
+        self.clearBuffs()
         self.__stopExtras()
         if TriggersManager.g_manager:
             TriggersManager.g_manager.fireTriggerInstantly(TriggersManager.TRIGGER_TYPE.VEHICLE_VISUAL_VISIBILITY_CHANGED, vehicleId=self.id, isVisible=False)

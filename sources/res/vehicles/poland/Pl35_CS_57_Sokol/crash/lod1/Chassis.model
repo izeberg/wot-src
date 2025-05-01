@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl35_CS_57_Sokol/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.642770 0.000001 -3.258457</min>
+		<max>1.642770 1.127900 3.098692</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl35_CS_57_Sokol/crash/lod1/Chassis</nodefullVisual>
+</root>

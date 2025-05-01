@@ -4,14 +4,8 @@
 	<extent>32</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.55122 0.000000 -2.5441
-			<!--BW_String-->
-		</min>
-		<max>
-			1.52015 2.88654 2.21724
-			<!--BW_String-->
-		</max>
+		<min>-1.551224 0.000000 -2.544103</min>
+		<max>1.520152 2.886539 2.217242</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G138_VK168_02/normal/lod0/Turret_01</nodefullVisual>

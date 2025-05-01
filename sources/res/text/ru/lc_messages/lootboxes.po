@@ -409,6 +409,12 @@ msgstr "x{count}"
 msgid "multiOpenView/title"
 msgstr "Поздравляем!"
 
+msgid "noBoxes/default"
+msgstr ""
+"Чтобы получить контейнеры, участвуйте в определённых событиях и выполняйте "
+"связанные с ними боевые задачи. Некоторые контейнеры можно докупить в "
+"игровом Магазине."
+
 msgid "notification/eventFinish/text"
 msgstr ""
 "Все полученные ящики будут открыты. Содержимое будет начислено на ваш "
@@ -444,7 +450,7 @@ msgid "notification/lootBoxesAutoOpen/text"
 msgstr "Мы открыли за вас контейнеры и начислили награды"
 
 msgid "notification/lootBoxesAutoOpen/title"
-msgstr "Марсианский контейнер"
+msgstr "Открытие контейнеров"
 
 msgid "notification/lootBoxesBuy/resume/body"
 msgstr "Продажа контейнеров возобновлена на всех площадках."
@@ -459,7 +465,7 @@ msgid "notification/lootBoxesIsDisabled/text"
 msgstr "Операции с ящиками временно недоступны: ведутся технические работы."
 
 msgid "notification/lootBoxesIsDisabled/title"
-msgstr "Марсианский контейнер"
+msgstr "Открытие контейнеров"
 
 msgid "notification/lootBoxesIsEnabled/button"
 msgstr "Открыть"
@@ -468,7 +474,7 @@ msgid "notification/lootBoxesIsEnabled/text"
 msgstr "Операции с ящиками снова доступны."
 
 msgid "notification/lootBoxesIsEnabled/title"
-msgstr "Марсианский контейнер"
+msgstr "Открытие контейнеров"
 
 msgid "notification/lootBoxesReceived/invoice"
 msgstr "Начислено"
@@ -579,7 +585,7 @@ msgid "tooltip/restrictedMode"
 msgstr "Операция временно недоступна. Попробуйте позже."
 
 msgid "type/event_premium"
-msgstr "Марсианский контейнер"
+msgstr "Контейнер"
 
 msgid "userName/big_referral"
 msgstr "Большая коробка с довольствием"

@@ -49,13 +49,13 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var isColorBlind:SettingsControlProp = null;
       
-      public var uiEffects:SettingsControlProp = null;
-      
       public var graphicsQuality:SettingsControlProp = null;
       
       public var graphicsQualityHDSD:SettingsControlProp = null;
       
       public var graphicsQualityHDSDHigh:SettingsControlProp = null;
+      
+      public var UI_EFFECTS:SettingsControlProp = null;
       
       public var RENDER_PIPELINE:SettingsControlProp = null;
       
@@ -135,7 +135,7 @@ package net.wg.gui.lobby.settings.vo.config
             "vertSync":createControl(ControlsFactory.TYPE_CHECKBOX).isDependOn(SettingsConfigHelper.TRIPLE_BUFFERED).build(),
             "tripleBuffered":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "isColorBlind":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "uiEffects":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "UI_EFFECTS":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "graphicsQuality":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
             "graphicsQualityHDSD":createControl(ControlsFactory.TYPE_LABEL).build(),
             "graphicsQualityHDSDHigh":createControl(ControlsFactory.TYPE_LABEL).build(),
@@ -193,7 +193,7 @@ package net.wg.gui.lobby.settings.vo.config
          this.tripleBuffered = null;
          this.igbHardwareAcceleration = null;
          this.isColorBlind = null;
-         this.uiEffects = null;
+         this.UI_EFFECTS = null;
          this.graphicsQuality = null;
          this.graphicsQualityHDSD = null;
          this.graphicsQualityHDSDHigh = null;

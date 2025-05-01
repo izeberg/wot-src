@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R224_IS_3_1945/normal/lod0/Fuel_tanks_hangar</nodelessVisual>
+	<parent>vehicles/russian/R224_IS_3_1945/normal/lod1/Fuel_tanks_hangar</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.635430 0.383091 -2.384668</min>
+		<max>1.635430 0.775994 -0.335510</max>
+	</visibilityBox>
+</root>

@@ -5,9 +5,6 @@
 		<max>1.499600 1.502510 0.432643</max>
 	</visibilityBox>
 	<parent>content/Environment/hd_env020_Boat/normal/lod1/hd_env020_Boat_05</parent>
-	<extent>
-		35.0
-		<!--BW_String-->
-	</extent>
+	<extent>48.000000</extent>
 	<nodefullVisual>content/Environment/hd_env020_Boat/normal/lod0/hd_env020_Boat_05</nodefullVisual>
 </root>

@@ -1,0 +1,6 @@
+
+
+class HBBATTLE_NOTIFICATIONS_TIMER_LINKAGES(object):
+    HB_DESTROY_TIMER_UI = 'HBDestroyTimerWrapUI'
+    AIR_STRIKE_ICON = 'AirStrikeUI'
+    HB_LAST_STAND_ICON = 'HBLastStandUI'

@@ -92,24 +92,6 @@ class BrowsersBridgeW2C(object):
         g_eventBus.handleEvent(events.HasCtxEvent(BROWSER_BRIDGE_EVENT, ctx=cmd.data))
 
 
-class _OpenTabWebApi(OpenTabWebApi):
-    __rankedController = dependency.descriptor(IRankedBattlesController)
-
-    def _getVehiclePreviewReturnAlias(self, cmd):
-        return VIEW_ALIAS.RANKED_BATTLE_PAGE
-
-    def _getVehiclePreviewReturnCallback(self, cmd):
-        return self.__getRankedShopCallback(cmd)
-
-    def _getVehicleStylePreviewCallback(self, cmd):
-        return self.__getRankedShopCallback(cmd)
-
-    def __getRankedShopCallback(self, cmd):
-        ctx = {'webParams': cmd.back_url if cmd.back_url is not None else '', 
-           'selectedItemID': RANKEDBATTLES_CONSTS.RANKED_BATTLES_SHOP_ID}
-        return partial(self.__rankedController.showRankedBattlePage, ctx)
-
-
 class _SoundStateWebApi(SoundStateWebApi):
     _ON_EXIT_STATES = {}
 
@@ -117,7 +99,6 @@ class _SoundStateWebApi(SoundStateWebApi):
 DEFAULT_WEB_HANDLERS = {
  RequestWebApi,
  ContextMenuWebApi,
- _OpenTabWebApi,
  OpenWindowWebApi,
  CloseWindowWebApi,
  SoundWebApi,

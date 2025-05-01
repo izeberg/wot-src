@@ -144,8 +144,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>487</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>483</rpm_min>
+			<rpm_max>2253</rpm_max>
 		</Somua_S-40>
 		<Panhard_H_101>
 			<userString>#france_vehicles:Panhard_H_101</userString>
@@ -221,8 +221,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>462</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>449</rpm_min>
+			<rpm_max>2360</rpm_max>
 		</Somua_S-40Bis>
 		<Renault_T12>
 			<userString>#france_vehicles:Renault_T12</userString>
@@ -240,8 +240,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>406</rpm_min>
-			<rpm_max>2500</rpm_max>
+			<rpm_min>374</rpm_min>
+			<rpm_max>2601</rpm_max>
 		</Renault_T12>
 		<Renault_T13>
 			<userString>#france_vehicles:Renault_T13</userString>
@@ -259,8 +259,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>374</rpm_min>
-			<rpm_max>2601</rpm_max>
+			<rpm_min>332</rpm_min>
+			<rpm_max>2735</rpm_max>
 		</Renault_T13>
 		<Renault_T14>
 			<userString>#france_vehicles:Renault_T14</userString>
@@ -278,8 +278,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>343</rpm_min>
-			<rpm_max>2701</rpm_max>
+			<rpm_min>290</rpm_min>
+			<rpm_max>2868</rpm_max>
 		</Renault_T14>
 		<Sovam_de_250cv>
 			<userString>#france_vehicles:Sovam_de_250cv</userString>
@@ -316,8 +316,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>468</rpm_min>
-			<rpm_max>2300</rpm_max>
+			<rpm_min>458</rpm_min>
+			<rpm_max>2333</rpm_max>
 		</SOFAM_8Gxb>
 		<SOFAM_8Gxb_A>
 			<userString>#france_vehicles:SOFAM_8Gxb_A</userString>
@@ -336,8 +336,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>468</rpm_min>
-			<rpm_max>2300</rpm_max>
+			<rpm_min>458</rpm_min>
+			<rpm_max>2333</rpm_max>
 		</SOFAM_8Gxb_A>
 		<SOFAM_8Gxb_B>
 			<userString>#france_vehicles:SOFAM_8Gxb_B</userString>
@@ -345,8 +345,8 @@
 			<level>10</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>600</power>
 			<weight>400</weight>
 			<maxHealth>360</maxHealth>
@@ -356,8 +356,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2551</rpm_max>
 		</SOFAM_8Gxb_B>
 		<SOFAM_8Gxb_B_7x7>
 			<userString>#france_vehicles:SOFAM_8Gxb_B</userString>
@@ -365,8 +365,8 @@
 			<level>10</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>600</power>
 			<weight>400</weight>
 			<maxHealth>360</maxHealth>
@@ -376,8 +376,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2551</rpm_max>
 		</SOFAM_8Gxb_B_7x7>
 		<SOFAM_8Gxb_C>
 			<userString>#france_vehicles:SOFAM_8Gxb_C</userString>
@@ -396,8 +396,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>456</rpm_min>
-			<rpm_max>2340</rpm_max>
+			<rpm_min>441</rpm_min>
+			<rpm_max>2387</rpm_max>
 		</SOFAM_8Gxb_C>
 		<_6F11SRY>
 			<userString>#france_vehicles:_6F11SRY</userString>
@@ -415,8 +415,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>275</rpm_min>
-			<rpm_max>2149</rpm_max>
+			<rpm_min>259</rpm_min>
+			<rpm_max>2180</rpm_max>
 		</_6F11SRY>
 		<_6F11SRYT>
 			<userString>#france_vehicles:_6F11SRYT</userString>
@@ -434,8 +434,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>266</rpm_min>
-			<rpm_max>2167</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</_6F11SRYT>
 		<Detroit_Diesel_6V53T>
 			<userString>#france_vehicles:Detroit_Diesel_6V53T</userString>
@@ -443,8 +443,8 @@
 			<tags>diesel</tags>
 			<level>8</level>
 			<price>44000</price>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>400</power>
 			<weight>770</weight>
 			<maxHealth>320</maxHealth>
@@ -454,8 +454,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>221</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</Detroit_Diesel_6V53T>
 		<Detroit_Diesel_6V53T_FL>
 			<userString>#france_vehicles:Detroit_Diesel_6V53T</userString>
@@ -464,8 +464,8 @@
 			<level>8</level>
 			<price>44000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>400</power>
 			<weight>770</weight>
 			<maxHealth>320</maxHealth>
@@ -475,8 +475,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>221</rpm_min>
-			<rpm_max>2256</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</Detroit_Diesel_6V53T_FL>
 		<Detroit_Diesel_6V53T-S>
 			<userString>#france_vehicles:Detroit_Diesel_6V53T-S</userString>
@@ -484,8 +484,8 @@
 			<tags>diesel</tags>
 			<level>9</level>
 			<price>78000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>470</power>
 			<weight>770</weight>
 			<maxHealth>360</maxHealth>
@@ -495,8 +495,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>394</rpm_min>
-			<rpm_max>2016</rpm_max>
+			<rpm_min>429</rpm_min>
+			<rpm_max>2040</rpm_max>
 		</Detroit_Diesel_6V53T-S>
 		<Detroit_Diesel_6V53T-S_FL>
 			<userString>#france_vehicles:Detroit_Diesel_6V53T-S</userString>
@@ -504,8 +504,8 @@
 			<tags>diesel</tags>
 			<level>9</level>
 			<price>78000</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>470</power>
 			<weight>770</weight>
 			<maxHealth>360</maxHealth>
@@ -515,8 +515,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>394</rpm_min>
-			<rpm_max>2016</rpm_max>
+			<rpm_min>429</rpm_min>
+			<rpm_max>2040</rpm_max>
 		</Detroit_Diesel_6V53T-S_FL>
 		<Hispano-Suiza_HS110>
 			<userString>#france_vehicles:Hispano-Suiza_HS110</userString>
@@ -535,8 +535,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>328</rpm_min>
-			<rpm_max>2216</rpm_max>
+			<rpm_min>279</rpm_min>
+			<rpm_max>2361</rpm_max>
 		</Hispano-Suiza_HS110>
 		<Hispano-Suiza_HS110_7x7>
 			<userString>#france_vehicles:Hispano-Suiza_HS110</userString>
@@ -555,8 +555,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>328</rpm_min>
-			<rpm_max>2216</rpm_max>
+			<rpm_min>279</rpm_min>
+			<rpm_max>2361</rpm_max>
 		</Hispano-Suiza_HS110_7x7>
 		<Hispano-Suiza_HS110_A>
 			<userString>#france_vehicles:Hispano-Suiza_HS110_A</userString>
@@ -574,8 +574,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>328</rpm_min>
-			<rpm_max>2216</rpm_max>
+			<rpm_min>279</rpm_min>
+			<rpm_max>2361</rpm_max>
 		</Hispano-Suiza_HS110_A>
 		<SOFAM_12GSds_A>
 			<userString>#france_vehicles:SOFAM_12GSds_A</userString>
@@ -593,8 +593,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>537</rpm_min>
-			<rpm_max>2570</rpm_max>
+			<rpm_min>664</rpm_min>
+			<rpm_max>2280</rpm_max>
 		</SOFAM_12GSds_A>
 		<SOFAM_12GSds>
 			<userString>#france_vehicles:SOFAM_12GSds</userString>
@@ -613,8 +613,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>338</rpm_min>
-			<rpm_max>2184</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2241</rpm_max>
 		</SOFAM_12GSds>
 		<SOFAM_12GSds_B>
 			<userString>#france_vehicles:SOFAM_12GSds_B</userString>
@@ -633,8 +633,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>338</rpm_min>
-			<rpm_max>2184</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2241</rpm_max>
 		</SOFAM_12GSds_B>
 		<Moteur_EPC_version_S5>
 			<userString>#france_vehicles:Moteur_EPC_version_S5</userString>
@@ -653,8 +653,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>249</rpm_min>
+			<rpm_max>2452</rpm_max>
 		</Moteur_EPC_version_S5>
 		<SOFAM_12_58>
 			<userString>#france_vehicles:SOFAM_12_58</userString>
@@ -673,8 +673,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>537</rpm_min>
-			<rpm_max>2570</rpm_max>
+			<rpm_min>664</rpm_min>
+			<rpm_max>2280</rpm_max>
 		</SOFAM_12_58>
 		<Renault_S6>
 			<userString>#france_vehicles:Renault_S6</userString>
@@ -731,8 +731,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>432</rpm_min>
-			<rpm_max>2414</rpm_max>
+			<rpm_min>410</rpm_min>
+			<rpm_max>2486</rpm_max>
 		</Renault_Naeder-FIEUX>
 		<Renault>
 			<userString>#france_vehicles:Renault</userString>
@@ -826,8 +826,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>406</rpm_min>
-			<rpm_max>2500</rpm_max>
+			<rpm_min>374</rpm_min>
+			<rpm_max>2601</rpm_max>
 		</Renault_BDR>
 		<Hotchkiss_35>
 			<userString>#france_vehicles:Hotchkiss_35_1</userString>
@@ -922,8 +922,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>432</rpm_min>
-			<rpm_max>2414</rpm_max>
+			<rpm_min>410</rpm_min>
+			<rpm_max>2486</rpm_max>
 		</Renault_A>
 		<Renault_EU>
 			<userString>#france_vehicles:Renault_EU</userString>
@@ -941,8 +941,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>383</rpm_min>
-			<rpm_max>1933</rpm_max>
+			<rpm_min>380</rpm_min>
+			<rpm_max>1938</rpm_max>
 		</Renault_EU>
 		<Berliet_MDP>
 			<userString>#france_vehicles:Berliet_MDP</userString>
@@ -961,8 +961,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>359</rpm_min>
-			<rpm_max>1981</rpm_max>
+			<rpm_min>354</rpm_min>
+			<rpm_max>1991</rpm_max>
 		</Berliet_MDP>
 		<Berliet_MDPA>
 			<userString>#france_vehicles:Berliet_MDPA</userString>
@@ -980,8 +980,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>359</rpm_min>
-			<rpm_max>1981</rpm_max>
+			<rpm_min>354</rpm_min>
+			<rpm_max>1991</rpm_max>
 		</Berliet_MDPA>
 		<Berliet_Ricardo>
 			<userString>#france_vehicles:Berliet_Ricardo</userString>
@@ -999,8 +999,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>353</rpm_min>
-			<rpm_max>1993</rpm_max>
+			<rpm_min>347</rpm_min>
+			<rpm_max>2005</rpm_max>
 		</Berliet_Ricardo>
 		<Maybach_HL_230P45>
 			<userString>#france_vehicles:Maybach_HL_230P45</userString>
@@ -1019,16 +1019,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>497</rpm_min>
-			<rpm_max>2663</rpm_max>
+			<rpm_min>612</rpm_min>
+			<rpm_max>2401</rpm_max>
 		</Maybach_HL_230P45>
 		<Maybach_HL_230>
 			<userString>#france_vehicles:Maybach_HL_230</userString>
 			<tags>gasoline</tags>
 			<level>6</level>
 			<price>26000</price>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>575</power>
 			<weight>700</weight>
 			<maxHealth>160</maxHealth>
@@ -1038,16 +1038,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>265</rpm_min>
-			<rpm_max>2951</rpm_max>
+			<rpm_min>424</rpm_min>
+			<rpm_max>2463</rpm_max>
 		</Maybach_HL_230>
 		<Maybach_HL_230_F>
 			<userString>#france_vehicles:Maybach_HL_230_F</userString>
 			<tags>gasoline</tags>
 			<level>6</level>
 			<price>26800</price>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>575</power>
 			<weight>700</weight>
 			<maxHealth>160</maxHealth>
@@ -1057,8 +1057,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>265</rpm_min>
-			<rpm_max>2951</rpm_max>
+			<rpm_min>424</rpm_min>
+			<rpm_max>2463</rpm_max>
 		</Maybach_HL_230_F>
 		<Maybach_HL_234P45>
 			<userString>#france_vehicles:Maybach_HL_234P45</userString>
@@ -1078,8 +1078,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_234P45>
 		<Maybach_HL_234P45A>
 			<userString>#france_vehicles:Maybach_HL_234P45A</userString>
@@ -1099,8 +1099,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>460</rpm_min>
-			<rpm_max>2125</rpm_max>
+			<rpm_min>470</rpm_min>
+			<rpm_max>2094</rpm_max>
 		</Maybach_HL_234P45A>
 		<Maybach_HL_295_1250>
 			<userString>#france_vehicles:Maybach_HL_295_1250</userString>
@@ -1119,8 +1119,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>390</rpm_min>
-			<rpm_max>2350</rpm_max>
+			<rpm_min>397</rpm_min>
+			<rpm_max>2329</rpm_max>
 		</Maybach_HL_295_1250>
 		<Maybach_HL_234P50>
 			<userString>#france_vehicles:Maybach_HL_234P50</userString>
@@ -1140,8 +1140,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>466</rpm_min>
-			<rpm_max>2107</rpm_max>
+			<rpm_min>476</rpm_min>
+			<rpm_max>2075</rpm_max>
 		</Maybach_HL_234P50>
 		<Maybach_HL_233P50>
 			<userString>#france_vehicles:Maybach_HL_234P50</userString>
@@ -1160,8 +1160,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>488</rpm_min>
-			<rpm_max>2035</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</Maybach_HL_233P50>
 		<Maybach_HL_235_850>
 			<userString>#france_vehicles:Maybach_HL_235_850</userString>
@@ -1180,8 +1180,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_235_850>
 		<Maybach_HL_235_850_02_B>
 			<userString>#france_vehicles:Maybach_HL_235_850</userString>
@@ -1200,8 +1200,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_235_850_02_B>
 		<Hispano_Suiza_12Z>
 			<userString>#france_vehicles:Hispano_Suiza_12Z</userString>
@@ -1220,8 +1220,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>390</rpm_min>
-			<rpm_max>2350</rpm_max>
+			<rpm_min>397</rpm_min>
+			<rpm_max>2329</rpm_max>
 		</Hispano_Suiza_12Z>
 		<Aster>
 			<userString>#france_vehicles:Aster</userString>
@@ -1239,8 +1239,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>333</rpm_min>
-			<rpm_max>2033</rpm_max>
+			<rpm_min>324</rpm_min>
+			<rpm_max>2050</rpm_max>
 		</Aster>
 		<Somua_LM>
 			<userString>#france_vehicles:Somua_LM</userString>
@@ -1335,8 +1335,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_295>
 		<Maybach_HL_295_CL_850>
 			<userString>#france_vehicles:Maybach_HL_295</userString>
@@ -1355,8 +1355,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>429</rpm_min>
-			<rpm_max>2817</rpm_max>
+			<rpm_min>524</rpm_min>
+			<rpm_max>2602</rpm_max>
 		</Maybach_HL_295_CL_850>
 		<Maybach_HL_295_FL>
 			<userString>#france_vehicles:Maybach_HL_295</userString>
@@ -1375,16 +1375,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_295_FL>
 		<Saurer>
 			<userString>#france_vehicles:Saurer</userString>
 			<tags>diesel</tags>
 			<level>9</level>
 			<price>99800</price>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1000</power>
 			<weight>750</weight>
 			<maxHealth>260</maxHealth>
@@ -1394,8 +1394,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</Saurer>
 		<Saurer_1000>
 			<userString>#france_vehicles:Saurer_1000</userString>
@@ -1403,8 +1403,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1120</power>
 			<weight>750</weight>
 			<maxHealth>360</maxHealth>
@@ -1414,8 +1414,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>221</rpm_min>
-			<rpm_max>2536</rpm_max>
+			<rpm_min>340</rpm_min>
+			<rpm_max>2220</rpm_max>
 		</Saurer_1000>
 		<Saurer_1000_7x7>
 			<userString>#france_vehicles:Saurer_1000</userString>
@@ -1423,8 +1423,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1120</power>
 			<weight>750</weight>
 			<maxHealth>360</maxHealth>
@@ -1434,8 +1434,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>221</rpm_min>
-			<rpm_max>2536</rpm_max>
+			<rpm_min>340</rpm_min>
+			<rpm_max>2220</rpm_max>
 		</Saurer_1000_7x7>
 		<Saurer_F155>
 			<userString>#france_vehicles:Saurer_F155</userString>
@@ -1443,8 +1443,8 @@
 			<level>10</level>
 			<price>110000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1000</power>
 			<weight>750</weight>
 			<maxHealth>360</maxHealth>
@@ -1454,8 +1454,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>400</rpm_min>
+			<rpm_max>2100</rpm_max>
 		</Saurer_F155>
 		<Aster_M>
 			<userString>#france_vehicles:Aster_M</userString>
@@ -1473,8 +1473,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>328</rpm_min>
-			<rpm_max>2042</rpm_max>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</Aster_M>
 		<AMX_B_270>
 			<userString>#france_vehicles:AMX_B_270</userString>
@@ -1511,8 +1511,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>468</rpm_min>
-			<rpm_max>2300</rpm_max>
+			<rpm_min>458</rpm_min>
+			<rpm_max>2333</rpm_max>
 		</AMX_B_271>
 		<AMX_B_272>
 			<userString>#france_vehicles:AMX_B_272</userString>
@@ -1530,8 +1530,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>418</rpm_min>
-			<rpm_max>2460</rpm_max>
+			<rpm_min>391</rpm_min>
+			<rpm_max>2547</rpm_max>
 		</AMX_B_272>
 		<MATHIS>
 			<userString>#france_vehicles:MATHIS</userString>
@@ -1549,8 +1549,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>468</rpm_min>
-			<rpm_max>2300</rpm_max>
+			<rpm_min>458</rpm_min>
+			<rpm_max>2333</rpm_max>
 		</MATHIS>
 		<Mathis_210>
 			<userString>#france_vehicles:Mathis_210</userString>
@@ -1568,8 +1568,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>424</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2521</rpm_max>
 		</Mathis_210>
 		<Mathis_300>
 			<userString>#france_vehicles:Mathis_300</userString>
@@ -1587,8 +1587,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>374</rpm_min>
-			<rpm_max>2601</rpm_max>
+			<rpm_min>332</rpm_min>
+			<rpm_max>2735</rpm_max>
 		</Mathis_300>
 		<Mathis_300_exp>
 			<userString>#france_vehicles:Mathis_300_exp</userString>
@@ -1607,8 +1607,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>431</rpm_min>
-			<rpm_max>2420</rpm_max>
+			<rpm_min>408</rpm_min>
+			<rpm_max>2494</rpm_max>
 		</Mathis_300_exp>
 		<Astazou_XVI>
 			<userString>#france_vehicles:Astazou_XVI</userString>
@@ -1627,8 +1627,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Astazou_XVI>
 		<Maybach_HL_295_F>
 			<userString>#france_vehicles:Maybach_HL_295_F</userString>
@@ -1647,8 +1647,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>404</rpm_min>
-			<rpm_max>2305</rpm_max>
+			<rpm_min>411</rpm_min>
+			<rpm_max>2282</rpm_max>
 		</Maybach_HL_295_F>
 		<Maybach_HL_295_F_bob>
 			<userString>#france_vehicles:Maybach_HL_295_F</userString>
@@ -1667,8 +1667,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>404</rpm_min>
-			<rpm_max>2305</rpm_max>
+			<rpm_min>411</rpm_min>
+			<rpm_max>2282</rpm_max>
 		</Maybach_HL_295_F_bob>
 		<Maybach_HL_295_F_fallout>
 			<userString>#france_vehicles:Maybach_HL_295_F_fallout</userString>
@@ -1687,8 +1687,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>404</rpm_min>
-			<rpm_max>2305</rpm_max>
+			<rpm_min>411</rpm_min>
+			<rpm_max>2282</rpm_max>
 		</Maybach_HL_295_F_fallout>
 		<Maybach_HL_295_FA>
 			<userString>#france_vehicles:Maybach_HL_295_FA</userString>
@@ -1707,8 +1707,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>404</rpm_min>
-			<rpm_max>2305</rpm_max>
+			<rpm_min>411</rpm_min>
+			<rpm_max>2282</rpm_max>
 		</Maybach_HL_295_FA>
 		<Somua_190CV_V8>
 			<userString>#france_vehicles:Somua_190CV_V8</userString>
@@ -1745,8 +1745,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>302</rpm_min>
-			<rpm_max>2095</rpm_max>
+			<rpm_min>290</rpm_min>
+			<rpm_max>2119</rpm_max>
 		</Hispano_219CV_V8>
 		<Somua_230_V8>
 			<userString>#france_vehicles:Somua_230_V8</userString>
@@ -1764,8 +1764,8 @@
 				0.20
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>481</rpm_min>
-			<rpm_max>2260</rpm_max>
+			<rpm_min>474</rpm_min>
+			<rpm_max>2280</rpm_max>
 		</Somua_230_V8>
 		<Sovam_de_150cv>
 			<userString>#france_vehicles:Sovam_de_150cv</userString>
@@ -1792,8 +1792,8 @@
 			<tags>gasoline</tags>
 			<level>7</level>
 			<price>35500</price>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>650</power>
 			<weight>850</weight>
 			<maxHealth>160</maxHealth>
@@ -1803,8 +1803,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>632</rpm_min>
-			<rpm_max>2354</rpm_max>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2727</rpm_max>
 		</Maybach_HL_210_TRM_P30>
 		<Maybach_HL_230_TRM_P30>
 			<userString>#france_vehicles:Maybach_HL_230_TRM_P30</userString>
@@ -1823,8 +1823,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>564</rpm_min>
-			<rpm_max>2508</rpm_max>
+			<rpm_min>700</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Maybach_HL_230_TRM_P30>
 		<Maybach_850CV>
 			<userString>#france_vehicles:Maybach_850CV</userString>
@@ -1843,16 +1843,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_850CV>
 		<Ford_GAC_R>
 			<userString>#france_vehicles:Ford_GAC_R</userString>
 			<tags>gasoline</tags>
 			<level>8</level>
 			<price>59000</price>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>600</power>
 			<weight>780</weight>
 			<maxHealth>260</maxHealth>
@@ -1862,16 +1862,16 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2551</rpm_max>
 		</Ford_GAC_R>
 		<Continental_AV-1790-7B>
 			<userString>#france_vehicles:Continental_AV-1790-7B</userString>
 			<tags>gasoline</tags>
 			<level>10</level>
 			<price>100000</price>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>630</power>
 			<weight>780</weight>
 			<maxHealth>285</maxHealth>
@@ -1881,8 +1881,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>659</rpm_min>
-			<rpm_max>2292</rpm_max>
+			<rpm_min>369</rpm_min>
+			<rpm_max>2657</rpm_max>
 		</Continental_AV-1790-7B>
 		<Cummins_VT8-460>
 			<userString>#france_vehicles:Cummins_VT8-460</userString>
@@ -1890,8 +1890,8 @@
 			<level>5</level>
 			<price>13500</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>550</power>
 			<weight>550</weight>
 			<maxHealth>176</maxHealth>
@@ -1901,8 +1901,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>280</rpm_min>
-			<rpm_max>2901</rpm_max>
+			<rpm_min>449</rpm_min>
+			<rpm_max>2375</rpm_max>
 		</Cummins_VT8-460>
 		<Moteur_moderne_3M_27_1_01>
 			<userString>#france_vehicles:Moteur_moderne_3M_27_1_01</userString>
@@ -1910,8 +1910,8 @@
 			<tags>gasoline</tags>
 			<level>6</level>
 			<price>24600</price>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>635</weight>
 			<maxHealth>160</maxHealth>
@@ -1921,8 +1921,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>312</rpm_min>
-			<rpm_max>2801</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Moteur_moderne_3M_27_1_01>
 		<Moteur_moderne_3M_27_F128>
 			<userString>#france_vehicles:Moteur_moderne_3M_27_F128</userString>
@@ -1941,8 +1941,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>349</rpm_min>
-			<rpm_max>2681</rpm_max>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2842</rpm_max>
 		</Moteur_moderne_3M_27_F128>
 		<Moteur_moderne_4M_26_1>
 			<userString>#france_vehicles:Moteur_moderne_4M_26_1</userString>
@@ -1950,8 +1950,8 @@
 			<level>10</level>
 			<price>125000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>620</power>
 			<weight>800</weight>
 			<maxHealth>360</maxHealth>
@@ -1961,8 +1961,8 @@
 				0.20
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>672</rpm_min>
-			<rpm_max>2261</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2622</rpm_max>
 		</Moteur_moderne_4M_26_1>
 		<Maybach_HL_295_003_Somua>
 			<userString>#france_vehicles:Maybach_HL_295_003_Somua</userString>
@@ -1981,8 +1981,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>564</rpm_min>
-			<rpm_max>2508</rpm_max>
+			<rpm_min>700</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Maybach_HL_295_003_Somua>
 		<Maybach_HL_295_a_injection_d_essence>
 			<userString>#france_vehicles:Maybach_HL_295_a_injection_d_essence</userString>
@@ -2000,8 +2000,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>432</rpm_min>
-			<rpm_max>2215</rpm_max>
+			<rpm_min>441</rpm_min>
+			<rpm_max>2188</rpm_max>
 		</Maybach_HL_295_a_injection_d_essence>
 		<Maybach_HL_295_a_injection_d_essence_FL>
 			<userString>#france_vehicles:Maybach_HL_295_a_injection_d_essence</userString>
@@ -2020,8 +2020,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>432</rpm_min>
-			<rpm_max>2215</rpm_max>
+			<rpm_min>441</rpm_min>
+			<rpm_max>2188</rpm_max>
 		</Maybach_HL_295_a_injection_d_essence_FL>
 		<SOFAM_G_s_c_4>
 			<userString>#france_vehicles:SOFAM_G_s_c_4</userString>
@@ -2241,8 +2241,8 @@
 			<level>5</level>
 			<price>13500</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>410</power>
 			<weight>2318</weight>
 			<maxHealth>176</maxHealth>
@@ -2252,8 +2252,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>217</rpm_min>
-			<rpm_max>2265</rpm_max>
+			<rpm_min>489</rpm_min>
+			<rpm_max>1920</rpm_max>
 		</General_Motors_6046_Series_71>
 		<Continental_R975C>
 			<userString>#france_vehicles:Continental_R975C</userString>
@@ -2261,8 +2261,8 @@
 			<level>6</level>
 			<price>25100</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>530</power>
 			<weight>550</weight>
 			<maxHealth>234</maxHealth>
@@ -2272,8 +2272,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>293</rpm_min>
-			<rpm_max>2861</rpm_max>
+			<rpm_min>469</rpm_min>
+			<rpm_max>2305</rpm_max>
 		</Continental_R975C>
 		<Maybach_HL_230_TRM_P30_B>
 			<userString>#france_vehicles:Maybach_HL_230_TRM_P30_B</userString>
@@ -2293,8 +2293,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>564</rpm_min>
-			<rpm_max>2508</rpm_max>
+			<rpm_min>700</rpm_min>
+			<rpm_max>2200</rpm_max>
 		</Maybach_HL_230_TRM_P30_B>
 		<Renault_Reinastella>
 			<userString>#france_vehicles:Renault_Reinastella</userString>
@@ -2333,8 +2333,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>354</rpm_min>
-			<rpm_max>2136</rpm_max>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2060</rpm_max>
 		</E_9>
 		<Maybach_HL_295_IGR>
 			<userString>#igr_vehicles:Maybach_HL_295_IGR</userString>
@@ -2353,8 +2353,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>362</rpm_min>
-			<rpm_max>2972</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_295_IGR>
 		<Detroit_Diesel_6V53T-S_IGR>
 			<userString>#igr_vehicles:Detroit_Diesel_6V53T-S_IGR</userString>
@@ -2363,8 +2363,8 @@
 			<level>9</level>
 			<price>39740</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>470</power>
 			<weight>770</weight>
 			<maxHealth>360</maxHealth>
@@ -2374,8 +2374,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>394</rpm_min>
-			<rpm_max>2016</rpm_max>
+			<rpm_min>429</rpm_min>
+			<rpm_max>2040</rpm_max>
 		</Detroit_Diesel_6V53T-S_IGR>
 		<Renault_A_IGR>
 			<userString>#igr_vehicles:Renault_A_IGR</userString>
@@ -2394,8 +2394,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>432</rpm_min>
-			<rpm_max>2414</rpm_max>
+			<rpm_min>410</rpm_min>
+			<rpm_max>2486</rpm_max>
 		</Renault_A_IGR>
 		<Somua_S-40Bis_IGR>
 			<userString>#igr_vehicles:Somua_S-40Bis_IGR</userString>
@@ -2414,8 +2414,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>462</rpm_min>
-			<rpm_max>2320</rpm_max>
+			<rpm_min>449</rpm_min>
+			<rpm_max>2360</rpm_max>
 		</Somua_S-40Bis_IGR>
 		<Sovam_de_250cv_IGR>
 			<userString>#igr_vehicles:Sovam_de_250cv_IGR</userString>
@@ -2454,8 +2454,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>328</rpm_min>
-			<rpm_max>2216</rpm_max>
+			<rpm_min>279</rpm_min>
+			<rpm_max>2361</rpm_max>
 		</Hispano-Suiza_HS110_IGR>
 		<Development_Engine>
 			<userString>Development Engine</userString>
@@ -2463,8 +2463,8 @@
 			<level>5</level>
 			<notInShop>true</notInShop>
 			<price>1</price>
-			<wwsoundPC>eng_cadillac_series_42_pc</wwsoundPC>
-			<wwsoundNPC>eng_cadillac_series_42_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
 			<power>540</power>
 			<weight>750</weight>
 			<maxHealth>105</maxHealth>
@@ -2474,8 +2474,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>3000</rpm_max>
+			<rpm_min>359</rpm_min>
+			<rpm_max>2181</rpm_max>
 		</Development_Engine>
 		<AMX_B_271_SH>
 			<userString>#france_vehicles:AMX_B_271_SH</userString>
@@ -2483,8 +2483,8 @@
 			<level>1</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>600</power>
 			<weight>1000</weight>
 			<maxHealth>103</maxHealth>
@@ -2494,8 +2494,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>700</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>399</rpm_min>
+			<rpm_max>2551</rpm_max>
 		</AMX_B_271_SH>
 		<Detroit_Diesel_6V53T_SH>
 			<userString>#france_vehicles:Detroit_Diesel_6V53T_SH</userString>
@@ -2503,8 +2503,8 @@
 			<level>3</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>900</power>
 			<weight>1000</weight>
 			<maxHealth>103</maxHealth>
@@ -2514,8 +2514,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>280</rpm_min>
-			<rpm_max>2360</rpm_max>
+			<rpm_min>450</rpm_min>
+			<rpm_max>2000</rpm_max>
 		</Detroit_Diesel_6V53T_SH>
 		<Hispano-Suiza_HS110_SH>
 			<userString>#france_vehicles:Hispano-Suiza_HS110_SH</userString>
@@ -2523,8 +2523,8 @@
 			<level>3</level>
 			<price>0</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>1200</power>
 			<weight>1000</weight>
 			<maxHealth>103</maxHealth>
@@ -2534,8 +2534,8 @@
 				0.0
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>200</rpm_min>
-			<rpm_max>2600</rpm_max>
+			<rpm_min>300</rpm_min>
+			<rpm_max>2300</rpm_max>
 		</Hispano-Suiza_HS110_SH>
 		<_6F11SRY_MapsTraining_Dummy_SPG_2>
 			<userString>#france_vehicles:_6F11SRY</userString>
@@ -2553,8 +2553,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>275</rpm_min>
-			<rpm_max>2149</rpm_max>
+			<rpm_min>259</rpm_min>
+			<rpm_max>2180</rpm_max>
 			<notInShop>True</notInShop>
 		</_6F11SRY_MapsTraining_Dummy_SPG_2>
 		<Maybach_HL_230_bootcamp>
@@ -2562,8 +2562,8 @@
 			<tags>gasoline</tags>
 			<level>6</level>
 			<price>26000</price>
-			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>575</power>
 			<weight>700</weight>
 			<maxHealth>160</maxHealth>
@@ -2573,8 +2573,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>265</rpm_min>
-			<rpm_max>2951</rpm_max>
+			<rpm_min>424</rpm_min>
+			<rpm_max>2463</rpm_max>
 			<notInShop>True</notInShop>
 		</Maybach_HL_230_bootcamp>
 	</shared>

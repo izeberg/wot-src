@@ -5,14 +5,8 @@
 	<extent>64</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.55123 -0.0012706 -2.94611
-			<!--BW_String-->
-		</min>
-		<max>
-			1.52016 1.79281 2.22201
-			<!--BW_String-->
-		</max>
+		<min>-1.551231 -0.001271 -2.946115</min>
+		<max>1.520156 1.792807 2.222005</max>
 	</visibilityBox>
 	<tank>true</tank>
 </root>

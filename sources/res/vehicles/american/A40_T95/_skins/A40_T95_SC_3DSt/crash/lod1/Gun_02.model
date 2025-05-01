@@ -4,4 +4,8 @@
 	<parent>vehicles/american/A40_T95/_skins/A40_T95_SC_3DSt/crash/lod2/Gun_02</parent>
 	<extent>64.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.543703 -0.587585 0.063804</min>
+		<max>0.554752 0.600607 6.229754</max>
+	</visibilityBox>
 </root>

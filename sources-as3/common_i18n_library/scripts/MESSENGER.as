@@ -933,6 +933,10 @@ package
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_PIECES:String = "#messenger:serviceChannelMessages/invoiceReceived/pieces";
       
+      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_FORMAT_ITEMS_DEFAULT:String = "#messenger:serviceChannelMessages/invoiceReceived/format/items/default";
+      
+      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_FORMAT_ITEMS_CREWBOOK:String = "#messenger:serviceChannelMessages/invoiceReceived/format/items/crewBook";
+      
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_RENTDAYS:String = "#messenger:serviceChannelMessages/invoiceReceived/rentDays";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_CREWONVEHICLE:String = "#messenger:serviceChannelMessages/invoiceReceived/crewOnVehicle";
@@ -2436,6 +2440,34 @@ package
       public static const SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_HEADER:String = "#messenger:serviceChannelMessages/newYearMandarinsConvert/header";
       
       public static const SERVICECHANNELMESSAGES_NEWYEARMANDARINSCONVERT_TEXT:String = "#messenger:serviceChannelMessages/newYearMandarinsConvert/text";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATS_HEADER:String = "#messenger:serviceChannelMessages/playStreakCongrats/header";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_PERIODIC_BODY:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/periodic/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_REGULAR_BODY:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/regular/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_RANDOM_PREFIX:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/random/prefix";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_RANDOM_EQUIPMENT:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/random/equipment";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHREWARDS_RANDOM_GOODIE:String = "#messenger:serviceChannelMessages/playStreakCongratsWithRewards/random/goodie";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKCONGRATSWITHOUTREWARDS_BODY:String = "#messenger:serviceChannelMessages/playStreakCongratsWithoutRewards/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKPAUSEUSED_BODY:String = "#messenger:serviceChannelMessages/playStreakPauseUsed/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKDROPPROGRESS_BODY:String = "#messenger:serviceChannelMessages/playStreakDropProgress/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKUNAVAILABLE_BODY:String = "#messenger:serviceChannelMessages/playStreakUnavailable/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKAVAILABLE_BODY:String = "#messenger:serviceChannelMessages/playStreakAvailable/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZES_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezes/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESINPROGRESS_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesInProgress/body";
+      
+      public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESEND_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesEnd/body";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

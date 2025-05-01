@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl35_CS_57_Sokol/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.745757 -0.926306 -3.417201</min>
+		<max>1.745647 0.564514 3.306277</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl35_CS_57_Sokol/crash/lod3/Hull</nodefullVisual>
+</root>

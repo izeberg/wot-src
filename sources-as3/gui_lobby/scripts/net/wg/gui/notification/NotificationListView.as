@@ -16,6 +16,7 @@ package net.wg.gui.notification
    import net.wg.gui.components.popovers.PopoverInternalLayout;
    import net.wg.gui.data.TabDataVO;
    import net.wg.gui.lobby.progressiveReward.ProgressiveRewardWidget;
+   import net.wg.gui.notification.events.NotificationRegisteringEvent;
    import net.wg.gui.notification.events.ServiceMessageEvent;
    import net.wg.gui.notification.vo.NotificationInfoVO;
    import net.wg.gui.notification.vo.NotificationMessagesListVO;
@@ -153,6 +154,8 @@ package net.wg.gui.notification
          this.list.verticalScrollStep = this._scrollStepSize;
          this.list.addEventListener(ServiceMessageEvent.MESSAGE_BUTTON_CLICKED,this.onListMessageButtonClickedHandler,false,0,true);
          this.list.addEventListener(ServiceMessageEvent.MESSAGE_LINK_CLICKED,this.onListMessageLinkClickedHandler,false,0,true);
+         this.list.addEventListener(NotificationRegisteringEvent.REGISTER_SM,this.onRegisterComponentHandler,false,0,true);
+         App.stage.addEventListener(NotificationRegisteringEvent.UNREGISTER_SM,this.onUnregisterComponentHandler,false,0,true);
          this.list.addEventListener(Event.SCROLL,this.onListScrollHandler);
          this.list.addEventListener(ScrollEvent.UPDATE_SIZE,this.onListUpdateSizeHandler);
          this.scrollBar.addEventListener(Event.SCROLL,this.onScrollBarScrollHandler);
@@ -172,6 +175,8 @@ package net.wg.gui.notification
          this.list.removeEventListener(ScrollEvent.UPDATE_SIZE,this.onListUpdateSizeHandler);
          this.list.removeEventListener(ServiceMessageEvent.MESSAGE_BUTTON_CLICKED,this.onListMessageButtonClickedHandler);
          this.list.removeEventListener(ServiceMessageEvent.MESSAGE_LINK_CLICKED,this.onListMessageLinkClickedHandler);
+         this.list.removeEventListener(NotificationRegisteringEvent.REGISTER_SM,this.onRegisterComponentHandler);
+         App.stage.removeEventListener(NotificationRegisteringEvent.UNREGISTER_SM,this.onUnregisterComponentHandler);
          this.list.dispose();
          this.list = null;
          this.background = null;
@@ -250,16 +255,17 @@ package net.wg.gui.notification
       
       override protected function setMessagesList(param1:NotificationMessagesListVO) : void
       {
-         var _loc2_:NotificationInfoVO = null;
+         var _loc3_:NotificationInfoVO = null;
+         var _loc2_:IDataProvider = param1.messages;
          this.setTabIndex(param1.btnBarSelectedIdx);
          this.emptyListTF.visible = StringUtils.isNotEmpty(param1.emptyListText);
          if(this.emptyListTF.visible)
          {
             this.emptyListTF.text = param1.emptyListText;
          }
-         for each(_loc2_ in param1.messages)
+         for each(_loc3_ in _loc2_)
          {
-            this.updateTimestamp(_loc2_);
+            this.updateTimestamp(_loc3_);
          }
          this.list.setData(param1);
       }
@@ -495,6 +501,18 @@ package net.wg.gui.notification
       {
          param1.stopImmediatePropagation();
          onClickActionS(param1.typeID,param1.entityID,param1.action);
+      }
+      
+      private function onRegisterComponentHandler(param1:NotificationRegisteringEvent) : void
+      {
+         param1.stopImmediatePropagation();
+         registerGFNotificationS(param1.injectInstance,param1.alias,param1.gfViewName,false,param1.linkageData);
+      }
+      
+      private function onUnregisterComponentHandler(param1:NotificationRegisteringEvent) : void
+      {
+         param1.stopImmediatePropagation();
+         unregisterFlashComponentS(param1.alias);
       }
    }
 }

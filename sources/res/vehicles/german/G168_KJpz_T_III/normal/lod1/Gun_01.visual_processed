@@ -74,9 +74,46 @@
 				0
 				<material>
 					<identifier>tank_guns_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G168_KJpz_T_III/KJpz_T_III_guns_GMM.dds</Texture>
@@ -97,18 +134,6 @@
 						colorIdMap
 						<Texture>vehicles/german/G168_KJpz_T_III/KJpz_T_III_guns_ID.dds</Texture>
 					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>7.013699 3.506849 0.000000 0.000000</Vector4>
-					</property>
 				</material>
 				<groupOrigin>-0.000005 1.777529 -2.831478</groupOrigin>
 			</primitiveGroup>
@@ -119,6 +144,6 @@
 		<min>-1.296317 -0.430744 -1.599090</min>
 		<max>1.296306 3.985802 7.262046</max>
 	</boundingBox>
-	<geometrySize>96456</geometrySize>
+	<geometrySize>96812</geometrySize>
 	<minUVDensity>0.013040</minUVDensity>
 </root>

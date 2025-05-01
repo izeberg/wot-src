@@ -256,6 +256,9 @@ package net.wg.gui.lobby.battleResults
             case ArenaBonusTypes.COMP7:
                this._controller = new Comp7TeamStatsController(this);
                break;
+            case ArenaBonusTypes.TOURNAMENT_COMP7:
+               this._controller = new Comp7TeamStatsController(this);
+               break;
             default:
                if(this._enableScrollbars)
                {

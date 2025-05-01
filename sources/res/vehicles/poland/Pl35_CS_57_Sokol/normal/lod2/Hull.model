@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl35_CS_57_Sokol/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl35_CS_57_Sokol/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.748533 -0.504987 -3.487642</min>
+		<max>1.745647 0.586034 3.316919</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

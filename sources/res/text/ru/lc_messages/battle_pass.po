@@ -443,6 +443,9 @@ msgstr "Взвейся, знамя!"
 msgid "chapter/fullName/164"
 msgstr "Победный марш"
 
+msgid "chapter/fullName/165"
+msgstr "Охота на мышей"
+
 msgid "chapter/fullName/2"
 msgstr "Восточный ветер"
 
@@ -451,6 +454,9 @@ msgstr "Взвейся, знамя!"
 
 msgid "chapter/fullName/4"
 msgstr "Победный марш"
+
+msgid "chapter/fullName/5"
+msgstr "Охота на мышей"
 
 msgid "chapter/fullName/quoted/145"
 msgstr "Красная Фурия"
@@ -479,6 +485,9 @@ msgstr "Взвейся, знамя!"
 msgid "chapter/fullName/quoted/164"
 msgstr "Победный марш"
 
+msgid "chapter/fullName/quoted/165"
+msgstr "Охота на мышей"
+
 msgid "chapter/fullNameUppercased/145"
 msgstr "КРАСНАЯ ФУРИЯ"
 
@@ -506,6 +515,9 @@ msgstr "ВЗВЕЙСЯ, ЗНАМЯ!"
 msgid "chapter/fullNameUppercased/164"
 msgstr "ПОБЕДНЫЙ МАРШ"
 
+msgid "chapter/fullNameUppercased/165"
+msgstr "ОХОТА НА МЫШЕЙ"
+
 msgid "chapter/fullNameUppercased/quoted/145"
 msgstr "КРАСНАЯ ФУРИЯ"
 
@@ -532,6 +544,9 @@ msgstr "ВЗВЕЙСЯ, ЗНАМЯ!"
 
 msgid "chapter/fullNameUppercased/quoted/164"
 msgstr "ПОБЕДНЫЙ МАРШ"
+
+msgid "chapter/fullNameUppercased/quoted/165"
+msgstr "ОХОТА НА МЫШЕЙ"
 
 msgid "chapter/title"
 msgstr "ГЛАВА %(chapter)s"
@@ -638,6 +653,11 @@ msgstr ""
 
 msgid "chapterChoice/tooltip/disabledChapter/header"
 msgstr "Глава недоступна"
+
+msgid "chapterChoice/triggerHint/hasActiveMarathon"
+msgstr ""
+"АКТИВИРУЙТЕ\n"
+"СПЕЦИАЛЬНУЮ ГЛАВУ"
 
 msgid "chapterChoice/triggerHint/noActiveHasMarathon"
 msgstr ""
@@ -931,6 +951,16 @@ msgstr "Бонус за достижение лимита"
 msgid "intro/button"
 msgstr "Так точно!"
 
+msgid "intro/chapter/text"
+msgstr ""
+"Специальная глава «Охота на мышей» посвящена захвату образцов немецкого "
+"танка Maus и будет доступна для прохождения до 11.06.2025. В качестве "
+"главной награды вас ждёт тяжёлый танк Трофейная «Мышь» и тематический член "
+"экипажа."
+
+msgid "intro/chapter/title"
+msgstr "Глава «Охота на мышей»"
+
 msgid "intro/limit/text"
 msgstr ""
 "На всей технике VI-XI уровней устанавливаются одинаковые лимиты очков "
@@ -941,6 +971,12 @@ msgstr ""
 msgid "intro/limit/title"
 msgstr "Еженедельные лимиты очков"
 
+msgid "intro/marathonSubTitle"
+msgstr "Глава будет доступна с 29.05.2025 по 11.06.2025"
+
+msgid "intro/marathonTitle"
+msgstr "ДОСТУПНА СПЕЦИАЛЬНАЯ ГЛАВА"
+
 msgid "intro/subTitle"
 msgstr ""
 "Сезон посвящён 80-летию Победы в Великой Отечественной войне. Вас ждут "
@@ -948,7 +984,7 @@ msgstr ""
 "знаменательному событию."
 
 msgid "intro/title"
-msgstr "БОЕВОЙ ПРОПУСК: ПУТЬ К ПОБЕДЕ"
+msgstr "БОЕВОЙ ПРОПУСК: ОХОТА НА МЫШЕЙ"
 
 msgid "intro/vehicles/text"
 msgstr ""
@@ -1153,7 +1189,7 @@ msgid "progression/extraChapterWidget/crewTitle"
 msgstr "и %(name)s"
 
 msgid "progression/extraChapterWidget/styleCaption"
-msgstr "3D-стиль и член экипажа с озвучкой"
+msgstr "Член экипажа"
 
 msgid "progression/extraChapterWidget/styleRemark"
 msgstr "С Улучшенным пропуском"
@@ -1641,7 +1677,7 @@ msgstr ""
 
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr ""
-"В Ранговых боях доступен заработок очков за выполнение ежедневных задач."
+"Правила начисления очков в Ранговых боях на подходящей для режима технике."
 
 msgid "tooltips/inProgress/playGame/stronghold_units"
 msgstr ""

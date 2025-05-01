@@ -73,10 +73,10 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
@@ -98,24 +98,24 @@
 						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_proxy_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.339737 0.487362 0.012105</groupOrigin>
+				<groupOrigin>-1.341244 0.494554 0.014454</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>V_BlendBone</node>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>
 			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
@@ -137,15 +137,15 @@
 						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_proxy_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.337431 0.495163 -0.030402</groupOrigin>
+				<groupOrigin>1.341310 0.497599 -0.015659</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.728817 -0.011022 -3.519974</min>
-		<max>1.732077 1.001348 3.505662</max>
+		<min>-1.714556 -0.017426 -3.535593</min>
+		<max>1.714622 1.012624 3.535593</max>
 	</boundingBox>
-	<geometrySize>9428</geometrySize>
-	<minUVDensity>0.001897</minUVDensity>
+	<geometrySize>7992</geometrySize>
+	<minUVDensity>0.000834</minUVDensity>
 </root>

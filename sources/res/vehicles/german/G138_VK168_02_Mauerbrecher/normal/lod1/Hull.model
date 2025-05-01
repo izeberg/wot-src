@@ -3,16 +3,10 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.93157 -0.715878 -4.56989
-			<!--BW_String-->
-		</min>
-		<max>
-			1.93868 1.06451 4.62073
-			<!--BW_String-->
-		</max>
+		<min>-1.931570 -0.715878 -4.569890</min>
+		<max>1.938680 1.064510 4.620730</max>
 	</visibilityBox>
 	<parent>vehicles/german/G138_VK168_02_Mauerbrecher/normal/lod2/Hull</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<nodefullVisual>vehicles/german/G138_VK168_02_Mauerbrecher/normal/lod1/Hull</nodefullVisual>
 </root>

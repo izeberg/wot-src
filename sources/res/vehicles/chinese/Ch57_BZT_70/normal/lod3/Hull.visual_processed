@@ -150,7 +150,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -182,10 +182,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/chinese/Ch57_BZT_70/BZT_70_hull_01_GMM.dds</Texture>
 					</property>
@@ -212,8 +208,8 @@
 	</renderSet>
 	<boundingBox>
 		<min>-2.202943 -0.635213 -3.964411</min>
-		<max>2.201063 0.533668 4.196223</max>
+		<max>2.201063 0.506642 4.196223</max>
 	</boundingBox>
-	<geometrySize>62858</geometrySize>
+	<geometrySize>61896</geometrySize>
 	<minUVDensity>0.001503</minUVDensity>
 </root>

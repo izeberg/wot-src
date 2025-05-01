@@ -49,10 +49,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_BAM.dds</Texture>
 					</property>
@@ -81,10 +77,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
 					</property>
 					<property>
 						diffuseMap
@@ -117,10 +109,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_BAM.dds</Texture>
 					</property>
@@ -131,6 +119,10 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_BGMM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.106378 1.031534 -0.032536</groupOrigin>

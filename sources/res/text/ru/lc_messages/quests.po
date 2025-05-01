@@ -1441,7 +1441,14 @@ msgid "classes/small/mediumTank"
 msgstr "СТ"
 
 msgid "dailyQuests/body/reroll"
-msgstr "Замена задачи"
+msgstr "Заменить условия"
+
+msgid "dailyQuests/bonus/locked/tooltip/body"
+msgstr ""
+"Выполните 3 стандартные ежедневные задачи, чтобы получить доступ к бонусной."
+
+msgid "dailyQuests/bonus/locked/tooltip/header"
+msgstr "Бонусная задача недоступна"
 
 msgid "dailyQuests/bonus/tooltipDescription"
 msgstr "Выполните 3 стандартные задачи, чтобы получить бонусную."
@@ -1457,6 +1464,9 @@ msgstr "Истекает через %H ч %M мин"
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Истекает через %MM:%SS"
+
+msgid "dailyQuests/completed/title"
+msgstr "Выполненные задачи"
 
 msgid "dailyQuests/condition/destroyModule_few"
 msgstr "Совершить %(value)d критических попадания в бою"
@@ -1486,7 +1496,8 @@ msgid "dailyQuests/condition/destroyVeh_singular"
 msgstr "Уничтожить %(value)d ед. техники за бой"
 
 msgid "dailyQuests/condition/dmgTop"
-msgstr "Попасть в топ-%(value)d по урону в своей команде"
+msgstr ""
+"Попасть в топ-%(value)d по урону в своей команде указанное количество раз"
 
 msgid "dailyQuests/condition/dmgTop_first"
 msgstr "Занять первое место по урону в своей команде\t"
@@ -1510,13 +1521,17 @@ msgid "dailyQuests/condition/earnExp_accum"
 msgstr "Заработать %(value)d «чистого» опыта"
 
 msgid "dailyQuests/condition/expTop"
-msgstr "Попасть в топ-%(value)d по опыту в своей команде"
+msgstr ""
+"Попасть в топ-%(value)d по опыту в своей команде указанное количество раз"
 
 msgid "dailyQuests/condition/expTop_first"
 msgstr "Занять первое место по опыту в своей команде"
 
 msgid "dailyQuests/condition/spotVeh_few"
 msgstr "Обнаружить %(value)d ед. техники за бой"
+
+msgid "dailyQuests/condition/spotVeh_few_accum"
+msgstr "Обнаружить %(value)d ед. техники за любое количество боёв"
 
 msgid "dailyQuests/condition/winBattle"
 msgstr "Победить в бою"
@@ -1525,10 +1540,18 @@ msgid "dailyQuests/condition/winBattle_accum"
 msgstr "Победить в %(value)d боях"
 
 msgid "dailyQuests/countDown/remainingText"
-msgstr "до следующих доступных стандартных задач"
+msgstr "До обновления задач:"
 
 msgid "dailyQuests/countDown/title"
-msgstr "Вы выполнили все стандартные задачи на сегодня"
+msgstr "Все стандартные ежедневные задачи выполнены, ждём вас завтра"
+
+msgid "dailyQuests/countDown/tooltip/body"
+msgstr ""
+"Ежедневные задачи доступны в течение суток и обновляются в 03.00 (МСК). "
+"После обновления будут заменены все стандартные, бонусная и премиум задачи."
+
+msgid "dailyQuests/countDown/tooltip/header"
+msgstr "Обновление ежедневных задач"
 
 msgid "dailyQuests/footer/paragraph"
 msgstr ""
@@ -1543,6 +1566,9 @@ msgstr "ЕЖЕДНЕВНЫЕ ЗАДАЧИ"
 
 msgid "dailyQuests/header/winback"
 msgstr "СНОВА В СТРОЙ"
+
+msgid "dailyQuests/locked/title"
+msgstr "Выполнено задач:"
 
 msgid "dailyQuests/missionSwitch/tooltip/body/available"
 msgstr "Доступно через:"
@@ -1567,38 +1593,81 @@ msgstr "Замена задачи недоступна"
 msgid "dailyQuests/postBattle/and"
 msgstr "и"
 
+msgid "dailyQuests/postBattle/epic_condition_progress"
+msgstr "Выполнено ежедневных задач:"
+
 msgid "dailyQuests/postBattle/genericAmpersand"
 msgstr "и"
 
 msgid "dailyQuests/postBattle/genericTitle_bonus"
-msgstr "Бонусная задача"
+msgstr "Бонусная ежедневная задача"
 
 msgid "dailyQuests/postBattle/genericTitle_bonus_subs"
 msgstr "Бонусная задача (бонус за подписку)"
 
 msgid "dailyQuests/postBattle/genericTitle_easy"
-msgstr "Первая ежедневная задача"
+msgstr "Первая стандартная ежедневная задача"
+
+msgid "dailyQuests/postBattle/genericTitle_easy_premium"
+msgstr "Первая ежедневная премиум задача"
 
 msgid "dailyQuests/postBattle/genericTitle_easy_subs"
 msgstr "Первая ежедневная задача (бонус за подписку)"
 
 msgid "dailyQuests/postBattle/genericTitle_epic"
-msgstr "Особая награда"
+msgstr "Еженедельная задача"
 
 msgid "dailyQuests/postBattle/genericTitle_hard"
-msgstr "Третья ежедневная задача"
+msgstr "Третья стандартная ежедневная задача"
+
+msgid "dailyQuests/postBattle/genericTitle_hard_premium"
+msgstr "Третья ежедневная премиум задача"
 
 msgid "dailyQuests/postBattle/genericTitle_hard_subs"
 msgstr "Третья ежедневная задача (бонус за подписку)"
 
 msgid "dailyQuests/postBattle/genericTitle_medium"
-msgstr "Вторая ежедневная задача"
+msgstr "Вторая стандартная ежедневная задача"
+
+msgid "dailyQuests/postBattle/genericTitle_medium_premium"
+msgstr "Вторая ежедневная премиум задача"
 
 msgid "dailyQuests/postBattle/genericTitle_medium_subs"
 msgstr "Вторая ежедневная задача (бонус за подписку)"
 
+msgid "dailyQuests/premium/locked/tooltip/body"
+msgstr ""
+"Ежедневные премиум задачи доступны только при наличии премиум аккаунта. "
+
+msgid "dailyQuests/premium/locked/tooltip/header"
+msgstr "Задача недоступна"
+
+msgid "dailyQuests/tab/bull"
+msgstr "•"
+
+msgid "dailyQuests/tab/cathegory/tooltip/daily/body"
+msgstr "Нажмите, чтобы подробнее узнать о ежедневных задачах."
+
+msgid "dailyQuests/tab/cathegory/tooltip/daily/header"
+msgstr "О ежедневных задачах"
+
+msgid "dailyQuests/tab/completed"
+msgstr "Сегодняшние задачи выполнены, ждём вас завтра."
+
+msgid "dailyQuests/tab/disabled/reason"
+msgstr "Задачи недоступны по техническим причинам, ждём вас позже."
+
+msgid "dailyQuests/tab/disabled/title"
+msgstr "Стандартные задачи недоступны"
+
+msgid "dailyQuests/tab/hiddenBattleTypes"
+msgstr "..."
+
 msgid "dailyQuests/tab/label"
-msgstr "Стандартные"
+msgstr "Стандартные задачи:"
+
+msgid "dailyQuests/tab/progress"
+msgstr "%(current)s/%(total)s"
 
 msgid "dailyQuests/takeRewardsButton/countdown"
 msgstr "Доступны: {cream_Open}%(leftTime)s{cream_Close}"
@@ -1611,6 +1680,110 @@ msgstr "Нажмите, чтобы выбрать и забрать наград
 
 msgid "dailyQuests/takeRewardsButton/tooltipDisable"
 msgstr "Награды временно недоступны, приносим извинения за неудобства."
+
+msgid "dailyReroll/cancel"
+msgstr "Отменить"
+
+msgid "dailyReroll/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "dailyReroll/condition"
+msgstr "Замена условий доступна каждые %(count)s ч."
+
+msgid "dailyReroll/replace"
+msgstr "Заменить"
+
+msgid "dailyReroll/subtitle"
+msgstr "Будут заменены условия всех невыполненных стандартных задач"
+
+msgid "dailyReroll/subtitlePremium"
+msgstr "Будут заменены условия всех невыполненных премиум задач"
+
+msgid "dailyReroll/subtitle_alert"
+msgstr ""
+"{cream_Open}Внимание!{cream_Close} Не все ваши машины вернулись из боя. "
+"После замены условий вы потеряете весь прогресс по текущим задачам, который "
+"мог быть достигнут в незавершённых боях."
+
+msgid "dailyReroll/title"
+msgstr "Заменить условия задач?"
+
+msgid "dailyReroll/tooltip/body/afterUpdate"
+msgstr ""
+"Выполнены все стандартные задачи. Возможность заменить условия станет "
+"доступна после обновления задач."
+
+msgid "dailyReroll/tooltip/body/afterUpdatePremium"
+msgstr ""
+"Выполнены все премиум задачи. Возможность заменить условия станет доступна "
+"после обновления задач."
+
+msgid "dailyReroll/tooltip/body/available"
+msgstr "Доступно через:"
+
+msgid "dailyReroll/tooltip/body/cantReroll"
+msgstr "Вы не можете заменить условия в текущих задачах."
+
+msgid "dailyReroll/tooltip/body/isEnabledReroll"
+msgstr ""
+"Замена задач недоступна по техническим причинам. Приносим извинения за "
+"приченённые неудобства."
+
+msgid "dailyReroll/tooltip/body/timeText"
+msgstr "Каждые %(time)s ч."
+
+msgid "dailyReroll/tooltip/body/timeUpdate"
+msgstr ""
+"%(timeText)s у вас есть возможность заменить условия на другие случайные во "
+"всех невыполненных %(name)s задачах. Награды за выполнение задач останутся "
+"прежними."
+
+msgid "dailyReroll/tooltip/header/noAccess"
+msgstr "Замена условий задач недоступна"
+
+msgid "dailyReroll/tooltip/header/title"
+msgstr "Заменить условия %(name)s задач"
+
+msgid "dailyReroll/tooltip/premium"
+msgstr "премиум"
+
+msgid "dailyReroll/tooltip/usual"
+msgstr "стандартных"
+
+msgid "dailyWidget/progress"
+msgstr "%(currentProgress)s/%(maxProgress)s"
+
+msgid "dailyWidget/tooltip/completed"
+msgstr "Все задачи выполнены"
+
+msgid "dailyWidget/tooltip/header/bonus"
+msgstr "Бонусная ежедневная задача"
+
+msgid "dailyWidget/tooltip/header/daily"
+msgstr "Стандартные ежедневные задачи"
+
+msgid "dailyWidget/tooltip/header/epic"
+msgstr "Еженедельная задача / Серия входов"
+
+msgid "dailyWidget/tooltip/header/premium"
+msgstr "Ежедневные премиум задачи"
+
+msgid "dailyWidget/tooltip/hiddenRewards"
+msgstr "И ещё %(count)s"
+
+msgid "dailyWidget/tooltip/hideQuests"
+msgstr "Ещё задач: %(count)s"
+
+msgid "dailyWidget/tooltip/notAvailable/description"
+msgstr ""
+"Задачи доступны при наличии\n"
+"Премиум аккаунта"
+
+msgid "dailyWidget/tooltip/notAvailable/header"
+msgstr "Недоступно"
+
+msgid "dailyWidget/tooltip/timer"
+msgstr "Обновление задач: %(timer)s"
 
 msgid "debutBoxes/missions/header/caption1"
 msgstr ""
@@ -4393,6 +4566,9 @@ msgstr "Часть боевой задачи"
 msgid "details/tasks/subTask"
 msgstr "Боевая задача"
 
+msgid "epicQuest/countDown/remainingText"
+msgstr "До сброса прогресса:"
+
 msgid "general/countdown/text/timer_hrs"
 msgstr "Замена доступна через %H ч %M мин"
 
@@ -4599,6 +4775,45 @@ msgstr ""
 
 msgid "infoPage/premiumMissionsTitle"
 msgstr "Премиум задачи"
+
+msgid "introScreen/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "introScreen/confirm"
+msgstr "Так точно!"
+
+msgid "introScreen/dailyQuests/description"
+msgstr ""
+"Ежедневные задачи состоят из стандартных и премиум задач. В рамках категории"
+" они имеют одинаковые условия, но разный необходимый результат. Задачи могут"
+" быть выполнены за любое количество боёв и обновляются раз в сутки."
+
+msgid "introScreen/dailyQuests/header"
+msgstr "Ежедневные задачи"
+
+msgid "introScreen/inputSeries/description"
+msgstr ""
+"Удлиняйте свою цепь побед, ежедневно выполняя боевую задачу; она всегда одна"
+" — победить в бою или получить 350 ед. «чистого» опыта. Накапливайте "
+"регулярные награды, сохраняя вашу цепь побед непрерывной."
+
+msgid "introScreen/inputSeries/header"
+msgstr "Цепь побед"
+
+msgid "introScreen/subtitle"
+msgstr ""
+"Интерфейс и механики ежедневных задач были полностью обновлены. Теперь во "
+"вкладке «Ежедневные» будут отображаться задачи на цепь побед и ежедневные "
+"задачи. Эти задачи выполняются независимо друг от друга, а для переключения "
+"между ними воспользуйтесь навигацией слева."
+
+msgid "introScreen/subtitleDailyQuestsOnly"
+msgstr ""
+"Интерфейс и механики ежедневных задач были полностью обновлены. Для "
+"переключения между задачами воспользуйтесь навигацией слева."
+
+msgid "introScreen/title"
+msgstr "ОБНОВЛЕНИЕ ЗАДАЧ"
 
 msgid "item/timer/tillFinish"
 msgstr "До окончания"
@@ -4985,7 +5200,7 @@ msgid "missions/tab/currentVehicle/header"
 msgstr "Для выбранной машины"
 
 msgid "missions/tab/daily/body"
-msgstr "Случайные условия, которые обновляются ежедневно после выполнения."
+msgstr "Случайные условия, которые обновляются ежедневно."
 
 msgid "missions/tab/daily/header"
 msgstr "Ежедневные задачи"
@@ -5137,6 +5352,12 @@ msgstr "Выбрано в Ангаре"
 msgid "missions/vehicleSelector/title"
 msgstr "Подходящая техника: %(count)s"
 
+msgid "modeSelector/tooltip/text"
+msgstr "...в следующих режимах:"
+
+msgid "modeSelector/tooltip/title"
+msgstr "Задачи можно выполнить..."
+
 msgid "personal/seasons/awardsButton"
 msgstr "Награды кампании"
 
@@ -5268,6 +5489,9 @@ msgstr "Выполнено основное условие"
 msgid "personalMission/status/sheetRecoveryInProgress"
 msgstr "Возврат бланка приказа: выполните основное и дополнительное условия"
 
+msgid "playStreak/tab/label"
+msgstr "Серия входов"
+
 msgid "postBattle/progressReset"
 msgstr "Одно из условий не выполнено, прогресс обнулён"
 
@@ -5297,7 +5521,7 @@ msgid "premiumQuests/countDown/remainingText"
 msgstr "до следующих доступных премиум задач"
 
 msgid "premiumQuests/countDown/title"
-msgstr "Вы выполнили все премиум задачи на сегодня"
+msgstr "Все ежедневные премиум задачи выполнены, ждём вас завтра"
 
 msgid "premiumQuests/detailedQuests/requirements/premiumAccount"
 msgstr "Необходим Танковый премиум аккаунт"
@@ -5316,23 +5540,28 @@ msgstr "Купить премиум"
 
 msgid "premiumQuests/notPremiumAccount/paragraph"
 msgstr ""
-"Танковый премиум аккаунт открывает доступ к цепочке из трёх премиум задач, а"
-" также даёт другие преимущества: +50% к заработку опыта и кредитов, "
-"хранилище кредитов, дополнительный слот для исключения карт и управляемый "
-"бонус к опыту."
+"Премиум аккаунт открывает доступ к трём ежедневным премиум задачам, а также "
+"даёт другие преимущества: +50% к заработку опыта и кредитов, хранилище "
+"кредитов, дополнительный слот для исключения карт и управляемый бонус к "
+"опыту."
+
+msgid "premiumQuests/notPremiumAccount/paragraphSmall"
+msgstr ""
+"Премиум аккаунт открывает доступ к трём ежедневным премиум задачам, а также "
+"даёт другие преимущества: +50% к заработку опыта и кредитов, хранилище "
+"кредитов и т.д."
 
 msgid "premiumQuests/notPremiumAccount/title"
-msgstr ""
-"Чтобы получить доступ к премиум задачам, необходим Танковый премиум аккаунт."
+msgstr "Для доступа к задачам необходим премиум аккаунт"
 
 msgid "premiumQuests/postBattle/genericTitle_easy"
-msgstr "Первая премиум задача"
+msgstr "Первая стандартная ежедневная задача"
 
 msgid "premiumQuests/postBattle/genericTitle_hard"
-msgstr "Третья премиум задача"
+msgstr "Третья стандартная ежедневная задача"
 
 msgid "premiumQuests/postBattle/genericTitle_medium"
-msgstr "Вторая премиум задача"
+msgstr "Вторая стандартная ежедневная задача"
 
 msgid "premiumQuests/quests/prem_acc_q01/title"
 msgstr "Первая премиум задача"
@@ -5343,11 +5572,18 @@ msgstr "Вторая премиум задача"
 msgid "premiumQuests/quests/prem_acc_q03/title"
 msgstr "Третья премиум задача"
 
+msgid "premiumQuests/tab/disabled/noPrem"
+msgstr "Задачи доступны при наличии Премиум аккаунта."
+
+msgid "premiumQuests/tab/disabled/title"
+msgstr "Премиум задачи недоступны"
+
 msgid "premiumQuests/tab/label"
-msgstr "Премиум"
+msgstr "Премиум задачи:"
 
 msgid "premiumQuests/tooltips/locked/body"
-msgstr "Выполните предыдущую премиум задачу для доступа к текущей."
+msgstr ""
+"Ежедневные премиум задачи доступны только при наличии премиум аккаунта."
 
 msgid "premiumQuests/tooltips/locked/header"
 msgstr "Задача недоступна"
@@ -5536,6 +5772,43 @@ msgstr "Прочие задачи"
 msgid "questsControl/title"
 msgstr "Личные боевые задачи"
 
+msgid "reward/tooltip/additionReward"
+msgstr "Дополнительная награда"
+
+msgid "reward/tooltip/customBody"
+msgstr ""
+"С активной подпиской вы сможете получать дополнительные награды за "
+"выполнение ежедневных задач."
+
+msgid "reward/tooltip/noAdditionReward"
+msgstr "Дополнительная награда недоступна"
+
+msgid "reward/tooltip/simpleBody"
+msgstr ""
+"Награды за задачу, выполненную до активации подписки, не пересчитываются. "
+"Доступ к слоту дополнительной награды откроется после обновления задачи."
+
+msgid "reward/tooltip/title"
+msgstr "Бонус подписки"
+
+msgid "switch/isDailyPremEnabled"
+msgstr ""
+"Премиум задачи временно недоступны по техническим причинам.\n"
+"Ждём вас позже."
+
+msgid "switch/isDailyRegularEnabled"
+msgstr ""
+"Стандартные задачи временно недоступны по техническим причинам.\n"
+"Ждём вас позже."
+
+msgid "switch/isWeeklyEnabled"
+msgstr "Еженедельная задача временно недоступна"
+
+msgid "switch/isWeeklyEnabledTitle"
+msgstr ""
+"Еженедельная задача недоступна по техническим причинам. Приносим извинения "
+"за приченённые неудобства."
+
 msgid "tileChainsView/title"
 msgstr "Операция «%(name)s»"
 
@@ -5689,3 +5962,29 @@ msgstr "Сортировать по нации"
 
 msgid "tooltip/vehTable/nation/header"
 msgstr "Нация"
+
+msgid "weeklyQuest/countDown/tooltip/body"
+msgstr ""
+"Еженедельная задача обновляется каждые 7 дней. После обновления задачи весь "
+"накопленный ранее прогресс будет сброшен."
+
+msgid "weeklyQuest/countDown/tooltip/header"
+msgstr "Обновление еженедельной задачи"
+
+msgid "weeklyQuest/description/default"
+msgstr "Выполнено ежедневных задач:"
+
+msgid "weeklyQuest/header/default"
+msgstr "Еженедельная задача"
+
+msgid "weeklyQuest/rewardScreen/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "weeklyQuest/rewardScreen/confirm"
+msgstr "Так точно!"
+
+msgid "weeklyQuest/rewardScreen/header"
+msgstr "ВЫПОЛНЕНА ЕЖЕНЕДЕЛЬНАЯ ЗАДАЧА"
+
+msgid "weeklyQuest/rewardScreen/subheader"
+msgstr "Получена награда за выполнение цепочки ежедневных задач."

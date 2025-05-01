@@ -445,6 +445,9 @@ msgstr "Узвіся, сцяг!"
 msgid "chapter/fullName/164"
 msgstr "Пераможны марш"
 
+msgid "chapter/fullName/165"
+msgstr "Паляванне на мышэй"
+
 msgid "chapter/fullName/2"
 msgstr "Усходні вецер"
 
@@ -453,6 +456,9 @@ msgstr "Узвіся, сцяг!"
 
 msgid "chapter/fullName/4"
 msgstr "Пераможны марш"
+
+msgid "chapter/fullName/5"
+msgstr "Паляванне на мышэй"
 
 msgid "chapter/fullName/quoted/145"
 msgstr "Чырвоная Фурыя"
@@ -481,6 +487,9 @@ msgstr "Узвіся, сцяг!"
 msgid "chapter/fullName/quoted/164"
 msgstr "Пераможны марш"
 
+msgid "chapter/fullName/quoted/165"
+msgstr "Паляванне на мышэй"
+
 msgid "chapter/fullNameUppercased/145"
 msgstr "ЧЫРВОНАЯ ФУРЫЯ"
 
@@ -508,6 +517,9 @@ msgstr "УЗВІСЯ, СЦЯГ!"
 msgid "chapter/fullNameUppercased/164"
 msgstr "ПЕРАМОЖНЫ МАРШ"
 
+msgid "chapter/fullNameUppercased/165"
+msgstr "ПАЛЯВАННЕ НА МЫШЭЙ"
+
 msgid "chapter/fullNameUppercased/quoted/145"
 msgstr "ЧЫРВОНАЯ ФУРЫЯ"
 
@@ -534,6 +546,9 @@ msgstr "УЗВІСЯ, СЦЯГ!"
 
 msgid "chapter/fullNameUppercased/quoted/164"
 msgstr "ПЕРАМОЖНЫ МАРШ"
+
+msgid "chapter/fullNameUppercased/quoted/165"
+msgstr "ПАЛЯВАННЕ НА МЫШЭЙ"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -643,6 +658,11 @@ msgstr ""
 
 msgid "chapterChoice/tooltip/disabledChapter/header"
 msgstr "Раздзел недаступны"
+
+msgid "chapterChoice/triggerHint/hasActiveMarathon"
+msgstr ""
+"АКТЫВУЙЦЕ\n"
+"АДМЫСЛОВЫ РАЗДЗЕЛ"
 
 msgid "chapterChoice/triggerHint/noActiveHasMarathon"
 msgstr ""
@@ -934,6 +954,15 @@ msgstr "Бонус за дасягненне ліміту"
 msgid "intro/button"
 msgstr "Так!"
 
+msgid "intro/chapter/text"
+msgstr ""
+"Адмысловы раздзел «Паляванне на мышэй» прысвечаны захопу ўзораў нямецкага "
+"танка Maus і будзе даступны для праходжання да 11.06.2025. У якасці галоўнай"
+" узнагароды вас чакае цяжкі танк Трафейная «Мыш» і тэматычны член экіпажа."
+
+msgid "intro/chapter/title"
+msgstr "Раздзел «Паляванне на мышэй»"
+
 msgid "intro/limit/text"
 msgstr ""
 "На ўсёй тэхніцы VI-XI узроўняў усталёўваюцца аднолькавыя ліміты ачкоў "
@@ -943,6 +972,12 @@ msgstr ""
 msgid "intro/limit/title"
 msgstr "Штотыднёвыя ліміты ачкоў"
 
+msgid "intro/marathonSubTitle"
+msgstr "Раздзел будзе даступны з 29.05.2025 па 11.06.2025"
+
+msgid "intro/marathonTitle"
+msgstr "ДАСТУПНЫ АДМЫСЛОВЫ РАЗДЗЕЛ"
+
 msgid "intro/subTitle"
 msgstr ""
 "Сезон прысвечаны 80-годдзю Перамогі ў Вялікай Айчыннай вайне. Вас чакаюць "
@@ -950,7 +985,7 @@ msgstr ""
 "гэтай знамянальнай падзеі."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: ШЛЯХ ДА ПЕРАМОГІ"
+msgstr "БАЯВЫ ПРОПУСК: ПАЛЯВАННЕ НА МЫШЭЙ"
 
 msgid "intro/vehicles/text"
 msgstr ""
@@ -1155,7 +1190,7 @@ msgid "progression/extraChapterWidget/crewTitle"
 msgstr "і %(name)s"
 
 msgid "progression/extraChapterWidget/styleCaption"
-msgstr "3D-стыль і танкіст з агучкай"
+msgstr "Член экіпажа"
 
 msgid "progression/extraChapterWidget/styleRemark"
 msgstr "З Палепшаным пропускам"
@@ -1642,7 +1677,8 @@ msgstr ""
 " на тэхніцы VI–XІ узроўняў."
 
 msgid "tooltips/inProgress/playGame/ranked"
-msgstr "У Рангавых баях даступны заробак ачкоў за выкананне штодзённых задач."
+msgstr ""
+"Правілы налічэння ачкоў у Рангавых баях на прыдатнай для рэжыму тэхніцы."
 
 msgid "tooltips/inProgress/playGame/stronghold_units"
 msgstr ""

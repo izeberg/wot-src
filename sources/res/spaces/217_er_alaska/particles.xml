@@ -8,10 +8,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -74,11 +70,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld000_base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld003_LittleWoodShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_AM_014_TownShop_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldAM_006_HouseShanty_1_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldAM_008_WorkBarrack_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldAM_014_MineBuilding_01.vfx</fn_effect_bin>
@@ -220,11 +212,7 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld000_base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld003_LittleWoodShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_AM_014_TownShop_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAM_006_HouseShanty_1_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAM_008_WorkBarrack_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAM_014_MineBuilding_01.eff</fn_effect_bin>
@@ -469,11 +457,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld000_base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld003_LittleWoodShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_AM_014_TownShop_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldAM_006_HouseShanty_1_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldAM_008_WorkBarrack_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldAM_014_MineBuilding_01.vfx</fn_effect_bin>
@@ -622,11 +606,7 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld000_base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld003_LittleWoodShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_AM_014_TownShop_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAM_006_HouseShanty_1_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAM_008_WorkBarrack_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldAM_014_MineBuilding_01.eff</fn_effect_bin>

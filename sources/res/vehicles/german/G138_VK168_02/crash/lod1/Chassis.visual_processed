@@ -87,10 +87,6 @@
 						<Texture>vehicles/german/tracks/Type_205_October_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
@@ -108,10 +104,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 1.05205 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 1.052050 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_maskBias
@@ -148,10 +141,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 				</material>
 				<groupOrigin>1.159202 0.639088 0.289357</groupOrigin>
@@ -182,10 +172,6 @@
 						<Texture>vehicles/german/tracks/Type_205_October_track_GMM.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
@@ -203,10 +189,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 1.05205 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 1.052050 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_maskBias
@@ -243,10 +226,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.159202 0.640304 -0.081042</groupOrigin>
@@ -255,7 +235,7 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.671274 -0.000902 -4.879448</min>
+		<min>-1.671273 -0.000902 -4.879448</min>
 		<max>1.670436 1.279079 4.434659</max>
 	</boundingBox>
 	<geometrySize>81012</geometrySize>

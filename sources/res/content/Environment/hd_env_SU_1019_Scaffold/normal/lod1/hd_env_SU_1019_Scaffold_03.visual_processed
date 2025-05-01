@@ -291,6 +291,10 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_02_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.030194 7.668840 0.003388</groupOrigin>
 			</primitiveGroup>

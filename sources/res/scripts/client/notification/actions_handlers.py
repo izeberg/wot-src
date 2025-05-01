@@ -407,27 +407,6 @@ class ShowRankedYearPositionHandler(ActionHandler):
         return
 
 
-class ShowRankedBattlePageHandler(ActionHandler):
-    __rankedController = dependency.descriptor(IRankedBattlesController)
-
-    @classmethod
-    def getNotType(cls):
-        return NOTIFICATION_TYPE.MESSAGE
-
-    @classmethod
-    def getActions(cls):
-        return ('showRankedBattlePage', )
-
-    def handleAction(self, model, entityID, action):
-        notification = model.getNotification(self.getNotType(), entityID)
-        savedData = notification.getSavedData()
-        if savedData is not None and isinstance(savedData, dict):
-            ctx = savedData.get('ctx')
-            if ctx is not None and ctx.get('selectedItemID') is not None:
-                self.__rankedController.showRankedBattlePage(ctx)
-        return
-
-
 class SelectBattleRoyaleMode(ActionHandler):
     battleRoyale = dependency.descriptor(IBattleRoyaleController)
 
@@ -1517,7 +1496,6 @@ _AVAILABLE_HANDLERS = (
  ShowRankedSeasonCompleteHandler,
  ShowRankedFinalYearHandler,
  ShowRankedYearPositionHandler,
- ShowRankedBattlePageHandler,
  SelectBattleRoyaleMode,
  _ShowClanAppsHandler,
  _ShowClanInvitesHandler,

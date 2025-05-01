@@ -1418,8 +1418,8 @@
 			<price>30000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>40</leftTrack>
-				<rightTrack>40</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>24000</weight>
 			<terrainResistance>
@@ -3426,7 +3426,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						19.7
+						18.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>3</aimingTime>
@@ -3445,7 +3445,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.44
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<customizationSlots>
@@ -4459,4 +4459,9 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
+	<prefabAttachments>
+		<newAttachment0>
+			<attachmentId>31053</attachmentId>
+		</newAttachment0>
+	</prefabAttachments>
 </root>

@@ -165,8 +165,14 @@ class MENU(object):
     LOADING_BATTLETYPES_DESC_30 = '#menu:loading/battleTypes/desc/30'
     LOADING_BATTLETYPES_31 = '#menu:loading/battleTypes/31'
     LOADING_BATTLETYPES_DESC_31 = '#menu:loading/battleTypes/desc/31'
+    LOADING_BATTLETYPES_37 = '#menu:loading/battleTypes/37'
+    LOADING_BATTLETYPES_DESC_37 = '#menu:loading/battleTypes/desc/37'
+    LOADING_BATTLETYPES_43 = '#menu:loading/battleTypes/43'
+    LOADING_BATTLETYPES_DESC_43 = '#menu:loading/battleTypes/desc/43'
     LOADING_BATTLETYPES_31000 = '#menu:loading/battleTypes/31000'
     LOADING_BATTLETYPES_DESC_31000 = '#menu:loading/battleTypes/desc/31000'
+    LOADING_BATTLETYPES_33 = '#menu:loading/battleTypes/33'
+    LOADING_BATTLETYPES_DESC_33 = '#menu:loading/battleTypes/desc/33'
     LOADING_TEAM1 = '#menu:loading/team1'
     LOADING_TEAM2 = '#menu:loading/team2'
     LOADING_TEAMS_ALLIES = '#menu:loading/teams/allies'
@@ -737,6 +743,7 @@ class MENU(object):
     HEADERBUTTONS_BATTLE_TYPES_TRAININGLEAVEOWNER = '#menu:headerButtons/battle/types/trainingLeaveOwner'
     HEADERBUTTONS_BATTLE_TYPES_TRAININGLEAVE = '#menu:headerButtons/battle/types/trainingLeave'
     HEADERBUTTONS_BATTLE_TYPES_MAPSTRAINING = '#menu:headerButtons/battle/types/mapsTraining'
+    HEADERBUTTONS_BATTLE_TYPES_EVENTBATTLE = '#menu:headerButtons/battle/types/eventBattle'
     HEADERBUTTONS_BATTLE_TYPES_SPEC = '#menu:headerButtons/battle/types/spec'
     HEADERBUTTONS_BATTLE_TYPES_SPEC_DESCR = '#menu:headerButtons/battle/types/spec/descr'
     HEADERBUTTONS_BATTLE_TYPES_LEAVESPEC_DESCR = '#menu:headerButtons/battle/types/leaveSpec/descr'
@@ -1685,6 +1692,7 @@ class MENU(object):
     CONTEXTMENU_CREATEBATTLEROYALESQUAD = '#menu:contextMenu/createBattleRoyaleSquad'
     CONTEXTMENU_CREATEMAPBOXSQUAD = '#menu:contextMenu/createMapboxSquad'
     CONTEXTMENU_CREATECOMP7SQUAD = '#menu:contextMenu/createComp7Squad'
+    CONTEXTMENU_CREATEHISTORICALBATTLESQUAD = '#menu:contextMenu/createHistoricalBattleSquad'
     CONTEXTMENU_INVITE = '#menu:contextMenu/invite'
     CONTEXTMENU_APPEAL = '#menu:contextMenu/appeal'
     CONTEXTMENU_INCORRECTBEHAVIOR = '#menu:contextMenu/incorrectBehavior'
@@ -2026,6 +2034,7 @@ class MENU(object):
     BOOSTERSWINDOW_TABS_NOTAVAILABLELABEL = '#menu:boostersWindow/tabs/notAvailableLabel'
     BOOSTERSWINDOW_TABS_BUYLABEL = '#menu:boostersWindow/tabs/buyLabel'
     BOOSTERSWINDOW_ACTIVEBOOSTERS = '#menu:boostersWindow/activeBoosters'
+    BOOSTERSWINDOW_BOOSTERSTABLERENDERER_HEADER = '#menu:boostersWindow/boostersTableRenderer/header'
     BOOSTERSWINDOW_BOOSTERSTABLERENDERER_TIME = '#menu:boostersWindow/boostersTableRenderer/time'
     BOOSTERSWINDOW_BOOSTERSTABLERENDERER_UNDEFINETIME = '#menu:boostersWindow/boostersTableRenderer/undefineTime'
     BOOSTERSWINDOW_BOOSTERSTABLERENDERER_QUESTFOROPEN = '#menu:boostersWindow/boostersTableRenderer/questForOpen'
@@ -2393,6 +2402,7 @@ class MENU(object):
      CONTEXTMENU_CREATEBATTLEROYALESQUAD,
      CONTEXTMENU_CREATEMAPBOXSQUAD,
      CONTEXTMENU_CREATECOMP7SQUAD,
+     CONTEXTMENU_CREATEHISTORICALBATTLESQUAD,
      CONTEXTMENU_INVITE,
      CONTEXTMENU_APPEAL,
      CONTEXTMENU_INCORRECTBEHAVIOR,
@@ -2860,7 +2870,10 @@ class MENU(object):
      LOADING_BATTLETYPES_DESC_29,
      LOADING_BATTLETYPES_DESC_30,
      LOADING_BATTLETYPES_DESC_31,
-     LOADING_BATTLETYPES_DESC_31000)
+     LOADING_BATTLETYPES_DESC_37,
+     LOADING_BATTLETYPES_DESC_43,
+     LOADING_BATTLETYPES_DESC_31000,
+     LOADING_BATTLETYPES_DESC_33)
     LOADING_BATTLETYPES_ENUM = (
      LOADING_BATTLETYPES_0,
      LOADING_BATTLETYPES_DESC_0,
@@ -2920,8 +2933,14 @@ class MENU(object):
      LOADING_BATTLETYPES_DESC_30,
      LOADING_BATTLETYPES_31,
      LOADING_BATTLETYPES_DESC_31,
+     LOADING_BATTLETYPES_37,
+     LOADING_BATTLETYPES_DESC_37,
+     LOADING_BATTLETYPES_43,
+     LOADING_BATTLETYPES_DESC_43,
      LOADING_BATTLETYPES_31000,
-     LOADING_BATTLETYPES_DESC_31000)
+     LOADING_BATTLETYPES_DESC_31000,
+     LOADING_BATTLETYPES_33,
+     LOADING_BATTLETYPES_DESC_33)
     CST_ITEM_CTX_MENU_ENUM = (
      CST_ITEM_CTX_MENU_BUY,
      CST_ITEM_CTX_MENU_EXCHANGE,

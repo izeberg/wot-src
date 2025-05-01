@@ -10,8 +10,6 @@ package net.wg.infrastructure.base.meta.impl
    {
        
       
-      public var onBtnClick:Function;
-      
       private var _seasonGapViewVO:SeasonGapViewVO;
       
       private var _rankedBattlesStatsVO:RankedBattlesStatsVO;
@@ -41,12 +39,6 @@ package net.wg.infrastructure.base.meta.impl
             this._rankedBattlesStatsVO1 = null;
          }
          super.onDispose();
-      }
-      
-      public function onBtnClickS() : void
-      {
-         App.utils.asserter.assertNotNull(this.onBtnClick,"onBtnClick" + Errors.CANT_NULL);
-         this.onBtnClick();
       }
       
       public final function as_setData(param1:Object) : void

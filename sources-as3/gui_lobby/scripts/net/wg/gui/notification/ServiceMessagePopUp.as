@@ -148,6 +148,11 @@ package net.wg.gui.notification
          }
       }
       
+      override protected function get isPopUp() : Boolean
+      {
+         return true;
+      }
+      
       private function onComponentClickHandler(param1:MouseEvent) : void
       {
          dispatchEvent(new ServiceMessageEvent(ServiceMessageEvent.MESSAGE_AREA_CLICKED,data.typeID,data.entityID,true));

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.012539 -0.551448 -1.558947</min>
+		<max>0.010054 0.507748 -0.002970</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R224_IS_3_1945/normal/lod0/Flag_01</nodefullVisual>
+	<parent>vehicles/russian/R224_IS_3_1945/normal/lod1/Flag_01</parent>
+	<extent>32.000000</extent>
+</root>

@@ -4,11 +4,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_env_UNI_031_EntryOFMine.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_env_UNI_031_EntryOFMine_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/37_caucasus_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/37_caucasus_butterfly_yellow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/37_caucasus_firesmoke_thick.vfx</fn_effect_bin>
@@ -63,15 +59,11 @@
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_UNI_712_LittleWoodShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_UNI_031_EntryOFMine.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_UNI_031_EntryOFMine_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/37_caucasus_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/37_caucasus_butterfly_yellow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/37_caucasus_butterfly_yellow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_firesmoke_thick.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/37_caucasus_particulates.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_particulates.eff</fn_effect_bin>
@@ -131,18 +123,13 @@
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</forward>
 	<deferred>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_env_UNI_031_EntryOFMine.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_env_UNI_031_EntryOFMine_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/37_caucasus_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/37_caucasus_butterfly_yellow.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/37_caucasus_firesmoke_thick.vfx</fn_effect_bin>
@@ -198,15 +185,11 @@
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_UNI_712_LittleWoodShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_UNI_031_EntryOFMine.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_UNI_031_EntryOFMine_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/37_caucasus_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/37_caucasus_butterfly_yellow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/37_caucasus_butterfly_yellow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_firesmoke_thick.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/37_caucasus_particulates.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/37_caucasus_particulates.eff</fn_effect_bin>

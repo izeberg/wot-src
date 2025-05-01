@@ -910,6 +910,9 @@ msgstr "Купіць"
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перайсці да задачы"
 
+msgid "boostersWindow/boostersTableRenderer/header"
+msgstr "%(boosterName)s %(quality)s"
+
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Каб атрымаць асабісты рэзерв, выканайце «%(questName)s»"
 
@@ -1101,6 +1104,9 @@ msgstr "Стварыць нататку"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
+
+msgid "contextMenu/createHistoricalBattleSquad"
+msgstr "Звяз падзеі «Час герояў»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
@@ -2782,7 +2788,7 @@ msgid "header/level/5"
 msgstr "V"
 
 msgid "header/level/6"
-msgstr "VI"
+msgstr "VІ"
 
 msgid "header/level/7"
 msgstr "VII"
@@ -3006,6 +3012,9 @@ msgstr "Супольныя вучэнні"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
+
+msgid "headerButtons/battle/types/eventBattle"
+msgstr "Час герояў"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
@@ -3913,8 +3922,17 @@ msgstr "Размінка"
 msgid "loading/battleTypes/31000"
 msgstr "Палігон"
 
+msgid "loading/battleTypes/33"
+msgstr "Націск"
+
+msgid "loading/battleTypes/37"
+msgstr " "
+
 msgid "loading/battleTypes/4"
 msgstr "Баявое навучанне"
+
+msgid "loading/battleTypes/43"
+msgstr " "
 
 msgid "loading/battleTypes/5"
 msgstr "Камандны бой"
@@ -4008,7 +4026,16 @@ msgstr " "
 msgid "loading/battleTypes/desc/31000"
 msgstr " "
 
+msgid "loading/battleTypes/desc/33"
+msgstr " "
+
+msgid "loading/battleTypes/desc/37"
+msgstr " "
+
 msgid "loading/battleTypes/desc/4"
+msgstr " "
+
+msgid "loading/battleTypes/desc/43"
 msgstr " "
 
 msgid "loading/battleTypes/desc/5"
@@ -4452,7 +4479,7 @@ msgstr ""
 "Дазваляе зменшыць базавы час данабівання снарадаў."
 
 msgid "moduleInfo/autoShootFlameGunLabel"
-msgstr "Безмагазінная сістэма"
+msgstr "Агнямётная безмагазінная сістэма"
 
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазінная сістэма набівання"
@@ -4491,7 +4518,7 @@ msgid "moduleInfo/dualGunLabel"
 msgstr "Спараная гарматная ўстаноўка"
 
 msgid "moduleInfo/flameGunLabel"
-msgstr "Аўтаматычны агнямёт"
+msgstr "Агнямётная магазінная сістэма"
 
 msgid "moduleInfo/hydraulicAutoSiegeChassisLabel"
 msgstr "Гідрапнеўматычная падвеска: дазваляе змяняць вугал нахілу корпуса"

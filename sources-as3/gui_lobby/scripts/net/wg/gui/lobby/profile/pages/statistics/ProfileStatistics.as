@@ -1,7 +1,6 @@
 package net.wg.gui.lobby.profile.pages.statistics
 {
    import flash.display.MovieClip;
-   import flash.events.MouseEvent;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.data.constants.Errors;
@@ -151,11 +150,6 @@ package net.wg.gui.lobby.profile.pages.statistics
          {
             this.playersStats.label = param1.playersStatsLbl;
             this.playersStats.y = !!isWindowed ? Number(STATS_BTN_WINDOW_Y) : Number(STATS_BTN_Y);
-            this.playersStats.addEventListener(MouseEvent.CLICK,this.onPlayersStatsClickHandler);
-         }
-         else
-         {
-            this.playersStats.removeEventListener(MouseEvent.CLICK,this.onPlayersStatsClickHandler);
          }
          if(this.seasonDropdown.visible)
          {
@@ -194,7 +188,6 @@ package net.wg.gui.lobby.profile.pages.statistics
          this.headerLabel = null;
          this.lblSeasonDropdown = null;
          this.testLabel = null;
-         this.playersStats.removeEventListener(MouseEvent.CLICK,this.onPlayersStatsClickHandler);
          this.playersStats.dispose();
          this.playersStats = null;
          this.seasonDropdown.removeEventListener(ListEvent.INDEX_CHANGE,this.onHeaderDropdownIndexChangeHandler);
@@ -225,11 +218,6 @@ package net.wg.gui.lobby.profile.pages.statistics
       private function onHeaderDropdownIndexChangeHandler(param1:ListEvent) : void
       {
          setSeasonS(param1.itemData.key);
-      }
-      
-      private function onPlayersStatsClickHandler(param1:MouseEvent) : void
-      {
-         showPlayersStatsS();
       }
    }
 }

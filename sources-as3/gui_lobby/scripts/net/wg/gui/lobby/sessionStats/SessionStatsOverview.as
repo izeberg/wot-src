@@ -32,6 +32,8 @@ package net.wg.gui.lobby.sessionStats
       private static const BTN_BOTTOM_GAP:int = 15;
       
       private static const BUTTON_STATES_INVALID:String = "buttonStatesInvalid";
+      
+      private static const BTN_GAP:int = 10;
        
       
       public var battleStats:SessionBattleStatsView = null;
@@ -78,6 +80,7 @@ package net.wg.gui.lobby.sessionStats
          var _loc3_:SessionStatsTabVO = null;
          var _loc4_:ISoundButtonEx = null;
          var _loc5_:ButtonPropertiesVO = null;
+         var _loc6_:Boolean = false;
          if(this._data && isInvalid(InvalidationType.DATA))
          {
             this.battleStats.update(this._data);
@@ -112,6 +115,12 @@ package net.wg.gui.lobby.sessionStats
                _loc4_.tooltip = _loc5_.btnTooltip;
                _loc4_.label = _loc5_.btnLabel;
                _loc4_.enabled = _loc5_.btnEnabled;
+               _loc6_ = _loc4_.visible;
+               _loc4_.visible = _loc5_.btnVisible;
+               if(_loc4_.visible != _loc6_)
+               {
+                  this.updateBtnsXPositions();
+               }
                if(_loc4_ is IButtonIconLoader)
                {
                   (_loc4_ as IButtonIconLoader).iconSource = _loc5_.btnIcon;
@@ -121,6 +130,7 @@ package net.wg.gui.lobby.sessionStats
          }
          if(isInvalid(InvalidationType.SIZE))
          {
+            this.updateBtnsXPositions();
             this.moreBtn.y = this.resetBtn.y = this.settingsBtn.y = this.getBtnPosition();
             this.lipBg.y = this.getBottomLipPosition();
             this.battleStats.setViewSize(width,this.lipBg.y - this.battleStats.y);
@@ -240,6 +250,25 @@ package net.wg.gui.lobby.sessionStats
       private function getBottomLipPosition() : int
       {
          return this.getBtnPosition() - BTN_TOP_GAP;
+      }
+      
+      private function updateBtnsXPositions() : void
+      {
+         var _loc2_:ISoundButtonEx = null;
+         var _loc1_:int = this.settingsBtn.width + this.resetBtn.width + BTN_GAP;
+         if(this.moreBtn.visible)
+         {
+            _loc1_ += this.moreBtn.width + BTN_GAP;
+         }
+         _loc1_ = width - _loc1_ >> 1;
+         for each(_loc2_ in this._buttons)
+         {
+            if(_loc2_.visible)
+            {
+               _loc2_.x = _loc1_;
+               _loc1_ += _loc2_.width + BTN_GAP;
+            }
+         }
       }
       
       private function registerComponents() : void

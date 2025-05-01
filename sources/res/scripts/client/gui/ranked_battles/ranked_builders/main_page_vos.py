@@ -1,5 +1,4 @@
 from constants import CURRENT_REALM
-from gui.ranked_battles.ranked_helpers import getRankedBattlesInfoPageUrl
 from ranked_common import SwitchState
 from gui.impl import backport
 from gui.impl.gen import R
@@ -125,8 +124,6 @@ def getRankedMainSeasonAllItems(isRankedShop, yearLBState, yearLBSize):
     result = list()
     result.extend(_getShopPage(isRankedShop))
     result.extend(_getYearRatingPage(yearLBState != SwitchState.HIDDEN, yearLBSize, disabled=yearLBState == SwitchState.DISABLED))
-    if getRankedBattlesInfoPageUrl():
-        result.append(_getInfoPage())
     return result
 
 

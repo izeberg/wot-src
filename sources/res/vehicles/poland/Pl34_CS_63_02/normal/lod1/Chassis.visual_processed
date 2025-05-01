@@ -1095,7 +1095,7 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						colorIdMap
@@ -1128,6 +1128,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/poland/Pl34_CS_63_02/CS_63_02_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.259009 0.562872 0.048595</groupOrigin>
@@ -1166,7 +1170,7 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						colorIdMap
@@ -1199,6 +1203,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/poland/Pl34_CS_63_02/CS_63_02_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.258529 0.562872 0.048743</groupOrigin>

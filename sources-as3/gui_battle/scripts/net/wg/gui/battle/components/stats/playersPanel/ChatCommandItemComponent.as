@@ -102,10 +102,17 @@ package net.wg.gui.battle.components.stats.playersPanel
          this.activeChatCommand = null;
       }
       
-      public function iconOffset(param1:int) : void
+      public function iconOffset(param1:int, param2:int = 0) : void
       {
          this.activeChatCommand.x = param1;
-         this._animationWidth = Math.abs(param1) * OFFSET_TO_ANIMATION_WIDTH_SCALE;
+         if(!param2)
+         {
+            this._animationWidth = param1 * OFFSET_TO_ANIMATION_WIDTH_SCALE | 0;
+         }
+         else
+         {
+            this._animationWidth = param2;
+         }
       }
       
       public function isDisposed() : Boolean
@@ -199,11 +206,22 @@ package net.wg.gui.battle.components.stats.playersPanel
                _loc3_ = ATTACK_PURPLE_STATE;
             }
          }
-         this.activeChatCommand.gotoAndStop(COMMAND_NAME_TO_FRAME_STATE[_loc3_]);
+         this.activeChatCommand.gotoAndStop(this.getActiveChatCommandFrame(_loc3_));
          this.activeChatCommand.visible = _loc3_ != EMPTY_FRAME_STATE;
          var _loc4_:ChatCommandItemEvent = new ChatCommandItemEvent(ChatCommandItemEvent.ACTIVE_COMMAND_CHANGED);
          _loc4_.isActiveCommandVisible = this.activeChatCommand.visible;
          dispatchEvent(_loc4_);
+      }
+      
+      protected function getActiveChatCommandFrame(param1:String) : int
+      {
+         return COMMAND_NAME_TO_FRAME_STATE[param1];
+      }
+      
+      public function setAnimationOffset(param1:int, param2:int) : void
+      {
+         this.chatCommandAnimation.y = param1;
+         this.chatCommandAnimation.height = param2;
       }
    }
 }

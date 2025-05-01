@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<forward>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_env_UNI_633_WaterPump_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_env_UNI_633_WaterPump_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/env_housesmoke_02.vfx</fn_effect_bin>
@@ -110,11 +106,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Poplar_7m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_sml.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
@@ -234,11 +226,7 @@
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</forward>
 	<deferred>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_env_UNI_633_WaterPump_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_env_UNI_633_WaterPump_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/env_housesmoke_02.vfx</fn_effect_bin>
@@ -344,11 +332,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Poplar_7m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Sparks/sparks_env_sml.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>

@@ -217,6 +217,8 @@ package
       
       public static const DOWNLOAD_REFPROGRAM:String = "#waiting:download/refProgram";
       
+      public static const DOWNLOAD_PLAYSTREAK:String = "#waiting:download/playStreak";
+      
       public static const UPDATINGSKILLWINDOW:String = "#waiting:updatingSkillWindow";
       
       public static const PREBATTLE_CREATE:String = "#waiting:prebattle/create";
@@ -342,6 +344,8 @@ package
       public static const PARAGONS_LOADSELECTOR:String = "#waiting:paragons/loadSelector";
       
       public static const PARAGONS_SELECTREWARD:String = "#waiting:paragons/selectReward";
+      
+      public static const DOWNLOAD_HISTORICALBATTLES:String = "#waiting:download/historicalBattles";
        
       
       public function WAITING()

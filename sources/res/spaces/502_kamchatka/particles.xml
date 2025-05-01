@@ -43,10 +43,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -85,11 +81,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_129_TownShed_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_129_TownShed_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_env_SU_087_ConcreteBench.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldSU_92_01_Pavlov.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/502_kamchatka_geyser.vfx</fn_effect_bin>
@@ -222,11 +214,7 @@
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_SU_129_TownShed_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_SU_129_TownShed_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_SU_087_ConcreteBench.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_92_01_Pavlov.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/502_kamchatka_aurelia.eff</fn_effect_bin>
@@ -442,23 +430,7 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_waves_ocean.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
@@ -530,11 +502,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_SU_129_TownShed_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_SU_129_TownShed_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_env_SU_087_ConcreteBench.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldSU_92_01_Pavlov.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/502_kamchatka_rain.vfx</fn_effect_bin>
@@ -676,11 +644,7 @@
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_SU_129_TownShed_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_SU_129_TownShed_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_env_SU_087_ConcreteBench.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_92_01_Pavlov.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/502_kamchatka_aurelia.eff</fn_effect_bin>

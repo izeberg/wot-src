@@ -1499,7 +1499,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					1.03
+					1.08
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1536,7 +1536,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					1.04
+					1.07
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1573,7 +1573,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					1.05
+					1.06
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1610,7 +1610,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					1.06
+					1.05
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1647,7 +1647,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					1.07
+					1.04
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1684,7 +1684,7 @@
 					<type>int</type>
 				</item>
 				<item>
-					1.08
+					1.03
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -1873,6 +1873,33 @@
 					1
 					<name>type</name>
 					<type>int</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>80_years_of_victory</name>
+			<type>dict</type>
+			<value>
+				<item>
+					31055
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					4.32
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
 				</item>
 				<item>
 					False
@@ -7402,6 +7429,33 @@
 				</item>
 				<item>
 					4.001
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>may_2025</name>
+			<type>dict</type>
+			<value>
+				<item>
+					149
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					4.002
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>

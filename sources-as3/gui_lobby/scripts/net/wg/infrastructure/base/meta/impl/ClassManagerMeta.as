@@ -78,6 +78,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.HANGAR_ALIASES;
    import net.wg.data.constants.generated.HANGAR_CONSTS;
    import net.wg.data.constants.generated.HANGAR_HEADER_QUESTS;
+   import net.wg.data.constants.generated.HISTORICALBATTLES_ALIASES;
    import net.wg.data.constants.generated.INGAMEMENU_CONSTANTS;
    import net.wg.data.constants.generated.MANUAL_TEMPLATES;
    import net.wg.data.constants.generated.MAPBOX_ALIASES;
@@ -1201,6 +1202,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MarathonEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.RankedEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ResizableEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.SE22EntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ShopSalesEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.StrongholdEntryPoint;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
@@ -1272,6 +1274,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.header.headerButtonBar.HBC_ActionItem;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_BattleSelector;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Finance;
+   import net.wg.gui.lobby.header.headerButtonBar.HBC_HBSquad;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_PersonalReserves;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_PersonalReservesWidgetInject;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Prem;
@@ -1285,6 +1288,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonBar;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonContentItem;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonsHelper;
+   import net.wg.gui.lobby.header.headerButtonBar.container.HBPlatoonShieldIconContainer;
    import net.wg.gui.lobby.header.headerButtonBar.container.PlatoonShieldIconContainer;
    import net.wg.gui.lobby.header.interfaces.ILobbyHeader;
    import net.wg.gui.lobby.header.itemSelectorPopover.BattleTypeSelectPopoverDemonstrator;
@@ -1313,6 +1317,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.header.vo.HangarMenuTabItemVO;
    import net.wg.gui.lobby.header.vo.HeaderButtonVo;
    import net.wg.gui.lobby.header.vo.IHBC_VO;
+   import net.wg.gui.lobby.historicalBattles.HBHangarComponentsContainer;
+   import net.wg.gui.lobby.historicalBattles.constants.HB_HANGAR_COMPONENTS;
    import net.wg.gui.lobby.imageView.ImageView;
    import net.wg.gui.lobby.interfaces.ILobbyPage;
    import net.wg.gui.lobby.interfaces.ISubtaskComponent;
@@ -2630,6 +2636,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.SetVehiclesView;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanel;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelEarlyAccess;
+   import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelHistoricalBattles;
+   import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelHistoricalBattlesRestore;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelOfferGift;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelShowcaseStyleBuying;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelStyleBuying;
@@ -2644,6 +2652,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehiclePreview.data.VPBuyingPanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPCompensationVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPCouponVO;
+   import net.wg.gui.lobby.vehiclePreview.data.VPHBBuyingPanelVO;
+   import net.wg.gui.lobby.vehiclePreview.data.VPHBRestorePanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPOfferGiftBuyingPanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPOfferVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPPackItemVO;
@@ -2721,7 +2731,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellVehicleItemBaseVo;
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellVehicleVo;
    import net.wg.gui.lobby.wgnc.WGNCDialog;
-   import net.wg.gui.lobby.wgnc.WGNCPollWindow;
    import net.wg.gui.lobby.window.AwardWindow;
    import net.wg.gui.lobby.window.BaseExchangeWindow;
    import net.wg.gui.lobby.window.BaseExchangeWindowRateVO;
@@ -2878,12 +2887,15 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.ProgressiveStyleMessageContent;
    import net.wg.gui.notification.ServiceMessageBase;
    import net.wg.gui.notification.ServiceMessageContent;
+   import net.wg.gui.notification.ServiceMessageContentBase;
    import net.wg.gui.notification.ServiceMessageItemRenderer;
    import net.wg.gui.notification.ServiceMessagePopUp;
    import net.wg.gui.notification.SystemMessageDialog;
    import net.wg.gui.notification.constants.ButtonState;
    import net.wg.gui.notification.constants.ButtonType;
    import net.wg.gui.notification.constants.MessageMetrics;
+   import net.wg.gui.notification.custom.GFNotification;
+   import net.wg.gui.notification.custom.GFNotificationInject;
    import net.wg.gui.notification.custom.NotificationAchievements;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntry;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntryWithoutWTR;
@@ -2907,6 +2919,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.vo.WotPlusAttendanceVO;
    import net.wg.gui.notification.events.NotificationLayoutEvent;
    import net.wg.gui.notification.events.NotificationListEvent;
+   import net.wg.gui.notification.events.NotificationRegisteringEvent;
    import net.wg.gui.notification.events.ServiceMessageEvent;
    import net.wg.gui.notification.interfaces.IServiceMessage;
    import net.wg.gui.notification.vo.ButtonVO;
@@ -3143,6 +3156,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_HANGAR_CONSTS:Class = HANGAR_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_HANGAR_HEADER_QUESTS:Class = HANGAR_HEADER_QUESTS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_HISTORICALBATTLES_ALIASES:Class = HISTORICALBATTLES_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_INGAMEMENU_CONSTANTS:Class = INGAMEMENU_CONSTANTS;
       
@@ -5446,6 +5461,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RESIZABLEENTRYPOINT:Class = ResizableEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_SE22ENTRYPOINT:Class = SE22EntryPoint;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_SHOPSALESENTRYPOINT:Class = ShopSalesEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_STRONGHOLDENTRYPOINT:Class = StrongholdEntryPoint;
@@ -5588,6 +5605,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_FINANCE:Class = HBC_Finance;
       
+      public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_HBSQUAD:Class = HBC_HBSquad;
+      
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_PERSONALRESERVES:Class = HBC_PersonalReserves;
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_PERSONALRESERVESWIDGETINJECT:Class = HBC_PersonalReservesWidgetInject;
@@ -5613,6 +5632,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HEADERBUTTONCONTENTITEM:Class = HeaderButtonContentItem;
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HEADERBUTTONSHELPER:Class = HeaderButtonsHelper;
+      
+      public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_CONTAINER_HBPLATOONSHIELDICONCONTAINER:Class = HBPlatoonShieldIconContainer;
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_CONTAINER_PLATOONSHIELDICONCONTAINER:Class = PlatoonShieldIconContainer;
       
@@ -5669,6 +5690,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_VO_HEADERBUTTONVO:Class = HeaderButtonVo;
       
       public static const NET_WG_GUI_LOBBY_HEADER_VO_IHBC_VO:Class = IHBC_VO;
+      
+      public static const NET_WG_GUI_LOBBY_HISTORICALBATTLES_HBHANGARCOMPONENTSCONTAINER:Class = HBHangarComponentsContainer;
+      
+      public static const NET_WG_GUI_LOBBY_HISTORICALBATTLES_CONSTANTS_HB_HANGAR_COMPONENTS:Class = HB_HANGAR_COMPONENTS;
       
       public static const NET_WG_GUI_LOBBY_IMAGEVIEW_IMAGEVIEW:Class = ImageView;
       
@@ -8282,6 +8307,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELEARLYACCESS:Class = VPBottomPanelEarlyAccess;
       
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELHISTORICALBATTLES:Class = VPBottomPanelHistoricalBattles;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELHISTORICALBATTLESRESTORE:Class = VPBottomPanelHistoricalBattlesRestore;
+      
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELOFFERGIFT:Class = VPBottomPanelOfferGift;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELSHOWCASESTYLEBUYING:Class = VPBottomPanelShowcaseStyleBuying;
@@ -8307,6 +8336,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPCOMPENSATIONVO:Class = VPCompensationVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPCOUPONVO:Class = VPCouponVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPHBBUYINGPANELVO:Class = VPHBBuyingPanelVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPHBRESTOREPANELVO:Class = VPHBRestorePanelVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPOFFERGIFTBUYINGPANELVO:Class = VPOfferGiftBuyingPanelVO;
       
@@ -8485,8 +8518,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHPOSTPROGRESSION_EVENTS_DEMOUNTALLBTNEVENT:Class = DemountAllBtnEvent;
       
       public static const NET_WG_GUI_LOBBY_WGNC_WGNCDIALOG:Class = WGNCDialog;
-      
-      public static const NET_WG_GUI_LOBBY_WGNC_WGNCPOLLWINDOW:Class = WGNCPollWindow;
       
       public static const NET_WG_GUI_LOBBY_WINDOW_AWARDWINDOW:Class = AwardWindow;
       
@@ -8800,6 +8831,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGECONTENT:Class = ServiceMessageContent;
       
+      public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGECONTENTBASE:Class = ServiceMessageContentBase;
+      
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGEITEMRENDERER:Class = ServiceMessageItemRenderer;
       
       public static const NET_WG_GUI_NOTIFICATION_SERVICEMESSAGEPOPUP:Class = ServiceMessagePopUp;
@@ -8811,6 +8844,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CONSTANTS_BUTTONTYPE:Class = ButtonType;
       
       public static const NET_WG_GUI_NOTIFICATION_CONSTANTS_MESSAGEMETRICS:Class = MessageMetrics;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_GFNOTIFICATION:Class = GFNotification;
+      
+      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_GFNOTIFICATIONINJECT:Class = GFNotificationInject;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONACHIEVEMENTS:Class = NotificationAchievements;
       
@@ -8857,6 +8894,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONLAYOUTEVENT:Class = NotificationLayoutEvent;
       
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONLISTEVENT:Class = NotificationListEvent;
+      
+      public static const NET_WG_GUI_NOTIFICATION_EVENTS_NOTIFICATIONREGISTERINGEVENT:Class = NotificationRegisteringEvent;
       
       public static const NET_WG_GUI_NOTIFICATION_EVENTS_SERVICEMESSAGEEVENT:Class = ServiceMessageEvent;
       

@@ -117,6 +117,14 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      public function setOverheatState(param1:Number) : void
+      {
+      }
+      
+      public function setOverheatStatus(param1:Boolean) : void
+      {
+      }
+      
       public function setQuickReloadingTime(param1:Boolean, param2:Number) : void
       {
       }
@@ -183,7 +191,7 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setFlameDistanceVisibility(param1:Boolean) : void
+      public function setFlameDistanceVisibility(param1:Boolean, param2:String) : void
       {
       }
    }

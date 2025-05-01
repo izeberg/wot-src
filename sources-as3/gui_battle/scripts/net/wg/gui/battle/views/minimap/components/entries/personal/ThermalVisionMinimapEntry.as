@@ -17,6 +17,8 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
       
       private static const SECTOR_COLOR_DISABLED:uint = 9013641;
       
+      private static const SECTOR_EDGE_COLOR_DISABLED:uint = 12171705;
+      
       private static const SECTOR_FILL_ALPHA:Number = 0.25;
       
       private static const SECTOR_FILL_ALPHA_DISABLED:Number = 0.4;
@@ -125,7 +127,8 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
          var _loc2_:Number = NaN;
          var _loc3_:uint = 0;
          var _loc4_:Number = NaN;
-         var _loc5_:Number = NaN;
+         var _loc5_:uint = 0;
+         var _loc6_:Number = NaN;
          super.draw();
          if(isInvalid(InvalidationType.DATA) || isInvalid(InvalidationType.STATE))
          {
@@ -139,10 +142,11 @@ package net.wg.gui.battle.views.minimap.components.entries.personal
             this._rightEdge.graphics.clear();
             if(Math.abs(this._fov) < DEGREE_360)
             {
-               _loc5_ = !!this._isEnabled ? Number(SECTOR_EDGE_ALPHA) : Number(SECTOR_EDGE_ALPHA_DISABLED);
-               drawSectorEdge(this._leftEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc3_,_loc5_);
+               _loc5_ = !!this._isEnabled ? uint(SECTOR_COLOR) : uint(SECTOR_EDGE_COLOR_DISABLED);
+               _loc6_ = !!this._isEnabled ? Number(SECTOR_EDGE_ALPHA) : Number(SECTOR_EDGE_ALPHA_DISABLED);
+               drawSectorEdge(this._leftEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc5_,_loc6_);
                this._leftEdge.rotation = -_loc2_ - ROTATION_90;
-               drawSectorEdge(this._rightEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc3_,_loc5_);
+               drawSectorEdge(this._rightEdge.graphics,_loc1_,LINE_STYLE_THICKNESS,_loc5_,_loc6_);
                this._rightEdge.rotation = _loc2_ - ROTATION_90;
             }
          }

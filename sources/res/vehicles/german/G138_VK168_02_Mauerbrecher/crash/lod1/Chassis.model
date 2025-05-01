@@ -3,16 +3,10 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.67127 -0.000902369 -4.87945
-			<!--BW_String-->
-		</min>
-		<max>
-			1.67044 1.27908 4.43466
-			<!--BW_String-->
-		</max>
+		<min>-1.671270 -0.000902 -4.879450</min>
+		<max>1.670440 1.279080 4.434660</max>
 	</visibilityBox>
 	<parent>vehicles/german/G138_VK168_02_Mauerbrecher/crash/lod2/Chassis</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<nodefullVisual>vehicles/german/G138_VK168_02_Mauerbrecher/crash/lod1/Chassis</nodefullVisual>
 </root>

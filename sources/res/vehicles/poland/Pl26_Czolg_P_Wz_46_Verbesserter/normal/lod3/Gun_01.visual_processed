@@ -74,8 +74,8 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -84,23 +84,36 @@
 				<material>
 					<identifier>tank_guns_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_ID.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_AO.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
 						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						metallicDetailMap
@@ -114,16 +127,24 @@
 						normalMap
 						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_ANM.dds</Texture>
 					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/poland/Pl26_Czolg_P_Wz_46_Verbesserter/Czolg_P_Wz_46_3dst_Verbesserter_guns_AO.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>-0.000157 0.157073 -2.988180</groupOrigin>
+				<groupOrigin>-0.000201 -0.001380 -2.371188</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.423209 -0.276485 -0.018458</min>
-		<max>0.422895 0.590631 5.994818</max>
+		<min>-0.423298 -0.292945 -1.252443</min>
+		<max>0.422895 0.290185 5.994818</max>
 	</boundingBox>
-	<geometrySize>32300</geometrySize>
-	<minUVDensity>0.002892</minUVDensity>
+	<geometrySize>59472</geometrySize>
+	<minUVDensity>0.001838</minUVDensity>
 </root>

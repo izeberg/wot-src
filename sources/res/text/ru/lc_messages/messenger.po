@@ -2791,6 +2791,12 @@ msgstr "Начислено юбилейных монет"
 msgid "serviceChannelMessages/invoiceReceived/eventCoinDebited"
 msgstr "Списано юбилейных монет"
 
+msgid "serviceChannelMessages/invoiceReceived/format/items/crewBook"
+msgstr "%(name)s (x%(count)s)."
+
+msgid "serviceChannelMessages/invoiceReceived/format/items/default"
+msgstr "%(type)s «%(name)s» (%(count)s %(pieces)s)."
+
 msgid "serviceChannelMessages/invoiceReceived/freeAwardListsAccrued"
 msgstr "Начислено бланков приказа"
 
@@ -3069,6 +3075,54 @@ msgstr "Накопление кредитов в хранилище приост
 
 msgid "serviceChannelMessages/piggyBank/title"
 msgstr "Резервное хранилище открыто!"
+
+msgid "serviceChannelMessages/playStreakAvailable/body"
+msgstr "Задачи Цепи побед снова доступны для выполнения."
+
+msgid "serviceChannelMessages/playStreakCongrats/header"
+msgstr "Цепь побед"
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/periodic/body"
+msgstr "Получена награда:"
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/equipment"
+msgstr "Начислено случайное оборудование."
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/goodie"
+msgstr "Начислены случайные резервы."
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/random/prefix"
+msgstr "Добавлено: "
+
+msgid "serviceChannelMessages/playStreakCongratsWithRewards/regular/body"
+msgstr "Регулярное начисление:"
+
+msgid "serviceChannelMessages/playStreakCongratsWithoutRewards/body"
+msgstr "Задача %(savedData)s выполнена."
+
+msgid "serviceChannelMessages/playStreakDropProgress/body"
+msgstr "Прогресс события «Цепь побед» обнулён."
+
+msgid "serviceChannelMessages/playStreakFreezes/body"
+msgstr ""
+"Цепь побед была прервана. Для восстановления счётчика необходимо выполнять "
+"боевую задачу события «Цепь побед» %(savedData)s дней подряд."
+
+msgid "serviceChannelMessages/playStreakFreezesEnd/body"
+msgstr "Цепь побед восстановлена."
+
+msgid "serviceChannelMessages/playStreakFreezesInProgress/body"
+msgstr ""
+"Задача выполнена.\n"
+"Для восстановления счётчика осталось выполнить: %(savedData)s"
+
+msgid "serviceChannelMessages/playStreakPauseUsed/body"
+msgstr "Вы использовали паузу."
+
+msgid "serviceChannelMessages/playStreakUnavailable/body"
+msgstr ""
+"Выполнение задач Цепи побед временно недоступно.\n"
+"Попробуйте позже."
 
 msgid "serviceChannelMessages/prebattle/battleType/clan"
 msgstr "Клановый бой"

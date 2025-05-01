@@ -4,14 +4,8 @@
 	<extent>64</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.92797 -1.01423 -4.43553
-			<!--BW_String-->
-		</min>
-		<max>
-			1.97388 1.00448 4.62076
-			<!--BW_String-->
-		</max>
+		<min>-1.927972 -1.014233 -4.435534</min>
+		<max>1.973878 1.004483 4.620761</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/german/G138_VK168_02/crash/lod1/Hull</nodefullVisual>

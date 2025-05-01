@@ -26,6 +26,9 @@ msgstr "Баявы пропуск, сезон %(seasonNum)s"
 msgid "event/finished"
 msgstr "Рангавыя баі завершаны"
 
+msgid "event/notStarted"
+msgstr "Рангавыя баі пачнуцца %(date)s"
+
 msgid "event/paused"
 msgstr "Рангавыя баі часова недаступныя"
 
@@ -194,7 +197,7 @@ msgid "mode/ranked/battlePassTooltip/header"
 msgstr "Ачкі Баявога пропуска"
 
 msgid "mode/ranked/condition"
-msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s V&nbsp;узровень"
+msgstr "10x10 %(parSecondary_open)sI%(parSecondary_close)s VI&nbsp;узровень"
 
 msgid "mode/ranked/description"
 msgstr "Рэжым з прагрэсіяй і ўзнагародамі."

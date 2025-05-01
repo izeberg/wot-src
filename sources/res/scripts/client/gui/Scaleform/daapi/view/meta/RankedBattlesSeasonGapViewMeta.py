@@ -2,9 +2,6 @@ from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPICompone
 
 class RankedBattlesSeasonGapViewMeta(BaseDAAPIComponent):
 
-    def onBtnClick(self):
-        self._printOverrideError('onBtnClick')
-
     def as_setDataS(self, data):
         if self._isDAAPIInited():
             return self.flashObject.as_setData(data)
