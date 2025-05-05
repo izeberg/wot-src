@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<root/>
+<root>
+	<missions>
+		<id>6</id>
+		<videoPath>videos/v_day_outro.usm</videoPath>
+		<music>
+			<start>sm_lobby_vday_music_start</start>
+			<pause>sm_lobby_vday_music_pause</pause>
+			<resume>sm_lobby_vday_music_resume</resume>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby_video_outro</state>
+		</music>
+		<vo>vo_sm_vday_outro</vo>
+	</missions>
+	<missions>
+		<id>1002</id>
+		<videoPath>videos/v_day_outro.usm</videoPath>
+		<music>
+			<start>sm_lobby_vday_music_start</start>
+			<pause>sm_lobby_vday_music_pause</pause>
+			<resume>sm_lobby_vday_music_resume</resume>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby_video_outro</state>
+		</music>
+		<vo>vo_sm_vday_outro</vo>
+	</missions>
+</root>
