@@ -22,4 +22,26 @@
 		</music>
 		<vo>vo_sm_dday_intro</vo>
 	</missions>
+	<missions>
+		<id>6</id>
+		<videoPath>videos/v_day_intro.usm</videoPath>
+		<music>
+			<pause>sm_lobby_vday_music_pause</pause>
+			<resume>sm_lobby_vday_music_resume</resume>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby_video</state>
+		</music>
+		<vo>vo_sm_vday_intro</vo>
+	</missions>
+	<missions>
+		<id>1002</id>
+		<videoPath>videos/v_day_intro.usm</videoPath>
+		<music>
+			<pause>sm_lobby_vday_music_pause</pause>
+			<resume>sm_lobby_vday_music_resume</resume>
+			<group>STATE_sm_vday_music</group>
+			<state>STATE_sm_vday_music_00_lobby_video</state>
+		</music>
+		<vo>vo_sm_vday_intro</vo>
+	</missions>
 </root>

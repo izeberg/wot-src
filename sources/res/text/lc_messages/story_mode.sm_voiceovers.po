@@ -1987,6 +1987,12 @@ msgid "vo_sm_char04_m05_stg46_06"
 msgstr ""
 "Murphy: Our ride's busted. I'm fine, don't worry. I'll be back in a new one!"
 
+msgid "vo_sm_char04_m06_outro_02"
+msgstr "Murphy: What? The insane bravery of five daredevils?"
+
+msgid "vo_sm_char04_m06_outro_11"
+msgstr "Murphy: Never again."
+
 msgid "vo_sm_char04_m06_stg02_01"
 msgstr "Driver, Capt. Murphy: Whoa, hold your horses! Minefields ahead!"
 
@@ -2516,6 +2522,18 @@ msgstr "Dubois: But I will continue the liberation of France!"
 
 msgid "vo_sm_char05_m05_stg46_09"
 msgstr "Dubois: The tank is destroyed, but not our spirit. I shall return!"
+
+msgid "vo_sm_char05_m06_outro_01"
+msgstr "Dubois: So it can stop the bloodshed after all."
+
+msgid "vo_sm_char05_m06_outro_03"
+msgstr "Dubois: A piece of paper. One simple paper can stop it all."
+
+msgid "vo_sm_char05_m06_outro_05"
+msgstr "Dubois: What then?"
+
+msgid "vo_sm_char05_m06_outro_09"
+msgstr "Dubois: Plus jamais."
 
 msgid "vo_sm_char05_m06_stg04_02"
 msgstr "Loader, Capt. Dubois: Yes, sir!"
@@ -3366,6 +3384,17 @@ msgstr "Pilot: Roger that. Engaging the target."
 msgid "vo_sm_char12_m04_stg56_02"
 msgstr "Pilot: Acknowledged. Approaching for the hit."
 
+msgid "vo_sm_char13_m06_outro_04"
+msgstr "Smith: Not the paper itself."
+
+msgid "vo_sm_char13_m06_outro_06"
+msgstr ""
+"Smith: The will of millions. Men and women who fought to make that paper "
+"mean something."
+
+msgid "vo_sm_char13_m06_outro_07"
+msgstr "Smith: Never again."
+
 msgid "vo_sm_char13_m06_stg01_01"
 msgstr "Commander, Capt. Smith: Roll out. Remember, this is a covert op."
 
@@ -3800,6 +3829,9 @@ msgstr "Smith: A street? How? By listing all our names?"
 msgid "vo_sm_char13_m06_stg84_04"
 msgstr "Smith: Focus on the road."
 
+msgid "vo_sm_char14_m06_outro_08"
+msgstr "Keller: Nie wieder."
+
 msgid "vo_sm_char14_m06_stg02_03"
 msgstr ""
 "Radio operator, Gefr. Keller: There's a... command post just outside of "
@@ -3829,11 +3861,13 @@ msgstr "Keller: Yes, captain Smith."
 
 msgid "vo_sm_char14_m06_stg06_09b"
 msgstr ""
-"Keller: Achtung, Panzer Vier! Feindliche Aktivität im Punkt Berta. "
+"Keller: Achtung, Panzer Vier! Feindliche Aktivität im Punkt Berta.\n"
 "(Attention, Panzer Four! Enemy activity in Sector Berta Point.)"
 
 msgid "vo_sm_char14_m06_stg06_09b_01"
-msgstr "Keller: Sofort aufklären! (Investigate immediately!)"
+msgstr ""
+"Keller: Sofort aufklären!\n"
+"(Investigate immediately!)"
 
 msgid "vo_sm_char14_m06_stg07_01"
 msgstr "Keller: This is the command post."
@@ -3876,7 +3910,7 @@ msgstr "Keller: Going on air."
 
 msgid "vo_sm_char14_m06_stg36_02"
 msgstr ""
-"Keller: Achtung! Neue Stellung in Sektor Berta beziehen. Sofort ausführen! "
+"Keller: Achtung! Neue Stellung in Sektor Berta beziehen. Sofort ausführen!\n"
 "(Attention! Take new position in Sector Berta. Execute immediately!)"
 
 msgid "vo_sm_char14_m06_stg36_04"
@@ -3884,7 +3918,7 @@ msgstr "Keller: Patching through."
 
 msgid "vo_sm_char14_m06_stg36_05"
 msgstr ""
-"Keller: Dringender Befehl! Umgruppierung nach Punkt Dora erforderlich! "
+"Keller: Dringender Befehl! Umgruppierung nach Punkt Dora erforderlich!\n"
 "(Urgent order! Regrouping to Point Dora required!)"
 
 msgid "vo_sm_char14_m06_stg36_07"
@@ -3892,24 +3926,24 @@ msgstr "Keller: Switching to their frequency."
 
 msgid "vo_sm_char14_m06_stg36_08"
 msgstr ""
-"Keller: Feindliche Aktivität im Sektor Emil! Sofort untersuchen! (Enemy "
-"activity in Sector Emil! Investigate immediately!)"
+"Keller: Feindliche Aktivität im Sektor Emil! Sofort untersuchen!\n"
+"(Enemy activity in Sector Emil! Investigate immediately!)"
 
 msgid "vo_sm_char14_m06_stg36_10"
 msgstr "Keller: Broadcasting now."
 
 msgid "vo_sm_char14_m06_stg36_11"
 msgstr ""
-"Keller: Zurückziehen auf Stellung Gustav! Schnell! Schnell! (Fall back to "
-"Position Gustav! Highest priority!)"
+"Keller: Zurückziehen auf Stellung Gustav! Schnell! Schnell!\n"
+"(Fall back to Position Gustav! Highest priority!)"
 
 msgid "vo_sm_char14_m06_stg36_13"
 msgstr "Keller: Transmitting."
 
 msgid "vo_sm_char14_m06_stg36_14"
 msgstr ""
-"Keller: Gruppe Nord meldet Feindkontakt! Verstärkung benötigt! (Battle Group"
-" North reports enemy contact! Reinforcement needed!)"
+"Keller: Gruppe Nord meldet Feindkontakt! Verstärkung benötigt!\n"
+"(Battle Group North reports enemy contact! Reinforcement needed!)"
 
 msgid "vo_sm_char14_m06_stg37_01"
 msgstr "Keller: There's no one on this frequency in range."
@@ -4059,6 +4093,9 @@ msgstr "Keller: No... I never thought I'd be in any tank..."
 
 msgid "vo_sm_char14_m06_stg89_02"
 msgstr "Keller: Actually, I'm terrified. I'm just too scared to show it."
+
+msgid "vo_sm_char15_m06_outro_10"
+msgstr "Kowalski: Nigdy więcej."
 
 msgid "vo_sm_char15_m06_stg02_05"
 msgstr ""
@@ -4231,23 +4268,33 @@ msgstr "Kowalski: Dubois, what are you humming over there?"
 
 msgid "vo_sm_char16_m06_stg06_10"
 msgstr ""
-"Jawohl, verstanden! Bewegen uns zum Punkt Berta! (Yes sir, understood! "
-"Moving to Berta Point!)"
+"Jawohl, verstanden! Bewegen uns zum Punkt Berta!\n"
+"(Yes sir, understood! Moving to Berta Point!)"
 
 msgid "vo_sm_char16_m06_stg36_03"
-msgstr "Verstanden, bewegen uns nach Berta. (Understood, moving to Berta.)"
+msgstr ""
+"Verstanden, bewegen uns nach Berta.\n"
+"(Understood, moving to Berta.)"
 
 msgid "vo_sm_char16_m06_stg36_06"
-msgstr "Jawohl, beginnen Umgruppierung. (Yes sir, beginning regrouping.)"
+msgstr ""
+"Jawohl, beginnen Umgruppierung.\n"
+"(Yes sir, beginning regrouping.)"
 
 msgid "vo_sm_char16_m06_stg36_09"
-msgstr "Zu Befehl, starten Aufklärung. (Yes sir, starting reconnaissance.)"
+msgstr ""
+"Zu Befehl, starten Aufklärung.\n"
+"(Yes sir, starting reconnaissance.)"
 
 msgid "vo_sm_char16_m06_stg36_12"
-msgstr "Verstanden, ziehen uns zurück. (Understood, falling back.)"
+msgstr ""
+"Verstanden, ziehen uns zurück.\n"
+"(Understood, falling back.)"
 
 msgid "vo_sm_char16_m06_stg36_15"
-msgstr "Bestätigt, sind unterwegs. (Confirmed, en route.)"
+msgstr ""
+"Bestätigt, sind unterwegs.\n"
+"(Confirmed, en route.)"
 
 msgid "vo_sm_dday_intro"
 msgstr "Ich habe eine Stunde lang mit diesem Karpfen gerungen!"
@@ -4269,3 +4316,48 @@ msgstr "Scheiße!! ALARM!"
 
 msgid "vo_sm_dday_intro_06"
 msgstr "Panzer! Panzer!"
+
+msgid "vo_sm_vday_intro_01"
+msgstr ""
+"Achtung! Achtung!\n"
+"(Attention! Attention!)"
+
+msgid "vo_sm_vday_intro_01_01"
+msgstr ""
+"Wir wenden uns an alle Soldaten und Offiziere der Wehrmacht, Luftwaffe und Kriegsmarine!\n"
+"(We are addressing all soldiers and officers of the Wehrmacht, Luftwaffe and Kriegsmarine!)"
+
+msgid "vo_sm_vday_intro_01_02"
+msgstr ""
+"Das deutsche Oberkommando, hat die bedingungslose Kapitulation unterzeichnet.\n"
+"(The German High Command, has signed the unconditional surrender.)"
+
+msgid "vo_sm_vday_intro_01_03"
+msgstr ""
+"Der Krieg ist vorbei...\n"
+"(The war is over...)"
+
+msgid "vo_sm_vday_intro_02"
+msgstr ""
+"Wir rufen alle auf, die noch sinnlosen Widerstand leisten;\n"
+"(We call on all those who are still offering useless resistance;)"
+
+msgid "vo_sm_vday_intro_02_01"
+msgstr ""
+"Ihre Waffen niederzulegen und sich den alliierten Truppen zu ergeben.\n"
+"(To lay down their arms and surrender to the Allied troops.)"
+
+msgid "vo_sm_vday_intro_03"
+msgstr ""
+"Ihr Leben wird für den Aufbau eines neuen, erneuerten Deutschlands benötigt werden...\n"
+"(Your lives will be needed to build a new, renewed Germany...)"
+
+msgid "vo_sm_vday_intro_04"
+msgstr ""
+"Das ist bloß ein Trick!\n"
+"(This is just another Trick.)"
+
+msgid "vo_sm_vday_intro_04_01"
+msgstr ""
+"Wir kämpfen weiter, bis wir vom Kommando einen Befehl erhalten!\n"
+"(Until we get an order from command, we're going to fight.)"
