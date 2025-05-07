@@ -423,6 +423,40 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/victory_day/screen_9_may_2025.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/victory_day/screen_9_may_2025.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>SelectionComponent</type>
 			<version>1</version>
 			<component>
@@ -468,30 +502,6 @@
 					<property>
 						<name>groupName</name>
 						<value>20</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>OpenExternalBrowserOnClickComponent</type>
-			<version>1</version>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>1</flags>
-				<config>
-					<property>
-						<name>url</name>
-						<value>https://webbrg.tanki.su/ru/promocontent/parad_pobedy_2025/</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>1</flags>
-				<config>
-					<property>
-						<name>url</name>
-						<value>https://webbrg.tanki.su/ru/promocontent/parad_pobedy_2025/</value>
 					</property>
 				</config>
 			</component>

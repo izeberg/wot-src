@@ -582,10 +582,8 @@ class ArcadeControlMode(_GunControlMode):
                 self._cam.update(dx, dy, dz, True, True, False if dx == dy == dz == 0.0 else True)
                 return True
             if cmdMap.isFired(CommandMapping.CMD_CM_ALTERNATE_MODE, key) and isDown:
-                ownVehicle = BigWorld.entity(BigWorld.player().playerVehicleID)
-                if ownVehicle and ownVehicle.isStarted:
-                    self.__activateAlternateMode()
-                    return True
+                self.__activateAlternateMode()
+                return True
             return False
 
     def handleMouseEvent(self, dx, dy, dz):
@@ -694,7 +692,9 @@ class ArcadeControlMode(_GunControlMode):
 
     def __activateAlternateMode(self, pos=None, bByScroll=False):
         ownVehicle = BigWorld.entity(BigWorld.player().playerVehicleID)
-        if ownVehicle is not None and ownVehicle.isStarted and avatar_getter.isVehicleBarrelUnderWater() or BigWorld.player().isGunLocked or BigWorld.player().isObserver():
+        if ownVehicle is None or not ownVehicle.isStarted:
+            return
+        if avatar_getter.isVehicleBarrelUnderWater() or BigWorld.player().isGunLocked or BigWorld.player().isObserver():
             return
         if self._aih.isAssaultSPG:
             self._cam.update(0, 0, 0, False, False)

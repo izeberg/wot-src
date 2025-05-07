@@ -11610,5 +11610,29 @@
 				</item>
 			</value>
 		</achievement>
+		<achievement>
+			<name>singleAchievements:support_2025</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					-11.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
 	</achievements>
 </root>
