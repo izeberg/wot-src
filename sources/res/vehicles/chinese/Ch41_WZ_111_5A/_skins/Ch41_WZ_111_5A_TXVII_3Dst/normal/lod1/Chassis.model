@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.679990 0.001678 -3.587543</min>
+		<max>1.680640 1.127734 3.630456</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/normal/lod1/Chassis</nodefullVisual>
+</root>

@@ -1,7 +1,8 @@
 from debug_utils import LOG_ERROR
 
 class PlanHolder(object):
-    __slots__ = ('plan', 'loadState', 'autoStart', '__inputParamCache', 'params', '__planName')
+    __slots__ = ('plan', 'loadState', 'autoStart', '__inputParamCache', 'params', '__planName',
+                 'key')
     INACTIVE = 0
     LOADING = 1
     LOADED = 2
@@ -15,6 +16,7 @@ class PlanHolder(object):
         self.__inputParamCache = {}
         self.params = {}
         self.__planName = ''
+        self.key = ''
 
     @property
     def isLoaded(self):
@@ -30,7 +32,7 @@ class PlanHolder(object):
 
     def load(self, planName, aspect, tags):
         if self.loadState == PlanHolder.LOADING:
-            if self.plan.load(planName, aspect, tags):
+            if self.plan.load(planName, self.key, aspect, tags):
                 self.loadState = PlanHolder.LOADED
             elif self.plan.isLoadCanceled():
                 self.loadState = PlanHolder.LOAD_CANCELED
@@ -45,7 +47,7 @@ class PlanHolder(object):
     def loadOverTime(self, planName, aspect, tags):
         if self.loadState is PlanHolder.LOADING:
             self.__planName = planName
-            if not self.plan.load(planName, aspect, tags, None, self.onLoad):
+            if not self.plan.load(planName, self.key, aspect, tags, None, self.onLoad):
                 if self.plan.isLoadCanceled():
                     self.loadState = PlanHolder.LOAD_CANCELED
                 else:

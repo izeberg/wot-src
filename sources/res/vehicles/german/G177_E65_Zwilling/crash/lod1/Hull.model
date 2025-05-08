@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G177_E65_Zwilling/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.837397 -0.966039 -4.444872</min>
+		<max>1.832643 0.949347 3.626898</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G177_E65_Zwilling/crash/lod1/Hull</nodefullVisual>
+</root>

@@ -461,6 +461,9 @@ msgstr "15 tonnin rynnäkkötykkipanssarivaunu BT-42"
 msgid "Chassis_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
 
+msgid "Chassis_G177_E65_Zwilling"
+msgstr "E 65 Zwilling"
+
 msgid "Chassis_G178_KanJpz_2"
 msgstr "Kanonenjagdpanzer 2"
 
@@ -472,6 +475,12 @@ msgstr "Jagdpanzer IV 0-Serie"
 
 msgid "Chassis_G17_JagdPzIV_2"
 msgstr "Jagdpanzer IV"
+
+msgid "Chassis_G184_Windhund"
+msgstr "Windhund"
+
+msgid "Chassis_G186_Schwertwal"
+msgstr "Schwertwal"
 
 msgid "Chassis_G18_JagdPanther"
 msgstr "Jagdpanther"
@@ -1057,6 +1066,12 @@ msgstr "FuG Spr. 1"
 
 msgid "FuG_Spr.A"
 msgstr "Fu.Spr.Ger. \"a\""
+
+msgid "Fu_12"
+msgstr "Fu 12"
+
+msgid "Fu_7S"
+msgstr "Fu 7S"
 
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
@@ -2582,6 +2597,33 @@ msgstr "GST Turm"
 msgid "G174_Kpz3_GST_Turm_short_special"
 msgstr "Прочная лобовая броня, автоматическая гидропневматическая подвеска"
 
+msgid "G177_E65_Zwilling"
+msgstr "E 65 Zwilling"
+
+msgid "G177_E65_Zwilling_descr"
+msgstr ""
+"Ближе к концу Второй мировой войны немецкая танковая промышленность пришла к"
+" концепции, известной как E-серия. Одной из машин программы был E 65. На "
+"танке использовалась блокированная подвеска фирмы Steyr, ведущие колёса "
+"находились в задней части корпуса. Главным отличием от других машин серии "
+"стала идея размещения двух орудий в одной башне. Предполагалось, что танк "
+"сможет вести либо залповый огонь, либо цикличный с повышенной "
+"скорострельностью. Однако дальше общей концепции E 65 не продвинулся."
+
+msgid "G177_E65_Zwilling_long_special"
+msgstr ""
+"E 65 Zwilling — немецкий тяжёлый танк VIII уровня. На машине установлена "
+"спаренная орудийная установка калибра 8,8 см с быстрой подготовкой залпа и "
+"ускоренным сведением во время подготовки. Однако помните: выстрел залпом "
+"приводит к довольно долгой блокировке перезарядки. Машина отличается хорошей"
+" мобильностью для тяжёлого танка и надёжным бронированием."
+
+msgid "G177_E65_Zwilling_short"
+msgstr "E 65 Zwilling"
+
+msgid "G177_E65_Zwilling_short_special"
+msgstr "Спаренная орудийная установка, надёжная броня"
+
 msgid "G178_KanJpz_2"
 msgstr "Kanonenjagdpanzer 2"
 
@@ -2653,6 +2695,65 @@ msgstr ""
 
 msgid "G17_JagdPzIV_short"
 msgstr "Jg.Pz. IV"
+
+msgid "G184_Windhund"
+msgstr "Windhund"
+
+msgid "G184_Windhund_descr"
+msgstr ""
+"В середине 1960-х годов военные Бундесвера, вдохновлённые шведским Strv S, "
+"решили создать собственный аналог, основанный на немецких разработках. В "
+"1966 году фирмы KraussMaffei и Rheinmetall получили конкурсное задание на "
+"проектирование безбашенного танка с жёстко установленным в корпусе орудием. "
+"Через три года Rheinmetall представила прототип, а компания KraussMaffei "
+"снялась с конкурса и сосредоточилась на производстве и модернизации танков "
+"Leopard 1. Между тем, новая машина оказалась очень дорогой в производстве и "
+"лишь слегка уступала в цене основному танку Kpz.70, программу которого "
+"закрыли именно из-за высокой стоимости. Испытания продолжались до 1972 года,"
+" после чего проект свернули."
+
+msgid "G184_Windhund_long_special"
+msgstr ""
+"Windhund — ПТ-САУ VIII уровня с механикой осадного режима и "
+"гидропневматической подвеской, схожей с механикой на шведских ПТ-САУ. У "
+"машины отличная мобильность в походном режиме и неплохая подвижность в "
+"осадном, что позволяет эффективно маневрировать, даже не переключаясь между "
+"режимами. Кроме того, орудие использует снаряды с высокими показателями "
+"бронепробития."
+
+msgid "G184_Windhund_short_special"
+msgstr "Гидропневматическая подвеска, высокое бронепробитие"
+
+msgid "G186_Schwertwal"
+msgstr "Schwertwal"
+
+msgid "G186_Schwertwal_descr"
+msgstr ""
+"Танк был разработан с учётом опыта применения Panzerkampfwagen VI и VI Ausf."
+" B (Tiger II) для устранения их недостатков и развития преимуществ. Основные"
+" улучшения касались бронирования: использование литых узлов снижало "
+"трудоёмкость производства. Кроме того, одним из ключевых решений стало "
+"размещение двигателя и трансмиссии в едином отсеке, что улучшило компоновку."
+" Ходовая часть сохранила шахматное расположение катков, обеспечивающее "
+"плавность хода, а для самовытаскивания и повышения динамики в экстренных "
+"ситуациях на бортах появились твердотопливные ракетные двигатели от R4M "
+"Orkan. Несмотря на прогрессивные решения, у танка были явные недостатки: "
+"уменьшенный угол наклона брони в лобовой части, а также низкая удельная "
+"мощность, ограничивающая подвижность и боевые возможности."
+
+msgid "G186_Schwertwal_long_special"
+msgstr ""
+"Schwertwal — немецкий штурмовой тяжёлый танк X уровня, вооружённый 15-см "
+"орудием с высоким уроном за выстрел. Танк отлично подходит для ближнего боя "
+"благодаря крепкой башне, в которой нет уязвимых зон. Кроме того, на машине "
+"установлены ракетные ускорители с увеличенным временем действия, которые "
+"позволяют увеличить базовую подвижность."
+
+msgid "G186_Schwertwal_short"
+msgstr "Schwertwal"
+
+msgid "G186_Schwertwal_short_special"
+msgstr "Ракетные ускорители, отличное бронирование башни"
 
 msgid "G18_JagdPanther"
 msgstr "Jagdpanther"
@@ -3383,6 +3484,9 @@ msgstr "MB 881 P"
 msgid "MTU803"
 msgstr "MTU803"
 
+msgid "MTU_MB_833_Ea_500"
+msgstr "MTU MB 833 Ea-500"
+
 msgid "MTU_MB_8V837D"
 msgstr "MTU MB 8V837"
 
@@ -3812,6 +3916,9 @@ msgstr ""
 
 msgid "Maybach_HL_235"
 msgstr "Maybach HL 235"
+
+msgid "Maybach_HL_275"
+msgstr "Maybach HL 275"
 
 msgid "Maybach_HL_45P"
 msgstr "Maybach HL 45 P"
@@ -4673,6 +4780,9 @@ msgstr "SEM 25E"
 msgid "SEM_25K"
 msgstr "SEM 25K"
 
+msgid "SEM_25W"
+msgstr "SEM 25W"
+
 msgid "SEM_25_D_funkgerat"
 msgstr "SEM 25D funkgerät"
 
@@ -4687,6 +4797,9 @@ msgstr "SPA 19TBM42"
 
 msgid "Scania_Vabis1664"
 msgstr "Scania Vabis 1664"
+
+msgid "Simmering_Graz_Pauker_SLa_16"
+msgstr "Simmering-Graz-Pauker SLa 16"
 
 msgid "Skoda_T-11"
 msgstr "Škoda T-11"
@@ -5073,6 +5186,9 @@ msgstr "BT-rynnäkkötykki"
 msgid "Turret_1_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
 
+msgid "Turret_1_G177_E65_Zwilling"
+msgstr "E 65 Zwilling"
+
 msgid "Turret_1_G178_KanJpz_2"
 msgstr "Kanonenjagdpanzer 2"
 
@@ -5081,6 +5197,12 @@ msgstr "Straussler V–4/40"
 
 msgid "Turret_1_G17_JagdPzIV"
 msgstr "Jagdpanzer IV"
+
+msgid "Turret_1_G184_Windhund"
+msgstr "Windhund"
+
+msgid "Turret_1_G186_Schwertwal"
+msgstr "Schwertwal"
 
 msgid "Turret_1_G18_JagdPanther"
 msgstr "Jagdpanther"
@@ -5889,6 +6011,9 @@ msgstr "Pzgr 39 L"
 msgid "_105mm_PzGr39L1"
 msgstr "Pzgr 39 L1"
 
+msgid "_105mm_PzGr39LW"
+msgstr "Pzgr 39LW"
+
 msgid "_105mm_PzGr39L_n"
 msgstr "Pzgr 39 LV"
 
@@ -5925,6 +6050,9 @@ msgstr "Pzgr. 39 E"
 msgid "_105mm_Pzgr_39_K_B"
 msgstr "Pzgr. 39 K (B)"
 
+msgid "_105mm_Pzgr_40W"
+msgstr "Pzgr 40W"
+
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr. 40/45"
 
@@ -5954,6 +6082,9 @@ msgstr "Sprgr L"
 
 msgid "_105mm_Sprg_L1"
 msgstr "Sprgr L1"
+
+msgid "_105mm_Sprg_LW"
+msgstr "Sprgr LW"
 
 msgid "_105mm_Sprg_L_n"
 msgstr "Sprgr LV"
@@ -5996,6 +6127,9 @@ msgstr "10WSc P"
 
 msgid "_10WSc_WT"
 msgstr "10WSc A"
+
+msgid "_10_5_cm_Bordkanone_L7W"
+msgstr "10,5 cm Bordkanone L7W"
 
 msgid "_10_5_cm_Pak_L_52_JP"
 msgstr "10,5 cm Pak L/52 (JP)"
@@ -6321,6 +6455,9 @@ msgstr "15 cm Gr. 19 Stg FES"
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
+msgid "_150mm_Gr_Hl_A"
+msgstr "Gr. Hl/A"
+
 msgid "_150mm_KwK44_L38"
 msgstr "15 cm Kw.K. L/38"
 
@@ -6338,6 +6475,9 @@ msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
 msgstr "Pzgr."
+
+msgid "_150mm_Pzgr_m_Hb"
+msgstr "Pzgr. (m.Hb)"
 
 msgid "_150mm_Rohr_L29_5"
 msgstr "15 cm Pak L/29.5"
@@ -6368,6 +6508,12 @@ msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
 msgstr "Sprgr."
+
+msgid "_150mm_Sprgr_Kz_m_Hb"
+msgstr "Sprgr. Kz (m.Hb)"
+
+msgid "_150mm_TbtsK_C_36"
+msgstr "15 cm TbtsK C/36"
 
 msgid "_150mm_sFH13_L17"
 msgstr "15 cm s.F.H. 13 L/17"
@@ -7102,6 +7248,9 @@ msgstr "Pzgr. 40/43 (JP)"
 msgid "_88mm_Pzgr_40_43_Typ_101"
 msgstr "Pzgr. 40/43 Typ 101"
 
+msgid "_88mm_Pzgr_40_43_ZK"
+msgstr "Pzgr. 40/43 ZK"
+
 msgid "_88mm_Pzgr_40_Ausf_E"
 msgstr "Pzgr. 40 Ausf. E"
 
@@ -7155,6 +7304,12 @@ msgstr "Sprgr. 43 (JP)"
 
 msgid "_88mm_Sprgr_43_Typ_101"
 msgstr "Sprgr. 43 Typ 101"
+
+msgid "_88mm_Sprgr_43_ZK"
+msgstr "Sprgr. 43 ZK"
+
+msgid "_88mm_Zwillingskanone_L_71"
+msgstr "8,8 cm Zwillingskanone L/71"
 
 msgid "_8_8_cm_Pak_43_L_71_F"
 msgstr "8,8 cm Pak 43 L/71 (F)"

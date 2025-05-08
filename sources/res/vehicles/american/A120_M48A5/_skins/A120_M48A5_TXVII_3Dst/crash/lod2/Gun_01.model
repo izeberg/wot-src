@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.628904 -0.541107 -2.014521</min>
+		<max>0.565450 0.529989 4.069999</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod2/Gun_01</nodelessVisual>
+</root>

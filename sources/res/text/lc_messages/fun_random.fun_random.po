@@ -381,175 +381,172 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/capsUserName"
-msgstr "СИЯНИЕ НЕОНА"
+msgid "modes/equalization/capsUserName"
+msgstr "РАВНЯЙСЬ!"
 
-msgid "modes/fall_tanks/detailedUserName"
+msgid "modes/equalization/detailedUserName"
 msgstr "%(modeName)s"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/body"
+msgid "modes/equalization/entryPoint/performance/tooltip/highRisk/body"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/header"
+msgid "modes/equalization/entryPoint/performance/tooltip/highRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/body"
+msgid "modes/equalization/entryPoint/performance/tooltip/mediumRisk/body"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/header"
+msgid "modes/equalization/entryPoint/performance/tooltip/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/lootbox/fep_epic"
+msgid "modes/equalization/lootbox/fep_epic"
 msgstr "Случайная эпичная награда"
 
-msgid "modes/fall_tanks/lootbox/fep_legendary"
+msgid "modes/equalization/lootbox/fep_legendary"
 msgstr "Случайная легендарная награда"
 
-msgid "modes/fall_tanks/lootbox/fep_ordinary"
+msgid "modes/equalization/lootbox/fep_ordinary"
 msgstr "Случайная обычная награда"
 
-msgid "modes/fall_tanks/lootbox/fep_rare"
+msgid "modes/equalization/lootbox/fep_rare"
 msgstr "Случайная редкая награда"
 
-msgid "modes/fall_tanks/lootbox/fep_unusual"
+msgid "modes/equalization/lootbox/fep_unusual"
 msgstr "Случайная необычная награда"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
+msgid "modes/equalization/metaProgressionTooltip/header/active"
 msgstr ""
-"Задача режима «Сияние неона». Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+"Задача режима «Равняйсь!», этап %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgid "modes/equalization/metaProgressionTooltip/reward/tip"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
-msgstr "Задача режима «Сияние неона»"
+msgid "modes/equalization/metaProgressionTooltip/subheader"
+msgstr "Задача режима «Равняйсь!»"
 
-msgid "modes/fall_tanks/modeSubSelector/progression/info"
+msgid "modes/equalization/modeSubSelector/progression/info"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/modeSubSelector/progression/timer"
+msgid "modes/equalization/modeSubSelector/progression/timer"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/battleCondition"
-msgstr "Гонка против всех"
+msgid "modes/equalization/mode_selector/battleCondition"
+msgstr "Сражения на технике всех уровней"
 
-msgid "modes/fall_tanks/mode_selector/description"
+msgid "modes/equalization/mode_selector/description"
 msgstr "Экспериментальные бои по нестандартным правилам"
 
-msgid "modes/fall_tanks/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s уровни"
-
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
+msgid "modes/equalization/mode_selector/performance/highRisk/description"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgid "modes/equalization/mode_selector/performance/highRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgid "modes/equalization/mode_selector/performance/highRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/description"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/progression/resettable"
-msgstr "До новой задачи режима «Сияние неона»"
+msgid "modes/equalization/mode_selector/progression/resettable"
+msgstr "До новой задачи режима «Равняйсь!»"
 
-msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
+msgid "modes/equalization/notification/finishSubModes/withProgression"
 msgstr "Режим %(subModeName)s завершён. Прогрессия сброшена."
 
-msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
+msgid "modes/equalization/notification/finishSubModes/withoutProgression"
 msgstr "Режим %(subModeName)s завершён."
 
-msgid "modes/fall_tanks/notification/newSubModes/withProgression"
+msgid "modes/equalization/notification/newSubModes/withProgression"
 msgstr "Доступны новые награды и режим %(subModeName)s."
 
-msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
-msgstr "Доступен новый режим: %(subModeName)s."
+msgid "modes/equalization/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый режим: %(subModeName)s"
 
-msgid "modes/fall_tanks/notification/switchOffSubModes"
+msgid "modes/equalization/notification/switchOffSubModes"
 msgstr "Режим %(subModeName)s недоступен: ведутся технические работы."
 
-msgid "modes/fall_tanks/notification/switchOnSubModes"
+msgid "modes/equalization/notification/switchOnSubModes"
 msgstr "Режим %(subModeName)s снова доступен."
 
-msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
+msgid "modes/equalization/progression/cardsFan/listOfRandomRewards"
 msgstr "Список наград"
 
-msgid "modes/fall_tanks/progression/complete/congratulations"
+msgid "modes/equalization/progression/complete/congratulations"
 msgstr "Поздравляем!"
 
-msgid "modes/fall_tanks/progression/complete/title"
+msgid "modes/equalization/progression/complete/title"
 msgstr "Вы завершили основную прогрессию"
 
-msgid "modes/fall_tanks/progression/infinite/congratulations"
+msgid "modes/equalization/progression/infinite/congratulations"
 msgstr "Поздравляем!"
 
-msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgid "modes/equalization/progression/infinite/infinityStep"
 msgstr "Повторяемый этап"
 
-msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgid "modes/equalization/progression/infinite/mainProgressionFinished"
 msgstr "Вы завершили основную прогрессию"
 
-msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgid "modes/equalization/progression/questsList/quest/infinityStageProgress"
 msgstr ""
 "Получите столько наград, сколько сможете: %(currentPoints) / "
 "%(infinitySign)s"
 
-msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
+msgid "modes/equalization/progression/questsList/totalPointsEarned"
 msgstr "Заработано очков: %(progressionSteps)s"
 
 msgid ""
-"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
+"modes/equalization/progression/questsList/totalPointsEarnedStandAloneTitle"
 msgstr "Заработано очков:"
 
-msgid "modes/fall_tanks/progression/title"
-msgstr "ЗАДАЧИ РЕЖИМА «СИЯНИЕ НЕОНА»"
+msgid "modes/equalization/progression/title"
+msgstr "ЗАДАЧА РЕЖИМА «РАВНЯЙСЬ!»"
 
-msgid "modes/fall_tanks/rewardsView/header"
+msgid "modes/equalization/rewardsView/header"
 msgstr "ПОЛУЧЕНА ЛЕГЕНДАРНАЯ НАГРАДА"
 
-msgid "modes/fall_tanks/scheduler/notification/available"
+msgid "modes/equalization/scheduler/notification/available"
 msgstr "Бои режима %(subModeName)s снова доступны."
 
-msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgid "modes/equalization/scheduler/notification/available/title"
 msgstr "Режим прекращения огня"
 
-msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgid "modes/equalization/scheduler/notification/modeEnded"
 msgstr "Бои режима %(subModeName)s завершены"
 
-msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgid "modes/equalization/scheduler/notification/modeEnded/title"
 msgstr "Режим прекращения огня"
 
-msgid "modes/fall_tanks/scheduler/notification/primeTime"
+msgid "modes/equalization/scheduler/notification/primeTime"
 msgstr ""
 "Бои события %(subModeName)s недоступны до окончания режима прекращения огня."
 
-msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgid "modes/equalization/scheduler/notification/primeTime/title"
 msgstr "Режим прекращения огня"
 
-msgid "modes/fall_tanks/tierList/description"
+msgid "modes/equalization/tierList/description"
 msgstr ""
 "Каждая случайная награда — это один предмет из списка ниже, который вы "
 "можете получить с определённой вероятностью."
 
-msgid "modes/fall_tanks/tierList/title"
+msgid "modes/equalization/tierList/title"
 msgstr "Что внутри?"
 
-msgid "modes/fall_tanks/tooltip/filter/body"
+msgid "modes/equalization/tooltip/filter/body"
 msgstr ""
-"Включить/отключить отображение подходящей техники для режима «Сияние неона»."
+"Включить/отключить отображение подходящей техники для режима «Равняйсь!»."
 
-msgid "modes/fall_tanks/tooltip/filter/header"
-msgstr "Техника режима «Сияние неона»"
+msgid "modes/equalization/tooltip/filter/header"
+msgstr "Техника режима «Равняйсь!»"
 
-msgid "modes/fall_tanks/userName"
-msgstr "Сияние неона"
+msgid "modes/equalization/userName"
+msgstr "Равняйсь!"
 
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
@@ -1049,61 +1046,62 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/capsUserName"
-msgstr "СИЯНИЕ НЕОНА"
+msgid "sub_modes/equalization/capsUserName"
+msgstr "РАВНЯЙСЬ!"
 
-msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
+msgid "sub_modes/equalization/detailsHelp/page1/description"
 msgstr ""
-"Вперёд к финишной черте, и пусть соперники останутся далеко позади! "
-"Используйте способности «Рывок» и «Щит», чтобы сеять хаос на поле боя."
+"Техника всех уровней имеет разные модификаторы к показателям прочности, "
+"урона и бронепробития. Чем ниже уровень техники, тем сильнее прирост. Это "
+"делает машины низких уровней намного опаснее!"
 
-msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
-msgstr "Осторожно: подвижные платформы"
+msgid "sub_modes/equalization/detailsHelp/page1/title"
+msgstr "РАВНЯЙСЬ!"
 
-msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgid "sub_modes/equalization/detailsHelpHint/description"
 msgstr "для знакомства с особенностями режима"
 
-msgid "sub_modes/fall_tanks/detailsHelpHint/press"
+msgid "sub_modes/equalization/detailsHelpHint/press"
 msgstr "Нажмите"
 
-msgid "sub_modes/fall_tanks/detailsHelpTitle"
-msgstr "Сияние неона"
+msgid "sub_modes/equalization/detailsHelpTitle"
+msgstr "РАВНЯЙСЬ!"
 
-msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
-msgstr "Гонка против всех"
+msgid "sub_modes/equalization/subModeCard/battleCondition"
+msgstr "15x15"
 
-msgid "sub_modes/fall_tanks/subModeCard/description"
-msgstr "Экспериментальные бои по нестандартным правилам"
+msgid "sub_modes/equalization/subModeCard/description"
+msgstr "Сражения на технике всех уровней"
 
-msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgid "sub_modes/equalization/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} &nbsp;%(levels)s уровни"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/description"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/header"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/description"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/title"
-msgstr "Сияние неона"
+msgid "sub_modes/equalization/subModeCard/title"
+msgstr "Равняйсь!"
 
-msgid "sub_modes/fall_tanks/userName"
-msgstr "Сияние неона"
+msgid "sub_modes/equalization/userName"
+msgstr "Равняйсь!"
 
-msgid "sub_modes/fall_tanks/userName/quoted"
-msgstr "«Сияние неона»"
+msgid "sub_modes/equalization/userName/quoted"
+msgstr "«Равняйсь!»"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

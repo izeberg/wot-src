@@ -1835,7 +1835,7 @@
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18000</slotId>
-				<position>-1.084831 0.079389 -3.305377</position>
+				<position>-1.163312 0.069874 -3.307494</position>
 				<rotation>
 					0.0004 -1.5691 1.337848
 					<!--BW_String-->
@@ -1847,9 +1847,9 @@
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18001</slotId>
-				<position>-1.659683 0.271186 -0.890522</position>
+				<position>-1.665084 0.271375 -0.890522</position>
 				<rotation>
-					-0 0 1.569051
+					-0 0 1.53589
 					<!--BW_String-->
 				</rotation>
 				<scale>1 1 1</scale>
@@ -1859,9 +1859,12 @@
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18002</slotId>
-				<position>1.656176 0.271186 -0.890522</position>
+				<position>
+					1.661164 0.27136 -0.890513
+					<!--BW_String-->
+				</position>
 				<rotation>
-					-0 3.139847 1.569051
+					-0 3.139847 1.53589
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -2417,7 +2420,6 @@
 						<length>0.137605</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -2917,7 +2919,6 @@
 						<length>0.137608</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -4931,7 +4932,7 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>0.651389 1.144743 -0.266524</position>
+					<position>0.379778 0.824123 0.638701</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
@@ -4940,7 +4941,7 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>-0.634047 1.037416 -0.704808</position>
+					<position>-0.224093 0.987195 -0.704808</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>

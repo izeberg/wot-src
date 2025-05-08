@@ -1,4 +1,5 @@
 from cStringIO import StringIO as BytesIO
+from struct_helpers import unpackByte, packByte
 
 def encode_zigzag64(n):
     return n << 1 ^ n >> 63
@@ -14,9 +15,9 @@ def encode(number):
         towrite = number & 127
         number >>= 7
         if number:
-            buf.write(chr(towrite | 128))
+            buf.write(packByte(towrite | 128))
         else:
-            buf.write(chr(towrite))
+            buf.write(packByte(towrite))
             break
 
     return buf.getvalue()
@@ -41,4 +42,4 @@ def _read_one(stream):
     c = stream.read(1)
     if c == '':
         raise EOFError('Unexpected EOF while reading bytes')
-    return ord(c)
+    return unpackByte(c)

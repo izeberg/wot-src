@@ -422,14 +422,14 @@ msgstr "Песнь о зубре"
 msgid "chapter/fullName/1114"
 msgstr "Песнь о зубре"
 
-msgid "chapter/fullName/161"
-msgstr "Полевые заметки"
+msgid "chapter/fullName/171"
+msgstr "Долг зовёт"
 
-msgid "chapter/fullName/162"
-msgstr "Время действовать"
+msgid "chapter/fullName/172"
+msgstr "Залповый огонь"
 
-msgid "chapter/fullName/163"
-msgstr "Вдали от дома"
+msgid "chapter/fullName/173"
+msgstr "Перфекционист"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "ПЕСНЬ О ЗУБРЕ"
@@ -437,14 +437,14 @@ msgstr "ПЕСНЬ О ЗУБРЕ"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
-msgid "chapter/fullNameUppercased/161"
-msgstr "ПОЛЕВЫЕ ЗАМЕТКИ"
+msgid "chapter/fullNameUppercased/171"
+msgstr "ДОЛГ ЗОВЁТ"
 
-msgid "chapter/fullNameUppercased/162"
-msgstr "ВРЕМЯ ДЕЙСТВОВАТЬ"
+msgid "chapter/fullNameUppercased/172"
+msgstr "ЗАЛПОВЫЙ ОГОНЬ"
 
-msgid "chapter/fullNameUppercased/163"
-msgstr "ВДАЛИ ОТ ДОМА"
+msgid "chapter/fullNameUppercased/173"
+msgstr "ПЕРФЕКЦИОНИСТ"
 
 msgid "chapter/title"
 msgstr "ГЛАВА «%(chapter)s»"
@@ -548,6 +548,9 @@ msgstr "Национальные фрагменты чертежей на выб
 
 msgid "chosenBonuses/bonus/brochure_gift"
 msgstr "Учебная брошюра на выбор"
+
+msgid "chosenBonuses/bonus/crewbook_gift"
+msgstr "Учебное пособие на выбор"
 
 msgid "chosenBonuses/bonus/guide_gift"
 msgstr "Учебное руководство на выбор"
@@ -816,46 +819,17 @@ msgstr "О БОЕВОМ ПРОПУСКЕ"
 msgid "intro/button"
 msgstr "Так точно!"
 
-msgid "intro/postProgression/text"
-msgstr ""
-"Завершите все главы, чтобы получить доступ к Тропе престижа, в рамках "
-"которой вы сможете заработать боны и ваучеры. Прогрессия циклична, поэтому "
-"её можно проходить неограниченное количество раз до завершения сезона "
-"Боевого пропуска."
-
-msgid "intro/postProgression/title"
-msgstr "ТРОПА ПРЕСТИЖА"
-
 msgid "intro/seasonDescription/text"
 msgstr ""
-"В шестнадцатом сезоне Боевого пропуска вы сможете получить особые 3D-стили "
-"для ключевой техники сезона:&nbsp;NC&nbsp;70&nbsp;Błyskawica, Type&nbsp;71 и"
-" E&nbsp;50&nbsp;Ausf.&nbsp;M."
+"В XVII сезоне Боевого пропуска у&nbsp;вас будет возможность получить "
+"эксклюзивные 3D-стили для ключевой техники сезона: M48A5&nbsp;Patton, "
+"WZ-111&nbsp;model&nbsp;5A и&nbsp;FV230 Canopener."
 
 msgid "intro/seasonDescription/title"
 msgstr "НОВЫЕ ТЕМАТИЧЕСКИЕ 3D-СТИЛИ"
 
-msgid "intro/talers/text"
-msgstr ""
-"Проходите прогрессию Боевого пропуска и зарабатывайте монеты — новую валюту,"
-" которую можно потратить в Хранилище Боевого пропуска в Магазине. Здесь вы "
-"можете обменять монеты на элементы внешнего вида и членов экипажа из "
-"предыдущих сезонов Боевого пропуска, а также на экономические ресурсы и "
-"многое другое."
-
-msgid "intro/talers/title"
-msgstr "МОНЕТЫ"
-
-msgid "intro/tickets/text"
-msgstr ""
-"Встречайте новую награду Боевого пропуска — ваучеры! Их можно заработать на "
-"Тропе престижа и обменять на другие предметы."
-
-msgid "intro/tickets/title"
-msgstr "ВАУЧЕРЫ"
-
 msgid "intro/title"
-msgstr "XVI СЕЗОН: УДАЧА БЛАГОВОЛИТ ХРАБРЫМ"
+msgstr "СЕЗОН XVII: ПОЛНАЯ ГОТОВНОСТЬ"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -887,8 +861,7 @@ msgid "postProgressionView/footer/purchaseIP/button/text"
 msgstr "Приобрести"
 
 msgid "postProgressionView/header/description/active"
-msgstr ""
-"Зарабатывайте очки в бою, чтобы получить боны и ваучеры в качестве награды."
+msgstr "Зарабатывайте очки в боях и получайте ещё больше наград"
 
 msgid "postProgressionView/header/description/onPause/highlight"
 msgstr "ПАУЗА."
@@ -1245,14 +1218,14 @@ msgstr "БОЕВОЙ ПРОПУСК. ГЛАВА «%(chapter)s», ЭТАП %(leve
 msgid "season/fullName/1002"
 msgstr "Песнь о зубре"
 
-msgid "season/fullName/16"
-msgstr "Удача благоволит храбрым"
+msgid "season/fullName/17"
+msgstr "Полная готовность"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
-msgid "season/fullNameUppercased/16"
-msgstr "УДАЧА БЛАГОВОЛИТ ХРАБРЫМ"
+msgid "season/fullNameUppercased/17"
+msgstr "ПОЛНАЯ ГОТОВНОСТЬ"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Предбоевые инструкции к оборудованию на выбор"
@@ -1262,6 +1235,9 @@ msgstr "Фрагменты чертежей на выбор"
 
 msgid "selectBonus/brochure_gift"
 msgstr "Учебная брошюра на выбор"
+
+msgid "selectBonus/crewbook_gift"
+msgstr "Учебное пособие на выбор"
 
 msgid "selectBonus/guide_gift"
 msgstr "Учебное руководство на выбор"

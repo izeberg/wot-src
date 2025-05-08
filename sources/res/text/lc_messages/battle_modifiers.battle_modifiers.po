@@ -50,6 +50,15 @@ msgstr "Комплекс параметров, влияющих на спосо�
 msgid "domain/damageDealing/name"
 msgstr "Нанесение урона"
 
+msgid "domain/equalization/description"
+msgstr ""
+"Техника всех уровней имеет разные модификаторы к показателям прочности, "
+"урона и бронепробития. Чем ниже уровень техники, тем сильнее прирост. Это "
+"делает машины низких уровней намного опаснее!"
+
+msgid "domain/equalization/name"
+msgstr "Бои для всех уровней"
+
 msgid "domain/mobility/description"
 msgstr ""
 "Комплекс параметров, влияющих на динамические и скоростные характеристики."
@@ -223,11 +232,8 @@ msgstr "Радиус обзора"
 msgid "modifier/name/visionTime"
 msgstr "Время в обнаружении"
 
-msgid "modifier/name/zeroDamage"
-msgstr "Урон выстрелами и тараном"
-
 msgid "modifier/name/zeroEconomy"
-msgstr "Потрачено и заработано в боях режима"
+msgstr "В боях нельзя тратить или зарабатывать ресурсы"
 
 msgid "modifiersDomainTooltip/restrict/max"
 msgstr "не&nbsp;более&nbsp;{value}"

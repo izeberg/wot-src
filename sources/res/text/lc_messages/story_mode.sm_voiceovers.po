@@ -1945,6 +1945,12 @@ msgstr ""
 "Мёрфи: Моя машина выбывает из этой гонки. Со мной всё в порядке, не "
 "переживайте. Я вернусь на новой!"
 
+msgid "vo_sm_char04_m06_outro_02"
+msgstr "Мёрфи: Что? Безумная храбрость пятерых смельчаков?"
+
+msgid "vo_sm_char04_m06_outro_11"
+msgstr "Мёрфи: Никогда больше."
+
 msgid "vo_sm_char04_m06_stg02_01"
 msgstr "Мехвод, к-н Мёрфи: Эй! Стоп машина! Мины!"
 
@@ -2474,6 +2480,18 @@ msgstr "Дюбуа: Но я продолжу освобождение Франц
 msgid "vo_sm_char05_m05_stg46_09"
 msgstr ""
 "Дюбуа: Танк можно уничтожить, но мой боевой дух — никогда. Я ещё вернусь!"
+
+msgid "vo_sm_char05_m06_outro_01"
+msgstr "Дюбуа: То есть она может остановить это кровопролитие."
+
+msgid "vo_sm_char05_m06_outro_03"
+msgstr "Дюбуа: Простая бумажка. Один листок способен всё это закончить."
+
+msgid "vo_sm_char05_m06_outro_05"
+msgstr "Дюбуа: А что тогда?"
+
+msgid "vo_sm_char05_m06_outro_09"
+msgstr "Дюбуа: Plus jamais."
 
 msgid "vo_sm_char05_m06_stg04_02"
 msgstr "Заряжающий, к-н Дюбуа: Так точно!"
@@ -3331,6 +3349,17 @@ msgstr "Пилот: Понял тебя. Атакую цель."
 msgid "vo_sm_char12_m04_stg56_02"
 msgstr "Пилот: Принял. Приближаюсь к цели."
 
+msgid "vo_sm_char13_m06_outro_04"
+msgstr "Смит: Не сама бумага."
+
+msgid "vo_sm_char13_m06_outro_06"
+msgstr ""
+"Смит: Воля миллионов. Мужчин и женщин, которые сражались за то, чтобы эта "
+"бумажка что-то значила."
+
+msgid "vo_sm_char13_m06_outro_07"
+msgstr "Смит: Никогда больше."
+
 msgid "vo_sm_char13_m06_stg01_01"
 msgstr "Командир, к-н Смит: Выдвигаемся. Напоминаю, это тайная операция."
 
@@ -3766,6 +3795,9 @@ msgstr "Смит: Улицу? Как? Напишут наши имена чер�
 msgid "vo_sm_char13_m06_stg84_04"
 msgstr "Смит: Следи за дорогой."
 
+msgid "vo_sm_char14_m06_outro_08"
+msgstr "Келлер: Nie wieder."
+
 msgid "vo_sm_char14_m06_stg02_03"
 msgstr ""
 "Радист, ефр. Келлер: За городом есть… командный пункт. Там должны быть карты"
@@ -3795,11 +3827,13 @@ msgstr "Келлер: Да, капитан Смит."
 
 msgid "vo_sm_char14_m06_stg06_09b"
 msgstr ""
-"Келлер: Achtung, Panzer Vier! Feindliche Aktivität im Punkt Berta. "
+"Келлер: Achtung, Panzer Vier! Feindliche Aktivität im Punkt Berta.\n"
 "(Внимание, «Панцер-4». Замечена подозрительная активность в точке «Берта».)"
 
 msgid "vo_sm_char14_m06_stg06_09b_01"
-msgstr "Келлер: Sofort aufklären! (Проверьте немедленно!)"
+msgstr ""
+"Келлер: Sofort aufklären!\n"
+"(Проверьте немедленно!)"
 
 msgid "vo_sm_char14_m06_stg07_01"
 msgstr "Келлер: Это командный пункт."
@@ -3843,7 +3877,7 @@ msgstr "Келлер: Выхожу в эфир."
 
 msgid "vo_sm_char14_m06_stg36_02"
 msgstr ""
-"Келлер: Achtung! Neue Stellung in Sektor Berta beziehen. Sofort ausführen! "
+"Келлер: Achtung! Neue Stellung in Sektor Berta beziehen. Sofort ausführen!\n"
 "(Внимание! Займите новую позицию в секторе «Берта». Выполнять немедленно!)"
 
 msgid "vo_sm_char14_m06_stg36_04"
@@ -3851,7 +3885,7 @@ msgstr "Келлер: Выхожу на связь."
 
 msgid "vo_sm_char14_m06_stg36_05"
 msgstr ""
-"Келлер: Dringender Befehl! Umgruppierung nach Punkt Dora erforderlich! "
+"Келлер: Dringender Befehl! Umgruppierung nach Punkt Dora erforderlich!\n"
 "(Срочный приказ! Сбор в точке «Дора»!)"
 
 msgid "vo_sm_char14_m06_stg36_07"
@@ -3859,24 +3893,24 @@ msgstr "Келлер: Переключаюсь на их частоту."
 
 msgid "vo_sm_char14_m06_stg36_08"
 msgstr ""
-"Келлер: Feindliche Aktivität im Sektor Emil! Sofort untersuchen! (Вражеская "
-"активность в секторе «Эмиль»! Немедленно проведите разведку!)"
+"Келлер: Feindliche Aktivität im Sektor Emil! Sofort untersuchen!\n"
+"(Вражеская активность в секторе «Эмиль»! Немедленно проведите разведку!)"
 
 msgid "vo_sm_char14_m06_stg36_10"
 msgstr "Келлер: Начинаю передачу."
 
 msgid "vo_sm_char14_m06_stg36_11"
 msgstr ""
-"Келлер: Zurückziehen auf Stellung Gustav! Schnell! Schnell! (Вернитесь на "
-"точку «Густав»! Быстрее! Быстрее!)"
+"Келлер: Zurückziehen auf Stellung Gustav! Schnell! Schnell!\n"
+"(Вернитесь на точку «Густав»! Быстрее! Быстрее!)"
 
 msgid "vo_sm_char14_m06_stg36_13"
 msgstr "Келлер: Передаю ложный приказ."
 
 msgid "vo_sm_char14_m06_stg36_14"
 msgstr ""
-"Келлер: Gruppe Nord meldet Feindkontakt! Verstärkung benötigt! (Группа "
-"«Север» докладывает о контакте с врагом! Требуется подкрепление!)"
+"Келлер: Gruppe Nord meldet Feindkontakt! Verstärkung benötigt!\n"
+"(Группа «Север» докладывает о контакте с врагом! Требуется подкрепление!)"
 
 msgid "vo_sm_char14_m06_stg37_01"
 msgstr "Келлер: На этой частоте рядом никого нет."
@@ -4026,6 +4060,9 @@ msgstr "Келлер: Нет. Я вообще не думал, что вообщ
 
 msgid "vo_sm_char14_m06_stg89_02"
 msgstr "Келлер: На самом деле я в ужасе. Просто боюсь это показать."
+
+msgid "vo_sm_char15_m06_outro_10"
+msgstr "Ковальски: Nigdy więcej."
 
 msgid "vo_sm_char15_m06_stg02_05"
 msgstr ""
@@ -4200,27 +4237,33 @@ msgstr "Ковальски: Дюбуа, что ты там напеваешь?"
 
 msgid "vo_sm_char16_m06_stg06_10"
 msgstr ""
-"Jawohl, verstanden! Bewegen uns zum Punkt Berta! (Так точно! Выдвигаемся в "
-"точку «Берта»!)"
+"Jawohl, verstanden! Bewegen uns zum Punkt Berta!\n"
+"(Так точно! Выдвигаемся в точку «Берта»!)"
 
 msgid "vo_sm_char16_m06_stg36_03"
 msgstr ""
-"Verstanden, bewegen uns nach Berta. (Так точно. Выдвигаемся в сектор "
-"«Берта».)"
+"Verstanden, bewegen uns nach Berta.\n"
+"(Так точно. Выдвигаемся в сектор «Берта».)"
 
 msgid "vo_sm_char16_m06_stg36_06"
 msgstr ""
-"Jawohl, beginnen Umgruppierung. (Так точно. Выдвигаюсь в точку «Дора».)"
+"Jawohl, beginnen Umgruppierung.\n"
+"(Так точно. Выдвигаюсь в точку «Дора».)"
 
 msgid "vo_sm_char16_m06_stg36_09"
-msgstr "Zu Befehl, starten Aufklärung. (Вас понял. Отправляюсь на разведку.)"
+msgstr ""
+"Zu Befehl, starten Aufklärung.\n"
+"(Вас понял. Отправляюсь на разведку.)"
 
 msgid "vo_sm_char16_m06_stg36_12"
 msgstr ""
-"Verstanden, ziehen uns zurück. (Принял. Возвращаюсь на точку «Густав».)"
+"Verstanden, ziehen uns zurück.\n"
+"(Принял. Возвращаюсь на точку «Густав».)"
 
 msgid "vo_sm_char16_m06_stg36_15"
-msgstr "Bestätigt, sind unterwegs. (Принял. Выдвигаюсь на помощь.)"
+msgstr ""
+"Bestätigt, sind unterwegs.\n"
+"(Принял. Выдвигаюсь на помощь.)"
 
 msgid "vo_sm_dday_intro"
 msgstr "Ich habe eine Stunde lang mit diesem Karpfen gerungen!"
@@ -4242,3 +4285,48 @@ msgstr "Scheiße!! ALARM!"
 
 msgid "vo_sm_dday_intro_06"
 msgstr "Panzer! Panzer!"
+
+msgid "vo_sm_vday_intro_01"
+msgstr ""
+"Achtung! Achtung!\n"
+"(Внимание! Внимание!)"
+
+msgid "vo_sm_vday_intro_01_01"
+msgstr ""
+"Wir wenden uns an alle Soldaten und Offiziere der Wehrmacht, Luftwaffe und Kriegsmarine!\n"
+"(Обращение ко всем солдатам и офицерам Вермахта, Люфтваффе и Кригсмарине!)"
+
+msgid "vo_sm_vday_intro_01_02"
+msgstr ""
+"Das deutsche Oberkommando, hat die bedingungslose Kapitulation unterzeichnet.\n"
+"(Верховное командование подписало акт о безоговорочной капитуляции.)"
+
+msgid "vo_sm_vday_intro_01_03"
+msgstr ""
+"Der Krieg ist vorbei...\n"
+"(Война окончена...)"
+
+msgid "vo_sm_vday_intro_02"
+msgstr ""
+"Wir rufen alle auf, die noch sinnlosen Widerstand leisten;\n"
+"(Призываем всех, кто всё ещё оказывает сопротивление,..)"
+
+msgid "vo_sm_vday_intro_02_01"
+msgstr ""
+"Ihre Waffen niederzulegen und sich den alliierten Truppen zu ergeben.\n"
+"(...сложить оружие и сдаться войскам союзников.)"
+
+msgid "vo_sm_vday_intro_03"
+msgstr ""
+"Ihr Leben wird für den Aufbau eines neuen, erneuerten Deutschlands benötigt werden...\n"
+"(Ваши жизни будут нужны, чтобы построить новую, лучшую Германию...)"
+
+msgid "vo_sm_vday_intro_04"
+msgstr ""
+"Das ist bloß ein Trick!\n"
+"(Это просто очередная уловка.)"
+
+msgid "vo_sm_vday_intro_04_01"
+msgstr ""
+"Wir kämpfen weiter, bis wir vom Kommando einen Befehl erhalten!\n"
+"(Мы будем сражаться, пока не получим прямой приказ от командования.)"

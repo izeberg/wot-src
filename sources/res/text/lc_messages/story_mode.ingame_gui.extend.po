@@ -17,16 +17,16 @@ msgid "abilities/recon/stopVehicle"
 msgstr "Покидает машину..."
 
 msgid "player_errors/ability/on_cooldown"
-msgstr "Недоступно: способность «%(name)s» перезаряжается."
+msgstr "Недоступно: способность [«%(name)s»] перезаряжается."
 
 msgid "player_errors/ability/other_ability"
-msgstr "Использование невозможно: способность «%(name)s» уже используется."
+msgstr "Использование невозможно: способность [«%(name)s»] уже используется."
 
 msgid "player_errors/ability/unable_fire"
-msgstr "Стрельба невозможна: используется способность «%(name)s»."
+msgstr "Стрельба невозможна: используется способность [«%(name)s»]."
 
 msgid "player_errors/ability/unable_move"
-msgstr "Движение невозможно: используется способность «%(name)s»."
+msgstr "Движение невозможно: используется способность [«%(name)s»]."
 
 msgid "player_messages/BUNKER_DESTROYED"
 msgstr "Береговой бункер уничтожен."

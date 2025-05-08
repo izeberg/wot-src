@@ -3,6 +3,7 @@ package net.wg.gui.components.carousels
    import flash.events.Event;
    import flash.text.TextField;
    import net.wg.data.constants.Linkages;
+   import net.wg.gui.components.carousels.controls.CheckBoxRenderer;
    import net.wg.gui.components.carousels.data.FilterCarouseInitVO;
    import net.wg.gui.components.carousels.data.FiltersStateVO;
    import net.wg.gui.components.carousels.events.FiltersTileListEvent;
@@ -89,11 +90,14 @@ package net.wg.gui.components.carousels
                param1.getRendererAt(_loc7_).selectable = param2[_loc7_];
                if(param3 != null)
                {
-                  _loc6_ = SimpleRendererVO(_loc5_.getData());
-                  if(_loc6_ && param3.indexOf(_loc6_.id) != -1)
+                  if(!(_loc5_ is CheckBoxRenderer))
                   {
-                     _loc6_.isNew = false;
-                     _loc5_.setData(_loc6_);
+                     _loc6_ = SimpleRendererVO(_loc5_.getData());
+                     if(_loc6_ && param3.indexOf(_loc6_.id) != -1)
+                     {
+                        _loc6_.isNew = false;
+                        _loc5_.setData(_loc6_);
+                     }
                   }
                }
             }

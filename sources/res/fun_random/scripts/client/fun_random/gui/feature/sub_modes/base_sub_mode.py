@@ -61,9 +61,6 @@ class IFunSubMode(ISeasonProvider, Notifiable):
     def getAlertBlock(self):
         raise NotImplementedError
 
-    def getAmmoSetupViewAlias(self):
-        raise NotImplementedError
-
     def getAssetsPointer(self):
         raise NotImplementedError
 
@@ -118,7 +115,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         self._em = EventManager()
         self.onSubModeEvent = Event(self._em)
         self._settings = subModeSettings
-        self._modifiersDataProvider = ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
+        self._modifiersDataProvider = self._getModifiersDataProvider(subModeSettings)
         self._performanceAlertInfo = PerformanceAlertInfo(subModeSettings.client.performanceAnalyzerType)
         self.addNotificator(SimpleNotifier(self.getTimer, self._subModeStatusUpdate))
         self.addNotificator(TimerNotifier(self.getTimer, self._subModeStatusTick))
@@ -198,9 +195,6 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         return (
          alertData is not None, alertData, self._ALERT_DATA_CLASS.packCallbacks(buttonCallback))
 
-    def getAmmoSetupViewAlias(self):
-        return ''
-
     def getAssetsPointer(self):
         return self._settings.client.assetsPointer
 
@@ -270,9 +264,12 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def _updateSettings(self, subModeSettings):
         self._settings = subModeSettings
-        self._modifiersDataProvider = ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
+        self._modifiersDataProvider = self._getModifiersDataProvider(subModeSettings)
         self._performanceAlertInfo = PerformanceAlertInfo(subModeSettings.client.performanceAnalyzerType)
         return True
+
+    def _getModifiersDataProvider(self, subModeSettings):
+        return ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
 
     def _subModeStatusTick(self):
         self.onSubModeEvent(FunEventType.SUB_STATUS_TICK, self.getSubModeID())

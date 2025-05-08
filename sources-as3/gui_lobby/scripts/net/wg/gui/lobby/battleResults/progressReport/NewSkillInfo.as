@@ -17,6 +17,8 @@ package net.wg.gui.lobby.battleResults.progressReport
       private static const BONUS_BTN_INITIAL_OFFSET:int = 20;
       
       private static const BONUS_BTN_INNER_OFFSET:int = 18;
+      
+      private static const NEW_SKILL_UNLOCK_TYPE:String = "NEW_SKILL_LINK_TYPE";
        
       
       protected var bonusButtons:Vector.<SoundButtonEx>;
@@ -133,13 +135,16 @@ package net.wg.gui.lobby.battleResults.progressReport
       
       private function onLinkBtnRollOverHandler(param1:MouseEvent) : void
       {
-         if(this._data.linkBtnEnabled)
+         if(this._data.linkEvent == NEW_SKILL_UNLOCK_TYPE)
          {
-            this._tooltipMgr.showWulfTooltip(TOOLTIPS_CONSTANTS.EMPTY_SKILL_GF,this._data.linkId);
-         }
-         else
-         {
-            this._tooltipMgr.show(TOOLTIPS.QUESTS_LINKBTN_CUSTOMIZATIONPROGRESSION_DISABLED);
+            if(this._data.linkBtnEnabled)
+            {
+               this._tooltipMgr.showWulfTooltip(TOOLTIPS_CONSTANTS.EMPTY_SKILL_GF,this._data.linkId);
+            }
+            else
+            {
+               this._tooltipMgr.show(TOOLTIPS.QUESTS_LINKBTN_CUSTOMIZATIONPROGRESSION_DISABLED);
+            }
          }
       }
       

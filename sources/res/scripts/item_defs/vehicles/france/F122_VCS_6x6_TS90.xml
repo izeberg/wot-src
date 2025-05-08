@@ -104,7 +104,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>5250</weight>
-		<maxHealth>1040</maxHealth>
+		<maxHealth>1080</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>230</maxHealth>
 			<maxRegenHealth>173</maxRegenHealth>
@@ -1938,7 +1938,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 			<weight>2200</weight>
-			<maxHealth>260</maxHealth>
+			<maxHealth>270</maxHealth>
 			<rotationSpeed>50</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -1998,7 +1998,7 @@
 						1.8
 						<!--BW_String-->
 					</aimingTime>
-					<reloadTime>17</reloadTime>
+					<reloadTime>16</reloadTime>
 					<shotDispersionRadius>
 						0.4
 						<!--BW_String-->

@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "common/boxCategory/lowerCase/dragonboat"
+msgstr "Драконьи ящики"
+
+msgid "common/boxCategory/upperCase/dragonboat"
+msgstr "ДРАКОНЬИ ЯЩИКИ"
+
+msgid "entryPoint/tooltip/description"
+msgstr ""
+"Это особые ящики, в которых вы найдёте уникальные и полезные внутриигровые предметы.\n"
+"Купить эти ящики можно во внутриигровом или Премиум магазинах."
+
+msgid "entryPoint/tooltip/title"
+msgstr "Что такое Драконьи ящики и как их получить"
+
+msgid "entryPoint/tooltip/warningTitle"
+msgstr "Драконьи ящики временно недоступны"
+
+msgid "eventName/lowerCase"
+msgstr "Приручить дракона и оседлать ветер"
+
+msgid "eventName/upperCase"
+msgstr "ПРИРУЧИТЬ ДРАКОНА И ОСЕДЛАТЬ ВЕТЕР"
+
+msgid "infoPage/footer/description/compensation"
+msgstr ""
+"Если у вас уже есть вся техника из списка возможных наград, все последующие "
+"машины, которые вы получите из Драконьих ящиков, будут компенсированы "
+"золотом в размере их полной стоимости."
+
+msgid "infoPage/footer/description/guaranteed"
+msgstr ""
+"Каждый %(guaranteed0)s Драконий ящик гарантированно содержит машину VIII–IX "
+"уровня. Если при открытии ящиков вы не получите такую технику в одном из "
+"них, то при открытии %(guaranteed0)s Драконьего ящика вы получите машину "
+"VIII–IX уровня, которой у вас ещё нет. После выпадения техники счётчик "
+"сбрасывается."
+
+msgid "noBoxesView/description/"
+msgstr ""
+"У вас нет ящиков.\n"
+"Вы можете получить их в Магазине."
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Открыто ящиков: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Оставшиеся ящики открыты"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"После завершения события мы открыли за вас ящики и начислили их содержимое."

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz39_STMP_Vz_62_Jasan/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/czech/Cz39_STMP_Vz_62_Jasan/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.605164 0.000034 -3.172289</min>
+		<max>1.605164 1.096947 3.026922</max>
+	</visibilityBox>
+</root>

@@ -93,7 +93,7 @@ msgid "efficiencyTooltip/header/spotted"
 msgstr "Обнаружение"
 
 msgid "finish"
-msgstr "Бой окончен:"
+msgstr "Бой окончен"
 
 msgid "premiumBonus/DeprecatedResults"
 msgstr "Применяется к последнему бою на выбранной машине."
@@ -151,93 +151,6 @@ msgstr "Dev Team Score"
 
 msgid "sub_modes/development/team/singleTeam"
 msgstr "Игроки"
-
-msgid "sub_modes/fall_tanks/efficiency/checkpointsPassed"
-msgstr "Контрольные точки"
-
-msgid "sub_modes/fall_tanks/efficiency/deathCount"
-msgstr "Возрождения"
-
-msgid "sub_modes/fall_tanks/efficiency/empty/finishPosition"
-msgstr "—"
-
-msgid "sub_modes/fall_tanks/efficiency/empty/finishTime"
-msgstr "—"
-
-msgid "sub_modes/fall_tanks/efficiency/finishPosition"
-msgstr "Место"
-
-msgid "sub_modes/fall_tanks/efficiency/finishTime"
-msgstr "Время"
-
-msgid "sub_modes/fall_tanks/efficiency/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
-msgid "sub_modes/fall_tanks/efficiency/kills"
-msgstr "Разрушен"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/checkpointsPassed"
-msgstr "Пройденные контрольные точки"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
-msgstr "Количество возрождений после разрушения вашей машины"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
-msgstr "Количество разрушенной вами техники"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
-msgstr "Ваша итоговая позиция в гонке"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishTime"
-msgstr "Время, за которое вы достигли финишной черты"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/checkpointsPassed"
-msgstr "Контрольные точки"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/deathCount"
-msgstr "Возрождения"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/destroyed"
-msgstr "Разрушен"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishPosition"
-msgstr "Место"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishTime"
-msgstr "Время"
-
-msgid "sub_modes/fall_tanks/navigation/battleResults"
-msgstr "Личный результат"
-
-msgid "sub_modes/fall_tanks/navigation/teamEfficiency"
-msgstr "Результаты участников"
-
-msgid "sub_modes/fall_tanks/team/empty/finishTime"
-msgstr "-- : -- . --"
-
-msgid "sub_modes/fall_tanks/team/finishPositionHeader/body"
-msgstr "Сортировать по месту"
-
-msgid "sub_modes/fall_tanks/team/finishPositionHeader/header"
-msgstr "Место"
-
-msgid "sub_modes/fall_tanks/team/finishTimeHeader/body"
-msgstr "Сортировать по времени"
-
-msgid "sub_modes/fall_tanks/team/finishTimeHeader/header"
-msgstr "Время"
-
-msgid "sub_modes/fall_tanks/team/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
-msgid "sub_modes/fall_tanks/team/singleTeam"
-msgstr "Игроки"
-
-msgid "sub_modes/fall_tanks/team/tankHeader/body"
-msgstr "Сортировать по технике"
-
-msgid "sub_modes/fall_tanks/team/tankHeader/header"
-msgstr "Техника"
 
 msgid "sub_modes/undefined/navigation/battleResults"
 msgstr "Личный результат"

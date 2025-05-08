@@ -459,6 +459,9 @@
 			<maxHealth>
 				<Type>UINT16</Type>
 			</maxHealth>
+			<respawnID>
+				<Type>UINT32</Type>
+			</respawnID>
 		</Properties>
 	</PUBLIC_VEHICLE_INFO>
 	<ARENA_VEH_INFO>
@@ -642,12 +645,6 @@
 			<tkillRating>
 				<Type>FLOAT</Type>
 			</tkillRating>
-			<cybersportRating>
-				<Type>
-					TUPLE
-					<of>FLOAT</of>
-				</Type>
-			</cybersportRating>
 			<globalRating>
 				<Type>FLOAT</Type>
 			</globalRating>
@@ -2952,6 +2949,9 @@
 			<deathInfo>
 				<Type>DEATH_INFO</Type>
 			</deathInfo>
+			<respawnID>
+				<Type>UINT32</Type>
+			</respawnID>
 			<__generation>
 				<Type>UINT32</Type>
 			</__generation>
@@ -3329,16 +3329,4 @@
 		ARRAY
 		<of>COMMENDATIONS_BATTLE_STATISTICS</of>
 	</COMMENDATIONS_BATTLE_STATISTICS_LIST>
-	<FALL_TANKS_EVACUATION_INFO>
-		FIXED_DICT
-		<AllowNone>true</AllowNone>
-		<Properties>
-			<endTime>
-				<Type>FLOAT32</Type>
-			</endTime>
-			<baseTime>
-				<Type>FLOAT32</Type>
-			</baseTime>
-		</Properties>
-	</FALL_TANKS_EVACUATION_INFO>
 </root>

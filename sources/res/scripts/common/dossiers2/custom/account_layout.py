@@ -366,10 +366,10 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'comp7_4_yearly_gold', 'comp7_4_yearly_champion', 'comp7_4_yearly_legend',
  'hw2024Medal', 'BattlePassCommonPr_15extra', 'NY25_AtmsphrLevel',
  'NY25_CelebChallenge', '14YearsOfService', 'BattlePassCommonPr_NY25',
- 'BattlePassCommonPr_16', 'BPReserveAchievement_1', 'BPReserveAchievement_2',
+ 'BattlePassCommonPr_16', 'BattlePassCommonPr_17', 'BPReserveAchievement_2',
  'BPReserveAchievement_3', 'BPReserveAchievement_4', 'BPReserveAchievement_5',
  'BPReserveAchievement_6', 'BPReserveAchievement_7', 'BPReserveAchievement_8',
- 'BPReserveAchievement_9', 'BPReserveAchievement_10', 'vDayHero']
+ 'BPReserveAchievement_9', 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -436,10 +436,10 @@ _singleAchievementsPopUps = [
  'comp7_4_yearly_gold', 'comp7_4_yearly_champion', 'comp7_4_yearly_legend', 'hw2024Medal',
  'BattlePassCommonPr_15extra', 'NY25_AtmsphrLevel', 'NY25_CelebChallenge',
  '14YearsOfService', 'BattlePassCommonPr_NY25', 'BattlePassCommonPr_16',
- 'BPReserveAchievement_1', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
+ 'BattlePassCommonPr_17', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
  'BPReserveAchievement_4', 'BPReserveAchievement_5', 'BPReserveAchievement_6',
  'BPReserveAchievement_7', 'BPReserveAchievement_8', 'BPReserveAchievement_9',
- 'BPReserveAchievement_10', 'vDayHero']
+ 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

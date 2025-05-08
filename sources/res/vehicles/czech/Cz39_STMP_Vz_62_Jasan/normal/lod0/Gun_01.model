@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz39_STMP_Vz_62_Jasan/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.615572 -0.319602 0.033412</min>
+		<max>0.404999 0.436907 4.728699</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz39_STMP_Vz_62_Jasan/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

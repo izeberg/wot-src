@@ -136,9 +136,6 @@ msgstr "Выдаётся игрокам за их неоценимый вкла�
 msgid "14YearsOfService_descr"
 msgstr "Вы в игре с %(regDate)s"
 
-msgid "BPReserveAchievement_1"
-msgstr "Резервное достижение БП 1"
-
 msgid "BPReserveAchievement_10"
 msgstr "Резервное достижение БП 10"
 
@@ -146,12 +143,6 @@ msgid "BPReserveAchievement_10_condition"
 msgstr "• Выдавалась за прохождение прогрессии."
 
 msgid "BPReserveAchievement_10_descr"
-msgstr "За определённые успехи в игре."
-
-msgid "BPReserveAchievement_1_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_1_descr"
 msgstr "За определённые успехи в игре."
 
 msgid "BPReserveAchievement_2"
@@ -366,6 +357,15 @@ msgstr "• Выдаётся после прохождения всех трёх
 msgid "BattlePassCommonPr_16_descr"
 msgstr ""
 "За определённые успехи в рамках шестнадцатого сезона Боевого пропуска."
+
+msgid "BattlePassCommonPr_17"
+msgstr "Благородная победа"
+
+msgid "BattlePassCommonPr_17_condition"
+msgstr "• Выдаётся после прохождения всех трёх глав."
+
+msgid "BattlePassCommonPr_17_descr"
+msgstr "За определённые успехи в рамках семнадцатого сезона Боевого пропуска."
 
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• Основная часть прогрессии состоит из 45 этапов."
@@ -2990,6 +2990,17 @@ msgstr ""
 msgid "kingOfTheHill_descr"
 msgstr "Остаться единственным выжившим в бою, управляя танком или ПТ-САУ."
 
+msgid "ls2025Medal"
+msgstr "Охотник за артефактами"
+
+msgid "ls2025Medal_condition"
+msgstr ""
+"Выдаётся всем игрокам, выполнившим необходимое условие в течение "
+"специального игрового события."
+
+msgid "ls2025Medal_descr"
+msgstr "Расшифруйте все записи в событии «Последний рубеж: Операция \"Пандора\"»."
+
 msgid "luckyDevil"
 msgstr "«Счастливчик»"
 
@@ -4841,7 +4852,7 @@ msgstr ""
 "\n"
 "• ИСУ-122С, ИСУ-122-2, ИСУ-130, ИСУ-152, ИСУ-152К\n"
 "\n"
-"• Объект&nbsp;252У, Защитник, Объект&nbsp;260, Объект&nbsp;261, Объект&nbsp;257, Объект&nbsp;263, Объект&nbsp;268, Объект&nbsp;268&nbsp;Вариант&nbsp;4, Объект&nbsp;268&nbsp;Вариант&nbsp;5, Объект&nbsp;704\n"
+"• Объект&nbsp;252У, Защитник, Ударный, Объект&nbsp;260, Объект&nbsp;261, Объект&nbsp;257, Объект&nbsp;263, Объект&nbsp;268, Объект&nbsp;268&nbsp;Вариант&nbsp;4, Объект&nbsp;268&nbsp;Вариант&nbsp;5, Объект&nbsp;704\n"
 "\n"
 "• Учитывается только техника СССР.\n"
 "• Засчитывается сумма результатов по всем машинам.\n"

@@ -26,7 +26,7 @@ from skeletons.gui.game_control import IPlatoonController, ICommendationsControl
 from skeletons.gui.goodies import IBoostersStateProvider
 from helpers import dependency
 from gui.impl.gen import R
-from gui.battle_control.arena_info import settings
+from gui.battle_control.arena_info import settings, squad_finder
 from frameworks.wulf import ViewModel
 from gui.battle_control.battle_constants import TabsAliases
 from gui.impl.common.personal_reserves.personal_reserves_shared_constants import PERSONAL_RESOURCE_ORDER
@@ -74,12 +74,23 @@ _COMMENDATIONS_STATE_TO_ENUM = {CommendationsState.UNSENT: CommendationStateEnum
    CommendationsState.RECEIVED: CommendationStateEnum.COMMENDBACK, 
    CommendationsState.MUTUAL: CommendationStateEnum.MUTUALCOMMENDATION}
 
+def _playerCompositionKey(playerModel):
+    return (
+     playerModel.getIsKilled(),
+     -playerModel.getVehicleLevel(),
+     _VEHICLE_TYPE_SORTING_ORDER_MAP[playerModel.getVehicleType()],
+     playerModel.getVehicleName(),
+     playerModel.getHiddenUserName() if playerModel.getIsFakeNameVisible() else playerModel.getUserName(),
+     playerModel.getVehicleId())
+
+
 class BattlePlayerNotFound(SoftException):
     pass
 
 
 class TabView(ViewImpl):
-    __slots__ = ('_notificatorManager', '_visitor', '_battleCtx', '__playerIndexes')
+    __slots__ = ('_notificatorManager', '_visitor', '_battleCtx', '__playerIndexes',
+                 '_squadFinder')
     _boostersStateProvider = dependency.descriptor(IBoostersStateProvider)
     _platoonController = dependency.descriptor(IPlatoonController)
     _settingsCore = dependency.descriptor(ISettingsCore)
@@ -93,6 +104,7 @@ class TabView(ViewImpl):
         viewSettings.model = TabViewModel()
         super(TabView, self).__init__(viewSettings)
         self._visitor = self.sessionProvider.arenaVisitor
+        self._squadFinder = squad_finder.createSquadFinder(self._visitor)
         self._battleCtx = self.sessionProvider.getCtx()
         self._notificatorManager = Notifiable()
         self.__playerIndexes = {}
@@ -188,6 +200,7 @@ class TabView(ViewImpl):
         super(TabView, self)._finalize()
 
     def _invalidateGameInfo(self, *args):
+        self._squadFinder.clear()
         self._invalidateVehiclesInfo()
         self._updateInvites()
         self._resetChatActions()
@@ -232,6 +245,7 @@ class TabView(ViewImpl):
         allies = []
         enemies = []
         for vehicleId, vehicleInfo in self._visitor.getArenaVehicles().iteritems():
+            self._updateSquadFinder(vehicleId, vehicleInfo)
             player = self._fillPlayerModel(vehicleId, vehicleInfo)
             if self._isAlly(vehicleInfo):
                 allies.append(player)
@@ -239,26 +253,41 @@ class TabView(ViewImpl):
                 enemies.append(player)
 
         with self.viewModel.transaction() as (model):
-            self._fillSortedPlayerListModel(model.playerList.getAllies(), allies)
-            self._fillSortedPlayerListModel(model.playerList.getEnemies(), enemies)
-
-    def _fillSortedPlayerListModel(self, playersList, battlePlayers):
-
-        def getPlayerSortingCondition(player):
-            return (
-             player.getIsKilled(),
-             -player.getVehicleLevel(),
-             _VEHICLE_TYPE_SORTING_ORDER_MAP[player.getVehicleType()],
-             player.getVehicleName(),
-             player.getHiddenUserName() if player.getIsFakeNameVisible() else player.getUserName(),
-             player.getVehicleId())
-
-        self._fillPlayerListModel(playersList, sorted(battlePlayers, key=getPlayerSortingCondition))
+            self._fillPlayerListModel(model.playerList.getAllies(), sorted(allies, key=_playerCompositionKey))
+            self._fillPlayerListModel(model.playerList.getEnemies(), sorted(enemies, key=_playerCompositionKey))
 
     def _onVehicleUpdated(self, vehicleId):
-        with self.viewModel.transaction():
-            self._updateStatus(vehicleId)
-            self._resortPlayerList(self._getPlayerList(self._getVehicleInfo(vehicleId)))
+        if vehicleId not in self.__playerIndexes:
+            return
+        vehicleInfo = self._getVehicleInfo(vehicleId)
+        self._updateSquadFinder(vehicleId, vehicleInfo)
+        with self.modifyBattlePlayer(vehicleId) as (playerModel):
+            self._invalidateVehicleStatus(playerModel)
+            self._invalidatePlatoonInfo(playerModel)
+        if self._needsResort(vehicleId):
+            self._resortPlayerList(self._getPlayerList(vehicleInfo))
+
+    def _needsResort(self, vehicleId):
+        vehicleInfo = self._getVehicleInfo(vehicleId)
+        if vehicleInfo is None:
+            return False
+        else:
+            idx = self.__playerIndexes[vehicleId]
+            playerModelList = self._getPlayerList(vehicleInfo)
+            key = _playerCompositionKey(playerModelList[idx])
+            previousKey = _playerCompositionKey(playerModelList[(idx - 1)]) if idx > 0 else None
+            nextKey = _playerCompositionKey(playerModelList[(idx + 1)]) if idx < len(playerModelList) - 1 else None
+            if previousKey is not None and key < previousKey:
+                return True
+            if nextKey is not None and key > nextKey:
+                return True
+            return False
+
+    def _updateSquadFinder(self, vehicleId, vehicleInfo):
+        team = self._getTeam(vehicleInfo)
+        prebattleId = self._getPrebattleID(vehicleInfo)
+        if prebattleId:
+            self._squadFinder.addVehicleInfo(team, prebattleId, vehicleId)
 
     def _onVehicleAdded(self, vehicleId):
         with self.viewModel.transaction():
@@ -267,9 +296,12 @@ class TabView(ViewImpl):
             playerList = self._getPlayerList(vehicleInfo)
             self._resortPlayerList(playerList, [player])
 
-    def _resortPlayerList(self, playerList, playersToAdd=None):
-        players = [ battlePlayer for battlePlayer in playerList ]
-        self._fillSortedPlayerListModel(playerList, players + playersToAdd if playersToAdd else players)
+    def _resortPlayerList(self, playerModelArray, playersToAdd=None):
+        playerModelList = [ battlePlayer for battlePlayer in playerModelArray ]
+        if playersToAdd is not None:
+            playerModelList.extend(playersToAdd)
+        self._fillPlayerListModel(playerModelArray, sorted(playerModelList, key=_playerCompositionKey))
+        return
 
     def _fillPlayerModel(self, vehicleId, vehicleInfo):
         playerVehicleID = avatar_getter.getPlayerVehicleID()
@@ -294,16 +326,47 @@ class TabView(ViewImpl):
             player.setAnonymizerTooltip(backport.text(self._getAnonymizerTooltipContent(player)(), fakeName=vehicleInfo['fakeName']))
         return player
 
-    def _invalidatePlatoonInfo(self, player):
-        arenaDP = self.sessionProvider.getArenaDP()
-        vehicleId = player.getVehicleId()
-        playerVehicleID = avatar_getter.getPlayerVehicleID()
-        if not (vehicleId and arenaDP and playerVehicleID):
+    def _isSquadMember(self, memberVehID, prebattleId):
+        vehInfo = self._getVehicleInfo(memberVehID)
+        if vehInfo is not None:
+            return self._getPrebattleID(vehInfo) == prebattleId
+        else:
+            return False
+
+    def _invalidatePlatoonInfo(self, playerModel):
+        vehicleId = playerModel.getVehicleId()
+        vehicleInfo = self._getVehicleInfo(vehicleId)
+        prebattleId = self._getPrebattleID(vehicleInfo)
+        isAvatarSquad = self._isAvatarSquad(prebattleId)
+        if not prebattleId:
+            playerModel.setIsPlatoonInvitationDisabled(not self._isPlatoonInvitationEnabled(vehicleId))
             return
-        playerVehicleInfo = arenaDP.getVehicleInfo(playerVehicleID)
-        player.setPlatoon(arenaDP.getVehicleInfo(vehicleId).squadIndex)
-        player.setIsMyPlatoon(playerVehicleInfo.prebattleID != 0 and playerVehicleInfo.prebattleID == arenaDP.getVehicleInfo(vehicleId).prebattleID)
-        player.setIsPlatoonInvitationDisabled(not self._isPlatoonInvitationEnabled(vehicleId))
+        for vehId, squadIdx in self._squadFinder.findSquads():
+            if self._isSquadMember(vehId, prebattleId):
+                model = self.__getBattlePlayer(vehId)
+                if not model:
+                    continue
+                model.setPlatoon(squadIdx)
+                model.setIsMyPlatoon(isAvatarSquad)
+                model.setIsPlatoonInvitationDisabled(not self._isPlatoonInvitationEnabled(vehId))
+
+    def _isAvatarSquad(self, prebattleId):
+        playerVehInfo = self._getVehicleInfo(avatar_getter.getPlayerVehicleID())
+        return playerVehInfo and prebattleId and prebattleId == self._getPrebattleID(playerVehInfo)
+
+    @staticmethod
+    def _getTeam(vehicleInfo):
+        if vehicleInfo is not None:
+            return vehicleInfo.get('team', 0)
+        else:
+            return 0
+
+    @staticmethod
+    def _getPrebattleID(vehicleInfo):
+        if vehicleInfo is not None:
+            return vehicleInfo.get('prebattleID', 0)
+        else:
+            return 0
 
     def _isPlatoonInvitationEnabled(self, vehicleId):
         arenaDP = self.sessionProvider.getArenaDP()
@@ -409,14 +472,16 @@ class TabView(ViewImpl):
         playerVehicleID = avatar_getter.getPlayerVehicleID()
         if not playerVehicleID:
             return set()
-        invites = self.prbInvites.getInvites(onlyActive=True)
-        ownVehicleInfo = self._visitor.getArenaVehicles()[playerVehicleID]
-        if not ownVehicleInfo:
-            _logger.warning('[TabView] Vehicle %d info not found.', ownVehicleInfo)
-            return set()
-        if received:
-            return {inv.creatorID for inv in invites if inv.receiverID == ownVehicleInfo['avatarSessionID']}
-        return {inv.receiverID for inv in invites if inv.creatorID == ownVehicleInfo['avatarSessionID']}
+        else:
+            invites = self.prbInvites.getInvites(onlyActive=True)
+            ownVehicleInfo = self._visitor.getArenaVehicles().get(playerVehicleID)
+            if ownVehicleInfo is None:
+                if not self.sessionProvider.isReplayPlaying:
+                    _logger.warning('[TabView] Vehicle %d info not found.', ownVehicleInfo)
+                return set()
+            if received:
+                return {inv.creatorID for inv in invites if inv.receiverID == ownVehicleInfo['avatarSessionID']}
+            return {inv.receiverID for inv in invites if inv.creatorID == ownVehicleInfo['avatarSessionID']}
 
     def _updateDenunciations(self, denunciationInfo):
         violatorVehId = denunciationInfo[0]
@@ -668,9 +733,6 @@ class TabView(ViewImpl):
             events.append((self.prbInvites.onInvitesListInited, self._updateInvites))
         if self.battleField is not None:
             events.append((self.battleField.onSpottedStatusChanged, self._onSpottedStatusChanged))
-        dynSquads = self.sessionProvider.dynamic.dynSquads
-        if dynSquads is not None:
-            events.append((dynSquads.onDynSquadCreatedOrJoined, self._updateInvites))
         return events
 
     def handleTabChange(self, tabAlias):

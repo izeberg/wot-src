@@ -79,6 +79,9 @@
 			<lockedStyle>
 				<isVisible>False</isVisible>
 			</lockedStyle>
+			<attachment>
+				<priority>115</priority>
+			</attachment>
 			<projectionDecal>
 				<priority>75</priority>
 			</projectionDecal>
@@ -102,26 +105,42 @@
 		<blueprints>
 			<override>
 				<id>65523</id>
-				<priority>63</priority>
+				<priority>65</priority>
 			</override>
 			<override>
 				<id>65282 65298 65314 65330 65346 65362 65378 65394 65410 65426 65442</id>
-				<priority>64</priority>
+				<priority>66</priority>
 			</override>
 			<bigIcon>Standard</bigIcon>
 		</blueprints>
 		<crewBooks>
 			<override>
-				<id>15390</id>
-				<priority>56</priority>
-			</override>
-			<override>
-				<id>286 542 798 1054 1310 1566 1822 2078 2334 2590 2846</id>
+				<id>16158</id>
 				<priority>55</priority>
 			</override>
 			<override>
-				<id>5406 5662 5918 6174 6430 6686 6942 7198  7454 7710 7966</id>
+				<id>15902</id>
+				<priority>59</priority>
+			</override>
+			<override>
+				<id>15646</id>
+				<priority>61</priority>
+			</override>
+			<override>
+				<id>15390</id>
+				<priority>57</priority>
+			</override>
+			<override>
+				<id>286 542 798 1054 1310 1566 1822 2078 2334 2590 2846</id>
+				<priority>56</priority>
+			</override>
+			<override>
+				<id>5406 5662 5918 6174 6430 6686 6942 7198 7454 7710 7966</id>
 				<priority>60</priority>
+			</override>
+			<override>
+				<id>10526 10782 11038 11294 11550 11806 12062 12318 12574 12830 13086</id>
+				<priority>62</priority>
 			</override>
 			<bigIcon>Standard</bigIcon>
 		</crewBooks>
@@ -164,7 +183,19 @@
 			</override>
 			<override>
 				<id>121002</id>
-				<priority>67</priority>
+				<priority>68</priority>
+			</override>
+			<override>
+				<id>121003</id>
+				<priority>68</priority>
+			</override>
+			<override>
+				<id>13461</id>
+				<priority>64</priority>
+			</override>
+			<override>
+				<id>13616</id>
+				<priority>63</priority>
 			</override>
 			<bigIcon>Standard</bigIcon>
 		</goodies>
@@ -182,7 +213,7 @@
 				<bigIcon>Standard</bigIcon>
 			</deviceBattleBooster>
 			<optionalDevice>
-				<priority>65</priority>
+				<priority>67</priority>
 				<bigIcon>Standard</bigIcon>
 			</optionalDevice>
 			<modernizedDevice>
@@ -208,23 +239,27 @@
 				<bigIcon>Standard</bigIcon>
 			</battle_booster_gift>
 			<blueprint_gift>
-				<priority>64</priority>
+				<priority>66</priority>
 				<bigIcon>Standard</bigIcon>
 			</blueprint_gift>
 			<brochure_gift>
-				<priority>55</priority>
+				<priority>56</priority>
 				<bigIcon>Standard</bigIcon>
 			</brochure_gift>
 			<guide_gift>
 				<priority>60</priority>
 				<bigIcon>Standard</bigIcon>
 			</guide_gift>
+			<crewbook_gift>
+				<priority>62</priority>
+				<bigIcon>Standard</bigIcon>
+			</crewbook_gift>
 			<modernized_device_gift>
 				<priority>102</priority>
 				<bigIcon>Standard</bigIcon>
 			</modernized_device_gift>
 			<new_device_gift>
-				<priority>65</priority>
+				<priority>67</priority>
 				<bigIcon>Standard</bigIcon>
 			</new_device_gift>
 			<trophy_gift>

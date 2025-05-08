@@ -3955,10 +3955,6 @@ package
       
       public static const CAMOUFLAGE_BATTLE_OF_BULGE_DESCRIPTION:String = "#vehicle_customization:camouflage/battle_of_bulge/description";
       
-      public static const CAMOUFLAGE_FALL_TANKS_LABEL:String = "#vehicle_customization:camouflage/fall_tanks/label";
-      
-      public static const CAMOUFLAGE_FALL_TANKS_DESCRIPTION:String = "#vehicle_customization:camouflage/fall_tanks/description";
-      
       public static const CAMOUFLAGE_BEAST_4_LABEL:String = "#vehicle_customization:camouflage/beast_4/label";
       
       public static const CAMOUFLAGE_BEAST_4_DESCRIPTION:String = "#vehicle_customization:camouflage/beast_4/description";
@@ -4094,6 +4090,114 @@ package
       public static const CAMOUFLAGE_PUB_LIVEOPS_LABEL:String = "#vehicle_customization:camouflage/pub_liveops/label";
       
       public static const CAMOUFLAGE_PUB_LIVEOPS_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_liveops/description";
+      
+      public static const CAMOUFLAGE_PUB_WEST_LABEL:String = "#vehicle_customization:camouflage/pub_west/label";
+      
+      public static const CAMOUFLAGE_PUB_WEST_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_west/description";
+      
+      public static const CAMOUFLAGE_PUB_WEST_SOCIALMEDIA_LABEL:String = "#vehicle_customization:camouflage/pub_west_socialmedia/label";
+      
+      public static const CAMOUFLAGE_PUB_WEST_SOCIALMEDIA_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_west_socialmedia/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_MEDIEVAL_LABEL:String = "#vehicle_customization:camouflage/liveops_medieval/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_MEDIEVAL_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_medieval/description";
+      
+      public static const CAMOUFLAGE_TANKFEST_2025_LABEL:String = "#vehicle_customization:camouflage/tankfest_2025/label";
+      
+      public static const CAMOUFLAGE_TANKFEST_2025_DESCRIPTION:String = "#vehicle_customization:camouflage/tankfest_2025/description";
+      
+      public static const CAMOUFLAGE_RETROWAVE_LABEL:String = "#vehicle_customization:camouflage/retrowave/label";
+      
+      public static const CAMOUFLAGE_RETROWAVE_DESCRIPTION:String = "#vehicle_customization:camouflage/retrowave/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_MANGA_LABEL:String = "#vehicle_customization:camouflage/liveops_manga/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_MANGA_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_manga/description";
+      
+      public static const CAMOUFLAGE_PUB_WEST_TOKEN_1_LABEL:String = "#vehicle_customization:camouflage/pub_west_token_1/label";
+      
+      public static const CAMOUFLAGE_PUB_WEST_TOKEN_1_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_west_token_1/description";
+      
+      public static const CAMOUFLAGE_PUB_WEST_TOKEN_2_LABEL:String = "#vehicle_customization:camouflage/pub_west_token_2/label";
+      
+      public static const CAMOUFLAGE_PUB_WEST_TOKEN_2_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_west_token_2/description";
+      
+      public static const CAMOUFLAGE_PUB_WEST_CHARITY_1_LABEL:String = "#vehicle_customization:camouflage/pub_west_charity_1/label";
+      
+      public static const CAMOUFLAGE_PUB_WEST_CHARITY_1_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_west_charity_1/description";
+      
+      public static const CAMOUFLAGE_PUB_WEST_CHARITY_2_LABEL:String = "#vehicle_customization:camouflage/pub_west_charity_2/label";
+      
+      public static const CAMOUFLAGE_PUB_WEST_CHARITY_2_DESCRIPTION:String = "#vehicle_customization:camouflage/pub_west_charity_2/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_SUMMER_FESTIVAL_2025_1_LABEL:String = "#vehicle_customization:camouflage/liveops_summer_festival_2025_1/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_SUMMER_FESTIVAL_2025_1_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_summer_festival_2025_1/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_SUMMER_FESTIVAL_2025_2_LABEL:String = "#vehicle_customization:camouflage/liveops_summer_festival_2025_2/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_SUMMER_FESTIVAL_2025_2_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_summer_festival_2025_2/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_1_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_1/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_1_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_1/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_2_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_2/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_2_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_2/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_3_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_3/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_3_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_3/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_4_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_4/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_4_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_4/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_5_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_5/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_5_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_5/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_6_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_6/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_6_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_6/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_7_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_7/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_7_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_7/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_8_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_8/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_8_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_8/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_9_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_9/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_9_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_9/description";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_10_LABEL:String = "#vehicle_customization:camouflage/liveops_recolor_10/label";
+      
+      public static const CAMOUFLAGE_LIVEOPS_RECOLOR_10_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_10/description";
+      
+      public static const CAMOUFLAGE_CLANS_2D_THOR_LABEL:String = "#vehicle_customization:camouflage/clans_2d_thor/label";
+      
+      public static const CAMOUFLAGE_CLANS_2D_THOR_DESCRIPTION:String = "#vehicle_customization:camouflage/clans_2d_thor/description";
+      
+      public static const CAMOUFLAGE_BP2025_S17_1_LABEL:String = "#vehicle_customization:camouflage/bp2025_s17_1/label";
+      
+      public static const CAMOUFLAGE_BP2025_S17_1_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_s17_1/description";
+      
+      public static const CAMOUFLAGE_BP2025_S17_2_LABEL:String = "#vehicle_customization:camouflage/bp2025_s17_2/label";
+      
+      public static const CAMOUFLAGE_BP2025_S17_2_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_s17_2/description";
+      
+      public static const CAMOUFLAGE_BP2025_S17_3_LABEL:String = "#vehicle_customization:camouflage/bp2025_s17_3/label";
+      
+      public static const CAMOUFLAGE_BP2025_S17_3_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_s17_3/description";
+      
+      public static const CAMOUFLAGE_BP2025_S17_4_LABEL:String = "#vehicle_customization:camouflage/bp2025_s17_4/label";
+      
+      public static const CAMOUFLAGE_BP2025_S17_4_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_s17_4/description";
       
       public static const EMBLEM:String = "#vehicle_customization:emblem";
       
@@ -14009,12 +14113,6 @@ package
       
       public static const SPECIAL_STYLE_MANTICORE_PROGRESSION_2024:String = "#vehicle_customization:special_style/manticore_progression_2024";
       
-      public static const SPECIAL_STYLE_FALL_TANKS:String = "#vehicle_customization:special_style/fall_tanks";
-      
-      public static const SPECIAL_STYLE_FALL_TANKS_DESC:String = "#vehicle_customization:special_style/fall_tanks_desc";
-      
-      public static const SPECIAL_STYLE_FALL_TANKS_DESC_LONG:String = "#vehicle_customization:special_style/fall_tanks_desc/long";
-      
       public static const CAMOUFLAGE_BOOSTEROID_01_LABEL:String = "#vehicle_customization:camouflage/Boosteroid_01/label";
       
       public static const CAMOUFLAGE_BOOSTEROID_01_DESCRIPTION:String = "#vehicle_customization:camouflage/Boosteroid_01/description";
@@ -14045,6 +14143,16 @@ package
       
       public static const SPECIAL_STYLE_BOOSTEROID_03_DESC_LONG:String = "#vehicle_customization:special_style/Boosteroid_03_desc/long";
       
+      public static const SPECIAL_STYLE_BOOSTEROID_04:String = "#vehicle_customization:special_style/boosteroid_04";
+      
+      public static const SPECIAL_STYLE_BOOSTEROID_04_DESC:String = "#vehicle_customization:special_style/boosteroid_04_desc";
+      
+      public static const SPECIAL_STYLE_BOOSTEROID_04_DESC_LONG:String = "#vehicle_customization:special_style/boosteroid_04_desc/long";
+      
+      public static const CAMOUFLAGE_BOOSTEROID_04_LABEL:String = "#vehicle_customization:camouflage/boosteroid_04/label";
+      
+      public static const CAMOUFLAGE_BOOSTEROID_04_DESCRIPTION:String = "#vehicle_customization:camouflage/boosteroid_04/description";
+      
       public static const SPECIAL_STYLE_BEAST_4:String = "#vehicle_customization:special_style/beast_4";
       
       public static const SPECIAL_STYLE_BEAST_4_DESC:String = "#vehicle_customization:special_style/beast_4_desc";
@@ -14057,7 +14165,11 @@ package
       
       public static const REPAINT_BOOSTEROID_03:String = "#vehicle_customization:repaint/Boosteroid_03";
       
+      public static const REPAINT_BOOSTEROID_04:String = "#vehicle_customization:repaint/boosteroid_04";
+      
       public static const EMBLEM_SPECIAL_STICKER_859:String = "#vehicle_customization:emblem/special/sticker_859";
+      
+      public static const EMBLEM_SPECIAL_STICKER_863:String = "#vehicle_customization:emblem/special/sticker_863";
       
       public static const SPECIAL_STYLE_MANTICORE_PROGRESSION_2025:String = "#vehicle_customization:special_style/manticore_progression_2025";
       
@@ -14264,6 +14376,180 @@ package
       public static const SPECIAL_STYLE_PUB_LIVEOPS_DESC:String = "#vehicle_customization:special_style/pub_liveops_desc";
       
       public static const SPECIAL_STYLE_PUB_LIVEOPS_DESC_LONG:String = "#vehicle_customization:special_style/pub_liveops_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_WEST:String = "#vehicle_customization:special_style/pub_west";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_DESC:String = "#vehicle_customization:special_style/pub_west_desc";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_SOCIALMEDIA:String = "#vehicle_customization:special_style/pub_west_socialmedia";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_SOCIALMEDIA_DESC:String = "#vehicle_customization:special_style/pub_west_socialmedia_desc";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_SOCIALMEDIA_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_socialmedia_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_MEDIEVAL:String = "#vehicle_customization:special_style/liveops_medieval";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_MEDIEVAL_DESC:String = "#vehicle_customization:special_style/liveops_medieval_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_MEDIEVAL_DESC_LONG:String = "#vehicle_customization:special_style/liveops_medieval_desc/long";
+      
+      public static const SPECIAL_STYLE_TANKFEST_2025:String = "#vehicle_customization:special_style/tankfest_2025";
+      
+      public static const SPECIAL_STYLE_TANKFEST_2025_DESC:String = "#vehicle_customization:special_style/tankfest_2025_desc";
+      
+      public static const SPECIAL_STYLE_TANKFEST_2025_DESC_LONG:String = "#vehicle_customization:special_style/tankfest_2025_desc/long";
+      
+      public static const SPECIAL_STYLE_RETROWAVE:String = "#vehicle_customization:special_style/retrowave";
+      
+      public static const SPECIAL_STYLE_RETROWAVE_DESC:String = "#vehicle_customization:special_style/retrowave_desc";
+      
+      public static const SPECIAL_STYLE_RETROWAVE_DESC_LONG:String = "#vehicle_customization:special_style/retrowave_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_MANGA:String = "#vehicle_customization:special_style/liveops_manga";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_MANGA_DESC:String = "#vehicle_customization:special_style/liveops_manga_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_MANGA_DESC_LONG:String = "#vehicle_customization:special_style/liveops_manga_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_TOKEN_1:String = "#vehicle_customization:special_style/pub_west_token_1";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_TOKEN_1_DESC:String = "#vehicle_customization:special_style/pub_west_token_1_desc";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_TOKEN_1_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_token_1_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_TOKEN_2:String = "#vehicle_customization:special_style/pub_west_token_2";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_TOKEN_2_DESC:String = "#vehicle_customization:special_style/pub_west_token_2_desc";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_TOKEN_2_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_token_2_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_CHARITY_1:String = "#vehicle_customization:special_style/pub_west_charity_1";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_CHARITY_1_DESC:String = "#vehicle_customization:special_style/pub_west_charity_1_desc";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_CHARITY_1_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_charity_1_desc/long";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_CHARITY_2:String = "#vehicle_customization:special_style/pub_west_charity_2";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_CHARITY_2_DESC:String = "#vehicle_customization:special_style/pub_west_charity_2_desc";
+      
+      public static const SPECIAL_STYLE_PUB_WEST_CHARITY_2_DESC_LONG:String = "#vehicle_customization:special_style/pub_west_charity_2_desc/long";
+      
+      public static const SPECIAL_STYLE_GB142_FV230_CANOPENER_TXVII_3DST:String = "#vehicle_customization:special_style/GB142_FV230_Canopener_TXVII_3Dst";
+      
+      public static const SPECIAL_STYLE_GB142_FV230_CANOPENER_TXVII_3DST_DESC_LONG:String = "#vehicle_customization:special_style/GB142_FV230_Canopener_TXVII_3Dst_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_SUMMER_FESTIVAL_2025_1:String = "#vehicle_customization:special_style/liveops_summer_festival_2025_1";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_SUMMER_FESTIVAL_2025_1_DESC:String = "#vehicle_customization:special_style/liveops_summer_festival_2025_1_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_SUMMER_FESTIVAL_2025_1_DESC_LONG:String = "#vehicle_customization:special_style/liveops_summer_festival_2025_1_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_SUMMER_FESTIVAL_2025_2:String = "#vehicle_customization:special_style/liveops_summer_festival_2025_2";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_SUMMER_FESTIVAL_2025_2_DESC:String = "#vehicle_customization:special_style/liveops_summer_festival_2025_2_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_SUMMER_FESTIVAL_2025_2_DESC_LONG:String = "#vehicle_customization:special_style/liveops_summer_festival_2025_2_desc/long";
+      
+      public static const SPECIAL_STYLE_CH41_WZ_111_5A_TXVII_3DST:String = "#vehicle_customization:special_style/Ch41_WZ_111_5A_TXVII_3Dst";
+      
+      public static const SPECIAL_STYLE_CH41_WZ_111_5A_TXVII_3DST_DESC_LONG:String = "#vehicle_customization:special_style/Ch41_WZ_111_5A_TXVII_3Dst_desc/long";
+      
+      public static const SPECIAL_STYLE_A120_M48A5_TXVII_3DST:String = "#vehicle_customization:special_style/A120_M48A5_TXVII_3Dst";
+      
+      public static const SPECIAL_STYLE_A120_M48A5_TXVII_3DST_DESC_LONG:String = "#vehicle_customization:special_style/A120_M48A5_TXVII_3Dst_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_1:String = "#vehicle_customization:special_style/liveops_recolor_1";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_1_DESC:String = "#vehicle_customization:special_style/liveops_recolor_1_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_1_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_1_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_2:String = "#vehicle_customization:special_style/liveops_recolor_2";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_2_DESC:String = "#vehicle_customization:special_style/liveops_recolor_2_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_2_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_2_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_3:String = "#vehicle_customization:special_style/liveops_recolor_3";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_3_DESC:String = "#vehicle_customization:special_style/liveops_recolor_3_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_3_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_3_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_4:String = "#vehicle_customization:special_style/liveops_recolor_4";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_4_DESC:String = "#vehicle_customization:special_style/liveops_recolor_4_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_4_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_4_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_5:String = "#vehicle_customization:special_style/liveops_recolor_5";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_5_DESC:String = "#vehicle_customization:special_style/liveops_recolor_5_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_5_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_5_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_6:String = "#vehicle_customization:special_style/liveops_recolor_6";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_6_DESC:String = "#vehicle_customization:special_style/liveops_recolor_6_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_6_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_6_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_7:String = "#vehicle_customization:special_style/liveops_recolor_7";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_7_DESC:String = "#vehicle_customization:special_style/liveops_recolor_7_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_7_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_7_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_8:String = "#vehicle_customization:special_style/liveops_recolor_8";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_8_DESC:String = "#vehicle_customization:special_style/liveops_recolor_8_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_8_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_8_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_9:String = "#vehicle_customization:special_style/liveops_recolor_9";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_9_DESC:String = "#vehicle_customization:special_style/liveops_recolor_9_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_9_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_9_desc/long";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_10:String = "#vehicle_customization:special_style/liveops_recolor_10";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_10_DESC:String = "#vehicle_customization:special_style/liveops_recolor_10_desc";
+      
+      public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_10_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_10_desc/long";
+      
+      public static const SPECIAL_STYLE_CLANS_2D_THOR:String = "#vehicle_customization:special_style/clans_2d_thor";
+      
+      public static const SPECIAL_STYLE_CLANS_2D_THOR_DESC:String = "#vehicle_customization:special_style/clans_2d_thor_desc";
+      
+      public static const SPECIAL_STYLE_CLANS_2D_THOR_DESC_LONG:String = "#vehicle_customization:special_style/clans_2d_thor_desc/long";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_1:String = "#vehicle_customization:special_style/bp2025_s17_1";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_1_DESC:String = "#vehicle_customization:special_style/bp2025_s17_1_desc";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_1_DESC_LONG:String = "#vehicle_customization:special_style/bp2025_s17_1_desc/long";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_2:String = "#vehicle_customization:special_style/bp2025_s17_2";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_2_DESC:String = "#vehicle_customization:special_style/bp2025_s17_2_desc";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_2_DESC_LONG:String = "#vehicle_customization:special_style/bp2025_s17_2_desc/long";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_3:String = "#vehicle_customization:special_style/bp2025_s17_3";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_3_DESC:String = "#vehicle_customization:special_style/bp2025_s17_3_desc";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_3_DESC_LONG:String = "#vehicle_customization:special_style/bp2025_s17_3_desc/long";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_4:String = "#vehicle_customization:special_style/bp2025_s17_4";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_4_DESC:String = "#vehicle_customization:special_style/bp2025_s17_4_desc";
+      
+      public static const SPECIAL_STYLE_BP2025_S17_4_DESC_LONG:String = "#vehicle_customization:special_style/bp2025_s17_4_desc/long";
       
       public static const CUSTOMIZATION_POPOVER_STYLE_SUMMER:String = "#vehicle_customization:customization/popover/style/summer";
       
@@ -17304,6 +17590,20 @@ package
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_874:String = "#vehicle_customization:projection_decals/special/projection_decal_874";
       
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_875:String = "#vehicle_customization:projection_decals/special/projection_decal_875";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_883:String = "#vehicle_customization:projection_decals/special/projection_decal_883";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_884:String = "#vehicle_customization:projection_decals/special/projection_decal_884";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_906:String = "#vehicle_customization:projection_decals/special/projection_decal_906";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_907:String = "#vehicle_customization:projection_decals/special/projection_decal_907";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_908:String = "#vehicle_customization:projection_decals/special/projection_decal_908";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_916:String = "#vehicle_customization:projection_decals/special/projection_decal_916";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_917:String = "#vehicle_customization:projection_decals/special/projection_decal_917";
       
       public static const ATTACHMENT_GENERAL:String = "#vehicle_customization:attachment/general";
       

@@ -32,8 +32,5 @@
 			<Arg>UINT64</Arg>
 		</onEnqueued>
 		<onQueueTurn/>
-		<onAccountClientReleased>
-			<Arg>MAILBOX</Arg>
-		</onAccountClientReleased>
 	</BaseMethods>
 </root>

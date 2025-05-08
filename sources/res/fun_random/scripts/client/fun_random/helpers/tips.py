@@ -13,7 +13,7 @@ class FunRandomTipsCriteria(TipsCriteria, FunSubModesWatcher):
     def find(self):
         battleSubMode = self.getBattleSubMode(self.__sessionProvider.arenaVisitor)
         iconsRoot = battleSubMode.getIconsResRoot()
-        tips = [ TipData(tipRes.title(), tipRes.description(), iconsRoot.tips.dyn(tipID)()) for tipID, tipRes in battleSubMode.getLocalsResRoot().tips.items()
+        tips = [ TipData(tipRes.title(), tipRes.description(), iconsRoot.tips.dyn(tipID)()) for tipID, tipRes in battleSubMode.getLocalsResRoot().dyn('tips').items()
                ]
         if tips:
             return random.choice(tips)

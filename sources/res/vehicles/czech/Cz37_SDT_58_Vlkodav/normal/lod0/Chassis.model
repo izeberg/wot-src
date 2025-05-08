@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz37_SDT_58_Vlkodav/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/czech/Cz37_SDT_58_Vlkodav/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.758845 0.000000 -3.687191</min>
+		<max>1.758845 1.278278 3.697028</max>
+	</visibilityBox>
+</root>

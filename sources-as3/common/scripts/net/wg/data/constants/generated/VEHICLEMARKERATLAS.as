@@ -223,6 +223,8 @@ package net.wg.data.constants.generated
       
       public static const CZECH_CZ20_SH_PTK_TVP_100_MM_CO:String = "czech-Cz20_ShPTK_TVP_100_mm_CO";
       
+      public static const CZECH_CZ21_VZ_60_S:String = "czech-Cz21_Vz_60S";
+      
       public static const CZECH_CZ23_SKODA_T_17:String = "czech-Cz23_Skoda_T_17";
       
       public static const CZECH_CZ24_VZ_64_BLESK:String = "czech-Cz24_Vz_64_Blesk";
@@ -238,6 +240,12 @@ package net.wg.data.constants.generated
       public static const CZECH_CZ34_VZ_71_TESAK:String = "czech-Cz34_Vz_71_Tesak";
       
       public static const CZECH_CZ35_T56_G:String = "czech-Cz35_T56_G";
+      
+      public static const CZECH_CZ37_SDT_58_VLKODAV:String = "czech-cz37_sdt_58_vlkodav";
+      
+      public static const CZECH_CZ38_SZDV_VZ50:String = "czech-Cz38_SZDV_vz50";
+      
+      public static const CZECH_CZ39_STMP_VZ_62_JASAN:String = "czech-Cz39_STMP_Vz_62_Jasan";
       
       public static const CZECH_CZ40_DBV_152:String = "czech-Cz40_DBV_152";
       
@@ -697,11 +705,17 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G174_KPZ3_GST_TURM:String = "germany-G174_Kpz3_GST_Turm";
       
+      public static const GERMANY_G177_E65_ZWILLING:String = "germany-G177_E65_Zwilling";
+      
       public static const GERMANY_G178_KAN_JPZ_2:String = "germany-G178_KanJpz_2";
       
       public static const GERMANY_G179_STRAUSSLER_V4:String = "germany-G179_Straussler_V4";
       
       public static const GERMANY_G18_JAGD_PANTHER:String = "germany-G18_JagdPanther";
+      
+      public static const GERMANY_G184_WINDHUND:String = "germany-G184_Windhund";
+      
+      public static const GERMANY_G186_SCHWERTWAL:String = "germany-G186_Schwertwal";
       
       public static const GERMANY_G19_WESPE:String = "germany-G19_Wespe";
       
@@ -2705,15 +2719,11 @@ package net.wg.data.constants.generated
       
       public static const VEHICLE_LEVEL_9:String = "vehicleLevel_9";
       
-      public static const WHITE_AT_SPG:String = "white_AT-SPG";
-      
       public static const WHITE_HEAVY_TANK:String = "white_heavyTank";
       
       public static const WHITE_LIGHT_TANK:String = "white_lightTank";
       
       public static const WHITE_MEDIUM_TANK:String = "white_mediumTank";
-      
-      public static const WHITE_SPG:String = "white_SPG";
       
       public static const YELLOW_AT_SPG:String = "yellow_AT-SPG";
       

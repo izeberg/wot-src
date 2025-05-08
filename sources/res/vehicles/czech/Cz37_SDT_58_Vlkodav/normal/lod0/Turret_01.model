@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz37_SDT_58_Vlkodav/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz37_SDT_58_Vlkodav/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.528549 -0.000001 -2.170334</min>
+		<max>1.543469 4.733138 1.724740</max>
+	</visibilityBox>
+</root>

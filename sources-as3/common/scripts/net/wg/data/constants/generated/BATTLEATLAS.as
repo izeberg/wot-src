@@ -101,8 +101,6 @@ package net.wg.data.constants.generated
       
       public static const AT_SPG_ALLY_GREEN:String = "AT-SPG_ally_green";
       
-      public static const AT_SPG_DEAD_WHITE:String = "AT-SPG_dead_white";
-      
       public static const AT_SPG_ELITE_ALLY_DEAD_GREEN:String = "AT-SPG_elite_ally_dead_green";
       
       public static const AT_SPG_ELITE_ALLY_GREEN:String = "AT-SPG_elite_ally_green";
@@ -142,8 +140,6 @@ package net.wg.data.constants.generated
       public static const AT_SPG_TEAM_KILLER_BLUE:String = "AT-SPG_teamKiller_blue";
       
       public static const AT_SPG_TEAM_KILLER_DEAD_BLUE:String = "AT-SPG_teamKiller_dead_blue";
-      
-      public static const AT_SPG_WHITE:String = "AT-SPG_white";
       
       public static const BADGE_1:String = "badge_1";
       
@@ -328,6 +324,10 @@ package net.wg.data.constants.generated
       public static const BADGE_180:String = "badge_180";
       
       public static const BADGE_181:String = "badge_181";
+      
+      public static const BADGE_182:String = "badge_182";
+      
+      public static const BADGE_183:String = "badge_183";
       
       public static const BADGE_19:String = "badge_19";
       
@@ -851,6 +851,8 @@ package net.wg.data.constants.generated
       
       public static const CZECH_CZ20_SH_PTK_TVP_100_MM_CO:String = "czech-Cz20_ShPTK_TVP_100_mm_CO";
       
+      public static const CZECH_CZ21_VZ_60_S:String = "czech-Cz21_Vz_60S";
+      
       public static const CZECH_CZ23_SKODA_T_17:String = "czech-Cz23_Skoda_T_17";
       
       public static const CZECH_CZ24_VZ_64_BLESK:String = "czech-Cz24_Vz_64_Blesk";
@@ -866,6 +868,12 @@ package net.wg.data.constants.generated
       public static const CZECH_CZ34_VZ_71_TESAK:String = "czech-Cz34_Vz_71_Tesak";
       
       public static const CZECH_CZ35_T56_G:String = "czech-Cz35_T56_G";
+      
+      public static const CZECH_CZ37_SDT_58_VLKODAV:String = "czech-cz37_sdt_58_vlkodav";
+      
+      public static const CZECH_CZ38_SZDV_VZ50:String = "czech-Cz38_SZDV_vz50";
+      
+      public static const CZECH_CZ39_STMP_VZ_62_JASAN:String = "czech-Cz39_STMP_Vz_62_Jasan";
       
       public static const CZECH_CZ40_DBV_152:String = "czech-Cz40_DBV_152";
       
@@ -1130,18 +1138,6 @@ package net.wg.data.constants.generated
       public static const EPIC_STATS_SELF_BG:String = "epicStats_selfBg";
       
       public static const FALLOUT_SCORE_PANEL_DIVIDER:String = "falloutScorePanelDivider";
-      
-      public static const FALL_TANKS_MINIMAP_B1:String = "fallTanks_minimap_b1";
-      
-      public static const FALL_TANKS_MINIMAP_B2:String = "fallTanks_minimap_b2";
-      
-      public static const FALL_TANKS_MINIMAP_B3:String = "fallTanks_minimap_b3";
-      
-      public static const FALL_TANKS_MINIMAP_B4:String = "fallTanks_minimap_b4";
-      
-      public static const FALL_TANKS_MINIMAP_B5:String = "fallTanks_minimap_b5";
-      
-      public static const FALL_TANKS_MINIMAP_B6:String = "fallTanks_minimap_b6";
       
       public static const FC_FULL_STATS_DEAD_BG:String = "FC_fullStats_deadBg";
       
@@ -1715,11 +1711,17 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G174_KPZ3_GST_TURM:String = "germany-G174_Kpz3_GST_Turm";
       
+      public static const GERMANY_G177_E65_ZWILLING:String = "germany-G177_E65_Zwilling";
+      
       public static const GERMANY_G178_KAN_JPZ_2:String = "germany-G178_KanJpz_2";
       
       public static const GERMANY_G179_STRAUSSLER_V4:String = "germany-G179_Straussler_V4";
       
       public static const GERMANY_G18_JAGD_PANTHER:String = "germany-G18_JagdPanther";
+      
+      public static const GERMANY_G184_WINDHUND:String = "germany-G184_Windhund";
+      
+      public static const GERMANY_G186_SCHWERTWAL:String = "germany-G186_Schwertwal";
       
       public static const GERMANY_G19_WESPE:String = "germany-G19_Wespe";
       
@@ -1985,8 +1987,6 @@ package net.wg.data.constants.generated
       
       public static const HEAVY_TANK_ALLY_GREEN:String = "heavyTank_ally_green";
       
-      public static const HEAVY_TANK_DEAD_WHITE:String = "heavyTank_dead_white";
-      
       public static const HEAVY_TANK_ELITE_ALLY_DEAD_GREEN:String = "heavyTank_elite_ally_dead_green";
       
       public static const HEAVY_TANK_ELITE_ALLY_GREEN:String = "heavyTank_elite_ally_green";
@@ -2026,8 +2026,6 @@ package net.wg.data.constants.generated
       public static const HEAVY_TANK_TEAM_KILLER_BLUE:String = "heavyTank_teamKiller_blue";
       
       public static const HEAVY_TANK_TEAM_KILLER_DEAD_BLUE:String = "heavyTank_teamKiller_dead_blue";
-      
-      public static const HEAVY_TANK_WHITE:String = "heavyTank_white";
       
       public static const HELP_WINDOW_BG:String = "helpWindow_bg";
       
@@ -2419,8 +2417,6 @@ package net.wg.data.constants.generated
       
       public static const LIGHT_TANK_ALLY_GREEN:String = "lightTank_ally_green";
       
-      public static const LIGHT_TANK_DEAD_WHITE:String = "lightTank_dead_white";
-      
       public static const LIGHT_TANK_ELITE_ALLY_DEAD_GREEN:String = "lightTank_elite_ally_dead_green";
       
       public static const LIGHT_TANK_ELITE_ALLY_GREEN:String = "lightTank_elite_ally_green";
@@ -2461,8 +2457,6 @@ package net.wg.data.constants.generated
       
       public static const LIGHT_TANK_TEAM_KILLER_DEAD_BLUE:String = "lightTank_teamKiller_dead_blue";
       
-      public static const LIGHT_TANK_WHITE:String = "lightTank_white";
-      
       public static const LOADER:String = "loader";
       
       public static const LOADER_DESPERADO:String = "loader_desperado";
@@ -2480,8 +2474,6 @@ package net.wg.data.constants.generated
       public static const MEDIUM_TANK_ALLY_DEAD_GREEN:String = "mediumTank_ally_dead_green";
       
       public static const MEDIUM_TANK_ALLY_GREEN:String = "mediumTank_ally_green";
-      
-      public static const MEDIUM_TANK_DEAD_WHITE:String = "mediumTank_dead_white";
       
       public static const MEDIUM_TANK_ELITE_ALLY_DEAD_GREEN:String = "mediumTank_elite_ally_dead_green";
       
@@ -2522,8 +2514,6 @@ package net.wg.data.constants.generated
       public static const MEDIUM_TANK_TEAM_KILLER_BLUE:String = "mediumTank_teamKiller_blue";
       
       public static const MEDIUM_TANK_TEAM_KILLER_DEAD_BLUE:String = "mediumTank_teamKiller_dead_blue";
-      
-      public static const MEDIUM_TANK_WHITE:String = "mediumTank_white";
       
       public static const MG_FAIL:String = "MG_Fail";
       
@@ -3159,8 +3149,6 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_DESTRUCTIBLES_DEFENDED:String = "ribbonsDestructiblesDefended";
       
-      public static const RIBBONS_DISINTEGRATED:String = "ribbonsDisintegrated";
-      
       public static const RIBBONS_ENEMY_SECTOR_CAPTURED:String = "ribbonsEnemySectorCaptured";
       
       public static const RIBBONS_EXCLAMATION:String = "ribbonsExclamation";
@@ -3237,8 +3225,6 @@ package net.wg.data.constants.generated
       
       public static const SPG_ALLY_GREEN:String = "SPG_ally_green";
       
-      public static const SPG_DEAD_WHITE:String = "SPG_dead_white";
-      
       public static const SPG_ELITE_ALLY_DEAD_GREEN:String = "SPG_elite_ally_dead_green";
       
       public static const SPG_ELITE_ALLY_GREEN:String = "SPG_elite_ally_green";
@@ -3278,8 +3264,6 @@ package net.wg.data.constants.generated
       public static const SPG_TEAM_KILLER_BLUE:String = "SPG_teamKiller_blue";
       
       public static const SPG_TEAM_KILLER_DEAD_BLUE:String = "SPG_teamKiller_dead_blue";
-      
-      public static const SPG_WHITE:String = "SPG_white";
       
       public static const SQUAD_GOLD_1:String = "squad_gold_1";
       

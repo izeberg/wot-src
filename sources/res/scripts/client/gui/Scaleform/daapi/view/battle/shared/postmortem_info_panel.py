@@ -1,15 +1,8 @@
-from gui.impl.battle.postmortem_panel.postmortem_panel_view import PostmortemPanelView
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
-from gui.shared.system_factory import collectPostmortemInfoView
-from helpers import dependency
-from skeletons.gui.battle_session import IBattleSessionProvider
+from gui.impl.battle.postmortem_panel.postmortem_panel_view import PostmortemPanelView
 
 class PostmortemInfoPanel(InjectComponentAdaptor):
-    __sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
-    def _makeInjectView(self, *args):
-        arenaGuiType = self.__sessionProvider.arenaVisitor.getArenaGuiType()
-        viewCls = collectPostmortemInfoView(arenaGuiType)
-        infoPanelViewCls = viewCls if viewCls is not None else PostmortemPanelView
-        self.__view = infoPanelViewCls()
+    def _makeInjectView(self):
+        self.__view = PostmortemPanelView()
         return self.__view
