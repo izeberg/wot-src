@@ -11,7 +11,7 @@
 	<postProgressionTree>role_HT_universal</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>43</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -2863,7 +2863,7 @@
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -2871,7 +2871,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3737,7 +3737,7 @@
 			<engines>
 				<Leyland_L60_No_4_Mk_1A_G>
 					<smplEnginePower>800</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplFwMaxSpeed>43</smplFwMaxSpeed>
 				</Leyland_L60_No_4_Mk_1A_G>
 			</engines>
 			<chassis>

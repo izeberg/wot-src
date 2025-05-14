@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_42_FGM_Machinegun/normal/lod2/Cus_42_FGM_Machinegun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.487697 -0.227443 -0.724825</min>
+		<max>0.495811 0.955999 1.082005</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_42_FGM_Machinegun/normal/lod1/Cus_42_FGM_Machinegun_01</nodefullVisual>
+</root>

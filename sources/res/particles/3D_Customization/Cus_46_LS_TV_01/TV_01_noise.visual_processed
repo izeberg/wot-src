@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>LS_TV_01_screen_mat</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>0.870000 0.710000 2.000000 0.000000</Vector4>
+					</property>
+					<property>
+						animationMode
+						<Int>1</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/wt_animation_04.dds</Texture>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>-0.400000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>-0.080000</Float>
+					</property>
+					<property>
+						g_contrast
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>35.790001</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.730000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.086275 0.086275 0.086275 1.000000</Vector4>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>0.410000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/hw_mask_02.dds</Texture>
+					</property>
+					<property>
+						patternNumber
+						<Int>2</Int>
+					</property>
+					<property>
+						phaseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/TilingMask4x_steam.dds</Texture>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						useVersicolorMode
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>2.680000</Float>
+					</property>
+					<property>
+						patternFilteringMode
+						<Int>1</Int>
+					</property>
+					<property>
+						speed
+						<Float>0.590000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000126 -0.000162 -0.002461</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.151345 -0.133722 -0.011854</min>
+		<max>0.151598 0.133397 0.006932</max>
+	</boundingBox>
+	<geometrySize>6984</geometrySize>
+	<minUVDensity>9.371452</minUVDensity>
+</root>
