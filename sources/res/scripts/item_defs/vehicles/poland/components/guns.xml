@@ -2007,13 +2007,13 @@
 						0.95
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1450</speed>
+					<speed>1020</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>230 215</piercingPower>
+					<piercingPower>215 205</piercingPower>
 				</_85mm_PPP_372BS>
 				<_85mm_PK_7>
 					<defaultPortion>
@@ -2026,7 +2026,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>270 270</piercingPower>
+					<piercingPower>260 260</piercingPower>
 				</_85mm_PK_7>
 				<_85mm_PW_372>
 					<defaultPortion>
