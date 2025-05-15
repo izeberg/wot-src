@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_50_LS_Mirium_Collector/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.661295 -0.000000 -0.852174</min>
+		<max>0.173256 0.548268 0.810079</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_50_LS_Mirium_Collector/normal/lod0/attachment</nodefullVisual>
+</root>

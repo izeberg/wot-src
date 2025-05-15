@@ -2854,6 +2854,11 @@
 						<name>cantone</name>
 						<type>url</type>
 					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/raumfalte-last-stand-may-2025-Video/
+						<name>pandora</name>
+						<type>url</type>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -2939,7 +2944,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/$LANGUAGE_CODE/news/announcements/update-1-25-ct2/
+				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/raumfalte-last-stand-2025-bundles/
 				<name>default</name>
 				<type>url</type>
 			</item>

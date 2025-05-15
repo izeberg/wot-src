@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_48_LS_Barbed_Wire/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.631380 0.005713 -0.895349</min>
+		<max>0.126046 0.331564 0.881786</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_48_LS_Barbed_Wire/normal/lod2/attachment</nodefullVisual>
+</root>
