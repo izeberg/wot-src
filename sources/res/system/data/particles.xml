@@ -267,6 +267,10 @@
 		<preloadVisual>particles/mesh_particles/customization/link_bmg.visual</preloadVisual>
 		<fn_effect_bin>particles/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -3014,6 +3018,10 @@
 		<preloadVisual>particles/mesh_particles/customization/link_bmg.visual</preloadVisual>
 		<fn_effect_bin>particles/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_36_FGM_Machinegun/cus_36_shot_12mm.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

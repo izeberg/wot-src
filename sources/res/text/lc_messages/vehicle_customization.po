@@ -96,6 +96,30 @@ msgstr "Огненная повозка"
 msgid "attachment/dragon_vanguard/Cus_16_Asia_Battering_Ram"
 msgstr "Противоштурмовой брус"
 
+msgid "attachment/echoes_from_beyond"
+msgstr "Потустороннее эхо"
+
+msgid "attachment/echoes_from_beyond/Cus_41_FGM_Photogun"
+msgstr "Фотопулемёт"
+
+msgid "attachment/echoes_from_beyond/Cus_42_FGM_Machinegun"
+msgstr "Пулемёт с прожектором"
+
+msgid "attachment/echoes_from_beyond/Cus_43_FGM_Canisters"
+msgstr "Корзина с припасами"
+
+msgid "attachment/echoes_from_beyond/Cus_44_FGM_Miriumcontainer"
+msgstr "Контейнер для материи"
+
+msgid "attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer"
+msgstr "Заполненный коллектор"
+
+msgid "attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer/description"
+msgstr ""
+"Устройство гудит, трещит и излучает странную энергию. Оно безопасно в "
+"использовании, но садиться на него, пожалуй, не стоит. А если оно случайно "
+"взорвётся, то лучше, чтобы это произошло снаружи машины."
+
 msgid "attachment/general"
 msgstr "Общие"
 
@@ -4978,6 +5002,12 @@ msgstr ""
 
 msgid "camouflage/localpartner2_2018/label"
 msgstr "Всесезонный \"Сеть\""
+
+msgid "camouflage/ls25_2d/description"
+msgstr "?empty?"
+
+msgid "camouflage/ls25_2d/label"
+msgstr "Аномальная метка"
 
 msgid "camouflage/lunar_NY_fire/description"
 msgstr ""
@@ -30702,6 +30732,24 @@ msgstr ""
 
 msgid "special_style/localpartner2_2018_style_01"
 msgstr "Сеть"
+
+msgid "special_style/ls25_2d"
+msgstr "Аномальная метка"
+
+msgid "special_style/ls25_2d_desc"
+msgstr ""
+"Всесезонный стиль, посвящённый событию «Последний рубеж: Операция "
+"\"Пандора\"»"
+
+msgid "special_style/ls25_2d_desc/long"
+msgstr ""
+"Материя въедается в броню, словно кислота. Кажется, она стремится пропитать всё, что попадает в зону её действия. Цепляется за любую поверхность, заполняя мельчайшие поры. Такой металл уже никогда не получится очистить полностью.\n"
+"\n"
+"А ещё материя иногда оставляет знаки. Так, словно внутри аномалии кто-то невидимый бродит между боевыми машинами и наносит на них рисунки. Примитивные символы, словно выведенные детской рукой, намертво впечатываются в броню.\n"
+"\n"
+"Что это такое? Предупреждение? Талисман на удачу? Метка принадлежности аномалии?\n"
+"\n"
+"Никто не знает."
 
 msgid "special_style/lunar_marathon"
 msgstr "Лунный бык"

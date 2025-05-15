@@ -589,4 +589,77 @@
 			<userString>#vehicle_customization:attachment/beyond_pandora/Cus_40_FGM_Winch</userString>
 		</attachment>
 	</itemGroup>
+	<itemGroup>
+		<name>Echoes From Beyond</name>
+		<userString>#vehicle_customization:attachment/echoes_from_beyond</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<attachment>
+			<id>1040</id>
+			<name>Cus_42_FGM_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_42_FGM_Machinegun/Cus_42_FGM_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_42_FGM_Machinegun/Cus_42_FGM_Machinegun.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 850g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/echoes_from_beyond/Cus_42_FGM_Machinegun</userString>
+		</attachment>
+		<attachment>
+			<id>1041</id>
+			<name>Cus_45_FGM_Brokencontainer</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_45_FGM_Brokencontainer/Cus_45_FGM_Brokencontainer.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_45_FGM_Brokencontainer/Cus_45_FGM_Brokencontainer_hangar.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 1750g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer</userString>
+			<description>#vehicle_customization:attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1042</id>
+			<name>Cus_41_FGM_Photogun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_41_FGM_Photogun/Cus_41_FGM_Photogun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_41_FGM_Photogun/Cus_41_FGM_Photogun.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 350g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/echoes_from_beyond/Cus_41_FGM_Photogun</userString>
+		</attachment>
+		<attachment>
+			<id>1043</id>
+			<name>Cus_43_FGM_Canisters</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_43_FGM_Canisters/Cus_43_FGM_Canisters.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_43_FGM_Canisters/Cus_43_FGM_Canisters.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 400g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/echoes_from_beyond/Cus_43_FGM_Canisters</userString>
+		</attachment>
+		<attachment>
+			<id>1044</id>
+			<name>Cus_44_FGM_Miriumcontainer</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_44_FGM_Miriumcontainer/Cus_44_FGM_Miriumcontainer.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_44_FGM_Miriumcontainer/Cus_44_FGM_Miriumcontainer.prefab</hangarModelName>
+			<crashModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 550g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/echoes_from_beyond/Cus_44_FGM_Miriumcontainer</userString>
+		</attachment>
+	</itemGroup>
 </root>

@@ -17729,6 +17729,20 @@ package
       
       public static const ATTACHMENT_BEYOND_PANDORA_CUS_40_FGM_WINCH:String = "#vehicle_customization:attachment/beyond_pandora/Cus_40_FGM_Winch";
       
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND:String = "#vehicle_customization:attachment/echoes_from_beyond";
+      
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_41_FGM_PHOTOGUN:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_41_FGM_Photogun";
+      
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_42_FGM_MACHINEGUN:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_42_FGM_Machinegun";
+      
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_43_FGM_CANISTERS:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_43_FGM_Canisters";
+      
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_44_FGM_MIRIUMCONTAINER:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_44_FGM_Miriumcontainer";
+      
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_45_FGM_BROKENCONTAINER:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer";
+      
+      public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_45_FGM_BROKENCONTAINER_DESCRIPTION:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer/description";
+      
       public static const PROJECTION_DECALS_HOLIDAY_PROJECTION_DECAL_654:String = "#vehicle_customization:projection_decals/holiday/projection_decal_654";
       
       public static const PROJECTION_DECALS_HOLIDAY_PROJECTION_DECAL_658:String = "#vehicle_customization:projection_decals/holiday/projection_decal_658";

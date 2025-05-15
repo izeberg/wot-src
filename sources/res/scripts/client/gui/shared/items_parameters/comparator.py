@@ -396,7 +396,15 @@ CONDITIONAL_BONUSES = {('invisibilityMovingFactor', 'invisibilityStillFactor', T
                                                                                              (
                                                                                               'trophyBasicImprovedSights', BonusTypes.OPTIONAL_DEVICE),
                                                                                              (
-                                                                                              'trophyUpgradedImprovedSights', BonusTypes.OPTIONAL_DEVICE))}, 
+                                                                                              'trophyUpgradedImprovedSights', BonusTypes.OPTIONAL_DEVICE),
+                                                                                             (
+                                                                                              'deluxeImprovedSights', BonusTypes.OPTIONAL_DEVICE),
+                                                                                             (
+                                                                                              'modernizedImprovedSightsEnhancedAimDrives1', BonusTypes.OPTIONAL_DEVICE),
+                                                                                             (
+                                                                                              'modernizedImprovedSightsEnhancedAimDrives2', BonusTypes.OPTIONAL_DEVICE),
+                                                                                             (
+                                                                                              'modernizedImprovedSightsEnhancedAimDrives3', BonusTypes.OPTIONAL_DEVICE))}, 
    ('aimingTime', ): {(('improvedVentilationBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
                                                                                          (
                                                                                           'improvedVentilation_tier1', BonusTypes.OPTIONAL_DEVICE),

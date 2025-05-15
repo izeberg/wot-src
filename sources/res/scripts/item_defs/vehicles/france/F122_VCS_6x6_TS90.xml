@@ -1404,7 +1404,7 @@
 				<!--BW_String-->
 			</bulkHealthFactor>
 			<maxHealth>240</maxHealth>
-			<maxRegenHealth>240</maxRegenHealth>
+			<maxRegenHealth>180</maxRegenHealth>
 			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/french/F122_VCS_6x6_TS90/normal/lod0/Chassis.model</undamaged>
@@ -1980,7 +1980,7 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
-						<gun>10</gun>
+						<gun>30</gun>
 					</armor>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
