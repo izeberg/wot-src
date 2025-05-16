@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.120560 -0.201307 -0.235852</min>
+		<max>0.116935 0.461301 0.333751</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_41_FGM_Photogun/normal/lod1/Cus_41_FGM_Photogun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_41_FGM_Photogun/normal/lod0/Cus_41_FGM_Photogun_01</nodefullVisual>
+</root>
