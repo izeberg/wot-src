@@ -1,0 +1,594 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"您可自定义炮弹和战斗能力的默认活动热键设置。\n"
+"此更改仅适用于活动战斗，不会影响其他任何模式。\n"
+"您仍可在菜单 - 游戏设置 - 控制(给养版块)中修改各个热键。"
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "更改给养热键设置"
+
+msgid "badgeWidget/tooltipBody"
+msgstr "完成该任务即可获得独特的背水一战:潘多拉行动奖章:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "史诗成就任务"
+
+msgid "banner/countdownText/last"
+msgstr "{icon}<{timer}"
+
+msgid "banner/countdownText/regular"
+msgstr "{icon}{timer}"
+
+msgid "banner/dateText"
+msgstr "至{month}{day}日"
+
+msgid "banner/header"
+msgstr "背水一战"
+
+msgid "banner/new"
+msgstr "新"
+
+msgid "banner/subheader"
+msgstr "尝试全新PvE游戏模式"
+
+msgid "bundleView/btn/keys"
+msgstr "购买"
+
+msgid "bundleView/btn/shop"
+msgstr "在军械库中查看"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "活动礼包"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "究极礼包"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "3D风格"
+
+msgid "bundleView/bundle/header/ls25bundle1"
+msgstr "解密密钥"
+
+msgid "bundleView/bundle/serviceChannelMessages/ls25bundle1"
+msgstr "已购买密钥"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr "一款特殊礼包，助您加快推进背水一战的进度。"
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "一款特殊礼包，助您从背水一战中获得尽可能多的奖励。"
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr "一款独特的3D风格，充满了该活动的氛围。"
+
+msgid "bundleView/bundle/subHeader/ls25bundle1"
+msgstr "购买足够的密钥来解密或跳过胶片。一把活动密钥需要花费%(cost)s金币。"
+
+msgid "bundleView/eventName"
+msgstr "背水一战2025"
+
+msgid "bundleView/reward/artefact_key"
+msgstr "解密密钥(奖励)"
+
+msgid "bundleView/subTitle/decrypt"
+msgstr "您还需要{key}把密钥来解密该胶片"
+
+msgid "bundleView/subTitle/skip"
+msgstr "您还需要{key}把密钥来跳过该胶片"
+
+msgid "bundleView/title/default"
+msgstr "选择密钥购买方式"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "选择要购买的密钥数量"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "选择活动礼包"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr "驾驶任意已取得当天首胜奖励的坦克，从第2场胜利开始获得5倍经验。"
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "5倍乘员经验任务"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "选择您要获取的密钥数量，用来解密或跳过加密胶片。"
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "解密加密胶片的密钥"
+
+msgid "carousel/card/crewIncomplete"
+msgstr "车组乘员不足"
+
+msgid "carousel/card/inBattle"
+msgstr "在战斗中"
+
+msgid "carousel/card/inCN"
+msgstr "仅适用于%(icon)s"
+
+msgid "carousel/card/inPlatoon"
+msgstr "在小队中"
+
+msgid "carousel/card/locked"
+msgstr "未解锁"
+
+msgid "carousel/card/lowEfficiency"
+msgstr "效率低"
+
+msgid "carousel/card/rent"
+msgstr "租用"
+
+msgid "carousel/card/rented"
+msgstr "租用时间到期"
+
+msgid "carousel/card/repair"
+msgstr "坦克损坏，需要修理"
+
+msgid "carousel/card/suspended"
+msgstr "暂停使用"
+
+msgid "carousel/card/untrainedCrew"
+msgstr "乘员未训练"
+
+msgid "carousel/daily/header"
+msgstr "每日坦克任务"
+
+msgid "carousel/filter/count"
+msgstr "%(filteredCount)s/%(allCount)s"
+
+msgid "carousel/filterReset/tooltipBody"
+msgstr "点击重置筛选条件。"
+
+msgid "carousel/filterReset/tooltipHeader"
+msgstr "默认设置"
+
+msgid "carousel/filters/tooltipBody"
+msgstr "根据类型、系别，以及其它参数显示。"
+
+msgid "carousel/filters/tooltipHeader"
+msgstr "按参数筛选"
+
+msgid "carousel/popover/header"
+msgstr ""
+"显示坦克: {whiteSpanish_Start}%(filteredCount)s{whiteSpanish_End}/%(allCount)s"
+
+msgid "carousel/popover/nation"
+msgstr "系别"
+
+msgid "carousel/popover/nationBody"
+msgstr "显示/隐藏此系别的坦克"
+
+msgid "carousel/popover/search"
+msgstr "按名称搜索"
+
+msgid "carousel/popover/special"
+msgstr "特殊"
+
+msgid "carousel/popover/title"
+msgstr "按参数筛选"
+
+msgid "carousel/popover/type"
+msgstr "类型"
+
+msgid "carousel/popover/typeBody"
+msgstr "显示/隐藏此类型的坦克。"
+
+msgid "carousel/premium/tooltipBody"
+msgstr "仅显示/隐藏金币坦克。"
+
+msgid "carousel/premium/tooltipHeader"
+msgstr "金币坦克"
+
+msgid "carousel/primary/tooltipBody"
+msgstr "仅显示/隐藏主力坦克。"
+
+msgid "carousel/primary/tooltipHeader"
+msgstr "主力坦克"
+
+msgid "carousel/title/goToRandom"
+msgstr "前往标准模式"
+
+msgid "carousel/title/needRepair"
+msgstr "发生问题，无法选择该坦克。该问题只能在标准模式中解决。"
+
+msgid "common/back"
+msgstr "返回"
+
+msgid "common/close"
+msgstr "关闭"
+
+msgid "common/progress"
+msgstr "{value}/{maxValue}"
+
+msgid "common/toEvent"
+msgstr "活动"
+
+msgid "common/toRewardPath"
+msgstr "探秘之旅"
+
+msgid "common/yes"
+msgstr "收到！"
+
+msgid "decrypt/affirmative"
+msgstr "收到！"
+
+msgid "decrypt/completed"
+msgstr "目标已完成。已获得奖励:"
+
+msgid "decrypt/continue"
+msgstr "继续"
+
+msgid "decrypt/voiceover"
+msgstr "配音"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr "开启/关闭所有解密胶片界面的配音。"
+
+msgid "difficult/daily"
+msgstr "已解锁每日密钥任务"
+
+msgid "difficult/disabled/body"
+msgstr "您在小队中。仅小队指挥官可更改难度等级。"
+
+msgid "difficult/disabled/header"
+msgstr "无法更改难度等级"
+
+msgid "difficult/level_1"
+msgstr "普通"
+
+msgid "difficult/level_2"
+msgstr "激战"
+
+msgid "difficult/level_3"
+msgstr "残酷"
+
+msgid "difficult/new"
+msgstr "新"
+
+msgid "difficult/tooltip/description/level1"
+msgstr "敌人的生命值较低，装甲较为薄弱。可获得标准战斗奖励。"
+
+msgid "difficult/tooltip/description/level2"
+msgstr "敌人拥有较为坚固的装甲，同时，每场战斗可获得较多的奖励和密钥。"
+
+msgid "difficult/tooltip/description/level3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多的奖励和密钥。"
+
+msgid "difficult/tooltip/description/reward"
+msgstr "首次消灭波次的奖励:"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "普通难度"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "激战难度"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "残酷难度"
+
+msgid "difficult/tooltip/locked"
+msgstr "难度尚未解锁"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "完成普通难度等级，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "完成激战难度等级，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/state/default"
+msgstr "开放的难度"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "所选难度"
+
+msgid "difficult/tooltip/subHeader"
+msgstr "已完成波次: {count}"
+
+msgid "difficult/uppercase/level_1"
+msgstr "普通"
+
+msgid "difficult/uppercase/level_2"
+msgstr "激战"
+
+msgid "difficult/uppercase/level_3"
+msgstr "残酷"
+
+msgid "difficultyWindow/description/level_2"
+msgstr "敌人拥有较为坚固的装甲，同时，每场战斗可获得较多的奖励和密钥。"
+
+msgid "difficultyWindow/description/level_3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多的奖励和密钥。"
+
+msgid "difficultyWindow/description/level_4"
+msgstr "投身战斗，击败一波又一波的敌人，登上排行榜榜首，展示自己的实力。独特奖励和更多精彩内容等待着您。"
+
+msgid "difficultyWindow/header/level_2"
+msgstr "激战难度"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "残酷难度"
+
+msgid "difficultyWindow/header/level_4"
+msgstr "背水一战模式"
+
+msgid "difficultyWindow/headerShort/level_2"
+msgstr "激战"
+
+msgid "difficultyWindow/headerShort/level_3"
+msgstr "残酷"
+
+msgid "difficultyWindow/headerShort/level_4"
+msgstr "'背水一战'"
+
+msgid "difficultyWindow/title"
+msgstr "已开放"
+
+msgid "hangar/about"
+msgstr "关于活动"
+
+msgid "hangar/exit"
+msgstr "离开活动"
+
+msgid "hangar/tooltip/about"
+msgstr "了解更多关于背水一战:潘多拉行动活动的信息。"
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "战斗能力"
+
+msgid "headerButtons/battle/types/last_stand"
+msgstr "背水一战"
+
+msgid "iconButton/comparison/default"
+msgstr "坦克对比"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "坦克对比不可用"
+
+msgid "iconButton/preview/default"
+msgstr "预览坦克"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "坦克预览不可用"
+
+msgid "keys/get"
+msgstr "获取"
+
+msgid "kingRewardCongratsView/btn/continue"
+msgstr "继续"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "收到！"
+
+msgid "kingRewardCongratsView/header"
+msgstr "已获得主要奖励"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "解密最终胶片的奖励:"
+
+msgid "kingRewardCongratsView/title"
+msgstr "已完成最终目标"
+
+msgid "lootboxEntry/boxes"
+msgstr "前往空间折叠补给品"
+
+msgid "lootboxEntry/count"
+msgstr "x{count}"
+
+msgid "lootboxEntry/maxBoxesCount"
+msgstr "x999+"
+
+msgid "meta/btn/decrypt"
+msgstr "解密"
+
+msgid "meta/btn/skip"
+msgstr "跳过"
+
+msgid "meta/btn/view"
+msgstr "查看"
+
+msgid "meta/receive/description"
+msgstr ""
+"收集%(keys)/%(decrypt)%(icon)\n"
+"解密该胶片"
+
+msgid "meta/shortStory/ls_artefact_1"
+msgstr "我们太晚才意识到，每激活一次，都会引来更多这些怪物。"
+
+msgid "meta/shortStory/ls_artefact_2"
+msgstr "物资消耗殆尽，兄弟们筋疲力竭。但这还不是最糟糕的——銤元素…正在侵蚀我们的神志。"
+
+msgid "meta/shortStory/ls_artefact_3"
+msgstr "胜败在此一举了。胜算？别问了，换了我也不会押我们赢。"
+
+msgid "meta/shortStory/ls_artefact_4"
+msgstr "不过，如果冲我们而来的不是他…那他现在在哪里？被余响坦克终结了吗？还是…"
+
+msgid "meta/story/ls_artefact_1"
+msgstr ""
+"我们击退了第一波攻击，但余响坦克依然步步紧逼。从未见过如此凶残的对手，仿佛有什么东西在驱使它们发狂。不过，我们一定会想出对付这些怪物的办法。{paragraph_open}{paragraph_close}着陆点的\"传送门\"已经失效，工程师们正在修复，但我不能坐以待毙。设置周边防御。如果我们无法自己打开出口，撤离小队将会救我们出去。只要坚持到底就能取得胜利。{paragraph_open}{paragraph_close}任务远比想象中困难。我们已经损失了一半的坦克，现在必须抓紧补充。我命令团队打开那些{violet_open}折叠空间装置{violet_close}——里面应该有可用的坦克。我们太晚才意识到，每激活一次，都会引来更多这些怪物。它们如同饿虎捕食般蜂拥而至。但我们别无选择——没有坦克，我们根本无法生存。{paragraph_open}{paragraph_close}有些装置是空的，有些装着坦克，还有些则藏着更多的{violet_open}折叠空间装置{violet_close}，简直像来自地狱的套娃。{paragraph_open}{paragraph_close}翻阅卡萨达实验室的笔记时得知，那个偏执的混蛋对保护自己的发明极度痴迷。他反复写道:"
+" \"保持距离，否则陷阱就会触发！\"好吧，我们确实直接掉进了陷阱。不过，我会想出办法的——我们一定会离开这里。"
+
+msgid "meta/story/ls_artefact_2"
+msgstr ""
+"这个可恶的空间暗无天日。可能已经过去了几天，也可能是几周。物资消耗殆尽，兄弟们筋疲力竭。但这还不是最糟糕的——銤元素…正在侵蚀我们的神志。{paragraph_open}{paragraph_close}乘员们总说眼角余光看到影子在跳动，有人甚至听到了声音——像是一种奇怪的D系方言。可恶，我们在这个阶段滞留得太久了，得赶紧找到解决办法。{paragraph_open}{paragraph_close}在难得的清静时刻，我就会读卡萨达的笔记。这家伙和我们一样痛恨待在这里。那些余响坦克快把他逼疯了——每次他启动{violet_open}折叠空间装置{violet_close}，余响坦克就会蜂拥而至，袭击他的实验室。最终，他找到了某种解决办法。卡萨达毫无休止地工作着，全然不顾实验室下那些狂暴的怪物。我会不惜一切代价，弄清他想出了什么办法。{paragraph_open}{paragraph_close}现在，兄弟们开始喃喃自语，说\"卡萨达在召唤他们深入异象\"，甚至声称他正冲我们而来。{paragraph_open}{paragraph_close}时间不多了。再拖下去，我们都会在这里发疯的。但我发誓，我们不会悄无声息地离开。我们要大战一场，把这些怪物一起拖下地狱！"
+
+msgid "meta/story/ls_artefact_3"
+msgstr ""
+"天空瞬间暗了下来。首先出现的是影子，随即整个天空都被它吞没了。接着我们看到了它——一艘巨大的飞艇，从黑暗中显现出来。{paragraph_open}{paragraph_close}兄弟们一开始很害怕。他们这几天一直低声谈论卡萨达，现在他们确信这家伙是来复仇的。我们突袭了他的实验室，盗取了他珍贵的装置，现在这头怪物现身了。{paragraph_open}{paragraph_close}兄弟们全凭一口气撑着，感觉已经好几周没合眼了。但看看他们的神情…即使这头怪物虎视眈眈，每个人仍都坚守岗位。{paragraph_open}{paragraph_close}胜败在此一举了。胜算？别问了，换了我也不会押我们赢。但我们一定会让那个混蛋卡萨达记住这场战斗！出击！"
+
+msgid "meta/story/ls_artefact_4"
+msgstr ""
+"天上的那个庞然大物并不是卡萨达——而是我方的。{paragraph_open}{paragraph_close}军事委员会的第一艘銤元素驱动的母舰——\"马尔杜克计划\"，是他们一直在秘密测试的相位跳跃巨兽。来得正是时候。撤离小队说，他们花了好几天才突破干扰找到我们。看来卡萨达的陷阱并不是那艘飞艇，而是信号屏蔽装置。真是个狡猾的家伙。{paragraph_open}{paragraph_close}不过，如果冲我们而来的不是他…那他现在在哪里？被余响坦克终结了吗？还是…细思极恐啊。{paragraph_open}{paragraph_close}指挥部正在把所有{violet_open}折叠空间装置{violet_close}拖走，送到他们的机密仓库里。继续进行实验，继续隐藏秘密。有时我在想，是我们真的掌控了銤元素这东西，还是它在把我们当傻子耍？也许梅尔库洛夫将它炸掉的做法才是对的？{paragraph_open}{paragraph_close}算了，哲学问题还是留给别人去想吧。现在我只想睡觉。终于能睡个好觉了。"
+
+msgid "metaCmp/completed"
+msgstr "已获得奖励%(icon)"
+
+msgid "metaCmp/name"
+msgstr "探秘之旅"
+
+msgid "metaIntro/description/fight"
+msgstr "参与活动战斗，获取密钥，完成目标，获得主要活动奖励。"
+
+msgid "metaIntro/description/progress"
+msgstr "使用在活动战斗中获得的密钥解密所有胶片。"
+
+msgid "metaIntro/description/reward"
+msgstr "完成目标、解密胶片以获得{whiteSpanish_Start}特殊活动奖励{whiteSpanish_End}。"
+
+msgid "metaIntro/header/fight"
+msgstr "战斗突击"
+
+msgid "metaIntro/header/progress"
+msgstr "解密胶片"
+
+msgid "metaIntro/header/reward"
+msgstr "独特奖励"
+
+msgid "metaIntro/title"
+msgstr "关于目标"
+
+msgid "missionWidget/complete"
+msgstr ""
+"任务完成。\n"
+"明天再来。"
+
+msgid "missionWidget/tooltipBody"
+msgstr "完成每24小时开放一次的每日任务，即可获得奖励。今日任务:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "每日任务"
+
+msgid "preBattle/leave"
+msgstr "退出战斗"
+
+msgid "preBattle/searching"
+msgstr "搜索盟友..."
+
+msgid "preBattle/tip"
+msgstr "仍未找到侦察分队？请尝试更改难度等级。"
+
+msgid "preBattle/uppercase/leave"
+msgstr "退出战斗"
+
+msgid "promoWindow/btn"
+msgstr "收到！"
+
+msgid "promoWindow/header"
+msgstr "参加背水一战:潘多拉行动"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"{dateRange}，体验特殊的全新PvE游戏模式。\n"
+"完成4个目标即可获得{gold_open}空间折叠补给品{gold_close}，内含专属奖励，\n"
+"以及活动主题的{gold_open}3D附件{gold_close}。"
+
+msgid "reward/rest"
+msgstr "还有%(count)s个"
+
+msgid "rewardPath/about"
+msgstr "关于目标"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "查看活动详情"
+
+msgid "rewardPath/artefacts/title"
+msgstr "解密胶片的奖励:"
+
+msgid "rewardPath/completed"
+msgstr "已获得主要奖励"
+
+msgid "rewardPath/description"
+msgid_plural "plural/rewardPath/description"
+msgstr[0] "再解密%(count)s个胶片即可获得主要奖励"
+msgstr[1] "再解密%(count)s个胶片即可获得主要奖励"
+msgstr[2] "再解密%(count)s个胶片即可获得主要奖励"
+
+msgid "rewardPath/difficulties/title"
+msgstr "消灭波次的奖励:"
+
+msgid "rewardPath/intro"
+msgstr "简介"
+
+msgid "rewardPath/introTooltip"
+msgstr "观看简介视频"
+
+msgid "rewardPath/title"
+msgstr "探秘之旅"
+
+msgid "serviceChannelMessages/bundlePurchase/additionalText"
+msgstr "已花费%(money)s"
+
+msgid "shopCmp/name"
+msgstr ""
+"活动物品\n"
+"与补给"
+
+msgid "squad/goToAnother/cancel"
+msgstr "取消"
+
+msgid "squad/goToAnother/message"
+msgstr "小队将被解散。"
+
+msgid "squad/goToAnother/submit"
+msgstr "离开"
+
+msgid "squad/goToAnother/title"
+msgstr "离开背水一战:潘多拉行动活动？"
+
+msgid "squad/leave/cancel"
+msgstr "取消"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "收到！"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "背水一战:潘多拉行动活动已结束"
+
+msgid "squad/leave/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/submit"
+msgstr "离开"
+
+msgid "squad/leave/title"
+msgstr "离开背水一战:潘多拉行动小队？"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "继续"
+
+msgid "squad/leaveDisabled/message"
+msgstr "您所在小队已做好战斗准备。"
+
+msgid "squad/leaveDisabled/title"
+msgstr "您无法离开小队！"
+
+msgid "vehicle/rent/label"
+msgstr "完成目标或购买活动礼包，即可解锁该坦克。"
+
+msgid "vehicle/rent/packs"
+msgstr "前往活动礼包"
+
+msgid "vehicle/rent/tasks"
+msgstr "前往目标"
+
+msgid "vehicle/tasks/locked"
+msgstr "完成当前目标或购买活动礼包，即可解锁该坦克。"

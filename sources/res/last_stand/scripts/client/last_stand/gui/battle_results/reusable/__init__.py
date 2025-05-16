@@ -1,0 +1,4 @@
+from gui.battle_results.reusable import ReusableInfoFactory
+from last_stand.gui.battle_results.reusable.ext_shared import LSVehicleDetailedInfo, LSVehicleSummarizeInfo
+REUSABLE_FACTORY_ITEMS = {ReusableInfoFactory.Keys.VEHICLE_DETAILED: LSVehicleDetailedInfo, 
+   ReusableInfoFactory.Keys.VEHICLE_SUMMARIZED: LSVehicleSummarizeInfo}

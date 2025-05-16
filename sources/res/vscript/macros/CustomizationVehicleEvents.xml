@@ -390,6 +390,23 @@
 				<slots/>
 			</block>
 			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_12</id>
+				<params>
+					<param>
+						onArenaKill
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_1</id>
 				<buddy>Variable_2</buddy>
@@ -612,6 +629,18 @@
 				<input>b</input>
 				<to>CompareVehicles_3</to>
 				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>If_12</from>
+				<input>onArenaKill</input>
+				<to>MacroOutput_12</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>onArenaKill</input>
+				<to>MacroOutput_12</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>ArenaPeriodStartEvent_1</from>

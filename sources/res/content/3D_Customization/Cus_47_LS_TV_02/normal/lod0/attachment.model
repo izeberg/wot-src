@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_47_LS_TV_02/normal/lod1/attachment</parent>
+	<visibilityBox>
+		<min>-0.499317 -0.198994 -0.992857</min>
+		<max>0.459492 1.195750 0.707080</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_47_LS_TV_02/normal/lod0/attachment</nodefullVisual>
+</root>

@@ -24817,6 +24817,10 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_181:String = "../maps/icons/library/badges/220x220/badge_181.png";
       
+      public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_182:String = "../maps/icons/library/badges/220x220/badge_182.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_183:String = "../maps/icons/library/badges/220x220/badge_183.png";
+      
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_36:String = "../maps/icons/library/badges/220x220/badge_36.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_37:String = "../maps/icons/library/badges/220x220/badge_37.png";
@@ -25096,6 +25100,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_180:String = "../maps/icons/library/badges/24x24/badge_180.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_181:String = "../maps/icons/library/badges/24x24/badge_181.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_182:String = "../maps/icons/library/badges/24x24/badge_182.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_183:String = "../maps/icons/library/badges/24x24/badge_183.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_19:String = "../maps/icons/library/badges/24x24/badge_19.png";
       
@@ -25603,6 +25611,10 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_181:String = "../maps/icons/library/badges/48x48/badge_181.png";
       
+      public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_182:String = "../maps/icons/library/badges/48x48/badge_182.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_183:String = "../maps/icons/library/badges/48x48/badge_183.png";
+      
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_19:String = "../maps/icons/library/badges/48x48/badge_19.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_2:String = "../maps/icons/library/badges/48x48/badge_2.png";
@@ -25978,6 +25990,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_180:String = "../maps/icons/library/badges/80x80/badge_180.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_181:String = "../maps/icons/library/badges/80x80/badge_181.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_182:String = "../maps/icons/library/badges/80x80/badge_182.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_183:String = "../maps/icons/library/badges/80x80/badge_183.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_19:String = "../maps/icons/library/badges/80x80/badge_19.png";
       
@@ -27235,7 +27251,73 @@ package
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_DEFAULT_TOOLTIPS_VEHICLES:String = "../maps/icons/lootBoxSystem/customizable/default/tooltips/vehicles.png";
       
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/pandora/autoOpenView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_GLOW:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/glow.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_GUARANTEEDGLOW:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/guaranteedGlow.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_OPENINGBOX_ALPHA_COMMON:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/openingBox/alpha_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_OPENINGBOX_ALPHA_RARE:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/openingBox/alpha_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_OPENINGBOX_PRIME_COMMON:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/openingBox/prime_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_OPENINGBOX_PRIME_RARE:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/openingBox/prime_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_OPENINGBOX_PROTO_COMMON:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/openingBox/proto_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_AWARDVIEWS_OPENINGBOX_PROTO_RARE:String = "../maps/icons/lootBoxSystem/customizable/pandora/awardViews/openingBox/proto_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_ENTRY_POINT_GLOW:String = "../maps/icons/lootBoxSystem/customizable/pandora/entry_point/glow.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_ENTRY_POINT_LOOTBOXEMPTY:String = "../maps/icons/lootBoxSystem/customizable/pandora/entry_point/lootboxEmpty.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_ENTRY_POINT_LOOTBOXGOLD:String = "../maps/icons/lootBoxSystem/customizable/pandora/entry_point/lootboxGold.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_ENTRY_POINT_LOOTBOXTOOLTIP:String = "../maps/icons/lootBoxSystem/customizable/pandora/entry_point/lootboxTooltip.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_GUARANTEED_GUARANTEEDICO:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/guaranteed/guaranteedIco.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_BACKGROUND_DEFAULT:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/background/default.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_BOX_ALPHA:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/box/alpha.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_BOX_PRIME:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/box/prime.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_BOX_PROTO:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/box/proto.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_HOVER_ALPHA:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/hover/alpha.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_HOVER_PRIME:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/hover/prime.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_HOVER_PROTO:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/hover/proto.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_IDLE_ALPHA:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/idle/alpha.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_IDLE_PRIME:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/idle/prime.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_HASBOXESVIEW_LAYERS_IDLE_PROTO:String = "../maps/icons/lootBoxSystem/customizable/pandora/hasBoxesView/layers/idle/proto.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_INFOPAGE_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/pandora/infopage/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_NOBOXESVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/pandora/noBoxesView/background.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_NOBOXESVIEW_NOBOXESART:String = "../maps/icons/lootBoxSystem/customizable/pandora/noBoxesView/noBoxesArt.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_PANDORA_TOOLTIPS_GLOW:String = "../maps/icons/lootBoxSystem/customizable/pandora/tooltips/glow.png";
+      
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_LOOTBOX_24040101:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/lootBox_24040101.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_PANDORA_RARITYOVERLAY_LOOTBOX_25051501:String = "../maps/icons/lootBoxSystem/events/pandora/rarityOverlay/lootBox_25051501.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_PANDORA_RARITYOVERLAY_VEHICLES_29969:String = "../maps/icons/lootBoxSystem/events/pandora/rarityOverlay/vehicles_29969.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_PANDORA_RARITYOVERLAY_VEHICLES_33825:String = "../maps/icons/lootBoxSystem/events/pandora/rarityOverlay/vehicles_33825.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_PANDORA_RARITYOVERLAY_VEHICLES_6289:String = "../maps/icons/lootBoxSystem/events/pandora/rarityOverlay/vehicles_6289.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_PANDORA_RARITYOVERLAY_VEHICLES_66625:String = "../maps/icons/lootBoxSystem/events/pandora/rarityOverlay/vehicles_66625.png";
       
       public static const MAPS_ICONS_MANUAL_BACKGROUNDS_ACHIEVES:String = "../maps/icons/manual/backgrounds/achieves.png";
       
@@ -31795,6 +31877,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_181:String = "../maps/icons/quests/bonuses/badges/220x220/badge_181.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_182:String = "../maps/icons/quests/bonuses/badges/220x220/badge_182.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_183:String = "../maps/icons/quests/bonuses/badges/220x220/badge_183.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_36:String = "../maps/icons/quests/bonuses/badges/220x220/badge_36.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_37:String = "../maps/icons/quests/bonuses/badges/220x220/badge_37.png";
@@ -32106,6 +32192,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_180:String = "../maps/icons/quests/bonuses/badges/24x24/badge_180.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_181:String = "../maps/icons/quests/bonuses/badges/24x24/badge_181.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_182:String = "../maps/icons/quests/bonuses/badges/24x24/badge_182.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_183:String = "../maps/icons/quests/bonuses/badges/24x24/badge_183.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_19:String = "../maps/icons/quests/bonuses/badges/24x24/badge_19.png";
       
@@ -32585,6 +32675,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_181:String = "../maps/icons/quests/bonuses/badges/48x48/badge_181.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_182:String = "../maps/icons/quests/bonuses/badges/48x48/badge_182.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_183:String = "../maps/icons/quests/bonuses/badges/48x48/badge_183.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_19:String = "../maps/icons/quests/bonuses/badges/48x48/badge_19.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_2:String = "../maps/icons/quests/bonuses/badges/48x48/badge_2.png";
@@ -32902,6 +32996,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_180:String = "../maps/icons/quests/bonuses/badges/80x80/badge_180.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_181:String = "../maps/icons/quests/bonuses/badges/80x80/badge_181.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_182:String = "../maps/icons/quests/bonuses/badges/80x80/badge_182.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_183:String = "../maps/icons/quests/bonuses/badges/80x80/badge_183.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_19:String = "../maps/icons/quests/bonuses/badges/80x80/badge_19.png";
       
@@ -33373,6 +33471,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOADER_PEDANT:String = "../maps/icons/quests/bonuses/big/loader_pedant.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_ALPHA:String = "../maps/icons/quests/bonuses/big/lootBox_alpha.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_BRONZE:String = "../maps/icons/quests/bonuses/big/lootBox_bronze.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_COMMONTICKET:String = "../maps/icons/quests/bonuses/big/lootBox_commonTicket.png";
@@ -33382,6 +33482,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_FUN_RANDOM:String = "../maps/icons/quests/bonuses/big/lootBox_fun_random.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/big/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_PRIME:String = "../maps/icons/quests/bonuses/big/lootBox_prime.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_PROTO:String = "../maps/icons/quests/bonuses/big/lootBox_proto.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/big/lootBox_silver.png";
       
@@ -33807,6 +33911,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOADER_PEDANT:String = "../maps/icons/quests/bonuses/s180x135/loader_pedant.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_ALPHA:String = "../maps/icons/quests/bonuses/s180x135/lootBox_alpha.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_BRONZE:String = "../maps/icons/quests/bonuses/s180x135/lootBox_bronze.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_COMMONTICKET:String = "../maps/icons/quests/bonuses/s180x135/lootBox_commonTicket.png";
@@ -33814,6 +33920,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s180x135/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s180x135/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_PRIME:String = "../maps/icons/quests/bonuses/s180x135/lootBox_prime.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_PROTO:String = "../maps/icons/quests/bonuses/s180x135/lootBox_proto.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s180x135/lootBox_silver.png";
       
@@ -34141,6 +34251,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOADER_PEDANT:String = "../maps/icons/quests/bonuses/s232x174/loader_pedant.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_ALPHA:String = "../maps/icons/quests/bonuses/s232x174/lootBox_alpha.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_BRONZE:String = "../maps/icons/quests/bonuses/s232x174/lootBox_bronze.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_COMMONTICKET:String = "../maps/icons/quests/bonuses/s232x174/lootBox_commonTicket.png";
@@ -34148,6 +34260,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s232x174/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s232x174/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_PRIME:String = "../maps/icons/quests/bonuses/s232x174/lootBox_prime.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_PROTO:String = "../maps/icons/quests/bonuses/s232x174/lootBox_proto.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s232x174/lootBox_silver.png";
       
@@ -34539,6 +34655,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOADER_PEDANT:String = "../maps/icons/quests/bonuses/s296x222/loader_pedant.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_ALPHA:String = "../maps/icons/quests/bonuses/s296x222/lootBox_alpha.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_BRONZE:String = "../maps/icons/quests/bonuses/s296x222/lootBox_bronze.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_COMMONTICKET:String = "../maps/icons/quests/bonuses/s296x222/lootBox_commonTicket.png";
@@ -34546,6 +34664,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s296x222/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s296x222/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_PRIME:String = "../maps/icons/quests/bonuses/s296x222/lootBox_prime.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_PROTO:String = "../maps/icons/quests/bonuses/s296x222/lootBox_proto.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s296x222/lootBox_silver.png";
       
@@ -35547,6 +35669,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOADER_PEDANT:String = "../maps/icons/quests/bonuses/s600x450/loader_pedant.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_ALPHA:String = "../maps/icons/quests/bonuses/s600x450/lootBox_alpha.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_BRONZE:String = "../maps/icons/quests/bonuses/s600x450/lootBox_bronze.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_COMMONTICKET:String = "../maps/icons/quests/bonuses/s600x450/lootBox_commonTicket.png";
@@ -35554,6 +35678,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_DEFAULT:String = "../maps/icons/quests/bonuses/s600x450/lootBox_default.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/s600x450/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_PRIME:String = "../maps/icons/quests/bonuses/s600x450/lootBox_prime.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_PROTO:String = "../maps/icons/quests/bonuses/s600x450/lootBox_proto.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/s600x450/lootBox_silver.png";
       
@@ -36147,6 +36275,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX:String = "../maps/icons/quests/bonuses/small/lootBox.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_ALPHA:String = "../maps/icons/quests/bonuses/small/lootBox_alpha.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_BRONZE:String = "../maps/icons/quests/bonuses/small/lootBox_bronze.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_COMMONTICKET:String = "../maps/icons/quests/bonuses/small/lootBox_commonTicket.png";
@@ -36156,6 +36286,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_FUN_RANDOM:String = "../maps/icons/quests/bonuses/small/lootBox_fun_random.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_GOLD:String = "../maps/icons/quests/bonuses/small/lootBox_gold.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_PRIME:String = "../maps/icons/quests/bonuses/small/lootBox_prime.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_PROTO:String = "../maps/icons/quests/bonuses/small/lootBox_proto.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_LOOTBOX_SILVER:String = "../maps/icons/quests/bonuses/small/lootBox_silver.png";
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_49_LS_Road_Signs/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.628792 -0.000000 -0.910268</min>
+		<max>0.126908 0.200104 0.773333</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_49_LS_Road_Signs/normal/lod0/attachment</nodefullVisual>
+</root>
