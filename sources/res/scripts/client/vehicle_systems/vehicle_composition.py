@@ -41,7 +41,7 @@ def createVehicleComposition(gameObject, prefabMap=None, followNodes=True, extra
     else:
 
         def predicate(_, nodeName):
-            return nodeName.startswith('HP_')
+            return nodeName.startswith('HP_') or nodeName == TankPartNames.GUN
 
     def nodeInteractTypeResolver(_, nodeName):
         if not followNodes:

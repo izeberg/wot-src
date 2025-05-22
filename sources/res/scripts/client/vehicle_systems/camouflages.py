@@ -254,7 +254,8 @@ def getStyleProgressionOutfit(outfit, toLevel=0, season=None):
             sequenceSlot = resOutfit.misc.slotFor(GUI_ITEM_TYPE.SEQUENCE)
             for seq in levelAdditionalOutfit.sequences:
                 intCD = makeIntCompactDescrByID('customizationItem', CustomizationType.SEQUENCE, seq.id)
-                sequenceSlot.append(intCD, seq)
+                if seq.slotId in sequenceSlot.getRegions():
+                    sequenceSlot.set(intCD, sequenceSlot.getRegions().index(seq.slotId), seq)
 
     return resOutfit
 
@@ -603,7 +604,7 @@ def __createMiscTransform(slotParams):
 
 def __getModelAnimators(outfit, vehicleDescr):
 
-    def getModelAnimatorParams(slotParams, slotData, _, __):
+    def getModelAnimatorParams(slotParams, slotData, _):
         item = getItemByCompactDescr(slotData.intCD)
         return ModelAnimatorParams(transform=__createMiscTransform(slotParams), attachNode=slotParams.attachNode, animatorName=item.sequenceName)
 

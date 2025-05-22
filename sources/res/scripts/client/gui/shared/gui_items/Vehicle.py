@@ -438,6 +438,8 @@ class Vehicle(FittingItem):
                 elif slotType == GUI_ITEM_TYPE.ATTACHMENT:
                     regionIdx = len(slotsAnchors[slotType][areaId])
                     customizationSlot = AttachmentSlot(anchor, slotHelper.tankAreaId, regionIdx)
+                elif slotType == GUI_ITEM_TYPE.SEQUENCE:
+                    continue
                 else:
                     if anchor.applyTo is not None:
                         regions = REGIONS_BY_SLOT_TYPE[areaId][slotType]

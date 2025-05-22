@@ -241,7 +241,7 @@ package net.wg.data.constants.generated
       
       public static const CZECH_CZ35_T56_G:String = "czech-Cz35_T56_G";
       
-      public static const CZECH_CZ37_SDT_58_VLKODAV:String = "czech-cz37_sdt_58_vlkodav";
+      public static const CZECH_CZ37_SDT_58_VLKODAV:String = "czech-Cz37_SDT_58_Vlkodav";
       
       public static const CZECH_CZ38_SZDV_VZ50:String = "czech-Cz38_SZDV_vz50";
       

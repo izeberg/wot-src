@@ -4179,6 +4179,10 @@ package
       
       public static const CAMOUFLAGE_LIVEOPS_RECOLOR_10_DESCRIPTION:String = "#vehicle_customization:camouflage/liveops_recolor_10/description";
       
+      public static const CAMOUFLAGE_LS25_2D_LABEL:String = "#vehicle_customization:camouflage/ls25_2d/label";
+      
+      public static const CAMOUFLAGE_LS25_2D_DESCRIPTION:String = "#vehicle_customization:camouflage/ls25_2d/description";
+      
       public static const CAMOUFLAGE_CLANS_2D_THOR_LABEL:String = "#vehicle_customization:camouflage/clans_2d_thor/label";
       
       public static const CAMOUFLAGE_CLANS_2D_THOR_DESCRIPTION:String = "#vehicle_customization:camouflage/clans_2d_thor/description";
@@ -14521,6 +14525,12 @@ package
       
       public static const SPECIAL_STYLE_LIVEOPS_RECOLOR_10_DESC_LONG:String = "#vehicle_customization:special_style/liveops_recolor_10_desc/long";
       
+      public static const SPECIAL_STYLE_LS25_2D:String = "#vehicle_customization:special_style/ls25_2d";
+      
+      public static const SPECIAL_STYLE_LS25_2D_DESC:String = "#vehicle_customization:special_style/ls25_2d_desc";
+      
+      public static const SPECIAL_STYLE_LS25_2D_DESC_LONG:String = "#vehicle_customization:special_style/ls25_2d_desc/long";
+      
       public static const SPECIAL_STYLE_CLANS_2D_THOR:String = "#vehicle_customization:special_style/clans_2d_thor";
       
       public static const SPECIAL_STYLE_CLANS_2D_THOR_DESC:String = "#vehicle_customization:special_style/clans_2d_thor_desc";
@@ -17742,6 +17752,18 @@ package
       public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_45_FGM_BROKENCONTAINER:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer";
       
       public static const ATTACHMENT_ECHOES_FROM_BEYOND_CUS_45_FGM_BROKENCONTAINER_DESCRIPTION:String = "#vehicle_customization:attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer/description";
+      
+      public static const ATTACHMENT_ANOMALY_ARMORY:String = "#vehicle_customization:attachment/anomaly_armory";
+      
+      public static const ATTACHMENT_ANOMALY_ARMORY_CUS_46_LS_TV_01:String = "#vehicle_customization:attachment/anomaly_armory/Cus_46_LS_TV_01";
+      
+      public static const ATTACHMENT_ANOMALY_ARMORY_CUS_47_LS_TV_02:String = "#vehicle_customization:attachment/anomaly_armory/Cus_47_LS_TV_02";
+      
+      public static const ATTACHMENT_ANOMALY_ARMORY_CUS_48_LS_BARBED_WIRE:String = "#vehicle_customization:attachment/anomaly_armory/Cus_48_LS_Barbed_Wire";
+      
+      public static const ATTACHMENT_ANOMALY_ARMORY_CUS_49_LS_ROAD_SIGNS:String = "#vehicle_customization:attachment/anomaly_armory/Cus_49_LS_Road_Signs";
+      
+      public static const ATTACHMENT_ANOMALY_ARMORY_CUS_50_LS_MIRIUM_COLLECTOR:String = "#vehicle_customization:attachment/anomaly_armory/Cus_50_LS_Mirium_Collector";
       
       public static const PROJECTION_DECALS_HOLIDAY_PROJECTION_DECAL_654:String = "#vehicle_customization:projection_decals/holiday/projection_decal_654";
       
