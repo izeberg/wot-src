@@ -60,6 +60,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_030_Saw.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_UNI_628_VentilationSys_Tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Barrel.vfx</fn_effect_bin>
@@ -103,6 +104,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf013_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env_EU_041_RoadSigns.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw001_Trolley.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage4.vfx</fn_effect_bin>
@@ -149,16 +154,17 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_009_MetalDepot.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_butterfly_yellow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_firesmoke_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_leaves_air_around.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_butterfly_white.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_leaves_air_around.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_smoke_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_SU_030_Saw.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_628_VentilationSys_Tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel.eff</fn_effect_bin>
@@ -201,6 +207,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf013_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_EU_041_RoadSigns.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw001_Trolley.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage4.eff</fn_effect_bin>
@@ -328,6 +338,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_030_Saw.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_UNI_628_VentilationSys_Tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf010_FenceTile1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Barrel.vfx</fn_effect_bin>
@@ -371,6 +382,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf013_FenceTile1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env_EU_041_RoadSigns.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw001_Trolley.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage4.vfx</fn_effect_bin>
@@ -417,16 +432,17 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_009_MetalDepot.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_butterfly_yellow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_firesmoke_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_leaves_air_around.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/63_tundra_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_butterfly_white.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_leaves_air_around.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/63_tundra_smoke_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_SU_030_Saw.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_628_VentilationSys_Tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf010_FenceTile1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel.eff</fn_effect_bin>
@@ -469,6 +485,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf013_FenceTile1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env_EU_041_RoadSigns.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw001_Trolley.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage4.eff</fn_effect_bin>

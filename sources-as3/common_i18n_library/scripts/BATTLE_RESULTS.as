@@ -305,6 +305,8 @@ package
       
       public static const COMMON_VEHICLESTATE_DEAD13:String = "#battle_results:common/vehicleState/dead13";
       
+      public static const COMMON_VEHICLESTATE_DEAD15:String = "#battle_results:common/vehicleState/dead15";
+      
       public static const COMMON_VEHICLESTATE_DEAD27:String = "#battle_results:common/vehicleState/dead27";
       
       public static const COMMON_VEHICLESTATE_DEAD29:String = "#battle_results:common/vehicleState/dead29";

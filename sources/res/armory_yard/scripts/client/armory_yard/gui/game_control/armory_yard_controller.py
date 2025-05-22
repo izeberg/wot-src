@@ -176,6 +176,7 @@ class ArmoryYardController(IArmoryYardController):
         self.__serverSettings.stop()
         g_clientUpdateManager.removeObjectCallbacks(self)
         self.__soundManager.clear()
+        self.unloadScene(False)
         self.__sceneLoadingManager.destroy()
         self.__cameraManager.destroy()
         self.__stopNotification()
@@ -577,7 +578,6 @@ class ArmoryYardController(IArmoryYardController):
         if self.isEnabled():
             self.__checkSeason()
             self.onCheckNotify()
-            self.checkAnnouncement()
             self.__fillBundlesProducts()
             if self.__isPaused != self.serverSettings.isPaused:
                 self.__isPaused = self.serverSettings.isPaused

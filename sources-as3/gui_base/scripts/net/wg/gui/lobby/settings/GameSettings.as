@@ -44,6 +44,8 @@ package net.wg.gui.lobby.settings
       
       private static const INCREASED_ZOOM_LBL:String = "increasedZoom";
       
+      private static const HORSTABILIZATIONSNP_LBL:String = "horStabilizationSnp";
+      
       private static const SHOW_DAMAGE_ICON_LBL:String = "showDamageIcon";
       
       private static const ANONYMIZER:String = "anonymizer";
@@ -153,7 +155,7 @@ package net.wg.gui.lobby.settings
                            _loc9_.selected = false;
                         }
                      }
-                     else if(_loc5_ == SHOW_DAMAGE_ICON_LBL || _loc5_ == INCREASED_ZOOM_LBL)
+                     else if(_loc5_ == SHOW_DAMAGE_ICON_LBL || _loc5_ == INCREASED_ZOOM_LBL || _loc5_ == HORSTABILIZATIONSNP_LBL)
                      {
                         _loc14_ = new CheckboxVo(_loc6_.extraData);
                         _loc9_.toolTip = _loc14_.tooltip;

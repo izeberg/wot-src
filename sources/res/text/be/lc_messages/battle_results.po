@@ -63,7 +63,7 @@ msgid "common/details/buyPremiumBtn"
 msgstr "Купіць прэміум"
 
 msgid "common/details/creditsTitle"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "common/details/crystal"
 msgstr "Боны"
@@ -89,8 +89,8 @@ msgstr ""
 
 msgid "common/details/premiumPlus/premium"
 msgstr ""
-"Дадатковы досвед, крэдыты, прэміум задачы і звязовыя бонусы пры наяўнасці "
-"Танкавага прэміум акаўнту."
+"Дополнительный опыт, серебро, премиум задачи и взводные бонусы при наличии "
+"Танкового премиум аккаунта."
 
 msgid "common/details/premiumPlus/quests"
 msgstr ""
@@ -99,7 +99,8 @@ msgstr ""
 
 msgid "common/details/premiumPlus/squad"
 msgstr ""
-"Здабывайце больш крэдытаў у звязе пры наяўнасці Танкавага прэміум акаўнту."
+"Зарабатывайте больше серебра во взводе при наличии Танкового премиум "
+"аккаунта."
 
 msgid "common/details/xpTitle"
 msgstr "Досвед"
@@ -121,8 +122,8 @@ msgstr "Засталося баёў (прыблізна): %(battles)s"
 
 msgid "common/noIncome/alert/text"
 msgstr ""
-"Пасля 10-га адваяванага бою крэдыты, узнагароды і досвед у гэтым рэжыме "
-"давацца не будуць, а вынікі не будуць паказвацца ў агульнай статыстыцы."
+"После 10 боя серебро, награды и опыт в данном режиме начисляться не будут, а"
+" результаты не отразятся на общей статистике."
 
 msgid "common/noIncome/alert/title"
 msgstr "Увага!"
@@ -405,6 +406,9 @@ msgstr "Самазнішчыўся на Лініі фронту"
 msgid "common/vehicleState/dead13"
 msgstr "Знішчаны звычкай гульца"
 
+msgid "common/vehicleState/dead15"
+msgstr "Уничтожен минным полем"
+
 msgid "common/vehicleState/dead2"
 msgstr "Знішчаны таранам"
 
@@ -564,8 +568,9 @@ msgstr "Дададзена ў сховішча рэсурсаў"
 
 msgid "details/calculations/piggyBankInfo/tooltip"
 msgstr ""
-"У гульцоў з актыўным Танкавым прэміум акаўнтам у рэзервовым сховішчы "
-"назапашваюцца дадатковыя крэдыты, а ў гульцоў з актыўнай падпіскай — золата."
+"У игроков с активным Танковым премиум аккаунтом в резервном хранилище "
+"накапливается дополнительное серебро, а у игроков с активной подпиской — "
+"золото."
 
 msgid "details/calculations/playerRankXP"
 msgstr "Надбаўка за званне"
@@ -601,7 +606,7 @@ msgid "details/calculations/xpRecord"
 msgstr "Налічана за бой (%(color_tag_open)sрэкорд%(color_tag_close)s)"
 
 msgid "details/credits"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "details/crystal"
 msgstr "Боны"
@@ -774,7 +779,7 @@ msgid "getPremiumPopover/actionBtn/label"
 msgstr "Выбраць тэрмін дзеяння"
 
 msgid "getPremiumPopover/award"
-msgstr "+50% да крэдытаў і досведу"
+msgstr "+50% к серебру и опыту"
 
 msgid "getPremiumPopover/descriptionText"
 msgstr "Купіце %(prem)s і за ўсе баі будзеце атрымліваць %(award)s"

@@ -231,6 +231,7 @@ package net.wg.gui.components.hintPanel
       
       private function update() : void
       {
+         var _loc2_:int = 0;
          var _loc3_:int = 0;
          this.messageLeftAnim.visible = this._keySelected;
          this.keyEffectAnim.visible = this._keySelected;
@@ -265,7 +266,7 @@ package net.wg.gui.components.hintPanel
             this._width = _loc1_;
             dispatchEvent(new Event(Event.RESIZE));
          }
-         var _loc2_:int = this._width >> 1;
+         _loc2_ = this._width >> 1;
          this.bg.width = this._width;
          this.bg.x = _loc2_;
          this.appearanceEffectAnim.x = _loc2_;

@@ -60,6 +60,8 @@ class _Reward(_Enum):
     MODERNIZED_AIM_STABILIZER = 'ModernizedAimDrivesAimingStabilizer1'
     MODERNIZED_TURBO_CHARGER_ROTATION = 'ModernizedTurbochargerRotationMechanism1'
     MODERNIZED_EXTRA_HEALTH_RESERVE = 'ModernizedExtraHealthReserveAntifragmentationLining1'
+    MODERNIZED_DAMAGE_VENTILATION = 'ModernizedDamageVentilation1'
+    MODERNIZED_TANK_RAMMER_SIGHTS = 'ModernizedTankRammerSights1'
 
 
 _REWARDS_TYPES_ORDER = (
@@ -115,7 +117,9 @@ _REWARDS_ORDER = {_RewardType.TROPHY: (
    _RewardType.EXP_EQUIPMENTS: (
                               _Reward.MODERNIZED_AIM_STABILIZER,
                               _Reward.MODERNIZED_TURBO_CHARGER_ROTATION,
-                              _Reward.MODERNIZED_EXTRA_HEALTH_RESERVE)}
+                              _Reward.MODERNIZED_EXTRA_HEALTH_RESERVE,
+                              _Reward.MODERNIZED_DAMAGE_VENTILATION,
+                              _Reward.MODERNIZED_TANK_RAMMER_SIGHTS)}
 _REWARD_NAME_EXTRACTOR = re.compile('(basic|enhanced|improved|trophy)*([a-z]+)(_(\\w+\\d*))*', re.I)
 _REWARD_NATION_EXTRACTOR = re.compile(('.*({})').format(('|').join(GUI_NATIONS)), re.I)
 

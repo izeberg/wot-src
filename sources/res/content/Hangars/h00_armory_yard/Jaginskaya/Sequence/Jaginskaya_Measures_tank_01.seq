@@ -25,14 +25,14 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>jaginskaya_tank_sound</name>
+		<name>Jaginskaya_tank_sound</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>32.766670</duration>
+				<duration>33.966667</duration>
 				<value>Root|Head</value>
 			</frame>
 		</track>
@@ -40,8 +40,8 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>32.723457</duration>
+				<startTime>0.266667</startTime>
+				<duration>32.733334</duration>
 				<sequenceSound>ay_vo_jaginskaya_tank</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

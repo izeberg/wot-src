@@ -1,4 +1,4 @@
-import logging
+import copy, logging
 from functools import partial
 import typing
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
@@ -38,14 +38,14 @@ def getOfferTokenByGift(tokenID):
     return tokenID.replace('_gift', '')
 
 
-def packBonusModelAndTooltipData(bonuses, bonusModelsList, tooltipData=None, packer=None, offersDataProvider=None, isShowAnimationRewards=False):
+def packBonusModelAndTooltipData(bonuses, bonusModelsList, tooltipData=None, packer=None, offersDataProvider=None, selectedRewards=None):
     if packer is None:
         packer = getPersonalMissionsBonusPacker()
     bonusIndexTotal = 0
     if tooltipData is not None:
         bonusIndexTotal = len(tooltipData)
     if offersDataProvider is not None:
-        _updateSelectableBonuses(bonuses, offersDataProvider, isShowAnimationRewards)
+        bonuses = _getUpdatedSelectableBonuses(bonuses, offersDataProvider, selectedRewards)
     for bonus in bonuses:
         if bonus.isShowInGUI():
             bonusList = packer.pack(bonus)
@@ -69,13 +69,11 @@ def packBonusModelAndTooltipData(bonuses, bonusModelsList, tooltipData=None, pac
     return
 
 
-def _updateSelectableBonuses(bonuses, offersDataProvider, isShowAnimationRewards=False):
-    for bonusIndex, bonus in enumerate(bonuses):
+def _getUpdatedSelectableBonuses(bonuses, offersDataProvider, selectedRewards=None):
+    resultBonuses = []
+    for bonus in bonuses:
         bonusName = bonus.getName()
         if bonus.isShowInGUI() and (bonusName == PM3_SELECT_BONUS_NAME or bonusName == SELECTABLE_BONUS_NAME):
-            if isShowAnimationRewards:
-                bonus.setIsShowAnimation(isShowAnimationRewards)
-                continue
             tokens = bonus.getTokens()
             bonusCount = bonus.getCount()
             for tokenId in tokens.iterkeys():
@@ -90,13 +88,26 @@ def _updateSelectableBonuses(bonuses, offersDataProvider, isShowAnimationRewards
                     gift = offer.getGift(giftId)
                     item = first(gift.rawBonuses.get('items', {}).keys())
                     if item is not None:
-                        bonuses.append(serverBonuses.ItemsBonus(name='items', value={item: countGift}))
+                        if selectedRewards is not None and item in selectedRewards:
+                            __addNewPM3SelectTokensBonusToList(resultBonuses, bonus, countGift, True)
+                        else:
+                            resultBonuses.append(serverBonuses.ItemsBonus(name='items', value={item: countGift}))
                     bonusCount -= countGift
 
-            if bonusCount == 0:
-                bonuses.pop(bonusIndex)
+            if bonusCount != 0:
+                __addNewPM3SelectTokensBonusToList(resultBonuses, bonus, bonusCount, False)
+        else:
+            resultBonuses.append(bonus)
 
-    return
+    return resultBonuses
+
+
+def __addNewPM3SelectTokensBonusToList(bonusList, bonus, newCount, isShowAnimation):
+    value = copy.deepcopy(bonus.getValue())
+    value[first(value.keys())]['count'] = newCount
+    newBonus = serverBonuses.PersonalMissionsSelectTokensBonus(value, bonus.isCompensation(), bonus.getContext())
+    newBonus.setIsShowAnimation(isShowAnimation)
+    bonusList.append(newBonus)
 
 
 class SelectBonusPacker(BaseBonusUIPacker):
@@ -118,20 +129,21 @@ class SelectBonusPacker(BaseBonusUIPacker):
             model.setLabel(backport.text(labelResId))
         model.setIcon(bonusType)
         model.setBigIcon(bonusType)
-        model.setIsShowAnimation(bonus.getIsShowAnimation())
+        isShowAnimation = bonus.getIsShowAnimation()
+        model.setIsShowAnimation(isShowAnimation)
         questId = cls.getId(bonus)
         model.setId(questId)
         isAvailableToken = bool(cls.__selectableRewardManager.getAvailableSelectableBonuses(partial(cls.__isValidReward, questId)))
-        model.setValue(str(cls.getValue(bonus, isAvailableToken)))
-        model.setIsChooseReward(isAvailableToken)
+        model.setValue(str(cls.getValue(bonus, isAvailableToken, isShowAnimation)))
+        model.setIsChooseReward(isAvailableToken and not isShowAnimation)
         model.setUserName(backport.text(R.strings.personal_missions_3.selectBonus.dyn(bonusType)()))
         return model
 
     @classmethod
-    def getValue(cls, bonus, isAvailableToken):
+    def getValue(cls, bonus, isAvailableToken, isShowAnimation):
         giftTokenName = first(bonus.getTokens().keys())
         offer = cls.__offersProvider.getOfferByToken(getOfferTokenByGift(giftTokenName))
-        if offer is None or not isAvailableToken:
+        if offer is None or not isAvailableToken or isShowAnimation:
             return bonus.getCount()
         else:
             return offer.availableTokens

@@ -28,7 +28,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setAmmoStock(param1:Number, param2:Number, param3:String, param4:Boolean) : void;
       
-      function as_setClipParams(param1:Number, param2:Number, param3:Boolean) : void;
+      function as_setClipParams(param1:Number, param2:Number, param3:int) : void;
       
       function as_setDistance(param1:String) : void;
       

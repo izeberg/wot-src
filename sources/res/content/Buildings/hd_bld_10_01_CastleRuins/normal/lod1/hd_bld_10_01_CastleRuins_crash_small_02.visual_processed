@@ -19,7 +19,7 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd1</identifier>
+					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -32,16 +32,78 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
-						alphaReference
-						<Int>0</Int>
+						g_dirtColor
+						<Vector4>0.380000 0.470000 0.413300 0.070000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
+					</property>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Moss_yellow_1024_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Moss_yellow_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Moss_yellow_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.280137 0.000000 -0.015780</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_10_01_CastleRuins/EU_CastleRuins_01_blend.png</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_02_DM.dds</Texture>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -105,92 +167,6 @@
 					</property>
 				</material>
 				<groupOrigin>0.009712 0.000000 -0.015780</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_nd0</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						blendMask
-						<Texture>content/Buildings/hd_bld_10_01_CastleRuins/EU_CastleRuins_01_blend.png</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_dirtColor
-						<Vector4>0.380000 0.470000 0.413300 0.070000</Vector4>
-					</property>
-					<property>
-						g_atlasSizes
-						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
-					</property>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Moss_yellow_1024_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Moss_yellow_1024_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Moss_yellow_1024_MAO.dds</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>1.280137 0.000000 -0.015780</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

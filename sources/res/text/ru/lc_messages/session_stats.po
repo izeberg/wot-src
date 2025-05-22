@@ -57,7 +57,7 @@ msgid "label/tabVehicle"
 msgstr "По технике"
 
 msgid "label/totalCredits"
-msgstr "Итог по кредитам"
+msgstr "Итог по серебру"
 
 msgid "label/totalCrystal"
 msgstr "Итог по бонам"
@@ -231,7 +231,7 @@ msgid "propertyInfo/total/label/friendlyFirePenalty"
 msgstr "Штраф за урон по союзникам"
 
 msgid "propertyInfo/total/label/netCredits"
-msgstr "Итог по кредитам"
+msgstr "Итог по серебру"
 
 msgid "propertyInfo/total/label/netCrystal"
 msgstr "Итог по бонам"
@@ -368,7 +368,7 @@ msgid "tooltip/header/battleCount"
 msgstr "Количество боёв"
 
 msgid "tooltip/header/wtr"
-msgstr "Мир танков Rating"
+msgstr "Рейтинг Мира танков"
 
 msgid "tooltip/mainBtn/body/disabled"
 msgstr "Сессионная статистика в выбранном режиме недоступна."
@@ -419,7 +419,7 @@ msgid "tooltip/settingsBtn/header"
 msgstr "Настройки"
 
 msgid "tooltip/statValue/credits/body"
-msgstr "Общее количество заработанных за сессию кредитов: %(total)s"
+msgstr "Общее количество заработанного за сессию серебра: %(total)s"
 
 msgid "tooltip/statValue/crystals/body"
 msgstr "Общее количество заработанных за сессию бон: %(total)s"

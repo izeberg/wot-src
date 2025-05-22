@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl29_NC_Wz_70T/_skins/Pl29_NC_Wz_70T_3dst_Sand/crash/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.343462 -0.342448 0.322573</min>
+		<max>0.733413 0.342450 5.049502</max>
+	</visibilityBox>
+	<parent>vehicles/poland/Pl29_NC_Wz_70T/_skins/Pl29_NC_Wz_70T_3dst_Sand/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It36_Gasta/crash/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.499875 -0.354964 -1.818048</min>
+		<max>1.502728 0.971971 1.403257</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It36_Gasta/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+</root>

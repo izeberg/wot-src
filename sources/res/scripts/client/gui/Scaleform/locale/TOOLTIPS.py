@@ -396,6 +396,8 @@ class TOOLTIPS(object):
     SHOWARTYHITONMAP_BODY = '#tooltips:showArtyHitOnMap/body'
     INCREASEDZOOM_HEADER = '#tooltips:increasedZoom/header'
     INCREASEDZOOM_BODY = '#tooltips:increasedZoom/body'
+    HORSTABILIZATIONSNP_HEADER = '#tooltips:horStabilizationSnp/header'
+    HORSTABILIZATIONSNP_BODY = '#tooltips:horStabilizationSnp/body'
     HULLLOCKENABLED_HEADER = '#tooltips:hullLockEnabled/header'
     HULLLOCKENABLED_BODY = '#tooltips:hullLockEnabled/body'
     MASTERVOLUMETOGGLEOFF_HEADER = '#tooltips:masterVolumeToggleOff/header'
@@ -978,10 +980,6 @@ class TOOLTIPS(object):
     LOBY_MESSENGER_LISTVIEW_NEWS_TOOLTIP_BODY = '#tooltips:loby_messenger/listView/news/tooltip/body'
     LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_HEADER = '#tooltips:lobby/header/buyPremiumAccount/disabled/header'
     LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_BODY = '#tooltips:lobby/header/buyPremiumAccount/disabled/body'
-    LOBY_MESSENGER_BTNREFERRALDISABLED_HEADER = '#tooltips:loby_messenger/btnReferralDisabled/header'
-    LOBY_MESSENGER_BTNREFERRALDISABLED_BODY = '#tooltips:loby_messenger/btnReferralDisabled/body'
-    LOBY_MESSENGER_BTNVEHICLECARTDISABLED_HEADER = '#tooltips:loby_messenger/btnVehicleCartDisabled/header'
-    LOBY_MESSENGER_BTNVEHICLECARTDISABLED_BODY = '#tooltips:loby_messenger/btnVehicleCartDisabled/body'
     TRAINING_CREATE_INVITES_CHECKBOX_HEADER = '#tooltips:training/create/invites_checkbox/header'
     TRAINING_CREATE_INVITES_CHECKBOX_BODY = '#tooltips:training/create/invites_checkbox/body'
     TRAINING_OBSERVER_BTN_HEADER = '#tooltips:training/observer/btn/header'
@@ -3954,6 +3952,16 @@ class TOOLTIPS(object):
     PLAYSTREAK_RANDOMGOODIE_DESC = '#tooltips:playStreak/randomGoodie/desc'
     PLAYSTREAK_RANDOMEQUIPMENT_LABEL = '#tooltips:playStreak/randomEquipment/label'
     PLAYSTREAK_RANDOMEQUIPMENT_DESC = '#tooltips:playStreak/randomEquipment/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_DESC = '#tooltips:notrecruitedtankman/tankmen_BP17_1/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP17_1/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_DESC = '#tooltips:notrecruitedtankman/tankmen_BP17_2/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP17_2/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_DESC = '#tooltips:notrecruitedtankman/tankmen_BP17_3/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP17_3/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_DESC = '#tooltips:notrecruitedtankman/tankmen_BP17_4/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP17_4/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_5_DESC = '#tooltips:notrecruitedtankman/tankmen_BP17_5/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP17_5_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP17_5/label'
     ELEN_SUMMARY_RANK_ENUM = (
      ELEN_SUMMARY_RANK_1,
      ELEN_SUMMARY_RANK_2,
@@ -4844,7 +4852,12 @@ class TOOLTIPS(object):
      NOTRECRUITEDTANKMAN_TANKMEN_MAY25_1_LABEL,
      NOTRECRUITEDTANKMAN_TANKMEN_MAY25_2_LABEL,
      NOTRECRUITEDTANKMAN_TANKMEN_MAY25_3_LABEL,
-     NOTRECRUITEDTANKMAN_TANKMEN_BP16_M_LABEL)
+     NOTRECRUITEDTANKMAN_TANKMEN_BP16_M_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_5_LABEL)
     NOTRECRUITEDTANKMAN_ALL_DESC_ENUM = (
      NOTRECRUITEDTANKMAN_BASE_DESC,
      NOTRECRUITEDTANKMAN_BUFFON_DESC,
@@ -5108,7 +5121,12 @@ class TOOLTIPS(object):
      NOTRECRUITEDTANKMAN_TANKMEN_MAY25_1_DESC,
      NOTRECRUITEDTANKMAN_TANKMEN_MAY25_2_DESC,
      NOTRECRUITEDTANKMAN_TANKMEN_MAY25_3_DESC,
-     NOTRECRUITEDTANKMAN_TANKMEN_BP16_M_DESC)
+     NOTRECRUITEDTANKMAN_TANKMEN_BP16_M_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP17_5_DESC)
     NOTRECRUITEDTANKMAN_ALL_HOWTOGETINFO_ENUM = (
      NOTRECRUITEDTANKMAN_TANKMAN_HOWTOGETINFO,
      NOTRECRUITEDTANKMAN_TANKMEN_HOWTOGETINFO,

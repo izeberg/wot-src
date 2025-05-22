@@ -1,5 +1,6 @@
 package net.wg.infrastructure.base.meta.impl
 {
+   import net.wg.gui.battle.views.staticMarkers.ArtilleryTargetMarker;
    import net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState;
    import net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterActionMarker;
    import net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation;
@@ -80,6 +81,8 @@ package net.wg.infrastructure.base.meta.impl
    
    public class ClassManagerBattleMarkersMeta
    {
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_STATICMARKERS_ARTILLERYTARGETMARKER:Class = ArtilleryTargetMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_STATICMARKERS_EPIC_OBJECTIVEIDREPLYSTATE:Class = ObjectiveIdReplyState;
       

@@ -18,16 +18,16 @@ msgid "closeBtn/label"
 msgstr "ЗАКРЫТЬ"
 
 msgid "credits/description"
-msgstr "В наборе: %(value)s кредитов"
+msgstr "В наборе: %(value)s серебра"
 
 msgid "credits/longDescription"
 msgstr ""
 "Основная игровая валюта.\n"
 "\n"
-"В наборе: %(value)s кредитов"
+"В наборе: %(value)s серебра"
 
 msgid "credits/title"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "crystal/description"
 msgstr "В наборе: %(value)s бон"
@@ -90,12 +90,15 @@ msgstr ""
 msgid "notifications/description/armory_coin"
 msgstr "Потрачено жетонов: %(value)s"
 
+msgid "notifications/description/crystal"
+msgstr "Потрачено бон: %(value)s"
+
 msgid "notifications/description/gold"
 msgstr "Потрачено золота: %(value)s"
 
 msgid "notifications/financialTransaction"
 msgstr ""
-"Дата:%(date)s\n"
+"Дата: %(date)s\n"
 "%(currencies)s"
 
 msgid "notifications/purchaseContent"
@@ -168,6 +171,13 @@ msgstr ""
 " часто подставляться под ответный огонь. Большое количество положительных "
 "характеристик скомпенсировано скромной точностью и низкой удельной "
 "мощностью."
+
+msgid "product/bundle/longDescription/episode6"
+msgstr ""
+"Этот тяжёлый танк прорыва обладает неплохой динамикой, максимальной "
+"скоростью и крепким лобовым бронированием. Задача машины — проламывать "
+"направление и пользоваться преимуществами своей брони. Хороший угол "
+"склонения орудия позволяет уверенно чувствовать себя при игре «от рельефа»."
 
 msgid "product/bundle/title"
 msgstr "Набор с %(vehicleName)s"
@@ -324,6 +334,9 @@ msgstr ""
 "Свободные жетоны начинают копиться в том случае, если игрок уже завершил "
 "основную прогрессию Сборочного цеха."
 
+msgid "tooltip/shop/currency/gold"
+msgstr "золото"
+
 msgid "tooltip/shop/currency/header/description"
 msgstr "Сборочный цех"
 
@@ -332,9 +345,11 @@ msgstr "Свободный жетон"
 
 msgid "tooltip/shop/currency/info"
 msgstr ""
-"%(green_open)sПолучить жетоны%(green_close)s можно в награду за задачи "
-"Сборочного цеха, а также за %(gold_open)sзолото%(gold_close)s. Количество "
-"жетонов ограничено."
+"Получить %(takeCoin)s можно в награду за задачи Сборочного цеха, а также за "
+"%(gold)s. Количество жетонов ограничено."
+
+msgid "tooltip/shop/currency/takeCoin"
+msgstr "Получить жетоны"
 
 msgid "tooltip/shop/info/body"
 msgstr "Повторный просмотр краткого описания работы магазина Сборочного цеха."

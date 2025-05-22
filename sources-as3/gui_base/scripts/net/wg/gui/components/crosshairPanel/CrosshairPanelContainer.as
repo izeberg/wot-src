@@ -14,6 +14,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.AUTOLOADERBOOSTVIEWSTATES;
+   import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
    import net.wg.gui.components.crosshairPanel.VO.CrosshairSettingsVO;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
@@ -109,6 +110,8 @@ package net.wg.gui.components.crosshairPanel
       
       private var _autoloaderAnimationState:String = "reloadingEnd";
       
+      private var _isDualGunCharging:Boolean = false;
+      
       private var _remainingTimeInSec:Number = 0;
       
       private var _baseReloadingTimeInSec:Number = 0;
@@ -123,7 +126,7 @@ package net.wg.gui.components.crosshairPanel
       
       private var _ammoQuantityInClip:Number = 0;
       
-      private var _isAutoloader:Boolean = false;
+      private var _clipType:int = 0;
       
       private var _isAutoloaderCritical:Boolean = false;
       
@@ -201,7 +204,7 @@ package net.wg.gui.components.crosshairPanel
          removeEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
          this.clearReloadingTimer();
          this.clearAutoloaderReloadTimer();
-         this.clearAutoloaderAtimationTimer();
+         this.clearAutoloaderAnimationTimer();
          this.clearTweens();
          this._gunMarkersContainer.dispose();
          this._gunMarkersContainer = null;
@@ -311,6 +314,7 @@ package net.wg.gui.components.crosshairPanel
       
       public function as_cancelDualGunCharge() : void
       {
+         this._isDualGunCharging = false;
          if(this._gunMarkersContainer != null)
          {
             this._gunMarkersContainer.cancelDualGunCharge();
@@ -454,10 +458,11 @@ package net.wg.gui.components.crosshairPanel
       
       public function as_setAutoloaderPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
       {
-         if(this._currentCrosshair != null)
+         if(this._currentCrosshair == null || this._isDualGunCharging)
          {
-            this._currentCrosshair.autoloaderUpdate(param1,param2,param3,param4);
+            return;
          }
+         this._currentCrosshair.autoloaderUpdate(param1,param2,param3,param4);
       }
       
       public function as_setAutoloaderReloadasPercent(param1:Number) : void
@@ -470,7 +475,7 @@ package net.wg.gui.components.crosshairPanel
       
       public function as_setAutoloaderReloading(param1:Number, param2:Number) : void
       {
-         this.clearAutoloaderAtimationTimer();
+         this.clearAutoloaderAnimationTimer();
          this._autoloaderAnimationBaseTime = param2;
          this._autoloaderAnimationFinishTime = getTimer() + param1 * CrosshairConsts.MS_IN_SECOND;
          if(param1 > 0)
@@ -504,9 +509,9 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setClipParams(param1:Number, param2:Number, param3:Boolean) : void
+      public function as_setClipParams(param1:Number, param2:Number, param3:int) : void
       {
-         this._isAutoloader = param3;
+         this._clipType = param3;
          this._clipCapacity = param1;
          this._burst = param2;
          if(this._currentCrosshair != null)
@@ -824,14 +829,16 @@ package net.wg.gui.components.crosshairPanel
       
       public function as_showShot() : void
       {
-         if(this._isAutoloader && this._currentCrosshair != null)
+         if(this.isAutoloader && this._currentCrosshair != null)
          {
+            this.clearAutoloaderReloadTimer();
             this._currentCrosshair.autoloaderShowShot();
          }
       }
       
       public function as_startDualGunCharging(param1:Number, param2:Number) : void
       {
+         this._isDualGunCharging = true;
          if(this._gunMarkersContainer != null)
          {
             this._gunMarkersContainer.startDualGunCharging(param1,param2);
@@ -970,7 +977,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(getTimer() >= this._autoloaderAnimationFinishTime)
          {
-            this.clearAutoloaderAtimationTimer();
+            this.clearAutoloaderAnimationTimer();
          }
          this.applyAutoloaderAnimationState();
       }
@@ -1003,7 +1010,7 @@ package net.wg.gui.components.crosshairPanel
          this._autoloaderTimer = this.clearTimer(this._autoloaderTimer);
       }
       
-      private function clearAutoloaderAtimationTimer() : void
+      private function clearAutoloaderAnimationTimer() : void
       {
          this._autoloaderAnimationTimer = this.clearTimer(this._autoloaderAnimationTimer);
       }
@@ -1019,7 +1026,7 @@ package net.wg.gui.components.crosshairPanel
       
       private function applyAutoloaderState() : void
       {
-         if(this._currentCrosshair == null)
+         if(this._currentCrosshair == null || this._isDualGunCharging)
          {
             return;
          }
@@ -1037,7 +1044,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._ammoState,this._ammoQuantityInClip,this._ammoClipState,this._ammoClipReloaded,this._isAutoloader,this._isAutoloaderCritical);
+            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._ammoState,this._ammoQuantityInClip,this._ammoClipState,this._ammoClipReloaded,this._clipType,this._isAutoloaderCritical);
             this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._quickReloadingTime);
             if(this._speedometer != null)
             {
@@ -1068,7 +1075,7 @@ package net.wg.gui.components.crosshairPanel
                }
             }
          }
-         if(this._isAutoloader && !param1)
+         if(this.isAutoloader && !param1)
          {
             this.applyAutoloaderState();
             this.applyAutoloaderAnimationState(true);
@@ -1138,6 +1145,11 @@ package net.wg.gui.components.crosshairPanel
       private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void
       {
          as_playSound(param1.key);
+      }
+      
+      private function get isAutoloader() : Boolean
+      {
+         return this._clipType == CROSSHAIR_CASSETTE_TYPES.AUTOLOADER || this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
       }
    }
 }

@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>Material #144</identifier>
-					<fx>shaders/wg_particles/pbs_mesh_particles.fx</fx>
+					<fx>shaders/particles/pbs_mesh_particles.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>

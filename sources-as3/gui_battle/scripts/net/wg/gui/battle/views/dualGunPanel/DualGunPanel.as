@@ -3,6 +3,8 @@ package net.wg.gui.battle.views.dualGunPanel
    import flash.utils.Dictionary;
    import net.wg.data.VO.RunningTimerData;
    import net.wg.data.constants.InvalidationType;
+   import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
    import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
    import net.wg.infrastructure.base.meta.IDualGunPanelMeta;
    import net.wg.infrastructure.base.meta.impl.DualGunPanelMeta;
@@ -68,6 +70,8 @@ package net.wg.gui.battle.views.dualGunPanel
       private var _isReadyForCharge:Boolean = false;
       
       private var _lastActiveState:String = "singleMode";
+      
+      private var _clipType:int = 0;
       
       public function DualGunPanel()
       {
@@ -255,6 +259,12 @@ package net.wg.gui.battle.views.dualGunPanel
          this.activateTimer(TIMER_ID_CHARGE_PROGRESS,param1,param2);
       }
       
+      public function as_setClipParams(param1:int) : void
+      {
+         this._clipType = param1;
+         this.panelTimer.updateClipType(param1);
+      }
+      
       public function as_updateActiveGun(param1:int, param2:Number, param3:Number) : void
       {
          var _loc5_:int = 0;
@@ -398,13 +408,13 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private function updatePanelTimer() : void
       {
-         var _loc7_:Number = NaN;
          var _loc1_:RunningTimerData = this._timers[TIMER_ID_ACTIVE_GUN_CHANGE];
          var _loc2_:RunningTimerData = this._timers[TIMER_ID_LOADING_LEFT];
          var _loc3_:RunningTimerData = this._timers[TIMER_ID_LOADING_RIGHT];
          var _loc4_:RunningTimerData = this._timers[TIMER_ID_CHARGE_PROGRESS];
          var _loc5_:RunningTimerData = this._timers[TIMER_ID_COOLDOWN];
          var _loc6_:String = DualGunPanelTimer.STYLE_IDLE;
+         var _loc7_:Number = Values.ZERO;
          if(_loc5_.isRunning)
          {
             _loc6_ = DualGunPanelTimer.STYLE_DEBUFF;
@@ -418,11 +428,22 @@ package net.wg.gui.battle.views.dualGunPanel
          else if(_loc2_.isRunning || _loc3_.isRunning)
          {
             _loc6_ = !!_loc1_.isRunning ? DualGunPanelTimer.STYLE_PRIMARY_LOADING : DualGunPanelTimer.STYLE_SECONDARY_LOADING;
-            _loc7_ = _loc2_.timeLeft + _loc3_.timeLeft;
+            if(this.hasAutoloader)
+            {
+               _loc7_ = !!_loc2_.isRunning ? Number(_loc2_.timeLeft) : Number(_loc3_.timeLeft);
+            }
+            else
+            {
+               _loc7_ = _loc2_.timeLeft + _loc3_.timeLeft;
+            }
+         }
+         else if(this.hasAutoloader)
+         {
+            _loc7_ = this.getTimerById(RELOADING_TIMERS[this._activeGunId]).totalTime;
+            _loc6_ = _loc7_ > Values.ZERO ? DualGunPanelTimer.STYLE_IDLE : DualGunPanelTimer.STYLE_PRIMARY_LOADING;
          }
          else
          {
-            _loc6_ = DualGunPanelTimer.STYLE_IDLE;
             _loc7_ = _loc2_.totalTime + _loc3_.totalTime;
          }
          if(this._hasNegativeReloadingEffect && (_loc6_ == DualGunPanelTimer.STYLE_PRIMARY_LOADING || _loc6_ == DualGunPanelTimer.STYLE_SECONDARY_LOADING))
@@ -528,6 +549,11 @@ package net.wg.gui.battle.views.dualGunPanel
             this._lastActiveState = _loc3_;
          }
          this.updatePanelTimer();
+      }
+      
+      private function get hasAutoloader() : Boolean
+      {
+         return this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
       }
    }
 }

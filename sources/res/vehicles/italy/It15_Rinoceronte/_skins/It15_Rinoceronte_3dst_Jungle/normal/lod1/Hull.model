@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-2.078145 -0.495060 -4.583763</min>
+		<max>2.087306 0.761549 3.726560</max>
+	</visibilityBox>
+</root>

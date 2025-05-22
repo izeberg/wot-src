@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G182_Mausekonig/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G182_Mausekonig/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.933833 -0.498227 -1.849947</min>
+		<max>0.929965 0.512658 5.778493</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -91,7 +91,7 @@ msgid "account/profile/emptyBattleList"
 msgstr "В бою не был"
 
 msgid "accountInfo/credits"
-msgstr "Кредиты:"
+msgstr "Серебро:"
 
 msgid "accountInfo/crystal"
 msgstr "Боны:"
@@ -728,7 +728,7 @@ msgid "bonusType/9"
 msgstr "Специальный игровой режим"
 
 msgid "booster/bonus/booster_credits"
-msgstr "%(effectValue)s на %(effectHours)s к кредитам за бой"
+msgstr "%(effectValue)s на %(effectHours)s к серебру за бой"
 
 msgid "booster/bonus/booster_crew_xp"
 msgstr "%(effectValue)s на %(effectHours)s к опыту экипажа за бой"
@@ -747,7 +747,7 @@ msgid "booster/bonus/booster_xp"
 msgstr "%(effectValue)s на %(effectHours)s к опыту за бой"
 
 msgid "booster/description/bonusValueTime/booster_credits"
-msgstr "Бонус %(effectValue)s к кредитам за бой на %(effectTime)s"
+msgstr "Бонус %(effectValue)s к серебру за бой на %(effectTime)s"
 
 msgid "booster/description/bonusValueTime/booster_crew_xp"
 msgstr "Бонус %(effectValue)s к опыту экипажа за бой на %(effectTime)s"
@@ -765,7 +765,7 @@ msgid "booster/description/bonusValueTime/booster_xp"
 msgstr "Бонус %(effectValue)s к опыту за бой на %(effectTime)s"
 
 msgid "booster/description/booster_credits"
-msgstr "%(effectValue)s к кредитам за бой"
+msgstr "%(effectValue)s к серебру за бой."
 
 msgid "booster/description/booster_crew_xp"
 msgstr "%(effectValue)s к опыту экипажа за бой"
@@ -792,7 +792,7 @@ msgid "booster/description/effectValueTime"
 msgstr "%(effectValue)s на %(effectTime)s"
 
 msgid "booster/influence/booster_credits"
-msgstr "к кредитам за бой"
+msgstr "к серебру за бой"
 
 msgid "booster/influence/booster_crew_xp"
 msgstr "к опыту экипажа за бой"
@@ -824,7 +824,7 @@ msgid "booster/quality/small"
 msgstr "(малый)"
 
 msgid "booster/userName/booster_credits"
-msgstr "Дополнительные кредиты за бой"
+msgstr "Дополнительное серебро за бой"
 
 msgid "booster/userName/booster_crew_xp"
 msgstr "Дополнительный опыт экипажа за бой"
@@ -914,9 +914,6 @@ msgstr "Купить"
 
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перейти к задаче"
-
-msgid "boostersWindow/boostersTableRenderer/header"
-msgstr "%(boosterName)s %(quality)s"
 
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Для доступа выполните «%(questName)s»"
@@ -1109,9 +1106,6 @@ msgstr "Создать заметку"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Создать взвод события"
-
-msgid "contextMenu/createHistoricalBattleSquad"
-msgstr "Взвод события «Время героев»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
@@ -2003,6 +1997,16 @@ msgstr ""
 "Перезарядка %(autoReloadTime)s с; Средний урон: %(avgDamageList)s\n"
 "Средняя пробиваемость: %(avgPiercingPower)s мм"
 
+msgid "descriptions/vehicleGun/autoReloadDualGun"
+msgstr ""
+"Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s; "
+"Средняя пробиваемость: %(avgPiercingPower)s мм"
+
+msgid "descriptions/vehicleGun/clipDualGun"
+msgstr ""
+"Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s; "
+"Средняя пробиваемость: %(avgPiercingPower)s мм"
+
 msgid "descriptions/vehicleGun/dualGun"
 msgstr ""
 "Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s\n"
@@ -2160,6 +2164,9 @@ msgstr ""
 "Параметр, отвечающий за время, проходящее с момента выстрела САУ до момента "
 "получения предупреждения."
 
+msgid "extraParams/name/chargeTimeBonus"
+msgstr "Параметр, отвечающий за уменьшение времени подготовки к залпу."
+
 msgid "extraParams/name/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
 "Параметр, отвечающий за максимальную дальность обзора при выведенных из "
@@ -2233,10 +2240,18 @@ msgstr ""
 "ускорения перезарядки, по истечении которой попадания по вам снова начнут "
 "ускорять перезарядку."
 
+msgid "extraParams/name/loadShellIntoDualGunBonus"
+msgstr "Параметр, отвечающий за ускорение дозарядки снаряда в орудии."
+
 msgid "extraParams/name/minTimeBetweenReloadBoost"
 msgstr ""
 "Временная задержка после ускорения перезарядки, по истечении которой "
 "попадания по вам снова начнут ускорять перезарядку."
+
+msgid "extraParams/name/penaltyAfterShotBonus"
+msgstr ""
+"Параметр, отвечающий за уменьшение времени штрафа после залпа, в течение "
+"которого орудие не может заряжаться."
 
 msgid "extraParams/name/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -2245,6 +2260,11 @@ msgstr ""
 
 msgid "extraParams/name/radiomanHitChance"
 msgstr "Параметр, отвечающий за шанс избежать ранений радистом."
+
+msgid "extraParams/name/speedLimitsBonus"
+msgstr ""
+"Параметр, отвечающий за увеличение максимальной скорости и скорости заднего "
+"хода."
 
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
@@ -3026,9 +3046,6 @@ msgstr "Тренировочный бой"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Линия фронта"
-
-msgid "headerButtons/battle/types/eventBattle"
-msgstr "Время героев"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Ивентовый взвод"
@@ -4487,6 +4504,14 @@ msgstr "?empty?"
 msgid "moduleInfo/additionalInfo"
 msgstr "Характеристики снаряда могут отличаться в зависимости от орудия."
 
+msgid "moduleInfo/autoReloadDualGunLabel"
+msgstr "Спаренная установка с системой дозарядки"
+
+msgid "moduleInfo/autoReloadDualGunWithoutResetReloadLabel"
+msgstr ""
+"Спаренная установка с системой дозарядки.\n"
+"Процесс заряжания одного орудия не прерывается во время выстрела из другого."
+
 msgid "moduleInfo/autoReloadGunLabel"
 msgstr "Система дозарядки магазина"
 
@@ -4497,6 +4522,14 @@ msgstr ""
 
 msgid "moduleInfo/autoShootFlameGunLabel"
 msgstr "Огнемётная безмагазинная система"
+
+msgid "moduleInfo/clipDualGunLabel"
+msgstr "Спаренная установка с системой заряжания"
+
+msgid "moduleInfo/clipDualGunWithoutResetReloadLabel"
+msgstr ""
+"Спаренная установка с системой заряжания.\n"
+"Процесс заряжания одного орудия не прерывается во время выстрела из другого."
 
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазинная система заряжания"
@@ -4681,6 +4714,9 @@ msgstr "Мощность двигателя"
 
 msgid "moduleInfo/params/enginePowerPerTon"
 msgstr "К удельной мощности (л.с./т) "
+
+msgid "moduleInfo/params/explosionDelay"
+msgstr "Таймер детонации"
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радиус поражения"
@@ -5101,29 +5137,29 @@ msgstr ""
 
 msgid "premium/bonus"
 msgstr ""
-"Кредитов и опыта\n"
+"Серебра и опыта\n"
 "за каждый бой"
 
 msgid "premium/buyMessage"
-msgstr "Купить премиум аккаунт"
+msgstr "Купить Премиум аккаунт"
 
 msgid "premium/buyTitle"
-msgstr "Покупка премиум аккаунта"
+msgstr "Покупка Премиум аккаунта"
 
 msgid "premium/cancel"
 msgstr "Отменить"
 
 msgid "premium/continueMessage"
-msgstr "Продлить премиум аккаунт"
+msgstr "Продлить Премиум аккаунт"
 
 msgid "premium/continueTitle"
-msgstr "Продление премиум аккаунта"
+msgstr "Продление Премиум аккаунта"
 
 msgid "premium/gold"
 msgstr "золота"
 
 msgid "premium/ofCreditsAndExperience"
-msgstr "кредитов и опыта"
+msgstr "серебра и опыта"
 
 msgid "premium/packet/days1"
 msgstr "1 день"
@@ -5151,13 +5187,13 @@ msgstr "90 дней"
 
 msgid "premium/packet/longDescriptionSpecial"
 msgstr ""
-"Наличие премиум аккаунта позволяет вам быстрее развиваться в игре, "
-"обеспечивая дополнительный заработок кредитов и опыта. Премиум аккаунт един "
+"Наличие Премиум аккаунта позволяет вам быстрее развиваться в игре, "
+"обеспечивая дополнительный заработок серебра и опыта. Премиум аккаунт един "
 "для Мира танков и Мира кораблей, поэтому, покупая его для одной игры, вы "
 "автоматически получаете его в другой."
 
 msgid "premium/packet/shortDescriptionSpecial"
-msgstr "+50% к опыту, кредитам и опыту экипажа за бой"
+msgstr "+50% к опыту, серебру и опыту экипажа за бой"
 
 msgid "premium/perEverButtle"
 msgstr "за каждый бой"
@@ -5190,7 +5226,7 @@ msgid "premium/periods/days90"
 msgstr "На 3 месяца (90 дней)"
 
 msgid "premium/promoMessage"
-msgstr "Даёт на 50% больше кредитов и на 50% больше опыта за каждый бой."
+msgstr "Даёт на 50% больше серебра и на 50% больше опыта за каждый бой."
 
 msgid "premium/submitBuy"
 msgstr "Купить"
@@ -5211,7 +5247,7 @@ msgid "price/bpcoin"
 msgstr "жетонов Боевого пропуска"
 
 msgid "price/credits"
-msgstr "кредитов"
+msgstr "серебра"
 
 msgid "price/crystal"
 msgstr "бон"
@@ -5244,7 +5280,7 @@ msgid "profile/creationTime"
 msgstr "Создан:"
 
 msgid "profile/credits"
-msgstr "Кредиты:"
+msgstr "Серебро:"
 
 msgid "profile/crystal"
 msgstr "Боны:"
@@ -5319,7 +5355,7 @@ msgid "profile/premiumBuy"
 msgstr "Купить премиум"
 
 msgid "profile/premiumContinue"
-msgstr "Продлить премиум аккаунт"
+msgstr "Продлить Премиум аккаунт"
 
 msgid "profile/premiunExpirationDate"
 msgstr "Истекает %s"
@@ -5552,7 +5588,7 @@ msgid "research/labels/vehXP"
 msgstr "Боевой опыт"
 
 msgid "research/premium/benefits/first"
-msgstr "Больше кредитов за каждый бой"
+msgstr "Больше серебра за каждый бой"
 
 msgid "research/premium/benefits/fourth"
 msgstr "Перевод боевого опыта в свободный с первого боя"
@@ -6039,7 +6075,7 @@ msgid "shop/menu/vehicle/name"
 msgstr "Техника"
 
 msgid "shop/menu/vehicle/obtainingType/restoreVehicle/name"
-msgstr "Восстановление за кредиты"
+msgstr "Восстановление за серебро"
 
 msgid "shop/menu/vehicle/obtainingType/tradeInVehicle/name"
 msgstr "Обмен техники"
@@ -6520,6 +6556,9 @@ msgstr "Мощность двигателя"
 msgid "tank_params/enginePowerPerTon"
 msgstr "Удельная мощность"
 
+msgid "tank_params/explosionDelay"
+msgstr "Таймер детонации"
+
 msgid "tank_params/explosionRadius"
 msgstr "Радиус поражения"
 
@@ -6978,7 +7017,7 @@ msgstr "Создать комнату"
 
 msgid "training/description"
 msgstr ""
-"Опыт и кредиты в Тренировочных боях не начисляются, однако всё обслуживание "
+"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
 "техники полностью бесплатное."
 
 msgid "training/info/deleteButton"

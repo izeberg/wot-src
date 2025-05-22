@@ -1379,11 +1379,6 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/HB_category)
-				<name>HB24Category</name>
-				<type>url</type>
-			</item>
-			<item>
 				$PARAMS(/comp7_category)
 				<name>comp7Products</name>
 				<type>url</type>
@@ -1432,12 +1427,12 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/16BPContentPage/
+				/$LANGUAGE_CODE/promocontent/17BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/16BPContentPage/
+				/$LANGUAGE_CODE/promocontent/17BPContentPage/
 				<name>extraInfoPage</name>
 				<type>url</type>
 			</item>
@@ -1964,7 +1959,7 @@
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>shopIntro</value>
+										<value>shop</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2076,18 +2071,6 @@
 						<type>url</type>
 					</item>
 				</value>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>infoPageHistoricalBattles</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/PVEventMay25/
-				<name>default</name>
-				<type>url</type>
 			</item>
 		</value>
 	</setting>

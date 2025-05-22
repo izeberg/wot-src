@@ -3534,7 +3534,17 @@ RECORDS = (
  (
   'singleAchievements', 'hb25MedalOffence', 'p', 'B', 1),
  (
-  'singleAchievements', 'hb25MedalDefence', 'p', 'B', 1))
+  'singleAchievements', 'hb25MedalDefence', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BattlePassCommonPr_17', 'p', 'B', 1),
+ (
+  'singleAchievements', 'support_2025', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_4_4', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_4_4_champion', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_4_4_legend', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5303,7 +5313,12 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'bob2025Jove'): 31127, 
    ('singleAchievements', 'BattlePassCommonPr_16_Marathon'): 31128, 
    ('singleAchievements', 'hb25MedalOffence'): 31129, 
-   ('singleAchievements', 'hb25MedalDefence'): 31130}
+   ('singleAchievements', 'hb25MedalDefence'): 31130, 
+   ('singleAchievements', 'support_2025'): 31131, 
+   ('singleAchievements', 'BattlePassCommonPr_17'): 31132, 
+   ('singleAchievements', 'comp7_4_4'): 31133, 
+   ('singleAchievements', 'comp7_4_4_champion'): 31134, 
+   ('singleAchievements', 'comp7_4_4_legend'): 31135}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

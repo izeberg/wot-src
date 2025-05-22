@@ -88,7 +88,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>8.416441 4.208220 0.000000 0.000000</Vector4>
+						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -143,10 +143,6 @@
 						colorIdMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_ID.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
 				</material>
 				<groupOrigin>0.008750 0.155621 -1.793599</groupOrigin>
 			</primitiveGroup>
@@ -157,11 +153,6 @@
 		<min>-1.009120 -0.752548 -1.559143</min>
 		<max>1.026620 1.063789 5.146340</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>tank_guns</identifier>
-		</material>
-	</missingBspMaterial>
 	<geometrySize>777330</geometrySize>
 	<minUVDensity>0.013969</minUVDensity>
 </root>

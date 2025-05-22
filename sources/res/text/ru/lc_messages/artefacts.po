@@ -1930,7 +1930,7 @@ msgstr "?empty?"
 
 msgid "poi_minefield/descr"
 msgstr ""
-"На следующие {colorTagOpen}%(duration)d с{colorTagClose} в указанной области будут размещено минное поле размером {colorTagOpen}%(width)d м{colorTagClose} × {colorTagOpen}%(length)d м{colorTagClose}. Мины при детонации повреждают технику противника и оглушают экипаж.\n"
+"На следующие {colorTagOpen}%(duration)d с{colorTagClose} в указанной области будет размещено минное поле размером {colorTagOpen}%(width)d м{colorTagClose} × {colorTagOpen}%(length)d м{colorTagClose}. Мины при детонации повреждают технику противника и оглушают экипаж.\n"
 "Всего на поле {colorTagOpen}%(count)d мин{colorTagClose}.\n"
 "Время до активации минного поля после его размещения: {colorTagOpen}%(delay)d с{colorTagClose}."
 
@@ -2253,6 +2253,15 @@ msgstr "Только для техники Великобритании."
 
 msgid "ration_uk/short_special"
 msgstr "Повышает эффективность британских экипажей"
+
+msgid "recoil_recuperator/descr"
+msgstr ""
+"При активации увеличивает скорость, мощность двигателя, изменяет "
+"стабилизацию, снижает задержку для подготовки залпа и уменьшает время штрафа"
+" после залпа."
+
+msgid "recoil_recuperator/name"
+msgstr "Рекуператор отката"
 
 msgid "recon/longDescr"
 msgstr ""
@@ -3068,6 +3077,38 @@ msgstr "Улучшенный ДТК"
 
 msgid "role_XI_MBT_B_pair_5_2/splitName"
 msgstr "Улучшенный ДТК"
+
+msgid "role_XI_Mausekonig_pair_4_1/name"
+msgstr "Откидные дефлекторы"
+
+msgid "role_XI_Mausekonig_pair_4_1/splitName"
+msgstr ""
+"Откидные\n"
+"дефлекторы"
+
+msgid "role_XI_Mausekonig_pair_4_2/name"
+msgstr "Усиленные агрегаты"
+
+msgid "role_XI_Mausekonig_pair_4_2/splitName"
+msgstr ""
+"Усиленные\n"
+"агрегаты"
+
+msgid "role_XI_Mausekonig_pair_5_1/name"
+msgstr "Повышение давления топлива"
+
+msgid "role_XI_Mausekonig_pair_5_1/splitName"
+msgstr ""
+"Повышение\n"
+"давления топлива"
+
+msgid "role_XI_Mausekonig_pair_5_2/name"
+msgstr "Сосредоточенный огонь"
+
+msgid "role_XI_Mausekonig_pair_5_2/splitName"
+msgstr ""
+"Сосредоточенный\n"
+"огонь"
 
 msgid "role_XI_pair_1_1/name"
 msgstr "Усиленная перегородка МТО"

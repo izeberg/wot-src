@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>10.000001</duration>
+	<duration>7.833334</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -9,7 +9,7 @@
 	<sequenceObject>
 		<name>stg_09_cooling_system</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Ch74_WZ_57_I/normal/lod0/stg_09_cooling_system_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_9_transmission_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>material property float</name>
@@ -67,74 +67,14 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_09_fuel_tank</name>
-		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Ch74_WZ_57_I/normal/lod0/stg_09_fuel_tanks_xray.model</resource>
-		<castsShadow>false</castsShadow>
-		<track>
-			<name>material property float</name>
-			<type>float</type>
-			<identifier>s_nd0</identifier>
-			<property>g_spawnStage</property>
-			<frame>
-				<startTime>3.166667</startTime>
-				<value>0.000000</value>
-				<inTangent>0.000000</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.200000</startTime>
-				<value>0.000000</value>
-				<inTangent>0.202703</inTangent>
-				<outTangent>0.202703</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>6.666667</startTime>
-				<value>1.000000</value>
-				<inTangent>0.202703</inTangent>
-				<outTangent>0.202703</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>7.000000</startTime>
-				<value>1.000000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>-0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>s_nd0</identifier>
-			<property>g_glowColor</property>
-			<frame>
-				<startTime>7.000000</startTime>
-				<value>0.901961 0.207843 0.000000 1.000000</value>
-				<inTangent>-0.111111 0.120261 0.189542 0.000000</inTangent>
-				<outTangent>-0.111111 0.120261 0.189542 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>10.000001</startTime>
-				<value>0.568627 0.568627 0.568627 1.000000</value>
-				<inTangent>-0.111111 0.120261 0.189542 -0.000000</inTangent>
-				<outTangent>-0.111111 0.120261 0.189542 -0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Sound 0</name>
+		<name>Stage_09</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>6.966667</duration>
+				<duration>6.833334</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -143,19 +83,19 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<value>-0.819140 1.417596 -2.082298</value>
+				<value>0.000000 0.856211 -3.337273</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>Sound</name>
+			<name>ay_ep_06_seq_stage_09</name>
 			<type>sound</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>6.453125</duration>
-				<sequenceSound>ay_ep_05_seq_stage_09</sequenceSound>
+				<duration>6.800000</duration>
+				<sequenceSound>ay_ep_06_seq_stage_09</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

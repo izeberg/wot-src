@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.300000 -0.078857 -0.092770</min>
+		<max>0.300000 0.070000 0.092770</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/french/F131_Coutelas/track/segment</nodelessVisual>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+</root>

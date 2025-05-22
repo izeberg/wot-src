@@ -41,5 +41,7 @@ package net.wg.infrastructure.base.meta
       function as_setTimerVisible(param1:Boolean) : void;
       
       function as_setChangeGunTweenProps(param1:int, param2:int) : void;
+      
+      function as_setClipParams(param1:int) : void;
    }
 }

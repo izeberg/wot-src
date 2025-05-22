@@ -531,28 +531,28 @@ class SettingsCore(ISettingsCore):
           options.SettingTrueByDefault(DAMAGE_INDICATOR.PRESET_CRITS, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
          (
           DAMAGE_INDICATOR.PRESET_ALLIES,
-          options.SettingTrueByDefault(DAMAGE_INDICATOR.PRESET_ALLIES, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
+          options.SettingFalseByDefault(DAMAGE_INDICATOR.PRESET_ALLIES, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
          (
           DAMAGE_INDICATOR.DAMAGE_VALUE,
-          options.SettingFalseByDefault(DAMAGE_INDICATOR.DAMAGE_VALUE, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(DAMAGE_INDICATOR.DAMAGE_VALUE, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
          (
           DAMAGE_INDICATOR.VEHICLE_INFO,
-          options.SettingFalseByDefault(DAMAGE_INDICATOR.VEHICLE_INFO, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(DAMAGE_INDICATOR.VEHICLE_INFO, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
          (
           DAMAGE_INDICATOR.ANIMATION,
           options.SettingFalseByDefault(DAMAGE_INDICATOR.ANIMATION, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
          (
           DAMAGE_INDICATOR.DYNAMIC_INDICATOR,
-          options.SettingFalseByDefault(DAMAGE_INDICATOR.DYNAMIC_INDICATOR, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(DAMAGE_INDICATOR.DYNAMIC_INDICATOR, storage=DAMAGE_INDICATOR_SETTINGS_STORAGE)),
          (
           DAMAGE_LOG.TOTAL_DAMAGE,
-          options.SettingFalseByDefault(DAMAGE_LOG.TOTAL_DAMAGE, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(DAMAGE_LOG.TOTAL_DAMAGE, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
          (
           DAMAGE_LOG.BLOCKED_DAMAGE,
-          options.SettingFalseByDefault(DAMAGE_LOG.BLOCKED_DAMAGE, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(DAMAGE_LOG.BLOCKED_DAMAGE, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
          (
           DAMAGE_LOG.ASSIST_DAMAGE,
-          options.SettingFalseByDefault(DAMAGE_LOG.ASSIST_DAMAGE, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(DAMAGE_LOG.ASSIST_DAMAGE, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
          (
           DAMAGE_LOG.ASSIST_STUN,
           options.BattleEventsSetting(DAMAGE_LOG.ASSIST_STUN, storage=DAMAGE_LOG_SETTINGS_STORAGE, delegate=_getStunSwitch)),
@@ -567,61 +567,61 @@ class SettingsCore(ISettingsCore):
           options.DamageLogEventPositionsSetting(DAMAGE_LOG.EVENT_POSITIONS, storage=DAMAGE_LOG_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.SHOW_IN_BATTLE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.SHOW_IN_BATTLE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.SHOW_IN_BATTLE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_HP_DAMAGE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_HP_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_HP_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_BURNING,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_BURNING, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_BURNING, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_RAM_ATTACK,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_RAM_ATTACK, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_RAM_ATTACK, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.BLOCKED_DAMAGE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.BLOCKED_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.BLOCKED_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_DETECTION_DAMAGE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_DETECTION_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_DETECTION_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_TRACK_DAMAGE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_TRACK_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_TRACK_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_DETECTION,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_DETECTION, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_DETECTION, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_KILL,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_KILL, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_KILL, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.BASE_CAPTURE_DROP,
-          options.SettingFalseByDefault(BATTLE_EVENTS.BASE_CAPTURE_DROP, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.BASE_CAPTURE_DROP, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.BASE_CAPTURE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.BASE_CAPTURE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.BASE_CAPTURE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_CRITICAL_HIT,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_CRITICAL_HIT, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_CRITICAL_HIT, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.EVENT_NAME,
-          options.SettingFalseByDefault(BATTLE_EVENTS.EVENT_NAME, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.EVENT_NAME, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.VEHICLE_INFO,
-          options.SettingFalseByDefault(BATTLE_EVENTS.VEHICLE_INFO, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.VEHICLE_INFO, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_WORLD_COLLISION,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMY_WORLD_COLLISION, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMY_WORLD_COLLISION, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.RECEIVED_DAMAGE,
-          options.SettingFalseByDefault(BATTLE_EVENTS.RECEIVED_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.RECEIVED_DAMAGE, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.RECEIVED_CRITS,
-          options.SettingFalseByDefault(BATTLE_EVENTS.RECEIVED_CRITS, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.RECEIVED_CRITS, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_EVENTS.ENEMY_ASSIST_STUN,
           options.BattleEventsSetting(BATTLE_EVENTS.ENEMY_ASSIST_STUN, storage=BATTLE_EVENTS_SETTINGS_STORAGE, delegate=_getStunSwitch)),
          (
           BATTLE_EVENTS.ENEMIES_STUN,
-          options.SettingFalseByDefault(BATTLE_EVENTS.ENEMIES_STUN, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(BATTLE_EVENTS.ENEMIES_STUN, storage=BATTLE_EVENTS_SETTINGS_STORAGE)),
          (
           BATTLE_BORDER_MAP.MODE_SHOW_BORDER,
           options.BattleBorderMapModeShow(BATTLE_BORDER_MAP.MODE_SHOW_BORDER, storage=BATTLE_BORDER_MAP_SETTINGS_STORAGE)),
@@ -660,13 +660,13 @@ class SettingsCore(ISettingsCore):
           options.SettingTrueByDefault(BATTLE_COMM.SHOW_LOCATION_MARKERS, storage=BATTLE_COMM_SETTINGS_STORAGE)),
          (
           SCORE_PANEL.SHOW_HP_VALUES,
-          options.SettingFalseByDefault(SCORE_PANEL.SHOW_HP_VALUES, storage=BATTLE_HUD_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(SCORE_PANEL.SHOW_HP_VALUES, storage=BATTLE_HUD_SETTINGS_STORAGE)),
          (
           SCORE_PANEL.SHOW_HP_DIFFERENCE,
           options.SettingFalseByDefault(SCORE_PANEL.SHOW_HP_DIFFERENCE, storage=BATTLE_HUD_SETTINGS_STORAGE)),
          (
           SCORE_PANEL.ENABLE_TIER_GROUPING,
-          options.SettingFalseByDefault(SCORE_PANEL.ENABLE_TIER_GROUPING, storage=BATTLE_HUD_SETTINGS_STORAGE)),
+          options.SettingTrueByDefault(SCORE_PANEL.ENABLE_TIER_GROUPING, storage=BATTLE_HUD_SETTINGS_STORAGE)),
          (
           SCORE_PANEL.SHOW_HP_BAR,
           options.SettingTrueByDefault(SCORE_PANEL.SHOW_HP_BAR, storage=BATTLE_HUD_SETTINGS_STORAGE))))

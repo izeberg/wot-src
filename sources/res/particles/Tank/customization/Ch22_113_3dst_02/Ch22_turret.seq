@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>5.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Turret</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/Ch22_113_3dst_02/Ch22_Turret.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>0.494118 0.000000 0.000000 0.298039</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>0.494118 0.000000 0.000000 0.298039</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>opacity_UV_Distortion_Amount</property>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>-0.500000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.168000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>-0.168000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>-1.200000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.168000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.168000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

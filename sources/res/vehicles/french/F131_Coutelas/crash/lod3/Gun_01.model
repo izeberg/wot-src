@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Coutelas/crash/lod3/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F131_Coutelas/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.486344 -0.415919 -1.440461</min>
+		<max>0.489721 0.486800 4.871611</max>
+	</visibilityBox>
+</root>

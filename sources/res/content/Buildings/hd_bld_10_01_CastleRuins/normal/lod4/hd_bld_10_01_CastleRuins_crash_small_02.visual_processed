@@ -35,23 +35,7 @@
 						<Texture>content/Buildings/hd_bld_10_01_CastleRuins/hd_bld_10_01_CastleRuins_crash_small_02_BGMM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -60,7 +44,7 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.280138 -2.964975 -4.729144</min>
+		<min>-1.254788 -2.964975 -4.729144</min>
 		<max>1.299562 2.964975 4.697584</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

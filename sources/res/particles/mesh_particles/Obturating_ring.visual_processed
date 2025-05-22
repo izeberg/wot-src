@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>Obturating</identifier>
-					<fx>shaders/wg_particles/pbs_mesh_particles.fx</fx>
+					<fx>shaders/particles/pbs_mesh_particles.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>

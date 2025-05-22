@@ -1184,6 +1184,7 @@ class QUESTS(object):
     TOKEN_DEFAULT_ITALY = '#quests:token/default/italy'
     TOKEN_DEFAULT_INTUNION = '#quests:token/default/intunion'
     TOKEN_DEFAULT_WOT = '#quests:token/default/wot'
+    TOKEN_DEFAULT_DEFAULT = '#quests:token/default/default'
     TOKEN_DEFAULT_LIGHTTANK = '#quests:token/default/lightTank'
     TOKEN_DEFAULT_MEDIUMTANK = '#quests:token/default/mediumTank'
     TOKEN_DEFAULT_HEAVYTANK = '#quests:token/default/heavyTank'
@@ -1836,6 +1837,7 @@ class QUESTS(object):
      TOKEN_DEFAULT_ITALY,
      TOKEN_DEFAULT_INTUNION,
      TOKEN_DEFAULT_WOT,
+     TOKEN_DEFAULT_DEFAULT,
      TOKEN_DEFAULT_LIGHTTANK,
      TOKEN_DEFAULT_MEDIUMTANK,
      TOKEN_DEFAULT_HEAVYTANK,

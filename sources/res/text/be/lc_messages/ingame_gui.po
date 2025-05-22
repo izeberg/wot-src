@@ -278,12 +278,6 @@ msgstr "Рухаюся на пазіцыю!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Рухаюся ў %(gridId)s"
 
-msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
-msgstr "Выклікаю агонь на сябе!"
-
-msgid "chat_shortcuts/hb_ability/last_stand"
-msgstr "Б'емся да канца!"
-
 msgid "chat_shortcuts/help_me"
 msgstr "Патрэбна дапамога!"
 
@@ -679,9 +673,6 @@ msgstr "Пашкоджанні артылерыйскім абстрэлам"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Пашкоджанні гарматай"
 
-msgid "efficiencyRibbons/HBDeathZone"
-msgstr "Пашкоджанні ад забароненай зоны"
-
 msgid "efficiencyRibbons/armor"
 msgstr "Блакіраванне пашкоджанняў"
 
@@ -750,9 +741,6 @@ msgstr "Цэль абаронена"
 
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захоплена"
-
-msgid "efficiencyRibbons/eventDeathOnPhaseChange"
-msgstr "Машына знішчана"
 
 msgid "efficiencyRibbons/kill"
 msgstr "Знішчыў"
@@ -875,7 +863,7 @@ msgid "flags/timer"
 msgstr "%(time)s з..."
 
 msgid "fortConsumables/timer/postfix"
-msgstr "c"
+msgstr "с..."
 
 msgid "helpScreen/hint/description"
 msgstr ", каб азнаёміцца з асаблівасцямі машыны"
@@ -1699,11 +1687,6 @@ msgstr ""
 "Esc > Вярнуцца ў Гараж.\n"
 "Уступіце ў новы бой на іншай машыне."
 
-msgid "postmortem/tips/exitHangar/text_hb"
-msgstr ""
-"Esc > Выйсці ў Гараж.\n"
-"Паспрабуйце свае сілы ў новым баі!"
-
 msgid "postmortem/tips/observerMode/label"
 msgstr "Рэжым назіральніка"
 
@@ -2157,14 +2140,14 @@ msgstr "Так!"
 
 msgid "rewardWindow/piggyBank/descText"
 msgstr ""
-"Назапашванне крэдытаў прыпынена. Працягніце прэміум акаўнт, каб далей "
-"папаўняць сховішча крэдытаў."
+"Накопление серебра приостановлено. Продлите премиум аккаунт, чтобы "
+"продолжить пополнение хранилища серебра."
 
 msgid "rewardWindow/piggyBank/headerText"
-msgstr "Крэдыты атрыманы"
+msgstr "Серебро получено"
 
 msgid "rewardWindow/piggyBank/subHeaderText"
-msgstr "Сховішча крэдытаў адчынена"
+msgstr "Хранилище серебра открыто"
 
 msgid "rewardWindow/piggyBank/winHeaderText"
 msgstr "Віншуем!"
@@ -2794,6 +2777,9 @@ msgstr "Пашкоджанні за секунду: %(value)s адз."
 msgid "shells_kinds/params/damageRange"
 msgstr "Пашкоджанні снарада: %(value)s адз."
 
+msgid "shells_kinds/params/explosionDelay"
+msgstr "Таймер детонации: %(value)s с"
+
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"
 
@@ -2894,7 +2880,7 @@ msgid "statistics/final/reasons/reason3"
 msgstr "Час бою скончыўся."
 
 msgid "statistics/final/stats/credits"
-msgstr "Крэдыты:"
+msgstr "Серебро:"
 
 msgid "statistics/final/stats/experience"
 msgstr "Досвед:"

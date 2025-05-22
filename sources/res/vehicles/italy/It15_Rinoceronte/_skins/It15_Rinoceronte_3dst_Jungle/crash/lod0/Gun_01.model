@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/crash/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.321977 -0.428924 -2.186064</min>
+		<max>0.323328 0.456347 5.077981</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

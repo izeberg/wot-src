@@ -933,10 +933,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_PIECES:String = "#messenger:serviceChannelMessages/invoiceReceived/pieces";
       
-      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_FORMAT_ITEMS_DEFAULT:String = "#messenger:serviceChannelMessages/invoiceReceived/format/items/default";
-      
-      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_FORMAT_ITEMS_CREWBOOK:String = "#messenger:serviceChannelMessages/invoiceReceived/format/items/crewBook";
-      
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_RENTDAYS:String = "#messenger:serviceChannelMessages/invoiceReceived/rentDays";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_CREWONVEHICLE:String = "#messenger:serviceChannelMessages/invoiceReceived/crewOnVehicle";
@@ -2245,6 +2241,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLEMATTERS_AWARDS_RECEIVED:String = "#messenger:serviceChannelMessages/battleMatters/awards/received";
       
+      public static const SERVICECHANNELMESSAGES_BATTLEMATTERS_AWARDS_RECEIVED_BUTTON:String = "#messenger:serviceChannelMessages/battleMatters/awards/received/button";
+      
       public static const SERVICECHANNELMESSAGES_BATTLEMATTERS_TASKREMINDER_TITLE:String = "#messenger:serviceChannelMessages/battleMatters/taskReminder/title";
       
       public static const SERVICECHANNELMESSAGES_BATTLEMATTERS_TASKREMINDER_BODY:String = "#messenger:serviceChannelMessages/battleMatters/taskReminder/body";
@@ -2254,6 +2252,10 @@ package
       public static const PLATFORMCURRENCYMSG_RECEIVED_SACOIN:String = "#messenger:platformCurrencyMsg/received/sacoin";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_SACOIN:String = "#messenger:platformCurrencyMsg/debited/sacoin";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_SUMMERGAMES_COIN:String = "#messenger:platformCurrencyMsg/received/summergames_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_SUMMERGAMES_COIN:String = "#messenger:platformCurrencyMsg/debited/summergames_coin";
       
       public static const PLATFORMCURRENCYMSG_RECEIVED_BPBIT:String = "#messenger:platformCurrencyMsg/received/bpbit";
       

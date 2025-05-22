@@ -169,7 +169,7 @@ msgstr ""
 "Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Памылковая машына."
 
 msgid "artefact_buy/not_enough_credits"
-msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+msgstr "Покупка %(kind)s «%(name)s» не удалась. Недостаточно серебра."
 
 msgid "artefact_buy/not_enough_crystal"
 msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала бонаў."
@@ -311,7 +311,7 @@ msgid "battleAbilities_apply/error"
 msgstr "Памылка наладжвання баявых рэзерваў. Паспрабуйце яшчэ раз пазней."
 
 msgid "battleBooster_buy/credits_error"
-msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+msgstr "Покупка %(kind)s «%(name)s» не удалась. Недостаточно серебра."
 
 msgid "battleBooster_buy/crystal_error"
 msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала бонаў."
@@ -333,7 +333,7 @@ msgstr ""
 "Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Памылковая машына."
 
 msgid "battleBooster_buy/not_enough_credits"
-msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+msgstr "Покупка %(kind)s «%(name)s» не удалась. Недостаточно серебра."
 
 msgid "battleBooster_buy/not_enough_crystal"
 msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала бонаў."
@@ -622,7 +622,8 @@ msgstr ""
 "%(time)s."
 
 msgid "booster_buy/not_enough_credits"
-msgstr "Не ўдалося купіць асабісты рэзерв «%(boosterName)s». Замала крэдытаў."
+msgstr ""
+"Покупка личного резерва «%(boosterName)s» не удалась. Недостаточно серебра."
 
 msgid "booster_buy/not_enough_gold"
 msgstr "Не ўдалося купіць асабісты рэзерв «%(boosterName)s». Замала золата."
@@ -679,7 +680,8 @@ msgid "buy_and_equip_tankman/invalid_vehicle"
 msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Памылковая машына."
 
 msgid "buy_and_equip_tankman/not_enough_credits"
-msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Замала крэдытаў."
+msgstr ""
+"Рекрутирование и пересадка члена экипажа не выполнены. Недостаточно серебра."
 
 msgid "buy_and_equip_tankman/not_enough_gold"
 msgstr "Не ўдалося рэкрутаваць і перавесці танкіста. Замала золата."
@@ -707,7 +709,8 @@ msgid "buy_and_reequip_tankman/invalid_vehicle"
 msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Памылковая машына."
 
 msgid "buy_and_reequip_tankman/not_enough_credits"
-msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Замала крэдытаў."
+msgstr ""
+"Рекрутирование и замена члена экипажа не выполнены. Недостаточно серебра."
 
 msgid "buy_and_reequip_tankman/not_enough_gold"
 msgstr "Не ўдалося рэкрутаваць і замяніць танкіста. Замала золата."
@@ -737,8 +740,8 @@ msgstr "Не ўдалося здзейсніць закуп. Паспрабуй�
 
 msgid "buy_tankmen_berths/credits/success"
 msgstr ""
-"Жаўнерня пашырана.\n"
-"Патрачана крэдытаў: %(money)s."
+"Казарма расширена.\n"
+"Потрачено серебра: %(money)s."
 
 msgid "buy_tankmen_berths/gold/success"
 msgstr ""
@@ -800,10 +803,10 @@ msgid "change_tankman_role/wallet_not_available"
 msgstr "Не ўдалося змяніць спецыяльнасць. Паспрабуйце пазней."
 
 msgid "charge/credits_error"
-msgstr "Не стае %s крэдытаў і %s золата. Загрузіце боезапас уручную."
+msgstr "Не хватает %s серебра и %s золота. Установите боекомплект вручную."
 
 msgid "charge/credits_error_credits"
-msgstr "Не стае %s крэдытаў. Загрузіце боезапас уручную."
+msgstr "Не хватает %s серебра. Установите боекомплект вручную."
 
 msgid "charge/credits_error_gold"
 msgstr "Не стае %s золата. Загрузіце боезапас уручную."
@@ -1110,7 +1113,7 @@ msgstr ""
 msgid "crewBooks_buy/success"
 msgstr ""
 "%(name)s (%(count)s шт.).\n"
-"Выдаткавана крэдытаў: %(money)s."
+"Потрачено серебра: %(money)s."
 
 msgid "crewBooks_sell/server_error"
 msgstr ""
@@ -1120,7 +1123,7 @@ msgstr ""
 msgid "crewBooks_sell/success"
 msgstr ""
 "%(name)s (%(count)s шт.).\n"
-"Атрымана крэдытаў %(money)s."
+"Получено серебра: %(money)s."
 
 msgid "crewSkinsNotification/SkinChanged"
 msgstr "Аблічча танкіста зменена."
@@ -1198,10 +1201,10 @@ msgid "customization/added/styleValue"
 msgstr "Стыль «%s» дададзены (×%s)"
 
 msgid "customization/credits_and_gold_not_enough"
-msgstr "Нельга змяніць выгляд машыны. Замала крэдытаў і золата."
+msgstr "Изменение внешнего вида невозможно. Недостаточно серебра и золота."
 
 msgid "customization/credits_not_enough"
-msgstr "Нельга змяніць выгляд машыны. Замала крэдытаў."
+msgstr "Изменение внешнего вида невозможно. Недостаточно серебра."
 
 msgid "customization/currency_not_enough"
 msgstr "Замала валюты для набыцця тавару."
@@ -1338,8 +1341,8 @@ msgstr "Штотыднёвая задача зноў даступная"
 
 msgid "daily_quests/notification/epic_quest/body"
 msgstr ""
-"Штодзённыя задачы былі абноўлены, увесь назапашаны раней прагрэс скінуты. "
-"Налічана кампенсацыя за страту прагрэсу ў ланцужку штодзённых задач."
+"Ежедневные задачи были обновлены, весь накопленный ранее прогресс сброшен. "
+"Начислена компенсация за потерю прогресса по цепочке ежедневных задач."
 
 msgid "daily_quests/notification/epic_quest/compensation"
 msgstr "Кампенсацыя:"
@@ -1494,8 +1497,8 @@ msgstr "Акаўнт не гатовы (DOSSIERS_UNAVAILABLE)"
 
 msgid "drop_tankman_skill/finance_success_credits"
 msgstr ""
-"Усе навыкі скінуты.\n"
-"Патрачана крэдытаў: %(money)s."
+"Все навыки сброшены.\n"
+"Потрачено серебра: %(money)s."
 
 msgid "drop_tankman_skill/finance_success_gold"
 msgstr ""
@@ -2179,7 +2182,8 @@ msgstr ""
 
 msgid "layout_apply/EQS_NO_CREDITS"
 msgstr ""
-"Памылка абслугоўвання «%(vehName)s». Замала крэдытаў, каб купіць рыштунак."
+"Ошибка при обслуживании «%(vehName)s». Недостаточно серебра для покупки "
+"снаряжения."
 
 msgid "layout_apply/EQS_NO_CRYSTAL"
 msgstr ""
@@ -2204,7 +2208,8 @@ msgstr "Памылка абслугоўвання «%(vehName)s». Памылк�
 
 msgid "layout_apply/SHELLS_NO_CREDITS"
 msgstr ""
-"Памылка абслугоўвання «%(vehName)s». Замала крэдытаў, каб купіць снарады."
+"Ошибка при обслуживании «%(vehName)s». Недостаточно серебра для покупки "
+"снарядов."
 
 msgid "layout_apply/SHELLS_NO_GOLD"
 msgstr ""
@@ -2251,7 +2256,7 @@ msgid "learn_tankman_free_skill/vehicle_need_repair"
 msgstr "«Нулявая» звычка не засвоеная: патрэбна адрамантаваць машыну."
 
 msgid "limitedUI/switchOff"
-msgstr "Паступовае з'яўленне схаваных інтэрфейсаў часова адключана."
+msgstr "Поэтапное появление скрытых элементов интерфейса временно отключено."
 
 msgid "limitedUI/switchOn"
 msgstr ""
@@ -2478,7 +2483,7 @@ msgstr ""
 "Не ўдалося купіць і ўсталяваць %(kind)s «%(name)s». Памылковая машына."
 
 msgid "module_buy/not_enough_credits"
-msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала крэдытаў."
+msgstr "Покупка %(kind)s «%(name)s» не удалась. Недостаточно серебра."
 
 msgid "module_buy/not_enough_gold"
 msgstr "Не ўдалося купіць %(kind)s «%(name)s». Замала золата."
@@ -2823,7 +2828,7 @@ msgid "personalMissions/tankmenGain"
 msgstr "Атрымана ў распараджэнне: танкістка"
 
 msgid "piggyBank/piggyBankFull"
-msgstr "Сховішча крэдытаў запоўнена, але адчыніцца праз %(timeValue)s"
+msgstr "Хранилище серебра заполнено, но откроется через %(timeValue)s"
 
 msgid "piggybank/switch_off/body"
 msgstr ""
@@ -2831,13 +2836,13 @@ msgstr ""
 "Выбачайце за нязручнасці."
 
 msgid "piggybank/switch_off/title"
-msgstr "Сховішча крэдытаў часова недаступнае"
+msgstr "Хранилище серебра временно недоступно"
 
 msgid "piggybank/switch_on/body"
 msgstr "Тэхнічныя праблемы вырашаны. Выбачайце за нязручнасці."
 
 msgid "piggybank/switch_on/title"
-msgstr "Сховішча крэдытаў зноў даступнае"
+msgstr "Хранилище серебра снова доступно"
 
 msgid "player_subscriptions/switch_off/body"
 msgstr ""
@@ -3064,8 +3069,8 @@ msgstr "Замала золата, каб купіць прэміум акаўн
 
 msgid "premium/post_battle_premium"
 msgstr ""
-"Дзякуючы куплі прэміум акаўнту вы дадаткова атрымліваеце %(xpDiff)d досведу "
-"і %(creditDiff)d крэдытаў за бой."
+"Благодаря покупке премиум аккаунта вы дополнительно получаете %(xpDiff)d "
+"опыта и %(creditDiff)d серебра за бой."
 
 msgid "premium/server_error"
 msgstr ""
@@ -3166,7 +3171,7 @@ msgid "ranked/notifications/bonusName/badges"
 msgstr "Атрыманы нашыўкі:"
 
 msgid "ranked/notifications/bonusName/credits"
-msgstr "Атрымана крэдытаў:"
+msgstr "Получено серебра:"
 
 msgid "ranked/notifications/bonusName/crystal"
 msgstr "Атрымана бонаў:"
@@ -3259,13 +3264,13 @@ msgstr "Не ўдалося рэкрутаваць танкіста. Гэта п
 
 msgid "recruit_window/financial_success"
 msgstr ""
-"Танкіст рэкрутаваны на машыну %(vehName)s. Выдаткавана крэдытаў: "
+"Член экипажа рекрутирован на машину %(vehName)s. Потрачено серебра: "
 "%(credits)s."
 
 msgid "recruit_window/financial_success_credits"
 msgstr ""
-"Танкіст рэкрутаваны на машыну %(vehName)s.\n"
-"Патрачана крэдытаў: %(price)s."
+"Член экипажа рекрутирован на машину %(vehName)s.\n"
+"Потрачено серебра: %(price)s."
 
 msgid "recruit_window/financial_success_gold"
 msgstr ""
@@ -3276,7 +3281,7 @@ msgid "recruit_window/free_tankmen_limit"
 msgstr "У вас скончыўся сутачны ліміт бясплатных танкістаў."
 
 msgid "recruit_window/not_enough_credits"
-msgstr "Не ўдалося рэкрутаваць танкіста. Замала крэдытаў."
+msgstr "Ошибка рекрутирования члена экипажа. Недостаточно серебра."
 
 msgid "recruit_window/not_enough_gold"
 msgstr "Не ўдалося рэкрутаваць танкіста. Замала золата."
@@ -3336,7 +3341,7 @@ msgid "remove_vehicle_locked"
 msgstr "Не ўдалося выдаліць %s «%s», бо машына заблакавана."
 
 msgid "repair/credits_error"
-msgstr "Каб адрамантаваць «%s», не стае %s крэдытаў."
+msgstr "Не хватает %s серебра на ремонт %s."
 
 msgid "repair/server_error"
 msgstr "Не ўдалося адрамантаваць «%s». Паспрабуйце пазней."
@@ -3405,8 +3410,8 @@ msgstr "%(tankman)s не можа быць адноўлены."
 
 msgid "restore_tankman/financial_success"
 msgstr ""
-"Танкіст адноўлены.\n"
-"Выдаткавана крэдытаў: %(money)s."
+"Член экипажа восстановлен.\n"
+"Потрачено серебра: %(money)s."
 
 msgid "restore_tankman/not_enough_space"
 msgstr "Не ўдалося аднавіць танкіста, бо ў Жаўнерні замала месца."
@@ -3424,7 +3429,7 @@ msgid "retraining_crew/empty_list"
 msgstr "Не ўдалося перавучыць экіпаж, бо танкісты не выбраныя."
 
 msgid "retraining_crew/financial_success_credits"
-msgstr "Патрачана крэдытаў: %(money)s."
+msgstr "Потрачено серебра: %(money)s."
 
 msgid "retraining_crew/financial_success_free"
 msgstr "Экіпаж бясплатна перавучаны на машыну %(vehName)s."
@@ -3455,7 +3460,7 @@ msgstr ""
 "Не ўдалося перавучыць танкіста, бо ў танка ўнікальны пастаянны экіпаж."
 
 msgid "retraining_tankman/financial_success_credits"
-msgstr "Патрачана крэдытаў: %(money)s."
+msgstr "Потрачено серебра: %(money)s."
 
 msgid "retraining_tankman/financial_success_free"
 msgstr "Члена экіпажа бясплатна перавучаны на машыну %(vehName)s."
@@ -3616,7 +3621,7 @@ msgid "shell_buy/invalid_module"
 msgstr "Не ўдалося купіць %(name)s. Памылковы снарад."
 
 msgid "shell_buy/not_enough_credits"
-msgstr "Не ўдалося купіць %(name)s. Замала крэдытаў."
+msgstr "Покупка %(name)s не удалась. Недостаточно серебра."
 
 msgid "shell_buy/not_enough_gold"
 msgstr "Не ўдалося купіць %(name)s. Замала золата."
@@ -3864,7 +3869,7 @@ msgid "telecomMergeResults/body/conjunction"
 msgstr " і "
 
 msgid "telecomMergeResults/body/credits"
-msgstr "%(value)s крэдытаў"
+msgstr "%(value)s серебра"
 
 msgid "telecomMergeResults/body/crewRetrainingMsg"
 msgstr "Усе танкісты экіпажа %(tanks)s перавучаны на Т-44-100 Гульнявы."
@@ -4025,9 +4030,6 @@ msgstr "Нельга змясціць машыну ў слот."
 
 msgid "unit/errors/HAS_IN_ARENA_MEMBERS"
 msgstr "Дзеянне недаступнае. Частка атрада яшчэ ў баі."
-
-msgid "unit/errors/HB_BANNED"
-msgstr "Вы часова адхілены ад баёў у гэтым рэжыме."
 
 msgid "unit/errors/INSUFFICIENT_ROLE"
 msgstr "Вы не маеце правоў, каб выканаць гэту аперацыю."
@@ -4454,7 +4456,7 @@ msgid "vehiclePostProgression/changeSlotCategory/title"
 msgstr "Прызначэнне катэгорыі слота"
 
 msgid "vehiclePostProgression/creditsSpent"
-msgstr "Патрачана крэдытаў: %(value)s."
+msgstr "Потрачено серебра: %(value)s."
 
 msgid "vehiclePostProgression/discardAllPairsModification/body"
 msgstr "Усе парныя мадэрнізацыі для %(vehicle)s скасаваны."
@@ -4541,7 +4543,7 @@ msgid "vehicle_buy/invalid_vehicle"
 msgstr "Не ўдалося купіць «%(vehName)s». Памылковая машына."
 
 msgid "vehicle_buy/not_enough_credits"
-msgstr "Не ўдалося купіць «%(vehName)s». Замала крэдытаў."
+msgstr "Покупка «%(vehName)s» не удалась. Недостаточно серебра."
 
 msgid "vehicle_buy/not_enough_gold"
 msgstr "Не ўдалося купіць «%(vehName)s». Замала золата."
@@ -4572,7 +4574,7 @@ msgid "vehicle_remove/invalid_vehicle"
 msgstr "Не ўдалося выдаліць «%(vehName)s». Памылковая машына."
 
 msgid "vehicle_remove/not_enough_credits"
-msgstr "Не ўдалося выдаліць «%(vehName)s». Замала крэдытаў."
+msgstr "Удаление «%(vehName)s» не удалось. Недостаточно серебра."
 
 msgid "vehicle_remove/not_enough_gold"
 msgstr "Не ўдалося выдаліць «%(vehName)s». Замала золата."
@@ -4622,7 +4624,7 @@ msgid "vehicle_rent/invalid_vehicle"
 msgstr "Не ўдалося ўзяць напракат «%(vehName)s». Памылковая машына."
 
 msgid "vehicle_rent/not_enough_credits"
-msgstr "Не ўдалося ўзяць напракат «%(vehName)s». Замала крэдытаў."
+msgstr "Аренда «%(vehName)s» не удалась. Недостаточно серебра."
 
 msgid "vehicle_rent/not_enough_gold"
 msgstr "Не ўдалося ўзяць напракат «%(vehName)s». Замала золата."
@@ -4673,7 +4675,7 @@ msgid "vehicle_restore/invalid_vehicle"
 msgstr "Не ўдалося аднавіць «%(vehName)s». Памылковая машына."
 
 msgid "vehicle_restore/not_enough_credits"
-msgstr "Не ўдалося аднавіць «%(vehName)s». Замала крэдытаў."
+msgstr "Не удалось восстановить «%(vehName)s». Недостаточно серебра."
 
 msgid "vehicle_restore/not_enough_gold"
 msgstr "Не ўдалося аднавіць «%(vehName)s». Замала золата."
@@ -4714,7 +4716,7 @@ msgid "vehicle_sell/invalid_vehicle"
 msgstr "Не ўдалося прадаць «%(vehName)s». Памылковая машына."
 
 msgid "vehicle_sell/not_enough_credits"
-msgstr "Не ўдалося прадаць «%(vehName)s». Замала крэдытаў."
+msgstr "Продажа «%(vehName)s» не удалась. Недостаточно серебра."
 
 msgid "vehicle_sell/not_enough_gold"
 msgstr "Не ўдалося прадаць «%(vehName)s». Замала золата."
@@ -4762,7 +4764,7 @@ msgstr ""
 "аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
 
 msgid "vehicle_slot_buy/not_enough_credits"
-msgstr "Не ўдалося купіць слот. Замала крэдытаў."
+msgstr "Ошибка покупки слота. Недостаточно серебра."
 
 msgid "vehicle_slot_buy/not_enough_gold"
 msgstr "Не ўдалося купіць слот. Замала золата."
@@ -4782,7 +4784,7 @@ msgid "vehicle_trade_in/invalid_vehicle"
 msgstr "Не ўдалося абмяняць на «%(vehName)s», бо выбрана памылковая машына."
 
 msgid "vehicle_trade_in/not_enough_credits"
-msgstr "Не ўдалося абмяняць на «%(vehName)s». Замала крэдытаў."
+msgstr "Обмен на «%(vehName)s» не удался. Недостаточно серебра."
 
 msgid "vehicle_trade_in/not_enough_gold"
 msgstr "Не ўдалося абмяняць на «%(vehName)s». Замала золата."
@@ -4846,8 +4848,8 @@ msgstr "Памылка прайгравання відэа. Код памылк�
 
 msgid "wallet/available"
 msgstr ""
-"Сінхранізацыя Адзінага Кашалька выканана. Усё ваша золата, боны, крэдыты і "
-"вольны досвед цяпер даступныя."
+"Синхронизация Единого кошелька прошла успешно. Всё ваше золото, боны, "
+"серебро и свободный опыт стали доступны."
 
 msgid "wallet/available_freexp"
 msgstr ""
@@ -4860,8 +4862,8 @@ msgstr ""
 
 msgid "wallet/not_available"
 msgstr ""
-"Атрымліваюцца звесткі пра баланс. Усё ваша золата, боны, крэдыты і вольны "
-"досвед неўзабаве будуць даступныя."
+"Идёт получение данных о балансе. Всё ваше золото, боны, серебро и свободный "
+"опыт станут доступны в ближайшее время."
 
 msgid "wallet/not_available_freexp"
 msgstr ""

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.601797 0.000046 -3.186769</min>
+		<max>1.598282 0.909537 2.933789</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R227_Object_407_MZ/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R227_Object_407_MZ/crash/lod0/Chassis</nodefullVisual>
+</root>

@@ -2373,6 +2373,8 @@ package
       
       public static const TOKEN_DEFAULT_WOT:String = "#quests:token/default/wot";
       
+      public static const TOKEN_DEFAULT_DEFAULT:String = "#quests:token/default/default";
+      
       public static const TOKEN_DEFAULT_LIGHTTANK:String = "#quests:token/default/lightTank";
       
       public static const TOKEN_DEFAULT_MEDIUMTANK:String = "#quests:token/default/mediumTank";

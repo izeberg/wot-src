@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.939742 -0.736032 -3.841756</min>
+		<max>1.739540 1.094946 3.755597</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/normal/lod3/Hull</nodefullVisual>
+</root>

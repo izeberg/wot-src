@@ -1,4 +1,5 @@
 from frameworks.wulf import WindowFlags, ViewSettings, WindowLayer
+from gui.Scaleform.daapi.view.meta.TutorialDialogMeta import TutorialDialogMeta
 from gui.Scaleform.framework.entities.abstract.AbstractWindowView import AbstractWindowView
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyWindow
@@ -10,7 +11,6 @@ from tutorial.data.conditions import Conditions
 from tutorial.data.effects import SimpleEffect, EFFECT_TYPE
 from tutorial.data.events import ClickEvent
 from tutorial.gui import GUI_EFFECT_NAME
-from tutorial.gui.Scaleform.meta.TutorialDialogMeta import TutorialDialogMeta
 from tutorial.logger import LOG_ERROR
 
 class TutorialPopUp(AbstractWindowView, TutorialProxyHolder):

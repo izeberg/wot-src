@@ -1,5 +1,6 @@
 package net.wg.gui.battle.views.dualGunPanel
 {
+   import flash.display.MovieClip;
    import net.wg.data.constants.InvalidationType;
    import net.wg.gui.battle.components.BattleUIComponent;
    import scaleform.clik.controls.StatusIndicator;
@@ -15,6 +16,8 @@ package net.wg.gui.battle.views.dualGunPanel
       public var gunChangingProgress:DualGunChangingProgressIndicator;
       
       public var bulletProgress:StatusIndicator;
+      
+      public var gunEmpty:MovieClip;
       
       private var _reloadingTimeLeft:Number = 0;
       
@@ -34,6 +37,7 @@ package net.wg.gui.battle.views.dualGunPanel
          this.bulletProgress.maximum = 1;
          this.bulletProgress.value = 0;
          this.gunChangingProgress.stop();
+         this.gunEmpty.visible = false;
       }
       
       override protected function onDispose() : void
@@ -42,6 +46,7 @@ package net.wg.gui.battle.views.dualGunPanel
          this.gunChangingProgress = null;
          this.bulletProgress.dispose();
          this.bulletProgress = null;
+         this.gunEmpty = null;
          super.onDispose();
       }
       
@@ -100,6 +105,12 @@ package net.wg.gui.battle.views.dualGunPanel
       {
          this._isActive = param1;
          invalidate(INV_SWITCH_INDICATOR);
+      }
+      
+      public function setGunEmpty(param1:Boolean) : void
+      {
+         this.gunEmpty.visible = param1;
+         this.bulletProgress.visible = !param1;
       }
       
       public function updateReloadingProgress(param1:Number, param2:Number) : void

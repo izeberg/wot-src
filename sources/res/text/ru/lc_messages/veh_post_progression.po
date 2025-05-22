@@ -27,7 +27,7 @@ msgid "destroyPairModificationsDialog/cancelButton"
 msgstr "Никак нет!"
 
 msgid "destroyPairModificationsDialog/destroyAll/description/credits"
-msgstr "После отмены модернизаций их можно будет заново провести за кредиты."
+msgstr "После отмены модернизаций их можно будет заново провести за серебро."
 
 msgid "destroyPairModificationsDialog/destroyAll/description/default"
 msgstr "После отмены модернизаций их можно будет провести заново."
@@ -36,7 +36,7 @@ msgid "destroyPairModificationsDialog/destroyAll/title"
 msgstr "Отменить бесплатно все парные модернизации?"
 
 msgid "destroyPairModificationsDialog/destroyOne/description/credits"
-msgstr "После отмены модернизации её можно будет заново провести за кредиты."
+msgstr "После отмены модернизации её можно будет заново провести за серебро."
 
 msgid "destroyPairModificationsDialog/destroyOne/description/default"
 msgstr "После отмены модернизации её можно будет провести заново."
@@ -290,7 +290,7 @@ msgstr ""
 "%(accent)Особые модернизации%(/accent) открывают доступ к альтернативной "
 "комплектации машины и дают возможность %(accent)назначить "
 "категорию%(/accent) второму слоту для оборудования (для техники VIII–XI "
-"уровней). Изменить выбранную категорию слота можно за кредиты."
+"уровней). Изменить выбранную категорию слота можно за серебро."
 
 msgid "slides/extraModification/title"
 msgstr "ОСОБЫЕ МОДЕРНИЗАЦИИ: РОЛЕВОЙ СЛОТ"
@@ -323,7 +323,7 @@ msgstr "ИССЛЕДОВАНИЕ МОДЕРНИЗАЦИЙ"
 
 msgid "slides/pairedModifications/description"
 msgstr ""
-"%(accent)Парные модернизации улучшают одну%(/accent) из характеристик машины за счёт %(accent)ухудшения другой%(/accent). Для исследования модернизаций необходим боевой или свободный опыт, а для их установки — кредиты. %(accent)Отменять (снимать с машины)%(/accent) модернизации можно %(accent)бесплатно%(/accent).\n"
+"%(accent)Парные модернизации улучшают одну%(/accent) из характеристик машины за счёт %(accent)ухудшения другой%(/accent). Для исследования модернизаций необходим боевой или свободный опыт, а для их установки — серебро. %(accent)Отменять (снимать с машины)%(/accent) модернизации можно %(accent)бесплатно%(/accent).\n"
 "При продаже техники базовые и особые модернизации сохраняются, однако парные отменяются."
 
 msgid "slides/pairedModifications/title"
@@ -404,7 +404,7 @@ msgstr ""
 "Заработайте их в бою, продайте излишки со Склада или обменяйте золото."
 
 msgid "tooltips/notEnoughCredits/title"
-msgstr "Недостаточно кредитов"
+msgstr "Недостаточно серебра"
 
 msgid "tooltips/pairModification/demount"
 msgstr "Демонтаж"
@@ -431,7 +431,7 @@ msgstr ""
 
 msgid "tooltips/pairModification/status/received/description"
 msgstr ""
-"После отмены модернизации вы сможете за кредиты установить любую "
+"После отмены модернизации вы сможете за серебро установить любую "
 "модернизацию из этой пары."
 
 msgid "tooltips/pairModification/status/restricted/description"

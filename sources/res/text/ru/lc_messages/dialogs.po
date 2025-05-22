@@ -504,10 +504,10 @@ msgid "buyBerthsNotEnough/credits/cancel"
 msgstr "Так точно!"
 
 msgid "buyBerthsNotEnough/credits/message"
-msgstr "Недостаточно кредитов для покупки дополнительных мест в Казарме."
+msgstr "Недостаточно серебра для покупки дополнительных мест в Казарме."
 
 msgid "buyBerthsNotEnough/credits/title"
-msgstr "Недостаточно кредитов"
+msgstr "Недостаточно серебра"
 
 msgid "buyConfirmation/cancel"
 msgstr "Отменить"
@@ -547,7 +547,7 @@ msgstr ""
 msgid "buyInstallConfirmation/messageCombine"
 msgstr ""
 "Купить и установить %(kind)s «%(name)s» на текущую машину за %(price)s "
-"кредитов?"
+"серебра?"
 
 msgid "buyInstallConfirmation/submit"
 msgstr "Купить"
@@ -560,8 +560,8 @@ msgstr "Отменить"
 
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
-"Купить премиум аккаунт на %(days)s д за %(gold)s золота?\n"
-" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и кредиты не будут начислены. Вы можете выбрать другой бой или купить премиум аккаунт стандартным способом.%(tagClose)s"
+"Купить Премиум аккаунт на %(days)s д за %(gold)s золота?\n"
+" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Премиум аккаунт стандартным способом.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купить"
@@ -588,13 +588,13 @@ msgid "buySlotNotEnough/credits/cancel"
 msgstr "ОК"
 
 msgid "buySlotNotEnough/credits/message"
-msgstr "Недостаточно кредитов для покупки дополнительного слота в Ангаре."
+msgstr "Недостаточно серебра для покупки дополнительного слота в Ангаре."
 
 msgid "buySlotNotEnough/credits/submit"
 msgstr "ОК"
 
 msgid "buySlotNotEnough/credits/title"
-msgstr "Недостаточно кредитов"
+msgstr "Недостаточно серебра"
 
 msgid "buySlotNotEnough/gold/cancel"
 msgstr "ОК"
@@ -613,7 +613,7 @@ msgstr "Отменить"
 
 msgid "buySlotShopConfirmation/messageCombine"
 msgstr ""
-"Нет свободных слотов в Ангаре. Купить дополнительный слот за {%d} кредитов?"
+"Нет свободных слотов в Ангаре. Купить дополнительный слот за {%d} серебра?"
 
 msgid "buySlotShopConfirmation/submit"
 msgstr "Купить"
@@ -946,17 +946,17 @@ msgstr "На покупку не хватает:"
 
 msgid "confirmBuyAndInstall/insufficientFundsTooltip/body"
 msgstr ""
-"Заработайте кредиты в бою, продайте излишки со Склада или обменяйте золото."
+"Заработайте серебро в бою, продайте излишки со Склада или обменяйте золото."
 
 msgid "confirmBuyAndInstall/insufficientFundsTooltip/header"
-msgstr "Недостаточно кредитов"
+msgstr "Недостаточно серебра"
 
 msgid "confirmBuyAndInstall/message"
 msgstr "Стоимость модуля:"
 
 msgid "confirmBuyAndInstall/sellMessage"
 msgstr ""
-"Продать заменяемый модуль «%(previousModuleName)» за: %(previousModulePrice)"
+"Продать заменяемый модуль %(previousModuleName) за: %(previousModulePrice)"
 
 msgid "confirmBuyAndInstall/soldModuleInfo/compatibleTanks"
 msgstr "Этот модуль совместим с:"
@@ -984,7 +984,7 @@ msgstr "Отменить"
 msgid "confirmExchangeDialog/exchangeCredits/exchangeNoNeedText"
 msgstr ""
 "Обмен для покупки не требуется.\n"
-"У вас достаточно кредитов."
+"У вас достаточно серебра."
 
 msgid "confirmExchangeDialog/exchangeCredits/goldNotEnoughText"
 msgstr ""
@@ -992,10 +992,10 @@ msgstr ""
 "Для обмена необходимо %(gold)s"
 
 msgid "confirmExchangeDialog/exchangeCredits/needGoldText"
-msgstr "Обменять %(gold)s на недостающие кредиты?"
+msgstr "Обменять %(gold)s на недостающее серебро?"
 
 msgid "confirmExchangeDialog/exchangeCredits/needItemsStepperTitle"
-msgstr "Необходимо кредитов:"
+msgstr "Необходимо серебра:"
 
 msgid "confirmExchangeDialog/exchangeCredits/needItemsText"
 msgstr "На покупку не хватает: %(value)s"
@@ -1043,7 +1043,7 @@ msgstr "Отменить"
 msgid "confirmExchangeDialog/restoreExchangeCredits/exchangeNoNeedText"
 msgstr ""
 "Обмен для восстановления не требуется.\n"
-"У вас достаточно кредитов."
+"У вас достаточно серебра."
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/goldNotEnoughText"
 msgstr ""
@@ -1051,10 +1051,10 @@ msgstr ""
 "Для обмена необходимо %(gold)s"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needGoldText"
-msgstr "Обменять %(gold)s на недостающие кредиты?"
+msgstr "Обменять %(gold)s на недостающее серебро?"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needItemsStepperTitle"
-msgstr "Необходимо кредитов:"
+msgstr "Необходимо серебра:"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needItemsText"
 msgstr "На восстановление не хватает: %(value)s"
@@ -2148,14 +2148,14 @@ msgstr "Отменить"
 
 msgid "limitedUIOffNotification/message"
 msgstr ""
-"Вы уверены, что хотите отключить постепенное появление скрытых интерфейсов в Ангаре?\n"
+"Вы уверены, что хотите отключить постепенное появление скрытых элементов интерфейса в Ангаре?\n"
 "%(icon)s%(alert)s"
 
 msgid "limitedUIOffNotification/message/alert"
-msgstr "После отключения этой настройки вы не сможете включить её обратно."
+msgstr "Отключив эту настройку, вы не сможете включить её обратно."
 
 msgid "limitedUIOffNotification/submit"
-msgstr "Отключить"
+msgstr "Подтвердить"
 
 msgid "limitedUIOffNotification/title"
 msgstr "Изменение настроек"
@@ -2274,7 +2274,7 @@ msgid "moneyTransfer/labelClan"
 msgstr "Клан:"
 
 msgid "moneyTransfer/labelClanCredits"
-msgstr "кредиты"
+msgstr "серебро"
 
 msgid "moneyTransfer/labelClanGold"
 msgstr "золото"
@@ -2289,7 +2289,7 @@ msgid "moneyTransfer/labelNormal"
 msgstr "Обычный:"
 
 msgid "moneyTransfer/labelNormalCredits"
-msgstr "кредиты"
+msgstr "серебро"
 
 msgid "moneyTransfer/labelNormalGold"
 msgstr "золото"
@@ -2455,7 +2455,7 @@ msgstr "Ознакомлен"
 
 msgid "punishmentWindow/message/extra/penalty"
 msgstr ""
-"%(colorTagOpen)sЛишение 100%% заработанного за бой опыта, кредитов и наград.\n"
+"%(colorTagOpen)sЛишение 100%% заработанного за бой опыта, серебра и наград.\n"
 "\n"
 "%(colorTagClose)s"
 
@@ -2468,7 +2468,7 @@ msgstr ""
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
-"Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», вам объявлено первое и последнее предупреждение. Обратите внимание, что в случае повторного нарушения вы будете лишены всех заработанных за бой кредитов, опыта и наград. В том случае, если досрочный выход из боя связан с разрывами соединения или иными техническими трудностями, обратитесь в Центр поддержки пользователей.\n"
+"Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», вам объявлено первое и последнее предупреждение. Обратите внимание, что в случае повторного нарушения вы будете лишены всего заработанного за бой серебра, опыта и наград. В том случае, если досрочный выход из боя связан с разрывами соединения или иными техническими трудностями, обратитесь в Центр поддержки пользователей.\n"
 "\n"
 " "
 
@@ -2492,12 +2492,6 @@ msgstr "Выход из боя до его окончания или до уни
 
 msgid "punishmentWindow/reason/epic_deserter"
 msgstr "Выход из боя до его окончания или до уничтожения собственной машины"
-
-msgid "punishmentWindow/reason/hb_afk"
-msgstr "?empty?"
-
-msgid "punishmentWindow/reason/hb_deserter"
-msgstr "?empty?"
 
 msgid "punishmentWindow/reason/suicide"
 msgstr "Умышленное уничтожение собственной машины"
@@ -3485,7 +3479,7 @@ msgid "upgradeTankmanScoolConfirmation/cancel"
 msgstr "Отменить"
 
 msgid "upgradeTankmanScoolConfirmation/messageCombine"
-msgstr "Обучить члена экипажа за {%d} кредитов?"
+msgstr "Обучить члена экипажа за {%d} серебра?"
 
 msgid "upgradeTankmanScoolConfirmation/submit"
 msgstr "Обучить"
@@ -3497,13 +3491,13 @@ msgid "upgradeTankmanScoolNotEnoughMoney/cancel"
 msgstr "ОК"
 
 msgid "upgradeTankmanScoolNotEnoughMoney/message"
-msgstr "Недостаточно кредитов для обучения члена экипажа."
+msgstr "Недостаточно серебра для обучения члена экипажа."
 
 msgid "upgradeTankmanScoolNotEnoughMoney/submit"
 msgstr "ОК"
 
 msgid "upgradeTankmanScoolNotEnoughMoney/title"
-msgstr "Недостаточно кредитов."
+msgstr "Недостаточно серебра."
 
 msgid "vehConf/exitDialog/cancel"
 msgstr "Отменить"

@@ -4,6 +4,8 @@ package net.wg.gui.battle.views.dualGunPanel
    import flash.external.ExternalInterface;
    import flash.text.TextField;
    import net.wg.data.constants.Time;
+   import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class DualGunPanelTimer extends MovieClip implements IDisposable
@@ -85,7 +87,21 @@ package net.wg.gui.battle.views.dualGunPanel
       
       public function updateTotalTime(param1:Number) : void
       {
-         this.totalTimer.text = this.convertTimerValue(param1);
+         this.totalTimer.text = param1 > Values.DEFAULT_INT ? this.convertTimerValue(param1) : Values.EMPTY_STR;
+      }
+      
+      public function updateClipType(param1:int) : void
+      {
+         if(param1 == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER)
+         {
+            this.totalTimer.alpha = Values.ZERO;
+            this.timerIdle.alpha = Values.DEFAULT_ALPHA;
+         }
+         else
+         {
+            this.totalTimer.alpha = Values.DEFAULT_ALPHA;
+            this.timerIdle.alpha = Values.ZERO;
+         }
       }
       
       private function switchCurrentTimers(param1:TextField) : void

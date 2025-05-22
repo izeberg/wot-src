@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/crash/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.373439 -0.018155 -2.922268</min>
+		<max>1.373432 1.167579 1.258015</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

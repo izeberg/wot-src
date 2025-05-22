@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/normal/lod1/Hatch_right_anim_01</nodefullVisual>
+	<parent>vehicles/british/GB134_FV242B_Condor/normal/lod2/Hatch_right_anim_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>1.294997 0.626345 -1.808370</min>
+		<max>1.381245 0.857686 -1.524368</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

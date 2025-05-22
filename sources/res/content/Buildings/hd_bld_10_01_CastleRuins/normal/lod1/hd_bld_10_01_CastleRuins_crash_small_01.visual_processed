@@ -20,7 +20,7 @@
 				0
 				<material>
 					<identifier>s_nd1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -171,8 +171,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.314029 -3.566702 -4.703450</min>
-		<max>1.391547 3.564938 4.606763</max>
+		<min>-1.190924 -3.564936 -4.638293</min>
+		<max>1.190926 3.564938 4.606763</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>10756</geometrySize>

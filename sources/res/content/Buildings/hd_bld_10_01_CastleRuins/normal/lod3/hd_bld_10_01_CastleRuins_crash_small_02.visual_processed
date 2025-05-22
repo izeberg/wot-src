@@ -20,7 +20,7 @@
 				0
 				<material>
 					<identifier>s_nd1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -30,18 +30,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_02_DM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -122,18 +110,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_02_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -195,7 +171,7 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.280138 -2.964975 -4.729144</min>
+		<min>-1.254788 -2.964975 -4.729144</min>
 		<max>1.299562 2.964975 4.697584</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

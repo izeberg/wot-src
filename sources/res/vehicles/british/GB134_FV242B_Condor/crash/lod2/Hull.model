@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/british/GB134_FV242B_Condor/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.944101 -0.976211 -4.259610</min>
+		<max>1.953051 0.803973 4.358021</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

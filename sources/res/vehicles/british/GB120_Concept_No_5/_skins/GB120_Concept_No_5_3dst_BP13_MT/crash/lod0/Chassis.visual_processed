@@ -282,8 +282,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>WD_R1_BlendBone</node>
-		<node>Track_R2_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_R02_tire_Shape.vertices</vertices>
 			<primitive>wd_R02_tire_Shape.indices</primitive>
@@ -326,8 +324,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>WD_R1_BlendBone</node>
-		<node>Track_R2_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_R02_Shape.vertices</vertices>
 			<primitive>wd_R02_Shape.indices</primitive>
@@ -369,8 +365,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_R1_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<node>W_R0_BlendBone</node>
 		<geometry>
 			<vertices>w_R01_tire_Shape.vertices</vertices>
@@ -414,8 +408,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>W_R0_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>w_R01_Shape.vertices</vertices>
 			<primitive>w_R01_Shape.indices</primitive>
@@ -457,9 +449,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_R0_BlendBone</node>
 		<node>WD_R0_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_R01_tire_Shape.vertices</vertices>
 			<primitive>wd_R01_tire_Shape.indices</primitive>
@@ -501,9 +491,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_R0_BlendBone</node>
 		<node>WD_R0_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_R01_Shape.vertices</vertices>
 			<primitive>wd_R01_Shape.indices</primitive>
@@ -546,8 +534,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>WD_L1_BlendBone</node>
-		<node>Track_L2_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_L02_tire_Shape.vertices</vertices>
 			<primitive>wd_L02_tire_Shape.indices</primitive>
@@ -590,8 +576,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>WD_L1_BlendBone</node>
-		<node>Track_L2_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_L02_Shape.vertices</vertices>
 			<primitive>wd_L02_Shape.indices</primitive>
@@ -633,8 +617,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_L1_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<node>W_L0_BlendBone</node>
 		<geometry>
 			<vertices>w_L01_tire_Shape.vertices</vertices>
@@ -678,8 +660,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>W_L0_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>w_L01_Shape.vertices</vertices>
 			<primitive>w_L01_Shape.indices</primitive>
@@ -721,9 +701,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_L0_BlendBone</node>
 		<node>WD_L0_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_L01_destroyed_Shape.vertices</vertices>
 			<primitive>wd_L01_destroyed_Shape.indices</primitive>
@@ -766,8 +744,6 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>WD_L0_BlendBone</node>
-		<node>Track_L0_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_L01_tire_Shape.vertices</vertices>
 			<primitive>wd_L01_tire_Shape.indices</primitive>
@@ -809,9 +785,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_L0_BlendBone</node>
 		<node>WD_L0_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>wd_L01_Shape.vertices</vertices>
 			<primitive>wd_L01_Shape.indices</primitive>
@@ -854,12 +828,9 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_L0_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
 		<node>Tank_BlendBone</node>
-		<node>V_BlendBone</node>
-		<node>W_L0_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
-		<node>WD_L1_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
@@ -903,12 +874,10 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_R0_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
 		<node>Tank_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>W_R0_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>

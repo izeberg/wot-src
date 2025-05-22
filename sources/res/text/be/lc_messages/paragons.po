@@ -116,7 +116,7 @@ msgid "branch/reseted/refund/appearance"
 msgstr "Элементы выгляду %(amounts)s."
 
 msgid "branch/reseted/refund/credits"
-msgstr "Крэдыты: %(amounts)s."
+msgstr "Серебро: %(amounts)s."
 
 msgid "branch/reseted/refund/crew"
 msgstr "Члены экіпажа %(amounts)s."
@@ -663,7 +663,7 @@ msgid "resetBranch/step1/total"
 msgstr "Усяго ачкоў прагрэсіі атрымаеце пасля пераможным баёў на тэхніцы:"
 
 msgid "resetBranch/step2/creditsBack"
-msgstr "Вернецца крэдытаў:"
+msgstr "Вернётся серебра:"
 
 msgid "resetBranch/step2/description"
 msgstr ""
@@ -727,7 +727,7 @@ msgstr ""
 "ўсталяваных модуляў."
 
 msgid "resetBranch/tooltip/credits/header"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "resetBranch/tooltip/listSeparator"
 msgstr ", "
@@ -845,7 +845,7 @@ msgstr ""
 "Ачкі праекта «Арбіта»: {whiteSpanish_open}%(current)s{whiteSpanish_close}"
 
 msgid "resetBranch/tooltip/resetButtonText3"
-msgstr "Вернецца крэдытаў: {cred_open}%(current)s{cred_close}"
+msgstr "Вернётся серебра: {cred_open}%(current)s{cred_close}"
 
 msgid "resetBranch/tooltip/returnBack/additionalDescription"
 msgstr ""

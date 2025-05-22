@@ -16,6 +16,7 @@ from gui.impl.lobby.play_streak.play_streak_bonus_packer import getPlayStreakBon
 from gui.impl.pub import ViewImpl
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_tooltip import LootboxTooltip
+from gui.impl.lobby.daily.tooltips.periodic_rewards_tooltip import PeriodicRewardsTooltip
 from gui.server_events.events_dispatcher import showDailyQuests
 from gui.shared.event_dispatcher import showStylePreview, showStyleProgressionPreview, showVehiclePreview, showHangar
 from helpers import dependency
@@ -71,6 +72,8 @@ class PlayStreakSubView(PlayStreakSubViewBase):
 
     def createToolTipContent(self, event, contentID):
         tooltipId = event.getArgument('tooltipId')
+        if contentID == R.views.lobby.daily.tooltips.PeriodicRewardsTooltip():
+            return PeriodicRewardsTooltip(contentID)
         if tooltipId:
             lootBoxId = self.__tooltipData.get(tooltipId).get('lootBoxID')
             if lootBoxId:

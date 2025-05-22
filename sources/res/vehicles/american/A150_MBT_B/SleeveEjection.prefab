@@ -13,13 +13,18 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>SleeveSpawnPosition</name>
-			<UUID>b671533e-470f-31d7-ba04-47c619e1cb09</UUID>
+			<name>sleeveSpawner</name>
+			<UUID>d563846b-2e36-3275-9ce8-fe0ddb0e7b46</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>sleeveSpawner</name>
-			<UUID>d563846b-2e36-3275-9ce8-fe0ddb0e7b46</UUID>
+			<name>SleeveSpawnPosition</name>
+			<UUID>5369499c-1925-414d-95b6-ece5cc83be27</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>HP_sleeveSpawnPoint</name>
+			<UUID>26b2ca12-9703-4e84-9792-97adf247d70f</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -43,7 +48,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>ed4802c3-2001-4c53-a5eb-42144e3c1650</link>
+						<link>5369499c-1925-414d-95b6-ece5cc83be27</link>
 					</property>
 				</config>
 			</component>
@@ -53,7 +58,17 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>b671533e-470f-31d7-ba04-47c619e1cb09</link>
+						<link>26b2ca12-9703-4e84-9792-97adf247d70f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ed4802c3-2001-4c53-a5eb-42144e3c1650</link>
 					</property>
 				</config>
 			</component>
@@ -85,7 +100,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							-0.357 0.570984 -0.670612
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -93,12 +111,39 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>
+							-0 3.14159 0
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.999999 1 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 0 -0.691674
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -116,7 +161,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>4</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -129,10 +174,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>
-							-0 0 -0.691598
-							<!--BW_String-->
-						</value>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -259,7 +301,7 @@
 			<type>PhysicalDebrisSpawner</type>
 			<version>2</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -305,7 +347,7 @@
 			<type>PhysicalDebrisParams</type>
 			<version>1</version>
 			<component>
-				<objectIndex>3</objectIndex>
+				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -372,8 +414,26 @@
 			<type>NodeFollower</type>
 			<version>1</version>
 			<component>
-				<objectIndex>0</objectIndex>
-				<flags>35</flags>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>HP_sleeve</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>NodeName</name>

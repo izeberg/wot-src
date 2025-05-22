@@ -10,7 +10,7 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
-				<id>Variable_1</id>
+				<id>Variable_7</id>
 				<params>
 					<param>
 						Jaginskaya_go
@@ -37,42 +37,15 @@
 			</block>
 			<block>
 				<class>Variable</class>
-				<id>Variable_2</id>
+				<id>Variable_1</id>
 				<params>
 					<param>
-						Raccoon_go
+						frame_event_gate
 						<name>Variable Name</name>
 						<type>StringT</type>
 					</param>
 					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Variable</class>
-				<id>Variable_4</id>
-				<params>
-					<param>
-						choice_group
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						IntT
+						BoolT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -87,29 +60,29 @@
 						<type>BoolT</type>
 					</param>
 					<param>
-						0
+						false
 						<name>Initial Value</name>
-						<type>IntT</type>
+						<type>BoolT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
 						<name>default</name>
-						<const>\0\</const>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
 			<block>
 				<class>Variable</class>
-				<id>Variable_5</id>
+				<id>Variable_2</id>
 				<params>
 					<param>
-						choice_sequence
+						index_of_group
 						<name>Variable Name</name>
 						<type>StringT</type>
 					</param>
 					<param>
-						IntT
+						StringT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -124,15 +97,161 @@
 						<type>BoolT</type>
 					</param>
 					<param>
-						0
 						<name>Initial Value</name>
-						<type>IntT</type>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
 						<name>default</name>
+						<const>\\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
+				<id>Variable_6</id>
+				<params>
+					<param>
+						is_new_position
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Initial Value</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
+				<id>Variable_8</id>
+				<params>
+					<param>
+						random_seq
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						1
+						<name>Initial Value</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_2</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_6</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_6</id>
+				<params>
+					<param>
+						random_sequence
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>random_from</name>
 						<const>\0\</const>
+					</slot>
+					<slot>
+						<name>random_to</name>
+						<const>\3\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\Jaginskaya_new\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
 					</slot>
 				</slots>
 			</block>
@@ -143,25 +262,24 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_1</id>
-				<buddy>Variable_1</buddy>
+				<class>Macro</class>
+				<id>Macro_4</id>
 				<params>
 					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						groped_stages
+						<name>Macro Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_2</id>
+				<id>SetVariable_5</id>
 				<buddy>Variable_2</buddy>
 				<params>
 					<param>
-						GameObjectT
+						StringT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -169,32 +287,29 @@
 				<slots/>
 			</block>
 			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_2</id>
+				<class>If</class>
+				<id>If_3</id>
 				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\Jaginskaya\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_3</id>
-				<params/>
+				<class>Delay</class>
+				<id>Delay_2</id>
+				<params>
+					<param>
+						StringT
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 				<slots>
 					<slot>
-						<name>name</name>
-						<const>\Racoon\</const>
+						<name>time</name>
+						<const>\1.000000\</const>
 					</slot>
 					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
+						<name>stack</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
@@ -211,25 +326,41 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_4</id>
-				<buddy>Variable_4</buddy>
+				<class>RandomBool</class>
+				<id>RandomBool_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_5</id>
 				<params>
 					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						Animator.setTrigger
+						<name>Component Type</name>
+						<type>StringT</type>
 					</param>
 				</params>
+				<slots>
+					<slot>
+						<name>arg#1</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_7</id>
-				<buddy>Variable_5</buddy>
+				<id>SetVariable_1</id>
+				<buddy>Variable_7</buddy>
 				<params>
 					<param>
-						IntT
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -238,21 +369,17 @@
 			</block>
 			<block>
 				<class>ComponentMethod</class>
-				<id>ComponentMethod_1</id>
+				<id>ComponentMethod_3</id>
 				<params>
 					<param>
-						Animator.setFloatParam
+						Animator.setTrigger
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
-						<name>arg#0</name>
-						<const>\choice_group\</const>
-					</slot>
-					<slot>
-						<name>arg#2</name>
+						<name>arg#1</name>
 						<const>\0\</const>
 					</slot>
 				</slots>
@@ -262,68 +389,236 @@
 				<id>ComponentMethod_4</id>
 				<params>
 					<param>
-						Animator.setFloatParam
+						Animator.setTrigger
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
-						<name>arg#0</name>
-						<const>\choice_sequence\</const>
-					</slot>
-					<slot>
-						<name>arg#2</name>
+						<name>arg#1</name>
 						<const>\0\</const>
 					</slot>
 				</slots>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_9</id>
+				<class>Macro</class>
+				<id>Macro_2</id>
 				<params>
 					<param>
-						Animator.setFloatParam
-						<name>Component Type</name>
+						random_sequence
+						<name>Macro Name</name>
 						<type>StringT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
-						<name>arg#0</name>
-						<const>\choice_sequence\</const>
+						<name>random_from</name>
+						<const>\1\</const>
 					</slot>
 					<slot>
-						<name>arg#2</name>
-						<const>\0\</const>
+						<name>random_to</name>
+						<const>\2\</const>
 					</slot>
 				</slots>
 			</block>
 			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_11</id>
+				<class>Delay</class>
+				<id>Delay_1</id>
 				<params>
 					<param>
-						Animator.setFloatParam
-						<name>Component Type</name>
-						<type>StringT</type>
+						StringT
+						<name>Value Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots>
 					<slot>
-						<name>arg#0</name>
-						<const>\choice_group\</const>
+						<name>time</name>
+						<const>\2.000000\</const>
 					</slot>
 					<slot>
-						<name>arg#2</name>
-						<const>\0\</const>
+						<name>stack</name>
+						<const>\false\</const>
 					</slot>
 				</slots>
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_1</id>
+				<id>GetVariable_7</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\Jaginskaya_old\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_4</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_3</id>
+				<params>
+					<param>
+						random_sequence
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>random_from</name>
+						<const>\1\</const>
+					</slot>
+					<slot>
+						<name>random_to</name>
+						<const>\4\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\Racoon\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_3</id>
 				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_3</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_1</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>FrameEvent</class>
+				<id>FrameEvent_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>cooldown</name>
+						<const>\15.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_5</id>
+				<params>
+					<param>
+						random_sequence
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>random_from</name>
+						<const>\3\</const>
+					</slot>
+					<slot>
+						<name>random_to</name>
+						<const>\6\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_6</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_4</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						StringT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_9</id>
+				<buddy>Variable_7</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -350,473 +645,97 @@
 				</params>
 				<slots/>
 			</block>
-			<block>
-				<class>RandomInteger</class>
-				<id>RandomInteger_4</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>a</name>
-						<const>\1\</const>
-					</slot>
-					<slot>
-						<name>b</name>
-						<const>\100\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_15</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>RandomInteger</class>
-				<id>RandomInteger_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>a</name>
-						<const>\0\</const>
-					</slot>
-					<slot>
-						<name>b</name>
-						<const>\100\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_7</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_9</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_14</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_13</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_6</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\narrative_action_0\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_7</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\narrative_action_0\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Delay</class>
-				<id>Delay_1</id>
-				<params>
-					<param>
-						FloatT
-						<name>Value Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>time</name>
-						<const>\20.000000\</const>
-					</slot>
-					<slot>
-						<name>stack</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
-				<params>
-					<param>
-						CompareStage
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>range_1</name>
-						<const>\6\</const>
-					</slot>
-					<slot>
-						<name>range_2</name>
-						<const>\13\</const>
-					</slot>
-					<slot>
-						<name>range_3</name>
-						<const>\16\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_8</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Choice</class>
-				<id>Choice_1</id>
-				<params>
-					<param>
-						2
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>RandomBool</class>
-				<id>RandomBool_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>Delay</class>
-				<id>Delay_2</id>
-				<params>
-					<param>
-						FloatT
-						<name>Value Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>time</name>
-						<const>\1.000000\</const>
-					</slot>
-					<slot>
-						<name>stack</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_8</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\default_animation\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_10</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\narrative_action_1\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_10</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_12</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_2</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\narrative_action_2\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_5</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\narrative_action_2\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_5</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_2</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>ComponentMethod</class>
-				<id>ComponentMethod_3</id>
-				<params>
-					<param>
-						Animator.setTrigger
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\narrative_action_3\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_3</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
 		</blocks>
 		<connections>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>default</input>
-				<to>Variable_1</to>
+				<to>Variable_7</to>
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>If_3</from>
+				<input>input</input>
+				<to>SetVariable_2</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Macro_6</from>
+				<input>in</input>
+				<to>ActivateGameObject_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_4</from>
+				<input>gameObject</input>
+				<to>ActivateGameObject_2</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_2</from>
+				<input>input</input>
+				<to>SetVariable_6</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_2</from>
+				<input>value</input>
+				<to>SetVariable_6</to>
+				<output>object</output>
+			</connection>
+			<connection>
+				<from>SetVariable_2</from>
+				<input>in</input>
+				<to>Macro_6</to>
+				<output>out</output>
+			</connection>
+			<connection>
 				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_2</to>
+				<input>gameObject</input>
+				<to>FindFirstNode_4</to>
 				<output>value</output>
 			</connection>
 			<connection>
 				<from>Sequence_1</from>
 				<input>input</input>
-				<to>SetVariable_1</to>
+				<to>Macro_4</to>
 				<output>o0</output>
 			</connection>
 			<connection>
-				<from>FindFirstNode_2</from>
+				<from>Macro_4</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_4</from>
 				<input>value</input>
-				<to>SetVariable_1</to>
-				<output>node</output>
+				<to>SetVariable_5</to>
+				<output>index_of_group</output>
+			</connection>
+			<connection>
+				<from>SetVariable_5</from>
+				<input>input</input>
+				<to>If_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>RandomBool_1</from>
+				<input>value</input>
+				<to>If_3</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>SetVariable_1</from>
 				<input>input</input>
-				<to>SetVariable_2</to>
+				<to>Delay_2</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>FindFirstNode_3</from>
-				<input>value</input>
-				<to>SetVariable_2</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_3</to>
-				<output>value</output>
+				<from>SetVariable_6</from>
+				<input>input</input>
+				<to>Delay_2</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>StartScript_1</from>
@@ -825,124 +744,94 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
-				<input>input</input>
-				<to>SetVariable_4</to>
-				<output>stage_range_1</output>
-			</connection>
-			<connection>
-				<from>RandomInteger_4</from>
-				<input>value</input>
-				<to>SetVariable_4</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>SetVariable_4</from>
-				<input>input</input>
-				<to>SetVariable_7</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>RandomInteger_1</from>
-				<input>value</input>
-				<to>SetVariable_7</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>SetVariable_7</from>
+				<from>Delay_2</from>
 				<input>in</input>
-				<to>ComponentMethod_1</to>
+				<to>ComponentMethod_5</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetVariable_1</from>
+				<from>FindFirstNode_1</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_1</to>
-				<output>value</output>
+				<to>ComponentMethod_5</to>
+				<output>node</output>
 			</connection>
 			<connection>
 				<from>GetVariable_7</from>
-				<input>arg#1</input>
-				<to>ComponentMethod_1</to>
+				<input>arg#0</input>
+				<to>ComponentMethod_5</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_1</from>
+				<from>Macro_2</from>
 				<input>in</input>
-				<to>ComponentMethod_4</to>
+				<to>ActivateGameObject_1</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetVariable_1</from>
+				<from>FindFirstNode_2</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_4</to>
-				<output>value</output>
+				<to>ActivateGameObject_1</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_1</from>
+				<input>input</input>
+				<to>SetVariable_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_1</from>
+				<input>value</input>
+				<to>SetVariable_1</to>
+				<output>object</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_5</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FrameEvent_2</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>exec</output>
 			</connection>
 			<connection>
 				<from>GetVariable_9</from>
-				<input>arg#1</input>
+				<input>gameObject</input>
+				<to>ComponentMethod_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_4</from>
+				<input>arg#0</input>
+				<to>ComponentMethod_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_3</from>
+				<input>in</input>
+				<to>ComponentMethod_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_9</from>
+				<input>gameObject</input>
 				<to>ComponentMethod_4</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_4</from>
+				<from>GetVariable_6</from>
+				<input>arg#0</input>
+				<to>ComponentMethod_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_3</from>
 				<input>in</input>
-				<to>ComponentMethod_9</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_15</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_9</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_14</from>
-				<input>arg#1</input>
-				<to>ComponentMethod_9</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_9</from>
-				<input>in</input>
-				<to>ComponentMethod_11</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_15</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_11</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_13</from>
-				<input>arg#1</input>
-				<to>ComponentMethod_11</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>in</input>
-				<to>ComponentMethod_6</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>GetVariable_8</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_6</from>
-				<input>in</input>
-				<to>ComponentMethod_7</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_11</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_7</to>
-				<output>value</output>
+				<to>Macro_2</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>Sequence_1</from>
@@ -951,117 +840,546 @@
 				<output>o1</output>
 			</connection>
 			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_4</from>
+				<input>input</input>
+				<to>If_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_1</from>
+				<input>value</input>
+				<to>If_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_4</from>
+				<input>in</input>
+				<to>Macro_3</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Delay_1</from>
-				<input>in</input>
-				<to>Macro_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_1</from>
 				<input>input</input>
-				<to>Choice_1</to>
-				<output>stage_range_2</output>
-			</connection>
-			<connection>
-				<from>RandomBool_2</from>
-				<input>index</input>
-				<to>Choice_1</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_11</from>
-				<input>input</input>
-				<to>Delay_2</to>
+				<to>SetVariable_3</to>
 				<output>out</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_3</from>
-				<input>input</input>
-				<to>Delay_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_7</from>
-				<input>input</input>
-				<to>Delay_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_10</from>
-				<input>input</input>
-				<to>Delay_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_5</from>
-				<input>input</input>
-				<to>Delay_2</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Delay_2</from>
-				<input>in</input>
-				<to>ComponentMethod_8</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_10</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_8</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Choice_1</from>
-				<input>in</input>
-				<to>ComponentMethod_10</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>GetVariable_12</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_10</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Macro_1</from>
-				<input>in</input>
-				<to>ComponentMethod_2</to>
-				<output>stage_range_3</output>
-			</connection>
-			<connection>
-				<from>GetVariable_2</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ComponentMethod_2</from>
-				<input>in</input>
-				<to>ComponentMethod_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_5</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Macro_1</from>
-				<input>in</input>
-				<to>ComponentMethod_3</to>
-				<output>stage_range_4</output>
 			</connection>
 			<connection>
 				<from>GetVariable_3</from>
-				<input>gameObject</input>
-				<to>ComponentMethod_3</to>
+				<input>active</input>
+				<to>FrameEvent_2</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_4</from>
+				<input>in</input>
+				<to>Macro_5</to>
+				<output>false</output>
 			</connection>
 		</connections>
 		<macros>
 			<macro>
-				<name>CompareStage</name>
+				<name>groped_stages</name>
+				<blocks>
+					<block>
+						<class>Variable</class>
+						<id>Variable_10</id>
+						<params>
+							<param>
+								group_index
+								<name>Variable Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								false
+								<name>External Init</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								false
+								<name>Is Const</name>
+								<type>BoolT</type>
+							</param>
+							<param>
+								<name>Initial Value</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_1</id>
+						<params>
+							<param>
+								input
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_1</id>
+						<params>
+							<param>
+								out
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								EventT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_7</id>
+						<buddy>Variable_10</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\0\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_7</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>GetCurrentProgress</class>
+						<id>GetCurrentProgress_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_3</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\7\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>MacroOutput</class>
+						<id>MacroOutput_6</id>
+						<params>
+							<param>
+								index_of_group
+								<name>Output Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								StringT
+								<name>Output Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_8</id>
+						<buddy>Variable_10</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\1\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_1</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\20\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>Concatenate</class>
+						<id>Concatenate_2</id>
+						<params>
+							<param>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>i0</name>
+								<const>\group_\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_2</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_9</id>
+						<buddy>Variable_10</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\2\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_2</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\20\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_2</id>
+						<buddy>Variable_10</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_5</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_10</id>
+						<buddy>Variable_10</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\3\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_5</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\23\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>If</class>
+						<id>If_8</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>SetVariable</class>
+						<id>SetVariable_11</id>
+						<buddy>Variable_10</buddy>
+						<params>
+							<param>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>value</name>
+								<const>\4\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_6</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>b</name>
+								<const>\26\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_2</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+				</blocks>
+				<connections>
+					<connection>
+						<from>SetVariable_7</from>
+						<input>out</input>
+						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SetVariable_8</from>
+						<input>out</input>
+						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SetVariable_9</from>
+						<input>out</input>
+						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SetVariable_10</from>
+						<input>out</input>
+						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>SetVariable_11</from>
+						<input>out</input>
+						<to>MacroOutput_1</to>
+						<output>out</output>
+					</connection>
+					<connection>
+						<from>If_7</from>
+						<input>input</input>
+						<to>SetVariable_7</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>MacroInput_1</from>
+						<input>input</input>
+						<to>If_7</to>
+						<output>input</output>
+					</connection>
+					<connection>
+						<from>CompareIntegers_3</from>
+						<input>value</input>
+						<to>If_7</to>
+						<output>less</output>
+					</connection>
+					<connection>
+						<from>GetCurrentProgress_1</from>
+						<input>a</input>
+						<to>CompareIntegers_3</to>
+						<output>progress</output>
+					</connection>
+					<connection>
+						<from>Concatenate_2</from>
+						<input>index_of_group</input>
+						<to>MacroOutput_6</to>
+						<output>res</output>
+					</connection>
+					<connection>
+						<from>If_7</from>
+						<input>input</input>
+						<to>If_1</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>CompareIntegers_1</from>
+						<input>value</input>
+						<to>If_1</to>
+						<output>less</output>
+					</connection>
+					<connection>
+						<from>If_1</from>
+						<input>input</input>
+						<to>SetVariable_8</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>GetCurrentProgress_1</from>
+						<input>a</input>
+						<to>CompareIntegers_1</to>
+						<output>progress</output>
+					</connection>
+					<connection>
+						<from>GetVariable_2</from>
+						<input>i1</input>
+						<to>Concatenate_2</to>
+						<output>value</output>
+					</connection>
+					<connection>
+						<from>If_1</from>
+						<input>input</input>
+						<to>If_2</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>CompareIntegers_2</from>
+						<input>value</input>
+						<to>If_2</to>
+						<output>equal</output>
+					</connection>
+					<connection>
+						<from>If_2</from>
+						<input>input</input>
+						<to>SetVariable_9</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>GetCurrentProgress_1</from>
+						<input>a</input>
+						<to>CompareIntegers_2</to>
+						<output>progress</output>
+					</connection>
+					<connection>
+						<from>If_2</from>
+						<input>input</input>
+						<to>If_5</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>CompareIntegers_5</from>
+						<input>value</input>
+						<to>If_5</to>
+						<output>less</output>
+					</connection>
+					<connection>
+						<from>If_5</from>
+						<input>input</input>
+						<to>SetVariable_10</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>GetCurrentProgress_1</from>
+						<input>a</input>
+						<to>CompareIntegers_5</to>
+						<output>progress</output>
+					</connection>
+					<connection>
+						<from>If_5</from>
+						<input>input</input>
+						<to>If_8</to>
+						<output>false</output>
+					</connection>
+					<connection>
+						<from>CompareIntegers_6</from>
+						<input>value</input>
+						<to>If_8</to>
+						<output>less</output>
+					</connection>
+					<connection>
+						<from>If_8</from>
+						<input>input</input>
+						<to>SetVariable_11</to>
+						<output>true</output>
+					</connection>
+					<connection>
+						<from>GetCurrentProgress_1</from>
+						<input>a</input>
+						<to>CompareIntegers_6</to>
+						<output>progress</output>
+					</connection>
+				</connections>
+			</macro>
+			<macro>
+				<name>random_sequence</name>
 				<blocks>
 					<block>
 						<class>MacroInput</class>
@@ -1090,7 +1408,7 @@
 						<id>MacroOutput_1</id>
 						<params>
 							<param>
-								stage_range_1
+								out
 								<name>Output Name</name>
 								<type>StringT</type>
 							</param>
@@ -1103,23 +1421,11 @@
 						<slots/>
 					</block>
 					<block>
-						<class>If</class>
-						<id>If_5</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>CompareIntegers</class>
-						<id>CompareIntegers_7</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_2</id>
 						<params>
 							<param>
-								range_1
+								random_from
 								<name>Input Name</name>
 								<type>StringT</type>
 							</param>
@@ -1137,18 +1443,59 @@
 						<slots/>
 					</block>
 					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_2</id>
+						<class>SetVariable</class>
+						<id>SetVariable_4</id>
+						<buddy>Variable_8</buddy>
 						<params>
 							<param>
-								stage_range_2
-								<name>Output Name</name>
+								StringT
+								<name>Variable Type</name>
+								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>Concatenate</class>
+						<id>Concatenate_1</id>
+						<params>
+							<param>
+								2
+								<name>Input Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>i0</name>
+								<const>\seq_\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
+						<class>RandomInteger</class>
+						<id>RandomInteger_1</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_3</id>
+						<params>
+							<param>
+								random_to
+								<name>Input Name</name>
 								<type>StringT</type>
 							</param>
 							<param>
-								EventT
-								<name>Output Type</name>
+								IntT
+								<name>Input Type</name>
 								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
 							</param>
 						</params>
 						<slots/>
@@ -1170,211 +1517,43 @@
 						</params>
 						<slots/>
 					</block>
-					<block>
-						<class>If</class>
-						<id>If_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>GetCurrentProgress</class>
-						<id>GetCurrentProgress_4</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>CompareIntegers</class>
-						<id>CompareIntegers_1</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_3</id>
-						<params>
-							<param>
-								range_2
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								IntT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_3</id>
-						<params>
-							<param>
-								stage_range_3
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_2</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>CompareIntegers</class>
-						<id>CompareIntegers_2</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroOutput</class>
-						<id>MacroOutput_4</id>
-						<params>
-							<param>
-								stage_range_4
-								<name>Output Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								EventT
-								<name>Output Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_4</id>
-						<params>
-							<param>
-								range_3
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								IntT
-								<name>Input Type</name>
-								<type>TypeT</type>
-							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
 				</blocks>
 				<connections>
 					<connection>
-						<from>If_5</from>
-						<input>stage_range_1</input>
+						<from>SetVariable_4</from>
+						<input>out</input>
 						<to>MacroOutput_1</to>
-						<output>true</output>
+						<output>out</output>
 					</connection>
 					<connection>
 						<from>MacroInput_1</from>
 						<input>input</input>
-						<to>If_5</to>
+						<to>SetVariable_4</to>
 						<output>in</output>
 					</connection>
 					<connection>
-						<from>CompareIntegers_7</from>
+						<from>Concatenate_1</from>
 						<input>value</input>
-						<to>If_5</to>
-						<output>less</output>
+						<to>SetVariable_4</to>
+						<output>res</output>
 					</connection>
 					<connection>
-						<from>GetCurrentProgress_4</from>
-						<input>a</input>
-						<to>CompareIntegers_7</to>
-						<output>progress</output>
+						<from>RandomInteger_1</from>
+						<input>i1</input>
+						<to>Concatenate_1</to>
+						<output>res</output>
 					</connection>
 					<connection>
 						<from>MacroInput_2</from>
-						<input>b</input>
-						<to>CompareIntegers_7</to>
-						<output>range_1</output>
-					</connection>
-					<connection>
-						<from>If_1</from>
-						<input>stage_range_2</input>
-						<to>MacroOutput_2</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>If_5</from>
-						<input>input</input>
-						<to>If_1</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>CompareIntegers_1</from>
-						<input>value</input>
-						<to>If_1</to>
-						<output>less</output>
-					</connection>
-					<connection>
-						<from>GetCurrentProgress_4</from>
 						<input>a</input>
-						<to>CompareIntegers_1</to>
-						<output>progress</output>
+						<to>RandomInteger_1</to>
+						<output>random_from</output>
 					</connection>
 					<connection>
 						<from>MacroInput_3</from>
 						<input>b</input>
-						<to>CompareIntegers_1</to>
-						<output>range_2</output>
-					</connection>
-					<connection>
-						<from>If_2</from>
-						<input>stage_range_3</input>
-						<to>MacroOutput_3</to>
-						<output>true</output>
-					</connection>
-					<connection>
-						<from>If_1</from>
-						<input>input</input>
-						<to>If_2</to>
-						<output>false</output>
-					</connection>
-					<connection>
-						<from>CompareIntegers_2</from>
-						<input>value</input>
-						<to>If_2</to>
-						<output>less</output>
-					</connection>
-					<connection>
-						<from>GetCurrentProgress_4</from>
-						<input>a</input>
-						<to>CompareIntegers_2</to>
-						<output>progress</output>
-					</connection>
-					<connection>
-						<from>MacroInput_4</from>
-						<input>b</input>
-						<to>CompareIntegers_2</to>
-						<output>range_3</output>
-					</connection>
-					<connection>
-						<from>If_2</from>
-						<input>stage_range_4</input>
-						<to>MacroOutput_4</to>
-						<output>false</output>
+						<to>RandomInteger_1</to>
+						<output>random_to</output>
 					</connection>
 				</connections>
 			</macro>

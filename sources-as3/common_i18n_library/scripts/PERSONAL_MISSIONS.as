@@ -57,6 +57,8 @@ package
       
       public static const OPERATIONS_TITLE11:String = "#personal_missions:operations/title11";
       
+      public static const OPERATIONS_LASTOPERATIONTANKNAME:String = "#personal_missions:operations/lastOperationTankName";
+      
       public static const OPERATIONS_CURRENT_DESC:String = "#personal_missions:operations/current/desc";
       
       public static const OPERATIONS_COMPLETED_DESC:String = "#personal_missions:operations/completed/desc";

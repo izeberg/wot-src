@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB134_FV242B_Condor/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.850463 0.000016 -4.332203</min>
+		<max>1.850463 1.211645 4.111462</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

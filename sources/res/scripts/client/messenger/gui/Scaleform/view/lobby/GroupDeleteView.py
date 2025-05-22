@@ -1,5 +1,5 @@
+from gui.Scaleform.daapi.view.meta.GroupDeleteViewMeta import GroupDeleteViewMeta
 from gui.Scaleform.locale.MESSENGER import MESSENGER
-from messenger.gui.Scaleform.meta.GroupDeleteViewMeta import GroupDeleteViewMeta
 from messenger import normalizeGroupId
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter

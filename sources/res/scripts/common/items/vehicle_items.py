@@ -411,7 +411,7 @@ class Shell(BasicItem):
                  'stun', 'effectsIndex', 'tags', 'secondaryAttackReason', 'useAltDamageRandomization',
                  'dynamicEffectsIndexes', 'hitDeviceChanceMultiplier', 'hitCrewChanceMultiplier',
                  'maxDistanceInsideVehicle', 'damagedDevicesLimit', 'engineFireFactor',
-                 'distanceDmg')
+                 'distanceDmg', 'delayedBomb')
 
     def __init__(self, typeID, componentID, componentName, compactDescr):
         super(Shell, self).__init__(typeID, componentID, componentName, compactDescr)
@@ -436,11 +436,16 @@ class Shell(BasicItem):
         self.damagedDevicesLimit = None
         self.engineFireFactor = None
         self.distanceDmg = None
+        self.delayedBomb = component_constants.DEFAULT_SHELL_DELAYED_BOMB
         return
 
     def __repr__(self):
         nationId, shellId = self.id
         return ('Shell(nation = {}, shellId = {}, shellName={})').format(nations.NAMES[nationId], shellId, self.name)
+
+    @property
+    def isDelayedBomb(self):
+        return bool(self.delayedBomb.explosionDelay)
 
     @property
     def kind(self):

@@ -32,7 +32,6 @@ class PersonalMissionsController(IPersonalMissionsController):
         self.onQuestsUpdated = Event(self.__eventManager)
         self.onUpdated = Event(self.__eventManager)
         self.onItemCacheUpdated = Event(self.__eventManager)
-        self.onRewardsViewClose = Event(self.__eventManager)
         self.__sysMessagesController = _PersonalMissionsSystemMessagesController()
         self.sysMessageController.init()
         self.__postProgressionVehicles = None
@@ -42,7 +41,6 @@ class PersonalMissionsController(IPersonalMissionsController):
         self.onQuestsUpdated.clear()
         self.onUpdated.clear()
         self.onItemCacheUpdated.clear()
-        self.onRewardsViewClose.clear()
 
     def onAccountBecomeNonPlayer(self):
         self.__eventsCache.onProgressUpdated -= self.__onProgressUpdated

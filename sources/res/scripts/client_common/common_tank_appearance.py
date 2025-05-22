@@ -554,7 +554,7 @@ class CommonTankAppearance(ScriptGameObject):
                 _logger.error('Failed to attach VehicleStickers. Missing VehicleStickers. Vehicle: %s', self._vehicle)
             return
         self.vehicleStickers.alpha = DEFAULT_STICKERS_ALPHA
-        self.vehicleStickers.attach(compoundModel=self.compoundModel, isDamaged=isCurrentModelDamaged, showDamageStickers=not isCurrentModelDamaged)
+        self.vehicleStickers.attach(compoundModel=self.compoundModel, isDamaged=isCurrentModelDamaged, showDamageStickers=not isCurrentModelDamaged, collisionComponent=self.collisions)
         return
 
     def _detachStickers(self):

@@ -18,6 +18,13 @@ class ReloadEffectsType(object):
     AUTO_RELOAD = 'AutoReload'
     DUALGUN_RELOAD = 'DualGunReload'
     AUTO_SHOOT_CHANGE_SHELL_RELOAD = 'AutoShootChangeShellReload'
+    DUALGUN_AUTORELOAD = 'DualGunAutoReload'
+
+
+class ReloadType(object):
+    ANY = 'any'
+    AUTORELOAD = 'autoreload'
+    DUALGUN = 'dualgun'
 
 
 def _createReloadEffectDesc(eType, dataSection):
@@ -164,6 +171,23 @@ class _AutoReloadDesc(_ReloadDesc):
         descr = copy(self)
         descr.reloadStart = self._intuitionOverrides['reloadStart']
         return AutoReload(descr)
+
+
+class _DualGunAutoReloadDesc(_ReloadDesc):
+
+    def __init__(self, dataSection, eType):
+        super(_DualGunAutoReloadDesc, self).__init__()
+        self.dualGunDesc = _DualGunReloadDesc(dataSection, eType)
+        self.autoReloadDesc = _AutoReloadDesc(dataSection, eType)
+        self.dualGunDesc.soundEvent = dataSection.readString('dualGunSound', '')
+        self.autoReloadDesc.soundEvent = dataSection.readString('autoReloadSound', '')
+        self.effectType = eType
+
+    def create(self):
+        return DualGunAutoReload(self)
+
+    def createIntuitionReload(self):
+        return self.autoReloadDesc.createIntuitionReload()
 
 
 class _AutoShootChangeShellGunReloadDescr(_SimpleReloadDesc):
@@ -480,27 +504,27 @@ class AutoReload(_GunReload):
     def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity):
         if gEffectsDisabled():
             return
+        if BARREL_DEBUG_ENABLED:
+            LOG_DEBUG(('AutoReload::start time = {0} {1} {2} {3} {4} {5} {6} ').format(BigWorld.time(), shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart))
+        SoundGroups.g_instance.setSwitch(_CALIBER_RELOAD_SOUND_SWITCH, self._desc.caliber)
+        self.stopCallback(self.__onShellInTheBarrel)
+        self._almostCompleteSnd = None
+        if self._sound is None:
+            self._sound = SoundGroups.g_instance.getSound2D(self._desc.soundEvent)
         else:
-            if BARREL_DEBUG_ENABLED:
-                LOG_DEBUG(('AutoReload::start time = {0} {1} {2} {3} {4} {5} {6} ').format(BigWorld.time(), shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart))
-            SoundGroups.g_instance.setSwitch(_CALIBER_RELOAD_SOUND_SWITCH, self._desc.caliber)
-            self.stopCallback(self.__onShellInTheBarrel)
-            self._almostCompleteSnd = None
-            if self._sound is None:
-                self._sound = SoundGroups.g_instance.getSound2D(self._desc.soundEvent)
-            else:
-                self._sound.stop()
-            if reloadStart:
-                if shellCount == 0:
+            self._sound.stop()
+        if reloadStart:
+            if shellCount == 0:
+                if self._desc.reloadStart:
                     playByName(self._desc.reloadStart)
-                    if alert:
-                        playByName(self._desc.ammoLow)
-            time = shellReloadTime - self._desc.duration
-            if time < 0.0:
-                time = 0.0
-            self.delayCallback(time, self.__onShellInTheBarrel, shellCount, reloadShellCount, BigWorld.time() + time)
-            self._checkAndPlayGunRammerEffect(shellReloadTime)
-            return
+                if alert and self._desc.ammoLow:
+                    playByName(self._desc.ammoLow)
+        time = shellReloadTime - self._desc.duration
+        if time < 0.0:
+            time = 0.0
+        self.delayCallback(time, self.__onShellInTheBarrel, shellCount, reloadShellCount, BigWorld.time() + time)
+        self._checkAndPlayGunRammerEffect(shellReloadTime)
+        return
 
     def stop(self):
         if self._sound is not None:
@@ -521,24 +545,28 @@ class AutoReload(_GunReload):
             LOG_DEBUG(('AutoReload::onClipLoad time = {0} {1} {2} {3}').format(BigWorld.time(), timeLeft, shellCount, lastShell))
         self.stopCallback(self.__onAlmostComplete)
         self.stopCallback(self.__onClipShellLoad)
-        if shellCount > 0 and not lastShell:
-            time = timeLeft - self._desc.clipShellLoadT
-            if time < 0.0:
-                time = 0.0
-            self.delayCallback(time, self.__onClipShellLoad, BigWorld.time() + time)
-        if lastShell and canBeFull:
-            time = timeLeft - self._desc.almostCompleteT
-            if time < 0.0:
-                time = 0.0
-            self.delayCallback(time, self.__onAlmostComplete, BigWorld.time() + time)
+        if self._desc.clipShellLoad:
+            if shellCount > 0 and not lastShell:
+                time = timeLeft - self._desc.clipShellLoadT
+                if time < 0.0:
+                    time = 0.0
+                self.delayCallback(time, self.__onClipShellLoad, BigWorld.time() + time)
+        if self._desc.almostComplete:
+            if lastShell and canBeFull:
+                time = timeLeft - self._desc.almostCompleteT
+                if time < 0.0:
+                    time = 0.0
+                self.delayCallback(time, self.__onAlmostComplete, BigWorld.time() + time)
 
     def onFull(self):
-        if BARREL_DEBUG_ENABLED:
-            LOG_DEBUG('AutoReload::onFull')
-        playByName(self._desc.autoLoaderFull)
+        if self._desc.autoLoaderFull:
+            if BARREL_DEBUG_ENABLED:
+                LOG_DEBUG('AutoReload::onFull')
+            playByName(self._desc.autoLoaderFull)
 
     def shotFail(self):
-        playByName(self._desc.shotFail)
+        if self._desc.shotFail:
+            playByName(self._desc.shotFail)
 
     def __onShellInTheBarrel(self, shellCount, reloadShellCount, time):
         if fabs(time - BigWorld.time()) > 0.1:
@@ -551,7 +579,7 @@ class AutoReload(_GunReload):
                 if replayCtrl.isPlaying and replayCtrl.isTimeWarpInProgress:
                     return
                 self._sound.play()
-                if shellCount == 1 and reloadShellCount > 2:
+                if shellCount == 1 and reloadShellCount > 2 and self._desc.lastShellAlert:
                     SoundGroups.g_instance.playSound2D(self._desc.lastShellAlert)
             return
 
@@ -593,7 +621,7 @@ class DualGunReload(_GunReload):
             self.__sound = SoundGroups.g_instance.getSound2D(self._desc.soundEvent)
         if timeToStart > 0:
             self.delayCallback(timeToStart, self.__onReloadStart, BigWorld.time() + timeToStart)
-        if ammoLow:
+        if ammoLow and self._desc.ammoLowSound:
             timeToStart = shellReloadTime - self._desc.runTimeDeltaAmmoLow
             self.__ammoLowSound = SoundGroups.g_instance.getSound2D(self._desc.ammoLowSound)
             self.delayCallback(timeToStart, self.__onAmmoLow, BigWorld.time() + timeToStart)
@@ -638,6 +666,36 @@ class DualGunReload(_GunReload):
                     return
                 self.__ammoLowSound.play()
             return
+
+
+class DualGunAutoReload(_GunReload):
+
+    def __init__(self, effectDesc):
+        _GunReload.__init__(self, effectDesc)
+        self.__dualGunReload = DualGunReload(effectDesc.dualGunDesc)
+        self.__autoReload = AutoReload(effectDesc.autoReloadDesc)
+
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, reloadType):
+        if reloadType in (ReloadType.DUALGUN, ReloadType.ANY):
+            self.__dualGunReload.start(shellReloadTime, alert, directTrigger=reloadType == ReloadType.DUALGUN)
+        elif reloadType == ReloadType.AUTORELOAD:
+            self.__autoReload.start(shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity)
+
+    def stop(self):
+        self.__dualGunReload.stop()
+        self.__autoReload.stop()
+
+    def reloadEnd(self):
+        self.__autoReload.reloadEnd()
+
+    def onClipLoad(self, timeLeft, shellCount, lastShell, canBeFull):
+        self.__autoReload.onClipLoad(timeLeft, shellCount, lastShell, canBeFull)
+
+    def onFull(self):
+        self.__autoReload.onFull()
+
+    def shotFail(self):
+        self.__autoReload.shotFail()
 
 
 class AutoShootChangeShellReload(_GunReload):
@@ -703,10 +761,10 @@ class ReloadEffectStrategy(object):
         self.__reloadInProgress = False
         return
 
-    def start(self, timeLeft, baseTime, clipCapacity, directTrigger=False):
+    def start(self, timeLeft, baseTime, clipCapacity, reloadType=ReloadType.ANY):
         reloadFromStart = (self.__reloadInProgress or fabs(timeLeft - baseTime)) < 0.001 if 1 else False
         self.__reloadInProgress = True
-        self.__reloadStartEffect(timeLeft, clipCapacity, reloadFromStart, directTrigger)
+        self.__reloadStartEffect(timeLeft, clipCapacity, reloadFromStart, reloadType)
 
     def stop(self):
         self.__reloadInProgress = False
@@ -739,7 +797,7 @@ class ReloadEffectStrategy(object):
     def getGunReloadType(self):
         return self.__gunReloadEffect.getEffectType()
 
-    def __reloadStartEffect(self, timeLeft, clipCapacity, reloadFromStart, directTrigger=False):
+    def __reloadStartEffect(self, timeLeft, clipCapacity, reloadFromStart, reloadType):
         ammoCtrl = self.__sessionProvider.shared.ammo
         currentShellCD = ammoCtrl.getCurrentShellCD()
         shellCounts = ammoCtrl.getShells(currentShellCD)
@@ -758,10 +816,14 @@ class ReloadEffectStrategy(object):
             if clipCapacity > shellCounts[0]:
                 ammoLow = True
                 reloadShellCount = shellCounts[0]
-            if self.getGunReloadType() == ReloadEffectsType.DUALGUN_RELOAD:
+            gunReloadType = self.getGunReloadType()
+            if gunReloadType in (ReloadEffectsType.DUALGUN_RELOAD, ReloadEffectsType.DUALGUN_AUTORELOAD):
                 if shellsQuantityLeft == 1:
                     ammoLow = True
-                relloadEffect.start(timeLeft, ammoLow, directTrigger)
+            if gunReloadType == ReloadEffectsType.DUALGUN_RELOAD:
+                relloadEffect.start(timeLeft, ammoLow, directTrigger=reloadType == ReloadType.DUALGUN)
+            elif gunReloadType == ReloadEffectsType.DUALGUN_AUTORELOAD:
+                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity, reloadType)
             else:
                 relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity)
         return
@@ -783,4 +845,5 @@ RELOAD_EFFECTS_DESCR_MAP = {ReloadEffectsType.SIMPLE_RELOAD: _SimpleReloadDesc,
    ReloadEffectsType.BARREL_RELOAD: _BarrelReloadDesc, 
    ReloadEffectsType.AUTO_RELOAD: _AutoReloadDesc, 
    ReloadEffectsType.DUALGUN_RELOAD: _DualGunReloadDesc, 
-   ReloadEffectsType.AUTO_SHOOT_CHANGE_SHELL_RELOAD: _AutoShootChangeShellGunReloadDescr}
+   ReloadEffectsType.AUTO_SHOOT_CHANGE_SHELL_RELOAD: _AutoShootChangeShellGunReloadDescr, 
+   ReloadEffectsType.DUALGUN_AUTORELOAD: _DualGunAutoReloadDesc}

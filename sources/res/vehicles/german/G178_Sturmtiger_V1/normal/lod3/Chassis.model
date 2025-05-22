@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.783979 -0.000000 -2.877537</min>
+		<max>1.783979 1.187783 2.966013</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G178_Sturmtiger_V1/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/german/G178_Sturmtiger_V1/normal/lod4/Chassis</parent>
+	<extent>192</extent>
+</root>

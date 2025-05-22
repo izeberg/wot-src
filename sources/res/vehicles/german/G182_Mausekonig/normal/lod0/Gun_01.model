@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.270273 -0.528566 0.330045</min>
+		<max>1.270273 0.659905 5.781850</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G182_Mausekonig/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G182_Mausekonig/normal/lod0/Gun_01</nodefullVisual>
+</root>

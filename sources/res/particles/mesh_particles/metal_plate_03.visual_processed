@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>Material #112</identifier>
-					<fx>shaders/wg_particles/pbs_mesh_particles.fx</fx>
+					<fx>shaders/particles/pbs_mesh_particles.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>particles/mesh_particles/tex/metal_am.dds</Texture>

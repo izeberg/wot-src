@@ -1,7 +1,7 @@
+from gui.Scaleform.daapi.view.meta.ContactsSettingsViewMeta import ContactsSettingsViewMeta
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from account_helpers.AccountSettings import AccountSettings, CONTACTS
 from helpers import dependency
-from messenger.gui.Scaleform.meta.ContactsSettingsViewMeta import ContactsSettingsViewMeta
 from skeletons.account_helpers.settings_core import ISettingsCore
 
 class ContactsSettingsView(ContactsSettingsViewMeta):

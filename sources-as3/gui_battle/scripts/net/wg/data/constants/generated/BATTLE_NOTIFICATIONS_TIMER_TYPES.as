@@ -130,10 +130,6 @@ package net.wg.data.constants.generated
       public static const ABILITY:String = "ability";
       
       public static const THERMAL_VISION_WARNING:String = "thermalVisionWarning";
-      
-      public static const HB_ARTILLERY_ON_YOURSELF:String = "hbArtilleryOnYourself";
-      
-      public static const HB_LAST_STAND:String = "hbLastStand";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_TYPES()

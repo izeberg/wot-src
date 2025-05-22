@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.519951 -0.283149 0.178986</min>
+		<max>0.519951 0.289613 6.579003</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/italy/It36_Gasta/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/italy/It36_Gasta/normal/lod0/Gun_01</nodefullVisual>
+</root>

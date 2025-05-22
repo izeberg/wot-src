@@ -5,6 +5,11 @@ from shared_utils import nextTick
 
 class ArmoryYardEntryPoint(InjectComponentAdaptor):
 
+    def __init__(self):
+        super(ArmoryYardEntryPoint, self).__init__()
+        self.__view = None
+        return
+
     @nextTick
     def _createInjectView(self, *args):
         super(ArmoryYardEntryPoint, self)._createInjectView(*args)
@@ -15,6 +20,11 @@ class ArmoryYardEntryPoint(InjectComponentAdaptor):
 
 
 class ArmoryYardEntryPointWidget(InjectComponentAdaptor):
+
+    def __init__(self):
+        super(ArmoryYardEntryPointWidget, self).__init__()
+        self.__view = None
+        return
 
     def _makeInjectView(self):
         self.__view = ArmoryYardWidgetEntryPointView()

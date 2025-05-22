@@ -7,9 +7,9 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_08</name>
+		<name>stg_08_engine</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Ch74_WZ_57_I/normal/lod0/stg_08_transmission_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_8_engine_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
@@ -65,14 +65,14 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>Stage_08</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>6.866667</duration>
+				<duration>7.000000</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -80,20 +80,20 @@
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000 1.066183 -2.249084</value>
+				<startTime>1.000000</startTime>
+				<value>-0.088823 1.066183 -2.026142</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>Sound</name>
+			<name>ay_ep_06_seq_stage_08</name>
 			<type>sound</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>6.000000</duration>
-				<sequenceSound>ay_ep_05_seq_stage_08</sequenceSound>
+				<duration>6.750000</duration>
+				<sequenceSound>ay_ep_06_seq_stage_08</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

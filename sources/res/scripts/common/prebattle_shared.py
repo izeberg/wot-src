@@ -15,6 +15,9 @@ def encodeRoster(team, assigned):
 
 
 def isVehicleValid(vehDescr, vehAmmo, limits):
+    if vehDescr.type.compactDescr in limits['forbiddenVehicles']:
+        return (
+         False, 'limits/tags')
     minLevel, maxLevel = limits['level']
     classLevelLimits = limits['classLevel']
     for classTag in VEHICLE_CLASSES:
@@ -220,7 +223,8 @@ LIMIT_DEFAULTS = {'maxCountTotal': 256,
    'vehicles': None, 
    'components': {}, 'ammo': None, 
    'shells': {}, 'tags': None, 
-   'nations': None}
+   'nations': None, 
+   'forbiddenVehicles': set()}
 
 def _collectCurrentReplaceableVehicleComponents(vehicleDescr):
     res = []

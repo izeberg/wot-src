@@ -4,7 +4,6 @@ package net.wg.data.VO
    import net.wg.gui.lobby.questsWindow.data.PersonalInfoVO;
    import net.wg.gui.lobby.questsWindow.data.StateVO;
    import net.wg.gui.lobby.questsWindow.data.SubtaskVO;
-   import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class BattleResultsQuestVO extends SubtaskVO
    {
@@ -16,7 +15,7 @@ package net.wg.data.VO
       
       public var questType:int = -1;
       
-      public var personalInfo:Vector.<PersonalInfoVO> = null;
+      public var personalInfo:Vector.<Vector.<PersonalInfoVO>> = null;
       
       public var isLinkBtnVisible:Boolean = true;
       
@@ -45,12 +44,18 @@ package net.wg.data.VO
       
       override protected function onDispose() : void
       {
-         var _loc1_:IDisposable = null;
+         var _loc1_:Vector.<PersonalInfoVO> = null;
+         var _loc2_:PersonalInfoVO = null;
          if(this.personalInfo != null)
          {
             for each(_loc1_ in this.personalInfo)
             {
-               _loc1_.dispose();
+               for each(_loc2_ in _loc1_)
+               {
+                  _loc2_.dispose();
+               }
+               _loc1_.splice(0,_loc1_.length);
+               _loc1_ = null;
             }
             this.personalInfo.splice(0,this.personalInfo.length);
             this.personalInfo = null;
@@ -76,15 +81,22 @@ package net.wg.data.VO
       override protected function onDataWrite(param1:String, param2:Object) : Boolean
       {
          var _loc3_:Array = null;
-         var _loc4_:Object = null;
+         var _loc4_:Array = null;
+         var _loc5_:Vector.<PersonalInfoVO> = null;
+         var _loc6_:Object = null;
          if(param1 == PERSONAL_INFO_KEY)
          {
             _loc3_ = param2 as Array;
             App.utils.asserter.assertNotNull(_loc3_,PERSONAL_INFO_KEY + Errors.CANT_NULL);
-            this.personalInfo = new Vector.<PersonalInfoVO>(0);
+            this.personalInfo = new Vector.<Vector.<PersonalInfoVO>>(0);
             for each(_loc4_ in _loc3_)
             {
-               this.personalInfo.push(new PersonalInfoVO(_loc4_));
+               _loc5_ = new Vector.<PersonalInfoVO>(0);
+               for each(_loc6_ in _loc4_)
+               {
+                  _loc5_.push(new PersonalInfoVO(_loc6_));
+               }
+               this.personalInfo.push(_loc5_);
             }
             return false;
          }

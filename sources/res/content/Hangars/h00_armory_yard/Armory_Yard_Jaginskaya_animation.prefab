@@ -8,14 +8,19 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Jaginskaya</name>
+			<name>Jaginskaya_old</name>
 			<UUID>21771e81-8267-42db-b099-2d5060611b77</UUID>
-			<flags>0</flags>
+			<flags>8</flags>
 		</GameObject>
 		<GameObject>
 			<name>Racoon</name>
 			<UUID>194657e2-2a51-4dd5-903a-bbd1c0de5e23</UUID>
 			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Jaginskaya_new</name>
+			<UUID>64b7dfb2-e8a6-34c6-b71d-aef0e7c61880</UUID>
+			<flags>8</flags>
 		</GameObject>
 	</GameObjects>
 	<components>
@@ -34,6 +39,16 @@
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>a2189115-3bdb-436d-a60a-f8b51d4fb967</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -71,7 +86,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 0 0.487374
+							-8.311 1.554 5.34
 							<!--BW_String-->
 						</value>
 					</property>
@@ -95,7 +110,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							3.47596 0 2.28698
+							-4.835 1.554 7.122
 							<!--BW_String-->
 						</value>
 					</property>
@@ -106,6 +121,30 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							4.324 1.554 -9.461
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 3.14159 0
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -293,6 +332,96 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Auto Start</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Layers</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Path</name>
+										<isAsset>true</isAsset>
+										<value>content/Hangars/h00_armory_yard/Jaginskaya/Jaginskaya_animations_new.ssm</value>
+									</property>
+									<property>
+										<name>Properties</name>
+										<object>
+											<property>
+												<name>delay</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>speed</name>
+												<value>1</value>
+											</property>
+											<property>
+												<name>loop</name>
+												<value>0</value>
+											</property>
+											<property>
+												<name>loopCount</name>
+												<value>-1</value>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>Clip</name>
+										<value>&lt;Default Clip&gt;</value>
+									</property>
+									<property>
+										<name>LayerName</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Auto Start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Graphics preset</name>
+										<value>2</value>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h00_armory_yard/Jaginskaya/Jaginskaya_animations_new.ssm</value>
+					</property>
+					<property>
+						<name>Delay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Loop Count</name>
+						<value>-1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -308,7 +437,7 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -323,7 +452,22 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
-						<value>1</value>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h00_armory_yard/Jaginskaya/normal/lod0/Jaginskaya_anim_new.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -333,7 +477,7 @@
 			<version>1</version>
 			<component>
 				<objectIndex>0</objectIndex>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>Path</name>

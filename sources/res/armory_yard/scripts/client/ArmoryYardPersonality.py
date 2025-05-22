@@ -1,5 +1,5 @@
 from armory_yard.gui.Scaleform import registerArmoryYardScaleform, registerArmoryYardTooltipsBuilders
-from armory_yard.gui.game_control import registerAYGameControllers, registerAYAwardControllers, registerAYShopControllers
+from armory_yard.gui.game_control import registerAYGameControllers, registerAYShopControllers
 from armory_yard.gui.shared.gui_items.items_actions import registerActions
 from debug_utils import LOG_DEBUG
 
@@ -8,7 +8,6 @@ def preInit():
     registerArmoryYardTooltipsBuilders()
     registerAYGameControllers()
     registerAYShopControllers()
-    registerAYAwardControllers()
     registerActions()
 
 

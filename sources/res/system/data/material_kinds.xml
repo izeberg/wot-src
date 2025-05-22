@@ -256,6 +256,46 @@
 		<help>Armor group 32.</help>
 	</kind>
 	<kind>
+		<id>150</id>
+		<desc>armor_33</desc>
+		<help>Armor group 33.</help>
+	</kind>
+	<kind>
+		<id>151</id>
+		<desc>armor_34</desc>
+		<help>Armor group 34.</help>
+	</kind>
+	<kind>
+		<id>152</id>
+		<desc>armor_35</desc>
+		<help>Armor group 35.</help>
+	</kind>
+	<kind>
+		<id>153</id>
+		<desc>armor_36</desc>
+		<help>Armor group 36.</help>
+	</kind>
+	<kind>
+		<id>154</id>
+		<desc>armor_37</desc>
+		<help>Armor group 37.</help>
+	</kind>
+	<kind>
+		<id>155</id>
+		<desc>armor_38</desc>
+		<help>Armor group 38.</help>
+	</kind>
+	<kind>
+		<id>156</id>
+		<desc>armor_39</desc>
+		<help>Armor group 39.</help>
+	</kind>
+	<kind>
+		<id>157</id>
+		<desc>armor_40</desc>
+		<help>Armor group 40.</help>
+	</kind>
+	<kind>
 		<id>63</id>
 		<desc>shield_front</desc>
 		<help>Energy shield in the front of tank.</help>
@@ -517,7 +557,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Desert_02_3_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandDesert_04_00344_yellow_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sulfur_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Soil_Stony_Foliage_Fine_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Footprint_01_AM</terrain>
 	</kind>
 	<kind>
@@ -581,7 +620,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Farmland_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/GreatWall_Leafs_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_wet_light_02_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Debris_Dirty_Fine_03_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandSoft_01_00342_Dark_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/StonesSandyDark_00346_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Gravel_Sandy_Fine_08_AM</terrain>
@@ -746,8 +784,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_River_Rock_01_Dark_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_Stones_Big_13_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Concrete_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_large_rectangular_05_red_AM.dds</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_large_rectangular_03_AM.dds</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_Stony_Fine_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_red_debris_rocks_Cosmic_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Stone_03_AM</terrain>
@@ -756,7 +792,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_09_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingBlockStonyBigSnow_00129_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Mid_03_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_66_AM</terrain>
 	</kind>
 	<kind>
 		<id>112</id>

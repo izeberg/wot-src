@@ -90,6 +90,7 @@ class ArmoryYardVehiclePreview(VehiclePreview, IGlobalListener):
 
     def onGoToPostProgressionClick(self):
         self.__goToPostProgression = True
+        self._resetPostProgressionBullet()
         if self._backAlias == VIEW_ALIAS.ARMORY_YARD_VEH_POST_PROGRESSION and callable(self._previewBackCb):
             self._previewBackCb()
         else:

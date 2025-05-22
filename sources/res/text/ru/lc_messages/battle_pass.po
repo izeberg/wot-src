@@ -416,35 +416,17 @@ msgstr "Текущий этап:"
 msgid "chapter/fullName/1"
 msgstr "Сила духа"
 
-msgid "chapter/fullName/145"
-msgstr "Красная Фурия"
+msgid "chapter/fullName/171"
+msgstr "+++Сила духа"
 
-msgid "chapter/fullName/151"
-msgstr "Петропавловский маяк"
+msgid "chapter/fullName/172"
+msgstr "+++Восточный ветер"
 
-msgid "chapter/fullName/152"
-msgstr "Шторм покорённый"
+msgid "chapter/fullName/173"
+msgstr "+++Взвейся, знамя!"
 
-msgid "chapter/fullName/153"
-msgstr "Силовое поле"
-
-msgid "chapter/fullName/154"
-msgstr "Работа на совесть"
-
-msgid "chapter/fullName/161"
-msgstr "Сила духа"
-
-msgid "chapter/fullName/162"
-msgstr "Восточный ветер"
-
-msgid "chapter/fullName/163"
-msgstr "Взвейся, знамя!"
-
-msgid "chapter/fullName/164"
-msgstr "Победный марш"
-
-msgid "chapter/fullName/165"
-msgstr "Охота на мышей"
+msgid "chapter/fullName/174"
+msgstr "+++Победный марш"
 
 msgid "chapter/fullName/2"
 msgstr "Восточный ветер"
@@ -458,95 +440,41 @@ msgstr "Победный марш"
 msgid "chapter/fullName/5"
 msgstr "Охота на мышей"
 
-msgid "chapter/fullName/quoted/145"
-msgstr "Красная Фурия"
+msgid "chapter/fullName/quoted/171"
+msgstr "+++Сила духа"
 
-msgid "chapter/fullName/quoted/151"
-msgstr "Петропавловский маяк"
+msgid "chapter/fullName/quoted/172"
+msgstr "+++Восточный ветер"
 
-msgid "chapter/fullName/quoted/152"
-msgstr "Шторм покорённый"
+msgid "chapter/fullName/quoted/173"
+msgstr "+++Взвейся, знамя!"
 
-msgid "chapter/fullName/quoted/153"
-msgstr "Силовое поле"
+msgid "chapter/fullName/quoted/174"
+msgstr "+++Победный марш"
 
-msgid "chapter/fullName/quoted/154"
-msgstr "Работа на совесть"
+msgid "chapter/fullNameUppercased/171"
+msgstr "+++СИЛА ДУХА"
 
-msgid "chapter/fullName/quoted/161"
-msgstr "Сила духа"
+msgid "chapter/fullNameUppercased/172"
+msgstr "+++ВОСТОЧНЫЙ ВЕТЕР"
 
-msgid "chapter/fullName/quoted/162"
-msgstr "Восточный ветер"
+msgid "chapter/fullNameUppercased/173"
+msgstr "+++ВЗВЕЙСЯ, ЗНАМЯ!"
 
-msgid "chapter/fullName/quoted/163"
-msgstr "Взвейся, знамя!"
+msgid "chapter/fullNameUppercased/174"
+msgstr "+++ПОБЕДНЫЙ МАРШ"
 
-msgid "chapter/fullName/quoted/164"
-msgstr "Победный марш"
+msgid "chapter/fullNameUppercased/quoted/171"
+msgstr "+++СИЛА ДУХА"
 
-msgid "chapter/fullName/quoted/165"
-msgstr "Охота на мышей"
+msgid "chapter/fullNameUppercased/quoted/172"
+msgstr "+++ВОСТОЧНЫЙ ВЕТЕР"
 
-msgid "chapter/fullNameUppercased/145"
-msgstr "КРАСНАЯ ФУРИЯ"
+msgid "chapter/fullNameUppercased/quoted/173"
+msgstr "+++ВЗВЕЙСЯ, ЗНАМЯ!"
 
-msgid "chapter/fullNameUppercased/151"
-msgstr "ПЕТРОПАВЛОВСКИЙ МАЯК"
-
-msgid "chapter/fullNameUppercased/152"
-msgstr "ШТОРМ ПОКОРЁННЫЙ"
-
-msgid "chapter/fullNameUppercased/153"
-msgstr "СИЛОВОЕ ПОЛЕ"
-
-msgid "chapter/fullNameUppercased/154"
-msgstr "РАБОТА НА СОВЕСТЬ"
-
-msgid "chapter/fullNameUppercased/161"
-msgstr "СИЛА ДУХА"
-
-msgid "chapter/fullNameUppercased/162"
-msgstr "ВОСТОЧНЫЙ ВЕТЕР"
-
-msgid "chapter/fullNameUppercased/163"
-msgstr "ВЗВЕЙСЯ, ЗНАМЯ!"
-
-msgid "chapter/fullNameUppercased/164"
-msgstr "ПОБЕДНЫЙ МАРШ"
-
-msgid "chapter/fullNameUppercased/165"
-msgstr "ОХОТА НА МЫШЕЙ"
-
-msgid "chapter/fullNameUppercased/quoted/145"
-msgstr "КРАСНАЯ ФУРИЯ"
-
-msgid "chapter/fullNameUppercased/quoted/151"
-msgstr "ПЕТРОПАВЛОВСКИЙ МАЯК"
-
-msgid "chapter/fullNameUppercased/quoted/152"
-msgstr "ШТОРМ ПОКОРЁННЫЙ"
-
-msgid "chapter/fullNameUppercased/quoted/153"
-msgstr "СИЛОВОЕ ПОЛЕ"
-
-msgid "chapter/fullNameUppercased/quoted/154"
-msgstr "РАБОТА НА СОВЕСТЬ"
-
-msgid "chapter/fullNameUppercased/quoted/161"
-msgstr "СИЛА ДУХА"
-
-msgid "chapter/fullNameUppercased/quoted/162"
-msgstr "ВОСТОЧНЫЙ ВЕТЕР"
-
-msgid "chapter/fullNameUppercased/quoted/163"
-msgstr "ВЗВЕЙСЯ, ЗНАМЯ!"
-
-msgid "chapter/fullNameUppercased/quoted/164"
-msgstr "ПОБЕДНЫЙ МАРШ"
-
-msgid "chapter/fullNameUppercased/quoted/165"
-msgstr "ОХОТА НА МЫШЕЙ"
+msgid "chapter/fullNameUppercased/quoted/174"
+msgstr "+++ПОБЕДНЫЙ МАРШ"
 
 msgid "chapter/title"
 msgstr "ГЛАВА %(chapter)s"
@@ -910,7 +838,7 @@ msgid "howToEarnPoints/text/43"
 msgstr "Играйте на подходящей для режима технике"
 
 msgid "howToEarnPoints/text/50"
-msgstr "Играйте на подходящей для режима технике"
+msgstr "+++Играйте на подходящей для режима технике (начиная с VI уровня)+++"
 
 msgid "howToEarnPoints/title"
 msgstr "КАК ЗАРАБОТАТЬ ОЧКИ"
@@ -1468,7 +1396,7 @@ msgstr ""
 
 msgid "tooltips/RandomQuestTooltip/rewards/money"
 msgstr ""
-"%(whiteSpanish_Open)sКредиты, боны и свободный опыт%(whiteSpanish_Close)s"
+"%(whiteSpanish_Open)sСеребро, боны и свободный опыт%(whiteSpanish_Close)s"
 
 msgid "tooltips/RandomQuestTooltip/rewards/personal_reserves"
 msgstr "%(whiteSpanish_Open)sЛичные резервы%(whiteSpanish_Close)s"
@@ -1963,7 +1891,7 @@ msgid "trophyDeviceUpgradeConfim/submit"
 msgstr "Произвести наладку"
 
 msgid "trophyDeviceUpgradeConfim/submitTooltip"
-msgstr "Не хватает кредитов на наладку"
+msgstr "Не хватает серебра на наладку"
 
 msgid "trophyDeviceUpgradeConfim/title"
 msgstr ""

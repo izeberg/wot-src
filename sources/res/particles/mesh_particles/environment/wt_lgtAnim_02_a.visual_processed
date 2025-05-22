@@ -20,7 +20,7 @@
 				0
 				<material>
 					<identifier>principledshader36</identifier>
-					<fx>shaders/particles/wg_particles.fx</fx>
+					<fx>shaders/particles/particles.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>

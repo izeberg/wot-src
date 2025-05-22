@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.421374 -0.565756 -1.985863</min>
+		<max>0.361907 0.427396 5.719372</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/crash/lod0/Gun_01</nodelessVisual>
+</root>

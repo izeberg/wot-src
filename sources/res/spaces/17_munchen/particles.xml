@@ -24,6 +24,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf_EU_004_Handrails_End_Fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf_EU_004_Handrails_End_Touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_gaf_EU_004_Handrails_tile.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env019_Rubbish3.vfx</fn_effect_bin>
@@ -71,8 +72,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_UNI_820_EightyEight_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage4.vfx</fn_effect_bin>
@@ -109,15 +112,15 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/env_housesmoke_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_ash_ember.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_butterfly_yellow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_firesmoke_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_ash_ember.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_butterfly_white.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_long.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_particulates.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_AM_035_SmallShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_EU_054_SummerHouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_745_Pavilion.eff</fn_effect_bin>
@@ -130,6 +133,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_004_Handrails_End_Fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_004_Handrails_End_Touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_004_Handrails_tile.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env019_Rubbish3.eff</fn_effect_bin>
@@ -176,8 +180,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_820_EightyEight_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage4.eff</fn_effect_bin>
@@ -250,6 +256,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf_EU_004_Handrails_End_Fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf_EU_004_Handrails_End_Touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_gaf_EU_004_Handrails_tile.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_mle_UNI_001_SdKfz.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_rw_UNI_008_Semafor_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env019_Rubbish3.vfx</fn_effect_bin>
@@ -297,8 +304,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle025_Bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle046_Bag1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_UNI_820_EightyEight_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage4.vfx</fn_effect_bin>
@@ -335,15 +344,15 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_UNI_633_WaterPump_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/env_housesmoke_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_ash_ember.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_butterfly_white.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_butterfly_yellow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_firesmoke_thick.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/17_munchen_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_ash_ember.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_butterfly_white.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_long.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_firesmoke_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/17_munchen_particulates.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_AM_035_SmallShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_EU_054_SummerHouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_745_Pavilion.eff</fn_effect_bin>
@@ -356,6 +365,7 @@
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_004_Handrails_End_Fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_004_Handrails_End_Touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_gaf_EU_004_Handrails_tile.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_mle_UNI_001_SdKfz.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_rw_UNI_008_Semafor_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env019_Rubbish3.eff</fn_effect_bin>
@@ -402,8 +412,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle025_Bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle046_Bag1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_820_EightyEight_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage4.eff</fn_effect_bin>

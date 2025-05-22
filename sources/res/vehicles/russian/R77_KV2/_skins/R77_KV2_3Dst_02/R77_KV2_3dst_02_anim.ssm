@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>trigger</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>sleep</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>bees</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>trigger</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-100.000000 -90.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>bees</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>sleep</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-99.000000 8.500000 0.000000</uiPosition>
+	</node>
+</root>

@@ -7,9 +7,9 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_12</name>
+		<name>stg_12_fuel_system</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Ch74_WZ_57_I/normal/lod0/stg_12_turret_compartment_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_12_fuel_system_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
@@ -90,14 +90,14 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>Stage_12</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.066667</startTime>
-				<duration>6.733334</duration>
+				<startTime>1.000000</startTime>
+				<duration>5.800001</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -105,20 +105,34 @@
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
-				<startTime>0.033333</startTime>
-				<value>0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<startTime>1.000000</startTime>
+				<value>0.000000 0.956476 -1.352022</value>
+				<inTangent>0.000000 0.000000 -0.011902</inTangent>
+				<outTangent>0.000000 0.000000 -0.011902</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.866667</startTime>
+				<value>0.000000 0.956476 -1.374239</value>
+				<inTangent>0.000000 0.000000 0.838751</inTangent>
+				<outTangent>0.000000 0.000000 0.838751</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000 0.956476 2.567703</value>
+				<inTangent>-0.000000 -0.000000 1.689404</inTangent>
+				<outTangent>-0.000000 -0.000000 1.689404</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>Sound</name>
+			<name>ay_ep_06_seq_stage_12</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.066667</startTime>
-				<duration>6.466667</duration>
-				<sequenceSound>ay_ep_05_seq_stage_12</sequenceSound>
+				<startTime>1.000000</startTime>
+				<duration>5.733334</duration>
+				<sequenceSound>ay_ep_06_seq_stage_12</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

@@ -152,7 +152,7 @@
 				0
 				<material>
 					<identifier>s_nd0_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
 					<property>
@@ -160,20 +160,8 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableAO
 						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 					<property>
 						diffuseMap

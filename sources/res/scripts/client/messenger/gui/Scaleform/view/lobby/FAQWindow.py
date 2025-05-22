@@ -1,6 +1,6 @@
+from gui.Scaleform.daapi.view.meta.FAQWindowMeta import FAQWindowMeta
 from gui.shared.events import OpenLinkEvent
 from messenger.gui.Scaleform.data.faq_data import FAQList
-from messenger.gui.Scaleform.meta.FAQWindowMeta import FAQWindowMeta
 from messenger import g_settings
 FAQ_BATCH_SIZE = 5
 

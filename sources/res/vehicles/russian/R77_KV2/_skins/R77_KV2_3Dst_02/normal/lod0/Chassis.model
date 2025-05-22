@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.659059 0.004053 -3.408006</min>
+		<max>1.659059 1.254029 3.232350</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/normal/lod0/Chassis</nodefullVisual>
+</root>

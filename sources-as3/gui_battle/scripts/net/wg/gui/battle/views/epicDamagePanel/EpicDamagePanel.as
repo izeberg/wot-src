@@ -8,6 +8,8 @@ package net.wg.gui.battle.views.epicDamagePanel
    {
       
       private static const ZERO_BONUS:int = 0;
+      
+      private static const BG_HEIGHT_COMPENSATE:int = 7;
        
       
       public var generalBonus:GeneralBonus = null;
@@ -15,6 +17,7 @@ package net.wg.gui.battle.views.epicDamagePanel
       public function EpicDamagePanel()
       {
          super();
+         initedHeight -= BG_HEIGHT_COMPENSATE;
          this.generalBonus.visible = false;
       }
       

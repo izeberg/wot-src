@@ -319,10 +319,6 @@ package
       
       public static const PARAGONS_TANKCAROUSEL_CARD:String = "#tooltips:paragons/tankCarousel/card";
       
-      public static const LOBY_MESSENGER_BTNREFERRALDISABLED:String = "#tooltips:loby_messenger/btnReferralDisabled";
-      
-      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED:String = "#tooltips:loby_messenger/btnVehicleCartDisabled";
-      
       public static const BADGEINFO_TITLE:String = "#tooltips:badgeinfo/title";
       
       public static const BADGEINFO_TEXT:String = "#tooltips:badgeinfo/text";
@@ -772,6 +768,10 @@ package
       public static const INCREASEDZOOM_HEADER:String = "#tooltips:increasedZoom/header";
       
       public static const INCREASEDZOOM_BODY:String = "#tooltips:increasedZoom/body";
+      
+      public static const HORSTABILIZATIONSNP_HEADER:String = "#tooltips:horStabilizationSnp/header";
+      
+      public static const HORSTABILIZATIONSNP_BODY:String = "#tooltips:horStabilizationSnp/body";
       
       public static const HULLLOCKENABLED_HEADER:String = "#tooltips:hullLockEnabled/header";
       
@@ -1936,14 +1936,6 @@ package
       public static const LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_HEADER:String = "#tooltips:lobby/header/buyPremiumAccount/disabled/header";
       
       public static const LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_BODY:String = "#tooltips:lobby/header/buyPremiumAccount/disabled/body";
-      
-      public static const LOBY_MESSENGER_BTNREFERRALDISABLED_HEADER:String = "#tooltips:loby_messenger/btnReferralDisabled/header";
-      
-      public static const LOBY_MESSENGER_BTNREFERRALDISABLED_BODY:String = "#tooltips:loby_messenger/btnReferralDisabled/body";
-      
-      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED_HEADER:String = "#tooltips:loby_messenger/btnVehicleCartDisabled/header";
-      
-      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED_BODY:String = "#tooltips:loby_messenger/btnVehicleCartDisabled/body";
       
       public static const TRAINING_CREATE_INVITES_CHECKBOX_HEADER:String = "#tooltips:training/create/invites_checkbox/header";
       
@@ -7888,6 +7880,26 @@ package
       public static const PLAYSTREAK_RANDOMEQUIPMENT_LABEL:String = "#tooltips:playStreak/randomEquipment/label";
       
       public static const PLAYSTREAK_RANDOMEQUIPMENT_DESC:String = "#tooltips:playStreak/randomEquipment/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP17_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP17_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP17_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP17_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP17_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP17_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP17_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP17_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP17_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP17_5/label";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

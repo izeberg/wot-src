@@ -3403,6 +3403,9 @@ class IArmoryYardController(IGameController):
     def getHangarFlagData(self):
         raise NotImplementedError
 
+    def updateVisibilityHangarHeaderMenu(self, isVisible=False):
+        raise NotImplementedError
+
 
 class IArmoryYardShopController(IGameController):
     onProductsUpdate = None
@@ -3978,7 +3981,6 @@ class IPersonalMissionsController(IGameController):
     cgfCameraManager = None
     onItemCacheUpdated = None
     sysMessageController = None
-    onRewardsViewClose = None
 
     def fini(self):
         raise NotImplementedError

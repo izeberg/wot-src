@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/34_redshire/environments/1A7E3138-41EF442E-1A57B58A-D44182DC/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/34_redshire_rain.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

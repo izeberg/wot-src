@@ -91,7 +91,7 @@ msgid "account/profile/emptyBattleList"
 msgstr "У баях не ўдзельнічаў"
 
 msgid "accountInfo/credits"
-msgstr "Крэдыты:"
+msgstr "Серебро:"
 
 msgid "accountInfo/crystal"
 msgstr "Боны:"
@@ -725,7 +725,7 @@ msgid "bonusType/9"
 msgstr "Адмысловы гульнявы рэжым"
 
 msgid "booster/bonus/booster_credits"
-msgstr "%(effectValue)s на %(effectHours)s да крэдытаў за бой"
+msgstr "%(effectValue)s на %(effectHours)s к серебру за бой"
 
 msgid "booster/bonus/booster_crew_xp"
 msgstr "%(effectValue)s на %(effectHours)s да досведу экіпажу за бой"
@@ -744,7 +744,7 @@ msgid "booster/bonus/booster_xp"
 msgstr "%(effectValue)s на %(effectHours)s да досведу за бой"
 
 msgid "booster/description/bonusValueTime/booster_credits"
-msgstr "Бонус %(effectValue)s да крэдытаў за бой на %(effectTime)s"
+msgstr "Бонус %(effectValue)s к серебру за бой на %(effectTime)s"
 
 msgid "booster/description/bonusValueTime/booster_crew_xp"
 msgstr "Бонус %(effectValue)s да досведу экіпажу за бой на %(effectTime)s"
@@ -763,7 +763,7 @@ msgid "booster/description/bonusValueTime/booster_xp"
 msgstr "Бонус %(effectValue)s да досведу за бой на %(effectTime)s"
 
 msgid "booster/description/booster_credits"
-msgstr "%(effectValue)s да крэдытаў за бой"
+msgstr "%(effectValue)s к серебру за бой"
 
 msgid "booster/description/booster_crew_xp"
 msgstr "%(effectValue)s да досведу экіпажу за бой"
@@ -790,7 +790,7 @@ msgid "booster/description/effectValueTime"
 msgstr "%(effectValue)s на %(effectTime)s"
 
 msgid "booster/influence/booster_credits"
-msgstr "да крэдытаў за бой"
+msgstr "к серебру за бой"
 
 msgid "booster/influence/booster_crew_xp"
 msgstr "да досведу экіпажа за бой"
@@ -820,7 +820,7 @@ msgid "booster/quality/small"
 msgstr "(малы)"
 
 msgid "booster/userName/booster_credits"
-msgstr "Дадатковыя крэдыты за бой"
+msgstr "Дополнительное серебро за бой"
 
 msgid "booster/userName/booster_crew_xp"
 msgstr "Дадатковы досвед экіпажу за бой"
@@ -909,9 +909,6 @@ msgstr "Купіць"
 
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перайсці да задачы"
-
-msgid "boostersWindow/boostersTableRenderer/header"
-msgstr "%(boosterName)s %(quality)s"
 
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Каб атрымаць асабісты рэзерв, выканайце «%(questName)s»"
@@ -1104,9 +1101,6 @@ msgstr "Стварыць нататку"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
-
-msgid "contextMenu/createHistoricalBattleSquad"
-msgstr "Звяз падзеі «Час герояў»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
@@ -1997,6 +1991,16 @@ msgstr ""
 "Перанабіванне %(autoReloadTime)s с; Сярэднія пашкоджанні: %(avgDamageList)s\n"
 "Сярэдняя прабівальнасць: %(avgPiercingPower)s мм"
 
+msgid "descriptions/vehicleGun/autoReloadDualGun"
+msgstr ""
+"Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s; "
+"Средняя пробиваемость: %(avgPiercingPower)s мм"
+
+msgid "descriptions/vehicleGun/clipDualGun"
+msgstr ""
+"Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s; "
+"Средняя пробиваемость: %(avgPiercingPower)s мм"
+
 msgid "descriptions/vehicleGun/dualGun"
 msgstr ""
 "Набіванне гарматы: %(reloadTimeSecs)s с; Сярэднія пашкоджанні: %(avgDamageList)s\n"
@@ -2143,6 +2147,9 @@ msgstr ""
 "Параметр, які адказвае за час, які праходзіць з моманту стрэлу САУ да "
 "моманту атрымання папярэджання."
 
+msgid "extraParams/name/chargeTimeBonus"
+msgstr "Параметр, отвечающий за уменьшение времени подготовки к залпу."
+
 msgid "extraParams/name/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
 "Параметр, які адказвае за максімальнае поле агляду пры выведзеных са строю "
@@ -2218,10 +2225,18 @@ msgstr ""
 "паскарэння перанабівання, пасля заканчэння якой траплянні па вас зноў "
 "пачнуць паскараць перанабіванне."
 
+msgid "extraParams/name/loadShellIntoDualGunBonus"
+msgstr "Параметр, отвечающий за ускорение дозарядки снаряда в орудии."
+
 msgid "extraParams/name/minTimeBetweenReloadBoost"
 msgstr ""
 "Часовая затрымка пасля паскарэння перанабівання, пасля заканчэння якой "
 "траплянні па вас зноў пачнуць паскараць перанабіванне."
+
+msgid "extraParams/name/penaltyAfterShotBonus"
+msgstr ""
+"Параметр, отвечающий за уменьшение времени штрафа после залпа, в течение "
+"которого орудие не может заряжаться."
 
 msgid "extraParams/name/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -2230,6 +2245,11 @@ msgstr ""
 
 msgid "extraParams/name/radiomanHitChance"
 msgstr "Параметр, які адказвае за шанц пазбегнуць раненняў радыстам."
+
+msgid "extraParams/name/speedLimitsBonus"
+msgstr ""
+"Параметр, отвечающий за увеличение максимальной скорости и скорости заднего "
+"хода."
 
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
@@ -3013,9 +3033,6 @@ msgstr "Супольныя вучэнні"
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
 
-msgid "headerButtons/battle/types/eventBattle"
-msgstr "Час герояў"
-
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
 
@@ -3062,7 +3079,7 @@ msgid "headerButtons/battle/types/mapbox/availability/hours"
 msgstr "%(hour)s гадз."
 
 msgid "headerButtons/battle/types/mapbox/availability/lessThanHour"
-msgstr "менш за 1 гадз"
+msgstr "менее 1 ч."
 
 msgid "headerButtons/battle/types/mapbox/extra/endsIn"
 msgstr "Да канца падзеі: %(timeLeft)s"
@@ -4470,6 +4487,14 @@ msgstr "?empty?"
 msgid "moduleInfo/additionalInfo"
 msgstr "Характарыстыкі снарада залежаць ад гарматы."
 
+msgid "moduleInfo/autoReloadDualGunLabel"
+msgstr "Спаренная установка с системой дозарядки"
+
+msgid "moduleInfo/autoReloadDualGunWithoutResetReloadLabel"
+msgstr ""
+"Спаренная установка с системой дозарядки.\n"
+"Процесс заряжания одного орудия не прерывается во время выстрела из другого."
+
 msgid "moduleInfo/autoReloadGunLabel"
 msgstr "Сістэма данабівання магазіна"
 
@@ -4480,6 +4505,14 @@ msgstr ""
 
 msgid "moduleInfo/autoShootFlameGunLabel"
 msgstr "Агнямётная безмагазінная сістэма"
+
+msgid "moduleInfo/clipDualGunLabel"
+msgstr "Спаренная установка с системой заряжания"
+
+msgid "moduleInfo/clipDualGunWithoutResetReloadLabel"
+msgstr ""
+"Спаренная установка с системой заряжания.\n"
+"Процесс заряжания одного орудия не прерывается во время выстрела из другого."
 
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазінная сістэма набівання"
@@ -4664,6 +4697,9 @@ msgstr "Магутнасць рухавіка"
 
 msgid "moduleInfo/params/enginePowerPerTon"
 msgstr "Да ўдзельнай магутнасці (к.с./т) "
+
+msgid "moduleInfo/params/explosionDelay"
+msgstr "Таймер детонации"
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радыус паражэння"
@@ -5080,8 +5116,8 @@ msgstr "САУ чакаюць бою даўжэй за іншыя тыпы тэ�
 
 msgid "premium/bonus"
 msgstr ""
-"Крэдытаў і досведу\n"
-"за кожны бой"
+"Серебра и опыта\n"
+"за каждый бой"
 
 msgid "premium/buyMessage"
 msgstr "Купіць прэміум акаўнт"
@@ -5102,7 +5138,7 @@ msgid "premium/gold"
 msgstr "золата"
 
 msgid "premium/ofCreditsAndExperience"
-msgstr "крэдытаў і досведу"
+msgstr "серебра и опыта"
 
 msgid "premium/packet/days1"
 msgstr "1 суткі"
@@ -5130,13 +5166,13 @@ msgstr "90 сутак"
 
 msgid "premium/packet/longDescriptionSpecial"
 msgstr ""
-"Прэміум акаўнт дазваляе хутчэй развівацца ў гульні, забяспечваючы дадатковы "
-"заробак крэдытаў і досведу. Прэміум акаўнт адзіны для гульняў «Мир танков» і"
-" «Мир кораблей», таму, купляючы яго для адной гульні, вы аўтаматычна "
-"атрымліваеце яго ў іншай."
+"Наличие премиум аккаунта позволяет вам быстрее развиваться в игре, "
+"обеспечивая дополнительный заработок серебра и опыта. Премиум аккаунт един "
+"для Мира танков и Мира кораблей, поэтому, покупая его для одной игры, вы "
+"автоматически получаете его в другой."
 
 msgid "premium/packet/shortDescriptionSpecial"
-msgstr "+50% да досведу, крэдытаў і досведу экіпажу за бой"
+msgstr "+50% к опыту, серебру и опыту экипажа за бой"
 
 msgid "premium/perEverButtle"
 msgstr "за кожны бой"
@@ -5169,7 +5205,7 @@ msgid "premium/periods/days90"
 msgstr "На 3 месяцы (90 сутак)"
 
 msgid "premium/promoMessage"
-msgstr "Дае на 50% больш крэдытаў і досведу за кожны бой."
+msgstr "Даёт на 50% больше серебра и на 50% больше опыта за каждый бой."
 
 msgid "premium/submitBuy"
 msgstr "Купіць"
@@ -5190,7 +5226,7 @@ msgid "price/bpcoin"
 msgstr "жэтонаў Баявога пропуска"
 
 msgid "price/credits"
-msgstr "крэдытаў"
+msgstr "серебра"
 
 msgid "price/crystal"
 msgstr "бонаў"
@@ -5223,7 +5259,7 @@ msgid "profile/creationTime"
 msgstr "Створаны:"
 
 msgid "profile/credits"
-msgstr "Крэдыты:"
+msgstr "Серебро:"
 
 msgid "profile/crystal"
 msgstr "Боны:"
@@ -5531,7 +5567,7 @@ msgid "research/labels/vehXP"
 msgstr "Баявы досвед"
 
 msgid "research/premium/benefits/first"
-msgstr "Больш крэдытаў за кожны бой"
+msgstr "Больше серебра за каждый бой"
 
 msgid "research/premium/benefits/fourth"
 msgstr "Абмен баявога досведу на вольны з першага бою"
@@ -6018,7 +6054,7 @@ msgid "shop/menu/vehicle/name"
 msgstr "Тэхніка"
 
 msgid "shop/menu/vehicle/obtainingType/restoreVehicle/name"
-msgstr "Аднаўленне за крэдыты"
+msgstr "Восстановление за серебро"
 
 msgid "shop/menu/vehicle/obtainingType/tradeInVehicle/name"
 msgstr "Абмен тэхнікі"
@@ -6499,6 +6535,9 @@ msgstr "Магутнасць рухавіка"
 msgid "tank_params/enginePowerPerTon"
 msgstr "Удзельная магутнасць"
 
+msgid "tank_params/explosionDelay"
+msgstr "Таймер детонации"
+
 msgid "tank_params/explosionRadius"
 msgstr "Радыус паражэння"
 
@@ -6957,8 +6996,8 @@ msgstr "Стварыць пакой"
 
 msgid "training/description"
 msgstr ""
-"Досвед і крэдыты ў Супольных вучэннях не налічваюцца, аднак усё "
-"абслугоўванне тэхнікі цалкам бясплатнае."
+"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
+"техники полностью бесплатное."
 
 msgid "training/info/deleteButton"
 msgstr "Выдаліць пакой"

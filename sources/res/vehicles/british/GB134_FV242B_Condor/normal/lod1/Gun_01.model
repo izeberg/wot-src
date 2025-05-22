@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB134_FV242B_Condor/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.604380 -0.279013 -0.761798</min>
+		<max>0.604195 0.537659 6.152833</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/normal/lod1/Gun_01</nodefullVisual>
+</root>

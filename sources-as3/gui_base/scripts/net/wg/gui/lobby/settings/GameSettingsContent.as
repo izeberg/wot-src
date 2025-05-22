@@ -300,7 +300,7 @@ package net.wg.gui.lobby.settings
          this.enablePostMortemDelayCheckbox.label = SETTINGS.GAME_ENABLEDELAYPOSTEFFECT;
          this.dynamicCameraCheckbox.label = SETTINGS.GAME_DYNAMICCAMERA;
          this.scrollSmoothingCheckbox.label = SETTINGS.AIM_SPG_SCROLLSMOOTHINGENABLED;
-         this.horStabilizationSnpCheckbox.label = SETTINGS.GAME_HORSTABILIZATIONSNP;
+         this.horStabilizationSnpCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.preCommanderCamCheckbox.label = SETTINGS.GAME_PRECOMMANDERCAMENABLED;
          this.commanderCamCheckbox.label = SETTINGS.GAME_COMMANDERCAMENABLED;
          this.hullLockEnabledCheckbox.label = SETTINGS.GAME_HULLLOCKENABLED;

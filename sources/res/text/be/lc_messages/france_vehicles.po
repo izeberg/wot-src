@@ -508,6 +508,9 @@ msgstr ""
 "Canon de 155 mm\n"
 "mle. 1917 G.P.F."
 
+msgid "Canon_de_155mm_T"
+msgstr "Canon de 155 mm T"
+
 msgid "Canon_de_155mm_de_33_calibres"
 msgstr "Canon de 155 mm de 33 calibres"
 
@@ -723,6 +726,9 @@ msgstr "Panhard EBR 90"
 msgid "Chassis_F100_Panhard_EBR_90_2"
 msgstr "Panhard EBR 90 bis"
 
+msgid "Chassis_F1038_Bat_Chatillon155_58_T"
+msgstr "Batignolles-Châtillon 155 mle. 58 T"
+
 msgid "Chassis_F106_Panhard_EBR_75_Mle1954"
 msgstr "Panhard EBR 75 (FL 10)"
 
@@ -788,6 +794,9 @@ msgstr "Schneider 120 AC"
 
 msgid "Chassis_F130_AMX_Tracteur_D"
 msgstr "AMX Tracteur D"
+
+msgid "Chassis_F131_Coutelas"
+msgstr "Coutelas"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -1075,6 +1084,24 @@ msgstr ""
 
 msgid "F100_Panhard_EBR_90_short"
 msgstr "EBR 90"
+
+msgid "F1038_Bat_Chatillon155_58_T"
+msgstr "Bat.-Châtillon 155 58 T"
+
+msgid "F1038_Bat_Chatillon155_58_T_descr"
+msgstr ""
+"Адзін з варыянтаў аванпраекта САУ з выкарыстаннем элементаў шасі "
+"амерыканскага танка М47. Ад Bat.-Châtillon 155 55 адрозніваўся вежай і "
+"наяўнасцю аўтамата набівання. Доследны ўзор пабудаваны не быў."
+
+msgid "F1038_Bat_Chatillon155_58_T_long_special"
+msgstr "?empty?"
+
+msgid "F1038_Bat_Chatillon155_58_T_short"
+msgstr "B-C 155 58 T"
+
+msgid "F1038_Bat_Chatillon155_58_T_short_special"
+msgstr "?empty?"
 
 msgid "F106_Panhard_EBR_75_Mle1954"
 msgstr "Panhard EBR 75 (FL 10)"
@@ -1489,7 +1516,25 @@ msgid "F130_AMX_Tracteur_D_short"
 msgstr "Tracteur D"
 
 msgid "F130_AMX_Tracteur_D_short_special"
-msgstr "Выдатнае франтальнае браніраванне, высокая забойнасць стрэлу"
+msgstr "Прекрасное фронтальное бронирование, хороший разовый урон"
+
+msgid "F131_Coutelas"
+msgstr "Coutelas"
+
+msgid "F131_Coutelas_descr"
+msgstr ""
+"Работа над проектом истребителя танков Coutelas была начата фирмой Hotchkiss ближе к середине 1950-х годов. Самоходка проектировалась под специфические требования заказчика: боевая масса ниже, чем у заметно тяжелеющих машин даже среднего класса, увеличение углов горизонтальной наводки до 60 градусов, установка стереоскопического дальномера и наличие зенитной турели. Также машине требовались большой боезапас и мощная бронезащита в лобовой проекции. Как следствие, САУ Coutelas предполагалось оснастить башней с ограниченным сектором горизонтальной наводки вместо неподвижной рубки. Также планировалось разместить одну часть боекомплекта в башне, а вторую — в механизированной укладке над моторным отделением. Предусматривалась и командирская башенка со встроенным дальномером. Однако работы инженеров Hotchkiss не продвинулись дальше эскизного проекта в связи с падением интереса к нему со стороны заказчиков.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "F131_Coutelas_long_special"
+msgstr "?empty?"
+
+msgid "F131_Coutelas_short"
+msgstr "Coutelas"
+
+msgid "F131_Coutelas_short_special"
+msgstr "?empty?"
 
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -2062,6 +2107,9 @@ msgstr "Hispano-Suiza HS 110 pré-série"
 msgid "Hispano-Suiza_HS110_SH"
 msgstr "Hispano-Suiza HS 110"
 
+msgid "Hispano-Suiza_HS110_T"
+msgstr "Hispano-Suiza HS 110 T"
+
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
 
@@ -2212,6 +2260,9 @@ msgstr "Maybach HL 234 P50"
 
 msgid "Maybach_HL_235_850"
 msgstr "Maybach HL 235 (850)"
+
+msgid "Maybach_HL_275"
+msgstr "Maybach HL 275"
 
 msgid "Maybach_HL_295"
 msgstr "Maybach HL 295"
@@ -2461,6 +2512,9 @@ msgstr "SCR 508"
 msgid "SCR_528"
 msgstr "SCR 528F"
 
+msgid "SCR_528C"
+msgstr "SCR 528"
+
 msgid "SCR_528F"
 msgstr "SCR 528F"
 
@@ -2472,6 +2526,9 @@ msgstr "SCR-528 F"
 
 msgid "SCR_528_Fr"
 msgstr "SCR-528 Fr"
+
+msgid "SCR_528_T"
+msgstr "SCR 528F T"
 
 msgid "SCR_610"
 msgstr "SCR 610"
@@ -2724,6 +2781,9 @@ msgstr "AMX ELC bis"
 msgid "Turret_1_F100_Panhard_EBR_90"
 msgstr "Panhard EBR 90"
 
+msgid "Turret_1_F1038_Bat_Chatillon155_58_T"
+msgstr "Batignolles-Châtillon 155 mle. 58 T"
+
 msgid "Turret_1_F106_Panhard_EBR_75_Mle1954"
 msgstr "Panhard EBR 75 (FL 10)"
 
@@ -2777,6 +2837,9 @@ msgstr "Schneider 120 AC"
 
 msgid "Turret_1_F130_AMX_Tracteur_D"
 msgstr "AMX Tracteur D"
+
+msgid "Turret_1_F131_Coutelas"
+msgstr "Coutelas"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -3190,6 +3253,9 @@ msgstr "105 mm mle. F1"
 msgid "_105mm_mle_FV1"
 msgstr "105 mm F1b"
 
+msgid "_120mm_120F"
+msgstr "120 mm 120F"
+
 msgid "_120mm_D_1203"
 msgstr "120 mm D. 1203"
 
@@ -3214,8 +3280,14 @@ msgstr "Frt.Prf. mle. 1945 A"
 msgid "_120mm_FrtPrf1951"
 msgstr "Frt.Prf. mle. 1951"
 
+msgid "_120mm_OCC_M469"
+msgstr "ОCC M469"
+
 msgid "_120mm_OE120"
 msgstr "OE 120"
+
+msgid "_120mm_OE_1930"
+msgstr "ОЕ Mle 1930"
 
 msgid "_120mm_OE_mle_1930"
 msgstr "OE mle. 1930"
@@ -3231,6 +3303,9 @@ msgstr "OP 120"
 
 msgid "_120mm_OPS120"
 msgstr "OPS 120"
+
+msgid "_120mm_OP_1943"
+msgstr "ОР Mle 1943"
 
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle. 1943"
@@ -3319,6 +3394,9 @@ msgstr "AP-T T368"
 msgid "_155mm_AP_M112"
 msgstr "AP M112"
 
+msgid "_155mm_AP_M112_T"
+msgstr "AP M112 T"
+
 msgid "_155mm_HEAT_T267"
 msgstr "HEAT T267"
 
@@ -3334,8 +3412,14 @@ msgstr "OCO mle. 1944"
 msgid "_155mm_OE_M101M4"
 msgstr "OE M101M4"
 
+msgid "_155mm_OE_M101M4_T"
+msgstr "OE M101M4 T"
+
 msgid "_155mm_OE_M101M6"
 msgstr "OE M101M6"
+
+msgid "_155mm_OE_M101M6_T"
+msgstr "OE M101M6 T"
 
 msgid "_155mm_OE_mle_1917"
 msgstr "OE mle. 1917"

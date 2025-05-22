@@ -1,50 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>3.500000</duration>
+	<duration>6.833333</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
 		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_18_Ñompartment_turret</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_18_Compartment_turret_xray.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd1</identifier>
-			<property>repaintProgeression</property>
+			<identifier>s_nd0</identifier>
+			<property>g_spawnStage</property>
 			<frame>
-				<startTime>0.000000</startTime>
+				<startTime>1.000000</startTime>
 				<value>0.000000</value>
-				<inTangent>0.285714</inTangent>
-				<outTangent>0.285714</outTangent>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>0.468750</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.468750</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>g_glowColor</property>
+			<frame>
+				<startTime>4.666667</startTime>
+				<value>0.901961 0.207843 0.000000 1.000000</value>
+				<inTangent>-0.153846 0.166516 0.262443 0.000000</inTangent>
+				<outTangent>-0.153846 0.166516 0.262443 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.500000</startTime>
-				<value>1.000000</value>
-				<inTangent>0.285714</inTangent>
-				<outTangent>0.285714</outTangent>
+				<startTime>6.833333</startTime>
+				<value>0.568627 0.568627 0.568627 1.000000</value>
+				<inTangent>-0.153846 0.166516 0.262443 -0.000000</inTangent>
+				<outTangent>-0.153846 0.166516 0.262443 -0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>Stage_18</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>3.500000</duration>
+				<startTime>1.000000</startTime>
+				<duration>5.833333</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
 		<track>
-			<name>Sound</name>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000 2.109088 0.977013</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>ay_ep_06_seq_stage_18</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.033333</startTime>
-				<duration>3.133333</duration>
-				<sequenceSound>ay_ep_05_seq_stage_18</sequenceSound>
+				<startTime>1.000000</startTime>
+				<duration>5.266667</duration>
+				<sequenceSound>ay_ep_06_seq_stage_18</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

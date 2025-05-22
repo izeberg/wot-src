@@ -30,6 +30,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicator;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorElement;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
+   import net.wg.gui.components.crosshairPanel.components.autoloader.MBAutoloaderShellsCassette;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarkerDebug;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarker;
@@ -111,6 +112,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_AUTOLOADER_BOOSTINDICATORELEMENT:Class = BoostIndicatorElement;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_AUTOLOADER_BOOSTINDICATORSTATEPARAMSVO:Class = BoostIndicatorStateParamsVO;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_AUTOLOADER_MBAUTOLOADERSHELLSCASSETTE:Class = MBAutoloaderShellsCassette;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_DUALGUNMARKER:Class = DualGunMarker;
       

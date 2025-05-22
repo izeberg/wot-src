@@ -2,14 +2,6 @@
 <root>
 	<params>
 		<param>
-			<name>narrative_action_0</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>narrative_action_2</name>
-			<type>trigger</type>
-		</param>
-		<param>
 			<name>default_animation</name>
 			<type>trigger</type>
 		</param>
@@ -18,12 +10,20 @@
 			<type>random_float</type>
 		</param>
 		<param>
-			<name>choice_group</name>
-			<type>float</type>
+			<name>seq_1</name>
+			<type>trigger</type>
 		</param>
 		<param>
-			<name>choice_sequence</name>
-			<type>float</type>
+			<name>seq_2</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>seq_0</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>seq_3</name>
+			<type>trigger</type>
 		</param>
 	</params>
 	<node>
@@ -38,7 +38,7 @@
 			<conditions>
 				<condition>
 					<type>trigger</type>
-					<name>narrative_action_0</name>
+					<name>seq_1</name>
 				</condition>
 			</conditions>
 		</transition>
@@ -48,7 +48,7 @@
 			<conditions>
 				<condition>
 					<type>trigger</type>
-					<name>narrative_action_2</name>
+					<name>seq_2</name>
 				</condition>
 			</conditions>
 		</transition>
@@ -58,29 +58,21 @@
 			<conditions>
 				<condition>
 					<type>trigger</type>
-					<name>default_animation</name>
+					<name>seq_3</name>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>Sleep Node</to>
+			<to>Catch_raccoon</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>float</type>
-					<name>choice_group</name>
-					<rangeStart>0.990000</rangeStart>
-					<rangeEnd>55.000000</rangeEnd>
-				</condition>
-				<condition>
-					<type>float</type>
-					<name>choice_sequence</name>
-					<rangeStart>66.599998</rangeStart>
-					<rangeEnd>100.000000</rangeEnd>
+					<type>trigger</type>
+					<name>seq_0</name>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-599.000000 16.000000 0.000000</uiPosition>
+		<uiPosition>-448.500000 5.500000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>default_animation</name>
@@ -94,7 +86,7 @@
 					<type>random_float</type>
 					<name>random_default_sequence_SSM</name>
 					<rangeStart>0.000000</rangeStart>
-					<rangeEnd>16.600000</rangeEnd>
+					<rangeEnd>12.500000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
@@ -105,8 +97,8 @@
 				<condition>
 					<type>random_float</type>
 					<name>random_default_sequence_SSM</name>
-					<rangeStart>16.600000</rangeStart>
-					<rangeEnd>32.259998</rangeEnd>
+					<rangeStart>12.501000</rangeStart>
+					<rangeEnd>25.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
@@ -117,8 +109,8 @@
 				<condition>
 					<type>random_float</type>
 					<name>random_default_sequence_SSM</name>
-					<rangeStart>32.259998</rangeStart>
-					<rangeEnd>49.860001</rangeEnd>
+					<rangeStart>25.010000</rangeStart>
+					<rangeEnd>37.500000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
@@ -129,8 +121,8 @@
 				<condition>
 					<type>random_float</type>
 					<name>random_default_sequence_SSM</name>
-					<rangeStart>83.059998</rangeStart>
-					<rangeEnd>100.000000</rangeEnd>
+					<rangeStart>62.500999</rangeStart>
+					<rangeEnd>80.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
@@ -141,8 +133,8 @@
 				<condition>
 					<type>random_float</type>
 					<name>random_default_sequence_SSM</name>
-					<rangeStart>66.459999</rangeStart>
-					<rangeEnd>83.059998</rangeEnd>
+					<rangeStart>50.009998</rangeStart>
+					<rangeEnd>62.500000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
@@ -153,8 +145,32 @@
 				<condition>
 					<type>random_float</type>
 					<name>random_default_sequence_SSM</name>
-					<rangeStart>49.860001</rangeStart>
-					<rangeEnd>66.459999</rangeEnd>
+					<rangeStart>37.500999</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Scene_Scared_her_01</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_default_sequence_SSM</name>
+					<rangeStart>80.010002</rangeStart>
+					<rangeEnd>92.500000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Catch_raccoon</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_default_sequence_SSM</name>
+					<rangeStart>92.500999</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
@@ -176,7 +192,7 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-309.000000 120.500000 0.000000</uiPosition>
+		<uiPosition>-161.500000 92.500000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>Tells_about_the_weapon_01</name>
@@ -194,7 +210,7 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-599.000000 -75.500000 0.000000</uiPosition>
+		<uiPosition>-313.500000 -149.500000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>plot1_bake_01</name>
@@ -302,17 +318,24 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>19.000000 14.000000 0.000000</uiPosition>
+		<uiPosition>42.000000 16.500000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>Sleep Node</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
+		<name>Catch_raccoon</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Raccoon_Mattress/Sequence/Raccoon_Jaginskaya_Catches_Raccoon_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
 		<transition>
-			<to>Scene_Scared_her_01</to>
+			<to>default_animation</to>
 			<blendDuration>0.000000</blendDuration>
-			<conditions/>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
 		</transition>
-		<uiPosition>-310.000000 16.000000 0.000000</uiPosition>
+		<uiPosition>-446.000000 -277.000000 0.000000</uiPosition>
 	</node>
 </root>

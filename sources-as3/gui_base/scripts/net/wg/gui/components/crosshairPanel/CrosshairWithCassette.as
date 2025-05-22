@@ -19,8 +19,11 @@ package net.wg.gui.components.crosshairPanel
          if(isAutoloader)
          {
             _loc1_ = autoloaderComponent.getTimerRect();
-            reloadTimeBlink.x = autoloaderComponent.x + _loc1_.x + (_loc1_.width - reloadTimeBlink.width >> 1) | 0;
-            reloadTimeBlink.y = autoloaderComponent.y + _loc1_.y + _loc1_.height + RELOAD_TIME_BLINK_Y_SHIFT | 0;
+            if(_loc1_ != null)
+            {
+               reloadTimeBlink.x = autoloaderComponent.x + _loc1_.x + (_loc1_.width - reloadTimeBlink.width >> 1) | 0;
+               reloadTimeBlink.y = autoloaderComponent.y + _loc1_.y + _loc1_.height + RELOAD_TIME_BLINK_Y_SHIFT | 0;
+            }
          }
          else
          {

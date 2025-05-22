@@ -21,7 +21,7 @@
 					<identifier>Material #108</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/wg_particles/pbs_mesh_particles.fx</fx>
+					<fx>shaders/particles/pbs_mesh_particles.fx</fx>
 					<property>
 						alphaReference
 						<Int>80</Int>

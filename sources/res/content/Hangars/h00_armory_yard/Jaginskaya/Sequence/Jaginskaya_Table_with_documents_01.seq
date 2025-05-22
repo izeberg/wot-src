@@ -25,7 +25,7 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>jaginskaya_table_sound</name>
+		<name>Jaginskaya_table_sound</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
@@ -40,8 +40,8 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>15.000001</startTime>
-				<duration>47.750000</duration>
+				<startTime>10.133334</startTime>
+				<duration>50.000000</duration>
 				<sequenceSound>ay_vo_jaginskaya_table</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

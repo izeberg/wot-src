@@ -455,7 +455,7 @@ msgid "actionPrice/severalActions/personal"
 msgstr "Максімальнай з'яўляецца ваша персанальная зніжка."
 
 msgid "additionalRewards/credits"
-msgstr "%(value)d крэдытаў"
+msgstr "%(value)d серебра"
 
 msgid "additionalRewards/crystal"
 msgstr "%(value)d бонаў"
@@ -651,8 +651,8 @@ msgstr "Прэміум валюта, якую можна выдаткаваць 
 
 msgid "advanced/economyPremium"
 msgstr ""
-"Дазваляе атрымліваць на 50% больш досведу і крэдытаў за бой, а таксама дае "
-"дадатковыя магчымасці."
+"Позволяет получать на 50% больше опыта и серебра за бой, а также "
+"предоставляет дополнительные возможности."
 
 msgid "advanced/economyPremium/header"
 msgstr "Танкавы прэміум акаўнт"
@@ -1327,13 +1327,13 @@ msgstr ""
 "Іх здабываюць у баях або купляюць за золата."
 
 msgid "awardItem/credits/header"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "awardItem/creditsFactor/body"
-msgstr "Павялічаны каэфіцыент здабывання крэдытаў у баі."
+msgstr "Увеличенный коэффициент заработка серебра."
 
 msgid "awardItem/creditsFactor/header"
-msgstr "Каэфіцыент крэдытаў"
+msgstr "Коэффициент серебра"
 
 msgid "awardItem/crystal/body"
 msgstr ""
@@ -1460,16 +1460,16 @@ msgstr "Націсніце, каб праглядзець стыль"
 
 msgid "awardItem/premium/body"
 msgstr ""
-"Прэміум акаўнт павялічвае на 50% досвед і крэдыты,\n"
-"якія атрымліваюцца за кожны бой."
+"Премиум аккаунт увеличивает заработок опыта и серебра\n"
+"на 50% за каждый бой."
 
 msgid "awardItem/premium/header"
 msgstr "Прэміум дні"
 
 msgid "awardItem/premium_plus/body"
 msgstr ""
-"Асаблівы статус акаўнту, які дазваляе здабываць больш досведу і крэдытаў, а "
-"таксама дае дадатковыя магчымасці."
+"Особый статус аккаунта, позволяющий зарабатывать больше опыта и серебра, а "
+"также предоставляющий дополнительные возможности."
 
 msgid "awardItem/premium_plus/header"
 msgstr "Танкавы прэміум акаўнт"
@@ -1558,12 +1558,12 @@ msgstr "Танкістка"
 
 msgid "awardItem/team_credits_bonus/body"
 msgstr ""
-"Калі ў камандзе ёсць прынамсі адзін гулец з падпіскай, то ўсе гульцы гэтай "
-"каманды атрымаюць дадатковы бонус да крэдытаў. Чым больш гульцоў з "
-"падпіскай, тым вышэйшы бонус."
+"Если в команде есть как минимум один игрок с подпиской, то все игроки этой "
+"команды получат дополнительный бонус к серебру. Чем больше игроков с "
+"подпиской, тем выше бонус."
 
 msgid "awardItem/team_credits_bonus/header"
-msgstr "Камандны бонус да крэдытаў"
+msgstr "Командный бонус к серебру"
 
 msgid "awardItem/testEntitlement/body"
 msgstr "Тестовый энтайтлемент. Описание."
@@ -2004,11 +2004,11 @@ msgstr "заўтра"
 
 msgid "battleTypes/epic_training/body"
 msgstr ""
-"Вучэбны бой з ручным падборам хаўруснікаў і супраціўніка.\n"
-"Асаблівасці:\n"
-"• крэдыты і досвед не налічваюцца;\n"
-"• мапа для рэжыму «Лінія фронту» выбіраецца;\n"
-"• абмежаванні: VIII узровень тэхнікі."
+"Учебный бой с ручным подбором союзников и противника.\n"
+"Особенности:\n"
+"• серебро и опыт не начисляются;\n"
+"• карта для режима «Линия фронта» на выбор;\n"
+"• ограничения: VIII уровень техники."
 
 msgid "battleTypes/epic_training/header"
 msgstr "Супольныя вучэнні на Лініі фронту"
@@ -2047,8 +2047,8 @@ msgstr "Адмысловы бой"
 
 msgid "battleTypes/leaveTraining/body"
 msgstr ""
-"Вучэбны бой з ручным падборам хаўруснікаў і супраціўніка.\n"
-"• Асаблівасці: крэдыты і досвед не налічваюцца, мапа і тып бою выбіраюцца."
+"Учебный бой с ручным подбором союзников и противника.\n"
+"• Особенности: серебро и опыт не начисляются, карта и тип боя на выбор."
 
 msgid "battleTypes/leaveTraining/header"
 msgstr "Супольныя вучэнні"
@@ -2275,8 +2275,8 @@ msgstr "Умацаваны раён: бітвы"
 
 msgid "battleTypes/training/body"
 msgstr ""
-"Вучэбны бой з ручным падборам хаўруснікаў і супраціўніка.\n"
-"• Асаблівасці: крэдыты і досвед не налічваюцца, мапа і тып бою выбіраюцца."
+"Учебный бой с ручным подбором союзников и противника.\n"
+"• Особенности: серебро и опыт не начисляются, карта и тип боя на выбор."
 
 msgid "battleTypes/training/header"
 msgstr "Супольныя вучэнні"
@@ -2750,7 +2750,7 @@ msgid "booster/filters/qualitySmall/body"
 msgstr "Малы асабісты рэзерв."
 
 msgid "booster/filters/typeCredits/body"
-msgstr "Дадатковыя крэдыты за бой."
+msgstr "Дополнительное серебро за бой."
 
 msgid "booster/filters/typeCrewXp/body"
 msgstr "Дадатковы досвед экіпажу за бой."
@@ -2791,7 +2791,7 @@ msgstr ""
 " рэзерву."
 
 msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_credits"
-msgstr "%(effectValue)s да крэдытаў за бой на %(effectTime)s"
+msgstr "%(effectValue)s к серебру за бой на %(effectTime)s"
 
 msgid "boostersWindow/booster/activateInfo/bonusValueTime/booster_crew_xp"
 msgstr "%(effectValue)sда досведу экіпажу за бой на %(effectTime)s"
@@ -2847,7 +2847,7 @@ msgid "boostersWindow/booster/activateInfo/title"
 msgstr "Дзе задзейнічваць:"
 
 msgid "boostersWindow/booster/activateInfo/title/booster_credits"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "boostersWindow/booster/activateInfo/title/booster_crew_xp"
 msgstr "Досвед экіпажа"
@@ -2892,13 +2892,13 @@ msgid "boostersWindow/booster/getCondition/value"
 msgstr "выканаць задачу «%(questName)s»"
 
 msgid "boostersWindow/booster/header/credits"
-msgstr "Дадатковыя крэдыты за бой"
+msgstr "Дополнительное серебро за бой"
 
 msgid "boostersWindow/booster/header/crewXp"
 msgstr "Дадатковы досвед экіпажу за бой"
 
 msgid "boostersWindow/booster/header/description/credits"
-msgstr "%(effectValue)s да крэдытаў за бой"
+msgstr "%(effectValue)s к серебру за бой"
 
 msgid "boostersWindow/booster/header/description/crewXp"
 msgstr "%(effectValue)s да досведу экіпажу за бой"
@@ -2964,8 +2964,8 @@ msgstr "ёсць"
 
 msgid "collectibleVehicleTooltip/description"
 msgstr ""
-"Асаблівая тэхніка, якая набываецца за крэдыты ў Краме.\n"
-"Яна адсутнічае ў Дрэве даследаванняў, але ў яе ёсць модулі, якія можна даследаваць."
+"Особая техника, приобретаемая за серебро в Магазине.\n"
+"Она отсутствует в Дереве исследований, но у неё есть исследуемые модули."
 
 msgid "collectibleVehicleTooltip/elite"
 msgstr "Атрымлівае «Элітны» статус пасля даследавання ўсіх модуляў."
@@ -3053,7 +3053,7 @@ msgstr ""
 "або купляюць за золата."
 
 msgid "credits/header"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "crew/body"
 msgstr "Разам з машынай ідзе %(value)s%% экіпаж."
@@ -3839,11 +3839,11 @@ msgid "deviceFits/already_installed/header"
 msgstr "Усталявана на:"
 
 msgid "deviceFits/credits_error/header"
-msgstr "Замала крэдытаў"
+msgstr "Недостаточно серебра"
 
 msgid "deviceFits/credits_error/text"
 msgstr ""
-"Зарабіце крэдыты ў баі, прадайце лішкі са Склада або абмяняйце золата."
+"Заработайте серебро в бою, продайте излишки со Склада или обменяйте золото."
 
 msgid "deviceFits/need_turret/header"
 msgstr "Гармату нельга ўсталяваць у цяперашнюю вежу."
@@ -5562,7 +5562,7 @@ msgid "hangar/header/quests/reward/rest"
 msgstr "і яшчэ %(count)d"
 
 msgid "hangar/header/wgmoneyTooltip/creditsName"
-msgstr "Вашы крэдыты"
+msgstr "Ваше серебро"
 
 msgid "hangar/header/wgmoneyTooltip/earnedValue"
 msgstr "Здабыта і атрымана"
@@ -5821,8 +5821,8 @@ msgstr "Агульны кошт"
 
 msgid "hangarTutorial/customizationDuration/body"
 msgstr ""
-"Камуфляж можна накладаць на 7-30 сутак (за крэдыты), а таксама бестэрмінова "
-"(за золата)."
+"Камуфляж можно наносить на срок от 7 до 30 дней (за серебро), а также "
+"бессрочно (за игровое золото)."
 
 msgid "hangarTutorial/customizationDuration/header"
 msgstr "Тэрмін дзеяння"
@@ -6030,22 +6030,22 @@ msgstr "Кланы"
 
 msgid "header/buttons/credits/body"
 msgstr ""
-"Атрымліваюцца звесткі пра баланс. Усе вашы крэдыты неўзабаве будуць "
-"даступныя."
+"Идёт получение данных о балансе. Всё ваше серебро станет доступно в "
+"ближайшее время."
 
 msgid "header/buttons/credits/clickDesc"
-msgstr "Націсніце, каб адкрыць акенца абмену золата на крэдыты."
+msgstr "Нажмите, чтобы открыть окно перевода игрового золота в серебро."
 
 msgid "header/buttons/credits/firstDesc"
 msgstr ""
-"Крэдыты можна здабыць у баі, выменяць за золата або атрымаць, прадаўшы "
-"абсталяванне, рыштунак, снарады і г.д."
+"Серебро можно заработать в бою, получить в результате перевода золота, "
+"продажи оборудования, снаряжения, снарядов и т.д."
 
 msgid "header/buttons/credits/header"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "header/buttons/credits/title"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "header/buttons/crystal/body"
 msgstr ""
@@ -6317,6 +6317,15 @@ msgstr ""
 "У Палявую пошту заўсёды можна трапіць\n"
 "праз меню гульні ў Гаражы."
 
+msgid "horStabilizationSnp/body"
+msgstr ""
+"Включение настройки облегчает прицеливание в снайперском режиме.\n"
+"\n"
+"Отключение настройки добавит реалистичное качание орудия при передвижении, что в свою очередь усложнит прицеливание в снайперском режиме."
+
+msgid "horStabilizationSnp/header"
+msgstr "Включение горизонтальной стабилизации в снайперском прицеле"
+
 msgid "hullLockEnabled/body"
 msgstr ""
 "Адключэнне павароту корпуса прадухіляе аўтаматычны паварот корпуса следам за прыцэлам у снайперскім рэжыме для машын з абмежаванымі ВГН.\n"
@@ -6475,15 +6484,14 @@ msgid "level/9"
 msgstr "IX"
 
 msgid "limitedUISettingBlock/info/attention"
-msgstr "Пасля адключэння гэтай налады вы не зможаце ўключыць яе зноў."
+msgstr "Отключив эту настройку, вы не сможете включить её обратно."
 
 msgid "limitedUISettingBlock/info/body"
 msgstr ""
-"У Гаражы часова схавана частка інтэрфейсаў для паэтапнага знаёмства з "
-"гульнёй."
+"В Ангаре временно скрыта часть интерфейса для поэтапного знакомства с игрой."
 
 msgid "limitedUISettingBlock/info/header"
-msgstr "Паступовае з'яўленне схаваных інтэрфейсаў"
+msgstr "Поэтапное появление скрытых элементов интерфейса в Ангаре"
 
 msgid "lobby/header/buyPremiumAccount/disabled/body"
 msgstr ""
@@ -6501,22 +6509,6 @@ msgstr "Інфармацыйныя лісткі даступныя ў поўна
 
 msgid "lobbyMenu/versionInfoButton/miniclient/header"
 msgstr "Увага!"
-
-msgid "loby_messenger/btnReferralDisabled/body"
-msgstr ""
-"Недаступна ў выбраным рэжыме. Для атрымання доступу да функцыянальнай "
-"магчымасць перайдзіце ў рэжым «Выпадковы бой»."
-
-msgid "loby_messenger/btnReferralDisabled/header"
-msgstr "Рэферальная праграма"
-
-msgid "loby_messenger/btnVehicleCartDisabled/body"
-msgstr ""
-"Недаступна ў выбраным рэжыме. Для атрымання доступу да функцыянальнай "
-"магчымасць перайдзіце ў рэжым «Выпадковы бой»."
-
-msgid "loby_messenger/btnVehicleCartDisabled/header"
-msgstr "Параўнанне тэхнікі"
 
 msgid "loby_messenger/channel_button/inRoaming"
 msgstr "Каналы недаступныя з прычыны змены рэгіёна"
@@ -6924,11 +6916,11 @@ msgstr ""
 "у іншы."
 
 msgid "moduleFits/credits_error/header"
-msgstr "Замала крэдытаў"
+msgstr "Недостаточно серебра"
 
 msgid "moduleFits/credits_error/text"
 msgstr ""
-"Зарабіце крэдыты ў баі, прадайце лішкі са Склада або абмяняйце золата."
+"Заработайте серебро в бою, продайте излишки со Склада или обменяйте золото."
 
 msgid "moduleFits/deconstruct/modernized/description"
 msgstr "(вы атрымаеце)"
@@ -8706,6 +8698,61 @@ msgid "notrecruitedtankman/tankmen_BP16_M/label"
 msgstr ""
 "Баявы пропуск «Шлях да перамогі», адмысловы раздзел «Мышынае паляванне»."
 
+msgid "notrecruitedtankman/tankmen_BP17_1/desc"
+msgstr ""
+"Потомственный моряк, которому пришлось резко сменить сферу деятельности и "
+"сбежать на край света, заручившись поддержкой нового работодателя — Альянса."
+" Надеется, что те, кому он так неосторожно перешёл дорогу, не будут искать "
+"его за полярным кругом. Подробностей не будет: в этом вопросе лучше меньше "
+"знать."
+
+msgid "notrecruitedtankman/tankmen_BP17_1/label"
+msgstr "Боевой пропуск, «Вокруг света»"
+
+msgid "notrecruitedtankman/tankmen_BP17_2/desc"
+msgstr ""
+"Тот самый Жан-Марк Лемартен, французский механик и поневоле личный биограф "
+"фон Кригера, которого последний выдернул из болота Альянса и забрал с собой "
+"на камчатскую базу «Вулкан». Тут Лемартен получил советский паспорт и стал "
+"незаменимым ассистентом фон Кригера, поскольку даже гениальным учёным не "
+"обойтись без дополнительно пары рук."
+
+msgid "notrecruitedtankman/tankmen_BP17_2/label"
+msgstr "Боевой пропуск, «Вокруг света»"
+
+msgid "notrecruitedtankman/tankmen_BP17_3/desc"
+msgstr ""
+"Лучшие «глаза» и «уши», которые повезло найти Кощееву для всех своих "
+"разведывательных операций. Умеет слиться с окружением, затеряться в толпе, "
+"исчезнуть и раствориться. Отлично подмечает детали и составляет объективную "
+"картину ситуации. Совершенно незаменимый специалист для случаев, когда "
+"осторожность превыше грубой силы."
+
+msgid "notrecruitedtankman/tankmen_BP17_3/label"
+msgstr "Боевой пропуск, «Вокруг света»"
+
+msgid "notrecruitedtankman/tankmen_BP17_4/desc"
+msgstr ""
+"Член мезоамериканской научной экспедиции, историк и этнограф, шумный и "
+"деятельный учёный с неуёмной энергией. Одинаково хорошо уживается с железом "
+"и людьми, уважительно относится к историческим артефактам и памяти веков. В "
+"некоторых случаях, возможно, излишне горяч, но до сих пор его порой "
+"авантюрные действия не давали осечек."
+
+msgid "notrecruitedtankman/tankmen_BP17_4/label"
+msgstr "Боевой пропуск, «Вокруг света»"
+
+msgid "notrecruitedtankman/tankmen_BP17_5/desc"
+msgstr ""
+"Руководитель африканской операции, одинаково глубоко освоивший гидрологию и "
+"медицину. Мягкий и спокойный нрав, харизма и уживчивость позволили ему найти"
+" общий язык с аборигенами, что существенно сэкономило время и помогло "
+"перевыполнить план, поставленный перед экспедицией. На хорошем счету как у "
+"Альянса, так и у вождей местных племён."
+
+msgid "notrecruitedtankman/tankmen_BP17_5/label"
+msgstr "Боевой пропуск, «Вокруг света»"
+
 msgid "notrecruitedtankman/tankmen_Inzhener_2/desc"
 msgstr ""
 "Механік танкавай роты, «бацька салдатам». Адчувае вялізную адказнасць за "
@@ -8813,12 +8860,12 @@ msgstr "Падзея «Час герояў»"
 
 msgid "notrecruitedtankman/tankmen_May25_2/desc"
 msgstr ""
-"Савецкі ваенны дзеяч, Герой Савецкага Саюза. У гады Вялікай Айчыннай вайны "
-"камандаваў рознымі злучэннямі ад палка да корпуса; удзельнічаў у шэрагу "
-"ключавых бітваў, у тым ліку Курскай бітве і штурме Берліна. Пасля Перамогі "
-"ўзначальваў Ваенную акадэмію бранятанкавых войскаў, а ў 1969-м годзе быў "
-"прызначаны на пасаду начальніка бранятанкавых войскаў СССР, з 1975-га — "
-"галоўны маршал бранятанкавых войскаў."
+"Советский военный деятель, Герой Советского Союза. В годы Великой "
+"Отечественной войны командовал различными соединениями от полка до корпуса; "
+"участвовал в ряде ключевых сражений, в том числе Курской битве и штурме "
+"Берлина. После Победы возглавлял Военную академию бронетанковых войск, а в "
+"1969-м году был назначен на должность начальника бронетанковых войск СССР, с"
+" 1975-го — главный маршал бронетанковых войск."
 
 msgid "notrecruitedtankman/tankmen_May25_2/label"
 msgstr "Падзея «Час герояў»"
@@ -10377,10 +10424,10 @@ msgstr "Выпадковае эксперыментальнае абсталяв
 
 msgid "playStreak/randomGoodie/desc"
 msgstr ""
-"Кожны раз пры налічэнне штотыднёвай узнагароды вы атрымаеце адзін выпадковы прадмет са спіса:\n"
-"• Асабістыя рэзервы — бонус 100% да баявога досведу на 1 гадз.\n"
-"• Асабістыя рэзервы — бонус 50% да крэдытаў на 1 гадз.\n"
-"• Асабістыя рэзервы — бонус 300% да камбінаванага досведу на 1 гадз."
+"Каждый раз при начислении еженедельной награды вы получите один случайный предмет из списка:\n"
+"• Личные резервы бонус 100% к боевому опыту на 1 ч.\n"
+"• Личные резервы бонус 50% к серебру на 1 ч.\n"
+"• Личные резервы бонус 300% к комбинированному опыту на 1 ч."
 
 msgid "playStreak/randomGoodie/label"
 msgstr "Выпадковыя асабістыя рэзервы"
@@ -10435,8 +10482,8 @@ msgstr ""
 
 msgid "prem/piggyBank/ghostBtn/body"
 msgstr ""
-"Даведацца больш пра сховішча крэдытаў і іншыя магчымасці Танкавага прэміум "
-"акаўнту."
+"Узнать больше про хранилище серебра и другие возможности Танкового премиум "
+"аккаунта."
 
 msgid "premium/days/header"
 msgstr "Агульны прэміум акаўнт на %d сут"
@@ -10456,7 +10503,7 @@ msgstr ""
 "(&zwnbsp;%(nation)s&zwnbsp;) без штрафаў."
 
 msgid "premiumVehicle/content/credits"
-msgstr "Больш крэдытаў за кожны бой"
+msgstr "Больше серебра за каждый бой"
 
 msgid "premiumVehicle/content/experience"
 msgstr "Больш баявога досведу і досведу экіпажа"
@@ -11955,7 +12002,7 @@ msgid "soundQualityOn/header"
 msgstr "Нізкая якасць"
 
 msgid "squadBonus/comp7/description"
-msgstr "Гуляючы звязам, вы можаце здабыць дадатковыя крэдыты і досвед."
+msgstr "Играя взводом, вы можете получать дополнительное серебро и опыт."
 
 msgid "squadBonus/complex/body"
 msgstr ""
@@ -11967,7 +12014,7 @@ msgid "squadBonus/complex/bonusPercent"
 msgstr "%(value)s%%"
 
 msgid "squadBonus/complex/comp7/body"
-msgstr "Гуляючы звязам, вы будзеце здабываць дадатковыя крэдыты і досвед."
+msgstr "Играя взводом, вы будете получать дополнительное серебро и опыт."
 
 msgid "squadBonus/complex/comp7/header"
 msgstr "Бонусы за гульню звязам"
@@ -11982,12 +12029,12 @@ msgid "squadBonus/credits/bonusWithoutPremium"
 msgstr "+{value}, калі Танкавы прэміум акаўнт мае ўдзельнік вашага звязу."
 
 msgid "squadBonus/credits/header"
-msgstr "Дадатковыя крэдыты"
+msgstr "Дополнительное серебро"
 
 msgid "squadBonus/description"
 msgstr ""
-"Гуляючы звязам, вы можаце атрымаць дадатковыя крэдыты і досвед. Бонус не "
-"даступны для дынамічных звязаў."
+"Играя взводом, вы можете получать дополнительное серебро и опыт. Бонус "
+"недоступен для динамических взводов."
 
 msgid "squadBonus/experience/bonus"
 msgstr ""
@@ -12036,7 +12083,7 @@ msgid "storage/filter/personalReserves/btns/type/comboExp"
 msgstr "Дадатковы вольны досвед і досвед экіпажа за бой"
 
 msgid "storage/filter/personalReserves/btns/type/credits"
-msgstr "Дадатковыя крэдыты за бой."
+msgstr "Дополнительное серебро за бой."
 
 msgid "storage/filter/personalReserves/btns/type/vehicleExp"
 msgstr "Дадатковы досвед за бой."
@@ -12103,8 +12150,8 @@ msgstr "Пастаўкі з тылу"
 
 msgid "storage/mainMenu/personal_reserves/body"
 msgstr ""
-"Змяшчае асабістыя рэзервы, якія дазваляюць часова атрымаць надбаўку да "
-"досведу або крэдытаў, якія здабываюцца ў баях."
+"Содержит личные резервы, позволяющие на время получить прибавку к заработку "
+"опыта или серебру в боях."
 
 msgid "storage/mainMenu/personal_reserves/header"
 msgstr "Асабістыя рэзервы"
@@ -13540,7 +13587,7 @@ msgstr ""
 "золата."
 
 msgid "vehiclePreview/buyButton/notEnoughCredits/header"
-msgstr "Замала крэдытаў"
+msgstr "Недостаточно серебра"
 
 msgid "vehiclePreview/buyButton/notEnoughGold/body"
 msgstr "Папоўніце рахунак."
@@ -13653,11 +13700,11 @@ msgstr "Дадатковы баявы досвед"
 
 msgid "vehiclePreview/eliteBonus/credit/body"
 msgstr ""
-"• Прэміум тэхніка дае больш крэдытаў за кожны бой, што значна эканоміць ваш "
-"час."
+"• Премиум техника приносит больше серебра за каждый бой, что существенно "
+"экономит ваше время."
 
 msgid "vehiclePreview/eliteBonus/credit/header"
-msgstr "Больш крэдытаў"
+msgstr "Больше серебра"
 
 msgid "vehiclePreview/eliteBonus/crew/body"
 msgstr ""
@@ -13998,7 +14045,7 @@ msgid "vehicleStatus/locked/header"
 msgstr "У складзе фармавання"
 
 msgid "vehicleStatus/notEnoughCredits/header"
-msgstr "Замала крэдытаў"
+msgstr "Недостаточно серебра"
 
 msgid "vehicleStatus/notEnoughCredits/text"
 msgstr ""
@@ -14058,8 +14105,8 @@ msgstr "Разблакуецца ў баі"
 
 msgid "wallet/not_available_credits/body"
 msgstr ""
-"Атрымліваюцца звесткі пра баланс.\n"
-"Усе вашы крэдыты неўзабаве будуць даступныя."
+"Идёт получение данных о балансе.\n"
+"Всё ваше серебро станет доступно в ближайшее время."
 
 msgid "wallet/not_available_credits/header"
 msgstr "Атрыманне звестак"

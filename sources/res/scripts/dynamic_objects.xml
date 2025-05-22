@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	-
 	<models/>
 	<stunAreaVisual>
 		<radius>
@@ -351,21 +350,6 @@
 			</overTerrainHeight>
 		</ally>
 	</InspireAreaVisual>
-	<EquipmentCircleRestrictionVisual>
-		<ally>
-			<visual>content/Interface/TargetPoint/inspire.model</visual>
-			<color>0xffffffff</color>
-			<enableAccurateCollision>False</enableAccurateCollision>
-			<maxUpdateInterval>
-				0.04
-				<!--BW_String-->
-			</maxUpdateInterval>
-			<overTerrainHeight>
-				0.5
-				<!--BW_String-->
-			</overTerrainHeight>
-		</ally>
-	</EquipmentCircleRestrictionVisual>
 	<HealPointVisual>
 		<ally>
 			<visual>content/Interface/TargetPoint/inspire.model</visual>
@@ -847,20 +831,6 @@
 			</effect>
 		</enemy>
 	</epicMinesIdleEffect>
-	<epicMinesIdleYellowEffect>
-		<ally>
-			<effect>
-				<path_fwd>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_allies_yellow.seq</path_fwd>
-				<path>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_allies_yellow.seq</path>
-			</effect>
-		</ally>
-		<enemy>
-			<effect>
-				<path_fwd>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_enemy.seq</path_fwd>
-				<path>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_enemy.seq</path>
-			</effect>
-		</enemy>
-	</epicMinesIdleYellowEffect>
 	<minesBlowUpEffect>
 		<timeline>
 			<lightingEnd>
@@ -1177,9 +1147,4 @@
 			<path>particles/Environment/interior/280_cosmic_geyser.eff</path>
 		</effect>
 	</cosmicEffects>
-	<hangar9May25>
-		<effect>
-			<path>particles/Environment/hangar/h01_vd_25_ground_fog.eff</path>
-		</effect>
-	</hangar9May25>
 </root>

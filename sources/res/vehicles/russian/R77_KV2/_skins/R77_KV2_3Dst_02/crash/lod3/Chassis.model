@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.662340 -0.000044 -3.804095</min>
+		<max>1.635600 1.243195 3.625281</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

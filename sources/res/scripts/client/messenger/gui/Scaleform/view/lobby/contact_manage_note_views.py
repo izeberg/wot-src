@@ -1,6 +1,6 @@
+from gui.Scaleform.daapi.view.meta.ContactNoteManageViewMeta import ContactNoteManageViewMeta
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from messenger.gui.Scaleform.data.contacts_vo_converter import ContactConverter
-from messenger.gui.Scaleform.meta.ContactNoteManageViewMeta import ContactNoteManageViewMeta
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter
 from messenger.proto.xmpp.xmpp_string_utils import validateContactNote

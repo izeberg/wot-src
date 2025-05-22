@@ -107,7 +107,7 @@ msgstr ""
 "Танковый премиум аккаунт"
 
 msgid "premiumAccount/upgrade/creditReserve"
-msgstr "Хранилище кредитов"
+msgstr "Хранилище серебра"
 
 msgid "premiumAccount/upgrade/excludeMapSlot"
 msgstr "+1 слот для исключения карты"
@@ -116,7 +116,7 @@ msgid "premiumAccount/upgrade/experience"
 msgstr "Управляемый бонус к опыту"
 
 msgid "premiumAccount/upgrade/platoonBonusCredits"
-msgstr "Взводный бонус к кредитам"
+msgstr "Взводный бонус к серебру"
 
 msgid "premiumAccount/upgrade/premiumMissions"
 msgstr "Премиум задачи"
@@ -130,17 +130,17 @@ msgid "premiumQuests/heading"
 msgstr "Премиум задачи"
 
 msgid "reserveStock/blockTitle"
-msgstr "Хранилище кредитов"
+msgstr "Хранилище серебра"
 
 msgid "reserveStock/emptyDisabledSubtitle"
 msgstr "Приносит до %(creditMaxAmount) за неделю вследствие активной игры."
 
 msgid "reserveStock/reserveFull"
-msgstr "Хранилище кредитов заполнено"
+msgstr "Хранилище серебра заполнено"
 
 msgid "reserveStock/suspended"
 msgstr ""
-"Накопление кредитов в хранилище приостановлено:\n"
+"Накопление серебра в хранилище приостановлено:\n"
 "истёк срок действия Танкового премиум аккаунта."
 
 msgid "reserveStock/unavailable"

@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>vfx_m0</identifier>
-					<fx>shaders/particles/wg_particles.fx</fx>
+					<fx>shaders/particles/particles.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>

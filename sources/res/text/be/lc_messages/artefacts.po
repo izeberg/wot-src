@@ -1558,9 +1558,9 @@ msgstr "Дадае бонус да асноўных спецыяльнасцяў
 
 msgid "juggernaut/descr"
 msgstr ""
-"Пры актывацыі павялічвае магутнасць рухавіка і хуткасць рамонту модуляў, "
-"зніжае час аглушэння. Паскарае перанабіванне гарматы, калі падчас дзеяння "
-"ўмення ваша машына атрымлівае траплянне з пашкоджаннямі або без іх."
+"При активации увеличивает мощность двигателя и скорость ремонта модулей, "
+"снижает время оглушения. Ускоряет перезарядку, если во время действия умения"
+" ваша машина получает попадания с уроном и без."
 
 msgid "juggernaut/name"
 msgstr "Цэнтрабежны нагнятальнік"
@@ -1905,9 +1905,9 @@ msgstr "?empty?"
 
 msgid "poi_minefield/descr"
 msgstr ""
-"На наступныя {colorTagOpen}%(duration)d с{colorTagClose} ва ўказанай зоне бдузе размешчана міннае поле памерам {colorTagOpen}%(width)d м{colorTagClose} × {colorTagOpen}%(length)d м{colorTagClose}. Міны пры дэтанацыі пашкоджваюць тэхніку праціўніка і аглушаюць экіпаж.\n"
-"Усяго на полі {colorTagOpen}%(count)d мін{colorTagClose}.\n"
-"Час да актывацыі міннага поля пасля яго размяшчэння: {colorTagOpen}%(delay)d с{colorTagClose}."
+"На следующие {colorTagOpen}%(duration)d с{colorTagClose} в указанной области будет размещено минное поле размером {colorTagOpen}%(width)d м{colorTagClose} × {colorTagOpen}%(length)d м{colorTagClose}. Мины при детонации повреждают технику противника и оглушают экипаж.\n"
+"Всего на поле {colorTagOpen}%(count)d мин{colorTagClose}.\n"
+"Время до активации минного поля после его размещения: {colorTagOpen}%(delay)d с{colorTagClose}."
 
 msgid "poi_minefield/long_descr"
 msgstr "?empty?"
@@ -2229,6 +2229,15 @@ msgstr "Толькі для тэхнікі Вялікабрытаніі."
 
 msgid "ration_uk/short_special"
 msgstr "Павялічвае эфектыўнасць брытанскіх экіпажаў"
+
+msgid "recoil_recuperator/descr"
+msgstr ""
+"При активации увеличивает скорость, мощность двигателя, изменяет "
+"стабилизацию, снижает задержку для подготовки залпа и уменьшает время штрафа"
+" после залпа."
+
+msgid "recoil_recuperator/name"
+msgstr "Рекуператор отката"
 
 msgid "recon/longDescr"
 msgstr ""
@@ -3041,6 +3050,38 @@ msgstr "Палепшаны ДТК"
 
 msgid "role_XI_MBT_B_pair_5_2/splitName"
 msgstr "Палепшаны ДТК"
+
+msgid "role_XI_Mausekonig_pair_4_1/name"
+msgstr "Адкідныя дэфлектары"
+
+msgid "role_XI_Mausekonig_pair_4_1/splitName"
+msgstr ""
+"Адкідныя\n"
+"дэфлектары"
+
+msgid "role_XI_Mausekonig_pair_4_2/name"
+msgstr "Усиленные агрегаты"
+
+msgid "role_XI_Mausekonig_pair_4_2/splitName"
+msgstr ""
+"Усиленные\n"
+"агрегаты"
+
+msgid "role_XI_Mausekonig_pair_5_1/name"
+msgstr "Павышэнне ціску паліва"
+
+msgid "role_XI_Mausekonig_pair_5_1/splitName"
+msgstr ""
+"Павышэнне\n"
+"ціску паліва"
+
+msgid "role_XI_Mausekonig_pair_5_2/name"
+msgstr "Сосредоточенный огонь"
+
+msgid "role_XI_Mausekonig_pair_5_2/splitName"
+msgstr ""
+"Сосредоточенный\n"
+"огонь"
 
 msgid "role_XI_pair_1_1/name"
 msgstr "Узмоцненая перагародка МТА"

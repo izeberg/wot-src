@@ -18,16 +18,16 @@ msgid "closeBtn/label"
 msgstr "ЗАКРЫЦЬ"
 
 msgid "credits/description"
-msgstr "У наборы: %(value)s крэдытаў"
+msgstr "В наборе: %(value)s серебра"
 
 msgid "credits/longDescription"
 msgstr ""
-"Асноўная гульнявая валюта.\n"
+"Основная игровая валюта.\n"
 "\n"
-"У наборы: %(value)s крэдытаў"
+"В наборе: %(value)s серебра"
 
 msgid "credits/title"
-msgstr "Крэдыты"
+msgstr "Серебро"
 
 msgid "crystal/description"
 msgstr "У наборы: %(value)s бонаў"
@@ -90,12 +90,15 @@ msgstr ""
 msgid "notifications/description/armory_coin"
 msgstr "Патрачана жэтонаў: %(value)s"
 
+msgid "notifications/description/crystal"
+msgstr "Потрачено бон: %(value)s"
+
 msgid "notifications/description/gold"
 msgstr "Патрачана золата: %(value)s"
 
 msgid "notifications/financialTransaction"
 msgstr ""
-"Дата:%(date)s\n"
+"Дата: %(date)s\n"
 "%(currencies)s"
 
 msgid "notifications/purchaseContent"
@@ -169,6 +172,13 @@ msgstr ""
 "трэба часта падстаўляцца пад агонь у адказ. Вялікая колькасць станоўчых "
 "характарыстык ураўнаважваецца сціплай дакладнасцю і невысокай удзельнай "
 "магутнасцю."
+
+msgid "product/bundle/longDescription/episode6"
+msgstr ""
+"Этот тяжёлый танк прорыва обладает неплохой динамикой, максимальной "
+"скоростью и крепким лобовым бронированием. Задача машины — проламывать "
+"направление и пользоваться преимуществами своей брони. Хороший угол "
+"склонения орудия позволяет уверенно чувствовать себя при игре «от рельефа»."
 
 msgid "product/bundle/title"
 msgstr "Набор з %(vehicleName)s"
@@ -325,6 +335,9 @@ msgstr ""
 "Вольныя жэтоны пачынаюць назапашвацца ў тым выпадку, калі гулец ужо завяршыў"
 " асноўную прагрэсію Зборачнага цэха."
 
+msgid "tooltip/shop/currency/gold"
+msgstr "золото"
+
 msgid "tooltip/shop/currency/header/description"
 msgstr "Зборачны цэх"
 
@@ -333,9 +346,11 @@ msgstr "Вольны жэтон"
 
 msgid "tooltip/shop/currency/info"
 msgstr ""
-"%(green_open)sАтрымаць жэтоны%(green_close)s можна ва ўзнагароду за задачы "
-"Зборачнага цэха, а таксама за %(gold_open)sзолата%(gold_close)s. Колькасць "
-"жэтонаў абмежаваная."
+"%(takeCoin)s можно в награду за задачи Сборочного цеха, а также за %(gold)s."
+" Количество жетонов ограничено."
+
+msgid "tooltip/shop/currency/takeCoin"
+msgstr "Получить жетоны"
 
 msgid "tooltip/shop/info/body"
 msgstr "Паўторны прагляд кароткага апісання працы крамы Зборачнага цэха."

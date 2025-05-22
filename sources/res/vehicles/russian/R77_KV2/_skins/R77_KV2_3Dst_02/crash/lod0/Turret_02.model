@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/crash/lod0/Turret_02</nodefullVisual>
+	<visibilityBox>
+		<min>-1.555781 0.032032 -2.350852</min>
+		<max>1.279082 2.421166 1.378610</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/crash/lod1/Turret_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

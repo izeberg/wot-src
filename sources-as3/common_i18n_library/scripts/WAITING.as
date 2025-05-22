@@ -344,8 +344,6 @@ package
       public static const PARAGONS_LOADSELECTOR:String = "#waiting:paragons/loadSelector";
       
       public static const PARAGONS_SELECTREWARD:String = "#waiting:paragons/selectReward";
-      
-      public static const DOWNLOAD_HISTORICALBATTLES:String = "#waiting:download/historicalBattles";
        
       
       public function WAITING()
