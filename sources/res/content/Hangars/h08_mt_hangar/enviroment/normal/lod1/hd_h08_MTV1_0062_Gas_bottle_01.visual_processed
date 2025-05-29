@@ -66,15 +66,15 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0061_ladder_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.094779 0.794085 -0.000000</groupOrigin>
+				<groupOrigin>0.094732 0.794085 -0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.581362 -0.002754 -0.447909</min>
+		<min>-0.581456 -0.002754 -0.447909</min>
 		<max>0.770920 1.590924 0.447909</max>
 	</boundingBox>
-	<geometrySize>75062</geometrySize>
+	<geometrySize>77902</geometrySize>
 	<minUVDensity>0.042382</minUVDensity>
 </root>

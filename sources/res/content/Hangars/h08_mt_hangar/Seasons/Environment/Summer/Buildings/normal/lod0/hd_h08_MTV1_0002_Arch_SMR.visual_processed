@@ -63,7 +63,7 @@
 						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/Detail_Set_hd_h08_MTV1_SMR_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000077 10.749771 -1.421422</groupOrigin>
+				<groupOrigin>-0.000077 10.749771 -1.433021</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -137,7 +137,7 @@
 						<Vector4>0.501961 0.415686 0.376471 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.000002 12.898636 0.000006</groupOrigin>
+				<groupOrigin>-0.000002 12.870621 0.000006</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -298,6 +298,6 @@
 		<max>27.607468 24.512209 6.787192</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>596152</geometrySize>
-	<minUVDensity>0.000645</minUVDensity>
+	<geometrySize>309828</geometrySize>
+	<minUVDensity>0.000639</minUVDensity>
 </root>

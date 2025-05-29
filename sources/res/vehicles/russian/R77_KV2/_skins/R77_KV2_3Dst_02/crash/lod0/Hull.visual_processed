@@ -112,6 +112,14 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/KV2_3dst_02_hull_01_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.010965 0.021273 -0.130384</groupOrigin>
 			</primitiveGroup>

@@ -1934,6 +1934,8 @@ class TOOLTIPS(object):
     AWARDITEM_EQUIPCOIN_BODY = '#tooltips:awardItem/equipCoin/body'
     AWARDITEM_STEELHUNTERPOINT_HEADER = '#tooltips:awardItem/steelHunterPoint/header'
     AWARDITEM_STEELHUNTERPOINT_BODY = '#tooltips:awardItem/steelHunterPoint/body'
+    AWARDITEM_BUMBLEBEE_COIN_HEADER = '#tooltips:awardItem/bumblebee_coin/header'
+    AWARDITEM_BUMBLEBEE_COIN_BODY = '#tooltips:awardItem/bumblebee_coin/body'
     AWARDITEM_FREEXP_HEADER = '#tooltips:awardItem/freeXP/header'
     AWARDITEM_FREEXP_BODY = '#tooltips:awardItem/freeXP/body'
     AWARDITEM_PREMIUM_HEADER = '#tooltips:awardItem/premium/header'
@@ -4157,6 +4159,7 @@ class TOOLTIPS(object):
      AWARDITEM_BPCOIN_HEADER,
      AWARDITEM_EQUIPCOIN_HEADER,
      AWARDITEM_STEELHUNTERPOINT_HEADER,
+     AWARDITEM_BUMBLEBEE_COIN_HEADER,
      AWARDITEM_FREEXP_HEADER,
      AWARDITEM_PREMIUM_HEADER,
      AWARDITEM_PREMIUM_PLUS_HEADER,
@@ -4237,6 +4240,7 @@ class TOOLTIPS(object):
      AWARDITEM_BPCOIN_BODY,
      AWARDITEM_EQUIPCOIN_BODY,
      AWARDITEM_STEELHUNTERPOINT_BODY,
+     AWARDITEM_BUMBLEBEE_COIN_BODY,
      AWARDITEM_FREEXP_BODY,
      AWARDITEM_PREMIUM_BODY,
      AWARDITEM_PREMIUM_PLUS_BODY,

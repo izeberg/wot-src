@@ -1287,6 +1287,7 @@ class QUESTS(object):
     BONUSNAME_ATTENDANCE_REWARD = '#quests:bonusName/attendance_reward'
     BONUSNAME_TEAM_CREDITS_BONUS = '#quests:bonusName/team_credits_bonus'
     BONUSNAME_DAILY_QUESTS_REWARDS = '#quests:bonusName/daily_quests_rewards'
+    BONUSNAME_BUMBLEBEE_COIN = '#quests:bonusName/bumblebee_coin'
     ACTION_AUTO_CALENDAR = '#quests:action/auto/calendar'
     ACTION_FULL_CALENDAR = '#quests:action/full/calendar'
     ACTION_HERO_FULL_CALENDAR = '#quests:action/hero/full/calendar'
@@ -1949,7 +1950,8 @@ class QUESTS(object):
      BONUSNAME_EXCLUSIVE_VEHICLE,
      BONUSNAME_ATTENDANCE_REWARD,
      BONUSNAME_TEAM_CREDITS_BONUS,
-     BONUSNAME_DAILY_QUESTS_REWARDS)
+     BONUSNAME_DAILY_QUESTS_REWARDS,
+     BONUSNAME_BUMBLEBEE_COIN)
     ACTION_ENUM = (
      ACTION_AUTO_CALENDAR,
      ACTION_FULL_CALENDAR,

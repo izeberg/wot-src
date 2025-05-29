@@ -39,10 +39,6 @@
 					<identifier>tank_turret_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>0.000000 -0.004839 0.050697</groupOrigin>
 			</primitiveGroup>

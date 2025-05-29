@@ -25,24 +25,6 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s_ramp0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -58,14 +40,14 @@
 					<collisionFlags>131</collisionFlags>
 					<materialKind>111</materialKind>
 				</material>
-				<groupOrigin>-0.033350 0.225000 -0.014978</groupOrigin>
+				<groupOrigin>-0.033350 0.121789 -0.014978</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
 					<identifier>d_stone0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
 						normalMap
@@ -111,6 +93,6 @@
 		<max>1.429069 1.947091 2.729920</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>65788</geometrySize>
-	<minUVDensity>0.006047</minUVDensity>
+	<geometrySize>65820</geometrySize>
+	<minUVDensity>0.005102</minUVDensity>
 </root>

@@ -2273,6 +2273,10 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FAMECOIN:String = "#messenger:platformCurrencyMsg/debited/famecoin";
       
+      public static const PLATFORMCURRENCYMSG_RECEIVED_BUMBLEBEE_COIN:String = "#messenger:platformCurrencyMsg/received/bumblebee_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_BUMBLEBEE_COIN:String = "#messenger:platformCurrencyMsg/debited/bumblebee_coin";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FREEXP:String = "#messenger:platformCurrencyMsg/debited/freeXP";

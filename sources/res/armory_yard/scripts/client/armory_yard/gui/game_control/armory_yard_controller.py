@@ -219,6 +219,10 @@ class ArmoryYardController(IArmoryYardController):
         startSeasonDate, _ = self.getSeasonInterval()
         return startSeasonDate is not None and self.__serverSettings.isEnabled()
 
+    @property
+    def isPaused(self):
+        return self.__isPaused
+
     def isCompleted(self):
         totalTokens, receivedTokens = self.getTokensInfo()
         return totalTokens <= receivedTokens
@@ -425,6 +429,15 @@ class ArmoryYardController(IArmoryYardController):
     def getTokensInfo(self):
         return (self.getTotalSteps(), self.getCurrencyTokenCount())
 
+    def isAllTokensReceived(self):
+        for cycleID, _ in self.serverSettings.iterAllCycles():
+            if self.totalTokensInChapter(cycleID) > self.receivedTokensInChapter(cycleID) and not self.isChapterFinished(cycleID):
+                return False
+
+        if self.getTotalSteps() > self.getCurrencyTokenCount():
+            return False
+        return True
+
     def totalTokensInChapter(self, cycleID):
         quest = self.__eventsCache.getQuestByID(getEndQuestID(cycleID))
         if quest is None:
@@ -583,6 +596,9 @@ class ArmoryYardController(IArmoryYardController):
                 self.__isPaused = self.serverSettings.isPaused
                 self.onServerSwitchChange()
         self.onUpdated()
+
+    def isInAnnouncement(self):
+        return self.getState() == State.BEFOREPROGRESSION
 
     def checkAnnouncement(self):
         if self.getState() == State.BEFOREPROGRESSION:

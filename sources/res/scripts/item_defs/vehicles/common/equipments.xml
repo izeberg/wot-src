@@ -11287,7 +11287,7 @@
 				<exports>vse tooltip</exports>
 			</repairBuff>
 			<gunReloadBoost>
-				7.0
+				6.0
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadBoost>
@@ -11442,7 +11442,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				5
+				8
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -11450,11 +11450,11 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<delay>
-				1
+				2
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
-				50 75 100
+				50 70 90
 				<exports>vse tooltip</exports>
 			</radius>
 			<areaVisual>content/Interface/TargetPoint/ReconFlight_02.visual</areaVisual>

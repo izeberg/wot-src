@@ -416,67 +416,67 @@ msgid "chapter/currentStep/colon"
 msgstr "Бягучы этап:"
 
 msgid "chapter/fullName/1"
-msgstr "Сіла духу"
+msgstr "Среди лиан"
 
 msgid "chapter/fullName/171"
-msgstr "+++Сила духа"
+msgstr "Среди лиан"
 
 msgid "chapter/fullName/172"
-msgstr "+++Восточный ветер"
+msgstr "Полярное сияние"
 
 msgid "chapter/fullName/173"
-msgstr "+++Взвейся, знамя!"
+msgstr "Пески Калахари"
 
 msgid "chapter/fullName/174"
-msgstr "+++Победный марш"
+msgstr "Камчатская баллада"
 
 msgid "chapter/fullName/2"
-msgstr "Усходні вецер"
+msgstr "Полярное сияние"
 
 msgid "chapter/fullName/3"
-msgstr "Узвіся, сцяг!"
+msgstr "Пески Калахари"
 
 msgid "chapter/fullName/4"
-msgstr "Пераможны марш"
+msgstr "Камчатская баллада"
 
 msgid "chapter/fullName/5"
 msgstr "Паляванне на мышэй"
 
 msgid "chapter/fullName/quoted/171"
-msgstr "+++Сила духа"
+msgstr "Среди лиан"
 
 msgid "chapter/fullName/quoted/172"
-msgstr "+++Восточный ветер"
+msgstr "Полярное сияние"
 
 msgid "chapter/fullName/quoted/173"
-msgstr "+++Взвейся, знамя!"
+msgstr "Пески Калахари"
 
 msgid "chapter/fullName/quoted/174"
-msgstr "+++Победный марш"
+msgstr "Камчатская баллада"
 
 msgid "chapter/fullNameUppercased/171"
-msgstr "+++СИЛА ДУХА"
+msgstr "СРЕДИ ЛИАН"
 
 msgid "chapter/fullNameUppercased/172"
-msgstr "+++ВОСТОЧНЫЙ ВЕТЕР"
+msgstr "ПОЛЯРНОЕ СИЯНИЕ"
 
 msgid "chapter/fullNameUppercased/173"
-msgstr "+++ВЗВЕЙСЯ, ЗНАМЯ!"
+msgstr "ПЕСКИ КАЛАХАРИ"
 
 msgid "chapter/fullNameUppercased/174"
-msgstr "+++ПОБЕДНЫЙ МАРШ"
+msgstr "КАМЧАТСКАЯ БАЛЛАДА"
 
 msgid "chapter/fullNameUppercased/quoted/171"
-msgstr "+++СИЛА ДУХА"
+msgstr "СРЕДИ ЛИАН"
 
 msgid "chapter/fullNameUppercased/quoted/172"
-msgstr "+++ВОСТОЧНЫЙ ВЕТЕР"
+msgstr "ПОЛЯРНОЕ СИЯНИЕ"
 
 msgid "chapter/fullNameUppercased/quoted/173"
-msgstr "+++ВЗВЕЙСЯ, ЗНАМЯ!"
+msgstr "ПЕСКИ КАЛАХАРИ"
 
 msgid "chapter/fullNameUppercased/quoted/174"
-msgstr "+++ПОБЕДНЫЙ МАРШ"
+msgstr "КАМЧАТСКАЯ БАЛЛАДА"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -741,8 +741,8 @@ msgstr "Узнагарода за ўзроўні фронту"
 
 msgid "howToEarnPoints/card/limitPoints/text"
 msgstr ""
-"Пасля дасягнення ліміту ачкоў на тэхніцы вы будзеце атрымліваць ва "
-"ўзнагароду дадатковыя ачкі."
+"При достижении еженедельного лимита очков на технике вы будете получать в "
+"награду дополнительные очки."
 
 msgid "howToEarnPoints/card/limitPoints/title"
 msgstr "Узнагарода за ліміт ачкоў"
@@ -781,7 +781,7 @@ msgid "howToEarnPoints/lose/43"
 msgstr "Паражэнне / нічыя"
 
 msgid "howToEarnPoints/lose/50"
-msgstr "Паражэнне"
+msgstr "Поражение / ничья"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Месца %(startLevel)d–%(endLevel)d"
@@ -841,7 +841,7 @@ msgid "howToEarnPoints/text/43"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
 msgid "howToEarnPoints/text/50"
-msgstr "+++Играйте на подходящей для режима технике (начиная с VI уровня)+++"
+msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)"
 
 msgid "howToEarnPoints/title"
 msgstr "ЯК ЗДАБЫЦЬ АЧКІ"
@@ -872,9 +872,10 @@ msgstr "ПРА БАЯВЫ ПРОПУСК"
 
 msgid "intro/bonus/text"
 msgstr ""
-"Пры дасягненні ліміту ачкоў на тэхніцы вам будуць налічаны ва ўзнагароду "
-"бонусныя ачкі. Узнагарода будзе даступная кожны тыдзень пасля абнаўлення "
-"ліміту. Больш інфармацыі можна знайсці ва ўкладцы «Як здабыць ачкі»."
+"По достижении лимита очков на определённой машине вам будут начислены "
+"бонусные очки в награду, которая  будет доступна каждую неделю после "
+"обновления лимита. Больше информации можно найти во вкладке «Как заработать "
+"очки»."
 
 msgid "intro/bonus/title"
 msgstr "Бонус за дасягненне ліміту"
@@ -893,9 +894,10 @@ msgstr "Раздзел «Паляванне на мышэй»"
 
 msgid "intro/limit/text"
 msgstr ""
-"На ўсёй тэхніцы VI-XI узроўняў усталёўваюцца аднолькавыя ліміты ачкоў "
-"Баявога пропуску. Ліміт абнаўляецца штотыдзень. Пры дасягненні ўсталяванага "
-"ліміту на наступным тыдні будзе ўсталяваны больш высокі ліміт."
+"На всей технике VI-XI уровней устанавливаются одинаковые лимиты очков "
+"Боевого пропуска. Лимит обновляется еженедельно. По достижении "
+"установленного лимита на следующей неделе будет установлен более высокий "
+"лимит."
 
 msgid "intro/limit/title"
 msgstr "Штотыднёвыя ліміты ачкоў"
@@ -908,18 +910,19 @@ msgstr "ДАСТУПНЫ АДМЫСЛОВЫ РАЗДЗЕЛ"
 
 msgid "intro/subTitle"
 msgstr ""
-"Сезон прысвечаны 80-годдзю Перамогі ў Вялікай Айчыннай вайне. Вас чакаюць "
-"тэматычныя члены экіпажа, стылі і памятныя ўзнагароды, прымеркаваныя да "
-"гэтай знамянальнай падзеі."
+"В этом сезоне Константин Кощеев познакомит с некоторыми эпизодами своей "
+"прошлой жизни, произошедшими до того, как он попал в «Перспективу». Новые "
+"герои, раскиданные по всем уголкам света, новые вызовы и опасные миссии — у "
+"Кощеева найдётся куча историй для посиделок у костра."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: ПАЛЯВАННЕ НА МЫШЭЙ"
+msgstr "БОЕВОЙ ПРОПУСК: ВОКРУГ СВЕТА"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"У гэтым сезоне прадстаўлена новая ключавая тэхніка:т ІС-7, Аб. 268, Т-100 "
-"ЛТ. Гуляючы на гэтай тэхніцы вы зможаце здабыць больш бонусных ачкоў за "
-"дасягненне штодзённага ліміту ачкоў."
+"В этом сезоне представлена новая ключевая техника: Rinoceronte, Wz.70 Żubr и"
+" Manticore. Играя на этой технике, вы сможете заработать больше бонусных "
+"очков Боевого пропуска за достижение еженедельного лимита очков."
 
 msgid "intro/vehicles/title"
 msgstr "Новая ключавая тэхніка"
@@ -1612,6 +1615,9 @@ msgid "tooltips/inProgress/playGame/stronghold_units"
 msgstr ""
 "Правілы налічэння ачкоў у Вылазках і Наступленнях на тэхніцы VI, VII і X "
 "узроўняў."
+
+msgid "tooltips/inProgress/playGame/versus_ai"
+msgstr "Правила начисления очков в Полигоне на технике VI-X уровней."
 
 msgid "tooltips/inProgress/timeLeft"
 msgstr "Засталося:"

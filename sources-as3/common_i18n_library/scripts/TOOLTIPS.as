@@ -3845,6 +3845,10 @@ package
       
       public static const AWARDITEM_STEELHUNTERPOINT_BODY:String = "#tooltips:awardItem/steelHunterPoint/body";
       
+      public static const AWARDITEM_BUMBLEBEE_COIN_HEADER:String = "#tooltips:awardItem/bumblebee_coin/header";
+      
+      public static const AWARDITEM_BUMBLEBEE_COIN_BODY:String = "#tooltips:awardItem/bumblebee_coin/body";
+      
       public static const AWARDITEM_FREEXP_HEADER:String = "#tooltips:awardItem/freeXP/header";
       
       public static const AWARDITEM_FREEXP_BODY:String = "#tooltips:awardItem/freeXP/body";

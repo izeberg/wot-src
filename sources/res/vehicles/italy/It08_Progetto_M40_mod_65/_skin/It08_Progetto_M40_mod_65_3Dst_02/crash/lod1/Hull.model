@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod1/Hull</nodefullVisual>
 	<parent>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod2/Hull</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
 		<min>-1.735925 -0.875621 -4.265012</min>
 		<max>1.675475 0.657823 4.018705</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod1/Hull</nodefullVisual>
 </root>

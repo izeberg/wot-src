@@ -3268,6 +3268,10 @@ class IArmoryYardController(IGameController):
     def isFinalQuestCompleted(self):
         raise NotImplementedError
 
+    @property
+    def isPaused(self):
+        raise NotImplementedError
+
     def getCollectableRewards(self):
         raise NotImplementedError
 
@@ -3281,6 +3285,9 @@ class IArmoryYardController(IGameController):
         raise NotImplementedError
 
     def getTokensInfo(self):
+        raise NotImplementedError
+
+    def isAllTokensReceived(self):
         raise NotImplementedError
 
     def getSeasonInterval(self):
@@ -3362,6 +3369,9 @@ class IArmoryYardController(IGameController):
         raise NotImplementedError
 
     def update(self):
+        raise NotImplementedError
+
+    def isInAnnouncement(self):
         raise NotImplementedError
 
     def onLoadingHangar(self):
@@ -3842,9 +3852,6 @@ class IEarlyAccessController(IGameController, ISeasonProvider):
         raise NotImplementedError
 
     def isEnabled(self):
-        raise NotImplementedError
-
-    def isPaused(self):
         raise NotImplementedError
 
     def getInfoPageLink(self):

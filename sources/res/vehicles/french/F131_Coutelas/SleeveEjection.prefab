@@ -22,6 +22,11 @@
 			<UUID>d1d47d64-1b56-3a74-bd5f-d0a384ed073c</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>HP_sleeveSpawnPoint</name>
+			<UUID>fdd594cd-6c20-4c7b-ac17-e8d3e35f1a46</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -33,7 +38,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>3ebee7d1-33de-47b1-9cbc-72f76168f5da</link>
+						<link>fdd594cd-6c20-4c7b-ac17-e8d3e35f1a46</link>
 					</property>
 				</config>
 			</component>
@@ -49,6 +54,16 @@
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>3ebee7d1-33de-47b1-9cbc-72f76168f5da</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -136,6 +151,24 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -372,12 +405,30 @@
 			<type>NodeFollower</type>
 			<version>1</version>
 			<component>
-				<objectIndex>0</objectIndex>
-				<flags>3</flags>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
 				<config>
 					<property>
 						<name>NodeName</name>
 						<value>HP_sleeveSpawnPoint</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>turret</value>
 					</property>
 					<property>
 						<name>DeactivateIfInvalid</name>

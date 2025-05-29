@@ -3738,7 +3738,10 @@
 				<group>
 					<isLeft>true</isLeft>
 					<template>WD_L</template>
-					<radius>0.115901</radius>
+					<radius>
+						0.145
+						<!--BW_String-->
+					</radius>
 					<startIndex>1</startIndex>
 					<count>3</count>
 				</group>
@@ -3749,24 +3752,12 @@
 					<isLeading>true</isLeading>
 					<syncAngle>27.692308</syncAngle>
 				</wheel>
-				<wheel>
-					<isLeft>true</isLeft>
-					<name>W_L0</name>
-					<radius>0.377957</radius>
-					<syncAngle>27.692308</syncAngle>
-				</wheel>
-				<wheel>
-					<isLeft>true</isLeft>
-					<name>W_L1</name>
-					<radius>0.453804</radius>
-					<syncAngle>27.692308</syncAngle>
-				</wheel>
 				<group>
 					<isLeft>true</isLeft>
 					<template>W_L</template>
 					<radius>0.316205</radius>
-					<startIndex>2</startIndex>
-					<count>4</count>
+					<startIndex>0</startIndex>
+					<count>6</count>
 				</group>
 				<wheel>
 					<isLeft>false</isLeft>
@@ -3778,7 +3769,10 @@
 				<group>
 					<isLeft>false</isLeft>
 					<template>WD_R</template>
-					<radius>0.115901</radius>
+					<radius>
+						0.145
+						<!--BW_String-->
+					</radius>
 					<startIndex>1</startIndex>
 					<count>3</count>
 				</group>
@@ -3789,24 +3783,12 @@
 					<isLeading>true</isLeading>
 					<syncAngle>27.692308</syncAngle>
 				</wheel>
-				<wheel>
-					<isLeft>false</isLeft>
-					<name>W_R0</name>
-					<radius>0.377957</radius>
-					<syncAngle>27.692308</syncAngle>
-				</wheel>
-				<wheel>
-					<isLeft>false</isLeft>
-					<name>W_R1</name>
-					<radius>0.453804</radius>
-					<syncAngle>27.692308</syncAngle>
-				</wheel>
 				<group>
 					<isLeft>false</isLeft>
 					<template>W_R</template>
 					<radius>0.316205</radius>
-					<startIndex>2</startIndex>
-					<count>4</count>
+					<startIndex>0</startIndex>
+					<count>6</count>
 				</group>
 			</wheels>
 			<drivingWheels>WD_L0 WD_L4</drivingWheels>

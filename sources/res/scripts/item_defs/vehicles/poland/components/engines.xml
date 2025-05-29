@@ -190,7 +190,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
 			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
-			<power>1050</power>
+			<power>930</power>
 			<weight>1024</weight>
 			<maxHealth>360</maxHealth>
 			<maxRegenHealth>170</maxRegenHealth>
@@ -199,8 +199,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>375</rpm_min>
-			<rpm_max>2150</rpm_max>
+			<rpm_min>435</rpm_min>
+			<rpm_max>2030</rpm_max>
 		</W_12_U>
 		<W_12_5_P_1>
 			<userString>#poland_vehicles:W_12_5_P_1</userString>
@@ -1124,8 +1124,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>497</rpm_min>
-			<rpm_max>2663</rpm_max>
+			<rpm_min>612</rpm_min>
+			<rpm_max>2401</rpm_max>
 		</GTD_2T4>
 		<V-2-34_B>
 			<userString>#poland_vehicles:V-2-34_B</userString>

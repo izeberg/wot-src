@@ -44,6 +44,14 @@
 						g_surfaceSpecularMultiplier
 						<Float>0.000000</Float>
 					</property>
+					<property>
+						g_LumMap
+						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_PM.dds</Texture>
+					</property>
+					<property>
+						g_platesSelfIlluminationMap
+						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_PM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.437832 7.783343 -0.850488</groupOrigin>
 			</primitiveGroup>
@@ -468,10 +476,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-17.619135 -1.081346 -11.566666</min>
-		<max>18.632305 19.103071 9.764104</max>
+		<min>-17.619135 -1.084878 -11.088423</min>
+		<max>18.632305 19.103071 9.764098</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>743268</geometrySize>
+	<geometrySize>744864</geometrySize>
 	<minUVDensity>0.000926</minUVDensity>
 </root>

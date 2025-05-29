@@ -118,7 +118,7 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, BattleGUIKeyHandler,
             self.__reloadTicker = _PythonReloadTicker(self)
         else:
             self.__reloadTicker = None
-        self.delayedReload = None
+        self.__delayedReload = 0
         self.__delayedNextShellID = None
         self.__isViewActive = False
         return
@@ -179,7 +179,8 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, BattleGUIKeyHandler,
         return
 
     def _resetDelayedReload(self):
-        self.delayedReload = None
+        self.__delayedReload = 0
+        self.stopCallback(self.__startReloadDelayed)
         self.__delayedNextShellID = None
         return
 
@@ -414,8 +415,8 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, BattleGUIKeyHandler,
             _logger.error('Ammo with cd=%d is not found in panel %s', currShellCD, str(self._cds))
             return
         shellIndex = self._cds.index(currShellCD)
-        if self.delayedReload > 0:
-            self.delayCallback(self.delayedReload, self.__startReloadDelayed, shellIndex, state)
+        if self.__delayedReload > 0:
+            self.delayCallback(self.__delayedReload, self.__startReloadDelayed, shellIndex, state)
             self.as_setCoolDownPosAsPercentS(shellIndex, 0)
         else:
             self.__startReload(shellIndex, state)
@@ -703,11 +704,11 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, BattleGUIKeyHandler,
             return
 
     def __onDebuffStarted(self, debuffTime=None):
-        self.delayedReload = debuffTime
+        self.__delayedReload = debuffTime
 
     def __startReloadDelayed(self, shellIndex, state):
-        leftTimeDelayed = state.getActualValue() - self.delayedReload
-        baseTimeDelayed = state.getBaseValue() - self.delayedReload
+        leftTimeDelayed = state.getActualValue() - self.__delayedReload
+        baseTimeDelayed = state.getBaseValue() - self.__delayedReload
         if leftTimeDelayed > 0 and baseTimeDelayed > 0:
             shellReload = shellIndex
             if self.__delayedNextShellID is not None:
@@ -716,7 +717,7 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, BattleGUIKeyHandler,
             self.as_setCoolDownTimeS(shellReload, leftTimeDelayed, baseTimeDelayed, 0)
         else:
             _logger.error('Incorrect delayed reload timings: %f, %f', leftTimeDelayed, baseTimeDelayed)
-        self.delayedReload = None
+        self.__delayedReload = 0
         return
 
     def __startReload(self, shellIndex, state):

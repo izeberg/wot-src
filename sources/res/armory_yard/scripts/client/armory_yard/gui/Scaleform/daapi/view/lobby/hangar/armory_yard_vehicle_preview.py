@@ -1,3 +1,4 @@
+from CurrentVehicle import g_currentPreviewVehicle
 from armory_yard.gui.Scaleform.daapi.view.lobby.hangar.sound_constants import ARMORY_YARD_VEHICLE_PREVIEW_SOUND_SPACE
 from armory_yard.gui.window_events import showArmoryYardVehPostProgressionView
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.vehicle_preview import VehiclePreview
@@ -12,12 +13,13 @@ from gui.server_events.bonuses import getNonQuestBonuses, VehiclesBonus
 from gui.shared.event_dispatcher import showHangar
 from gui.shared.formatters import text_styles
 from helpers import dependency
-from skeletons.gui.game_control import IArmoryYardController, IHeroTankController
+from skeletons.gui.game_control import IArmoryYardController, IHeroTankController, IArmoryYardShopController
 from web.web_client_api.common import ItemPackEntry, ItemPackType
 VEHICLE_PREVIEW_ALIASES.append(HANGAR_ALIASES.ARMORY_YARD_VEHICLE_PREVIEW)
 
 class ArmoryYardVehiclePreview(VehiclePreview, IGlobalListener):
     __armoryYardCtrl = dependency.descriptor(IArmoryYardController)
+    __AYShopCtrl = dependency.descriptor(IArmoryYardShopController)
     __heroTanksControl = dependency.descriptor(IHeroTankController)
     _COMMON_SOUND_SPACE = ARMORY_YARD_VEHICLE_PREVIEW_SOUND_SPACE
 
@@ -71,10 +73,13 @@ class ArmoryYardVehiclePreview(VehiclePreview, IGlobalListener):
             else:
                 viewPy.setPanelTextData(uniqueVehicleTitle='')
         elif alias == VEHPREVIEW_CONSTANTS.CREW_LINKAGE:
+            currVeh = g_currentPreviewVehicle.item.intCD
             stepsRewards = self.__armoryYardCtrl.getStepsRewards()
             stepCount = self.__armoryYardCtrl.getTotalSteps()
-            finalVehicleReward = stepsRewards.get(stepCount, {}).get('vehicles', {})
-            finalVehicleBonus = getNonQuestBonuses(VehiclesBonus.VEHICLES_BONUS, finalVehicleReward)[0]
+            vehicleReward = stepsRewards.get(stepCount, {}).get('vehicles', {})
+            if not stepsRewards or currVeh not in vehicleReward:
+                vehicleReward = next(self.__AYShopCtrl.products[product]['bonus']['vehicles'] for product in self.__AYShopCtrl.products if g_currentPreviewVehicle.item.intCD in self.__AYShopCtrl.products[product].get('bonus', {}).get('vehicles', {}))
+            finalVehicleBonus = getNonQuestBonuses(VehiclesBonus.VEHICLES_BONUS, vehicleReward)[0]
             vehicle = [VehiclesBonus.wrapToItemsPack(finalVehicleBonus)[0]]
             crew = [ItemPackEntry(id=1, type=ItemPackType.CREW_100, count=1, groupID=1)]
             viewPy.setVehicleCrews(vehicle, crew)

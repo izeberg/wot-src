@@ -255,6 +255,7 @@ class BATTLE_PASS(object):
     TOOLTIPS_INPROGRESS_PLAYGAME_MAPBOX = '#battle_pass:tooltips/inProgress/playGame/mapbox'
     TOOLTIPS_INPROGRESS_PLAYGAME_COMP7 = '#battle_pass:tooltips/inProgress/playGame/comp7'
     TOOLTIPS_INPROGRESS_PLAYGAME_STRONGHOLD_UNITS = '#battle_pass:tooltips/inProgress/playGame/stronghold_units'
+    TOOLTIPS_INPROGRESS_PLAYGAME_VERSUS_AI = '#battle_pass:tooltips/inProgress/playGame/versus_ai'
     TOOLTIPS_INPROGRESS_TIMELEFT = '#battle_pass:tooltips/inProgress/timeLeft'
     TOOLTIPS_INPROGRESS_HURRYUP = '#battle_pass:tooltips/inProgress/hurryUp'
     TOOLTIPS_COMPLETED_TITLE = '#battle_pass:tooltips/completed/title'

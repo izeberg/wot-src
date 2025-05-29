@@ -1137,6 +1137,8 @@ class MESSENGER(object):
     PLATFORMCURRENCYMSG_DEBITED_EQUIP_COIN = '#messenger:platformCurrencyMsg/debited/equip_coin'
     PLATFORMCURRENCYMSG_RECEIVED_FAMECOIN = '#messenger:platformCurrencyMsg/received/famecoin'
     PLATFORMCURRENCYMSG_DEBITED_FAMECOIN = '#messenger:platformCurrencyMsg/debited/famecoin'
+    PLATFORMCURRENCYMSG_RECEIVED_BUMBLEBEE_COIN = '#messenger:platformCurrencyMsg/received/bumblebee_coin'
+    PLATFORMCURRENCYMSG_DEBITED_BUMBLEBEE_COIN = '#messenger:platformCurrencyMsg/debited/bumblebee_coin'
     PLATFORMCURRENCYMSG_RECEIVED_FREEXP = '#messenger:platformCurrencyMsg/received/freeXP'
     PLATFORMCURRENCYMSG_DEBITED_FREEXP = '#messenger:platformCurrencyMsg/debited/freeXP'
     SERVICECHANNELMESSAGES_RESOURCEWELL_PUT_TITLE = '#messenger:serviceChannelMessages/resourceWell/put/title'

@@ -677,10 +677,7 @@ class VehicleParams(_ParameterBase):
 
     @property
     def avgDamage(self):
-        if self._itemDescr.shot.shell.distanceDmg is not None:
-            return self._itemDescr.shot.shell.distanceDmg.avgDamage
-        else:
-            return int(round(sum(self.damage) / 2.0))
+        return int(round(sum(self.damage) / 2.0))
 
     @property
     def chargeTime(self):

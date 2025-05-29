@@ -1,4 +1,4 @@
-import logging
+import logging, weakref
 from functools import partial
 import typing
 from CurrentVehicle import g_currentVehicle
@@ -55,7 +55,7 @@ class PlayStreakSubView(PlayStreakSubViewBase):
     def __init__(self, parent, layoutID):
         viewSettings = ViewSettings(layoutID, ViewFlags.VIEW, PlayStreakViewModel())
         super(PlayStreakSubView, self).__init__(viewSettings)
-        self.__parent = parent
+        self.__parent = weakref.proxy(parent)
         self.__tooltipData = {}
 
     @property
@@ -103,9 +103,6 @@ class PlayStreakSubView(PlayStreakSubViewBase):
     def _update(self):
         with self.viewModel.transaction() as (tx):
             self._updateModel(tx)
-
-    def finalize(self):
-        self._finalize()
 
     def _updateModel(self, model):
         with model.transaction() as (tx):

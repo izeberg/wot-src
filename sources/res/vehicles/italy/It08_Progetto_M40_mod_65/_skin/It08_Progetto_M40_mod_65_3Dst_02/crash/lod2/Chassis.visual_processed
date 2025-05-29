@@ -75,7 +75,7 @@
 				0
 				<material>
 					<identifier>track_mat_L_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<property>
@@ -92,7 +92,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -100,11 +100,7 @@
 					</property>
 					<property>
 						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.246702 0.576341 -0.142130</groupOrigin>
@@ -123,7 +119,7 @@
 				0
 				<material>
 					<identifier>track_mat_R_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<property>
@@ -140,7 +136,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -148,11 +144,7 @@
 					</property>
 					<property>
 						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.245632 0.573951 0.206211</groupOrigin>

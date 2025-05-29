@@ -136,26 +136,26 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_chassis_01_GMM.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_chassis_01_ANM.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_ANM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_chassis_01_AM.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_chassis_01_AO.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.345767 -0.156004</groupOrigin>
+				<groupOrigin>0.034023 0.498979 -0.652847</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -174,11 +174,11 @@
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_equipment_AM.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_equipment_AO.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_AO.dds</Texture>
 					</property>
 					<property>
 						g_crashUVTiling
@@ -186,14 +186,14 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_equipment_GMM.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_equipment_ANM.dds</Texture>
+						<Texture>vehicles/chinese/Ch22_113/_skin/113_3Dst_02/113_3dst_02_turret_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.034023 0.498979 -0.652847</groupOrigin>
+				<groupOrigin>0.000000 -0.345767 -0.156004</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -201,6 +201,6 @@
 		<min>-1.941781 -0.850607 -3.873750</min>
 		<max>1.943658 0.748644 3.647985</max>
 	</boundingBox>
-	<geometrySize>538804</geometrySize>
+	<geometrySize>538836</geometrySize>
 	<minUVDensity>0.000386</minUVDensity>
 </root>

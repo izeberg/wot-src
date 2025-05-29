@@ -651,8 +651,8 @@
 			<level>9</level>
 			<price>85000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>800</power>
 			<weight>1580</weight>
 			<maxHealth>320</maxHealth>
@@ -662,8 +662,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>500</rpm_min>
+			<rpm_max>1900</rpm_max>
 		</MB_837_Ea_500>
 		<Hanomag_D831_A>
 			<userString>#italy_vehicles:Hanomag_D831_A</userString>

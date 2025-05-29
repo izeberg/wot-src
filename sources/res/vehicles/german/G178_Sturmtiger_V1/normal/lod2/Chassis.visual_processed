@@ -1150,14 +1150,6 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.419800 0.593892 -0.038356</groupOrigin>
 			</primitiveGroup>
@@ -1214,14 +1206,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.419800 0.593892 -0.038356</groupOrigin>
@@ -1301,12 +1285,8 @@
 						<Texture>vehicles/german/G178_Sturmtiger_V1/G178_Sturmtiger_V1_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.284933 0.619449 -0.071126</groupOrigin>
@@ -1386,12 +1366,8 @@
 						<Texture>vehicles/german/G178_Sturmtiger_V1/G178_Sturmtiger_V1_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.284933 0.619449 -0.071126</groupOrigin>

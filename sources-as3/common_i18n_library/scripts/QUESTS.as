@@ -2579,6 +2579,8 @@ package
       
       public static const BONUSNAME_DAILY_QUESTS_REWARDS:String = "#quests:bonusName/daily_quests_rewards";
       
+      public static const BONUSNAME_BUMBLEBEE_COIN:String = "#quests:bonusName/bumblebee_coin";
+      
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
       public static const ACTION_FULL_CALENDAR:String = "#quests:action/full/calendar";

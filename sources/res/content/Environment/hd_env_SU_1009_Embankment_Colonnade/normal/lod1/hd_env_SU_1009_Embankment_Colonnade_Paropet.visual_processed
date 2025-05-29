@@ -48,10 +48,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_Desert_01_DM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicAOTile0
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_crash_512_MAO.dds</Texture>
 					</property>
@@ -132,10 +128,6 @@
 					<property>
 						g_dirtColorParams
 						<Vector4>0.100000 0.000000 0.000000 0.490000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile1Tint

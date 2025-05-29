@@ -68,16 +68,12 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
-						<Bool>false</Bool>
+						<Bool>true</Bool>
 					</property>
 					<property>
 						doubleSided

@@ -97,10 +97,6 @@
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.419955 0.581696 -0.033896</groupOrigin>
 			</primitiveGroup>
@@ -140,10 +136,6 @@
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.419955 0.581696 -0.033896</groupOrigin>
 			</primitiveGroup>
