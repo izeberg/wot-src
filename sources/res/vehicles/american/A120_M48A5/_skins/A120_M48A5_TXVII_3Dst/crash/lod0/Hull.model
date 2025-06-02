@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.817725 -1.096218 -3.477117</min>
+		<max>1.898811 0.731020 3.357917</max>
+	</visibilityBox>
+	<projAreaCoeff>1</projAreaCoeff>
+	<parent>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod0/Hull</nodefullVisual>
+</root>

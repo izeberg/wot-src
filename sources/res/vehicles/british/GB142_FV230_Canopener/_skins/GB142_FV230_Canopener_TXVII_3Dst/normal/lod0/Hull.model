@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.356615 -0.648720 -5.210451</min>
+		<max>2.253948 1.001551 3.808979</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

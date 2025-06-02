@@ -852,6 +852,7 @@
 		</logStreamCorruption>
 		<releaseClientForLogin>
 			<Arg>BOOL</Arg>
+			<ReturnValues/>
 		</releaseClientForLogin>
 		<onBattleResultsAvailable>
 			<Arg>STRING</Arg>

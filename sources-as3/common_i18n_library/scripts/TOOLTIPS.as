@@ -65,8 +65,6 @@ package
       
       public static const EPICRANDOMSTANDARDNOTIFICATION:String = "#tooltips:epicRandomStandardNotification";
       
-      public static const ONLY10MODE:String = "#tooltips:only10Mode";
-      
       public static const DEVMAPS:String = "#tooltips:devMaps";
       
       public static const LOGIN_LEGAL:String = "#tooltips:login/legal";
@@ -820,12 +818,6 @@ package
       public static const EPICRANDOMSTANDARDNOTIFICATION_BODY:String = "#tooltips:epicRandomStandardNotification/body";
       
       public static const EPICRANDOMSTANDARDNOTIFICATION_ATTENTION:String = "#tooltips:epicRandomStandardNotification/attention";
-      
-      public static const ONLY10MODE_HEADER:String = "#tooltips:only10Mode/header";
-      
-      public static const ONLY10MODE_BODY:String = "#tooltips:only10Mode/body";
-      
-      public static const ONLY10MODE_ATTENTION:String = "#tooltips:only10Mode/attention";
       
       public static const DEVMAPS_HEADER:String = "#tooltips:devMaps/header";
       
@@ -6557,6 +6549,10 @@ package
       
       public static const BATTLEPASSOFFER_FOOTER_GUIDE_GIFT:String = "#tooltips:battlePassOffer/footer/guide_gift";
       
+      public static const BATTLEPASSOFFER_TITLE_CREWBOOK_GIFT:String = "#tooltips:battlePassOffer/title/crewbook_gift";
+      
+      public static const BATTLEPASSOFFER_FOOTER_CREWBOOK_GIFT:String = "#tooltips:battlePassOffer/footer/crewbook_gift";
+      
       public static const BATTLEPASSOFFER_TITLE_MODERNIZED_DEVICE_GIFT:String = "#tooltips:battlePassOffer/title/modernized_device_gift";
       
       public static const BATTLEPASSOFFER_FOOTER_MODERNIZED_DEVICE_GIFT:String = "#tooltips:battlePassOffer/footer/modernized_device_gift";
@@ -8216,6 +8212,30 @@ package
       public static const NOTRECRUITEDTANKMAN_BOOSTEROID_FENCER_DESC:String = "#tooltips:notrecruitedtankman/boosteroid_fencer/desc";
       
       public static const NOTRECRUITEDTANKMAN_BOOSTEROID_FENCER_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/boosteroid_fencer/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_4/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

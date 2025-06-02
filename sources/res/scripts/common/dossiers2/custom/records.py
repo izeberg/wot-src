@@ -3458,7 +3458,7 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_16', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_1', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_17', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_2', 'p', 'B', 1),
  (
@@ -5211,7 +5211,7 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', '14YearsOfService'): 2008, 
    ('singleAchievements', 'BattlePassCommonPr_NY25'): 2009, 
    ('singleAchievements', 'BattlePassCommonPr_16'): 2010, 
-   ('singleAchievements', 'BPReserveAchievement_1'): 2011, 
+   ('singleAchievements', 'BattlePassCommonPr_17'): 2011, 
    ('singleAchievements', 'BPReserveAchievement_2'): 2012, 
    ('singleAchievements', 'BPReserveAchievement_3'): 2013, 
    ('singleAchievements', 'BPReserveAchievement_4'): 2014, 

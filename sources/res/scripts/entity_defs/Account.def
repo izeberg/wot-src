@@ -7,7 +7,6 @@
 		<Interface>PlayerMessenger_chat2</Interface>
 		<Interface>AccountEditor</Interface>
 		<Interface>TransactionUser</Interface>
-		<Interface>InterclusterSender</Interface>
 		<Interface>ClientCommandsPort</Interface>
 		<Interface>AccountAdmin</Interface>
 		<Interface>AccountAvatar</Interface>
@@ -399,14 +398,21 @@
 		<releaseClientForLogin>
 			<Arg>MAILBOX</Arg>
 			<Arg>PYTHON</Arg>
+			<Arg>UINT64</Arg>
 			<Arg>PYTHON</Arg>
-			<IsMulticast>true</IsMulticast>
+			<ReturnValues>
+				<Arg>UINT8</Arg>
+				<Arg>UINT64</Arg>
+			</ReturnValues>
 		</releaseClientForLogin>
 		<keepAliveFor>
 			<Arg>MAILBOX</Arg>
 			<Arg>INT32</Arg>
 			<Arg>UINT8</Arg>
 			<Arg>UINT16</Arg>
+			<ReturnValues>
+				<Arg>BOOL</Arg>
+			</ReturnValues>
 		</keepAliveFor>
 		<stopKeepingAlive>
 			<Arg>UINT8</Arg>
@@ -448,6 +454,9 @@
 		</processReceiptServiceNotification>
 		<extraWriteToDB>
 			<Arg>UINT8</Arg>
+			<ReturnValues>
+				<Arg>BOOL</Arg>
+			</ReturnValues>
 		</extraWriteToDB>
 		<writeToDBForTransfer>
 			<Arg>INT64</Arg>
@@ -543,11 +552,6 @@
 		<resetClanDBID>
 			<Arg>DB_ID</Arg>
 		</resetClanDBID>
-		<updateAntiTeamingStorage>
-			<Arg>PYTHON</Arg>
-			<Arg>INT64</Arg>
-			<Arg>INT64</Arg>
-		</updateAntiTeamingStorage>
 	</BaseMethods>
 	<NetworkCompression>
 		<internal>

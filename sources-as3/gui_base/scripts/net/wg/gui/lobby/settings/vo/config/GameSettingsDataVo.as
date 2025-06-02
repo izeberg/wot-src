@@ -48,8 +48,6 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var gameplay_epicStandard:SettingsControlProp = null;
       
-      public var gameplay_only10Mode:SettingsControlProp = null;
-      
       public var gameplay_epicDomination:SettingsControlProp = null;
       
       public var gameplay_devMaps:SettingsControlProp = null;
@@ -178,7 +176,6 @@ package net.wg.gui.lobby.settings.vo.config
             "gameplay_domination":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_assault":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_epicStandard":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "gameplay_only10Mode":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_epicDomination":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_devMaps":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "minimapAlpha":createControl(ControlsFactory.TYPE_SLIDER).build(),
@@ -272,8 +269,6 @@ package net.wg.gui.lobby.settings.vo.config
          this.gameplay_assault = null;
          this.gameplay_epicStandard.dispose();
          this.gameplay_epicStandard = null;
-         this.gameplay_only10Mode.dispose();
-         this.gameplay_only10Mode = null;
          this.gameplay_epicDomination.dispose();
          this.gameplay_epicDomination = null;
          this.gameplay_devMaps.dispose();

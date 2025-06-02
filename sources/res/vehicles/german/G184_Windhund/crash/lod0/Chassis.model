@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.658810 -0.000000 -2.968081</min>
+		<max>1.667341 1.270398 3.202016</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G184_Windhund/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G184_Windhund/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

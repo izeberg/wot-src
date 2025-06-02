@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz38_SZDV_vz50/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz38_SZDV_vz50/normal/lod3/Hull</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.824411 -0.781976 -3.794991</min>
+		<max>1.823184 1.977647 3.876922</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.170328 -0.287543 -2.657379</min>
+		<max>0.170335 0.191013 3.415442</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G184_Windhund/crash/lod0/Gun_02</nodefullVisual>
+	<parent>vehicles/german/G184_Windhund/crash/lod1/Gun_02</parent>
+	<extent>32</extent>
+</root>

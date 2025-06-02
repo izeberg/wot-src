@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G186_Schwertwal/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.044100 -0.897095 -4.520722</min>
+		<max>2.105206 0.808097 4.148559</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G186_Schwertwal/crash/lod0/Hull</nodefullVisual>
+</root>

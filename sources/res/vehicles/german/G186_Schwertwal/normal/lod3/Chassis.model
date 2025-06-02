@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G186_Schwertwal/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.938819 -0.000060 -4.024266</min>
+		<max>1.938819 1.150673 3.967082</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G186_Schwertwal/normal/lod3/Chassis</nodefullVisual>
+</root>

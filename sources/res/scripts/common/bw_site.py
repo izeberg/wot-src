@@ -1,3 +1,4 @@
+from __future__ import print_function
 import __builtin__, os, traceback, sys, pydoc, fnmatch, logging, BigWorld, BWLogging, BWUtil, ResMgr, bwdeprecations
 from bwdebug import NOTICE_MSG
 DEFAULT_ENCODING = 'utf-8'
@@ -71,7 +72,7 @@ def addpackage(sitedir, name, known_paths):
     try:
         f = open(fullname, 'rU')
     except IOError as e:
-        print >> sys.stderr, 'ioerror', e, fullname
+        print('ioerror', e, fullname, file=sys.stderr)
         return
 
     with f:
@@ -96,12 +97,12 @@ def addpackage(sitedir, name, known_paths):
                     sys.path.append(dir)
                     known_paths.add(dir)
             except Exception as err:
-                print >> sys.stderr, ('Error processing line {:d} of {}:\n').format(n + 1, fullname)
+                print(('Error processing line {:d} of {}:\n').format(n + 1, fullname), file=sys.stderr)
                 for record in traceback.format_exception(*sys.exc_info()):
                     for line in record.splitlines():
-                        print >> sys.stderr, '  ' + line
+                        print('  ' + line, file=sys.stderr)
 
-                print >> sys.stderr, '\nRemainder of file ignored'
+                print('\nRemainder of file ignored', file=sys.stderr)
                 break
 
     if reset:
@@ -144,8 +145,8 @@ def setup_paths():
 
 @BWUtil.if_only_component('base', 'service', 'cell', 'database')
 def set_twisted_reactor():
-    import BWTwistedReactor, twisted.internet.selectreactor
-    twisted.internet.selectreactor = BWTwistedReactor
+    import BWTwistedReactor, twisted.internet.default
+    twisted.internet.default = BWTwistedReactor
 
 
 def set_builtin_open_patch():

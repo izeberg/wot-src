@@ -730,8 +730,6 @@ BATTLE_RESULTS = [
  (
   'avatarAmmoEquipped', set, set(), None, 'skip', ENTRY_TYPE.SERVER),
  (
-  'cybersportRatingDeltas', tuple, (0.0, 0.0), None, 'skip', ENTRY_TYPE.SERVER),
- (
   'vehRankRaised', int, 0, None, 'skip', ENTRY_TYPE.SERVER),
  (
   'eventGoldByEventID', dict, {}, None, 'skip', ENTRY_TYPE.SERVER),

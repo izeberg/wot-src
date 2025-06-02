@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G184_Windhund/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G184_Windhund/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.970256 -0.581975 -3.254061</min>
+		<max>1.972547 2.823428 3.215101</max>
+	</visibilityBox>
+</root>

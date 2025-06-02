@@ -1697,6 +1697,11 @@ msgstr ""
 "When this Stage is completed, you can receive a Training Booklet for the "
 "selected nation by clicking the Claim Reward button above the Stage."
 
+msgid "battlePassOffer/footer/crewbook_gift"
+msgstr ""
+"When this Stage is completed, you can receive a Training Manual for the "
+"selected nation by clicking the Claim Reward button above the Stage."
+
 msgid "battlePassOffer/footer/guide_gift"
 msgstr ""
 "When this Stage is completed, you can receive a Training Guide for the "
@@ -1731,6 +1736,9 @@ msgstr "National Blueprint Fragments to Select From"
 
 msgid "battlePassOffer/title/brochure_gift"
 msgstr "Training Booklets to Select From"
+
+msgid "battlePassOffer/title/crewbook_gift"
+msgstr "Training Manuals to Select From"
 
 msgid "battlePassOffer/title/guide_gift"
 msgstr "Training Guides to Select From"
@@ -9889,6 +9897,73 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp16_9/label"
 msgstr "Battle Pass: Peaky Blinders"
 
+msgid "notrecruitedtankman/tankmen_bp17_1/desc"
+msgstr ""
+"A military man from a military family, Matthew Kennedy doesn’t play "
+"games—not in the line of duty, at least. Assertive and ultra-competitive, "
+"he's a demanding commander who expects nothing less than excellence from "
+"himself and his crew—and if something's off, you’ll hear about it. Yet while"
+" he's relentless on the battlefield, off it he's surprisingly charismatic. A"
+" Boston boy who takes pride in his Irish roots, he forged an especially "
+"strong bond with Angus over their Celtic connection, but Matthew commands "
+"the respect—and fear—of all who serve with him."
+
+msgid "notrecruitedtankman/tankmen_bp17_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_1/label"
+msgstr "Battle Pass Season XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_2/desc"
+msgstr ""
+"Angus William Buchanan—better known as \"Cannon\" for short—may just be "
+"Scotland’s finest marksman. No surprise there; years of hunting across the "
+"wild moors of the Scottish Highlands where he grew up would sharpen anyone’s"
+" eye. Such is his shooting prowess that he occasionally toys with leaving "
+"tanking behind to apply for the Special Air Service—but, for now, he's quite"
+" happy commanding the twin-barrel beast assigned to him. While his hair may "
+"be a fiery red, his temperament is anything but. Cool-headed and precise, "
+"Angus never rushes a shot—and rarely misses the mark."
+
+msgid "notrecruitedtankman/tankmen_bp17_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_2/label"
+msgstr "Battle Pass Season XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_3/desc"
+msgstr ""
+"Impossible? Not for Wei Jian. Having endured rigorous training, pushed "
+"through grueling challenges, and seen off fierce competition to become one "
+"of China's foremost tank engineers, he's not afraid of anything. Where most "
+"would see obstacles, Wei Jian sees opportunity—and will happily spend hours "
+"poring over blueprints and fine-tuning the smallest of components in search "
+"of innovation and maximum performance. His expertise isn’t limited to the "
+"drawing board, though; on the battlefield, as in the design bureau, his eye "
+"for detail and drive for perfection remain uncompromising."
+
+msgid "notrecruitedtankman/tankmen_bp17_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_3/label"
+msgstr "Battle Pass Season XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_4/desc"
+msgstr ""
+"Becoming a tanker never seemed an obvious path for Alessia. It wasn't that "
+"she intentionally defied authority—just, as something of a free spirit, she "
+"never really recognized it in the first place. But she craved adventure, and"
+" the military certainly offered that. A masterful communicator, she believes"
+" in the power of negotiation to resolve any dispute. She knows she can win "
+"over anyone if she puts her mind to it—but, if her opponents decline her "
+"polite offers of dialogue, then she's happy to let her gun do the talking."
+
+msgid "notrecruitedtankman/tankmen_bp17_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_4/label"
+msgstr "Battle Pass Season XVII"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "People are always asking if I know Jack Reed. Before I answer, I usually "
@@ -10721,16 +10796,6 @@ msgstr ""
 
 msgid "npsCompensation/header"
 msgstr "Received"
-
-msgid "only10Mode/attention"
-msgstr "Active only when a Tier X vehicle is selected"
-
-msgid "only10Mode/body"
-msgstr ""
-"Enabling this setting will match teams consisting of only Tier X vehicles."
-
-msgid "only10Mode/header"
-msgstr "Search Battles With Tier X Vehicles Only"
 
 msgid "parameter/categories"
 msgstr "Category: "

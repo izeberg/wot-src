@@ -3,6 +3,7 @@ import BigWorld
 from chat_shared import CHAT_ACTIONS
 from constants import IS_DEVELOPMENT
 from debug_utils import LOG_DEBUG, LOG_CURRENT_EXCEPTION, LOG_WARNING
+from gui.impl.lobby.gf_notifications.cache import getCache
 from gui.shared.system_factory import collectMessengerClientFormatter, collectMessengerServerFormatter
 from ids_generators import SequenceIDGenerator
 from messenger.m_constants import MESSENGER_SCOPE, SCH_MSGS_MAX_LENGTH
@@ -28,6 +29,7 @@ class ServiceChannelManager(ChatActionsListener):
 
     def clear(self):
         self.__messages.clear()
+        getCache().clear()
         self.__unreadMessagesCount = 0
 
     def switch(self, scope):

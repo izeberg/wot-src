@@ -89,49 +89,13 @@
 				</transform>
 			</node>
 			<node>
-				<identifier>lod3</identifier>
+				<identifier>lod0</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
-				<node>
-					<identifier>d0_1_7</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d0_2_8</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d0_3_9</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>d0_4_10</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
 				<node>
 					<identifier>d1_10</identifier>
 					<transform>
@@ -240,6 +204,15 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
+				<node>
+					<identifier>s_ramp0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -251,202 +224,6 @@
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
-				<material>
-					<identifier>d_wood1_5</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>91</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-3.750166 4.661888 1.349050</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>d_wood1_6</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>92</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.813147 4.571129 0.058296</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>d_wood1_7</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>93</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>1.148088 4.561890 -0.200395</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				3
-				<material>
-					<identifier>d_wood1_8</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>94</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-3.904298 2.951877 -2.180372</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				4
-				<material>
-					<identifier>d_wood0_4_8</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>90</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-3.991884 0.171305 -2.264756</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				5
-				<material>
-					<identifier>d_wood0_3_7</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>89</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.102382 0.250352 -1.846467</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				6
 				<material>
 					<identifier>d_wood0_2_6</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -480,45 +257,11 @@
 				<groupOrigin>1.020012 0.036122 1.561902</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				7
+				1
 				<material>
-					<identifier>d_wood0_1_5</identifier>
+					<identifier>d_wood1_7</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>87</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-3.875737 0.080938 2.120583</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				8
-				<material>
-					<identifier>n_wood1_8</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>80</materialKind>
+					<materialKind>93</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
 						g_enableTerrainBlending
@@ -541,10 +284,10 @@
 						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-3.762089 4.594692 -1.735043</groupOrigin>
+				<groupOrigin>1.148088 4.561890 -0.200395</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				9
+				2
 				<material>
 					<identifier>n_wood1_7</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -574,143 +317,7 @@
 				<groupOrigin>1.303567 4.561890 -0.165492</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				10
-				<material>
-					<identifier>n_wood1_6</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>78</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.501189 4.637670 0.005827</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				11
-				<material>
-					<identifier>n_wood1_5</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>77</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-3.902613 4.536767 1.507188</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				12
-				<material>
-					<identifier>n_wood0_4_8</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>76</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-3.304546 1.233606 -1.514561</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				13
-				<material>
-					<identifier>n_wood0_3_7</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>75</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.315881 1.238394 -0.481963</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				14
+				3
 				<material>
 					<identifier>n_wood0_2_6</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -744,7 +351,382 @@
 				<groupOrigin>0.160964 3.140832 1.372892</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
+				4
+				<material>
+					<identifier>n_wood1_6</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>78</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.501189 4.637670 0.005827</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				5
+				<material>
+					<identifier>n_wood1_8</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>80</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.762089 4.594692 -1.735043</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				6
+				<material>
+					<identifier>s_ramp_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-1.988653 0.048247 -0.033970</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				7
+				<material>
+					<identifier>d_wood1_8</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>94</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.904298 2.951877 -2.180372</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				8
+				<material>
+					<identifier>n_wood0_4_8</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>76</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.304546 1.233606 -1.514561</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				9
+				<material>
+					<identifier>n_wood1_5</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>77</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.902613 4.536767 1.507188</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				10
+				<material>
+					<identifier>d_wood1_6</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>92</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.813147 4.571129 0.058296</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				11
+				<material>
+					<identifier>d_wood0_1_5</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>87</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.875737 0.080938 2.120583</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				12
+				<material>
+					<identifier>d_wood1_5</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>91</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_02_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.750166 4.661888 1.349050</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				13
+				<material>
+					<identifier>d_wood0_4_8</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>90</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.991884 0.171305 -2.264756</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				14
+				<material>
+					<identifier>n_wood0_3_7</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>75</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.315881 1.238394 -0.481963</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
 				15
+				<material>
+					<identifier>d_wood0_3_7</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>89</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.102382 0.250352 -1.846467</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				16
 				<material>
 					<identifier>n_wood0_1_5</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -777,19 +759,10 @@
 				</material>
 				<groupOrigin>-3.960688 1.229256 1.629935</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				16
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>0</materialKind>
-				</material>
-				<groupOrigin>-1.988653 0.048247 -0.033970</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-7.949044 -0.824624 -4.780504</min>
+		<min>-7.984016 -0.824624 -4.780504</min>
 		<max>4.641288 6.785979 4.230985</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

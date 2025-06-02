@@ -52,6 +52,15 @@ msgstr ""
 msgid "domain/damageDealing/name"
 msgstr "Causing Damage"
 
+msgid "domain/equalization/description"
+msgstr ""
+"Each tier has different modifiers to HP, damage, and penetration. The lower "
+"a vehicle's tier, the more its parameters are enhanced—making low-tier "
+"vehicles much more dangerous!"
+
+msgid "domain/equalization/name"
+msgstr "All-tier battles"
+
 msgid "domain/mobility/description"
 msgstr ""
 "A set of parameters that show the dynamic and speed characteristics of your "
@@ -229,11 +238,8 @@ msgstr "View range"
 msgid "modifier/name/visionTime"
 msgstr "Time remaining visible"
 
-msgid "modifier/name/zeroDamage"
-msgstr "Damage caused by shots and ramming"
-
 msgid "modifier/name/zeroEconomy"
-msgstr "Resources spent and earned in mode battles"
+msgstr "Spending and earning resources in battles is disabled"
 
 msgid "modifiersDomainTooltip/restrict/max"
 msgstr "not&nbsp;more than&nbsp;{value}"

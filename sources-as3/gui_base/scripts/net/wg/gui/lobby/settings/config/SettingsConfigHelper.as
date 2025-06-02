@@ -237,8 +237,6 @@ package net.wg.gui.lobby.settings.config
       
       public static const RECEIVE_CLAN_INVITES_NOTIFICATIONS:String = "receiveClanInvitesNotifications";
       
-      public static const GAMEPLAY_ONLY_10_MODE:String = "gameplay_only10Mode";
-      
       public static const GAMEPLAY_DEVMAPS:String = "gameplay_devMaps";
       
       public static const INTERFACE_SCALE_DISABLED:String = "interfaceScaleDisabled";
