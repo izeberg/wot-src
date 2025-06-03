@@ -424,14 +424,14 @@ msgstr "Carmen de Bisonte"
 msgid "chapter/fullName/1114"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/161"
-msgstr "Field Notes"
+msgid "chapter/fullName/171"
+msgstr "Driven by Duty"
 
-msgid "chapter/fullName/162"
-msgstr "Dare to Do"
+msgid "chapter/fullName/172"
+msgstr "Salvo Fire"
 
-msgid "chapter/fullName/163"
-msgstr "Far From Heimat"
+msgid "chapter/fullName/173"
+msgstr "Perfectionist"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
@@ -439,14 +439,14 @@ msgstr "CARMEN DE BISONTE"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/161"
-msgstr "FIELD NOTES"
+msgid "chapter/fullNameUppercased/171"
+msgstr "DRIVEN BY DUTY"
 
-msgid "chapter/fullNameUppercased/162"
-msgstr "DARE TO DO"
+msgid "chapter/fullNameUppercased/172"
+msgstr "SALVO FIRE"
 
-msgid "chapter/fullNameUppercased/163"
-msgstr "FAR FROM HEIMAT"
+msgid "chapter/fullNameUppercased/173"
+msgstr "PERFECTIONIST"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -550,6 +550,9 @@ msgstr "National Blueprint Fragments to Select From"
 
 msgid "chosenBonuses/bonus/brochure_gift"
 msgstr "Training Booklets to Select From"
+
+msgid "chosenBonuses/bonus/crewbook_gift"
+msgstr "Training Manuals to Select From"
 
 msgid "chosenBonuses/bonus/guide_gift"
 msgstr "Training Guides to Select From"
@@ -814,45 +817,17 @@ msgstr "ABOUT BATTLE PASS"
 msgid "intro/button"
 msgstr "Affirmative!"
 
-msgid "intro/postProgression/text"
-msgstr ""
-"Complete all main Chapters to unlock the Elite Circuit, where you can earn "
-"bonds and Vouchers as a reward. The Progression is cyclical, meaning you can"
-" complete it as many times as you want until the end of the Battle Pass "
-"Season."
-
-msgid "intro/postProgression/title"
-msgstr "ELITE CIRCUIT"
-
 msgid "intro/seasonDescription/text"
 msgstr ""
-"In Battle Pass Season XVI, you will have the chance to receive exclusive 3D "
-"styles for the Season's Core Vehicles: the&nbsp;NC&nbsp;70&nbsp;Błyskawica, "
-"Type&nbsp;71, and E&nbsp;50&nbsp;Ausf.&nbsp;M."
+"In Battle Pass Season XVII, you will have the chance to receive exclusive 3D"
+" styles for the Season's Core Vehicles: the&nbsp;M48A5&nbsp;Patton, "
+"WZ-111&nbsp;model&nbsp;5A, and FV230&nbsp;Canopener."
 
 msgid "intro/seasonDescription/title"
 msgstr "NEW THEMED 3D STYLES"
 
-msgid "intro/talers/text"
-msgstr ""
-"Advance through the Battle Pass Progression to earn Chips, a new currency "
-"that can be spent in the Battle Pass Vault section of the in-game Store. "
-"There, you can purchase customization elements and crew members from "
-"previous Battle Pass Seasons, economic resources, and more."
-
-msgid "intro/talers/title"
-msgstr "CHIPS"
-
-msgid "intro/tickets/text"
-msgstr ""
-"Discover the new Battle Pass reward—Vouchers! Earn them in the Elite Circuit"
-" and scratch them to receive rewards."
-
-msgid "intro/tickets/title"
-msgstr "VOUCHERS"
-
 msgid "intro/title"
-msgstr "SEASON XVI: WHO DARES WINS"
+msgstr "SEASON XVII: COMBAT READY"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -884,7 +859,7 @@ msgid "postProgressionView/footer/purchaseIP/button/text"
 msgstr "Purchase"
 
 msgid "postProgressionView/header/description/active"
-msgstr "Earn Points in battle and receive bonds and Vouchers as a reward"
+msgstr "Earn Points in battle and receive even more rewards"
 
 msgid "postProgressionView/header/description/onPause/highlight"
 msgstr "PAUSED."
@@ -1246,14 +1221,14 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 msgid "season/fullName/1002"
 msgstr "Carmen de Bisonte"
 
-msgid "season/fullName/16"
-msgstr "Who Dares Wins"
+msgid "season/fullName/17"
+msgstr "Combat Ready"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "CARMEN DE BISONTE"
 
-msgid "season/fullNameUppercased/16"
-msgstr "WHO DARES WINS"
+msgid "season/fullNameUppercased/17"
+msgstr "COMBAT READY"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Equipment directives to select from"
@@ -1263,6 +1238,9 @@ msgstr "Blueprint Fragments to Select From"
 
 msgid "selectBonus/brochure_gift"
 msgstr "Training Booklets to Select From"
+
+msgid "selectBonus/crewbook_gift"
+msgstr "Training Manuals to Select From"
 
 msgid "selectBonus/guide_gift"
 msgstr "Training Guides to Select From"

@@ -24,7 +24,7 @@ package net.wg.gui.battle.battleloading
       
       public var form:BaseLoadingForm;
       
-      protected var stageHeight:int = 0;
+      private var _stageHeight:int = 0;
       
       private var _formYShift:int = 0;
       
@@ -150,7 +150,7 @@ package net.wg.gui.battle.battleloading
       {
          super.updateStage(param1,param2);
          this.form.x = param1 >> 1;
-         this.stageHeight = param2;
+         this._stageHeight = param2;
          this.updateFormY();
       }
       
@@ -209,7 +209,7 @@ package net.wg.gui.battle.battleloading
       
       protected function updateFormY() : void
       {
-         this.form.y = (this.stageHeight - FORM_VISIBLE_AREA_HEIGHT >> 1) + this._formYShift;
+         this.form.y = (this._stageHeight - FORM_VISIBLE_AREA_HEIGHT >> 1) + this._formYShift;
       }
       
       protected function updateWinText(param1:DAAPIArenaInfoVO) : void
@@ -223,11 +223,8 @@ package net.wg.gui.battle.battleloading
          if(this.form)
          {
             _loc1_ = this.form.getMapIconComponent();
-            if(_loc1_)
-            {
-               _loc1_.removeEventListener(UILoaderEvent.COMPLETE,this.onMapIconCompleteHandler);
-               _loc1_.removeEventListener(UILoaderEvent.IOERROR,this.onMapIconCompleteHandler);
-            }
+            _loc1_.removeEventListener(UILoaderEvent.COMPLETE,this.onMapIconCompleteHandler);
+            _loc1_.removeEventListener(UILoaderEvent.IOERROR,this.onMapIconCompleteHandler);
          }
       }
       

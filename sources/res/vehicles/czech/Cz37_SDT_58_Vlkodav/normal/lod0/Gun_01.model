@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.682994 -0.281907 -0.047967</min>
+		<max>0.656000 0.384869 5.292185</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz37_SDT_58_Vlkodav/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz37_SDT_58_Vlkodav/normal/lod0/Gun_01</nodefullVisual>
+</root>

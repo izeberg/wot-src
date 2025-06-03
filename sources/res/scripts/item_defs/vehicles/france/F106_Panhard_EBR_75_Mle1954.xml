@@ -1134,7 +1134,7 @@
 				<slotType>attachment</slotType>
 				<slotId>18000</slotId>
 				<position>
-					-1.201 0.051971 -0
+					-1.194506 0.051224 0
 					<!--BW_String-->
 				</position>
 				<rotation>
@@ -1152,7 +1152,7 @@
 				<slotType>attachment</slotType>
 				<slotId>18001</slotId>
 				<position>
-					1.201 0.051971 -0
+					1.195 0.051 -0
 					<!--BW_String-->
 				</position>
 				<rotation>
@@ -2656,7 +2656,10 @@
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48000</slotId>
-							<position>0.465131 0.372818 -0.041006</position>
+							<position>
+								0 0.34688 0.044928
+								<!--BW_String-->
+							</position>
 							<rotation>-0 -0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>gunMantlet</applyType>
@@ -2666,10 +2669,10 @@
 							<slotType>attachment</slotType>
 							<slotId>48001</slotId>
 							<position>
-								0 0.408 -1.324373
+								0.061909 0.408 -1.437875
 								<!--BW_String-->
 							</position>
-							<rotation>-0 0 0</rotation>
+							<rotation>-0 -0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>turret</applyType>
 							<size>medium</size>

@@ -1,7 +1,7 @@
 import logging
 from typing import TYPE_CHECKING
 from frameworks.wulf import Array, ViewSettings
-from gui.goodies.goodie_items import Booster, DemountKit, RecertificationForm
+from gui.goodies.goodie_items import Booster, DemountKit, RecertificationForm, MentoringLicense
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.lootbox_system.submodels.rewards_categories_model import Type
@@ -192,8 +192,9 @@ def _packDirectives(rewards, model):
 
 
 def _packTrainingMaterials(rewards, model):
-    _packItems(rewards, model, _isCrewBook)
+    _packGoodies(rewards, model, _isMentoringLicense)
     _packGoodies(rewards, model, _isRecertificationForm)
+    _packItems(rewards, model, _isCrewBook)
 
 
 def _packConsumables(rewards, model):
@@ -229,7 +230,7 @@ def _packGoodies(rewards, model, criteria):
 
 
 def _packPersonalReserves(rewards, model):
-    _packGoodies(rewards, model, lambda g: not _isDemountKit(g) and not _isRecertificationForm(g))
+    _packGoodies(rewards, model, lambda g: not isinstance(g, (DemountKit, RecertificationForm, MentoringLicense)))
 
 
 def _packBlueprints(rewards, model):
@@ -379,6 +380,10 @@ def _isDemountKit(goodie):
 
 def _isRecertificationForm(goodie):
     return isinstance(goodie, RecertificationForm)
+
+
+def _isMentoringLicense(goodie):
+    return isinstance(goodie, MentoringLicense)
 
 
 def _isPersonalReserves(goodie):

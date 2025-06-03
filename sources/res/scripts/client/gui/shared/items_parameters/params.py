@@ -1478,7 +1478,7 @@ class GunParams(WeightedParam):
     def reloadTimeTwinGun(self):
         gun = self.__getVehicleGun()
         if isTwinGun(gun):
-            return self._vehicleDescr.gun.twinGun.twinGunReloadTime
+            return gun.twinGun.twinGunReloadTime
         else:
             return
 

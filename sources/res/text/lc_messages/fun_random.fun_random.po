@@ -383,172 +383,169 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/capsUserName"
-msgstr "NEON DASH"
+msgid "modes/equalization/capsUserName"
+msgstr "EQUALIZE!"
 
-msgid "modes/fall_tanks/detailedUserName"
+msgid "modes/equalization/detailedUserName"
 msgstr "%(modeName)s"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/body"
+msgid "modes/equalization/entryPoint/performance/tooltip/highRisk/body"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/header"
+msgid "modes/equalization/entryPoint/performance/tooltip/highRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/body"
+msgid "modes/equalization/entryPoint/performance/tooltip/mediumRisk/body"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/header"
+msgid "modes/equalization/entryPoint/performance/tooltip/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/lootbox/fep_epic"
+msgid "modes/equalization/lootbox/fep_epic"
 msgstr "Epic random reward"
 
-msgid "modes/fall_tanks/lootbox/fep_legendary"
+msgid "modes/equalization/lootbox/fep_legendary"
 msgstr "Legendary random reward"
 
-msgid "modes/fall_tanks/lootbox/fep_ordinary"
+msgid "modes/equalization/lootbox/fep_ordinary"
 msgstr "Common random reward"
 
-msgid "modes/fall_tanks/lootbox/fep_rare"
+msgid "modes/equalization/lootbox/fep_rare"
 msgstr "Rare random reward"
 
-msgid "modes/fall_tanks/lootbox/fep_unusual"
+msgid "modes/equalization/lootbox/fep_unusual"
 msgstr "Uncommon random reward"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
-msgstr "Neon Dash Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
+msgid "modes/equalization/metaProgressionTooltip/header/active"
+msgstr "Equalize! Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgid "modes/equalization/metaProgressionTooltip/reward/tip"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
-msgstr "Neon Dash Mission"
+msgid "modes/equalization/metaProgressionTooltip/subheader"
+msgstr "Equalize! Mission"
 
-msgid "modes/fall_tanks/modeSubSelector/progression/info"
+msgid "modes/equalization/modeSubSelector/progression/info"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/modeSubSelector/progression/timer"
+msgid "modes/equalization/modeSubSelector/progression/timer"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/battleCondition"
-msgstr "Race against everyone"
+msgid "modes/equalization/mode_selector/battleCondition"
+msgstr "Battles with vehicles of all tiers"
 
-msgid "modes/fall_tanks/mode_selector/description"
+msgid "modes/equalization/mode_selector/description"
 msgstr "Experimental battles with non-standard rules"
 
-msgid "modes/fall_tanks/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
-
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
+msgid "modes/equalization/mode_selector/performance/highRisk/description"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgid "modes/equalization/mode_selector/performance/highRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgid "modes/equalization/mode_selector/performance/highRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/description"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/progression/resettable"
-msgstr "A new Neon Dash mission is available in:"
+msgid "modes/equalization/mode_selector/progression/resettable"
+msgstr "A new Equalize! mission is available in:"
 
-msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
+msgid "modes/equalization/notification/finishSubModes/withProgression"
 msgstr "The %(subModeName)s mode has ended. Progression reset."
 
-msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
+msgid "modes/equalization/notification/finishSubModes/withoutProgression"
 msgstr "The %(subModeName)s mode has ended."
 
-msgid "modes/fall_tanks/notification/newSubModes/withProgression"
+msgid "modes/equalization/notification/newSubModes/withProgression"
 msgstr "New rewards and the %(subModeName)s mode are available."
 
-msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
-msgstr "A new mode is available: %(subModeName)s."
+msgid "modes/equalization/notification/newSubModes/withoutProgression"
+msgstr "A new mode is available: %(subModeName)s"
 
-msgid "modes/fall_tanks/notification/switchOffSubModes"
+msgid "modes/equalization/notification/switchOffSubModes"
 msgstr "The %(subModeName)s mode is unavailable due to maintenance."
 
-msgid "modes/fall_tanks/notification/switchOnSubModes"
+msgid "modes/equalization/notification/switchOnSubModes"
 msgstr "The %(subModeName)s mode is available again."
 
-msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
+msgid "modes/equalization/progression/cardsFan/listOfRandomRewards"
 msgstr "Reward List"
 
-msgid "modes/fall_tanks/progression/complete/congratulations"
+msgid "modes/equalization/progression/complete/congratulations"
 msgstr "Congratulations!"
 
-msgid "modes/fall_tanks/progression/complete/title"
+msgid "modes/equalization/progression/complete/title"
 msgstr "You completed the Main Progression"
 
-msgid "modes/fall_tanks/progression/infinite/congratulations"
+msgid "modes/equalization/progression/infinite/congratulations"
 msgstr "Congratulations!"
 
-msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgid "modes/equalization/progression/infinite/infinityStep"
 msgstr "Repeatable Stage"
 
-msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgid "modes/equalization/progression/infinite/mainProgressionFinished"
 msgstr "You completed the Main Progression"
 
-msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgid "modes/equalization/progression/questsList/quest/infinityStageProgress"
 msgstr "Get as many rewards as you can: %(currentPoints) / %(infinitySign)s"
 
-msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
+msgid "modes/equalization/progression/questsList/totalPointsEarned"
 msgstr "Points earned: %(progressionSteps)s"
 
 msgid ""
-"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
+"modes/equalization/progression/questsList/totalPointsEarnedStandAloneTitle"
 msgstr "Points earned:"
 
-msgid "modes/fall_tanks/progression/title"
-msgstr "NEON DASH MISSIONS"
+msgid "modes/equalization/progression/title"
+msgstr "EQUALIZE! MISSION"
 
-msgid "modes/fall_tanks/rewardsView/header"
+msgid "modes/equalization/rewardsView/header"
 msgstr "LEGENDARY REWARD RECEIVED"
 
-msgid "modes/fall_tanks/scheduler/notification/available"
+msgid "modes/equalization/scheduler/notification/available"
 msgstr "The %(subModeName)s battles are available again."
 
-msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgid "modes/equalization/scheduler/notification/available/title"
 msgstr "Ceasefire"
 
-msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgid "modes/equalization/scheduler/notification/modeEnded"
 msgstr "The %(subModeName)s battles have ended"
 
-msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgid "modes/equalization/scheduler/notification/modeEnded/title"
 msgstr "Ceasefire"
 
-msgid "modes/fall_tanks/scheduler/notification/primeTime"
+msgid "modes/equalization/scheduler/notification/primeTime"
 msgstr ""
 "Ceasefire is in effect. The %(subModeName)s battles are temporarily "
-"unavailable."
+"unavailable"
 
-msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgid "modes/equalization/scheduler/notification/primeTime/title"
 msgstr "Ceasefire"
 
-msgid "modes/fall_tanks/tierList/description"
+msgid "modes/equalization/tierList/description"
 msgstr ""
 "Each random reward is an item from the list below that you can receive with "
 "a certain probability."
 
-msgid "modes/fall_tanks/tierList/title"
+msgid "modes/equalization/tierList/title"
 msgstr "What's Inside?"
 
-msgid "modes/fall_tanks/tooltip/filter/body"
-msgstr "Show/hide suitable vehicles for Neon Dash mode."
+msgid "modes/equalization/tooltip/filter/body"
+msgstr "Show/hide suitable vehicles for Equalize! mode."
 
-msgid "modes/fall_tanks/tooltip/filter/header"
-msgstr "Neon Dash Vehicles"
+msgid "modes/equalization/tooltip/filter/header"
+msgstr "Equalize! Vehicles"
 
-msgid "modes/fall_tanks/userName"
-msgstr "Neon Dash"
+msgid "modes/equalization/userName"
+msgstr "Equalize!"
 
 msgid "modes/undefined/capsUserName"
 msgstr "ARCADE CABINET"
@@ -1057,61 +1054,62 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/capsUserName"
-msgstr "NEON DASH"
+msgid "sub_modes/equalization/capsUserName"
+msgstr "EQUALIZE!"
 
-msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
+msgid "sub_modes/equalization/detailsHelp/page1/description"
 msgstr ""
-"Race to the finish line and stop others from reaching it. Use the Dash and "
-"Shield abilities to cause extra mayhem!"
+"Each tier has different modifiers to HP, damage, and penetration. The lower "
+"a vehicle's tier, the more its parameters are enhanced—making low-tier "
+"vehicles much more dangerous!"
 
-msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
-msgstr "Caution: Moving Platforms"
+msgid "sub_modes/equalization/detailsHelp/page1/title"
+msgstr "EQUALIZE!"
 
-msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgid "sub_modes/equalization/detailsHelpHint/description"
 msgstr "to view the mode features"
 
-msgid "sub_modes/fall_tanks/detailsHelpHint/press"
+msgid "sub_modes/equalization/detailsHelpHint/press"
 msgstr "Press"
 
-msgid "sub_modes/fall_tanks/detailsHelpTitle"
-msgstr "Neon Dash"
+msgid "sub_modes/equalization/detailsHelpTitle"
+msgstr "EQUALIZE!"
 
-msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
-msgstr "Race against everyone"
+msgid "sub_modes/equalization/subModeCard/battleCondition"
+msgstr "15x15"
 
-msgid "sub_modes/fall_tanks/subModeCard/description"
-msgstr "Experimental battles with non-standard rules"
+msgid "sub_modes/equalization/subModeCard/description"
+msgstr "Battles with vehicles of all tiers"
 
-msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgid "sub_modes/equalization/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/description"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/header"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/description"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/title"
-msgstr "Neon Dash"
+msgid "sub_modes/equalization/subModeCard/title"
+msgstr "Equalize!"
 
-msgid "sub_modes/fall_tanks/userName"
-msgstr "Neon Dash"
+msgid "sub_modes/equalization/userName"
+msgstr "Equalize!"
 
-msgid "sub_modes/fall_tanks/userName/quoted"
-msgstr "\"Neon Dash\""
+msgid "sub_modes/equalization/userName/quoted"
+msgstr "Equalize!"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

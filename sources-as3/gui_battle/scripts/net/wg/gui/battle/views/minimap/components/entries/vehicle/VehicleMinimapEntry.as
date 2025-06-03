@@ -501,11 +501,6 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          return this._isVehicleLabelVisible;
       }
       
-      public function get isHpCircleVisible() : Boolean
-      {
-         return this.hpCircle.visible;
-      }
-      
       private function onColorSchemasUpdatedHandler(param1:ColorSchemeEvent) : void
       {
          var _loc2_:Boolean = App.colorSchemeMgr.getScheme(AbsorptionFlagEntryConst.COLOR_SCHEME_NAME).aliasColor == AbsorptionFlagEntryConst.ENEMY_CAPTURE_BLIND;

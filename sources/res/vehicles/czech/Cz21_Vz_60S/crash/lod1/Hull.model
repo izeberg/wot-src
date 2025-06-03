@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz21_Vz_60S/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.756632 -0.922080 -4.009527</min>
+		<max>1.791832 0.668824 3.672361</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz21_Vz_60S/crash/lod1/Hull</nodefullVisual>
+</root>

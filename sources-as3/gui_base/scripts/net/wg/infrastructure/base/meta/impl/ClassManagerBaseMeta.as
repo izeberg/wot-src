@@ -785,7 +785,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.vo.CursorTabsDataVo;
    import net.wg.gui.lobby.settings.vo.DevMapsVO;
    import net.wg.gui.lobby.settings.vo.MarkerTabsDataVo;
-   import net.wg.gui.lobby.settings.vo.RandomXLvlVO;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.SettingsKeyProp;
    import net.wg.gui.lobby.settings.vo.SettingsNewCountersVo;
@@ -2443,8 +2442,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_DEVMAPSVO:Class = DevMapsVO;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_MARKERTABSDATAVO:Class = MarkerTabsDataVo;
-      
-      public static const NET_WG_GUI_LOBBY_SETTINGS_VO_RANDOMXLVLVO:Class = RandomXLvlVO;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_SETTINGSCONTROLPROP:Class = SettingsControlProp;
       

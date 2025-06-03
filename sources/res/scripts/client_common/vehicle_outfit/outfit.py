@@ -8,7 +8,7 @@ from items.customizations import parseOutfitDescr, CustomizationOutfit
 from items.vehicles import makeIntCompactDescrByID, getItemByCompactDescr, VehicleDescr
 from shared_utils import isEmpty
 from soft_exception import SoftException
-from vehicle_outfit.containers import OutfitContainer, MultiSlot, SizableMultiSlot, ProjectionDecalsMultiSlot
+from vehicle_outfit.containers import OutfitContainer, MultiSlot, ProjectionDecalsMultiSlot
 from vehicle_systems.tankStructure import TankPartIndexes
 if typing.TYPE_CHECKING:
     from vehicle_outfit.containers import SlotData
@@ -26,6 +26,7 @@ ANCHOR_TYPE_TO_SLOT_TYPE_MAP = {'inscription': GUI_ITEM_TYPE.INSCRIPTION,
    'projectionDecal': GUI_ITEM_TYPE.PROJECTION_DECAL, 
    'style': GUI_ITEM_TYPE.STYLE, 
    'effect': GUI_ITEM_TYPE.MODIFICATION, 
+   'sequence': GUI_ITEM_TYPE.SEQUENCE, 
    'attachment': GUI_ITEM_TYPE.ATTACHMENT}
 SLOT_TYPE_TO_ANCHOR_TYPE_MAP = {v:k for k, v in ANCHOR_TYPE_TO_SLOT_TYPE_MAP.iteritems()}
 SLOT_TYPES = tuple(slotType for slotType in SLOT_TYPE_TO_ANCHOR_TYPE_MAP)
@@ -80,7 +81,7 @@ def scaffold():
        GUI_ITEM_TYPE.MODIFICATION,), regions=ApplyArea.MODIFICATION_REGIONS),
       ProjectionDecalsMultiSlot(slotTypes=(
        GUI_ITEM_TYPE.PROJECTION_DECAL,), regions=[], limit=MAX_PROJECTION_DECALS),
-      SizableMultiSlot(slotTypes=(
+      MultiSlot(slotTypes=(
        GUI_ITEM_TYPE.SEQUENCE,), regions=[]))))
 
 
@@ -142,6 +143,9 @@ class Outfit(HasStrCD):
             projectionDeclasMultiSlot = ProjectionDecalsMultiSlot(slotTypes=(
              GUI_ITEM_TYPE.PROJECTION_DECAL,), regions=self.__getTypeRegions(vehicleDescriptor, GUI_ITEM_TYPE.PROJECTION_DECAL), limit=MAX_PROJECTION_DECALS)
             self.misc.setSlotFor(GUI_ITEM_TYPE.PROJECTION_DECAL, projectionDeclasMultiSlot)
+            sequenceMultiSlot = MultiSlot(slotTypes=(
+             GUI_ITEM_TYPE.SEQUENCE,), regions=self.__getTypeRegions(vehicleDescriptor, GUI_ITEM_TYPE.SEQUENCE))
+            self.misc.setSlotFor(GUI_ITEM_TYPE.SEQUENCE, sequenceMultiSlot)
             for partIdx in TankPartIndexes.ALL:
                 attachmentMultiSlot = MultiSlot(slotTypes=(
                  GUI_ITEM_TYPE.ATTACHMENT,), regions=self.__getTypeRegions(vehicleDescriptor, GUI_ITEM_TYPE.ATTACHMENT, (partIdx,)))

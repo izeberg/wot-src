@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.960222 -0.000000 -4.476337</min>
+		<max>1.960238 1.300123 3.724604</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

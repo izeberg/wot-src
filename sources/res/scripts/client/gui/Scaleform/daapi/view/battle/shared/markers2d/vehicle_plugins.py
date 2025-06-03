@@ -416,10 +416,6 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
             return settings.DamageType.FROM_SQUAD
         return settings.DamageType.FROM_OTHER
 
-    @classmethod
-    def _needsMarker(cls, vInfo):
-        return (vInfo.isAlive() or not (isSpawnedBot(vInfo.vehicleType.tags) or isHunterBot(vInfo.vehicleType.tags))) and constants.VEHICLE_BUNKER_TURRET_TAG not in vInfo.vehicleType.tags
-
     @staticmethod
     def __isStatusActive(statusID, activeStatuses):
         for activeStatusID, _ in activeStatuses:
@@ -528,7 +524,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
             self._setMarkerBoundEnabled(vehicleMarker.getMarkerID(), False)
 
     def __addMarkerToPool(self, vehicleID, vInfo, vProxy=None):
-        if not self._needsMarker(vInfo):
+        if not self.__needsMarker(vInfo):
             return
         else:
             if vProxy is not None:
@@ -577,6 +573,10 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
         if marker.setSpeaking(speaking):
             self._invokeMarker(marker.getMarkerID(), 'setSpeaking', speaking)
 
+    @staticmethod
+    def __needsMarker(vInfo):
+        return (vInfo.isAlive() or not (isSpawnedBot(vInfo.vehicleType.tags) or isHunterBot(vInfo.vehicleType.tags))) and constants.VEHICLE_BUNKER_TURRET_TAG not in vInfo.vehicleType.tags
+
     def __setEntityName(self, vInfo, arenaDP):
         vehicleID = vInfo.vehicleID
         if vehicleID not in self._markers:
@@ -589,7 +589,7 @@ class VehicleMarkerPlugin(MarkerPlugin, ChatCommunicationComponent, IArenaVehicl
         return BigWorld.player().observedVehicleID == vehicleID and BigWorld.player().isObserverFPV
 
     def __onVehicleMarkerAdded(self, vProxy, vInfo, guiProps):
-        if not self._needsMarker(vInfo):
+        if not self.__needsMarker(vInfo):
             return
         else:
             vehicleID = vInfo.vehicleID

@@ -265,9 +265,6 @@ class SettingsCore(ISettingsCore):
           GAME.GAMEPLAY_EPIC_STANDARD,
           options.GameplaySetting(GAME.GAMEPLAY_MASK, 'ctf30x30', storage=GAMEPLAY_SETTINGS_STORAGE, delegate=_getEpicRandomSwitch)),
          (
-          GAME.GAMEPLAY_ONLY_10_MODE,
-          options.RandomOnly10ModeSetting(GAME.GAMEPLAY_ONLY_10_MODE, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
-         (
           GAME.GAMEPLAY_DEV_MAPS,
           options.DevMapsSetting(GAME.GAMEPLAY_DEV_MAPS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (

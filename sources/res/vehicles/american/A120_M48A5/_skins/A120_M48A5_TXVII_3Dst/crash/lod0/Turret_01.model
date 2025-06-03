@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.442480 -0.019064 -2.519991</min>
+		<max>1.258594 1.576240 1.363824</max>
+	</visibilityBox>
+	<parent>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod0/Turret_01</nodefullVisual>
+</root>

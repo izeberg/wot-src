@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G186_Schwertwal/crash/lod2/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G186_Schwertwal/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.330881 -0.403438 -2.281420</min>
+		<max>1.070769 0.428031 6.237226</max>
+	</visibilityBox>
+</root>

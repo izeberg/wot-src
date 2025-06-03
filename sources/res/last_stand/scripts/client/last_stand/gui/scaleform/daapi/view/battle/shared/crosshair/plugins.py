@@ -1,9 +1,0 @@
-from gui.Scaleform.daapi.view.battle.shared.crosshair.plugins import VehicleStatePlugin
-from last_stand.gui.battle_control.ls_battle_constants import VEHICLE_VIEW_STATE
-
-class LSVehicleStatePlugin(VehicleStatePlugin):
-
-    def _onVehicleStateUpdated(self, state, value):
-        if state == VEHICLE_VIEW_STATE.LS_MAX_HEALTH:
-            self._setMaxHealth(value)
-        super(LSVehicleStatePlugin, self)._onVehicleStateUpdated(state, value)

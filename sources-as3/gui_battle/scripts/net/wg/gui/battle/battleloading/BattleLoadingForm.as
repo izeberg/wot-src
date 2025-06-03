@@ -236,6 +236,47 @@ package net.wg.gui.battle.battleloading
          }
       }
       
+      public function setStateSizeBoundaries(param1:int, param2:int) : void
+      {
+         var _loc4_:IBattleLoadingRenderer = null;
+         var _loc3_:Boolean = param1 >= StageSizeBoundaries.WIDTH_1366;
+         this.team1Text.x = this._team1TextInitX;
+         this.team2Text.x = this._team2TextInitX;
+         this.leftSquad.x = this._leftSquadInitX - SQUAD_ICON_SHIFT;
+         this.rightSquad.x = this._rightSquadInitX + SQUAD_ICON_SHIFT;
+         if(this.leftTank)
+         {
+            this.leftTank.x = this._leftTankInitX - TANK_ICON_SHIFT;
+         }
+         if(this.rightTank)
+         {
+            this.rightTank.x = this._rightTankInitX + TANK_ICON_SHIFT;
+         }
+         if(_loc3_)
+         {
+            this.team1Text.x -= EXTENDED_LAYOUT_OFFSET_X;
+            this.team2Text.x += EXTENDED_LAYOUT_OFFSET_X;
+            this.leftSquad.x -= EXTENDED_LAYOUT_OFFSET_X;
+            this.rightSquad.x += EXTENDED_LAYOUT_OFFSET_X;
+            if(this.leftTank)
+            {
+               this.leftTank.x -= EXTENDED_LAYOUT_OFFSET_X;
+            }
+            if(this.rightTank)
+            {
+               this.rightTank.x += EXTENDED_LAYOUT_OFFSET_X;
+            }
+         }
+         for each(_loc4_ in this._allyRenderers)
+         {
+            _loc4_.isExtendedLayout = _loc3_;
+         }
+         for each(_loc4_ in this._enemyRenderers)
+         {
+            _loc4_.isExtendedLayout = _loc3_;
+         }
+      }
+      
       override protected function onDispose() : void
       {
          var _loc1_:IBattleLoadingRenderer = null;
@@ -250,47 +291,32 @@ package net.wg.gui.battle.battleloading
          this.mapBackground = null;
          this.formBackgroundTable = null;
          this.mapBorder = null;
-         if(this._teamDP)
-         {
-            this._teamDP.removeEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onAllyDataProviderUpdateItemHandler);
-            this._teamDP.cleanUp();
-            this._teamDP = null;
-         }
-         if(this._enemyDP)
-         {
-            this._enemyDP.removeEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onEnemyDataProviderUpdateItemHandler);
-            this._enemyDP.cleanUp();
-            this._enemyDP = null;
-         }
-         if(this.tipImage)
-         {
-            this.tipImage.dispose();
-            this.tipImage = null;
-         }
+         this._teamDP.removeEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onAllyDataProviderUpdateItemHandler);
+         this._teamDP.cleanUp();
+         this._teamDP = null;
+         this._enemyDP.removeEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onEnemyDataProviderUpdateItemHandler);
+         this._enemyDP.cleanUp();
+         this._enemyDP = null;
+         this.tipImage.dispose();
+         this.tipImage = null;
          this.map = null;
          if(this._renderersContainer)
          {
             this._renderersContainer.dispose();
             this._renderersContainer = null;
          }
-         if(this._allyRenderers)
+         for each(_loc1_ in this._allyRenderers)
          {
-            for each(_loc1_ in this._allyRenderers)
-            {
-               _loc1_.dispose();
-            }
-            this._allyRenderers.splice(0,this._allyRenderers.length);
-            this._allyRenderers = null;
+            _loc1_.dispose();
          }
-         if(this._enemyRenderers)
+         this._allyRenderers.splice(0,this._allyRenderers.length);
+         this._allyRenderers = null;
+         for each(_loc1_ in this._enemyRenderers)
          {
-            for each(_loc1_ in this._enemyRenderers)
-            {
-               _loc1_.dispose();
-            }
-            this._enemyRenderers.splice(0,this._enemyRenderers.length);
-            this._enemyRenderers = null;
+            _loc1_.dispose();
          }
+         this._enemyRenderers.splice(0,this._enemyRenderers.length);
+         this._enemyRenderers = null;
          super.onDispose();
       }
       
@@ -341,47 +367,6 @@ package net.wg.gui.battle.battleloading
       override protected function getBattleTypeName() : String
       {
          return BATTLE_TYPES.RANDOM;
-      }
-      
-      public function setStateSizeBoundaries(param1:int, param2:int) : void
-      {
-         var _loc4_:IBattleLoadingRenderer = null;
-         var _loc3_:Boolean = param1 >= StageSizeBoundaries.WIDTH_1366;
-         this.team1Text.x = this._team1TextInitX;
-         this.team2Text.x = this._team2TextInitX;
-         this.leftSquad.x = this._leftSquadInitX - SQUAD_ICON_SHIFT;
-         this.rightSquad.x = this._rightSquadInitX + SQUAD_ICON_SHIFT;
-         if(this.leftTank)
-         {
-            this.leftTank.x = this._leftTankInitX - TANK_ICON_SHIFT;
-         }
-         if(this.rightTank)
-         {
-            this.rightTank.x = this._rightTankInitX + TANK_ICON_SHIFT;
-         }
-         if(_loc3_)
-         {
-            this.team1Text.x -= EXTENDED_LAYOUT_OFFSET_X;
-            this.team2Text.x += EXTENDED_LAYOUT_OFFSET_X;
-            this.leftSquad.x -= EXTENDED_LAYOUT_OFFSET_X;
-            this.rightSquad.x += EXTENDED_LAYOUT_OFFSET_X;
-            if(this.leftTank)
-            {
-               this.leftTank.x -= EXTENDED_LAYOUT_OFFSET_X;
-            }
-            if(this.rightTank)
-            {
-               this.rightTank.x += EXTENDED_LAYOUT_OFFSET_X;
-            }
-         }
-         for each(_loc4_ in this._allyRenderers)
-         {
-            _loc4_.isExtendedLayout = _loc3_;
-         }
-         for each(_loc4_ in this._enemyRenderers)
-         {
-            _loc4_.isExtendedLayout = _loc3_;
-         }
       }
       
       protected function getRendererClass(param1:VisualTipInfoVO) : Class

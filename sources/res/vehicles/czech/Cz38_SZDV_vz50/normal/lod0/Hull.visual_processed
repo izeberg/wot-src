@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.079520 -1.832865</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.879861 0.830975 1.003050</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.661543 0.749907</row1>
+					<row2>0.000000 -0.749907 0.661543</row2>
+					<row3>-1.394840 0.059315 3.637931</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.619086 -0.785323</row1>
+					<row2>-0.000000 -0.785323 -0.619086</row2>
+					<row3>-1.394840 -0.189427 -3.630905</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.661543 0.749907</row1>
+					<row2>0.000000 -0.749907 0.661543</row2>
+					<row3>1.394841 0.059315 3.637932</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.619086 -0.785323</row1>
+					<row2>-0.000000 -0.785323 -0.619086</row2>
+					<row3>1.394841 -0.189427 -3.630905</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.982539 -0.186056</row1>
+					<row2>0.000000 0.186056 -0.982539</row2>
+					<row3>-0.669938 -0.188927 -3.790195</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.982539 -0.186056</row1>
+					<row2>0.000000 0.186056 -0.982539</row2>
+					<row3>0.670119 -0.188927 -3.790195</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.740629 2.263760</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 7.013699 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000555 0.930397 0.065359</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_hull_02</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_02_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/czech/Cz38_SZDV_vz50/SZDV_vz50_hull_02_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 3.506849 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.007686 0.611125 0.012534</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.824956 -0.781569 -3.796793</min>
+		<max>1.826066 2.642363 3.882831</max>
+	</boundingBox>
+	<geometrySize>1559222</geometrySize>
+	<minUVDensity>0.002361</minUVDensity>
+</root>

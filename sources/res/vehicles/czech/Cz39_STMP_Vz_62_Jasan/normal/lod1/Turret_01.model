@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz39_STMP_Vz_62_Jasan/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz39_STMP_Vz_62_Jasan/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.323887 -0.004321 -1.882275</min>
+		<max>1.274603 4.684083 1.726127</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A120_M48A5/_skins/A120_M48A5_TXVII_3Dst/crash/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.817705 -1.079334 -3.486018</min>
+		<max>1.882892 0.705105 3.357064</max>
+	</visibilityBox>
+</root>

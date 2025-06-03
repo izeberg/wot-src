@@ -2050,6 +2050,54 @@
 				<rotation>0 0 0</rotation>
 				<attachNode>HP_light2</attachNode>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					0.815528 0.412567 -3.68491
+					<!--BW_String-->
+				</position>
+				<rotation>-0.000012 -1.538121 1.573548</rotation>
+				<scale>
+					0.999999 1 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>-1.630929 0.319066 -0.935598</position>
+				<rotation>
+					0 -0 1.46352
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>
+					1.631 0.319066 -0.935598
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.139847 1.463459
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999998 0.999998 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -4749,7 +4797,6 @@
 						<length>0.149156</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -5207,7 +5254,6 @@
 						<length>0.149194</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -7049,6 +7095,24 @@
 					<rotation>0 0 0</rotation>
 					<attachNode>HP_light1</attachNode>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>0.429294 1.136976 0.580501</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>small</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38002</slotId>
+					<position>-0.332167 1.303728 -0.507572</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>small</size>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -8670,6 +8734,24 @@
 					<position>0 0 0</position>
 					<rotation>0 0 0</rotation>
 					<attachNode>HP_light1</attachNode>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>0.714828 1.050503 -0.114756</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>small</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38002</slotId>
+					<position>-0.375189 1.225739 -0.235979</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>small</size>
 				</slot>
 			</customizationSlots>
 			<customization>

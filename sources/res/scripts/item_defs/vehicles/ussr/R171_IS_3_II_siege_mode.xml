@@ -1547,6 +1547,54 @@
 				<clipAngle>0.592539</clipAngle>
 				<anchorShift>0.519887</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.812 0.400969 -2.15585
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>1.812305 0.400969 -2.155848</position>
+				<rotation>
+					3.141593 0 -1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					-0 -0.009827 -3.875624
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0 -1.570796 1.352506
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -6759,6 +6807,30 @@
 					</clipAngle>
 					<anchorShift>-0.010945</anchorShift>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						-0 0.954 -1.494961
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						-0 0.966482 -0.027208
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -9082,6 +9154,30 @@
 					<showOn>256</showOn>
 					<clipAngle>0.956873</clipAngle>
 					<anchorShift>-0.023191</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>
+						0.769 1.129 -1.166
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						-0.456 0.966482 0.17
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
 				</slot>
 			</customizationSlots>
 			<customization>

@@ -183,11 +183,15 @@
 				<config>
 					<property>
 						<name>PartHandle</name>
-						<value>0</value>
+						<value>2</value>
 					</property>
 					<property>
 						<name>ModelLink</name>
 						<link>70881e3e-6a35-4d7c-bd07-bbb081793a90</link>
+					</property>
+					<property>
+						<name>ReceiverLink</name>
+						<link>cc3ed778-2326-496e-9936-9583f0c90d83</link>
 					</property>
 					<property>
 						<name>LodDistance</name>
@@ -574,6 +578,22 @@
 						<value>1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::FashionComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>cc3ed778-2326-496e-9936-9583f0c90d83</UUID>
+				<flags>2</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::GpuDecalsReceiverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>cc3ed778-2326-496e-9936-9583f0c90d83</UUID>
+				<flags>2</flags>
 			</component>
 		</ComponentPool>
 	</components>

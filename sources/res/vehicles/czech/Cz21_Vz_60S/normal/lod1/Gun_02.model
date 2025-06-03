@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz21_Vz_60S/normal/lod1/Gun_02</nodefullVisual>
+	<parent>vehicles/czech/Cz21_Vz_60S/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.783869 -0.323225 -0.042604</min>
+		<max>0.420445 0.368627 6.141229</max>
+	</visibilityBox>
+</root>

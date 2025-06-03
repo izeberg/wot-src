@@ -93,7 +93,13 @@ class RoamingSettings(namedtuple('RoamingSettings', ('homeCenterID', 'curCenterI
 
     @classmethod
     def defaults(cls):
-        return cls(0, 0, [])
+        dbIDMin = 0
+        dbIDMax = 9223372036854775807
+        regionCode = None
+        homeCenterID = 0
+        currentCenterID = 0
+        return cls(homeCenterID, currentCenterID, [
+         _ServerInfo(currentCenterID, dbIDMin, dbIDMax, regionCode)])
 
 
 class _FileServerSettings(object):
@@ -2011,9 +2017,6 @@ class ServerSettings(object):
 
     def isHofEnabled(self):
         return self.__getGlobalSetting('hallOfFame', {}).get('isHofEnabled', False)
-
-    def isOnly10ModeEnabled(self):
-        return self.__getGlobalSetting('isOnly10ModeEnabled', False)
 
     def isMapsInDevelopmentEnabled(self):
         mapsInDevCongig = self.__getGlobalSetting(Configs.MAPS_IN_DEVELOPMENT_CONFIG.value, None)
