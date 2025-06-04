@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz38_SZDV_vz50/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/czech/Cz38_SZDV_vz50/crash/lod4/Chassis</parent>
+	<extent>192</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.754765 0.041629 -3.837516</min>
+		<max>1.754765 1.358501 4.113868</max>
+	</visibilityBox>
+</root>

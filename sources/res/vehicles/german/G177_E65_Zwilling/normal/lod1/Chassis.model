@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G177_E65_Zwilling/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.760112 -0.000001 -3.541575</min>
+		<max>1.760091 1.251545 3.487025</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G177_E65_Zwilling/normal/lod1/Chassis</nodefullVisual>
+</root>

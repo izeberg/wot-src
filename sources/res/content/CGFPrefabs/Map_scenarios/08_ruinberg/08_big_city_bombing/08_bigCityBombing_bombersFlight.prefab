@@ -1127,14 +1127,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					-91.8113 0.002142 -0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					-94.6381 -0.208375 0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1169,14 +1169,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					-91.6546 -0.205972 0
+																					0.330156 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					-88.2126 -0.748591 0
+																					0.330156 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1214,14 +1214,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					-87.8907 -61.7503 -0
+																					-56.914 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					-87.8907 -61.7503 -0
+																					-56.914 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1354,14 +1354,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					-91.8113 0.002142 -0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					-94.6381 -0.208375 0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1381,7 +1381,7 @@
 																	</property>
 																	<property>
 																		<name>type</name>
-																		<value>3</value>
+																		<value>1</value>
 																	</property>
 																	<property>
 																		<name>time</name>
@@ -1396,14 +1396,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					-91.6546 -0.205972 0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					-88.2126 -0.748591 0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1423,7 +1423,7 @@
 																	</property>
 																	<property>
 																		<name>type</name>
-																		<value>3</value>
+																		<value>1</value>
 																	</property>
 																	<property>
 																		<name>time</name>
@@ -1438,14 +1438,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					-87.8907 -61.7503 -0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					-87.8907 -61.7503 -0
+																					1.5708 1.5708 1.5708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2125,6 +2125,10 @@
 					<property>
 						<name>deathZoneGUID</name>
 						<value>08_ruinberg_death_zone_ai</value>
+					</property>
+					<property>
+						<name>dangerMapPatchTag</name>
+						<value/>
 					</property>
 				</config>
 			</component>

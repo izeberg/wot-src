@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz38_SZDV_vz50/normal/lod3/Gun_01</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz38_SZDV_vz50/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.544146 -0.340689 0.345390</min>
+		<max>0.544387 0.548545 5.832034</max>
+	</visibilityBox>
+</root>

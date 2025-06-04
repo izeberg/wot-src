@@ -1453,6 +1453,9 @@ msgstr "此阶段完成后，您可以通过点击阶段上方的\"领取奖励\
 msgid "battlePassOffer/footer/brochure_gift"
 msgstr "此阶段完成后，您可以通过点击阶段上方的\"领取奖励\"按钮来获得所选系别的一本培训手册。"
 
+msgid "battlePassOffer/footer/crewbook_gift"
+msgstr "此阶段完成后，您可以通过点击阶段上方的\"领取奖励\"按钮来获得所选系别的1本训练手册。"
+
 msgid "battlePassOffer/footer/guide_gift"
 msgstr "此阶段完成后，您可以通过点击阶段上方的\"领取奖励\"按钮来获得所选系别的一本培训指南。"
 
@@ -1479,6 +1482,9 @@ msgstr "可选择的系别蓝图碎片"
 
 msgid "battlePassOffer/title/brochure_gift"
 msgstr "可选择的培训手册"
+
+msgid "battlePassOffer/title/crewbook_gift"
+msgstr "自选训练手册"
 
 msgid "battlePassOffer/title/guide_gift"
 msgstr "可选择的培训指南"
@@ -8332,6 +8338,47 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp16_9/label"
 msgstr "战斗通行证: Peaky Blinders"
 
+msgid "notrecruitedtankman/tankmen_bp17_1/desc"
+msgstr ""
+"马修·肯尼迪出身于军人世家，是一名说一不二的军人，至少在执行任务时绝不含糊。他作风强硬、锐意进取，作为指挥官要求严苛，对自己和部下都力求卓越——稍有差池，您定会领教他的厉害。虽然在战场上冷酷无情，私下却出奇地富有魅力。这名以自身血统为傲的男孩，曾因凯尔特文化渊源与安格斯结下深厚情谊。马修赢得了所有战友的尊重——甚至敬畏。"
+
+msgid "notrecruitedtankman/tankmen_bp17_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_1/label"
+msgstr "战斗通行证赛季XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_2/desc"
+msgstr ""
+"安格斯·威廉·布坎南可能是高原上最优秀的神枪手，人称\"加农炮\"。这不足为奇，毕竟，他从小就在高地荒原上狩猎，多年来，他在那片狂野之地上磨练出了惊人的眼力。安格斯的射击技巧如此高超，以至于他偶尔会想放弃坦克，申请加入特种空勤团。不过眼下，他对自己那辆双管猛兽座驾相当满意。虽然他长着一头火焰般的红发，但其性格却并非如此。他头脑冷静、做事严谨。安格斯从不仓促开火，也几乎从不失手。"
+
+msgid "notrecruitedtankman/tankmen_bp17_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_2/label"
+msgstr "战斗通行证赛季XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_3/desc"
+msgstr ""
+"\"不可能？\"韦健的字典里可没这三个字。他历经严苛训练、突破极限挑战、淘汰强劲对手，最终成为C系顶尖坦克工程师，早已无所畏惧。常人眼中的障碍，在韦健眼里却是机遇。他甘愿耗费数小时钻研蓝图，微调最小的部件，只为追求创新与极致性能。然而其专长并不仅限于图纸之上:"
+" 无论是战场还是设计局，他那追求完美的执着与明察秋毫的眼力，始终如一，绝不妥协。"
+
+msgid "notrecruitedtankman/tankmen_bp17_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_3/label"
+msgstr "战斗通行证赛季XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_4/desc"
+msgstr ""
+"对阿莱西亚来说，成为一名坦克手实属阴差阳错。倒不是她存心违抗权威，不如说，生性不羁的她，压根就没把权威放在眼里。但她渴望冒险，而从军无疑能满足这点。身为沟通高手，她深信谈判能化解任何争端。只要她下定决心，总有办法让人心悦诚服。不过，若对手冥顽不灵、不通情理，她也不介意用火炮来说服对方。"
+
+msgid "notrecruitedtankman/tankmen_bp17_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_4/label"
+msgstr "战斗通行证赛季XVII"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "很多人都问我认不认识杰克·里德。在回答之前，我常常会闭上眼睛，深呼吸，因为当他的指挥官可一点都不轻松。里德是个叛逆的家伙，他总能以自己的方式完成命令，还能不违反军队规定。虽然在现实中他困在一个闷热的坦克里。但在内心世界中，他正骑着摩托，沿着高速公路前行，享受着清风吹拂脸颊的感觉。"
@@ -8925,15 +8972,6 @@ msgstr ""
 
 msgid "npsCompensation/header"
 msgstr "已获得"
-
-msgid "only10Mode/attention"
-msgstr "只有在选择X级坦克后才会激活"
-
-msgid "only10Mode/body"
-msgstr "启用此设置后，将匹配只包含X级坦克的团队。"
-
-msgid "only10Mode/header"
-msgstr "搜索仅包含X级坦克的战斗"
 
 msgid "parameter/categories"
 msgstr "类别: "

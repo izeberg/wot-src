@@ -20,12 +20,11 @@ package net.wg.gui.components.common.containers
       override public function invokeLayout() : Object
       {
          var _loc1_:DisplayObject = null;
-         var _loc6_:int = 0;
          var _loc2_:int = _target.numChildren;
          var _loc3_:int = 0;
          var _loc4_:int = !!this._paddingGap ? int(_loc2_ + 1) : int(_loc2_ - 1);
          var _loc5_:uint = (this._availableSize - gap * _loc4_) / _loc2_;
-         _loc6_ = !!this._paddingGap ? int(gap) : int(0);
+         var _loc6_:int = !!this._paddingGap ? int(gap) : int(0);
          var _loc7_:int = 0;
          while(_loc7_ < _loc2_)
          {

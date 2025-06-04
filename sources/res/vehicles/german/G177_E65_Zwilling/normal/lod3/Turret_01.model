@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G177_E65_Zwilling/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.404861 -0.018499 -2.321895</min>
+		<max>1.404859 1.546475 1.555844</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G177_E65_Zwilling/normal/lod3/Turret_01</nodefullVisual>
+</root>

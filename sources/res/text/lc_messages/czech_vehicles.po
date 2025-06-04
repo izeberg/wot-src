@@ -127,6 +127,9 @@ msgstr "ShPTK-TVP(48型）"
 msgid "Chassis_Cz20_ShPTK_TVP_100_mm_CO"
 msgstr "索提戈"
 
+msgid "Chassis_Cz21_Vz_60S"
+msgstr "Vz.60 S"
+
 msgid "Chassis_Cz23_Skoda_T_17"
 msgstr "斯柯达 T17 I型"
 
@@ -159,6 +162,15 @@ msgstr "Vz.71 T"
 
 msgid "Chassis_Cz35_T56_G"
 msgstr "TT-130M"
+
+msgid "Chassis_Cz37_SDT_58_Vlkodav"
+msgstr "SDT-58 V"
+
+msgid "Chassis_Cz38_SZDV_vz50"
+msgstr "SZDV Vz.50"
+
+msgid "Chassis_Cz39_STMP_Vz_62_Jasan"
+msgstr "Vz.62 J"
 
 msgid "Chassis_Cz40_DBV_152"
 msgstr "DBV-152"
@@ -429,6 +441,26 @@ msgstr "ShPTK-TVP"
 msgid "Cz20_ShPTK_TVP_100_mm_short_special"
 msgstr "较高的平均每分钟损伤以及良好的穿透力"
 
+msgid "Cz21_Vz_60S"
+msgstr "Vz.60 S"
+
+msgid "Cz21_Vz_60S_descr"
+msgstr ""
+"Vz.60 "
+"S计划的主要特点是装备了间隙装甲，用来对付HEAT炮弹。炮塔各个部位均拥有不同材质的装甲，其中包括聚氨酯元件和钢板。车体两侧和首下装甲也计划使用钢制间隙装甲进行强化。由于多种原因，该坦克从未投入量产，但其部分技术方案被J系用于进一步改进量产的T-55坦克。"
+
+msgid "Cz21_Vz_60S_long_special"
+msgstr ""
+"Vz.60 "
+"S是一辆X级重型坦克。该坦克的主要特点是可靠的装甲防护，炮塔和车体的装甲均殷实且倾斜，同时还装备额外的间隙装甲加以增强。尽管配备强劲的武器，但该坦克仍拥有相对于重型坦克来说良好的机动性。Vz.60"
+" S配备一门性能均衡的122毫米火炮，无明显短板。"
+
+msgid "Cz21_Vz_60S_short"
+msgstr "Vz.60 S"
+
+msgid "Cz21_Vz_60S_short_special"
+msgstr "出色的装甲，优秀的火炮手感"
+
 msgid "Cz23_Skoda_T_17"
 msgstr "斯柯达 T17"
 
@@ -542,6 +574,62 @@ msgstr "TT-130M"
 msgid "Cz35_T56_G_short_special"
 msgstr "火箭助推器，坚固的装甲"
 
+msgid "Cz37_SDT_58_Vlkodav"
+msgstr "SDT-58 V"
+
+msgid "Cz37_SDT_58_Vlkodav_desc"
+msgstr ""
+"20世纪50年代末，J系军方拟定了研发新型重型坦克的要求，力求有别于以往所有型号的坦克，实现质的突破。设计人员计划为该坦克配备由两门火炮组成的强劲武器系统，以显著提高射速，还计划采用光学测距仪来提高瞄准效率。\n"
+"然而，初步测算表明，双管火炮及其弹药配置将导致底盘超载，此外，该坦克存在维护难度大、生产成本高等问题，最终，计划在建造原型车之前被叫停。 \n"
+"为符合游戏惯例，该坦克在游戏中设定为中型坦克。"
+
+msgid "Cz37_SDT_58_Vlkodav_long_special"
+msgstr ""
+"SDT-58 "
+"V是一辆性能全面的IX级中型坦克，具有良好的机动性和生存能力。它配备105毫米双管火炮系统，在齐射准备期间具有更高的稳定性，能够造成高额损伤。"
+
+msgid "Cz37_SDT_58_Vlkodav_short"
+msgstr "SDT-58 V"
+
+msgid "Cz37_SDT_58_Vlkodav_short_special"
+msgstr "双管火炮系统，良好的平均单发损伤"
+
+msgid "Cz38_SZDV_vz50"
+msgstr "SZDV Vz.50"
+
+msgid "Cz38_SZDV_vz50_descr"
+msgstr ""
+"战事结束后，J系决定自行研发重型自行反坦克炮。其主要目标是将S系自行反坦克炮的部件设计和动力传动系统，与D系底盘相结合，以实现更平稳的行驶表现和更合理的载重分布。次要目标是提高射速，计划通过降低射击温度条件来实现。于是，设计师们为火炮研发了液体冷却系统。然而，这套系统非常笨重，包含一个巨大的冷却液储罐和泵装置，还需要更换原有电源，并安装一台功率更大的发电机。由于这些技术难题，加上将S系传动系统安装到D系底盘上的难度较高，该计划最终被终止。"
+
+msgid "Cz38_SZDV_vz50_long_special"
+msgstr ""
+"SZDV "
+"Vz.50是一辆J系VIII级自行反坦克炮。其主要特点是类似R系试验型重战车坦克线的双重瞄准系统。得益于较短的冷却时间，您可进行快速而精准的远距离射击。同时，该坦克拥有较高的平均每分钟损伤，并兼具不俗的机动性与装甲，也能在必要时采用激进的游戏玩法。"
+
+msgid "Cz38_SZDV_vz50_short"
+msgstr "SZDV Vz.50"
+
+msgid "Cz38_SZDV_vz50_short_special"
+msgstr "高额的平均每分钟损伤，双重瞄准系统"
+
+msgid "Cz39_STMP_Vz_62_Jasan"
+msgstr "Vz.62 J"
+
+msgid "Cz39_STMP_Vz_62_Jasan_descr"
+msgstr ""
+"20世纪50年代末，J系军方考虑摆脱对S系坦克的依赖。为此，军事技术研究院启动了一项高速中型坦克计划，旨在与T-54B和T-55竞争。该计划力求最大限度地采用J系部件，包括获得生产许可的火炮及斯柯达柴油发动机。尽管部分技术方案已过时，但该坦克在设计上仍颇具独创性且潜力巨大。然而，经与S系专家联合评审后，决定不再分散资金，转而根据相关条约为J系陆军列装T-55坦克。该计划仅停留在蓝图阶段。"
+
+msgid "Cz39_STMP_Vz_62_Jasan_long_special"
+msgstr ""
+"Vz.62 J是一辆IX级中型坦克。它配备一门100毫米弹夹炮，短装填时间为1.5秒，这让敌人几乎没有时间对危险做出反应。Vz.62 "
+"J的装甲较为平庸，但良好的机动性和火炮手感弥补了该不足。"
+
+msgid "Cz39_STMP_Vz_62_Jasan_short"
+msgstr "Vz.62 J"
+
+msgid "Cz39_STMP_Vz_62_Jasan_short_special"
+msgstr "较短的短装填时间，良好的机动性"
+
 msgid "Cz40_DBV_152"
 msgstr "DBV-152"
 
@@ -577,6 +665,9 @@ msgstr "哈诺玛格 WD-50PS"
 msgid "Lorenz_vz_38"
 msgstr "洛伦茨"
 
+msgid "Narazovy_vz_57"
+msgstr "HE vz.57"
+
 msgid "Praga_AXK"
 msgstr "普拉加 AXK"
 
@@ -598,6 +689,12 @@ msgstr "普拉加 V-8-H"
 msgid "Praga_V_8_H_Sv"
 msgstr "普拉加 V-8-H-Sv"
 
+msgid "Prurazny_vz_57"
+msgstr "AP vz.57"
+
+msgid "Prurazny_vz_57_s_wolf_jadrem"
+msgstr "APCR vz.57(钨芯)"
+
 msgid "Radiostanice_9R"
 msgstr "9R"
 
@@ -609,6 +706,9 @@ msgstr "Fu 12"
 
 msgid "Radiostanice_Fu_7"
 msgstr "Fu 7"
+
+msgid "Radiostanice_R113S"
+msgstr "R-113S"
 
 msgid "Radiostanice_RM_31T"
 msgstr "RM-31T"
@@ -627,6 +727,9 @@ msgstr "R-112"
 
 msgid "Radiostanice_R_113"
 msgstr "R-113"
+
+msgid "Radiostanice_R_113_JA"
+msgstr "R-123JA"
 
 msgid "Radiostanice_R_120_DBV"
 msgstr "R-120D"
@@ -670,11 +773,17 @@ msgstr "斯柯达 V16 ADH 140(P)"
 msgid "Skoda_16_AH_145"
 msgstr "斯柯达 16 AH 145"
 
+msgid "Skoda_16_AH_145J"
+msgstr "斯柯达 16 AH 145J"
+
 msgid "Skoda_16_AH_145_A"
 msgstr "斯柯达 16 AH 145"
 
 msgid "Skoda_AHK"
 msgstr "斯柯达 AHK"
+
+msgid "Skoda_AHK_60"
+msgstr "斯柯达 AHK 60"
 
 msgid "Skoda_T_11_0"
 msgstr "斯柯达 T-11/0"
@@ -778,6 +887,9 @@ msgstr "ShPTK-TVP vz.48"
 msgid "Turret_1_Cz20_ShPTK_TVP_100_mm_CO"
 msgstr "索提戈"
 
+msgid "Turret_1_Cz21_Vz_60S"
+msgstr "Vz.60 S"
+
 msgid "Turret_1_Cz23_Skoda_T_17"
 msgstr "斯柯达 T17 I型"
 
@@ -801,6 +913,15 @@ msgstr "Vz.71 T"
 
 msgid "Turret_1_Cz35_T56_G"
 msgstr "TT-130M"
+
+msgid "Turret_1_Cz37_SDT_58_Vlkodav"
+msgstr "SDT-58 V"
+
+msgid "Turret_1_Cz38_SZDV_vz50"
+msgstr "SZDV Vz.50"
+
+msgid "Turret_1_Cz39_STMP_Vz_62_Jasan"
+msgstr "Vz.62 J"
 
 msgid "Turret_1_Cz40_DBV_152"
 msgstr "DBV-152"
@@ -859,11 +980,20 @@ msgstr "UTD-20-68SD"
 msgid "UTD_20_71TD"
 msgstr "UTD-20-71TD"
 
+msgid "V12_TD"
+msgstr "V12 TD"
+
 msgid "V_2_34"
 msgstr "V-2-34"
 
 msgid "V_2_34M"
 msgstr "V-2-34M"
+
+msgid "V_59T"
+msgstr "V-59T"
+
+msgid "_100_mm_S_3"
+msgstr "100mm S-3炮"
 
 msgid "_100mm_A20"
 msgstr "100mm A20炮"
@@ -889,11 +1019,17 @@ msgstr "HE vz.49"
 msgid "_100mm_Narazovy_vz_50"
 msgstr "HE vz.50"
 
+msgid "_100mm_Narazovy_vz_62"
+msgstr "HE vz.62"
+
 msgid "_100mm_Prupalny_s_53"
 msgstr "HEAT S 53"
 
 msgid "_100mm_Prupalny_vz_50"
 msgstr "HEAT vz.50"
+
+msgid "_100mm_Prupalny_vz_62"
+msgstr "HEAT vz.62"
 
 msgid "_100mm_Prurazny_412"
 msgstr "AP 412"
@@ -906,6 +1042,9 @@ msgstr "APCR vz.49"
 
 msgid "_100mm_Prurazny_vz_50"
 msgstr "APCR vz.50"
+
+msgid "_100mm_Prurazny_vz_62"
+msgstr "AP vz.62"
 
 msgid "_100mm_R11"
 msgstr "100mm R11炮"
@@ -923,6 +1062,9 @@ msgstr "HE"
 
 msgid "_105mm_Narazovy_14_48"
 msgstr "HE 14-48"
+
+msgid "_105mm_dvojkanon_vz_40N"
+msgstr "105mm vz.40N双管炮"
 
 msgid "_105mm_vz_38N"
 msgstr "105mm vz.38N炮"
@@ -951,8 +1093,23 @@ msgstr "Vz.42N OPG"
 msgid "_105mm_vz_42N_VM"
 msgstr "Vz.42N VM"
 
+msgid "_10_RT_26"
+msgstr "10-RT-26"
+
+msgid "_10_RT_26L"
+msgstr "10-RT-26L"
+
+msgid "_122mm_BR_741D"
+msgstr "BR-741D"
+
+msgid "_122mm_D_25TK"
+msgstr "122mm D-25TK炮"
+
 msgid "_122mm_Narazovy_vz_48"
 msgstr "HE vz.48"
+
+msgid "_122mm_Narazovy_vz_48_60"
+msgstr "HE 48-60"
 
 msgid "_122mm_Narazovy_vz_52"
 msgstr "HE vz.52"
@@ -960,14 +1117,26 @@ msgstr "HE vz.52"
 msgid "_122mm_Prurazny_vz_48"
 msgstr "AP vz.48"
 
+msgid "_122mm_Prurazny_vz_48_60"
+msgstr "AP 48-60"
+
 msgid "_122mm_Prurazny_vz_50_s_oc_jadrem"
 msgstr "APCR vz.50"
+
+msgid "_122mm_Prurazny_vz_50_s_oc_jadrem_60"
+msgstr "APCR 50-60(钢芯)"
 
 msgid "_122mm_Prurazny_vz_52"
 msgstr "AP vz.52"
 
 msgid "_122mm_Prurazny_vz_52_s_oc_jadrem"
 msgstr "APCR vz.52"
+
+msgid "_122mm_UBR_471"
+msgstr "UBR-471"
+
+msgid "_122mm_UOF_741"
+msgstr "UOF-741"
 
 msgid "_122mm_vz_122_L52"
 msgstr "122mm vz.122 L/52炮"
@@ -977,6 +1146,9 @@ msgstr "122mm vz.44-51炮"
 
 msgid "_122mm_vz_44_51_2A"
 msgstr "122mm vz.44-51 2A炮"
+
+msgid "_122mm_vz_44_60"
+msgstr "122mm vz.44-60炮"
 
 msgid "_130mm_59-130T_56G"
 msgstr "130mm 59-130M炮"

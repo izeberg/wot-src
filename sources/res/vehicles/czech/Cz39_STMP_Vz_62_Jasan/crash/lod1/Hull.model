@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz39_STMP_Vz_62_Jasan/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz39_STMP_Vz_62_Jasan/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.632495 -0.851082 -3.736902</min>
+		<max>1.642111 0.618630 3.135351</max>
+	</visibilityBox>
+</root>

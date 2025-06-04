@@ -932,24 +932,6 @@
 			<filter>only_dualGun_first_5_times</filter>
 		</tip>
 		<tip>
-			<id>tip187</id>
-			<status>battlePassPostProgression</status>
-			<group>all</group>
-			<filter>battlePass_on</filter>
-		</tip>
-		<tip>
-			<id>tip188</id>
-			<status>battlePassTickets</status>
-			<group>all</group>
-			<filter>battlePass_on</filter>
-		</tip>
-		<tip>
-			<id>tip189</id>
-			<status>battlePassTalers</status>
-			<group>all</group>
-			<filter>battlePass_on</filter>
-		</tip>
-		<tip>
 			<id>tip190</id>
 			<status>battlePassSeasonDescription</status>
 			<group>all</group>

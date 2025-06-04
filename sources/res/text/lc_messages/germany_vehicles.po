@@ -423,6 +423,9 @@ msgstr "15吨突击坦克 BT-42"
 msgid "Chassis_G174_Kpz3_GST_Turm"
 msgstr "3GST常规型主战"
 
+msgid "Chassis_G177_E65_Zwilling"
+msgstr "E-65 Z"
+
 msgid "Chassis_G178_KanJpz_2"
 msgstr "KJPZ 2"
 
@@ -434,6 +437,12 @@ msgstr "IV号歼击车 (0批次)"
 
 msgid "Chassis_G17_JagdPzIV_2"
 msgstr "IV号坦克歼击车"
+
+msgid "Chassis_G184_Windhund"
+msgstr "风猎者"
+
+msgid "Chassis_G186_Schwertwal"
+msgstr "\"虎鲸\""
 
 msgid "Chassis_G18_JagdPanther"
 msgstr "“猎豹”"
@@ -655,16 +664,16 @@ msgid "Chassis_Pz_IV_AusfH_2"
 msgstr "IV号H型"
 
 msgid "Chassis_Pz_Sfl_IVb"
-msgstr "Sfi IVB"
+msgstr "Sfl IVb"
 
 msgid "Chassis_Pz_Sfl_IVb_2"
-msgstr "Pz.Sfl.IVb3"
+msgstr "Sfl IVb3"
 
 msgid "Chassis_Pz_Sfl_IVc"
 msgstr "Sfl IVc"
 
 msgid "Chassis_Pz_Sfl_IVc_2"
-msgstr "Sfl.IVc加强型"
+msgstr "Sfl IVc加强型"
 
 msgid "Chassis_RhB_Waffentrager"
 msgstr "Rhm·B WT"
@@ -965,6 +974,12 @@ msgstr "FuG Spr.1"
 
 msgid "FuG_Spr.A"
 msgstr "FuG Spr.A"
+
+msgid "Fu_12"
+msgstr "Fu 12"
+
+msgid "Fu_7S"
+msgstr "Fu 7S"
 
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30M"
@@ -1985,6 +2000,25 @@ msgstr "3GST常规型主战"
 msgid "G174_Kpz3_GST_Turm_short_special"
 msgstr "坚固的正面装甲，自动液气悬挂装置"
 
+msgid "G177_E65_Zwilling"
+msgstr "E-65 Z"
+
+msgid "G177_E65_Zwilling_descr"
+msgstr ""
+"战事后期，D系坦克工业提出了名为\"E系列\"的概念。E-65便是该系列坦克的其中之一。这辆坦克采用了斯太尔公司研发的霍斯特曼式悬挂系统，驱动轮位于车体尾部。它与该系列其他坦克的主要区别在于:"
+" 采用在单一炮塔上安装两门火炮的设计。理论上，这辆坦克既能齐射，也能以较高的射速进行循环式射击。然而，E-65最终仅停留在整体概念阶段。"
+
+msgid "G177_E65_Zwilling_long_special"
+msgstr ""
+"E-65 "
+"Z是一辆D系VIII级重型坦克。该坦克配备8.8厘米双管火炮系统，具有较短的齐射准备时间，同时，瞄准时间在齐射准备期间也会得到增强。不过，射击后的装填停滞时间较长。该坦克拥有相对于重型坦克来说良好的机动性，以及不俗的防护能力。"
+
+msgid "G177_E65_Zwilling_short"
+msgstr "E-65 Z"
+
+msgid "G177_E65_Zwilling_short_special"
+msgstr "双管火炮系统，可靠的装甲"
+
 msgid "G178_KanJpz_2"
 msgstr "KJPZ 2"
 
@@ -2030,6 +2064,42 @@ msgstr "?empty?"
 
 msgid "G17_JagdPzIV_short"
 msgstr "IV号坦克歼击车"
+
+msgid "G184_Windhund"
+msgstr "风猎者"
+
+msgid "G184_Windhund_descr"
+msgstr ""
+"20世纪60年代中期，受V系Strv S的启发，D系军方决定基于自有技术研发同类坦克。1966年，克劳斯-"
+"玛菲与莱茵金属公司竞标无炮塔坦克设计方案，要求将火炮直接安装于车体。三年后，莱茵金属公司提交原型车，而克劳斯-"
+"玛菲公司则退出竞标，专注与\"豹\"I坦克的生产与升级。然而该新型坦克造价高昂，仅略低于因成本过高而被叫停研发计划的Kpz.70主战坦克。测试一直持续至1972年，之后该计划被终止。"
+
+msgid "G184_Windhund_long_special"
+msgstr ""
+"风猎者是一辆VIII级自行反坦克炮。其主要特点与V系自行反坦克炮研发分支类似: "
+"配备液气悬挂装置，拥有攻城模式。在行驶模式下，该坦克具有非常好的机动性，而在攻城模式下，其机动性也相当不俗，可在不切换至行驶模式的情况下进行小幅机动。同时，它还配备平均穿透力非常高的炮弹。"
+
+msgid "G184_Windhund_short_special"
+msgstr "液气悬挂装置，较高的平均穿透力"
+
+msgid "G186_Schwertwal"
+msgstr "\"虎鲸\""
+
+msgid "G186_Schwertwal_descr"
+msgstr ""
+"这辆坦克的设计目标是发扬\"虎式\"与\"虎王\"优势，并弥补其不足之处。主要改进体现在装甲上，采用铸造部件，简化了生产流程。此外还有一项关键优化，将发动机与传动装置整合进同一个舱室，优化了布局结构。底盘沿用交错式负重轮，以确保坦克平稳行驶。车体两侧则安装了来自R4M"
+" "
+"\"飓风\"火箭炮的固体燃料火箭发动机，用于在紧急情况下辅助脱困，增强动力。尽管采用了多项革新设计，但该坦克也存在明显短板，包括正面装甲倾斜角度不足，以及单位功率偏低，制约了其机动性与作战效能。"
+
+msgid "G186_Schwertwal_long_special"
+msgstr ""
+"\"虎鲸\"是一辆D系X级突击重型坦克。其15厘米火炮能造成高额的平均单发损伤，非常适合近战。该坦克的炮塔十分坚固，几乎没有弱点。得益于持续时间较长的火箭助推器，其基础机动性有所提高。"
+
+msgid "G186_Schwertwal_short"
+msgstr "\"虎鲸\""
+
+msgid "G186_Schwertwal_short_special"
+msgstr "火箭助推器，出色的炮塔装甲"
 
 msgid "G18_JagdPanther"
 msgstr "“猎豹”"
@@ -2597,6 +2667,9 @@ msgstr "MB 881 P"
 msgid "MTU803"
 msgstr "MTU803"
 
+msgid "MTU_MB_833_Ea_500"
+msgstr "MTU MB 833 Ea-500"
+
 msgid "MTU_MB_8V837D"
 msgstr "MTU MB 8V837"
 
@@ -3016,6 +3089,9 @@ msgstr ""
 
 msgid "Maybach_HL_235"
 msgstr "迈巴赫 HL 235"
+
+msgid "Maybach_HL_275"
+msgstr "迈巴赫 HL 275"
 
 msgid "Maybach_HL_45P"
 msgstr "迈巴赫 HL 45P"
@@ -3594,13 +3670,13 @@ msgid "Pz_IV_AusfH_short"
 msgstr "IV号H型"
 
 msgid "Pz_Sfl_IVb"
-msgstr "10.5 cm Sfi IVB"
+msgstr "10.5 cm Sfl IVb"
 
 msgid "Pz_Sfl_IVb_descr"
 msgstr "?empty?"
 
 msgid "Pz_Sfl_IVb_short"
-msgstr "10.5 cm Sfi IVB"
+msgstr "10.5 cm Sfl IVb"
 
 msgid "Pz_Sfl_IVc"
 msgstr "Sfl IVc"
@@ -3684,6 +3760,9 @@ msgstr "SEM 25E"
 msgid "SEM_25K"
 msgstr "SEM 25K"
 
+msgid "SEM_25W"
+msgstr "SEM 25W"
+
 msgid "SEM_25_D_funkgerat"
 msgstr "SEM 25D无线电台"
 
@@ -3698,6 +3777,9 @@ msgstr "SPA 19TBM42"
 
 msgid "Scania_Vabis1664"
 msgstr "斯堪尼亚-瓦比斯 1664"
+
+msgid "Simmering_Graz_Pauker_SLa_16"
+msgstr "SGP SLa 16"
 
 msgid "Skoda_T-11"
 msgstr "斯柯达 T-11"
@@ -4061,6 +4143,9 @@ msgstr "BT-突击炮"
 msgid "Turret_1_G174_Kpz3_GST_Turm"
 msgstr "3GST常规型主战"
 
+msgid "Turret_1_G177_E65_Zwilling"
+msgstr "E-65 Z"
+
 msgid "Turret_1_G178_KanJpz_2"
 msgstr "KJPZ 2"
 
@@ -4069,6 +4154,12 @@ msgstr "V–4/40"
 
 msgid "Turret_1_G17_JagdPzIV"
 msgstr "IV号坦克歼击车"
+
+msgid "Turret_1_G184_Windhund"
+msgstr "风猎者"
+
+msgid "Turret_1_G186_Schwertwal"
+msgstr "\"虎鲸\""
 
 msgid "Turret_1_G18_JagdPanther"
 msgstr "“猎豹”"
@@ -4182,7 +4273,7 @@ msgid "Turret_1_Pz_IV_AusfH"
 msgstr "IV号G型"
 
 msgid "Turret_1_Pz_Sfl_IVb"
-msgstr "Sfl. IVb"
+msgstr "Sfl IVb"
 
 msgid "Turret_1_Pz_Sfl_IVc"
 msgstr "Sfl IVc Flak 37"
@@ -4779,6 +4870,9 @@ msgstr "Pzgr 39 L"
 msgid "_105mm_PzGr39L1"
 msgstr "Pzgr 39 L1"
 
+msgid "_105mm_PzGr39LW"
+msgstr "Pzgr 39LW"
+
 msgid "_105mm_PzGr39L_n"
 msgstr "Pzgr 39 LV"
 
@@ -4815,6 +4909,9 @@ msgstr "Pzgr 39 E"
 msgid "_105mm_Pzgr_39_K_B"
 msgstr "Pzgr 39 K (B)"
 
+msgid "_105mm_Pzgr_40W"
+msgstr "Pzgr 40W"
+
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr 40/45"
 
@@ -4844,6 +4941,9 @@ msgstr "Sprgr L"
 
 msgid "_105mm_Sprg_L1"
 msgstr "Sprgr L1"
+
+msgid "_105mm_Sprg_LW"
+msgstr "Sprgr LW"
 
 msgid "_105mm_Sprg_L_n"
 msgstr "Sprgr LV"
@@ -4894,6 +4994,9 @@ msgstr "10WSc P"
 
 msgid "_10WSc_WT"
 msgstr "10WSc A"
+
+msgid "_10_5_cm_Bordkanone_L7W"
+msgstr "10.5cm L7W炮"
 
 msgid "_10_5_cm_Pak_L_52_JP"
 msgstr "10.5cm PaK 45 L/52 (JP)炮"
@@ -5231,6 +5334,9 @@ msgstr "15cm Gr 19 Stg FES"
 msgid "_150mm_Gr_HL"
 msgstr "Gr HL"
 
+msgid "_150mm_Gr_Hl_A"
+msgstr "Gr Hl/A"
+
 msgid "_150mm_KwK44_L38"
 msgstr "15cm KwK 44 L/38炮"
 
@@ -5248,6 +5354,9 @@ msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
 msgstr "Pzgr"
+
+msgid "_150mm_Pzgr_m_Hb"
+msgstr "Pzgr (m.Hb)"
 
 msgid "_150mm_Rohr_L29_5"
 msgstr "15cm Pak L/29.5炮"
@@ -5278,6 +5387,12 @@ msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
 msgstr "Sprgr"
+
+msgid "_150mm_Sprgr_Kz_m_Hb"
+msgstr "Sprgr Kz (m.Hb)"
+
+msgid "_150mm_TbtsK_C_36"
+msgstr "15cm C/36炮"
 
 msgid "_150mm_sFH13_L17"
 msgstr ""
@@ -6085,6 +6200,9 @@ msgstr "Pzgr 39/43 (JP)"
 msgid "_88mm_Pzgr_39_43_Typ_101"
 msgstr "Pzgr 39/43 101型"
 
+msgid "_88mm_Pzgr_39_43_ZK"
+msgstr "Pzgr 39/43 ZK"
+
 msgid "_88mm_Pzgr_39_Ausf_E"
 msgstr "Pzgr 39 E型"
 
@@ -6105,6 +6223,9 @@ msgstr "Pzgr 40/43 (JP)"
 
 msgid "_88mm_Pzgr_40_43_Typ_101"
 msgstr "Pzgr 40/43 101型"
+
+msgid "_88mm_Pzgr_40_43_ZK"
+msgstr "Pzgr 40/43 ZK"
 
 msgid "_88mm_Pzgr_40_Ausf_E"
 msgstr "Pzgr 40 E型"
@@ -6159,6 +6280,12 @@ msgstr "Sprgr 43 (JP)"
 
 msgid "_88mm_Sprgr_43_Typ_101"
 msgstr "Sprgr 43 101型"
+
+msgid "_88mm_Sprgr_43_ZK"
+msgstr "Sprgr 43 ZK"
+
+msgid "_88mm_Zwillingskanone_L_71"
+msgstr "8.8cm L/71双管炮"
 
 msgid "_8_8_cm_Pak_43_L_71_F"
 msgstr "8.8cm Pak 43 L/71 (F)炮"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G186_Schwertwal/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.041122 -0.586468 -4.518349</min>
+		<max>2.041114 0.808145 4.099473</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G186_Schwertwal/normal/lod2/Hull</nodefullVisual>
+</root>

@@ -176,6 +176,13 @@
 				</rule>
 			</directory>
 		</directory>
+		<directory>
+			<path>TestContent</path>
+			<rule>
+				<allowSplit>false</allowSplit>
+				<pattern>.*</pattern>
+			</rule>
+		</directory>
 	</directory>
 	<directory>
 		<path>example_ext</path>
@@ -448,6 +455,10 @@
 		<rule>
 			<allowSplit>false</allowSplit>
 			<pattern>.*_ID\.dds$</pattern>
+		</rule>
+		<rule>
+			<allowSplit>false</allowSplit>
+			<pattern>.*_T2DA\.dds$</pattern>
 		</rule>
 		<directory>
 			<path>american</path>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.778877 -0.000000 -2.977635</min>
+		<max>1.775534 3.017390 1.760409</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

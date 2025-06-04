@@ -387,14 +387,14 @@ msgstr "猎牛之歌"
 msgid "chapter/fullName/1114"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullName/161"
-msgstr "战地日志"
+msgid "chapter/fullName/171"
+msgstr "责无旁贷"
 
-msgid "chapter/fullName/162"
-msgstr "敢为人先"
+msgid "chapter/fullName/172"
+msgstr "双管齐下"
 
-msgid "chapter/fullName/163"
-msgstr "远离故乡"
+msgid "chapter/fullName/173"
+msgstr "一丝不苟"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
@@ -402,14 +402,14 @@ msgstr "猎牛之歌"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullNameUppercased/161"
-msgstr "战地日志"
+msgid "chapter/fullNameUppercased/171"
+msgstr "责无旁贷"
 
-msgid "chapter/fullNameUppercased/162"
-msgstr "敢为人先"
+msgid "chapter/fullNameUppercased/172"
+msgstr "双管齐下"
 
-msgid "chapter/fullNameUppercased/163"
-msgstr "远离故乡"
+msgid "chapter/fullNameUppercased/173"
+msgstr "一丝不苟"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -506,6 +506,9 @@ msgstr "可选择的系别蓝图碎片"
 
 msgid "chosenBonuses/bonus/brochure_gift"
 msgstr "可选择的培训手册"
+
+msgid "chosenBonuses/bonus/crewbook_gift"
+msgstr "自选训练手册"
 
 msgid "chosenBonuses/bonus/guide_gift"
 msgstr "可选择的培训指南"
@@ -752,34 +755,15 @@ msgstr "关于战斗通行证"
 msgid "intro/button"
 msgstr "收到！"
 
-msgid "intro/postProgression/text"
-msgstr ""
-"完成所有主要章节即可解锁精英征程，您将有机会从中获得战争债券和凭证奖励。精英征程采用循环进度系统，这意味着您可以无限次完成，直至战斗通行证赛季结束。"
-
-msgid "intro/postProgression/title"
-msgstr "精英征程"
-
 msgid "intro/seasonDescription/text"
-msgstr "在战斗通行证赛季XVI中，您将有机会获得专属3D风格，适用于本赛季的核心坦克: NC 70 B、试验型重战车、E-50M。"
+msgstr ""
+"在战斗通行证赛季XVII中，您将有机会获得专属3D风格，适用于本赛季的核心坦克: M48A5、111&nbsp;5A、FV230&nbsp;爆裂者。"
 
 msgid "intro/seasonDescription/title"
 msgstr "全新主题3D风格"
 
-msgid "intro/talers/text"
-msgstr ""
-"推进战斗通行证进度，获取硬币。硬币是一种全新游戏内货币，可用于在军械库内的战斗通行证装备库版块中兑换好物。您可在此兑换往期战斗通行证赛季的个性化元素和乘员、经济资源等。"
-
-msgid "intro/talers/title"
-msgstr "硬币"
-
-msgid "intro/tickets/text"
-msgstr "探索全新战斗通行证奖励——凭证！您可在精英征程中获取凭证，刮开凭证即可获得奖励。"
-
-msgid "intro/tickets/title"
-msgstr "凭证"
-
 msgid "intro/title"
-msgstr "赛季XVI: 勇者必胜"
+msgstr "赛季XVII: 蓄势待发"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -809,7 +793,7 @@ msgid "postProgressionView/footer/purchaseIP/button/text"
 msgstr "购买"
 
 msgid "postProgressionView/header/description/active"
-msgstr "通过在战斗中获取点数，即可获得战争债券和凭证奖励"
+msgstr "在战斗中获取点数，收获更多奖励"
 
 msgid "postProgressionView/header/description/onPause/highlight"
 msgstr "已暂停。"
@@ -1154,14 +1138,14 @@ msgstr "战斗通行证: \"%(chapter)s\"章节，阶段%(level)s"
 msgid "season/fullName/1002"
 msgstr "猎牛之歌"
 
-msgid "season/fullName/16"
-msgstr "勇者必胜"
+msgid "season/fullName/17"
+msgstr "蓄势待发"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "猎牛之歌"
 
-msgid "season/fullNameUppercased/16"
-msgstr "勇者必胜"
+msgid "season/fullNameUppercased/17"
+msgstr "蓄势待发"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "自选配件指令"
@@ -1171,6 +1155,9 @@ msgstr "可选择的蓝图碎片"
 
 msgid "selectBonus/brochure_gift"
 msgstr "可选择的培训手册"
+
+msgid "selectBonus/crewbook_gift"
+msgstr "自选训练手册"
 
 msgid "selectBonus/guide_gift"
 msgstr "可选择的培训指南"

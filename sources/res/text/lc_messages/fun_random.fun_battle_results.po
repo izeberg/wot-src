@@ -20,7 +20,7 @@ msgid "economy/double/credits"
 msgstr "《坦克世界》高级账号提供%(value)s%%的银币收益加成。"
 
 msgid "economy/double/free_xp"
-msgstr "《坦克世界》高级账号提供%(value)s%%的战斗经验收益加成。"
+msgstr "《坦克世界》高级账号提供%(value)s%%的全局经验收益加成。"
 
 msgid "economy/double/tmen_xp"
 msgstr "《坦克世界》高级账号提供%(value)s%%的乘员经验收益加成。"
@@ -86,7 +86,7 @@ msgid "efficiencyTooltip/header/spotted"
 msgstr "点亮"
 
 msgid "finish"
-msgstr "战斗结束:"
+msgstr "战斗结束"
 
 msgid "premiumBonus/DeprecatedResults"
 msgstr "必须应用于同一辆坦克所参加的最后一场战斗。"
@@ -101,10 +101,10 @@ msgid "premiumBonus/IsNotVictory"
 msgstr "加成只能应用于获胜的战斗。"
 
 msgid "premiumBonus/NoCrew"
-msgstr "无法应用可控加成: 找不到乘员。"
+msgstr "无法应用可控加成: 未找到乘员。"
 
 msgid "premiumBonus/NoVehicle"
-msgstr "无法应用可控加成: 找不到坦克。"
+msgstr "无法应用可控加成: 未找到坦克。"
 
 msgid "progress/title"
 msgstr "%(modeName)s: 特殊任务。阶段: %(done)s/%(total)s"
@@ -144,93 +144,6 @@ msgstr "Dev Team Score"
 
 msgid "sub_modes/development/team/singleTeam"
 msgstr "玩家"
-
-msgid "sub_modes/fall_tanks/efficiency/checkpointsPassed"
-msgstr "检查点"
-
-msgid "sub_modes/fall_tanks/efficiency/deathCount"
-msgstr "重生"
-
-msgid "sub_modes/fall_tanks/efficiency/empty/finishPosition"
-msgstr "—"
-
-msgid "sub_modes/fall_tanks/efficiency/empty/finishTime"
-msgstr "—"
-
-msgid "sub_modes/fall_tanks/efficiency/finishPosition"
-msgstr "名次"
-
-msgid "sub_modes/fall_tanks/efficiency/finishTime"
-msgstr "用时"
-
-msgid "sub_modes/fall_tanks/efficiency/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
-msgid "sub_modes/fall_tanks/efficiency/kills"
-msgstr "摧毁"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/checkpointsPassed"
-msgstr "通过的检查点数量"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
-msgstr "坦克被摧毁后重生的次数"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
-msgstr "摧毁的敌方坦克数量"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
-msgstr "竞赛排行榜上的最终名次"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishTime"
-msgstr "抵达终点所花费的时间"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/checkpointsPassed"
-msgstr "检查点"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/deathCount"
-msgstr "重生"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/destroyed"
-msgstr "摧毁"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishPosition"
-msgstr "名次"
-
-msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishTime"
-msgstr "用时"
-
-msgid "sub_modes/fall_tanks/navigation/battleResults"
-msgstr "个人战绩"
-
-msgid "sub_modes/fall_tanks/navigation/teamEfficiency"
-msgstr "参与者的结果"
-
-msgid "sub_modes/fall_tanks/team/empty/finishTime"
-msgstr "--:--.--"
-
-msgid "sub_modes/fall_tanks/team/finishPositionHeader/body"
-msgstr "按名次排序"
-
-msgid "sub_modes/fall_tanks/team/finishPositionHeader/header"
-msgstr "名次"
-
-msgid "sub_modes/fall_tanks/team/finishTimeHeader/body"
-msgstr "按用时排序"
-
-msgid "sub_modes/fall_tanks/team/finishTimeHeader/header"
-msgstr "用时"
-
-msgid "sub_modes/fall_tanks/team/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
-msgid "sub_modes/fall_tanks/team/singleTeam"
-msgstr "玩家"
-
-msgid "sub_modes/fall_tanks/team/tankHeader/body"
-msgstr "按坦克排序"
-
-msgid "sub_modes/fall_tanks/team/tankHeader/header"
-msgstr "坦克"
 
 msgid "sub_modes/undefined/navigation/battleResults"
 msgstr "个人战绩"

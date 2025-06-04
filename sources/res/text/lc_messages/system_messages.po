@@ -499,7 +499,7 @@ msgid "battleResults/sharing/success"
 msgstr "链接已复制到剪贴板。在聊天栏中按下 Ctrl+V 粘帖，或在游戏客户端外使用。"
 
 msgid "battleSession/kickedFromQueue"
-msgstr "查找不到当前坦克联队。请重新创建队伍。"
+msgstr "在当前特殊模式中未能匹配到对手。请考虑重组团队。"
 
 msgid "battleSession/memberJoined"
 msgstr "%s已经加入战队。"
@@ -2704,10 +2704,10 @@ msgid "prebattle/vehicleInvalid/willBeUnlockedInBattle"
 msgstr "所选坦克将在战斗中解锁。"
 
 msgid "prebattle_start_failed/kickedFromQueue/deafult"
-msgstr "当前队伍中找不到敌方。请考虑重新创建队伍。"
+msgstr "当前团队未能匹配到对手。请考虑重组团队。"
 
 msgid "prebattle_start_failed/kickedFromQueue/squad"
-msgstr "未能找到当前战队，考虑重新组建您的联队。"
+msgstr "当前小队未能匹配到对手。请考虑重组团队。"
 
 msgid "premium/buyingSuccess"
 msgstr "购买高级账号%(period)d天。花费%(money)s金币。"
@@ -3139,9 +3139,6 @@ msgstr "乘员调回失败，坦克被锁定。"
 msgid "return_crew/vehicle_need_repair"
 msgstr "乘员调回失败，请维修你的坦克。"
 
-msgid "roaming_not_allowed"
-msgstr "无法访问服务器。"
-
 msgid "rotation/lock"
 msgstr "下列群组已被锁定且不再适用于战斗:%(groupNum)s。"
 
@@ -3327,7 +3324,7 @@ msgid "squad/createError"
 msgstr "只有高级账号的用户才可以创建战队。"
 
 msgid "squad/kickedFromQueue"
-msgstr "未能找到当前战队，考虑重新组建您的联队。"
+msgstr "当前小队未能匹配到对手。请考虑重组团队。"
 
 msgid "squad/leaveDisabled"
 msgstr ""

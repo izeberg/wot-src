@@ -171,6 +171,10 @@
 						<link>8ee32a8c-d724-4714-9036-374260e26c52</link>
 					</property>
 					<property>
+						<name>ReceiverLink</name>
+						<link>8ee32a8c-d724-4714-9036-374260e26c52</link>
+					</property>
+					<property>
 						<name>LodDistance</name>
 						<value>70</value>
 					</property>
@@ -322,6 +326,22 @@
 						<value>2</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::FashionComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>8ee32a8c-d724-4714-9036-374260e26c52</UUID>
+				<flags>2</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::GpuDecalsReceiverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>8ee32a8c-d724-4714-9036-374260e26c52</UUID>
+				<flags>2</flags>
 			</component>
 		</ComponentPool>
 	</components>

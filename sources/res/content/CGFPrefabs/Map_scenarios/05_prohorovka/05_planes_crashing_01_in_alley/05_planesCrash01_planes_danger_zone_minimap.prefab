@@ -443,12 +443,15 @@
 									</property>
 									<property>
 										<name>start</name>
-										<value>6</value>
+										<value>
+											1.3
+											<!--BW_String-->
+										</value>
 									</property>
 									<property>
 										<name>end</name>
 										<value>
-											31.3
+											20.6
 											<!--BW_String-->
 										</value>
 									</property>
@@ -466,10 +469,7 @@
 									</property>
 									<property>
 										<name>start</name>
-										<value>
-											31.3
-											<!--BW_String-->
-										</value>
+										<value>20</value>
 									</property>
 									<property>
 										<name>end</name>
@@ -489,12 +489,15 @@
 									</property>
 									<property>
 										<name>start</name>
-										<value>6</value>
+										<value>
+											1.3
+											<!--BW_String-->
+										</value>
 									</property>
 									<property>
 										<name>end</name>
 										<value>
-											31.3
+											20.6
 											<!--BW_String-->
 										</value>
 									</property>
@@ -513,14 +516,14 @@
 									<property>
 										<name>start</name>
 										<value>
-											25.9
+											19.9
 											<!--BW_String-->
 										</value>
 									</property>
 									<property>
 										<name>end</name>
 										<value>
-											31.3
+											25.3
 											<!--BW_String-->
 										</value>
 									</property>
@@ -542,7 +545,7 @@
 									</property>
 									<property>
 										<name>end</name>
-										<value>26</value>
+										<value>20</value>
 									</property>
 									<property>
 										<name>parameters</name>
@@ -562,7 +565,7 @@
 									</property>
 									<property>
 										<name>end</name>
-										<value>28</value>
+										<value>20</value>
 									</property>
 									<property>
 										<name>parameters</name>
@@ -582,7 +585,7 @@
 									</property>
 									<property>
 										<name>end</name>
-										<value>28</value>
+										<value>20</value>
 									</property>
 									<property>
 										<name>parameters</name>

@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "common/boxCategory/lowerCase/dragonboat"
+msgstr "端午补给品"
+
+msgid "common/boxCategory/upperCase/dragonboat"
+msgstr "端午补给品"
+
+msgid "entryPoint/tooltip/description"
+msgstr ""
+"这些特殊补给品内含独特且珍贵的游戏内物品。\n"
+"您可在军械库或特惠商城中购买补给品礼包。"
+
+msgid "entryPoint/tooltip/title"
+msgstr "端午补给品礼包及其购买方式"
+
+msgid "entryPoint/tooltip/warningTitle"
+msgstr "端午补给品暂不可用"
+
+msgid "eventName/lowerCase"
+msgstr "驭龙乘风"
+
+msgid "eventName/upperCase"
+msgstr "驭龙乘风"
+
+msgid "infoPage/footer/description/compensation"
+msgstr "如果您的车库中已拥有补给品内容列表中的全部坦克，对于之后从端午补给品中获得的每辆坦克，您都将获得坦克当前价格所对应的金币补偿。"
+
+msgid "infoPage/footer/description/guaranteed"
+msgstr ""
+"每%(guaranteed0)s个端午补给品都保底内含1辆VIII–IX级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个端午补给品时，必定会掉落1辆您车库中尚未拥有的VIII–IX级坦克。补给品掉落坦克后，计数器将重置。"
+
+msgid "noBoxesView/description/"
+msgstr ""
+"您没有任何补给品。\n"
+"您可在军械库中购买补给品礼包。"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "已开启补给品: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "已开启剩余的补给品"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr "活动结束后，我们开启了您全部的补给品，所含奖励已添加至您的账号。"

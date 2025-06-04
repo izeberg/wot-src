@@ -2684,7 +2684,7 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/16BPContentPage/
+				/$LANGUAGE_CODE/promocontent/17BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
@@ -2694,7 +2694,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/16BPIntroVideo/
+				/$LANGUAGE_CODE/promocontent/17BPIntroVideo/
 				<name>introVideo</name>
 				<type>url</type>
 			</item>
@@ -2733,17 +2733,17 @@
 						<type>dict</type>
 						<value>
 							<item>
-								<name>161</name>
+								<name>171</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
 							<item>
-								<name>162</name>
+								<name>172</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
 							<item>
-								<name>163</name>
+								<name>173</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
@@ -2761,18 +2761,6 @@
 				<name>default</name>
 				<type>list</type>
 				<value>
-					<item>
-						<type>string</type>
-						<value>postProgression</value>
-					</item>
-					<item>
-						<type>string</type>
-						<value>tickets</value>
-					</item>
-					<item>
-						<type>string</type>
-						<value>talers</value>
-					</item>
 					<item>
 						<type>string</type>
 						<value>seasonDescription</value>
@@ -2835,29 +2823,36 @@
 				<type>dict</type>
 				<value>
 					<item>
-						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
-						<name>lootBoxSystem</name>
-						<type>url</type>
+						<name>introUrl</name>
+						<type>dict</type>
+						<value>
+							<item>
+								/$LANGUAGE_CODE/promocontent/lootBoxIntro/
+								<name>default</name>
+								<type>url</type>
+							</item>
+						</value>
 					</item>
 					<item>
-						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
-						<name>anniversaryCN</name>
-						<type>url</type>
-					</item>
-					<item>
-						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
-						<name>lunar</name>
-						<type>url</type>
-					</item>
-					<item>
-						/$LANGUAGE_CODE/promocontent/lootBoxIntro/
-						<name>cantone</name>
-						<type>url</type>
-					</item>
-					<item>
-						/$LANGUAGE_CODE/promocontent/raumfalte-last-stand-may-2025-Video/
-						<name>pandora</name>
-						<type>url</type>
+						<name>isShowIntro</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>default</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								<name>battlePass</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>dragonboat</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+						</value>
 					</item>
 				</value>
 			</item>
@@ -2876,6 +2871,11 @@
 							</item>
 							<item>
 								<name>battlePass</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>dragonboat</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
@@ -2904,22 +2904,6 @@
 						</value>
 					</item>
 					<item>
-						<name>openExternalForCN</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>default</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								<name>battlePass</name>
-								<type>bool</type>
-								<value>False</value>
-							</item>
-						</value>
-					</item>
-					<item>
 						<name>isShopVisible</name>
 						<type>dict</type>
 						<value>
@@ -2944,7 +2928,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/raumfalte-last-stand-2025-bundles/
+				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/dragonboat-boxes-2025/
 				<name>default</name>
 				<type>url</type>
 			</item>

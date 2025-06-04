@@ -376,168 +376,165 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/capsUserName"
-msgstr "霓虹竞速"
+msgid "modes/equalization/capsUserName"
+msgstr "并驾齐驱！"
 
-msgid "modes/fall_tanks/detailedUserName"
+msgid "modes/equalization/detailedUserName"
 msgstr "%(modeName)s"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/body"
+msgid "modes/equalization/entryPoint/performance/tooltip/highRisk/body"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/highRisk/header"
+msgid "modes/equalization/entryPoint/performance/tooltip/highRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/body"
+msgid "modes/equalization/entryPoint/performance/tooltip/mediumRisk/body"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/entryPoint/performance/tooltip/mediumRisk/header"
+msgid "modes/equalization/entryPoint/performance/tooltip/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/lootbox/fep_epic"
+msgid "modes/equalization/lootbox/fep_epic"
 msgstr "随机史诗奖励"
 
-msgid "modes/fall_tanks/lootbox/fep_legendary"
+msgid "modes/equalization/lootbox/fep_legendary"
 msgstr "随机传说奖励"
 
-msgid "modes/fall_tanks/lootbox/fep_ordinary"
+msgid "modes/equalization/lootbox/fep_ordinary"
 msgstr "随机普通奖励"
 
-msgid "modes/fall_tanks/lootbox/fep_rare"
+msgid "modes/equalization/lootbox/fep_rare"
 msgstr "随机稀有奖励"
 
-msgid "modes/fall_tanks/lootbox/fep_unusual"
+msgid "modes/equalization/lootbox/fep_unusual"
 msgstr "随机罕见奖励"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
-msgstr "霓虹竞速任务 – 阶段: %(done)s{par_Open}/%(total)s{par_Close}"
+msgid "modes/equalization/metaProgressionTooltip/header/active"
+msgstr "\"并驾齐驱！\"任务 – 阶段: %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgid "modes/equalization/metaProgressionTooltip/reward/tip"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
-msgstr "霓虹竞速任务"
+msgid "modes/equalization/metaProgressionTooltip/subheader"
+msgstr "\"并驾齐驱！\"任务"
 
-msgid "modes/fall_tanks/modeSubSelector/progression/info"
+msgid "modes/equalization/modeSubSelector/progression/info"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/modeSubSelector/progression/timer"
+msgid "modes/equalization/modeSubSelector/progression/timer"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/battleCondition"
-msgstr "自由竞赛"
+msgid "modes/equalization/mode_selector/battleCondition"
+msgstr "全部等级的坦克同台竞技"
 
-msgid "modes/fall_tanks/mode_selector/description"
+msgid "modes/equalization/mode_selector/description"
 msgstr "具有非常规规则的试验性战斗"
 
-msgid "modes/fall_tanks/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
-
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
+msgid "modes/equalization/mode_selector/performance/highRisk/description"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgid "modes/equalization/mode_selector/performance/highRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgid "modes/equalization/mode_selector/performance/highRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/description"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgid "modes/equalization/mode_selector/performance/mediumRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "modes/fall_tanks/mode_selector/progression/resettable"
-msgstr "距新的霓虹竞速任务开放还有:"
+msgid "modes/equalization/mode_selector/progression/resettable"
+msgstr "距新的\"并驾齐驱！\"任务开放还有:"
 
-msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
+msgid "modes/equalization/notification/finishSubModes/withProgression"
 msgstr "%(subModeName)s模式已结束。进度已重置。"
 
-msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
+msgid "modes/equalization/notification/finishSubModes/withoutProgression"
 msgstr "%(subModeName)s模式已结束。"
 
-msgid "modes/fall_tanks/notification/newSubModes/withProgression"
+msgid "modes/equalization/notification/newSubModes/withProgression"
 msgstr "新的奖励和%(subModeName)s模式已开放。"
 
-msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
-msgstr "全新模式已开放: %(subModeName)s。"
+msgid "modes/equalization/notification/newSubModes/withoutProgression"
+msgstr "全新模式已开放: %(subModeName)s"
 
-msgid "modes/fall_tanks/notification/switchOffSubModes"
+msgid "modes/equalization/notification/switchOffSubModes"
 msgstr "由于系统维护，%(subModeName)s模式暂不开放。"
 
-msgid "modes/fall_tanks/notification/switchOnSubModes"
+msgid "modes/equalization/notification/switchOnSubModes"
 msgstr "%(subModeName)s模式已再次开放。"
 
-msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
+msgid "modes/equalization/progression/cardsFan/listOfRandomRewards"
 msgstr "奖励列表"
 
-msgid "modes/fall_tanks/progression/complete/congratulations"
+msgid "modes/equalization/progression/complete/congratulations"
 msgstr "恭喜！"
 
-msgid "modes/fall_tanks/progression/complete/title"
+msgid "modes/equalization/progression/complete/title"
 msgstr "您已完成主要进度"
 
-msgid "modes/fall_tanks/progression/infinite/congratulations"
+msgid "modes/equalization/progression/infinite/congratulations"
 msgstr "恭喜！"
 
-msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgid "modes/equalization/progression/infinite/infinityStep"
 msgstr "可重复完成的阶段"
 
-msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgid "modes/equalization/progression/infinite/mainProgressionFinished"
 msgstr "您已完成主要进度"
 
-msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgid "modes/equalization/progression/questsList/quest/infinityStageProgress"
 msgstr "尽可能获取更多奖励: %(currentPoints)/%(infinitySign)s"
 
-msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
+msgid "modes/equalization/progression/questsList/totalPointsEarned"
 msgstr "获得点数: %(progressionSteps)s"
 
 msgid ""
-"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
+"modes/equalization/progression/questsList/totalPointsEarnedStandAloneTitle"
 msgstr "获得点数:"
 
-msgid "modes/fall_tanks/progression/title"
-msgstr "霓虹竞速任务"
+msgid "modes/equalization/progression/title"
+msgstr "\"并驾齐驱！\"任务"
 
-msgid "modes/fall_tanks/rewardsView/header"
+msgid "modes/equalization/rewardsView/header"
 msgstr "已获得传说奖励"
 
-msgid "modes/fall_tanks/scheduler/notification/available"
-msgstr "%(subModeName)s战斗已再次开放。"
+msgid "modes/equalization/scheduler/notification/available"
+msgstr "\"%(subModeName)s\"战斗已再次开放。"
 
-msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgid "modes/equalization/scheduler/notification/available/title"
 msgstr "休战"
 
-msgid "modes/fall_tanks/scheduler/notification/modeEnded"
-msgstr "%(subModeName)s战斗已结束"
+msgid "modes/equalization/scheduler/notification/modeEnded"
+msgstr "\"%(subModeName)s\"战斗已结束"
 
-msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgid "modes/equalization/scheduler/notification/modeEnded/title"
 msgstr "休战"
 
-msgid "modes/fall_tanks/scheduler/notification/primeTime"
-msgstr "目前处于休战期。%(subModeName)s战斗暂不开放。"
+msgid "modes/equalization/scheduler/notification/primeTime"
+msgstr "目前处于休战期。\"%(subModeName)s\"战斗暂不开放。"
 
-msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgid "modes/equalization/scheduler/notification/primeTime/title"
 msgstr "休战"
 
-msgid "modes/fall_tanks/tierList/description"
+msgid "modes/equalization/tierList/description"
 msgstr "下方列表展示了您有机会获得的随机奖励，每个物品都具有特定的掉落率。"
 
-msgid "modes/fall_tanks/tierList/title"
+msgid "modes/equalization/tierList/title"
 msgstr "奖励列表"
 
-msgid "modes/fall_tanks/tooltip/filter/body"
-msgstr "显示/隐藏符合霓虹竞速模式条件的坦克。"
+msgid "modes/equalization/tooltip/filter/body"
+msgstr "显示/隐藏符合\"并驾齐驱！\"模式条件的坦克。"
 
-msgid "modes/fall_tanks/tooltip/filter/header"
-msgstr "霓虹竞速坦克"
+msgid "modes/equalization/tooltip/filter/header"
+msgstr "\"并驾齐驱！\"坦克"
 
-msgid "modes/fall_tanks/userName"
-msgstr "霓虹竞速"
+msgid "modes/equalization/userName"
+msgstr "并驾齐驱！"
 
 msgid "modes/undefined/capsUserName"
 msgstr "街机模式"
@@ -1006,59 +1003,59 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/capsUserName"
-msgstr "霓虹竞速"
+msgid "sub_modes/equalization/capsUserName"
+msgstr "并驾齐驱！"
 
-msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
-msgstr "争分夺秒，冲向终点，同时阻止他人抵达终点！使用氮气加速和护盾能力来制造更多混乱！"
+msgid "sub_modes/equalization/detailsHelp/page1/description"
+msgstr "每个等级都具有不同的生命值、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！"
 
-msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
-msgstr "小心: 移动平台"
+msgid "sub_modes/equalization/detailsHelp/page1/title"
+msgstr "并驾齐驱！"
 
-msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgid "sub_modes/equalization/detailsHelpHint/description"
 msgstr "即可查看模式特点"
 
-msgid "sub_modes/fall_tanks/detailsHelpHint/press"
+msgid "sub_modes/equalization/detailsHelpHint/press"
 msgstr "按下"
 
-msgid "sub_modes/fall_tanks/detailsHelpTitle"
-msgstr "霓虹竞速"
+msgid "sub_modes/equalization/detailsHelpTitle"
+msgstr "并驾齐驱！"
 
-msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
-msgstr "自由竞赛"
+msgid "sub_modes/equalization/subModeCard/battleCondition"
+msgstr "15对15"
 
-msgid "sub_modes/fall_tanks/subModeCard/description"
-msgstr "具有非常规规则的试验性战斗"
+msgid "sub_modes/equalization/subModeCard/description"
+msgstr "全部等级的坦克同台竞技"
 
-msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgid "sub_modes/equalization/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/description"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/header"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgid "sub_modes/equalization/subModeCard/performance/highRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/description"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/header"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgid "sub_modes/equalization/subModeCard/performance/mediumRisk/headerIcon"
 msgstr "?empty?"
 
-msgid "sub_modes/fall_tanks/subModeCard/title"
-msgstr "霓虹竞速"
+msgid "sub_modes/equalization/subModeCard/title"
+msgstr "并驾齐驱！"
 
-msgid "sub_modes/fall_tanks/userName"
-msgstr "霓虹竞速"
+msgid "sub_modes/equalization/userName"
+msgstr "并驾齐驱！"
 
-msgid "sub_modes/fall_tanks/userName/quoted"
-msgstr "\"霓虹竞速\""
+msgid "sub_modes/equalization/userName/quoted"
+msgstr "并驾齐驱！"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

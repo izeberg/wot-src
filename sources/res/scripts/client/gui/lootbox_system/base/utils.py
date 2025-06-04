@@ -55,9 +55,12 @@ def getPreferredBox(eventName, category='', lootBoxes=None):
     return first(lootBoxes.getActiveBoxes(eventName, lambda b: b.getInventoryCount())) or first(lootBoxes.getActiveBoxes(eventName))
 
 
+def getSystemSettings(setting):
+    return GUI_SETTINGS.lootboxSystem.get(setting) or {}
+
+
 def getInfoPageSettings(eventName, setting):
-    pageSettings = GUI_SETTINGS.lootboxSystem.get('infoPage') or {}
-    settings = pageSettings.get(setting) or {}
+    settings = getSystemSettings('infoPage').get(setting) or {}
     eventSetting = settings.get(eventName)
     if eventSetting is not None:
         return eventSetting
@@ -65,40 +68,48 @@ def getInfoPageSettings(eventName, setting):
         return settings.get('default')
 
 
+def getIsShowIntro(eventName):
+    visibilitySettings = getSystemSettings('intro').get('isShowIntro') or {}
+    if visibilitySettings.get(eventName) is None:
+        return visibilitySettings.get('default', True)
+    else:
+        return visibilitySettings.get(eventName)
+
+
 def getIntroVideoUrl(eventName):
-    urlPart = GUI_SETTINGS.lootboxSystem.get('intro').get(eventName, '')
+    urlSettings = getSystemSettings('intro').get('introUrl') or {}
+    urlPart = urlSettings.get(eventName) if urlSettings.get(eventName) is not None else urlSettings.get('default', '')
     if urlPart:
         return ('').join((GUI_SETTINGS.baseUrls['webBridgeRootURL'], urlPart))
-    return ''
+    else:
+        return ''
 
 
 def getIsStartFinishNotificationsVisible(eventName):
-    visibilitySettings = GUI_SETTINGS.lootboxSystem.get('isStartFinishNotificationsVisible') or {}
-    isVisible = visibilitySettings.get(eventName)
-    if isVisible is not None:
-        return isVisible
+    notificationSettings = getSystemSettings('isStartFinishNotificationsVisible') or {}
+    if notificationSettings.get(eventName) is None:
+        return notificationSettings.get('default', True)
     else:
-        return visibilitySettings.get('default', True)
+        return notificationSettings.get(eventName)
 
 
 def getOpeningOptions(eventName):
-    openingOptionsSettings = GUI_SETTINGS.lootboxSystem.get('openingOptions') or {}
-    options = openingOptionsSettings.get(eventName)
-    return tuple(options if options is not None else openingOptionsSettings.get('default', [1, 5]))
+    options = getSystemSettings('openingOptions').get(eventName)
+    return tuple(options if options is not None else getSystemSettings('openingOptions').get('default', [1, 5]))
 
 
 def getShopOverlayUrl(eventName):
-    urlPart = GUI_SETTINGS.lootboxSystem.get('shop').get('overlayUrl').get(eventName)
-    if urlPart is None:
-        urlPart = GUI_SETTINGS.lootboxSystem.get('shop').get('overlayUrl').get('default', '')
+    urls = getSystemSettings('shop').get('overlayUrl') or {}
+    urlPart = urls.get(eventName) if urls.get(eventName) is not None else urls.get('default', '')
     return getShopURL() + urlPart
 
 
 def isShopVisible(eventName):
-    shopVisibility = GUI_SETTINGS.lootboxSystem.get('shop').get('isShopVisible').get(eventName)
-    if shopVisibility is None:
-        shopVisibility = GUI_SETTINGS.lootboxSystem.get('shop').get('isShopVisible').get('default')
-    return shopVisibility
+    shopVisibility = getSystemSettings('shop').get('isShopVisible') or {}
+    if shopVisibility.get(eventName) is None:
+        return shopVisibility.get('default', True)
+    else:
+        return shopVisibility.get(eventName)
 
 
 def isCountryForShowingExternalLootList():
