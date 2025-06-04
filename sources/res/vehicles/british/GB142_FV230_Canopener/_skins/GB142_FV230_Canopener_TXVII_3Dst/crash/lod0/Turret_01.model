@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.615122 0.031489 -2.977043</min>
+		<max>1.438167 3.018971 1.760999</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G186_Schwertwal/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.803986 -0.021970 -2.983217</min>
+		<max>1.847700 1.387456 2.201300</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G186_Schwertwal/crash/lod3/Turret_01</nodefullVisual>
+</root>

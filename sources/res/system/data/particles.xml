@@ -72,19 +72,11 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/140_fall_tanks_eff.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/140_fall_tanks_eff.dds</texture>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
@@ -279,14 +271,6 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_death.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_exhaust.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_end.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_main.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_start.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_big.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_med.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/fall_tanks/140_fall_tanks_shot_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -2827,19 +2811,11 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/140_fall_tanks_eff.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/140_fall_tanks_eff.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
@@ -3046,14 +3022,6 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_death.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_exhaust.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_end.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_main.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_ap_start.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_big.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_med.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fall_tanks/140_fall_tanks_shot_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

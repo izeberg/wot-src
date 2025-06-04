@@ -8,6 +8,42 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>hd_env_EU_491_HugoBridgeRuined_02</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_wall1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -23,7 +59,7 @@
 					<materialKind>112</materialKind>
 					<collisionFlags>144</collisionFlags>
 				</material>
-				<groupOrigin>-40.736389 7.182097 0.192667</groupOrigin>
+				<groupOrigin>-40.668541 7.182097 0.192667</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -469,6 +505,6 @@
 		<max>1.062892 20.285496 16.638758</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1039018</geometrySize>
+	<geometrySize>1040730</geometrySize>
 	<minUVDensity>0.000146</minUVDensity>
 </root>

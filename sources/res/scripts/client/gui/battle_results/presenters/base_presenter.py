@@ -1,5 +1,4 @@
 import logging, typing
-from gui.battle_results import stored_sorting
 from gui.battle_results.stats_ctrl import IBattleResultStatsCtrl, BattleResults
 from gui.impl.backport import createContextMenuData
 from soft_exception import SoftException
@@ -15,7 +14,6 @@ class BaseStatsPresenter(IBattleResultStatsCtrl):
     __slots__ = ('_battleResults', '_updateCommandsMap')
     _TOOLTIPS_PACKERS = {}
     _CONTEXT_MENU_TYPE = None
-    _ARENA_BONUS_TYPE = None
 
     def __init__(self, _):
         self._battleResults = None
@@ -35,9 +33,6 @@ class BaseStatsPresenter(IBattleResultStatsCtrl):
             return createContextMenuData(self._CONTEXT_MENU_TYPE, self._getContextMenuArgs(databaseID, vehicleCD))
         else:
             return
-
-    def saveStatsSorting(self, columnType, sortDirection):
-        stored_sorting.writeStatsSorting(self._ARENA_BONUS_TYPE, columnType, sortDirection)
 
     def setResults(self, results, reusable):
         self._battleResults = BattleResults(results, reusable)

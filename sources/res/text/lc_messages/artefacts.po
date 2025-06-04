@@ -281,7 +281,7 @@ msgstr "Automatic fire extinguishing"
 
 msgid "berserker/battleDescr"
 msgstr ""
-"Increases penetration and fire rate by %(gunPiercing)s times, while also increasing gun laying efficiency and stabilization by %(gunAimingTime)s, but takes away %(healthDebuff)s of your vehicle's total HP within its duration of %(duration)s s.\n"
+"Increases penetration and fire rate by %(gunPiercing)s times, while also increasing gun laying efficiency and stabilization by %(gunAimingTime)s, but takes away %(healthDebuff)s of your vehicle's total HP within its %(duration)s s duration.\n"
 "\n"
 "*Damage caused by the Berserker ability cannot destroy your vehicle."
 
@@ -293,7 +293,7 @@ msgstr ""
 
 msgid "berserker/longDescr"
 msgstr ""
-"Increases penetration and fire rate {green_Open}by %(gunPiercing)s times{green_Close}, while also increasing gun laying efficiency and stabilization {green_Open}by %(gunAimingTime)s{green_Close}, but takes away {red_Open}%(healthDebuff)s{red_Close} of your vehicle's total HP within its {whiteSpanish_Open}of %(duration)s s{whiteSpanish_Close} duration.\n"
+"Increases penetration and fire rate {green_Open}by %(gunPiercing)s times{green_Close}, while also increasing gun laying efficiency and stabilization {green_Open}by %(gunAimingTime)s{green_Close}, but takes away {red_Open}%(healthDebuff)s{red_Close} of your vehicle's total HP within its {whiteSpanish_Open}%(duration)s s{whiteSpanish_Close} duration.\n"
 "\n"
 "{parSecondary_Open}*Damage caused by the Berserker ability cannot destroy your vehicle.{parSecondary_Close}"
 
@@ -302,7 +302,7 @@ msgstr "Berserker"
 
 msgid "berserker/shortDescr"
 msgstr ""
-"Increases penetration and fire rate {green_Open}by %(gunPiercing)s times{green_Close}, while also increasing gun laying efficiency and stabilization {green_Open}by %(gunAimingTime)s{green_Close}, but takes away {red_Open}%(healthDebuff)s{red_Close} of your vehicle's total HP within its {whiteSpanish_Open}of %(duration)s s{whiteSpanish_Close} duration.\n"
+"Increases penetration and fire rate {green_Open}by %(gunPiercing)s times{green_Close}, while also increasing gun laying efficiency and stabilization {green_Open}by %(gunAimingTime)s{green_Close}, but takes away {red_Open}%(healthDebuff)s{red_Close} of your vehicle's total HP within its {whiteSpanish_Open}%(duration)s s{whiteSpanish_Close} duration.\n"
 "\n"
 "{parSecondary_Open}*Damage caused by the Berserker ability cannot destroy your vehicle.{parSecondary_Close}"
 

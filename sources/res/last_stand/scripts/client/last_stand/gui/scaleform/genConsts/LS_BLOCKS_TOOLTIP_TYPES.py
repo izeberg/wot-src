@@ -1,4 +1,0 @@
-
-
-class LS_BLOCKS_TOOLTIP_TYPES(object):
-    LS_TOOLTIP_TEXT_PARAMETER_WITH_ICON_BLOCK_LINKAGE = 'LSTextParameterWithIconBlockUI'

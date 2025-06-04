@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.895645 -0.578235 -3.266229</min>
+		<max>1.947199 1.707042 3.202866</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G184_Windhund/crash/lod4/Hull</nodefullVisual>
+</root>

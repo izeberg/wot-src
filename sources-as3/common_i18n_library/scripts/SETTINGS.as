@@ -805,8 +805,6 @@ package
       
       public static const GAMEPLAY_DEVMAPS:String = "#settings:gameplay/devMaps";
       
-      public static const GAMEPLAY_ONLY10MODE:String = "#settings:gameplay/only10Mode";
-      
       public static const GAMEPLAY_EPIC_ENCOUNTER:String = "#settings:gameplay/epic_encounter";
       
       public static const GAMEPLAY_NATIONS:String = "#settings:gameplay/nations";

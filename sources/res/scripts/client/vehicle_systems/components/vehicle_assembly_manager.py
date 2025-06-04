@@ -1,5 +1,5 @@
 from collections import namedtuple
-import typing, logging, enum, CGF, GenericComponents, Vehicular, DataLinks, math_utils, Compound, BattleReplay
+import typing, logging, enum, CGF, GenericComponents, GpuDecals, Vehicular, DataLinks, math_utils, Compound, BattleReplay
 from cgf_script.managers_registrator import autoregister, onAddedQuery
 from constants import IS_UE_EDITOR
 from helpers import isPlayerAccount, isPlayerAvatar
@@ -185,6 +185,34 @@ class SwingingAnimationManager(Assembler):
         return swingingAnimator
 
 
+class DecalsAssembler(Assembler):
+    _SLOTS = (
+     veh_comp.VehicleSlots.CHASSIS.value,
+     veh_comp.VehicleSlots.HULL.value,
+     veh_comp.VehicleSlots.TURRET.value,
+     veh_comp.VehicleSlots.GUN.value)
+
+    def checkSlotMarker(self, slotMarker):
+        return slotMarker.slotName in self._SLOTS
+
+    def assemble(self, gameObject, slotMarker):
+        appearance = veh_comp.findParentVehicleAppearance(gameObject)
+        if appearance is not None:
+            if hasattr(appearance, 'damageState') and appearance.damageState.isCurrentModelDamaged:
+                return
+            partIdx = TankPartNames.getIdx(slotMarker.slotName)
+            if partIdx is None:
+                return _logger.error('Failed to setup GPU Decals receiver for game object: %s. Unknown tanks part: %s', gameObject.name, slotMarker.slotName)
+            fashion = getattr(appearance.fashions, slotMarker.slotName, None)
+            if fashion is None:
+                return _logger.error('Failed to setup GPU Decals receiver for game object: %s. Missing fashion for part: %s', gameObject.name, slotMarker.slotName)
+            if not gameObject.findComponentByType(GenericComponents.FashionComponent):
+                gameObject.createComponent(GenericComponents.FashionComponent, fashion, partIdx)
+            if not gameObject.findComponentByType(GpuDecals.GpuDecalsReceiverComponent):
+                gameObject.createComponent(GpuDecals.GpuDecalsReceiverComponent)
+        return
+
+
 _AssemblerData = namedtuple('_AssemblerData', ('typeFlags', 'assembler'))
 
 @autoregister(presentInAllWorlds=True, domain=CGF.DomainOption.DomainClient | CGF.DomainOption.DomainEditor)
@@ -193,7 +221,8 @@ class VehicleAssemblyManager(CGF.ComponentManager):
      _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, TurretGunRotationAssembler),
      _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, RecoilAssembler),
      _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, MultiGunRecoilAssembler),
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, SwingingAnimationManager))
+     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, SwingingAnimationManager),
+     _AssemblerData(AssemblyType.BATTLE | AssemblyType.HANGAR | AssemblyType.EDITOR, DecalsAssembler))
 
     def __init__(self):
         super(VehicleAssemblyManager, self).__init__()

@@ -1,5 +1,5 @@
 from visual_script.block import Block, InitParam, buildStrKeysValue, Meta
-from visual_script.misc import errorVScript, EDITOR_TYPE
+from visual_script.misc import errorVScript, EDITOR_TYPE, BLOCK_MODE
 from visual_script.slot_types import SLOT_TYPE
 
 class BitMaskMeta(Meta):
@@ -62,6 +62,10 @@ class BitwiseNOT(Block, BitMaskMeta):
     def _getValue(self):
         self._res.setValue(~self._a.getValue())
 
+    @classmethod
+    def mode(cls):
+        return Block.mode() | BLOCK_MODE.CAN_BE_CONST_EXPR
+
 
 class BitwiseOperationBase(Block, BitMaskMeta):
 
@@ -90,6 +94,10 @@ class BitwiseOperationBase(Block, BitMaskMeta):
 
     def _getValue(self):
         raise NotImplementedError
+
+    @classmethod
+    def mode(cls):
+        return Block.mode() | BLOCK_MODE.CAN_BE_CONST_EXPR
 
 
 class BitwiseAND(BitwiseOperationBase):

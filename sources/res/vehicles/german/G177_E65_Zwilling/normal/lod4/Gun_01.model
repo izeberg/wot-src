@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.686950 -0.279550 0.117071</min>
+		<max>0.431672 0.368207 5.202550</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G177_E65_Zwilling/normal/lod4/Gun_01</nodefullVisual>
+</root>

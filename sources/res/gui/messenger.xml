@@ -935,7 +935,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<durationOfPremiumAccountExpires>
 			<type>yellow</type>
 			<icon>WarningIcon</icon>
-			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/durationOfPremiumAccounExpires)&lt;/font&gt;</message>
+			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/durationOfPremiumAccountExpires)&lt;/font&gt;</message>
 		</durationOfPremiumAccountExpires>
 		<premiumChanged>
 			<type>lightGrey</type>

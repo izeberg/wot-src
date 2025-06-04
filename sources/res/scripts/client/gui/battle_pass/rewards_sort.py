@@ -26,6 +26,7 @@ class _RewardType(_Enum):
     GUIDE = 'guide'
     MODERNIZED_DEVICE = 'modernized_device'
     TROPHY = 'trophy'
+    CREW_BOOK = 'crewbook'
 
 
 @unique
@@ -64,6 +65,7 @@ _REWARDS_TYPES_ORDER = (
  _RewardType.DEVICE,
  _RewardType.BLUEPRINT,
  _RewardType.BATTLE_BOOSTER,
+ _RewardType.CREW_BOOK,
  _RewardType.GUIDE,
  _RewardType.BROCHURE)
 _REWARDS_ORDER = {_RewardType.TROPHY: (
@@ -146,6 +148,7 @@ def _defaultComparator(first, second):
 
 _REWARDS_COMPARATORS = {_RewardType.TROPHY: partial(_compareRewardsByType, _RewardType.TROPHY), 
    _RewardType.DEVICE: partial(_compareRewardsByType, _RewardType.DEVICE), 
+   _RewardType.CREW_BOOK: _compareRewardsByNation, 
    _RewardType.GUIDE: _compareRewardsByNation, 
    _RewardType.BROCHURE: _compareRewardsByNation, 
    _RewardType.BLUEPRINT: _compareRewardsByNation, 

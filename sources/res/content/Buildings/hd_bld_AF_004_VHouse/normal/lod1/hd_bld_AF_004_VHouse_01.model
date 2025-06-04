@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_AF_004_VHouse/normal/lod2/hd_bld_AF_004_VHouse_01</parent>
-	<extent>
-		165.0
-		<!--BW_String-->
-	</extent>
+	<extent>165.000000</extent>
 	<visibilityBox>
 		<min>-8.839915 -0.616195 -9.761640</min>
 		<max>7.477914 7.279504 4.335612</max>

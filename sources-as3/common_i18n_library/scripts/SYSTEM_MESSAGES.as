@@ -279,8 +279,6 @@ package
       
       public static const CLIENT_INACTIVE:String = "#system_messages:client_inactive";
       
-      public static const ROAMING_NOT_ALLOWED:String = "#system_messages:roaming_not_allowed";
-      
       public static const STEAM_LOGIN_NOT_ALLOWED:String = "#system_messages:steam_login_not_allowed";
       
       public static const SERVER_SHUT_DOWN:String = "#system_messages:server_shut_down";

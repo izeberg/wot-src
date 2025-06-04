@@ -65,8 +65,6 @@ package net.wg.gui.lobby.settings
       
       public var gameplay_epicStandardCheckbox:CheckBox = null;
       
-      public var gameplay_only10ModeCheckbox:CheckBox = null;
-      
       public var gameplay_devMapsCheckbox:CheckBox = null;
       
       public var newbiePrebattleHintsCheckbox:CheckBox = null;
@@ -231,8 +229,6 @@ package net.wg.gui.lobby.settings
       
       private var _initYAnonymizerCheckbox:int;
       
-      private var _initYGameplayOnly10ModeCheckbox:int;
-      
       public function GameSettingsContent()
       {
          super();
@@ -295,9 +291,6 @@ package net.wg.gui.lobby.settings
          this.gameplay_epicStandardCheckbox.label = SETTINGS.GAMEPLAY_EPIC_STANDARD;
          this.gameplay_epicStandardCheckbox.toolTip = TOOLTIPS.EPICRANDOMSTANDARDNOTIFICATION;
          this.gameplay_epicStandardCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
-         this.gameplay_only10ModeCheckbox.label = SETTINGS.GAMEPLAY_ONLY10MODE;
-         this.gameplay_only10ModeCheckbox.toolTip = TOOLTIPS.ONLY10MODE;
-         this.gameplay_only10ModeCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.newbiePrebattleHintsCheckbox.label = SETTINGS.GAME_NEWBIEPREBATTLEHINTS;
          this.newbiePrebattleHintsCheckbox.toolTip = TOOLTIPS.NEWBIEPREBATTLEHINTS;
          this.newbiePrebattleHintsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
@@ -464,8 +457,6 @@ package net.wg.gui.lobby.settings
          this.gameplay_epicDominationCheckbox = null;
          this.gameplay_epicStandardCheckbox.dispose();
          this.gameplay_epicStandardCheckbox = null;
-         this.gameplay_only10ModeCheckbox.dispose();
-         this.gameplay_only10ModeCheckbox = null;
          this.gameplay_devMapsCheckbox.dispose();
          this.gameplay_devMapsCheckbox = null;
          this.newbiePrebattleHintsCheckbox.dispose();
@@ -588,33 +579,27 @@ package net.wg.gui.lobby.settings
          super.onDispose();
       }
       
-      public function updateDependentVisibleControls(param1:Boolean, param2:Boolean, param3:Number) : void
+      public function updateDependentVisibleControls(param1:Boolean, param2:Number) : void
       {
-         var _loc4_:int = !!param1 ? int(Values.ZERO) : int(OFFSET_CB_DISABLED);
-         _loc4_ += !!param2 ? Values.ZERO : OFFSET_CB_DISABLED;
-         this.fieldSetBattleTypes.height = param3 + _loc4_;
-         if(!param2)
-         {
-            this.gameplay_only10ModeCheckbox.y = this._initYGameplayOnly10ModeCheckbox + OFFSET_CB_DISABLED;
-         }
-         this.carouselTypeFieldSet.y = this._initYCarouselTypeFieldSet + _loc4_;
-         this.carouselTypeButtonBar.y = this._initYCarouselTypeButtonBar + _loc4_;
-         this.doubleCarouselLabel.y = this._initYDoubleCarouselLabel + _loc4_;
-         this.doubleCarouselTypeDropDown.y = this._initYDoubleCarouselTypeDropDown + _loc4_;
-         this.vehicleCarouselStatsCheckbox.y = this._initYVehicleCarouselStatsCheckbox + _loc4_;
-         this.customizationDisplayTypeFieldSet.y = this._initYCustomizationDisplayTypeFieldSet + _loc4_;
-         this.customizationDisplayTypeButtonBar.y = this._initYCustomizationDisplayTypeButtonBar + _loc4_;
-         this.replayEnabledLabel.y = this._initYReplayEnabledLabel + _loc4_;
-         this.replayEnabledDropDown.y = this._initYReplayEnabledDropDown + _loc4_;
-         this.showMarksOnGunCheckbox.y = this._initYShowMarksOnGunCheckbox + _loc4_;
-         this.displayPlatoonMembersCheckbox.y = this._initYDisplayPlatoonMembersCheckbox + _loc4_;
-         this.loginServerSelectionCheckbox.y = this._initYLoginServerSelectionCheckbox + _loc4_;
-         this.anonymizerCheckbox.y = this._initYAnonymizerCheckbox + _loc4_;
+         var _loc3_:int = !!param1 ? int(Values.ZERO) : int(OFFSET_CB_DISABLED);
+         this.fieldSetBattleTypes.height = param2 + _loc3_;
+         this.carouselTypeFieldSet.y = this._initYCarouselTypeFieldSet + _loc3_;
+         this.carouselTypeButtonBar.y = this._initYCarouselTypeButtonBar + _loc3_;
+         this.doubleCarouselLabel.y = this._initYDoubleCarouselLabel + _loc3_;
+         this.doubleCarouselTypeDropDown.y = this._initYDoubleCarouselTypeDropDown + _loc3_;
+         this.vehicleCarouselStatsCheckbox.y = this._initYVehicleCarouselStatsCheckbox + _loc3_;
+         this.customizationDisplayTypeFieldSet.y = this._initYCustomizationDisplayTypeFieldSet + _loc3_;
+         this.customizationDisplayTypeButtonBar.y = this._initYCustomizationDisplayTypeButtonBar + _loc3_;
+         this.replayEnabledLabel.y = this._initYReplayEnabledLabel + _loc3_;
+         this.replayEnabledDropDown.y = this._initYReplayEnabledDropDown + _loc3_;
+         this.showMarksOnGunCheckbox.y = this._initYShowMarksOnGunCheckbox + _loc3_;
+         this.displayPlatoonMembersCheckbox.y = this._initYDisplayPlatoonMembersCheckbox + _loc3_;
+         this.loginServerSelectionCheckbox.y = this._initYLoginServerSelectionCheckbox + _loc3_;
+         this.anonymizerCheckbox.y = this._initYAnonymizerCheckbox + _loc3_;
       }
       
       private function setDependentVisibleControlsY() : void
       {
-         this._initYGameplayOnly10ModeCheckbox = this.gameplay_only10ModeCheckbox.y;
          this._initYCarouselTypeFieldSet = this.carouselTypeFieldSet.y;
          this._initYCarouselTypeButtonBar = this.carouselTypeButtonBar.y;
          this._initYDoubleCarouselLabel = this.doubleCarouselLabel.y;

@@ -68,7 +68,8 @@ class AutoOpenView(ViewImpl):
                                                                          'tokens',
                                                                          'crewSkins'), bonuses={}, filterFuncs=(
           getItemsFilter((isCrewBook,)),
-          getGoodiesFilter((cls.__goodiesCache.getRecertificationForm,)),
+          getGoodiesFilter((
+           cls.__goodiesCache.getRecertificationForm, cls.__goodiesCache.getMentoringLicense)),
           getTankmenFilter)),
          RewardsGroup(name=REWARDS_GROUP_NAME_RES.optionalDevicesAndBattleBoosters(), bonusTypes=('items',
                                                                                          'goodies'), bonuses={}, filterFuncs=(
