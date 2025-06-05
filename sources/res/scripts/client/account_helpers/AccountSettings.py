@@ -383,6 +383,7 @@ MODE_SELECTOR_BATTLE_PASS_SHOWN = 'modeSelectorBattlePassShown'
 RANKED_LAST_CYCLE_ID = 'rankedLastCycleID'
 EPIC_LAST_CYCLE_ID = 'epicLastCycleID'
 FUN_RANDOM_LAST_PRESET = 'funRandomLastPreset'
+FUN_RANDOM_INFO_PAGE_VIEWED_ID = 'FunRandomInfoPageViewedId'
 DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0, 
                  'shop_current': (
                                 -1, STORE_CONSTANTS.VEHICLE, False), 
@@ -1229,6 +1230,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   MODE_SELECTOR_BATTLE_PASS_SHOWN: {}, RANKED_LAST_CYCLE_ID: None, 
                   EPIC_LAST_CYCLE_ID: None, 
                   FUN_RANDOM_LAST_PRESET: 'undefined', 
+                  FUN_RANDOM_INFO_PAGE_VIEWED_ID: 0, 
                   SHOW_ABILITY_ADVANCE_ANIM: True, 
                   SHOW_DEMO_ACC_REGISTRATION: False, 
                   IS_CUSTOMIZATION_INTRO_VIEWED: False, 

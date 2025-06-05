@@ -4518,7 +4518,7 @@
 		<kind>HIGH_EXPLOSIVE</kind>
 		<caliber>240</caliber>
 		<explosionRadius>
-			12.0
+			18.0
 			<!--BW_String-->
 		</explosionRadius>
 		<hasStun>true</hasStun>
@@ -4527,12 +4527,12 @@
 		<isTracer>true</isTracer>
 		<effects>hugeSH_artillery</effects>
 		<damage>
-			<armor>1600</armor>
+			<armor>2000</armor>
 			<devices>160</devices>
 		</damage>
 		<delayedBomb>
 			<explosionDelay>
-				3.0
+				1.5
 				<!--BW_String-->
 			</explosionDelay>
 			<isDestroyAvailable>True</isDestroyAvailable>

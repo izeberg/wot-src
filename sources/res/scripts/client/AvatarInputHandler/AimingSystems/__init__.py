@@ -141,7 +141,7 @@ def getTurretYawGunPitch(vehTypeDescr, vehicleMatrix, targetPos, compensateGravi
     gunOffs = vehTypeDescr.activeGunShotPosition
     speed = vehTypeDescr.shot.speed
     gravity = (compensateGravity or vehTypeDescr.shot).gravity if 1 else 0.0
-    return BigWorld.getShotAngles(turretOffs, gunOffs, vehicleMatrix, speed, gravity, 0.0, 0.0, targetPos, False)
+    return BigWorld.wg_getShotAngles(turretOffs, gunOffs, vehicleMatrix, speed, gravity, 0.0, 0.0, targetPos, False)
 
 
 def _calculateGunPointOffsetFromHullCenter(vehicleTypeDescriptor, steadyMatrix, stabilisedMatrix, gunPitch, overrideTurretLocalZ):
